@@ -1,0 +1,1 @@
+# Typescript Markup for Cloud Script
