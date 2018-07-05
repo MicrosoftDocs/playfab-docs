@@ -298,7 +298,7 @@
           - name: WindowsSDK (C++)
             tocHref: /playfab-docs/sdks-tools/languages-platforms/
             topicHref: /playfab-docs/sdks-tools/languages-platforms/windows-sdk
-           - name: XPlatCppSDK (C++)
+          - name: XPlatCppSDK (C++)
             tocHref: /playfab-docs/sdks-tools/languages-platforms/
             topicHref: /playfab-docs/sdks-tools/languages-platforms/xplat-cpp-sdk
       - name: Tools & Extensions
