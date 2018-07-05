@@ -13,11 +13,11 @@
     topicHref: /playfab-docs/playfab_status
   - name: Getting Started
     tocHref: /playfab-docs/getting-started/
-    topicHref: /playfab-docs/getting-started/index
+    topicHref: /playfab-docs/getting-started/
     items:
       - name: Core Concepts (Developer Guide)
         tocHref: /playfab-docs/getting-started/developer-guide/
-        topicHref: /playfab-docs/getting-started/developer-guide/index
+        topicHref: /playfab-docs/getting-started/developer-guide/
         items:
         - name: Entities
           tocHref: /playfab-docs/getting-started/developer-guide/
@@ -39,7 +39,7 @@
           topicHref: /playfab-docs/getting-started/developer-guide/legacy
       - name: Features Overview
         tocHref: /playfab-docs/getting-started/features-overview/
-        topicHref: /playfab-docs/getting-started/features-overview/index
+        topicHref: /playfab-docs/getting-started/features-overview/
         items:
         - name: Multi-platform authentication
           tocHref: /playfab-docs/getting-started/features-overview/
@@ -67,7 +67,7 @@
           topicHref: /playfab-docs/getting-started/features-overview/analytics
       - name: First API Call
         tocHref: /playfab-docs/getting-started/first-api-call/
-        topicHref: /playfab-docs/getting-started/first-api-call/index
+        topicHref: /playfab-docs/getting-started/first-api-call/
         items:
         - name: ActionScript (Flash)
           tocHref: /playfab-docs/getting-started/first-api-call/
@@ -134,11 +134,11 @@
           topicHref: /playfab-docs/getting-started/first-api-call/xplat-cpp-sdk
   - name: Features
     tocHref: /playfab-docs/features/
-    topicHref: /playfab-docs/features/index
+    topicHref: /playfab-docs/features/
     items:
       - name: Core Concepts
         tocHref: /playfab-docs/features/core-concepts/
-        topicHref: /playfab-docs/features/core-concepts/index
+        topicHref: /playfab-docs/features/core-concepts/
         items:
           - name: Entities
             tocHref: /playfab-docs/features/core-concepts/
@@ -163,7 +163,7 @@
             topicHref: /playfab-docs/features/core-concepts/game-manager
       - name: Authentication
         tocHref: /playfab-docs/features/authentication/
-        topicHref: /playfab-docs/features/authentication/index
+        topicHref: /playfab-docs/features/authentication/
         items:
           - name: Linking & Unlinking
             tocHref: /playfab-docs/features/authentication/
@@ -173,7 +173,7 @@
             topicHref: /playfab-docs/features/authentication/specific-platforms
       - name: Multiplayer
         tocHref: /playfab-docs/features/multiplayer/
-        topicHref: /playfab-docs/features/multiplayer/index
+        topicHref: /playfab-docs/features/multiplayer/
         items:
           - name: Tournaments
             tocHref: /playfab-docs/features/multiplayer/
@@ -195,7 +195,7 @@
             topicHref: /playfab-docs/features/multiplayer/matchmaking
       - name: Engagement
         tocHref: /playfab-docs/features/engagement/
-        topicHref: /playfab-docs/features/engagement/index
+        topicHref: /playfab-docs/features/engagement/
         items:
           - name: Push Notifications
             tocHref: /playfab-docs/features/engagement/
@@ -208,7 +208,7 @@
             topicHref: /playfab-docs/features/engagement/bulk-actions
       - name: Commerce
         tocHref: /playfab-docs/features/commerce/
-        topicHref: /playfab-docs/features/commerce/index
+        topicHref: /playfab-docs/features/commerce/
         items:
           - name: Items
             tocHref: /playfab-docs/features/commerce/
@@ -221,7 +221,7 @@
             topicHref: /playfab-docs/features/commerce/real-money-purchases
       - name: Analytics
         tocHref: /playfab-docs/features/analytics/
-        topicHref: /playfab-docs/features/analytics/index
+        topicHref: /playfab-docs/features/analytics/
         items:
           - name: Metrics and Terminology
             tocHref: /playfab-docs/features/analytics/
@@ -240,18 +240,18 @@
             topicHref: /playfab-docs/features/analytics/add-ons-snowflake
       - name: Enterprise
         tocHref: /playfab-docs/features/enterprise/
-        topicHref: /playfab-docs/features/enterprise/index
+        topicHref: /playfab-docs/features/enterprise/
         items:
           - name: Player Encryption Services
             tocHref: /playfab-docs/features/enterprise/
             topicHref: /playfab-docs/features/enterprise/player-encryption-services
   - name: SDKs/Tools
     tocHref: /playfab-docs/sdks-tools/
-    topicHref: /playfab-docs/sdks-tools/index
+    topicHref: /playfab-docs/sdks-tools/
     items:
       - name: Languages & Platforms
         tocHref: /playfab-docs/sdks-tools/languages-platforms/
-        topicHref: /playfab-docs/sdks-tools/languages-platforms/index
+        topicHref: /playfab-docs/sdks-tools/languages-platforms/
         items:
           - name: ActionScript (Flash)
             tocHref: /playfab-docs/sdks-tools/languages-platforms/
@@ -303,7 +303,7 @@
             topicHref: /playfab-docs/sdks-tools/languages-platforms/xplat-cpp-sdk
       - name: Tools & Extensions
         tocHref: /playfab-docs/sdks-tools/tools-extensions/
-        topicHref: /playfab-docs/sdks-tools/tools-extensions/index
+        topicHref: /playfab-docs/sdks-tools/tools-extensions/
         items:
           - name: SDK Generator
             tocHref: /playfab-docs/sdks-tools/tools-extensions/
@@ -313,7 +313,7 @@
             topicHref: /playfab-docs/sdks-tools/tools-extensions/typescript
   - name: More
     tocHref: /playfab-docs/more/
-    topicHref: /playfab-docs/more/index
+    topicHref: /playfab-docs/more/
     items:
       - name: Other Guides
         tocHref: /playfab-docs/more/
