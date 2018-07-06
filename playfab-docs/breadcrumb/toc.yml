@@ -1,332 +1,332 @@
 - name: Welcome to PlayFab Docs
-  tocHref: /playfab-docs/
-  topicHref: /playfab-docs/index
+  tocHref: /playfab/
+  topicHref: /playfab/index
   items:
-  - name: Release Notes
-    tocHref: /playfab-docs/
-    topicHref: /playfab-docs/release-notes
-  - name: API References
-    tocHref: /playfab-docs/
-    topicHref: /playfab-docs/api-references
-  - name: PlayFab Status
-    tocHref: /playfab-docs/
-    topicHref: /playfab-docs/playfab_status
-  - name: Getting Started
-    tocHref: /playfab-docs/getting-started/
-    topicHref: /playfab-docs/getting-started/
-    items:
-      - name: Core Concepts (Developer Guide)
-        tocHref: /playfab-docs/getting-started/developer-guide/
-        topicHref: /playfab-docs/getting-started/developer-guide/
-        items:
-        - name: Entities
-          tocHref: /playfab-docs/getting-started/developer-guide/
-          topicHref: /playfab-docs/getting-started/developer-guide/entities
-        - name: SDKs
-          tocHref: /playfab-docs/getting-started/developer-guide/
-          topicHref: /playfab-docs/getting-started/developer-guide/sdks
-        - name: Cloud Scripts
-          tocHref: /playfab-docs/getting-started/developer-guide/
-          topicHref: /playfab-docs/getting-started/developer-guide/cloud-scripts
-        - name: PlayStream
-          tocHref: /playfab-docs/getting-started/developer-guide/
-          topicHref: /playfab-docs/getting-started/developer-guide/playstream
-        - name: Game Manager
-          tocHref: /playfab-docs/getting-started/developer-guide/
-          topicHref: /playfab-docs/getting-started/developer-guide/game-manager
-        - name: Legacy
-          tocHref: /playfab-docs/getting-started/developer-guide/
-          topicHref: /playfab-docs/getting-started/developer-guide/legacy
-      - name: Features Overview
-        tocHref: /playfab-docs/getting-started/features-overview/
-        topicHref: /playfab-docs/getting-started/features-overview/
-        items:
-        - name: Multi-platform authentication
-          tocHref: /playfab-docs/getting-started/features-overview/
-          topicHref: /playfab-docs/getting-started/features-overview/multi-platform-authentication
-        - name: Tournaments
-          tocHref: /playfab-docs/getting-started/features-overview/
-          topicHref: /playfab-docs/getting-started/features-overview/tournaments
-        - name: Friends, Groups
-          tocHref: /playfab-docs/getting-started/features-overview/
-          topicHref: /playfab-docs/getting-started/features-overview/friends-groups
-        - name: Multiplayer Servers
-          tocHref: /playfab-docs/getting-started/features-overview/
-          topicHref: /playfab-docs/getting-started/features-overview/multiplayer-servers
-        - name: Matchmaking
-          tocHref: /playfab-docs/getting-started/features-overview/
-          topicHref: /playfab-docs/getting-started/features-overview/matchmaking
-        - name: Push Notifications
-          tocHref: /playfab-docs/getting-started/features-overview/
-          topicHref: /playfab-docs/getting-started/features-overview/push-notifications
-        - name: Commerce
-          tocHref: /playfab-docs/getting-started/features-overview/
-          topicHref: /playfab-docs/getting-started/features-overview/commerce
-        - name: Analytics
-          tocHref: /playfab-docs/getting-started/features-overview/
-          topicHref: /playfab-docs/getting-started/features-overview/analytics
-      - name: First API Call
-        tocHref: /playfab-docs/getting-started/first-api-call/
-        topicHref: /playfab-docs/getting-started/first-api-call/
-        items:
-        - name: ActionScript (Flash)
-          tocHref: /playfab-docs/getting-started/first-api-call/
-          topicHref: /playfab-docs/getting-started/first-api-call/actionscript
-        - name: Cocos2D-x (C++)
-          tocHref: /playfab-docs/getting-started/first-api-call/
-          topicHref: /playfab-docs/getting-started/first-api-call/cocos
-        - name: C#
-          tocHref: /playfab-docs/getting-started/first-api-call/
-          topicHref: /playfab-docs/getting-started/first-api-call/c-sharp
-        - name: C#, Xamarin
-          tocHref: /playfab-docs/getting-started/first-api-call/
-          topicHref: /playfab-docs/getting-started/first-api-call/xamarin
-        - name: Javascript
-          tocHref: /playfab-docs/getting-started/first-api-call/
-          topicHref: /playfab-docs/getting-started/first-api-call/javascript
-        - name: Javascript, Phaser
-          tocHref: /playfab-docs/getting-started/first-api-call/
-          topicHref: /playfab-docs/getting-started/first-api-call/phaser
-        - name: Java
-          tocHref: /playfab-docs/getting-started/first-api-call/
-          topicHref: /playfab-docs/getting-started/first-api-call/java
-        - name: Java, Android Studio
-          tocHref: /playfab-docs/getting-started/first-api-call/
-          topicHref: /playfab-docs/getting-started/first-api-call/android-studio
-        - name: Lua
-          tocHref: /playfab-docs/getting-started/first-api-call/
-          topicHref: /playfab-docs/getting-started/first-api-call/lua
-        - name: Lua, Corona
-          tocHref: /playfab-docs/getting-started/first-api-call/
-          topicHref: /playfab-docs/getting-started/first-api-call/corona
-        - name: Lua, Defold
-          tocHref: /playfab-docs/getting-started/first-api-call/
-          topicHref: /playfab-docs/getting-started/first-api-call/defold
-        - name: NodeJS
-          tocHref: /playfab-docs/getting-started/first-api-call/
-          topicHref: /playfab-docs/getting-started/first-api-call/nodejs
-        - name: Objective-C (iOS)
-          tocHref: /playfab-docs/getting-started/first-api-call/
-          topicHref: /playfab-docs/getting-started/first-api-call/objective-c
-        - name: PHP
-          tocHref: /playfab-docs/getting-started/first-api-call/
-          topicHref: /playfab-docs/getting-started/first-api-call/php
-        - name: Postman (REST)
-          tocHref: /playfab-docs/getting-started/first-api-call/
-          topicHref: /playfab-docs/getting-started/first-api-call/postman
-        - name: Python
-          tocHref: /playfab-docs/getting-started/first-api-call/
-          topicHref: /playfab-docs/getting-started/first-api-call/python
-        - name: Unity
-          tocHref: /playfab-docs/getting-started/first-api-call/
-          topicHref: /playfab-docs/getting-started/first-api-call/unity
-        - name: Unreal Blueprints
-          tocHref: /playfab-docs/getting-started/first-api-call/
-          topicHref: /playfab-docs/getting-started/first-api-call/unreal-blueprints
-        - name: Unreal C++
-          tocHref: /playfab-docs/getting-started/first-api-call/
-          topicHref: /playfab-docs/getting-started/first-api-call/unreal-c
-        - name: WindowsSDK (C++)
-          tocHref: /playfab-docs/getting-started/first-api-call/
-          topicHref: /playfab-docs/getting-started/first-api-call/windows-sdk
-        - name: XPlatCppSDK (C++)
-          tocHref: /playfab-docs/getting-started/first-api-call/
-          topicHref: /playfab-docs/getting-started/first-api-call/xplat-cpp-sdk
-  - name: Features
-    tocHref: /playfab-docs/features/
-    topicHref: /playfab-docs/features/
-    items:
-      - name: Core Concepts
-        tocHref: /playfab-docs/features/core-concepts/
-        topicHref: /playfab-docs/features/core-concepts/
-        items:
-          - name: Entities
-            tocHref: /playfab-docs/features/core-concepts/
-            topicHref: /playfab-docs/features/core-concepts/entities
-          - name: Players
-            tocHref: /playfab-docs/features/core-concepts/
-            topicHref: /playfab-docs/features/core-concepts/players
-          - name: Title
-            tocHref: /playfab-docs/features/core-concepts/
-            topicHref: /playfab-docs/features/core-concepts/title
-          - name: SDKs
-            tocHref: /playfab-docs/features/core-concepts/
-            topicHref: /playfab-docs/features/core-concepts/sdks
-          - name: Cloud Scripts
-            tocHref: /playfab-docs/features/core-concepts/
-            topicHref: /playfab-docs/features/core-concepts/cloud-scripts
-          - name: PlayStream
-            tocHref: /playfab-docs/features/core-concepts/
-            topicHref: /playfab-docs/features/core-concepts/playstream
-          - name: Game Manager
-            tocHref: /playfab-docs/features/core-concepts/
-            topicHref: /playfab-docs/features/core-concepts/game-manager
-      - name: Authentication
-        tocHref: /playfab-docs/features/authentication/
-        topicHref: /playfab-docs/features/authentication/
-        items:
-          - name: Linking & Unlinking
-            tocHref: /playfab-docs/features/authentication/
-            topicHref: /playfab-docs/features/authentication/linking-unlinking
-          - name: Specific platforms
-            tocHref: /playfab-docs/features/authentication/
-            topicHref: /playfab-docs/features/authentication/specific-platforms
-      - name: Multiplayer
-        tocHref: /playfab-docs/features/multiplayer/
-        topicHref: /playfab-docs/features/multiplayer/
-        items:
-          - name: Tournaments
-            tocHref: /playfab-docs/features/multiplayer/
-            topicHref: /playfab-docs/features/multiplayer/tournaments
-          - name: Trading
-            tocHref: /playfab-docs/features/multiplayer/
-            topicHref: /playfab-docs/features/multiplayer/trading
-          - name: Friends & Groups
-            tocHref: /playfab-docs/features/multiplayer/
-            topicHref: /playfab-docs/features/multiplayer/friends-groups
-          - name: Photon
-            tocHref: /playfab-docs/features/multiplayer/
-            topicHref: /playfab-docs/features/multiplayer/photon
-          - name: Compute
-            tocHref: /playfab-docs/features/multiplayer/
-            topicHref: /playfab-docs/features/multiplayer/compute
-          - name: Matchmaking
-            tocHref: /playfab-docs/features/multiplayer/
-            topicHref: /playfab-docs/features/multiplayer/matchmaking
-      - name: Engagement
-        tocHref: /playfab-docs/features/engagement/
-        topicHref: /playfab-docs/features/engagement/
-        items:
-          - name: Push Notifications
-            tocHref: /playfab-docs/features/engagement/
-            topicHref: /playfab-docs/features/engagement/push-notifications
-          - name: Emails
-            tocHref: /playfab-docs/features/engagement/
-            topicHref: /playfab-docs/features/engagement/emails
-          - name: Bulk Actions
-            tocHref: /playfab-docs/features/engagement/
-            topicHref: /playfab-docs/features/engagement/bulk-actions
+- name: Release Notes
+  tocHref: /playfab/
+  topicHref: /playfab/release-notes
+- name: API References
+  tocHref: /playfab/
+  topicHref: /playfab/api-references
+- name: PlayFab Status
+  tocHref: /playfab/
+  topicHref: /playfab/playfab_status
+- name: Getting Started
+  tocHref: /playfab/getting-started/
+  topicHref: /playfab/getting-started/
+  items:
+    - name: Core Concepts (Developer Guide)
+      tocHref: /playfab/getting-started/developer-guide/
+      topicHref: /playfab/getting-started/developer-guide/
+      items:
+      - name: Entities
+        tocHref: /playfab/getting-started/developer-guide/
+        topicHref: /playfab/getting-started/developer-guide/entities
+      - name: SDKs
+        tocHref: /playfab/getting-started/developer-guide/
+        topicHref: /playfab/getting-started/developer-guide/sdks
+      - name: Cloud Scripts
+        tocHref: /playfab/getting-started/developer-guide/
+        topicHref: /playfab/getting-started/developer-guide/cloud-scripts
+      - name: PlayStream
+        tocHref: /playfab/getting-started/developer-guide/
+        topicHref: /playfab/getting-started/developer-guide/playstream
+      - name: Game Manager
+        tocHref: /playfab/getting-started/developer-guide/
+        topicHref: /playfab/getting-started/developer-guide/game-manager
+      - name: Legacy
+        tocHref: /playfab/getting-started/developer-guide/
+        topicHref: /playfab/getting-started/developer-guide/legacy
+    - name: Features Overview
+      tocHref: /playfab/getting-started/features-overview/
+      topicHref: /playfab/getting-started/features-overview/
+      items:
+      - name: Multi-platform authentication
+        tocHref: /playfab/getting-started/features-overview/
+        topicHref: /playfab/getting-started/features-overview/multi-platform-authentication
+      - name: Tournaments
+        tocHref: /playfab/getting-started/features-overview/
+        topicHref: /playfab/getting-started/features-overview/tournaments
+      - name: Friends, Groups
+        tocHref: /playfab/getting-started/features-overview/
+        topicHref: /playfab/getting-started/features-overview/friends-groups
+      - name: Multiplayer Servers
+        tocHref: /playfab/getting-started/features-overview/
+        topicHref: /playfab/getting-started/features-overview/multiplayer-servers
+      - name: Matchmaking
+        tocHref: /playfab/getting-started/features-overview/
+        topicHref: /playfab/getting-started/features-overview/matchmaking
+      - name: Push Notifications
+        tocHref: /playfab/getting-started/features-overview/
+        topicHref: /playfab/getting-started/features-overview/push-notifications
       - name: Commerce
-        tocHref: /playfab-docs/features/commerce/
-        topicHref: /playfab-docs/features/commerce/
-        items:
-          - name: Items
-            tocHref: /playfab-docs/features/commerce/
-            topicHref: /playfab-docs/features/commerce/items
-          - name: Stores
-            tocHref: /playfab-docs/features/commerce/
-            topicHref: /playfab-docs/features/commerce/stores
-          - name: Real Money Purchases
-            tocHref: /playfab-docs/features/commerce/
-            topicHref: /playfab-docs/features/commerce/real-money-purchases
+        tocHref: /playfab/getting-started/features-overview/
+        topicHref: /playfab/getting-started/features-overview/commerce
       - name: Analytics
-        tocHref: /playfab-docs/features/analytics/
-        topicHref: /playfab-docs/features/analytics/
-        items:
-          - name: Metrics and Terminology
-            tocHref: /playfab-docs/features/analytics/
-            topicHref: /playfab-docs/features/analytics/metrics-terminology
-          - name: Real-Time Analytics
-            tocHref: /playfab-docs/features/analytics/
-            topicHref: /playfab-docs/features/analytics/real-time-analytics
-          - name: Reports
-            tocHref: /playfab-docs/features/analytics/
-            topicHref: /playfab-docs/features/analytics/reports
-          - name: A/B Testing & Segments
-            tocHref: /playfab-docs/features/analytics/
-            topicHref: /playfab-docs/features/analytics/ab-testing-segments
-          - name: Add-Ons > Snowflake
-            tocHref: /playfab-docs/features/analytics/
-            topicHref: /playfab-docs/features/analytics/add-ons-snowflake
-      - name: Enterprise
-        tocHref: /playfab-docs/features/enterprise/
-        topicHref: /playfab-docs/features/enterprise/
-        items:
-          - name: Player Encryption Services
-            tocHref: /playfab-docs/features/enterprise/
-            topicHref: /playfab-docs/features/enterprise/player-encryption-services
-  - name: SDKs/Tools
-    tocHref: /playfab-docs/sdks-tools/
-    topicHref: /playfab-docs/sdks-tools/
-    items:
-      - name: Languages & Platforms
-        tocHref: /playfab-docs/sdks-tools/languages-platforms/
-        topicHref: /playfab-docs/sdks-tools/languages-platforms/
-        items:
-          - name: ActionScript (Flash)
-            tocHref: /playfab-docs/sdks-tools/languages-platforms/
-            topicHref: /playfab-docs/sdks-tools/languages-platforms/actionscript
-          - name: Cocos2D-x (C++)
-            tocHref: /playfab-docs/sdks-tools/languages-platforms/
-            topicHref: /playfab-docs/sdks-tools/languages-platforms/cocos
-          - name: C# (Native, Xamarin)
-            tocHref: /playfab-docs/sdks-tools/languages-platforms/
-            topicHref: /playfab-docs/sdks-tools/languages-platforms/c-sharp
-          - name: Javascript (Native, Phaser)
-            tocHref: /playfab-docs/sdks-tools/languages-platforms/
-            topicHref: /playfab-docs/sdks-tools/languages-platforms/javascript
-          - name: Java (Native, Android Studio)
-            tocHref: /playfab-docs/sdks-tools/languages-platforms/
-            topicHref: /playfab-docs/sdks-tools/languages-platforms/java
-          - name: Lua (Native, Corona, Defold)
-            tocHref: /playfab-docs/sdks-tools/languages-platforms/
-            topicHref: /playfab-docs/sdks-tools/languages-platforms/lua
-          - name: NodeJS
-            tocHref: /playfab-docs/sdks-tools/languages-platforms/
-            topicHref: /playfab-docs/sdks-tools/languages-platforms/nodejs
-          - name: Objective-C (iOS)
-            tocHref: /playfab-docs/sdks-tools/languages-platforms/
-            topicHref: /playfab-docs/sdks-tools/languages-platforms/objective-c
-          - name: PHP
-            tocHref: /playfab-docs/sdks-tools/languages-platforms/
-            topicHref: /playfab-docs/sdks-tools/languages-platforms/php
-          - name: Postman (REST)
-            tocHref: /playfab-docs/sdks-tools/languages-platforms/
-            topicHref: /playfab-docs/sdks-tools/languages-platforms/postman
-          - name: Python
-            tocHref: /playfab-docs/sdks-tools/languages-platforms/
-            topicHref: /playfab-docs/sdks-tools/languages-platforms/python
-          - name: Unity (C#)
-            tocHref: /playfab-docs/sdks-tools/languages-platforms/
-            topicHref: /playfab-docs/sdks-tools/languages-platforms/unity
-          - name: Unreal Blueprints
-            tocHref: /playfab-docs/sdks-tools/languages-platforms/
-            topicHref: /playfab-docs/sdks-tools/languages-platforms/unreal-blueprints
-          - name: Unreal C++
-            tocHref: /playfab-docs/sdks-tools/languages-platforms/
-            topicHref: /playfab-docs/sdks-tools/languages-platforms/unreal-c
-          - name: WindowsSDK (C++)
-            tocHref: /playfab-docs/sdks-tools/languages-platforms/
-            topicHref: /playfab-docs/sdks-tools/languages-platforms/windows-sdk
-          - name: XPlatCppSDK (C++)
-            tocHref: /playfab-docs/sdks-tools/languages-platforms/
-            topicHref: /playfab-docs/sdks-tools/languages-platforms/xplat-cpp-sdk
-      - name: Tools & Extensions
-        tocHref: /playfab-docs/sdks-tools/tools-extensions/
-        topicHref: /playfab-docs/sdks-tools/tools-extensions/
-        items:
-          - name: SDK Generator
-            tocHref: /playfab-docs/sdks-tools/tools-extensions/
-            topicHref: /playfab-docs/sdks-tools/tools-extensions/sdk-generator
-          - name: Typescript Markup for Cloud Script
-            tocHref: /playfab-docs/sdks-tools/tools-extensions/
-            topicHref: /playfab-docs/sdks-tools/tools-extensions/typescript
-  - name: More
-    tocHref: /playfab-docs/more/
-    topicHref: /playfab-docs/more/
-    items:
-      - name: Other Guides
-        tocHref: /playfab-docs/more/
-        topicHref: /playfab-docs/more/other-guides
-      - name: Technical Whitepaper
-        tocHref: /playfab-docs/more/
-        topicHref: /playfab-docs/more/technical-whitepaper
-      - name: Event Archive
-        tocHref: /playfab-docs/more/
-        topicHref: /playfab-docs/more/event-archive
-      - name: Recipes
-        tocHref: /playfab-docs/more/
-        topicHref: /playfab-docs/more/recipes
-      - name: Videos
-        tocHref: /playfab-docs/more/
-        topicHref: /playfab-docs/more/videos
+        tocHref: /playfab/getting-started/features-overview/
+        topicHref: /playfab/getting-started/features-overview/analytics
+    - name: First API Call
+      tocHref: /playfab/getting-started/first-api-call/
+      topicHref: /playfab/getting-started/first-api-call/
+      items:
+      - name: ActionScript (Flash)
+        tocHref: /playfab/getting-started/first-api-call/
+        topicHref: /playfab/getting-started/first-api-call/actionscript
+      - name: Cocos2D-x (C++)
+        tocHref: /playfab/getting-started/first-api-call/
+        topicHref: /playfab/getting-started/first-api-call/cocos
+      - name: C#
+        tocHref: /playfab/getting-started/first-api-call/
+        topicHref: /playfab/getting-started/first-api-call/c-sharp
+      - name: C#, Xamarin
+        tocHref: /playfab/getting-started/first-api-call/
+        topicHref: /playfab/getting-started/first-api-call/xamarin
+      - name: Javascript
+        tocHref: /playfab/getting-started/first-api-call/
+        topicHref: /playfab/getting-started/first-api-call/javascript
+      - name: Javascript, Phaser
+        tocHref: /playfab/getting-started/first-api-call/
+        topicHref: /playfab/getting-started/first-api-call/phaser
+      - name: Java
+        tocHref: /playfab/getting-started/first-api-call/
+        topicHref: /playfab/getting-started/first-api-call/java
+      - name: Java, Android Studio
+        tocHref: /playfab/getting-started/first-api-call/
+        topicHref: /playfab/getting-started/first-api-call/android-studio
+      - name: Lua
+        tocHref: /playfab/getting-started/first-api-call/
+        topicHref: /playfab/getting-started/first-api-call/lua
+      - name: Lua, Corona
+        tocHref: /playfab/getting-started/first-api-call/
+        topicHref: /playfab/getting-started/first-api-call/corona
+      - name: Lua, Defold
+        tocHref: /playfab/getting-started/first-api-call/
+        topicHref: /playfab/getting-started/first-api-call/defold
+      - name: NodeJS
+        tocHref: /playfab/getting-started/first-api-call/
+        topicHref: /playfab/getting-started/first-api-call/nodejs
+      - name: Objective-C (iOS)
+        tocHref: /playfab/getting-started/first-api-call/
+        topicHref: /playfab/getting-started/first-api-call/objective-c
+      - name: PHP
+        tocHref: /playfab/getting-started/first-api-call/
+        topicHref: /playfab/getting-started/first-api-call/php
+      - name: Postman (REST)
+        tocHref: /playfab/getting-started/first-api-call/
+        topicHref: /playfab/getting-started/first-api-call/postman
+      - name: Python
+        tocHref: /playfab/getting-started/first-api-call/
+        topicHref: /playfab/getting-started/first-api-call/python
+      - name: Unity
+        tocHref: /playfab/getting-started/first-api-call/
+        topicHref: /playfab/getting-started/first-api-call/unity
+      - name: Unreal Blueprints
+        tocHref: /playfab/getting-started/first-api-call/
+        topicHref: /playfab/getting-started/first-api-call/unreal-blueprints
+      - name: Unreal C++
+        tocHref: /playfab/getting-started/first-api-call/
+        topicHref: /playfab/getting-started/first-api-call/unreal-c
+      - name: WindowsSDK (C++)
+        tocHref: /playfab/getting-started/first-api-call/
+        topicHref: /playfab/getting-started/first-api-call/windows-sdk
+      - name: XPlatCppSDK (C++)
+        tocHref: /playfab/getting-started/first-api-call/
+        topicHref: /playfab/getting-started/first-api-call/xplat-cpp-sdk
+- name: Features
+  tocHref: /playfab/features/
+  topicHref: /playfab/features/
+  items:
+    - name: Core Concepts
+      tocHref: /playfab/features/core-concepts/
+      topicHref: /playfab/features/core-concepts/
+      items:
+        - name: Entities
+          tocHref: /playfab/features/core-concepts/
+          topicHref: /playfab/features/core-concepts/entities
+        - name: Players
+          tocHref: /playfab/features/core-concepts/
+          topicHref: /playfab/features/core-concepts/players
+        - name: Title
+          tocHref: /playfab/features/core-concepts/
+          topicHref: /playfab/features/core-concepts/title
+        - name: SDKs
+          tocHref: /playfab/features/core-concepts/
+          topicHref: /playfab/features/core-concepts/sdks
+        - name: Cloud Scripts
+          tocHref: /playfab/features/core-concepts/
+          topicHref: /playfab/features/core-concepts/cloud-scripts
+        - name: PlayStream
+          tocHref: /playfab/features/core-concepts/
+          topicHref: /playfab/features/core-concepts/playstream
+        - name: Game Manager
+          tocHref: /playfab/features/core-concepts/
+          topicHref: /playfab/features/core-concepts/game-manager
+    - name: Authentication
+      tocHref: /playfab/features/authentication/
+      topicHref: /playfab/features/authentication/
+      items:
+        - name: Linking & Unlinking
+          tocHref: /playfab/features/authentication/
+          topicHref: /playfab/features/authentication/linking-unlinking
+        - name: Specific platforms
+          tocHref: /playfab/features/authentication/
+          topicHref: /playfab/features/authentication/specific-platforms
+    - name: Multiplayer
+      tocHref: /playfab/features/multiplayer/
+      topicHref: /playfab/features/multiplayer/
+      items:
+        - name: Tournaments
+          tocHref: /playfab/features/multiplayer/
+          topicHref: /playfab/features/multiplayer/tournaments
+        - name: Trading
+          tocHref: /playfab/features/multiplayer/
+          topicHref: /playfab/features/multiplayer/trading
+        - name: Friends & Groups
+          tocHref: /playfab/features/multiplayer/
+          topicHref: /playfab/features/multiplayer/friends-groups
+        - name: Photon
+          tocHref: /playfab/features/multiplayer/
+          topicHref: /playfab/features/multiplayer/photon
+        - name: Compute
+          tocHref: /playfab/features/multiplayer/
+          topicHref: /playfab/features/multiplayer/compute
+        - name: Matchmaking
+          tocHref: /playfab/features/multiplayer/
+          topicHref: /playfab/features/multiplayer/matchmaking
+    - name: Engagement
+      tocHref: /playfab/features/engagement/
+      topicHref: /playfab/features/engagement/
+      items:
+        - name: Push Notifications
+          tocHref: /playfab/features/engagement/
+          topicHref: /playfab/features/engagement/push-notifications
+        - name: Emails
+          tocHref: /playfab/features/engagement/
+          topicHref: /playfab/features/engagement/emails
+        - name: Bulk Actions
+          tocHref: /playfab/features/engagement/
+          topicHref: /playfab/features/engagement/bulk-actions
+    - name: Commerce
+      tocHref: /playfab/features/commerce/
+      topicHref: /playfab/features/commerce/
+      items:
+        - name: Items
+          tocHref: /playfab/features/commerce/
+          topicHref: /playfab/features/commerce/items
+        - name: Stores
+          tocHref: /playfab/features/commerce/
+          topicHref: /playfab/features/commerce/stores
+        - name: Real Money Purchases
+          tocHref: /playfab/features/commerce/
+          topicHref: /playfab/features/commerce/real-money-purchases
+    - name: Analytics
+      tocHref: /playfab/features/analytics/
+      topicHref: /playfab/features/analytics/
+      items:
+        - name: Metrics and Terminology
+          tocHref: /playfab/features/analytics/
+          topicHref: /playfab/features/analytics/metrics-terminology
+        - name: Real-Time Analytics
+          tocHref: /playfab/features/analytics/
+          topicHref: /playfab/features/analytics/real-time-analytics
+        - name: Reports
+          tocHref: /playfab/features/analytics/
+          topicHref: /playfab/features/analytics/reports
+        - name: A/B Testing & Segments
+          tocHref: /playfab/features/analytics/
+          topicHref: /playfab/features/analytics/ab-testing-segments
+        - name: Add-Ons > Snowflake
+          tocHref: /playfab/features/analytics/
+          topicHref: /playfab/features/analytics/add-ons-snowflake
+    - name: Enterprise
+      tocHref: /playfab/features/enterprise/
+      topicHref: /playfab/features/enterprise/
+      items:
+        - name: Player Encryption Services
+          tocHref: /playfab/features/enterprise/
+          topicHref: /playfab/features/enterprise/player-encryption-services
+- name: SDKs/Tools
+  tocHref: /playfab/sdks-tools/
+  topicHref: /playfab/sdks-tools/
+  items:
+    - name: Languages & Platforms
+      tocHref: /playfab/sdks-tools/languages-platforms/
+      topicHref: /playfab/sdks-tools/languages-platforms/
+      items:
+        - name: ActionScript (Flash)
+          tocHref: /playfab/sdks-tools/languages-platforms/
+          topicHref: /playfab/sdks-tools/languages-platforms/actionscript
+        - name: Cocos2D-x (C++)
+          tocHref: /playfab/sdks-tools/languages-platforms/
+          topicHref: /playfab/sdks-tools/languages-platforms/cocos
+        - name: C# (Native, Xamarin)
+          tocHref: /playfab/sdks-tools/languages-platforms/
+          topicHref: /playfab/sdks-tools/languages-platforms/c-sharp
+        - name: Javascript (Native, Phaser)
+          tocHref: /playfab/sdks-tools/languages-platforms/
+          topicHref: /playfab/sdks-tools/languages-platforms/javascript
+        - name: Java (Native, Android Studio)
+          tocHref: /playfab/sdks-tools/languages-platforms/
+          topicHref: /playfab/sdks-tools/languages-platforms/java
+        - name: Lua (Native, Corona, Defold)
+          tocHref: /playfab/sdks-tools/languages-platforms/
+          topicHref: /playfab/sdks-tools/languages-platforms/lua
+        - name: NodeJS
+          tocHref: /playfab/sdks-tools/languages-platforms/
+          topicHref: /playfab/sdks-tools/languages-platforms/nodejs
+        - name: Objective-C (iOS)
+          tocHref: /playfab/sdks-tools/languages-platforms/
+          topicHref: /playfab/sdks-tools/languages-platforms/objective-c
+        - name: PHP
+          tocHref: /playfab/sdks-tools/languages-platforms/
+          topicHref: /playfab/sdks-tools/languages-platforms/php
+        - name: Postman (REST)
+          tocHref: /playfab/sdks-tools/languages-platforms/
+          topicHref: /playfab/sdks-tools/languages-platforms/postman
+        - name: Python
+          tocHref: /playfab/sdks-tools/languages-platforms/
+          topicHref: /playfab/sdks-tools/languages-platforms/python
+        - name: Unity (C#)
+          tocHref: /playfab/sdks-tools/languages-platforms/
+          topicHref: /playfab/sdks-tools/languages-platforms/unity
+        - name: Unreal Blueprints
+          tocHref: /playfab/sdks-tools/languages-platforms/
+          topicHref: /playfab/sdks-tools/languages-platforms/unreal-blueprints
+        - name: Unreal C++
+          tocHref: /playfab/sdks-tools/languages-platforms/
+          topicHref: /playfab/sdks-tools/languages-platforms/unreal-c
+        - name: WindowsSDK (C++)
+          tocHref: /playfab/sdks-tools/languages-platforms/
+          topicHref: /playfab/sdks-tools/languages-platforms/windows-sdk
+        - name: XPlatCppSDK (C++)
+          tocHref: /playfab/sdks-tools/languages-platforms/
+          topicHref: /playfab/sdks-tools/languages-platforms/xplat-cpp-sdk
+    - name: Tools & Extensions
+      tocHref: /playfab/sdks-tools/tools-extensions/
+      topicHref: /playfab/sdks-tools/tools-extensions/
+      items:
+        - name: SDK Generator
+          tocHref: /playfab/sdks-tools/tools-extensions/
+          topicHref: /playfab/sdks-tools/tools-extensions/sdk-generator
+        - name: Typescript Markup for Cloud Script
+          tocHref: /playfab/sdks-tools/tools-extensions/
+          topicHref: /playfab/sdks-tools/tools-extensions/typescript
+- name: More
+  tocHref: /playfab/more/
+  topicHref: /playfab/more/
+  items:
+    - name: Other Guides
+      tocHref: /playfab/more/
+      topicHref: /playfab/more/other-guides
+    - name: Technical Whitepaper
+      tocHref: /playfab/more/
+      topicHref: /playfab/more/technical-whitepaper
+    - name: Event Archive
+      tocHref: /playfab/more/
+      topicHref: /playfab/more/event-archive
+    - name: Recipes
+      tocHref: /playfab/more/
+      topicHref: /playfab/more/recipes
+    - name: Videos
+      tocHref: /playfab/more/
+      topicHref: /playfab/more/videos

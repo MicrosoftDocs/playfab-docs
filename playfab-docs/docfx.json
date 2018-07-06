@@ -41,7 +41,7 @@
     },
     "fileMetadata": {},
     "template": [],
-    "dest": "playfab-docs",
+    "dest": "playfab",
     "markdownEngineName": "markdig"
   }
 }
