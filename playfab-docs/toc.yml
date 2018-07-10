@@ -2,226 +2,226 @@
   href: index.md
   items:
 - name: Release Notes
-  href: ./playfab/release-notes.md
+  href: ./release-notes.md
 - name: API References
-  href: ./playfab/api-references.md
+  href: ./api-references.md
 - name: PlayFab Status
-  href: ./playfab/playfab_status
+  href: ./playfab_status.md
 - name: Getting Started
-  href: ./playfab/getting-started/
+  href: ./getting-started/index.md
   items:
     - name: Features Overview
-      href: ./playfab/getting-started/features-overview/
+      href: ./getting-started/features-overview/index.md
       items:
       - name: Multi-platform authentication
-        href: ./playfab/getting-started/features-overview/multi-platform-authentication.md
+        href: ./getting-started/features-overview/multi-platform-authentication.md
       - name: Tournaments
-        href: ./playfab/getting-started/features-overview/tournaments.md
+        href: ./getting-started/features-overview/tournaments.md
       - name: Friends, Groups
-        href: ./playfab/getting-started/features-overview/friends-groups.md
+        href: ./getting-started/features-overview/friends-groups.md
       - name: Multiplayer Servers
-        href: ./playfab/getting-started/features-overview/multiplayer-servers.md
+        href: ./getting-started/features-overview/multiplayer-servers.md
       - name: Matchmaking
-        href: ./playfab/getting-started/features-overview/matchmaking.md
+        href: ./getting-started/features-overview/matchmaking.md
       - name: Push Notifications
-        href: ./playfab/getting-started/features-overview/push-notifications.md
+        href: ./getting-started/features-overview/push-notifications.md
       - name: Commerce
-        href: ./playfab/getting-started/features-overview/commerce.md
+        href: ./getting-started/features-overview/commerce.md
       - name: Analytics
-        href: ./playfab/getting-started/features-overview/analytics.md
+        href: ./getting-started/features-overview/analytics.md
     - name: Core Concepts
-      href: ./playfab/getting-started/developer-guide/
+      href: ./getting-started/developer-guide/index.md
       items:
       - name: Entities
-        href: ./playfab/getting-started/developer-guide/entities.md
+        href: ./getting-started/developer-guide/entities.md
       - name: SDKs
-        href: ./playfab/getting-started/developer-guide/sdks.md
+        href: ./getting-started/developer-guide/sdks.md
       - name: Cloud Scripts
-        href: ./playfab/getting-started/developer-guide/cloud-scripts.md
+        href: ./getting-started/developer-guide/cloud-scripts.md
       - name: PlayStream
-        href: ./playfab/getting-started/developer-guide/playstream.md
+        href: ./getting-started/developer-guide/playstream.md
       - name: Game Manager
-        href: ./playfab/getting-started/developer-guide/game-manager.md
+        href: ./getting-started/developer-guide/game-manager.md
       - name: Legacy
-        href: ./playfab/getting-started/developer-guide/legacy.md
+        href: ./getting-started/developer-guide/legacy.md
     - name: First API Call
-      href: ./playfab/getting-started/first-api-call/
+      href: ./getting-started/first-api-call/index.md
       items:
       - name: ActionScript (Flash)
-        href: ./playfab/getting-started/first-api-call/actionscript.md
+        href: ./getting-started/first-api-call/actionscript.md
       - name: Cocos2D-x (C++)
-        href: ./playfab/getting-started/first-api-call/cocos.md
+        href: ./getting-started/first-api-call/cocos.md
       - name: C#
-        href: ./playfab/getting-started/first-api-call/c-sharp.md
+        href: ./getting-started/first-api-call/c-sharp.md
       - name: C#, Xamarin
-        href: ./playfab/getting-started/first-api-call/xamarin.md
+        href: ./getting-started/first-api-call/xamarin.md
       - name: Javascript
-        href: ./playfab/getting-started/first-api-call/javascript.md
+        href: ./getting-started/first-api-call/javascript.md
       - name: Javascript, Phaser
-        href: ./playfab/getting-started/first-api-call/phaser.md
+        href: ./getting-started/first-api-call/phaser.md
       - name: Java
-        href: ./playfab/getting-started/first-api-call/java.md
+        href: ./getting-started/first-api-call/java.md
       - name: Java, Android Studio
-        href: ./playfab/getting-started/first-api-call/android-studio.md
+        href: ./getting-started/first-api-call/android-studio.md
       - name: Lua
-        href: ./playfab/getting-started/first-api-call/lua.md
+        href: ./getting-started/first-api-call/lua.md
       - name: Lua, Corona
-        href: ./playfab/getting-started/first-api-call/corona.md
+        href: ./getting-started/first-api-call/corona.md
       - name: Lua, Defold
-        href: ./playfab/getting-started/first-api-call/defold.md
+        href: ./getting-started/first-api-call/defold.md
       - name: NodeJS
-        href: ./playfab/getting-started/first-api-call/nodejs.md
+        href: ./getting-started/first-api-call/nodejs.md
       - name: Objective-C (iOS)
-        href: ./playfab/getting-started/first-api-call/objective-c.md
+        href: ./getting-started/first-api-call/objective-c.md
       - name: PHP
-        href: ./playfab/getting-started/first-api-call/php.md
+        href: ./getting-started/first-api-call/php.md
       - name: Postman (REST)
-        href: ./playfab/getting-started/first-api-call/postman.md
+        href: ./getting-started/first-api-call/postman.md
       - name: Python
-        href: ./playfab/getting-started/first-api-call/python.md
+        href: ./getting-started/first-api-call/python.md
       - name: Unity
-        href: ./playfab/getting-started/first-api-call/unity.md
+        href: ./getting-started/first-api-call/unity.md
       - name: Unreal Blueprints
-        href: ./playfab/getting-started/first-api-call/unreal-blueprints.md
+        href: ./getting-started/first-api-call/unreal-blueprints.md
       - name: Unreal C++
-        href: ./playfab/getting-started/first-api-call/unreal-c.md
+        href: ./getting-started/first-api-call/unreal-c.md
       - name: WindowsSDK (C++)
-        href: ./playfab/getting-started/first-api-call/windows-sdk.md
+        href: ./getting-started/first-api-call/windows-sdk.md
       - name: XPlatCppSDK (C++)
-        href: ./playfab/getting-started/first-api-call/xplat-cpp-sdk.md
+        href: ./getting-started/first-api-call/xplat-cpp-sdk.md
 - name: Features
-  href: ./playfab/features/
+  href: ./features/index.md
   items:
     - name: Core Concepts
-      href: ./playfab/features/core-concepts/
+      href: ./features/core-concepts/index.md
       items:
         - name: Entities
-          href: ./playfab/features/core-concepts/entities.md
+          href: ./features/core-concepts/entities.md
         - name: Players
-          href: ./playfab/features/core-concepts/players.md
+          href: ./features/core-concepts/players.md
         - name: Title
-          href: ./playfab/features/core-concepts/title.md
+          href: ./features/core-concepts/title.md
         - name: SDKs
-          href: ./playfab/features/core-concepts/sdks.md
+          href: ./features/core-concepts/sdks.md
         - name: Cloud Scripts
-          href: ./playfab/features/core-concepts/cloud-scripts.md
+          href: ./features/core-concepts/cloud-scripts.md
         - name: PlayStream
-          href: ./playfab/features/core-concepts/playstream.md
+          href: ./features/core-concepts/playstream.md
         - name: Game Manager
-          href: ./playfab/features/core-concepts/game-manager.md
+          href: ./features/core-concepts/game-manager.md
     - name: Authentication
-      href: ./playfab/features/authentication/
+      href: ./features/authentication/index.md
       items:
         - name: Linking & Unlinking
-          href: ./playfab/features/authentication/linking-unlinking.md
+          href: ./features/authentication/linking-unlinking.md
         - name: Specific platforms
-          href: ./playfab/features/authentication/specific-platforms.md
+          href: ./features/authentication/specific-platforms.md
     - name: Multiplayer
-      href: ./playfab/features/multiplayer/
+      href: ./features/multiplayer/index.md
       items:
         - name: Tournaments
-          href: ./playfab/features/multiplayer/tournaments.md
+          href: ./features/multiplayer/tournaments.md
         - name: Trading
-          href: ./playfab/features/multiplayer/trading.md
+          href: ./features/multiplayer/trading.md
         - name: Friends & Groups
-          href: ./playfab/features/multiplayer/friends-groups.md
+          href: ./features/multiplayer/friends-groups.md
         - name: Photon
-          href: ./playfab/features/multiplayer/photon.md
+          href: ./features/multiplayer/photon.md
         - name: Compute
-          href: ./playfab/features/multiplayer/compute.md
+          href: ./features/multiplayer/compute.md
         - name: Matchmaking
-          href: ./playfab/features/multiplayer/matchmaking.md
+          href: ./features/multiplayer/matchmaking.md
     - name: Engagement
-      href: ./playfab/features/engagement/
+      href: ./features/engagement/index.md
       items:
         - name: Push Notifications
-          href: ./playfab/features/engagement/push-notifications.md
+          href: ./features/engagement/push-notifications.md
         - name: Emails
-          href: ./playfab/features/engagement/emails.md
+          href: ./features/engagement/emails.md
         - name: Bulk Actions
-          href: ./playfab/features/engagement/bulk-actions.md
+          href: ./features/engagement/bulk-actions.md
     - name: Commerce
-      href: ./playfab/features/commerce/
+      href: ./features/commerce/index.md
       items:
         - name: Items
-          href: ./playfab/features/commerce/items.md
+          href: ./features/commerce/items.md
         - name: Stores
-          href: ./playfab/features/commerce/stores.md
+          href: ./features/commerce/stores.md
         - name: Real Money Purchases
-          href: ./playfab/features/commerce/real-money-purchases.md
+          href: ./features/commerce/real-money-purchases.md
     - name: Analytics
-      href: ./playfab/features/analytics/
+      href: ./features/analytics/index.md
       items:
         - name: Metrics and Terminology
-          href: ./playfab/features/analytics/metrics-terminology.md
+          href: ./features/analytics/metrics-terminology.md
         - name: Real-Time Analytics
-          href: ./playfab/features/analytics/real-time-analytics.md
+          href: ./features/analytics/real-time-analytics.md
         - name: Reports
-          href: ./playfab/features/analytics/reports.md
+          href: ./features/analytics/reports.md
         - name: A/B Testing & Segments
-          href: ./playfab/features/analytics/ab-testing-segments.md
+          href: ./features/analytics/ab-testing-segments.md
         - name: Add-Ons > Snowflake
-          href: ./playfab/features/analytics/add-ons-snowflake.md
+          href: ./features/analytics/add-ons-snowflake.md
     - name: Enterprise
-      href: ./playfab/features/enterprise/
+      href: ./features/enterprise/index.md
       items:
         - name: Player Encryption Services
-          href: ./playfab/features/enterprise/player-encryption-services.md
+          href: ./features/enterprise/player-encryption-services.md
 - name: SDKs/Tools
-  href: ./playfab/sdks-tools/
+  href: ./sdks-tools/
   items:
     - name: Languages & Platforms
-      href: ./playfab/sdks-tools/languages-platforms/
+      href: ./sdks-tools/languages-platforms/index.md
       items:
         - name: ActionScript (Flash)
-          href: ./playfab/sdks-tools/languages-platforms/actionscript.md
+          href: ./sdks-tools/languages-platforms/actionscript.md
         - name: Cocos2D-x (C++)
-          href: ./playfab/sdks-tools/languages-platforms/cocos.md
+          href: ./sdks-tools/languages-platforms/cocos.md
         - name: C# (Native, Xamarin)
-          href: ./playfab/sdks-tools/languages-platforms/c-sharp.md
+          href: ./sdks-tools/languages-platforms/c-sharp.md
         - name: Javascript (Native, Phaser)
-          href: ./playfab/sdks-tools/languages-platforms/javascript.md
+          href: ./sdks-tools/languages-platforms/javascript.md
         - name: Java (Native, Android Studio)
-          href: ./playfab/sdks-tools/languages-platforms/java.md
+          href: ./sdks-tools/languages-platforms/java.md
         - name: Lua (Native, Corona, Defold)
-          href: ./playfab/sdks-tools/languages-platforms/lua.md
+          href: ./sdks-tools/languages-platforms/lua.md
         - name: NodeJS
-          href: ./playfab/sdks-tools/languages-platforms/nodejs.md
+          href: ./sdks-tools/languages-platforms/nodejs.md
         - name: Objective-C (iOS)
-          href: ./playfab/sdks-tools/languages-platforms/objective-c.md
+          href: ./sdks-tools/languages-platforms/objective-c.md
         - name: PHP
-          href: ./playfab/sdks-tools/languages-platforms/php.md
+          href: ./sdks-tools/languages-platforms/php.md
         - name: Postman (REST)
-          href: ./playfab/sdks-tools/languages-platforms/postman.md
+          href: ./sdks-tools/languages-platforms/postman.md
         - name: Python
-          href: ./playfab/sdks-tools/languages-platforms/python.md
+          href: ./sdks-tools/languages-platforms/python.md
         - name: Unity (C#)
-          href: ./playfab/sdks-tools/languages-platforms/unity.md
+          href: ./sdks-tools/languages-platforms/unity.md
         - name: Unreal Blueprints
-          href: ./playfab/sdks-tools/languages-platforms/unreal-blueprints.md
+          href: ./sdks-tools/languages-platforms/unreal-blueprints.md
         - name: Unreal C++
-          href: ./playfab/sdks-tools/languages-platforms/unreal-c.md
+          href: ./sdks-tools/languages-platforms/unreal-c.md
         - name: WindowsSDK (C++)
-          href: ./playfab/sdks-tools/languages-platforms/windows-sdk.md
+          href: ./sdks-tools/languages-platforms/windows-sdk.md
         - name: XPlatCppSDK (C++)
-          href: ./playfab/sdks-tools/languages-platforms/xplat-cpp-sdk.md
+          href: ./sdks-tools/languages-platforms/xplat-cpp-sdk.md
     - name: Tools & Extensions
-      href: ./playfab/sdks-tools/tools-extensions/
+      href: ./sdks-tools/tools-extensions/index.md
       items:
         - name: SDK Generator
-          href: ./playfab/sdks-tools/tools-extensions/sdk-generator.md
+          href: ./sdks-tools/tools-extensions/sdk-generator.md
         - name: Typescript Markup for Cloud Script
-          href: ./playfab/sdks-tools/tools-extensions/typescript.md
+          href: ./sdks-tools/tools-extensions/typescript.md
 - name: More
-  href: ./playfab/more/
+  href: ./more/index.md
   items:
     - name: Other Guides
-      href: ./playfab/more/other-guides.md
+      href: ./more/other-guides.md
     - name: Technical Whitepaper
-      href: ./playfab/more/technical-whitepaper.md
+      href: ./more/technical-whitepaper.md
     - name: Event Archive
-      href: ./playfab/more/event-archive.md
+      href: ./more/event-archive.md
     - name: Recipes
-      href: ./playfab/more/recipes.md
+      href: ./more/recipes.md
     - name: Videos
-      href: ./playfab/more/videos.md
+      href: ./more/videos.md
