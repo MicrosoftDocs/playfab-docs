@@ -80,14 +80,16 @@ featureFlags:
                                     <div class="cardPadding">
                                         <div class="card">
                                             <div class="cardText">
-                                                <h3>Core Concepts (Developer Guide)</h3>
+                                                <h3>Features Overview</h3>
                                                 <ul class="noBullet">
-                                                    <li><a class="barLink" href="/playfab/getting-started/developer-guide/entities">Entities</a></li>
-                                                    <li><a class="barLink" href="/playfab/getting-started/developer-guide/sdks">SDKs</a></li>
-                                                    <li><a class="barLink" href="/playfab/getting-started/developer-guide/cloud-scripts">Cloud Scripts</a></li>
-                                                    <li><a class="barLink" href="/playfab/getting-started/developer-guide/playstream">PlayStream</a></li>
-                                                    <li><a class="barLink" href="/playfab/getting-started/developer-guide/game-manager">Game Manager</a></li>
-                                                    <li><a class="barLink" href="/playfab/getting-started/developer-guide/legacy">Legacy</a></li>
+                                                    <li><a class="barLink" href="/playfab/getting-started/features-overview/multi-platform-authentication">Multi-platform authentication</a></li>
+                                                    <li><a class="barLink" href="/playfab/getting-started/features-overview/tournaments">Tournaments</a></li>
+                                                    <li><a class="barLink" href="/playfab/getting-started/features-overview/friends-groups">Friends, Groups</a></li>
+                                                    <li><a class="barLink" href="/playfab/getting-started/features-overview/multiplayer-servers">Multiplayer Servers</a></li>
+                                                    <li><a class="barLink" href="/playfab/getting-started/features-overview/matchmaking">Matchmaking</a></li>
+                                                    <li><a class="barLink" href="/playfab/getting-started/features-overview/push-notifications">Push Notifications</a></li>
+                                                    <li><a class="barLink" href="/playfab/getting-started/features-overview/commerce">Commerce</a></li>
+                                                    <li><a class="barLink" href="/playfab/getting-started/features-overview/analytics">Analytics</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -99,16 +101,14 @@ featureFlags:
                                     <div class="cardPadding">
                                         <div class="card">
                                             <div class="cardText">
-                                                <h3>Features Overview</h3>
+                                                <h3>Core Concepts</h3>
                                                 <ul class="noBullet">
-                                                    <li><a class="barLink" href="/playfab/getting-started/features-overview/multi-platform-authentication">Multi-platform authentication</a></li>
-                                                    <li><a class="barLink" href="/playfab/getting-started/features-overview/tournaments">Tournaments</a></li>
-                                                    <li><a class="barLink" href="/playfab/getting-started/features-overview/friends-groups">Friends, Groups</a></li>
-                                                    <li><a class="barLink" href="/playfab/getting-started/features-overview/multiplayer-servers">Multiplayer Servers</a></li>
-                                                    <li><a class="barLink" href="/playfab/getting-started/features-overview/matchmaking">Matchmaking</a></li>
-                                                    <li><a class="barLink" href="/playfab/getting-started/features-overview/push-notifications">Push Notifications</a></li>
-                                                    <li><a class="barLink" href="/playfab/getting-started/features-overview/commerce">Commerce</a></li>
-                                                    <li><a class="barLink" href="/playfab/getting-started/features-overview/analytics">Analytics</a></li>
+                                                    <li><a class="barLink" href="/playfab/getting-started/developer-guide/entities">Entities</a></li>
+                                                    <li><a class="barLink" href="/playfab/getting-started/developer-guide/sdks">SDKs</a></li>
+                                                    <li><a class="barLink" href="/playfab/getting-started/developer-guide/cloud-scripts">Cloud Scripts</a></li>
+                                                    <li><a class="barLink" href="/playfab/getting-started/developer-guide/playstream">PlayStream</a></li>
+                                                    <li><a class="barLink" href="/playfab/getting-started/developer-guide/game-manager">Game Manager</a></li>
+                                                    <li><a class="barLink" href="/playfab/getting-started/developer-guide/legacy">Legacy</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -154,8 +154,8 @@ featureFlags:
                 </ul>
             </li>
             <li>
-                <a href="#products">Products</a>
-                <ul id="products">
+                <a href="#features">Features</a>
+                <ul id="features">
                     <li>
                         <a data-default="true" href="#Core">Core Concepts</a>
                         <ul id="Core" class="cardsA">
