@@ -168,7 +168,7 @@
         - name: Player Encryption Services
           href: ./features/enterprise/player-encryption-services.md
 - name: SDKs/Tools
-  href: ./sdks-tools/
+  href: ./sdks-tools/index.md
   items:
     - name: Languages & Platforms
       href: ./sdks-tools/languages-platforms/index.md
