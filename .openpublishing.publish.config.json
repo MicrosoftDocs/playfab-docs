@@ -41,8 +41,8 @@
         "version": "latest"
     }],
     "JoinTOCPlugin": [{
-        "TopLevelTOC": "playfab_docs/toc.yml",
-        "ConceptualTOC": "toc.yml",
+        "TopLevelTOC": "playfab-docs/toc.yml",
+        "ConceptualTOC": "playfab-docs/toc.yml",
         "ReferenceTOCUrl": "/rest/api/playfab/toc.json",
         "ConceptualTOCUrl": "/playfab/toc.json",
         "HideEmptyNode": true,
