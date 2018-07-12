@@ -41,16 +41,8 @@
         "version": "latest"
     }],
     "JoinTOCPlugin": [{
-        "TopLevelTOC": "playfab-docs/toc.yml",
         "ConceptualTOC": "playfab-docs/toc.yml",
-        "ReferenceTOCUrl": "/rest/api/playfab/toc.json",
-        "ConceptualTOCUrl": "/playfab/toc.json",
-        "HideEmptyNode": true,
-        "ContainerPageMetadata": {
-            "langs": [
-                "csharp"
-            ]
-        }
+        "ReferenceTOCUrl": "/rest/api/playfab/toc.json"
     }],
     "need_generate_pdf_url_template": false
 }
