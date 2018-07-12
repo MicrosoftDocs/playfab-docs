@@ -1015,7 +1015,7 @@ featureFlags:
                 </ul>
             </li>
             <li>
-                <a href="#Resources">Resources</a>
+                <a href="#resources">Resources</a>
                 <ul id="resources">
                     <li>
                         <a href="#resources1"></a>
