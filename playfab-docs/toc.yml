@@ -1,0 +1,227 @@
+- name: Welcome to PlayFab Docs
+  href: index.md
+  items:
+- name: Release Notes
+  href: ./release-notes.md
+- name: API References
+  href: ./api-references.md
+- name: PlayFab Status
+  href: ./playfab_status.md
+- name: Getting Started
+  href: ./getting-started/index.md
+  items:
+    - name: Features Overview
+      href: ./getting-started/features-overview/index.md
+      items:
+      - name: Multi-platform authentication
+        href: ./getting-started/features-overview/multi-platform-authentication.md
+      - name: Tournaments
+        href: ./getting-started/features-overview/tournaments.md
+      - name: Friends, Groups
+        href: ./getting-started/features-overview/friends-groups.md
+      - name: Multiplayer Servers
+        href: ./getting-started/features-overview/multiplayer-servers.md
+      - name: Matchmaking
+        href: ./getting-started/features-overview/matchmaking.md
+      - name: Push Notifications
+        href: ./getting-started/features-overview/push-notifications.md
+      - name: Commerce
+        href: ./getting-started/features-overview/commerce.md
+      - name: Analytics
+        href: ./getting-started/features-overview/analytics.md
+    - name: Core Concepts
+      href: ./getting-started/developer-guide/index.md
+      items:
+      - name: Entities
+        href: ./getting-started/developer-guide/entities.md
+      - name: SDKs
+        href: ./getting-started/developer-guide/sdks.md
+      - name: Cloud Scripts
+        href: ./getting-started/developer-guide/cloud-scripts.md
+      - name: PlayStream
+        href: ./getting-started/developer-guide/playstream.md
+      - name: Game Manager
+        href: ./getting-started/developer-guide/game-manager.md
+      - name: Legacy
+        href: ./getting-started/developer-guide/legacy.md
+    - name: First API Call
+      href: ./getting-started/first-api-call/index.md
+      items:
+      - name: ActionScript (Flash)
+        href: ./getting-started/first-api-call/actionscript.md
+      - name: Cocos2D-x (C++)
+        href: ./getting-started/first-api-call/cocos.md
+      - name: C#
+        href: ./getting-started/first-api-call/c-sharp.md
+      - name: C#, Xamarin
+        href: ./getting-started/first-api-call/xamarin.md
+      - name: Javascript
+        href: ./getting-started/first-api-call/javascript.md
+      - name: Javascript, Phaser
+        href: ./getting-started/first-api-call/phaser.md
+      - name: Java
+        href: ./getting-started/first-api-call/java.md
+      - name: Java, Android Studio
+        href: ./getting-started/first-api-call/android-studio.md
+      - name: Lua
+        href: ./getting-started/first-api-call/lua.md
+      - name: Lua, Corona
+        href: ./getting-started/first-api-call/corona.md
+      - name: Lua, Defold
+        href: ./getting-started/first-api-call/defold.md
+      - name: NodeJS
+        href: ./getting-started/first-api-call/nodejs.md
+      - name: Objective-C (iOS)
+        href: ./getting-started/first-api-call/objective-c.md
+      - name: PHP
+        href: ./getting-started/first-api-call/php.md
+      - name: Postman (REST)
+        href: ./getting-started/first-api-call/postman.md
+      - name: Python
+        href: ./getting-started/first-api-call/python.md
+      - name: Unity
+        href: ./getting-started/first-api-call/unity.md
+      - name: Unreal Blueprints
+        href: ./getting-started/first-api-call/unreal-blueprints.md
+      - name: Unreal C++
+        href: ./getting-started/first-api-call/unreal-c.md
+      - name: WindowsSDK (C++)
+        href: ./getting-started/first-api-call/windows-sdk.md
+      - name: XPlatCppSDK (C++)
+        href: ./getting-started/first-api-call/xplat-cpp-sdk.md
+- name: Features
+  href: ./features/index.md
+  items:
+    - name: Core Concepts
+      href: ./features/core-concepts/index.md
+      items:
+        - name: Entities
+          href: ./features/core-concepts/entities.md
+        - name: Players
+          href: ./features/core-concepts/players.md
+        - name: Title
+          href: ./features/core-concepts/title.md
+        - name: SDKs
+          href: ./features/core-concepts/sdks.md
+        - name: Cloud Scripts
+          href: ./features/core-concepts/cloud-scripts.md
+        - name: PlayStream
+          href: ./features/core-concepts/playstream.md
+        - name: Game Manager
+          href: ./features/core-concepts/game-manager.md
+    - name: Authentication
+      href: ./features/authentication/index.md
+      items:
+        - name: Linking & Unlinking
+          href: ./features/authentication/linking-unlinking.md
+        - name: Specific platforms
+          href: ./features/authentication/specific-platforms.md
+    - name: Multiplayer
+      href: ./features/multiplayer/index.md
+      items:
+        - name: Tournaments
+          href: ./features/multiplayer/tournaments.md
+        - name: Trading
+          href: ./features/multiplayer/trading.md
+        - name: Friends & Groups
+          href: ./features/multiplayer/friends-groups.md
+        - name: Photon
+          href: ./features/multiplayer/photon.md
+        - name: Compute
+          href: ./features/multiplayer/compute.md
+        - name: Matchmaking
+          href: ./features/multiplayer/matchmaking.md
+    - name: Engagement
+      href: ./features/engagement/index.md
+      items:
+        - name: Push Notifications
+          href: ./features/engagement/push-notifications.md
+        - name: Emails
+          href: ./features/engagement/emails.md
+        - name: Bulk Actions
+          href: ./features/engagement/bulk-actions.md
+    - name: Commerce
+      href: ./features/commerce/index.md
+      items:
+        - name: Items
+          href: ./features/commerce/items.md
+        - name: Stores
+          href: ./features/commerce/stores.md
+        - name: Real Money Purchases
+          href: ./features/commerce/real-money-purchases.md
+    - name: Analytics
+      href: ./features/analytics/index.md
+      items:
+        - name: Metrics and Terminology
+          href: ./features/analytics/metrics-terminology.md
+        - name: Real-Time Analytics
+          href: ./features/analytics/real-time-analytics.md
+        - name: Reports
+          href: ./features/analytics/reports.md
+        - name: A/B Testing & Segments
+          href: ./features/analytics/ab-testing-segments.md
+        - name: Add-Ons > Snowflake
+          href: ./features/analytics/add-ons-snowflake.md
+    - name: Enterprise
+      href: ./features/enterprise/index.md
+      items:
+        - name: Player Encryption Services
+          href: ./features/enterprise/player-encryption-services.md
+- name: SDKs/Tools
+  href: ./sdks-tools/index.md
+  items:
+    - name: Languages & Platforms
+      href: ./sdks-tools/languages-platforms/index.md
+      items:
+        - name: ActionScript (Flash)
+          href: ./sdks-tools/languages-platforms/actionscript.md
+        - name: Cocos2D-x (C++)
+          href: ./sdks-tools/languages-platforms/cocos.md
+        - name: C# (Native, Xamarin)
+          href: ./sdks-tools/languages-platforms/c-sharp.md
+        - name: Javascript (Native, Phaser)
+          href: ./sdks-tools/languages-platforms/javascript.md
+        - name: Java (Native, Android Studio)
+          href: ./sdks-tools/languages-platforms/java.md
+        - name: Lua (Native, Corona, Defold)
+          href: ./sdks-tools/languages-platforms/lua.md
+        - name: NodeJS
+          href: ./sdks-tools/languages-platforms/nodejs.md
+        - name: Objective-C (iOS)
+          href: ./sdks-tools/languages-platforms/objective-c.md
+        - name: PHP
+          href: ./sdks-tools/languages-platforms/php.md
+        - name: Postman (REST)
+          href: ./sdks-tools/languages-platforms/postman.md
+        - name: Python
+          href: ./sdks-tools/languages-platforms/python.md
+        - name: Unity (C#)
+          href: ./sdks-tools/languages-platforms/unity.md
+        - name: Unreal Blueprints
+          href: ./sdks-tools/languages-platforms/unreal-blueprints.md
+        - name: Unreal C++
+          href: ./sdks-tools/languages-platforms/unreal-c.md
+        - name: WindowsSDK (C++)
+          href: ./sdks-tools/languages-platforms/windows-sdk.md
+        - name: XPlatCppSDK (C++)
+          href: ./sdks-tools/languages-platforms/xplat-cpp-sdk.md
+    - name: Tools & Extensions
+      href: ./sdks-tools/tools-extensions/index.md
+      items:
+        - name: SDK Generator
+          href: ./sdks-tools/tools-extensions/sdk-generator.md
+        - name: Typescript Markup for Cloud Script
+          href: ./sdks-tools/tools-extensions/typescript.md
+- name: More
+  href: ./more/index.md
+  items:
+    - name: Other Guides
+      href: ./more/other-guides.md
+    - name: Technical Whitepaper
+      href: ./more/technical-whitepaper.md
+    - name: Event Archive
+      href: ./more/event-archive.md
+    - name: Recipes
+      href: ./more/recipes.md
+    - name: Videos
+      href: ./more/videos.md
