@@ -166,7 +166,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="http://docs.microsoft.com/azure/media/index/VirtualMachine.svg" alt="" />
+                                                        <img src="http://docs.microsoft.com/media/common/i_accessibility.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -185,7 +185,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="http://docs.microsoft.com/azure/media/index/VirtualMachine.svg" alt="" />
+                                                        <img src="http://docs.microsoft.com/media/common/i_account-management.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -204,7 +204,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="http://docs.microsoft.com/azure/media/index/VirtualMachine.svg" alt="" />
+                                                        <img src="http://docs.microsoft.com/media/common/i_advanced.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -223,7 +223,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="http://docs.microsoft.com/azure/media/index/VirtualMachine.svg" alt="" />
+                                                        <img src="http://docs.microsoft.com/media/common/i_agent.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -242,7 +242,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="http://docs.microsoft.com/azure/media/index/VirtualMachine.svg" alt="" />
+                                                        <img src="http://docs.microsoft.com/media/common/i_agile.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -261,7 +261,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="http://docs.microsoft.com/azure/media/index/VirtualMachine.svg" alt="" />
+                                                        <img src="http://docs.microsoft.com/media/common/i_alert.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -280,7 +280,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="http://docs.microsoft.com/azure/media/index/VirtualMachine.svg" alt="" />
+                                                        <img src="http://docs.microsoft.com/media/common/i_api.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -304,7 +304,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="http://docs.microsoft.com/azure/media/index/VirtualMachine.svg" alt="" />
+                                                        <img src="http://docs.microsoft.com/media/common/i_api-reference.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -323,7 +323,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="http://docs.microsoft.com/azure/media/index/VirtualMachine.svg" alt="" />
+                                                        <img src="http://docs.microsoft.com/media/common/i_architecture.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -347,7 +347,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="http://docs.microsoft.com/azure/media/index/VirtualMachine.svg" alt="" />
+                                                        <img src="http://docs.microsoft.com/media/common/i_article.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -366,7 +366,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="http://docs.microsoft.com/azure/media/index/VirtualMachine.svg" alt="" />
+                                                        <img src="http://docs.microsoft.com/media/common/i_backlog.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -385,7 +385,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="http://docs.microsoft.com/azure/media/index/VirtualMachine.svg" alt="" />
+                                                        <img src="http://docs.microsoft.com/media/common/i_benefits.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -404,7 +404,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="http://docs.microsoft.com/azure/media/index/VirtualMachine.svg" alt="" />
+                                                        <img src="http://docs.microsoft.com/media/common/i_best-practices.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -423,7 +423,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="http://docs.microsoft.com/azure/media/index/VirtualMachine.svg" alt="" />
+                                                        <img src="http://docs.microsoft.com/media/common/i_billing.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -442,7 +442,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="http://docs.microsoft.com/azure/media/index/VirtualMachine.svg" alt="" />
+                                                        <img src="http://docs.microsoft.com/media/common/i_blog.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -466,7 +466,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="http://docs.microsoft.com/azure/media/index/VirtualMachine.svg" alt="" />
+                                                        <img src="http://docs.microsoft.com/media/common/i_bug.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -485,7 +485,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="http://docs.microsoft.com/azure/media/index/VirtualMachine.svg" alt="" />
+                                                        <img src="http://docs.microsoft.com/media/common/i_build.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -504,7 +504,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="http://docs.microsoft.com/azure/media/index/VirtualMachine.svg" alt="" />
+                                                        <img src="http://docs.microsoft.com/media/common/i_button.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -528,7 +528,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="http://docs.microsoft.com/azure/media/index/VirtualMachine.svg" alt="" />
+                                                        <img src="http://docs.microsoft.com/media/common/i_categorize.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -547,7 +547,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="http://docs.microsoft.com/azure/media/index/VirtualMachine.svg" alt="" />
+                                                        <img src="http://docs.microsoft.com/media/common/i_class.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -566,7 +566,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="http://docs.microsoft.com/azure/media/index/VirtualMachine.svg" alt="" />
+                                                        <img src="http://docs.microsoft.com/media/common/i_cligeneric.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -590,7 +590,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="http://docs.microsoft.com/azure/media/index/VirtualMachine.svg" alt="" />
+                                                        <img src="http://docs.microsoft.com/media/common/i_cloud-security.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -609,7 +609,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="http://docs.microsoft.com/azure/media/index/VirtualMachine.svg" alt="" />
+                                                        <img src="http://docs.microsoft.com/media/common/i_code-automate.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -628,7 +628,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="http://docs.microsoft.com/azure/media/index/VirtualMachine.svg" alt="" />
+                                                        <img src="http://docs.microsoft.com/media/common/i_code-blocks.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -647,7 +647,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="http://docs.microsoft.com/azure/media/index/VirtualMachine.svg" alt="" />
+                                                        <img src="http://docs.microsoft.com/media/common/i_code-edit.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -666,7 +666,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="http://docs.microsoft.com/azure/media/index/VirtualMachine.svg" alt="" />
+                                                        <img src="http://docs.microsoft.com/media/common/i_code-performance.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -690,7 +690,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="http://docs.microsoft.com/azure/media/index/VirtualMachine.svg" alt="" />
+                                                        <img src="http://docs.microsoft.com/media/common/i_code-quality.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -723,7 +723,7 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="http://docs.microsoft.com/azure/media/index/azure_dev-7.svg" alt="" />
+                                                    <img src="http://docs.microsoft.com/media/logos/logo_agile-cards.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -739,7 +739,7 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="http://docs.microsoft.com/azure/media/index/azure_dev-7.svg" alt="" />
+                                                    <img src="http://docs.microsoft.com/media/logos/logo_code-search.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -755,7 +755,7 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="http://docs.microsoft.com/azure/media/index/azure_dev-7.svg" alt="" />
+                                                    <img src="http://docs.microsoft.com/media/logos/logo_Csharp.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -771,7 +771,7 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="http://docs.microsoft.com/azure/media/index/azure_dev-7.svg" alt="" />
+                                                    <img src="http://docs.microsoft.com/media/logos/logo_js.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -787,7 +787,7 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="http://docs.microsoft.com/azure/media/index/azure_dev-7.svg" alt="" />
+                                                    <img src="http://docs.microsoft.com/media/logos/logo_java.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -803,7 +803,7 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="http://docs.microsoft.com/azure/media/index/azure_dev-7.svg" alt="" />
+                                                    <img src="http://docs.microsoft.com/media/logos/logo_lynda.com.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -819,7 +819,7 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="http://docs.microsoft.com/azure/media/index/azure_dev-7.svg" alt="" />
+                                                    <img src="http://docs.microsoft.com/media/logos/logo_nodejs.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -835,7 +835,7 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="http://docs.microsoft.com/azure/media/index/azure_dev-7.svg" alt="" />
+                                                    <img src="http://docs.microsoft.com/media/logos/logo_odata.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -851,7 +851,7 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="http://docs.microsoft.com/azure/media/index/azure_dev-7.svg" alt="" />
+                                                    <img src="http://docs.microsoft.com/media/logos/logo_php.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -867,7 +867,7 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="http://docs.microsoft.com/azure/media/index/azure_dev-7.svg" alt="" />
+                                                    <img src="http://docs.microsoft.com/media/logos/logo_REST.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -883,7 +883,7 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="http://docs.microsoft.com/azure/media/index/azure_dev-7.svg" alt="" />
+                                                    <img src="http://docs.microsoft.com/media/logos/logo_python.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -899,7 +899,7 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="http://docs.microsoft.com/azure/media/index/azure_dev-7.svg" alt="" />
+                                                    <img src="http://docs.microsoft.com/media/logos/logo_unity.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -915,7 +915,7 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="http://docs.microsoft.com/azure/media/index/azure_dev-7.svg" alt="" />
+                                                    <img src="http://docs.microsoft.com/media/logos/logo_vs-code.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -931,7 +931,7 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="http://docs.microsoft.com/azure/media/index/azure_dev-7.svg" alt="" />
+                                                    <img src="http://docs.microsoft.com/media/logos/logo_vs-ide.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -947,7 +947,7 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="http://docs.microsoft.com/azure/media/index/azure_dev-7.svg" alt="" />
+                                                    <img src="http://docs.microsoft.com/media/logos/logo_Windows.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -963,7 +963,7 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="http://docs.microsoft.com/azure/media/index/azure_dev-7.svg" alt="" />
+                                                    <img src="http://docs.microsoft.com/media/logos/logo_Cplusplus.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -984,7 +984,7 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="http://docs.microsoft.com/azure/media/index/azure_dev-7.svg" alt="" />
+                                                    <img src="http://docs.microsoft.com/media/logos/logo_stackoverflow.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -1000,7 +1000,7 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="http://docs.microsoft.com/azure/media/index/azure_dev-7.svg" alt="" />
+                                                    <img src="http://docs.microsoft.com/media/logos/logo_TS.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -1027,7 +1027,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="http://docs.microsoft.com/azure/media/index/azure_fundamentals.svg" alt="" />
+                                                        <img src="http://docs.microsoft.com/media/illustrations/biztalk-developer-documentation-1.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -1046,7 +1046,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="http://docs.microsoft.com/azure/media/index/azure_fundamentals.svg" alt="" />
+                                                        <img src="http://docs.microsoft.com/media/illustrations/nuget-tools-reference_2.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -1065,7 +1065,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="http://docs.microsoft.com/azure/media/index/azure_fundamentals.svg" alt="" />
+                                                        <img src="http://docs.microsoft.com/media/illustrations/virtualization-hperv-server-doc-archive.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -1084,7 +1084,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="http://docs.microsoft.com/azure/media/index/azure_fundamentals.svg" alt="" />
+                                                        <img src="http://docs.microsoft.com/media/illustrations/nuget-tools-policies_5.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -1103,7 +1103,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="http://docs.microsoft.com/azure/media/index/azure_fundamentals.svg" alt="" />
+                                                        <img src="http://docs.microsoft.com/media/illustrations/ms365enterprise-partner-resource-training-1.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
