@@ -1,3 +1,7 @@
-- name: Welcome to PlayFab Docs
-  tocHref: /playfab/
-  topicHref: /playfab/
+- name: Docs
+  tocHref: /
+  topicHref: /
+  items:
+  - name: Welcome to PlayFab Docs
+    tocHref: /playfab/
+    topicHref: /playfab/

@@ -1,0 +1,7 @@
+- name: News
+  href: index.md
+  items:
+  - name: Quickstart
+    href: /playFab/features/engagement/news/quickstart.md
+  - name: Tutorials
+    href: /playFab/features/engagement/news/tutorials.md

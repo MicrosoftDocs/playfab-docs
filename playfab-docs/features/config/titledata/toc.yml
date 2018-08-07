@@ -1,0 +1,7 @@
+- name: TitleData
+  href: index.md
+  items:
+  - name: Quickstart
+    href: /playFab/features/config/titledata/quickstart.md
+  - name: Tutorials
+    href: /playFab/features/config/titledata/tutorials.md
