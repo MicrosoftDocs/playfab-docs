@@ -1,4 +1,4 @@
-- name: AB Testing
+- name: A/B Testing
   href: index.md
   items:
   - name: Quickstart
