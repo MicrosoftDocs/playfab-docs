@@ -1,0 +1,7 @@
+- name: Metrics
+  href: index.md
+  items:
+  - name: Quickstart
+    href: /playFab/features/analytics/metrics/quickstart.md
+  - name: Tutorials
+    href: /playFab/features/analytics/metrics/tutorials.md
