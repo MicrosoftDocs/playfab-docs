@@ -67,7 +67,7 @@ featureFlags:
         </ul>
     </div>
     <div class="container">
-        <h1 class="visually-hidden">Microsoft Azure Documentation</h1>
+        <h1 class="visually-hidden">Microsoft PlayFab Documentation</h1>
         <ul class="pivots">
             <li>
                 <a href="#get-started">Getting Started</a>
