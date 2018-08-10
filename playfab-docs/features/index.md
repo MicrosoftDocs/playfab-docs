@@ -1,6 +1,5 @@
 ---
 layout: HubPage
-hide_bc: true
 title: PlayFab Features
 description: to-follow
 ---
