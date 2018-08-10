@@ -1,227 +1,139 @@
-- name: Welcome to PlayFab Docs
+- name: PlayFab Docs
   href: index.md
   items:
-- name: Release Notes
-  href: ./release-notes.md
-- name: API References
-  href: ./api-references.md
-- name: PlayFab Status
-  href: ./playfab_status.md
-- name: Getting Started
-  href: ./getting-started/index.md
-  items:
-    - name: Features Overview
-      href: ./getting-started/features-overview/index.md
+  - name: Release Notes
+    href: ./release-notes/index.md
+  - name: API References
+    href: ./api-references/index.md
+  - name: PlayFab Status
+    href: ./playfab_status.md
+  - name: Features
+    href: index.md
+    items:
+    - name: Authentication  
       items:
-      - name: Multi-platform authentication
-        href: ./getting-started/features-overview/multi-platform-authentication.md
-      - name: Tournaments
-        href: ./getting-started/features-overview/tournaments.md
-      - name: Friends, Groups
-        href: ./getting-started/features-overview/friends-groups.md
-      - name: Multiplayer Servers
-        href: ./getting-started/features-overview/multiplayer-servers.md
-      - name: Matchmaking
-        href: ./getting-started/features-overview/matchmaking.md
-      - name: Push Notifications
-        href: ./getting-started/features-overview/push-notifications.md
-      - name: Commerce
-        href: ./getting-started/features-overview/commerce.md
-      - name: Analytics
-        href: ./getting-started/features-overview/analytics.md
-    - name: Core Concepts
-      href: ./getting-started/developer-guide/index.md
+      - name: Linking &amp; Unlinking
+        href: ./features/authentication/linking-unlinking/index.md
+        items:
+        - name: Quickstart
+          href: ./features/authentication/linking-unlinking/quickstart.md
+        - name: Tutorials
+          href: ./features/authentication/linking-unlinking/tutorials.md
+      - name: Platform-specific Authentication
+        href: ./features/authentication/platform-specific-authentication/index.md
+        items:
+        - name: Quickstart
+          href: ./features/authentication/platform-specific-authentication/quickstart.md
+        - name: Tutorials
+          href: ./features/authentication/platform-specific-authentication/tutorials.md
+    - name: Data
       items:
       - name: Entities
-        href: ./getting-started/developer-guide/entities.md
-      - name: SDKs
-        href: ./getting-started/developer-guide/sdks.md
-      - name: Cloud Scripts
-        href: ./getting-started/developer-guide/cloud-scripts.md
-      - name: PlayStream
-        href: ./getting-started/developer-guide/playstream.md
-      - name: Game Manager
-        href: ./getting-started/developer-guide/game-manager.md
-      - name: Legacy
-        href: ./getting-started/developer-guide/legacy.md
-    - name: Quickstart
-      href: ./getting-started/quickstart/index.md
+        href: index.md
+        items:
+        - name: Quickstart
+          href: ./features/data/entities/quickstart.md
+        - name: Tutorials
+          href: ./features/data/entities/tutorials.md
+  - name: Personas
+    items: 
+    - name: Developer
+      href: ./personas/developer.md
+    - name: LiveOps
+      href: ./personas/liveops.md
+    - name: BI
+      href: ./personas/bi.md
+  - name: Resources
+    href: ./resources/index.md
+    items:
+      - name: Event Archive
+        href: ./resources/event-archive.md
+      - name: Recipes
+        href: ./resources/recipes.md
+  - name: SDKS
+    href: index.md
+    items:
+    - name: ActionScript  
       items:
-      - name: ActionScript (Flash)
-        href: ./getting-started/quickstart/actionscript.md
-      - name: Cocos2D-x (C++)
-        href: ./getting-started/quickstart/cocos.md
+      - name: Action Script
+        href: ./sdks/actionscript/index.md
+      - name: Quickstart
+        href: ./sdks/actionscript/quickstart.md
+    - name:  C#  
+      items:
       - name: C#
-        href: ./getting-started/quickstart/c-sharp.md
-      - name: C#, Xamarin
-        href: ./getting-started/quickstart/xamarin.md
-      - name: Javascript
-        href: ./getting-started/quickstart/javascript.md
-      - name: Javascript, Phaser
-        href: ./getting-started/quickstart/phaser.md
+        href: ./sdks/c-sharp/index.md
+      - name: Quickstart
+        href: ./sdks/c-sharp/quickstart.md
+    - name: Cocos2d-x 
+      items:
+      - name: Cocos2d-x 
+        href: ./sdks/cocos2d-x/index.md
+      - name: Quickstart
+        href: ./sdks/cocos2d-x/quickstart.md
+    - name:  Java 
+      items:
       - name: Java
-        href: ./getting-started/quickstart/java.md
-      - name: Java, Android Studio
-        href: ./getting-started/quickstart/android-studio.md
+        href: ./sdks/java/index.md
+      - name: Quickstart
+        href: ./sdks/java/quickstart.md
+    - name: Javascript
+      items:
+      - name: JavaScript
+        href: ./sdks/javascript/index.md
+      - name: Quickstart
+        href: ./sdks/javascript/quickstart.md
+    - name:  Lua
+      items:
       - name: Lua
-        href: ./getting-started/quickstart/lua.md
-      - name: Lua, Corona
-        href: ./getting-started/quickstart/corona.md
-      - name: Lua, Defold
-        href: ./getting-started/quickstart/defold.md
+        href: ./sdks/lua/index.md
+      - name: Quickstart
+        href: ./sdks/lua/quickstart.md
+    - name: NodeJS
+      items:
       - name: NodeJS
-        href: ./getting-started/quickstart/nodejs.md
-      - name: Objective-C (iOS)
-        href: ./getting-started/quickstart/objective-c.md
+        href: ./sdks/nodejs/index.md
+      - name: Quickstart
+        href: ./sdks/nodejs/quickstart.md
+    - name:  Objective-C 
+      items:
+      - name: Objective-C
+        href: ./sdks/objective-c/index.md
+      - name: Quickstart
+        href: ./sdks/objective-c/quickstart.md
+    - name: PHP
+      items:
       - name: PHP
-        href: ./getting-started/quickstart/php.md
-      - name: Postman (REST)
-        href: ./getting-started/quickstart/postman.md
+        href: ./sdks/php/index.md
+      - name: Quickstart
+        href: ./sdks/php/quickstart.md
+    - name:  Postman
+      items:
+      - name: Postman
+        href: ./sdks/postman/index.md
+      - name: Quickstart
+        href: ./sdks/postman/quickstart.md
+    - name: Python
+      items:
       - name: Python
-        href: ./getting-started/quickstart/python.md
-      - name: Unity
-        href: ./getting-started/quickstart/unity.md
-      - name: Unreal Blueprints
-        href: ./getting-started/quickstart/unreal-blueprints.md
-      - name: Unreal C++
-        href: ./getting-started/quickstart/unreal-cpp.md
-      - name: WindowsSDK (C++)
-        href: ./getting-started/quickstart/windows-sdk.md
-      - name: XPlatCppSDK (C++)
-        href: ./getting-started/quickstart/xplat-cpp-sdk.md
-- name: Tutorials
-  href: ./tutorials/index.md
-  items:
-    - name: Core Concepts
-      href: ./tutorials/core-concepts/index.md
+        href: ./sdks/python/index.md
+      - name: Quickstart
+        href: ./sdks/python/quickstart.md
+    - name:  Unity3D 
       items:
-        - name: Entities
-          href: ./tutorials/core-concepts/entities.md
-        - name: Players
-          href: ./tutorials/core-concepts/players.md
-        - name: Title
-          href: ./tutorials/core-concepts/title.md
-        - name: SDKs
-          href: ./tutorials/core-concepts/sdks.md
-        - name: Cloud Scripts
-          href: ./tutorials/core-concepts/cloud-scripts.md
-        - name: PlayStream
-          href: ./tutorials/core-concepts/playstream.md
-        - name: Game Manager
-          href: ./tutorials/core-concepts/game-manager.md
-    - name: Authentication
-      href: ./tutorials/authentication/index.md
+      - name: Unity3D
+        href: ./sdks/unity3d/index.md
+      - name: Quickstart
+        href: ./sdks/unity3d/quickstart.md
+    - name: Unreal
       items:
-        - name: Linking & Unlinking
-          href: ./tutorials/authentication/linking-unlinking.md
-        - name: Specific platforms
-          href: ./tutorials/authentication/specific-platforms.md
-    - name: Multiplayer
-      href: ./tutorials/multiplayer/index.md
+      - name: Unreal
+        href: ./sdks/unreal/index.md
+      - name: Quickstart
+        href: ./sdks/unreal/quickstart.md
+    - name:  C++ 
       items:
-        - name: Tournaments
-          href: ./tutorials/multiplayer/tournaments.md
-        - name: Trading
-          href: ./tutorials/multiplayer/trading.md
-        - name: Friends & Groups
-          href: ./tutorials/multiplayer/friends-groups.md
-        - name: Photon
-          href: ./tutorials/multiplayer/photon.md
-        - name: Compute
-          href: ./tutorials/multiplayer/compute.md
-        - name: Matchmaking
-          href: ./tutorials/multiplayer/matchmaking.md
-    - name: Engagement
-      href: ./tutorials/engagement/index.md
-      items:
-        - name: Push Notifications
-          href: ./tutorials/engagement/push-notifications.md
-        - name: Emails
-          href: ./tutorials/engagement/emails.md
-        - name: Bulk Actions
-          href: ./tutorials/engagement/bulk-actions.md
-    - name: Commerce
-      href: ./tutorials/commerce/index.md
-      items:
-        - name: Items
-          href: ./tutorials/commerce/items.md
-        - name: Stores
-          href: ./tutorials/commerce/stores.md
-        - name: Real Money Purchases
-          href: ./tutorials/commerce/real-money-purchases.md
-    - name: Analytics
-      href: ./tutorials/analytics/index.md
-      items:
-        - name: Metrics and Terminology
-          href: ./tutorials/analytics/metrics-terminology.md
-        - name: Real-Time Analytics
-          href: ./tutorials/analytics/real-time-analytics.md
-        - name: Reports
-          href: ./tutorials/analytics/reports.md
-        - name: A/B Testing & Segments
-          href: ./tutorials/analytics/ab-testing-segments.md
-        - name: Add-Ons
-          href: ./tutorials/analytics/add-ons.md
-    - name: Enterprise
-      href: ./tutorials/enterprise/index.md
-      items:
-        - name: Player Encryption Services
-          href: ./tutorials/enterprise/player-encryption-services.md
-- name: SDKs/Tools
-  href: ./sdks-tools/index.md
-  items:
-    - name: SDKs
-      href: ./sdks-tools/sdks/index.md
-      items:
-        - name: ActionScript (Flash)
-          href: ./sdks-tools/sdks/actionscript.md
-        - name: Cocos2D-x (C++)
-          href: ./sdks-tools/sdks/cocos.md
-        - name: C# (Native, Xamarin)
-          href: ./sdks-tools/sdks/c-sharp.md
-        - name: Javascript (Native, Phaser)
-          href: ./sdks-tools/sdks/javascript.md
-        - name: Java (Native, Android Studio)
-          href: ./sdks-tools/sdks/java.md
-        - name: Lua (Native, Corona, Defold)
-          href: ./sdks-tools/sdks/lua.md
-        - name: NodeJS
-          href: ./sdks-tools/sdks/nodejs.md
-        - name: Objective-C (iOS)
-          href: ./sdks-tools/sdks/objective-c.md
-        - name: PHP
-          href: ./sdks-tools/sdks/php.md
-        - name: Postman (REST)
-          href: ./sdks-tools/sdks/postman.md
-        - name: Python
-          href: ./sdks-tools/sdks/python.md
-        - name: Unity (C#)
-          href: ./sdks-tools/sdks/unity.md
-        - name: Unreal Blueprints
-          href: ./sdks-tools/sdks/unreal-blueprints.md
-        - name: Unreal C++
-          href: ./sdks-tools/sdks/unreal-cpp.md
-        - name: WindowsSDK (C++)
-          href: ./sdks-tools/sdks/windows-sdk.md
-        - name: XPlatCppSDK (C++)
-          href: ./sdks-tools/sdks/xplat-cpp-sdk.md
-    - name: Tools
-      href: ./sdks-tools/tools/index.md
-      items:
-        - name: SDK Generator
-          href: ./sdks-tools/tools/sdk-generator.md
-        - name: Typescript Markup for Cloud Script
-          href: ./sdks-tools/tools/typescript.md
-- name: Resources
-  href: ./resources/index.md
-  items:
-    - name: Other Guides
-      href: ./resources/other-guides.md
-    - name: Technical Whitepaper
-      href: ./resources/technical-whitepaper.md
-    - name: Event Archive
-      href: ./resources/event-archive.md
-    - name: Recipes
-      href: ./resources/recipes.md
-    - name: Videos
-      href: ./resources/videos.md
+      - name: C++
+        href: ./sdks/xplatcpp/index.md
+      - name: Quickstart
+        href: ./sdks/xplatcpp/quickstart.md
