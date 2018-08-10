@@ -31,7 +31,7 @@ description: to-follow
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/logos/logo_Cplusplus.svg" alt="">
+                            <img src="https://docs.microsoft.com/media/common/placeholder.svg" alt="">
                         </div>
                     </div>
                     <div class="cardText">
@@ -50,14 +50,14 @@ description: to-follow
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/logos/logo_Csharp.svg" alt="">
+                            <img src="https://docs.microsoft.com/media/common/placeholder.svg" alt="">
                         </div>
                     </div>
                     <div class="cardText">
                         <h3>Config</h3>
-                        <p><a href="/playfab/sdks/c-sharp">Game Manager</a></p>
-                        <p><a href="/playfab/sdks/c-sharp/quickstart">TitleData</a></p>
-                        <p><a href="/playfab/sdks/c-sharp/quickstart">Dev-Test-Live</a></p>
+                        <p><a href="/playfab/features/config/gamemanager/">Game Manager</a></p>
+                        <p><a href="/playfab/features/config/titledata/">TitleData</a></p>
+                        <p><a href="/playfab/features/config/dev-test-live/">Dev-Test-Live</a></p>
                     </div>
                 </div>
             </div>
@@ -89,7 +89,7 @@ description: to-follow
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/logos/logo_java.svg" alt="">
+                            <img src="https://docs.microsoft.com/media/common/placeholder.svg" alt="">
                         </div>
                     </div>
                     <div class="cardText">
@@ -108,7 +108,7 @@ description: to-follow
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/logos/logo_js.svg" alt="">
+                            <img src="https://docs.microsoft.com/media/common/placeholder.svg" alt="">
                         </div>
                     </div>
                     <div class="cardText">
@@ -146,7 +146,7 @@ description: to-follow
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/logos/logo_nodejs.svg" alt="">
+                            <img src="https://docs.microsoft.com/media/common/placeholder.svg" alt="">
                         </div>
                     </div>
                     <div class="cardText">
