@@ -10,7 +10,7 @@
     - name: BI
       href: ./personas/bi.md
   - name: Features
-    href: index.md
+    href: ./features/index.md
     items:
     - name: Authentication  
       items:
