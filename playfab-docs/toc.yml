@@ -206,21 +206,21 @@
     - name: Engagement
       items:
       - name: Push Notifications
-        href: ./engagement/push-notifications/index.md
+        href: ./features/engagement/push-notifications/index.md
         items:
         - name: Quickstart
           href: ./features/engagement/push-notifications/quickstart.md
         - name: Tutorials
           href: ./features/engagement/push-notifications/tutorials.md
       - name: Emails
-        href: ./engagement/emails/index.md
+        href: ./features/engagement/emails/index.md
         items:
         - name: Quickstart
           href: ./features/engagement/emails/quickstart.md
         - name: Tutorials
           href: ./features/engagement/emails/tutorials.md
         - name: News
-        href: ./engagement/news/index.md
+        href: ./features/engagement/news/index.md
         items:
         - name: Quickstart
           href: ./features/engagement/news/quickstart.md
