@@ -1,5 +1,5 @@
 ---
-layout: HubPage
+layout: LandingPage
 title: PlayFab Features
 description: to-follow
 ---
