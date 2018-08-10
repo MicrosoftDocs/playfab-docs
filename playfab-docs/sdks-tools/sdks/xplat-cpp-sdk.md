@@ -1,1 +1,0 @@
-# XPlatCppSDK (C++)
