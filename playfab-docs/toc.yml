@@ -1,18 +1,20 @@
 - name: PlayFab Docs
   href: index.md
   items:
-  - name: Release Notes
-    href: ./release-notes/index.md
-  - name: API References
-    href: ./api-references/index.md
-  - name: PlayFab Status
-    href: ./playfab_status.md
+  - name: Personas
+    items: 
+    - name: Developer
+      href: ./personas/developer.md
+    - name: LiveOps
+      href: ./personas/liveops.md
+    - name: BI
+      href: ./personas/bi.md
   - name: Features
     href: index.md
     items:
     - name: Authentication  
       items:
-      - name: Linking &amp; Unlinking
+      - name: Linking & Unlinking
         href: ./features/authentication/linking-unlinking/index.md
         items:
         - name: Quickstart
@@ -29,20 +31,201 @@
     - name: Data
       items:
       - name: Entities
-        href: index.md
+        href: ./features/data/entities/index.md
         items:
         - name: Quickstart
           href: ./features/data/entities/quickstart.md
         - name: Tutorials
           href: ./features/data/entities/tutorials.md
-  - name: Personas
-    items: 
-    - name: Developer
-      href: ./personas/developer.md
-    - name: LiveOps
-      href: ./personas/liveops.md
-    - name: BI
-      href: ./personas/bi.md
+      - name: PlayerData
+        href: ./features/data/playerdata/index.md
+        items:
+        - name: Quickstart
+          href: ./features/data/playerdata/quickstart.md
+        - name: Tutorials
+          href: ./features/data/playerdata/tutorials.md
+      - name: Content Delivery Network
+        href: ./features/data/content-delivery-network/index.md
+        items:
+        - name: Quickstart
+          href: ./features/data/content-delivery-network/quickstart.md
+        - name: Tutorials
+          href: ./features/data/content-delivery-network/tutorials.md
+    - name: Config
+      items:
+      - name: Game Manager
+        href: ./features/config/gamemanager/index.md
+        items:
+        - name: Quickstart
+          href: ./features/config/gamemanager/quickstart.md
+        - name: Tutorials
+          href: ./features/config/gamemanager/tutorials.md
+      - name: TitleData
+        href: ./features/config/titledata/index.md
+        items:
+        - name: Quickstart
+          href: ./features/config/titledata/quickstart.md
+        - name: Tutorials
+          href: ./features/config/titledata/tutorials.md
+      - name: Dev-Test-Live
+        href: ./features/config/dev-test-live/index.md
+        items:
+        - name: Quickstart
+          href: ./features/config/dev-test-live/quickstart.md
+        - name: Tutorials
+          href: ./features/config/dev-test-live/tutorials.md
+    - name: Automation
+      items:
+      - name: CloudScript
+        href: ./features/automation/cloudscripts/index.md
+        items:
+        - name: Quickstart
+          href: ./features/automation/cloudscripts/quickstart.md
+        - name: Tutorials
+          href: ./features/automation/cloudscripts/tutorials.md
+      - name: PlayStream
+        href: ./features/automation/playstream-events/index.md
+        items:
+        - name: Quickstart
+          href: ./features/automation/playstream-events/quickstart.md
+        - name: Tutorials
+          href: ./features/automation/playstream-events/tutorials.md
+      - name: Actions & Rules
+        href: ./features/automation/actions-rules/index.md
+        items:
+        - name: Quickstart
+          href: ./features/automation/actions-rules/quickstart.md
+        - name: Tutorials
+          href: ./features/automation/actions-rules/tutorials.md
+      - name: Scheduled Tasks
+        href: ./features/automation/scheduled-tasks/index.md
+        items:
+        - name: Quickstart
+          href: ./features/automation/scheduled-tasks/quickstart.md
+        - name: Tutorials
+          href: ./features/automation/scheduled-tasks/tutorials.md
+    - name: Social
+      items:
+      - name: Friends & Groups
+        href: ./features/social/friends-groups/index.md
+        items:
+        - name: Quickstart
+          href: ./features/social/friends-groups/quickstart.md
+        - name: Tutorials
+          href: ./features/social/friends-groups/tutorials.md
+      - name: Tournaments & Leaderboards
+        href: ./features/social/tournaments-leaderboards/index.md
+        items:
+        - name: Quickstart
+          href: ./features/social/tournaments-leaderboards/quickstart.md
+        - name: Tutorials
+          href: ./features/social/tournaments-leaderboards/tutorials.md
+      - name: Trading
+        href: ./features/social/trading/index.md
+        items:
+        - name: Quickstart
+          href: ./features/social/trading/quickstart.md
+        - name: Tutorials
+          href: ./features/social/trading/tutorials.md
+    - name: Commerce
+      items:
+      - name: Items
+        href: ./features/commerce/items/index.md
+        items:
+        - name: Quickstart
+          href: ./features/commerce/items/quickstart.md
+        - name: Tutorials
+          href: ./features/commerce/items/tutorials.md
+      - name: Stores
+        href: ./features/commerce/stores/index.md
+        items:
+        - name: Quickstart
+          href: ./features/commerce/stores/quickstart.md
+        - name: Tutorials
+          href: ./features/commerce/stores/tutorials.md
+      - name: Economy
+        href: ./features/commerce/economy/index.md
+        items:
+        - name: Quickstart
+          href: ./features/commerce/economy/quickstart.md
+        - name: Tutorials
+          href: ./features/commerce/economy/tutorials.md
+    - name: Multiplayer
+      items:
+      - name: Compute
+        href: ./features/multiplayer/compute/index.md
+        items:
+        - name: Quickstart
+          href: ./features/multiplayer/compute/quickstart.md
+        - name: Tutorials
+          href: ./features/multiplayer/compute/tutorials.md
+      - name: Matchmaking
+        href: ./features/multiplayer/matchmaking/index.md
+        items:
+        - name: Quickstart
+          href: ./features/multiplayer/matchmaking/quickstart.md
+        - name: Tutorials
+          href: ./features/multiplayer/matchmaking/tutorials.md
+      - name: Photon
+        href: ./features/multiplayer/photon/index.md
+        items:
+        - name: Quickstart
+          href: ./features/multiplayer/photon/quickstart.md
+        - name: Tutorials
+          href: ./features/multiplayer/photon/tutorials.md
+    - name: Analytics
+      items:
+      - name: Metrics
+        href: ./features/analytics/metrics/index.md
+        items:
+        - name: Quickstart
+          href: ./features/analytics/metrics/quickstart.md
+        - name: Tutorials
+          href: ./features/analytics/metrics/tutorials.md
+      - name: Reports
+        href: ./features/analytics/reports/index.md
+        items:
+        - name: Quickstart
+          href: ./features/analytics/reports/quickstart.md
+        - name: Tutorials
+          href: ./features/analytics/reports/tutorials.md
+      - name: A/B Testing
+        href: ./features/analytics/ab-testing/index.md
+        items:
+        - name: Quickstart
+          href: ./features/analytics/ab-testing/quickstart.md
+        - name: Tutorials
+          href: ./features/analytics/ab-testing/tutorials.md
+      - name: Segmentation
+        href: ./features/analytics/segmentation/index.md
+        items:
+        - name: Quickstart
+          href: ./features/analytics/segmentation/quickstart.md
+        - name: Tutorials
+          href: ./features/analytics/segmentation/tutorials.md
+    - name: Engagement
+      items:
+      - name: Push Notifications
+        href: ./engagement/push-notifications/index.md
+        items:
+        - name: Quickstart
+          href: ./features/engagement/push-notifications/quickstart.md
+        - name: Tutorials
+          href: ./features/engagement/push-notifications/tutorials.md
+      - name: Emails
+        href: ./engagement/emails/index.md
+        items:
+        - name: Quickstart
+          href: ./features/engagement/emails/quickstart.md
+        - name: Tutorials
+          href: ./features/engagement/emails/tutorials.md
+        - name: News
+        href: ./engagement/news/index.md
+        items:
+        - name: Quickstart
+          href: ./features/engagement/news/quickstart.md
+        - name: Tutorials
+          href: ./features/engagement/news/tutorials.md
   - name: Resources
     href: ./resources/index.md
     items:
@@ -53,87 +236,79 @@
   - name: SDKS
     href: index.md
     items:
-    - name: ActionScript  
+    - name: ActionScript
+      href: ./sdks/actionscript/index.md
       items:
-      - name: Action Script
-        href: ./sdks/actionscript/index.md
       - name: Quickstart
         href: ./sdks/actionscript/quickstart.md
-    - name:  C#  
+    - name:  C#
+      href: ./sdks/c-sharp/index.md
       items:
-      - name: C#
-        href: ./sdks/c-sharp/index.md
       - name: Quickstart
         href: ./sdks/c-sharp/quickstart.md
-    - name: Cocos2d-x 
+    - name: Cocos2d-x
+      href: ./sdks/cocos2d-x/index.md
       items:
-      - name: Cocos2d-x 
-        href: ./sdks/cocos2d-x/index.md
       - name: Quickstart
         href: ./sdks/cocos2d-x/quickstart.md
-    - name:  Java 
+    - name:  Java
+      href: ./sdks/java/index.md
       items:
-      - name: Java
-        href: ./sdks/java/index.md
       - name: Quickstart
         href: ./sdks/java/quickstart.md
     - name: Javascript
+      href: ./sdks/javascript/index.md
       items:
-      - name: JavaScript
-        href: ./sdks/javascript/index.md
       - name: Quickstart
         href: ./sdks/javascript/quickstart.md
     - name:  Lua
+      href: ./sdks/lua/index.md
       items:
-      - name: Lua
-        href: ./sdks/lua/index.md
       - name: Quickstart
         href: ./sdks/lua/quickstart.md
     - name: NodeJS
+      href: ./sdks/nodejs/index.md
       items:
-      - name: NodeJS
-        href: ./sdks/nodejs/index.md
       - name: Quickstart
         href: ./sdks/nodejs/quickstart.md
-    - name:  Objective-C 
+    - name:  Objective-C
+      href: ./sdks/objective-c/index.md
       items:
-      - name: Objective-C
-        href: ./sdks/objective-c/index.md
       - name: Quickstart
         href: ./sdks/objective-c/quickstart.md
     - name: PHP
+      href: ./sdks/php/index.md
       items:
-      - name: PHP
-        href: ./sdks/php/index.md
       - name: Quickstart
         href: ./sdks/php/quickstart.md
     - name:  Postman
+      href: ./sdks/postman/index.md
       items:
-      - name: Postman
-        href: ./sdks/postman/index.md
       - name: Quickstart
         href: ./sdks/postman/quickstart.md
     - name: Python
+      href: ./sdks/python/index.md
       items:
-      - name: Python
-        href: ./sdks/python/index.md
       - name: Quickstart
         href: ./sdks/python/quickstart.md
-    - name:  Unity3D 
+    - name:  Unity3D
+      href: ./sdks/unity3d/index.md
       items:
-      - name: Unity3D
-        href: ./sdks/unity3d/index.md
       - name: Quickstart
         href: ./sdks/unity3d/quickstart.md
     - name: Unreal
+      href: ./sdks/unreal/index.md
       items:
-      - name: Unreal
-        href: ./sdks/unreal/index.md
       - name: Quickstart
         href: ./sdks/unreal/quickstart.md
-    - name:  C++ 
+    - name:  C++
+      href: ./sdks/xplatcpp/index.md
       items:
-      - name: C++
-        href: ./sdks/xplatcpp/index.md
       - name: Quickstart
         href: ./sdks/xplatcpp/quickstart.md
+  - name: Release Notes
+    href: ./release-notes/index.md
+  - name: API References
+    href: ./api-references/index.md
+  - name: PlayFab Status
+    href: ./playfab_status.md

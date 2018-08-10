@@ -1,7 +1,0 @@
-- name: Stores
-  href: index.md
-  items:
-  - name: Quickstart
-    href: /playFab/features/commerce/stores/quickstart.md
-  - name: Tutorials
-    href: /playFab/features/commerce/stores/tutorials.md

@@ -1,7 +1,0 @@
-- name: Photon
-  href: index.md
-  items:
-  - name: Quickstart
-    href: /playFab/features/multiplayer/photon/quickstart.md
-  - name: Tutorials
-    href: /playFab/features/multiplayer/photon/tutorials.md

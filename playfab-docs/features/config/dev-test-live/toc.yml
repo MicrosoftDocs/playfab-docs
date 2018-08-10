@@ -1,7 +1,0 @@
-- name: Dev-Test-Live
-  href: index.md
-  items:
-  - name: Quickstart
-    href: /playFab/features/config/dev-test-live/quickstart.md
-  - name: Tutorials
-    href: /playFab/features/config/dev-test-live/tutorials.md

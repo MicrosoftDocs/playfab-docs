@@ -1,7 +1,0 @@
-- name: Economy
-  href: index.md
-  items:
-  - name: Quickstart
-    href: /playFab/features/commerce/economy/quickstart.md
-  - name: Tutorials
-    href: /playFab/features/commerce/economy/tutorials.md

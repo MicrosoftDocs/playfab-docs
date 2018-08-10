@@ -1,7 +1,0 @@
-- name: Segmentation
-  href: index.md
-  items:
-  - name: Quickstart
-    href: /playFab/features/analytics/segmentation/quickstart.md
-  - name: Tutorials
-    href: /playFab/features/analytics/segmentation/tutorials.md
