@@ -4,8 +4,6 @@ title: PlayFab Features
 description: to-follow
 ---
 
-# PlayFab Features
-
 <div id="main" class="v2">
     <div class="container">
         <ul class="pivots">
