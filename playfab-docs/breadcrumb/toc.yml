@@ -52,6 +52,7 @@
       - name: Automation
         tocHref: /playfab/features/automation/
         topicHref: /playfab/features/automation/
+        items:
         - name: CloudScripts
           tocHref: /playfab/features/automation/cloudscripts/
           topicHref: /playfab/features/automation/cloudscripts/
@@ -67,6 +68,7 @@
       - name: Social
         tocHref: /playfab/features/social/
         topicHref: /playfab/features/social/
+        items:
         - name: Friends & Groups
           tocHref: /playfab/features/social/friends-groups/
           topicHref: /playfab/features/social/friends-groups/
@@ -79,6 +81,7 @@
       - name: Commerce
         tocHref: /playfab/features/commerce/
         topicHref: /playfab/features/commerce/
+        items:
         - name: Items
           tocHref: /playfab/features/commerce/items/
           topicHref: /playfab/features/commerce/items/
@@ -91,6 +94,7 @@
       - name: Multiplayer
         tocHref: /playfab/features/multiplayer/
         topicHref: /playfab/features/multiplayer/
+        items:
         - name: Compute
           tocHref: /playfab/features/multiplayer/compute/
           topicHref: /playfab/features/multiplayer/compute/
@@ -103,6 +107,7 @@
       - name: Analytics
         tocHref: /playfab/features/analytics/
         topicHref: /playfab/features/analytics/
+        items:
         - name: Metrics
           tocHref: /playfab/features/analytics/metrics/
           topicHref: /playfab/features/analytics/metrics/
@@ -118,6 +123,7 @@
       - name: Engadgement
         tocHref: /playfab/features/engadgement/
         topicHref: /playfab/features/engadgement/
+        items:
         - name: Push Notifications
           tocHref: /playfab/features/engadgement/push-notifications/
           topicHref: /playfab/features/engadgement/push-notifications/
