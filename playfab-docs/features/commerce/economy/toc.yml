@@ -2,6 +2,6 @@
   href: index.md
   items:
   - name: Quickstart
-    href: /playFab/features/commerce/economy/quickstart.md
+    href: quickstart.md
   - name: Tutorials
-    href: /playFab/features/commerce/economy/tutorials.md
+    href: tutorials.md

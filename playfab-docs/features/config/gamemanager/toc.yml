@@ -2,6 +2,6 @@
   href: index.md
   items:
   - name: Quickstart
-    href: /playFab/features/config/gamemanager/quickstart.md
+    href: quickstart.md
   - name: Tutorials
-    href: /playFab/features/config/gamemanager/tutorials.md
+    href: tutorials.md

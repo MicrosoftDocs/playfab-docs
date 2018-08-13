@@ -2,6 +2,6 @@
   href: index.md
   items:
   - name: Quickstart
-    href: /playFab/features/social/friends-groups/quickstart.md
+    href: quickstart.md
   - name: Tutorials
-    href: /playFab/features/social/friends-groups/tutorials.md
+    href: tutorials.md

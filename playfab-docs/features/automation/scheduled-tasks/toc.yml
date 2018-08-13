@@ -2,6 +2,6 @@
   href: index.md
   items:
   - name: Quickstart
-    href: /playFab/features/automation/scheduled-tasks/quickstart.md
+    href: quickstart.md
   - name: Tutorials
-    href: /playFab/features/automation/scheduled-tasks/tutorials.md
+    href: tutorials.md
