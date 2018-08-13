@@ -1,0 +1,7 @@
+- name: Matchmaking
+  href: ./playfab/features/multiplayer/matchmaking/index.md
+  items:
+  - name: Quickstart
+    href: ./playfab/features/multiplayer/matchmaking/quickstart.md
+  - name: Tutorials
+    href: ./playfab/features/multiplayer/matchmaking/tutorials.md

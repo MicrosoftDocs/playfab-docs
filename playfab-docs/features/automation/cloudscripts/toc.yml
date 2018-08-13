@@ -1,0 +1,7 @@
+- name: CloudScript
+  href: ./playfab/features/automation/cloudscripts/index.md
+  items:
+  - name: Quickstart
+    href: ./playfab/features/automation/cloudscripts/quickstart.md
+  - name: Tutorials
+    href: ./playfab/features/automation/cloudscripts/tutorials.md

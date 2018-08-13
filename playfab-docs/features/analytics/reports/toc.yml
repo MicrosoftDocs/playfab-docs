@@ -1,0 +1,7 @@
+- name: Reports
+  href: ./playfab/features/analytics/reports/index.md
+  items:
+  - name: Quickstart
+    href: ./playfab/features/analytics/reports/quickstart.md
+  - name: Tutorials
+    href: ./playfab/features/analytics/reports/tutorials.md

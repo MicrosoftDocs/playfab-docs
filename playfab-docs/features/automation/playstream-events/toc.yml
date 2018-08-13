@@ -1,0 +1,7 @@
+- name: PlayStream
+  href: ./playfab/features/automation/playstream-events/index.md
+  items:
+  - name: Quickstart
+    href: ./playfab/features/automation/playstream-events/quickstart.md
+  - name: Tutorials
+    href: ./playfab/features/automation/playstream-events/tutorials.md

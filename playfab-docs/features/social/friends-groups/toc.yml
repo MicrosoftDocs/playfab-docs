@@ -1,0 +1,7 @@
+- name: Friends & Groups
+  href: ./playfab/features/social/friends-groups/index.md
+  items:
+  - name: Quickstart
+    href: ./playfab/features/social/friends-groups/quickstart.md
+  - name: Tutorials
+    href: ./playfab/features/social/friends-groups/tutorials.md

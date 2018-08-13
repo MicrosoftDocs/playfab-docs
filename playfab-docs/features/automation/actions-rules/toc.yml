@@ -1,0 +1,7 @@
+- name: Actions & Rules
+  href: ./playfab/features/automation/actions-rules/index.md
+  items:
+  - name: Quickstart
+    href: ./playfab/features/automation/actions-rules/quickstart.md
+  - name: Tutorials
+    href: ./playfab/features/automation/actions-rules/tutorials.md

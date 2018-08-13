@@ -1,0 +1,7 @@
+- name: Stores
+  href: ./playfab/features/commerce/stores/index.md
+  items:
+  - name: Quickstart
+    href: ./playfab/features/commerce/stores/quickstart.md
+  - name: Tutorials
+    href: ./playfab/features/commerce/stores/tutorials.md

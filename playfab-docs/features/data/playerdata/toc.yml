@@ -1,0 +1,7 @@
+- name: PlayerData
+  href: ./playfab/features/data/playerdata/index.md
+  items:
+  - name: Quickstart
+    href: ./playfab/features/data/playerdata/quickstart.md
+  - name: Tutorials
+    href: ./playfab/features/data/playerdata/tutorials.md

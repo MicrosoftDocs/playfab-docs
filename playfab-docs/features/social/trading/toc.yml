@@ -1,0 +1,7 @@
+- name: Trading
+  href: ./playfab/features/social/trading/index.md
+  items:
+  - name: Quickstart
+    href: ./playfab/features/social/trading/quickstart.md
+  - name: Tutorials
+    href: ./playfab/features/social/trading/tutorials.md

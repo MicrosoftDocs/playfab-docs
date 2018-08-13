@@ -1,0 +1,7 @@
+- name: Compute
+  href: ./playfab/features/multiplayer/compute/index.md
+  items:
+  - name: Quickstart
+    href: ./playfab/features/multiplayer/compute/quickstart.md
+  - name: Tutorials
+    href: ./playfab/features/multiplayer/compute/tutorials.md

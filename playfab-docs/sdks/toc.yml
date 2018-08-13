@@ -1,0 +1,73 @@
+- name: SDKS
+  href: ./playfab/sdks/index.md
+  items:
+  - name: ActionScript
+    href: ./playfab/sdks/actionscript/index.md
+    items:
+    - name: Quickstart
+      href: ./playfab/sdks/actionscript/quickstart.md
+  - name:  C#
+    href: ./playfab/sdks/c-sharp/index.md
+    items:
+    - name: Quickstart
+      href: ./playfab/sdks/c-sharp/quickstart.md
+  - name: Cocos2d-x
+    href: ./playfab/sdks/cocos2d-x/index.md
+    items:
+    - name: Quickstart
+      href: ./playfab/sdks/cocos2d-x/quickstart.md
+  - name:  Java
+    href: ./playfab/sdks/java/index.md
+    items:
+    - name: Quickstart
+      href: ./playfab/sdks/java/quickstart.md
+  - name: Javascript
+    href: ./playfab/sdks/javascript/index.md
+    items:
+    - name: Quickstart
+      href: ./playfab/sdks/javascript/quickstart.md
+  - name:  Lua
+    href: ./playfab/sdks/lua/index.md
+    items:
+    - name: Quickstart
+      href: ./playfab/sdks/lua/quickstart.md
+  - name: NodeJS
+    href: ./playfab/sdks/nodejs/index.md
+    items:
+    - name: Quickstart
+      href: ./playfab/sdks/nodejs/quickstart.md
+  - name:  Objective-C
+    href: ./playfab/sdks/objective-c/index.md
+    items:
+    - name: Quickstart
+      href: ./playfab/sdks/objective-c/quickstart.md
+  - name: PHP
+    href: ./playfab/sdks/php/index.md
+    items:
+    - name: Quickstart
+      href: ./playfab/sdks/php/quickstart.md
+  - name:  Postman
+    href: ./playfab/sdks/postman/index.md
+    items:
+    - name: Quickstart
+      href: ./playfab/sdks/postman/quickstart.md
+  - name: Python
+    href: ./playfab/sdks/python/index.md
+    items:
+    - name: Quickstart
+      href: ./playfab/sdks/python/quickstart.md
+  - name:  Unity3D
+    href: ./playfab/sdks/unity3d/index.md
+    items:
+    - name: Quickstart
+      href: ./playfab/sdks/unity3d/quickstart.md
+  - name: Unreal
+    href: ./playfab/sdks/unreal/index.md
+    items:
+    - name: Quickstart
+      href: ./playfab/sdks/unreal/quickstart.md
+  - name:  C++
+    href: ./playfab/sdks/xplatcpp/index.md
+    items:
+    - name: Quickstart
+      href: ./playfab/sdks/xplatcpp/quickstart.md

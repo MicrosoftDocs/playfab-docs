@@ -1,0 +1,2 @@
+- name: Release nodes
+  href: ./playfab/release-notes/index.md

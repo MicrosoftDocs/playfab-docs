@@ -1,0 +1,7 @@
+- name: Game Manager
+  href: ./playfab/features/config/gamemanager/index.md
+  items:
+  - name: Quickstart
+    href: ./playfab/features/config/gamemanager/quickstart.md
+  - name: Tutorials
+    href: ./playfab/features/config/gamemanager/tutorials.md

@@ -1,0 +1,7 @@
+- name: Emails
+  href: ./playfab/features/engagement/emails/index.md
+  items:
+  - name: Quickstart
+    href: ./playfab/features/engagement/emails/quickstart.md
+  - name: Tutorials
+    href: ./playfab/features/engagement/emails/tutorials.md

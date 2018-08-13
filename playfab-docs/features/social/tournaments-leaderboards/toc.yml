@@ -1,0 +1,7 @@
+- name: Tournaments & Leaderboards
+  href: ./playfab/features/social/tournaments-leaderboards/index.md
+  items:
+  - name: Quickstart
+    href: ./playfab/features/social/tournaments-leaderboards/quickstart.md
+  - name: Tutorials
+    href: ./playfab/features/social/tournaments-leaderboards/tutorials.md

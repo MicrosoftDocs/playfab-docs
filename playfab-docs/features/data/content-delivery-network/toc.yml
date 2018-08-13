@@ -1,0 +1,7 @@
+- name: Content Delivery Network
+  href: ./playfab/features/data/content-delivery-network/index.md
+  items:
+  - name: Quickstart
+    href: ./playfab/features/data/content-delivery-network/quickstart.md
+  - name: Tutorials
+    href: ./playfab/features/data/content-delivery-network/tutorials.md
