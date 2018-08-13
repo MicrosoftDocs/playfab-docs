@@ -1,3 +1,184 @@
 - name: Docs
   tocHref: /
   topicHref: /
+  items:
+  - name: PlayFab Docs
+    tocHref: /playfab/
+    topicHref: /playfab/
+    items:
+    - name: Personas
+      tocHref: /playfab/personas/
+      topicHref: /playfab/personas/developer
+    - name: Features
+      tocHref: /playfab/features/
+      topicHref: /playfab/features/
+      items:
+      - name: Authentication
+        tocHref: /playfab/features/authentication/
+        topicHref: /playfab/features/authentication/
+        items:
+        - name: Linking & Unlinking
+          tocHref:  /playfab/features/authentication/linking-unlinking/
+          topicHref:  /playfab/features/authentication/linking-unlinking/
+        - name: Platform-specific Authentication
+          tocHref: /playfab/features/authentication/platform-specific-authentication/
+          topicHref: /playfab/features/authentication/platform-specific-authentication/
+      - name: Data
+        tocHref: /playfab/features/data/
+        topicHref: /playfab/features/data/
+        items:
+        - name: Entities
+          tocHref: /playfab/features/data/entities/
+          topicHref: /playfab/features/data/entities/
+        - name: PlayerData
+          tocHref: /playfab/features/data/playerdata/
+          topicHref: /playfab/features/data/playerdata/
+        - name: Content Delivery Network
+          tocHref: /playfab/features/data/content-delivery-network/
+          topicHref: /playfab/features/data/content-delivery-network/
+      - name: Config
+        tocHref: /playfab/features/config/
+        topicHref: /playfab/features/config/
+        items:
+        - name: GameManager
+          tocHref: /playfab/features/config/gamemanager/
+          topicHref: /playfab/features/config/gamemanager/
+        - name: TitleData
+          tocHref: /playfab/features/config/titledata/
+          topicHref: /playfab/features/config/titledata/
+        - name: Dev-Test-Live
+          tocHref: /playfab/features/config/dev-test-live/
+          topicHref: /playfab/features/config/dev-test-live/
+      - name: Automation
+        tocHref: /playfab/features/automation/
+        topicHref: /playfab/features/automation/
+        - name: CloudScripts
+          tocHref: /playfab/features/automation/cloudscripts/
+          topicHref: /playfab/features/automation/cloudscripts/
+        - name: Playstream Events
+          tocHref: /playfab/features/automation/playstream-events/
+          topicHref: /playfab/features/automation/playstream-events/
+        - name: Actions & Rules
+          tocHref: /playfab/features/automation/actions-rules/
+          topicHref: /playfab/features/automation/actions-rules/
+        - name: Scheduled Tasks
+          tocHref: /playfab/features/automation/ scheduled-tasks/
+          topicHref: /playfab/features/automation/ scheduled-tasks/
+      - name: Social
+        tocHref: /playfab/features/social/
+        topicHref: /playfab/features/social/
+        - name: Friends & Groups
+          tocHref: /playfab/features/social/friends-groups/
+          topicHref: /playfab/features/social/friends-groups/
+        - name: Tournaments & Leaderboards
+          tocHref: /playfab/features/social/tournaments-leaderboards/
+          topicHref: /playfab/features/social/tournaments-leaderboards/
+        - name: Trading
+          tocHref: /playfab/features/social/trading/
+          topicHref: /playfab/features/social/trading/
+      - name: Commerce
+        tocHref: /playfab/features/commerce/
+        topicHref: /playfab/features/commerce/
+        - name: Items
+          tocHref: /playfab/features/commerce/items/
+          topicHref: /playfab/features/commerce/items/
+        - name: Stores
+          tocHref: /playfab/features/commerce/stores/
+          topicHref: /playfab/features/commerce/stores/
+        - name: Economys
+          tocHref: /playfab/features/commerce/economy/
+          topicHref: /playfab/features/commerce/economy/
+      - name: Multiplayer
+        tocHref: /playfab/features/multiplayer/
+        topicHref: /playfab/features/multiplayer/
+        - name: Compute
+          tocHref: /playfab/features/multiplayer/compute/
+          topicHref: /playfab/features/multiplayer/compute/
+        - name: Matchmaking
+          tocHref: /playfab/features/multiplayer/matchmaking/
+          topicHref: /playfab/features/multiplayer/matchmaking/
+        - name: Photon
+          tocHref: /playfab/features/multiplayer/photon/
+          topicHref: /playfab/features/multiplayer/photon/
+      - name: Analytics
+        tocHref: /playfab/features/analytics/
+        topicHref: /playfab/features/analytics/
+        - name: Metrics
+          tocHref: /playfab/features/analytics/metrics/
+          topicHref: /playfab/features/analytics/metrics/
+        - name: Reports
+          tocHref: /playfab/features/analytics/reports/
+          topicHref: /playfab/features/analytics/reports/
+        - name: A/B Testing
+          tocHref: /playfab/features/analytics/ab-testing/
+          topicHref: /playfab/features/analytics/ab-testing/
+        - name: Segmentation
+          tocHref: /playfab/features/analytics/segmentation/
+          topicHref: /playfab/features/analytics/segmentation/
+      - name: Engadgement
+        tocHref: /playfab/features/engadgement/
+        topicHref: /playfab/features/engadgement/
+        - name: Push Notifications
+          tocHref: /playfab/features/engadgement/push-notifications/
+          topicHref: /playfab/features/engadgement/push-notifications/
+        - name: Emails
+          tocHref: /playfab/features/engadgement/emails/
+          topicHref: /playfab/features/engadgement/emails/
+        - name: News
+          tocHref: /playfab/features/engadgement/news/
+          topicHref: /playfab/features/engadgement/news/
+    - name: SDKs
+      tocHref: /playfab/sdks/
+      topicHref: /playfab/sdks/
+      items:
+      - name: ActionScript
+        tocHref: /playfab/sdks/actionscript/
+        topicHref: /playfab/sdks/actionscript/
+      - name: C#
+        tocHref: /playfab/sdks/c-sharp/
+        topicHref: /playfab/sdks/c-sharp/
+      - name: Cocos2D-x
+        tocHref: /playfab/sdks/cocos2d-x/
+        topicHref: /playfab/sdks/cocos2d-x/
+      - name: Java
+        tocHref: /playfab/sdks/java/
+        topicHref: /playfab/sdks/java/
+      - name: JavaScript
+        tocHref: /playfab/sdks/javascript/
+        topicHref: /playfab/sdks/javascript/
+      - name: Lua
+        tocHref: /playfab/sdks/lua/
+        topicHref: /playfab/sdks/lua/
+      - name: NodeJS
+        tocHref: /playfab/sdks/nodejs/
+        topicHref: /playfab/sdks/nodejs/
+      - name: Objective C
+        tocHref: /playfab/sdks/objective-c/
+        topicHref: /playfab/sdks/objective-c/
+      - name: PHP
+        tocHref: /playfab/sdks/php/
+        topicHref: /playfab/sdks/php/
+      - name: Postman
+        tocHref: /playfab/sdks/postman/
+        topicHref: /playfab/sdks/postman/
+      - name: Python
+        tocHref: /playfab/sdks/python/
+        topicHref: /playfab/sdks/python/
+      - name: Unity3D
+        tocHref: /playfab/sdks/unity3d/
+        topicHref: /playfab/sdks/unity3d/
+      - name: Unreal
+        tocHref: /playfab/sdks/unreal/
+        topicHref: /playfab/sdks/unreal/
+      - name: C++
+        tocHref: /playfab/sdks/xplatcpp/
+        topicHref: /playfab/sdks/xplatcpp/
+    - name: API References
+      tocHref: /playfab/api-references/
+      topicHref: /playfab/api-references/
+    - name: Resources
+      tocHref: /playfab/resources/
+      topicHref: /playfab/resources/
+    - name: Release Notes
+      tocHref: /playfab/release-notes/
+      topicHref: /playfab/release-notes/
