@@ -1,7 +1,7 @@
 - name: Photon
-  href: ./playfab/features/multiplayer/photon/index.md
+  href: index.md
   items:
   - name: Quickstart
-    href: ./playfab/features/multiplayer/photon/quickstart.md
+    href: quickstart.md
   - name: Tutorials
-    href: ./playfab/features/multiplayer/photon/tutorials.md
+    href: tutorials.md

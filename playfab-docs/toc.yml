@@ -10,7 +10,7 @@
     - name: BI
       href: ./personas/bi.md
   - name: Features
-    href: ./playfab/features/index.md
+    href: ./features/index.md
   - name: Resources
     href: ./resources/index.md
     items:

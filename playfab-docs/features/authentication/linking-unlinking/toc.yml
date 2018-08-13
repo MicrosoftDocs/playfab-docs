@@ -1,7 +1,7 @@
 - name: Linking & Unlinking
-  href: ./playfab/features/authentication/linking-unlinking/index.md
+  href: index.md
   items:
   - name: Quickstart
-    href: ./playfab/features/authentication/linking-unlinking/quickstart.md
+    href: quickstart.md
   - name: Tutorials
-    href: ./playfab/features/authentication/linking-unlinking/tutorials.md
+    href: tutorials.md

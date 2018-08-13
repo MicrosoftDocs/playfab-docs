@@ -1,7 +1,7 @@
 - name: Platform-specific Authentication
-  href: ./playfab/features/authentication/platform-specific-authentication/index.md
+  href: index.md
   items:
   - name: Quickstart
-    href: ./playfab/features/authentication/platform-specific-authentication/quickstart.md
+    href: quickstart.md
   - name: Tutorials
-    href: ./playfab/features/authentication/platform-specific-authentication/tutorials.md
+    href: tutorials.md

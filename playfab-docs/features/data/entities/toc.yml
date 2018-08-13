@@ -1,7 +1,7 @@
 - name: Entities
-  href: ./playfab/features/data/entities/index.md
+  href: index.md
   items:
   - name: Quickstart
-    href: ./playfab/features/data/entities/quickstart.md
+    href: quickstart.md
   - name: Tutorials
-    href: ./playfab/features/data/entities/tutorials.md
+    href: tutorials.md

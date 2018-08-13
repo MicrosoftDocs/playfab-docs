@@ -1,7 +1,7 @@
 - name: Push Notifications
-  href: ./playfab/features/engagement/push-notifications/index.md
+  href: index.md
   items:
   - name: Quickstart
-    href: ./playfab/features/engagement/push-notifications/quickstart.md
+    href: quickstart.md
   - name: Tutorials
-    href: ./playfab/features/engagement/push-notifications/tutorials.md
+    href: tutorials.md

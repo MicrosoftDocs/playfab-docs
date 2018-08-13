@@ -1,7 +1,7 @@
 - name: Scheduled Tasks
-  href: ./playfab/features/automation/scheduled-tasks/index.md
+  href: index.md
   items:
   - name: Quickstart
-    href: ./playfab/features/automation/scheduled-tasks/quickstart.md
+    href: quickstart.md
   - name: Tutorials
-    href: ./playfab/features/automation/scheduled-tasks/tutorials.md
+    href: tutorials.md

@@ -1,7 +1,7 @@
 - name: TitleData
-  href: ./playfab/features/config/titledata/index.md
+  href: index.md
   items:
   - name: Quickstart
-    href: ./playfab/features/config/titledata/quickstart.md
+    href: quickstart.md
   - name: Tutorials
-    href: ./playfab/features/config/titledata/tutorials.md
+    href: tutorials.md
