@@ -1,7 +1,7 @@
 - name: PlayFab Resources
   href: ./index.md
   items:
-  - name: Recipes
-    href: ./recipes.md
   - name: Event Archive
     href: ./event-archive.md
+  - name: Recipes
+    href: ./recipes.md
