@@ -181,7 +181,7 @@
         topicHref: /playfab/sdks/xplatcpp/
     - name: API References
       tocHref: /playfab/api-references/
-      topicHref: /playfab/api-references/
+      topicHref: /rest/api/playfab/?view=playfab-rest
     - name: Resources
       tocHref: /playfab/resources/
       topicHref: /playfab/resources/
