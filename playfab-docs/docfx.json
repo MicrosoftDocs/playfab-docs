@@ -33,7 +33,8 @@
         "globalMetadata": {
             "breadcrumb_path": "/playfab/breadcrumb/toc.json",
             "extendBreadcrumb": false,
-            "feedback_system": "None"
+            "feedback_system": "None",
+            "uhfHeaderId": "MSDocsHeader-PlayFab"
         },
         "fileMetadata": {},
         "template": [],
