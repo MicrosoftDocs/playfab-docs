@@ -18,5 +18,3 @@
         href: ./resources/event-archive.md
       - name: Recipes
         href: ./resources/recipes.md
-  - name: PlayFab Status
-    href: ./playfab_status.md
