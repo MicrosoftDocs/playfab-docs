@@ -188,10 +188,3 @@
     - name: Release Notes
       tocHref: /playfab/release-notes/
       topicHref: /playfab/release-notes/
-  - name: PlayFab Docs
-    tocHref: /rest/api/playfab/
-    topicHref: /playfab/
-    items:
-    - name: API References
-      tocHref: /rest/api/playfab/
-      topicHref: /playfab/api-references/
