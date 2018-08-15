@@ -55,66 +55,7 @@ featureFlags:
                                     </div>
                                 </a>
                             </li>
-                            <li>
-                                <a href="/playfab/personas/bi">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="/playfab/media/getting_started_bi.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Getting Started for Business Intelligence</h3>
-                                                    <p>Lorem ipsum</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                        <p>IOAWEfefjwiojfjwioefjweofjwef</p>
-                        <ul id="start2" class="cardsC">
-                            <li>
-                                <a href="/playfab/personas/developer">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="/playfab/media/getting_started_dev.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Getting Started for Development</h3>
-                                                    <p>Lorem ipsum</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/playfab/personas/liveops">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="/playfab/media/getting_started_liveops.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Getting Started for LiveOps</h3>
-                                                    <p>Lorem ipsum</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
+                            <p>IOAWEfefjwiojfjwioefjweofjwef</p>
                             <li>
                                 <a href="/playfab/personas/bi">
                                     <div class="cardSize">
