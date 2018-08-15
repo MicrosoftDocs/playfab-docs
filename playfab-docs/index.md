@@ -17,10 +17,6 @@ featureFlags:
                     <li>
                         <a href="#start">Home</a>
                         <ul id="start" class="cardsC">
-                            <h2>Welcome to PlayFab Documentation!</h2>
-                            <br>
-                            <p>Lorem ipsum</p>
-                            <br>
                             <li>
                                 <a href="/playfab/personas/developer">
                                     <div class="cardSize">
