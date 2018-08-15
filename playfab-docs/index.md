@@ -24,7 +24,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="http://docs.microsoft.com/media/common/placeholder.svg" alt="" />
+                                                        <img src="/media/getting_started_dev.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -43,7 +43,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="http://docs.microsoft.com/media/common/placeholder.svg" alt="" />
+                                                        <img src="/media/getting_started_liveops.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -62,7 +62,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="http://docs.microsoft.com/media/common/placeholder.svg" alt="" />
+                                                        <img src="/media/getting_started_bi.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
