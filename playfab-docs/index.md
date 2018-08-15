@@ -86,7 +86,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="http://docs.microsoft.com/media/common/placeholder.svg" alt="" />
+                                                        <img src="/playfab/media/core_concept_gamemanager.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -105,7 +105,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="http://docs.microsoft.com/media/common/placeholder.svg" alt="" />
+                                                        <img src="/playfab/media/core_concept_entities.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -124,7 +124,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="http://docs.microsoft.com/media/common/placeholder.svg" alt="" />
+                                                        <img src="/playfab/media/core_concept_playstream.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -143,7 +143,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="http://docs.microsoft.com/media/common/placeholder.svg" alt="" />
+                                                        <img src="/playfab/media/core_concept_cloudscript.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -166,7 +166,7 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="http://docs.microsoft.com/media/common/placeholder.svg" alt="" />
+                                                    <img src="/playfab/media/quickstart_authentication.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -184,7 +184,7 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="http://docs.microsoft.com/media/common/placeholder.svg" alt="" />
+                                                    <img src="/playfab/media/quickstart_data.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -203,7 +203,7 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="http://docs.microsoft.com/media/common/placeholder.svg" alt="" />
+                                                    <img src="/playfab/media/quickstart_config.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -222,7 +222,7 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="http://docs.microsoft.com/media/common/placeholder.svg" alt="" />
+                                                    <img src="/playfab/media/quickstart_automation.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -242,7 +242,7 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="http://docs.microsoft.com/media/common/placeholder.svg" alt="" />
+                                                    <img src="/playfab/media/quickstart_social.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -261,7 +261,7 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="http://docs.microsoft.com/media/common/placeholder.svg" alt="" />
+                                                    <img src="/playfab/media/quickstart_commerce.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -280,7 +280,7 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="http://docs.microsoft.com/media/common/placeholder.svg" alt="" />
+                                                    <img src="/playfab/media/quickstart_multiplayer.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -299,7 +299,7 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="http://docs.microsoft.com/media/common/placeholder.svg" alt="" />
+                                                    <img src="/playfab/media/quickstart_analytics.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -319,7 +319,7 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="http://docs.microsoft.com/media/common/placeholder.svg" alt="" />
+                                                    <img src="/playfab/media/quickstart_engagement.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
