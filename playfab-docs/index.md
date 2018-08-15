@@ -15,8 +15,12 @@ featureFlags:
                 <a href="#main"></a>
                 <ul id="main">
                     <li>
-                        <a href="#start">Welcome</a>
+                        <a href="#start">Home</a>
                         <ul id="start" class="cardsC">
+                            <h2>Welcome to PlayFab Documentation!</h2>
+                            <br>
+                            <p>Lorem ipsum</p>
+                            <br>
                             <li>
                                 <a href="/playfab/personas/developer">
                                     <div class="cardSize">
@@ -55,7 +59,6 @@ featureFlags:
                                     </div>
                                 </a>
                             </li>
-                            <p>IOAWEfefjwiojfjwioefjweofjwef</p>
                             <li>
                                 <a href="/playfab/personas/bi">
                                     <div class="cardSize">
