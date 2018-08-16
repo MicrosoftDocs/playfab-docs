@@ -24,7 +24,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="/playfab/media/getting_started_dev.svg" alt="" />
+                                                        <img src="/playfab/media/persona_developer.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -43,7 +43,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="/playfab/media/getting_started_liveops.svg" alt="" />
+                                                        <img src="/playfab/media/persona_liveops.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -62,7 +62,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="/playfab/media/getting_started_bi.svg" alt="" />
+                                                        <img src="/playfab/media/persona_business_intelligence.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -72,6 +72,63 @@ featureFlags:
                                             </div>
                                         </div>
                                     </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/playfab/resources/event-archive">
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardImageOuter">
+                                                <div class="cardImage">
+                                                    <img src="/playfab/media/resource_event_archive.svg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="cardText">
+                                                <h3>Event Archive</h3>
+                                                <p>Lorem ipsum</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/playfab/resources/recipes">
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardImageOuter">
+                                                <div class="cardImage">
+                                                    <img src="/playfab/media/resource_recipes.svg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="cardText">
+                                                <h3>Recipes</h3>
+                                                <p>Lorem ipsum</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://s3-us-west-2.amazonaws.com/api-playfab-com-craft-files/FileAssets/playfabtechnicalwhitepaper_2016.06.18.pdf">
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardImageOuter">
+                                                <div class="cardImage">
+                                                    <img src="/playfab/media/resource_technical_whitepaper.svg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="cardText">
+                                                <h3>Technical Whitepaper</h3>
+                                                <p>Lorem ipsum</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                                 </a>
                             </li>
                         </ul>
@@ -86,7 +143,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/playfab/media/core_concept_gamemanager.svg" alt="" />
+                                                        <img src="/playfab/media/core_concept_game_manager.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
