@@ -23,7 +23,7 @@
         - name: Linking & Unlinking
           tocHref:  /playfab/features/authentication/linking-unlinking/
           topicHref:  /playfab/features/authentication/linking-unlinking/
-        - name: Platform-specific Authentication
+        - name: Platform-Specific Authentication
           tocHref: /playfab/features/authentication/platform-specific-authentication/
           topicHref: /playfab/features/authentication/platform-specific-authentication/
       - name: Data
@@ -33,7 +33,7 @@
         - name: Entities
           tocHref: /playfab/features/data/entities/
           topicHref: /playfab/features/data/entities/
-        - name: PlayerData
+        - name: Player Data
           tocHref: /playfab/features/data/playerdata/
           topicHref: /playfab/features/data/playerdata/
         - name: Content Delivery Network
@@ -46,7 +46,7 @@
         - name: GameManager
           tocHref: /playfab/features/config/gamemanager/
           topicHref: /playfab/features/config/gamemanager/
-        - name: TitleData
+        - name: Title Data
           tocHref: /playfab/features/config/titledata/
           topicHref: /playfab/features/config/titledata/
         - name: Dev-Test-Live
@@ -56,10 +56,10 @@
         tocHref: /playfab/features/automation/
         topicHref: /playfab/features/#pivot=main&panel=automation
         items:
-        - name: CloudScripts
-          tocHref: /playfab/features/automation/cloudscripts/
-          topicHref: /playfab/features/automation/cloudscripts/
-        - name: Playstream Events
+        - name: Cloud Script
+          tocHref: /playfab/features/automation/cloudscript/
+          topicHref: /playfab/features/automation/cloudscript/
+        - name: PlayStream Events
           tocHref: /playfab/features/automation/playstream-events/
           topicHref: /playfab/features/automation/playstream-events/
         - name: Actions & Rules
@@ -143,6 +143,9 @@
       - name: ActionScript
         tocHref: /playfab/sdks/actionscript/
         topicHref: /playfab/sdks/actionscript/
+      - name: C++
+        tocHref: /playfab/sdks/xplatcpp/
+        topicHref: /playfab/sdks/xplatcpp/
       - name: C#
         tocHref: /playfab/sdks/c-sharp/
         topicHref: /playfab/sdks/c-sharp/
@@ -161,7 +164,7 @@
       - name: NodeJS
         tocHref: /playfab/sdks/nodejs/
         topicHref: /playfab/sdks/nodejs/
-      - name: Objective C
+      - name: Objective-C
         tocHref: /playfab/sdks/objective-c/
         topicHref: /playfab/sdks/objective-c/
       - name: PHP
@@ -179,9 +182,6 @@
       - name: Unreal
         tocHref: /playfab/sdks/unreal/
         topicHref: /playfab/sdks/unreal/
-      - name: C++
-        tocHref: /playfab/sdks/xplatcpp/
-        topicHref: /playfab/sdks/xplatcpp/
     - name: API References
       tocHref: /playfab/api-references/
       topicHref: /playfab/api-references/

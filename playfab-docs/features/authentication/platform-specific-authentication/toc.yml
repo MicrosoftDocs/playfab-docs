@@ -1,4 +1,4 @@
-- name: Platform-specific Authentication
+- name: Platform-Specific Authentication
   href: index.md
   items:
   - name: Quickstart

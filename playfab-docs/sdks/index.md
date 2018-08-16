@@ -161,7 +161,7 @@ description: to-follow
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Objective C</h3>
+                        <h3>Objective-C</h3>
                         <p><a href="/playfab/sdks/objective-c">SDK</a></p>
                         <p><a href="/playfab/sdks/objective-c/quickstart">Quickstart</a></p>
                     </div>

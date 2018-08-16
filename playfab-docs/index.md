@@ -194,7 +194,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/playfab/features/automation/cloudscripts">
+                                <a href="/playfab/features/automation/cloudscript">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -204,7 +204,7 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>CloudScript</h3>
+                                                    <h3>Cloud Script</h3>
                                                     <p>Lorem ipsum</p>
                                                 </div>
                                             </div>
@@ -229,7 +229,7 @@ featureFlags:
                                             <div class="cardText">
                                                 <h3>Authentication</h3>
                                                 <p><a href="/playfab/features/authentication/linking-unlinking/quickstart">Linking &amp; Unlinking</a></p>
-                                                <p><a href="/playfab/features/authentication/platform-specific-authentication/quickstart">Platform Specific Authentication</a></p>
+                                                <p><a href="/playfab/features/authentication/platform-specific-authentication/quickstart">Platform-Specific Authentication</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -247,7 +247,7 @@ featureFlags:
                                             <div class="cardText">
                                                 <h3>Data</h3>
                                                 <p><a href="/playfab/features/data/entities/quickstart">Entities</a></p>
-                                                <p><a href="/playfab/features/data/playerdata/quickstart">PlayerData</a></p>
+                                                <p><a href="/playfab/features/data/playerdata/quickstart">Player Data</a></p>
                                                 <p><a href="/playfab/features/data/content-delivery-network/quickstart">Content Delivery Network</a></p>
                                             </div>
                                         </div>
@@ -266,7 +266,7 @@ featureFlags:
                                             <div class="cardText">
                                                 <h3>Config</h3>
                                                 <p><a href="/playfab/features/config/gamemanager/quickstart">Game Manager</a></p>
-                                                <p><a href="/playfab/features/config/titledata/quickstart">TitleData</a></p>
+                                                <p><a href="/playfab/features/config/titledata/quickstart">Title Data</a></p>
                                                 <p><a href="/playfab/features/config/dev-test-live/quickstart">Dev-Test-Live</a></p>
                                             </div>
                                         </div>
@@ -284,7 +284,7 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>Automation</h3>
-                                                <p><a href="/playfab/features/automation/cloudscripts/quickstart">CloudScript</a></p>
+                                                <p><a href="/playfab/features/automation/cloudscript/quickstart">Cloud Script</a></p>
                                                 <p><a href="/playfab/features/automation/playstream-events/quickstart">PlayStream</a></p>
                                                 <p><a href="/playfab/features/automation/actions-rules/quickstart">Actions &amp; Rules</a></p>
                                                 <p><a href="/playfab/features/automation/scheduled-tasks/quickstart">Scheduled Tasks</a></p>

@@ -42,7 +42,7 @@ description: to-follow
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3>Platform Specific Authentication</h3>
+                                                <h3>Platform-Specific Authentication</h3>
                                                 <p><a href="/playfab/features/authentication/platform-specific-authentication/">Overview</a></p>
                                                 <p><a href="/playfab/features/authentication/platform-specific-authentication/quickstart">Quickstart</a></p>
                                                 <p><a href="/playfab/features/authentication/platform-specific-authentication/tutorials">Tutorials</a></p>
@@ -85,7 +85,7 @@ description: to-follow
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3>PlayerData</h3>
+                                                <h3>Player Data</h3>
                                                 <p><a href="/playfab/features/data/playerdata/">Overview</a></p>
                                                 <p><a href="/playfab/features/data/playerdata/quickstart">Quickstart</a></p>
                                                 <p><a href="/playfab/features/data/playerdata/tutorials">Tutorials</a></p>
@@ -147,7 +147,7 @@ description: to-follow
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3>TitleData</h3>
+                                                <h3>Title Data</h3>
                                                 <p><a href="/playfab/features/config/titledata/">Overview</a></p>
                                                 <p><a href="/playfab/features/config/titledata/quickstart">Quickstart</a></p>
                                                 <p><a href="/playfab/features/config/titledata/tutorials">Tutorials</a></p>
@@ -190,10 +190,10 @@ description: to-follow
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3>CloudScript</h3>
-                                                <p><a href="/playfab/features/automation/cloudscripts/">Overview</a></p>
-                                                <p><a href="/playfab/features/automation/cloudscripts/quickstart">Quickstart</a></p>
-                                                <p><a href="/playfab/features/automation/cloudscripts/tutorials">Tutorials</a></p>
+                                                <h3>Cloud Script</h3>
+                                                <p><a href="/playfab/features/automation/cloudscript/">Overview</a></p>
+                                                <p><a href="/playfab/features/automation/cloudscript/quickstart">Quickstart</a></p>
+                                                <p><a href="/playfab/features/automation/cloudscript/tutorials">Tutorials</a></p>
                                             </div>
                                         </div>
                                     </div>
