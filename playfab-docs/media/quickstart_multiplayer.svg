@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #444;
+      }
+    </style>
+  </defs>
+  <title>class</title>
+  <g id="ICONS">
+    <rect class="cls-1" x="2.33" y="0.75" width="5.84" height="9" transform="translate(5.25 12.67) rotate(-135)"/>
+    <polygon class="cls-1" points="15 8 4 8 5 6 15 6 15 8"/>
+    <rect class="cls-1" x="12.46" y="4.42" width="4" height="6" transform="translate(19.44 22.9) rotate(-135)"/>
+    <rect class="cls-1" x="12.46" y="11.46" width="4" height="6" transform="translate(14.46 34.92) rotate(-135)"/>
+    <polygon class="cls-1" points="10 13 10 7 8 7 8 15 15 15 15 13 10 13"/>
+  </g>
+</svg>

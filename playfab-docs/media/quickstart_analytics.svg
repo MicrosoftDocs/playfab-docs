@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #444;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #444;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <title>cmdlet</title>
+  <g id="ICONS">
+    <path class="cls-1" d="M0,0V18H18V0ZM16,16H2V2H16Z"/>
+    <polyline class="cls-2" points="4 4 9 9 4 14"/>
+    <rect class="cls-1" x="10" y="12" width="5" height="2"/>
+  </g>
+</svg>

@@ -1,0 +1,31 @@
+<svg id="ICONS-64x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: #e5e5e5;
+      }
+
+      .cls-3 {
+        fill: #feb586;
+      }
+
+      .cls-4 {
+        fill: none;
+        stroke: #263746;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <title>i_mail</title>
+  <path class="cls-1" d="M63,12V52a2,2,0,0,1-1.94,2H2.94A2,2,0,0,1,1,52V12a1.94,1.94,0,0,1,.09-.59,1.87,1.87,0,0,1,.52-.85A1.82,1.82,0,0,1,2.94,10H61.06a1.95,1.95,0,0,1,1.86,1.49A1.59,1.59,0,0,1,63,12Z"/>
+  <rect class="cls-2" x="2" y="9.82" width="5" height="44.09"/>
+  <rect class="cls-2" x="57" y="10" width="5" height="43.91"/>
+  <polygon class="cls-3" points="2 10 32 29 62 10 2 10"/>
+  <path class="cls-4" d="M63,12V52a2,2,0,0,1-1.94,2H2.94A2,2,0,0,1,1,52V12a1.94,1.94,0,0,1,.09-.59,1.87,1.87,0,0,1,.52-.85A1.82,1.82,0,0,1,2.94,10H61.06a1.95,1.95,0,0,1,1.86,1.49A1.59,1.59,0,0,1,63,12Z"/>
+  <polyline class="cls-4" points="2 11 32 29 62 11"/>
+</svg>

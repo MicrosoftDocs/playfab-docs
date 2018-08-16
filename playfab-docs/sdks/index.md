@@ -13,7 +13,7 @@ description: to-follow
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/common/placeholder.svg" alt="">
+                            <img src="/playfab/sdks/media/sdk_actionscript.svg" alt="">
                         </div>
                     </div>
                     <div class="cardText">
@@ -67,7 +67,7 @@ description: to-follow
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/common/placeholder.svg" alt="">
+                            <img src="/playfab/sdks/media/sdk_cocos2dx.svg" alt="">
                         </div>
                     </div>
                     <div class="cardText">
@@ -121,7 +121,7 @@ description: to-follow
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/common/placeholder.svg" alt="">
+                            <img src="/playfab/sdks/media/sdk_lua.svg" alt="">
                         </div>
                     </div>
                     <div class="cardText">
@@ -157,7 +157,7 @@ description: to-follow
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/common/placeholder.svg" alt="">
+                            <img src="/playfab/sdks/media/sdk_objectivec.svg" alt="">
                         </div>
                     </div>
                     <div class="cardText">
@@ -193,7 +193,7 @@ description: to-follow
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/common/placeholder.svg" alt="">
+                            <img src="/playfab/sdks/media/sdk_postman.svg" alt="">
                         </div>
                     </div>
                     <div class="cardText">
@@ -247,7 +247,7 @@ description: to-follow
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/common/placeholder.svg" alt="">
+                            <img src="/playfab/sdks/media/sdk_unreal.svg" alt="">
                         </div>
                     </div>
                     <div class="cardText">

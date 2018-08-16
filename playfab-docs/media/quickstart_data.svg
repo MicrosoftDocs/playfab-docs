@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: #424242;
+      }
+    </style>
+  </defs>
+  <title>method</title>
+  <g id="ICONS">
+    <g>
+      <polygon class="cls-1" points="0.58 5.02 9 0.85 16 4.82 16.03 13.14 9 17.14 0.52 12.31 0.58 5.02"/>
+      <path class="cls-2" d="M9.18,18,0,13.11V3.93L8.71,0,17,4v9.35ZM2,11.94l7.12,4L15,12.21v-7l-6.32-3L2,5.22Z"/>
+      <polygon class="cls-2" points="9.18 10.92 0.51 6.06 1.49 4.32 9.12 8.59 15.46 4.58 16.54 6.26 9.18 10.92"/>
+      <rect class="cls-2" x="8" y="9.76" width="2" height="7"/>
+    </g>
+  </g>
+</svg>
