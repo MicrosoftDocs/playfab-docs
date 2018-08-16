@@ -3,11 +3,11 @@
   items:
   - name: Personas
     items: 
-    - name: Developer
+    - name: Developers
       href: ./personas/developer.md
     - name: LiveOps
       href: ./personas/liveops.md
-    - name: BI
+    - name: Business Intelligence
       href: ./personas/bi.md
   - name: Resources
     items:

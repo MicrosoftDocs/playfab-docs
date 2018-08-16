@@ -28,7 +28,7 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Getting Started for Development</h3>
+                                                    <h3>Getting Started for Developers</h3>
                                                     <p>Lorem ipsum</p>
                                                 </div>
                                             </div>

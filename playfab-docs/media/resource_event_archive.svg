@@ -1,4 +1,4 @@
-<svg id="ICONS" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 140">
+<svg id="ICONS" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 140" style="background-color: #ffb690;">
   <defs>
     <style>
       .cls-1, .cls-4 {
@@ -10,17 +10,17 @@
       }
 
       .cls-2, .cls-4 {
-        stroke: #556a8a;
+        stroke: #263746;
         stroke-miterlimit: 10;
         stroke-width: 2px;
       }
 
       .cls-3 {
-        fill: #80def9;
+        fill: #fedac3;
       }
 
       .cls-5 {
-        fill: #556a8a;
+        fill: #263746;
       }
 
       .cls-6 {
