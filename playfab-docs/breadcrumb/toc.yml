@@ -9,6 +9,9 @@
     - name: Personas
       tocHref: /playfab/personas/
       topicHref: /playfab/personas/developer
+    - name: Resources
+      tocHref: /playfab/resources/
+      topicHref: /playfab/resources/event-archive
     - name: Features
       tocHref: /playfab/features/
       topicHref: /playfab/features/
@@ -182,9 +185,6 @@
     - name: API References
       tocHref: /playfab/api-references/
       topicHref: /playfab/api-references/
-    - name: Resources
-      tocHref: /playfab/resources/
-      topicHref: /playfab/resources/
     - name: Release Notes
       tocHref: /playfab/release-notes/
       topicHref: /playfab/release-notes/

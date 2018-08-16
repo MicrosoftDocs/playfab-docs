@@ -9,12 +9,19 @@
       href: ./personas/liveops.md
     - name: BI
       href: ./personas/bi.md
+  - name: Resources
+    items:
+    - name: Event Archive
+      href: ./resources/event-archive.md
+    - name: Recipes
+      href: ./resources/recipes.md
+    - name: Technical Whitepaper
+      href: http://s3-us-west-2.amazonaws.com/api-playfab-com-craft-files/FileAssets/playfabtechnicalwhitepaper_2016.06.18.pdf
   - name: Features
     href: ./features/index.md
-  - name: Resources
-    href: ./resources/index.md
-    items:
-      - name: Event Archive
-        href: ./resources/event-archive.md
-      - name: Recipes
-        href: ./resources/recipes.md
+  - name: SDKs
+    href: ./sdks/index.md
+  - name: API References
+    href: ./api-references/index.md
+  - name: Release Notes
+    href: ./release-notes/index.md
