@@ -19,7 +19,7 @@ description: to-follow
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="https://docs.microsoft.com/media/common/placeholder.svg" alt="">
+                                                    <img src="/playfab/features/media/feature_linking_unlinking.svg" alt="">
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -38,7 +38,7 @@ description: to-follow
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="https://docs.microsoft.com/media/common/placeholder.svg" alt="">
+                                                    <img src="/playfab/features/media/feature_platform_specific_authentication.svg" alt="">
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -62,7 +62,7 @@ description: to-follow
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="https://docs.microsoft.com/media/common/placeholder.svg" alt="">
+                                                    <img src="/playfab/features/media/feature_entities.svg" alt="">
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -81,7 +81,7 @@ description: to-follow
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="https://docs.microsoft.com/media/common/placeholder.svg" alt="">
+                                                    <img src="/playfab/features/media/feature_playerdata.svg" alt="">
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -100,7 +100,7 @@ description: to-follow
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="https://docs.microsoft.com/media/common/placeholder.svg" alt="">
+                                                    <img src="/playfab/features/media/feature_content_delivery_network.svg" alt="">
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -124,7 +124,7 @@ description: to-follow
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="https://docs.microsoft.com/media/common/placeholder.svg" alt="">
+                                                    <img src="/playfab/features/media/feature_game_manager.svg" alt="">
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -143,7 +143,7 @@ description: to-follow
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="https://docs.microsoft.com/media/common/placeholder.svg" alt="">
+                                                    <img src="/playfab/features/media/feature_titledata.svg" alt="">
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -162,7 +162,7 @@ description: to-follow
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="https://docs.microsoft.com/media/common/placeholder.svg" alt="">
+                                                    <img src="/playfab/features/media/feature_dev_test_live.svg" alt="">
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -186,7 +186,7 @@ description: to-follow
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="https://docs.microsoft.com/media/common/placeholder.svg" alt="">
+                                                    <img src="/playfab/features/media/feature_cloudscript.svg" alt="">
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -205,7 +205,7 @@ description: to-follow
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="https://docs.microsoft.com/media/common/placeholder.svg" alt="">
+                                                    <img src="/playfab/features/media/feature_playstream.svg" alt="">
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -224,7 +224,7 @@ description: to-follow
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="https://docs.microsoft.com/media/common/placeholder.svg" alt="">
+                                                    <img src="/playfab/features/media/feature_actions_rules.svg" alt="">
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -243,7 +243,7 @@ description: to-follow
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="https://docs.microsoft.com/media/common/placeholder.svg" alt="">
+                                                    <img src="/playfab/features/media/feature_scheduled_tasks.svg" alt="">
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -267,7 +267,7 @@ description: to-follow
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="https://docs.microsoft.com/media/common/placeholder.svg" alt="">
+                                                    <img src="/playfab/features/media/feature_friends_groups.svg" alt="">
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -286,7 +286,7 @@ description: to-follow
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="https://docs.microsoft.com/media/common/placeholder.svg" alt="">
+                                                    <img src="/playfab/features/media/feature_tournaments_leaderboards.svg" alt="">
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -305,7 +305,7 @@ description: to-follow
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="https://docs.microsoft.com/media/common/placeholder.svg" alt="">
+                                                    <img src="/playfab/features/media/feature_trading.svg" alt="">
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -329,7 +329,7 @@ description: to-follow
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="https://docs.microsoft.com/media/common/placeholder.svg" alt="">
+                                                    <img src="/playfab/features/media/feature_items.svg" alt="">
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -348,7 +348,7 @@ description: to-follow
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="https://docs.microsoft.com/media/common/placeholder.svg" alt="">
+                                                    <img src="/playfab/features/media/feature_stores.svg" alt="">
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -367,7 +367,7 @@ description: to-follow
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="https://docs.microsoft.com/media/common/placeholder.svg" alt="">
+                                                    <img src="/playfab/features/media/feature_economy.svg" alt="">
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -391,7 +391,7 @@ description: to-follow
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="https://docs.microsoft.com/media/common/placeholder.svg" alt="">
+                                                    <img src="/playfab/features/media/feature_compute.svg" alt="">
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -410,7 +410,7 @@ description: to-follow
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="https://docs.microsoft.com/media/common/placeholder.svg" alt="">
+                                                    <img src="/playfab/features/media/feature_matchmaking.svg" alt="">
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -429,7 +429,7 @@ description: to-follow
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="https://docs.microsoft.com/media/common/placeholder.svg" alt="">
+                                                    <img src="/playfab/features/media/feature_photon.svg" alt="">
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -453,7 +453,7 @@ description: to-follow
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="https://docs.microsoft.com/media/common/placeholder.svg" alt="">
+                                                    <img src="/playfab/features/media/feature_metrics.svg" alt="">
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -472,7 +472,7 @@ description: to-follow
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="https://docs.microsoft.com/media/common/placeholder.svg" alt="">
+                                                    <img src="/playfab/features/media/feature_reports.svg" alt="">
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -491,7 +491,7 @@ description: to-follow
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="https://docs.microsoft.com/media/common/placeholder.svg" alt="">
+                                                    <img src="/playfab/features/media/feature_ab_testing.svg" alt="">
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -510,7 +510,7 @@ description: to-follow
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="https://docs.microsoft.com/media/common/placeholder.svg" alt="">
+                                                    <img src="/playfab/features/media/feature_segmentation.svg" alt="">
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -534,7 +534,7 @@ description: to-follow
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="https://docs.microsoft.com/media/common/placeholder.svg" alt="">
+                                                    <img src="/playfab/features/media/feature_push_notifications.svg" alt="">
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -553,7 +553,7 @@ description: to-follow
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="https://docs.microsoft.com/media/common/placeholder.svg" alt="">
+                                                    <img src="/playfab/features/media/feature_emails.svg" alt="">
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -572,7 +572,7 @@ description: to-follow
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="https://docs.microsoft.com/media/common/placeholder.svg" alt="">
+                                                    <img src="/playfab/features/media/feature_news.svg" alt="">
                                                 </div>
                                             </div>
                                             <div class="cardText">
