@@ -7,6 +7,9 @@ ms.topic: hub-page
 featureFlags:
 - clicktale
 ---
+
+# Welcome to PlayFab Documentation!
+
 <div id="main" class="v2">
     <div class="container">
         <h1>Welcome to PlayFab Documentation!<br></h1>
