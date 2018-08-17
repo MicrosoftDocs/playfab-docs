@@ -89,6 +89,7 @@ description: to-follow
                                             </div>
                                             <div class="cardText">
                                                 <h3>Player Data</h3>
+                                                <p style="color: #7f7f7f">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                                 <p><a href="/playfab/features/data/playerdata/">Overview</a></p>
                                                 <p><a href="/playfab/features/data/playerdata/quickstart">Quickstart</a></p>
                                                 <p><a href="/playfab/features/data/playerdata/tutorials">Tutorials</a></p>
@@ -108,6 +109,7 @@ description: to-follow
                                             </div>
                                             <div class="cardText">
                                                 <h3>Content Delivery Network</h3>
+                                                <p style="color: #7f7f7f">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                                 <p><a href="/playfab/features/data/content-delivery-network/">Overview</a></p>
                                                 <p><a href="/playfab/features/data/content-delivery-network/quickstart">Quickstart</a></p>
                                                 <p><a href="/playfab/features/data/content-delivery-network/tutorials">Tutorials</a></p>
@@ -132,6 +134,7 @@ description: to-follow
                                             </div>
                                             <div class="cardText">
                                                 <h3>Game Manager</h3>
+                                                <p style="color: #7f7f7f">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                                 <p><a href="/playfab/features/config/gamemanager/">Overview</a></p>
                                                 <p><a href="/playfab/features/config/gamemanager/quickstart">Quickstart</a></p>
                                                 <p><a href="/playfab/features/config/gamemanager/tutorials">Tutorials</a></p>
@@ -151,6 +154,7 @@ description: to-follow
                                             </div>
                                             <div class="cardText">
                                                 <h3>Title Data</h3>
+                                                <p style="color: #7f7f7f">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                                 <p><a href="/playfab/features/config/titledata/">Overview</a></p>
                                                 <p><a href="/playfab/features/config/titledata/quickstart">Quickstart</a></p>
                                                 <p><a href="/playfab/features/config/titledata/tutorials">Tutorials</a></p>
@@ -170,6 +174,7 @@ description: to-follow
                                             </div>
                                             <div class="cardText">
                                                 <h3>Dev-Test-Live</h3>
+                                                <p style="color: #7f7f7f">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                                 <p><a href="/playfab/features/config/dev-test-live/">Overview</a></p>
                                                 <p><a href="/playfab/features/config/dev-test-live/quickstart">Quickstart</a></p>
                                                 <p><a href="/playfab/features/config/dev-test-live/tutorials">Tutorials</a></p>
@@ -194,6 +199,7 @@ description: to-follow
                                             </div>
                                             <div class="cardText">
                                                 <h3>Cloud Script</h3>
+                                                <p style="color: #7f7f7f">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                                 <p><a href="/playfab/features/automation/cloudscript/">Overview</a></p>
                                                 <p><a href="/playfab/features/automation/cloudscript/quickstart">Quickstart</a></p>
                                                 <p><a href="/playfab/features/automation/cloudscript/tutorials">Tutorials</a></p>
@@ -213,6 +219,7 @@ description: to-follow
                                             </div>
                                             <div class="cardText">
                                                 <h3>PlayStream</h3>
+                                                <p style="color: #7f7f7f">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                                 <p><a href="/playfab/features/automation/playstream-events/">Overview</a></p>
                                                 <p><a href="/playfab/features/automation/playstream-events/quickstart">Quickstart</a></p>
                                                 <p><a href="/playfab/features/automation/playstream-events/tutorials">Tutorials</a></p>
@@ -232,6 +239,7 @@ description: to-follow
                                             </div>
                                             <div class="cardText">
                                                 <h3>Actions &amp; Rules</h3>
+                                                <p style="color: #7f7f7f">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                                 <p><a href="/playfab/features/automation/actions-rules/">Overview</a></p>
                                                 <p><a href="/playfab/features/automation/actions-rules/quickstart">Quickstart</a></p>
                                                 <p><a href="/playfab/features/automation/actions-rules/tutorials">Tutorials</a></p>
@@ -251,6 +259,7 @@ description: to-follow
                                             </div>
                                             <div class="cardText">
                                                 <h3>Scheduled Tasks</h3>
+                                                <p style="color: #7f7f7f">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                                 <p><a href="/playfab/features/automation/scheduled-tasks/">Overview</a></p>
                                                 <p><a href="/playfab/features/automation/scheduled-tasks/quickstart">Quickstart</a></p>
                                                 <p><a href="/playfab/features/automation/scheduled-tasks/tutorials">Tutorials</a></p>
@@ -275,6 +284,7 @@ description: to-follow
                                             </div>
                                             <div class="cardText">
                                                 <h3>Friends &amp; Groups</h3>
+                                                <p style="color: #7f7f7f">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                                 <p><a href="/playfab/features/social/friends-groups/">Overview</a></p>
                                                 <p><a href="/playfab/features/social/friends-groups/quickstart">Quickstart</a></p>
                                                 <p><a href="/playfab/features/social/friends-groups/tutorials">Tutorials</a></p>
@@ -294,6 +304,7 @@ description: to-follow
                                             </div>
                                             <div class="cardText">
                                                 <h3>Tournaments &amp; Leaderboards</h3>
+                                                <p style="color: #7f7f7f">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                                 <p><a href="/playfab/features/social/tournaments-leaderboards/">Overview</a></p>
                                                 <p><a href="/playfab/features/social/tournaments-leaderboards/quickstart">Quickstart</a></p>
                                                 <p><a href="/playfab/features/social/tournaments-leaderboards/tutorials">Tutorials</a></p>
@@ -313,6 +324,7 @@ description: to-follow
                                             </div>
                                             <div class="cardText">
                                                 <h3>Trading</h3>
+                                                <p style="color: #7f7f7f">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                                 <p><a href="/playfab/features/social/trading/">Overview</a></p>
                                                 <p><a href="/playfab/features/social/trading/quickstart">Quickstart</a></p>
                                                 <p><a href="/playfab/features/social/trading/tutorials">Tutorials</a></p>
@@ -337,6 +349,7 @@ description: to-follow
                                             </div>
                                             <div class="cardText">
                                                 <h3>Items</h3>
+                                                <p style="color: #7f7f7f">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                                 <p><a href="/playfab/features/commerce/items/">Overview</a></p>
                                                 <p><a href="/playfab/features/commerce/items/quickstart">Quickstart</a></p>
                                                 <p><a href="/playfab/features/commerce/items/tutorials">Tutorials</a></p>
@@ -356,6 +369,7 @@ description: to-follow
                                             </div>
                                             <div class="cardText">
                                                 <h3>Stores</h3>
+                                                <p style="color: #7f7f7f">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                                 <p><a href="/playfab/features/commerce/stores/">Overview</a></p>
                                                 <p><a href="/playfab/features/commerce/stores/quickstart">Quickstart</a></p>
                                                 <p><a href="/playfab/features/commerce/stores/tutorials">Tutorials</a></p>
@@ -375,6 +389,7 @@ description: to-follow
                                             </div>
                                             <div class="cardText">
                                                 <h3>Economy</h3>
+                                                <p style="color: #7f7f7f">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                                 <p><a href="/playfab/features/commerce/economy/">Overview</a></p>
                                                 <p><a href="/playfab/features/commerce/economy/quickstart">Quickstart</a></p>
                                                 <p><a href="/playfab/features/commerce/economy/tutorials">Tutorials</a></p>
@@ -399,6 +414,7 @@ description: to-follow
                                             </div>
                                             <div class="cardText">
                                                 <h3>Compute</h3>
+                                                <p style="color: #7f7f7f">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                                 <p><a href="/playfab/features/multiplayer/compute/">Overview</a></p>
                                                 <p><a href="/playfab/features/multiplayer/compute/quickstart">Quickstart</a></p>
                                                 <p><a href="/playfab/features/multiplayer/compute/tutorials">Tutorials</a></p>
@@ -418,6 +434,7 @@ description: to-follow
                                             </div>
                                             <div class="cardText">
                                                 <h3>Matchmaking</h3>
+                                                <p style="color: #7f7f7f">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                                 <p><a href="/playfab/features/multiplayer/matchmaking/">Overview</a></p>
                                                 <p><a href="/playfab/features/multiplayer/matchmaking/quickstart">Quickstart</a></p>
                                                 <p><a href="/playfab/features/multiplayer/matchmaking/tutorials">Tutorials</a></p>
@@ -437,6 +454,7 @@ description: to-follow
                                             </div>
                                             <div class="cardText">
                                                 <h3>Photon</h3>
+                                                <p style="color: #7f7f7f">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                                 <p><a href="/playfab/features/multiplayer/photon/">Overview</a></p>
                                                 <p><a href="/playfab/features/multiplayer/photon/quickstart">Quickstart</a></p>
                                                 <p><a href="/playfab/features/multiplayer/photon/tutorials">Tutorials</a></p>
@@ -461,6 +479,7 @@ description: to-follow
                                             </div>
                                             <div class="cardText">
                                                 <h3>Metrics</h3>
+                                                <p style="color: #7f7f7f">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                                 <p><a href="/playfab/features/analytics/metrics/">Overview</a></p>
                                                 <p><a href="/playfab/features/analytics/metrics/quickstart">Quickstart</a></p>
                                                 <p><a href="/playfab/features/analytics/metrics/tutorials">Tutorials</a></p>
@@ -480,6 +499,7 @@ description: to-follow
                                             </div>
                                             <div class="cardText">
                                                 <h3>Reports</h3>
+                                                <p style="color: #7f7f7f">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                                 <p><a href="/playfab/features/analytics/reports/">Overview</a></p>
                                                 <p><a href="/playfab/features/analytics/reports/quickstart">Quickstart</a></p>
                                                 <p><a href="/playfab/features/analytics/reports/tutorials">Tutorials</a></p>
@@ -499,6 +519,7 @@ description: to-follow
                                             </div>
                                             <div class="cardText">
                                                 <h3>A/B Testing</h3>
+                                                <p style="color: #7f7f7f">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                                 <p><a href="/playfab/features/analytics/ab-testing/">Overview</a></p>
                                                 <p><a href="/playfab/features/analytics/ab-testing/quickstart">Quickstart</a></p>
                                                 <p><a href="/playfab/features/analytics/ab-testing/tutorials">Tutorials</a></p>
@@ -518,6 +539,7 @@ description: to-follow
                                             </div>
                                             <div class="cardText">
                                                 <h3>Segmentation</h3>
+                                                <p style="color: #7f7f7f">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                                 <p><a href="/playfab/features/analytics/segmentation/">Overview</a></p>
                                                 <p><a href="/playfab/features/analytics/segmentation/quickstart">Quickstart</a></p>
                                                 <p><a href="/playfab/features/analytics/segmentation/tutorials">Tutorials</a></p>
@@ -542,6 +564,7 @@ description: to-follow
                                             </div>
                                             <div class="cardText">
                                                 <h3>Push Notifications</h3>
+                                                <p style="color: #7f7f7f">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                                 <p><a href="/playfab/features/engagement/push-notifications/">Overview</a></p>
                                                 <p><a href="/playfab/features/engagement/push-notifications/quickstart">Quickstart</a></p>
                                                 <p><a href="/playfab/features/engagement/push-notifications/tutorials">Tutorials</a></p>
@@ -561,6 +584,7 @@ description: to-follow
                                             </div>
                                             <div class="cardText">
                                                 <h3>Emails</h3>
+                                                <p style="color: #7f7f7f">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                                 <p><a href="/playfab/features/engagement/emails/">Overview</a></p>
                                                 <p><a href="/playfab/features/engagement/emails/quickstart">Quickstart</a></p>
                                                 <p><a href="/playfab/features/engagement/emails/tutorials">Tutorials</a></p>
@@ -580,6 +604,7 @@ description: to-follow
                                             </div>
                                             <div class="cardText">
                                                 <h3>News</h3>
+                                                <p style="color: #7f7f7f">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                                 <p><a href="/playfab/features/engagement/news/">Overview</a></p>
                                                 <p><a href="/playfab/features/engagement/news/quickstart">Quickstart</a></p>
                                                 <p><a href="/playfab/features/engagement/news/tutorials">Tutorials</a></p>
