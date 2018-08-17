@@ -24,7 +24,7 @@ description: to-follow
                                             </div>
                                             <div class="cardText">
                                                 <h3>Linking &amp; Unlinking</h3>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                                <p style="color: #7f7f7f">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                                 <p><a href="/playfab/features/authentication/linking-unlinking/">Overview</a></p>
                                                 <p><a href="/playfab/features/authentication/linking-unlinking/quickstart">Quickstart</a></p>
                                                 <p><a href="/playfab/features/authentication/linking-unlinking/tutorials">Tutorials</a></p>
@@ -44,7 +44,7 @@ description: to-follow
                                             </div>
                                             <div class="cardText">
                                                 <h3>Platform-Specific Authentication</h3>
-                                                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h2>
+                                                <p style="color: #7f7f7f">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                                 <p><a href="/playfab/features/authentication/platform-specific-authentication/">Overview</a></p>
                                                 <p><a href="/playfab/features/authentication/platform-specific-authentication/quickstart">Quickstart</a></p>
                                                 <p><a href="/playfab/features/authentication/platform-specific-authentication/tutorials">Tutorials</a></p>
@@ -69,7 +69,7 @@ description: to-follow
                                             </div>
                                             <div class="cardText">
                                                 <h3>Entities</h3>
-                                                <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h1>
+                                                <p style="color: #7f7f7f">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                                 <p><a href="/playfab/features/data/entities/">Overview</a></p>
                                                 <p><a href="/playfab/features/data/entities/quickstart">Quickstart</a></p>
                                                 <p><a href="/playfab/features/data/entities/tutorials">Tutorials</a></p>
