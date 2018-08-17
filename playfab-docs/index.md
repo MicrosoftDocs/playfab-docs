@@ -9,7 +9,7 @@ featureFlags:
 ---
 <div id="main" class="v2">
     <div class="container">
-        <h1>Welcome to PlayFab Documentation!</h1>
+        <h1>Welcome to PlayFab Documentation!<br></h1>
         <ul class="pivots">
             <li>
                 <a href="#main"></a>
