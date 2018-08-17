@@ -7,9 +7,11 @@ ms.topic: hub-page
 featureFlags:
 - clicktale
 ---
+
 <div id="main" class="v2">
     <div class="container">
-        <h1 class="visually-hidden">Microsoft PlayFab Documentation</h1>
+        <h1>Welcome to PlayFab Documentation!</h1>
+        <h1> </h1>
         <ul class="pivots">
             <li>
                 <a href="#main"></a>
