@@ -31,7 +31,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Getting Started for Developers</h3>
-                                                    <p>Lorem ipsum</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu lobortis elementum nibh tellus. Auctor urna nunc id cursus metus.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -50,7 +50,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Getting Started for LiveOps</h3>
-                                                    <p>Lorem ipsum</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu lobortis elementum nibh tellus. Auctor urna nunc id cursus metus.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -69,7 +69,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Getting Started for Business Intelligence</h3>
-                                                    <p>Lorem ipsum</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu lobortis elementum nibh tellus. Auctor urna nunc id cursus metus.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -88,7 +88,7 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>Event Archive</h3>
-                                                <p>Lorem ipsum</p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu lobortis elementum nibh tellus. Auctor urna nunc id cursus metus.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -107,7 +107,7 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>Recipes</h3>
-                                                <p>Lorem ipsum</p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu lobortis elementum nibh tellus. Auctor urna nunc id cursus metus.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -115,7 +115,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="http://s3-us-west-2.amazonaws.com/api-playfab-com-craft-files/FileAssets/playfabtechnicalwhitepaper_2016.06.18.pdf">
+                                <a href="http://s3-us-west-2.amazonaws.com/api-playfab-com-craft-files/FileAssets/playfabtechnicalwhitepaper_2016.06.18.pdf" target="_blank">
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
@@ -126,18 +126,13 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>Technical Whitepaper</h3>
-                                                <p>Lorem ipsum</p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu lobortis elementum nibh tellus. Auctor urna nunc id cursus metus.</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 </a>
                             </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#concepts">Core Concepts</a>
-                        <ul id="concepts" class="cardsC">
                             <li>
                                 <a href="/playfab/features/config/gamemanager">
                                     <div class="cardSize">
@@ -150,7 +145,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Game Manager</h3>
-                                                    <p>Lorem ipsum</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu lobortis elementum nibh tellus. Auctor urna nunc id cursus metus.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -169,7 +164,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Entities</h3>
-                                                    <p>Lorem ipsum</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu lobortis elementum nibh tellus. Auctor urna nunc id cursus metus.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -188,7 +183,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>PlayStream</h3>
-                                                    <p>Lorem ipsum</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu lobortis elementum nibh tellus. Auctor urna nunc id cursus metus.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -207,7 +202,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Cloud Script</h3>
-                                                    <p>Lorem ipsum</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu lobortis elementum nibh tellus. Auctor urna nunc id cursus metus.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -406,13 +401,13 @@ featureFlags:
                         <a href="/playfab/release-notes">Release Notes</a>
                     </li>
                     <li>
-                        <a href="https://status.playfab.com/">Server Status</a>
+                        <a href="https://status.playfab.com/" target="_blank">Server Status</a>
                     </li>
                     <li>
-                        <a href="https://community.playfab.com/index.html">Forums</a>
+                        <a href="https://community.playfab.com/index.html" target="_blank">Forums</a>
                     </li>
                     <li>
-                        <a href="https://blog.playfab.com/blog">Blog</a>
+                        <a href="https://blog.playfab.com/blog" target="_blank">Blog</a>
                     </li>
                 </ul>
             </li>
