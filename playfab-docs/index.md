@@ -30,7 +30,7 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Getting Started for Developers</h3>
+                                                    <h3>Getting Started: Developers</h3>
                                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu lobortis elementum nibh tellus. Auctor urna nunc id cursus metus.</p>
                                                 </div>
                                             </div>
@@ -49,7 +49,7 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Getting Started for LiveOps</h3>
+                                                    <h3>Getting Started: LiveOps</h3>
                                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu lobortis elementum nibh tellus. Auctor urna nunc id cursus metus.</p>
                                                 </div>
                                             </div>
@@ -68,7 +68,7 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Getting Started for Business Intelligence</h3>
+                                                    <h3>Getting Started: Business Intelligence</h3>
                                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu lobortis elementum nibh tellus. Auctor urna nunc id cursus metus.</p>
                                                 </div>
                                             </div>
@@ -87,7 +87,7 @@ featureFlags:
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3>Event Archive</h3>
+                                                <h3>Resource: Event Archive</h3>
                                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu lobortis elementum nibh tellus. Auctor urna nunc id cursus metus.</p>
                                             </div>
                                         </div>
@@ -106,7 +106,7 @@ featureFlags:
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3>Recipes</h3>
+                                                <h3>Resource: Recipes</h3>
                                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu lobortis elementum nibh tellus. Auctor urna nunc id cursus metus.</p>
                                             </div>
                                         </div>
@@ -125,7 +125,7 @@ featureFlags:
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3>Technical Whitepaper</h3>
+                                                <h3>Resource: Technical Whitepaper</h3>
                                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu lobortis elementum nibh tellus. Auctor urna nunc id cursus metus.</p>
                                             </div>
                                         </div>
@@ -144,7 +144,7 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Game Manager</h3>
+                                                    <h3>Concept: Game Manager</h3>
                                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu lobortis elementum nibh tellus. Auctor urna nunc id cursus metus.</p>
                                                 </div>
                                             </div>
@@ -163,7 +163,7 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Entities</h3>
+                                                    <h3>Concept: Entities</h3>
                                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu lobortis elementum nibh tellus. Auctor urna nunc id cursus metus.</p>
                                                 </div>
                                             </div>
@@ -182,7 +182,7 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>PlayStream</h3>
+                                                    <h3>Concept: PlayStream</h3>
                                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu lobortis elementum nibh tellus. Auctor urna nunc id cursus metus.</p>
                                                 </div>
                                             </div>
@@ -201,7 +201,7 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Cloud Script</h3>
+                                                    <h3>Concept: Cloud Script</h3>
                                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu lobortis elementum nibh tellus. Auctor urna nunc id cursus metus.</p>
                                                 </div>
                                             </div>
