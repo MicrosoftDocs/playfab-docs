@@ -19,8 +19,6 @@ featureFlags:
                     <li>
                         <a href="#start">Home</a>
                         <ul id="start" class="cardsC">
-                            <h1>Test line 1</h1>
-                            <h1> </h1>
                             <li>
                                 <a href="/playfab/personas/developer">
                                     <div class="cardSize">
@@ -78,8 +76,9 @@ featureFlags:
                                     </div>
                                 </a>
                             </li>
-                            <h1>Test line 1</h1>
-                            <h1> </h1>
+                        </ul>
+                        <h1>Test line 1</h1>
+                        <ul id="start2" class="cardsC">
                             <li>
                                 <a href="/playfab/resources/event-archive">
                                 <div class="cardSize">
