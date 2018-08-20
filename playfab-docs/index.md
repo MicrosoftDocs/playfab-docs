@@ -18,7 +18,7 @@ featureFlags:
                 <ul id="main">
                     <li>
                         <a href="#start">Home</a>
-                        <ul id="start" class="cardsC">
+                        <ul id="start" class="cardsW">
                             <li>
                                 <a href="/playfab/personas/developer">
                                     <div class="cardSize">
@@ -76,9 +76,6 @@ featureFlags:
                                     </div>
                                 </a>
                             </li>
-                        </ul>
-                        <h1>Test line 1</h1>
-                        <ul id="start2" class="cardsC">
                             <li>
                                 <a href="/playfab/resources/event-archive">
                                 <div class="cardSize">
@@ -398,6 +395,24 @@ featureFlags:
                     </li>
                     <li>
                         <a href="/playfab/features">Features</a>
+                    </li>
+                    <li>
+                        <a href="/playfab/sdks">SDKs</a>
+                    </li>
+                    <li>
+                        <a href="/playfab/api-references">API References</a>
+                    </li>
+                    <li>
+                        <a href="/playfab/release-notes">Release Notes</a>
+                    </li>
+                    <li>
+                        <a href="https://status.playfab.com/">Server Status</a>
+                    </li>
+                    <li>
+                        <a href="https://community.playfab.com/index.html">Forums</a>
+                    </li>
+                    <li>
+                        <a href="https://blog.playfab.com/blog">Blog</a>
                     </li>
                 </ul>
             </li>
