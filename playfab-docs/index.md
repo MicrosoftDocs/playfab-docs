@@ -18,7 +18,7 @@ featureFlags:
                 <ul id="main">
                     <li>
                         <a href="#start">Home</a>
-                        <ul id="start" class="cardsC">
+                        <ul id="start" class="cardsW">
                             <li>
                                 <a href="/playfab/personas/developer">
                                     <div class="cardSize">
@@ -30,8 +30,8 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Getting Started for Developers</h3>
-                                                    <p>Lorem ipsum</p>
+                                                    <h3>Getting Started: Developers</h3>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu lobortis elementum nibh tellus. Auctor urna nunc id cursus metus.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -49,8 +49,8 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Getting Started for LiveOps</h3>
-                                                    <p>Lorem ipsum</p>
+                                                    <h3>Getting Started: LiveOps</h3>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu lobortis elementum nibh tellus. Auctor urna nunc id cursus metus.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -68,76 +68,14 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Getting Started for Business Intelligence</h3>
-                                                    <p>Lorem ipsum</p>
+                                                    <h3>Getting Started: Business Intelligence</h3>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu lobortis elementum nibh tellus. Auctor urna nunc id cursus metus.</p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </a>
                             </li>
-                            <li>
-                                <a href="/playfab/resources/event-archive">
-                                <div class="cardSize">
-                                    <div class="cardPadding">
-                                        <div class="card">
-                                            <div class="cardImageOuter">
-                                                <div class="cardImage">
-                                                    <img src="/playfab/media/resource_event_archive.svg" alt="">
-                                                </div>
-                                            </div>
-                                            <div class="cardText">
-                                                <h3>Event Archive</h3>
-                                                <p>Lorem ipsum</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/playfab/resources/recipes">
-                                <div class="cardSize">
-                                    <div class="cardPadding">
-                                        <div class="card">
-                                            <div class="cardImageOuter">
-                                                <div class="cardImage">
-                                                    <img src="/playfab/media/resource_recipes.svg" alt="">
-                                                </div>
-                                            </div>
-                                            <div class="cardText">
-                                                <h3>Recipes</h3>
-                                                <p>Lorem ipsum</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="http://s3-us-west-2.amazonaws.com/api-playfab-com-craft-files/FileAssets/playfabtechnicalwhitepaper_2016.06.18.pdf">
-                                <div class="cardSize">
-                                    <div class="cardPadding">
-                                        <div class="card">
-                                            <div class="cardImageOuter">
-                                                <div class="cardImage">
-                                                    <img src="/playfab/media/resource_technical_whitepaper.svg" alt="">
-                                                </div>
-                                            </div>
-                                            <div class="cardText">
-                                                <h3>Technical Whitepaper</h3>
-                                                <p>Lorem ipsum</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#concepts">Core Concepts</a>
-                        <ul id="concepts" class="cardsC">
                             <li>
                                 <a href="/playfab/features/config/gamemanager">
                                     <div class="cardSize">
@@ -149,8 +87,8 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Game Manager</h3>
-                                                    <p>Lorem ipsum</p>
+                                                    <h3>Concept: Game Manager</h3>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu lobortis elementum nibh tellus. Auctor urna nunc id cursus metus.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -168,8 +106,8 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Entities</h3>
-                                                    <p>Lorem ipsum</p>
+                                                    <h3>Concept: Entities</h3>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu lobortis elementum nibh tellus. Auctor urna nunc id cursus metus.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -187,8 +125,8 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>PlayStream</h3>
-                                                    <p>Lorem ipsum</p>
+                                                    <h3>Concept: PlayStream</h3>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu lobortis elementum nibh tellus. Auctor urna nunc id cursus metus.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -206,12 +144,69 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Cloud Script</h3>
-                                                    <p>Lorem ipsum</p>
+                                                    <h3>Concept: Cloud Script</h3>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu lobortis elementum nibh tellus. Auctor urna nunc id cursus metus.</p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/playfab/resources/event-archive">
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardImageOuter">
+                                                <div class="cardImage">
+                                                    <img src="/playfab/media/resource_event_archive.svg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="cardText">
+                                                <h3>Resource: Event Archive</h3>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu lobortis elementum nibh tellus. Auctor urna nunc id cursus metus.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/playfab/resources/recipes">
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardImageOuter">
+                                                <div class="cardImage">
+                                                    <img src="/playfab/media/resource_recipes.svg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="cardText">
+                                                <h3>Resource: Recipes</h3>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu lobortis elementum nibh tellus. Auctor urna nunc id cursus metus.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://s3-us-west-2.amazonaws.com/api-playfab-com-craft-files/FileAssets/playfabtechnicalwhitepaper_2016.06.18.pdf" target="_blank">
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardImageOuter">
+                                                <div class="cardImage">
+                                                    <img src="/playfab/media/resource_technical_whitepaper.svg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="cardText">
+                                                <h3>Resource: Technical Whitepaper</h3>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu lobortis elementum nibh tellus. Auctor urna nunc id cursus metus.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                                 </a>
                             </li>
                         </ul>
@@ -392,6 +387,27 @@ featureFlags:
                                 </div>
                             </li>
                         </ul>
+                    </li>
+                    <li>
+                        <a href="/playfab/features">Features</a>
+                    </li>
+                    <li>
+                        <a href="/playfab/sdks">SDKs</a>
+                    </li>
+                    <li>
+                        <a href="/playfab/api-references">API References</a>
+                    </li>
+                    <li>
+                        <a href="/playfab/release-notes">Release Notes</a>
+                    </li>
+                    <li>
+                        <a href="https://status.playfab.com/" target="_blank">Server Status</a>
+                    </li>
+                    <li>
+                        <a href="https://community.playfab.com/index.html" target="_blank">Forums</a>
+                    </li>
+                    <li>
+                        <a href="https://blog.playfab.com/blog" target="_blank">Blog</a>
                     </li>
                 </ul>
             </li>
