@@ -18,7 +18,7 @@ featureFlags:
                 <ul id="main">
                     <li>
                         <a href="#start">Home</a>
-                        <ul id="start" class="cardsW">
+                        <ul id="start" class="cardsK">
                             <li>
                                 <a href="/playfab/personas/developer">
                                     <div class="cardSize">
