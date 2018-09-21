@@ -1,11 +1,174 @@
 # C# Quickstart
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa tincidunt dui ut ornare lectus. Viverra vitae congue eu consequat ac felis donec. Leo urna molestie at elementum eu facilisis. A cras semper auctor neque vitae tempus quam. Amet cursus sit amet dictum sit amet justo donec enim. Faucibus turpis in eu mi bibendum neque egestas congue. Morbi quis commodo odio aenean sed adipiscing diam. Lectus vestibulum mattis ullamcorper velit. Dictum fusce ut placerat orci nulla pellentesque.
+This guide will help you make your first PlayFab API call using CSharp.
 
-Lorem mollis aliquam ut porttitor leo a diam sollicitudin. Mattis rhoncus urna neque viverra. Pharetra vel turpis nunc eget lorem dolor sed. Aliquam eleifend mi in nulla posuere sollicitudin aliquam ultrices. Adipiscing elit ut aliquam purus sit. Eleifend mi in nulla posuere sollicitudin aliquam. Luctus accumsan tortor posuere ac. Pulvinar sapien et ligula ullamcorper malesuada proin libero nunc consequat. Dignissim cras tincidunt lobortis feugiat vivamus at augue eget. Eu consequat ac felis donec et odio pellentesque diam volutpat. Fermentum odio eu feugiat pretium nibh ipsum. Enim sit amet venenatis urna cursus eget nunc. Sollicitudin nibh sit amet commodo. Varius quam quisque id diam vel quam elementum pulvinar. Vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant. Dui id ornare arcu odio ut. Imperdiet sed euismod nisi porta. Amet purus gravida quis blandit turpis cursus in.
+## CSharp Getting Started Guide
 
-In arcu cursus euismod quis viverra nibh cras. Feugiat scelerisque varius morbi enim nunc faucibus. Sed adipiscing diam donec adipiscing tristique risus nec. Mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien et. Convallis a cras semper auctor neque vitae tempus quam. Et leo duis ut diam quam nulla. Egestas sed tempus urna et pharetra pharetra. Arcu felis bibendum ut tristique et. Donec ac odio tempor orci dapibus ultrices in iaculis nunc. Ullamcorper a lacus vestibulum sed arcu non odio.
+A native C# project can be used two ways:
+- Admin tools for maintaining your game
+  - Usually, you will want to make synchronous calls back-to-back
+  - Each API call will lock the program while it's executing, but that's not an issue for this type of program
+  - See the comment about "loginTask.Wait()" in the example code below. This is how you'll usually make API calls
 
-Nulla aliquet enim tortor at auctor urna nunc id. Turpis massa sed elementum tempus. Commodo viverra maecenas accumsan lacus vel facilisis volutpat est. Nibh nisl condimentum id venenatis. Sagittis id consectetur purus ut faucibus. Diam maecenas ultricies mi eget mauris pharetra. Porttitor lacus luctus accumsan tortor posuere ac ut consequat semper. Nunc sed velit dignissim sodales. Tortor condimentum lacinia quis vel. Elementum curabitur vitae nunc sed velit dignissim sodales ut eu. Tincidunt eget nullam non nisi est sit amet facilisis magna. Pellentesque pulvinar pellentesque habitant morbi tristique senectus et netus. Morbi quis commodo odio aenean sed adipiscing diam donec. Nunc sed id semper risus in hendrerit gravida rutrum quisque. Id interdum velit laoreet id. Tempor id eu nisl nunc. Cras tincidunt lobortis feugiat vivamus at augue eget arcu dictum. Tempus urna et pharetra pharetra massa massa.
+- An actual game coded in native C#
+  - You need to take advantage of the async nature of API calls, and the C# async/await feature keywords
+    - Read the [MSDN guide - Asynchronous Programming with async and await (C#)](https://msdn.microsoft.com/en-us/library/mt674882.aspx) for this
 
-Risus in hendrerit gravida rutrum quisque non. Pulvinar mattis nunc sed blandit. Augue mauris augue neque gravida in fermentum et. Odio ut sem nulla pharetra diam sit amet nisl suscipit. Facilisis gravida neque convallis a cras semper. Ac turpis egestas maecenas pharetra convallis. Nunc non blandit massa enim nec dui nunc mattis enim. Eu facilisis sed odio morbi quis commodo odio aenean sed. Amet consectetur adipiscing elit pellentesque habitant. Lorem ipsum dolor sit amet consectetur adipiscing elit ut aliquam. In nibh mauris cursus mattis molestie a. Duis at consectetur lorem donec. Ac odio tempor orci dapibus ultrices in iaculis nunc. A arcu cursus vitae congue mauris rhoncus aenean vel elit. Facilisis magna etiam tempor orci eu lobortis elementum. Congue mauris rhoncus aenean vel elit. Gravida dictum fusce ut placerat orci nulla pellentesque dignissim enim. Netus et malesuada fames ac turpis egestas integer.
+## CSharp Project Setup 
+
+- OS: This guide is written for Windows 10, and VS 2017
+- Installation
+  - Download Visual Studio
+    - [https://www.visualstudio.com/downloads/](https://www.visualstudio.com/downloads/)
+    - Older versions should also work
+
+- New Project Setup
+  - Open Visual Studio and create a new project
+
+  ![Install PlayFab SDK](media/new-csharp-project.png)
+
+  - Install nuget package for PlayFabAllSDK
+
+  ![Install PlayFab SDK](media/csharp-nuget-add.png)
+
+  - At this point you should be able to successfully compile the project
+    - Output window should contain something like this:
+
+```output
+1>------ Build started: Project: CSharpGettingStarted, Configuration: Debug Any CPU ------
+1>  CSharpGettingStarted -> c:\dev\CSharpGettingStarted\CSharpGettingStarted\bin\Debug\CSharpGettingStarted.exe
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
+```
+
+  - And your PlayFab installation is complete!
+
+## Set up your first API call
+
+- This guide will provide the minimum steps to make your first PlayFab API call. Confirmation will be done via a console print.
+  - Your new project should contain a file called Program.cs, created automatically by Visual Studio
+  - Open that file, and replace the contents with this:
+
+- The result should look like this (Sometimes you need to refresh):
+
+
+```csharp
+using System;
+using System.Threading;
+using System.Threading.Tasks;
+using PlayFab;
+using PlayFab.ClientModels;
+
+public static class Program
+{
+    private static bool _running = true;
+    static void Main(string[] args)
+    {
+        PlayFabSettings.TitleId = "144"; // Please change this value to your own titleId from PlayFab Game Manager
+
+        var request = new LoginWithCustomIDRequest { CustomId = "GettingStartedGuide", CreateAccount = true };
+        var loginTask = PlayFabClientAPI.LoginWithCustomIDAsync(request);
+        // If you want a synchronous ressult, you can call loginTask.Wait() - Note, this will halt the program until the function returns
+
+        while (_running)
+        {
+            if (loginTask.IsCompleted) // You would probably want a more sophisticated way of tracking pending async API calls in a real game
+            {
+                OnLoginComplete(loginTask);
+            }
+
+            // Presumably this would be your main game loop, doing other things
+            Thread.Sleep(1);
+        }
+
+        Console.WriteLine("Done! Press any key to close");
+        Console.ReadKey(); // This halts the program and waits for the user
+    }
+
+    private static void OnLoginComplete(Task<PlayFabResult<LoginResult>> taskResult)
+    {
+        var apiError = taskResult.Result.Error;
+        var apiResult = taskResult.Result.Result;
+
+        if (apiError != null)
+        {
+            Console.ForegroundColor = ConsoleColor.Red; // Make the error more visible
+            Console.WriteLine("Something went wrong with your first API call.  :(");
+            Console.WriteLine("Here's some debug information:");
+            Console.WriteLine(PlayFabUtil.GenerateErrorReport(apiError));
+            Console.ForegroundColor = ConsoleColor.Gray; // Reset to normal
+        }
+        else if (apiResult != null)
+        {
+            Console.WriteLine("Congratulations, you made your first successful API call!");
+        }
+
+        _running = false; // Because this is just an example, successful login triggers the end of the program
+    }
+}
+```
+
+## Finish and Execute
+
+- When you execute this program, you should get the following console output:
+Congratulations, you made your first successful API call!
+Done! Press any key to close
+
+- At this point, you can start making other api calls, and building your game
+- For a list of all available client API calls, see our documentation:
+  - [https://api.playfab.com/](https://api.playfab.com/)
+
+- To build Admin utilities, see the alternate source files in the PlayFab CSharpSdk zip file:
+  - {CSharpSdk}/PlayFabClientSDK/source
+  - and the [Admin API documentation](https://api.playfab.com/documentation/Admin)
+  
+- Happy coding!
+
+## Deconstruct the code
+
+This optional last section describes each part of Program.cs in detail.
+
+- There are 2 functions in Program.cs
+  - Main, OnLoginComplete
+  - Main kicks off a login, and enters a main-loop
+  - OnLoginComplete is an asynchronous handler, executed once the login call completes (You can also use Lambda functions)
+
+Inside of Main:
+
+- PlayFabSettings.TitleId = "xxxx";
+  - Every PlayFab developer creates a title in Game Manager. When you publish your game, you must code that titleId into your game. This lets the client know how to access the correct data within PlayFab. For most users, just consider it a mandatory step that makes PlayFab work.
+
+- var request = new LoginWithCustomIDRequest { CustomId = "GettingStartedGuide", CreateAccount = true };
+  - Most PlayFab API methods require input parameters, and those input parameters are packed into a request object
+  - Every API method requires a unique request object, with a mix of optional and mandatory parameters
+    - For LoginWithCustomIDRequest, there is a mandatory parameter of CustomId, which uniquely identifies a player and CreateAccount, which allows the creation of a new account with this call.
+
+  - For login, most developers will want to use a more appropriate login method
+    - See the [PlayFab Login documentation](https://api.playfab.com/documentation/Client#Authentication) for a list of all login methods, and input parameters. Common choices are:
+      - [LoginWithAndroidDeviceID](https://api.playfab.com/documentation/Client/method/LoginWithAndroidDeviceID)
+      - [LoginWithIOSDeviceID](https://api.playfab.com/documentation/Client/method/LoginWithIOSDeviceID)
+      - [LoginWithEmailAddress](https://api.playfab.com/documentation/Client/method/LoginWithEmailAddress)
+
+- var loginTask = PlayFabClientAPI.LoginWithCustomIDAsync(request);
+  - This begins the async request to "LoginWithCustomID", using the C# async/await feature
+
+- while (running)
+  - Running in a native C# environment means you have to code your own main loop.
+  - This serves the purpose in the most trivial possible way
+
+Inside of OnLoginComplete:
+
+- var apiResult = taskResult.Result.Result;
+  - When successful, apiResult object of many API callbacks will contain the requested information
+  - If not-null, apiResult for LoginResult contains some basic information about the player, but for most users, login is simply a mandatory step before calling other APIs.
+
+- var apiError = taskResult.Result.Error;
+  - If apiError is not null, your API has failed
+  - API calls can fail for many reasons, and you should always attempt to handle failure
+  - Why API calls fail (In order of likelihood)
+    -  PlayFabSettings.TitleId is not set. If you forget to set titleId to your title, then nothing will work.
+    -  Request parameters. If you have not provided the correct or required information for a particular API call, then it will fail. See error.errorMessage, error.errorDetails, or error.GenerateErrorReport() for more info.
+    -   Device connectivity issue. Cell-phones lose/regain connectivity constantly, and so any API call at any time can fail randomly, and then work immediately after. Going into a tunnel can disconnect you completely.
+    -   PlayFab server issue. As with all software, there can be issues. See our [release notes](https://api.playfab.com/releaseNotes/) for updates.
+    -  The internet is not 100% reliable. Sometimes the message is corrupted or fails to reach the PlayFab server.
+
+  - If you are having difficulty debugging an issue, and the information within the error information is not sufficient, please visit us on our [forums](https://community.playfab.com/index.html)
