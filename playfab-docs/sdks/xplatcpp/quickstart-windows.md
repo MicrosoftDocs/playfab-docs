@@ -1,9 +1,12 @@
-# Cross-Platform C++ Quickstart (Linux)
+# Cross-Platform C++ Quickstart (Windows)
 
 This guide will help you make your first API call in C++. A native C++ project can be used a few ways:
 
 - Stand-alone console Admin tools for maintaining your game
   - The C++ Sdk works great for a stand-alone C++ program
+
+- Integration into an existing Visual Studio based C++ game
+  - Follow the instructions below to integrate the NuGet Package into your Visual Studio Solution, and you're ready to go
 
 - Integration into an existing C++ based game engine
   - The C++ Sdk should not be used if we provide a more specific SDK
@@ -13,85 +16,38 @@ This guide will help you make your first API call in C++. A native C++ project c
   - Many C++ based engines also integrate Lua:
     - [LuaSdk]https://github.com/PlayFab/LuaSdk)
 
-If you have any issues, let us know on the [Forums](https://community.playfab.com/index.html).
+  - Finally, if none of these options work for you, follow the instructions below to integrate the NuGet Package into your Visual Studio Solution. If you have any issues, let us know on the [Forums](https://community.playfab.com/index.html).
 
-## Linux/C++ Project Setup
+## Windows/C++ Project Setup
 
-- OS: This guide is written for Linux, using Ubuntu 18.04 LTS
-- Install Requirements (sudo apt install ____ on Ubuntu)
-  - g++
-  - gdb
-  - make
-  - cmake
-  - libjsoncpp-dev
-  - libcurl4-openssl-dev
-  - git-all
-  
-- Clone [XPlatCppSdk](https://github.com/PlayFab/XPlatCppSdk) into your project folder
-- Create main.cpp and write Hello World in it:
+- OS: This guide is written for Windows 10, using Visual Studio 2013 or 2015
+- Installation
+  - Download and install Visual Studio 2013 or 2015
+  - Create a new C++ Console project
+  - Right-click Manage NuGet packages, and search for "playfab"
+    - You should see a small number of matches, and you're looking for: "PlayFab Windows C++ SDK For Visual Studio 20XX"
+      - for vs2015, install the plugin with the id: com.playfab.windowssdk.v140
+      - for vs2013, install the plugin with the id: com.playfab.windowssdk.v120
 
-```cpp
-// main.cpp: entry point for the console application
-
-#include <iostream> 
-
-int main()
-{
-    std::cout << "Hello World" << std::endl;
-    return 0;
-}
-```
-
-- If you're using an IDE, make sure to:
-  - Add the following folders to your sources:
-    - XPlatCppSdk/cppsdk/source/playfab
-
-  - Add the following folders to your include directories:
-    - XPlatCppSdk/cppsdk
-    - XPlatCppSdk/cppsdk/include
-
-  - Link the following libraries
-    - jsoncpp
-    - curl
-    - pthread
-
-- Otherwise, create CMakeLists.txt and fill it with the following:
-
-```cmake
-cmake_minimum_required(VERSION 3.10)
-set(CMAKE_CXX_STANDARD 14)
-
-project(PlayFab_Test)
-
-file(GLOB PF_SOURCE XPlatCppSdk/cppsdk/source/playfab/*.cpp)
-add_executable(PlayFab_Test ${PF_SOURCE} main.cpp)
-
-include_directories(XPlatCppSdk/cppsdk)
-include_directories(XPlatCppSdk/cppsdk/include)
-target_link_libraries(PlayFab_Test -ljsoncpp -lcurl -lpthread)
-```
-
-- Build and run the project inside your IDE, or open Terminal and run:
-  - cmake .
-  - make
-  - ./PlayFab_Test
-
-- Your project should compile and successfully run Hello World!
-
+- Your project should now compile
+- PlayFab Installation Complete!
 
 ## Set up your first API call
 
 This guide will provide the minimum steps to make your first PlayFab API call, without any GUI or on-screen feedback. Confirmation will be done with a console print statement.
 
-- Replace the contents of main.cpp with the following:
+- In Visual Studio, Create a new C++ Console Application
+  - Open up the main cpp document for this project (by default it would be ConsoleApplication1.cpp unless you renamed your project)
+  - Replace the contents of that file with the following:
 
 ```cpp
-// main.cpp: entry point for the console application
+// ConsoleApplication1.cpp : Defines the entry point for the console application.
+//
 
 #include "playfab/PlayFabClientDataModels.h"
 #include "playfab/PlayFabClientApi.h"
 #include "playfab/PlayFabSettings.h"
-#include <unistd.h>
+#include <windows.h>
 
 using namespace PlayFab;
 using namespace ClientModels;
@@ -115,7 +71,7 @@ void OnLoginFail(const PlayFabError& error, void* customData)
 
 int main()
 {
-    PlayFabSettings::titleId = "144";
+    PlayFabSettings::titleId = WidenString("144");
 
     LoginWithCustomIDRequest request;
     request.CreateAccount = true;
@@ -124,7 +80,7 @@ int main()
     PlayFabClientAPI::LoginWithCustomID(request, OnLoginSuccess, OnLoginFail);
 
     while (PlayFabClientAPI::Update() != 0)
-        sleep(1);
+        Sleep(1);
 
     printf("Press enter to exit\n");
     getchar();
@@ -134,8 +90,8 @@ int main()
 
 ## Finish and Execute
 
-- Build and run the project inside your IDE, or open Terminal and run:
-  - ./PlayFab_Test
+- Run this project
+  - Debug (dropdown) -> Start Debugging
 
 - When it loads, you should see the following text:
   - "Congratulations, you made your first successful API call!"
@@ -148,17 +104,16 @@ int main()
 
 ## Deconstruct the code
 
-This optional last section describes each part of main.cpp in detail.
-
+This optional last section describes each part of ConsoleApplication1.cpp in detail.
 - Includes
-  - The PlayFab includes get you access to the the Client APIs. In this example, unistd.h is only used for sleep()
+  - The PlayFab includes get you access to the the Client APIs. In this example, Windows.h is only used for Sleep()
 
 - using namespaces
   - PlayFab and PlayFab::ClientModels. The first is for API methods and general PlayFab usage, and the latter is for the objects sent to and received by Client API calls
 
 - OnLoginSuccess, OnLoginFailure are callback functions asynchronously invoked by PlayFabClientAPI.LoginWithCustomID
 - main()
-  - PlayFabSettings::titleId = "144";
+  - PlayFabSettings::titleId = WidenString("144");
     - Every PlayFab developer creates a title in Game Manager. When you publish your game, you must code that titleId into your game. This lets the client know how to access the correct data within PlayFab. For most users, just consider it a mandatory step that makes PlayFab work
 
   - LoginWithCustomIDRequest request; (and field initialization)
@@ -175,7 +130,7 @@ This optional last section describes each part of main.cpp in detail.
   - PlayFabClientAPI::LoginWithCustomID(request, OnLoginSuccess, OnLoginFail);
     - Triggers the threaded API call. When complete, OnLoginSuccess or OnLoginFail will be invoked appropriately
 
-  - while (PlayFabClientAPI::Update() != 0) sleep(1);
+  - while (PlayFabClientAPI::Update() != 0) Sleep(1);
     - Update returns the number of API calls that are in-progress
     - Update also executes the actual calls to OnLoginSuccess or OnLoginFail, once the threaded API calls are complete
       - This allows your callbacks to execute in a thread-safe manner, when your program is inherently single-threaded
