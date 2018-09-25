@@ -10,7 +10,8 @@ This guide will help you make your first API call in Python 3. A native Python p
 
 If you have any issues, let us know on the [Forums](https://community.playfab.com/index.html).
 
-> [!NOTE] This beta release of the PythonSdk only supports synchronous API calls, and your game loop may become blocked performing PlayFab API calls. You may need to create your own async/threading model to avoid this problem.
+> [!NOTE]
+> This beta release of the PythonSdk only supports synchronous API calls, and your game loop may become blocked performing PlayFab API calls. You may need to create your own async/threading model to avoid this problem.
 
 ## Python Project Setup
 
@@ -41,19 +42,19 @@ from playfab import PlayFabClientAPI, PlayFabSettings
 PlayFabSettings.TitleId = "144"
 
 request = {
-	"CustomId": "GettingStartedGuide",
-	"CreateAccount": True,
-	"LoginTitlePlayerAccountEntity": True
+    "CustomId": "GettingStartedGuide",
+    "CreateAccount": True,
+    "LoginTitlePlayerAccountEntity": True
 }
 
 def callback(success, failure):
-	if success:
-		print("Congratulations, you made your first successful API call!")
-	else:
-		print("Something went wrong with your first API call.  :(")
-		if failure:
-			print("Here's some debug information:")
-			print(failure.GenerateErrorReport()) 
+    if success:
+        print("Congratulations, you made your first successful API call!")
+    else:
+        print("Something went wrong with your first API call.  :(")
+        if failure:
+            print("Here's some debug information:")
+            print(failure.GenerateErrorReport()) 
 PlayFabClientAPI.LoginWithCustomID(request, callback)
 ```
 
