@@ -1,11 +1,115 @@
 # Python Quickstart
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa tincidunt dui ut ornare lectus. Viverra vitae congue eu consequat ac felis donec. Leo urna molestie at elementum eu facilisis. A cras semper auctor neque vitae tempus quam. Amet cursus sit amet dictum sit amet justo donec enim. Faucibus turpis in eu mi bibendum neque egestas congue. Morbi quis commodo odio aenean sed adipiscing diam. Lectus vestibulum mattis ullamcorper velit. Dictum fusce ut placerat orci nulla pellentesque.
+This guide will help you make your first API call in Python 3. A native Python project can be used a few ways:
 
-Lorem mollis aliquam ut porttitor leo a diam sollicitudin. Mattis rhoncus urna neque viverra. Pharetra vel turpis nunc eget lorem dolor sed. Aliquam eleifend mi in nulla posuere sollicitudin aliquam ultrices. Adipiscing elit ut aliquam purus sit. Eleifend mi in nulla posuere sollicitudin aliquam. Luctus accumsan tortor posuere ac. Pulvinar sapien et ligula ullamcorper malesuada proin libero nunc consequat. Dignissim cras tincidunt lobortis feugiat vivamus at augue eget. Eu consequat ac felis donec et odio pellentesque diam volutpat. Fermentum odio eu feugiat pretium nibh ipsum. Enim sit amet venenatis urna cursus eget nunc. Sollicitudin nibh sit amet commodo. Varius quam quisque id diam vel quam elementum pulvinar. Vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant. Dui id ornare arcu odio ut. Imperdiet sed euismod nisi porta. Amet purus gravida quis blandit turpis cursus in.
+- Stand-alone console Admin tools for maintaining your game
+  - The Python Sdk works great for a stand-alone Python program
+  
+- Integration into an existing Python based game engine
+  - See [list of game engines](https://wiki.python.org/moin/PythonGameLibraries)
 
-In arcu cursus euismod quis viverra nibh cras. Feugiat scelerisque varius morbi enim nunc faucibus. Sed adipiscing diam donec adipiscing tristique risus nec. Mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien et. Convallis a cras semper auctor neque vitae tempus quam. Et leo duis ut diam quam nulla. Egestas sed tempus urna et pharetra pharetra. Arcu felis bibendum ut tristique et. Donec ac odio tempor orci dapibus ultrices in iaculis nunc. Ullamcorper a lacus vestibulum sed arcu non odio.
+If you have any issues, let us know on the [Forums](https://community.playfab.com/index.html).
 
-Nulla aliquet enim tortor at auctor urna nunc id. Turpis massa sed elementum tempus. Commodo viverra maecenas accumsan lacus vel facilisis volutpat est. Nibh nisl condimentum id venenatis. Sagittis id consectetur purus ut faucibus. Diam maecenas ultricies mi eget mauris pharetra. Porttitor lacus luctus accumsan tortor posuere ac ut consequat semper. Nunc sed velit dignissim sodales. Tortor condimentum lacinia quis vel. Elementum curabitur vitae nunc sed velit dignissim sodales ut eu. Tincidunt eget nullam non nisi est sit amet facilisis magna. Pellentesque pulvinar pellentesque habitant morbi tristique senectus et netus. Morbi quis commodo odio aenean sed adipiscing diam donec. Nunc sed id semper risus in hendrerit gravida rutrum quisque. Id interdum velit laoreet id. Tempor id eu nisl nunc. Cras tincidunt lobortis feugiat vivamus at augue eget arcu dictum. Tempus urna et pharetra pharetra massa massa.
+> [!NOTE] This beta release of the PythonSdk only supports synchronous API calls, and your game loop may become blocked performing PlayFab API calls. You may need to create your own async/threading model to avoid this problem.
 
-Risus in hendrerit gravida rutrum quisque non. Pulvinar mattis nunc sed blandit. Augue mauris augue neque gravida in fermentum et. Odio ut sem nulla pharetra diam sit amet nisl suscipit. Facilisis gravida neque convallis a cras semper. Ac turpis egestas maecenas pharetra convallis. Nunc non blandit massa enim nec dui nunc mattis enim. Eu facilisis sed odio morbi quis commodo odio aenean sed. Amet consectetur adipiscing elit pellentesque habitant. Lorem ipsum dolor sit amet consectetur adipiscing elit ut aliquam. In nibh mauris cursus mattis molestie a. Duis at consectetur lorem donec. Ac odio tempor orci dapibus ultrices in iaculis nunc. A arcu cursus vitae congue mauris rhoncus aenean vel elit. Facilisis magna etiam tempor orci eu lobortis elementum. Congue mauris rhoncus aenean vel elit. Gravida dictum fusce ut placerat orci nulla pellentesque dignissim enim. Netus et malesuada fames ac turpis egestas integer.
+## Python Project Setup
+
+- Make sure [Python 3](https://www.python.org/downloads/) is installed on your system
+- Install the [PlayFab Package](https://pypi.org/project/playfab/) using the below command
+
+```cmd
+pip install playfab
+```
+
+- If pip is not in your path, use the below command instead
+
+```cmd
+python -m pip install playfab
+```
+
+- Create a new python script in your desired directory called playfab_test.py
+
+## Set up your first API call
+
+This guide will provide the minimum steps to make your first PlayFab API call, without any GUI or on-screen feedback. Confirmation will be done with a console print statement.
+
+- Replace the contents of playfab_test.py with the following:
+
+```python
+from playfab import PlayFabClientAPI, PlayFabSettings
+
+PlayFabSettings.TitleId = "144"
+
+request = {
+	"CustomId": "GettingStartedGuide",
+	"CreateAccount": True,
+	"LoginTitlePlayerAccountEntity": True
+}
+
+def callback(success, failure):
+	if success:
+		print("Congratulations, you made your first successful API call!")
+	else:
+		print("Something went wrong with your first API call.  :(")
+		if failure:
+			print("Here's some debug information:")
+			print(failure.GenerateErrorReport()) 
+PlayFabClientAPI.LoginWithCustomID(request, callback)
+```
+
+## Finish and Execute
+
+- Run the Python script
+  - From the command line, run the following command:
+
+```cmd
+python playfab_test.py
+```
+
+- When it finishes, you should see the following text:
+  - "Congratulations, you made your first successful API call!"
+  
+- At this point, you can start making other API calls, and building your game
+- For a list of all available client API calls, see our documentation:
+  - [https://api.playfab.com/](https://api.playfab.com/)
+
+- Happy coding!
+
+## Deconstruct the code
+
+This optional last section describes each part of playfab_test.py in detail.
+
+- imports
+  - The PlayFab imports get you access to the APIs.
+
+- PlayFabSettings.TitleId = "144"
+  - Every PlayFab developer creates a title in Game Manager. When you publish your game, you must code that titleId into your game. This lets the client know how to access the correct data within PlayFab. For most users, just consider it a mandatory step that makes PlayFab work
+
+- request
+  - Most PlayFab API methods require input parameters, and those input parameters are packed into a dictionary object
+    - For LoginWithCustomIDRequest, there is a mandatory parameter of CustomId, which uniquely identifies a player, LoginTitlePlayerAccountEntity, which automatically logs the player's title_player_account in and returns the associated entity token, and CreateAccount, which allows the creation of a new account with this call.
+    - For login, most developers will want to use a more appropriate login method
+      - See the [PlayFab Login documentation](https://api.playfab.com/documentation/Client#Authentication) for a list of all login methods, and input parameters. Common choices are:
+        - [LoginWithAndroidDeviceID](https://api.playfab.com/documentation/Client/method/LoginWithAndroidDeviceID)
+        - [LoginWithIOSDeviceID](https://api.playfab.com/documentation/Client/method/LoginWithIOSDeviceID)
+        - [LoginWithEmailAddress](https://api.playfab.com/documentation/Client/method/LoginWithEmailAddress)
+
+- callback
+  - success
+    - If the API call was successful, success will contain the requested information and failure will be None
+    - For login requests, success will contain basic information about the player, but for most users, login is simply a mandatory step before calling other APIs
+
+  - failure
+    - If the API call wasn't successful, failure will contain some error information and success will be None
+    - API calls can fail for many reasons, and you should always attempt to handle failure
+    - Why API calls fail (In order of likelihood)
+      - PlayFabSettings.TitleId is not set. If you forget to set titleId to your title, then nothing will work.
+      - Request parameters. If you have not provided the correct or required information for a particular API call, then it will fail. 
+      - Device connectivity issue. Cell-phones lose/regain connectivity constantly, and so any API call at any time can fail randomly, and then work immediately after. Going into a tunnel can disconnect you completely.
+      - PlayFab server issue. As with all software, there can be issues. See our [release notes](https://api.playfab.com/releaseNotes/) for updates.
+      - The internet is not 100% reliable. Sometimes the message is corrupted or fails to reach the PlayFab server.
+  
+    - If you are having difficulty debugging an issue, and the information within the error information is not sufficient, please visit us on our [forums](https://community.playfab.com/index.html)
+
+- PlayFabClientAPI.LoginWithCustomID
+  - Triggers the API call synchronously. When complete, the callback will be invoked
