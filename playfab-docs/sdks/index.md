@@ -55,7 +55,8 @@ description: to-follow
                     <div class="cardText">
                         <h3>C#</h3>
                         <p><a href="/playfab/sdks/c-sharp">SDK</a></p>
-                        <p><a href="/playfab/sdks/c-sharp/quickstart">Quickstart</a></p>
+                        <p><a href="/playfab/sdks/c-sharp/quickstart-c-sharp">Quickstart - C#</a></p>
+                        <p><a href="/playfab/sdks/c-sharp/quickstart-xamarin">Quickstart - Xamarin</a></p>
                     </div>
                 </div>
             </div>

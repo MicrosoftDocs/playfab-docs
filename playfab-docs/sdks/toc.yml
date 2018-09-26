@@ -14,8 +14,10 @@
   - name:  C#
     href: ./c-sharp/index.md
     items:
-    - name: Quickstart
-      href: ./c-sharp/quickstart.md
+    - name: Quickstart - C#
+      href: ./c-sharp/quickstart-c-sharp.md
+    - name: Quickstart - Xamarin
+      href: ./c-sharp/quickstart-xamarin.md
   - name: Cocos2d-x
     href: ./cocos2d-x/index.md
     items:
