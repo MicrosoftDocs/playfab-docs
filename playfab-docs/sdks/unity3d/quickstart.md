@@ -1,11 +1,161 @@
 # Unity3D Quickstart
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa tincidunt dui ut ornare lectus. Viverra vitae congue eu consequat ac felis donec. Leo urna molestie at elementum eu facilisis. A cras semper auctor neque vitae tempus quam. Amet cursus sit amet dictum sit amet justo donec enim. Faucibus turpis in eu mi bibendum neque egestas congue. Morbi quis commodo odio aenean sed adipiscing diam. Lectus vestibulum mattis ullamcorper velit. Dictum fusce ut placerat orci nulla pellentesque.
+This guide will help you make your first PlayFab API call in the Unity3d engine.   
 
-Lorem mollis aliquam ut porttitor leo a diam sollicitudin. Mattis rhoncus urna neque viverra. Pharetra vel turpis nunc eget lorem dolor sed. Aliquam eleifend mi in nulla posuere sollicitudin aliquam ultrices. Adipiscing elit ut aliquam purus sit. Eleifend mi in nulla posuere sollicitudin aliquam. Luctus accumsan tortor posuere ac. Pulvinar sapien et ligula ullamcorper malesuada proin libero nunc consequat. Dignissim cras tincidunt lobortis feugiat vivamus at augue eget. Eu consequat ac felis donec et odio pellentesque diam volutpat. Fermentum odio eu feugiat pretium nibh ipsum. Enim sit amet venenatis urna cursus eget nunc. Sollicitudin nibh sit amet commodo. Varius quam quisque id diam vel quam elementum pulvinar. Vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant. Dui id ornare arcu odio ut. Imperdiet sed euismod nisi porta. Amet purus gravida quis blandit turpis cursus in.
+OS: This guide is written for Windows 10, however it should also work fine with a Mac.   
 
-In arcu cursus euismod quis viverra nibh cras. Feugiat scelerisque varius morbi enim nunc faucibus. Sed adipiscing diam donec adipiscing tristique risus nec. Mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien et. Convallis a cras semper auctor neque vitae tempus quam. Et leo duis ut diam quam nulla. Egestas sed tempus urna et pharetra pharetra. Arcu felis bibendum ut tristique et. Donec ac odio tempor orci dapibus ultrices in iaculis nunc. Ullamcorper a lacus vestibulum sed arcu non odio.
+## Download Unity   
+If you don't have unity installed, then you will need to install it and create a project.   
 
-Nulla aliquet enim tortor at auctor urna nunc id. Turpis massa sed elementum tempus. Commodo viverra maecenas accumsan lacus vel facilisis volutpat est. Nibh nisl condimentum id venenatis. Sagittis id consectetur purus ut faucibus. Diam maecenas ultricies mi eget mauris pharetra. Porttitor lacus luctus accumsan tortor posuere ac ut consequat semper. Nunc sed velit dignissim sodales. Tortor condimentum lacinia quis vel. Elementum curabitur vitae nunc sed velit dignissim sodales ut eu. Tincidunt eget nullam non nisi est sit amet facilisis magna. Pellentesque pulvinar pellentesque habitant morbi tristique senectus et netus. Morbi quis commodo odio aenean sed adipiscing diam donec. Nunc sed id semper risus in hendrerit gravida rutrum quisque. Id interdum velit laoreet id. Tempor id eu nisl nunc. Cras tincidunt lobortis feugiat vivamus at augue eget arcu dictum. Tempus urna et pharetra pharetra massa massa.
+- Download Unity3D
+  - [Download Unity](https://store.unity.com/download) 
+  - We support all recent versions of Unity, some features work better with 5.3 or higher
+  - Unity requires a license. Pick personal or professional based on your preferences
+  - Keep going until you can start a new project 
 
-Risus in hendrerit gravida rutrum quisque non. Pulvinar mattis nunc sed blandit. Augue mauris augue neque gravida in fermentum et. Odio ut sem nulla pharetra diam sit amet nisl suscipit. Facilisis gravida neque convallis a cras semper. Ac turpis egestas maecenas pharetra convallis. Nunc non blandit massa enim nec dui nunc mattis enim. Eu facilisis sed odio morbi quis commodo odio aenean sed. Amet consectetur adipiscing elit pellentesque habitant. Lorem ipsum dolor sit amet consectetur adipiscing elit ut aliquam. In nibh mauris cursus mattis molestie a. Duis at consectetur lorem donec. Ac odio tempor orci dapibus ultrices in iaculis nunc. A arcu cursus vitae congue mauris rhoncus aenean vel elit. Facilisis magna etiam tempor orci eu lobortis elementum. Congue mauris rhoncus aenean vel elit. Gravida dictum fusce ut placerat orci nulla pellentesque dignissim enim. Netus et malesuada fames ac turpis egestas integer.
+![Create Unity project](media/unity-create-project.png) 
+
+  - Finish creating a new empty project with a name and location of your choice   
+
+
+## Download PlayFab SDK   
+The best way to acquire our Unity SDK is via our editor extensions. Although you can directly download the Unity SDK from our github page. [PlayFab UnitySDK Unity Package](https://api.playfab.com/sdks/download/unity-v2ap).   
+
+- Download and Import the [PlayFab Unity Editor Extensions Package](https://github.com/PlayFab/UnityEditorExtensions/raw/master/Packages/PlayFabEditorExtensions.unitypackage)
+  - To import the the Unity Editor Extensions package, navigate to where the file was downloaded and double click on the .UnityPackage file. This will bring up the following window.   
+
+    ![Import Unity package](media/import-uedex.png)  
+
+  - Click Import, which will import the PlayFab Unity Editor Extensions into your project.   
+
+- Login or Register
+  - Before you can download the SDK you must login with your PlayFab account. If you don't have one you can register or click the "log in" link to take you to the login pane and login with your PlayFab username or password.
+
+    ![Login or Register with PlayFab](media/login-register-uedex.png) 
+
+  - Once you have registered & logged in, you will find yourself on this screen. Click Install PlayFab SDK and it will automatically import the SDK into your project.   
+  
+    ![Install PlayFab SDK](media/install-sdk.png) 
+
+## Set Title Settings   
+
+Now that you have installed the PlayFab SDK, you will need to set your title in Title Settings. If you are not using editor extensions you can do this directly in the PlayFab Settings Scriptpable Object located in the following folder. 
+ 
+![PlayFab setting scriptable object](media/playfab-settings-so.png)
+
+Otherwise, you can easily set your Title settings in the Editor Extensions UI. Click on the settings tab in the Editor Extensions.   
+
+![PlayFab settings tab](media/playfab-settings-tab.png)    
+
+Select your Studio and Title ID and click Save.   
+
+![Save PlayFab title settings](media/playfab-settings-tab.png)    
+
+## Making your first API Call   
+
+Now that you have installed the SDK and set your Title settings, you are ready to make your first API call with the Unity SDK. This part of the guide will provide the minimum steps to make your first PlayFab API call, without any GUI or on-screen feedback. Confirmation will be done with the Console log.
+
+- Find the Project panel
+- Create a new C# script named "PlayFabLogin" 
+
+![Create a new C# script](media/first-script.png) 
+
+- In Unity, Double click this file to open it in a code-editor
+  - Depending on your settings/installed-programs, this will likely be Visual Studio or MonoDevelop   
+
+- Next, Create a new GameObject, and attach this script (PlayFabLogin.cs) to the newly created GameObject
+- Replace the contents of PlayFabLogin.cs with the following:
+
+```csharp
+using PlayFab;
+using PlayFab.ClientModels;
+using UnityEngine;
+
+public class PlayFabLogin : MonoBehaviour
+{
+    public void Start()
+    {
+        //Note: Setting title Id here can be skipped if you have set the value in Editor Extensions already.
+        if (string.IsNullOrEmpty(PlayFabSettings.TitleId)){
+            PlayFabSettings.TitleId = "144"; // Please change this value to your own titleId from PlayFab Game Manager
+        }
+        var request = new LoginWithCustomIDRequest { CustomId = "GettingStartedGuide", CreateAccount = true};
+        PlayFabClientAPI.LoginWithCustomID(request, OnLoginSuccess, OnLoginFailure);
+    }
+
+    private void OnLoginSuccess(LoginResult result)
+    {
+        Debug.Log("Congratulations, you made your first successful API call!");
+    }
+
+    private void OnLoginFailure(PlayFabError error)
+    {
+        Debug.LogWarning("Something went wrong with your first API call.  :(");
+        Debug.LogError("Here's some debug information:");
+        Debug.LogError(error.GenerateErrorReport());
+    }
+}
+```   
+> [!IMPORTANT]
+> Please note that the above code is not for use with Mobile, this is an example only and shows how to login with a CustomID. Mobile games should use either
+[LoginWithAndroidDeviceID](https://api.playfab.com/documentation/Client/method/LoginWithAndroidDeviceID), [LoginWithIOSDeviceID](https://api.playfab.com/documentation/Client/method/LoginWithIOSDeviceID) or some form of social login like [LoginWithFacebook](https://api.playfab.com/documentation/Client/method/LoginWithFacebook).
+
+
+## Finish and Execute
+You are now ready to test out this sample.
+
+- Be sure to Save all files, and return to the Unity Editor
+- Press the Play button at the top of the editor   
+
+Ideally, you should see the following in your Unity Console Panel.
+
+![Console log of first API call](media/first-call-log.png)  
+
+Now you can start making other API calls and build your game.
+
+For a list of all available client API Calls see our [PlayFab documentation](http://api.playfab.com/documentation).   
+
+Happy Coding!
+
+## Deconstruct the code   
+
+This optional last section describes each part of PlayFabLogin.cs in detail.   
+
+- There are 3 functions in PlayFabLogin
+  - Start, OnLoginSuccess, OnLoginFailure
+  - Start is a Unity function which is automatically called for every MonoBehaviour object
+    - See the [Unity MonoBehaviour Guide](https://docs.unity3d.com/ScriptReference/MonoBehaviour.html) for more information   
+
+Inside of Start():   
+
+- PlayFabSettings.TitleId = "xxxx";
+  - Every PlayFab developer creates a title in Game Manager. When you publish your game, you must code that titleId into your game. This lets the client know how to access the correct data within PlayFab. For most users, just consider it a mandatory step that makes PlayFab work.
+
+- var request = new LoginWithCustomIDRequest { CustomId = "GettingStartedGuide", CreateAccount = true};
+  - Most PlayFab API methods require input parameters, and those input parameters are packed into a request object
+  - Every API method requires a unique request object, with a mix of optional and mandatory parameters
+      - For LoginWithCustomIDRequest, there is a mandatory parameter of CustomId, which uniquely identifies a player and CreateAccount, which allows the creation of a new account with this call.   
+
+  - For login, most developers will want to use a more appropriate login method
+     - See the PlayFab Login Documentation for:
+     - [LoginWithAndroidDeviceID](https://api.playfab.com/documentation/Client#Authentication)
+     - [LoginWithIOSDeviceID](https://api.playfab.com/documentation/Client/method/LoginWithIOSDeviceID)
+     - [LoginWithEmailAddress](https://api.playfab.com/documentation/Client/method/LoginWithEmailAddress)
+     - [LoginWithFacebook](https://api.playfab.com/documentation/Client/method/LoginWithFacebook)   
+
+Inside of OnLoginSuccess:   
+
+- The result object of many API success callbacks will contain the requested information
+- LoginResult contains some basic information about the player, but for most users, login is simply a mandatory step before calling other APIs.   
+
+Inside of OnLoginFailure:   
+
+- API calls can fail for many reasons, and you should always attempt to handle failure
+  - You can find error codes shared by all API methods [here](https://api.playfab.com/docs/tutorials/globalcodes), or specific codes at the bottom of each API method documentation
+
+- Why API calls fail (In order of likelihood)
+  - PlayFabSettings.TitleId is not set. If you forget to set titleId to your title, then nothing will work.
+  - Request parameters. If you have not provided the correct or required information for a particular API call, then it will fail. See error.errorMessage, error.errorDetails, or error.GenerateErrorReport() for more info.
+  - Device connectivity issue. Cell-phones lose/regain connectivity constantly, and so any API call at any time can fail randomly, and then work immediately after. Going into a tunnel can disconnect you completely.
+  - The PlayFab Unity SDK currently expects API calls from the main Unity thread. Calling the SDK on a background thread will likely cause exceptions with coroutines and other Unity methods not being invoked on the main Unity thread.
+  - PlayFab server issue. As with all software, there can be issues. See our [forums](https://community.playfab.com/index.html) to look for issue reports similar to yours, or post your own question. You can also review our [release notes](https://api.playfab.com/releaseNotes).   
