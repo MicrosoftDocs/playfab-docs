@@ -1,11 +1,67 @@
-# Objective-C Quickstart for iOS
+# Objective-C Quickstart
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa tincidunt dui ut ornare lectus. Viverra vitae congue eu consequat ac felis donec. Leo urna molestie at elementum eu facilisis. A cras semper auctor neque vitae tempus quam. Amet cursus sit amet dictum sit amet justo donec enim. Faucibus turpis in eu mi bibendum neque egestas congue. Morbi quis commodo odio aenean sed adipiscing diam. Lectus vestibulum mattis ullamcorper velit. Dictum fusce ut placerat orci nulla pellentesque.
+This guide will help you make your first PlayFab API call using Objective-C by showing you how to get started with our [Objective-C SDK for native OSX & iOS development](https://github.com/PlayFab/Objective_C_SDK)
 
-Lorem mollis aliquam ut porttitor leo a diam sollicitudin. Mattis rhoncus urna neque viverra. Pharetra vel turpis nunc eget lorem dolor sed. Aliquam eleifend mi in nulla posuere sollicitudin aliquam ultrices. Adipiscing elit ut aliquam purus sit. Eleifend mi in nulla posuere sollicitudin aliquam. Luctus accumsan tortor posuere ac. Pulvinar sapien et ligula ullamcorper malesuada proin libero nunc consequat. Dignissim cras tincidunt lobortis feugiat vivamus at augue eget. Eu consequat ac felis donec et odio pellentesque diam volutpat. Fermentum odio eu feugiat pretium nibh ipsum. Enim sit amet venenatis urna cursus eget nunc. Sollicitudin nibh sit amet commodo. Varius quam quisque id diam vel quam elementum pulvinar. Vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant. Dui id ornare arcu odio ut. Imperdiet sed euismod nisi porta. Amet purus gravida quis blandit turpis cursus in.
+> [!Note] This SDK is currently in Beta, so please let us know if you run into any issues.
 
-In arcu cursus euismod quis viverra nibh cras. Feugiat scelerisque varius morbi enim nunc faucibus. Sed adipiscing diam donec adipiscing tristique risus nec. Mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien et. Convallis a cras semper auctor neque vitae tempus quam. Et leo duis ut diam quam nulla. Egestas sed tempus urna et pharetra pharetra. Arcu felis bibendum ut tristique et. Donec ac odio tempor orci dapibus ultrices in iaculis nunc. Ullamcorper a lacus vestibulum sed arcu non odio.
+Happy Developing!
 
-Nulla aliquet enim tortor at auctor urna nunc id. Turpis massa sed elementum tempus. Commodo viverra maecenas accumsan lacus vel facilisis volutpat est. Nibh nisl condimentum id venenatis. Sagittis id consectetur purus ut faucibus. Diam maecenas ultricies mi eget mauris pharetra. Porttitor lacus luctus accumsan tortor posuere ac ut consequat semper. Nunc sed velit dignissim sodales. Tortor condimentum lacinia quis vel. Elementum curabitur vitae nunc sed velit dignissim sodales ut eu. Tincidunt eget nullam non nisi est sit amet facilisis magna. Pellentesque pulvinar pellentesque habitant morbi tristique senectus et netus. Morbi quis commodo odio aenean sed adipiscing diam donec. Nunc sed id semper risus in hendrerit gravida rutrum quisque. Id interdum velit laoreet id. Tempor id eu nisl nunc. Cras tincidunt lobortis feugiat vivamus at augue eget arcu dictum. Tempus urna et pharetra pharetra massa massa.
+## Getting started
 
-Risus in hendrerit gravida rutrum quisque non. Pulvinar mattis nunc sed blandit. Augue mauris augue neque gravida in fermentum et. Odio ut sem nulla pharetra diam sit amet nisl suscipit. Facilisis gravida neque convallis a cras semper. Ac turpis egestas maecenas pharetra convallis. Nunc non blandit massa enim nec dui nunc mattis enim. Eu facilisis sed odio morbi quis commodo odio aenean sed. Amet consectetur adipiscing elit pellentesque habitant. Lorem ipsum dolor sit amet consectetur adipiscing elit ut aliquam. In nibh mauris cursus mattis molestie a. Duis at consectetur lorem donec. Ac odio tempor orci dapibus ultrices in iaculis nunc. A arcu cursus vitae congue mauris rhoncus aenean vel elit. Facilisis magna etiam tempor orci eu lobortis elementum. Congue mauris rhoncus aenean vel elit. Gravida dictum fusce ut placerat orci nulla pellentesque dignissim enim. Netus et malesuada fames ac turpis egestas integer.
+There are two ways to get started:
+
+  1. Start with and add to our [example implementation project](https://github.com/PlayFab/Objective_C_SDK/tree/master/ExampleProject).
+  2. Import the [Objective-C SDK](https://github.com/PlayFab/Objective_C_SDK/tree/master/PlayFabSDK) into an existing XCode project.
+
+## Configuring PlayFab
+
+Set your PlayFab TitleId in PlayFabSettings.m, on the line:
+
+```objc
+  static NSString * TitleId = @"XXXX";
+```
+
+## Set up your first API call
+
+The following code example shows you how to make a PlayFab API request and receive the response.
+
+```objc
+//EXAMPLE: Login with custom id request:
+
+//Build the Request object:
+  LoginWithCustomIDRequest* login_request = [LoginWithCustomIDRequest new];
+  login_request.CustomId = [[[UIDevice currentDevice] identifierForVendor] UUIDString]; //use the identifier for vendor as our custom ID.
+  login_request.CreateAccount = true; //creates a new account if no existing one
+    
+//Make each call to [PlayFabClientAPI GetInstance], the first time you do this, an instance will be created and then used.
+  [[PlayFabClientAPI GetInstance] LoginWithCustomID:login_request
+      
+      success:^(LoginResult* result, NSObject* userData) {
+        //This block will run when we receive successful response, inspect the result class for pertinent info.
+        NSLog(@"error %@",result.PlayFabId);
+      }
+
+      failure:^(PlayFabError *error, NSObject *userData) {
+        //Request errored or failed to connect, inspect the PlayFabError class for pertinent info.
+        NSLog(@"error %@",error.description);
+      } withUserData:nil];
+```
+
+## Notes
+
+- IDFA/advertisingIdentifier logic is present but has not been properly tested. It is off by default and is only available if you explicitly add USE_IDFA=1 to Target > Build Settings > Preprocessor Macros.
+
+- testTitleData.json is present in the project but must be changed to valid data for any Unit Tests to work.
+
+## Troubleshooting
+
+For a complete list of available APIs, check out the [online documentation](http://api.playfab.com/Documentation/).
+
+## Contact Us
+
+We love to hear from our developer community!
+Do you have ideas on how we can make our products and services better?
+
+Our Developer Success Team can assist with answering any questions as well as process any feedback you have about PlayFab services.
+
+[Forums, Support and Knowledge Base](https://community.playfab.com/index.html)

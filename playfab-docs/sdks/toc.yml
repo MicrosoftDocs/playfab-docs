@@ -9,8 +9,10 @@
   - name:  C++
     href: ./xplatcpp/index.md
     items:
-    - name: Quickstart
-      href: ./xplatcpp/quickstart.md
+    - name: Quickstart - Windows
+      href: ./xplatcpp/quickstart-windows.md
+    - name: Quickstart - Linux
+      href: ./c-sharp/quickstart-linux.md
   - name:  C#
     href: ./c-sharp/index.md
     items:
@@ -36,8 +38,10 @@
   - name:  Lua
     href: ./lua/index.md
     items:
-    - name: Quickstart
-      href: ./lua/quickstart.md
+    - name: Quickstart - Corona
+      href: ./lua/quickstart-corona.md
+    - name: Quickstart - Defold
+      href: ./c-sharp/quickstart-defold.md
   - name: NodeJS
     href: ./nodejs/index.md
     items:

@@ -1,4 +1,4 @@
-# Cross-Platform C++ Quickstart (Windows)
+# C++ Quickstart for Windows
 
 This guide will help you make your first API call in C++. A native C++ project can be used a few ways:
 
@@ -18,7 +18,7 @@ This guide will help you make your first API call in C++. A native C++ project c
 
   - Finally, if none of these options work for you, follow the instructions below to integrate the NuGet Package into your Visual Studio Solution. If you have any issues, let us know on the [Forums](https://community.playfab.com/index.html).
 
-## Windows/C++ Project Setup
+## Windows C++ Project Setup
 
 - OS: This guide is written for Windows 10, using Visual Studio 2013 or 2015
 - Installation
