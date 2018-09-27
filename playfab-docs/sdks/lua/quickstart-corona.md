@@ -1,4 +1,4 @@
-# Lua Quickstart for Native, Corona and Defold
+# Lua Quickstart for Corona
 
 This guide will help you make your first PlayFab API call in the Corona engine.
 

@@ -1,4 +1,4 @@
-# Cross-Platform C++ Quickstart (Linux)
+# C++ Quickstart for Linux
 
 This guide will help you make your first API call in C++. A native C++ project can be used a few ways:
 
@@ -15,7 +15,7 @@ This guide will help you make your first API call in C++. A native C++ project c
 
 If you have any issues, let us know on the [Forums](https://community.playfab.com/index.html).
 
-## Linux/C++ Project Setup
+## Linux C++ Project Setup
 
 - OS: This guide is written for Linux, using Ubuntu 18.04 LTS
 - Install Requirements (sudo apt install ____ on Ubuntu)

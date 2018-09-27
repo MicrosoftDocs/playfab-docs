@@ -37,7 +37,8 @@ description: to-follow
                     <div class="cardText">
                         <h3>C++</h3>
                         <p><a href="/playfab/sdks/xplatcpp">SDK</a></p>
-                        <p><a href="/playfab/sdks/xplatcpp/quickstart">Quickstart</a></p>
+                        <p><a href="/playfab/sdks/xplatcpp/quickstart-windows">Quickstart - Windows</a></p>
+                        <p><a href="/playfab/sdks/xplatcpp/quickstart-linux">Quickstart - Linux</a></p>
                     </div>
                 </div>
             </div>
@@ -128,7 +129,8 @@ description: to-follow
                     <div class="cardText">
                         <h3>Lua</h3>
                         <p><a href="/playfab/sdks/lua">SDK</a></p>
-                        <p><a href="/playfab/sdks/lua/quickstart">Quickstart</a></p>
+                        <p><a href="/playfab/sdks/lua/quickstart-corona">Quickstart - Corona</a></p>
+                        <p><a href="/playfab/sdks/lua/quickstart-defold">Quickstart - Defold</a></p>
                     </div>
                 </div>
             </div>

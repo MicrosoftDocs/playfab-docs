@@ -1,4 +1,4 @@
-# Defold Quickstart
+# Lua Quickstart for Defold
 
 This guide will help you make your first PlayFab API call using Defold.
 
