@@ -25,7 +25,7 @@ A native C# project can be used two ways:
 - New Project Setup
   - Open Visual Studio and create a new project
 
-  ![Install PlayFab SDK](media/new-csharp-project.png)
+  ![Install PlayFab SDK](media/csharp-new-project.png)
 
   - Install nuget package for PlayFabAllSDK
 
