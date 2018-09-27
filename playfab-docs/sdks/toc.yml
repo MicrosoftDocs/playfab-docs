@@ -12,7 +12,7 @@
     - name: Quickstart - Windows
       href: ./xplatcpp/quickstart-windows.md
     - name: Quickstart - Linux
-      href: ./c-sharp/quickstart-linux.md
+      href: ./xplatcpp/quickstart-linux.md
   - name:  C#
     href: ./c-sharp/index.md
     items:
@@ -41,7 +41,7 @@
     - name: Quickstart - Corona
       href: ./lua/quickstart-corona.md
     - name: Quickstart - Defold
-      href: ./c-sharp/quickstart-defold.md
+      href: ./lua/quickstart-defold.md
   - name: NodeJS
     href: ./nodejs/index.md
     items:
