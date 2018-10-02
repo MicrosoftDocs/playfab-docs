@@ -2,7 +2,8 @@
 
 ## Tutorial Video
 
-> [!NOTE] Audio is broken on the video - new recording coming soon.  
+> [!NOTE]
+> Audio is broken on the video - new recording coming soon.
 
 [HowTo: Use Google SignIn (GPG) + PlayFab (Unity)](https://youtu.be/igup53sdmHg)
 
@@ -74,7 +75,8 @@ To obtain your **secret key** follow the link to your API's Console.
 
 Click on your Web Application (Type) and the client secret is at the top.
 
-> ![IMPORTANT] You must change the default callback for Authorized redirect URIs. The proper URI is [https://oauth.playfab.com/oauth2/google](https://oauth.playfab.com/oauth2/google).
+> [!IMPORTANT]
+> You must change the default callback for Authorized redirect URIs. The proper URI is [https://oauth.playfab.com/oauth2/google](https://oauth.playfab.com/oauth2/google).
 > If you do not do this step you will get a mismatch redirect_uri error.
 
 ## PlayFab Google Sign-In Setup
