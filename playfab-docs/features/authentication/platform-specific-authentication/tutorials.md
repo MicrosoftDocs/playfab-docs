@@ -4,4 +4,5 @@ The tutorials in this section show you how to set up PlayFab authentication on s
 
 - [Setting up PlayFab authentication using Facebook and HTML5](facebook-html5.md)
 - [Setting up PlayFab authentication using Facebook and Unity](facebook-unity.md)
-
+- [Setting up PlayFab authentication using Google and HTML5](google-html5.md)
+- [Setting up PlayFab authentication using Google Play Games Sign-In in Unity](google-sign-in-unity.md)
