@@ -124,7 +124,7 @@ Use the following HTML file to test PlayFab authentication using Twitch. Make su
 
 Request the following file from your server using the domain you set up during Twitch Application configuration ( `http://localhost' in our case) **(1)**. Once the page opens, wait for the message indicating that the Twitch SDK was initialized **(2)**. Then, click the "Log In with Twitch" button **(3)**. Follow any Twitch instructions in the pop up window. Watch the output **(4)**.
 
-> ![IMPORTANT]  
+> [!IMPORTANT]
 > If you already have a Twitch auth session going when reaching the page, it is possible for callbacks to fire in a different, unexpected order. This case is shown in the following screenshot. However, you should only make sure that "Logging in via PlayFab" follows after "Logged in with Twitch". This means that the token was received or restored from the local storage and we do not have to wait for the Twitch SDK to start signing in to PlayFab.
 
 ![Twitch Auth Example](media/tutorials/twitch-html5/twitch-auth-example.png)  
