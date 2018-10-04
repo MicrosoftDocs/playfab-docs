@@ -2,7 +2,7 @@
 
 PlayFab's multiplayer server hosting service allows you to operate a dynamically scaling pool of custom game servers in Azure.
 
-This service is currently available as a private preview to a limited set of customers. If you are an existing PlayFab Pro or Enterprise customer and interested in early access to this feature set, please reach out to us through our community Slack channel, your account manager or email us at [playcompute@microsoft.com](playcompute@microsoft.com).
+This service is currently available as a private preview to a limited set of customers. If you are an existing PlayFab Pro or Enterprise customer and interested in early access to this feature set, please reach out to us through our community Slack channel, your account manager or email us at [playcompute@microsoft.com](mailto:playcompute@microsoft.com).
 
 There are three key concepts to PlayFab multiplayer servers:
 
