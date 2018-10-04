@@ -1,6 +1,6 @@
-# Setting up PlayFab authentication in a Universal Windows App
+# Setting up PlayFab authentication using Universal Windows Platform
 
-This tutorial aims to help you integrate PlayFab into a Universal Windows App (UWP). 
+This tutorial guides you through an example of PlayFab authentication using the Universal Windows Platform (UWP).
 
 > ![IMPORTANT]  
 > This tutorial serves as a very basic introduction on how you can obtain all entities and commit authentication via Windows Hello and PlayFab. For a more sophisticated example of Windows Hello and PlayFab Authentication, consider our [UWPExample project](https://github.com/PlayFab/UWPExample).

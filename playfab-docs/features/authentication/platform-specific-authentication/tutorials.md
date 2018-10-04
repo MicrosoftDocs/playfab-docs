@@ -11,4 +11,5 @@ The tutorials in this section show you how to set up PlayFab authentication on s
 - [Setting up PlayFab authentication in Phaser.io](phaser-io.md)
 - [Setting up PlayFab authentication using Steam and Unity](steam-unity.md)
 - [Setting up PlayFab authentication using Twitch and HTML5](twitch-html5.md)
-- [Setting up PlayFab authentication in a Universal Windows App](uwp.md)
+- [Setting up PlayFab authentication using Universal Windows Platform](uwp.md)
+- [Integrating the Universal Windows Platform with PlayFab](uwp-integration.md)
