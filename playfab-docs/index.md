@@ -26,7 +26,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="/playfab/media/persona_developer.svg" alt="" />
+                                                        <img src="/gaming/playfab/media/persona_developer.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
