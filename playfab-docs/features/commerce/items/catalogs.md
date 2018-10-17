@@ -167,7 +167,7 @@ To create a catalog, perform the following steps:
    2. Display Name, e.g.  “Level 5 Shield”
    3. Description, e.g.  “Strong defense against projectile attacks”
 6. Set a price by clicking on the Prices tab and click Add.
-7. Set the currency to “Gold”, (See [Currencies](currencies.md)) then set the amount (e.g. 250) and save the item.
+7. Set the currency to “Gold”, (See [Currencies](../economy/currencies.md)) then set the amount (e.g. 250) and save the item.
 8. If you want your item to have a Real Money (RM) Cost, then set that value as well.
 9. Repeat Steps 4 – 8 as for each new Item you wish to create.
 
