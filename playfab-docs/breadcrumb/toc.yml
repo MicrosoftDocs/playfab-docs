@@ -1,186 +1,186 @@
 - name: PlayFab Docs
-  tocHref: /playfab/
-  topicHref: /playfab/
+  tocHref: /gaming/playfab/
+  topicHref: /gaming/playfab/
   items:
   - name: Personas
-    tocHref: /playfab/personas/
-    topicHref: /playfab/personas/developer
+    tocHref: /gaming/playfab/personas/
+    topicHref: /gaming/playfab/personas/developer
   - name: Resources
-    tocHref: /playfab/resources/
-    topicHref: /playfab/resources/event-archive
+    tocHref: /gaming/playfab/resources/
+    topicHref: /gaming/playfab/resources/event-archive
   - name: Features
-    tocHref: /playfab/features/
-    topicHref: /playfab/features/
+    tocHref: /gaming/playfab/features/
+    topicHref: /gaming/playfab/features/
     items:
     - name: Authentication
-      tocHref: /playfab/features/authentication/
-      topicHref: /playfab/features/#pivot=main&panel=authentication
+      tocHref: /gaming/playfab/features/authentication/
+      topicHref: /gaming/playfab/features/#pivot=main&panel=authentication
       items:
       - name: Linking & Unlinking
-        tocHref:  /playfab/features/authentication/linking-unlinking/
-        topicHref:  /playfab/features/authentication/linking-unlinking/
+        tocHref:  /gaming/playfab/features/authentication/linking-unlinking/
+        topicHref:  /gaming/playfab/features/authentication/linking-unlinking/
       - name: Platform-Specific Authentication
-        tocHref: /playfab/features/authentication/platform-specific-authentication/
-        topicHref: /playfab/features/authentication/platform-specific-authentication/
+        tocHref: /gaming/playfab/features/authentication/platform-specific-authentication/
+        topicHref: /gaming/playfab/features/authentication/platform-specific-authentication/
     - name: Data
-      tocHref: /playfab/features/data/
-      topicHref: /playfab/features/#pivot=main&panel=data
+      tocHref: /gaming/playfab/features/data/
+      topicHref: /gaming/playfab/features/#pivot=main&panel=data
       items:
       - name: Entities
-        tocHref: /playfab/features/data/entities/
-        topicHref: /playfab/features/data/entities/
+        tocHref: /gaming/playfab/features/data/entities/
+        topicHref: /gaming/playfab/features/data/entities/
       - name: Player Data
-        tocHref: /playfab/features/data/playerdata/
-        topicHref: /playfab/features/data/playerdata/
+        tocHref: /gaming/playfab/features/data/playerdata/
+        topicHref: /gaming/playfab/features/data/playerdata/
       - name: Content Delivery Network
-        tocHref: /playfab/features/data/content-delivery-network/
-        topicHref: /playfab/features/data/content-delivery-network/
+        tocHref: /gaming/playfab/features/data/content-delivery-network/
+        topicHref: /gaming/playfab/features/data/content-delivery-network/
     - name: Config
-      tocHref: /playfab/features/config/
-      topicHref: /playfab/features/#pivot=main&panel=config
+      tocHref: /gaming/playfab/features/config/
+      topicHref: /gaming/playfab/features/#pivot=main&panel=config
       items:
       - name: GameManager
-        tocHref: /playfab/features/config/gamemanager/
-        topicHref: /playfab/features/config/gamemanager/
+        tocHref: /gaming/playfab/features/config/gamemanager/
+        topicHref: /gaming/playfab/features/config/gamemanager/
       - name: Title Data
-        tocHref: /playfab/features/config/titledata/
-        topicHref: /playfab/features/config/titledata/
+        tocHref: /gaming/playfab/features/config/titledata/
+        topicHref: /gaming/playfab/features/config/titledata/
       - name: Dev-Test-Live
-        tocHref: /playfab/features/config/dev-test-live/
-        topicHref: /playfab/features/config/dev-test-live/
+        tocHref: /gaming/playfab/features/config/dev-test-live/
+        topicHref: /gaming/playfab/features/config/dev-test-live/
     - name: Automation
-      tocHref: /playfab/features/automation/
-      topicHref: /playfab/features/#pivot=main&panel=automation
+      tocHref: /gaming/playfab/features/automation/
+      topicHref: /gaming/playfab/features/#pivot=main&panel=automation
       items:
       - name: Cloud Script
-        tocHref: /playfab/features/automation/cloudscript/
-        topicHref: /playfab/features/automation/cloudscript/
+        tocHref: /gaming/playfab/features/automation/cloudscript/
+        topicHref: /gaming/playfab/features/automation/cloudscript/
       - name: PlayStream Events
-        tocHref: /playfab/features/automation/playstream-events/
-        topicHref: /playfab/features/automation/playstream-events/
+        tocHref: /gaming/playfab/features/automation/playstream-events/
+        topicHref: /gaming/playfab/features/automation/playstream-events/
       - name: Actions & Rules
-        tocHref: /playfab/features/automation/actions-rules/
-        topicHref: /playfab/features/automation/actions-rules/
+        tocHref: /gaming/playfab/features/automation/actions-rules/
+        topicHref: /gaming/playfab/features/automation/actions-rules/
       - name: Scheduled Tasks
-        tocHref: /playfab/features/automation/ scheduled-tasks/
-        topicHref: /playfab/features/automation/ scheduled-tasks/
+        tocHref: /gaming/playfab/features/automation/ scheduled-tasks/
+        topicHref: /gaming/playfab/features/automation/ scheduled-tasks/
     - name: Social
-      tocHref: /playfab/features/social/
-      topicHref: /playfab/features/#pivot=main&panel=social
+      tocHref: /gaming/playfab/features/social/
+      topicHref: /gaming/playfab/features/#pivot=main&panel=social
       items:
       - name: Friends & Groups
-        tocHref: /playfab/features/social/friends-groups/
-        topicHref: /playfab/features/social/friends-groups/
+        tocHref: /gaming/playfab/features/social/friends-groups/
+        topicHref: /gaming/playfab/features/social/friends-groups/
       - name: Tournaments & Leaderboards
-        tocHref: /playfab/features/social/tournaments-leaderboards/
-        topicHref: /playfab/features/social/tournaments-leaderboards/
+        tocHref: /gaming/playfab/features/social/tournaments-leaderboards/
+        topicHref: /gaming/playfab/features/social/tournaments-leaderboards/
       - name: Trading
-        tocHref: /playfab/features/social/trading/
-        topicHref: /playfab/features/social/trading/
+        tocHref: /gaming/playfab/features/social/trading/
+        topicHref: /gaming/playfab/features/social/trading/
     - name: Commerce
-      tocHref: /playfab/features/commerce/
-      topicHref: /playfab/features/#pivot=main&panel=commerce
+      tocHref: /gaming/playfab/features/commerce/
+      topicHref: /gaming/playfab/features/#pivot=main&panel=commerce
       items:
       - name: Items
-        tocHref: /playfab/features/commerce/items/
-        topicHref: /playfab/features/commerce/items/
+        tocHref: /gaming/playfab/features/commerce/items/
+        topicHref: /gaming/playfab/features/commerce/items/
       - name: Stores
-        tocHref: /playfab/features/commerce/stores/
-        topicHref: /playfab/features/commerce/stores/
+        tocHref: /gaming/playfab/features/commerce/stores/
+        topicHref: /gaming/playfab/features/commerce/stores/
       - name: Economys
-        tocHref: /playfab/features/commerce/economy/
-        topicHref: /playfab/features/commerce/economy/
+        tocHref: /gaming/playfab/features/commerce/economy/
+        topicHref: /gaming/playfab/features/commerce/economy/
     - name: Multiplayer
-      tocHref: /playfab/features/multiplayer/
-      topicHref: /playfab/features/#pivot=main&panel=multiplayer
+      tocHref: /gaming/playfab/features/multiplayer/
+      topicHref: /gaming/playfab/features/#pivot=main&panel=multiplayer
       items:
       - name: Compute
-        tocHref: /playfab/features/multiplayer/compute/
-        topicHref: /playfab/features/multiplayer/compute/
+        tocHref: /gaming/playfab/features/multiplayer/compute/
+        topicHref: /gaming/playfab/features/multiplayer/compute/
       - name: Matchmaking
-        tocHref: /playfab/features/multiplayer/matchmaking/
-        topicHref: /playfab/features/multiplayer/matchmaking/
+        tocHref: /gaming/playfab/features/multiplayer/matchmaking/
+        topicHref: /gaming/playfab/features/multiplayer/matchmaking/
       - name: Photon
-        tocHref: /playfab/features/multiplayer/photon/
-        topicHref: /playfab/features/multiplayer/photon/
+        tocHref: /gaming/playfab/features/multiplayer/photon/
+        topicHref: /gaming/playfab/features/multiplayer/photon/
     - name: Analytics
-      tocHref: /playfab/features/analytics/
-      topicHref: /playfab/features/#pivot=main&panel=analytics
+      tocHref: /gaming/playfab/features/analytics/
+      topicHref: /gaming/playfab/features/#pivot=main&panel=analytics
       items:
       - name: Metrics
-        tocHref: /playfab/features/analytics/metrics/
-        topicHref: /playfab/features/analytics/metrics/
+        tocHref: /gaming/playfab/features/analytics/metrics/
+        topicHref: /gaming/playfab/features/analytics/metrics/
       - name: Reports
-        tocHref: /playfab/features/analytics/reports/
-        topicHref: /playfab/features/analytics/reports/
+        tocHref: /gaming/playfab/features/analytics/reports/
+        topicHref: /gaming/playfab/features/analytics/reports/
       - name: A/B Testing
-        tocHref: /playfab/features/analytics/ab-testing/
-        topicHref: /playfab/features/analytics/ab-testing/
+        tocHref: /gaming/playfab/features/analytics/ab-testing/
+        topicHref: /gaming/playfab/features/analytics/ab-testing/
       - name: Segmentation
-        tocHref: /playfab/features/analytics/segmentation/
-        topicHref: /playfab/features/analytics/segmentation/
+        tocHref: /gaming/playfab/features/analytics/segmentation/
+        topicHref: /gaming/playfab/features/analytics/segmentation/
     - name: Engagement
-      tocHref: /playfab/features/engagement/
-      topicHref: /playfab/features/#pivot=main&panel=engagement
+      tocHref: /gaming/playfab/features/engagement/
+      topicHref: /gaming/playfab/features/#pivot=main&panel=engagement
       items:
       - name: Push Notifications
-        tocHref: /playfab/features/engagement/push-notifications/
-        topicHref: /playfab/features/engagement/push-notifications/
+        tocHref: /gaming/playfab/features/engagement/push-notifications/
+        topicHref: /gaming/playfab/features/engagement/push-notifications/
       - name: Emails
-        tocHref: /playfab/features/engagement/emails/
-        topicHref: /playfab/features/engagement/emails/
+        tocHref: /gaming/playfab/features/engagement/emails/
+        topicHref: /gaming/playfab/features/engagement/emails/
       - name: News
-        tocHref: /playfab/features/engagement/news/
-        topicHref: /playfab/features/engagement/news/
+        tocHref: /gaming/playfab/features/engagement/news/
+        topicHref: /gaming/playfab/features/engagement/news/
   - name: SDKs
-    tocHref: /playfab/sdks/
-    topicHref: /playfab/sdks/
+    tocHref: /gaming/playfab/sdks/
+    topicHref: /gaming/playfab/sdks/
     items:
     - name: ActionScript
-      tocHref: /playfab/sdks/actionscript/
-      topicHref: /playfab/sdks/actionscript/
+      tocHref: /gaming/playfab/sdks/actionscript/
+      topicHref: /gaming/playfab/sdks/actionscript/
     - name: C++
-      tocHref: /playfab/sdks/xplatcpp/
-      topicHref: /playfab/sdks/xplatcpp/
+      tocHref: /gaming/playfab/sdks/xplatcpp/
+      topicHref: /gaming/playfab/sdks/xplatcpp/
     - name: C#
-      tocHref: /playfab/sdks/c-sharp/
-      topicHref: /playfab/sdks/c-sharp/
+      tocHref: /gaming/playfab/sdks/c-sharp/
+      topicHref: /gaming/playfab/sdks/c-sharp/
     - name: Cocos2D-x
-      tocHref: /playfab/sdks/cocos2d-x/
-      topicHref: /playfab/sdks/cocos2d-x/
+      tocHref: /gaming/playfab/sdks/cocos2d-x/
+      topicHref: /gaming/playfab/sdks/cocos2d-x/
     - name: Java
-      tocHref: /playfab/sdks/java/
-      topicHref: /playfab/sdks/java/
+      tocHref: /gaming/playfab/sdks/java/
+      topicHref: /gaming/playfab/sdks/java/
     - name: JavaScript
-      tocHref: /playfab/sdks/javascript/
-      topicHref: /playfab/sdks/javascript/
+      tocHref: /gaming/playfab/sdks/javascript/
+      topicHref: /gaming/playfab/sdks/javascript/
     - name: Lua
-      tocHref: /playfab/sdks/lua/
-      topicHref: /playfab/sdks/lua/
+      tocHref: /gaming/playfab/sdks/lua/
+      topicHref: /gaming/playfab/sdks/lua/
     - name: NodeJS
-      tocHref: /playfab/sdks/nodejs/
-      topicHref: /playfab/sdks/nodejs/
+      tocHref: /gaming/playfab/sdks/nodejs/
+      topicHref: /gaming/playfab/sdks/nodejs/
     - name: Objective-C
-      tocHref: /playfab/sdks/objective-c/
-      topicHref: /playfab/sdks/objective-c/
+      tocHref: /gaming/playfab/sdks/objective-c/
+      topicHref: /gaming/playfab/sdks/objective-c/
     - name: PHP
-      tocHref: /playfab/sdks/php/
-      topicHref: /playfab/sdks/php/
+      tocHref: /gaming/playfab/sdks/php/
+      topicHref: /gaming/playfab/sdks/php/
     - name: Postman
-      tocHref: /playfab/sdks/postman/
-      topicHref: /playfab/sdks/postman/
+      tocHref: /gaming/playfab/sdks/postman/
+      topicHref: /gaming/playfab/sdks/postman/
     - name: Python
-      tocHref: /playfab/sdks/python/
-      topicHref: /playfab/sdks/python/
+      tocHref: /gaming/playfab/sdks/python/
+      topicHref: /gaming/playfab/sdks/python/
     - name: Unity3D
-      tocHref: /playfab/sdks/unity3d/
-      topicHref: /playfab/sdks/unity3d/
+      tocHref: /gaming/playfab/sdks/unity3d/
+      topicHref: /gaming/playfab/sdks/unity3d/
     - name: Unreal Engine
-      tocHref: /playfab/sdks/unreal/
-      topicHref: /playfab/sdks/unreal/
+      tocHref: /gaming/playfab/sdks/unreal/
+      topicHref: /gaming/playfab/sdks/unreal/
   - name: API References
-    tocHref: /playfab/api-references/
-    topicHref: /playfab/api-references/
+    tocHref: /gaming/playfab/api-references/
+    topicHref: /gaming/playfab/api-references/
   - name: Release Notes
-    tocHref: /playfab/release-notes/
-    topicHref: /playfab/release-notes/
+    tocHref: /gaming/playfab/release-notes/
+    topicHref: /gaming/playfab/release-notes/
