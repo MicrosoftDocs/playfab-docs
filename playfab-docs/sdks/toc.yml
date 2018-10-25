@@ -9,13 +9,17 @@
   - name:  C++
     href: ./xplatcpp/index.md
     items:
-    - name: Quickstart
-      href: ./xplatcpp/quickstart.md
+    - name: Quickstart - Windows
+      href: ./xplatcpp/quickstart-windows.md
+    - name: Quickstart - Linux
+      href: ./xplatcpp/quickstart-linux.md
   - name:  C#
     href: ./c-sharp/index.md
     items:
-    - name: Quickstart
-      href: ./c-sharp/quickstart.md
+    - name: Quickstart - C#
+      href: ./c-sharp/quickstart-c-sharp.md
+    - name: Quickstart - Xamarin
+      href: ./c-sharp/quickstart-xamarin.md
   - name: Cocos2d-x
     href: ./cocos2d-x/index.md
     items:
@@ -34,8 +38,10 @@
   - name:  Lua
     href: ./lua/index.md
     items:
-    - name: Quickstart
-      href: ./lua/quickstart.md
+    - name: Quickstart - Corona
+      href: ./lua/quickstart-corona.md
+    - name: Quickstart - Defold
+      href: ./lua/quickstart-defold.md
   - name: NodeJS
     href: ./nodejs/index.md
     items:
