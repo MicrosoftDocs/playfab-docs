@@ -39,7 +39,7 @@ The best way to acquire our Unity SDK is via our editor extensions. Although you
 
 ## Set Title Settings   
 
-Now that you have installed the PlayFab SDK, you will need to set your title in Title Settings. If you are not using editor extensions you can do this directly in the PlayFab Settings Scriptpable Object located in the following folder. 
+Now that you have installed the PlayFab SDK, you will need to set your title in Title Settings. If you are not using editor extensions you can do this directly in the PlayFab Settings Scriptable Object located in the following folder. 
  
 ![PlayFab setting scriptable object](media/playfab-settings-so.png)
 
