@@ -34,7 +34,7 @@ Let's take a moment to discuss the contents of this database. It has one schema,
 
 This view's schema deserves some explanation.
 
-![Databases PlayFab Archive Shared View](media/tutorials/databases-playfab_archive_shared-view.png)  
+![Databases PlayFab Archive Shared View](media/tutorials/databases-playfab-archive-shared-view.png)  
 
 The most important column is called "p" (for payload). The type of this column is OBJECT, which is Snowflake's way of saying JSON. See later examples, or [their docs on semi-structured data](https://docs.snowflake.net/manuals/sql-reference/data-types-semistructured.html) to understand more about how this works. The other columns are effectively for indexing purposes. One important note is that the "TS" column is truncated to the hour for more effective indexing. If you need the exact time of an event for a query, access the raw timestamp from the payload using "to_timestamp(p:Timestamp)".
 

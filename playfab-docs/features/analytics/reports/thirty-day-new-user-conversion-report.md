@@ -1,0 +1,60 @@
+---
+title: Thirty Day New User Conversion Report
+author: v-thopra
+description: Describes the report that tracks the percentages of new players who spend money within the first 30 days.
+ms.author: v-thopra
+ms.date: 30/10/2018
+ms.topic: article
+ms.prod: gaming
+ms.technology: playfab
+keywords: playfab
+ms.localizationpriority: medium
+---
+
+# Thirty Day New User Conversion Report
+
+## Overview
+
+![Thirty Day New User Conversion Report Table](media/tutorials/thirty-day-new-user-conversion-report-table.png)  
+
+The Thirty Day New User Conversion Report illustrates the percentage of players in a given cohort, who spent money in the game during their first 30 days. A cohort of players is formed every day by grouping newly-registered players. Cohort size indicates the number of players in a cohort. Note that, unlike retention reports, the conversion report tracks a cumulative total of players who converted within a given time span.
+
+The preceding example report, was generated on 2/13/2018. On 1/14/2018, 77,532 new players created accounts in the example title. On Day 0, 0.50% of these players made at least one transaction in the game. Since conversion reflects a cumulative total of players, these percentage values increase along the time span and reach 1.07% on the 30th day, which corresponds to the report generation date, 2/13/2018.
+
+For additional details, see [Metrics and Terminology](../metrics/metrics-and-terminology.md).
+
+## Populating the report
+
+To populate this report, you must register a new user, log in, and then conduct purchases several days in a row. This, however, will produce trivial results with user conversion at 100% for each day. Throwing in several users and skipping some days will produce more interesting results. 
+
+The following API calls may be used to create new user accounts:
+
+- [RegisterPlayFabUser](https://api.playfab.com/documentation/client/method/RegisterPlayFabUser)
+- [RegisterWithWindowsHello](https://api.playfab.com/documentation/client/method/RegisterWithWindowsHello)
+
+The following API calls will also create a new user account and log you in automatically, if the CreateAccount flag is present:
+
+- [LoginWithAndroidDeviceID](https://api.playfab.com/documentation/client/method/LoginWithAndroidDeviceID)
+- [LoginWithCustomID](https://api.playfab.com/documentation/client/method/LoginWithCustomID)
+- [LoginWithFacebook](https://api.playfab.com/documentation/client/method/LoginWithFacebook)
+- [LoginWithGameCenter](https://api.playfab.com/documentation/client/method/LoginWithGameCenter)
+- [LoginWithGoogleAccount](https://api.playfab.com/documentation/client/method/LoginWithGoogleAccount)
+- [LoginWithIOSDeviceID](https://api.playfab.com/documentation/client/method/LoginWithIOSDeviceID)
+- [LoginWithKongregate](https://api.playfab.com/documentation/client/method/LoginWithKongregate)
+- [LoginWithSteam](https://api.playfab.com/documentation/client/method/LoginWithSteam)
+- [LoginWithTwitch](https://api.playfab.com/documentation/client/method/LoginWithTwitch)
+
+Finally, you may use following API Calls to log in:
+
+- [LoginWithAndroidDeviceID](https://api.playfab.com/documentation/client/method/LoginWithAndroidDeviceID)
+- [LoginWithCustomID](https://api.playfab.com/documentation/client/method/LoginWithCustomID)
+- [LoginWithEmailAddress](https://api.playfab.com/documentation/client/method/LoginWithEmailAddress)
+- [LoginWithFacebook](https://api.playfab.com/documentation/client/method/LoginWithFacebook)
+- [LoginWithGameCenter](https://api.playfab.com/documentation/client/method/LoginWithGameCenter)
+- [LoginWithGoogleAccount](https://api.playfab.com/documentation/client/method/LoginWithGoogleAccount)
+- [LoginWithIOSDeviceID](https://api.playfab.com/documentation/client/method/LoginWithIOSDeviceID)
+- [LoginWithKongregate](https://api.playfab.com/documentation/client/method/LoginWithKongregate)
+- [LoginWithPlayFab](https://api.playfab.com/documentation/client/method/LoginWithPlayFab)
+- [LoginWithSteam](https://api.playfab.com/documentation/client/method/LoginWithSteam)
+- [LoginWithTwitch](https://api.playfab.com/documentation/client/method/LoginWithTwitch)
+- [LoginWithWindowsHello](https://api.playfab.com/documentation/client/method/LoginWithWindowsHello)
