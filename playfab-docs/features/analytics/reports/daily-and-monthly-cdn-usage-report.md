@@ -55,4 +55,3 @@ PlayFab Report Charts all follow the same model. In the top space of the page, y
 Chart panel **(2)** shows the available data as a chart, where the horizontal axis corresponds to the time flow, and the vertical axis corresponds to the number of relevant instances, such as API calls, purchases, users, and so on, depending on the report type.
 
 There are some metrics available below the chart panel **(3)**. Those contain the sum of all the instance across the time period (SUM), the average number of instances through all the timestamps (AVG), the peak value (MAX), and the lowest value (MIN).
-

@@ -24,4 +24,3 @@ The Daily and Monthly Top Items Report contains a list of top selling items or b
 ## Populating the reports
 
 Please refer to our tutorials for [Catalogs](../../commerce/items/catalogs.md), [Stores and Sales](../../commerce/stores/stores-and-sales.md), and [Non-receipt Payment Processing](../../commerce/economy/non-receipt-payment-processing.md) to learn about setting up in-game stores and conducting payments.
-

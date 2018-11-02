@@ -27,4 +27,3 @@ If you experience lag spikes in your application while executing API calls, you 
 ## Populating the report
 
 Any API call will be captured and included into this report. Check the [PlayFab documentation](https://api.playfab.com/documentation/client) for the list of all API options.
-

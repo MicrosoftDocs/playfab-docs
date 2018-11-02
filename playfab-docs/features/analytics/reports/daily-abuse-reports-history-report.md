@@ -37,4 +37,3 @@ public void ReportPlayer() {
     }, error => Debug.LogError(error.GenerateErrorReport()));
 }
 ```
-
