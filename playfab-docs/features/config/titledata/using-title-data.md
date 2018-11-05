@@ -124,6 +124,6 @@ public void SetTitleInternalData() {
 
 ## See Also
 
-- [Using Publisher Data](https://api.playfab.com/docs/tutorials/landing-content/using-publisher-data)
-- [Using Player Data](https://api.playfab.com/docs/tutorials/landing-players/using-player-data)
-- [Using Cloud Script](https://api.playfab.com/docs/tutorials/landing-automation/using-cloud-script)
+- [Using Publisher Data](../../config/titledata/using-publisher-data)
+- [Using Player Data](../../data/playerdata/using-player-data)
+- [Using Cloud Script](../../automation/cloudscript/using-cloudscript)

@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 # Player Segmentation
 
-Player Segmentation is defined in [Game Manager](https://api.playfab.com/docs/tutorials/landing-analytics/game-manager-tour). Segments allow you to define useful or interesting groups of players, and perform exclusive actions on that group.
+Player Segmentation is defined in [Game Manager](../../config/gamemanager/game-manager-tour). Segments allow you to define useful or interesting groups of players, and perform exclusive actions on that group.
 
 **Requirements:**
 
@@ -34,4 +34,4 @@ Here is the example segment described above:
 
 The most complex part of this example is the CloudScript. Utilize the second parameter, "context" in your [CloudScript handler](../../automation/actions-rules/using-cloudscript-actions-with-playstream.md) to identify the player, and segment transition. Afterwards, perform any action you wish on the player, such as granting [inventory items](../../data/playerdata/player-inventory.md), [virtual currency](../../commerce/economy/currencies.md), [player data](../../data/playerdata/using-player-data.md), or [statistics](../../data/playerdata/using-player-statistics.md).
 
-See also: [Best Practices for Store Segmentation](https://api.playfab.com/docs/tutorials/landing-players/segmentation/segment-best)
+See also: [Best Practices for Store Segmentation](../../commerce/stores/best-practices-for-store-segmentation)

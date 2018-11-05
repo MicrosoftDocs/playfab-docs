@@ -2,7 +2,7 @@
 
 ## PlayFab Guild Solution
 
-You need guilds, clans, corporations, companies, tribes, or whatever your game calls them. PlayFab has them. PlayFab builds Guilds on top of a system we call [Entities](https://api.playfab.com/docs/tutorials/entities/getting-started-entities), or more specifically Entity Groups. Entity Groups are a much broader concept than Guilds, but fundamentally, Entity Groups are here to solve Guilds.
+You need guilds, clans, corporations, companies, tribes, or whatever your game calls them. PlayFab has them. PlayFab builds Guilds on top of a system we call [Entities](../../data/entities/getting-started-with-entities), or more specifically Entity Groups. Entity Groups are a much broader concept than Guilds, but fundamentally, Entity Groups are here to solve Guilds.
 
 ## Entity Groups
 

@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 # Using Prize Tables
 
-This tutorial walks you through how to create a Prize Table, that triggers a set of actions, on a group of players, within a range of ranks, in a [Resettable Leaderboard](using-resettable-statistics-and-leaderboards.md). In particular, this is a way to trigger emails, send push notifications, grant [Inventory Items](https://api.playfab.com/docs/tutorials/landing-players/inventory) and [Virtual Currency](../../commerce/economy/currencies.md), or execute a [CloudScript](../../automation/cloudscript/writing-custom-cloudscript.md) function at the reset of a Leaderboard. In this example, we show how to create the prize table “End Tournament Prizes” which grants virtual currency to 5 players based on their rank in a leaderboard after a reset is performed.
+This tutorial walks you through how to create a Prize Table, that triggers a set of actions, on a group of players, within a range of ranks, in a [Resettable Leaderboard](using-resettable-statistics-and-leaderboards.md). In particular, this is a way to trigger emails, send push notifications, grant [Inventory Items](../../data/playerdata/player-inventory) and [Virtual Currency](../../commerce/economy/currencies.md), or execute a [CloudScript](../../automation/cloudscript/writing-custom-cloudscript.md) function at the reset of a Leaderboard. In this example, we show how to create the prize table “End Tournament Prizes” which grants virtual currency to 5 players based on their rank in a leaderboard after a reset is performed.
 
 ## Requirements
 
@@ -21,7 +21,7 @@ This tutorial walks you through how to create a Prize Table, that triggers a set
 > This is an advanced tutorial. Please make sure that all requirements have been met or you will not be able to complete this tutorial.
 
 - Basic knowledge of how to create a player will be necessary as there will need to be players in a leaderboard before it can perform any actions on those players. Refer to the [Getting Started with PlayFab - Chapter 1](../../config/dev-test-live/get-started-with-players-and-tournaments.md) tutorial which will run you through the process of creating a player for the title.
-- It is also worthwhile to read the [Game Manager Tour](https://api.playfab.com/docs/tutorials/landing-analytics/game-manager-tour) if you are unfamiliar with the Game Manager as it is the place where prize tables are created.
+- It is also worthwhile to read the [Game Manager Tour](../../config/gamemanager/game-manager-tour) if you are unfamiliar with the Game Manager as it is the place where prize tables are created.
 - In order to use Prize Tables, you must have general knowledge of how resettable leaderboards work. Please read about leaderboards in our tutorial [Using Resettable Statistics and Leaderboards](using-resettable-statistics-and-leaderboards.md).
 - Additionally, a virtual currencies must be set up. Please read our tutorial about [Currencies](../../commerce/economy/currencies.md) and set up two currencies with the following parameters:
   1. Currency code: **GO**, Display name: **Gold**,  Initial deposit: **200**

@@ -45,11 +45,11 @@ After configuring your title and client, you can test your configuration using t
 
 Consider the following scenario: players in your title may access a Leaderboard based on "Rank" statistics. Each player may pay 1 CH currency and challenge another player who is up to 5 positions away from the current player.
 
-First, consider a virtual currency as shown in the following screenshot (see the [Currencies](https://api.playfab.com/docs/tutorials/landing-commerce/currencies) tutorial for information on how to define a virtual currency):
+First, consider a virtual currency as shown in the following screenshot (see the [Currencies](../../commerce/economy/currencies) tutorial for information on how to define a virtual currency):
 
 ![PlayFab Economy - Currencies - New Currency](../media/tutorials/playfab-new-currency.png)
 
-Now, consider the following Statistics defined for each player (see the [Accessing archived tournament results](https://api.playfab.com/docs/tutorials/landing-tournaments/result-archive) tutorial for information on how to generate a test leaderboard):
+Now, consider the following Statistics defined for each player (see the [Accessing Archived Tournament Results](../../social/tournaments-leaderboards/accessing-archived-tournament-results) tutorial for information on how to generate a test leaderboard):
 
 ![PlayFab player Statistics - Rank](../media/tutorials/playfab-statistics-player-rank.png)  
 
@@ -149,4 +149,4 @@ The following resources provide additional information about the topics in this 
 - [Firebase Unity SDK](https://firebase.google.com/docs/unity/setup): All-in-one FCM solution for Unity. This SDK, among all other features, allows you to receive and process push notifications sent via FCM.
 - [Push It Real Good: How to Get Players to Say Yes to Push Notifications](https://blog.playfab.com/blog/push-it-real-good-how-get-players-say-yes-push-notifications/): This blog post details additional strategies and techniques for using push notifications.
 - [Push Notifications](https://blog.playfab.com/blog/push-sep-17): This blog post describes the most recent upgrade in push functionality and switching to FCM as the primary plugin for Android.
-- [Execute PlayFab API via Postman](https://api.playfab.com/docs/tutorials/execute-playfab-api-via-postman): This tutorial shows you how to test our APIs using Postman.
+- [Executing the PlayFab API via Postman](../../config/dev-test-live/executing-the-playfab-api-via-postman): This tutorial shows you how to test our APIs using Postman.

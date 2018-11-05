@@ -5,7 +5,7 @@
 - [Push Notification basics](push-notification-basics.md)
 - [Unity3D Quickstart](../../../sdks/unity3d/quickstart.md)
 - [Optional] [Unity Editor Extensions](https://api.playfab.com/blog/new-unity-editor-extensions-beta)
-- [Optional] [Postman](https://api.playfab.com/docs/tutorials/execute-playfab-api-via-postman)
+- [Optional] [Executing the PlayFab API via Postman](../../config/dev-test-live/executing-the-playfab-api-via-postman)
 
 ## Configuring the Android notification channel
 

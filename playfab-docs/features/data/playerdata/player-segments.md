@@ -22,4 +22,4 @@ The Segements page displays the segments that you currently have defined and off
 
 For more information about defining segments, and the filtering criteria, see our tutorial on [Player Segment configuration](player-segment-configuration.md).
 
-For more information about executing custom code for all players in a segment (once, or on a regular schedule), see our [Segment Bulk Action Guide](https://api.playfab.com/docs/tutorials/landing-automation/bulk-actions-for-an-entire-player-segment).
+For more information about executing custom code for all players in a segment (once, or on a regular schedule), see our tutorial on [Bulk Actions for an Entire Player Segment](../../automation/actions-rules/bulk-actions-for-an-entire-player-segment).

@@ -1,4 +1,4 @@
-# Executing the PlayFab API via Postman
+# Global API Method Error Codes
 
 This tutorial describes the list of global error codes that apply to every PlayFab API method. The following information can be used to decipher API errors. Each API error contains the following fields:
 

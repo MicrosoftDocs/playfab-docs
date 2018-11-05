@@ -6,7 +6,7 @@ This tutorial guides you through an example of PlayFab authentication using Face
 
 - [Facebook account](https://www.facebook.com/) for testing
 - Registered [PlayFab](https://playfab.com/) Title
-- Familiarity with [Login Basics & Best Practices guide](https://api.playfab.com/docs/tutorials/landing-players/best-login)
+- Familiarity with [Login basics and Best Practices](../../authentication/platform-specific-authentication/login-basics-best-practices)
 - Minimal server with a valid domain name to serve static HTML file. Consult with [Running Test HTTP Server](https://api.playfab.com/docs/tutorials/http-server) guide to set up one.
 
 ## Server and Domain

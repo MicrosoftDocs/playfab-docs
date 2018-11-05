@@ -5,8 +5,8 @@ This tutorial illustrates how to complement PlayFab's built-in features with som
 **Requirements:**
 
 - [Writing Custom Cloud Script](../../automation/cloudscript/writing-custom-cloudscript.md), and [Cloud Script File Management](../../automation/cloudscript/using-cloudscript.md)
-- [Title Data](https://api.playfab.com/docs/tutorials/landing-content/using-title-data)
-- [A/B Testing](https://api.playfab.com/docs/tutorials/landing-analytics/create-ab)
+- [Title Data](../../config/titledata/using-title-data)
+- [A/B Testing](../../analytics/ab-testing/creating-ab-tests)
 
 **Optional Requirements:**
 
@@ -14,21 +14,21 @@ This tutorial illustrates how to complement PlayFab's built-in features with som
 
 ## General Idea and Implementation
 
-We already have a built-in feature of [defining AB segments for player](https://api.playfab.com/docs/tutorials/landing-analytics/create-ab). Let's reuse those segments to return Title Data based on which bucket our player belongs to.
+We already have a built-in feature of [defining A/B segments for player](../../analytics/ab-testing/creating-ab-tests). Let's reuse those segments to return Title Data based on which bucket our player belongs to.
 
-First, we will need an AB test. Please, follow the [Creating AB Test Guide](https://api.playfab.com/docs/tutorials/landing-analytics/create-ab) to create an AB Test. Once the test is created, you will see the IDs of each of the individual buckets:
+First, we will need an A/B test. Please, follow the [Creating A/B Tests tutorial](../../analytics/ab-testing/creating-ab-tests) to create an A/B Test. Once the test is created, you will see the IDs of each of the individual buckets:
 
-![Game Manager - AB Test - Buckets](media/tutorials/game-manager-ab-test-buckets.png)  
+![Game Manager - A/B Test - Buckets](media/tutorials/game-manager-ab-test-buckets.png)  
 
-Functionally, a Bucket ID is the same as a normal Segment ID: an API call to [GetPlayerSegments](https://api.playfab.com/documentation/server/method/GetPlayerSegments) will return both Segment IDs and AB Test Bucket IDs. We can use this to our advantage and introduce a convention for AB-tested Title Data keys, as shown in the following picture:
+Functionally, a Bucket ID is the same as a normal Segment ID: an API call to [GetPlayerSegments](https://api.playfab.com/documentation/server/method/GetPlayerSegments) will return both Segment IDs and A/B Test Bucket IDs. We can use this to our advantage and introduce a convention for A/B-tested Title Data keys, as shown in the following picture:
 
-![Game Manager - AB Test - Title Data Keys](media/tutorials/game-manager-ab-test-title-data-keys.png)  
+![Game Manager - A/B Test - Title Data Keys](media/tutorials/game-manager-ab-test-title-data-keys.png)  
 
-We first introduce a regular entry with the key "MyMessage". We then introduce an AB-version for each bucket. The key is composed using the original key and a suffix in the form '_BUCKETID'. At any point in time, if we are given an original key and segment ID, we can easily compose a key for an entry specific for this segment/bucket.
+We first introduce a regular entry with the key "MyMessage". We then introduce an A/B-version for each bucket. The key is composed using the original key and a suffix in the form '_BUCKETID'. At any point in time, if we are given an original key and segment ID, we can easily compose a key for an entry specific for this segment/bucket.
 
 Our next step is defining one more entry - a list of all the bucket IDs participating in the testing. In this case we have three of those:
 
-![Game Manager - AB TEst - Bucket IDs](media/tutorials/game-manager-ab-test-bucket-ids.png)  
+![Game Manager - A/B Test - Bucket IDs](media/tutorials/game-manager-ab-test-bucket-ids.png)  
 
 > [!NOTE]
 > Make sure to use double quotes ( " ). Otherwise, the JavaScript runtime will not be able to parse it properly.
@@ -184,6 +184,6 @@ public class PlayerABTestingTitle : MonoBehaviour {
 
 Start the scene and open the console. If everything is configured properly, you will see how the application is signing into PlayFab using different player accounts, and we get different Title Data fetched each time:
 
-![Output of AB Test Title Data example](media/tutorials/output-of-ab-test-title-data-example.png)  
+![Output of A/B Test Title Data example](media/tutorials/output-of-ab-test-title-data-example.png)  
 
-At this point, you can use this implementation to AB-test any data in your title.
+At this point, you can use this implementation to A/B-test any data in your title.

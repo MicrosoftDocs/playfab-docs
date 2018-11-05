@@ -31,7 +31,7 @@ This topic covers client-API calls, which are safe to call from any process or c
 
 You can always get and set player data through Game Manager by performing the following steps.
 
-- Open Game Manager. If you are unfamiliar with Game Manager, see the [Game Manager Guide](https://api.playfab.com/docs/tutorials/landing-analytics/game-manager-tour).
+- Open Game Manager. If you are unfamiliar with Game Manager, see the [Game Manager Tour](../../config/gamemanager/game-manager-tour).
 - Click the **Players** tab.
 - Click on the name of the player, this will put you into the players Account tab.
 - Click the **Player Data** tab, to see their data.

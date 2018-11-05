@@ -13,9 +13,9 @@ ms.localizationpriority: medium
 
 # Player-to-Player Trading
 
-The PlayFab client API allows players to trade items with one another. These API methods are enabled by default, so for the security of your title you may need to use our [Policy API](https://api.playfab.com/docs/tutorials/title-management/api-policy) to disable them.
+The PlayFab client API allows players to trade items with one another. These API methods are enabled by default, so for the security of your title you may need to use our [API Access Policy](../../config/gamemanager/api-access-policy) to disable them.
 
-**BETA**: Our inventory-trading functionality is in a prototype phase. The methods are functional, but lack some useful elements that would make it a complete feature. You cannot request or trade [Virtual Currency](../../commerce/economy/currencies.md), and PlayFab does not provide a list of trades that are available to you from other players. Finally, the trade methods are only available on our [Client API](https://api.playfab.com/docs/tutorials/title-management/api-policy), and not available from the [Server API](https://api.playfab.com/documentation/server).
+**BETA**: Our inventory-trading functionality is in a prototype phase. The methods are functional, but lack some useful elements that would make it a complete feature. You cannot request or trade [Virtual Currency](../../commerce/economy/currencies.md), and PlayFab does not provide a list of trades that are available to you from other players. Finally, the trade methods are only available on our [Client API](https://api.playfab.com/documentation/client), and not available from the [Server API](https://api.playfab.com/documentation/server).
 
 > [!NOTE]
 > All trades are public information. Any player may look at the open trades of another player, as well as another player's trade history (If they know the playFabId of that player)
@@ -41,7 +41,7 @@ void GiveItemTo(string secondPlayerId, string myItemInstanceId) {
 }
 ```
 
-In this example, the LogSuccess callback must also evaluate [result.Trade](https://api.playfab.com/documentation/Client/datatype/PlayFab.Client.Models/PlayFab.Client.Models.OpenTradeResponse).TradeId, and transfer both firstPlayFabId and the tradeId to the second player. If not saved, it will not be possible for the second player to evaluate or accept the trade. Thread-safe options include [custom game servers](../../multiplayer/compute/custom-game-servers.md) and [webhook calls via CloudScript](https://api.playfab.com/docs/tutorials/landing-automation/making-webhook-calls-from-cloud-script) to an external database/system. Thread-Unsafe options can be built with CloudScript which directly modifies a [Player Data](../../data/playerdata/using-player-data.md) key. The latter option has concurrency issues where simultaneous trade-list-updates may not process correctly, but this issue can be worked around (This is an advanced topic for a future guide).
+In this example, the LogSuccess callback must also evaluate [result.Trade](https://api.playfab.com/documentation/Client/datatype/PlayFab.Client.Models/PlayFab.Client.Models.OpenTradeResponse).TradeId, and transfer both firstPlayFabId and the tradeId to the second player. If not saved, it will not be possible for the second player to evaluate or accept the trade. Thread-safe options include [custom game servers](../../multiplayer/compute/custom-game-servers.md) and [making Webhook calls from CloudScript](../../automation/cloudscript/making-webhook-calls-from-cloudscript) to an external database/system. Thread-Unsafe options can be built with CloudScript which directly modifies a [Player Data](../../data/playerdata/using-player-data.md) key. The latter option has concurrency issues where simultaneous trade-list-updates may not process correctly, but this issue can be worked around (This is an advanced topic for a future guide).
 
 Once the first player has created the trade, and transferred their PlayFabId and the tradeId to the second player, the second player can examine the trade requirements (verifying it is a gift):
 

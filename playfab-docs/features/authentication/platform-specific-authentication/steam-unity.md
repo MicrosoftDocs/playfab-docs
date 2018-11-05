@@ -8,7 +8,7 @@ This tutorial guides you through an example of how to log into PlayFab using Ste
 - Steam Application with:
   - AppID set up. The AppID is usually acquired through the [Steam Direct (Formerly Greenlight)](https://partner.steamgames.com/steamdirect) process.
   - Steam Publisher Web API key. Follow [Creating a Publisher Web API Key](https://partner.steamgames.com/doc/webapi_overview/auth#create_publisher_key) in the Steamworks Documentation to generate a Publisher Key.
-- Familiarity with the [Login Basics & Best Practices](https://api.playfab.com/docs/tutorials/landing-players/best-login) guide
+- Familiarity with [Login basics and Best Practices](../../authentication/platform-specific-authentication/login-basics-best-practices)
 
 ## Setting up a PlayFab title
 

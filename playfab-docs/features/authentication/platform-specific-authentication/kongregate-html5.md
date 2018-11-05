@@ -7,7 +7,7 @@ This tutorial shows you the minimal setup required to authenticate your players 
 - Registered [Kongregate](http://www.kongregate.com/) account
   - Familiarity with the [Kongregate Developers Guide](http://developers.kongregate.com/docs/api-overview/intro)
 - Registered PlayFab Title
-- Familiarity with [Login Basics & Best Practices guide](https://api.playfab.com/docs/tutorials/landing-players/best-login)
+- Familiarity with [Login basics and Best Practices](../../authentication/platform-specific-authentication/login-basics-best-practices)
 
 ## Setting up a Kongregate App
 

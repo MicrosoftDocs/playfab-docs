@@ -9,7 +9,7 @@ This tutorial guides you through an example of PlayFab authentication using Face
 - [Facebook SDK](https://developers.facebook.com/docs/unity/) imported into the project
 - Registered [PlayFab](https://playfab.com/) Title
 - [PlayFab SDK](https://api.playfab.com/downloads/unity-v2ap) imported into the project with a configured title reference
-- Familiarity with [Login Basics & Best Practices guide](https://api.playfab.com/docs/tutorials/landing-players/best-login)
+- Familiarity with [Login basics and Best Practices](../../authentication/platform-specific-authentication/login-basics-best-practices)
 
 ## Implementation
 

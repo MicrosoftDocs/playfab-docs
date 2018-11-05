@@ -181,7 +181,7 @@ The servers section of the Game Manager has two major roles:
 **Additional Information:**
 
 - [Using CloudScript Tutorial](../../automation/cloudscript/using-cloudscript.md)
-- [Building Custom Game Servers Tutorial](https://api.playfab.com/docs/tutorials/landing-tournaments/custom-game-servers)
+- [Building Custom Game Servers Tutorial](../../multiplayer/compute/custom-game-servers)
 
 [Back to Game Manager Sections](#game-manager-sections)
 

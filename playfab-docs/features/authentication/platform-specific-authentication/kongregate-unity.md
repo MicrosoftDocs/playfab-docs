@@ -9,7 +9,7 @@ This tutorial shows you the minimal setup required to authenticate your players 
 - Registered PlayFab Title
 - Unity project with PlayFab configured for your title
 - Unity WebGL support installed
-- Familiarity with [Login Basics & Best Practices guide](https://api.playfab.com/docs/tutorials/landing-players/best-login)
+- Familiarity with [Login basics and Best Practices](../../authentication/platform-specific-authentication/login-basics-best-practices)
 
 ## Setting up a Kongregate App
 
