@@ -4,7 +4,7 @@ Stores are built upon [Catalogs](../items/catalogs.md) and [Currencies](../econo
 
 ## Requirements
 
-- [Game Manger](../../config/gamemanager/game-manager-tour)
+- [Game Manger](../../config/gamemanager/game-manager-tour.md)
 - One or more [Virtual Currencies](../economy/currencies.md) defined
   - The latter example on this guide uses: SS (Silver Shekels) and GS (Gold Shekels).
 
@@ -133,4 +133,4 @@ Stores are a great mechanism for encouraging your players to purchase items. Sto
 
 You can set up a single-item purchase with VC via [PurchaseItem](https://api.playfab.com/documentation/client/method/PurchaseItem). You can set up a multiple-item purchase with VC via the sequence: [StartPurchase](https://api.playfab.com/documentation/client/method/StartPurchase), [PayForPurchase](https://api.playfab.com/documentation/client/method/PayForPurchase), and [ConfirmPurchase](https://api.playfab.com/documentation/client/method/ConfirmPurchase). To perform real money purchases, consult our advanced tutorial [Non-Receipt Payment Processing](../economy/non-receipt-payment-processing.md).
 
-For advanced Store usage, see our [Custom Stores for Player Segments](../../commerce/stores/custom-stores-for-player-segments) tutorial.
+For advanced Store usage, see our [Custom Stores for Player Segments](../../commerce/stores/custom-stores-for-player-segments.md) tutorial.

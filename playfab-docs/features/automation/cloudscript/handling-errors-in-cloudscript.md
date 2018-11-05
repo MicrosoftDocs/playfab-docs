@@ -21,7 +21,7 @@ handlers.GenerateError = () => {
 }
 ```
 
-Notice how we extract error codes within the catch block. Consult our [Global API Method Error Codes](../../config/dev-test-live/global-api-method-error-codes) tutorial for a complete list of errors and their identifying codes. The error code on it's own is sufficient to identify the error.
+Notice how we extract error codes within the catch block. Consult our [Global API Method Error Codes](../../config/dev-test-live/global-api-method-error-codes.md) tutorial for a complete list of errors and their identifying codes. The error code on it's own is sufficient to identify the error.
 
 ## Logging
 
@@ -66,7 +66,7 @@ handlers.GenerateError = () => {
 
 ## Recovery
 
-It's not always possible to recover from errors. Issues like "InvalidArguments" leave you with no option but to report the problem back to the player. There are a subset of errors where a retry strategy can be applied. "Retry-able" error types are described in the [Global API Method Error Codes](../../config/dev-test-live/global-api-method-error-codes) tutorial. Please, make sure to meet the following requirements when applying a retry strategy:
+It's not always possible to recover from errors. Issues like "InvalidArguments" leave you with no option but to report the problem back to the player. There are a subset of errors where a retry strategy can be applied. "Retry-able" error types are described in the [Global API Method Error Codes](../../config/dev-test-live/global-api-method-error-codes.md) tutorial. Please, make sure to meet the following requirements when applying a retry strategy:
 
 - With each retry, the delay between retries should increase exponentially. This increases your chances for a successful call, and prevents your game from spamming the PlayFab server (which will result in more rejected calls).
 

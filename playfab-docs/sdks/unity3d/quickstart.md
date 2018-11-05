@@ -151,7 +151,7 @@ Inside of OnLoginSuccess:
 Inside of OnLoginFailure:   
 
 - API calls can fail for many reasons, and you should always attempt to handle failure
-  - You can find error codes shared by all API methods in our [Global API Method Error Codes](../../features/config/dev-test-live/global-api-method-error-codes) tutorial, or specific codes at the bottom of each API method documentation
+  - You can find error codes shared by all API methods in our [Global API Method Error Codes](../../features/config/dev-test-live/global-api-method-error-codes.md) tutorial, or specific codes at the bottom of each API method documentation
 
 - Why API calls fail (In order of likelihood)
   - PlayFabSettings.TitleId is not set. If you forget to set titleId to your title, then nothing will work.

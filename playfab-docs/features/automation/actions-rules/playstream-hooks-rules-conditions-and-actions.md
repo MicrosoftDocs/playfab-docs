@@ -25,7 +25,7 @@ A quick glossary of relevant terms:
 
 A Rule consists of exactly one Trigger, an optional list of conditions, and typically at least one action (not required, but quite useless without it).
 
-Triggers, Conditions, and Actions are also part of other systems: [Bulk Actions](../../automation/actions-rules/bulk-actions-for-an-entire-player-segment) and [Tournament Leaderboards](../../social/tournaments-leaderboards/using-resettable-statistics-and-leaderboards.md).
+Triggers, Conditions, and Actions are also part of other systems: [Bulk Actions](../../automation/actions-rules/bulk-actions-for-an-entire-player-segment.md) and [Tournament Leaderboards](../../social/tournaments-leaderboards/using-resettable-statistics-and-leaderboards.md).
 
 ## Example Case: Count custom events from the client
 

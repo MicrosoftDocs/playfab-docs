@@ -4,7 +4,7 @@ This tutorial will tell you how to create Drop Tables using PlayFab Game Manager
 
 ## Requirements
 
-- This tutorial assumes familiarity with [Catalogs](catalogs.md), [Inventory](../../data/playerdata/player-inventory.md), and [Game Manager](../../config/gamemanager/game-manager-tour)
+- This tutorial assumes familiarity with [Catalogs](catalogs.md), [Inventory](../../data/playerdata/player-inventory.md), and [Game Manager](../../config/gamemanager/game-manager-tour.md)
 - You must have a primary catalog, which contains standard, non-bundle/non-container items
 - You must have defined at least one virtual currency which you will use as "free" in-game currency
 
@@ -127,4 +127,4 @@ This bundle uses several features:
 
 ## Conclusion 
 
-A drop table generates a single item randomly from a list of potential items and weights. Bundles and Containers can be one of the simplest ways to deliver one or more items to a player using Drop Tables. You can manually use a Drop Table from a [Custom Game Server](../../multiplayer/compute/custom-game-servers) or [Cloud Script](../../automation/cloudscript/writing-custom-cloudscript.md), using the server API methods: [GetRandomResultTables](https://api.playfab.com/documentation/server/method/GetRandomResultTables) or [EvaluateRandomResultTable](https://api.playfab.com/documentation/server/method/EvaluateRandomResultTable).
+A drop table generates a single item randomly from a list of potential items and weights. Bundles and Containers can be one of the simplest ways to deliver one or more items to a player using Drop Tables. You can manually use a Drop Table from a [Custom Game Server](../../multiplayer/compute/custom-game-servers.md) or [Cloud Script](../../automation/cloudscript/writing-custom-cloudscript.md), using the server API methods: [GetRandomResultTables](https://api.playfab.com/documentation/server/method/GetRandomResultTables) or [EvaluateRandomResultTable](https://api.playfab.com/documentation/server/method/EvaluateRandomResultTable).

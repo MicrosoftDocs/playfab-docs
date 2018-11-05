@@ -6,7 +6,7 @@ This tutorial guides you through an example of PlayFab authentication using Twit
 
 - [Twitch Account](https://www.twitch.tv/) for testing
 - Registered [PlayFab](https://playfab.com/) Title
-- Familiarity with [Login basics and Best Practices](../../authentication/platform-specific-authentication/login-basics-best-practices)
+- Familiarity with [Login basics and Best Practices](../../authentication/platform-specific-authentication/login-basics-best-practices.md)
 - Minimal server with a valid domain name to serve static HTML files. Consult the [Running Test HTTP Server](https://api.playfab.com/docs/tutorials/http-server) guide to set one up.
 
 ## Server and Domain

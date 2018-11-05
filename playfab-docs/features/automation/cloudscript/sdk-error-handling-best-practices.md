@@ -21,7 +21,7 @@ Generally, if an error object is defined (not null), it indicates that an error 
 
 ## Inspecting the error
 
-The most common way to inspect an error is to recognize the error through the code. As described in the [Global API Method Error Codes](../../config/dev-test-live/global-api-method-error-codes) tutorial, each generated error contains human-readable and numeric error codes. The code on it's own is sufficient to recognize and process the error accordingly.
+The most common way to inspect an error is to recognize the error through the code. As described in the [Global API Method Error Codes](../../config/dev-test-live/global-api-method-error-codes.md) tutorial, each generated error contains human-readable and numeric error codes. The code on it's own is sufficient to recognize and process the error accordingly.
 
 Let's take the [LoginWithEmailAddress](https://api.playfab.com/documentation/client/method/LoginWithEmailAddress) API method as an example. As stated in the [documentation](https://api.playfab.com/documentation/client/method/LoginWithEmailAddress) for this method, the following internal errors may be thrown upon execution:
 
@@ -65,7 +65,7 @@ PlayFabClientAPI.LoginWithEmailAddress(new LoginWithEmailAddressRequest() {
 
 ## Handling the error
 
-Once the error is identified, the handle/recover strategy depends on the error type and nature. Errors like 'invalid arguments' will never succeed if retried. The request must be fixed for that API call to succeed. There are a subset of errors where a retry strategy can be applied. "Retry-able" error types are described in the [Global API Method Error Codes](../../config/dev-test-live/global-api-method-error-codes) tutorial. Please make sure to meet the following requirements when applying a retry strategy:
+Once the error is identified, the handle/recover strategy depends on the error type and nature. Errors like 'invalid arguments' will never succeed if retried. The request must be fixed for that API call to succeed. There are a subset of errors where a retry strategy can be applied. "Retry-able" error types are described in the [Global API Method Error Codes](../../config/dev-test-live/global-api-method-error-codes.md) tutorial. Please make sure to meet the following requirements when applying a retry strategy:
 
 - With each retry, the delay between retries should increase exponentially. This increases your chances for a successful call, and prevents your game from spamming the PlayFab server (which will result in more rejected calls).
-- You should apply this retry strategy selectively, only using it for those codes that are worth retrying. See our [Global API Method Error Codes](../../config/dev-test-live/global-api-method-error-codes) tutorial for a list of codes that safe to retry.
+- You should apply this retry strategy selectively, only using it for those codes that are worth retrying. See our [Global API Method Error Codes](../../config/dev-test-live/global-api-method-error-codes.md) tutorial for a list of codes that safe to retry.

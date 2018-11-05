@@ -204,7 +204,7 @@ public static async void ExportMasterPlayerExample(Action<PlayFabError> callback
 
 It is easy to do harm with these APIs. Exporting data for or deleting the "wrong" player could be very damaging and is permanent! It is your responsibility as the game developer to verify the credentials are owned by the player requesting an export or deletion of their player data. PlayFab does not provide any type of verification when using these APIs.
 
-However! PlayFab does offer an [email verification feature](../../engagement/emails/using-a-rule-to-verify-a-contact-email-address). Our solution is not the only option for verification; you can create your own process too. Regardless of which technology you use, we suggest that you do some sort of verification before performing any of these actions.
+However! PlayFab does offer an [email verification feature](../../engagement/emails/using-a-rule-to-verify-a-contact-email-address.md). Our solution is not the only option for verification; you can create your own process too. Regardless of which technology you use, we suggest that you do some sort of verification before performing any of these actions.
 
 ## Are we done yet?
 

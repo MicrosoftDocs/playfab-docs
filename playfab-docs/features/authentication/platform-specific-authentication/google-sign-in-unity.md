@@ -16,7 +16,7 @@ In this tutorial you will learn how to successfully add Google Play Games Sign-I
 - A PlayFab developer account which has access to a game title in PlayFab
 - The [PlayFab Unity Editor Extensions & Unity SDK](https://api.playfab.com/docs/getting-started/unity-getting-started)
 - The [Google Play Games SDK](https://github.com/playgameservices/play-games-plugin-for-unity)
-- Familiarity with [Login basics and Best Practices](../../authentication/platform-specific-authentication/login-basics-best-practices)
+- Familiarity with [Login basics and Best Practices](../../authentication/platform-specific-authentication/login-basics-best-practices.md)
 
 ## Getting Started
 
