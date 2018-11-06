@@ -1,3 +1,15 @@
+---
+title: Chapter 2 - Set up your game's in-game economy
+author: v-thopra
+description: Chapter 2 of a four-part Getting Started tutorial for PlayFab that covers setting up an in-game economy.
+ms.author: v-thopra
+ms.date: 06/11/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, config, players, economy, currencies
+ms.localizationpriority: medium
+---
+
 # Chapter 2 - Set up your game's in-game economy
 
 This is chapter 2 of our tutorial [Getting Started with PlayFab](getting-started-with-playfab.md) that contains the following chapters:

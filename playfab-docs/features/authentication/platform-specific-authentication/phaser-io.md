@@ -1,3 +1,15 @@
+---
+title: Setting up PlayFab authentication in Phaser.io
+author: v-thopra
+description: Guides you through an example of PlayFab authentication in Phaser.io.
+ms.author: v-thopra
+ms.date: 06/11/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, authentication, phaser.io, html5
+ms.localizationpriority: medium
+---
+
 # Setting up PlayFab authentication in Phaser.io
 
 [Phaser.io](http://phaser.io/) is a desktop and mobile HTML5 game framework that PlayFab now supports in our Javascript SDK. Phaser.io supports plugins, and thus we here at PlayFab thought that it would be useful to the Phaser.io community to have a powerful back end system that works as a plugin to the Phaser.io engine.

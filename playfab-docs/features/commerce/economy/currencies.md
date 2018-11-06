@@ -1,3 +1,15 @@
+---
+title: Currencies
+author: v-thopra
+description: Describes the Currencies tab in the Economy section in Game Manager, and how to configure Virtual Currency.
+ms.author: v-thopra
+ms.date: 26/10/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, commerce, economy, currency, virtual currency
+ms.localizationpriority: medium
+---
+
 # Currencies
 
 This tutorial describes the **Currencies** tab in the **Economy** section in Game Manager. Virtual Currencies are the foundation of in-game economies. Players and Characters can be granted these currencies, which can then be used to buy or trade items. Items can have a cost in either a Virtual Currency or real money. It's exactly like real life, except its virtual! Economic regulation in-game is up to you.

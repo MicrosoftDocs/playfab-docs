@@ -1,3 +1,15 @@
+---
+title: Integrating the Universal Windows Platform with PlayFab
+author: v-thopra
+description: Takes you through three key points of integration between PlayFab and the Universal Windows Platform (UWP).
+ms.author: v-thopra
+ms.date: 06/11/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, authentication, integration, uwp
+ms.localizationpriority: medium
+---
+
 # Integrating the Universal Windows Platform with PlayFab
 
 This tutorial takes you through three key points of integration between PlayFab and the Universal Windows Platform (UWP).

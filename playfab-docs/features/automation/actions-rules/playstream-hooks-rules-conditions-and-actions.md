@@ -1,3 +1,15 @@
+---
+title: PlayStream Hooks - Rules, Conditions, and Actions
+author: v-thopra
+description: Describes how to configure the trigger, conditions and actions that make up a Rule to hook PlayStream events.
+ms.author: v-thopra
+ms.date: 06/11/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, automation, cloudscript, playstream, events, rules, conditions, actions, hooks
+ms.localizationpriority: medium
+---
+
 # PlayStream Hooks: Rules, Conditions, and Actions
 
 A PlayStream Rule allows you to react to a subset of one type of PlayStream event in real time.

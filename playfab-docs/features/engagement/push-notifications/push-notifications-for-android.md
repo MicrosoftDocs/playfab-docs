@@ -1,3 +1,15 @@
+---
+title: Push Notification for Android
+author: v-thopra
+description: Describes how to setup and configure PlayFab Push Notifications for Android.
+ms.author: v-thopra
+ms.date: 26/10/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, engagement, push notification, google, android, firebase, unity
+ms.localizationpriority: medium
+---
+
 # Push Notifications for Android
 
 ## Prerequisites

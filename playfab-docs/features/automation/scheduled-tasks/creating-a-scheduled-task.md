@@ -1,3 +1,15 @@
+---
+title: Creating a Scheduled Task
+author: v-thopra
+description: Describes how to create a task that runs on a schedule.
+ms.author: v-thopra
+ms.date: 06/11/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, automation, cloudscript, playstream, events, actions
+ms.localizationpriority: medium
+---
+
 # Creating a Scheduled Task
 
 This tutorial walks you through how to create a task that runs on a schedule. There are many game operation routines that can be automated using a scheduled task, such as modifying prices in a store according to the time of the day, updating Title Data to reflect changes for a current event, injecting virtual currencies into the game economy daily, etc. 

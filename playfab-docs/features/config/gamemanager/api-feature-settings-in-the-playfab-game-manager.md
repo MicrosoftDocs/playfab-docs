@@ -1,3 +1,15 @@
+---
+title: API Feature Settings in the PlayFab Game Manager
+author: v-thopra
+description: Describes the options in the PlayFab Game Manager for managing the behavior of PlayFab APIs.
+ms.author: v-thopra
+ms.date: 06/11/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, config, game manager, api access, privacy
+ms.localizationpriority: medium
+---
+
 # API Feature Settings in the PlayFab Game Manager
 
 The API Features in the PlayFab Game Manager are a handful of options for managing the behavior of PlayFab APIs for your title. These options give you the tools for managing access, privacy, and other features. The screen for configuring these options, is in the Game Manager, under Settings -> API Features

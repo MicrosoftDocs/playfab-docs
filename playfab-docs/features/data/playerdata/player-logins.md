@@ -1,3 +1,15 @@
+---
+title: Player Logins
+author: v-thopra
+description: Describes the features of the Player Logins page in the PlayFab Game Manager.
+ms.author: v-thopra
+ms.date: 06/11/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, game manager, player data, login
+ms.localizationpriority: medium
+---
+
 # Player Logins
 
 The Player Logins page offers an overview of all the login attempts for a specific player.

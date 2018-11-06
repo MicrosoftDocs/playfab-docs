@@ -1,3 +1,15 @@
+---
+title: Getting player profiles
+author: v-thopra
+description: Describes how to use the GetPlayerProfile and PlayerProfileViewConstraints APIs to retrieve player profile data.
+ms.author: v-thopra
+ms.date: 06/11/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, playfab api, player data, player profiles
+ms.localizationpriority: medium
+---
+
 # Getting player profiles
 
 This tutorial walks you through how to use the [GetPlayerProfile](https://api.playfab.com/documentation/server/method/GetPlayerProfile) call to get a player’s profile with [PlayerProfileViewConstraints](https://api.playfab.com/documentation/Client/datatype/PlayFab.Client.Models/PlayFab.Client.Models.PlayerProfileViewConstraints) properties that are enabled from your title’s setting. Specifically, we will be getting a player’s profile, created date, and last login time.

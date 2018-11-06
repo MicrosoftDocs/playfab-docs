@@ -1,3 +1,15 @@
+---
+title: Using resettable statistics and leaderboards
+author: v-thopra
+description: Describes how to configure and manage statistics with versioning, which enables “resetting” of statistics and leaderboards.
+ms.author: v-thopra
+ms.date: 29/10/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, social, tournaments, statistics, leaderboards
+ms.localizationpriority: medium
+---
+
 # Using resettable statistics and leaderboards
 
 This tutorial provides a complete walkthrough of how to configure and manage statistics with versioning, which enables “resetting” of statistics, and by extension, leaderboards. In it, we’ll focus on how to use the Admin API methods for this, with additional info on using the Client and Server API methods to query the data, both for the current version as well as old ones. The goal is to provide you with a technical review of how resettable statistics work in PlayFab, and all the ways they can be used in your games.

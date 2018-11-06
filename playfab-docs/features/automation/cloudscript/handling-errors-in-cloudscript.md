@@ -1,3 +1,15 @@
+---
+title: Handling Errors in CloudScript
+author: v-thopra
+description: Describes how to recognize and handle errors within your CloudScript handlers.
+ms.author: v-thopra
+ms.date: 06/11/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, automation, cloudscript, error handling
+ms.localizationpriority: medium
+---
+
 # Handling Errors in CloudScript
 
 This tutorial describes how to recognize and handle errors within your CloudScript handlers.

@@ -1,3 +1,15 @@
+---
+title: Stores and Sales
+author: v-thopra
+description: Describes how to configure a Store with a catalog of items available in real money or virtual currency.
+ms.author: v-thopra
+ms.date: 26/10/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, commerce, stores, catalogs, currencies
+ms.localizationpriority: medium
+---
+
 # Stores and Sales
 
 Stores are built upon [Catalogs](../items/catalogs.md) and [Currencies](../economy/currencies.md). Your primary catalog should define all of the items in your game. Alternately, a store allows you to single out a specific set of items, and make them available for a set time period. The definition of a store is a small subset of items, available for purchase at a specific price.

@@ -1,3 +1,15 @@
+---
+title: Chapter 3 - Explore automation
+author: v-thopra
+description: Chapter 3 of a four-part Getting Started tutorial for PlayFab that covers automation.
+ms.author: v-thopra
+ms.date: 06/11/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, config, automation, cloudscript
+ms.localizationpriority: medium
+---
+
 # Chapter 3 - Explore automation
 
 Welcome to Chapter 3 of our tutorial [Getting Started with PlayFab](getting-started-with-playfab.md), the tutorial contains the following chapters: 

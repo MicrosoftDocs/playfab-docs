@@ -1,3 +1,15 @@
+---
+title: Coupons and Promotions
+author: v-thopra
+description: Describes how to generate and redeem coupons in PlayFab.
+ms.author: v-thopra
+ms.date: 26/10/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, commerce, economy, media, coupons, promotions, cloudscript
+ms.localizationpriority: medium
+---
+
 # Coupons and Promotions
 
 Coupons are string tokens you generate, and your customers use to redeem inventory items in their game. Combined with bundles or CloudScript, these coupons could be used to trigger almost any functionality in your game.

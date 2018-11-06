@@ -1,3 +1,15 @@
+---
+title: Using CloudScript actions with PlayStream
+author: v-thopra
+description: Shows what is available in the context of a CloudScript handler launched from a PlayStream action, and how to make use of it.
+ms.author: v-thopra
+ms.date: 06/11/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, automation, cloudscript, playstream, events, actions
+ms.localizationpriority: medium
+---
+
 # Using CloudScript actions with PlayStream
 
 When a CloudScript handler is launched from a PlayStream action, that handler has access to additional data on why it is being run - the context - which you can use to drive your server-side logic. This tutorial walks you through what all is available in the context and how to make use of it in your CloudScript handlers.

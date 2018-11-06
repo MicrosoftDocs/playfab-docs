@@ -1,3 +1,15 @@
+---
+title: Login basics and Best Practices
+author: v-thopra
+description: Describes the basics and Best Practices for login and authentication of players in PlayFab.
+ms.author: v-thopra
+ms.date: 06/11/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, authentication
+ms.localizationpriority: medium
+---
+
 # Login basics and Best Practices
 
 ## Platform-specific authentication tutorials

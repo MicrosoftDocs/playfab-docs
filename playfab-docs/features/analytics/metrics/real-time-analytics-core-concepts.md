@@ -1,3 +1,15 @@
+---
+title: Real-time Analytics Core Concepts
+author: v-thopra
+description: Describes the core concepts of the PlayFab analytics system.
+ms.author: v-thopra
+ms.date: 26/10/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, analytics, metrics, events
+ms.localizationpriority: medium
+---
+
 # Real-time Analytics: Core Concepts
 
 The purpose of the analytics system is to give you precise insights into what is going on inside your game. How many players did you have today? Where do they struggle? What do they like? How many games were played, how much XP was gained, how many chests were opened and on which levels? What is the average time for completing a certain level? Such information is invaluable for marketing, level design, UX troubleshooting, and other aspects of your product development.

@@ -1,3 +1,15 @@
+---
+title: Getting PlayFab Developer Keys
+author: v-thopra
+description: Describes how to acquire a PlayFab Developer Key that is used to authorize an application to use PlayFab Admin and Server APIs for a specific title.
+ms.author: v-thopra
+ms.date: 06/11/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, config, development, keys, api access
+ms.localizationpriority: medium
+---
+
 # Getting PlayFab Developer Keys
 
 A PlayFab Developer Key is used to authorize an application to use PlayFab Admin and Server APIs for a specific title. A Developer Key is strongly coupled with a PlayFab Title.

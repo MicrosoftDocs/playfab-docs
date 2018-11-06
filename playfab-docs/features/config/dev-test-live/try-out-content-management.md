@@ -1,3 +1,15 @@
+---
+title: Chapter 4 - Try out content management
+author: v-thopra
+description: Chapter 4 of a four-part Getting Started tutorial for PlayFab that covers content management.
+ms.author: v-thopra
+ms.date: 06/11/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, config, content management, cdn
+ms.localizationpriority: medium
+---
+
 # Chapter 4 - Try out content management
 
 Welcome to Chapter 4 of our tutorial [Getting Started with PlayFab](getting-started-with-playfab.md), the tutorial contains the following chapters:

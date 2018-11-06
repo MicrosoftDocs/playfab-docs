@@ -1,3 +1,15 @@
+---
+title: PlayFab GDPR - Deleting and Exporting Player Data
+author: v-thopra
+description: How to use PlayFab Admin APIs to export or delete a player’s data so that you can be General Data Protection Regulation (GDPR) compliant.
+ms.author: v-thopra
+ms.date: 06/11/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, data, playerdata, gdpr, compliance, admin api
+ms.localizationpriority: medium
+---
+
 # PlayFab GDPR - Deleting and Exporting Player Data
 
 PlayFab is committed to being General Data Protection Regulation (GDPR) compliant, and as your service provider, ensuring that we provide you with the hooks you need to allow players to view or delete the data stored about them.

@@ -1,3 +1,15 @@
+---
+title: Setting up PlayFab authentication using Facebook and Unity
+author: v-thopra
+description: Guides you through an example of PlayFab authentication using Facebook and Unity.
+ms.author: v-thopra
+ms.date: 06/11/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, authentication, facebook, unity
+ms.localizationpriority: medium
+---
+
 # Setting up PlayFab authentication using Facebook and Unity
 
 This tutorial guides you through an example of PlayFab authentication using Facebook and Unity.

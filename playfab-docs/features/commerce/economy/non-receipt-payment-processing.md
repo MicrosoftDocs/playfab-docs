@@ -1,3 +1,15 @@
+---
+title: Non-Receipt Payment Processing
+author: v-thopra
+description: Describes the PlayFab mechanism for enabling purchases via payment providers that don’t use a receipt or entitlement based system.
+ms.author: v-thopra
+ms.date: 26/10/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, commerce, economy, media, carts, payments, purchases
+ms.localizationpriority: medium
+---
+
 ## Non-Receipt Payment Processing
 
 In addition to receipt validation for a variety of platforms, PlayFab also provides a mechanism for enabling purchases via payment providers that don’t use a receipt or entitlement based systems, such as Facebook, PayPal, Xsolla, and Steam. This tutorial will walk you through using this “cart” style payments system, showing you how to define the set of goods the player wants to purchase, process the payment with your chosen provider, and validate that the payment processed successfully, adding the appropriate items to the player’s inventory. It will also cover the payment provider part of the process, so that you have a complete overview of how to complete the purchase using PlayFab.

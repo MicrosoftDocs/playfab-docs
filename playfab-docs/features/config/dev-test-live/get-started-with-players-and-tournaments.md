@@ -1,3 +1,15 @@
+---
+title: Chapter 1 - Get started with players and tournaments
+author: v-thopra
+description: Chapter 1 of a four-part Getting Started tutorial for PlayFab that covers players and tournaments.
+ms.author: v-thopra
+ms.date: 06/11/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, config, players, tournaments
+ms.localizationpriority: medium
+---
+
 # Chapter 1 - Get started with players and tournaments
 
 This is chapter 1 of our tutorial [Getting Started with PlayFab](getting-started-with-playfab.md) that contains the following chapters:

@@ -1,6 +1,18 @@
+---
+title: Global API Method Error Codes
+author: v-thopra
+description: Lists the global error codes that apply to every PlayFab API method.
+ms.author: v-thopra
+ms.date: 06/11/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, config, development, testing, errors, error codes
+ms.localizationpriority: medium
+---
+
 # Global API Method Error Codes
 
-This tutorial describes the list of global error codes that apply to every PlayFab API method. The following information can be used to decipher API errors. Each API error contains the following fields:
+This tutorial lists the global error codes that apply to every PlayFab API method. The following information can be used to decipher API errors. Each API error contains the following fields:
 
 - error - A human-readable code for the error.
 - errorCode - A numerical code for the error.

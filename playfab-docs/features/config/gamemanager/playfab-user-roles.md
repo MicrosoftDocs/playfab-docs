@@ -1,3 +1,15 @@
+---
+title: PlayFab User Roles
+author: v-thopra
+description: Describes how to create and configure User Roles in PlayFab.
+ms.author: v-thopra
+ms.date: 06/11/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, config, game manager, user roles
+ms.localizationpriority: medium
+---
+
 # PlayFab User Roles
 
 PlayFab now supports roles as a more efficient way to manage user permissions within the Game Manager. We're happy to have finally added this feature, since it's been one of the most frequently requested features up till now.

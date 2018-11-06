@@ -1,3 +1,15 @@
+---
+title: Secret Key Management
+author: v-thopra
+description: Describes the PlayFab system for managing secret keys.
+ms.author: v-thopra
+ms.date: 06/11/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, config, game manager, secret keys
+ms.localizationpriority: medium
+---
+
 # Secret Key Management
 
 PlayFab has introduced a feature for managing secret keys. Keys can now be created, deleted, disabled, and set to expire. This lets you rotate the secret keys for your titles, which was previously quite hard to do. It also allows you to grant temporary access to your titles.

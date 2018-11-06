@@ -1,3 +1,15 @@
+---
+title: Setting up Photon Unity Networking with PlayFab
+author: v-thopra
+description: Describes how to set up Photon Multiplayer to work with PlayFab.
+ms.author: v-thopra
+ms.date: 29/10/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, multiplayer, photon
+ms.localizationpriority: medium
+---
+
 # Setting up Photon Unity Networking with PlayFab
 
 This tutorial shows how to set up Photon Multiplayer to work with PlayFab. Currently, PlayFab offers the following Photon integrations:

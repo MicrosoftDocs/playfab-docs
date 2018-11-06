@@ -1,8 +1,20 @@
+---
+title: Writing custom CloudScript
+author: v-thopra
+description: Describes how to write CloudScript functions.
+ms.author: v-thopra
+ms.date: 06/11/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, automation, cloudscript, unity
+ms.localizationpriority: medium
+---
+
 # Writing custom CloudScript
 
 CloudScript is one of PlayFab's most versatile features. It allows client code to request execution of any kind of custom server-side functionality you can implement, and it can be used in conjunction with virtually anything.
 
-This guide covers writing your CloudScript functions. Please see the [Using CloudScript](using-cloudscript.md) tutorial for help in uploading your CloudScript files to your title.
+This tutorial covers writing your CloudScript functions. Please see the [Using CloudScript](using-cloudscript.md) tutorial for help in uploading your CloudScript files to your title.
 
 > [!NOTE]
 > This tutorial demonstrates Unity code samples, but CloudScript works similarly for all SDKs.

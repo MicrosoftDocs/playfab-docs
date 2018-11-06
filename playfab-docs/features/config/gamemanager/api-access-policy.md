@@ -1,3 +1,15 @@
+---
+title: API Access Policy
+author: v-thopra
+description: Describes how to use the API access policies in PlayFab.
+ms.author: v-thopra
+ms.date: 06/11/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, config, game manager, api access policy
+ms.localizationpriority: medium
+---
+
 # API Access Policy
 
 Often times, it is necessary for a title to allow/deny certain APIs from the game client for anti-cheat or other security purposes. This tutorial will walk you through how to use API permission policies to achieve this.

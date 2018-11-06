@@ -1,3 +1,15 @@
+---
+title: Setting up PlayFab authentication using Facebook and HTML5
+author: v-thopra
+description: Guides you through an example of PlayFab authentication using Facebook and HTML5/JavaScript.
+ms.author: v-thopra
+ms.date: 06/11/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, authentication, facebook, html5, javascript
+ms.localizationpriority: medium
+---
+
 # Setting up PlayFab authentication using Facebook and HTML5
 
 This tutorial guides you through an example of PlayFab authentication using Facebook and HTML5/JavaScript.

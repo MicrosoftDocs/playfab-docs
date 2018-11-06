@@ -1,3 +1,15 @@
+---
+title: Using title data
+author: v-thopra
+description: Describes how to programmatically create and use title data
+ms.author: v-thopra
+ms.date: 06/11/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, configuration, title data
+ms.localizationpriority: medium
+---
+
 # Using title data
 
 This tutorial describes how to programmatically create and use title data. This an important topic because storing a game's configuration data remotely, on the server, where it can be changed at any time, is one of the most basic reasons to use a service like PlayFab.

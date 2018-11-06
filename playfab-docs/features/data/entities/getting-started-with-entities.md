@@ -1,3 +1,15 @@
+---
+title: Getting started with Entities
+author: v-thopra
+description: Describes the terminology, concepts, and design of Entities in the PlayFab APIs.
+ms.author: v-thopra
+ms.date: 26/10/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, data, entities, accounts
+ms.localizationpriority: medium
+---
+
 # Getting started with Entities
 
 Read our introductory blog [here](https://api.playfab.com/blog/introducing-entities-objects-and-files)!

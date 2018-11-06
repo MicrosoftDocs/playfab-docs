@@ -1,3 +1,15 @@
+---
+title: Entity Groups
+author: v-thopra
+description: Describes the concepts behind Entity Groups in the PlayFab APIs and the basics of how to use them.
+ms.author: v-thopra
+ms.date: 26/10/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, data, entity groups, guilds
+ms.localizationpriority: medium
+---
+
 # Entity Groups
 
 ## PlayFab Guild Solution

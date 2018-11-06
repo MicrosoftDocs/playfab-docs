@@ -1,3 +1,15 @@
+---
+title: Using player statistics
+author: v-thopra
+description: Describes how to create and use player statistics in the PlayFab Game Manager.
+ms.author: v-thopra
+ms.date: 06/11/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, game manager, player data, statistics
+ms.localizationpriority: medium
+---
+
 # Using player statistics
 
 This tutorial describes how to create and use player statistics. Player statistics are stored as key value pairs where the key is a string and the value is a 32-bit integer (for compatibility with languages which do not support 64-bit). Player statistics are also used by leaderboards. This guide covers player statistics exclusively. If you wish to read about how player statistics and leaderboards work together, please read our tutorial [Using resettable statistics and leaderboards](../../social/tournaments-leaderboards/using-resettable-statistics-and-leaderboards.md).

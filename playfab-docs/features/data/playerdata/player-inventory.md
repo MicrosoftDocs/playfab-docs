@@ -1,3 +1,15 @@
+---
+title: Using Player inventory
+author: v-thopra
+description: Describes how to view and work with the player inventory using the PlayFab API.
+ms.author: v-thopra
+ms.date: 06/11/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, playfab api, player data, inventory
+ms.localizationpriority: medium
+---
+
 # Player inventory
 
 **Requirement**: In order to use Player Inventory, you must have a Catalog defined for your title. Please read our [Catalogs](../../commerce/items/catalogs.md) tutorial for more information. You can, optionally, also define Stores for your Catalog. While a Catalog is the list of all items available in the game, a Store is a subset of items from the Catalog, optionally with unique pricing. Multiple Stores can be defined per Catalog, so that you can have distinct sets of items for presentation to the player based upon user Segmentation or other factors.

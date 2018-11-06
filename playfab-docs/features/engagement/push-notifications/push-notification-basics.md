@@ -1,3 +1,15 @@
+---
+title: Push Notification basics
+author: v-thopra
+description: Describes the Push Notification system in PlayFab.
+ms.author: v-thopra
+ms.date: 26/10/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, engagement, push notification
+ms.localizationpriority: medium
+---
+
 # Push Notification basics
 
 Push notifications give you a channel to send an immediate, customized, message to your player’s home screen. Using PlayFab's push feature, you may send unlimited push notifications to any number of devices completely free of charge. As a general guideline, always tell players up front how you will be using the push notification service. Explaining how your game rewards or communicates via push notification can be the difference in building community engagement versus driving players away.

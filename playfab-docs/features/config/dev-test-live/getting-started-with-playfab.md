@@ -1,3 +1,15 @@
+---
+title: Getting Started with PlayFab
+author: v-thopra
+description: Introduction to a four-part Getting Started tutorial for PlayFab.
+ms.author: v-thopra
+ms.date: 06/11/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, config, economy, players, tournaments, automation, content management
+ms.localizationpriority: medium
+---
+
 # Getting Started with PlayFab
 
 Welcome! This introductory tutorial will quickly get you up and running with PlayFab. Each of the following chapters contain steps to help you get started with some of the key features within PlayFab:

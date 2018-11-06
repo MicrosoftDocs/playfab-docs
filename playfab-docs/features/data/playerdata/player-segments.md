@@ -1,3 +1,15 @@
+---
+title: Player Segments
+author: v-thopra
+description: Describes how to access and configure Player Segments in the PlayFab Game Manager.
+ms.author: v-thopra
+ms.date: 06/11/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, game manager, player data, segments
+ms.localizationpriority: medium
+---
+
 # Player Segments
 
 Players can be collected together into a segment, with the idea that all players in the segment meet certain conditions (filters). Once the segment is defined, you can monitor the total number of players in the segment and run custom actions on those players automatically or manually.

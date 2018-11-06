@@ -1,3 +1,15 @@
+---
+title: Using publisher data
+author: v-thopra
+description: Describes how to create and use publisher (studio) data.
+ms.author: v-thopra
+ms.date: 06/11/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, configuration, publisher data, studio data
+ms.localizationpriority: medium
+---
+
 # Using publisher data
 
 This tutorial describes how to create and use publisher (studio) data. Publisher data is data that spans more than one title, such as when you have multiple games that need to share common information among your games. This category also include data for players that spans multiple games. PlayFab stores data as key/value pairs (KVPs).

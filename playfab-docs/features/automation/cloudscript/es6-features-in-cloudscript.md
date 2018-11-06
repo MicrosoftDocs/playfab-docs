@@ -1,3 +1,15 @@
+---
+title: ES6 features in CloudScript
+author: v-thopra
+description: Describes how to use ECMAScript 6 (ES6) features when writing CloudScript.
+ms.author: v-thopra
+ms.date: 06/11/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, automation, cloudscript, ecmascript6
+ms.localizationpriority: medium
+---
+
 # ES6 features in CloudScript
 
 The CloudScript runtime environment supports most of the modern ECMAScript 6 features. While a majority of these features are syntactical tricks, one can use them to improve and clean the CloudScript code base.

@@ -1,6 +1,18 @@
+---
+title: Drop Tables
+author: v-thopra
+description: Describes how to create Drop Tables using the PlayFab Game Manager.
+ms.author: v-thopra
+ms.date: 26/10/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, commerce, items, catalogs, drop tables
+ms.localizationpriority: medium
+---
+
 # Drop Tables
 
-This tutorial will tell you how to create Drop Tables using PlayFab Game Manager. Drop Tables allow you to randomly generate [inventory items](../../data/playerdata/player-inventory.md), and sequential drop-tables can provide some randomness to Player rewards.
+This tutorial will tell you how to create Drop Tables using the PlayFab Game Manager. Drop Tables allow you to randomly generate [inventory items](../../data/playerdata/player-inventory.md), and sequential drop-tables can provide some randomness to Player rewards.
 
 ## Requirements
 

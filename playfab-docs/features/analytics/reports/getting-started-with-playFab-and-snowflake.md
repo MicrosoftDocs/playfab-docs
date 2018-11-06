@@ -1,3 +1,15 @@
+---
+title: Getting Started With PlayFab and Snowflake
+author: v-thopra
+description: Describes how to enable the Snowflake add-on from PlayFab and provides examples to demonstrate the integration.
+ms.author: v-thopra
+ms.date: 06/11/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, analytics, reports, snowflake
+ms.localizationpriority: medium
+---
+
 # Getting Started With PlayFab and Snowflake
 
 This tutorial describes how to enable the Snowflake add-on from PlayFab, and then provides some starter examples of queries you can do in Snowflake to show off the integration. If you are looking for a high-level description of why Snowflake integration with PlayFab is cool, you may want to start with our introductory blog post first.

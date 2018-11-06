@@ -1,6 +1,18 @@
+---
+title: SDK error handling Best Practices
+author: v-thopra
+description: Describes how to access, recognize, and handle, API errors using the PlayFab SDK.
+ms.author: v-thopra
+ms.date: 06/11/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, automation, errors, sdk
+ms.localizationpriority: medium
+---
+
 # SDK error handling Best Practices
 
-This guide shows how to access, recognize, and handle, API errors in the SDK. The described practices are equally applicable to the Admin, Server, and Client SDKs, but the patterns depend highly on the language of your choice. In short, the pattern of your choice will be valid for any SDK (Admin/Server/Client) but implementation details will be specific to your programming language and environment.
+This tutorial shows how to access, recognize, and handle, API errors using the PlayFab SDK. The described practices are equally applicable to the Admin, Server, and Client SDKs, but the patterns depend highly on the language of your choice. In short, the pattern of your choice will be valid for any SDK (Admin/Server/Client) but implementation details will be specific to your programming language and environment.
 
 ## Catching and accessing the error
 

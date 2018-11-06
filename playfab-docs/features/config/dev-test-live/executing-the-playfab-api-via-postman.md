@@ -1,3 +1,15 @@
+---
+title: Executing the PlayFab API via Postman
+author: v-thopra
+description: Describes how to setup and use the Chrome plugin Postman for debugging your PlayFab API calls.
+ms.author: v-thopra
+ms.date: 06/11/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, config, testing, debugging, postman, chrome, google
+ms.localizationpriority: medium
+---
+
 # Executing the PlayFab API via Postman
 
 ## Postman Overview

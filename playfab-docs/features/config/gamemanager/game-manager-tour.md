@@ -1,3 +1,15 @@
+---
+title: Game Manager Tour
+author: v-thopra
+description: Provides an overview of the features in the PlayFab Game Manager.
+ms.author: v-thopra
+ms.date: 26/10/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, config, game manager
+ms.localizationpriority: medium
+---
+
 # Game Manager Tour
 
 ## Let's begin with the basics: Your Developer Account
