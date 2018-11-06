@@ -1,3 +1,15 @@
+---
+title: Xamarin Quickstart
+author: v-thopra
+description: This guide will help you make your first PlayFab API call in Xamarin.
+ms.author: v-thopra
+ms.date: 06/11/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, xamarin, playfab csharpsdk, cross-platform
+ms.localizationpriority: medium
+---
+
 # Xamarin Quickstart
 
 This guide will help you make your first API call in Xamarin.

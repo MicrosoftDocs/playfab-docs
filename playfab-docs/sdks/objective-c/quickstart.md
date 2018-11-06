@@ -1,3 +1,15 @@
+---
+title: Objective-C Quickstart
+author: v-thopra
+description: This guide will help you make your first PlayFab API call using Objective-C.
+ms.author: v-thopra
+ms.date: 06/11/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, objective-c, playfab objecctive-c sdk, native osx, ios development
+ms.localizationpriority: medium
+---
+
 # Objective-C Quickstart
 
 This guide will help you make your first PlayFab API call using Objective-C by showing you how to get started with our [Objective-C SDK for native OSX & iOS development](https://github.com/PlayFab/Objective_C_SDK)

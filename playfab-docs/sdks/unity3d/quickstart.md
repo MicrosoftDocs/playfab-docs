@@ -1,3 +1,15 @@
+---
+title: Unity3D Quickstart
+author: v-thopra
+description: This guide will help you make your first PlayFab API call in the Unity3d engine.
+ms.author: v-thopra
+ms.date: 06/11/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, unity3d, playfab unity sdk, csharp
+ms.localizationpriority: medium
+---
+
 # Unity3D Quickstart
 
 This guide will help you make your first PlayFab API call in the Unity3d engine.   

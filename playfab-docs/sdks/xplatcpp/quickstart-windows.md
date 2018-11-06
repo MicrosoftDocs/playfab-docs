@@ -1,3 +1,15 @@
+---
+title: C++ Quickstart for Windows
+author: v-thopra
+description: This guide will help you make your first PlayFab API call in native C++.
+ms.author: v-thopra
+ms.date: 06/11/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, c++, windows, cocos2d-x, unreal, lua sdk
+ms.localizationpriority: medium
+---
+
 # C++ Quickstart for Windows
 
 This guide will help you make your first API call in C++. A native C++ project can be used a few ways:

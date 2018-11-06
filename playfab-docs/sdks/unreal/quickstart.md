@@ -1,3 +1,15 @@
+---
+title: Unreal Engine Quickstart
+author: v-thopra
+description: This guide will help you set up the Unreal Engine, install the PlayFab Marketplace Plugin, and make your first API call in Unreal, using the PlayFab Marketplace Plugin.
+ms.author: v-thopra
+ms.date: 06/11/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, unreal, playfab marketplace plugin, c++, blueprint
+ms.localizationpriority: medium
+---
+
 # Unreal Engine Quickstart
 
 This guide will help you set up Unreal Engine, install the PlayFab Marketplace Plugin, and make your first API call in Unreal, using the PlayFab Marketplace Plugin. You can make your first API call using Blueprints, or C++, or both.

@@ -1,3 +1,15 @@
+---
+title: Postman Quickstart
+author: v-thopra
+description: This guide will help you make your first PlayFab API call using Postman.
+ms.author: v-thopra
+ms.date: 06/11/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, postman, ssl/tls protocols, chrome, google
+ms.localizationpriority: medium
+---
+
 # Postman Quickstart
 
 This guide tells you how to download and set up the all-inclusive PlayFab Postman collection. The collection contains files that will help you make your first PlayFab API call using Postman.

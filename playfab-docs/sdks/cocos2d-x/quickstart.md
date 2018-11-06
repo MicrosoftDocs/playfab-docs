@@ -1,3 +1,15 @@
+---
+title: Cocos2D-x Quickstart
+author: v-thopra
+description: This guide will help you make your first PlayFab API call in the Cocos2d-x engine.
+ms.author: v-thopra
+ms.date: 06/11/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, cocos-2dx, playfab cocos-2dx sdk
+ms.localizationpriority: medium
+---
+
 # Cocos2D-x Quickstart
 
 This guide will help you make your first PlayFab API call in the Cocos2d-x engine.

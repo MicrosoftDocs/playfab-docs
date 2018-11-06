@@ -1,3 +1,15 @@
+---
+title: Python Quickstart
+author: v-thopra
+description: This guide will help you make your first PlayFab API call in Python 3.
+ms.author: v-thopra
+ms.date: 06/11/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, python 3, python sdk
+ms.localizationpriority: medium
+---
+
 # Python Quickstart
 
 This guide will help you make your first API call in Python 3. A native Python project can be used a few ways:

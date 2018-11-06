@@ -1,6 +1,18 @@
+---
+title: NodeJS Quickstart
+author: v-thopra
+description: This guide will help you make your first API call in NodeJS.
+ms.author: v-thopra
+ms.date: 06/11/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, nodejs, javascript
+ms.localizationpriority: medium
+---
+
 # NodeJS Quickstart
 
-This guide will help you make your first API call in Node.
+This guide will help you make your first API call in NodeJS.
 
 ## Node Project Setup
 
