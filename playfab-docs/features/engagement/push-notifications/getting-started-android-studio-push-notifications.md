@@ -1,3 +1,15 @@
+---
+title: Getting Started with Android Studio and Push Notifications
+author: v-thopra
+description: Describes how to get up and running with Android PlayFab Integration with Push Notifications.
+ms.author: v-thopra
+ms.date: 26/10/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, engagement, push notification, google, android
+ms.localizationpriority: medium
+---
+
 # Getting Started with Android Studio and Push Notifications
 
 ## Overview

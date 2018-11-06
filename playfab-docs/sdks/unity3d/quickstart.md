@@ -39,7 +39,7 @@ The best way to acquire our Unity SDK is via our editor extensions. Although you
 
 ## Set Title Settings   
 
-Now that you have installed the PlayFab SDK, you will need to set your title in Title Settings. If you are not using editor extensions you can do this directly in the PlayFab Settings Scriptpable Object located in the following folder. 
+Now that you have installed the PlayFab SDK, you will need to set your title in Title Settings. If you are not using editor extensions you can do this directly in the PlayFab Settings Scriptable Object located in the following folder. 
  
 ![PlayFab setting scriptable object](media/playfab-settings-so.png)
 
@@ -151,7 +151,7 @@ Inside of OnLoginSuccess:
 Inside of OnLoginFailure:   
 
 - API calls can fail for many reasons, and you should always attempt to handle failure
-  - You can find error codes shared by all API methods [here](https://api.playfab.com/docs/tutorials/globalcodes), or specific codes at the bottom of each API method documentation
+  - You can find error codes shared by all API methods in our [Global API Method Error Codes](../../features/config/dev-test-live/global-api-method-error-codes.md) tutorial, or specific codes at the bottom of each API method documentation
 
 - Why API calls fail (In order of likelihood)
   - PlayFabSettings.TitleId is not set. If you forget to set titleId to your title, then nothing will work.

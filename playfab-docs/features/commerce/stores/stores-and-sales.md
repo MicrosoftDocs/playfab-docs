@@ -1,10 +1,22 @@
+---
+title: Stores and Sales
+author: v-thopra
+description: Describes how to configure a Store with a catalog of items available in real money or virtual currency.
+ms.author: v-thopra
+ms.date: 26/10/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, commerce, stores, catalogs, currencies
+ms.localizationpriority: medium
+---
+
 # Stores and Sales
 
 Stores are built upon [Catalogs](../items/catalogs.md) and [Currencies](../economy/currencies.md). Your primary catalog should define all of the items in your game. Alternately, a store allows you to single out a specific set of items, and make them available for a set time period. The definition of a store is a small subset of items, available for purchase at a specific price.
 
 ## Requirements
 
-- [Game Manger](https://api.playfab.com/docs/tutorials/landing-analytics/game-manager-tour)
+- [Game Manger](../../config/gamemanager/game-manager-tour.md)
 - One or more [Virtual Currencies](../economy/currencies.md) defined
   - The latter example on this guide uses: SS (Silver Shekels) and GS (Gold Shekels).
 
@@ -133,4 +145,4 @@ Stores are a great mechanism for encouraging your players to purchase items. Sto
 
 You can set up a single-item purchase with VC via [PurchaseItem](https://api.playfab.com/documentation/client/method/PurchaseItem). You can set up a multiple-item purchase with VC via the sequence: [StartPurchase](https://api.playfab.com/documentation/client/method/StartPurchase), [PayForPurchase](https://api.playfab.com/documentation/client/method/PayForPurchase), and [ConfirmPurchase](https://api.playfab.com/documentation/client/method/ConfirmPurchase). To perform real money purchases, consult our advanced tutorial [Non-Receipt Payment Processing](../economy/non-receipt-payment-processing.md).
 
-For advanced Store usage, see our [A/B Testing with Stores](https://api.playfab.com/docs/tutorials/landing-analytics/ab-store) tutorial.
+For advanced Store usage, see our [Custom Stores for Player Segments](../../commerce/stores/custom-stores-for-player-segments.md) tutorial.

@@ -1,3 +1,15 @@
+---
+title: Account linking
+author: v-thopra
+description: Demonstrates how to bind an account to multiple devices and login mechanisms.
+ms.author: v-thopra
+ms.date: 06/11/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, authentication, accounts, linking
+ms.localizationpriority: medium
+---
+
 # Account linking
 
 This tutorial demonstrates how to bind an account to multiple devices and login mechanisms. A single PlayFab account can be accessed by many devices and login credentials. As we discuss in our tutorial [Login basics and Best Practices](../platform-specific-authentication/login-basics-best-practices.md), there are two forms of user authentication: Anonymous and Recoverable.

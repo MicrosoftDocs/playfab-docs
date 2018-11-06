@@ -1,8 +1,20 @@
+---
+title: Using CloudScript
+author: v-thopra
+description: Describes uploading and managing your CloudScript files in the PlayFab Game Manager.
+ms.author: v-thopra
+ms.date: 06/11/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, automation, game manager, cloudscript
+ms.localizationpriority: medium
+---
+
 # Using CloudScript
 
 CloudScript offers a fast, secure and scalable alternative to dedicated servers. Your custom JavaScript lives and executes directly on PlayFab machines. From here, your code can be called directly by your game clients or indirectly via PlayStream actions. Additionally, CloudScript methods have full access to PlayFab's [Server](https://api.playfab.com/Documentation/Server) API set.
 
-This tutorial covers uploading and managing your CloudScript files on PlayFab Game Manager. The [Writing custom CloudScript](writing-custom-cloudscript.md) tutorial covers writing the CloudScript code itself.
+This tutorial covers uploading and managing your CloudScript files in the PlayFab Game Manager. The [Writing custom CloudScript](writing-custom-cloudscript.md) tutorial covers writing the CloudScript code itself.
 
 Please note the following when reading this tutorial:
 

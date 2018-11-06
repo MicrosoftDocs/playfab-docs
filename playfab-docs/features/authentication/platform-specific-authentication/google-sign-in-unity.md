@@ -1,3 +1,15 @@
+---
+title: Setting up PlayFab authentication using Google Play Games Sign-In in Unity
+author: v-thopra
+description: Guides you through an example of PlayFab authentication using Google Play Games Sign-In in Unity.
+ms.author: v-thopra
+ms.date: 06/11/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, authentication, google, unity
+ms.localizationpriority: medium
+---
+
 # Setting up PlayFab authentication using Google Play Games Sign-In in Unity
 
 ## Tutorial Video
@@ -16,7 +28,7 @@ In this tutorial you will learn how to successfully add Google Play Games Sign-I
 - A PlayFab developer account which has access to a game title in PlayFab
 - The [PlayFab Unity Editor Extensions & Unity SDK](https://api.playfab.com/docs/getting-started/unity-getting-started)
 - The [Google Play Games SDK](https://github.com/playgameservices/play-games-plugin-for-unity)
-- Familiarity with [Login Basics & Best Practices guide](https://api.playfab.com/docs/tutorials/landing-players/best-login)
+- Familiarity with [Login basics and Best Practices](../../authentication/platform-specific-authentication/login-basics-best-practices.md)
 
 ## Getting Started
 

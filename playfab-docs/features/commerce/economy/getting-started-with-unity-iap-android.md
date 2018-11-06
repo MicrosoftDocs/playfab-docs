@@ -1,3 +1,15 @@
+---
+title: Getting started with PlayFab, Unity IAP, and Android
+author: v-thopra
+description: How to set up (In-App Purchasing) IAP using PlayFab, the Unity + IAP Service, and the Android Billing API.
+ms.author: v-thopra
+ms.date: 06/11/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, commerce, economy, iap, unity, android billing api
+ms.localizationpriority: medium
+---
+
 # Getting started with PlayFab, Unity IAP, and Android
 
 This tutorial shows you how to set up (In-App Purchasing) IAP using PlayFab, the Unity + IAP Service, and the Android Billing API.

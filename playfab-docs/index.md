@@ -20,13 +20,13 @@ featureFlags:
                         <a href="#start">Home</a>
                         <ul id="start" class="cardsK">
                             <li>
-                                <a href="/playfab/personas/developer">
+                                <a href="/gaming/playfab/personas/developer">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="/playfab/media/persona_developer.svg" alt="" />
+                                                        <img src="/gaming/playfab/media/persona_developer.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -39,13 +39,13 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/playfab/personas/liveops">
+                                <a href="/gaming/playfab/personas/liveops">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="/playfab/media/persona_liveops.svg" alt="" />
+                                                        <img src="/gaming/playfab/media/persona_liveops.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -58,13 +58,13 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/playfab/personas/bi">
+                                <a href="/gaming/playfab/personas/bi">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="/playfab/media/persona_business_intelligence.svg" alt="" />
+                                                        <img src="/gaming/playfab/media/persona_business_intelligence.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -77,13 +77,13 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/playfab/features/config/gamemanager">
+                                <a href="/gaming/playfab/features/config/gamemanager">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/playfab/media/core_concept_game_manager.svg" alt="" />
+                                                        <img src="/gaming/playfab/media/core_concept_game_manager.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -96,13 +96,13 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/playfab/features/data/entities">
+                                <a href="/gaming/playfab/features/data/entities">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/playfab/media/core_concept_entities.svg" alt="" />
+                                                        <img src="/gaming/playfab/media/core_concept_entities.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -115,13 +115,13 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/playfab/features/automation/playstream-events">
+                                <a href="/gaming/playfab/features/automation/playstream-events">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/playfab/media/core_concept_playstream.svg" alt="" />
+                                                        <img src="/gaming/playfab/media/core_concept_playstream.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -134,13 +134,13 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/playfab/features/automation/cloudscript">
+                                <a href="/gaming/playfab/features/automation/cloudscript">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/playfab/media/core_concept_cloudscript.svg" alt="" />
+                                                        <img src="/gaming/playfab/media/core_concept_cloudscript.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -153,13 +153,13 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/playfab/resources/event-archive">
+                                <a href="/gaming/playfab/resources/event-archive">
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/playfab/media/resource_event_archive.svg" alt="">
+                                                    <img src="/gaming/playfab/media/resource_event_archive.svg" alt="">
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -172,13 +172,13 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/playfab/resources/recipes">
+                                <a href="/gaming/playfab/resources/recipes">
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/playfab/media/resource_recipes.svg" alt="">
+                                                    <img src="/gaming/playfab/media/resource_recipes.svg" alt="">
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -197,7 +197,7 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/playfab/media/resource_technical_whitepaper.svg" alt="">
+                                                    <img src="/gaming/playfab/media/resource_technical_whitepaper.svg" alt="">
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -220,13 +220,13 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/playfab/media/quickstart_authentication.svg" alt="" />
+                                                    <img src="/gaming/playfab/media/quickstart_authentication.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
                                                 <h3>Authentication</h3>
-                                                <p><a href="/playfab/features/authentication/linking-unlinking/quickstart">Linking &amp; Unlinking</a></p>
-                                                <p><a href="/playfab/features/authentication/platform-specific-authentication/quickstart">Platform-Specific Authentication</a></p>
+                                                <p><a href="/gaming/playfab/features/authentication/linking-unlinking/quickstart">Linking &amp; Unlinking</a></p>
+                                                <p><a href="/gaming/playfab/features/authentication/platform-specific-authentication/quickstart">Platform-Specific Authentication</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -238,14 +238,14 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/playfab/media/quickstart_data.svg" alt="" />
+                                                    <img src="/gaming/playfab/media/quickstart_data.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
                                                 <h3>Data</h3>
-                                                <p><a href="/playfab/features/data/entities/quickstart">Entities</a></p>
-                                                <p><a href="/playfab/features/data/playerdata/quickstart">Player Data</a></p>
-                                                <p><a href="/playfab/features/data/content-delivery-network/quickstart">Content Delivery Network</a></p>
+                                                <p><a href="/gaming/playfab/features/data/entities/quickstart">Entities</a></p>
+                                                <p><a href="/gaming/playfab/features/data/playerdata/quickstart">Player Data</a></p>
+                                                <p><a href="/gaming/playfab/features/data/content-delivery-network/quickstart">Content Delivery Network</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -257,14 +257,14 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/playfab/media/quickstart_config.svg" alt="" />
+                                                    <img src="/gaming/playfab/media/quickstart_config.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
                                                 <h3>Config</h3>
-                                                <p><a href="/playfab/features/config/gamemanager/quickstart">Game Manager</a></p>
-                                                <p><a href="/playfab/features/config/titledata/quickstart">Title Data</a></p>
-                                                <p><a href="/playfab/features/config/dev-test-live/quickstart">Dev-Test-Live</a></p>
+                                                <p><a href="/gaming/playfab/features/config/gamemanager/quickstart">Game Manager</a></p>
+                                                <p><a href="/gaming/playfab/features/config/titledata/quickstart">Title Data</a></p>
+                                                <p><a href="/gaming/playfab/features/config/dev-test-live/quickstart">Dev-Test-Live</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -276,15 +276,15 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/playfab/media/quickstart_automation.svg" alt="" />
+                                                    <img src="/gaming/playfab/media/quickstart_automation.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
                                                 <h3>Automation</h3>
-                                                <p><a href="/playfab/features/automation/cloudscript/quickstart">Cloud Script</a></p>
-                                                <p><a href="/playfab/features/automation/playstream-events/quickstart">PlayStream</a></p>
-                                                <p><a href="/playfab/features/automation/actions-rules/quickstart">Actions &amp; Rules</a></p>
-                                                <p><a href="/playfab/features/automation/scheduled-tasks/quickstart">Scheduled Tasks</a></p>
+                                                <p><a href="/gaming/playfab/features/automation/cloudscript/quickstart">Cloud Script</a></p>
+                                                <p><a href="/gaming/playfab/features/automation/playstream-events/quickstart">PlayStream</a></p>
+                                                <p><a href="/gaming/playfab/features/automation/actions-rules/quickstart">Actions &amp; Rules</a></p>
+                                                <p><a href="/gaming/playfab/features/automation/scheduled-tasks/quickstart">Scheduled Tasks</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -296,14 +296,14 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/playfab/media/quickstart_social.svg" alt="" />
+                                                    <img src="/gaming/playfab/media/quickstart_social.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
                                                 <h3>Social</h3>
-                                                <p><a href="/playfab/features/social/friends-groups/quickstart">Friends &amp; Groups</a></p>
-                                                <p><a href="/playfab/features/social/tournaments-leaderboards/quickstart">Tournaments &amp; Leaderboards</a></p>
-                                                <p><a href="/playfab/features/social/trading/quickstart">Trading</a></p>
+                                                <p><a href="/gaming/playfab/features/social/friends-groups/quickstart">Friends &amp; Groups</a></p>
+                                                <p><a href="/gaming/playfab/features/social/tournaments-leaderboards/quickstart">Tournaments &amp; Leaderboards</a></p>
+                                                <p><a href="/gaming/playfab/features/social/trading/quickstart">Trading</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -315,14 +315,14 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/playfab/media/quickstart_commerce.svg" alt="" />
+                                                    <img src="/gaming/playfab/media/quickstart_commerce.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
                                                 <h3>Commerce</h3>
-                                                <p><a href="/playfab/features/commerce/items/quickstart">Items</a></p>
-                                                <p><a href="/playfab/features/commerce/stores/quickstart">Stores</a></p>
-                                                <p><a href="/playfab/features/commerce/economy/quickstart">Economy</a></p>
+                                                <p><a href="/gaming/playfab/features/commerce/items/quickstart">Items</a></p>
+                                                <p><a href="/gaming/playfab/features/commerce/stores/quickstart">Stores</a></p>
+                                                <p><a href="/gaming/playfab/features/commerce/economy/quickstart">Economy</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -334,14 +334,14 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/playfab/media/quickstart_multiplayer.svg" alt="" />
+                                                    <img src="/gaming/playfab/media/quickstart_multiplayer.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
                                                 <h3>Multiplayer</h3>
-                                                <p><a href="/playfab/features/multiplayer/compute/quickstart">Compute</a></p>
-                                                <p><a href="/playfab/features/multiplayer/matchmaking/quickstart">Matchmaking</a></p>
-                                                <p><a href="/playfab/features/multiplayer/photon/quickstart">Photon</a></p>
+                                                <p><a href="/gaming/playfab/features/multiplayer/compute/quickstart">Compute</a></p>
+                                                <p><a href="/gaming/playfab/features/multiplayer/matchmaking/quickstart">Matchmaking</a></p>
+                                                <p><a href="/gaming/playfab/features/multiplayer/photon/quickstart">Photon</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -353,15 +353,15 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/playfab/media/quickstart_analytics.svg" alt="" />
+                                                    <img src="/gaming/playfab/media/quickstart_analytics.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
                                                 <h3>Analytics</h3>
-                                                <p><a href="/playfab/features/analytics/metrics/quickstart">Metrics</a></p>
-                                                <p><a href="/playfab/features/analytics/reports/quickstart">Reports</a></p>
-                                                <p><a href="/playfab/features/analytics/ab-testing/quickstart">A/B Testing</a></p>
-                                                <p><a href="/playfab/features/analytics/segmentation/quickstart">Segmentation</a></p>
+                                                <p><a href="/gaming/playfab/features/analytics/metrics/quickstart">Metrics</a></p>
+                                                <p><a href="/gaming/playfab/features/analytics/reports/quickstart">Reports</a></p>
+                                                <p><a href="/gaming/playfab/features/analytics/ab-testing/quickstart">A/B Testing</a></p>
+                                                <p><a href="/gaming/playfab/features/analytics/segmentation/quickstart">Segmentation</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -373,14 +373,14 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/playfab/media/quickstart_engagement.svg" alt="" />
+                                                    <img src="/gaming/playfab/media/quickstart_engagement.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
                                                 <h3>Engagement</h3>
-                                                <p><a href="/playfab/features/engagement/push-notifications/quickstart">Push Notifications</a></p>
-                                                <p><a href="/playfab/features/engagement/emails/quickstart">Emails</a></p>
-                                                <p><a href="/playfab/features/engagement/news/quickstart">News</a></p>
+                                                <p><a href="/gaming/playfab/features/engagement/push-notifications/quickstart">Push Notifications</a></p>
+                                                <p><a href="/gaming/playfab/features/engagement/emails/quickstart">Emails</a></p>
+                                                <p><a href="/gaming/playfab/features/engagement/news/quickstart">News</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -389,16 +389,16 @@ featureFlags:
                         </ul>
                     </li>
                     <li>
-                        <a href="/playfab/features">Features</a>
+                        <a href="/gaming/playfab/features">Features</a>
                     </li>
                     <li>
-                        <a href="/playfab/sdks">SDKs</a>
+                        <a href="/gaming/playfab/sdks">SDKs</a>
                     </li>
                     <li>
-                        <a href="/playfab/api-references">API References</a>
+                        <a href="/gaming/playfab/api-references">API References</a>
                     </li>
                     <li>
-                        <a href="/playfab/release-notes">Release Notes</a>
+                        <a href="/gaming/playfab/release-notes">Release Notes</a>
                     </li>
                     <li>
                         <a href="https://status.playfab.com/" target="_blank">Server Status</a>

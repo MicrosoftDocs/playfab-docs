@@ -1,3 +1,15 @@
+---
+title: Player Ban system
+author: v-thopra
+description: Shows how to utilize the ban system exposed through the PlayFab API and Game Manager.
+ms.author: v-thopra
+ms.date: 06/11/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, game manager, bans
+ms.localizationpriority: medium
+---
+
 # Player Ban system
 
 The Player Ban feature allows you to restrict access to the game for certain players that break the rules. Bans can be temporary or permanent.

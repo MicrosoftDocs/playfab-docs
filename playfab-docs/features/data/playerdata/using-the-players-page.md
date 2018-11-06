@@ -1,3 +1,15 @@
+---
+title: Using the Players Page
+author: v-thopra
+description: Describes how to use the Players Page in the PlayFab Game Manager for simple and complex queries of player data.
+ms.author: v-thopra
+ms.date: 06/11/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, game manager, player data, queries
+ms.localizationpriority: medium
+---
+
 # Using the Players Page
 
 ## Monitoring players

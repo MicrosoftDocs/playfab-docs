@@ -1,3 +1,15 @@
+---
+title: Using player statistics
+author: v-thopra
+description: Describes how to create and use player statistics in the PlayFab Game Manager.
+ms.author: v-thopra
+ms.date: 06/11/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, game manager, player data, statistics
+ms.localizationpriority: medium
+---
+
 # Using player statistics
 
 This tutorial describes how to create and use player statistics. Player statistics are stored as key value pairs where the key is a string and the value is a 32-bit integer (for compatibility with languages which do not support 64-bit). Player statistics are also used by leaderboards. This guide covers player statistics exclusively. If you wish to read about how player statistics and leaderboards work together, please read our tutorial [Using resettable statistics and leaderboards](../../social/tournaments-leaderboards/using-resettable-statistics-and-leaderboards.md).
@@ -21,7 +33,7 @@ To enable this:
 
 There are no private or server-only statistics. A player can always read all of their own statistics via [GetPlayerStatistics](https://api.playfab.com/documentation/client/method/GetPlayerStatistics), and a player can read all other players' statistics via leaderboard API calls. This is true even if you don't display a statistic in-game, or use leaderboards.
 
-The only exception to this would be if you disable client features through our [Policy API](https://api.playfab.com/docs/tutorials/title-management/api-policy). Please refer to that link for more information on how to use the policy settings for titles, as that is an advanced topic which is not covered by this tutorial.
+The only exception to this would be if you disable client features through our [API Access Policy](../../config/gamemanager/api-access-policy.md). Please refer to that link for more information on how to use the policy settings for titles, as that is an advanced topic which is not covered by this tutorial.
 
 ## Setting Statistics
 

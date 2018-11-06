@@ -1,3 +1,15 @@
+---
+title: Setting up PlayFab authentication using Kongregate and Unity
+author: v-thopra
+description: Guides you through an example of PlayFab authentication using Kongregate and Unity.
+ms.author: v-thopra
+ms.date: 06/11/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, authentication, kongregate, unity
+ms.localizationpriority: medium
+---
+
 # Setting up PlayFab authentication using Kongregate and Unity
 
 This tutorial shows you the minimal setup required to authenticate your players in PlayFab using Kongregate and Unity.
@@ -9,7 +21,7 @@ This tutorial shows you the minimal setup required to authenticate your players 
 - Registered PlayFab Title
 - Unity project with PlayFab configured for your title
 - Unity WebGL support installed
-- Familiarity with [Login Basics & Best Practices guide](https://api.playfab.com/docs/tutorials/landing-players/best-login)
+- Familiarity with [Login basics and Best Practices](../../authentication/platform-specific-authentication/login-basics-best-practices.md)
 
 ## Setting up a Kongregate App
 

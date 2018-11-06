@@ -1,3 +1,15 @@
+---
+title: Using title data
+author: v-thopra
+description: Describes how to programmatically create and use title data
+ms.author: v-thopra
+ms.date: 06/11/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, configuration, title data
+ms.localizationpriority: medium
+---
+
 # Using title data
 
 This tutorial describes how to programmatically create and use title data. This an important topic because storing a game's configuration data remotely, on the server, where it can be changed at any time, is one of the most basic reasons to use a service like PlayFab.
@@ -124,6 +136,6 @@ public void SetTitleInternalData() {
 
 ## See Also
 
-- [Using Publisher Data](https://api.playfab.com/docs/tutorials/landing-content/using-publisher-data)
-- [Using Player Data](https://api.playfab.com/docs/tutorials/landing-players/using-player-data)
-- [Using Cloud Script](https://api.playfab.com/docs/tutorials/landing-automation/using-cloud-script)
+- [Using Publisher Data](../../config/titledata/using-publisher-data.md)
+- [Using Player Data](../../data/playerdata/using-player-data.md)
+- [Using Cloud Script](../../automation/cloudscript/using-cloudscript.md)

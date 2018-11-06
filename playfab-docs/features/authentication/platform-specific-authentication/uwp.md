@@ -1,17 +1,29 @@
+---
+title: Setting up PlayFab authentication using Universal Windows Platform
+author: v-thopra
+description: Guides you through an example of PlayFab authentication using the Universal Windows Platform (UWP).
+ms.author: v-thopra
+ms.date: 06/11/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, authentication, uwp
+ms.localizationpriority: medium
+---
+
 # Setting up PlayFab authentication using Universal Windows Platform
 
 This tutorial guides you through an example of PlayFab authentication using the Universal Windows Platform (UWP).
 
-> ![IMPORTANT]  
+> [!IMPORTANT]
 > This tutorial serves as a very basic introduction on how you can obtain all entities and commit authentication via Windows Hello and PlayFab. For a more sophisticated example of Windows Hello and PlayFab Authentication, consider our [UWPExample project](https://github.com/PlayFab/UWPExample).
 
 ## Requirements
 
 - Follow the [MSDN "Get Set Up" Guide](https://docs.microsoft.com/en-us/windows/uwp/get-started/get-set-up) to prepare Windows and Visual Studio for UWP development
 - Registered [PlayFab](https://playfab.com/) Title
-- Familiarity with the [Login Basics & Best Practices guide](https://api.playfab.com/docs/tutorials/landing-players/best-login)
+- Familiarity with [Login basics and Best Practices](../../authentication/platform-specific-authentication/login-basics-best-practices.md)
 
-> ![NOTE]  
+> [!NOTE]
 > it is **very important** that you are using the Windows 10 operating system, are logged in with a verified Microsoft Account, and have configured an access interface, such as PIN. If these requirements are not met, the app will fail without any useful explanation of why.
 
 ## Preparing a Visual Studio Project

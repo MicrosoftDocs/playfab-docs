@@ -1,8 +1,20 @@
+---
+title: Entity Groups
+author: v-thopra
+description: Describes the concepts behind Entity Groups in the PlayFab APIs and the basics of how to use them.
+ms.author: v-thopra
+ms.date: 26/10/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, data, entity groups, guilds
+ms.localizationpriority: medium
+---
+
 # Entity Groups
 
 ## PlayFab Guild Solution
 
-You need guilds, clans, corporations, companies, tribes, or whatever your game calls them. PlayFab has them. PlayFab builds Guilds on top of a system we call [Entities](https://api.playfab.com/docs/tutorials/entities/getting-started-entities), or more specifically Entity Groups. Entity Groups are a much broader concept than Guilds, but fundamentally, Entity Groups are here to solve Guilds.
+You need guilds, clans, corporations, companies, tribes, or whatever your game calls them. PlayFab has them. PlayFab builds Guilds on top of a system we call [Entities](../../data/entities/getting-started-with-entities.md), or more specifically Entity Groups. Entity Groups are a much broader concept than Guilds, but fundamentally, Entity Groups are here to solve Guilds.
 
 ## Entity Groups
 

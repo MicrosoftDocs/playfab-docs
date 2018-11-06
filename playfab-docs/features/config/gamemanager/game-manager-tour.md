@@ -1,3 +1,15 @@
+---
+title: Game Manager Tour
+author: v-thopra
+description: Provides an overview of the features in the PlayFab Game Manager.
+ms.author: v-thopra
+ms.date: 26/10/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, config, game manager
+ms.localizationpriority: medium
+---
+
 # Game Manager Tour
 
 ## Let's begin with the basics: Your Developer Account
@@ -181,7 +193,7 @@ The servers section of the Game Manager has two major roles:
 **Additional Information:**
 
 - [Using CloudScript Tutorial](../../automation/cloudscript/using-cloudscript.md)
-- [Building Custom Game Servers Tutorial](https://api.playfab.com/docs/tutorials/landing-tournaments/custom-game-servers)
+- [Building Custom Game Servers Tutorial](../../multiplayer/compute/custom-game-servers.md)
 
 [Back to Game Manager Sections](#game-manager-sections)
 

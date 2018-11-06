@@ -1,3 +1,15 @@
+---
+title: Push Notification for Android
+author: v-thopra
+description: Describes how to setup and configure PlayFab Push Notifications for Android.
+ms.author: v-thopra
+ms.date: 26/10/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, engagement, push notification, google, android, firebase, unity
+ms.localizationpriority: medium
+---
+
 # Push Notifications for Android
 
 ## Prerequisites
@@ -5,7 +17,7 @@
 - [Push Notification basics](push-notification-basics.md)
 - [Unity3D Quickstart](../../../sdks/unity3d/quickstart.md)
 - [Optional] [Unity Editor Extensions](https://api.playfab.com/blog/new-unity-editor-extensions-beta)
-- [Optional] [Postman](https://api.playfab.com/docs/tutorials/execute-playfab-api-via-postman)
+- [Optional] [Executing the PlayFab API via Postman](../../config/dev-test-live/executing-the-playfab-api-via-postman.md)
 
 ## Configuring the Android notification channel
 

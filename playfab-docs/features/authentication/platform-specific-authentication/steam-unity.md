@@ -1,3 +1,15 @@
+---
+title: Setting up PlayFab authentication using Steam and Unity
+author: v-thopra
+description: Guides you through an example of PlayFab authentication using Steam and Unity.
+ms.author: v-thopra
+ms.date: 06/11/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, authentication, steam, unity
+ms.localizationpriority: medium
+---
+
 # Setting up PlayFab authentication using Steam and Unity
 
 This tutorial guides you through an example of how to log into PlayFab using Steam through SteamWorks and Unity.
@@ -8,7 +20,7 @@ This tutorial guides you through an example of how to log into PlayFab using Ste
 - Steam Application with:
   - AppID set up. The AppID is usually acquired through the [Steam Direct (Formerly Greenlight)](https://partner.steamgames.com/steamdirect) process.
   - Steam Publisher Web API key. Follow [Creating a Publisher Web API Key](https://partner.steamgames.com/doc/webapi_overview/auth#create_publisher_key) in the Steamworks Documentation to generate a Publisher Key.
-- Familiarity with the [Login Basics & Best Practices](https://api.playfab.com/docs/tutorials/landing-players/best-login) guide
+- Familiarity with [Login basics and Best Practices](../../authentication/platform-specific-authentication/login-basics-best-practices.md)
 
 ## Setting up a PlayFab title
 

@@ -1,3 +1,15 @@
+---
+title: Catalogs
+author: v-thopra
+description: Describes the Catalogs tab in the Economy section in Game Manager and the Catalog item type.
+ms.author: v-thopra
+ms.date: 26/10/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, commerce, items, catalogs
+ms.localizationpriority: medium
+---
+
 # Catalogs
 
 This tutorial describes the **Catalogs** tab in the **Economy** section in Game Manager. Use catalogs to define items that the player can purchase or that you can reward to a player.

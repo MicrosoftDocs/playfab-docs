@@ -1,8 +1,20 @@
+---
+title: Integrating the Universal Windows Platform with PlayFab
+author: v-thopra
+description: Takes you through three key points of integration between PlayFab and the Universal Windows Platform (UWP).
+ms.author: v-thopra
+ms.date: 06/11/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, authentication, integration, uwp
+ms.localizationpriority: medium
+---
+
 # Integrating the Universal Windows Platform with PlayFab
 
 This tutorial takes you through three key points of integration between PlayFab and the Universal Windows Platform (UWP).
 
-> ![NOTE]  
+> [!NOTE]
 > We have created a [GitHub repository](https://github.com/PlayFab/UWPExample) with sample code to illustrate how to integrate Universal Windows Platform with PlayFab.
 
 Integrating the Universal Windows Platform (UWP) with PlayFab is very straightforward. There are really only three things you need to worry about:
@@ -25,7 +37,7 @@ Then you can follow these steps:
 
 1. Call [KeyCredentialManager.RequestCreateAsync](https://docs.microsoft.com/en-us/uwp/api/windows.security.credentials.keycredentialmanager) to generate a new public key for this user.
 2. Call [CryptographicBuffer.EncodeToBase64String](https://docs.microsoft.com/en-us/uwp/api/Windows.Security.Cryptography.CryptographicBuffer#Windows_Security_Cryptography_CryptographicBuffer_EncodeToBase64String_Windows_Storage_Streams_IBuffer_) to convert the IBuffer from above to a string.
-3. Call [PlayFabClientAPI.RegisterWithWindowsHello](https://api.playfab.com/documentation/client/method/RegisterWithWindowsHello) with the following required parameters:
+3. Call [PlayFabClientAPI.RegisterWithWindowsHello](https://api.playfab.com/documentation/client/method/RegisterWithWindowsHello) with the following required parameters:  
     1. The Windows username
     2. The base 64 encoded public key from above
 4. Assuming Register was successful, the player will now be logged in. You will get back a session token that you can use to authenticate the player with all other PlayFab APIs.
