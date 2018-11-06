@@ -5,9 +5,8 @@ description: Illustrates how to construct an Event History Search.
 ms.author: v-thopra
 ms.date: 01/11/2018
 ms.topic: article
-ms.prod: gaming
-ms.technology: playfab
-keywords: playfab
+ms.prod: playfab
+keywords: playfab, analytics, metrics, event history
 ms.localizationpriority: medium
 ---
 

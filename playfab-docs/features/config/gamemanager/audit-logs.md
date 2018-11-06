@@ -5,9 +5,8 @@ description: Describes how to access and view audit logs in the PlayFab Game Man
 ms.author: v-thopra
 ms.date: 31/10/2018
 ms.topic: article
-ms.prod: gaming
-ms.technology: playfab
-keywords: playfab
+ms.prod: playfab
+keywords: playfab, config, game manager
 ms.localizationpriority: medium
 ---
 

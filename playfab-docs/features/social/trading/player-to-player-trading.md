@@ -5,9 +5,8 @@ description: Describes how to perform player-to-player trading.
 ms.author: v-thopra
 ms.date: 29/10/2018
 ms.topic: article
-ms.prod: gaming
-ms.technology: playfab
-keywords: playfab
+ms.prod: playfab
+keywords: playfab, social, trading
 ms.localizationpriority: medium
 ---
 

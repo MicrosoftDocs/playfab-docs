@@ -5,9 +5,8 @@ description: Shows step-by-step how to configure PlayFab event archiving from sc
 ms.author: v-thopra
 ms.date: 31/10/2018
 ms.topic: article
-ms.prod: gaming
-ms.technology: playfab
-keywords: playfab
+ms.prod: playfab
+keywords: playfab, analytics, metrics, events
 ms.localizationpriority: medium
 ---
 

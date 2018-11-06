@@ -5,9 +5,8 @@ description: Describes how to enable and manage logging events to calculate Focu
 ms.author: v-thopra
 ms.date: 29/10/2018
 ms.topic: article
-ms.prod: gaming
-ms.technology: playfab
-keywords: playfab
+ms.prod: playfab
+keywords: playfab, analytics, metrics, sessions
 ms.localizationpriority: medium
 ---
 

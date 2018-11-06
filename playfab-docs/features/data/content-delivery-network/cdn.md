@@ -5,9 +5,8 @@ description: Describes the PlayFab Content Delivery Network in detail.
 ms.author: v-thopra
 ms.date: 01/11/2018
 ms.topic: article
-ms.prod: gaming
-ms.technology: playfab
-keywords: playfab
+ms.prod: playfab
+keywords: playfab, data, content delivery network
 ms.localizationpriority: medium
 ---
 

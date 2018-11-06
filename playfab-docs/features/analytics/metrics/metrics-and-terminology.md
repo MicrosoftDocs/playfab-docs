@@ -5,9 +5,8 @@ description: Contains tables with definitions for analytics terminology, engagem
 ms.author: v-thopra
 ms.date: 29/10/2018
 ms.topic: article
-ms.prod: gaming
-ms.technology: playfab
-keywords: playfab
+ms.prod: playfab
+keywords: playfab, analytics, metrics
 ms.localizationpriority: medium
 ---
 

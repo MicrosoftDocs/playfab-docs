@@ -5,9 +5,8 @@ description: Shows you how to enable encryption for your client.
 ms.author: v-thopra
 ms.date: 02/11/2018
 ms.topic: article
-ms.prod: gaming
-ms.technology: playfab
-keywords: playfab
+ms.prod: playfab
+keywords: playfab, config, game manager, encrypted login
 ms.localizationpriority: medium
 ---
 

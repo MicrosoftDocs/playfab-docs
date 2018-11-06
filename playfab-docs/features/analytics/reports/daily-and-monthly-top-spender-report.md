@@ -5,9 +5,8 @@ description: Describes the report that tracks the top 100 spenders in your game.
 ms.author: v-thopra
 ms.date: 31/10/2018
 ms.topic: article
-ms.prod: gaming
-ms.technology: playfab
-keywords: playfab
+ms.prod: playfab
+keywords: playfab, analytics, reports
 ms.localizationpriority: medium
 ---
 

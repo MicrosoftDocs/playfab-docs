@@ -5,9 +5,8 @@ description: Describes the report that is used to evaluate the effectiveness of 
 ms.author: v-thopra
 ms.date: 30/10/2018
 ms.topic: article
-ms.prod: gaming
-ms.technology: playfab
-keywords: playfab
+ms.prod: playfab
+keywords: playfab, analytics, reports, a/b testing
 ms.localizationpriority: medium
 ---
 

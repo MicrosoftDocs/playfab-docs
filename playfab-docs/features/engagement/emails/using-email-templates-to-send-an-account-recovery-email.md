@@ -5,8 +5,7 @@ description: Tutorial that describes how to use the email template feature of Pl
 ms.author: v-thopra
 ms.date: 26/10/2018
 ms.topic: article
-ms.prod: gaming
-ms.technology: playfab
+ms.prod: playfab
 keywords: playfab
 ms.localizationpriority: medium
 ---

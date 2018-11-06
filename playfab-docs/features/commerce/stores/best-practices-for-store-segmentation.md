@@ -5,9 +5,8 @@ description: Lists the Best Practices for configuring and using Store Segmentati
 ms.author: v-thopra
 ms.date: 29/10/2018
 ms.topic: article
-ms.prod: gaming
-ms.technology: playfab
-keywords: playfab
+ms.prod: playfab
+keywords: playfab, commerce, stores
 ms.localizationpriority: medium
 ---
 

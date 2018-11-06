@@ -5,9 +5,8 @@ description: Describes how to configure two-factor authentication between a devi
 ms.author: v-thopra
 ms.date: 02/11/2018
 ms.topic: article
-ms.prod: gaming
-ms.technology: playfab
-keywords: playfab
+ms.prod: playfab
+keywords: playfab, config, game manager, two-factor authentication
 ms.localizationpriority: medium
 ---
 

@@ -5,9 +5,8 @@ description: Tutorial about using externally hosted game servers with PlayFab.
 ms.author: v-thopra
 ms.date: 26/10/2018
 ms.topic: article
-ms.prod: gaming
-ms.technology: playfab
-keywords: playfab
+ms.prod: playfab
+keywords: playfab. multiplayer servers
 ms.localizationpriority: medium
 ---
 

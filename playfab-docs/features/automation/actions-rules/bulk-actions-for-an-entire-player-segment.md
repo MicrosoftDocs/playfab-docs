@@ -5,9 +5,8 @@ description: Describes the steps needed to create a task to perform one or more 
 ms.author: v-thopra
 ms.date: 01/11/2018
 ms.topic: article
-ms.prod: gaming
-ms.technology: playfab
-keywords: playfab
+ms.prod: playfab
+keywords: playfab, automation, actions, rules
 ms.localizationpriority: medium
 ---
 

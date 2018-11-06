@@ -5,9 +5,8 @@ description: Describes how to compose simple and complex search queries for Play
 ms.author: v-thopra
 ms.date: 01/11/2018
 ms.topic: article
-ms.prod: gaming
-ms.technology: playfab
-keywords: playfab
+ms.prod: playfab
+keywords: playfab, analytics, metrics, events, queries
 ms.localizationpriority: medium
 ---
 

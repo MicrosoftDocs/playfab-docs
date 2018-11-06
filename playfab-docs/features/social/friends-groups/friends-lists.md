@@ -5,9 +5,8 @@ description: Tutorial that describes how to create and use friends lists.
 ms.author: v-thopra
 ms.date: 26/10/2018
 ms.topic: article
-ms.prod: gaming
-ms.technology: playfab
-keywords: playfab
+ms.prod: playfab
+keywords: playfab, social, friends lists
 ms.localizationpriority: medium
 ---
 

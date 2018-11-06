@@ -5,9 +5,8 @@ description: Provides an overview of the Webhook panel in Game Manager, and desc
 ms.author: v-thopra
 ms.date: 31/10/2018
 ms.topic: article
-ms.prod: gaming
-ms.technology: playfab
-keywords: playfab
+ms.prod: playfab
+keywords: playfab, analytics, metrics, webhooks, events
 ms.localizationpriority: medium
 ---
 
