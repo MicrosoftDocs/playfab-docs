@@ -10,14 +10,14 @@ featureFlags:
 
 <div id="main" class="v2">
     <div class="container">
-        <h1>Welcome to PlayFab Documentation!</h1>
-        <h1> </h1>
+        <h1>PlayFab Documentation</h1>
+        <br />
         <ul class="pivots">
             <li>
                 <a href="#main"></a>
                 <ul id="main">
                     <li>
-                        <a href="#start">Home</a>
+                        <a href="#start">PlayFab</a>
                         <ul id="start" class="cardsK">
                             <li>
                                 <a href="/gaming/playfab/personas/developer">
