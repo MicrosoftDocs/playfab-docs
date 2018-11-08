@@ -32,7 +32,7 @@ First, we will need an A/B test. Please, follow the [Creating A/B Tests tutorial
 
 ![Game Manager - A/B Test - Buckets](media/tutorials/game-manager-ab-test-buckets.png)  
 
-Functionally, a Bucket ID is the same as a normal Segment ID: an API call to [GetPlayerSegments](https://api.playfab.com/documentation/server/method/GetPlayerSegments) will return both Segment IDs and A/B Test Bucket IDs. We can use this to our advantage and introduce a convention for A/B-tested Title Data keys, as shown in the following picture:
+Functionally, a Bucket ID is the same as a normal Segment ID: an API call to [GetPlayerSegments](xref:titleid.playfabapi.com.server.playstream.getplayersegments) will return both Segment IDs and A/B Test Bucket IDs. We can use this to our advantage and introduce a convention for A/B-tested Title Data keys, as shown in the following picture:
 
 ![Game Manager - A/B Test - Title Data Keys](media/tutorials/game-manager-ab-test-title-data-keys.png)  
 
@@ -52,7 +52,7 @@ Now let us define a brand new API call using CloudScript. This API call is named
     - We do this by reading the "TitleDataAbTestSegmentIds" key from our title data.
 
 3. We get all the segment IDs a player belongs to
-    - We do this by making a call to [GetPlayerSegments](https://api.playfab.com/documentation/server/method/GetPlayerSegments) and passing the current player ID.
+    - We do this by making a call to [GetPlayerSegments](xref:titleid.playfabapi.com.server.playstream.getplayersegments) and passing the current player ID.
 
 4. If a player does not belong to any bucket, we return the value for the original key:
     - For example, "MyMessage" -> "This is normal message".
