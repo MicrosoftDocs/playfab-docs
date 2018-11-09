@@ -4,5 +4,6 @@ These tutorials demonstrate features that you can use to create and maintain the
 
 - [Coupons and Promotions](coupons-and-promotions.md)
 - [Currencies](currencies.md)
+- [Getting a Player's Value-to-Date (VTD)](getting-a-players-vtd.md)
 - [Getting started with PlayFab, Unity IAP, and Android](getting-started-with-unity-iap-android.md)
 - [Non-Receipt Payment Processing](non-receipt-payment-processing.md)
