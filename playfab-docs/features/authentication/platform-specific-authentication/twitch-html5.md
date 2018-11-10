@@ -19,11 +19,11 @@ This tutorial guides you through an example of PlayFab authentication using Twit
 - [Twitch Account](https://www.twitch.tv/) for testing
 - Registered [PlayFab](https://playfab.com/) Title
 - Familiarity with [Login basics and Best Practices](../../authentication/platform-specific-authentication/login-basics-best-practices.md)
-- Minimal server with a valid domain name to serve static HTML files. Consult the [Running Test HTTP Server](https://api.playfab.com/docs/tutorials/http-server) guide to set one up.
+- Minimal server with a valid domain name to serve static HTML files. Consult the [Running an HTTP server for testing](../../config/dev-test-live/running-an-http-server-for-testing.md) tutorial for information on how to set one up.
 
 ## Server and Domain
 
-This tutorial requires a web server in order to follow the instructions. If you do not have a registered remote web server yet, please follow our [Running Test HTTP Server](https://api.playfab.com/docs/tutorials/http-server) guide to run a local web server. Throughout this tutorial, we will assume your domain is ['http://localhost/'](http://localhost/).
+This tutorial requires a web server in order to follow the instructions. If you do not have a registered remote web server yet, please follow our [Running an HTTP server for testing](../../config/dev-test-live/running-an-http-server-for-testing.md) tutorial for information on how to run a local web server. Throughout this tutorial, we will assume your domain is ['http://localhost/'](http://localhost/).
 
 ## Registering a Twitch Application
 

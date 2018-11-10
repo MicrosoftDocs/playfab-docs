@@ -19,11 +19,11 @@ This tutorial guides you through an example of PlayFab authentication using Goog
 - [Google account](https://google.com/) for testing
 - Registered [PlayFab](https://playfab.com/) Title
 - Familiarity with [Login basics and Best Practices](../../authentication/platform-specific-authentication/login-basics-best-practices.md)
-- Minimal server with a valid domain name to serve static HTML file. Consult with [Running Test HTTP Server](https://api.playfab.com/docs/tutorials/http-server) guide to set up one.
+- Minimal server with a valid domain name to serve static HTML file. Consult the [Running an HTTP server for testing](../../config/dev-test-live/running-an-http-server-for-testing.md) tutorial for information on how to set one up.
 
 ## Server and Domain
 
-This guide requires a server with a valid domain to follow. If you do not have a registered domain and remote web server yet, please follow our [Running Test HTTP Server](https://api.playfab.com/docs/tutorials/http-server) guide to run a local web server with a valid domain name. Throughout this guide, we will assume your domain is ['http://playfab.example'](http://playfab.example).
+This guide requires a server with a valid domain to follow. If you do not have a registered domain and remote web server yet, please follow our [Running an HTTP server for testing](../../config/dev-test-live/running-an-http-server-for-testing.md) tutorial for information on how to set one up. to run a local web server with a valid domain name. Throughout this guide, we will assume your domain is ['http://playfab.example'](http://playfab.example).
 
 ## Registering a Google API Project
 

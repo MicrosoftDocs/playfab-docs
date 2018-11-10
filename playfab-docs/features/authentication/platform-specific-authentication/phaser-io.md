@@ -29,7 +29,7 @@ To serve HTML pages to your browser you will need a web server,  we use [MAMP / 
 - Setup a website via Mamp / Mamp Pro or your webserver of choice
 - Create an **Index.html** file in the root of your website folder
 
-You can alternately read our [Local Node HTTP-Server Guide](https://api.playfab.com/docs/tutorials/http-server).
+You can alternately read the [Running an HTTP server for testing](../../config/dev-test-live/running-an-http-server-for-testing.md) tutorial for information on how to set one up.
 
 ## Setting up Phaser
 

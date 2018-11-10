@@ -28,11 +28,8 @@ You can upload and manage multiplayer server builds using Game Manager or the En
 
 ## Getting Started Documentation
 
-- [Quickstart for multiplayer servers](https://api.playfab.com/docs/tutorials/landing-tournaments/quickstart-for-multiplayer-servers)
-- [Building a PlayFab game server](https://api.playfab.com/docs/tutorials/landing-tournaments/building-a-thunderhead-game-server)
-- [Deploying PlayFab game server builds](https://api.playfab.com/docs/tutorials/landing-tournaments/deploying-playcompute-builds)
-- [Allocating game servers and connecting Visual Studio debugging tools](https://api.playfab.com/docs/tutorials/landing-tournaments/allocate-thunderhead)
-- [Connecting clients to game servers](https://api.playfab.com/docs/tutorials/landing-tournaments/mpcompute-networking)
+- [Allocating game servers and connecting Visual Studio debugging tools](../../social/tournaments-leaderboards/allocating-game-servers-and-configuring-vs-debugging-tools.md)
+- [Connecting clients to game servers](../../social/tournaments-leaderboards/connecting-clients-to-game-servers.md)
 
 ## SDKs and Tools
 

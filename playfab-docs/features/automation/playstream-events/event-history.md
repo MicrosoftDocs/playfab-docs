@@ -31,18 +31,18 @@ This tutorial shows you how to access and utilize the Event History in PlayFab.
 #### Legend
 
 1. Event Data Retention, this label shows the time interval for the events. For example, when it says "7 Days", only events that happened a week ago or later will be queried.
-2. [Event Search Query Panel](https://api.playfab.com/docs/tutorials/landing-analytics/event-history/event-search), allows the changing of graph behavior and the filtering of event flow by different event properties.
-3. [Event History Chart Panel](https://api.playfab.com/docs/tutorials/landing-analytics/event-history/real-time-analytics-event-history-chart-panel), this chart shows the number and types of events happening in your title during the specified time interval.
-4. [Events Timeline Panel](https://api.playfab.com/docs/tutorials/landing-analytics/event-history/timeline), this is a list of events data sorted by time (starting with the most recent).
+2. [Event Search Query Panel](../../analytics/metrics/real-time-analytics-event-search-query-panel.md), allows the changing of graph behavior and the filtering of event flow by different event properties.
+3. [Event History Chart Panel](../../analytics/metrics/real-time-analytics-event-history-chart-panel.md), this chart shows the number and types of events happening in your title during the specified time interval.
+4. [Events Timeline Panel](../../analytics/metrics/real-time-analytics-events-timeline-panel.md), this is a list of events data sorted by time (starting with the most recent).
 
 ### Search and inspect events
 
 In this section we have the following goals:
 
 1. Sign player in and produce a "player_logged_in" event.
-2. Use the [Event Search Query Panel](https://api.playfab.com/docs/tutorials/landing-analytics/event-history/event-search) to find this event using search query.
-3. Inspect this event using the [Events Timeline Panel](https://api.playfab.com/docs/tutorials/landing-analytics/event-history/timeline)
-4. Observe how this event effects the [Event History Chart](https://api.playfab.com/docs/tutorials/landing-analytics/event-history/real-time-analytics-event-history-chart-panel).
+2. Use the [Event Search Query Panel](../../analytics/metrics/real-time-analytics-event-search-query-panel.md) to find this event using search query.
+3. Inspect this event using the [Events Timeline Panel](../../analytics/metrics/real-time-analytics-events-timeline-panel.md).
+4. Observe how this event effects the [Event History Chart](../../analytics/metrics/real-time-analytics-event-history-chart-panel.md).
 
 #### Demonstration
 
@@ -66,15 +66,17 @@ If no player is registered with the given customID "12345QWERY", the player will
 CreateAccount = true
 ```
 
-We now have to **locate** the event. The easiest way to do this is by means of the [Event Search Query Panel](https://api.playfab.com/docs/tutorials/landing-analytics/event-history/event-search). We know the custom ID, and we can use it as a search query:
+We now have to **locate** the event. The easiest way to do this is by means of the [Event Search Query Panel](../../analytics/metrics/real-time-analytics-event-search-query-panel.md). We know the custom ID, and we can use it as a search query:
 
 ![Game Manager - Event History Chart - Search Query](media/tutorials/game-manager-event-history-chart-search-query.png)  
 
-Once you have located the event in the [Events Timeline Panel](https://api.playfab.com/docs/tutorials/landing-analytics/event-history/timeline) you can further **inspect** it by clicking the timestamp label:
+Once you have located the event in the [Events Timeline Panel](
+../../analytics/metrics/real-time-analytics-events-timeline-panel.md) you can further **inspect** it by clicking the timestamp label:
 
 ![Game Manager - Event History - Timestamp](media/tutorials/game-manager-event-history-timestamp.png)  
 
-Finally, you may analyze how this event effects the overall event flow using the [Event History Chart](https://api.playfab.com/docs/tutorials/landing-analytics/event-history/real-time-analytics-event-history-chart-panel):
+Finally, you may analyze how this event effects the overall event flow using the [Event History Chart](
+../../analytics/metrics/real-time-analytics-event-history-chart-panel.md):
 
 ![Game Manager - Event History Chart - Event graph](media/tutorials/game-manager-event-history-event-graph.png)  
 

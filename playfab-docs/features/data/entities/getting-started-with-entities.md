@@ -27,7 +27,7 @@ Because this is a new API, we are refining some of the terms used in other API m
 - **title_player_account** - This concept is based on User/Player in the existing API methods. Each player may contain some information for the current title. This is similar to [UserData](). This is identified by the Entity ID (Entity.Id) you get back in the [EntityTokenResponse](https://api.playfab.com/documentation/Client/datatype/PlayFab.Client.Models/PlayFab.Client.Models.EntityTokenResponse) object on any login where you specify LoginTitlePlayerAccountEntity as true.
 - **character** - This concept is unchanged. Your player may own characters, which can each contain some information. This is similar to [CharacterData](https://api.playfab.com/documentation/client/method/GetCharacterData). It is identified by the Character ID (CharacterId) of the character.
 
-A list of all built-in Entity types will can be found [here](https://api.playfab.com/docs/tutorials/entities/entitytypes).
+See the [Available built-in Entity types](../../data/entities/available-built-in-entity-types.md) tutorial, for a list of all built-in Entity types.
 
 > [!NOTE]
 > Formerly, PlayFabId covered both "master_player" and "title_player" concepts. Separating these concepts simplifies and clarifies the functionality. A player can interact with multiple titles that are all in the same studio, so while they can have unique information as a different player in each title, the owner of the studio also needs to identify that player as a single entity with shared data across titles. This enables things like cross promotion of games and giving players cross-game rewards.

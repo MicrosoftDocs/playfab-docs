@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 ## Access Player Details
 
-To access Player details, navigate to [Players](https://api.playfab.com/docs/tutorials/landing-players/overview) **(1)** using the sidebar menu, then locate the player you need, and click the ID label **(2)**.
+To access Player details, navigate to [Players](../../data/playerdata/using-the-players-page.md) **(1)** using the sidebar menu, then locate the player you need, and click the ID label **(2)**.
 
 ![Game Manager - Access Player details](media/tutorials/game-manager-access-player-details.png)  
 
@@ -37,20 +37,19 @@ The Player Overview (or details page) is a starting point for controlling your p
 
 PlayFab offers a wide set of pages for fine tuning and analyzing your player. These pages are available from the player toolbar panel, and consist of the following items:
 
-- [PlayStream](https://api.playfab.com/docs/tutorials/landing-players/overview/%7Bentry:2666:url%7D) for monitoring events coming from the player in real-time.
-- [Event History](https://api.playfab.com/docs/tutorials/landing-players/overview/%7Bentry:2672:url%7D) for a general overview of events.
-- [Logins](https://api.playfab.com/docs/tutorials/landing-players/overview/player-details/logins) for inspecting a player's login attempts.
-- [Segments](https://api.playfab.com/docs/tutorials/landing-players/overview/%7Bentry:2876:url%7D) for inspecting the segments that a player belongs to.
-- [Statistics](https://api.playfab.com/docs/tutorials/landing-players/player-statistics) for inspecting and manipulating a player's statistical values.
-- [Player Data (Title)](https://api.playfab.com/docs/tutorials/landing-content/using-title-data) for managing account data within the current scope.
-- [Player Data (Publisher)](https://api.playfab.com/docs/tutorials/landing-players/publisher-data) for managing account data across several titles.
+- [Event History](../../automation/playstream-events/event-history.md) for a general overview of events.
+- [Logins](player-logins.md) for inspecting a player's login attempts.
+- [Segments](player-segments.md) for inspecting the segments that a player belongs to.
+- [Statistics](using-player-statistics.md) for inspecting and manipulating a player's statistical values.
+- [Player Data (Title)](../../config/titledata/using-title-data.md) for managing account data within the current scope.
+- [Player Data (Publisher)](using-player-publisher-data.md) for managing account data across several titles.
 - Virtual Currency
-- [Inventory](https://api.playfab.com/docs/tutorials/landing-players/inventory) for managing the items that a player owns.
+- [Inventory](player-inventory.md) for managing the items that a player owns.
 - Purchases
-- [Friends](https://api.playfab.com/docs/tutorials/landing-players/friends-lists) for managing a player's friends list.
+- [Friends](../../social/friends-groups/friends-lists.md) for managing a player's friends list.
 - Characters
 - Multiplayer
-- Bans
+- [Bans](player-bans.md)
 
 ## Managing a Player Account
 
