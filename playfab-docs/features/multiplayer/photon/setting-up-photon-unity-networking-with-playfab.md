@@ -21,7 +21,7 @@ We will illustrate how both features work using latest [Photon Unity example pro
 
 ## Prerequisites
 
-1. [Unity](https://api.playfab.com/docs/getting-started/unity-getting-started) project with PlayFab SDK imported and configured title
+1. A [Unity](../../../sdks/unity3d/quickstart.md) project with the PlayFab SDK imported, and a configured title.
 2. PlayFab title registered
 
 > [!NOTE]  

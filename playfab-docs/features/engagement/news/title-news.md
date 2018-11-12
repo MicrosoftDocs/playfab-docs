@@ -19,7 +19,7 @@ Title News is a mechanism for communicating with your players. It contains a few
 
 There are two ways to create Title News entries, via Game Manager and the admin API method [AddNews](https://api.playfab.com/documentation/admin/method/AddNews).
 
-To create Title News entries with Game Manager, you will need to be familiar with [Game Manager](https://api.playfab.com/docs/tutorials/landing-analytics/game-manager-tour).
+To create Title News entries with Game Manager, you will need to be familiar with [Game Manager](../../config/gamemanager/game-manager-tour.md).
 
 Game Manager: Navigate to your title -> Content -> Title News -> Title News
 

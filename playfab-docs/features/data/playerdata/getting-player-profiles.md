@@ -16,7 +16,7 @@ This tutorial walks you through how to use the [GetPlayerProfile](https://api.pl
 
 ## Requirements
 
-For this tutorial, basic knowledge of how to create a player for your title is needed so that you can perform a GetPlayerProfile on the player. Refer to the [Getting Started with PlayFab](https://api.playfab.com/docs/general-getting-started) tutorial which will run you through the process of creating a player for the title.
+For this tutorial, basic knowledge of how to create a player for your title is needed so that you can perform a GetPlayerProfile on the player. Refer to the [Getting Started with PlayFab](../../config/dev-test-live/getting-started-with-playfab.md) tutorial which will run you through the process of creating a player for the title.
 
 It is also worthwhile to read the [Game Manager Tour](../../config/gamemanager/game-manager-tour.md) tutorial if you are unfamiliar with the Game Manager, as it is the place where we configure profile constraints.
 

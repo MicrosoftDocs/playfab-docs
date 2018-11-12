@@ -26,7 +26,7 @@ In this tutorial you will learn how to successfully add Google Play Games Sign-I
 - A project built using the Unity game engine
 - A Google developer account
 - A PlayFab developer account which has access to a game title in PlayFab
-- The [PlayFab Unity Editor Extensions & Unity SDK](https://api.playfab.com/docs/getting-started/unity-getting-started)
+- The [PlayFab Unity Editor Extensions & Unity SDK](../../../sdks/unity3d/quickstart.md)
 - The [Google Play Games SDK](https://github.com/playgameservices/play-games-plugin-for-unity)
 - Familiarity with [Login basics and Best Practices](../../authentication/platform-specific-authentication/login-basics-best-practices.md)
 
@@ -41,7 +41,7 @@ First, we will start by getting the basic stuff set up in Google Play. There are
     3. Click on **Upload APK**.
 3. [Setting Up Google Play Games Services]() - Watch the YouTube video as the Link here does not reflect the exact UI of Google Play Games Services anymore.
 4. Download the [Google Play Games SDK]() (if you have not done so already) and install it.
-5. Install the **PlayFab Unity SDK**. if you do not know how to do this, follow the [PlayFab Unity Getting Started Guide](https://api.playfab.com/docs/getting-started/unity-getting-started).
+5. Install the **PlayFab Unity SDK**. if you do not know how to do this, follow the [Unity3D Quickstart Guide](../../../sdks/unity3d/quickstart.md).
 
 ## Configuring Google Play Games
 
