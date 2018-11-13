@@ -1,5 +1,5 @@
 - name: SDKS
-  href: ./index.md
+  href: /gaming/playfab/sdks
   items:
   - name: ActionScript
     href: ./actionscript/index.md

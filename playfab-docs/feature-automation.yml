@@ -1,0 +1,31 @@
+### YamlMime:YamlDocument
+documentType: LandingData
+title: "PlayFab Features"
+metadata:
+  title: "PlayFab Features"
+  description: PlayFab Features
+  ms.date: 11/13/2018
+  ms.topic: landing-page
+sections:
+- items:
+  - type: list
+    style: cards
+    className: cardsF
+    columns: 3
+    items:
+    - image:
+        src: "/gaming/playfab/features/media/feature_cloudscript.svg"
+      title: "Cloud Script"
+      html: "<p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/automation/cloudscript/'>Overview</a></p><p><a href='/gaming/playfab/features/automation/cloudscript/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/automation/cloudscript/tutorials'>Tutorials</a></p>"
+    - image:
+        src: "/gaming/playfab/features/media/feature_playstream.svg"
+      title: "PlayStream"
+      html: "<p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/automation/playstream-events/'>Overview</a></p><p><a href='/gaming/playfab/features/automation/playstream-events/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/automation/playstream-events/tutorials'>Tutorials</a></p>"
+    - image:
+        src: "/gaming/playfab/features/media/feature_actions_rules.svg"
+      title: "Actions &amp; Rules"
+      html: "<p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/automation/actions-rules/'>Overview</a></p><p><a href='/gaming/playfab/features/automation/actions-rules/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/automation/actions-rules/tutorials'>Tutorials</a></p>"
+    - image:
+        src: "/gaming/playfab/features/media/feature_scheduled_tasks.svg"
+      title: "Scheduled Tasks"
+      html: "<p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/automation/scheduled-tasks/'>Overview</a></p><p><a href='/gaming/playfab/features/automation/scheduled-tasks/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/automation/scheduled-tasks/tutorials'>Tutorials</a></p>"

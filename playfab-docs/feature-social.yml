@@ -1,0 +1,27 @@
+### YamlMime:YamlDocument
+documentType: LandingData
+title: "PlayFab Features"
+metadata:
+  title: "PlayFab Features"
+  description: PlayFab Features
+  ms.date: 11/13/2018
+  ms.topic: landing-page
+sections:
+- items:
+  - type: list
+    style: cards
+    className: cardsF
+    columns: 3
+    items:
+    - image:
+        src: "/gaming/playfab/features/media/feature_friends_groups.svg"
+      title: "Friends &amp; Groups"
+      html: "<p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/social/friends-groups/'>Overview</a></p><p><a href='/gaming/playfab/features/social/friends-groups/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/social/friends-groups/tutorials'>Tutorials</a></p>"
+    - image:
+        src: "/gaming/playfab/features/media/feature_tournaments_leaderboards.svg"
+      title: "Tournaments &amp; Leaderboards"
+      html: "<p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/social/tournaments-leaderboards/'>Overview</a></p><p><a href='/gaming/playfab/features/social/tournaments-leaderboards/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/social/tournaments-leaderboards/tutorials'>Tutorials</a></p>"
+    - image:
+        src: "/gaming/playfab/features/media/feature_trading.svg"
+      title: "Trading"
+      html: "<p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/social/trading/'>Overview</a></p><p><a href='/gaming/playfab/features/social/trading/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/social/trading/tutorials'>Tutorials</a></p>"

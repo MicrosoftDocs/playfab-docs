@@ -1,0 +1,27 @@
+### YamlMime:YamlDocument
+documentType: LandingData
+title: "PlayFab Features"
+metadata:
+  title: "PlayFab Features"
+  description: PlayFab Features
+  ms.date: 11/13/2018
+  ms.topic: landing-page
+sections:
+- items:
+  - type: list
+    style: cards
+    className: cardsF
+    columns: 3
+    items:
+    - image:
+        src: "/gaming/playfab/features/media/feature_game_manager.svg"
+      title: "Game Manager"
+      html: "<p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/config/gamemanager/'>Overview</a></p><p><a href='/gaming/playfab/features/config/gamemanager/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/config/gamemanager/tutorials'>Tutorials</a></p>"
+    - image:
+        src: "/gaming/playfab/features/media/feature_titledata.svg"
+      title: "Title Data"
+      html: "<p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/config/titledata/'>Overview</a></p><p><a href='/gaming/playfab/features/config/titledata/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/config/titledata/tutorials'>Tutorials</a></p>"
+    - image:
+        src: "/gaming/playfab/features/media/feature_dev_test_live.svg"
+      title: "Dev-Test-Live"
+      html: "<p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/config/dev-test-live/'>Overview</a></p><p><a href='/gaming/playfab/features/config/dev-test-live/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/config/dev-test-live/tutorials'>Tutorials</a></p>"

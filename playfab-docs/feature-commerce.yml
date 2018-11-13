@@ -1,0 +1,27 @@
+### YamlMime:YamlDocument
+documentType: LandingData
+title: "PlayFab Features"
+metadata:
+  title: "PlayFab Features"
+  description: PlayFab Features
+  ms.date: 11/13/2018
+  ms.topic: landing-page
+sections:
+- items:
+  - type: list
+    style: cards
+    className: cardsF
+    columns: 3
+    items:
+    - image:
+        src: "/gaming/playfab/features/media/feature_items.svg"
+      title: "Items"
+      html: "<p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/commerce/items/'>Overview</a></p><p><a href='/gaming/playfab/features/commerce/items/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/commerce/items/tutorials'>Tutorials</a></p>"
+    - image:
+        src: "/gaming/playfab/features/media/feature_stores.svg"
+      title: "Stores"
+      html: "<p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/commerce/stores/'>Overview</a></p><p><a href='/gaming/playfab/features/commerce/stores/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/commerce/stores/tutorials'>Tutorials</a></p>"
+    - image:
+        src: "/gaming/playfab/features/media/feature_economy.svg"
+      title: "Economy"
+      html: "<p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/commerce/economy/'>Overview</a></p><p><a href='/gaming/playfab/features/commerce/economy/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/commerce/economy/tutorials'>Tutorials</a></p>"
