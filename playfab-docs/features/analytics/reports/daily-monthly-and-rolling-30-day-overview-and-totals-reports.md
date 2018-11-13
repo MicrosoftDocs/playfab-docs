@@ -61,35 +61,35 @@ Please, consult our [Client API Documentation](https://api.playfab.com/documenta
 
 The following API calls will introduce new data for *Total Logins* and *Total Unique Logins*:
 
-- [LoginWithAndroidDeviceID](https://api.playfab.com/documentation/client/method/LoginWithAndroidDeviceID)
-- [LoginWithCustomID](https://api.playfab.com/documentation/client/method/LoginWithCustomID)
-- [LoginWithEmailAddress](https://api.playfab.com/documentation/client/method/LoginWithEmailAddress)
-- [LoginWithFacebook](https://api.playfab.com/documentation/client/method/LoginWithFacebook)
-- [LoginWithGameCenter](https://api.playfab.com/documentation/client/method/LoginWithGameCenter)
-- [LoginWithGoogleAccount](https://api.playfab.com/documentation/client/method/LoginWithGoogleAccount)
-- [LoginWithIOSDeviceID](https://api.playfab.com/documentation/client/method/LoginWithIOSDeviceID)
-- [LoginWithKongregate](https://api.playfab.com/documentation/client/method/LoginWithKongregate)
-- [LoginWithPlayFab](https://api.playfab.com/documentation/client/method/LoginWithPlayFab)
-- [LoginWithSteam](https://api.playfab.com/documentation/client/method/LoginWithSteam)
-- [LoginWithTwitch](https://api.playfab.com/documentation/client/method/LoginWithTwitch)
-- [LoginWithWindowsHello](https://api.playfab.com/documentation/client/method/LoginWithWindowsHello)
+- [LoginWithAndroidDeviceID](xref:titleid.playfabapi.com.client.authentication.loginwithandroiddeviceid)
+- [LoginWithCustomID](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid)
+- [LoginWithEmailAddress](xref:titleid.playfabapi.com.client.authentication.loginwithemailaddress)
+- [LoginWithFacebook](xref:titleid.playfabapi.com.client.authentication.loginwithfacebook)
+- [LoginWithGameCenter](xref:titleid.playfabapi.com.client.authentication.loginwithgamecenter)
+- [LoginWithGoogleAccount](xref:titleid.playfabapi.com.client.authentication.loginwithgoogleaccount)
+- [LoginWithIOSDeviceID](xref:titleid.playfabapi.com.client.authentication.loginwithiosdeviceid)
+- [LoginWithKongregate](xref:titleid.playfabapi.com.client.authentication.loginwithkongregate)
+- [LoginWithPlayFab](xref:titleid.playfabapi.com.client.authentication.loginwithplayfab)
+- [LoginWithSteam](xref:titleid.playfabapi.com.client.authentication.loginwithsteam)
+- [LoginWithTwitch](xref:titleid.playfabapi.com.client.authentication.loginwithtwitch)
+- [LoginWithWindowsHello](xref:titleid.playfabapi.com.client.authentication.loginwithwindowshello)
 
 The following API calls will introduce new data for *Total New Users*:
 
-- [RegisterPlayFabUser](https://api.playfab.com/documentation/client/method/RegisterPlayFabUser)
-- [RegisterWithWindowsHello](https://api.playfab.com/documentation/client/method/RegisterWithWindowsHello)
+- [RegisterPlayFabUser](xref:titleid.playfabapi.com.client.authentication.registerplayfabuser)
+- [RegisterWithWindowsHello](xref:titleid.playfabapi.com.client.authentication.registerwithwindowshello)
 
 The following API calls will introduce new data for *Total New Users* if the CreateAccount flag is set:
 
-- [LoginWithAndroidDeviceID](https://api.playfab.com/documentation/client/method/LoginWithAndroidDeviceID)
-- [LoginWithCustomID](https://api.playfab.com/documentation/client/method/LoginWithCustomID)
-- [LoginWithFacebook](https://api.playfab.com/documentation/client/method/LoginWithFacebook)
-- [LoginWithGameCenter](https://api.playfab.com/documentation/client/method/LoginWithGameCenter)
-- [LoginWithGoogleAccount](https://api.playfab.com/documentation/client/method/LoginWithGoogleAccount)
-- [LoginWithIOSDeviceID](https://api.playfab.com/documentation/client/method/LoginWithIOSDeviceID)
-- [LoginWithKongregate](https://api.playfab.com/documentation/client/method/LoginWithKongregate)
-- [LoginWithSteam](https://api.playfab.com/documentation/client/method/LoginWithSteam)
-- [LoginWithTwitch](https://api.playfab.com/documentation/client/method/LoginWithTwitch)
+- [LoginWithAndroidDeviceID](xref:titleid.playfabapi.com.client.authentication.loginwithandroiddeviceid)
+- [LoginWithCustomID](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid)
+- [LoginWithFacebook](xref:titleid.playfabapi.com.client.authentication.loginwithfacebook)
+- [LoginWithGameCenter](xref:titleid.playfabapi.com.client.authentication.loginwithgamecenter)
+- [LoginWithGoogleAccount](xref:titleid.playfabapi.com.client.authentication.loginwithgoogleaccount)
+- [LoginWithIOSDeviceID](xref:titleid.playfabapi.com.client.authentication.loginwithiosdeviceid)
+- [LoginWithKongregate](xref:titleid.playfabapi.com.client.authentication.loginwithkongregate)
+- [LoginWithSteam](xref:titleid.playfabapi.com.client.authentication.loginwithsteam)
+- [LoginWithTwitch](xref:titleid.playfabapi.com.client.authentication.loginwithtwitch)
 
 The *Unique Paying Users*, *Revenue*, *Purchases*, *Average Revenue Per User (ARPU)*, *Average Revenue Per Paying User (ARPPU)* and *Average Purchase Price* metrics are used to analyze purchases and payments. See the [Non-receipt Payment Processing](../../commerce/economy/non-receipt-payment-processing.md) tutorial for more information on conducting payments.
 

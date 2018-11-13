@@ -37,7 +37,7 @@ Then you can follow these steps:
 
 1. Call [KeyCredentialManager.RequestCreateAsync](https://docs.microsoft.com/en-us/uwp/api/windows.security.credentials.keycredentialmanager) to generate a new public key for this user.
 2. Call [CryptographicBuffer.EncodeToBase64String](https://docs.microsoft.com/en-us/uwp/api/Windows.Security.Cryptography.CryptographicBuffer#Windows_Security_Cryptography_CryptographicBuffer_EncodeToBase64String_Windows_Storage_Streams_IBuffer_) to convert the IBuffer from above to a string.
-3. Call [PlayFabClientAPI.RegisterWithWindowsHello](https://api.playfab.com/documentation/client/method/RegisterWithWindowsHello) with the following required parameters:  
+3. Call [PlayFabClientAPI.RegisterWithWindowsHello](xref:titleid.playfabapi.com.client.authentication.registerwithwindowshello) with the following required parameters:  
     1. The Windows username
     2. The base 64 encoded public key from above
 4. Assuming Register was successful, the player will now be logged in. You will get back a session token that you can use to authenticate the player with all other PlayFab APIs.

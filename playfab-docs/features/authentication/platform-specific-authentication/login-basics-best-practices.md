@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 ## Platform-specific authentication tutorials
 
-While all of the Platform-specific authentication tutorials demonstrate logging in with [LoginWithCustomId](https://api.playfab.com/documentation/client/method/LoginWithCustomID), the uses for this login in a published game are limited: Pairing a PlayFab account to a pre-existing database or other back-end system. Otherwise, it is very rare for a published title to use a Custom ID for a primary login since in most cases, you want to capture additional information on the player's platform.
+While all of the Platform-specific authentication tutorials demonstrate logging in with [LoginWithCustomID](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid), the uses for this login in a published game are limited: Pairing a PlayFab account to a pre-existing database or other back-end system. Otherwise, it is very rare for a published title to use a Custom ID for a primary login since in most cases, you want to capture additional information on the player's platform.
 
 **Why we demonstrate this first**: Because it's the easiest. A Custom ID can be anything and it makes the "call your first API" step easier. Once you get serious about developing and releasing your title, it is very likely you will switch to another login mechanism.
 
@@ -22,7 +22,7 @@ While all of the Platform-specific authentication tutorials demonstrate logging 
 
 ## Anonymous login mechanisms
 
-The anonymous login mechanisms are the simplest to use. They require zero input from the player so that there's no friction to the first time user experience, and they create a unique account in PlayFab for each player. This is the most common login mechanism. These logins include: [LoginWithIOSDeviceID](https://api.playfab.com/documentation/client/method/LoginWithIOSDeviceID), [LoginWithAndroidDeviceID](https://api.playfab.com/documentation/client/method/LoginWithAndroidDeviceID), and [LoginWithCustomId](https://api.playfab.com/documentation/client/method/LoginWithCustomID).
+The anonymous login mechanisms are the simplest to use. They require zero input from the player so that there's no friction to the first time user experience, and they create a unique account in PlayFab for each player. This is the most common login mechanism. These logins include: [LoginWithIOSDeviceID](xref:titleid.playfabapi.com.client.authentication.loginwithiosdeviceid), [LoginWithAndroidDeviceID](xref:titleid.playfabapi.com.client.authentication.loginwithandroiddeviceid), and [LoginWithCustomID](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid).
 
 Being anonymous, these methods can uniquely identify a device, but contain no recoverable information about the player. If the player loses or breaks their device, the account is lost, and may be very difficult to recover. It is not impossible, but in most cases the account will simply be orphaned and irretrievable.
 
@@ -45,15 +45,15 @@ The recoverable login mechanisms require some identity information from the play
 
 ### Pure PlayFab options
 
-The simplest options are: [LoginWithPlayFab](https://api.playfab.com/documentation/client/method/LoginWithPlayFab) and [LoginWithEmailAddress](https://api.playfab.com/documentation/client/method/LoginWithEmailAddress). If used, the email or username plus password are authenticated directly by PlayFab. The account is recoverable by the email or username, even if the user forgets their password. The login is generally secure (you can implement your own "password strength check" into your game to improve this).
+The simplest options are: [LoginWithPlayFab](xref:titleid.playfabapi.com.client.authentication.loginwithplayfab) and [LoginWithEmailAddress](xref:titleid.playfabapi.com.client.authentication.loginwithemailaddress). If used, the email or username plus password are authenticated directly by PlayFab. The account is recoverable by the email or username, even if the user forgets their password. The login is generally secure (you can implement your own "password strength check" into your game to improve this).
 
 ### Third party API options
 
-These require separate API calls to another service (but do not require additional SDK installations): [LoginWithKongregate](https://api.playfab.com/documentation/client/method/LoginWithKongregate), [LoginWithSteam](https://api.playfab.com/documentation/client/method/LoginWithSteam), [LoginWithTwitch](https://api.playfab.com/documentation/client/method/LoginWithTwitch). Secure authentication happens between your user, and the 3rd party service API call.
+These require separate API calls to another service (but do not require additional SDK installations): [LoginWithKongregate](xref:titleid.playfabapi.com.client.authentication.loginwithkongregate), [LoginWithSteam](xref:titleid.playfabapi.com.client.authentication.loginwithsteam), [LoginWithTwitch](xref:titleid.playfabapi.com.client.authentication.loginwithtwitch). Secure authentication happens between your user, and the 3rd party service API call.
 
 ### Third party SDK options
 
-[LoginWithFacebook](https://api.playfab.com/documentation/client/method/LoginWithFacebook), [LoginWithGoogleAccount](https://api.playfab.com/documentation/client/method/LoginWithGoogleAccount), [LoginWithWindowsHello](https://api.playfab.com/documentation/client/method/LoginWithWindowsHello). These require a separate SDK installed into your game. Secure authentication happens within the 3rd party SDK.
+[LoginWithFacebook](xref:titleid.playfabapi.com.client.authentication.loginwithfacebook), [LoginWithGoogleAccount](xref:titleid.playfabapi.com.client.authentication.loginwithgoogleaccount), [LoginWithWindowsHello](xref:titleid.playfabapi.com.client.authentication.loginwithwindowshello). These require a separate SDK installed into your game. Secure authentication happens within the 3rd party SDK.
 
 In all 3rd party options, those services process the login credentials, and you pass a secure token to the appropriate PlayFab login method. PlayFab remains unaware of the login credentials for those services.
 
@@ -63,7 +63,7 @@ In all 3rd party options, those services process the login credentials, and you 
 
 Yes, this is indeed a thing, and it has a legitimate (if limited) purpose.
 
-Specifically, [LoginWithGameCenter](https://api.playfab.com/documentation/client/method/LoginWithGameCenter) is considered an insecure login mechanism, and you should use it with extreme care (or not at all).
+Specifically, [LoginWithGameCenter](xref:titleid.playfabapi.com.client.authentication.loginwithgamecenter) is considered an insecure login mechanism, and you should use it with extreme care (or not at all).
 
 GameCenter is a secure login specifically between an iOS device and the GameCenter service, but unlike Apple's identity verification service, there is no secure authentication option for a 3rd party service like PlayFab. Even so, some developers are very familiar with GameCenter and wish to use it as their recoverable login mechanism.
 

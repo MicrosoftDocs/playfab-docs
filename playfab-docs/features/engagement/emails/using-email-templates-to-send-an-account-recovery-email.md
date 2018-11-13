@@ -62,13 +62,13 @@ After filling the form out, click SAVE EMAIL TEMPLATE and you will be redirected
 
 For this next step, you will need an existing player account. If you don't already have a player account, follow the instructions in [Getting Started with PlayFab](../../config/dev-test-live/getting-started-with-playfab.md).
 
-We will add a username, password, and login email using [AddUsernamePassword](https://api.playfab.com/documentation/client/method/AddUsernamePassword). Additionally, we add a contact email to the player using [AddOrUpdateContactEmail](https://api.playfab.com/documentation/client/method/AddOrUpdateContactEmail).
+We will add a username, password, and login email using [AddUsernamePassword](xref:titleid.playfabapi.com.client.accountmanagement.addusernamepassword). Additionally, we add a contact email to the player using [AddOrUpdateContactEmail](https://api.playfab.com/documentation/client/method/AddOrUpdateContactEmail).
 
 Note that a Contact email field on a player profile is different from the Login email field on a player profile, even though they may both contain the same email address. Anytime you send email to the player, it will go to the contact email address.
 
 ### C# Code Example
 
-In the following example, we log in a player then add a username, password, and login email using [AddUsernamePassword](https://api.playfab.com/documentation/client/method/AddUsernamePassword). We then add a contact email using [AddOrUpdateContactEmail](https://api.playfab.com/documentation/client/method/AddOrUpdateContactEmail). Make sure the email address associated with the player is one that you have access to.
+In the following example, we log in a player then add a username, password, and login email using [AddUsernamePassword](xref:titleid.playfabapi.com.client.accountmanagement.addusernamepassword). We then add a contact email using [AddOrUpdateContactEmail](https://api.playfab.com/documentation/client/method/AddOrUpdateContactEmail). Make sure the email address associated with the player is one that you have access to.
 
 ```csharp
 void CreatePlayer()
@@ -244,11 +244,11 @@ void FailureCallback(PlayFabError error)
 
 ## Step 7 - Check that the password was reset
 
-Finally, check that the player has reset their password successfully by logging in with [LoginWithPlayFab](https://api.playfab.com/documentation/client/method/LoginWithPlayFab).
+Finally, check that the player has reset their password successfully by logging in with [LoginWithPlayFab](xref:titleid.playfabapi.com.client.authentication.loginwithplayfab).
 
 ### C# Code Example
 
-In the following C# example, we log in using [LoginWithPlayFab](https://api.playfab.com/documentation/client/method/LoginWithPlayFab) and the new password the player reset to in Step 6.
+In the following C# example, we log in using [LoginWithPlayFab](xref:titleid.playfabapi.com.client.authentication.loginwithplayfab) and the new password the player reset to in Step 6.
 
 ```csharp
 void LoginWithPlayFab(string username, string password)
