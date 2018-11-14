@@ -35,7 +35,7 @@ Generally, if an error object is defined (not null), it indicates that an error 
 
 The most common way to inspect an error is to recognize the error through the code. As described in the [Global API Method Error Codes](../../config/dev-test-live/global-api-method-error-codes.md) tutorial, each generated error contains human-readable and numeric error codes. The code on it's own is sufficient to recognize and process the error accordingly.
 
-Let's take the [LoginWithEmailAddress](xref:titleid.playfabapi.com.client.authentication.loginwithemailaddress) API method as an example. As stated in the [documentation](https://api.playfab.com/documentation/client/method/LoginWithEmailAddress) for this method, the following internal errors may be thrown upon execution:
+Let's take the [LoginWithEmailAddress](xref:titleid.playfabapi.com.client.authentication.loginwithemailaddress) API method as an example. As stated in the [documentation](xref:titleid.playfabapi.com.client.authentication.loginwithemailaddress) for this method, the following internal errors may be thrown upon execution:
 
 - InvalidTitleId 1004
 - AccountNotFound 1001

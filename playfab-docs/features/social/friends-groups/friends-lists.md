@@ -55,7 +55,7 @@ void GetFriends() {
 }
 ```
 
-The [GetFriendsList](https://api.playfab.com/documentation/client/method/GetFriendsList) result contains a parameter "Friends" which is a list of [FriendInfo](https://api.playfab.com/documentation/Client/datatype/PlayFab.Client.Models/PlayFab.Client.Models.FriendInfo) objects.
+The [GetFriendsList](xref:titleid.playfabapi.com.client.friendlistmanagement.getfriendslist) result contains a parameter "Friends" which is a list of [FriendInfo](https://api.playfab.com/documentation/Client/datatype/PlayFab.Client.Models/PlayFab.Client.Models.FriendInfo) objects.
 
 3. To add a friend to the player's friends list, use the [AddFriend](https://api.playfab.com/documentation/Client/method/AddFriend) API call.
 

@@ -77,13 +77,13 @@ Choose "Send email" from the **Type** drop-down. The **Email template** drop-dow
 
 For this next step, you will need an existing player account. If you don't already have a player account, follow the instructions in [Getting Started with PlayFab](../../config/dev-test-live/getting-started-with-playfab.md).
 
-We add a contact email to the player using [AddOrUpdateContactEmail](https://api.playfab.com/documentation/client/method/AddOrUpdateContactEmail).
+We add a contact email to the player using [AddOrUpdateContactEmail](xref:titleid.playfabapi.com.client.accountmanagement.addorupdatecontactemail).
 
 Note that a Contact email field on a player profile is different from the Login email field on a player profile, even though they may both contain the same email address. Anytime you send email to the player, it will only go to the contact email address.
 
 ### C# Code Example
 
-In the following example, we log in a player then add a contact email using [AddOrUpdateContactEmail](https://api.playfab.com/documentation/client/method/AddOrUpdateContactEmail). Make sure the email address associated with the player is one that you have access to.
+In the following example, we log in a player then add a contact email using [AddOrUpdateContactEmail](xref:titleid.playfabapi.com.client.accountmanagement.addorupdatecontactemail). Make sure the email address associated with the player is one that you have access to.
 
 ```csharp
 void AddContactEmailToPlayer()
@@ -129,7 +129,7 @@ Next, confirm that the contact email was added to the player’s profile. Log in
 
 ![Game Manager - Player Profile - Contact email](media/tutorials/game-manager-player-profile-contact-email-verification-pending.png)  
 
-You can also make a call to [GetPlayerProfile](https://api.playfab.com/documentation/client/method/GetPlayerProfile) with “ShowContactEmailAddresses” in the [PlayerProfileViewConstraints](https://api.playfab.com/documentation/Client/datatype/PlayFab.Client.Models/PlayFab.Client.Models.PlayerProfileViewConstraints) set as true to show that the player now has the contact email that we just added.
+You can also make a call to [GetPlayerProfile](xref:titleid.playfabapi.com.client.accountmanagement.getplayerprofile) with “ShowContactEmailAddresses” in the [PlayerProfileViewConstraints](https://api.playfab.com/documentation/Client/datatype/PlayFab.Client.Models/PlayFab.Client.Models.PlayerProfileViewConstraints) set as true to show that the player now has the contact email that we just added.
 
 
 ## Step 5 - Check that the email was sent

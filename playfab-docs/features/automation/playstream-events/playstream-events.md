@@ -45,7 +45,7 @@ Custom events can be classified by "entity". A custom event can be bound to a Pl
 
 ### Relevant API Calls
 
-[WritePlayerEvent](https://api.playfab.com/documentation/Client/method/WritePlayerEvent), [WriteCharacterEvent](https://api.playfab.com/documentation/Client/method/WriteCharacterEvent), [WriteTitleEvent](https://api.playfab.com/documentation/Client/method/WriteTitleEvent)
+[WritePlayerEvent](xref:titleid.playfabapi.com.client.analytics.writeplayerevent), [WriteCharacterEvent](xref:titleid.playfabapi.com.client.analytics.writecharacterevent), [WriteTitleEvent](xref:titleid.playfabapi.com.client.analytics.writetitleevent)
 
 ### Example: Post your own Custom Event
 
@@ -74,7 +74,7 @@ private void OnChestOpened(string chestType, int levelId) {
 ```
 
 1. The method receives chest type and level id.
-2. Use the [WritePlayerEvent](https://api.playfab.com/documentation/Client/method/WritePlayerEvent) API call for posting a custom event bound to a player.
+2. Use the [WritePlayerEvent](xref:titleid.playfabapi.com.client.analytics.writeplayerevent) API call for posting a custom event bound to a player.
 3. Provide a body, specific for your event and your needs. In this case we provide the ChestType and LevelId fields.
 4. Provide an event name identifying your custom event. In this case we use the "player_chest_opened" event type name
 

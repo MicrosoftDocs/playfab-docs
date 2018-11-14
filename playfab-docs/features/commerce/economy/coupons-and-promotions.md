@@ -44,7 +44,7 @@ Clicking one of the links in the example generates the following ten comma-separ
 65g-d4q5-zph,ahs-aofk-5ip,rqp-pk6c-yuu,58d-64h9-a6q,zxk-jtmi-5a1,oeu-6e4z-365,mfy-euhb-qj3,ru9-r1ux-wzy,shj-54cm-5oh,719-7hxc-pzz
 ```
 
-Finally, the customer can redeem a coupon if you provide a GUI which lets them input the code, which then calls [RedeemCoupon](https://api.playfab.com/documentation/client/method/RedeemCoupon).
+Finally, the customer can redeem a coupon if you provide a GUI which lets them input the code, which then calls [RedeemCoupon](xref:titleid.playfabapi.com.client.playeritemmanagement.redeemcoupon).
 
 ```csharp
 // Unity/C#

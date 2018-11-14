@@ -43,7 +43,7 @@ public void GetContent()
 }
 ```
 
-It is important to understand that the [GetContentDownloadUrl](xref:titleid.playfabapi.com.client.method.GetContentDownloadUrl) API call, on it's own, does not produce a new entry in the report. Instead, it provides you with a URI for the content download. You may use any HTTP request technique to execute a GET request. Once this is done, a new entry will be added and reflected in both reports.
+It is important to understand that the [GetContentDownloadUrl](xref:titleid.playfabapi.com.client.content.getcontentdownloadurl) API call, on it's own, does not produce a new entry in the report. Instead, it provides you with a URI for the content download. You may use any HTTP request technique to execute a GET request. Once this is done, a new entry will be added and reflected in both reports.
 
 ## How to work with report charts
 

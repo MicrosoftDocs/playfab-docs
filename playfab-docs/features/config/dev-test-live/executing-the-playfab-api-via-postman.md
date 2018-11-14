@@ -45,14 +45,14 @@ Postman environments are a way to save key-value pairs which can be automaticall
 - **{{SecretKey}}** - Found in the [GameManager](https://developer.playfab.com/) -> Settings and used to authenticate Server API calls.
 - **{{SessionTicket}}** - Provided in response to any [successful login call](https://api.playfab.com/documentation/client#Authentication). This is used to authenticate most Client API calls.
 - **{{PlayFabId}}** - Provided in response to any [successful login call](https://api.playfab.com/documentation/client#Authentication).
-- **{{CharacterId}}** - Returned from [GetAllUsersCharacters](https://api.playfab.com/documentation/client/method/GetAllUsersCharacters).
+- **{{CharacterId}}** - Returned from [GetAllUsersCharacters](xref:titleid.playfabapi.com.client.characters.getalluserscharacters).
 - **{{PrimaryCatalogName}}** - Found in the [GameManager](https://developer.playfab.com/) -> Economy -> Catalogs.
 
-1. If you already have an account, select [Client\LoginWithPlayFab](https://api.playfab.com/documentation/Client/method/RegisterPlayFabUser) (from the left hand Postman menu), update the body JSON with your credentials (or - highly recommended - add them as {{}} variables and use that) and hit Send.
+1. If you already have an account, select [Client\LoginWithPlayFab](xref:titleid.playfabapi.com.client.authentication.loginwithplayfab) (from the left hand Postman menu), update the body JSON with your credentials (or - highly recommended - add them as {{}} variables and use that) and hit Send.
 
    -OR-
 
-   Create a new player account by selecting [Client\RegisterPlayFabUser](https://api.playfab.com/documentation/Client/method/RegisterPlayFabUser), (from the left hand Postman menu), update the body JSON with your credentials as above, and hit Send.
+   Create a new player account by selecting [Client\RegisterPlayFabUser](xref:titleid.playfabapi.com.client.authentication.registerplayfabuser), (from the left hand Postman menu), update the body JSON with your credentials as above, and hit Send.
 
    In either case, after sending the request you should receive an HTTP Status Code 200 (success) response, with a fresh SessionTicket
 

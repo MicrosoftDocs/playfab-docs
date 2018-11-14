@@ -21,7 +21,7 @@ Each leaderboard can be reset manually or automatically, meaning statistic value
 
 ## Initial setup
 
-To follow this guide, please ensure that you have some players already registered for the title. The following screenshot shows 5 players artificially registered using the [LoginWithCustomID](https://api.playfab.com/documentation/Client/method/LoginWithCustomID) API call:
+To follow this guide, please ensure that you have some players already registered for the title. The following screenshot shows 5 players artificially registered using the [LoginWithCustomID](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid) API call:
 
 ![Game Manager - Players - Most recent logins](media/tutorials/game-manager-players-most-recent-logins.png)  
 
@@ -172,9 +172,9 @@ Free tier only allows you to access the very latest archived version of the lead
 
 The same rules apply for all the leaderboard requests:
 
-- [GetLeaderboard](https://api.playfab.com/documentation/client/method/GetLeaderboard)
-- [GetLeaderboardAroundPlayer](https://api.playfab.com/documentation/client/method/GetLeaderboardAroundPlayer)
-- [GetFriendLeaderboardAroundPlayer](https://api.playfab.com/documentation/client/method/GetFriendLeaderboardAroundPlayer)
-- [GetFriendLeaderboard](https://api.playfab.com/documentation/client/method/GetFriendLeaderboard)
+- [GetLeaderboard](xref:titleid.playfabapi.com.client.playerdatamanagement.getleaderboard)
+- [GetLeaderboardAroundPlayer](xref:titleid.playfabapi.com.client.playerdatamanagement.getleaderboardaroundplayer)
+- [GetFriendLeaderboardAroundPlayer](xref:titleid.playfabapi.com.client.playerdatamanagement.getfriendleaderboardaroundplayer)
+- [GetFriendLeaderboard](xref:titleid.playfabapi.com.client.playerdatamanagement.getfriendleaderboard)
 
 Please refer to documentation for the [GetLeaderboardResult](https://api.playfab.com/documentation/client/datatype/PlayFab.client.Models/PlayFab.client.Models.GetLeaderboardResult) method, to learn about useful properties you may get with the leaderboard data.

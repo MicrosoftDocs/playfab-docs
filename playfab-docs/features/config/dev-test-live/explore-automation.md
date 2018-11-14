@@ -88,7 +88,7 @@ handlers.bushelOnYourFirstDay = function(args) {
 
 Let's make sure this welcome package works.
 
-1. In your game, call [ExecuteCloudScript](https://api.playfab.com/documentation/Client/method/ExecuteCloudScript)
+1. In your game, call [ExecuteCloudScript](xref:titleid.playfabapi.com.client.server-sidecloudscript.executecloudscript)
     - FunctionName: "bushelOnYourFirstDay"
     - GeneratePlayStreamEvent: true
 
@@ -164,7 +164,7 @@ That's one, but you can also give the player virtual currency.
 
 ### Brave, brave sir 8fa79815413d472d
 
-Normally your player would reach 550 XP as the result of [UpdatePlayerStatistics](https://api.playfab.com/documentation/Client/method/UpdatePlayerStatistics) or a CloudScript function. But you can adjust player statistics manually.
+Normally your player would reach 550 XP as the result of [UpdatePlayerStatistics](xref:titleid.playfabapi.com.client.playerdatamanagement.updateplayerstatistics) or a CloudScript function. But you can adjust player statistics manually.
 
 1. First, open a tab to the Dashboard and keep it open so you can see what happens
 2. In another tab, go to your player's Statistics tab
@@ -191,7 +191,7 @@ Another cool thing you can do with segments is show different stores to players 
 
 Before we do anything fancy, let's get a baseline for your player.
 
-1. In your game, call [GetStoreItems](https://api.playfab.com/documentation/Client/method/GetStoreItems) and get your store
+1. In your game, call [GetStoreItems](xref:titleid.playfabapi.com.client.title-widedatamanagement.getstoreitems) and get your store
     - CatalogVersion: "main"
     - StoreId: "fruits"
 
@@ -245,14 +245,14 @@ When a normal player sends a request for the contents of the store "fruits," the
 
 Now that you've set the override, let's buy a pear on the cheap.
 
-1. In your game, call [GetStoreItems](https://api.playfab.com/documentation/Client/method/GetStoreItems) and get your store
+1. In your game, call [GetStoreItems](xref:titleid.playfabapi.com.client.title-widedatamanagement.getstoreitems) and get your store
     - CatalogVersion: "main"
     - StoreId: "fruits"
 
    ![GetStoreItems Results - Override - Store Prices](media/tutorials/getstoreitems-results-override-store-prices.png)  
 
 2. Check out those low low prices!
-3. In your game, call [PurchaseItem](https://api.playfab.com/documentation/Client/method/PurchaseItem) and buy a pear for the new price
+3. In your game, call [PurchaseItem](xref:titleid.playfabapi.com.client.playeritemmanagement.purchaseitem) and buy a pear for the new price
     - CatalogVersion: "main"
     - StoreId: "fruits"
     - ItemId: "pear"

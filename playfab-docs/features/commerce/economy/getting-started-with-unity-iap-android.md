@@ -24,7 +24,7 @@ Start by setting up your product IDs and prices via Play Market. At this point, 
 
 To make those entities useful we need to mirror them in PlayFab Item Catalogs: This will turn faceless entities into bundles, containers, and individual items, each with their own unique face: title, description, tags, types, images, and behaviors. All of those are linked to Market Products by sharing IDs.
 
-The best way to access real-money items available for purchase is to use [GetCatalogItems](https://api.playfab.com/documentation/client/method/GetCatalogItems) and [GetStoreItems](https://api.playfab.com/documentation/client/method/GetStoreItems). These are the same API methods that are used by free-currency stores, so the process should be familiar.
+The best way to access real-money items available for purchase is to use [GetCatalogItems](xref:titleid.playfabapi.com.client.title-widedatamanagement.getcatalogitems) and [GetStoreItems](ref:titleid.playfabapi.com.client.title-widedatamanagement.getstoreitems). These are the same API methods that are used by free-currency stores, so the process should be familiar.
 
 The ID of the item is the link between PlayFab and any external IAP system. So, we pass the item ID to the IAP service. At this point, the purchase process starts. The player interacts with the IAP interface and, in the end, if purchase is successful, you obtain a receipt.
 

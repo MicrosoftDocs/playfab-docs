@@ -80,7 +80,7 @@ private static void StartCloudHelloWorld()
 
 ### Deconstruct the Code
 
-[ExecuteCloudScriptRequest](https://api.playfab.com/documentation/Client/datatype/PlayFab.Client.Models/PlayFab.Client.Models.ExecuteCloudScriptRequest) is the request type for any call to PlayFabClientAPI.[ExecuteCloudScript](https://api.playfab.com/documentation/client/method/ExecuteCloudScript).
+[ExecuteCloudScriptRequest](xref:titleid.playfabapi.com.client.server-sidecloudscript.executecloudscript#executecloudscriptrequest) is the request type for any call to PlayFabClientAPI.[ExecuteCloudScript](xref:titleid.playfabapi.com.client.server-sidecloudscript.executecloudscript).
 
 ExecuteCloudScriptRequest.FunctionName is a string. The value should match the name of the function defined in CloudScript. In this case, "**helloWorld**"
 
@@ -110,11 +110,11 @@ private static void OnErrorShared(PlayFabError error)
 
 ## Intermediate Overview: Globals and advanced arguments
 
-CloudScript is a set of JavaScript functions compiled with V8 and hosted on PlayFab's servers. It has access to any [server API](https://api.playfab.com/documentation/server), along with a logger, the PlayFab ID of the player making the CloudScript request, and any information included with the request, all in the form of preset objects. CloudScript functions themselves are properties of a global handlers object. The following table shows a complete list of these predefined variables:
+CloudScript is a set of JavaScript functions compiled with V8 and hosted on PlayFab's servers. It has access to any server API listed in the [PlayFab API Reference documentation](../../../api-references/index.md), along with a logger, the PlayFab ID of the player making the CloudScript request, and any information included with the request, all in the form of preset objects. CloudScript functions themselves are properties of a global handlers object. The following table shows a complete list of these predefined variables:
 
 | Name                 | Use                                                                                                  |
 | :------------------- | :----------------------------------------------------------------------------------------------------|
-| server               | Has access to all [server-side API calls](https://api.playfab.com/documentation/server). They can be called (synchronously) like so: var result = server.AuthenticateUserTicket(request);                                                                          |
+| server               | Has access to all server-side API calls listed in the [PlayFab API Reference documentation](../../../api-references/index.md). They can be called (synchronously) like so: var result = server.AuthenticateUserTicket(request);                                                                          |
 | http                 |Performs synchronous HTTP requests, like so: http.request(url, method, content, contentType, headers, logRequestAndResponse) headers is an object with properties corresponding to various headers and their values. logRequestAndResponse is a boolean that determines whether the title should log any errors in the request as part of the response.                                                                        |
 | log                  | Creates log statements and adds them to the response. Logs have three levels: log.info(), log.debug(), and log.error(). All three levels take a message string, along with an optional object containing extra data to include with the log. e.g. log.info('hello!', { time: new Date() });   |
 | currentPlayerId      | PlayFab Id of the player that triggered the Cloud Script call.                                       |
@@ -184,7 +184,7 @@ Common Server Tasks:
 - Securely calculate battle results
 - and more...
 
-See our [reference documentation](https://api.playfab.com/documentation/server) for required parameters and object structures
+See the Server APIs listed in our [PlayFab API Reference documentation](../../../api-references/index.md) for required parameters and object structures.
 
 The following example is from within a potential CloudScript handler:
 

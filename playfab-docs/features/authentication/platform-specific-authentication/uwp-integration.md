@@ -50,7 +50,7 @@ Then you can follow these steps:
 The process for linking Windows credentials to an existing PlayFab account is very similar. The differences are:
 
 1. First, you must already be logged into a PlayFab account. Typically this is done anonymously, using an insecure, device ID.
-2. Then, follow the steps in the previous section, but use [LinkWindowsHello](https://api.playfab.com/documentation/client/method/LinkWindowsHello) instead of RegisterWithWindowsHello.
+2. Then, follow the steps in the previous section, but use [LinkWindowsHello](xref:titleid.playfabapi.com.client.accountmanagement.linkwindowshello) instead of RegisterWithWindowsHello.
 3. Now the user can login with Windows credentials in the future and access or recover their PlayFab account.
 
 ## Logging in the player via Windows Hello
@@ -59,12 +59,12 @@ Once you have linked Windows Hello credentials to a PlayFab account, you can log
 
 Follow these steps:
 
-1. Call [PlayFabClientAPI.GetWindowsHelloChallengeAsync](https://api.playfab.com/documentation/client/method/GetWindowsHelloChallenge) to create a signing challenge.
+1. Call [PlayFabClientAPI.GetWindowsHelloChallengeAsync](xref:titleid.playfabapi.com.client.authentication.getwindowshellochallenge) to create a signing challenge.
 2. Call [CryptographicBuffer.DecodeFromBase64String](https://docs.microsoft.com/en-us/uwp/api/Windows.Security.Cryptography.CryptographicBuffer#Windows_Security_Cryptography_CryptographicBuffer_DecodeFromBase64String_System_String_) to create an IBuffer for the KeyCredentialManager to have the user sign.
 3. Call var retrieveResult = await [KeyCredentialManager.OpenAsync(userId)](https://docs.microsoft.com/en-us/uwp/api/windows.security.credentials.keycredentialmanager#Windows_Security_Credentials_KeyCredentialManager_OpenAsync_System_String_) to create a key signing service.
 4. Get the credential for this user: var userCredential = retrieveResult.Credential
 5. Call await [userCredential.RequestSignAsync(challengeBuffer)](https://docs.microsoft.com/en-us/uwp/api/Windows.Security.Credentials.KeyCredential#Windows_Security_Credentials_KeyCredential_RequestSignAsync_Windows_Storage_Streams_IBuffer_) to have Windows request that the user sign the server's challenge for this user.
-6. Finally, call [PlayFabClientAPI.LoginWithWindowsHello](https://api.playfab.com/documentation/client/method/LoginWithWindowsHello) to complete the process and login the player.
+6. Finally, call [PlayFabClientAPI.LoginWithWindowsHello](xref:titleid.playfabapi.com.client.authentication.loginwithwindowshello) to complete the process and login the player.
 7. Assuming Login was successful, the player is now logged in. You will get back a session token that you can use to authenticate the player with all other PlayFab APIs.
 
 ## Making a purchase via Windows Store
@@ -85,7 +85,7 @@ Once you have set up the items in the store, you can enable the in-app purchase 
 
 1. Make the purchase in the application, and be sure to request a receipt. For example this document explains the process: [making in-app purchases with UWP](https://docs.microsoft.com/en-us/uwp/api/windows.applicationmodel.store.currentapp#Windows_ApplicationModel_Store_CurrentApp_RequestProductPurchaseAsync_System_String_System_Boolean_).
 2. You will get back a receipt. You can find [more information on receipts here](https://docs.microsoft.com/en-us/windows/uwp/monetize/use-receipts-to-verify-product-purchases).
-3. Call [PlayFabClientAPI.ValidateWindowsStoreReceipt](https://api.playfab.com/documentation/client/method/ValidateWindowsStoreReceipt) to validate the receipt. This will automatically credit the player's inventory in PlayFab with the item they just purchased.
+3. Call [PlayFabClientAPI.ValidateWindowsStoreReceipt](xref:titleid.playfabapi.com.client.platformspecificmethods.validatewindowsstorereceipt) to validate the receipt. This will automatically credit the player's inventory in PlayFab with the item they just purchased.
 
 ## More Questions?
 

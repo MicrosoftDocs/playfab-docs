@@ -31,7 +31,7 @@ To enable this:
 
 ## Statistics are Public Information
 
-There are no private or server-only statistics. A player can always read all of their own statistics via [GetPlayerStatistics](https://api.playfab.com/documentation/client/method/GetPlayerStatistics), and a player can read all other players' statistics via leaderboard API calls. This is true even if you don't display a statistic in-game, or use leaderboards.
+There are no private or server-only statistics. A player can always read all of their own statistics via [GetPlayerStatistics](xref:titleid.playfabapi.com.client.playerdatamanagement.getplayerstatistics), and a player can read all other players' statistics via leaderboard API calls. This is true even if you don't display a statistic in-game, or use leaderboards.
 
 The only exception to this would be if you disable client features through our [API Access Policy](../../config/gamemanager/api-access-policy.md). Please refer to that link for more information on how to use the policy settings for titles, as that is an advanced topic which is not covered by this tutorial.
 

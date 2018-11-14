@@ -95,7 +95,7 @@ You may then check the result through the PlayFab Game Manager and make sure the
 
 ## Fetching Assets
 
-Downloading the asset via code is identical to uploading the asset: it is a two step process. First, you make a call to [GetContentDownloadUrl](https://api.playfab.com/documentation/client/method/GetContentDownloadUrl) and obtain a pre-signed URL that will authorize your download. You then use the  pre-signed URL to make a HTTP GET request and fetch the data. Consider the following snippet that shows the bare bones of the process:
+Downloading the asset via code is identical to uploading the asset: it is a two step process. First, you make a call to [GetContentDownloadUrl](xref:titleid.playfabapi.com.client.content.getcontentdownloadurl) and obtain a pre-signed URL that will authorize your download. You then use the  pre-signed URL to make a HTTP GET request and fetch the data. Consider the following snippet that shows the bare bones of the process:
 
 ```csharp
 public void DownloadFileFromCDN(string key) {
@@ -118,4 +118,4 @@ void GetFile(string preauthorizedUrl) {
 }
 ```
 
-As mentioned above, CDN may involve latency in regards to file updates. During development it is sometimes useful to force fetch the latest, fresh files. The  [GetContentDownloadUrl](https://api.playfab.com/documentation/client/method/GetContentDownloadUrl) call allows you to set the "ThruCDN" parameter to false. The URL returned will then point to non-cached fresh files. (Your published game client should never use this option!)
+As mentioned above, CDN may involve latency in regards to file updates. During development it is sometimes useful to force fetch the latest, fresh files. The  [GetContentDownloadUrl](xref:titleid.playfabapi.com.client.content.getcontentdownloadurl) call allows you to set the "ThruCDN" parameter to false. The URL returned will then point to non-cached fresh files. (Your published game client should never use this option!)

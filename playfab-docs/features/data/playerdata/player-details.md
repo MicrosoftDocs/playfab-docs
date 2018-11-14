@@ -70,7 +70,7 @@ Additionally, you can manage linking. Read more about linking in our tutorial on
 
 ![Game Manager - Player - Accounts - Link New Account](media/tutorials/game-manager-player-link-new-account.png)  
 
-It is only possible to manually link Custom ID, Android Device, or iOS Device accounts. For more sophisticated options (Steam, GameCenter, etc.) consider using the  [PlayFab Client API](https://api.playfab.com/documentation/client).
+It is only possible to manually link Custom ID, Android Device, or iOS Device accounts. For more sophisticated options (Steam, GameCenter, etc.) consider using other Client Account Management APIs listed in our [PlayFab API Reference documentation](../../../api-references/index.md).
 
 ## Running Cloud Script
 

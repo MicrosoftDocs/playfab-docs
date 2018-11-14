@@ -22,11 +22,11 @@ All inventory API calls are designed to be server-authoritative and secure. Used
 
 Client:
 
-- Buy Items with virtual currency: [PurchaseItem](https://api.playfab.com/documentation/client/method/PurchaseItem)
-- Real money purchases: [StartPurchase](https://api.playfab.com/documentation/client/method/StartPurchase), [PayForPurchase](https://api.playfab.com/documentation/client/method/PayForPurchase), [ConfirmPurchase](https://api.playfab.com/documentation/client/method/ConfirmPurchase)
-- View items a player has: [GetUserInventory](https://api.playfab.com/documentation/client/method/GetUserInventory)
-- Remove Items: [ConsumeItem](https://api.playfab.com/documentation/client/method/ConsumeItem), [UnlockContainerInstance](https://api.playfab.com/documentation/client/method/UnlockContainerInstance)
-- Trade Items: [OpenTrade](https://api.playfab.com/documentation/client/method/OpenTrade), [GetPlayerTrades](https://api.playfab.com/documentation/client/method/GetPlayerTrades), [AcceptTrade](https://api.playfab.com/documentation/client/method/AcceptTrade), [CancelTrade](https://api.playfab.com/documentation/client/method/CancelTrade)
+- Buy Items with virtual currency: [PurchaseItem](xref:titleid.playfabapi.com.client.playeritemmanagement.purchaseitem)
+- Real money purchases: [StartPurchase](xref:titleid.playfabapi.com.client.playeritemmanagement.startpurchase), [PayForPurchase](xref:titleid.playfabapi.com.client.playeritemmanagement.payforpurchase), [ConfirmPurchase](xref:titleid.playfabapi.com.client.playeritemmanagement.confirmpurchase)
+- View items a player has: [GetUserInventory](xref:titleid.playfabapi.com.client.playeritemmanagement.getuserinventory)
+- Remove Items: [ConsumeItem](xref:titleid.playfabapi.com.client.playeritemmanagement.consumeitem), [UnlockContainerInstance](xref:titleid.playfabapi.com.client.playeritemmanagement.unlockcontainerinstance)
+- Trade Items: [OpenTrade](xref:titleid.playfabapi.com.client.trading.opentrade), [GetPlayerTrades](xref:titleid.playfabapi.com.client.trading.getplayertrades), [AcceptTrade](xref:titleid.playfabapi.com.client.trading.accepttrade), [CancelTrade](xref:titleid.playfabapi.com.client.trading.canceltrade)
 
 Server:
 
@@ -60,7 +60,7 @@ void LogFailure(PlayFabError error) {
 
 ## Client-only Example: Purchase and Consume a Health Potion
 
-Client API call order: [PurchaseItem](https://api.playfab.com/documentation/client/method/PurchaseItem), [GetUserInventory](https://api.playfab.com/documentation/client/method/GetUserInventory), [ConsumeItem](https://api.playfab.com/documentation/server/method/ConsumeItem)
+Client API call order: [PurchaseItem](xref:titleid.playfabapi.com.client.playeritemmanagement.purchaseitem), [GetUserInventory](xref:titleid.playfabapi.com.client.playeritemmanagement.getuserinventory), [ConsumeItem](https://api.playfab.com/documentation/server/method/ConsumeItem)
 
 First we must begin by defining the item in our Catalog:
 
@@ -100,7 +100,7 @@ void ConsumePotion() {
 
 ## Example: Player is Granted and Opens a Container
 
-API call order: Server/[GrantItemsToUser](https://api.playfab.com/documentation/server/method/GrantItemsToUser), Client/[UnlockContainerInstance](https://api.playfab.com/documentation/client/method/UnlockContainerInstance)
+API call order: Server/[GrantItemsToUser](https://api.playfab.com/documentation/server/method/GrantItemsToUser), Client/[UnlockContainerInstance](xref:titleid.playfabapi.com.client.playeritemmanagement.unlockcontainerinstance)
 
 First, we must begin with a container defined in our catalog. For this example, a "Crystal Container". This example also demonstrates opening the container with a key - an optional item which must also be in the player inventory for the UnlockContainerInstance call to be successful.
 

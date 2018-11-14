@@ -14,10 +14,10 @@ ms.localizationpriority: medium
 
 With PlayFab, you usually construct Leaderboards using the following API methods:
 
-- [GetFriendLeaderboard](https://api.playfab.com/documentation/client/method/GetFriendLeaderboard)
-- [GetFriendLeaderboardAroundPlayer](https://api.playfab.com/documentation/client/method/GetFriendLeaderboardAroundPlayer)
-- [GetLeaderboard](https://api.playfab.com/documentation/client/method/GetLeaderboard)
-- [GetLeaderboardAroundPlayer](https://api.playfab.com/documentation/client/method/GetLeaderboardAroundPlayer)
+- [GetFriendLeaderboard](xref:titleid.playfabapi.com.client.playerdatamanagement.getfriendleaderboard)
+- [GetFriendLeaderboardAroundPlayer](xref:titleid.playfabapi.com.client.playerdatamanagement.getfriendleaderboardaroundplayer)
+- [GetLeaderboard](xref:titleid.playfabapi.com.client.playerdatamanagement.getleaderboard)
+- [GetLeaderboardAroundPlayer](xref:titleid.playfabapi.com.client.playerdatamanagement.getleaderboardaroundplayer)
 
 The result is a list of [PlayerLeaderboardEntry](https://api.playfab.com/documentation/Client/datatype/PlayFab.Client.Models/PlayFab.Client.Models.PlayerLeaderboardEntry) objects that contain only basic information about the player and their relation to the current leaderboard. However, PlayFab also allows you to use [PlayerProfileViewConstraints](https://api.playfab.com/documentation/Client/datatype/PlayFab.Client.Models/PlayFab.Client.Models.PlayerProfileViewConstraints) to gain additional information about each player.
 

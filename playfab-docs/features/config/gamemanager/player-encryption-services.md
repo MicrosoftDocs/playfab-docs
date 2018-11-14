@@ -21,7 +21,7 @@ Player shared secrets should be baked into the respective clients as there are n
 
 ## Title Public Key
 
-The Player Shared Secret is then sent to [GetTitlePublicKey](https://api.playfab.com/documentation/client/method/GetTitlePublicKey) which, if the key is valid, will return a Base 64 encoded RSA CSP blob byte array that can encrypt 237 bytes of data. All APIs that allow accounts to be created now accept posting registration request as an encrypted payload on the EncryptedRequest field. The standard fields TitleId, InfoRequestParameters and CreateAccount should not be included in the encrypted payload.
+The Player Shared Secret is then sent to [GetTitlePublicKey](xref:titleid.playfabapi.com.client.authentication.gettitlepublickey) which, if the key is valid, will return a Base 64 encoded RSA CSP blob byte array that can encrypt 237 bytes of data. All APIs that allow accounts to be created now accept posting registration request as an encrypted payload on the EncryptedRequest field. The standard fields TitleId, InfoRequestParameters and CreateAccount should not be included in the encrypted payload.
 
 ## Using Title Public Key to Register
 
@@ -61,7 +61,7 @@ var createAccountResult = PlayFabClientAPI.LoginWithCustomID(postModel);
 
 ## Player Secret
 
-As part of the new registration scheme is a new field called **PlayerSecret**, which, if set, allows you to sign request headers that will be validated by the server during API calls to all services, including login requests. The Player Secret can only be set once per user per title (that is, a user that is only multiple titles in the same studio will each need to set the Player Secret). If Player Secret isn't set during registration it's possible to set it (if it's not already set) by calling [SetPlayerSecret](https://api.playfab.com/documentation/client/method/SetPlayerSecret). There are Admin and Server APIs that allow setting the Player Secret to a new value even if it has previously been set. Once set the Player Secret should be store securely on the device as it is not recoverable if lost and no APIs exist to recover it.
+As part of the new registration scheme is a new field called **PlayerSecret**, which, if set, allows you to sign request headers that will be validated by the server during API calls to all services, including login requests. The Player Secret can only be set once per user per title (that is, a user that is only multiple titles in the same studio will each need to set the Player Secret). If Player Secret isn't set during registration it's possible to set it (if it's not already set) by calling [SetPlayerSecret](xref:titleid.playfabapi.com.client.authentication.setplayersecret). There are Admin and Server APIs that allow setting the Player Secret to a new value even if it has previously been set. Once set the Player Secret should be store securely on the device as it is not recoverable if lost and no APIs exist to recover it.
 
 ## Using Player Secret to Sign API Requests
 

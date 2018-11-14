@@ -55,7 +55,7 @@ Both Parse and PlayFab provide server-side JavaScript for writing custom game co
 
 ### User Management and Authentication
 
-Like Parse, PlayFab provides rich support for creating and managing player profiles. Player accounts can be linked to multiple different authentication mechanisms, such as [Facebook](https://api.playfab.com/documentation/Client/method/LoginWithFacebook), [Steam](https://api.playfab.com/documentation/Client/method/LoginWithSteam), an[email/password](https://api.playfab.com/documentation/Client/method/LoginWithEmailAddress), an [iOS](https://api.playfab.com/documentation/Client/method/LoginWithIOSDeviceID) or [Android](https://api.playfab.com/documentation/Client/method/LoginWithAndroidDeviceID) device ID, or your own [custom identifiers](https://api.playfab.com/documentation/Client/method/LoginWithCustomID), in order to make it easy to share a single player profile across multiple devices or platforms.
+Like Parse, PlayFab provides rich support for creating and managing player profiles. Player accounts can be linked to multiple different authentication mechanisms, such as [Facebook](https://api.playfab.com/documentation/Client/method/LoginWithFacebook), [Steam](https://api.playfab.com/documentation/Client/method/LoginWithSteam), an[email/password](https://api.playfab.com/documentation/Client/method/LoginWithEmailAddress), an [iOS](https://api.playfab.com/documentation/Client/method/LoginWithIOSDeviceID) or [Android](https://api.playfab.com/documentation/Client/method/LoginWithAndroidDeviceID) device ID, or your own [custom identifiers](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid), in order to make it easy to share a single player profile across multiple devices or platforms.
 
 PlayFab’s Game Manager tool also provides a powerful set of tools for viewing and managing player profiles, ideal for debugging a game in production or providing customer support for a game post-launch. 
 
@@ -128,8 +128,8 @@ There is no risk to experimenting with our Parse player import, since the proces
 12. Download the PlayFab SDK and update your game client to point to PlayFab for your user functions. In particular, the following APIs will prove useful:
     - [Client/LoginWithFacebook](https://api.playfab.com/documentation/Client/method/LoginWithFacebook)
     - [Client/LoginWithEmailAddress](https://api.playfab.com/documentation/Client/method/LoginWithEmailAddress)
-    - [Client/GetUserData](https://api.playfab.com/documentation/Client/method/GetUserData)
-    - [Client/UpdateUserData](https://api.playfab.com/documentation/Client/method/UpdateUserData)
+    - [Client/GetUserData](xref:titleid.playfabapi.com.client.playerdatamanagement.getuserdata)
+    - [Client/UpdateUserData](xref:titleid.playfabapi.com.client.playerdatamanagement.updateuserdata)
 
 ### Migrating other Parse functionality
 

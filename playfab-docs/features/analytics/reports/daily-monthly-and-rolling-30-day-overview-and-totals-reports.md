@@ -57,7 +57,7 @@ Overview reports consist of 12 trend charts, one for each metric described in th
 
 Any API call may introduce new data for *Total API Calls*, *Total Successful API Calls* and *Total API Call Errors*. Once executed, an API call will be added to *Total API Calls*. Then, if an error is introduced, it will be recorded to *Total API Call Errors*. Otherwise, it will belong to *Total Successful API Calls*.
 
-Please, consult our [Client API Documentation](https://api.playfab.com/documentation/client) to review all available API calls.
+Please, consult our [PlayFab API Reference documentation](../../../api-references/index.md) to review all available API calls.
 
 The following API calls will introduce new data for *Total Logins* and *Total Unique Logins*:
 

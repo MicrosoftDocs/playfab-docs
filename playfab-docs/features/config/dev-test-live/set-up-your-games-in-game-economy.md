@@ -46,7 +46,7 @@ The deposit and recharge fields are useful for energy currencies that reset ever
 
 ### Pay it forward
 
-Now you can give players virtual currency directly. Since it can be dangerous to give clients the ability to call [AddUserVirtualCurrency](https://api.playfab.com/documentation/Client/method/AddUserVirtualCurrency), let's add money from the Game Manager.
+Now you can give players virtual currency directly. Since it can be dangerous to give clients the ability to call [AddUserVirtualCurrency](xref:titleid.playfabapi.com.client.playeritemmanagement.adduservirtualcurrency), let's add money from the Game Manager.
 
 1. Go to the player's Virtual Currency tab
 
@@ -103,7 +103,7 @@ Who's hungry for apples? Jerry? Let's get the catalog and attempt to make a purc
 
    ![GetCatalogItems Results - VC Price](media/tutorials/getcatalogitems-results-vc-price.png)  
 
-3. Then call [PurchaseItem](https://api.playfab.com/documentation/Client/method/PurchaseItem) to buy the apple
+3. Then call [PurchaseItem](xref:titleid.playfabapi.com.client.playeritemmanagement.purchaseitem) to buy the apple
     - CatalogVersion: "main"
     - ItemId: "apple"
     - VirtualCurrency: "GO"
@@ -195,14 +195,14 @@ You should see your items listed in the store, but they're not valid until they 
 
 You have a store. Let's buy something!
 
-1. In your game, call [GetStoreItems](https://api.playfab.com/documentation/Client/method/GetStoreItems) and get your store
+1. In your game, call [GetStoreItems](xref:titleid.playfabapi.com.client.title-widedatamanagement.getstoreitems) and get your store
     - CatalogVersion: "main"
     - StoreId: "fruits"
 2. Verify you received an object with the list of items in the store and their prices, in the order you selected.
 
    ![GetStoreItems Results - Before Purchase](media/tutorials/getstoreitems-results-before-purchase.png)  
 
-3. In your game, call [PurchaseItem](https://api.playfab.com/documentation/Client/method/PurchaseItem) and give it the currency and store price of the item you want to buy
+3. In your game, call [PurchaseItem](xref:titleid.playfabapi.com.client.playeritemmanagement.purchaseitem) and give it the currency and store price of the item you want to buy
 
     - CatalogVersion: "main"
     - StoreId: "fruits"
@@ -219,7 +219,7 @@ You will once again see events in the PlayStream debugger showing the purchase f
 ![Game Manager - Dashboard - Purchase flow](media/tutorials/game-manager-dashboard-purchase-flow.png)  
 
 > [!NOTE]
-> If you don't specify the StoreId when calling [PurchaseItem](https://api.playfab.com/documentation/Client/method/PurchaseItem), the purchase will be attempted against the catalog price.
+> If you don't specify the StoreId when calling [PurchaseItem](xref:titleid.playfabapi.com.client.playeritemmanagement.purchaseitem), the purchase will be attempted against the catalog price.
 
 ### Going further
 

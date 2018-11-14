@@ -22,8 +22,8 @@ This topic covers client-API calls, which are safe to call from any process or c
 **About the Code Examples:**
 
 - The C# Code Examples shown in this tutorial correspond to using the PlayFab Unity SDK.
-- Use the client APIs [UpdateUserData](https://api.playfab.com/documentation/Client/method/UpdateUserData) to create, update, or delete and [GetUserData](https://api.playfab.com/documentation/Client/method/GetUserData) to read data for the player.
-- Use the server API [UpdateUserReadOnlyData](https://api.playfab.com/documentation/Server/method/UpdateUserReadOnlyData) to create, update, or delete and the client API [GetUserReadOnlyData](https://api.playfab.com/documentation/Client/method/GetUserReadOnlyData) to read title-specific data for the player. This data is visible to the player, but can only be modified by the server.
+- Use the client APIs [UpdateUserData](xref:titleid.playfabapi.com.client.playerdatamanagement.updateuserdata) to create, update, or delete and [GetUserData](xref:titleid.playfabapi.com.client.playerdatamanagement.getuserdata) to read data for the player.
+- Use the server API [UpdateUserReadOnlyData](https://api.playfab.com/documentation/Server/method/UpdateUserReadOnlyData) to create, update, or delete and the client API [GetUserReadOnlyData](xref:titleid.playfabapi.com.client.playerdatamanagement.getuserreadonlydata) to read title-specific data for the player. This data is visible to the player, but can only be modified by the server.
 - Use the server APIs [UpdateUserInternalData](https://api.playfab.com/documentation/Server/method/UpdateUserInternalData) to create, update, or delete and [GetUserInternalData](https://api.playfab.com/documentation/Server/method/GetUserInternalData) to read title-specific data for the player. This data is server-only, and cannot be seen by the client.
 
 ## Player Data in Game Manager
@@ -37,7 +37,7 @@ You can always get and set player data through Game Manager by performing the fo
 
 ## Setting Player Data
 
-This is data that the client can create, read, update, or delete (CRUD). To set player data, use the [UpdateUserData](https://api.playfab.com/documentation/Client/method/UpdateUserData) method.
+This is data that the client can create, read, update, or delete (CRUD). To set player data, use the [UpdateUserData](xref:titleid.playfabapi.com.client.playerdatamanagement.updateuserdata) method.
 
 ### C# Code Example
 
@@ -61,7 +61,7 @@ void SetUserData() {
 
 ## Getting Player Data
 
-To get player data, use the [GetUserData](https://api.playfab.com/documentation/Client/method/GetUserData) method.
+To get player data, use the [GetUserData](xref:titleid.playfabapi.com.client.playerdatamanagement.getuserdata) method.
 
 ### C# Code Example
 

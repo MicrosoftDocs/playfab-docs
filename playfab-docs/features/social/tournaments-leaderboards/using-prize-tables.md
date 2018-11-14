@@ -54,15 +54,15 @@ Now, we’ll add a second rank range. Click “+ADD RANK” under the TABLE CONT
 
 ## Step 3 - Populate the leaderboard with a player
 
-A leaderboard and prize table associated with it has now been created. The next step is to populate the leaderboard with players. To create players we will be using [LoginWithCustomID](https://api.playfab.com/documentation/Client/method/LoginWithCustomID) from [Getting Started with PlayFab - Chapter 1](../../config/dev-test-live/get-started-with-players-and-tournaments.md) and then we will use the players to populate the leaderboard with [UpdatePlayerStatistics](https://api.playfab.com/documentation/client/method/UpdatePlayerStatistics).
+A leaderboard and prize table associated with it has now been created. The next step is to populate the leaderboard with players. To create players we will be using [LoginWithCustomID](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid) from [Getting Started with PlayFab - Chapter 1](../../config/dev-test-live/get-started-with-players-and-tournaments.md) and then we will use the players to populate the leaderboard with [UpdatePlayerStatistics](xref:titleid.playfabapi.com.client.playerdatamanagement.updateplayerstatistics).
 
-Before we can use [UpdatePlayerStatistics](https://api.playfab.com/documentation/client/method/UpdatePlayerStatistics), we must enable it in API Features. Go to Settings -> API Features. Check “Allow client to post player statistics” and click SAVE API FEATURES.
+Before we can use [UpdatePlayerStatistics](xref:titleid.playfabapi.com.client.playerdatamanagement.updateplayerstatistics), we must enable it in API Features. Go to Settings -> API Features. Check “Allow client to post player statistics” and click SAVE API FEATURES.
 
 ![Game Manager - Settings - API Features - Allow client to post player statistics](media/tutorials/api-features-allow-client-to-post-player-statistics.png)  
 
 ### C# Code Example
 
-The following C# code example creates 5 players and logs them in using [LoginWithCustomID](https://api.playfab.com/documentation/Client/method/LoginWithCustomID). It then populates the leaderboard created earlier "tournamentScore_manual" with the 5 players with values 105, 104, 103, 102, and 101 using [UpdatePlayerStatistics](https://api.playfab.com/documentation/client/method/UpdatePlayerStatistics).
+The following C# code example creates 5 players and logs them in using [LoginWithCustomID](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid). It then populates the leaderboard created earlier "tournamentScore_manual" with the 5 players with values 105, 104, 103, 102, and 101 using [UpdatePlayerStatistics](xref:titleid.playfabapi.com.client.playerdatamanagement.updateplayerstatistics).
 
 ```csharp
 // Note: This is a recursive function. Invoke it initially with no parameter

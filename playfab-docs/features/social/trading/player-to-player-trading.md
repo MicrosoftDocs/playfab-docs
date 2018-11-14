@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 The PlayFab client API allows players to trade items with one another. These API methods are enabled by default, so for the security of your title you may need to use our [API Access Policy](../../config/gamemanager/api-access-policy.md) to disable them.
 
-**BETA**: Our inventory-trading functionality is in a prototype phase. The methods are functional, but lack some useful elements that would make it a complete feature. You cannot request or trade [Virtual Currency](../../commerce/economy/currencies.md), and PlayFab does not provide a list of trades that are available to you from other players. Finally, the trade methods are only available on our [Client API](https://api.playfab.com/documentation/client), and not available from the [Server API](https://api.playfab.com/documentation/server).
+**BETA**: Our inventory-trading functionality is in a prototype phase. The methods are functional, but lack some useful elements that would make it a complete feature. You cannot request or trade [Virtual Currency](../../commerce/economy/currencies.md), and PlayFab does not provide a list of trades that are available to you from other players. Finally, the Trading methods are only available in the Client APIs listed in our [PlayFab API Reference documentation](../../../api-references/index.md), and not available in the Server APIs.
 
 > [!NOTE]
 > All trades are public information. Any player may look at the open trades of another player, as well as another player's trade history (If they know the playFabId of that player)
@@ -26,7 +26,7 @@ The PlayFab client API allows players to trade items with one another. These API
 
 ## Example Case: Gift items between Players
 
-First step, call [OpenTrade](https://api.playfab.com/documentation/client/method/OpenTrade) to make a trade available to another player. In this example we require input parameters to the outer function GiveItemTo, specifically:
+First step, call [OpenTrade](xref:titleid.playfabapi.com.client.trading.opentrade) to make a trade available to another player. In this example we require input parameters to the outer function GiveItemTo, specifically:
 
 - secondPlayerId: This is the unique string that identifies the gift recipient (PlayFabId).
 - myItemInstanceId: This is the unique string that identifies an item instance owned by the current player.

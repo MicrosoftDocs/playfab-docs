@@ -60,7 +60,7 @@ The steps are nearly identical to the preceding example.  This time we will crea
 
 ![Game Manager - Economy - New Store](media/tutorials/game-manager-economy-new-store.png)  
 
-To purchase a single item for VC, you can use our [PurchaseItem](https://api.playfab.com/documentation/client/method/PurchaseItem) method, as described in our [Player inventory](../../data/playerdata/player-inventory.md) tutorial. This tutorial, however, will cover the more advanced topic of setting up multiple items in a single purchase.
+To purchase a single item for VC, you can use our [PurchaseItem](xref:titleid.playfabapi.com.client.playeritemmanagement.purchaseitem) method, as described in our [Player inventory](../../data/playerdata/player-inventory.md) tutorial. This tutorial, however, will cover the more advanced topic of setting up multiple items in a single purchase.
 
 First step, get the store and display it to the user:
 
@@ -143,6 +143,6 @@ void FinishPurchase(string orderId)
 
 Stores are a great mechanism for encouraging your players to purchase items. Stores work with any kind of virtual currency. Stores can also work with real-money through an alternate set of API methods.
 
-You can set up a single-item purchase with VC via [PurchaseItem](https://api.playfab.com/documentation/client/method/PurchaseItem). You can set up a multiple-item purchase with VC via the sequence: [StartPurchase](https://api.playfab.com/documentation/client/method/StartPurchase), [PayForPurchase](https://api.playfab.com/documentation/client/method/PayForPurchase), and [ConfirmPurchase](https://api.playfab.com/documentation/client/method/ConfirmPurchase). To perform real money purchases, consult our advanced tutorial [Non-Receipt Payment Processing](../economy/non-receipt-payment-processing.md).
+You can set up a single-item purchase with VC via [PurchaseItem](xref:titleid.playfabapi.com.client.playeritemmanagement.purchaseitem). You can set up a multiple-item purchase with VC via the sequence: [StartPurchase](xref:titleid.playfabapi.com.client.playeritemmanagement.startpurchase), [PayForPurchase](xref:titleid.playfabapi.com.client.playeritemmanagement.payforpurchase), and [ConfirmPurchase](xref:titleid.playfabapi.com.client.playeritemmanagement.confirmpurchase). To perform real money purchases, consult our advanced tutorial [Non-Receipt Payment Processing](../economy/non-receipt-payment-processing.md).
 
 For advanced Store usage, see our [Custom Stores for Player Segments](../../commerce/stores/custom-stores-for-player-segments.md) tutorial.
