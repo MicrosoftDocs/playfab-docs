@@ -26,7 +26,7 @@ sections:
       title: "C#"
       html: "<p><a href='/gaming/playfab/sdks/c-sharp'>SDK</a></p><p><a href='/gaming/playfab/sdks/c-sharp/quickstart-c-sharp'>Quickstart - C#</a></p><p><a href='/gaming/playfab/sdks/c-sharp/quickstart-xamarin'>Quickstart - Xamarin</a></p>"
     - image: 
-        src: "/gaming/playfab/sdks/media/sdk_cocos2dx.svg"
+        src: "/gaming/playfab/sdks/media/sdk_cocos2dx.png"
       title: "Cocos2D-x"
       html: "<p><a href='/gaming/playfab/sdks/Cocos2D-x'>SDK</a></p><p><a href='/gaming/playfab/sdks/Cocos2D-x/quickstart'>Quickstart</a></p>"
     - image: 
@@ -66,6 +66,6 @@ sections:
       title: "Unity3D"
       html: "<p><a href='/gaming/playfab/sdks/unity3d'>SDK</a></p><p><a href='/gaming/playfab/sdks/unity3d/quickstart'>Quickstart</a></p>"
     - image: 
-        src: "/gaming/playfab/sdks/media/sdk_unreal.svg"
+        src: "/gaming/playfab/sdks/media/sdk_unreal.png"
       title: "Unreal Engine"
       html: "<p><a href='/gaming/playfab/sdks/unreal'>SDK</a></p><p><a href='/gaming/playfab/sdks/unreal/quickstart'>Quickstart</a></p>"

@@ -1,1 +1,0 @@
-Temporary blank quickstarts.md page, so that the toc.yml page is obeyed.

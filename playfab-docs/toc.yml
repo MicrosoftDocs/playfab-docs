@@ -1,7 +1,7 @@
 - name: PlayFab
   href: index.yml
 - name: Quickstarts
-  href: quickstarts.md
+  href: quickstarts.yml
 - name: Features
   expanded: true
   items:

@@ -1,27 +1,36 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: none;
-        stroke: #263746;
-        stroke-miterlimit: 10;
-        stroke-width: 2px;
-      }
-
-      .cls-2 {
-        fill: #263746;
-      }
-    </style>
-  </defs>
-  <title>i_sharepoint-list</title>
-  <g id="Layer_5" data-name="Layer 5">
-    <line class="cls-1" x1="16" y1="9" x2="60" y2="9"/>
-    <line class="cls-1" x1="16" y1="24" x2="60" y2="24"/>
-    <line class="cls-1" x1="16" y1="39" x2="60" y2="39"/>
-    <line class="cls-1" x1="16" y1="54" x2="60" y2="54"/>
-    <circle class="cls-2" cx="8" cy="9" r="4"/>
-    <circle class="cls-2" cx="8" cy="24" r="4"/>
-    <circle class="cls-2" cx="8" cy="39" r="4"/>
-    <circle class="cls-2" cx="8" cy="54" r="4"/>
-  </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 160 160" style="enable-background:new 0 0 160 160;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#2A3548;}
+	.st1{fill:#F25C00;}
+	.st2{fill:#1E2937;}
+	.st3{fill:#CC4602;}
+	.st4{fill:#E4EAF6;}
+</style>
+<g>
+	<g>
+		<polygon class="st0" points="145.4,114.1 145.4,42.2 79.9,4.4 14.4,42.2 14.4,114.1 79.9,152 		"/>
+		<polygon class="st1" points="14.4,109.5 79.9,147.3 145.4,109.5 145.4,117.8 79.9,155.7 14.4,117.8 		"/>
+		<polygon class="st2" points="145.4,114.1 145.4,42.2 79.9,4.4 79.9,152 		"/>
+		<polygon class="st3" points="145.4,117.8 145.4,109.5 79.9,147.3 79.9,155.7 		"/>
+	</g>
+</g>
+<g>
+	<polygon class="st2" points="100.5,110.3 109.2,110.3 109.2,69.6 100.5,78.3 	"/>
+	<polygon class="st2" points="74.8,110.3 83.4,110.3 83.4,91.4 74.8,82.7 	"/>
+	<polygon class="st2" points="61.9,110.3 70.5,110.3 70.5,82.9 61.9,91.6 	"/>
+	<polygon class="st2" points="87.6,110.3 96.3,110.3 96.3,82.5 87.6,91.2 	"/>
+	<polygon class="st2" points="49,110.3 57.7,110.3 57.7,95.8 49,104.4 	"/>
+</g>
+<g>
+	<polygon class="st1" points="112,52 97.4,52 97.4,56.2 104.8,56.2 82.4,78.6 69.7,65.9 46,89.7 46,95.6 69.7,71.9 82.4,84.6 
+		107.8,59.2 107.8,66.6 112,66.6 	"/>
+	<polygon class="st4" points="97.5,107.3 106.2,107.3 106.2,66.6 97.5,75.3 	"/>
+	<polygon class="st4" points="71.8,107.3 80.4,107.3 80.4,88.4 71.8,79.7 	"/>
+	<polygon class="st4" points="58.9,107.3 67.5,107.3 67.5,79.9 58.9,88.6 	"/>
+	<polygon class="st4" points="84.6,107.3 93.3,107.3 93.3,79.5 84.6,88.2 	"/>
+	<polygon class="st4" points="46,107.3 54.7,107.3 54.7,92.8 46,101.4 	"/>
+</g>
 </svg>

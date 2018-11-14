@@ -1,0 +1,51 @@
+### YamlMime:YamlDocument
+documentType: LandingData
+title: "PlayFab Quickstarts"
+metadata:
+  title: "PlayFab Quickstarts"
+  description: PlayFab Quickstarts
+  ms.date: 11/12/2018
+  ms.topic: landing-page
+sections:
+- items:
+  - type: list
+    style: cards
+    className: cardsF
+    columns: 3
+    items:
+    - image:
+        src: "/gaming/playfab/media/quickstart_authentication.svg"
+      title: "Authentication"
+      html: "<p><a href='/gaming/playfab/features/authentication/linking-unlinking/quickstart'>Linking &amp; Unlinking</a></p><p><a href='/gaming/playfab/features/authentication/platform-specific-authentication/quickstart'>Platform-Specific Authentication</a></p>"
+    - image:
+        src: "/gaming/playfab/media/quickstart_data.svg"
+      title: "Data"
+      html: "<p><a href='/gaming/playfab/features/data/entities/quickstart'>Entities</a></p><p><a href='/gaming/playfab/features/data/playerdata/quickstart'>Player Data</a></p><p><a href='/gaming/playfab/features/data/content-delivery-network/quickstart'>Content Delivery Network</a></p>"
+    - image:
+        src: "/gaming/playfab/media/quickstart_config.svg"
+      title: "Config"
+      html: "<p><a href='/gaming/playfab/features/config/gamemanager/quickstart'>Game Manager</a></p><p><a href='/gaming/playfab/features/config/titledata/quickstart'>Title Data</a></p><p><a href='/gaming/playfab/features/config/dev-test-live/quickstart'>Dev-Test-Live</a></p>"
+    - image:
+        src: "/gaming/playfab/media/quickstart_automation.svg"
+      title: "Automation"
+      html: "<p><a href='/gaming/playfab/features/automation/cloudscript/quickstart'>Cloud Script</a></p><p><a href='/gaming/playfab/features/automation/playstream-events/quickstart'>PlayStream</a></p><p><a href='/gaming/playfab/features/automation/actions-rules/quickstart'>Actions &amp; Rules</a></p><p><a href='/gaming/playfab/features/automation/scheduled-tasks/quickstart'>Scheduled Tasks</a></p>"
+    - image:
+        src: "/gaming/playfab/media/quickstart_social.svg"
+      title: "Social"
+      html: "<p><a href='/gaming/playfab/features/social/friends-groups/quickstart'>Friends &amp; Groups</a></p><p><a href='/gaming/playfab/features/social/tournaments-leaderboards/quickstart'>Tournaments &amp; Leaderboards</a></p><p><a href='/gaming/playfab/features/social/trading/quickstart'>Trading</a></p>"
+    - image:
+        src: "/gaming/playfab/media/quickstart_commerce.svg"
+      title: "Commerce"
+      html: "<p><a href='/gaming/playfab/features/commerce/items/quickstart'>Items</a></p><p><a href='/gaming/playfab/features/commerce/stores/quickstart'>Stores</a></p><p><a href='/gaming/playfab/features/commerce/economy/quickstart'>Economy</a></p>"
+    - image:
+        src: "/gaming/playfab/media/quickstart_multiplayer.svg"
+      title: "Multiplayer"
+      html: "<p><a href='/gaming/playfab/features/multiplayer/compute/quickstart'>Compute</a></p><p><a href='/gaming/playfab/features/multiplayer/matchmaking/quickstart'>Matchmaking</a></p><p><a href='/gaming/playfab/features/multiplayer/photon/quickstart'>Photon</a></p>"
+    - image:
+        src: "/gaming/playfab/media/quickstart_analytics.svg"
+      title: "Analytics"
+      html: "<p><a href='/gaming/playfab/features/analytics/metrics/quickstart'>Metrics</a></p><p><a href='/gaming/playfab/features/analytics/reports/quickstart'>Reports</a></p><p><a href='/gaming/playfab/features/analytics/ab-testing/quickstart'>A/B Testing</a></p><p><a href='/gaming/playfab/features/analytics/segmentation/quickstart'>Segmentation</a></p>"
+    - image:
+        src: "/gaming/playfab/media/quickstart_engagement.svg"
+      title: "Engagement"
+      html: "<p><a href='/gaming/playfab/features/engagement/push-notifications/quickstart'>Push Notifications</a></p><p><a href='/gaming/playfab/features/engagement/emails/quickstart'>Emails</a></p><p><a href='/gaming/playfab/features/engagement/news/quickstart'>News</a></p>"

@@ -1,44 +1,36 @@
-<svg id="ICONS-64x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: #fff;
-        stroke: #263746;
-        stroke-miterlimit: 10;
-        stroke-width: 2px;
-      }
-
-      .cls-2 {
-        fill: #e5e5e5;
-      }
-
-      .cls-3 {
-        fill: #fc6a0d;
-      }
-
-      .cls-4 {
-        fill: none;
-      }
-
-      .cls-5 {
-        fill: #263746;
-      }
-    </style>
-  </defs>
-  <title>i_server</title>
-  <rect class="cls-1" x="12" y="1" width="36" height="62"/>
-  <g>
-    <rect class="cls-2" x="29" y="2" width="18" height="60"/>
-    <rect class="cls-3" x="13" y="17" width="16" height="2"/>
-    <polygon class="cls-4" points="37.23 7.14 12.63 7.14 12.63 9.13 37.23 9.13 37.23 7.14 37.23 7.14"/>
-    <polyline class="cls-4" points="37.23 7.14 12.63 7.14 12.63 9.13 37.23 9.13 37.23 7.14"/>
-    <rect class="cls-3" x="13" y="12" width="16" height="2"/>
-    <rect class="cls-3" x="13" y="7" width="16" height="2"/>
-    <rect class="cls-5" x="29" y="17" width="18" height="2"/>
-    <rect class="cls-5" x="29" y="12" width="18" height="2"/>
-    <rect class="cls-5" x="29" y="7" width="18" height="2"/>
-  </g>
-  <rect class="cls-5" x="13" y="7" width="2" height="2"/>
-  <rect class="cls-5" x="13" y="12" width="2" height="2"/>
-  <rect class="cls-5" x="13" y="17" width="2" height="2"/>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 160 160" style="enable-background:new 0 0 160 160;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#2A3548;}
+	.st1{fill:#F25C00;}
+	.st2{fill:#1E2937;}
+	.st3{fill:#CC4602;}
+	.st4{fill:#D7DEED;}
+</style>
+<g>
+	<g>
+		<polygon class="st0" points="145.4,114.1 145.4,42.2 79.9,4.4 14.4,42.2 14.4,114.1 79.9,152 		"/>
+		<polygon class="st1" points="14.4,109.5 79.9,147.3 145.4,109.5 145.4,117.8 79.9,155.7 14.4,117.8 		"/>
+		<polygon class="st2" points="145.4,114.1 145.4,42.2 79.9,4.4 79.9,152 		"/>
+		<polygon class="st3" points="145.4,117.8 145.4,109.5 79.9,147.3 79.9,155.7 		"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path class="st2" d="M115,65.5h-8.3v8.3h8.3v4.1h-8.3v8.3h8.3v4.1h-8.3v8.3h8.3v4.1h-8.3v4.1h-4.1v8.3h-4.1v-8.3h-8.3v8.3h-4.1
+			v-8.3h-8.3v8.3h-4.1v-8.3h-8.3v8.3h-4.1v-8.3h-4.1v-4.1H49v-4.1h8.3v-8.3H49v-4.1h8.3v-8.3H49v-4.1h8.3v-8.3H49v-4.1h8.3v-4.1h4.1
+			V49h4.1v8.3h8.3V49h4.1v8.3h8.3V49h4.1v8.3h8.3V49h4.1v8.3h4.1v4.1h8.3V65.5z M102.6,102.6V61.4H61.4v41.3H102.6z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path class="st4" d="M113,63.5h-8.3v8.3h8.3v4.1h-8.3v8.3h8.3v4.1h-8.3v8.3h8.3v4.1h-8.3v4.1h-4.1v8.3h-4.1v-8.3h-8.3v8.3h-4.1
+			v-8.3h-8.3v8.3h-4.1v-8.3h-8.3v8.3h-4.1v-8.3h-4.1v-4.1H47v-4.1h8.3v-8.3H47v-4.1h8.3v-8.3H47v-4.1h8.3v-8.3H47v-4.1h8.3v-4.1h4.1
+			V47h4.1v8.3h8.3V47h4.1v8.3h8.3V47h4.1v8.3h8.3V47h4.1v8.3h4.1v4.1h8.3V63.5z M100.6,100.6V59.4H59.4v41.3H100.6z"/>
+	</g>
+	<path class="st1" d="M80,95.2l-13.1-7.6V72.4L80,64.8l13.1,7.6v15.2L80,95.2z M70.6,85.4l9.4,5.4l9.4-5.4V74.6L80,69.2l-9.4,5.4
+		V85.4z"/>
+</g>
 </svg>
