@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 This tutorial aims to help you get up and running with PlayFab JavaSDK and simple Java program. The goals we persue in this tutorial:
 - Acquire necessary JAR files
 - Add JAR files to the classpath
-- Create minimal Java console application that executes [Custom ID Login API Call](https://api.playfab.com/documentation/Client/method/LoginWithCustomID)
+- Create minimal Java console application that executes [Custom ID Login API Call](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid)
 
 ## Acquire necessary JAR files
 

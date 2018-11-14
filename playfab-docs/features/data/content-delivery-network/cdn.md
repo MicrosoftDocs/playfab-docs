@@ -50,7 +50,7 @@ This will create a new folder in the tree. You may then select this folder and u
 
 ![Game Manager - Content - File Management - Select Folder](../../config/dev-test-live/media/tutorials/game-manager-content-file-management-select-folder.png)  
 
-Alternatively, you may upload assets via code using the Admin SDK. This is a two step process: first, you call [GetContentUploadUrl](https://api.playfab.com/documentation/admin/method/GetContentUploadUrl) and obtain the pre-signed URL that will authorize your upload. Then, use the URL to make a HTTP PUT request and provide your data, and (optionally) content type. Consider the following snippet that shows how to get a pre-signed URL:
+Alternatively, you may upload assets via code using the Admin SDK. This is a two step process: first, you call [GetContentUploadUrl](xref:titleid.playfabapi.com.admin.content.getcontentuploadurl) and obtain the pre-signed URL that will authorize your upload. Then, use the URL to make a HTTP PUT request and provide your data, and (optionally) content type. Consider the following snippet that shows how to get a pre-signed URL:
 
 ```csharp
 public void UploadFileToCDN(string key, byte[] content, string contentType = "binary/octet-stream") {

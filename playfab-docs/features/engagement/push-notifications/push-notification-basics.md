@@ -33,7 +33,7 @@ If any of these systems are unlinked, clients will stop getting notifications. I
 Every PlayFab title can enable one Google (GCM) and one Apple Push (APNS, APNS_SANDBOX) notification channel at a given time. This can be configured one of two ways:
 
 1. Using the UI in Game Manager under **Settings -> Push Notifications**.
-2. Using the PlayFab Admin API - [SetupPushNotification](https://api.playfab.com/documentation/Admin/method/SetupPushNotification).
+2. Using the PlayFab Admin API - [SetupPushNotification](xref:titleid.playfabapi.com.admin.title-widedatamanagement.setuppushnotification).
 
 For more detailed setup information, read these tutorials:
 

@@ -23,7 +23,7 @@ Title data is represented as key/value pairs (kvps) that can only be associated 
 
 ### From the game client
 
-Use [GetTitleData](https://api.playfab.com/documentation/Client/method/GetTitleData) from the PlayFabClientAPI to get the kvps for a specific title. The following code example displays the values of all of the title data.
+Use [GetTitleData](xref:titleid.playfabapi.com.client.title-widedatamanagement.gettitledata) from the PlayFabClientAPI to get the kvps for a specific title. The following code example displays the values of all of the title data.
 
 ```csharp
 public void ClientGetTitleData() {
@@ -42,7 +42,7 @@ public void ClientGetTitleData() {
 
 ### From the game server
 
-Use [GetTitleData](https://api.playfab.com/documentation/Server/method/GetTitleData) from the PlayFabServerAPI to get the kvps for a specific title. The following code example displays the values of all of the title data.
+Use [GetTitleData](xref:titleid.playfabapi.com.server.title-widedatamanagement.gettitledata) from the PlayFabServerAPI to get the kvps for a specific title. The following code example displays the values of all of the title data.
 
 ```csharp
 public void ServerGetTitleData() {
@@ -76,7 +76,7 @@ To add data to a title, perform the following steps.
 
 ### Setting title data by calling the server API in C#
 
-The [SetTitleData](https://api.playfab.com/documentation/Server/method/SetTitleData) API is a server API that you must call from a dedicated server. You can only set one title data kvp in each call to SetTitleData.
+The [SetTitleData](xref:titleid.playfabapi.com.server.title-widedatamanagement.settitledata) API is a server API that you must call from a dedicated server. You can only set one title data kvp in each call to SetTitleData.
 
 ```csharp
 public void SetTitleData() {

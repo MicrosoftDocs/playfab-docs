@@ -97,7 +97,7 @@ No sense having money if you can't spend it. Let's create a catalog, which is a 
 
 Who's hungry for apples? Jerry? Let's get the catalog and attempt to make a purchase.
 
-1. In your game, call [GetCatalogItems](https://api.playfab.com/documentation/Client/method/GetCatalogItems)
+1. In your game, call [GetCatalogItems](xref:titleid.playfabapi.com.client.title-widedatamanagement.getcatalogitems)
     - CatalogVersion: "main"
 2. Verify that you see an "apple" with a "GO" price of 5
 
@@ -111,7 +111,7 @@ Who's hungry for apples? Jerry? Let's get the catalog and attempt to make a purc
 
    ![PurchaseItem Results - VC Purchase](media/tutorials/purchaseitem-results-vc-purchase.png)  
 
-4. Finally, call [GetUserInventory](https://api.playfab.com/documentation/Client/method/GetUserInventory) and take a look at your inventory.
+4. Finally, call [GetUserInventory](xref:titleid.playfabapi.com.client.playeritemmanagement.getuserinventory) and take a look at your inventory.
 
    ![GetUserInventory Results - New Inventory Item](media/tutorials/getuserinventory-results-new-inventory-item.png)  
 

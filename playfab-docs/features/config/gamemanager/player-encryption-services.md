@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 
 ## Player Shared Secrets
 
-Player Shared Secrets is a new type of pseudo secret key that is shared amongst game clients that can be traded with the API for the title's public RSA key which can be used to perform account registration. Title's can have multiple player shared keys and can set them up and revoke them at will via the admin API calls [Create](https://api.playfab.com/documentation/admin/method/CreatePlayerSharedSecret), [Update](https://api.playfab.com/documentation/admin/method/UpdatePlayerSharedSecret), [Delete](https://api.playfab.com/documentation/admin/method/DeletePlayerSharedSecret), [List](https://api.playfab.com/documentation/admin/method/GetPlayerSharedSecrets).
+Player Shared Secrets is a new type of pseudo secret key that is shared amongst game clients that can be traded with the API for the title's public RSA key which can be used to perform account registration. Title's can have multiple player shared keys and can set them up and revoke them at will via the admin API calls [Create](xref:titleid.playfabapi.com.admin.authentication.createplayersharedsecret), [Update](xref:titleid.playfabapi.com.admin.authentication.updateplayersharedsecret), [Delete](xref:titleid.playfabapi.com.admin.authentication.deleteplayersharedsecret), [List](xref:titleid.playfabapi.com.admin.authentication.getplayersharedsecrets).
 
 Player shared secrets should be baked into the respective clients as there are no client APIs to retrieve them, either authenticated or otherwise.
 

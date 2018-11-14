@@ -72,6 +72,9 @@ This guide will provide the minimum steps make your first PlayFab API call. Conf
   - This should open the file for text editing
   - Update the contents of PfGettingStarted.gui_script as follows:
 
+> [!NOTE]
+> To look up the correct format for the loginRequest object in this example, see the API reference for [LoginWithCustomID](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid).
+
 ```gui_script
 local PlayFabClientApi = require("PlayFab.PlayFabClientApi")
 local IPlayFabHttps = require("PlayFab.IPlayFabHttps")
@@ -82,7 +85,7 @@ PlayFabClientApi.settings.titleId = "144" -- Please change this value to your ow
 
 function init(self)
     local loginRequest = {
-        -- https://api.playfab.com/documentation/Client/method/LoginWithCustomID
+        -- See the API reference for LoginWithCustomID
         TitleId = PlayFabClientApi.settings.titleId,
         CustomId = "GettingStartedGuide",
         CreateAccount = true
@@ -238,9 +241,9 @@ max_nodes: 512
       - For LoginWithCustomIDRequest, there is a mandatory parameter of CustomId, which uniquely identifies a player and CreateAccount, which allows the creation of a new account with this call.
     - For login, most developers will want to use a more appropriate login method
       - See the [PlayFab Login documentation](https://api.playfab.com/documentation/Client#Authentication) for a list of all login methods, and input parameters. Common choices are:
-        - [LoginWithAndroidDeviceID](https://api.playfab.com/documentation/Client/method/LoginWithAndroidDeviceID)
-        - [LoginWithIOSDeviceID](https://api.playfab.com/documentation/Client/method/LoginWithIOSDeviceID)
-        - [LoginWithEmailAddress](https://api.playfab.com/documentation/Client/method/LoginWithEmailAddress)
+        - [LoginWithAndroidDeviceID](xref:titleid.playfabapi.com.client.authentication.loginwithandroiddeviceid)
+        - [LoginWithIOSDeviceID](xref:titleid.playfabapi.com.client.authentication.loginwithiosdeviceid)
+        - [LoginWithEmailAddress](xref:titleid.playfabapi.com.client.authentication.loginwithemailaddress)
 
   - PlayFabClientApi.LoginWithCustomID(loginRequest, OnLoginSuccess, OnLoginFailed)
     - This performs the API call using the request, and provides callback functions for success and fail conditions

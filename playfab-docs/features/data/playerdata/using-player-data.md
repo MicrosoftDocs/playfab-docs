@@ -23,8 +23,8 @@ This topic covers client-API calls, which are safe to call from any process or c
 
 - The C# Code Examples shown in this tutorial correspond to using the PlayFab Unity SDK.
 - Use the client APIs [UpdateUserData](xref:titleid.playfabapi.com.client.playerdatamanagement.updateuserdata) to create, update, or delete and [GetUserData](xref:titleid.playfabapi.com.client.playerdatamanagement.getuserdata) to read data for the player.
-- Use the server API [UpdateUserReadOnlyData](https://api.playfab.com/documentation/Server/method/UpdateUserReadOnlyData) to create, update, or delete and the client API [GetUserReadOnlyData](xref:titleid.playfabapi.com.client.playerdatamanagement.getuserreadonlydata) to read title-specific data for the player. This data is visible to the player, but can only be modified by the server.
-- Use the server APIs [UpdateUserInternalData](https://api.playfab.com/documentation/Server/method/UpdateUserInternalData) to create, update, or delete and [GetUserInternalData](https://api.playfab.com/documentation/Server/method/GetUserInternalData) to read title-specific data for the player. This data is server-only, and cannot be seen by the client.
+- Use the server API [UpdateUserReadOnlyData](ref:titleid.playfabapi.com.server.playerdatamanagement.updateuserreadonlydata) to create, update, or delete and the client API [GetUserReadOnlyData](xref:titleid.playfabapi.com.client.playerdatamanagement.getuserreadonlydata) to read title-specific data for the player. This data is visible to the player, but can only be modified by the server.
+- Use the server APIs [UpdateUserInternalData](xref:titleid.playfabapi.com.server.playerdatamanagement.updateuserinternaldata) to create, update, or delete and [GetUserInternalData](xref:titleid.playfabapi.com.server.playerdatamanagement.getuserinternaldata) to read title-specific data for the player. This data is server-only, and cannot be seen by the client.
 
 ## Player Data in Game Manager
 
@@ -85,7 +85,7 @@ void GetUserData() {
 
 ## Setting Read-only Player Data
 
-This is data that the server can modify, but the client can only read. To set read-only KVPs, you must call the [UpdateUserReadOnlyData](https://api.playfab.com/documentation/Server/method/UpdateUserReadOnlyData) API from a server process.
+This is data that the server can modify, but the client can only read. To set read-only KVPs, you must call the [UpdateUserReadOnlyData](ref:titleid.playfabapi.com.server.playerdatamanagement.updateuserreadonlydata) API from a server process.
 
 ### C# Code Example
 
@@ -113,7 +113,7 @@ public void UpdateUserReadOnlyData() {
 
 ## Getting Read-only Player Data
 
-To get read-only player data, use the [GetUserReadOnlyData](https://api.playfab.com/documentation/Client/method/GetUserReadOnlyData) method.
+To get read-only player data, use the [GetUserReadOnlyData](xref:titleid.playfabapi.com.client.playerdatamanagement.getuserreadonlydata) method.
 
 ### C# Code Example
 
@@ -139,7 +139,7 @@ public void GetUserReadOnlyData()
 
 ## Setting Internal Player Data
 
-This is data that the client cannot access. To set internal player data, use the [UpdateUserInternalData](https://api.playfab.com/documentation/Server/method/UpdateUserInternalData) method.
+This is data that the client cannot access. To set internal player data, use the [UpdateUserInternalData](xref:titleid.playfabapi.com.server.playerdatamanagement.updateuserinternaldata) method.
 
 ### C# Code Example
 
@@ -164,7 +164,7 @@ public void UpdateUserInternalData() {
 
 ## Getting Internal Player Data
 
-To get internal player data, use the [GetUserInternalData](https://api.playfab.com/documentation/Server/method/GetUserInternalData) method. Since this is internal data, you should not expose it to the client.
+To get internal player data, use the [GetUserInternalData](xref:titleid.playfabapi.com.server.playerdatamanagement.getuserinternaldata) method. Since this is internal data, you should not expose it to the client.
 
 ### C# Code Example
 
@@ -240,7 +240,7 @@ public void CloudIncrement() {
 }
 ```
 
-Since this example updates internal player data, you will need to call [GetUserInternalData](https://api.playfab.com/documentation/Server/method/GetUserInternalData) again from your server to see the results. Also note, that we do not allow any client inputs from args directly into a server-API call. Be sure to sanitize the client-inputs first, if you attempt this.
+Since this example updates internal player data, you will need to call [GetUserInternalData](xref:titleid.playfabapi.com.server.playerdatamanagement.getuserinternaldata) again from your server to see the results. Also note, that we do not allow any client inputs from args directly into a server-API call. Be sure to sanitize the client-inputs first, if you attempt this.
 
 ### See Also
 

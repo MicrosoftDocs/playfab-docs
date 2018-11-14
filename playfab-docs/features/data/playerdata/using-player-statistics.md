@@ -76,7 +76,7 @@ void OnGetStatistics(GetPlayerStatisticsResult result)
 
 PlayFab supports some convenience options for statistic aggregation. The 4 options include: Last, Min, Max, and Sum.
 
-You can create a statistic definition via the [CreatePlayerStatisticDefinition](https://api.playfab.com/documentation/admin/method/CreatePlayerStatisticDefinition) API call, though it's not required. Any call to update a player statistic for the title will automatically create the default statistic definition, using the Last aggregation method. To change a statistic aggregation method, you can use the Game Manager or the [UpdatePlayerStatisticDefinition](https://api.playfab.com/documentation/admin/method/UpdatePlayerStatisticDefinition) API call.
+You can create a statistic definition via the [CreatePlayerStatisticDefinition](xref:titleid.playfabapi.com.admin.playerdatamanagement.createplayerstatisticdefinition) API call, though it's not required. Any call to update a player statistic for the title will automatically create the default statistic definition, using the Last aggregation method. To change a statistic aggregation method, you can use the Game Manager or the [UpdatePlayerStatisticDefinition](xref:titleid.playfabapi.com.admin.playerdatamanagement.updateplayerstatisticdefinition) API call.
 
 To edit a statistic definition in Game Manager:
 

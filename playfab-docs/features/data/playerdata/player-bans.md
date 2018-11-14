@@ -79,7 +79,7 @@ Note also that Server SDK methods provide more options, such as IP and MAC addre
 
 Each ban you apply gets an assigned ID. Consider the following Server SDK API methods for precise ban management:
 
-- [GetUserBans](https://api.playfab.com/documentation/server/method/GetUserBans)
-- [RevokeAllBansForUser](https://api.playfab.com/documentation/server/method/RevokeAllBansForUser)
-- [RevokeBans](https://api.playfab.com/documentation/server/method/RevokeBans)
-- [UpdateBans](https://api.playfab.com/documentation/server/method/UpdateBans)
+- [GetUserBans](xref:titleid.playfabapi.com.server.accountmanagement.getuserbans)
+- [RevokeAllBansForUser](xref:titleid.playfabapi.com.server.accountmanagement.revokeallbansforuser)
+- [RevokeBans](xref:titleid.playfabapi.com.server.accountmanagement.revokebans)
+- [UpdateBans](xref:titleid.playfabapi.com.server.accountmanagement.updatebans)

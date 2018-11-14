@@ -21,7 +21,7 @@ Often times, it is necessary for a title to allow/deny certain APIs from the gam
 
 Policy is a set of rules, a.k.a. Policy Statements that are applied in a specific situation. Right now, PlayFab only supports API Access Policy. Thus, by definition, it controls access to API resources.
 
-Policies are fetched and updated using API calls from the [PlayFab Admin API](https://api.playfab.com/documentation/admin); specifically, the [GetPolicy](https://api.playfab.com/documentation/admin/method/GetPolicy) and [UpdatePolicy](https://api.playfab.com/documentation/admin/method/UpdatePolicy) methods. Since we will be utilizing the Admin API, please, see our tutorial [Getting PlayFab Developer Keys](../dev-test-live/getting-playfab-developer-keys.md). Developer Keys will let you authorize for Admin API calls. Each policy contains a list of statements, which are, essentially, rules for one or more PlayFab resources. 
+Policies are fetched and updated using API calls from the [PlayFab Admin API](https://api.playfab.com/documentation/admin); specifically, the [GetPolicy](xref:titleid.playfabapi.com.admin.authentication.getpolicy) and [UpdatePolicy](xref:titleid.playfabapi.com.admin.authentication.updatepolicy) methods. Since we will be utilizing the Admin API, please, see our tutorial [Getting PlayFab Developer Keys](../dev-test-live/getting-playfab-developer-keys.md). Developer Keys will let you authorize for Admin API calls. Each policy contains a list of statements, which are, essentially, rules for one or more PlayFab resources. 
 
 The following code illustrates basic operations with policies (please, read the code comments for more details):
 

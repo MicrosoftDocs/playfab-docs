@@ -217,8 +217,8 @@ This optional last section describes each part of the blueprints above, in detai
   - For login, most developers will want to use a more appropriate login method
     - See the [PlayFab Login documentation](https://api.playfab.com/documentation/Client#Authentication) for a list of all login methods, and input parameters. Common choices are:
       - [LoginWithAndroidDeviceID](https://api.playfab.com/documentation/Client#Authentication)
-      - [LoginWithIOSDeviceID](https://api.playfab.com/documentation/Client/method/LoginWithIOSDeviceID)
-      - [LoginWithEmailAddress](https://api.playfab.com/documentation/Client/method/LoginWithEmailAddress)
+      - [LoginWithIOSDeviceID](xref:titleid.playfabapi.com.client.authentication.loginwithiosdeviceid)
+      - [LoginWithEmailAddress](xref:titleid.playfabapi.com.client.authentication.loginwithemailaddress)
   - The left-side blueprint pins
     - Blue: Request
       - For every PlayFab API blueprint, this must always receive from a paired Make Request blueprint node
@@ -295,8 +295,8 @@ This optional last section describes the code in this project line by line.
     - For login, most developers will want to use a more appropriate login method
       - See the [PlayFab Login documentation](https://api.playfab.com/documentation/Client#Authentication) for a list of all login methods, and input parameters. Common choices are:
         - [LoginWithAndroidDeviceID](https://api.playfab.com/documentation/Client#Authentication)
-        - [LoginWithIOSDeviceID](https://api.playfab.com/documentation/Client/method/LoginWithIOSDeviceID)
-        - [LoginWithEmailAddress](https://api.playfab.com/documentation/Client/method/LoginWithEmailAddress)
+        - [LoginWithIOSDeviceID](xref:titleid.playfabapi.com.client.authentication.loginwithiosdeviceid)
+        - [LoginWithEmailAddress](xref:titleid.playfabapi.com.client.authentication.loginwithemailaddress)
   - {OnSuccess delegate}: PlayFab::UPlayFabClientAPI::FLoginWithCustomIDDelegate::CreateUObject(this, &ALoginActor::OnSuccess)
     - combined with: void ALoginActor::OnSuccess(const PlayFab::ClientModels::FLoginResult& Result) const
     - These create a UObject callback/delegate which is called if your API call is successful

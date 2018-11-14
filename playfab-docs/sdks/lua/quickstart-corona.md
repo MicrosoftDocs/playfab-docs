@@ -52,13 +52,16 @@ settings =
 
 In your favorite text-editor, REPLACE the contents of main.lua file with this:
 
+> [!NOTE]
+> To look up the correct format for the loginRequest object in this example, see the API reference for [LoginWithCustomID](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid).
+
 ```lua
 local pfClient = require("plugin.playfab.client")
 local PlayFabClientApi = pfClient.PlayFabClientApi
 PlayFabClientApi.settings.titleId = "144"
 
 local loginRequest = {
-    -- https://api.playfab.com/documentation/Client/method/LoginWithCustomID
+    -- See the API reference for LoginWithCustomID.
     CustomId = "GettingStartedGuide",
     CreateAccount = true
 }
@@ -100,9 +103,9 @@ This optional last section describes each part of our example above, line by lin
     - This begins the async request to "LoginWithCustomID", which will call the first (OnLoginSuccess) callback if successful, or the second (OnLoginError) function for failures
   - For login, most developers will want to use a more appropriate login method
     - See the [PlayFab Login documentation](https://api.playfab.com/documentation/Client#Authentication) for a list of all login methods, and input parameters. Common choices are:
-      - [LoginWithAndroidDeviceID](https://api.playfab.com/documentation/Client/method/LoginWithAndroidDeviceID)
-      - [LoginWithIOSDeviceID](https://api.playfab.com/documentation/Client/method/LoginWithIOSDeviceID)
-      - [LoginWithEmailAddress](https://api.playfab.com/documentation/Client/method/LoginWithEmailAddress)
+      - [LoginWithAndroidDeviceID](xref:titleid.playfabapi.com.client.authentication.loginwithandroiddeviceid)
+      - [LoginWithIOSDeviceID](xref:titleid.playfabapi.com.client.authentication.loginwithiosdeviceid)
+      - [LoginWithEmailAddress](xref:titleid.playfabapi.com.client.authentication.loginwithemailaddress)
     - OnLoginSuccess is any function which accepts a single parameter (result)
       - The result object will contain the requested information, according to the API called
       - LoginResult contains some basic information about the player, but for most users, login is simply a mandatory step before calling other APIs

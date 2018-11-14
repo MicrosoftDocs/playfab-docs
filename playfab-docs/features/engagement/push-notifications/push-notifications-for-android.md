@@ -56,7 +56,7 @@ There are three Google websites that you must use and synchronize. In Google/Fir
 
 - Provide your API Key in one of two ways: 
   1. Input your key directly into the Game Manager UI: **Settings (for your title) > Push Notifications > Android**
-  2. OR, Call [SetupPushNotification](https://api.playfab.com/documentation/Admin/method/SetupPushNotification) using Postman or a Unity project with Server API methods enabled:
+  2. OR, Call [SetupPushNotification](xref:titleid.playfabapi.com.admin.title-widedatamanagement.setuppushnotification) using Postman or a Unity project with Server API methods enabled:
       - **Name**: "your_game_name"
       - **Platform**: "GCM"
       - **Credential**: (Google server API key) : “AIza*****ppo”
@@ -207,7 +207,7 @@ Build and run your Unity project on a device. If you receive a push notification
 
 ### Advanced Features
 
-In server.[SendPushNotification](https://api.playfab.com/documentation/server/method/SendPushNotification), you can use [request.Package](https://api.playfab.com/documentation/Server/datatype/PlayFab.Server.Models/PlayFab.Server.Models.PushNotificationPackage).CustomData to deliver arbitrary data to the device. In the example above, this is delivered to the section with the comment:
+In server.[SendPushNotification](xref:titleid.playfabapi.com.server.accountmanagement.sendpushnotification), you can use [request.Package](https://api.playfab.com/documentation/Server/datatype/PlayFab.Server.Models/PlayFab.Server.Models.PushNotificationPackage).CustomData to deliver arbitrary data to the device. In the example above, this is delivered to the section with the comment:
 
 ```csharp
  Debug.Log("PlayFab: Received a message with data:");

@@ -110,7 +110,7 @@ public class PlayFabLogin : MonoBehaviour
 ```   
 > [!IMPORTANT]
 > Please note that the above code is not for use with Mobile, this is an example only and shows how to login with a CustomID. Mobile games should use either
-[LoginWithAndroidDeviceID](https://api.playfab.com/documentation/Client/method/LoginWithAndroidDeviceID), [LoginWithIOSDeviceID](https://api.playfab.com/documentation/Client/method/LoginWithIOSDeviceID) or some form of social login like [LoginWithFacebook](https://api.playfab.com/documentation/Client/method/LoginWithFacebook).
+[LoginWithAndroidDeviceID](xref:titleid.playfabapi.com.client.authentication.loginwithandroiddeviceid), [LoginWithIOSDeviceID](xref:titleid.playfabapi.com.client.authentication.loginwithiosdeviceid) or some form of social login like [LoginWithFacebook](xref:titleid.playfabapi.com.client.authentication.loginwithfacebook).
 
 
 ## Finish and Execute
@@ -151,9 +151,9 @@ Inside of Start():
   - For login, most developers will want to use a more appropriate login method
      - See the PlayFab Login Documentation for:
      - [LoginWithAndroidDeviceID](https://api.playfab.com/documentation/Client#Authentication)
-     - [LoginWithIOSDeviceID](https://api.playfab.com/documentation/Client/method/LoginWithIOSDeviceID)
-     - [LoginWithEmailAddress](https://api.playfab.com/documentation/Client/method/LoginWithEmailAddress)
-     - [LoginWithFacebook](https://api.playfab.com/documentation/Client/method/LoginWithFacebook)   
+     - [LoginWithIOSDeviceID](xref:titleid.playfabapi.com.client.authentication.loginwithiosdeviceid)
+     - [LoginWithEmailAddress](xref:titleid.playfabapi.com.client.authentication.loginwithemailaddress)
+     - [LoginWithFacebook](xref:titleid.playfabapi.com.client.authentication.loginwithfacebook)   
 
 Inside of OnLoginSuccess:   
 

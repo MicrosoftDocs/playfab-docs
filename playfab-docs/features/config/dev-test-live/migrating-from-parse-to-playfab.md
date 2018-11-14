@@ -55,7 +55,7 @@ Both Parse and PlayFab provide server-side JavaScript for writing custom game co
 
 ### User Management and Authentication
 
-Like Parse, PlayFab provides rich support for creating and managing player profiles. Player accounts can be linked to multiple different authentication mechanisms, such as [Facebook](https://api.playfab.com/documentation/Client/method/LoginWithFacebook), [Steam](https://api.playfab.com/documentation/Client/method/LoginWithSteam), an[email/password](https://api.playfab.com/documentation/Client/method/LoginWithEmailAddress), an [iOS](https://api.playfab.com/documentation/Client/method/LoginWithIOSDeviceID) or [Android](https://api.playfab.com/documentation/Client/method/LoginWithAndroidDeviceID) device ID, or your own [custom identifiers](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid), in order to make it easy to share a single player profile across multiple devices or platforms.
+Like Parse, PlayFab provides rich support for creating and managing player profiles. Player accounts can be linked to multiple different authentication mechanisms, such as [Facebook](xref:titleid.playfabapi.com.client.authentication.loginwithfacebook), [Steam](xref:titleid.playfabapi.com.client.authentication.loginwithsteam), an[email/password](xref:titleid.playfabapi.com.client.authentication.loginwithemailaddress), an [iOS](xref:titleid.playfabapi.com.client.authentication.loginwithiosdeviceid) or [Android](xref:titleid.playfabapi.com.client.authentication.loginwithandroiddeviceid) device ID, or your own [custom identifiers](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid), in order to make it easy to share a single player profile across multiple devices or platforms.
 
 PlayFab’s Game Manager tool also provides a powerful set of tools for viewing and managing player profiles, ideal for debugging a game in production or providing customer support for a game post-launch. 
 
@@ -76,7 +76,7 @@ PlayFab has native support for sending push notifications to players, but this f
 
 PlayFab has basic support for analytics and reporting built into the Game Manager. More advanced analytics providers are available through the PlayFab Add-on Marketplace, including Segment, Appuri, and Omniata (coming soon).
 
-Many analytics events are generated for your game automatically (for example, player logged in, player stat changed). Games can also [log custom events](https://api.playfab.com/documentation/Client/method/LogEvent) from either the client or server. All events are automatically forwarded to any analytics providers installed via the Marketplace.
+Many analytics events are generated for your game automatically (for example, player logged in, player stat changed). Games can also log custom events using the client [WritePlayerEvent](xref:titleid.playfabapi.com.client.analytics.writeplayerevent) or server [WritePlayerEvent](xref:titleid.playfabapi.com.server.analytics.writeplayerevent) methods. All events are automatically forwarded to any analytics providers installed via the Marketplace.
 
 ### Receipt validation
 
@@ -126,8 +126,8 @@ There is no risk to experimenting with our Parse player import, since the proces
 10. Select the "Players" tab in the Game Manager.
 11. Review some of your imported players for general correctness.
 12. Download the PlayFab SDK and update your game client to point to PlayFab for your user functions. In particular, the following APIs will prove useful:
-    - [Client/LoginWithFacebook](https://api.playfab.com/documentation/Client/method/LoginWithFacebook)
-    - [Client/LoginWithEmailAddress](https://api.playfab.com/documentation/Client/method/LoginWithEmailAddress)
+    - [Client/LoginWithFacebook](xref:titleid.playfabapi.com.client.authentication.loginwithfacebook)
+    - [Client/LoginWithEmailAddress](xref:titleid.playfabapi.com.client.authentication.loginwithemailaddress)
     - [Client/GetUserData](xref:titleid.playfabapi.com.client.playerdatamanagement.getuserdata)
     - [Client/UpdateUserData](xref:titleid.playfabapi.com.client.playerdatamanagement.updateuserdata)
 

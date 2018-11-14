@@ -39,7 +39,7 @@ void DisplayError(string error) { Debug.LogError(error); }
 ```
 
 1. Once a player has logged in, they can access your UI for friends. The functionality probably includes adding, removing, and displaying friends, at a minimum.
-2. To get the player's current friends list, use the [GetFriendsList](https://api.playfab.com/documentation/Client/method/GetFriendsList) API call.
+2. To get the player's current friends list, use the [GetFriendsList](xref:titleid.playfabapi.com.client.friendlistmanagement.getfriendslist) API call.
 
 ```csharp
 List<FriendInfo> _friends = null;
@@ -57,7 +57,7 @@ void GetFriends() {
 
 The [GetFriendsList](xref:titleid.playfabapi.com.client.friendlistmanagement.getfriendslist) result contains a parameter "Friends" which is a list of [FriendInfo](https://api.playfab.com/documentation/Client/datatype/PlayFab.Client.Models/PlayFab.Client.Models.FriendInfo) objects.
 
-3. To add a friend to the player's friends list, use the [AddFriend](https://api.playfab.com/documentation/Client/method/AddFriend) API call.
+3. To add a friend to the player's friends list, use the [AddFriend](xref:titleid.playfabapi.com.client.friendlistmanagement.addfriend) API call.
 
 ```csharp
 enum FriendIdType { PlayFabId, Username, Email, DisplayName };
@@ -85,7 +85,7 @@ void AddFriend(FriendIdType idType, string friendId) {
 }
 ```
 
-4. To remove a player from a player's friends list, use the [RemoveFriend](https://api.playfab.com/documentation/Client/method/RemoveFriend) API call.
+4. To remove a player from a player's friends list, use the [RemoveFriend](xref:titleid.playfabapi.com.client.friendlistmanagement.removefriend) API call.
 
 ```csharp
 // unlike AddFriend, RemoveFriend only takes a PlayFab ID
@@ -105,7 +105,7 @@ There are other things you can do with friends besides adding, removing, and dis
 
 ### Tagging Friends
 
-The [FriendInfo](https://api.playfab.com/documentation/Client/datatype/PlayFab.Client.Models/PlayFab.Client.Models.FriendInfo) object, retrieved from [GetFriendsList](https://api.playfab.com/documentation/Client/method/GetFriendsList), includes a list of tags for the friend. When updating the list, you would want to add and remove from this list and include it in the API call, as follows:
+The [FriendInfo](https://api.playfab.com/documentation/Client/datatype/PlayFab.Client.Models/PlayFab.Client.Models.FriendInfo) object, retrieved from [GetFriendsList](xref:titleid.playfabapi.com.client.friendlistmanagement.getfriendslist), includes a list of tags for the friend. When updating the list, you would want to add and remove from this list and include it in the API call, as follows:
 
 ```csharp
 // this REPLACES the list of tags on the server
@@ -126,10 +126,10 @@ void SetFriendTags(FriendInfo friend, List<string> newTags)
 
 You can use tags to inform matchmaking, (for example, the player doesn't like playing with friends tagged "2tuff" at hard difficulty) implement "friend groups," or just use them to store any metadata associated with a relationship that you need.
 
-An important note is that PlayFab currently does not index these tags in any way. [GetFriendsList](https://api.playfab.com/documentation/Client/method/GetFriendsList) can't filter based on them, so that must be done locally. Keep this in mind when considering any performance implications resulting from this system.
+An important note is that PlayFab currently does not index these tags in any way. [GetFriendsList](xref:titleid.playfabapi.com.client.friendlistmanagement.getfriendslist) can't filter based on them, so that must be done locally. Keep this in mind when considering any performance implications resulting from this system.
 
 ### Friend Leaderboards
 
-Friend specific APIs mirror the standard [GetLeaderboard](https://api.playfab.com/documentation/Client/method/GetLeaderboard) and [GetLeaderboardAroundPlayer](https://api.playfab.com/documentation/Client/method/GetLeaderboardAroundPlayer) API calls, but restrict the player pool to the player's friends list. For more information, refer to our tutorials about [Tournaments and Leaderboards](../tournaments-leaderboards/tutorials.md).
+Friend specific APIs mirror the standard [GetLeaderboard](xref:titleid.playfabapi.com.client.playerdatamanagement.getleaderboard) and [GetLeaderboardAroundPlayer](xref:titleid.playfabapi.com.client.playerdatamanagement.getleaderboardaroundplayer) API calls, but restrict the player pool to the player's friends list. For more information, refer to our tutorials about [Tournaments and Leaderboards](../tournaments-leaderboards/tutorials.md).
 
-Of note is that the [GetFriendLeaderboardAroundPlayer](https://api.playfab.com/documentation/Client/method/GetFriendLeaderboardAroundPlayer) API does not base the center of the leaderboard around the currently logged in player: it can be any PlayFab ID supplied with the request. You can use this to allow players to look up any friend's location on the leaderboard, regardless of their distance from each other.
+Of note is that the [GetFriendLeaderboardAroundPlayer](xref:titleid.playfabapi.com.client.playerdatamanagement.getfriendleaderboardaroundplayer) API does not base the center of the leaderboard around the currently logged in player: it can be any PlayFab ID supplied with the request. You can use this to allow players to look up any friend's location on the leaderboard, regardless of their distance from each other.

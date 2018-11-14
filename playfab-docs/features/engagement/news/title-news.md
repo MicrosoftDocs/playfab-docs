@@ -17,7 +17,7 @@ Title News is a mechanism for communicating with your players. It contains a few
 
 ## Create Title News
 
-There are two ways to create Title News entries, via Game Manager and the admin API method [AddNews](https://api.playfab.com/documentation/admin/method/AddNews).
+There are two ways to create Title News entries, via Game Manager and the admin API method [AddNews](xref:titleid.playfabapi.com.admin.title-widedatamanagement.addnews).
 
 To create Title News entries with Game Manager, you will need to be familiar with [Game Manager](../../config/gamemanager/game-manager-tour.md).
 
@@ -27,7 +27,7 @@ Game Manager: Navigate to your title -> Content -> Title News -> Title News
 
 Select "Save Title News" and your entry will be created. The date will be set to the date when you selected the "Save Title News" button.
 
-Alternately, you can create Title News by calling [AddNews](https://api.playfab.com/documentation/admin/method/AddNews). Using the admin API allows you to specify a custom timestamp. News added this way is immediately published. Here's a code example:
+Alternately, you can create Title News by calling [AddNews](xref:titleid.playfabapi.com.admin.title-widedatamanagement.addnews). Using the admin API allows you to specify a custom timestamp. News added this way is immediately published. Here's a code example:
 
 ```csharp
 

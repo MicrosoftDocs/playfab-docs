@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 **Requirement**: In order to use Player Inventory, you must have a Catalog defined for your title. Please read our [Catalogs](../../commerce/items/catalogs.md) tutorial for more information. You can, optionally, also define Stores for your Catalog. While a Catalog is the list of all items available in the game, a Store is a subset of items from the Catalog, optionally with unique pricing. Multiple Stores can be defined per Catalog, so that you can have distinct sets of items for presentation to the player based upon user Segmentation or other factors.
 
-Once you have defined a Catalog through the [Game Manager](https://developer.playfab.com/) or though our Admin [SetCatalogItems](https://api.playfab.com/documentation/admin/method/SetCatalogItems) or [UpdateCatalogItems](https://api.playfab.com/documentation/admin/method/UpdateCatalogItems) API calls, you will be able to use a wide variety of inventory API calls on the client and server.
+Once you have defined a Catalog through the [Game Manager](https://developer.playfab.com/) or though our Admin [SetCatalogItems](xref:titleid.playfabapi.com.admin.title-widedatamanagement.setcatalogitems) or [UpdateCatalogItems](xref:titleid.playfabapi.com.admin.title-widedatamanagement.updatecatalogitems) API calls, you will be able to use a wide variety of inventory API calls on the client and server.
 
 ## API Overview
 
@@ -30,10 +30,10 @@ Client:
 
 Server:
 
-- Gift/Grant Items: [GrantItemsToUser](https://api.playfab.com/documentation/server/method/GrantItemsToUser)
-- View Items: [GetUserInventory](https://api.playfab.com/documentation/server/method/GetUserInventory)
-- Modify items: [ModifyItemUses](https://api.playfab.com/documentation/server/method/ModifyItemUses), [UpdateUserInventoryItemCustomData](https://api.playfab.com/documentation/server/method/UpdateUserInventoryItemCustomData)
-- Remove Items: [RevokeInventoryItem](https://api.playfab.com/documentation/server/method/RevokeInventoryItem), [ConsumeItem](https://api.playfab.com/documentation/server/method/ConsumeItem), [UnlockContainerInstance](https://api.playfab.com/documentation/server/method/UnlockContainerInstance)
+- Gift/Grant Items: [GrantItemsToUser](xref:titleid.playfabapi.com.server.playeritemmanagement.grantitemstouser)
+- View Items: [GetUserInventory](xref:titleid.playfabapi.com.server.playeritemmanagement.getuserinventory)
+- Modify items: [ModifyItemUses](xref:titleid.playfabapi.com.server.playeritemmanagement.modifyitemuses), [UpdateUserInventoryItemCustomData](xref:titleid.playfabapi.com.server.playeritemmanagement.updateuserinventoryitemcustomdata)
+- Remove Items: [RevokeInventoryItem](xref:titleid.playfabapi.com.server.playeritemmanagement.revokeinventoryitem), [ConsumeItem](xref:titleid.playfabapi.com.server.playeritemmanagement.consumeitem), [UnlockContainerInstance](xref:titleid.playfabapi.com.server.playeritemmanagement.unlockcontainerinstance)
 
 Below, we will show code blocks that call these API methods and set up basic use-cases for player inventory.
 
@@ -60,7 +60,7 @@ void LogFailure(PlayFabError error) {
 
 ## Client-only Example: Purchase and Consume a Health Potion
 
-Client API call order: [PurchaseItem](xref:titleid.playfabapi.com.client.playeritemmanagement.purchaseitem), [GetUserInventory](xref:titleid.playfabapi.com.client.playeritemmanagement.getuserinventory), [ConsumeItem](https://api.playfab.com/documentation/server/method/ConsumeItem)
+Client API call order: [PurchaseItem](xref:titleid.playfabapi.com.client.playeritemmanagement.purchaseitem), [GetUserInventory](xref:titleid.playfabapi.com.client.playeritemmanagement.getuserinventory), [ConsumeItem](xref:titleid.playfabapi.com.server.playeritemmanagement.consumeitem)
 
 First we must begin by defining the item in our Catalog:
 
@@ -100,7 +100,7 @@ void ConsumePotion() {
 
 ## Example: Player is Granted and Opens a Container
 
-API call order: Server/[GrantItemsToUser](https://api.playfab.com/documentation/server/method/GrantItemsToUser), Client/[UnlockContainerInstance](xref:titleid.playfabapi.com.client.playeritemmanagement.unlockcontainerinstance)
+API call order: Server/[GrantItemsToUser](xref:titleid.playfabapi.com.server.playeritemmanagement.grantitemstouser), Client/[UnlockContainerInstance](xref:titleid.playfabapi.com.client.playeritemmanagement.unlockcontainerinstance)
 
 First, we must begin with a container defined in our catalog. For this example, a "Crystal Container". This example also demonstrates opening the container with a key - an optional item which must also be in the player inventory for the UnlockContainerInstance call to be successful.
 
@@ -155,7 +155,7 @@ Consumable container, durable key: This allows a player to keep a key that can o
 
 ## Example: Buying Inventory Items from the Player
 
-There is no built-in API for buying back inventory items from the player, as the process is game specific. However, you can use the existing API methods to craft your own sell item experience: Server/[RevokeInventoryItem](https://api.playfab.com/documentation/server/method/RevokeInventoryItem) allows you to remove an inventory item, and Server/[AddUserVirtualCurrency](https://api.playfab.com/documentation/server/method/AddUserVirtualCurrency) can return an appropriate amount of virtual currency. It is not currently possible to return real-money through PlayFab API methods.
+There is no built-in API for buying back inventory items from the player, as the process is game specific. However, you can use the existing API methods to craft your own sell item experience: Server/[RevokeInventoryItem](xref:titleid.playfabapi.com.server.playeritemmanagement.revokeinventoryitem) allows you to remove an inventory item, and Server/[AddUserVirtualCurrency](xref:titleid.playfabapi.com.server.playeritemmanagement.adduservirtualcurrency) can return an appropriate amount of virtual currency. It is not currently possible to return real-money through PlayFab API methods.
 
 Items and virtual currencies have a close relationship. For more information, see our [Currencies](../../commerce/economy/currencies.md) tutorial.
 

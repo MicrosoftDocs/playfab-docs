@@ -50,7 +50,7 @@ Now add a new email template filling in the fields as follows leaving the “Err
 ### A few things to note
 
 - The `$ConfirmationUrl$` in the **Email body** generates a customized URL that, when clicked, tracks that a user has clicked the URL and then issues a redirect to the Callback URL. In this case, it is injected into an anchor tag.
-- The **Callback URL** is the URL that PlayFab will redirect to after the player clicks on the confirmation URL link. It will need to be a hosted web form that contains at very minimum a password field in order to make a [ResetPassword](https://api.playfab.com/documentation/admin/method/ResetPassword) API call later in this tutorial.
+- The **Callback URL** is the URL that PlayFab will redirect to after the player clicks on the confirmation URL link. It will need to be a hosted web form that contains at very minimum a password field in order to make a [ResetPassword](xref:titleid.playfabapi.com.admin.accountmanagement.resetpassword) API call later in this tutorial.
 
 ![Game Manager - Content - Email Templates - New Email Template](media/tutorials/game-manager-content-new-email-template-account-recovery.png)  
 
@@ -139,7 +139,7 @@ Now we will send the verification email using SendEmailFromTemplate using the em
 
 ### C# Code Example
 
-In the following example, we send an account recovery email using [SendCustomAccountRecoveryEmail](https://api.playfab.com/documentation/server/method/SendCustomAccountRecoveryEmail).
+In the following example, we send an account recovery email using [SendCustomAccountRecoveryEmail](xref:titleid.playfabapi.com.server.accountmanagement.sendcustomaccountrecoveryemail).
 
 ```csharp
 void SendCustomAccountRecoveryEmail(string emailAddress, string emailTemplateId)
@@ -213,11 +213,11 @@ When the player clicks that URL, three things happen:
 
 ## Step 6 - Reset the player's password
 
-After the player is directed to the callback URL and fills out the form with a new password, you can use that information in addition to the token in the query string to issue a [ResetPassword](https://api.playfab.com/documentation/admin/method/ResetPassword) call.
+After the player is directed to the callback URL and fills out the form with a new password, you can use that information in addition to the token in the query string to issue a [ResetPassword](xref:titleid.playfabapi.com.admin.accountmanagement.resetpassword) call.
 
 ### C# Code Example
 
-In the following example, we reset a player's password based on a token and the new password the player specifies in a form using [ResetPassword](https://api.playfab.com/documentation/admin/method/ResetPassword).
+In the following example, we reset a player's password based on a token and the new password the player specifies in a form using [ResetPassword](xref:titleid.playfabapi.com.admin.accountmanagement.resetpassword).
 
 ```csharp
 void ResetPassword(string newPassword, string token)

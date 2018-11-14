@@ -99,7 +99,7 @@ Examples of configuration data might include how much XP a player earns from eac
 
 That's all you have to do in the Game Manager.
 
-1. In your game, call [GetTitleData](https://api.playfab.com/documentation/Client/method/GetTitleData)
+1. In your game, call [GetTitleData](xref:titleid.playfabapi.com.client.title-widedatamanagement.gettitledata)
 2. You should see the keys and values you just added
 
    ![GetTitleData Results - Updated Title Data](media/tutorials/gettitledata-results-updated-title-data.png)  
@@ -143,7 +143,7 @@ Let's create a statistic for this player so you can try out our leaderboard feat
 
    ![Game Manager - Save Player Statistics](media/tutorials/game-manager-save-player-statistics.png)  
 
-4. In your game, call [GetPlayerStatistics](https://api.playfab.com/documentation/Client/method/GetPlayerStatistics)
+4. In your game, call [GetPlayerStatistics](xref:titleid.playfabapi.com.client.playerdatamanagement.getplayerstatistics)
 5. You should see an "xp" statistic with a value of 0
 
    ![GetPlayerStatistics Results - Add New Statistic](media/tutorials/getplayerstatistics-results-add-new-statistic.png)  

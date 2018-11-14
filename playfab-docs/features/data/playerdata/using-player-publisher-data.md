@@ -63,7 +63,7 @@ handlers.TrackTitleUsage = function () {
 }
 ```
 
-Note in particular that this example demonstrates using server.[GetUserPublisherInternalData](https://api.playfab.com/documentation/server/method/GetUserPublisherInternalData) and server.[UpdateUserPublisherInternalData](https://api.playfab.com/documentation/server/method/UpdateUserPublisherInternalData). 
+Note in particular that this example demonstrates using server.[GetUserPublisherInternalData](xref:titleid.playfabapi.com.server.playerdatamanagement.getuserpublisherinternaldata) and server.[UpdateUserPublisherInternalData](xref:titleid.playfabapi.com.server.playerdatamanagement.updateuserpublisherinternaldata). 
 
 ### Step 2: Each game checks for redeemable rewards
 
@@ -114,14 +114,14 @@ handlers.CheckCrossTitleRewards = function () {
 };
 ```
 
-Note in particular, this example demonstrates the use of server.[GetUserPublisherInternalData](https://api.playfab.com/documentation/server/method/GetUserPublisherInternalData) (requesting multiple keys), server.[UpdateUserPublisherInternalData](https://api.playfab.com/documentation/server/method/UpdateUserPublisherInternalData), and server.[AddUserVirtualCurrency](https://api.playfab.com/documentation/server/method/AddUserVirtualCurrency).
+Note in particular, this example demonstrates the use of server.[GetUserPublisherInternalData](xref:titleid.playfabapi.com.server.playerdatamanagement.getuserpublisherinternaldata) (requesting multiple keys), server.[UpdateUserPublisherInternalData](xref:titleid.playfabapi.com.server.playerdatamanagement.updateuserpublisherinternaldata), and server.[AddUserVirtualCurrency](xref:titleid.playfabapi.com.server.playeritemmanagement.adduservirtualcurrency).
 
 The code blocks represent these steps:
 
-- Fetch the data from PlayFab, and parse it into local data structures (calling [GetUserPublisherInternalData](https://api.playfab.com/documentation/server/method/GetUserPublisherInternalData)).
+- Fetch the data from PlayFab, and parse it into local data structures (calling [GetUserPublisherInternalData](xref:titleid.playfabapi.com.server.playerdatamanagement.getuserpublisherinternaldata)).
 - Examine the data and search for un-rewarded Title IDs.
-- Grant the rewards (calling [AddUserVirtualCurrency](https://api.playfab.com/documentation/server/method/AddUserVirtualCurrency)).
-- Update the claimed rewards (calling [UpdateUserPublisherInternalData](https://api.playfab.com/documentation/server/method/UpdateUserPublisherInternalData)).
+- Grant the rewards (calling [AddUserVirtualCurrency](xref:titleid.playfabapi.com.server.playeritemmanagement.adduservirtualcurrency)).
+- Update the claimed rewards (calling [UpdateUserPublisherInternalData](xref:titleid.playfabapi.com.server.playerdatamanagement.updateuserpublisherinternaldata)).
 - Make the rewarded amount available to the client (via return statement from CloudScript).
 
 ## Conclusion

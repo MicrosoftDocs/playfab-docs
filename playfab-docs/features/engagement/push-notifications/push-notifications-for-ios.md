@@ -74,7 +74,7 @@ By default, notifications received while the game is in the background will be r
 UnityEngine.iOS.NotificationServices.RegisterForNotifications(UnityEngine.iOS.NotificationType.Alert | UnityEngine.iOS.NotificationType.Badge | UnityEngine.iOS.NotificationType.Sound, true);
 ```
 
-- At this point, if the user has opted in for notifications, we can call the PlayFab API [RegisterForIOSPushNotification](https://api.playfab.com/documentation/Client/method/RegisterForIOSPushNotification): 
+- At this point, if the user has opted in for notifications, we can call the PlayFab API [RegisterForIOSPushNotification](xref:titleid.playfabapi.com.client.platformspecificmethods.registerforiospushnotification):
 
 ```csharp
 byte[] token = UnityEngine.iOS.NotificationServices.deviceToken;
@@ -100,7 +100,7 @@ else
 - [Verify that you have valid .pem files](http://docs.aws.amazon.com/sns/latest/dg/mobile-push-apns.html).
 - Ensure that the same certificate used in SetupPushNotification is used by XCode to sign your app.
 - Ensure that Push Notification API is enabled for your build in XCode.
-- Ensure that your signing certificate matches the PlayFab platform. When running [SetupPushNotification](https://api.playfab.com/documentation/Admin/method/SetupPushNotification), use OverwriteOldARN = true to rebind the channel to a new platform. Only one iOS environment (APNS or APNS_SANDBOX) can be active on a title at a given time.
+- Ensure that your signing certificate matches the PlayFab platform. When running [SetupPushNotification](xref:titleid.playfabapi.com.admin.title-widedatamanagement.setuppushnotification), use OverwriteOldARN = true to rebind the channel to a new platform. Only one iOS environment (APNS or APNS_SANDBOX) can be active on a title at a given time.
 
 ## Additional Support
 

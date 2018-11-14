@@ -18,9 +18,9 @@ While we can’t provide you with legal advice—*and we do encourage you to see
 
 PlayFab is introducing three new APIs to help you respond to player data requests:
 
-- [GetPlayedTitleList](https://api.playfab.com/documentation/admin/method/GetPlayedTitleList) - Call this API to get a list of TitleIds which have data associated with the given player. This list is scoped by PublisherID and represents the set of titles which would be impacted were you to delete or export this player’s data.
-- [DeleteMasterPlayerAccount](https://api.playfab.com/documentation/admin/method/DeleteMasterPlayerAccount) - Call this API to delete the records of a given player.
-- [ExportMasterPlayerData](https://api.playfab.com/documentation/admin/method/ExportMasterPlayerData) - Call this API to export all of the associated data and records of a given player.
+- [GetPlayedTitleList](xref:titleid.playfabapi.com.admin.accountmanagement.getplayedtitlelist) - Call this API to get a list of TitleIds which have data associated with the given player. This list is scoped by PublisherID and represents the set of titles which would be impacted were you to delete or export this player’s data.
+- [DeleteMasterPlayerAccount](xref:titleid.playfabapi.com.admin.accountmanagement.deletemasterplayeraccount) - Call this API to delete the records of a given player.
+- [ExportMasterPlayerData](xref:titleid.playfabapi.com.admin.accountmanagement.exportmasterplayerdata) - Call this API to export all of the associated data and records of a given player.
 
 > [!NOTE]
 > This tutorial focuses on how to use these Admin APIs to export or delete a player’s data. We plan to expose comparable functionality through Game Manager by May 25, 2018.
@@ -37,10 +37,10 @@ You know your titles and how they authenticate your players. Before calling Dele
 
 The following APIs will help you translate from credential to PlayFabId:
 
-- [GetUserAccountInfo](https://api.playfab.com/documentation/admin/method/GetUserAccountInfo) - This API will help you find players by email, TitleDisplayName, PlayFabId, or a PlayFab username.
-- [GetPlayerIdFromAuthToken](https://api.playfab.com/documentation/admin/method/GetPlayerIdFromAuthToken) - This API will allow you to find a player from a specific AuthToken which is granted to the player when they login.
-- [GetPlayFabIDsFromFacebookIDs](https://api.playfab.com/documentation/server/method/GetPlayFabIDsFromFacebookIDs) - This API derives the player's PlayFabId from one or more FacebookIds.
-- [GetPlayFabIDsFromSteamIDs](https://api.playfab.com/documentation/server/method/GetPlayFabIDsFromSteamIDs) - This API derives the player's PlayFabId from one or more SteamIds.
+- [GetUserAccountInfo](xref:titleid.playfabapi.com.admin.accountmanagement.getuseraccountinfo) - This API will help you find players by email, TitleDisplayName, PlayFabId, or a PlayFab username.
+- [GetPlayerIdFromAuthToken](xref:titleid.playfabapi.com.admin.accountmanagement.getplayeridfromauthtoken) - This API will allow you to find a player from a specific AuthToken which is granted to the player when they login.
+- [GetPlayFabIDsFromFacebookIDs](xref:titleid.playfabapi.com.server.accountmanagement.getplayfabidsfromfacebookids) - This API derives the player's PlayFabId from one or more FacebookIds.
+- [GetPlayFabIDsFromSteamIDs](xref:titleid.playfabapi.com.server.accountmanagement.getplayfabidsfromsteamids) - This API derives the player's PlayFabId from one or more SteamIds.
 
 > [!NOTE]
 > All of these APIs are title specific. The first two are Admin APIs and the last two are Server APIs.

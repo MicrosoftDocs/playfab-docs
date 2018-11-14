@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Getting player profiles
 
-This tutorial walks you through how to use the [GetPlayerProfile](https://api.playfab.com/documentation/server/method/GetPlayerProfile) call to get a player’s profile with [PlayerProfileViewConstraints](https://api.playfab.com/documentation/Client/datatype/PlayFab.Client.Models/PlayFab.Client.Models.PlayerProfileViewConstraints) properties that are enabled from your title’s setting. Specifically, we will be getting a player’s profile, created date, and last login time.
+This tutorial walks you through how to use the [GetPlayerProfile](xref:titleid.playfabapi.com.server.accountmanagement.getplayerprofile) call to get a player’s profile with [PlayerProfileViewConstraints](https://api.playfab.com/documentation/Client/datatype/PlayFab.Client.Models/PlayFab.Client.Models.PlayerProfileViewConstraints) properties that are enabled from your title’s setting. Specifically, we will be getting a player’s profile, created date, and last login time.
 
 ## Requirements
 
@@ -50,7 +50,7 @@ The response should show "Successfully logged in a player with PlayFabId: SOME_P
 
 Now that there is a player that we can call and get a player profile for, the next step is to make a very basic profile for the player.
 
-In the following C# example is a basic [GetPlayerProfile](https://api.playfab.com/documentation/server/method/GetPlayerProfile) call
+In the following C# example is a basic [GetPlayerProfile](xref:titleid.playfabapi.com.server.accountmanagement.getplayerprofile) call
 
 ```csharp
 void GetPlayerProfile(string playFabId) {
@@ -92,7 +92,7 @@ This call should result in an error with an error code 1303 RequestViewConstrain
 
 ## Step 4 - Configuring player profile view constraints for the title
 
-In order to get more data from the [PlayerProfileModel](https://api.playfab.com/documentation/server/datatype/playfab.server.models/PlayFab.Server.Models.PlayerProfileModel) when we call the [GetPlayerProfile](https://api.playfab.com/documentation/server/method/GetPlayerProfile) API, we will need to configure the constraints on the data to be available. These settings are in the Title’s settings in game manager.
+In order to get more data from the [PlayerProfileModel](https://api.playfab.com/documentation/server/datatype/playfab.server.models/PlayFab.Server.Models.PlayerProfileModel) when we call the [GetPlayerProfile](xref:titleid.playfabapi.com.server.accountmanagement.getplayerprofile) API, we will need to configure the constraints on the data to be available. These settings are in the Title’s settings in game manager.
 
 To configure constraints for the title, in Game Manager, go to Settings -> Client Profile Options. Notice that under "ALLOW CLIENT ACCESS TO PROFILE PROPERTIES:", only “Display name” is checked. This is what allowed us to get the display name in step 1.
 
