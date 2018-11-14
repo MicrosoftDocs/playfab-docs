@@ -1,22 +1,28 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: #fff;
-      }
-
-      .cls-2 {
-        fill: #424242;
-      }
-    </style>
-  </defs>
-  <title>method</title>
-  <g id="ICONS">
-    <g>
-      <polygon class="cls-1" points="0.58 5.02 9 0.85 16 4.82 16.03 13.14 9 17.14 0.52 12.31 0.58 5.02"/>
-      <path class="cls-2" d="M9.18,18,0,13.11V3.93L8.71,0,17,4v9.35ZM2,11.94l7.12,4L15,12.21v-7l-6.32-3L2,5.22Z"/>
-      <polygon class="cls-2" points="9.18 10.92 0.51 6.06 1.49 4.32 9.12 8.59 15.46 4.58 16.54 6.26 9.18 10.92"/>
-      <rect class="cls-2" x="8" y="9.76" width="2" height="7"/>
-    </g>
-  </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 160 160" style="enable-background:new 0 0 160 160;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#2A3548;}
+	.st1{fill:#F25C00;}
+	.st2{fill:#1E2937;}
+	.st3{fill:#CC4602;}
+	.st4{fill:#E4EAF6;}
+</style>
+<g>
+	<polygon class="st0" points="145.4,116 145.4,42.2 79.9,4.4 14.4,42.2 14.4,116 79.9,153.8 	"/>
+	<polygon class="st1" points="14.4,109.5 79.9,147.3 145.4,109.5 145.4,117.8 79.9,155.7 14.4,117.8 	"/>
+	<polygon class="st2" points="145.4,116 145.4,42.2 79.9,4.4 79.9,153.8 	"/>
+	<polygon class="st3" points="145.4,117.8 145.4,109.5 79.9,147.3 79.9,155.7 	"/>
+</g>
+<polygon class="st3" points="81,62.5 65.9,69.9 65.9,90.9 77.3,85.6 77,75.9 81.3,73.3 "/>
+<polygon class="st1" points="92.4,83.1 93.1,104.5 108.3,97 107.8,76 "/>
+<polygon class="st2" points="64.2,54.2 50.7,61.7 66.2,69.3 80.8,61.8 "/>
+<polygon class="st0" points="77,75.9 76.7,96.2 92.3,103.8 92.8,84.2 "/>
+<g>
+	<path class="st4" d="M92.6,65.6l17.4,8.7v23.7l-17.4,8.7L75.1,98v-9.7l-9.7,4.8L48,84.4l0-23.7L65.4,52l17.4,8.7l0,9.7L92.6,65.6z
+		 M51.9,65l0,17l11.6,5.8v-17L51.9,65z M76.6,61.9l-11.1-5.5l-11.1,5.5l11.1,5.6L76.6,61.9z M67.4,87.8l7.8-3.8v-9.7l3.8-1.9l0-7.3
+		l-11.6,5.8V87.8z M79,78.6l0,17l11.6,5.8v-17L79,78.6z M103.7,75.5l-11.1-5.5l-11.1,5.5L92.6,81L103.7,75.5z M94.5,101.4l11.6-5.8
+		V78.6l-11.6,5.8V101.4z"/>
+</g>
 </svg>
