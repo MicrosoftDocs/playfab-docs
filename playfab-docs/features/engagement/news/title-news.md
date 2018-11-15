@@ -17,15 +17,17 @@ Title News is a mechanism for communicating with your players. It contains a few
 
 ## Create Title News
 
-There are two ways to create Title News entries, via Game Manager and the admin API method [AddNews](xref:titleid.playfabapi.com.admin.title-widedatamanagement.addnews).
+There are two ways to create Title News entries:
+1. Using Game Manager
+2. Using the admin API method [AddNews](xref:titleid.playfabapi.com.admin.title-widedatamanagement.addnews).
 
-To create Title News entries with Game Manager, you will need to be familiar with [Game Manager](../../config/gamemanager/game-manager-tour.md).
+To create Title News entries using Game Manager, you will need to be familiar with [Game Manager](../../config/gamemanager/game-manager-tour.md).
 
 Game Manager: Navigate to your title -> Content -> Title News -> Title News
 
 ![Title News](../media/tutorials/game-manager-content-title-news.png)
 
-Select "Save Title News" and your entry will be created. The date will be set to the date when you selected the "Save Title News" button.
+Select **Save Title News** and your entry will be created. The date will be set to the date when you selected the **Save Title News** button.
 
 Alternately, you can create Title News by calling [AddNews](xref:titleid.playfabapi.com.admin.title-widedatamanagement.addnews). Using the admin API allows you to specify a custom timestamp. News added this way is immediately published. Here's a code example:
 
@@ -67,14 +69,14 @@ The content of a Title News entry can only be modified in Game Manager.  Locate 
 
 Game Manager: Navigate to your title -> Content -> Title News -> Select Existing Entry
 
-Update the Title, Status, or Data for the entry and select "Save Title News".
+Update the **Title**, **Status**, or **Data** for the entry and select **Save Title News**.
 
 If plan is to post unpublished entries for future release, this is the methodology to to use to transition them into published and archived states. It also allows the user to fix typos.
 
 ## Delete Title News
 
-Once an entry is no longer needed, you can delete it in Game Manager. Find the entry you wish to modify:
+Once an entry is no longer needed, you can delete it in **Game Manager**. Find the entry you wish to modify:
 
 Game Manager: Navigate to your title -> Content -> Title News -> Checkbox for Existing Entry
 
-Select the Title News entries you wish to delete, and click "X Delete Title News"
+Select the **Title News** entries you wish to delete, and select **X Delete Title News**.
