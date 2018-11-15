@@ -13,4 +13,4 @@ These tutorials describe how to create and use player statistics, profile inform
 - [Player Segment configuration ](player-segment-configuration.md)
 - [Using Player data](using-player-data.md)
 - [PlayFab GDPR](playfab-gdpr-deleting-and-exporting-player-data.md)
-- [Using Player Publisher data](using-player-publisher-data.md)
+- [Using Player Publisher Data](using-player-publisher-data.md)

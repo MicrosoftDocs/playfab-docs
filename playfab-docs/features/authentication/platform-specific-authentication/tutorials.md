@@ -1,6 +1,6 @@
 # Platform-Specific Authentication Tutorials
 
-This tutorial provides basic information and Best Practices for setting up PlayFab authentication.
+These tutorials provide basic information and Best Practices for setting up PlayFab authentication.
 
 - [Login basics and Best Practices](login-basics-best-practices.md)
 

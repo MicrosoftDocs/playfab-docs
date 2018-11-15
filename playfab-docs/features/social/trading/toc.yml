@@ -5,3 +5,6 @@
     href: quickstart.md
   - name: Tutorials
     href: tutorials.md
+    items:
+    - name: Player-to-Player Trading
+      href: player-to-player-trading.md

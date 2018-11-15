@@ -5,3 +5,8 @@
     href: quickstart.md
   - name: Tutorials
     href: tutorials.md
+    items:
+    - name: Event History
+      href: event-history.md
+    - name: PlayStream Events
+      href: playstream-events.md

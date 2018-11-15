@@ -2,4 +2,4 @@
 
 This tutorial shows you to use trading in PlayFab.
 
-[Player-to-Player Trading](player-to-player-trading.md)
+- [Player-to-Player Trading](player-to-player-trading.md)

@@ -5,3 +5,26 @@
     href: quickstart.md
   - name: Tutorials
     href: tutorials.md
+    items:
+    - name: Building Blocks
+      href: building-blocks.md
+    - name: Executing the PlaFab API via Postman
+      href: executing-the-playfab-api-via-postman.md
+    - name: Explore Automation
+      href: explore-automation.md
+    - name: Get Started with Players and Tournaments
+      href: get-started-with-players-and-tournaments.md
+    - name: Getting PlayFab Developer Keys
+      href: getting-playfab-developer-keys.md
+    - name: Getting Started with PlayFab
+      href: getting-started-with-playfab.md
+    - name: Global API method error codes
+      href: global-API-method-error-codes.md
+    - name: Migrating from Parse to PlayFab
+      href: migrating-from-parse-to-playfab.md
+    - name: Running an HTTP server for testing
+      href: running-an-http-server-for-testing.md
+    - name: Set up your game's in-game economy
+      href: set-up-your-games-in-game-economy.md
+    - name: Try out content management
+      href: try-out-content-management.md

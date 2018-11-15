@@ -5,3 +5,24 @@
     href: quickstart.md
   - name: Tutorials
     href: tutorials.md
+    items:
+    - name: Constructing an Event History search
+      href: constructing-an-event-history-search.md
+    - name: Metrics and terminology
+      href: metrics-and-terminology.md
+    - name: Real-Time Analytics - Core Concepts
+      href: real-time-analytics-core-concepts.md
+    - name: Real-Time Analytics - Event History Chart Panel
+      href: real-time-analytics-event-history-chart-panel.md
+      name: Real-Time Analytics - Event Queries
+      href: constructing-an-event-history-search.md
+    - name: Real-Time Analytics - Event Search Query Panel
+      href: real-time-analytics-event-search-query-panel.md
+    - name: Real-Time Analytics - Event Timeline Panel
+      href: real-time-analytics-events-timeline-panel.md
+      name: S3 Event Archiving
+      href: s3-event-archiving.md
+    - name: Sessions
+      href: sessions.md
+    - name: Webhooks
+      href: webhooks.md
