@@ -12,5 +12,3 @@
       href: thunderhead.md
     - name: Using Externally-hosted game servers
       href: using-externally-hosted-games-servers-with-playfab.md
-    - name: Push Notifications for iOS
-      href: push-notifications-for-ios.md

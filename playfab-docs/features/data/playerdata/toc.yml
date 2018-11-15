@@ -23,7 +23,7 @@
     - name: Player Segments
       href: player-segments.md
     - name: Player Segment configuration
-      href: player-setment-configuration.md
+      href: player-segment-configuration.md
     - name: Using Player data
       href: using-player-data.md
     - name: PlayFab GDPR
