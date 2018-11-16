@@ -19,7 +19,7 @@ With PlayFab, you usually construct Leaderboards using the following API methods
 - [GetLeaderboard](xref:titleid.playfabapi.com.client.playerdatamanagement.getleaderboard)
 - [GetLeaderboardAroundPlayer](xref:titleid.playfabapi.com.client.playerdatamanagement.getleaderboardaroundplayer)
 
-The result is a list of [PlayerLeaderboardEntry](https://api.playfab.com/documentation/Client/datatype/PlayFab.Client.Models/PlayFab.Client.Models.PlayerLeaderboardEntry) objects that contain only basic information about the player and their relation to the current leaderboard. However, PlayFab also allows you to use [PlayerProfileViewConstraints](https://api.playfab.com/documentation/Client/datatype/PlayFab.Client.Models/PlayFab.Client.Models.PlayerProfileViewConstraints) to gain additional information about each player.
+The result is a list of [PlayerLeaderboardEntry](https://api.playfab.com/documentation/Client/datatype/PlayFab.Client.Models/PlayFab.Client.Models.PlayerLeaderboardEntry) objects that contain only basic information about the player and their relation to the current leaderboard. However, PlayFab also allows you to use [PlayerProfileViewConstraints](xref:titleid.playfabapi.com.server.accountmanagement.getplayerprofile#playerprofileviewconstraints) to gain additional information about each player.
 
 > [!NOTE]
 > This example assumes you already have some leaderboard data to play with. Please refer to our [Accessing Archived Tournament Results](accessing-archived-tournament-results.md) tutorial, for a method to generate some test data.

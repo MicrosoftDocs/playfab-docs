@@ -129,7 +129,7 @@ As you can see above, PlayFabGettingStarted.js contains the DoExampleLoginWithCu
   - PlayFabClientSDK.LoginWithCustomID(loginRequest, LoginCallback);
     - This begins the async request to "LoginWithCustomID", which will call LoginCallback when the API call is complete
     - For login, most developers will want to use a more appropriate login method
-      - See the [PlayFab Login Documentation](https://api.playfab.com/documentation/Client#Authentication) for a list of all login methods, and input parameters. Common choices are:
+      - See the [PlayFab Login Documentation](xref:titleid.playfabapi.com.client.authentication) for a list of all login methods, and input parameters. Common choices are:
         - [LoginWithAndroidDeviceID](xref:titleid.playfabapi.com.client.authentication.loginwithandroiddeviceid)
         - [LoginWithIOSDeviceID](xref:titleid.playfabapi.com.client.authentication.loginwithiosdeviceid)
         - [LoginWithEmailAddress](xref:titleid.playfabapi.com.client.authentication.loginwithemailaddress)

@@ -30,7 +30,7 @@ Chapter 3 contains the following steps to help you explore automation:
 
 ## Step 1: Write a CloudScript function
 
-CloudScript is custom JavaScript that runs on PlayFab's servers. It's great for securely and consistently setting up players, leveling them up, or making multi-step purchases. When using CloudScript you have secure access to the [Server API](https://api.playfab.com/documentation/Server). This makes it simple to grant items and change statistics without worrying if the client is allowed to do so.
+CloudScript is custom JavaScript that runs on PlayFab's servers. It's great for securely and consistently setting up players, leveling them up, or making multi-step purchases. When using CloudScript you have secure access to the Server APIs (listed under Server, in the [PlayFab API Reference](../../../api-references/index.md)). This makes it simple to grant items and change statistics without worrying if the client is allowed to do so.
 
 > [!WARNING]
 > Take care with the size of your functions. CloudScript isn't designed for generating procedural terrain or mining Bitcoin. Your functions will time out if they take too long (though you can upgrade that on the Settings > Limits tab).

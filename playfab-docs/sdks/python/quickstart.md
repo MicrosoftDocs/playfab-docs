@@ -102,7 +102,7 @@ This optional last section describes each part of playfab_test.py in detail.
   - Most PlayFab API methods require input parameters, and those input parameters are packed into a dictionary object
     - For LoginWithCustomIDRequest, there is a mandatory parameter of CustomId, which uniquely identifies a player, LoginTitlePlayerAccountEntity, which automatically logs the player's title_player_account in and returns the associated entity token, and CreateAccount, which allows the creation of a new account with this call.
     - For login, most developers will want to use a more appropriate login method
-      - See the [PlayFab Login documentation](https://api.playfab.com/documentation/Client#Authentication) for a list of all login methods, and input parameters. Common choices are:
+      - See the [PlayFab Login documentation](xref:titleid.playfabapi.com.client.authentication) for a list of all login methods, and input parameters. Common choices are:
         - [LoginWithAndroidDeviceID](xref:titleid.playfabapi.com.client.authentication.loginwithandroiddeviceid)
         - [LoginWithIOSDeviceID](xref:titleid.playfabapi.com.client.authentication.loginwithiosdeviceid)
         - [LoginWithEmailAddress](xref:titleid.playfabapi.com.client.authentication.loginwithemailaddress)

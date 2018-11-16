@@ -25,7 +25,7 @@ This tutorial has been created to guide you through PlayFab authentication using
 [!NOTE] If you are unsure if you have the proper requirements for this activity, please consult the [Running an HTTP server for testing](../../config/dev-test-live/running-an-http-server-for-testing.md) tutorial.
 ## Server and Domain
 
-As part of the requirements to set up your PlayFab authentication,  you must have a server with a valid domain to follow. If you do not have a registered domain and remote web server yet, please follow our [Running Test HTTP Server](https://api.playfab.com/docs/tutorials/http-server) guide to run a local web server with a valid domain name. Throughout this guide, we will assume your domain is ['http://playfab.example'](http://playfab.example).
+As part of the requirements to set up your PlayFab authentication,  you must have a server with a valid domain to follow. If you do not have a registered domain and remote web server yet, please follow our [Running an HTTP server for testing](../../config/dev-test-live/running-an-http-server-for-testing.md) tutorial to run a local web server with a valid domain name. Throughout this guide, we will assume your domain is ['http://playfab.example'](http://playfab.example).
 
 ## Registering a Facebook Application
 

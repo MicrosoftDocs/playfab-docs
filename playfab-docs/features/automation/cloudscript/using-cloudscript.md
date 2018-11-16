@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Using CloudScript
 
-CloudScript offers a fast, secure and scalable alternative to dedicated servers. Your custom JavaScript lives and executes directly on PlayFab machines. From here, your code can be called directly by your game clients or indirectly via PlayStream actions. Additionally, CloudScript methods have full access to PlayFab's [Server](https://api.playfab.com/Documentation/Server) API set.
+CloudScript offers a fast, secure and scalable alternative to dedicated servers. Your custom JavaScript lives and executes directly on PlayFab machines. From here, your code can be called directly by your game clients or indirectly via PlayStream actions. Additionally, CloudScript methods have full access to PlayFab's Server APIs (listed under Server in the [PlayFab API Documentation](../../../api-references/index.md).
 
 This tutorial covers uploading and managing your CloudScript files in the PlayFab Game Manager. The [Writing custom CloudScript](writing-custom-cloudscript.md) tutorial covers writing the CloudScript code itself.
 

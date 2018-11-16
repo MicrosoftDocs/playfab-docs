@@ -24,7 +24,7 @@ Because this is a new API, we are refining some of the terms used in other API m
 
 - **title** - This concept is unchanged. Your title may contain global information available to all players. This is similar to [TitleData](xref:titleid.playfabapi.com.client.title-widedatamanagement.gettitledata). It is identified by the Title ID (TitleId) of the game/application.
 - **master_player_account** - This entity type allows you to share information about a player across multiple games within a studio. This is similar to [UserPublisherData](xref:titleid.playfabapi.com.client.playerdatamanagement.getuserpublisherdata). It is identified by the PlayFab ID (PlayFabId) of the player, which is returned as part of any login or any call to retrieve account information for the player account (for example, [Client/GetAccountInfo](xref:titleid.playfabapi.com.client.accountmanagement.getaccountinfo)).
-- **title_player_account** - This concept is based on User/Player in the existing API methods. Each player may contain some information for the current title. This is similar to [UserData](). This is identified by the Entity ID (Entity.Id) you get back in the [EntityTokenResponse](https://api.playfab.com/documentation/Client/datatype/PlayFab.Client.Models/PlayFab.Client.Models.EntityTokenResponse) object on any login where you specify LoginTitlePlayerAccountEntity as true.
+- **title_player_account** - This concept is based on User/Player in the existing API methods. Each player may contain some information for the current title. This is similar to the [GetUserData](xref:titleid.playfabapi.com.client.playerdatamanagement.getuserdata) method. This is identified by the Entity ID (EntityKey.Id) you get back in the [EntityKey](xref:titleid.playfabapi.com.authentication.authentication.getentitytoken#entitykey) object on any login where you specify LoginTitlePlayerAccountEntity as true.
 - **character** - This concept is unchanged. Your player may own characters, which can each contain some information. This is similar to [CharacterData](xref:titleid.playfabapi.com.client.characterdata.getcharacterdata). It is identified by the Character ID (CharacterId) of the character.
 
 See the [Available built-in Entity types](../../data/entities/available-built-in-entity-types.md) tutorial, for a list of all built-in Entity types.
@@ -34,7 +34,7 @@ See the [Available built-in Entity types](../../data/entities/available-built-in
 
 ## Entity Initialization
 
-Before you can use any Entity API calls you must get an [EntityToken](https://api.playfab.com/documentation/authentication/datatype/PlayFab.authentication.Models/PlayFab.authentication.Models.GetEntityTokenResponse). You do this by using any normal login call, with a new optional parameter [LoginTitlePlayerAccountEntity](https://api.playfab.com/documentation/client/datatype/PlayFab.client.Models/PlayFab.client.Models.LoginWithCustomIDRequest) set to true, or by calling the [GetEntityToken](https://api.playfab.com/documentation/Authentication/method/GetEntityToken) API method.
+Before you can use any Entity API calls you must get an [EntityKey](xref:titleid.playfabapi.com.authentication.authentication.getentitytoken#entitykey). You do this by using any normal login call, with a new optional parameter [LoginTitlePlayerAccountEntity](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid#loginwithcustomidrequest) set to true, or by calling the [GetEntityToken](xref:titleid.playfabapi.com.authentication.authentication.getentitytoken) API method.
 
 ```csharp
 PlayFabAuthenticationAPI.GetEntityToken(new GetEntityTokenRequest(),
@@ -45,7 +45,7 @@ PlayFabAuthenticationAPI.GetEntityToken(new GetEntityTokenRequest(),
 }, OnPlayFabError); // Define your own OnPlayFabError function to report errors
 ```
 
-This API method returns an [Authentication/EntityKey](https://api.playfab.com/documentation/Authentication/datatype/PlayFab.Authentication.Models/PlayFab.Authentication.Models.EntityKey) object, which contains the Id and Type, which you should save. If called from the client, this typically represents the logged-in-player. Called from game-servers, this will represent your title. With the entityId and entityType, you can make other calls to other Entity API methods.
+This API method returns an [Authentication/EntityKey](xref:titleid.playfabapi.com.authentication.authentication.getentitytoken#entitykey) object, which contains the Id and Type, which you should save. If called from the client, this typically represents the logged-in-player. Called from game-servers, this will represent your title. With the entityId and entityType, you can make other calls to other Entity API methods.
 
 You should save a reference to the entityId and entityType to use in other API calls (Each API has an EntityKey structure, above). EntityToken is handled internally by the SDK, so you can ignore that.
 

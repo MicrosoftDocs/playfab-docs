@@ -131,7 +131,7 @@ Next, confirm that the contact email was added to the player’s profile. Log in
 
 ![Game Manager - Player Profile - Contact email](media/tutorials/game-manager-player-profile-contact-email-verification-pending.png)  
 
-You can also make a call to [GetPlayerProfile](xref:titleid.playfabapi.com.client.accountmanagement.getplayerprofile) with “ShowContactEmailAddresses” in the [PlayerProfileViewConstraints](https://api.playfab.com/documentation/Client/datatype/PlayFab.Client.Models/PlayFab.Client.Models.PlayerProfileViewConstraints) set as true to show that the player now has the contact email that we just added.
+You can also make a call to [GetPlayerProfile](xref:titleid.playfabapi.com.client.accountmanagement.getplayerprofile) with “ShowContactEmailAddresses” in the [PlayerProfileViewConstraints](xref:titleid.playfabapi.com.server.accountmanagement.getplayerprofile#playerprofileviewconstraints) set as true to show that the player now has the contact email that we just added.
 
 ## Step 4 - Send an account recovery template email
 

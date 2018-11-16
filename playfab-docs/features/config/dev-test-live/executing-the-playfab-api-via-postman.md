@@ -43,8 +43,8 @@ Postman environments are a way to save key-value pairs which can be automaticall
 
 - **{{TitleId}}** - The unique identifier that corresponds to your PlayFab title. Found in the [GameManager](https://developer.playfab.com/) -> Settings.
 - **{{SecretKey}}** - Found in the [GameManager](https://developer.playfab.com/) -> Settings and used to authenticate Server API calls.
-- **{{SessionTicket}}** - Provided in response to any [successful login call](https://api.playfab.com/documentation/client#Authentication). This is used to authenticate most Client API calls.
-- **{{PlayFabId}}** - Provided in response to any [successful login call](https://api.playfab.com/documentation/client#Authentication).
+- **{{SessionTicket}}** - Provided in response to any [successful login call](xref:titleid.playfabapi.com.client.authentication). This is used to authenticate most Client API calls.
+- **{{PlayFabId}}** - Provided in response to any [successful login call](xref:titleid.playfabapi.com.client.authentication).
 - **{{CharacterId}}** - Returned from [GetAllUsersCharacters](xref:titleid.playfabapi.com.client.characters.getalluserscharacters).
 - **{{PrimaryCatalogName}}** - Found in the [GameManager](https://developer.playfab.com/) -> Economy -> Catalogs.
 

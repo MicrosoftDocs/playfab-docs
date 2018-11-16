@@ -150,7 +150,7 @@ Inside of Start():
 
   - For login, most developers will want to use a more appropriate login method
      - See the PlayFab Login Documentation for:
-     - [LoginWithAndroidDeviceID](https://api.playfab.com/documentation/Client#Authentication)
+     - [LoginWithAndroidDeviceID](xref:titleid.playfabapi.com.client.authentication.loginwithandroiddeviceid)
      - [LoginWithIOSDeviceID](xref:titleid.playfabapi.com.client.authentication.loginwithiosdeviceid)
      - [LoginWithEmailAddress](xref:titleid.playfabapi.com.client.authentication.loginwithemailaddress)
      - [LoginWithFacebook](xref:titleid.playfabapi.com.client.authentication.loginwithfacebook)   

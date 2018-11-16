@@ -177,4 +177,4 @@ The same rules apply for all the leaderboard requests:
 - [GetFriendLeaderboardAroundPlayer](xref:titleid.playfabapi.com.client.playerdatamanagement.getfriendleaderboardaroundplayer)
 - [GetFriendLeaderboard](xref:titleid.playfabapi.com.client.playerdatamanagement.getfriendleaderboard)
 
-Please refer to documentation for the [GetLeaderboardResult](https://api.playfab.com/documentation/client/datatype/PlayFab.client.Models/PlayFab.client.Models.GetLeaderboardResult) method, to learn about useful properties you may get with the leaderboard data.
+Please refer to documentation for the [GetLeaderboardResult](https://api.playfab.com/documentation/client/datatype/PlayFab.client.Models/PlayFab.client.Models.GetLeaderboardResult) object, to learn about useful properties you may get with the leaderboard data.

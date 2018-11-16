@@ -21,7 +21,7 @@ Often times, it is necessary for a title to allow/deny certain APIs from the gam
 
 Policy is a set of rules, a.k.a. Policy Statements that are applied in a specific situation. Right now, PlayFab only supports API Access Policy. Thus, by definition, it controls access to API resources.
 
-Policies are fetched and updated using API calls from the [PlayFab Admin API](https://api.playfab.com/documentation/admin); specifically, the [GetPolicy](xref:titleid.playfabapi.com.admin.authentication.getpolicy) and [UpdatePolicy](xref:titleid.playfabapi.com.admin.authentication.updatepolicy) methods. Since we will be utilizing the Admin API, please, see our tutorial [Getting PlayFab Developer Keys](../dev-test-live/getting-playfab-developer-keys.md). Developer Keys will let you authorize for Admin API calls. Each policy contains a list of statements, which are, essentially, rules for one or more PlayFab resources. 
+Policies are fetched and updated using API calls from the PlayFab Admin APIs (listed under Admin, in the [PlayFab API Reference](../../../api-references/index.md)); specifically, the [GetPolicy](xref:titleid.playfabapi.com.admin.authentication.getpolicy) and [UpdatePolicy](xref:titleid.playfabapi.com.admin.authentication.updatepolicy) methods. Since we will be utilizing the Admin API, please, see our tutorial [Getting PlayFab Developer Keys](../dev-test-live/getting-playfab-developer-keys.md). Developer Keys will let you authorize for Admin API calls. Each policy contains a list of statements, which are, essentially, rules for one or more PlayFab resources. 
 
 The following code illustrates basic operations with policies (please, read the code comments for more details):
 
@@ -79,11 +79,11 @@ The program will fetch and print the existing policy **(1)**, then update the po
 
 ![Game Manager - Admin API - Get-Update Policy - C# Output](media/tutorials/game-manager-admin-api-get-update-policy-csharp-output.png)  
 
-As shown in the preceding picture, a Policy consists of several [Policy Statements](https://api.playfab.com/documentation/Admin/datatype/PlayFab.Admin.Models/PlayFab.Admin.Models.PermissionStatement).
+As shown in the preceding picture, a Policy consists of several [Permission Statements](xref:titleid.playfabapi.com.admin.authentication.updatepolicy#permissionstatement).
 
-Each Policy Statement consists of the following items:
+Each Permission Statement consists of the following items:
 
-[RESOURCE](https://api.playfab.com/documentation/Admin/datatype/PlayFab.Admin.Models/PlayFab.Admin.Models.PermissionStatement) - A **string** that uniquely identifies one or more PlayFab resources. To describe the API resource, please, use the following convention:
+[RESOURCE]((xref:titleid.playfabapi.com.admin.authentication.updatepolicy#permissionstatement)) - A **string** that uniquely identifies one or more PlayFab resources. To describe the API resource, please, use the following convention:
 
   `pfrn:api--/API-GROUP/API-CALL`
 
@@ -95,14 +95,14 @@ Each Policy Statement consists of the following items:
 
   `pfrn:api--*`
 
-[ACTION](https://api.playfab.com/documentation/Admin/datatype/PlayFab.Admin.Models/PlayFab.Admin.Models.PermissionStatement) - A **string** that describes operation over the resource. Use `*` to match any operation.
+[ACTION](xref:titleid.playfabapi.com.admin.authentication.updatepolicy#permissionstatement) - A **string** that describes operation over the resource. Use `*` to match any operation.
 
-[EFFECT](https://api.playfab.com/documentation/Admin/datatype/PlayFab.Admin.Models/PlayFab.Admin.Models.PermissionStatement) - A **string** that serves as a rule definition. Use `Allow` or `Deny` to allow or deny operations over the resource.
+[EFFECT](xref:titleid.playfabapi.com.admin.authentication.updatepolicy#permissionstatement) - A **string** that serves as a rule definition. Use `Allow` or `Deny` to allow or deny operations over the resource.
 
-[PRINCIPAL](https://api.playfab.com/documentation/Admin/datatype/PlayFab.Admin.Models/PlayFab.Admin.Models.PermissionStatement) - A **string** that uniquely identifies the class of the user. Use `*` to match any user.
+[PRINCIPAL](xref:titleid.playfabapi.com.admin.authentication.updatepolicy#permissionstatement) - A **string** that uniquely identifies the class of the user. Use `*` to match any user.
 
-[COMMENT](https://api.playfab.com/documentation/Admin/datatype/PlayFab.Admin.Models/PlayFab.Admin.Models.PermissionStatement) - A user-defined **string** that serves to provide more information about the Policy Statement.
+[COMMENT](xref:titleid.playfabapi.com.admin.authentication.updatepolicy#permissionstatement) - A user-defined **string** that serves to provide more information about the Policy Statement.
 
-[APICONDITIONS](https://api.playfab.com/documentation/Admin/datatype/PlayFab.Admin.Models/PlayFab.Admin.Models.PermissionStatement) - An **optional object** that defines advanced rule conditions, for example Encryption and Signed Headers.
+[APICONDITIONS](xref:titleid.playfabapi.com.admin.authentication.updatepolicy#permissionstatement) - An **optional object** that defines advanced rule conditions, for example Encryption and Signed Headers.
 
-By modifying your policy to use more detailed policy statements, you can set up strong security rules for your application, by only allowing the API you use in your application.
+By modifying your policy to use more detailed permission statements, you can set up strong security rules for your application, by only allowing the API you use in your application.

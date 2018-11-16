@@ -50,7 +50,7 @@ handlers.helloWorld = function (args, context) {
 }
 ```
 
-This example demonstrates the common use case of calling CloudScript from a client via [ExecuteCloudScript](https://api.playfab.com/Documentation/Client/method/ExecuteCloudScript). It checks for an argument passed in with the key “inputValue”, and uses the value for that key as part of the text returned in the debug log info for the execution.
+This example demonstrates the common use case of calling CloudScript from a client via [ExecuteCloudScript](xref:titleid.playfabapi.com.client.server-sidecloudscript.executecloudscript). It checks for an argument passed in with the key “inputValue”, and uses the value for that key as part of the text returned in the debug log info for the execution.
 
 ## The context input parameter
 

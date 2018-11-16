@@ -207,13 +207,13 @@ Build and run your Unity project on a device. If you receive a push notification
 
 ### Advanced Features
 
-In server.[SendPushNotification](xref:titleid.playfabapi.com.server.accountmanagement.sendpushnotification), you can use [request.Package](https://api.playfab.com/documentation/Server/datatype/PlayFab.Server.Models/PlayFab.Server.Models.PushNotificationPackage).CustomData to deliver arbitrary data to the device. In the example above, this is delivered to the section with the comment:
+In server.[SendPushNotification](xref:titleid.playfabapi.com.server.accountmanagement.sendpushnotification), you can use [request.Package](xref:titleid.playfabapi.com.server.accountmanagement.sendpushnotification#pushnotificationpackage).CustomData to deliver arbitrary data to the device. In the example above, this is delivered to the section with the comment:
 
 ```csharp
  Debug.Log("PlayFab: Received a message with data:");
 ```
 
-You can customize your client receiver to utilize that data however you like. CustomData is not displayed to the player, so it can be used to deliver custom game information to your client, or to locally schedule another future notification using the FCM plugin. You can also use [request.Package](https://api.playfab.com/documentation/Server/datatype/PlayFab.Server.Models/PlayFab.Server.Models.PushNotificationPackage).CustomData or request.[AdvancedPlatformDelivery](https://api.playfab.com/documentation/Server/datatype/PlayFab.Server.Models/PlayFab.Server.Models.AdvancedPushPlatformMsg) to deliver to many 3rd party plugins. 3rd party plugin delivery is not supported or guaranteed, but is available for advanced users.
+You can customize your client receiver to utilize that data however you like. CustomData is not displayed to the player, so it can be used to deliver custom game information to your client, or to locally schedule another future notification using the FCM plugin. You can also use [request.Package](xref:titleid.playfabapi.com.server.accountmanagement.sendpushnotification#pushnotificationpackage).CustomData or request.[AdvancedPlatformDelivery](xref:titleid.playfabapi.com.server.accountmanagement.sendpushnotification#advancedpushplatformmsg) to deliver to many 3rd party plugins. 3rd party plugin delivery is not supported or guaranteed, but is available for advanced users.
 
 ## Additional Support
 

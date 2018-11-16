@@ -120,7 +120,7 @@ When you make a request to delete a player, PlayFab will quickly remove the play
 
 Once the delete is complete, an email will be sent to the notification email address configured for the title. It will contain the same JobReceiptId which was initially returned by the API. The completion of the task will also trigger a PlayStream event. Using our webhook feature, you can register to receive these events on an endpoint of your choosing, and process them as needed. The event will contain a JSON blob that has the JobReceiptId.
 
-The following example shows how to use the Admin API with the C# SDK which can be downloaded [here](https://api.playfab.com/sdks/c). If you would like to use a different SDK then select one from the list of supported [platforms](https://api.playfab.com/platforms).
+The following example shows how to use the Admin API with the C# SDK which can be downloaded [here](https://api.playfab.com/sdks/c). If you would like to use a different SDK then select one from the list of [PlayFab SDKs](../../../quickstarts).
 
 ```csharp
 public static async void StartDeleteMasterPlayerExample(Action<PlayFabError> callback)
@@ -186,7 +186,7 @@ When you make a request to export a player’s data, the request is sent to a qu
 
 This API immediately returns a JobReceiptId which you should store in your records for future reference. It may take some time before the export is available for download. Upon completion of the export, an email containing the URL to download the export dump will be sent to the notification email address configured for the title. The completion of the task will also trigger a PlayStream event. Using our webhook feature, you can register to receive these events on an endpoint of your choosing and process as needed. The event will contain a JSON blob that has information such as the JobReceiptId and the download URL for the exported data.
 
-The following example is how to use the Admin API with the C# SDK which can be downloaded [here](https://api.playfab.com/sdks/c). If you would like to use a different SDK then select one from the list of supported [platforms](https://api.playfab.com/platforms).
+The following example is how to use the Admin API with the C# SDK which can be downloaded [here](https://api.playfab.com/sdks/c). If you would like to use a different SDK then select one from the list of [PlayFab SDKs](../../../quickstarts).
 
 ```csharp
 public static async void ExportMasterPlayerExample(Action<PlayFabError> callback)

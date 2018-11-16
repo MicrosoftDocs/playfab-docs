@@ -131,7 +131,7 @@ Done! Press any key to close
 
 - To build Admin utilities, see the alternate source files in the PlayFab CSharpSdk zip file:
   - {CSharpSdk}/PlayFabClientSDK/source
-  - and the [Admin API documentation](https://api.playfab.com/documentation/Admin)
+  - and see the topics under Admin in the [PlayFab API documentation](../../api-references/index.md)
   
 - Happy coding!
 
@@ -155,7 +155,7 @@ Inside of Main:
     - For LoginWithCustomIDRequest, there is a mandatory parameter of CustomId, which uniquely identifies a player and CreateAccount, which allows the creation of a new account with this call.
 
   - For login, most developers will want to use a more appropriate login method
-    - See the [PlayFab Login documentation](https://api.playfab.com/documentation/Client#Authentication) for a list of all login methods, and input parameters. Common choices are:
+    - See the [PlayFab Login documentation](xref:titleid.playfabapi.com.client.authentication) for a list of all login methods, and input parameters. Common choices are:
       - [LoginWithAndroidDeviceID](xref:titleid.playfabapi.com.client.authentication.loginwithandroiddeviceid)
       - [LoginWithIOSDeviceID](xref:titleid.playfabapi.com.client.authentication.loginwithiosdeviceid)
       - [LoginWithEmailAddress](xref:titleid.playfabapi.com.client.authentication.loginwithemailaddress)

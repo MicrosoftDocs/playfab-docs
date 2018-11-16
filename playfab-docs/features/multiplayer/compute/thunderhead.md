@@ -33,7 +33,7 @@ You can upload and manage multiplayer server builds using Game Manager or the En
 
 ## SDKs and Tools
 
-- [Beta Entity API Reference](https://api.playfab.com/documentation/multiplayer?beta=1)
+- Select Multiplayer in the [PlayFab API Reference Documentation](../../../api-references/index.md) to see the Multiplayer API Reference.
 - [Beta PlayFab & Entity API SDKs (Windows C++, C#, Java, Node.js)](https://s3-us-west-2.amazonaws.com/api-playfab-com-craft-files/FileAssets/BetaSDKs-180827.zip)
 - [Game Server SDK (GSDK) for C++ Windows Servers](https://s3-us-west-2.amazonaws.com/api-playfab-com-craft-files/FileAssets/microsoft.playfab.gaming.gsdk.cpp.0.0.0-beta-180613.zip)
 - [GSDK C++ Windows Test Servers](https://s3-us-west-2.amazonaws.com/api-playfab-com-craft-files/FileAssets/windows_cpp_testapps_180829.zip)
