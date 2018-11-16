@@ -16,14 +16,14 @@ This tutorial shows you the minimal setup required to authenticate your players 
 
 ## Requirements
 
-- Registered [Kongregate](http://www.kongregate.com/) account
-  - Familiarity with the [Kongregate Developers Guide](http://developers.kongregate.com/docs/api-overview/intro)
-- Registered PlayFab Title
-- Familiarity with [Login basics and Best Practices](../../authentication/platform-specific-authentication/login-basics-best-practices.md)
+- Registered [Kongregate](http://www.kongregate.com/) account.
+  - Familiarity with the [Kongregate Developers Guide](http://developers.kongregate.com/docs/api-overview/intro).
+- Registered PlayFab Title.
+- Familiarity with [Login basics and Best Practices](../../authentication/platform-specific-authentication/login-basics-best-practices.md).
 
 ## Setting up a Kongregate App
 
-Kongregate requires you to upload a preview version of the app, before you gain access to the necessary API information. So we need to prepare an index.html file with the following content:
+Kongregate requires you to upload a preview version of the app, before you gain access to the necessary API information. To do this, we need to prepare an **index.html** file with the following content.
 
 ```html
 <!doctype html>
@@ -35,35 +35,50 @@ Kongregate requires you to upload a preview version of the app, before you gain 
 </html>
 ```
 
-Navigate to the [Kongregate website](http://www.kongregate.com/), select the "Games" tab **(1)**. Then click the "Upload your game" button **(2)**, as shown in the following picture:
+Navigate to the [Kongregate website](http://www.kongregate.com/):
+- Select the **Games** tab **(1)**.
+- Then select the **Upload your game** button **(2)**.
 
 ![Kongregate Games tab](media/tutorials/kongregate-games-tab.png)  
 
-A page to set up a new application will open. Make sure to type in the application name **(1)**, description **(2)** and select a category **(3)**. Submit the new app by clicking the "Continue" button **(4)**, as shown in the following picture:
+A page to set up for a new application will open. 
+- Make sure to enter the application name in the **Title (1)** field.
+- Then enter a **Game Description (2)** in the field provided.
+- Select a **Category (3)**.
+- Submit the new app by selecting the **Continue** button **(4)** as indicated in the example provided below.
 
 ![Kongregate upload your game](media/tutorials/kongregate-upload-your-game.png)  
 
-You will be transferred to the application upload page. First and very important, make sure to save the URL from your web address bar. This will save you a lot of time trying to restore access to the application once you close the page.
-
-Once this is done, select the prepared index.html file as your Game File **(1)** and set up the screen size **(2)**. Make sure to accept all the required licenses **(3)**. Then, upload your application by clicking the "Upload" button in the bottom of the page **(4)**, as shown in the following picture:
+You will be moved to the application upload page.
+- As a very important first step, make sure to save the URL from your web address bar. This will save you a lot of time trying to restore access to the application once you close the page.
+- Once this is done, select the prepared **index.html** file as your **Game File (1)**.
+- Then set up the screen size **(2)**.
+- Make sure to accept all the required licenses **(3)**.
+- Upload your application by selecting the **Upload** button **(4)**, as shown in the example provided below.
 
 ![Kongregate application upload page](media/tutorials/kongregate-app-upload-page.png)
 
-Once the preview opens, ignore the content and click on the "api information" link, as shown in the following image:
+- Once the preview opens, ignore the content and open the **api information** link.
 
 ![Kongregate preview API information](media/tutorials/kongregate-preview-api-info.png)
 
-When the API information page opens, locate the API Key and save it for later use.
+>[!NOTE]
+>When the API information page opens, locate the **API Key** and save it in a safe and easily accessible place for later use.
 
 ![Kongregate API Key](media/tutorials/kongregate-api-key.png)
 
 ## Configuring PlayFab title
 
-In your PlayFab Title Game Manager navigate to Add-ons **(1)**, then locate and click "Kongregate" **(2)**, as shown in the following picture:
+In your PlayFab **Title Game Manager**:
+- Navigate to **Add-ons (1)**.
+- Then locate and select **Kongregate" (2)**, as shown in the example provided below.
 
 ![PlayFab select Kongregate Add-on](media/tutorials/playfab-select-kongregate-add-on.png)
 
-A page will open, allowing you to set up Kongregate integration. Enter the API Key **(1)** you acquired in the previous section, and click the "Install Kongregate" button **(2)** as shown in the following picture:
+A new page will open, allowing you to set up Kongregate integration. 
+
+- Enter the **API Key (1)** you acquired in the previous section.
+- Select the **Install Kongregate** button **(2)**.
 
 ![PlayFab set up Kongregate integration](media/tutorials/playfab-set-up-kongregate-integration.png)
 
@@ -71,7 +86,7 @@ If you receive no error message, then you have configured PlayFab title integrat
 
 ## Preparing some code
 
-Use the following example code to populate the index.html for your game:
+Use the following example code to populate the **index.html** for your game:
 
 ```html
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
@@ -162,10 +177,17 @@ Use the following example code to populate the index.html for your game:
 
 ## Testing
 
-Use the URL you saved earlier to access your application upload page. Select index.html as your Game File **(1)** and set up the screen size **(2)**. Make sure to accept all the required licenses **(3)**. Upload your application by clicking the "Upload" button in the bottom of the page **(4)**, as shown in the following picture:
+Remember that URL we asked you to save in a safe and accessible place a little earlier?  Use it now to access your application upload page.
+- Select **index.html** as your **Game File (1)**.
+- Set up the screen size **(2)**. 
+- Make sure to accept all the required licenses **(3)**.
+- Upload your application by selecting the **Upload** button **(4)**.
 
 ![Kongregate application upload page](media/tutorials/kongregate-app-upload-page.png)
 
-Once the preview loads, wait for the application to obtain the Kongregate User ID and Username. Once done, click the "PlayFab Login With Kongregate" button. In a moment, if you get an "Authenticated via PlayFab" message, this means that you have successfully logged in using PlayFab and Kongregate!
+Once the preview loads, wait for the application to obtain the **Kongregate User ID** and **Username**.
+- When that has happened, select the **PlayFab Login With Kongregate** button.
+- After a brief pause, you should receive an **Authenticated via PlayFab** message.
+- At this point you have successfully logged in using PlayFab and Kongregate!
 
 ![Testing PlayFab Login with Kongregate](media/tutorials/kongregate-html5/testing-playfab-login-with-kongregate.png)
