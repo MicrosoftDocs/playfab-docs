@@ -122,12 +122,12 @@ In this example, we show how to test using the classic **Access Token** approach
         function onSignIn() {
             // Retrieve access token
             var accessToken = gapi.auth2.getAuthInstance().currentUser.get().getAuthResponse(true).access_token;
-            
+
             // Execute LoginWithGoogleAccount API call using the access token. Please replace TitleID with your own.
             logLine("Attempting PlayFab Sign-in");
             PlayFabClientSDK.LoginWithGoogleAccount({
                 AccessToken: accessToken,
-                CreateAccount : true,            
+                CreateAccount : true,
                 TitleId: "YOUR_PLAYFAB_TITLE", // TODO: PUT YOUR TITLE ID HERE!
             }, onPlayFabResponse);
         }
