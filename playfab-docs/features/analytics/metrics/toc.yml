@@ -15,7 +15,7 @@
     - name: Real-Time Analytics - Event History Chart Panel
       href: real-time-analytics-event-history-chart-panel.md
       name: Real-Time Analytics - Event Queries
-      href: constructing-an-event-history-search.md
+      href: real-time-analytics-event-queries.md
     - name: Real-Time Analytics - Event Search Query Panel
       href: real-time-analytics-event-search-query-panel.md
     - name: Real-Time Analytics - Event Timeline Panel

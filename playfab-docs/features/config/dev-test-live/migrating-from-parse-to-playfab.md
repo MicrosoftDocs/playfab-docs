@@ -20,7 +20,7 @@ The most important difference is that Parse is a general purpose mobile backend,
 
 PlayFab, however, is specifically designed for games, and includes a large number of game-specific systems that you can immediately start using without writing any custom code. Most developers tell us that building their game on PlayFab is much faster than building their game on Parse, but it is less flexible. There may be tasks that you could do in Parse that you cannot easily do in PlayFab -- at least, not without writing some custom code yourself.
 
-This migration tutorial assumes that you have already familiarized yourself with PlayFab’s features. If you haven’t, we recommend you start by reading this [white paper](https://api.playfab.com/downloads/technical-white-paper), then come back to this tutorial to learn more about the migration process.
+This migration tutorial assumes that you have already familiarized yourself with PlayFab’s features. If you haven’t, we recommend you start by reading our tutorial [Getting started with PlayFab](getting-started-with-playfab.md), then come back to this tutorial to learn more about the migration process.
 
 ### Storing Files and data
 

@@ -254,7 +254,7 @@ This optional last section describes each part of the blueprints above, in detai
       - PlayFabSettings.TitleId is not set. If you forget to set titleId to your title, then nothing will work.
       - Request parameters. If you have not provided the correct or required information for a particular API call, then it will fail. See error.errorMessage, error.errorDetails, or error.GenerateErrorReport() for more info.
       - Device connectivity issue. Cell-phones lose/regain connectivity constantly, and so any API call at any time can fail randomly, and then work immediately after. Going into a tunnel can disconnect you completely.
-      - PlayFab server issue. As with all software, there can be issues. See our [release notes](https://api.playfab.com/releaseNotes) for updates.
+      - PlayFab server issue. As with all software, there can be issues. See our [release notes](../../release-notes/index.md) for updates.
       - The internet is not 100% reliable. Sometimes the message is corrupted or fails to reach the PlayFab server.
     - If you are having difficulty debugging an issue, and the information within the error information is not sufficient, please visit us on our [forums](https://community.playfab.com/index.html)
   
@@ -309,7 +309,7 @@ This optional last section describes the code in this project line by line.
       - PlayFabSettings.TitleId is not set. If you forget to set titleId to your title, then nothing will work.
       - Request parameters. If you have not provided the correct or required information for a particular API call, then it will fail. See error.errorMessage, error.errorDetails, or error.GenerateErrorReport() for more info.
       - Device connectivity issue. Cell-phones lose/regain connectivity constantly, and so any API call at any time can fail randomly, and then work immediately after. Going into a tunnel can disconnect you completely.
-      - PlayFab server issue. As with all software, there can be issues. See our [release notes](https://api.playfab.com/releaseNotes) for updates.
+      - PlayFab server issue. As with all software, there can be issues. See our [release notes](../../release-notes/index.md) for updates.
       - The internet is not 100% reliable. Sometimes the message is corrupted or fails to reach the PlayFab server.
     - At this time, the PlayFab Unreal C++ SDK maintains state with static variables which are non atomic and are not guarded by synchronization techniques. For this reason, we recommend limiting PlayFab calls to within the main Unreal thread.
     - If you are having difficulty debugging an issue, and the information within the error information is not sufficient, please visit us on our [forums](https://community.playfab.com/index.html)

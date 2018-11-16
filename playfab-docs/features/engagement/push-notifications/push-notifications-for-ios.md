@@ -104,6 +104,6 @@ else
 
 ## Additional Support
 
-For help, example bugs, and related questions, drop us a line over at our [support forums](https://support.playfab.com/).
+For help, example bugs, and related questions, drop us a line in our [Forums](https://community.playfab.com/index.html).
 
 Currently, we only support our services for the standard flow described in this document. If your team is looking for additional functionality with other common push services or plugins, please let us know! We love getting feedback from our developer community.

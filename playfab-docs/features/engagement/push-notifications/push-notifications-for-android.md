@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 - [Push Notification basics](push-notification-basics.md)
 - [Unity3D Quickstart](../../../sdks/unity3d/quickstart.md)
-- [Optional] [Unity Editor Extensions](https://api.playfab.com/blog/new-unity-editor-extensions-beta)
+- [Optional] [Unity Editor Extensions](https://blog.playfab.com/blog/new-unity-editor-extensions-beta)
 - [Optional] [Executing the PlayFab API via Postman](../../config/dev-test-live/executing-the-playfab-api-via-postman.md)
 
 ## Configuring the Android notification channel
@@ -217,7 +217,7 @@ You can customize your client receiver to utilize that data however you like. Cu
 
 ## Additional Support
 
-For help, example bugs, and related questions, drop us a line over at our [support forums](https://support.playfab.com/).
+For help, example bugs, and related questions, drop us a line in our [Forums](https://community.playfab.com/index.html).
 
 Currently, we only support our services for the standard flow described in this document. If you team is looking for additional functionality with other common push services or plugins, please let us know! We love getting feedback from our developer community.
 

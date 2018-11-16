@@ -1,4 +1,4 @@
-# Cloud Script Quickstart
+# CloudScript Tutorials
 
 These tutorials show you how to write, use, and handle error information with CloudScript.
 

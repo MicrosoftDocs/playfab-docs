@@ -53,7 +53,7 @@ This guide will help you make your first PlayFab API call in the Cocos2d-x engin
 ```
 
 - Download PlayFab Cocos2d-xSdk
-  - [https://api.playfab.com/sdks/download/cpp-cocos2dx](https://api.playfab.com/sdks/download/cpp-cocos2dx)
+  - [Cocos2d-xSDK](https://api.playfab.com/sdks/download/cpp-cocos2dx)
   - Save and extract it to a temporary location {PlayFabCocos}
   - Open the following folder in Windows Explorer: {PlayFabCocos}/PlayFabClientSDK
   - Open the following folder in a second Windows Explorer: {CocosGettingStarted}/Classes
@@ -207,8 +207,7 @@ void HelloWorld::OnLoginFail(const PlayFab::PlayFabError& error, void* customDat
   - Congratulations, you made your first successful API call!
 
 - At this point, you can start making other api calls, and building your game
-- For a list of all available client API calls, see our documentation:
-  - [https://api.playfab.com/](https://api.playfab.com/)
+- For a list of all available client API calls, see our [PlayFab API References](../../api-references/index.md) documentation.
   
 - Happy coding!
 
