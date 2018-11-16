@@ -12,45 +12,62 @@ ms.localizationpriority: medium
 
 # Setting up PlayFab authentication using Universal Windows Platform
 
-This tutorial guides you through an example of PlayFab authentication using the Universal Windows Platform (UWP).
+This tutorial guides you through the procedure for PlayFab authentication using the Universal Windows Platform (UWP).
 
 > [!IMPORTANT]
-> This tutorial serves as a very basic introduction on how you can obtain all entities and commit authentication via Windows Hello and PlayFab. For a more sophisticated example of Windows Hello and PlayFab Authentication, consider our [UWPExample project](https://github.com/PlayFab/UWPExample).
+> This procedure serves as a very basic introduction on how you can obtain all entities and commit authentication via Windows Hello and PlayFab. For a more sophisticated example of Windows Hello and PlayFab Authentication, consider our [UWPExample project](https://github.com/PlayFab/UWPExample).
 
 ## Requirements
 
-- Follow the [MSDN "Get Set Up" Guide](https://docs.microsoft.com/en-us/windows/uwp/get-started/get-set-up) to prepare Windows and Visual Studio for UWP development
-- Registered [PlayFab](https://playfab.com/) Title
-- Familiarity with [Login basics and Best Practices](../../authentication/platform-specific-authentication/login-basics-best-practices.md)
+- Follow the [MSDN "Get Set Up" Guide](https://docs.microsoft.com/en-us/windows/uwp/get-started/get-set-up) to prepare Windows and Visual Studio for UWP development.
+- Have a registered [PlayFab](https://playfab.com/) Title.
+- Be familiar with [Login basics and Best Practices](../../authentication/platform-specific-authentication/login-basics-best-practices.md).
 
 > [!NOTE]
-> it is **very important** that you are using the Windows 10 operating system, are logged in with a verified Microsoft Account, and have configured an access interface, such as PIN. If these requirements are not met, the app will fail without any useful explanation of why.
+> it is **very important** that you are using the Windows 10 operating system, are logged in with a verified Microsoft Account, and have configured an access interface such as PIN. If these requirements are *not* met, the app will fail without any useful explanation of why.
 
 ## Preparing a Visual Studio Project
 
-Start Visual Studio and create a new project. Under Templates, select "Windows Universal" **(1)**, select the "Blank App (Universal Windows)" type **(2)**, name it "GettingStartedPlayfabUWP" **(3)**, and click "Ok" **(4)** to submit.
+Start Visual Studio and create a new project. 
+
+- Under **Templates**, select **Windows Universal (1)**.
+- Then select the **Blank App (Universal Windows)** type **(2)**.
+- Name it **GettingStartedPlayfabUWP (3)**.
+- Select the **OK** button **(4)** to submit.
 
 ![Visual Studio new blank UWP app](media/tutorials/uwp/vs-new-uwp-app.png)  
 
-Select the Target and Minimum SDK versions that match your project **(1)** and click "Ok" **(2)**:
+- Select the **Target Version** and the **Minimum VZersion** that match your project **(1)**.
+- Select the  **OK** button **(2)**.
 
 ![Visual Studio UWP SDK version](media/tutorials/uwp/vs-uwp-sdk-version.png)  
 
-Once the project is created, add the PlayFab SDK using the NuGet package manager. First, click "Tools" **(1)**, select "NuGet Package Manager" **(2)** and select "Manage NuGet Packages for Solution" **(3)**: 
+Once the project is created, add the PlayFab SDK using the NuGet package manager.
+
+- First, select the **Tools** tab **(1)**.
+- In the drop-down menu, select **NuGet Package Manager (2)**.
+- Then select **Manage NuGet Packages for Solution (3)**.
 
 ![Visual Studio NuGet Package Manager](media/tutorials/uwp/vs-nuget-package-manager.png)  
 
-In the NuGet manager window, select "Browse" and search for the "PlayFabAllSDK" package **(1)**, select your target project **(2)** and click "Install" **(3)**:
+In the **NuGet Manager** window;
+
+- Select **Browse** and search for the **PlayFabAllSDK** package.
+ **(1)**.
+- Select your target project **(2)**.
+- Then select the **Install** button **(3)**.
 
 ![Visual Studio Install PlayFab SDK](media/tutorials/uwp/vs-install-playfab-sdk.png)  
 
-Once finished, your basic project setup is complete. In the next section we will modify 2 classes that should be automatically generated on project creation: App and MainPage.
+Once finished, your basic project setup is complete. In the next section we will modify 2 classes that should be automatically generated on project creation:
+1. App
+1. MainPage.
 
 ## Implementation
 
 ### App.xaml.cs  
 
-This class will just set up our PlayFab SDK by setting a proper Title ID. Do not forget to replace the Title ID with your own.
+This class will just set up our **PlayFab SDK** by setting a proper **Title ID**. Do not forget to replace the **Title ID** with your own.
 
 ```csharp
 using System;
@@ -154,7 +171,7 @@ namespace GettingStartedPlayfabUWP
 
 ### MainPage.xaml
 
-This file contains the layout for our main page. This is a super trivial layout with 2 buttons and a text input combined in a vertically oriented grid. The buttons are bound to specific methods, and the Textbox is accessible via its name `UsernameInput`:
+This file contains the layout for our main page. This is a super trivial layout with 2 buttons and a text input combined in a vertically oriented grid. The buttons are bound to specific methods, and the Textbox is accessible via its name **UsernameInput**.
 
 ```xaml
 <Page
@@ -178,7 +195,7 @@ This file contains the layout for our main page. This is a super trivial layout 
 
 ### MainPage.xaml.cs
 
-This is the functional class for the main page and it is the heart of the example. Please refer to the code comments, and review the different methods that are designed to walk you through PlayFab+Hello register and login. The easiest approach to start learning the code is to review the methods that are triggered by the corresponding buttons: `RegisterRequest` and `LogInRequest`.
+This is the functional class for the main page and it is the heart of the example. Please refer to the code comments, and review the different methods that are designed to walk you through PlayFab+Hello register and login. The easiest approach to start learning the code is to review the methods that are triggered by the corresponding buttons: **RegisterRequest** and **LogInRequest**.
 
 ```csharp
 using System;
@@ -425,19 +442,24 @@ namespace GettingStartedPlayfabUWP
 
 ## Testing
 
-Run the application, type in your username **(1)** and click the "Register With Hello" button **(2)**:
+Run the application:
+
+- Enter your username **(1)**.
+- Select the **Register With Hello** button **(2)**.
 
 ![UWP example - register](media/tutorials/uwp/uwp-example-register.png)  
 
-Follow the instruction that Windows offers for authentication. Once your identity is confirmed, observe the confirmation message saying that the account was Registered and signed in **(1)** with a Session Ticket **(2)**:
+- Follow the instruction that Windows offers for authentication.
+- Once your identity is confirmed, observe the confirmation message saying that the account was **Registered and signed in (1)** with a **Session Ticket (2)**.
 
 ![UWP example - register confirmation](media/tutorials/uwp/uwp-example-register-confirmation.png)  
 
-Click the "Sign in With Hello" button **(1)**:
+- Select the **Sign in With Hello** button **(1)**.
 
 ![UWP example - sign in](media/tutorials/uwp/uwp-example-sign-in.png)  
 
-Follow the instruction that Windows offers for authentication. Once your identity is confirmed, observe the confirmation message saying that the account is signed in **(1)** with a Session Ticket **(2)**:
+- Follow the instruction that Windows offers for authentication.
+- Once your identity is confirmed, observe the confirmation message saying that the account is **Signed in (1)** with a **Session Ticket (2)**.
 
 ![UWP example - sign in confirmation](media/tutorials/uwp/uwp-example-sign-in-confirmation.png)  
 
