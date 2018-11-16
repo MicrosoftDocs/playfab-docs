@@ -25,7 +25,7 @@ This tutorial shows you the minimal setup required to authenticate your players 
 
 ## Setting up a Kongregate App
 
-Kongregate requires you to upload a preview version of the app, before you gain access to the necessary API information. So we need to prepare an index.html file with the following content:
+Kongregate requires you to upload a preview version of the app, before you gain access to the necessary API information. Our first step is to prepare an **index.html** file with the following content.
 
 ```html
 <!doctype html>
@@ -37,60 +37,83 @@ Kongregate requires you to upload a preview version of the app, before you gain 
 </html>
 ```
 
-Navigate to the [Kongregate website](http://www.kongregate.com/), select the "Games" tab **(1)**. Then click the "Upload your game" button **(2)**, as shown in the following picture:
+Navigate to the [Kongregate website](http://www.kongregate.com/).
+- Select the **Games** tab **(1)**. 
+- Then select the **Upload your game** button **(2)**.
 
 ![Kongregate Games tab](media/tutorials/kongregate-games-tab.png)  
 
-A page to set up a new application will open. Make sure to type in the application name **(1)**, description **(2)** and select a category **(3)**. Submit the new app by clicking the "Continue" button **(4)**, as shown in the following picture:
+A page to set up a new application will open.
+
+- Make sure to enter the application name **(1)**.
+- Enter a **Game Description (2)**.
+- Then select a **Category (3)**. 
+- Submit the new app by selecting the **Continue** button **(4)**.
 
 ![Kongregate upload your game](media/tutorials/kongregate-upload-your-game.png)  
 
-You will be transferred to the application upload page. First and very important, make sure to save the URL from your web address bar. This will save you a lot of time trying to restore access to the application once you close the page.
+You will be transferred to the application upload page.
 
-Once this is done, select the prepared index.html file as your Game File **(1)** and set up the screen size **(2)**. Make sure to accept all the required licenses **(3)**. Then, upload your application by clicking the "Upload" button in the bottom of the page **(4)**, as shown in the following picture:
+- First - *and most importantly* - make sure to save the URL from your web address bar in a safe and easily accessible place. *This will save you a lot of time restoring access to the application once you close the page*.
+
+- Once this is done, select the prepared **index.html** file as your **Game File (1)**.
+- Then set up the screen size **(2)**.
+- Make sure to accept all the required licenses **(3)**.
+- Finally, upload your application by selecting the **Upload** button **(4)**.
 
 ![Kongregate application upload page](media/tutorials/kongregate-app-upload-page.png)
 
-Once the preview opens, ignore the content and click on the "api information" link, as shown in the following image:
+Once the preview opens, ignore the content and open the **api information** link.
 
 ![Kongregate preview API information](media/tutorials/kongregate-preview-api-info.png)
 
-When the API information page opens, locate the API Key and save it for later use.
+When the **API Information** page opens, locate the **API Key** and keep it in a safe place that is easily accessible for later use.
 
 ![Kongregate API Key](media/tutorials/kongregate-api-key.png)
 
 ## Configuring PlayFab title
 
-In your PlayFab Title Game Manager navigate to Add-ons **(1)**, then locate and click "Kongregate" **(2)**, as shown in the following picture:
+In your PlayFab **Title Game Manager**:
+- Navigate to **Add-ons (1)** in your menu.
+- Then locate and select **Kongregate (2)**.
 
 ![PlayFab select Kongregate Add-on](media/tutorials/playfab-select-kongregate-add-on.png)
 
-A page will open, allowing you to set up Kongregate integration. Enter the API Key **(1)** you acquired in the previous section, and click the "Install Kongregate" button **(2)** as shown in the following picture:
+A new page will open, allowing you to set up Kongregate integration:
+
+- Enter the **API Key (1)** you acquired in the previous section.
+- Select the **Install Kongregate** button **(2)**.
 
 ![PlayFab set up Kongregate integration](media/tutorials/playfab-set-up-kongregate-integration.png)
 
-If you receive no error message, then you have configured PlayFab title integration with your Kongregate application.
+At ths point, if you do not receive an error message, you have configured PlayFab title integration with your Kongregate application properly.
 
 ## Setting up a Unity project
 
-Unity setup checklist:
+Use this Unity setup checklist:
 
-- [OPTIONAL] Install [PlayFab Editor Extensions](https://api.playfab.com/downloads/unity-edex)
-  - Setup your TitleId in the PlayFabSharedSettings Scriptable Object
-- For Unity 5.6+, download the [Kongregate Preloader WebGL Template](https://github.com/kongregate/webgl-preloader) and place it inside the  Assets/WebGLTemplates folder **(2)**
-- For Unity < 5.6, download the [Kongregate Preloader WebGL Template 5.5 and below](https://github.com/kongregate/webgl-preloader/tree/unity-5.5-and-below) and place it inside the Assets/WebGLTemplates folder **(2)**
+- [OPTIONAL] Install the [PlayFab Editor Extensions](https://api.playfab.com/downloads/unity-edex).
+  - Set up your **TitleId** in the **PlayFabSharedSettings Scriptable Object**.
+- For Unity 5.6+, download the [Kongregate Preloader WebGL Template](https://github.com/kongregate/webgl-preloader), and place it inside the **Assets/WebGLTemplates** folder **(2)**.
+- For Unity < 5.6, download the [Kongregate Preloader WebGL Template 5.5 and below](https://github.com/kongregate/webgl-preloader/tree/unity-5.5-and-below), and place it inside the **Assets/WebGLTemplates** folder **(2)**.
 
 ![Unity Assets/WebGL Templates folder](media/tutorials/kongregate-unity/unity-assets-webgltemplates-folder.png)
 
-Create your working scene. For testing purposes, use a screen-scaling canvas **(1)** with a couple of text labels. We will only need one text label to display debug messages. Create an empty GameObject and rename it to "Kongregate" **(2)**.
+Create your working scene.
+
+- For testing purposes, use a screen-scaling canvas **(1)** with a couple of text labels.
+>[NOTE]
+> We will only need *one* text label to display debug messages.
+
+- Create an empty **GameObject** and rename it to **Kongregate (2)**.
 
 ![Unity BootScene](media/tutorials/kongregate-unity/unity-boot-scene.png)
 
-This GameObject will contain a KongregateHandler component with a wired text label for debug messages:
+This **GameObject** will contain a **KongregateHandler** component with a wired text label for debug messages.
 
 ![Unity GameObject Kongregate Handler](media/tutorials/kongregate-unity/unity-kongregate-handler.png)
 
-The code for the KongregateHandler component is the following:
+The code for the **KongregateHandler** component is provided below.
 
 ```csharp
 // We are specifically interested in importing PlayFab related namespaces 
@@ -187,22 +210,37 @@ public class KongregateHandler : MonoBehaviour
 
 ## Testing
 
-The only way you can truly test the integration is by uploading your prototype to Kongregate. Open the build window and make sure WebGL is selected **(1)**. Then open Player Settings **(2)**, as shown in the following picture:
+The only way you can truly test the integration is by uploading your prototype to Kongregate.
+
+- Open the build window and make sure **WebGL** is selected **(1)** from your menu.
+- Then open the **Player Settings (2)** by selecting the button.
 
 ![Kongregate Build Settings](media/tutorials/kongregate-unity/kongregate-build-settings.png)
 
-Inside player settings, locate the WebGL build settings. Ensure that you have a size set up correctly **(1)** and make sure to select the Kongregate Preloader Template **(2)**, as shown in the following picture:
+Inside the **Player Settings** screen:
+
+- Locate the **Settings for WebGL** build.
+- Verify that you have the size set up correctly **(1)**.
+- Then select the **Kongregate Preloader Template (2)**.
 
 ![Kongregate WebGL Settings](media/tutorials/kongregate-unity/kongregate-webgl-settings.png)
 
-Build the application and open the build folder. You will end up with index.html and a bunch of other files (depending on Unity version). Take all the files except index.html and place them inside a zip archive, as shown in the following picture:
+Build the application and open the build folder.
+
+- You will end up with **index.html** and a bunch of other files (depending on Unity version).
+- Take all the files except **index.html** and place them inside a zip archive, as shown in the example provided below.
 
 ![Unity build folder](media/tutorials/kongregate-unity/unity-build-folder.png)
 
-Use the URL you saved earlier to access your application upload page. Select index.html as your Game File **(1)**. Select the ZIP archive as Additional files **(2)**. Accept the licenses and hit upload:
+- Use the URL you saved earlier to access your application upload page.
+- Select **index.html** as your **Game File (1)**.
+- Then Select the ZIP archive as **Additional files (2)**. 
+- Accept the licenses and upload.
 
 ![Kongregate application upload page](media/tutorials/kongregate-unity/kongregate-app-upload-page-add-files.png)
 
-Once the preview opens, you should be able to see your game live with the message changing. In the end, the message should indicate successful login through PlayFab.
+Once the preview opens, you should be able to see your game live as the message changes. 
+
+At completion, the message should indicate successful login through PlayFab.
 
 At this point, you have successfully integrated PlayFab and Kongregate.
