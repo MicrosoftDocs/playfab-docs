@@ -90,7 +90,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Concept: Game Manager</h3>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu lobortis elementum nibh tellus. Auctor urna nunc id cursus metus.</p>
+                                                    <p>Learn about the different areas of Game Manager. Here you can find comprehensive guides about our features in Game Manager and explore how to configure and run your game as a service.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -109,7 +109,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Concept: Entities</h3>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu lobortis elementum nibh tellus. Auctor urna nunc id cursus metus.</p>
+                                                    <p>Entities provides a robust set of features ranging from per player data storage to groups and clans. Learn about entities and how to apply them to your game.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -128,7 +128,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Concept: PlayStream</h3>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu lobortis elementum nibh tellus. Auctor urna nunc id cursus metus.</p>
+                                                    <p>PlayStream is the underlying event architecture that drives PlayFab. Learn how playstream can help with retention, engagement and montitization.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -147,7 +147,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Concept: Cloud Script</h3>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu lobortis elementum nibh tellus. Auctor urna nunc id cursus metus.</p>
+                                                    <p>Cloud Script is one of PlayFab's most powerful features. Learn all about running compute in the Cloud and building robust systems with PlayFab Cloud Script.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -166,7 +166,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Resource: Event Archive</h3>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu lobortis elementum nibh tellus. Auctor urna nunc id cursus metus.</p>
+                                                    <p>Get access to your data, debug your game and more. Here you can see in real-time what is going on in your game, giving you ultimate power and insight into player behaviour.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -185,7 +185,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Resource: Recipes</h3>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu lobortis elementum nibh tellus. Auctor urna nunc id cursus metus.</p>
+                                                    <p>PlayFab can be used in many ways. Everything from simple retention mechanics like Daily Prize wheels to complex commerce. Here you will find some useful receipies for making features in PlayFab.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -204,7 +204,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Resource: Technical Whitepaper</h3>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu lobortis elementum nibh tellus. Auctor urna nunc id cursus metus.</p>
+                                                    <p>A comprehensive white paper provides an overview of all PlayFab features, the technology used to build and operate PlayFab, and the processes followed to create, deploy, monitor, and maintain the entire platform.</p>
                                                 </div>
                                             </div>
                                         </div>
