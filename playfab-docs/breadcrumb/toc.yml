@@ -37,7 +37,7 @@
       tocHref: /gaming/playfab/feature-config/
       topicHref: /gaming/playfab/feature-config/
       items:
-      - name: GameManager
+      - name: Game Manager
         tocHref: /gaming/playfab/features/config/gamemanager/
         topicHref: /gaming/playfab/features/config/gamemanager/
       - name: Title Data
@@ -50,7 +50,7 @@
       tocHref: /gaming/playfab/feature-automation/
       topicHref: /gaming/playfab/feature-automation/
       items:
-      - name: Cloud Script
+      - name: CloudScript
         tocHref: /gaming/playfab/features/automation/cloudscript/
         topicHref: /gaming/playfab/features/automation/cloudscript/
       - name: PlayStream Events
@@ -85,7 +85,7 @@
       - name: Stores
         tocHref: /gaming/playfab/features/commerce/stores/
         topicHref: /gaming/playfab/features/commerce/stores/
-      - name: Economys
+      - name: Economy
         tocHref: /gaming/playfab/features/commerce/economy/
         topicHref: /gaming/playfab/features/commerce/economy/
     - name: Multiplayer

@@ -37,7 +37,7 @@ Start Visual Studio and create a new project.
 
 ![Visual Studio new blank UWP app](media/tutorials/uwp/vs-new-uwp-app.png)  
 
-- Select the **Target Version** and the **Minimum VZersion** that match your project **(1)**.
+- Select the **Target Version** and the **Minimum Version** that match your project **(1)**.
 - Select the  **OK** button **(2)**.
 
 ![Visual Studio UWP SDK version](media/tutorials/uwp/vs-uwp-sdk-version.png)  

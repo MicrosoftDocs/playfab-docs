@@ -32,7 +32,7 @@ You can also download the sample for this tutorial [here](https://github.com/Pla
 - A PlayFab developer account which has access to a game title in PlayFab.
 - The [PlayFab Unity Editor Extensions & Unity SDK](../../../sdks/unity3d/quickstart.md).
 - The [Google Play Games SDK](https://github.com/playgameservices/play-games-plugin-for-unity).
-- Familiarity with [Login basics and Best Practices].(../../authentication/platform-specific-authentication/login-basics-best-practices.md).
+- Familiarity with [Login basics and Best Practices](../../authentication/platform-specific-authentication/login-basics-best-practices.md).
 
 ## Getting Started
 

@@ -63,7 +63,7 @@ Next, navigate to **Credentials (1)**:
 
 - Select **Web Application (1)** as your application type.
 - Give your application a name **(2)**. 
-- Add your domain to **Authorized JavaScript Origin (3)** (http://playfab.example in our case)
+- Add your domain to **Authorized JavaScript origins (3)** (http://playfab.example in our case)
 - Finally, select the **Create (4)** button to commit your changes.
 
 ![Google API Manager create OAuth credentials](media/tutorials/google-html5/create-oauth-credentials.png)  
@@ -71,7 +71,7 @@ Next, navigate to **Credentials (1)**:
 On the **OAuth client** screen shown below, the Google API Manager reveals two important pieces of information
 
 1. The **Client ID (1)**
-1. The **Client Secret (2)**. 
+2. The **Client Secret (2)**.
 
 > [!NOTE]
 > Be sure to copy and save these values in a safe place that is easily accessible, as they will be used in the authorization process shown later in this tutorial.

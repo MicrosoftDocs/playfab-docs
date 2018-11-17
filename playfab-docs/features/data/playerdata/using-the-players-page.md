@@ -16,9 +16,9 @@ ms.localizationpriority: medium
 
 It is possible to inspect the players you have in your title using the Players Page. 
 
-Toaccess the Players Page:
+To access the Players Page:
 
-- Goto the **Game Manager** page.
+- Go to the **Game Manager** page.
 - Select **Players** in the menu.
 - Then select the **Players** tab.
 
@@ -42,8 +42,7 @@ A **Simplistic query** accepts 1 or more tokens separated by a space. It searche
 
 ![Game Manager - Players Page - display names and IDs](media/tutorials/game-manager-players-page-display-names-and-ids.png)  
 
->[!EXAMPLE]
-In the preceding screenshot we chose 2 users: Lee and Vicky. **Display names** and **IDs** are among the searchable fields, so, based only on the information from the screenshot, we have 4 tokens at our disposal: Lee, Vicky, 3BB0E45D6CB3304A, 962B724F659A776A. Remember, you can use *any* [searchable player field](https://api.playfab.com/playstream/profile/PlayerProfile) as a token. 
+For example, in the preceding screenshot we chose 2 users: Lee and Vicky. **Display names** and **IDs** are among the searchable fields, so, based only on the information from the screenshot, we have 4 tokens at our disposal: Lee, Vicky, 3BB0E45D6CB3304A, 962B724F659A776A. Remember, you can use *any* [searchable player field](https://api.playfab.com/playstream/profile/PlayerProfile) as a token.
 
 Now let's test a few querying techniques.
 
@@ -60,8 +59,8 @@ Now let's test a few querying techniques.
 
 - The combined strict token **Lee** and wildcard token **Vick** * results in 3 players. One corresponds to **Lee** and 2 others have display names starting with **Vick**.
 
->[!NOTE]
->This is not the best example, because all three of the located fields are display names. However, if you had a player with an ID starting with **Vic**, it would also be part of the query results.
+> [!NOTE]
+> This is not the best example, because all three of the located fields are display names. However, if you had a player with an ID starting with **Vic**, it would also be part of the query results.
 
 ### Complex queries
 
