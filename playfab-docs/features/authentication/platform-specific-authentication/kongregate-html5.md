@@ -62,14 +62,15 @@ You will be moved to the application upload page.
 
 ![Kongregate preview API information](media/tutorials/kongregate-preview-api-info.png)
 
->[!NOTE]
->When the API information page opens, locate the **API Key** and save it in a safe and easily accessible place for later use.
+> [!NOTE]
+> When the API information page opens, locate the **API Key** and save it in a safe and easily accessible place for later use.
 
 ![Kongregate API Key](media/tutorials/kongregate-api-key.png)
 
 ## Configuring PlayFab title
 
 In your PlayFab **Title Game Manager**:
+
 - Navigate to **Add-ons (1)**.
 - Then locate and select **Kongregate" (2)**, as shown in the example provided below.
 
@@ -178,6 +179,7 @@ Use the following example code to populate the **index.html** for your game:
 ## Testing
 
 Remember that URL we asked you to save in a safe and accessible place a little earlier?  Use it now to access your application upload page.
+
 - Select **index.html** as your **Game File (1)**.
 - Set up the screen size **(2)**. 
 - Make sure to accept all the required licenses **(3)**.
@@ -186,6 +188,7 @@ Remember that URL we asked you to save in a safe and accessible place a little e
 ![Kongregate application upload page](media/tutorials/kongregate-app-upload-page.png)
 
 Once the preview loads, wait for the application to obtain the **Kongregate User ID** and **Username**.
+
 - When that has happened, select the **PlayFab Login With Kongregate** button.
 - After a brief pause, you should receive an **Authenticated via PlayFab** message.
 - At this point you have successfully logged in using PlayFab and Kongregate!

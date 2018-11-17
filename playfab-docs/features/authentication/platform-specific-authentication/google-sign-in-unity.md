@@ -72,8 +72,8 @@ You can configure Google Play Games from the toolset that is installed with the 
 </resources>
 ```
 
->[!NOTE]
->The Client ID that is generated for you when you link the app (shown in this image) is **NOT** the correct one!
+> [!NOTE]
+> The Client ID that is generated for you when you link the app (shown in this image) is **NOT** the correct one!
 
 ![Google Play Developer Console Web App Client ID](media/tutorials/google-unity/gpdc-client-id.png)  
 
@@ -86,6 +86,7 @@ Then Configure your app for Web.
 ![Google Play Developer Console link to Web app configuration](media/tutorials/google-unity/gpdc-link-to-web-app-config.png)  
 
 From here, you enter your **API Endpoint** which can be found in PlayFab:
+
 - Look under **Settings**.
 - Select the **API** tab.
 - Go to the **API Endpoint** field.
@@ -121,13 +122,13 @@ There are a few things you need to enter into this form:
 - The **Google App Package ID** - This is the name of your Android package. For example, our sample uses **com.playfab.gpgexample**.
 - The **Google App License Key** - While this is a required field, it is not related to the **Google Sign-In**. This field is for setting up a **Receipt Validation** using our Receipt Validation APIs.
 
->[!NOTE]
+> [!NOTE]
 > You can get this License Key from the [Google Developer Console](https://play.google.com/apps/publish) under the **Services & APIs** section. Look for a section entitled **YOUR LICENSE KEY FOR THIS APPLICATION**. Copy and paste the Base64-encoded **RSA Public Key** into this field.
 - The **Google OAuth Client ID** - This is the **Web Client ID** that you used in the Google Play Games SDK Setup in Unity.
 - The **Google OAuth Client Secret** - This is the secret key that you obtained in the last step.
 
->[!TIP]
->Be sure to **Save Settings!**
+> [!TIP]
+> Be sure to **Save Settings!**
 
 ## Adding Google Sign-In to your Unity Game
 
@@ -202,8 +203,9 @@ The **OnSignInButtonClicked()** code can be a bit overwhelming, so let's break d
 - First, we log in with **Social.localUser.Authenticate** - This will return a boolean if we are able to successfully login. Be aware that if you have not added your test account to your app this will always return **false** when testing.
 - When this happens - important step here - [add your test account](https://developers.google.com/games/services/console/testpub).
 - The link will take you to instructions on adding testers to your Google application.
->[!NOTE]
->This is what will trigger the **Google Play Games** sign-in dialog to pop up.
+
+> [!NOTE]
+> This is what will trigger the **Google Play Games** sign-in dialog to pop up.
 
 - Next, if we have a successful login, we make a call to **PlayGamesPlatform.Instance.GetServerAuthCode** and store it in a variable.
 - Lastly, we make the **LoginWithGoogleAccount** call and pass the **AuthCode** we just got from Google in as the **ServerAuthCode** parameter.

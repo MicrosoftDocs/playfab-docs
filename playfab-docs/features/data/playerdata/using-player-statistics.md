@@ -26,7 +26,7 @@ To enable this:
 - Select the "API Features" tab
 - Find and activate "Allow client to post player statistics"
 
-> ![NOTE]  
+> [!NOTE] 
 > Doing this disables a security layer for your title, allowing players to post arbitrary scores to all of their statistics. If your game has any competitive play aspect, we would recommend that you never post statistics from the client.
 
 ## Statistics are Public Information

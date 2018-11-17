@@ -33,12 +33,13 @@ Start by navigating to the [Facebook Developer Portal](https://developers.facebo
 
 ![Facebook add a new app](media/tutorials/facebook-add-a-new-app.png)  
 
-A new application pop-up will open. 
+A new application pop-up will open.
+
 - Enter a name for your application **(1)**.
 - Enter a contact email **(2)**. 
 
->[!NOTE]
->Make sure to come up with your own *unique* application name and email, as shown on the picture below.
+> [!NOTE]
+> Make sure to come up with your own *unique* application name and email, as shown on the picture below.
 
 ![Facebook new app ID](media/tutorials/facebook-new-app-id.png)  
 
@@ -55,8 +56,8 @@ We will use it later to set up the Facebook SDK.
 - Locate your app in the list **(1)**.
 - Verify that it has an assigned **User Token (2)**. 
 
->[!NOTE]
->If you *do not* have an assigned **User Token**, request one using the button to the right of your screen. Refer to this page whenever you need a fresh **User Token**. If authorization fails during testing on a PC, token expiration may be the most likely reason. Refresh the page to get a new User Token and test again.
+> [!NOTE]
+> If you *do not* have an assigned **User Token**, request one using the button to the right of your screen. Refer to this page whenever you need a fresh **User Token**. If authorization fails during testing on a PC, token expiration may be the most likely reason. Refresh the page to get a new User Token and test again.
 
 ![Facebook Access Token Tool](media/tutorials/facebook-unity/access-token-tool.png)  
 
@@ -202,15 +203,16 @@ Before launching the application on Android, you are required to perform additio
 
 - First, you need to ensure you have the Android platform selected and the unique package ID set (as indicated in the example below. 
 
->[!NOTE]
->Please make sure to create your own unique package ID.
+> [!NOTE]
+> Please make sure to create your own unique package ID.
 
 ![Set Android package ID](media/tutorials/facebook-unity/set-android-package-id.png)  
 
 >[!TIP]
 >**Optional step**:  Install [Open SSL](https://wiki.openssl.org/index.php/Binaries) and add it to the PATH environment variable. If it is missing, Unity will produce a harmless error during build. This error does not stop the build and does not effect the execution.
 
-Next, in your **Facebook Application** Console;
+Next, in your **Facebook Application** Console:
+
 - Navigate to **Basic** settings **(1)**.
 - Select **+ Add Platform (2)**, as indicated in the example provided below.
 
@@ -257,6 +259,7 @@ Next, in your Facebook Application Console:
 ![Facebook select iOS platform](media/tutorials/facebook-unity/select-ios-platform.png)  
 
 A panel with platform specific settings will appear.
+
 - Fill in your package ID.
 - Select the **Save** button (the **Save** button is hidden in the bottom right corner of the page).
 

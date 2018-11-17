@@ -38,6 +38,7 @@ Kongregate requires you to upload a preview version of the app, before you gain 
 ```
 
 Navigate to the [Kongregate website](http://www.kongregate.com/).
+
 - Select the **Games** tab **(1)**. 
 - Then select the **Upload your game** button **(2)**.
 
@@ -74,6 +75,7 @@ When the **API Information** page opens, locate the **API Key** and keep it in a
 ## Configuring PlayFab title
 
 In your PlayFab **Title Game Manager**:
+
 - Navigate to **Add-ons (1)** in your menu.
 - Then locate and select **Kongregate (2)**.
 
@@ -102,7 +104,7 @@ Use this Unity setup checklist:
 Create your working scene.
 
 - For testing purposes, use a screen-scaling canvas **(1)** with a couple of text labels.
->[NOTE]
+> [!NOTE]
 > We will only need *one* text label to display debug messages.
 
 - Create an empty **GameObject** and rename it to **Kongregate (2)**.

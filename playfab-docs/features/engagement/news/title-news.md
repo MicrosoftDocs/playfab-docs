@@ -30,6 +30,7 @@ There are two ways to create Title News entries:
 To create Title News entries with **Game Manager**, you will need to be familiar with [Game Manager](../../config/gamemanager/game-manager-tour.md).
 
 In **Game Manager**:
+
 - Go to your menu and select **Content**.
 - In the **Title News** tab enter your **Title News Content**.
 
@@ -58,8 +59,8 @@ void CreateNews() {
 
 Reading the Title News is very simple. The GetTitleNews method returns get all published Title News entries. 
 
->[!NOTE]
->Archived and Unpublished entries will not be returned.
+> [!NOTE]
+> Archived and Unpublished entries will not be returned.
 
 ```csharp
 
@@ -78,6 +79,7 @@ void ReadTitleNews() {
 The content of a Title News entry can only be modified in Game Manager.  Locate the entry you wish to modify:
 
 In **Game Manager**:
+
 - Go to your menu and select **Content**.
 - Go to your **Title News** tab.
 - Select **Existing Entry**.

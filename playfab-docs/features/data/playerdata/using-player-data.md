@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Using Player Data
 
-> ![NOTE]  
+> [!NOTE] 
 > In the PlayFab APIs, the function names utilize the term UserData. In the Game Manager, this concept is described as Player Data. They are identical, and interchangeable.
 
 This tutorial describes how to create and use player data. Player data is information that applies to an individual player or a group of players (shared data) and is stored as key/value pairs (KVPs) by PlayFab.

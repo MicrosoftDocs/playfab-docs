@@ -23,8 +23,8 @@ Prior to beginning, you should have:
 - Familiarity with [Login basics and Best Practices](../../authentication/platform-specific-authentication/login-basics-best-practices.md).
 - At the minimum, a server with a valid domain name to serve static HTML files. 
 
->[!NOTE]
->Consult the [Running an HTTP server for testing](../../config/dev-test-live/running-an-http-server-for-testing.md) tutorial for information on how to set one up.
+> [!NOTE]
+> Consult the [Running an HTTP server for testing](../../config/dev-test-live/running-an-http-server-for-testing.md) tutorial for information on how to set one up.
 
 ## Server and Domain
 
@@ -163,7 +163,7 @@ Request the following file from your server using the domain you set up during T
 - Follow any Twitch instructions in the pop-up window. 
 - Watch the output **(4)**.
 
->[!IMPORTANT]
+> [!IMPORTANT]
 > If you *already have* a Twitch auth session going when reaching the page, it is possible for callbacks to fire in a different, unexpected order. This case is shown in the following screenshot. However, you should make sure that only **Logging in via PlayFab** follows after **Logged in with Twitch**. This indicates that the token was received or restored from the local storage, and we do not have to wait for the Twitch SDK to start signing in to PlayFab.
 
 ![Twitch Auth Example](media/tutorials/twitch-html5/twitch-auth-example.png)  

@@ -22,31 +22,37 @@ This tutorial has been created to guide you through PlayFab authentication using
 
 - A Minimal server with a valid domain name to serve static HTML file. 
 
-[!NOTE] If you are unsure if you have the proper requirements for this activity, please consult the [Running an HTTP server for testing](../../config/dev-test-live/running-an-http-server-for-testing.md) tutorial.
+> [!NOTE]
+> If you are unsure if you have the proper requirements for this activity, please consult the [Running an HTTP server for testing](../../config/dev-test-live/running-an-http-server-for-testing.md) tutorial.
+
 ## Server and Domain
 
 As part of the requirements to set up your PlayFab authentication,  you must have a server with a valid domain to follow. If you do not have a registered domain and remote web server yet, please follow our [Running an HTTP server for testing](../../config/dev-test-live/running-an-http-server-for-testing.md) tutorial to run a local web server with a valid domain name. Throughout this guide, we will assume your domain is ['http://playfab.example'](http://playfab.example).
 
 ## Registering a Facebook Application
 
-Start by navigating to the [Facebook Developer Portal](https://developers.facebook.com/). 
+Start by navigating to the [Facebook Developer Portal](https://developers.facebook.com/).
+
 - Move your mouse over the **My Apps (1)** button.
 - Select **Add a New App (2)** from the drop-down menu, as shown in the example provided below.
 
 ![Facebook add a new app](media/tutorials/facebook-add-a-new-app.png)  
 
-A new application pop-up will open. 
+A new application pop-up will open.
+
 - Enter a name for your application in the field under **Display Name (1)**.
 - Enter a contact email address in the field under **Contact Email (2)**. 
 
-[!NOTE]  Make sure to come up with your own unique application name and email, as shown in the example provided below.
+> [!NOTE]
+> Make sure to come up with your own unique application name and email, as shown in the example provided below.
 
 ![Facebook new app ID](media/tutorials/facebook-new-app-id.png)  
 
 - Navigate to the **Settings tab (1)**, then to the **Basic (2)** sub-tab.
 - Locate your **Application ID (3)**.
 
-[!Note]  Copy your **Application ID** to a safe place, we will use it later to set up the Facebook SDK.
+> [!NOTE]
+> Copy your **Application ID** to a safe place, we will use it later to set up the Facebook SDK.
 
 ![Facebook save app ID](media/tutorials/facebook-save-app-id.png)  
 
@@ -57,32 +63,37 @@ A new application pop-up will open.
 
  The page should open to display the example shown below. 
 
- - Make sure that **Facebook Login/Settings (1)** is opened on the menu to the left, and you are in  **Client OAuth Settings**.
+- Make sure that **Facebook Login/Settings (1)** is opened on the menu to the left, and you are in  **Client OAuth Settings**.
 - Verify that both the **Client OAuth** and **Web OAuth** are on (marked **Yes**) **(2)**.
 
 ![Facebook login product settings](media/tutorials/facebook-html5/login-product-settings.png)  
 
 In the **Client OAuth Settings** screen:
+
 - Set the **Valid OAuth redirect URIs (1)** to your own auth page URI. 
 
-[!NOTE]  This will be `playfab.example` in your case. 
+> [!NOTE]
+> This will be `playfab.example` in your case. 
 
 - Select **Save Changes (2)** to commit.
 
 ![Facebook set OAuth redirect URI](media/tutorials/facebook-html5/set-oauth-redirect.png)  
 
 On the **Application Manager** page:
+
 - Open **Settings/Basic (1)** in your menu.
 - Select the **Add Platform (2)** button.
 
 ![Facebook Application Manager Add Platform](media/tutorials/facebook-html5/add-platform.png)  
 
 A pop-up will appear on your screen:
+
 - Select the **Website icon (1)**.
 
 ![Facebook Select Platform Website options](media/tutorials/facebook-html5/website-options.png)  
 
-The **Website** configuration panel should now appear. 
+The **Website** configuration panel should now appear.
+
 - In the **SiteURL (1)** field, enter your auth page URL (this will be `playfab.example` in your case). 
 - Select **Save Changes (2)** to commit.
 
@@ -92,7 +103,8 @@ The **Website** configuration panel should now appear.
 
 Use the following HTML file to test your PlayFab authentication using Facebook. 
 
-[!NOTE]  Make sure to replace **YOUR-APPLICATION-ID** and **YOUR-PLAYFAB-TITLE** with your own.
+> [!NOTE]
+> Make sure to replace **YOUR-APPLICATION-ID** and **YOUR-PLAYFAB-TITLE** with your own.
 
 ```html
 <!DOCTYPE html>

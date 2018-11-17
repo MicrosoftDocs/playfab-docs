@@ -31,8 +31,8 @@ To begin:
 - Set up a website via Mamp / Mamp Pro or your webserver of choice.
 - Create an **Index.html** file in the root of your website folder.
 
->[!NOTE]
->You can alternately refer to [Running an HTTP server for testing](../../config/dev-test-live/running-an-http-server-for-testing.md) tutorial for information on how to set up one.
+> [!NOTE]
+> You can alternately refer to [Running an HTTP server for testing](../../config/dev-test-live/running-an-http-server-for-testing.md) tutorial for information on how to set up one.
 
 ## Setting up Phaser
 

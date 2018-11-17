@@ -33,10 +33,10 @@ So why use it? It's the lowest possible barrier to entry for the player, requiri
 **Best Practice**: For iOS devices, the player's ID changes if they uninstall your games and then re-install. One way to make sure you have a consistent ID on iOS is to save the Device ID for the player to the iTunes KeyChain, so that you can read it from there on game start, and use it to sign in.
 You must determine how to generate unique Custom IDs for any other device or platform. Custom ID is an effective alternative for other platforms or devices, but you must generate your Custom IDs with care. Too simple, and you risk hackers stealing the accounts of others.
 
-> ![NOTE]  
+> [!NOTE] 
 > Binding a recoverable login is only required once per device. Once bound, the game can continue to use the anonymous login with no drawbacks. See the next section.
 
-> ![NOTE]  
+> [!NOTE]
 > Anonymous login is convenient for the player, but it is not required. Your game can rely exclusively on a recoverable login mechanism. However, your players will be happier if they don't have to type a password every time they log in.
 
 ## Recoverable login mechanisms
