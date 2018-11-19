@@ -14,8 +14,6 @@
       href: making-webhook-calls-from-cloudscript.md
     - name: SDK error handling best practices
       href: sdk-error-handling-best-practices.md
-    - name: Using CloudScript
-      href: using-cloudscript.md
     - name: Writing custom CloudScript
       href: writing-custom-cloudscript.md
 
