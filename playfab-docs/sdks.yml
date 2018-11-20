@@ -3,9 +3,13 @@ documentType: LandingData
 title: "PlayFab SDKs"
 metadata:
   title: "PlayFab SDKs"
-  description: PlayFab SDKs
+  author: v-thopra  
+  description: Landing page for PlayFab SDKs.
   ms.date: 11/12/2018
   ms.topic: landing-page
+  ms.prod: playfab
+  keywords: playfab, sdk
+  ms.localizationpriority: medium
 sections:
 - items:
   - type: list

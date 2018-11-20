@@ -3,9 +3,13 @@ documentType: LandingData
 title: "PlayFab Quickstarts"
 metadata:
   title: "PlayFab Quickstarts"
-  description: PlayFab Quickstarts
+  author: v-thopra  
+  description: Landing page for PlayFab Quickstarts.
   ms.date: 11/12/2018
   ms.topic: landing-page
+  ms.prod: playfab
+  keywords: playfab, documentation
+  ms.localizationpriority: medium
 sections:
 - items:
   - type: list

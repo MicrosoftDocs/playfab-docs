@@ -4,8 +4,12 @@ hide_bc: true
 experimental: true
 experiment_id: "81ba5f65-59fb-4d"
 title: PlayFab Documentation
-description: PlayFab Documentation
+author: v-thopra  
+description: Hub page for PlayFab Documentation.
 ms.topic: hub-page
+ms.prod: playfab
+keywords: playfab, documentation
+ms.localizationpriority: medium
 featureFlags:
 - clicktale
 ---

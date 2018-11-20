@@ -1,11 +1,15 @@
 ### YamlMime:YamlDocument
 documentType: LandingData
-title: "PlayFab Features"
+title: "PlayFab Automation Features"
 metadata:
-  title: "PlayFab Features"
-  description: PlayFab Features
+  title: "PlayFab Automation Features"
+  author: v-thopra  
+  description: Landing page for PlayFab Automation features.
   ms.date: 11/13/2018
   ms.topic: landing-page
+  ms.prod: playfab  
+  keywords: playfab, automation
+  ms.localizationpriority: medium
 sections:
 - items:
   - type: list
