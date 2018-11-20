@@ -16,22 +16,25 @@ Players can be collected together into a segment, with the idea that all players
 
 ## Access Players Segments
 
-To access Player Segments, navigate to "Players" using the sidebar panel **(1)**. Then select the "Segments" tab **(2)**.
+To access **Player Segments**:
+
+- Navigate to **Players (1)** in the menu.
+- Select the **Segments** tab **(2)**.
 
 ![Game Manager - Players - Access Segments](media/tutorials/game-manager-access-player-segments.png)  
 
 ## Overview
 
-The Segements page displays the segments that you currently have defined and offers basic management capabilities.
+The **Segments** page displays the segments that you currently have defined, and offers basic management capabilities.
+
+1. Use the **New Segment (1)** button to create a new segment.
+2. The segment **ID (2)** uniquely identifies the segment.
+3. The segment **Name (3)** identifies the player(s).
+4. The **Matching players (4)** area displays the total number of players matching the segment filter.
+5. Using the check boxes **(5)** to the left of the screen, you can select certain segments, and **X Delete** or **> Run Task...** custom actions on the chosen segments.
 
 ![Game Manager - Players - Segments page](media/tutorials/game-manager-players-segments-page.png)  
 
-1. Use the "New Segment" button to **create a new segment**.
-2. The **Segment ID** uniquely identifies the segment.
-3. The segment **name** and **description**.
-4. The **total number of players** matching the segment filter.
-5. You can **select** certain segments, and then delete selected **actions** or run custom **actions** on the selected segments.
+For more information about defining segments and the filtering criteria, see our tutorial on [Player Segment configuration](player-segment-configuration.md).
 
-For more information about defining segments, and the filtering criteria, see our tutorial on [Player Segment configuration](player-segment-configuration.md).
-
-For more information about executing custom code for all players in a segment (once, or on a regular schedule), see our tutorial on [Bulk Actions for an Entire Player Segment](../../automation/actions-rules/bulk-actions-for-an-entire-player-segment.md).
+For more information about executing custom code for all players in a segment (as a one-time event, or on a regular schedule), see our tutorial on [Bulk Actions for an Entire Player Segment](../../automation/actions-rules/bulk-actions-for-an-entire-player-segment.md).
