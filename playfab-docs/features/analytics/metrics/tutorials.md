@@ -15,6 +15,7 @@ ms.localizationpriority: medium
 These tutorials teach you how to use metrics.
 
 - [Constructing an Event History search](constructing-an-event-history-search.md)
+- [Getting Started with PlayFab and Snowflake](getting-started-with-playFab-and-snowflake.md)
 - [Metrics and Terminology](metrics-and-terminology.md)
 - [Real-Time Analytics - Core Concepts](real-time-analytics-core-concepts.md)
 - [Real-Time Analytics - Event History Chart Panel](real-time-analytics-event-history-chart-panel.md)

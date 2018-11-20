@@ -8,6 +8,8 @@
     items:
     - name: Constructing an Event History search
       href: constructing-an-event-history-search.md
+    - name: Getting Started with PlayFab and Snowflake
+      href: getting-started-with-playFab-and-snowflake.md
     - name: Metrics and terminology
       href: metrics-and-terminology.md
     - name: Real-Time Analytics - Core Concepts

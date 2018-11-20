@@ -22,7 +22,6 @@ The Reports tutorials show you how to create and run reports.
 - [Daily and Monthly Top Spender Report](daily-and-monthly-top-spender-report.md)
 - [Daily and Monthly Top Details Report](daily-api-usage-details-report.md)
 - [Daily and Monthly Rolling 30-Day Overview and Totals Reports](daily-monthly-and-rolling-30-day-overview-and-totals-reports.md)
-- [Getting Started with PlayFab and Snowflake](getting-started-with-playFab-and-snowflake.md)
-[Thirty-day New User Conversion Report](thirty-day-new-user-conversion-report.md)
+- [Thirty-day New User Conversion Report](thirty-day-new-user-conversion-report.md)
 - [Thirty-day New User Retention Report](thirty-day-new-user-retention-report.md)
 - [Thirty-day Retention Report](thirty-day-retention-report.md)
