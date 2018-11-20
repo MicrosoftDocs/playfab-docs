@@ -10,28 +10,30 @@ keywords: playfab, authentication, developer persona, game developer, catalogs, 
 ms.localizationpriority: medium
 ---
 
-# Getting Started for Developers
+# Getting started for developers
 
-We are excited that you have chosen PlayFab as your platform for backend services and Live Ops.  If you haven&#39;t made your decision yet, that is okay too.  The purpose of this section is to shed some light on how PlayFab helps you, as a developer, build your game on PlayFab.
+We are excited that you have either chosen PlayFab as your platform for back-end services and Live Ops, or are evaluating the PlayFab offering. The purpose of this section is to shed some light on how PlayFab helps you, as a developer, build your game on PlayFab.
 
-PlayFab offers a wide range of services and we have over 280 different APIs that you can leverage to make your game.  This can be a lot to take in, so we will take it slow with some beginnings of making your game and then get into more advanced features as we go.
+PlayFab offers a wide range of services and has over 280 different APIs that you can leverage to make your game. This can be a lot to take in, so we'll take it slow, starting with the beginnings of making your game and then getting into more advanced features as we go.
 
-**The Beginning**
+## The beginning
 
-The starting point for any PlayFab integration is authentication.  You have to authenticate your player to make further API calls.  PlayFab offers many methods to authenticate and link your players.
+The starting point for any PlayFab integration is authentication. You have to authenticate your player to make further API calls. PlayFab offers many methods to authenticate and link your players.
 
-Here are some resources that will help you along that first step for authenticating your player.
+Here are some resources that will help you along that first step for authenticating your player:
 
 - [Login Best Practice](https://review.docs.microsoft.com/en-us/gaming/playfab/features/authentication/platform-specific-authentication/login-basics-best-practices) – Check this section first to learn about the best practices to use various authentication methods in your game.
 - Authentication Service Helper – Learn how this service can save you valuable time by leveraging building best practices in this Authentication Service for each SDK.
 - [Authentication Quickstart](https://review.docs.microsoft.com/en-us/gaming/playfab/features/authentication/platform-specific-authentication/quickstart) – Use this guide to understand the basics of Authentication calls into PlayFab.
 - [Linking and Unlinking](https://review.docs.microsoft.com/en-us/gaming/playfab/features/authentication/linking-unlinking/quickstart) - Learn about linking and unlinking different types of Accounts to a single player profile.
 
-**Next Steps**
+## Next steps
 
-Every game is fairly different.  You are going to have a unique set of features that you are building.  It is important to know and understand how to map those features onto PlayFab.  This generally starts with configuration of your game.  You will want to store variables in PlayFab and pull them down on to game clients.   These are not the only types of configurations that you&#39;ll want to make.  Below find a number of different ways that PlayFab maps onto a game and find the right combo tool set that is right for your game.
+Every game is fairly different. You will have a unique set of features that you are building, and it is important to know and understand how to map those features onto PlayFab. This generally starts with configuration of your game. You will want to store variables in PlayFab and pull them down on to game clients. These are not the only types of configurations that you'll want to make.
 
-- [Title Data](https://review.docs.microsoft.com/en-us/gaming/playfab/features/config/titledata/) – Map variables containing data on playfab to data structures in your game clients.
+Below, you can find a number of different ways that PlayFab maps onto a game and find the right combo tool set that is right for your game:
+
+- [Title Data](https://review.docs.microsoft.com/en-us/gaming/playfab/features/config/titledata/) – Map variables containing data on PlayFab to data structures in your game clients.
 - [Entity Objects](https://review.docs.microsoft.com/en-us/gaming/playfab/features/data/entities/) (aka: Player Data) – Store and Retrieve data on a per player basis.
 - [Catalogs](https://review.docs.microsoft.com/en-us/gaming/playfab/features/commerce/items/) (Items) - Very useful for storing configuration data about your Items and potentially being able to sell them as virtual goods.
 - [Groups](https://review.docs.microsoft.com/en-us/gaming/playfab/features/social/friends-groups/) – Groups are generally used for things like Guilds or Clans.  Groups are arbitrary and have members, roles and other guild like features.
@@ -39,19 +41,21 @@ Every game is fairly different.  You are going to have a unique set of features 
 <!-- ![Configuration and Events](https://playfab.com/assets/img/products/liveops-config.png) -->
 <img src="images/liveops-config.png" width="600" />
 
-**PlayFab Advanced**
+## PlayFab advanced
 
-Mapping your game on top of PlayFab is a great start, but there is more power to be harnessed in PlayFab that can help your LiveOps team create better engagement, retention and monetization mechanics.   A majority of these features leverage PlayStream.  PlayStream is an event system that drives real-time events that you can perform actions on player behaviors.   Actions can happen in a number of ways, either via segmentation or via direct rules that are applied to specific events.
+Mapping your game on top of PlayFab is a great start, but there is more power to be harnessed in PlayFab that can help your LiveOps team create better engagement, retention and monetization mechanics. A majority of these features leverage PlayStream. PlayStream is an event system that drives real-time events that enables you to perform actions on player behaviors. Actions can happen in a number of ways, either via segmentation or via direct rules that are applied to specific events.
 
-Actions might result in a Cloud Script being run.  Our Cloud Script is JavaScript code that lives on a remote server and you can execute from a rule or directly from a game client.  For more information check out these resources to get you started with Cloud Scripting and Automation on PlayFab.
+Actions might result in a Cloud Script being run. Our Cloud Script is JavaScript code that lives on a remote server and you can execute either from a rule or directly from a game client. For more information, check out these resources to get you started with Cloud Scripting and Automation on PlayFab:
 
-- [Automation](https://review.docs.microsoft.com/en-us/gaming/playfab/feature-automation) – A hub for information on Cloud Script, Scheduled Tasks, PlayStream and Action &amp; Rules.
-- [Cloud Script Quickstart](https://review.docs.microsoft.com/en-us/gaming/playfab/features/automation/cloudscript/quickstart) – Get up and running quickly with your first Cloud Script call
+- [Automation](https://review.docs.microsoft.com/en-us/gaming/playfab/feature-automation) – A hub for information on Cloud Script, Scheduled Tasks, PlayStream and Action & Rules.
+- [Cloud Script Quickstart](https://review.docs.microsoft.com/en-us/gaming/playfab/features/automation/cloudscript/quickstart) – Get up and running quickly with your first Cloud Script call.
 
-ProTip:  To leverage rules in the automation system, [write custom events](https://review.docs.microsoft.com/en-us/gaming/playfab/features/automation/playstream-events/playstream-events#custom-event-overview) in your game which creates a PlayStream event.
+> [!TIP]
+> To leverage rules in the automation system, [write custom events](https://review.docs.microsoft.com/en-us/gaming/playfab/features/automation/playstream-events/playstream-events#custom-event-overview) in your game which will create a PlayStream event.
 
-**Get to know PlayFab features**
-There is much more you can do with PlayFab, check out each of our feature areas to find the right feature set for your game.
+## Get to know PlayFab features
+
+There is much more you can do with PlayFab. Check out each of our feature areas to find the right feature set for your game:
 
 - [Authentication](https://review.docs.microsoft.com/en-us/gaming/playfab/feature-authentication)
 - [Data](https://review.docs.microsoft.com/en-us/gaming/playfab/feature-data)
