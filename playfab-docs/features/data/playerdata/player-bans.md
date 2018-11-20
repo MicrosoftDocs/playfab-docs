@@ -20,7 +20,7 @@ The following tutorial shows you how to utilize the ban system using the PlayFab
 
 While your game may have a custom system to identify cheaters and rule-breakers, PlayFab offers a player-to-player reporting mechanism. In essence, you rely on your players to report other problematic players.
 
-Use the snippet provided below in your client code to let the client report a specific player.
+Use the following snippet in your client code to let the client report a specific player.
 
 ```csharp
 public void ReportPlayer(string problematicPlayerId, string reason) {
@@ -40,8 +40,8 @@ This API call will produce:
 - A report event, which you will be able to locate via the **Analytics** tool **(1)**. 
 - Select the **player_reported_as_abusive** event type **(2)**. 
 - This will show:
-     -  The **Event Name (3)**.
-     -  The reported **Player ID (4)**.
+  - The **Event Name (3)**.
+  - The reported **Player ID (4)**.
 
 ![Game Manager - Analytics - Event History](media/tutorials/game-manager-event-history-player-reported-as-abusive.png)  
 
@@ -98,7 +98,6 @@ Bans applied via code will also be displayed in the table of bans for the target
 
 > [!NOTE]
 > You can use CloudScript functions as part of an automated system that may ban a player. To find out more about CloudScript, see our tutorial [Writing Custom CloudScript](../../automation/cloudscript/writing-custom-cloudscript.md).
-
 
 Each ban you apply gets an assigned ID. Consider the following Server SDK API methods for precise ban management:
 

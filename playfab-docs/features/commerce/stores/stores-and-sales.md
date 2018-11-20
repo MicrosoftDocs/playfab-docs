@@ -64,7 +64,7 @@ To purchase a single item for VC, you can use our [PurchaseItem](xref:titleid.pl
 
 First step, get the store and display it to the user:
 
-```chsarp
+```csharp
 // Unity/C#
 void GetVcStore()
 {
@@ -87,7 +87,7 @@ At this point, it is the responsibility of your GUI code to present the user wit
 
 **Best Practice**: Between your game and PlayFab, the remaining steps are several separate API calls, but you can make the sequence of multiple calls invisible to the player. Collect all information about the purchase up-front, and make the full sequence of calls after all player input is collected.
 
-```chsarp
+```csharp
 // Unity/C#
 void DefinePurchase()
 {
@@ -114,7 +114,7 @@ During the item selection process, you must allow the user to select which curre
 
 **Best Practice**: Avoid this confusion for your player. All items in a store should have consistent options. Real-Money items should be in a separate store from premium VC items, and again separate from free VC items. If a single store allows multiple currencies, then ALL items in that store consistently use the same set of multiple currencies. Create as many stores as you need to provide a smooth customer experience.
 
-```chsarp
+```csharp
 // Unity/C#
 void DefinePaymentCurrency(string orderId, string currencyKey)
 {
@@ -128,7 +128,7 @@ void DefinePaymentCurrency(string orderId, string currencyKey)
 
 Finally, once the purchase is fully defined, you can complete the process:
 
-```chsarp
+```csharp
 // Unity/C#
 void FinishPurchase(string orderId)
 {
