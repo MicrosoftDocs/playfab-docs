@@ -8,5 +8,3 @@
     items:
     - name: Event History
       href: event-history.md
-    - name: PlayStream Events
-      href: playstream-events.md

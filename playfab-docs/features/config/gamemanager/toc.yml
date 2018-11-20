@@ -14,8 +14,6 @@
       href: audit-logs.md
     - name: Encrypted Logins
       href: encrypted-logins.md
-    - name: Game Manager Tour
-      href: game-manager-tour.md
     - name: Player Encryption Services
       href: player-encryption-services.md
     - name: PlayFab user roles
