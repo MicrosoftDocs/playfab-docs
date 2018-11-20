@@ -32,7 +32,7 @@ This guide tells you how to download and set up the all-inclusive PlayFab Postma
 
 ## Troubleshooting
 
-For a complete list of available APIs, check out the [online documentation](http://api.playfab.com/Documentation/).
+For a complete list of available APIs, see our [PlayFab API References](../../api-references/index.md) documentation.
 
 ## Contact Us
 

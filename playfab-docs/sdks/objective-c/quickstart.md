@@ -68,7 +68,7 @@ The following code example shows you how to make a PlayFab API request and recei
 
 ## Troubleshooting
 
-For a complete list of available APIs, check out the [online documentation](http://api.playfab.com/Documentation/).
+For a complete list of available APIs, see our [PlayFab API References](../../api-references/index.md) documentation.
 
 ## Contact Us
 

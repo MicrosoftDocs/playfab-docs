@@ -125,7 +125,7 @@ Ideally, you should see the following in your Unity Console Panel.
 
 Now you can start making other API calls and build your game.
 
-For a list of all available client API Calls see our [PlayFab documentation](http://api.playfab.com/documentation).   
+For a list of all available client API Calls see our [PlayFab API References](../../api-references/index.md) documentation.
 
 Happy Coding!
 

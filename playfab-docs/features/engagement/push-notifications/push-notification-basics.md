@@ -51,7 +51,7 @@ Please see the FCM Documentation for instructions on how to set up the [FCM Unit
 
 ## Testing the setup
 
-After configuring your title and client, you can test your configuration using the PlayFab Server API - [SendPushNotification](http://api.playfab.com/documentation/Server/method/SendPushNotification). This API allows you to send as many push notifications as needed at no extra cost. You can use PlayFab's Cloud Script service as a quick and secure server API environment. From there, push notifications can be sent as needed. To use this method to test your configuration, upload or append the code in the following example to your title’s Cloud Script.
+After configuring your title and client, you can test your configuration using the PlayFab Server API - [SendPushNotification](xref:titleid.playfabapi.com.server.accountmanagement.sendpushnotification). This API allows you to send as many push notifications as needed at no extra cost. You can use PlayFab's Cloud Script service as a quick and secure server API environment. From there, push notifications can be sent as needed. To use this method to test your configuration, upload or append the code in the following example to your title’s Cloud Script.
 
 ### Example
 

@@ -30,9 +30,9 @@ Once that’s done, you’re ready to start implementing the payment flow.
 
 From the client, the sequence of calls for this process are very similar for most non-receipt payment providers.
 
-- [StartPurchase](http://api.playfab.com/documentation/Client/method/StartPurchase) - Creates the list of goods for the purchase
-- [PayForPurchase](http://api.playfab.com/documentation/Client/method/PayForPurchase) - Establishes the payment provider and locks the payment pricing
-- [ConfirmPurchase](http://api.playfab.com/documentation/Client/method/ConfirmPurchase) - Validates whether the purchase completed successfully and if necessary ensures the goods are added to the player’s inventory
+- [StartPurchase](xref:titleid.playfabapi.com.client.playeritemmanagement.startpurchase) - Creates the list of goods for the purchase
+- [PayForPurchase](xref:titleid.playfabapi.com.client.playeritemmanagement.payforpurchase) - Establishes the payment provider and locks the payment pricing
+- [ConfirmPurchase](xref:titleid.playfabapi.com.client.playeritemmanagement.confirmpurchase) - Validates whether the purchase completed successfully and if necessary ensures the goods are added to the player’s inventory
 
 The exception to this is Xsolla, which we'll address separately, at the end of this tutorial.
 

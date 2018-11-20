@@ -1,3 +1,15 @@
+---
+title: Platform-Specific Authentication Tutorials
+author: v-thopra
+description: Overview page for tutorials about setting up PlayFab authentication for specific platforms.
+ms.author: v-thopra
+ms.date: 19/11/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, authentication, platforms
+ms.localizationpriority: medium
+---
+
 # Platform-Specific Authentication Tutorials
 
 These tutorials provide basic information and Best Practices for setting up PlayFab authentication.

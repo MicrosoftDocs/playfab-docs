@@ -1,3 +1,15 @@
+---
+title: Reports Tutorials
+author: v-thopra
+description: Overview page for tutorials about Reports.
+ms.author: v-thopra
+ms.date: 19/11/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, analytics, reports
+ms.localizationpriority: medium
+---
+
 # Reports Tutorials
 
 The Reports tutorials show you how to create and run reports.

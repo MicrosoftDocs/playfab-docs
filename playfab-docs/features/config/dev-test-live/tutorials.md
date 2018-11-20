@@ -1,3 +1,15 @@
+---
+title: Dev-Test-Live Tutorials
+author: v-thopra
+description: Overview page for tutorials about the various ways to configure and set up PlayFab.
+ms.author: v-thopra
+ms.date: 19/11/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, config, dev, test, live
+ms.localizationpriority: medium
+---
+
 # Dev-Test-Live Tutorials
 
 These tutorials teach the various ways to configure and set up PlayFab.

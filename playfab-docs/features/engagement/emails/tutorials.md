@@ -1,3 +1,15 @@
+---
+title: Emails Tutorials
+author: v-thopra
+description: Overview page for tutorials about using email for player engagement in PlayFab.
+ms.author: v-thopra
+ms.date: 19/11/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, engagement, email
+ms.localizationpriority: medium
+---
+
 # Emails Tutorials
 
 These tutorials show you how to work with e-mail.

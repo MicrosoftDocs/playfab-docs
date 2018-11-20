@@ -1,3 +1,15 @@
+---
+title: Player Data Tutorials
+author: v-thopra
+description: Overview page for tutorials about player data.
+ms.author: v-thopra
+ms.date: 19/11/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, data, player data
+ms.localizationpriority: medium
+---
+
 # Player Data Tutorials
 
 These tutorials describe how to create and use player statistics, profile information, and other player data.

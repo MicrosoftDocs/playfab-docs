@@ -1,3 +1,15 @@
+---
+title: Tournaments & Leaderboards Tutorials
+author: v-thopra
+description: Overview page for tutorials involving tournaments and leaderboards.
+ms.author: v-thopra
+ms.date: 19/11/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, social, tournaments, leaderboards
+ms.localizationpriority: medium
+---
+
 # Tournaments &amp; Leaderboards Tutorials
 
 The tutorials in this section walk you through topics involving tournaments and leaderboards.
