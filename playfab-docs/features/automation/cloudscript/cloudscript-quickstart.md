@@ -14,12 +14,12 @@ ms.localizationpriority: medium
 
 CloudScript offers a fast, secure and scalable alternative to dedicated servers. Your custom JavaScript lives and executes directly on PlayFab machines. From here, your code can be called directly by your game clients or indirectly via PlayStream actions. Additionally, CloudScript methods have full access to PlayFab's [Server](https://api.playfab.com/Documentation/Server) API set.
 
-This tutorial covers uploading and managing your CloudScript files in the PlayFab Game Manager. The [Writing custom CloudScript](writing-custom-cloudscript.md) tutorial covers writing the CloudScript code itself.
+This Quickstart covers uploading and managing your CloudScript files in the PlayFab Game Manager. The [Writing custom CloudScript](writing-custom-cloudscript.md) tutorial covers writing the CloudScript code itself.
 
-Please note the following when reading this tutorial:
+Please note the following when reading this:
 
 - You should be familiar with the basics of PlayFab.
-- C# Samples shown in this tutorial correspond to using the PlayFab Unity SDK.
+- C# Samples shown correspond to using the PlayFab Unity SDK.
 - JavaScript samples correspond to using PlayFab's CloudScript service
 
 ## Your first CloudScript revision
@@ -60,4 +60,4 @@ Once bound to GitHub, the manual upload option is removed, and new CloudScript r
 
 CloudScript allows you to upload files to PlayFab, and execute your code on our server. You can manage your CloudScript files from the **Automation** option in the left side bar.  You can upload files manually from your own computer, or bind your title to a GitHub account.
 
-This tutorial covers managing your code files and uploading them to PlayFab. If you have more questions, the [Writing custom CloudScript](writing-custom-cloudscript.md) tutorial will tell you more about how to write your CloudScript code files.
+This Quickstart covers managing your code files and uploading them to PlayFab. If you have more questions, the [Writing custom CloudScript](writing-custom-cloudscript.md) tutorial explains more about how to write your CloudScript code files.

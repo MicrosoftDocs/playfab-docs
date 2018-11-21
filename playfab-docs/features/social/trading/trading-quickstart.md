@@ -21,7 +21,7 @@ The PlayFab client API allows players to trade items with one another. These API
 
 ## Prerequisites
 
-- This tutorial assumes you are already familiar with [Item Catalogs](../../commerce/items/catalogs.md) and [Inventory](../../data/playerdata/player-inventory.md).
+- This Quickstart assumes you are already familiar with [Item Catalogs](../../commerce/items/catalogs.md) and [Inventory](../../data/playerdata/player-inventory.md).
 - The example player must already own inventory items they wish to trade away.
 
 ## Example Case: Gift items between Players
