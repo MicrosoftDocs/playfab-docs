@@ -1,5 +1,5 @@
 ---
-title: Game Manager Tour
+title: Game Manager Tour Quickstart
 author: v-thopra
 description: Provides an overview of the features in the PlayFab Game Manager.
 ms.author: v-thopra
@@ -192,7 +192,7 @@ The servers section of the Game Manager has two major roles:
 
 **Additional Information:**
 
-- [Using CloudScript Tutorial](../../automation/cloudscript/using-cloudscript.md)
+- [Using CloudScript Tutorial](../../automation/cloudscript/cloudscript-quickstart.md)
 - [Building Custom Game Servers Tutorial](../../multiplayer/compute/custom-game-servers.md)
 
 [Back to Game Manager Sections](#game-manager-sections)

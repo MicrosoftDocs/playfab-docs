@@ -1,5 +1,5 @@
 ---
-title: Using CloudScript
+title: CloudScript Quickstart
 author: v-thopra
 description: Describes uploading and managing your CloudScript files in the PlayFab Game Manager.
 ms.author: v-thopra
@@ -10,7 +10,7 @@ keywords: playfab, automation, game manager, cloudscript
 ms.localizationpriority: medium
 ---
 
-# Using CloudScript Quickstart
+# CloudScript Quickstart
 
 CloudScript offers a fast, secure and scalable alternative to dedicated servers. Your custom JavaScript lives and executes directly on PlayFab machines. From here, your code can be called directly by your game clients or indirectly via PlayStream actions. Additionally, CloudScript methods have full access to PlayFab's [Server](https://api.playfab.com/Documentation/Server) API set.
 

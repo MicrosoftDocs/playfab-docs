@@ -16,7 +16,7 @@ Stores are built upon [Catalogs](../items/catalogs.md) and [Currencies](../econo
 
 ## Requirements
 
-- [Game Manger](../../config/gamemanager/game-manager-tour.md)
+- [Game Manger](../../config/gamemanager/game-manager-quickstart.md)
 - One or more [Virtual Currencies](../economy/currencies.md) defined
   - The latter example on this guide uses: SS (Silver Shekels) and GS (Gold Shekels).
 

@@ -138,4 +138,4 @@ public void SetTitleInternalData() {
 
 - [Using Publisher Data](../../config/titledata/using-publisher-data.md)
 - [Using Player Data](../../data/playerdata/using-player-data.md)
-- [Using Cloud Script](../../automation/cloudscript/using-cloudscript.md)
+- [Using Cloud Script](../../automation/cloudscript/cloudscript-quickstart.md)

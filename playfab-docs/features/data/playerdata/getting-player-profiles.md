@@ -18,9 +18,9 @@ This tutorial walks you through how to use the [GetPlayerProfile](xref:titleid.p
 
 For this tutorial, basic knowledge of how to create a player for your title is needed so that you can perform a GetPlayerProfile on the player.
 
+It is also worthwhile to read the [Game Manager Tour](../../config/gamemanager/game-manager-quickstart.md) tutorial if you are unfamiliar with the Game Manager, as it is the place where we configure profile constraints.
 > [!Note]
 > For more information on creating a player, refer to the [Getting Started with PlayFab](../../config/dev-test-live/getting-started-with-playfab.md) tutorial which will run you through the process of creating a player for the title.
-It is also worthwhile to read the [Game Manager Tour](../../config/gamemanager/game-manager-tour.md) tutorial if you are unfamiliar with the Game Manager, as it is the place where we configure profile constraints.
 
 ## Step 1 - Create a user with a display name
 

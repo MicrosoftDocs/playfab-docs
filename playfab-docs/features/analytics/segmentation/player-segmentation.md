@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Player Segmentation
 
-Player Segmentation is defined in [Game Manager](../../config/gamemanager/game-manager-tour.md). Segments allow you to define useful or interesting groups of players, and perform exclusive actions on that group.
+Player Segmentation is defined in [Game Manager](../../config/gamemanager/game-manager-quickstart.md). Segments allow you to define useful or interesting groups of players, and perform exclusive actions on that group.
 
 **Requirements:**
 

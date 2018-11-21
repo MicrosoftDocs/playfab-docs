@@ -51,7 +51,7 @@ One limitation of the PlayFab approach is that it is not possible to write your 
 
 ### Cloud Code
 
-Both Parse and PlayFab provide server-side JavaScript for writing custom game code. With PlayFab, it’s called [CloudScript](../../automation/cloudscript/using-cloudscript.md). Today Parse has better tools for debugging Cloud Code, but this is on the PlayFab roadmap. PlayFab does provide GitHub integration for managing CloudScript, and it’s very easy to call any of the powerful and trusted PlayFab Server API functions from CloudScript.
+Both Parse and PlayFab provide server-side JavaScript for writing custom game code. With PlayFab, it’s called [CloudScript](../../automation/cloudscript/cloudscript-quickstart.md). Today Parse has better tools for debugging Cloud Code, but this is on the PlayFab roadmap. PlayFab does provide GitHub integration for managing CloudScript, and it’s very easy to call any of the powerful and trusted PlayFab Server API functions from CloudScript.
 
 ### User Management and Authentication
 
@@ -98,7 +98,7 @@ There is no risk to experimenting with our Parse player import, since the proces
 
    ![Parse - Browser - Export User Data](media/tutorials/parse-browser-export-user-data.png)  
 
-2. Sign up for a PlayFab developer account and [create your game](../../config/gamemanager/game-manager-tour.md).
+2. Sign up for a PlayFab developer account and [create your game](../../config/gamemanager/game-manager-quickstart.md).
 3. In the Game Manager, browse to your title, and then to the Add-ons tab.
 
    ![Game Manager - Add-ons](media/tutorials/game-manager-add-ons.png)  

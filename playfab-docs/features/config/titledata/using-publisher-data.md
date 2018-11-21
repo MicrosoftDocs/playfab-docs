@@ -191,4 +191,4 @@ public void ServerGetUserPublisherInternalData() {
 ## See Also
 
 - [Using Title Data](using-title-data.md)
-- [Using Cloud Script](../../automation/cloudscript/using-cloudscript.md)
+- [Using Cloud Script](../../automation/cloudscript/cloudscript-quickstart.md)

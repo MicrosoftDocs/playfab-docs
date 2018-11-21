@@ -32,7 +32,7 @@ The **Player Overview** (or *details* page), is a starting point for controlling
 3. The **Run CloudScript** button - Gives you access to cloud scripting on behalf of the player. 
 
 > [!NOTE]
-> You can read more about this in our tutorial [Using CloudScript](../../automation/cloudscript/using-cloudscript.md).
+> You can read more about this in our tutorial [Using CloudScript](../../automation/cloudscript/cloudscript-quickstart.md).
 
 4. Information panels contain general information about the player account.
 

@@ -1,10 +1,10 @@
-- name: PlayStream
+- name: Quickstart
   href: index.md
   items:
   - name: Quickstart
-    href: quickstart.md
+    href: playstream-quickstart.md
   - name: Tutorials
-    href: tutorials.md
+    href: playstream-tutorials.md
     items:
     - name: Event History
       href: event-history.md

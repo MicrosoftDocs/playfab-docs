@@ -25,7 +25,7 @@ An event, as a data structure, represents a change in state for your game. Event
 3. Timestamp (When it happened?)
 4. Associated data a.k.a. body (What are the relevant details?)
 
-It is important to distinguish between [automatic and custom](../../automation/playstream-events/playstream-events.md) events.
+It is important to distinguish between [automatic and custom](../../automation/playstream-events/playstream-quickstart.md) events.
 
 ## Event Flow
 

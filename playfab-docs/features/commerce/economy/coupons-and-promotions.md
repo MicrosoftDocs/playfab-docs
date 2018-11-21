@@ -17,7 +17,7 @@ Coupons are string tokens you generate, and your customers use to redeem invento
 **Requirements**:
 
 - Familiarity with [Catalogs](../items/catalogs.md), Bundles, and Containers
-- Familiarity with [Game Manager](../../config/gamemanager/game-manager-tour.md)
+- Familiarity with [Game Manager](../../config/gamemanager/game-manager-quickstart.md)
 - Familiarity with [Player Inventory](../../data/playerdata/player-inventory.md)
 
 ## Generate and Redeem Coupon Instructions

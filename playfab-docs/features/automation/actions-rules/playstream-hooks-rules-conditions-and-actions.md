@@ -16,7 +16,7 @@ A PlayStream Rule allows you to react to a subset of one type of PlayStream even
 
 ## Requirements
 
-- [Game Manager Tour](../../config/gamemanager/game-manager-tour.md)
+- [Game Manager Tour](../../config/gamemanager/game-manager-quickstart.md)
 - [Using player statistics](../../data/playerdata/using-player-statistics.md) (Contains information that can help you with the example in this tutorial.)
 
 A quick glossary of relevant terms:

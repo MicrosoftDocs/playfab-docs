@@ -27,7 +27,7 @@ There are two ways to create Title News entries:
 1. Via Game Manager
 2. Using the admin API method [AddNews](xref:titleid.playfabapi.com.admin.title-widedatamanagement.addnews).
 
-To create Title News entries with **Game Manager**, you will need to be familiar with [Game Manager](../../config/gamemanager/game-manager-tour.md).
+To create Title News entries with **Game Manager**, you will need to be familiar with [Game Manager](../../config/gamemanager/game-manager-quickstart.md).
 
 In **Game Manager**:
 

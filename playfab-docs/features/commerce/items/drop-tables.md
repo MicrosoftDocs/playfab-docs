@@ -16,7 +16,7 @@ This tutorial will tell you how to create Drop Tables using the PlayFab Game Man
 
 ## Requirements
 
-- This tutorial assumes familiarity with [Catalogs](catalogs.md), [Inventory](../../data/playerdata/player-inventory.md), and [Game Manager](../../config/gamemanager/game-manager-tour.md)
+- This tutorial assumes familiarity with [Catalogs](catalogs.md), [Inventory](../../data/playerdata/player-inventory.md), and [Game Manager](../../config/gamemanager/game-manager-quickstart.md)
 - You must have a primary catalog, which contains standard, non-bundle/non-container items
 - You must have defined at least one virtual currency which you will use as "free" in-game currency
 
