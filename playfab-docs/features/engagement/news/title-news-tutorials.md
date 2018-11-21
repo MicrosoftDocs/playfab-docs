@@ -14,4 +14,4 @@ ms.localizationpriority: medium
 
 This tutorial shows you how to use Title News to communicate with players.
 
-- [Title News](title-news.md)
+- [Title News](title-news-quickstart.md)

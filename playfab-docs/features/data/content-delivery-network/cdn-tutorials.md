@@ -1,5 +1,5 @@
 ---
-title: Content Delivery Network Tutorials
+title: Content Delivery Network Tutorial
 author: v-thopra
 description: Overview page for tutorials about how to set up your Content Delivery Network.
 ms.author: v-thopra
@@ -10,8 +10,8 @@ keywords: playfab, data, content delivery network
 ms.localizationpriority: medium
 ---
 
-# Content Delivery Network Tutorials
+# Content Delivery Network Tutorial
 
 The following tutorial shows you how to set up your Content Delivery Network.
 
-- [Content Delivery Network (CDN)](cdn.md)
+- [Content Delivery Network (CDN)](cdn-quickstart.md)
