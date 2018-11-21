@@ -16,7 +16,7 @@ This tutorial illustrates how to use the Events timeline panel.
 
 ## Overview
 
-This panel is a subsection of [PlayStream Event History](../../automation/playstream-events/event-history.md) in the form of a table of event data sorted by time. To generate events for testing purposes, see the [PlayStream Events](../../automation/playstream-events/playstream-quickstart.md) tutorial for examples of how to post custom events.
+This panel is a subsection of [PlayStream Event History](../../automation/playstream-events/event-history.md) in the form of a table of event data sorted by time. To generate events for testing purposes, see the [PlayStream Events Quickstart](../../automation/playstream-events/playstream-quickstart.md) for examples of how to post custom events.
 
 ![Events Timeline panel](media/tutorials/events-timeline-panel.png)  
 

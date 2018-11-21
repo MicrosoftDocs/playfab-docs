@@ -113,7 +113,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Concept: Entities</h3>
-                                                    <p>Entities provides a robust set of features ranging from per player data storage to groups and clans. Learn about entities and how to apply them to your game.</p>
+                                                    <p>Entities provide a robust set of features ranging from per player data storage to groups and clans. Learn about entities and how to apply them to your game.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -132,7 +132,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Concept: PlayStream</h3>
-                                                    <p>PlayStream is the underlying event architecture that drives PlayFab. Learn how playstream can help with retention, engagement, and montitization.</p>
+                                                    <p>PlayStream is the underlying event architecture that drives PlayFab. Learn how PlayStream can help with retention, engagement, and montitization.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -251,7 +251,7 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>Data</h3>
-                                                <p><a href='/gaming/playfab/features/data/entities/quickstart'>Entities</a></p><p><a href='/gaming/playfab/features/data/playerdata/quickstart'>Player Data</a></p><p><a href='/gaming/playfab/features/data/content-delivery-network/quickstart'>Content Delivery Network</a></p>
+                                                <p><a href='/gaming/playfab/features/data/entities/entities-quickstart'>Entities</a></p><p><a href='/gaming/playfab/features/data/playerdata/quickstart'>Player Data</a></p><p><a href='/gaming/playfab/features/data/content-delivery-network/cdn-quickstart'>Content Delivery Network</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -268,7 +268,7 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>Config</h3>
-                                                <p><a href='/gaming/playfab/features/config/gamemanager/quickstart'>Game Manager</a></p><p><a href='/gaming/playfab/features/config/titledata/quickstart'>Title Data</a></p><p><a href='/gaming/playfab/features/config/dev-test-live/quickstart'>Dev-Test-Live</a></p>
+                                                <p><a href='/gaming/playfab/features/config/gamemanager/game-manager-quickstart'>Game Manager</a></p><p><a href='/gaming/playfab/features/config/titledata/quickstart'>Title Data</a></p><p><a href='/gaming/playfab/features/config/dev-test-live/quickstart'>Dev-Test-Live</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -285,7 +285,7 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>Automation</h3>
-                                                <p><a href='/gaming/playfab/features/automation/cloudscript/quickstart'>Cloud Script</a></p><p><a href='/gaming/playfab/features/automation/playstream-events/quickstart'>PlayStream</a></p><p><a href='/gaming/playfab/features/automation/actions-rules/quickstart'>Actions &amp; Rules</a></p><p><a href='/gaming/playfab/features/automation/scheduled-tasks/quickstart'>Scheduled Tasks</a></p>
+                                                <p><a href='/gaming/playfab/features/automation/cloudscript/cloudscript-quickstart'>Cloud Script</a></p><p><a href='/gaming/playfab/features/automation/playstream-events/playstream-quickstart'>PlayStream</a></p><p><a href='/gaming/playfab/features/automation/actions-rules/quickstart'>Actions &amp; Rules</a></p><p><a href='/gaming/playfab/features/automation/scheduled-tasks/quickstart'>Scheduled Tasks</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -302,7 +302,7 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>Social</h3>
-                                                <p><a href='/gaming/playfab/features/social/friends-groups/quickstart'>Friends &amp; Groups</a></p><p><a href='/gaming/playfab/features/social/tournaments-leaderboards/quickstart'>Tournaments &amp; Leaderboards</a></p><p><a href='/gaming/playfab/features/social/trading/quickstart'>Trading</a></p>
+                                                <p><a href='/gaming/playfab/features/social/friends-groups/quickstart'>Friends &amp; Groups</a></p><p><a href='/gaming/playfab/features/social/tournaments-leaderboards/quickstart'>Tournaments &amp; Leaderboards</a></p><p><a href='/gaming/playfab/features/social/trading/trading-quickstart'>Trading</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -336,7 +336,7 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>Multiplayer</h3>
-                                                <p><a href='/gaming/playfab/features/multiplayer/compute/quickstart'>Compute</a></p><p><a href='/gaming/playfab/features/multiplayer/matchmaking/quickstart'>Matchmaking</a></p><p><a href='/gaming/playfab/features/multiplayer/photon/quickstart'>Photon</a></p>
+                                                <p><a href='/gaming/playfab/features/multiplayer/compute/quickstart'>Compute</a></p><p><a href='/gaming/playfab/features/multiplayer/matchmaking/quickstart'>Matchmaking</a></p><p><a href='/gaming/playfab/features/multiplayer/photon/photon-quickstart'>Photon</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -370,7 +370,7 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>Engagement</h3>
-                                                <p><a href='/gaming/playfab/features/engagement/push-notifications/quickstart'>Push Notifications</a></p><p><a href='/gaming/playfab/features/engagement/emails/quickstart'>Emails</a></p><p><a href='/gaming/playfab/features/engagement/news/quickstart'>News</a></p>
+                                                <p><a href='/gaming/playfab/features/engagement/push-notifications/quickstart'>Push Notifications</a></p><p><a href='/gaming/playfab/features/engagement/emails/quickstart'>Emails</a></p><p><a href='/gaming/playfab/features/engagement/news/title-news-quickstart'>News</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -437,7 +437,7 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>Entities</h3>
-                                                <p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/data/entities/'>Overview</a></p><p><a href='/gaming/playfab/features/data/entities/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/data/entities/tutorials'>Tutorials</a></p>
+                                                <p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/data/entities/'>Overview</a></p><p><a href='/gaming/playfab/features/data/entities/entities-quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/data/entities/entities-tutorials'>Tutorials</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -471,7 +471,7 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>Content Delivery Network</h3>
-                                                <p><p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/data/content-delivery-network/'>Overview</a></p><p><a href='/gaming/playfab/features/data/content-delivery-network/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/data/content-delivery-network/tutorials'>Tutorials</a></p></p>
+                                                <p><p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/data/content-delivery-network/'>Overview</a></p><p><a href='/gaming/playfab/features/data/content-delivery-network/cdn-quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/data/content-delivery-network/remove-tutorials'>Tutorials</a></p></p>
                                             </div>
                                         </div>
                                     </div>
@@ -496,7 +496,7 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>Game Manager</h3>
-                                                <p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/config/gamemanager/'>Overview</a></p><p><a href='/gaming/playfab/features/config/gamemanager/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/config/gamemanager/tutorials'>Tutorials</a></p>
+                                                <p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/config/gamemanager/'>Overview</a></p><p><a href='/gaming/playfab/features/config/gamemanager/game-manager-quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/config/gamemanager/game-manager-tutorials'>Tutorials</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -555,7 +555,7 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>Cloud Script</h3>
-                                                <p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/automation/cloudscript/'>Overview</a></p><p><a href='/gaming/playfab/features/automation/cloudscript/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/automation/cloudscript/tutorials'>Tutorials</a></p>
+                                                <p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/automation/cloudscript/'>Overview</a></p><p><a href='/gaming/playfab/features/automation/cloudscript/cloudscript-quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/automation/cloudscript/cloudscript-tutorials'>Tutorials</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -572,7 +572,7 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>PlayStream</h3>
-                                                <p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/automation/playstream-events/'>Overview</a></p><p><a href='/gaming/playfab/features/automation/playstream-events/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/automation/playstream-events/tutorials'>Tutorials</a></p>
+                                                <p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/automation/playstream-events/'>Overview</a></p><p><a href='/gaming/playfab/features/automation/playstream-events/playstream-quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/automation/playstream-events/playstream-tutorials'>Tutorials</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -665,7 +665,7 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>Trading</h3>
-                                                <p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/social/trading/'>Overview</a></p><p><a href='/gaming/playfab/features/social/trading/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/social/trading/tutorials'>Tutorials</a></p>
+                                                <p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/social/trading/'>Overview</a></p><p><a href='/gaming/playfab/features/social/trading/trading-quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/social/trading/trading-tutorials'>Tutorials</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -783,7 +783,7 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>Photon</h3>
-                                                <p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/multiplayer/photon/'>Overview</a></p><p><a href='/gaming/playfab/features/multiplayer/photon/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/multiplayer/photon/tutorials'>Tutorials</a></p>
+                                                <p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/multiplayer/photon/'>Overview</a></p><p><a href='/gaming/playfab/features/multiplayer/photon/photon-quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/multiplayer/photon/photon-tutorials'>Tutorials</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -918,7 +918,7 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>News</h3>
-                                                <p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/engagement/news/'>Overview</a></p><p><a href='/gaming/playfab/features/engagement/news/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/engagement/news/tutorials'>Tutorials</a></p>
+                                                <p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/engagement/news/'>Overview</a></p><p><a href='/gaming/playfab/features/engagement/news/title-news-quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/engagement/news/title-news-tutorials'>Tutorials</a></p>
                                             </div>
                                         </div>
                                     </div>

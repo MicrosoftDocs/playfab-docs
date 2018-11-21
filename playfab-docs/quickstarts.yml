@@ -24,19 +24,19 @@ sections:
     - image:
         src: "/gaming/playfab/media/quickstart_data.svg"
       title: "Data"
-      html: "<p><a href='/gaming/playfab/features/data/entities/quickstart'>Entities</a></p><p><a href='/gaming/playfab/features/data/playerdata/quickstart'>Player Data</a></p><p><a href='/gaming/playfab/features/data/content-delivery-network/quickstart'>Content Delivery Network</a></p>"
+      html: "<p><a href='/gaming/playfab/features/data/entities-quickstart/quickstart'>Entities</a></p><p><a href='/gaming/playfab/features/data/playerdata/quickstart'>Player Data</a></p><p><a href='/gaming/playfab/features/data/content-delivery-network/cdn-quickstart'>Content Delivery Network</a></p>"
     - image:
         src: "/gaming/playfab/media/quickstart_config.svg"
       title: "Config"
-      html: "<p><a href='/gaming/playfab/features/config/gamemanager/quickstart'>Game Manager</a></p><p><a href='/gaming/playfab/features/config/titledata/quickstart'>Title Data</a></p><p><a href='/gaming/playfab/features/config/dev-test-live/quickstart'>Dev-Test-Live</a></p>"
+      html: "<p><a href='/gaming/playfab/features/config/gamemanager/game-manager-quickstart'>Game Manager</a></p><p><a href='/gaming/playfab/features/config/titledata/quickstart'>Title Data</a></p><p><a href='/gaming/playfab/features/config/dev-test-live/quickstart'>Dev-Test-Live</a></p>"
     - image:
         src: "/gaming/playfab/media/quickstart_automation.svg"
       title: "Automation"
-      html: "<p><a href='/gaming/playfab/features/automation/cloudscript/quickstart'>Cloud Script</a></p><p><a href='/gaming/playfab/features/automation/playstream-events/quickstart'>PlayStream</a></p><p><a href='/gaming/playfab/features/automation/actions-rules/quickstart'>Actions &amp; Rules</a></p><p><a href='/gaming/playfab/features/automation/scheduled-tasks/quickstart'>Scheduled Tasks</a></p>"
+      html: "<p><a href='/gaming/playfab/features/automation/cloudscript/cloudscript-quickstart'>Cloud Script</a></p><p><a href='/gaming/playfab/features/automation/playstream-events/playstream-quickstart'>PlayStream</a></p><p><a href='/gaming/playfab/features/automation/actions-rules/quickstart'>Actions &amp; Rules</a></p><p><a href='/gaming/playfab/features/automation/scheduled-tasks/quickstart'>Scheduled Tasks</a></p>"
     - image:
         src: "/gaming/playfab/media/quickstart_social.svg"
       title: "Social"
-      html: "<p><a href='/gaming/playfab/features/social/friends-groups/quickstart'>Friends &amp; Groups</a></p><p><a href='/gaming/playfab/features/social/tournaments-leaderboards/quickstart'>Tournaments &amp; Leaderboards</a></p><p><a href='/gaming/playfab/features/social/trading/quickstart'>Trading</a></p>"
+      html: "<p><a href='/gaming/playfab/features/social/friends-groups/quickstart'>Friends &amp; Groups</a></p><p><a href='/gaming/playfab/features/social/tournaments-leaderboards/quickstart'>Tournaments &amp; Leaderboards</a></p><p><a href='/gaming/playfab/features/social/trading/trading-quickstart'>Trading</a></p>"
     - image:
         src: "/gaming/playfab/media/quickstart_commerce.svg"
       title: "Commerce"
@@ -44,7 +44,7 @@ sections:
     - image:
         src: "/gaming/playfab/media/quickstart_multiplayer.svg"
       title: "Multiplayer"
-      html: "<p><a href='/gaming/playfab/features/multiplayer/compute/quickstart'>Compute</a></p><p><a href='/gaming/playfab/features/multiplayer/matchmaking/quickstart'>Matchmaking</a></p><p><a href='/gaming/playfab/features/multiplayer/photon/quickstart'>Photon</a></p>"
+      html: "<p><a href='/gaming/playfab/features/multiplayer/compute/quickstart'>Compute</a></p><p><a href='/gaming/playfab/features/multiplayer/matchmaking/quickstart'>Matchmaking</a></p><p><a href='/gaming/playfab/features/multiplayer/photon/photon-quickstart'>Photon</a></p>"
     - image:
         src: "/gaming/playfab/media/quickstart_analytics.svg"
       title: "Analytics"
@@ -52,4 +52,4 @@ sections:
     - image:
         src: "/gaming/playfab/media/quickstart_engagement.svg"
       title: "Engagement"
-      html: "<p><a href='/gaming/playfab/features/engagement/push-notifications/quickstart'>Push Notifications</a></p><p><a href='/gaming/playfab/features/engagement/emails/quickstart'>Emails</a></p><p><a href='/gaming/playfab/features/engagement/news/quickstart'>News</a></p>"
+      html: "<p><a href='/gaming/playfab/features/engagement/push-notifications/quickstart'>Push Notifications</a></p><p><a href='/gaming/playfab/features/engagement/emails/quickstart'>Emails</a></p><p><a href='/gaming/playfab/features/engagement/news/title-news-quickstart'>News</a></p>"

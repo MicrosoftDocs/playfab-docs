@@ -20,7 +20,7 @@ This tutorial walks you through how to create a Prize Table, that triggers a set
 > This is an advanced tutorial. Please make sure that all requirements have been met or you will not be able to complete this tutorial.
 
 - Basic knowledge of how to create a player will be necessary as there will need to be players in a leaderboard before it can perform any actions on those players. Refer to the [Getting Started with PlayFab - Chapter 1](../../config/dev-test-live/get-started-with-players-and-tournaments.md) tutorial which will run you through the process of creating a player for the title.
-- It is also worthwhile to read the [Game Manager Tour](../../config/gamemanager/game-manager-quickstart.md) if you are unfamiliar with the Game Manager as it is the place where prize tables are created.
+- It is also worthwhile to read the [Game Manager Quickstart](../../config/gamemanager/game-manager-quickstart.md) if you are unfamiliar with the Game Manager as it is the place where prize tables are created.
 - In order to use Prize Tables, you must have general knowledge of how resettable leaderboards work. Please read about leaderboards in our tutorial [Using Resettable Statistics and Leaderboards](using-resettable-statistics-and-leaderboards.md).
 - Additionally, a virtual currencies must be set up. Please read our tutorial about [Currencies](../../commerce/economy/currencies.md) and set up two currencies with the following parameters:
   1. Currency code: **GO**, Display name: **Gold**,  Initial deposit: **200**

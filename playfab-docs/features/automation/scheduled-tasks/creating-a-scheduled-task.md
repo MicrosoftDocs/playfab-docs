@@ -18,7 +18,7 @@ In the example used in this tutorial, we show you how to modify a game variable 
 
 ## Step 1 - Prepare the CloudScript
 
-In the Game Manager, go to Servers -> CloudScript. Add a CloudScript function called "adjustRareDropRate" with a simple call to the SetTitleData API as shown in the following code snippet and image. (for the sharp-eyed, don’t worry - there’s a bug in there on purpose). Make sure you deploy the new revision, so that it is live in your game. You can learn more about using CloudScript in our tutorial [Using CloudScript](../cloudscript/cloudscript-quickstart.md) and in documentation for the method [ExecuteCloudScript](xref:titleid.playfabapi.com.client.server-sidecloudscript.executecloudscript).
+In the Game Manager, go to Servers -> CloudScript. Add a CloudScript function called "adjustRareDropRate" with a simple call to the SetTitleData API as shown in the following code snippet and image. (for the sharp-eyed, don’t worry - there’s a bug in there on purpose). Make sure you deploy the new revision, so that it is live in your game. You can learn more about using CloudScript in our [CloudScript Quickstart](../cloudscript/cloudscript-quickstart.md), and in documentation for the method [ExecuteCloudScript](xref:titleid.playfabapi.com.client.server-sidecloudscript.executecloudscript).
 
 ```javascript
 handlers.adjustRareDropRate = function(args) {

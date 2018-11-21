@@ -16,7 +16,7 @@ This tutorial illustrates how to complement PlayFab's built-in features with som
 
 **Requirements:**
 
-- [Writing Custom Cloud Script](../../automation/cloudscript/writing-custom-cloudscript.md), and [Cloud Script File Management](../../automation/cloudscript/cloudscript-quickstart.md)
+- [Writing Custom Cloud Script](../../automation/cloudscript/writing-custom-cloudscript.md), and [CloudScript Quickstart](../../automation/cloudscript/cloudscript-quickstart.md)
 - [Title Data](../../config/titledata/using-title-data.md)
 - [A/B Testing](../../analytics/ab-testing/creating-ab-tests.md)
 
@@ -131,7 +131,7 @@ public void GetContent() {
 
 ## [Optional] Demonstration (with Unity)
 
-[Deploy the CloudScript](../../automation/cloudscript/cloudscript-quickstart.md) sample to your PlayFab title. Once this is done, open a new Unity project. Make sure you have PlayFab SDK imported and title setting configured.
+Follow the steps in our [CloudScript Quickstart](../../automation/cloudscript/cloudscript-quickstart.md) to deploy the CloudScript sample to your PlayFab title. Once this is done, open a new Unity project. Make sure you have PlayFab SDK imported and title setting configured.
 
 Create an empty scene and an empty game object. Attach the following script to the game object:
 
