@@ -14,9 +14,9 @@ ms.localizationpriority: medium
 
 Push notifications give you a channel to send an immediate, customized message to your player’s home screen. Using PlayFab's push feature, you may send unlimited push notifications to any number of devices completely free of charge. 
 
-As a general guideline, always tell players *up front* how you will be using the push notification service. Explaining how your game rewards or communicates via push notification can be the difference in building community engagement versus driving players away.
+As a general guideline, always tell players *up front* how you will be using the push notification service. Explaining to players how your game rewards or communicates via push notification can be the difference in building community engagement versus driving players away.
 
-The following screenshot we have provided is an example from an Android device's Notifications area showing a push notification.
+The following screenshot is an example from an Android device's Notifications area showing a push notification.
 
 ![Android device - Notifications screen](../media/tutorials/android-notifications-screen.png)  
 
@@ -69,7 +69,7 @@ Consider the following scenario:
 
 - Each player may pay 1 CH currency and challenge another player who is up to 5 positions away from the current player.
 
-First, consider a virtual currency as shown in the  example screenshot shown below (see the [Currencies](../../commerce/economy/currencies.md) tutorial for information on how to define a virtual currency).
+First, consider a virtual currency as shown in the following screenshot (see the [Currencies](../../commerce/economy/currencies.md) tutorial for information on how to define a virtual currency).
 
 ![PlayFab Economy - Currencies - New Currency](../media/tutorials/playfab-new-currency.png)
 
@@ -79,7 +79,7 @@ Now, consider the following Statistics defined for each player (see the [Accessi
 
 Once you've set up these prerequisites, you can set up a push-notification challenge system.
 
-The following client code will call the Cloud Script **ChallengePlayer**.
+The following client code will call the CloudScript function **ChallengePlayer**.
 
 ```csharp
 public void ChallengeRandomClosePlayer(string currentPlayerId) {
