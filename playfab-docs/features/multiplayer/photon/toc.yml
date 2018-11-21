@@ -2,9 +2,6 @@
   href: index.md
   items:
   - name: Quickstart
-    href: quickstart.md
+    href: photon-quickstart.md
   - name: Tutorials
-    href: tutorials.md
-    items:
-    - name: Setting up Photon Unity Networking with PlayFab
-      href: setting-up-photon-unity-networking-with-playfab.md
+    href: photon-tutorials.md
