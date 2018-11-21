@@ -16,7 +16,7 @@ This tutorial describes how to recognize and handle errors within your CloudScri
 
 ## Identifying
 
-The first step is identifying the error. While every uncaught error is logged and available from the response to the caller (client), you may still catch the error early by using a try/catch block. Consider the following Cloud Script snippet that produces and catches the error:
+The first step is identifying the error. While every uncaught error is logged and available from the response to the caller (client), you may still catch the error early by using a try/catch block. Consider the following CloudScript snippet that produces and catches the error:
 
 ```javascript
 "use strict";
@@ -37,7 +37,7 @@ Notice how we extract error codes within the catch block. Consult our [Global AP
 
 ## Logging
 
-Any unhandled error will be added to the response, allowing the client to process the problem. At the same time, it does create a Cloud Script Error entry and is added to the total statistics available on your Cloud Script Dashboard:
+Any unhandled error will be added to the response, allowing the client to process the problem. At the same time, it does create a CloudScript Error entry and is added to the total statistics available on your CloudScript Dashboard:
 
 ![Game Manager - Automation - CloudScript Dashboard](media/tutorials/game-manager-cloudscript-dashboard.png)  
 

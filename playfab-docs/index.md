@@ -150,8 +150,8 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Concept: Cloud Script</h3>
-                                                    <p>Cloud Script is one of PlayFab's most powerful features. Learn all about running compute in the Cloud and building robust systems with PlayFab Cloud Script.</p>
+                                                    <h3>Concept: CloudScript</h3>
+                                                    <p>CloudScript is one of PlayFab's most powerful features. Learn all about running compute in the Cloud and building robust systems with PlayFab CloudScript.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -285,7 +285,7 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>Automation</h3>
-                                                <p><a href='/gaming/playfab/features/automation/cloudscript/cloudscript-quickstart'>Cloud Script</a></p><p><a href='/gaming/playfab/features/automation/playstream-events/playstream-quickstart'>PlayStream</a></p><p><a href='/gaming/playfab/features/automation/actions-rules/quickstart'>Actions &amp; Rules</a></p><p><a href='/gaming/playfab/features/automation/scheduled-tasks/quickstart'>Scheduled Tasks</a></p>
+                                                <p><a href='/gaming/playfab/features/automation/cloudscript/cloudscript-quickstart'>CloudScript</a></p><p><a href='/gaming/playfab/features/automation/playstream-events/playstream-quickstart'>PlayStream</a></p><p><a href='/gaming/playfab/features/automation/actions-rules/quickstart'>Actions &amp; Rules</a></p><p><a href='/gaming/playfab/features/automation/scheduled-tasks/quickstart'>Scheduled Tasks</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -554,7 +554,7 @@ featureFlags:
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3>Cloud Script</h3>
+                                                <h3>CloudScript</h3>
                                                 <p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/automation/cloudscript/'>Overview</a></p><p><a href='/gaming/playfab/features/automation/cloudscript/cloudscript-quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/automation/cloudscript/cloudscript-tutorials'>Tutorials</a></p>
                                             </div>
                                         </div>

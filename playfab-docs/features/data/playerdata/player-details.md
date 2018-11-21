@@ -87,7 +87,7 @@ Additionally, you can manage linking. Read more about linking in our tutorial on
 > [!NOTE]
 > It is only possible to manually link **Custom ID**, **Android Device**, or **iOS Device** accounts. For more sophisticated options (Steam, GameCenter, etc.), consider using other **Client Account Management APIs** listed in our [PlayFab API Reference documentation](../../../api-references/index.md).
 
-## Running Cloud Script
+## Running CloudScript
 
 The **Run CloudScript** button on the Player Overview page opens the **REVISION AND FUNCTION** page shown below.  On the **REVISION AND FUNCTION** screen:
 

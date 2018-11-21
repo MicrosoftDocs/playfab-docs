@@ -25,7 +25,7 @@ As a REST call, the structure of a Webhook call from CloudScript is simple. The 
 For example, a basic Web API call to get the version number of your server-side logic might look something like this:
 
 ```javascript
-// Cloud Script
+// CloudScript
 var url = "http://api.yoursite.com/playfab_call/GetVersion";
 var method = "post";
 var contentBody = "";
@@ -37,7 +37,7 @@ var responseString =  http.request(url,method,contentBody,contentType,headers);
 The body of the response is returned in stringified form, so that you can subsequently use it in the rest of the script. In this case, since we were querying version, if you were to write the response out to the log like so:
 
 ```javascript
-// Cloud Script
+// CloudScript
 log.info(responseString); 
 ```
 
@@ -69,7 +69,7 @@ The response back to the client at the end of running the CloudScript might look
 If, however, you have a secure service you need to communicate with, you’ll need to first exchange credentials with that service to establish identity. For an OAuth solution, that means requesting a Bearer Access Token, using your Client ID and Secret. This will vary based upon your specific OAuth implementation, but your call could look something like this:
 
 ```javascript
-//Cloud Script
+//CloudScript
 var url = "https://api.yoursite.com/playfab_call/request_token";
 var method = "post";
 var contentBody = "grant_type=client_credentials";
@@ -84,7 +84,7 @@ var tokenResponse =  http.request(url,method,contentBody,contentType,headers);
 Given a good response, you would then be able to parse the Bearer Access Token from the response like so (again, this does depend upon the specifics of your OAuth implementation, but this is a fairly common pattern for this form of authentication):
 
 ```javascript
-//Cloud Script
+//CloudScript
 var parsedData = JSON.parse(tokenResponse);
 var bearer_access_token = parsedData["access_token"];
 ```
@@ -92,7 +92,7 @@ var bearer_access_token = parsedData["access_token"];
 Which would then allow you to call into your OAuth-secured functionality by providing the Bearer Access Token.
 
 ```javascript
-//Cloud Script
+//CloudScript
 var url = "https://api.yoursite.com/playfab_call/do_action";
 var method = "post";
 var contentBody = customActionBody;

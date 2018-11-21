@@ -62,7 +62,7 @@ handlers.bushelOnYourFirstDay = function(args) {
         ItemIds: ["apple", "apple"]
     });
 
-    // Like AddUserVirtualCurrency, it's safer to call UpdatePlayerStatistics from Cloud Script
+    // Like AddUserVirtualCurrency, it's safer to call UpdatePlayerStatistics from CloudScript
     var updateStatistics = server.UpdatePlayerStatistics({
         PlayFabId: currentPlayerId,
         Statistics: [{

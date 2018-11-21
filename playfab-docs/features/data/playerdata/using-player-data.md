@@ -232,9 +232,9 @@ public void CloudIncrement() {
     PlayFabClientAPI.ExecuteCloudScript( new ExecuteCloudScriptRequest {
         FunctionName = "IncrementReadOnlyUserData"
     }, 
-    result => Debug.Log("Cloud Script call successful"), 
+    result => Debug.Log("CloudScript call successful"), 
     error => {
-        Debug.Log("Cloud Script call failed");
+        Debug.Log("CloudScript call failed");
         Debug.Log(error.GenerateErrorReport());
     });
 }

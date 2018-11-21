@@ -29,7 +29,7 @@ The following CloudScript example is the turn-based structure for any common boa
 - **Assumptions:**  The Shared Group Data that represents the game has already been started, and its membership is already defined.
 
 ```csharp
-// Cloud Script/Javascript
+// CloudScript/Javascript
 const MY_GAME_GROUP_KEYS: Array<string> = ["gameState", "currentPlayerTurn"];
 interface PlayerTurnArgs {
     sharedGroupId: string;

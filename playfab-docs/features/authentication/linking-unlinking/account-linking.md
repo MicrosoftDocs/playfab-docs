@@ -52,7 +52,7 @@ After signing into the player account on Device2 (using the recoverable account 
 
 Now that we've verified that Device2 is not bound to this account, we can try to bind it. Call the appropriate LinkAndroidDeviceID, LinkIOSDeviceID, or other device-specific API call. If successful, you're done, resume normal gameplay. But as with any API call, be prepared to capture errors. Specifically, look for an error return that the device is already linked to an account. Under this condition, prompt the player with an "Do you want to bind this device to this account" message. Be sure to provide information that the other account may be **lost** if they continue. If the player accepts this warning, re-send the link-request with the property ForceLink set to true. This will unlink Device2's ID from the old account, potentially orphaning that account if no other login mechanisms are linked to it, and bind it to the new account.
 
-**Best Practice**: Use Cloud Script, or a PlayStream event to record information on abandoned accounts somewhere where your customer service reps might be able to recover it, if the player made a mistake. Even something as simple as writing the PlayFabId to a cloud-based log file may save an account for a dedicated player.
+**Best Practice**: Use CloudScript, or a PlayStream event to record information on abandoned accounts somewhere where your customer service reps might be able to recover it, if the player made a mistake. Even something as simple as writing the PlayFabId to a cloud-based log file may save an account for a dedicated player.
 
 **Device1 State**: Device ID is bound to the player account  
 **Device2 State**: Device ID is bound to the player account
@@ -71,7 +71,7 @@ After performing a recoverable login with the device, call [GetPlayerCombinedInf
 
 Since the device is not bound to this account, we can try to bind it. Call the appropriate LinkAndroidDeviceID, LinkIOSDeviceID, or other device-specific API call. If successful, you're done, resume normal gameplay. But again, be prepared to capture errors. Specifically, look for an error return that the device is already linked to an account. Under this condition, prompt the player with a "Do you want to bind this device to this account" message. Be sure to provide information that the other account may be lost if they continue. If the player accepts this warning, re-send the link-request with the property ForceLink set to true. This will unlink the device's ID from the old account, potentially orphaning that account if no other login mechanisms are linked to it, and bind it to the new account.
 
-**Best Practice**: Use Cloud Script, or a PlayStream event to record information on abandoned accounts somewhere where your customer service reps might be able to recover it, if the player made a mistake. Even something as simple as writing the PlayFabId to a cloud-based log file may save an account for a dedicated player.
+**Best Practice**: Use CloudScript, or a PlayStream event to record information on abandoned accounts somewhere where your customer service reps might be able to recover it, if the player made a mistake. Even something as simple as writing the PlayFabId to a cloud-based log file may save an account for a dedicated player.
 
 **Device State**: Device ID is bound to the player account
 

@@ -30,7 +30,7 @@ Prerequisites for this tutorial:
 Our hello world example works on a brand new title, with no modifications in Game Manager. The default CloudScript file for a new title includes a handler called **helloWorld**. It utilizes a few basic features, input parameters, logging, currentPlayerId, and return parameters. The following sample shows the default helloWorld function code (minus comments).
 
 ```javascript
-// Cloud Script (JavaScript)
+// CloudScript (JavaScript)
 handlers.helloWorld = function (args, context) {
     var message = "Hello " + currentPlayerId + "!";
     log.info(message);
@@ -94,11 +94,11 @@ In pure C#, however, the SDK allows more succinct code by means of the async/awa
 
 ```csharp
 private static void OnCloudHelloWorld(ExecuteCloudScriptResult result) {
-    // Cloud Script returns arbitrary results, so you have to evaluate them one step and one parameter at a time
+    // CloudScript returns arbitrary results, so you have to evaluate them one step and one parameter at a time
     Debug.Log(JsonWrapper.SerializeObject(result.FunctionResult));
     JsonObject jsonResult = (JsonObject)result.FunctionResult;
     object messageValue;
-    jsonResult.TryGetValue("messageValue", out messageValue); // note how "messageValue" directly corresponds to the JSON values set in Cloud Script
+    jsonResult.TryGetValue("messageValue", out messageValue); // note how "messageValue" directly corresponds to the JSON values set in CloudScript
     Debug.Log((string)messageValue);
 }
 
@@ -117,9 +117,9 @@ CloudScript is a set of JavaScript functions compiled with V8 and hosted on Play
 | server               | Has access to all server-side API calls listed in the [PlayFab API Reference documentation](../../../api-references/index.md). They can be called (synchronously) like so: var result = server.AuthenticateUserTicket(request);                                                                          |
 | http                 |Performs synchronous HTTP requests, like so: http.request(url, method, content, contentType, headers, logRequestAndResponse) headers is an object with properties corresponding to various headers and their values. logRequestAndResponse is a boolean that determines whether the title should log any errors in the request as part of the response.                                                                        |
 | log                  | Creates log statements and adds them to the response. Logs have three levels: log.info(), log.debug(), and log.error(). All three levels take a message string, along with an optional object containing extra data to include with the log. e.g. log.info('hello!', { time: new Date() });   |
-| currentPlayerId      | PlayFab Id of the player that triggered the Cloud Script call.                                       |
-| handlers             | Global object which contains all Cloud Script functions for your title. Functions can be added or called through this object, e.g. handlers.pop = function() {};, handlers.pop();.                                                                               |
-| script               | Global object which contains "revision" and "titleId". Revision represents the revision number for the currently executing Cloud Script, and titleId represents the titleId for the current title.                                                             |
+| currentPlayerId      | PlayFab Id of the player that triggered the CloudScript call.                                       |
+| handlers             | Global object which contains all CloudScript functions for your title. Functions can be added or called through this object, e.g. handlers.pop = function() {};, handlers.pop();.                                                                               |
+| script               | Global object which contains "revision" and "titleId". Revision represents the revision number for the currently executing CloudScript, and titleId represents the titleId for the current title.                                                             |
 
 In addition, all handler functions are passed two parameters, detailed below:
 
@@ -128,7 +128,7 @@ In addition, all handler functions are passed two parameters, detailed below:
 | args                 | First parameter to a handler function. An object representation of the FunctionParameter field of an ExecuteCloudscript request. |
 | context              | Second parameter to a handler function. Additional information about the request when it is triggered by a PlayStream event action, including the [data from the event](https://api.playfab.com/playstream/events) that triggered the action (context.playStreamEvent) and the [profile data](https://api.playfab.com/playstream/profile/PlayerProfile) for the player associated with it. (context.playerProfile)                                     |
 
-Cloud Script functions can be called through the ExecuteCloudScript API call or by a preset PlayStream event action. Full details about the response to ExecuteCloudScript can be found [here](https://api.playfab.com/documentation/Client/datatype/PlayFab.Client.Models/PlayFab.Client.Models.ExecuteCloudScriptResult).
+CloudScript functions can be called through the ExecuteCloudScript API call or by a preset PlayStream event action. Full details about the response to ExecuteCloudScript can be found [here](https://api.playfab.com/documentation/Client/datatype/PlayFab.Client.Models/PlayFab.Client.Models.ExecuteCloudScriptResult).
 
 ## Intermediate: FunctionParameter and args
 
@@ -156,11 +156,11 @@ private static void StartCloudHelloWorld()
 }
 
 private static void OnCloudHelloWorld(ExecuteCloudScriptResult result) {
-    // Cloud Script returns arbitrary results, so you have to evaluate them one step and one parameter at a time
+    // CloudScript returns arbitrary results, so you have to evaluate them one step and one parameter at a time
     Debug.Log(JsonWrapper.SerializeObject(result.FunctionResult));
     JsonObject jsonResult = (JsonObject)result.FunctionResult;
     object messageValue;
-    jsonResult.TryGetValue("messageValue", out messageValue); // note how "messageValue" directly corresponds to the JSON values set in Cloud Script
+    jsonResult.TryGetValue("messageValue", out messageValue); // note how "messageValue" directly corresponds to the JSON values set in CloudScript
     Debug.Log((string)messageValue);
 }
 
@@ -189,7 +189,7 @@ See the Server APIs listed in our [PlayFab API Reference documentation](../../..
 The following example is from within a potential CloudScript handler:
 
 ```javascript
-// Cloud Script (JavaScript)
+// CloudScript (JavaScript)
 //See: JSON.parse, JSON.stringify, parseInt and other built-in javascript helper functions for manipulating data
 var currentState; // here we are calculating the current player's game state
 
@@ -343,7 +343,7 @@ void RunLogTest() {
         GeneratePlayStreamEvent = true
     }, result => {
         if(result.Error != null) {
-            Debug.Log(string.Format("There was error in the Cloud Script function {0}:\n Error Code: {1}\n Message: {2}"
+            Debug.Log(string.Format("There was error in the CloudScript function {0}:\n Error Code: {1}\n Message: {2}"
             , result.FunctionName, result.Error.Error, result.Error.Message));
         }
     },

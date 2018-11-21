@@ -16,7 +16,7 @@ This tutorial illustrates how to complement PlayFab's built-in features with som
 
 **Requirements:**
 
-- [Writing Custom Cloud Script](../../automation/cloudscript/writing-custom-cloudscript.md), and [CloudScript Quickstart](../../automation/cloudscript/cloudscript-quickstart.md)
+- [Writing Custom CloudScript](../../automation/cloudscript/writing-custom-cloudscript.md), and [CloudScript Quickstart](../../automation/cloudscript/cloudscript-quickstart.md)
 - [Title Data](../../config/titledata/using-title-data.md)
 - [A/B Testing](../../analytics/ab-testing/creating-ab-tests.md)
 
@@ -171,7 +171,7 @@ public class PlayerABTestingTitle : MonoBehaviour {
             // Coroutine will wait here, until we set log in waiting flag to true
             while(!isLoggedIn) yield return null;
 
-            // Secondly, we execute Cloud Script call to our function called "GetTItleDataAB"
+            // Secondly, we execute CloudScript call to our function called "GetTItleDataAB"
             // We pass in TitleKey. In this example, it is "MyMessage"
             PlayFabClientAPI.ExecuteCloudScript(new ExecuteCloudScriptRequest {
                 FunctionName = "GetTitleDataAB",

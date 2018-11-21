@@ -170,7 +170,7 @@ There is no built-in API for buying back inventory items from the player, as the
 > [!NOTE] 
 > Items and virtual currencies have a close relationship. For more information, see our [Currencies](../../commerce/economy/currencies.md) tutorial.
 
-The following Cloud Script function combines the two described server calls into a single client-accessible call.
+The following CloudScript function combines the two described server calls into a single client-accessible call.
 
 ```javascript
 var SELL_PRICE_RATIO = 0.75;
@@ -213,19 +213,19 @@ handlers.SellItem = function (args) {
 
 - Make sure to verify all client input information as *valid* before making any changes.
 
-- Cloud Script is *not* atomic, so call order matters: **AddUserVirtualCurrency** may succeed and **RevokeInventoryItem** may fail. 
+- CloudScript is *not* atomic, so call order matters: **AddUserVirtualCurrency** may succeed and **RevokeInventoryItem** may fail. 
 
 > [!TIP]
 > It is generally better to give the player something they *didn't* earn in this process, than to take something away *without* compensation.
 
-This Cloud Script function can then be accessed from the client.
+This CloudScript function can then be accessed from the client.
 
 ```csharp
 void SellItem()
 {
     PlayFabClientAPI.ExecuteCloudScript(new ExecuteCloudScriptRequest
     {
-        // This must match "SellItem" from the "handlers.SellItem = ..." line in the Cloud Script file
+        // This must match "SellItem" from the "handlers.SellItem = ..." line in the CloudScript file
         FunctionName = "SellItem", 
         FunctionParameter = new Dictionary<string, string>{
             // This is a hex-string value from the GetUserInventory result

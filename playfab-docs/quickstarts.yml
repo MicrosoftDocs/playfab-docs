@@ -32,7 +32,7 @@ sections:
     - image:
         src: "/gaming/playfab/media/quickstart_automation.svg"
       title: "Automation"
-      html: "<p><a href='/gaming/playfab/features/automation/cloudscript/cloudscript-quickstart'>Cloud Script</a></p><p><a href='/gaming/playfab/features/automation/playstream-events/playstream-quickstart'>PlayStream</a></p><p><a href='/gaming/playfab/features/automation/actions-rules/quickstart'>Actions &amp; Rules</a></p><p><a href='/gaming/playfab/features/automation/scheduled-tasks/quickstart'>Scheduled Tasks</a></p>"
+      html: "<p><a href='/gaming/playfab/features/automation/cloudscript/cloudscript-quickstart'>CloudScript</a></p><p><a href='/gaming/playfab/features/automation/playstream-events/playstream-quickstart'>PlayStream</a></p><p><a href='/gaming/playfab/features/automation/actions-rules/quickstart'>Actions &amp; Rules</a></p><p><a href='/gaming/playfab/features/automation/scheduled-tasks/quickstart'>Scheduled Tasks</a></p>"
     - image:
         src: "/gaming/playfab/media/quickstart_social.svg"
       title: "Social"

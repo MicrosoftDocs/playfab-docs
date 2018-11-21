@@ -19,7 +19,7 @@ sections:
     items:
     - image:
         src: "/gaming/playfab/features/media/feature_cloudscript.svg"
-      title: "Cloud Script"
+      title: "CloudScript"
       html: "<p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/automation/cloudscript/'>Overview</a></p><p><a href='/gaming/playfab/features/automation/cloudscript/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/automation/cloudscript/tutorials'>Tutorials</a></p>"
     - image:
         src: "/gaming/playfab/features/media/feature_playstream.svg"

@@ -93,10 +93,10 @@ The Photon add-on page will allow you to install Photon by specifying your **Pho
 
 ## Setting Photon Web-hooks
 
-As an optional integration, Photon may transmit certain events to your PlayFab Cloud Script. This is done by means of Web-hooks:
+As an optional integration, Photon may transmit certain events to your PlayFab CloudScript. This is done by means of Web-hooks:
 - You specify a base URL.
 - Then you specify path for each of available events.
-- A path is, effectively, a handler name implemented in your Cloud Script.
+- A path is, effectively, a handler name implemented in your CloudScript.
 
 The **Base URL** will have the following format:
 
@@ -117,11 +117,11 @@ Make sure to replace **Photon Secret Key** token with the secret key you generat
 ```
 
 - Fill in the **Base URL (1)**.
-- Assign a **Cloud Script** handler name for each of available events **(2)**.
+- Assign a **CloudScript** handler name for each of available events **(2)**.
 - Remove any **CustomHttpHeaders (3)**.
 - Submit by selecting the **Save** button **(4)**.
 
-![Assign Cloud Script event handlers](media/tutorials/photon-assign-cloud-script-event-handlers.png)  
+![Assign CloudScript event handlers](media/tutorials/photon-assign-cloud-script-event-handlers.png)  
 
 ## Setting up a Unity project
 
@@ -288,11 +288,11 @@ Photon will start outputting debug messages. So by simply monitoring your consol
 
 Ensure that no **Authentication Denied** errors are present in the console. At this point, you have set up minimal PlayFab and Photon integration.
 
-## Photon Room Event + Cloud Script
+## Photon Room Event + CloudScript
 
 Photon matchmaking system has the concept of a room. If you are not familiar with this concept, please consult with the [Photon Matchmaking Guide](https://doc.photonengine.com/en-us/realtime/current/reference/matchmaking-and-lobby).
 
-PlayFab allows you to intercept various room events. The following room events require only **Cloud Script** to be intercepted:
+PlayFab allows you to intercept various room events. The following room events require only **CloudScript** to be intercepted:
 
 - RoomCreated
 - RoomJoined
@@ -305,13 +305,13 @@ The following events will require additional control over unity code to be inter
 - RoomEventRaised
 
 > [!WARNING]  
-> Once you introduce a handler for a room event, it becomes an essential part of event handling flow. So errors produced while running your **Cloud Script** may cause problems for the entire system. For example, if the **RoomCreated** handler throws an error, your clients will throw an error as well, and will not be able to connect properly.
+> Once you introduce a handler for a room event, it becomes an essential part of event handling flow. So errors produced while running your **CloudScript** may cause problems for the entire system. For example, if the **RoomCreated** handler throws an error, your clients will throw an error as well, and will not be able to connect properly.
 
-Let's construct PlayFab **Cloud Script** by defining handler for each event type one by one.
+Let's construct PlayFab **CloudScript** by defining handler for each event type one by one.
 
 ### Room Created
 
-The **Room Created** handler is invoked every time photon room is created. The following **Cloud Script** handler will intercept such event.
+The **Room Created** handler is invoked every time photon room is created. The following **CloudScript** handler will intercept such event.
 
 ```javascript
 // Triggered automatically when a Photon room is first created
@@ -356,7 +356,7 @@ handlers.RoomCreated = function (args) {
 
 ### Room Joined
 
-**Room Joined** handler is invoked every time player joins the room.  The following **Cloud Script** handler will intercept such event.
+**Room Joined** handler is invoked every time player joins the room.  The following **CloudScript** handler will intercept such event.
 
 ```javascript
 // Triggered automatically when a player joins a Photon room
@@ -386,7 +386,7 @@ The example of 'args' payload is shown below.
 
 ### Room Left
 
-**Room Left** handler is invoked every time player leaves the room.  The following **Cloud Script** handler will intercept such event.
+**Room Left** handler is invoked every time player leaves the room.  The following **CloudScript** handler will intercept such event.
 
 ```javascript
 // Triggered automatically when a player leaves a Photon room
@@ -416,7 +416,7 @@ You may acquire additional data about the event using 'args' argument. The examp
 
 ### Room Closed
 
-**Room Closed** handler is invoked every time all the last player leaves the room and room has no players left. The following **Cloud Script** handler will intercept such event.
+**Room Closed** handler is invoked every time all the last player leaves the room and room has no players left. The following **CloudScript** handler will intercept such event.
 
 ```javascript
 // Triggered automatically when a Photon room closes
@@ -550,7 +550,7 @@ PhotonNetwork.room.SetCustomProperties(properties, expectedProperties, true);
 
 ### Room Event Raised
 
-**Room Event Raised** is called every time a **custom** room event is raised. The following Cloud Script handler will intercept such event.
+**Room Event Raised** is called every time a **custom** room event is raised. The following CloudScript handler will intercept such event.
 
 ```javascript
 // Triggered by calling "OpRaiseEvent" on the Photon client. The "args.Data" property is
@@ -835,7 +835,7 @@ public class PlayFabAuthenticator : MonoBehaviour {
 
 Don't forget to stop Unity from playing. This is to ensure we also receive **RoomLeft** and **RoomClosed** events.
 
-Navigate to **Title Game Manager** page and observe the PlayStream panel. You should be able to see events generated as a result of our Cloud Script code handling Photon events.
+Navigate to **Title Game Manager** page and observe the PlayStream panel. You should be able to see events generated as a result of our CloudScript code handling Photon events.
 
  1. Initially, our Photon instance had no opened room. When we launched the example, Photon has **created the room** for the Boxes Demo
  2. The first player to join is the player who requested the room. So no **RoomJoined** event was recorded. 

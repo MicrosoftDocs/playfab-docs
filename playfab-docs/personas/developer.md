@@ -45,10 +45,10 @@ Below, you can find a number of different ways that PlayFab maps onto a game and
 
 Mapping your game on top of PlayFab is a great start, but there is more power to be harnessed in PlayFab that can help your LiveOps team create better engagement, retention and monetization mechanics. A majority of these features leverage PlayStream. PlayStream is an event system that drives real-time events that enables you to perform actions on player behaviors. Actions can happen in a number of ways, either via segmentation or via direct rules that are applied to specific events.
 
-Actions might result in a Cloud Script being run. Our Cloud Script is JavaScript code that lives on a remote server and you can execute either from a rule or directly from a game client. For more information, check out these resources to get you started with Cloud Scripting and Automation on PlayFab:
+Actions might result in a CloudScript being run. Our CloudScript is JavaScript code that lives on a remote server and you can execute either from a rule or directly from a game client. For more information, check out these resources to get you started with Cloud Scripting and Automation on PlayFab:
 
-- [Automation](https://review.docs.microsoft.com/en-us/gaming/playfab/feature-automation) – A hub for information on Cloud Script, Scheduled Tasks, PlayStream and Action & Rules.
-- [Cloud Script Quickstart](https://review.docs.microsoft.com/en-us/gaming/playfab/features/automation/cloudscript/quickstart) – Get up and running quickly with your first Cloud Script call.
+- [Automation](https://review.docs.microsoft.com/en-us/gaming/playfab/feature-automation) – A hub for information on CloudScript, Scheduled Tasks, PlayStream and Action & Rules.
+- [CloudScript Quickstart](https://review.docs.microsoft.com/en-us/gaming/playfab/features/automation/cloudscript/quickstart) – Get up and running quickly with your first CloudScript call.
 
 > [!TIP]
 > To leverage rules in the automation system, [write custom events](https://review.docs.microsoft.com/en-us/gaming/playfab/features/automation/playstream-events/playstream-events#custom-event-overview) in your game which will create a PlayStream event.

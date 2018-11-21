@@ -75,7 +75,7 @@ let getRandomInRange = (min, max) => {
 }
 ```
 
-Let's upload the CloudScript. Using Game Manager, navigate to the "Automation" **(1)** tab. Then navigate to the "Cloud Script" **(2)** sub-tab. Insert the CloudScript code **(3)** and click "Save as revision" **(4)**. Finally, deploy the revision **(5)**:
+Let's upload the CloudScript. Using Game Manager, navigate to the "Automation" **(1)** tab. Then navigate to the "CloudScript" **(2)** sub-tab. Insert the CloudScript code **(3)** and click "Save as revision" **(4)**. Finally, deploy the revision **(5)**:
 
 ![Game Manager - Automation - CloudScript - upload CloudScript](media/tutorials/game-manager-automation-cloudscript-upload-cloudscript.png)  
 
@@ -86,7 +86,7 @@ Next, we need to define a task to execute our CloudScript over a specific segmen
 
 ![Game Manager - Players - Segments - All Players - Run Task](media/tutorials/game-manager-players-segments-all-players-run-task.png)  
 
-Configure the task: set up the name **(1)**, make sure the type of task is set to "Run actions on each player in a segment" **(2)**, also make sure that the "All Players" segment is selected. Add a new action **(3)** and select the "Execute Cloud Script" type **(4)**. Select the "PopulateLeaderboard" handler **(5)**. Finally, click "Save and Run" **(6)**.
+Configure the task: set up the name **(1)**, make sure the type of task is set to "Run actions on each player in a segment" **(2)**, also make sure that the "All Players" segment is selected. Add a new action **(3)** and select the "Execute CloudScript" type **(4)**. Select the "PopulateLeaderboard" handler **(5)**. Finally, click "Save and Run" **(6)**.
 
 ![Game Manager - Configure Task](media/tutorials/game-manager-configure-task.png)  
 

@@ -19,13 +19,13 @@ When a CloudScript handler is launched from a PlayStream action, that handler ha
 The key to getting the most out of CloudScript is knowing how to work with the inputs you have available – namely, the args and context for your handler. For example, here’s the helloWorld example from the starter CloudScript loaded as revision 1 in all newly created titles (also available in our GitHub, [here](https://github.com/PlayFab/CloudScriptSamples/tree/master/BasicSample)):
 
 ```javascript
-// This is a Cloud Script function. 
+// This is a CloudScript function. 
 // "args" is set to the value of the "FunctionParameter" parameter of the ExecuteCloudScript API.
-// "context" contains additional information when the Cloud Script function is called from a PlayStream action.
+// "context" contains additional information when the CloudScript function is called from a PlayStream action.
 handlers.helloWorld = function (args, context) {
 	
     // The pre-defined "currentPlayerId" variable is initialized to the PlayFab ID of the player logged-in on the game client.
-    // Cloud Script handles authenticating the player automatically.
+    // CloudScript handles authenticating the player automatically.
     var message = "Hello " + currentPlayerId + "!";
  
     // You can use the "log" object to write out debugging statements. It has
@@ -39,7 +39,7 @@ handlers.helloWorld = function (args, context) {
     }
     log.debug("helloWorld:", { input: inputValue });
  
-    // The value you return from a Cloud Script function is passed back
+    // The value you return from a CloudScript function is passed back
     // to the game client in the ExecuteCloudScript API response, along with any log statements
     // and additional diagnostic information, such as any errors returned by API calls or external HTTP
     // requests. They are also included in the optional player_executed_cloudscript PlayStream event

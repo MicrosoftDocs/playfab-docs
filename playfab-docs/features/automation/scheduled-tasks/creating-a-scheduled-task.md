@@ -22,7 +22,7 @@ In the Game Manager, go to Servers -> CloudScript. Add a CloudScript function ca
 
 ```javascript
 handlers.adjustRareDropRate = function(args) {
-    // Tutorial demo Cloud Script
+    // Tutorial demo CloudScript
     serverAPI.SetTitleData({
         "Key": "rareDropRate",
         "Value": args.dropRate
@@ -68,7 +68,7 @@ Go ahead and fix the error we found in Step 4. Here is the correct code snippet:
 
 ```javascript
 handlers.adjustRareDropRate = function(args) {
-    // Tutorial demo Cloud Script
+    // Tutorial demo CloudScript
     server.SetTitleData({
         "Key": "rareDropRate",
         "Value": args.dropRate

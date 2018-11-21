@@ -57,9 +57,9 @@ Push messages will vary based on the development engine/platform. However, the e
 
 After configuring your title and client, you can test your configuration using the PlayFab Server API - [SendPushNotification](xref:titleid.playfabapi.com.server.accountmanagement.sendpushnotification). This API allows you to send as many push notifications as needed at no extra cost.
 
-You can use the PlayFab Cloud Script service as a quick and secure server API environment. From there, push notifications can be sent as needed.
+You can use the PlayFab CloudScript service as a quick and secure server API environment. From there, push notifications can be sent as needed.
 
-To use this method to test your configuration, upload or append the code in the following example to your title’s Cloud Script.
+To use this method to test your configuration, upload or append the code in the following example to your title’s CloudScript.
 
 ### Example
 
@@ -79,7 +79,7 @@ Now, consider the following Statistics defined for each player (see the [Accessi
 
 Once you've set up these prerequisites, you can set up a push-notification challenge system.
 
-The following client code will call the CloudScript function **ChallengePlayer**.
+The following client code will call the CloudScript **ChallengePlayer**.
 
 ```csharp
 public void ChallengeRandomClosePlayer(string currentPlayerId) {

@@ -40,7 +40,7 @@ Each game needs to report that a login occurred. For simplicity, our example onl
 The following CloudScript would need to be present in **every** game in your studio:
 
 ```javascript
-// Cloud Script/Javascript
+// CloudScript/Javascript
 
 var PUBLISHER_USED_TITLES_KEY = "playedTitleIds";
 handlers.TrackTitleUsage = function () {
@@ -70,7 +70,7 @@ Note in particular that this example demonstrates using server.[GetUserPublisher
 Once you are tracking which titles are played, you need to track and grant the rewards. This CloudScript function will check for, and grant available rewards based on having played other titles.
 
 ```javascript
-// Cloud Script/Javascript
+// CloudScript/Javascript
 
 var PUBLISHER_REDEEMED_TITLES_KEY = "redeemedTitleIds";
 var MY_CROSS_TITLE_REWARDS = { "AU": 10 };
@@ -97,7 +97,7 @@ handlers.CheckCrossTitleRewards = function () {
     // Give the cross title rewards
     var multiplier = unredeemedTitleIds.length;
     var actualRewards = {}; // MY_CROSS_TITLE_REWARDS is a global constant, so don't modify it or you'll mess up future calls
-    // Please note that the number of API calls that may be made from Cloud Script, as well as the total available processing time is limited,
+    // Please note that the number of API calls that may be made from CloudScript, as well as the total available processing time is limited,
     // and so the number of rewards should be as small as possible (only one VC, in this case)
     for (var eachKey in MY_CROSS_TITLE_REWARDS) {
         actualRewards[eachKey] = MY_CROSS_TITLE_REWARDS[eachKey] * multiplier;

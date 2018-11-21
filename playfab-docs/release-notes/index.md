@@ -345,7 +345,7 @@ Date: 2018-03-16
  * [JavaSDK](https://github.com/PlayFab/JavaSDK)
  * [LuaSdk](https://github.com/PlayFab/LuaSDK) (Including Corona and Defold)
  * [PhpSdk](https://github.com/PlayFab/PhpSdk)
- * Cloud Script
+ * CloudScript
 * **Will Support Soon:** Unreal Bp and Cpp (Sorry, delayed due to technical difficulties!)
 
 ## 180213  
@@ -411,7 +411,7 @@ Date: 2018-01-22
 * Major version number changed, this release is now 2.0
 * 1.x to 2.x [Upgrade Guide](https://github.com/PlayFab/NodeSDK/blob/master/upgrade.md)
 
-**Cloud Script Example:**
+**CloudScript Example:**
 
 * Added TypeScript definitions for the API Error exceptions
 

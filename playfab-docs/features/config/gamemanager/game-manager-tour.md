@@ -183,7 +183,7 @@ PlayFab works with many architectures and game types. Whether you are looking to
 
 ![Game Manager - Servers - CloudScript](media/tutorials/game-manager-servers-cloudscript.png)
 
-Cloud Script offers an excellent alternative when compared with the overhead of dedicated game servers.
+CloudScript offers an excellent alternative when compared with the overhead of dedicated game servers.
 
 The servers section of the Game Manager has two major roles:
 
