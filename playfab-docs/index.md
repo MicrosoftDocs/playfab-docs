@@ -382,7 +382,7 @@ featureFlags:
                         <a href="#authentication">Authentication</a>
                         <ul id="authentication" class="cardsF">
                             <li class="fullSpan">
-                                <h2>PlayFab Features</h2>
+                                <h2>PlayFab Authentication Features</h2>
                             </li>
                             <li>
                                 <div class="cardSize">
@@ -424,7 +424,7 @@ featureFlags:
                         <a href="#data">Data</a>
                         <ul id="data" class="cardsF">
                             <li class="fullSpan">
-                                <h2>PlayFab Features</h2>
+                                <h2>PlayFab Data Features</h2>
                             </li>
                             <li>
                                 <div class="cardSize">
@@ -483,7 +483,7 @@ featureFlags:
                         <a href="#config">Config</a>
                         <ul id="config" class="cardsF">
                             <li class="fullSpan">
-                                <h2>PlayFab Features</h2>
+                                <h2>PlayFab Config Features</h2>
                             </li>
                             <li>
                                 <div class="cardSize">
@@ -542,7 +542,7 @@ featureFlags:
                         <a href="#automation">Automation</a>
                         <ul id="automation" class="cardsF">
                             <li class="fullSpan">
-                                <h2>PlayFab Features</h2>
+                                <h2>PlayFab Automation Features</h2>
                             </li>
                             <li>
                                 <div class="cardSize">
@@ -618,7 +618,7 @@ featureFlags:
                         <a href="#social">Social</a>
                         <ul id="social" class="cardsF">
                             <li class="fullSpan">
-                                <h2>PlayFab Features</h2>
+                                <h2>PlayFab Social Features</h2>
                             </li>
                             <li>
                                 <div class="cardSize">
@@ -677,7 +677,7 @@ featureFlags:
                         <a href="#commerce">Commerce</a>
                         <ul id="commerce" class="cardsF">
                             <li class="fullSpan">
-                                <h2>PlayFab Features</h2>
+                                <h2>PlayFab Commerce Features</h2>
                             </li>
                             <li>
                                 <div class="cardSize">
@@ -736,7 +736,7 @@ featureFlags:
                         <a href="#multiplayer">Multiplayer</a>
                         <ul id="multiplayer" class="cardsF">
                             <li class="fullSpan">
-                                <h2>PlayFab Features</h2>
+                                <h2>PlayFab Multiplayer Features</h2>
                             </li>
                             <li>
                                 <div class="cardSize">
@@ -795,7 +795,7 @@ featureFlags:
                         <a href="#analytics">Analytics</a>
                         <ul id="analytics" class="cardsF">
                             <li class="fullSpan">
-                                <h2>PlayFab Features</h2>
+                                <h2>PlayFab Analytics Features</h2>
                             </li>
                             <li>
                                 <div class="cardSize">
@@ -871,7 +871,7 @@ featureFlags:
                         <a href="#engagement">Engagement</a>
                         <ul id="engagement" class="cardsF">
                             <li class="fullSpan">
-                                <h2>PlayFab Features</h2>
+                                <h2>PlayFab Engagement Features</h2>
                             </li>
                             <li>
                                 <div class="cardSize">
