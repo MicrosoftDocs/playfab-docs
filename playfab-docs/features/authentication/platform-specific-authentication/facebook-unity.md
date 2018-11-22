@@ -208,8 +208,8 @@ Before launching the application on Android, you are required to perform additio
 
 ![Set Android package ID](media/tutorials/facebook-unity/set-android-package-id.png)  
 
->[!TIP]
->**Optional step**:  Install [Open SSL](https://wiki.openssl.org/index.php/Binaries) and add it to the PATH environment variable. If it is missing, Unity will produce a harmless error during build. This error does not stop the build and does not effect the execution.
+> [!TIP]
+> **Optional step**:  Install [Open SSL](https://wiki.openssl.org/index.php/Binaries) and add it to the PATH environment variable. If it is missing, Unity will produce a harmless error during build. This error does not stop the build and does not effect the execution.
 
 Next, in your **Facebook Application** Console:
 

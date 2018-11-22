@@ -368,10 +368,10 @@ public void GetPlayerStatistics() {
 }
 ```
 
-Meanwhile, the Update call takes an optional version to allow the title to control which version is being updated, for cases where the version may have incremented during gameplay. 
+Meanwhile, the Update call takes an optional version to allow the title to control which version is being updated, for cases where the version may have incremented during gameplay.
 
->[!EXAMPLE]
->If in the example shown the title were to write to the previous version while it is still possible, it would be writing to version 2, like so:
+> [!EXAMPLE]
+> If in the example shown the title were to write to the previous version while it is still possible, it would be writing to version 2, like so:
 
 #### Server Request
 

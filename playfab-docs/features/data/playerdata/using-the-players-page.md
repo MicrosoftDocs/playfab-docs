@@ -27,8 +27,9 @@ On this page, You can inspect the list of registered players as a table. The tab
 ## Search Techniques
 
 The Search query field consumes two types of queries:
+
 1. **Simplistic**
-1. **Complex**
+2. **Complex**
 
 ### Simplistic queries
 
@@ -39,14 +40,14 @@ A **Simplistic query** accepts 1 or more tokens separated by a space. It searche
 For example, in the preceding screenshot we chose 2 users:
 
 1. **Lee**
-1. **Vicky**
+2. **Vicky**
 
 **Display Names** and **IDs** are among the searchable fields, so based only on the information from the screenshot, we have 4 tokens at our disposal:
 
 1. **Lee**
-1. **Vicky**
-1. **3BB0E45D6CB3304A**
-1. **962B724F659A776A**. 
+2. **Vicky**
+3. **3BB0E45D6CB3304A**
+4. **962B724F659A776A**. 
 
 > [!NOTE] 
 > Remember - you can use any [searchable player field](https://api.playfab.com/playstream/profile/PlayerProfile) as a token.
@@ -57,14 +58,14 @@ Now let's test a few querying techniques.
 
 1. **Lee** is a value of the **DisplayName** field for one of the players (**Lee**). The search query results in one matching entry.
 
-1. No player has **Vic** as the value of any field.  The search query results in no entries.
-1. **3BB0E45D6CB3304A** is the value of the **ID** field for one of the players (**Vicky**). The search query results in one matching entry.
-1. **962B724F659A776A** is the value of the **ID** field for one of the players (**Lee**). The search query results in one matching entry.
-1. This query involves 2 tokens: **Lee** and **Vicky**. These correspond to the **DisplayName** fields for some of the players (**Lee** and **Vicky**). The search query results in 2 entries.
-1. This query involves 2 tokens: **3BB0E45D6CB3304A** and **Lee**. **Vicky** has the **ID** field set to **3BB0E45D6CB3304A**. **Lee** has the **DisplayName** field set to **Lee**. The search query results in 2 entries.
-1. The wildcard expression **Vic*** will look for all players with fields set to something starting with **Vic**. The search query results in 3 values.
+2. No player has **Vic** as the value of any field.  The search query results in no entries.
+3. **3BB0E45D6CB3304A** is the value of the **ID** field for one of the players (**Vicky**). The search query results in one matching entry.
+4. **962B724F659A776A** is the value of the **ID** field for one of the players (**Lee**). The search query results in one matching entry.
+5. This query involves 2 tokens: **Lee** and **Vicky**. These correspond to the **DisplayName** fields for some of the players (**Lee** and **Vicky**). The search query results in 2 entries.
+6. This query involves 2 tokens: **3BB0E45D6CB3304A** and **Lee**. **Vicky** has the **ID** field set to **3BB0E45D6CB3304A**. **Lee** has the **DisplayName** field set to **Lee**. The search query results in 2 entries.
+7. The wildcard expression **Vic*** will look for all players with fields set to something starting with **Vic**. The search query results in 3 values.
 
->[!NOTE]
+> [!NOTE]
 > This is not the best example, because all three of the located fields are display names. However, if you had a player with an **ID** starting with **Vic**, it would also be part of the query results.
 
 8. The combined strict token **Lee** and wildcard token **Vick*** results in 3 players. One corresponds to **Lee** and 2 others have display names starting with **Vick**.
@@ -85,7 +86,6 @@ Let's learn by example.
 
 1. **displayName:Lee** - Looks for players with the field **DisplayName** set (strictly) to **Lee**. The search query results in 1 entry.
 
-1. **displayName:(NOT Lee)** - Looks for players with the field **DisplayName** set to anything but **Lee**. The search query results in all entries except the player **Lee**.
-1. **displayName:(Lee OR Vick** *) - Looks for players with the field **DisplayName** set to either **Lee** or something that starts with **Vick**. The search query results in 3 entries.
-1. **playerId:3BB0E45D6CB3304A** or **displayName:Lee** * - Looks for players with the field **DisplayName** set to **Lee** or with the field **PlayerId** set to **3BB0E45D6CB3304A**. The search query results in 2 matching entries.
-
+2. **displayName:(NOT Lee)** - Looks for players with the field **DisplayName** set to anything but **Lee**. The search query results in all entries except the player **Lee**.
+3. **displayName:(Lee OR Vick** *) - Looks for players with the field **DisplayName** set to either **Lee** or something that starts with **Vick**. The search query results in 3 entries.
+4. **playerId:3BB0E45D6CB3304A** or **displayName:Lee** * - Looks for players with the field **DisplayName** set to **Lee** or with the field **PlayerId** set to **3BB0E45D6CB3304A**. The search query results in 2 matching entries.
