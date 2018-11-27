@@ -4,7 +4,7 @@
   - name: Quickstart
     href: reports-quickstart.md
   - name: Tutorials
-    href: tutorials.md
+    href: reports-tutorials.md
     items:
     - name: Daily A/B Test KPI Report
       href: daily-ab-test-kpi-report.md
