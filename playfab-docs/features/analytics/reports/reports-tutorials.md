@@ -14,7 +14,6 @@ ms.localizationpriority: medium
 
 The Reports tutorials show you how to create and run reports.
 
-- [Analytics Reports](analytics-reports.md)
 - [Daily A/B Test KPI Report](daily-ab-test-kpi-report.md)
 - [Daily Abuse Reports History Report](daily-abuse-reports-history-report.md)
 - [Daily and Monthly CDN Usage Report](daily-and-monthly-cdn-usage-report.md)

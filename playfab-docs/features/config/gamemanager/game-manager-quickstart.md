@@ -1,5 +1,5 @@
 ---
-title: Game Manager Tour Quickstart
+title: Game Manager Quickstart
 author: v-thopra
 description: Provides an overview of the features in the PlayFab Game Manager.
 ms.author: v-thopra
@@ -10,7 +10,7 @@ keywords: playfab, config, game manager
 ms.localizationpriority: medium
 ---
 
-# Game Manager Tour Quickstart
+# Game Manager Quickstart
 
 ## Let's begin with the basics: Your Developer Account
 

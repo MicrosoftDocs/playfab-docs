@@ -1,4 +1,4 @@
-- name: News
+- name: Title News
   href: index.md
   items:
   - name: Quickstart

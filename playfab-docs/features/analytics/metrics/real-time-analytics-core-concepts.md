@@ -34,6 +34,5 @@ The core of any analytics system is the **event flow**, a big list of events sor
 ## Guides
 
 - [Event History](../../automation/playstream-events/event-history.md): Game Manager page for inspecting the event flow inside your title.
-- [Analytics Reports](../../analytics/reports/analytics-reports.md): Game Manager page for extracting and inspecting the event flow in a strict report format.
 - [Webhooks](../../analytics/metrics/webhooks.md): Game Manager page for automatically triggering non-PlayFab servers on specific game events.
 - [S3 Event Archiving](../../analytics/metrics/s3-event-archiving.md): Game Manager page for accessing recent PlayStream events.

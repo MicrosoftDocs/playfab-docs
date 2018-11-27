@@ -2,12 +2,10 @@
   href: index.md
   items:
   - name: Quickstart
-    href: quickstart.md
+    href: reports-quickstart.md
   - name: Tutorials
     href: tutorials.md
     items:
-    - name: Analytics Reports
-      href: analytics-reports.md
     - name: Daily A/B Test KPI Report
       href: daily-ab-test-kpi-report.md
     - name: Daily Abuse Reports History Report

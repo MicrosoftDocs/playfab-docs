@@ -1,5 +1,5 @@
 ---
-title: CDN
+title: Content Delivery Network Quickstart
 author: v-thopra
 description: Describes the PlayFab Content Delivery Network in detail.
 ms.author: v-thopra
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Content Delivery Network Quickstart
 
-CDN stands for **C**ontent **D**elivery **N**etwork - an infrastructure to deliver assets (images, audio, binary content, etc) to the end user that focuses on speed and availability.
+**C**ontent **D**elivery **N**etwork (CDN) is an infrastructure to deliver assets (images, audio, binary content, etc) to the end user that focuses on speed and availability.
 
 CDN costs are independent from your tier (Essentials, Professional, etc) and require a payment account to be set up with PlayFab. This can be done by entering your credit card information in the Admin->Billing tab of your title. CDN costs are based on your usage - see the Content->File Management tab for more information on this. Please, contact our [developer forum](https://community.playfab.com/) with questions.
 

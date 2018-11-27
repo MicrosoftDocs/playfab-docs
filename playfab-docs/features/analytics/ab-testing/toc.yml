@@ -2,7 +2,7 @@
   href: index.md
   items:
   - name: Quickstart
-    href: quickstart.md
+    href: creating-ab-tests-quickstart.md
   - name: Tutorials
     href: tutorials.md
     items:
