@@ -268,7 +268,7 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>Config</h3>
-                                                <p><a href='/gaming/playfab/features/config/gamemanager/game-manager-quickstart'>Game Manager</a></p><p><a href='/gaming/playfab/features/config/titledata/quickstart'>Title Data</a></p><p><a href='/gaming/playfab/features/config/dev-test-live/quickstart'>Dev-Test-Live</a></p>
+                                                <p><a href='/gaming/playfab/features/config/gamemanager/game-manager-quickstart'>Game Manager</a></p><p><a href='/gaming/playfab/features/config/titledata/using-title-data-quickstart'>Title Data</a></p><p><a href='/gaming/playfab/features/config/dev-test-live/quickstart'>Dev-Test-Live</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -513,7 +513,7 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>Title Data</h3>
-                                                <p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/config/titledata/'>Overview</a></p><p><a href='/gaming/playfab/features/config/titledata/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/config/titledata/tutorials'>Tutorials</a></p>
+                                                <p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/config/titledata/'>Overview</a></p><p><a href='/gaming/playfab/features/config/titledata/using-title-data-quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/config/titledata/using-title-data-tutorials'>Tutorials</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -884,7 +884,7 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>Push Notifications</h3>
-                                                <p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/engagement/push-notifications/'>Overview</a></p><p><a href='/gaming/playfab/features/engagement/push-notifications/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/engagement/push-notifications/tutorials'>Tutorials</a></p>
+                                                <p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/engagement/push-notifications/'>Overview</a></p><p><a href='/gaming/playfab/features/engagement/push-notifications/push-notifications-quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/engagement/push-notifications/push-notifications-tutorials'>Tutorials</a></p>
                                             </div>
                                         </div>
                                     </div>

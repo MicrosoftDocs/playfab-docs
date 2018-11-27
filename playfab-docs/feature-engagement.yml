@@ -20,7 +20,7 @@ sections:
     - image:
         src: "/gaming/playfab/features/media/feature_push_notifications.svg"
       title: "Push Notifications"
-      html: "<p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/engagement/push-notifications/'>Overview</a></p><p><a href='/gaming/playfab/features/engagement/push-notifications/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/engagement/push-notifications/tutorials'>Tutorials</a></p>"
+      html: "<p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/engagement/push-notifications/'>Overview</a></p><p><a href='/gaming/playfab/features/engagement/push-notifications/push-notifications-quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/engagement/push-notifications/push-notifications-tutorials'>Tutorials</a></p>"
     - image:
         src: "/gaming/playfab/features/media/feature_emails.svg"
       title: "Emails"

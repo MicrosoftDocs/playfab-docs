@@ -28,7 +28,7 @@ sections:
     - image:
         src: "/gaming/playfab/media/quickstart_config.svg"
       title: "Config"
-      html: "<p><a href='/gaming/playfab/features/config/gamemanager/game-manager-quickstart'>Game Manager</a></p><p><a href='/gaming/playfab/features/config/titledata/quickstart'>Title Data</a></p><p><a href='/gaming/playfab/features/config/dev-test-live/quickstart'>Dev-Test-Live</a></p>"
+      html: "<p><a href='/gaming/playfab/features/config/gamemanager/game-manager-quickstart'>Game Manager</a></p><p><a href='/gaming/playfab/features/config/titledata/using-title-data-quickstart'>Title Data</a></p><p><a href='/gaming/playfab/features/config/dev-test-live/quickstart'>Dev-Test-Live</a></p>"
     - image:
         src: "/gaming/playfab/media/quickstart_automation.svg"
       title: "Automation"
@@ -52,4 +52,4 @@ sections:
     - image:
         src: "/gaming/playfab/media/quickstart_engagement.svg"
       title: "Engagement"
-      html: "<p><a href='/gaming/playfab/features/engagement/push-notifications/quickstart'>Push Notifications</a></p><p><a href='/gaming/playfab/features/engagement/emails/quickstart'>Emails</a></p><p><a href='/gaming/playfab/features/engagement/news/title-news-quickstart'>News</a></p>"
+      html: "<p><a href='/gaming/playfab/features/engagement/push-notifications/push-notifications-quickstart'>Push Notifications</a></p><p><a href='/gaming/playfab/features/engagement/emails/quickstart'>Emails</a></p><p><a href='/gaming/playfab/features/engagement/news/title-news-quickstart'>News</a></p>"
