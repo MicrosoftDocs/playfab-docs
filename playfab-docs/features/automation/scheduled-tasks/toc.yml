@@ -2,9 +2,7 @@
   href: index.md
   items:
   - name: Quickstart
-    href: quickstart.md
+    href: creating-a-scheduled-task-quickstart.md
   - name: Tutorials
-    href: tutorials.md
-    items:
-    - name: Creating a Scheduled Task
-      href: creating-a-scheduled-task.md
+    href: creating-a-scheduled-task-tutorials.md
+

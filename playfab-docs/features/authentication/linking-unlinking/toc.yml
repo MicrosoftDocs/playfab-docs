@@ -2,9 +2,7 @@
   href: index.md
   items:
   - name: Quickstart
-    href: quickstart.md
+    href: account-linking-quickstart.md
   - name: Tutorials
-    href: tutorials.md
-    items:
-    - name: Account Linking
-      href: account-linking.md
+    href: account-linking-tutorials.md
+

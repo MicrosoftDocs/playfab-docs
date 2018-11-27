@@ -80,7 +80,7 @@ A PlayFab account contains critical, identifying, player data. As an administrat
 
 ![Game Manager - Player - PlayFab account](media/tutorials/game-manager-player-playfab-account.png)  
 
-Additionally, you can manage linking. Read more about linking in our tutorial on [Account linking](../../authentication/linking-unlinking/account-linking.md).
+Additionally, you can manage linking. Read more about linking in our Quickstart on [Account linking](../../authentication/linking-unlinking/account-linking-quickstart.md).
 
 ![Game Manager - Player - Accounts - Link New Account](media/tutorials/game-manager-player-link-new-account.png)  
 

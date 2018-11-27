@@ -20,7 +20,7 @@ sections:
     - image:
         src: "/gaming/playfab/media/quickstart_authentication.svg"
       title: "Authentication"
-      html: "<p><a href='/gaming/playfab/features/authentication/linking-unlinking/quickstart'>Linking &amp; Unlinking</a></p><p><a href='/gaming/playfab/features/authentication/platform-specific-authentication/quickstart'>Platform-Specific Authentication</a></p>"
+      html: "<p><a href='/gaming/playfab/features/authentication/linking-unlinking/account-linking-quickstart'>Linking &amp; Unlinking</a></p><p><a href='/gaming/playfab/features/authentication/platform-specific-authentication/quickstart'>Platform-Specific Authentication</a></p>"
     - image:
         src: "/gaming/playfab/media/quickstart_data.svg"
       title: "Data"
@@ -32,7 +32,7 @@ sections:
     - image:
         src: "/gaming/playfab/media/quickstart_automation.svg"
       title: "Automation"
-      html: "<p><a href='/gaming/playfab/features/automation/cloudscript/cloudscript-quickstart'>CloudScript</a></p><p><a href='/gaming/playfab/features/automation/playstream-events/playstream-quickstart'>PlayStream</a></p><p><a href='/gaming/playfab/features/automation/actions-rules/quickstart'>Actions &amp; Rules</a></p><p><a href='/gaming/playfab/features/automation/scheduled-tasks/quickstart'>Scheduled Tasks</a></p>"
+      html: "<p><a href='/gaming/playfab/features/automation/cloudscript/cloudscript-quickstart'>CloudScript</a></p><p><a href='/gaming/playfab/features/automation/playstream-events/playstream-quickstart'>PlayStream</a></p><p><a href='/gaming/playfab/features/automation/actions-rules/quickstart'>Actions &amp; Rules</a></p><p><a href='/gaming/playfab/features/automation/scheduled-tasks/creating-a-scheduled-task-quickstart'>Scheduled Tasks</a></p>"
     - image:
         src: "/gaming/playfab/media/quickstart_social.svg"
       title: "Social"
