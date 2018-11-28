@@ -137,5 +137,5 @@ public void SetTitleInternalData() {
 ## See Also
 
 - [Using Publisher Data](../../config/titledata/using-publisher-data.md)
-- [Using Player Data](../../data/playerdata/player-data-quickstart.md)
+- [Player Data Quickstart](../../data/playerdata/player-data-quickstart.md)
 - [CloudScript Quickstart](../../automation/cloudscript/cloudscript-quickstart.md)

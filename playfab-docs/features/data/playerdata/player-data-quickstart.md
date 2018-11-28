@@ -244,6 +244,6 @@ Since this example updates internal player data, you will need to call [GetUserI
 
 ### See Also
 
-[Using Title Data](../../config/titledata/using-title-data-quickstart.md)
+[Title Data Quickstart](../../config/titledata/title-data-quickstart.md)
 [Using Publisher Data](../../config/titledata/using-publisher-data.md)
 [CloudScript Quickstart](../../automation/cloudscript/cloudscript-quickstart.md)

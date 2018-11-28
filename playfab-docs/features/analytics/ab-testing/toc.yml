@@ -4,7 +4,8 @@
   - name: Quickstart
     href: ab-testing-quickstart.md
   - name: Tutorials
-    href: creating-ab-tests-tutorials.md
+    href: ab-testing-tutorials.md
+    items:
     - name: A/B Testing with Stores and test buckets
       href: ab-testing-with-stores-and-test-buckets.md
     - name: A/B Testing with Title data

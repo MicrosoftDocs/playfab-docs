@@ -2,9 +2,9 @@
   href: index.md
   items:
   - name: Quickstart
-    href: quickstart.md
+    href: player-data-quickstart.md
   - name: Tutorials
-    href: tutorials.md
+    href: player-data-tutorials.md
     items:
     - name: Using player statistics
       href: using-player-statistics.md

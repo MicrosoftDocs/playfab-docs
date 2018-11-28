@@ -825,7 +825,7 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>Reports</h3>
-                                                <p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/analytics/reports/'>Overview</a></p><p><a href='/gaming/playfab/features/analytics/reports-quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/analytics/reports-tutorials'>Tutorials</a></p>
+                                                <p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/analytics/reports/'>Overview</a></p><p><a href='/gaming/playfab/features/analytics/reports/reports-quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/analytics/reports/reports-tutorials'>Tutorials</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -842,7 +842,7 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>A/B Testing</h3>
-                                                <p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/analytics/ab-testing/'>Overview</a></p><p><a href='/gaming/playfab/features/analytics/ab-testing-quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/analytics/ab-testing-tutorials'>Tutorials</a></p>
+                                                <p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/analytics/ab-testing/'>Overview</a></p><p><a href='/gaming/playfab/features/analytics/ab-testing/ab-testing-quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/analytics/ab-testing/ab-testing-tutorials'>Tutorials</a></p>
                                             </div>
                                         </div>
                                     </div>
