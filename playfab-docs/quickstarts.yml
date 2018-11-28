@@ -48,7 +48,7 @@ sections:
     - image:
         src: "/gaming/playfab/media/quickstart_analytics.svg"
       title: "Analytics"
-      html: "<p><a href='/gaming/playfab/features/analytics/metrics/quickstart'>Metrics</a></p><p><a href='/gaming/playfab/features/analytics/reports-quickstart'>Reports</a></p><p><a href='/gaming/playfab/features/analytics/ab-testing-quickstart'>A/B Testing</a></p><p><a href='/gaming/playfab/features/analytics/segmentation/quickstart'>Segmentation</a></p>"
+      html: "<p><a href='/gaming/playfab/features/analytics/metrics/quickstart'>Metrics</a></p><p><a href='/gaming/playfab/features/analytics/reports/reports-quickstart'>Reports</a></p><p><a href='/gaming/playfab/features/analytics/ab-testing/ab-testing-quickstart'>A/B Testing</a></p><p><a href='/gaming/playfab/features/analytics/segmentation/quickstart'>Segmentation</a></p>"
     - image:
         src: "/gaming/playfab/media/quickstart_engagement.svg"
       title: "Engagement"
