@@ -24,7 +24,7 @@ sections:
     - image:
         src: "/gaming/playfab/features/media/feature_playerdata.svg"
       title: "Player Data"
-      html: "<p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/data/playerdata/'>Overview</a></p><p><a href='/gaming/playfab/features/data/playerdata/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/data/playerdata/tutorials'>Tutorials</a></p>"
+      html: "<p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/data/playerdata/'>Overview</a></p><p><a href='/gaming/playfab/features/data/playerdata/player-data-quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/data/playerdata/player-data-tutorials'>Tutorials</a></p>"
     - image:
         src: "/gaming/playfab/features/media/feature_content_delivery_network.svg"
       title: "Content Delivery Network"

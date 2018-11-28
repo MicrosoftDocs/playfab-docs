@@ -13,5 +13,3 @@ ms.localizationpriority: medium
 # Content Delivery Network Tutorial
 
 The following tutorial shows you how to set up your Content Delivery Network.
-
-- [Content Delivery Network (CDN)](cdn-quickstart.md)

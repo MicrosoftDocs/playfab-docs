@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Player Data Tutorials
 
-These tutorials describe how to create and use player statistics, profile information, and other player data.
+These tutorials describe how to create and use player statistics, profile information, and other types of player data.
 
 - [Using player statistics](using-player-statistics.md)
 - [Getting player profiles](getting-player-profiles.md)
@@ -23,6 +23,5 @@ These tutorials describe how to create and use player statistics, profile inform
 - [Player Ban system](player-bans.md)
 - [Player Segments](player-segments.md)
 - [Player Segment configuration ](player-segment-configuration.md)
-- [Using Player data](using-player-data.md)
 - [PlayFab GDPR](playfab-gdpr-deleting-and-exporting-player-data.md)
 - [Using Player Publisher Data](using-player-publisher-data.md)

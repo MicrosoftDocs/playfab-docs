@@ -13,5 +13,3 @@ ms.localizationpriority: medium
 # Scheduled Tasks Tutorials
 
 This tutorial shows you how to schedule a task.
-
-(- [Creating a Scheduled Task](scheduled-tasks-quickstart.md))

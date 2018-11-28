@@ -37,7 +37,7 @@ With PlayFab, custom data is stored in these places:
 - **Catalog data**. Every item in the catalog can have custom properties associated with it, such as rate-of-fire for a weapon, or mana points for a collectible card. For more, see [Catalogs](../../commerce/items/catalogs.md).
 - **Inventory data**. Every item in a player’s inventory can have custom properties associated with it, such as item hit-points, or config data for procedurally generated items.
 - **Group data**. Data shared among a specific group of players, such as a guild or lobby. Examples include a guild name or message of the day. Players can be added and removed from a shared group; all members in the group can read or write shared group data.
-- **Player data**. Data stored per player account, like Parse “Keyed User Data”; see our tutorial [Using Player Data](../../data/playerdata/using-player-data.md). 
+- **Player data**. Data stored per player account, like Parse “Keyed User Data”; see our Quickstart [Player Data](../../data/playerdata/player-data-quickstart.md). 
 Data can be:
   - **Private** (accessed only by the players), **Public** (accessed by other players)
   - Scoped at either the **publisher-level** (shared across games by the same publisher), **game-level**, or **character-level** (tied to one of several characters the player controls in the game).
