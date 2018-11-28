@@ -53,7 +53,7 @@
       - name: CloudScript
         tocHref: /gaming/playfab/features/automation/cloudscript/
         topicHref: /gaming/playfab/features/automation/cloudscript/
-      - name: PlayStream Events
+      - name: PlayStream
         tocHref: /gaming/playfab/features/automation/playstream-events/
         topicHref: /gaming/playfab/features/automation/playstream-events/
       - name: Actions & Rules

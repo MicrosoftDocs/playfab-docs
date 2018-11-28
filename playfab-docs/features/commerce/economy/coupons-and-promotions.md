@@ -76,7 +76,7 @@ Multiple items work the same way. Create a bundle, with multiple items, or even 
 
 - Physical rewards at conventions
   - Print out your list of coupon codes, and hand them out as swag at conventions
-- Out-of-Game communication such as Forums, [Push Notifications](../../engagement/push-notifications/push-notification-basics.md) & Email
+- Out-of-Game communication such as Forums, [Push Notifications](../../engagement/push-notifications/push-notifications-quickstart.md) & Email
   - Send your players coupon codes directly as part of re-acquisition campaigns or other community outreach
 - Tournaments
   - Send coupons to the top ranked players when using [Resettable Leaderboards](../../social/tournaments-leaderboards/using-resettable-statistics-and-leaderboards.md).

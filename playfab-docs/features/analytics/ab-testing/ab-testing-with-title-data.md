@@ -17,8 +17,8 @@ This tutorial illustrates how to complement PlayFab's built-in features with som
 **Requirements:**
 
 - [Writing Custom CloudScript](../../automation/cloudscript/writing-custom-cloudscript.md), and [CloudScript Quickstart](../../automation/cloudscript/cloudscript-quickstart.md)
-- [Title Data](../../config/titledata/using-title-data.md)
-- [A/B Testing](../../analytics/ab-testing/creating-ab-tests.md)
+- [Title Data](../../config/titledata/title-data-quickstart.md)
+- [A/B Testing Quickstart](../../analytics/ab-testing/ab-testing-quickstart.md)
 
 **Optional Requirements:**
 
@@ -26,9 +26,9 @@ This tutorial illustrates how to complement PlayFab's built-in features with som
 
 ## General Idea and Implementation
 
-We already have a built-in feature of [defining A/B segments for player](../../analytics/ab-testing/creating-ab-tests.md). Let's reuse those segments to return Title Data based on which bucket our player belongs to.
+We already have a built-in feature of defining A/B segments for a player (described in the [A/B Testing Quickstart](../../analytics/ab-testing/ab-testing-quickstart.md)). Let's reuse those segments to return Title Data based on which bucket our player belongs to.
 
-First, we will need an A/B test. Please, follow the [Creating A/B Tests tutorial](../../analytics/ab-testing/creating-ab-tests.md) to create an A/B Test. Once the test is created, you will see the IDs of each of the individual buckets:
+First, we will need an A/B test. Please, follow the [A/B Testing Quickstart](../../analytics/ab-testing/ab-testing-quickstart.md) to create an A/B Test. Once the test is created, you will see the IDs of each of the individual buckets:
 
 ![Game Manager - A/B Test - Buckets](media/tutorials/game-manager-ab-test-buckets.png)  
 

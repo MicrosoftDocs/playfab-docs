@@ -181,7 +181,7 @@ Normally your player would reach 550 XP as the result of [UpdatePlayerStatistics
 
 Pretty neat, huh?
 
-Once you've set up Push Notifications (see [Push Notification Basics](../../engagement/push-notifications/push-notification-basics.md)) you can send players personalized messages when they enter and exit segments. Executing CloudScript is another great way to interact with your players and test new rewards.
+Once you've set up Push Notifications (see [Push Notifications Quickstart](../../engagement/push-notifications/push-notifications-quickstart.md)) you can send players personalized messages when they enter and exit segments. Executing CloudScript is another great way to interact with your players and test new rewards.
 
 ## Step 4: Override a store
 

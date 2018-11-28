@@ -1,5 +1,5 @@
 ---
-title: Creating A/B Tests Quickstart
+title: A/B Testing Quickstart
 author: v-thopra
 description: Demonstrates how to create A/B tests with player buckets.
 ms.author: v-thopra
@@ -10,7 +10,7 @@ keywords: playfab, analytics, a/b testing
 ms.localizationpriority: medium
 ---
 
-# Creating A/B Tests Quickstart
+# A/B Testing Quickstart
 
 This Quickstart explains how to create A/B tests with player buckets. A/B tests allow you to use the buckets as [player segments](../segmentation/player-segmentation.md). Unlike [player segments](../segmentation/player-segmentation.md), however, A/B buckets distribute players randomly.
 

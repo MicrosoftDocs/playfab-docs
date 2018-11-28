@@ -28,11 +28,11 @@ sections:
     - image:
         src: "/gaming/playfab/media/quickstart_config.svg"
       title: "Config"
-      html: "<p><a href='/gaming/playfab/features/config/gamemanager/game-manager-quickstart'>Game Manager</a></p><p><a href='/gaming/playfab/features/config/titledata/using-title-data-quickstart'>Title Data</a></p><p><a href='/gaming/playfab/features/config/dev-test-live/quickstart'>Dev-Test-Live</a></p>"
+      html: "<p><a href='/gaming/playfab/features/config/gamemanager/game-manager-quickstart'>Game Manager</a></p><p><a href='/gaming/playfab/features/config/titledata/title-data-quickstart'>Title Data</a></p><p><a href='/gaming/playfab/features/config/dev-test-live/quickstart'>Dev-Test-Live</a></p>"
     - image:
         src: "/gaming/playfab/media/quickstart_automation.svg"
       title: "Automation"
-      html: "<p><a href='/gaming/playfab/features/automation/cloudscript/cloudscript-quickstart'>CloudScript</a></p><p><a href='/gaming/playfab/features/automation/playstream-events/playstream-quickstart'>PlayStream</a></p><p><a href='/gaming/playfab/features/automation/actions-rules/quickstart'>Actions &amp; Rules</a></p><p><a href='/gaming/playfab/features/automation/scheduled-tasks/creating-a-scheduled-task-quickstart'>Scheduled Tasks</a></p>"
+      html: "<p><a href='/gaming/playfab/features/automation/cloudscript/cloudscript-quickstart'>CloudScript</a></p><p><a href='/gaming/playfab/features/automation/playstream-events/playstream-quickstart'>PlayStream</a></p><p><a href='/gaming/playfab/features/automation/actions-rules/quickstart'>Actions &amp; Rules</a></p><p><a href='/gaming/playfab/features/automation/scheduled-tasks/scheduled-tasks-quickstart'>Scheduled Tasks</a></p>"
     - image:
         src: "/gaming/playfab/media/quickstart_social.svg"
       title: "Social"

@@ -26,7 +26,7 @@ Here are some resources to get you started with the Event Viewer:
 
 - [Real-Time Analytics: Core Concepts](https://review.docs.microsoft.com/en-us/gaming/playfab/features/analytics/metrics/real-time-analytics-core-concepts) - Gives you precise insights into what is going on inside your game.
 - [Constructing Event History Searches](https://review.docs.microsoft.com/en-us/gaming/playfab/features/analytics/metrics/constructing-an-event-history-search) - Illustrates how to construct an Event History Search, the components of a search, and how to use Elastic Search syntax in your queries.
-- [Built in Analytic Reports](https://review.docs.microsoft.com/en-us/gaming/playfab/features/analytics/reports/analytics-reports) - Gets reports on daily, monthly and rolling overviews. Track retention and conversion reports. View reports on your top spenders and purchases.
+- [Built in Analytic Reports](../features/analytics/reports/reports-quickstart.md) - Gets reports on daily, monthly and rolling overviews. Track retention and conversion reports. View reports on your top spenders and purchases.
 
 <img alt="Analytic Reporting" src="images/analytics-reports.png" width="500" />
 

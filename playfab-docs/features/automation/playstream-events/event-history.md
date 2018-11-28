@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 This tutorial shows you how to access and utilize the Event History in PlayFab.
 
 > [!IMPORTANT]
-> Before using this tutorial, make sure that you already have some recent events posted to your title. Otherwise, the event flow will render empty. Most PlayFab APIs will post PlayStream events, or you can post your own custom events. For an overview of automatic and custom events, see the [PlayStream Events Quickstart](playstream-quickstart.md).
+> Before using this tutorial, make sure that you already have some recent events posted to your title. Otherwise, the event flow will render empty. Most PlayFab APIs will post PlayStream events, or you can post your own custom events. For an overview of automatic and custom events, see the [PlayStream Quickstart](playstream-quickstart.md).
 
 ## Access Event History
 

@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # A/B Testing with Stores and Test Buckets
 
-In our [Stores and Sales](../../commerce/stores/stores-and-sales.md) tutorial, we demonstrate how to set up a store and make a few items available to a player at special or alternate prices. In our [Creating A/B Tests](creating-ab-tests.md) tutorial, we demonstrate how to create A/B tests and form player buckets for random, percentage-based user distribution.
+In our [Stores and Sales](../../commerce/stores/stores-and-sales.md) tutorial, we demonstrate how to set up a store and make a few items available to a player at special or alternate prices. In our [A/B Testing Quickstart](ab-testing-quickstart.md), we demonstrate how to create A/B tests and form player buckets for random, percentage-based user distribution.
 
 This tutorial lets you combine these features, and produce several versions of the store available to different A/B testing groups (buckets).
 

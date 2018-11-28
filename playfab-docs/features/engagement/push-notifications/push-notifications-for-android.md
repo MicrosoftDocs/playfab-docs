@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 ## Prerequisites
 
-- [Push Notification basics](push-notification-basics.md)
+- [Push Notification Quickstart](push-notifications-quickstart.md)
 - [Unity3D Quickstart](../../../sdks/unity3d/quickstart.md)
 - [Optional] [Unity Editor Extensions](https://blog.playfab.com/blog/new-unity-editor-extensions-beta)
 - [Optional] [Executing the PlayFab API via Postman](../../config/dev-test-live/executing-the-playfab-api-via-postman.md)

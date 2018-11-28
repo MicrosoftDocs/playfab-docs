@@ -268,7 +268,7 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>Config</h3>
-                                                <p><a href='/gaming/playfab/features/config/gamemanager/game-manager-quickstart'>Game Manager</a></p><p><a href='/gaming/playfab/features/config/titledata/using-title-data-quickstart'>Title Data</a></p><p><a href='/gaming/playfab/features/config/dev-test-live/quickstart'>Dev-Test-Live</a></p>
+                                                <p><a href='/gaming/playfab/features/config/gamemanager/game-manager-quickstart'>Game Manager</a></p><p><a href='/gaming/playfab/features/config/titledata/title-data-quickstart'>Title Data</a></p><p><a href='/gaming/playfab/features/config/dev-test-live/quickstart'>Dev-Test-Live</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -285,7 +285,7 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>Automation</h3>
-                                                <p><a href='/gaming/playfab/features/automation/cloudscript/cloudscript-quickstart'>CloudScript</a></p><p><a href='/gaming/playfab/features/automation/playstream-events/playstream-quickstart'>PlayStream</a></p><p><a href='/gaming/playfab/features/automation/actions-rules/quickstart'>Actions &amp; Rules</a></p><p><a href='/gaming/playfab/features/automation/scheduled-tasks/creating-a-scheduled-task-quickstart'>Scheduled Tasks</a></p>
+                                                <p><a href='/gaming/playfab/features/automation/cloudscript/cloudscript-quickstart'>CloudScript</a></p><p><a href='/gaming/playfab/features/automation/playstream-events/playstream-quickstart'>PlayStream</a></p><p><a href='/gaming/playfab/features/automation/actions-rules/quickstart'>Actions &amp; Rules</a></p><p><a href='/gaming/playfab/features/automation/scheduled-tasks/scheduled-tasks-quickstart'>Scheduled Tasks</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -370,7 +370,7 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>Engagement</h3>
-                                                <p><a href='/gaming/playfab/features/engagement/push-notifications/quickstart'>Push Notifications</a></p><p><a href='/gaming/playfab/features/engagement/emails/quickstart'>Emails</a></p><p><a href='/gaming/playfab/features/engagement/news/title-news-quickstart'>News</a></p>
+                                                <p><a href='/gaming/playfab/features/engagement/push-notifications-quickstart'>Push Notifications</a></p><p><a href='/gaming/playfab/features/engagement/emails/quickstart'>Emails</a></p><p><a href='/gaming/playfab/features/engagement/news/title-news-quickstart'>News</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -395,7 +395,7 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>Linking &amp; Unlinking</h3>
-                                                <p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/authentication/linking-unlinking/'>Overview</a></p><p><a href='/gaming/playfab/features/authentication/linking-unlinking/account-linking-quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/authentication/linking-unlinking/tutorials'>Tutorials</a></p>
+                                                <p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/authentication/linking-unlinking/'>Overview</a></p><p><a href='/gaming/playfab/features/authentication/linking-unlinking/account-linking-quickstart'>Quickstart</a>
                                             </div>
                                         </div>
                                     </div>
@@ -513,7 +513,7 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>Title Data</h3>
-                                                <p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/config/titledata/'>Overview</a></p><p><a href='/gaming/playfab/features/config/titledata/using-title-data-quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/config/titledata/using-title-data-tutorials'>Tutorials</a></p>
+                                                <p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/config/titledata/'>Overview</a></p><p><a href='/gaming/playfab/features/config/titledata/title-data-quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/config/titledata/title-data-tutorials'>Tutorials</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -606,7 +606,7 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>Scheduled Tasks</h3>
-                                                <p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/automation/scheduled-tasks/'>Overview</a></p><p><a href='/gaming/playfab/features/automation/scheduled-tasks/creating-a-scheduled-task-quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/automation/scheduled-tasks/tutorials'>Tutorials</a></p>
+                                                <p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/automation/scheduled-tasks/'>Overview</a></p><p><a href='/gaming/playfab/features/automation/scheduled-tasks/scheduled-tasks-quickstart'>Quickstart</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -825,7 +825,7 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>Reports</h3>
-                                                <p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/analytics/reports/'>Overview</a></p><p><a href='/gaming/playfab/features/analytics/reports-quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/analytics/reports/tutorials'>Tutorials</a></p>
+                                                <p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/analytics/reports/'>Overview</a></p><p><a href='/gaming/playfab/features/analytics/reports-quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/analytics/reports-tutorials'>Tutorials</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -842,7 +842,7 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>A/B Testing</h3>
-                                                <p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/analytics/ab-testing/'>Overview</a></p><p><a href='/gaming/playfab/features/analytics/ab-testing-quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/analytics/ab-testing/tutorials'>Tutorials</a></p>
+                                                <p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/analytics/ab-testing/'>Overview</a></p><p><a href='/gaming/playfab/features/analytics/ab-testing-quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/analytics/ab-testing-tutorials'>Tutorials</a></p>
                                             </div>
                                         </div>
                                     </div>
