@@ -64,7 +64,7 @@ You will be asked to provide a project name. In this tutorial we use our **Foo P
 
 ![Firebase - Create Project](../media/tutorials/firebase-create-project.png)
 
-You will be redirected to the new project dashboard. Add a new Android application to the project by selecting the area as shown in the following picture.
+You will be redirected to the **New Project** dashboard. Add a new Android application to the project by selecting the area as shown in the following picture.
 
 ![Firebase - Add Firebase to Android app](../media/tutorials/firebase-add-to-android-app.png)
 
@@ -82,7 +82,7 @@ Step 2 allows you to download a settings file called **google-services.json**. I
 
 ![Firebase - add Google settings file](../media/tutorials/firebase-add-google-settings-file.png)
 
-- The final step offers information on how to set up your build process to wire up the **Firebase** and **Google Play SDKs**.
+3. The final step offers information on how to set up your build process to wire up the **Firebase** and **Google Play SDKs**.
 
 > [!Note]
 > You may ignore this information, as we will be using an automated tool built into the Android Studio that performs this setup automatically.
@@ -98,7 +98,8 @@ Step 2 allows you to download a settings file called **google-services.json**. I
 
 ![Firebase - Project settings](../media/tutorials/firebase-project-settings.png)
 
-When in the **Project settings**, navigate to the **Cloud Messaging** tab.
+When in **Project Settings**, navigate to the **Cloud Messaging** tab.
+
 - Locate the **Server key** area (the red area in the  picture shown below).
 
 - Copy this key and store it in a safe and easily accessible place.
@@ -135,8 +136,8 @@ Start by visiting the [Google Play Console page](https://play.google.com/apps/pu
 ![Google Play - FCM panel - Link a Sender ID](../media/tutorials/google-play-fcm-link-sender-id.png)
 
 To link the **Sender ID**:
-
 - Use the **FCM Server Key** that you received (and saved) while using the **Firebase** console in the previous chapter.
+
 - When done, select the **Link** button, as shown in our example.
 
 ![Google Play - Link a Sender ID - Add FCM API Key](../media/tutorials/google-play-add-fcm-api-key.png)
@@ -145,14 +146,14 @@ To link the **Sender ID**:
 
 ![Google Play Console - Firebase Console - match sender ID](../media/tutorials/google-play-firebase-match-sender-id.png)
 
-At this point, the Google Play Console project is successfully linked to the Firebase project.
+At this point, the **Google Play Console** project is successfully linked to the **Firebase** project.
 
 ### Chapter 3: Configuring PlayFab Title
 
 The purpose of this chapter is to show you how to configure PlayFab services so that it can send **Push Notifications** to the player on your behalf. 
 
 - First, you must go to **Settings (1)** in your menu.
-Then select the  **Push Notifications (2)** tab.
+- Then select the  **Push Notifications (2)** tab.
 
 - On your screen, select the **Android Settings (3)** button, as shown in the example provided below.
 
@@ -164,7 +165,7 @@ Then select the  **Push Notifications (2)** tab.
 
 ![PlayFab - Firebase Console - add server api key](../media/tutorials/playfab-firebase-add-server-api-key.png)
 
-- If everything is correct, you will be presented with a page that shows Push Notifications as wired and **Active (1)**.
+- If everything is correct, you will be presented with a page that shows **Push Notifications** as wired and **Active (1)**.
 
 - Now you must verify that the title is using the newest FCM architecture. To do this, select the **Upgrade Push Notifications (2)** button.
 
@@ -181,11 +182,12 @@ In order to utilize the **PlayFab JavaSDK**, you will need the **PlayFab Client 
 - Look for **client-sdk-*.jar** and the corresponding **Java Doc** if you need it.
 
 - Download the latest **Google GSON**.
+
 - Look for **gson-*.jar**.
 
 - Have the previously mentioned jar files nearby.
 
-Start by creating a regular Android Studio project.
+Start by creating a regular **Android Studio** project.
 
 - Verify that the package name matches the one you used throughout this tutorial (in **Firebase**, for instance). 
 > [!NOTE]
@@ -214,11 +216,10 @@ For this tutorial, we suggest using the **Empty Activity** template to begin wit
 ![Android Studio - New Project - finish](../media/tutorials/android-studio-new-project-finish.png)
 
 Once you open the newly created project:
-
 - Switch to the **Project** tab **(1)**. 
 
 > [!NOTE]
-> In the previous chapter, you downloaded the **google-services.json** configuration file from the Firebase console.  Use this for your next step.
+> In the previous chapter, you downloaded the **google-services.json** configuration file from the **Firebase** console.  Use this for your next step.
 
 - Verify that this file is placed under the **app** folder **(2)**.
 - Then, navigate to **Tools (3)**.
@@ -226,7 +227,7 @@ Once you open the newly created project:
 
 ![Android Studio - add config file to project](../media/tutorials/android-studio-add-config-file.png)
 
-The Firebase Assistant will open on the right side of the window.
+The **Firebase Assistant** will open on the right side of the window.
 
 - Locate the **Notifications** folder and select **Receive Notifications in your app**, as shown below.
 
@@ -236,7 +237,7 @@ In the Firebase Notifications Assistant:
 
 - Select **Add Notifications to your app (1)**. 
 
-- A Project Changes Wizard will open.
+- A **Project Changes** wizard will open.
 - Select **Accept Changes (2)** as shown in the example provided below.
 
 ![Android Studio - Firebase Asst. - add notifications](../media/tutorials/android-studio-firebase-add-notifications.png)
@@ -247,7 +248,6 @@ Once the process is complete:
 
 > [!NOTE]
 > In the beginning of this chapter, we acquired the necessary **JAR** files. Normally, the build file automatically fetches these files.
-
 - However, to ensure that these JAR files are listed under the **app/libs** folder **(2)**.
 - Select all of the files and right-click them.
 - Then choose **Add as library... (3)**, as shown in the example provided below.
@@ -267,9 +267,9 @@ Once the process is complete:
 At this point, we can start implementing code for receiving and handling notifications. We are going to modify (and create if needed) 4 files:
 
 1. app/src/main/AndroidManifest.xml
-2. app/src/main/java/..packagePath../MainActivity.java
-3. app/src/main/java/..packagePath../FooAppFirebaseInstanceIdService.java
-4. app/src/main/java/..packagePath../FooAppFirebaseMessagingService.java
+1. app/src/main/java/..packagePath../MainActivity.java
+1. app/src/main/java/..packagePath../FooAppFirebaseInstanceIdService.java
+1. app/src/main/java/..packagePath../FooAppFirebaseMessagingService.java
 
 > [!NOTE]
 > The current implementation is crafted to be as short as possible, just to quickly test the notifications. Consider [FCM Guides](https://firebase.google.com/docs/cloud-messaging/concept-options) for high-quality best practices and more complex implementation examples.
@@ -507,7 +507,7 @@ At this point, you should be able to deploy the application to the device.
 
 This will open a **Send push notification** page for that player.
 
-- Select the **Send Push Notification** button **(1).**.
+- Select the **Send Push Notification** button **(1)**.
 
 - Type in the title **(2)**.
 - Enter the body of your message **(3)**.
