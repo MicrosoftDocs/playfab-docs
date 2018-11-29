@@ -1,5 +1,5 @@
 ---
-title: Using title data
+title: Title Data Quickstart
 author: v-thopra
 description: Describes how to programmatically create and use title data
 ms.author: v-thopra
@@ -10,20 +10,22 @@ keywords: playfab, configuration, title data
 ms.localizationpriority: medium
 ---
 
-# Using title data
+# Title Data Quickstart
 
-This tutorial describes how to programmatically create and use **Title Data**. This an important topic because storing a game's configuration data remotely - on the server, where it can be changed at any time - is one of the most basic reasons to use a service like **PlayFab**.
+This Quickstart describes how to programmatically create and use **Title Data**.
 
-**Title Data** is represented as **key/value pairs (kvps)** that can only be associated with a specific title.
+This an important topic because storing a game's configuration data remotely, on the server, where it can be changed at any time, is one of the most basic reasons to use a service like **PlayFab**.
+
+Title data is represented as **Key/Value Pairs (KVPs)**, that can only be associated with a specific **Title**.
 
 > [!NOTE]
-> **Title Data** values are copied and distributed to potentially hundreds of machines in the **PlayFab** cluster server. As part of this process, **Title Data** is cached and changes may take up to *fifteen minutes* to refresh in those caches. **Title Data** is best suited for **global constant/static data**, and is *not* suitable or reliable as **global variables**.
+> Title data values are copied and distributed to potentially *hundreds* of machines in the **PlayFab** cluster server. As part of this process, **Title Data** is cached and changes may take up to *fifteen minutes* to refresh in those caches. **Title Data** is best suited for **Global Constant/Static Data**, and is *not suitable* or reliable as **Global Variables**.
 
-## Getting title data
+## Getting Title Data
 
 ### From the game client
 
-Use [GetTitleData](xref:titleid.playfabapi.com.client.title-widedatamanagement.gettitledata) from the **PlayFabClientAPI** to get the **kvps** for a specific **Title**. The following code example displays the values of all of the **Title Data**.
+Use [GetTitleData](xref:titleid.playfabapi.com.client.title-widedatamanagement.gettitledata) from the **PlayFabClientAPI** to get the **KVPs** for a specific **Title**. The following code example displays the values of all of the **Title Data**.
 
 ```csharp
 public void ClientGetTitleData() {
@@ -42,7 +44,7 @@ public void ClientGetTitleData() {
 
 ### From the game server
 
-Use [GetTitleData](xref:titleid.playfabapi.com.server.title-widedatamanagement.gettitledata) from the **PlayFabServerAPI** to get the **kvps** for a specific **Title**. The following code example displays the values of all of the **Title Data**.
+Use [GetTitleData](xref:titleid.playfabapi.com.server.title-widedatamanagement.gettitledata) from the **PlayFabServerAPI** to get the **KVPs** for a specific title. The following code example displays the values of all of the title data.
 
 ```csharp
 public void ServerGetTitleData() {
@@ -62,26 +64,25 @@ public void ServerGetTitleData() {
 
 It is unlikely that **Title Data** will change very frequently. For most situations, you should use your **Title Data** for static data that is mostly unchanged for the life of the title.
 
-You can set **Title Data** by using the **Game Manager** or by a server **API** function. After the **Title Data** is set for initial release, most **Titles** will not make significant changes from that point.
+You can set **Title Data** by using the **Game Manager**, or by a server **API** function.
+
+After the **Title Data** is set for initial release, most **Titles** will not make significant changes from that point.
 
 ### Setting Title Data using Game Manager
 
-To add data to a **Title**, perform the following steps:
+To add data to a **Title**, perform the following steps.
 
 1. Open the **Title** in **Game Manager**.
 2. Select **Content**, then **Title Data**.
 3. Select **Add Item**.
-4. Enter a value for the **Key** and a value for the **Value** (both the **Key** and the **Value** are stored as strings).
-5. Select **SUBMIT** to save the new data item.
+4. Enter a value for the **Key** and a value for the **Value**. Both the **Key** and the **Value** are stored as strings.
+5. Select the **SUBMIT** button to save the new data item.
 
 ![Game Manager - Set Title Data](media/tutorials/game-manager-set-title-data.png)  
 
-### Setting title data by calling the server API in C#
+### Setting Title Data by calling the server API in C#
 
-The [SetTitleData](xref:titleid.playfabapi.com.server.title-widedatamanagement.settitledata) **API** is a server **API** that you must call from a dedicated server.
-
-> [!NOTE]
-> You can only set *one* **Title Data kvp** in each call to **SetTitleData**.
+The [SetTitleData](xref:titleid.playfabapi.com.server.title-widedatamanagement.settitledata) **API** is a server **API** that you must call from a dedicated server. You can only set one **Title Data KVP** in each call to **SetTitleData**.
 
 ```csharp
 public void SetTitleData() {
@@ -121,7 +122,7 @@ public void GetTitleInternalData()
 }
 ```
 
-### Setting Internal title data by calling the server API in C#
+### Setting Internal Title Data by calling the server API in C#
 
 ```csharp
 public void SetTitleInternalData() {
