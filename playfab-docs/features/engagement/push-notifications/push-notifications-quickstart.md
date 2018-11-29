@@ -12,17 +12,17 @@ ms.localizationpriority: medium
 
 # Push Notifications Quickstart
 
-Push notifications give you a channel to send an immediate, customized message to your player’s home screen. Using PlayFab's push feature, you may send unlimited push notifications to any number of devices completely free of charge.
+Push notifications give you a channel to send an immediate, customized message to your player’s home screen. Using PlayFab's push feature, you may send unlimited push notifications to any number of devices completely free of charge. 
 
 As a general guideline, always tell players *up front* how you will be using the push notification service. Explaining to players how your game rewards or communicates via push notification can be the difference in building community engagement versus driving players away.
 
-The following screenshot is an example from an Android device's Notifications area showing a push notification.
+The following screenshot is an example from an Android device's **Notifications** area showing a **Push Notification**.
 
 ![Android device - Notifications screen](../media/tutorials/android-notifications-screen.png)  
 
 ## The Push Notification system
 
-Push notifications are possible due to a delicate linkage of three major systems:
+**Push Notifications** are possible due to a delicate linkage of three major systems:
 
 1. The vendor-specific channel (Google, Apple, etc.)
 2. The player’s OS/device (Android, iOS, etc.)
@@ -36,7 +36,7 @@ Push notifications are possible due to a delicate linkage of three major systems
 Every PlayFab title can enable one Google (GCM) and one Apple Push (APNS, APNS_SANDBOX) notification channel at a given time. This can be configured one of two ways:
 
 1. Using the UI in **Game Manager** under **Settings -> Push Notifications**.
-2. Using the PlayFab Admin API - [SetupPushNotification](xref:titleid.playfabapi.com.admin.title-widedatamanagement.setuppushnotification).
+2. Using the PlayFab **Admin API - [SetupPushNotification](xref:titleid.playfabapi.com.admin.title-widedatamanagement.setuppushnotification)**.
 
 For more detailed setup information, read these tutorials:
 
@@ -45,7 +45,7 @@ For more detailed setup information, read these tutorials:
 
 ## Push messages in-game
 
-Push messages will vary based on the development engine/platform. However, the easiest way to receive push notifications is using a Unity project with our SDK and the Firebase Cloud Messaging (FCM) plugin for Android, or just Unity for iOS.
+**Push Messages** will vary based on the development engine/platform. However, the easiest way to receive push notifications is using a **Unity** project with our SDK and the **Firebase Cloud Messaging (FCM)** plugin for Android, or just **Unity for iOS**.
 
 - **Receiving push on Android** - This requires a plugin.  The best supported plugin is the native FCM plugin.
 - **Receiving push on iOS** - This *does not* require a plugin for basic push messages.
@@ -55,11 +55,11 @@ Push messages will vary based on the development engine/platform. However, the e
 
 ## Testing the setup
 
-After configuring your title and client, you can test your configuration using the PlayFab Server API - [SendPushNotification](xref:titleid.playfabapi.com.server.accountmanagement.sendpushnotification). This API allows you to send as many push notifications as needed at no extra cost.
+After configuring your **Title** and **Client**, you can test your configuration using the PlayFab Server API - [SendPushNotification](xref:titleid.playfabapi.com.server.accountmanagement.sendpushnotification). This API allows you to send as many push notifications as needed at no extra cost.
 
-You can use the PlayFab CloudScript service as a quick and secure server API environment. From there, push notifications can be sent as needed.
+You can use the PlayFab **CloudScript** service as a quick and secure server API environment. From there, push notifications can be sent as needed.
 
-To use this method to test your configuration, upload or append the code in the following example to your title’s CloudScript.
+To use this method to test your configuration, upload or append the code in the following example to your title’s **CloudScript**.
 
 ### Example
 
@@ -69,7 +69,7 @@ Consider the following scenario:
 
 - Each player may pay 1 CH currency and challenge another player who is up to 5 positions away from the current player.
 
-First, consider a virtual currency as shown in the following screenshot (see the [Currencies](../../commerce/economy/currencies.md) tutorial for information on how to define a virtual currency).
+First, consider a virtual currency as shown in the example screenshot shown below (see the [Currencies](../../commerce/economy/currencies.md) tutorial for information on how to define a virtual currency).
 
 ![PlayFab Economy - Currencies - New Currency](../media/tutorials/playfab-new-currency.png)
 
@@ -79,7 +79,7 @@ Now, consider the following Statistics defined for each player (see the [Accessi
 
 Once you've set up these prerequisites, you can set up a push-notification challenge system.
 
-The following client code will call the CloudScript **ChallengePlayer**.
+The following client code will call the **CloudScript** **ChallengePlayer**.
 
 ```csharp
 public void ChallengeRandomClosePlayer(string currentPlayerId) {
@@ -174,7 +174,7 @@ For Android apps, notifications are enabled by default, and can be turned on and
 
 ## Resources
 
-The following resources provide additional information about the topics in this tutorial:
+The following resources provide additional information about the topics in this Quickstart:
 
 - [Firebase Unity SDK](https://firebase.google.com/docs/unity/setup):  An all-in-one FCM solution for Unity. This SDK, among all other features, allows you to receive and process push notifications sent via FCM.
 - [Push It Real Good: How to Get Players to Say Yes to Push Notifications](https://blog.playfab.com/blog/push-it-real-good-how-get-players-say-yes-push-notifications/): This blog post details additional strategies and techniques for using push notifications.
