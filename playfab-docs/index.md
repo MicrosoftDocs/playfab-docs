@@ -132,7 +132,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Concept: PlayStream</h3>
-                                                    <p>PlayStream is the underlying event architecture that drives PlayFab. Learn how PlayStream can help with retention, engagement, and montitization.</p>
+                                                    <p>PlayStream is the underlying event architecture that drives PlayFab. Learn how PlayStream can help with retention, engagement, and monetization.</p>
                                                 </div>
                                             </div>
                                         </div>

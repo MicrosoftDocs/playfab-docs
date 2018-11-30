@@ -21,6 +21,6 @@ Welcome! This introductory tutorial will quickly get you up and running with Pla
 
 If you have already created an account with PlayFab, then this tutorial is also available in a [special interactive version](https://developer.playfab.com/?land=help) directly inside the Game Manager. If you plan on following along with these steps, then you may find that version more useful.
 
-We also have this set of [SDK Quickstart Guides](../../../quickstarts), to help you make your first PlayFab API call in each of our SDK languages or environments.
+We also have this set of [SDK Quickstart Guides](../../../index.md?pivot=documentation&panel=quickstarts), to help you make your first PlayFab API call in each of our SDK languages or environments.
 
 Let's get started!

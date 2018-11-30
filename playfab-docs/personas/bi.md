@@ -20,12 +20,12 @@ In general, you can analyze what players are doing in your game by following the
 
 ## Getting to know your players through Game Manager
 
-Real-Time events are amazing, and actionable. However, sometimes you need to do deeper analytics over a period of time to get retention, or a better understanding of how your players are engaging with your game. For this, we offer a variety of solutions and we kick this off by talking about our built-in tools in Game Manager. Game Manager is our online portal to your game title. You can learn more about [Game Manager here](https://review.docs.microsoft.com/en-us/gaming/playfab/features/config/gamemanager/). In Game Manager, you can search for events, view reports, and look at specific data about each player and their actions.
+Real-Time events are amazing, and actionable. However, sometimes you need to do deeper analytics over a period of time to get retention, or a better understanding of how your players are engaging with your game. For this, we offer a variety of solutions and we kick this off by talking about our built-in tools in Game Manager. Game Manager is our online portal to your game title. You can learn more about [Game Manager here](../features/config/gamemanager/game-manager-quickstart.md). In Game Manager, you can search for events, view reports, and look at specific data about each player and their actions.
 
 Here are some resources to get you started with the Event Viewer:
 
-- [Real-Time Analytics: Core Concepts](https://review.docs.microsoft.com/en-us/gaming/playfab/features/analytics/metrics/real-time-analytics-core-concepts) - Gives you precise insights into what is going on inside your game.
-- [Constructing Event History Searches](https://review.docs.microsoft.com/en-us/gaming/playfab/features/analytics/metrics/constructing-an-event-history-search) - Illustrates how to construct an Event History Search, the components of a search, and how to use Elastic Search syntax in your queries.
+- [Real-Time Analytics: Core Concepts](../features/analytics/metrics/real-time-analytics-core-concepts.md) - Gives you precise insights into what is going on inside your game.
+- [Constructing Event History Searches](../features/analytics/metrics/constructing-an-event-history-search.md) - Illustrates how to construct an Event History Search, the components of a search, and how to use Elastic Search syntax in your queries.
 - [Built in Analytic Reports](../features/analytics/reports/reports-quickstart.md) - Gets reports on daily, monthly and rolling overviews. Track retention and conversion reports. View reports on your top spenders and purchases.
 
 <img alt="Analytic Reporting" src="images/analytics-reports.png" width="500" />
@@ -34,7 +34,7 @@ Here are some resources to get you started with the Event Viewer:
 
 While PlayFab provides some awesome tools for getting to know your players, sometimes you may need a bit more customization. PlayFab has a number of ways to reach your data outside of our Game Manager tool set. For this we offer several ways to export data into various systems. Here are a few great ways to access your data:
 
-- [S3 Event Archiving](https://review.docs.microsoft.com/en-us/gaming/playfab/features/analytics/metrics/s3-event-archiving) – PlayFab allows you to archive the entire event flow by using an Amazon S3 Bucket. This guide shows step-by-step how to configure event archiving from scratch.
-- Snowflake – See entire event flow in Showflake, for deep analytics query power.
-- [Webhooks](https://review.docs.microsoft.com/en-us/gaming/playfab/features/analytics/metrics/webhooks) - In complex systems you may want to provide additional event handling on your custom server. PlayFab offers Webhooks to achieve this. Whenever a new event is detected, it can be forwarded to your server by making a POST request to your custom web endpoint, and the event data is passed as the JSON body of the request.
+- [S3 Event Archiving](../features/analytics/metrics/s3-event-archiving.md) – PlayFab allows you to archive the entire event flow by using an Amazon S3 Bucket. This guide shows step-by-step how to configure event archiving from scratch.
+- Snowflake – See the entire event flow in Showflake, for deep analytics query power.
+- [Webhooks](../features/analytics/metrics/webhooks.md) - In complex systems you may want to provide additional event handling on your custom server. PlayFab offers Webhooks to achieve this. Whenever a new event is detected, it can be forwarded to your server by making a POST request to your custom web endpoint, and the event data is passed as the JSON body of the request.
 - PlayFab Data warehouse (preview) - The PlayFab Data Warehouse  is a premium PlayFab offering that provides a central repository for your data, whether it's generated from our services or imported from an external source.
