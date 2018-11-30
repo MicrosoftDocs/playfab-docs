@@ -31,7 +31,7 @@ featureFlags:
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1">
+                                                    <div class="cardImage bgdAccent1" style="background-color:#334154;">
                                                         <img src="/gaming/playfab/media/persona_developer.svg" alt="" />
                                                     </div>
                                                 </div>
@@ -50,7 +50,7 @@ featureFlags:
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1">
+                                                    <div class="cardImage bgdAccent1" style="background-color:#334154;">
                                                         <img src="/gaming/playfab/media/persona_liveops.svg" alt="" />
                                                     </div>
                                                 </div>
@@ -69,7 +69,7 @@ featureFlags:
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1">
+                                                    <div class="cardImage bgdAccent1" style="background-color:#334154;">
                                                         <img src="/gaming/playfab/media/persona_business_intelligence.svg" alt="" />
                                                     </div>
                                                 </div>
@@ -88,7 +88,7 @@ featureFlags:
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1">
+                                                    <div class="cardImage bgdAccent1" style="background-color:#334154;">
                                                         <img src="/gaming/playfab/media/core_concept_game_manager.svg" alt="" />
                                                     </div>
                                                 </div>
@@ -107,7 +107,7 @@ featureFlags:
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1">
+                                                    <div class="cardImage bgdAccent1" style="background-color:#334154;">
                                                         <img src="/gaming/playfab/media/core_concept_entities.svg" alt="" />
                                                     </div>
                                                 </div>
@@ -126,7 +126,7 @@ featureFlags:
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1">
+                                                    <div class="cardImage bgdAccent1" style="background-color:#334154;">
                                                         <img src="/gaming/playfab/media/core_concept_playstream.svg" alt="" />
                                                     </div>
                                                 </div>
@@ -145,7 +145,7 @@ featureFlags:
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1">
+                                                    <div class="cardImage bgdAccent1" style="background-color:#334154;">
                                                         <img src="/gaming/playfab/media/core_concept_cloudscript.svg" alt="" />
                                                     </div>
                                                 </div>
@@ -164,7 +164,7 @@ featureFlags:
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1">
+                                                    <div class="cardImage bgdAccent1" style="background-color:#334154;">
                                                         <img src="/gaming/playfab/media/resource_event_archive.svg" alt="" />
                                                     </div>
                                                 </div>
@@ -183,7 +183,7 @@ featureFlags:
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1">
+                                                    <div class="cardImage bgdAccent1" style="background-color:#334154;">
                                                         <img src="/gaming/playfab/media/resource_recipes.svg" alt="" />
                                                     </div>
                                                 </div>
@@ -202,7 +202,7 @@ featureFlags:
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1">
+                                                    <div class="cardImage bgdAccent1" style="background-color:#334154;">
                                                         <img src="/gaming/playfab/media/resource_technical_whitepaper.svg" alt="" />
                                                     </div>
                                                 </div>
