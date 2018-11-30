@@ -66,6 +66,7 @@ It is unlikely that **Title Data** will change very frequently. For most situati
 
 You can set **Title Data** by using the **Game Manager**, or by a server **API** function.
 
+
 After the **Title Data** is set for initial release, most **Titles** will not make significant changes from that point.
 
 ### Setting Title Data using Game Manager
