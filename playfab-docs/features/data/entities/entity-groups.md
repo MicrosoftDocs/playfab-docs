@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 Let's say that you need **Guilds**, **Clans**, **Corporations**, **Companies**, **Tribes**, or whatever your game calls them - PlayFab has them.
 
-PlayFab builds **Guilds** on top of a system we call **[Entities](../../data/entities/getting-started-with-entities.md)**, or more specifically **Entity Groups**. **Entity Groups** are a much broader concept than **Guilds**, but fundamentally, **Entity Groups** have been created as a solution for **Guilds**.
+PlayFab builds **Guilds** on top of a system we call **[Entities](../../data/entities/entities-quickstart.md)**, or more specifically **Entity Groups**. **Entity Groups** are a much broader concept than **Guilds**, but fundamentally, **Entity Groups** have been created as a solution for **Guilds**.
 
 ## Entity Groups
 

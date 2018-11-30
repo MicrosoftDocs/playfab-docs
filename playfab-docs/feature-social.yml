@@ -28,4 +28,4 @@ sections:
     - image:
         src: "/gaming/playfab/features/media/feature_trading.svg"
       title: "Trading"
-      html: "<p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/social/trading/'>Overview</a></p><p><a href='/gaming/playfab/features/social/trading/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/social/trading/tutorials'>Tutorials</a></p>"
+      html: "<p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/social/trading/'>Overview</a></p><p><a href='/gaming/playfab/features/social/trading/trading-quickstart'>Quickstart</a></p>"

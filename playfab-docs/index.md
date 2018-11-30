@@ -471,7 +471,7 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>Content Delivery Network</h3>
-                                                <p><p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/data/content-delivery-network/'>Overview</a></p><p><a href='/gaming/playfab/features/data/content-delivery-network/cdn-quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/data/content-delivery-network/remove-tutorials'>Tutorials</a></p></p>
+                                                <p><p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/data/content-delivery-network/'>Overview</a></p><p><a href='/gaming/playfab/features/data/content-delivery-network/cdn-quickstart'>Quickstart</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -665,7 +665,7 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>Trading</h3>
-                                                <p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/social/trading/'>Overview</a></p><p><a href='/gaming/playfab/features/social/trading/trading-quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/social/trading/trading-tutorials'>Tutorials</a></p>
+                                                <p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/social/trading/'>Overview</a></p><p><a href='/gaming/playfab/features/social/trading/trading-quickstart'>Quickstart</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -783,7 +783,7 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>Photon</h3>
-                                                <p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/multiplayer/photon/'>Overview</a></p><p><a href='/gaming/playfab/features/multiplayer/photon/photon-quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/multiplayer/photon/photon-tutorials'>Tutorials</a></p>
+                                                <p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/multiplayer/photon/'>Overview</a></p><p><a href='/gaming/playfab/features/multiplayer/photon/photon-quickstart'>Quickstart</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -918,7 +918,7 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>News</h3>
-                                                <p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/engagement/news/'>Overview</a></p><p><a href='/gaming/playfab/features/engagement/news/title-news-quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/engagement/news/title-news-tutorials'>Tutorials</a></p>
+                                                <p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/engagement/news/'>Overview</a></p><p><a href='/gaming/playfab/features/engagement/news/title-news-quickstart'>Quickstart</a></p>
                                             </div>
                                         </div>
                                     </div>

@@ -51,7 +51,7 @@ Actions might result in a CloudScript being run. Our CloudScript is JavaScript c
 - [CloudScript Quickstart](https://review.docs.microsoft.com/en-us/gaming/playfab/features/automation/cloudscript/quickstart) – Get up and running quickly with your first CloudScript call.
 
 > [!TIP]
-> To leverage rules in the automation system, [write custom events](https://review.docs.microsoft.com/en-us/gaming/playfab/features/automation/playstream-events/playstream-events#custom-event-overview) in your game which will create a PlayStream event.
+> To leverage rules in the automation system, [write custom events](../features/automation/playstream-events/playstream-quickstart.md#custom-event-overview) in your game which will create a PlayStream event.
 
 ## Get to know PlayFab features
 

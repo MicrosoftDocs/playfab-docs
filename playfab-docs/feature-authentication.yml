@@ -20,7 +20,7 @@ sections:
     - image:
         src: "/gaming/playfab/features/media/feature_linking_unlinking.svg"
       title: "Linking &amp; Unlinking"
-      html: "<p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/authentication/linking-unlinking/'>Overview</a></p><p><a href='/gaming/playfab/features/authentication/linking-unlinking/account-linking-quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/authentication/linking-unlinking/tutorials'>Tutorials</a></p>"
+      html: "<p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/authentication/linking-unlinking/'>Overview</a></p><p><a href='/gaming/playfab/features/authentication/linking-unlinking/account-linking-quickstart'>Quickstart</a></p>"
     - image:
         src: "/gaming/playfab/features/media/feature_platform_specific_authentication.svg"
       title: "Platform-Specific Authentication"

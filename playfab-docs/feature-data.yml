@@ -20,7 +20,7 @@ sections:
     - image:
         src: "/gaming/playfab/features/media/feature_entities.svg"
       title: "Entities"
-      html: "<p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/data/entities/'>Overview</a></p><p><a href='/gaming/playfab/features/data/entities/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/data/entities/tutorials'>Tutorials</a></p>"
+      html: "<p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/data/entities/'>Overview</a></p><p><a href='/gaming/playfab/features/data/entities/entities-quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/data/entities/entities-tutorials'>Tutorials</a></p>"
     - image:
         src: "/gaming/playfab/features/media/feature_playerdata.svg"
       title: "Player Data"
@@ -28,4 +28,4 @@ sections:
     - image:
         src: "/gaming/playfab/features/media/feature_content_delivery_network.svg"
       title: "Content Delivery Network"
-      html: "<p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/data/content-delivery-network/'>Overview</a></p><p><a href='/gaming/playfab/features/data/content-delivery-network/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/data/content-delivery-network/tutorials'>Tutorials</a></p>"
+      html: "<p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/data/content-delivery-network/'>Overview</a></p><p><a href='/gaming/playfab/features/data/content-delivery-network/cdn-quickstart'>Quickstart</a></p>"
