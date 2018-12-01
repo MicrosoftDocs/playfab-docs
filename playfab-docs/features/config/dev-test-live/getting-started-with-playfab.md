@@ -14,13 +14,13 @@ ms.localizationpriority: medium
 
 Welcome! This introductory tutorial will quickly get you up and running with PlayFab. Each of the following chapters contain steps to help you get started with some of the key features within PlayFab:
 
-[Chapter 1 - Get started with players and tournaments](get-started-with-players-and-tournaments.md)
-[Chapter 2 - Set up your game's in-game economy](set-up-your-games-in-game-economy.md)
-[Chapter 3 - Explore automation](explore-automation.md)
-[Chapter 4 - Try out content management](try-out-content-management.md)
+- [Chapter 1 - Get started with players and tournaments](get-started-with-players-and-tournaments.md)
+- [Chapter 2 - Set up your game's in-game economy](set-up-your-games-in-game-economy.md)
+- [Chapter 3 - Explore automation](explore-automation.md)
+- [Chapter 4 - Try out content management](try-out-content-management.md)
 
 If you have already created an account with PlayFab, then this tutorial is also available in a [special interactive version](https://developer.playfab.com/?land=help) directly inside the Game Manager. If you plan on following along with these steps, then you may find that version more useful.
 
-We also have this set of [SDK Quickstart Guides](../../../index.md?pivot=documentation&panel=quickstarts), to help you make your first PlayFab API call in each of our SDK languages or environments.
+We also have this set of [SDK Quickstart Guides](../../../index.md?#pivot=documentation&panel=sdks), to help you make your first PlayFab API call in each of our SDK languages or environments.
 
 Let's get started!

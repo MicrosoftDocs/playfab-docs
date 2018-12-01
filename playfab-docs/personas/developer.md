@@ -47,7 +47,7 @@ Mapping your game on top of PlayFab is a great start, but there is more power to
 
 Actions might result in a CloudScript being run. Our CloudScript is JavaScript code that lives on a remote server and you can execute it either from a rule or directly from a game client. For more information, check out these resources to get you started with Cloud Scripting and Automation on PlayFab:
 
-- [Automation](../index.md?pivot=documentation&panel=automation) – A hub for information on CloudScript, Scheduled Tasks, PlayStream and Action & Rules.
+- [Automation](../index.md?#pivot=documentation&panel=automation) – A hub for information on CloudScript, Scheduled Tasks, PlayStream and Action & Rules.
 - [CloudScript Quickstart](../features/automation/cloudscript/cloudscript-quickstart.md) – Get up and running quickly with your first CloudScript call.
 
 > [!TIP]
@@ -57,12 +57,12 @@ Actions might result in a CloudScript being run. Our CloudScript is JavaScript c
 
 There is much more you can do with PlayFab. Check out each of our feature areas to find the right feature set for your game:
 
-- [Authentication](../index.md?pivot=documentation&panel=authentication)
-- [Data](../index.md?pivot=documentation&panel=data)
-- [Config](../index.md?pivot=documentation&panel=config)
-- [Automation](../index.md?pivot=documentation&panel=automation)
-- [Social](../index.md?pivot=documentation&panel=social)
-- [Commerce](../index.md?pivot=documentation&panel=commerce)
-- [Multiplayer](../index.md?pivot=documentation&panel=multiplayer)
-- [Analytics](../index.md?pivot=documentation&panel=analytics)
-- [Engagement](../index.md?pivot=documentation&panel=engagement)
+- [Authentication](../index.md?#pivot=documentation&panel=authentication)
+- [Data](../index.md?#pivot=documentation&panel=data)
+- [Config](../index.md?#pivot=documentation&panel=config)
+- [Automation](../index.md?#pivot=documentation&panel=automation)
+- [Social](../index.md?#pivot=documentation&panel=social)
+- [Commerce](../index.md?#pivot=documentation&panel=commerce)
+- [Multiplayer](../index.md?#pivot=documentation&panel=multiplayer)
+- [Analytics](../index.md?#pivot=documentation&panel=analytics)
+- [Engagement](../index.md?#pivot=documentation&panel=engagement)
