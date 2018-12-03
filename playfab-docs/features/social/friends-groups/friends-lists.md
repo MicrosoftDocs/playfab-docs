@@ -55,7 +55,7 @@ void GetFriends() {
 }
 ```
 
-The [GetFriendsList](xref:titleid.playfabapi.com.client.friendlistmanagement.getfriendslist) result contains a parameter "Friends" which is a list of [FriendInfo](https://api.playfab.com/documentation/Client/datatype/PlayFab.Client.Models/PlayFab.Client.Models.FriendInfo) objects.
+The [GetFriendsList](xref:titleid.playfabapi.com.client.friendlistmanagement.getfriendslist) result contains a parameter "Friends" which is a list of [FriendInfo](xref:titleid.playfabapi.com.client.friendlistmanagement.getfriendslist#friendinfo) objects.
 
 3. To add a friend to the player's friends list, use the [AddFriend](xref:titleid.playfabapi.com.client.friendlistmanagement.addfriend) API call.
 
@@ -105,7 +105,7 @@ There are other things you can do with friends besides adding, removing, and dis
 
 ### Tagging Friends
 
-The [FriendInfo](https://api.playfab.com/documentation/Client/datatype/PlayFab.Client.Models/PlayFab.Client.Models.FriendInfo) object, retrieved from [GetFriendsList](xref:titleid.playfabapi.com.client.friendlistmanagement.getfriendslist), includes a list of tags for the friend. When updating the list, you would want to add and remove from this list and include it in the API call, as follows:
+The [FriendInfo](xref:titleid.playfabapi.com.client.friendlistmanagement.getfriendslist#friendinfo) object, retrieved from [GetFriendsList](xref:titleid.playfabapi.com.client.friendlistmanagement.getfriendslist), includes a list of tags for the friend. When updating the list, you would want to add and remove from this list and include it in the API call, as follows:
 
 ```csharp
 // this REPLACES the list of tags on the server

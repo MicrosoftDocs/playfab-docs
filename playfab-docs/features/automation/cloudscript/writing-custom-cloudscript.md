@@ -147,7 +147,7 @@ In addition, all handler functions are passed two parameters, detailed below.
 | **args**                 | First parameter to a handler function. An object representation of the **FunctionParameter** field of an **ExecuteCloudscript** request. |
 | **context**              | Second parameter to a handler function. Additional information about the request when it is triggered by a **PlayStream** event action, including the [data from the event](https://api.playfab.com/playstream/events) that triggered the action (context.playStreamEvent) and the [profile data](https://api.playfab.com/playstream/profile/PlayerProfile) for the **Player** associated with it. (context.playerProfile)                                     |
 
-**CloudScript** functions can be called through the **ExecuteCloudScript API** call or by a preset **PlayStream** event action. Full details about the response to E**xecuteCloudScript** can be found [here](https://api.playfab.com/documentation/Client/datatype/PlayFab.Client.Models/PlayFab.Client.Models.ExecuteCloudScriptResult).
+**CloudScript** functions can be called through the **ExecuteCloudScript API** call or by a preset **PlayStream** event action. Full details about the response to **ExecuteCloudScript** can be found in the [ExecuteCloudScriptResult](xref:titleid.playfabapi.com.client.server-sidecloudscript.executecloudscript#executecloudscriptresult).
 
 ## Intermediate: FunctionParameter and args
 
@@ -383,7 +383,7 @@ If this code is run, the output should indicate the presence of the **Error**. R
 
 In development, **CloudScript Errors** will often not be manually triggered as in the case of **log.error**.
 
-Fortunately, the [ExecuteCloudScript](https://api.playfab.com/documentation/Client/datatype/PlayFab.Client.Models/PlayFab.Client.Models.ExecuteCloudScriptResult) response includes an [Error](https://api.playfab.com/documentation/Client/datatype/PlayFab.Client.Models/PlayFab.Client.Models.ScriptExecutionError) field. Adapting the last example from the logging section, we might use it as shown below.
+Fortunately, the response to [ExecuteCloudScript](xref:titleid.playfabapi.com.client.server-sidecloudscript.executecloudscript) contains an [ExecuteCloudScriptResult](xref:titleid.playfabapi.com.client.server-sidecloudscript.executecloudscript#executecloudscriptresult) which includes a [ScriptExecutionError](xref:titleid.playfabapi.com.client.server-sidecloudscript.executecloudscript#scriptexecutionerror) field. Adapting the last example from the logging section, we might use it as shown below.
 
 ```csharp
 void RunLogTest() {

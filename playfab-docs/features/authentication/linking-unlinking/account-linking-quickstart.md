@@ -45,7 +45,7 @@ So the flow for the various conditions is as follows - and note that in all case
 **Device1 State**: Device ID is bound to the player account   
 **Device2 State**: Device ID is not bound to the player account
 
-After signing into the player account on Device2 (using the recoverable account credentials), make a call to [GetPlayerCombinedInfo](xref:titleid.playfabapi.com.client.accountmanagement.getplayercombinedinfo). For each device type returned in that information, the most-recently signed in device ID is returned in the [result.InfoResultPayload.AccountInfo](https://api.playfab.com/documentation/Client/datatype/PlayFab.Client.Models/PlayFab.Client.Models.GetPlayerCombinedInfoResult). Since Device2 has not yet been linked to this player account, the relevant device ID (AccountInfo.IosDeviceInfo, AccountInfo.AndroidDeviceInfo, etc.) will not match Device2's ID.
+After signing into the player account on Device2 (using the recoverable account credentials), make a call to [GetPlayerCombinedInfo](xref:titleid.playfabapi.com.client.accountmanagement.getplayercombinedinfo). For each device type returned in that information, the most-recently signed in device ID is returned in the AccountInfo field of [result.InfoResultPayload](xref:titleid.playfabapi.com.client.accountmanagement.getplayercombinedinfo#getplayercombinedinforesultpayload). Since Device2 has not yet been linked to this player account, the relevant device ID (AccountInfo.IosDeviceInfo, AccountInfo.AndroidDeviceInfo, etc.) will not match Device2's ID.
 
 **Device1 State**: Device ID is bound to the player account  
 **Device2 State**: Logged in with recoverable credentials, but device ID is not bound to the player account
@@ -65,7 +65,7 @@ This scenario is very similar to the situation above, except the account was cre
 
 **Device State**: Device ID is not bound to the player account
 
-After performing a recoverable login with the device, call [GetPlayerCombinedInfo](xref:titleid.playfabapi.com.client.accountmanagement.getplayercombinedinfo). Again, determine whether the device ID matches the bound device ID via the info returned in [result.InfoResultPayload.AccountInfo](https://api.playfab.com/documentation/Client/datatype/PlayFab.Client.Models/PlayFab.Client.Models.GetPlayerCombinedInfoResultPayload). Since the device has never signed into the account, the relevant device ID (AccountInfo.IosDeviceInfo, AccountInfo.AndroidDeviceInfo, etc.) will not match the device's ID.
+After performing a recoverable login with the device, call [GetPlayerCombinedInfo](xref:titleid.playfabapi.com.client.accountmanagement.getplayercombinedinfo). Again, determine whether the device ID matches the bound device ID via the info returned in the AccountInfo field of [result.InfoResultPayload](xref:titleid.playfabapi.com.client.accountmanagement.getplayercombinedinfo#getplayercombinedinforesultpayload). Since the device has never signed into the account, the relevant device ID (AccountInfo.IosDeviceInfo, AccountInfo.AndroidDeviceInfo, etc.) will not match the device's ID.
 
 **Device State**: Logged in with recoverable credentials, but device ID is not bound to the player account
 
