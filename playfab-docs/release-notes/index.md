@@ -1,5 +1,26 @@
 # PlayFab Release Notes 2018
 
+## 181203
+
+Date: 2018-12-03
+
+**[XPlatCppSdk](https://github.com/PlayFab/XPlatCppSdk) Specific Changes:**
+
+* Added support to build external dependencies.
+* Updated nuget composition. This is not a breaking change. Added binaries for the external dependencies to the nuget and updated the properties sheet.
+* Bug fixes for QoSAPI.
+
+**[CSharpSDK](https://github.com/PlayFab/CSharpSDK) Specific Changes:**
+
+* Added .NET Standard 1.1/2.0 (plus .Net Core) support.
+* Updated nuget composition. The package now contains binaries for .Net Standard 1.1/2.0 and portables also.
+* Migrated VS project files to VS 2017 standard.
+
+**[UnitySDK](https://github.com/PlayFab/UnitySdk) Specific Changes:**
+
+* **SDK Breaking Change**: The SimpleGet success callback signature has changed, and now must accept a new single parameter of a byte[]
+* Added SimplePost.
+
 ## 181105
 
 Date: 2018-11-05
