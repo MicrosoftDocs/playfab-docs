@@ -17,8 +17,8 @@ Features
 
 |-|Run-time management|Networking|
 |-|-|-|
-|Available Now| - Create a network descriptor<br>Join network via descriptor<br> - Read & Write shared network properties<br>Add/remove users to access control list <br> - Modify joinability policy| - Create endpoints for sending/receiving data<br> - Reliable and unreliable send options <br> - Message colescing and queue flushing <br> - Encryption | 
-|Coming Soon|-| - Xbox Live authentication <br> - Steam authentication| - Coordinate host state with the authority object|
+|Available Now| - Create a network descriptor<br>Join network via descriptor | - Create endpoints for sending/receiving data<br> - Reliable and unreliable send options <br> - Message colescing and queue flushing  | 
+|Coming Soon| - Xbox Live authentication <br> - Steam authentication <br> Add/remove users to access control list <br> - Modify joinability policy | - Coordinate host state with the authority object<br> - Encryption|
 
 
 |-|Chat|Performance|Service administration|
