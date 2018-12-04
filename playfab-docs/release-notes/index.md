@@ -161,7 +161,7 @@ Date: 2018-07-16
 
 * Added [Plugin Manager API](https://github.com/PlayFab/CSharpSDK/blob/master/PluginManager.md) to C# SDK to support optional custom implementations of JSON Serializer and HTTP client
 
-**[UnrealCppSdk](https://github.com/PlayFab/UnrealCppSdk):**
+~~**UnrealCppSdk Changes:**~~ (UPDATED : This SDK has been deprecated. For the new unreal SDK, please refer to [UnrealMarketplaceSDK](https://www.unrealengine.com/marketplace/playfab-sdk))
 
 * Unreal 4 C++ SDK is also published on [Unreal Marketplace!](https://www.unrealengine.com/marketplace/playfab-sdk)
 
@@ -298,9 +298,9 @@ Date: 2018-05-07
 
 Date: 2018-04-14
 
-**[UnrealCppSdk](https://github.com/PlayFab/UnrealCppSdk) HotFix:**
+~~**UnrealCppSdk HotFix:**~~ (UPDATED : This SDK has been deprecated. For the new unreal SDK, please refer to [UnrealMarketplaceSDK](https://www.unrealengine.com/marketplace/playfab-sdk))
 
-* Issues were discovered in the Entity API release for [UnrealCppSdk](https://github.com/PlayFab/UnrealCppSdk). These are hotfixed, and the Entity API should now work as expected.
+* ~~Issues were discovered in the Entity API release for UnrealCppSdk. These are hotfixed, and the Entity API should now work as expected.~~
 
 ## 180409  
 
@@ -349,7 +349,7 @@ Date: 2018-03-16
 **New API Methods:**
 
 * admin.[RevokeInventoryItems](https://api.playfab.com/documentation/admin/method/RevokeInventoryItems) and server.[RevokeInventoryItems](https://api.playfab.com/documentation/server/method/RevokeInventoryItems)
-* A whole new [Entity API](https://api.playfab.com/documentation/entity)
+* A whole new ~~[Entity API](https://api.playfab.com/documentation/entity)~~ (**UPDATE:** This has been broken into multiple concepts).
 * Many new [Entity PlayStream Events](https://api.playfab.com/playstream/events) (search for "entity" on linked page)
 
 **Most SDKs Updated to support Entity APIs:**
