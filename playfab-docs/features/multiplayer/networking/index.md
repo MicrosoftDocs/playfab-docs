@@ -48,3 +48,20 @@ Table below indicates our confidence level for providing an SDK for the specifie
 |iOS|-|-|Low|
 |GameCore/Win10|-|High|-|
 |GameCore/Xbox|-|High|-|
+
+## How does Bumblelion related to Xbox Integrated Multiplayer? (XIM)
+|-|Bumblelion | XIM |
+|-|-|-|
+|Identity|- PlayFab Custom <br> - XBL <br> - Steam <br> - PSN <br> |- Xbox Live|
+|Platforms|- Win7 Win32 <br> - ERA <br> - GameCore <br> - iOS <br> - Android|- ERA <br> - GameCore <br> - Win10 UWP|
+|Access|- Any PlayFab customer |- Managed Xbox Live Partners or ID@Xbox|
+|Pricing|- Pay for consumption |- Free|
+|Network|- Low latency messaging between devices | - Low latency messaging between devices |
+|Chat|- Voice and Text Chat <br> - Text to Speech synthesis <br> - Speech to text transcription <br> - Text to text translation <br> - Speech to text translation |- Voice and Text Chat <br> - Text to Speech synthesis <br> - Speech to text transcription |
+|Telemetry| - Integrated PlayStream events | - No telemetry |
+
+
+
+
+
+
