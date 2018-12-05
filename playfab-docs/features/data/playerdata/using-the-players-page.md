@@ -33,7 +33,7 @@ The Search query field consumes two types of queries:
 
 ### Simplistic queries
 
-A **Simplistic query** accepts 1 or more tokens separated by a space. It searches through all [player fields](https://api.playfab.com/playstream/profile/PlayerProfile),  and looks strictly for one of the tokens. It is possible to use the wildcard symbol **(*)** in the tokens to make the query more flexible.
+A **Simplistic query** accepts 1 or more tokens separated by a space. It searches through all [player fields](xref:titleid.playfabapi.com.client.accountmanagement.getplayerprofile#playerprofilemodel),  and looks strictly for one of the tokens. It is possible to use the wildcard symbol **(*)** in the tokens to make the query more flexible.
 
 ![Game Manager - Players Page - display names and IDs](media/tutorials/game-manager-players-page-display-names-and-ids.png)  
 
@@ -50,7 +50,7 @@ For example, in the preceding screenshot we chose 2 users:
 4. **962B724F659A776A**. 
 
 > [!NOTE] 
-> Remember - you can use any [searchable player field](https://api.playfab.com/playstream/profile/PlayerProfile) as a token.
+> Remember - you can use any [searchable player field](xref:titleid.playfabapi.com.client.accountmanagement.getplayerprofile#playerprofilemodel) as a token.
 
 Now let's test a few querying techniques.
 
@@ -76,7 +76,7 @@ Now let's test a few querying techniques.
 
 The basic element of a complex query is a query expression in the format **fieldName:valueDescriptor**. The search engine will then look for all players that have the  specified field (denoted by **fieldName**) with the value (denoted by **valueDescriptor**):
 
-- **fieldName** is a [searchable player field](https://api.playfab.com/playstream/profile/PlayerProfile) in camel case (*DisplayName* becomes *displayName*). It is possible to use dot notation to dig into nested properties: *virtualCurrencyBalances.GM*.
+- **fieldName** is a [searchable player field](xref:titleid.playfabapi.com.client.accountmanagement.getplayerprofile#playerprofilemodel) in camel case (*DisplayName* becomes *displayName*). It is possible to use dot notation to dig into nested properties: *virtualCurrencyBalances.GM*.
 
 - **valueDescriptor** is obviously something that describes the desired value. It can be a token (**ABC**), a wildcard token (**AB*C**), or a range descriptor (date range value [2016 TO now]).
 
