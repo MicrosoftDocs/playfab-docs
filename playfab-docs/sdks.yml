@@ -72,4 +72,4 @@ sections:
     - image: 
         src: "/gaming/playfab/sdks/media/sdk_unreal.png"
       title: "Unreal Engine"
-      html: "<p><a href='/gaming/playfab/sdks/unreal'>SDK</a></p><p><a href='/gaming/playfab/sdks/unreal/quickstart'>Quickstart</a></p>"
+      html: "<p><a href='/gaming/playfab/sdks/unreal'>SDK</a></p><p><a href='/gaming/playfab/sdks/unreal/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/sdks/unreal/unreal-marketplace-plugin-upgrade-tutorial'>Upgrade Tutorial</a></p>"

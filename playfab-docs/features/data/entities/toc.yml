@@ -10,3 +10,5 @@
       href: available-built-in-entity-types.md
     - name: Entity Groups
       href: entity-groups.md
+    - name: Entity API Restructure Upgrade Tutorial
+      href: entity-api-restructure-upgrade-tutorial.md

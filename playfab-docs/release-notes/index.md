@@ -72,7 +72,7 @@ Date: 2018-09-17
     * Updated Marketplace Plugin to include our Blueprint interface
     * [New Unreal Engine Quickstart Guide](../sdks/unreal/quickstart.md)
     * [View in Unreal Marketplace](https://www.unrealengine.com/marketplace/playfab-sdk)
-    * [Upgrade Guide](https://api.playfab.com/docs/getting-started/unreal-mkpl-getting-started/mkpl-upgrade)
+    * [Upgrade Tutorial](../sdks/unreal/unreal-marketplace-plugin-upgrade-tutorial.md)
 
 ## 180906  
 
@@ -117,7 +117,7 @@ Date: 2018-08-09
 * We have separated the Entity API Group into multiple new Api Groups
 * This is a big SDK Breaking change for anybody using the former Entity Api
 * See our [Blog!](https://api.playfab.com/blog/entity-api-group-restructure)
-* See our [Upgrade Guide!](https://api.playfab.com/docs/entityapi-upgrade)
+* See our [Upgrade Guide!](../features/data/entities/entity-api-restructure-upgrade-tutorial.md)
 * (Please note, the links for blog and upgrade guide may not work yet, they're almost done)
 
 **API Changes:**

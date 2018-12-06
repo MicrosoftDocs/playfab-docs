@@ -77,3 +77,5 @@
     items:
     - name: Quickstart
       href: ./unreal/quickstart.md
+    - name: Upgrade Tutorial
+      href: ./unreal/unreal-marketplace-plugin-upgrade-tutorial.md

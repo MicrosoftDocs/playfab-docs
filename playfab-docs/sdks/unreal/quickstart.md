@@ -26,6 +26,8 @@ This guide will help you set up Unreal Engine, install the PlayFab Marketplace P
 - [Deconstruct the Blueprint Example](#deconstruct-the-blueprint-example)
 - [Deconstruct the C++ code example](#deconstruct-the-c++-code-example)
 
+- [Upgrading to the Unreal Marketplace Plugin](#upgrading-to-the-unreal-marketplace-plugin)
+
 ## Unreal Project Setup
 
 - OS: This guide is written for Windows 10, however steps should be similar for Mac
@@ -313,3 +315,7 @@ This optional last section describes the code in this project line by line.
       - The internet is not 100% reliable. Sometimes the message is corrupted or fails to reach the PlayFab server.
     - At this time, the PlayFab Unreal C++ SDK maintains state with static variables which are non atomic and are not guarded by synchronization techniques. For this reason, we recommend limiting PlayFab calls to within the main Unreal thread.
     - If you are having difficulty debugging an issue, and the information within the error information is not sufficient, please visit us on our [forums](https://community.playfab.com/index.html)
+
+## Upgrading to the Unreal Marketplace Plugin
+
+The [Unreal Marketplace Plugin - Upgrade Tutorial](unreal-marketplace-plugin-upgrade-tutorial.md) will step you through upgrading your project from either the PlayFab Unreal C++ SDK or the PlayFab Unreal Blueprint SDK, to the new PlayFab Unreal Marketplace Plugin.
