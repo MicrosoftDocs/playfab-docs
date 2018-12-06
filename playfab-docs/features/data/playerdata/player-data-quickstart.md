@@ -23,7 +23,7 @@ This topic covers client-API calls, which are safe to call from any process or c
 
 - The C# Code Examples shown in this Quickstart correspond to using the PlayFab Unity SDK.
 - Use the client APIs [UpdateUserData](xref:titleid.playfabapi.com.client.playerdatamanagement.updateuserdata) to create, update, or delete and [GetUserData](xref:titleid.playfabapi.com.client.playerdatamanagement.getuserdata) to read data for the player.
-- Use the server API [UpdateUserReadOnlyData](ref:titleid.playfabapi.com.server.playerdatamanagement.updateuserreadonlydata) to create, update, or delete and the client API [GetUserReadOnlyData](xref:titleid.playfabapi.com.client.playerdatamanagement.getuserreadonlydata) to read title-specific data for the player. This data is visible to the player, but can only be modified by the server.
+- Use the server API [UpdateUserReadOnlyData](xref:titleid.playfabapi.com.server.playerdatamanagement.updateuserreadonlydata) to create, update, or delete and the client API [GetUserReadOnlyData](xref:titleid.playfabapi.com.client.playerdatamanagement.getuserreadonlydata) to read title-specific data for the player. This data is visible to the player, but can only be modified by the server.
 - Use the server APIs [UpdateUserInternalData](xref:titleid.playfabapi.com.server.playerdatamanagement.updateuserinternaldata) to create, update, or delete and [GetUserInternalData](xref:titleid.playfabapi.com.server.playerdatamanagement.getuserinternaldata) to read title-specific data for the player. This data is server-only, and cannot be seen by the client.
 
 ## Player Data in Game Manager
@@ -85,7 +85,7 @@ void GetUserData() {
 
 ## Setting Read-only Player Data
 
-This is data that the server can modify, but the client can only read. To set read-only KVPs, you must call the [UpdateUserReadOnlyData](ref:titleid.playfabapi.com.server.playerdatamanagement.updateuserreadonlydata) API from a server process.
+This is data that the server can modify, but the client can only read. To set read-only KVPs, you must call the [UpdateUserReadOnlyData](xref:titleid.playfabapi.com.server.playerdatamanagement.updateuserreadonlydata) API from a server process.
 
 ### C# Code Example
 
