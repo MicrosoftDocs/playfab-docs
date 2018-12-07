@@ -1,3 +1,15 @@
+---
+title: PlayFab Release Notes 2018
+author: v-thopra
+description: PlayFab Release Notes for 2018.
+ms.author: v-thopra
+ms.date: 07/12/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, development, release, apis, features
+ms.localizationpriority: medium
+---
+
 # PlayFab Release Notes 2018
 
 ## 181203

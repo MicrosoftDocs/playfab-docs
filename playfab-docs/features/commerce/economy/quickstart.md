@@ -1,3 +1,15 @@
+---
+title: Economy Quickstart
+author: v-thopra
+description: Quickstart for Economy.
+ms.author: v-thopra
+ms.date: 06/12/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, commerce, economy, media, coupons, promotions, cloudscript
+ms.localizationpriority: medium
+---
+
 # Economy Quickstart
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa tincidunt dui ut ornare lectus. Viverra vitae congue eu consequat ac felis donec. Leo urna molestie at elementum eu facilisis. A cras semper auctor neque vitae tempus quam. Amet cursus sit amet dictum sit amet justo donec enim. Faucibus turpis in eu mi bibendum neque egestas congue. Morbi quis commodo odio aenean sed adipiscing diam. Lectus vestibulum mattis ullamcorper velit. Dictum fusce ut placerat orci nulla pellentesque.

@@ -1,7 +1,21 @@
+---
+title: Introduction to PlayFab Multiplayer Networking and Chat
+author: v-thopra
+description: Introduces the concepts and APIs for PlayFab networking.
+ms.author: v-thopra
+ms.date: 07/12/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, multiplayer, networking
+ms.localizationpriority: medium
+---
+
 # Introduction to PlayFab Multiplayer Networking and Chat
+
 PlayFab Multiplayer Networking and Chat is a set of libraries and services for easily adding multiplayer real-time networking and chat communication to your game. 
 
-Concepts
+## Concepts
+
 The networking service is oriented around a few key concepts:
 
 - `Network` - A logical representation of a set of interconnected devices participating in a particular multiplayer experience, as well as basic state describing that collection. 
@@ -13,7 +27,7 @@ At a very high level, the game application uses the  PlayFab networking library 
 
 As opposed to a client-server model, a PlayFab network is logically a fully-connected mesh of peer devices. As described in the section of this document, any player can send directly to any other through the API. 
 
-Features
+## Features
 
 |-|Run-time management|Networking|
 |-|-|-|

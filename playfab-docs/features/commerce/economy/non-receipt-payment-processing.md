@@ -10,7 +10,7 @@ keywords: playfab, commerce, economy, media, carts, payments, purchases
 ms.localizationpriority: medium
 ---
 
-## Non-Receipt Payment Processing
+# Non-Receipt Payment Processing
 
 In addition to receipt validation for a variety of platforms, **PlayFab** also provides a mechanism for enabling purchases via payment providers that don’t use a receipt or entitlement based systems, such as **Facebook**, **PayPal**, **Xsolla**, and **Steam**.
 

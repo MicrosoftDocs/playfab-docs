@@ -6,7 +6,7 @@ ms.author: mawillia
 ms.date: 11/16/2018
 ms.topic: article
 ms.prod: playfab
-keywords: playfab, real-time analytics, PlayStream, player behaviours, event archiving, data export, player data, webhooks, analytic reporting, reports
+keywords: playfab, real-time analytics, PlayStream, player behaviors, event archiving, data export, player data, webhooks, analytic reporting, reports
 ms.localizationpriority: medium
 ---
 

@@ -1,3 +1,15 @@
+---
+title: Recipes
+author: v-thopra
+description: How-to videos for PlayFab features and technologies.
+ms.author: v-thopra
+ms.date: 07/12/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, videos, how-to, development
+ms.localizationpriority: medium
+---
+
 # Recipes
 
 ## Videos

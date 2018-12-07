@@ -5,6 +5,7 @@ metadata:
   title: "PlayFab Quickstarts"
   author: v-thopra  
   description: Landing page for PlayFab Quickstarts.
+  ms.author: v-thopra
   ms.date: 11/12/2018
   ms.topic: landing-page
   ms.prod: playfab
@@ -19,37 +20,46 @@ sections:
     items:
     - image:
         src: "/gaming/playfab/media/quickstart_authentication.svg"
+        alt: "PlayFab Quickstarts: Authentication card image"        
       title: "Authentication"
       html: "<p><a href='/gaming/playfab/features/authentication/linking-unlinking/account-linking-quickstart'>Linking &amp; Unlinking</a></p><p><a href='/gaming/playfab/features/authentication/platform-specific-authentication/quickstart'>Platform-Specific Authentication</a></p>"
     - image:
         src: "/gaming/playfab/media/quickstart_data.svg"
+        alt: "PlayFab Quickstarts: Data card image"        
       title: "Data"
       html: "<p><a href='/gaming/playfab/features/data/entities-quickstart/quickstart'>Entities</a></p><p><a href='/gaming/playfab/features/data/playerdata/player-data-quickstart'>Player Data</a></p><p><a href='/gaming/playfab/features/data/content-delivery-network/cdn-quickstart'>Content Delivery Network</a></p>"
     - image:
         src: "/gaming/playfab/media/quickstart_config.svg"
+        alt: "PlayFab Quickstarts: Config card image"        
       title: "Config"
       html: "<p><a href='/gaming/playfab/features/config/gamemanager/game-manager-quickstart'>Game Manager</a></p><p><a href='/gaming/playfab/features/config/titledata/title-data-quickstart'>Title Data</a></p><p><a href='/gaming/playfab/features/config/dev-test-live/quickstart'>Dev-Test-Live</a></p>"
     - image:
         src: "/gaming/playfab/media/quickstart_automation.svg"
+        alt: "PlayFab Quickstarts: Automation card image"        
       title: "Automation"
       html: "<p><a href='/gaming/playfab/features/automation/cloudscript/cloudscript-quickstart'>CloudScript</a></p><p><a href='/gaming/playfab/features/automation/playstream-events/playstream-quickstart'>PlayStream</a></p><p><a href='/gaming/playfab/features/automation/actions-rules/quickstart'>Actions &amp; Rules</a></p><p><a href='/gaming/playfab/features/automation/scheduled-tasks/scheduled-tasks-quickstart'>Scheduled Tasks</a></p>"
     - image:
         src: "/gaming/playfab/media/quickstart_social.svg"
+        alt: "PlayFab Quickstarts: Social card image"        
       title: "Social"
       html: "<p><a href='/gaming/playfab/features/social/friends-groups/quickstart'>Friends &amp; Groups</a></p><p><a href='/gaming/playfab/features/social/tournaments-leaderboards/quickstart'>Tournaments &amp; Leaderboards</a></p><p><a href='/gaming/playfab/features/social/trading/trading-quickstart'>Trading</a></p>"
     - image:
         src: "/gaming/playfab/media/quickstart_commerce.svg"
+        alt: "PlayFab Quickstarts: Commerce card image"        
       title: "Commerce"
       html: "<p><a href='/gaming/playfab/features/commerce/items/quickstart'>Items</a></p><p><a href='/gaming/playfab/features/commerce/stores/quickstart'>Stores</a></p><p><a href='/gaming/playfab/features/commerce/economy/quickstart'>Economy</a></p>"
     - image:
         src: "/gaming/playfab/media/quickstart_multiplayer.svg"
+        alt: "PlayFab Quickstarts: Multiplayer card image"        
       title: "Multiplayer"
       html: "<p><a href='/gaming/playfab/features/multiplayer/compute/quickstart'>Compute</a></p><p><a href='/gaming/playfab/features/multiplayer/matchmaking/quickstart'>Matchmaking</a></p><p><a href='/gaming/playfab/features/multiplayer/photon/photon-quickstart'>Photon</a></p>"
     - image:
         src: "/gaming/playfab/media/quickstart_analytics.svg"
+        alt: "PlayFab Quickstarts: Analytics card image"        
       title: "Analytics"
       html: "<p><a href='/gaming/playfab/features/analytics/metrics/quickstart'>Metrics</a></p><p><a href='/gaming/playfab/features/analytics/reports/reports-quickstart'>Reports</a></p><p><a href='/gaming/playfab/features/analytics/ab-testing/ab-testing-quickstart'>A/B Testing</a></p><p><a href='/gaming/playfab/features/analytics/segmentation/quickstart'>Segmentation</a></p>"
     - image:
         src: "/gaming/playfab/media/quickstart_engagement.svg"
+        alt: "PlayFab Quickstarts: Engagement card image"        
       title: "Engagement"
       html: "<p><a href='/gaming/playfab/features/engagement/push-notifications/push-notifications-quickstart'>Push Notifications</a></p><p><a href='/gaming/playfab/features/engagement/emails/quickstart'>Emails</a></p><p><a href='/gaming/playfab/features/engagement/news/title-news-quickstart'>News</a></p>"

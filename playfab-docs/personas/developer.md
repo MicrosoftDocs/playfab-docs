@@ -39,7 +39,7 @@ Below, you can find a number of different ways that PlayFab maps onto a game and
 - [Groups](../features/social/friends-groups/using-shared-group-data.md) – Groups are generally used for things like Guilds or Clans.  Groups are arbitrary and have members, roles and other guild like features.
 
 <!-- ![Configuration and Events](https://playfab.com/assets/img/products/liveops-config.png) -->
-<img src="images/liveops-config.png" width="600" />
+<img src="images/liveops-config.png" alt="LiveOps configuration and events" width="600" />
 
 ## PlayFab advanced
 

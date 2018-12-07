@@ -1,13 +1,12 @@
 ---
-title: player-encryption-services
+title: Player Encryption Services
 author: v-kciril
 description: Describes the various types of encryption that are available.
 ms.author: v-kciril
 ms.date: 01/11/2018
 ms.topic: article
 ms.prod: gaming
-ms.technology: playfab
-keywords: playfab
+keywords: playfab, game manager
 ms.localizationpriority: medium
 ---
 

@@ -1,3 +1,15 @@
+---
+title: Player Segment configuration
+author: v-thopra
+description: Describes the basics of Player Segment configuration.
+ms.author: v-thopra
+ms.date: 06/12/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, game manager, player data, segements
+ms.localizationpriority: medium
+---
+
 # Player Segment configuration
 
 The **Segment** configuration page allows you to configure new or existing segments.  You can:

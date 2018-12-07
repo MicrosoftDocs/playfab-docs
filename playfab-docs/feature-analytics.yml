@@ -5,6 +5,7 @@ metadata:
   title: "PlayFab Analytics Features"
   author: v-thopra
   description: Landing page for PlayFab Analytics features.
+  ms.author: v-thopra
   ms.date: 11/13/2018
   ms.topic: landing-page
   ms.prod: playfab
@@ -19,17 +20,21 @@ sections:
     items:
     - image:
         src: "/gaming/playfab/features/media/feature_metrics.svg"
+        alt: "PlayFab Analytics Features - Metrics card image"        
       title: "Metrics"
       html: "<p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/analytics/metrics/'>Overview</a></p><p><a href='/gaming/playfab/features/analytics/metrics/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/analytics/metrics/tutorials'>Tutorials</a></p>"
     - image:
         src: "/gaming/playfab/features/media/feature_reports.svg"
+        alt: "PlayFab Analytics Features - Reports card image"        
       title: "Reports"
       html: "<p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/analytics/reports/'>Overview</a></p><p><a href='/gaming/playfab/features/analytics/reports/reports-quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/analytics/reports/reports-tutorials'>Tutorials</a></p>"
     - image:
         src: "/gaming/playfab/features/media/feature_ab_testing.svg"
+        alt: "PlayFab Analytics Features - A/B Testing card image"        
       title: "A/B Testing"
       html: "<p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/analytics/ab-testing/'>Overview</a></p><p><a href='/gaming/playfab/features/analytics/ab-testing/ab-testing-quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/analytics/ab-testing/ab-testing-tutorials'>Tutorials</a></p>"
     - image:
         src: "/gaming/playfab/features/media/feature_segmentation.svg"
+        alt: "PlayFab Analytics Features - Segmentation card image"        
       title: "Segmentation"
       html: "<p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/analytics/segmentation/'>Overview</a></p><p><a href='/gaming/playfab/features/analytics/segmentation/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/analytics/segmentation/tutorials'>Tutorials</a></p>"

@@ -1,13 +1,28 @@
-## Communication Fabric (Bumblelion)
+---
+title: Communication Fabric (Bumblelion)
+author: v-thopra
+description: Homepage for the Bumblelion 1PP Preview. Properly called PlayFab Multiplayer Communication Fabric.
+ms.author: v-thopra
+ms.date: 07/12/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, multiplayer, bumblelion, networking, communication
+ms.localizationpriority: medium
+---
+
+# Communication Fabric (Bumblelion)
+
 This is the homepage for the Bumblelion 1PP Preview. Properly called "PlayFab Multiplayer Communication Fabric," this relay service creates secure, ultra low-latency device-to-device networks. You can use these networks for game data or voice and text chat.
 
 Here are current docs:
-- [Private Preview libraries and release notes](./bmbquickstart.md)
+
+- [Private Preview libraries and release notes](./bmb-quickstart.md)
 - [Stub conceptual introduction](./intro-to-networking.md)
 
 Got questions? Email [Bumblelion Overhead](mailto:bumblelionoverhead@microsoft.com)
 
 Artifacts that are coming soon with the (driver) and (ETA):
+
 - Reference documentation (Marco)(1901)
 - Legit conceptual documentation (Chris) (Starting December 1 and improving)
 - BumbleRumble (a sample)(Jason Kepner)(December 1)
@@ -15,7 +30,8 @@ Artifacts that are coming soon with the (driver) and (ETA):
 
 
 ## Roadmap
-|-|1PP Private Preview (1810)|3PP Private Preivew (1902)|3PP Public Preview (1904)|
+
+|-|1PP Private Preview (1810)|3PP Private Preview (1902)|3PP Public Preview (1904)|
 |-|-|-|-|
 |Players|32 max|-|-|
 |Chat|Voice; Speech to text|Text; Text to Speech||
@@ -24,17 +40,19 @@ Artifacts that are coming soon with the (driver) and (ETA):
 |Administration|-|Game Manager UX | Billing & Consumption analytics|
 
 Backlog (dates TBD):
+
 - Client Audio manipulation (post-decode)
 - Client Audio manipulation (pre-encode)
-- Speech to Text translation 
+- Speech to Text translation
 - Text to Text translation
-- Increaseing player maximum
+- Increasing player maximum
 - PLayFab Multiplayer Server library
 - Server Mixing
 - Peer-to-peer transport (reduces network egress cost)
 
 
 ## Inital SDK Availability
+
 Table below indicates our confidence level for providing an SDK for the specified platform on that date. We intend to support every platform on this list it's simply a matter of time.
 
 |-|1PP Private Preview (1810)|3PP Private Preivew (1902)|3PP Public Preview 1904|
@@ -50,6 +68,7 @@ Table below indicates our confidence level for providing an SDK for the specifie
 |GameCore/Xbox|-|High|-|
 
 ## How does Bumblelion related to Xbox Integrated Multiplayer? (XIM)
+
 |-|Bumblelion | XIM |
 |-|-|-|
 |Identity|- PlayFab Custom <br> - XBL <br> - Steam <br> - PSN <br> |- Xbox Live|
@@ -59,9 +78,3 @@ Table below indicates our confidence level for providing an SDK for the specifie
 |Network|- Low latency messaging between devices | - Low latency messaging between devices |
 |Chat|- Voice and Text Chat <br> - Text to Speech synthesis <br> - Speech to text transcription <br> - Text to text translation <br> - Speech to text translation |- Voice and Text Chat <br> - Text to Speech synthesis <br> - Speech to text transcription |
 |Telemetry| - Integrated PlayStream events | - No telemetry |
-
-
-
-
-
-

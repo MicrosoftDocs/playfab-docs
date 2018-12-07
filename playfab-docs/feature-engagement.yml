@@ -5,6 +5,7 @@ metadata:
   title: "PlayFab Engagement Features"
   author: v-thopra  
   description: Landing page for PlayFab Engagement features.
+  ms.author: v-thopra
   ms.date: 11/13/2018
   ms.topic: landing-page
   ms.prod: playfab  
@@ -19,13 +20,16 @@ sections:
     items:
     - image:
         src: "/gaming/playfab/features/media/feature_push_notifications.svg"
+        alt: "PlayFab Engagement Features - Push Notifications card image"        
       title: "Push Notifications"
       html: "<p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/engagement/push-notifications/'>Overview</a></p><p><a href='/gaming/playfab/features/engagement/push-notifications/push-notifications-quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/engagement/push-notifications/push-notifications-tutorials'>Tutorials</a></p>"
     - image:
         src: "/gaming/playfab/features/media/feature_emails.svg"
+        alt: "PlayFab Engagement Features - Emails card image"        
       title: "Emails"
       html: "<p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/engagement/emails/'>Overview</a></p><p><a href='/gaming/playfab/features/engagement/emails/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/engagement/emails/tutorials'>Tutorials</a></p>"
     - image:
         src: "/gaming/playfab/features/media/feature_news.svg"
+        alt: "PlayFab Engagement Features - News card image"        
       title: "News"
       html: "<p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/engagement/news/'>Overview</a></p><p><a href='/gaming/playfab/features/engagement/news/title-news-quickstart'>Quickstart</a></p>"

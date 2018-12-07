@@ -5,6 +5,7 @@ metadata:
   title: "PlayFab Social Features"
   author: v-thopra  
   description: Landing page for PlayFab Social features.
+  ms.author: v-thopra
   ms.date: 11/13/2018
   ms.topic: landing-page
   ms.prod: playfab  
@@ -19,13 +20,16 @@ sections:
     items:
     - image:
         src: "/gaming/playfab/features/media/feature_friends_groups.svg"
+        alt: "PlayFab Social Features - Friends & Groups card image"        
       title: "Friends &amp; Groups"
       html: "<p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/social/friends-groups/'>Overview</a></p><p><a href='/gaming/playfab/features/social/friends-groups/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/social/friends-groups/tutorials'>Tutorials</a></p>"
     - image:
         src: "/gaming/playfab/features/media/feature_tournaments_leaderboards.svg"
+        alt: "PlayFab Social Features - Tournaments & Leaderboards card image"        
       title: "Tournaments &amp; Leaderboards"
       html: "<p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/social/tournaments-leaderboards/'>Overview</a></p><p><a href='/gaming/playfab/features/social/tournaments-leaderboards/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/social/tournaments-leaderboards/tutorials'>Tutorials</a></p>"
     - image:
         src: "/gaming/playfab/features/media/feature_trading.svg"
+        alt: "PlayFab Social Features - Trading card image"        
       title: "Trading"
       html: "<p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/social/trading/'>Overview</a></p><p><a href='/gaming/playfab/features/social/trading/trading-quickstart'>Quickstart</a></p>"
