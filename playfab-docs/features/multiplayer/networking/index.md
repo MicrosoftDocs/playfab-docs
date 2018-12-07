@@ -18,6 +18,7 @@ Here are current docs:
 
 - [Private Preview libraries and release notes](./bmb-quickstart.md)
 - [Stub conceptual introduction](./intro-to-networking.md)
+- [Proposed pricing](./pricing.md)
 
 Got questions? Email [Bumblelion Overhead](mailto:bumblelionoverhead@microsoft.com)
 
