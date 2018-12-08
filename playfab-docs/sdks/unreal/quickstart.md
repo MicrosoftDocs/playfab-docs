@@ -20,11 +20,11 @@ This guide will help you set up Unreal Engine, install the PlayFab Marketplace P
 - [Set up your first Blueprint call](#set-up-your-first-blueprint-call)
   - [Finish and Execute with Blueprint](#finish-and-execute-with-blueprint)
 
-- [Set up your first C++ call](#set-up-your-first-c++-call)
+- [Set up your first C++ call](#set-up-your-first-c-call)
   - [Finish and Execute with C++](#finish-and-execute-with-c++)
   
 - [Deconstruct the Blueprint Example](#deconstruct-the-blueprint-example)
-- [Deconstruct the C++ code example](#deconstruct-the-c++-code-example)
+- [Deconstruct the C++ code example](#deconstruct-the-c-code-example)
 
 - [Upgrading to the Unreal Marketplace Plugin](#upgrading-to-the-unreal-marketplace-plugin)
 

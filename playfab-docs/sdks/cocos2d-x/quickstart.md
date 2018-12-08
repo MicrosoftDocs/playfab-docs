@@ -21,11 +21,11 @@ This guide will help you make your first PlayFab API call in the Cocos2d-x engin
   - Visual Studio 2013 will have identical steps, but the screenshots will look a little different from yours
 
   - Download and install Cocos2d-x
-    - [http://www.cocos2d-x.org/download](http://www.cocos2d-x.org/download)
+    - [https://www.cocos2d-x.org/download](https://www.cocos2d-x.org/download)
     - Setting up Cocos2d-x requires some familiarity. Check out their guides:
-      - [http://cocos2d-x.org/docs/installation/Windows/](http://cocos2d-x.org/docs/installation/Windows/)
-      - [http://cocos2d-x.org/docs/editors_and_tools/cocosCLTool/](http://cocos2d-x.org/docs/editors_and_tools/cocosCLTool/)
-      - Note the [Cocos Prerequisites](http://www.cocos2d-x.org/docs/cocos2d-x/en/installation/prerequisites.html)
+      - [https://cocos2d-x.org/docs/installation/Windows/](https://cocos2d-x.org/docs/installation/Windows/)
+      - [https://cocos2d-x.org/docs/editors_and_tools/cocosCLTool/](https://cocos2d-x.org/docs/editors_and_tools/cocosCLTool/)
+      - Note the [Cocos Prerequisites](https://www.cocos2d-x.org/docs/cocos2d-x/en/installation/prerequisites.html)
       - This guide also requires Visual Studio 2013 or 2015
 
   - Once you have Cocos2d-x configured, create a project using the Cocos CLI:

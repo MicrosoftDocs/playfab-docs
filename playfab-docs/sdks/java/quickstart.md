@@ -23,7 +23,7 @@ In order to utilize PlayFab JavaSDK we will need PlayFab Client JavaSDK and it's
 
 You may download PlayFab Client JavaSDK JAR library [here](https://github.com/PlayFab/JavaSDK/tree/versioned/builds). Look for **client-sdk-*.jar** and the corresponding Java Doc [Optional but useful].
 
-You may download latest Google GSON [here](http://repo1.maven.org/maven2/com/google/code/gson/gson/2.8.0/). Look for **gson-*.jar**.
+You may download latest Google GSON [here](https://repo1.maven.org/maven2/com/google/code/gson/gson/2.8.0/). Look for **gson-*.jar**.
 
 ## Project Setup with Intellij Idea
 

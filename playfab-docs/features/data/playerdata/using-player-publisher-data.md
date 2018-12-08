@@ -20,7 +20,7 @@ By the way, please don't confuse Player Publisher Data with [Publisher Data](../
 
 Player Publisher Data usage is nearly identical to Player Data usage. They are both dictionaries mapping a string to a JSON blob (or other arbitrary string value).
 
-Our example in this tutorial, [Grant a Reward for Playing Multiple Titles](#grant-a-reward-for-pPlaying-multiple-titles), will demonstrate saving JSON blobs, and focus on a targeted example of why you might use Player Publisher Data.
+Our example in this tutorial, [Grant a Reward for Playing Multiple Titles](#grant-a-reward-for-playing-multiple-titles), will demonstrate saving JSON blobs, and focus on a targeted example of why you might use Player Publisher Data.
 
 ## Grant a Reward for Playing Multiple Titles
 

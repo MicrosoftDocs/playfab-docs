@@ -25,7 +25,7 @@ This is chapter 2 of our tutorial [Getting Started with PlayFab](getting-started
 
 Chapter 2 contains the following steps to get you started setting up your game's in-game economy:
 
-1. [Set up a virtual currency for your game](#step-1-set-up-a-virtual-currency-for-your-game).
+1. [Set up a virtual currency for your game](#step-1-setting-up-a-virtual-currency-for-your-game).
 
 2. [Add catalog items](#step-2-add-catalog-items).
 3. [Purchase an item using virtual currency](#step-3-purchase-an-item-using-virtual-currency).

@@ -230,4 +230,4 @@ Currently, we only support our services for the standard flow described in this 
 
 For documentation on the push payload via Amazon SNS:
 
-- [Amazon SNS Message & JSON Formats](http://docs.aws.amazon.com/sns/latest/dg/json-formats.html)
+- [Amazon SNS Message & JSON Formats](https://docs.aws.amazon.com/sns/latest/dg/json-formats.html)

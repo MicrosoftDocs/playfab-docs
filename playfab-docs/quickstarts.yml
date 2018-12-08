@@ -27,7 +27,7 @@ sections:
         src: "/gaming/playfab/media/quickstart_data.svg"
         alt: "PlayFab Quickstarts: Data card image"        
       title: "Data"
-      html: "<p><a href='/gaming/playfab/features/data/entities-quickstart/quickstart'>Entities</a></p><p><a href='/gaming/playfab/features/data/playerdata/player-data-quickstart'>Player Data</a></p><p><a href='/gaming/playfab/features/data/content-delivery-network/cdn-quickstart'>Content Delivery Network</a></p>"
+      html: "<p><a href='/gaming/playfab/features/data/entities/entities-quickstart/quickstart'>Entities</a></p><p><a href='/gaming/playfab/features/data/playerdata/player-data-quickstart'>Player Data</a></p><p><a href='/gaming/playfab/features/data/content-delivery-network/cdn-quickstart'>Content Delivery Network</a></p>"
     - image:
         src: "/gaming/playfab/media/quickstart_config.svg"
         alt: "PlayFab Quickstarts: Config card image"        

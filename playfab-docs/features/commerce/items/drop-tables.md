@@ -97,9 +97,8 @@ Our other categorization is by **Rarity**, so we'll create an alternate set of t
 
 You can access **Drop Tables** directly by using one of the two **Server API** methods:
 
-- [GetRandomResultTables]()
-
-- [EvaluateRandomResultTable]()
+- [GetRandomResultTables](xref:titleid.playfabapi.com.server.playeritemmanagement.getrandomresulttables)
+- [EvaluateRandomResultTable](xref:titleid.playfabapi.com.server.playeritemmanagement.evaluaterandomresulttable)
 
 Using the **Server API** method, you can read the raw **Drop Table** data which we just entered into **Game Manager**.
 
@@ -120,7 +119,7 @@ public void ReadDropTableData() {
 }
 ```
 
-The result handler will receive the structure information we input above, formatted as [GetRandomResultTablesResult]().
+The result handler will receive the structure information we input above, formatted as [GetRandomResultTablesResult](xref:titleid.playfabapi.com.server.playeritemmanagement.getrandomresulttables#getrandomresulttablesresult).
 
 Alternately, you can let PlayFab evaluate the table *for* you, and give you a single item result. Doing so returns the **itemId** that can be used to generate a single item, rolled according to the weights provided. 
 

@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Setting up PlayFab authentication in Phaser.io
 
-[Phaser.io](http://phaser.io/) is a desktop and mobile HTML5 game framework that PlayFab now supports in our Javascript SDK. Phaser.io supports plugins, and thus we here at PlayFab thought that it would be useful to the Phaser.io community to have a powerful back end system that works as a plugin to the Phaser.io engine.
+[Phaser.io](https://phaser.io/) is a desktop and mobile HTML5 game framework that PlayFab now supports in our Javascript SDK. Phaser.io supports plugins, and thus we here at PlayFab thought that it would be useful to the Phaser.io community to have a powerful back end system that works as a plugin to the Phaser.io engine.
 
 This tutorial guides you through the procedure for setting up Phaser.io, and getting started with PlayFab within Phaser.io.
 
@@ -36,7 +36,7 @@ To begin:
 
 ## Setting up Phaser
 
-The first step is to download **Phaser** from [Phaser.io](http://phaser.io/) and set it up. For this tutorial, we advise you to just download the **min.js** file.
+The first step is to download **Phaser** from [Phaser.io](https://phaser.io/) and set it up. For this tutorial, we advise you to just download the **min.js** file.
 
 - Create a folder in your website root called **js**.
 - Download Phaser **min.js** and save it to your **/js** folder in the website root.

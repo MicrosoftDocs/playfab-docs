@@ -26,7 +26,7 @@ This tutorial will guide you through setting up and using **Postman**.
 
 ### Initial Setup
 
-1. Get [Google Chrome](http://google.com/chrome).
+1. Get [Google Chrome](https://google.com/chrome).
 2. Get [Postman](https://www.getpostman.com/), the free **Chrome** plugin. After you have **Postman**, you should see a screen similar to the following.
 
    ![Postman - Blank screen](media/tutorials/postman-blank-screen.png)  

@@ -42,7 +42,7 @@ Date: 2018-11-05
 * PlayFab now supports login and account-linking with OpenID
 * Additional XboxLive ID support, and enabling Xbox login via server
 
-In preparation for wider release of the service, we are rolling out PlayFab Multiplayer Servers 2.0 APIs. See http://aka.ms/PlayFabMultiplayer for more information
+In preparation for wider release of the service, we are rolling out PlayFab Multiplayer Servers 2.0 APIs. See [PlayFab Multiplayer Servers 2.0 (Thunderhead)](../features/multiplayer/compute/thunderhead.md) for more information
 
 ## 181001
 

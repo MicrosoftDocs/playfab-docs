@@ -37,4 +37,4 @@ sections:
         src: "/gaming/playfab/features/media/feature_scheduled_tasks.svg"
         alt: "PlayFab Automation Features - Scheduled Tasks card image"        
       title: "Scheduled Tasks"
-      html: "<p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/automation/scheduled-tasks/'>Overview</a></p><p><a href='/gaming/playfab/features/automation/scheduled-tasks/automation/scheduled-tasks/scheduled-tasks-quickstart'>Quickstart</a></p>"
+      html: "<p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/automation/scheduled-tasks/'>Overview</a></p><p><a href='/gaming/playfab/features/automation/scheduled-tasks/scheduled-tasks-quickstart'>Quickstart</a></p>"

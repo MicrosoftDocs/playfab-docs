@@ -16,8 +16,8 @@ This tutorial shows you the minimal setup required to authenticate your players 
 
 ## Requirements
 
-- Registered [Kongregate](http://www.kongregate.com/) account.
-  - Familiarity with the [Kongregate Developers Guide](http://developers.kongregate.com/docs/api-overview/intro).
+- Registered [Kongregate](https://www.kongregate.com/) account.
+  - Familiarity with the [Kongregate Developers Guide](https://developers.kongregate.com/docs/api-overview/intro).
 - Registered PlayFab Title.
 - Familiarity with [Login basics and Best Practices](../../authentication/platform-specific-authentication/login-basics-best-practices.md).
 
@@ -35,7 +35,7 @@ Kongregate requires you to upload a preview version of the app, before you gain 
 </html>
 ```
 
-Navigate to the [Kongregate website](http://www.kongregate.com/):
+Navigate to the [Kongregate website](https://www.kongregate.com/):
 - Select the **Games** tab **(1)**.
 - Then select the **Upload your game** button **(2)**.
 

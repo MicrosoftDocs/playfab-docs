@@ -43,8 +43,8 @@ First, we will start by getting the basic things set up in Google Play. There ar
     1. Click on **Manage Releases**.
     2. Click on **Manage Alpha**.
     3. Click on **Upload APK**.
-3. [Setting Up Google Play Games Services]() - Watch the YouTube video, as the Link here is dated, and does not reflect the latest UI of Google Play Games Services.
-4. Download the [Google Play Games SDK]() (if you have not done so already) and install it.
+3. [Setting Up Google Play Games Services](https://developers.google.com/games/services/console/enabling) - Watch the [YouTube video](https://youtu.be/BZRoBbUsfPE), as the Link here is dated, and does not reflect the latest UI of Google Play Games Services.
+4. Download the [Google Play Games SDK](https://github.com/playgameservices/play-games-plugin-for-unity) (if you have not done so already) and install it.
 5. Install the **PlayFab Unity SDK** (if you do not know how to do this, follow the [Unity3D Quickstart Guide](../../../sdks/unity3d/quickstart.md)).
 
 ## Configuring Google Play Games
@@ -105,7 +105,7 @@ To obtain your **secret key** follow the link to your **API Console**.
 - The client secret is at the top.
 
 > [!IMPORTANT]
-> You must change the default callback for **Authorized redirect URIs**. The proper URI is [https://oauth.playfab.com/oauth2/google](https://oauth.playfab.com/oauth2/google).
+> You must change the default callback for **Authorized redirect URIs**. The proper URI is `https://oauth.playfab.com/oauth2/google`.
 > If you do not do this step you will get a **mismatch redirect_uri** error.
 
 ## PlayFab Google Sign-In Setup
@@ -216,4 +216,4 @@ There is a callback which will have the results of your login to PlayFab. At thi
 
 Hopefully, this guide has helped you.  But if you have questions, feel free to ask them in our [community forums](https://community.playfab.com/).
 
-You can download the sample for this Tutorial [here](http://s3-us-west-2.amazonaws.com/api-playfab-com-craft-files/FileAssets/GooglePlayGamesSignInExample.zip).
+You can download the sample for this Tutorial [here](https://s3-us-west-2.amazonaws.com/api-playfab-com-craft-files/FileAssets/GooglePlayGamesSignInExample.zip).

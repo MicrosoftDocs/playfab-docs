@@ -26,11 +26,11 @@ This guide will help you make your first PlayFab API call using ActionScript.
   - Downloads:
     - For environment variable instructions below, anything in {curly braces} should be replaced with the actual installation path (don't put actual curly braces in your environment variables)
     - Install the Adobe Air SDK
-      - [http://www.adobe.com/devnet/air/air-sdk-download.html](http://www.adobe.com/devnet/air/air-sdk-download.html)
+      - [https://www.adobe.com/devnet/air/air-sdk-download.html](https://www.adobe.com/devnet/air/air-sdk-download.html)
       - Remember your installation path {AirSdkLocation}, as you will use it below
 
     - Install the Adobe Flex SDK
-      - [http://www.adobe.com/devnet/flex/flex-sdk-download.html](http://www.adobe.com/devnet/flex/flex-sdk-download.html) 
+      - [https://www.adobe.com/devnet/flex/flex-sdk-download.html](https://www.adobe.com/devnet/flex/flex-sdk-download.html) 
       - Remember your installation path {FlexSdkLocation}, and modify your system environment variables:
         - Add {FlexSdkLocation}/bin to your PATH environment variable
           - For example, if you install to C:/dev/flex_sdk_4.6, then set FLEX_HOME=C:/dev/flex_sdk_4.6
@@ -210,7 +210,7 @@ This optional last section describes every file in the ActionScript3 Project in 
       - adl is Air Debug Launcher, which launches a compiled swf file as a Windows app
 
   - GettingStarted.xml
-    - This is a bare bones ActionScript project definition file. The first section of [this Adobe guide](http://help.adobe.com/en_US/air/build/WS901d38e593cd1bac25d3d8c712b2d86751e-8000.html) describes everything in detail:
+    - This is a bare bones ActionScript project definition file. The first section of [this Adobe guide](https://help.adobe.com/en_US/air/build/WS901d38e593cd1bac25d3d8c712b2d86751e-8000.html) describes everything in detail:
 
   - flexcfg.xml
     - This file tells the mxmlc compiler all of the variables and settings it should use

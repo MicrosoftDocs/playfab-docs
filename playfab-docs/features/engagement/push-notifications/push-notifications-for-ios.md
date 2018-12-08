@@ -102,7 +102,7 @@ else
 
 ## Troubleshooting iOS
 
-- [Verify that you have valid .pem files](http://docs.aws.amazon.com/sns/latest/dg/mobile-push-apns.html).
+- [Verify that you have valid .pem files](https://docs.aws.amazon.com/sns/latest/dg/mobile-push-apns.html).
 - Ensure that the same certificate used in **SetupPushNotification** is used by **XCode** to sign your app.
 - Verify that **Push Notification API** is enabled for your build in **XCode**.
 - Verify that your signing certificate matches the PlayFab platform. When running **[SetupPushNotification](xref:titleid.playfabapi.com.admin.title-widedatamanagement.setuppushnotification)**, use **OverwriteOldARN = true** to rebind the channel to a new platform. Only *one* iOS environment (**APNS or APNS_SANDBOX**) can be active on a title at a given time.

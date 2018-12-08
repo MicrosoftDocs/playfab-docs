@@ -83,7 +83,7 @@ As shown in the preceding picture, a Policy consists of several [Permission Stat
 
 Each Permission Statement consists of the following items:
 
-[RESOURCE]((xref:titleid.playfabapi.com.admin.authentication.updatepolicy#permissionstatement)) - A **string** that uniquely identifies one or more PlayFab resources. To describe the API resource, please, use the following convention:
+[RESOURCE](xref:titleid.playfabapi.com.admin.authentication.updatepolicy#permissionstatement) - A **string** that uniquely identifies one or more PlayFab resources. To describe the API resource, please, use the following convention:
 
   `pfrn:api--/API-GROUP/API-CALL`
 

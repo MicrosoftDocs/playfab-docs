@@ -131,9 +131,9 @@ The remaining reset intervals are also defined using UTC, with **Month** making 
 
 ## Preexisting statistics
 
-All statistics defined in the game can be queried for their definition, regardless of whether they were set up as resetting statistics or not. This is important to note, since statistics can be created via the [UpdateUserStatistics](xref:titleid.playfabapi.com.client.playerdatamanagement.updateuserstatistics) call. Any statistics not created with a reset period (VersionChangeInterval) will not have one to start, and so a query for the statistic configuration would return with this parameter set to “Never”.
+All statistics defined in the game can be queried for their definition, regardless of whether they were set up as resetting statistics or not. This is important to note, since statistics can be created via the [UpdatePlayerStatistics](xref:titleid.playfabapi.com.client.playerdatamanagement.updateplayerstatistics) call. Any statistics not created with a reset period (VersionChangeInterval) will not have one to start, and so a query for the statistic configuration would return with this parameter set to “Never”.
 
-Using the example above, if the title also had a statistic named FlagsCaptured created via [UpdateUserStatistics](xref:titleid.playfabapi.com.client.playerdatamanagement.updateuserstatistics) (or created in the Game Manager directly on a player) and a couple of weeks had passed, this call:
+Using the example above, if the title also had a statistic named FlagsCaptured created via [UpdatePlayerStatistics](xref:titleid.playfabapi.com.client.playerdatamanagement.updateplayerstatistics) (or created in the Game Manager directly on a player) and a couple of weeks had passed, this call:
 
 ```csharp
 public void GetPlayerStatisticDefinitions() {
@@ -170,7 +170,7 @@ Would result in the following:
 
 In this case, the **Headshots** statistics has a reset interval defined, and the Current Version indicates that the statistic has been reset twice. Meanwhile, **FlagsCaptured** does not have a VersionChangeInterval, which is also why the CurrentVersion is 0 (since it has never been versioned).
 
-For statistics created via [UpdateUserStatistics](xref:titleid.playfabapi.com.client.playerdatamanagement.updateuserstatistics) (or the PlayFab Game Manager), they can still be defined to have a reset period using UpdatePlayerStatisticDefinition, as described above. 
+For statistics created via [UpdatePlayerStatistics](xref:titleid.playfabapi.com.client.playerdatamanagement.updateplayerstatistics) (or the PlayFab Game Manager), they can still be defined to have a reset period using UpdatePlayerStatisticDefinition, as described above. 
 
 Once this has been done, they will reset on that interval exactly as if they were originally defined using CreatePlayerStatisticDefinition.
 
@@ -297,7 +297,7 @@ In addition to the values returned from IncrementPlayerStatisticVersion, the res
 
 Finally, from the Server and Client API side of the story, the calls are very similar to what you know from original PlayFab user and character statistics calls. 
 
-In this case, there is a call to [UpdateUserStatistics](xref:titleid.playfabapi.com.client.playerdatamanagement.updateuserstatistics) and another to UpdatePlayerStatistics in each API set. The difference here is that now, *the version is part of either the request or the response*.
+In this case, there is a call to [UpdatePlayerStatistics](xref:titleid.playfabapi.com.client.playerdatamanagement.updateplayerstatistics) and another to UpdatePlayerStatistics in each API set. The difference here is that now, *the version is part of either the request or the response*.
 
 When retrieving statistics, the value for the current statistic version, as well as the version number itself is returned. 
 
@@ -434,7 +434,7 @@ public void UpdatePlayerStatistics() {
 }
 ```
 
-In both cases, if the Version were left out of the [UpdateUserStatistics](xref:titleid.playfabapi.com.client.playerdatamanagement.updateuserstatistics) call, the current version (3, in this case) would be the one updated.
+In both cases, if the Version were left out of the [UpdatePlayerStatistics](xref:titleid.playfabapi.com.client.playerdatamanagement.updateplayerstatistics) call, the current version (3, in this case) would be the one updated.
 
 But remember - while the expired version can be written to for up to 10 minutes, any attempt to write to that version beyond that time will fail, with a response like this:
 

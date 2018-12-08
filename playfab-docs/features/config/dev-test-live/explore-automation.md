@@ -14,19 +14,19 @@ ms.localizationpriority: medium
 
 Welcome to Chapter 3 of our tutorial [Getting Started with PlayFab](getting-started-with-playfab.md), the tutorial contains the following chapters: 
 
-[Chapter 1 - Get started with players and tournaments](get-started-with-players-and-tournaments.md)
-[Chapter 2 - Set up your game's in-game economy](set-up-your-games-in-game-economy.md)
-**Chapter 3 - Explore automation**
-[Chapter 4 - Try out content management](try-out-content-management.md)
+- [Chapter 1 - Get started with players and tournaments](get-started-with-players-and-tournaments.md)
+- [Chapter 2 - Set up your game's in-game economy](set-up-your-games-in-game-economy.md)
+- **Chapter 3 - Explore automation**
+- [Chapter 4 - Try out content management](try-out-content-management.md)
 
 ## Overview
 
 Chapter 3 contains the following steps to help you explore automation:
 
-[Step 1: Create a custom server-hosted CloudScript function](#step-1-write-a-cloud-script-function)
-[Step 2: Create a filtered segment of players](#step-2-create-a-filtered-segment-of-players)
-[Step 3: Trigger an action when players enter that segment](#step-3-trigger-an-action-when-players-enter-that-segment)
-[Step 4: Target a custom store to players in that segment](#step-4-override-a-store)
+- [Step 1: Create a custom server-hosted CloudScript function](#step-1-write-a-cloudscript-function)
+- [Step 2: Create a filtered segment of players](#step-2-create-a-filtered-segment-of-players)
+- [Step 3: Trigger an action when players enter that segment](#step-3-trigger-an-action-when-players-enter-that-segment)
+- [Step 4: Target a custom store to players in that segment](#step-4-override-a-store)
 
 ## Step 1: Write a CloudScript function
 

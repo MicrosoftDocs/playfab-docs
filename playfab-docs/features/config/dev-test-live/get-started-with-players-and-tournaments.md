@@ -26,12 +26,12 @@ This is the first chapter of our tutorial [Getting Started with PlayFab](getting
 
 Chapter 1 contains the following steps to get you started with **Players** and **Tournaments**:
 
-1. [Getting started and making your first API call](#step-1-getting-started-and-making-your-first-api-call)
-1. [Updating your Login mechanism](#step-2-update-your-login-mechanism)
-1. [Using remote configuration data](#step-3-using-remote-configuration-data)
-1. [Viewing your player profile in the Game Manager](#step-4-view-your-player-profile-in-the-game-manager)
-1. [Creating a basic Leaderboard](#step-5-create-a-basic-leaderboard)
-1. [PlayStream Events](#step-6-playstream-events)
+- [Step 1: Getting started and making your first API call](#step-1-getting-started-and-making-your-first-api-call)
+- [Step 2: Updating your Login mechanism](#step-2-updating-your-login-mechanism)
+- [Step 3: Using remote configuration data](#step-3-using-remote-configuration-data)
+- [Step 4: View your Player profile in the Game Manager](#step-4-view-your-player-profile-in-the-game-manager)
+- [Step 5: Create a basic Leaderboard](#step-5-create-a-basic-leaderboard)
+- [Step 6: PlayStream Events](#step-6-playstream-events)
 
 ## Step 1: Getting started and making your first API call
 
@@ -157,7 +157,7 @@ The **Player's Custom ID** is *not* the same as their **User ID**.
 
 ![PlayFab support](media/tutorials/customer-support.png)  
 
-## Step 5 - Create a basic Leaderboard
+## Step 5: Create a basic Leaderboard
 
 Let's create a **Statistic** for this **Player** so you can try out our **Leaderboard** feature, and later, some **Player** segmentation capabilities.
 
