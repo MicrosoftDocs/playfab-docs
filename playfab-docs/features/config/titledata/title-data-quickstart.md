@@ -10,9 +10,9 @@ keywords: playfab, configuration, title data
 ms.localizationpriority: medium
 ---
 
-# Title Data Quickstart
+# Title Data quickstart
 
-This Quickstart describes how to programmatically create and use **Title Data**.
+This quickstart describes how to programmatically create and use **Title Data**.
 
 This an important topic because storing a game's configuration data remotely, on the server, where it can be changed at any time, is one of the most basic reasons to use a service like **PlayFab**.
 
@@ -142,5 +142,5 @@ public void SetTitleInternalData() {
 ## See also
 
 - [Using Publisher Data](../../config/titledata/using-publisher-data.md)
-- [Player Data Quickstart](../../data/playerdata/player-data-quickstart.md)
-- [CloudScript Quickstart](../../automation/cloudscript/cloudscript-quickstart.md)
+- [Player Data quickstart](../../data/playerdata/player-data-quickstart.md)
+- [CloudScript quickstart](../../automation/cloudscript/cloudscript-quickstart.md)

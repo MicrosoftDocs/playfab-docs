@@ -45,7 +45,7 @@ First, we will start by getting the basic things set up in Google Play. There ar
     3. Click on **Upload APK**.
 3. [Setting Up Google Play Games Services](https://developers.google.com/games/services/console/enabling) - Watch the [YouTube video](https://youtu.be/BZRoBbUsfPE), as the Link here is dated, and does not reflect the latest UI of Google Play Games Services.
 4. Download the [Google Play Games SDK](https://github.com/playgameservices/play-games-plugin-for-unity) (if you have not done so already) and install it.
-5. Install the **PlayFab Unity SDK** (if you do not know how to do this, follow the [Unity3D Quickstart Guide](../../../sdks/unity3d/quickstart.md)).
+5. Install the **PlayFab Unity SDK** (if you do not know how to do this, follow the [Unity3D quickstart guide](../../../sdks/unity3d/quickstart.md)).
 
 ## Configuring Google Play Games
 

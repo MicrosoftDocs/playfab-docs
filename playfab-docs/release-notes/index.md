@@ -82,7 +82,7 @@ Date: 2018-09-17
 * [Server API](https://api.playfab.com/documentation/server): Method [DeleteUsers](https://api.playfab.com/documentation/server/method/DeleteUsers) is deprecated and replaced with [DeletePlayer](xref:titleid.playfabapi.com.server.accountmanagement.deleteplayer)
 * Unreal Marketplace Plugin:
     * Updated Marketplace Plugin to include our Blueprint interface
-    * [New Unreal Engine Quickstart Guide](../sdks/unreal/quickstart.md)
+    * [New Unreal Engine quickstart guide](../sdks/unreal/quickstart.md)
     * [View in Unreal Marketplace](https://www.unrealengine.com/marketplace/playfab-sdk)
     * [Upgrade Tutorial](../sdks/unreal/unreal-marketplace-plugin-upgrade-tutorial.md)
 

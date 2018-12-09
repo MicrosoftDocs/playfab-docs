@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 ## Prerequisites
 
-This tutorial assumes that you are familiar with the concepts covered in our [Push Notifications Quickstart](push-notifications-quickstart.md).
+This tutorial assumes that you are familiar with the concepts covered in our [Push Notifications quickstart](push-notifications-quickstart.md).
 
 ## Configuring the Apple notification channel
 

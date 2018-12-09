@@ -18,7 +18,7 @@ Alternately, a **Store** allows you to single out a specific set of items, and m
 
 ## Requirements
 
-- [Game Manger](../../config/gamemanager/game-manager-quickstart.md)
+- [Game Manager](../../config/gamemanager/game-manager-quickstart.md)
 - One or more [Virtual Currencies](../economy/currencies.md) defined. The latter example on this guide uses:
 
    - **SS** (**Silver Shekels**)

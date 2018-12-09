@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Getting started with Bumblelion Private Preview
 
-This Quickstart helps you get started with the Bumblelion 1PP Preview. Properly called the PlayFab Multiplayer Communication Fabric.
+This quickstart helps you get started with the Bumblelion 1PP Preview. Properly called the PlayFab Multiplayer Communication Fabric.
 
 ## Share Location
 

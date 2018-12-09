@@ -1,5 +1,5 @@
 ---
-title: Actions & Rules Quickstart
+title: Actions & Rules quickstart
 author: v-thopra
 description:  Quickstart for Actions & Rules.
 ms.author: v-thopra
@@ -10,7 +10,7 @@ keywords: playfab, automation, actions, rules
 ms.localizationpriority: medium
 ---
 
-# Actions &amp; Rules Quickstart
+# Actions &amp; Rules quickstart
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa tincidunt dui ut ornare lectus. Viverra vitae congue eu consequat ac felis donec. Leo urna molestie at elementum eu facilisis. A cras semper auctor neque vitae tempus quam. Amet cursus sit amet dictum sit amet justo donec enim. Faucibus turpis in eu mi bibendum neque egestas congue. Morbi quis commodo odio aenean sed adipiscing diam. Lectus vestibulum mattis ullamcorper velit. Dictum fusce ut placerat orci nulla pellentesque.
 

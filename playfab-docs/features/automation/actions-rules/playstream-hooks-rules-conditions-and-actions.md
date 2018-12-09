@@ -16,7 +16,7 @@ A **PlayStream Rule** allows you to react to a subset of one type of **PlayStrea
 
 ## Requirements
 
-- [Game Manager Quickstart](../../config/gamemanager/game-manager-quickstart.md)
+- [Game Manager quickstart](../../config/gamemanager/game-manager-quickstart.md)
 - [Using player statistics](../../data/playerdata/using-player-statistics.md) (contains information that can help you with the example in this tutorial).
 
 A quick glossary of relevant terms:

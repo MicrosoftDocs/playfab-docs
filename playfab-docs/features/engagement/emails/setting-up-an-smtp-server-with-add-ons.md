@@ -16,7 +16,7 @@ This tutorial walks you through how to set up an SMTP add-on to support sending 
 
 ## Requirements
 
-- Game Manager will be required as a title's SMTP server is set up using an add-on. Read our [Game Manager Quickstart](../../config/gamemanager/game-manager-quickstart.md) if you are unfamiliar with it.
+- Game Manager will be required as a title's SMTP server is set up using an add-on. Read our [Game Manager quickstart](../../config/gamemanager/game-manager-quickstart.md) if you are unfamiliar with it.
 
 ## Go to the add-on page and install SMTP
 

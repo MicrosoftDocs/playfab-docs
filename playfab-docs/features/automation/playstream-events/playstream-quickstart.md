@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # PlayStream Quickstart
 
-This Quickstart provides an overview of automatic and custom **PlayStream** events in **PlayFab**.
+This quickstart provides an overview of automatic and custom **PlayStream** events in **PlayFab**.
 
 ## Automatic Event Overview
 

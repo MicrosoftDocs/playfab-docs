@@ -1,5 +1,5 @@
 ---
-title: Photon Quickstart
+title: Photon quickstart
 author: v-thopra
 description: Describes how to set up Photon Multiplayer to work with PlayFab.
 ms.author: v-thopra
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Photon Quickstart
 
-This Quickstart shows how to set up Photon Multiplayer to work with PlayFab. Currently, PlayFab offers the following Photon integrations:
+This quickstart shows how to set up Photon Multiplayer to work with PlayFab. Currently, PlayFab offers the following Photon integrations:
 
 - Authenticate Photon players with PlayFab
 - Listen for room events using PlayFab CloudScript callbacks

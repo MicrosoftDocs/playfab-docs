@@ -1,5 +1,5 @@
 ---
-title: C++ Quickstart for Linux
+title: C++ quickstart for Linux
 author: v-thopra
 description: This guide will help you make your first PlayFab API call in Linux C++.
 ms.author: v-thopra
@@ -10,7 +10,7 @@ keywords: playfab, c++, linux, cocos2d-x, unreal, lua sdk
 ms.localizationpriority: medium
 ---
 
-# C++ Quickstart for Linux
+# C++ quickstart for Linux
 
 This guide will help you make your first API call in C++. A native C++ project can be used a few ways:
 

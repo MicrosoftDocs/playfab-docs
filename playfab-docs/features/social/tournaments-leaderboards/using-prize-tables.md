@@ -24,7 +24,7 @@ In this example, we show you how to create the **Prize Table End Tournament Priz
 > This is an advanced tutorial. Please make sure that all requirements have been met or you will not be able to complete this tutorial.
 
 - Basic knowledge of how to create a **Player** will be necessary, as there will need to be **Players** in a **Leaderboard** before it can perform any actions on those **Players**. Refer to the [Getting Started with PlayFab - Chapter 1](../../config/dev-test-live/get-started-with-players-and-tournaments.md) tutorial which will run you through the process of creating a **Player** for the **Title**.
-- It is also worthwhile to read the [Game Manager Quickstart](../../config/gamemanager/game-manager-quickstart.md) if you are unfamiliar with the **Game Manager**, as it is the place where **Prize Tables** are created.
+- It is also worthwhile to read the [Game Manager quickstart](../../config/gamemanager/game-manager-quickstart.md) if you are unfamiliar with the **Game Manager**, as it is the place where **Prize Tables** are created.
 - In order to use **Prize Tables**, you must have general knowledge of how **Resettable Leaderboards** work. Please read about **Leaderboards** in our tutorial [Using Resettable Statistics and Leaderboards](using-resettable-statistics-and-leaderboards.md).
 - Additionally, **Virtual Currencies** must be set up. Please read our tutorial about [Currencies](../../commerce/economy/currencies.md) and set up two currencies with the following parameters:
   - **Currency code**: **GO**

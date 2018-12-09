@@ -10,15 +10,15 @@ keywords: playfab, automation, cloudscript, playstream, events, actions
 ms.localizationpriority: medium
 ---
 
-# Scheduled Tasks Quickstart
+# Scheduled Tasks quickstart
 
-This Quickstart walks you through how to create a task that runs on a schedule. There are many game operation routines that can be automated using a scheduled task, such as modifying prices in a store according to the time of the day, updating Title Data to reflect changes for a current event, injecting virtual currencies into the game economy daily, etc. 
+This quickstart walks you through how to create a task that runs on a schedule. There are many game operation routines that can be automated using a scheduled task, such as modifying prices in a store according to the time of the day, updating Title Data to reflect changes for a current event, injecting virtual currencies into the game economy daily, etc. 
 
 In the example used in this Quickstart, we show you how to modify a game variable called "rareDropRate" in the Title Data at 12:00 UTC, and only on weekend days.
 
 ## Step 1 - Prepare the CloudScript
 
-In the Game Manager, go to Servers -> CloudScript. Add a CloudScript function called "adjustRareDropRate" with a simple call to the SetTitleData API as shown in the following code snippet and image. (for the sharp-eyed, don’t worry - there’s a bug in there on purpose). Make sure you deploy the new revision, so that it is live in your game. You can learn more about using CloudScript in our [CloudScript Quickstart](../cloudscript/cloudscript-quickstart.md), and in documentation for the method [ExecuteCloudScript](xref:titleid.playfabapi.com.client.server-sidecloudscript.executecloudscript).
+In the Game Manager, go to Servers -> CloudScript. Add a CloudScript function called "adjustRareDropRate" with a simple call to the SetTitleData API as shown in the following code snippet and image. (for the sharp-eyed, don’t worry - there’s a bug in there on purpose). Make sure you deploy the new revision, so that it is live in your game. You can learn more about using CloudScript in our [CloudScript quickstart](../cloudscript/cloudscript-quickstart.md), and in documentation for the method [ExecuteCloudScript](xref:titleid.playfabapi.com.client.server-sidecloudscript.executecloudscript).
 
 ```javascript
 handlers.adjustRareDropRate = function(args) {

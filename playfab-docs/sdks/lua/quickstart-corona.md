@@ -1,5 +1,5 @@
 ---
-title: Lua Quickstart for Corona
+title: Lua quickstart for Corona
 author: v-thopra
 description: This guide will help you make your first PlayFab API call in the Corona engine.
 ms.author: v-thopra
@@ -10,7 +10,7 @@ keywords: playfab, lua, corona, playfab client plugin
 ms.localizationpriority: medium
 ---
 
-# Lua Quickstart for Corona
+# Lua quickstart for Corona
 
 This guide will help you make your first PlayFab API call in the Corona engine.
 

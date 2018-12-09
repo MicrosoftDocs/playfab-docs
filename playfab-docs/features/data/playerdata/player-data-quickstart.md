@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 > [!NOTE] 
 > In the **PlayFab APIs**, the function names utilize the term **UserData**. In the **Game Manager**, this concept is described as **Player Data**. They are identical, and interchangeable.
 
-This Quickstart describes how to create and use **Player Data**.
+This quickstart describes how to create and use **Player Data**.
 
 **Player Data** is information that applies to an individual **Player** or a **Group** of **Players** (shared data) and is stored as **Key/Value Pairs (KVPs)** by **PlayFab**.
 
@@ -24,7 +24,7 @@ This topic covers **Client-API** calls, which are safe to call from any process 
 **Server-APIs** require your dev **Secret Key**, which you should *never* provide to or publish with your **Client**.
 
 **About the Code Examples:**
-- The **C# Code** examples shown in this Quickstart correspond to using the **PlayFab Unity SDK**.
+- The **C# Code** examples shown in this quickstart correspond to using the **PlayFab Unity SDK**.
 - Use the **Client APIs** [UpdateUserData](xref:titleid.playfabapi.com.client.playerdatamanagement.updateuserdata) to create, update, or delete and [GetUserData](xref:titleid.playfabapi.com.client.playerdatamanagement.getuserdata) to read data for the **Player**.
 - Use the **Server API** [UpdateUserReadOnlyData](ref:titleid.playfabapi.com.server.playerdatamanagement.updateuserreadonlydata) to create, update, or delete and the **Client API** [GetUserReadOnlyData](xref:titleid.playfabapi.com.client.playerdatamanagement.getuserreadonlydata) to read **Title**-specific data for the **Player**. This data is visible to the **Player**, but can only be modified by the server.
 - Use the **Server APIs** [UpdateUserInternalData](xref:titleid.playfabapi.com.server.playerdatamanagement.updateuserinternaldata) to create, update, or delete and [GetUserInternalData](xref:titleid.playfabapi.com.server.playerdatamanagement.getuserinternaldata) to read **Title**-specific data for the **Player**. This data is *server-only*, and cannot be seen by the **Client**.
@@ -33,7 +33,7 @@ This topic covers **Client-API** calls, which are safe to call from any process 
 
 You can always get and set **Player** data through **Game Manager** by performing the following steps:
 
-- Open **Game Manager**. If you are unfamiliar with **Game Manager**, see the [Game Manager Quickstart](../../config/gamemanager/game-manager-quickstart.md).
+- Open **Game Manager**. If you are unfamiliar with **Game Manager**, see the [Game Manager quickstart](../../config/gamemanager/game-manager-quickstart.md).
 - Select the **Players** tab.
 - Select the name of the **Player**, this will put you into the **Players Account** tab.
 - Select the **Player Data** tab to view their data.
@@ -191,7 +191,7 @@ public void GetUserInternalData() {
 
 ## CloudScript Code Example
 
-**CloudScript** is an advanced topic that is covered in the [CloudScript Quickstart](../../automation/cloudscript/cloudscript-quickstart.md). **Player** data does not require **CloudScript**. It is, however, accessible from **CloudScript** if you require it.
+**CloudScript** is an advanced topic that is covered in the [CloudScript quickstart](../../automation/cloudscript/cloudscript-quickstart.md). **Player** data does not require **CloudScript**. It is, however, accessible from **CloudScript** if you require it.
 
 Sometimes, you may want to modify **Read-Only** or **Internal Player** data from **CloudScript**. You must be very careful to ensure the security of your **server-API** calls in **CloudScript**.
 
@@ -252,6 +252,6 @@ Since this example updates internal **Player** data, you will need to call [GetU
 
 ### See Also
 
-- [Title Data Quickstart](../../config/titledata/title-data-quickstart.md)
+- [Title Data quickstart](../../config/titledata/title-data-quickstart.md)
 - [Using Publisher Data](../../config/titledata/using-publisher-data.md)
-- [CloudScript Quickstart](../../automation/cloudscript/cloudscript-quickstart.md)
+- [CloudScript quickstart](../../automation/cloudscript/cloudscript-quickstart.md)

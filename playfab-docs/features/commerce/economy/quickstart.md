@@ -1,5 +1,5 @@
 ---
-title: Economy Quickstart
+title: Economy quickstart
 author: v-thopra
 description: Quickstart for Economy.
 ms.author: v-thopra

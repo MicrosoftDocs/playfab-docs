@@ -1,5 +1,5 @@
 ---
-title: A/B Testing with Stores and Test Buckets
+title: A/B testing with Stores and Test Buckets
 author: v-thopra
 description: Describes how to create an A/B test that contains several versions of a store that are available to different A/B testing groups (buckets).
 ms.author: v-thopra
@@ -10,7 +10,7 @@ keywords: playfab, analytics, a/b testing
 ms.localizationpriority: medium
 ---
 
-# A/B Testing with Stores and Test Buckets
+# A/B testing with Stores and Test Buckets
 
 In our [Stores and Sales](../../commerce/stores/stores-and-sales.md) tutorial, we demonstrate how to set up a store and make a few items available to a player at special or alternate prices. In our [A/B Testing Quickstart](ab-testing-quickstart.md), we demonstrate how to create A/B tests and form player buckets for random, percentage-based user distribution.
 

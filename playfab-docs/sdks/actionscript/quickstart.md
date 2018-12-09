@@ -1,5 +1,5 @@
 ---
-title: ActionScript Quickstart for Flash
+title: ActionScript quickstart for Flash
 author: v-thopra
 description: This guide will help you make your first PlayFab API call using ActionScript.
 ms.author: v-thopra
@@ -10,7 +10,7 @@ keywords: playfab, sdk, actionscript
 ms.localizationpriority: medium
 ---
 
-# ActionScript Quickstart for Flash
+# ActionScript quickstart for Flash
 
 This guide will help you make your first PlayFab API call using ActionScript.
 

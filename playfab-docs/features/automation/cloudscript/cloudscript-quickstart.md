@@ -10,13 +10,13 @@ keywords: playfab, automation, game manager, cloudscript
 ms.localizationpriority: medium
 ---
 
-# CloudScript Quickstart
+# CloudScript quickstart
 
 **CloudScript** offers a fast, secure and scalable alternative to dedicated servers. Your custom **JavaScript** lives and executes directly on **PlayFab** machines.
 
 From here, your code can be called *directly* by your **Game Clients** or indirectly via **PlayStream** actions. Additionally, **CloudScript** methods have full access to **PlayFab's** [Server](../../../api-references/index.md) **API** set.
 
-This Quickstart covers uploading and managing your **CloudScript** files in the **PlayFab Game Manager**.
+This quickstart covers uploading and managing your **CloudScript** files in the **PlayFab Game Manager**.
 
 > [!NOTE]
 > The [Writing custom CloudScript](writing-custom-cloudscript.md) tutorial covers writing the **CloudScript** code itself.
@@ -83,6 +83,6 @@ If you commit *multiple* files, they will be concatenated together into a single
 
 You can manage your **CloudScript** files from the **Automation** option in the left side bar.  You can upload files manually from your own computer, or bind your title to a **GitHub** account.
 
-This Quickstart covers managing your code files and uploading them to **PlayFab**.
+This quickstart covers managing your code files and uploading them to **PlayFab**.
 
 If you have more questions, the [Writing custom CloudScript](writing-custom-cloudscript.md) tutorial explains more about how to write your **CloudScript** code files.

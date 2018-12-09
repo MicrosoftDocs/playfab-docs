@@ -32,7 +32,7 @@ The **Player Overview** (or *details* page), is a starting point for controlling
 3. The **Run CloudScript** button - Gives you access to cloud scripting on behalf of the player. 
 
 > [!NOTE]
-> You can read more about this in our [CloudScript Quickstart](../../automation/cloudscript/cloudscript-quickstart.md).
+> You can read more about this in our [CloudScript quickstart](../../automation/cloudscript/cloudscript-quickstart.md).
 
 4. Information panels contain general information about the player account.
 
@@ -41,7 +41,7 @@ The **Player Overview** (or *details* page), is a starting point for controlling
 6. The **Accounts** panel allows **linking** to different accounts for a single player record (described later in this tutorial).
 
 > [!NOTE]
-> You can read more about this in our [CloudScript Quickstart](../../automation/cloudscript/cloudscript-quickstart.md).
+> You can read more about this in our [CloudScript quickstart](../../automation/cloudscript/cloudscript-quickstart.md).
 
 ![Game Manager - Player - Overview](media/tutorials/game-manager-player-overview.png)  
 
@@ -80,7 +80,7 @@ A PlayFab account contains critical, identifying, player data. As an administrat
 
 ![Game Manager - Player - PlayFab account](media/tutorials/game-manager-player-playfab-account.png)  
 
-Additionally, you can manage linking. Read more about linking in our Quickstart on [Account linking](../../authentication/linking-unlinking/account-linking-quickstart.md).
+Additionally, you can manage linking. Read more about linking in our quickstart on [Account linking](../../authentication/linking-unlinking/account-linking-quickstart.md).
 
 ![Game Manager - Player - Accounts - Link New Account](media/tutorials/game-manager-player-link-new-account.png)  
 

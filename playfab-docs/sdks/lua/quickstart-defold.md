@@ -1,5 +1,5 @@
 ---
-title: Lua Quickstart for Defold
+title: Lua quickstart for Defold
 author: v-thopra
 description: This guide will help you make your first PlayFab API call using Defold.
 ms.author: v-thopra
@@ -10,7 +10,7 @@ keywords: playfab, lua, defold, gui script
 ms.localizationpriority: medium
 ---
 
-# Lua Quickstart for Defold
+# Lua quickstart for Defold
 
 This guide will help you make your first PlayFab API call using Defold.
 

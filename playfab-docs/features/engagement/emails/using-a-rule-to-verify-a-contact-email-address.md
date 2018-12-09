@@ -24,7 +24,7 @@ This tutorial walks you through the steps for creating a **Rule** that sends an 
 > You can use **Gmail** for testing, but with **Gmail** you are limited to 2,000 emails per day.
 
 - Basic knowledge of how to create a **Player** will be necessary, since there will need to be **Players** with a **Username** and **Password** before calling **Account Recovery** logic. Refer to our [Getting Started with PlayFab](../../config/dev-test-live/getting-started-with-playfab.md) tutorial which will run you through the process of creating a **Player** for the **Title**.
-- Read the [Game Manager Quickstart](../../config/gamemanager/game-manager-quickstart.md) if you are unfamiliar with the **Game Manager** as it is the place where email templates are created.
+- Read the [Game Manager quickstart](../../config/gamemanager/game-manager-quickstart.md) if you are unfamiliar with the **Game Manager** as it is the place where email templates are created.
 - Knowledge of how to work with **Player profiles** is required to confirm that emails will be necessary for checking that a contact email has been added to a **Player's** profile.
 
 > [!NOTE]

@@ -32,12 +32,12 @@ PlayFab takes a different approach. PlayFab also stores data in an underlying da
 
 With PlayFab, custom data is stored in these places:
 
-- **Game title data**. Game-wide data which can be accessed by all players and game clients. This data is typically used for game content or configuration, such as level maps, upcoming events, or current promotions. For more, see the [Title Data Quickstart](../../config/titledata/title-data-quickstart.md).
+- **Game title data**. Game-wide data which can be accessed by all players and game clients. This data is typically used for game content or configuration, such as level maps, upcoming events, or current promotions. For more, see the [Title Data quickstart](../../config/titledata/title-data-quickstart.md).
 - **Files**. PlayFab provides support for uploading files, and then delivering them via an integrated CDN. For more, see [How to use PlayFab's Content Management API](https://playfab.com/blog/how-use-playfabs-content-management-api/).
 - **Catalog data**. Every item in the catalog can have custom properties associated with it, such as rate-of-fire for a weapon, or mana points for a collectible card. For more, see [Catalogs](../../commerce/items/catalogs.md).
 - **Inventory data**. Every item in a player’s inventory can have custom properties associated with it, such as item hit-points, or config data for procedurally generated items.
 - **Group data**. Data shared among a specific group of players, such as a guild or lobby. Examples include a guild name or message of the day. Players can be added and removed from a shared group; all members in the group can read or write shared group data.
-- **Player data**. Data stored per player account, like Parse “Keyed User Data”; see our Quickstart [Player Data](../../data/playerdata/player-data-quickstart.md). 
+- **Player data**. Data stored per player account, like Parse “Keyed User Data”; see our quickstart [Player Data](../../data/playerdata/player-data-quickstart.md). 
 Data can be:
   - **Private** (accessed only by the players), **Public** (accessed by other players)
   - Scoped at either the **publisher-level** (shared across games by the same publisher), **game-level**, or **character-level** (tied to one of several characters the player controls in the game).
