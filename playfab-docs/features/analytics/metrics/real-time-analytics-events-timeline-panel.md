@@ -1,5 +1,5 @@
 ---
-title: Real-time Analytics - Events timeline panel
+title: Real-time analytics - Events timeline panel
 author: v-thopra
 description: Illustrates how to use the Events timeline panel.
 ms.author: v-thopra
@@ -10,15 +10,15 @@ keywords: playfab, analytics, metrics, event history
 ms.localizationpriority: medium
 ---
 
-# Real-time Analytics - Events timeline panel
+# Real-time analytics - Events timeline panel
 
 This tutorial illustrates how to use the Events timeline panel.
 
 ## Overview
 
-This panel is a subsection of [PlayStream Event History](../../automation/playstream-events/event-history.md) in the form of a table of event data sorted by time. To generate events for testing purposes, see the [PlayStream Quickstart](../../automation/playstream-events/playstream-quickstart.md) for examples of how to post custom events.
+This panel is a subsection of [PlayStream event history](../../automation/playstream-events/event-history.md) in the form of a table of event data sorted by time. To generate events for testing purposes, see the [PlayStream quickstart](../../automation/playstream-events/playstream-quickstart.md) for examples of how to post custom events.
 
-![Events Timeline panel](media/tutorials/events-timeline-panel.png)  
+![Events timeline panel](media/tutorials/events-timeline-panel.png)  
 
 1. The Timestamp label shows the date and time of the event in a human readable format.
 2. The full JSON body of the event. This can be accessed by clicking on the event timestamp.

@@ -22,16 +22,16 @@ This tutorial shows you how to access and utilize the **Event History** in **Pla
 1. Open the **PlayFab Game Manager** and select **Analytics** from the navigation sidebar.
 2. Locate the tabs panel and select the **Event History** tab.
 
-![Game Manager - Access Event History](media/tutorials/game-manager-access-event-history.png)  
+![Game Manager - access event history](media/tutorials/game-manager-access-event-history.png)  
 
-### Event History Page Overview
+### Event History page overview
 
 1. **Event Data Retention** - This label shows the time interval for the **Events**. For example, when it says **7 Days**, only **Events** that happened a week ago or later will be queried.
 2. [Event Search Query Panel](../../analytics/metrics/real-time-analytics-event-search-query-panel.md) - Allows the changing of graph behavior and the filtering of **Event** flow by different **Event** properties.
 3. [Event History Chart Panel](../../analytics/metrics/real-time-analytics-event-history-chart-panel.md) - This chart shows the number and types of **Events** happening in your **Title** during the specified time interval.
 4. [Events Timeline Panel](../../analytics/metrics/real-time-analytics-events-timeline-panel.md) - This is a list of **Events** data sorted by time (starting with the most recent).
 
-![Game Manager - Event History Page Overview](media/tutorials/game-manager-event-history-page-overview.png)  
+![Game Manager - Event History page overview](media/tutorials/game-manager-event-history-page-overview.png)  
 
 ### Search and inspect Events
 
@@ -68,17 +68,17 @@ We now have to **locate** the **Event**. The easiest way to do this is by means 
 
 We know the **Custom ID**, and we can enter it in the field provided and select **Run Query** to initiate a search query.
 
-![Game Manager - Event History Chart - Search Query](media/tutorials/game-manager-event-history-chart-search-query.png)  
+![Game Manager - Event History Chart - search query](media/tutorials/game-manager-event-history-chart-search-query.png)  
 
 Once you have located the event in the [Events Timeline Panel](
 ../../analytics/metrics/real-time-analytics-events-timeline-panel.md), you can further **inspect** it by selecting the **timestamp label**, as shown below.
 
-![Game Manager - Event History - Timestamp](media/tutorials/game-manager-event-history-timestamp.png)  
+![Game Manager - Event History - timestamp](media/tutorials/game-manager-event-history-timestamp.png)  
 
 Finally, you may analyze how this **Event** effects the overall **Event** flow using the [Event History Chart](
 ../../analytics/metrics/real-time-analytics-event-history-chart-panel.md).
 
-![Game Manager - Event History Chart - Event graph](media/tutorials/game-manager-event-history-event-graph.png)  
+![Game Manager - Event History Chart - event graph](media/tutorials/game-manager-event-history-event-graph.png)  
 
 The graph shows the **player_logged_in Event** being a part of several **Events** (that match the current query) produced on May 5th.
 
@@ -86,7 +86,7 @@ The graph shows the **player_logged_in Event** being a part of several **Events*
 
 It is possible to access the **Event History** for a specific **Player**:
 
-![Game Manager - Inspect a Player Event](media/tutorials/game-manager-inspect-player-event.png)  
+![Game Manager - inspect a Player Event](media/tutorials/game-manager-inspect-player-event.png)  
 
 1. Use the **Game Manager**, and navigate to **Players** in the menu to the left.
 2. Select the **Players** tab.

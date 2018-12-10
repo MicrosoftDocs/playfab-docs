@@ -19,7 +19,7 @@ Alternately, a **Store** allows you to single out a specific set of items, and m
 ## Requirements
 
 - [Game Manager](../../config/gamemanager/game-manager-quickstart.md)
-- One or more [Virtual Currencies](../economy/currencies.md) defined. The latter example on this guide uses:
+- One or more [virtual currencies](../economy/currencies.md) defined. The latter example on this guide uses:
 
    - **SS** (**Silver Shekels**)
    - **GS** (**Gold Shekels**).
@@ -47,7 +47,7 @@ Please note the following information about Stores and Currencies
 
 - **Prices are Either/Or**: If two prices are defined on an item, the item can be purchased for one or the other. It is *not possible* to require two currencies for a single item.
 
-## Defining a Real-Money Store
+## Defining a real-money Store
 
 In your **Game Manager**:
 
@@ -63,9 +63,9 @@ In the [Drop Tables](../items/drop-tables.md) example, we created an **11-Item D
 
 The screenshot provided below demonstrates a complete new store, placing three item-bundles available for **Real Money**.
 
-![Game Manager - Economy - Edit Store](media/tutorials/game-manager-economy-edit-store.png)  
+![Game Manager - economy - edit Store](media/tutorials/game-manager-economy-edit-store.png)  
 
-The specifics for completing **Real Money** purchases are covered in our advanced tutorial, [Non-Receipt Payment Processing](../economy/non-receipt-payment-processing.md).
+The specifics for completing **Real Money** purchases are covered in our advanced tutorial, [non-receipt payment processing](../economy/non-receipt-payment-processing.md).
 
 ### Best Practice
 How you use **Real Money** is largely dependent on the specific design of your game. Direct purchase of in-game items is valid, but less common.
@@ -75,7 +75,7 @@ More typically, your game should allow purchase of a premium **Virtual Currency*
 > [!TIP]
 > The key takeaway should be to make sure your players can *always* give you money.
 
-## Defining a Virtual-Currency Store
+## Defining a virtual-currency store
 
 Let's get into the gritty details and code for trading **Virtual Currency** for in-game items. The steps are nearly identical to the preceding example. 
 
@@ -184,6 +184,6 @@ If the response indicates a connectivity failure, you can try again with an expo
 **Stores** are a great mechanism for encouraging your players to purchase items. **Stores** work with any kind of virtual currency. **Stores** can also work with **Real Money** through an alternate set of **API** methods.
 
 - You can set up a single-item purchase with VC via [PurchaseItem](xref:titleid.playfabapi.com.client.playeritemmanagement.purchaseitem).
-- You can set up a multiple-item purchase with VC via the sequence: [StartPurchase](xref:titleid.playfabapi.com.client.playeritemmanagement.startpurchase), [PayForPurchase](xref:titleid.playfabapi.com.client.playeritemmanagement.payforpurchase), and [ConfirmPurchase](xref:titleid.playfabapi.com.client.playeritemmanagement.confirmpurchase). To perform real money purchases, consult our advanced tutorial [Non-Receipt Payment Processing](../economy/non-receipt-payment-processing.md).
+- You can set up a multiple-item purchase with VC via the sequence: [StartPurchase](xref:titleid.playfabapi.com.client.playeritemmanagement.startpurchase), [PayForPurchase](xref:titleid.playfabapi.com.client.playeritemmanagement.payforpurchase), and [ConfirmPurchase](xref:titleid.playfabapi.com.client.playeritemmanagement.confirmpurchase). To perform real money purchases, consult our advanced tutorial [non-receipt payment processing](../economy/non-receipt-payment-processing.md).
 
-For advanced Store usage, see our [Custom Stores for Player Segments](../../commerce/stores/custom-stores-for-player-segments.md) tutorial.
+For advanced Store usage, see our [custom stores for Player Segments](../../commerce/stores/custom-stores-for-player-segments.md) tutorial.

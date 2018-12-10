@@ -127,7 +127,7 @@ public void GetUserReadOnlyData()
 {
     PlayFabServerAPI.GetUserReadOnlyData(new GetUserDataRequest()
     {
-        PlayFabId = "user PlayFabId here - obtained from any successul LoginResult",
+        PlayFabId = "user PlayFabId here - obtained from any successful LoginResult",
     },
     result => {
         if(result.Data == null || !result.Data.ContainsKey("Sister")) Debug.Log("No Sister");
@@ -140,11 +140,11 @@ public void GetUserReadOnlyData()
 }
 ```
 
-## Setting Internal Player Data
+## Setting internal player data
 
 This is data that the **Client** cannot access. To set internal **Player** data, use the [UpdateUserInternalData](xref:titleid.playfabapi.com.server.playerdatamanagement.updateuserinternaldata) method.
 
-### C# Code Example
+### C# code example
 
 The following **server-SDK C#** code example creates (or updates, if a **Key Value** already exists) the **KVP** with the **Key: Rank** and **Value: Sargent**.
 
@@ -165,11 +165,11 @@ public void UpdateUserInternalData() {
 }
 ```
 
-## Getting Internal Player Data
+## Getting internal player data
 
 To get internal **Player** data, use the [GetUserInternalData](xref:titleid.playfabapi.com.server.playerdatamanagement.getuserinternaldata) method. Since this is *internal* data, you should *not* expose it to the **Client**.
 
-### C# Code Example
+### C# code example
 
 The following **C#** code example retrieves the **KVPs** of the **Player** internal data.
 
@@ -189,7 +189,7 @@ public void GetUserInternalData() {
 }
 ```
 
-## CloudScript Code Example
+## CloudScript code example
 
 **CloudScript** is an advanced topic that is covered in the [CloudScript quickstart](../../automation/cloudscript/cloudscript-quickstart.md). **Player** data does not require **CloudScript**. It is, however, accessible from **CloudScript** if you require it.
 
@@ -228,7 +228,7 @@ function IncrementReadOnlyUserData(args) {
 }
 ```
 
-### C# Code Example
+### C# code example
 
 As explained in the **CloudScript** tutorial, you can call the following logic from the **Client**.
 

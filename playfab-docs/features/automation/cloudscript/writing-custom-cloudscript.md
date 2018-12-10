@@ -127,13 +127,13 @@ private static void OnErrorShared(PlayFabError error)
 
 ## Intermediate Overview: Globals and advanced arguments
 
-**CloudScript** is a set of **JavaScript** functions compiled with **V8** and hosted on **PlayFab's** servers. It has access to any server **API** listed in the [PlayFab API Reference documentation](../../../api-references/index.md), along with a **logger**, the **PlayFab ID** of the player making the **CloudScript** request, and any information included with the request, all in the form of preset objects.
+**CloudScript** is a set of **JavaScript** functions compiled with **V8** and hosted on **PlayFab's** servers. It has access to any server **API** listed in the [PlayFab API reference documentation](../../../api-references/index.md), along with a **logger**, the **PlayFab ID** of the player making the **CloudScript** request, and any information included with the request, all in the form of preset objects.
 
 **CloudScript** functions themselves are properties of a global handlers object. The following table shows a complete list of these predefined variables.
 
 | Name                 | Use                                                                                                  |
 | :------------------- | :----------------------------------------------------------------------------------------------------|
-| server               | Has access to all server-side **API** calls listed in the [PlayFab API Reference documentation](../../../api-references/index.md). They can be called (synchronously) like so: var result = server.AuthenticateUserTicket(request);                                                                          |
+| server               | Has access to all server-side **API** calls listed in the [PlayFab API reference documentation](../../../api-references/index.md). They can be called (synchronously) like so: var result = server.AuthenticateUserTicket(request);                                                                          |
 | http                 |Performs synchronous **HTTP** requests, like so: http.request(url, method, content, contentType, headers, logRequestAndResponse) headers is an object with properties corresponding to various headers and their values. **logRequestAndResponse** is a boolean that determines whether the title should log any errors in the request as part of the response.                                                                        |
 | log                  | Creates log statements and adds them to the response. Logs have three levels: log.info(), log.debug(), and log.error(). All three levels take a message string, along with an optional object containing extra data to include with the log. e.g. log.info('hello!', { time: new Date() });   |
 | currentPlayerId      | **PlayFab Id** of the player that triggered the **CloudScript** call.                                       |
@@ -195,7 +195,7 @@ After making these changes, you can now easily send and receive data between **C
 
 You will always want to validate input parameters *prior* to updating your backend. The process for validating input parameters will vary from title to title, but the most basic validation will check to ensure inputs are within acceptable ranges and periods.
 
-## Intermediate: Calling the Server APIs
+## Intermediate: Calling the server APIs
 
 As mentioned before, within **CloudScript** methods, you have access to the full set of **Server API Calls**. This enables your cloud code to act as a dedicated server.
 
@@ -251,7 +251,7 @@ The other way to call a **CloudScript** function is as a **PlayStream** event ac
 
    - The page looks like this.
 
-   ![Game Manager - PlayStream - Event Actions](media/tutorials/game-manager-playstream-event-actions.png)  
+   ![Game Manager - PlayStream - event actions](media/tutorials/game-manager-playstream-event-actions.png)  
 
 2. Use the **New Action** button to create a new action.
    - Give the New Action a **Name**.
@@ -260,7 +260,7 @@ The other way to call a **CloudScript** function is as a **PlayStream** event ac
    - Select the **helloWorld** function in the **CloudScript** function drop-down menu.
    - Select the **Save Action** button.
 
-   ![Game Manager - PlayStream - Save Action](media/tutorials/game-manager-playstream-save-action.png)  
+   ![Game Manager - PlayStream - save action](media/tutorials/game-manager-playstream-save-action.png)  
 
 3. Right now, this action is set to trigger on any PlayStream event. To test it:
    - Check the **Publish results as PlayStream Event** box.
@@ -321,7 +321,7 @@ Setting **GeneratePlayStreamEvent** makes the **CloudScript** function call gene
 - The **PlayStream Debugger** will display events as they come in.
 - When they arrive, select the small blue **Info** icon in the top right corner of the event, as shown below.
 
-   ![Game Manager - PlayStream - Debugger](media/tutorials/game-manager-playstream-debugger.png)  
+   ![Game Manager - PlayStream - debugger](media/tutorials/game-manager-playstream-debugger.png)  
 
 Selecting this will display the raw **JSON** of the event, which is detailed for each event [here](https://api.playfab.com/playstream/events). An example of this **JSON** can be seen in the following example.
 

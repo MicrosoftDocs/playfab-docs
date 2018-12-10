@@ -77,17 +77,17 @@ In our example shown here, the segment configuration requires 4 simple steps.
 1. Configure the action to run the function we want (**helloWorld (3)**).
 1. Use the **Save Segment** button **(4)** to commit your activities.
 
-![Game Manager - Players - New Segment configuration](media/tutorials/game-manager-players-new-segment-configuration.png)  
+![Game Manager - players - new segment configuration](media/tutorials/game-manager-players-new-segment-configuration.png)  
 
 
 
-## Advanced Segment Filtering
+## Advanced segment filtering
 
 Segment filtering allows you to define what players are included in the segment. Formally speaking, **segment (1)** on the left of your screen is a set of players that belong to at least one group. 
 
 **Group (2)** is a set of players that meet all defined conditions (called **filters (3)**).
 
-![Game Manager - Players - Advanced Segment filtering](media/tutorials/game-manager-players-advanced-segment-filtering.png)  
+![Game Manager - players - advanced segment filtering](media/tutorials/game-manager-players-advanced-segment-filtering.png)  
 
 So to be part of a segment:
 
@@ -160,7 +160,7 @@ It is possible to look up what segments a player belongs to by means of the **Pl
 - Locate the player you want to inspect, and select the ID label **(3)**.
 - Finally, select **Segments** in the Players Toolbar **(4)**.
 
-![Game Manager - Players - Access Segments](media/tutorials/game-manager-access-player-segments-2.png)  
+![Game Manager - players - access segments](media/tutorials/game-manager-access-player-segments-2.png)  
 
 On the **Player Segments** page, you will see the following:
 

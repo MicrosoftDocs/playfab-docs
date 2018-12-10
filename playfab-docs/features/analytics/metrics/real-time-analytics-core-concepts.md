@@ -10,7 +10,7 @@ keywords: playfab, analytics, metrics, events
 ms.localizationpriority: medium
 ---
 
-# Real-time Analytics: Core Concepts
+# Real-time analytics: core concepts
 
 The purpose of the analytics system is to give you precise insights into what is going on inside your game.
 
@@ -36,7 +36,7 @@ An **Event**, as a data structure, represents a change in state for your game. *
 3. **Timestamp** (when it happened).
 4. **Associated Data** (a.k.a. body - what are the relevant details).
 
-It is important to distinguish between **Automatic** and **Custom** **Events**. Our [PlayStream Quickstart](../../automation/playstream-events/playstream-quickstart.md) explains the difference.
+It is important to distinguish between **Automatic** and **Custom** **Events**. Our [PlayStream quickstart](../../automation/playstream-events/playstream-quickstart.md) explains the difference.
 
 ## Event Flow
 
@@ -48,6 +48,6 @@ A solid analytics system allows you to group, sort, filter, count, transform, an
 
 ## Guides
 
-- [Event History](../../automation/playstream-events/event-history.md): **Game Manager** page for inspecting the event flow inside your title.
+- [Event history](../../automation/playstream-events/event-history.md): **Game Manager** page for inspecting the event flow inside your title.
 - [Webhooks](../../analytics/metrics/webhooks.md): **Game Manager** page for automatically triggering non-PlayFab servers on specific game events.
-- [S3 Event Archiving](../../analytics/metrics/s3-event-archiving.md): **Game Manager** page for accessing recent PlayStream events.
+- [S3 event archiving](../../analytics/metrics/s3-event-archiving.md): **Game Manager** page for accessing recent PlayStream events.

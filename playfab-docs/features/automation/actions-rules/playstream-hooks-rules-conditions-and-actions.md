@@ -1,5 +1,5 @@
 ---
-title: PlayStream Hooks - Rules, Conditions, and Actions
+title: PlayStream hooks - rules, conditions, and actions
 author: v-thopra
 description: Describes how to configure the trigger, conditions and actions that make up a Rule to hook PlayStream events.
 ms.author: v-thopra
@@ -10,7 +10,7 @@ keywords: playfab, automation, cloudscript, playstream, events, rules, condition
 ms.localizationpriority: medium
 ---
 
-# PlayStream Hooks: Rules, Conditions, and Actions
+# PlayStream hooks: rules, conditions, and actions
 
 A **PlayStream Rule** allows you to react to a subset of one type of **PlayStream** events in real time.
 
@@ -37,7 +37,7 @@ A quick glossary of relevant terms:
 
 A **Rule** consists of exactly one **Trigger**, an optional list of **Conditions**, and typically at least one **Action** (not required, but quite useless without it).
 
-**Triggers**, **Conditions**, and **Actions** are also part of other systems: [Bulk Actions](../../automation/actions-rules/bulk-actions-for-an-entire-player-segment.md) and [Tournament Leaderboards](../../social/tournaments-leaderboards/using-resettable-statistics-and-leaderboards.md).
+**Triggers**, **Conditions**, and **Actions** are also part of other systems: [bulk actions](../../automation/actions-rules/bulk-actions-for-an-entire-player-segment.md) and [tournament leaderboards](../../social/tournaments-leaderboards/using-resettable-statistics-and-leaderboards.md).
 
 ## Example Case: Count custom events from the client
 
@@ -67,7 +67,7 @@ Go to your Game Manager:
 - Go to **Rules**.
 - Select **New Rule**.
 
-![Game Manager - Automation - New Rule](media/tutorials/game-manager-automation-new-rule.png)  
+![Game Manager - automation - new rule](media/tutorials/game-manager-automation-new-rule.png)  
 
 Let's evaluate the new **Rule** in this example piece by piece:
 
@@ -83,7 +83,7 @@ Let's evaluate the new **Rule** in this example piece by piece:
 
 In the **Game Manager PlayStream Debugger** (shown below), you can watch as the trigger takes effect.
 
-![Game Manager - PlayStream - Debugger - Event trigger](media/tutorials/game-manager-playstream-debugger-event-trigger.png)  
+![Game Manager - PlayStream - debugger - event trigger](media/tutorials/game-manager-playstream-debugger-event-trigger.png)  
 
 As you can see, the custom **ForumPostEvent** automatically triggers the statistic that we set under **Actions** for our new **Rule**.
 
@@ -97,10 +97,10 @@ Many of the built-in **Actions** in **PlayFab** are fairly simple, and might not
 - Set the **Action** to **Execute CloudScript**.
 - Select the **Save Action** button.
 
-![Game Manager - Automation - Edit Rule](media/tutorials/game-manager-automation-edit-rule.png)  
+![Game Manager - automation - edit rule](media/tutorials/game-manager-automation-edit-rule.png)  
 
 Now, if we post a new **ForumPostEvent**, we will see a **CloudScript** execution.
 
-![Game Manager - PlayStream - Debugger - CloudScript execution](media/tutorials/game-manager-playstream-debugger-cloudscript-execution.png)  
+![Game Manager - PlayStream - debugger - CloudScript execution](media/tutorials/game-manager-playstream-debugger-cloudscript-execution.png)  
 
-Writing your **CloudScript** to react to **PlayStream** rules is an advanced topic covered in our tutorial: [Using CloudScript actions with PlayStream](using-cloudscript-actions-with-playstream.md).
+Writing your **CloudScript** to react to **PlayStream** rules is an advanced topic covered in our tutorial: [using CloudScript actions with PlayStream](using-cloudscript-actions-with-playstream.md).

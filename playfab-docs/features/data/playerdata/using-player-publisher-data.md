@@ -27,15 +27,15 @@ If you need to have **Titles** in a **Studio** that have different **Publisher I
 
 **Player Publisher Data** usage is nearly identical to **Player Data** usage. They are *both* dictionaries mapping a string to a **JSON** blob (or other arbitrary string value).
 
-Our example in this tutorial, [Grant a Reward for Playing Multiple Titles](#grant-a-reward-for-playing-multiple-titles), will demonstrate saving JSON blobs, and focus on a targeted example of why you might use Player Publisher Data.
+Our example in this tutorial, [Grant a reward for playing multiple titles](#grant-a-reward-for-playing-multiple-titles), will demonstrate saving JSON blobs, and focus on a targeted example of why you might use Player Publisher Data.
 
-## Grant a Reward for Playing Multiple Titles
+## Grant a reward for playing multiple titles
 
 **Rewards** usually involve *other* systems outside of **Player Dat**a, so this example demonstrates awarding **Virtual Currency** for the sake of simplicity.
 
 ### Requirements
 
-- A **Player** must sign into *both* **Titles** using the same **Credentials**. One approach is to use **Recoverable Credentials**, as described in our [Login Basics and Best Practices](../../authentication/platform-specific-authentication/login-basics-best-practices.md) tutorial. To add a **Recoverable** login to an anonymous account, see our [Account Linking](../../authentication/linking-unlinking/account-linking-quickstart.md) Quickstart.
+- A **Player** must sign into *both* **Titles** using the same **Credentials**. One approach is to use **Recoverable Credentials**, as described in our [Login basics and Best Practices](../../authentication/platform-specific-authentication/login-basics-best-practices.md) tutorial. To add a **Recoverable** login to an anonymous account, see our [Account Linking](../../authentication/linking-unlinking/account-linking-quickstart.md) Quickstart.
 - This example requires a working knowledge of [CloudScript](../../automation/cloudscript/writing-custom-cloudscript.md):
   - Our example demonstrates basic data security to avoid **Player** cheating. One could likewise use the **Server API** on a custom game server, if the **Title** makes use of them.
 - **Rewards** triggered through **PlayFab** require usage of the appropriate **PlayFab** features. **PlayFab Rewards** can be in the form of [**Virtual Currency**](../../commerce/economy/currencies.md), [**Inventory Items**](player-inventory.md), [**Custom Player Data**](player-data-quickstart.md), [**Statistics**](using-player-statistics.md), etc. Distributing **Rewards** outside of **PlayFab** systems is an advanced topic, and will not be covered in this tutorial.
@@ -76,7 +76,7 @@ handlers.TrackTitleUsage = function () {
 > [!NOTE]
 > This example, in particular,  demonstrates using server.[GetUserPublisherInternalData](xref:titleid.playfabapi.com.server.playerdatamanagement.getuserpublisherinternaldata) and server.[UpdateUserPublisherInternalData](xref:titleid.playfabapi.com.server.playerdatamanagement.updateuserpublisherinternaldata). 
 
-### Step 2: Each game checks for redeemable Rewards
+### Step 2: Each game checks for redeemable rewards
 
 Once you are tracking which **Titles** are played, you need to track and grant the **Rewards**. This **CloudScript** function will check for and grant available **Rewards**, based on having played other **Titles**.
 
