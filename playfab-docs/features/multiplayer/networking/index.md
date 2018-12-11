@@ -22,12 +22,11 @@ Here are current docs:
 
 Got questions? Email [Bumblelion Overhead](mailto:bumblelionoverhead@microsoft.com)
 
-Artifacts that are coming soon with the (driver) and (ETA):
+Artifacts that are in progress:
 
-- Reference documentation (Marco)(1901)
-- Legit conceptual documentation (Chris) (Starting December 1 and improving)
-- BumbleRumble (a sample)(Jason Kepner)(December 1)
-- Unreal Engine 4 (UE4), socket sub-system plug-in (Deb)(Pending)
+- Reference documentation 
+- Legit conceptual documentation 
+- BumbleRumble (a sample)
 
 
 ## Roadmap
