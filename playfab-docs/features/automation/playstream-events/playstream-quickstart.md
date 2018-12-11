@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # PlayStream Quickstart
 
-This quickstart provides an overview of automatic and custom **PlayStream** events in **PlayFab**.
+This Quickstart provides an overview of automatic and custom **PlayStream** events in **PlayFab**.
 
 ## Automatic Event Overview
 
@@ -46,12 +46,13 @@ Similar to **Automatic Events**, **Custom Events** are fully reflected through [
 **Custom Events** can be classified by **Entity**. A **Custom Event** can be bound to a **Player**, **Character**, or **Title**. An **Event Entity** reference is specified using two fields:
 
 - **EntityType**
-
-- **EntityID**.
+- **EntityID**
 
 ### Relevant API Calls
 
-[WritePlayerEvent](xref:titleid.playfabapi.com.client.analytics.writeplayerevent), [WriteCharacterEvent](xref:titleid.playfabapi.com.client.analytics.writecharacterevent), [WriteTitleEvent](xref:titleid.playfabapi.com.client.analytics.writetitleevent)
+- [WritePlayerEvent](xref:titleid.playfabapi.com.client.analytics.writeplayerevent)
+- [WriteCharacterEvent](xref:titleid.playfabapi.com.client.analytics.writecharacterevent)
+- [WriteTitleEvent](xref:titleid.playfabapi.com.client.analytics.writetitleevent)
 
 ### Example: Post your own Custom Event
 

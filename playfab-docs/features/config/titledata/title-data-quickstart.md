@@ -12,7 +12,8 @@ ms.localizationpriority: medium
 
 # Title Data quickstart
 
-This quickstart describes how to programmatically create and use **Title Data**.
+
+This Quickstart describes how to programmatically create and use **Title Data**.
 
 This an important topic because storing a game's configuration data remotely, on the server, where it can be changed at any time, is one of the most basic reasons to use a service like **PlayFab**.
 
