@@ -55,17 +55,17 @@ Backlog (dates TBD):
 
 Table below indicates our confidence level for providing an SDK for the specified platform on that date. We intend to support every platform on this list it's simply a matter of time.
 
-|-|1PP Private Preview (1810)|3PP Private Preivew (1902)|3PP Public Preview 1904|
-|-|-|-|-|
-|Win32/Win10|Done|-|-|
-|Xbox ERA|Available today without hardware acceleration|-|High|
-|Win32/Win7|-|High||
-|PlayStation|-|-|Medium|
-|Android|Unplanned|
-|Switch|Unplanned|
-|iOS|-|-|Low|
-|GameCore/Win10|-|High|-|
-|GameCore/Xbox|-|High|-|
+|-|1PP Private Preview (1810)|3PP Private Preivew (1902)|3PP Public Preview 1904| Post GDC 1906|
+|-|-|-|-|-|
+|Win32/Win10|Done|-|-|-|
+|Xbox ERA|Available today without hardware acceleration|-|High|-|
+|Win32/Win7|-|-|High|-|
+|PlayStation|-|-|-|Medium | 
+|Android (Lollipop 5.1+, Samsung, Huawei and Xiaomi)|-|-|-|Medium|
+|Switch|-|-| -| Medium |
+|iOS (8.0+) |-|-|-| Medium|
+|GameCore/Win10|-|-|-|High|
+|GameCore/Xbox|-|-|-|High|
 
 ## How does Bumblelion related to Xbox Integrated Multiplayer? (XIM)
 
