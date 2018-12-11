@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Player segmentation
 
-Player Segmentation is defined in [Game Manager](../../config/gamemanager/game-manager-quickstart.md). Segments allow you to define useful or interesting groups of players, and perform exclusive actions on that group.
+Player Segmentation is defined in [Game Manager](../../config/gamemanager/quickstart.md). Segments allow you to define useful or interesting groups of players, and perform exclusive actions on that group.
 
 **Requirements:**
 
@@ -31,6 +31,6 @@ Here is the example segment described above:
 
 ![Game Manager - players - segments - new segment](media/tutorials/game-manager-players-segments-new-segment.png)  
 
-The most complex part of this example is the CloudScript. Utilize the second parameter, "context" in your [CloudScript handler](../../automation/actions-rules/using-cloudscript-actions-with-playstream.md) to identify the player, and segment transition. Afterwards, perform any action you wish on the player, such as granting [inventory items](../../data/playerdata/player-inventory.md), [virtual currency](../../commerce/economy/currencies.md), [player data](../../data/playerdata/player-data-quickstart.md), or [statistics](../../data/playerdata/using-player-statistics.md).
+The most complex part of this example is the CloudScript. Utilize the second parameter, "context" in your [CloudScript handler](../../automation/actions-rules/using-cloudscript-actions-with-playstream.md) to identify the player, and segment transition. Afterwards, perform any action you wish on the player, such as granting [inventory items](../../data/playerdata/player-inventory.md), [virtual currency](../../commerce/economy/currencies.md), [player data](../../data/playerdata/quickstart.md), or [statistics](../../data/playerdata/using-player-statistics.md).
 
 See also: [Best Practices for store segmentation](../../commerce/stores/best-practices-for-store-segmentation.md)

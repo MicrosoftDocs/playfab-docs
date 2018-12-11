@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 **CloudScript** is one of **PlayFab's** most versatile features. It allows client code to request execution of any kind of custom server-side functionality you can implement, and it can be used in conjunction with virtually anything.
 
-This tutorial covers writing your **CloudScript** functions. Please see the [CloudScript quickstart](cloudscript-quickstart.md) for help in uploading your **CloudScript** files to your title.
+This tutorial covers writing your **CloudScript** functions. Please see the [CloudScript quickstart](quickstart.md) for help in uploading your **CloudScript** files to your title.
 
 > [!NOTE]
 > This tutorial demonstrates **Unity** code samples, but **CloudScript** works similarly for all **SDKs**.
@@ -151,7 +151,7 @@ In addition, all handler functions are passed two parameters, detailed below.
 
 ## Intermediate: FunctionParameter and args
 
-In the previous section, we described how to populate the **request.FunctionParameter**, and view that info in the **args** parameter. The [CloudScript quickstart](cloudscript-quickstart.md) demonstrates how to upload new **CloudScript**.
+In the previous section, we described how to populate the **request.FunctionParameter**, and view that info in the **args** parameter. The [CloudScript quickstart](quickstart.md) demonstrates how to upload new **CloudScript**.
 
  Putting both together, we can provide another example of how to pass arguments from client to **CloudScript**. Take the previous example, modify the **CloudScript** code and your **Client** code as shown below.
 

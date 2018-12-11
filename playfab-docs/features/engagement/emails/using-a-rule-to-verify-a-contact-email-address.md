@@ -24,7 +24,7 @@ This tutorial walks you through the steps for creating a **Rule** that sends an 
 > You can use **Gmail** for testing, but with **Gmail** you are limited to 2,000 emails per day.
 
 - Basic knowledge of how to create a **Player** will be necessary, since there will need to be **Players** with a **Username** and **Password** before calling **Account Recovery** logic. Refer to our [Getting Started with PlayFab](../../config/dev-test-live/getting-started-with-playfab.md) tutorial which will run you through the process of creating a **Player** for the **Title**.
-- Read the [Game Manager quickstart](../../config/gamemanager/game-manager-quickstart.md) if you are unfamiliar with the **Game Manager** as it is the place where email templates are created.
+- Read the [Game Manager quickstart](../../config/gamemanager/quickstart.md) if you are unfamiliar with the **Game Manager** as it is the place where email templates are created.
 - Knowledge of how to work with **Player profiles** is required to confirm that emails will be necessary for checking that a contact email has been added to a **Player's** profile.
 
 > [!NOTE]
@@ -208,12 +208,11 @@ When the **Player** selects that **URL**, three things happen:
    - You can use that **Event** to trigger actions, like granting coins or items to the **Player**.
 2. Because this email template was the special **Email Verification** template, **PlayFab** will then mark the **Player** email as Verified.
 3. **PlayFab** will return a redirect **URL** sending the **Player** to the callback **URL** website.
-
     - On this website you can show a static **Thanks for verifying your email** message, or something more elaborate. The redirect **URL** will look something like this: **https://www.example.com/?token=2346241B7C277796**.
 
     - Go ahead and select the **URL** found in the email.
     - You will be taken to the **example.com** website.
-    -  View your **Player Profile** using the **Game Manager**.
+    - View your **Player Profile** using the **Game Manager**.
     - You will see that the **Verification status** has changed.
 
 ![Game Manager - Player Profile - Contact email](media/tutorials/game-manager-player-profile-contact-email-verification-confirmed.png)  

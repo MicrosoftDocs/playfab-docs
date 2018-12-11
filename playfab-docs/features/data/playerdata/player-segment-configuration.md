@@ -66,7 +66,7 @@ A **defining characteristic** of a player might be a:
 
 When a segment is defined, you have a variety of action options to run when a player enters or leaves the segment.
 
- CloudScript is by far the most flexible action, granting you full control of the player and segmentation information at the time of segment-transition. Use the second parameter, **context** in your [CloudScript handler](../../automation/actions-rules/using-cloudscript-actions-with-playstream.md) to identify the player and segment transition. Afterwards, you can perform any action you wish for the player, such as granting [inventory items](../../data/playerdata/player-inventory.md), [virtual currency](../../commerce/economy/currencies.md), [player data](../../data/playerdata/player-data-quickstart.md), or [statistics](using-player-statistics.md).
+ CloudScript is by far the most flexible action, granting you full control of the player and segmentation information at the time of segment-transition. Use the second parameter, **context** in your [CloudScript handler](../../automation/actions-rules/using-cloudscript-actions-with-playstream.md) to identify the player and segment transition. Afterwards, you can perform any action you wish for the player, such as granting [inventory items](../../data/playerdata/player-inventory.md), [virtual currency](../../commerce/economy/currencies.md), [player data](../../data/playerdata/quickstart.md), or [statistics](using-player-statistics.md).
 
 In our example shown here, the segment configuration requires 4 simple steps.
 

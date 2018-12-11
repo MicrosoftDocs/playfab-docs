@@ -2,9 +2,9 @@
   href: index.md
   items:
   - name: Quickstart
-    href: game-manager-quickstart.md
+    href: quickstart.md
   - name: Tutorials
-    href: game-manager-tutorials.md
+    href: tutorials.md
     items:
     - name: API Access Policy
       href: api-access-policy.md

@@ -2,9 +2,9 @@
   href: index.md
   items:
   - name: Quickstart
-    href: title-data-quickstart.md
+    href: quickstart.md
   - name: Tutorials
-    href: title-data-tutorials.md
+    href: tutorials.md
     items:
     - name: Using publisher data
       href: using-publisher-data.md

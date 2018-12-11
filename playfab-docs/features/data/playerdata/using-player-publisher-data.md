@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 ## Player Data vs Player Publisher Data
 
-[Player Data](player-data-quickstart.md) is information about a **Player**, specific to a game **Title**. Thus, it should be used for **Title**-specific information, such as saving your **Player's** position in a dungeon, or other game-specific data.
+[Player Data](quickstart.md) is information about a **Player**, specific to a game **Title**. Thus, it should be used for **Title**-specific information, such as saving your **Player's** position in a dungeon, or other game-specific data.
 
 **Player Publisher Data** is data associated with the **Player** account, as opposed to the **Player** account **plus** the **Title**. It is used to save information about a **Player** relevant to all **Titles** in your **Studio** (which may also contain **Title**-specific information, for purposes of cross-**Title** rewards).
 
@@ -35,10 +35,10 @@ Our example in this tutorial, [Grant a reward for playing multiple titles](#gran
 
 ### Requirements
 
-- A **Player** must sign into *both* **Titles** using the same **Credentials**. One approach is to use **Recoverable Credentials**, as described in our [Login basics and Best Practices](../../authentication/platform-specific-authentication/login-basics-best-practices.md) tutorial. To add a **Recoverable** login to an anonymous account, see our [Account Linking](../../authentication/linking-unlinking/account-linking-quickstart.md) Quickstart.
+- A **Player** must sign into *both* **Titles** using the same **Credentials**. One approach is to use **Recoverable Credentials**, as described in our [Login Basics and Best Practices](../../authentication/platform-specific-authentication/login-basics-best-practices.md) tutorial. To add a **Recoverable** login to an anonymous account, see our [Account Linking](../../authentication/linking-unlinking/quickstart.md) Quickstart.
 - This example requires a working knowledge of [CloudScript](../../automation/cloudscript/writing-custom-cloudscript.md):
   - Our example demonstrates basic data security to avoid **Player** cheating. One could likewise use the **Server API** on a custom game server, if the **Title** makes use of them.
-- **Rewards** triggered through **PlayFab** require usage of the appropriate **PlayFab** features. **PlayFab Rewards** can be in the form of [**Virtual Currency**](../../commerce/economy/currencies.md), [**Inventory Items**](player-inventory.md), [**Custom Player Data**](player-data-quickstart.md), [**Statistics**](using-player-statistics.md), etc. Distributing **Rewards** outside of **PlayFab** systems is an advanced topic, and will not be covered in this tutorial.
+- **Rewards** triggered through **PlayFab** require usage of the appropriate **PlayFab** features. **PlayFab Rewards** can be in the form of [**Virtual Currency**](../../commerce/economy/currencies.md), [**Inventory Items**](player-inventory.md), [**Custom Player Data**](quickstart.md), [**Statistics**](using-player-statistics.md), etc. Distributing **Rewards** outside of **PlayFab** systems is an advanced topic, and will not be covered in this tutorial.
 - It's also recommended that developers use good error handling on all **Server API** calls made from **CloudScript**. This is another advanced topic, which we will cover in a separate tutorial we'll be posting shortly.
 
 ### Step 1: Each game reports a login to Publisher Data

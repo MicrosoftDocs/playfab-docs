@@ -16,7 +16,7 @@ This tutorial illustrates how to use the Event History Chart panel.
 
 ## Overview
 
-The [Event history](../../automation/playstream-events/event-history.md) Chart panel represents the event flow as a chart of events distributed over a timeline and grouped by time intervals. To generate events for testing purposes, see the [PlayStream quickstart](../../automation/playstream-events/playstream-quickstart.md) for examples of how to post custom events.
+The [Event History](../../automation/playstream-events/event-history.md) Chart panel represents the event flow as a chart of events distributed over a timeline and grouped by time intervals. To generate events for testing purposes, see the [PlayStream Quickstart](../../automation/playstream-events/quickstart.md) for examples of how to post custom events.
 
 ![Event History Chart panel](media/tutorials/event-history-chart-panel.png)  
 

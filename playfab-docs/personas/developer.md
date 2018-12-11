@@ -25,7 +25,7 @@ Here are some resources that will help you along that first step for authenticat
 - [Login basics and Best Practices](../features/authentication/platform-specific-authentication/login-basics-best-practices.md) – Check this tutorial first to learn about the best practices to use various authentication methods in your game.
 - Authentication Service Helper – Learn how this service can save you valuable time by leveraging building best practices in this Authentication Service for each SDK.
 - [Authentication quickstart](../features/authentication/platform-specific-authentication/quickstart.md) – Use this guide to understand the basics of Authentication calls into PlayFab.
-- [Account Linking quickstart](../features/authentication/linking-unlinking/account-linking-quickstart.md) - Learn about linking and unlinking different types of Accounts to a single player profile.
+- [Account Linking quickstart](../features/authentication/linking-unlinking/quickstart.md) - Learn about linking and unlinking different types of Accounts to a single player profile.
 
 ## Next steps
 
@@ -33,8 +33,8 @@ Every game is fairly different. You will have a unique set of features that you 
 
 Below, you can find a number of different ways that PlayFab maps onto a game and find the right combo tool set that is right for your game:
 
-- [Title Data](../features/config/titledata/title-data-quickstart.md) – Map variables containing data on PlayFab to data structures in your game clients.
-- [Entity Objects](../features/data/entities/entities-quickstart.md) (aka: Player Data) – Store and Retrieve data on a per player basis.
+- [Title Data](../features/config/titledata/quickstart.md) – Map variables containing data on PlayFab to data structures in your game clients.
+- [Entity Objects](../features/data/entities/quickstart.md) (aka: Player Data) – Store and Retrieve data on a per player basis.
 - [Catalogs](../features/commerce/items/catalogs.md) (Items) - Very useful for storing configuration data about your Items and potentially being able to sell them as virtual goods.
 - [Groups](../features/social/friends-groups/using-shared-group-data.md) – Groups are generally used for things like Guilds or Clans.  Groups are arbitrary and have members, roles and other guild like features.
 
@@ -48,10 +48,10 @@ Mapping your game on top of PlayFab is a great start, but there is more power to
 Actions might result in a CloudScript being run. Our CloudScript is JavaScript code that lives on a remote server and you can execute it either from a rule or directly from a game client. For more information, check out these resources to get you started with Cloud Scripting and Automation on PlayFab:
 
 - [Automation](../index.md?#pivot=documentation&panel=automation) – A hub for information on CloudScript, Scheduled Tasks, PlayStream and Action & Rules.
-- [CloudScript quickstart](../features/automation/cloudscript/cloudscript-quickstart.md) – Get up and running quickly with your first CloudScript call.
+- [CloudScript quickstart](../features/automation/cloudscript/quickstart.md) – Get up and running quickly with your first CloudScript call.
 
 > [!TIP]
-> To leverage rules in the automation system, [write custom events](../features/automation/playstream-events/playstream-quickstart.md#custom-event-overview) in your game which will create a PlayStream event.
+> To leverage rules in the automation system, [write custom events](../features/automation/playstream-events/quickstart.md#custom-event-overview) in your game which will create a PlayStream event.
 
 ## Get to know PlayFab features
 

@@ -32,4 +32,4 @@ sections:
         src: "/gaming/playfab/features/media/feature_photon.svg"
         alt: "PlayFab Multiplayer Features - Photon card image"        
       title: "Photon"
-      html: "<p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/multiplayer/photon/'>Overview</a></p><p><a href='/gaming/playfab/features/multiplayer/photon/photon-quickstart'>Quickstart</a></p>"
+      html: "<p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/multiplayer/photon/'>Overview</a></p><p><a href='/gaming/playfab/features/multiplayer/photon/quickstart'>Quickstart</a></p>"

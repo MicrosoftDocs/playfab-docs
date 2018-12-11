@@ -36,7 +36,7 @@ An **Event**, as a data structure, represents a change in state for your game. *
 3. **Timestamp** (when it happened).
 4. **Associated Data** (a.k.a. body - what are the relevant details).
 
-It is important to distinguish between **Automatic** and **Custom** **Events**. Our [PlayStream quickstart](../../automation/playstream-events/playstream-quickstart.md) explains the difference.
+It is important to distinguish between **Automatic** and **Custom** **Events**. Our [PlayStream Quickstart](../../automation/playstream-events/quickstart.md) explains the difference.
 
 ## Event Flow
 

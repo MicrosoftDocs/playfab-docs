@@ -18,11 +18,10 @@ Alternately, a **Store** allows you to single out a specific set of items, and m
 
 ## Requirements
 
-- [Game Manager](../../config/gamemanager/game-manager-quickstart.md)
-- One or more [virtual currencies](../economy/currencies.md) defined. The latter example on this guide uses:
-
-   - **SS** (**Silver Shekels**)
-   - **GS** (**Gold Shekels**).
+- [Game Manager](../../config/gamemanager/quickstart.md)
+- One or more [Virtual Currencies](../economy/currencies.md) defined. The latter example on this guide uses:
+    - **SS** (**Silver Shekels**)
+    - **GS** (**Gold Shekels**).
 
 - A primary [Catalog](../items/catalogs.md) with one or more items defined
   - The first example uses multiple item bundles, similar to the ones described in the [Drop Tables](../items/drop-tables.md) tutorial.

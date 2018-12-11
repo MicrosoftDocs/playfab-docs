@@ -20,13 +20,13 @@ In general, you can analyze what players are doing in your game by following the
 
 ## Getting to know your players through Game Manager
 
-Real-Time events are amazing, and actionable. However, sometimes you need to do deeper analytics over a period of time to get retention, or a better understanding of how your players are engaging with your game. For this, we offer a variety of solutions and we kick this off by talking about our built-in tools in Game Manager. Game Manager is our online portal to your game title. You can learn more about [Game Manager here](../features/config/gamemanager/game-manager-quickstart.md). In Game Manager, you can search for events, view reports, and look at specific data about each player and their actions.
+Real-Time events are amazing, and actionable. However, sometimes you need to do deeper analytics over a period of time to get retention, or a better understanding of how your players are engaging with your game. For this, we offer a variety of solutions and we kick this off by talking about our built-in tools in Game Manager. Game Manager is our online portal to your game title. You can learn more about [Game Manager here](../features/config/gamemanager/quickstart.md). In Game Manager, you can search for events, view reports, and look at specific data about each player and their actions.
 
 Here are some resources to get you started with the Event Viewer:
 
 - [Real-Time Analytics: Core Concepts](../features/analytics/metrics/real-time-analytics-core-concepts.md) - Gives you precise insights into what is going on inside your game.
 - [Constructing Event History Searches](../features/analytics/metrics/constructing-an-event-history-search.md) - Illustrates how to construct an Event History Search, the components of a search, and how to use Elastic Search syntax in your queries.
-- [Built in Analytic Reports](../features/analytics/reports/reports-quickstart.md) - Gets reports on daily, monthly and rolling overviews. Track retention and conversion reports. View reports on your top spenders and purchases.
+- [Built in Analytic Reports](../features/analytics/reports/quickstart.md) - Gets reports on daily, monthly and rolling overviews. Track retention and conversion reports. View reports on your top spenders and purchases.
 
 <img alt="Analytic Reporting" src="images/analytics-reports.png" width="500" />
 

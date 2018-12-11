@@ -32,12 +32,12 @@ PlayFab takes a different approach. PlayFab also stores data in an underlying da
 
 With PlayFab, custom data is stored in these places:
 
-- **Game title data**. Game-wide data which can be accessed by all players and game clients. This data is typically used for game content or configuration, such as level maps, upcoming events, or current promotions. For more, see the [Title Data quickstart](../../config/titledata/title-data-quickstart.md).
+- **Game title data**. Game-wide data which can be accessed by all players and game clients. This data is typically used for game content or configuration, such as level maps, upcoming events, or current promotions. For more, see the [Title Data quickstart](../../config/titledata/quickstart.md).
 - **Files**. PlayFab provides support for uploading files, and then delivering them via an integrated CDN. For more, see [How to use PlayFab's Content Management API](https://playfab.com/blog/how-use-playfabs-content-management-api/).
 - **Catalog data**. Every item in the catalog can have custom properties associated with it, such as rate-of-fire for a weapon, or mana points for a collectible card. For more, see [Catalogs](../../commerce/items/catalogs.md).
 - **Inventory data**. Every item in a player’s inventory can have custom properties associated with it, such as item hit-points, or config data for procedurally generated items.
 - **Group data**. Data shared among a specific group of players, such as a guild or lobby. Examples include a guild name or message of the day. Players can be added and removed from a shared group; all members in the group can read or write shared group data.
-- **Player data**. Data stored per player account, like Parse “Keyed User Data”; see our quickstart [Player Data](../../data/playerdata/player-data-quickstart.md). 
+- **Player data**. Data stored per player account, like Parse “Keyed User Data”; see our quickstart [Player Data](../../data/playerdata/quickstart.md). 
 Data can be:
   - **Private** (accessed only by the players), **Public** (accessed by other players)
   - Scoped at either the **publisher-level** (shared across games by the same publisher), **game-level**, or **character-level** (tied to one of several characters the player controls in the game).
@@ -51,7 +51,7 @@ One limitation of the PlayFab approach is that it is not possible to write your 
 
 ### Cloud Code
 
-Both Parse and PlayFab provide server-side JavaScript for writing custom game code. With PlayFab, it’s called [CloudScript](../../automation/cloudscript/cloudscript-quickstart.md). Today Parse has better tools for debugging Cloud Code, but this is on the PlayFab roadmap. PlayFab does provide GitHub integration for managing CloudScript, and it’s very easy to call any of the powerful and trusted PlayFab Server API functions from CloudScript.
+Both Parse and PlayFab provide server-side JavaScript for writing custom game code. With PlayFab, it’s called [CloudScript](../../automation/cloudscript/quickstart.md). Today Parse has better tools for debugging Cloud Code, but this is on the PlayFab roadmap. PlayFab does provide GitHub integration for managing CloudScript, and it’s very easy to call any of the powerful and trusted PlayFab Server API functions from CloudScript.
 
 ### User Management and Authentication
 
@@ -98,7 +98,7 @@ There is no risk to experimenting with our Parse player import, since the proces
 
    ![Parse - Browser - Export User Data](media/tutorials/parse-browser-export-user-data.png)  
 
-2. Sign up for a PlayFab developer account and [create your game](../../config/gamemanager/game-manager-quickstart.md).
+2. Sign up for a PlayFab developer account and [create your game](../../config/gamemanager/quickstart.md).
 3. In the Game Manager, browse to your title, and then to the Add-ons tab.
 
    ![Game Manager - Add-ons](media/tutorials/game-manager-add-ons.png)  

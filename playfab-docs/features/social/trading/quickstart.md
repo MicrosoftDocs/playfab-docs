@@ -45,9 +45,7 @@ void GiveItemTo(string secondPlayerId, string myItemInstanceId) {
 }
 ```
 
-In this example, the **LogSuccess** callback must also evaluate [result.Trade](https://api.playfab.com/documentation/Client/datatype/PlayFab.Client.Models/PlayFab.Client.Models.OpenTradeResponse), **TradeId**, and transfer both **firstPlayFabId** and the **tradeId** to the second **Player**. If not saved, it will not be possible for the second **Player** to evaluate or accept the **Trade**.
-
-Thread-safe options include [custom game servers](../../multiplayer/compute/custom-game-servers.md) and [making Webhook calls from CloudScript](../../automation/cloudscript/making-webhook-calls-from-cloudscript.md) to an external database/system. Thread-Unsafe options can be built with **CloudScript** which directly modifies a [Player Data](../../data/playerdata/player-data-quickstart.md) key. The latter option has concurrency issues where simultaneous **Trade**-list-updates may not process correctly, but this issue can be worked around (This is an advanced topic for a future guide).
+In this example, the LogSuccess callback must also evaluate [result.Trade](xref:titleid.playfabapi.com.client.trading.opentrade#tradeinfo).TradeId, and transfer both firstPlayFabId and the tradeId to the second player. If not saved, it will not be possible for the second player to evaluate or accept the trade. Thread-safe options include [custom game servers](../../multiplayer/compute/custom-game-servers.md) and [making Webhook calls from CloudScript](../../automation/cloudscript/making-webhook-calls-from-cloudscript.md) to an external database/system. Thread-Unsafe options can be built with CloudScript which directly modifies a [Player Data](../../data/playerdata/quickstart.md) key. The latter option has concurrency issues where simultaneous trade-list-updates may not process correctly, but this issue can be worked around (This is an advanced topic for a future guide).
 
 Once the first **Player** has created the **Trade**, and transferred their **PlayFabId** and the **tradeId** to the second **Player**, the second **Player** can examine the **Trade** requirements (verifying it is a gift).
 

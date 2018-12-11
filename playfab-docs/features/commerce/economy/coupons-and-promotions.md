@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 **Requirements**
 
 - Familiarity with [Catalogs](../items/catalogs.md), **Bundles**, and **Containers**.
-- Familiarity with [Game Manager](../../config/gamemanager/game-manager-quickstart.md).
+- Familiarity with [Game Manager](../../config/gamemanager/quickstart.md).
 - Familiarity with [Player Inventory](../../data/playerdata/player-inventory.md).
 
 ## Generate and Redeem Coupon Instructions
@@ -98,7 +98,7 @@ Multiple items work the same way:
 
 - Physical rewards at conventions
   - Print out your list of **Coupon** codes, and hand them out as swag at conventions.
-- Out-of-Game communication such as **Forums**, **[Push Notifications](../../engagement/push-notifications/push-notifications-quickstart.md)** and **Email**.
+- Out-of-Game communication such as **Forums**, **[Push Notifications](../../engagement/push-notifications/quickstart.md)** and **Email**.
   - Send your players **Coupon** codes directly as part of re-acquisition campaigns or other community outreach.
 - Tournaments
   - Send **Coupons** to the top ranked players when using [Resettable Leaderboards](../../social/tournaments-leaderboards/using-resettable-statistics-and-leaderboards.md).

@@ -18,7 +18,7 @@ This tutorial shows you the steps fpr creating **Drop Tables** using the PlayFab
 
 ## Requirements
 
-- We assume that you are already  familiar with [Catalogs](catalogs.md), [Inventory](../../data/playerdata/player-inventory.md), and [Game Manager](../../config/gamemanager/game-manager-quickstart.md).  
+- We assume that you are already  familiar with [Catalogs](catalogs.md), [Inventory](../../data/playerdata/player-inventory.md), and [Game Manager](../../config/gamemanager/quickstart.md).  
 - You must have a primary **Catalog**, which contains standard, non-**Bundle**/non-**Container** items.
 - You must have defined at least one virtual currency which you will use as "free" in-game currency.
 

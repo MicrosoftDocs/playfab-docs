@@ -206,5 +206,5 @@ public void ServerGetUserPublisherInternalData() {
 
 ## See also
 
-- [Title Data quickstart](title-data-quickstart.md)
-- [CloudScript quickstart](../../automation/cloudscript/cloudscript-quickstart.md)
+- [Title Data quickstart](quickstart.md)
+- [CloudScript quickstart](../../automation/cloudscript/quickstart.md)

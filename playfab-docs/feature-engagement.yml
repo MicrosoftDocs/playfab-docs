@@ -22,7 +22,7 @@ sections:
         src: "/gaming/playfab/features/media/feature_push_notifications.svg"
         alt: "PlayFab Engagement Features - Push Notifications card image"        
       title: "Push Notifications"
-      html: "<p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/engagement/push-notifications/'>Overview</a></p><p><a href='/gaming/playfab/features/engagement/push-notifications/push-notifications-quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/engagement/push-notifications/push-notifications-tutorials'>Tutorials</a></p>"
+      html: "<p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/engagement/push-notifications/'>Overview</a></p><p><a href='/gaming/playfab/features/engagement/push-notifications/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/engagement/push-notifications/tutorials'>Tutorials</a></p>"
     - image:
         src: "/gaming/playfab/features/media/feature_emails.svg"
         alt: "PlayFab Engagement Features - Emails card image"        
@@ -32,4 +32,4 @@ sections:
         src: "/gaming/playfab/features/media/feature_news.svg"
         alt: "PlayFab Engagement Features - News card image"        
       title: "News"
-      html: "<p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/engagement/news/'>Overview</a></p><p><a href='/gaming/playfab/features/engagement/news/title-news-quickstart'>Quickstart</a></p>"
+      html: "<p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/engagement/news/'>Overview</a></p><p><a href='/gaming/playfab/features/engagement/news/quickstart'>Quickstart</a></p>"

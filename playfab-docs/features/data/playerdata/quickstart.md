@@ -33,7 +33,7 @@ This topic covers **Client-API** calls, which are safe to call from any process 
 
 You can always get and set **Player** data through **Game Manager** by performing the following steps:
 
-- Open **Game Manager**. If you are unfamiliar with **Game Manager**, see the [Game Manager quickstart](../../config/gamemanager/game-manager-quickstart.md).
+- Open **Game Manager**. If you are unfamiliar with **Game Manager**, see the [Game Manager quickstart](../../config/gamemanager/quickstart.md).
 - Select the **Players** tab.
 - Select the name of the **Player**, this will put you into the **Players Account** tab.
 - Select the **Player Data** tab to view their data.
@@ -191,7 +191,7 @@ public void GetUserInternalData() {
 
 ## CloudScript code example
 
-**CloudScript** is an advanced topic that is covered in the [CloudScript quickstart](../../automation/cloudscript/cloudscript-quickstart.md). **Player** data does not require **CloudScript**. It is, however, accessible from **CloudScript** if you require it.
+**CloudScript** is an advanced topic that is covered in the [CloudScript quickstart](../../automation/cloudscript/quickstart.md). **Player** data does not require **CloudScript**. It is, however, accessible from **CloudScript** if you require it.
 
 Sometimes, you may want to modify **Read-Only** or **Internal Player** data from **CloudScript**. You must be very careful to ensure the security of your **server-API** calls in **CloudScript**.
 
@@ -252,6 +252,6 @@ Since this example updates internal **Player** data, you will need to call [GetU
 
 ### See Also
 
-- [Title Data quickstart](../../config/titledata/title-data-quickstart.md)
+- [Title Data quickstart](../../config/titledata/quickstart.md)
 - [Using Publisher Data](../../config/titledata/using-publisher-data.md)
-- [CloudScript quickstart](../../automation/cloudscript/cloudscript-quickstart.md)
+- [CloudScript quickstart](../../automation/cloudscript/quickstart.md)

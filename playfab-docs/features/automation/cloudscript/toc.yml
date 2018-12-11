@@ -2,9 +2,9 @@
   href: index.md
   items:
   - name: Quickstart
-    href: cloudscript-quickstart.md
+    href: quickstart.md
   - name: Tutorials
-    href: cloudscript-tutorials.md
+    href: tutorials.md
     items:
     - name: ES6 features in CloudScript
       href: es6-features-in-cloudscript.md

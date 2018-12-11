@@ -2,9 +2,9 @@
   href: index.md
   items:
   - name: Quickstart
-    href: ab-testing-quickstart.md
+    href: quickstart.md
   - name: Tutorials
-    href: ab-testing-tutorials.md
+    href: tutorials.md
     items:
     - name: A/B testing with Stores and test buckets
       href: ab-testing-with-stores-and-test-buckets.md

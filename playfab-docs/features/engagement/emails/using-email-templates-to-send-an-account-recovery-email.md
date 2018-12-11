@@ -21,7 +21,7 @@ This tutorial walks you through how to use the email template feature of PlayFab
 
 - To send custom emails with email templates, you will need to have your own SMTP server with a username and password. Please ensure that you have your own SMTP server before following our tutorial [Setting up an SMTP server with add-ons](../../engagement/emails/setting-up-an-smtp-server-with-add-ons.md). Note that you can use Gmail for testing, but with Gmail you are limited to 2,000 emails per day.
 - Basic knowledge of how to create a player will be necessary since there will need to be players with a username and password before calling account recovery logic. Refer to our [Getting Started with PlayFab](../../config/dev-test-live/getting-started-with-playfab.md) tutorial which will run you through the process of creating a player for the title.
-- Read the [Game Manager quickstart](../../config/gamemanager/game-manager-quickstart.md) if you are unfamiliar with the Game Manager as it is the place where email templates are created.
+- Read the [Game Manager quickstart](../../config/gamemanager/quickstart.md) if you are unfamiliar with the Game Manager as it is the place where email templates are created.
 - Knowledge of how to work with player profiles will be necessary to confirm that emails will be necessary for checking that a contact email has been added to a player’s profile. Please read up on how to get a player’s profile in the [Getting Player Profiles](../../data/playerdata/getting-player-profiles.md) tutorial and make sure that under the “Client Profile Options” on your title you allow “Contact email addresses”.
 
 ## Step 1 - Create an Email Template

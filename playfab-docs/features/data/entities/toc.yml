@@ -2,9 +2,9 @@
   href: index.md
   items:
   - name: Quickstart
-    href: entities-quickstart.md
+    href: quickstart.md
   - name: Tutorials
-    href: entities-tutorials.md
+    href: tutorials.md
     items:
     - name: Available built-in Entity types
       href: available-built-in-entity-types.md

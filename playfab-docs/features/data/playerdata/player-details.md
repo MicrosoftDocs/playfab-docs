@@ -32,7 +32,7 @@ The **Player Overview** (or *details* page), is a starting point for controlling
 3. The **Run CloudScript** button - Gives you access to cloud scripting on behalf of the player. 
 
 > [!NOTE]
-> You can read more about this in our [CloudScript quickstart](../../automation/cloudscript/cloudscript-quickstart.md).
+> You can read more about this in our [CloudScript quickstart](../../automation/cloudscript/quickstart.md).
 
 4. Information panels contain general information about the player account.
 
@@ -41,7 +41,7 @@ The **Player Overview** (or *details* page), is a starting point for controlling
 6. The **Accounts** panel allows **linking** to different accounts for a single player record (described later in this tutorial).
 
 > [!NOTE]
-> You can read more about this in our [CloudScript quickstart](../../automation/cloudscript/cloudscript-quickstart.md).
+> You can read more about this in our [CloudScript quickstart](../../automation/cloudscript/quickstart.md).
 
 ![Game Manager - Player - Overview](media/tutorials/game-manager-player-overview.png)  
 
@@ -53,7 +53,7 @@ PlayFab offers a wide set of pages for fine tuning and analyzing your player. Th
 - [Logins](player-logins.md) for inspecting a player's login attempts.
 - [Segments](player-segments.md) for inspecting the segments that a player belongs to.
 - [Statistics](using-player-statistics.md) for inspecting and manipulating a player's statistical values.
-- [Player Data (Title)](../../config/titledata/title-data-quickstart.md) for managing account data within the current scope.
+- [Player Data (Title)](../../config/titledata/quickstart.md) for managing account data within the current scope.
 - [Player Data (Publisher)](using-player-publisher-data.md) for managing account data across several titles.
 - Virtual Currency
 - [Inventory](player-inventory.md) for managing the items that a player owns.
@@ -80,7 +80,7 @@ A PlayFab account contains critical, identifying, player data. As an administrat
 
 ![Game Manager - Player - PlayFab account](media/tutorials/game-manager-player-playfab-account.png)  
 
-Additionally, you can manage linking. Read more about linking in our quickstart on [Account linking](../../authentication/linking-unlinking/account-linking-quickstart.md).
+Additionally, you can manage linking. Read more about linking in our quickstart on [Account linking](../../authentication/linking-unlinking/quickstart.md).
 
 ![Game Manager - Player - Accounts - Link New Account](media/tutorials/game-manager-player-link-new-account.png)  
 

@@ -22,12 +22,12 @@ sections:
         src: "/gaming/playfab/features/media/feature_game_manager.svg"
         alt: "PlayFab Config Features - Game Manager card image"        
       title: "Game Manager"
-      html: "<p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/config/gamemanager/'>Overview</a></p><p><a href='/gaming/playfab/features/config/gamemanager/game-manager-quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/config/gamemanager/game-manager-tutorials'>Tutorials</a></p>"
+      html: "<p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/config/gamemanager/'>Overview</a></p><p><a href='/gaming/playfab/features/config/gamemanager/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/config/gamemanager/tutorials'>Tutorials</a></p>"
     - image:
         src: "/gaming/playfab/features/media/feature_titledata.svg"
         alt: "PlayFab Config Features - Title Data card image"        
       title: "Title Data"
-      html: "<p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/config/titledata/'>Overview</a></p><p><a href='/gaming/playfab/features/config/titledata/title-data-quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/config/titledata/title-data-tutorials'>Tutorials</a></p>"
+      html: "<p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/config/titledata/'>Overview</a></p><p><a href='/gaming/playfab/features/config/titledata/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/config/titledata/tutorials'>Tutorials</a></p>"
     - image:
         src: "/gaming/playfab/features/media/feature_dev_test_live.svg"
         alt: "PlayFab Config Features - Dev-Test-Live card image"        
