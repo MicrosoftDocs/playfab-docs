@@ -10,22 +10,22 @@ keywords: playfab, commerce, stores
 ms.localizationpriority: medium
 ---
 
-# Best Practices for Store Segmentation
+# Best practices for Store segmentation
 
-- Store segmentation is public information
-  - There are many ways for players to gain information about alternate stores.
-  - Players naturally transition between segments, and they'll see those changes when they transition.
-  - Players discuss content on forums, community sites, wikis, etc.
-  - In the PlayFab API, store information is public unless you disable those APIs with our [API Access Policy](../../config/gamemanager/api-access-policy.md)
-  - Thus, you should assume that players will be aware of other stores and their details.
+- **Store** segmentation is public information.
+  - There are many ways for **Players** to gain information about alternate **Stores**.
+  - **Players** naturally transition between segments, and they'll see those changes when they transition.
+  - **Players** discuss content on forums, community sites, wikis, etc.
+  - In the **PlayFab API**, **Store** information is public unless you disable those **APIs** with our [**API Access Policy**](../../config/gamemanager/api-access-policy.md).
+  - You should assume that **Players** will be aware of other stores and their details.
 
 - Provide varying content, not varying pricing:
-  - Players will feel cheated if: 
+  - **Players** will feel cheated if:
     - Prices go up or down when they transition segments.
     - Prices described on wikis are different than their own.
 
   - The only exception to the pricing rule would be first time purchases.
-    - You must secure the client API methods with our [API Access Policy](../../config/gamemanager/api-access-policy.md) to prevent multiple purchases, or make repurchasing less meaningful through game design.
+    - You must secure the **Client API** methods with our [API Access Policy](../../config/gamemanager/api-access-policy.md) to prevent multiple purchases, or make repurchasing less meaningful through game design.
 
 - Content should be relevant to the segment.
   - Whales are willing to spend large amounts of real money, and thus are likely to buy more expensive bundles, if the value is worthwhile.
