@@ -7,6 +7,7 @@
       "locale": "en-us",
       "monikers": [],
       "moniker_ranges": [],
+     	"xref_query_tags": [ "/rest" ],
       "open_to_public_contributors": false,
       "customized_tasks": {
             "docset_prebuild": [
