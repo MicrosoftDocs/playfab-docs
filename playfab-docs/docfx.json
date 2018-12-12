@@ -39,7 +39,8 @@
             "feedback_github_repo": "MicrosoftDocs/playfab-docs-pr",
             "feedback_product_url": "https://community.playfab.com/index.html",
             "searchScope": ["PlayFab"],
-            "uhfHeaderId": "MSDocsHeader-PlayFab"
+            "uhfHeaderId": "MSDocsHeader-PlayFab",
+            "titleSuffix": "Playfab"
         },
         "fileMetadata": {},
         "template": [],
