@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # PlayStream Quickstart
 
-This Quickstart provides an overview of automatic and custom **PlayStream** events in **PlayFab**.
+This quickstart provides an overview of automatic and custom **PlayStream** events in **PlayFab**.
 
 ## Automatic Event Overview
 
@@ -37,9 +37,9 @@ As a side effect, **PlayFab** will record a **player_logged_in** event. Consider
 
 ![Game Manager - Event History Chart](media/tutorials/game-manager-event-history-chart.png)  
 
-## Custom Event Overview
+## Custom Event overview
 
-While **PlayFab** records a lot of events automatically, sometimes you need events that are very specific for your game. The concept of **Custom Events** allows you to post **Events** with an arbitrary **Type** and **Name**.
+While **PlayFab** records a lot of events automatically, sometimes you need **Events** that are very specific for your game. The concept of **Custom Events** allows you to post **Events** with an arbitrary **Type** and **Name**.
 
 Similar to **Automatic Events**, **Custom Events** are fully reflected through [real-time analytics tools](../../analytics/metrics/real-time-analytics-core-concepts.md). Unlike **Automatic Events**, you need a little bit of custom code to post **Custom Events**.
 
@@ -83,9 +83,9 @@ private void OnChestOpened(string chestType, int levelId) {
 ```
 
 1. The method receives **ChestType** and **LevelId**.
-2. Use the [WritePlayerEvent](xref:titleid.playfabapi.com.client.analytics.writeplayerevent) **API** call for posting a custom event bound to a player.
-3. Provide a body, specific for your event and your needs. In this case we provide the **ChestType** and **LevelId** fields.
-4. Provide an event name identifying your **Custom Event**. In this case we use the **player_chest_opened**, **Event Type Name**.
+2. Use the [WritePlayerEvent](xref:titleid.playfabapi.com.client.analytics.writeplayerevent) **API** call for posting a **Custom Event** bound to a **Player**.
+3. Provide a body, specific for your **Event** and your needs (in this case we provide the **ChestType** and **LevelId** fields).
+4. Provide an **Event Name** identifying your **Custom Event**. In this case we use the **player_chest_opened**, **Event Type Name**.
 
 ### Testing
 

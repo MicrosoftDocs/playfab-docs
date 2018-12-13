@@ -14,16 +14,18 @@ ms.localizationpriority: medium
 
 This quickstart describes how to programmatically create and use **Title Data**.
 
-This an important topic because storing a game's configuration data remotely, on the server, where it can be changed at any time, is one of the most basic reasons to use a service like **PlayFab**.
+This an important topic because storing a game's configuration data remotely - on the server, where it can be changed at any time - is one of the most basic reasons to use a service like **PlayFab**.
 
-Title data is represented as **Key/Value Pairs (KVPs)**, that can only be associated with a specific **Title**.
+**Title Data** is represented as **Key/Value Pairs (KVPs)**, that can only be associated with a specific **Title**.
 
 > [!NOTE]
-> Title data values are copied and distributed to potentially *hundreds* of machines in the **PlayFab** cluster server. As part of this process, **Title Data** is cached and changes may take up to *fifteen minutes* to refresh in those caches. **Title Data** is best suited for **Global Constant/Static Data**, and is *not suitable* or reliable as **Global Variables**.
+> **Title Data** values are copied and distributed to potentially *hundreds* of machines in the **PlayFab** cluster server. As part of this process, **Title Data** is cached and changes may take up to *fifteen minutes* to refresh in those caches. **Title Data** is best suited for **Global Constant/Static Data**, and is *not suitable* or reliable as **Global Variables**.
 
 ## Getting Title Data
 
-### From the game client
+Title Data can be retrived using the **PlayFabClientAPI** or the **PlayFabServerAPI**.
+
+### Getting Title Data from the game Client
 
 Use [GetTitleData](xref:titleid.playfabapi.com.client.title-widedatamanagement.gettitledata) from the **PlayFabClientAPI** to get the **KVPs** for a specific **Title**. The following code example displays the values of all of the **Title Data**.
 
@@ -42,9 +44,9 @@ public void ClientGetTitleData() {
 }
 ```
 
-### From the game server
+### Getting Title Data from the game server
 
-Use [GetTitleData](xref:titleid.playfabapi.com.server.title-widedatamanagement.gettitledata) from the **PlayFabServerAPI** to get the **KVPs** for a specific title. The following code example displays the values of all of the title data.
+Use [GetTitleData](xref:titleid.playfabapi.com.server.title-widedatamanagement.gettitledata) from the **PlayFabServerAPI** to get the **KVPs** for a specific **Title**. The following code example displays the values of all of the **Title Data**.
 
 ```csharp
 public void ServerGetTitleData() {
@@ -62,7 +64,7 @@ public void ServerGetTitleData() {
 
 ## Setting Title Data
 
-It is unlikely that **Title Data** will change very frequently. For most situations, you should use your **Title Data** for static data that is mostly unchanged for the life of the title.
+It is unlikely that **Title Data** will change very frequently. For most situations, you should use your **Title Data** for static data that is mostly unchanged for the life of the **Title**.
 
 You can set **Title Data** by using the **Game Manager**, or by a server **API** function.
 
@@ -102,8 +104,7 @@ public void SetTitleData() {
 
 ## Internal Title Data
 
-Similarly to **UserData**, **Title Data** has internal storage that is hidden from the client. This data can also be set in the **Game Manager**, or via a server **API**.
-
+Similarly to **UserData**, **Title Data** has internal storage that is hidden from the **Client**. This data can also be set in the **Game Manager**, or via a server **API**.
 ### Getting Internal Title Data by calling the server API in C#
 
 ```csharp
