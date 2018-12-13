@@ -12,8 +12,7 @@ ms.localizationpriority: medium
 
 # Title Data quickstart
 
-
-This Quickstart describes how to programmatically create and use **Title Data**.
+This quickstart describes how to programmatically create and use **Title Data**.
 
 This an important topic because storing a game's configuration data remotely, on the server, where it can be changed at any time, is one of the most basic reasons to use a service like **PlayFab**.
 
@@ -66,6 +65,7 @@ public void ServerGetTitleData() {
 It is unlikely that **Title Data** will change very frequently. For most situations, you should use your **Title Data** for static data that is mostly unchanged for the life of the title.
 
 You can set **Title Data** by using the **Game Manager**, or by a server **API** function.
+
 After the **Title Data** is set for initial release, most **Titles** will not make significant changes from that point.
 
 ### Setting Title Data using Game Manager
