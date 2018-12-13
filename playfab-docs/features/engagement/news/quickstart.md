@@ -1,17 +1,16 @@
 ---
-title: Title News Quickstart
+title: Title News quickstart
 author: v-rayro
 description: What Title News is and how to create it.
 ms.author: v-rayro
 ms.date: 11/01/2018
 ms.topic: article
 ms.prod: gaming
-ms.technology: playfab
 keywords: playfab
 ms.localizationpriority: medium
 ---
 
-# Title News Quickstart
+# Title News quickstart
 
 Title News is a mechanism for communicating with your players. It contains a few basic elements:
 

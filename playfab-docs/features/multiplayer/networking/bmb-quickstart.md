@@ -1,7 +1,7 @@
 ---
 title: Getting started with Bumblelion Private Preview
 author: v-thopra
-description: Homepage for the Bumblelion 1PP Preview. Properly called PlayFab Multiplayer Communication Fabric.
+description: Homepage for the Bumblelion 1PP Preview. Properly called PlayFab Multiplayer Communications Fabric.
 ms.author: v-thopra
 ms.date: 07/12/2018
 ms.topic: article
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Getting started with Bumblelion Private Preview
 
-This quickstart helps you get started with the Bumblelion 1PP Preview. Properly called the PlayFab Multiplayer Communication Fabric.
+This quickstart helps you get started with the Bumblelion 1PP Preview. Properly called the PlayFab Multiplayer Communications Fabric.
 
 ## Share Location
 
