@@ -26,7 +26,7 @@ In addition, the **Trading** methods are *only* available in the **Client APIs**
 > All **Trades** are public information. Any **Player** may look at the open **Trades** of another **Player**, as well as another **Player's** trade history (if they know the **playFabId** of that **Player**).
 
 ## Prerequisites
-- This Quickstart assumes you are already familiar with [Item Catalogs](../../commerce/items/catalogs.md) and [Inventory](../../data/playerdata/player-inventory.md).
+- This quickstart assumes you are already familiar with [Item Catalogs](../../commerce/items/catalogs.md) and [Inventory](../../data/playerdata/player-inventory.md).
 - The example **Player** must *already own* inventory items they wish to **Trade** away.
 
 ## Example Case: Gift items between Players

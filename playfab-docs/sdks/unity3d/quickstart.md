@@ -1,5 +1,5 @@
 ---
-title: Unity3D Quickstart
+title: Unity3D quickstart
 author: v-thopra
 description: This guide will help you make your first PlayFab API call in the Unity3d engine.
 ms.author: v-thopra
@@ -10,7 +10,7 @@ keywords: playfab, unity3d, playfab unity sdk, csharp
 ms.localizationpriority: medium
 ---
 
-# Unity3D Quickstart
+# Unity3D quickstart
 
 This guide will help you make your first PlayFab API call in the Unity3d engine.   
 
@@ -34,46 +34,46 @@ If you don't have unity installed, then you will need to install it and create a
 The best way to acquire our Unity SDK is via our editor extensions. Although you can directly download the Unity SDK from our github page. [PlayFab UnitySDK Unity Package](https://api.playfab.com/sdks/download/unity-v2ap).   
 
 - Download and Import the [PlayFab Unity Editor Extensions Package](https://github.com/PlayFab/UnityEditorExtensions/raw/master/Packages/PlayFabEditorExtensions.unitypackage)
-  - To import the the Unity Editor Extensions package, navigate to where the file was downloaded and double click on the .UnityPackage file. This will bring up the following window.   
+  - To import the the Unity Editor Extensions package, navigate to where the file was downloaded and double-click on the .UnityPackage file. This will bring up the following window.
 
     ![Import Unity package](media/import-uedex.png)  
 
-  - Click Import, which will import the PlayFab Unity Editor Extensions into your project.   
+  - Click Import, which will import the PlayFab Unity Editor Extensions into your project.
 
-- Login or Register
-  - Before you can download the SDK you must login with your PlayFab account. If you don't have one you can register or click the "log in" link to take you to the login pane and login with your PlayFab username or password.
+- Log In or Register
+  - Before you can download the SDK you must login with your PlayFab account. If you don't have one you can register or click the "Log In" link to take you to the login pane and login with your PlayFab username and password.
 
-    ![Login or Register with PlayFab](media/login-register-uedex.png) 
+    ![Login or Register with PlayFab](media/login-register-uedex.png)
 
-  - Once you have registered & logged in, you will find yourself on this screen. Click Install PlayFab SDK and it will automatically import the SDK into your project.   
+  - Once you have registered and logged in, you will find yourself on this screen. Click Install PlayFab SDK and it will automatically import the SDK into your project.
   
-    ![Install PlayFab SDK](media/install-sdk.png) 
+    ![Install PlayFab SDK](media/install-sdk.png)
 
-## Set Title Settings   
+## Set Title Settings
 
-Now that you have installed the PlayFab SDK, you will need to set your title in Title Settings. If you are not using editor extensions you can do this directly in the PlayFab Settings Scriptable Object located in the following folder. 
- 
+Now that you have installed the PlayFab SDK, you will need to set your title in Title Settings. If you are not using editor extensions you can do this directly in the PlayFab Settings Scriptable Object located in the following folder.
+
 ![PlayFab setting scriptable object](media/playfab-settings-so.png)
 
-Otherwise, you can easily set your Title settings in the Editor Extensions UI. Click on the settings tab in the Editor Extensions.   
+Otherwise, you can easily set your Title Settings in the Editor Extensions UI. Click on the Settings tab in the Editor Extensions.
 
-![PlayFab settings tab](media/playfab-settings-tab.png)    
+![PlayFab Settings tab](media/playfab-settings-tab.png)
 
-Select your Studio and Title ID and click Save.   
+Select your Studio and Title ID and click Save.
 
-![Save PlayFab title settings](media/playfab-settings-tab.png)    
+![Save PlayFab Title Settings](media/playfab-settings-tab.png)
 
-## Making your first API Call   
+## Making your first API Call
 
-Now that you have installed the SDK and set your Title settings, you are ready to make your first API call with the Unity SDK. This part of the guide will provide the minimum steps to make your first PlayFab API call, without any GUI or on-screen feedback. Confirmation will be done with the Console log.
+Now that you have installed the SDK and set your Title Settings, you are ready to make your first API call with the Unity SDK. This part of the guide will provide the minimum steps to make your first PlayFab API call, without any GUI or on-screen feedback. Confirmation will be done with the Console log.
 
 - Find the Project panel
 - Create a new C# script named "PlayFabLogin" 
 
 ![Create a new C# script](media/first-script.png) 
 
-- In Unity, Double click this file to open it in a code-editor
-  - Depending on your settings/installed-programs, this will likely be Visual Studio or MonoDevelop   
+- In Unity, double-click this file to open it in a code-editor
+  - Depending on your settings/installed-programs, this will likely be Visual Studio or MonoDevelop
 
 - Next, Create a new GameObject, and attach this script (PlayFabLogin.cs) to the newly created GameObject
 - Replace the contents of PlayFabLogin.cs with the following:

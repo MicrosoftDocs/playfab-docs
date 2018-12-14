@@ -10,7 +10,7 @@ keywords: playfab, automation, playstream, events, custom events, automatic even
 ms.localizationpriority: medium
 ---
 
-# PlayStream Quickstart
+# PlayStream quickstart
 
 This quickstart provides an overview of automatic and custom **PlayStream** events in **PlayFab**.
 

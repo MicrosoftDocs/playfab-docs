@@ -10,7 +10,7 @@ keywords: playfab, multiplayer, photon
 ms.localizationpriority: medium
 ---
 
-# Photon Quickstart
+# Photon quickstart
 
 This quickstart shows how to set up Photon Multiplayer to work with PlayFab. Currently, PlayFab offers the following Photon integrations:
 
