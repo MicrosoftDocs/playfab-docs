@@ -1,7 +1,7 @@
 ---
 title: Reports Quickstart
 author: v-thopra
-description: Demonstrates how to get a player's Value to Date (VTD) from their Player Profile.
+description: Describes how to access the Game Manager reports composed from events, and broken down by dates.
 ms.author: v-thopra
 ms.date: 30/10/2018
 ms.topic: article

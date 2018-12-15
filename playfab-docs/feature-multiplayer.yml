@@ -19,17 +19,17 @@ sections:
     columns: 3
     items:
     - image:
-        src: "/gaming/playfab/features/media/feature_compute.svg"
-        alt: "PlayFab Multiplayer Features - Compute card image"        
+        src: "/gaming/playfab/features/media/feature-compute.svg"
+        text: "PlayFab Multiplayer Features - Compute card image"        
       title: "Compute"
       html: "<p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/multiplayer/compute/'>Overview</a></p><p><a href='/gaming/playfab/features/multiplayer/compute/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/multiplayer/compute/tutorials'>Tutorials</a></p>"
     - image:
-        src: "/gaming/playfab/features/media/feature_matchmaking.svg"
-        alt: "PlayFab Multiplayer Features - Matchmaking card image"        
+        src: "/gaming/playfab/features/media/feature-matchmaking.svg"
+        text: "PlayFab Multiplayer Features - Matchmaking card image"        
       title: "Matchmaking"
       html: "<p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/multiplayer/matchmaking/'>Overview</a></p><p><a href='/gaming/playfab/features/multiplayer/matchmaking/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/multiplayer/matchmaking/tutorials'>Tutorials</a></p>"
     - image:
-        src: "/gaming/playfab/features/media/feature_photon.svg"
-        alt: "PlayFab Multiplayer Features - Photon card image"        
+        src: "/gaming/playfab/features/media/feature-photon.svg"
+        text: "PlayFab Multiplayer Features - Photon card image"        
       title: "Photon"
       html: "<p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/multiplayer/photon/'>Overview</a></p><p><a href='/gaming/playfab/features/multiplayer/photon/quickstart'>Quickstart</a></p>"

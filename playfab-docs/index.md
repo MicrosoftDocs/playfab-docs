@@ -34,7 +34,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1" style="background-color:#334154;">
-                                                        <img src="/gaming/playfab/media/persona_developer.svg" alt="Getting Started: Developers card image" />
+                                                        <img src="/gaming/playfab/media/persona-developer.svg" alt="Getting Started: Developers card image" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -53,7 +53,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1" style="background-color:#334154;">
-                                                        <img src="/gaming/playfab/media/persona_liveops.svg" alt="Getting Started: LiveOps card image" />
+                                                        <img src="/gaming/playfab/media/persona-liveops.svg" alt="Getting Started: LiveOps card image" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -72,7 +72,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1" style="background-color:#334154;">
-                                                        <img src="/gaming/playfab/media/persona_business_intelligence.svg" alt="Getting Started: Business Intelligence card image" />
+                                                        <img src="/gaming/playfab/media/persona-business-intelligence.svg" alt="Getting Started: Business Intelligence card image" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -91,7 +91,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1" style="background-color:#334154;">
-                                                        <img src="/gaming/playfab/media/core_concept_game_manager.svg" alt="Concept: Game Manager card image" />
+                                                        <img src="/gaming/playfab/media/core-concept-game-manager.svg" alt="Concept: Game Manager card image" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -110,7 +110,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1" style="background-color:#334154;">
-                                                        <img src="/gaming/playfab/media/core_concept_entities.svg" alt="Concept: Entities card image" />
+                                                        <img src="/gaming/playfab/media/core-concept-entities.svg" alt="Concept: Entities card image" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -129,7 +129,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1" style="background-color:#334154;">
-                                                        <img src="/gaming/playfab/media/core_concept_playstream.svg" alt="Concept: PlayStream card image" />
+                                                        <img src="/gaming/playfab/media/core-concept-playstream.svg" alt="Concept: PlayStream card image" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -148,7 +148,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1" style="background-color:#334154;">
-                                                        <img src="/gaming/playfab/media/core_concept_cloudscript.svg" alt="Concept: CloudScript card image" />
+                                                        <img src="/gaming/playfab/media/core-concept-cloudscript.svg" alt="Concept: CloudScript card image" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -167,7 +167,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1" style="background-color:#334154;">
-                                                        <img src="/gaming/playfab/media/resource_event_archive.svg" alt="Resource: Event Archive card image" />
+                                                        <img src="/gaming/playfab/media/resource-event-archive.svg" alt="Resource: Event Archive card image" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -186,7 +186,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1" style="background-color:#334154;">
-                                                        <img src="/gaming/playfab/media/resource_recipes.svg" alt="Resource: Recipes card image" />
+                                                        <img src="/gaming/playfab/media/resource-recipes.svg" alt="Resource: Recipes card image" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -205,7 +205,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1" style="background-color:#334154;">
-                                                        <img src="/gaming/playfab/media/resource_technical_whitepaper.svg" alt="Resource: Technical Whitepaper card image" />
+                                                        <img src="/gaming/playfab/media/resource-technical-whitepaper.svg" alt="Resource: Technical Whitepaper card image" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -231,7 +231,7 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/gaming/playfab/media/quickstart_authentication.svg" alt="PlayFab Quickstarts: Authentication card image" />
+                                                    <img src="/gaming/playfab/media/quickstart-authentication.svg" alt="PlayFab Quickstarts: Authentication card image" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -248,7 +248,7 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/gaming/playfab/media/quickstart_data.svg" alt="PlayFab Quickstarts: Data card image" />
+                                                    <img src="/gaming/playfab/media/quickstart-data.svg" alt="PlayFab Quickstarts: Data card image" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -265,7 +265,7 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/gaming/playfab/media/quickstart_config.svg" alt="PlayFab Quickstarts: Config card image" />
+                                                    <img src="/gaming/playfab/media/quickstart-config.svg" alt="PlayFab Quickstarts: Config card image" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -282,7 +282,7 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/gaming/playfab/media/quickstart_automation.svg" alt="PlayFab Quickstarts: Automation card image" />
+                                                    <img src="/gaming/playfab/media/quickstart-automation.svg" alt="PlayFab Quickstarts: Automation card image" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -299,7 +299,7 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/gaming/playfab/media/quickstart_social.svg" alt="PlayFab Quickstarts: Social card image" />
+                                                    <img src="/gaming/playfab/media/quickstart-social.svg" alt="PlayFab Quickstarts: Social card image" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -316,7 +316,7 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/gaming/playfab/media/quickstart_commerce.svg" alt="PlayFab Quickstarts: Commerce card image" />
+                                                    <img src="/gaming/playfab/media/quickstart-commerce.svg" alt="PlayFab Quickstarts: Commerce card image" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -333,7 +333,7 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/gaming/playfab/media/quickstart_multiplayer.svg" alt="PlayFab Quickstarts: Multiplayer card image" />
+                                                    <img src="/gaming/playfab/media/quickstart-multiplayer.svg" alt="PlayFab Quickstarts: Multiplayer card image" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -350,7 +350,7 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/gaming/playfab/media/quickstart_analytics.svg" alt="PlayFab Quickstarts: Analytics card image" />
+                                                    <img src="/gaming/playfab/media/quickstart-analytics.svg" alt="PlayFab Quickstarts: Analytics card image" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -367,7 +367,7 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/gaming/playfab/media/quickstart_engagement.svg" alt="PlayFab Quickstarts: Engagement card image" />
+                                                    <img src="/gaming/playfab/media/quickstart-engagement.svg" alt="PlayFab Quickstarts: Engagement card image" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -392,7 +392,7 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/gaming/playfab/features/media/feature_linking_unlinking.svg" alt="PlayFab Authentication Features: Linking & Unlinking card image" />
+                                                    <img src="/gaming/playfab/features/media/feature-linking-unlinking.svg" alt="PlayFab Authentication Features: Linking & Unlinking card image" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -409,7 +409,7 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/gaming/playfab/features/media/feature_platform_specific_authentication.svg" alt="PlayFab Authentication Features: Platform-Specific Authentication card image" />
+                                                    <img src="/gaming/playfab/features/media/feature-platform-specific-authentication.svg" alt="PlayFab Authentication Features: Platform-Specific Authentication card image" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -434,7 +434,7 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/gaming/playfab/features/media/feature_entities.svg" alt="PlayFab Data Features: Entities card image" />
+                                                    <img src="/gaming/playfab/features/media/feature-entities.svg" alt="PlayFab Data Features: Entities card image" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -451,7 +451,7 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/gaming/playfab/features/media/feature_playerdata.svg" alt="PlayFab Data Features: Player Data card image" />
+                                                    <img src="/gaming/playfab/features/media/feature-playerdata.svg" alt="PlayFab Data Features: Player Data card image" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -468,7 +468,7 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/gaming/playfab/features/media/feature_content_delivery_network.svg" alt="PlayFab Data Features: Content Delivery Network card image" />
+                                                    <img src="/gaming/playfab/features/media/feature-content-delivery-network.svg" alt="PlayFab Data Features: Content Delivery Network card image" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -493,7 +493,7 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/gaming/playfab/features/media/feature_game_manager.svg" alt="PlayFab Config Features: Game Manager card image" />
+                                                    <img src="/gaming/playfab/features/media/feature-game-manager.svg" alt="PlayFab Config Features: Game Manager card image" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -510,7 +510,7 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/gaming/playfab/features/media/feature_titledata.svg" alt="PlayFab Config Features: Title Data card image" />
+                                                    <img src="/gaming/playfab/features/media/feature-titledata.svg" alt="PlayFab Config Features: Title Data card image" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -527,7 +527,7 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/gaming/playfab/features/media/feature_dev_test_live.svg" alt="PlayFab Config Features: Dev-Test-Live card image" />
+                                                    <img src="/gaming/playfab/features/media/feature-dev-test-live.svg" alt="PlayFab Config Features: Dev-Test-Live card image" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -552,7 +552,7 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/gaming/playfab/features/media/feature_cloudscript.svg" alt="PlayFab Automation Features: CloudScript card image" />
+                                                    <img src="/gaming/playfab/features/media/feature-cloudscript.svg" alt="PlayFab Automation Features: CloudScript card image" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -569,7 +569,7 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/gaming/playfab/features/media/feature_playstream.svg" alt="PlayFab Automation Features: PlayStream card image" />
+                                                    <img src="/gaming/playfab/features/media/feature-playstream.svg" alt="PlayFab Automation Features: PlayStream card image" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -586,7 +586,7 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/gaming/playfab/features/media/feature_actions_rules.svg" alt="PlayFab Automation Features: Actions & Rules card image" />
+                                                    <img src="/gaming/playfab/features/media/feature-actions-rules.svg" alt="PlayFab Automation Features: Actions & Rules card image" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -603,7 +603,7 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/gaming/playfab/features/media/feature_scheduled_tasks.svg" alt="PlayFab Automation Features: Scheduled Tasks card image" />
+                                                    <img src="/gaming/playfab/features/media/feature-scheduled-tasks.svg" alt="PlayFab Automation Features: Scheduled Tasks card image" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -628,7 +628,7 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/gaming/playfab/features/media/feature_friends_groups.svg" alt="PlayFab Social Features: Friends & Groups card image" />
+                                                    <img src="/gaming/playfab/features/media/feature-friends-groups.svg" alt="PlayFab Social Features: Friends & Groups card image" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -645,7 +645,7 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/gaming/playfab/features/media/feature_tournaments_leaderboards.svg" alt="PlayFab Social Features: Tournaments & Leaderboards card image" />
+                                                    <img src="/gaming/playfab/features/media/feature-tournaments-leaderboards.svg" alt="PlayFab Social Features: Tournaments & Leaderboards card image" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -662,7 +662,7 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/gaming/playfab/features/media/feature_trading.svg" alt="PlayFab Social Features: Trading card image" />
+                                                    <img src="/gaming/playfab/features/media/feature-trading.svg" alt="PlayFab Social Features: Trading card image" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -687,7 +687,7 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/gaming/playfab/features/media/feature_items.svg" alt="PlayFab Commerce Features: Items card image" />
+                                                    <img src="/gaming/playfab/features/media/feature-items.svg" alt="PlayFab Commerce Features: Items card image" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -704,7 +704,7 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/gaming/playfab/features/media/feature_stores.svg" alt="PlayFab Commerce Features: Stores card image" />
+                                                    <img src="/gaming/playfab/features/media/feature-stores.svg" alt="PlayFab Commerce Features: Stores card image" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -721,7 +721,7 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/gaming/playfab/features/media/feature_economy.svg" alt="PlayFab Commerce Features: Economy card image" />
+                                                    <img src="/gaming/playfab/features/media/feature-economy.svg" alt="PlayFab Commerce Features: Economy card image" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -746,7 +746,7 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/gaming/playfab/features/media/feature_compute.svg" alt="PlayFab Multiplayer Features: Compute card image" />
+                                                    <img src="/gaming/playfab/features/media/feature-compute.svg" alt="PlayFab Multiplayer Features: Compute card image" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -763,7 +763,7 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/gaming/playfab/features/media/feature_matchmaking.svg" alt="PlayFab Multiplayer Features: Matchmaking card image" />
+                                                    <img src="/gaming/playfab/features/media/feature-matchmaking.svg" alt="PlayFab Multiplayer Features: Matchmaking card image" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -780,7 +780,7 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/gaming/playfab/features/media/feature_photon.svg" alt="PlayFab Multiplayer Features: Photon card image" />
+                                                    <img src="/gaming/playfab/features/media/feature-photon.svg" alt="PlayFab Multiplayer Features: Photon card image" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -805,7 +805,7 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/gaming/playfab/features/media/feature_metrics.svg" alt="PlayFab Analytics Features: Metrics card image" />
+                                                    <img src="/gaming/playfab/features/media/feature-metrics.svg" alt="PlayFab Analytics Features: Metrics card image" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -822,7 +822,7 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/gaming/playfab/features/media/feature_reports.svg" alt="PlayFab Analytics Features: Reports card image" />
+                                                    <img src="/gaming/playfab/features/media/feature-reports.svg" alt="PlayFab Analytics Features: Reports card image" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -839,7 +839,7 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/gaming/playfab/features/media/feature_ab_testing.svg" alt="PlayFab Analytics Features: A/B Testing card image" />
+                                                    <img src="/gaming/playfab/features/media/feature-ab-testing.svg" alt="PlayFab Analytics Features: A/B Testing card image" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -856,7 +856,7 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/gaming/playfab/features/media/feature_segmentation.svg" alt="PlayFab Analytics Features: Segmentation card image" />
+                                                    <img src="/gaming/playfab/features/media/feature-segmentation.svg" alt="PlayFab Analytics Features: Segmentation card image" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -881,7 +881,7 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/gaming/playfab/features/media/feature_push_notifications.svg" alt="PlayFab Engagement Features: Push Notifications card image" />
+                                                    <img src="/gaming/playfab/features/media/feature-push-notifications.svg" alt="PlayFab Engagement Features: Push Notifications card image" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -898,7 +898,7 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/gaming/playfab/features/media/feature_emails.svg" alt="PlayFab Engagement Features: Emails card image" />
+                                                    <img src="/gaming/playfab/features/media/feature-emails.svg" alt="PlayFab Engagement Features: Emails card image" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -915,7 +915,7 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/gaming/playfab/features/media/feature_news.svg" alt="PlayFab Engagement Features: News card image" />
+                                                    <img src="/gaming/playfab/features/media/feature-news.svg" alt="PlayFab Engagement Features: News card image" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -940,7 +940,7 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/gaming/playfab/sdks/media/sdk_actionscript.svg" alt="PlayFab SDKs: ActionScript card image" />
+                                                    <img src="/gaming/playfab/sdks/media/sdk-actionscript.svg" alt="PlayFab SDKs: ActionScript card image" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -991,7 +991,7 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/gaming/playfab/sdks/media/sdk_cocos2dx.png" alt="PlayFab SDKs: Cocos2D-x card image" />
+                                                    <img src="/gaming/playfab/sdks/media/sdk-cocos2dx.png" alt="PlayFab SDKs: Cocos2D-x card image" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -1042,7 +1042,7 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/gaming/playfab/sdks/media/sdk_lua.svg" alt="PlayFab SDKs: Lua card image" />
+                                                    <img src="/gaming/playfab/sdks/media/sdk-lua.svg" alt="PlayFab SDKs: Lua card image" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -1076,7 +1076,7 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/gaming/playfab/sdks/media/sdk_objectivec.svg" alt="PlayFab SDKs: Objective-C card image" />
+                                                    <img src="/gaming/playfab/sdks/media/sdk-objectivec.svg" alt="PlayFab SDKs: Objective-C card image" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -1110,7 +1110,7 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/gaming/playfab/sdks/media/sdk_postman.svg" alt="PlayFab SDKs: Postman card image" />
+                                                    <img src="/gaming/playfab/sdks/media/sdk-postman.svg" alt="PlayFab SDKs: Postman card image" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -1161,7 +1161,7 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/gaming/playfab/sdks/media/sdk_unreal.png" alt="PlayFab SDKs: Unreal Engine card image" />
+                                                    <img src="/gaming/playfab/sdks/media/sdk-unreal.png" alt="PlayFab SDKs: Unreal Engine card image" />
                                                 </div>
                                             </div>
                                             <div class="cardText">

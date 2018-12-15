@@ -19,17 +19,17 @@ sections:
     columns: 3
     items:
     - image:
-        src: "/gaming/playfab/features/media/feature_entities.svg"
-        alt: "PlayFab Data Features - Entities card image"        
+        src: "/gaming/playfab/features/media/feature-entities.svg"
+        text: "PlayFab Data Features - Entities card image"        
       title: "Entities"
       html: "<p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/data/entities/'>Overview</a></p><p><a href='/gaming/playfab/features/data/entities/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/data/entities/tutorials'>Tutorials</a></p>"
     - image:
-        src: "/gaming/playfab/features/media/feature_playerdata.svg"
-        alt: "PlayFab Data Features - Player Data card image"        
+        src: "/gaming/playfab/features/media/feature-playerdata.svg"
+        text: "PlayFab Data Features - Player Data card image"        
       title: "Player Data"
       html: "<p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/data/playerdata/'>Overview</a></p><p><a href='/gaming/playfab/features/data/playerdata/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/data/playerdata/tutorials'>Tutorials</a></p>"
     - image:
-        src: "/gaming/playfab/features/media/feature_content_delivery_network.svg"
-        alt: "PlayFab Data Features - Content Delivery Network card image"        
+        src: "/gaming/playfab/features/media/feature-content-delivery-network.svg"
+        text: "PlayFab Data Features - Content Delivery Network card image"        
       title: "Content Delivery Network"
       html: "<p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/data/content-delivery-network/'>Overview</a></p><p><a href='/gaming/playfab/features/data/content-delivery-network/quickstart'>Quickstart</a></p>"

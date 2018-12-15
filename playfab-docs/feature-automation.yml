@@ -19,22 +19,22 @@ sections:
     columns: 3
     items:
     - image:
-        src: "/gaming/playfab/features/media/feature_cloudscript.svg"
-        alt: "PlayFab Automation Features - CloudScript card image"        
+        src: "/gaming/playfab/features/media/feature-cloudscript.svg"
+        text: "PlayFab Automation Features - CloudScript card image"        
       title: "CloudScript"
       html: "<p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/automation/cloudscript/'>Overview</a></p><p><a href='/gaming/playfab/features/automation/cloudscript/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/automation/cloudscript/tutorials'>Tutorials</a></p>"
     - image:
-        src: "/gaming/playfab/features/media/feature_playstream.svg"
-        alt: "PlayFab Automation Features - PlayStream card image"        
+        src: "/gaming/playfab/features/media/feature-playstream.svg"
+        text: "PlayFab Automation Features - PlayStream card image"        
       title: "PlayStream"
       html: "<p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/automation/playstream-events/'>Overview</a></p><p><a href='/gaming/playfab/features/automation/playstream-events/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/automation/playstream-events/tutorials'>Tutorials</a></p>"
     - image:
-        src: "/gaming/playfab/features/media/feature_actions_rules.svg"
-        alt: "PlayFab Automation Features - Actions & Rules card image"        
+        src: "/gaming/playfab/features/media/feature-actions-rules.svg"
+        text: "PlayFab Automation Features - Actions & Rules card image"        
       title: "Actions &amp; Rules"
       html: "<p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/automation/actions-rules/'>Overview</a></p><p><a href='/gaming/playfab/features/automation/actions-rules/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/automation/actions-rules/tutorials'>Tutorials</a></p>"
     - image:
-        src: "/gaming/playfab/features/media/feature_scheduled_tasks.svg"
-        alt: "PlayFab Automation Features - Scheduled Tasks card image"        
+        src: "/gaming/playfab/features/media/feature-scheduled-tasks.svg"
+        text: "PlayFab Automation Features - Scheduled Tasks card image"        
       title: "Scheduled Tasks"
       html: "<p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/automation/scheduled-tasks/'>Overview</a></p><p><a href='/gaming/playfab/features/automation/scheduled-tasks/quickstart'>Quickstart</a></p>"

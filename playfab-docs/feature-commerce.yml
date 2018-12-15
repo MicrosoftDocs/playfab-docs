@@ -19,17 +19,17 @@ sections:
     columns: 3
     items:
     - image:
-        src: "/gaming/playfab/features/media/feature_items.svg"
-        alt: "PlayFab Commerce Features - Items card image"        
+        src: "/gaming/playfab/features/media/feature-items.svg"
+        text: "PlayFab Commerce Features - Items card image"        
       title: "Items"
       html: "<p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/commerce/items/'>Overview</a></p><p><a href='/gaming/playfab/features/commerce/items/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/commerce/items/tutorials'>Tutorials</a></p>"
     - image:
-        src: "/gaming/playfab/features/media/feature_stores.svg"
-        alt: "PlayFab Commerce Features - Stores card image"        
+        src: "/gaming/playfab/features/media/feature-stores.svg"
+        text: "PlayFab Commerce Features - Stores card image"        
       title: "Stores"
       html: "<p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/commerce/stores/'>Overview</a></p><p><a href='/gaming/playfab/features/commerce/stores/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/commerce/stores/tutorials'>Tutorials</a></p>"
     - image:
-        src: "/gaming/playfab/features/media/feature_economy.svg"
-        alt: "PlayFab Commerce Features - Economy card image"        
+        src: "/gaming/playfab/features/media/feature-economy.svg"
+        text: "PlayFab Commerce Features - Economy card image"        
       title: "Economy"
       html: "<p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/commerce/economy/'>Overview</a></p><p><a href='/gaming/playfab/features/commerce/economy/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/commerce/economy/tutorials'>Tutorials</a></p>"
