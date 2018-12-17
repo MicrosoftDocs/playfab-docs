@@ -20,7 +20,7 @@ ms.localizationpriority: medium
 - **Body**
 
 > [!NOTE]
-> The **Body** is a string, and can contain raw text or **JSON**).
+> The **Body** is a string, and can contain raw text or **JSON**.
 
 ## Creating Title News
 
@@ -74,8 +74,7 @@ void ReadTitleNews() {
 }
 
 ```
-
-## Updating Title News
+## Update Title News
 
 The content of a **Title News** entry can only be modified in **Game Manager**.  Locate the entry you wish to modify in **Game Manager**:
 
@@ -92,7 +91,7 @@ If plan is to post unpublished entries for future release, this is the methodolo
 Once an entry is no longer needed, you can delete it in the **Game Manager**. Find the entry you wish to modify, then:
 
 - Navigate to your **Title**.
-- In the menu, select **Content**.
+- In your menu, select **Content**.
 - Go to **Title News**.
-- Place a check in the checkbox for the **Existing Entry**.
+- Put a check in the checkbox for the **Existing Entry**.
 - Select the **Title News** entries you wish to delete, and choose **X Delete Title News**.
