@@ -104,7 +104,6 @@ public void SetTitleData() {
 ## Internal Title Data
 
 Similarly to **UserData**, **Title Data** has internal storage that is hidden from the **Client**. This data can also be set in the **Game Manager**, or via a server **API**.
-
 ### Getting Internal Title Data by calling the server API in C#
 
 ```csharp
