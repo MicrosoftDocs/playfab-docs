@@ -61,7 +61,7 @@ Otherwise, you can see the Title Settings in the Editor Extensions UI. Click on 
 
 Title Settings are applied when you select your studio and title name. Title ID and Developer Secret Key are applied automatically.
 
-![PlayFab Title Settings](media/playfab-settings-tab.png)
+![PlayFab Title Settings](media/save-title-settings-uedex.png)
 
 ## Making your first API Call
 
