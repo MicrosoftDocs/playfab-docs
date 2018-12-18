@@ -33,7 +33,7 @@ If you don't have unity installed, then you will need to install it and create a
 ## Download PlayFab SDK   
 The best way to acquire our Unity SDK is via our editor extensions. Although you can directly download the Unity SDK from our github page. [PlayFab UnitySDK Unity Package](https://api.playfab.com/sdks/download/unity-v2ap).   
 
-- Download and Import the [PlayFab Unity Editor Extensions Package](https://github.com/PlayFab/UnityEditorExtensions/raw/master/Packages/PlayFabEditorExtensions.unitypackage)
+- Download and Import the [PlayFab Unity Editor Extensions package](https://github.com/PlayFab/UnityEditorExtensions/raw/master/Packages/PlayFabEditorExtensions.unitypackage)
   - To import the the Unity Editor Extensions package, navigate to where the file was downloaded and double-click on the .UnityPackage file. This will bring up the following window.
 
     ![Import Unity package](media/import-uedex.png)  
@@ -41,11 +41,11 @@ The best way to acquire our Unity SDK is via our editor extensions. Although you
   - Click Import, which will import the PlayFab Unity Editor Extensions into your project.
 
 - Log In or Register
-  - Before you can download the SDK you must login with your PlayFab account. If you don't have one you can register or click the "Log In" link to take you to the login pane and login with your PlayFab username and password.
+  - Before you can download the SDK you must log in with your PlayFab account. If you don't have one you can create one, or click the "Log In" link to take you to the login pane, and log in with your PlayFab username and password.
 
-    ![Login or Register with PlayFab](media/login-register-uedex.png)
+    ![Log in or register with PlayFab](media/login-register-uedex.png)
 
-  - Once you have registered and logged in, you will find yourself on this screen. Click Install PlayFab SDK and it will automatically import the SDK into your project.
+  - Once you have registered and logged in, you will find yourself on this screen. Click Install PlayFab SDK and it will automatically import the SDK into your project, or upgrade the version you currently have.
   
     ![Install PlayFab SDK](media/install-sdk.png)
 
@@ -55,13 +55,13 @@ Now that you have installed the PlayFab SDK, you will need to set your title in 
 
 ![PlayFab setting scriptable object](media/playfab-settings-so.png)
 
-Otherwise, you can easily set your Title Settings in the Editor Extensions UI. Click on the Settings tab in the Editor Extensions.
+Otherwise, you can see the Title Settings in the Editor Extensions UI. Click on the Settings tab in the Editor Extensions. The Title ID and Developer Secret Key are set automatically.
 
 ![PlayFab Settings tab](media/playfab-settings-tab.png)
 
-Select your Studio and Title ID and click Save.
+Title Settings are applied when you select your studio and title name. Title ID and Developer Secret Key are applied automatically.
 
-![Save PlayFab Title Settings](media/playfab-settings-tab.png)
+![PlayFab Title Settings](media/playfab-settings-tab.png)
 
 ## Making your first API Call
 
