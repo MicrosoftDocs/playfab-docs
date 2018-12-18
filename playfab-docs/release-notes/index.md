@@ -12,9 +12,25 @@ ms.localizationpriority: medium
 
 # PlayFab Release Notes 2018
 
-## 181203
+## 181218
 
-Date: 2018-12-03
+Date: 2018-12-18
+
+**[XPlatCppSdk](https://github.com/PlayFab/XPlatCppSdk) Specific Changes:**
+
+* **SDK Breaking Change** : Updated the folder structure for the XPlatCppSdk repo. If you are using the SDK with project references, an update to vcxproj files path would be required.
+* Adding Xbox support to the XPlatCppSdk. Refer to the XPlatXbox Getting Started Guide.
+* **New API**
+ * Added PlayFabEventApi to support Heavyweight (low throughput) and Lightweight (high throughput) custom events.
+
+
+ **[UnrealMarketplacePlugin](https://github.com/PlayFab/UnrealMarketplacePlugin) Specific Changes:**
+
+ * Adding support for Unreal Engine 4.21
+
+## 181204
+
+Date: 2018-12-04
 
 **[XPlatCppSdk](https://github.com/PlayFab/XPlatCppSdk) Specific Changes:**
 
