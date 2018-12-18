@@ -3,7 +3,7 @@ title: PlayFab Communication Fabric bots
 author: v-thopra
 description: Introduces bots for PlayFab Communication Fabric.
 ms.author: v-thopra
-ms.date: 12/18/2018
+ms.date: 18/12/2018
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, multiplayer, networking, communication fabric, bots
@@ -20,10 +20,10 @@ PlayFab Communication Fabric v1.2 introduces experimental integration with Azure
 Both Zo and Mo can be customized through PlayFab APIs with:
 
 1. Different languages
-2. Different voices
+2. Different voices 
 3. Game-specific vocabulary
 4. Game-specific objectives
 
-Using Bot APIs, your multiplayer game host can provide connected Bots continuous information on player activity and progress towards shared objectives. For example a player damaging another player can be communicated to the Bot, and the Bot can discourage that behavior (“stop killing your teammate!"). A player approaching a “key” or other accomplishment may be encouraged by the bot (“keep going, you’re close!”).
+Using Bot APIs, your multiplayer game host can provide connected Bots with continuous information on player activity and progress towards shared objectives. For example, a player damaging another player can be communicated to the Bot, and the Bot can discourage that behavior (“stop killing your teammate!"). A player approaching a “key” or other accomplishment may be encouraged by the bot (“keep going, you’re close!”).
 
 Both Zo and Mo can be configured to monitor player communication for inappropriate communication. Transcripts of worrisome communication can be automatically retained for review by your moderation team.
