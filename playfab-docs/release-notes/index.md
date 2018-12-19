@@ -19,7 +19,7 @@ Date: 2018-12-18
 **[XPlatCppSdk](https://github.com/PlayFab/XPlatCppSdk) Specific Changes:**
 
 * **SDK Breaking Change** : Updated the folder structure for the XPlatCppSdk repo. If you are using the SDK with project references, an update to vcxproj files path would be required.
-* Adding Xbox support to the XPlatCppSdk. Refer to the XPlatXbox Getting Started Guide.
+* Adding Xbox support to the XPlatCppSdk. Refer to the [XPlatCpp Getting Started Guide for Xbox](https://api.playfab.com/docs/getting-started/xplatcpp-getting-started-for-xbox).
 * **New API**
  * Added PlayFabEventApi to support Heavyweight (low throughput) and Lightweight (high throughput) custom events.
 
