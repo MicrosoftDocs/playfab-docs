@@ -10,7 +10,7 @@ keywords: playfab, configuration, title data
 ms.localizationpriority: medium
 ---
 
-# Title Data quickstart
+# Title Data Quickstart
 
 This quickstart describes how to programmatically create and use **Title Data**.
 
@@ -23,10 +23,7 @@ This an important topic because storing a game's configuration data remotely - o
 
 ## Getting Title Data
 
-Title Data can be retrived using the **PlayFabClientAPI** or the **PlayFabServerAPI**.
-
-### Getting Title Data from the game Client
-
+### Title Data from the game Client
 Use [GetTitleData](xref:titleid.playfabapi.com.client.title-widedatamanagement.gettitledata) from the **PlayFabClientAPI** to get the **KVPs** for a specific **Title**. The following code example displays the values of all of the **Title Data**.
 
 ```csharp
@@ -43,7 +40,8 @@ public void ClientGetTitleData() {
     );
 }
 ```
-### Getting Title Data from the game server
+
+### Title Data rom the game server
 
 Use [GetTitleData](xref:titleid.playfabapi.com.server.title-widedatamanagement.gettitledata) from the **PlayFabServerAPI** to get the **KVPs** for a specific **Title**. The following code example displays the values of all of the **Title Data**.
 
@@ -104,6 +102,7 @@ public void SetTitleData() {
 ## Internal Title Data
 
 Similarly to **UserData**, **Title Data** has internal storage that is hidden from the **Client**. This data can also be set in the **Game Manager**, or via a server **API**.
+
 ### Getting Internal Title Data by calling the server API in C#
 
 ```csharp
@@ -140,8 +139,8 @@ public void SetTitleInternalData() {
 }
 ```
 
-### See also
+## See also
 
 - [Using Publisher Data](../../config/titledata/using-publisher-data.md)
-- [Player Data quickstart](../../data/playerdata/quickstart.md)
-- [CloudScript quickstart](../../automation/cloudscript/quickstart.md)
+- [Player Data Quickstart](../../data/playerdata/quickstart.md)
+- [CloudScript Quickstart](../../automation/cloudscript/quickstart.md)
