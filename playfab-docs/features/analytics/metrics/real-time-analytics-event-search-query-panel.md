@@ -12,31 +12,32 @@ ms.localizationpriority: medium
 
 # Real-time Analytics - Event search query panel
 
-This tutorial illustrates how to use the event search query panel.
+This tutorial illustrates how to use the **Event Search Query** panel.
 
 ## Overview
 
-Along with other tools for monitoring event flow, PlayFab often exposes event search query panel that lets you filter events by different properties:
+Along with other tools for monitoring event flow, **PlayFab** often exposes the **Event Search Query** panel that lets you filter **Events** by different properties.
 
 ![Event Search Query Panel](media/tutorials/event-search-query-panel.png)  
+On the primary screen:
 
-1. The Event search query field, allows you to enter [query expressions](real-time-analytics-event-queries.md) for filtering.
-2. The Run Query button will reload the entire event flow to match all the query parameters.
-3. The Query Tips button opens a small how-to guide on using queries and query builder.
-4. The Auto-refresh checkbox, will automatically reload the event flow every 10 seconds.
-5. The Query Builder button expands the Query Panel (the area in the image **outlined in green**) and gives access to advanced query and graph settings.
-6. The Event name field lets you filter by a concrete event name.
-7. Start date allows you to set the earliest date.
-8. End date allows you to set the latest date.
-9. Sum by field is a Graph options setting, that allows you to set the metric for the vertical axis. By default, event total amount is used.
-10. Distinct on field is a Graph options setting that allows you to change the grouping of the events. By default, events are grouped by name.
+1. The **Event Search Query** field allows you to enter [query expressions](real-time-analytics-event-queries.md) for filtering.
+2. The **Run Query** button will reload the entire **Event** flow to match all the **Query** parameters.
+3. The **Query Tips** button opens a small how-to guide on using **Queries** and **Query Builder**.
+4. The **Auto-refresh** checkbox will automatically reload the **Event** flow every 10 seconds.
+5. The **Query Builder** button expands the **Query Panel** (the area in the image outlined in green) and gives access to advanced **Query** and **Graph** settings.
+6. The **Event Name** field lets you filter by a concrete **Event Name**.
+7. The **Start date** allows you to set the earliest date.
+8. The **End date** allows you to set the latest date.
+9. The **Sum by** field is a **Graph** options setting that allows you to set the metric for the vertical axis. By default, the **Event Total Amount** is used.
+10. The **Distinct on** field is a **Graph** options setting that allows you to change the grouping of the **Events**. By default, **Events** are grouped by **Name**.
 
 ## Tips and Tricks
 
-- The Query Builder panel (the area in the image **outlined in green**) offers help with user input:
-  - Date settings have calendar buttons (to their right) that open a date-picker popup.
-  - Graph options support auto-complete for property names.
-  - When a search query is specified, the Clear Query button will be available to quickly reset all settings.
-- Changing the event name, start date, or end date settings will replace the current event search query (as of April 18th 2017).
-- The Sum by field setting allows you to visualize different metrics using a vertical axis other than event count. A common use case is a set of purchase events summed by the currency amount.
-- By default, events are grouped by time and then by name. While time grouping is mandatory, the Distinct on field setting allows you to change how events are grouped inside one time interval.
+- The **Query Builder** panel (the area in the image **outlined in green**) offers help with user input:
+  - **Date** settings have **Calendar** buttons (to their right) that open a date-picker popup.
+  - **Graph** options support auto-complete for **Property Names**.
+  - When a **Search Query** is specified, the **Clear Query** button will be available to quickly reset all settings.
+- Changing the **Event Name**, **Start date**, or **End date** settings will replace the current **Event Search Query** (as of April 18th 2017).
+- The **Sum by** field setting allows you to visualize different metrics using a vertical axis other than **Event count**. A common use case is a set of **Purchase Events**, summed by the **Currency** amount.
+- By default, **Events** are grouped by **Time** and then by **Name**. While **Time** grouping is mandatory, the **Distinct on** field setting allows you to change how **Events** are grouped inside one **Time** interval.
