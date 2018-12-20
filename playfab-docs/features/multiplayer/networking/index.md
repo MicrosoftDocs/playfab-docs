@@ -16,9 +16,9 @@ This is the homepage for the Bumblelion 1PP Preview. Properly called "PlayFab Mu
 
 Here are current docs:
 
-- [Private Preview libraries and release notes](./bmb-quickstart.md)
-- [Stub conceptual introduction](./intro-to-networking.md)
-- [Proposed pricing](./pricing.md)
+- [Private Preview libraries and release notes](bmb-quickstart.md)
+- [Stub conceptual introduction](intro-to-networking.md)
+- [Proposed pricing](pricing.md)
 
 Got questions? Email [Bumblelion Overhead](mailto:bumblelionoverhead@microsoft.com)
 
@@ -27,7 +27,6 @@ Artifacts that are in progress:
 - Reference documentation 
 - Legit conceptual documentation 
 - BumbleRumble (a sample)
-
 
 ## Roadmap
 
@@ -50,8 +49,7 @@ Backlog (dates TBD):
 - Server Mixing
 - Peer-to-peer transport (reduces network egress cost)
 
-
-## Inital SDK Availability
+## Initial SDK Availability
 
 Table below indicates our confidence level for providing an SDK for the specified platform on that date. We intend to support every platform on this list it's simply a matter of time.
 

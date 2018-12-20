@@ -1,5 +1,5 @@
 ---
-title: Account linking Quickstart
+title: Account linking quickstart
 author: v-thopra
 description: Demonstrates how to bind an account to multiple devices and login mechanisms.
 ms.author: v-thopra
@@ -10,9 +10,9 @@ keywords: playfab, authentication, accounts, linking
 ms.localizationpriority: medium
 ---
 
-# Account linking Quickstart
+# Account linking quickstart
 
-This **Account Linking Quickstart** guide demonstrates how to bind an account to multiple devices and login mechanisms
+This **Account Linking quickstart** guide demonstrates how to bind an account to multiple devices and login mechanisms
 
  A single **PlayFab** account can be accessed by many devices and login credentials. As we discuss in our tutorial [Login basics and Best Practices](../platform-specific-authentication/login-basics-best-practices.md), there are two forms of user authentication:
 1. **Anonymous**
@@ -70,7 +70,7 @@ So the flow for the various conditions is as follows - and note that in all case
 **Device1 State**: **Device ID** is bound to the **Player** account.  
 **Device2 State**: **Device ID** is *not* bound to the **Player** account.
 
-After signing into the **Player** account on **Device2** (using the recoverable account credentials), make a call to [GetPlayerCombinedInfo](xref:titleid.playfabapi.com.client.accountmanagement.getplayercombinedinfo). For each device type returned in that information, the most-recently signed in **Device ID** is returned in the [result.InfoResultPayload.AccountInfo](https://api.playfab.com/documentation/Client/datatype/PlayFab.Client.Models/PlayFab.Client.Models.GetPlayerCombinedInfoResult).
+After signing into the **Player** account on **Device2** (using the recoverable account credentials), make a call to [GetPlayerCombinedInfo](xref:titleid.playfabapi.com.client.accountmanagement.getplayercombinedinfo). For each device type returned in that information, the most-recently signed in **Device ID** is returned in the [result.InfoResultPayload.AccountInfo](xref:titleid.playfabapi.com.client.accountmanagement.getplayercombinedinfo#getplayercombinedinforesultpayload).
 
 Since **Device2** has not yet been linked to this **Player** account, the relevant **Device ID** (**AccountInfo.IosDeviceInfo**, **AccountInfo.AndroidDeviceInfo**, etc.) will not match the **Device2 ID**.
 
@@ -105,7 +105,7 @@ You can convert an existing game login screen into a **Frictionless login** by b
 
 **Device State**: **Device ID** is *not* bound to the **Player** account.
 
-After performing a recoverable login with the device, call [GetPlayerCombinedInfo](xref:titleid.playfabapi.com.client.accountmanagement.getplayercombinedinfo). Again, determine whether the **Device ID** matches the bound **Device ID** via the info returned in [result.InfoResultPayload.AccountInfo](https://api.playfab.com/documentation/Client/datatype/PlayFab.Client.Models/PlayFab.Client.Models.GetPlayerCombinedInfoResultPayload).
+After performing a recoverable login with the device, call [GetPlayerCombinedInfo](xref:titleid.playfabapi.com.client.accountmanagement.getplayercombinedinfo). Again, determine whether the **Device ID** matches the bound **Device ID** via the info returned in [result.InfoResultPayload.AccountInfo](xref:titleid.playfabapi.com.client.accountmanagement.getplayercombinedinfo#getplayercombinedinforesultpayload).
 
 Since the device has never signed into the account, the relevant **Device ID** (**AccountInfo.IosDeviceInfo**, **AccountInfo.AndroidDeviceInf**o, etc.) will not match the **Device ID**.
 
@@ -134,7 +134,7 @@ The steps above involve prompting the user before logging in. **Frictionless log
 Examples:
 
 - [AndroidRequest](xref:titleid.playfabapi.com.client.authentication.loginwithandroiddeviceid).CreateAccount
--  [IosRequest](xref:titleid.playfabapi.com.client.authentication.loginwithiosdeviceid).CreateAccount. Select **true** or **false** for this property with the following guidelines:
+- [IosRequest](xref:titleid.playfabapi.com.client.authentication.loginwithiosdeviceid).CreateAccount. Select **true** or **false** for this property with the following guidelines:
 
 **On startup**:
 

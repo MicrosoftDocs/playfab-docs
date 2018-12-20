@@ -1,5 +1,5 @@
 ---
-title: CloudScript Quickstart
+title: CloudScript quickstart
 author: v-thopra
 description: Describes uploading and managing your CloudScript files in the PlayFab Game Manager.
 ms.author: v-thopra

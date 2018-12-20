@@ -22,5 +22,6 @@ These tutorials teach the various ways to configure and set up PlayFab.
 - [Getting Started with PlayFab](getting-started-with-playfab.md)
 - [Global API method error codes](global-api-method-error-codes.md)
 - [Migrating from Parse to PlayFab](migrating-from-parse-to-playfab.md)
+- [Running an HTTP server for testing](running-an-http-server-for-testing.md)
 - [Set up your game's in-game economy](set-up-your-games-in-game-economy.md)
 - [Try out content management](try-out-content-management.md)

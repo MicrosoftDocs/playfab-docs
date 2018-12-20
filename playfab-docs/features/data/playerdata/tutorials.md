@@ -14,14 +14,14 @@ ms.localizationpriority: medium
 
 These tutorials describe how to create and use player statistics, profile information, and other types of player data.
 
-- [Using player statistics](using-player-statistics.md)
 - [Getting player profiles](getting-player-profiles.md)
-- [Player inventory](player-inventory.md)
-- [Using the Players page](using-the-players-page.md)
-- [Using Player details](player-details.md)
-- [Player Logins report](player-logins.md)
 - [Player Ban system](player-bans.md)
+- [Player inventory](player-inventory.md)
+- [Player Logins report](player-logins.md)
+- [Player Segment configuration](player-segment-configuration.md)
 - [Player Segments](player-segments.md)
-- [Player Segment configuration ](player-segment-configuration.md)
 - [PlayFab GDPR](playfab-gdpr-deleting-and-exporting-player-data.md)
+- [Using Player details](player-details.md)
 - [Using Player Publisher Data](using-player-publisher-data.md)
+- [Using player statistics](using-player-statistics.md)
+- [Using the Players page](using-the-players-page.md)

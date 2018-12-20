@@ -27,7 +27,7 @@ You'll need to have the **180829** version or newer. This **SDK** first introduc
 
 To begin collecting these two events, you'll first need to integrate the **Unity SDK** in your **Client**.
 
-Instructions on how to do this can be found in the [Unity3D Quickstart](../../../sdks/unity3d/quickstart.md).
+Instructions on how to do this can be found in the [Unity3D quickstart](../../../sdks/unity3d/quickstart.md).
 
 Presently, these **Events** are disabled by default, though we plan to change this in the future. You can manage the collection of **Focus Time** from **Game Manager**:
 

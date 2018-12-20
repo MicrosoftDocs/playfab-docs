@@ -12,4 +12,4 @@ ms.localizationpriority: medium
 
 # Trading Tutorials
 
-This tutorial shows you to use trading in PlayFab.
+Overview page for tutorials about trading in PlayFab.

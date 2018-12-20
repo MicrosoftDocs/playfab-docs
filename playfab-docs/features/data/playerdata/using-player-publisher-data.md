@@ -35,7 +35,7 @@ Our example in this tutorial, [Grant a reward for playing multiple titles](#gran
 
 ### Requirements
 
-- A **Player** must sign into *both* **Titles** using the same **Credentials**. One approach is to use **Recoverable Credentials**, as described in our [Login Basics and Best Practices](../../authentication/platform-specific-authentication/login-basics-best-practices.md) tutorial. To add a **Recoverable** login to an anonymous account, see our [Account Linking](../../authentication/linking-unlinking/quickstart.md) Quickstart.
+- A **Player** must sign into *both* **Titles** using the same **Credentials**. One approach is to use **Recoverable Credentials**, as described in our [Login Basics and Best Practices](../../authentication/platform-specific-authentication/login-basics-best-practices.md) tutorial. To add a **Recoverable** login to an anonymous account, see our [Account Linking](../../authentication/linking-unlinking/quickstart.md) quickstart.
 - This example requires a working knowledge of [CloudScript](../../automation/cloudscript/writing-custom-cloudscript.md):
   - Our example demonstrates basic data security to avoid **Player** cheating. One could likewise use the **Server API** on a custom game server, if the **Title** makes use of them.
 - **Rewards** triggered through **PlayFab** require usage of the appropriate **PlayFab** features. **PlayFab Rewards** can be in the form of [**Virtual Currency**](../../commerce/economy/currencies.md), [**Inventory Items**](player-inventory.md), [**Custom Player Data**](quickstart.md), [**Statistics**](using-player-statistics.md), etc. Distributing **Rewards** outside of **PlayFab** systems is an advanced topic, and will not be covered in this tutorial.

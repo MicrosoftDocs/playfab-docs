@@ -1,5 +1,5 @@
 ---
-title: Reports Quickstart
+title: Reports quickstart
 author: v-thopra
 description: Describes how to access the Game Manager reports composed from events, and broken down by dates.
 ms.author: v-thopra
@@ -10,7 +10,7 @@ keywords: playfab, analytics, reports
 ms.localizationpriority: medium
 ---
 
-# Reports Quickstart
+# Reports quickstart
 
 The Reports page gives you access to various reports composed from events, broken down by dates.
 

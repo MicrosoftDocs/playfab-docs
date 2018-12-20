@@ -1,5 +1,5 @@
 ---
-title: Content Delivery Network Quickstart
+title: Content Delivery Network quickstart
 author: v-thopra
 description: Describes the PlayFab Content Delivery Network in detail.
 ms.author: v-thopra

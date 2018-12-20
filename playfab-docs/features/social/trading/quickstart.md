@@ -1,5 +1,5 @@
 ---
-title: Trading Quickstart
+title: Trading quickstart
 author: v-thopra
 description: Describes how to perform player-to-player trading.
 ms.author: v-thopra
@@ -10,7 +10,7 @@ keywords: playfab, social, trading
 ms.localizationpriority: medium
 ---
 
-# Trading Quickstart
+# Trading quickstart
 
 The **PlayFab Client API** allows **Players** to **Trade** items with each other. These **API** methods are enabled by default, so for the security of your **Title**, you may need to use our [API Access Policy](../../config/gamemanager/api-access-policy.md) to disable them.
 

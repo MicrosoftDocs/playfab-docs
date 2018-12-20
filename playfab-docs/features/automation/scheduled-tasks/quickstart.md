@@ -1,5 +1,5 @@
 ---
-title: Scheduled Tasks Quickstart
+title: Scheduled Tasks quickstart
 author: v-thopra
 description: Describes how to create a task that runs on a schedule.
 ms.author: v-thopra
@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 This quickstart walks you through how to create a task that runs on a schedule. There are many game operation routines that can be automated using a scheduled task, such as modifying prices in a store according to the time of the day, updating Title Data to reflect changes for a current event, injecting virtual currencies into the game economy daily, etc. 
 
-In the example used in this Quickstart, we show you how to modify a game variable called "rareDropRate" in the Title Data at 12:00 UTC, and only on weekend days.
+In the example used in this quickstart, we show you how to modify a game variable called "rareDropRate" in the Title Data at 12:00 UTC, and only on weekend days.
 
 ## Step 1 - Prepare the CloudScript
 

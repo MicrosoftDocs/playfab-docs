@@ -1,5 +1,5 @@
 ---
-title: Entities Quickstart
+title: Entities quickstart
 author: v-thopra
 description: Describes the terminology, concepts, and design of Entities in the PlayFab APIs.
 ms.author: v-thopra
@@ -10,7 +10,7 @@ keywords: playfab, data, entities, accounts
 ms.localizationpriority: medium
 ---
 
-# Entities Quickstart
+# Entities quickstart
 
 To begin your understanding of this topic, we urge you to read our introductory blog about [Entities, Objects and Files](https://blog.playfab.com/blog/introducing-entities-objects-and-files).
 

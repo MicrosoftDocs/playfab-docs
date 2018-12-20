@@ -60,7 +60,7 @@ With **PlayFab**, custom data is stored in these places:
 - **Player data**: Data is stored per **Player** account, like **Parse *Keyed User Data***.
 
   > [!NOTE]
-  > For more information on this subject, see our Quickstart [Player Data](../../data/playerdata/quickstart.md).
+  > For more information on this subject, see our quickstart [Player Data](../../data/playerdata/quickstart.md).
  
   Data can be:
 

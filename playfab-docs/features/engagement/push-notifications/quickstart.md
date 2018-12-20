@@ -1,5 +1,5 @@
 ---
-title: Push Notifications Quickstart
+title: Push Notifications quickstart
 author: v-thopra
 description: Describes the Push Notification system in PlayFab.
 ms.author: v-thopra
@@ -10,7 +10,7 @@ keywords: playfab, engagement, push notification
 ms.localizationpriority: medium
 ---
 
-# Push Notifications Quickstart
+# Push Notifications quickstart
 
 Push notifications give you a channel to send an immediate, customized message to your player’s home screen. Using PlayFab's push feature, you may send unlimited push notifications to any number of devices completely free of charge. 
 
@@ -174,7 +174,7 @@ For Android apps, notifications are enabled by default, and can be turned on and
 
 ## Resources
 
-The following resources provide additional information about the topics in this Quickstart:
+The following resources provide additional information about the topics in this quickstart:
 
 - [Firebase Unity SDK](https://firebase.google.com/docs/unity/setup):  An all-in-one FCM solution for Unity. This SDK, among all other features, allows you to receive and process push notifications sent via FCM.
 - [Push It Real Good: How to Get Players to Say Yes to Push Notifications](https://blog.playfab.com/blog/push-it-real-good-how-get-players-say-yes-push-notifications/): This blog post details additional strategies and techniques for using push notifications.

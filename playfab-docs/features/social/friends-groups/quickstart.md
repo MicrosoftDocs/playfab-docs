@@ -1,5 +1,5 @@
 ---
-title: Friends & Groups Quickstart
+title: Friends & Groups quickstart
 author: v-thopra
 description: uickstart for Friends and Groups.
 ms.author: v-thopra
@@ -10,7 +10,7 @@ keywords: playfab, multiplayer, social, friends, groups
 ms.localizationpriority: medium
 ---
 
-# Friends &amp; Groups Quickstart
+# Friends &amp; Groups quickstart
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa tincidunt dui ut ornare lectus. Viverra vitae congue eu consequat ac felis donec. Leo urna molestie at elementum eu facilisis. A cras semper auctor neque vitae tempus quam. Amet cursus sit amet dictum sit amet justo donec enim. Faucibus turpis in eu mi bibendum neque egestas congue. Morbi quis commodo odio aenean sed adipiscing diam. Lectus vestibulum mattis ullamcorper velit. Dictum fusce ut placerat orci nulla pellentesque.
 

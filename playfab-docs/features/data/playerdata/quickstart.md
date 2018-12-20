@@ -1,5 +1,5 @@
 ---
-title: Player Data Quickstart
+title: Player Data quickstart
 author: v-thopra
 description: Tutorial that describes how to create and use player data.
 ms.author: v-thopra
@@ -10,7 +10,7 @@ keywords: playfab, player data
 ms.localizationpriority: medium
 ---
 
-# Player Data Quickstart
+# Player Data quickstart
 
 > [!NOTE] 
 > In the **PlayFab APIs**, the function names utilize the term **UserData**. In the **Game Manager**, this concept is described as **Player Data**. They are identical, and interchangeable.
