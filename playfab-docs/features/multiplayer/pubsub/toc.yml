@@ -1,0 +1,11 @@
+- name: PubSub
+  href: index.md
+  items:
+  - name: PubSub API Reference
+    href: pubsub-reference.md
+  - name: Creating PubSub Policies
+    href: pubsub-policies.md        
+  - name: Unity Quickstart
+    href: quickstart-unity.md
+  - name: PubSub Private Preview Notes
+    href: pubsub-private-preview-notes.md
