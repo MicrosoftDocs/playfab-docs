@@ -12,37 +12,39 @@ ms.localizationpriority: medium
 
 # Photon quickstart
 
-This quickstart shows how to set up Photon Multiplayer to work with PlayFab. Currently, PlayFab offers the following Photon integrations:
+This quickstart shows how to set up **Photon Multiplayer** to work with **PlayFab**. Currently, **PlayFab** offers the following **Photon** integrations:
 
-- Authenticate Photon players with PlayFab
-- Listen for room events using PlayFab CloudScript callbacks
+- Authenticate Photon players with **PlayFab**.
+- Listen for room events using **PlayFab CloudScript** callbacks.
 
 We will illustrate how both features work using the latest [Photon Unity example project](https://www.assetstore.unity3d.com/en/#!/content/1786).
 
 ## Prerequisites
 
-1. A [Unity](../../../sdks/unity3d/quickstart.md) project with the PlayFab SDK imported, and a configured title.
-2. PlayFab title registered
+1. A [Unity](../../../sdks/unity3d/quickstart.md) project with the **PlayFab SDK** imported, and a configured **Title**.
+2. The **PlayFab Title** registered.
 
 > [!NOTE]  
-> This guide omits the Chat application settings. For your Chat Application to be integrated, create new Photon chat application and enter the app ID in the corresponding boxes in Unity and in the PlayFab Game Manager - Photon Add-on Page.
+> This guide omits the **Chat** application settings. For your **Chat Application** to be integrated, create a new **Photon Chat Application**, and enter the **App ID** in the corresponding boxes in **Unity** and in the **PlayFab Game Manager** - **Photon Add-on** page.
 
-## Setting up a Photon application
+## Setting up a Photon Application
 
-- Once you have registered and logged into **Photon Dashboard**, create a new app **(1)**:
+Once you have registered and logged into the  **Photon Dashboard**, create a new **App (1)**.
 
 ![Create a new Photon application](media/tutorials/photon-create-app.png)  
 
-- Select **Realtime** application type **(1)**.
-- Choose a name **(2)**.
-- Create a description **(3)**. 
-- Submit by selecting **Create (4)**:
+In the example shown below:
+
+- Select **Realtime Application** type **(1)**.
+- Choose a **Name (2)**.
+- Create a **Description (3)**. 
+- Submit by selecting **Create (4)**.
 
 ![New application form](media/tutorials/photon-new-app-form.png)  
 
 ## Setting up Authentication
 
-Find the newly created application in the list and select **Manage (1)**.
+Find the newly created **Application** in the list and select **Manage (1)**.
 
 ![Manage the Test application](media/tutorials/photon-manage-app.png)  
 
@@ -52,51 +54,52 @@ Find the newly created application in the list and select **Manage (1)**.
 
 ![Save the App ID](media/tutorials/photon-save-app-id.png)  
 
-- Then locate **Authentication** section **(1)**.
+- Then locate the **Authentication** section **(1)**.
 - Select the **Custom Server (2)**.
 
 ![Custom server authentication](media/tutorials/photon-custom-server-authentication.png)  
 
-The next page will let you configure the Authentication URL for Photon.
+The next page will let you configure the **Authentication URL** for **Photon**.
 The format is:
 
 ```html
 https://{PlayFabTitleId}.playfabapi.com/photon/authenticate
 ```
-Replace title id place holder with your own title ID.
+Replace **Title ID** place holder with your own **Title ID**.
 
 ```html
 {PlayFabTitleId}
 ```
 
-Enter the URL **(1)** and submit by selecting **Create **(2)**.
+Enter the **URL (1)** and submit by selecting the **Create** button **(2)**.
 
 ![Enter authentication URL](media/tutorials/photon-enter-authentication-url.png)  
 
-## Setting up a PlayFab title for Photon
+## Setting up a PlayFab Title for Photon
 
-Navigate to your title game manager page, then:
+Navigate to your **Title Game Manager** page, then:
 - Navigate to **Add-ons** tab **(1)**.
-- In the list of add-ons find and select **Photon (2)**, as shown on the picture below.
+- In the list of add-ons find and select **Photon (2)**, as shown in the example provided below.
 
 ![Game Manager Add-ons tab](media/tutorials/photon-game-manager-addons-tab.png)  
 
-The Photon add-on page will allow you to install Photon by specifying your **Photon Realtime Application ID (1)**.
-- Optionally, you may specify Chat Application Id.
+The **Photon Add-on** page will allow you to install **Photon** by specifying your **Photon Realtime Application ID (1)**.
+
+- Optionally, you may specify **Chat Application ID**.
 - Once you install the add-on **(3)**, a **Secret Key** will be generated **(2)**.
-- Save it in an easily accessible place for future use, as it will come in handy when configuring web-hooks.  
+- Save it for future use when configuring web-hooks.  
 
 > [!NOTE]
-> Remember to save your Photon Secret Key in a safe and easily accessible place. It will come in handy when configuring web-hooks.
+> Remember to save your **Photon Secret Key** in a safe and easily accessible place. It will come in handy when configuring **Web-hooks**.
   
 ![Copy Realtime App ID](media/tutorials/photon-copy-realtime-app-id.png)  
 
 ## Setting Photon Web-hooks
 
-As an optional integration, Photon may transmit certain events to your PlayFab CloudScript. This is done by means of Web-hooks:
-- You specify a base URL.
-- Then you specify path for each of available events.
-- A path is, effectively, a handler name implemented in your CloudScript.
+As an optional integration, **Photon** may transmit certain events to your **PlayFab CloudScript**. This is done by means of **Web-hooks**:
+- You specify a **Base URL**.
+- Then you specify path for each of available **Events**.
+- A path is, effectively, a handler name implemented in your **CloudScript**.
 
 The **Base URL** will have the following format:
 
@@ -104,29 +107,30 @@ The **Base URL** will have the following format:
 https://{PlayFabTitleId}.playfablogic.com/webhook/1/prod/{PhotonSecretKey}
 ```
 
-Make sure to replace title id placeholder with your own title id.
+Make sure to replace **Title ID** placeholder with your own **Title ID**.
 
 ```html
 {PlayFabTitleId}
 ```
 
-Make sure to replace **Photon Secret Key** token with the secret key you generated on Photon Add-on Page.
+Make sure to replace **Photon Secret Key** token with the **Secret Key** you generated on **Photon Add-on** page.
 
 ```html
 {PhotonSecretKey}
 ```
 
 - Fill in the **Base URL (1)**.
-- Assign a **CloudScript** handler name for each of available events **(2)**.
+- Assign a **CloudScript** handler **Name** for each of the available **Events (2)**.
 - Remove any **CustomHttpHeaders (3)**.
-- Submit by selecting the **Save** button **(4)**.
+- Submit this by selecting the **Save** button **(4)**.
 
 ![Assign CloudScript event handlers](media/tutorials/photon-assign-cloud-script-event-handlers.png)  
 
 ## Setting up a Unity project
 
-The guide assumes you already have PlayFab SDK imported, set up and title setting configured.
-- Start by navigating to the asset store.
+The guide assumes you already have **PlayFab SDK** imported, set up, and **Title** setting configured.
+
+- Start by navigating to the **Asset Store**.
 - Locate [Photon Unity Networking Free package](https://www.assetstore.unity3d.com/en/#!/content/1786).
 - Select **Import (1)**.
 - You may inspect the imported files.
@@ -141,28 +145,33 @@ Right after import process finishes, the **PUN Setup** window will open.
 
 ![PUN Setup](media/tutorials/photon-pun-setup.png)  
 
-If **AppId** was accepted, the Photon Server Settings object will be selected and accessible through standard Unity Inspector window. To manually access Server Settings object:
+If **AppId** was accepted, the **Photon Server Settings** object will be selected, and accessible through **Standard Unity Inspector** window.
+
+To manually access the **Server Settings** object:
 
 - Navigate to the top window panel.
 - Select **Window**.
 - Then select **Photon Unity Networking (1)**.
 - Finally select **Highlight Server Settings (2)**.
-- The Standard Unity project window will reveal the **PhotonServerSettings (3)** object. 
-- Select the object to reveal its settings in the Unity inspector window.
+- The **Standard Unity** project window will reveal the **PhotonServerSettings (3)** object. 
+- Select the object to reveal its settings in the **Unity Inspector** window.
 
 ![Photon server settings](media/tutorials/photon-server-settings.png)  
 
-As part of **PhotonServerSettings**, you have the option to assign the **Chat Application ID**.
+> [!NOTE]
+> As part of **PhotonServerSettings**, you have the option to assign the **Chat Application ID**.
 
 At this point the project is configured.
 
 ## Implementing PlayFab to Photon authentication
 
-When you enable Photon add-on for your title and configure the authentication on Photon Application Dashboard, PlayFab allows you to authenticate existing PlayFab players inside the photon environment. This means you may completely avoid implementing any user management for Photon.
+When you enable the **Photon Add-on** for your **Title**, and configure the authentication on the **Photon Application Dashboard**, **PlayFab** allows you to authenticate existing **PlayFab Players** inside the **Photon** environment.
 
-- Navigate to **DemoHub-Scene-V2** scene **(1)** from the Photon Unity Networking Free package.
+This means you may completely avoid implementing any user management for Photon.
+
+- Navigate to **DemoHub-Scene-V2** scene **(1)** from the **Photon Unity Networking Free** package.
 - This scene is a hub for all the examples from the package.
-- As it is the first scene to load, let's add a small script to enable authenticate PlayFab to Photon.
+- As it is the *first* scene to load, let's add a small script to enable authenticate **PlayFab** to **Photon**.
 - Create an empty **GameObject** called **PlayFabAuthenticator (2)**.
 - Then create and add a component with the same name to this **GameObject (3)**.
 
@@ -262,56 +271,49 @@ public class PlayFabAuthenticator : MonoBehaviour {
 Start the scene **(1)** and inspect the flow of console messages **(2)**. 
 Control that:
 
- 1. Authentication to PlayFab itself was successful **(3)**
- 2. Photon token was acquired **(4)**
+ 1. Authentication to **PlayFab** itself was successful **(3)**
+ 2. The **Photon** token was acquired **(4)**
 
 The following picture illustrates the correct flow.
 
 ![Start the scene](media/tutorials/photon-start-the-scene.png)  
 
-Once Photon token has been acquired, we are good to check some of Photon demos. 
+Once the **Photon** token has been acquired, we are good to check some of the **Photon** demos.
 
-> [!EXAMPLE]
-> We can start a demo called **Demo Boxes**. Ensure that PlayFab authentication is complete, then select **Demo Boxes (1)**, then select **Load Demo (2)**, as shown on the following picture.
-
-For example:
-- We can start a demo called **Demo Boxes**. 
-- Ensure that PlayFab authentication is complete.
-- Select **Demo Boxes (1)**.
-- Then select **Load Demo (2)**, as shown on the following picture.
+For example, start a demo called **Demo Boxes**. Ensure that the **PlayFab** authentication is complete, select **Demo Boxes (1)**, then select **Load Demo (2)**, as shown on the following picture.
 
 ![Load demo](media/tutorials/photon-load-demo.png)  
 
-Photon will start outputting debug messages. So by simply monitoring your console, you can easily spot if you have any authentication issue:.
+**Photon** will start outputting **Debug** messages. So by simply monitoring your console, you can easily spot if you have any authentication issue.
 
 ![Photon debug console](media/tutorials/photon-debug-console.png)  
 
-Ensure that no **Authentication Denied** errors are present in the console. At this point, you have set up minimal PlayFab and Photon integration.
+Ensure that no **Authentication Denied** errors are present in the console. At this point, you have set up minimal **PlayFab** and **Photon** integration.
 
 ## Photon Room Event + CloudScript
 
-Photon matchmaking system has the concept of a room. If you are not familiar with this concept, please consult with the [Photon Matchmaking Guide](https://doc.photonengine.com/en-us/realtime/current/reference/matchmaking-and-lobby).
+**Photon** matchmaking system has the concept of a **Room**. If you are not familiar with this concept, please consult with the [Photon Matchmaking Guide](https://doc.photonengine.com/en-us/realtime/current/reference/matchmaking-and-lobby).
 
-PlayFab allows you to intercept various room events. The following room events require only **CloudScript** to be intercepted:
+**PlayFab** allows you to intercept various **Room Events**. The following **Room Events** require only **CloudScript** to be intercepted:
 
-- RoomCreated
-- RoomJoined
-- RoomLeft
-- RoomClosed
+- **RoomCreated**
+- **RoomJoined**
+- **RoomLeft**
+- **RoomClosed**
 
-The following events will require additional control over unity code to be intercepted (details are given later in this document):
+The following **Events** will require additional control over **Unity** code to be intercepted (details are given later in this document):
 
-- RoomPropertyUpdated
-- RoomEventRaised
+- **RoomPropertyUpdated**
+- **RoomEventRaised**
 
-> [!WARNING]  
-> Once you introduce a handler for a room event, it becomes an essential part of event handling flow. So errors produced while running your **CloudScript** may cause problems for the entire system. For example, if the **RoomCreated** handler throws an error, your clients will throw an error as well, and will not be able to connect properly.
+> [!NOTE]  
+> Once you introduce a handler for a **Room Event**, it becomes an essential part of **Event** handling flow. So errors produced while running your **CloudScript** may cause problems for the *entire* system. For example, if the **RoomCreated** handler throws an error, your **Clients** will throw an error as well, and will not be able to connect properly.
 
-Let's construct PlayFab **CloudScript** by defining handler for each event type one by one.
+Let's construct a **PlayFab CloudScript** by defining a handler for each **Event** type one by one.
 
 ### Room Created
 
-The **Room Created** handler is invoked every time photon room is created. The following **CloudScript** handler will intercept such event.
+The **Room Created** handler is invoked every time a **Photon Room** is created. The following **CloudScript** handler will intercept such **Event**.
 
 ```javascript
 // Triggered automatically when a Photon room is first created
@@ -321,7 +323,8 @@ handlers.RoomCreated = function (args) {
 ```
 
 > [!NOTE]
-> You may acquire additional data about the event using 'args' argument. The example of **args** payload is given below.
+> You may acquire additional data about the **Event** using the **args** argument. The example of **args** payload is given below.
+
 
 ```javascript
 {
@@ -356,7 +359,7 @@ handlers.RoomCreated = function (args) {
 
 ### Room Joined
 
-**Room Joined** handler is invoked every time player joins the room.  The following **CloudScript** handler will intercept such event.
+The **Room Joined** handler is invoked every time a **Player** joins the **Room**.  The following **CloudScript** handler will intercept such an **Event**.
 
 ```javascript
 // Triggered automatically when a player joins a Photon room
@@ -365,9 +368,9 @@ handlers.RoomJoined = function (args) {
 };
 ```
 
-This callback is not invoked for the very first user entering the room. Use **Room created** to intercept the first player join. You may acquire additional data about the event using 'args' argument.
+This callback is not invoked for the very first user entering the **Room**. Use **Room created** to intercept the first **Player** that joins. You may acquire additional data about the **Event** using **args** argument.
 
-The example of 'args' payload is shown below.
+The example of **args** payload is shown below.
 
 ```javascript
 {
@@ -386,7 +389,7 @@ The example of 'args' payload is shown below.
 
 ### Room Left
 
-**Room Left** handler is invoked every time player leaves the room.  The following **CloudScript** handler will intercept such event.
+The **Room Left** handler is invoked every time a **Player** leaves the **Room**.  The following **CloudScript** handler will intercept such **Event**.
 
 ```javascript
 // Triggered automatically when a player leaves a Photon room
@@ -395,7 +398,7 @@ handlers.RoomLeft = function (args) {
 };
 ```
 
-You may acquire additional data about the event using 'args' argument. The example of 'args' payload is shown below.
+You may acquire additional data about the **Event** using **args** argument. The example of **args** payload is shown below.
 
 ```javascript
 {
@@ -416,7 +419,7 @@ You may acquire additional data about the event using 'args' argument. The examp
 
 ### Room Closed
 
-**Room Closed** handler is invoked every time all the last player leaves the room and room has no players left. The following **CloudScript** handler will intercept such event.
+The **Room Closed** handler is invoked every time the last **Player** leaves the room and room has no **Players** left. The following **CloudScript** handler will intercept such event.
 
 ```javascript
 // Triggered automatically when a Photon room closes
@@ -426,7 +429,7 @@ handlers.RoomClosed = function (args) {
 };
 ```
 
-You may acquire additional data about the event using 'args' argument. The example of 'args' payload is shown below.
+You may acquire additional data about the event using **args** argument. The example of **args** payload is shown below.
 
 ```javascript
   "ActorCount": 0,
@@ -458,9 +461,9 @@ handlers.RoomPropertyUpdated = function (args) {
 ```
 
 > [!NOTE]
-> The **currentPlayerId** is undefined in this handler. If the room property was changed from the client, you may use the 'args' argument, and refer to the **UserId** to acquire the player in charge.
+> The **currentPlayerId** is undefined in this handler. If the **Room** property was changed from the **Client**, you may use the **args** argument, and refer to the **UserId** to acquire the **Player** in charge.
 
-You may acquire additional data about the event using 'args' argument. The example of 'args' payload is shown below.
+You may acquire additional data about the event using **args** argument. The example of **args** payload is shown below.
 
 ```javascript
 {
@@ -533,7 +536,7 @@ You may acquire additional data about the event using 'args' argument. The examp
 }
 ```
 
-When changing custom room properties using the Unity Photon client, *it is important to mark the call*, so that it passes the event to WebHook (PlayFab in this case).
+When changing custom **Room** properties using the **Unity Photon Client**, *it is important to mark the call*, so that it passes the **Event** to **WebHook** (**PlayFab** in this case).
 
 ```csharp
 // Properties updates ( this hashtable contains the properties to be changed. Properties not mentioned here will stay as is
@@ -550,7 +553,7 @@ PhotonNetwork.room.SetCustomProperties(properties, expectedProperties, true);
 
 ### Room Event Raised
 
-**Room Event Raised** is called every time a **custom** room event is raised. The following CloudScript handler will intercept such event.
+The **Room Event Raised** is called every time a custom **Room Event** is raised. The following **CloudScript** handler will intercept such an **Event**.
 
 ```javascript
 // Triggered by calling "OpRaiseEvent" on the Photon client. The "args.Data" property is
@@ -561,7 +564,7 @@ handlers.RoomEventRaised= function (args) {
 };
 ```
 
-You may acquire additional data about the event using 'args' argument. The example of 'args' payload is shown below.
+You may acquire additional data about the **Event** using **args** argument. The example of **args** payload is shown below.
 
 ```javascript
 {
@@ -636,7 +639,7 @@ You may acquire additional data about the event using 'args' argument. The examp
 }
 ```
 
-When raising custom room events using Unity Photon client, it is important to mark the call so, that it passes the event to WebHook (PlayFab in this case).
+When raising custom **Room Events** using **Unity Photon Client**, it is important to mark the call so that it passes the **Event** to **WebHook** (**PlayFab** in this case).
 
 ```csharp
 var data = new Dictionary<string,object>() {
@@ -652,9 +655,9 @@ PhotonNetwork.RaiseEvent(15, data, true, new RaiseEventOptions() {
 
 ## Testing Room Event Handlers
 
-This example extends the previous example (PlayFab + Photon authentication).
+This example extends the previous example (**PlayFab** + **Photon** authentication).
 
-Upload the following CloudScript for your title.
+Upload the following **CloudScript** for your **Title**.
 
 ```javascript
 handlers.RoomCreated = function (args) {
@@ -700,9 +703,9 @@ handlers.RoomEventRaised = function (args) {
 };
 ```
 
-The code does nothing more than posting new title event whenever Photon callback is invoked. Being of no use in production, this example will let us clearly see how the callbacks are invoked.
+The code does nothing more than posting a new **Title Event** whenever a **Photon** callback is invoked. Being of no use in production, this example will let us clearly see how the callbacks are invoked.
 
-Extend the PlayFabAuthenticator script by including new example code that will raise custom event and set custom room property. The extended version also utilizes Awake method to not destroy object between scene loads.
+Extend the **PlayFabAuthenticator** script by including new example code that will raise custom **Event**, and set custom room property. The extended version also utilizes an **Awake** method to not destroy object between scene loads.
 
 ```csharp
 using System.Collections.Generic;
@@ -821,7 +824,7 @@ public class PlayFabAuthenticator : MonoBehaviour {
 }
 ```
 
-- Run the hub scene and wait for PlayFab authentication to complete **(1)**.
+- Run the hub scene and wait for **PlayFab** authentication to complete **(1)**.
 - Then load the **Boxes Demo** scene **(2)**.
 
 ![Load Demo Boxes scene](media/tutorials/photon-load-demo-boxes-scene.png)  
@@ -833,20 +836,19 @@ public class PlayFabAuthenticator : MonoBehaviour {
 
 ![Execute Example](media/tutorials/photon-execute-example.png)
 
-Don't forget to stop Unity from playing. This is to ensure we also receive **RoomLeft** and **RoomClosed** events.
+Don't forget to stop **Unity** from playing. This is done to ensure that we also receive **RoomLeft** and **RoomClosed Events**.
 
-Navigate to **Title Game Manager** page and observe the PlayStream panel. You should be able to see events generated as a result of our CloudScript code handling Photon events.
+Navigate to **Title Game Manager** page, and observe the **PlayStream** panel. You should be able to see **Events** generated as a result of our **CloudScript** code handling **Photon Events**.
 
- 1. Initially, our Photon instance had no opened room. When we launched the example, Photon has **created the room** for the Boxes Demo
- 2. The first player to join is the player who requested the room. So no **RoomJoined** event was recorded. 
-We then executed our example code:
-     - First, we raised **custom room event**.
-     - Then, we set **custom room property**.
-     - Then we stopped Unity play mode. This resulted in our client **leaving the room**.
- 3. Since our disconnected client was the last one, there are no more clients and Photon **closes the room**.
+ 1. Initially, our **Photon** instance had no opened **Room**. When we launched the example, **Photon** has **created the room** for the Boxes Demo.
+ 2. The first **Player** to join is the **Player** who requested the **Room**. So no **RoomJoined Event** was recorded. We then executed our example code:
+     - First, we raised a custom **Room Event**.
+     - Then, we set a custom **Room Property**.
+     - Then we stopped the **Unity** play mode. This resulted in our **Client** leaving the **Room**.
+ 3. Since our disconnected **Client** was the last one, there are no more **Clients** and **Photon** closes the **Room**.
 
-All the events should be logged into the PlayStream event flow, as shown on the following picture.
+All the **Events** should be logged into the **PlayStream Event** flow, as shown on the following picture.
 
 ![PlayStream event flow](media/tutorials/photon-playstream-event-flow.png)
 
-At this point, you have fully integrated Photon event support into your PlayFab title.
+At this point, you have fully integrated **Photon** event support into your **PlayFab Title**.
