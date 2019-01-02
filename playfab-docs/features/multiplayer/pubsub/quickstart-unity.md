@@ -10,8 +10,6 @@ keywords: playfab, multiplayer, pubsub, Unity
 ms.localizationpriority: medium
 ---
 
-# PubSub Unity quickstart
-
 # Overview
 
 The purpose of this topic is to explain how to quickly get started with using the PubSub client for Unity. In this guide, we will show you step by step how to connect to the PubSub hub and subscribe to topics. Then we will show you how to receive your first message.
@@ -48,7 +46,7 @@ The pubsub feature does not come with the PlayFab SDK by default.  You can acqui
 
 ## Usage
 
-Using the pubsub plugin is pretty easy. If you have not looked at our reference for this feature, you should get familiar with it at [PubSub client API](/pubsub-reference.md).
+Using the pubsub plugin is pretty easy. If you have not looked at our reference for this feature, you should get familiar with it at [PubSub client API](pubsub-reference.md).
 
 1. **Initializing PubSub** - While you can initialize the plugin at any time in your code, we recommend that you initialize in either the start or awake method. When just getting started it also helps to set `Debugging` to true.
 
