@@ -21,7 +21,9 @@ In this example, we show you how to create the **Prize Table End Tournament Priz
 ## Requirements
 
 > [!IMPORTANT]
-> This is an advanced tutorial. Please make sure that all requirements have been met or you will not be able to complete this tutorial.
+> This is an advanced tutorial. Please make sure that all requirements shown below have been met, or you will *not* be able to complete this tutorial.
+
+- Basic knowledge of how to create a **Player** will be necessary, as there will need to be **Players** in a **Leaderboard** before it can perform any actions on those **Players**.
 
 - Basic knowledge of how to create a **Player** will be necessary, as there will need to be **Players** in a **Leaderboard** before it can perform any actions on those **Players**. Refer to the [Getting Started with PlayFab - Chapter 1](../../config/dev-test-live/get-started-with-players-and-tournaments.md) tutorial which will run you through the process of creating a **Player** for the **Title**.
 - It is also worthwhile to read the [Game Manager quickstart](../../config/gamemanager/quickstart.md) if you are unfamiliar with the **Game Manager**, as it is the place where **Prize Tables** are created.
@@ -34,34 +36,36 @@ In this example, we show you how to create the **Prize Table End Tournament Priz
   - **Display name**: **Silver**
   - **Initial deposit**: **1000**
 
-## Step 1 - Create a leaderboard
+## Step 1 - Create a Leaderboard
 
 In the **Game Manager**:
 
-- Select **Leaderboards** from the menu on the left.
+- Go to **Leaderboards** in the menu to the left.
 - Select **New Leaderboard**.
-- Under the **Leaderboard Properties** area, create a leaderboard called **tournamentScore_manual**.
-- Select **Manually** for the **Reset frequency**.
-- Select an **Aggregation method** of **Maximum (always use the highest value)**.
+- Add a **Leaderboard** called **tournamentScore_manual** in the **Statistic name** field.
+- Using the drop-down menu provided, set the **Reset frequency** field to **Manually**.
+- Move to the **Aggregation mehtod** field and select **Maximum (always use the highest value)** from the drop-down menu provided.
 
 ![Game Manager - Leaderboards - New Leaderboard](media/tutorials/game-manager-new-leaderboard.png)  
 
-## Step 2 - Create a prize table for the leaderboard
+## Step 2 - Create a Prize Table for the Leaderboard
 
-Now that a **Leaderboard** has been created, a **Prize Table** can be associated with it.
+Now that a **Leaderboard** has been created, a **Prize Table** can be associated with it. Go to:
 
-- Select **Leaderboards** from the menu on the left.
-- Go to the **Prize Tables** tab.
+- **Leaderboards** in the menu to the left.
+- Select the **Prize Tables** tab.
 - Select the **NEW PRIZE TABLE** button to be taken to the **New Prize Table** view.
 
 ![Game Manager - Leaderboards - Prize Tables](media/tutorials/game-manager-prize-tables.png)  
 
-- In the **New Prize Table** view, fill in the **Name** **End Tournament Prizes**.
-- Go the **Leaderboard** area of the screen and choose **tournamentScore_manual** from the **Leaderboard** drop-down menu.
+In the **New Prize Table** view:
 
-In order for this **Prize Table** to perform some action, **Ranks** will need to be set. To do this:
+- Move to the **INFO** area, and enter the **Name** for the **New Prize Table**, entitled  **End Tournament Prizes**.
+- Choose **tournamentScore_manual** from the **Leaderboard** drop-down menu.
 
-- Under the **TABLE CONTENTS** section, select the  **+ ADD RANK** button.
+In order for this **Prize Table** to perform some action, ranks will need to be set.  To do this:
+
+-  Select **+ ADD RANK** under the **TABLE CONTENTS** section.
 - A **Rank** form will appear.
 
 ![Game Manager - Leaderboards - New Prize Table](media/tutorials/game-manager-new-prize-table.png)  
@@ -77,14 +81,13 @@ In the **Rank** form:
 
 Now, we’ll add a second rank range:
 
-- Select **+ADD RANK** under the **TABLE CONTENTS** section (there is also a second one at the bottom, that also works).
-- Verify that the **Rank from** field has a value of **3**.
-- Verify that the **To (inclusive)** field has a value of **5**.
-- In the **Virtual currency code** drop-down menu, choose **SI (Silver)** with an amount of **10**.
+- Select **+ADD RANK** under the **TABLE CONTENTS** section (there is also a *second* one at the bottom, that also works).
+- In the **Rank** form that appears, make sure that the **Rank from** field has a value of **3** and the **To (inclusive)** field has a value of **5**.
+- In the **Virtual currency code** drop-down, choose **SI** (**Silver**) with an amount of **10**.
 
 ![Game Manager - Leaderboards - Prize Table - Add Second Rank](media/tutorials/game-manager-prize-table-add-second-rank.png)  
 
-## Step 3 - Populate the leaderboard with a player
+## Step 3 - Populate the Leaderboard with a Player
 
 A **Leaderboard** and **Prize Table** associated with it has now been created. The next step is to populate the **Leaderboard** with **Players**.
 
@@ -144,13 +147,20 @@ private void FailureCallback(PlayFabError error){
 
 To check that there are 5 **Players** populated in the **Leaderboard** with the correct values:
 
-- Select **Leaderboards**  from your menu on the left.
-- Go back to the **Leaderboards** list view.
-- Select the **tournamentScore_manual** and there should be 5 **Players** with the values **105**, **104**, **103**, **102**, and **101**.
+- Select **Leaderboards** from the menu on the left.
+- On the **Leaderboards** tab, go back to the **Leaderboard** list view.
+- Select **tournamentScore_manual**, and there should be 5 **Players** with the values of **105**, **104**, **103**, **102**, and **101**.
 
 ![Game Manager - Leaderboards - View Leaderboard - Check values](media/tutorials/game-manager-leaderboards-view-leaderboard-check-values.png)  
 
-## Step 4 - Check player’s initial currencies
+## Step 4 - Check Player’s initial Currencies
+
+Before checking anything:
+
+- Return to **Players** in the menu to the left from step 2.
+- Go to the **Players** tab, and find a **Player** that was put into the **tournamentScore_manual** **Leaderboard** in step 3.
+- Select the **Player ID**, and the **Virtual Currency** tab for that **Player**.
+- Record the values of the **GO** (**Gold**) and **SI** (**Silver**) **Currencies** for that **Player**.
 
 Before checking anything, go back to the test **Players** from step 2.
 
@@ -175,6 +185,10 @@ Now go to **Leaderboards**.
 - This will clear the **Players** list.
 
 ![Game Manager - Leaderboards - Check player positions](media/tutorials/game-manager-leaderboards-check-player-positions.png)
+
+- Select the **RESET NOW** button at the top of the screen.
+- When prompted to **Reset this Leaderboard now?**, select the **RESET** button to confirm the reset.
+- This will clear the **Players** list.
 
 ![Game Manager - Reset Leaderboard](media/tutorials/game-manager-reset-leaderboard.png)
 
@@ -203,8 +217,10 @@ Now, let's manually check if the **Players** received the correct currencies:
 
 ![Game Manager - Player2 - Check Virtual Currency Amount](media/tutorials/game-manager-player2-check-vc-amount.png)
 
-Another way of checking that the **Virtual Currency** was granted correctly is to go into **Players**, and then **Event History**.
+Another way of checking that the **Virtual Currency** was granted correctly is:
 
-This will show a **player_virtual_currency_balance_changed** event with specific details on amounts that changed for the **Virtual Currency** granted.
+- Go into **Players**.
+- Look at the **Event History**.
+- This will show a **player_virtual_currency_balance_changed Event** with specific details on amounts that changed for the **Virtual Currency** granted.
 
 ![Game Manager - Players - Event History Chart - Check Virtual Currency Change](media/tutorials/game-manager-players-event-history-chart-check-vc-changed.png)
