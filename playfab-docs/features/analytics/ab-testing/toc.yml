@@ -1,12 +1,11 @@
-- name: A/B testing
+- name: Overview
   href: index.md
+- name: Quickstart
+  href: quickstart.md
+- name: Tutorials
+  href: tutorials.md
   items:
-  - name: Quickstart
-    href: quickstart.md
-  - name: Tutorials
-    href: tutorials.md
-    items:
-    - name: A/B testing with Stores and test buckets
-      href: ab-testing-with-stores-and-test-buckets.md
-    - name: A/B testing with Title data
-      href: ab-testing-with-title-data.md
+  - name: A/B testing with Stores and test buckets
+    href: ab-testing-with-stores-and-test-buckets.md
+  - name: A/B testing with Title data
+    href: ab-testing-with-title-data.md

@@ -1,0 +1,10 @@
+- name: PlayFab Data
+  href: ../../index.md?#pivot=documentation&panel=data
+  expanded: true
+  items:
+  - name: Entities
+    href: entities/toc.yml
+  - name: Player Data
+    href: playerdata/toc.yml
+  - name: Content Delivery Network
+    href: content-delivery-network/toc.yml

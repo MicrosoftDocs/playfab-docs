@@ -1,0 +1,14 @@
+- name: PlayFab Multiplayer
+  href: ../../index.md?#pivot=documentation&panel=multiplayer
+  expanded: true
+  items:
+  - name: Compute
+    href: compute/toc.yml
+  - name: Matchmaking
+    href: matchmaking/toc.yml
+  - name: Photon
+    href: photon/toc.yml
+  - name: Communication Fabric
+    href: networking/toc.yml
+  - name: PubSub
+    href: pubsub/toc.yml

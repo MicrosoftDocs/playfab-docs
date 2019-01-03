@@ -10,7 +10,7 @@ keywords: playfab, multiplayer, pubsub, API
 ms.localizationpriority: medium
 ---
 
-# Overview
+# PubSub client API
 
 Thi topic explains the technical design behind the Persistent Sockets API in a PlayFab client. Below you will find any dependencies, flow design, and explanation of each API signature required to make a clean Persistent Socket API that can talk to the PlayFab relay service, receive events and subscribe handlers to those events.
 

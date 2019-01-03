@@ -16,7 +16,7 @@ This is the homepage for the Bumblelion 1PP Preview. Properly called "PlayFab Mu
 
 Here are current docs:
 
-- [Private Preview libraries and release notes](bmb-quickstart.md)
+- [Getting started with Bumblelion Private Preview](quickstart.md)
 - [Stub conceptual introduction](intro-to-networking.md)
 - [Proposed pricing](pricing.md)
 

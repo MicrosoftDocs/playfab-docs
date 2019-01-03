@@ -1,14 +1,13 @@
-- name: Actions & Rules
+- name: Overview
   href: index.md
+- name: Quickstart
+  href: quickstart.md
+- name: Tutorials
+  href: tutorials.md
   items:
-  - name: Quickstart
-    href: quickstart.md
-  - name: Tutorials
-    href: tutorials.md
-    items:
-    - name: Bulk Actions for an entire player segment
-      href: bulk-actions-for-an-entire-player-segment.md
-    - name: PlayStream hooks - rules, conditions and actions
-      href: playstream-hooks-rules-conditions-and-actions.md
-    - name: Using CloudScript actions with PlayStream
-      href: using-cloudscript-actions-with-playstream.md
+  - name: Bulk Actions for an entire player segment
+    href: bulk-actions-for-an-entire-player-segment.md
+  - name: PlayStream hooks - rules, conditions and actions
+    href: playstream-hooks-rules-conditions-and-actions.md
+  - name: Using CloudScript actions with PlayStream
+    href: using-cloudscript-actions-with-playstream.md

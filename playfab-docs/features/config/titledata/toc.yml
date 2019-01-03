@@ -1,10 +1,9 @@
-- name: Title Data
+- name: Overview
   href: index.md
+- name: Quickstart
+  href: quickstart.md
+- name: Tutorials
+  href: tutorials.md
   items:
-  - name: Quickstart
-    href: quickstart.md
-  - name: Tutorials
-    href: tutorials.md
-    items:
-    - name: Using publisher data
-      href: using-publisher-data.md
+  - name: Using publisher data
+    href: using-publisher-data.md

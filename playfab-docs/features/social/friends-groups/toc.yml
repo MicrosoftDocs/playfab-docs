@@ -1,12 +1,11 @@
-- name: Friends & Groups
+- name: Overview
   href: index.md
+- name: Quickstart
+  href: quickstart.md
+- name: Tutorials
+  href: tutorials.md
   items:
-  - name: Quickstart
-    href: quickstart.md
-  - name: Tutorials
-    href: tutorials.md
-    items:
-    - name: Friends Lists
-      href: friends-lists.md
-    - name: Using Shared Group Data
-      href: using-shared-group-data.md
+  - name: Friends Lists
+    href: friends-lists.md
+  - name: Using Shared Group Data
+    href: using-shared-group-data.md
