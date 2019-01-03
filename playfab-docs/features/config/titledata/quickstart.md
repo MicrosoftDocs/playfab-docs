@@ -42,7 +42,7 @@ public void ClientGetTitleData() {
 }
 ```
 
-### Title Data rom the game server
+### Title Data from the game server
 
 Use [GetTitleData](xref:titleid.playfabapi.com.server.title-widedatamanagement.gettitledata) from the **PlayFabServerAPI** to get the **KVPs** for a specific **Title**. The following code example displays the values of all of the **Title Data**.
 ```csharp
@@ -138,7 +138,6 @@ public void SetTitleInternalData() {
         });
 }
 ```
-
 ## See also
 
 - [Using Publisher Data](../../config/titledata/using-publisher-data.md)
