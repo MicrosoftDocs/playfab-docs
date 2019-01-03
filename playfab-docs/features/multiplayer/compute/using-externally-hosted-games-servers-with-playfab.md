@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Using Externally Hosted Game Servers with PlayFab
 
-## External Game Server Hosting
+## External Game Server hosting
 
 While **PlayFab** has always offered custom game server hosting as a paid service on top of **Amazon Web Services**, we’re aware that some developers would prefer to manage their *own* servers, using a variety of server providers and server operating systems.
 
@@ -20,9 +20,9 @@ To provide for that, we have introduced a new feature: **External Game Server Ho
 
 ### Hosting in PlayFab versus Externally
 
-First, it’s important to understand the differences between **PlayFab** game server hosting and external game server hosting.
+First, it’s important to understand the differences between **PlayFab Game Server Hosting** and **External Game Server Hosting**.
 
-**PlayFab** game servers:
+**PlayFab Game Servers**:
 
 - Are hosted using **AWS EC2**.
 - Are available in any **AWS EC2 Region**, including the US, Europe, Australia, Singapore, Japan, and others.
@@ -33,7 +33,7 @@ First, it’s important to understand the differences between **PlayFab** game s
 - Are billed monthly on the developer’s **PlayFab** bill.
 - Are monitored by **PlayFab** - developers can monitor themselves via the **NewRelic** add-on.
 
-Externally hosted servers:
+**Externally Hosted Servers**:
 
 - Can be hosted by any **Game Server Provider** (**GSP**), or on the developer’s own servers.
 - Can run any operating system.
@@ -49,7 +49,7 @@ The key limitations with externally hosted servers are imposed by the fact that 
 
 ### Setting up External Hosting
 
-Once you’ve made the decision to use externally hosted servers, the setup is easy:
+Once you’ve made the decision to use **Externally Hosted Servers**, the setup is easy:
 
 - Select **Settings** from the left menu.
 - Select the **API Features** tab of the **PlayFab Game Manager**.
@@ -59,11 +59,11 @@ Once you’ve made the decision to use externally hosted servers, the setup is e
 Here, you can also set your server **timeout period**, which determines how often you need to call **RefreshGameServerInstanceHeartbeat** (see the following list of [PlayFab API Calls](#playfab-api-calls)) from the server, in order to tell the service to keep it in the active set.
 
 > [!NOTE]
-> Please be aware that external game server hosting is *not* designed to work in conjunction with **PlayFab** custom game server hosting - so turning this option on means that no game server hosts will be created in **PlayFab**.
+> Please be aware that **External Game Server Hosting** is *not* designed to work in conjunction with **PlayFab Custom Game Server Hosting** - so turning this option *on* means that no game server hosts will be created in **PlayFab**.
 
-### PlayFab API Calls
+### PlayFab API calls
 
-There are three new API methods we’ve added that are specific to external hosting:
+There are three new **API** methods we’ve added that are specific to **External Hosting**:
 
 1. [RegisterGame](xref:titleid.playfabapi.com.server.matchmaking.registergame) - Notifies **PlayFab** about a new server instance.
 2. [DeregisterGame](xref:titleid.playfabapi.com.server.matchmaking.deregistergame) - Notifies **PlayFab** that a server instance is going away.
@@ -79,11 +79,11 @@ In addition, you should be aware of the following **API** methods:
 - [SetGameServerInstanceTags](xref:titleid.playfabapi.com.server.matchmaking.setgameserverinstancetags) - Adds tags to server instances that can be used for filtering in matchmaking.
 - [SetGameServerInstanceData](xref:titleid.playfabapi.com.server.matchmaking.setgameserverinstancedata) - Sets custom data on a server instance which is returned when querying the list of running servers.
 
-### Registering the Server
+### Registering the server
 
-Once you’ve selected **External Game Server** hosting in your **PlayFab Game Manager Settings**, game servers can be registered with **PlayFab**. The way this works is that **PlayFab** maintains a registry of all game instances running, and which **Players** occupy the slots in those games.
+Once you’ve selected **External Game Server Hosting** in your **PlayFab Game Manager Settings**, game servers can be registered with **PlayFab**. The way this works is that **PlayFab** maintains a registry of all game instances running, and which **Players** occupy the slots in those games.
 
-Game servers are responsible for adding themselves to that registry, using the **RegisterGame API** method. See example provided below.
+Game servers are responsible for adding themselves to that registry, using the **RegisterGame API** method. The following example demonstrates this.
 
 ```csharp
 public void RegisterGame() {
@@ -104,7 +104,7 @@ public void RegisterGame() {
 
 In this case, a server for **Title ID AAA** is informing **PlayFab** that it is now available. **Clients** can query for a list of running games, or for an available slot in a game instance that matches some specified criteria.
 
-Apart from the **Tags**, all the fields you see here are required for the call, so that we have enough information to correctly be matchmaking **Players** into the game session, and let the **Client** know how to communicate with it.
+Apart from the **Tags**, all of the fields you see here are required for the call, so that we have enough information to correctly matchmake **Players** into the game session, and to let the **Client** know how to communicate with it.
 
 Even though they are required, the **Tags** are worth a special mention, as they allow you to specify additional elements that can be used for your matchmaking calls. In particular, it’s worth pointing out the **custom_region** tag we’re using in this example.
 
@@ -112,7 +112,7 @@ The **Region** element of the server must be set to one of the **PlayFab**-suppo
 
 The **Build**, **Region**, and **GameMode** parameters are all used exactly as they are in our tutorial on **PlayFab's** hosting of [Custom Game Servers](custom-game-servers.md), because they are the primary elements used for matchmaking.
 
-Obviously, they're not used the same way, as you're not starting servers in our hosting, but you do still need to upload a **Build** and set up the **GameMode** you'll be using.  They are used to check the validity of the call to **RegisterGame**, so the matchmaker knows how many slots are free at any given time (specifically, the **Build ID** needs to match - you don't need to keep the **Build** up-to-date, apart from that).
+Obviously, they're not used the same way, as you're not starting servers in our hosting, but you do still need to upload a **Build** and set up the **GameMode** you'll be using. They are used to check the validity of the call to **RegisterGame**, so the matchmaker knows how many slots are free at any given time (specifically, the **Build ID** needs to match - you don't need to keep the **Build** up-to-date, apart from that).
 
 For external server hosting, you will not be setting the **Build** to active in any **Region**, however.
 
@@ -134,13 +134,13 @@ The **LobbyId** is the unique identifier that the game instance needs to use goi
 
 ### Managing Players and Sessions
 
-Once the game server is up and running, matchmaking works exactly as it does for servers hosted by **PlayFab**. Calls to [GetCurrentGames](xref:titleid.playfabapi.com.client.matchmaking.getcurrentgames) will return the listing of game servers running, and [Matchmake](xref:titleid.playfabapi.com.client.matchmaking.matchmake) will return the information for the server with an available slot which is the best fit to the **Player's** search parameters.
+Once the game server is up and running, matchmaking works exactly as it does for servers hosted by **PlayFab**. Calls to [GetCurrentGames](xref:titleid.playfabapi.com.client.matchmaking.getcurrentgames) will return the list of running game servers, and [Matchmake](xref:titleid.playfabapi.com.client.matchmaking.matchmake) will return the information for the server with an available slot which is the best fit to the **Player's** search parameters.
 
-The **Player** passes the matchmaker ticket returned by **Matchmake** to that server, which uses [RedeemMatchmakerTicket](xref:titleid.playfabapi.com.server.matchmaking.redeemmatchmakerticket) to validate that the user has a good login, was sent to the server as a result of a valid matchmaking call, and to retrieve the user’s information.
+The **Player** passes the **Matchmaker** ticket returned by **Matchmake** to that server, which uses [RedeemMatchmakerTicket](xref:titleid.playfabapi.com.server.matchmaking.redeemmatchmakerticket) to validate that the user has a good login, was sent to the server as a result of a valid matchmaking call, and to retrieve the user’s information.
 
 That call also tells the **PlayFab Matchmaker** that the **Player** has joined the server, occupying the slot (which is “reserved” for two minutes after the call to **Matchmake**). When the **Player** has left the server, the occupied slot is then freed up by calling [NotifyMatchmakerPlayerLeft](xref:titleid.playfabapi.com.server.matchmaking.notifymatchmakerplayerleft).
 
-Now, since the **PlayFab Game Wrangler** has no direct access to your servers, it’s important for them to regularly let the service know that they’re still running. Regardless of whether the server has available slots or not, make sure to call [text](xref:titleid.playfabapi.com.server.matchmaking.refreshgameserverinstanceheartbeat) once every minute, to ensure the server is maintained in the **Matchmaker** memory.
+Now, since the **PlayFab Game Wrangler** has no direct access to your servers, it’s important for them to regularly let the service know that they’re still running. Regardless of whether the server has available slots or not, make sure to call [RefreshGameServerInstanceHeartbeat](xref:titleid.playfabapi.com.server.matchmaking.refreshgameserverinstanceheartbeat) once every minute, to ensure the server is maintained in the **Matchmaker** memory.
 
 ```csharp
 public void RefreshGameServerInstanceHeartbeat(string lobbyId) {
@@ -167,7 +167,7 @@ public void DeregisterGame(string lobbyId) {
 
 And again, there’s no data needed for the response, which will be a simple **OK**.
 
-### Additional Options
+### Additional options
 
 Now, for the sake of completeness, there are a few *additional* features we’ve added to server hosting over time, which you can use.
 
@@ -175,17 +175,19 @@ The newest is **Server Tags**, which allow you to apply string tags to servers w
 
 This is particularly handy for games with large user populations, where you want to give **Players** the ability to search for games running their favorite maps, or where there are server options running that they particularly like (as well as letting them avoid the ones they hate).
 
-As you can see in our [Registering the Server](#registering-the-server) example, you can set these tags up in the call to **RegisterGame**, but you can update them at any time using the [SetGameServerInstanceTags](xref:titleid.playfabapi.com.server.matchmaking.setgameserverinstancetags) call. We do recommend using tags judiciously, and providing for a back-off search (less restrictive) after a short period, as the more options you provide to focus a search, the more you *bucketize* your user base. A popular set of tags might still get plenty of traffic, but an unpopular tag might not, meaning your **Players** could have a poor experience as they sit and wait on a game to open up with their preferred settings.
+As you can see in our [Registering the server](#registering-the-server) example, you can set these tags up in the call to **RegisterGame**, and update them at any time using the [SetGameServerInstanceTags](xref:titleid.playfabapi.com.server.matchmaking.setgameserverinstancetags) call.
+
+We do recommend using tags judiciously, and providing for a back-off search (less restrictive) after a short period, as the more options you provide to focus a search, the more you *bucketize* your user base. A popular set of tags might still get plenty of traffic, but an unpopular tag might not, meaning your **Players** could have a poor experience as they sit and wait on a game to open up with their preferred settings.
 
 Next, if you need to be able to close a game session to matchmaking despite technically having slots available, make sure to use [SetGameServerInstanceState](xref:titleid.playfabapi.com.server.matchmaking.setgameserverinstancestate). Servers normally start in the **Open** state, but you can set them to **Closed** whenever you need to. Say, for instance, a team game where you need to disallow join-in-progress to prevent cheating.
 
 Finally, for **Titles** using [GetCurrentGames](xref:titleid.playfabapi.com.client.matchmaking.getcurrentgames), it's worth noting that we now return custom data for servers, so that you can use that to provide additional information to the **Client** in determining which server is best for the **Player**. You can set that custom data via [SetGameServerInstanceData](xref:titleid.playfabapi.com.server.matchmaking.setgameserverinstancedata). Since both the **server custom data** and **Tags** are returned, you’ve got plenty of space to work with for any information you want to pass on to the client.
 
-For clarity, here’s a diagram detailing the logic flow between **PlayFab**, your **custom game servers**, and the **Client**.
+For clarity, here’s a diagram detailing the logic flow between **PlayFab**, your **Custom Game Servers**, and the **Client**.
 
 ![External Game Server-Client-MatchMaker Logic diagram](media/tutorials/external-game-server-client-matchmaker-logic-diagram.png)  
 
-## Best Practices
+## Best practices
 
 Finally, a few pieces of advice for those who haven’t worked extensively with server hosting:
 
