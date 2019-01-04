@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Setting up PlayFab authentication in Phaser.io
 
-[Phaser.io](http://phaser.io/) is a desktop and mobile **HTML5** game framework that **PlayFab** now supports in our **Javascript SDK**.
+[Phaser.io](https://phaser.io/) is a desktop and mobile **HTML5** game framework that **PlayFab** now supports in our **Javascript SDK**.
 
 Phaser.io supports plugins, so we at **PlayFab** thought that it would be useful for the Phaser.io community to have a powerful back end system that works as a plugin to the Phaser.io engine.
 

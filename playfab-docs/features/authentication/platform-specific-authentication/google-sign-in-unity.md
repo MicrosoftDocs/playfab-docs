@@ -217,4 +217,4 @@ There is a callback which will have the results of your login to **PlayFab**. At
 
 Hopefully, this guide has helped you.  But if you have questions, feel free to ask them in our [community forums](https://community.playfab.com/).
 
-You can download the sample for this tutorial [here](http://s3-us-west-2.amazonaws.com/api-playfab-com-craft-files/FileAssets/GooglePlayGamesSignInExample.zip).
+You can download the sample for this tutorial [here](https://s3-us-west-2.amazonaws.com/api-playfab-com-craft-files/FileAssets/GooglePlayGamesSignInExample.zip).

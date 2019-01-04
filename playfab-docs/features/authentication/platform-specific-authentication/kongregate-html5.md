@@ -16,8 +16,8 @@ This tutorial shows you the minimal setup required to authenticate your **Player
 
 ## Requirements
 
-- A registered [Kongregate](http://www.kongregate.com/) account.
-  - Familiarity with the [Kongregate Developers Guide](http://developers.kongregate.com/docs/api-overview/intro).
+- A registered [Kongregate](https://www.kongregate.com/) account.
+  - Familiarity with the [Kongregate Developers Guide](https://developers.kongregate.com/docs/api-overview/intro).
 - A registered **PlayFab Title**.
 - Familiarity with [Login basics and Best Practices](../../authentication/platform-specific-authentication/login-basics-best-practices.md).
 
