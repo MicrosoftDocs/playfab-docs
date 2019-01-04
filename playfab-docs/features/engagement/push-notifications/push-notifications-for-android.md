@@ -43,7 +43,7 @@ There are three Google websites that you must use and synchronize. In Google/Fir
 - **Google API Manager**:
   - Select your **Project**.
   - Select **Credentials** (left menu).
-  - The **Firebase Project** import will have created a **ServerKey** for you here.  
+  - The **Firebase Project** import will have created a **ServerKey** for you here. 
 - **Firebase Console**:
   - Select your **Project** or **App**, and find the **Settings** option (there are many ways to do this, all of which lead you to the same place).
   - In the **General** tab, this is listed as the **Web API Key**.

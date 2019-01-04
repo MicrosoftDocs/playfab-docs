@@ -67,7 +67,7 @@ var createAccountResult = PlayFabClientAPI.LoginWithCustomID(postModel);
 
 ## Player Secret
 
-A part of the new registration system is a new field called **PlayerSecret**.  If set, it allows you to sign request headers that will be validated by the server during **API** calls to all services, including **Login Requests**.
+A part of the new registration system is a new field called **PlayerSecret**. If set, it allows you to sign request headers that will be validated by the server during **API** calls to all services, including **Login Requests**.
 
 The **Player Secret** can only be set *once* per user per **Title** (a user with multiple **Titles** in the same studio will need to set the **Player Secret** for each one).
 

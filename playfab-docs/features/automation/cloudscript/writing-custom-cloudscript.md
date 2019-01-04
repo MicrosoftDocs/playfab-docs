@@ -276,7 +276,7 @@ The other way to call a **CloudScript** function is as a **PlayStream** event ac
 
 ### Logging
 
-One of the most important tools for debugging code is **Logging**.  Our **CloudScript** provides a utility for performing th function.
+One of the most important tools for debugging code is **Logging**. Our **CloudScript** provides a utility for performing th function.
 
 This takes the form of the **Log** object, which can log any message desired using the **Info**, **Debug**, and **Error** methods. Additionally, the **http** object will log any errors it comes across while making requests by setting the **logRequestAndResponse** parameter. While setting these logs up is simple, accessing them takes *a bit* of finesse.
 

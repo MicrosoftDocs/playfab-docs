@@ -63,7 +63,7 @@ In the **New Prize Table** view:
 - Move to the **INFO** area, and enter the **Name** for the **New Prize Table**, entitled  **End Tournament Prizes**.
 - Choose **tournamentScore_manual** from the **Leaderboard** drop-down menu.
 
-In order for this **Prize Table** to perform some action, ranks will need to be set.  To do this:
+In order for this **Prize Table** to perform some action, ranks will need to be set. To do this:
 
 -  Select **+ ADD RANK** under the **TABLE CONTENTS** section.
 - A **Rank** form will appear.

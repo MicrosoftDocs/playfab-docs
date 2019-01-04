@@ -87,7 +87,7 @@ The **Photon Add-on** page will allow you to install **Photon** by specifying yo
 
 - Optionally, you may specify **Chat Application ID**.
 - Once you install the add-on **(3)**, a **Secret Key** will be generated **(2)**.
-- Save it for future use when configuring web-hooks.  
+- Save it for future use when configuring web-hooks. 
 
 > [!NOTE]
 > Remember to save your **Photon Secret Key** in a safe and easily accessible place. It will come in handy when configuring **Web-hooks**.
@@ -359,7 +359,7 @@ handlers.RoomCreated = function (args) {
 
 ### Room Joined
 
-The **Room Joined** handler is invoked every time a **Player** joins the **Room**.  The following **CloudScript** handler will intercept such an **Event**.
+The **Room Joined** handler is invoked every time a **Player** joins the **Room**. The following **CloudScript** handler will intercept such an **Event**.
 
 ```javascript
 // Triggered automatically when a player joins a Photon room
@@ -389,7 +389,7 @@ The example of **args** payload is shown below.
 
 ### Room Left
 
-The **Room Left** handler is invoked every time a **Player** leaves the **Room**.  The following **CloudScript** handler will intercept such **Event**.
+The **Room Left** handler is invoked every time a **Player** leaves the **Room**. The following **CloudScript** handler will intercept such **Event**.
 
 ```javascript
 // Triggered automatically when a player leaves a Photon room

@@ -111,7 +111,7 @@ public class Main
         _running = false; // Because this is just an example, successful login triggers the end of the program
     }
 
-    // This is a utility function we haven't put into the core SDK yet.  Feel free to use it.
+    // This is a utility function we haven't put into the core SDK yet. Feel free to use it.
     private static <RT> String CompileErrorsFromResult(PlayFabResult<RT> result) {
         if (result == null || result.Error == null)
             return null;

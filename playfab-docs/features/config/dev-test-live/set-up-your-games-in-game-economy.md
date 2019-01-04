@@ -145,7 +145,7 @@ It's not much of a **Store** if you only have one thing to sell (that would be t
 
 1. Go to **Economy**, then **Catalogs**.
 2. Select your **main Catalog**.
-3. Then choose **New item** a few times, and create some items.  How about:
+3. Then choose **New item** a few times, and create some items. How about:
     - An **apricot** with **GO** cost of **4**.
     - A **pear** with **GO** cost of **3**.
     - A **grape** with no **GO** cost (don't select any prices).

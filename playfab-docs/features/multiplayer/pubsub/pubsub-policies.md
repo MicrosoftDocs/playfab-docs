@@ -38,7 +38,7 @@ For custom events the process is largely the same, the big difference being that
 
 For now, ignore the check boxes under **PUBLISH** as they currently have no effect.
 
-When you are ready, click **SAVE** to store and enable your new policy.  
+When you are ready, click **SAVE** to store and enable your new policy. 
 
 ## Edit policy
 

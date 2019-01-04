@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Player Segment configuration
 
-The **Segment** configuration page allows you to configure new or existing segments.  You can:
+The **Segment** configuration page allows you to configure new or existing segments. You can:
 
 - Adjust the name.
 - Define the filters.
@@ -36,7 +36,7 @@ To access **Segment** configuration:
 
 ### Prerequisites
 
-Some things must preexist for you to configure a segment.  There must be:
+Some things must preexist for you to configure a segment. There must be:
 
 - Players with and without a distinctive characteristic defined in PlayFab.
 - A defined CloudScript PlayStream hook. 

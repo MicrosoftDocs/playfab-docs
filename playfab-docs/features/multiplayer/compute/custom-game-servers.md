@@ -84,7 +84,7 @@ to
 
 Once your build is ready, it needs to be packaged as a zip file. As with the command line parameters, you will have the opportunity to specify the build path and executable name in the build settings. By default, this is **gameserver.exe** (an executable by this name, at the root of the structure in the zip).
 
-This is the executable which will be called to start the server instance.  It will be monitored throughout the lifetime of the instance, to ensure accurate tracking of available servers.
+This is the executable which will be called to start the server instance. It will be monitored throughout the lifetime of the instance, to ensure accurate tracking of available servers.
 
 It is *also important* to make certain that your server build exits once the last **Player** leaves the session, for two reasons:
 

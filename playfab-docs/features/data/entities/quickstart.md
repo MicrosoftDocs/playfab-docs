@@ -36,7 +36,7 @@ In some regards, these changes are not backwards compatible. However, using them
 - **Character**. 
 
 > [!NOTE]
-> This system is being expanded.  In the future, you will see entity types added to cover **Guilds** or **Groups**, **Game servers**, and more.
+> This system is being expanded. In the future, you will see entity types added to cover **Guilds** or **Groups**, **Game servers**, and more.
 
 Because this is a new API, we are refining some of the terms used in other API methods:
 
@@ -301,7 +301,7 @@ public class EntityFileExample : MonoBehaviour
 - **LoadAllFiles()** will do exactly as it says. For the current logged in entity, load all files saved to PlayFab.
   - This requires multiple steps:
     - Asking PlayFab where the files are located,
-    - Then downloading them separately.  
+    - Then downloading them separately. 
 - UploadFile(string fileName) saves files to the service for the entity.
   - For simplicity, this example saves one file at a time, but files can be uploaded atomically in sets as well.
   - The steps for this are:

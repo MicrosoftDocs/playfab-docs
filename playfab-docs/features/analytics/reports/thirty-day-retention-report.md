@@ -22,7 +22,7 @@ A new **Cohort** of **Players** is formed every day, based on all the **Players*
 
 ![Thirty Day Retention Report](media/tutorials/thirty-day-retention-report-table.png)  
 
-The preceding example report was generated on **1/24/2018**. In our example, it shows that on **12/25/2017**, 1.38M users logged in.  Then:
+The preceding example report was generated on **1/24/2018**. In our example, it shows that on **12/25/2017**, 1.38M users logged in. Then:
 
 - 61.85% of them logged in the *next* day.
 - And 55.85% of them logged in *two days later*.

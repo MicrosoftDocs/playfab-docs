@@ -72,7 +72,7 @@ A **PlayFab** account contains critical, identifying, **Player** data. As an adm
 1. **PlayFab ID** - The **Player ID** identifies the **Player** you are currently inspecting.
 2. **Display name** - Allows you to edit the display name for this **Player**.
 3. **Username** - A read-only field for inspecting the **Player's Username**. **Username** can be empty. When present, it can be used for a **Player** to log in using a **Username** and **Password**.
-4. **Email** - This field is hidden and locked due to **PII** concerns. The **Email** field can be empty. When present, it can be used for **Player** to log in using email and password. You may use the **Lock** icon button to unlock and change the email value.  
+4. **Email** - This field is hidden and locked due to **PII** concerns. The **Email** field can be empty. When present, it can be used for **Player** to log in using email and password. You may use the **Lock** icon button to unlock and change the email value. 
 5. **Change Password** - When set, this can be used to assign a new **Password** for the **User**. This setting is mutually exclusive with **Send password reset email**.
 6. **Send password reset email** - When set, this allows you to send a **password recovery** email when an email value is present. This setting is mutually exclusive with **Change password**.
 7. **Avatar image URL** - This field allows you to force **change avatar** for the **User**.
@@ -89,7 +89,7 @@ Additionally, you can manage linking. Read more about linking in our quickstart 
 
 ## Running CloudScript
 
-The **Run CloudScript** button on the **Player Overview** page opens the **REVISION AND FUNCTION** page shown below.  On the **REVISION AND FUNCTION** screen:
+The **Run CloudScript** button on the **Player Overview** page opens the **REVISION AND FUNCTION** page shown below. On the **REVISION AND FUNCTION** screen:
 
 1. The **Run CloudScript** button - Allows you to access a **Player's CloudScript** settings.
 

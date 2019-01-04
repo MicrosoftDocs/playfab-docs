@@ -58,7 +58,7 @@ You may:
 ![Game Manager - Choose and Upload Files](../../config/dev-test-live/media/tutorials/game-manager-choose-and-upload-files.png)  
 
 - Uploaded **Files** will appear in the list **(1)**.
-- Keep in mind that you may also *manage* **Folders**.  
+- Keep in mind that you may also *manage* **Folders**. 
   - To create a **Folder**, select the **New Folder** button **(2)**.
 
 ![Game Manager - Content - File Management - File List and New Folder](../../config/dev-test-live/media/tutorials/game-manager-content-file-management-file-list-new-folder.png)  
@@ -101,11 +101,11 @@ void PutFile(string presignedUrl, byte[] content, string contentType = "binary/o
 }
 ```
 
-You may then check the result through the **PlayFab Game Manager**.  Make sure the **File** is in the list.
+You may then check the result through the **PlayFab Game Manager**. Make sure the **File** is in the list.
 
 ## Fetching Assets
 
-Downloading the **Asset** via code is identical to uploading the **Asset**.  Again, it is a two step process.
+Downloading the **Asset** via code is identical to uploading the **Asset**. Again, it is a two step process.
 
 1. First, make a call to [GetContentDownloadUrl](xref:titleid.playfabapi.com.client.content.getcontentdownloadurl) and obtain a pre-signed **URL** that will authorize your download.
 2. You then use the  pre-signed **URL** to make a **HTTP GET** request and fetch the data.

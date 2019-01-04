@@ -64,7 +64,7 @@ Create a **Title** in **Game Manager**, and update your environment with your ow
 
 ### Obtaining your TitleId
 
-**TitleId's** are obtained from the **Game Manager**.  If you haven't already, [register for a free **PlayFab** developer account](https://developer.playfab.com/en-us/sign-up), then [login to the **Game Manager**](https://developer.playfab.com/en-us/login).
+**TitleId's** are obtained from the **Game Manager**. If you haven't already, [register for a free **PlayFab** developer account](https://developer.playfab.com/en-us/sign-up), then [login to the **Game Manager**](https://developer.playfab.com/en-us/login).
 
 Once you have logged in, select **Settings**. The **TitleId** for your game should be present in the field below the name.
 

@@ -47,7 +47,7 @@ Please post on our [forums](https://community.playfab.com/questions/ask.html) to
 A **Simplistic Query** is just a **Value** you want to search for. **PlayFab** goes through each property of each **Event** looking for that specific **Value**.
 
 For example, consider the aforementioned **Event** and its **Field** called **StatisticName**.
-This field has the **Value**: **tournamentScore_hourly**.  Let's begin a **Query**:
+This field has the **Value**: **tournamentScore_hourly**. Let's begin a **Query**:
 
 - Using the search field provided, enter **tournamentScore_hourly (1)**.
 - Select the **Run Query** button **(2)**.
@@ -60,7 +60,7 @@ This occurs because **PlayFab** analyzed all the **Events** and found that *this
 > [!IMPORTANT]
 > **PlayFab** supports wildcards and some of the regex expressions.
 
-This means that you may search by part of the **Value**.  In the example shown below:
+This means that you may search by part of the **Value**. In the example shown below:
 
 - Querying **tournamentScore_** in the field **(1)**.
 - Results in no events in the list **(2)**.

@@ -34,7 +34,7 @@ There are three key meters used to bill additional Communications Fabric utiliza
 
 ## Fabric Voice
 
-Usage of voice chat is priced differently if Cognitive Services are enabled. Cognitive Services enables speech-to-text transcription, speech-to-text translation, and text-to-text translation.   
+Usage of voice chat is priced differently if Cognitive Services are enabled. Cognitive Services enables speech-to-text transcription, speech-to-text translation, and text-to-text translation. 
 
 | SKU | $/player-minute speaking |
 | --- | --- |
@@ -45,7 +45,7 @@ In-game chat text messages, even when text-to-text translation or text-to-speech
 
 ## Network egress
 
-At run-time you can specify which Azure region should host your network. This impacts network egress charges.   
+At run-time you can specify which Azure region should host your network. This impacts network egress charges. 
 
 | Zone | Regions | $/GB of Network Egress |
 | --- | --- | --- |

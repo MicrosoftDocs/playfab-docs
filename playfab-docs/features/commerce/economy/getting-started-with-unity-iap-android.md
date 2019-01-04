@@ -295,7 +295,7 @@ public class GooglePurchase {
 
 - Create a new game object called **Code (1)**.
 - Add the **AndroidIAPExample** component to it **(2)** **(3)**.
-- Make sure to save the scene **(4)**.  
+- Make sure to save the scene **(4)**. 
 
 ![UnityIAP create example game object](media/tutorials/create-example-game-object-unity-iap.png)  
 
@@ -313,14 +313,14 @@ Finally, navigate to **Build Settings**.
 
 Finally, build the **Application** as usual, and ensure you have an **APK** safe and sound.
 
-We have no means to test it just yet.  We need to configure **Play Market** and **PlayFab** first, which is described in the following sections.
+We have no means to test it just yet. We need to configure **Play Market** and **PlayFab** first, which is described in the following sections.
 
 ## Setting up a Play Market Application for IAP
 
 This section describes the specifics of how to enable **IAP** for your **PlayMarket Application**.
 
 > [!NOTE]
-> Setting up the **Application** itself is beyond the scope of this tutorial.  We assume you already *have* an application, and that is configured to publish at least **Alpha** releases.
+> Setting up the **Application** itself is beyond the scope of this tutorial. We assume you already *have* an application, and that is configured to publish at least **Alpha** releases.
 
 ![Enable PlayMarket Application](media/tutorials/enable-playmarket-application.png)  
 

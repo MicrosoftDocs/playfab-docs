@@ -34,7 +34,7 @@ Step 2 offers you to **optionally** add versioning, logging, and tagging for you
 
 ![Amazon S3 - Create bucket - enable read/write](media/tutorials/amazon-s3-create-bucket-enable-read-write.png)  
 
-During Step 3, ensure that you have Read/Write access **(1)** for objects. Hit "Next" **(2)**.  
+During Step 3, ensure that you have Read/Write access **(1)** for objects. Hit "Next" **(2)**. 
 
 ![Amazon S3 - Create bucket - check settings](media/tutorials/amazon-s3-create-bucket-check-settings.png)  
 

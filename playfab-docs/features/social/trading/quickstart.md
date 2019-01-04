@@ -43,7 +43,7 @@ void GiveItemTo(string secondPlayerId, string myItemInstanceId) {
 }
 ```
 
-In this example, the **LogSuccess** callback must also evaluate [result.Trade](https://api.playfab.com/documentation/Client/datatype/PlayFab.Client.Models/PlayFab.Client.Models.OpenTradeResponse).**TradeId**, and transfer both **firstPlayFabId** and the **TradeId** to the second **Player**.
+In this example, the **LogSuccess** callback must also evaluate [result.Trade](xref:titleid.playfabapi.com.client.trading.opentrade#opentraderesponse).**TradeId**, and transfer both **firstPlayFabId** and the **TradeId** to the second **Player**.
 
 If not saved, it will not be possible for the second **Player** to evaluate or accept the **Trade**.
 

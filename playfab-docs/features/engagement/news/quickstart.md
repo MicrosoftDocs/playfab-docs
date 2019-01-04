@@ -76,7 +76,7 @@ void ReadTitleNews() {
 ```
 ## Update Title News
 
-The content of a **Title News** entry can only be modified in **Game Manager**.  Locate the entry you wish to modify in **Game Manager**:
+The content of a **Title News** entry can only be modified in **Game Manager**. Locate the entry you wish to modify in **Game Manager**:
 
 - Go to your menu and select **Content**.
 - Go to your **Title News** tab.

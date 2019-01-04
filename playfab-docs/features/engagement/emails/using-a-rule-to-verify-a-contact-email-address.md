@@ -29,7 +29,7 @@ This tutorial walks you through the steps for creating a **Rule** that sends an 
 
 > [!NOTE]
 > Please read up on how to get a **Player profile** in the [Getting Player Profiles](../../data/playerdata/getting-player-profiles.md) tutorial, and make sure that under the **Client Profile Options** on your **Title**, you allow **Contact email addresses**.
-- Creating a **Rule** will be necessary in this tutorial.  It is a good idea to read up on how [Rules](../../automation/actions-rules/playstream-hooks-rules-conditions-and-actions.md) work.
+- Creating a **Rule** will be necessary in this tutorial. It is a good idea to read up on how [Rules](../../automation/actions-rules/playstream-hooks-rules-conditions-and-actions.md) work.
 
 ## Step 1 - Create an Email Template
 

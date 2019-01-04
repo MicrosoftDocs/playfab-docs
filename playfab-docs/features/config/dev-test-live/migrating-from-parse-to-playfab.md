@@ -116,7 +116,7 @@ Using the **Game Manager** you can:
 
 For sending *bulk* messages to many or *all* of your **Players**, we have partnered with **OneSignal**, and have a **OneSignal** add-on coming soon in our marketplace.
 
-For now, you can integrate the **OneSignal SDK** directly in your game.  Once the add-on is complete, **OneSignal** will be integrated directly with **PlayFab Player** segmentation.
+For now, you can integrate the **OneSignal SDK** directly in your game. Once the add-on is complete, **OneSignal** will be integrated directly with **PlayFab Player** segmentation.
 
 ### Analytics and reporting
 
@@ -172,7 +172,7 @@ There is *no* risk to experimenting with our **Parse Player** import, since the 
 - Paste in the exported data **URL** from the email sent by **Parse**.
 - Select **Import User Data**.
 
-  - Migration will proceed in the background.  There is no need to leave **Game Manager** open.
+  - Migration will proceed in the background. There is no need to leave **Game Manager** open.
   - Existing users will be updated with fresh information from the import.
   - If no **User** already exists, one will be created.
 

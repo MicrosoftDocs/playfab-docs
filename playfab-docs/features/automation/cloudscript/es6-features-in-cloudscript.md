@@ -40,7 +40,7 @@ You get ${prizeAmount} coins for your efforts.`;
 
 ## New methods and arrow functions
 
-ES6 brings new syntax for defining functions using the arrow operator `=>`.  The snippet displayed below shows approximate translations for certain operator usages.
+ES6 brings new syntax for defining functions using the arrow operator `=>`. The snippet displayed below shows approximate translations for certain operator usages.
 
 ```javascript
 // The following snippets:

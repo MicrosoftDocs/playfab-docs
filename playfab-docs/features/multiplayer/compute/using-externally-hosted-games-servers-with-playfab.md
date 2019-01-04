@@ -26,7 +26,7 @@ First, it’s important to understand the differences between **PlayFab Game Ser
 
 - Are hosted using **AWS EC2**.
 - Are available in any **AWS EC2 Region**, including the US, Europe, Australia, Singapore, Japan, and others.
-- Can be provisioned using any **EC2** server type.  By default they are **t2.medium**.
+- Can be provisioned using any **EC2** server type. By default they are **t2.medium**.
 - Run **Windows Server 2012 R2**.
 - Automatically spin up/down based on demand and capacity needed.
 - Have **log** and **output** files automatically captured and archived on instance shut-down.
@@ -45,7 +45,7 @@ First, it’s important to understand the differences between **PlayFab Game Ser
 The key limitations with externally hosted servers are imposed by the fact that the **PlayFab Game Wrangler** (the service which manages the server host machines) cannot access the servers directly.
 
 > [!NOTE]
-> You will need to manage your server availability.  Make sure there is always enough capacity available, and provide for saving **log** and **output** files, if desired.
+> You will need to manage your server availability. Make sure there is always enough capacity available, and provide for saving **log** and **output** files, if desired.
 
 ### Setting up External Hosting
 

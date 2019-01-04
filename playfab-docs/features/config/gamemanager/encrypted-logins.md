@@ -34,7 +34,7 @@ In this guide we will:
 The **PlayFab Admin API** exposes a method to manage your **Player Shared Secrets**.
 
 > [!NOTE]
-> Creating a new **Shared Secret** by a certain name will override the existing **Key** with the same name, if any.  In addition, you may have *several* **Shared Secrets** registered under different names.
+> Creating a new **Shared Secret** by a certain name will override the existing **Key** with the same name, if any. In addition, you may have *several* **Shared Secrets** registered under different names.
 
 Run the following code to add a **Player Shared Secret** to your **Title**.
 

@@ -22,9 +22,9 @@ Our goal is to provide you with a technical review of how re-settable statistics
 
 First, it’s important to note that all **Statistics** defined for a **Player** in a game in **PlayFab** are part of a **Leaderboard**. So defining your **Statistics** defines your **Leaderboard** as well.
 
-**Statistics** may not necessarily be visible to **Players**, but they are there.  You can use them to get lists of **Players** by a score you define - whether to find the top of all scores, the bottom, those centered around the current **Player** - or those on a user’s friend list.
+**Statistics** may not necessarily be visible to **Players**, but they are there. You can use them to get lists of **Players** by a score you define - whether to find the top of all scores, the bottom, those centered around the current **Player** - or those on a user’s friend list.
 
-Many **Statistics** in games are intended to be “lifetime” values - meaning that **Players** continually update their scores, with old ones remaining until each **Player** beats his own personal best. However, for some **Player** experiences, it’s important to be able to “wipe” the **Leaderboard** from time to time.  
+Many **Statistics** in games are intended to be “lifetime” values - meaning that **Players** continually update their scores, with old ones remaining until each **Player** beats his own personal best. However, for some **Player** experiences, it’s important to be able to “wipe” the **Leaderboard** from time to time. 
 
 This can be used to encourage users to try to be the top ranked **Player** for a given period, or to simply remove **Players** from the rankings who haven’t been active in a while.
 

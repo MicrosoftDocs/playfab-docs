@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 ## Tutorial Video
 
 > [!NOTE]
-> The audio portion of the following video is currently unavailable.  A new recording is pending and will be available in the immediate future.
+> The audio portion of the following video is currently unavailable. A new recording is pending and will be available in the immediate future.
 
 [HowTo: Use Google SignIn (GPG) + PlayFab (Unity)](https://youtu.be/igup53sdmHg)
 
@@ -215,6 +215,6 @@ There is a callback which will have the results of your login to **PlayFab**. At
 
 ![Google Play Games Sign-In Auth Example](media/tutorials/google-unity/gpg-sign-in-auth-example.png)  
 
-Hopefully, this guide has helped you.  But if you have questions, feel free to ask them in our [community forums](https://community.playfab.com/).
+Hopefully, this guide has helped you. But if you have questions, feel free to ask them in our [community forums](https://community.playfab.com/).
 
 You can download the sample for this tutorial [here](https://s3-us-west-2.amazonaws.com/api-playfab-com-craft-files/FileAssets/GooglePlayGamesSignInExample.zip).

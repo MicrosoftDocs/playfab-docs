@@ -128,7 +128,7 @@ Start by visiting the [Google Play Console page](https://play.google.com/apps/pu
 
 - Assign the **Title**.
 > [!NOTE]
-> In this example, we use **Foo PlayFab App**.  Please make sure to come up with your *own* **Title** and **Package Name** while following this tutorial. 
+> In this example, we use **Foo PlayFab App**. Please make sure to come up with your *own* **Title** and **Package Name** while following this tutorial. 
 - Select the **Create** button to continue.
 
 ![Google Play - Create application](../media/tutorials/google-play-create-application.png)
@@ -229,7 +229,7 @@ Once you open the newly created **Project**:
 - Switch to the **Project** tab **(1)**. 
 
 > [!NOTE]
-> In the previous Chapter, you downloaded the **google-services.json** configuration file from the **Firebase** console.  Use this for your next step.
+> In the previous Chapter, you downloaded the **google-services.json** configuration file from the **Firebase** console. Use this for your next step.
 
 - Verify that this file is placed under the **App** folder **(2)**.
 - Then, navigate to **Tools (3)**.

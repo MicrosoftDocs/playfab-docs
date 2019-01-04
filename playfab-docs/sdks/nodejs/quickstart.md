@@ -72,7 +72,7 @@ function LoginCallback(error, result) {
     }
 }
 
-// This is a utility function we haven't put into the core SDK yet.  Feel free to use it.
+// This is a utility function we haven't put into the core SDK yet. Feel free to use it.
 function CompileErrorReport(error) {
     if (error == null)
         return "";

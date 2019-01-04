@@ -21,7 +21,7 @@ We have restructured the APIs that were lumped under the Entity API group into c
 The following conditions must be true for this upgrade guide to apply to you:
 
 1. You are using the Entity based PlayFab APIs.
-2. You have upgraded to a PlayFab SDK published on 8/9/2018 or later.   
+2. You have upgraded to a PlayFab SDK published on 8/9/2018 or later. 
 
    > [!Note]
    > There are NO service level changes – For example, existing titles using old SDKs will work without requiring changes.

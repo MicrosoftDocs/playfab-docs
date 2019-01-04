@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # PubSub client API
 
-Thi topic explains the technical design behind the Persistent Sockets API in a PlayFab client. Below you will find any dependencies, flow design, and explanation of each API signature required to make a clean Persistent Socket API that can talk to the PlayFab relay service, receive events and subscribe handlers to those events.
+This topic explains the technical design behind the Persistent Sockets API in a PlayFab client. Below you will find any dependencies, flow design, and explanation of each API signature required to make a clean Persistent Socket API that can talk to the PlayFab relay service, receive events and subscribe handlers to those events.
 
 ## Dependencies
 
@@ -21,21 +21,21 @@ Thi topic explains the technical design behind the Persistent Sockets API in a P
 
 ## Design
 
-The API was designed for easy integration. A game client can open a socket (`connect`) and subscribe to topic events (generally PlayStream messages, but not always). Once subscribed to events, messages are sent from the Relay service and are received by the client via the `OnMessageReceived` handler.  This handler is and will remain internal and private to the API. The `OnMessageReceived` handler processes the message. This process is known as the Message Event Dispatcher. It is responsible for looking at the `RegisteredHandlers`, taking the message topic and de-serializing the message into the type registered. Types are an extension of `PlayFabMessageBase` (which we will talk about later) and can have their own de-serialization strategy. Once the message has been successfully de-serialized, the registered handler is invoked thereby dispatching the event to all listed handlers.
+The API was designed for easy integration. A game client can open a socket (`connect`) and subscribe to topic events (generally PlayStream messages, but not always). Once subscribed to events, messages are sent from the Relay service and are received by the client via the `OnMessageReceived` handler. This handler is and will remain internal and private to the API. The `OnMessageReceived` handler processes the message. This process is known as the Message Event Dispatcher. It is responsible for looking at the `RegisteredHandlers`, taking the message topic and de-serializing the message into the type registered. Types are an extension of `PlayFabMessageBase` (which we will talk about later) and can have their own de-serialization strategy. Once the message has been successfully de-serialized, the registered handler is invoked thereby dispatching the event to all listed handlers.
 
 <!--
  !["Persistent Sockets API Diagram"](images/diagram.png "Persistent Sockets API Diagram")
 
-In the diagram below you will observe a flow in which a game client can open a socket connection ( **connect** ) and subscribe to topic events (generally PlayStream messages, but not always).  Once subscribed to events, messages are sent from the Relay service and are received by the client via the **OnMessageReceived** handler.  This handler is and will remain internal and private to the API.   The OnMessageReceived handler processes the message.  This process is known as the Message Event Dispatcher.  It is responsible for looking at the RegisteredHandlers, taking the message topic and deserializing the message into the type registered.  Types are an extension of **PlayFabMessageBase** which (we will talk about later) and can have their own deserialization strategy.  Once the message has been successfully deserialized, the Handler registered is invoked therefore dispatching the event to all listed handlers.
+In the diagram below you will observe a flow in which a game client can open a socket connection ( **connect** ) and subscribe to topic events (generally PlayStream messages, but not always). Once subscribed to events, messages are sent from the Relay service and are received by the client via the **OnMessageReceived** handler. This handler is and will remain internal and private to the API. The OnMessageReceived handler processes the message. This process is known as the Message Event Dispatcher. It is responsible for looking at the RegisteredHandlers, taking the message topic and deserializing the message into the type registered. Types are an extension of **PlayFabMessageBase** which (we will talk about later) and can have their own deserialization strategy. Once the message has been successfully deserialized, the Handler registered is invoked therefore dispatching the event to all listed handlers.
 -->
 
 ## The API methods
 
-- `Initialize(bool autoconnect=false)` – This method of the API initializes the Sockets API and instantiates any Unity specific objects into the scene that need to persist. It also setups the `PlayFabSocketsAPI` as a singleton object that can be referenced from anywhere in game code.   Optionally, we could have an "autoconnect" parameter Boolean that will also auto `Connect` to the relay service upon successful initialization.
+- `Initialize(bool autoconnect=false)` – This method of the API initializes the Sockets API and instantiates any Unity specific objects into the scene that need to persist. It also sets up the `PlayFabSocketsAPI` as a singleton object that can be referenced from anywhere in game code. Optionally, we could have an "autoconnect" parameter Boolean that will also auto `Connect` to the relay service upon successful initialization.
 - `Connect()`  - This method connects to the relay service and stores a reference to the connection. Optionally you can register your `OnConnect`, `OnDisconnect`, and `OnConnectionError` handlers when calling this function. This could be implemented as a method overload.
 - `IsConnected()` - This returns **true** if we are currently connected to the relay hub.
 - `Subscribe(topic, callback, error)` - This method sends a message to the relay service to inform it that this client has registered to receive notifications for the specified topic.
-- `Subscribe(topics, callback, error)` - This method sends a message to the relay service to inform it that this client has registered to receive notifications for the specified topics (one or more topics).  
+- `Subscribe(topics, callback, error)` - This method sends a message to the relay service to inform it that this client has registered to receive notifications for the specified topics (one or more topics). 
 - `UnSubscribe(topic, callback, error)` – This method sends a message to the relay service to inform it that this client should no longer receive notifications for the specified topic.
 - `UnSubscribe(topics, callback, error)` – This method sends a message to the relay service to inform it that this client should no longer receive notifications for the specified topics (one or more).
 - `RegisterHandler(topic, Action<PlayFabNetworkMessage> handler)` - This methods allows the developer to register a handler to a topic from anywhere in their code. Each topic can have multiple handlers invoked, allowing the developer to register to the topic and receive messages in one or more views. By inheriting type `PlayFabNetworkMessage`, the event processor will attempt to de-serialize the message to the type specified. Types should extend `MessageBase` (see below).
@@ -85,8 +85,8 @@ Any persistent socket connection requires some sort of error handling. Connectio
 Trying to reconnect post 15 minutes is unlikely to regain connection. Each attempt will notify the developer via an event that they can subscribe to. In addition, `OnConnectionError` is also fired.
 
 <!--
-**Focus On &amp; Focus Off -** It is possible for a game or app to go to sleep in the background.  This is a huge problem for persistent connections.  The following should happen should a focus on / off event happen.
+**Focus On &amp; Focus Off -** It is possible for a game or app to go to sleep in the background. This is a huge problem for persistent connections. The following should happen should a focus on / off event happen.
 
-- Focus On - If a focus off occurred and we now have a new focus on event, we should check that the connection is still open and valid.  If not we should initiate retry logic.
+- Focus On - If a focus off occurred and we now have a new focus on event, we should check that the connection is still open and valid. If not we should initiate retry logic.
 - Focus Off – Open Question – Should we close the connection and then reopen on focus on?
 -->

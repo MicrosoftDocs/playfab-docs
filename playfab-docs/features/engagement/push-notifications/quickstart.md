@@ -47,7 +47,7 @@ For more detailed setup information, read these tutorials:
 
 **Push Messages** will vary based on the development engine/platform. However, the easiest way to receive push notifications is using a **Unity** project with our SDK and the **Firebase Cloud Messaging (FCM)** plugin for Android, or just **Unity for iOS**.
 
-- **Receiving push on Android** - This requires a plugin.  The best supported plugin is the native FCM plugin.
+- **Receiving push on Android** - This requires a plugin. The best supported plugin is the native FCM plugin.
 - **Receiving push on iOS** - This *does not* require a plugin for basic push messages.
 
 > [!TIP]

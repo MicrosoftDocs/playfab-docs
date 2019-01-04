@@ -189,7 +189,7 @@ To create a **Catalog**:
 1. Select the **Add New Item** button, and then expand the **New Item** to set its properties.
      - Add some properties, such as:
          - **ItemID** (e.g. **shield_level_5**).
-         - **Display Name** (e.g.  **Level 5 Shield**).
+         - **Display Name** (e.g. **Level 5 Shield**).
          - **Description** (e.g. **Strong defense against projectile attacks**).
 1. Set a price by selecting the **Prices** tab and then th **Add** button.
 1. Set the **Currency** to **Gold**, (See [Currencies](../economy/currencies.md)).

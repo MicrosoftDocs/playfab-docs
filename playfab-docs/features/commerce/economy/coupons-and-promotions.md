@@ -82,7 +82,7 @@ The most straightforward way to use **Coupons** is gifting an inventory item. On
 
 However, **Bundles** can be used to convert inventory items seamlessly into groups of items or **Virtual Currency**. In the **VC** example, you should create a new **Bundle** item, with **VC** contents.
 
-Set the **Bundle** to expire in **15 seconds**.  This way, the player will immediately see the **VC** as soon as they open the bundle, and they won't see the intermediate item.
+Set the **Bundle** to expire in **15 seconds**. This way, the player will immediately see the **VC** as soon as they open the bundle, and they won't see the intermediate item.
 
 ![Game Manager - Economy - Edit Catalog Bundle](media/tutorials/game-manager-economy-edit-catalog-bundle.png)  
 

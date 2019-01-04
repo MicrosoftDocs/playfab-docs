@@ -24,7 +24,7 @@ The purpose of this topic is to explain how to quickly get started with using th
 
 ## Installation
 
-The pubsub feature does not come with the PlayFab SDK by default.  You can acquire it via GitHub from our site, or from within the Unity PlayFab Editor Extensions panel.
+The pubsub feature does not come with the PlayFab SDK by default. You can acquire it via GitHub from our site, or from within the Unity PlayFab Editor Extensions panel.
 
 > [!IMPORTANT]
 > **Private preview only.**  While this feature is in [Private Preview](pubsub-private-preview-notes.md), you must be logged into GitHub for the package to download and install correctly.
@@ -162,7 +162,7 @@ Using the pubsub plugin is pretty easy. If you have not looked at our reference 
 
 ## Setup the event
 
-In this example, we are triggering a custom event from a player. The event name is **custom_event_name** and we will increment a statistic **Score** from that custom event and return the result to the player via PubSub.  
+In this example, we are triggering a custom event from a player. The event name is **custom_event_name** and we will increment a statistic **Score** from that custom event and return the result to the player via PubSub. 
 
 1. First we need to create a statistic for Players. This is also known as [Leaderboards](../../social/tournaments-leaderboards/index.md). Click on Leaderboards and create a new leaderboard with the following settings:
 
@@ -219,7 +219,7 @@ In this example, we are triggering a custom event from a player. The event name 
 
 Now you have all the pieces to run and test your code.
 
-1. Run your project in unity.  You should see the following:
+1. Run your project in unity. You should see the following:
 
    !["Console Output"](images/console.png)
 

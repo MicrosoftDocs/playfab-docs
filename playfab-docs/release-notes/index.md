@@ -377,7 +377,7 @@ Date: 2018-03-16
 **New API Methods:**
 
 * admin.[RevokeInventoryItems](xref:titleid.playfabapi.com.admin.playeritemmanagement.revokeinventoryitems) and server.[RevokeInventoryItems](xref:titleid.playfabapi.com.server.playeritemmanagement.revokeinventoryitems)
-* A whole new [Entity API](https://api.playfab.com/documentation/entity)
+* A whole new [Entity API](../features/data/entities/quickstart.md)
 * Many new [Entity PlayStream Events](https://api.playfab.com/playstream/events) (search for "entity" on linked page)
 
 **Most SDKs Updated to support Entity APIs:**

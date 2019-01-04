@@ -39,7 +39,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Getting Started: Developers</h3>
-                                                    <p>Everything you need to know to get started with PlayFab as a developer.  We have everything from step by step guides to copy &amp; paste code to get you well on your way.</p>
+                                                    <p>Everything you need to know to get started with PlayFab as a developer. We have everything from step by step guides to copy &amp; paste code to get you well on your way.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -58,7 +58,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Getting Started: LiveOps</h3>
-                                                    <p>Everything you need to know about how to do LiveOps on the PlayFab Platform.  We have all you need to increase retention and better monetize your game.</p>
+                                                    <p>Everything you need to know about how to do LiveOps on the PlayFab Platform. We have all you need to increase retention and better monetize your game.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -77,7 +77,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Getting Started: Business Intelligence</h3>
-                                                    <p>Everything you need to know about your game’s analytics in PlayFab.  Here you can get started with PlayFab Analytics and gain intelligent insight into your game and players.</p>
+                                                    <p>Everything you need to know about your game’s analytics in PlayFab. Here you can get started with PlayFab Analytics and gain intelligent insight into your game and players.</p>
                                                 </div>
                                             </div>
                                         </div>

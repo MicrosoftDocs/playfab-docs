@@ -74,7 +74,7 @@ Failure to do this step will result in an awkward **Player** experience, where t
 
 So the flow for the various conditions is as follows - and note that in all cases, there's only *one* player account, which does have a recoverable account linked.
 
-**Device1 State**: **Device ID** is bound to the **Player** account.  
+**Device1 State**: **Device ID** is bound to the **Player** account. 
 **Device2 State**: **Device ID** is *not* bound to the **Player** account.
 
 - After signing into the **Player** account on **Device2** (using the recoverable account credentials), make a call to [GetPlayerCombinedInfo](xref:titleid.playfabapi.com.client.accountmanagement.getplayercombinedinfo).
@@ -82,7 +82,7 @@ So the flow for the various conditions is as follows - and note that in all case
 
 Since **Device2** has not yet been linked to this **Player** account, the relevant **Device ID** (**AccountInfo.IosDeviceInfo**, **AccountInfo.AndroidDeviceInfo**, etc.) will not match the **Device2 ID**.
 
-**Device1 State**: **Device ID** is bound to the **Player** account.  
+**Device1 State**: **Device ID** is bound to the **Player** account. 
 **Device2 State**: Logged in with recoverable credentials, but **Device ID** is *not* bound to the **Player** account.
 
 Now that we've verified that **Device2** is not bound to this account, we can try to bind it.
@@ -102,7 +102,7 @@ Use **CloudScript**, or a **PlayStream Event** to record information on abandone
 > [!NOTE]
 > Even something as simple as writing the **PlayFabId** to a cloud-based log file may save an account for a dedicated **Player**.
 
-**Device1 State**: **Device ID** is bound to the **Player** account.  
+**Device1 State**: **Device ID** is bound to the **Player** account. 
 **Device2 State**: **Device ID** is bound to the **Player** account.
 
 At this point, both devices now play on the same account, and both devices can use frictionless login safely.

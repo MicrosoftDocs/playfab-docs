@@ -19,7 +19,7 @@ With **PlayFab**, you usually construct **Leaderboards** using the following **A
 - [GetLeaderboard](xref:titleid.playfabapi.com.client.playerdatamanagement.getleaderboard)
 - [GetLeaderboardAroundPlayer](xref:titleid.playfabapi.com.client.playerdatamanagement.getleaderboardaroundplayer)
 
-The result is a list of [PlayerLeaderboardEntry](https://api.playfab.com/documentation/Client/datatype/PlayFab.Client.Models/PlayFab.Client.Models.PlayerLeaderboardEntry) objects that contain only basic information about the **Player** and their relation to the current **Leaderboard**.
+The result is a list of [PlayerLeaderboardEntry](xref:titleid.playfabapi.com.client.playerdatamanagement.getleaderboard#playerleaderboardentry) objects that contain only basic information about the **Player** and their relation to the current **Leaderboard**.
 
 However, **PlayFab** also allows you to use [PlayerProfileViewConstraints](xref:titleid.playfabapi.com.server.accountmanagement.getplayerprofile#playerprofileviewconstraints) to gain additional information about each **Player**.
 

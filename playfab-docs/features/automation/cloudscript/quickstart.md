@@ -81,7 +81,7 @@ If you commit *multiple* files, they will be concatenated together into a single
 
 **CloudScript** allows you to upload files to **PlayFab**, and execute your code on our server. 
 
-You can manage your **CloudScript** files from the **Automation** option in the left side bar.  You can upload files manually from your own computer, or bind your title to a **GitHub** account.
+You can manage your **CloudScript** files from the **Automation** option in the left side bar. You can upload files manually from your own computer, or bind your title to a **GitHub** account.
 
 This quickstart covers managing your code files and uploading them to **PlayFab**.
 

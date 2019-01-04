@@ -42,7 +42,7 @@ Please note the following information about Stores and Currencies
 
 - **Zero Cost**: If a cost is unset (**null**) or **zero**, it cannot be purchased using that currency. This is true for both **Catalogs** and **Stores**. You can make items available for exclusively free currencies, or exclusively premium currencies by leaving entries blank, or resetting them to **zero**.
 
-- **Real Money**: The **RM** currency is available in all **Catalogs** and **Stores**.  **RM** is a restricted currency key that indicates *real money transactions only*. You should only charge **RM** for items of significant value, or **Bundles**/**Containers** which contain premium currency.
+- **Real Money**: The **RM** currency is available in all **Catalogs** and **Stores**. **RM** is a restricted currency key that indicates *real money transactions only*. You should only charge **RM** for items of significant value, or **Bundles**/**Containers** which contain premium currency.
 
 - **Prices are Either/Or**: If two prices are defined on an item, the item can be purchased for one or the other. It is *not possible* to require two currencies for a single item.
 

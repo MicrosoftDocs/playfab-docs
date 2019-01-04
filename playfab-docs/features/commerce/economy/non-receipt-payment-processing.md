@@ -62,7 +62,7 @@ From the client, the sequence of calls for this process are very similar for mos
 > [!NOTE]
 > The exception to this is **Xsolla**, which we'll address separately at the end of this tutorial.
 
-In the examples that follow, you’ll see fields like **{{TitleID}}** and **{{SessionTicket}}**.  You will need to replace these values in your own code with the appropriate values for your game, and the player’s authentication ticket.
+In the examples that follow, you’ll see fields like **{{TitleID}}** and **{{SessionTicket}}**. You will need to replace these values in your own code with the appropriate values for your game, and the player’s authentication ticket.
 
 ## Initiating the Purchase
 
@@ -147,7 +147,7 @@ But the key things you’ll need for the next step are the **OrderId**, which un
 
 Normally, the flow at this point is to tell PlayFab which payment provider will be used, so that the service can communicate with that provider and set up the information about the transaction.
 
-**Facebook** is an exception to this procedure.  It requires that the purchase be initiated in *their* service *first*. After that, a third-party service such as **PlayFab** can use the **Facebook**-provided transaction identifier to validate the status of the purchase.
+**Facebook** is an exception to this procedure. It requires that the purchase be initiated in *their* service *first*. After that, a third-party service such as **PlayFab** can use the **Facebook**-provided transaction identifier to validate the status of the purchase.
 
 If your **Store**, **Catalog**, or **Item IDs** are not alpha-numeric, they must be [HTML / URL encoded](https://www.w3schools.com/tags/ref_urlencode.asp) when building the **OpenGraphProduct** URL shown in the following code.
 
@@ -253,7 +253,7 @@ PlayFabClientAPI.PayForPurchase(new PayForPurchaseRequest() {
 });
 ```
 
-As a result of the **PayForPurchase** call, **PlayFab** uses the web methods provided by **Steam** to initiate the purchase in that service.  This automatically causes the user to be presented with the purchase confirmation dialog via the **Steam Client**.
+As a result of the **PayForPurchase** call, **PlayFab** uses the web methods provided by **Steam** to initiate the purchase in that service. This automatically causes the user to be presented with the purchase confirmation dialog via the **Steam Client**.
 
 So at the same time you’re getting the response to the **Client/PayForPurchase** call, the user is being asked to accept the payment.
 
@@ -332,7 +332,7 @@ PlayFabClientAPI.ConfirmPurchase(new ConfirmPurchaseRequest() {
 });
 ```
 
-At this point, if the order has been completed successfully, we iterate through the items in the **Cart** you set up with the call to **Client/StartPurchase**.  This adds the items to the player's inventory and returns the information about the items purchased to the **Title**.
+At this point, if the order has been completed successfully, we iterate through the items in the **Cart** you set up with the call to **Client/StartPurchase**. This adds the items to the player's inventory and returns the information about the items purchased to the **Title**.
 
 ```json
 {
@@ -362,7 +362,7 @@ Behind the scenes, there are a number of **State** changes the order goes throug
 
 - **Init** - As shown above, this is the **Status** returned when the **Order** has been submitted to payment provider, but has not yet been authorized by the player.
 - **Approved** - This occurs briefly, after the player has approved the payment, but before **PlayFab** has completed the process of placing the items in the player inventory. *It is only included in this list for completeness, as titles should never see an **Order** with this **Status***.
-- **Succeeded** - This indicates that the order has been completed successfully.  The player has approved the payment, and all inventory items have been added to that player's inventory.
+- **Succeeded** - This indicates that the order has been completed successfully. The player has approved the payment, and all inventory items have been added to that player's inventory.
 - **FailedByProvider** - If for any reason the provider rejects the payment (which includes the player declining the payment), the **Order** is considered failed by the provider.
 - **DisputePending** - The payment provider has notified **PlayFab** of a dispute on the payment that is unresolved.
 - **RefundPending** - A payment provider has notified **PlayFab** that a refund request has been issued. At this stage, the refund has not actually occurred.
