@@ -48,7 +48,6 @@ Similar to **Automatic Events**, **Custom Events** are fully reflected through [
 - **EntityType**
 - **EntityID**
 
-
 ### Relevant API Calls
 
 - [WritePlayerEvent](xref:titleid.playfabapi.com.client.analytics.writeplayerevent)
