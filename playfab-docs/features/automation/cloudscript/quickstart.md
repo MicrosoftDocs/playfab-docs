@@ -25,7 +25,7 @@ Please note the following when reading this:
 
 - You should be familiar with the basics of **PlayFab**.
 - The **C#** samples shown correspond to using the **PlayFab Unity SDK**.
-- **JavaScript** samples correspond to using the **PlayFab CloudScript service**.
+- **JavaScript** samples correspond to using the **PlayFab CloudScript** service.
 
 ## Your first CloudScript Revision
 
@@ -35,54 +35,43 @@ To see these functions:
 
 - Open [Game Manager](https://developer.playfab.com/).
 - Select your **Title**.
-- Then select **Automation** in the menu to the left.
+- Select **Automation** on the left side bar.
 
-You should see a number of **CloudScript** methods, such as **helloWorld**, which logs the message **Hello PLAYERID**, where **PLAYERID** is the current **Player's PlayFab ID**.
+You should see a number of **CloudScript** methods, such as **HelloWorld**, which logs the message **Hello PLAYERID**, where **PLAYERID** is the current **Player's PlayFab ID**.
 
 ![Game Manager - Automation - CloudScript](media/tutorials/game-manager-cloudscript.png)  
 
-## Uploading your own Revisions
+## Uploading your own revisions
 
-You can upload your own custom methods via the **Game Manager**. Each file you upload will create a *new* **Revision**.
+You can upload your own custom methods via the **Game Manager**. Each file you upload will create a new revision. During the upload, the **PlayFab** service runs a simple **LINT** check over your **CloudScript** for syntax errors.
 
-During the upload, the **PlayFab Service** runs a simple **LINT** check over your **CloudScript** for syntax errors. If it finds an error:
+If it finds an error, an error message will be displayed. Fix the error, and select **SUBMIT** again. By default, new uploads must deployed by selecting the **DEPLOY REVISION # TO LIVE** link. This enables you to update or roll back to/from multiple versions of **CloudScript**.
 
-- An **Error** message will be displayed.
-- Fix the error.
-- Then select **SUBMIT** again.
-
-By default, new uploads must deployed by selecting the **DEPLOY REVISION # TO LIVE** link. This enables you to update or roll back to/from multiple versions of **CloudScript**.
-
-The first time you select the **UPLOAD NEW REVISION** button, you will see a file selector where you can upload a file from your local machine.
+The first time you press the orange **UPLOAD NEW REVISION** button, you will see a file selector where you can upload a file from your local machine.
 
 ![Game Manager - Upload CloudScript file](media/tutorials/game-manager-upload-cloudscript.png)  
 
-After you have added several **Revisions**, you can select which submitted **Revision** is **Live** by using the dropdown provided (see below).
-
+After you have added several revisions, you can select *which* submitted revision is live with the drop-down.
 ![Game Manager - Upload CloudScript - select revision](media/tutorials/game-manager-cloudscript-select-revision.png)  
 
 ## GitHub integration
 
-You may also use **GitHub** to manage your **CloudScript Revisions**. You must have a **GitHub** account, and you must be logged in.
+You may also use **GitHub** to manage your **CloudScript** revisions. You must have a **GitHub** account, and you must be logged in.
 
-- Select the **USE GITHUB** button (see the previous screenshot).
-- The next window will have an **AUTHORIZE GITHUB ACCOUNT** button.
-- Create a new, *empty* repository in **GitHub**.
-- Return to the **GitHub** page in the **PlayFab Game Manager** (refresh the tab).
-- At this point, you should be able to select your **GitHub Repository** and bind it to your **Title**.
+- Select the **USE GITHUB** button (the grey button in the previous screenshot).
+- The next window will have an orange **AUTHORIZE GITHUB ACCOUNT** button.
+- Create a new, empty repository in **GitHub**.
+- Return to the **GitHub** page in the **PlayFab Game Manager** (refresh tab).
+- At this point, you should be able to select your **GitHub** repository and bind it to your **Title**.
 
 ![Game Manager - Addons - GitHub](media/tutorials/game-manager-addons-github.png)  
 
-Once bound to **GitHub**, the manual upload option is removed, and new **CloudScript Revisions** are automatically made for each **GitHub** commit to **Master** branch.
+Once bound to **GitHub**, the manual upload option is removed, and new **CloudScript** revisions are automatically made for each **GitHub** commit to the **"master"** branch. 
 
-If you commit *multiple* files, they will be concatenated together into a single **PlayFab CloudScript Revision**. **Live Revision** selection remains the same - new commits to **GitHub** must be set to **Live** in **Game Manager** as described above.
+If you commit *multiple* files, they will be concatenated together into a single **PlayFab CloudScript** revision. Live revision selection remains the same: new commits to **GitHub** must be set to live in **Game Manager** as described above.
 
 ## Conclusion
 
-**CloudScript** allows you to upload files to **PlayFab**, and execute your code on our server. 
+**CloudScript** allows you to upload files to **PlayFab**, and execute your code on our server. You can manage your **CloudScript** files from the **Automation** option in the left side bar.  You can upload files manually from your own computer, or bind your title to a **GitHub** account.
 
-You can manage your **CloudScript** files from the **Automation** option in the left side bar. You can upload files manually from your own computer, or bind your title to a **GitHub** account.
-
-This quickstart covers managing your code files and uploading them to **PlayFab**.
-
-If you have more questions, the [Writing custom CloudScript](writing-custom-cloudscript.md) tutorial explains more about how to write your **CloudScript** code files.
+This **quickstart** covers managing your code files and uploading them to **PlayFab**. If you have more questions, the [Writing custom CloudScript](writing-custom-cloudscript.md) tutorial explains more about how to write your **CloudScript** code files.

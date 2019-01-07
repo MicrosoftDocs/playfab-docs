@@ -87,12 +87,11 @@ void GetUserData() {
 ```
 
 ## Setting Read-only Player Data
-
 This is data that the server can modify, but the **Client** can only read. To set **Read-Only KVPs**, you must call the [UpdateUserReadOnlyData](ref:titleid.playfabapi.com.server.playerdatamanagement.updateuserreadonlydata) **API** from a server process.
 
 ### C# Code Example
 
-The following **server-SDK C#** code example creates (or updates, if the **KVPs** already exist) the **KVPs** with the **Key: Father** and the **Value: Fred**, **Mother** with the **Value: Alice**, **Sister** with the **Value: Lucy**, and **Brother** with the **Value: Doug**.
+The following **C#** code example uses the **PlayFab Server API** to create (or update, if the **KVPs** already exist) the **KVPs** with the **Key: Father** and the **Value: Fred**, **Mother** with the **Value: Alice**, **Sister** with the **Value: Lucy**, and **Brother** with the **Value: Doug**.
 
 ```csharp
 public void UpdateUserReadOnlyData() {
@@ -146,7 +145,7 @@ This is data that the **Client** cannot access. To set internal **Player** data,
 
 ### C# code example
 
-The following **server-SDK C#** code example creates (or updates, if a **Key Value** already exists) the **KVP** with the **Key: Rank** and **Value: Sargent**.
+The following **C#** code example uses the **PlayFab Server API** to create (or update, if a **Key Value** already exists) the **KVP** with the **Key: Rank** and **Value: Sargent**.
 
 ```csharp
 public void UpdateUserInternalData() {

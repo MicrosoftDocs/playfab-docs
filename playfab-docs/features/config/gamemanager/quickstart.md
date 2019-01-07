@@ -42,14 +42,13 @@ The current **Title** and **User** can be found in the top right of your screen.
 Once you have an account, you can select a **Title** (either the one we created, or one of your own) to follow along. Each **Title** has its own **Game Manager**, which covers the following sections:
 
 - **Dashboard** - An overview of the performance of your title.
-
 - **Players** - **Settings** and **Data** pertaining to your individual players, including player segmentation.
 - **Economy** - **Settings** and **Data** pertaining to virtual items, stores, currencies and **Loot** distribution, and coupons.
-- **Leaderboards** - Configures leaderboard settings, and view current rankings.
-- **Multiplayer** - Configures server hosting, and viewing of match records.
-- **Content** - Manages the content for your game - including news, remote configuration, and files.
-- **Automation** - Features the server-side logic for your game - including scriptings, rules, and tasks. Sets trigger actions, based on the events from your title.
-- **Analytics** - Displays reports and event data for your game, and configures how data is routed to other systems.
+- **Leaderboards** - Configure leaderboard settings, and view current rankings.
+- **Multiplayer** - Configure server hosting, and view match records.
+- **Content** - Manage the content for your game - including news, remote configuration, and files.
+- **Automation** - Configure the server-side logic for your game - including scriptings, rules, and tasks. Trigger actions based on the events from your title.
+- **Analytics** - View reports and event data for your game, and configure how data is routed to other systems.
 - **Add-ons** - This is the control center for managing partner integrations.
 - **Settings** - Displays the **Settings** and **Data** pertaining to the selected title.
 - **Admin** - Contains the **Billing** and **Audit** history.
@@ -66,7 +65,6 @@ The **Credentials** tab provides basic information that you will use to configur
 Your Credentials include:
 
 - **Game Title ID**: The unique identifier for your title in the PlayFab system.
-
 - **PlayFab API Endpoint**: The unique base URI for your title. API calls to this endpoint are tracked in your title reports.
 - **PlayFab API Secret Key**: The unique identifier for your game when making **Admin** and **Server API** calls. This key should *only* be shared with trusted members of your development team, since it enables API calls that can affect game data and player accounts.
 - **Publisher ID**: The unique identifier for your studio.
@@ -84,106 +82,107 @@ The Dashboard displays your basic game statistics and **Key Performance Indicato
 You can see data for previous months in the [Reports Section](#reports).
 
 > [!NOTE]
-> In Game Manager, all times are displayed in local time.
+> In **Game Manager**, all times are displayed in local time.
 
 ![Game Manager - Dashboard](media/tutorials/game-manager-dashboard.png)
 
-Monitor your title **KPI**s and watch your **PlayStream** events in real time.
+Monitor your **Title's KPIs** and watch your **PlayStream Events** in real time.
 
-The dashboard has six sections. Left to right, top to bottom they include:
+The dashboard has six sections. Left to right, top to bottom they are the following.
 
 1. **LOGIN**: The number of logins recorded for the selected time-span.
-
-1. **INSTALL**: The number of accounts created (players logging in for the very first time) for the selected time-span.
-1. **REVENUE**: The USD value of real-money transactions processed for the selected time-span.
-1. **MONTH OVERVIEW**: Useful **KPI**s pulled from the month-to-date data:
-    - **Revenue**: The USD value of real-money transactions processed.
-    - **DAU (Daily Active Users)**: The average number of unique players logging in per day.
-    - **MAU (Monthly Active Users)**: the average number of unique players logging in per month.
-1. **PLAYSTREAM DEBUGGER**: Displays the title events as they are generated in real-time.
-1. **VIRTUAL CURRENCY TRANSACTIONS**: The number of virtual currency transactions recorded for the selected time-span.
+2. **INSTALL**: The number of accounts created (**Players** logging in for the very first time) for the selected time-span.
+3. **REVENUE**: The USD value of real money transactions processed for the selected time-span.
+4. **MONTH OVERVIEW**: Useful **KPIs** pulled from the month-to-date data
+    - **Revenue**: the USD value of real-money transactions processed
+    - **DAU (Daily Active Users)**: the average number of unique **Players** logging in per day
+    - **MAU (Monthly Active Users)**: the average number of unique **Players** logging in per month
+5. **PLAYSTREAM DEBUGGER**: Will display **Title** events as they are generated in real time.
+6. **VIRTUAL CURRENCY TRANSACTIONS**: The number of **Virtual Currency** transactions recorded for the selected time span.
 
 [Back to Game Manager Sections](#game-manager-sections)
 
-### PlayStream
+### 3. PlayStream
 
-This section houses the control panel for everything that is **PlayStream**. Here you will find a graph of the **PlayStream** activity (filtered for the selected time-span). The **Playstream Debugger** (as in other sections) displays **Title** events as they are generated in real-time.
+This section houses the control panel for everything that is **PlayStream**. Here you will find a graph of the **PlayStream** activity (filtered for the selected time-span).
+
+The stream debugger (like in other sections) displays **Title Events** as they are generated in real time.
 
 ![Game Manager - PlayStream](media/tutorials/game-manager-playstream.png)
 
 Use the sampling controls to gather more or less events per second.
 
-**PlayStream** is our latest and greatest addition to the PlayFab platform. More information will be coming soon on what actions you can do with **PlayStream**.
+**PlayStream** is our latest and greatest addition to the **PlayFab** platform. More information will be coming soon on what actions you can do with **PlayStream**.
 
 [Back to Game Manager Sections](#game-manager-sections)
 
-### Players
+### 4. Players
 
-The **Players** tab presents you with a sorted list by most recent login. Selecting any of the records will take you to that player's overview. Using the **Search** box you can easily locate players by **ID**, **Username**, **Display Name**, or **email**.
+The **Players** tab presents you with a sorted list by most recent login. Selecting any of the records will take you to that **Player's** overview.
+
+Using the **SEARCH** box, you can easily look for players by **ID**, **Username**, **Display Name**, or **Email**.
 
 ![Game Manager - Players Tab](media/tutorials/game-manager-players-tab.png)
 
 #### Player Overview
 
-This detailed screen provides a wealth of insight into the player's activity. The **Overview** sub-menu contains many links to other player-centric information:
+This detailed screen provides a wealth of insight into the **Player's** activity. The **Overview** sub-menu contains many links to other **Player**-centric information.
 
 ![Game Manager - Player - Overview](media/tutorials/game-manager-player-overview.png)
 
-It offers tools your team can use to remedy defrauded players and identify potential abusers.
+Tools your team can use to remedy defrauded **Players** and identify potential abusers.
 
 - **Overview**- View basic details and linked account status.
-- **PlayStream**- View player generated events.
-- **Logins**- View player login history.
-- **Segments**- View which segments this player has entered.
-- **Statistics**- View and edit player statistics.
-- **Data**- View and edit player data records.
-- **Inventory**- View, grant, and revoke ItemInstances.
-- **Purchases**- View this player's real-money purchase history.
+- **PlayStream**- View **Player** generated events.
+- **Logins**- View **Player** login history.
+- **Segments**- View which segments this **Player** has entered.
+- **Statistics**- View and edit **Player** statistics.
+- **Data**- View and edit **Player** data records.
+- **Inventory**- View, grant, and revoke **ItemInstances**.
+- **Purchases**- View this **Player's** real money purchase history.
 - **Virtual Currency**- View and edit player **Virtual Currency** (**VC**) balances.
-- **Characters**- View player owned characters and edit basic details.
-- **Multiplayer**- View player match history from multiplayer sessions.
-- **Bans**- View player ban history.
+- **Characters**- View **Player** owned characters and edit basic details.
+- **Multiplayer**- View **Player** match history from multiplayer sessions.
+- **Bans**- View **Player Ban** history.
 
 #### Leaderboards
 
-**Leaderboards**, the second tab, displays all the active **Leaderboards** for your **Title**.
-
- PlayFab **Leaderboards** are driven by your players' statistics. Selecting a statistic will display the corresponding leaders.
+**Leaderboards**, the second tab, displays all the active **Leaderboards** for your **Title**. **PlayFab Leaderboards** are driven by  **Players** statistics. Selecting a statistic will display the corresponding leaders.
 
 ![Game Manager - Players - Leaderboards](media/tutorials/game-manager-player-leaderboards.png)
 
-Selecting a player name will take you to that player's overview.
+Selecting a **Player Name** will take you to that **Player's** overview.
 
-The **Leaderboard reset frequency** controls when one **season** begins and another ends. Our **Leaderboards** can optionally to reset themselves **hourly**, **daily**, **weekly** and **monthly**. 
+The **Leaderboards** reset frequency controls when one "season" begins and another ends. Our **Leaderboards** can optionally to reset themselves **hourly**, **daily**, **weekly** and monthly.
 
-Selecting the orange **EDIT LEADERBOARD** button allows you to edit your **Leaderboard** name, as well as the reset frequency.
+Selecting the orange **EDIT LEADERBOARD** button allows you to edit your **Leaderboards's** name as well as the reset frequency.
 
 **Additional Information:**
 
-- [Using resettable statistics and leaderboards](../../social/tournaments-leaderboards/using-resettable-statistics-and-leaderboards.md)
+- [Using resettable statistics and Leaderboards](../../social/tournaments-leaderboards/using-resettable-statistics-and-leaderboards.md)
 
 [Back to Game Manager Sections](#game-manager-sections)
 
-### Economy
+### 5. Economy
 
-At the center of PlayFab Economies is the concept of **Catalogs**. 
+At the center of **PlayFab Economies** is the concept of **Catalogs**. 
 
-**Catalogs** are a collection of **items**, **currencies**, **stores**, and **droptables**. This section provides all the tools needed to manage your game's virtual economy.
+**Catalogs** are a collection of **Items**, **Currencies**, **Stores**, and **Droptables**. This section provides all the tools needed to manage your game's virtual economy.
 
-As an example, the image provided below displaysshows Unicorn Battle's primary catalog.
+As an example, the following image shows **Unicorn Battle's** primary **Catalog**.
 
 ![Game Manager - Economy - Catalogs](media/tutorials/game-manager-economy-catalogs.png)
 
-- **Catalog Items** - An item within the catalog. Items can be of several different types.
+- **Catalog Items** - An **Item** within the **Catalog**. **Items** can be of several different types.
 - **Virtual Currencies** - Arbitrary trackers for the mediums that can be exchanged for **Catalog Items**.
 - **Stores**- A subset of **Catalog Items** that can be set to prices that are different than those specified by the **Catalog**.
-- **Drop Tables** - Control the item distribution when players open containers and bundles.
+- **Drop Tables** - Control the **Item** distribution when **Players** open **Containers** and **Bundles**.
 
 ![Game Manager - Economy - Catalogs - Edit Container](media/tutorials/game-manager-economy-catalogs-edit-container.png)
 
-Selecting any **Catalog Item** opens a detailed editor for the item properties.
+Selecting any **Catalog Item** opens a detailed editor for the **Item** properties.
 
-The example displayed below shows the **Edit Currency** page for the Unicorn Battle's VC called **Hearts**. The settings show that it is being used as a "lives" mechanic that regenerates every hour.
+The following example shows the **Edit Currency** page for the **Unicorn Battle's VC** called **Hearts**. The settings show that it is being used as a "lives" mechanic that regenerates every hour.
 
 ![Game Manager - Economy - Catalogs - Edit Container](media/tutorials/game-manager-economy-catalogs-edit-container.png)
 
@@ -194,9 +193,9 @@ The example displayed below shows the **Edit Currency** page for the Unicorn Bat
 
 [Back to Game Manager Sections](#game-manager-sections)
 
-### Servers
+### 6. Servers
 
-PlayFab works with many architectures and game types. Whether you are looking to hosting multi-player matches, or just need a secure environment that can reduce many common forms of hacking and abuse.
+**PlayFab** works with many architectures and game types. Whether you are looking to hosting multiplayer matches, or just need a secure environment that can reduce many common forms of hacking and abuse.
 
 ![Game Manager - Servers - CloudScript](media/tutorials/game-manager-servers-cloudscript.png)
 
@@ -205,8 +204,7 @@ PlayFab works with many architectures and game types. Whether you are looking to
 The servers section of the **Game Manager** has two major roles:
 
 1. The main interface for uploading **CloudScript** files.
-
-1. A control panel for your hosted multiplayer servers.
+2. A control panel for your hosted multiplayer servers.
 
 **Additional Information:**
 
@@ -215,183 +213,165 @@ The servers section of the **Game Manager** has two major roles:
 
 [Back to Game Manager Sections](#game-manager-sections)
 
-### Promotions
+### 7. Promotions
 
-The **Promotions** section offers tools for engaging with your players.
+The **Promotions** section offers tools for engaging with your **Players**.
 
-The example provided below shows the active news articles within Unicorn Battle.
+The following example shows the active news articles within **Unicorn Battle**.
 
 ![Game Manager - Promotions - Title News](media/tutorials/game-manager-promotions-title-news.png)
 
 [Back to Game Manager Sections](#game-manager-sections)
 
-### Add-ons
+### 8. Add-ons
 
-We have many great vendors that each bring something unique to the table. We could tell you all about it here, but its better if you see it for yourself.
+We have many great vendors, and each one brings something unique to the table. We could tell you all about it here, but its better if you see it for yourself.
 
-To configure marketplace integrations for your title:
-
-- Explore the **Add-ons** tab of the **Game Manager** for details on the various add-ons
+- To configure marketplace integrations for your **Title**: Explore the **Add-ons** section of the **Game Manager** for details on the various **Add-ons**.
 
   ![Game Manager - Add-ons - Partner Add-ons](media/tutorials/game-manager-add-ons-partner-add-ons.png)
 
-> [!NOTE]
-> Setup instructions for each **Add-on** may vary. Additional billing information may also be required.
+Setup instructions for each **Add-on** may vary. Additional billing information may also be required.
 
 [Back to Game Manager Sections](#game-manager-sections)
 
-### Reports
+### 9. Reports
 
-PlayFab generates reports that capture daily and monthly activity. Currently, there are 3 reports available to all developers:
+**PlayFab** generates reports that capture daily and monthly activity. Currently, there are three reports available to all developers:
 
-- **Daily Overview Report**: Reports the daily **KPI**s for your title.
-- **Monthly Overview Report**: Reports the aggregated KPIs for the month.
-- **Monthly Top Spender Report**: Reports the top paying players for the month.
+- **Daily Overview Report**: Reports the daily **KPIs** for your **Title**.
+- **Monthly Overview Report**: Reports the aggregated **KPIs** for the month.
+- **Monthly Top Spender Report**: Reports the month's top paying **Players**.
 
 ![Game Manager - Reports](media/tutorials/game-manager-reports.png)
 
-For additional or custom reports, please open a Feature Request in our [community forums](https://community.playfab.com/spaces/24/index.html).
+For additional or custom reports, please open a **Feature Request** in our [community forums](https://community.playfab.com/spaces/24/index.html).
 
 [Back to Game Manager Sections](#game-manager-sections)
 
 ## Basic Actions
 
-### Editing Profile Settings
+### Editing Profile settings
 
-1. Open the **Admin** menu by selecting the current user. Then select **Edit profile**.
-2. At this location you can specify **Your name**, set a **Password**, add a **Phone number**, set your **Time zone**, and specify whether you want to enable two-factor authentication.
-3. Use the **Save profile** button to save your changes and return to the **Studios** page.
+1. Open the **Admin** menu by selecting the current **User**.
+2. Then select **Edit Profile**.
+3. Specify **Your Name**, a **Password**, add a **Phone number**, set your **Time zone**, and specify whether you want to enable **Two-Factor Authentication**.
+4. Select the **Save Profile** button to save your changes and return to the studios page.
 
 ![Game Manager - Edit Profile](media/tutorials/game-manager-edit-profile.png)
 
-- **Two-factor authentication** - Two-factor authentication improves the security of your developer accounts by requiring a code to be supplied when logging in.
+- **Two-Factor Authentication** - Two-factor authentication improves the security of your developer accounts by requiring a code to be supplied when logging in.
 
-### View PlayFab Notifications
+### View PlayFab notifications
 
 New notifications will be called out with a pink delimiter containing the number of new notifications.
 
 ![Unicorn Battle - Notifications indicator](media/tutorials/unicorn-battle-notifications-indicator.png)
 
-1. Open the **Admin** menu by selecting the current user.
-1. Then select **News**.
-
-1. View the published notifications.
+1. Open the **Admin** menu by selecting the current **User**. Then select **News**.
+2. View the published notifications.
 
 ![Game manager - Published Notifications](media/tutorials/game-manager-published-notifications.png)
 
-Notifications include information on new features, API updates, and service outages.
+Notifications include information on new features, **API** updates, and service outages.
 
 ### Create and Edit Studios and Titles
 
-#### To add a new studio
+#### To add a new Studio
 
-1. Select the orange **NEW STUDIO** button in the top right of the studios page.
+1. Select the orange **NEW STUDIO** button in the top right of the **Studios** page.
+2. Enter a **Studio Name**.
+3. Save your changes and return to the **Studios** page.
 
-1. Enter a studio name.
-
-1. Save your changes and return to the **Studios** page.
-
-#### To edit an existing studio
+#### To edit an existing Studio
 
 ![Game manager - Edit Studio](media/tutorials/game-manager-edit-studio.png)
 
-1. Select the down-arrow next to the name of your studio.
-1. Selet **Edit studio**.
-1. Make your edits.
-1. Save your changes and return to the **studios** page.
+1. Select the down-arrow next to your **Studio's Name**, and then select **Edit Studio**.
+2. Make your edits.
+3. Save your changes and return to the **Studios** page.
 
-#### To add a new title
+#### To add a new Title
 
 ![Game manager - Create a new game](media/tutorials/game-manager-create-a-new-game.png)
 
-1. Select the **Create a new game** button under your existing titles.
-2. Enter your title details (as an option, this information can be added after title creation).
+1. Select the **Create a new game** button under your existing **Titles**.
+2. Enter your **Title** details. Optionally, this information can be added after **Title** creation.
 3. Save your changes and return to the **Studios** page.
 
-#### To edit an existing title
+#### To edit an existing Title
 
 ![Game manager - Edit game](media/tutorials/game-manager-edit-game.png)
 
-1. Select the down-arrow next to the title you wish to edit.
-1. Select **Edit game**.
-1. Make your edits.
-1. Save your changes and return to the **Studios** page.
-    - **Title** - An individual instance of a game within PlayFab.
-    - **Studio** - A group of titles that can share data and developer access.
+1. Select the down-arrow next to the **Title** you wish to edit and select **Edit game**.
+2. Make your edits.
+3. Save your changes and return to the **Studios** page.
+    - **Title** - An individual instance of a game within **PlayFab**.
+    - **Studio** - A group of **Titles** that can share data and developer access.
 
-### Manage Developer Accounts
+### Manage Developer accounts
 
-Developer accounts are special PlayFab accounts permitting access to one or more sections on one or more titles of a given studio.
+**Developer** accounts are special **PlayFab** accounts permitting access to one or more sections on one or more **Titles** of a given **Studio**.
 
 ![Game manager - PlayFab Demo Studio](media/tutorials/game-manager-playfab-demo-studio.png)
 
-1. Select the down-arrow next to the name of your studio.
-1. Select **Manage users**.
-1. Add developer accounts using the orange **NEW USER** button in the top right.
-1. Remove developer accounts by checking the box next to the account and then selecting the **X DELETE** link in the top-left, above the user table.
+1. Select the down-arrow next to your **Studio's Name**, and then select **Manage Users**.
+2. Add **Developer** accounts using the orange **NEW USER** button in the top right.
+3. Remove **Developer** accounts by checking the box next to the account, and then selecting the **X DELETE** link in the top-left, above the **User** table.
 
-> [!NOTE]
-> If you do not *already* have a PlayFab developer account, an email will be sent to the address you provided. Upon confirmation, the new account will have access to the title.
+If you do not already have a **PlayFab Developer** account, an email will be sent to the address you provided. Upon confirmation, the new account will have access to the **Title**.
 
-## Settings Actions
+## Settings actions
 
 ### Toggle API Features
 
-The **API Features** tab provides optional permissions that affect what an API set has permission to do. 
-
-By default, all options are off. Enabling these features will allow your title to be client authoritative at the expense of security.
+The **API Features** tab provides optional permissions that affect what an **API** set has permission to do. By default, all options are off. Enabling these **Features** will allow your **Title** to be **Client** authoritative at the expense of security.
 
 ![Game manager - Settings - API Features](media/tutorials/game-manager-settings-api-features.png)
 
-Choose your preferred permissions and select **Save API Features**.
+Choose your preferred permissions, and select the **Save API Features** button.
 
-### View and Edit Title Data
+### View and edit Title Data
 
-**Title Data** is accessible from all API sets by all users. This makes **Title Data** an ideal place to store your custom title settings. In the example provided below, we store:
+**Title Data** is accessible from all **API** sets by all **Users**. This makes **Title Data** an ideal place to store your custom **Title** settings.
 
-- Quests
-- Enemy encounter details
-- Achievement thresholds
-- Events
-- Sales data, etc.
+In the example below, we store: quests, enemy encounter details, achievement thresholds, **Events** and sales data, and more.
 
 ![Game manager - Settings - Title Data](media/tutorials/game-manager-settings-title-data.png)
 
 We provide tall and short views that make viewing text blobs easier.
 
-#### Add or Edit Title Data Keys
+#### Add or edit Title Data Keys
 
-1. Enter text for your key (keys must be unique).
+1. Enter text for your **Key** (**Keys** must be unique).
 2. Enter text for your value (accepts strings up to 10KB).
 3. Save your changes with the orange **SAVE TITLE DATA** button under the data table.
 
 #### Remove Title Data Keys
 
 1. Check the box that corresponds to the row(s) that you wish to remove.
-2. Select the **X Remove** link in the upper left of your screen, above the user table.
-3. Save your changes by selecting the orange **SAVE TITLE DATA** button under the data table.
+2. Select the **X Remove** link in the top-left, above the **User** table.
+3. Save your changes with the orange **SAVE TITLE DATA** button under the data table.
 
-### Update Account Permissions and View Audit History
+### Update Account Permissions and view Audit History
 
-The permissions tab displays an account table containing all of the developer accounts with access to the current title. Users are added and removed at the studio level, but individual permissions are set on a per-title level. This flexibility enables you to provide your team with variable access depending on their role.
+The **Permissions** tab displays an account table containing all of the **Developer** accounts with access to the current **Title**. 
+
+**Users** are added and removed at the **Studio** level, but individual **Permissions** are set on a per-**Title** level. This flexibility enables you to provide your team with variable access depending on their role.
 
 ![Game manager - Settings - Permissions](media/tutorials/game-manager-settings-permissions.png)
 
 #### Update Account Permissions
 
-1. Select the account you wish to edit.
-
-1. Select the appropriate permissions.
-
-> [!NOTE]
-> Admins have **View** and **Edit** permissions for all sections.
-3. Save your changes by selecting the orange **SAVE PERMISSIONS** button under the permissions list.
+1. Select the **Account** you wish to edit.
+2. Select the appropriate **Permissions** (note: **Admins** have view and edit **Permissions** for all sections).
+3. Save your changes by selecting the orange **SAVE PERMISSIONS** button.
 
 ![Game manager - Settings - Edit permissions](media/tutorials/game-manager-settings-edit-permissions.png)
 
 You can set viewing and editing restrictions for virtually every section within the **Game Manager**.
 
-#### Track changes across your title
+#### Track changes across your Title
 
 Every action taken within the **Game Manager** is logged for posterity. Check the **Audit History** tab to see what changes have been recently made.
 
@@ -401,25 +381,22 @@ Select any change to view the complete details.
 
 ## Promotions Actions
 
-### View or Edit Title News
+### View or edit Title News
 
-1. Choose an old news item to edit, or create a new one by selecting **NEW TITLE NEWS**.
-
-1. Enter a **Title**.
-1. Set the **Status** to **Published** and enter your text into the **Body** field.
-1. Select **SAVE TITLE NEWS** and your news is ready for the client consumption.
+1. Select an old **News Item** to edit or create a new one by selecting **NEW TITLE NEWS**.
+2. Enter a **Title**, set the **Status** to **Published**, and enter your text into the **Body** field.
+3. Select **SAVE TITLE NEWS** and your **News** is now ready for the **Client** to receive.
 
 ![Game manager - Promotions - Edit Title News](media/tutorials/game-manager-promotions-edit-title-news.png)
 
-**Title news** makes a great tool for in-game tips or message-of-the-week style communication.
+**Title News** makes a great tool for in-game tips or message-of-the-week style communication.
 
 ### Generate Coupon Codes
 
-1. Select your primary catalog, and the item **ID** for the item you wish to grant.
-
-1. Choose the appropriate quantity, and select **GENERATE COUPONS**.
-1. **Game Manager** will generate the codes in a downloadable .csv file
+1. Select your primary **Catalog** and the **Item ID** for the **Item** you wish to grant.
+2. Choose the appropriate quantity, and select the **GENERATE COUPONS** button.
+3. **Game Manager** will generate the codes in a downloadable **.csv** file
 
 ![Game manager - Promotions - Coupons](media/tutorials/game-manager-promotions-coupons.png)
 
-This coupon tool is great for generating the digital rewards for "backers" and testers.
+This coupon tool works great for generating the digital rewards for "backers" and testers.

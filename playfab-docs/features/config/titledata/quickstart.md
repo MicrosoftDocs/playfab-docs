@@ -42,9 +42,11 @@ public void ClientGetTitleData() {
 }
 ```
 
-### Title Data from the game server
+### From the game server
 
-Use [GetTitleData](xref:titleid.playfabapi.com.server.title-widedatamanagement.gettitledata) from the **PlayFabServerAPI** to get the **KVPs** for a specific **Title**. The following code example displays the values of all of the **Title Data**.
+Use [GetTitleData](xref:titleid.playfabapi.com.server.title-widedatamanagement.gettitledata) from the **PlayFabServerAPI** to get the **KVPs** for a specific title. The following code example displays the values of all of the title data.
+
+
 ```csharp
 public void ServerGetTitleData() {
     PlayFabServerAPI.GetTitleData( new GetTitleDataRequest(),
