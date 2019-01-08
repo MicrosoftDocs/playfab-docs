@@ -53,7 +53,7 @@ Backlog (dates TBD):
 
 Table below indicates our confidence level for providing an SDK for the specified platform on that date. We intend to support every platform on this list it's simply a matter of time.
 
-|-|1PP Private Preview (1810)|3PP Private Preivew (1902)|3PP Public Preview 1904| Post GDC 1906|
+|-|1PP Private Preview (1810)|Feburary (1902)| Public Preview (1905)| 3PP Public 1906|
 |-|-|-|-|-|
 |Win32/Win10|Done|-|-|-|
 |Xbox ERA|Available today without hardware acceleration|-|High|-|
