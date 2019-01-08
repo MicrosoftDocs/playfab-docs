@@ -13,36 +13,35 @@ ms.localizationpriority: medium
 # Player Data quickstart
 
 > [!NOTE] 
-> In the **PlayFab APIs**, the function names utilize the term **UserData**. In the **Game Manager**, this concept is described as **Player Data**. They are identical, and interchangeable.
+> In the **PlayFab APIs**, the function names utilize the term **UserData**. In the **Game Manager**, this concept is described as **Player** data. They are identical, and interchangeable.
 
-This quickstart describes how to create and use **Player Data**.
-
-**Player Data** is information that applies to an individual **Player** or a **Group** of **Players** (shared data) and is stored as **Key/Value Pairs (KVPs)** by **PlayFab**.
+This quickstart describes how to create and use **Player** data. **Player** data is information that applies to an individual **Player** or **Player Group** (shared data) and is stored as **Key/Value Pairs** (**KVPs**) by **PlayFab**.
 
 This topic covers **Client-API** calls, which are safe to call from any process or context. It also covers **Server-API** calls, which should *only* be made from a dedicated server process you control, or a carefully secured **CloudScript** call.
 
-**Server-APIs** require your dev **Secret Key**, which you should *never* provide to or publish with your **Client**.
+**Server-APIs** require your **Dev Secret Key**, which you should never provide-to or publish-with your **Client**.
 
 **About the Code Examples:**
-- The **C# Code** examples shown in this quickstart correspond to using the **PlayFab Unity SDK**.
+
+- The **C# Code Examples** shown in this quickstart correspond to using the **PlayFab Unity SDK**.
 - Use the **Client APIs** [UpdateUserData](xref:titleid.playfabapi.com.client.playerdatamanagement.updateuserdata) to create, update, or delete and [GetUserData](xref:titleid.playfabapi.com.client.playerdatamanagement.getuserdata) to read data for the **Player**.
-- Use the **Server API** [UpdateUserReadOnlyData](ref:titleid.playfabapi.com.server.playerdatamanagement.updateuserreadonlydata) to create, update, or delete and the **Client API** [GetUserReadOnlyData](xref:titleid.playfabapi.com.client.playerdatamanagement.getuserreadonlydata) to read **Title**-specific data for the **Player**. This data is visible to the **Player**, but can only be modified by the server.
-- Use the **Server APIs** [UpdateUserInternalData](xref:titleid.playfabapi.com.server.playerdatamanagement.updateuserinternaldata) to create, update, or delete and [GetUserInternalData](xref:titleid.playfabapi.com.server.playerdatamanagement.getuserinternaldata) to read **Title**-specific data for the **Player**. This data is *server-only*, and cannot be seen by the **Client**.
+- Use the **Server API** [UpdateUserReadOnlyData](ref:titleid.playfabapi.com.server.playerdatamanagement.updateuserreadonlydata) to **Create**, **Update**, or **Delete** and the **Client API** [GetUserReadOnlyData](xref:titleid.playfabapi.com.client.playerdatamanagement.getuserreadonlydata) to read **Title**-specific data for the **Player**. This data is visible to the **Player**, but can only be modified by the server.
+- Use the **Server APIs** [UpdateUserInternalData](xref:titleid.playfabapi.com.server.playerdatamanagement.updateuserinternaldata) to **Create**, **Update**, or **Delete** and [GetUserInternalData](xref:titleid.playfabapi.com.server.playerdatamanagement.getuserinternaldata) to read **Title**-specific data for the **Player**. This data is server-only, and cannot be seen by the **Client**.
 
-## Player Data in Game Manager
+## Player data in Game Manager
 
-You can always get and set **Player** data through **Game Manager** by performing the following steps:
+You can always get and set **Player** data through **Game Manager** by performing the following steps.
 
-- Open **Game Manager**. If you are unfamiliar with **Game Manager**, see the [Game Manager quickstart](../../config/gamemanager/quickstart.md).
+- Open **Game Manager**. If you are unfamiliar with **Game Manager**, see the [Game Manager Quickstart](../../config/gamemanager/quickstart.md).
 - Select the **Players** tab.
-- Select the name of the **Player**, this will put you into the **Players Account** tab.
-- Select the **Player Data** tab to view their data.
+- Select the name of the **Player**.  This will put you into the **Players Account** tab.
+- Select the **Player Data** tab to see their data.
 
-## Setting Player Data
+## Setting Player data
 
-This is data that the **Client** can create, read, update, or delete (**CRUD**). To set **Player** data, use the [UpdateUserData](xref:titleid.playfabapi.com.client.playerdatamanagement.updateuserdata) method.
+This is data that the **Client** can **Create**, **Read**, **Update**, or **Delete** (**CRUD**). To set **Player** data, use the [UpdateUserData](xref:titleid.playfabapi.com.client.playerdatamanagement.updateuserdata) method.
 
-### C# Code Example
+### C# Code example
 
 The following **C#** code example creates (or updates, if the **KVPs** already exist) the **KVPs Ancestor** with the value **Arthur** and **Successor** with the value **Fred**.
 
@@ -62,11 +61,11 @@ void SetUserData() {
 }
 ```
 
-## Getting Player Data
+## Getting Player data
 
 To get **Player** data, use the [GetUserData](xref:titleid.playfabapi.com.client.playerdatamanagement.getuserdata) method.
 
-### C# Code Example
+### C# Code example
 
 The following **C#** code example gets the values of all of the **Player** data **KVPs**.
 
@@ -86,12 +85,13 @@ void GetUserData() {
 }
 ```
 
-## Setting Read-only Player Data
-This is data that the server can modify, but the **Client** can only read. To set **Read-Only KVPs**, you must call the [UpdateUserReadOnlyData](ref:titleid.playfabapi.com.server.playerdatamanagement.updateuserreadonlydata) **API** from a server process.
+## Setting Read-only Player data
 
-### C# Code Example
+This is data that the server can modify, but the **Client** can only read. To set read-only **KVPs**, you must call the [UpdateUserReadOnlyData](ref:titleid.playfabapi.com.server.playerdatamanagement.updateuserreadonlydata) **API** from a server process.
 
-The following **C#** code example uses the **PlayFab Server API** to create (or update, if the **KVPs** already exist) the **KVPs** with the **Key: Father** and the **Value: Fred**, **Mother** with the **Value: Alice**, **Sister** with the **Value: Lucy**, and **Brother** with the **Value: Doug**.
+### C# Code example
+
+The following **C#** code example uses the **PlayFab Server API** to create (or update, if the **KVPs** already exist) the **KVPs** with the **Key** named **Father**, with the value **Fred**,  **Mother** with the value **Alice**, **Sister** with the value **Lucy**, and **Brother** with the value **Doug**.
 
 ```csharp
 public void UpdateUserReadOnlyData() {
@@ -113,13 +113,13 @@ public void UpdateUserReadOnlyData() {
 }
 ```
 
-## Getting Read-only Player Data
+## Getting Read-only Player data
 
-To get **Read-Only Player** data, use the [GetUserReadOnlyData](xref:titleid.playfabapi.com.client.playerdatamanagement.getuserreadonlydata) method.
+To get read-only **Player** data, use the [GetUserReadOnlyData](xref:titleid.playfabapi.com.client.playerdatamanagement.getuserreadonlydata) method.
 
-### C# Code Example
+### C# Code example
 
-The following **server-SDK C#** code example gets all of the **Read-Only Player** data.
+The following **C#** code example uses the **PlayFab server API** to get all of the **Player** read-only data.
 
 ```csharp
 public void GetUserReadOnlyData()
@@ -188,13 +188,13 @@ public void GetUserInternalData() {
 }
 ```
 
-## CloudScript code example
+## CloudScript Code example
 
 **CloudScript** is an advanced topic that is covered in the [CloudScript quickstart](../../automation/cloudscript/quickstart.md). **Player** data does not require **CloudScript**. It is, however, accessible from **CloudScript** if you require it.
 
-Sometimes, you may want to modify **Read-Only** or **Internal Player** data from **CloudScript**. You must be very careful to ensure the security of your **server-API** calls in **CloudScript**.
+Sometimes, you may want to modify read-only or internal **Player** data from **CloudScript**. 
 
-The following code demonstrates modifying a piece of **Read-Only Player** data from **CloudScript** safely.
+You must be very careful to ensure the security of your **Server-API** calls in **CloudScript**. The following code demonstrates modifying a piece of read-only **Player** data from **CloudScript** safely.
 
 ```javascript
 function IncrementReadOnlyUserData(args) {
@@ -243,14 +243,12 @@ public void CloudIncrement() {
     });
 }
 ```
+Since this example updates internal **Player** data, you will need to call [GetUserInternalData](xref:titleid.playfabapi.com.server.playerdatamanagement.getuserinternaldata) again from your server to see the results. 
 
-Since this example updates internal **Player** data, you will need to call [GetUserInternalData](xref:titleid.playfabapi.com.server.playerdatamanagement.getuserinternaldata) again from your server to see the results.
-
-> [!NOTE]
-> We do *not allow* any **Client** inputs from **args** directly into a **server-API** call. Be sure to sanitize the **Client-inputs** *first*, if you attempt this.
+Also note that we do not allow *any* **Client** inputs from **Args** directly into a **Server-API** call. Be sure to sanitize the **Client**-inputs *first*, if you attempt this.
 
 ### See Also
 
-- [Title Data quickstart](../../config/titledata/quickstart.md)
-- [Using Publisher Data](../../config/titledata/using-publisher-data.md)
-- [CloudScript quickstart](../../automation/cloudscript/quickstart.md)
+[Title Data quickstart](../../config/titledata/quickstart.md)
+[Using Publisher Data](../../config/titledata/using-publisher-data.md)
+[CloudScript quickstart](../../automation/cloudscript/quickstart.md)

@@ -13,7 +13,6 @@ ms.localizationpriority: medium
 # Using Player Publisher Data
 
 ## Player Data vs Player Publisher Data
-
 [Player Data](quickstart.md) is information about a **Player**, specific to a game **Title**. Thus, it should be used for **Title**-specific information, such as saving your **Player's** position in a dungeon, or other game-specific data.
 
 **Player Publisher Data** is data associated with the **Player** account, as opposed to the **Player** account **plus** the **Title**. It is used to save information about a **Player** relevant to all **Titles** in your **Studio** (which may also contain **Title**-specific information, for purposes of cross-**Title** rewards).
@@ -43,11 +42,11 @@ Our example in this tutorial, [Grant a reward for playing multiple titles](#gran
 
 ### Step 1: Each game reports a login to Publisher Data
 
-Each game needs to report that a login occurred. For the sake of simplicity, our example only provides one reward per **Title**, for each other **Publisher Title** played.
+Each game needs to report that a login occurred. For simplicity, our example only provides *one* reward for each **Title**, for each other **Publisher Title** played.
 
-Feel free to expand on the idea with **Counters**, **Timestamps**, or other mechanisms to provide progressive or sequential **Rewards**.
+Feel free to expand on the idea with counters, timestamps, or other mechanisms to provide progressive or sequential rewards.
 
-The **CloudScript** that is shown below would need to be present in **every** game in your studio.
+The following **CloudScript** would need to be present in *every* game in your studio.
 
 ```javascript
 // CloudScript/Javascript
@@ -73,10 +72,12 @@ handlers.TrackTitleUsage = function () {
 }
 ```
 
-> [!NOTE]
-> This example, in particular,  demonstrates using server.[GetUserPublisherInternalData](xref:titleid.playfabapi.com.server.playerdatamanagement.getuserpublisherinternaldata) and server.[UpdateUserPublisherInternalData](xref:titleid.playfabapi.com.server.playerdatamanagement.updateuserpublisherinternaldata). 
+In particular, this example demonstrates using:
 
-### Step 2: Each game checks for redeemable rewards
+- server.[GetUserPublisherInternalData](xref:titleid.playfabapi.com.server.playerdatamanagement.getuserpublisherinternaldata)
+- server.[UpdateUserPublisherInternalData](xref:titleid.playfabapi.com.server.playerdatamanagement.updateuserpublisherinternaldata). 
+
+### Step 2: Each game checks for redeemable Rewards
 
 Once you are tracking which **Titles** are played, you need to track and grant the **Rewards**. This **CloudScript** function will check for and grant available **Rewards**, based on having played other **Titles**.
 

@@ -37,13 +37,12 @@ All **Inventory API** calls are designed to be *server-authoritative* and secure
 - Can remove **Items**: **[ConsumeItem](xref:titleid.playfabapi.com.client.playeritemmanagement.consumeitem), [UnlockContainerInstance](xref:titleid.playfabapi.com.client.playeritemmanagement.unlockcontainerinstance)**
 - Can trade **Items**: **[OpenTrade](xref:titleid.playfabapi.com.client.trading.opentrade), [GetPlayerTrades](xref:titleid.playfabapi.com.client.trading.getplayertrades), [AcceptTrade](xref:titleid.playfabapi.com.client.trading.accepttrade), [CancelTrade](xref:titleid.playfabapi.com.client.trading.canceltrade)**
 
-Server:
+**Server**:
 
 - May Gift/Grant **Items**: **[GrantItemsToUser](xref:titleid.playfabapi.com.server.playeritemmanagement.grantitemstouser)**
 - Can view the  **Items**: **[GetUserInventory](xref:titleid.playfabapi.com.server.playeritemmanagement.getuserinventory)**
 - Can modify **items**: **[ModifyItemUses](xref:titleid.playfabapi.com.server.playeritemmanagement.modifyitemuses), [UpdateUserInventoryItemCustomData](xref:titleid.playfabapi.com.server.playeritemmanagement.updateuserinventoryitemcustomdata)**
 - Can remove **Items**: **[RevokeInventoryItem](xref:titleid.playfabapi.com.server.playeritemmanagement.revokeinventoryitem), [ConsumeItem](xref:titleid.playfabapi.com.server.playeritemmanagement.consumeitem), [UnlockContainerInstance](xref:titleid.playfabapi.com.server.playeritemmanagement.unlockcontainerinstance)**
-
 The following example illustrates the code blocks that call these **API** methods, and sets up basic use-cases for **Player Inventory**.
 
 > [!NOTE]
@@ -70,7 +69,7 @@ void LogFailure(PlayFabError error) {
 }
 ```
 
-## Client-only Example: Purchase and Consume a Health Potion
+## Client-only example: Purchase and Consume a Health Potion
 
 **Client API** call order: [PurchaseItem](xref:titleid.playfabapi.com.client.playeritemmanagement.purchaseitem), [GetUserInventory](xref:titleid.playfabapi.com.client.playeritemmanagement.getuserinventory), [ConsumeItem](xref:titleid.playfabapi.com.server.playeritemmanagement.consumeitem)
 
@@ -110,13 +109,16 @@ void ConsumePotion() {
 }
 ```
 
-## Example: Player is Granted and Opens a Container
+## Example: Player is granted and opens a Container
 
-**API** call order: **Server**/[GrantItemsToUser](xref:titleid.playfabapi.com.server.playeritemmanagement.grantitemstouser), **Client**/[UnlockContainerInstance](xref:titleid.playfabapi.com.client.playeritemmanagement.unlockcontainerinstance)
+**API** call order:
 
-First, we must begin with a **Container** defined in our **Catalog**. For our **Container** in this example, we selected a **Crystal Container**. 
+- Server/[GrantItemsToUser](xref:titleid.playfabapi.com.server.playeritemmanagement.grantitemstouser)
+- Client/[UnlockContainerInstance](xref:titleid.playfabapi.com.client.playeritemmanagement.unlockcontainerinstance)
 
-This example *also* demonstrates opening the container with a **Key** - an *optional* item which must also be in the **Player Inventory** for the **UnlockContainerInstance** call to be successful.
+First, we must begin with a **Container** defined in our **Catalog**. For our **Container** in this example, we selected a **Crystal Container**.
+
+This example also demonstrates opening the **Container** with a **Key** - an *optional* item which must also be in the **Player** inventory for the **UnlockContainerInstance** call to be successful.
 
 ![PlayFab - Economy - Edit Catalog Container](media/tutorials/playfab-edit-catalog-container.png)
 
@@ -127,7 +129,7 @@ This example *also* demonstrates opening the container with a **Key** - an *opti
 - That **Containers** can optionally define a **Key Item**, which is then required to unlock the **Container** - in this case, a **Crystal Key**.
 - It is highly suggested that your **Container** and any **Key** *both* be **Consumable**, with a positive use count, so that they are removed from the **Player Inventory** after use.
 
-**Server Code**
+**Server code**
 
 ```csharp
 void GrantItem() {
@@ -141,7 +143,7 @@ void GrantItem() {
 }
 ```
 
-**Client Code**
+**Client code**
 
 ```csharp
 void OpenContainer() {

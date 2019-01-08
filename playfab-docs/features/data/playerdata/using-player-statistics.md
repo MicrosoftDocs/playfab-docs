@@ -10,41 +10,38 @@ keywords: playfab, game manager, player data, statistics
 ms.localizationpriority: medium
 ---
 
-# Using Player Statistics
+# Using Player statistics
 
-This tutorial describes how to create and use **Player Statistics**.
+This tutorial describes how to create and use **Player** statistics. **Player** statistics are stored as **Key Value Pairs** (**KVPs**) where the **Key** is a string, and the **Value** is a 32-bit integer (for compatibility with languages which do not support 64-bit).
 
-**Player Statistics** are stored as **Key Value Pairs** where the **Key** is a string and the **Value** is a **32-bit integer** (for compatibility with languages which do not support **64-bit**).
+**Player** statistics are also used by **Leaderboards**. This guide covers **Player** statistics exclusively. If you wish to read about how player statistics and leaderboards work together, please read our tutorial [Using resettable statistics and leaderboards](../../social/tournaments-leaderboards/using-resettable-statistics-and-leaderboards.md).
 
-**Player Statistics** are also used by **Leaderboards**. This guide covers **Player Statistics** exclusively. If you wish to read about how **Player Statistics** and **Leaderboards** work together, please read our tutorial [Using resettable statistics and leaderboards](../../social/tournaments-leaderboards/using-resettable-statistics-and-leaderboards.md).
 
 > [!NOTE]
-> As a point of clarification, in some documentation and **API** calls, you may find the term **UserStatistics**. For the purposes of this discussion, the terms **User** and **Player** are identical and interchangeable.
+> In some documentation and **API** calls, you may find the term **UserStatistics**. For the purposes of this discussion, the terms **User** and **Player** are identical and interchangeable. In the **Game Manager**, the **Players** tab provides access to the **Users/Players** for your **Title**, and within that, their statistics. **Player** statistics refers specifically to information bound to a **Player**, not analytics information about **Player**.
 
-In the **Game Manager**, the **Players** tab provides access to the **users/players** for your **Title**, and within that, their **Statistics**. **Player Statistics** refers *specifically* to information bound to a **Player**, *not* analytics information about **Players**.
+### Client API
 
-### Client API 
-
-The **Client** has access to read **Player Statistics**, but to prevent cheating, the **Client** is *not able* to update **Statistics** by default.
+The **Client** has access to read **Player** statistics, but to prevent cheating, the **Client** is not able to update statistics by default.
 
 To enable this:
 
-- [Log into PlayFab].(https://developer.playfab.com/en-us/my-games)
+- [Log into PlayFab](https://developer.playfab.com/en-us/my-games)
 - Select your **Title**.
-- Select **Settings** from the menu to the left.
+- Select **Settings** from the left-menu.
 - Select the **API Features** tab.
-- Find and activate **Allow client to post Player Statistics**.
+- Find and activate **Allow client to post player statistics**.
 
 > [!NOTE]
-> Doing this disables a security layer for your **Title**, allowing **Players** to post arbitrary scores to all of their **Statistics**. If your game has any competitive play aspect, we would recommend that you *never* post **Statistics** from the **Client**.
+> Doing this disables a security layer for your **Title**, allowing **Players** to post arbitrary scores to all of their statistics. If your game has *any* competitive play aspect, we would recommend that you *never* post statistics from the **Client**.
 
-## Statistics are Public Information
+## Statistics are public information
 
 There are no private or server-only **Statistics**. A **Player** can always read all of their own **Statistics** via [GetPlayerStatistics](xref:titleid.playfabapi.com.client.playerdatamanagement.getplayerstatistics), and  can read all other **Players' statistics** via **Leaderboard API** calls. This is true even if you *don't* display a **Statistic** in-game, or use **Leaderboards**.
 
 The only exception to this would be if you disable **Client** features through our [API Access Policy](../../config/gamemanager/api-access-policy.md). Please refer to that link for more information on how to use the policy settings for **Titles**, as that is an advanced topic which is not covered by this tutorial.
 
-## Setting Statistics
+## Setting statistics
 
 The following **Unity/C#** code creates (or updates if it already exists) a **strength Statistic** value for a **Player**.
 
@@ -59,7 +56,7 @@ result => { Debug.Log("User statistics updated"); },
 error => { Debug.LogError(error.GenerateErrorReport()); });
 ```
 
-## Getting Statistics
+## Getting statistics
 
 The following **Unity/C#** code retrieves all current **Statistic** values for a **Player**.
 
@@ -81,7 +78,7 @@ void OnGetStatistics(GetPlayerStatisticsResult result)
 }
 ```
 
-## Aggregation Method
+## Aggregation method
 
 **PlayFab** supports some convenience options for **Statistic Aggregation**. The 4 options include:
 

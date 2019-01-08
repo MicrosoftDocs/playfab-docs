@@ -16,7 +16,7 @@ This quickstart provides an overview of automatic and custom **PlayStream** even
 
 ## Automatic Event Overview
 
-As the name implies, an **Automatic Event** is an event that occurs automatically with a normal **API** method call. Most existing **API** methods will generate PlayStream events.
+As the name implies, an **Automatic Event** is an event that occurs automatically with a normal **API** method call. Most existing **API** methods will generate **PlayStream Events**.
 
 Sometimes, however, you will need to capture events that are very specific for your game and are not provided by **PlayFab** out of the box. For that purpose, consider using a **Custom Event** (as described in the next section, [Custom Event Overview](#custom-event-overview)).
 
@@ -33,13 +33,13 @@ result=> Debug.Log(result.PlayFabId),
 error=> Debug.LogError(error.GenerateErrorReport()));
 ```
 
-As a side effect, **PlayFab** will record a **player_logged_in** event. Consider using the [Event History](event-history.md) to test the described behavior.
+As a side effect, **PlayFab** will record a **player_logged_in Event**. Consider using the [Event History](event-history.md) to test the described behavior.
 
 ![Game Manager - Event History Chart](media/tutorials/game-manager-event-history-chart.png)  
 
 ## Custom Event Overview
 
-While **PlayFab** records a lot of events automatically, sometimes you need events that are very specific for your game. The concept of **Custom Events** allows you to post **Events** with an arbitrary **Type** and **Name**.
+While **PlayFab** records a lot of **Events** automatically, sometimes you need **Events** that are very specific for your game. The concept of **Custom Events** allows you to post **Events** with an arbitrary **Type** and **Name**.
 
 Similar to **Automatic Events**, **Custom Events** are fully reflected through [real-time analytics tools](../../analytics/metrics/real-time-analytics-core-concepts.md). Unlike **Automatic Events**, you need a little bit of custom code to post **Custom Events**.
 
@@ -62,7 +62,7 @@ Unfortunately, **PlayFab** does not provide a corresponding [automatic event](#a
 
 ### Prerequisites
 
-Your player is already logged in. In your code, you have a callback **OnChestOpen**. **LevelID** and **ChestType** are passed into that callback.
+Your **Player** is already logged in. In your code, you have a callback **OnChestOpen**. **LevelID** and **ChestType** are passed into that callback.
 
 ### Solution
 
@@ -83,7 +83,7 @@ private void OnChestOpened(string chestType, int levelId) {
 ```
 
 1. The method receives **ChestType** and **LevelId**.
-2. Use the [WritePlayerEvent](xref:titleid.playfabapi.com.client.analytics.writeplayerevent) **API** call for posting a **Custom Event** bound to a **Player**.
+. Use the [WritePlayerEvent](xref:titleid.playfabapi.com.client.analytics.writeplayerevent) **API** call for posting a **Custom Event** bound to a **Player**.
 3. Provide a body, specific for your **Event** and your needs (in this case we provide the **ChestType** and **LevelId** fields).
 4. Provide an **Event Name** identifying your **Custom Event**. In this case we use the **player_chest_opened**, **Event Type Name**.
 
