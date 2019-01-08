@@ -38,16 +38,7 @@ Artifacts that are in progress:
 |Network|-|DTLS Security; Datacenter selection|-|
 |Administration|-|Game Manager UX | Billing & Consumption analytics|
 
-Backlog (dates TBD):
-
-- Client Audio manipulation (post-decode)
-- Client Audio manipulation (pre-encode)
-- Speech to Text translation
-- Text to Text translation
-- Increasing player maximum
-- PLayFab Multiplayer Server library
-- Server Mixing
-- Peer-to-peer transport (reduces network egress cost)
+[Backlog in VSO](https://dev.azure.com/playfab/PlayFab/_backlogs/backlog/Bumblelion/Stories?fullScreen=true)
 
 ## Initial SDK Availability
 
