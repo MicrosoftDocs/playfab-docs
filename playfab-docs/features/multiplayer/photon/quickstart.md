@@ -77,16 +77,15 @@ Enter the **URL (1)** and submit by selecting the **Create** button **(2)**.
 
 ## Setting up a PlayFab Title for Photon
 
-Navigate to your **Title Game Manager** page, then:
+Navigate to your title's Game Manager page, then:
 - Navigate to **Add-ons** tab **(1)**.
 - In the list of add-ons find and select **Photon (2)**, as shown in the example provided below.
 
 ![Game Manager Add-ons tab](media/tutorials/photon-game-manager-addons-tab.png)  
 
 The **Photon Add-on** page will allow you to install **Photon** by specifying your **Photon Realtime Application ID (1)**.
-
-- Optionally, you may specify **Chat Application ID**.
-- Once you install the add-on **(3)**, a **Secret Key** will be generated **(2)**.
+- Optionally, you may specify **Chat App ID**.
+- Once you install the add-on **(3)**, a **Photon secret Key** will be generated **(2)**.
 - Save it for future use when configuring web-hooks. 
 
 > [!NOTE]
@@ -94,7 +93,7 @@ The **Photon Add-on** page will allow you to install **Photon** by specifying yo
   
 ![Copy Realtime App ID](media/tutorials/photon-copy-realtime-app-id.png)  
 
-## Setting Photon Web-hooks
+## Setting Photon Webhooks
 
 As an optional integration, **Photon** may transmit certain events to your **PlayFab CloudScript**. This is done by means of **Web-hooks**:
 - You specify a **Base URL**.
@@ -113,7 +112,7 @@ Make sure to replace **Title ID** placeholder with your own **Title ID**.
 {PlayFabTitleId}
 ```
 
-Make sure to replace **Photon Secret Key** token with the **Secret Key** you generated on **Photon Add-on** page.
+Make sure to replace **Photon Secret Key** token with the **Secret Key** you generated on the **Photon Add-on** page.
 
 ```html
 {PhotonSecretKey}
@@ -139,15 +138,14 @@ The guide assumes you already have **PlayFab SDK** imported, set up, and **Title
 ![Import Photon Unity](media/tutorials/photon-import-photon-unity.png)  
 
 Right after import process finishes, the **PUN Setup** window will open.
-- Enter your **Realtime Application ID (1)**.
-- Select **Setup Project (2)**.
-- Once the setup finishes, select **Close (3)**.
 
-![PUN Setup](media/tutorials/photon-pun-setup.png)  
+- Enter your **Realtime Application ID (1)** found in the Photon Application Dashboard for the Photon app you created.
+- Click **Setup Project (2)**.
+- Once the setup finishes, press **Close (3)**.
 
-If **AppId** was accepted, the **Photon Server Settings** object will be selected, and accessible through **Standard Unity Inspector** window.
+![PUN setup](media/tutorials/photon-pun-setup.png)  
 
-To manually access the **Server Settings** object:
+If **AppId** was accepted, the Photon Server Settings object will be selected and viewable in the Unity Inspector window. To manually access the Server Settings object:
 
 - Navigate to the top window panel.
 - Select **Window**.
@@ -165,19 +163,19 @@ At this point the project is configured.
 
 ## Implementing PlayFab to Photon authentication
 
-When you enable the **Photon Add-on** for your **Title**, and configure the authentication on the **Photon Application Dashboard**, **PlayFab** allows you to authenticate existing **PlayFab Players** inside the **Photon** environment.
+When you enable the **Photon Add-on** for your **Title** in the PlayFab Game Manager, and configure the authentication on the **Photon Application Dashboard**, **PlayFab** allows you to authenticate existing **PlayFab Players** inside the **Photon** environment.
 
 This means you may completely avoid implementing any user management for Photon.
 
-- Navigate to **DemoHub-Scene-V2** scene **(1)** from the **Photon Unity Networking Free** package.
+- Navigate to **DemoHub-Scene-V2** scene **(1)** from the **Photon Unity Networking Free** package, the Classic version.
 - This scene is a hub for all the examples from the package.
-- As it is the *first* scene to load, let's add a small script to enable authenticate **PlayFab** to **Photon**.
+- As it is the *first* scene to load, let's add a small script to enable authenticating **PlayFab** with **Photon**.
 - Create an empty **GameObject** called **PlayFabAuthenticator (2)**.
-- Then create and add a component with the same name to this **GameObject (3)**.
+- Then in the Unity Inspector window, add a component with the same name to this **GameObject (3)**.
 
 ![Add authentication component](media/tutorials/photon-add-authentication-component.png)
 
-The code for the **PlayFabAuthenticator** component is illustrated below (please, read the comments for the explanation).
+Click on the gear icon and from the drop-down menu choose to edit the script. Copy and paste the code for the **PlayFabAuthenticator** component as illustrated below (please, read the comments for the explanation), and save and close the file.
 
 ```csharp
 using PlayFab;
@@ -278,13 +276,16 @@ The following picture illustrates the correct flow.
 
 ![Start the scene](media/tutorials/photon-start-the-scene.png)  
 
-Once the **Photon** token has been acquired, we are good to check some of the **Photon** demos.
+> [!EXAMPLE]
+> We can start a demo called **Demo Boxes**. Click **Load Demo (2)**, as shown in the picture below.
+=======
+Once the **Photon** token has been acquired, and authentication is complete, we are okay to check out the **Photon** demos.
 
 For example, start a demo called **Demo Boxes**. Ensure that the **PlayFab** authentication is complete, select **Demo Boxes (1)**, then select **Load Demo (2)**, as shown on the following picture.
 
 ![Load demo](media/tutorials/photon-load-demo.png)  
 
-**Photon** will start outputting **Debug** messages. So by simply monitoring your console, you can easily spot if you have any authentication issue.
+**Photon** will start outputting **Debug** messages. By simply monitoring your console, you can easily spot if you have any authentication issues.
 
 ![Photon debug console](media/tutorials/photon-debug-console.png)  
 
@@ -309,7 +310,7 @@ The following **Events** will require additional control over **Unity** code to 
 > [!NOTE]  
 > Once you introduce a handler for a **Room Event**, it becomes an essential part of **Event** handling flow. So errors produced while running your **CloudScript** may cause problems for the *entire* system. For example, if the **RoomCreated** handler throws an error, your **Clients** will throw an error as well, and will not be able to connect properly.
 
-Let's construct a **PlayFab CloudScript** by defining a handler for each **Event** type one by one.
+Let's construct a **PlayFab CloudScript** by defining a handler for each **Event** type one-by-one.
 
 ### Room Created
 
