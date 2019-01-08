@@ -84,6 +84,7 @@ Navigate to your title's Game Manager page, then:
 ![Game Manager Add-ons tab](media/tutorials/photon-game-manager-addons-tab.png)  
 
 The **Photon Add-on** page will allow you to install **Photon** by specifying your **Photon Realtime Application ID (1)**.
+
 - Optionally, you may specify **Chat App ID**.
 - Once you install the add-on **(3)**, a **Photon secret Key** will be generated **(2)**.
 - Save it for future use when configuring web-hooks. 
@@ -96,6 +97,7 @@ The **Photon Add-on** page will allow you to install **Photon** by specifying yo
 ## Setting Photon Webhooks
 
 As an optional integration, **Photon** may transmit certain events to your **PlayFab CloudScript**. This is done by means of **Web-hooks**:
+
 - You specify a **Base URL**.
 - Then you specify path for each of available **Events**.
 - A path is, effectively, a handler name implemented in your **CloudScript**.
@@ -276,9 +278,8 @@ The following picture illustrates the correct flow.
 
 ![Start the scene](media/tutorials/photon-start-the-scene.png)  
 
-> [!EXAMPLE]
-> We can start a demo called **Demo Boxes**. Click **Load Demo (2)**, as shown in the picture below.
-=======
+For example, we can start a demo called **Demo Boxes**. Click **Load Demo (2)**, as shown in the picture below.
+
 Once the **Photon** token has been acquired, and authentication is complete, we are okay to check out the **Photon** demos.
 
 For example, start a demo called **Demo Boxes**. Ensure that the **PlayFab** authentication is complete, select **Demo Boxes (1)**, then select **Load Demo (2)**, as shown on the following picture.

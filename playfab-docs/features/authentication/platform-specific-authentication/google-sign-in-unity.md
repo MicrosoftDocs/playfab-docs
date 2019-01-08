@@ -105,7 +105,7 @@ To obtain your **Secret Key**, follow the link to your **API Console**.
 - The **Client Secret** is at the top.
 
 > [!IMPORTANT]
-> You must change the default callback for **Authorized redirect URIs**. The proper **URI** is [https://oauth.playfab.com/oauth2/google](https://oauth.playfab.com/oauth2/google).
+> You must change the default callback for **Authorized redirect URIs**. The proper **URI** is `https://oauth.playfab.com/oauth2/google`.
 > If you do not do this step you will get a **mismatch redirect_uri** error.
 
 ## PlayFab Google Sign-In setup
