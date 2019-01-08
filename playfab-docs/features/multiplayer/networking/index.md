@@ -30,7 +30,7 @@ Artifacts that are in progress:
 
 ## Roadmap
 
-|-|1PP Private Preview (1810)|3PP Private Preview (1902)|3PP Public Preview (1904)|
+|-|Private Preview (1810)| Feburary (1902)|May - 3PP Public Preview (1905)|
 |-|-|-|-|
 |Players|32 max|-|-|
 |Chat|Voice; Speech to text|Text; Text to Speech||
@@ -44,7 +44,7 @@ Artifacts that are in progress:
 
 Table below indicates our confidence level for providing an SDK for the specified platform on that date. We intend to support every platform on this list it's simply a matter of time.
 
-|-|1PP Private Preview (1810)|Feburary (1902)| Public Preview (1905)| 3PP Public 1906|
+|-|1PP Private Preview (1810)|Feburary (1902)| May - Public Preview (1905)| June (1906)|
 |-|-|-|-|-|
 |Win32/Win10|Done|-|-|-|
 |Xbox ERA|Available today without hardware acceleration|-|High|-|
