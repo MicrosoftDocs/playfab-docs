@@ -12,14 +12,14 @@ ms.localizationpriority: medium
 
 # Friends Lists
 
-**Friends Lists** are a great feature for improving your **Player's** ability to socialize. They're simple to work with, and can make **Leaderboards** more engaging for your users.
+**Friends Lists** are a great feature for improving your **Players'** ability to socialize. They're simple to work with and can make **Leaderboards** more engaging for your **Users**.
 
 ## Prerequisites
 
 **SDK: Unity**
 
 - The **Title ID** is set in the **PlayFabSharedSettings** object.
-- The project can successfully log in a **User**.
+- The **Project** can successfully log in a **User**.
 - The **Title** has at least two registered **Users**.
 
 ## About Friends
@@ -32,9 +32,11 @@ If **Albert** adds **Bob** as a **Friend**, there is *no* approval process for *
 
 In the event that a **Player** has linked their **Steam** or **Facebook** account, their platform-specific **Friends** can also be displayed, if those **Friends** also play your **Title**.
 
-## Making friends
+In the event that a **Player** has linked their **Steam** or **Facebook** account, their platform-specific **Friends** can also be displayed, if those **Friends** also play your **Title**.
 
-The example code will be using the functions `DisplayFriends()` and `DisplayError(string error)` as a proxy of your app's **UI**. You can paste these into your editor to get it to work without any extra effort, or replace the calls with your own code.
+## Making Friends
+
+The example code will be using the functions `DisplayFriends()` and `DisplayError(string error)` as a proxy of your **App's UI**. You can paste these into your editor to get it to work without any extra effort, or replace the calls with your own code.
 
 ```csharp
 void DisplayFriends(List<FriendInfo> friendsCache) { friendsCache.ForEach(f => Debug.Log(f.FriendPlayFabId)); }
@@ -59,7 +61,7 @@ void GetFriends() {
 }
 ```
 
-The [GetFriendsList](xref:titleid.playfabapi.com.client.friendlistmanagement.getfriendslist) result contains a parameter **Friends** which is a list of [FriendInfo]((xref:titleid.playfabapi.com.client.friendlistmanagement.getfriendslist#friendinfo) objects.
+The [GetFriendsList](xref:titleid.playfabapi.com.client.friendlistmanagement.getfriendslist) result contains a parameter **Friends** which is a list of [FriendInfo](xref:titleid.playfabapi.com.client.friendlistmanagement.getfriendslist#friendinfo) objects.
 
 3. To add a **Friend** to the **Player's Friends** list, use the [AddFriend](xref:titleid.playfabapi.com.client.friendlistmanagement.addfriend) **API** call.
 
@@ -103,13 +105,13 @@ void RemoveFriend(FriendInfo friendInfo) {
 }
 ```
 
-## Going Further
+## Going further
 
-There are other things you can do with **Friends** besides **adding**, **removing**, and **displaying**.
+There are other things you can do with **Friends** besides **Adding**, **Removing**, and **Displaying**.
 
 ### Tagging Friends
 
-The [FriendInfo](xref:titleid.playfabapi.com.client.friendlistmanagement.getfriendslist#friendinfo) object, retrieved from [GetFriendsList](xref:titleid.playfabapi.com.client.friendlistmanagement.getfriendslist), includes a list of tags for the **Friend**. When updating the list, you would want to add and remove from this list and include it in the **API** call, as follows:
+The [FriendInfo](xref:titleid.playfabapi.com.client.friendlistmanagement.getfriendslist#friendinfo) object, retrieved from [GetFriendsList](xref:titleid.playfabapi.com.client.friendlistmanagement.getfriendslist), includes a list of **Tags** for the **Friend**. When updating the list, you would want to add and remove from this list and include it in the **API** call, as follows:
 
 ```csharp
 // this REPLACES the list of tags on the server
@@ -128,15 +130,13 @@ void SetFriendTags(FriendInfo friend, List<string> newTags)
 }
 ```
 
-You can use tags to inform matchmaking, (for example, the **Player** doesn't like playing with **Friends** tagged **2tuff** at hard difficulty) implement "**Friend Groups**, or just use them to store any metadata associated with a relationship that you need.
+You can use **Tags** to inform matchmaking, (for example, the **Player** doesn't like playing with **Friends** tagged **2tuff** at hard difficulty) implement **Friend Groups**, or just use them to store any metadata associated with a relationship that you need.
 
-> [!NOTE]
-> **PlayFab** currently does not index these tags in any way. [GetFriendsList](xref:titleid.playfabapi.com.client.friendlistmanagement.getfriendslist) can't filter based on them, so that must be done locally. Keep this in mind when considering any performance implications resulting from this system.
+An important note is that **PlayFab** currently does not index these **Tags** in any way. [GetFriendsList](xref:titleid.playfabapi.com.client.friendlistmanagement.getfriendslist) can't filter based on them, so that must be done locally. Keep this in mind when considering any performance implications resulting from this system.
 
 ### Friend Leaderboards
 
-**Friend**-specific **APIs** mirror the standard [GetLeaderboard](xref:titleid.playfabapi.com.client.playerdatamanagement.getleaderboard) and [GetLeaderboardAroundPlayer](xref:titleid.playfabapi.com.client.playerdatamanagement.getleaderboardaroundplayer) **API** calls, but restrict the **Player** pool to the **Player's Friends** list. For more information, refer to our tutorials about [Tournaments and Leaderboards](../tournaments-leaderboards/tutorials.md).
+**Friends**-specific **APIs** mirror the standard [GetLeaderboard](xref:titleid.playfabapi.com.client.playerdatamanagement.getleaderboard) and [GetLeaderboardAroundPlayer](xref:titleid.playfabapi.com.client.playerdatamanagement.getleaderboardaroundplayer) **API** calls, but restrict the **Player** pool to the **Player's Friends List**. For more information, refer to our tutorials about [Tournaments and Leaderboards](../tournaments-leaderboards/tutorials.md).
 
-Of note is that the [GetFriendLeaderboardAroundPlayer](xref:titleid.playfabapi.com.client.playerdatamanagement.getfriendleaderboardaroundplayer) **API** does not base the center of the **Leaderboard** around the currently logged in **Player** - it can be *any* **PlayFab ID** supplied with the request.
-
-You can use this to allow **Player** to look up any **Friend** location on the **Leaderboard**, regardless of their distance from each other.
+> [!NOTE]
+> The [GetFriendLeaderboardAroundPlayer](xref:titleid.playfabapi.com.client.playerdatamanagement.getfriendleaderboardaroundplayer) **API** does *not* base the center of the **Leaderboard** around the currently logged in **Player**: it can be any **PlayFab ID** supplied with the request. You can use this to allow **Players** to look up any **Friend's** location on the **Leaderboard**, regardless of their distance from each other.

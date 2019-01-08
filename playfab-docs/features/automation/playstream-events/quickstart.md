@@ -12,13 +12,13 @@ ms.localizationpriority: medium
 
 # PlayStream quickstart
 
-This quickstart provides an overview of automatic and custom **PlayStream** events in **PlayFab**.
+This quickstart provides an overview of automatic and custom **PlayStream Events** in **PlayFab**.
 
 ## Automatic Event Overview
 
 As the name implies, an **Automatic Event** is an event that occurs automatically with a normal **API** method call. Most existing **API** methods will generate **PlayStream Events**.
 
-Sometimes, however, you will need to capture events that are very specific for your game and are not provided by **PlayFab** out of the box. For that purpose, consider using a **Custom Event** (as described in the next section, [Custom Event Overview](#custom-event-overview)).
+Sometimes, however, you will need to capture **Events** that are very specific for your game and are not provided by **PlayFab** out of the box. For that purpose, consider using a **Custom Event** (as described in the next section, [Custom Event Overview](#custom-event-overview)).
 
 ### Example
 
@@ -46,17 +46,15 @@ Similar to **Automatic Events**, **Custom Events** are fully reflected through [
 **Custom Events** can be classified by **Entity**. A **Custom Event** can be bound to a **Player**, **Character**, or **Title**. An **Event Entity** reference is specified using two fields:
 
 - **EntityType**
-- **EntityID**
+- **EntityID**.
 
 ### Relevant API Calls
 
-- [WritePlayerEvent](xref:titleid.playfabapi.com.client.analytics.writeplayerevent)
-- [WriteCharacterEvent](xref:titleid.playfabapi.com.client.analytics.writecharacterevent)
-- [WriteTitleEvent](xref:titleid.playfabapi.com.client.analytics.writetitleevent)
+[WritePlayerEvent](xref:titleid.playfabapi.com.client.analytics.writeplayerevent), [WriteCharacterEvent](xref:titleid.playfabapi.com.client.analytics.writecharacterevent), [WriteTitleEvent](xref:titleid.playfabapi.com.client.analytics.writetitleevent)
 
 ### Example: Post your own Custom Event
 
-You want to aggregate information about players opening various chests. Along with standard **Event** information, you want to record **ChestType** and **LevelID**.
+You want to aggregate information about **Players** opening various **Chests**. Along with standard **Event** information, you want to record **ChestType** and **LevelID**.
 
 Unfortunately, **PlayFab** does not provide a corresponding [automatic event](#automatic-event-overview) out of the box. Use a **Custom Player Event** to solve the problem.
 
@@ -83,8 +81,8 @@ private void OnChestOpened(string chestType, int levelId) {
 ```
 
 1. The method receives **ChestType** and **LevelId**.
-. Use the [WritePlayerEvent](xref:titleid.playfabapi.com.client.analytics.writeplayerevent) **API** call for posting a **Custom Event** bound to a **Player**.
-3. Provide a body, specific for your **Event** and your needs (in this case we provide the **ChestType** and **LevelId** fields).
+2. Use the [WritePlayerEvent](xref:titleid.playfabapi.com.client.analytics.writeplayerevent) **API** call for posting a **Custom Event** bound to a **Player**.
+3. Provide a body, specific for your **Event** and your needs. In this case we provide the **ChestType** and **LevelId** fields.
 4. Provide an **Event Name** identifying your **Custom Event**. In this case we use the **player_chest_opened**, **Event Type Name**.
 
 ### Testing
