@@ -49,10 +49,10 @@ Table below indicates our confidence level for providing an SDK for the specifie
 |Win32/Win10|Done|-|-|-|
 |Xbox ERA|Available today without hardware acceleration|-|High|-|
 |Win32/Win7|-|-|High|-|
-|PlayStation|-|-|-|Medium | 
+|PlayStation|-|-|-|Low| 
 |Android (Lollipop 5.1+, Samsung, Huawei and Xiaomi)|-|-|-|Medium|
 |Switch|-|-| -| Medium |
-|iOS (8.0+) |-|-|-| Medium|
+|iOS (8.0+) |-|-|-| Low|
 |GameCore/Win10|-|-|-|High|
 |GameCore/Xbox|-|-|-|High|
 
