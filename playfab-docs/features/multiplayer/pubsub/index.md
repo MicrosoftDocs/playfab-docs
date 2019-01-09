@@ -32,7 +32,7 @@ PlayFab features are also built with standard PubSub events in mind. The first e
 
 ## Key concepts
 
-- ***Event*** - Each message sent or received via PubSub is called an event. 
+- ***Event*** - Each message sent or received via PubSub is called an event.
 - ***Topic*** - PubSub events are addressed based on Topics. A Topic is made up of three components:
   - ***event namespace***
   - ***event name***
@@ -44,16 +44,16 @@ PlayFab features are also built with standard PubSub events in mind. The first e
 
 ## Example
 
-Imagine you want to add a feature to your game which pops up a notification whenever one of a player's friends logs in. This can be done by leveraging the built-in `com.playfab.entity_logged_in` PlayStream event. At a high level, you can set up this functionality in just a few steps:
+Imagine you want to add a feature to your game which pops up a notification whenever one of a player's friends logs in. This can be done by leveraging the built-in `entity_logged_in` PlayStream event. At a high level, you can set up this functionality in just a few steps:
 
-1. Use the [policy manager](pubsub-policies.md) to configure a policy which allows a player's friends to subscribe to their `com.playfab.entity_logged_in` events (Event Namespace = `com.playfab`, Event Name = `entity_logged_in`, Target Entity = `Player`).
+1. Use the [policy manager](pubsub-policies.md) to configure a policy which allows a player's friends to subscribe to their `entity_logged_in` events (Event Namespace = `com.playfab`, Event Name = `entity_logged_in`, Target Entity = `Player`).
 
 1. Add code to your client to retrieve a player's friends list after login and subscribe to `com.playfab.entity_logged_in` for each friend on the list. With each subscription, pass in a reference to the handler function which will be executed when this event is received.
 
-1. Implement the specified event handler function with code which pops up the notification. 
- 
+1. Implement the specified event handler function with code which pops up the notification.
+
 > [!NOTE]
-> This example uses a built-in event, but a similar process can be used for custom events. The only addition would be that custom events need to be sent from your code at the appropriate time by using the `WriteEvents` API. 
+> This example uses a built-in event, but a similar process can be used for custom events. The only addition would be that custom events need to be sent from your code at the appropriate time by using the [WriteEvents](xref:titleid.playfabapi.com.events.playstreamevents.writeevents) API.
 
 ## Links
 

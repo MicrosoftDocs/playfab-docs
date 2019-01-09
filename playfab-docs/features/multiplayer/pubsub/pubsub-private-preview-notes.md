@@ -12,17 +12,19 @@ ms.localizationpriority: medium
 
 # PlayFab PubSub private preview notes
 
-## Private preview state
+## Early access
 
-PlayFab PubSub is currently available as a private preview. It is provided to give you an early look at an upcoming feature and to allow you to provide feedback while it is still in development. Access to PubSub is restricted to select titles. Reach out to [devrel@playfab.com](mailto:devrel@playfab.com) if you are interested in trying it out but don't yet have access. 
+PlayFab PubSub is currently available as a private preview. It is provided to give you an early look at an upcoming feature and to allow you to provide feedback while it is still in development. Access to PubSub is restricted to select titles. Reach out to [devrel@playfab.com](mailto:devrel@playfab.com) if you are interested in trying it out but don't yet have access.
 
 PlayFab PubSub is still in active development and will be changing over time. We will strive to avoid breaking changes, but such changes may turn out to be necessary during the preview in order to deliver the optimal experience for customers in the general release. We do not recommend shipping a game to the public which relies on this feature until it is more stable.
 
+## Pricing
+
 For now there will be no cost to game developers for use of the PubSub functionality, however at some point in the future there will be a charge for PubSub usage. More details on pricing will be made available prior to the charges coming into effect.
 
-## Known limitations
+## Limitations
 
-The following limitations exist in the system in its current state. Many of these will change in the future.
+The following known limitations exist in the system in its current state. Many of these will change in the future.
 
 - PubSub is only available in the PlayFab SDK for **Unity 2018 or later**.
 - While in private preview, there is no SLA for PlayFab PubSub. We do not recommend shipping a game which uses this feature.

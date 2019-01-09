@@ -1,5 +1,8 @@
 - name: Overview
   href: index.md
+  items:
+  - name: Global API error codes
+    href: global-api-method-error-codes.md
 - name: Quickstart
   href: quickstart.md
 - name: Tutorials
@@ -17,8 +20,6 @@
     href: getting-playfab-developer-keys.md
   - name: Getting Started with PlayFab
     href: getting-started-with-playfab.md
-  - name: Global API method error codes
-    href: global-API-method-error-codes.md
   - name: Migrating from Parse to PlayFab
     href: migrating-from-parse-to-playfab.md
   - name: Running an HTTP server for testing

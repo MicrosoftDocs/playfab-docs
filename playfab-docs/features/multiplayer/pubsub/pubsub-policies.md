@@ -18,7 +18,7 @@ PubSub events are governed by a set of policies which control who is allowed to 
 
 ## Configuring policies
 
-For your clients to receive any events via PubSub, you must first configure the appropriate policies on the PubSub Policy page within Game Manager. To open this UI, navigate in a web browser to `https://developer.playfab.com/en-US/`*[your-title-id]*`/pubsub/policies` (replace *[your-title-id]* with the actual ID of your title).
+For your clients to receive any events via PubSub, you must first configure the appropriate policies on the PubSub Policy page within Game Manager. Open **Game Manager** and navigate to the **Settings** tab on the left, and then to the **PubSub** tab on the top.
 
 ![Screenshot of PubSub Policy configuration page.](images/pubsub-policy-list-ui.png)
 
@@ -30,9 +30,9 @@ To create a new PubSub policy, click on the **NEW POLICY** button at the top rig
 
 ![Screen shot of the new PubSub policy configuration page](images/new-pubsub-policy.png)
 
-Set the required fields to indicate the type of event (standard events are under the `com.playfab` namespace). Check the appropriate boxes under **SUBSCRIBE** to control who is allowed to receive these events.
+For standard PlayFab events, select a **Namespace** and **Event Name** from the dropdowns to indicate what sort of event you wish to configure (standard events are under the `com.playfab` namespace). Then choose the type of entity which will be subscribing to the desired event in the **Target Entity** dropdown. Check the appropriate boxes under **SUBSCRIBE** to control who is allowed to receive these events. For now, ignore the check boxes under **PUBLISH** as they currently have no effect.
 
-For custom events the process is largely the same, the big difference being that you need to type in the full namespace (beginning with `com.playfab.events`) and name of the event.
+For custom events the process is largely the same, the big difference being that you need to select "Custom" for the namespace and then type in the full namespace (beginning with `com.playfab.events`) and name of the event into the text boxes which show up.
 
 ![Screen shot of the new custom PubSub policy configuration page](images/new-custom-policy.png)
 
@@ -42,6 +42,6 @@ When you are ready, click **SAVE** to store and enable your new policy.
 
 ## Edit policy
 
-To edit a policy later, click on its Event Name in the list of policies. When editing a policy, you cannot change any of the fields which make up the topic of the event. If you wish to change the topic, create a new policy and delete the old one.
+To edit a policy later, click on its **Event Name** in the list of policies. When editing a policy, you cannot change any of the fields which make up the topic of the event. If you wish to change the topic, create a new policy and delete the old one.
 
 ![Screenshot of the event name link.](images/click-to-edit.png)

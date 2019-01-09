@@ -39,7 +39,7 @@ The pubsub feature does not come with the PlayFab SDK by default. You can acquir
 ### Installing from GitHub
 
 1. Login to GitHub.
-2. Go to [GitHub: PlayFab PubSub](https://github.com/PlayFab/UnitySignalRBetaSdk/releases/download/0.0.1/PubSub.unitypackage) - If you don't have access to this repository, please request it via devrel@playfab.com.
+2. Go to [GitHub: PlayFab PubSub](https://github.com/PlayFab/UnitySignalRBetaSdk/releases/download/0.0.1/PubSub.unitypackage) - If you don't have access to this repository, please speak with your PlayFab contact.
 3. If the above link didn't automatically download, then you can click on the releases tab and download the latest released distribution package. You may also obtain updates from this location.
 4. Open the **PubSub.unityPackage**.
 5. Click **Import All** to import all the files into your Unity Project.
@@ -48,7 +48,7 @@ The pubsub feature does not come with the PlayFab SDK by default. You can acquir
 
 Using the pubsub plugin is pretty easy. If you have not looked at our reference for this feature, you should get familiar with it at [PubSub client API](pubsub-reference.md).
 
-1. **Initializing PubSub** - While you can initialize the plugin at any time in your code, we recommend that you initialize in either the start or awake method. When just getting started it also helps to set `Debugging` to true.
+1. **Initializing PubSub** - While you can initialize the plugin at any time in your code, we recommend that you initialize in either the `start` or `awake` method. When just getting started it also helps to set `Debugging` to true.
 
    ```csharp
    PlayFabSocketsAPI.Debugging = true;
@@ -81,7 +81,7 @@ Using the pubsub plugin is pretty easy. If you have not looked at our reference 
 
    And you will need handlers for each of these events.
 
-   ```C#
+   ```csharp
    private void OnSocketsConnected()
    {
        // We will subscribe to topics and register handlers here
@@ -99,7 +99,7 @@ Using the pubsub plugin is pretty easy. If you have not looked at our reference 
    }
    ```
 
-4. **Create a topic message** - To create a topic, we must create an Entity Object and a Topic object to pass to the Subscribe method. You will put this code in the ``OnSocketsConnected()`` method you defined in step 3.
+4. **Create a topic message** - To create a topic, we must create an Entity Object and a Topic object to pass to the Subscribe method. In this example, we will use the current logged in Player's Entity. You will put this code in the ``OnSocketsConnected()`` method you defined in step 3.
 
    ```csharp
    //First we must transform your EntityKey that you received at login, to the proper Entity Object
@@ -122,22 +122,22 @@ Using the pubsub plugin is pretty easy. If you have not looked at our reference 
    topics.Add(objectChangeTopic);
    ```
 
-5. **Create a Handler** - Create a handler for when your event is received. Add the following after you create your Topic:
+5. **Register a Handler** - Register a handler for when your event is received. Add the following after you create your Topic:
 
    ```csharp
    PlayFabSocketsAPI.RegisterHandler(customEventTopic, OnCustomEvent);
    ```
 
-6. **Create a Handler Method** - Be sure to add your method that you defined in the previous step. Here we are just logging the received JSON payload. You can use `var myMessage = netMsg.ReadMessage<T>` where T is a model you want to deserialize to make this a strongly typed object.
+6. **Create a Handler Method** - Be sure to define the method that you registered in the previous step. In this example we are just logging the received JSON payload. You can use `var myMessage = netMsg.ReadMessage<T>` where T is a model you want to de-serialize to make this a strongly typed object.
 
    ```csharp
    private void OnCustomEvent(PlayFabNetworkMessage netMsg)
    {
-       Debug.Log(netMsg.PayloadJSON);		
+       Debug.Log(netMsg.PayloadJSON);
    }
    ```
 
-7. **Subscribe to topic(s)** - Now that you have topics you want to subscribe to, we need to notify the relay server that we want to receive these events. This does require that you have setup a policy to allow this. For more information, see [PubSub policies](pubsub-policies.md).
+7. **Subscribe to topic(s)** - Now that you have topics you want to subscribe to, we need to notify the PubSub service that we want to receive these events. This requires that you have setup a policy to allow this. For more information, see [PubSub policies](pubsub-policies.md).
 
    ```csharp
    //send topic subscriptions and output any success or failures
@@ -160,15 +160,15 @@ Using the pubsub plugin is pretty easy. If you have not looked at our reference 
    });
    ```
 
-## Setup the event
+## Example usage
 
-In this example, we are triggering a custom event from a player. The event name is **custom_event_name** and we will increment a statistic **Score** from that custom event and return the result to the player via PubSub. 
+In this example, we will use a custom Cloud Script function to increment a statistic, **Score**, and then push a message to the player with the updated player statistics via PubSub.
 
-1. First we need to create a statistic for Players. This is also known as [Leaderboards](../../social/tournaments-leaderboards/index.md). Click on Leaderboards and create a new leaderboard with the following settings:
+1. First we need to create a statistic for Players. This is done under [Leaderboards](../../social/tournaments-leaderboards/index.md). Click on **Leaderboards** and create a new leaderboard with the following settings:
 
    ![Leaderboard Statistic Setup](images/leaderboard-setup-score.png)
 
-2. We need a [CloudScript](../../automation/cloudscript/index.md) that you can run on a player to increment the statistic for the player and then fire your custom event. You can edit this directly in PlayFab by going to **Automation --> Cloud Script**. Add the following handler to your Cloud Script:
+2. We need a [CloudScript](../../automation/cloudscript/index.md) function that you can run on a player to increment the statistic for the player and then fire your custom event. You can edit this directly in PlayFab by going to **Automation --> Cloud Script**. Add the following handler to your Cloud Script:
 
    ```javascript
 
