@@ -11,8 +11,8 @@
   - name: Features
     items:
     - name: Authentication
-      tocHref: /gaming/playfab/feature-authentication/
-      topicHref: /gaming/playfab/feature-authentication/
+      tocHref: /gaming/playfab/?#pivot=documentation&panel=authentication
+      topicHref: /gaming/playfab/?#pivot=documentation&panel=authentication
       items:
       - name: Linking & Unlinking
         tocHref:  /gaming/playfab/features/authentication/linking-unlinking/
@@ -21,8 +21,8 @@
         tocHref: /gaming/playfab/features/authentication/platform-specific-authentication/
         topicHref: /gaming/playfab/features/authentication/platform-specific-authentication/
     - name: Data
-      tocHref: /gaming/playfab/feature-data/
-      topicHref: /gaming/playfab/feature-data/
+      tocHref: /gaming/playfab/?#pivot=documentation&panel=data
+      topicHref: /gaming/playfab/?#pivot=documentation&panel=data
       items:
       - name: Entities
         tocHref: /gaming/playfab/features/data/entities/
@@ -34,8 +34,8 @@
         tocHref: /gaming/playfab/features/data/content-delivery-network/
         topicHref: /gaming/playfab/features/data/content-delivery-network/
     - name: Config
-      tocHref: /gaming/playfab/feature-config/
-      topicHref: /gaming/playfab/feature-config/
+      tocHref: /gaming/playfab/?#pivot=documentation&panel=config
+      topicHref: /gaming/playfab/?#pivot=documentation&panel=config
       items:
       - name: Game Manager
         tocHref: /gaming/playfab/features/config/gamemanager/
@@ -47,8 +47,8 @@
         tocHref: /gaming/playfab/features/config/dev-test-live/
         topicHref: /gaming/playfab/features/config/dev-test-live/
     - name: Automation
-      tocHref: /gaming/playfab/feature-automation/
-      topicHref: /gaming/playfab/feature-automation/
+      tocHref: /gaming/playfab/?#pivot=documentation&panel=automation
+      topicHref: /gaming/playfab/?#pivot=documentation&panel=automation
       items:
       - name: CloudScript
         tocHref: /gaming/playfab/features/automation/cloudscript/
@@ -63,8 +63,8 @@
         tocHref: /gaming/playfab/features/automation/ scheduled-tasks/
         topicHref: /gaming/playfab/features/automation/ scheduled-tasks/
     - name: Social
-      tocHref: /gaming/playfab/feature-social/
-      topicHref: /gaming/playfab/feature-social/
+      tocHref: /gaming/playfab/?#pivot=documentation&panel=social
+      topicHref: /gaming/playfab/?#pivot=documentation&panel=social
       items:
       - name: Friends & Groups
         tocHref: /gaming/playfab/features/social/friends-groups/
@@ -76,8 +76,8 @@
         tocHref: /gaming/playfab/features/social/trading/
         topicHref: /gaming/playfab/features/social/trading/
     - name: Commerce
-      tocHref: /gaming/playfab/feature-commerce/
-      topicHref: /gaming/playfab/feature-commerce/
+      tocHref: /gaming/playfab/?#pivot=documentation&panel=commerce
+      topicHref: /gaming/playfab/?#pivot=documentation&panel=commerce
       items:
       - name: Items
         tocHref: /gaming/playfab/features/commerce/items/
@@ -89,8 +89,8 @@
         tocHref: /gaming/playfab/features/commerce/economy/
         topicHref: /gaming/playfab/features/commerce/economy/
     - name: Multiplayer
-      tocHref: /gaming/playfab/feature-multiplayer/
-      topicHref: /gaming/playfab/feature-multiplayer/
+      tocHref: /gaming/playfab/?#pivot=documentation&panel=multiplayer
+      topicHref: /gaming/playfab/?#pivot=documentation&panel=multiplayer
       items:
       - name: Compute
         tocHref: /gaming/playfab/features/multiplayer/compute/
@@ -102,8 +102,8 @@
         tocHref: /gaming/playfab/features/multiplayer/photon/
         topicHref: /gaming/playfab/features/multiplayer/photon/
     - name: Analytics
-      tocHref: /gaming/playfab/feature-analytics/
-      topicHref: /gaming/playfab/feature-analytics/
+      tocHref: /gaming/playfab/?#pivot=documentation&panel=analytics
+      topicHref: /gaming/playfab/?#pivot=documentation&panel=analytics
       items:
       - name: Metrics
         tocHref: /gaming/playfab/features/analytics/metrics/
@@ -118,8 +118,8 @@
         tocHref: /gaming/playfab/features/analytics/segmentation/
         topicHref: /gaming/playfab/features/analytics/segmentation/
     - name: Engagement
-      tocHref: /gaming/playfab/feature-engagement/
-      topicHref: /gaming/playfab/feature-engagement/
+      tocHref: /gaming/playfab/?#pivot=documentation&panel=engagement
+      topicHref: /gaming/playfab/?#pivot=documentation&panel=engagement
       items:
       - name: Push Notifications
         tocHref: /gaming/playfab/features/engagement/push-notifications/
@@ -131,8 +131,8 @@
         tocHref: /gaming/playfab/features/engagement/news/
         topicHref: /gaming/playfab/features/engagement/news/
   - name: SDKs
-    tocHref: /gaming/playfab/sdks/
-    topicHref: /gaming/playfab/sdks/
+    tocHref: /gaming/playfab/?#pivot=documentation&panel=sdks
+    topicHref: /gaming/playfab/?#pivot=documentation&panel=sdks
     items:
     - name: ActionScript
       tocHref: /gaming/playfab/sdks/actionscript/
