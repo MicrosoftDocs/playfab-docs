@@ -34,7 +34,6 @@ error=> Debug.LogError(error.GenerateErrorReport()));
 ```
 
 As a side effect, **PlayFab** will record a **player_logged_in Event**. Consider using the [Event History](event-history.md) to test the described behavior.
-
 ![Game Manager - Event History Chart](media/tutorials/game-manager-event-history-chart.png)  
 
 ## Custom Event Overview

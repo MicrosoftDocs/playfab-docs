@@ -19,17 +19,17 @@ ms.localizationpriority: medium
 - [Optional] [Unity Editor Extensions](https://blog.playfab.com/blog/new-unity-editor-extensions-beta)
 - [Optional] [Executing the PlayFab API via Postman](../../config/dev-test-live/executing-the-playfab-api-via-postman.md)
 
-## Configuring the Android notification channel
+## Configuring the Android Notification channel
 
 > [!NOTE]
-> The Google and Firebase developer consoles experience changes regularly. The setup description in this section best describes the values you need - and how to get them - as of June 2017.
+> The **Google** and **Firebase** developer consoles experience changes regularly. The setup description in this section best describes the values you need - and how to get them - as of June 2017.
 
 ### Google and Firebase setup
 
-There are three Google websites that you must use and synchronize. In Google/Firebase, there are both **Projects** and **Apps**:
+There are three **Google** websites that you must use and synchronize. In **Google/Firebase**, there are both **Projects** and **Apps**:
 
 - **Project**:
-  - Ensure that your **Project** is setup and accessible from the [Google API Manager](https://console.developers.google.com/).
+  - Ensure that your **Project** is set up and accessible from the [Google API Manager](https://console.developers.google.com/).
   - Import your **Project** into the [Firebase Console](https://console.firebase.google.com/) if it's not already there.
 
 - **App**:
@@ -37,9 +37,9 @@ There are three Google websites that you must use and synchronize. In Google/Fir
   - The [Google Play Dev Console](https://play.google.com/apps/publish/) also contains **Apps**.
   - Make sure your **App** exists in both locations, with the same name and identifier (for example, [Unicorn Battle and com.playfab.unicornbattle2](https://play.google.com/store/apps/details?id=com.playfab.unicornbattle2)).
 
-### PlayFab requires a server API Key
+### PlayFab requires a Server API Key
 
-- You can get this key from the [Google API Manager](https://console.developers.google.com/), or from the [Firebase Console](https://console.firebase.google.com/)
+- You can get this **Key** from the [Google API Manager](https://console.developers.google.com/), or from the [Firebase Console](https://console.firebase.google.com/)
 - **Google API Manager**:
   - Select your **Project**.
   - Select **Credentials** (left menu).
@@ -49,21 +49,20 @@ There are three Google websites that you must use and synchronize. In Google/Fir
   - In the **General** tab, this is listed as the **Web API Key**.
   - In the **Cloud Messaging** tab, this is listed as the **Legacy server key**.
 
-- All of the keys described above should be identical, and they are all the **API Key** described in this document.
+- All of the **Keys** described above should be identical, and they are all the **API Key** described in this document.
 
 > [!NOTE]
-> If they are not identical, the **Legacy server key** is the one needed by PlayFab.
+> If they are not identical, the **Legacy server key** is the one needed by **PlayFab**.
 
 ## Using the API Key
 
 - Provide your **API Key** in one of two ways:
-  1. Input your key directly into the **Game Manager** UI: **Settings (for your title) > Push Notifications > Android**
-
-  2. Or call [SetupPushNotification](xref:titleid.playfabapi.com.admin.title-widedatamanagement.setuppushnotification) using **Postman** or a **Unity** project with **Server API** methods enabled:
+  1. Input your **Key** directly into the **Game Manager UI**: **Settings** (for your **Title**) > **Push Notifications** > **Android**.
+  2. Or call [SetupPushNotification](xref:titleid.playfabapi.com.admin.title-widedatamanagement.setuppushnotification) using **Postman** or a **Unity** project with **Server API** methods enabled.
   
     - Name: **your_game_name**
     - Platform: **GCM**
-    - Credential: (Google server API key) : "AIza******ppo"
+    - Credential: (**Google** server **API Key**) : **AIza******ppo**
     - OverwriteOldARN: **true**
     - You should receive an **HTTP 200 OK** response with data similar to the following.
 
@@ -75,7 +74,7 @@ There are three Google websites that you must use and synchronize. In Google/Fir
           "data": { "ARN" : "arn:*******/GCM/your_game_name" }
       }
       ```
-- Once set up properly (using either method), you should see this in the **Game Manager** UI **Settings (for your title) > Push Notifications > Android**.
+- Once set up properly (using either method), you should see this in the **Game Manager UI** **Settings (for your title) > Push Notifications > Android**.
 
   ![PlayFab Settings - Push Notifications - Android](../media/tutorials/playfab-settings-push-notification-android.png)
 
@@ -86,16 +85,16 @@ There are three Google websites that you must use and synchronize. In Google/Fir
 - Create a new **Unity** project.
 - [OPTIONAL] Import the [PlayFab Unity Editor Extensions](https://api.playfab.com/downloads/unity-edex) package.
 - Import the [Unity PlayFab SDK](https://api.playfab.com/downloads/unity-v2ap) package.
-- Follow the [FCM Unity](https://firebase.google.com/docs/cloud-messaging/unity/client) guide to install FCM messaging, and set up a project for push notifications.
-  - Once finished, you can continue with this guide to receive messages from PlayFab.
-  - We will give you a complete FCM-ready MonoBehaviour script in the following example, which combines FCM and PlayFab.
+- Follow the [FCM Unity](https://firebase.google.com/docs/cloud-messaging/unity/client) guide to install **FCM** messaging, and set up a project for push notifications.
+  - Once finished, you can continue with this guide to receive messages from **PlayFab**.
+  - We will give you a complete **FCM**-ready monoBehaviour script in the following example, which combines **FCM** and **PlayFab**.
 
 - In the **FCM guide**, you created a monobehavior that set up the **Firebase** plugin.
   - You can continue using that monobehavior, or replace it with the one in the following example.
 
 ### Setting up your first Push Notification
 
-In Unity, open the script you created in the FCM tutorial, and replace the contents with the following example.
+In **Unity**, open the script you created in the **FCM** tutorial, and replace the contents.
 
 ```csharp
 using PlayFab;
@@ -192,22 +191,22 @@ public class MsgCatcher : MonoBehaviour
 }
 ```
 
-Build and run your **Unity** project on a device. If you receive a push notification with the text **Push notifications registered successfully**, then everything worked as expected.
+Build and run your **Unity** project on a device. If you receive a **Push Notifications** with the text **Push notifications registered successfully**, then everything worked as expected.
 
 > [!NOTE]
 > **PlayFabSettings.TitleId = TITLE_ID**. 
-> You must set your own **TitleId**. This example will not work if you don't update this **TitleId**, because our title is registered with our **Firebase** keys and settings, *not yours*. You can do so by un-commenting this line and replacing **TITLE_ID** with your **titleId**, or you can choose your title from the optional **Editor Extensions** plugin mentioned in the previous section.
+> You must set your own **TitleId**. This example will not work if you don't update this **TitleId**, because our **Title** is registered with our **Firebase Keys** and settings, *not yours*. You can do so by un-commenting this line and replacing **TITLE_ID** with your **titleId**, or you can choose your **Title** from the optional **Editor Extensions** plugin mentioned in the previous section.
 
 ### Troubleshooting Android
 
-- Verify that you can send a test push notification from the **Firebase** Console.
+- Verify that you can send a test **Push Notifications** from the **Firebase** Console.
   - If you cannot, then your **Firebase** plugin is not set up correctly, and you should review the **Firebase Documentation** to find out why, or contact **Firebase Support**.
 
 - Ensure your **FCM client pushToken** is set properly.
   - The **OnTokenReceived** function in the example should be called, and should have a valid token.
-  - If it is *not* called, your **Firebase** plugin is not set up correctly, and you should review the **Firebase Documentation** to find out why, or contact **Firebase Support**.
+  - If it is *not* called, your **Firebase** plugin is *not* set up correctly, and you should review the **Firebase Documentation** to find out why, or contact **Firebase Support**.
 
-- Ensure your **titleId** is set to a title that you own, and that the title has been registered with the server **API-Key** from your **Firebase** project.
+- Ensure your **titleId** is set to a **Title** that you own, and that it has been registered with the server **API-Key** from your **Firebase** project.
 
 ### Advanced Features
 
@@ -217,7 +216,9 @@ In **server.[SendPushNotification](xref:titleid.playfabapi.com.server.accountman
  Debug.Log("PlayFab: Received a message with data:");
 ```
 
-You can customize your client receiver to utilize that data however you like. **CustomData** is not displayed to the player, so it can be used to deliver custom game information to your client, or to locally schedule another future notification using the **FCM** plugin. You can also use **[request.Package](xref:titleid.playfabapi.com.server.accountmanagement.sendpushnotification#pushnotificationpackage).CustomData** or request **[AdvancedPlatformDelivery](xref:titleid.playfabapi.com.server.accountmanagement.sendpushnotification#advancedpushplatformmsg)** to deliver to many 3rd party plugins. 
+You can customize your **Client** receiver to utilize that data however you like. **CustomData** is not displayed to the **Player**, so it can be used to deliver custom game information to your **Client**, or to locally schedule another future notification using the **FCM** plugin.
+
+You can also use **[request.Package](xref:titleid.playfabapi.com.server.accountmanagement.sendpushnotification#pushnotificationpackage).CustomData** or request **[AdvancedPlatformDelivery](xref:titleid.playfabapi.com.server.accountmanagement.sendpushnotification#advancedpushplatformmsg)** to deliver to many 3rd party plugins. 
 
 > [!NOTE]
 > 3rd party plugin delivery is not supported or guaranteed, but is available for advanced users.
@@ -226,8 +227,8 @@ You can customize your client receiver to utilize that data however you like. **
 
 For help, example bugs, and related questions, drop us a line in our [Forums](https://community.playfab.com/index.html).
 
-Currently, we only support our services for the standard flow described in this document. If you team is looking for additional functionality with other common push services or plugins, please let us know! We love getting feedback from our developer community.
+Currently, we only support our services for the standard flow described in this document. If you team is looking for additional functionality with other common **Push** services or plugins, please let us know! We love getting feedback from our developer community.
 
-For documentation on the push payload via Amazon SNS:
+For documentation on the **Push** payload via **Amazon SNS**:
 
 - [Amazon SNS Message & JSON Formats](https://docs.aws.amazon.com/sns/latest/dg/json-formats.html)

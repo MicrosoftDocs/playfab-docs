@@ -12,11 +12,11 @@ ms.localizationpriority: medium
 
 # Push Notifications quickstart
 
-Push notifications give you a channel to send an immediate, customized message to your player’s home screen. Using PlayFab's push feature, you may send unlimited push notifications to any number of devices completely free of charge. 
+**Push Notifications** give you a channel to send an immediate, customized message to your **Player’s** home screen. Using **PlayFab's Push** feature, you may send unlimited **Push Notifications** to any number of devices completely free of charge.
 
-As a general guideline, always tell players *up front* how you will be using the push notification service. Explaining to players how your game rewards or communicates via push notification can be the difference in building community engagement versus driving players away.
+As a general guideline, always tell **Players** *up front* how you will be using the **Push Notification** service. Explaining to **Players** how your game rewards or communicates via **Push Notification** can be the difference in building community engagement versus driving **Players** away.
 
-The following screenshot is an example from an Android device's **Notifications** area showing a **Push Notification**.
+The following screenshot is an example from an **Android** device's **Notifications** area showing a **Push Notification**.
 
 ![Android device - Notifications screen](../media/tutorials/android-notifications-screen.png)  
 
@@ -24,19 +24,19 @@ The following screenshot is an example from an Android device's **Notifications*
 
 **Push Notifications** are possible due to a delicate linkage of three major systems:
 
-1. The vendor-specific channel (Google, Apple, etc.)
-2. The player’s OS/device (Android, iOS, etc.)
-3. Cross-platform message routing (PlayFab via Amazon Simple Notification Service [SNS]).
+1. The vendor-specific channel (**Google**, **Apple**, etc.)
+2. The **Player’s OS**/device (**Android**, **iOS**, etc.)
+3. Cross-platform message routing (**PlayFab** via **Amazon Simple Notification Service** [**SNS**]).
 
 > [!NOTE]
-> If any of these systems are unlinked, clients will stop getting notifications. It is fairly simple to accidentally change one of the three systems and thereby break the link. Furthermore, it is difficult to know at any individual point in the flow if all of the systems are configured properly.
+> If any of these systems are unlinked, **Clients** will stop getting notifications. It is fairly simple to accidentally change one of the three systems and thereby break the link. Furthermore, it is difficult to know at any individual point in the flow if all of the systems are configured properly.
 
-## The PlayFab push routing system
+## The PlayFab Push routing system
 
-Every PlayFab title can enable one Google (GCM) and one Apple Push (APNS, APNS_SANDBOX) notification channel at a given time. This can be configured one of two ways:
+Every **PlayFab Title** can enable one **Google** (**GCM**) and one **Apple Push** (**APNS**, **APNS_SANDBOX**) notification channel at a given time. This can be configured in one of two ways:
 
-1. Using the UI in **Game Manager** under **Settings -> Push Notifications**.
-2. Using the PlayFab **Admin API - [SetupPushNotification](xref:titleid.playfabapi.com.admin.title-widedatamanagement.setuppushnotification)**.
+1. Using the **UI** in **Game Manager** under **Settings -> Push Notifications**.
+2. Using the **PlayFab Admin API** - [SetupPushNotification](xref:titleid.playfabapi.com.admin.title-widedatamanagement.setuppushnotification).
 
 For more detailed setup information, read these tutorials:
 
@@ -45,41 +45,41 @@ For more detailed setup information, read these tutorials:
 
 ## Push messages in-game
 
-**Push Messages** will vary based on the development engine/platform. However, the easiest way to receive push notifications is using a **Unity** project with our SDK and the **Firebase Cloud Messaging (FCM)** plugin for Android, or just **Unity for iOS**.
+**Push Messages** will vary based on the development engine/platform. However, the easiest way to receive **Push Notifications** is using a **Unity** project with our **SDK** and the **Firebase Cloud Messaging (FCM)** plugin for **Android**, or just **Unity for iOS**.
 
-- **Receiving push on Android** - This requires a plugin. The best supported plugin is the native FCM plugin.
-- **Receiving push on iOS** - This *does not* require a plugin for basic push messages.
+- **Receiving push on Android** - This requires a plugin. The best supported plugin is the native **FCM** plugin.
+- **Receiving push on iOS** - This *does not* require a plugin for basic **Push** messages.
 
 > [!TIP]
-> Please see the FCM Documentation for instructions on how to set up the [FCM Unity plugin](https://firebase.google.com/docs/cloud-messaging/unity/client), or push on [Android Studio](https://firebase.google.com/docs/cloud-messaging/android/client).
+> Please see the **FCM** documentation for instructions on how to set up the [FCM Unity plugin](https://firebase.google.com/docs/cloud-messaging/unity/client), or push on [Android Studio](https://firebase.google.com/docs/cloud-messaging/android/client).
 
 ## Testing the setup
 
-After configuring your **Title** and **Client**, you can test your configuration using the PlayFab Server API - [SendPushNotification](xref:titleid.playfabapi.com.server.accountmanagement.sendpushnotification). This API allows you to send as many push notifications as needed at no extra cost.
+After configuring your **Title** and **Client**, you can test your configuration using the **PlayFab Server API** - [SendPushNotification](xref:titleid.playfabapi.com.server.accountmanagement.sendpushnotification). This **API** allows you to send as many **Push Notifications** as needed at no extra cost.
 
-You can use the PlayFab **CloudScript** service as a quick and secure server API environment. From there, push notifications can be sent as needed.
+You can use the **PlayFab CloudScript** service as a quick and secure server **API** environment. From there, **Push Notifications** can be sent as needed.
 
-To use this method to test your configuration, upload or append the code in the following example to your title’s **CloudScript**.
+To use this method to test your configuration, upload or append the code in the following example to your **Title’s CloudScript**.
 
 ### Example
 
 Consider the following scenario:
 
-- Players in your title may access a Leaderboard based on **Rank** statistics.
+- **Players** in your **Title** may access a **Leaderboard** based on **Rank** statistics.
 
-- Each player may pay 1 CH currency and challenge another player who is up to 5 positions away from the current player.
+- Each **Player** may pay 1 CH **Currency** and challenge another **Player** who is up to 5 positions away from the current **Player**.
 
-First, consider a virtual currency as shown in the example screenshot shown below (see the [Currencies](../../commerce/economy/currencies.md) tutorial for information on how to define a virtual currency).
+First, consider a **Virtual Currency** as shown in the example screenshot below (see the [Currencies](../../commerce/economy/currencies.md) tutorial for information on how to define a **Virtual Currency**).
 
 ![PlayFab Economy - Currencies - New Currency](../media/tutorials/playfab-new-currency.png)
 
-Now, consider the following Statistics defined for each player (see the [Accessing Archived Tournament Results](../../social/tournaments-leaderboards/accessing-archived-tournament-results.md) tutorial for information on how to generate a test leaderboard).
+Now, consider the following **Statistics** defined for each **Player** (see the [Accessing Archived Tournament Results](../../social/tournaments-leaderboards/accessing-archived-tournament-results.md) tutorial for information on how to generate a test **Leaderboard**).
 
 ![PlayFab player Statistics - Rank](../media/tutorials/playfab-statistics-player-rank.png)  
 
-Once you've set up these prerequisites, you can set up a push-notification challenge system.
+Once you've set up these prerequisites, you can set up a **Push Notification** challenge system.
 
-The following client code will call the **CloudScript** **ChallengePlayer**.
+The following **Client** code will call the **CloudScript** **ChallengePlayer**.
 
 ```csharp
 public void ChallengeRandomClosePlayer(string currentPlayerId) {
@@ -109,7 +109,7 @@ public void OnPlayFabError(PlayFabError obj) {
 }
 ```
 
-The "ChallengePlayer" CloudScript code will handle the request, validate leaderboard state, and send the challenge push-notification to the target:
+The **ChallengePlayer CloudScript** code will handle the request, validate the **Leaderboard** state, and send the challenge **Push Notification** to the target.
 
 ```javascript
 handlers.ChallengePlayer = function (args) {
@@ -155,28 +155,31 @@ handlers.ChallengePlayer = function (args) {
 
 ## Push Notification Best Practices
 
-Having the ability to use push notifications is an awesome power. When *abused*, however, it can drive away users and cause them to not only opt out of future notifications but to leave a game entirely. 
+Having the ability to use **Push Notifications** is an awesome power. When *abused*, however, it can drive away **Users** and cause them to not only opt out of future notifications but to *leave a game entirely*.
 
-If used judiciously, though, push notifications can be one of your best tools for building and maintaining your game's community.
+If used judiciously, though, **Push Notifications** can be one of your best tools for building and maintaining your game's community.
 
-Push notifications are a *fire and forget* message protocol, similar in vein to UDP. *Always remember that there is no guarantee that your players will receive, open, or engage with your message*. With that caveat, it is a good practice to use messages as bonus content, rather than as a critical part of your gameplay loop.
+**Push Notifications** are a *fire and forget* message protocol, similar in vein to **UDP**.
 
-For iOS platforms, apps are given a one-time dialog prompt from the OS, allowing the user to determine the status of push notifications. After the user has made their initial selection, this setting will persist until:
+> [!NOTE]
+> Remember that there is *no guarantee* that your **Players** will receive, open, or engage with your message. With that caveat, it is a good practice to use messages as *bonus* content, rather than as a critical part of your gameplay loop.
 
-- The app is updated or reinstalled.
+For **iOS** platforms, **Apps** are given a one-time dialog prompt from the **OS**, allowing the **User** to determine the status of **Push Notifications**. After the **User** has made their initial selection, this setting will persist until:
 
-- The user makes changes to the settings from their phone’s settings menu.
+- The **App** is updated or reinstalled.
 
-For Android apps, notifications are enabled by default, and can be turned on and off at will from the client. 
+- The **User** makes changes to the settings from their phone’s settings menu.
+
+For **Android Apps**, notifications are enabled by default, and can be turned on and off at will from the **Client**.
 
 > [!TIP]
-> It is a good practice to re-initialize your notification listeners with every session.
+> It is a good practice to re-initialize your **Notification** listeners with every session.
 
 ## Resources
 
 The following resources provide additional information about the topics in this quickstart:
 
-- [Firebase Unity SDK](https://firebase.google.com/docs/unity/setup):  An all-in-one FCM solution for Unity. This SDK, among all other features, allows you to receive and process push notifications sent via FCM.
-- [Push It Real Good: How to Get Players to Say Yes to Push Notifications](https://blog.playfab.com/blog/push-it-real-good-how-get-players-say-yes-push-notifications/): This blog post details additional strategies and techniques for using push notifications.
-- [Push Notifications](https://blog.playfab.com/blog/push-sep-17): This blog post describes the most recent upgrade in push functionality and switching to FCM as the primary plugin for Android.
-- [Executing the PlayFab API via Postman](../../config/dev-test-live/executing-the-playfab-api-via-postman.md): This tutorial shows you how to test our APIs using Postman.
+- [Firebase Unity SDK](https://firebase.google.com/docs/unity/setup):  An all-in-one **FCM** solution for **Unity**. This **SDK**, among all other features, allows you to receive and process push notifications sent via **FCM**.
+- [Push It Real Good: How to Get Players to Say Yes to Push Notifications](https://blog.playfab.com/blog/push-it-real-good-how-get-players-say-yes-push-notifications/): This blog post details additional strategies and techniques for using **Push Notifications**.
+- [Push Notifications](https://blog.playfab.com/blog/push-sep-17): This blog post describes the most recent upgrade in **Push** functionality, and switching to **FCM** as the primary plugin for **Android**.
+- [Executing the PlayFab API via Postman](../../config/dev-test-live/executing-the-playfab-api-via-postman.md): This tutorial shows you how to test our **APIs** using **Postman**.

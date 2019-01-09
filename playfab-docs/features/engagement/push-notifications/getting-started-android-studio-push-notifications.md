@@ -35,7 +35,7 @@ It also allows other services (like **PlayFab**) to send **Push Notifications** 
 
 **PlayFab Services** then uses the **FCM Server Key** to send **Push Notifications** to your **Clients**.
 
-Finally, your **Client Application** may receive notifications and process them as needed.
+Finally, your **Client Application** may receive **Notifications** and process them as needed.
 
 As a result, we need to set up *4 different systems*. This tutorial is split into 4 Chapters, covering the configuration for each piece.
 
@@ -53,7 +53,7 @@ As a result, we need to set up *4 different systems*. This tutorial is split int
 In this section of our tutorial, we will be assembling an **Application** called **Foo PlayFab App**. It is an **Android App** that has the following functions:
 
 - It signs into **PlayFab** using an **Android Device ID**.
-- It receives push notifications from **PlayFab**.
+- It receives **Push Notifications** from **PlayFab**.
 
 Our **package name** will be **com.foo.playfab.app**.
 
@@ -133,7 +133,7 @@ Start by visiting the [Google Play Console page](https://play.google.com/apps/pu
 
 ![Google Play - Create application](../media/tutorials/google-play-create-application.png)
 
-- The **Google Play Console project** page will open.
+- The **Google Play Console Project** page will open.
 
 - Select **Services & APIs** on the side menu.
 
@@ -156,7 +156,7 @@ To link the **Sender ID**:
 
 ![Google Play Console - Firebase Console - match sender ID](../media/tutorials/google-play-firebase-match-sender-id.png)
 
-At this point, the **Google Play Console** project is successfully linked to the **Firebase** project.
+At this point, the **Google Play Console Project** is successfully linked to the **Firebase Project**.
 
 ### Chapter 3: Configuring PlayFab Title
 
@@ -330,7 +330,7 @@ In the following code, replace any **MY_PACKAGE_IDENTIFIER** placeholders with y
 The following placeholders in the code should be replaced according to your scenario.
 
 - **PLAYFAB_TITLE_ID**
-  - Use the **Id** for your **Title** that you received in **PlayFab Game Manager**.
+  - Use the **ID** for your **Title** that you received in **PlayFab Game Manager**.
 
 - **PACKAGE_IDENTIFIER**
   - Use the **Java package identifier** that matches your setup.
@@ -508,7 +508,7 @@ At this point, you should be able to deploy the **Application** to the device.
 
 - Once you start the **Application**, it will automatically log in and register for **Push Notifications**.
 
-- Select the **Home** button on your device to **minimize the application**. *This is important*, as it allows us to test the **Notification** that arrives into the system tray.
+- Select the **Home** button on your device to **minimize the Application**. *This is important*, as it allows us to test the **Notification** that arrives into the system tray.
 - Next, go to your **PlayFab Title Game Manager** page, use the **Dashboard** to locate the latest **Push Registration**.
 - Select the **Player ID (1)**.
 
