@@ -1,6 +1,6 @@
 ---
 layout: HubPage
-hide_bc: true
+hide_bc: false
 experimental: true
 experiment_id: "81ba5f65-59fb-4d"
 title: PlayFab Documentation
