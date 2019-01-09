@@ -19,7 +19,7 @@ This an important topic because storing a game's configuration data remotely, on
 Title data is represented as **Key/Value Pairs (KVPs)**, that can only be associated with a specific **Title**.
 
 > [!NOTE]
-> Title data values are copied and distributed to potentially *hundreds* of machines in the **PlayFab** cluster server. As part of this process, **Title Data** is cached and changes may take up to *fifteen minutes* to refresh in those caches. **Title Data** is best suited for **Global Constant/Static Data**, and is *not suitable* or reliable as **Global Variables**.
+> **Title Data** values are copied and distributed to potentially *hundreds* of machines in the **PlayFab** cluster server. As part of this process, **Title Data** is cached and changes may take up to *fifteen minutes* to refresh in those caches. **Title Data** is best suited for **Global Constant/Static Data**, and is *not suitable* or reliable as **Global Variables**.
 
 ## Getting Title Data
 
