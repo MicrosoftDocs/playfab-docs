@@ -56,7 +56,8 @@ Similar to **Player Data**, except that it is stored at a **per-Character Level*
 
 **PlayFab** offers 10 character slots per **Player Account**.
 
-**Character Statistics**
+## Character Statistics
+
 Similar to **Player Statistics**, except stored at a **per-Character Level**.
 
 ## CloudScript
