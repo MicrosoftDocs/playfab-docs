@@ -34,7 +34,7 @@ There are three key meters used to bill additional Communications Fabric utiliza
 
 ## Fabric Voice
 
-Usage of voice chat is priced differently if Cognitive Services are enabled. Cognitive Services enables speech-to-text transcription, speech-to-text translation, and text-to-text translation. 
+Usage of voice chat is priced differently if Cognitive Services are enabled. Cognitive Services enables speech-to-text transcription, speech-to-text translation, and text-to-text translation. 10% of voice minutes can leverage transcription and synthesis for free before the below meter is billed. We recommend tying activation of this capability to an ease-of-access player setting.
 
 | SKU | $/player-minute speaking |
 | --- | --- |
