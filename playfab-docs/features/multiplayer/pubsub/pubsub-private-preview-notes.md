@@ -1,5 +1,5 @@
 ---
-title: PubSub policies
+title: PubSub private preview notes
 author: MarcoWilliamsPF
 description: Private preview release notes for PubSub.
 ms.author: mawillia

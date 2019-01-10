@@ -79,7 +79,7 @@ The Dashboard displays your basic game statistics and **Key Performance Indicato
 - **7d**: Will load data generated within the last 7 days
 - **mtd**: Will load data generated within the current month
 
-You can see data for previous months in the [Reports Section](#reports).
+You can see data for previous months in the [Reports Section](#9-reports).
 
 > [!NOTE]
 > In **Game Manager**, all times are displayed in local time.
