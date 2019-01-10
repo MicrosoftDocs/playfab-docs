@@ -22,6 +22,15 @@ COFA utilizes Azure Cognitive Services to transcribe player voice chat and synth
 
 COFA can not only transcribe player chat, but also translate chat in real time. In anonymous matchmaking and international competitive games, these transcription and translation capabilities can make for a more engaging multiplayer experience. 
 
+## Features
+
++	**Encryption and authentication.** COFA authenticates player devices using their PlayFab player identity and encrypts data with a DTLS-like protocol.
++	**NAT traversal and datagrams.** The core of COFA are relays hosted globally across the Azure cloud. Player devices use these relays create COFA networks and game data to one another.
++	Voice and text chat.** Player devices can bind audio devices to COFA networks to accomplish real-time voice chat. Text chat messages between players are also support.
++	**Speech-to-text and voice synthesis.** COFA can transcribe player voice chat and synthesize utterances for text message. This functionality has several uses, but was primarily designed as an accessibility aide. 
++	**Real-time translation.** COFA can understand and synthesize real-time translations of player voice and text chat. 
+
+
 ## Concepts
 
 COFA is oriented around a few key concepts:
@@ -35,7 +44,7 @@ At a very high level, the game application uses the PlayFab networking library t
 
 As opposed to a client-server model, a PlayFab network is logically a fully-connected mesh of peer devices. As described in the section of this document, any player can send directly to any other through the API. 
 
-## Features
+## Feature Roadmap
 
 |-|Run-time management|Networking|
 |-|-|-|
