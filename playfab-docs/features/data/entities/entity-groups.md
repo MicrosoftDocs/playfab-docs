@@ -14,27 +14,27 @@ ms.localizationpriority: medium
 
 ## PlayFab Guild Solution
 
-Let's say that you need **Guilds**, **Clans**, **Corporations**, **Companies**, **Tribes**, or whatever your game calls them - PlayFab has them.
+Let's say that you need **Guilds**, **Clans**, **Corporations**, **Companies**, **Tribes**, or whatever your game calls them - **PlayFab** has them.
 
-PlayFab builds **Guilds** on top of a system we call **[Entities](../../data/entities/quickstart.md)**, or more specifically **Entity Groups**. **Entity Groups** are a much broader concept than **Guilds**, but fundamentally, **Entity Groups** have been created as a solution for **Guilds**.
+**PlayFab** builds **Guilds** on top of a system we call **[Entities](../../data/entities/quickstart.md)**, or more specifically **Entity Groups**. **Entity Groups** are a much broader concept than **Guilds**, but fundamentally, **Entity Groups** have been created as a solution for **Guilds**.
 
 ## Entity Groups
 
 **Entity Groups** are the root concept that was inspired by the need for **Clans/Guilds**.
 
-At its core, **Entity Groups** are any logical group of **Entities**, which can serve any purpose. **Entity Groups** can simultaneously serve many purposes within your game.
+At its core, **Entity Groups** are any logical group of **Entities**, which can serve any purpose. **Entity Groups** can simultaneously serve many purposes within your **Game**.
 
 Examples:
 
-- **Clans/Guilds** - This was the starting point, and the main driving need. **Entity Groups** can be used to describe a set of players who are playing together on a regular basis, for whatever social glue that holds them together on a long term basis.
+- **Clans/Guilds** - This was the starting point, and the main driving need. **Entity Groups** can be used to describe a set of **Players** who are playing together on a regular basis, for whatever social glue that holds them together on a long-term basis.
 
-- **Parties** - **Entity Groups** can be used for short term groups created that allow individual players to accomplish an immediate goal, and easily disband.
-- **Chat Channels** - Short or long term **Chat channels** can be defined as an Entity Group.
-- **In-game subscription to information** - Do you have a single-instance legendary item in your game? Do players want constant updates about what is happening with that item? Create an **Entity Group** focused on that item, with all player entities interested in the item as members.
+- **Parties** - **Entity Groups** can be used for short-term **Groups** created that allow individual **Players** to accomplish an immediate goal, and easily disband.
+- **Chat Channels** - Short or long term **Chat channels** can be defined as an **Entity Group**.
+- **In-Game subscription to information** - Do you have a single-instance **Legendary Item** in your **Game**? Do **Players** want constant updates about what is happening with that **Item**? Create an **Entity Group** focused on that **Item**, with all **Player Entities** interested in the **Item** as members.
 
-In short, **Entity Groups** can be *any* collection of **Entities** (whether NPC or Player-controlled, real or abstract), which need a persistent-state bound to that group.
+In short, **Entity Groups** can be *any* collection of **Entities** (whether **NPC** or **Player**-controlled, real or abstract), which need a persistent-state bound to that **Group**.
 
-A friends list is a **Group**. A three person private chat is a **Group**. Go nuts! 
+A **Friends** list is a **Group**. A three person **Private Chat** is a **Group**. Go nuts!
 
 > [!NOTE]
 > We'd appreciate some warning in the forums if you are trying something we might not be expecting...
@@ -50,13 +50,15 @@ They will be generally eligible for new **Entity** features going forward, if th
 
 ## Using Entity Groups
 
-Today, **Entity Groups** can contain players and/or characters. When creating a **Group**, the first **Entity** added to the **Group** is placed in an **Admin** role (this guide will refer to that entity as the **Owner**, for simplicity). 
+Today, **Entity Groups** can contain **Players** and/or **Characters**. When creating a **Group**, the first **Entity** added to the **Group** is placed in an **Admin** role (this guide will refer to that entity as the **Owner**, for simplicity). 
 
 The **Owner** will then be able to invite new members, create new roles with a wide variety of customizable permissions, modify member roles, kick members, etc.
 
-Additionally, the same **Entity** functions that exist for **Entities** also function for **Groups**, so you will be able to save JSON objects, and files directly to the group to save arbitrary game-specific data.
+Additionally, the same **Entity** functions that exist for **Entities** also function for **Groups**, so you will be able to save **JSON** objects, and files directly to the **Group** to save arbitrary game-specific data.
 
-The code example that is provided below should give you a head start on basic guild interaction. It allows you to **Create Groups**, **Add** and **Remove** members, and **Delete the Group**. It is meant to be a starting point, and does not demonstrate any of the roles or permissions.
+The code example that is provided below should give you a head start on basic **Guild** interaction.
+
+It allows you to **Create Groups**, **Add** and **Remove** members, and **Delete the Group**. It is meant to be a starting point, and does not demonstrate any of the **Roles** or **Permissions**.
 
 ```csharp
 #if ENABLE_PLAYFABENTITY_API
@@ -192,30 +194,30 @@ public class GuildTestController
 #endif
 ```
 
-## Deconstructing the Example
+## Deconstructing the example
 
-This example is built as a controller, which saves minimal data to a local cache (PlayFab being the authoritative data layer), and provides a way to perform **CRUD** operations on **Groups**.
+This example is built as a controller, which saves minimal data to a local cache (**PlayFab** being the authoritative data layer), and provides a way to perform **CRUD** operations on **Groups**.
 
 Let's take a look at some of the functions in the example provided:
 
-- **OnSharedError** - This is a typical pattern with PlayFab examples. The simplest way to handle an error is to report it. Your game client will probably have much more sophisticated error handling logic.
+- **OnSharedError** - This is a typical pattern with **PlayFab** examples. The simplest way to handle an error is to report it. Your **Game Client** will probably have much more sophisticated error handling logic.
 
-- **ListGroups** - This calls **ListMembership** to determine all the groups that the given entity belongs to. Players will want to know the Groups they have already joined.
+- **ListGroups** - This calls **ListMembership** to determine all the **Groups** that the given **Entity** belongs to. **Players** will want to know the **Groups** they have already joined.
 
-- **CreateGroup/DeleteGroup** - Mostly self explanatory. This example demonstrates updating the local Group info cache when these calls are executed successfully.
+- **CreateGroup/DeleteGroup** - Mostly self-explanatory. This example demonstrates updating the local **Group** info cache when these calls are executed successfully.
 
-- **InviteToGroup/ApplyToGroup** - Joining a group is a two step process, and it can be activated both directions:
-     - A player can ask to join a Group.
-     - A Group can invite a player.
+- **InviteToGroup/ApplyToGroup** - Joining a **Group** is a two-step process, and it can be activated both directions:
+     - A **Player** can ask to join a **Group**.
+     - A **Group** can invite a **Player**.
 
-- **AcceptGroupInvitation/AcceptGroupApplication** - The second step of the join process. The responding entity accepts the invitation, completing the process of making the player a part of the Group.
+- **AcceptGroupInvitation/AcceptGroupApplication** - The second step of the join process. The responding **Entity** accepts the invitation, completing the process of making the **Player** a part of the **Group**.
 
-- **RemoveMembers** - Members with authority to do so (defined by their role permissions) will be able to kick members from a Group.
+- **RemoveMembers** - Members with authority to do so (defined by their **Role Permissions**) will be able to kick members from a **Group**.
 
 ## Server vs Client
 
 Like all new **Entity API** methods, there is no distinction between the **Server API** and the **Client API**. 
 
-The action is performed by the caller, according to how the process was authenticated. A **Client** will be identified as such, and will call these methods as a **Title Player** entity, and their roles and permissions within the Group will be evaluated with every call, ensuring they have permission to perform this action.
+The action is performed by the caller, according to how the process was authenticated. A **Client** will be identified as such, and will call these methods as a **Title Player Entity**, and their ro**Roles** and **Permissions** within the **Group** will be evaluated with every call, ensuring they have permission to perform this action.
 
-A server is authenticated with the same **developerSecretKey**, which identifies that process as a **Title** entity. A **Title** will bypass the role checks, and **API calls** executed by a **Title** will only fail if the action is impossible to perform, such as: An entity cannot be removed if they are not a member.
+A server is authenticated with the same **developerSecretKey**, which identifies that process as a **Title Entity**. A **Title** will bypass the **Role** checks, and **API calls** executed by a **Title** will only fail if the action is impossible to perform, in an instance such as if an **Entity** cannot be removed if they are not a member.

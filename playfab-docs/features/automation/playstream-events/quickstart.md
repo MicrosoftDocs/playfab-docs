@@ -34,12 +34,12 @@ error=> Debug.LogError(error.GenerateErrorReport()));
 ```
 
 As a side effect, **PlayFab** will record a **player_logged_in Event**. Consider using the [Event History](event-history.md) to test the described behavior.
+
 ![Game Manager - Event History Chart](media/tutorials/game-manager-event-history-chart.png)  
 
-## Custom Event Overview
+## Custom Event overview
 
-While **PlayFab** records a lot of **Events** automatically, sometimes you need **Events** that are very specific for your game. The concept of **Custom Events** allows you to post **Events** with an arbitrary **Type** and **Name**.
-
+While **PlayFab** records a lot of **Events** automatically, sometimes you need **Events** that are very specific for your **Game**. The concept of **Custom Events** allows you to post **Events** with an arbitrary **Type** and **Name**.
 
 Similar to **Automatic Events**, **Custom Events** are fully reflected through [real-time analytics tools](../../analytics/metrics/real-time-analytics-core-concepts.md). Unlike **Automatic Events**, you need a little bit of custom code to post **Custom Events**.
 
