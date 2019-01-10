@@ -14,20 +14,20 @@ ms.localizationpriority: medium
 
 To begin your understanding of this topic, we urge you to read our introductory blog about [Entities, Objects and Files](https://blog.playfab.com/blog/introducing-entities-objects-and-files).
 
-The **Entity API** introduces new access patterns that are designed to alleviate the pain points of the current account and data systems. With the existing APIs, saving a data value has separate API calls for:
+The **Entity API** introduces new access patterns that are designed to alleviate the pain points of the current account and data systems. With the existing **APIs**, saving a data value has separate **API** calls for:
 
 -  **Title** access (client/[GetTitleData](xref:titleid.playfabapi.com.client.title-widedatamanagement.gettitledata), admin/[GetTitleData](xref:titleid.playfabapi.com.admin.title-widedatamanagement.gettitledata), server/[GetTitleData](xref:titleid.playfabapi.com.server.title-widedatamanagement.gettitledata)).
 
 - **Player** access (client/[GetUserReadOnlyData](xref:titleid.playfabapi.com.client.playerdatamanagement.getuserreadonlydata), client/[UpdateUserData](xref:titleid.playfabapi.com.client.playerdatamanagement.updateuserdata), client/[UpdateUserPublisherData](xref:titleid.playfabapi.com.client.playerdatamanagement.updateuserpublisherdata)).
 - **Character** access (client/[GetCharacterData](xref:titleid.playfabapi.com.client.characterdata.getcharacterdata), client/[UpdateCharacterData](xref:titleid.playfabapi.com.client.characterdata.updatecharacterdata)). 
 
-In the new API scheme, a *single* call supports saving a data value for a **Title**, **Player**, **Character**, and every other future entity type. combined with powerful access rules that replicate and expand the current system behavior of custom data in a better interface. 
+In the new **API** scheme, a *single* call supports saving a data value for a **Title**, **Player**, **Character**, and every other future **Entity Type**. combined with powerful access rules that replicate and expand the current system behavior of custom data in a better interface.
 
-In some regards, these changes are not backwards compatible. However, using them will not change the behavior of the existing APIs.
+In some regards, these changes are not backwards compatible. However, using them will *not* change the behavior of the existing **APIs**.
 
 ## Terminology
 
-**Entities** are any PlayFab concept which can contain data. Currently we have a number of built in entity types:
+**Entities** are any **PlayFab** concept which can contain data. Currently we have a number of built-in **Entity Types**:
 
 - **Title**
 
@@ -36,20 +36,20 @@ In some regards, these changes are not backwards compatible. However, using them
 - **Character**. 
 
 > [!NOTE]
-> This system is being expanded. In the future, you will see entity types added to cover **Guilds** or **Groups**, **Game servers**, and more.
+> This system is being expanded. In the future, you will see **Entity Types** added to cover **Guilds** or **Groups**, **Game servers**, and more.
 
-Because this is a new API, we are refining some of the terms used in other API methods:
+Because this is a new **API**, we are refining some of the terms used in other **API** methods:
 
-- **Title** - This concept is unchanged. Your title may contain global information available to all players. This is similar to [TitleData](xref:titleid.playfabapi.com.client.title-widedatamanagement.gettitledata). It is identified by the Title ID (TitleId) of the game/application.
+- **Title** - This concept is unchanged. Your **Title** may contain global information available to all **Players**. This is similar to [TitleData](xref:titleid.playfabapi.com.client.title-widedatamanagement.gettitledata). It is identified by the **Title ID** (**TitleId**) of the game/**Application**.
 
-- **Master_player_account** - This entity type allows you to share information about a player across multiple games within a studio. This is similar to [UserPublisherData](xref:titleid.playfabapi.com.client.playerdatamanagement.getuserpublisherdata). It is identified by the PlayFab ID (PlayFabId) of the player, which is returned as part of any login or any call to retrieve account information for the player account (for example, [Client/GetAccountInfo](xref:titleid.playfabapi.com.client.accountmanagement.getaccountinfo)).
-- **Title_player_account** - This concept is based on User/Player in the existing API methods. Each player may contain some information for the current title. This is similar to the [GetUserData](xref:titleid.playfabapi.com.client.playerdatamanagement.getuserdata) method. This is identified by the Entity ID (EntityKey.Id) you get back in the [EntityKey](xref:titleid.playfabapi.com.authentication.authentication.getentitytoken#entitykey) object on any login where you specify LoginTitlePlayerAccountEntity as true.
-- **Character** - This concept is unchanged. Your player may own characters, which can each contain some information. This is similar to [CharacterData](xref:titleid.playfabapi.com.client.characterdata.getcharacterdata). It is identified by the Character ID (CharacterId) of the character.
+- **Master_player_account** - This **Entity Type** allows you to share information about a **Player** across multiple games within a **studio**. This is similar to [UserPublisherData](xref:titleid.playfabapi.com.client.playerdatamanagement.getuserpublisherdata). It is identified by the **PlayFab ID** (**PlayFabId**) of the **Player**, which is returned as part of any login or any call to retrieve account information for the **Player Account** (for example, [Client/GetAccountInfo](xref:titleid.playfabapi.com.client.accountmanagement.getaccountinfo)).
+- **Title_player_account** - This concept is based on **User/Player** in the existing **API** methods. Each **Player** may contain some information for the current **Title**. This is similar to the [GetUserData](xref:titleid.playfabapi.com.client.playerdatamanagement.getuserdata) method. This is identified by the **Entity ID** (**EntityKey.Id**) you get back in the [EntityKey](xref:titleid.playfabapi.com.authentication.authentication.getentitytoken#entitykey) object on any login where you specify **LoginTitlePlayerAccountEntity** as **TRUE**.
+- **Character** - This concept is unchanged. Your **Player** may own **Characters**, which can each contain some information. This is similar to [CharacterData](xref:titleid.playfabapi.com.client.characterdata.getcharacterdata). It is identified by the **Character ID** (**CharacterId**) of the **Character**.
 
-See the [Available built-in Entity types](../../data/entities/available-built-in-entity-types.md) tutorial, for a list of all built-in Entity types.
+See the [Available built-in Entity types](../../data/entities/available-built-in-entity-types.md) tutorial, for a list of all built-in **Entity Types**.
 
 > [!NOTE]
-> Formerly, **PlayFabId** covered both **master_player** and **title_player** concepts. Separating these concepts simplifies and clarifies the functionality. A player can interact with multiple titles that are all in the same studio, so while they can have unique information as a different player in each title, the owner of the studio also needs to identify that player as a single entity with shared data across titles. This enables things like cross promotion of games and giving players cross-game rewards.
+> Formerly, **PlayFabId** covered both **master_player** and **title_player** concepts. Separating these concepts simplifies and clarifies the functionality. A **Player** can interact with multiple **Titles** that are all in the same studio, so while they can have unique information as a different player in each title, the owner of the studio also needs to identify that player as a single entity with shared data across titles. This enables things like cross promotion of games and giving players cross-game rewards.
 
 ## Entity Initialization
 

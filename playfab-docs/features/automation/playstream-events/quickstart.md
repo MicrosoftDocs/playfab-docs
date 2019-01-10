@@ -40,6 +40,7 @@ As a side effect, **PlayFab** will record a **player_logged_in Event**. Consider
 
 While **PlayFab** records a lot of **Events** automatically, sometimes you need **Events** that are very specific for your game. The concept of **Custom Events** allows you to post **Events** with an arbitrary **Type** and **Name**.
 
+
 Similar to **Automatic Events**, **Custom Events** are fully reflected through [real-time analytics tools](../../analytics/metrics/real-time-analytics-core-concepts.md). Unlike **Automatic Events**, you need a little bit of custom code to post **Custom Events**.
 
 **Custom Events** can be classified by **Entity**. A **Custom Event** can be bound to a **Player**, **Character**, or **Title**. An **Event Entity** reference is specified using two fields:
