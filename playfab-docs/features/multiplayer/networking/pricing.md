@@ -6,11 +6,19 @@ ms.author: v-thopra
 ms.date: 13/12/2018
 ms.topic: article
 ms.prod: playfab
+ROBOTS: NOINDEX,NOFOLLOW
 keywords: playfab, multiplayer, bumblelion, networking, pricing, billing
 ms.localizationpriority: medium
 ---
 
 # Billing for PlayFab Multiplayer Communications Fabric (Bumblelion)
+
+> [!IMPORTANT]
+> This feature is currently in **Private Preview**.  
+>
+> It is provided to give you an early look at an upcoming feature and to allow you to provide feedback while it is still in development.  
+>
+> Access to this feature is restricted to select titles. If you are interested in trying it, you can request access by submitting a ticket on [support.playfab.com](https://support.playfab.com/hc/en-us/requests/new).
 
 Most PlayFab services, such as PlayStream or Multiplayer Matchmaking, are included with every paid PlayFab tier as part of our core offering. However, PlayFab Multiplayer Servers and Multiplayer Communications Fabric are billed on a consumption basis. This document describes the billing plan for Communications Fabric.
 

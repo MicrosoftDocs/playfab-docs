@@ -6,15 +6,21 @@ ms.author: mawillia
 ms.date: 12/21/2018
 ms.topic: article
 ms.prod: playfab
+ROBOTS: NOINDEX,NOFOLLOW
 keywords: playfab, multiplayer, pubsub, policies
 ms.localizationpriority: medium
 ---
 
 # PlayFab PubSub private preview notes
 
-## Early access
+> [!IMPORTANT]
+> This feature is currently in **Private Preview**.  
+>
+> It is provided to give you an early look at an upcoming feature and to allow you to provide feedback while it is still in development.  
+>
+> Access to this feature is restricted to select titles. If you are interested in trying it, you can request access by submitting a ticket on [support.playfab.com](https://support.playfab.com/hc/en-us/requests/new).
 
-PlayFab PubSub is currently available as a private preview. It is provided to give you an early look at an upcoming feature and to allow you to provide feedback while it is still in development. Access to PubSub is restricted to select titles. Reach out to [devrel@playfab.com](mailto:devrel@playfab.com) if you are interested in trying it out but don't yet have access.
+## Early access
 
 PlayFab PubSub is still in active development and will be changing over time. We will strive to avoid breaking changes, but such changes may turn out to be necessary during the preview in order to deliver the optimal experience for customers in the general release. We do not recommend shipping a game to the public which relies on this feature until it is more stable.
 

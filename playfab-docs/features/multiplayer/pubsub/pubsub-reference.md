@@ -6,11 +6,19 @@ ms.author: mawillia
 ms.date: 12/21/2018
 ms.topic: article
 ms.prod: playfab
+ROBOTS: NOINDEX,NOFOLLOW
 keywords: playfab, multiplayer, pubsub, API
 ms.localizationpriority: medium
 ---
 
 # PubSub client API
+
+> [!IMPORTANT]
+> This feature is currently in **Private Preview**.  
+>
+> It is provided to give you an early look at an upcoming feature and to allow you to provide feedback while it is still in development.  
+>
+> Access to this feature is restricted to select titles. If you are interested in trying it, you can request access by submitting a ticket on [support.playfab.com](https://support.playfab.com/hc/en-us/requests/new).
 
 This topic explains the technical design behind the Persistent Sockets API in a PlayFab client. Below you will find dependencies and explanations of each API signature required to make a clean Persistent Socket API that can talk to the PlayFab PubSub service, receive events and subscribe handlers to those events.
 

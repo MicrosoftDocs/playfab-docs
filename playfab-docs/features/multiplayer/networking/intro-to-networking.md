@@ -6,11 +6,19 @@ ms.author: v-thopra
 ms.date: 07/12/2018
 ms.topic: article
 ms.prod: playfab
+ROBOTS: NOINDEX,NOFOLLOW
 keywords: playfab, multiplayer, networking
 ms.localizationpriority: medium
 ---
 
 # Introduction to PlayFab Multiplayer Communication Fabric
+
+> [!IMPORTANT]
+> This feature is currently in **Private Preview**.  
+>
+> It is provided to give you an early look at an upcoming feature and to allow you to provide feedback while it is still in development.  
+>
+> Access to this feature is restricted to select titles. If you are interested in trying it, you can request access by submitting a ticket on [support.playfab.com](https://support.playfab.com/hc/en-us/requests/new).
 
 PlayFab Multiplayer Communication Fabric is a set of libraries and services for easily adding multiplayer real-time networking and chat communication to your game. 
 
