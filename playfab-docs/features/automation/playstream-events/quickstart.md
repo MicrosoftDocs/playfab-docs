@@ -18,7 +18,9 @@ This quickstart provides an overview of automatic and custom **PlayStream Events
 
 As the name implies, an **Automatic Event** is an event that occurs automatically with a normal **API** method call. Most existing **API** methods will generate **PlayStream Events**.
 
-Sometimes, however, you will need to capture **Events** that are very specific for your game and are not provided by **PlayFab** out of the box. For that purpose, consider using a **Custom Event** (as described in the next section, [Custom Event Overview](#custom-event-overview)).
+Sometimes, however, you will need to capture **Events** that are very specific for your **Game** and are not provided by **PlayFab** out of the box.
+
+For that purpose, consider using a **Custom Event** (as described in the next section, [Custom Event Overview](#custom-event-overview)).
 
 ### Example
 
@@ -46,7 +48,7 @@ Similar to **Automatic Events**, **Custom Events** are fully reflected through [
 **Custom Events** can be classified by **Entity**. A **Custom Event** can be bound to a **Player**, **Character**, or **Title**. An **Event Entity** reference is specified using two fields:
 
 - **EntityType**
-- **EntityID**.
+- **EntityID**
 
 ### Relevant API Calls
 
@@ -81,9 +83,9 @@ private void OnChestOpened(string chestType, int levelId) {
 ```
 
 1. The method receives **ChestType** and **LevelId**.
-2. Use the [WritePlayerEvent](xref:titleid.playfabapi.com.client.analytics.writeplayerevent) **API** call for posting a **Custom Event** bound to a **Player**.
-3. Provide a body, specific for your **Event** and your needs. In this case we provide the **ChestType** and **LevelId** fields.
-4. Provide an **Event Name** identifying your **Custom Event**. In this case we use the **player_chest_opened**, **Event Type Name**.
+2. Use the [WritePlayerEvent](xref:titleid.playfabapi.com.client.analytics.writeplayerevent) **API** call for posting a custom **Event** bound to a **Player**.
+3. Provide a body, specific for your **Events** and your needs. In this case we provide the **ChestType** and **LevelId** fields.
+4. Provide an **Event Name** identifying your **Custom Event**. In this case we use the **""player_chest_opened" Event Type Name**.
 
 ### Testing
 
@@ -92,5 +94,5 @@ Once the solution code is executed, consider using the [Event History](event-his
 ![Game Manager - Event History Detail](media/tutorials/game-manager-event-history-detail.png)  
 
 1. **Filter** using the **Event Name**.
-2. Ensure the **player_chest_opened** events are in the list.
+2. Ensure the **"player_chest_opened" Events** are in the list.
 3. Ensure that your custom body fields are recorded: **ChestType** and **LevelId**.

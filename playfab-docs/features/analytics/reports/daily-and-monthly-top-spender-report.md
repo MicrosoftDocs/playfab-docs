@@ -22,6 +22,10 @@ You can select the **PlayFab Id** label to quickly navigate to the **Player's De
 
 ![Daily Top Spender Report Table](media/tutorials/monthly-top-spender-report-table.png)  
 
-## Populating the reports
+The **Daily** and **Monthly Top Spender Report** shows the list of **Players** who spent money in your **Game** on a given **Day** or **Month**, sorted by the transaction amount.
+
+You can select the **PlayFab Id** label to quickly navigate to the **Player's Details** page.
+
+## Populating the Reports
 
 Please refer to [Non-receipt Payment Processing](../../commerce/economy/non-receipt-payment-processing.md) tutorial to learn how to conduct payments.

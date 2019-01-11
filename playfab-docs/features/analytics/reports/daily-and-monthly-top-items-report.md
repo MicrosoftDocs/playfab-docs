@@ -28,6 +28,13 @@ This **Report** can assist you in identifying trending **Items** over time, whic
 
 ![Daily Top Items Report Table](media/tutorials/monthly-top-items-report-table.png)  
 
-## Populating the reports
+The **Daily** and **Monthly Top Items Report** contains a list of top selling **Items** or **Bundles** in a given **Day** or **Month**.
 
-Please refer to our tutorials for [Catalogs](../../commerce/items/catalogs.md), [Stores and Sales](../../commerce/stores/stores-and-sales.md), and [Non-receipt Payment Processing](../../commerce/economy/non-receipt-payment-processing.md) to learn about setting up in-game **Stores** and conducting payments.
+These tables, **Daily** and **Monthly**, include **Item Names** from your primary **Catalog**, associated number of sales, and total revenue.
+
+This **Report** can assist you in identifying trending **Items** over time, which can be useful for planning future promotions or **Events**.
+
+## Populating the Reports
+
+Please refer to our tutorials for [Catalogs](../../commerce/items/catalogs.md), [Stores and Sales](../../commerce/stores/stores-and-sales.md), and [Non-receipt Payment Processing](../../commerce/economy/non-receipt-payment-processing.md) to learn about setting up in-**Game Stores** and conducting payments.
+

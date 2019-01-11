@@ -31,7 +31,7 @@ ms.localizationpriority: medium
 
 An **Overview Report** contains trend charts of each metric during the past 24 hours (**Daily**), past 30 days (**Rolling 30-day**), and in last month (**Monthly**).
 
-A **Totals Report** contains the summary of each metric shown in the **Overview Report**. **Daily** and **Rolling 30-day Reports** are generated on a daily basis, whereas **Monthly Reports** are generated on the first day of each month.
+A **Totals Report** contains the summary of each metric shown in the **Overview Report**. **Daily** and **Rolling 30-day Reports** are generated on a **Daily** basis, whereas **Monthly Reports** are generated on the first day of each month.
 
 **Report** times are based on **Coordinated Universal Time** (**UTC**). For additional details on metrics, see [Metrics and Terminology](../metrics/metrics-and-terminology.md).
 
@@ -78,12 +78,12 @@ The following **API** calls will introduce new data for **Total Logins** and **T
 - [LoginWithTwitch](xref:titleid.playfabapi.com.client.authentication.loginwithtwitch)
 - [LoginWithWindowsHello](xref:titleid.playfabapi.com.client.authentication.loginwithwindowshello)
 
-The following **API** calls will introduce new data for **Total New Users**:
+The **API** calls shown below will introduce new data for **Total New Users**.
 
 - [RegisterPlayFabUser](xref:titleid.playfabapi.com.client.authentication.registerplayfabuser)
 - [RegisterWithWindowsHello](xref:titleid.playfabapi.com.client.authentication.registerwithwindowshello)
 
-The following **API** calls will introduce new data for **Total New Users** if the **CreateAccount** flag is set:
+The **API** calls shown below will introduce new data for **Total New Users** if the CreateAccount flag is set.
 
 - [LoginWithAndroidDeviceID](xref:titleid.playfabapi.com.client.authentication.loginwithandroiddeviceid)
 - [LoginWithCustomID](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid)
@@ -103,10 +103,15 @@ See the [Non-receipt Payment Processing](../../commerce/economy/non-receipt-paym
 
 **PlayFab Report Charts** all follow the same model:
 
--  In the top space of the page, you usually get a **Control Panel (1)**. The **Control Panel** contains a **Report Name**, an observed time period, and **Prev/Next** buttons to switch between the time periods.
+In the top space of the page, you usually get a **Control Panel (1)**. The **Control Panel** contains a **Report Name**, observed time period, and **Prev/Next** buttons to switch between the time periods.
 
-- **Chart** panel **(2)** (**Total Login**s) shows the available data as a **Chart**, where the horizontal axis corresponds to the time flow, and the vertical axis corresponds to the number of relevant instances - such as **API** calls, **Purchases**, **Users**, and so on, depending on the **Report** type.
+The **Chart Panel (2)** shows the available data as a **Chart**, where the horizontal axis corresponds to the time flow, and the vertical axis corresponds to the number of relevant instances, such as **API** calls, purchases, **Users**, and so on, depending on the **Report Type**.
 
-![Monthly Overview Report](media/tutorials/monthly-overview-report.png)  
+![Monthly Overview Report](media/tutorials/monthly-overview-report.png)
 
-- There are some metrics available below the **Chart** panel **(3)** in the **Timeline** area. This contains *totals* of all the instances across the time period (**SUM**), the *average number* of instances through all the timestamps (**AVG**), the *peak valu*e (**MAX**), and the *lowest value* (**MIN**).
+There are some metrics available below the **Chart Panel (3)**. Those contain:
+
+- The **Sum** of all the instance across the time period (**SUM**).
+- The **Average** number of instances through all the timestamps (**AVG**).
+- The peak value (**MAX**).
+- The lowest value (**MIN**).
