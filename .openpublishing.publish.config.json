@@ -44,11 +44,11 @@
     ],
     "master": [
       "Publish",
-      "PDF"
+      "Pdf"
     ],
     "pdfgeneration": [
       "Publish",
-      "PDF"
+      "Pdf"
     ]
   },
   "need_generate_pdf_url_template": true,
