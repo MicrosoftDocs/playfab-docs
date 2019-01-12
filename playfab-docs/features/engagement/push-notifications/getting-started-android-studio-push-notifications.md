@@ -199,9 +199,10 @@ In order to utilize the **PlayFab JavaSDK**, you will need the **PlayFab Client 
 
 Start by creating a regular **Android Studio** project.
 
-- Verify that the **Package name** matches the one you used throughout this tutorial (in **Firebase**, for instance). 
-> [!NOTE]
-> For our purposes in *this* example, we are using **com.foo.playfab.app**, but please remember to come up with *your own **Package name** and **Title*** while following this tutorial.
+- Verify that the **Package name** matches the one you used throughout this tutorial (in **Firebase**, for instance).
+ 
+  > [!NOTE]
+  > For our purposes in *this* example, we are using **com.foo.playfab.app**, but please remember to come up with *your own **Package name** and **Title*** while following this tutorial.
 
 ![Android Studio - New Project - add app name](../media/tutorials/android-studio-new-project-add-app-name.png)
 
@@ -226,6 +227,7 @@ For this tutorial, we suggest using the **Empty Activity** template to begin wit
 ![Android Studio - New Project - finish](../media/tutorials/android-studio-new-project-finish.png)
 
 Once you open the newly created **Project**:
+
 - Switch to the **Project** tab **(1)**. 
 
 > [!NOTE]
@@ -239,25 +241,31 @@ Once you open the newly created **Project**:
 
 The **Firebase Assistant** will open on the right side of the window.
 
-- Locate the **Notifications** folder, and select **Receive Notifications in your app**, as shown below.
+- Locate the **Cloud Messaging** folder, and select **Set up Firebase Cloud Messaging**, as shown below.
 
-![Android Studio - Firebase Asst. - configure notifications](../media/tutorials/android-studio-firebase-configure-notifications.png)
+![Android Studio - Firebase Asst. - set up cloud messaging](../media/tutorials/android-studio-firebase-set-up-cloud-messaging.png)
 
-In the Firebase Notifications Assistant:
+- In the **Firebase Notifications Assistant**, select the **Add FCM to your app (1)** button as shown in the following image.
+- A dialog will open indicating that new dependencies will be added via **Gradle**.
+- Select **Accept Changes (2)** to grant the changes.
 
-- Select **Add Notifications to your App (1)**. 
+  > [!NOTE]
+  > Unfortunately, the **dependencies that are added automatically by the Gradle sync process (3)** are incorrect and will report failure!
 
-- A **Project Changes** wizard will open.
-- Select **Accept Changes (2)** as shown in the example provided below.
+- To set up the dependencies correctly, replace the auto-added sentences with the following:
 
-![Android Studio - Firebase Asst. - add notifications](../media/tutorials/android-studio-firebase-add-notifications.png)
+    `implementation 'com.google.firebase:firebase-core:16.0.3`  
+    `implementation 'com.google.firebase:firebase-messaging:17.0.0`  
 
-Once the process is complete:
+![Android Studio - Firebase Asst. - add FCM to your app](../media/tutorials/android-studio-firebase-add-fcm-to-your-app.png)
 
-- Verify that the **Firebase Notifications Assistant** indicates that dependencies are set up correctly **(1)**.
+Once that process is complete:
+
+- Verify that the **Firebase Notifications Assistant** indicates that dependencies are now set up correctly **(1)**.
 
 > [!NOTE]
 > In the beginning of this chapter, we acquired the necessary **JAR** files. Normally, the build file automatically fetches these files.
+
 - To ensure that these JAR files are listed under the **app/libs** folder **(2)**, select all of the files and right-click them.
 - Then choose **Add as library... (3)**, as shown in the example provided below.
 
