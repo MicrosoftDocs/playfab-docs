@@ -42,7 +42,7 @@ Artifacts that are in progress:
 |-|-|-|-|
 |Players|32 max|-|-|
 |Chat|Voice; Speech to text|Text; Text to Speech||
-|Identity|PlayFab custom identity; XBL identity|Steam Identity|Steam Compliance; XBL Compliance|
+|Identity||PlayFab custom identity; XBL identity; XBL Compliance|Steam Identity;Steam Compliance|
 |Network|-|DTLS Security; Datacenter selection|-|
 |Administration|-|Game Manager UX | Billing & Consumption analytics|
 
