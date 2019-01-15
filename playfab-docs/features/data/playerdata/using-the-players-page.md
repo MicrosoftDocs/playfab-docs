@@ -33,7 +33,7 @@ The **Search Query** field consumes two types of queries:
 
 ### Simplistic Queries
 
-A **Simplistic Query** accepts 1 or more tokens separated by a space. It searches through all the fields in the [player profile](xref:titleid.playfabapi.com.admin.accountmanagement.getplayerprofile#playerprofile), and looks strictly for one of the tokens. It is possible to use the **Wildcard** symbol **(*)** in the tokens to make the query more flexible.
+A **Simplistic Query** accepts 1 or more tokens separated by a space. It searches through all the fields in the [player profile](xref:titleid.playfabapi.com.admin.accountmanagement.getplayerprofile#playerprofilemodel), and looks strictly for one of the tokens. It is possible to use the **Wildcard** symbol **(*)** in the tokens to make the query more flexible.
 
 ![Game Manager - Players Page - display names and IDs](media/tutorials/game-manager-players-page-display-names-and-ids.png)  
 
@@ -50,7 +50,7 @@ For example, in the preceding screenshot we chose 2 **Users**:
 4. **962B724F659A776A**. 
 
 > [!NOTE] 
-> Remember - you can use any [searchable player field](xref:titleid.playfabapi.com.admin.accountmanagement.getplayerprofile#playerprofile) as a **Token**.
+> Remember - you can use any [searchable player field](xref:titleid.playfabapi.com.admin.accountmanagement.getplayerprofile#playerprofilemodel) as a **Token**.
 
 Now let's test a few querying techniques.
 
@@ -76,7 +76,7 @@ Now let's test a few querying techniques.
 
 The basic element of a **Complex Query** is a **Query** expression in the format **fieldName:valueDescriptor**. The search engine will then look for all **Players** that have the  specified field (denoted by **fieldName**) with the value (denoted by **valueDescriptor**):
 
-- **fieldName** is a [searchable player field](xref:titleid.playfabapi.com.admin.accountmanagement.getplayerprofile#playerprofile) in camel case (**DisplayName** becomes **displayName**). It is possible to use dot notation to dig into nested properties: *virtualCurrencyBalances.GM*.
+- **fieldName** is a [searchable player field](xref:titleid.playfabapi.com.admin.accountmanagement.getplayerprofile#playerprofilemodel) in camel case (**DisplayName** becomes **displayName**). It is possible to use dot notation to dig into nested properties: *virtualCurrencyBalances.GM*.
 
 - **valueDescriptor** is obviously something that describes the desired **Value**. It can be a **Token** (**ABC**), a **Wildcard Token** (**AB*C**), or a **Range Descriptor** (**date range value** [**2016 TO now**]).
 
