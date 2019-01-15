@@ -18,9 +18,7 @@ This quickstart provides an overview of automatic and custom **PlayStream Events
 
 As the name implies, an **Automatic Event** is an event that occurs automatically with a normal **API** method call. Most existing **API** methods will generate **PlayStream Events**.
 
-Sometimes, however, you will need to capture **Events** that are very specific for your **Game** and are not provided by **PlayFab** out of the box.
-
-For that purpose, consider using a **Custom Event** (as described in the next section, [Custom Event Overview](#custom-event-overview)).
+Sometimes, however, you will need to capture **Events** that are very specific for your game and are not provided by **PlayFab** out of the box. For that purpose, consider using a **Custom Event** (as described in the next section, [Custom Event Overview](#custom-event-overview)).
 
 ### Example
 
@@ -35,20 +33,20 @@ result=> Debug.Log(result.PlayFabId),
 error=> Debug.LogError(error.GenerateErrorReport()));
 ```
 
-As a side effect, **PlayFab** will record a **player_logged_in Event**. Consider using the [Event History](event-history.md) to test the described behavior.
+As a side effect, **PlayFab** will record a **"player_logged_in" Event**. Consider using the [Event History](event-history.md) to test the described behavior.
 
 ![Game Manager - Event History Chart](media/tutorials/game-manager-event-history-chart.png)  
 
-## Custom Event overview
+## Custom Event Overview
 
-While **PlayFab** records a lot of **Events** automatically, sometimes you need **Events** that are very specific for your **Game**. The concept of **Custom Events** allows you to post **Events** with an arbitrary **Type** and **Name**.
+While **PlayFab** records a lot of **Events** automatically, sometimes you need **Events** that are very specific for your game. The concept of **Custom Events** allows you to post **Events** with an arbitrary **Type** and **Name**.
 
 Similar to **Automatic Events**, **Custom Events** are fully reflected through [real-time analytics tools](../../analytics/metrics/real-time-analytics-core-concepts.md). Unlike **Automatic Events**, you need a little bit of custom code to post **Custom Events**.
 
-**Custom Events** can be classified by **Entity**. A **Custom Event** can be bound to a **Player**, **Character**, or **Title**. An **Event Entity** reference is specified using two fields:
+**Custom Events** can be classified by **Entity**. A **Custom Event** can be bound to a **Player**, **Character**, or **Title**. An **Event Entity** reference is specified using two **Fields**:
 
 - **EntityType**
-- **EntityID**
+- **EntityID**.
 
 ### Relevant API Calls
 
@@ -56,9 +54,9 @@ Similar to **Automatic Events**, **Custom Events** are fully reflected through [
 
 ### Example: Post your own Custom Event
 
-You want to aggregate information about **Players** opening various **Chests**. Along with standard **Event** information, you want to record **ChestType** and **LevelID**.
+You want to aggregate information about **Players** opening various chests. Along with standard **Event** information, you want to record **ChestType** and **LevelID**.
 
-Unfortunately, **PlayFab** does not provide a corresponding [automatic event](#automatic-event-overview) out of the box. Use a **Custom Player Event** to solve the problem.
+Unfortunately, **PlayFab** does not provide a corresponding [Automatic Event](#automatic-event-overview) out of the box. Use a **Custom Player Event** to solve the problem.
 
 ### Prerequisites
 
@@ -95,4 +93,5 @@ Once the solution code is executed, consider using the [Event History](event-his
 
 1. **Filter** using the **Event Name**.
 2. Ensure the **"player_chest_opened" Events** are in the list.
-3. Ensure that your custom body fields are recorded: **ChestType** and **LevelId**.
+3. Ensure that your **Custom Body Fields** are recorded: **ChestType** and **LevelId**.
+

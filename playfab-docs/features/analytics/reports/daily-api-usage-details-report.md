@@ -16,13 +16,15 @@ ms.localizationpriority: medium
 
 ![Daily API Usage Details Report Table](media/tutorials/daily-api-usage-details-report-table.png)
 
-The Daily API Usage Details Report contains statistics for each API call, aggregated by API name on an hourly basis. The table contains the following metrics:
+The **Daily API Usage Details Report** contains statistics for each **API** call, aggregated by the **API** name on an hourly basis. The table contains the following metrics:
 
-- *Total API Calls*, *Total Errors* and *Total Successful* - These columns allow you to check the overall usage and stability of your API calls.
-- *Average Response Time*, *Total Response Time*, *Average Received bytes*, *Total Received bytes*, *Average Sent bytes*, and *Total Sent (MB)* - These columns are useful for monitoring system performance as well as optimizing some user-defined, heavy-duty function calls (for example, CloudScript).
+- **Total API Calls**, *Total Errors* and *Total Successful* - These columns allow you to check the overall usage and stability of your API calls.
+- **Average Response Time**, **Total Response Time**, **Average Received bytes**, **Total Received bytes**, **Average Sent bytes**, and **Total Sent** (**MB**) - These columns are useful for monitoring system performance as well as optimizing some user-defined, heavy-duty function calls (for example, **CloudScript**).
 
-If you experience lag spikes in your application while executing API calls, you can refer to this report to track down the underlying cause. For example, using the report, you will be able to check whether the data was too large or a handler worked inefficiently. You can further utilize the report to tune the performance of CloudScript execution by adjusting its behavior and associated data.
+If you experience lag spikes in your **Application** while executing **API** calls, you can refer to this **Report** to track down the underlying cause.
 
-## Populating the report
+For example, using the **Report**, you will be able to check whether the data was too large or a handler worked inefficiently. You can further utilize the report to tune the performance of **CloudScript** execution by adjusting its behavior and associated data.
 
-Any API call will be captured and included into this report. Check the [PlayFab API Reference documentation](../../../api-references/index.md) for the list of all API options.
+## Populating the Report
+
+Any **API** call will be captured and included into this **Report**. Check the [PlayFab API Reference documentation](../../../api-references/index.md) for the list of all **API** options.
