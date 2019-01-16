@@ -1,7 +1,4 @@
-- name: Photon
+- name: Overview
   href: index.md
-  items:
-  - name: Quickstart
-    href: photon-quickstart.md
-  - name: Tutorials
-    href: photon-tutorials.md
+- name: Quickstart
+  href: quickstart.md

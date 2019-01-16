@@ -1,8 +1,4 @@
-- name: Trading
+- name: Overview
   href: index.md
-  items:
-  - name: Quickstart
-    href: trading-quickstart.md
-  - name: Tutorials
-    href: trading-tutorials.md
- 
+- name: Quickstart
+  href: quickstart.md

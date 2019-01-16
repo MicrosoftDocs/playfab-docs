@@ -1,7 +1,4 @@
-- name: Title News
+- name: Overview
   href: index.md
-  items:
-  - name: Quickstart
-    href: title-news-quickstart.md
-  - name: Tutorials
-    href: title-news-tutorials.md
+- name: Quickstart
+  href: quickstart.md

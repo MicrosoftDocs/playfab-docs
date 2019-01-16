@@ -14,24 +14,40 @@ ms.localizationpriority: medium
 
 ## Overview
 
+The **Thirty Day New User Conversion Report** illustrates the percentage of **Players** in a given **Cohort**, who spent money in the game during their first 30 days.
+
+A **Cohort** of **Players** is formed every day by grouping newly-registered **Players**. **Cohort** size indicates the number of **Players** in a **Cohort**.
+
+> [!NOTE]
+> Unlike **Retention Reports**, the **Conversion Report** tracks a cumulative total of **Players** who converted within a given time span.
+
 ![Thirty Day New User Conversion Report Table](media/tutorials/thirty-day-new-user-conversion-report-table.png)  
 
-The Thirty Day New User Conversion Report illustrates the percentage of players in a given cohort, who spent money in the game during their first 30 days. A cohort of players is formed every day by grouping newly-registered players. Cohort size indicates the number of players in a cohort. Note that, unlike retention reports, the conversion report tracks a cumulative total of players who converted within a given time span.
+The **Thirty Day New User Conversion Report** illustrates the percentage of **Players** in a given **Cohort**, who spent money in the **Game** during their first **30 Days**.
 
-The preceding example report, was generated on 2/13/2018. On 1/14/2018, 77,532 new players created accounts in the example title. On Day 0, 0.50% of these players made at least one transaction in the game. Since conversion reflects a cumulative total of players, these percentage values increase along the time span and reach 1.07% on the 30th day, which corresponds to the report generation date, 2/13/2018.
+A **Cohort** of **Players** is formed *every day* by grouping newly-registered **Players**. **Cohort** size indicates the number of **Players** in a **Cohort**.
+
+> [!NOTE]
+> Unlike **Retention Reports**, the **Conversion Report** tracks a cumulative total of **Players** who converted within a given time span.
+
+The preceding example report was generated on **2/13/2018**. On **1/14/2018**, **77,532** new **Players** created accounts in the example **Title**.
+
+On **Day 0**, **0.50%** of these **Players** made at least *one* transaction in the **Game**. Since conversion reflects a cumulative total of **Players**, these percentage values increase along the time span and reach **1.07%** on the **30th Day**, which corresponds to the **Report** generation date, **2/13/2018**.
 
 For additional details, see [Metrics and Terminology](../metrics/metrics-and-terminology.md).
 
-## Populating the report
+## Populating the Report
 
-To populate this report, you must register a new user, log in, and then conduct purchases several days in a row. This, however, will produce trivial results with user conversion at 100% for each day. Throwing in several users and skipping some days will produce more interesting results. 
+To populate this **Report**, you must register a new **User**, log in, and then conduct purchases several days in a row.
 
-The following API calls may be used to create new user accounts:
+This, however, will produce trivial results with **User** conversion at **100%** for each day. Throwing in several **Users** and skipping some days will produce more interesting results.
+
+The following **API** calls may be used to create new **User** accounts:
 
 - [RegisterPlayFabUser](xref:titleid.playfabapi.com.client.authentication.registerplayfabuser)
 - [RegisterWithWindowsHello](xref:titleid.playfabapi.com.client.authentication.registerwithwindowshello)
 
-The following API calls will also create a new user account and log you in automatically, if the CreateAccount flag is present:
+The following **API** calls will also create a new **User** account and log you in automatically, if the **CreateAccount** flag is present:
 
 - [LoginWithAndroidDeviceID](xref:titleid.playfabapi.com.client.authentication.loginwithandroiddeviceid)
 - [LoginWithCustomID](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid)
@@ -43,7 +59,7 @@ The following API calls will also create a new user account and log you in autom
 - [LoginWithSteam](xref:titleid.playfabapi.com.client.authentication.loginwithsteam)
 - [LoginWithTwitch](xref:titleid.playfabapi.com.client.authentication.loginwithtwitch)
 
-Finally, you may use following API Calls to log in:
+Finally, you may use following **API** calls to log in:
 
 - [LoginWithAndroidDeviceID](xref:titleid.playfabapi.com.client.authentication.loginwithandroiddeviceid)
 - [LoginWithCustomID](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid)

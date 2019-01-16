@@ -1,5 +1,5 @@
 ---
-title: Lua Quickstart for Defold
+title: Lua quickstart for Defold
 author: v-thopra
 description: This guide will help you make your first PlayFab API call using Defold.
 ms.author: v-thopra
@@ -10,7 +10,7 @@ keywords: playfab, lua, defold, gui script
 ms.localizationpriority: medium
 ---
 
-# Lua Quickstart for Defold
+# Lua quickstart for Defold
 
 This guide will help you make your first PlayFab API call using Defold.
 
@@ -18,9 +18,9 @@ This guide will help you make your first PlayFab API call using Defold.
 
 - OS: This guide is written for Windows 10, however it should also work fine with a Mac
 - Download Defold
-  - Create an account, or log in at [http://www.defold.com/](http://www.defold.com/) (Uses Google O-Auth)
+  - Create an account, or log in at [https://www.defold.com/](https://www.defold.com/) (Uses Google O-Auth)
   - Download and install Defold
-    - [http://d.defold.com/stable/](http://d.defold.com/stable/)
+    - [https://d.defold.com/stable/](https://d.defold.com/stable/)
 
   - Create a new project on the Defold Dashboard
     - After logging in, you should find yourself at the Defold dashboard
@@ -220,7 +220,7 @@ max_nodes: 512
 - PfGettingStarted.gui
   - Our instructions for PfGettingStarted.gui are for expediency, not instruction. This file is a gui definition, which adds a text box to the screen, binds it to our other script: PfGettingStarted.gui_script. You would NOT typically edit these files in text-form.
   - For proper instructions on how to build Defold GUI widgets, please read this guide:
-  - [http://www.defold.com/manuals/gui/]([http://www.defold.com/manuals/gui/)
+  - [GUI scenes in Defold](https://www.defold.com/manuals/gui/)
 
 - PfGettingStarted.gui_script
   - Require statements and setup

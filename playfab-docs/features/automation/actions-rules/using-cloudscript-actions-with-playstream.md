@@ -12,11 +12,15 @@ ms.localizationpriority: medium
 
 # Using CloudScript actions with PlayStream
 
-When a CloudScript handler is launched from a PlayStream action, that handler has access to additional data on why it is being run - the context - which you can use to drive your server-side logic. This tutorial walks you through what all is available in the context and how to make use of it in your CloudScript handlers.
+When a **CloudScript Handler** is launched from a **PlayStream** action, that **Handler** has access to additional data on why it is being run - the context - which you can use to drive your server-side logic.
+
+This tutorial walks you through what all is available in the context and how to make use of it in your **CloudScript Handlers**.
 
 ## CloudScript basics
 
-The key to getting the most out of CloudScript is knowing how to work with the inputs you have available – namely, the args and context for your handler. For example, here’s the helloWorld example from the starter CloudScript loaded as revision 1 in all newly created titles (also available in our GitHub, [here](https://github.com/PlayFab/CloudScriptSamples/tree/master/BasicSample)):
+The key to getting the most out of **CloudScript** is knowing how to work with the inputs you have available – namely, the args and context for your handler.
+
+For example, here’s the **helloWorld** example from the starter **CloudScript** loaded as **Revision 1** in all newly created **Titles** (also available in our **GitHub**, [shown below](https://github.com/PlayFab/CloudScriptSamples/tree/master/BasicSample)).
 
 ```javascript
 // This is a CloudScript function. 
@@ -48,13 +52,17 @@ handlers.helloWorld = function (args, context) {
 }
 ```
 
-This example demonstrates the common use case of calling CloudScript from a client via [ExecuteCloudScript](xref:titleid.playfabapi.com.client.server-sidecloudscript.executecloudscript). It checks for an argument passed in with the key “inputValue”, and uses the value for that key as part of the text returned in the debug log info for the execution.
+This example demonstrates the common use case of calling **CloudScript** from a client via [ExecuteCloudScript](xref:titleid.playfabapi.com.client.server-sidecloudscript.executecloudscript). It checks for an argument passed in with the key **inputValue**, and uses the value for that key as part of the text returned in the debug log info for the execution.
 
 ## The context input parameter
 
-However, it’s also possible to call a CloudScript as a result of an event in PlayStream, via a Rule (Automation->Rules), a Segment Enter/Exit Action (Players->Segments), or the Task service (Automation->Tasks). When you do, the context passed in to the function provides all the information you’ll need to take the appropriate action. To read about the basics of how PlayStream Events work, see our blog [Introducing PlayStream](https://blog.playfab.com/blog/introducing-playstream/), and for a list of PlayStream Event types and their properties, see our [PlayFab API Reference](../../../api-references/index.md).
+However, it’s also possible to call a **CloudScript** as a result of an **Event** in **PlayStream**, via a **Rule** (Automation->Rules), a **Segment Enter/Exit Action** (Players->Segments), or the **Task Service** (Automation->Tasks).
 
-To see this, have a look at the handlePlayStreamEventAndProfile handler from the same sample CloudScript:
+When you do, the context passed in to the function provides all the information you’ll need to take the appropriate action.
+
+To read about the basics of how **PlayStream Events** work, see our blog [Introducing PlayStream](https://blog.playfab.com/blog/introducing-playstream/), and for a list of **PlayStream Event Types** and their properties, see our [PlayFab API Reference](../../../api-references/index.md).
+
+To view this action, have a look at the **handlePlayStreamEventAndProfile Handler** from the same sample **CloudScript**.
 
 ```javascript
 // This is a simple example of a function that is called from a
@@ -75,19 +83,28 @@ handlers.handlePlayStreamEventAndProfile = function (args, context) {
 }
 ```
 
-In the case of a PlayStream-triggered CloudScript call, the context contains three elements that can be used to drive your server-authoritative handler’s logic.
+In the case of a **PlayStream**-triggered **CloudScript** call, the context contains 3 elements that can be used to drive your server-authoritative handler’s logic.
 
-First, there’s the playStreamEvent, which you can see in the example code above. The playStreamEvent contains the complete event which triggered the handler as a JSON object, with all the parameters you see in the [PlayStream event documentation](https://api.playfab.com/playstream/events). So for example, if you set up a Rule in your title that called handlePlayStreamEventAndProfile on any player_logged_in event, playStreamEvent.EventName would be “player_logged_in”, etc. ([here’s the complete set of parameters for that event](https://api.playfab.com/playstream/events/player_logged_in)).
+1. There’s the **playStreamEvent**, which you can see in the example code above. The **playStreamEvent** contains the complete event which triggered the handler as a **JSON** object, with all the parameters you see in the [PlayStream event documentation](https://api.playfab.com/playstream/events). So for example, if you set up a **Rule** in your **Title** that called **handlePlayStreamEventAndProfile** on any **player_logged_in event**, **playStreamEvent.EventName** would be **player_logged_in**, etc. ([here’s the complete set of parameters for that event](https://api.playfab.com/playstream/events/player_logged_in)).
 
-Next, there’s the playerProfile, also shown above. This contains information about the player that triggered the event. You can find all the details of the profile parameters here, but among other things, it contains the complete set of Statistics for the player in your title, as well as any custom Tags you have assigned to the player, so that you can use that data for very rich decision-making.
+1. Next, there’s the **playerProfile**, also shown the the previous example. This contains information about the **Player** that triggered the event. You can find all the details of the profile parameters here, but among other things, it contains the complete set of **Statistics** for the **Player** in your **Title**, as well as any custom **Tags** you have assigned to the **Player**, so that you can use that data for very rich decision-making.
 
-Now, the last element of context is triggeredByTask. Unlike the first two, which are set when using Rules and Segment Enter/Exit triggers, triggeredByTask is only applicable when the handler is running as a result of a Task, whether manual or on a timer. It contains only two parameters:
+1. The last element of context is **triggeredByTask**. Unlike the first two, which are set when using **Rules** and **Segment Enter/Exit** triggers, **triggeredByTask** is only applicable when the **Handler** is running as a result of a **Task**, whether manual or on a timer. It contains only two parameters:
 
-- **Name** – The unique name you gave your Task when you created it.
-- **Id** – The unique identifier automatically generated by PlayFab for your Task.
+- **Name** – The unique name you gave your **Task** when you created it.
 
-For a Task run against a user Segment, you’ll also have the playerProfile, but you won’t have a playStreamEvent. And for a Task that’s simply run against your game but without any Segment, there won’t be a playerProfile, since the intent is to run something more general, like setting some Title Data for an event. So Name is the element you’ll want to use to use in your handler’s code flow, to determine the appropriate action to take.
+- **Id** – The unique identifier automatically generated by **PlayFab** for your **Task**.
+
+For a **Task** run against a **User Segment**, you’ll also have the **playerProfile**, but you won’t have a **playStreamEvent**.
+
+And for a **Task** that’s simply run against your game but without any **Segment**, there won’t be a **playerProfile**, since the intent is to run something more general, like setting some **Title Data** for an event.
+
+So **Name** is the element you’ll want to use to use in your **Handler’s** code flow, to determine the appropriate action to take.
 
 ## PlayStream plus CloudScript
 
-In many ways, CloudScript handlers triggered by PlayStream actions have even more potential functionality than those triggered directly through calls to ExecuteCloudScript, since there’s a rich set of data made available via the context. This gives you the ability to update your handlers post-launch with additional logic that makes use of elements of the event or player profile that you hadn’t originally anticipated, without needing to update your client code in any way. In addition, we’ll continue to make additions to the player profile in future updates of the PlayFab service which will provide even more options for server-side logic.
+In many ways, **CloudScript Handlers** triggered by **PlayStream** actions have even more potential functionality than those triggered directly through calls to **ExecuteCloudScript**, since there’s a rich set of data made available via the context.
+
+This gives you the ability to update your **Handlers** post-launch with *additional* logic that makes use of elements of the event or **Player** profile that you hadn’t originally anticipated, *without* needing to update your client code in any way.
+
+In addition, we’ll continue to make additions to the **Player** profile in future updates of the **PlayFab** service which will provide even more options for server-side logic.

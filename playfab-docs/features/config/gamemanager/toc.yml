@@ -1,24 +1,23 @@
-- name: Game Manager
+- name: Overview
   href: index.md
+- name: Quickstart
+  href: quickstart.md
+- name: Tutorials
+  href: tutorials.md
   items:
-  - name: Quickstart
-    href: game-manager-quickstart.md
-  - name: Tutorials
-    href: game-manager-tutorials.md
-    items:
-    - name: API Access Policy
-      href: api-access-policy.md
-    - name: API Feature Settings in the PlayFab Game Manager
-      href: api-feature-settings-in-the-playfab-game-manager.md
-    - name: Audit Logs
-      href: audit-logs.md
-    - name: Encrypted Logins
-      href: encrypted-logins.md
-    - name: Player Encryption Services
-      href: player-encryption-services.md
-    - name: PlayFab user roles
-      href: playfab-user-roles.md
-    - name: Secret Key Management
-      href: secret-key-management.md
-    - name: Two-Factor Authentication
-      href: two-factor-authentication.md
+  - name: API Access Policy
+    href: api-access-policy.md
+  - name: API Feature Settings in the PlayFab Game Manager
+    href: api-feature-settings-in-the-playfab-game-manager.md
+  - name: Audit Logs
+    href: audit-logs.md
+  - name: Encrypted Logins
+    href: encrypted-logins.md
+  - name: Player Encryption Services
+    href: player-encryption-services.md
+  - name: PlayFab user roles
+    href: playfab-user-roles.md
+  - name: Secret Key Management
+    href: secret-key-management.md
+  - name: Two-Factor Authentication
+    href: two-factor-authentication.md

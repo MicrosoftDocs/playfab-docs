@@ -1,14 +1,13 @@
-- name: Push Notifications
+- name: Overview
   href: index.md
+- name: Quickstart
+  href: quickstart.md
+- name: Tutorials
+  href: tutorials.md
   items:
-  - name: Quickstart
-    href: push-notifications-quickstart.md
-  - name: Tutorials
-    href: push-notifications-tutorials.md
-    items:
-    - name: Getting Started with Android Push Notifications
-      href: getting-started-android-studio-push-notifications.md
-    - name: Push Notifications for Android
-      href: push-notifications-for-android.md
-    - name: Push Notifications for iOS
-      href: push-notifications-for-ios.md
+  - name: Getting Started with Android Push Notifications
+    href: getting-started-android-studio-push-notifications.md
+  - name: Push Notifications for Android
+    href: push-notifications-for-android.md
+  - name: Push Notifications for iOS
+    href: push-notifications-for-ios.md

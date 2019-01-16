@@ -1,5 +1,5 @@
 ---
-title: Player Segmentation
+title: Player segmentation
 author: v-thopra
 description: Tutorial that describes how to create and use player segmentation.
 ms.author: v-thopra
@@ -10,27 +10,42 @@ keywords: playfab, segmentation
 ms.localizationpriority: medium
 ---
 
-# Player Segmentation
+# Player segmentation
 
-Player Segmentation is defined in [Game Manager](../../config/gamemanager/game-manager-quickstart.md). Segments allow you to define useful or interesting groups of players, and perform exclusive actions on that group.
+**Player Segmentation** is defined in [Game Manager](../../config/gamemanager/quickstart.md). **Segments** allow you to define useful or interesting **Groups** of **Players**, and perform exclusive actions on that **Group**.
 
 **Requirements:**
 
-- Players with and without a distinctive characteristic defined in PlayFab.
+- **Players** with and without a distinctive characteristic defined in **PlayFab**.
 - A defined [CloudScript PlayStream Hook](../../automation/actions-rules/using-cloudscript-actions-with-playstream.md).
 
-## Example Case: Run a custom CloudScript for every player who reaches an in-game goal
+## Example case: Run a custom CloudScript for every Player who reaches an in-game goal
 
-The "defining characteristic" of a player can be among: Login time, Linked device type, tags, real-world location, statistic values, virtual currency values, or real money purchases, and more. For this example, our distinctive characteristic will be a statistic, specifically players who achieve 50 "str". Statistics are one of many possible options, and only specifically required for this example. Feel free to replace the statistic requirement with another filter of your choice.
+The *defining characteristic* of a **Player** might be:
 
-Our action will be to run a CloudScript function. CloudScript is by far the most flexible trigger option, granting you full control of the player and segmentation information at the time of segment-transition.
+- Login time
+- Linked device type
+- Tags
+- Real-world location
+- Statistic Values
+- Virtual Currency values
+- Real money purchases, and more.
 
-Game Manager: Navigate to your title -> Players -> Segments -> New Segment
+For this example, our distinctive characteristic will be a **Statistic**, specifically **Players** who achieve 50 **str**. **Statistics** are one of many possible options, and only specifically required for this example. Feel free to replace the **Statistic** requirement with another filter of your choice.
 
-Here is the example segment described above:
+Our action will be to run a **CloudScript** function. **CloudScript** is by far the most flexible trigger option, granting you full control of the **Player** and **Segmentation** information at the time of **Segment**-transition.
 
-![Game Manager - Players - Segments - New Segment](media/tutorials/game-manager-players-segments-new-segment.png)  
+From **Game Manager**:
 
-The most complex part of this example is the CloudScript. Utilize the second parameter, "context" in your [CloudScript handler](../../automation/actions-rules/using-cloudscript-actions-with-playstream.md) to identify the player, and segment transition. Afterwards, perform any action you wish on the player, such as granting [inventory items](../../data/playerdata/player-inventory.md), [virtual currency](../../commerce/economy/currencies.md), [player data](../../data/playerdata/player-data-quickstart.md), or [statistics](../../data/playerdata/using-player-statistics.md).
+- Navigate to your **Title**.
+- Select **Players** from the menu on the left.
+- Move to the **Segments** tab.
+- Select **New Segment**.
 
-See also: [Best Practices for Store Segmentation](../../commerce/stores/best-practices-for-store-segmentation.md)
+The screen shown below is an example of the **Segment** described above.
+
+![Game Manager - players - segments - new segment](media/tutorials/game-manager-players-segments-new-segment.png)  
+
+The most complex part of this example is the **CloudScript**. Utilize the second parameter, **Context** in your [CloudScript handler](../../automation/actions-rules/using-cloudscript-actions-with-playstream.md) to identify the **Player**, and **Segment** transition. Afterwards, perform any action you wish on the **Player**, such as granting [inventory items](../../data/playerdata/player-inventory.md), [virtual currency](../../commerce/economy/currencies.md), [player data](../../data/playerdata/quickstart.md), or [statistics](../../data/playerdata/using-player-statistics.md).
+
+See also: [Best Practices for store segmentation](../../commerce/stores/best-practices-for-store-segmentation.md)

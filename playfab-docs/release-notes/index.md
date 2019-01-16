@@ -1,4 +1,53 @@
+---
+title: PlayFab Release Notes 2018
+author: v-thopra
+description: PlayFab Release Notes for 2018.
+ms.author: v-thopra
+ms.date: 07/12/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, development, release, apis, features
+ms.localizationpriority: medium
+---
+
 # PlayFab Release Notes 2018
+
+## 181218
+
+Date: 2018-12-18
+
+**[XPlatCppSdk](https://github.com/PlayFab/XPlatCppSdk) Specific Changes:**
+
+* **SDK Breaking Change** : Updated the folder structure for the XPlatCppSdk repo. If you are using the SDK with project references, an update to vcxproj files path would be required.
+* Adding Xbox support to the XPlatCppSdk. Refer to the [XPlatCpp Getting Started Guide for Xbox](https://api.playfab.com/docs/getting-started/xplatcpp-getting-started-for-xbox).
+* **New API**
+ * Added PlayFabEventApi to support Heavyweight (low throughput) and Lightweight (high throughput) custom events.
+
+
+ **[UnrealMarketplacePlugin](https://github.com/PlayFab/UnrealMarketplacePlugin) Specific Changes:**
+
+ * Adding support for Unreal Engine 4.21
+
+## 181204
+
+Date: 2018-12-04
+
+**[XPlatCppSdk](https://github.com/PlayFab/XPlatCppSdk) Specific Changes:**
+
+* Added support to build external dependencies.
+* Updated nuget composition. This is not a breaking change. Added binaries for the external dependencies to the nuget and updated the properties sheet.
+* Bug fixes for QoSAPI.
+
+**[CSharpSDK](https://github.com/PlayFab/CSharpSDK) Specific Changes:**
+
+* Added .NET Standard 1.1/2.0 (plus .Net Core) support.
+* Updated nuget composition. The package now contains binaries for .Net Standard 1.1/2.0 and portables also.
+* Migrated VS project files to VS 2017 standard.
+
+**[UnitySDK](https://github.com/PlayFab/UnitySdk) Specific Changes:**
+
+* **SDK Breaking Change**: The SimpleGet success callback signature has changed, and now must accept a new single parameter of a byte[]
+* Added SimplePost.
 
 ## 181105
 
@@ -9,7 +58,7 @@ Date: 2018-11-05
 * PlayFab now supports login and account-linking with OpenID
 * Additional XboxLive ID support, and enabling Xbox login via server
 
-In preparation for wider release of the service, we are rolling out PlayFab Multiplayer Servers 2.0 APIs. See http://aka.ms/PlayFabMultiplayer for more information
+In preparation for wider release of the service, we are rolling out PlayFab Multiplayer Servers 2.0 APIs. See [PlayFab Multiplayer Servers 2.0 (Thunderhead)](../features/multiplayer/compute/thunderhead.md) for more information
 
 ## 181001
 
@@ -37,7 +86,7 @@ Date: 2018-09-24
 
 **API Changes:**
 
-* Adding Metadata to the [DeleteMasterPlayerAccountRequest](https://api.playfab.com/documentation/Admin/datatype/PlayFab.Admin.Models/PlayFab.Admin.Models.DeleteMasterPlayerAccountRequest) Model
+* Adding Metadata to the [DeleteMasterPlayerAccountRequest](xref:titleid.playfabapi.com.admin.accountmanagement.deletemasterplayeraccount#deletemasterplayeraccountrequest) Model
 * Bug fixes in the Unreal Marketplace Plugin to expand supported versions
 
 ## 180917  
@@ -46,12 +95,12 @@ Date: 2018-09-17
 
 **API Changes:**
 
-* [Server API](https://api.playfab.com/documentation/server): Method [DeleteUsers](https://api.playfab.com/documentation/server/method/DeleteUsers) is deprecated and replaced with [DeletePlayer](https://api.playfab.com/documentation/server/method/DeletePlayer)
+* [Server API](https://api.playfab.com/documentation/server): Method [DeleteUsers](https://api.playfab.com/documentation/server/method/DeleteUsers) is deprecated and replaced with [DeletePlayer](xref:titleid.playfabapi.com.server.accountmanagement.deleteplayer)
 * Unreal Marketplace Plugin:
     * Updated Marketplace Plugin to include our Blueprint interface
-    * [New Marketplace Getting Started Guide](https://api.playfab.com/docs/getting-started/unreal-mkpl-getting-started)
+    * [New Unreal Engine quickstart guide](../sdks/unreal/quickstart.md)
     * [View in Unreal Marketplace](https://www.unrealengine.com/marketplace/playfab-sdk)
-    * [Upgrade Guide](https://api.playfab.com/docs/getting-started/unreal-mkpl-getting-started/mkpl-upgrade)
+    * [Upgrade Tutorial](../sdks/unreal/unreal-marketplace-plugin-upgrade-tutorial.md)
 
 ## 180906  
 
@@ -74,9 +123,9 @@ Date: 2018-08-29
 **API Changes:**
 
 * renaming Entity.TypeString to Entity.Type
-* renaming EmptyResult to [EmptyResponse](https://api.playfab.com/documentation/groups/datatype/PlayFab.groups.Models/PlayFab.groups.Models.EmptyResponse)
+* renaming EmptyResult to [EmptyResponse](xref:titleid.playfabapi.com.groups.groups.removemembers#emptyresponse)
 * Renamed most Authentication function calls like GameServer* to MutliplayerServer*
-* [Admin.GetUserAccountInfo](https://api.playfab.com/documentation/admin/method/GetUserAccountInfo) has more detailed platform information
+* [Admin.GetUserAccountInfo](xref:titleid.playfabapi.com.admin.accountmanagement.getuseraccountinfo) has more detailed platform information
 
 **Objective C Specific Changes:**
 
@@ -96,19 +145,19 @@ Date: 2018-08-09
 * We have separated the Entity API Group into multiple new Api Groups
 * This is a big SDK Breaking change for anybody using the former Entity Api
 * See our [Blog!](https://api.playfab.com/blog/entity-api-group-restructure)
-* See our [Upgrade Guide!](https://api.playfab.com/docs/entityapi-upgrade)
+* See our [Upgrade Guide!](../features/data/entities/entity-api-restructure-upgrade-tutorial.md)
 * (Please note, the links for blog and upgrade guide may not work yet, they're almost done)
 
 **API Changes:**
 
 * **New Api Methods :**
   * The following APIs are released and visible in SDKs, but the accompanying documentation isn't ready yet:
-    * client.[LoginWithNintendoSwitchDeviceId](https://api.playfab.com/documentation/client/method/LoginWithNintendoSwitchDeviceId)
-    * client.[UnlinkNintendoSwitchDeviceId](https://api.playfab.com/documentation/client/method/UnlinkNintendoSwitchDeviceId)
-    * server.[GetPlayFabIDsFromNintendoSwitchDeviceIds](https://api.playfab.com/documentation/server/method/GetPlayFabIDsFromNintendoSwitchDeviceIds)
-    * client.[LoginWithFacebookInstantGamesId](https://api.playfab.com/documentation/client/method/LoginWithFacebookInstantGamesId) (not ready to use yet)
-    * client.[UnlinkFacebookInstantGamesId](https://api.playfab.com/documentation/client/method/UnlinkFacebookInstantGamesId) (not ready to use yet)
-    * server.[GetPlayFabIDsFromFacebookInstantGamesIds](https://api.playfab.com/documentation/server/method/GetPlayFabIDsFromFacebookInstantGamesIds) (not ready to use yet)
+    * client.[LoginWithNintendoSwitchDeviceId](xref:titleid.playfabapi.com.client.authentication.loginwithnintendoswitchdeviceid)
+    * client.[UnlinkNintendoSwitchDeviceId](xref:titleid.playfabapi.com.client.accountmanagement.unlinknintendoswitchdeviceid)
+    * server.[GetPlayFabIDsFromNintendoSwitchDeviceIds](xref:titleid.playfabapi.com.client.accountmanagement.getplayfabidsfromnintendoswitchdeviceids)
+    * client.[LoginWithFacebookInstantGamesId](xref:titleid.playfabapi.com.client.authentication.loginwithfacebookinstantgamesid) (not ready to use yet)
+    * client.[UnlinkFacebookInstantGamesId](xref:titleid.playfabapi.com.client.accountmanagement.unlinkfacebookinstantgamesid) (not ready to use yet)
+    * server.[GetPlayFabIDsFromFacebookInstantGamesIds](xref:titleid.playfabapi.com.client.accountmanagement.getplayfabidsfromfacebookinstantgamesids) (not ready to use yet)
 * **New PlayStream Events**
   * title_hopper_config_updated event renamed to [title_queue_config_updated](https://api.playfab.com/playstream/events/title_queue_config_updated)
 * **General changes**
@@ -140,7 +189,7 @@ Date: 2018-07-16
 
 * Added [Plugin Manager API](https://github.com/PlayFab/CSharpSDK/blob/master/PluginManager.md) to C# SDK to support optional custom implementations of JSON Serializer and HTTP client
 
-**[UnrealCppSdk](https://github.com/PlayFab/UnrealCppSdk):**
+~~**UnrealCppSdk Changes:**~~ (UPDATED : This SDK has been deprecated. For the new unreal SDK, please refer to [UnrealMarketplaceSDK](https://www.unrealengine.com/marketplace/playfab-sdk))
 
 * Unreal 4 C++ SDK is also published on [Unreal Marketplace!](https://www.unrealengine.com/marketplace/playfab-sdk)
 
@@ -168,7 +217,7 @@ Date: 2018-07-06
 **API Changes:**
 
 * **New API Method:**
- * entity.[WriteEvents](https://api.playfab.com/documentation/Events/method/WriteEvents)
+ * entity.[WriteEvents](sref:titleid.playfabapi.com.events.playstreamevents.writeevents)
 
 **[UnitySdk](https://github.com/PlayFab/UnitySDK) Specific Changes:**
 
@@ -180,7 +229,7 @@ Date: 2018-07-05
 
 **API Changes:**
 
-* EntityAPI.[ExecuteEntityCloudScript](https://api.playfab.com/documentation/cloudscript/method/ExecuteEntityCloudScript)
+* EntityAPI.[ExecuteEntityCloudScript](xref:titleid.playfabapi.com.cloudscript.server-sidecloudscript.executeentitycloudscript)
 * PlayStreamEventModel.[title_hopper_config_updated](https://api.playfab.com/playstream/events/title_hopper_config_updated)
 
 **New [PythonSdk!](https://github.com/PlayFab/PythonSdk)**
@@ -217,9 +266,9 @@ Date: 2018-05-28
 **API Changes:**
 
 * **New API Methods:**
- * Admin.[GetPlayedTitleList](https://api.playfab.com/documentation/admin/method/GetPlayedTitleList)
- * Admin.[DeleteMasterPlayerAccount](https://api.playfab.com/documentation/admin/method/DeleteMasterPlayerAccount)
- * Admin.[ExportMasterPlayerData](https://api.playfab.com/documentation/admin/method/ExportMasterPlayerData)
+ * Admin.[GetPlayedTitleList](xref:titleid.playfabapi.com.admin.accountmanagement.getplayedtitlelist)
+ * Admin.[DeleteMasterPlayerAccount](xref:titleid.playfabapi.com.admin.accountmanagement.deletemasterplayeraccount)
+ * Admin.[ExportMasterPlayerData](xref:titleid.playfabapi.com.admin.accountmanagement.exportmasterplayerdata)
  * This is a part of the new GDPR launch. See our blog [here](https://blog.playfab.com/blog/gdpr)
 * Updated Error codes in a variety of API methods
 * New PlayStream Event:
@@ -240,11 +289,11 @@ Date: 2018-05-07
 **API Changes:**
 
 * **New API Method:**
-  * entity.[GetProfiles](https://api.playfab.com/documentation/Profiles/method/GetProfiles)
+  * entity.[GetProfiles](xref:titleid.playfabapi.com.profiles.accountmanagement.getprofiles)
 * **New PlayStream Events:**
   * [entity_executed_cloud_script](https://api.playfab.com/playstream/events/entity_executed_cloud_script)
 * **Updated API Method:**
-  * client.[RegisterPlayFabUser](https://api.playfab.com/documentation/client/method/RegisterPlayFabUser) now returns [result](https://api.playfab.com/documentation/client/datatype/PlayFab.client.Models/PlayFab.client.Models.RegisterPlayFabUserResult).[EntityToken](https://api.playfab.com/documentation/Client/datatype/PlayFab.Client.Models/PlayFab.Client.Models.EntityTokenResponse)
+  * client.[RegisterPlayFabUser](xref:titleid.playfabapi.com.client.authentication.registerplayfabuser) now returns [result](xref:titleid.playfabapi.com.client.authentication.registerplayfabuser#registerplayfabuserresult).[EntityToken](xref:titleid.playfabapi.com.client.authentication.registerplayfabuser#entitytokenresponse)
 
 **[UnitySdk](https://github.com/PlayFab/UnitySDK) Specific Changes:**
 
@@ -277,9 +326,9 @@ Date: 2018-05-07
 
 Date: 2018-04-14
 
-**[UnrealCppSdk](https://github.com/PlayFab/UnrealCppSdk) HotFix:**
+~~**UnrealCppSdk HotFix:**~~ (UPDATED : This SDK has been deprecated. For the new unreal SDK, please refer to [UnrealMarketplaceSDK](https://www.unrealengine.com/marketplace/playfab-sdk))
 
-* Issues were discovered in the Entity API release for [UnrealCppSdk](https://github.com/PlayFab/UnrealCppSdk). These are hotfixed, and the Entity API should now work as expected.
+* ~~Issues were discovered in the Entity API release for UnrealCppSdk. These are hotfixed, and the Entity API should now work as expected.~~
 
 ## 180409  
 
@@ -290,8 +339,8 @@ Date: 2018-04-09
 * **HotFix:**
   * Only the date was updated, not the major/minor version numbers
 * **Guilds:**
-  * client.[GetAccountInfo](https://api.playfab.com/documentation/client/method/GetAccountInfo).[UserInfo](https://api.playfab.com/documentation/client/datatype/PlayFab.Server.Models/PlayFab.Client.Models.UserAccountInfo).[TitleInfo](https://api.playfab.com/documentation/client/datatype/PlayFab.Server.Models/PlayFab.Client.Models.UserTitleInfo).[TitlePlayerAccount](https://api.playfab.com/documentation/client/datatype/PlayFab.Server.Models/PlayFab.Client.Models.EntityKey) now contains the required information to identify other players and add them to your guild/group
-  * The same information can also be found with admin.[GetUserAccountInfo](https://api.playfab.com/documentation/admin/method/GetUserAccountInfo) and server.[GetUserAccountInfo](https://api.playfab.com/documentation/server/method/GetUserAccountInfo)
+  * client.[GetAccountInfo](xref:titleid.playfabapi.com.client.accountmanagement.getaccountinfo).[UserAccountInfo](xref:titleid.playfabapi.com.client.accountmanagement.getaccountinfo#useraccountinfo).[UserTitleInfo](xref:titleid.playfabapi.com.client.accountmanagement.getaccountinfo#usertitleinfo).[TitlePlayerAccount](xref:titleid.playfabapi.com.client.accountmanagement.getaccountinfo#entitykey) now contains the required information to identify other players and add them to your guild/group
+  * The same information can also be found with admin.[GetUserAccountInfo](xref:titleid.playfabapi.com.admin.accountmanagement.getuseraccountinfo) and server.[GetUserAccountInfo](xref:titleid.playfabapi.com.server.accountmanagement.getuseraccountinfo)
 
 **[UnitySdk](https://github.com/PlayFab/UnitySDK) Specific Changes:**
 
@@ -320,15 +369,15 @@ Date: 2018-03-16
 
 **API Changes:**
 
-* Entities! [Blog](https://api.playfab.com/blog/introducing-entities-objects-and-files)! [Guide](https://api.playfab.com/docs/tutorials/entities/getting-started-entities)!
+* Entities! [Blog](https://api.playfab.com/blog/introducing-entities-objects-and-files)! [Quickstart Guide](../features/data/entities/quickstart.md)!
  * All Client login methods return Entity credentials if request.LoginTitlePlayerAccountEntity is set to true
-* Guilds! [Blog](https://api.playfab.com/blog/announcing-groups-for-guilds-friends-clans-and-more)! [Guide](https://api.playfab.com/docs/tutorials/entities/entity-groups)!
+* Guilds! [Blog](https://api.playfab.com/blog/announcing-groups-for-guilds-friends-clans-and-more)! [Guide](../features/data/entities/entity-groups.md)!
 * Error Codes for many API methods updated for accuracy (Dozens!)
 
 **New API Methods:**
 
-* admin.[RevokeInventoryItems](https://api.playfab.com/documentation/admin/method/RevokeInventoryItems) and server.[RevokeInventoryItems](https://api.playfab.com/documentation/server/method/RevokeInventoryItems)
-* A whole new [Entity API](https://api.playfab.com/documentation/entity)
+* admin.[RevokeInventoryItems](xref:titleid.playfabapi.com.admin.playeritemmanagement.revokeinventoryitems) and server.[RevokeInventoryItems](xref:titleid.playfabapi.com.server.playeritemmanagement.revokeinventoryitems)
+* A whole new [Entity API](../features/data/entities/quickstart.md)
 * Many new [Entity PlayStream Events](https://api.playfab.com/playstream/events) (search for "entity" on linked page)
 
 **Most SDKs Updated to support Entity APIs:**

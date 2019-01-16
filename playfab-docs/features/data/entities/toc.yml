@@ -1,12 +1,13 @@
-- name: Entities
+- name: Overview
   href: index.md
+- name: Quickstart
+  href: quickstart.md
+- name: Tutorials
+  href: tutorials.md
   items:
-  - name: Quickstart
-    href: entities-quickstart.md
-  - name: Tutorials
-    href: entities-tutorials.md
-    items:
-    - name: Available built-in Entity types
-      href: available-built-in-entity-types.md
-    - name: Entity Groups
-      href: entity-groups.md
+  - name: Available built-in Entity types
+    href: available-built-in-entity-types.md
+  - name: Entity Groups
+    href: entity-groups.md
+  - name: Entity API Restructure Upgrade Tutorial
+    href: entity-api-restructure-upgrade-tutorial.md

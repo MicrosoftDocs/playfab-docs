@@ -1,14 +1,13 @@
-- name: Compute
+- name: Overview
   href: index.md
+- name: Quickstart
+  href: quickstart.md
+- name: Tutorials
+  href: tutorials.md
   items:
-  - name: Quickstart
-    href: quickstart.md
-  - name: Tutorials
-    href: tutorials.md
-    items:
-    - name: Custom Game Servers
-      href: custom-game-servers.md
-    - name: PlayFab Multiplayer Servers 2.0 (Thunderhead)
-      href: thunderhead.md
-    - name: Using Externally-hosted game servers
-      href: using-externally-hosted-games-servers-with-playfab.md
+  - name: Custom Game Servers
+    href: custom-game-servers.md
+  - name: PlayFab Multiplayer Servers 2.0 (Thunderhead)
+    href: thunderhead.md
+  - name: Using Externally-hosted game servers
+    href: using-externally-hosted-games-servers-with-playfab.md

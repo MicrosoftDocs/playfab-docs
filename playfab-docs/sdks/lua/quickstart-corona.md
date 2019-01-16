@@ -1,5 +1,5 @@
 ---
-title: Lua Quickstart for Corona
+title: Lua quickstart for Corona
 author: v-thopra
 description: This guide will help you make your first PlayFab API call in the Corona engine.
 ms.author: v-thopra
@@ -10,7 +10,7 @@ keywords: playfab, lua, corona, playfab client plugin
 ms.localizationpriority: medium
 ---
 
-# Lua Quickstart for Corona
+# Lua quickstart for Corona
 
 This guide will help you make your first PlayFab API call in the Corona engine.
 
@@ -75,9 +75,9 @@ PlayFabClientApi.LoginWithCustomID(loginRequest,
 
 - Corona automatically executes the project source immediately when you save. So as soon as you update and save these two files, you should see this:
 
-![Install PlayFab SDK](media/finished.png)
+![Download Corona Plugin - Finish and Execute](media/finish-and-execute.png)
 
-- At this point, you can start making other api calls, and building your game
+- At this point, you can start making other API calls, and building your game.
 - For a list of all available client API calls, see our [PlayFab API References](../../api-references/index.md) documentation.
 
 - Happy coding!

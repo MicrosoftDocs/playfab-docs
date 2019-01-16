@@ -36,7 +36,7 @@ There is also a third, special role -- Studio Admin. Studio Admins are special u
 
 Here are the steps to create a new role:
 
-1. [Login to PlayFab](http://developer.playfab.com/) with your developer account.
+1. [Login to PlayFab](https://developer.playfab.com/) with your developer account.
 2. Ensure you are a studio admin, you will know that you are if you see the following options next to your studio name. If you are not the studio admin, please contact the studio admin to setup the permissions according to this tutorial.
 
    ![PlayFab - Studio Admin Options](media/tutorials/playfab-studio-admin-options.png)  
@@ -64,7 +64,7 @@ Once you've created a role, you can assign the role to users in a title. Roles a
 
 Here are the steps to assign a role:
 
-1. [Login to PlayFab](http://developer.playfab.com/) with your developer account. As mentioned previously, make sure you are a studio admin.
+1. [Login to PlayFab](https://developer.playfab.com/) with your developer account. As mentioned previously, make sure you are a studio admin.
 2. Click Users and Roles from the list of options. You will see a list of users for your studio.
 3. Click Settings for the user for whom you wish to assign roles.
 4. Click the Roles tab. You will see a list of all titles in your studio, and any roles that user already has for each title.

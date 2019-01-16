@@ -13,31 +13,40 @@ ms.localizationpriority: medium
 # Using Player Publisher Data
 
 ## Player Data vs Player Publisher Data
+[Player Data](quickstart.md) is information about a **Player**, specific to a game **Title**. Thus, it should be used for **Title**-specific information, such as saving your **Player's** position in a dungeon, or other game-specific data.
 
-[Player Data](player-data-quickstart.md) is information about a player, specific to a game title. Thus, it should be used for title-specific information, such as saving your player's position in a dungeon, or other game-specific data. Player Publisher Data is data associated with the player account, as opposed to the player account **plus** the title. So, it is used to save information about a player relevant to all titles in your studio (which may also contain title-specific information, for purposes of cross-title rewards). All titles within a Studio in PlayFab share a Publisher ID by default, and that ID defines this relationship. Player accounts exist at the publisher layer, and are shared across all titles with the same Publisher ID (and then additionally have distinct Player Data per title). If you need to have titles in a Studio that have different Publisher IDs, or titles in different Studios that share the same Publisher ID, you can open a ticket in the [PlayFab community forums](https://community.playfab.com/) and our Developer Success team will help you out.
+**Player Publisher Data** is data associated with the **Player** account, as opposed to the **Player** account **plus** the **Title**. It is used to save information about a **Player** relevant to all **Titles** in your **Studio** (which may also contain **Title**-specific information, for purposes of cross-**Title** rewards).
 
-By the way, please don't confuse Player Publisher Data with [Publisher Data](../../config/titledata/using-publisher-data.md) which is key/value pair data shared by all titles (it is not per-player).
+All **Titles** within a **Studio** in **PlayFab** share a **Publisher ID** by default, and that **ID** defines this relationship. **Player** accounts exist at the **Publisher** layer, and are shared across all **Titles** with the same **Publisher ID** (and then additionally have distinct **Player** Data per **Title**).
 
-Player Publisher Data usage is nearly identical to Player Data usage. They are both dictionaries mapping a string to a JSON blob (or other arbitrary string value).
+If you need to have **Titles** in a **Studio** that have different **Publisher IDs**, or **Titles** in different **Studios** that share the same **Publisher ID**, you can open a **Ticket** in the [PlayFab community forums](https://community.playfab.com/) and our **Developer Success** team will help you out.
 
-Our example in this tutorial, [Grant a Reward for Playing Multiple Titles](#grant-a-reward-for-pPlaying-multiple-titles), will demonstrate saving JSON blobs, and focus on a targeted example of why you might use Player Publisher Data.
+> [!NOTE]
+> Please don't confuse **Player Publisher Data** with [Publisher Data](../../config/titledata/using-publisher-data.md) which is **Key/Value Pair** data shared by all **Titles** (it is *not* per-**Player**).
 
-## Grant a Reward for Playing Multiple Titles
+**Player Publisher Data** usage is nearly identical to **Player Data** usage. They are *both* dictionaries mapping a string to a **JSON** blob (or other arbitrary string value).
 
-Rewards usually involve other systems outside of Player Data, so this example demonstrates awarding virtual currency for simplicity.
+Our example in this tutorial, [Grant a reward for playing multiple titles](#grant-a-reward-for-playing-multiple-titles), will demonstrate saving JSON blobs, and focus on a targeted example of why you might use Player Publisher Data.
+
+## Grant a reward for playing multiple titles
+
+**Rewards** usually involve *other* systems outside of **Player Dat**a, so this example demonstrates awarding **Virtual Currency** for the sake of simplicity.
 
 ### Requirements
 
-- A player must sign into both titles using the same credentials. One approach is to use recoverable credentials, as described in our [Login Basics and Best Practices](../../authentication/platform-specific-authentication/login-basics-best-practices.md) tutorial. To add a recoverable login to an anonymous account, see our [Account Linking](../../authentication/linking-unlinking/account-linking-quickstart.md) Quickstart.
-- This example require a working knowledge of [CloudScript](../../automation/cloudscript/writing-custom-cloudscript.md): Our example demonstrates basic data security to avoid player cheating. One could likewise use the Server API on a custom game server, if the title makes use of them.
-- Rewards triggered through PlayFab require usage of the appropriate PlayFab features. PlayFab rewards can be in the form of [virtual currency](../../commerce/economy/currencies.md), [inventory items](player-inventory.md), [custom player data](player-data-quickstart.md), [statistics](using-player-statistics.md), etc. Distributing rewards outside of PlayFab systems is an advanced topic and will not be covered in this tutorial.
-- It's also recommended that developers use good error handling on all Server API calls made from CloudScript. This is another advanced topic, which we will cover in a separate tutorial we'll be posting shortly.
+- A **Player** must sign into *both* **Titles** using the same **Credentials**. One approach is to use **Recoverable Credentials**, as described in our [Login Basics and Best Practices](../../authentication/platform-specific-authentication/login-basics-best-practices.md) tutorial. To add a **Recoverable** login to an anonymous account, see our [Account Linking](../../authentication/linking-unlinking/quickstart.md) quickstart.
+- This example requires a working knowledge of [CloudScript](../../automation/cloudscript/writing-custom-cloudscript.md):
+  - Our example demonstrates basic data security to avoid **Player** cheating. One could likewise use the **Server API** on a custom game server, if the **Title** makes use of them.
+- **Rewards** triggered through **PlayFab** require usage of the appropriate **PlayFab** features. **PlayFab Rewards** can be in the form of [**Virtual Currency**](../../commerce/economy/currencies.md), [**Inventory Items**](player-inventory.md), [**Custom Player Data**](quickstart.md), [**Statistics**](using-player-statistics.md), etc. Distributing **Rewards** outside of **PlayFab** systems is an advanced topic, and will not be covered in this tutorial.
+- It's also recommended that developers use good error handling on all **Server API** calls made from **CloudScript**. This is another advanced topic, which we will cover in a separate tutorial we'll be posting shortly.
 
 ### Step 1: Each game reports a login to Publisher Data
 
-Each game needs to report that a login occurred. For simplicity, our example only provides one reward for each title, for each other publisher title played. Feel free to expand on the idea with counters, timestamps, or other mechanisms to provide progressive or sequential rewards.
+Each game needs to report that a login occurred. For simplicity, our example only provides *one* reward for each **Title**, for each other **Publisher Title** played.
 
-The following CloudScript would need to be present in **every** game in your studio:
+Feel free to expand on the idea with counters, timestamps, or other mechanisms to provide progressive or sequential rewards.
+
+The following **CloudScript** would need to be present in *every* game in your studio.
 
 ```javascript
 // CloudScript/Javascript
@@ -63,11 +72,14 @@ handlers.TrackTitleUsage = function () {
 }
 ```
 
-Note in particular that this example demonstrates using server.[GetUserPublisherInternalData](xref:titleid.playfabapi.com.server.playerdatamanagement.getuserpublisherinternaldata) and server.[UpdateUserPublisherInternalData](xref:titleid.playfabapi.com.server.playerdatamanagement.updateuserpublisherinternaldata). 
+In particular, this example demonstrates using:
 
-### Step 2: Each game checks for redeemable rewards
+- server.[GetUserPublisherInternalData](xref:titleid.playfabapi.com.server.playerdatamanagement.getuserpublisherinternaldata)
+- server.[UpdateUserPublisherInternalData](xref:titleid.playfabapi.com.server.playerdatamanagement.updateuserpublisherinternaldata). 
 
-Once you are tracking which titles are played, you need to track and grant the rewards. This CloudScript function will check for, and grant available rewards based on having played other titles.
+### Step 2: Each game checks for redeemable Rewards
+
+Once you are tracking which **Titles** are played, you need to track and grant the **Rewards**. This **CloudScript** function will check for and grant available **Rewards**, based on having played other **Titles**.
 
 ```javascript
 // CloudScript/Javascript
@@ -114,16 +126,19 @@ handlers.CheckCrossTitleRewards = function () {
 };
 ```
 
-Note in particular, this example demonstrates the use of server.[GetUserPublisherInternalData](xref:titleid.playfabapi.com.server.playerdatamanagement.getuserpublisherinternaldata) (requesting multiple keys), server.[UpdateUserPublisherInternalData](xref:titleid.playfabapi.com.server.playerdatamanagement.updateuserpublisherinternaldata), and server.[AddUserVirtualCurrency](xref:titleid.playfabapi.com.server.playeritemmanagement.adduservirtualcurrency).
+> [!NOTE]
+> This particular example demonstrates the use of server.[GetUserPublisherInternalData](xref:titleid.playfabapi.com.server.playerdatamanagement.getuserpublisherinternaldata) (requesting multiple **Keys**), server.[UpdateUserPublisherInternalData](xref:titleid.playfabapi.com.server.playerdatamanagement.updateuserpublisherinternaldata), and server.[AddUserVirtualCurrency](xref:titleid.playfabapi.com.server.playeritemmanagement.adduservirtualcurrency).
 
 The code blocks represent these steps:
 
-- Fetch the data from PlayFab, and parse it into local data structures (calling [GetUserPublisherInternalData](xref:titleid.playfabapi.com.server.playerdatamanagement.getuserpublisherinternaldata)).
-- Examine the data and search for un-rewarded Title IDs.
-- Grant the rewards (calling [AddUserVirtualCurrency](xref:titleid.playfabapi.com.server.playeritemmanagement.adduservirtualcurrency)).
-- Update the claimed rewards (calling [UpdateUserPublisherInternalData](xref:titleid.playfabapi.com.server.playerdatamanagement.updateuserpublisherinternaldata)).
-- Make the rewarded amount available to the client (via return statement from CloudScript).
+- Fetching the data from **PlayFab**, and parsing it into local data structures (calling [GetUserPublisherInternalData](xref:titleid.playfabapi.com.server.playerdatamanagement.getuserpublisherinternaldata)).
+- Examining the data and search for un-rewarded **Title IDs**.
+- Granting the **Rewards** (calling [AddUserVirtualCurrency](xref:titleid.playfabapi.com.server.playeritemmanagement.adduservirtualcurrency)).
+- Updating the claimed **Rewards** (calling [UpdateUserPublisherInternalData](xref:titleid.playfabapi.com.server.playerdatamanagement.updateuserpublisherinternaldata)).
+- Making the rewarded amount available to the **Client** (via return statement from **CloudScript**).
 
 ## Conclusion
 
-Player Publisher Data and Player Data are structurally identical. Player Data should be title-specific, and Player Publisher Data should only contain information relevant across all of your titles.
+**Player Publisher Data** and **Player Data** are structurally identical.
+
+**Player Data** should be **Title**-specific, while **Player Publisher Data** should *only* contain information relevant across all of your **Titles**.

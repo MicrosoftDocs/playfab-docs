@@ -1,0 +1,8 @@
+- name: PlayFab Authentication
+  href: ../../index.md?#pivot=documentation&panel=authentication
+  expanded: true
+  items:
+  - name: Linking and unlinking
+    href: linking-unlinking/toc.yml
+  - name: Platform specific authentication
+    href: platform-specific-authentication/toc.yml

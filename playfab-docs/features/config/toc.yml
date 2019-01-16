@@ -1,0 +1,10 @@
+- name: PlayFab Config
+  href: ../../index.md?#pivot=documentation&panel=config
+  expanded: true
+  items:
+  - name: Game Manager
+    href: gamemanager/toc.yml
+  - name: Title Data
+    href: titledata/toc.yml
+  - name: Dev-Test-Live
+    href: dev-test-live/toc.yml

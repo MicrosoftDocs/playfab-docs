@@ -1,5 +1,5 @@
 ---
-title: Java Quickstart for Native and Android Studio
+title: Java quickstart for Native and Android Studio
 author: v-thopra
 description: This guide will help you get up and running with the PlayFab JavaSDK and a simple Java program.
 ms.author: v-thopra
@@ -10,7 +10,7 @@ keywords: playfab, java, playfab java sdk, intellij
 ms.localizationpriority: medium
 ---
 
-# Java Quickstart for Native and Android Studio
+# Java quickstart for Native and Android Studio
 
 This tutorial aims to help you get up and running with PlayFab JavaSDK and simple Java program. The goals we persue in this tutorial:
 - Acquire necessary JAR files
@@ -23,7 +23,7 @@ In order to utilize PlayFab JavaSDK we will need PlayFab Client JavaSDK and it's
 
 You may download PlayFab Client JavaSDK JAR library [here](https://github.com/PlayFab/JavaSDK/tree/versioned/builds). Look for **client-sdk-*.jar** and the corresponding Java Doc [Optional but useful].
 
-You may download latest Google GSON [here](http://repo1.maven.org/maven2/com/google/code/gson/gson/2.8.0/). Look for **gson-*.jar**.
+You may download latest Google GSON [here](https://repo1.maven.org/maven2/com/google/code/gson/gson/2.8.0/). Look for **gson-*.jar**.
 
 ## Project Setup with Intellij Idea
 
@@ -111,7 +111,7 @@ public class Main
         _running = false; // Because this is just an example, successful login triggers the end of the program
     }
 
-    // This is a utility function we haven't put into the core SDK yet.  Feel free to use it.
+    // This is a utility function we haven't put into the core SDK yet. Feel free to use it.
     private static <RT> String CompileErrorsFromResult(PlayFabResult<RT> result) {
         if (result == null || result.Error == null)
             return null;

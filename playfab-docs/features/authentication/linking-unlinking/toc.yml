@@ -1,6 +1,4 @@
-- name: Linking & Unlinking
+- name: Overview
   href: index.md
-  items:
-  - name: Quickstart
-    href: account-linking-quickstart.md
-
+- name: Quickstart
+  href: quickstart.md

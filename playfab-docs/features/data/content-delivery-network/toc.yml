@@ -1,8 +1,4 @@
-- name: Content Delivery Network
+- name: Overview
   href: index.md
-  items:
-  - name: Quickstart
-    href: cdn-quickstart.md
-  - name: Tutorials
-    href: cdn-tutorials.md
-
+- name: Quickstart
+  href: quickstart.md

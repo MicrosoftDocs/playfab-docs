@@ -14,19 +14,35 @@ ms.localizationpriority: medium
 
 ## Overview
 
+The **Thirty Day New User Retention Report** tracks the percentage of a **New User Cohort** who return to the game on subsequent days.
+
+A **Cohort** of **Players** is defined by grouping newly registered **Players** on a given day (**Day 0**) and their **Retention** is tracked over a 30-day period.
+
+**Cohort** size indicates the number of **Players** in a **Cohort**.
+
 ![Thirty Day New User Retention Report Table](media/tutorials/thirty-day-new-user-retention-report-table.png)  
 
-The Thirty Day New User Retention Report tracks the percentage of a new user cohort who return to the game on subsequent days. A cohort of players is defined by grouping newly-registered players on a given day (Day 0) and their retention is tracked over a 30-day period. Cohort size indicates the number of players in a cohort.
+The **Thirty Day New User Retention Report** tracks the percentage of a **New User Cohort** who return to the **Game** on subsequent days.
 
-The preceding example report, was generated on 2/5/2018. On 1/6/2018, 39,132 new players created accounts in the example title. Since Day 0 is an initiation date for a new cohort, this column always has 100% retention rate. Then, 33.84% of those players logged in again the next day, 24.64% in two days later, and so on. 10.84% of the cohort returned on the 30th day, which corresponds to 2/5/2018.
+A **Cohort** of **Players** is defined by grouping newly-registered **Players** on a given day (**Day 0**) and their retention is tracked over a **30-day** period. **Cohort** size indicates the number of **Players** in a **Cohort**.
+
+The preceding example **Report**, was generated on **2/5/2018**. On **1/6/2018**, **39,132** new **Players** created accounts in the example **Title**.
+
+Since **Day 0** is an initiation date for a new **Cohort**, this column always has **100%** retention rate.
+
+Then **33.84%** of those **Players** logged in again the *next day*, **24.64%** in *two days* later, and so on. **10.84%** of the **Cohort** returned on the *30th day*, which corresponds to **2/5/2018**.
 
 For additional details, see [Metrics and Terminology](../metrics/metrics-and-terminology.md).
 
-## Populating the report
+## Populating the Report
 
-To populate this report, you must register a player and then log in several days in a row, at least once. This, however, will produce trivial results, with 100% retention for each day. Throwing more players into the process and skipping some days will produce more interesting results.
+To populate this **Report**, you must register a **Players** and then log in several days in a row, at least once.
 
-The following API calls may be used to log in:
+This, however, will produce trivial results, with **100%** retention for each day.
+
+Throwing more **Players** into the process and skipping some days will produce more interesting results.
+
+The following **API** calls may be used to log in:
 
 - [LoginWithAndroidDeviceID](xref:titleid.playfabapi.com.client.authentication.loginwithandroiddeviceid)
 - [LoginWithCustomID](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid)
@@ -41,12 +57,12 @@ The following API calls may be used to log in:
 - [LoginWithTwitch](xref:titleid.playfabapi.com.client.authentication.loginwithtwitch)
 - [LoginWithWindowsHello](xref:titleid.playfabapi.com.client.authentication.loginwithwindowshello)
 
-To register a player you may use the following API Calls:
+To register a **Player** you may use the following **API** calls:
 
 - [RegisterPlayFabUser](xref:titleid.playfabapi.com.client.authentication.registerplayfabuser)
 - [RegisterWithWindowsHello](xref:titleid.playfabapi.com.client.authentication.registerwithwindowshello)
 
-You may also you use the following API calls to register and log in simultaneously if the CreateAccount flag is set:
+You may also you use the following **API** calls to register and log in simultaneously if the **CreateAccount** flag is set:
 
 - [LoginWithAndroidDeviceID](xref:titleid.playfabapi.com.client.authentication.loginwithandroiddeviceid)
 - [LoginWithCustomID](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid)

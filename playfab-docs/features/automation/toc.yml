@@ -1,0 +1,12 @@
+- name: PlayFab Automation
+  href: ../../index.md?#pivot=documentation&panel=automation
+  expanded: true
+  items:
+  - name: CloudScript
+    href: cloudscript/toc.yml
+  - name: PlayStream
+    href: playstream-events/toc.yml
+  - name: Actions and rules
+    href: actions-rules/toc.yml
+  - name: Scheduled tasks
+    href: scheduled-tasks/toc.yml

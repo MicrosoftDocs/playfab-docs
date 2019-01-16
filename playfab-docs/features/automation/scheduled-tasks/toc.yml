@@ -1,6 +1,4 @@
-- name: Scheduled Tasks
+- name: Overview
   href: index.md
-  items:
-  - name: Quickstart
-    href: scheduled-tasks-quickstart.md
-
+- name: Quickstart
+  href: quickstart.md
