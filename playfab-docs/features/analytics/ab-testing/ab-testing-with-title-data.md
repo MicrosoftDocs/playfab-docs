@@ -12,57 +12,62 @@ ms.localizationpriority: medium
 
 # A/B testing with TitleData, A/B Test Buckets, and CloudScript
 
-This tutorial illustrates how to complement PlayFab's built-in features with something which is not yet a fully integrated feature, yet. A/B Testing Title Data is a planned feature. However, It is possible to build your own solution now, using CloudScript:
+This tutorial illustrates how to complement **PlayFab's** built-in features with something which is not a fully integrated feature yet.
 
-**Requirements:**
+**A/B Testing Title Data** is a planned feature. However, It is possible to build your own solution *now*, using **CloudScript**.
+
+**Requirements**
 
 - [Writing Custom CloudScript](../../automation/cloudscript/writing-custom-cloudscript.md), and [CloudScript quickstart](../../automation/cloudscript/quickstart.md)
 - [Title Data](../../config/titledata/quickstart.md)
 - [A/B Testing quickstart](../../analytics/ab-testing/quickstart.md)
 
-**Optional Requirements:**
+**Optional Requirements**
 
-- The final example uses [Unity](../../../sdks/unity3d/quickstart.md), but this technique can be used with any SDK.
+- The final example uses [Unity](../../../sdks/unity3d/quickstart.md), but this technique can be used with any **SDK**.
 
 ## General Idea and Implementation
 
-We already have a built-in feature of defining A/B segments for a player (described in the [A/B Testing quickstart](../../analytics/ab-testing/quickstart.md)). Let's reuse those segments to return Title Data based on which bucket our player belongs to.
+We already have a built-in feature of defining **A/B Segments** for a **Player** (described in the [A/B Testing quickstart](../../analytics/ab-testing/quickstart.md)). Let's reuse those **Segments** to return **Title Data**, based on which **Bucket** our **Player** belongs to.
 
-First, we will need an A/B test. Please, follow the [A/B Testing quickstart](../../analytics/ab-testing/quickstart.md) to create an A/B Test. Once the test is created, you will see the IDs of each of the individual buckets:
+First, we will need an **A/B Test**. Please, follow the [A/B Testing quickstart](../../analytics/ab-testing/quickstart.md) to create an **A/B Test**. Once the **Test** is created, you will see the **IDs** of each of the individual **Buckets**, as shown below.
 
 ![Game Manager - A/B Test - Buckets](media/tutorials/game-manager-ab-test-buckets.png)  
 
-Functionally, a Bucket ID is the same as a normal Segment ID: an API call to [GetPlayerSegments](xref:titleid.playfabapi.com.server.playstream.getplayersegments) will return both Segment IDs and A/B Test Bucket IDs. We can use this to our advantage and introduce a convention for A/B-tested Title Data keys, as shown in the following picture:
+Functionally, a **Bucket ID** is the same as a normal **Segment ID** - an **API** call to [GetPlayerSegments](xref:titleid.playfabapi.com.server.playstream.getplayersegments) will return both **Segment IDs** and **A/B Test Bucket IDs**.
+
+We can use this to our advantage and introduce a convention for **A/B-Tested Title Data Keys**, as shown below.
 
 ![Game Manager - A/B Test - Title Data Keys](media/tutorials/game-manager-ab-test-title-data-keys.png)  
 
-We first introduce a regular entry with the key "MyMessage". We then introduce an A/B-version for each bucket. The key is composed using the original key and a suffix in the form '_BUCKETID'. At any point in time, if we are given an original key and segment ID, we can easily compose a key for an entry specific for this segment/bucket.
-
-Our next step is defining one more entry - a list of all the bucket IDs participating in the testing. In this case we have three of those:
+- We *first* introduce a regular entry with the **Key** called **MyMessage**.
+- We then introduce an **A/B**-version for each **Bucket**. The **Key** is composed using the *original* **Key** and a suffix in the form **_BUCKETID**.
+- At any point in time, if we are given an *original* **Key** and **Segment ID**, we can easily compose a **Key** that is entry-specific for this **Segment/Bucket**.
+- Our next step is defining one more entry - a list of all the **Bucket IDs** participating in the testing. In this case we have three of those, as shown below.
 
 ![Game Manager - A/B Test - Bucket IDs](media/tutorials/game-manager-ab-test-bucket-ids.png)  
 
 > [!NOTE]
-> Make sure to use double quotes ( " ). Otherwise, the JavaScript runtime will not be able to parse it properly.
+> Make *sure* to use double quotes ( " ). Otherwise, the **JavaScript** runtime will not be able to parse it properly.
 
-Now let us define a brand new API call using CloudScript. This API call is named "GetTitleDataAB" and performs a very simple procedure:
+Now let us define a brand new **API** call using **CloudScript**. This **API** call is named **GetTitleDataAB** and performs a very simple procedure:
 
-1. We receive a regular Title Data Key (ex. "MyMessage") from the client, via args.
-2. We get all the bucket IDs participating in the testing
-    - We do this by reading the "TitleDataAbTestSegmentIds" key from our title data.
+1. We receive a regular **Title Data Key** (ex. **MyMessage**) from the **Client**, via **Args**.
+2. We get all the **Bucket IDs** participating in the testing.
+    - We do this by reading the **"TitleDataAbTestSegmentIds" Key** from our **Title Data**.
 
-3. We get all the segment IDs a player belongs to
-    - We do this by making a call to [GetPlayerSegments](xref:titleid.playfabapi.com.server.playstream.getplayersegments) and passing the current player ID.
+3. We get all the **Segment IDs** a **Player** belongs to.
+    - We do this by making a call to [GetPlayerSegments](xref:titleid.playfabapi.com.server.playstream.getplayersegments) and passing the current **Player ID**.
 
-4. If a player does not belong to any bucket, we return the value for the original key:
-    - For example, "MyMessage" -> "This is normal message".
+4. If a **Player** does not belong to *any* **Bucket**, we return the value for the original **Key**:
+    - For example, **MyMessage** -> **This is normal message**.
 
-5. If a player belongs to one of the tested segments, we assemble a new key using our convention and try to fetch the value for this key:
-    - For example, if a player belongs to a bucket with the ID 920BD7F496ACB328, we read the value for the "MyMessage_920BD7F496ACB328" key.
+5. If a **Player** belongs to one of the tested **Segments**, we assemble a new **Key** using our convention, and try to fetch the value for this **Key**:
+    - For example, if a **Player** belongs to a **Bucket** with the **ID "920BD7F496ACB328"**, we read the value for the **"MyMessage_920BD7F496ACB328" Key**.
 
-6. If no bucket-specific value was defined, we, again, return the value for the original key.
+6. If no **Bucket**-specific value was defined, we, again, return the value for the original **Key**.
 
-Let's inspect the following implementation (please, read the code comments for further explanation):
+Let's inspect the following implementation (please read the code comments for further explanation).
 
 ```csharp
 // Special key in the Title Data that contains an array of AB buckets that participate in the testing
@@ -116,7 +121,7 @@ handlers.GetTitleDataAB = function (args, ctx) {
 
 ## Testing
 
-Once the CloudScript from the previous section is uploaded, the following code snippet can be used to test the described technique:
+Once the **CloudScript** from the previous section is uploaded, the code snippet shown below can be used to test the described technique.
 
 ```csharp
 public void GetContent() {
@@ -131,9 +136,11 @@ public void GetContent() {
 
 ## [Optional] Demonstration (with Unity)
 
-Follow the steps in our [CloudScript quickstart](../../automation/cloudscript/quickstart.md) to deploy the CloudScript sample to your PlayFab title. Once this is done, open a new Unity project. Make sure you have PlayFab SDK imported and title setting configured.
+Follow the steps in our [CloudScript quickstart](../../automation/cloudscript/quickstart.md) to deploy the **CloudScript** sample to your **PlayFab Title**.
 
-Create an empty scene and an empty game object. Attach the following script to the game object:
+Once this is done, open a new **Unity** project. Make sure you have the **PlayFab SDK** imported, and the **Title** setting configured.
+
+Create an empty scene and an empty game object. Attach the script that follows to the game object.
 
 ```csharp
 // Import statements to gain reference to all PlayFab classes we need
@@ -194,8 +201,8 @@ public class PlayerABTestingTitle : MonoBehaviour {
 }
 ```
 
-Start the scene and open the console. If everything is configured properly, you will see how the application is signing into PlayFab using different player accounts, and we get different Title Data fetched each time:
+Start the scene and open the console. If everything is configured properly, you will see how the **Application** is signing into **PlayFab** using different **Player Accounts**, and we get different **Title Data** fetched each time.
 
 ![Output of A/B Test Title Data example](media/tutorials/output-of-ab-test-title-data-example.png)  
 
-At this point, you can use this implementation to A/B-test any data in your title.
+At this point, you can use this implementation to **A/B-Test** *any* data in your **Title**.
