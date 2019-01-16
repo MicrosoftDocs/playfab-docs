@@ -12,13 +12,15 @@ ms.localizationpriority: medium
 
 # PlayStream quickstart
 
-This quickstart provides an overview of automatic and custom **PlayStream Events** in **PlayFab**.
+This quickstart provides an overview of **Automatic** and **Custom PlayStream Events** in **PlayFab**.
 
 ## Automatic Event Overview
 
-As the name implies, an **Automatic Event** is an event that occurs automatically with a normal **API** method call. Most existing **API** methods will generate **PlayStream Events**.
+As the name implies, an **Automatic Event** is one that occurs *automatically* with a normal **API** method call. Most existing **API** methods will generate **PlayStream Events**.
 
-Sometimes, however, you will need to capture **Events** that are very specific for your game and are not provided by **PlayFab** out of the box. For that purpose, consider using a **Custom Event** (as described in the next section, [Custom Event Overview](#custom-event-overview)).
+Sometimes, however, you will need to capture **Events** that are very specific for your game, and are not provided by **PlayFab** out of the box.
+
+For that purpose, consider using a **Custom Event** (as described in the next section, [Custom Event Overview](#custom-event-overview)).
 
 ### Example
 
@@ -54,7 +56,7 @@ Similar to **Automatic Events**, **Custom Events** are fully reflected through [
 
 ### Example: Post your own Custom Event
 
-You want to aggregate information about **Players** opening various chests. Along with standard **Event** information, you want to record **ChestType** and **LevelID**.
+You want to aggregate information about **Players** opening various **Chests**. Along with standard **Event** information, you want to record **ChestType** and **LevelID**.
 
 Unfortunately, **PlayFab** does not provide a corresponding [Automatic Event](#automatic-event-overview) out of the box. Use a **Custom Player Event** to solve the problem.
 
@@ -89,9 +91,8 @@ private void OnChestOpened(string chestType, int levelId) {
 
 Once the solution code is executed, consider using the [Event History](event-history.md) to check that your **Event** has been successfully registered.
 
-![Game Manager - Event History Detail](media/tutorials/game-manager-event-history-detail.png)  
-
 1. **Filter** using the **Event Name**.
 2. Ensure the **"player_chest_opened" Events** are in the list.
-3. Ensure that your **Custom Body Fields** are recorded: **ChestType** and **LevelId**.
+3. Ensure that your custom body fields are recorded: **ChestType** and **LevelId**.
 
+![Game Manager - Event History Detail](media/tutorials/game-manager-event-history-detail.png)  
