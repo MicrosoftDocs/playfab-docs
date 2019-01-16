@@ -226,7 +226,7 @@ When the **Player** selects that **URL**, three things happen:
 
 1. **PlayFab** generates a new **PlayStream Event** called **auth_token_validated**. This is how you know that the **Player** selected that **URL** in the **Email**. You can use that **Event** to trigger actions, like granting coins or items to the **Player**.
 2. **PlayFab** will return a redirect **URL** sending the **Player** to the callback **URL**. In this case, it should be a website for the game with a form for the **Player** to enter a new **Password**.
-3. The redirect **URL** will contain a **Token** in the query string, and will look something like **http://www.example.com/?token=2346241B7C277796**.
+3. The redirect **URL** will contain a **Token** in the query string, and will look something like **https://www.example.com/?token=2346241B7C277796**.
 
 ## Step 6 - Reset the Player's Password
 
