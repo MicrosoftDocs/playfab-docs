@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 ## Overview
 
-PlayFab multiplayer game servers require integration with [PlayFab Game Server SDK (GSDK)](https://api.playfab.com/docs/tutorials/landing-tournaments/multiplayer-servers-2.0/integrating-your-game-server-with-playfab-multiplayer-platform). In addition, game servers are run as containerized applications on the PlayFab Multiplayer platform. Running them as containerized applications enables running and debugging the server locally, in an environment that matches that of the PlayFab platform in Azure. This facilitates faster development iterations. This article helps you verify that your PlayFab game server conforms to the platform requirements.  
+PlayFab multiplayer game servers require integration with the [PlayFab Game Server SDK (GSDK)](integrating-game-servers-with-gsdk.md). In addition, game servers are run as containerized applications on the PlayFab Multiplayer platform. Running them as containerized applications enables running and debugging the server locally, in an environment that matches that of the PlayFab platform in Azure. This facilitates faster development iterations. This article helps you verify that your PlayFab game server conforms to the platform requirements.  
 
 The PlayFab local debugging toolset includes a mock PlayFab VmAgent that provides mock responses to the GSDK and verifies whether your game is integrated with GSDK correctly. With the mock responses, it cycles the game server through various states in its lifecycle on the PlayFab Multiplayer platform. The agent can also be configured to run the game server as a containerized application and verify that your game server is packaged with all the required dependencies and will run without issues on the PlayFab Multiplayer platform.
 
@@ -24,7 +24,7 @@ The PlayFab local debugging toolset includes a mock PlayFab VmAgent that provide
 
 ## Verifying GSDK integration
 
-Integrate your game server with GSDK and build it. More information is available in our tutorial [Integrating game servers with the PlayFab game server SDK (GSDK)](https://api.playfab.com/docs/tutorials/landing-tournaments/multiplayer-servers-2.0/integrating-your-game-server-with-playfab-multiplayer-platform).  
+Integrate your game server with GSDK and build it. More information is available in our tutorial [Integrating game servers with the PlayFab Game Server SDK (GSDK)](integrating-game-servers-with-gsdk.md).  
 
 - In the extracted folder, you will find a MultiplayerSettings.json file, open it in a text editor (such as [Visual Studio Code](https://code.visualstudio.com/download)) and update the following properties:  
   - *OutputFolder*: Path to a drive or folder where the outputs and config files will be generated. Ensure there is sufficient space available since the game server will be extracted under this path.
