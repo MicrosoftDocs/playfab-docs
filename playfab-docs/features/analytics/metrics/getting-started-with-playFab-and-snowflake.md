@@ -48,7 +48,7 @@ That will create a new database in your **Snowflake** account, called **PLAYFAB_
 
 Let's take a moment to discuss the contents of this database. It has one schema, called **playfab_shared**.
 
-In this schema, there is *one* **View**. It is called **playfab_archive_shared**. In this **View**, you can see all of the **Events** for all of the game **Titles** that are linked to this **Snowflake** account.
+In this schema, there is *one* **View**. It is called **playfab_archive_shared**. In this **View**, you can see all of the **Events** for all of the **Game Titles** that are linked to this **Snowflake** account.
 
 ### The playfab_archive_shared View
 
@@ -81,11 +81,11 @@ where event_name = 'player_logged_in' and ts >= dateadd(day, -1, current_date)
 and title_id = '<my title id goes here in all caps>'
 ```
 
-This **Query** may take a few minutes to run depending on the size of your database instance, and how much data your game contains, but when done you'll see the answer in the results section.
+This **Query** may take a few minutes to run, depending on the size of your database instance, and how much data your game contains, but when done you'll see the answer in the results section.
 
 ![Snowflake - Database - Query](media/tutorials/snowflake-database-query.png)  
 
-For a more advanced **Query**, examine the raw **JSON** of the **player_logged_in** event using the **PlayFab Analytics** tab.
+For a more advanced **Query**, examine the raw **JSON** of the **"player_logged_in" Event** using the **PlayFab Analytics** tab.
 
 ![PlayFab - Analytics - Event - JSON](media/tutorials/playfab-analytics-event-json.png)  
 
@@ -111,7 +111,7 @@ You can then export these results as a **CSV** file and load them into **Excel**
 
 ![Excel - Visualization of query results](media/tutorials/excel-visualization-query-results.png)  
 
-### Cross database querying
+### Cross-database querying
 
 So far these examples have used the **PlayFab_Shared** database directly - however, this database is *read only*.
 
@@ -121,7 +121,7 @@ That is, **PLAYFAB_SHARED.PLAYFAB_SHARED.PLAYFAB_ARCHIVE_SHARED**.
 
 **Snowflake** is perfectly capable of access tables across databases, you just have to *ask*.
 
-### Making schema with views
+### Making schema with Views
 
 As we've seen above, one of the *best* parts about **Snowflake** is its ability to parse **JSON** objects. But it is tiring (and error prone) to access the same values out of payloads with known schema. This is where **Views** come in.
 
@@ -161,7 +161,7 @@ There are a couple things to note:
 - We *also* picked some columns out of **P**, such as **p:Platform**. But properties chosen from inside **JSON** objects may be **JSON** objects *themselves*, so we need to tell **Snowflake** what *type* they really are. That's what **to_varchar** is doing.
 - We recommend building these sort of **Views** as you need them, as **Views** like this are primarily a code factoring tool. They just let you forget the actual naming (and capitalization) of the properties in **P**.
 
-Now you can run **Queries** like the following, to get the **DAU** on June 1st.
+Now you can run **Queries** like the following, to get the **DAU** on **June 1st**.
 
 ```sql
 select count(distinct entity_id) from logins where '2017-6-1' <= ts and ts <'2017-6-2' 
@@ -221,7 +221,7 @@ If you are running a **Query** without a timestamp filter, that is still ok. It 
 
 You might be concerned that everyone is using the same **View**.
 
-In a traditional database, this would be a *gigantic* security risk. However **Snowflake** is *not* your average database. The **playfab_archive_shared** view is actually a [Secure View](https://docs.snowflake.net/manuals/user-guide/views-secure.html).
+In a traditional database, this would be a *gigantic* security risk. However **Snowflake** is *not* your average database. The **"playfab_archive_shared" View** is actually a [Secure View](https://docs.snowflake.net/manuals/user-guide/views-secure.html).
 
 The main point is that other viewers are *guaranteed* to never know your data exists. (For those of you who are interested, it means the **TitleId "where"** clause runs un-optimized to thwart subtle attacks that take advantage of order of operations changes made by the **SQL** compiler). 
 

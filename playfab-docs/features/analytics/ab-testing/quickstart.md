@@ -12,11 +12,9 @@ ms.localizationpriority: medium
 
 # A/B Testing quickstart
 
-This quickstart explains how to create **A/B** tests with **Player Buckets**.
+This quickstart explains how to create **A/B Tests** with **Player Buckets**.
 
-**A/B Tests** allow you to use the **Buckets** as [Player Segments](../segmentation/player-segmentation.md). Unlike [Player Segments](../segmentation/player-segmentation.md), however, **A/B Buckets** distribute **Players** randomly.
-
-**A/B Test Buckets** may then be used in some of the features, where you would normally use **Player Segments**.
+**A/B Tests** allow you to use the buckets as [Player Segments](../segmentation/player-segmentation.md). Unlike [player segments](../segmentation/player-segmentation.md), however, **A/B Buckets** distribute **Players** randomly.
 
 **A/B Tests Buckets** may then be used in some of the features, where you would normally use **Player Segments**. For an example of this, see our tutorial [A/B Testing with Stores and A/B Test Buckets](ab-testing-with-stores-and-test-buckets.md).
 

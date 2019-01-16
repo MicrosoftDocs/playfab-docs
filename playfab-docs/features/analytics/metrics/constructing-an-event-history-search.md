@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 This tutorial illustrates how to construct an **Event History Search**, the components of a **Search**, and how to use **Elastic Search** syntax in your **Queries**.
 
-Let's start by looking at the final results of a successful **Search**, displaying a comparison of how much money goes through each payment provider in the most recent week.
+Let's start by looking at the final results of a successful **Search**, displaying a comparison of how much money goes through each **Payment Provider** in the most recent week.
 
 ![Event History Chart - player-realmoney-purchase](media/tutorials/event-history-chart-player-realmoney-purchase.png)  
 
@@ -38,7 +38,7 @@ At this point, the search will result in showing only [player_realmoney_purchase
 
 By default, **Group by** will aggregate **Events** by their **Event Type**. Here, we are only querying for a *single* **Event Type**.
 
-Instead, let's group by a **Property** of the **Event**. Looking at the [documentation for the event](https://api.playfab.com/playstream/events/player_realmoney_purchase), we can see that **paymentProvider** is a **Property**.
+Instead, let's group by a **Property** of the **Event**. Looking at the [documentation for the Event](https://api.playfab.com/playstream/events/player_realmoney_purchase), we can see that **paymentProvider** is a **Property**.
 
 ![Event Query - Group by paymentProvider](media/tutorials/event-query-group-by-paymentprovider.png)  
 
@@ -50,7 +50,7 @@ By default, **Sum by** will count the number of **Events** per group. We can sum
 
 There is another way to see the **Properties** of the **Events** - you **Query** by looking at the **Event JSON** itself.
 
-We do this by selecting the **Show JSON** button to the left of the **Event**, as seen in the following screen shot.
+We do this by selecting the **Show JSON** button to the left of the **Event**, as seen in the following screen capture.
 
 ![Event - Show JSON Button](media/tutorials/event-show-json-button.png)  
 
@@ -66,7 +66,7 @@ After searching again, we can see that our chart is now what we want, as shown i
 
 ![Event History Chart - Sum by OrderTotal](media/tutorials/event-history-chart-sum-by-ordertotal.png)  
 
-We could be done here, but there's one issue - If you want to *save* this search, the dates will still be the week of Aug 25 to Aug 31!
+We could be done here, but there's one issue - If you want to *save* this search, the dates will still be the week of **Aug 25** to **Aug 31**!
 
 We can do better by *manually editing* the **Query** field.
 
