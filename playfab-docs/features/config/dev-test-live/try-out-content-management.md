@@ -14,10 +14,10 @@ ms.localizationpriority: medium
 
 Welcome to Chapter 4 of our tutorial [Getting Started with PlayFab](getting-started-with-playfab.md), the tutorial contains the following chapters:
 
-[Chapter 1 - Get started with players and tournaments](get-started-with-players-and-tournaments.md)
-[Chapter 2 - Set up your game's in-game economy](set-up-your-games-in-game-economy.md)
-[Chapter 3 - Explore automation](explore-automation.md)
-**Chapter 4 - Try out content management**
+- [Chapter 1 - Get started with players and tournaments](get-started-with-players-and-tournaments.md)
+- [Chapter 2 - Set up your game's in-game economy](set-up-your-games-in-game-economy.md)
+- [Chapter 3 - Explore automation](explore-automation.md)
+- **Chapter 4 - Try out content management**
 
 ## Overview
 
