@@ -12,11 +12,11 @@ ms.localizationpriority: medium
 
 # Handling Errors in CloudScript
 
-This tutorial describes how to recognize and handle errors within your **CloudScript** handlers.
+This tutorial describes how to recognize and handle **Errors** within your **CloudScript** handlers.
 
 ## Identifying
 
-The first step is identifying the **Error**. While every uncaught **Error** is logged and available from the response to the caller (client), you may still catch the **Error** early by using a try/catch block.
+The first step is identifying the **Error**. While every uncaught **Error** is logged and available from the response to the caller (**Client**), you may still catch the **Error** early by using a try/catch block.
 
 Consider the following **CloudScript** snippet that produces and catches the error:
 
@@ -35,7 +35,7 @@ handlers.GenerateError = () => {
 }
 ```
 
-Notice how the **Error** codes were extracted within the catch block. Consult our [Global API Method Error Codes](../../config/dev-test-live/global-api-method-error-codes.md) tutorial for a complete list of **Error** and their identifying codes. The **Error** code on it's own is sufficient to identify the error.
+Notice how the **Error** codes were extracted within the catch block. Consult our [Global API Method Error Codes](../../config/dev-test-live/global-api-method-error-codes.md) tutorial for a complete list of **Error** and their identifying codes. The **Error** code on it's own is sufficient to identify the **Error**.
 
 ## Logging
 
@@ -82,7 +82,7 @@ handlers.GenerateError = () => {
 
 ## Recovery
 
-It's not always possible to recover from **Errors**. Issues like **InvalidArguments** leave you with no option but to report the problem back to the player.
+It's not always possible to recover from **Errors**. Issues like **InvalidArguments** leave you with no option but to report the problem back to the **Player**.
 
 There are a subset of **Errors** where a retry strategy can be applied. *Retry-able* **Error** types are described in the [Global API Method Error Codes](../../config/dev-test-live/global-api-method-error-codes.md) tutorial.
 

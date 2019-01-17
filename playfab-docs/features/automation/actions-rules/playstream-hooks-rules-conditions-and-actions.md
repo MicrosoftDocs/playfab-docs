@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # PlayStream hooks: rules, conditions, and actions
 
-A **PlayStream Rule** allows you to react to a subset of one type of **PlayStream** events in real time.
+A **PlayStream Rule** allows you to react to a subset of one type of **PlayStream Events** in real time.
 
 ## Requirements
 
@@ -28,7 +28,7 @@ A quick glossary of relevant terms:
 - **Rule**: Performs extra logic in response to one type of **PlayStream Event** in real time.
   - The sum of: One **Event Trigger**, an optional list of **Conditions**, and an optional list of **Actions**.
 
-- **Trigger**: The name of the event which activates this **Rule**.
+- **Trigger**: The name of the **Event** which activates this **Rule**.
 
 - **Condition**: A content filter for **Rules** and other **PlayStream** features.
   - Performs a very lightweight evaluation of the **PlayStream Event JSON** object, and skips **Events** that don't match requirements.
@@ -39,9 +39,9 @@ A **Rule** consists of exactly one **Trigger**, an optional list of **Conditions
 
 **Triggers**, **Conditions**, and **Actions** are also part of other systems: [bulk actions](../../automation/actions-rules/bulk-actions-for-an-entire-player-segment.md) and [tournament leaderboards](../../social/tournaments-leaderboards/using-resettable-statistics-and-leaderboards.md).
 
-## Example Case: Count custom events from the client
+## Example Case: Count Custom Events from the Client
 
-In the example presented below, we post the following custom event from the client.
+In the example presented below, we post the following **Custom Event** from the **Client**.
 
 ```csharp
 public void WriteEvent() {
@@ -55,11 +55,13 @@ public void WriteEvent() {
 }
 ```
 
-In this case, the client is manually reporting a custom forum post event (this does not currently correspond to any automatic event in **PlayFab** or supported partners). We will use a **PlayStream Rule** to count the number of times that a **Player** reports a forum post in this way.
+In this case, the **Client** is manually reporting a **Custom** forum post **Event** (this does not currently correspond to any **Automatic Event** in **PlayFab** or supported partners)
 
-**Requirement**: Your game must already be posting events of this type before the **Game Manager GUI** will allow you to create a **Rule** triggering on it.
+ We will use a **PlayStream Rule** to count the number of times that a **Player** reports a forum post in this way.
 
-Go to your Game Manager:
+**Requirement**: Your game must *already* be posting **Events** of this type before the **Game Manager GUI** will allow you to create a **Rule** triggering on it.
+
+Go to your **Game Manager**:
 
 - Navigate to your **Title**.
 
@@ -74,7 +76,7 @@ Let's evaluate the new **Rule** in this example piece by piece:
 - **title.6195.ForumPostEvent**
   - **6195** is the **Title** used in this tutorial. Your **titleId** will match your own **Title**.
   - **ForumPostEvent** is the **EventName** used in the code for this example case.
-  - This line will only be available if you have recently posted at least one **ForumPostEvent** in your title.
+  - This line will only be available if you have recently posted at least one **ForumPostEvent** in your **Title**.
 - The **Condition** used specifically in this example, has minimal use.
   - However, it *does* demonstrate filtering our **Custom Event** if the **Body** key is mapped to **Invalid string** in our **Body** dictionary.
   - **Filters** are optional, and should remove irrelevant players from your **Rule**.
@@ -91,7 +93,7 @@ As you can see, the custom **ForumPostEvent** automatically triggers the statist
 
 Many of the built-in **Actions** in **PlayFab** are fairly simple, and might not give you the full power you need. That's why we allow you to fully customize the **Action** logic with **CloudScript**.
 
-- Let's edit the rule.
+Let's edit the **Rule**.
 
 - Remove the **Condition**.
 - Set the **Action** to **Execute CloudScript**.
@@ -103,4 +105,4 @@ Now, if we post a new **ForumPostEvent**, we will see a **CloudScript** executio
 
 ![Game Manager - PlayStream - debugger - CloudScript execution](media/tutorials/game-manager-playstream-debugger-cloudscript-execution.png)  
 
-Writing your **CloudScript** to react to **PlayStream** rules is an advanced topic covered in our tutorial: [using CloudScript actions with PlayStream](using-cloudscript-actions-with-playstream.md).
+Writing your **CloudScript** to react to **PlayStream Rules** is an advanced topic covered in our tutorial: [using CloudScript actions with PlayStream](using-cloudscript-actions-with-playstream.md).

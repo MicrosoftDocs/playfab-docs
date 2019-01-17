@@ -10,9 +10,9 @@ keywords: playfab, automation, errors, sdk
 ms.localizationpriority: medium
 ---
 
-# SDK error handling Best Practices
+# SDK Error handling Best Practices
 
-This tutorial shows how to access, recognize, and handle **API** errors using the **PlayFab SDK**.
+This tutorial shows how to access, recognize, and handle **API Errors** using the **PlayFab SDK**.
 
  The practices describes here are equally applicable to the **Admin**, **Server**, and **Client SDKs**, but the patterns depend *highly* on the language of your choice.
 
@@ -35,9 +35,9 @@ PlayFabClientAPI.LoginWithEmailAddress(new LoginWithEmailAddressRequest() {
 
 Generally, if an **Error Object** is defined (not null), it indicates that an **Error** has occurred. We may then further inspect the **Error**.
 
-## Inspecting the error
+## Inspecting the Error
 
-The most common way to inspect an **Error** is to recognize the **Error** through the code. As described in the [Global API Method Error Codes](../../config/dev-test-live/global-api-method-error-codes.md) tutorial, each generated **Error** contains human-readable and numeric **Error Codes**. The code on its own is sufficient to recognize and process the **Error** accordingly.
+The most common way to inspect an **Error** is to recognize the **Error** through the code. As described in the [Global API Method Error Codes](../../config/dev-test-live/global-api-method-error-codes.md) tutorial, each generated **Error** contains human-readable and numeric **Error** codes. The code on its own is sufficient to recognize and process the **Error** accordingly.
 
 Let's take the [LoginWithEmailAddress](xref:titleid.playfabapi.com.client.authentication.loginwithemailaddress) **API** method as an example. As stated in the [documentation](xref:titleid.playfabapi.com.client.authentication.loginwithemailaddress) for this method, the following internal **Error** may be thrown upon execution:
 
@@ -46,7 +46,7 @@ Let's take the [LoginWithEmailAddress](xref:titleid.playfabapi.com.client.authen
 - **InvalidEmailOrPassword 1142**
 - **RequestViewConstraintParamsNotAllowed 1303**
 
-The following method illustrates how to inspect and recognize such **Error**.
+The following method illustrates how to inspect and recognize such an **Error**.
 
 ```csharp
 PlayFabClientAPI.LoginWithEmailAddress(new LoginWithEmailAddressRequest() {
@@ -79,7 +79,7 @@ PlayFabClientAPI.LoginWithEmailAddress(new LoginWithEmailAddressRequest() {
 });
 ```
 
-## Handling the error
+## Handling the Error
 
 Once the **Error** is identified, the handle/recover strategy depends on the **Error** type and nature. **Errors** such as *invalid arguments* will *never* succeed if retried. The request must be fixed for that **API** call to succeed.
 

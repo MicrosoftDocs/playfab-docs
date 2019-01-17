@@ -19,12 +19,12 @@ A complete overview of **ES6** features is available in this [Cheat Sheet](https
 This tutorial shows several tricks you may use in your **CloudScript**.
 
 > [!NOTE]
-> Some of the features require **strict** mode. Enable this mode by placing the following snippet as the very first line of your **CloudScript** file:
+> Some of the features require **Strict** mode. Enable this mode by placing the following snippet as the very first line of your **CloudScript** file:
 > `use strict;`
 
 ## String interpolation
 
-When composing messages for your players, you may want to use multi-line interpolated strings. Use the **back-tick symbol** to create an interpolated string. You may then insert data right into the string using `${ variable }` syntax.
+When composing messages for your **Players**, you may want to use multi-line interpolated strings. Use the **back-tick symbol** to create an interpolated string. You may then insert data right into the string using `${ variable }` syntax.
 
 This allows you to avoid string concatenation and improve code readability significantly. *Back-tick strings are verbatim and may be multi-line*. This means you have to keep an eye on all indention, as any extra space/tab will be captured into the string.
 
@@ -40,7 +40,7 @@ You get ${prizeAmount} coins for your efforts.`;
 
 ## New methods and arrow functions
 
-ES6 brings new syntax for defining functions using the arrow operator `=>`. The snippet displayed below shows approximate translations for certain operator usages.
+**ES6** brings *new* syntax for defining functions using the arrow operator `=>`. The snippet displayed below shows approximate translations for certain operator usages.
 
 ```javascript
 // The following snippets:
