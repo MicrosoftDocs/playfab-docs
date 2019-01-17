@@ -23,7 +23,7 @@ This can be done by entering your credit card information in the **Admin**->**Bi
 
 **PlayFab CDN** stores individual assets as files uniquely identified by the **File Name**, also referred to as a **Key**. This implies that you add, update, remove, and retrieve **Assets** by **Key**.
 
-**PlayFab CDN** allows segregating assets by **Folders**. The **Folder** path to the **Asset** becomes part of the **Asset Key**.
+**PlayFab CDN** allows segregating **Assets** by **Folders**. The **Folder** path to the **Asset** becomes part of the **Asset Key**.
 
 The following example is a valid **Asset Key** stored inside the **Folder** named **Android**.
 
@@ -138,5 +138,5 @@ As mentioned above, **CDN** may involve latency in regards to **File** updates. 
 The  [GetContentDownloadUrl](xref:titleid.playfabapi.com.client.content.getcontentdownloadurl) call allows you to set the **ThruCDN** parameter to **False**. The **URL** returned will then point to non-cached fresh **Files**.
 
 > [!NOTE]
-> Your published game **Client** should *never* use this option!
+> Your published **Game Client** should *never* use this option!
 

@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 This tutorial describes how to enable the **Snowflake** add-on from **PlayFab**, and then provides some starter examples of queries you can do in **Snowflake** to show off the integration.
 
-If you are looking for a high-level description of why **Snowflake** integration with **PlayFab** is cool, you may want to start with our introductory blog post first.
+If you are looking for a high-level description of why **Snowflake** integration with **PlayFab** is *cool*, you may want to start with our introductory blog post first.
 
 ## Setting it up
 

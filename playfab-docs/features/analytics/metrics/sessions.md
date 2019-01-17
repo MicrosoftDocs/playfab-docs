@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 ## Supported SDK Versions
 
-**Session Support** is currently only available in the **Unity SDK**. Support for our other **SDKs** will be added in the future.
+**Session Support** is currently **only** available in the **Unity SDK**. Support for our other **SDKs** will be added in the future.
 
 You'll need to have the **180829** version or newer. This **SDK** first introduces two new **Events** that can be configured to be emitted from the **Client** automatically:
 
@@ -25,7 +25,7 @@ You'll need to have the **180829** version or newer. This **SDK** first introduc
 
 ## Logging & Managing Events
 
-To begin collecting these two events, you'll first need to integrate the **Unity SDK** in your **Client**.
+To begin collecting these two **Events**, you'll first need to integrate the **Unity SDK** in your **Client**.
 
 Instructions on how to do this can be found in the [Unity3D quickstart](../../../sdks/unity3d/quickstart.md).
 
@@ -36,7 +36,7 @@ Presently, these **Events** are disabled by default, though we plan to change th
 - In the **Options** section, toggle this **Option** **ON** or **OFF**.
 
 > [!NOTE]
-> Disabling this **Option** will prevent these events from being emitted by the **Client**.
+> Disabling this **Option** will prevent these **Events** from being emitted by the **Client**.
 
 ![Game Manager - Settings - Data Collection](media/tutorials/game-manager-settings-data-collection.png)  
 
