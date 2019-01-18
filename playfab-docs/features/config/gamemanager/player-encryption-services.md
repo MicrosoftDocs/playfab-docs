@@ -69,16 +69,16 @@ var createAccountResult = PlayFabClientAPI.LoginWithCustomID(postModel);
 
 A part of the new registration system is a new field called **PlayerSecret**. If set, it allows you to sign request headers that will be validated by the server during **API** calls to all services, including **Login Requests**.
 
-The **Player Secret** can only be set *once* per user per **Title** (a user with multiple **Titles** in the same studio will need to set the **Player Secret** for each one).
+The **Player Secret** can only be set *once* per **User** per **Title** (a **User** with multiple **Titles** in the same **Studio** will need to set the **Player Secret** for each one).
 
 If the **Player Secret** isn't set during registration, it is possible to set it (if it is not already set) by calling [SetPlayerSecret](xref:titleid.playfabapi.com.client.authentication.setplayersecret). There are **Admin** and **Server APIs** that allow setting the **Player Secret** to a *new* value even if it has previously been set.
 
 > [!NOTE]
 > Once set, the **Player Secret** should be stored securely on the device, as it is *not* recoverable if lost, and *no* **APIs** exist to recover it.
 
-## Using Player Secret to sign API Requests
+## Using Player Secret to sign API requests
 
-The following code example constructs a signature header that can be used to sign API requests.
+The following code example constructs a signature header that can be used to sign **API** requests.
 
 The format for the signature header is:
 
@@ -160,6 +160,6 @@ The following example **Policy** will allow *all* **API** calls (except un-encry
 }
 ```
 
-Because the **Deny** statement is **HasSignatureOrEncryption False**, those **Requests** that do not match that will be rejected. 
+Because the **Deny** statement is **HasSignatureOrEncryption False**, those **Requests** that *do not match* it will be rejected.
 
-However, **Requests** that have signature headers or encryption will be allowed by the **Allow the rest** policy.
+However, **Requests** that *have* signature headers or encryption will be allowed by the **Allow the rest** policy.

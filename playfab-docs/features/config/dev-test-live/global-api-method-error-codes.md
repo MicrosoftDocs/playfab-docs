@@ -44,7 +44,7 @@ It is usually safe to retry **Requests** that fail with these **Error Codes**, w
 
 ## Never-Retry Codes
 
-If you get these **Error Codes**, you should never retry, because the request can never be completed under the current circumstances, without a bug-fix or setting change.
+If you get these **Error Codes**, you should *never* retry, because the request can never be completed under the current circumstances without a bug-fix or setting change.
 
 Most *specific* codes listed with an **API** method also fall into this category.
 
@@ -95,7 +95,7 @@ This **Title** has been deleted from **PlayFab**, and can no longer be used.
 These codes *only* occur on specific **API** methods (listed on the documentation page for those methods), but if you see them, there are important consequences of which you should be aware.
 
 - **APIConcurrentRequestLimitExceeded (1342)**
-Your **Title** is either hitting **CloudScript** too hard, or is trying to force segment evaluation too frequently (or both). For the former, the two things to look at are:
+Your **Title** is either hitting **CloudScript** too hard, or is trying to force **Segment** evaluation too frequently (or both). For the former, the two things to look at are:
 
   1. How *often* your script calls utilize near-maximum time per call (or worse, time out).
   2. How frequently you're calling **CloudScript** per **Player**. For the latter, calls to get the list of **Players** in a **Segment** would be the key thing to look at (a task targeting a **Segment** also causes re-evaluation, but that should be infrequent).

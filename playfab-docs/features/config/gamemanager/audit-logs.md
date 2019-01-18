@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 
 To access the **Audit Logs**, navigate to your **Title** in **Game Manager**:
 
-- Select **Admin** from the left-hand menu **(1)**.
+- Select **Admin** from the menu to the left **(1)**.
 - Choose the **Audit History** tab **(2)**.
 - You can navigate through the **Logs** using the search panels **(3)**.
 - Each **Log** entry is located in the table.

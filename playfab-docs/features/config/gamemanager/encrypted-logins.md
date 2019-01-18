@@ -12,12 +12,12 @@ ms.localizationpriority: medium
 
 # Encrypted Logins
 
-**PlayFab** allows you to reinforce application security by protecting certain **Client API** calls with custom encryption. This tutorial shows you how to enable encryption for your **Client**.
+**PlayFab** allows you to reinforce **Application** security by protecting certain **Client API** calls with custom encryption. This tutorial shows you how to enable encryption for your **Client**.
 
 The method we will be using allows you to protect *any* login **API** call. Since the process is *always* similar, we only show how to protect *one* particular method: **LoginWithCustomID**.
 
 > [!IMPORTANT]
-> Login encryption is meant to be used for *all* **Players** after **Title** creation, or not at all. This is *not* a feature that can be enabled at a later date. You must use it from the very beginning or not at all. In particular, *encrypted* **Players** will never be able to log in *un-encrypted*, and *non-encrypted* **Players** will never be able to become *encrypted* **Players**.
+> Login encryption is meant to be used for *all* **Players** after **Title** creation, or not at all. This is *not* a feature that can be enabled at a later date. You must use it from the *very beginning* or not at all. In particular, *encrypted* **Players** will never be able to log in *un-encrypted*, and *non-encrypted* **Players** will never be able to become *encrypted* **Players**.
 
 In this guide we will:
 
@@ -34,7 +34,7 @@ In this guide we will:
 The **PlayFab Admin API** exposes a method to manage your **Player Shared Secrets**.
 
 > [!NOTE]
-> Creating a new **Shared Secret** by a certain name will override the existing **Key** with the same name, if any. In addition, you may have *several* **Shared Secrets** registered under different names.
+> Creating a new **Shared Secret** by a certain **Name** will override the existing **Key** with the same **Name**, if any. In addition, you may have *several* **Shared Secrets** registered under different **Names**.
 
 Run the following code to add a **Player Shared Secret** to your **Title**.
 

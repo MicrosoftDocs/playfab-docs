@@ -12,13 +12,13 @@ ms.localizationpriority: medium
 
 # Two-Factor Authentication
 
-**Two-Factor Authentication** allows you to reinforce security on your **PlayFab Game Manager** account by adding one more step to the authentication process.
+**Two-Factor Authentication** allows you to reinforce security on your **PlayFab Game Manager Account** by adding one more step to the authentication process.
 
-It does so by adding a device-factor to the authentication process, which only allows you to authenticate if you possess a certain device, specifically registered for this purpose.
+It does so by adding a device-factor to the **Authentication** process, which only allows you to authenticate if you possess a certain device, specifically registered for this purpose.
 
 ## Configuring Two-Factor Authentication
 
-Install a **Two-Factor Authentication App** to your device. You can search on your own application, or select your platform from the following list:
+Install a **Two-Factor Authentication App** to your device. You can search on your own **Application**, or select your platform from the following list:
 
 - [iPhone, iPad, and iPod Touch](https://itunes.apple.com/us/app/google-authenticator/id388497605?mt=8)
 - [Android phone or tablet](https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2)
@@ -39,13 +39,13 @@ Follow through the tutorial for the **App**, if there is any **(1)**.
 
 - Then select one of two options to add your **PlayFab** account:
 
-- Either scan a **bar-code (1)**.
+- Either scan a **barcode (1)**.
 - Or type in the **Key** manually **(2)**.
 
 ![Google - 2-Step Verification - Add account](media/tutorials/google-2-step-verification-add-account.png)  
 
 Whichever option you choose, follow to the **PlayFab** website and navigate to **Game Manager**. On the **Dashboard** tab:
-- Select the account panel **(1)**.
+- Select the **Account** panel **(1)**.
 - Then select **My Profile (2)**.
 
 ![Game Manager - Dashboard - Open My Profile](media/tutorials/game-manager-dashboard-open-my-profile.png)  
@@ -53,7 +53,7 @@ Whichever option you choose, follow to the **PlayFab** website and navigate to *
 The **Account** settings will open.
 
 - Verify that the **Enable two-factor authentication** checkbox is checked.
-- Depending on which option you have chosen, use the **code (1)** or a **bar-code (2)** to add a new **Account** using the **Application** on your device.
+- Depending on which option you have chosen, use the **code (1)** or a **barcode (2)** to add a new **Account** using the **Application** on your device.
 
 ![Game Manager - My Profile - Two-Factor Authentication](media/tutorials/game-manager-my-profile-two-factor-authentication.png)  
 
@@ -70,7 +70,7 @@ Head back to the **Profile** settings in the **PlayFab Game Manager**:
 
 ## Testing
 
-Log out of your **PlayFab** account and try to log in again. The first step of the authentication process will look normal (see example provided below).
+Log out of your **PlayFab Account** and try to log in again. The first step of the **Authentication** process will look normal (see example provided below).
 
 ![PlayFab - Login Screen](media/tutorials/playfab-login-screen.png)
 

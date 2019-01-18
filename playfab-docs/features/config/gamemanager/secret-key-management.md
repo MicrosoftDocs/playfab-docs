@@ -16,9 +16,12 @@ ms.localizationpriority: medium
 
 **Keys** can now be created, deleted, disabled, and set to expire. This lets you rotate the **Secret Keys** for your **Titles**, which was previously quite hard to do. It *also* allows you to grant temporary access to your **Titles**.
 
-Now, on the **Settings** -> **Secret Keys** tab in **Game Manager**, you will see a list of your **Keys**.
+In your **Game Manager**:
 
-On this list you’ll find options for deleting **Keys**, the status of each **Key**, the **Key's Name**, **Value**, and **Expiration** time, if it has one. This table lets you audit the **Keys** that are available.
+- Select **Settings** from the menu on the left.
+- Go to the **Secret Keys** tab.
+- You will see a list of your **Keys**.
+- On this list you’ll find options for deleting **Keys**, the status of each **Key**, the **Key's Name**, **Value**, and **Expiration** time, if it has one. This table lets you audit the **Keys** that are available.
 
 ![Game Manager - Settings - Secret Keys](media/tutorials/game-manager-settings-secret-keys.png)  
 
@@ -26,8 +29,8 @@ You can rename, enable, disable, or set expirations for existing **Keys** via th
 
 To rotate your **Keys**, perform the following steps:
 
-1. Create a new **Key**. Here, you will enter the **Name** of the **Key**, and an optional expiration time.
-2. Change your code to use your new **Key** instead of the old **Key**,
+1. Create a new **Key**.
+2. Enter the **Name** of the **Key**, and an optional expiration time. Change your code to use your new **Key** instead of the old **Key**,
 3. Disable your old **Key**.
 
 > [!NOTE]

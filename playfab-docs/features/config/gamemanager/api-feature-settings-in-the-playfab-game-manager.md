@@ -12,15 +12,15 @@ ms.localizationpriority: medium
 
 # API Feature Settings in the PlayFab Game Manager
 
-The **API Features** in the **PlayFab Game Manager** are a handful of options for managing the behavior of **PlayFab APIs** for your title. 
+The **API Features** in the **PlayFab Game Manager** are a handful of options for managing the behavior of **PlayFab APIs** for your **Title**.
 
 These options give you the tools for managing access, privacy, and other features.
 
 To find the screen for configuring these options:
 
 - Go to the **Game Manager**.
-
-- Under **Settings**, select **API Features**.
+- Select **Settings** from the menu to your left.
+- Select the **API Features** tab.
 
 ![Game Manager - Settings - API Features](media/tutorials/game-manager-settings-api-features-full.png)  
 
@@ -31,16 +31,16 @@ Some of these check-boxes are obvious, and some not so much. In this tutorial, w
 
 ## Requiring valid JSON for custom data values
 
-Hacked clients can cause *some serious* problems for games. Rogue **API** callers posting badly formatted data can produce noise, bugs, and issues for developers. Players who have poorly formatted data will often require manual intervention to cleanup.
+Hacked **Clients** can cause *some serious* problems for games. Rogue **API** callers posting badly formatted data can produce noise, bugs, and issues for developers. **Players** who have poorly formatted data will often require manual intervention to cleanup.
 
-Requiring valid **JSON** for custom data values will perform basic content type validation before data is saved to the database. Catching these problems early prevents these issues from lingering on, and stops hackers from interfering with normal development.
+Requiring valid **JSON** for custom data values will perform basic content type validation *before* data is saved to the database. Catching these problems early prevents these issues from lingering on, and stops hackers from interfering with normal development.
 
-When this flag is set, it forces clients to pass in valid **JSON** for each key of their custom data. Simple **JSON** validation by itself won't prevent all issues, but can help weed out some bad behavior.
+When this flag is set, it forces **Clients** to pass in valid **JSON** for each **Key** of their custom data. Simple **JSON** validation by itself won't prevent *all* issues, but can help weed out some bad behavior.
 
 Checking this option will require that each **Key** saved across all custom data, including **Player**, **Publisher**, **Character**, **Title**, and **Item data** must be valid **JSON**.
 
 > [!NOTE]
-> This flag can be toggled **on** or **off** at any time. But, it’s *not retroactive*. That is, existing values will *not* be affected. *Only newly written values will be validated.*
+> This flag can be toggled **on** or **off** at any time. But, it’s *not retroactive*. So existing values will *not* be affected. *Only newly written values will be validated.*
 
 If you attempt to pass invalid **JSON** as a value, it will reject the request with an **HTTP Status Code 400 *Bad Request***.
 
@@ -48,16 +48,16 @@ If you attempt to pass invalid **JSON** as a value, it will reject the request w
 
 ## Disabling all API request access
 
-Surprisingly, it can be useful to disable all **API** access to your **Title**.
+Surprisingly, it can be useful to disable all **API** access to your **Titles**.
 
 If, for example, you are performing a sensitive migration with downtime, stray **API** requests could cause serious interruptions. If you are retiring your game, this will guarantee your game really is off.
 
 > [!WARNING]
-> Keep in mind, marking this checkbox will **LITERALLY BREAK YOUR GAME**, so use it with caution.
+> Keep in mind, that marking this checkbox will **LITERALLY BREAK YOUR GAME**, so use it with caution!
 
 Once you have decided you need to turn **API** access off, and you check the box, all **API** requests will begin to fail within a few minutes. 
 
-**PlayFab** will return an **HTTP Status Code 400 *Bad Request*** indicating that the title has disabled such usage.
+**PlayFab** will return an **HTTP Status Code 400 "Bad Request"** indicating that the **Title** has disabled such usage.
 
 ![Postman - Accessing a disabled API](media/tutorials/postman-accessing-a-disabled-api.png)  
 
@@ -65,7 +65,7 @@ These **HTTP Status Code 400** responses will persist until you un-check the box
 
 ## Enabling player IP address obfuscation
 
-For many studios, owning **Personally Identifiable Information (PII)** is a liability best avoided. One common, and useful, form of **PII** is **IP Address**.
+For many **Studios**, owning **Personally Identifiable Information (PII)** is a liability best avoided. One common (and useful) form of **PII** is **IP Address**.
 
 **IP Address** is useful for a handful of reasons, including geo-location. However, the *full* accuracy of the **IP** is often considered **PII**.
 
@@ -75,9 +75,10 @@ After you check this box, **PlayFab** will always record **0** for the last octe
 
 You should see that every **IP** ends in **.0**. Note that any **IPs** that were recorded before **IP** address obfuscation was enabled will retain their full detail. So if your game is **PII** sensitive, set this checkbox before you launch.
 
-Be aware that enabling obfuscation will impact *other* features that use the IP address. In particular, **IP**-based geo-location and player banning by **IP** are the two most directly impacted.
+> [!NOTE]
+> Enabling obfuscation will impact *other* features that use the IP address. In particular, **IP**-based geo-location and **Player Bans** by **IP** are the two most directly impacted.
 
-**PlayFab** automatically performs **IP**-based geo-location on logins. This helps you automatically learn about where on earth your **Players** come from.
+**PlayFab** automatically performs **IP**-based geo-location on logins. This helps you automatically determine where on earth your **Players** come from.
 
 However, you may experience reduced accuracy, *particularly* at the city level, when using obfuscated **IPs**. This is intentional, as the goal of obfuscating **IPs** is to avoid recording **PII**, including exact locations.
 
@@ -85,8 +86,10 @@ Additionally, obfuscating **IPs** can affect **Bans**. When adding a **Ban**, yo
 
 Banning an **IP** prevents the bad actor from making new accounts from the same internet connection. In many cases, this is an effective tool.
 
-However, with obfuscated **IPs**, banning an exact **IP** cannot work. Instead, you must use a ban on an **IP** with **.0** as the final octet.
+However, with obfuscated **IPs**, banning an exact **IP** cannot work. Instead, you must use a **Ban** on an **IP** with **.0** as the final octet.
 
 ![Game Manager - Players - Add Ban](media/tutorials/game-manager-players-add-ban.png)  
 
-However, keep in mind this will effectively ban an entire **IP** range. This will still **Ban** the bad actor, but other innocent players with similar **IP** addresses may be affected. Furthermore, existing precise **IP Bans** will cease to be effective.
+However, keep in mind this will effectively **Ban** an *entire* **IP** range.
+
+This will still **Ban** the bad actor, but other innocent **Players** with similar **IP** addresses may be affected. Furthermore, existing precise **IP Bans** will cease to be effective.

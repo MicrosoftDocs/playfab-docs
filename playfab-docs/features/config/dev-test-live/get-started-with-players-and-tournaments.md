@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 This is the first chapter of our tutorial [Getting Started with PlayFab](getting-started-with-playfab.md) that contains the following chapters:
 
-- **Chapter 1 - Get started with Players and Tournaments**.
+- **Chapter 1 - Getting started with Players and Tournaments**.
 
 - [Chapter 2 - Setting up your game's in-game economy](set-up-your-games-in-game-economy.md).
 
@@ -22,7 +22,7 @@ This is the first chapter of our tutorial [Getting Started with PlayFab](getting
 
 - [Chapter 4 - Trying out Content Management](try-out-content-management.md).
 
-## Overview
+## Contents
 
 Chapter 1 contains the following steps to get you started with **Players** and **Tournaments**:
 
@@ -56,9 +56,9 @@ Pick your **SDK**:
 
 ## Step 2: Updating your Login mechanism
 
-The first step in adding **PlayFab** to any game is always logging in the **Player**. Logging in the **Player** returns a **security token** that is needed for all other **API** calls.
+The first step in adding **PlayFab** to any game is *always* logging in the **Player**. Logging in the **Player** returns a **security token** that is needed for all other **API** calls.
 
-The **Quickstart** guides in Step 1 utilize a test **TitleId** - but from *now on*, you should be using your *own*.
+The **Quickstart** guides in **Step 1** utilize a test **TitleId** - but from *now on*, you should be using your *own*.
 
 Create a **Title** in **Game Manager**, and update your environment with your own **TitleId**.
 
@@ -70,11 +70,11 @@ Once you have logged in, select **Settings**. The **TitleId** for your game shou
 
 ![Game Manager - Settings - Secret Keys - Title ID](media/tutorials/game-manager-secret-keys-titleid.png)  
 
-The **SDK** guide that you followed in Step 1 should have included instructions on how to enter your **Title ID**.
+The **SDK** guide that you followed in **Step 1** should have included instructions on how to enter your **Title ID**.
 
-### Login
+### Logging in
 
-**PlayFab** makes it easy to authenticate **Players**. On a smartphone you can login with the **iOS** or **Android Device ID** for easy authentication with zero friction for the **Player**.
+**PlayFab** makes it easy to authenticate **Players**. On a smartphone you can log in with the **iOS** or **Android Device ID** for easy authentication with zero friction for the **Player**.
 
 We *also* support authentication with **Windows**, **Google**, **Kongregate**, **Facebook**, **Steam**, and **Twitch** accounts, as well as **username/password**, **email/password,** or an **ID** you generate.
 
@@ -86,21 +86,21 @@ For this tutorial, we'll demonstrate authentication using the last method - [Log
 After a login call, you can call other functions in the **Client API** (listed under **Client**, in the [PlayFab API Reference](../../../api-references/index.md)) . Some, like [UpdatePlayerStatistics](xref:titleid.playfabapi.com.client.playerdatamanagement.updateplayerstatistics) and [AddUserVirtualCurrency](xref:titleid.playfabapi.com.client.playeritemmanagement.adduservirtualcurrency) are disabled by default until you allow them on the **API Features** page in **Game Manager** (and you can specifically enable or disable any **Client API** calls using [Permission Policies](https://playfab.com/blog/permission-policies/)).
 
 > [!TIP]
-> If you look at the **PlayStream Debugger** on the **Dashboard** tab of the **Game Manager**, you will see several events connected to logging you in.
+> If you look at the **PlayStream Debugger** on the **Dashboard** tab of the **Game Manager**, you will see several **Events** connected to logging you in.
 
 ![Game Manager - Dashboard](media/tutorials/game-manager-dashboard.png)  
 
-You can select the **Information** circle to view the raw **JSON** of that event.
+You can select the **Information** circle to view the raw **JSON** of that **Event**.
 
 ![LoginWithCustomID Results - Event JSON](media/tutorials/loginwithcustomid-results-event-json.png)  
 
 ## Step 3: Using remote configuration data
 
-Storing **Configuration** information about your game on **PlayFab** is a smart idea, because you can then change that data at any time. This is much more useful than hard-coding that information in your game, and having to update your **Client** to change anything.
+Storing **Configuration** information about your game on **PlayFab** is a *smart* idea, because you can then change that data at any time. This is much more useful than hard-coding that information in your game, and having to update your **Client** to change anything.
 
 **Configuration Data** for your game is stored in what we call **Title Data**.
 
-Examples of **Configuration Data** might include how much XP a **Player** earns from each match, a maximum movement speed, or a feedback URL. You can store **JSON** in the **Title Data** if your game requires more complex data.
+Examples of **Configuration Data** might include how much **XP** a **Player** earns from each match, a maximum movement speed, or a feedback **URL**. You can store **JSON** in the **Title Data** if your game requires more complex data.
 
 1. Go to **Content**.
 
@@ -114,13 +114,13 @@ Examples of **Configuration Data** might include how much XP a **Player** earns 
 That's all you have to do in the **Game Manager**.
 
 1. In your game, call [GetTitleData](xref:titleid.playfabapi.com.client.title-widedatamanagement.gettitledata).
-2. You should see the keys and values you just added.
+2. You should see the **Keys** and **Values** you just added.
 
    ![GetTitleData Results - Updated Title Data](media/tutorials/gettitledata-results-updated-title-data.png)  
 
-**Title Data** is a great way to tweak your game balance while it's in development, or to run special events post-launch.
+**Title Data** is a great way to tweak your game balance while it's in development, or to run special **Events** post-launch.
 
-## Step 4: View your Player profile in the Game Manager
+## Step 4: View your Player Profile in the Game Manager
 
 You should now have a new **Player** created, identified with the **Custom ID** you configured earlier.
 
@@ -140,7 +140,7 @@ From the **Overview** tab you can:
 - Change their **Statistics**.
 - Look at login **Events**.
 - Manage **Characters**.
-- Check on their inventory, and much more.
+- Check on their **Inventory**, and much more.
 
 On the **Player's PlayStream** tab you can watch their **Events** come in live.
 
@@ -153,16 +153,16 @@ The **Player's Custom ID** is *not* the same as their **User ID**.
 **User ID** is automatically generated by **PlayFab** and used to track the **Player** if they log in using different methods.
 
 > [!NOTE]
-> Some games *do* choose to expose the **User ID** to the **Player**, to help with customer support requests.
+> Some games *do* choose to expose the **User ID** to the **Player**, to help with **Customer Support** requests.
 
 ![PlayFab support](media/tutorials/customer-support.png)  
 
 ## Step 5: Create a basic Leaderboard
 
-Let's create a **Statistic** for this **Player** so you can try out our **Leaderboard** feature, and later, some **Player** segmentation capabilities.
+Let's create a **Statistic** for this **Player** so you can try out our **Leaderboard** feature, and later, some **Player Segmentation** capabilities.
 
 > [!WARNING]
-> Unlike **Title Data**, you cannot *delete* or *rename* a **Statistic** once it's created. If you don't want to have an **xp Statistic** forever, give it a different name.
+> Unlike **Title Data**, you cannot *delete* or *rename* a **Statistic** once it's created. If you don't want to have an **xp Statistic** forever, give it a different **Name**.
 
 - Go to the **Player's Statistics** tab.
 

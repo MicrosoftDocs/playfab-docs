@@ -12,7 +12,9 @@ ms.localizationpriority: medium
 
 # Getting Started with PlayFab
 
-Welcome! This introductory tutorial will quickly get you up and running with **PlayFab**. Each of the following chapters contain steps to help you get started with some of the key features within **PlayFab**:
+Welcome! This introductory tutorial will quickly get you up and running with **PlayFab**.
+
+Each of the following Chapters contain steps to help you get started with some of the key features within **PlayFab**:
 
 - [Chapter 1 - Getting started with Players and Tournaments](get-started-with-players-and-tournaments.md)
 - [Chapter 2 - Setting up your game's in-game economy](set-up-your-games-in-game-economy.md)
@@ -21,6 +23,6 @@ Welcome! This introductory tutorial will quickly get you up and running with **P
 
 If you have *already* created an account with **PlayFab**, then this tutorial has also been made available as a [special interactive version](https://developer.playfab.com/?land=help) from directly inside the **Game Manager**. If you plan on following along with these steps, then you may find that version more useful.
 
-We also have this set of [SDK quickstart guides](../../../index.md?#pivot=documentation&panel=quickstarts), to help you make your first PlayFab API call in each of our SDK languages or environments.
+We also have this set of [SDK quickstart guides](../../../index.md?#pivot=documentation&panel=quickstarts), to help you make your first **PlayFab API** call in each of our **SDK** languages or environments.
 
 Let's get started!

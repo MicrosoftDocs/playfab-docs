@@ -41,6 +41,6 @@ Generally, the **Default Key** is sufficient to authorize your application for *
 
 This will create a **New Key** that you may use to authorize **Admin** and **Server API** calls.
 
-### Use case for multiple keys
+### Use case for multiple Keys
 
-You may need **Temporary Keys** if you are outsourcing some work to another company. You may also need to revoke a **Key** that has accidentally been made public. You can create new **keys** and revoke **keys** as needed.
+You may need **Temporary Keys** if you are outsourcing some work to another company. You may also need to *revoke* a **Key** that has accidentally been made public. You can create new **keys** and revoke **keys** as needed.
