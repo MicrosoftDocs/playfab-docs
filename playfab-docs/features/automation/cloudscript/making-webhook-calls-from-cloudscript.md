@@ -1,5 +1,5 @@
 ---
-title: Making Webhook Calls from CloudScript
+title: Making Webhook calls from CloudScript
 author: v-thopra
 description: Describes how to make Webhook calls from CloudScript, for both non-secure and secure scenarios.
 ms.author: v-thopra
@@ -10,7 +10,7 @@ keywords: playfab, automation, cloudscript
 ms.localizationpriority: medium
 ---
 
-# Making Webhook Calls from CloudScript
+# Making Webhook calls from CloudScript
 
 One of the less well-known features of **PlayFab’s CloudScript** is the fact that you can make **Webhook** calls from it to any **Web API** endpoint, using standard **Representational State Transfer** (**REST**) calls.
 
@@ -38,14 +38,16 @@ var headers = {};
 var responseString =  http.request(url,method,contentBody,contentType,headers); 
 ```
 
-The **Body** of the response is returned in stringified form, so that you can subsequently use it in the rest of the script. In this case, since we were querying version, you might write the response out to the log like the one provided below.
+The **Body** of the response is returned in stringified form, so that you can subsequently use it in the rest of the script.
+
+In this case, since we were querying version, you might write the response out to the log like the one provided below.
 
 ```javascript
 // CloudScript
 log.info(responseString); 
 ```
 
-The response back to the **Client** at the end of running the **CloudScript** might look like this.
+The response back to the **Client** at the end of running the **CloudScript** might look like this example provided below.
 
 ```json
 //HTTP Response

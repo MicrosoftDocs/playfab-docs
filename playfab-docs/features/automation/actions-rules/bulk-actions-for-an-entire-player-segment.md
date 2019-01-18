@@ -1,5 +1,5 @@
 ---
-title: Bulk Actions for an Entire Player Segment
+title: Bulk Actions for an entire Player Segment
 author: v-thopra
 description: Describes the steps needed to create a task to perform one or more actions on every player in a segment.
 ms.author: v-thopra
@@ -10,7 +10,7 @@ keywords: playfab, automation, actions, rules
 ms.localizationpriority: medium
 ---
 
-# Bulk Actions for an Entire Player Segment
+# Bulk Actions for an entire Player Segment
 
 This tutorial walks you through the steps needed to create a **Task** to perform one or more actions on every **Player** in a **Segment**.
 
@@ -19,10 +19,10 @@ This tutorial walks you through the steps needed to create a **Task** to perform
 Examples might include:
 
 - Give a special New Year’s gift to all **Players** who logged in during the last 2 weeks.
-- Reward **Players** who spent money in the last week based on spending tiers, where the more money they spent, the more valuable the gift.
+- Reward **Players** who spent money in the last week (based on spending tiers), where the more money they spent, the more valuable the gift.
 - Fixing corrupted **Player** state for all **Players** affected by a recent game bug.
 
-In this tutorial, based on our **Unicorn Battle Sample App**, we will grant a special gift to all **Players** with more than 2,725 **XP**.
+In this tutorial, based on our **Unicorn Battle Sample App**, we will grant a special gift to all **Players** with more than **2,725 XP**.
 
 ## Prerequisites
 
@@ -36,7 +36,7 @@ You will want to play *several* battles in order to level up your character to a
 
 ## Step 1 - Create the Segment
 
-The first step is to create the **Segment** that defines the group of **Players** who will be affected by this action. In this case, we need to create the **High XP Segment**, defined as all **Players** who have more than **2,725 XP**:
+The first step is to create the **Segment** that defines the **Group** of **Players** who will be affected by this action. In this case, we need to create the **High XP Segment**, defined as all **Players** who have more than **2,725 XP**:
 
 - Select **PlayStream** from the menu on the left.
 - Choose the **Segments** tab.
@@ -105,7 +105,9 @@ To verify that the **Task** ran successfully:
 
 ## What’s next
 
-This tutorial has introduced you to the steps involved in performing an action for every **Player** in a **Segment**, but there’s a lot more you can do with **Tasks**. Here are a few ideas for other things you can try.
+This tutorial has introduced you to the steps involved in performing an action for every **Player** in a **Segment**, but there’s a lot more you can do with **Tasks**.
+
+Here are a few ideas for other things you can try...
 
 ### Schedule your Tasks
 
