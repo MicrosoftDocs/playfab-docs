@@ -24,7 +24,7 @@ If your game has a 1v1 game mode or supports a single user entering matchmaking 
 
 ### Create a matchmaking ticket
 
-A user creates a matchmaking ticket using [CreateMatchmakingTicket](https://api.playfab.com/documentation/multiplayer/method/CreateMatchmakingTicket). When ticket creation is successful, the service returns a `TicketId`.
+A user creates a matchmaking ticket using [CreateMatchmakingTicket](xref:titleid.playfabapi.com.multiplayer.matchmaking.creatematchmakingticket). When ticket creation is successful, the service returns a `TicketId`.
 
  The ticket creation requires you to specify the `Creator` (the user's identity and attributes), `GiveUpAfterSeconds` (the time in seconds before the service gives up on matching the ticket), and the `QueueName` for which you are matchmaking into. The `Creator` field must contain the user attributes required by the queue configuration matching the `QueueName`. A good value for `GiveUpAfterSeconds` time is 120 seconds, to prevent users from giving up on their own.
 
@@ -65,7 +65,7 @@ PlayFabMultiplayerAPI.CreateMatchmakingTicket(
 
 ### Check the status of the matchmaking ticket
 
-You must poll the service by `TicketId` to access the `Status` of the ticket in matchmaking. In order to do so, have your title call [GetMatchmakingTicket](https://api.playfab.com/documentation/multiplayer/method/GetMatchmakingTicket). We recommend polling for the ticket status every 15 seconds. When the status of the ticket changes to `Matched`, your client can stop polling the ticket. From that point on, the ticket will include the `MatchId`.
+You must poll the service by `TicketId` to access the `Status` of the ticket in matchmaking. In order to do so, have your title call [GetMatchmakingTicket](xref:titleid.playfabapi.com.multiplayer.matchmaking.getmatchmakingticket). We recommend polling for the ticket status every 15 seconds. When the status of the ticket changes to `Matched`, your client can stop polling the ticket. From that point on, the ticket will include the `MatchId`.
 
 ```csharp
 PlayFabMultiplayerAPI.GetMatchmakingTicket(
@@ -80,7 +80,7 @@ PlayFabMultiplayerAPI.GetMatchmakingTicket(
 
 ### Get the Match
 
-From your client, call [GetMatch](https://api.playfab.com/documentation/multiplayer/method/GetMatch) with the `MatchId` provided in the response from [GetMatchmakingTicket](https://api.playfab.com/documentation/multiplayer/method/GetMatchmakingTicket). This match contains the list of users who are matched together.  
+From your client, call [GetMatch](xref:titleid.playfabapi.com.multiplayer.matchmaking.getmatch) with the `MatchId` provided in the response from [GetMatchmakingTicket](xref:titleid.playfabapi.com.multiplayer.matchmaking.getmatchmakingticket). This match contains the list of users who are matched together.  
 
 ```csharp
 PlayFabMultiplayerAPI.GetMatch(
@@ -95,7 +95,7 @@ PlayFabMultiplayerAPI.GetMatch(
 
 ### Cancelling a matchmaking ticket
 
-If for some reason your client wants to cancel the matchmaking process prior to `GiveUpAfterSeconds` being reached, call [CancelMatchmakingTicket](https://api.playfab.com/documentation/multiplayer/method/CancelMatchmakingTicket) with the `TicketId`. If a match hasn’t already been found, the ticket is taken out of the matchmaking process and its status changes to `Canceled`.  
+If for some reason your client wants to cancel the matchmaking process prior to `GiveUpAfterSeconds` being reached, call [CancelMatchmakingTicket](xref:titleid.playfabapi.com.multiplayer.matchmaking.cancelmatchmakingticket) with the `TicketId`. If a match hasn’t already been found, the ticket is taken out of the matchmaking process and its status changes to `Canceled`.  
 
 ```csharp
 PlayFabMultiplayerAPI.CancelMatchmakingTicket(
@@ -116,11 +116,11 @@ If your game allows groups of players to go into a matchmaking queue together, t
 
 ### Create a matchmaking ticket
 
-The group must elect a ticket creator in your title. The creator creates a matchmaking ticket using [CreateMatchmakingTicket](https://api.playfab.com/documentation/multiplayer/method/CreateMatchmakingTicket), which returns a `TicketId` upon success. The ticket creation requires you to specify the `Creator` (the user's identity and attributes), `GiveUpAfterSeconds` (the time in seconds before the service gives up on matching the ticket), `MembersToMatchWith` (the identities of the other group members) and the `QueueName` for which you are matchmaking into. The `Creator` field must contain the user attributes required by the queue configuration matching the `QueueName`. A good value for `GiveUpAfterSeconds` time is 120 seconds, to prevent users from giving up on their own.
+The group must elect a ticket creator in your title. The creator creates a matchmaking ticket using [CreateMatchmakingTicket](xref:titleid.playfabapi.com.multiplayer.matchmaking.creatematchmakingticket), which returns a `TicketId` upon success. The ticket creation requires you to specify the `Creator` (the user's identity and attributes), `GiveUpAfterSeconds` (the time in seconds before the service gives up on matching the ticket), `MembersToMatchWith` (the identities of the other group members) and the `QueueName` for which you are matchmaking into. The `Creator` field must contain the user attributes required by the queue configuration matching the `QueueName`. A good value for `GiveUpAfterSeconds` time is 120 seconds, to prevent users from giving up on their own.
 
 ### Group Members join the match ticket
 
-Once the match ticket has been created, the other members of the group have to join it to move along the matchmaking process.  At this time, the ticket is in the `WaitingForPlayers` status. It will not begin matching with other tickets until all `MembersToMatchWith` have joined the ticket. To have members join, the `Creator` must share the `TicketId` to the other members through your title. Each member then calls [JoinMatchmakingTicket](https://api.playfab.com/documentation/multiplayer/method/JoinMatchmakingTicket), providing their own required attributes. Once all members have joined the ticket, the ticket status becomes `WaitingForMatch`.  
+Once the match ticket has been created, the other members of the group have to join it to move along the matchmaking process.  At this time, the ticket is in the `WaitingForPlayers` status. It will not begin matching with other tickets until all `MembersToMatchWith` have joined the ticket. To have members join, the `Creator` must share the `TicketId` to the other members through your title. Each member then calls [JoinMatchmakingTicket](xref:titleid.playfabapi.com.multiplayer.matchmaking.joinmatchmakingticket), providing their own required attributes. Once all members have joined the ticket, the ticket status becomes `WaitingForMatch`.  
 
 ```csharp
 PlayFabMultiplayerAPI.JoinMatchmakingTicket(

@@ -33,7 +33,7 @@ A basic allocation of multiplayer server capacity is included with every paid Pl
 
 Games that require multiplayer servers will need to purchase additional capacity through PlayFab’s consumption pricing plan. Below are the PlayFab resources used to bill for server utilization:
 
-- Virtual machine instance hours - The hours of virtual machine time that your game servers are utilizing. Different virtual machine and container selections are priced at different rates. See [Multiplayer Servers detailed spec sheet](https://api.playfab.com/docs/tutorials/landing-tournaments/multiplayer-servers-2.0/multiplayer-servers-detailed-price-sheet) for more information.
+- Virtual machine instance hours - The hours of virtual machine time that your game servers are utilizing. Different virtual machine and container selections are priced at different rates. See [Multiplayer Servers detailed price sheet](multiplayer-servers-detailed-price-sheet.md) for more information.
 - Network egress - The volume of data transmitted by your game servers to the Internet (in gigabytes). Network egress is billed at different rates depending on the originating datacenter. 
 - Storage - The storage used by PlayFab (in gigabytes) to host and replicate you game server assets and containers. 
 

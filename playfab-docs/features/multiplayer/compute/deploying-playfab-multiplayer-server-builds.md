@@ -16,11 +16,11 @@ A PlayFab multiplayer server build is a combination of your game server executab
 
 Some aspects of a build cannot be modified once a build is created, this is the build's *definition*:
 
-- *Assets* - Assets are zip files. At least one asset containing your game server executable is required. (See [Building a Thunderhead game server](https://api.playfab.com/docs/tutorials/landing-tournaments/multiplayer-servers-2.0/building-a-thunderhead-game-server)). Each asset has an asset mount path that specifies where it is mounted in the container file system. Assets should be less than 10GB in size. A typical mount path might be *C:\Assets* 
-- *Machine selection* - Required. The virtual machine size you want to use. PlayFab currently supports 4 Azure compute families (See [Multiplayer Servers detailed spec sheet](https://api.playfab.com/docs/tutorials/landing-tournaments/multiplayer-servers-2.0/multiplayer-servers-detailed-price-sheet)).  
+- *Assets* - Assets are zip files. At least one asset containing your game server executable is required. (See [Basics of a PlayFab game server](basics-of-a-playFab-game-server.md)). Each asset has an asset mount path that specifies where it is mounted in the container file system. Assets should be less than 10GB in size. A typical mount path might be *C:\Assets* 
+- *Machine selection* - Required. The virtual machine size you want to use. PlayFab currently supports 4 Azure compute families (See [Multiplayer Servers detailed price sheet](multiplayer-servers-detailed-price-sheet.md)).  
 - *Servers per machine* - Required. The maximum number of game servers that should be operated on a single virtual machine. A typical configuration may have 4 server on a Standard_D2s_v3, providing each server effectively 50% of a core.
 - *Certificate* - Optional. A pfx file (Windows) or pem file (Linux) containing a certificate to be installed within the container. Typically a certificate for service-to-service authentication is installed through this configuration. *Certificate names provided to PlayFab can only contain letters and numbers. No spaces or special characters (dashes, underscores, etc.)*
-- *Network* - Required. A 3-tuple array of Ports, Names, and Protocols (TCP or UDP) that your game server is listening upon for incoming traffic. Outgoing (or solicited) network flows do not need to be configured. (See [Connecting client to game servers](https://api.playfab.com/docs/tutorials/landing-tournaments/multiplayer-servers-2.0/mpcompute-networking)).
+- *Network* - Required. A 3-tuple array of Ports, Names, and Protocols (TCP or UDP) that your game server is listening upon for incoming traffic. Outgoing (or solicited) network flows do not need to be configured. (See [Connecting clients to game servers](connecting-clients-to-game-servers.md)).
 - *Container* - Required. The container that will host your game server. Currently only Windows Server Core is supported.
 
 You provide the build definition when you create a build through the PlayFab Multiplayer Servers tab:
@@ -35,7 +35,7 @@ The build *configuration* can be modified at any time in a build's life. The bui
 
 ![Game Manager - Multiplayer - Thunderhead - New Build - Regions](media/tutorials/game-manager-thunderhead-new-build-regions.png)
 
-When selecting the virtual machine size and regional configuration, keep in mind the overall usage limits configured for your PlayFab title. See [Accessing increased core limits and additional Azure regions](https://api.playfab.com/docs/tutorials/landing-tournaments/multiplayer-servers-2.0/identifying-and-increasing-core-limits).
+When selecting the virtual machine size and regional configuration, keep in mind the overall usage limits configured for your PlayFab title. See [Accessing increased core limits and additional Azure regions](identifying-and-increasing-core-limits.md).
 
 Once you've provided a valid build definition you will be able to deploy the build in Game Manager. In 5-10 minutes you should see standing by machines on the "View Sessions" page for your build:
 

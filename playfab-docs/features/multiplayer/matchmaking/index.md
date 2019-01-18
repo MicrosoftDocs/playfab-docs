@@ -63,8 +63,8 @@ For more information on specific flows from either your game client or service, 
 
 ### SDKs and Tools
 
-+ [Matchmaking API Reference (Private Preview)](https://api.playfab.com/documentation/multiplayer?beta=1#Matchmaking)
-+ [Matchmaking Admin API Reference (Private Preview)](https://api.playfab.com/documentation/multiplayer?beta=1#Matchmaking%20Admin)
++ [Matchmaking API Reference (Private Preview)](xref:titleid.playfabapi.com.multiplayer.matchmaking)
++ [Matchmaking Admin API Reference (Private Preview)](xref:titleid.playfabapi.com.multiplayer.matchmakingadmin)
 + [Playstream Events](https://api.playfab.com/playstream/events)
   + [matchmaking_ticket_completed](https://api.playfab.com/playstream/events/matchmaking_ticket_completed)
   + [matchmaking_match_found](https://api.playfab.com/playstream/events/matchmaking_match_found)
