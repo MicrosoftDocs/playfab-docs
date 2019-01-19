@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Matchmaking with Unity quickstart
 
-This quickstart guide walks you through the entire flow for integrating the matchmaking feature into your Unity game.  Depending on your game design, consider the [single user](#Single-User-Ticket-Matchmaking) matchmaking section and the matchmaking for [groups of players](#Multiple-User-Ticket-Matchmaking) section. This guide assumes that you have already configured a matchmaking queue in Game Manager. 
+This quickstart guide walks you through the entire flow for integrating the matchmaking feature into your Unity game. Depending on your game design, consider the [single user](#Single-User-Ticket-Matchmaking) matchmaking section and the matchmaking for [groups of players](#Multiple-User-Ticket-Matchmaking) section. This guide assumes that you have already configured a matchmaking queue in Game Manager. 
 
 This tutorial shows how to submit a ticket to a specific queue in order to find a game. A queue likely maps to a game mode or multiple game modes (ex.: a capture the flag mode and a king of the hill mode in the same queue). The matchmaking service handles finding a match amongst tickets in a queue. When a match is found, your title must handle connecting the players together for gameplay. 
 
@@ -120,7 +120,7 @@ The group must elect a ticket creator in your title. The creator creates a match
 
 ### Group Members join the match ticket
 
-Once the match ticket has been created, the other members of the group have to join it to move along the matchmaking process.  At this time, the ticket is in the `WaitingForPlayers` status. It will not begin matching with other tickets until all `MembersToMatchWith` have joined the ticket. To have members join, the `Creator` must share the `TicketId` to the other members through your title. Each member then calls [JoinMatchmakingTicket](xref:titleid.playfabapi.com.multiplayer.matchmaking.joinmatchmakingticket), providing their own required attributes. Once all members have joined the ticket, the ticket status becomes `WaitingForMatch`.  
+Once the match ticket has been created, the other members of the group have to join it to move along the matchmaking process. At this time, the ticket is in the `WaitingForPlayers` status. It will not begin matching with other tickets until all `MembersToMatchWith` have joined the ticket. To have members join, the `Creator` must share the `TicketId` to the other members through your title. Each member then calls [JoinMatchmakingTicket](xref:titleid.playfabapi.com.multiplayer.matchmaking.joinmatchmakingticket), providing their own required attributes. Once all members have joined the ticket, the ticket status becomes `WaitingForMatch`.  
 
 ```csharp
 PlayFabMultiplayerAPI.JoinMatchmakingTicket(

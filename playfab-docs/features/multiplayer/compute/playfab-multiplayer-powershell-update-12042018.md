@@ -1,5 +1,5 @@
 ---
-title: December 4, 2018 - PlayFab Multiplayer PowerShell Update
+title: PlayFab Multiplayer PowerShell Update - December 4, 2018
 author: v-thopra
 description: Describes the changes made in the 12/04/2018 PlayFab Multiplayer PowerShell Update.
 ms.author: v-thopra
@@ -10,7 +10,7 @@ keywords: playfab, multiplayer servers, thunderhead, powershell
 ms.localizationpriority: medium
 ---
 
-# December 4, 2018 - PlayFab Multiplayer PowerShell Update
+# PlayFab Multiplayer PowerShell Update - December 4, 2018
 
 The PlayFab Multiplayer module (v0.920+) has a slightly different API signature for **New-PFMultiplayerBuild** that has fewer defaults (but allows for greater customization). Usage of the updated cmdlet is below, and the [Quickstart for multiplayer servers (API/PowerShell)](quickstart-for-multiplayer-servers-api-powershell.md) has been updated.
 
