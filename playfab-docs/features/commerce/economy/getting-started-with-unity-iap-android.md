@@ -75,15 +75,15 @@ Our first step is setting up **UnityIAP**:
 
 ![Enable UnityIAP service](media/tutorials/enable-unity-iap-service.png)  
 
-A page with a list of plugins will appear.
+A page with a list of **Plugins** will appear.
 
 - Select the **Import** button **(1)**.
 
 ![UnityIAP service - Import plugins](media/tutorials/import-plugins-unity-iap.png)  
 
-Continue the **Unity** install and import procedure up to the point where it has imported all the plugins.
+Continue the **Unity** install and import procedure up to the point where it has imported all the **Plugins**.
 
-- Verify that the plugins are in place **(1)**.
+- Verify that the **Plugins** are in place **(1)**.
 - Then create a new script **(2)**, called **AndroidIAPExample.cs**.
 
 ![UnityIAP Create new script](media/tutorials/create-new-script-unity-iap.png)  
@@ -293,18 +293,18 @@ public class GooglePurchase {
 }
 ```
 
-- Create a new game object called **Code (1)**.
+- Create a new **Game** object called **Code (1)**.
 - Add the **AndroidIAPExample** component to it **(2)** **(3)**.
-- Make sure to save the scene **(4)**. 
+- Make sure to **Save** the **Scene (4)**. 
 
 ![UnityIAP create example game object](media/tutorials/create-example-game-object-unity-iap.png)  
 
 Finally, navigate to **Build Settings**.
 
-- Verify that your scene has been added to the **Scenes In Build** area **(1)**.
+- Verify that your **Scene** has been added to the **Scenes In Build** area **(1)**.
 - Make sure that the **Android** platform has been selected **(2)**.
 - Move to the **Player Settings** area **(3)**.
-- Assign your package name.
+- Assign your **Package Name (4)**.
 
 > [!NOTE]
 > Make sure to come up with your *own* package name to avoid any **Play Market** collisions.
@@ -320,7 +320,7 @@ We have no means to test it just yet. We need to configure **Play Market** and *
 This section describes the specifics of how to enable **IAP** for your **PlayMarket Application**.
 
 > [!NOTE]
-> Setting up the **Application** itself is beyond the scope of this tutorial. We assume you already *have* an application, and that is configured to publish at least **Alpha** releases.
+> Setting up the **Application** itself is beyond the scope of this tutorial. We assume you already *have* an **Application**, and that is configured to publish at least **Alpha** releases.
 
 ![Enable PlayMarket Application](media/tutorials/enable-playmarket-application.png)  
 
@@ -328,7 +328,7 @@ Useful notes:
 
 - Getting to that point will require you to have an **APK** uploaded. Please use the **APK** we constructed in the previous section.
 - When asked to upload the **APK**, you may upload it as an **Alpha** or **Beta Application** to enable the **IAP** sandbox.
-- Configuring **Content Rating** will include questions about how **IAP** is enabled in the application.
+- Configuring **Content Rating** will include questions about how **IAP** is enabled in the **Application**.
 - **Play Market** does *not* allow **Publishers** to use or test **IAP** - so please, pick *another* **Google** account for testing purposes, and add it as a tester for your **Alpha/Beta** build.
 
 Once you have the **Application** build published:
@@ -375,7 +375,7 @@ The next step is enabling **IAP** testing. While sandbox is automatically enable
 - Navigate to **Home (1)**.
 - Locate and select the **Account details (2)** in the menu to the left.
 - Locate the **License Testing** area **(3)**.
-- Verify that your test accounts are in the list **(4)** and that the **License Test Response** is set to **RESPOND_NORMALLY (5)**.
+- Verify that your **Test Accounts** are in the list **(4)** and that the **License Test Response** is set to **RESPOND_NORMALLY (5)**.
 - Do *not* forget to apply the settings.
 
 ![PlayMarket enable IAP testing](media/tutorials/playmarket-enable-iap-testing.png)  
@@ -410,7 +410,7 @@ Our next step is reflecting our **Golden Sword Item** in **PlayFab**:
 
 ![PlayFab save Catalog](media/tutorials/playfab-save-catalog.png)  
 
-If the **Catalog** has *no items*, it is *automatically* removed. That's why any new **Catalog** comes with a pre-added item called **One**.
+If the **Catalog** has *no items*, it is *automatically* removed. That's why any new **Catalog** comes with a pre-added **Item** called **One**.
 
 We can *always* create a *new* **Item**, but to keep things clean, let's modify the existing **One Item**.
 
@@ -443,7 +443,7 @@ This concludes the setup for your **PlayFab Title**.
 For testing purposes, download the **App** using the **Alpha/Beta** release.
 
 - Make sure to use a test account and a real **Android** device.
-- Once you start the **App**, you should see **IAP** initialized, and *one button* representing your item.
+- Once you start the **App**, you should see **IAP** initialized, and *one button* representing your **Item**.
 - Select that button.
 
 ![Test app - Buy Golden Sword button](media/tutorials/test-app-buy-golden-sword-button.png)  

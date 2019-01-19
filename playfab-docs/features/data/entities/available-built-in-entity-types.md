@@ -21,9 +21,9 @@ These values are meant to be used in the **EntityKey.Type** field.
 
 ## Namespace
 
-**Namespace** is the singular **Entity** that refers to *all* global information for every **Title** within a studio. This information should be static. Changes to this **Entity** will *not* be reflected in real time.
+**Namespace** is the singular **Entity** that refers to *all* global information for every **Title** within a **Studio**. This information should be static. Changes to this **Entity** will *not* be reflected in real time.
 
-The **Id** field should be set to your **Game PublisherId**, found in **Game Manager**:
+The **ID** field should be set to your **Game PublisherId**, found in **Game Manager**:
 
 - Go to **Settings**.
 - Select **API Features**.
@@ -33,7 +33,7 @@ The **Id** field should be set to your **Game PublisherId**, found in **Game Man
 
 **Title** is the singular **Entity** that refers to all global information for that **Title**. This information should be static. Changes to this **Entity** will *not* be reflected in real time.
 
-The **Id** field should be set to your game's **TitleId**, found in Game Manager:
+The **ID** field should be set to your game's **TitleId**, found in **Game Manager**:
 
 - Go to **Settings**.
 - Select **API Features**.
@@ -41,27 +41,27 @@ The **Id** field should be set to your game's **TitleId**, found in Game Manager
 
 ## master_player_account
 
-Th **master_player_account** is a **Player Entity** that is shared among all **Titles** within a studio.
+The **master_player_account** is a **Player Entity** that is shared among all **Titles** within a **Studio**.
 
-The **Id** field should be set to **PlayFabId** from the **Classic API**, returned by any **Login Result.PlayFabId**.
+The **ID** field should be set to **PlayFabId** from the **Classic API**, returned by any **Login Result.PlayFabId**.
 
 ## title_player_account
 
 **title_player_account**, for most developers, represents the **Player** in the most traditional way.
 
-The **Id** field should be set to **LoginResult.EntityToken.Id** in the **Client API**, or **GetEntityTokenResponse.Entity.Id** in the **Authentication API**.
+The **ID** field should be set to **LoginResult.EntityToken.Id** in the **Client API**, or **GetEntityTokenResponse.Entity.Id** in the **Authentication API**.
 
 ## Character
 
 **Character** is a sub-entity of **title_player_account**, and is a direct mirror of [Characters in the Classic APIs](xref:titleid.playfabapi.com.client.characters.getalluserscharacters).
 
-The **Id** field should be set to any **characterId** from **result.Characters[i].CharacterId**.
+The **ID** field should be set to any **characterId** from **result.Characters[i].CharacterId**.
 
 ## Group
 
-**Group** is an **Entity** that contains other **EEntities**. It is currently limited to **title-players** and **Characters**.
+**Group** is an **Entity** that contains other **Entities**. It is currently limited to **Players** and **Characters**.
 
-The **Id** field should be set to the **result.Group.Id** if you are creating a group, or the **result.Groups[i].Group.Id** when [listing your memberships](xref:titleid.playfabapi.com.groups.groups.listmembership).
+The **ID** field should be set to the **result.Group.Id** if you are creating a group, or the **result.Groups[i].Group.Id** when [listing your memberships](xref:titleid.playfabapi.com.groups.groups.listmembership).
 
 ## Service
 

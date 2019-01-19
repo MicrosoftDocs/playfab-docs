@@ -10,7 +10,7 @@ keywords: playfab, analytics, metrics, events
 ms.localizationpriority: medium
 ---
 
-# Real-time Analytics - Event search query panel
+# Real-time Analytics - Event Search Query panel
 
 This tutorial illustrates how to use the **Event Search Query** panel.
 
@@ -35,7 +35,7 @@ On the primary screen:
 ## Tips and Tricks
 
 - The **Query Builder** panel (the area in the image **outlined in green**) offers help with user input:
-  - **Date** settings have **Calendar** buttons (to their right) that open a date-picker popup.
+  - **Date** settings have **Calendar** buttons (to their right) that open a date-picker pop-up.
   - **Graph** options support auto-complete for **Property Names**.
   - When a **Search Query** is specified, the **Clear Query** button will be available to quickly reset all settings.
 - Changing the **Event Name**, **Start date**, or **End date** settings will replace the current **Event Search Query** (as of April 18th 2017).

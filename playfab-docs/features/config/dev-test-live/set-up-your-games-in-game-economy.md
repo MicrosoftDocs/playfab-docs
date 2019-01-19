@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Chapter 2 - Setting up your Game's in-game Economy
 
-This is chapter 2 of our tutorial [Getting Started with PlayFab](getting-started-with-playfab.md) that contains the following chapters:
+This is **Chapter 2** of our tutorial [Getting Started with PlayFab](getting-started-with-playfab.md) that contains the following Chapters:
 
 - [Chapter 1 - Getting started with Players and Tournaments](get-started-with-players-and-tournaments.md).
 
@@ -21,9 +21,9 @@ This is chapter 2 of our tutorial [Getting Started with PlayFab](getting-started
 
 - [Chapter 4 - Try out content management](try-out-content-management.md)
 
-## Overview
+## Contents
 
-Chapter 2 contains the following steps to get you started setting up your game's in-game economy:
+**Chapter 2** contains the following steps to get you started setting up your game's in-game economy:
 
 1. [Set up a virtual currency for your game](#step-1-setting-up-a-virtual-currency-for-your-game).
 
@@ -33,7 +33,7 @@ Chapter 2 contains the following steps to get you started setting up your game's
 
 ## Step 1: Setting up a Virtual Currency for your game
 
-**PlayFab** supports a robust game economy with **multiple Currencies**, **Item Bundles**, **Stores**, and **Random Result Tables** (**Drop Tables**).
+**PlayFab** supports a robust game economy with multiple **Currencies**, **Item Bundles**, **Stores**, and **Random Result Tables** (**Drop Tables**).
 
 ### Rags to riches
 
@@ -49,7 +49,7 @@ The **Deposit** and **Recharge** fields are useful for **Energy Currencies** tha
 
 ### Pay it forward
 
-Now you can give players virtual currency directly. Since it can be dangerous to give clients the ability to call [AddUserVirtualCurrency](xref:titleid.playfabapi.com.client.playeritemmanagement.adduservirtualcurrency), let's add money from the Game Manager.
+Now you can give **Virtual Currency** directly to **Players**. Since it can be dangerous to give **Clients** the ability to call [AddUserVirtualCurrency](xref:titleid.playfabapi.com.client.playeritemmanagement.adduservirtualcurrency), let's add money from the **Game Manager**.
 
 1. Go to the **Player's Virtual Currency** tab.
 
@@ -68,7 +68,7 @@ Now you have **100 Gold**. What can you do with it? Buy an item! But first, we h
 No sense having money if you can't spend it. Let's create a **Catalog**, which is a collection of **Items**. You can create **Catalogs** that correspond to the platforms on which you're releasing your game, or major version numbers, whatever you like.
 
 > [!TIP]
-> We don't recommend creating **Catalogs** to differentiate types of items, as you can filter items effectively using classes, tags, and stores. Multiple **Catalogs** are better suited to different versions of your game.
+> We don't recommend creating **Catalogs** to differentiate types of **Items**, as you can filter **Items** effectively using classes, tags, and stores. Multiple **Catalogs** are better suited to different versions of your game.
 
 ### Make a Catalog
 
@@ -91,7 +91,7 @@ No sense having money if you can't spend it. Let's create a **Catalog**, which i
    ![Game Manager - Edit Catalog Item](media/tutorials/game-manager-edit-catalog-item.png)  
 
 > [!TIP]
-> If you plan on selling **Items** for **Real Money**, you can set how much the item costs in **Real Money** (**RM**), which is expressed in United States cents. An item that costs **$4.99** should have a **RM** value of **499**. This is a more advanced topic than this tutorial though.
+> If you plan on selling **Items** for **Real Money**, you can set how much the **Item** costs in **Real Money** (**RM**), which is expressed in United States cents. An **Item** that costs **$4.99** should have a **RM** value of **499**. This is a more advanced topic than this tutorial though.
 
 > [!WARNING]
 > If you remove **all** of the **Items** from a **Catalog**, the **Catalog** disappears.
@@ -114,13 +114,13 @@ Who's hungry for apples? Jerry? Let's get the **Catalog** and attempt to make a 
 
    ![PurchaseItem Results - VC Purchase](media/tutorials/purchaseitem-results-vc-purchase.png)  
 
-4. Finally, call [GetUserInventory](xref:titleid.playfabapi.com.client.playeritemmanagement.getuserinventory) and take a look at your inventory.
+4. Finally, call [GetUserInventory](xref:titleid.playfabapi.com.client.playeritemmanagement.getuserinventory) and take a look at your **Inventory**.
 
    ![GetUserInventory Results - New Inventory Item](media/tutorials/getuserinventory-results-new-inventory-item.png)  
 
 Now you have an apple!
 
-Check the **Player's PlayStream** tab, you should have seen a **Player vc item purchased** event.
+Check the **Player's PlayStream** tab, you should have seen a **"Player vc item purchased" Event**.
 
 ![Game Manager - Dashboard - item purchased event](media/tutorials/game-manager-dashboard-item-purchased-event.png)  
 
@@ -133,9 +133,9 @@ And now the **Player** has only **95 gold coins** left...
 ![Game Manager - Players - Virtual Currency updated](media/tutorials/game-manager-virtual-currency-updated.png)  
 
 ## Step 4: Create a Store with a discounted price
-Buying **Items** out of the **Catalog** is fine, but it's not how *most* games structure their purchases. Whether you're making an idle clicker, an RPG, a FPS, or an endless runner, you probably have **Stores** in your game where players can buy weapons, armor, or running shoes.
+Buying **Items** out of the **Catalog** is fine, but it's not how *most* games structure their purchases. Whether you're making an idle clicker, an RPG, a FPS, or an endless runner, you probably have **Stores** in your game where **Players** can buy weapons, armor, or running shoes.
 
-Our solution for this is **Stores**, a subset of your **Catalog** with prices you can override. It also enables some amazing functionality in PlayStream (we'll get to that later).
+Our solution for this is **Stores**, a subset of your **Catalog** with prices you can override. It also enables some amazing functionality in **PlayStream** (we'll get to that later).
 
 As this tutorial is slowly evolving into Harvest Moon, let's make a **Store** to sell fruit.
 
@@ -151,7 +151,7 @@ It's not much of a **Store** if you only have one thing to sell (that would be t
     - A **grape** with no **GO** cost (don't select any prices).
 
 > [!NOTE]
-> You don't have to assign a virtual currency price to items in the catalog for them to appear in a **Store**.
+> You don't have to assign a **Virtual Currency** price to **Items** in the **Catalog** for them to appear in a **Store**.
 
 ![Game Manager - New Catalog Item](media/tutorials/game-manager-new-catalog-item.png)  
 
@@ -159,9 +159,9 @@ It's not much of a **Store** if you only have one thing to sell (that would be t
 
 ### Stocking the shelves
 
-You should now have a few items with prices. Let's make a **Store** to sell them to the **Player**.
+You should now have a few **Items** with prices. Let's make a **Store** to sell them to the **Player**.
 
-1. Go to the **Stores** tab in the **main Catalog**.
+1. Go to the **Stores** tab in the main **Catalog**.
 2. Select **New Store**, and give it an **ID**:
     - **Store ID**: **fruits**
 3. Select **Add to Store**.
@@ -169,7 +169,7 @@ You should now have a few items with prices. Let's make a **Store** to sell them
 
    ![Game Manager - Pick store contents](media/tutorials/game-manager-pick-store-contents.png)  
 
-5. Select the **Add** button next to a few items to add them to your store.
+5. Select the **Add** button next to a few items to add them to your **Store**.
 
 You should see your **Items** listed in the **Store**, but they're *not* valid until they have at least *one* price.
 
@@ -181,10 +181,10 @@ You should see your **Items** listed in the **Store**, but they're *not* valid u
 
 - Drag and drop the rows to rearrange the order of the **Items**.
 - You only have to enter a **Price** for one box in each row, but you can enter as many **Prices** as you want.
-- If you don't enter a **Price** for an item, it will be removed from the store.
+- If you don't enter a **Price** for an **Item**, it will be removed from the store.
 - If a **Store Item** doesn't have a **Price** in a **Currency**, it can't be bought using that **Currency**.
 - Store **Prices** can be higher than **Catalog Prices**.
-- **Zero** is a valid price for an item.
+- **Zero** is a valid price for an **Item**.
 
 ### Price it out
 
@@ -207,7 +207,7 @@ You have a **Store**. Let's buy something!
 
    ![GetStoreItems Results - Before Purchase](media/tutorials/getstoreitems-results-before-purchase.png)  
 
-3. In your game, call [PurchaseItem](xref:titleid.playfabapi.com.client.playeritemmanagement.purchaseitem) and give it the currency and store price of the item you want to buy
+3. In your game, call [PurchaseItem](xref:titleid.playfabapi.com.client.playeritemmanagement.purchaseitem) and give it the **Currency** and **Store** price of the **Item** you want to buy
 
     - **CatalogVersion**: **main**
     - **StoreId**: **fruits**
@@ -219,7 +219,7 @@ You have a **Store**. Let's buy something!
 
 4. Look in your **Player's Inventory** tab for the **pear**, and check their **Virtual Currency** to check that they only spent **2 Gold**.
 
-You will once again see events in the **PlayStream Debugger** showing the purchase flow from the **Store**.
+You will once again see **Events** in the **PlayStream Debugger** showing the purchase flow from the **Store**.
 
 ![Game Manager - Dashboard - Purchase flow](media/tutorials/game-manager-dashboard-purchase-flow.png)  
 
@@ -228,7 +228,7 @@ You will once again see events in the **PlayStream Debugger** showing the purcha
 
 ### Going further
 
-**Stores** are the *best* way to let players purchase items in your game. You can use the **Game Manager** to change the order of **Items**, and adjust **Prices** at any time.
+**Stores** are the *best* way to let **Players** purchase **Items** in your game. You can use the **Game Manager** to change the order of **Items**, and adjust **Prices** at any time.
 
 Using **Segments**, you can even give special **Prices** to certain **Players** without touching your game code.
 

@@ -24,9 +24,9 @@ To generate **Events** for testing purposes, see the [PlayStream quickstart](../
 On this panel:
 1. The **vertical axis** shows the amount of **Events** for each given period of **Time**.
 2. The **horizontal axis** represents a **timeline**, grouped by **Intervals**.
-3. The **Legend** is represented as a **color map**, where each **Event Name** is mapped to a certain color.
-4. **Events** are grouped by **Intervals** into columns. Within a certain **Interval**, events are grouped by **Name** (visually by color).
-5. Hovering over a color rectangle reveals *additional information* about that **Event** group.
+3. The **Legend** is represented as a color map, where each **Event Name** is mapped to a certain color.
+4. **Events** are grouped by **Intervals** into columns. Within a certain **Interval**, **Events** are grouped by **Name** (visually by color).
+5. Hovering over a color rectangle reveals *additional information* about that **Event Group**.
 
 ## Tips and Tricks
 

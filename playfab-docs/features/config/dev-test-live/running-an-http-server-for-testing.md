@@ -22,7 +22,7 @@ In some scenarios, you may need to run a local **HTTP** server for test purposes
 
 Run the command line/terminal on your system (it doesn't matter which directory you are currently in).
 
-Execute **npm install -g http-server**. Once **npm** finishes, you have tiny **http**-server installed. That's it.
+Execute **npm install -g http-server**. Once **NPM** finishes, you have tiny **http**-server installed. That's it.
 
 ## Serving files
 
@@ -59,22 +59,22 @@ Run the **command line/terminal** and **cd** to the folder with your **index.htm
 
 You can optionally specify a port to run the server on.
 
-- **Example**: Execute **http-server -p 80** to run your server on **port 80**. If a port is occupied, you will have to find what application is using this port and shut it down before you attempt to run the **HTTP**-server again.
+- **Example**: Execute **http-server -p 80** to run your server on **port 80**. If a port is occupied, you will have to find what application is using this port and shut it down before you attempt to run the **HTTP**server again.
 
 ### Serving files with a custom Domain Name
 
 When testing different **SDKs**, for example, [Google](../../authentication/platform-specific-authentication/google-html5.md) or [Facebook](../../authentication/platform-specific-authentication/facebook-html5.md), you will notice that some services can only be configured with a certain valid **Domain Name**.
 
-For instance, they do not accept a plain **IP** address + port. Certain services use such a configuration to ensure that your browser fetches your code from a specific, secure domain. 
+For instance, they do not accept a plain **IP** address + port. Certain services use such a configuration to ensure that your browser fetches your code from a specific, secure **Domain**.
 
-They also often use this configuration to ensure that a **User** can only log into your **Application** from your **Domain**, and that nobody else can fake it and steal user data. 
+They also often use this configuration to ensure that a **User** can only log into your **Application** from your **Domain**, and that nobody else can fake it and steal **User** data.
 
 > [!NOTE]
 > While this is an important and useful security restriction, it may produce complications when trying to locally test your code.
 
-If you run your **server on port 80** and your use-case is simple enough, you can utilize the **HOSTS** file on your operating system to access your **HTTP** server through a valid domain name.
+If you run your **server on port 80** and your use-case is simple enough, you can utilize the **HOSTS** file on your operating system to access your **HTTP** server through a valid **Domain Name**.
 
-The **HOSTS** file is a special file available on both **Windows** and **Mac OS**. It allows you to override certain domain names with custom endpoints. Schematically, the **HOSTS** file looks like this:
+The **HOSTS** file is a special file available on both **Windows** and **Mac OS**. It allows you to override certain **Domain Names** with custom endpoints. Schematically, the **HOSTS** file looks like this:
 
 ```cmd
 IP_ADDRESS_1 DOMAIN_NAME_1
@@ -86,7 +86,11 @@ IP_ADDRESS_3 DOMAIN_NAME_3
 ...
 ```
 
-Each line represents exactly *one* entry. When you try to reach **DOMAIN_NAME_1**, your browser will direct your request to **IP_ADDRESS_1**. The same applies for each entry in the **HOSTS** file. In the preceding example, entry number **4** starts with **#**. This is a syntax for **comment**. By **commenting** out certain entries you may disable them, without necessarily removing them from the **HOSTS** file.
+Each line represents exactly *one* entry. When you try to reach **DOMAIN_NAME_1**, your browser will direct your request to **IP_ADDRESS_1**.
+
+The same applies for *each* entry in the **HOSTS** file. In the preceding example, entry number **4** starts with **#**. This is a syntax for **comment**.
+
+By **commenting** out certain entries you may disable them, without necessarily removing them from the **HOSTS** file.
 
 **playfab.example** is a valid **Domain Name**, but it is unlikely that your browser will reach any website with it. By adding the following entry to your **HOSTS** file, you will be able to reach your local **HTTP** server with that domain name.
 
@@ -96,9 +100,13 @@ Each line represents exactly *one* entry. When you try to reach **DOMAIN_NAME_1*
 
 ![HTTP server - Hello World](media/tutorials/http-server-hello-world.png)  
 
-On **Windows OS**, the **HOSTS** file is normally located at `C:\Windows\System32\drivers\etc\hosts`.
+On **Windows OS**, the **HOSTS** file is normally located at:
 
-On **Mac OS**, the **HOSTS** file is normally located at `/private/etc/hosts`.
+ `C:\Windows\System32\drivers\etc\hosts`.
+
+On **Mac OS**, the **HOSTS** file is normally located at:
+
+ `/private/etc/hosts`.
 
 > [!WARNING]
 > When entering your **Domain Name** in your browser address bar, always make sure to include the schema: http://playfab.example

@@ -14,15 +14,17 @@ ms.localizationpriority: medium
 
 ## Postman Overview
 
-Knowing how to manually call the **Web API** methods is invaluable when you are trying to integrate **PlayFab** with your game. If a function isn’t working out quite how you expect, being able to call it in a tool that shows you the specific response data and any error messages is a powerful way to debug those calls.
+Knowing how to manually call the **Web API** methods is invaluable when you are trying to integrate **PlayFab** with your game.
 
-There are a number of tools out there that make it easy to interact directly with a **Web API**, but one that we really like is the **Postman Chrome** plugin.
+If a function isn’t working out quite how you expect, being able to call it in a tool that shows you the specific response data and any error messages is a powerful way to debug those calls.
+
+There are a number of tools out there that make it easy to interact directly with a **Web API**, but one that we *really* like is the **Postman Chrome** plugin.
 
 This tutorial will guide you through setting up and using **Postman**.
 
 ### Disclaimer
 
-**Postman** is an **HTTP Request** tool useful to intermediate and advanced users. Before using it, you should be very familiar with the topics covered in our tutorial [Getting started with PlayFab](getting-started-with-playfab.md).
+**Postman** is an **HTTP Request** tool useful to intermediate and advanced **users**. Before using it, you should be very familiar with the topics covered in our tutorial [Getting started with PlayFab](getting-started-with-playfab.md).
 
 ### Initial Setup
 
@@ -40,7 +42,7 @@ This tutorial will guide you through setting up and using **Postman**.
 
    ![Postman - Manage Environment variables](media/tutorials/postman-manage-environment-variables.png)  
 
-**Postman** environments are a way to save key-value pairs which can be automatically injected into any portion of the HTML call.
+**Postman** environments are a way to save **Key Value Pairs** (**KVPs**) which can be automatically injected into any portion of the **HTML** call.
 
 If you have a look through our collection, you will see **{{____}}** variables in most of them. These act as a time saver, as well as an easy way to switch between different environments.
 
@@ -55,16 +57,16 @@ If you have a look through our collection, you will see **{{____}}** variables i
 
 If you *already* have an **Account**:
 
-- Select [Client\LoginWithPlayFab](xref:titleid.playfabapi.com.client.authentication.loginwithplayfab) (from the left hand **Postman** menu).
+- Select [Client\LoginWithPlayFab](xref:titleid.playfabapi.com.client.authentication.loginwithplayfab) (from the **Postman** menu on the left).
 - Update the body **JSON** with your credentials (*or* - *highly recommended* - add them as {{}} variables and use that).
 - Select the **Send** button.
 
    -OR-
 
-   Create a **New Player Account** by selecting: 
+Create a **New Player Account** by selecting:
 
-- [Client\RegisterPlayFabUser](xref:titleid.playfabapi.com.client.authentication.registerplayfabuser) (from the left hand **Postman** menu).
-- Update the body JS**ON with your credentials as above.
+- [Client\RegisterPlayFabUser](xref:titleid.playfabapi.com.client.authentication.registerplayfabuser) (from the **Postman** menu on the left).
+- Update the body **JSON** with your credentials as above.
 - Select the **Send** button.
 
    In either case, after sending the request, you should receive an **HTTP Status Code 200** (**success**) response, with a fresh **SessionTicket**.
@@ -72,11 +74,11 @@ If you *already* have an **Account**:
    ![Postman - Create Session Ticket - Success](media/tutorials/postman-create-session-ticket-success.png)  
 
    > [!NOTE]
-   > **PlayFab SessionTickets** will expire after 24 hrs. Beyond that time, you will need to re-authenticate and update your environment variable.
+   > **PlayFab SessionTickets** will expire after **24 hrs**. Beyond that time, you will need to re-authenticate and update your environment variable.
 
 Copy your **SessionTicket** and paste it into the corresponding environment variable. **Postman** also provides a convenient shortcut to this:
 
-- Just select the full text of the ticket (everything in the quote marks).
+- Just select the full text of the **Ticket** (everything in the quote marks).
 - Right-click and select **Set: [Environment]** for the environment you created to store your variables.
 - Select the **SessionTicket**.
 
