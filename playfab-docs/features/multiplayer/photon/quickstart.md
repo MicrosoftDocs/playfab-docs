@@ -419,7 +419,7 @@ You may acquire additional data about the **Event** using **args** argument. The
 
 ### Room Closed
 
-The **Room Closed** handler is invoked every time the last **Player** leaves the room and room has no **Players** left. The following **CloudScript** handler will intercept such event.
+The **Room Closed** handler is invoked every time the last **Player** leaves the room and room has no **Players** left. The following **CloudScript** handler will intercept such **Event**.
 
 ```javascript
 // Triggered automatically when a Photon room closes
@@ -429,7 +429,7 @@ handlers.RoomClosed = function (args) {
 };
 ```
 
-You may acquire additional data about the event using **args** argument. The example of **args** payload is shown below.
+You may acquire additional data about the **Event** using **args** argument. The example of **args** payload is shown below.
 
 ```javascript
   "ActorCount": 0,
@@ -450,7 +450,7 @@ You may acquire additional data about the event using **args** argument. The exa
 
 ### Room Property Updated
 
-**Room Property Updated** handler is invoked every time room property is changed. The following **CloudScript** handler will intercept such event.
+**Room Property Updated** handler is invoked every time the **Room Property** is changed. The following **CloudScript** handler will intercept such **Event**.
 
 ```javascript
 // Triggered automatically when a Photon room game property is updated.
@@ -463,7 +463,7 @@ handlers.RoomPropertyUpdated = function (args) {
 > [!NOTE]
 > The **currentPlayerId** is undefined in this handler. If the **Room** property was changed from the **Client**, you may use the **args** argument, and refer to the **UserId** to acquire the **Player** in charge.
 
-You may acquire additional data about the event using **args** argument. The example of **args** payload is shown below.
+You may acquire additional data about the **Event** using **args** argument. The example of **args** payload is shown below.
 
 ```javascript
 {
