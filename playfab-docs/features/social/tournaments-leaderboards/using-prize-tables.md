@@ -74,7 +74,7 @@ In the **Rank** form:
 
 - Verify that the **Rank from** field has a value of **1**.
 - Verify that the **To (inclusive)** field has a value of **2**.
-- In the **Type** drop-down mnu, choose “Grant virtual currency”.
+- In the **Type** drop-down menu, choose **Grant virtual currency**.
 - In the **Virtual currency code** drop-down menu, choose **GO (Gold)** with an amount of **10**.
 
 ![Game Manager - Leaderboards - Prize Table - Add Rank](media/tutorials/game-manager-prize-table-add-rank.png)  
