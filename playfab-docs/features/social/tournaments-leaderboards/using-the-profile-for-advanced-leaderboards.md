@@ -28,7 +28,7 @@ However, **PlayFab** also allows you to use [PlayerProfileViewConstraints](xref:
 
 ## Configuring Player Profile View constraints
 
-By default, the **Client API** may only fetch the **Display** name from another **Player** profile. In this example, we will allow *all* **Players** to access additional information about each other in the **Leaderboard**.
+By default, the **Client API** may only fetch the **Display** name from another **Player Profile**. In this example, we will allow *all* **Players** to access additional information about each other in the **Leaderboard**.
 
 By default, the **Client API** may only fetch the **Display** name from another **Player** profile. In this example, we will allow *all* **Players** to access additional information about *other* **Players** in the **Leaderboard**.
 
@@ -43,9 +43,9 @@ Navigate to your **Title Game Manager**:
 
 ## Testing
 
-The previous step allows **Client** code to use **DisplayName** and **AvatarUrl** profile constraints.
+The previous step allows **Client** code to use **DisplayName** and **AvatarUrl Profile** constraints.
 
-The following sample shows how to fetch and print a **Leaderboard** using any mentioned profile data. Please refer to the code comments for further information.
+The following sample shows how to fetch and print a **Leaderboard** using any mentioned **Profile** data. Please refer to the code comments for further information.
 
 ```csharp
 private static async Task DoReadLeaderboard()
