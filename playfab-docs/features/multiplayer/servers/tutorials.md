@@ -1,5 +1,5 @@
 ---
-title: Compute Tutorials
+title: Servers Tutorials
 author: v-thopra
 description: Overview page for tutorials about multiplayer topics.
 ms.author: v-thopra
@@ -10,7 +10,7 @@ keywords: playfab, multiplayer, servers, hosting
 ms.localizationpriority: medium
 ---
 
-# Compute Tutorials
+# Servers Tutorials
 
 The tutorials in this section walk you through multiplayer server topics.
 

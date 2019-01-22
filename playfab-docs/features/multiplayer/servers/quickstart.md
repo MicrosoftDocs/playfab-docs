@@ -1,7 +1,7 @@
 ---
-title: Server quickstarts
+title: Servers quickstarts
 author: v-thopra
-description: Multipler server quickstart topics.
+description: Servers quickstart topics.
 ms.author: v-thopra
 ms.date: 01/18/2019
 ms.topic: article
@@ -10,7 +10,7 @@ keywords: playfab. multiplayer, servers
 ms.localizationpriority: medium
 ---
 
-# Server quickstarts
+# Servers quickstarts
 
 The following topics help you get started quickly with multiplayer servers:
 

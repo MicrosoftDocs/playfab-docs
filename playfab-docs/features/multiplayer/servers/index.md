@@ -1,7 +1,7 @@
 ---
-title: Compute
+title: Servers
 author: v-thopra
-description: Landing page for Compute.
+description: Landing page for Servers.
 ms.author: v-thopra
 ms.date: 07/12/2018
 ms.topic: article
@@ -10,7 +10,7 @@ keywords: playfab. multiplayer, servers
 ms.localizationpriority: medium
 ---
 
-# Compute
+# Servers
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa tincidunt dui ut ornare lectus. Viverra vitae congue eu consequat ac felis donec. Leo urna molestie at elementum eu facilisis. A cras semper auctor neque vitae tempus quam. Amet cursus sit amet dictum sit amet justo donec enim. Faucibus turpis in eu mi bibendum neque egestas congue. Morbi quis commodo odio aenean sed adipiscing diam. Lectus vestibulum mattis ullamcorper velit. Dictum fusce ut placerat orci nulla pellentesque.
 

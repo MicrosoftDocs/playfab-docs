@@ -153,7 +153,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Concept: CloudScript</h3>
-                                                    <p>CloudScript is one of PlayFab's most powerful features. Learn all about running compute in the Cloud and building robust systems with PlayFab CloudScript.</p>
+                                                    <p>CloudScript is one of PlayFab's most powerful features. Learn all about running servers in the Cloud and building robust systems with PlayFab CloudScript.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -338,7 +338,7 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>Multiplayer</h3>
-                                                <p><a href='/gaming/playfab/features/multiplayer/compute/quickstart'>Compute</a></p><p><a href='/gaming/playfab/features/multiplayer/matchmaking/quickstart-unity'>Matchmaking</a></p><p><a href='/gaming/playfab/features/multiplayer/photon/quickstart'>Photon</a></p>
+                                                <p><a href='/gaming/playfab/features/multiplayer/servers/quickstart'>Servers</a></p><p><a href='/gaming/playfab/features/multiplayer/matchmaking/quickstart-unity'>Matchmaking</a></p><p><a href='/gaming/playfab/features/multiplayer/photon/quickstart'>Photon</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -746,12 +746,12 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/gaming/playfab/features/media/feature-compute.svg" alt="PlayFab Multiplayer Features: Compute card image" />
+                                                    <img src="/gaming/playfab/features/media/feature-compute.svg" alt="PlayFab Multiplayer Features: Servers card image" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3>Compute</h3>
-                                                <p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/multiplayer/compute/'>Overview</a></p><p><a href='/gaming/playfab/features/multiplayer/compute/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/multiplayer/compute/tutorials'>Tutorials</a></p>
+                                                <h3>Servers</h3>
+                                                <p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/multiplayer/servers/'>Overview</a></p><p><a href='/gaming/playfab/features/multiplayer/servers/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/multiplayer/servers/tutorials'>Tutorials</a></p>
                                             </div>
                                         </div>
                                     </div>

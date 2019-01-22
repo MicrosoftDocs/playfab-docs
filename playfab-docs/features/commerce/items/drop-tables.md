@@ -185,7 +185,7 @@ This **Bundle** area uses several features:
 
 A **Drop Table** generates a single **Item** randomly from a list of potential **Items** and weights. **Bundles** and **Containers** can be one of the simplest ways to deliver one or more **Items** to a **Player** using **Drop Tables**.
 
-You can manually use a **Drop Table** from a [Custom Game Server](../../multiplayer/compute/custom-game-servers.md) or [CloudScript](../../automation/cloudscript/writing-custom-cloudscript.md), using one of the two **Server API** methods:
+You can manually use a **Drop Table** from a [Custom Game Server](../../multiplayer/servers/custom-game-servers.md) or [CloudScript](../../automation/cloudscript/writing-custom-cloudscript.md), using one of the two **Server API** methods:
 
 - [GetRandomResultTables](xref:titleid.playfabapi.com.server.playeritemmanagement.getrandomresulttables)
 

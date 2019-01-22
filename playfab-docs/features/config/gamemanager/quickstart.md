@@ -198,7 +198,7 @@ The servers section of the **Game Manager** has two major roles:
 **Additional Information:**
 
 - [CloudScript Quickstart](../../automation/cloudscript/quickstart.md)
-- [Building Custom Game Servers Tutorial](../../multiplayer/compute/custom-game-servers.md)
+- [Building Custom Game Servers Tutorial](../../multiplayer/servers/custom-game-servers.md)
 
 [Back to Game Manager Sections](#game-manager-sections)
 

@@ -47,7 +47,7 @@ In this example, the **LogSuccess** callback must also evaluate [result.Trade](x
 
 If not saved, it will not be possible for the second **Player** to evaluate or accept the **Trade**.
 
-**Thread-Safe** options include [custom game servers](../../multiplayer/compute/custom-game-servers.md) and [making Webhook calls from CloudScript](../../automation/cloudscript/making-webhook-calls-from-cloudscript.md) to an external database/system.
+**Thread-Safe** options include [custom game servers](../../multiplayer/servers/custom-game-servers.md) and [making Webhook calls from CloudScript](../../automation/cloudscript/making-webhook-calls-from-cloudscript.md) to an external database/system.
 
 **Thread-Unsafe** options can be built with **CloudScript**, which directly modifies a [Player Data](../../data/playerdata/quickstart.md) **Key**. The latter option has concurrency issues where simultaneous trade-list-updates may not process correctly, but this issue can be worked around (This is an advanced topic for a future guide).
 

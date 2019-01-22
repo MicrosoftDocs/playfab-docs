@@ -52,7 +52,7 @@ sections:
         src: "/gaming/playfab/media/quickstart-multiplayer.svg"
         text: "PlayFab Quickstarts: Multiplayer card image"        
       title: "Multiplayer"
-      html: "<p><a href='/gaming/playfab/features/multiplayer/compute/quickstart'>Compute</a></p><p><a href='/gaming/playfab/features/multiplayer/matchmaking/quickstart-unity'>Matchmaking</a></p><p><a href='/gaming/playfab/features/multiplayer/photon/quickstart'>Photon</a></p>"
+      html: "<p><a href='/gaming/playfab/features/multiplayer/servers/quickstart'>Servers</a></p><p><a href='/gaming/playfab/features/multiplayer/matchmaking/quickstart-unity'>Matchmaking</a></p><p><a href='/gaming/playfab/features/multiplayer/photon/quickstart'>Photon</a></p>"
     - image:
         src: "/gaming/playfab/media/quickstart-analytics.svg"
         text: "PlayFab Quickstarts: Analytics card image"        
