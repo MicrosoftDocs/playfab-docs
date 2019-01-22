@@ -49,7 +49,7 @@ To set up the **Statistics**, you can use the **Admin CreatePlayerStatisticDefin
 
 In both cases, there are only two parameters:
 
-- **StatisticName** - The string identifier for the **Player** statistic.
+- **StatisticName** - The string identifier for the **Player Statistic**.
 - **VersionChangeInterval** - The period defining when the **Statistics** should be automatically reset.
 
 The **VersionChangeInterval** is the key to this feature, and it can be defined as **hourly**, **daily**, **weekly**, or **monthly**. It can also be set to **Never**, if you decide later that you no longer want the **Statistic** to reset on a regular basis.
