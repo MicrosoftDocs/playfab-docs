@@ -16,7 +16,7 @@ This tutorial illustrates how you can access archived **Leaderboard** states.
 
 Each **Leaderboard** can be reset manually or automatically - meaning statistic values will be removed for all the **Players**, leading to a *clear* state and the **Leaderboard** version will be implemented.
 
-Before that happens, however, **PlayFab** creates a snapshot of all the **Leaderboard** statistic values for each player. This allows you to access this *archived* version of the **Leaderboard**.
+Before that happens, however, **PlayFab** creates a snapshot of all the **Leaderboard Statistic** values for each **Player**. This allows you to access this *archived* version of the **Leaderboard**.
 
 > [!NOTE]
 > **PlayFab** free tier only allows access to the most recently archived version of a **Leaderboard**, effectively giving you the current and the most previous versions. For example, with a free tier, if your current **Leaderboard** version is **3**, you may only access version **3** and archived version **2**.
@@ -56,9 +56,9 @@ You will end up on the new **Leaderboards** page which will, obviously, render b
 > [!IMPORTANT]
 > The following section is an example of how to populate test data for the purpose of this example. Your *real* game will populate this data in a more natural way.
 
-Our next step is simulating some data for our **Leaderboard**. The quickest way to do this is to create a **CloudScript** handler, which will set random statistics for a given **Player**. We will invoke this handler for every **Player** over the **All Players** segment.
+Our next step is simulating some data for our **Leaderboard**. The quickest way to do this is to create a **CloudScript** handler, which will set random statistics for a given **Player**. We will invoke this handler for every **Player** over the **All Players Segment**.
 
-As a result, each **Player** will get a random statistic value, which is a *good enough* approximation of a real world scenario.
+As a result, each **Player** will get a random **Statistic** value, which is a *good enough* approximation of a real world scenario.
 
 Let's start with defining our **CloudScript** (refer to the code comments for further information).
 
@@ -97,16 +97,16 @@ Let's upload the **CloudScript**. Using **Game Manager**:
 
 ![Game Manager - Automation - CloudScript - upload CloudScript](media/tutorials/game-manager-automation-cloudscript-upload-cloudscript.png)  
 
-Next, we need to define a task to execute our **CloudScript** over a specific segment:
+Next, we need to define a task to execute our **CloudScript** over a specific **Segment**:
 
 - Navigate to the **Players** tab **(1)**.
 - Then, navigate to the **Segments** sub-tab **(2)**.
-- By default, **PlayFab** generates an **All Players** segment for you. This segment is specifically useful when you need all **Players** registered in your **Title** (which is exactly our case).
-- Select the **All Players** segment **(3)**.
+- By default, **PlayFab** generates an **All Players** segment for you. This **Segment** is specifically useful when you need all **Players** registered in your **Title** (which is exactly our case).
+- Select the **All Players Segment (3)**.
 - Finally, select **Run Task... (4)**.
 
 > [!NOTE]
-> If you have no **All Players** segment in the list, please, refer to our [Player Segmentation](../../analytics/segmentation/player-segmentation.md) tutorial to create one.
+> If you have no **All Players Segment** in the list, please, refer to our [Player Segmentation](../../analytics/segmentation/player-segmentation.md) tutorial to create one.
 
 ![Game Manager - Players - Segments - All Players - Run Task](media/tutorials/game-manager-players-segments-all-players-run-task.png)  
 
@@ -140,7 +140,7 @@ To configure the **Task**:
 
 ![Reset the Test Score Leaderboard](media/tutorials/reset-the-test-score-leaderboard.png)  
 
-This will create a snapshot of all the data we currently have, and then it will *nullify* statistics values on every **Player** and increment the version.
+This will create a snapshot of all the data we currently have, and then it will *nullify* **Statistics** values on every **Player** and increment the version.
 
 - Once your **Leaderboard** is reset, run the **CloudScript** task again.
 - Repeat this 2-3 times, then reset and repopulate.
