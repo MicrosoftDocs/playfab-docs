@@ -25,7 +25,7 @@ We will illustrate how both features work using the latest [Photon Unity example
 2. The **PlayFab Title** registered.
 
 > [!NOTE]  
-> This guide omits the **Chat** application settings. For your **Chat Application** to be integrated, create a new **Photon Chat Application**, and enter the **App ID** in the corresponding boxes in **Unity** and in the **PlayFab Game Manager** - **Photon Add-on** page.
+> This guide omits the **Chat Application** settings. For your **Chat Application** to be integrated, create a new **Photon Chat Application**, and enter the **App ID** in the corresponding boxes in **Unity** and in the **PlayFab Game Manager** - **Photon Add-on** page.
 
 ## Setting up a Photon Application
 
