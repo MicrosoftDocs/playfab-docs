@@ -50,7 +50,7 @@ Find the newly created **Application** in the list and select **Manage (1)**.
 
 - The **Application** dashboard will open.
 
-- Find and save the **App ID (1)** located under the page title.
+- Find and save the **App ID (1)** located under the page **Title**.
 
 ![Save the App ID](media/tutorials/photon-save-app-id.png)  
 
@@ -77,16 +77,16 @@ Enter the **URL (1)** and submit by selecting the **Create** button **(2)**.
 
 ## Setting up a PlayFab Title for Photon
 
-Navigate to your title's Game Manager page, then:
+Navigate to your **Title's Game Manager** page, then:
 - Navigate to **Add-ons** tab **(1)**.
-- In the list of add-ons find and select **Photon (2)**, as shown in the example provided below.
+- In the list of **Add-ons**, find and select **Photon (2)**, as shown in the example provided below.
 
 ![Game Manager Add-ons tab](media/tutorials/photon-game-manager-addons-tab.png)  
 
 The **Photon Add-on** page will allow you to install **Photon** by specifying your **Photon Realtime Application ID (1)**.
 
 - Optionally, you may specify **Chat App ID**.
-- Once you install the add-on **(3)**, a **Photon secret Key** will be generated **(2)**.
+- Once you install the **Add-on (3)**, a **Photon secret Key** will be generated **(2)**.
 - Save it for future use when configuring web-hooks. 
 
 > [!NOTE]
@@ -141,13 +141,13 @@ The guide assumes you already have **PlayFab SDK** imported, set up, and **Title
 
 Right after import process finishes, the **PUN Setup** window will open.
 
-- Enter your **Realtime Application ID (1)** found in the Photon Application Dashboard for the Photon app you created.
-- Click **Setup Project (2)**.
-- Once the setup finishes, press **Close (3)**.
+- Enter your **Realtime Application ID (1)** found in the **Photon Application Dashboard** for the **Photon App** you created.
+- Select **Setup Project (2)**.
+- Once the setup finishes, select **Close (3)**.
 
 ![PUN setup](media/tutorials/photon-pun-setup.png)  
 
-If **AppId** was accepted, the Photon Server Settings object will be selected and viewable in the Unity Inspector window. To manually access the Server Settings object:
+If **AppId** was accepted, the **Photon Server Settings** object will be selected and viewable in the **Unity Inspector** window. To manually access the **Server Settings** object:
 
 - Navigate to the top window panel.
 - Select **Window**.
@@ -165,19 +165,19 @@ At this point the project is configured.
 
 ## Implementing PlayFab to Photon authentication
 
-When you enable the **Photon Add-on** for your **Title** in the PlayFab Game Manager, and configure the authentication on the **Photon Application Dashboard**, **PlayFab** allows you to authenticate existing **PlayFab Players** inside the **Photon** environment.
+When you enable the **Photon Add-on** for your **Title** in the **PlayFab Game Manager**, and configure the authentication on the **Photon Application Dashboard**, **PlayFab** allows you to authenticate existing **PlayFab Players** inside the **Photon** environment.
 
-This means you may completely avoid implementing any user management for Photon.
+This means you may completely avoid implementing any user management for **Photon**.
 
-- Navigate to **DemoHub-Scene-V2** scene **(1)** from the **Photon Unity Networking Free** package, the Classic version.
+- Navigate to **DemoHub-Scene-V2** scene **(1)** from the **Photon Unity Networking Free** package, the **Classic** version.
 - This scene is a hub for all the examples from the package.
 - As it is the *first* scene to load, let's add a small script to enable authenticating **PlayFab** with **Photon**.
 - Create an empty **GameObject** called **PlayFabAuthenticator (2)**.
-- Then in the Unity Inspector window, add a component with the same name to this **GameObject (3)**.
+- Then in the **Unity Inspector** window, add a component with the same name to this **GameObject (3)**.
 
 ![Add authentication component](media/tutorials/photon-add-authentication-component.png)
 
-Click on the gear icon and from the drop-down menu choose to edit the script. Copy and paste the code for the **PlayFabAuthenticator** component as illustrated below (please, read the comments for the explanation), and save and close the file.
+Select the gear icon, then choose to edit the script from the drop-down menu. Copy and paste the code for the **PlayFabAuthenticator** component as illustrated below (please, read the comments for the explanation), and save and close the file.
 
 ```csharp
 using PlayFab;
@@ -278,7 +278,7 @@ The following picture illustrates the correct flow.
 
 ![Start the scene](media/tutorials/photon-start-the-scene.png)  
 
-For example, we can start a demo called **Demo Boxes**. Click **Load Demo (2)**, as shown in the picture below.
+For example, we can start a demo called **Demo Boxes**. Select **Load Demo (2)**, as shown in the picture below.
 
 Once the **Photon** token has been acquired, and authentication is complete, we are okay to check out the **Photon** demos.
 
