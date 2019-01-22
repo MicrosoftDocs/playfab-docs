@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 With **PlayFab**, you usually construct **Leaderboards** using the following **API** methods:
 
-- **[GetFriendLeaderboard]**(xref:titleid.playfabapi.com.client.playerdatamanagement.getfriendleaderboard)
+- [**GetFriendLeaderboard**](xref:titleid.playfabapi.com.client.playerdatamanagement.getfriendleaderboard)
 - [GetFriendLeaderboardAroundPlayer](xref:titleid.playfabapi.com.client.playerdatamanagement.getfriendleaderboardaroundplayer)
 - [GetLeaderboard](xref:titleid.playfabapi.com.client.playerdatamanagement.getleaderboard)
 - [GetLeaderboardAroundPlayer](xref:titleid.playfabapi.com.client.playerdatamanagement.getleaderboardaroundplayer)
