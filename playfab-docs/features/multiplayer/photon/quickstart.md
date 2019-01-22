@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 This quickstart shows how to set up **Photon Multiplayer** to work with **PlayFab**. Currently, **PlayFab** offers the following **Photon** integrations:
 
-- Authenticate Photon players with **PlayFab**.
+- Authenticate **Photon Players** with **PlayFab**.
 - Listen for room events using **PlayFab CloudScript** callbacks.
 
 We will illustrate how both features work using the latest [Photon Unity example project](https://www.assetstore.unity3d.com/en/#!/content/1786).
