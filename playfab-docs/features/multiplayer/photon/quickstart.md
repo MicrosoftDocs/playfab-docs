@@ -278,8 +278,6 @@ The following picture illustrates the correct flow.
 
 ![Start the scene](media/tutorials/photon-start-the-scene.png)  
 
-For example, we can start a demo called **Demo Boxes**. Select **Load Demo (2)**, as shown in the picture below.
-
 Once the **Photon** token has been acquired, and authentication is complete, we are okay to check out the **Photon** demos.
 
 For example, start a demo called **Demo Boxes**. Ensure that the **PlayFab** authentication is complete, select **Demo Boxes (1)**, then select **Load Demo (2)**, as shown on the following picture.
