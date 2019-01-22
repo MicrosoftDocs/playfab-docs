@@ -143,8 +143,8 @@ Frictionless login **APIs**: Your frictionless logins all have a request paramet
 
 Examples:
 
-- [**AndroidRequest**](xref:titleid.playfabapi.com.client.authentication.loginwithandroiddeviceid).CreateAccount
-- [**IosRequest**](xref:titleid.playfabapi.com.client.authentication.loginwithiosdeviceid).CreateAccount. Select **true** or **false** for this property with the following guidelines:
+- [**AndroidRequest**](xref:titleid.playfabapi.com.client.authentication.loginwithandroiddeviceid)**.CreateAccount**
+- [**IosRequest**](xref:titleid.playfabapi.com.client.authentication.loginwithiosdeviceid)**.CreateAccount**. Select **true** or **false** for this property with the following guidelines:
 
 **On startup**:
 
