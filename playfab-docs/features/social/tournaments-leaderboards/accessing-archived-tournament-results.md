@@ -1,5 +1,5 @@
 ---
-title: Accessing Archived Tournament Results
+title: Accessing Archived Tournament results
 author: v-thopra
 description: Describes how to access archived leaderboard states.
 ms.author: v-thopra
@@ -10,7 +10,7 @@ keywords: playfab, social, tournaments, leaderboards
 ms.localizationpriority: medium
 ---
 
-# Accessing Archived Tournament Results
+# Accessing Archived Tournament results
 
 This tutorial illustrates how you can access archived **Leaderboard** states.
 
