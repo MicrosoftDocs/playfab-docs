@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 We have restructured the **APIs** that were lumped under the **Entity API Group** into coherent logical **Groups** that make their consumption easier, both via the [documentation site](../../../api-references/index.md), and the [SDKs](../../../index.md?#pivot=documentation&panel=sdks).
 
-The immediate impact is that if you have been using the **Entity**-based **APIs** in your **Game**, the code will need to be updated when you upgrade your **SDKs**.
+The immediate impact is that if you have been using the **Entity**-based **APIs** in your game, the code will need to be updated when you upgrade your **SDKs**.
 
 ## Prerequisites
 
@@ -30,7 +30,7 @@ The following conditions must be true for this upgrade guide to apply to you:
 
 ## How to upgrade
 
-The fundamental impact of this change is that the P**layFabEntityModel API Group** has been separated out into six different **API Groups** that are logically bound together, as shown in the following picture.
+The fundamental impact of this change is that the **PlayFabEntityModel API Group** has been separated out into six different **API Groups** that are logically bound together, as shown in the following picture.
 
 ![Changes to PlayFabEntityModel API group](media/tutorials/changes-to-playfabentitymodel-api-group.png)
 
@@ -45,7 +45,7 @@ The next section will walk you through an example of upgrading a **C# SDK** usin
 
 Please follow these steps to upgrade your **Application**.
 
-**Step 1**: Change any `using` statements that reference **PlayFab.EntityModels** such as thse shown below.
+**Step 1**: Change any `using` statements that reference **PlayFab.EntityModels** such as those shown below.
 
 ```csharp
 using PlayFab.EntityModels;
