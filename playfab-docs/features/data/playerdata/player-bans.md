@@ -10,17 +10,17 @@ keywords: playfab, game manager, bans
 ms.localizationpriority: medium
 ---
 
-# Player Ban system
+# Player ban system
 
-The **Player Ban** feature allows you to restrict access to the game for certain **Player** that break the rules. **Bans** can be temporary or permanent.
+The player ban feature allows you to restrict access to the game for certain player that break the rules. Bans can be temporary or permanent.
 
-The following tutorial shows you how to utilize the **Ban** system using the **PlayFab API** and **Game Manager**.
+The following tutorial shows you how to utilize the ban system using the PlayFab **API** and Game Manager.
 
 ## Identify
 
-While your game may have a custom system to identify cheaters and rule-breakers, **PlayFab** offers a **Player**-to-**Player** reporting mechanism. In essence, you rely on your **Players** to report other problematic **Players**.
+While your game may have a custom system to identify cheaters and rule-breakers, PlayFab offers a player-to-player reporting mechanism. In essence, you rely on your players to report other problematic players.
 
-Use the following snippet in your **Client** code to let the **Client** report a specific **Player**.
+Use the following snippet in your client code to let the client report a specific player.
 
 ```csharp
 public void ReportPlayer(string problematicPlayerId, string reason) {
@@ -45,9 +45,9 @@ This **API** call will produce:
 
 ![Game Manager - Analytics - Event History](media/tutorials/game-manager-event-history-player-reported-as-abusive.png)  
 
-## Applying Bans
+## Applying bans
 
-Once the problematic **Player** is identified, you may apply a **Ban**. A community management rep may also apply a **Ban** using **Game Manager**.
+Once the problematic player is identified, you may apply a ban. A community management rep may also apply a ban using Game Manager.
 
 - Navigate to the **Players** tab **(1)**.
 - Locate the problematic **Player (2)**.
@@ -92,15 +92,15 @@ public void AddBan(string playerId, uint hours) {
 }
 ```
 
-**Bans** applied via code will also be displayed in the table of **Bans** for the target **Player** in **Game Manager**.
+Bans applied via code will also be displayed in the table of bans for the target player in Game Manager.
 
 > [!NOTE]
-> The **PlayFab Server SDK** methods provide more options, such as **IP** and **MAC** address **Bans**.
+> The PlayFab server **SDK** methods provide more options, such as **IP** and **MAC** address bans.
 
 > [!NOTE]
-> You can use **CloudScript** functions as part of an automated system that may **Ban** a **Player**. To find out more about **CloudScript**, see our tutorial [Writing Custom CloudScript](../../automation/cloudscript/writing-custom-cloudscript.md).
+> You can use **CloudScript** functions as part of an automated system that may ban a player. To find out more about **CloudScript**, see our tutorial [Writing Custom CloudScript](../../automation/cloudscript/writing-custom-cloudscript.md).
 
-Each **Ban** you apply gets an assigned **ID**. Consider the following **Server SDK API** methods for precise **Ban** management:
+Each ban you apply gets an assigned ID. Consider the following **Server SDK API** methods for precise ban management:
 
 - [GetUserBans](xref:titleid.playfabapi.com.server.accountmanagement.getuserbans)
 - [RevokeAllBansForUser](xref:titleid.playfabapi.com.server.accountmanagement.revokeallbansforuser)

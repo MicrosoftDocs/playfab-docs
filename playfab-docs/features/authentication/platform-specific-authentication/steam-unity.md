@@ -12,21 +12,21 @@ ms.localizationpriority: medium
 
 # Setting up PlayFab authentication using Steam and Unity
 
-This tutorial guides you through the steps for logging into **PlayFab** using **Steam** through **SteamWorks** and **Unity**.
+This tutorial guides you through the steps for logging into PlayFab using **Steam** through **SteamWorks** and **Unity**.
 
 ## Prerequisites
 
 Before beginning, you should have:
 
-- A **Unity Project** with an imported **PlayFab SDK** and a configured **Title ID**.
+- A **Unity Project** with an imported PlayFab SDK and a configured title ID.
 - A **Steam Application** with:
   - The **AppID** already set up. The **AppID** is usually acquired through the [Steam Direct (Formerly Greenlight)](https://partner.steamgames.com/steamdirect) process.
-  - A **Steam Publisher Web API Key**. Follow [Creating a Publisher Web API Key](https://partner.steamgames.com/doc/webapi_overview/auth#create_publisher_key) in the Steamworks Documentation to generate a **Publisher Key**.
+  - A **Steam Publisher Web API Key**. Follow [Creating a Publisher Web API Key](https://partner.steamgames.com/doc/webapi_overview/auth#create_publisher_key) in the **Steamworks** documentation to generate a publisher key.
 - Familiarity with [Login basics and Best Practices](../../authentication/platform-specific-authentication/login-basics-best-practices.md).
 
 ## Setting up a PlayFab Title
 
-To enable support for **Steam** authorization, **PlayFab** requires you to enable the **Steam** add-on.
+To enable support for **Steam** authorization, PlayFab requires you to enable the **Steam** add-on.
 
 - Go to your **Game Manager** page.
 - Select the **Add-ons** menu item **(1)**.
@@ -40,7 +40,7 @@ To enable support for **Steam** authorization, **PlayFab** requires you to enabl
 
 ![Game Manager install Steam Add-on](media/tutorials/steam-unity/game-manager-install-steam-addon.png)  
 
-This concludes setting up a **PlayFab Title** for **Steam** integration.
+This concludes setting up a PlayFab title for **Steam** integration.
 
 ## Setting up a Unity project
 

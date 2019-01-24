@@ -12,21 +12,21 @@ ms.localizationpriority: medium
 
 # Setting up PlayFab authentication in Phaser.io
 
-[Phaser.io](https://phaser.io/) is a desktop and mobile **HTML5** game framework that **PlayFab** now supports in our **Javascript SDK**.
+[Phaser.io](https://phaser.io/) is a desktop and mobile **HTML5** game framework that PlayFab now supports in our **Javascript SDK**.
 
-Phaser.io supports plugins, so we at **PlayFab** thought that it would be useful for the Phaser.io community to have a powerful back end system that works as a plugin to the Phaser.io engine.
+Phaser.io supports plugins, so we at PlayFab thought that it would be useful for the Phaser.io community to have a powerful back end system that works as a plugin to the Phaser.io engine.
 
-This tutorial guides you through the procedure for setting up Phaser.io, and getting started with **PlayFab** within Phaser.io.
+This tutorial guides you through the procedure for setting up Phaser.io, and getting started with PlayFab within Phaser.io.
 
 ## Requirements
 
 - Knowledge of **JavaScript**.
-- Knowledge of setting up a **Web Server**.
+- Knowledge of setting up a web server.
 - General understanding of Phaser.io (a plus!).
 
-## Setting up a Web Server using MAMP
+## Setting up a web server using MAMP
 
-To serve **HTML** pages to your browser you will need a **Web Server**. We use [MAMP / MAMP Pro](https://www.mamp.info/en/), but you can use whatever you are most comfortable with.
+To serve **HTML** pages to your browser you will need a web server. We use [MAMP / MAMP Pro](https://www.mamp.info/en/), but you can use whatever you are most comfortable with.
 
 To begin:
 
@@ -98,11 +98,11 @@ You should now see that Phaser.io has initialized a blank canvas (like that show
 
 ## Adding PlayFab and Phaser Plugin
 
-The **PlayFab Javascript SDK** will now auto-detect if you have **Phaser** loaded on the webpage, and inject itself into it as a **Phaser Plugin**. 
+The PlayFab **Javascript SDK** will now auto-detect if you have **Phaser** loaded on the webpage, and inject itself into it as a **Phaser Plugin**. 
 
 There are only two lines of code needed to make this happen:
   
-1. Add the script tag to load **PlayFab** just after loading **Phaser**.
+1. Add the script tag to load PlayFab just after loading **Phaser**.
 
 ![Add Script tag to load PlayFab](media/tutorials/phaser-io/load-playfab.png)
 
@@ -116,7 +116,7 @@ function create() {
 
 ## Making your first API call
 
-Now that you have **PlayFab** installed as a plugin to **Phaser**, you can set your **PlayFab title ID** and make **API** calls. 
+Now that you have PlayFab installed as a plugin to **Phaser**, you can set your PlayFab title ID and make **API** calls.
 
 The code presented below shows you how to log in a **Player**.
 
