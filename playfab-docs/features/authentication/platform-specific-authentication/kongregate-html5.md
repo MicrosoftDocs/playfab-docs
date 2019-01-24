@@ -12,18 +12,18 @@ ms.localizationpriority: medium
 
 # Setting up PlayFab authentication using Kongregate and HTML5
 
-This tutorial shows you the minimal setup required to authenticate your **Players** in **PlayFab** using **Kongregate** and **HTML5/JavaScript**.
+This tutorial shows you the minimal setup required to authenticate your players in PlayFab using **Kongregate** and **HTML5/JavaScript**.
 
 ## Requirements
 
 - A registered [Kongregate](https://www.kongregate.com/) account.
   - Familiarity with the [Kongregate Developers Guide](https://developers.kongregate.com/docs/api-overview/intro).
-- A registered **PlayFab Title**.
+- A registered PlayFab title.
 - Familiarity with [Login basics and Best Practices](../../authentication/platform-specific-authentication/login-basics-best-practices.md).
 
-## Setting up a Kongregate App
+## Setting up a Kongregate app
 
-**Kongregate** requires you to upload a preview version of the **App**, before you gain access to the necessary **API** information.
+**Kongregate** requires you to upload a preview version of the app, before you gain access to the necessary **API** information.
 
 To do this, we need to prepare an **index.html** file with the following content.
 
@@ -38,6 +38,7 @@ To do this, we need to prepare an **index.html** file with the following content
 ```
 
 Navigate to the [Kongregate website](https://www.kongregate.com/):
+
 - Select the **Games** tab **(1)**.
 - Then select the **Upload your game** button **(2)**.
 
@@ -72,7 +73,7 @@ You will be moved to the **Application Upload** page.
 
 ## Configuring PlayFab title
 
-In your **PlayFab Title Game Manager**:
+In your PlayFab Title Game Manager:
 
 - Navigate to **Add-ons (1)**.
 - Then locate and select **Kongregate (2)**, as shown in the example provided below.
@@ -184,7 +185,7 @@ Use the example code shown below to populate the **index.html** for your game.
 Remember that **URL** we asked you to save in a safe and accessible place a little earlier?  Use it now to access your **Application Upload** page.
 
 - Select **index.html** as your **Game File (1)**.
-- Set up the screen size **(2)**. 
+- Set up the screen size **(2)**.
 - Make sure to accept all the required licenses **(3)**.
 - Upload your **Application** by selecting the **Upload** button **(4)**.
 

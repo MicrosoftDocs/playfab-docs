@@ -12,20 +12,20 @@ ms.localizationpriority: medium
 
 # Setting up PlayFab authentication using Facebook and Unity
 
-This tutorial guides you through an example of **PlayFab** authentication using **Facebook** and **Unity**.
+This tutorial guides you through an example of PlayFab authentication using **Facebook** and **Unity**.
 
 ## Requirements
 
-- [Unity 5+](https://unity3d.com/) and a created **Project**.
+- [Unity 5+](https://unity3d.com/) and a created project.
 - [Facebook account](https://www.facebook.com/) for testing.
 - [Facebook SDK](https://developers.facebook.com/docs/unity/) imported into the project.
 - Registered [PlayFab](https://playfab.com/) Title.
-- [PlayFab SDK](https://api.playfab.com/downloads/unity-v2ap) imported into the **Project** with a configured title reference.
+- [PlayFab SDK](https://api.playfab.com/downloads/unity-v2ap) imported into the project with a configured title reference.
 - Familiarity with [Login basics and Best Practices](../../authentication/platform-specific-authentication/login-basics-best-practices.md).
 
 ## Implementation
 
-### Registering a Facebook Application
+### Registering a Facebook application
 
 Start by navigating to the [Facebook Developer Portal](https://developers.facebook.com/):
 - Move your mouse over the **My Apps** button **(1)**.
@@ -54,7 +54,7 @@ We will use it later to set up the **Facebook SDK**.
 
 - Navigate to the [Facebook Access Token Tool](https://developers.facebook.com/tools/accesstoken/).
 - Locate your **App** in the list **(1)**.
-- Verify that it has an assigned **User Token (2)**. 
+- Verify that it has an assigned **User Token (2)**.
 
 > [!NOTE]
 > If you *do not* have an assigned **User Token**, request one using the button to the right of your screen. Refer to this page whenever you need a fresh **User Token**. If authorization fails during testing on a PC, **Token** expiration may be the most likely reason. Refresh the page to get a new **User Token** and test again.
@@ -212,7 +212,7 @@ Before launching the application on **Android**, you are required to perform add
 > [!TIP]
 > **Optional step**:  Install [Open SSL](https://wiki.openssl.org/index.php/Binaries) and add it to the **PATH** environment variable. If it is missing, **Unity** will produce a harmless error during build. This error does *not* stop the build or effect the execution.
 
-Next, in your **Facebook Application** Console:
+Next, in your **Facebook Application** console:
 
 - Navigate to **Basic** settings **(1)**.
 - Select **+ Add Platform (2)**, as indicated in the example provided below.
@@ -240,9 +240,9 @@ Build and run the **Application** normally on your **Android** Device.
 
 ### Running the Application on iOS
 
-Before launching the **Application** on iOS, you have to perform additional configuration steps.
+Before launching the **Application** on **iOS**, you have to perform additional configuration steps.
 
-- First, you must ensure you have the iOS platform selected **(1)**.
+- First, you must ensure you have the **iOS** platform selected **(1)**.
 - And a unique **Bundle ID** set **(4)** as indicated in the example provided below.
 - Please make sure to create your own *unique* **Package ID**.
 
@@ -284,20 +284,20 @@ A panel with platform-specific settings will appear.
 
 ![iOS project settings: select Identity Team](media/tutorials/facebook-unity/ios-project-settings-select-identity-team.png)
 
-Finally, run the **Application** as normal.
+Finally, run the application as normal.
 
-- Once started, the **Application** will allow you to log in to **Facebook** using the web-browser.
-- Once done, **PlayFab** authentication will be invoked, and a message will indicate the result.
+- Once started, the application will allow you to log in to **Facebook** using the web browser.
+- Once done, PlayFab authentication will be invoked, and a message will indicate the result.
 
 ![PlayFab Facebook authentication on iOS](media/tutorials/facebook-unity/playfab-facebook-auth-on-ios.png)
 
 ### Checking through PlayFab Game Manager
 
-Open your **PlayFab Title** in **Game Manager**.
+Open your **PlayFab** title in Game Manager.
 
 - Navigate to the dashboard.
-- Refer to the **PlayStream Debugger** panel to check for the latest **Events**. You should see the **Facebook** authentication event as displayed in the following example.
+- Refer to the **PlayStream Debugger** panel to check for the latest events. You should see the **Facebook** authentication event as displayed in the following example.
 
 ![PlayStream Debugger Facebook authentication event](media/tutorials/facebook-unity/playfab-facebook-auth-event.png)
 
-At this point you have successfully integrated **Facebook Authentication** for **PlayFab**.
+At this point you have successfully integrated **Facebook Authentication** for PlayFab.

@@ -12,22 +12,22 @@ ms.localizationpriority: medium
 
 # Setting up PlayFab authentication using Google and HTML5
 
-This tutorial guides you through the process of **PlayFab** authentication using **Google** and **HTML5/JavaScript**.
+This tutorial guides you through the process of PlayFab authentication using **Google** and **HTML5/JavaScript**.
 
 ## Requirements
 
 You will need:
 
 - A [Google account](https://google.com/) for testing.
-- A Registered [PlayFab](https://playfab.com/) **Title**.
+- A Registered [PlayFab](https://playfab.com/) title.
 - Familiarity with [Login basics and Best Practices](../../authentication/platform-specific-authentication/login-basics-best-practices.md).
 - At the minimum, a server with a valid domain name to act as a static **HTML** file. Consult the [Running an HTTP server for testing](../../config/dev-test-live/running-an-http-server-for-testing.md) tutorial for information on how to set one up.
 
 ## Server and Domain
 
-This guide requires a **Server** with a valid **Domain** to follow. If you do not have a registered **Domain** and remote **Web Server** yet, please follow our [Running an HTTP server for testing](../../config/dev-test-live/running-an-http-server-for-testing.md) tutorial for information on how to set one to run a local **Web Server** with a valid **Domain** name. Throughout this guide, we will assume your **Domain** is [http://playfab.example](http://playfab.example).
+This guide requires a server with a valid domain to follow. If you do not have a registered domain and remote web server yet, please follow our [Running an HTTP server for testing](../../config/dev-test-live/running-an-http-server-for-testing.md) tutorial for information on how to set one to run a local web server with a valid domain name. Throughout this guide, we will assume your domain is [http://playfab.example](http://playfab.example).
 
-## Registering a Google API Project
+## Registering a Google API project
 
 Start by navigating to the [Google API Console](https://console.developers.google.com/):
 
@@ -41,11 +41,11 @@ Start by navigating to the [Google API Console](https://console.developers.googl
 ![Google API Manager new project](media/tutorials/google-html5/create-new-project.png)  
 
 > [!NOTE]
-> It is normal for **API Manager** to take 10-20 seconds to generate the **Project**.
+> It is normal for **API Manager** to take 10-20 seconds to generate the Project.
 
 ![Google API Manager generating project](media/tutorials/google-html5/generating-project.png)  
 
-Once the **Project** is created:
+Once the Project is created:
 
 - Navigate to the **OAuth consent screen (1)**. 
 - Make sure the correct email is selected **(2)**. 
@@ -78,7 +78,7 @@ On the **OAuth client** screen shown below, the **Google API Manager** reveals t
 
 ![Google API Manager OAuth client ID and secret](media/tutorials/google-html5/oauth-client-credentials.png)  
 
-Go to the **PlayFab Game Manager** page for your **Title**.
+Go to the **PlayFab Game Manager** page for your title.
 
 - Navigate to **Add-ons (1)** in the menu.
 - Locate and open the **Google Add-on (2)** icon/link.
@@ -95,9 +95,9 @@ Go to the **PlayFab Game Manager** page for your **Title**.
 > `"idpiframe_initialization_failed", details: "Not a valid origin for the client: somedomain.com..."`  
 > Please remove the credentials and recreate them. *There is no need to delete the entire project, just the credentials.*
 
-## Testing using an Access Token
+## Testing using an access token
 
-In this example, we show how to test using the classic **Access Token** approach. Use the **HTML** file provided below for your testing.
+In this example, we show how to test using the classic access token approach. Use the **HTML** file provided below for your testing.
 
 > [!NOTE]
 > Please *make sure* to replace **YOUR_CLIENT_ID** and **YOUR_PLAYFAB_TITLE** with your own values.
@@ -151,7 +151,7 @@ In this example, we show how to test using the classic **Access Token** approach
 </html>
 ```
 
-- Remember to serve this page using your **Web Server**.
+- Remember to serve this page using your web server.
 - Make sure to access this page using the **URL** you specified while configuring **Google Project** (**http://playfab.example** in our case).
 - Once the page opens, select **G Sign In (1)**, and follow the general **Google** authentication flow.
 - When this is finished, the script will try to authenticate on the **PlayFab** side and output the result **(2)**.
