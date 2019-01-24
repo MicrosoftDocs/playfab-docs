@@ -96,6 +96,7 @@ void GetOpenTrades() {
 ```
 
 > [!NOTE]
+
 > The most relevant [TradeStatus](xref:titleid.playfabapi.com.client.trading.getplayertrades#tradestatus) values are Open, Filled, and Canceled. All other states are intermediate states. trades may stay in those intermediate states for a noticeable period of time between calls. A recently-modified trade may not be available immediately.
 
 **Best Practice**: Give the users a **Refresh** button, and some text informing them that some trade transactions have a noticeable delay.

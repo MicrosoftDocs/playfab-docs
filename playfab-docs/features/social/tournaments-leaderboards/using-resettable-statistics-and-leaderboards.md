@@ -10,51 +10,53 @@ keywords: playfab, social, tournaments, statistics, leaderboards
 ms.localizationpriority: medium
 ---
 
-# Using resettable Statistics and Leaderboards
+# Using resettable statistics and Leaderboards
 
-This tutorial provides a complete walk through of how to configure and manage **Statistics** with versioning - which enables “resetting” of **Statistics** - and by extension, **Leaderboards**.
+This tutorial provides a complete walk through of how to configure and manage statistics with versioning - which enables “resetting” of statistics - and by extension, leaderboards.
 
-We'll focus on how to use the **Admin API** methods, with additional info on how to use the **Client** and **Server API** methods to query the data - both for the current version as well as old ones.
+We'll focus on how to use the **Admin API** methods, with additional info on how to use the client and **Server API** methods to query the data - both for the current version as well as old ones.
 
-Our goal is to provide you with a technical review of how re-settable statistics work in **PlayFab**, and all the ways they can be used in your games.
+Our goal is to provide you with a technical review of how re-settable statistics work in PlayFab, and all the ways they can be used in your games.
 
-## Statistics and Leaderboards
+## Statistics and leaderboards
 
-First, it’s important to note that all **Statistics** defined for a **Player** in a game in **PlayFab** are part of a **Leaderboard**. So defining your **Statistics** defines your **Leaderboard** as well.
+First, it’s important to note that all Statistics defined for a player in a game in PlayFab are part of a leaderboard. So defining your statistics defines your leaderboard as well.
 
-**Statistics** may not necessarily be visible to **Players**, but they are there. You can use them to get lists of **Players** by a score you define - whether to find the top of all scores, the bottom, those centered around the current **Player** - or those on a user’s friend list.
+Statistics may not necessarily be visible to players, but they are there. You can use them to get lists of players by a score you define - whether to find the top of all scores, the bottom, those centered around the current player - or those on a user’s friend list.
 
-Many **Statistics** in games are intended to be “lifetime” values - meaning that **Players** continually update their scores, with old ones remaining until each **Player** beats his own personal best. However, for some **Player** experiences, it’s important to be able to “wipe” the **Leaderboard** from time to time. 
+Many statistics in games are intended to be “lifetime” values - meaning that players continually update their scores, with old ones remaining until each player beats his own personal best. However, for some player experiences, it’s important to be able to “wipe” the leaderboard from time to time. 
 
-This can be used to encourage users to try to be the top ranked **Player** for a given period, or to simply remove **Players** from the rankings who haven’t been active in a while.
+This can be used to encourage users to try to be the top ranked player for a given period, or to simply remove players from the rankings who haven’t been active in a while.
 
-As this tutorial will discuss, **Statistics** in **PlayFab** can be configured to reset on a pre-determined interval. This is useful not just for the scenarios described above - it can also be used for **Titles** that need to have a distinct **Leaderboard** of recent scores, which can be used for things like game challenges, where you want to let a **Player** issue an invitation to someone of a similar skill level.
+As this tutorial will discuss, statistics in PlayFab can be configured to reset on a pre-determined interval.
 
-Setting a reset period means that the **Players** returned in a call to [GetLeaderboardAroundPlayer](xref:titleid.playfabapi.com.client.playerdatamanagement.getleaderboardaroundplayer), for example, are those that have recently played the game, and who have scores similar to the local **Player**.
+This is useful not just for the scenarios described above - it can also be used for titles that need to have a distinct leaderboard of recent scores, which can be used for things like game challenges, where you want to let a player issue an invitation to someone of a similar skill level.
 
-It’s also possible to reset a **Statistic** as a manual operation. This is a handy system for clearing out any data you have from your pre-launch tests or alpha/beta play.
+Setting a reset period means that the players returned in a call to [GetLeaderboardAroundPlayer](xref:titleid.playfabapi.com.client.playerdatamanagement.getleaderboardaroundplayer), for example, are those that have recently played the game, and who have scores similar to the local player.
 
-It’s *also* useful for the worst-case scenario where a bug was introduced to the game code resulting in out-of-control scores. In each case, you need to have the ability to wipe the **Leaderboard** clean, so that **Players** feel like they have a fair chance to get on it.
+It’s also possible to reset a statistic as a manual operation. This is a handy system for clearing out any data you have from your pre-launch tests or alpha/beta play.
+
+It’s *also* useful for the worst-case scenario where a bug was introduced to the game code resulting in out-of-control scores. In each case, you need to have the ability to wipe the leaderboard clean, so that players feel like they have a fair chance to get on it.
 
 > [!NOTE]
-> Resetting **Statistics** does not delete those values, as you will see below. On reset, **Statistics** in **PlayFab** are *versioned*, making the new version authoritative, while keeping previous versions for later analysis (and so that you can reward **Players** based on their old scores).
+> Resetting statistics does not delete those values, as you will see below. On reset, statistics in PlayFab are *versioned*, making the new version authoritative, while keeping previous versions for later analysis (and so that you can reward players based on their old scores).
 
-## Configuring resettable Statistics
+## Configuring resettable statistics
 
-The reset periods for **Statistics** are configured using the **Admin API** set or the **Game Manager**. They can then be updated and queried via the **Game Manager**, **Server API**, and **Client API** (though posting **Statistics** from the **Client** does require that the "**allow Client to post Statistics**" option be set in the game's **Settings**->**API Features** tab in the **Game Manager**).
+The reset periods for statistics are configured using the Admin API set or the Game Manager. They can then be updated and queried via the Game Manager, Server API, and Client API (though posting statistics from the client does require that the **allow client to post statistics** option be set in the game's **Settings**->**API Features** tab in the Game Manager).
 
-We’ll describe the **API** method for this, though the parameters defined here are the same as those used in the **Game Manager** itself.
+We’ll describe the **API** method for this, though the parameters defined here are the same as those used in the Game Manager itself.
 
-To set up the **Statistics**, you can use the **Admin CreatePlayerStatisticDefinition** method, and the **UpdatePlayerStatisticDefinition** method to make changes later.
+To set up the statistics, you can use the **Admin CreatePlayerStatisticDefinition** method, and the **UpdatePlayerStatisticDefinition** method to make changes later.
 
 In both cases, there are only two parameters:
 
-- **StatisticName** - The string identifier for the **Player Statistic**.
-- **VersionChangeInterval** - The period defining when the **Statistics** should be automatically reset.
+- **StatisticName** - The string identifier for the player statistic.
+- **VersionChangeInterval** - The period defining when the statistics should be automatically reset.
 
-The **VersionChangeInterval** is the key to this feature, and it can be defined as **hourly**, **daily**, **weekly**, or **monthly**. It can also be set to **Never**, if you decide later that you no longer want the **Statistic** to reset on a regular basis.
+The **VersionChangeInterval** is the key to this feature, and it can be defined as hourly, daily, weekly, or monthly. It can also be set to never, if you decide later that you no longer want the statistic to reset on a regular basis.
 
-In the example that follows, the call to the **CreatePlayerStatisticDefinition** method sets up the statistic **Headshots** with a daily reset, meaning that the **Leaderboard** for this **Statistic** in the game will reset every day at 00:00 UTC.
+In the example that follows, the call to the **CreatePlayerStatisticDefinition** method sets up the statistic Headshots with a daily reset, meaning that the leaderboard for this statistic in the game will reset every day at 00:00 UTC.
 
 ```csharp
 public void CreatePlayerStatisticDefinition() {
@@ -69,7 +71,7 @@ public void CreatePlayerStatisticDefinition() {
 }
 ```
 
-The following shows the response for the preceeding **API** call.
+The following shows the response for the preceding **API** call.
 
 ```json
 {
@@ -87,7 +89,7 @@ The following shows the response for the preceeding **API** call.
 }
 ```
 
-The coding shown below is an alternate example.
+The coding shown below is an alternative example.
 
 ```csharp
 public void UpdatePlayerStatisticDefinition() {
@@ -122,27 +124,27 @@ The call demonstrates setting the reset period for the statistic to weekly, with
 
 In each case, the result is the **PlayerStatisticDefinition**, containing:
 
-- The string **ID** of the **Statistic** (**StatisticName**).
-- The number of times the **Statistic** has been reset (**CurrentVersion**).
-- The defined period for when the **Statistic** will reset (**VersionChangeInterval**).
+- The string ID of the Statistic (**StatisticName**).
+- The number of times the Statistic has been reset (**CurrentVersion**).
+- The defined period for when the Statistic will reset (**VersionChangeInterval**).
 
 The reset periods take effect as soon as they are defined, so in this case, the second call means that the reset is now defined as 00:00 UTC, Monday morning (midnight on Sunday night/Monday morning, using the UTC timezone), regardless of what it was before the call.
 
-The remaining reset intervals are also defined using **UTC**, with **Month** making the reset occur at **00:00 UTC** on the first day of each **Month**. Rolling them up here, the reset periods are:
+The remaining reset intervals are also defined using **UTC**, with **Month** making the reset occur at **00:00 UTC** on the first day of each month. Rolling them up here, the reset periods are:
 
-- **Never**: Stop versioning the **Statistic** on a time-based basis.
-- **Hour**: Version the **Statistic** at the top of every **Hour** (XX:00 UTC).
-- **Day**: Version the **Statistic** at midnight (00:00 UTC) every **Day**.
-- **Week**: Version the **Statistic** at midnight (00:00 UTC) every Monday.
-- **Month**: Version the **Statistic** at midnight (00:00 UTC) on the first day of every **Month**.
+- **Never**: Stop versioning the statistic on a time-based basis.
+- **Hour**: Version the statistic at the top of every **Hour** (XX:00 UTC).
+- **Day**: Version the statistic at midnight (00:00 UTC) every **Day**.
+- **Week**: Version the statistic at midnight (00:00 UTC) every Monday.
+- **Month**: Version the statistic at midnight (00:00 UTC) on the first day of every **Month**.
 
 ## Preexisting Statistics
 
-All **Statistics** defined in the game can be queried for their definition, regardless of whether they were set up as resetting **Statistics** or not.
+All statistics defined in the game can be queried for their definition, regardless of whether they were set up as resetting statistics or not.
 
-This is important to note, since **Statistics** can be created via the [UpdateUserStatistics](xref:titleid.playfabapi.com.client.playerdatamanagement.updateuserstatistics) call. Any **Statistics** not created with a reset period (**VersionChangeInterval**) will not have one to start, and so a query for the **Statistic** configuration would return with this parameter set to **Never**.
+This is important to note, since statistics can be created via the [UpdateUserStatistics](xref:titleid.playfabapi.com.client.playerdatamanagement.updateuserstatistics) call. Any statistics not created with a reset period (**VersionChangeInterval**) will not have one to start, and so a query for the statistic configuration would return with this parameter set to **Never**.
 
-Using the example above, if the **Title** also had a **Statistic** named **FlagsCaptured** created via [UpdateUserStatistics](xref:titleid.playfabapi.com.client.playerdatamanagement.updateuserstatistics) (or created in the **Game Manager** directly on a **Player**) and a couple of weeks had passed, the call shown below...
+Using the example above, if the title also had a statistics named **FlagsCaptured** created via [UpdateUserStatistics](xref:titleid.playfabapi.com.client.playerdatamanagement.updateuserstatistics) (or created in the Game Manager directly on a player) and a couple of weeks had passed, the call shown below...
 
 ```csharp
 public void GetPlayerStatisticDefinitions() {
@@ -177,19 +179,19 @@ Would result in the following.
 }
 ```
 
-In this case, the **Statistic** named **Headshots** has a reset interval defined, and the **Current Version** indicates that the **Statistic** has been reset twice.
+In this case, the statistics named Headshots has a reset interval defined, and the Current Version indicates that the statistics has been reset twice.
 
 Meanwhile, **FlagsCaptured** does not have a **VersionChangeInterval**, which is also why the **CurrentVersion** is **0** (since it has never been versioned).
 
-**Statistics** created via [UpdateUserStatistics](xref:titleid.playfabapi.com.client.playerdatamanagement.updateuserstatistics) (or the **PlayFab Game Manager**), can still be defined to have a reset period using **UpdatePlayerStatisticDefinition**, as described above. 
+Statistics created via [UpdateUserStatistics](xref:titleid.playfabapi.com.client.playerdatamanagement.updateuserstatistics) (or the PlayFab Game Manager), can still be defined to have a reset period using **UpdatePlayerStatisticDefinition**, as described above. 
 
 Once this has been done, they will reset on that interval exactly as if they were originally defined using **CreatePlayerStatisticDefinition**.
 
 ## Manually resetting a Statistic
 
-For the situation where a game bug allowed for cheating on a **Statistic**, or where you simply need to reset to remove scores from pre-release game play, the **Statistic** can be forced to reset in the **Game Manager**, or via a call to **IncrementPlayerStatisticVersion**.
+For the situation where a game bug allowed for cheating on a statistic, or where you simply need to reset to remove scores from pre-release game play, the statistic can be forced to reset in the Game Manager, or via a call to **IncrementPlayerStatisticVersion**.
 
-This immediately resets the current **Statistics** that you specify, clearing the **Leaderboard** for the game, and providing a blank slate for new values to be reported.
+This immediately resets the current statistics that you specify, clearing the leaderboard for the game, and providing a blank slate for new values to be reported.
 
 For our example, this call might look like the one shown below.
 
@@ -205,7 +207,7 @@ public void IncrementPlayerStatisticVersion() {
 }
 ```
 
-This increments the **Headshots Statistic** once more, returning information on the version which has just been made active.
+This increments the Headshots statistic once more, returning information on the version which has just been made active.
 
 ```json
 {
@@ -224,27 +226,27 @@ This increments the **Headshots Statistic** once more, returning information on 
 }
 ```
 
-In this case, the **PlayerStatisticVersion** information is returned, containing the **ID** of the **Statistic** (**StatisticName**), as well as its version number, the time when it became the authoritative version (**ActivationTime**), and the **ArchivalStatus** (which will always be **NotScheduled** for the current version).
+In this case, the **PlayerStatisticVersion** information is returned, containing the ID of the statistic (**StatisticName**), as well as its version number, the time when it became the authoritative version (**ActivationTime**), and the **ArchivalStatus** (which will always be **NotScheduled** for the current version).
 
-However, for a **Statistic** which also has a **VersionChangeInterval**, manually resetting will *not* change the next scheduled reset time. If a statistic is scheduled to reset on a daily basis - and it is manually reset at 11:30 PM UTC - it will *still* reset again at midnight UTC.
+However, for a statistic which also has a **VersionChangeInterval**, manually resetting will *not* change the next scheduled reset time. If a statistic is scheduled to reset on a daily basis - and it is manually reset at 11:30 PM UTC - it will *still* reset again at midnight UTC.
 
 ### When the reset occurs
 
-As stated, when the reset interval occurs, the **Statistic** will be versioned, so that a new version is immediately available, while the old version of that **Statistic** is archived for later retrieval.
+As stated, when the reset interval occurs, the statistic will be versioned, so that a new version is immediately available, while the old version of that statistic is archived for later retrieval.
 
-Once the reset interval occurs (or a manual reset is performed), and the **Statistic** is versioned, writes to the old version will be accepted for up to ten minutes. Beyond that point, the **Statistic** is **locked**, preventing future updates.
+Once the reset interval occurs (or a manual reset is performed), and the statistic is versioned, writes to the old version will be accepted for up to ten minutes. Beyond that point, the statistic is **locked**, preventing future updates.
 
-Once expired, **Statistics** start into the archive process, so that they can be retrieved by the title later.
+Once expired, statistics start into the archive process, so that they can be retrieved by the title later.
 
-The stages of the archival process for a **Statistic** are:
+The stages of the archival process for a statistic are:
 
-- **NotScheduled** - Archiving of the **Statistic** has not started (normally only for the currently active **Statistic** version).
+- **NotScheduled** - Archiving of the statistic has not started (normally only for the currently active statistic version).
 - **Scheduled** - The archive process has been scheduled, but is not underway yet.
-- **InProgress** - The **Statistic** is being backed up to the archive.
+- **InProgress** - The statistic is being backed up to the archive.
 - **Failed** - An unexpected failure occurred (in this case, contact our [Support Forums](https://community.playfab.com/)).
-- **Complete** - This version of the **Statistic** has been archived.
+- **Complete** - This version of the statistic has been archived.
 
-All of the past and current versions of a **Statistic** can be queried using **GetPlayerStatisticVersions**. This returns the information for each version, as shown in the previous manual reset example. 
+All of the past and current versions of a statistic can be queried using **GetPlayerStatisticVersions**. This returns the information for each version, as shown in the previous manual reset example. 
 
 In other words, this call should appear like the one presented below.
 
@@ -302,17 +304,17 @@ This could result in the following information being returned for our example ti
 }
 ```
 
-In addition to the values returned from **IncrementPlayerStatisticVersion**, the response also includes the timestamps for when each version was expired (**DeactivationTime**) for versions prior to the current active one, and a **URL** for downloading the **CSV** containing the complete record of the old **Leaderboard**, once the archive process has completed (**ArchiveDownloadUrl**).
+In addition to the values returned from **IncrementPlayerStatisticVersion**, the response also includes the timestamps for when each version was expired (**DeactivationTime**) for versions prior to the current active one, and a URL for downloading the **CSV** containing the complete record of the old leaderboard, once the archive process has completed (**ArchiveDownloadUrl**).
 
-### Reading and writing to Statistic versions
+### Reading and writing to statistic versions
 
-Finally, from the **Server** and **Client API** side of the story, the calls are very similar to what you know from original **PlayFab** user and **Character Statistics** calls.
+Finally, from the Server and Client API side of the story, the calls are very similar to what you know from original PlayFab user and Character Statistics calls.
 
 In this case, there is a call to [UpdateUserStatistics](xref:titleid.playfabapi.com.client.playerdatamanagement.updateuserstatistics) and another to **UpdatePlayerStatistics** in each **API** set. The difference here is that now, *the version is part of either the request or the response*.
 
-When retrieving **Statistics**, the value for the current **Statistic** version - as well as the version number itself - is returned.
+When retrieving statistics, the value for the current statistic version - as well as the version number itself - is returned.
 
-The following examples show making the call for the **Headshots Statistic**, as well as the returned data.
+The following examples show making the call for the Headshots statistic, as well as the returned data.
 
 #### Server Request
 
@@ -329,7 +331,7 @@ public void GetPlayerStatistics() {
 }
 ```
 
-#### Server Response
+#### Server response
 
 ```json
 {
@@ -348,7 +350,7 @@ public void GetPlayerStatistics() {
 }
 ```
 
-#### Client Request
+#### Client request
 
 ```csharp
 public void GetPlayerStatistics() {
@@ -362,7 +364,7 @@ public void GetPlayerStatistics() {
 }
 ```
 
-#### Client Response
+#### Client response
 
 ```json
 {
@@ -379,12 +381,12 @@ public void GetPlayerStatistics() {
 }
 ```
 
-Meanwhile, the **Update** call takes an optional version to allow the **Title** to control which version is being updated, for cases where the version may have incremented during game play.
+Meanwhile, the **Update** call takes an optional version to allow the title to control which version is being updated, for cases where the version may have incremented during game play.
 
 > [!NOTE]
-> In this example, if the **Title** were to write to the *previous* version while it is still possible, it would be writing to version 2, as shown below.
+> In this example, if the title were to write to the *previous* version while it is still possible, it would be writing to version 2, as shown below.
 
-#### Server Request
+#### Server request
 
 ```csharp
 public void UpdatePlayerStatistics() {
@@ -405,7 +407,7 @@ public void UpdatePlayerStatistics() {
 }
 ```
 
-#### Server Response
+#### Server response
 
 ```json
 {
@@ -415,7 +417,7 @@ public void UpdatePlayerStatistics() {
 }
 ```
 
-#### Client Request
+#### Client request
 
 ```csharp
 public void UpdatePlayerStatistics() {
@@ -435,7 +437,7 @@ public void UpdatePlayerStatistics() {
 }
 ```
 
-#### Client Response
+#### Client response
 
 ```json
 {
@@ -462,18 +464,18 @@ But remember - while the expired version can be written to for up to 10 minutes,
 
 ## Resources
 
-For completeness, this section provides a list of all the **enums**, **classes**, and **API** methods described above, with brief descriptions.
+For completeness, this section provides a list of all the enums, classes, and **API** methods described above, with brief descriptions.
 
 **Base enums**
 
-- **Interval** - period at which rate the **statistic** (leaderboard) will be reset:
+- **Interval** - period at which rate the statistic (leaderboard) will be reset:
   - **Never**
   - **Hour**
   - **Day**
   - **Week**
   - **Month**
 
-- **StatisticVersionArchivalStatus** - the status of the process of saving the **Player Statistic** values of a version to a downloadable archive:
+- **StatisticVersionArchivalStatus** - the status of the process of saving the player statistic values of a version to a downloadable archive:
   - **NotScheduled**
   - **Scheduled**
   - **InProgress**
@@ -483,45 +485,45 @@ For completeness, this section provides a list of all the **enums**, **classes**
 **Base Classes and their members**
 
 - **PlayerStatisticDefinition**
-  - **StatisticName** (string) - The unique name of the **Statistic**.
-  - **CurrentVersion** (string) - The current active version of the **Statistic**, incremented each time the **Statistic** resets.
-  - **VersionChangeInterval** (Interval) - The interval at which the values of the **Statistic** for all **Players** are reset.
+  - **StatisticName** (string) - The unique name of the statistic.
+  - **CurrentVersion** (string) - The current active version of the statistic, incremented each time the statistic resets.
+  - **VersionChangeInterval** (Interval) - The interval at which the values of the statistic for all players are reset.
 
 - **PlayerStatisticVersion**
-  - **StatisticName** (string) - The name of the **Statistic** when the version became active.
-  - **Version** (string) - The version of the **Statistic** (a hexadecimal number encoded as a string).
-  - **ScheduledVersionChangeIntervalTime** (DateTime) - The time at which the **Statistic** version was scheduled to become active, based on the configured **ResetInterval**.
-  - **CreatedTime** (DateTime) - The time when the **Statistic** version became active.
-  - **ArchivalStatus** (**StatisticVersionArchivalStatus**) - The status of the process of saving **Player Statistic** values of this version to a downloadable archive, if configured.
+  - **StatisticName** (string) - The name of the statistic when the version became active.
+  - **Version** (string) - The version of the statistic (a hexadecimal number encoded as a string).
+  - **ScheduledVersionChangeIntervalTime** (DateTime) - The time at which the statistic version was scheduled to become active, based on the configured **ResetInterval**.
+  - **CreatedTime** (DateTime) - The time when the statistic version became active.
+  - **ArchivalStatus** (**StatisticVersionArchivalStatus**) - The status of the process of saving player statistic values of this version to a downloadable archive, if configured.
   - **ResetInterval** (Interval) - The reset interval that triggered the version to become active, if configured.
 
 - **StatisticValue**
-  - **StatisticName** (string) - The unique name of the **Statistic**.
-  - **Value** (Int32) - The **Statistic Value** for the **Player**.
-  - **Version** (string) - For an existing **Statistic Value** for a **Player**, the version of the **Statistic** when it was loaded.
+  - **StatisticName** (string) - The unique name of the statistic.
+  - **Value** (Int32) - The statistic value for the player.
+  - **Version** (string) - For an existing statistic value for a player, the version of the statistic when it was loaded.
 
 - **StatisticUpdate**
-  - **StatisticName** (string) - The unique name of the **Statistic**.
-  - **Version** (string) - For updates to a **Statistic Value** for a **Player**, the version of the **Statistic** to be updated
-  - Value (Int32) - The **Statistic Value** for the **Player**.
+  - **StatisticName** (string) - The unique name of the statistic.
+  - **Version** (string) - For updates to a statistic value for a player, the version of the statistic to be updated
+  - Value (Int32) - The statistic value for the player.
 
 **Admin API Methods**
 
 - **CreatePlayerStatisticDefinition**
   - **CreatePlayerStatisticDefinitionRequest**
-    - **Name** (string) - min length 1, max length 128 - The unique name of the **Statistic**.
-    - (**VersionChangeInterval**) (Interval) - The interval at which the values of the **Statistic** for all **Players** are reset (resets begin at the next interval boundary).
+    - **Name** (string) - min length 1, max length 128 - The unique name of the statistic.
+    - (**VersionChangeInterval**) (Interval) - The interval at which the values of the statistic for all players are reset (resets begin at the next interval boundary).
 
   - **CreatePlayerStatisticDefinitionResult**
-    - **Statistic** (**PlayerStatisticDefinition**) - The created **Statistic's** definition.
+    - **Statistic** (**PlayerStatisticDefinition**) - The created statistic's definition.
 
 - **UpdatePlayerStatisticDefinition**
   - **UpdatePlayerStatisticDefinitionRequest**
-    - **StatisticName** (string) - The unique name of the **Statistic**.
-    - **VersionChangeInterval** (Interval) - The interval at which the values of the **Statistic** for all **Players** are reset (resets begin at the next interval boundary).
+    - **StatisticName** (string) - The unique name of the statistic.
+    - **VersionChangeInterval** (Interval) - The interval at which the values of the statistic for all players are reset (resets begin at the next interval boundary).
 
   - **UpdatePlayerStatisticDefinitionResult**
-    - **Statistic** (**PlayerStatisticDefinition**) - The created **Statistic's** definition.
+    - **Statistic** (**PlayerStatisticDefinition**) - The created statistic's definition.
 
 - **GetPlayerStatisticDefinitions**
   - **GetPlayerStatisticDefinitionsRequest** (no parameters).
@@ -530,30 +532,30 @@ For completeness, this section provides a list of all the **enums**, **classes**
 
 - **GetPlayerStatisticVersions**
   - **GetPlayerStatisticVersionsRequest**
-    - **StatisticName** (string) - The unique name of the **Statistic**.
+    - **StatisticName** (string) - The unique name of the statistic.
 
   - **GetPlayerStatisticVersionsResult**
-    - **StatisticVersions** (**PlayerStatisticVersion[]**) - The version change history of the **Statistic** (all the versions).
+    - **StatisticVersions** (**PlayerStatisticVersion[]**) - The version change history of the statistic (all the versions).
 
 - **IncrementPlayerStatisticVersion**
   - **IncrementPlayerStatisticVersionRequest**
-    - **StatisticName** (string) - The unique name of the **Statistic**.
+    - **StatisticName** (string) - The unique name of the statistic.
 
   - **IncrementPlayerStatisticVersionResult**
-    - **StatisticVersion** (**PlayerStatisticVersion**) - The **Statistic** version which was **expired** as a result of this operation (and its archival status).
+    - **StatisticVersion** (**PlayerStatisticVersion**) - The statistic version which was expired as a result of this operation (and its archival status).
 
 **Client API Methods**
 
 - **GetPlayerStatistics**
   - **GetPlayerStatisticsRequest**
-    - **StatisticNames** (string[]) - Array of **Statistic** to be returned, by their unique names.
+    - **StatisticNames** (string[]) - Array of statistic to be returned, by their unique names.
 
   - **GetPlayerStatisticsResult**
-    - **Statistics** (**StatisticValue[]**) - Array of **StatisticValue** data for all the **Statistic** requested.
+    - **Statistics** (**StatisticValue[]**) - Array of **StatisticValue** data for all the statistic requested.
 
 - **UpdatePlayerStatistics**
   - **UpdatePlayerStatisticsRequest**
-    - **Statistics** (**StatisticUpdate[]**) - The **Statistic** to be updated, with the provided values.
+    - **Statistics** (**StatisticUpdate[]**) - The statistic to be updated, with the provided values.
 
   - **UpdatePlayerStatisticsResult** (no parameters).
 
@@ -561,15 +563,15 @@ For completeness, this section provides a list of all the **enums**, **classes**
 
 - **GetPlayerStatistics**
   - **GetPlayerStatisticsRequest**
-    - **PlayFabId** (string) - The **PlayFab ID** of the **Player** whose **Statistic** are being updated.
-    - **StatisticNames** (string[]) - Array of **Statistic** to be returned, by their unique names.
+    - **PlayFabId** (string) - The PlayFab ID of the player whose statistics are being updated.
+    - **StatisticNames** (string[]) - Array of statistics to be returned, by their unique names.
 
   - **GetPlayerStatisticsResult**
-    - **Statistics** (**StatisticValue[]**) - Array of **StatisticValue** data for all the **Statistic** requested.
+    - **Statistics** (**StatisticValue[]**) - Array of **StatisticValue** data for all the statistic requested.
 
 - **UpdatePlayerStatistics**
   - **UpdatePlayerStatisticsRequest**
-    - **PlayFabId** (string) - The **PlayFab ID** of the **Player** whose **Statistics** are being updated.
-    - **Statistics** (**StatisticUpdate[]**) - The **Statistic** to be updated, with the provided values.
+    - **PlayFabId** (string) - The PlayFab ID of the player whose statistics are being updated.
+    - **Statistics** (**StatisticUpdate[]**) - The statistic to be updated, with the provided values.
 
   - **UpdatePlayerStatisticsResult** (no parameters).
