@@ -521,23 +521,6 @@ featureFlags:
                                     </div>
                                 </div>
                             </li>
-                            <li>
-                                <div class="cardSize">
-                                    <div class="cardPadding">
-                                        <div class="card">
-                                            <div class="cardImageOuter">
-                                                <div class="cardImage">
-                                                    <img src="/gaming/playfab/features/media/feature-dev-test-live.svg" alt="PlayFab Config Features: Dev-Test-Live card image" />
-                                                </div>
-                                            </div>
-                                            <div class="cardText">
-                                                <h3>Dev-Test-Live</h3>
-                                                <p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/config/dev-test-live/'>Overview</a></p><p><a href='/gaming/playfab/features/config/dev-test-live/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/config/dev-test-live/tutorials'>Tutorials</a></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
                         </ul>
                     </li>
                     <li>
