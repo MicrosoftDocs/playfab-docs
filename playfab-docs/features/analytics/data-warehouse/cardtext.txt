@@ -1,0 +1,4 @@
+Icon: Temporary: Reuse Metrics Icon
+
+Temporary Card Descriptions Text:
+PlayFab's data warehouse feature offers a robust way to centralize all of your analytic data in one place. All PlayStream events are made available to you with the data warehouse feature. You can also import your data from other sources as well.
