@@ -10,17 +10,17 @@ keywords: playfab, analytics, a/b testing
 ms.localizationpriority: medium
 ---
 
-# A/B Testing quickstart
+# A/B testing quickstart
 
-This quickstart explains how to create **A/B Tests** with **Player Buckets**.
+This quickstart explains how to create A/B tests with player buckets.
 
-**A/B Tests** allow you to use the buckets as [Player Segments](../segmentation/player-segmentation.md). Unlike [player segments](../segmentation/player-segmentation.md), however, **A/B Buckets** distribute **Players** randomly.
+A/B tests allow you to use the buckets as [Player Segments](../segmentation/player-segmentation.md). Unlike [player segments](../segmentation/player-segmentation.md), however, A/B buckets distribute players randomly.
 
-**A/B Tests Buckets** may then be used in some of the features, where you would normally use **Player Segments**. For an example of this, see our tutorial [A/B Testing with Stores and A/B Test Buckets](ab-testing-with-stores-and-test-buckets.md).
+A/B tests buckets may then be used in some of the features, where you would normally use player segments. For an example of this, see our tutorial [A/B Testing with Stores and A/B Test Buckets](ab-testing-with-stores-and-test-buckets.md).
 
-## Creating an A/B Test
+## Creating an A/B test
 
-**A/B Tests** are created through the **PlayFab Game Manager**. Open your **Title** page:
+A/B tests are created through the PlayFab Game Manager. Open your **Title** page:
 
 - Select **Automation (1)** from the left-hand menu.
 - Move to the **A/B Testing** tab **(2)**.
