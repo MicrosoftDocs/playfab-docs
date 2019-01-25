@@ -1,5 +1,5 @@
-- name: SDKS
-  href: /gaming/playfab/sdks
+- name: SDKs
+  href: /gaming/playfab/?#pivot=documentation&panel=sdks
   items:
   - name: SDK Generator
     href: ./sdkgenerator/index.md
