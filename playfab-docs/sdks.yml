@@ -32,7 +32,7 @@ sections:
         src: "https://docs.microsoft.com/media/logos/logo_Csharp.svg"
         text: "PlayFab SDKS: C# logo"        
       title: "C#"
-      html: "<p><a href='/gaming/playfab/sdks/c-sharp'>SDK</a></p><p><a href='/gaming/playfab/sdks/c-sharp/quickstart-c-sharp'>Quickstart - C#</a></p><p><a href='/gaming/playfab/sdks/c-sharp/quickstart-xamarin'>Quickstart - Xamarin</a></p>"
+      html: "<p><a href='/gaming/playfab/sdks/c-sharp'>SDK</a></p><p><a href='/gaming/playfab/sdks/c-sharp/quickstart'>Quickstart</a></p>"
     - image: 
         src: "/gaming/playfab/sdks/media/sdk-cocos2dx.png"
         text: "PlayFab SDKS: Cocos2D-x logo"        

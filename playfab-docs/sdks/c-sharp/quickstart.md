@@ -1,5 +1,5 @@
 ---
-title: C# Quickstart
+title: C# quickstart
 author: v-thopra
 description: This guide will help you make your first PlayFab API call using CSharp.
 ms.author: v-thopra
@@ -10,7 +10,7 @@ keywords: playfab, csharp, playfab api, login
 ms.localizationpriority: medium
 ---
 
-# C# Quickstart
+# C# quickstart
 
 This guide will help you make your first PlayFab API call using CSharp.
 

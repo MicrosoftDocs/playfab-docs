@@ -962,7 +962,7 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>C#</h3>
-                                                <p><a href='/gaming/playfab/sdks/c-sharp'>SDK</a></p><p><a href='/gaming/playfab/sdks/c-sharp/quickstart-c-sharp'>Quickstart - C#</a></p><p><a href='/gaming/playfab/sdks/c-sharp/quickstart-xamarin'>Quickstart - Xamarin</a></p>
+                                                <p><a href='/gaming/playfab/sdks/c-sharp'>SDK</a></p><p><a href='/gaming/playfab/sdks/c-sharp/quickstart'>Quickstart</a></p>
                                             </div>
                                         </div>
                                     </div>
