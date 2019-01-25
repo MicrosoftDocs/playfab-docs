@@ -10,7 +10,7 @@ keywords: playfab, engagement, push notification, google, android, firebase, uni
 ms.localizationpriority: medium
 ---
 
-# Push Notifications for Android
+# Push notifications for Android
 
 ## Prerequisites
 
@@ -19,27 +19,27 @@ ms.localizationpriority: medium
 - [Optional] [Unity Editor Extensions](https://blog.playfab.com/blog/new-unity-editor-extensions-beta)
 - [Optional] [Executing the PlayFab API via Postman](../../../sdks/postman/executing-the-playfab-api-via-postman.md)
 
-## Configuring the Android Notification channel
+## Configuring the Android notification channel
 
 > [!NOTE]
 > The **Google** and **Firebase** developer consoles experience changes regularly. The setup description in this section best describes the values you need - and how to get them - as of June 2017.
 
 ### Google and Firebase setup
 
-There are three **Google** websites that you must use and synchronize. In **Google/Firebase**, there are both **Projects** and **Apps**:
+There are three **Google** websites that you must use and synchronize. In **Google/Firebase**, there are both Projects and Apps:
 
 - **Project**:
-  - Ensure that your **Project** is set up and accessible from the [Google API Manager](https://console.developers.google.com/).
-  - Import your **Project** into the [Firebase Console](https://console.firebase.google.com/) if it's not already there.
+  - Ensure that your project is set up and accessible from the [Google API Manager](https://console.developers.google.com/).
+  - Import your project into the [Firebase Console](https://console.firebase.google.com/) if it's not already there.
 
 - **App**:
-  - [Firebase](https://console.firebase.google.com/) Projects contain **Apps**.
-  - The [Google Play Dev Console](https://play.google.com/apps/publish/) also contains **Apps**.
-  - Make sure your **App** exists in both locations, with the same name and identifier (for example, [Unicorn Battle and com.playfab.unicornbattle2](https://play.google.com/store/apps/details?id=com.playfab.unicornbattle2)).
+  - [Firebase](https://console.firebase.google.com/) Projects contain apps.
+  - The [Google Play Dev Console](https://play.google.com/apps/publish/) also contains apps.
+  - Make sure your app exists in both locations, with the same name and identifier (for example, [Unicorn Battle and com.playfab.unicornbattle2](https://play.google.com/store/apps/details?id=com.playfab.unicornbattle2)).
 
-### PlayFab requires a Server API Key
+### PlayFab requires a server API key
 
-- You can get this **Key** from the [Google API Manager](https://console.developers.google.com/), or from the [Firebase Console](https://console.firebase.google.com/)
+- You can get this key from the [Google API Manager](https://console.developers.google.com/), or from the [Firebase Console](https://console.firebase.google.com/)
 - **Google API Manager**:
   - Select your **Project**.
   - Select **Credentials** (left menu).
@@ -49,15 +49,15 @@ There are three **Google** websites that you must use and synchronize. In **Goog
   - In the **General** tab, this is listed as the **Web API Key**.
   - In the **Cloud Messaging** tab, this is listed as the **Legacy server key**.
 
-- All of the **Keys** described above should be identical, and they are all the **API Key** described in this document.
+- All of the keys described above should be identical, and they are all the **API** key described in this document.
 
 > [!NOTE]
-> If they are not identical, the **Legacy server key** is the one needed by **PlayFab**.
+> If they are not identical, the **Legacy server key** is the one needed by PlayFab.
 
-## Using the API Key
+## Using the API key
 
 - Provide your **API Key** in one of two ways:
-  1. Input your **Key** directly into the **Game Manager UI**: **Settings** (for your **Title**) > **Push Notifications** > **Android**.
+  1. Input your key directly into the **Game Manager UI**: **Settings** (for your **Title**) > **Push Notifications** > **Android**.
   2. Or call [SetupPushNotification](xref:titleid.playfabapi.com.admin.title-widedatamanagement.setuppushnotification) using **Postman** or a **Unity** project with **Server API** methods enabled.
   
     - Name: **your_game_name**
@@ -78,16 +78,16 @@ There are three **Google** websites that you must use and synchronize. In **Goog
 
   ![PlayFab Settings - Push Notifications - Android](../media/tutorials/playfab-settings-push-notification-android.png)
 
-## Getting started: Push Notifications for Android + Unity
+## Getting started: push notifications for Android + Unity
 
-### Set up your **Unity** project:
+### To set up your **Unity** project:
 
 - Create a new **Unity** project.
 - [OPTIONAL] Import the [PlayFab Unity Editor Extensions](https://api.playfab.com/downloads/unity-edex) package.
 - Import the [Unity PlayFab SDK](https://api.playfab.com/downloads/unity-v2ap) package.
 - Follow the [FCM Unity](https://firebase.google.com/docs/cloud-messaging/unity/client) guide to install **FCM** messaging, and set up a project for push notifications.
-  - Once finished, you can continue with this guide to receive messages from **PlayFab**.
-  - We will give you a complete **FCM**-ready monoBehaviour script in the following example, which combines **FCM** and **PlayFab**.
+  - Once finished, you can continue with this guide to receive messages from PlayFab.
+  - We will give you a complete **FCM**-ready monoBehaviour script in the following example, which combines **FCM** and PlayFab.
 
 - In the **FCM guide**, you created a monobehavior that set up the **Firebase** plugin.
   - You can continue using that monobehavior, or replace it with the one in the following example.
@@ -191,7 +191,7 @@ public class MsgCatcher : MonoBehaviour
 }
 ```
 
-Build and run your **Unity** project on a device. If you receive a **Push Notifications** with the text **Push notifications registered successfully**, then everything worked as expected.
+Build and run your **Unity** project on a device. If you receive a push notification with the text **Push notifications registered successfully**, then everything worked as expected.
 
 > [!NOTE]
 > **PlayFabSettings.TitleId = TITLE_ID**. 
@@ -199,14 +199,14 @@ Build and run your **Unity** project on a device. If you receive a **Push Notifi
 
 ### Troubleshooting Android
 
-- Verify that you can send a test **Push Notifications** from the **Firebase** Console.
+- Verify that you can send a test push notifications from the **Firebase** Console.
   - If you cannot, then your **Firebase** plugin is not set up correctly, and you should review the **Firebase Documentation** to find out why, or contact **Firebase Support**.
 
 - Ensure your **FCM client pushToken** is set properly.
   - The **OnTokenReceived** function in the example should be called, and should have a valid token.
   - If it is *not* called, your **Firebase** plugin is *not* set up correctly, and you should review the **Firebase Documentation** to find out why, or contact **Firebase Support**.
 
-- Ensure your **titleId** is set to a **Title** that you own, and that it has been registered with the server **API-Key** from your **Firebase** project.
+- Ensure your **titleId** is set to a title that you own, and that it has been registered with the server **API-Key** from your **Firebase** project.
 
 ### Advanced Features
 
@@ -227,7 +227,7 @@ You can also use **[request.Package](xref:titleid.playfabapi.com.server.accountm
 
 For help, example bugs, and related questions, drop us a line in our [Forums](https://community.playfab.com/index.html).
 
-Currently, we only support our services for the standard flow described in this document. If you team is looking for additional functionality with other common **Push** services or plugins, please let us know! We love getting feedback from our developer community.
+Currently, we only support our services for the standard flow described in this document. If you team is looking for additional functionality with other common push services or plugins, please let us know! We love getting feedback from our developer community.
 
 For documentation on the **Push** payload via **Amazon SNS**:
 
