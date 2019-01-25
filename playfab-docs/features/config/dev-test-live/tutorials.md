@@ -15,7 +15,6 @@ ms.localizationpriority: medium
 These tutorials teach the various ways to configure and set up PlayFab.
 
 - [Building Blocks](building-blocks.md)
-- [Executing the PlaFab API via Postman](executing-the-playfab-api-via-postman.md)
 - [Explore Automation](explore-automation.md)
 - [Get Started with Players and Tournaments](get-started-with-players-and-tournaments.md)
 - [Getting PlayFab Developer Keys](getting-playfab-developer-keys.md)

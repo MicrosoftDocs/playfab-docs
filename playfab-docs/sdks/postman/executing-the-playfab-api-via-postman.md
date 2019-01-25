@@ -24,7 +24,7 @@ This tutorial will guide you through setting up and using **Postman**.
 
 ### Disclaimer
 
-**Postman** is an **HTTP Request** tool useful to intermediate and advanced **users**. Before using it, you should be very familiar with the topics covered in our tutorial [Getting started with PlayFab](getting-started-with-playfab.md).
+**Postman** is an **HTTP Request** tool useful to intermediate and advanced **users**. Before using it, you should be very familiar with the topics covered in our tutorial [Getting Started with PlayFab](../../features/config/dev-test-live/getting-started-with-playfab.md).
 
 ### Initial Setup
 

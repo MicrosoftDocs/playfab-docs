@@ -10,8 +10,6 @@
   items:
   - name: Building Blocks
     href: building-blocks.md
-  - name: Executing the PlaFab API via Postman
-    href: executing-the-playfab-api-via-postman.md
   - name: Explore Automation
     href: explore-automation.md
   - name: Get Started with Players and Tournaments

@@ -182,4 +182,4 @@ The following resources provide additional information about the topics in this 
 - [Firebase Unity SDK](https://firebase.google.com/docs/unity/setup):  An all-in-one **FCM** solution for **Unity**. This **SDK**, among all other features, allows you to receive and process push notifications sent via **FCM**.
 - [Push It Real Good: How to Get Players to Say Yes to Push Notifications](https://blog.playfab.com/blog/push-it-real-good-how-get-players-say-yes-push-notifications/): This blog post details additional strategies and techniques for using **Push Notifications**.
 - [Push Notifications](https://blog.playfab.com/blog/push-sep-17): This blog post describes the most recent upgrade in **Push** functionality, and switching to **FCM** as the primary plugin for **Android**.
-- [Executing the PlayFab API via Postman](../../config/dev-test-live/executing-the-playfab-api-via-postman.md): This tutorial shows you how to test our **APIs** using **Postman**.
+- [Executing the PlayFab API via Postman](../../../sdks/postman/executing-the-playfab-api-via-postman.md): This tutorial shows you how to test our **APIs** using **Postman**.

@@ -14,9 +14,9 @@ ms.localizationpriority: medium
 
 ![Postman (Rest)](./media/postman1.png)
 
-Our Postman Collection provides a JSON mapping to our API that is directly importable into Postman. This is the one of the fastest ways to get started testing PlayFab. When imported into postman, you will get a full integration that supports multiple environment configurations. Every API call imported is setup with variables in urls and parameters making it easy for you to switch from title to title. For additional details see the [postman guide](https://api.playfab.com/docs/execute-playfab-api-via-postman).
+Our Postman Collection provides a JSON mapping to our API that is directly importable into Postman. This is the one of the fastest ways to get started testing PlayFab. When imported into postman, you will get a full integration that supports multiple environment configurations. Every API call imported is setup with variables in urls and parameters making it easy for you to switch from title to title. For additional details see [Executing the PlayFab API via Postman](executing-the-playfab-api-via-postman.md).
 
 Download Links:
 
-- [Download Source Code](https://github.com/PlayFab/PostmanCollection)
-- [Right-Click + "Save Link As"](https://api.playfab.com/downloads/postman)
+- Download the source code from the [Postman GitHub repo](https://github.com/PlayFab/PostmanCollection).
+- Download just the JSON file by right-clicking the following link and selecting **Save Link As**: [Postman JSON](https://api.playfab.com/downloads/postman).

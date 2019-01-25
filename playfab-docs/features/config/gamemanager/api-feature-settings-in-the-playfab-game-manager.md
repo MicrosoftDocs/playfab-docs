@@ -27,7 +27,7 @@ To find the screen for configuring these options:
 Some of these check-boxes are obvious, and some not so much. In this tutorial, we will go into detail about several of them.
 
 > [!NOTE]
-> Several screenshots and demonstrations in this tutorial utilize [Postman](../dev-test-live/executing-the-playfab-api-via-postman.md).
+> Several screenshots and demonstrations in this tutorial utilize [Postman](../../../sdks/postman/executing-the-playfab-api-via-postman.md).
 
 ## Requiring valid JSON for custom data values
 
