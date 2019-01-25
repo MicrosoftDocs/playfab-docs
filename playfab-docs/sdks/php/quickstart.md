@@ -14,6 +14,9 @@ ms.localizationpriority: medium
 
 This quickstart will get you up and running with the PHP SDK.
 
+> [!Note]
+> This SDK is currently in Beta, so please let us know if you run into any issues.
+
 ## PHP project setup
 
 * Install PHP 7.1
