@@ -27,7 +27,7 @@ Right now, **PlayFab** only supports **API Access Policy**. Thus, by definition,
 
 **Policies** are fetched and updated using **API** calls from the **PlayFab Admin APIs** (listed under **Admin**, in the [PlayFab API Reference](../../../api-references/index.md)); specifically, the [GetPolicy](xref:titleid.playfabapi.com.admin.authentication.getpolicy) and [UpdatePolicy](xref:titleid.playfabapi.com.admin.authentication.updatepolicy) methods.
 
-Since we will be utilizing the **Admin API**, see our tutorial [Getting PlayFab Developer Keys](../dev-test-live/getting-playfab-developer-keys.md). **Developer Keys** will let you authorize for **Admin API** calls.
+Since we will be utilizing the **Admin API**, see our tutorial [Getting PlayFab Developer Keys](getting-playfab-developer-keys.md). **Developer Keys** will let you authorize for **Admin API** calls.
 
 Each **Policy** contains a list of **Statements**, which act as **Rules** for one or more **PlayFab Resources**.
 

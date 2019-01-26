@@ -35,7 +35,7 @@ handlers.GenerateError = () => {
 }
 ```
 
-Notice how the **Error** codes were extracted within the catch block. Consult our [Global API Method Error Codes](../../config/dev-test-live/global-api-method-error-codes.md) tutorial for a complete list of **Error** and their identifying codes. The **Error** code on it's own is sufficient to identify the **Error**.
+Notice how the **Error** codes were extracted within the catch block. Consult our [Global API Method Error Codes](global-api-method-error-codes.md) tutorial for a complete list of **Error** and their identifying codes. The **Error** code on it's own is sufficient to identify the **Error**.
 
 ## Logging
 
@@ -84,7 +84,7 @@ handlers.GenerateError = () => {
 
 It's not always possible to recover from **Errors**. Issues like **InvalidArguments** leave you with no option but to report the problem back to the **Player**.
 
-There are a subset of **Errors** where a retry strategy can be applied. *Retry-able* **Error** types are described in the [Global API Method Error Codes](../../config/dev-test-live/global-api-method-error-codes.md) tutorial.
+There are a subset of **Errors** where a retry strategy can be applied. *Retry-able* **Error** types are described in the [Global API Method Error Codes](global-api-method-error-codes.md) tutorial.
 
 We ask that you *make sure* you meet the following requirements when applying a retry strategy:
 

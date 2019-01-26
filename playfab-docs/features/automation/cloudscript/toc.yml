@@ -7,6 +7,8 @@
   items:
   - name: ES6 features in CloudScript
     href: es6-features-in-cloudscript.md
+  - name: Global API error codes
+    href: global-api-method-error-codes.md
   - name: Handling errors in CloudScript
     href: handling-errors-in-cloudscript.md
   - name: Making Webhook calls from CloudScript

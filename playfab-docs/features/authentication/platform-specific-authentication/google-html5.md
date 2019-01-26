@@ -21,11 +21,11 @@ You will need:
 - A [Google account](https://google.com/) for testing.
 - A Registered [PlayFab](https://playfab.com/) title.
 - Familiarity with [Login basics and Best Practices](../../authentication/platform-specific-authentication/login-basics-best-practices.md).
-- At the minimum, a server with a valid domain name to act as a static **HTML** file. Consult the [Running an HTTP server for testing](../../config/dev-test-live/running-an-http-server-for-testing.md) tutorial for information on how to set one up.
+- At the minimum, a server with a valid domain name to act as a static **HTML** file. Consult the [Running an HTTP server for testing](running-an-http-server-for-testing.md) tutorial for information on how to set one up.
 
 ## Server and Domain
 
-This guide requires a server with a valid domain to follow. If you do not have a registered domain and remote web server yet, please follow our [Running an HTTP server for testing](../../config/dev-test-live/running-an-http-server-for-testing.md) tutorial for information on how to set one to run a local web server with a valid domain name. Throughout this guide, we will assume your domain is [http://playfab.example](http://playfab.example).
+This guide requires a server with a valid domain to follow. If you do not have a registered domain and remote web server yet, please follow our [Running an HTTP server for testing](running-an-http-server-for-testing.md) tutorial for information on how to set one to run a local web server with a valid domain name. Throughout this guide, we will assume your domain is [http://playfab.example](http://playfab.example).
 
 ## Registering a Google API project
 

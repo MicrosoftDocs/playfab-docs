@@ -24,11 +24,11 @@ Prior to beginning, you should have:
 - At the minimum, a server with a valid domain name to serve static **HTML** files.
 
 > [!NOTE]
-> Consult the [Running an HTTP server for testing](../../config/dev-test-live/running-an-http-server-for-testing.md) tutorial for information on how to set one up.
+> Consult the [Running an HTTP server for testing](running-an-http-server-for-testing.md) tutorial for information on how to set one up.
 
 ## Server and Domain
 
-This tutorial requires a web server in order to follow the instructions. If you do not have a registered remote web server yet, please follow our [Running an HTTP server for testing](../../config/dev-test-live/running-an-http-server-for-testing.md) tutorial for information on how to run a local web server. Throughout this tutorial, we will assume your domain is [http://localhost/](http://localhost/).
+This tutorial requires a web server in order to follow the instructions. If you do not have a registered remote web server yet, please follow our [Running an HTTP server for testing](running-an-http-server-for-testing.md) tutorial for information on how to run a local web server. Throughout this tutorial, we will assume your domain is [http://localhost/](http://localhost/).
 
 ## Registering a Twitch Application
 

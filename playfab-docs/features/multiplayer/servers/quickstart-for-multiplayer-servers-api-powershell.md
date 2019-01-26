@@ -17,7 +17,7 @@ This tutorial helps you quickly upload a sample multiplayer server, configure a 
 On a Windows 10 PC, get the following pre-requisites ready:
 
 - A PlayFab title ID, this needs to be a title that PlayFab has authorized for the private preview.
-- A developer key for the title (See [Getting PlayFab Developer Keys](../../config/dev-test-live/getting-playfab-developer-keys.md)).
+- A developer key for the title (See [Getting PlayFab Developer Keys](../../config/gamemanager/getting-playfab-developer-keys.md)).
 - [Game Server SDK Sample - Windows Runner](https://github.com/PlayFab/gsdkSamples/releases/download/v1.0/winrunnerSample.zip)
 
 ## Install the PlayFab Multiplayer PowerShell module

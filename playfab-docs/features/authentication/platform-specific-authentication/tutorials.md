@@ -15,6 +15,8 @@ ms.localizationpriority: medium
 These tutorials provide basic information and Best Practices for setting up PlayFab authentication.
 
 - [Login basics and Best Practices](login-basics-best-practices.md)
+- [Running an HTTP server for testing](running-an-http-server-for-testing.md)
+- [Migrating from Parse to PlayFab](migrating-from-parse-to-playfab.md)
 
 These tutorials show you how to set up PlayFab authentication on specific platforms.
 

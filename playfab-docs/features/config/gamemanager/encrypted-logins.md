@@ -56,7 +56,7 @@ else
 }
 ```
 
-To run this code, you will need a **Developer Key**. Please consult the [Getting PlayFab Developer Keys](../dev-test-live/getting-playfab-developer-keys.md) tutorial to see how to obtain one. You can pick any **Key Name** you would like.
+To run this code, you will need a **Developer Key**. Please consult the [Getting PlayFab Developer Keys](getting-playfab-developer-keys.md) tutorial to see how to obtain one. You can pick any **Key Name** you would like.
 
 This **Application** should print a newly created **Player Shared Secret**. *Make sure to save it*. If lost, you can always generate a new **Secret** by running the **Application** again.
 

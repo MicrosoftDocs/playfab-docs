@@ -34,7 +34,7 @@ To begin:
 - Create an **Index.html** file in the root of your website folder.
 
 > [!NOTE]
-> Alternately, you can refer to the [Running an HTTP server for testing](../../config/dev-test-live/running-an-http-server-for-testing.md) tutorial for information on how to set one up.
+> Alternately, you can refer to the [Running an HTTP server for testing](running-an-http-server-for-testing.md) tutorial for information on how to set one up.
 
 ## Setting up Phaser
 

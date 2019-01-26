@@ -37,7 +37,7 @@ Generally, if an **Error Object** is defined (not null), it indicates that an **
 
 ## Inspecting the Error
 
-The most common way to inspect an **Error** is to recognize the **Error** through the code. As described in the [Global API Method Error Codes](../../config/dev-test-live/global-api-method-error-codes.md) tutorial, each generated **Error** contains human-readable and numeric **Error** codes. The code on its own is sufficient to recognize and process the **Error** accordingly.
+The most common way to inspect an **Error** is to recognize the **Error** through the code. As described in the [Global API Method Error Codes](global-api-method-error-codes.md) tutorial, each generated **Error** contains human-readable and numeric **Error** codes. The code on its own is sufficient to recognize and process the **Error** accordingly.
 
 Let's take the [LoginWithEmailAddress](xref:titleid.playfabapi.com.client.authentication.loginwithemailaddress) **API** method as an example. As stated in the [documentation](xref:titleid.playfabapi.com.client.authentication.loginwithemailaddress) for this method, the following internal **Error** may be thrown upon execution:
 
@@ -83,7 +83,7 @@ PlayFabClientAPI.LoginWithEmailAddress(new LoginWithEmailAddressRequest() {
 
 Once the **Error** is identified, the handle/recover strategy depends on the **Error** type and nature. **Errors** such as *invalid arguments* will *never* succeed if retried. The request must be fixed for that **API** call to succeed.
 
-There ia a subset of **Errors** where a retry strategy can be applied. *Retry-able* **Error** types are described in the [Global API Method Error Codes](../../config/dev-test-live/global-api-method-error-codes.md) tutorial.
+There ia a subset of **Errors** where a retry strategy can be applied. *Retry-able* **Error** types are described in the [Global API Method Error Codes](global-api-method-error-codes.md) tutorial.
 
 Please make sure to meet the following requirements when applying a retry strategy:
 
@@ -91,4 +91,4 @@ Please make sure to meet the following requirements when applying a retry strate
 
 - You should apply this retry strategy *selectively*, only using it for those codes that are worth retrying.
 
-See our [Global API Method Error Codes](../../config/dev-test-live/global-api-method-error-codes.md) tutorial for a list of codes that are safe to retry.
+See our [Global API Method Error Codes](global-api-method-error-codes.md) tutorial for a list of codes that are safe to retry.

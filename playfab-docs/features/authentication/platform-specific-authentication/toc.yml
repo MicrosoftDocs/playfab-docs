@@ -7,6 +7,10 @@
   items:
   - name: Login basics and Best Practices
     href: login-basics-best-practices.md
+  - name: Running an HTTP server for testing
+    href: running-an-http-server-for-testing.md
+  - name: Migrating from Parse to PlayFab
+    href: migrating-from-parse-to-playfab.md
   - name: Setting up PlayFab authentication using Facebook and HTML5
     href: facebook-html5.md
   - name: Setting up PlayFab authentication using Facebook and Unity

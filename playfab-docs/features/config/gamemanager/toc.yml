@@ -13,6 +13,8 @@
     href: audit-logs.md
   - name: Encrypted Logins
     href: encrypted-logins.md
+  - name: Getting PlayFab Developer Keys
+    href: getting-playfab-developer-keys.md
   - name: Player Encryption Services
     href: player-encryption-services.md
   - name: PlayFab user roles

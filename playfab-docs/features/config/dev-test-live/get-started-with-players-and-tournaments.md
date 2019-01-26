@@ -104,7 +104,7 @@ Examples of **Configuration Data** might include how much **XP** a **Player** ea
 
 1. Go to **Content**.
 
-1. Slect **Title Data**.
+1. Select **Title Data**.
 
 1. Add a few **Keys** and **Values** (doesn't matter what they are).
 1. Select the **Save Title Data** button.

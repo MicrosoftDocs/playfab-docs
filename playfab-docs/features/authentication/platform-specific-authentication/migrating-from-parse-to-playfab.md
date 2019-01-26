@@ -26,7 +26,7 @@ Most developers tell us that building their **Game** on **PlayFab** is much fast
 
 This migration tutorial assumes that you have *already* familiarized yourself with **PlayFab’s** features.
 
-If you haven’t - we recommend you start by reading our tutorial [Getting started with PlayFab](getting-started-with-playfab.md), then come back to this tutorial to learn more about the migration process.
+If you haven’t - we recommend you start by reading our tutorial [Getting started with PlayFab](../../config/dev-test-live/getting-started-with-playfab.md), then come back to this tutorial to learn more about the migration process.
 
 ### Storing Files and data
 
@@ -93,6 +93,7 @@ But with **PlayFab** you *can* segment **Players** into different **Groups**, ba
 Also on our short-term road map is searching for specific **Players**, based on their properties for match-making or challenges.
 
 ### Cloud Code
+
 Both **Parse** and **PlayFab** provide server-side **JavaScript** for writing custom **Game** code.
 
 With **PlayFab**, it’s called [CloudScript](../../automation/cloudscript/quickstart.md). Today **Parse** has better tools for debugging **Cloud** code, but this is on the **PlayFab** road map.

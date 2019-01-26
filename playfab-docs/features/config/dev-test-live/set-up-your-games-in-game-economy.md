@@ -133,6 +133,7 @@ And now the **Player** has only **95 gold coins** left...
 ![Game Manager - Players - Virtual Currency updated](media/tutorials/game-manager-virtual-currency-updated.png)  
 
 ## Step 4: Create a Store with a discounted price
+
 Buying **Items** out of the **Catalog** is fine, but it's not how *most* games structure their purchases. Whether you're making an idle clicker, an RPG, a FPS, or an endless runner, you probably have **Stores** in your game where **Players** can buy weapons, armor, or running shoes.
 
 Our solution for this is **Stores**, a subset of your **Catalog** with prices you can override. It also enables some amazing functionality in **PlayStream** (we'll get to that later).
