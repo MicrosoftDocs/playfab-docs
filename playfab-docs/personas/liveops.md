@@ -12,28 +12,25 @@ ms.localizationpriority: medium
 
 # Getting started for LiveOps
 
-At PlayFab, we believe that LiveOps techniques are the single most important reason why great games connect with players over the long haul, and an effective LiveOps strategy can make the difference between success and failure for a modern game. LiveOps - the practice of making smart, data-driven and frequent changes to a game  after its launch to keep players engaged - has transformed the way that games are developed and managed.
+We believe that a successful LiveOps strategy is the single, most important contributor to a game’s ability to connect with and grow a community. That’s why PlayFab was built from the ground up to support great LiveOps for your game. This document will introduce you to the LiveOps capabilities of PlayFab and help you find more resources for LiveOps design and implementation.
 
-## The impact of LiveOps
+## Exploring LiveOps
 
-Successful free-to-play (F2P) and traditional AAA game studios today recognize and embrace the idea that games have evolved into services that evolve and grow over time with new content, live events, and frequent updates. While games must still aim to provide fun and engaging experiences, the bar has been raised - to be successful over the long term, games need to also understand and segment their players, develop deep relationships, and understand and meet the needs of multiple player segments. This requires the ability to track and understand the data that players generate in your game - and to react in real-time, which in turn requires that your game run on services.
+LiveOps refers to an approach to game design and development that centers around the game after launch and specifically player engagement and retention. LiveOps processes emphasis experimentation, real-time data collection and analysis, and iteration. If you want to learn more about LiveOps in general and how the LiveOps approach is applied to games at every phase of development, check out these resources:
 
-Collectively, these activities have come to be called “LiveOps”, and they are most important for the rapidly growing market of F2P games, where games are monetized through in-game purchases and advertisements as opposed to one-time up-front payments. Zynga was one of the first US companies to adopt LiveOps techniques.
+- The LiveOps Handbook
+- LiveOps Design Guides
+- The LiveOps Academy Blog
 
-## Implications of LiveOps
 
-Planning for a LiveOps model has several important ramifications for your studio. With LiveOps, you can:
+## Doing LiveOps with PlayFab
 
-- Make changes to your game quickly, which provides a fast and clean way to address unforeseen problems that crop up after launch. 
+PlayFab offer a variety of tools to empower you to run your LiveOps strategy. The PlayFab GameManager is your portal to access the tools and abilities described below. GameManager provides a web-based interface from which LiveOps can be managed and deployed. Most LiveOps functions can be created, managed, and deployed entirely from the GameManager and many can also be updated easily in bulk through JSON file uploads.
 
-- Segment players and make targeted communications or offers appropriate for each segment to stimulate engagement and boost monetization.
-
-- Run special in-game events to keep a game from getting stale, or attract players to come back and re-engage - often with dramatic impact.
-
-- Collect and analyze game data to provide insight into how to tune and improve your game. Viewing performance in real-time can identify issues like a new update causing a spike in errors, or a mis-configuration causing an exploit that might permanently ruin your game’s economy if not quickly rolled back.
-
-## Conclusion
-
-The LiveOps approach is clearly gaining traction, and influencing how titles from F2P casual games to AAA titles build and run their games. Using LiveOps, games are launching faster, and are leveraging the flexibility of being run on services; they're using the data created by players to add new content and updates to the game and respond to issues in near real-time. This has had a very real impact on the 
-development cycle, allowing teams to release much more frequently with targeted updates to their game clients.
-
+- Player Segments - PlayFab can automatically sort your players into cohorts, that can then be acted upon through Cloudscript, A/B testing, or Rules. PlayFab comes with several of the most common segments already set up but you can also make your own segments using player login data or Groups defined by in game behavior.
+- Economy - Manage your game’s monetization across all platforms through configurable Stores, Currencies, and pricing. Also, in game economy can be managed through PlayFab allowing real-time changes to item Catalogs, availability, pricing, and Drop Tables.
+- Leaderboards – Create leaderboards to track any aspect of your game and manage reset frequency and aggregation method.
+- Content configuration – PlayFab allows for robust content management in real time through key value pair definitions, in game messaging, and email templates.
+- Automation – Store and run scripts in the cloud with CloudScript, enabling everything from triggered events to highly customized data tracking.
+- A/B testing – Create, run, and report on A/B testing using PlayFab player segments.
+- Rules and scheduled tasks – Set up rules and scheduled tasks based on PlayStream events or CloudScripts.
