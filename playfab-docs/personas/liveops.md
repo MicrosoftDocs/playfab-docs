@@ -1,23 +1,39 @@
 ---
-title: Getting Started for LiveOps
-author: mawillia
+title: Getting started for LiveOps
+author: v-kciril
 description: Getting started page for LiveOps.
-ms.author: mawillia
-ms.date: 12/07/2018
+ms.author: v-kciril
+ms.date: 1/25/19
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, real-time analytics, PlayStream, live operations, player behaviors, event archiving, data export, player data, webhooks, analytic reporting, reports
 ms.localizationpriority: medium
 ---
 
-# Getting Started for LiveOps
+# Getting started for LiveOps
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa tincidunt dui ut ornare lectus. Viverra vitae congue eu consequat ac felis donec. Leo urna molestie at elementum eu facilisis. A cras semper auctor neque vitae tempus quam. Amet cursus sit amet dictum sit amet justo donec enim. Faucibus turpis in eu mi bibendum neque egestas congue. Morbi quis commodo odio aenean sed adipiscing diam. Lectus vestibulum mattis ullamcorper velit. Dictum fusce ut placerat orci nulla pellentesque.
+At PlayFab, we believe that LiveOps techniques are the single most important reason why great games connect with players over the long haul, and an effective LiveOps strategy can make the difference between success and failure for a modern game. LiveOps - the practice of making smart, data-driven and frequent changes to a game  after its launch to keep players engaged - has transformed the way that games are developed and managed.
 
-Lorem mollis aliquam ut porttitor leo a diam sollicitudin. Mattis rhoncus urna neque viverra. Pharetra vel turpis nunc eget lorem dolor sed. Aliquam eleifend mi in nulla posuere sollicitudin aliquam ultrices. Adipiscing elit ut aliquam purus sit. Eleifend mi in nulla posuere sollicitudin aliquam. Luctus accumsan tortor posuere ac. Pulvinar sapien et ligula ullamcorper malesuada proin libero nunc consequat. Dignissim cras tincidunt lobortis feugiat vivamus at augue eget. Eu consequat ac felis donec et odio pellentesque diam volutpat. Fermentum odio eu feugiat pretium nibh ipsum. Enim sit amet venenatis urna cursus eget nunc. Sollicitudin nibh sit amet commodo. Varius quam quisque id diam vel quam elementum pulvinar. Vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant. Dui id ornare arcu odio ut. Imperdiet sed euismod nisi porta. Amet purus gravida quis blandit turpis cursus in.
+## The impact of LiveOps
 
-In arcu cursus euismod quis viverra nibh cras. Feugiat scelerisque varius morbi enim nunc faucibus. Sed adipiscing diam donec adipiscing tristique risus nec. Mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien et. Convallis a cras semper auctor neque vitae tempus quam. Et leo duis ut diam quam nulla. Egestas sed tempus urna et pharetra pharetra. Arcu felis bibendum ut tristique et. Donec ac odio tempor orci dapibus ultrices in iaculis nunc. Ullamcorper a lacus vestibulum sed arcu non odio.
+Successful free-to-play (F2P) and traditional AAA game studios today recognize and embrace the idea that games have evolved into services that evolve and grow over time with new content, live events, and frequent updates. While games must still aim to provide fun and engaging experiences, the bar has been raised - to be successful over the long term, games need to also understand and segment their players, develop deep relationships, and understand and meet the needs of multiple player segments. This requires the ability to track and understand the data that players generate in your game - and to react in real-time, which in turn requires that your game run on services.
 
-Nulla aliquet enim tortor at auctor urna nunc id. Turpis massa sed elementum tempus. Commodo viverra maecenas accumsan lacus vel facilisis volutpat est. Nibh nisl condimentum id venenatis. Sagittis id consectetur purus ut faucibus. Diam maecenas ultricies mi eget mauris pharetra. Porttitor lacus luctus accumsan tortor posuere ac ut consequat semper. Nunc sed velit dignissim sodales. Tortor condimentum lacinia quis vel. Elementum curabitur vitae nunc sed velit dignissim sodales ut eu. Tincidunt eget nullam non nisi est sit amet facilisis magna. Pellentesque pulvinar pellentesque habitant morbi tristique senectus et netus. Morbi quis commodo odio aenean sed adipiscing diam donec. Nunc sed id semper risus in hendrerit gravida rutrum quisque. Id interdum velit laoreet id. Tempor id eu nisl nunc. Cras tincidunt lobortis feugiat vivamus at augue eget arcu dictum. Tempus urna et pharetra pharetra massa massa.
+Collectively, these activities have come to be called “LiveOps”, and they are most important for the rapidly growing market of F2P games, where games are monetized through in-game purchases and advertisements as opposed to one-time up-front payments. Zynga was one of the first US companies to adopt LiveOps techniques.
 
-Risus in hendrerit gravida rutrum quisque non. Pulvinar mattis nunc sed blandit. Augue mauris augue neque gravida in fermentum et. Odio ut sem nulla pharetra diam sit amet nisl suscipit. Facilisis gravida neque convallis a cras semper. Ac turpis egestas maecenas pharetra convallis. Nunc non blandit massa enim nec dui nunc mattis enim. Eu facilisis sed odio morbi quis commodo odio aenean sed. Amet consectetur adipiscing elit pellentesque habitant. Lorem ipsum dolor sit amet consectetur adipiscing elit ut aliquam. In nibh mauris cursus mattis molestie a. Duis at consectetur lorem donec. Ac odio tempor orci dapibus ultrices in iaculis nunc. A arcu cursus vitae congue mauris rhoncus aenean vel elit. Facilisis magna etiam tempor orci eu lobortis elementum. Congue mauris rhoncus aenean vel elit. Gravida dictum fusce ut placerat orci nulla pellentesque dignissim enim. Netus et malesuada fames ac turpis egestas integer.
+## Implications of LiveOps
+
+Planning for a LiveOps model has several important ramifications for your studio. With LiveOps, you can:
+
+- Make changes to your game quickly, which provides a fast and clean way to address unforeseen problems that crop up after launch. 
+
+- Segment players and make targeted communications or offers appropriate for each segment to stimulate engagement and boost monetization.
+
+- Run special in-game events to keep a game from getting stale, or attract players to come back and re-engage - often with dramatic impact.
+
+- Collect and analyze game data to provide insight into how to tune and improve your game. Viewing performance in real-time can identify issues like a new update causing a spike in errors, or a mis-configuration causing an exploit that might permanently ruin your game’s economy if not quickly rolled back.
+
+## Conclusion
+
+The LiveOps approach is clearly gaining traction, and influencing how titles from F2P casual games to AAA titles build and run their games. Using LiveOps, games are launching faster, and are leveraging the flexibility of being run on services; they're using the data created by players to add new content and updates to the game and respond to issues in near real-time. This has had a very real impact on the 
+development cycle, allowing teams to release much more frequently with targeted updates to their game clients.
+
