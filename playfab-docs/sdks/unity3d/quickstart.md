@@ -14,7 +14,9 @@ ms.localizationpriority: medium
 
 This guide will help you make your first PlayFab API call in the Unity3d engine.   
 
-OS: This guide is written for Windows 10, however it should also work fine with a Mac.   
+OS: This guide is written for Windows 10, however it should also work fine with a Mac. 
+
+Before continuing, make sure you have completed [Getting started for developers](../../personas/developer.md) which ensures you have a PlayFab account and are familiar with the PlayFab Game Manager.
 
 ## Download Unity   
 If you don't have unity installed, then you will need to install it and create a project.   
@@ -40,12 +42,12 @@ The best way to acquire our Unity SDK is via our editor extensions. Although you
 
   - Click Import, which will import the PlayFab Unity Editor Extensions into your project.
 
-- Log In or Register
-  - Before you can download the SDK you must log in with your PlayFab account. If you don't have one you can create one, or click the "Log In" link to take you to the login pane, and log in with your PlayFab username and password.
+- Log In
+  - Before you can download the SDK make sure you are logged into your PlayFab account. Click the "Log In" link to take you to the login pane, and log in with your PlayFab username and password.
 
-    ![Log in or register with PlayFab](media/login-register-uedex.png)
+    ![Log in to PlayFab](media/login-register-uedex.png)
 
-  - Once you have registered and logged in, you will find yourself on this screen. Click Install PlayFab SDK and it will automatically import the SDK into your project, or upgrade the version you currently have.
+  - Once you have logged in, you will find yourself on this screen. Click Install PlayFab SDK and it will automatically import the SDK into your project, or upgrade the version you currently have.
   
     ![Install PlayFab SDK](media/install-sdk.png)
 

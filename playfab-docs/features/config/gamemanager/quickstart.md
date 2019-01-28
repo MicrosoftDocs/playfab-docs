@@ -12,6 +12,8 @@ ms.localizationpriority: medium
 
 # Game Manager quickstart
 
+This quickstart familiarizes you with the high-level aspects of the Game Manager. For more detailed information, select your specific topic of interest in the PlayFab documentation. By now, you should have created your PlayFab account, logged in, and viewed the Game Manager for your title, even if it's an empty title for now. The following provides more detail on each Game Manager area. Each time you perform an API call or task, view the results in the Game Manager in the appropriate area for that task.
+
 ## Let's begin with the basics: Your Developer Account
 
 Before you can call any PlayFab **API**, you must [have a PlayFab developer account](https://developer.playfab.com/en-us/sign-up). If you already have a PlayFab account, you can skip this step.
