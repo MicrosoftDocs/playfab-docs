@@ -10,18 +10,18 @@ keywords: playfab, multiplayer servers, thunderhead, pricing
 ms.localizationpriority: medium
 ---
 
-# Multiplayer Servers - detailed price sheet
+# Multiplayer servers - detailed price sheet
 
-PlayFab Multiplayer Servers operate on most generally available Azure virtual machine sizes and regions. These are the most popular series for game developers providing progressively faster processors:
+PlayFab multiplayer servers operate on most generally available **Azure** virtual machine sizes and regions. These are the most popular series for game developers providing progressively faster processors:
 
-- The Av2-series VMs can be deployed on a variety of hardware types and processors. The size is throttled, based upon the hardware, to offer consistent processor performance for the running instance, regardless of the hardware it is deployed on. 
-- The Dv3-series features the 2.4 GHz Intel Xeon® E5-2673 v3 (Haswell) processor or the latest 2.3 GHz Intel XEON ® E5-2673 v4 (Broadwell) processor in a hyper-threaded configuration.
-- The Fv1-series is based on the 2.4 GHz Intel Xeon® E5-2673 v3 (Haswell) processor, which can achieve clock speeds as high as 3.1 GHz with the Intel Turbo Boost Technology 2.0. This is the same CPU performance as the Dv2-series of VMs, but F-series VMs are a better choice for workloads that demand faster CPUs but do not need as much memory or temporary storage per vCPU.
+- The **Av2**-series **VMs** can be deployed on a variety of hardware types and processors. The size is throttled, based upon the hardware, to offer consistent processor performance for the running instance, regardless of the hardware it is deployed on. 
+- The **Dv3**-series features the 2.4 GHz **Intel Xeon® E5-2673 v3** (**Haswell**) processor or the latest 2.3 GHz **Intel XEON ® E5-2673 v4** (**Broadwell**) processor in a hyper-threaded configuration.
+- The **Fv1**-series is based on the 2.4 GHz **Intel Xeon® E5-2673 v3** (**Haswell**) processor, which can achieve clock speeds as high as 3.1 GHz with the **Intel Turbo Boost Technology 2.0**. This is the same CPU performance as the **Dv2**-series of **VMs**, but **F-series VMs** are a better choice for workloads that demand faster CPUs but do not need as much memory or temporary storage per vCPU.
 
 This page provides detailed pricing information for PlayFab multiplayer servers. Two key points:
 
 - During the public preview of PlayFab multiplayer servers, utilization is billed with a 30% discount. This discount ends when the service exits preview in March 2019.
-- Unless otherwise specified, the price for a virtual machine is proportional to the number of virtual CPUs and their type. For example, a 4-core virtual machine from the Dv3 series will cost twice as much as a 2-core virtual machine.
+- Unless otherwise specified, the price for a virtual machine is proportional to the number of virtual CPUs and their type. For example, a 4-core virtual machine from the **Dv3** series will cost twice as much as a 2-core virtual machine.
 
 > [!NOTE]
 > The following prices are **per virtual machine compute hour**.
