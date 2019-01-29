@@ -28,8 +28,8 @@ This guide will help you make your first PlayFab API call in the Xamarin IDE usi
 
       ![Xamarin Updates for Visual Studio](media/xamarin-vs-updates.png)
 
-- Download and extract the PlayFab CSharpSdk
-  - [CSharpSDK](https://api.playfab.com/sdks/download/xamarin)
+- Download and extract the PlayFab Xamarin (C#) SDK
+  - [Xamarin (C#) SDK](https://api.playfab.com/downloads/xamarin)
   - This guide will use {CSharpSdkLocation} to describe the extracted location of this SDK
 
 - Open Visual Studio and create a new Cross-Platform Xamarin project

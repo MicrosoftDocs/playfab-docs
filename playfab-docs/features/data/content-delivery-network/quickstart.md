@@ -47,7 +47,7 @@ Before your users are able to fetch an **Asset**, it must be uploaded to the **C
 - Choose the **File Management** tab **(2)**.
 - Then select the **Upload Files** button **(3)**.
 
-![Game Manager - Content - File Management - Upload Files](../../config/dev-test-live/media/tutorials/game-manager-content-file-management-upload-files.png)  
+![Game Manager - Content - File Management - Upload Files](../../data/content-delivery-network/media/tutorials/game-manager-content-file-management-upload-files.png)  
 
 You may:
 
@@ -55,22 +55,22 @@ You may:
 - Every file selected will appear in the list **(2)**.
 - Submit your **Files** by selecting the **Upload Files** button **(3)**.
 
-![Game Manager - Choose and Upload Files](../../config/dev-test-live/media/tutorials/game-manager-choose-and-upload-files.png)  
+![Game Manager - Choose and Upload Files](../../data/content-delivery-network/media/tutorials/game-manager-choose-and-upload-files.png)  
 
 - Uploaded **Files** will appear in the list **(1)**.
 - Keep in mind that you may also *manage* **Folders**. 
   - To create a **Folder**, select the **New Folder** button **(2)**.
 
-![Game Manager - Content - File Management - File List and New Folder](../../config/dev-test-live/media/tutorials/game-manager-content-file-management-file-list-new-folder.png)  
+![Game Manager - Content - File Management - File List and New Folder](../../data/content-delivery-network/media/tutorials/game-manager-content-file-management-file-list-new-folder.png)  
 
 - Fill in the **Folder** name **(1)**.
 - Select the **Create Folder** button **(2)**.
 
-![Game Manager - Create New Folder](../../config/dev-test-live/media/tutorials/game-manager-create-new-folder.png)  
+![Game Manager - Create New Folder](../../data/content-delivery-network/media/tutorials/game-manager-create-new-folder.png)  
 
 This will create a new **Folder** in the tree. You may then select this **Folder**, and upload the **Files** normally.
 
-![Game Manager - Content - File Management - Select Folder](../../config/dev-test-live/media/tutorials/game-manager-content-file-management-select-folder.png)  
+![Game Manager - Content - File Management - Select Folder](../../data/content-delivery-network/media/tutorials/game-manager-content-file-management-select-folder.png)  
 
 Alternatively, you may upload assets via code using the **Admin SDK**. This is a two step process:
 

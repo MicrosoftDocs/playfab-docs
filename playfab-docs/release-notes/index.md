@@ -95,7 +95,7 @@ Date: 2018-09-17
 
 **API Changes:**
 
-* [Server API](https://api.playfab.com/documentation/server): Method [DeleteUsers](https://api.playfab.com/documentation/server/method/DeleteUsers) is deprecated and replaced with [DeletePlayer](xref:titleid.playfabapi.com.server.accountmanagement.deleteplayer)
+* The Server API method **DeleteUsers** is deprecated and replaced with [DeletePlayer](xref:titleid.playfabapi.com.server.accountmanagement.deleteplayer)
 * Unreal Marketplace Plugin:
     * Updated Marketplace Plugin to include our Blueprint interface
     * [New Unreal Engine quickstart guide](../sdks/unreal/quickstart.md)
@@ -108,7 +108,7 @@ Date: 2018-09-06
 
 **New API:**
 
-* [Localization](https://api.playfab.com/documentation/Localization)
+* **Localization**
 
 **New PlayStream Event Documentation:**
 
@@ -144,7 +144,6 @@ Date: 2018-08-09
 
 * We have separated the Entity API Group into multiple new Api Groups
 * This is a big SDK Breaking change for anybody using the former Entity Api
-* See our [Blog!](https://api.playfab.com/blog/entity-api-group-restructure)
 * See our [Upgrade Guide!](../features/data/entities/entity-api-restructure-upgrade-tutorial.md)
 * (Please note, the links for blog and upgrade guide may not work yet, they're almost done)
 
@@ -240,7 +239,7 @@ Date: 2018-07-05
 
 * Wrapped some utilities in a namespace to avoid 3rd party conflicts
 * Editor Extensions should misbehave less, and display fewer warnings
-* New Feature - read [the blog](https://api.playfab.com/blog/sessions-preview-is-live)
+* New Feature - read our [Sessions](../features/analytics/metrics/sessions.md) tutorial.
 
 **[JavaScriptSDK](https://github.com/PlayFab/JavaScriptSDK) Changes:**
 

@@ -136,7 +136,7 @@ Once the delete is complete, an email will be sent to the notification email add
 
 Using our **WebHook** feature, you can register to receive these **Events** on an endpoint of your choosing, and process them as needed. The **Event** will contain a **JSON** blob that has the **JobReceiptId**.
 
-The following example shows how to use the **Admin API** with the **C# SDK** which can be downloaded [here](https://api.playfab.com/sdks/c). If you would like to use a different **SDK** then select one from the list of [PlayFab SDKs](../../../index.md?#pivot=documentation&panel=sdks).
+The following example shows how to use the **Admin API** with the [C# SDK](../../../sdks/c-sharp/index.md). If you would like to use a different **SDK** then select one from the list of [PlayFab SDKs](../../../index.md?#pivot=documentation&panel=sdks).
 
 ```csharp
 public static async void StartDeleteMasterPlayerExample(Action<PlayFabError> callback)
@@ -224,7 +224,7 @@ This **API** immediately returns a **JobReceiptId** which you should store in yo
 
 The completion of the task will also trigger a **PlayStream Event**. Using our **WebHook** feature, you can register to receive these **Events** on an endpoint of your choosing and process as needed. The **Event** will contain a **JSON** blob that has information such as the **JobReceiptId** and the download **URL** for the exported data.
 
-The following example is how to use the **Admin API** with the **C# SDK** which can be downloaded [here](https://api.playfab.com/sdks/c). If you would like to use a different **SDK** then select one from the list of [PlayFab SDKs](../../../index.md?#pivot=documentation&panel=sdks).
+The following example is how to use the **Admin API** with the [C# SDK](../../../sdks/c-sharp/index.md). If you would like to use a different **SDK** then select one from the list of [PlayFab SDKs](../../../index.md?#pivot=documentation&panel=sdks).
 
 ```csharp
 public static async void ExportMasterPlayerExample(Action<PlayFabError> callback)

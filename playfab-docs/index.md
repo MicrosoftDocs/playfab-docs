@@ -270,7 +270,7 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>Config</h3>
-                                                <p><a href='/gaming/playfab/features/config/gamemanager/quickstart'>Game Manager</a></p><p><a href='/gaming/playfab/features/config/titledata/quickstart'>Title Data</a></p><p><a href='/gaming/playfab/features/config/dev-test-live/quickstart'>Dev-Test-Live</a></p>
+                                                <p><a href='/gaming/playfab/features/config/gamemanager/quickstart'>Game Manager</a></p><p><a href='/gaming/playfab/features/config/titledata/quickstart'>Title Data</a></p>
                                             </div>
                                         </div>
                                     </div>

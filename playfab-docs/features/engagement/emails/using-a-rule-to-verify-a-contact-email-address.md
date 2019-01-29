@@ -24,7 +24,7 @@ This tutorial walks you through the steps for creating a rule that sends an veri
 > [!NOTE]
 > You can use Gmail for testing, but with Gmail you are limited to 2,000 emails per day.
 
-- Basic knowledge of how to create a player will be necessary since there will need to be players with a username and password before calling account recovery logic. Refer to our [Getting Started with PlayFab](../../config/dev-test-live/getting-started-with-playfab.md) tutorial which will run you through the process of creating a player for the title.
+- Basic knowledge of how to create a player will be necessary since there will need to be players with a username and password before calling account recovery logic.
 - Read the [Game Manager Quickstart](../../config/gamemanager/quickstart.md) if you are unfamiliar with the Game Manager as it is the place where email templates are created.
 - Knowledge of how to work with player profiles will be necessary to confirm that emails will be necessary for checking that a contact email has been added to a player's profile. Please read up on how to get a player’s profile in the [Getting Player Profiles](../../data/playerdata/getting-player-profiles.md) tutorial and make sure that under the **Client Profile Options** on your **Title** you allow **Contact email addresses**.
 - Creating a rule will be necessary in this tutorial it is a good idea to read up on how [Rules](../../automation/actions-rules/playstream-hooks-rules-conditions-and-actions.md) work.
@@ -93,7 +93,7 @@ Choose **Send Email** from the **Type** drop-down.
 
 ## Step 3 - Add a contact email to a player
 
-For this next step, you will need an existing player account. If you don't already have a player account, follow the instructions in [Getting Started with PlayFab](../../config/dev-test-live/getting-started-with-playfab.md).
+For this next step, you will need an existing player account.
 
 We add a contact email to the player using [AddOrUpdateContactEmail](xref:titleid.playfabapi.com.client.accountmanagement.addorupdatecontactemail).
 

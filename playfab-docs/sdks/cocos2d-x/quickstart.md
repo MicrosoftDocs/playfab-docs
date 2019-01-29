@@ -53,7 +53,7 @@ This guide will help you make your first PlayFab API call in the Cocos2d-x engin
 ```
 
 - Download PlayFab Cocos2d-xSdk
-  - [Cocos2d-xSDK](https://api.playfab.com/sdks/download/cpp-cocos2dx)
+  - [Cocos2D-x SDK (C++)](https://api.playfab.com/downloads/cocos-2d-sdk)
   - Save and extract it to a temporary location {PlayFabCocos}
   - Open the following folder in Windows Explorer: {PlayFabCocos}/PlayFabClientSDK
   - Open the following folder in a second Windows Explorer: {CocosGettingStarted}/Classes

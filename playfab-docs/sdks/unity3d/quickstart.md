@@ -18,7 +18,8 @@ OS: This guide is written for Windows 10, however it should also work fine with 
 
 Before continuing, make sure you have completed [Getting started for developers](../../personas/developer.md) which ensures you have a PlayFab account and are familiar with the PlayFab Game Manager.
 
-## Download Unity   
+## Download Unity
+
 If you don't have unity installed, then you will need to install it and create a project.   
 
 - Download Unity3D
@@ -31,9 +32,9 @@ If you don't have unity installed, then you will need to install it and create a
 
   - Finish creating a new empty project with a name and location of your choice   
 
+## Download PlayFab SDK
 
-## Download PlayFab SDK   
-The best way to acquire our Unity SDK is via our editor extensions. Although you can directly download the Unity SDK from our github page. [PlayFab UnitySDK Unity Package](https://api.playfab.com/sdks/download/unity-v2ap).   
+The best way to acquire our Unity SDK is via our editor extensions. Although you can directly download the Unity 3D SDK from our github page. [PlayFab Unity3D SDK](https://api.playfab.com/downloads/unity-v2ap).   
 
 - Download and Import the [PlayFab Unity Editor Extensions package](https://github.com/PlayFab/UnityEditorExtensions/raw/master/Packages/PlayFabEditorExtensions.unitypackage)
   - To import the the Unity Editor Extensions package, navigate to where the file was downloaded and double-click on the .UnityPackage file. This will bring up the following window.
@@ -109,13 +110,14 @@ public class PlayFabLogin : MonoBehaviour
         Debug.LogError(error.GenerateErrorReport());
     }
 }
-```   
+```  
+
 > [!IMPORTANT]
 > Please note that the above code is not for use with Mobile, this is an example only and shows how to login with a CustomID. Mobile games should use either
 [LoginWithAndroidDeviceID](xref:titleid.playfabapi.com.client.authentication.loginwithandroiddeviceid), [LoginWithIOSDeviceID](xref:titleid.playfabapi.com.client.authentication.loginwithiosdeviceid) or some form of social login like [LoginWithFacebook](xref:titleid.playfabapi.com.client.authentication.loginwithfacebook).
 
-
 ## Finish and Execute
+
 You are now ready to test out this sample.
 
 - Be sure to Save all files, and return to the Unity Editor

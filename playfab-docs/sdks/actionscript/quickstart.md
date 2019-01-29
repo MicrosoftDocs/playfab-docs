@@ -44,7 +44,7 @@ This guide will help you make your first PlayFab API call using ActionScript.
       - This will replace some existing files, and that's correct
 
     - Download the PlayFab ActionScriptSDK
-      - [PlayFab ActionScriptSDK](https://api.playfab.com/sdks/download/actionscript)
+      - [ActionScript SDK](https://api.playfab.com/downloads/actionscript)
       - Download the zip file, and extract it to a location of your choice {PlayFabAs3Location}
 
     - Updates to environment variables sometimes require a computer restart

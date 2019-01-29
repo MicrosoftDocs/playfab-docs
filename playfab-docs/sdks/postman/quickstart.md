@@ -16,7 +16,7 @@ This guide tells you how to download and set up the all-inclusive PlayFab Postma
 
 ## Prerequisites
 
-- You should be familiar with the topics covered in our [Getting Started with PlayFab](../../features/config/dev-test-live/getting-started-with-playfab.md) tutorial.
+- You should be familiar with basic PlayFab topics.
 
 - To connect to the PlayFab service, your machine must be running TLS v1.2 or better.
 

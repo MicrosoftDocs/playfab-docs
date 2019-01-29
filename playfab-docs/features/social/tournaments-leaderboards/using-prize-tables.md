@@ -25,7 +25,7 @@ In this example, we show you how to create the prize table End Tournament Prizes
 
 - Basic knowledge of how to create a player will be necessary, as there will need to be players in a leaderboard before it can perform any actions on those players.
 
-- Basic knowledge of how to create a **Player** will be necessary, as there will need to be players in a leaderboard before it can perform any actions on those players. Refer to the [Getting Started with PlayFab - Chapter 1](../../config/dev-test-live/get-started-with-players-and-tournaments.md) tutorial which will run you through the process of creating a player for the title.
+- Basic knowledge of how to create a **Player** will be necessary, as there will need to be players in a leaderboard before it can perform any actions on those players.
 - It is also worthwhile to read the [Game Manager quickstart](../../config/gamemanager/quickstart.md) if you are unfamiliar with the Game Manager, as it is the place where prize tables are created.
 - In order to use prize tables, you must have general knowledge of how resettable leaderboards work. Please read about leaderboards in our tutorial [Using Resettable Statistics and Leaderboards](using-resettable-statistics-and-leaderboards.md).
 - Additionally, virtual currencies must be set up. Please read our tutorial about [Currencies](../../commerce/economy/currencies.md) and set up two currencies with the following parameters:
@@ -91,7 +91,7 @@ Now, we’ll add a second rank range:
 
 A **Leaderboard** and **Prize Table** associated with it has now been created. The next step is to populate the **Leaderboard** with players.
 
-To create players we will be using [LoginWithCustomID](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid) from [Getting Started with PlayFab - Chapter 1](../../config/dev-test-live/get-started-with-players-and-tournaments.md), and then we will use the players to populate the **Leaderboard** with [UpdatePlayerStatistics](xref:titleid.playfabapi.com.client.playerdatamanagement.updateplayerstatistics).
+To create players, we will use [LoginWithCustomID](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid). Then, we will use the players to populate the **Leaderboard** with [UpdatePlayerStatistics](xref:titleid.playfabapi.com.client.playerdatamanagement.updateplayerstatistics).
 
 Before we can use [UpdatePlayerStatistics](xref:titleid.playfabapi.com.client.playerdatamanagement.updateplayerstatistics), we must enable it in **API Features**.
 

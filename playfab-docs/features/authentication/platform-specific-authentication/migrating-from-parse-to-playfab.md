@@ -26,8 +26,6 @@ Most developers tell us that building their **Game** on **PlayFab** is much fast
 
 This migration tutorial assumes that you have *already* familiarized yourself with **PlayFab’s** features.
 
-If you haven’t - we recommend you start by reading our tutorial [Getting started with PlayFab](../../config/dev-test-live/getting-started-with-playfab.md), then come back to this tutorial to learn more about the migration process.
-
 ### Storing Files and data
 
 Both **PlayFab** and **Parse** provide systems for storing **Files** and data for your game and **Players**, but they do it differently.

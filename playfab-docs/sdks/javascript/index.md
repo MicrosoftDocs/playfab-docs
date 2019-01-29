@@ -10,9 +10,9 @@ keywords: playfab, javascript, playfab javascript sdk, native, phaser
 ms.localizationpriority: medium
 ---
 
-# Javascript
+# JavaScript
 
-![Javascript](./media/javascript1.png)
+![JavaScript](./media/javascript1.png)
 
 Our JavaScript SDK provides everything you need to access the PlayFab API. This includes models, methods, an HTTP wrapper for sending and receiving web requests, and JSON serialization.
 

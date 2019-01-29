@@ -32,7 +32,7 @@ sections:
         src: "/gaming/playfab/media/quickstart-config.svg"
         text: "PlayFab Quickstarts: Config card image"        
       title: "Config"
-      html: "<p><a href='/gaming/playfab/features/config/gamemanager/quickstart'>Game Manager</a></p><p><a href='/gaming/playfab/features/config/titledata/quickstart'>Title Data</a></p><p><a href='/gaming/playfab/features/config/dev-test-live/quickstart'>Dev-Test-Live</a></p>"
+      html: "<p><a href='/gaming/playfab/features/config/gamemanager/quickstart'>Game Manager</a></p><p><a href='/gaming/playfab/features/config/titledata/quickstart'>Title Data</a></p>"
     - image:
         src: "/gaming/playfab/media/quickstart-automation.svg"
         text: "PlayFab Quickstarts: Automation card image"        
