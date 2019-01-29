@@ -3,21 +3,35 @@ title: Stores
 author: v-thopra
 description: Landing page for Stores.
 ms.author: v-thopra
-ms.date: 06/12/2018
+ms.date: 01/25/2019
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, commerce, stores
 ms.localizationpriority: medium
 ---
 
-# Stores
+# PlayFab Stores
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa tincidunt dui ut ornare lectus. Viverra vitae congue eu consequat ac felis donec. Leo urna molestie at elementum eu facilisis. A cras semper auctor neque vitae tempus quam. Amet cursus sit amet dictum sit amet justo donec enim. Faucibus turpis in eu mi bibendum neque egestas congue. Morbi quis commodo odio aenean sed adipiscing diam. Lectus vestibulum mattis ullamcorper velit. Dictum fusce ut placerat orci nulla pellentesque.
+Stores are the best way to let players purchase items in your game. You can use the Game Manager to change the order of items and adjust prices at any time. Using Segments, you can even give special prices to certain players without touching your game code.  
+  
+## Key concepts
 
-Lorem mollis aliquam ut porttitor leo a diam sollicitudin. Mattis rhoncus urna neque viverra. Pharetra vel turpis nunc eget lorem dolor sed. Aliquam eleifend mi in nulla posuere sollicitudin aliquam ultrices. Adipiscing elit ut aliquam purus sit. Eleifend mi in nulla posuere sollicitudin aliquam. Luctus accumsan tortor posuere ac. Pulvinar sapien et ligula ullamcorper malesuada proin libero nunc consequat. Dignissim cras tincidunt lobortis feugiat vivamus at augue eget. Eu consequat ac felis donec et odio pellentesque diam volutpat. Fermentum odio eu feugiat pretium nibh ipsum. Enim sit amet venenatis urna cursus eget nunc. Sollicitudin nibh sit amet commodo. Varius quam quisque id diam vel quam elementum pulvinar. Vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant. Dui id ornare arcu odio ut. Imperdiet sed euismod nisi porta. Amet purus gravida quis blandit turpis cursus in.
+* **Catalog** - Catalogs offer an easy way to manage your game's virtual items. They are listings of every item that is available in your game.  
+* **Catalog Items** – PlayFab Items can represent just about any type of virtual good that you might use, from Durables, to Bundles to Locked containers.  
+* **Player Inventory** - All PlayerAccounts have an inventory. The inventory contains all of the owned Item Instances as well as the item history to-date.  
+* **Character Inventory** - Similar to Player Inventory, except stored at a per-character level.
+* **Virtual Currency** - PlayFab offers up to 10 virtual currencies per title. Currencies can be used to purchase Items from the Catalog or a Store, represent soft currency converted from In App Purchases, or be used as a mechanic to drive gameplay.
+* **Segments** - Provides subsets of players grouped by their event history. For example, the "Frequent Players" segment is comprised of players that have logged in more than 100 times.
+* **Stores** - Stores serve a subset of Catalog Items; these items can be offered at alternative prices when compared to those set on the corresponding Catalog Items.
 
-In arcu cursus euismod quis viverra nibh cras. Feugiat scelerisque varius morbi enim nunc faucibus. Sed adipiscing diam donec adipiscing tristique risus nec. Mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien et. Convallis a cras semper auctor neque vitae tempus quam. Et leo duis ut diam quam nulla. Egestas sed tempus urna et pharetra pharetra. Arcu felis bibendum ut tristique et. Donec ac odio tempor orci dapibus ultrices in iaculis nunc. Ullamcorper a lacus vestibulum sed arcu non odio.
+Stores contains an array of references to items defined in your catalog, along with the prices for the item, in both real world and virtual currencies. Store prices act as an override to any prices defined in the catalog. In this way, the base definitions of the items may be defined in the catalog, with all associated properties, while the pricing can be set for each store as needed. This allows for subsets of goods to be defined for different purposes, and can be used to:
 
-Nulla aliquet enim tortor at auctor urna nunc id. Turpis massa sed elementum tempus. Commodo viverra maecenas accumsan lacus vel facilisis volutpat est. Nibh nisl condimentum id venenatis. Sagittis id consectetur purus ut faucibus. Diam maecenas ultricies mi eget mauris pharetra. Porttitor lacus luctus accumsan tortor posuere ac ut consequat semper. Nunc sed velit dignissim sodales. Tortor condimentum lacinia quis vel. Elementum curabitur vitae nunc sed velit dignissim sodales ut eu. Tincidunt eget nullam non nisi est sit amet facilisis magna. Pellentesque pulvinar pellentesque habitant morbi tristique senectus et netus. Morbi quis commodo odio aenean sed adipiscing diam donec. Nunc sed id semper risus in hendrerit gravida rutrum quisque. Id interdum velit laoreet id. Tempor id eu nisl nunc. Cras tincidunt lobortis feugiat vivamus at augue eget arcu dictum. Tempus urna et pharetra pharetra massa massa.
+* Easily organize your in-game storefront.
+* Create and organize sales.
+* Make the Items available for a set time period.
+* Appropriate certain Catalog Items to specific in-game vendors.
+* Override the Base Catalog prices for certain player Segments.
 
-Risus in hendrerit gravida rutrum quisque non. Pulvinar mattis nunc sed blandit. Augue mauris augue neque gravida in fermentum et. Odio ut sem nulla pharetra diam sit amet nisl suscipit. Facilisis gravida neque convallis a cras semper. Ac turpis egestas maecenas pharetra convallis. Nunc non blandit massa enim nec dui nunc mattis enim. Eu facilisis sed odio morbi quis commodo odio aenean sed. Amet consectetur adipiscing elit pellentesque habitant. Lorem ipsum dolor sit amet consectetur adipiscing elit ut aliquam. In nibh mauris cursus mattis molestie a. Duis at consectetur lorem donec. Ac odio tempor orci dapibus ultrices in iaculis nunc. A arcu cursus vitae congue mauris rhoncus aenean vel elit. Facilisis magna etiam tempor orci eu lobortis elementum. Congue mauris rhoncus aenean vel elit. Gravida dictum fusce ut placerat orci nulla pellentesque dignissim enim. Netus et malesuada fames ac turpis egestas integer.
+Stores are built on top of your game’s Virtual Catalogs and Currencies. Think of your primary Catalog as a definition of all the items in your game, and Stores as an override.
+
+Although you can use the Title Data Management APIs [SetStoreItems](xref:titleid.playfabapi.com.admin.title-widedatamanagement.setstoreitems) and [UpdateStoreItems](xref:titleid.playfabapi.com.admin.title-widedatamanagement.updatestoreitems) to control them programmatically, Stores are normally set up in [Game Manager](../../config/gamemanager/index.md).  

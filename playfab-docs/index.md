@@ -675,7 +675,7 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>Items</h3>
-                                                <p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/commerce/items/'>Overview</a></p><p><a href='/gaming/playfab/features/commerce/items/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/commerce/items/tutorials'>Tutorials</a></p>
+                                                <p style='color: #7f7f7f'>Items and inventories are common mechanisms to add customization and depth to your game. Playfab gives you top-notch support to define and track items for your game and and support a cloud based inventory for your players.</p><p><a href='/gaming/playfab/features/commerce/items/'>Overview</a></p><p><a href='/gaming/playfab/features/commerce/items/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/commerce/items/tutorials'>Tutorials</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -692,7 +692,7 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>Stores</h3>
-                                                <p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/commerce/stores/'>Overview</a></p><p><a href='/gaming/playfab/features/commerce/stores/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/commerce/stores/tutorials'>Tutorials</a></p>
+                                                <p style='color: #7f7f7f'>Stores serve a subset of Catalog Items; these items can be offered at alternative prices when compared to those set on the corresponding Catalog and are the best way to manage virtual purchases in your game. You can use the Game Manager or APIs to change the order of items, adjust prices, and leverage Plafab Segments to give special prices to certain players, run special sales events, or handle customized in-game vendors.</p><p><a href='/gaming/playfab/features/commerce/stores/'>Overview</a></p><p><a href='/gaming/playfab/features/commerce/stores/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/commerce/stores/tutorials'>Tutorials</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -709,7 +709,7 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>Economy</h3>
-                                                <p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/commerce/economy/'>Overview</a></p><p><a href='/gaming/playfab/features/commerce/economy/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/commerce/economy/tutorials'>Tutorials</a></p>
+                                                <p style='color: #7f7f7f'>Make your game economy work. Playfab helps you build out your economy by providing a suite of tools including virtual currencies, inventory, rich actionable data, and a catalog that supports segmentation, sales, coupons, bundles and more.</p><p><a href='/gaming/playfab/features/commerce/economy/'>Overview</a></p><p><a href='/gaming/playfab/features/commerce/economy/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/commerce/economy/tutorials'>Tutorials</a></p>
                                             </div>
                                         </div>
                                     </div>
