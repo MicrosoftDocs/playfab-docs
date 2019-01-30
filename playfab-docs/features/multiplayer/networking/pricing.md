@@ -38,7 +38,7 @@ There are three key meters used to bill additional Communications Fabric utiliza
 
 | SKU | $/player-minute connected to a network |
 | --- | --- |
-| Fabric Connectivity | $0.0001 |
+| Fabric Connectivity | $0.0002 |
 
 ## Fabric Voice
 
