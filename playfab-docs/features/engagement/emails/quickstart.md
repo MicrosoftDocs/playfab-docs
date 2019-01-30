@@ -21,7 +21,7 @@ Once your **SMTP** Server is set up and configured in PlayFab, you can follow ou
 You can also use the following APIs to manage player contact information and email functionality:
 - [AddorUpdateContactEmail](xref:titleid.playfabapi.com.client.accountmanagement.addorupdatecontactemail) - Updates or adds a contact email to the player’s profile.
 - [RemoveContactEmail](xref:titleid.playfabapi.com.client.accountmanagement.removecontactemail) - Deletes a contact email from the player’s profile.
-- [SendEmailFromTemplate](xref:titleid.playfabapi.com.admin.accountmanagement.sendemailfromtemplate) - Send a template email to a player’s primary contact email.
+- [SendEmailFromTemplate](xref:titleid.playfabapi.com.server.accountmanagement.sendemailfromtemplate) - Send a template email to a player’s primary contact email.
 - [SendAccountRecoveryEmail](xref:titleid.playfabapi.com.admin.accountmanagement.sendaccountrecoveryemail) - Send an Account Recovery email to the specified player.
 - [ResetPassword](xref:titleid.playfabapi.com.admin.accountmanagement.resetpassword) - Reset the player’s password for a given title.
 - [GetPlayerIdFromAuthToken](xref:titleid.playfabapi.com.admin.accountmanagement.getplayeridfromauthtoken) - Get a player’s ID from an authorization token.

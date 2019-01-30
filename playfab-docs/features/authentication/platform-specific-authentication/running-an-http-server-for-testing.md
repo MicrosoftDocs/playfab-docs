@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Running an HTTP server for testing
 
-In some scenarios, you may need to run a local **HTTP** server for test purposes. For example, if you are following our tutorials for setting up **PlayFab** authentication using [Facebook and HTML5](../../authentication/platform-specific-authentication/facebook-html5.md), [Google and HTML5](../../authentication/platform-specific-authentication/google-html5.md), or [Twitch and HTML5](../../authentication/platform-specific-authentication/twitch-html5.md), and you do not have a remote server with a domain, you may find this tutorial useful.
+In some scenarios, you may need to run a local **HTTP** server for test purposes. For example, if you are following our tutorials for setting up PlayFab authentication using [Facebook and HTML5](../../authentication/platform-specific-authentication/facebook-html5.md), [Google and HTML5](../../authentication/platform-specific-authentication/google-html5.md), or [Twitch and HTML5](../../authentication/platform-specific-authentication/twitch-html5.md), and you do not have a remote server with a domain, you may find this tutorial useful.
 
 ## Prerequisites
 
@@ -61,20 +61,20 @@ You can optionally specify a port to run the server on.
 
 - **Example**: Execute **http-server -p 80** to run your server on **port 80**. If a port is occupied, you will have to find what application is using this port and shut it down before you attempt to run the **HTTP**server again.
 
-### Serving files with a custom Domain Name
+### Serving files with a custom domain name
 
-When testing different **SDKs**, for example, [Google](../../authentication/platform-specific-authentication/google-html5.md) or [Facebook](../../authentication/platform-specific-authentication/facebook-html5.md), you will notice that some services can only be configured with a certain valid **Domain Name**.
+When testing different **SDKs**, for example, [Google](../../authentication/platform-specific-authentication/google-html5.md) or [Facebook](../../authentication/platform-specific-authentication/facebook-html5.md), you will notice that some services can only be configured with a certain valid domain name.
 
-For instance, they do not accept a plain **IP** address + port. Certain services use such a configuration to ensure that your browser fetches your code from a specific, secure **Domain**.
+For instance, they do not accept a plain **IP** address + port. Certain services use such a configuration to ensure that your browser fetches your code from a specific, secure domain.
 
-They also often use this configuration to ensure that a **User** can only log into your **Application** from your **Domain**, and that nobody else can fake it and steal **User** data.
+They also often use this configuration to ensure that a user can only log into your application from your domain, and that nobody else can fake it and steal user data.
 
 > [!NOTE]
 > While this is an important and useful security restriction, it may produce complications when trying to locally test your code.
 
-If you run your **server on port 80** and your use-case is simple enough, you can utilize the **HOSTS** file on your operating system to access your **HTTP** server through a valid **Domain Name**.
+If you run your server on **port 80** and your use-case is simple enough, you can utilize the HOSTS file on your operating system to access your **HTTP** server through a valid domain name.
 
-The **HOSTS** file is a special file available on both **Windows** and **Mac OS**. It allows you to override certain **Domain Names** with custom endpoints. Schematically, the **HOSTS** file looks like this:
+The HOSTS file is a special file available on both **Windows** and **Mac OS**. It allows you to override certain domain names with custom endpoints. Schematically, the HOSTS file looks like this:
 
 ```cmd
 IP_ADDRESS_1 DOMAIN_NAME_1
@@ -88,11 +88,11 @@ IP_ADDRESS_3 DOMAIN_NAME_3
 
 Each line represents exactly *one* entry. When you try to reach **DOMAIN_NAME_1**, your browser will direct your request to **IP_ADDRESS_1**.
 
-The same applies for *each* entry in the **HOSTS** file. In the preceding example, entry number **4** starts with **#**. This is a syntax for **comment**.
+The same applies for *each* entry in the HOSTS file. In the preceding example, entry number **4** starts with **#**. This is a syntax for *comment*.
 
-By **commenting** out certain entries you may disable them, without necessarily removing them from the **HOSTS** file.
+By *commenting* out certain entries you may disable them, without necessarily removing them from the HOSTS file.
 
-**playfab.example** is a valid **Domain Name**, but it is unlikely that your browser will reach any website with it. By adding the following entry to your **HOSTS** file, you will be able to reach your local **HTTP** server with that domain name.
+**playfab.example** is a valid domain name, but it is unlikely that your browser will reach any website with it. By adding the following entry to your HOSTS file, you will be able to reach your local **HTTP** server with that domain name.
 
 ```cmd
 127.0.0.1 playfab.example
@@ -100,13 +100,13 @@ By **commenting** out certain entries you may disable them, without necessarily 
 
 ![HTTP server - Hello World](media/tutorials/http-server-hello-world.png)  
 
-On **Windows OS**, the **HOSTS** file is normally located at:
+On **Windows OS**, the HOSTS file is normally located at:
 
  `C:\Windows\System32\drivers\etc\hosts`.
 
-On **Mac OS**, the **HOSTS** file is normally located at:
+On **Mac OS**, the HOSTS file is normally located at:
 
  `/private/etc/hosts`.
 
 > [!WARNING]
-> When entering your **Domain Name** in your browser address bar, always make sure to include the schema: http://playfab.example
+> When entering your domain name in your browser address bar, always make sure to include the schema: http://playfab.example
