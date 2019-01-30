@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 Licenses are available at the following links:
 
-[Libcurl](Licenses/libcurl-License.md)
-[OpenSSL](Licenses/OpenSSL-License.md)
-[RapidJSON](Licenses/RapidJSON-License.md)
-[zlib](Licenses/zlib-License.md)
+- [Libcurl](licenses/libcurl-license.md)
+- [OpenSSL](licenses/openssl-license.md)
+- [RapidJSON](licenses/rapidjson-license.md)
+- [zlib](licenses/zlib-license.md)

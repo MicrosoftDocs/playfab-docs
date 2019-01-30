@@ -14,5 +14,5 @@ ms.localizationpriority: medium
 
 Licenses are available at the following links:
 
-[json-lua](Licenses/json-license.md)
-[LuaSec](Licenses/LuaSec-license.md)
+- [json-lua](licenses/json-lua-license.md)
+- [LuaSec](licenses/luasec-license.md)
