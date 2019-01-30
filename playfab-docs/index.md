@@ -498,7 +498,7 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>Game Manager</h3>
-                                                <p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/config/gamemanager/'>Overview</a></p><p><a href='/gaming/playfab/features/config/gamemanager/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/config/gamemanager/tutorials'>Tutorials</a></p>
+                                                <p style='color: #7f7f7f'>The PlayFab developer portal and primary interface for inviting or managing teammates' access to your studios and titles.</p><p><a href='/gaming/playfab/features/config/gamemanager/'>Overview</a></p><p><a href='/gaming/playfab/features/config/gamemanager/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/config/gamemanager/tutorials'>Tutorials</a></p>
                                             </div>
                                         </div>
                                     </div>
