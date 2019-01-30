@@ -10,7 +10,7 @@ keywords: playfab, engagement, email, servers, smtp
 ms.localizationpriority: medium
 ---
 
-# Emails quickstart
+# Email Messaging quickstart
 To send emails from PlayFab, you will need to have your own external **SMTP** server with a username and password. Once you have an **SMTP** server available, check out [Setting up an SMTP server with add-ons](../../engagement/emails/setting-up-an-smtp-server-with-add-ons.md) to configure your title to send emails.
 
 > [!NOTE]
