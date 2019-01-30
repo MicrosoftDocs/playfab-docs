@@ -12,20 +12,10 @@ ms.localizationpriority: medium
 
 # Push notifications quickstart
 
-Push notifications give you a channel to send an immediate, customized message to your player’s home screen. Using PlayFab's Push feature, you may send unlimited push notifications to any number of devices completely free of charge.
+Push notifications from PlayFab are enabled by a linkage of three major systems:
 
-As a general guideline, always tell players *up front* how you will be using the Push notification service. Explaining to players how your game rewards or communicates via push notification can be the difference in building community engagement versus driving players away.
-
-The following screenshot is an example from an **Android** device's notifications area showing a push notification.
-
-![Android device - Notifications screen](../media/tutorials/android-notifications-screen.png)  
-
-## The push notification system
-
-Push notifications are possible due to a delicate linkage of three major systems:
-
-1. The vendor-specific channel (**Google**, **Apple**, etc.)
-2. The **Player’s OS**/device (**Android**, **iOS**, etc.)
+1. The **Player’s device OS** (**Android**, **iOS**, etc.)
+2. The vendor-specific channel (**Google**, **Apple**, etc.)
 3. Cross-platform message routing (PlayFab via **Amazon Simple Notification Service** [**SNS**]).
 
 > [!NOTE]
@@ -33,7 +23,7 @@ Push notifications are possible due to a delicate linkage of three major systems
 
 ## The PlayFab push routing system
 
-Every PlayFab title can enable one **Google** (**GCM**) and one **Apple Push** (**APNS**, **APNS_SANDBOX**) notification channel at a given time. This can be configured in one of two ways:
+Every PlayFab title can enable one **Google** (**GCM**) and one **Apple Push** (**APNS**, **APNS_SANDBOX**) notification channel at a given time. These can be configured in one of two ways:
 
 1. Using the **UI** in **Game Manager** under **Settings -> Push Notifications**.
 2. Using the **PlayFab Admin API** - [SetupPushNotification](xref:titleid.playfabapi.com.admin.title-widedatamanagement.setuppushnotification).
@@ -153,16 +143,16 @@ handlers.ChallengePlayer = function (args) {
 }
 ```
 
-## Push Notification Best Practices
+## Push Notification Usage
 
-Having the ability to use push notifications is an awesome power. When *abused*, however, it can drive away users and cause them to not only opt out of future notifications but to *leave a game entirely*.
+Having the ability to use push notifications is an awesome power. When *abused*, however, it can cause users to opt out of future notifications or even *leave a game entirely*.
 
 If used judiciously, though, push notifications can be one of your best tools for building and maintaining your game's community.
 
-Push notifications are a *fire and forget* message protocol, similar in vein to **UDP**.
+Push notifications are a *fire and forget* message protocol which does not guarantee delivery.
 
 > [!NOTE]
-> Remember that there is *no guarantee* that your players will receive, open, or engage with your message. With that caveat, it is a good practice to use messages as *bonus* content, rather than as a critical part of your gameplay loop.
+> Remember that there is *no guarantee* that your players will receive, open, or engage with your message. Given that caveat, it is a good practice to use messages as *bonus* functionality, rather than as a critical part of your gameplay loop.
 
 For **iOS** platforms, Apps are given a one-time dialog prompt from the OS, allowing the user to determine the status of push notifications. After the user has made their initial selection, this setting will persist until:
 
