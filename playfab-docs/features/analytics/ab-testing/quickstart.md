@@ -41,4 +41,11 @@ The workflow is illustrated in the following picture.
 
 The **A/B Testing** page will open and a newly created **Test** will appear in the list (shown below).
 
-![Game Manager - Automation - A/B Testing - List A/B Tests](media/tutorials/game-manager-automation-ab-testing-list-ab-tests.png)  
+![Game Manager - Automation - A/B Testing - List A/B Tests](media/tutorials/game-manager-automation-ab-testing-list-ab-tests.png)
+
+## Links
+
+To dive deeper into **A/B testing**, read the following tutorials:
+
+- [A/B Testing with Stores and test buckets](ab-testing-with-stores-and-test-buckets.md)
+- [A/B Testing with Title data](ab-testing-with-title-data.md)  

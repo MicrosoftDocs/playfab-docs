@@ -827,7 +827,7 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>A/B Testing</h3>
-                                                <p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/analytics/ab-testing/'>Overview</a></p><p><a href='/gaming/playfab/features/analytics/ab-testing/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/analytics/ab-testing/tutorials'>Tutorials</a></p>
+                                                <p style='color: #7f7f7f'>A/B testing is a technique for running experiments to determine the optimal setting for a particular variable.</p><p><a href='/gaming/playfab/features/analytics/ab-testing/'>Overview</a></p><p><a href='/gaming/playfab/features/analytics/ab-testing/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/analytics/ab-testing/tutorials'>Tutorials</a></p>
                                             </div>
                                         </div>
                                     </div>
