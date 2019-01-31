@@ -22,7 +22,7 @@ In some scenarios, you may need to run a local **HTTP** server for test purposes
 
 Run the command line/terminal on your system (it doesn't matter which directory you are currently in).
 
-Execute **npm install -g http-server**. Once **NPM** finishes, you have tiny **http**-server installed. That's it.
+Execute **npm install -g http-server**. Once **NPM** finishes, you have the tiny **HTTP**-server installed. That's it.
 
 ## Serving files
 
