@@ -19,12 +19,12 @@ A complete overview of **ES6** features is available in this [Cheat Sheet](https
 This tutorial shows several tricks you may use in your **CloudScript**.
 
 > [!NOTE]
-> Some of the features require **Strict** mode. Enable this mode by placing the following snippet as the very first line of your **CloudScript** file:
+> Some of the features require Strict mode. Enable this mode by placing the following snippet as the very first line of your **CloudScript** file:
 > `use strict;`
 
 ## String interpolation
 
-When composing messages for your **Players**, you may want to use multi-line interpolated strings. Use the **back-tick symbol** to create an interpolated string. You may then insert data right into the string using `${ variable }` syntax.
+When composing messages for your players, you may want to use multi-line interpolated strings. Use the *back-tick symbol* to create an interpolated string. You may then insert data right into the string using `${ variable }` syntax.
 
 This allows you to avoid string concatenation and improve code readability significantly. *Back-tick strings are verbatim and may be multi-line*. This means you have to keep an eye on all indention, as any extra space/tab will be captured into the string.
 
@@ -69,7 +69,7 @@ let bobIndex = players.findIndex(p => p.DisplayName === 'Bob');
 
 The `Object.assign` method allows you to easily extend any object with a new set of properties and methods.
 
-Having a large variety of usages, this method is particularly useful for extending a **Handlers** object and creating **Groups** of **Handlers**.
+Having a large variety of usages, this method is particularly useful for extending a handlers object and creating groups of handlers.
 
 ```javascript
 let TestHandlers = {
@@ -100,7 +100,7 @@ Object.assign(handlers, ProductionHandlers);
 // Object.assign(handlers, SomeOtherHandlers);
 ```
 
-This not only allows you to quickly enable and disable **Handler Groups**, but it also gives you a point to process your **Handlers** and wrap them with useful code, such as exception handling. 
+This not only allows you to quickly enable and disable handler groups, but it also gives you a point to process your handlers and wrap them with useful code, such as exception handling. 
 
 The following code extends the previous snippet with automatic exception logging. As an example, we log the problem, which is not always useful, but you can extend the behavior to your taste.
 
@@ -137,7 +137,7 @@ installHandlers(ProductionHandlers);
 
 ## Getters
 
-One may use **Getters** to encapsulate common **API** calls into a more syntactically pleasing look and feel. Consider the following **TitleData** state.
+One may use *Getters* to encapsulate common **API** calls into a more syntactically pleasing look and feel. Consider the following **TitleData** state.
 
 ![Game Manager - Title Data](media/tutorials/game-manager-title-data.png)  
 

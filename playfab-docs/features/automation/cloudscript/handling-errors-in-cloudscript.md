@@ -10,13 +10,13 @@ keywords: playfab, automation, cloudscript, error handling
 ms.localizationpriority: medium
 ---
 
-# Handling Errors in CloudScript
+# Handling errors in CloudScript
 
-This tutorial describes how to recognize and handle **Errors** within your **CloudScript** handlers.
+This tutorial describes how to recognize and handle errors within your **CloudScript** handlers.
 
 ## Identifying
 
-The first step is identifying the **Error**. While every uncaught **Error** is logged and available from the response to the caller (**Client**), you may still catch the **Error** early by using a try/catch block.
+The first step is identifying the error. While every uncaught error is logged and available from the response to the caller (client), you may still catch the error early by using a try/catch block.
 
 Consider the following **CloudScript** snippet that produces and catches the error:
 
@@ -35,17 +35,17 @@ handlers.GenerateError = () => {
 }
 ```
 
-Notice how the **Error** codes were extracted within the catch block. Consult our [Global API Method Error Codes](global-api-method-error-codes.md) tutorial for a complete list of **Error** and their identifying codes. The **Error** code on it's own is sufficient to identify the **Error**.
+Notice how the error codes were extracted within the catch block. Consult our [Global API Method Error Codes](global-api-method-error-codes.md) tutorial for a complete list of error and their identifying codes. The error code on it's own is sufficient to identify the error.
 
 ## Logging
 
-Any unhandled **Error** will be added to the response, allowing the client to process the problem.
+Any unhandled error will be added to the response, allowing the client to process the problem.
 
-At the same time, it does create a **CloudScript Error** entry and is added to the total statistics available on your **CloudScript Dashboard**.
+At the same time, it does create a **CloudScript** error entry and is added to the total statistics available on your **CloudScript** dashboard.
 
 ![Game Manager - Automation - CloudScript Dashboard](media/tutorials/game-manager-cloudscript-dashboard.png)  
 
-To force-log the exception in the form of a **JSON** string, use **Error** logging via the *log* object.
+To force-log the exception in the form of a **JSON** string, use error logging via the *log* object.
 
 ```javascript
 "use strict";
@@ -61,7 +61,7 @@ handlers.GenerateError = () => {
 }
 ```
 
-Finally, you may write **Title/Player** events for later processing through analytics.
+Finally, you may write title/player events for later processing through analytics.
 
 ```javascript
 "use strict";
@@ -82,12 +82,12 @@ handlers.GenerateError = () => {
 
 ## Recovery
 
-It's not always possible to recover from **Errors**. Issues like **InvalidArguments** leave you with no option but to report the problem back to the **Player**.
+It's not always possible to recover from errors. Issues like **InvalidArguments** leave you with no option but to report the problem back to the player.
 
-There are a subset of **Errors** where a retry strategy can be applied. *Retry-able* **Error** types are described in the [Global API Method Error Codes](global-api-method-error-codes.md) tutorial.
+There are a subset of errors where a retry strategy can be applied. *Retry-able* error types are described in the [Global API Method Error Codes](global-api-method-error-codes.md) tutorial.
 
 We ask that you *make sure* you meet the following requirements when applying a retry strategy:
 
-- With each retry, the delay between retries should *increase* exponentially. This increases your chances for a successful call, and prevents your game from spamming the **PlayFab** server (which will result in *more* rejected calls).
+- With each retry, the delay between retries should *increase* exponentially. This increases your chances for a successful call, and prevents your game from spamming the PlayFab server (which will result in *more* rejected calls).
 
 - You should apply this retry strategy *selectively*, only using it for those codes that are worth retrying.
