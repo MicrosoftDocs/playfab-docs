@@ -22,15 +22,15 @@ In this quickstart tutorial, you will:
 
 Buying items out of the Catalog is supported, but it's not how most games structure their purchases. Whether you're making an idle clicker, an RPG, an FPS, or an endless runner, you probably have vendors in your game where players can buy weapons, armor, or running shoes. Our solution for this is Stores, a subset of your catalog with prices you can override. Stores also enable sale prices, price overrides for segments, and some amazing functionality in PlayStream (we'll get to that later).
 
-First, add some Items to sell in your Catalog: 
+First, add some Items to sell in your catalog: 
 
-1. Go to economy and select catalogs. 
-2. Select your "main" catalog. 
-3. Click New item a few times and create some items: 
+1. Go to Economy and select Catalogs. 
+2. Select your "main" Catalog. 
+3. Click New Item a few times and create some Items: 
     "apricot" with "GD" cost of 4 
     "pear" with "GD" cost of 3 
     "grape" with no "GD" cost (don't select any prices) 
-    TIP: You don't have to assign a virtual currency price to items in the catalog for them to appear in a Store. 
+    TIP: You don't have to assign a Virtual Currency price to Items in the Catalog for them to appear in a Store. 
 
 You should now have a few items with prices. Let's create a Store to sell them to the player. 
 
@@ -47,12 +47,12 @@ TIP: You can drag and drop the rows to rearrange the order of the items.
     apricot: 4 
     pear: 2 
     grape: 1 
-2. Click Save store when you're done. 
+2. Click Save Store when you're done. 
 3. Buy an Item from the Store. You have a Store, now let's purchase something. 
 4. In your game, call GetStoreItems and get your store.
     CatalogVersion: "main" 
     StoreId: "fruits" 
-5. Verify you received an object with the list of items in the store and their prices, in the order you       selected 
+5. Verify you received an object with the list of items in the store and their prices, in the order you       selected.
 6. In your game, call PurchaseItem and give it the currency and store price of the item you want to buy 
     CatalogVersion: "main" 
     StoreId: "fruits" 

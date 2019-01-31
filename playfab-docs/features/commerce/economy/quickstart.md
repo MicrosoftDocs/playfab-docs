@@ -14,30 +14,30 @@ ms.localizationpriority: medium
 
 Making monetization work is one of the biggest challenges of games. Playfab helps make this easy by building on top of three foundational pieces: Currencies, Items, and Inventory.
 
-In this quick-start tutorial, you will:
+In this quickstart tutorial, you will:
 
-1. Set up a virtual Currency.
-2. Create an Item.
-3. Add an item to a player Inventory.
-4. Next Steps for customizing your Economy.
+1. Set up a virtual currency.
+2. Create an item.
+3. Add an item to a player inventory.
+4. Learn next steps for customizing your economy.
 
-## Set up a Virtual Currency
+## Set up a virtual currency
 
-Virtual Currencies are the foundation of in-Game economies. Players and Characters can be granted these Currencies, which can then be used to buy or trade Items. Items can have a cost in either a Virtual Currency or Real Money. Each Title can support multiple arbitrary Virtual Currencies. This provides flexibility for your Game to implement whatever medium of exchange you desire (e.g. Gold, Gems, Hearts or Interstellar Credits).
+Virtual currencies are the foundation of in-game economies. Players and characters can be granted these currencies, which can then be used to buy or trade Items. Items can have a cost in either a virtual currency or real money. Each title can support multiple arbitrary virtual currencies. This provides flexibility for your Game to implement whatever medium of exchange you desire (e.g. gold, gems, hearts or interstellar credits).
  
 1. Go to Economy and select Currencies.
-2. Click New currency and change these fields:
+2. Click New Currency and change these fields:
     Currency code (2 uppercase characters): "GD"
     Display name: "Gold"
-3. Click Save currency.
+3. Click Save Currency.
  
-Now that Currencies have been setup, Store and Catalog Items can be assigned prices corresponding to the Virtual Currencies.
+Now that currencies have been setup, store and catalog items can be assigned prices corresponding to the virtual currencies.
 
 ## Create an item
 
-Many games offer the player items for purchase such as a Shield, a Level-unlock, or a Power-up. These items are specified in a Catalog. Before the Player can purchase an Item from any Catalog, you must create the Items that you want to populate it.
+Many games offer the player items for purchase such as a shield, a level-unlock, or a power-up. These items are specified in a catalog. Before the player can purchase an item from any catalog, you must create the items with which you want to populate it.
 
-To make a Catalog with an Item:
+To make a catalog with an item:
 
 1. Go to Economy and select Catalogs.
 2. Create a new catalog named "main." An item with the ID of "One" has been added automatically.
@@ -46,16 +46,16 @@ To make a Catalog with an Item:
     Display name: "Perfectly normal apple"
 4. At the bottom of the form is the Prices section, where you define how much an item costs in your           game's virtual currency.
 5. Set the apple's price in gold ("GD") to 5.
-6. Click Save item.
+6. Click Save Item.
  
-## Add an item to a player Inventory
+## Add an item to a player inventory
 
-Playfab’s Catalog APIs support many strategies for Item purchasing, such as simple Real Money or Virtual Currency purchases of Items, triggered item grants based on buying another Item, locked (with a potentially purchasable Key) and unlocked boxes, random result tables, and non-purchasable items that are granted based on Events within a Game. In this Quickstart we cover the Virtual Currency purchase use case.
+Playfab’s catalog APIs support many strategies for item purchasing, such as simple real money or virtual currency purchases of items, triggered item grants based on buying another item, locked (with a potentially purchasable key) and unlocked boxes, random result tables, and non-purchasable items that are granted based on events within a game. In this quickstart we cover the virtual currency purchase use case.
 
 1. In your game, call GetCatalogItems
     CatalogVersion: "main"
-2. Verify that you see an "apple" with a "GO" price of 5
-3. Then call PurchaseItem to buy the apple
+2. Verify that you see an "apple" with a "GO" price of 5.
+3. Then call PurchaseItem to buy the apple.
     CatalogVersion: "main"
     ItemId: "apple"
     VirtualCurrency: "GO"

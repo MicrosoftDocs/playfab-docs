@@ -28,7 +28,7 @@ void GiveItemTo(string secondPlayerId, string myItemInstanceId) {
 }
 ```
 
-Note: All trades are public information. Any player may look at the open trades of another player, as well as another player's trade history (If they know the playFabId of that player)
+Note: All trades are public information. Any player may look at the open trades of another player, as well as another player's trade history (If they know the playFabId of that player).
 
 In this snip the LogSuccess callback must also evaluate result.Trade.TradeId, and transfer both firstPlayFabId and the tradeId to the second player. If not saved, it will not be possible for the second player to evaluate or accept the trade.
   
