@@ -869,7 +869,7 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>Push Notifications</h3>
-                                                <p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/engagement/push-notifications/'>Overview</a></p><p><a href='/gaming/playfab/features/engagement/push-notifications/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/engagement/push-notifications/tutorials'>Tutorials</a></p>
+                                                <p style='color: #7f7f7f'>Push notifications give developers a channel to send immediate, customized messages to their players' home screens. Using PlayFab's push feature, developers may send unlimited push notifications to any number of devices completely free of charge.</p><p><a href='/gaming/playfab/features/engagement/push-notifications/'>Overview</a></p><p><a href='/gaming/playfab/features/engagement/push-notifications/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/engagement/push-notifications/tutorials'>Tutorials</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -886,7 +886,7 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>Emails</h3>
-                                                <p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/engagement/emails/'>Overview</a></p><p><a href='/gaming/playfab/features/engagement/emails/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/engagement/emails/tutorials'>Tutorials</a></p>
+                                                <p style='color: #7f7f7f'>Email messaging allows you to send customized emails to players on a prearranged schedule, PlayStream event rule, or by calling an API. Emails are fully customizable, with HTML templates which can include player profile properties.</p><p><a href='/gaming/playfab/features/engagement/emails/'>Overview</a></p><p><a href='/gaming/playfab/features/engagement/emails/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/engagement/emails/tutorials'>Tutorials</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -903,7 +903,7 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>News</h3>
-                                                <p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/engagement/news/'>Overview</a></p><p><a href='/gaming/playfab/features/engagement/news/quickstart'>Quickstart</a></p>
+                                                <p style='color: #7f7f7f'>Title News is a mechanism for broadcasting news updates to your player base. It can be used to inform users of upcoming events, share release notes for a recent update, or disseminate any other information you want your players to have.</p><p><a href='/gaming/playfab/features/engagement/news/'>Overview</a></p><p><a href='/gaming/playfab/features/engagement/news/quickstart'>Quickstart</a></p>
                                             </div>
                                         </div>
                                     </div>
