@@ -540,7 +540,7 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>CloudScript</h3>
-                                                <p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/automation/cloudscript/'>Overview</a></p><p><a href='/gaming/playfab/features/automation/cloudscript/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/automation/cloudscript/tutorials'>Tutorials</a></p>
+                                                <p style='color: #7f7f7f'>Serverless functions that scale with demand and enable you to extend PlayFab however you want.</p><p><a href='/gaming/playfab/features/automation/cloudscript/'>Overview</a></p><p><a href='/gaming/playfab/features/automation/cloudscript/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/automation/cloudscript/tutorials'>Tutorials</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -574,7 +574,7 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>Actions &amp; Rules</h3>
-                                                <p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/automation/actions-rules/'>Overview</a></p><p><a href='/gaming/playfab/features/automation/actions-rules/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/automation/actions-rules/tutorials'>Tutorials</a></p>
+                                                <p style='color: #7f7f7f'>Automatically react to your PlayStream Events in real time.</p><p><a href='/gaming/playfab/features/automation/actions-rules/'>Overview</a></p><p><a href='/gaming/playfab/features/automation/actions-rules/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/automation/actions-rules/tutorials'>Tutorials</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -591,7 +591,7 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>Scheduled Tasks</h3>
-                                                <p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/automation/scheduled-tasks/'>Overview</a></p><p><a href='/gaming/playfab/features/automation/scheduled-tasks/quickstart'>Quickstart</a></p>
+                                                <p style='color: #7f7f7f'>Scheduled tasks are a way to automate common game operation routines.</p><p><a href='/gaming/playfab/features/automation/scheduled-tasks/'>Overview</a></p><p><a href='/gaming/playfab/features/automation/scheduled-tasks/quickstart'>Quickstart</a></p>
                                             </div>
                                         </div>
                                     </div>

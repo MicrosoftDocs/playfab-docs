@@ -3,21 +3,106 @@ title: Actions & Rules quickstart
 author: v-thopra
 description:  Quickstart for Actions & Rules.
 ms.author: v-thopra
-ms.date: 06/12/2018
+ms.date: 01/30/2019
 ms.topic: article
 ms.prod: playfab
-keywords: playfab, automation, actions, rules
+keywords: playfab, automation, cloudscript, playstream, events, rules, conditions, actions, hooks
 ms.localizationpriority: medium
 ---
 
 # Actions &amp; Rules quickstart
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa tincidunt dui ut ornare lectus. Viverra vitae congue eu consequat ac felis donec. Leo urna molestie at elementum eu facilisis. A cras semper auctor neque vitae tempus quam. Amet cursus sit amet dictum sit amet justo donec enim. Faucibus turpis in eu mi bibendum neque egestas congue. Morbi quis commodo odio aenean sed adipiscing diam. Lectus vestibulum mattis ullamcorper velit. Dictum fusce ut placerat orci nulla pellentesque.
+A **PlayStream Rule** allows you to react to a subset of one type of **PlayStream Events** in real time.
 
-Lorem mollis aliquam ut porttitor leo a diam sollicitudin. Mattis rhoncus urna neque viverra. Pharetra vel turpis nunc eget lorem dolor sed. Aliquam eleifend mi in nulla posuere sollicitudin aliquam ultrices. Adipiscing elit ut aliquam purus sit. Eleifend mi in nulla posuere sollicitudin aliquam. Luctus accumsan tortor posuere ac. Pulvinar sapien et ligula ullamcorper malesuada proin libero nunc consequat. Dignissim cras tincidunt lobortis feugiat vivamus at augue eget. Eu consequat ac felis donec et odio pellentesque diam volutpat. Fermentum odio eu feugiat pretium nibh ipsum. Enim sit amet venenatis urna cursus eget nunc. Sollicitudin nibh sit amet commodo. Varius quam quisque id diam vel quam elementum pulvinar. Vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant. Dui id ornare arcu odio ut. Imperdiet sed euismod nisi porta. Amet purus gravida quis blandit turpis cursus in.
+## Requirements
 
-In arcu cursus euismod quis viverra nibh cras. Feugiat scelerisque varius morbi enim nunc faucibus. Sed adipiscing diam donec adipiscing tristique risus nec. Mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien et. Convallis a cras semper auctor neque vitae tempus quam. Et leo duis ut diam quam nulla. Egestas sed tempus urna et pharetra pharetra. Arcu felis bibendum ut tristique et. Donec ac odio tempor orci dapibus ultrices in iaculis nunc. Ullamcorper a lacus vestibulum sed arcu non odio.
+- [Game Manager quickstart](../../config/gamemanager/quickstart.md)
+- [Using player statistics](../../data/playerdata/using-player-statistics.md) (contains information that can help you with the example in this tutorial).
 
-Nulla aliquet enim tortor at auctor urna nunc id. Turpis massa sed elementum tempus. Commodo viverra maecenas accumsan lacus vel facilisis volutpat est. Nibh nisl condimentum id venenatis. Sagittis id consectetur purus ut faucibus. Diam maecenas ultricies mi eget mauris pharetra. Porttitor lacus luctus accumsan tortor posuere ac ut consequat semper. Nunc sed velit dignissim sodales. Tortor condimentum lacinia quis vel. Elementum curabitur vitae nunc sed velit dignissim sodales ut eu. Tincidunt eget nullam non nisi est sit amet facilisis magna. Pellentesque pulvinar pellentesque habitant morbi tristique senectus et netus. Morbi quis commodo odio aenean sed adipiscing diam donec. Nunc sed id semper risus in hendrerit gravida rutrum quisque. Id interdum velit laoreet id. Tempor id eu nisl nunc. Cras tincidunt lobortis feugiat vivamus at augue eget arcu dictum. Tempus urna et pharetra pharetra massa massa.
+A quick glossary of relevant terms:
 
-Risus in hendrerit gravida rutrum quisque non. Pulvinar mattis nunc sed blandit. Augue mauris augue neque gravida in fermentum et. Odio ut sem nulla pharetra diam sit amet nisl suscipit. Facilisis gravida neque convallis a cras semper. Ac turpis egestas maecenas pharetra convallis. Nunc non blandit massa enim nec dui nunc mattis enim. Eu facilisis sed odio morbi quis commodo odio aenean sed. Amet consectetur adipiscing elit pellentesque habitant. Lorem ipsum dolor sit amet consectetur adipiscing elit ut aliquam. In nibh mauris cursus mattis molestie a. Duis at consectetur lorem donec. Ac odio tempor orci dapibus ultrices in iaculis nunc. A arcu cursus vitae congue mauris rhoncus aenean vel elit. Facilisis magna etiam tempor orci eu lobortis elementum. Congue mauris rhoncus aenean vel elit. Gravida dictum fusce ut placerat orci nulla pellentesque dignissim enim. Netus et malesuada fames ac turpis egestas integer.
+- **PlayStream**: The group of features that make up the **PlayFab Event** pipeline.
+  - A **PlayStream Event** is a **JSON**-formatted string describing an event about a **Player** or **Title**.
+  - **PlayStream Event**s have a maximum size based on your **Automation** feature tier.
+
+- **Rule**: Performs extra logic in response to one type of **PlayStream Event** in real time.
+  - The sum of: One **Event Trigger**, an optional list of **Conditions**, and an optional list of **Actions**.
+
+- **Trigger**: The name of the **Event** which activates this **Rule**.
+
+- **Condition**: A content filter for **Rules** and other **PlayStream** features.
+  - Performs a very lightweight evaluation of the **PlayStream Event JSON** object, and skips **Events** that don't match requirements.
+
+- **Action**: The contextual work to be done on the appropriate entity.
+
+A **Rule** consists of exactly one **Trigger**, an optional list of **Conditions**, and typically at least one **Action** (not required, but quite useless without it).
+
+**Triggers**, **Conditions**, and **Actions** are also part of other systems: [bulk actions](../../automation/actions-rules/bulk-actions-for-an-entire-player-segment.md) and [tournament leaderboards](../../social/tournaments-leaderboards/using-resettable-statistics-and-leaderboards.md).
+
+## Example Case: Count Custom Events from the Client
+
+In the example presented below, we post the following **Custom Event** from the **Client**.
+
+```csharp
+public void WriteEvent() {
+    PlayFabClientAPI.WritePlayerEvent(new WriteClientPlayerEventRequest {
+        EventName = "ForumPostEvent",
+        Body = new Dictionary<string, object> {
+            { "Subject", "My First Post" },
+            { "Body", "My awesome Post." }
+        }
+    }, LogSuccess, LogFailure);
+}
+```
+
+In this case, the **Client** is manually reporting a **Custom** forum post **Event** (this does not currently correspond to any **Automatic Event** in **PlayFab** or supported partners)
+
+ We will use a **PlayStream Rule** to count the number of times that a **Player** reports a forum post in this way.
+
+**Requirement**: Your game must *already* be posting **Events** of this type before the **Game Manager GUI** will allow you to create a **Rule** triggering on it.
+
+Go to your **Game Manager**:
+
+- Navigate to your **Title**.
+
+- Select **Automation**.
+- Go to **Rules**.
+- Select **New Rule**.
+
+![Game Manager - automation - new rule](media/tutorials/game-manager-automation-new-rule.png)  
+
+Let's evaluate the new **Rule** in this example piece by piece:
+
+- **title.6195.ForumPostEvent**
+  - **6195** is the **Title** used in this tutorial. Your **titleId** will match your own **Title**.
+  - **ForumPostEvent** is the **EventName** used in the code for this example case.
+  - This line will only be available if you have recently posted at least one **ForumPostEvent** in your **Title**.
+- The **Condition** used specifically in this example, has minimal use.
+  - However, it *does* demonstrate filtering our **Custom Event** if the **Body** key is mapped to **Invalid string** in our **Body** dictionary.
+  - **Filters** are optional, and should remove irrelevant players from your **Rule**.
+- The chosen **Action** in this case increments a statistic counter by **one**.
+  - **Requirement**: The **Forum Posts** statistic must be defined under **Leaderboards** in the **Game Manager**.
+
+In the **Game Manager PlayStream Debugger** (shown below), you can watch as the trigger takes effect.
+
+![Game Manager - PlayStream - debugger - event trigger](media/tutorials/game-manager-playstream-debugger-event-trigger.png)  
+
+As you can see, the custom **ForumPostEvent** automatically triggers the statistic that we set under **Actions** for our new **Rule**.
+
+## Advanced: CloudScript Actions
+
+Many of the built-in **Actions** in **PlayFab** are fairly simple, and might not give you the full power you need. That's why we allow you to fully customize the **Action** logic with **CloudScript**.
+
+Let's edit the **Rule**.
+
+- Remove the **Condition**.
+- Set the **Action** to **Execute CloudScript**.
+- Select the **Save Action** button.
+
+![Game Manager - automation - edit rule](media/tutorials/game-manager-automation-edit-rule.png)  
+
+Now, if we post a new **ForumPostEvent**, we will see a **CloudScript** execution.
+
+![Game Manager - PlayStream - debugger - CloudScript execution](media/tutorials/game-manager-playstream-debugger-cloudscript-execution.png)  
+
+Writing your **CloudScript** to react to **PlayStream Rules** is an advanced topic covered in our tutorial: [using CloudScript actions with PlayStream](using-cloudscript-actions-with-playstream.md).
