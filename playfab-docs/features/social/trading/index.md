@@ -1,9 +1,9 @@
 ---
 title: Trading
-author: v-thopra
+author: thomasgu
 description: Landing page for Trading.
-ms.author: v-thopra
-ms.date: 29/10/2018
+ms.author: tomg
+ms.date: 30/01/2019
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, social, trading
@@ -12,12 +12,39 @@ ms.localizationpriority: medium
 
 # Trading
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa tincidunt dui ut ornare lectus. Viverra vitae congue eu consequat ac felis donec. Leo urna molestie at elementum eu facilisis. A cras semper auctor neque vitae tempus quam. Amet cursus sit amet dictum sit amet justo donec enim. Faucibus turpis in eu mi bibendum neque egestas congue. Morbi quis commodo odio aenean sed adipiscing diam. Lectus vestibulum mattis ullamcorper velit. Dictum fusce ut placerat orci nulla pellentesque.
+The PlayFab client API allows players to trade items with one another. These API methods are enabled by default, so for the security of your title you may need to use our Policy API to disable them.
+ 
+NOTE: Inventory-trading functionality is in a preview phase. The methods are functional, but lack some useful elements that would make it a complete feature. Currently you can only trade Virtual Items. You cannot request or trade Virtual Currency, and PlayFab does not provide a list of trades that are available to you from other players. Trade methods are only available in the Client API, and not available from the Server API. 
+ 
+## Key concepts
+  
+Catalog - Catalogs offer an easy way to manage your game's virtual items. They are listings of every item that is available in your game.
 
-Lorem mollis aliquam ut porttitor leo a diam sollicitudin. Mattis rhoncus urna neque viverra. Pharetra vel turpis nunc eget lorem dolor sed. Aliquam eleifend mi in nulla posuere sollicitudin aliquam ultrices. Adipiscing elit ut aliquam purus sit. Eleifend mi in nulla posuere sollicitudin aliquam. Luctus accumsan tortor posuere ac. Pulvinar sapien et ligula ullamcorper malesuada proin libero nunc consequat. Dignissim cras tincidunt lobortis feugiat vivamus at augue eget. Eu consequat ac felis donec et odio pellentesque diam volutpat. Fermentum odio eu feugiat pretium nibh ipsum. Enim sit amet venenatis urna cursus eget nunc. Sollicitudin nibh sit amet commodo. Varius quam quisque id diam vel quam elementum pulvinar. Vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant. Dui id ornare arcu odio ut. Imperdiet sed euismod nisi porta. Amet purus gravida quis blandit turpis cursus in.
+Catalog Items – Playfab Items can represent just about any type of virtual good that you might use, from Durables, to Bundles to Locked containers.
 
-In arcu cursus euismod quis viverra nibh cras. Feugiat scelerisque varius morbi enim nunc faucibus. Sed adipiscing diam donec adipiscing tristique risus nec. Mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien et. Convallis a cras semper auctor neque vitae tempus quam. Et leo duis ut diam quam nulla. Egestas sed tempus urna et pharetra pharetra. Arcu felis bibendum ut tristique et. Donec ac odio tempor orci dapibus ultrices in iaculis nunc. Ullamcorper a lacus vestibulum sed arcu non odio.
+Inventory - All accounts (player accounts and character accounts) have an inventory. The inventory contains all owned Item Instances as well as item history.    
 
-Nulla aliquet enim tortor at auctor urna nunc id. Turpis massa sed elementum tempus. Commodo viverra maecenas accumsan lacus vel facilisis volutpat est. Nibh nisl condimentum id venenatis. Sagittis id consectetur purus ut faucibus. Diam maecenas ultricies mi eget mauris pharetra. Porttitor lacus luctus accumsan tortor posuere ac ut consequat semper. Nunc sed velit dignissim sodales. Tortor condimentum lacinia quis vel. Elementum curabitur vitae nunc sed velit dignissim sodales ut eu. Tincidunt eget nullam non nisi est sit amet facilisis magna. Pellentesque pulvinar pellentesque habitant morbi tristique senectus et netus. Morbi quis commodo odio aenean sed adipiscing diam donec. Nunc sed id semper risus in hendrerit gravida rutrum quisque. Id interdum velit laoreet id. Tempor id eu nisl nunc. Cras tincidunt lobortis feugiat vivamus at augue eget arcu dictum. Tempus urna et pharetra pharetra massa massa.
+Virtual Currency - PlayFab offers up to 10 virtual currencies per title. Currencies can be used to purchase Items from the Catalog or a Store, can represent soft currency converted from In App Purchases, or can be used as a mechanic to drive gameplay. 
+ 
+## Prerequisites
 
-Risus in hendrerit gravida rutrum quisque non. Pulvinar mattis nunc sed blandit. Augue mauris augue neque gravida in fermentum et. Odio ut sem nulla pharetra diam sit amet nisl suscipit. Facilisis gravida neque convallis a cras semper. Ac turpis egestas maecenas pharetra convallis. Nunc non blandit massa enim nec dui nunc mattis enim. Eu facilisis sed odio morbi quis commodo odio aenean sed. Amet consectetur adipiscing elit pellentesque habitant. Lorem ipsum dolor sit amet consectetur adipiscing elit ut aliquam. In nibh mauris cursus mattis molestie a. Duis at consectetur lorem donec. Ac odio tempor orci dapibus ultrices in iaculis nunc. A arcu cursus vitae congue mauris rhoncus aenean vel elit. Facilisis magna etiam tempor orci eu lobortis elementum. Congue mauris rhoncus aenean vel elit. Gravida dictum fusce ut placerat orci nulla pellentesque dignissim enim. Netus et malesuada fames ac turpis egestas integer.
+Trading requires familiarity with both Catalogs and Inventory Items. Players must own Inventory Items they wish to trade.
+
+## APIs
+
+Trading flow is handled by a handful of APIs: 
+
+OpenTrade  
+Opens a new outstanding trade. This can between two specific players (PlayfabIDs) or with one player opening a trade open to anyone. Note that any one given item instance may only be in one open trade at a time. 
+
+GetTradeStatus  
+Allows a client to evaluate a given trade by getting its current status. 
+ 
+AcceptTrade  
+Accepts an open trade. If the call is successful, the offered and accepted items will be swapped between the two players' inventories. 
+
+CancelTrade  
+Cancels an open trade. Note that only the player who created the trade can cancel it via this API call, to prevent griefing. 
+
+GetPlayerTrades  
+Get Player trades will return all trades a player has either opened or accepted, optionally filtered by trade status. 
