@@ -24,11 +24,12 @@ PlayFab supports a robust game economy with multiple currencies and items.
 To access these features:
 
 1. Go to economy and select currencies 
-2. Click new currency and change these fields: 
+2. Click New Currency and change these fields: 
     Currency code (2 uppercase characters): "GD"
     Display name: "Gold" 
-    Click Save currency 
+3. Click Save Currency 
  
+![Save Currency](Media/tutorials/virtual-currency.png)
 Now you can give players virtual currency directly. Since it can be dangerous to give clients the ability to call AddUserVirtualCurrency, let's add money using the Game Manager:
 
 1. Go to the player's virtual currency tab 
@@ -36,6 +37,7 @@ Now you can give players virtual currency directly. Since it can be dangerous to
 3. Change the amount to 100 
 4. Click save virtual currency. 
 
+![Modify Currency](Media/tutorials/mod-virtual-currency.png)
 Now the player has 100 gold. What can you do with it? Buy an item!
 
 ## Adding an item to your in-game catalog
@@ -53,7 +55,8 @@ To make a catalog with an item:
     Display name: "Perfectly normal apple." At the bottom of the form is the Prices section, where you define how much an item costs in your game's virtual currency.
 4. Set the apple's price in gold ("GD") to 5.
 5. Click save item.
- 
+
+![Add to Catalog](Media/tutorials/add-catalog.png) 
 ## Purchase an item using virtual currency
 
 Let's get the catalog and attempt to make a purchase.

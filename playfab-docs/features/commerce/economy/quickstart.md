@@ -30,7 +30,8 @@ Virtual currencies are the foundation of in-game economies. Players and characte
     Currency code (2 uppercase characters): "GD"
     Display name: "Gold"
 3. Click Save Currency.
- 
+
+![Create Item](media/tutorials/create-item.png)
 Now that currencies have been setup, store and catalog items can be assigned prices corresponding to the virtual currencies.
 
 ## Create an item
@@ -47,7 +48,9 @@ To make a catalog with an item:
 4. At the bottom of the form is the Prices section, where you define how much an item costs in your           game's virtual currency.
 5. Set the apple's price in gold ("GD") to 5.
 6. Click Save Item.
- 
+
+![Edit or Save Currency](Media/tutorials/edit-save-currency.png)
+
 ## Add an item to a player inventory
 
 Playfab’s catalog APIs support many strategies for item purchasing, such as simple real money or virtual currency purchases of items, triggered item grants based on buying another item, locked (with a potentially purchasable key) and unlocked boxes, random result tables, and non-purchasable items that are granted based on events within a game. In this quickstart we cover the virtual currency purchase use case.
