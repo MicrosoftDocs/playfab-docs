@@ -10,26 +10,26 @@ keywords: playfab, data, content delivery network
 ms.localizationpriority: medium
 ---
 
-# Content Delivery Network quickstart
+# Content Delivery network quickstart
 
-The **Content Delivery Network** (**CDN**) is an infrastructure used to deliver **Assets** (images, audio, binary content, etc) to the end user that focuses on speed and availability.
+The Content Delivery Network (CDN) is an infrastructure used to deliver assets (images, audio, binary content, etc) to the end user that focuses on speed and availability.
 
-**CDN** costs are independent from your tier (**Essentials**, **Professional**, etc.) and require a payment account to be set up with **PlayFab**.
+CDN costs are independent from your tier (Essentials, Professional, etc.) and require a payment account to be set up with PlayFab.
 
-This can be done by entering your credit card information in the **Admin**->**Billing** tab of your **Title**. **CDN** costs are based on your usage.
+This can be done by entering your credit card information in the **Admin**->**Billing** tab of your title. CDN costs are based on your usage.
 
 > [!NOTE]
 > Please use the **Content**->**File Management** tab for more information on this subject, or contact our [developer forum](https://community.playfab.com/) with any questions that you may have.
 
-**PlayFab CDN** stores individual assets as files uniquely identified by the **File Name**, also referred to as a **Key**. This implies that you add, update, remove, and retrieve **Assets** by **Key**.
+PlayFab CDN stores individual assets as files uniquely identified by the file name, also referred to as a *key*. This implies that you add, update, remove, and retrieve assets by key.
 
-**PlayFab CDN** allows segregating **Assets** by **Folders**. The **Folder** path to the **Asset** becomes part of the **Asset Key**.
+PlayFab CDN allows segregating assets by folders. The folder path to the asset becomes part of the *asset key*.
 
-The following example is a valid **Asset Key** stored inside the **Folder** named **Android**.
+The following example is a valid asset key stored inside the folder named *Android*.
 
  `Android/Image.png`.
 
-When the user is fetching **Assets**, their requests are automatically routed to the nearest edge location, so content is delivered with the best possible performance.
+When the user is fetching assets, their requests are automatically routed to the nearest edge location, so content is delivered with the best possible performance.
 
 This, however, can introduce delays into file management actions, like those found in the following examples:
 
@@ -39,9 +39,9 @@ This, however, can introduce delays into file management actions, like those fou
 
 - **File deletion**: The file will continue to exist for up to 24 hours while the delete command removes it from all edge locations.
 
-## Uploading Assets
+## Uploading ssets
 
-Before your users are able to fetch an **Asset**, it must be uploaded to the **CDN**. This can be done using **Game Manager**:
+Before your users are able to fetch an asset, it must be uploaded to the CDN. This can be done in **Game Manager**:
 
 - Select **Content** from the menu on the left **(1)**.
 - Choose the **File Management** tab **(2)**.
@@ -53,26 +53,26 @@ You may:
 
 - Select multiple **Files (1)**.
 - Every file selected will appear in the list **(2)**.
-- Submit your **Files** by selecting the **Upload Files** button **(3)**.
+- Submit your files by selecting the **Upload Files** button **(3)**.
 
 ![Game Manager - Choose and Upload Files](../../data/content-delivery-network/media/tutorials/game-manager-choose-and-upload-files.png)  
 
-- Uploaded **Files** will appear in the list **(1)**.
-- Keep in mind that you may also *manage* **Folders**. 
-  - To create a **Folder**, select the **New Folder** button **(2)**.
+- Uploaded files will appear in the list **(1)**.
+- Keep in mind that you may also manage *folders*.
+  - To create a folder, select the **New Folder** button **(2)**.
 
 ![Game Manager - Content - File Management - File List and New Folder](../../data/content-delivery-network/media/tutorials/game-manager-content-file-management-file-list-new-folder.png)  
 
-- Fill in the **Folder** name **(1)**.
+- Fill in the **Folder name (1)**.
 - Select the **Create Folder** button **(2)**.
 
 ![Game Manager - Create New Folder](../../data/content-delivery-network/media/tutorials/game-manager-create-new-folder.png)  
 
-This will create a new **Folder** in the tree. You may then select this **Folder**, and upload the **Files** normally.
+This will create a new folder in the tree. You may then select this folder, and upload the files normally.
 
 ![Game Manager - Content - File Management - Select Folder](../../data/content-delivery-network/media/tutorials/game-manager-content-file-management-select-folder.png)  
 
-Alternatively, you may upload assets via code using the **Admin SDK**. This is a two step process:
+Alternatively, you may upload assets via code using the admin **SDK**. This is a two step process:
 
 1. First, call [GetContentUploadUrl](xref:titleid.playfabapi.com.admin.content.getcontentuploadurl) and obtain the pre-signed **URL** that will authorize your upload.
 2. Then, use the **URL** to make a **HTTP PUT** request and provide your data, and (optionally) content type.
@@ -101,11 +101,11 @@ void PutFile(string presignedUrl, byte[] content, string contentType = "binary/o
 }
 ```
 
-You may then check the result through the **PlayFab Game Manager**. Make sure the **File** is in the list.
+You may then check the result through the PlayFab Game Manager. Make sure the file is in the list.
 
-## Fetching Assets
+## Fetching assets
 
-Downloading the **Asset** via code is identical to uploading the **Asset**. Again, it is a two step process.
+Downloading the asset via code is identical to uploading the asset. Again, it is a two step process.
 
 1. First, make a call to [GetContentDownloadUrl](xref:titleid.playfabapi.com.client.content.getcontentdownloadurl) and obtain a pre-signed **URL** that will authorize your download.
 2. You then use the  pre-signed **URL** to make a **HTTP GET** request and fetch the data.
@@ -133,10 +133,9 @@ void GetFile(string preauthorizedUrl) {
 }
 ```
 
-As mentioned above, **CDN** may involve latency in regards to **File** updates. During development it is sometimes useful to force fetch the latest, fresh **Files**.
+As mentioned above, **CDN** may involve latency in regards to file updates. During development it is sometimes useful to force fetch the latest, fresh files.
 
-The  [GetContentDownloadUrl](xref:titleid.playfabapi.com.client.content.getcontentdownloadurl) call allows you to set the **ThruCDN** parameter to **False**. The **URL** returned will then point to non-cached fresh **Files**.
+The  [GetContentDownloadUrl](xref:titleid.playfabapi.com.client.content.getcontentdownloadurl) call allows you to set the **ThruCDN** parameter to **False**. The **URL** returned will then point to non-cached fresh files.
 
 > [!NOTE]
-> Your published **Game Client** should *never* use this option!
-
+> Your published game client should *never* use this option!

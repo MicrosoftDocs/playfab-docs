@@ -10,9 +10,9 @@ keywords: playfab
 ms.localizationpriority: medium
 ---
 
-# Title News quickstart
+# Title news quickstart
 
-**Title News** is a mechanism for communicating with your **Players**. It contains a few basic elements:
+Title news is a mechanism for communicating with your players. It contains a few basic elements:
 
 - **Title**
 - **Date**
@@ -20,28 +20,32 @@ ms.localizationpriority: medium
 - **Body**
 
 > [!NOTE]
-> The **Body** is a string, and can contain raw text or **JSON**.
+> The body is a string, and can contain raw text or **JSON**.
 
-## Creating Title News
+## Creating title news
 
-There are two ways to create **Title News** entries:
+There are two ways to create title news entries:
 
-1. Via **Game Manager**.
-2. Using the **Admin API** method [AddNews](xref:titleid.playfabapi.com.admin.title-widedatamanagement.addnews).
+1. Via Game Manager.
+2. Using the Admin **API** method [AddNews](xref:titleid.playfabapi.com.admin.title-widedatamanagement.addnews).
 
-To create **Title News** entries with **Game Manager**, you will need to be familiar with [Game Manager](../../config/gamemanager/quickstart.md).
+To create title news entries with Game Manager, you will need to be familiar with [Game Manager](../../config/gamemanager/quickstart.md).
 
-In **Game Manager**:
+In the **Game Manager** screen:
 
 - Go to your menu and select **Content**.
 - In the **Title News** tab, enter the **Title** for your **Title News Content**.
 
 ![Title News](../media/tutorials/game-manager-content-title-news.png)
 
-- Select the **Save Title News** button and your entry will be created. The date will be set to the date when you selected the **Save Title News** button.
+- Select the **Save Title News** button and your entry will be created.
 
-Alternately, you can create **Title News** by calling [AddNews](xref:titleid.playfabapi.com.admin.title-widedatamanagement.addnews). Using the **Admin API** allows you to specify a custom timestamp. **News** added this way is *immediately* published. We've provided a code example, which follows.
+> [!NOTE]
+> The date will be set to the date when you selected the **Save Title News** button.
+
+- Alternately, you can create title news by calling [AddNews](xref:titleid.playfabapi.com.admin.title-widedatamanagement.addnews). Using the Admin **API** allows you to specify a custom timestamp. News added this way is *immediately* published. We've provided a code example, which follows.
 ```csharp
+
 
 
 void CreateNews() {
@@ -56,9 +60,9 @@ void CreateNews() {
 
 ```
 
-## Reading Title News
+## Reading title news
 
-Reading the **Title News** is very simple. The **GetTitleNews** method returns get all published **Title News** entries.
+Reading the title news is very simple. The **GetTitleNews** method returns get all published title news entries.
 
 > [!NOTE]
 > Archived and unpublished entries will *not* be returned.
@@ -74,9 +78,9 @@ void ReadTitleNews() {
 }
 
 ```
-## Update Title News
+## Update title news
 
-The content of a **Title News** entry can only be modified in **Game Manager**.
+The content of a title news entry can only be modified in Game Manager.
 
 To locate the entry you wish to modify in **Game Manager**:
 
@@ -88,7 +92,7 @@ To locate the entry you wish to modify in **Game Manager**:
 
 If plan is to post unpublished entries for future release, this is the methodology to to use to transition them into published and archived states. It also allows the user to fix typos.
 
-## Deleting Title News
+## Deleting title news
 
 Once an entry is no longer needed, you can delete it in the **Game Manager**. Find the entry you wish to modify, then:
 

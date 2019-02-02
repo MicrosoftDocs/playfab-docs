@@ -10,19 +10,19 @@ keywords: playfab, automation, actions, rules
 ms.localizationpriority: medium
 ---
 
-# Bulk Actions for an entire Player Segment
+# Bulk Actions for an entire player segment
 
-This tutorial walks you through the steps needed to create a **Task** to perform one or more actions on every **Player** in a **Segment**.
+This tutorial walks you through the steps needed to create a Task to perform one or more actions on every player in a segment.
 
-**Tasks** are a vital part of **Live Operations** for any game, they give you a powerful set of tools for engaging with your **Players**.
+Tasks are a vital part of live operations for any game, they give you a powerful set of tools for engaging with your players.
 
 Examples might include:
 
-- Give a special New Year’s gift to all **Players** who logged in during the last 2 weeks.
-- Reward **Players** who spent money in the last week (based on spending tiers), where the more money they spent, the more valuable the gift.
-- Fixing corrupted **Player** state for all **Players** affected by a recent game bug.
+- Give a special New Year’s gift to all players who logged in during the last 2 weeks.
+- Reward players who spent money in the last week (based on spending tiers), where the more money they spent, the more valuable the gift.
+- Fixing corrupted Player state for all players affected by a recent game bug.
 
-In this tutorial, based on our **Unicorn Battle Sample App**, we will grant a special gift to all **Players** with more than **2,725 XP**.
+In this tutorial, based on our **Unicorn Battle Sample App**, we will grant a special gift to all players with more than **2,725 XP**.
 
 ## Prerequisites
 
@@ -34,9 +34,9 @@ You will want to play *several* battles in order to level up your character to a
 
 ![Unicorn Battle - Level 2](media/tutorials/unicorn-battle-level-two.png)
 
-## Step 1 - Create the Segment
+## Step 1 - Create the segment
 
-The first step is to create the **Segment** that defines the **Group** of **Players** who will be affected by this action. In this case, we need to create the **High XP Segment**, defined as all **Players** who have more than **2,725 XP**:
+The first step is to create the segment that defines the group of players who will be affected by this action. In this case, we need to create the High XP Segment, defined as all players who have more than **2,725 XP**:
 
 - Select **PlayStream** from the menu on the left.
 - Choose the **Segments** tab.
@@ -46,82 +46,82 @@ The first step is to create the **Segment** that defines the **Group** of **Play
 
 ![Game Manager - PlayStream - Segments - High XP Players](media/tutorials/game-manager-segments-high-xp-players.png)
 
-## Step 2 - Create a Task for this Segment
+## Step 2 - Create a task for this segment
 
 - Select the **Segments** tab.
 - Then select **RUN TASK …**
 
 ![Game Manager - PlayStream - Segments - Run Task](media/tutorials/game-manager-segments-run-task.png)
 
-This will take you to the **Create Task** view in the **Servers**->**Tasks** tab, and will pre-populate various fields based on your selected **Segment**.
+This will take you to the **Create Task** view in the **Servers**->**Tasks** tab, and will pre-populate various fields based on your selected segment.
 
 ![Game Manager - Servers - Task - Create Task](media/tutorials/game-manager-servers-task-create-task.png)
 
-## Step 3 - Add actions to the Task
+## Step 3 - Add actions to the task
 
-Next, you can finish setting up the **Task**.
+Next, you can finish setting up the task.
 
-- Change the **Name** to **Reward High XP Players**
+- Change the name to **Reward High XP Players**
 - Add this description: **Give a gift to Players who are level 2 or higher**.
 - Select **ADD ACTION**
   - Type in **Grant virtual currency** in the field provided.
   - **Virtual Currency** code: **GM** (short for **Gems**).
   - Amount: **20**
 - Leave the scheduling set to **Manually** for now.
-- Select the **SAVE AND RUN** button to run the **Task**.
+- Select the **SAVE AND RUN** button to run the task.
 
 ![Game Manager - Servers - Task - Add Action - Save and Run](media/tutorials/game-manager-servers-task-add-action-save-and-run.png)
 
-## Step 4 - Monitor your Task
+## Step 4 - Monitor your task
 
-The **Tasks** view will show you your running **Task**. Initially the **Task** status will be **InProgress**, but it will quickly change to **Succeeded** since the **Segment** is small.
+The **Tasks** view will show you your running task. Initially the taskk status will be **InProgress**, but it will quickly change to **Succeeded** since the segment is small.
 
 ![Game Manager - Servers - Tasks - Task Succeeded](media/tutorials/game-manager-servers-tasks-task-succeeded.png)
 
-Now, let's check out the **Task** execution detail. Select the completed **Task** in the previously run **Tasks** list. You will see important information, such as:
+Now, let's check out the task execution detail. Select the completed task in the previously run **Tasks** list. You will see important information, such as:
 
-- How many **Players** were processed.
-- When the **Task** started.
+- How many players were processed.
+- When the task started.
 - How long it took to complete.
 - The parameters it had when it was launched.
 - Who ran it.
 - If it was scheduled manually, etc.
 
-If the **Task** is still in progress, you can check the **Task** instance detail view for the progress and see the estimated time remaining.
+If the task is still in progress, you can check the **Task Instance Detail** view for the progress and see the estimated time remaining.
 
 ![Game Manager - Servers - Tasks - Task Instance Details](media/tutorials/game-manager-servers-tasks-task-instance-details.png)
 
-To verify that the **Task** ran successfully:
+To verify that the task ran successfully:
 
 - Navigate to the **Players** tab.
 - Select your **Player**.
 - Then choose the **Event History** tab.
-- The most recent **Event** in the list should be a **player_virtual_currency_balance_changed**, which should show your **Player’s** gems increasing by **20**.
+- The most recent event in the list should be a **player_virtual_currency_balance_changed**, which should show your **Player’s** gems increasing by **20**.
 
 > [!NOTE]
-> You can expand this **Event** to see the details.
+> You can expand this event to see the details.
 
 ![Game Manager - Event History - Event Detail](media/tutorials/game-manager-event-history-event-detail.png)
 
 ## What’s next
 
-This tutorial has introduced you to the steps involved in performing an action for every **Player** in a **Segment**, but there’s a lot more you can do with **Tasks**.
+This tutorial has introduced you to the steps involved in performing an action for every player in a segment, but there’s a lot more you can do with tasks.
 
 Here are a few ideas for other things you can try...
 
-### Schedule your Tasks
+### Schedule your tasks
 
-You don’t need to run **Tasks** manually - you can schedule a **Task** to run *automatically* on a *recurring* basis. For example, you could create a **Segment** of all **Players** who played the game in the last 24 hours, then run a scheduled **Task** each day to give those **Players** an **XP** boost.
+You don’t need to run tasks manually - you can schedule a task to run *automatically* on a *recurring* basis. For example, you could create a segment of all players who played the game in the last 24 hours, then run a scheduled tasks each day to give those players an **XP** boost.
 
 ![Game Manager - PlayStream - Segments - Players in 24 hours](media/tutorials/game-manager-segments-players-in-24-hours.png)
 
 ![Game Manager - Servers - Tasks - Scheduled Task](media/tutorials/game-manager-servers-tasks-scheduled-task.png)
 
-### Run CloudScript for each Player
+### Run CloudScript for each player
 
-The most powerful use of bulk actions is running an arbitrary **CloudScript** function for each **Player**. This **CloudScript** can do anything the **PlayFab Server API** can do - grant items, currency, inspect and change **Player** data, and so on.
+The most powerful use of bulk actions is running an arbitrary **CloudScript** function for each player. This **CloudScript** can do anything the PlayFab server **API** can do - grant items, currency, inspect and change player data, and so on.
 
-For example, imagine you have an **Event Leaderboard** that resets every week, and you want to go through all **Players** and give a reward based on the value of the *last* **Event** before it reset. The example provided below is using **Unicorn Battle**.
+For example, imagine you have an event leaderboard that resets every week, and you want to go through all players and give a reward based on the value of the *last* event before it reset. The example provided below is using **Unicorn Battle**.
 
 1. Create a new stat (**Event_QuestsCompleted**) that resets weekly and uses the aggregation method **Last**.
 
@@ -131,7 +131,7 @@ For example, imagine you have an **Event Leaderboard** that resets every week, a
 
    ![PlayStream - Event Actions - Edit Event Action](media/tutorials/playstream-event-actions-edit-event-action.png)
 
-3. Write a **CloudScript** function to be called by a **Bulk Action Task** which will go through **Players** and give rewards based on the last value.
+3. Write a **CloudScript** function to be called by a Bulk Action task which will go through players and give rewards based on the last value.
 
 ```javascript
 // this function will be called as a bulk action by a scheduled task for players in a segment
@@ -168,14 +168,14 @@ handlers.GiveTieredReward = function (args, context) {
 }
 ```
 
-4. Set the new **CloudScript** version to **Live**, and create a new **Task** that calls **GiveTieredReward** function for all **Players**. Don't forget to **Save** and **Run** the **Task**.
+4. Set the new **CloudScript** version to **Live**, and create a new task that calls **GiveTieredReward** function for all players. Don't forget to **Save** and **Run** the task.
 
    ![Servers - Tasks - New Scheduled Task](media/tutorials/servers-tasks-new-scheduled-task.png)
 
-5. You should notice events from this **Task** appear in the **PlayStream Event Debugger**.
+5. You should notice events from this task appear in the **PlayStream** event debugger.
 
    ![PlayStream - Dashboard - Event Debugger](media/tutorials/playstream-dashboard-event-debugger.png)
 
-6. You can select any **Player Triggered Action Executed CloudScript Event** (by selecting the time stamp), and see the detailed result of **CloudScript** execution for each **Player**. which includes useful diagnostic information such as the snapshot of the **Player** profile at the time of the **CloudScript** execution.
+6. You can select any player triggered action executed **CloudScript** event (by selecting the time stamp), and see the detailed result of **CloudScript** execution for each player.  This includes useful diagnostic information such as the snapshot of the player profile at the time of the **CloudScript** execution.
 
    ![PlayStream - Dashboard - Raw Event JSON](media/tutorials/playstream-dashboard-raw-event-json.png)
