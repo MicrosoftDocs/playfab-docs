@@ -20,6 +20,8 @@
       href: ./xplatcpp/quickstart-windows.md
     - name: Quickstart - Linux
       href: ./xplatcpp/quickstart-linux.md
+    - name: Quickstart - Xbox
+      href: ./xplatcpp/quickstart-xbox.md
   - name:  C#
     href: ./c-sharp/index.md
     items:
