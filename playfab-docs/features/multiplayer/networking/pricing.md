@@ -47,7 +47,7 @@ Usage of voice chat is priced differently if Cognitive Services are enabled. Cog
 | SKU | $/player-minute speaking |
 | --- | --- |
 | Fabric Voice | $0.001 |
-| Fabric Voice + Cognitive Services | $0.01 |
+| Fabric Voice + Cognitive Services | $0.015 |
 
 In-game chat text messages, even when text-to-text translation or text-to-speech synthesis are activated, do not drive metering and are not billed to your account.
 
