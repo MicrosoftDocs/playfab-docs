@@ -40,21 +40,20 @@ The current **Title** and **User** can be found in the top right. An **Admin** m
 Before installing your SDK, click on any title and the Game Manager opens for that title. Take the time to familiarize yourself with the various sections in the Game Manager dashboard. For a more detailed overview, visit the [Game Manager quickstart](../features/config/gamemanager/quickstart.md). The PlayFab Game Manager allows you to do whatever you need to with your game title. Once you have a grasp on the aspects of the Game Manager, install the SDK so you can start using APIs.
 
 ![PlayFab - Unicorn Battle - Admin Menu](images/playfab-unicorn-battle-admin-menu.png)
-=======
+
 ## Exploring LiveOps
 
 LiveOps refers to an approach to game design and development that centers around the game after launch and specifically player engagement and retention. LiveOps processes emphasis experimentation, real-time data collection and analysis, and iteration. If you want to learn more about LiveOps in general and how the LiveOps approach is applied to games at every phase of development, check out these resources:
 
-- The LiveOps Handbook
-- LiveOps Design Guides
+- [The LiveOps Handbook](liveops-handbook.md)
+- [LiveOps Design Guides](liveops-design-guides.md)
 - The LiveOps Academy Blog
-
 
 ## Doing LiveOps with PlayFab
 
 PlayFab offer a variety of tools to empower you to run your LiveOps strategy. The PlayFab GameManager is your portal to access the tools and abilities described below. GameManager provides a web-based interface from which LiveOps can be managed and deployed. Most LiveOps functions can be created, managed, and deployed entirely from the GameManager and many can also be updated easily in bulk through JSON file uploads.
 
-- Player Segments - PlayFab can automatically sort your players into cohorts, that can then be acted upon through Cloudscript, A/B testing, or Rules. PlayFab comes with several of the most common segments already set up but you can also make your own segments using player login data or Groups defined by in game behavior.
+- Player Segments - PlayFab can automatically sort your players into cohorts, that can then be acted upon through Cloudscript, A/B testing, or Rules. PlayFab comes with several of the most common segments already set up but you can also make your own segments using player login data or Groups defined by in-game behavior.
 - Economy - Manage your game’s monetization across all platforms through configurable Stores, Currencies, and pricing. Also, in game economy can be managed through PlayFab allowing real-time changes to item Catalogs, availability, pricing, and Drop Tables.
 - Leaderboards – Create leaderboards to track any aspect of your game and manage reset frequency and aggregation method.
 - Content configuration – PlayFab allows for robust content management in real time through key value pair definitions, in game messaging, and email templates.
