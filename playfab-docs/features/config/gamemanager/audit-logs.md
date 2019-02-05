@@ -10,13 +10,13 @@ keywords: playfab, config, game manager
 ms.localizationpriority: medium
 ---
 
-# Audit Logs
+# Audit logs
 
-**Audit Logs** allow you to observe and analyze the history of important changes made to your **Title** by you or other developers. You are able to detect both important changes and destructive actions, and react accordingly.
+Audit logs allow you to observe and analyze the history of important changes made to your title by you or other developers. You are able to detect both important changes and destructive actions, and react accordingly.
 
-## Accessing Audit Logs
+## Accessing audit logs
 
-To access the **Audit Logs**, navigate to your **Title** in **Game Manager**:
+To access the audit logs, navigate to your **Title** in **Game Manager**:
 
 - Select **Admin** from the menu to the left **(1)**.
 - Choose the **Audit History** tab **(2)**.

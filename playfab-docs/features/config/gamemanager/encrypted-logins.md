@@ -10,33 +10,33 @@ keywords: playfab, config, game manager, encrypted login
 ms.localizationpriority: medium
 ---
 
-# Encrypted Logins
+# Encrypted logins
 
-**PlayFab** allows you to reinforce **Application** security by protecting certain **Client API** calls with custom encryption. This tutorial shows you how to enable encryption for your **Client**.
+PlayFab allows you to reinforce application security by protecting certain client **API** calls with custom encryption. This tutorial shows you how to enable encryption for your client.
 
 The method we will be using allows you to protect *any* login **API** call. Since the process is *always* similar, we only show how to protect *one* particular method: **LoginWithCustomID**.
 
 > [!IMPORTANT]
-> Login encryption is meant to be used for *all* **Players** after **Title** creation, or not at all. This is *not* a feature that can be enabled at a later date. You must use it from the *very beginning* or not at all. In particular, *encrypted* **Players** will never be able to log in *un-encrypted*, and *non-encrypted* **Players** will never be able to become *encrypted* **Players**.
+> Login encryption is meant to be used for *all* players after **Title** creation, or not at all. This is *not* a feature that can be enabled at a later date. You must use it from the *very beginning* or not at all. In particular, *encrypted* players will never be able to log in *un-encrypted*, and *non-encrypted* players will never be able to become *encrypted* players.
 
 In this guide we will:
 
-1. Create a **Player Shared Secret**.
-2. Introduce an **API Policy Rule** to enable protection on a certain method.
-3. Change the **Client** to use a **Player** shared **Key** to retrieve the **Public Title Key** and encrypt the payload.
+1. Create a player shared secret.
+2. Introduce an **API** Policy Rule to enable protection on a certain method.
+3. Change the client to use a player shared key to retrieve the public title key and encrypt the payload.
 
 
 > [!NOTE]
-> **Playfab** makes the following disclaimer: "All of our **API** calls are already safely encrypted to modern standards, and the standard **API** call encryption is everything most customers will need. This feature represents an *additional* layer of security built around making it harder for **Players** to use an unauthorized **Client**. It is *not* foolproof - it merely increases the difficulty bar for hackers. For most developers, the mild security increase will not be worth the extra effort required."
+> Playfab makes the following disclaimer: "All of our **API** calls are already safely encrypted to modern standards, and the standard **API** call encryption is everything most customers will need. This feature represents an *additional* layer of security built around making it harder for players to use an unauthorized client. It is *not* foolproof - it merely increases the difficulty bar for hackers. For most developers, the mild security increase will not be worth the extra effort required."
 
-## Creating a Player Shared Secret
+## Creating a player shared secret
 
-The **PlayFab Admin API** exposes a method to manage your **Player Shared Secrets**.
+The PlayFab Admin **API** exposes a method to manage your player shared secrets.
 
 > [!NOTE]
-> Creating a new **Shared Secret** by a certain **Name** will override the existing **Key** with the same **Name**, if any. In addition, you may have *several* **Shared Secrets** registered under different **Names**.
+> Creating a new shared secret by a certain name will override the existing key with the same name, if any. In addition, you may have *several* shared secrets registered under different names.
 
-Run the following code to add a **Player Shared Secret** to your **Title**.
+Run the following code to add a player shared secret to your title.
 
 ```csharp
 PlayFabSettings.DeveloperSecretKey = "__DEVELOPER_KEY__";
@@ -56,15 +56,15 @@ else
 }
 ```
 
-To run this code, you will need a **Developer Key**. Please consult the [Getting PlayFab Developer Keys](getting-playfab-developer-keys.md) tutorial to see how to obtain one. You can pick any **Key Name** you would like.
+To run this code, you will need a developer key. Please consult the [Getting PlayFab Developer Keys](getting-playfab-developer-keys.md) tutorial to see how to obtain one. You can pick any key name you would like.
 
-This **Application** should print a newly created **Player Shared Secret**. *Make sure to save it*. If lost, you can always generate a new **Secret** by running the **Application** again.
+This application should print a newly created player shared secret. *Make sure to save it*. If lost, you can always generate a new secret by running the application again.
 
 The secret looks like this: **QC953WQ3TU6ZJTZMAT1FNJQIKR92FPUQTISW4Q6WD8SY841MQQ**
 
 ## Updating the policy
 
-We have a new **Shared Secret** created. Now we need to tell **PlayFab** which **API** calls to protect.
+We have a new shared secret created. Now we need to tell PlayFab which **API** calls to protect.
 
 Run the code shown below to protect the **LoginWithCustomId API** call, and *unprotect* the rest of the **API** calls.
 
@@ -129,7 +129,7 @@ public static async Task SetApiPermission(bool restrictCustomId)
 }
 ```
 
-## Setting up the Client
+## Setting up the client
 
 Now when the policy is updated, you are no longer able to just call **LoginWithCustomID API**. Consider the code shown below.
 
@@ -150,12 +150,12 @@ else
 }
 ```
 
-Normally, this would log in the **User** without a problem. However, *now* this **API** call is *protected* - and the code will yield a **Not Authorized** error (not to be confused with **Not Authenticated**).
+Normally, this would log in the user without a problem. However, *now* this **API** call is *protected* - and the code will yield a **Not Authorized** error (not to be confused with **Not Authenticated**).
 
-We need to modify the **Client** to properly encrypt the call payload. This is done in 2 steps:
+We need to modify the client to properly encrypt the call payload. This is done in 2 steps:
 
-1. Use the **Player Shared Secret** to fetch the **Title Public Key**.
-2. Use the **Title Public Key** to encrypt the payload.
+1. Use the player shared secret to fetch the title public key.
+2. Use the title public key to encrypt the payload.
 
 The code shown below illustrates this.
 
@@ -208,4 +208,4 @@ public static async Task DoEncryptedLogin()
 }
 ```
 
-Once you run the code, you should be able to log in. Keep in mind that once a **Player Shared Secret** is created, it must be **hard coded** into your **Client** code, as there is *no way* to fetch or request it by using any **API** call.
+Once you run the code, you should be able to log in. Keep in mind that once a player shared secret is created, it must be hard coded into your client code, as there is *no way* to fetch or request it by using any **API** call.
