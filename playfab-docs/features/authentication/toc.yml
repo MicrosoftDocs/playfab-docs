@@ -2,7 +2,7 @@
   href: /gaming/playfab/?#pivot=documentation&panel=authentication
   expanded: true
   items:
-  - name: Linking and unlinking
-    href: linking-unlinking/toc.yml
+  - name: Player login
+    href: login/toc.yml
   - name: Platform specific authentication
     href: platform-specific-authentication/toc.yml

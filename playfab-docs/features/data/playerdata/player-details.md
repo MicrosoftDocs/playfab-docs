@@ -49,7 +49,7 @@ The **Player Overview** (or *details* page), is a starting point for controlling
 
 PlayFab offers a wide set of pages for fine tuning and analyzing your player. These pages are available from the **Player** toolbar panel, and consist of the following items:
 
-- [Event History](../../automation/playstream-events/event-history.md) for a general overview of events.
+- [Event History](../../analytics/metrics/event-history.md) for a general overview of events.
 - [Logins](player-logins.md) for inspecting a player's login attempts.
 - [Segments](player-segments.md) for inspecting the segments that a player belongs to.
 - [Statistics](using-player-statistics.md) for inspecting and manipulating a player's statistical values.
@@ -58,7 +58,7 @@ PlayFab offers a wide set of pages for fine tuning and analyzing your player. Th
 - Virtual currency
 - [Inventory](player-inventory.md) for managing the items that a player owns.
 - Purchases
-- [Friends](../../social/friends-groups/friends-lists.md) for managing a player's friends list.
+- [Friends](../../social/friends/friends-lists.md) for managing a player's friends list.
 - Characters
 - Multiplayers
 - [Bans](player-bans.md)
@@ -80,7 +80,7 @@ A PlayFab account contains critical, identifying, player data. As an administrat
 
 ![Game Manager - Player - PlayFab account](media/tutorials/game-manager-player-playfab-account.png)  
 
-Additionally, you can manage linking. Read more about linking in our quickstart on [Account linking](../../authentication/linking-unlinking/quickstart.md).
+Additionally, you can manage linking. Read more about linking in our tutorial on [Account linking](../../authentication/login/linking-unlinking.md).
 
 ![Game Manager - Player - Accounts - Link New Account](media/tutorials/game-manager-player-link-new-account.png)  
 

@@ -1,5 +1,5 @@
 ---
-title: PlayStream quickstart
+title: Generating PlayStream events
 author: v-thopra
 description: Provides an overview of automatic and custom PlayStream events in PlayFab.
 ms.author: v-thopra
@@ -10,9 +10,9 @@ keywords: playfab, automation, playstream, events, custom events, automatic even
 ms.localizationpriority: medium
 ---
 
-# PlayStream quickstart
+# Generating PlayStream events
 
-This quickstart provides an overview of automatic and custom **PlayStream** events in PlayFab.
+This tutorial provides an overview of automatic and custom **PlayStream** events in PlayFab.
 
 ## Automatic event overview
 

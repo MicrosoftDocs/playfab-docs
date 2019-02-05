@@ -39,7 +39,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Getting Started: Developers</h3>
-                                                    <p>Everything you need to know to get started with PlayFab as a developer. We have everything from step by step guides to copy &amp; paste code to get you well on your way.</p>
+                                                    <p>Everything you need to know to get started with PlayFab as a developer. We have everything from step by step guides to copy and paste code to get you well on your way.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -236,7 +236,7 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>Authentication</h3>
-                                                <p><a href='/gaming/playfab/features/authentication/linking-unlinking/quickstart'>Linking &amp; Unlinking</a></p><p><a href='/gaming/playfab/features/authentication/platform-specific-authentication/quickstart'>Platform-Specific Authentication</a></p>
+                                                <p><a href='/gaming/playfab/features/authentication/login/quickstart'>Linking and Unlinking</a></p><p><a href='/gaming/playfab/features/authentication/platform-specific-authentication/quickstart'>Platform-Specific Authentication</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -253,7 +253,7 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>Data</h3>
-                                                <p><a href='/gaming/playfab/features/data/entities/quickstart'>Entities</a></p><p><a href='/gaming/playfab/features/data/playerdata/quickstart'>Player Data</a></p><p><a href='/gaming/playfab/features/data/content-delivery-network/quickstart'>Content Delivery Network</a></p>
+                                                <p><a href='/gaming/playfab/features/data/playerdata/quickstart'>Player, Character, and Group Data</a></p><p><a href='/gaming/playfab/features/data/content-delivery-network/quickstart'>Content Delivery Network</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -287,7 +287,7 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>Automation</h3>
-                                                <p><a href='/gaming/playfab/features/automation/cloudscript/quickstart'>CloudScript</a></p><p><a href='/gaming/playfab/features/automation/playstream-events/quickstart'>PlayStream</a></p><p><a href='/gaming/playfab/features/automation/actions-rules/quickstart'>Actions &amp; Rules</a></p><p><a href='/gaming/playfab/features/automation/scheduled-tasks/quickstart'>Scheduled Tasks</a></p>
+                                                <p><a href='/gaming/playfab/features/automation/cloudscript/quickstart'>CloudScript</a></p><p><a href='/gaming/playfab/features/automation/playstream-events/quickstart'>PlayStream</a></p><p><a href='/gaming/playfab/features/automation/actions-rules/quickstart'>Actions and Rules</a></p><p><a href='/gaming/playfab/features/automation/scheduled-tasks/quickstart'>Scheduled Tasks</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -304,7 +304,8 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>Social</h3>
-                                                <p><a href='/gaming/playfab/features/social/friends-groups/quickstart'>Friends &amp; Groups</a></p><p><a href='/gaming/playfab/features/social/tournaments-leaderboards/quickstart'>Tournaments &amp; Leaderboards</a></p><p><a href='/gaming/playfab/features/social/trading/quickstart'>Trading</a></p>
+                                                <p><a href='/gaming/playfab/features/social/friends/quickstart'>Friends</a></p>
+                                                <p><a href='/gaming/playfab/features/social/groups/quickstart'>Groups, Guilds, and Clans</a></p><p><a href='/gaming/playfab/features/social/tournaments-leaderboards/quickstart'>Tournaments and Leaderboards</a></p><p><a href='/gaming/playfab/features/social/trading/quickstart'>Trading</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -392,12 +393,14 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/gaming/playfab/features/media/feature-linking-unlinking.svg" alt="PlayFab Authentication Features: Linking & Unlinking card image" />
+                                                    <img src="/gaming/playfab/features/media/feature-linking-unlinking.svg" alt="PlayFab Authentication Features: Linking and Unlinking card image" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3>Linking &amp; Unlinking</h3>
-                                                <p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/authentication/linking-unlinking/'>Overview</a></p><p><a href='/gaming/playfab/features/authentication/linking-unlinking/quickstart'>Quickstart</a>
+                                                <h3>Player Login</h3>
+                                                <p style='color: #7f7f7f'>Authenticate your players using a breadth of providers. Start with friction-free authentication based on the device and allow your players to link their favorite accounts to enable roaming and recovery.</p><p><a href='/gaming/playfab/features/authentication/login/'>Overview</a></p>
+                                                <p><a href='/gaming/playfab/features/authentication/login/login-basics-best-practices'>Best Practices</a>
+                                                <p><a href='/gaming/playfab/features/authentication/login/quickstart'>Quickstart</a>
                                             </div>
                                         </div>
                                     </div>
@@ -414,7 +417,7 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>Platform-Specific Authentication</h3>
-                                                <p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/authentication/platform-specific-authentication/'>Overview</a></p><p><a href='/gaming/playfab/features/authentication/platform-specific-authentication/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/authentication/platform-specific-authentication/tutorials'>Tutorials</a></p>
+                                                <p style='color: #7f7f7f'>Use the providers that your players want.  Seemlessly integrate login in your game.</p><p><a href='/gaming/playfab/features/authentication/platform-specific-authentication/'>Overview</a></p><p><a href='/gaming/playfab/features/authentication/platform-specific-authentication/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/authentication/platform-specific-authentication/tutorials'>Tutorials</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -427,24 +430,7 @@ featureFlags:
                         <ul id="data" class="cardsF">
                             <li class="fullSpan">
                                 <h2>PlayFab Data Features</h2>
-                            </li>
-                            <li>
-                                <div class="cardSize">
-                                    <div class="cardPadding">
-                                        <div class="card">
-                                            <div class="cardImageOuter">
-                                                <div class="cardImage">
-                                                    <img src="/gaming/playfab/features/media/feature-entities.svg" alt="PlayFab Data Features: Entities card image" />
-                                                </div>
-                                            </div>
-                                            <div class="cardText">
-                                                <h3>Entities</h3>
-                                                <p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/data/entities/'>Overview</a></p><p><a href='/gaming/playfab/features/data/entities/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/data/entities/tutorials'>Tutorials</a></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
+                            </li>                           
                             <li>
                                 <div class="cardSize">
                                     <div class="cardPadding">
@@ -455,8 +441,8 @@ featureFlags:
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3>Player Data</h3>
-                                                <p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/data/playerdata/'>Overview</a></p><p><a href='/gaming/playfab/features/data/playerdata/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/data/playerdata/tutorials'>Tutorials</a></p>
+                                                <h3>Players, Characters, and Group Data</h3>
+                                                <p style='color: #7f7f7f'>Store settings, game save state, or other data for your players, characters, and groups.</p><p><a href='/gaming/playfab/features/data/playerdata/'>Overview</a></p><p><a href='/gaming/playfab/features/data/playerdata/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/data/playerdata/tutorials'>Tutorials</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -545,35 +531,18 @@ featureFlags:
                                         </div>
                                     </div>
                                 </div>
-                            </li>
+                            </li>                            
                             <li>
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/gaming/playfab/features/media/feature-playstream.svg" alt="PlayFab Automation Features: PlayStream card image" />
+                                                    <img src="/gaming/playfab/features/media/feature-actions-rules.svg" alt="PlayFab Automation Features: Actions and Rules card image" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3>PlayStream</h3>
-                                                <p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/automation/playstream-events/'>Overview</a></p><p><a href='/gaming/playfab/features/automation/playstream-events/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/automation/playstream-events/tutorials'>Tutorials</a></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="cardSize">
-                                    <div class="cardPadding">
-                                        <div class="card">
-                                            <div class="cardImageOuter">
-                                                <div class="cardImage">
-                                                    <img src="/gaming/playfab/features/media/feature-actions-rules.svg" alt="PlayFab Automation Features: Actions & Rules card image" />
-                                                </div>
-                                            </div>
-                                            <div class="cardText">
-                                                <h3>Actions &amp; Rules</h3>
+                                                <h3>Actions and Rules</h3>
                                                 <p style='color: #7f7f7f'>Automatically react to your PlayStream Events in real time.</p><p><a href='/gaming/playfab/features/automation/actions-rules/'>Overview</a></p><p><a href='/gaming/playfab/features/automation/actions-rules/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/automation/actions-rules/tutorials'>Tutorials</a></p>
                                             </div>
                                         </div>
@@ -611,12 +580,12 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/gaming/playfab/features/media/feature-friends-groups.svg" alt="PlayFab Social Features: Friends & Groups card image" />
+                                                    <img src="/gaming/playfab/features/media/feature-friends-groups.svg" alt="PlayFab Social Features: Friends and Groups card image" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3>Friends &amp; Groups</h3>
-                                                <p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/social/friends-groups/'>Overview</a></p><p><a href='/gaming/playfab/features/social/friends-groups/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/social/friends-groups/tutorials'>Tutorials</a></p>
+                                                <h3>Friends</h3>
+                                                <p style='color: #7f7f7f'>Allow players to interact with their friends in your game. Manage your own friend list or utilize popular social networks to allow your players to quickly find their friends.</p><p><a href='/gaming/playfab/features/social/friends/'>Overview</a></p><p><a href='/gaming/playfab/features/social/friends/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/social/friends/tutorials'>Tutorials</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -628,12 +597,29 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/gaming/playfab/features/media/feature-tournaments-leaderboards.svg" alt="PlayFab Social Features: Tournaments & Leaderboards card image" />
+                                                    <img src="/gaming/playfab/features/media/feature-friends-groups.svg" alt="PlayFab Social Features: Friends and Groups card image" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3>Tournaments &amp; Leaderboards</h3>
-                                                <p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/social/tournaments-leaderboards/'>Overview</a></p><p><a href='/gaming/playfab/features/social/tournaments-leaderboards/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/social/tournaments-leaderboards/tutorials'>Tutorials</a></p>
+                                                <h3>Groups, Guilds, and Clans</h3>
+                                                <p style='color: #7f7f7f'>Allow your players to join groups that will allow them to interact together. Utilize for building guilds or clans into your game.</p><p><a href='/gaming/playfab/features/social/groups/'>Overview</a></p><p><a href='/gaming/playfab/features/social/groups/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/social/groups/tutorials'>Tutorials</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardImageOuter">
+                                                <div class="cardImage">
+                                                    <img src="/gaming/playfab/features/media/feature-tournaments-leaderboards.svg" alt="PlayFab Social Features: Tournaments and Leaderboards card image" />
+                                                </div>
+                                            </div>
+                                            <div class="cardText">
+                                                <h3>Tournaments and Leaderboards</h3>
+                                                <p style='color: #7f7f7f'>Use leaderboards to drive social engagement in your game. Run live ops tournaments to reward players and get them to continue engagement.</p><p><a href='/gaming/playfab/features/social/tournaments-leaderboards/'>Overview</a></p><p><a href='/gaming/playfab/features/social/tournaments-leaderboards/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/social/tournaments-leaderboards/tutorials'>Tutorials</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -844,7 +830,7 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>Segmentation</h3>
-                                                <p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/analytics/segmentation/'>Overview</a></p><p><a href='/gaming/playfab/features/analytics/segmentation/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/analytics/segmentation/tutorials'>Tutorials</a></p>
+                                                <p style='color: #7f7f7f'>Player segmentation allows you to define automated groupings of players.  Perform actions when segment membership changes for a player or for all the players in a segment.</p><p><a href='/gaming/playfab/features/analytics/segmentation/'>Overview</a></p><p><a href='/gaming/playfab/features/analytics/segmentation/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/analytics/segmentation/tutorials'>Tutorials</a></p>
                                             </div>
                                         </div>
                                     </div>

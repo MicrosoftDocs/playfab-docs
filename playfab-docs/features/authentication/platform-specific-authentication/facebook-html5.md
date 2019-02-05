@@ -18,7 +18,7 @@ This tutorial has been created to guide you through PlayFab authentication using
 
 - [Facebook account](https://www.facebook.com/) for testing
 - Registered [PlayFab](https://playfab.com/) title
-- Familiarity with [Login basics and Best Practices](../../authentication/platform-specific-authentication/login-basics-best-practices.md)
+- Familiarity with [Login basics and Best Practices](../../authentication/login/login-basics-best-practices.md)
 
 - A Minimal server with a valid domain name to serve static **HTML** file.
 

@@ -88,10 +88,10 @@ Now that you're set up to make API calls, the starting point for any PlayFab int
 
 Here are some resources that will help you along that first step for authenticating your player:
 
-- [Login basics and Best Practices](../features/authentication/platform-specific-authentication/login-basics-best-practices.md) – Check this tutorial first to learn about the best practices to use various authentication methods in your game.
+- [Login basics and Best Practices](../features/authentication/login/login-basics-best-practices.md) – Check this tutorial first to learn about the best practices to use various authentication methods in your game.
 - Authentication Service Helper – Learn how this service can save you valuable time by leveraging building best practices in this Authentication Service for each SDK.
 - [Authentication quickstart](../features/authentication/platform-specific-authentication/quickstart.md) – Use this guide to understand the basics of Authentication calls into PlayFab.
-- [Account Linking quickstart](../features/authentication/linking-unlinking/quickstart.md) - Learn about linking and unlinking different types of Accounts to a single player profile.
+- [Account Linking tutorial](../features/authentication/login/linking-unlinking.md) - Learn about linking and unlinking different types of Accounts to a single player profile.
 
 ## Next steps
 
@@ -102,7 +102,7 @@ Below, you can find a number of different ways that PlayFab maps onto a game and
 - [Title Data](../features/config/titledata/quickstart.md) – Map variables containing data on PlayFab to data structures in your game clients.
 - [Entity Objects](../features/data/entities/quickstart.md) (aka: Player Data) – Store and Retrieve data on a per player basis.
 - [Catalogs](../features/commerce/items/catalogs.md) (Items) - Very useful for storing configuration data about your Items and potentially being able to sell them as virtual goods.
-- [Groups](../features/social/friends-groups/using-shared-group-data.md) – Groups are generally used for things like Guilds or Clans. Groups are arbitrary and have members, roles and other guild like features.
+- [Groups](../features/social/groups/using-shared-group-data.md) – Groups are generally used for things like Guilds or Clans. Groups are arbitrary and have members, roles and other guild like features.
 
 <!-- ![Configuration and Events](https://playfab.com/assets/img/products/liveops-config.png) -->
 <img src="images/liveops-config.png" alt="LiveOps configuration and events" width="600" />

@@ -10,6 +10,10 @@
   - name: Tutorials
     href: tutorials.md
     items:
+    - name: Getting starting with Event History
+      href: event-history.md
+    - name: Generating PlayStream events
+      href: playstream-events.md
     - name: Constructing an Event History search
       href: constructing-an-event-history-search.md
     - name: Getting Started with PlayFab and Snowflake

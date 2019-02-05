@@ -4,8 +4,6 @@
   items:
   - name: CloudScript
     href: cloudscript/toc.yml
-  - name: PlayStream
-    href: playstream-events/toc.yml
   - name: Actions and rules
     href: actions-rules/toc.yml
   - name: Scheduled tasks

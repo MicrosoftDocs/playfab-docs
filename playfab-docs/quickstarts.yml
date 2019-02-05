@@ -22,7 +22,7 @@ sections:
         src: "/gaming/playfab/media/quickstart-authentication.svg"
         text: "PlayFab Quickstarts: Authentication card image"        
       title: "Authentication"
-      html: "<p><a href='/gaming/playfab/features/authentication/linking-unlinking/quickstart'>Linking &amp; Unlinking</a></p><p><a href='/gaming/playfab/features/authentication/platform-specific-authentication/quickstart'>Platform-Specific Authentication</a></p>"
+      html: "<p><a href='/gaming/playfab/features/authentication/login/quickstart'>Player Login</a></p><p><a href='/gaming/playfab/features/authentication/platform-specific-authentication/quickstart'>Platform-Specific Authentication</a></p>"
     - image:
         src: "/gaming/playfab/media/quickstart-data.svg"
         text: "PlayFab Quickstarts: Data card image"        
@@ -42,7 +42,7 @@ sections:
         src: "/gaming/playfab/media/quickstart-social.svg"
         text: "PlayFab Quickstarts: Social card image"        
       title: "Social"
-      html: "<p><a href='/gaming/playfab/features/social/friends-groups/quickstart'>Friends &amp; Groups</a></p><p><a href='/gaming/playfab/features/social/tournaments-leaderboards/quickstart'>Tournaments &amp; Leaderboards</a></p><p><a href='/gaming/playfab/features/social/trading/quickstart'>Trading</a></p>"
+      html: "<p><a href='/gaming/playfab/features/social/friends/quickstart'>Friends</a></p><p><a href='/gaming/playfab/features/social/groups/quickstart'>Groups, Guilds &amp; Clans</a></p><p><a href='/gaming/playfab/features/social/tournaments-leaderboards/quickstart'>Tournaments &amp; Leaderboards</a></p><p><a href='/gaming/playfab/features/social/trading/quickstart'>Trading</a></p>"
     - image:
         src: "/gaming/playfab/media/quickstart-commerce.svg"
         text: "PlayFab Quickstarts: Commerce card image"        

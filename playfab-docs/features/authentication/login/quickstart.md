@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 This Account Linking quickstart demonstrates how to bind an account to multiple devices and login mechanisms.
 
- A single PlayFab account can be accessed by many devices and login credentials. As we discuss in our tutorial [Login basics and Best Practices](../platform-specific-authentication/login-basics-best-practices.md), there are two forms of user authentication:
+ A single PlayFab account can be accessed by many devices and login credentials. As we discuss in our tutorial [Login basics and Best Practices](../login/login-basics-best-practices.md), there are two forms of user authentication:
 1. **Anonymous**
 2. **Recoverable**
 
@@ -38,7 +38,7 @@ The focus of this tutorial is at the bottom of the preceding image, with the cel
 
 The third-party recoverable login mechanisms each involve prompting the user to log in via an appropriate **SDK** or third-party **API** call. Linking that account to PlayFab generally follows the same pattern:
 
-1. First, prompt the user to log into that service (more details in [Login basics and Best Practices](../platform-specific-authentication/login-basics-best-practices.md)).
+1. First, prompt the user to log into that service (more details in [Login basics and Best Practices](../login/login-basics-best-practices.md)).
 2. Once you have logged in, those services will provide some kind of Token, which can be passed to PlayFab.
 3. This allows PlayFab to safely link to that account without being aware of the user's credentials in that service.
 

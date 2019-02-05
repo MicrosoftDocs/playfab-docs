@@ -20,7 +20,7 @@ You will need:
 
 - A [Google account](https://google.com/) for testing.
 - A Registered [PlayFab](https://playfab.com/) title.
-- Familiarity with [Login basics and Best Practices](../../authentication/platform-specific-authentication/login-basics-best-practices.md).
+- Familiarity with [Login basics and Best Practices](../../authentication/login/login-basics-best-practices.md).
 - At the minimum, a server with a valid domain name to act as a static **HTML** file. Consult the [Running an HTTP server for testing](running-an-http-server-for-testing.md) tutorial for information on how to set one up.
 
 ## Server and Domain

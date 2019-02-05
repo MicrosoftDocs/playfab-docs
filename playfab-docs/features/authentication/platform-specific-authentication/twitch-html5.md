@@ -20,7 +20,7 @@ Prior to beginning, you should have:
 
 - A [Twitch Account](https://www.twitch.tv/) for testing.
 - A Registered [PlayFab](https://playfab.com/) title.
-- Familiarity with [Login basics and Best Practices](../../authentication/platform-specific-authentication/login-basics-best-practices.md).
+- Familiarity with [Login basics and Best Practices](../../authentication/login/login-basics-best-practices.md).
 - At the minimum, a server with a valid domain name to serve static **HTML** files.
 
 > [!NOTE]

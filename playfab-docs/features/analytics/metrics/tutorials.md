@@ -14,6 +14,8 @@ ms.localizationpriority: medium
 
 These tutorials teach you how to use metrics.
 
+- [Getting starting with Event History](event-history.md)
+- [Generating PlayStream events](playstream-events.md)
 - [Constructing an Event History search](constructing-an-event-history-search.md)
 - [Getting Started with PlayFab and Snowflake](getting-started-with-playFab-and-snowflake.md)
 - [Metrics and Terminology](metrics-and-terminology.md)

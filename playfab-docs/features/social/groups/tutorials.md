@@ -10,9 +10,8 @@ keywords: playfab, social, friends, groups, group data, friends lists
 ms.localizationpriority: medium
 ---
 
-# Friends &amp; Groups Tutorials
+# Groups, Guilds &amp; Clans Tutorials
 
-These tutorials teach you how to use Friends and Groups.
+These tutorials teach you how to use Groups functionality for your games and to build Guilds and Clans within your game.
 
-- [Friends Lists](friends-lists.md)
 - [Using Shared Group Data](using-shared-group-data.md)
