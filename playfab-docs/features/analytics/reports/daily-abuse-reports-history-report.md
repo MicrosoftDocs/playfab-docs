@@ -14,19 +14,19 @@ ms.localizationpriority: medium
 
 ## Overview
 
-The **Daily Abuse Reports History Report** contains a **CSV** document with all of the **Player Reports** that happened during the specified day.
+The Daily Abuse Reports history report contains a **CSV** document with all of the player reports that happened during the specified day.
 
 ![Daily Abuse Reports History Report Table](media/tutorials/daily-abuse-reports-history-report-table.png)  
 
-In the preceding example, a **Player** with **ID** of  **6079A16A9E4FB67** is reporting a **Player** with **ID** of **94A248B3B9E628F2** for the reason **Test Report** on **5/14/2017**.
+In the preceding example, a player with ID of  **6079A16A9E4FB67** is reporting a player with ID of **94A248B3B9E628F2** for the reason *Test Report* on 5/14/2017.
 
-Using this information, you can then use the **Reportee ID** to quickly look up the reported **Player** and investigate.
+Using this information, you can then use the reportee ID to quickly look up the reported player and investigate.
 
 ![Game Manager - Players - Player ID Search](media/tutorials/game-manager-players-player-id-search.png)
 
 ## Populating the report
 
-The following **API** call will produce new entries for this **Report**.
+The following **API** call will produce new entries for this report.
 
 ```csharp
 public void ReportPlayer() {

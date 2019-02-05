@@ -10,31 +10,30 @@ keywords: playfab, analytics, reports
 ms.localizationpriority: medium
 ---
 
-# Daily and Monthly Top Items Report
+# Daily and monthly top items report
 
 ## Overview
 
-The **Daily** and **Monthly Top Items Report** contains a list of top selling **Items** or **Bundles** in a given day or month.
+The daily and monthly top items report contains a list of top selling items or bundles in a given day or month.
 
 These tables include:
 
-- **Item** names from your primary **Catalog**
+- Item names from your primary catalog
 - Associated numbers of sales
 - Total revenue
 
-This **Report** can assist you in identifying trending **Items** over time, which can be useful for planning future promotions or **Events**.
+This report can assist you in identifying trending items over time, which can be useful for planning future promotions or events.
 
 ![Daily Top Items Report Table](media/tutorials/daily-top-items-report-table.png)  
 
 ![Daily Top Items Report Table](media/tutorials/monthly-top-items-report-table.png)  
 
-The **Daily** and **Monthly Top Items Report** contains a list of top selling **Items** or **Bundles** in a given **Day** or **Month**.
+The daily and monthly top items report contains a list of top selling items or bundles in a given da or month.
 
-These tables, **Daily** and **Monthly**, include **Item Names** from your primary **Catalog**, associated number of sales, and total revenue.
+These tables, daily and monthly, include item names from your primary catalog, associated number of sales, and total revenue.
 
-This **Report** can assist you in identifying trending **Items** over time, which can be useful for planning future promotions or **Events**.
+This report can assist you in identifying trending items over time, which can be useful for planning future promotions or events.
 
-## Populating the Reports
+## Populating the reports
 
-Please refer to our tutorials for [Catalogs](../../commerce/items/catalogs.md), [Stores and Sales](../../commerce/stores/stores-and-sales.md), and [Non-receipt Payment Processing](../../commerce/economy/non-receipt-payment-processing.md) to learn about setting up in-**Game Stores** and conducting payments.
-
+Please refer to our tutorials for [Catalogs](../../commerce/items/catalogs.md), [Stores and Sales](../../commerce/stores/stores-and-sales.md), and [Non-receipt Payment Processing](../../commerce/economy/non-receipt-payment-processing.md) to learn about setting up in-game stores and conducting payments.

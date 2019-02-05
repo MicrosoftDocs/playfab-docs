@@ -10,13 +10,12 @@ keywords: playfab, analytics, metrics, events
 ms.localizationpriority: medium
 ---
 
-# S3 Event Archiving
+# S3 event archiving
 
-PlayFab allows you to archive the entire event flow using th
+PlayFab allows you to archive the entire event flow using the
+ **Amazon S3** bucket. This tutorial shows you step-by-step how to configure event archiving from scratch.
 
- **Amazon S3 Bucket**. This tutorial shows you step-by-step how to configure **Event Archiving** from scratch.
-
-## Configuring Amazon S3 Bucket
+## Configuring Amazon S3 bucket
 
 Once you have created an **Amazon** account:
 
@@ -25,13 +24,13 @@ Once you have created an **Amazon** account:
 
 ![Select Amazon S3](media/tutorials/select-amazon-s3.png)  
 
-- On the **S3** page, you will have an overview of all your **Buckets**.
-- Notice the **Create Bucket** button?  Use it to create a new bucket by selecting it.
+- On the **S3** page, you will have an overview of all your buckets.
+- Notice the **Create bucket** button?  Use it to create a new bucket by selecting it.
 
 ![Amazon S3 - Create bucket](media/tutorials/amazon-s3-create-bucket.png)  
 To create your new S3 bucket, you must go though a 4-step wizard:
 
-1. Requires you to assign a unique, **DNS**-compliant **Name** for your **Bucket**. Make sure to have that name available somewhere for copying and pasting. We will need it when we configure PlayFab event archiving.
+1. You must assign a unique, **DNS**-compliant **Bucket name** for your bucket. Make sure to have that name available somewhere for copying and pasting. We will need it when we configure PlayFab event archiving.
 2. When you are done, select the **Next** button.
 
 ![Amazon S3 - Create bucket - enter bucket name](media/tutorials/amazon-s3-create-bucket-enter-bucket-name.png)  
@@ -46,18 +45,18 @@ To create your new S3 bucket, you must go though a 4-step wizard:
 
 ![Amazon S3 - Create bucket - enable read/write](media/tutorials/amazon-s3-create-bucket-enable-read-write.png)  
 
-In this last step, double-check your settings and select the **Create Bucket** button **(1)**.
+In this last step, double-check your settings and select the **Create bucket** button **(1)**.
 
 ![Amazon S3 - Create bucket - check settings](media/tutorials/amazon-s3-create-bucket-check-settings.png)  
 
-## Configuring Amazon Access
+## Configuring Amazon access
 
-In order to **Archive Events**, you will need to give **PlayFab** access to the **Bucket** on your behalf.
+In order to archive events, you will need to give PlayFab access to the bucket on your behalf.
 
-This is done by means of an **Access Key**.
+This is done by means of an access key.
 
-- Double-check that you have your newly created **Bucket** in the list of **S3** services **(1)**.
-- Select your **Account Name** in the top right corner **(2)**.
+- Double-check that you have your newly created bucket in the list of **S3** services **(1)**.
+- Select your account **Name** in the top right corner **(2)**.
 - Then select **My Security Credentials (3)**.
 
 ![Amazon S3 - Open My Security Credentials](media/tutorials/amazon-s3-open-my-security-credentials.png)  
@@ -74,11 +73,11 @@ This is done by means of an **Access Key**.
 
 ![Amazon S3 - Save Access Key data](media/tutorials/amazon-s3-security-credentials-save-access-key-data.png)  
 
-## Configuring PlayFab Event Archiving
+## Configuring PlayFab event archiving
 
-When your **Amazon S3 Bucket** is ready, it's time to set up the **PlayFab** side of things.
+When your **Amazon S3** bucket is ready, it's time to set up the PlayFab side of things.
 
-We need to pass the **Access Key Data** and **Bucket Name** to **PlayFab** to enable **Event Archiving**.
+We need to pass the access key data and bucket name to PlayFab to enable event archiving.
 
 To access the PlayFab Event Archive:
 
@@ -90,20 +89,20 @@ To access the PlayFab Event Archive:
 
 The **Update Settings** page will offer you the following settings:
 
-1. The **Amazon S3 Bucket Name** (use the one you created while configuring the **Amazon S3 Bucket**).
-2. **Prefix** is the *root folder* under which **PlayFab** will store all the relevant data.
-3. **Access Key ID** (use the one you obtained while configuring access to the **Amazon Account**).
-4. **Secret Key** (use the one you obtained while configuring access to the **Amazon Account**).
+1. The **Amazon S3 bucket name** (use the one you created while configuring the **Amazon S3 Bucket**).
+2. **Prefix** is the *root folder* under which PlayFab will store all the relevant data.
+3. **Access key ID** (use the one you obtained while configuring access to the **Amazon Account**).
+4. **Secret Key** (use the one you obtained while configuring access to the **Amazon** account).
 5. Select the **Save Settings** button when everything is in place.
 
 ![Game Manager - Analytics - Event Archive - Update Settings](media/tutorials/game-manager-analytics-event-archive-update-settings.png)
 
-**PlayFab** should present you with a nice page indicating that **Event Archiving** is enabled.
+PlayFab should present you with a nice page indicating that event archiving is enabled.
 
 ![Game Manager - Analytics - Event Archiving Enabled](media/tutorials/game-manager-analytics-event-archiving-enabled.png)  
 
-Make sure to post some **Events** and then check your **Bucket** on the **Amazon** portal.
+Make sure to post some events and then check your bucket on the **Amazon** portal.
 
-After a short period of time, you should see that new compressed **JSON** streams are appearing, nicely broken out by **Title**, **Event Name**, **Year**, **Month** and **Day**.
+After a short period of time, you should see that new compressed **JSON** streams are appearing, nicely broken out by title, event name, year, month and day.
 
 ![Amazon S3 - Event Bucket](media/tutorials/amazon-s3-event-bucket.png)  

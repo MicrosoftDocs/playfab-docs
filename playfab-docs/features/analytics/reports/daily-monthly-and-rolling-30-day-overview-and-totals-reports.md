@@ -10,14 +10,14 @@ keywords: playfab, analytics, reports
 ms.localizationpriority: medium
 ---
 
-# Daily, Monthly, and Rolling 30-Day Overview and Totals Reports
+# Daily, monthly, and rolling 30-Day overview and totals reports
 
 ## Introduction
 
-**PlayFab** offers a set of **Daily** and **Monthly Key Performance Indicator** (**KPI**) **Reports**, including:
+PlayFab offers a set of daily and monthly Key Performance Indicator (KPI) reports, including:
 
 - **Total Logins**
-- **Unique Logins**: **DAU** (**Daily Reports**) or **MAU** (**Monthly** and **Rolling 30-day Reports**)
+- **Unique Logins**: **DAU** (Daily Reports) or **MAU** (Monthly and Rolling 30-day Reports)
 - **New Users**
 - **Unique Paying Users**
 - **Transaction Revenue**
@@ -29,21 +29,21 @@ ms.localizationpriority: medium
 - **Average Revenue Per Paying User** (**ARPPU**)
 - **Average Purchase Price**
 
-An **Overview Report** contains trend charts of each metric during the past 24 hours (**Daily**), past 30 days (**Rolling 30-day**), and in last month (**Monthly**).
+An overview report contains trend charts of each metric during the past 24 hours (daily), past 30 days (rolling 30-day), and in last month (monthly).
 
-A **Totals Report** contains the summary of each metric shown in the **Overview Report**. **Daily** and **Rolling 30-day Reports** are generated on a **Daily** basis, whereas **Monthly Reports** are generated on the first day of each month.
+A totals report contains the summary of each metric shown in the overview report. Daily and rolling 30-day reports are generated on a daily basis, whereas monthly reports are generated on the first day of each month.
 
-**Report** times are based on **Coordinated Universal Time** (**UTC**). For additional details on metrics, see [Metrics and Terminology](../metrics/metrics-and-terminology.md).
+Report times are based on Coordinated Universal Time (UTC). For additional details on metrics, see [Metrics and Terminology](../metrics/metrics-and-terminology.md).
 
-## Totals Reports
+## Totals reports
 
-**Totals Reports** include a table which contains the **12 Key Performance Metrics** described in the introduction.
+Totals reports include a table which contains the 12 Key Performance metrics described in the introduction.
 
 ![Daily Totals Report](media/tutorials/daily-totals-report.png)  
 
-## Overview Reports
+## Overview reports
 
-**Overview Reports** consist of **12 Trend Charts** - one for each metric described in the introduction. Working with **Charts** is described later in this tutorial.
+Overview reports consist of 12 trend charts - one for each metric described in the introduction. Working with charts is described later in this tutorial.
 
 ![Daily Overview Report - Logins - Unique Payers](media/tutorials/daily-overview-report-logins-unique-payers.png)  
 
@@ -53,17 +53,17 @@ A **Totals Report** contains the summary of each metric shown in the **Overview 
 
 ![Daily Overview Report - Arppu - App - New Users](media/tutorials/daily-overview-report-arppu-app-new-users.png)  
 
-## Populating the Reports
+## Populating the reports
 
-Any **API** call may introduce new data for **Total API Calls**, **Total Successful API Calls** and **Total API Call Errors**.
+Any **API** call may introduce new data for total **API** calls, total successful **API** calls and total **API** call errors.
 
-- Once executed, an **API** call will be added to **Total API Calls**.
-- If there is an **Error** that is introduced, it will be recorded to **Total API Call Errors**.
-- If *no* **Error** is introduced, it will belong to **Total Successful API Calls**.
+- Once executed, an **API** call will be added to total **API** calls.
+- If there is an error that is introduced, it will be recorded to total **API** call errors.
+- If *no* error is introduced, it will belong to total successful **API** calls.
 
 Please consult our [PlayFab API Reference documentation](../../../api-references/index.md) to review all available **API** calls.
 
-The following **API** calls will introduce new data for **Total Logins** and **Total Unique Logins**:
+The following **API** calls will introduce new data for total logins and total unique logins:
 
 - [LoginWithAndroidDeviceID](xref:titleid.playfabapi.com.client.authentication.loginwithandroiddeviceid)
 - [LoginWithCustomID](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid)
@@ -78,12 +78,12 @@ The following **API** calls will introduce new data for **Total Logins** and **T
 - [LoginWithTwitch](xref:titleid.playfabapi.com.client.authentication.loginwithtwitch)
 - [LoginWithWindowsHello](xref:titleid.playfabapi.com.client.authentication.loginwithwindowshello)
 
-The **API** calls shown below will introduce new data for **Total New Users**.
+The **API** calls shown below will introduce new data for total new users.
 
 - [RegisterPlayFabUser](xref:titleid.playfabapi.com.client.authentication.registerplayfabuser)
 - [RegisterWithWindowsHello](xref:titleid.playfabapi.com.client.authentication.registerwithwindowshello)
 
-The **API** calls shown below will introduce new data for **Total New Users** if the CreateAccount flag is set.
+The **API** calls shown below will introduce new data for total new users if the **CreateAccount** flag is set.
 
 - [LoginWithAndroidDeviceID](xref:titleid.playfabapi.com.client.authentication.loginwithandroiddeviceid)
 - [LoginWithCustomID](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid)
@@ -95,23 +95,23 @@ The **API** calls shown below will introduce new data for **Total New Users** if
 - [LoginWithSteam](xref:titleid.playfabapi.com.client.authentication.loginwithsteam)
 - [LoginWithTwitch](xref:titleid.playfabapi.com.client.authentication.loginwithtwitch)
 
-The **Unique Paying Users**, **Revenue**, **Purchases**, **Average Revenue Per User (ARPU)**, **Average Revenue Per Paying User (ARPPU)** and **Average Purchase Price** metrics are used to analyze purchases and payments.
+The unique paying users, revenue, purchases, Average Revenue Per User (ARPU), Average Revenue Per Paying User (ARPPU) and average purchase price metrics are used to analyze purchases and payments.
 
 See the [Non-receipt Payment Processing](../../commerce/economy/non-receipt-payment-processing.md) tutorial for more information on conducting payments.
 
-## How to work with Report Charts
+## How to work with report charts
 
-**PlayFab Report Charts** all follow the same model:
+PlayFab report charts all follow the same model:
 
-In the top space of the page, you usually get a **Control Panel (1)**. The **Control Panel** contains a **Report Name**, observed time period, and **Prev/Next** buttons to switch between the time periods.
+In the top space of the page, you usually get a **Control Panel (1)**. The **Control Panel** contains a report name, observed time period, and **Prev/Next** buttons to switch between the time periods.
 
-The **Chart Panel (2)** shows the available data as a **Chart**, where the horizontal axis corresponds to the time flow, and the vertical axis corresponds to the number of relevant instances, such as **API** calls, purchases, **Users**, and so on, depending on the **Report Type**.
+The **Chart Panel (2)** area shows the available data as a chart, where the horizontal axis corresponds to the time flow, and the vertical axis corresponds to the number of relevant instances, such as **API** calls, purchases, users, and so on, depending on the report type.
 
 ![Monthly Overview Report](media/tutorials/monthly-overview-report.png)
 
-There are some metrics available below the **Chart Panel (3)**. Those contain:
+There are some metrics available in the chart panel **Timeline (3)** area. Those contain:
 
-- The **Sum** of all the instance across the time period (**SUM**).
-- The **Average** number of instances through all the timestamps (**AVG**).
+- The sum of all the instance across the time period (**SUM**).
+- The average number of instances through all the timestamps (**AVG**).
 - The peak value (**MAX**).
 - The lowest value (**MIN**).

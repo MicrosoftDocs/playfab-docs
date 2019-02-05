@@ -10,37 +10,37 @@ keywords: playfab, analytics, reports
 ms.localizationpriority: medium
 ---
 
-# Thirty Day Retention Report
+# Thirty day retention report
 
 ## Overview
 
-The **Thirty Day Retention Report** table illustrates how many of your **Players** came back to the game within a 30-day period.
+The thirty day retention report table illustrates how many of your players came back to the game within a 30-day period.
 
-A new **Cohort** of **Players** is formed every day, based on all the **Players** (new and returning), who have logged in to your game on a given day (**Day 0**).
+A new cohort of players is formed every day, based on all the players* (new and returning), who have logged in to your game on a given day (**Day 0**).
 
-**Cohort** size is defined by the number of **Players** included in a **Cohort**. Then each cell shows the percentage of **Players** **(%)** from a given **Cohort** who returned on each subsequent day.
+Cohort size is defined by the number of players included in a cohort. Then each cell shows the percentage of players **(%)** from a given cohort who returned on each subsequent day.
 
 ![Thirty Day Retention Report](media/tutorials/thirty-day-retention-report-table.png)  
 
-The **Thirty Day Retention Report** table illustrates how many of your **Players** came back to the **Game** within a 30-day period.
+The thirty day retention report table illustrates how many of your players came back to the gme within a 30-day period.
 
-A new cohort of **Players** is formed every day, based on all the **Players** (new and returning) who have logged in to your **Game** on a given day (Day 0).
+A new cohort of players is formed every day, based on all the players (new and returning) who have logged in to your game on a given day (Day 0).
 
-**Cohort** size is defined by the number of **Players** included in a **Cohort**. Then each **Cell** shows the percentage of **Players** (%) from a given **Cohort** who returned on each subsequent day.
+Cohort size is defined by the number of players included in a cohort. Then each cell shows the percentage of players (%) from a given cohort who returned on each subsequent day.
 
-The preceding example **Report** was generated on **1/24/2018**. It shows, for instance, that on **12/25/2017**, 1.38M **Users** logged in.
+The preceding example report was generated on **1/24/2018**. It shows, for instance, that on **12/25/2017**, 1.38M users logged in.
 
 Then **61.85%** of them logged in the *next* day, and **55.85%** of them logged in *two days* later.
 
-Finally, **18.6%** came back *30 days* later, which corresponds to the **Report** generate date, **1/24/2018**.
+Finally, **18.6%** came back *30 days* later, which corresponds to the report generate date, **1/24/2018**.
 
-This **Report**, in addition to the [New User Retention Report](thirty-day-new-user-retention-report.md), is especially useful when you are running a **LiveOps Event**, and want to check its effect on boosting engagement of existing **Players**. For additional details, see [Metrics and Terminology](../metrics/metrics-and-terminology.md).
+This report, in addition to the [New User Retention Report](thirty-day-new-user-retention-report.md), is especially useful when you are running a LiveOps event, and want to check its effect on boosting engagement of existing players. For additional details, see [Metrics and Terminology](../metrics/metrics-and-terminology.md).
 
-## Populating the Report
+## Populating the report
 
-To populate this **Report**, you need to register a **Player** and then log in several days in a row, at least once.
+To populate this report, you need to register a player and then log in several days in a row, at least once.
 
-This, however, will produce trivial results, with **100%** retention for each day. Throwing more **Players** into the process and skipping some days will produce more interesting results.
+This, however, will produce trivial results, with **100%** retention for each day. Throwing more players into the process and skipping some days will produce more interesting results.
 
 The following **API** calls may be used to log in:
 
