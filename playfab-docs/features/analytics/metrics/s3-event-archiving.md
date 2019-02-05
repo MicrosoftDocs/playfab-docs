@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # S3 Event Archiving
 
-**PlayFab** allows you to archive the entire event flow using th
+PlayFab allows you to archive the entire event flow using th
 
  **Amazon S3 Bucket**. This tutorial shows you step-by-step how to configure **Event Archiving** from scratch.
 
