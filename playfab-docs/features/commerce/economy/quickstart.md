@@ -49,7 +49,7 @@ To make a catalog with an item:
 5. Set the apple's price in gold ("GD") to 5.
 6. Click Save Item.
 
-![Edit or Save Currency](Media/tutorials/edit-save-currency.png)
+![Edit or Save Currency](media/tutorials/edit-save-currency.png)
 
 ## Add an item to a player inventory
 

@@ -41,7 +41,7 @@ When Fluffy Fairy Games launched its hit game Idle Miner Tycoon, the team made t
 
 Fluffy Fairy took this approach to heart; rather than focusing on growing player numbers through user acquisition or being featured in an app store, they focused on building traction, focusing tightly on key metrics like early retention signals, number of sessions, DAU (Daily Active Users), and ad monetization. In the game’s early days, before there were large numbers of players, Fluffy Fairy’s Marketing Director Volkmar Reinerth relied heavily on “player feedback, following the company spirit to be player-centric.” Then, as the game found and began to grow an audience of players, who in turn began to generate more data, the company prioritized collecting more data for analytics.
 
-![Rank History](Media/ranker-history1.png)
+![Rank History](media/ranker-history1.png)
 *Idle Miner Tycoon*: focusing on customer traction pays off in the long run
 
 At PlayFab, we’ve found the following to be a good basic set of KPIs for all games to track over time:
@@ -59,13 +59,13 @@ Most analytics solutions provide at-a-glance reporting for these key KPIs, but f
 
 Data visualization is an important tool for understanding the story your data is telling you. Look for cyclical trends like weekday vs. weekend, track performance over time, and get a feel for the impact that major changes - whether that’s your live events or error spikes - have on your game in the short and longer term. 
 
-![Logins](Media/logins-purchases2.png) ![Purchases](Media/purchases2b.png)
+![Logins](media/logins-purchases2.png) ![Purchases](media/purchases2b.png)
 
-![Calls and Errors](Media/calls-errors3.png) 
+![Calls and Errors](media/calls-errors3.png) 
 
 You’ll also want to be able to drill into your event history across preset or custom event queries as a way to help you track and optimize performance and monetization of your live events and benchmark your performance vs. past initiatives.
 
-![Event History](event-history4.png)
+![Event History](media/event-history4.png)
 
 Not all players are created equal, and one important tactic for making your game successful is segmenting your players and finding ways to stimulate each segment to behave in a way that benefits your game. Marketers need the ability to create custom segments and then treat those segments differently (e.g. customize messaging, events, inventory, stores, and more by segment). That’s because every game is different - for some games, it’s critical to track which players spend early (in their first few sessions) because players who spend early, spend often. Other games report that one of their most important metrics is total spend by Day 7, because this is a marker for long-term engagement and spend. And obviously no matter what, you’ll want to be able to track ongoing spend patterns of your players to make sure that changes you make to the game don’t have unforeseen impacts. Finally, if you plan on using A/B testing to validate elements of your game play, you will need to manage each group in your test as a segment.
 
@@ -85,8 +85,8 @@ As you think about analytics, avoid the trap of focusing on headline metrics and
 
 As your game gains traction, you’ll start to see player segments form naturally, and your analytics toolset should make it easy for you to define custom segments in a way that makes sense for your game (e.g. high XP players, currently active players, lapsed players, players who have made purchases, whales…). Then, as you run experiments and test your ideas, you can track how players in your key segments react. When you do something that stimulates the behavior you want to see in a key segment (such as a particular kind of promotion or event), make a note of it and try other similar tactics to see if you can get that effect consistently. Of course, you need to be thoughtful about going to the same well too often or you can burn players out.
 
-![Segments](Media/segments5.png)
-![Segments](Media/segments6.png)
+![Segments](media/segments5.png)
+![Segments](media/segments6.png)
 
 At a minimum, games should think about the basic "funnel" in their game. For example, you can define some simple segments as follows:
 
@@ -152,7 +152,7 @@ Running successful events is perhaps the most essential LiveOps skill. A good ev
 - An effective means of communicating with players that can draw people who aren’t currently playing into the game very quickly
 - A sense of excitement around the event, such that skipping it would cause players to feel they’ve missed out on something special which their friends are doing
 
-![Adventures](Media/adventures7.png)
+![Adventures](media/adventures7.png)
 
 So what does that mean, exactly? In the abstract, a live event is simply a temporary but meaningful change to a game’s content. Holidays are an obvious theme for events, both because players will generally share some similar associations with the holiday which can be reflected in fun limited-time changes to the game’s appearance, and because holidays can be times when players have more free time available and offering them a reason to play can provide a boost in engagement. Games like Clash of Clans and Brutes.io make a practice of running major events for Halloween and the winter holidays, for example. 
 
@@ -162,14 +162,14 @@ Events can also run in parallel, not just in series. Clash Royale organizes dail
 
 Events often have a "fiction" that masks the actual changes associated with the event. The changes themselves can be something simple, like a higher drop-rate on a particular rare item, or perhaps a new bundle for sale. However, the fiction for the event might still be something dramatic like "Midsummer Night’s Terror" with an equally dramatic description. Furthermore, while some types of events require in-game work, others can be run entirely by looking at event logs and analytics after the fact. For example, an event where players compete to catch the most fish doesn't necessarily require any changes to the game - you can just run a database query after the event to measure who caught the most fish.
 
-![Snowpark](Media/snowpark8.png)
+![Snowpark](media/snowpark8.png)
 
 Companies like Fluffy Fairy Games understand the dynamics of limited-time events, and have hit all the right notes in their game Idle Miner Tycoon. “We do event mines on a regular basis - at least one event mine per month and also focus on special events, holidays like Halloween, Christmas etc. You can access mines for a limited time period (3-7 days) and get specific rewards for achieving specific obstacles - different from the normal mines. For special events, we try to get new offers with specific items, for example a really good boost. We also have limited offers which rotate - every second day or so you can get very special items. We schedule countdowns and times on PlayFab,” says Oliver Löffler, Fluffy Fairy’s CTO. “To prepare - first we have to prepare new assets with the graphic teams, the game designers refresh the ideas and then bring it all together on the development side. We have different channels to message players. Push notifications have generated a huge increase in logins. In-game messaging - pop-ups that notify players of events. Also all the channels - Facebook, Discord, Reddit.”
 
-![Popups](Media/popups9.png)
-![Popups](Media/popups10.png)
+![Popups](media/popups9.png)
+![Popups](media/popups10.png)
 
-![Car Launch](Media/car-launch11.png)
+![Car Launch](media/car-launch11.png)
 
 ## Case study: Co-branded car launch event
 
@@ -290,7 +290,7 @@ If you have a practice of doing small, frequent updates, then it may be easiest 
 PlayFab “allows us to get a lot more visibility on what players are engaged with, what they enjoy and don’t enjoy...we can really get an idea of how much the high players are engaging and what they value, and can tailor rewards around that.”
 ---Phil Larsen (Managing Director, Prettygreat)
  
-![PG Plus](Media/pgplus12.png)
+![PG Plus](media/pgplus12.png)
 
 ## Pace yourself
 
@@ -396,7 +396,7 @@ While some games are able to charge for downloads, many find the challenge of ge
 
 For free-to-play games, advertising is often an important revenue stream, since at the end of the day the vast majority of players never make a purchase. In the world of games, one of the most popular and successful forms of advertising is “rewarded video” - a short (and sometimes playable) video, generally promoting a different game, that the player can choose to watch in exchange for an incentive within the structure of the game being played currently. There’s understandable fear amongst game developers that rewarded videos featuring games that would appeal to the player can distract that player from their current session or from coming back in the future. The opportunity cost is potentially high, particularly for the most valuable players who are making real-money purchases. However, it doesn’t have to be that way. Notes Dimitar Draganov, Senior Product Manager of flaregames, “a well-designed and integrated into the core loop rewarded video outperforms every other ad inventory by a wide margin; rewarded videos have always been the biggest revenue driver across all the games I've worked on and they are rarely filled with anything but game ads.” If you view rewarded ads as part of the core game loop, you’ll want to optimize the player ad experience along with the rest of your game. That means you’ll need to monitor player engagement with these ad units closely, so you can track and optimize the rewards you offer to players who engage.
 
-![Quick Boost](Media/quickboost13.png) ![Adventure Communist](Media/adventure-communist14.png)
+![Quick Boost](media/quickboost13.png) ![Adventure Communist](media/adventure-communist14.png)
 
 Other important ad formats include banners (ads that run across the top or bottom of the screen, similar to what you might see on non-game websites), interstitials (ads that run while the game pauses briefly, for example between levels), and offer walls (a page that offers users rewards or incentives for real-money purchase or in exchange for completing a specific task). With all forms of advertising, remember that testing and segmentation are your friends. Fundamentally, you want to make sure that your monetization efforts aren’t at cross-purposes with your strategy for fostering player engagement and retention. Many developers look to segmentation for this and choose not to show ads to every segment, for example choosing to limit ads to those who do not make real-money purchases. 
 
@@ -419,7 +419,7 @@ However, setting up your game properly for purchasing takes a lot of forethought
 
 Of course, monetization is not a substitute for user acquisition and retention. If you take your eye off the ball on those activities, ultimately your monetization will also suffer as your player base drops. When Machine Zone’s Game of War - Fire Age slowed down user acquisition, the game soon slipped out of the top 10 grossing games and dropped precipitously.
 
-![Game of War](Media/gameofwar15.png)
+![Game of War](media/gameofwar15.png)
 
 ## IAP best practices
 
@@ -440,7 +440,7 @@ Getting a player to make an early purchase significantly increases your chances 
 
 Notes Draganov of flaregames, “well planned and executed starter bundles have been known to improve first time conversion by 80-200%.” Getting it right is an optimization problem as well. Per Draganov, “even miniscule changes (e.g. change of main art or slightly bigger discount / value added to the offer) in such offers can bring significant uplifts, so AB-testing such offers is key.” With IAP, “the goal is to offer players what they need and when they need it. This requires design of features to be done in a specific way to make the needs and provided solutions obvious and straightforward...everything takes iteration, so analyzing how well a promotion converts new or reconverts old users is key to improving your operations' effectiveness over time.” 
 
-![Advantage Bundle](Media/advantage-bundle16.png) ![Starter Package](Media/starter-package17.png)
+![Advantage Bundle](media/advantage-bundle16.png) ![Starter Package](media/starter-package17.png)
 
 ## First-time bundle best practices
 
@@ -488,7 +488,7 @@ Accruing and maintaining players is critical path for your game’s success, reg
 
 Acquiring new players is a fundamental challenge faced by all developers, for obvious reasons. The more players you have playing your game, the greater your game’s success, and the more money you will make. On the other hand, not all players are created equal, and there are plenty of examples of very successful games with a relatively small but highly-engaged player base, such as Eve Online. So it’s not enough to just look at adding more players…you need to make sure the players you add stick around as well! That’s why it’s so important to measure both acquisition and retention together for each of your various acquisition channels.
 
-![Brutes](Media/brutes18.png)
+![Brutes](media/brutes18.png)
 Sharing mechanisms are an important and cost-effective means of player acquisition and engagement, if done right.  
 
 Let’s take a closer look at each of the various acquisition channels you should consider:

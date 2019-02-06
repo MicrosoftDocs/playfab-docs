@@ -33,7 +33,7 @@ First, add some Items to sell in your catalog:
     
 TIP: You don't have to assign a Virtual Currency price to Items in the Catalog for them to appear in a Store. 
 
-![Add Items](Media/tutorials/add-items.png)
+![Add Items](media/tutorials/add-items.png)
 You should now have a few items with prices. Let's create a Store to sell them to the player. 
 
 1. Go to the Stores tab in the "main" catalog.
@@ -43,7 +43,7 @@ You should now have a few items with prices. Let's create a Store to sell them t
 
 You should see your items listed in the store, but they're not valid until they have at least one price. The little static number (e.g. <5) next to the price text box is the original catalog price. You only have to enter a price for one box in each row, but you can enter as many prices as you want. If you don't enter any price for an item, it will be removed from the store. If a store item doesn't have a price in a currency, it can't be bought using that currency. Store prices can be higher than catalog prices, and zero is a valid price for an item.
  
-![Create Store](Media/tutorials/create-store.png)
+![Create Store](media/tutorials/create-store.png)
 TIP: You can drag and drop the rows to rearrange the order of the items. 
 
 1. Next, add some "GD" prices to your Items, but make them lower than the Catalog prices 
