@@ -1,7 +1,7 @@
 ---
-title: Billing for PlayFab Multiplayer Communications Fabric (Bumblelion)
+title: Billing for PlayFab Parties (Bumblelion)
 author: v-thopra
-description: Describes the Billing plan for Bumblelion 1PP Preview (aka PlayFab Multiplayer Communications Fabric).
+description: Describes the Billing plan for Bumblelion 1PP Preview (aka PlayFab Parties).
 ms.author: v-thopra
 ms.date: 13/12/2018
 ms.topic: article
@@ -11,7 +11,7 @@ keywords: playfab, multiplayer, bumblelion, networking, pricing, billing
 ms.localizationpriority: medium
 ---
 
-# Billing for PlayFab Multiplayer Communications Fabric (Bumblelion)
+# Billing for PlayFab Parties (Bumblelion)
 
 > [!IMPORTANT]
 > This feature is currently in **Private Preview**.  
@@ -20,34 +20,34 @@ ms.localizationpriority: medium
 >
 > Access to this feature is restricted to select titles. If you are interested in trying it, you can request access by submitting a ticket on [support.playfab.com](https://support.playfab.com/hc/en-us/requests/new).
 
-Most PlayFab services, such as PlayStream or Multiplayer Matchmaking, are included with every paid PlayFab tier as part of our core offering. However, PlayFab Multiplayer Servers and Multiplayer Communications Fabric are billed on a consumption basis. This document describes the billing plan for Communications Fabric.
+Most PlayFab services, such as PlayStream or Matchmaking, are included with every paid PlayFab tier as part of our core offering. However, PlayFab Multiplayer Servers and Parties are billed on a consumption basis. This document describes the billing plan for Parties.
 
 ## What comes with your basic PlayFab Core Services package?
 
-A basic allocation of multiplayer fabric time capacity is included with every paid PlayFab tier: 100 player minutes, and 100 voice minutes, with voice chat and cognitive services enabled.
+A basic allocation of multiplayer Party time capacity is included with every paid PlayFab tier: 100 player minutes, and 100 voice minutes, with voice chat and Speech services enabled.
 
 ## What meters are used for consumption billing?
 
-There are three key meters used to bill additional Communications Fabric utilization:
+There are three key meters used to bill additional Parties utilization:
 
-- **Fabric Connectivity.** This is measured in player minutes connected to a network. Metering starts when a player creates a network or joins a network, and it stops when they have disconnected.
-- **Fabric Voice.** This is measured in player minutes speaking. When a player is connected to a network and voice chat has been enabled, player voice chat is measured in seconds and metered.
+- **Party Connectivity.** This is measured in player minutes connected to a network. Metering starts when a player creates a network or joins a network, and it stops when they have disconnected.
+- **Party Voice.** This is measured in player minutes speaking. When a player is connected to a network and voice chat has been enabled, player voice chat is measured in seconds and metered.
 - **Network egress.** This meters data *sent* from PlayFab's relay and voice servers. This is congruent to the aggregate amount of data that players *receive* from the network.
 
-## Fabric Connectivity   
+## Party Connectivity   
 
 | SKU | $/player-minute connected to a network |
 | --- | --- |
-| Fabric Connectivity | $0.0001 |
+| Party Connectivity | $0.0001 |
 
-## Fabric Voice
+## Party Voice
 
-Usage of voice chat is priced differently if Cognitive Services are enabled. Cognitive Services enables speech-to-text transcription, speech-to-text translation, and text-to-text translation. 10% of voice minutes can leverage transcription and synthesis for free before the below meter is billed. We recommend tying activation of this capability to an ease-of-access player setting.
+Usage of voice chat is priced differently if Speech Services are enabled. Speech Services enables speech-to-text transcription, speech-to-text translation, and text-to-text translation. 10% of voice minutes can leverage transcription and synthesis for free before the below meter is billed. We recommend tying activation of this capability to an ease-of-access player setting.
 
 | SKU | $/player-minute speaking |
 | --- | --- |
-| Fabric Voice | $0.001 |
-| Fabric Voice + Cognitive Services | $0.015 |
+| Party Voice | $0.001 |
+| Party Voice + Speech Services | $0.015 |
 
 In-game chat text messages, even when text-to-text translation or text-to-speech synthesis are activated, do not drive metering and are not billed to your account.
 
