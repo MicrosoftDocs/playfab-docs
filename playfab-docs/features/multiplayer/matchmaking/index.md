@@ -28,7 +28,7 @@ Individuals or groups who want to enter matchmaking request the matchmaking serv
 
 ## Terminology
 
-There are a few common terms used throughout the matchmaking system that we’ll need to define.  They are:
+There are a few common terms used throughout the matchmaking system that we’ll need to define. They are:
 
 + **Ticket** - A ticket is the resource at the core of the matchmaking process. A ticket consists of a player or a list of players that want to play together, along with their attributes (such as in-game levels, favorite maps, or skill).
 + **Queue** - A queue is a collection of tickets to be matched together and a set of rules that controls how tickets are matched.

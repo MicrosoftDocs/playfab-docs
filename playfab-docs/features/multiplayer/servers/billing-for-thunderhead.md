@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Billing for PlayFab Multiplayer Servers 2.0
 
-Most PlayFab services, including PlayFab Multiplayer Matchmaking, are included with every paid PlayFab tier, as part of our core offering. However, PlayFab Multiplayer Servers is billed on a consumption basis.  This document describes that billing plan.
+Most PlayFab services, including PlayFab Multiplayer Matchmaking, are included with every paid PlayFab tier, as part of our core offering. However, PlayFab Multiplayer Servers is billed on a consumption basis. This document describes that billing plan.
 
 ## What comes with your basic PlayFab Core Services package?
 

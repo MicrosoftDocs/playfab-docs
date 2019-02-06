@@ -47,7 +47,7 @@ Your screen should be similar to this example.
 
 ![Game Manager - Catalogs - Drop Tables](media/tutorials/game-manager-catalogs-drop-tables.png)  
 
-1. Begin building **Drop Tables** on each of your item descriptors.  Our first categorization is **Equipment Type**, so we will create a new **Drop Table** called **Accessories**.
+1. Begin building **Drop Tables** on each of your item descriptors. Our first categorization is **Equipment Type**, so we will create a new **Drop Table** called **Accessories**.
 
      - Select the **New Drop Table** button.
      - Select **Accessories**.
@@ -65,7 +65,7 @@ Your screen should be similar to this example.
      - **Rare**: 10
      - **Legendary**: 1
 
-The weights indicate how frequently they should drop in comparison to one another.  For our example shown here, you will drop approximately **1000 Commons** for every **Legendary**.
+The weights indicate how frequently they should drop in comparison to one another. For our example shown here, you will drop approximately **1000 Commons** for every **Legendary**.
 
 3. Save the **Drop Table**.
 
@@ -78,7 +78,7 @@ Our other categorization is by rarity, so we'll create an alternate set of table
 1. Select the **New Drop Table** button.
      - Select **Accessories**.
      - Select **Add Drop Table**.
-     - A pop-up should appear.  Select from these **Items**:
+     - A pop-up should appear. Select from these **Items**:
         - **Common Accessory**
         - **Uncommon Accessory**
         - **Rare Accessory**

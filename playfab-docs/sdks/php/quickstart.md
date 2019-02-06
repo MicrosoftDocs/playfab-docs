@@ -40,4 +40,4 @@ If you set up everything correctly, this page should work: https://localhost/Exa
 
 ## Pending changes
 
-This guide and example describe using the Client API via your PHP server. This is not a best practice.  Your game should use the JavaScriptSdk for client calls, from the client HTML. Your server logic should make server API calls as needed, and you should implement your own server logic between your client and our server API.
+This guide and example describe using the Client API via your PHP server. This is not a best practice. Your game should use the JavaScriptSdk for client calls, from the client HTML. Your server logic should make server API calls as needed, and you should implement your own server logic between your client and our server API.

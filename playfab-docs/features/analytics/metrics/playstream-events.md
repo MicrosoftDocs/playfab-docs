@@ -47,7 +47,7 @@ The concept of custom events allows you to post events with an arbitrary type an
 
 Similar to automatic events, custom events are fully reflected through [real-time analytics tools](../../analytics/metrics/real-time-analytics-core-concepts.md). Unlike automatic events, you need a little bit of custom code to post custom events.
 
-Custom events can be classified by entity. A custom event can be bound to a player, character, or title.  An event entity reference is specified using two fields:
+Custom events can be classified by entity. A custom event can be bound to a player, character, or title. An event entity reference is specified using two fields:
 
 - **EntityType**
 - **EntityID**.

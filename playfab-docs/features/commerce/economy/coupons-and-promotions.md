@@ -82,7 +82,7 @@ Coupons cannot grant [Virtual Currency](currencies.md) directly, and they can on
 
 However, bundles can be used to convert inventory items seamlessly into groups of items or virtual currency. In the VC example, you should create a new bundle item, with VC contents.
 
-Set the bundle to expire in **15 seconds**.  This way, the player will immediately see the VC as soon as they open the bundle, and they won't see the intermediate item.
+Set the bundle to expire in **15 seconds**. This way, the player will immediately see the VC as soon as they open the bundle, and they won't see the intermediate item.
 
 ![Game Manager - Economy - Edit Catalog Bundle](media/tutorials/game-manager-economy-edit-catalog-bundle.png)  
 

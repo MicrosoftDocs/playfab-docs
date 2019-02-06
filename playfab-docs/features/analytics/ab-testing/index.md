@@ -67,7 +67,7 @@ Once you're confident about the results of your test, you can then reconfigure y
 
 ## Future Work on A/B Testing
 
-Today, Stores are the only PlayFab feature area that have segment overrides.  We have plans for overriding Title Data by segments, as well as other areas. This will look much like store overrides, where title-wide variables will be configurable based on the segment of the user requesting title data. This will allow for tuning a much wider variety of features for your title.
+Today, Stores are the only PlayFab feature area that have segment overrides. We have plans for overriding Title Data by segments, as well as other areas. This will look much like store overrides, where title-wide variables will be configurable based on the segment of the user requesting title data. This will allow for tuning a much wider variety of features for your title.
 
 We also have plans to allow you to run A/B tests within an existing Segment, instead of for all players. So, for example, you could try running an A/B test on pricing that applies only to members of the VIP segment.
 

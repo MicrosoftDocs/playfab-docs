@@ -29,7 +29,7 @@ Most of these **APIs** are server **APIs** that your program must call from a de
 You must call the server **APIs** from a dedicated server or through a **CloudScript** function through the PlayFab service. This is by design, as the PlayFab server **APIs** require that you supply your secret key.
 
 > [!TIP]
-> We *do not recommend* using server **APIs** from within a game client.  If you need to make use of a server **API**, use **CloudScript** for this type of functionality.
+> We *do not recommend* using server **APIs** from within a game client. If you need to make use of a server **API**, use **CloudScript** for this type of functionality.
 
 > [!NOTE]
 > **Publisher** data values are copied and distributed to potentially hundreds of machines in the PlayFab cluster server. As part of this process, **Publisher** data is cached and changes may take up to *fifteen minutes* to refresh in those caches. **Publisher** data is best suited for *global constant/static data*, and *is not* suitable or reliable as *global variables*.

@@ -23,7 +23,7 @@ Before the player can purchase an item from any catalog, you must create the ite
 The catalog **APIs** support many strategies for item purchasing, such as simple real money or virtual currency purchases of items, triggered item grants based on buying another item, locked (with a potentially purchasable key) and unlocked boxes, random result tables, and non-purchasable items that are granted based on events within a game.
 
 > [!NOTE]
-> In catalogs, the currency type of **RM** is reserved for Real Money, which is in cents USD.  $1.99 is represented as **RM 199**.
+> In catalogs, the currency type of **RM** is reserved for Real Money, which is in cents USD. $1.99 is represented as **RM 199**.
 
 ## Field reference
 
@@ -77,7 +77,7 @@ These are the fields in the **PROPERTIES** section of a new **Catalog Item**. **
   This optional field contains tags that you can use to organize your **Catalog Items**. Like the field name implies, the tags are text strings, separated by commas.
 
 - **Usage Period Group**:
-  This optional field is identifies a group of items where their usage period values are accumulated, and they share the result.  When the specified period has elapsed, all of the items in the group are removed. This can be used to recharge a player’s power-ups if they purchase another power-up of the same type before their current ones have expired.
+  This optional field is identifies a group of items where their usage period values are accumulated, and they share the result. When the specified period has elapsed, all of the items in the group are removed. This can be used to recharge a player’s power-ups if they purchase another power-up of the same type before their current ones have expired.
 
 - **Stackable Item checkbox**:
   Marking an item as **Stackable** allows only one item of this type in the inventory and increments the quantity count of the item.

@@ -113,4 +113,5 @@ The following flow-chart describes anonymous login followed by adding a recovera
 ![PayFab anonymous login and recoverable login mechanism](../media/tutorials/playfab-anonymous-login-and-recoverable-login.png)  
 
 ### Best practice
+
 Use the appropriate anonymous login for your device, paired with one or more options for account recovery.

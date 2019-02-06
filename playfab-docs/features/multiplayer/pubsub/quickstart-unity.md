@@ -170,13 +170,13 @@ Using the pubsub plugin is pretty easy. If you have not looked at our reference 
 
 ## Example usage
 
-In this example, we will use a custom Cloud Script function to increment a statistic, **Score**, and then push a message to the player with the updated player statistics via PubSub.
+In this example, we will use a custom CloudScript function to increment a statistic, **Score**, and then push a message to the player with the updated player statistics via PubSub.
 
 1. First we need to create a statistic for Players. This is done under [Leaderboards](../../social/tournaments-leaderboards/index.md). Click on **Leaderboards** and create a new leaderboard with the following settings:
 
    ![Leaderboard Statistic Setup](images/leaderboard-setup-score.png)
 
-2. We need a [CloudScript](../../automation/cloudscript/index.md) function that you can run on a player to increment the statistic for the player and then fire your custom event. You can edit this directly in PlayFab by going to **Automation --> Cloud Script**. Add the following handler to your Cloud Script:
+2. We need a [CloudScript](../../automation/cloudscript/index.md) function that you can run on a player to increment the statistic for the player and then fire your custom event. You can edit this directly in PlayFab by going to **Automation --> CloudScript**. Add the following handler to your CloudScript:
 
    ```javascript
 
@@ -233,9 +233,9 @@ Now you have all the pieces to run and test your code.
 
 1. Login to [Game Manager](https://developer.playfab.com) and navigate to your player that just logged int.
 
-1. Run the Cloud Script method on the player from the Cloud Script Tab.
+1. Run the CloudScript method on the player from the CloudScript Tab.
 
-   !["Run Cloud Script](images/run-cloudscript-function.png)
+   !["Run CloudScript](images/run-cloudscript-function.png)
 
 1. You should have received a message to your console that is similar to the following.
 

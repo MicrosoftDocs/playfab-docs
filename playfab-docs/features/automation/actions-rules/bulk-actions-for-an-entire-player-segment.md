@@ -176,6 +176,6 @@ handlers.GiveTieredReward = function (args, context) {
 
    ![PlayStream - Dashboard - Event Debugger](media/tutorials/playstream-dashboard-event-debugger.png)
 
-6. You can select any player triggered action executed **CloudScript** event (by selecting the time stamp), and see the detailed result of **CloudScript** execution for each player.  This includes useful diagnostic information such as the snapshot of the player profile at the time of the **CloudScript** execution.
+6. You can select any player triggered action executed **CloudScript** event (by selecting the time stamp), and see the detailed result of **CloudScript** execution for each player. This includes useful diagnostic information such as the snapshot of the player profile at the time of the **CloudScript** execution.
 
    ![PlayStream - Dashboard - Raw Event JSON](media/tutorials/playstream-dashboard-raw-event-json.png)

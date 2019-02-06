@@ -34,7 +34,7 @@ You can always get and set player data through Game Manager by performing the fo
 
 - Open **Game Manager**. If you are unfamiliar with it, see the [Game Manager quickstart](../../config/gamemanager/quickstart.md).
 - Select the **Players** tab.
-- Select the name of the **Player**.  This will put you into the **Players Account** tab.
+- Select the name of the **Player**. This will put you into the **Players Account** tab.
 - Select the **Player Data** tab to see their data.
 
 ## Setting player data

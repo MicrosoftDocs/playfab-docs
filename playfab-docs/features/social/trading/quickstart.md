@@ -32,7 +32,7 @@ Note: All trades are public information. Any player may look at the open trades 
 
 In this snip the LogSuccess callback must also evaluate result.Trade.TradeId, and transfer both firstPlayFabId and the tradeId to the second player. If not saved, it will not be possible for the second player to evaluate or accept the trade.
   
-Note: In the current preview you need to ensure that your trades are thread-safe from concurrent actions. Thread-safe options include custom game servers and webhook calls via Cloud Script to an external database/system. Thread-Unsafe options can be built with Cloud Script which directly modifies a Player Data key. The latter option has concurrency issues where simultaneous trade-list-updates may not process correctly.
+Note: In the current preview you need to ensure that your trades are thread-safe from concurrent actions. Thread-safe options include custom game servers and webhook calls via CloudScript to an external database/system. Thread-Unsafe options can be built with CloudScript which directly modifies a Player Data key. The latter option has concurrency issues where simultaneous trade-list-updates may not process correctly.
 
 Once the first player has created the trade, and transferred their PlayFabId and the tradeId to the second player, the second player can examine the trade requirements (verifying it is a gift) by making a GetTradeStatus request.
 

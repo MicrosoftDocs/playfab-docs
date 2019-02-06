@@ -342,7 +342,7 @@ static void Main(string[] args)
 There are several PlayFab settings related to your game server that you can retrieve using the **GSDK**.
 
 > [!NOTE]
-> Two of these settings are *actually* passed in to PlayFab by your clients, as part of the call to request a multiplayer server.  So those settings will *not* be available to your game server until it is allocated.
+> Two of these settings are *actually* passed in to PlayFab by your clients, as part of the call to request a multiplayer server. So those settings will *not* be available to your game server until it is allocated.
 
 ### C++
 

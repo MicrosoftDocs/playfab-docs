@@ -417,7 +417,7 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>Platform-Specific Authentication</h3>
-                                                <p style='color: #7f7f7f'>Use the providers that your players want.  Seemlessly integrate login in your game.</p><p><a href='/gaming/playfab/features/authentication/platform-specific-authentication/'>Overview</a></p><p><a href='/gaming/playfab/features/authentication/platform-specific-authentication/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/authentication/platform-specific-authentication/tutorials'>Tutorials</a></p>
+                                                <p style='color: #7f7f7f'>Use the providers that your players want. Seemlessly integrate login in your game.</p><p><a href='/gaming/playfab/features/authentication/platform-specific-authentication/'>Overview</a></p><p><a href='/gaming/playfab/features/authentication/platform-specific-authentication/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/authentication/platform-specific-authentication/tutorials'>Tutorials</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -830,7 +830,7 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>Segmentation</h3>
-                                                <p style='color: #7f7f7f'>Player segmentation allows you to define automated groupings of players.  Perform actions when segment membership changes for a player or for all the players in a segment.</p><p><a href='/gaming/playfab/features/analytics/segmentation/'>Overview</a></p><p><a href='/gaming/playfab/features/analytics/segmentation/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/analytics/segmentation/tutorials'>Tutorials</a></p>
+                                                <p style='color: #7f7f7f'>Player segmentation allows you to define automated groupings of players. Perform actions when segment membership changes for a player or for all the players in a segment.</p><p><a href='/gaming/playfab/features/analytics/segmentation/'>Overview</a></p><p><a href='/gaming/playfab/features/analytics/segmentation/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/analytics/segmentation/tutorials'>Tutorials</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -931,7 +931,7 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>C++</h3>
-                                                <p><a href='/gaming/playfab/sdks/xplatcpp'>SDK</a></p><p><a href='/gaming/playfab/sdks/xplatcpp/quickstart-windows'>Quickstart - Windows</a></p><p><a href='/gaming/playfab/sdks/xplatcpp/quickstart-linux'>Quickstart - Linux</a></p>
+                                                <p><a href='/gaming/playfab/sdks/xplatcpp'>SDK</a></p><p><a href='/gaming/playfab/sdks/xplatcpp/quickstart-windows'>Quickstart - Windows</a></p><p><a href='/gaming/playfab/sdks/xplatcpp/quickstart-linux'>Quickstart - Linux</a></p><p><a href='/gaming/playfab/sdks/xplatcpp/quickstart-xbox'>Quickstart - Xbox</a></p>
                                             </div>
                                         </div>
                                     </div>

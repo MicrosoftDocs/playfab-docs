@@ -62,7 +62,7 @@ From the client, the sequence of calls for this process are very similar for mos
 > [!NOTE]
 > The exception to this is **Xsolla**, which we'll address separately at the end of this tutorial.
 
-In the examples that follow, you’ll see fields like **{{TitleID}}** and **{{SessionTicket}}**.  You will need to replace these values in your own code with the appropriate values for your game, and the player’s authentication ticket.
+In the examples that follow, you’ll see fields like **{{TitleID}}** and **{{SessionTicket}}**. You will need to replace these values in your own code with the appropriate values for your game, and the player’s authentication ticket.
 
 ## Initiating the purchase
 
@@ -368,7 +368,7 @@ Behind the scenes, there are a number of state changes the order goes through. T
 
 - **Init** - As shown above, this is the status returned when the order has been submitted to the payment provider, but has not yet been authorized by the player.
 - **Approved** - This occurs briefly, after the player has approved the payment, but before PlayFab has completed the process of placing the items in the player inventory. *It is only included in this list for completeness, as titles should never see an order with this status*.
-- **Succeeded** - This indicates that the order has been completed successfully.  The player has approved the payment, and all inventory items have been added to that player's inventory.
+- **Succeeded** - This indicates that the order has been completed successfully. The player has approved the payment, and all inventory items have been added to that player's inventory.
 - **FailedByProvider** - If for any reason the provider rejects the payment (which includes the player declining the payment), the order is considered failed by the provider.
 - **DisputePending** - The payment provider has notified PlayFab of a dispute on the payment that is unresolved.
 - **RefundPending** - A payment provider has notified PlayFab that a refund request has been issued. At this stage, the refund has not actually occurred.
