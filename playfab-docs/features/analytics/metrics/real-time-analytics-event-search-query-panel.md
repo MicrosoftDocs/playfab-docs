@@ -12,14 +12,13 @@ ms.localizationpriority: medium
 
 # Real-time Analytics - Event Search Query panel
 
-This tutorial illustrates how to use the **Event Search Query** panel.
+This tutorial illustrates how to use the Event Search Query panel.
 
 ## Overview
 
-Along with other tools for monitoring event flow, **PlayFab** often exposes the **Event Search Query** panel that lets you filter **Events** by different properties.
+Along with other tools for monitoring event flow, PlayFab often exposes the Event Search Query panel that lets you filter events by different properties.
 
-![Event Search Query Panel](media/tutorials/event-search-query-panel.png)  
-On the primary screen:
+On the primary screen shown below:
 
 1. The **Event Search Query** field allows you to enter [query expressions](real-time-analytics-event-queries.md) for filtering.
 2. The **Run Query** button will reload the entire **Event** flow to match all the **Query** parameters.
@@ -32,7 +31,9 @@ On the primary screen:
 9. The **Sum by** field is a **Graph** options setting that allows you to set the metric for the vertical axis. By default, the **Event Total Amount** is used.
 10. The **Distinct on** field is a **Graph** options setting that allows you to change the grouping of the **Events**. By default, **Events** are grouped by **Name**.
 
-## Tips and Tricks
+![Event Search Query Panel](media/tutorials/event-search-query-panel.png)  
+
+## Tips and tricks
 
 - The **Query Builder** panel (the area in the image **outlined in green**) offers help with user input:
   - **Date** settings have **Calendar** buttons (to their right) that open a date-picker pop-up.

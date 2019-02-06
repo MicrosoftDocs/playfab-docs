@@ -16,27 +16,30 @@ This tutorial illustrates how to use the **Event History Chart** panel.
 
 ## Overview
 
-The [**Event History**](event-history.md) **Chart** panel represents the **Event** flow as a **Chart** of **Events** distributed over a timeline and grouped by **Time** intervals.
+The [**Event History Chart**](event-history.md) panel represents the event flow as a chart of events distributed over a timeline and grouped by time intervals.
 
-To generate **Events** for testing purposes, see the [Generating PlayStream Events tutorial](playstream-events.md) for examples of how to post **Custom Events**.
+To generate events for testing purposes, see the [Generating PlayStream Events tutorial](playstream-events.md) for examples of how to post custom events.
+
+On the panel shown below:
+
+1. The **vertical axis** shows the amount of events for each given period of time.
+2. The **horizontal axis** represents a timeline, grouped by intervals.
+3. The legend is represented as a color map, where each event name is mapped to a certain color.
+4. Events are grouped by intervals into columns. Within a certain interval, events are grouped by name (visually by color).
+5. Hovering over a color rectangle reveals *additional information* about that event group.
 
 ![Event History Chart panel](media/tutorials/event-history-chart-panel.png)  
-On this panel:
-1. The **vertical axis** shows the amount of **Events** for each given period of **Time**.
-2. The **horizontal axis** represents a **timeline**, grouped by **Intervals**.
-3. The **Legend** is represented as a color map, where each **Event Name** is mapped to a certain color.
-4. **Events** are grouped by **Intervals** into columns. Within a certain **Interval**, **Events** are grouped by **Name** (visually by color).
-5. Hovering over a color rectangle reveals *additional information* about that **Event Group**.
+
 
 ## Tips and Tricks
 
-- It is possible to select an **Interval** in the **Chart** and adjust the **Chart** to reflect only the selected **Interval**.
+- It is possible to select an interval in the chart and adjust the chart to reflect only the selected interval.
   
    ![Event History Chart - select interval](media/tutorials/event-history-chart-select-interval.png)  
 
-- You can select **Event Names** in the legend to optionally show or hide certain **Event Types**.
+- You can select event names in the legend to optionally show or hide certain event types.
 
 > [!NOTE]
-> This will not reload the **Query**.
+> This will not reload the query.
 
    ![Event History Chart - click event names](media/tutorials/event-history-chart-click-event-names.png)  
