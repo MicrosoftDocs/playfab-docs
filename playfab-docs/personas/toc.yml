@@ -1,16 +1,18 @@
-- name: "Business Intelligence"
+- name: Business Intelligence
   href: bi.md
-- name: "Developer"
+- name: Developer
   href: developer.md
-- name: "LiveOps"
-  href: liveops.md
-  - name: "LiveOps Handbook"
-  - href: liveops-handbook.md
-    - name: "Introduction to LiveOps"
-    - href: intro-liveops.md
-    - name: "LiveOps techniques"
-    - href: liveops-techniques.md
-  - name: "LiveOps Design Guides"
-  - href: liveops-design-guides.md
-  - name: "Tutorials"
-  - href: liveops-tutorials.md
+- name: LiveOps
+  href: LiveOps/liveops.md
+  items:
+  - name: LiveOps Handbook
+    href: LiveOps/liveops-handbook.md
+    items:
+    - name: Introduction to LiveOps
+      href: LiveOps/intro-liveops.md
+    - name: LiveOps techniques
+      href: LiveOps/liveops-techniques.md
+  - name: LiveOps Design Guides
+    href: LiveOps/liveops-design-guides.md
+  - name: Tutorials
+    href: LiveOps/liveops-tutorials.md

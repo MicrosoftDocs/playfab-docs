@@ -459,7 +459,7 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>Content Delivery Network</h3>
-                                                <p><p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/data/content-delivery-network/'>Overview</a></p><p><a href='/gaming/playfab/features/data/content-delivery-network/quickstart'>Quickstart</a></p>
+                                                <p><p style='color: #7f7f7f'>Infrastructure to deliver assets (images, audio, binary content, etc.) to your customers.</p><p><a href='/gaming/playfab/features/data/content-delivery-network/'>Overview</a></p><p><a href='/gaming/playfab/features/data/content-delivery-network/quickstart'>Quickstart</a></p>
                                             </div>
                                         </div>
                                     </div>

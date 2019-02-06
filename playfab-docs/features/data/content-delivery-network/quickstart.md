@@ -12,16 +12,7 @@ ms.localizationpriority: medium
 
 # Content Delivery network quickstart
 
-The Content Delivery Network (CDN) is an infrastructure used to deliver assets (images, audio, binary content, etc) to the end user that focuses on speed and availability.
-
-CDN costs are independent from your tier (Essentials, Professional, etc.) and require a payment account to be set up with PlayFab.
-
-This can be done by entering your credit card information in the **Admin**->**Billing** tab of your title. CDN costs are based on your usage.
-
-> [!NOTE]
-> Please use the **Content**->**File Management** tab for more information on this subject, or contact our [developer forum](https://community.playfab.com/) with any questions that you may have.
-
-PlayFab CDN stores individual assets as files uniquely identified by the file name, also referred to as a *key*. This implies that you add, update, remove, and retrieve assets by key.
+PlayFab Content Delivery Network (CDN) stores individual assets as files uniquely identified by the file name, also referred to as a *key*. This implies that you add, update, remove, and retrieve assets by key.
 
 PlayFab CDN allows segregating assets by folders. The folder path to the asset becomes part of the *asset key*.
 
