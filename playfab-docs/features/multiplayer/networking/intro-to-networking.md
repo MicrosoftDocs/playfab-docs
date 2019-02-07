@@ -48,19 +48,173 @@ COFA is oriented around a few key concepts:
 - `Network_state_change` - A structure representing a notification to the local device regarding an asynchronous change in some aspect of the network.
 - `StartProcessingStateChanges` and `FinishProcessingStateChanges` - The pair of methods called by the app every UI frame to perform asynchronous operations, to retrieve results to be handled in the form of state_change structures, and then to free the associated resources when finished.
 
-At a very high level, the game application uses the PlayFab networking library to configure a set of users signed-in on the local device to be moved into a PlayFab network. The app calls `StartProcessingStateChanges()` and `FinishProcessingStateChanges()` every UI frame. As app instances on remote devices add their users into a network, every participating instance is provided state_change updates describing the local and remote devices joining that  network. When a player stops participating in the  network (gracefully or due to network connectivity problems), state_change updates are provided to all app instances indicating the user and associated endpoints have  left.
+At a very high level, the game application uses the PlayFab COFA library to configure a set of users signed-in on the local device to be moved into a PlayFab network. The app calls `StartProcessingStateChanges()` and `FinishProcessingStateChanges()` every UI frame. As app instances on remote devices add their users into a network, every participating instance is provided state_change updates describing the local and remote devices joining that  network. When a player stops participating in the  network (gracefully or due to network connectivity problems), state_change updates are provided to all app instances indicating the user and associated endpoints have  left.
 
-As opposed to a client-server model, a PlayFab network is logically a fully-connected mesh of peer devices. As described in the section of this document, any player can send directly to any other through the API. 
+As opposed to a client-server model, a PlayFab network is logically a fully-connected mesh of peer devices. 
 
-## Feature Roadmap
+## Initialization 
+```
+void NetworkManager::Initialize()
+{
+    DEBUGLOG(L"NetworkManager::Initialize()\n");
 
-|-|Run-time management|Networking|
-|-|-|-|
-|Available Now| - Create a network descriptor<br>Join network via descriptor | - Create endpoints for sending/receiving data<br> - Reliable and unreliable send options <br> - Message colescing and queue flushing  | 
-|Coming Soon| - Xbox Live authentication <br> - Steam authentication <br> Add/remove users to access control list <br> - Modify joinability policy | - Coordinate host state with the authority object<br> - Encryption|
+    auto& cofa = CofaManager::GetSingleton();
+
+    // Initialize the communication fabric with our developer secret key
+    CofaError err = cofa.Initialize(c_cofaDevKey);
+    if (COFA_FAILED(err))
+    {
+        DEBUGLOG(L"Initialize failed: %hs\n", GetErrorMessage(err));
+        return;
+    }
+
+    CofaString entityId = Managers::Get<PlayFabManager>()->EntityId().c_str();
+
+    // Create a local user object
+    err = cofa.CreateLocalUser(
+        entityId,                                   // User id
+        entityId,                                   // User entity token
+        &m_localUser                                // OUT local user object
+        );
+
+    if (COFA_FAILED(err))
+    {
+        DEBUGLOG(L"CreateLocalUser failed: %hs\n", GetErrorMessage(err));
+        return;
+    }
+
+    CofaLocalDevice* localDevice = nullptr;
+
+    // Retrieve the local device
+    err = cofa.GetLocalDevice(&localDevice);
+
+    if (COFA_FAILED(err))
+    {
+        DEBUGLOG(L"GetLocalDevice failed: %hs\n", GetErrorMessage(err));
+        return;
+    }
+
+    // Create a chat control for the local user on the local device
+    err = localDevice->CreateChatControl(
+        m_localUser,                                // Local user object
+        "en-us",                                    // Language id
+        nullptr,                                    // Async identifier
+        &m_localChatControl                         // OUT local chat control
+        );
+
+    if (COFA_FAILED(err))
+    {
+        DEBUGLOG(L"CreateChatControl failed: %hs\n", GetErrorMessage(err));
+        return;
+    }
+
+    // Use automatic settings for the audio input device
+    err = m_localChatControl->SetAudioInput(
+        CofaAudioDeviceSelectionType::Automatic,    // Selection type
+        nullptr,                                    // Device id
+        nullptr                                     // Async identifier
+        );
+
+    if (COFA_FAILED(err))
+    {
+        DEBUGLOG(L"SetAudioInput failed: %hs\n", GetErrorMessage(err));
+        return;
+    }
+
+    // Use automatic settings for the audio output device
+    err = m_localChatControl->SetAudioOutput(
+        CofaAudioDeviceSelectionType::Automatic,    // Selection type
+        nullptr,                                    // Device id
+        nullptr                                     // Async identifier
+        );
+
+    if (COFA_FAILED(err))
+    {
+        DEBUGLOG(L"SetAudioOutput failed: %hs\n", GetErrorMessage(err));
+    }
+
+    // Enable transcriptions always for sample purposes
+    err = m_localChatControl->SetTranscriptionRequested(
+        true,                                       // Turn on speech-to-text transcription
+        nullptr                                     // Async identifier
+        );
+
+    if (COFA_FAILED(err))
+    {
+        DEBUGLOG(L"SetTranscriptionRequested failed: %hs\n", GetErrorMessage(err));
+    }
+}
+
+void NetworkManager::CreateAndConnectToNetwork(std::vector<std::string>& playerIds, std::function<void(std::string)> callback)
+{
+    DEBUGLOG(L"NetworkManager::CreateAndConnectToNetwork()\n");
+
+    CofaNetworkConfiguration cfg = {};
+
+    // Setup the network to allow 8 single-device players of any device type
+    cfg.allowedDeviceTypeCount = 0;
+    cfg.allowedDeviceTypes = nullptr;
+    cfg.maxDeviceCount = 8;
+    cfg.maxDevicesPerUserCount = 1;
+    cfg.maxEndpointsPerDeviceCount = 1;
+    cfg.maxUserCount = 8;
+    cfg.maxUsersPerDeviceCount = 1;
+
+    CofaString uid = nullptr;
+    CofaError err = m_localUser->GetUserIdentifier(&uid);
+
+    if (COFA_FAILED(err))
+    {
+        DEBUGLOG(L"GetUserIdentifier failed: %hs\n", GetErrorMessage(err));
+        return;
+    }
+
+    // Force the region for Wave 1
+    // TODO: revisit
+    CofaRegion regionList[] = {
+        {
+            "WestUS", // region name 
+            0         // round trip latency
+        },
+    };
+
+    std::vector<CofaString> additionalIds;
+
+    DEBUGLOG(L"Additional user ids: \n");
+    for (const auto& id : playerIds)
+    {
+        additionalIds.push_back(id.c_str());
+        DEBUGLOG(L"\t%hs\n", id.c_str());
+    }
+
+    CofaNetworkDescriptor networkDescriptor = {};
+
+    // Create a new network descriptor
+    CofaManager::GetSingleton().CreateNewNetwork(
+        c_cofaBuildId,                              // BuildId
+        m_localUser,                                // Local User
+        &cfg,                                       // Network Config
+        1,                                          // Region List Count
+        regionList,                                 // Region List
+        static_cast<uint32_t>(additionalIds.size()),// Additional UserId Count
+        additionalIds.data(),                       // Additional UserId List
+        nullptr,                                    // Async Identifier
+        &networkDescriptor                          // OUT network descriptor
+        );
+
+    if (COFA_FAILED(err))
+    {
+        DEBUGLOG(L"CreateNewNetwork failed: %hs\n", GetErrorMessage(err));
+        return;
+    }
+
+    // Connect to the new network
+    if (InternalConnectToNetwork(networkDescriptor))
+    {
+        m_state = NetworkManagerState::WaitingForNetwork;
+        m_onnetworkcreated = callback;
+    }
+}
+```
 
 
-|-|Chat|Performance|Service administration|
-|-|-|-|-|
-|Available Now| - Activate voice chat <br> - Interrogate audio device <br> - Per-user mute/unmute controls  | - All async processing conveniently handled via state changes <br> - Custom memory allocator  |
-|Coming Soon| - Text Chat <br> - Speech to Text transcription<br>| - Hardware chat acceleration (Xbox)| - Region configuration via Game Manager|
