@@ -59,7 +59,9 @@ Most analytics solutions provide at-a-glance reporting for these key KPIs, but f
 
 Data visualization is an important tool for understanding the story your data is telling you. Look for cyclical trends like weekday vs. weekend, track performance over time, and get a feel for the impact that major changes - whether that’s your live events or error spikes - have on your game in the short and longer term. 
 
-![Logins](media/logins-purchases2.png) ![Purchases](media/purchases2b.png)
+![Logins](media/logins-purchases2.png)
+
+![Purchases](media/purchases2b.png)
 
 ![Calls and Errors](media/calls-errors3.png) 
 
@@ -166,8 +168,7 @@ Events often have a "fiction" that masks the actual changes associated with the 
 
 Companies like Fluffy Fairy Games understand the dynamics of limited-time events, and have hit all the right notes in their game Idle Miner Tycoon. “We do event mines on a regular basis - at least one event mine per month and also focus on special events, holidays like Halloween, Christmas etc. You can access mines for a limited time period (3-7 days) and get specific rewards for achieving specific obstacles - different from the normal mines. For special events, we try to get new offers with specific items, for example a really good boost. We also have limited offers which rotate - every second day or so you can get very special items. We schedule countdowns and times on PlayFab,” says Oliver Löffler, Fluffy Fairy’s CTO. “To prepare - first we have to prepare new assets with the graphic teams, the game designers refresh the ideas and then bring it all together on the development side. We have different channels to message players. Push notifications have generated a huge increase in logins. In-game messaging - pop-ups that notify players of events. Also all the channels - Facebook, Discord, Reddit.”
 
-![Popups](media/popups9.png)
-![Popups](media/popups10.png)
+![Popups](media/popups9.png) | ![Popups](media/popups10.png)
 
 ![Car Launch](media/car-launch11.png)
 
@@ -396,7 +397,7 @@ While some games are able to charge for downloads, many find the challenge of ge
 
 For free-to-play games, advertising is often an important revenue stream, since at the end of the day the vast majority of players never make a purchase. In the world of games, one of the most popular and successful forms of advertising is “rewarded video” - a short (and sometimes playable) video, generally promoting a different game, that the player can choose to watch in exchange for an incentive within the structure of the game being played currently. There’s understandable fear amongst game developers that rewarded videos featuring games that would appeal to the player can distract that player from their current session or from coming back in the future. The opportunity cost is potentially high, particularly for the most valuable players who are making real-money purchases. However, it doesn’t have to be that way. Notes Dimitar Draganov, Senior Product Manager of flaregames, “a well-designed and integrated into the core loop rewarded video outperforms every other ad inventory by a wide margin; rewarded videos have always been the biggest revenue driver across all the games I've worked on and they are rarely filled with anything but game ads.” If you view rewarded ads as part of the core game loop, you’ll want to optimize the player ad experience along with the rest of your game. That means you’ll need to monitor player engagement with these ad units closely, so you can track and optimize the rewards you offer to players who engage.
 
-![Quick Boost](media/quickboost13.png) ![Adventure Communist](media/adventure-communist14.png)
+![Quick Boost](media/quickboost13.png) | ![Adventure Communist](media/adventure-communist14.png)
 
 Other important ad formats include banners (ads that run across the top or bottom of the screen, similar to what you might see on non-game websites), interstitials (ads that run while the game pauses briefly, for example between levels), and offer walls (a page that offers users rewards or incentives for real-money purchase or in exchange for completing a specific task). With all forms of advertising, remember that testing and segmentation are your friends. Fundamentally, you want to make sure that your monetization efforts aren’t at cross-purposes with your strategy for fostering player engagement and retention. Many developers look to segmentation for this and choose not to show ads to every segment, for example choosing to limit ads to those who do not make real-money purchases. 
 
@@ -440,7 +441,7 @@ Getting a player to make an early purchase significantly increases your chances 
 
 Notes Draganov of flaregames, “well planned and executed starter bundles have been known to improve first time conversion by 80-200%.” Getting it right is an optimization problem as well. Per Draganov, “even miniscule changes (e.g. change of main art or slightly bigger discount / value added to the offer) in such offers can bring significant uplifts, so AB-testing such offers is key.” With IAP, “the goal is to offer players what they need and when they need it. This requires design of features to be done in a specific way to make the needs and provided solutions obvious and straightforward...everything takes iteration, so analyzing how well a promotion converts new or reconverts old users is key to improving your operations' effectiveness over time.” 
 
-![Advantage Bundle](media/advantage-bundle16.png) ![Starter Package](media/starter-package17.png)
+![Advantage Bundle](media/advantage-bundle16.png) | ![Starter Package](media/starter-package17.png)
 
 ## First-time bundle best practices
 

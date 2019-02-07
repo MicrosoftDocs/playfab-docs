@@ -48,7 +48,10 @@ You must supply a list of targets to generate, and the directory to generate the
 
 `<targetName>=<targetOutputLocation>`
 
-Where `<targetName>` is one of the supported SDK targets, and `<targetOutputLocation>` is a path to a directory to generate the SDK in. Note: Make sure there are no spaces between the arguments and the equals sign.
+Where `<targetName>` is one of the supported SDK targets, and `<targetOutputLocation>` is a path to a directory to generate the SDK in. 
+
+> [!NOTE]
+> Make sure there are no spaces between the arguments and the equals sign.
 
 ### API-Spec Location:
 

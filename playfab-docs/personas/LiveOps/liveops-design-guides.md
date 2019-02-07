@@ -12,4 +12,4 @@ ms.localizationpriority: medium
 
 ## LiveOps design guides
 
-dfasdfasdfasdf
+Here are your LiveOps design guides. 

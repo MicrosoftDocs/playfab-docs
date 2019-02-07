@@ -23,8 +23,8 @@ LiveOps has also made a dramatic impact on premium games, however, including con
 
 Companies that adopt a LiveOps mindset focus on making their games last longer - turning them into “forever franchises” - and find that this produces a far higher return on their development and marketing investment than traditional game development and marketing. For example, as of Q3 2017, live services represented roughly half of EA’s net bookings, and this number has been growing at 10-15% annually. 
 
-“New releases now only represent a part of our business, which is now focused on long-term engagement with our player communities… Our players not only play more hours at a time, but do so over a period of months or even years. We are thus able to offer them new experiences and content, thereby extending the lifetime of our games.”
----Yves Guillemot, CEO, Ubisoft
+“New releases now only represent a part of our business, which is now focused on long-term engagement with our player communities… Our players not only play more hours at a time, but do so over a period of months or even years. We are thus able to offer them new experiences and content, thereby extending the lifetime of our games.”  
+--Yves Guillemot, CEO, Ubisoft
 
 To see the impact that LiveOps can have on game longevity, look no further than the top 10 mobile charts for 2016 and 2017. Fully 70% of the games in the top 10 in 2017 were also in the charts in 2016 - and all of them are operated as services, with a strong emphasis on LiveOps.
 
@@ -52,8 +52,8 @@ The orange line shows the trajectory of a successful game that got featured in a
  
 ## The LiveOps lifecycle
 
-“Of course, LiveOps is hard – it’s live. With everything that is live, you break eggs.”
----Pascal Clarisse, CMO, Eden Games
+“Of course, LiveOps is hard – it’s live. With everything that is live, you break eggs.”  
+--Pascal Clarisse, CMO, Eden Games
 
 ![LiveOps Lifecycle](media/liveops-lifecycle.png)
 
@@ -63,8 +63,8 @@ However, it’s never too soon to start: you can still get a lot of benefit from
 
 “We looked at the industry and saw that the typical path is to do most of the work upfront. We wanted to test if our game is actually working - it’s hard to know in advance if our game would be successful. The game itself took about 8 weeks to develop, we released it and then continued to iterate. We wanted to get really early measurements and adjust based on user feedback. And if the game didn’t work out, we could kill it and start a new thing - we’d only wasted 8 weeks.
 
-For us, LiveOps is a natural approach. We have no differentiation between LiveOps and actual development. We see the game itself as a service. We keep adding on features to it, getting long term monetization and retention.”
----Oliver Löffler, Co-Founder and CTO, Fluffy Fairy Games
+For us, LiveOps is a natural approach. We have no differentiation between LiveOps and actual development. We see the game itself as a service. We keep adding on features to it, getting long term monetization and retention.”  
+--Oliver Löffler, Co-Founder and CTO, Fluffy Fairy Games
 
 At a high level, here’s a framework for how to think about LiveOps over the lifecycle of your game:
 
@@ -78,8 +78,8 @@ The other approach to development is lean methodology, as used by Fluffy Fairy G
 
 Content is another area where advance planning can save you significant time once your game is live, particularly if you don’t plan frequent update cycles. If you want to be able to keep your game fresh without needing an update or doing dynamic gifting, consider creating your content as dynamic text fields, images and other configurable content (e.g. Unity AssetBundles) that can be distributed on the fly and turned on at your discretion. This has two significant benefits: ease of localization and speed of iteration. You’ll also want to think about automation early on, so that you can move quickly to stop problems like cheating and fraud before they blow up and potentially ruin your game for other players. So think through a plan for how you’ll be able to take bulk actions as well as set and create triggered events and scheduled tasks, even if you don’t plan to do these right at launch. 
 
-“Across our portfolio, event-driven live services are enhancing the experience for players – keeping them together with friends, extending the fun, and giving them choice in how they want to play.”
----Andrew Wilson, CEO, Electronic Arts
+“Across our portfolio, event-driven live services are enhancing the experience for players – keeping them together with friends, extending the fun, and giving them choice in how they want to play.”  
+--Andrew Wilson, CEO, Electronic Arts
 
 Collecting and analyzing your crash data and retention metrics is also a must, even if you are taking a lean approach to development. “We mostly focused on the game itself during development, because nothing else would make sense if the game wasn’t fun,” says Fluffy Fairy Games’ Oliver Löffler. “We did focus on crash analytics and basic analytics to measure retention, which was a key performance indicator for us. We also built functionality to make sure we could make commits without breaking anything. At the beginning we were aiming to make something that would be fun for up to 4 days, and see if players would be engaged enough in that time period to add on more content to sustain engagement over a longer period.” 
 
@@ -92,13 +92,14 @@ At launch, your key concerns are around customers - your ability to attract play
 Once you’re armed with detailed knowledge of how your game is truly performing, you’re ready to dig into running live operations (“LiveOps”) to maximize its potential. This is where you get the payoff from the features you wired into your game during development, so that you can make significant tweaks to your game without needing to coordinate a full update. It’s becoming well understood that running live events is one of the most powerful ways to stimulate engagement with your game, but many developers don’t realize that you can make a big impact with live events even if you don’t have a large team devoted to this - as long as your backend services offer the tools to make this process simple and scalable. As an example, let’s look at how Hyper Hippo was able to scale up their use of events on AdVenture Capitalist with a small team - and how those events drove player engagement - by utilizing PlayFab’s backend services. 
 
 ![Hyper Hippo](media/adventure-capitalist.png) 
-Hyper Hippo was able to scale its use of live events on AdVenture Capitalist by incorporating backend services
+
+Hyper Hippo was able to scale its use of live events on AdVenture Capitalist by incorporating back-end services.
 
 ![Adventure Capitalist Rank](media/adventure-capitalist-rank.png)
-These events have helped AdVenture Capitalist remain at the top of the charts for years 
+These events have helped AdVenture Capitalist remain at the top of the charts for years.
 
-“LiveOps has definitely increased the longevity of our game - it just keeps people engaged way, way better in terms of keeping the pulse of the game alive...Having new events all the time re-invests people in the game, it re-creates the endorphin rush that players get in the first days of playing the game.”
----David Ecker, Lead Producer, Hyper Hippo
+“LiveOps has definitely increased the longevity of our game - it just keeps people engaged way, way better in terms of keeping the pulse of the game alive...Having new events all the time re-invests people in the game, it re-creates the endorphin rush that players get in the first days of playing the game.”  
+--David Ecker, Lead Producer, Hyper Hippo
 
 The most important thing is to set goals for your event based on what you learn from analyzing your game’s data, and to structure your event to address these goals - for example, drawing lapsed players back to your game or convincing players who’ve never spent real-money currency to make their first purchase. 
 
@@ -111,8 +112,8 @@ In addition to events, other major LiveOps techniques include:
 
 A smart LiveOps strategy can significantly extend your game’s heyday, which has a massive impact on your game’s ROI. But even after your game is past its prime, it can still be very profitable for you - if you built your game on scalable services. In the plateau phase of a game, you can dynamically right-size your backend, so you’re not paying for unnecessary capacity. In fact, you have a range of options for keeping your game alive longer while preserving resources for your next title - from leaving some aspects of your game on autopilot with a dynamically scaling backend platform, to partnering with a company like Deca Games that focuses on maximizing the potential of games in their plateau phase. 
 
-“In three years our games have generated over $80m revenue. Depending on how you account for it, Live Ops initiatives generated between one and two-thirds of that revenue…Live Ops underpins everything we do.”
----Simon Hade, COO, SpaceApe
+“In three years our games have generated over $80m revenue. Depending on how you account for it, Live Ops initiatives generated between one and two-thirds of that revenue…Live Ops underpins everything we do.”  
+--Simon Hade, COO, SpaceApe
 
 Don’t write off your game without thinking through your options; Deca Games has successfully used LiveOps techniques to reinvigorate games they’ve acquired well into their plateau phase, such as Realm of the Mad God. A browser-based game originally invented by two developers in a 2010 hackathon, Realm of the Mad God was a cult hit that was acquired by Kabam in 2012. When Kabam shifted its priorities to mobile, the game lost focus internally and was on “life support” when Deca Games took it on. Deca grew the game without any marketing spend “by working with the community and hyper-delivering on their wants and needs,” notes Deca’s Ken Go, helping the game grow through word of mouth. As a result, 7 years on the game has more active players than ever before. Investing in keeping your game alive longer also presents a great cross-marketing opportunity since you’ve got an active audience to which you can promote your other games. 
 
