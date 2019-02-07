@@ -61,8 +61,6 @@ Data visualization is an important tool for understanding the story your data is
 
 ![Logins](media/logins-purchases2.png)
 
-![Purchases](media/purchases2b.png)
-
 ![Calls and Errors](media/calls-errors3.png) 
 
 You’ll also want to be able to drill into your event history across preset or custom event queries as a way to help you track and optimize performance and monetization of your live events and benchmark your performance vs. past initiatives.
@@ -344,7 +342,8 @@ Oscar-winning screenwriter William Goldman has a great quote about making movies
 
 ## Test early and often 
 
-Many games run into a chicken-and-egg problem early in their development cycle: they want to test their biggest assumptions before they have really committed, but don’t have enough players to reach statistical significance. So, they feel stuck. However, while split testing is an important technique, it’s not the only tool in your toolkit. In fact, you can get lots of useful information from “scrappy” testing, and your inherent creativity as a game developer can be a significant asset. For example, you can get valuable data on the appeal of a game’s concept and basic mechanics from running surveys or focus groups very early on, before you even have a real product. You can also test your design concepts before you need to put them into your game - for example, by measuring click-through rates on ads you buy that are identical other than showing different art styles. Sebastian Knopp notes that “successful games test everything. Game developers should always consider this before building things, and ask themselves if there is a test they could run to decide whether to build it or not.”
+Many games run into a chicken-and-egg problem early in their development cycle: they want to test their biggest assumptions before they have really committed, but don’t have enough players to reach statistical significance. So, they feel stuck. However, while split testing is an important technique, it’s not the only tool in your toolkit. In fact, you can get lots of useful information from “scrappy” testing, and your inherent creativity as a game developer can be a significant asset. For example, you can get valuable data on the appeal of a game’s concept and basic mechanics from running surveys or focus groups very early on, before you even have a real product. You can also test your design concepts before you need
+ to put them into your game - for example, by measuring click-through rates on ads you buy that are identical other than showing different art styles. Sebastian Knopp notes that “successful games test everything. Game developers should always consider this before building things, and ask themselves if there is a test they could run to decide whether to build it or not.”
 
 ## Split testing
 
@@ -397,6 +396,7 @@ While some games are able to charge for downloads, many find the challenge of ge
 
 For free-to-play games, advertising is often an important revenue stream, since at the end of the day the vast majority of players never make a purchase. In the world of games, one of the most popular and successful forms of advertising is “rewarded video” - a short (and sometimes playable) video, generally promoting a different game, that the player can choose to watch in exchange for an incentive within the structure of the game being played currently. There’s understandable fear amongst game developers that rewarded videos featuring games that would appeal to the player can distract that player from their current session or from coming back in the future. The opportunity cost is potentially high, particularly for the most valuable players who are making real-money purchases. However, it doesn’t have to be that way. Notes Dimitar Draganov, Senior Product Manager of flaregames, “a well-designed and integrated into the core loop rewarded video outperforms every other ad inventory by a wide margin; rewarded videos have always been the biggest revenue driver across all the games I've worked on and they are rarely filled with anything but game ads.” If you view rewarded ads as part of the core game loop, you’ll want to optimize the player ad experience along with the rest of your game. That means you’ll need to monitor player engagement with these ad units closely, so you can track and optimize the rewards you offer to players who engage.
 
+------------------------------------------- | -----------------------------------------------
 ![Quick Boost](media/quickboost13.png) | ![Adventure Communist](media/adventure-communist14.png)
 
 Other important ad formats include banners (ads that run across the top or bottom of the screen, similar to what you might see on non-game websites), interstitials (ads that run while the game pauses briefly, for example between levels), and offer walls (a page that offers users rewards or incentives for real-money purchase or in exchange for completing a specific task). With all forms of advertising, remember that testing and segmentation are your friends. Fundamentally, you want to make sure that your monetization efforts aren’t at cross-purposes with your strategy for fostering player engagement and retention. Many developers look to segmentation for this and choose not to show ads to every segment, for example choosing to limit ads to those who do not make real-money purchases. 
