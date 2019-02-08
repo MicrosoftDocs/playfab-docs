@@ -587,8 +587,8 @@ Your support team is also your front line with players, and a rich source of inf
  
 ## Living on the plateau
 
-“Games can last for decades as a service if you know how to operate them properly and invest in scalable solutions.  Some great scalable solutions are automation and tools. Try to automate all the things that don’t matter and build tools for all the things that do. They not only reduce costs and improve efficiency, but they reduce pressure and allow the team to concentrate on the most important parts of the service.”
--	Ken Go, Founder, Deca Games
+“Games can last for decades as a service if you know how to operate them properly and invest in scalable solutions.  Some great scalable solutions are automation and tools. Try to automate all the things that don’t matter and build tools for all the things that do. They not only reduce costs and improve efficiency, but they reduce pressure and allow the team to concentrate on the most important parts of the service.”  
+--Ken Go, Founder, Deca Games
 
 It used to be that once a game stopped growing, rapid decay was imminent, and the overhead of maintaining the game would soon outweigh the revenues it brought in. However, this is evolving as well for live games. These days, savvy game marketers know that there’s often still plenty of juice left in a game that has hit a plateau in user growth, and have developed techniques to squeeze it out efficiently. After all, you’ve spent resources getting to this point, and have developed significant assets - while you may decide it’s time to move some of your developers onto the next project, there’s no need to throw out the baby with the bathwater. 
 
