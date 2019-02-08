@@ -30,8 +30,8 @@ You can upload and manage multiplayer server builds using **Game Manager** or th
 
 ## Getting started documentation
 
-- [Allocating game servers and connecting Visual Studio debugging tools](../../social/tournaments-leaderboards/allocating-game-servers-and-configuring-vs-debugging-tools.md)
-- [Connecting clients to game servers](../../social/tournaments-leaderboards/connecting-clients-to-game-servers.md)
+- [Allocating game servers and connecting Visual Studio debugging tools](allocating-game-servers-and-configuring-vs-debugging-tools.md)
+- [Connecting clients to game servers](connecting-clients-to-game-servers.md)
 
 ## SDKs and Tools
 

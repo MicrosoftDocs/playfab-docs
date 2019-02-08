@@ -31,6 +31,8 @@
 - name: Tutorials
   href: tutorials.md
   items:
+  - name: Allocating game servers and connecting Visual Studio debugging tools
+    href: allocating-game-servers-and-configuring-vs-debugging-tools.md
   - name: Archiving and retrieving multiplayer server logs
     href: archiving-and-retrieving-multiplayer-server-logs.md
   - name: Connecting clients to game servers

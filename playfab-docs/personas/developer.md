@@ -117,7 +117,7 @@ Actions might result in a **CloudScript** being run. Our **CloudScript** is **Ja
 - [CloudScript quickstart](../features/automation/cloudscript/quickstart.md) – Get up and running quickly with your first **CloudScript** call.
 
 > [!TIP]
-> To leverage rules in the automation system, [write custom events](../features/automation/playstream-events/quickstart.md#custom-event-overview) in your game which will create a **PlayStream** event.
+> To leverage rules in the automation system, [write custom events](../features/analytics/metrics/playstream-events.md#custom-event-overview) in your game which will create a **PlayStream** event.
 
 ## Get to know PlayFab features
 

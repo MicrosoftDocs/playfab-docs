@@ -15,6 +15,7 @@ ms.localizationpriority: medium
 The tutorials in this section walk you through multiplayer server topics.
 
 - [Accessing increased core limits and additional Azure regions](identifying-and-increasing-core-limits.md)
+- [Allocating game servers and configuring vs debugging tools](allocating-game-servers-and-configuring-vs-debugging-tools.md)
 - [Archived Release Notes - PlayFab Multiplayer Servers (Thunderhead)](thunderhead-archived-release-notes.md)
 - [Archiving and retrieving multiplayer server logs](archiving-and-retrieving-multiplayer-server-logs.md)
 - [Basics of a PlayFab game server](basics-of-a-playFab-game-server.md)

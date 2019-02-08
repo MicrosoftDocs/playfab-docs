@@ -7,10 +7,6 @@
   items:
   - name: Accessing Archived Tournament Results
     href: accessing-archived-tournament-results.md
-  - name: Allocating game servers and configuring vs debugging tools
-    href: allocating-game-servers-and-configuring-vs-debugging-tools.md
-  - name: Connecting Clients to game servers
-    href: connecting-clients-to-game-servers.md
   - name: Using Prize Tables
     href: using-prize-tables.md
   - name: Using resettable statistics and leaderboards
