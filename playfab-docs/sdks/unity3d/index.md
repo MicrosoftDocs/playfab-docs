@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Unity3D (C#)
 
-![Unity3d Software](./media/BlackUnityLogo.png)
+![Unity3d Software](./media/unity-logo-main-page-new.png)
 
 Our Unity3d SDK provides everything you need to access the PlayFab API. This includes models, methods, an HTTP wrapper for sending and receiving web requests, and JSON serialization.
 

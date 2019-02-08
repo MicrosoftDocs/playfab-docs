@@ -1113,7 +1113,7 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="https://docs.microsoft.com/media/logos/logo_unity.svg" alt="PlayFab SDKs: Unity3D card image" />
+                                                    <img src="/gaming/playfab/sdks/media/sdk-unity.png" alt="PlayFab SDKs: Unity3D card image" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
