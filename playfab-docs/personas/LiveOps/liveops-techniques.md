@@ -42,7 +42,7 @@ When Fluffy Fairy Games launched its hit game Idle Miner Tycoon, the team made t
 Fluffy Fairy took this approach to heart; rather than focusing on growing player numbers through user acquisition or being featured in an app store, they focused on building traction, focusing tightly on key metrics like early retention signals, number of sessions, DAU (Daily Active Users), and ad monetization. In the game’s early days, before there were large numbers of players, Fluffy Fairy’s Marketing Director Volkmar Reinerth relied heavily on “player feedback, following the company spirit to be player-centric.” Then, as the game found and began to grow an audience of players, who in turn began to generate more data, the company prioritized collecting more data for analytics.
 
 ![Rank History](media/ranker-history1.png)
-*Idle Miner Tycoon*: focusing on customer traction pays off in the long run
+*Idle Miner Tycoon*: focusing on customer traction pays off in the long run.
 
 At PlayFab, we’ve found the following to be a good basic set of KPIs for all games to track over time:
 
@@ -286,10 +286,12 @@ Configuration changes can provide a lot of flexibility for reacting quickly to m
 
 If you have a practice of doing small, frequent updates, then it may be easiest for you to use those to refresh your content. If, however, your practice is to do bigger, less frequent updates, or if your developers and your LiveOps team don’t always have the ability to work hand in glove, then you may find it helpful to build content updates via configuration changes into your game design. Using your backend to make these changes means that your operations team can turn smaller content-driven events on or off, or easily activate/deactivate promotional inventory, without needing to distract a developer from other tasks. 
 
-PlayFab “allows us to get a lot more visibility on what players are engaged with, what they enjoy and don’t enjoy...we can really get an idea of how much the high players are engaging and what they value, and can tailor rewards around that.”
+PlayFab “allows us to get a lot more visibility on what players are engaged with, what they enjoy and don’t enjoy...we can really get an idea of how much the high players are engaging and what they value, and can tailor rewards around that.”  
 ---Phil Larsen (Managing Director, Prettygreat)
  
-![PG Plus](media/pgplus12.png)
+----------------------------- | -----------------------
+
+![PG Plus](media/pgplus12.png) | ![]()   
 
 ## Pace yourself
 
@@ -396,7 +398,6 @@ While some games are able to charge for downloads, many find the challenge of ge
 
 For free-to-play games, advertising is often an important revenue stream, since at the end of the day the vast majority of players never make a purchase. In the world of games, one of the most popular and successful forms of advertising is “rewarded video” - a short (and sometimes playable) video, generally promoting a different game, that the player can choose to watch in exchange for an incentive within the structure of the game being played currently. There’s understandable fear amongst game developers that rewarded videos featuring games that would appeal to the player can distract that player from their current session or from coming back in the future. The opportunity cost is potentially high, particularly for the most valuable players who are making real-money purchases. However, it doesn’t have to be that way. Notes Dimitar Draganov, Senior Product Manager of flaregames, “a well-designed and integrated into the core loop rewarded video outperforms every other ad inventory by a wide margin; rewarded videos have always been the biggest revenue driver across all the games I've worked on and they are rarely filled with anything but game ads.” If you view rewarded ads as part of the core game loop, you’ll want to optimize the player ad experience along with the rest of your game. That means you’ll need to monitor player engagement with these ad units closely, so you can track and optimize the rewards you offer to players who engage.
 
------------------------------------|----------------------------------
 ![Quick Boost](media/quickboost13.png) | ![Adventure Communist](media/adventure-communist14.png)
 
 Other important ad formats include banners (ads that run across the top or bottom of the screen, similar to what you might see on non-game websites), interstitials (ads that run while the game pauses briefly, for example between levels), and offer walls (a page that offers users rewards or incentives for real-money purchase or in exchange for completing a specific task). With all forms of advertising, remember that testing and segmentation are your friends. Fundamentally, you want to make sure that your monetization efforts aren’t at cross-purposes with your strategy for fostering player engagement and retention. Many developers look to segmentation for this and choose not to show ads to every segment, for example choosing to limit ads to those who do not make real-money purchases. 
