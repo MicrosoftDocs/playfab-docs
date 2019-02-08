@@ -32,14 +32,14 @@ This guide will help you make your first API call in C++. A native C++ project c
 
 ## Windows C++ Project Setup
 
-- OS: This guide is written for Windows 10, using Visual Studio 2013 or 2015
+- OS: This guide is written for Windows 10, using Visual Studio 2017
 - Installation
-  - Download and install Visual Studio 2013 or 2015
+  - Download and install Visual Studio 2017
+    > [!NOTE]
+    > The PlayFab Windows C++ SDK is no longer supported on Visual Studio 2013 and Visual Studio 2015.
   - Create a new C++ Console project
   - Right-click Manage NuGet packages, and search for "playfab"
     - You should see a small number of matches, and you're looking for: "PlayFab Windows C++ SDK For Visual Studio 20XX"
-      - for vs2015, install the plugin with the id: com.playfab.windowssdk.v140
-      - for vs2013, install the plugin with the id: com.playfab.windowssdk.v120
 
 - Your project should now compile
 - PlayFab Installation Complete!
