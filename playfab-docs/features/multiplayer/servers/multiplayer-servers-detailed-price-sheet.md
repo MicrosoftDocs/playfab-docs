@@ -24,7 +24,7 @@ This page provides detailed pricing information for PlayFab multiplayer servers.
 - Unless otherwise specified, the price for a virtual machine is proportional to the number of virtual CPUs and their type. For example, a 4-core virtual machine from the **Dv3** series will cost twice as much as a 2-core virtual machine.
 
 > [!NOTE]
-> The following prices are **per virtual machine compute hour**.
+> The following prices are *per virtual machine compute hour*.
 
 ## Price by virtual machine selection in East US
 

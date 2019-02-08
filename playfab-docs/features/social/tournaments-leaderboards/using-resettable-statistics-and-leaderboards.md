@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Using resettable statistics and Leaderboards
 
-This tutorial provides a complete walk through of how to configure and manage statistics with versioning - which enables “resetting” of statistics - and by extension, leaderboards.
+This tutorial provides a complete walkthrough of how to configure and manage statistics with versioning - which enables “resetting” of statistics - and by extension, leaderboards.
 
 We'll focus on how to use the **Admin API** methods, with additional info on how to use the client and **Server API** methods to query the data - both for the current version as well as old ones.
 
@@ -26,7 +26,7 @@ Statistics may not necessarily be visible to players, but they are there. You ca
 
 Many statistics in games are intended to be “lifetime” values - meaning that players continually update their scores, with old ones remaining until each player beats his own personal best. However, for some player experiences, it’s important to be able to “wipe” the leaderboard from time to time. 
 
-This can be used to encourage users to try to be the top ranked player for a given period, or to simply remove players from the rankings who haven’t been active in a while.
+This can be used to encourage a user to try to be the top ranked player for a given period, or to simply remove any players from the rankings who haven’t been active in a while.
 
 As this tutorial will discuss, statistics in PlayFab can be configured to reset on a pre-determined interval.
 
@@ -36,16 +36,16 @@ Setting a reset period means that the players returned in a call to [GetLeaderbo
 
 It’s also possible to reset a statistic as a manual operation. This is a handy system for clearing out any data you have from your pre-launch tests or alpha/beta play.
 
-It’s *also* useful for the worst-case scenario where a bug was introduced to the game code resulting in out-of-control scores. In each case, you need to have the ability to wipe the leaderboard clean, so that players feel like they have a fair chance to get on it.
+It’s also useful for the worst-case scenario where a bug was introduced to the game code resulting in out-of-control scores. In each case, you need to have the ability to wipe the leaderboard clean, so that players feel like they have a fair chance to get on it.
 
 > [!NOTE]
-> Resetting statistics does not delete those values, as you will see below. On reset, statistics in PlayFab are *versioned*, making the new version authoritative, while keeping previous versions for later analysis (and so that you can reward players based on their old scores).
+> Resetting statistics does not delete those values, as you will see below. On reset, statistics in PlayFab are versioned, making the new version authoritative, while keeping previous versions for later analysis (and so that you can reward players based on their old scores).
 
 ## Configuring resettable statistics
 
 The reset periods for statistics are configured using the Admin API set or the Game Manager. They can then be updated and queried via the Game Manager, Server API, and Client API (though posting statistics from the client does require that the **allow client to post statistics** option be set in the game's **Settings**->**API Features** tab in the Game Manager).
 
-We’ll describe the **API** method for this, though the parameters defined here are the same as those used in the Game Manager itself.
+We’ll describe the **API method** for this, though the parameters defined here are the same as those used in the Game Manager itself.
 
 To set up the statistics, you can use the **Admin CreatePlayerStatisticDefinition** method, and the **UpdatePlayerStatisticDefinition** method to make changes later.
 
@@ -183,13 +183,13 @@ In this case, the statistics named Headshots has a reset interval defined, and t
 
 Meanwhile, **FlagsCaptured** does not have a **VersionChangeInterval**, which is also why the **CurrentVersion** is **0** (since it has never been versioned).
 
-Statistics created via [UpdateUserStatistics](xref:titleid.playfabapi.com.client.playerdatamanagement.updateuserstatistics) (or the PlayFab Game Manager), can still be defined to have a reset period using **UpdatePlayerStatisticDefinition**, as described above. 
+Statistics created via [UpdateUserStatistics](xref:titleid.playfabapi.com.client.playerdatamanagement.updateuserstatistics) (or the PlayFab Game Manager), can still be defined to have a reset period using **UpdatePlayerStatisticDefinition**, as described above.
 
 Once this has been done, they will reset on that interval exactly as if they were originally defined using **CreatePlayerStatisticDefinition**.
 
 ## Manually resetting a Statistic
 
-For the situation where a game bug allowed for cheating on a statistic, or where you simply need to reset to remove scores from pre-release game play, the statistic can be forced to reset in the Game Manager, or via a call to **IncrementPlayerStatisticVersion**.
+For the situation where a game bug allowed for cheating on a statistic, or where you simply need to reset to remove scores from pre-release gameplay, the statistic can be forced to reset in the Game Manager, or via a call to **IncrementPlayerStatisticVersion**.
 
 This immediately resets the current statistics that you specify, clearing the leaderboard for the game, and providing a blank slate for new values to be reported.
 
@@ -246,7 +246,7 @@ The stages of the archival process for a statistic are:
 - **Failed** - An unexpected failure occurred (in this case, contact our [Support Forums](https://community.playfab.com/)).
 - **Complete** - This version of the statistic has been archived.
 
-All of the past and current versions of a statistic can be queried using **GetPlayerStatisticVersions**. This returns the information for each version, as shown in the previous manual reset example. 
+All of the past and current versions of a statistic can be queried using **GetPlayerStatisticVersions**. This returns the information for each version, as shown in the previous manual reset example.
 
 In other words, this call should appear like the one presented below.
 
@@ -310,7 +310,7 @@ In addition to the values returned from **IncrementPlayerStatisticVersion**, the
 
 Finally, from the Server and Client API side of the story, the calls are very similar to what you know from original PlayFab user and Character Statistics calls.
 
-In this case, there is a call to [UpdateUserStatistics](xref:titleid.playfabapi.com.client.playerdatamanagement.updateuserstatistics) and another to **UpdatePlayerStatistics** in each **API** set. The difference here is that now, *the version is part of either the request or the response*.
+In this case, there is a call to [UpdateUserStatistics](xref:titleid.playfabapi.com.client.playerdatamanagement.updateuserstatistics) and another to **UpdatePlayerStatistics** in each **API** set. The difference here is that now, the version is part of either the request or the response.
 
 When retrieving statistics, the value for the current statistic version - as well as the version number itself - is returned.
 
@@ -482,7 +482,7 @@ For completeness, this section provides a list of all the enums, classes, and **
   - **Failed**
   - **Complete**
 
-**Base Classes and their members**
+**Base classes and their members**
 
 - **PlayerStatisticDefinition**
   - **StatisticName** (string) - The unique name of the statistic.
@@ -507,7 +507,7 @@ For completeness, this section provides a list of all the enums, classes, and **
   - **Version** (string) - For updates to a statistic value for a player, the version of the statistic to be updated
   - Value (Int32) - The statistic value for the player.
 
-**Admin API Methods**
+**Admin API methods**
 
 - **CreatePlayerStatisticDefinition**
   - **CreatePlayerStatisticDefinitionRequest**
@@ -544,7 +544,7 @@ For completeness, this section provides a list of all the enums, classes, and **
   - **IncrementPlayerStatisticVersionResult**
     - **StatisticVersion** (**PlayerStatisticVersion**) - The statistic version which was expired as a result of this operation (and its archival status).
 
-**Client API Methods**
+**Client API methods**
 
 - **GetPlayerStatistics**
   - **GetPlayerStatisticsRequest**
@@ -559,7 +559,7 @@ For completeness, this section provides a list of all the enums, classes, and **
 
   - **UpdatePlayerStatisticsResult** (no parameters).
 
-**Server API Methods**
+**Server API methods**
 
 - **GetPlayerStatistics**
   - **GetPlayerStatisticsRequest**
