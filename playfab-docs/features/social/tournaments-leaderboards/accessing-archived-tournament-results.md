@@ -23,7 +23,7 @@ Before that happens, however, PlayFab creates a snapshot of all the leaderboard 
 
 ## Initial setup
 
-To follow this guide, please ensure that you have some players already registered for the title. The following screenshot shows 5 players artificially registered using the [LoginWithCustomID](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid) **API** call.
+Before using this guide, please make sure that you have some players already registered for the title. The following screenshot shows 5 players artificially registered using the [LoginWithCustomID](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid) **API** call.
 
 ![Game Manager - Players - Most recent logins](media/tutorials/game-manager-players-most-recent-logins.png)  
 
@@ -51,7 +51,7 @@ You will end up on the new **Leaderboards** page which will render blank data (s
 
 ![Game Manager - Leaderboards - Edit Leaderboard](media/tutorials/game-manager-leaderboards-edit-leaderboard.png)  
 
-## Begin Test Section
+## Begin test section
 
 > [!IMPORTANT]
 > The following section is an example of how to populate test data for the purpose of this example. Your *real* game will populate this data in a more natural way.
@@ -135,7 +135,7 @@ To configure the task:
 
 ![Game Manager - Leaderboards - Test Score](media/tutorials/game-manager-leaderboards-test-score.png)  
 
-- You will see that our **Leaderboard** was populated with random values **(1)**.
+- You will see that your **Leaderboard** was populated with random values **(1)**.
 - Reset the **Leaderboard (2)**.
 
 ![Reset the Test Score Leaderboard](media/tutorials/reset-the-test-score-leaderboard.png)  

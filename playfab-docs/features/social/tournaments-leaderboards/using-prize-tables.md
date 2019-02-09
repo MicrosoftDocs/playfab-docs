@@ -12,11 +12,11 @@ ms.localizationpriority: medium
 
 # Using prize tables
 
-This tutorial walks you through how to create a prize table, that triggers a set of actions, on a group of players, within a range of ranks, in a [Resettable Leaderboard](using-resettable-statistics-and-leaderboards.md). 
+This tutorial walks you through how to create a Prize Table, that triggers a set of actions on a group of players within a range of ranks, in a [Resettable Leaderboard](using-resettable-statistics-and-leaderboards.md).
 
 In particular, this is a way to trigger emails, send push notifications, grant [Inventory Items](../../data/playerdata/player-inventory.md) and [Virtual Currency](../../commerce/economy/currencies.md), or execute a [CloudScript](../../automation/cloudscript/writing-custom-cloudscript.md) function at the reset of a leaderboard.
 
-In this example, we show you how to create the prize table End Tournament Prizes which grants virtual currency to 5 players based on their rank in a leaderboard, after a reset is performed.
+In this example, we show you how to create Prize Table End Tournament prizes, which grants virtual currency to 5 players based on their rank in a leaderboard after a reset is performed.
 
 ## Requirements
 
@@ -25,9 +25,9 @@ In this example, we show you how to create the prize table End Tournament Prizes
 
 - Basic knowledge of how to create a player will be necessary, as there will need to be players in a leaderboard before it can perform any actions on those players.
 
-- Basic knowledge of how to create a **Player** will be necessary, as there will need to be players in a leaderboard before it can perform any actions on those players.
+- Basic knowledge of how to create a player will be necessary, as there will need to be players in a leaderboard before it can perform any actions on those players.
 - It is also worthwhile to read the [Game Manager quickstart](../../config/gamemanager/quickstart.md) if you are unfamiliar with the Game Manager, as it is the place where prize tables are created.
-- In order to use prize tables, you must have general knowledge of how resettable leaderboards work. Please read about leaderboards in our tutorial [Using Resettable Statistics and Leaderboards](using-resettable-statistics-and-leaderboards.md).
+- In order to use Prize Tables, you must have general knowledge of how resettable leaderboards work. Please read about leaderboards in our tutorial [Using Resettable Statistics and Leaderboards](using-resettable-statistics-and-leaderboards.md).
 - Additionally, virtual currencies must be set up. Please read our tutorial about [Currencies](../../commerce/economy/currencies.md) and set up two currencies with the following parameters:
   - **Currency code**: GO
   - **Display name**: Gold
@@ -63,7 +63,7 @@ In the **New Prize Table** view:
 - Move to the **INFO** area, and enter the **Name** for the **New Prize Table**, entitled  **End Tournament Prizes**.
 - Choose **tournamentScore_manual** from the **Leaderboard** drop-down menu.
 
-In order for this **Prize Table** to perform some action, ranks will need to be set. To do this:
+In order for this Prize Table to perform some action, ranks will need to be set. To do this:
 
 - Select **+ ADD RANK** under the **TABLE CONTENTS** section.
 - A **Rank** form will appear.
@@ -87,13 +87,13 @@ Now, we’ll add a second rank range:
 
 ![Game Manager - Leaderboards - Prize Table - Add Second Rank](media/tutorials/game-manager-prize-table-add-second-rank.png)  
 
-## Step 3 - Populate the Leaderboard with a Player
+## Step 3 - Populate the leaderboard with a player
 
-A **Leaderboard** and **Prize Table** associated with it has now been created. The next step is to populate the **Leaderboard** with players.
+A leaderboard and Prize Table associated with it has now been created. The next step is to populate the leaderboard with players.
 
-To create players, we will use [LoginWithCustomID](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid). Then, we will use the players to populate the **Leaderboard** with [UpdatePlayerStatistics](xref:titleid.playfabapi.com.client.playerdatamanagement.updateplayerstatistics).
+To create players, we will use [LoginWithCustomID](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid). Then, we will use the players to populate the leaderboard with [UpdatePlayerStatistics](xref:titleid.playfabapi.com.client.playerdatamanagement.updateplayerstatistics).
 
-Before we can use [UpdatePlayerStatistics](xref:titleid.playfabapi.com.client.playerdatamanagement.updateplayerstatistics), we must enable it in **API Features**.
+Before we can use [UpdatePlayerStatistics](xref:titleid.playfabapi.com.client.playerdatamanagement.updateplayerstatistics), we must enable it in API Features.
 
 - Select **Settings** in the menu on your left.
 - Select the **API Features** tab.
@@ -102,9 +102,9 @@ Before we can use [UpdatePlayerStatistics](xref:titleid.playfabapi.com.client.pl
 
 ![Game Manager - Settings - API Features - Allow client to post player statistics](media/tutorials/api-features-allow-client-to-post-player-statistics.png)  
 
-### C# Code Example
+### C# code example
 
-The following **C#** code example creates 5 **Players** and logs them in using [LoginWithCustomID](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid).
+The following **C#** code example creates 5 players and logs them in using [LoginWithCustomID](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid).
 
 It then populates the leaderboard you created earlier (**tournamentScore_manual**) with the 5 players with values of: **105**, **104**, **103**, **102**, and **101** using [UpdatePlayerStatistics](xref:titleid.playfabapi.com.client.playerdatamanagement.updateplayerstatistics).
 
@@ -153,12 +153,12 @@ To check that there are 5 players populated in the leaderboard with the correct 
 
 ![Game Manager - Leaderboards - View Leaderboard - Check values](media/tutorials/game-manager-leaderboards-view-leaderboard-check-values.png)  
 
-## Step 4 - Check Player’s initial Currencies
+## Step 4 - Check player’s initial currencies
 
 Before checking anything:
 
 - Return to **Players** in the menu to the left from step 2.
-- Go to the **Players** tab, and find a **Player** that was put into the **tournamentScore_manual** **Leaderboard** in step 3.
+- Go to the **Players** tab, and find a player that was put into the **tournamentScore_manual** **Leaderboard** in step 3.
 - Select the **Player ID**, and the **Virtual Currency** tab for that player.
 - Record the values of the **GO** (**Gold**) and **SI** (**Silver**) **Currencies** for that player.
 
@@ -168,7 +168,7 @@ Before checking anything, go back to the test **Players** from step 2.
 - Select the **Player ID** and the **Virtual Currency** tab for that player.
 - Record the values of the **GO** (**Gold**) and **SI** (**Silver**) currencies for that player.
 - Now do this for the remaining 4 of the 5 players that were put in the **tournamentScore_manual Leaderboard** in step 3.
-- Make sure that you record the values of their **GO** (**Gold**) and **SI** (**Silver**) currencies (these will be important for confirmation that the **Prize Table** worked after resetting).
+- Make sure that you record the values of their **GO** (**Gold**) and **SI** (**Silver**) currencies (these will be important for confirmation that the Prize Table worked after resetting).
 
 ![Game Manager - Players - Virtual Currency - Check values](media/tutorials/game-manager-players-virtual-currency-check-values.png)  
 
@@ -192,9 +192,9 @@ Now go to **Leaderboards**.
 
 ![Game Manager - Reset Leaderboard](media/tutorials/game-manager-reset-leaderboard.png)
 
-## Step 6 - Test that the Prize Table works
+## Step 6 - Test that the prize table works
 
-To see if the **Prize Table** worked, the players in the leaderboard can be checked to see if they were granted the correct amounts of currency. This can be quickly seen in a player's PlayStream Debugger.
+To see if the Prize Table worked, the players in the leaderboard can be checked to see if they were granted the correct amounts of currency. This can be quickly seen in a player's PlayStream Debugger.
 
 To see this in the PlayStream Debugger:
 

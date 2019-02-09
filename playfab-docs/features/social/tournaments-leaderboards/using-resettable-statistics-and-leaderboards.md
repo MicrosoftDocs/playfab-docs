@@ -20,7 +20,7 @@ Our goal is to provide you with a technical review of how re-settable statistics
 
 ## Statistics and leaderboards
 
-First, it’s important to note that all Statistics defined for a player in a game in PlayFab are part of a leaderboard. So defining your statistics defines your leaderboard as well.
+First, it’s important to note that all statistics defined for a player in a game in PlayFab are part of a leaderboard. So defining your statistics defines your leaderboard as well.
 
 Statistics may not necessarily be visible to players, but they are there. You can use them to get lists of players by a score you define - whether to find the top of all scores, the bottom, those centered around the current player - or those on a user’s friend list.
 
@@ -45,7 +45,7 @@ It’s also useful for the worst-case scenario where a bug was introduced to the
 
 The reset periods for statistics are configured using the Admin API set or the Game Manager. They can then be updated and queried via the Game Manager, Server API, and Client API (though posting statistics from the client does require that the **allow client to post statistics** option be set in the game's **Settings**->**API Features** tab in the Game Manager).
 
-We’ll describe the **API method** for this, though the parameters defined here are the same as those used in the Game Manager itself.
+We’ll describe the API method for this, though the parameters defined here are the same as those used in the Game Manager itself.
 
 To set up the statistics, you can use the **Admin CreatePlayerStatisticDefinition** method, and the **UpdatePlayerStatisticDefinition** method to make changes later.
 
@@ -71,7 +71,7 @@ public void CreatePlayerStatisticDefinition() {
 }
 ```
 
-The following shows the response for the preceding **API** call.
+The following shows the response for the preceding API call.
 
 ```json
 {

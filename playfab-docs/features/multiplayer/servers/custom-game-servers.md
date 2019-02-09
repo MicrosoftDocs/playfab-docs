@@ -22,7 +22,7 @@ This update provides developers with the ability to manage builds *directly*, ma
 
 First, it's important to bear in mind that the **AWS** instances created by default for testing are relatively low-power (**CPU/Memory**), as the expectation is that these will be used for basic testing purposes.
 
-In addition, developers must *disable* their server instances when they are *not* in use, as **CPU** time available for testing is limited (more info on these limits will be provided in our pricing and policy documentation).
+In addition, developers must *disable* their server instances when they are *not* in use, as CPU time available for testing is limited (more info on these limits will be provided in our pricing and policy documentation).
 
 > [!NOTE]
 > If higher-end server instances are needed for testing - or if you need additional server test time - please post on our [Support Forum](https://community.playfab.com/).
@@ -33,22 +33,22 @@ That is not to say that this cannot be used for non-multiplayer hosted logic, as
 
 ### Getting started
 
-To get started, you will need to ensure that your server build is compatible with **Windows Server 2012 R2**, and that the server utilizes the API calls needed to inform the PlayFab matchmaker of when players join and leave - **[RedeemMatchmakerTicket](xref:titleid.playfabapi.com.server.matchmaking.redeemmatchmakerticket)** and **[NotifyMatchmakerPlayerLeft](xref:titleid.playfabapi.com.server.matchmaking.notifymatchmakerplayerleft)**.
+To get started, you will need to ensure that your server build is compatible with **Windows Server 2012 R2**, and that the server utilizes the **API** calls needed to inform the PlayFab Matchmaker of when players join and leave - **[RedeemMatchmakerTicket](xref:titleid.playfabapi.com.server.matchmaking.redeemmatchmakerticket)** and **[NotifyMatchmakerPlayerLeft](xref:titleid.playfabapi.com.server.matchmaking.notifymatchmakerplayerleft)**.
 
-Since the PlayFab Matchmaker is used as part of server discovery, it's important to make sure the server is providing the playFab service with up-to-date information on the users in a given session.
+Since the PlayFab Matchmaker is used as part of server discovery, it's important to make sure the server is providing the PlayFab service with up-to-date information on the users in a given session.
 
 ### Command Line parameters
 
 In designing your server, the following parameters will be available as part of your command line input:
 
-- **game_id** - a unique numeric identifier for the server instance being created (usually referred to as the **LobbyId** in API calls).
+- **game_id** - a unique numeric identifier for the server instance being created (usually referred to as the **LobbyId** in **API** calls).
 - **game_build_version** - a string specifying the build version (the same string you specified for the **Build ID** in PlayFab).
 - **game_mode** - a string value for the specific game mode being started – defined in **ModifyMatchmakerGameModes**.
 - **server_host_domain** - a string value of the URI of the **AWS** host (the **IP Address**).
 - **server_host_port** - a numeric value of the port for communication with this game instance.
 - **server_host_region** - a string value of the region in which this instance is operating.
-- **playfab_api_endpoint** - a string value of the base URI for the endpoint that this instance must use for any API calls to the PlayFab service – as described in the Web API documentation.
-- **title_secret_key** - a string value of the Title Secret Key that the server must use for PlayFab API calls which use the Secret Key for authentication.
+- **playfab_api_endpoint** - a string value of the base URI for the endpoint that this instance must use for any **API** calls to the PlayFab service – as described in the Web **API** documentation.
+- **title_secret_key** - a string value of the title secret key that the server must use for PlayFab **API** calls, which use the secret key for authentication.
 - **custom_data** - a string value containing any custom data specified by the developer.
 - **log_file_path** - a string value for the directory where the server log file must be written, so that it can be collected by the PlayFab service upon completion of the instance.
 - **output_files_directory_path** - a string value for the directory where any other output files must be written, so that they can be collected by the PlayFab service upon completion of the instance.
@@ -85,7 +85,7 @@ Once your build is ready, it needs to be packaged as a zip file. As with the com
 
 This is the executable which will be called to start the server instance. It will be monitored throughout the lifetime of the instance, to ensure accurate tracking of available servers.
 
-It is *also important* to make certain that your server build exits once the last Player leaves the session, for two reasons:
+It is *also important* to make certain that your server build exits once the last player leaves the session, for two reasons:
 
 1. First, the game server hosting service in PlayFab does not terminate game server instances explicitly.
 2. Second, the log file(s), as well as any other output files specified, are collected in **S3** by our game server hosting service only when the instance ends.
@@ -94,7 +94,7 @@ Once ready, the complete zip file can then be uploaded in the PlayFab Game Manag
 
 > [!NOTE]
 > If you are using the URL to upload the build, the **Content-Type** of the upload should be **application/x-zip-compressed**.
-If you upload your build via the URL (as part of an automated build process, for example), you'll need to next call [AddServerBuild](xref:titleid.playfabapi.com.admin.customservermanagement.addserverbuild), in order to complete the basic setup for it, and make it available in the Game Manager. In addition to the command line and executable path, the values you can set are (using the API call property names).
+If you upload your build via the URL (as part of an automated build process, for example), you'll need to next call [AddServerBuild](xref:titleid.playfabapi.com.admin.customservermanagement.addserverbuild), in order to complete the basic setup for it, and make it available in the Game Manager. In addition to the command line and executable path, the values you can set are (using the **API** call property names).
 
 ### API property names
 
@@ -119,11 +119,11 @@ At least *one* game mode must be defined for each server build. This is done usi
 
 As part of that call, each game mode defined has a minimum and maximum number of players. Servers which are general purpose (non-multiplayer) should set the minimum to **1**, while the maximum should be based upon the expected load the server instance can support.
 
-Thorough testing should be done to compute a reasonable value for this. A Best Practice is that servers should *not* be pushed to 100% of their theoretical load, so that unanticipated spikes do not cause issues. The PlayFab developer relations team can help to advise on this, if needed.
+Thorough testing should be done to compute a reasonable value for this. A best practice is that servers should *not* be pushed to 100% of their theoretical load, so that unanticipated spikes do not cause issues. The PlayFab developer relations team can help to advise on this, if needed.
 
 With those steps complete, you are now ready to launch your own game server instances, using the [StartGame](xref:titleid.playfabapi.com.client.matchmaking.startgame) API call.
 
-To first check to see if there are any active instances the Player can join, you can call [Matchmake](xref:titleid.playfabapi.com.client.matchmaking.matchmake), which will return all the connection information needed for the Client to join the instance, including a server authorization ticket which the server instance needs to use with the [RedeemMatchmakerTicket](xref:titleid.playfabapi.com.server.matchmaking.redeemmatchmakerticket) call, to validate with the PlayFab service that the user should be allowed to join.
+To first check to see if there are any active instances the player can join, you can call [Matchmake](xref:titleid.playfabapi.com.client.matchmaking.matchmake), which will return all the connection information needed for the client to join the instance, including a server authorization ticket which the server instance needs to use with the [RedeemMatchmakerTicket](xref:titleid.playfabapi.com.server.matchmaking.redeemmatchmakerticket) call, to validate with the PlayFab service that the user should be allowed to join.
 
 That completes the server definition. One more step which is required is that the game modes be defined for the server, so that the matchmaker can put players into appropriate game sessions. At least one game mode must be defined for each server build. This is done using the [ModifyMatchmakerGameModes](xref:titleid.playfabapi.com.admin.matchmaking.modifymatchmakergamemodes) API call.
 

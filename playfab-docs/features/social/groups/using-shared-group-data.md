@@ -92,7 +92,7 @@ While there's no strictly enforced limit currently, usage with many players is n
 
 ### Client permission concerns
 
-There is no role/rank system within a group, meaning any member in the Group has absolute authority within the group (there is no defined leader).
+There is no role/rank system within a group, meaning any member in the group has absolute authority within the group (there is no defined leader).
 
 So unless you disable the **Client Shared Group Data** methods with our [API Access Policy](../../config/gamemanager/api-access-policy.md), the clients have complete control of the data, which could result in exploitation of the data.
 

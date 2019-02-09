@@ -10,9 +10,9 @@ keywords: playfab, authentication, accounts, linking
 ms.localizationpriority: medium
 ---
 
-# Account linking tutorial
+# Account Linking tutorial
 
-This Account Linking tutorial demonstrates how to bind an account to multiple devices and login mechanisms.
+This **Account Linking** tutorial demonstrates how to bind an account to multiple devices and login mechanisms.
 
  A single PlayFab account can be accessed by many devices and login credentials. As we discuss in our tutorial [Login basics and Best Practices](../login/login-basics-best-practices.md), there are two forms of user authentication:
 1. **Anonymous**
@@ -22,12 +22,12 @@ This Account Linking tutorial demonstrates how to bind an account to multiple de
 
 It is very common for your first login to be an Anonymous one. This gets your player into the game, friction-free.
 
-Once a player has become invested in your game, you should prompt them to add a Recoverable login method, which makes their account *recoverable* in the case of device failure or other issues.
+Once a player has become invested in your game, you should prompt them to add a Recoverable login method, which makes their account recoverable in the case of device failure or other issues.
 
 This section covers adding a Recoverable login mechanism to an Anonymous account.
 
 > [!NOTE]
-> An Anonymous login is still relevant, and can continue to be the primary frictionless login for the player. Many players will *only* use these options again if they are attempting to recover their account, use platform-specific features, or link a second Anonymous device.
+> An Anonymous login is still relevant, and can continue to be the primary frictionless login for the player. Many players will *only* use these options again if they are attempting to recover their account, use platform-specific features, or link a second anonymous device.
 
 ![PayFab anonymous login and recoverable login mechanism](../media/tutorials/playfab-anonymous-login-and-recoverable-login.png)  
 
@@ -36,20 +36,20 @@ The focus of this tutorial is at the bottom of the preceding image, with the cel
 - [AddUsernamePassword](xref:titleid.playfabapi.com.client.accountmanagement.addusernamepassword) is used to enable either/both of: [LoginWithPlayFab](xref:titleid.playfabapi.com.client.authentication.loginwithplayfab) and [LoginWithEmailAddress](xref:titleid.playfabapi.com.client.authentication.loginwithemailaddress). These options store username/email/password credentials with PlayFab directly. In order for a player to recover their account, your game, website, or customer service can trigger:
   - [SendAccountRecoveryEmail](xref:titleid.playfabapi.com.admin.accountmanagement.sendaccountrecoveryemail) for that email address. If a player enters a bogus email address, you can *still* use the PlayFab Game Manager to update the email address for the player, though it's important to make sure your customer service representatives are trained to watch out for common social engineering tricks, so that they're only updating the email address of the actual owner of the account.
 
-The third-party recoverable login mechanisms each involve prompting the user to log in via an appropriate **SDK** or third-party **API** call. Linking that account to PlayFab generally follows the same pattern:
+The third-party Recoverable login mechanisms each involve prompting the user to log in via an appropriate **SDK** or third-party **API** call. Linking that account to PlayFab generally follows the same pattern:
 
 1. First, prompt the user to log into that service (more details in [Login basics and Best Practices](../login/login-basics-best-practices.md)).
-2. Once you have logged in, those services will provide some kind of Token, which can be passed to PlayFab.
+2. Once you have logged in, those services will provide some kind of token, which can be passed to PlayFab.
 3. This allows PlayFab to safely link to that account without being aware of the user's credentials in that service.
 
 > [!NOTE]
-> Some services require that PlayFab have some additional information, such as an **Application ID**, in order to make the authentication call to that service for your game. Please be sure to check the **Add-on Marketplace** page for the service in question as part of setting up your title.
+> Some services require that PlayFab have some additional information, such as an Application ID, in order to make the authentication call to that service for your game. Please be sure to check the **Add-on Marketplace** page for the service in question as part of setting up your title.
 
 ### Best practice
 
- Use an anonymous login to create new players with zero friction. After a tutorial phase, gently encourage players to link your preferred choice of recoverable credentials to their account.
+ Use an Anonymous login to create new players with zero friction. After a tutorial phase, gently encourage players to link your preferred choice of recoverable credentials to their account.
 
-If you're using a third-party authentication system, retrieve the appropriate Token from that service (via **API** calls or **SDK** functions), then call the appropriate PlayFab **API** to link the player's account from that service to their PlayFab account: [LinkFacebookAccount](xref:titleid.playfabapi.com.client.accountmanagement.linkfacebookaccount), [LinkGameCenterAccount](xref:titleid.playfabapi.com.client.accountmanagement.linkgamecenteraccount), [LinkGoogleAccount](xref:titleid.playfabapi.com.client.accountmanagement.linkgoogleaccount), [LinkKongregate](xref:titleid.playfabapi.com.client.accountmanagement.linkkongregate), [LinkSteamAccount](xref:titleid.playfabapi.com.client.accountmanagement.linksteamaccount), [LinkTwitch](xref:titleid.playfabapi.com.client.accountmanagement.linktwitch), [LinkWindowsHello](xref:titleid.playfabapi.com.client.accountmanagement.linkwindowshello).
+If you're using a third-party authentication system, retrieve the appropriate token from that service (via **API** calls or **SDK** functions), then call the appropriate PlayFab **API** to link the player's account from that service to their PlayFab account: [LinkFacebookAccount](xref:titleid.playfabapi.com.client.accountmanagement.linkfacebookaccount), [LinkGameCenterAccount](xref:titleid.playfabapi.com.client.accountmanagement.linkgamecenteraccount), [LinkGoogleAccount](xref:titleid.playfabapi.com.client.accountmanagement.linkgoogleaccount), [LinkKongregate](xref:titleid.playfabapi.com.client.accountmanagement.linkkongregate), [LinkSteamAccount](xref:titleid.playfabapi.com.client.accountmanagement.linksteamaccount), [LinkTwitch](xref:titleid.playfabapi.com.client.accountmanagement.linktwitch), [LinkWindowsHello](xref:titleid.playfabapi.com.client.accountmanagement.linkwindowshello).
 
 ### Best practice
 
@@ -127,7 +127,7 @@ If successful, you're done, resume normal gameplay.
 
 But again - be prepared to capture errors. Specifically, look for an error return that the device is already linked to an account. Under this condition, prompt the player with a **Do you want to bind this device to this account** message.
 
-Be sure to provide information that the other account may be lost if they continue. If the player accepts this warning, re-send the link-request with the property **ForceLink** set to **True**.
+Be sure to provide information that the *other* account may be lost if they continue. If the player accepts this warning, re-send the link-request with the property **ForceLink** set to **True**.
 
 This will unlink the device ID from the old account, potentially orphaning that account if no other login mechanisms are linked to it, and bind it to the new account.
 

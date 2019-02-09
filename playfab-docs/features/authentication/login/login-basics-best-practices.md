@@ -24,7 +24,7 @@ Bluntly, because it's the easiest. A custom ID can be anything, and it makes the
 
 ### Best practice
 
-Unless you know *exactly* why you want **LoginWithCustomId** in your released title you should migrate to another login mechanism before you launch.
+Unless you know *exactly* why you want **LoginWithCustomId** in your released title, you should migrate to another login mechanism before you launch.
 
 ## Anonymous login mechanisms
 
@@ -48,9 +48,9 @@ In particular, you should *make sure* that paying customers are guided to the re
 
 ### iOS devices
 
-For **iOS** devices, the Player ID changes if they uninstall your game and then *re*-install it. One way to make sure you have a consistent ID on **iOS** is to save the Device ID for the player to the **iTunes KeyChain**, so that you can read it from there on game start, and use it to sign in.
+For **iOS** devices, the player ID changes if they uninstall your game and then *re*-install it. One way to make sure you have a consistent ID on **iOS** is to save the Device ID for the player to the **iTunes KeyChain**, so that you can read it from there on game start, and use it to sign in.
 
-You must determine how to generate unique **Custom IDs** for any other device or platform. **Custom ID** is an effective alternative for other platforms or devices, but you must generate your **Custom IDs** with care. Too simple, and you risk hackers stealing the accounts of others.
+You must determine how to generate unique custom IDs for any other device or platform. Custom IDs are an effective alternative for other platforms or devices, but you must generate your custom IDs with care. Too simple, and you risk hackers stealing the accounts of others.
 
 > [!NOTE]
 > Binding a recoverable login is only required once per device. Once bound, the game can continue to use the anonymous login with no drawbacks. See the next section.
@@ -102,7 +102,7 @@ PlayFab can be a useful cloud-save option for this type of game using this mecha
 
 ### Best practice
 
-*Do not use it*. Use a secure recoverable mechanism described in the previous section. Even if your game is *safe* today, you may add a feature tomorrow (like Chat or Trading), which *seems* innocuous but opens up your players to theft, cheating, and malicious user activity.
+*Don't use it*. Instead, use a secure recoverable mechanism described in the previous section. Even if your game is safe *today*, you may add a feature tomorrow (like Chat or Trading), which *seems* innocuous but opens up your players to theft, cheating, and malicious user activity.
 
 ## Conclusion
 

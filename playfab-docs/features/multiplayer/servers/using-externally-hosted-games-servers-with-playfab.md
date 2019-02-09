@@ -20,7 +20,7 @@ To provide for that, we have introduced a new feature: **External Game Server Ho
 
 ### Hosting in PlayFab versus externally
 
-First, it’s important to understand the differences between PlayFab game server hosting and external game server hosting.
+First, it’s important to understand the differences between PlayFab game server hosting and External Game Server Hosting.
 
 **PlayFab Game Servers**:
 
@@ -33,7 +33,7 @@ First, it’s important to understand the differences between PlayFab game serve
 - Are billed monthly on the developer’s PlayFab bill.
 - Are monitored by PlayFab - developers can monitor themselves via the **NewRelic** add-on.
 
-**Externally hosted servers**:
+**Externally Hosted Servers**:
 
 - Can be hosted by any **Game Server Provider** (**GSP**), or on the developer’s own servers.
 - Can run any operating system.
@@ -59,7 +59,7 @@ Once you’ve made the decision to use externally hosted servers, the setup is e
 Here, you can also set your server timeout period, which determines how often you need to call **RefreshGameServerInstanceHeartbeat** (see the following list of [PlayFab API Calls](#playfab-api-calls)) from the server, in order to tell the service to keep it in the active set.
 
 > [!NOTE]
-> Please be aware that external game server hosting is *not* designed to work in conjunction with PlayFab custom game server hosting - so turning this option *on* means that no game server hosts will be created in PlayFab.
+> Please be aware that External Game Server Hosting is *not* designed to work in conjunction with PlayFab Custom Game Server Hosting - so turning this option *on* means that no game server hosts will be created in PlayFab.
 
 ### PlayFab API calls
 
@@ -104,21 +104,21 @@ public void RegisterGame() {
 
 In this case, a server for **Title ID AAA** is informing PlayFab that it is now available. Clients can query for a list of running games, or for an available slot in a game instance that matches some specified criteria.
 
-Apart from the Tags, all of the fields you see here are required for the call, so that we have enough information to correctly "matchmake" players into the game session, and to let the client know how to communicate with it.
+Apart from **Tags**, all of the fields you see here are required for the call, so that we have enough information to correctly "matchmake" players into the game session, and to let the client know how to communicate with it.
 
-Even though they are required, the Tags are worth a special mention, as they allow you to specify additional elements that can be used for your matchmaking calls. In particular, it’s worth pointing out the **custom_region** Tag we’re using in this example.
+Even though they are required, the tags are worth a special mention, as they allow you to specify additional elements that can be used for your matchmaking calls. In particular, it’s worth pointing out the **custom_region** tag we’re using in this example.
 
-The Region element of the server must be set to one of the PlayFab-supported Regions, but your **GSP** may have Regions that don’t align well to the **EC2** Regions.
+The Region element of the server must be set to one of the PlayFab-supported regions, but your **GSP** may have regions that don’t align well to the **EC2** regions.
 
-The way to handle this is by using a Tag to specify your own custom Regions, and then using them in your calls to "matchmake" (setting the Region parameter to a consistent value).
+The way to handle this is by using a tag to specify your own custom regions, and then using them in your calls to "matchmake" (setting the Region parameter to a consistent value).
 
 The Build, Region, and GameMode parameters are all used exactly as they are in our tutorial on PlayFab's hosting of [Custom Game Servers](custom-game-servers.md), because they are the primary elements used for matchmaking.
 
-Obviously, they're not used the same way, as you're not starting servers in our hosting, but you do still need to upload a Build and set up the **GameMode** you'll be using.
+Obviously, they're not used the same way, as you're not starting servers in our hosting, but you do still need to upload a build and set up the **GameMode** you'll be using.
 
-They are used to check the validity of the call to **RegisterGame**, so the matchmaker knows how many slots are free at any given time (specifically, the **Build ID** needs to match - you don't need to keep the Build up-to-date, apart from that).
+They are used to check the validity of the call to **RegisterGame**, so the Matchmaker knows how many slots are free at any given time (specifically, the **Build ID** needs to match - you don't need to keep the build up-to-date, apart from that).
 
-For external server hosting, you will not be setting the Build to active in any Region, however.
+For external server hosting, you will not be setting the build to active in any region, however.
 
 As a result of the **RegisterGame** call, the PlayFab Matchmaker assigns the server a **LobbyId**, which is provided in the response.
 
@@ -146,7 +146,7 @@ That call also tells the PlayFab Matchmaker that the player has joined the serve
 
 Now, since the PlayFab Game Wrangler has no direct access to your servers, it’s important for them to regularly let the service know that they’re still running.
 
-Regardless of whether the server has available slots or not, make sure to call [RefreshGameServerInstanceHeartbeat](xref:titleid.playfabapi.com.server.matchmaking.refreshgameserverinstanceheartbeat) once every minute, to ensure the server is maintained in the **Matchmaker** memory.
+Regardless of whether the server has available slots or not, make sure to call [RefreshGameServerInstanceHeartbeat](xref:titleid.playfabapi.com.server.matchmaking.refreshgameserverinstanceheartbeat) once every minute, to ensure the server is maintained in the Matchmaker memory.
 
 ```csharp
 public void RefreshGameServerInstanceHeartbeat(string lobbyId) {
@@ -156,12 +156,12 @@ public void RefreshGameServerInstanceHeartbeat(string lobbyId) {
 }
 ```
 
-The response will be a simple OK message with no data. Failure to call this after two minutes will result in the server being removed from the **Matchmaker** registry, which could mean that its **LobbyId** will be reassigned to a new server.
+The response will be a simple OK message with no data. Failure to call this after two minutes will result in the server being removed from the Matchmaker registry, which could mean that its **LobbyId** will be reassigned to a new server.
 
 So if a server does nothing else before shutting down, it will be automatically removed from consideration for matchmaking after that period.
 
 > [!NOTE]
-> As a Best Practice, we recommend that you notify the PlayFab Matchmaker that your server is going away by making a call to **DeregisterGame**.
+> As a best practice, we recommend that you notify the PlayFab Matchmaker that your server is going away by making a call to **DeregisterGame**.
 
 ```csharp
 public void DeregisterGame(string lobbyId) {
@@ -171,21 +171,21 @@ public void DeregisterGame(string lobbyId) {
 }
 ```
 
-And again, there’s no data needed for the response, which will be a simple OK.
+And again, there’s no data needed for the response, which will be a simple **OK**.
 
 ### Additional options
 
 Now, for the sake of completeness, there are a few *additional* features we’ve added to server hosting over time, which you can use.
 
-The newest is Server Tags, which allow you to apply string tags to servers which can be used for matchmaking. If you look at both the [GetCurrentGames](xref:titleid.playfabapi.com.client.matchmaking.getcurrentgames) and [Matchmake](xref:titleid.playfabapi.com.client.matchmaking.matchmake) calls, you’ll see that they now take a [TagFilter](xref:titleid.playfabapi.com.client.matchmaking.matchmake#collectionfilter), which can be used to define Tags that you want to search on, or that you want to exclude from your search.
+The newest is **Server Tags**, which allow you to apply string tags to servers which can be used for matchmaking. If you look at both the [GetCurrentGames](xref:titleid.playfabapi.com.client.matchmaking.getcurrentgames) and [Matchmake](xref:titleid.playfabapi.com.client.matchmaking.matchmake) calls, you’ll see that they now take a [TagFilter](xref:titleid.playfabapi.com.client.matchmaking.matchmake#collectionfilter), which can be used to define tags that you want to search on, or that you want to exclude from your search.
 
 This is particularly handy for games with large user populations, where you want to give player the ability to search for games running their favorite maps, or where there are server options running that they particularly like (as well as letting them avoid the ones they hate).
 
 As you can see in our [Registering the server](#registering-the-server) example, you can set these tags up in the call to **RegisterGame**, and update them at any time using the [SetGameServerInstanceTags](xref:titleid.playfabapi.com.server.matchmaking.setgameserverinstancetags) call.
 
-We do recommend using Tags judiciously, and providing for a back-off search (less restrictive) after a short period, as the more options you provide to focus a search, the more you *bucketize* your user base.
+We do recommend using tags judiciously, and providing for a back-off search (less restrictive) after a short period, as the more options you provide to focus a search, the more you *bucketize* your user base.
 
-A popular set of Tags might still get plenty of traffic, but an unpopular tag might not, meaning your player could have a poor experience as they sit and wait on a game to open up with their preferred settings.
+A popular set of tags might still get plenty of traffic, but an unpopular tag might not, meaning your player could have a poor experience as they sit and wait on a game to open up with their preferred settings.
 
 Next, if you need to be able to close a game session to matchmaking despite technically having slots available, make sure to use [SetGameServerInstanceState](xref:titleid.playfabapi.com.server.matchmaking.setgameserverinstancestate). Servers normally start in the **Open** state, but you can set them to **Closed** whenever you need to. Say, for instance, a team game where you need to disallow join-in-progress to prevent cheating.
 
@@ -201,6 +201,6 @@ For clarity, here’s a diagram detailing the logic flow between PlayFab, your c
 
 Finally, a few pieces of advice for those who haven’t worked extensively with server hosting:
 
-- Make sure you always have enough available capacity in *each* Region to manage your peak load. If you’re planning user acquisition campaigns, make sure to take that into account and calculate that peak accordingly. **GSPs** vary pretty widely in how long they take to get new servers set up, ranging from minutes in some highly automated services to weeks in those requiring manual setup.
+- Make sure you always have enough available capacity in *each* region to manage your peak load. If you’re planning user acquisition campaigns, make sure to take that into account and calculate that peak accordingly. **GSPs** vary pretty widely in how long they take to get new servers set up, ranging from minutes in some highly automated services to weeks in those requiring manual setup.
 - To help with that planning, use a server monitoring service which tracks **CPU**, **memory**, and **disk usage**, and track closely on how those metrics change as you try different play modes and increased player numbers. Hit this hard with as many real-world tests as you can, and continue to monitor it post-launch, as players will surprise you by finding corner cases you didn’t plan for. The more accurately you can track this, the more efficient you can be with your total server need.
-- Once you’ve got that usage per player figured out, don’t target your numbers higher than **80%** usage. Spikes as more players at a time than normal hit high-cost sections of the game will drive you up into the danger zone, and could potentially impact performance. Planning to have some *overhead* always available helps to prevent issues when that occurs.
+- Once you’ve got that usage-per-player figured out, don’t target your numbers higher than **80%** usage. Spikes as more players at a time than normal hit high-cost sections of the game will drive you up into the danger zone, and could potentially impact performance. Planning to have some overhead *always* available helps to prevent issues when that occurs.
