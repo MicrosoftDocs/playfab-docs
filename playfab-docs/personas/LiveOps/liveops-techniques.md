@@ -115,8 +115,8 @@ Segmentation best practices
 
 Since there have been games, there have been launches...and all the things that can and do go wrong with launch. The advent of games-as-a-service makes it easier for studios to dodge some of the most common pitfalls that have crippled previous generations of games, such as failing to scale your backend and then falling over when your game spikes in popularity after being featured. But savvy developers know to start planning their LiveOps strategy well before launch day. “With a LiveOps game, the real work starts with launch instead of ending there. And that is a big challenge for game developers,” says growth and strategy consultant Sebastian Knopp.
 
-“Move fast and scale everything.”
----Pascale Clarysse, CMO, Eden Games
+“Move fast and scale everything.”  
+--Pascale Clarysse, CMO, Eden Games
 
 Well before launch day, you should have your LiveOps team staffed, trained up and ready to go. Who’s on the LiveOps bus? Your core team should have people assigned to the game responsible for technology (from product through QA), user acquisition, monetization, community, and customer service. And these people should be a close-knit team, working together towards common goals, rather than a loose affiliation of representatives from various departments. It’s very important that roles and responsibilities within the team are clearly laid out, so that the group can make and execute on decisions quickly. Your LiveOps team needs to be familiar with the game’s event and content strategy and have a calendar in place for the first few months. They must also have developed strong feedback loop mechanisms with players and agreed to a framework for a decision-making process based on that feedback plus game data (along with perhaps a dash of developer intuition) prior to launching the game. Large companies like Supercell are known to pride themselves on not allowing teams to make any decisions based only on “gut feeling” after a game is launched. 
 
@@ -269,7 +269,7 @@ The real power of guilds comes from guild-vs-guild competition. This can be as s
 - Members of a guild will need a way to chat with each other. You can support this in-game, with chat or some other mechanism, or you can support an external messaging service like Discord.
 
 Content is king
-"With games-as-service you have to keep players engaged with new content. There cannot be an endgame."
+"With games-as-service you have to keep players engaged with new content. There cannot be an endgame."  
 ---Pascal Clarysse, CMO, Eden Games
 
 Today’s games - particularly mobile F2P games - can amass a large audience quickly if they resonate with players. But keeping that game at the top of the charts is a different matter. Using new content strategically is a crucial technique for keeping games fresh so that players remain engaged. It’s important to note that new content doesn't just mean new levels or new game mechanics. It can also mean new items for purchase, new playable characters, new tournaments, new bundles, or virtually anything that would encourage a player to come back and play more. Notes Hyper Hippo’s David Eckert, “People only download so many apps, to have a game that is constantly updating with new features and events means a lot to people. It keeps them engaged with your game. It turns them into a loyal fan that sticks around on a platform where people are onto the latest and greatest week after week.” 
@@ -288,10 +288,8 @@ If you have a practice of doing small, frequent updates, then it may be easiest 
 
 PlayFab “allows us to get a lot more visibility on what players are engaged with, what they enjoy and don’t enjoy...we can really get an idea of how much the high players are engaging and what they value, and can tailor rewards around that.”  
 ---Phil Larsen (Managing Director, Prettygreat)
- 
------------------------------ | -----------------------
 
-![PG Plus](media/pgplus12.png) | ![]()   
+![PG Plus](media/pgplus12.png)
 
 ## Pace yourself
 

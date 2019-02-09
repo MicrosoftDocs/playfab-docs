@@ -12,8 +12,8 @@ ms.localizationpriority: medium
 
 ## Introduction to LiveOps
 
-“The single greatest predictor of success and of sustainable competitive advantage in this business is live game operations.”
----Owen Mahoney, CEO, Nexon
+“The single greatest predictor of success and of sustainable competitive advantage in this business is live game operations.”  
+--Owen Mahoney, CEO, Nexon
 
 Successful game studios today recognize and embrace the idea that games have evolved into services that evolve and grow over time with new content, live events, and frequent updates. While games must still aim to provide fun and engaging experiences, the bar has been raised - to be successful over the long term, games need to also understand and segment their players, develop deep relationships, and understand and meet the needs of multiple player segments.
 
