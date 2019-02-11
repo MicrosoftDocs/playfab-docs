@@ -1,5 +1,5 @@
 ---
-title: Entities quickstart
+title: Entity files
 author: v-thopra
 description: Describes the terminology, concepts, and design of Entities in the PlayFab APIs.
 ms.author: v-thopra
@@ -9,102 +9,6 @@ ms.prod: playfab
 keywords: playfab, data, entities, accounts
 ms.localizationpriority: medium
 ---
-
-# Entities quickstart
-
-Read our introductory blog about [Entities, Objects and Files](https://blog.playfab.com/blog/introducing-entities-objects-and-files)!
-
-The entity **API** introduces new access patterns that are designed to alleviate the pain points of the current account and data systems.
-
-With the existing **APIs**, saving a data value has separate **API** calls for:
-
-- **Title** access (client/[GetTitleData](xref:titleid.playfabapi.com.client.title-widedatamanagement.gettitledata), admin/[GetTitleData](xref:titleid.playfabapi.com.admin.title-widedatamanagement.gettitledata), server/[GetTitleData](xref:titleid.playfabapi.com.server.title-widedatamanagement.gettitledata)).
-- player access (client/[GetUserReadOnlyData](xref:titleid.playfabapi.com.client.playerdatamanagement.getuserreadonlydata), client/[UpdateUserData](xref:titleid.playfabapi.com.client.playerdatamanagement.updateuserdata), client/[UpdateUserPublisherData](xref:titleid.playfabapi.com.client.playerdatamanagement.updateuserpublisherdata)).
-- Character access (client/[GetCharacterData](xref:titleid.playfabapi.com.client.characterdata.getcharacterdata), client/[UpdateCharacterData](xref:titleid.playfabapi.com.client.characterdata.updatecharacterdata)).
-
-In the new **API** scheme, a single call supports saving a data value for a title, player, character, and every other future entity type, combined with powerful access rules that replicate and expand the current system behavior of custom data in a better interface.
-
-In some regards, these changes are not backwards compatible. However, using them will not change the behavior of the existing **APIs**.
-
-## Terminology
-
-Entities are any PlayFab concept which can contain data. Currently we have a number of built-in entity types:
-
-- **Title**
-- **master_player_account**
-- **title_player_account**
-- **Character**
-
-This system will be expanded, so you will see future entity types added to cover guilds or groups, game servers, and more.
-
-Because this is a new **API**, we are refining some of the terms used in other **API** methods:
-
-- **Title** - This concept is unchanged. Your title may contain global information available to all players. This is similar to [TitleData](xref:titleid.playfabapi.com.client.title-widedatamanagement.gettitledata). It is identified by the title ID (**TitleId**) of the game/application.
-- **master_player_account** - This entity Type allows you to share information about a player across multiple games within a studio. This is similar to [UserPublisherData](xref:titleid.playfabapi.com.client.playerdatamanagement.getuserpublisherdata). It is identified by the PlayFab ID (**PlayFabId**) of the player, which is returned as part of any login or any call to retrieve account information for the player account (for example, [Client/GetAccountInfo](xref:titleid.playfabapi.com.client.accountmanagement.getaccountinfo)).
-- **title_player_account** - This concept is based on user/player in the existing **API** methods. Each player may contain some information for the current title. This is similar to the [GetUserData](xref:titleid.playfabapi.com.client.playerdatamanagement.getuserdata) method. This is identified by the entity ID (**EntityKey.Id**) you get back in the [EntityKey](xref:titleid.playfabapi.com.authentication.authentication.getentitytoken#entitykey) object on any login where you specify **LoginTitlePlayerAccountEntity** as *True*.
-- **character** - This concept is unchanged. Your player may own characters, which can each contain some information. This is similar to [CharacterData](xref:titleid.playfabapi.com.client.characterdata.getcharacterdata). It is identified by the character ID (**CharacterId**) of the character.
-
-See the [Available built-in Entity types](../../data/entities/available-built-in-entity-types.md) tutorial, for a list of all built-in entity types.
-
-> [!NOTE]
-> Formerly, **PlayFabId** covered both **master_player** and **title_player** concepts. Separating these concepts simplifies and clarifies the functionality. A player can interact with multiple titles that are all in the same studio, so while they can have unique information as a different player in each title, the owner of the studio also needs to identify that player as a single entity with shared data across titles. This enables things like cross-promotion of games and giving players cross-game rewards.
-
-## Entity initialization
-
-Before you can use any **Entity API** calls you must get an [EntityKey](xref:titleid.playfabapi.com.authentication.authentication.getentitytoken#entitykey). You do this by using any normal login call, with a new optional parameter [LoginTitlePlayerAccountEntity](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid#loginwithcustomidrequest) set to *True*, or by calling the [GetEntityToken](xref:titleid.playfabapi.com.authentication.authentication.getentitytoken) **API** method.
-
-```csharp
-PlayFabAuthenticationAPI.GetEntityToken(new GetEntityTokenRequest(),
-(entityResult) =>
-{
-    var entityId = entityResult.Entity.Id;
-    var entityType = entityResult.Entity.Type;
-}, OnPlayFabError); // Define your own OnPlayFabError function to report errors
-```
-
-This **API** method returns an [Authentication/EntityKey](xref:titleid.playfabapi.com.authentication.authentication.getentitytoken#entitykey) object, which contains the ID and type, which you should save. If called from the client, this typically represents the logged-in player.
-
-Called from game servers, this will represent your title. With the **entityId** and **entityType**, you can make other calls to other entity **API** methods.
-
-You should save a reference to the **entityId** and **entityType** to use in other **API** calls (Each **API** has an **EntityKey** structure, above). **EntityToken** is handled internally by the **SDK**, so you can ignore that.
-
-## Entity objects
-
-Entity objects allow you to read and write small **JSON**-serializable objects attached to an entity. All entity types support the same **GetObjects** and **SetObjects** methods.
-
-The examples that are shown below demonstrate setting and reading an **Object** on a **title_player_account**.
-
-```csharp
-var data = new Dictionary<string, object>()
-{
-    {"Health", 100},
-    {"Mana", 10000}
-};
-var dataList = new List<SetObject>()
-{
-    new SetObject()
-    {
-        ObjectName = "PlayerData",
-        DataObject = data
-    },
-    // A free-tier customer may store upto 3 objects on each entity
-};
-PlayFabDataAPI.SetObjects(new SetObjectsRequest()
-{
-    Entity = new EntityKey {Id = entityId, Type = entityType}, // Saved from GetEntityToken, or a specified key created from a titlePlayerId, CharacterId, etc
-    Objects = dataList,
-}, (setResult) => {
-    Debug.Log(setResult.ProfileVersion);
-}, OnPlayFabError);
-```
-
-```csharp
-var getRequest = new GetObjectsRequest {Entity = new EntityKey {Id = entityId, Type = entityType}};
-PlayFabDataAPI.GetObjects(getRequest,
-    result => { var objs = result.Objects; },
-    OnPlayFabError
-);
-```
 
 ## Entity files
 
@@ -312,8 +216,8 @@ public class EntityFileExample : MonoBehaviour
 
 The Game Manager allows you to manipulate objects and files for players. The player overview has been updated to show both the title player and master player account information.
 
-![Game Manager - Entities - Player overview](../playerdata/media/tutorials/game-manager-entities-player-overview.png)  
+![Game Manager - Entities - Player overview](media/tutorials/game-manager-entities-player-overview.png)  
 
 In addition, files and objects now have their own sections in the **Players** tab.
 
-![Game Manager - Entities - Player Files and Objects](../playerdata/media/tutorials/game-manager-entities-player-files.png)  
+![Game Manager - Entities - Player Files and Objects](media/tutorials/game-manager-entities-player-files.png)  

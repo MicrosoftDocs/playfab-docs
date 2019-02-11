@@ -114,8 +114,8 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Concept: Entities</h3>
-                                                    <p>Entities provide a robust set of features ranging from per player data storage to groups and clans. Learn about entities and how to apply them to your game.</p>
+                                                    <h3>Concept: Entity Programming Model</h3>
+                                                    <p>The new Entity Programming model provides your game access to the breadth of PlayFab features in a consistent way across your game's title configuration, player data, groups and more. Learn about the new entity programming model and how to utilize them in your game.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -134,7 +134,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Concept: PlayStream</h3>
-                                                    <p>PlayStream is the underlying event architecture that drives PlayFab. Learn how PlayStream can help with retention, engagement, and monetization.</p>
+                                                    <p>PlayStream is the underlying event architecture that drives PlayFab and enables you to provide LiveOps in your game. Learn how PlayStream can help with retention, engagement, and monetization.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -399,8 +399,7 @@ featureFlags:
                                             <div class="cardText">
                                                 <h3>Player Login</h3>
                                                 <p style='color: #7f7f7f'>Authenticate your players using a breadth of providers. Start with friction-free authentication based on the device and allow your players to link their favorite accounts to enable roaming and recovery.</p><p><a href='/gaming/playfab/features/authentication/login/'>Overview</a></p>
-                                                <p><a href='/gaming/playfab/features/authentication/login/login-basics-best-practices'>Best Practices</a>
-                                                <p><a href='/gaming/playfab/features/authentication/login/quickstart'>Quickstart</a>
+                                                <p><a href='/gaming/playfab/features/authentication/login/login-basics-best-practices'>Best Practices</a>                                                
                                             </div>
                                         </div>
                                     </div>
@@ -417,7 +416,7 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>Platform-Specific Authentication</h3>
-                                                <p style='color: #7f7f7f'>Use the providers that your players want. Seemlessly integrate login in your game.</p><p><a href='/gaming/playfab/features/authentication/platform-specific-authentication/'>Overview</a></p><p><a href='/gaming/playfab/features/authentication/platform-specific-authentication/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/authentication/platform-specific-authentication/tutorials'>Tutorials</a></p>
+                                                <p style='color: #7f7f7f'>Use the providers that your players want.  Seemlessly integrate login in your game.</p><p><a href='/gaming/playfab/features/authentication/platform-specific-authentication/'>Overview</a></p><p><a href='/gaming/playfab/features/authentication/platform-specific-authentication/tutorials'>Tutorials</a></p>
                                             </div>
                                         </div>
                                     </div>

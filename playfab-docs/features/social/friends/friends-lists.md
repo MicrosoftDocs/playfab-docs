@@ -30,9 +30,8 @@ If **Albert** adds **Bob** as a **Friend**, there is *no* approval process for *
 
 **Bob** must separately add **Albert** for the friendship to be *mutual*. If you wish to have reciprocity rules, it is your title's responsibility to enforce these conditions with a custom game server or **CloudScript** logic, if necessary.
 
-In the event that a player has linked their **Steam** or **Facebook** account, their platform-specific friends can also be displayed, if those friends also play your title.
+In the event that a player has linked their **Steam** , **Facebook**, or **Xbox Live** account, their platform-specific friends can also be displayed, if those friends also play your title.
 
-In the event that a player has linked their **Steam** or **Facebook** account, their platform-specific friends can also be displayed, if those friends also play your title.
 
 ## Making friends
 
@@ -53,7 +52,8 @@ List<FriendInfo> _friends = null;
 void GetFriends() {
     PlayFabClientAPI.GetFriendsList(new GetFriendsListRequest {
         IncludeSteamFriends = false,
-        IncludeFacebookFriends = false
+        IncludeFacebookFriends = false,
+        XboxToken = null
     }, result => {
         _friends = result.Friends;
         DisplayFriends(_friends); // triggers your UI
@@ -136,9 +136,3 @@ An important note is that PlayFab currently does not index these tags in any way
 
 Keep this in mind when considering any performance implications resulting from this system.
 
-### Friend leaderboards
-
-Friends-specific **APIs** mirror the standard [GetLeaderboard](xref:titleid.playfabapi.com.client.playerdatamanagement.getleaderboard) and [GetLeaderboardAroundPlayer](xref:titleid.playfabapi.com.client.playerdatamanagement.getleaderboardaroundplayer) **API** calls, but restrict the player pool to the player's friends list. For more information, refer to our tutorials about [Tournaments and Leaderboards](../tournaments-leaderboards/tutorials.md).
-
-> [!NOTE]
-> The [GetFriendLeaderboardAroundPlayer](xref:titleid.playfabapi.com.client.playerdatamanagement.getfriendleaderboardaroundplayer) **API** does *not* base the center of the leaderboard around the currently logged in player: it can be any PlayFab ID supplied with the request. You can use this to allow players to look up any friend's location on the leaderboard, regardless of their distance from each other.

@@ -106,7 +106,7 @@ Next, we need to define a task to execute our **CloudScript** over a specific se
 - Finally, select **Run Task... (4)**.
 
 > [!NOTE]
-> If you have no All Players segment in the list, please, refer to our [Player Segmentation](../../analytics/segmentation/player-segmentation.md) tutorial to create one.
+> If you have no All Players segment in the list, please, refer to our [Player Segmentation](../../analytics/segmentation/quickstart.md) quick start to create one.
 
 ![Game Manager - Players - Segments - All Players - Run Task](media/tutorials/game-manager-players-segments-all-players-run-task.png)  
 

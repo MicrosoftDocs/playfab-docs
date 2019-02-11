@@ -370,7 +370,7 @@ Date: 2018-03-16
 
 * Entities! [Blog](https://api.playfab.com/blog/introducing-entities-objects-and-files)! [Quickstart Guide](../features/data/entities/quickstart.md)!
  * All Client login methods return Entity credentials if request.LoginTitlePlayerAccountEntity is set to true
-* Guilds! [Blog](https://api.playfab.com/blog/announcing-groups-for-guilds-friends-clans-and-more)! [Guide](../features/data/entities/entity-groups.md)!
+* Guilds! [Blog](https://api.playfab.com/blog/announcing-groups-for-guilds-friends-clans-and-more)! [Guide](../features/social/groups/index.md)!
 * Error Codes for many API methods updated for accuracy (Dozens!)
 
 **New API Methods:**

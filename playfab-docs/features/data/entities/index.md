@@ -1,5 +1,5 @@
 ---
-title: Entities
+title: Entity Programming Model
 author: v-thopra
 description: Landing page for Entities.
 ms.author: v-thopra
@@ -10,14 +10,81 @@ keywords: playfab, data, entities
 ms.localizationpriority: medium
 ---
 
-# Entities
+# Entity Programming Model
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa tincidunt dui ut ornare lectus. Viverra vitae congue eu consequat ac felis donec. Leo urna molestie at elementum eu facilisis. A cras semper auctor neque vitae tempus quam. Amet cursus sit amet dictum sit amet justo donec enim. Faucibus turpis in eu mi bibendum neque egestas congue. Morbi quis commodo odio aenean sed adipiscing diam. Lectus vestibulum mattis ullamcorper velit. Dictum fusce ut placerat orci nulla pellentesque.
+The Entity Progamming Model is the foundation for PlayFab's next generation of data and game services that:
 
-Lorem mollis aliquam ut porttitor leo a diam sollicitudin. Mattis rhoncus urna neque viverra. Pharetra vel turpis nunc eget lorem dolor sed. Aliquam eleifend mi in nulla posuere sollicitudin aliquam ultrices. Adipiscing elit ut aliquam purus sit. Eleifend mi in nulla posuere sollicitudin aliquam. Luctus accumsan tortor posuere ac. Pulvinar sapien et ligula ullamcorper malesuada proin libero nunc consequat. Dignissim cras tincidunt lobortis feugiat vivamus at augue eget. Eu consequat ac felis donec et odio pellentesque diam volutpat. Fermentum odio eu feugiat pretium nibh ipsum. Enim sit amet venenatis urna cursus eget nunc. Sollicitudin nibh sit amet commodo. Varius quam quisque id diam vel quam elementum pulvinar. Vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant. Dui id ornare arcu odio ut. Imperdiet sed euismod nisi porta. Amet purus gravida quis blandit turpis cursus in.
+**Provide consistency across the progamming model.**  The new Entity Programming Models are designed to be utilized across all Entity types (e.g., title, player, character, group) anyway that your game wants to interact with PlayFab (e.g., from the client, from your PlayFab hosted CloudScript or your custom game server).  Gone are the aggravations of certain functionality only being available for a subset of your game.
 
-In arcu cursus euismod quis viverra nibh cras. Feugiat scelerisque varius morbi enim nunc faucibus. Sed adipiscing diam donec adipiscing tristique risus nec. Mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien et. Convallis a cras semper auctor neque vitae tempus quam. Et leo duis ut diam quam nulla. Egestas sed tempus urna et pharetra pharetra. Arcu felis bibendum ut tristique et. Donec ac odio tempor orci dapibus ultrices in iaculis nunc. Ullamcorper a lacus vestibulum sed arcu non odio.
+**Significantly improve performance.** Changing the way we store data, as well as unifying the access policies we use, increases performance for player and title CRUD operations. By consolidating all Data API interactions into a single place, all CRUD operations work the same way across the entire service. We unify data across a smaller set of tables and use a common access policy system more efficiently to access the necessary data. 
 
-Nulla aliquet enim tortor at auctor urna nunc id. Turpis massa sed elementum tempus. Commodo viverra maecenas accumsan lacus vel facilisis volutpat est. Nibh nisl condimentum id venenatis. Sagittis id consectetur purus ut faucibus. Diam maecenas ultricies mi eget mauris pharetra. Porttitor lacus luctus accumsan tortor posuere ac ut consequat semper. Nunc sed velit dignissim sodales. Tortor condimentum lacinia quis vel. Elementum curabitur vitae nunc sed velit dignissim sodales ut eu. Tincidunt eget nullam non nisi est sit amet facilisis magna. Pellentesque pulvinar pellentesque habitant morbi tristique senectus et netus. Morbi quis commodo odio aenean sed adipiscing diam donec. Nunc sed id semper risus in hendrerit gravida rutrum quisque. Id interdum velit laoreet id. Tempor id eu nisl nunc. Cras tincidunt lobortis feugiat vivamus at augue eget arcu dictum. Tempus urna et pharetra pharetra massa massa.
+**Consistency of access control.** The new unified access control policy allows you to have more fine grained control. This includes access control over individual data objects AND access to which APIs and functionality should be exposed to your game client.
 
-Risus in hendrerit gravida rutrum quisque non. Pulvinar mattis nunc sed blandit. Augue mauris augue neque gravida in fermentum et. Odio ut sem nulla pharetra diam sit amet nisl suscipit. Facilisis gravida neque convallis a cras semper. Ac turpis egestas maecenas pharetra convallis. Nunc non blandit massa enim nec dui nunc mattis enim. Eu facilisis sed odio morbi quis commodo odio aenean sed. Amet consectetur adipiscing elit pellentesque habitant. Lorem ipsum dolor sit amet consectetur adipiscing elit ut aliquam. In nibh mauris cursus mattis molestie a. Duis at consectetur lorem donec. Ac odio tempor orci dapibus ultrices in iaculis nunc. A arcu cursus vitae congue mauris rhoncus aenean vel elit. Facilisis magna etiam tempor orci eu lobortis elementum. Congue mauris rhoncus aenean vel elit. Gravida dictum fusce ut placerat orci nulla pellentesque dignissim enim. Netus et malesuada fames ac turpis egestas integer.
+## API Interactions
+
+The Entity Programming Model APIs are grouped logically by the area of functionality that they expose, instead of how our Classic APIs are based on whether the functionality was being accessed by Clients or Game Servers.
+
+This allows you to get access to functionality in a more intuitive way. The full breadth of Entity functionality can be seen at:
+
+- [Authentication](xref:titleid.playfabapi.com.authentication.authentication)
+- [Profiles](xref:titleid.playfabapi.com.profiles.accountmanagement)
+- [Groups](xref:titleid.playfabapi.com.groups.groups)
+- [Data - File](xref:titleid.playfabapi.com.data.file)
+- [Data - Object](xref:titleid.playfabapi.com.data.object)
+- [Events](https://api.playfab.com/documentation/Events)
+- [CloudScript](xref:titleid.playfabapi.com.cloudscript.server-sidecloudscript)
+- [Multiplayer](xref:titleid.playfabapi.com.multiplayer.multiplayerserver)
+
+
+## Supported Entity Types
+
+The following list describes the available **Entity Types**, which can be used to construct an **EntityKey**. **Entity Keys** are used to identify **Entities** in most newer **API** methods.
+
+These values are meant to be used in the **EntityKey.Type** field.
+
+> [!NOTE]
+> These are *case sensitive*. Other/custom values *will not* currently work.
+
+### Namespace
+
+**Namespace** is the singular **Entity** that refers to *all* global information for every **Title** within a **Studio**. This information should be static. Changes to this **Entity** will *not* be reflected in real time.
+
+The **ID** field should be set to your **Game PublisherId**, found in **Game Manager**:
+
+- Go to **Settings**.
+- Select **API Features**.
+- Then select the **Publisher ID**.
+
+### Title
+
+**Title** is the singular **Entity** that refers to all global information for that **Title**. This information should be static. Changes to this **Entity** will *not* be reflected in real time.
+
+The **ID** field should be set to your game's **TitleId**, found in **Game Manager**:
+
+- Go to **Settings**.
+- Select **API Features**.
+- Then select the **Title ID**.
+
+### master_player_account
+
+The **master_player_account** is a **Player Entity** that is shared among all **Titles** within a **Studio**.
+
+The **ID** field should be set to **PlayFabId** from the **Classic API**, returned by any **Login Result.PlayFabId**.
+
+### title_player_account
+
+**title_player_account**, for most developers, represents the **Player** in the most traditional way.
+
+The **ID** field should be set to **LoginResult.EntityToken.Id** in the **Client API**, or **GetEntityTokenResponse.Entity.Id** in the **Authentication API**.
+
+### Character
+
+**Character** is a sub-entity of **title_player_account**, and is a direct mirror of [Characters in the Classic APIs](xref:titleid.playfabapi.com.client.characters.getalluserscharacters).
+
+The **ID** field should be set to any **characterId** from **result.Characters[i].CharacterId**.
+
+### Group
+
+**Group** is an **Entity** that contains other **Entities**. It is currently limited to **Players** and **Characters**.
+
+The **ID** field should be set to the **result.Group.Id** if you are creating a group, or the **result.Groups[i].Group.Id** when [listing your memberships](xref:titleid.playfabapi.com.groups.groups.listmembership).

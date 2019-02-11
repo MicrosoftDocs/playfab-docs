@@ -8,6 +8,6 @@
   - name: Available built-in Entity types
     href: available-built-in-entity-types.md
   - name: Entity Groups
-    href: entity-groups.md
+    href: ..\..\social\groups\quickstart.md
   - name: Entity API Restructure Upgrade Tutorial
     href: entity-api-restructure-upgrade-tutorial.md

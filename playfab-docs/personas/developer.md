@@ -90,7 +90,7 @@ Here are some resources that will help you along that first step for authenticat
 
 - [Login basics and Best Practices](../features/authentication/login/login-basics-best-practices.md) – Check this tutorial first to learn about the best practices to use various authentication methods in your game.
 - Authentication Service Helper – Learn how this service can save you valuable time by leveraging building best practices in this Authentication Service for each SDK.
-- [Authentication quickstart](../features/authentication/platform-specific-authentication/quickstart.md) – Use this guide to understand the basics of Authentication calls into PlayFab.
+- [Authentication quickstart](../features/authentication/platform-specific-authentication/index.md) – Use this guide to understand the basics of Authentication calls into PlayFab.
 - [Account Linking tutorial](../features/authentication/login/linking-unlinking.md) - Learn about linking and unlinking different types of Accounts to a single player profile.
 
 ## Next steps

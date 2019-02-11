@@ -16,4 +16,4 @@ The following tutorials show you how to use the PlayFab Entities API to enhance 
 
 - [Available built-in Entity types](available-built-in-entity-types.md)
 - [Entity API Restructure Upgrade Tutorial](entity-api-restructure-upgrade-tutorial.md)
-- [Entity Groups](entity-groups.md)
+- [Entity Groups](../../social/groups/quickstart.md)
