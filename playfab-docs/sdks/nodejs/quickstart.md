@@ -31,7 +31,7 @@ This guide will help you make your first API call in NodeJS.
     ![Install PlayFab SDK](media/open-cmd-window.png)
 
   - Run this command:
-    - npm install playfab-sdk
+    - `npm install playfab-sdk --save`
 
   - Keep this window open (We'll use it again later)
 
