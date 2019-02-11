@@ -20,7 +20,7 @@ Otherwise, it is very rare for a published title to use a custom ID for a primar
 
 ### Why we demonstrate this first
 
-Bluntly, because it's the easiest. A custom ID can be anything, and it makes the **call your first API** step easier. Once you get serious about developing and releasing your title, it is very likely you will switch to another login mechanism.
+Bluntly, because it's the easiest. A custom ID can be anything, and it makes it easier to **call your first API**. Once you get serious about developing and releasing your title, it is very likely you will switch to another login mechanism.
 
 ### Best practice
 
@@ -28,7 +28,7 @@ Unless you know *exactly* why you want **LoginWithCustomId** in your released ti
 
 ## Anonymous login mechanisms
 
-The anonymous login mechanisms are the simplest to use. They require *zero* input from the player, so that there's no friction to the first time user experience, and they create a unique account in PlayFab for each player. This is the most common login mechanism.
+The anonymous login mechanisms are the simplest to use. They require *zero* input from the player so there's no friction to the first time user experience, and the result is a unique account in PlayFab for each player. This is the most common login mechanism.
 
 These logins include:
 
@@ -36,15 +36,15 @@ These logins include:
 - [LoginWithAndroidDeviceID](xref:titleid.playfabapi.com.client.authentication.loginwithandroiddeviceid)
 - [LoginWithCustomID](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid)
 
-Being anonymous, these methods can uniquely identify a device, but contain no recoverable information about the player. If the player loses or breaks their device, the account is lost, and may be very difficult to recover. It is not impossible, but in most cases the account will simply be orphaned and irretrievable.
+Since they are anonymous, these methods can uniquely identify a device, but contain no recoverable information about the player. If the player loses or breaks their device, the account is lost and may be very difficult to recover. In most cases the account is simply orphaned and not retrievable.
 
-So why use it? It's the lowest possible barrier to entry for the player, requiring no interaction. It gets the player trying your game with minimal effort, while creating an account they can get back to for continuity (as long as they have that device).
+So why use it? Because it's the lowest possible barrier to entry for the player, requiring no interaction. It gets the player trying your game with minimal effort, while creating an account they can get back to for continuity (as long as they have that device).
 
 ### Best practice
 
-Your game should use an anonymous login for creating a new account and linking new devices to an existing account. Some players may abandon a game that asks for an email, or identifiable information. However, once the anonymous login is complete, you should provide the option to add *recoverable* login credentials, and provide some explanation regarding the benefits.
+Your game should use an anonymous login for creating a new account and linking new devices to an existing account. Some players may abandon a game that asks for an e-mail or identifiable information. However, once the anonymous login is complete you should provide the option to add *recoverable* login credentials and provide some explanation regarding the benefits.
 
-In particular, you should *make sure* that paying customers are guided to the recoverable login systems, to prevent loss of their accounts. A free account lost forever is a bummer. A paid account lost forever is a revenue problem.
+In particular, you should *make sure* that paying customers are guided to the recoverable login systems to prevent loss of their accounts. A free account lost forever is a disappointment. A paid account lost forever affects revenue.
 
 ### iOS devices
 
@@ -68,7 +68,7 @@ The simplest options are:
 - [LoginWithPlayFab](xref:titleid.playfabapi.com.client.authentication.loginwithplayfab)
 - [LoginWithEmailAddress](xref:titleid.playfabapi.com.client.authentication.loginwithemailaddress).
 
-If used, the email or username-plus-password are authenticated directly by PlayFab. The account is recoverable by the email or username, *even* if the user forgets their password. The login is generally secure (you can implement your own *password strength check* into your game to improve this).
+If used, the e-mail or username-plus-password are authenticated directly by PlayFab. The account is recoverable by the e-mail or username, *even* if the user forgets their password. The login is generally secure (you can implement your own *password strength check* into your game to improve this).
 
 ### Third party API options
 
@@ -89,7 +89,7 @@ You should use an appropriate anonymous login for a basic login, and encourage y
 
 ## Insecure recoverable login mechanisms
 
-Yes, this is indeed a thing, and it has a legitimate (if limited) purpose.
+It is possible to set up an insecure recoverable login for a legitimate (if limited) purpose.
 
 Specifically, [LoginWithGameCenter](xref:titleid.playfabapi.com.client.authentication.loginwithgamecenter) is considered an *insecure login mechanism*, and you should use it with *extreme* care (or not at all).
 
