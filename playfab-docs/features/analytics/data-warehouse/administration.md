@@ -27,13 +27,13 @@ The Data Warehouse Premium offering grants customers access to an isolated clust
 Adds a new user with an MSA to access the cluster:
 
 ```cmd
-.add follower database {DATABASENAME} owner ('msauser={MSA Email}')
+.add follower database {DATABASENAME} admins/users ('msauser={MSA Email}')
 ```
 
 Adds a new user with a organizational account (i.e. AAD):
 
 ```cmd
-.add follower database {DATABASENAME} owner ('aaduser=imikeoein@fabrikam.com:TENANTID'')
+.add follower database {DATABASENAME} admins/users ('aaduser=imikeoein@fabrikam.com;TENANTID'')
 ```
 
 ## Table Administration
