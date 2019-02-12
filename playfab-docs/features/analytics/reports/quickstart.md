@@ -42,11 +42,11 @@ The following shows an overview of the **Reports** page.
 
 - [Daily, Monthly, and Rolling 30-Day Overview and Totals Reports](daily-monthly-and-rolling-30-day-overview-and-totals-reports.md)
   - Tracks hourly, daily, and monthly logins, revenue, and API usage.
-- [Thirty Day Retention Report](thirty-day-retention-report.md)
+- [Thirty-day Retention Report](thirty-day-retention-report.md)
   - Tracks the percentages of all active **Players** who return to your **Game** over 30 days.
-- [Thirty Day New User Retention Report](thirty-day-new-user-retention-report.md)
+- [Thirty-day New User Retention Report](thirty-day-new-user-retention-report.md)
   - Tracks the percentages of new **Players** who return to your **Game** over the first 30 days.
-- [Thirty Day New User Conversion Report](thirty-day-new-user-conversion-report.md)
+- [Thirty-day New User Conversion Report](thirty-day-new-user-conversion-report.md)
   - Tracks the percentages of new **Players** who spend money within the first 30 days.
 - [Daily and Monthly Top Spender Report](daily-and-monthly-top-spender-report.md)
   - Tracks the top 100 spenders in your **Game**.

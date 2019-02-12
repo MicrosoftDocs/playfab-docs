@@ -1,5 +1,5 @@
 ---
-title: Thirty Day New User Conversion Report
+title: Thirty-day New User Conversion Report
 author: v-thopra
 description: Describes the report that tracks the percentages of new players who spend money within the first 30 days.
 ms.author: v-thopra
@@ -10,20 +10,20 @@ keywords: playfab, analytics, reports
 ms.localizationpriority: medium
 ---
 
-# Thirty day new user conversion report
+# Thirty-day new user conversion report
 
 ## Overview
 
-The thirty day new user conversion report illustrates the percentage of players in a given cohort, who spent money in the game during their first 30 days.
+The Thirty-day new user conversion report illustrates the percentage of players in a given cohort, who spent money in the game during their first 30 days.
 
 A cohort of players is formed every day by grouping newly-registered players. Cohort size indicates the number of players in a cohort.
 
 > [!NOTE]
 > Unlike retention reports, the conversion report tracks a cumulative total of players who converted within a given time span.
 
-![Thirty Day New User Conversion Report Table](media/tutorials/thirty-day-new-user-conversion-report-table.png)  
+![thirty-day New User Conversion Report Table](media/tutorials/thirty-day-new-user-conversion-report-table.png)  
 
-The thirty day new user conversion report illustrates the percentage of players in a given cohort, who spent money in the game during their first 30 days.
+The Thirty-day New User Conversion Report illustrates the percentage of players in a given cohort, who spent money in the game during their first 30 days.
 
 A cohort of players is formed *every day* by grouping newly-registered players. Cohort size indicates the number of players in a cohort.
 
