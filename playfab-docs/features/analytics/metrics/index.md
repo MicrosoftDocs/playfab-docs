@@ -24,7 +24,7 @@ Some examples include:
  
 ### How PlayFab supports metrics
  
-PlayFab’s metrics offering automatically calculates these industry-standard metrics for you on a daily basis, making them available to explore from the Reports and Trends tabs in the Analytics section. PlayFab offers views that are easy to digest, filter, and analyze### .  
+PlayFab’s metrics offering automatically calculates these industry-standard metrics for you on a daily basis, making them available to explore from the Reports and Trends tabs in the Analytics section. PlayFab offers views that are easy to digest, filter, and analyze.  
  
 ### Which metrics are available? 
 
