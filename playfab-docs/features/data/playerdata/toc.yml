@@ -5,8 +5,10 @@
 - name: Tutorials
   href: tutorials.md
   items:
-  - name: Using player statistics
-    href: using-player-statistics.md
+  - name: Using Entity Objects
+    href: entity-objects.md
+  - name: Using Entity Files
+    href: entity-files.md
   - name: Getting Player Profiles
     href: getting-player-profiles.md
   - name: Player Inventory
@@ -27,3 +29,6 @@
     href: playfab-gdpr-deleting-and-exporting-player-data.md
   - name: Using Player Publisher Data
     href: using-player-publisher-data.md
+  - name: Using player statistics
+    href: using-player-statistics.md
+  
