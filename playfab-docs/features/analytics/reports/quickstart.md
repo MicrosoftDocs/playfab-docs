@@ -12,23 +12,23 @@ ms.localizationpriority: medium
 
 # Reports quickstart
 
-The **Reports** page gives you access to various **Reports** composed from **Events**, broken down by dates.
+The **Reports** page gives you access to various **Reports** composed from **Events**, and broken down by dates.
 
 > [!IMPORTANT]
-> Before using **Reports**, make sure you have already executed some **API** calls, that are captured by the **Reports** system.
+> Before using **Reports**, make sure you have executed some **API** calls which have been captured by the **Reports** system already.
 
 ## Access Reports
 
 To **access** the **Reports** page:
 
-- Use the sidebar menu and navigate to **Analytics (1)**.
-- Then select the **Reports** tab **(2)**.
+1. Use the sidebar menu and navigate to **Analytics (1)**.
+2. Select the **Reports** tab **(2)**.
 
 ![Game Manager - Analytics - Reports](media/tutorials/game-manager-analytics-open-reports.png)  
 
 ## Reports overview
 
-The following image shows an overview of the **Reports** page.
+The following shows an overview of the **Reports** page.
 
 ![Game Manager - Analytics - Reports](media/tutorials/game-manager-analytics-reports-overview.png)  
 

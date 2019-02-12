@@ -778,7 +778,7 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>Metrics</h3>
-                                                <p style='color: #7f7f7f'>Evaluate your game’s performance through the lens of the top metrics used across the industry pre-calculated for you daily. Compare your performance against benchmarks for other titles in your genre.</p><p><a href='/gaming/playfab/features/analytics/metrics/'>Overview</a></p><p><a href='/gaming/playfab/features/analytics/metrics/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/analytics/metrics/tutorials'>Tutorials</a></p>
+                                                <p style='color: #7f7f7f'>Evaluate your game’s performance through the lens of the top metrics used across the industry, pre-calculated for you daily. Compare your performance against benchmarks for other titles in your genre.</p><p><a href='/gaming/playfab/features/analytics/metrics/'>Overview</a></p><p><a href='/gaming/playfab/features/analytics/metrics/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/analytics/metrics/tutorials'>Tutorials</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -795,7 +795,7 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>Reports</h3>
-                                                <p style='color: #7f7f7f'>Review summaries of your game’s daily and monthly performance through auto-generated reports that can be viewed in game manager, downloaded, or delivered to your inbox daily.</p><p><a href='/gaming/playfab/features/analytics/reports/'>Overview</a></p><p><a href='/gaming/playfab/features/analytics/reports/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/analytics/reports/tutorials'>Tutorials</a></p>
+                                                <p style='color: #7f7f7f'>Review summaries of your game’s daily and monthly performance through auto-generated reports that can be viewed in Game Manager and downloaded or delivered to your inbox daily.</p><p><a href='/gaming/playfab/features/analytics/reports/'>Overview</a></p><p><a href='/gaming/playfab/features/analytics/reports/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/analytics/reports/tutorials'>Tutorials</a></p>
                                             </div>
                                         </div>
                                     </div>

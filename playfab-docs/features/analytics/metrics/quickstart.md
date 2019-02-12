@@ -37,9 +37,10 @@ The Trend tab is updated once daily at the close of the UTC day. For details on 
 ## Filters 
 
 At the top, there are three page-level filters that can be applied. Choosing any filter will update all spark cards and graphs to match the current active selection: 
-Time: Choose the time interval to explore, from seven days to six months. 
-Platform: See only data for individual device types such as Android, iPhone, or Windows. 
-Region: See only data from a specific geographic region. For a complete list of which countries are grouped under each region, see Regions. 
+
+**Time:** Choose the time interval to explore, from seven days to six months. 
+**Platform:** See only data for individual device types such as Android, iPhone, or Windows.  
+**Region:** See only data from a specific geographic region. For a complete list of which countries are grouped under each region, see Regions. 
 
 > [!NOTE]
 > Platform and region filters are not currently supported for Revenue. This will be resolved in a future release. 
@@ -48,17 +49,15 @@ Region: See only data from a specific geographic region. For a complete list of 
  
 ## Spark cards 
 
-The Spark cards are designed to offer an at-a-glance view of the today’s. Each Spark Card consists of a trend line, the actual value from the most recent UTC day, and the trend comparing the most recent value against the period start. 
-Definitions for each can be obtained by hovering over the metric or by tapping on a mobile phone.
+The Spark cards are designed to offer an at-a-glance view of the today’s. Each Spark Card consists of a trend line, the actual value from the most recent UTC day, and the trend comparing the most recent value against the period start. Definitions for each are obtained by hovering over the metric or by tapping on a mobile phone.
 
 ![Spark Card](media/tutorials/spark-card.png)  
  
 ## Graphs 
 
-The graphs provide day level trend data for each of the six metrics. In some cases, the combo box in the upper left can be used to toggle the active metric. For example, the Active Players graph can show either DAU or Rolling 30 Day MAU.  
-In the upper right hand corner, individual lines can be toggled on and off. Doing so will dynamically rescale the y-axis. For example, in the Retention Graph, D1 and D7 can be disabled to emphasize variations in D14 and D30.   
-Hovering over any data point will display the actual value for the selected day. 
-To the right of each graph, supporting metrics offer additional insights such as the average and/or total for the period. 
+The graphs provide day level trend data for each of the six metrics. In some cases, the combo box in the upper-left can be used to toggle the active metric. For example, the Active Players graph can show either DAU or Rolling 30-Day MAU.  
+
+In the upper right-hand corner, individual lines can be toggled on and off. Doing so dynamically re-scales the y-axis. Additionally, in the Retention Graph, D1 and D7 can be disabled to emphasize variations in D14 and D30. Hover over any data point to display the actual value for the selected day. To the right of each graph, supporting metrics offer additional insights such as the average and/or total for the period. 
 
 ![Graphs](media/tutorials/graph.png)
  
