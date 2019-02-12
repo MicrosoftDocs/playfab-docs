@@ -19,7 +19,7 @@ This tutorial guides you through an example of PlayFab authentication using **Fa
 - [Unity 5+](https://unity3d.com/) and a created project.
 - [Facebook account](https://www.facebook.com/) for testing.
 - [Facebook SDK](https://developers.facebook.com/docs/unity/) imported into the project.
-- Registered [PlayFab](https://playfab.com/) Title.
+- Registered [PlayFab](https://playfab.com/) title.
 - [PlayFab SDK](https://api.playfab.com/downloads/unity-v2ap) imported into the project with a configured title reference.
 - Familiarity with [Login basics and Best Practices](../../authentication/login/login-basics-best-practices.md).
 
@@ -36,7 +36,7 @@ Start by navigating to the [Facebook Developer Portal](https://developers.facebo
 A new **Application** pop-up will open.
 
 - Enter a name for your **Application (1)**.
-- Enter a contact email **(2)**. 
+- Enter a **Contact Email (2)**.
 
 > [!NOTE]
 > Make sure to come up with your own *unique* **Application Name** and **Email**, as shown on the picture below.
@@ -57,7 +57,7 @@ We will use it later to set up the **Facebook SDK**.
 - Verify that it has an assigned **User Token (2)**.
 
 > [!NOTE]
-> If you *do not* have an assigned **User Token**, request one using the button to the right of your screen. Refer to this page whenever you need a fresh **User Token**. If authorization fails during testing on a PC, **Token** expiration may be the most likely reason. Refresh the page to get a new **User Token** and test again.
+> If you *do not* have an assigned user token, request one using the button to the right of your screen. Refer to this page whenever you need a fresh user token. If authorization fails during testing on a PC, token expiration may be the most likely reason. Refresh the page to get a new user token and test again.
 
 ![Facebook Access Token Tool](media/tutorials/facebook-unity/access-token-tool.png)  
 
@@ -90,7 +90,7 @@ The **Inspector** window will display the current **Facebook SDK** configuration
 
 ### Simple authentication script
 
-Create a new **Game Object** and rename it to **PlayfabFacebookAuthExample**, as shown in the following picture.
+Create a new **Game Object**, and rename it to **PlayfabFacebookAuthExample**, as shown in the following picture.
 
 ![Create a new Game Object](media/tutorials/facebook-unity/create-game-object.png)  
 
@@ -210,7 +210,7 @@ Before launching the application on **Android**, you are required to perform add
 ![Set Android package ID](media/tutorials/facebook-unity/set-android-package-id.png)  
 
 > [!TIP]
-> **Optional step**:  Install [Open SSL](https://wiki.openssl.org/index.php/Binaries) and add it to the **PATH** environment variable. If it is missing, **Unity** will produce a harmless error during build. This error does *not* stop the build or effect the execution.
+> **Optional step**:  Install [Open SSL](https://wiki.openssl.org/index.php/Binaries) and add it to the **PATH** environment variable. If it is missing, **Unity** will produce a harmless error during the build. This error does *not* stop the build, or effect the execution.
 
 Next, in your **Facebook Application** console:
 
@@ -234,7 +234,7 @@ Build and run the **Application** normally on your **Android** Device.
 
 - The **Application** should welcome you with a **Facebook** sign-in page.
 - Once you sign in, watch the message on the screen as it changes.
-- Finally, you should be presented with a message indicating successful authentication in **PlayFab**. The entire procedure is illustrated in the example provided below.
+- Finally, you should be presented with a message indicating successful authentication in PlayFab. The entire procedure is illustrated in the example provided below.
 
 ![PlayFab Facebook authentication on Android](media/tutorials/facebook-unity/playfab-facebook-auth-on-android.png)
 
@@ -266,7 +266,7 @@ A panel with platform-specific settings will appear.
 
 ![iOS platform settings](media/tutorials/facebook-unity/ios-platform-settings.png)
 
-- Next, build the **Application** as usual.
+- Next, build the application as usual.
 - Once this is done, open the **Project** using **XCode**.
 
 ![Open iOS project using XCode](media/tutorials/facebook-unity/open-ios-project.png)

@@ -27,7 +27,7 @@ You can also download the sample for this tutorial [here](https://github.com/Pla
 
 ## Prerequisites
 
-- A Project built using the **Unity** game engine.
+- A project built using the **Unity** game engine.
 - A **Google** developer account.
 - A PlayFab developer account which has access to a game title in PlayFab.
 - The [PlayFab Unity Editor Extensions & Unity SDK](../../../sdks/unity3d/quickstart.md).
@@ -38,14 +38,14 @@ You can also download the sample for this tutorial [here](https://github.com/Pla
 
 First, we will start by getting the basic things set up in **Google Play**. There are a few good guides on how to do this, so we are not going to reinvent the wheel.
 
-1. Create an **Application** - If you have not done so already, you will need to create an **Application** in the [Google Play Developer Console](https://play.google.com/apps/publish).
+1. Create an **Application** - If you have not done so already, you will need to create an application in the [Google Play Developer Console](https://play.google.com/apps/publish).
 2. Build your game **APK** and upload it as an **Alpha Build**.
     - Select **Manage Releases**.
     - Select **Manage Alpha**.
     - Select **Upload APK**.
-3. [Setting Up Google Play Games Services](https://developers.google.com/games/services/console/enabling) - Watch the [YouTube video](https://youtu.be/BZRoBbUsfPE), as the link here is dated, and does not reflect the latest UI of Google Play Games services.
+3. [Setting Up Google Play Games Services](https://developers.google.com/games/services/console/enabling) - Watch the [YouTube video](https://youtu.be/BZRoBbUsfPE), as the link here is dated, and does not reflect the latest **UI** of **Google Play Games** services.
 4. Download the [Google Play Games SDK](https://github.com/playgameservices/play-games-plugin-for-unity) (if you have not done so already) and install it.
-5. Install the **PlayFab Unity SDK** (if you do not know how to do this, follow the [Unity3D quickstart guide](../../../sdks/unity3d/quickstart.md)).
+5. Install the PlayFab **Unity SDK** (if you do not know how to do this, follow the [Unity3D quickstart guide](../../../sdks/unity3d/quickstart.md)).
 
 ## Configuring Google Play Games
 
@@ -77,7 +77,7 @@ You can configure **Google Play Games** from the toolset that is installed with 
 
 ![Google Play Developer Console Web App Client ID](media/tutorials/google-unity/gpdc-client-id.png)  
 
-In order to get the **Google Sign-In** working with PlayFab, you need to use a web client ID. To obtain your web client ID, you must link a **Web Application** in the **Game Services** section of the **Google Play Console** under the **Services and API** section.
+In order to get the **Google Sign-In** working with PlayFab, you need to use a Web Client ID. To obtain your Web Client ID, you must link a **Web Application** in the **Game Services** section of the **Google Play Console** under the **Services and API** section.
 
 ![Google Play Developer Console game services](media/tutorials/google-unity/gpdc-game-services.png)  
 
@@ -89,7 +89,7 @@ From here, you enter your **API Endpoint** which can be found in PlayFab:
 
 - Look under **Settings**.
 - Select the **API** tab.
-- Go to the **API Endpoint** field.
+- Go to the **API endpoint** field.
 
 ![Google Play Developer Console enter API endpoint](media/tutorials/google-unity/gdpc-set-api-endpoint.png)  
 
@@ -97,7 +97,7 @@ From here, you enter your **API Endpoint** which can be found in PlayFab:
 - Select the **Save** button.
 - This will provide you with the proper **Client ID**.
 
-To obtain your Secret Key, follow the link to your **API Console**.
+To obtain your secret key, follow the link to your **API Console**.
 
 ![Link to API Console](media/tutorials/google-unity/link-to-api-console.png)  
 
@@ -124,8 +124,8 @@ There are a few things you need to enter into this form:
 
 > [!NOTE]
 > You can get this License Key from the [Google Developer Console](https://play.google.com/apps/publish) under the **Services & APIs** section. Look for a section entitled **YOUR LICENSE KEY FOR THIS APPLICATION**. Copy and paste the Base64-encoded RSA Public Key into this field.
-- The **Google OAuth Client ID** - This is the web client ID that you used in the **Google Play Games SDK** setup in **Unity**.
-- The **Google OAuth Client Secret** - This is the Secret Key that you obtained in the last step.
+- The **Google OAuth Client ID** - This is the Web Client ID that you used in the **Google Play Games SDK** setup in **Unity**.
+- The **Google OAuth Client Secret** - This is the secret key that you obtained in the last step.
 
 > [!TIP]
 > Be sure to **Save Settings**!
@@ -201,7 +201,7 @@ The next set of code, the **OnSignInButtonClicked()** function shown in the exam
 
 The **OnSignInButtonClicked()** code can be a bit overwhelming, so let's break down exactly what is happening:
 
-- First, we log in with **Social.localUser.Authenticate** - This will return a boolean if we are able to successfully login. Be aware that if you have not added your test account to your app, this will *always* return False when testing.
+- First, we log in with **Social.localUser.Authenticate** - This will return a boolean if we are able to successfully login. Be aware that if you have not added your test account to your app, this will always return *False* when testing.
 - When this happens - important step here - [add your test account](https://developers.google.com/games/services/console/testpub).
 - The link will take you to instructions on adding testers to your **Google** application.
 

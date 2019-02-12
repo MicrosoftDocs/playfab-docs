@@ -44,8 +44,8 @@ Navigate to the [Kongregate website](https://www.kongregate.com/):
 
 ![Kongregate Games tab](media/tutorials/kongregate-games-tab.png)  
 
-A page to set up for a new **Application** will open.
-- Make sure to enter the **Aplication Name** in the **Title (1)** field.
+A page to set up for a new application will open.
+- Enter the **Application Name** in the **Title (1)** field.
 - Then enter a **Game Description (2)** in the field provided.
 - Select a **Category (3)**.
 - Submit the new app by selecting the **Continue** button **(4)** as indicated in the example provided below.
@@ -54,11 +54,11 @@ A page to set up for a new **Application** will open.
 
 You will be moved to the **Application Upload** page.
 
-- As a *very* important first step, make sure to save the **URL** from your **Web Address Bar**. This will save you a lot of time trying to restore access to the **Application** once you close the page.
+- As a *very* important first step, make sure to save the **URL** from your **Web Address Bar**. This will save you a lot of time trying to restore access to the application once you close the page.
 - Once this is done, select the prepared **index.html** file as your **Game File (1)**.
 - Then set up the screen size **(2)**.
 - Make sure to accept all the required licenses **(3)**.
-- Upload your **Application** by selecting the **Upload** button **(4)**, as shown in the example provided below.
+- Upload your application by selecting the **Upload** button **(4)**, as shown in the example provided below.
 
 ![Kongregate application upload page](media/tutorials/kongregate-app-upload-page.png)
 
@@ -73,7 +73,7 @@ You will be moved to the **Application Upload** page.
 
 ## Configuring PlayFab title
 
-In your PlayFab Title Game Manager:
+In your PlayFab title Game Manager:
 
 - Navigate to **Add-ons (1)**.
 - Then locate and select **Kongregate (2)**, as shown in the example provided below.
@@ -87,7 +87,7 @@ A new page will open, allowing you to set up **Kongregate** integration.
 
 ![PlayFab set up Kongregate integration](media/tutorials/playfab-set-up-kongregate-integration.png)
 
-If you receive no error message, then you have configured **PlayFab Title** integration with your **Kongregate Application**.
+If you receive no error message, then you have configured PlayFab title integration with your **Kongregate** application.
 
 ## Preparing some code
 
@@ -187,7 +187,7 @@ Remember that **URL** we asked you to save in a safe and accessible place a litt
 - Select **index.html** as your **Game File (1)**.
 - Set up the screen size **(2)**.
 - Make sure to accept all the required licenses **(3)**.
-- Upload your **Application** by selecting the **Upload** button **(4)**.
+- Upload your application by selecting the **Upload** button **(4)**.
 
 ![Kongregate application upload page](media/tutorials/kongregate-app-upload-page.png)
 
@@ -195,6 +195,6 @@ Once the preview loads, wait for the **Application** to obtain the **Kongregate 
 
 - When that has happened, select the **PlayFab Login With Kongregate** button.
 - After a brief pause, you should receive an **Authenticated via PlayFab** message.
-- At this point you have successfully logged in using **PlayFab** and **Kongregate**!
+- At this point you have successfully logged in using PlayFab and **Kongregate**!
 
 ![Testing PlayFab Login with Kongregate](media/tutorials/kongregate-html5/testing-playfab-login-with-kongregate.png)

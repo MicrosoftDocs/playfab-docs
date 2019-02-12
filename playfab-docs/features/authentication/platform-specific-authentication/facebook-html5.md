@@ -46,11 +46,11 @@ A new **Application** pop-up will open.
 - Enter a contact email address in the field under **Contact Email (2)**.
 
 > [!NOTE]
-> Make sure to come up with your own unique Application name and email, as shown in the example provided below.
+> Make sure to come up with your own unique application name and email, as shown in the example provided below.
 
 ![Facebook new app ID](media/tutorials/facebook-new-app-id.png)  
 
-- Navigate to the **Settings tab (1)**, then to the **Basic (2)** sub-tab.
+- Navigate to the **Settings** tab **(1)**, then to the **Basic (2)** sub-tab.
 - Locate your **Application ID (3)**.
 
 > [!NOTE]
@@ -75,7 +75,7 @@ In the **Client OAuth Settings** screen:
 - Set the **Valid OAuth redirect URIs (1)** to your own auth page **URI**.
 
 > [!NOTE]
-> This will be `playfab.example` in your case. 
+> This will be `playfab.example` in your case.
 
 - Select **Save Changes (2)** to commit.
 
@@ -190,8 +190,8 @@ Use the following **HTML** file to test your PlayFab authentication using **Face
 </html>
 ```
 
-- Request the following file from your server using the domain you set up during **Facebook Application** configuration (**playfab.example** in our case). 
-- Once the **Facebook Auth Example** page opens, select **Log In with Facebook button (1)**.
+- Request the following file from your server using the domain you set up during **Facebook Application** configuration (**playfab.example** in our case).
+- Once the **Facebook Auth Example** page opens, select **Log In with Facebook** button **(1)**.
 - Follow any **Facebook** instructions in the pop-up window.
 - Watch the output **(2)**.
 

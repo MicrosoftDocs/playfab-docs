@@ -23,7 +23,7 @@ This tutorial shows you the minimal setup required to authenticate your players 
 - **Unity WebGL** support installed.
 - Familiarity with [Login basics and Best Practices](../../authentication/login/login-basics-best-practices.md).
 
-## Setting up a Kongregate App
+## Setting up a Kongregate app
 
 **Kongregate** requires you to upload a preview version of the app, before you gain access to the necessary app information.
 
@@ -46,7 +46,7 @@ Navigate to the [Kongregate website](https://www.kongregate.com/).
 
 ![Kongregate Games tab](media/tutorials/kongregate-games-tab.png)  
 
-A page to set up a new **Application** will open.
+A page to set up a new application will open.
 
 - Make sure to enter the **Application Name (1)**.
 - Enter a **Game Description (2)**.
@@ -70,7 +70,7 @@ Once the preview opens, ignore the content and open the **api information** link
 
 ![Kongregate preview API information](media/tutorials/kongregate-preview-api-info.png)
 
-When the **API Information** page opens, locate the **API** key and keep it in a safe place that is easily accessible for later use.
+When the **API Information** page opens, locate the **API Key** and keep it in a safe place that is easily accessible for later use.
 
 ![Kongregate API Key](media/tutorials/kongregate-api-key.png)
 
@@ -85,12 +85,12 @@ In your PlayFab title Game Manager:
 
 A new page will open, allowing you to set up **Kongregate** integration:
 
-- Enter the **API** key **(1)** you acquired in the previous section.
+- Enter the **API Key (1)** you acquired in the previous section.
 - Select the **Install Kongregate** button **(2)**.
 
 ![PlayFab set up Kongregate integration](media/tutorials/playfab-set-up-kongregate-integration.png)
 
-At ths point, if you do not receive an error message, you have configured PlayFab title integration with your **Kongregate Application** properly.
+At ths point, if you do not receive an error message, you have configured PlayFab title integration with your **Kongregate** application properly.
 
 ## Setting up a Unity project
 
