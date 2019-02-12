@@ -18,19 +18,19 @@ This tutorial guides you through the steps for logging into PlayFab using **Stea
 
 Before beginning, you should have:
 
-- A **Unity Project** with an imported PlayFab SDK and a configured title ID.
+- A **Unity** project with an imported PlayFab **SDK** and a configured title ID.
 - A **Steam Application** with:
   - The **AppID** already set up. The **AppID** is usually acquired through the [Steam Direct (Formerly Greenlight)](https://partner.steamgames.com/steamdirect) process.
   - A **Steam Publisher Web API Key**. Follow [Creating a Publisher Web API Key](https://partner.steamgames.com/doc/webapi_overview/auth#create_publisher_key) in the **Steamworks** documentation to generate a publisher key.
 - Familiarity with [Login basics and Best Practices](../../authentication/login/login-basics-best-practices.md).
 
-## Setting up a PlayFab Title
+## Setting up a PlayFab title
 
 To enable support for **Steam** authorization, PlayFab requires you to enable the **Steam** add-on.
 
 - Go to your **Game Manager** page.
 - Select the **Add-ons** menu item **(1)**.
-- In the list of available **Add-ons**, locate **Steam** and select the **Title** link **(2)**:
+- In the list of available **Add-ons**, locate **Steam** and select the title link **(2)**:
 
 ![Game Manager Add-ons tab](media/tutorials/steam-unity/game-manager-addons-tab-steam.png)  
 
@@ -46,7 +46,7 @@ This concludes setting up a PlayFab title for **Steam** integration.
 
 Start by downloading the latest release of Steamworks.NET from the [Releases page](https://github.com/rlabrecque/Steamworks.NET/releases).
 
-- Get the **Unity Package** version of the release and import it into the **Project**.
+- Get the **Unity Package** version of the release, and import it into the project.
 - Once you import the package, close **Unity**.
 - Navigate to the **Project** root folder.
 - Locate the **steam_appid.txt** file.
@@ -122,6 +122,6 @@ public class SteamScript : MonoBehaviour {
 You may test right inside the editor:
 
 - Run the scene and select the **Log In** button **(1)**.
-- The console message should appear after a moment, indicating the authentication result **(2)**.
+- The console message should appear after a moment, indicating the authentication result **Success! (2)**.
 
 ![Unity test PlayFab login with Steam](media/tutorials/steam-unity/unity-test-playfab-login-with-steam.png)

@@ -14,17 +14,16 @@ ms.localizationpriority: medium
 
 ## Accessing player details
 
-
 - To access player details, move to the sidebar menu and select [Players](../../data/playerdata/using-the-players-page.md) **(1)**.
 
-- Locate the **Player** you need and select their **ID** label **(2)**.
+- Locate the **Player** and select their **ID** label **(2)**.
 
 
 ![Game Manager - Access Player details](media/tutorials/game-manager-access-player-details.png)  
 
 ## Overview
 
-The **Player Overview** (or *details* page), is a starting point for controlling your player. A lot of other **Player** pages are available from this page (we'll list them later in this tutorial).
+The **Player Overview** (or *details* page), is a starting point for controlling your player. A lot of other player pages are available from this page (we'll list them later in this tutorial).
 
 1. The **Player ID** - Shows you the identity of the player you have selected.
 
@@ -36,7 +35,7 @@ The **Player Overview** (or *details* page), is a starting point for controlling
 
 4. Information panels contain general information about the player account.
 
-5. The **PlayFab Account Panel** offers pages for managing a player's **PlayFab** account (described later in this tutorial).
+5. The **PlayFab Account Panel** offers pages for managing a player's PlayFab account (described later in this tutorial).
 
 6. The **Accounts** panel allows **linking** to different accounts for a single player record (described later in this tutorial).
 

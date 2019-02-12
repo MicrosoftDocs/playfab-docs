@@ -12,7 +12,9 @@ ms.localizationpriority: medium
 
 # Player ban system
 
-The player ban feature allows you to restrict access to the game for certain player that break the rules. Bans can be temporary or permanent.
+The player ban feature allows you to restrict access to the game for certain player that break the rules.
+> [!NOTE]
+> Bans can be temporary or permanent.
 
 The following tutorial shows you how to utilize the ban system using the PlayFab **API** and Game Manager.
 
@@ -72,7 +74,7 @@ If everything is set correctly, you will see a new **Ban** in the table.
 
 ![Game Manager - Players - Bans - Revoke Ban](media/tutorials/game-manager-players-bans-revoke-ban.png)  
 
-- Alternatively, you may use the **Server SDK** to apply a **Ban** via code by using the snippet provided below.
+- Alternatively, you may use the **Server SDK** to apply a ban via code by using the snippet provided below.
 
 ```csharp
 public void AddBan(string playerId, uint hours) {
@@ -97,12 +99,12 @@ Bans applied via code will also be displayed in the table of bans for the target
 > [!NOTE]
 > The PlayFab server **SDK** methods provide more options, such as **IP** and **MAC** address bans.
 
-> [!NOTE]
-> You can use **CloudScript** functions as part of an automated system that may ban a player. To find out more about **CloudScript**, see our tutorial [Writing Custom CloudScript](../../automation/cloudscript/writing-custom-cloudscript.md).
-
 Each ban you apply gets an assigned ID. Consider the following **Server SDK API** methods for precise ban management:
 
 - [GetUserBans](xref:titleid.playfabapi.com.server.accountmanagement.getuserbans)
 - [RevokeAllBansForUser](xref:titleid.playfabapi.com.server.accountmanagement.revokeallbansforuser)
 - [RevokeBans](xref:titleid.playfabapi.com.server.accountmanagement.revokebans)
 - [UpdateBans](xref:titleid.playfabapi.com.server.accountmanagement.updatebans)
+
+> [!NOTE]
+> You can use **CloudScript** functions as part of an automated system that may ban a player. To find out more about **CloudScript**, see our tutorial [Writing Custom CloudScript](../../automation/cloudscript/writing-custom-cloudscript.md).

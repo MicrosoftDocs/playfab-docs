@@ -26,11 +26,11 @@ Prior to beginning, you should have:
 > [!NOTE]
 > Consult the [Running an HTTP server for testing](running-an-http-server-for-testing.md) tutorial for information on how to set one up.
 
-## Server and Domain
+## Server and domain
 
 This tutorial requires a web server in order to follow the instructions. If you do not have a registered remote web server yet, please follow our [Running an HTTP server for testing](running-an-http-server-for-testing.md) tutorial for information on how to run a local web server. Throughout this tutorial, we will assume your domain is [http://localhost/](http://localhost/).
 
-## Registering a Twitch Application
+## Registering a Twitch application
 
 Start by navigating to the [Twitch website](https://www.twitch.tv/) and make sure you are logged in.
 
@@ -47,7 +47,7 @@ At the very bottom of the page, select the **Register your application** button 
 
 ![Twitch open application registration page](media/tutorials/twitch-html5/twitch-open-application-registration.png)  
 
-A page will open that lets you configure a new **App**.
+A page will open that lets you configure a new app.
 
 - Fill in the **Name** of the **Application (1)**.
 - Enter the **Redirect URL (2)**.
@@ -59,9 +59,10 @@ A page will open that lets you configure a new **App**.
 > [!IMPORTANT]  
 > When testing using a local web server, **Twitch** allows you to use http://localhost/ as a redirect **URL**. Make sure to include the leading slash **/**. Without a leading slash, **Twitch** will fail to recognize the **localhost URL**.
 
-Once the **Application** is registered, the page will be updated and reveal the client ID for your **Application**.
+Once the application is registered, the page will be updated and reveal the client ID for your application.
 
-- Keep this client ID in a safe and easily accessible place, as it will be used later to configure your PlayFab title.
+> [!NOTE]
+> Keep this client ID in a safe and easily accessible place, as it will be used later to configure your PlayFab title.
 
 ![Twitch manage application](media/tutorials/twitch-html5/twitch-manage-application.png)  
 
@@ -160,9 +161,9 @@ Make sure to replace **TWITCH_CLIENT_ID_GOES_HERE** and **PLAYFAB_TITLE_ID_GOES_
 
 Request the following file from your server, using the domain you set up during the **Twitch Application** configuration ( **http://localhost** in our case) **(1)**.
 
-- Once the page opens, wait for the message indicating that the **Twitch SDK** was initialized **(2)**. 
+- Once the page opens, wait for the message indicating that the **Twitch SDK** was initialized **(2)**.
 - Then select the **Login with Twitch** button **(3)**.
-- Follow any **Twitch** instructions in the pop-up window. 
+- Follow any **Twitch** instructions in the pop-up window.
 - Watch the output **(4)**.
 
 > [!IMPORTANT]

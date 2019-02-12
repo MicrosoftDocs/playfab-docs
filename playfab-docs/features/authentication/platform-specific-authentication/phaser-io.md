@@ -26,7 +26,7 @@ This tutorial guides you through the procedure for setting up Phaser.io, and get
 
 ## Setting up a web server using MAMP
 
-To serve **HTML** pages to your browser you will need a web server. We use [MAMP / MAMP Pro](https://www.mamp.info/en/), but you can use whatever you are most comfortable with.
+To serve **HTML** pages to your browser you will need a web server. We use [MAMP/MAMP Pro](https://www.mamp.info/en/), but you can use whatever you are most comfortable with.
 
 To begin:
 
@@ -96,9 +96,9 @@ You should now see that Phaser.io has initialized a blank canvas (like that show
 
 ![Phaser.io initialized blank canvas](media/tutorials/phaser-io/phaser-setup-complete.png)
 
-## Adding PlayFab and Phaser Plugin
+## Adding PlayFab and Phaser plugin
 
-The PlayFab **Javascript SDK** will now auto-detect if you have **Phaser** loaded on the webpage, and inject itself into it as a **Phaser Plugin**. 
+The PlayFab **Javascript SDK** will now auto-detect if you have **Phaser** loaded on the webpage, and inject itself into it as a **Phaser** plugin.
 
 There are only two lines of code needed to make this happen:
   

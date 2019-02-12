@@ -93,12 +93,12 @@ To change a **Statistic Aggregation** method, you can use the Game Manager or th
 
 To edit a **Statistic Definition** in **Game Manager**:
 
-- [Log into PlayFab].(https://developer.playfab.com/en-us/my-games)
+- Log into PlayFab.(https://developer.playfab.com/en-us/my-games)
 - Select your **Title**.
 - Select **Leaderboards** from the menu on the left (**Statistics** and **Leaderboards** are closely related).
-- Select the existing **Statistic** you want to modify, or - 
+- Select the existing statistic you want to modify, or - 
 - Select the **New Leaderboard** button.
-  - For an existing **Statistic**, you'll have another page, with an **Edit Leaderboard** button.
+  - For an existing statistic, you'll have another page, with an **Edit Leaderboard** button.
 
 - At this point you should see the page shown below.
 
@@ -111,8 +111,8 @@ Some examples of how to use **Statistic Aggregation**:
   - Post the statistic for the session ending, and the **Min/Max Aggregation** takes care of whether or not to update.
   - These can be very useful for [resettable leaderboards](../../social/tournaments-leaderboards/using-resettable-statistics-and-leaderboards.md), as well as a [PlayStream Rule](https://playfab.com/introducing-playstream/) that grants achievements.
 
-- **Sum** could be used to save Experience Points:
-  - You post the Experience gained this battle, and it is added to the existing statistic value for the player.
+- **Sum** could be used to save experience points:
+  - You post the experience gained this battle, and it is added to the existing statistic value for the player.
 
 - **Last** allows you to manage the stat yourself:
   - Each time you post a statistic, the most recent value is used.

@@ -27,10 +27,10 @@ To access player segments:
 
 ## Overview
 
-The **Segments** page displays the **Segments** that you currently have defined, and offers basic management capabilities.
+The **Segments** page displays the segments that you currently have defined, and offers basic management capabilities.
 
-1. Use the **New Segment (1)** button to create a new **Segment**.
-2. The **Segment ID (2)** uniquely identifies the **Segment**.
+1. Use the **New Segment (1)** button to create a new segment.
+2. The **Segment ID (2)** uniquely identifies the segment.
 3. The **Segment Name (3)** identifies the player(s).
 4. The **Matching Players (4)** area displays the total number of players matching the segment filter.
 5. Using the check boxes **(5)** to the left of the screen, you can select certain segments, and **X Delete** or **> Run Task...** custom actions on the chosen segments.

@@ -33,7 +33,7 @@ The **Player Login** page contains the following information:
 
 - **Player ID** - A label that identifies the player you are inspecting.
 - **Total login attempts** - The total number of login attempts by this player.
-- **date of login attempt** - A human readable **Date** label for each login attempt.
+- **Date of login attempt** - A human readable **Date** label for each login attempt.
 - **IP address** - A label showing the **IP** address.
 - **Source** - A label that indicates where login attempt came from.
 - **Result** - Indicates whether the login attempt was successful.

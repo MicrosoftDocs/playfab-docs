@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Setting up PlayFab authentication using Universal Windows Platform
 
-This tutorial guides you through the procedure forPlayFab authentication using the **Universal Windows Platform** (**UWP**).
+This tutorial guides you through the procedure for PlayFab authentication using the **Universal Windows Platform** (**UWP**).
 
 > [!IMPORTANT]
 > This procedure serves as a very basic introduction on how you can obtain all entities and commit authentication via **Windows Hello** and PlayFab. For a more sophisticated example of **Windows Hello** and PlayFab authentication, consider our [UWPExample project](https://github.com/PlayFab/UWPExample).
@@ -24,7 +24,7 @@ This tutorial guides you through the procedure forPlayFab authentication using t
 - Be familiar with [Login basics and Best Practices](../../authentication/login/login-basics-best-practices.md).
 
 > [!NOTE]
-> it is *very important* that you are using the **Windows 10** operating system, are logged in with a verified **Microsoft Account**, and have configured an access interface such as PIN. If these requirements are *not* met, the app will fail without any useful explanation of why.
+> it is *very important* that you are using the **Windows 10** operating system, are logged in with a verified **Microsoft** account, and have configured an access interface such as **PIN**. If these requirements are *not* met, the app will fail without any useful explanation of why.
 
 ## Preparing a Visual Studio project
 
@@ -68,7 +68,7 @@ Once finished, your basic project setup is complete. In the next section we will
 
 ### App.xaml.cs  
 
-This class will just set up our PlayFab SDK by setting a proper title ID. Do not forget to replace the title ID with your own.
+This class will just set up our PlayFab **SDK** by setting a proper title ID. Do not forget to replace the title ID with your own.
 
 ```csharp
 using System;
@@ -172,7 +172,7 @@ namespace GettingStartedPlayfabUWP
 
 ### MainPage.xaml
 
-This file contains the layout for our main page. This is a super trivial layout with 2 buttons, and a text input combined in a vertically oriented grid.
+This file contains the layout for our main page. This is a *super trivial* layout with 2 buttons, and a text input combined in a vertically oriented grid.
 
 The buttons are bound to specific methods, and the textbox is accessible via its name **UsernameInput**.
 
@@ -198,7 +198,7 @@ The buttons are bound to specific methods, and the textbox is accessible via its
 
 ### MainPage.xaml.cs
 
-This is the functional class for the main page and it is the heart of the example. Please refer to the code comments, and review the different methods that are designed to walk you through PlayFab+**Hello** register and login.
+This is the functional class for the main page and it is the heart of the example. Please refer to the code comments, and review the different methods that are designed to walk you through **PlayFab+Hello** register and login.
 
 The easiest approach to start learning the code is to review the methods that are triggered by the corresponding buttons:
 
