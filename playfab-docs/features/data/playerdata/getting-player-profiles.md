@@ -44,7 +44,7 @@ void UpdateDisplayName() {
 }
 ```
 
-The response should show **Successfully logged in a player with PlayFabId: SOME_PLAYFAB_ID** followed by **The player's display name is now: UnicornTossMaster**.
+The response should show: **Successfully logged in a player with PlayFabId: SOME_PLAYFAB_ID**, followed by: **The player's display name is now: UnicornTossMaster**.
 
 ## Step 2 - Making a player profile call
 
@@ -65,7 +65,7 @@ void GetPlayerProfile(string playFabId) {
 }
 ```
 
-In the response there will be a [PlayerProfileModel](xref:titleid.playfabapi.com.server.accountmanagement.getplayerprofile#playerprofilemodel) object which will contain the display name **UnicornTossMaster** for the **Player**.
+In the response there will be a [PlayerProfileModel](xref:titleid.playfabapi.com.server.accountmanagement.getplayerprofile#playerprofilemodel) object which will contain the display name **UnicornTossMaster** for the player.
 
 ## Step 3 - Attempting to get Player Created time and Last Login time
 

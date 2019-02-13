@@ -48,7 +48,7 @@ The following example illustrates the code blocks that call these **API** method
 > [!NOTE]
 > For reference, these examples come from **Unicorn Battle**, a game we built as an example to demonstrate the PlayFab features.
 
-The AU virtual currency used below is Gold, a free currency earned by fighting monsters (See our [Currencies](../../commerce/economy/currencies.md) tutorial).
+The AU virtual currency used below is "Gold", a free currency earned by fighting monsters (See our [Currencies](../../commerce/economy/currencies.md) tutorial).
 
 Before we get started, we will be defining a few utility functions that will be used and reused in most of the examples in this guide.
 
@@ -79,8 +79,8 @@ First we must begin by defining the item in our catalog.
 
 Here are the **CatalogItem** requirements for the **Health Potion**.
 
-- **PurchaseItem** requires a positive item price (5 AU).
-- **ConsumeItem** requires the item to be **Consumable**, with a positive item count (3).
+- **PurchaseItem** requires a positive item price (**5 AU**).
+- **ConsumeItem** requires the item to be **Consumable**, with a positive item count (**3**).
 - The player making the purchase must have 5 AU available in their virtual currency balance.
 
 The code for each call is provided below.
@@ -127,7 +127,7 @@ This example also demonstrates opening the container with a key - an *optional* 
 - That the **Crystal Container** be defined as a **Container**.
 
 - That **Containers** can optionally define a **Key Item**, which is then required to unlock the **Container** - in this case, a **Crystal Key**.
-- It is highly suggested that your **Container** and any **Key** *both* be **Consumable**, with a positive use count, so that they are removed from the **Player Inventory** after use.
+- It is highly suggested that your **Container** and any **Key** *both* be **Consumable**, with a positive use count, so that they are removed from the player inventory after use.
 
 **Server code**
 

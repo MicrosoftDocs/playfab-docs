@@ -35,7 +35,7 @@ For this example, our distinctive characteristic will be a statistic, specifical
 
 Our action will be to run a **CloudScript** function. **CloudScript** is by far the most flexible trigger option, granting you full control of the player and segmentation information at the time of segment-transition.
 
-From the **Game Manager** page:
+From the **Game Manager** screen:
 
 - Navigate to your **Title**.
 - Select **Players** from the menu on the left.

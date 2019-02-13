@@ -10,7 +10,7 @@ keywords: playfab, commerce, stores, segmentation
 ms.localizationpriority: medium
 ---
 
-# Custom Stores for player segments
+# Custom stores for player segments
 
 In our [Stores and Sales](stores-and-sales.md) tutorial, we demonstrate how to set up a store and make a few items available to a player at special or alternate prices.
 
@@ -22,19 +22,19 @@ First, we need some example segments, so here are some segments that are segment
 
 ![Game Manager - Players - Segments - Example Segments](media/tutorials/game-manager-players-segments-example-segments.png)  
 
-For the next image, we will reuse the equipment store created in the [Stores and Sales](stores-and-sales.md) tutorial, and add player segmentation.
+For the next image, we will reuse the **Equipment** store created in the [Stores and Sales](stores-and-sales.md) tutorial, and add player segmentation.
 
 First, you must create each store separately, and give it an identifiable name. Each store should have content that is customized for that segment.
 
 ![Game Manager - Economy - Catalogs - Stores](media/tutorials/game-manager-economy-catalogs-stores.png)  
 
-Finally, return to the base equipment store, and fill in the **Segment Overrides** section at the bottom (This section is *only visible* if there are defined **Player Segments**).
+Finally, return to the base **Equipment** store, and fill in the **Segment Overrides** section at the bottom (This section is *only visible* if there are defined player segments).
 
 ![Game Manager - Edit Store - Segment Overrides](media/tutorials/game-manager-edit-store-segment-overrides.png)  
 
-## Best Practices for Store Segmentation
+## Best Practices for store segmentation
 
-- Store Segmentation is public information:
+- Store segmentation is public information:
   - There are many ways for player to gain information about alternate stores.
   - Players naturally transition between segments, and they'll see those changes when they transition.
   - Players discuss content on forums, community sites, wikis, etc.
@@ -46,7 +46,7 @@ Finally, return to the base equipment store, and fill in the **Segment Overrides
     - If prices go up or down when they transition segments.
     - If prices described on wikis are different than their own.
 
-  - The *only* exception to the pricing rule would be *first time* purchases:
+  - The only exception to the pricing rule would be *first time* purchases:
     - You must secure the client **API** methods with our [API Access Policy](../../config/gamemanager/api-access-policy.md) to prevent multiple purchases, or make repurchasing less meaningful through game design.
 
 - Content should be relevant to the segment:

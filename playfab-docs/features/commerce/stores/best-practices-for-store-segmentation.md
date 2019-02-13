@@ -24,10 +24,10 @@ ms.localizationpriority: medium
     - Prices go up or down when they transition segments.
     - Prices described on wikis are different than their own.
 
-  - The only exception to the pricing rule would be first time purchases.
+  - The only exception to the pricing rule would be *first time* purchases.
     - You must secure the client **API** methods with our [API Access Policy](../../config/gamemanager/api-access-policy.md) to prevent multiple purchases, or make repurchasing less meaningful through game design.
 
 - Content should be relevant to the segment.
   - Whales are willing to spend large amounts of real money, and are therefor likely to buy more expensive bundles, if the value is worthwhile.
-  - First time buyers may be given an option which is a particularly good deal, but can only be (usefully) obtained once.
+  - First time buyers may be given an option which is a particularly good deal, but can *only* be (usefully) obtained once.
   - End game players may only be interested in a specific subset of items.

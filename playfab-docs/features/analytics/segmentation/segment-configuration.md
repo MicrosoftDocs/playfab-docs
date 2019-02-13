@@ -18,7 +18,7 @@ Each segment allows you to define useful or interesting groups of players, and p
 
 ## How to create and access a segment
 
-To access **Segment Configuration**:
+To access segment configuration:
 
 - Select **Players** from the menu on the left.
 - Select the **Segments** tab **(2)**.
@@ -72,7 +72,7 @@ When a segment is defined, you have a variety of action options to run when a pl
 
 Utilize the second parameter, *Context* in your **CloudScript** handler to identify the player, and segment transition. Afterwards, perform any action you wish on the player, such as granting inventory items, virtual currency, player data, or statistics.
 
-In this particular case, *segment configuration requires 4 simple steps:
+In this particular case, segment configuration requires 4 simple steps:
 
 1. Assign an appropriate name for the segment (it's a good idea to use a name that incorporates your *defining characteristic* - **Canada Players**).
 2. Assign conditions that a player has to meet to enter the segment. In this case we want a *Country* filter with the strict value: *Canada*.
@@ -124,10 +124,10 @@ Each *action* needs a *trigger* in order to run. Some actions are run manually, 
 
 A trigger defines the *context* of the action. For example, a *player entered segment* trigger passes you the context containing a reference to the player. The general workflow for the **Action** panel is:
 
-1. Select an **Event condition**, also known as a **Trigger**.
-2. Select an **Action type**. **PlayFab** offers a variety of **Actions**. If, at any point, you need more a flexible action, consider a **CloudScript Action**. This **Action** type allows you to run your own **CloudScript** function.
-3. **Configure the Action** (specific for each **Action** type).
-4. **Remove action** from the **Trigger**.
+1. Select an **Event condition**, also known as a *Trigger*.
+2. Select an **Action** type. PlayFab offers a variety of **Actions**. If, at any point, you need more a flexible action, consider a **CloudScript Action**. This **Action** type allows you to run your own **CloudScript** function.
+3. Configure the action (specific for each **Action** type).
+4. **Remove** the action from the **Trigger**.
 5. **Add Action** to the **Trigger**.
 
 ![Game Manager - Actions panel](media/tutorials/game-manager-actions-panel.png)  
@@ -144,7 +144,7 @@ It is possible to look up what segments a player belongs to by means of the **Pl
 
 On the **Player Segments** page, note the following:
 
-1. The **Player ID** label identifies the **Player** you currently inspecting.
-2. The **Segment** table contains a list of all **Segments** a **Player** belongs to. Select the **Segment Name** label to configure a **Segment**.
+1. The **Player ID** label identifies the player you currently inspecting.
+2. The **Segment** table contains a list of all segments a player belongs to. Select the **Segment name** label to configure a segment.
 
 ![Game Manager - Players Segments Page](media/tutorials/game-manager-players-segments-page.png)  

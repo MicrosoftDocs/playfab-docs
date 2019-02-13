@@ -13,20 +13,20 @@ ms.localizationpriority: medium
 # Player data quickstart
 
 > [!NOTE] 
-> In the PlayFab **APIs**, the function names utilize the term **UserData**. In the Game Manager, this concept is described as player data. They are identical, and interchangeable.
+> In the PlayFab **APIs**, the function names utilize the term **UserData**. In the **Game Manager**, this concept is described as **Player Data**. They are identical, and interchangeable.
 
-This quickstart describes how to create and use player data. Player data is information that applies to an individual player or player group (shared data) and is stored as Key/Value Pairs (KVPs) by **PlayFab**.
+This quickstart describes how to create and use player data. Player data is information that applies to an individual player or player group (shared data) and is stored as Key/Value Pairs (KVPs) by PlayFab.
 
 This topic covers client-**API** calls, which are safe to call from any process or context. It also covers server-**API** calls, which should *only* be made from a dedicated server process you control, or a carefully secured **CloudScript** call.
 
-Server-**APIs** require your Dev secret key, which you should never provide-to or publish-with your client.
+Server-**APIs** require your dev secret key, which you should never provide-to or publish-with your client.
 
 **About the Code Examples:**
 
 - The **C# Code Examples** shown in this quickstart correspond to using the PlayFab **Unity SDK**.
 - Use the client **APIs** [UpdateUserData](xref:titleid.playfabapi.com.client.playerdatamanagement.updateuserdata) to create, update, or delete and [GetUserData](xref:titleid.playfabapi.com.client.playerdatamanagement.getuserdata) to read data for the player.
-- Use the server **API** [UpdateUserReadOnlyData](ref:titleid.playfabapi.com.server.playerdatamanagement.updateuserreadonlydata) to Create, Update, or Delete and the client **API** [GetUserReadOnlyData](xref:titleid.playfabapi.com.client.playerdatamanagement.getuserreadonlydata) to read title-specific data for the player. This data is visible to the player, but can only be modified by the server.
-- Use the server **APIs** [UpdateUserInternalData](xref:titleid.playfabapi.com.server.playerdatamanagement.updateuserinternaldata) to Create, Update, or Delete and [GetUserInternalData](xref:titleid.playfabapi.com.server.playerdatamanagement.getuserinternaldata) to read title-specific data for the player. This data is server-only, and cannot be seen by the client.
+- Use the server **API** [UpdateUserReadOnlyData](ref:titleid.playfabapi.com.server.playerdatamanagement.updateuserreadonlydata) to create, update, or delete and the client **API** [GetUserReadOnlyData](xref:titleid.playfabapi.com.client.playerdatamanagement.getuserreadonlydata) to read title-specific data for the player. This data is visible to the player, but can only be modified by the server.
+- Use the server **APIs** [UpdateUserInternalData](xref:titleid.playfabapi.com.server.playerdatamanagement.updateuserinternaldata) to create, update, or delete and [GetUserInternalData](xref:titleid.playfabapi.com.server.playerdatamanagement.getuserinternaldata) to read title-specific data for the player. This data is server-only, and cannot be seen by the client.
 
 ## Player data in Game Manager
 
@@ -43,7 +43,7 @@ This is data that the client can Create, Read, Update, or Delete (CRUD). To set 
 
 ### C# code example
 
-The following **C#** code example creates (or updates, if the **KVPs** already exist) the **KVPs Ancestor** with the value **Arthur** and **Successor** with the value **Fred**.
+The following **C#** code example creates (or updates, if the KVPs already exist) the KVPs **Ancestor** with the value **Arthur**, and **Successor** with the value **Fred**.
 
 ```csharp
 void SetUserData() {
@@ -67,7 +67,7 @@ To get player data, use the [GetUserData](xref:titleid.playfabapi.com.client.pla
 
 ### C# code example
 
-The following **C#** code example gets the values of all of the player data **KVPs**.
+The following **C#** code example gets the values of all of the player data KVPs.
 
 ```csharp
 void GetUserData() {
@@ -87,11 +87,11 @@ void GetUserData() {
 
 ## Setting read-only player data
 
-This is data that the server can modify, but the client can only read. To set read-only **KVPs**, you must call the [UpdateUserReadOnlyData](ref:titleid.playfabapi.com.server.playerdatamanagement.updateuserreadonlydata) **API** from a server process.
+This is data that the server can modify, but the client can only read. To set read-only KVPs, you must call the [UpdateUserReadOnlyData](ref:titleid.playfabapi.com.server.playerdatamanagement.updateuserreadonlydata) **API** from a server process.
 
 ### C# code example
 
-The following **C#** code example uses the PlayFab server **API** to create (or update, if the **KVPs** already exist) the **KVPs** with the key named **Father**, with the value **Fred**,  **Mother** with the value **Alice**, **Sister** with the value **Lucy**, and **Brother** with the value **Doug**.
+The following **C#** code example uses the PlayFab server **API** to create (or update, if the KVPs already exist) the KVPs with the key named **Father**, with the value **Fred**,  **Mother** with the value **Alice**, **Sister** with the value **Lucy**, and **Brother** with the value **Doug**.
 
 ```csharp
 public void UpdateUserReadOnlyData() {
@@ -113,7 +113,7 @@ public void UpdateUserReadOnlyData() {
 }
 ```
 
-## Getting Read-only player data
+## Getting read-only player data
 
 To get read-only player data, use the [GetUserReadOnlyData](xref:titleid.playfabapi.com.client.playerdatamanagement.getuserreadonlydata) method.
 
@@ -145,7 +145,7 @@ This is data that the client cannot access. To set internal player data, use the
 
 ### C# code example
 
-The following **C#** code example uses the PlayFab server **API** to create (or update, if a **Key Value** already exists) the **KVP** with the **Key: Rank** and **Value: Sargent**.
+The following **C#** code example uses the PlayFab server **API** to create (or update, if a key value already exists) the KVP with the **Key: Rank** and **Value: Sargent**.
 
 ```csharp
 public void UpdateUserInternalData() {
@@ -170,7 +170,7 @@ To get internal player data, use the [GetUserInternalData](xref:titleid.playfaba
 
 ### C# code example
 
-The following **C#** code example retrieves the **KVPs** of the player internal data.
+The following **C#** code example retrieves the KVPs of the player internal data.
 
 ```csharp
 public void GetUserInternalData() {
@@ -246,7 +246,7 @@ public void CloudIncrement() {
 
 Since this example updates internal player data, you will need to call [GetUserInternalData](xref:titleid.playfabapi.com.server.playerdatamanagement.getuserinternaldata) again from your server to see the results.
 
-Also note that we do not allow *any* client inputs from Args directly into a server-**API** call. Be sure to sanitize the client-inputs *first*, if you attempt this.
+Also note that we do not allow *any* client inputs from args directly into a server-**API** call. Be sure to sanitize the client-inputs *first*, if you attempt this.
 
 ### See Also
 

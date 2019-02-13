@@ -12,8 +12,8 @@ ms.localizationpriority: medium
 
 # Using player publisher data
 
-## Player Data vs Player Publisher Data
-[Player Data](quickstart.md) is information about a player, specific to a game title. It should be used for title-specific information, such as saving your player's position in a dungeon, or other game-specific data.
+## Player data vs player publisher data
+[Player data](quickstart.md) is information about a player, specific to a game title. It should be used for title-specific information, such as saving your player's position in a dungeon, or other game-specific data.
 
 Player publisher data is data associated with the player account, as opposed to the player account *plus* the title. It is used to save information about a player relevant to all titles in your studio (which may also contain title-specific information, for purposes of cross-title rewards).
 
@@ -22,7 +22,7 @@ All titles within a studio in PlayFab share a publisher ID by default, and that 
 If you need to have titles in a studio that have different publisher IDs, or titles in different studios that share the same publisher ID, you can open a ticket in the [PlayFab community forums](https://community.playfab.com/) and our **Developer Success** team will help you out.
 
 > [!NOTE]
-> Please don't confuse player publisher data with [Publisher Data](../../config/titledata/using-publisher-data.md) which is Key/Value Pair data shared by all titles (it is *not* per-player).
+> Please don't confuse player publisher data with [Publisher data](../../config/titledata/using-publisher-data.md) which is Key/Value Pair data shared by all titles (it is *not* per-player).
 
 Player publisher data usage is nearly identical to player data usage. They are *both* dictionaries mapping a string to a **JSON** blob (or other arbitrary string value).
 
@@ -141,4 +141,4 @@ The code blocks represent these steps:
 
 Player publisher data and player data are structurally identical.
 
-Player data should be title-specific, while player publisher data should *only* contain information relevant across all of your titles.
+Player data should be *title-specific*, while player publisher data should *only* contain information relevant across all of your titles.
