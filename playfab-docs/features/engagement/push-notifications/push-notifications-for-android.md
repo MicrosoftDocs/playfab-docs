@@ -56,7 +56,7 @@ There are three **Google** websites that you must use and synchronize. In **Goog
 
 ## Using the API key
 
-- Provide your **API Key** in one of two ways:
+- Provide your **API** key in one of two ways:
   1. Input your key directly into the **Game Manager UI**: **Settings** (for your **Title**) > **Push Notifications** > **Android**.
   2. Or call [SetupPushNotification](xref:titleid.playfabapi.com.admin.title-widedatamanagement.setuppushnotification) using **Postman** or a **Unity** project with **Server API** methods enabled.
   
@@ -87,10 +87,10 @@ There are three **Google** websites that you must use and synchronize. In **Goog
 - Import the [Unity PlayFab SDK](https://api.playfab.com/downloads/unity-v2ap) package.
 - Follow the [FCM Unity](https://firebase.google.com/docs/cloud-messaging/unity/client) guide to install **FCM** messaging, and set up a project for push notifications.
   - Once finished, you can continue with this guide to receive messages from PlayFab.
-  - We will give you a complete **FCM**-ready monoBehaviour script in the following example, which combines **FCM** and PlayFab.
+  - We will give you a complete **FCM**-ready **monoBehaviour** script in the following example, which combines **FCM** and PlayFab.
 
-- In the **FCM guide**, you created a monobehavior that set up the **Firebase** plugin.
-  - You can continue using that monobehavior, or replace it with the one in the following example.
+- In the **FCM guide**, you created a **monobehavior** script that set up the **Firebase** plugin.
+  - You can continue using that **monobehavior** script, or replace it with the one in the example that follows.
 
 ### Setting up your first Push Notification
 
@@ -195,7 +195,7 @@ Build and run your **Unity** project on a device. If you receive a push notifica
 
 > [!NOTE]
 > **PlayFabSettings.TitleId = TITLE_ID**. 
-> You must set your own **TitleId**. This example will not work if you don't update this **TitleId**, because our **Title** is registered with our **Firebase Keys** and settings, *not yours*. You can do so by un-commenting this line and replacing **TITLE_ID** with your **titleId**, or you can choose your **Title** from the optional **Editor Extensions** plugin mentioned in the previous section.
+> You must set your own **TitleId**. This example will not work if you don't update this **TitleId**, because our title is registered with our **Firebase Keys** and settings, *not yours*. You can do so by un-commenting this line and replacing **TITLE_ID** with your **titleId**, or you can choose your title from the optional **Editor Extensions** plugin mentioned in the previous section.
 
 ### Troubleshooting Android
 
@@ -206,7 +206,7 @@ Build and run your **Unity** project on a device. If you receive a push notifica
   - The **OnTokenReceived** function in the example should be called, and should have a valid token.
   - If it is *not* called, your **Firebase** plugin is *not* set up correctly, and you should review the **Firebase Documentation** to find out why, or contact **Firebase Support**.
 
-- Ensure your **titleId** is set to a title that you own, and that it has been registered with the server **API-Key** from your **Firebase** project.
+- Ensure your **titleId** is set to a title that you own, and that it has been registered with the server **API** key from your **Firebase** project.
 
 ### Advanced Features
 
@@ -216,7 +216,7 @@ In **server.[SendPushNotification](xref:titleid.playfabapi.com.server.accountman
  Debug.Log("PlayFab: Received a message with data:");
 ```
 
-You can customize your **Client** receiver to utilize that data however you like. **CustomData** is not displayed to the **Player**, so it can be used to deliver custom game information to your **Client**, or to locally schedule another future notification using the **FCM** plugin.
+You can customize your client receiver to utilize that data however you like. **CustomData** is not displayed to the player, so it can be used to deliver custom game information to your client, or to locally schedule another future notification using the **FCM** plugin.
 
 You can also use **[request.Package](xref:titleid.playfabapi.com.server.accountmanagement.sendpushnotification#pushnotificationpackage).CustomData** or request **[AdvancedPlatformDelivery](xref:titleid.playfabapi.com.server.accountmanagement.sendpushnotification#advancedpushplatformmsg)** to deliver to many 3rd party plugins. 
 
@@ -229,6 +229,6 @@ For help, example bugs, and related questions, drop us a line in our [Forums](ht
 
 Currently, we only support our services for the standard flow described in this document. If you team is looking for additional functionality with other common push services or plugins, please let us know! We love getting feedback from our developer community.
 
-For documentation on the **Push** payload via **Amazon SNS**:
+For documentation on the push payload via **Amazon SNS**:
 
 - [Amazon SNS Message & JSON Formats](https://docs.aws.amazon.com/sns/latest/dg/json-formats.html)

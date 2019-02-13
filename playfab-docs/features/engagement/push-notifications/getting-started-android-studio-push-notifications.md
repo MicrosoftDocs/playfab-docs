@@ -21,7 +21,7 @@ Push notifications require a configuration in several systems. Before getting st
 1. **Google Play Services**
 2. **Firebase Cloud Messaging Service**s (**FCM**, built on top of the old **Google Cloud Messaging**.)
 3. **PlayFab Services**
-4. **Client Application**
+4. **Client Applications**
 
 **Google Play Services** identifies your page on the play market using a package name.
 
@@ -29,11 +29,11 @@ An example of this would be: **com.bob.games.matchthree**.
 
 When registered in **Google Play**, the package name becomes a unique application ID and serves many purposes, from installing through play store to preventing impersonation.
 
-**Firebase** and its **Cloud Messaging Services** (**FCM**) offer you a cloud-based system to send, direct, and deliver your push notifications.
+**Firebase Cloud Messaging** (**FCM**) services offer you a cloud-based system to send, direct, and deliver your push notifications.
 
-It also allows other services (like PlayFab) to send push notifications on your behalf using the **FCM Server Key**.
+It also allows other services (like PlayFab) to send push notifications on your behalf using the **FCM** server key.
 
-PlayFab Services then uses the **FCM Server Key** to send push notifications to your clients.
+PlayFab Services then uses the **FCM** server key to send push notifications to your clients.
 
 Finally, your client application may receive notifications and process them as needed.
 
@@ -50,7 +50,7 @@ As a result, we need to set up *4 different systems*. This tutorial is split int
 
 ## Scenario
 
-In this section of our tutorial, we will be assembling an application called **Foo PlayFab App**. It is an **Android App** that has the following functions:
+In this section of our tutorial, we will be assembling an application called the **Foo PlayFab App**. It is an **Android** app that has the following functions:
 
 - It signs into PlayFab using an **Android Device ID**.
 - It receives push notifications from PlayFab.
@@ -97,7 +97,7 @@ Step 2 allows you to download a settings file called **google-services.json**. I
 3. The final step offers information on how to set up your build process to wire up the **Firebase** and **Google Play SDKs**.
 
 > [!Note]
-> You may ignore this information, as we will be using an automated tool built into the **Android Studio** that performs this setup automatically.
+> You may ignore this information, as we will be using an automated tool built into the **Android** studio that performs this setup automatically.
 
 - Select the **Finish** button to proceed.
 
@@ -120,7 +120,7 @@ Step 2 allows you to download a settings file called **google-services.json**. I
 
 At this point, we have done everything we need in **Firebase** to enable push notifications.
 
-### Chapter 2: Configuring Google Play Console
+### Chapter 2: Configuring the Google Play console
 
 When your app is ready, you will most likely create a **Google Console Project** to maintain a product **Play Store** page. Let's go though the process of creating a **GooglePlay Project** and linking it to the **Firebase Project**.
 
@@ -160,7 +160,7 @@ To link the **Sender ID**:
 
 At this point, the **Google Play Console Project** is successfully linked to the **Firebase Project**.
 
-### Chapter 3: Configuring PlayFab title
+### Chapter 3: Configuring the PlayFab title
 
 The purpose of this Chapter is to show you how to configure PlayFab Services, so that it can send push notifications to the player on your behalf.
 
@@ -171,7 +171,7 @@ The purpose of this Chapter is to show you how to configure PlayFab Services, so
 
 ![PlayFab - Push Notifications - Android settings](../media/tutorials/playfab-push-notifications-android-settings.png)
 
-- You will be asked for the **FCM Server Key**.
+- You will be asked for the **FCM** server key.
 
 - Copy the one you received through the **Firebase** console, as shown in the example provided below.
 
@@ -179,7 +179,7 @@ The purpose of this Chapter is to show you how to configure PlayFab Services, so
 
 - If everything is correct, you will be presented with a page that shows **Push Notifications** as wired and **Active (1)**.
 
-- Now you must verify that the **Title** is using the newest **FCM** architecture. To do this, select the **Upgrade Push Notifications (2)** button.
+- Now you must verify that the title is using the newest **FCM** architecture. To do this, select the **Upgrade Push Notifications (2)** button.
 
 ![PlayFab - Push Notifications - Upgrade Push Notifications](../media/tutorials/playfab-upgrade-push-notifications.png)
 
@@ -252,7 +252,7 @@ The **Firebase Assistant** will open on the right side of the window.
 - Select **Accept Changes (2)** to grant the changes.
 
   > [!NOTE]
-  > Unfortunately, the **dependencies that are added automatically by the Gradle sync process (3)** are incorrect and will report failure!
+  > Unfortunately, the dependencies that are added automatically by the **Gradle** sync process (**3**) are incorrect and will report failure!
 
 - To set up the dependencies correctly, replace the auto-added sentences with the following:
 
@@ -285,10 +285,10 @@ Once that process is complete:
 
 Now we can start implementing code for receiving and handling notifications. We are going to modify (and create if needed) 4 files:
 
-1. app/src/main/AndroidManifest.xml
-2. app/src/main/java/..packagePath../MainActivity.java
-3. app/src/main/java/..packagePath../FooAppFirebaseInstanceIdService.java
-4. app/src/main/java/..packagePath../FooAppFirebaseMessagingService.java
+1. **app/src/main/AndroidManifest.xml**
+2. **app/src/main/java/..packagePath../MainActivity.java**
+3. **app/src/main/java/..packagePath../FooAppFirebaseInstanceIdService.java**
+4. **app/src/main/java/..packagePath../FooAppFirebaseMessagingService.java**
 
 > [!NOTE]
 > The current implementation is crafted to be as short as possible, just to quickly test the notifications. Consider [FCM Guides](https://firebase.google.com/docs/cloud-messaging/concept-options) for high-quality best practices and more complex implementation examples.
@@ -340,7 +340,7 @@ In the following code, replace any **MY_PACKAGE_IDENTIFIER** placeholders with y
 The following placeholders in the code should be replaced according to your scenario.
 
 - **PLAYFAB_TITLE_ID**
-  - Use the **ID** for your **Title** that you received in **PlayFab Game Manager**.
+  - Use the ID for your title that you received in PlayFab Game Manager.
 
 - **PACKAGE_IDENTIFIER**
   - Use the **Java package identifier** that matches your setup.
@@ -538,6 +538,6 @@ This will open a **Send Push Notification** page for that **Player**.
 
 ![Android App - Receive PlayFab Push Notification](../media/tutorials/android-app-receive-playfab-push-notification.png)
 
-If your message *arrives*, messages are successfully being delivered into your application. 
+If your message arrives, messages are successfully being delivered into your application.
 
 At this point you have successfully integrated. You may use **FooAppFirebaseMessagingService** to handle the incoming message while your application is actually running.

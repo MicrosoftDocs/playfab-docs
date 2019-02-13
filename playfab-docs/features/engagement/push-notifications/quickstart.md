@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 Push notifications from PlayFab are enabled by a linkage of three major systems:
 
-1. The **Player’s device OS** (**Android**, **iOS**, etc.)
+1. The player’s device **OS** (**Android**, **iOS**, etc.)
 2. The vendor-specific channel (**Google**, **Apple**, etc.)
 3. Cross-platform message routing (PlayFab via **Amazon Simple Notification Service** [**SNS**]).
 
@@ -143,7 +143,7 @@ handlers.ChallengePlayer = function (args) {
 }
 ```
 
-## Push Notification Usage
+## Push notification usage
 
 Having the ability to use push notifications is an awesome power. When *abused*, however, it can cause users to opt out of future notifications or even *leave a game entirely*.
 
@@ -154,13 +154,13 @@ Push notifications are a *fire and forget* message protocol which does not guara
 > [!NOTE]
 > Remember that there is *no guarantee* that your players will receive, open, or engage with your message. Given that caveat, it is a good practice to use messages as *bonus* functionality, rather than as a critical part of your gameplay loop.
 
-For **iOS** platforms, Apps are given a one-time dialog prompt from the OS, allowing the user to determine the status of push notifications. After the user has made their initial selection, this setting will persist until:
+For **iOS** platforms, apps are given a one-time dialog prompt from the OS, allowing the user to determine the status of push notifications. After the user has made their initial selection, this setting will persist until:
 
 - The App is updated or reinstalled.
 
 - The user makes changes to the settings from their phone’s settings menu.
 
-For **Android Apps**, notifications are enabled by default, and can be turned on and off at will from the client.
+For **Android** apps, notifications are enabled by default, and can be turned on and off at will from the client.
 
 > [!TIP]
 > It is a good practice to re-initialize your notification listeners with every session.

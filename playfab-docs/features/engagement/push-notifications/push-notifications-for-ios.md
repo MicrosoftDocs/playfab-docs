@@ -10,7 +10,7 @@ keywords: playfab, engagement, push notification, ios
 ms.localizationpriority: medium
 ---
 
-# Push Notifications for iOS
+# Push notifications for iOS
 
 ## Prerequisites
 
@@ -61,7 +61,7 @@ Once the **JSON** is generated, use it to execute a call to **SetupPushNotificat
 
 3. Congratulations! You have now configured your title’s **iOS** messaging channel.
 
-## Registering your iOS Client for Push
+## Registering your iOS Client for push
 
 For **iOS**, you must rely on the default behavior of how **iOS** handles push notifications, as PlayFab does not offer a native implementation on **Unity** at this time.
 
@@ -79,7 +79,7 @@ Alternatively, notifications received while the game is the active app will be r
 UnityEngine.iOS.NotificationServices.RegisterForNotifications(UnityEngine.iOS.NotificationType.Alert | UnityEngine.iOS.NotificationType.Badge | UnityEngine.iOS.NotificationType.Sound, true);
 ```
 
-- At this point, if the user has opted in for notifications, we can call the **PlayFab API** [RegisterForIOSPushNotification](xref:titleid.playfabapi.com.client.platformspecificmethods.registerforiospushnotification).
+- At this point, if the user has opted in for notifications, we can call the PlayFab **API** [RegisterForIOSPushNotification](xref:titleid.playfabapi.com.client.platformspecificmethods.registerforiospushnotification).
 
 ```csharp
 byte[] token = UnityEngine.iOS.NotificationServices.deviceToken;

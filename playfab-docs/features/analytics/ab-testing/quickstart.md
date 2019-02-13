@@ -16,7 +16,9 @@ This quickstart explains how to create A/B tests with player buckets.
 
 A/B tests allow you to use the buckets as [Player Segments](../segmentation/index.md). Unlike [player segments](../segmentation/index.md), however, A/B buckets distribute players randomly.
 
-A/B tests buckets may then be used in some of the features, where you would normally use player segments. For an example of this, see our tutorial [A/B Testing with Stores and A/B Test Buckets](ab-testing-with-stores-and-test-buckets.md).
+A/B tests buckets may then be used in some of the features, where you would normally use player segments.
+
+For an example of this, see our tutorial [A/B Testing with Stores and A/B Test Buckets](ab-testing-with-stores-and-test-buckets.md).
 
 ## Creating an A/B test
 
@@ -33,7 +35,7 @@ A new **A/B Test** page will open. Keep in mind that once created, an **A/B Test
 - Fill in the **A/B Test Name (1)**.
 - Set the number of **Player Groups** (**Buckets**) **(2)**.
 - For each **Bucket** you define a **Name** and a percentage of **Players** that belong to the **Bucket (3)**.
-- Select the **Save A/B Test** button **(4)** to submit the **Test**.
+- Select the **Save A/B Test** button **(4)** to submit the test.
 
 The workflow is illustrated in the following picture.
 
@@ -45,7 +47,7 @@ The **A/B Testing** page will open and a newly created **Test** will appear in t
 
 ## Links
 
-To dive deeper into **A/B testing**, read the following tutorials:
+To dive deeper into A/B testing, read the following tutorials:
 
 - [A/B Testing with Stores and test buckets](ab-testing-with-stores-and-test-buckets.md)
 - [A/B Testing with Title data](ab-testing-with-title-data.md)  

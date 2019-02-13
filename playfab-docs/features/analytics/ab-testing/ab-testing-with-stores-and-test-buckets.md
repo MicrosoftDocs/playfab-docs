@@ -12,12 +12,12 @@ ms.localizationpriority: medium
 
 # A/B testing with stores and test buckets
 
-In our [Stores and Sales](../../commerce/stores/stores-and-sales.md) tutorial, we demonstrate how to set up a store and make a few items available to a player at special or alternate prices. In our [A/B Testing Quickstart](quickstart.md), we demonstrate how to create **A/B** tests and form player
+In our [Stores and Sales](../../commerce/stores/stores-and-sales.md) tutorial, we demonstrate how to set up a store and make a few items available to a player at special or alternate prices. In our [A/B Testing quickstart](quickstart.md), we demonstrate how to create **A/B** tests and form player
 buckets for random, percentage-based user distribution.
 
 This tutorial lets you combine these features, and produce several versions of the store available to different A/B testing groups (buckets).
 
-We first define an A/B test. In this case we define a test called store A/B Testing which splits users into 3 groups. The first group (control) contains 34% of all the players. The other 2 test groups each contain 33% of all players.
+We first define an A/B test. In this case we define a test called **Store A/B Testing** which splits users into 3 groups. The first group (control) contains 34% of all the players. The other 2 test groups each contain 33% of all players.
 
 ![Game Manager - New A/B Test](media/tutorials/game-manager-new-ab-test.png)  
 
