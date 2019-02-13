@@ -635,7 +635,7 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>Trading</h3>
-                                                <p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/social/trading/'>Overview</a></p><p><a href='/gaming/playfab/features/social/trading/quickstart'>Quickstart</a></p>
+                                                <p style='color: #7f7f7f'>Trading is a set of preview APIs that allow you to facilitate the trading of Virtual Items between players.</p><p><a href='/gaming/playfab/features/social/trading/'>Overview</a></p><p><a href='/gaming/playfab/features/social/trading/quickstart'>Quickstart</a></p>
                                             </div>
                                         </div>
                                     </div>
