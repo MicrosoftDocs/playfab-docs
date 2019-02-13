@@ -719,7 +719,7 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>Servers</h3>
-                                                <p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/multiplayer/servers/'>Overview</a></p><p><a href='/gaming/playfab/features/multiplayer/servers/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/multiplayer/servers/tutorials'>Tutorials</a></p>
+                                                <p style='color: #7f7f7f'>PlayFab's multiplayer server hosting service allows you to operate a dynamically scaling pool of custom game servers in Azure.</p><p><a href='/gaming/playfab/features/multiplayer/servers/'>Overview</a></p><p><a href='/gaming/playfab/features/multiplayer/servers/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/multiplayer/servers/tutorials'>Tutorials</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -736,7 +736,7 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>Matchmaking</h3>
-                                                <p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/multiplayer/matchmaking/'>Overview</a></p><p><a href='/gaming/playfab/features/multiplayer/matchmaking/quickstart-unity'>Quickstart</a></p>
+                                                <p style='color: #7f7f7f'>Use the power of Xbox Live's SmartMatch to build great anonymous matchmaking into your game.</p><p><a href='/gaming/playfab/features/multiplayer/matchmaking/'>Overview</a></p><p><a href='/gaming/playfab/features/multiplayer/matchmaking/quickstart-unity'>Quickstart</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -753,7 +753,7 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>Photon</h3>
-                                                <p style='color: #7f7f7f'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p><a href='/gaming/playfab/features/multiplayer/photon/'>Overview</a></p><p><a href='/gaming/playfab/features/multiplayer/photon/quickstart'>Quickstart</a></p>
+                                                <p style='color: #7f7f7f'>Photon is a 3rd party partner integrated with PlayFab that provides peer-to-peer networking. Currently, PlayFab offers the following Photon integrations: authenticate Photon players with PlayFab and listen for room events using PlayFab CloudScript callbacks.</p><p><a href='/gaming/playfab/features/multiplayer/photon/'>Overview</a></p><p><a href='/gaming/playfab/features/multiplayer/photon/quickstart'>Quickstart</a></p>
                                             </div>
                                         </div>
                                     </div>
