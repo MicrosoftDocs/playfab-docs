@@ -38,7 +38,7 @@ There are three key meters used to bill additional Parties utilization:
 
 | SKU | $/player-minute connected to a network |
 | --- | --- |
-| Party Connectivity | $0.0001 |
+| Party Connectivity | $0.00005 |
 
 ## Party Voice
 
