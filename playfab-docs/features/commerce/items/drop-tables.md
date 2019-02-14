@@ -93,7 +93,7 @@ Our other categorization is by rarity, so we'll create an alternate set of table
 
 ![Game Manager - Drop Table - Edit Common Equipment](media/tutorials/game-manager-drop-table-edit-common-equipment.png)  
 
-## Using Drop Tables
+## Using drop tables
 
 You can access drop tables directly by using one of the two server **API** methods:
 

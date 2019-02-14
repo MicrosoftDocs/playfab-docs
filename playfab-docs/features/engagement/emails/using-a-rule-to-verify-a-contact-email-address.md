@@ -25,7 +25,7 @@ This tutorial walks you through the steps for creating a rule that sends an veri
 > You can use Gmail for testing, but with Gmail you are limited to 2,000 emails per day.
 
 - Basic knowledge of how to create a player will be necessary since there will need to be players with a username and password before calling account recovery logic.
-- Read the [Game Manager Quickstart](../../config/gamemanager/quickstart.md) if you are unfamiliar with the Game Manager as it is the place where email templates are created.
+- Read the [Game Manager quickstart](../../config/gamemanager/quickstart.md) if you are unfamiliar with the Game Manager as it is the place where email templates are created.
 - Knowledge of how to work with player profiles will be necessary to confirm that emails will be necessary for checking that a contact email has been added to a player's profile. Please read up on how to get a player’s profile in the [Getting Player Profiles](../../data/playerdata/getting-player-profiles.md) tutorial and make sure that under the **Client Profile Options** on your **Title** you allow **Contact email addresses**.
 - Creating a rule will be necessary in this tutorial it is a good idea to read up on how [Rules](../../automation/actions-rules/quickstart.md) work.
 
@@ -52,8 +52,8 @@ Now add a **New Email Template**, filling in the fields as follows and leaving t
 <p>Please click <a href="$ConfirmationUrl$">here</a> confirm your email. Thanks!</p>
 ```
 
-- **From Name**: The **Name** you want to show in the **From** field in the email.
-- **From Email Address**:  The **Email Address** you want to show in the **From** field in the email. This must be an email domain that the **SMTP** server enables you to send emails from.
+- **From Name**: The name you want to show in the **From** field in the email.
+- **From Email Address**:  The email address you want to show in the **From** field in the email. This must be an email domain that the **SMTP** server enables you to send emails from.
 
   > [!NOTE]
   > Some email servers, like Gmail, will ignore this field and will send from the account set up with the **SMTP** server.
@@ -159,7 +159,7 @@ You can also make a call to [GetPlayerProfile](xref:titleid.playfabapi.com.clien
 
 Finally, we can check that the account recovery email was sent.
 
-The first thing you can do is to go to the the **Player's PlayStream**. In **Game Manager**,:
+The first thing you can do is to go to the the player's **PlayStream** in **Game Manager**:
 
 - Select **Players** in the menu to the left.
 - On the **Players** Tab,  go to the **PlayStream** area.
@@ -211,7 +211,7 @@ When the player selects that **URL**, three things happen:
 
     - Go ahead and select the **URL** found in the email.
     - You will be taken to the **example.com** website.
-    - View your player profile using the Game Manager.
+    - View your **Player Profile** using the **Game Manager**.
     - You will see that the **Verification status** has changed.
 
 ![Game Manager - Player Profile - Contact email](media/tutorials/game-manager-player-profile-contact-email-verification-confirmed.png)  

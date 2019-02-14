@@ -53,7 +53,7 @@ These are the fields in the **PROPERTIES** section of a new **Catalog Item**. **
 ![Game Manager - Catalog Item Properties](media/tutorials/game-manager-catalog-item-properties.png)
 
 - **Item ID**:
-  This required field is the unique identifier for the item within the **Catalog**. **Item ID** must be unique within the **Catalog**, but you can have multiple versions containing items with the same **Item ID**.
+  This required field is the unique identifier for the item within the **Catalog**. The item ID must be unique within the **Catalog**, but you can have multiple versions containing items with the same item ID.
 
 - **Display Name**:
   This optional field is the name displayed for the **Catalog item**. One common usage is when you want to offer the item in your in-game store. Display names do not need to be unique.
@@ -87,7 +87,7 @@ These are the fields in the **PROPERTIES** section of a new **Catalog Item**. **
 
 ### Add new item, ATTRIBUTES fields
 
-These are the field in the **ATTRIBUTES** section of a new **Catalog Item**. **Attributes** are Key/Value Pairs (KVPs). Only the key is required for each **Attribute**.
+These are the field in the **ATTRIBUTES** section of a new **Catalog Item**. Attributes are Key/Value Pairs (KVPs). Only the key is required for each attribute.
 
 ![Game Manager - Catalog Item Attributes](media/tutorials/game-manager-catalog-item-attributes.png)
 
@@ -95,7 +95,7 @@ These are the field in the **ATTRIBUTES** section of a new **Catalog Item**. **A
   This required field is the index to the **Attribute Value**.
 
 - **Value**:
-  This optional field is the value of the **Attribute**. If this is not set, the value is *null*.
+  This optional field is the value of the attribute. If this is not set, the value is *null*.
 
 ### Add new item, PRICES fields
 
@@ -139,10 +139,10 @@ The following icons indicate the type of **Item** in the **Bundle/Container**.
 These are the fields in the **BUNDLE/CONTAINER, Add Item** section of a new **Catalog** item.
 
 - **Item ID**:
-  Identifies the **Item**, by **Catalog Item ID**, to add to the **Bundle/Container**. Although the current **Item** appears in the list, you cannot select it and save the **Bundle/Container**, as that would cause an infinite loop.
+  Identifies the item, by **Catalog Item ID**, to add to the **Bundle/Container**. Although the current **Item** appears in the list, you cannot select it and save the **Bundle/Container**, as that would cause an infinite loop.
 
 - **Qty.**:
-  Specifies how many of the **Item** in **Item ID** to add to the **bundle/container**. You must specify a value greater than **0** (zero), otherwise the item is not added to the **bundle/container**.
+  Specifies how many of the item in **Item ID** to add to the **bundle/container**. You must specify a value greater than **0** (zero), otherwise the item is not added to the **bundle/container**.
 
 ![Game Manager - Catalog Item Container](media/tutorials/game-manager-catalog-item-container.png)
 

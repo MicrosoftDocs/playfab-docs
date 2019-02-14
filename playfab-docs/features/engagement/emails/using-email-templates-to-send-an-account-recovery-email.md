@@ -10,7 +10,7 @@ keywords: playfab
 ms.localizationpriority: medium
 ---
 
-# Using Email Templates to send an account recovery email
+# Using email templates to send an account recovery email
 
 This tutorial walks you through how to use the email template feature of PlayFab to send an account recovery player's contact email address to let a player reset their password.
 
@@ -28,7 +28,7 @@ This tutorial walks you through how to use the email template feature of PlayFab
 - Read the [Game Manager quickstart](../../config/gamemanager/quickstart.md) if you are unfamiliar with the Game Manager, as it is the place where email templates are created.
 - Knowledge of how to work with player profiles will be necessary to confirm that emails will be necessary for checking that a contact email has been added to a player's profile. Please read up on how to get a player profile in the [Getting Player Profiles](../../data/playerdata/getting-player-profiles.md) tutorial, and make sure that under the **Client Profile Options** on your **Title** you allow **Contact email addresses**.
 
-## Step 1 - Create an Email Template
+## Step 1 - Create an email template
 
 The first thing we will do is create an account recovery email template.
 
@@ -51,22 +51,22 @@ Now add a **New Email Template**, filling in the fields as follows leaving the *
 <p>Please click <a href='$ConfirmationUrl$'>here</a> to be directed to a page to reset your password. Thanks!</p>
 ```
 
-- **From Name**: The **Name** you want to show in the **From** field in the email.
-- **From Email Address**:  The **Email Address** you want to show in the **From** field in the email. This must be an email domain that the **SMTP** server enables you to send emails from.
+- **From Name**: The name you want to show in the **From** field in the email.
+- **From Email Address**:  The email address you want to show in the **From** field in the email. This must be an email domain that the **SMTP** server enables you to send emails from.
 
 > [!NOTE]
 > Some email servers, like Gmail, will ignore this field and will send from the account set up with the **SMTP** server.
 
-- **Callback URL**:  A **Callback URL** to a password recovery form. At minimum the form must contain a **Password** field for the player to enter a new password.
+- **Callback URL**:  A callback **URL** to a password recovery form. At the minimum, the form must contain a **Password** field for the player to enter a new password.
 
 ### A few things to note
 
-- The `$ConfirmationUrl$` in the **Email body** generates a customized **URL** that, when selected, tracks that a user has chosen the **URL**, and then issues a redirect to the **Callback URL**. In this case, it is injected into an anchor tag.
+- The `$ConfirmationUrl$` in the email body generates a customized **URL** that, when selected, tracks that a user has chosen the **URL**, and then issues a redirect to the **Callback URL**. In this case, it is injected into an anchor tag.
 - The **Callback URL** is the **URL** that PlayFab will redirect to after the player selects the confirmation **URL** link. It will need to be a hosted web form that contains at very minimum a **Password** field in order to make a [ResetPassword](xref:titleid.playfabapi.com.admin.accountmanagement.resetpassword) **API** call later in this tutorial.
 
 ![Game Manager - Content - Email Templates - New Email Template](media/tutorials/game-manager-content-new-email-template-account-recovery.png)  
 
-After filling the form out, select the **SAVE EMAIL TEMPLATE** button, and you will be redirected back to the page containing the list of your **Email Templates** showing. Make a note of the **ID** of the **Email Template** as it will be used in Step 4.
+After filling the form out, select the **SAVE EMAIL TEMPLATE** button, and you will be redirected back to the page containing the list of your **Email Templates** showing. Make a note of the ID of the **Email Template** as it will be used in Step 4.
 
 ![Game Manager - Content - Email Template ID](media/tutorials/game-manager-content-passwordrecovery-email-template-id.png)  
 
@@ -146,9 +146,9 @@ Next, confirm that the contact email was added to the player’s profile. Log in
 
 You can also make a call to [GetPlayerProfile](xref:titleid.playfabapi.com.client.accountmanagement.getplayerprofile) with **ShowContactEmailAddresses** in the [PlayerProfileViewConstraints](xref:titleid.playfabapi.com.server.accountmanagement.getplayerprofile#playerprofileviewconstraints) set as *true* to show that the player now has the contact email that we just added.
 
-## Step 4 - Send an Account Recovery Template Email
+## Step 4 - Send an account recovery template email
 
-Now we will send the verification email using **SendEmailFromTemplate** using the **Email Template ID** in Step 1 to the **Player** we created in Step 2.
+Now we will send the verification email using **SendEmailFromTemplate** using the email template ID in Step 1 to the **Player** we created in Step 2.
 
 ### C# Code Example
 
@@ -180,10 +180,10 @@ void FailureCallback(PlayFabError error)
 
 Finally, we can check that the account recovery email was sent.
 
-The first thing you can do is go the **Player's PlayStream**. In **Game Manager**:
+The first thing you can do is go the player's **PlayStream**. In **Game Manager**:
 
 - Select **Player** from the menu on the left.
-- Go to th **PlayStream** area of the screen.
+- Go to the **PlayStream** area of the screen.
 - It should display a **Sent Email Event**.
 
 ![Game Manager - Players - PlayStream - Sent email event](media/tutorials/game-manager-players-playstream-sent-email-event.png)  
@@ -212,7 +212,7 @@ Selecting the **Info** icon on the event should show **JSON** similar to what ap
 }
 ```
 
-To check that you actually receive the email, go to the email of the player you created in Step 2. There should be an email that looks like what is shown below.
+To check that you actually receive the email, go to the email of the player you created in Step 2. There should be an email that looks similar to what is shown below.
 
 ![Password reset requested - email](media/tutorials/password-reset-requested-email.png)  
 

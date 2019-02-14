@@ -18,9 +18,9 @@ The entity **API** introduces new access patterns that are designed to alleviate
 
 With the existing **APIs**, saving a data value has separate **API** calls for:
 
-- **Title** access (client/[GetTitleData](xref:titleid.playfabapi.com.client.title-widedatamanagement.gettitledata), admin/[GetTitleData](xref:titleid.playfabapi.com.admin.title-widedatamanagement.gettitledata), server/[GetTitleData](xref:titleid.playfabapi.com.server.title-widedatamanagement.gettitledata)).
-- player access (client/[GetUserReadOnlyData](xref:titleid.playfabapi.com.client.playerdatamanagement.getuserreadonlydata), client/[UpdateUserData](xref:titleid.playfabapi.com.client.playerdatamanagement.updateuserdata), client/[UpdateUserPublisherData](xref:titleid.playfabapi.com.client.playerdatamanagement.updateuserpublisherdata)).
-- Character access (client/[GetCharacterData](xref:titleid.playfabapi.com.client.characterdata.getcharacterdata), client/[UpdateCharacterData](xref:titleid.playfabapi.com.client.characterdata.updatecharacterdata)).
+- **Title** access - (client/[GetTitleData](xref:titleid.playfabapi.com.client.title-widedatamanagement.gettitledata), admin/[GetTitleData](xref:titleid.playfabapi.com.admin.title-widedatamanagement.gettitledata), server/[GetTitleData](xref:titleid.playfabapi.com.server.title-widedatamanagement.gettitledata)).
+- **Player** access - (client/[GetUserReadOnlyData](xref:titleid.playfabapi.com.client.playerdatamanagement.getuserreadonlydata), client/[UpdateUserData](xref:titleid.playfabapi.com.client.playerdatamanagement.updateuserdata), client/[UpdateUserPublisherData](xref:titleid.playfabapi.com.client.playerdatamanagement.updateuserpublisherdata)).
+- **Character** access - (client/[GetCharacterData](xref:titleid.playfabapi.com.client.characterdata.getcharacterdata), client/[UpdateCharacterData](xref:titleid.playfabapi.com.client.characterdata.updatecharacterdata)).
 
 In the new **API** scheme, a single call supports saving a data value for a title, player, character, and every other future entity type, combined with powerful access rules that replicate and expand the current system behavior of custom data in a better interface.
 
@@ -64,7 +64,7 @@ PlayFabAuthenticationAPI.GetEntityToken(new GetEntityTokenRequest(),
 
 This **API** method returns an [Authentication/EntityKey](xref:titleid.playfabapi.com.authentication.authentication.getentitytoken#entitykey) object, which contains the ID and type, which you should save. If called from the client, this typically represents the logged-in player.
 
-Called from game servers, this will represent your title. With the **entityId** and **entityType**, you can make other calls to other entity **API** methods.
+Called from game servers, this will represent your title. With the **entityId** and **entityType**, you can make other calls to other **Entity API** methods.
 
 You should save a reference to the **entityId** and **entityType** to use in other **API** calls (Each **API** has an **EntityKey** structure, above). **EntityToken** is handled internally by the **SDK**, so you can ignore that.
 

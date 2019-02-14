@@ -12,9 +12,11 @@ ms.localizationpriority: medium
 
 # Game Manager quickstart
 
-This quickstart familiarizes you with the high-level aspects of the Game Manager. For more detailed information, select your specific topic of interest in the PlayFab documentation. By now, you should have created your PlayFab account, logged in, and viewed the Game Manager for your title, even if it's an empty title for now. The following provides more detail on each Game Manager area. Each time you perform an API call or task, view the results in the Game Manager in the appropriate area for that task.
+This quickstart familiarizes you with the high-level aspects of the Game Manager. For more detailed information, select your specific topic of interest in the PlayFab documentation. By now, you should have created your PlayFab account, logged in, and viewed the Game Manager for your title, even if it's an empty title for now.
 
-## Game Manager Sections
+The following provides more detail on each Game Manager area. Each time you perform an **API** call or task, view the results in the Game Manager in the appropriate area for that task.
+
+## Game Manager sections
 
 Now that you have an account, select a title (either the one we created or one of your own) to follow along. Within each title, the scope of a new Game Manager is distributed across the following major sections:
 
@@ -47,11 +49,11 @@ Never share your PlayFab **API** secret key with anyone; doing so may jeopardize
 
 The **Dashboard** shows your game’s basic statistics and Key Performance Indicators (KPIs). In the top left, you will find filter controls that limit the information displayed:
 
-- *4h*: This will load data generated within the last 4 hours.
-- *24h*: This will load data generated within the last 24 hours.
-- *3d*: This will load data generated within the last 3 days.
-- *7d*: This will load data generated within the last 7 days.
-- *mtd*: This will load data generated within the current month.
+- **4h**: This will load data generated within the last 4 hours.
+- **24h**: This will load data generated within the last 24 hours.
+- **3d**: This will load data generated within the last 3 days.
+- **7d**: This will load data generated within the last 7 days.
+- **mtd**: This will load data generated within the current month.
 
 You can see data for previous months in the [Reports Section](#9-reports).
 
@@ -94,9 +96,9 @@ The **Players** tab presents you with a sorted list by most recent login. Select
 
 ![Game Manager - Players Tab](media/tutorials/game-manager-players-tab.png)
 
-#### Player Overview
+#### Player overview
 
-This detailed screen provides a wealth of insight into the players activity. The **Overview** sub-menu contains many links to other **Players**-centric information:
+This detailed screen provides a wealth of insight into the players activity. The **Overview** sub-menu contains many links to other **Players**-centric information, as shown below.
 
 ![Game Manager - Player - Overview](media/tutorials/game-manager-player-overview.png)
 
@@ -110,18 +112,18 @@ Tools your team can use to remedy defrauded players and identify potential abuse
 - **Data**- View and edit player data records.
 - **Inventory**- View, grant, and revoke **ItemInstances**.
 - **Purchases**- View a player's real money purchase history.
-- **Virtual Currency**- View and edit player virtual currency (VC) balances.
+- **Virtual Currency**- View and edit player virtual currency (**VC**) balances.
 - **Characters**- View player-owned characters and edit basic details.
-- **Multiplayer**- View player match history from **Multiplayer** sessions.
+- **Multiplayer**- View player match history from multiplayer sessions.
 - **Bans**- View player ban history.
 
 #### Leaderboards
 
-Leaderboards, the second tab, displays all the active leaderboards for your title. PlayFab leaderboards are driven by your player statistics. Selecting a statistic will display the corresponding leaders.
+**Leaderboards**, the second tab, displays all the active leaderboards for your title. PlayFab leaderboards are driven by your player statistics. Selecting a statistic will display the corresponding leaders.
 
 ![Game Manager - Players - Leaderboards](media/tutorials/game-manager-player-leaderboards.png)
 
-Selecting a **Player Name** will take you to that **Player** overview.
+Selecting a **Player Name** will take you to that player overview.
 
 The leaderboard reset frequency controls when one "season" begins and another ends. Our leaderboards can optionally to reset themselves **hourly**, **daily**, **weekly** and **monthly**.
 
@@ -197,7 +199,7 @@ The following example shows the active **News** articles within **Unicorn Battle
 
 We have many great vendors, and each one brings something unique to the table. We could tell you all about it here, but its better if you see it for yourself.
 
-- To configure marketplace integrations for your title: Explore the **Add-ons** section of the Game Manager for details on the various add-ons.
+- To configure marketplace integrations for your title: Explore the **Add-ons** section of the **Game Manager** for details on the various add-ons.
 
   ![Game Manager - Add-ons - Partner Add-ons](media/tutorials/game-manager-add-ons-partner-add-ons.png)
 
@@ -253,7 +255,7 @@ Notifications include information on new features, **API** updates, and service 
 2. Enter a **Studio Name**.
 3. Save your changes and return to the **Studios** page.
 
-#### To edit an existing Studio
+#### To edit an existing studio
 
 ![Game manager - Edit Studio](media/tutorials/game-manager-edit-studio.png)
 
@@ -324,7 +326,7 @@ We provide tall and short views that make viewing text blobs easier.
 
 ### Update account permissions and view audit history
 
-The **Permissions** tab displays an account table containing all of the **Developer** accounts with access to the current title.
+The **Permissions** tab displays an account table containing all of the developer accounts with access to the current title.
 
 Users are added and removed at the studio level, but individual permissions are set on a per-title level. This flexibility enables you to provide your team with variable access depending on their role.
 
@@ -333,7 +335,7 @@ Users are added and removed at the studio level, but individual permissions are 
 #### Update account permissions
 
 1. Select the **Account** you wish to edit.
-2. Select the appropriate **Permissions** (note: Admins have view and edit permissions for all sections).
+2. Select the appropriate **Permissions** (Note: Admins have view and edit permissions for all sections).
 3. Save your changes by selecting the orange **SAVE PERMISSIONS** button.
 
 ![Game manager - Settings - Edit permissions](media/tutorials/game-manager-settings-edit-permissions.png)
@@ -354,17 +356,17 @@ Select any change to view the complete details.
 
 1. Select an old **News** item to edit, or create a new one by selecting **NEW TITLE NEWS**.
 2. Enter a **Title**, set the **Status** to **Published**, and enter your text into the **Body** field.
-3. Select **SAVE TITLE NEWS** and your **News** is now ready for the **Client** to receive.
+3. Select **SAVE TITLE NEWS** and your **News** is now ready for the client to receive.
 
 ![Game manager - Promotions - Edit Title News](media/tutorials/game-manager-promotions-edit-title-news.png)
 
-**Title News** makes a great tool for in-game tips or message-of-the-week style communication.
+Title news makes a great tool for in-game tips or message-of-the-week style communication.
 
 ### Generate coupon codes
 
 1. Select your primary **Catalog** and the **Item ID** for the **Item** you wish to grant.
 2. Choose the appropriate quantity, and select the **GENERATE COUPONS** button.
-3. Game Manager will generate the codes in a downloadable **.csv** file
+3. Game Manager will generate the codes in a downloadable **.csv** file.
 
 ![Game manager - Promotions - Coupons](media/tutorials/game-manager-promotions-coupons.png)
 

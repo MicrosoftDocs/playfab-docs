@@ -30,30 +30,30 @@ Our Game Manager provides tools to make managing your virtual economy straightfo
 
 ## Field reference
 
-This section describes each field you see in the **Game Manager Economy Currencies** tab.
+This section describes each field you see in the **Game Manager -> Economy Currencies** tab.
 
-All fields are required - however both Currency Code and Display Name are not pre-populated with default values.
+All fields are required - however both **Currency Code** and **Display Name** are not pre-populated with default values.
 
-Leaving Recharge Rate and Recharge Max set to *zero* (default) will specify that this Currency amount will not auto-regenerate.
+Leaving **Recharge Rate** and **Recharge Max** set to **zero** (default) will specify that this currency amount will not auto-regenerate.
 
-### Currency Code
+### Currency code
 
-Currency Code is a required field. It represents the currency, and will be used in the other Economy sections.
+**Currency Code** is a required field. It represents the currency, and will be used in the other economy sections.
 
-It *must be* a two-character code and convention is *all upper-case* (although a two-digit number is also allowed).
+It must be a two-character code, and convention is *all upper-case* (although a two-digit number is also allowed).
 
 > [!NOTE]
 > **RM** is reserved for Real Money and cannot be used as a Currency Code.
 
 ### Display Name
 
-Display Name is a required field. It represents the name that is attached to the currency that is typically displayed to the user in your game.
+**Display Name** is a required field. It represents the name that is attached to the currency that is typically displayed to the user in your game.
 
 The only restriction is that it must be *at least one letter long*. Common examples include **Gold** or **Space Bux**.
 
 ### Initial deposit
 
-Initial deposit represents how much of this virtual currency is given to each player when they first sign-up for a PlayFab account. This is often the first time they play your game.
+**Initial deposit** represents how much of this virtual currency is given to each player when they first sign-up for a PlayFab account. This is often the first time they play your game.
 
 ### Recharge Rate (Units/Day)
 
