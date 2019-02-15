@@ -14,12 +14,12 @@ ms.localizationpriority: medium
 
 There are two primary ways to explore your metrics from PlayFab Game Manager:   
  
-1. Trends - A collection of graphs visualizing performance over time.
-2. Reports - Data tables comparing. Covered in detail in the Reports Section.
+- Trends - A collection of graphs visualizing performance over time.
+- Reports - Data tables comparing. Covered in detail in the Reports Section.
 
-## Trend Tab 
+## Trends Tab 
 
-The Trend tab offers an easy way to view and analyze performance across eight key performance indicators: 
+The Trends tab offers an easy way to view and analyze performance across eight key performance indicators: 
 
 - MAU
 - DAU
@@ -30,9 +30,9 @@ The Trend tab offers an easy way to view and analyze performance across eight ke
 - Revenue 
 - Stickiness
 
-The Trend tab is updated once daily at the close of the UTC day. For details on each metric, see Metrics and Terminology. The Trends tab consists of three sections: Filters, the Spark Cards, and the Graphs. 
+The Trends tab is updated once daily at the close of the UTC day. For details on each metric, see Metrics and Terminology. The Trends tab consists of three sections: Filters, the Spark Cards, and the Graphs. 
 
-![Trend Tab](media/tutorials/trends-tab.png)
+![Trends Tab](media/tutorials/trends-tab.png)
  
 ## Filters 
 
