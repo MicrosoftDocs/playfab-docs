@@ -102,4 +102,6 @@
       href: ./xplatcpp/quickstart-linux.md
     - name: Quickstart - Windows
       href: ./xplatcpp/quickstart-windows.md
+    - name: Quickstart - Xbox One
+      href: ./xplatcpp/quickstart-xbox.md
   

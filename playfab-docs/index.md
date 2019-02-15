@@ -736,7 +736,7 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>Matchmaking</h3>
-                                                <p style='color: #7f7f7f'>Build great anonymous matchmaking into your game.</p><p><a href='/gaming/playfab/features/multiplayer/matchmaking/'>Overview</a></p><p><a href='/gaming/playfab/features/multiplayer/matchmaking/quickstart-unity'>Quickstart</a></p>
+                                                <p style='color: #7f7f7f'>Build anonymous matchmaking into your game.</p><p><a href='/gaming/playfab/features/multiplayer/matchmaking/'>Overview</a></p><p><a href='/gaming/playfab/features/multiplayer/matchmaking/quickstart-unity'>Quickstart</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -908,12 +908,46 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
+                                                    <img src="/gaming/playfab/sdks/media/sdk-generator.png" alt="PlayFab SDKs: SDK generator card image" />
+                                                </div>
+                                            </div>
+                                            <div class="cardText">
+                                                <h3>SDK Generator</h3>
+                                                <p><a href='/gaming/playfab/sdks/sdkgenerator'>SDK</a></p><p><a href='/gaming/playfab/sdks/sdkgenerator/quickstart'>Quickstart</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardImageOuter">
+                                                <div class="cardImage">
                                                     <img src="/gaming/playfab/sdks/media/sdk-actionscript.svg" alt="PlayFab SDKs: ActionScript card image" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
                                                 <h3>ActionScript</h3>
                                                 <p><a href='/gaming/playfab/sdks/actionscript'>SDK</a></p><p><a href='/gaming/playfab/sdks/actionscript/quickstart'>Quickstart</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardImageOuter">
+                                                <div class="cardImage">
+                                                    <img src="/gaming/playfab/sdks/media/sdk-androidstudio.png" alt="PlayFab SDKs: Android Studio card image" />
+                                                </div>
+                                            </div>
+                                            <div class="cardText">
+                                                <h3>Android Studio Project (Java)</h3>
+                                                <p><a href='/gaming/playfab/sdks/androidstudio'>SDK</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -1061,6 +1095,23 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
+                                                    <img src="/gaming/playfab/sdks/media/sdk-phaser.png" alt="PlayFab SDKs: Phaser.io card image" />
+                                                </div>
+                                            </div>
+                                            <div class="cardText">
+                                                <h3>Phaser.io (Javascript)</h3>
+                                                <p><a href='/gaming/playfab/sdks/phaser'>SDK</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardImageOuter">
+                                                <div class="cardImage">
                                                     <img src="https://docs.microsoft.com/media/logos/logo_php.svg" alt="PlayFab SDKs: PHP card image" />
                                                 </div>
                                             </div>
@@ -1135,6 +1186,40 @@ featureFlags:
                                             <div class="cardText">
                                                 <h3>Unreal Engine</h3>
                                                 <p><a href='/gaming/playfab/sdks/unreal'>SDK</a></p><p><a href='/gaming/playfab/sdks/unreal/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/sdks/unreal/quickstart'>Upgrade Tutorial</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardImageOuter">
+                                                <div class="cardImage">
+                                                    <img src="/gaming/playfab/sdks/media/sdk-xamarin.png" alt="PlayFab SDKs: Xamarin card image" />
+                                                </div>
+                                            </div>
+                                            <div class="cardText">
+                                                <h3>Xamarin (C#)</h3>
+                                                <p><a href='/gaming/playfab/sdks/xamarin'>SDK</a></p><p><a href='/gaming/playfab/sdks/xamarin/quickstart'>Quickstart</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardImageOuter">
+                                                <div class="cardImage">
+                                                    <img src="/gaming/playfab/sdks/media/sdk-xplatcpp.png" alt="PlayFab SDKs: Cross platform C++ card image" />
+                                                </div>
+                                            </div>
+                                            <div class="cardText">
+                                                <h3>Cross platform C++</h3>
+                                                <p><a href='/gaming/playfab/sdks/xplatcpp'>SDK</a></p><p><a href='/gaming/playfab/sdks/xplatcpp/quickstart-linux'>Quickstart - Linux</a></p><p><a href='/gaming/playfab/sdks/xplatcpp/quickstart-windows'>Quickstart - Windows</a></p><p><a href='/gaming/playfab/sdks/xplatcpp/quickstart-xbox'>Quickstart - Xbox One</a></p>
                                             </div>
                                         </div>
                                     </div>
