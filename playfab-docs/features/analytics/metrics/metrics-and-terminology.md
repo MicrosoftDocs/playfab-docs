@@ -32,7 +32,7 @@ ms.localizationpriority: medium
 | **ARPPU**                   | **Average Revenue Per Paying User** within a specified time period (e.g., hourly, daily, or monthly) in USD.
 | **ARPU**                    | **Average Revenue Per active User** within a specified time period (e.g., hourly, daily, or monthly) in USD.
 | **Average Purchase Price**  | The average transaction amount in USD (= Revenue/Purchases).
-| **Conversion**              | The percentage of players who become paying users. The Thirty-day New User Conversion Report tracks purchases made by new user cohorts over a 30-day period. Unlike Retention Reports, the Conversion Report tracks a cumulative total of players who converted within a given time span.
+| **Conversion**              | The percentage of players who become paying users. The Thirty day New User Conversion Report tracks purchases made by new user cohorts over a 30 day period. Unlike Retention Reports, the Conversion Report tracks a cumulative total of players who converted within a given time span.
 | **Purchases**               | The count of transactions.
 | **Top Items**               | The top 100 items which generated the most revenue in your game within a specified report period.
 | **Top Spenders**            | The top 100 players who spent the most money in your game within a specified report period.

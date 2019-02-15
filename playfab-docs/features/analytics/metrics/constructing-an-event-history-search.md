@@ -28,7 +28,7 @@ The first field to edit will usually be the Query field, which is constructed by
 
 ![Event Query - Event Type and Dates](media/tutorials/event-query-event-type-and-dates.png)  
 
-By editing anything within the Event Type, Start Date, or End Date, the Query field itself will be constructed.
+By editing anything within the event type, start date, or end date, the query field itself will be constructed.
 
 ![Event Query Field - Date range](media/tutorials/event-query-field-date-range.png)  
 

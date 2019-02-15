@@ -26,7 +26,7 @@ A/B Testing title data is a planned feature. However, It is possible to build yo
 
 - The final example uses [Unity](../../../sdks/unity3d/quickstart.md), but this technique can be used with any **SDK**.
 
-## General Idea and Implementation
+## General idea and implementation
 
 We already have a built-in feature of defining A/B segments for a player (described in the [A/B Testing quickstart](../../analytics/ab-testing/quickstart.md)). Let's reuse those segments to return title data, based on which bucket our player belongs to.
 
@@ -34,7 +34,7 @@ First, we will need an A/B test. Please, follow the [A/B Testing quickstart](../
 
 ![Game Manager - A/B Test - Buckets](media/tutorials/game-manager-ab-test-buckets.png)  
 
-Functionally, a **Bucket** ID is the same as a normal segment ID - an **API** call to [GetPlayerSegments](xref:titleid.playfabapi.com.server.playstream.getplayersegments) will return both segment IDs and A/B test bucket IDs.
+Functionally, a bucket ID is the same as a normal segment ID - an **API** call to [GetPlayerSegments](xref:titleid.playfabapi.com.server.playstream.getplayersegments) will return both segment IDs and A/B test bucket IDs.
 
 We can use this to our advantage and introduce a convention for A/B-Tested title data keys, as shown below.
 

@@ -31,23 +31,23 @@ The image shown below provides an overview of the **Webhooks** panel.
 
 - The **New Webhook** button **(1)** allows you to create and configure a new **Webhook**.
 - The **Webhook Name** area **(2)** can be used to access and configure the **Webhook**.
-- The **Status** area **(3)** shows whether a **Webhook** is currently **enabled**.
+- The **Status** area **(3)** shows whether a Webhook is currently **enabled**.
 - The **Failing Since** area **(4)** shows when a Webhook endpoint stopped returning **OK** responses.
-- When one or more **Webhooks** are selected, you can use the **Delete** button to permanently remove them.
+- When one or more Webhooks are selected, you can use the **Delete** button to permanently remove them.
 
 ![Game Manager - Analytics - Webhooks panel](media/tutorials/game-manager-analytics-webhooks-panel.png)  
 
 ## Configuring a Webhook
 
-The image shown below describes the options for configuring a **Webhook**.
+The image shown below describes the options for configuring a Webhook.
 
-- Use the **Name** field **(1)** to create a **Webhook Name** that will uniquely identify the **Webhook**.
+- Use the **Name** field **(1)** to create a Webhook name that will uniquely identify the Webhook.
 - Set up the **Endpoint URI (2)**. This **URI** will be hit when the **Event** occurs.
 - You may set the **Webhook** to be **Enabled** or **Disabled (3)**. This allows you to temporarily suspend a **Webhook** without completely removing (deleting) it from the system.
 - Set up the **Filters** to only process the **Events** you need **(4)**. You can **Filter** by **Event Name**, **Event Source**, and **PlayerID**.
 
 > [!NOTE]
-> You can have several **Filters** per **Group**, but each **Filter** setting must be matched for the **Event** to fall into the **Filter Group**.
+> You can have several **Filters** per **Group**, but each **Filter** setting must be matched for the event to fall into the **Filter Group**.
 - You may define several **Filter Groups** to include different **Filters (5)**. **Events** must fall into at least *one* group to be passed to the **Webhook**.
 
 ![Game Manager - Analytics - Webhooks - Webhook Configuration](media/tutorials/game-manager-analytics-webhook-configuration.png)  

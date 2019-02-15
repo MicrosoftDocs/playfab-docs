@@ -32,7 +32,7 @@ You must call the server **APIs** from a dedicated server or through a **CloudSc
 > We *do not recommend* using server **APIs** from within a game client. If you need to make use of a server **API**, use **CloudScript** for this type of functionality.
 
 > [!NOTE]
-> **Publisher** data values are copied and distributed to potentially hundreds of machines in the PlayFab cluster server. As part of this process, **Publisher** data is cached and changes may take up to *fifteen minutes* to refresh in those caches. **Publisher** data is best suited for *global constant/static data*, and *is not* suitable or reliable as *global variables*.
+> **Publisher** data values are copied and distributed to potentially hundreds of machines in the PlayFab cluster server. As part of this process, this data is cached and changes may take up to *fifteen minutes* to refresh in those caches. **Publisher** data is best suited for *global constant/static data*, and *is not* suitable or reliable as *global variables*.
 
 ## Publisher data
 
@@ -160,7 +160,7 @@ public void ServerSetUserPublisherInternalData() {
 
 ### Getting User Publisher data
 
-The following snippet demonstrates how to get all 3 kinds of **Publisher** data using *client and server **APIs**.
+The following snippet demonstrates how to get all 3 kinds of **Publisher** data using client and server **APIs**.
 
 ```csharp
 // Use client API to get Regular User Publisher Data for selected user 

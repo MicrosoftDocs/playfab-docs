@@ -62,7 +62,7 @@ Let's begin a query:
 This occurs because PlayFab analyzed all the events and found that *this particular one* has some property with the value of **tournamentScore_hourly**.
 
 > [!IMPORTANT]
-> PlayFab supports wildcards and some of the regex expressions.
+> PlayFab supports wildcards and some of the **regex** expressions.
 
 This means that you may search by part of the value. In the example shown below:
 

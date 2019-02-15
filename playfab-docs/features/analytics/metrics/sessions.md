@@ -16,7 +16,7 @@ PlayFab supports logging events to calculate focus time and session duration. Yo
 
 ## Supported SDK versions
 
-Session support is currently *only* available in the **Unity SDK**. Support for our other **SDKs** will be added in the future.
+Session support is currently *only* available in **Unity SDK**. Support for our other **SDKs** will be added in the future.
 
 You'll need to have the **180829** version or newer. This **SDK** first introduces two new events that can be configured to be emitted from the client automatically:
 
@@ -40,7 +40,7 @@ Presently, these events are disabled by default, though we plan to change this i
 
 ![Game Manager - Settings - Data Collection](media/tutorials/game-manager-settings-data-collection.png)  
 
-You can also disable these from the code by setting the option shown below to **True** in your title setup.
+You can also disable these from the code by setting the option shown below to **true** in your title setup, as shown below.
 
 ```csharp
 PlayFabSettings.DisableFocusTimeCollection = true

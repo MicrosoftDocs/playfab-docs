@@ -79,7 +79,7 @@ When your **Amazon S3** bucket is ready, it's time to set up the PlayFab side of
 
 We need to pass the access key data and bucket name to PlayFab to enable event archiving.
 
-To access the PlayFab Event Archive:
+To access the PlayFab **Event Archive**:
 
 - Select **Analytics** in the menu on the left **(1)**.
 - Then select the **Event Archive** tab **(2)**.

@@ -10,13 +10,13 @@ keywords: playfab, data, content delivery network
 ms.localizationpriority: medium
 ---
 
-# Content Delivery network quickstart
+# Content Delivery Network quickstart
 
-PlayFab Content Delivery Network (CDN) stores individual assets as files uniquely identified by the file name, also referred to as a *key*. This implies that you add, update, remove, and retrieve assets by key.
+PlayFab **Content Delivery Network** (**CDN**) stores individual assets as files uniquely identified by the file name, also referred to as a *key*. This implies that you add, update, remove, and retrieve assets by key.
 
-PlayFab CDN allows segregating assets by folders. The folder path to the asset becomes part of the *asset key*.
+PlayFab **CDN** allows segregating assets by folders. The folder path to the asset becomes part of the *asset key*.
 
-The following example is a valid asset key stored inside the folder named *Android*.
+The following example is a valid asset key stored inside the folder named **Android**.
 
  `Android/Image.png`.
 
@@ -32,7 +32,7 @@ This, however, can introduce delays into file management actions, like those fou
 
 ## Uploading ssets
 
-Before your users are able to fetch an asset, it must be uploaded to the CDN. This can be done in **Game Manager**:
+Before your users are able to fetch an asset, it must be uploaded to the **CDN**. This can be done in **Game Manager**:
 
 - Select **Content** from the menu on the left **(1)**.
 - Choose the **File Management** tab **(2)**.

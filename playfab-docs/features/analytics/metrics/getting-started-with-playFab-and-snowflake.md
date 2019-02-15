@@ -10,7 +10,7 @@ keywords: playfab, analytics, reports, snowflake
 ms.localizationpriority: medium
 ---
 
-# Getting Started With PlayFab and Snowflake
+# Getting started with PlayFab and Snowflake
 
 This tutorial describes how to enable the **Snowflake** add-on from PlayFab, and then provides some starter examples of queries you can do in **Snowflake** to show off the integration.
 
@@ -167,7 +167,7 @@ Now you can run queries like the following, to get the **DAU** on **June 1st**.
 select count(distinct entity_id) from logins where '2017-6-1' <= ts and ts <'2017-6-2' 
 ```
 
-With this **View**, we can also compute 30 day retention.
+With this view, we can also compute 30 day retention.
 
 ```sql
 with logins_yesterday as 
@@ -221,7 +221,7 @@ If you are running a query without a timestamp filter, that is still ok. It may 
 
 You might be concerned that everyone is using the same view.
 
-In a traditional database, this would be a *gigantic* security risk. However **Snowflake** is *not* your average database. The **"playfab_archive_shared" View** is actually a [Secure View](https://docs.snowflake.net/manuals/user-guide/views-secure.html).
+In a traditional database, this would be a *gigantic* security risk. However **Snowflake** is *not* your average database. The **playfab_archive_shared** view is actually a [Secure View](https://docs.snowflake.net/manuals/user-guide/views-secure.html).
 
 The main point is that other viewers are *guaranteed* to never know your data exists. (For those of you who are interested, it means the **TitleId "where"** clause runs un-optimized to thwart subtle attacks that take advantage of order of operations changes made by the **SQL** compiler).
 
