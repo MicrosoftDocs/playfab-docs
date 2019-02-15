@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 Stores are built upon [Catalogs](../items/catalogs.md) and [Currencies](../economy/currencies.md). Your primary catalog should define all of the items in your game.
 
-Alternately, a store allows you to single out a specific set of items, and make them available for a set time period. The definition of a Store is a small subset of items, available for purchase at a specific price.
+Alternately, a store allows you to single out a specific set of items, and make them available for a set time period. The definition of a store is a small subset of items, available for purchase at a specific price.
 
 ## Requirements
 
@@ -24,7 +24,7 @@ Alternately, a store allows you to single out a specific set of items, and make 
   - **GS** (**Gold Shekels**).
 
 - A primary [Catalog](../items/catalogs.md) with one or more items defined
-  - The first example uses multiple item \ bundles, similar to the ones described in the [Drop Tables](../items/drop-tables.md) tutorial.
+  - The first example uses multiple item/bundles, similar to the ones described in the [Drop Tables](../items/drop-tables.md) tutorial.
   - The second example in this tutorial uses small, medium, and large health potions.
 
 ### Best practice

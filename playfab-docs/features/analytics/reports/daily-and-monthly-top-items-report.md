@@ -10,11 +10,11 @@ keywords: playfab, analytics, reports
 ms.localizationpriority: medium
 ---
 
-# Daily and monthly top items report
+# Daily and Monthly Top Items report
 
 ## Overview
 
-The daily and monthly top items report contains a list of top selling items or bundles in a given day or month.
+The Daily and Monthly Top Items report contains a list of top selling items or bundles in a given day or month.
 
 These tables include:
 
@@ -28,9 +28,9 @@ This report can assist you in identifying trending items over time, which can be
 
 ![Daily Top Items Report Table](media/tutorials/monthly-top-items-report-table.png)  
 
-The daily and monthly top items report contains a list of top selling items or bundles in a given da or month.
+The Daily and Monthly Top Items report contains a list of top selling items or bundles in a given da or month.
 
-These tables, daily and monthly, include item names from your primary catalog, associated number of sales, and total revenue.
+Both daily and monthly tables include item names from your primary catalog, associated number of sales, and total revenue.
 
 This report can assist you in identifying trending items over time, which can be useful for planning future promotions or events.
 

@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 ## Overview
 
-The daily A/B test KPI (Key Performance Indicators) report shows the outcome of an A/B test, broken down by A and B buckets.
+The Daily A/B test KPI (Key Performance Indicators) report shows the outcome of an A/B test, broken down by A and B buckets.
 
 ![Daily A/B Test KPI Report Table](media/tutorials/daily-ab-test-kpi-report-table.png)
 

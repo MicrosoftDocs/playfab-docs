@@ -10,14 +10,14 @@ keywords: playfab, analytics, reports
 ms.localizationpriority: medium
 ---
 
-# Daily, monthly, and rolling 30-Day overview and totals reports
+# Daily, Monthly, and Rolling Thirty Day Overview and Totals reports
 
 ## Introduction
 
 PlayFab offers a set of daily and monthly Key Performance Indicator (KPI) reports, including:
 
 - **Total Logins**
-- **Unique Logins**: **DAU** (Daily Reports) or **MAU** (Monthly and Rolling 30-day Reports)
+- **Unique Logins**: Daily reports (**DAU**)  or Monthly and Rolling Thirty Day Reports (**MAU**)
 - **New Users**
 - **Unique Paying Users**
 - **Transaction Revenue**
@@ -31,9 +31,9 @@ PlayFab offers a set of daily and monthly Key Performance Indicator (KPI) report
 
 An overview report contains trend charts of each metric during the past 24 hours (daily), past 30 days (rolling 30-day), and in last month (monthly).
 
-A totals report contains the summary of each metric shown in the overview report. Daily and rolling 30-day reports are generated on a daily basis, whereas monthly reports are generated on the first day of each month.
+A totals report contains the summary of each metric shown in the overview report. Daily and Rolling Thirty Day reports are generated on a daily basis, whereas Monthly reports are generated on the first day of each month.
 
-Report times are based on Coordinated Universal Time (UTC). For additional details on metrics, see [Metrics and Terminology](../metrics/metrics-and-terminology.md).
+Report times are based on Coordinated Universal Time (**UTC**). For additional details on metrics, see [Metrics and Terminology](../metrics/metrics-and-terminology.md).
 
 ## Totals reports
 
@@ -95,7 +95,7 @@ The **API** calls shown below will introduce new data for total new users if the
 - [LoginWithSteam](xref:titleid.playfabapi.com.client.authentication.loginwithsteam)
 - [LoginWithTwitch](xref:titleid.playfabapi.com.client.authentication.loginwithtwitch)
 
-The unique paying users, revenue, purchases, Average Revenue Per User (ARPU), Average Revenue Per Paying User (ARPPU) and average purchase price metrics are used to analyze purchases and payments.
+The unique paying users, revenue, purchases, Average Revenue Per User (**ARPU**), Average Revenue Per Paying User (**ARPPU**) and average purchase price metrics are used to analyze purchases and payments.
 
 See the [Non-receipt Payment Processing](../../commerce/economy/non-receipt-payment-processing.md) tutorial for more information on conducting payments.
 

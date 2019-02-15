@@ -98,7 +98,7 @@ Multiple items work the same way:
 
 - Physical rewards at conventions:
   - Print out your list of coupon codes, and hand them out as swag at conventions.
-- Out-of-Game communication such as forums, [Push Notifications](../../engagement/push-notifications/quickstart.md) and email.
+- Out-of-game communication such as forums, [Push Notifications](../../engagement/push-notifications/quickstart.md) and email.
   - Send your players coupon codes directly as part of re-acquisition campaigns or other community outreach.
 - Tournaments:
   - Send coupons to the top ranked players when using [Resettable Leaderboards](../../social/tournaments-leaderboards/using-resettable-statistics-and-leaderboards.md).

@@ -10,11 +10,11 @@ keywords: playfab, analytics, reports
 ms.localizationpriority: medium
 ---
 
-# Thirty-day new user retention report
+# Thirty Day New User Retention report
 
 ## Overview
 
-The Thirty-day New User Retention Report tracks the percentage of new user cohorts who return to the game on subsequent days.
+The Thirty Day New User Retention report tracks the percentage of new user cohorts who return to the game on subsequent days.
 
 A cohort of players is defined by grouping newly registered players on a given day (**Day 0**) and their retention is tracked over a 30-day period.
 
@@ -22,7 +22,7 @@ Cohort size indicates the number of players in a cohort.
 
 ![Thirty-day New User Retention Report Table](media/tutorials/thirty-day-new-user-retention-report-table.png)  
 
-The Thirty-day New User Retention Report tracks the percentage of a new user cohort who return to the game on subsequent days.
+The Thirty Day New User Retention report tracks the percentage of a new user cohort who return to the game on subsequent days.
 
 A cohort of players is defined by grouping newly-registered players on a given day (**Day 0**) and their retention is tracked over a 30-day period. Cohort size indicates the number of players in a cohort.
 

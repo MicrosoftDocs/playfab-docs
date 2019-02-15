@@ -98,7 +98,7 @@ The return from the **StartPurchase** call contains a lot of information - inclu
 But the primary things you’ll need for the next step are the **OrderId** (which uniquely identifies this purchase), and the specific provider you want to use, which is in the **PaymentOptions**.
 
 > [!NOTE]
-> Only **Payment Providers** you have enabled for your **Title** will appear in the **PaymentOptions**.
+> Only **Payment Providers** you have enabled for your title will appear in the **PaymentOptions**.
 
 ```JSON
 {
@@ -474,7 +474,7 @@ One thing to be aware of is that payments can take a long time to complete with 
 
 If you find that the status of the purchase in the response from a call to **Client/ConfirmPurchase** is still **Init**, you should wait before re-querying. The best practice here is to store the **OrderId** at the start of the process, and then use an exponential back-off when querying for the result.
 
-So if the status is **init**, wait *one* minute before re-trying the call to **Client/ConfirmPurchase**, then wait *two* minutes, then *four*, *eight*, etc., until you hit some max value. Including a **check for completed transactions** option would then provide a way for the user to reset that timer.
+So if the status is **Init**, wait *one* minute before re-trying the call to **Client/ConfirmPurchase**, then wait *two* minutes, then *four*, *eight*, etc., until you hit some max value. Including a **check for completed transactions** option would then provide a way for the user to reset that timer.
 
 Finally, it’s worth noting that you can use sandbox mode for testing purchases with some payment providers.
 

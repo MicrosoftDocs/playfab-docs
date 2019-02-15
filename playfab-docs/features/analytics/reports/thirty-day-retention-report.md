@@ -10,19 +10,19 @@ keywords: playfab, analytics, reports
 ms.localizationpriority: medium
 ---
 
-# Thirty-day retention report
+# Thirty Day Retention report
 
 ## Overview
 
-The Thirty-day Retention Report Table illustrates how many of your players came back to the game within a 30-day period.
+The Thirty day Retention report table illustrates how many of your players came back to the game within a 30-day period.
 
-A new cohort of players is formed every day, based on all the players* (new and returning), who have logged in to your game on a given day (**Day 0**).
+A new cohort of players is formed every day, based on all the players (new and returning), who have logged in to your game on a given day (**Day 0**).
 
 Cohort size is defined by the number of players included in a cohort. Then each cell shows the percentage of players **(%)** from a given cohort who returned on each subsequent day.
 
 ![Thirty-day Retention Report](media/tutorials/thirty-day-retention-report-table.png)  
 
-The Thirty-day Retention Report table illustrates how many of your players came back to the gme within a 30-day period.
+The Thirty Day Retention Report table illustrates how many of your players came back to the game within a 30-day period.
 
 A new cohort of players is formed every day, based on all the players (new and returning) who have logged in to your game on a given day (Day 0).
 

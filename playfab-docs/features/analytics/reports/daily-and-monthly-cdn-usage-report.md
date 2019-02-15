@@ -10,24 +10,24 @@ keywords: playfab, analytics, reports
 ms.localizationpriority: medium
 ---
 
-# Daily and monthly CDN usage report
+# Daily and Monthly CDN Usage report
 
-## Daily content usage report
+## Daily Content Usage report
 
-The **CDN** usage report contains two graphs displaying content usage over a 24 hour period:
+The **CDN** Usage report contains two graphs displaying content usage over a 24 hour period:
 
 - The **Data Volume (1)** graph illustrates the distribution of transferred bytes.
 - The **Access Count (2)** graph shows the distribution of content downloads over a specified period of time.
 
 ![Daily Content Usage Report Table](media/tutorials/daily-content-usage-report-table.png)  
 
-## Monthly content usage summary report
+## Monthly Content Usage Summary report
 
 This report summarizes monthly content usage. The table contains the amount of content bytes transferred, as well as the total number of downloads during a specified month.
 
 ![Monthly Content Usage Report Table](media/tutorials/monthly-content-usage-report-table.png)  
 
-## Populating content usage reports
+## Populating Content Usage reports
 
 The code in the template shown below may be used to introduce some data for the reports.
 
