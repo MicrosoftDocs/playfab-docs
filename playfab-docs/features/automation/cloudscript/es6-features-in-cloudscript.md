@@ -19,7 +19,7 @@ A complete overview of **ES6** features is available in this [Cheat Sheet](https
 This tutorial shows several tricks you may use in your **CloudScript**.
 
 > [!NOTE]
-> Some of the features require Strict mode. Enable this mode by placing the following snippet as the very first line of your **CloudScript** file:
+> Some of the features require **Strict** mode. Enable this mode by placing the following snippet as the very first line of your **CloudScript** file:
 > `use strict;`
 
 ## String interpolation
@@ -137,7 +137,7 @@ installHandlers(ProductionHandlers);
 
 ## Getters
 
-One may use *Getters* to encapsulate common **API** calls into a more syntactically pleasing look and feel. Consider the following **TitleData** state.
+One may use **Getters** to encapsulate common **API** calls into a more syntactically pleasing look and feel. Consider the following **TitleData** state.
 
 ![Game Manager - Title Data](media/tutorials/game-manager-title-data.png)  
 

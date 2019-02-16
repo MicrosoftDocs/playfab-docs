@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Using CloudScript actions with PlayStream
 
-When a **CloudScript** handler is launched from a PlayStream action, that handler has access to additional data on why it is being run - the context - which you can use to drive your server-side logic.
+When a **CloudScript** handler is launched from a **PlayStream** action, that handler has access to additional data on why it is being run - the context - which you can use to drive your server-side logic.
 
 This tutorial walks you through what all is available in the context and how to make use of it in your **CloudScript** handlers.
 

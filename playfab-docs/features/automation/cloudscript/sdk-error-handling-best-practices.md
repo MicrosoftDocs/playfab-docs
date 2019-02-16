@@ -10,7 +10,7 @@ keywords: playfab, automation, errors, sdk
 ms.localizationpriority: medium
 ---
 
-# SDK Error handling best practices
+# SDK error handling best practices
 
 This tutorial shows how to access, recognize, and handle **API** errors using the PlayFab **SDK**.
 
@@ -81,7 +81,7 @@ PlayFabClientAPI.LoginWithEmailAddress(new LoginWithEmailAddressRequest() {
 
 ## Handling the error
 
-Once the error is identified, the handle/recover strategy depends on the error type and nature. Errors such as *invalid arguments* will *never* succeed if retried. The request must be fixed for that **API** call to succeed.
+Once the error is identified, the handle/recover strategy depends on the error type and nature. Errors such as *invalid arguments* will never succeed if retried. The request must be fixed for that **API** call to succeed.
 
 There ia a sub-set of errors, where a retry strategy can be applied. *Retry-able* error types are described in the [Global API Method Error Codes](global-api-method-error-codes.md) tutorial.
 

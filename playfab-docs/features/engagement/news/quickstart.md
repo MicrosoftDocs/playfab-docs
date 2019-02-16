@@ -10,9 +10,9 @@ keywords: playfab
 ms.localizationpriority: medium
 ---
 
-# Title news quickstart
+# Title News quickstart
 
-Title news is a mechanism for communicating with your players. It contains a few basic elements:
+Title News is a mechanism for communicating with your players. It contains a few basic elements:
 
 - **Title**
 - **Date**
@@ -22,14 +22,14 @@ Title news is a mechanism for communicating with your players. It contains a few
 > [!NOTE]
 > The body is a string, and can contain raw text or **JSON**.
 
-## Creating title news
+## Creating Title News
 
-There are two ways to create title news entries:
+There are two ways to create Title News entries:
 
 1. Via Game Manager.
 2. Using the Admin **API** method [AddNews](xref:titleid.playfabapi.com.admin.title-widedatamanagement.addnews).
 
-To create title news entries with Game Manager, you will need to be familiar with [Game Manager](../../config/gamemanager/quickstart.md).
+To create Title News entries with Game Manager, you will need to be familiar with [Game Manager](../../config/gamemanager/quickstart.md).
 
 In the **Game Manager** screen:
 
@@ -60,9 +60,9 @@ void CreateNews() {
 
 ```
 
-## Reading title news
+## Reading Title News
 
-Reading the title news is very simple. The **GetTitleNews** method returns get all published title news entries.
+Reading the Title News is very simple. The **GetTitleNews** method returns get all published title news entries.
 
 > [!NOTE]
 > Archived and unpublished entries will *not* be returned.
@@ -78,9 +78,9 @@ void ReadTitleNews() {
 }
 
 ```
-## Update title news
+## Update Title News
 
-The content of a title news entry can only be modified in Game Manager.
+The content of a Title News entry can only be modified in Game Manager.
 
 To locate the entry you wish to modify in **Game Manager**:
 
@@ -92,7 +92,7 @@ To locate the entry you wish to modify in **Game Manager**:
 
 If plan is to post unpublished entries for future release, this is the methodology to to use to transition them into published and archived states. It also allows the user to fix typos.
 
-## Deleting title news
+## Deleting Title News
 
 Once an entry is no longer needed, you can delete it in the **Game Manager**. Find the entry you wish to modify, then:
 
