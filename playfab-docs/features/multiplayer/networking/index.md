@@ -11,7 +11,7 @@ keywords: playfab, multiplayer, bumblelion, networking, communication
 ms.localizationpriority: medium
 ---
 
-# Communication Fabric (Bumblelion)
+# Parties (Bumblelion)
 
 > [!IMPORTANT]
 > This feature is currently in **Private Preview**.  
