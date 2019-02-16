@@ -1,5 +1,5 @@
 ---
-title: Communication Fabric (Bumblelion)
+title: Parties (Bumblelion)
 author: v-thopra
 description: Homepage for the Bumblelion 1PP Preview. Properly called PlayFab Multiplayer Communication Fabric.
 ms.author: v-thopra
@@ -20,7 +20,7 @@ ms.localizationpriority: medium
 >
 > Access to this feature is restricted to select titles. If you are interested in trying it, you can request access by submitting a ticket on [support.playfab.com](https://support.playfab.com/hc/en-us/requests/new).
 
-This is the homepage for the Bumblelion 1PP Preview. Properly called "PlayFab Multiplayer Communication Fabric," this relay service creates secure, ultra low-latency device-to-device networks. You can use these networks for game data or voice and text chat.
+This is the homepage for the Bumblelion 1PP Preview. Properly called "PlayFab Parties," this relay service creates secure, ultra low-latency device-to-device networks. You can use these networks for game data or voice and text chat.
 
 Here are current docs:
 
