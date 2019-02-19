@@ -52,7 +52,7 @@ Artifacts that are in progress:
 
 Table below indicates our confidence level for providing an SDK for the specified platform on that date. We intend to support every platform on this list it's simply a matter of time.
 
-|-|1PP Private Preview (1810)|Feburary (1902)| May - Public Preview (1905)| June (1906)|
+|-|1PP Private Preview (1810)|Feburary (1902)| GDC - Non-Production Public Preview | June - Production Public Preview (1906)|
 |-|-|-|-|-|
 |Win32/Win10|Done|-|-|-|
 |Xbox ERA|Available today without hardware acceleration|-|High|-|
