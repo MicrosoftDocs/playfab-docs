@@ -57,7 +57,7 @@ PlayFab offers a wide set of pages for fine tuning and analyzing your player. Th
 - Virtual currency
 - [Inventory](player-inventory.md) for managing the items that a player owns.
 - Purchases
-- [Friends](../../social/friends/friends-lists.md) for managing a player's friends list.
+- [Friends](../../social/friends/quickstart.md) for managing a player's friends list.
 - Characters
 - Multiplayers
 - [Bans](player-bans.md)

@@ -14,5 +14,4 @@ ms.localizationpriority: medium
 
 These tutorials teach you how to use Friends and Groups.
 
-- [Friends Lists](friends-lists.md)
 - [Friends Leaderboards](friends-leaderboards.md)

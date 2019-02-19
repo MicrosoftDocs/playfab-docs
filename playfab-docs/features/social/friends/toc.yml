@@ -5,5 +5,5 @@
 - name: Tutorials
   href: tutorials.md
   items:
-  - name: Friends Lists
-    href: friends-lists.md
+  - name: Friends Leaderboards
+    href: friends-leaderboards.md
