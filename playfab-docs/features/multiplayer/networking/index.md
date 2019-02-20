@@ -24,11 +24,11 @@ PlayFab Parties is a set of libraries and services for easily adding multiplayer
 
 Multiplayer games are typically one of two designs: authoritative and non-authoritative. Authoritative games have a central authority for game state, this may be a player device or [a cloud-hosted dedicated server](https://aka.ms/PlayFabCompute). Non-authoritative designs require player devices to synchronize game state cooperatively over a peer-to-peer network.
 
-PlayFab Parties use Communication Fabric (COFA) networks. COFA networks are an ideal, secure, low-latency transport for non-authoritative designs and authoritative designs where a cloud-hosted dedicated server is not desired. COFA is also well-suited to add voice and text communication to non-gameplay social experiences your app may provide (e.g. an in-game squad experience, or post-game lobbies).
+Parties are an ideal, secure, low-latency transport for non-authoritative designs and authoritative designs where a cloud-hosted dedicated server is not desired. Parties is also well-suited to add voice and text communication to non-gameplay social experiences your app may provide (e.g. an in-game squad experience, or post-game lobbies).
 
-COFA utilizes Azure Cognitive Services to transcribe player voice chat and synthesize utterances for text message. This functionality has several uses, but was primarily designed as an accessibility aide. Typical usage of COFA voice chat is billed on a per-minute basis, and up to 10% of those voice minutes can leverage transcription and synthesis for free. We recommend tying activation of this capability to an ease-of-access player setting.
+Parties utilizes Azure Cognitive Services to transcribe player voice chat and synthesize utterances for text message. This functionality has several uses, but was primarily designed as an accessibility aide. Typical usage of COFA voice chat is billed on a per-minute basis, and up to 10% of those voice minutes can leverage transcription and synthesis for free. We recommend tying activation of this capability to an ease-of-access player setting.
 
-COFA can not only transcribe player chat, but also translate chat in real time. In anonymous matchmaking and international competitive games, these transcription and translation capabilities can make for a more engaging multiplayer experience. 
+Parties can not only transcribe player chat, but also translate chat in real time. In anonymous matchmaking and international competitive games, these transcription and translation capabilities can make for a more engaging multiplayer experience. 
 
 ## Features
 
