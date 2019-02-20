@@ -1,11 +1,103 @@
-# News Quickstart
+---
+title: Title News quickstart
+author: v-rayro
+description: What Title News is and how to create it.
+ms.author: v-rayro
+ms.date: 11/01/2018
+ms.topic: article
+ms.prod: gaming
+keywords: playfab
+ms.localizationpriority: medium
+---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa tincidunt dui ut ornare lectus. Viverra vitae congue eu consequat ac felis donec. Leo urna molestie at elementum eu facilisis. A cras semper auctor neque vitae tempus quam. Amet cursus sit amet dictum sit amet justo donec enim. Faucibus turpis in eu mi bibendum neque egestas congue. Morbi quis commodo odio aenean sed adipiscing diam. Lectus vestibulum mattis ullamcorper velit. Dictum fusce ut placerat orci nulla pellentesque.
+# Title News quickstart
 
-Lorem mollis aliquam ut porttitor leo a diam sollicitudin. Mattis rhoncus urna neque viverra. Pharetra vel turpis nunc eget lorem dolor sed. Aliquam eleifend mi in nulla posuere sollicitudin aliquam ultrices. Adipiscing elit ut aliquam purus sit. Eleifend mi in nulla posuere sollicitudin aliquam. Luctus accumsan tortor posuere ac. Pulvinar sapien et ligula ullamcorper malesuada proin libero nunc consequat. Dignissim cras tincidunt lobortis feugiat vivamus at augue eget. Eu consequat ac felis donec et odio pellentesque diam volutpat. Fermentum odio eu feugiat pretium nibh ipsum. Enim sit amet venenatis urna cursus eget nunc. Sollicitudin nibh sit amet commodo. Varius quam quisque id diam vel quam elementum pulvinar. Vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant. Dui id ornare arcu odio ut. Imperdiet sed euismod nisi porta. Amet purus gravida quis blandit turpis cursus in.
+Title News is a mechanism for communicating with your players. It contains a few basic elements:
 
-In arcu cursus euismod quis viverra nibh cras. Feugiat scelerisque varius morbi enim nunc faucibus. Sed adipiscing diam donec adipiscing tristique risus nec. Mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien et. Convallis a cras semper auctor neque vitae tempus quam. Et leo duis ut diam quam nulla. Egestas sed tempus urna et pharetra pharetra. Arcu felis bibendum ut tristique et. Donec ac odio tempor orci dapibus ultrices in iaculis nunc. Ullamcorper a lacus vestibulum sed arcu non odio.
+- **Title**
+- **Date**
+- **Status**
+- **Body**
 
-Nulla aliquet enim tortor at auctor urna nunc id. Turpis massa sed elementum tempus. Commodo viverra maecenas accumsan lacus vel facilisis volutpat est. Nibh nisl condimentum id venenatis. Sagittis id consectetur purus ut faucibus. Diam maecenas ultricies mi eget mauris pharetra. Porttitor lacus luctus accumsan tortor posuere ac ut consequat semper. Nunc sed velit dignissim sodales. Tortor condimentum lacinia quis vel. Elementum curabitur vitae nunc sed velit dignissim sodales ut eu. Tincidunt eget nullam non nisi est sit amet facilisis magna. Pellentesque pulvinar pellentesque habitant morbi tristique senectus et netus. Morbi quis commodo odio aenean sed adipiscing diam donec. Nunc sed id semper risus in hendrerit gravida rutrum quisque. Id interdum velit laoreet id. Tempor id eu nisl nunc. Cras tincidunt lobortis feugiat vivamus at augue eget arcu dictum. Tempus urna et pharetra pharetra massa massa.
+> [!NOTE]
+> The body is a string, and can contain raw text or **JSON**.
 
-Risus in hendrerit gravida rutrum quisque non. Pulvinar mattis nunc sed blandit. Augue mauris augue neque gravida in fermentum et. Odio ut sem nulla pharetra diam sit amet nisl suscipit. Facilisis gravida neque convallis a cras semper. Ac turpis egestas maecenas pharetra convallis. Nunc non blandit massa enim nec dui nunc mattis enim. Eu facilisis sed odio morbi quis commodo odio aenean sed. Amet consectetur adipiscing elit pellentesque habitant. Lorem ipsum dolor sit amet consectetur adipiscing elit ut aliquam. In nibh mauris cursus mattis molestie a. Duis at consectetur lorem donec. Ac odio tempor orci dapibus ultrices in iaculis nunc. A arcu cursus vitae congue mauris rhoncus aenean vel elit. Facilisis magna etiam tempor orci eu lobortis elementum. Congue mauris rhoncus aenean vel elit. Gravida dictum fusce ut placerat orci nulla pellentesque dignissim enim. Netus et malesuada fames ac turpis egestas integer.
+## Creating Title News
+
+There are two ways to create Title News entries:
+
+1. Via Game Manager.
+2. Using the Admin **API** method [AddNews](xref:titleid.playfabapi.com.admin.title-widedatamanagement.addnews).
+
+To create Title News entries with Game Manager, you will need to be familiar with [Game Manager](../../config/gamemanager/quickstart.md).
+
+In the **Game Manager** screen:
+
+- Go to your menu and select **Content**.
+- In the **Title News** tab, enter the **Title** for your **Title News Content**.
+
+![Title News](../media/tutorials/game-manager-content-title-news.png)
+
+- Select the **Save Title News** button and your entry will be created.
+
+> [!NOTE]
+> The date will be set to the date when you selected the **Save Title News** button.
+
+- Alternately, you can create title news by calling [AddNews](xref:titleid.playfabapi.com.admin.title-widedatamanagement.addnews). Using the Admin **API** allows you to specify a custom timestamp. News added this way is *immediately* published. We've provided a code example, which follows.
+```csharp
+
+
+
+void CreateNews() {
+    PlayFabAdminAPI.AddNews(new AddNewsRequest {
+        Timestamp = new DateTime(2014, 1, 8, 12, 0, 0), // Any date - This one is the founding of PlayFab
+        Title = "My Second News",
+        Body = "This is my second news post."
+    },
+    result => Debug.Log("News post added!"),
+    error => Debug.LogError(error.GenerateErrorReport()));
+}
+
+```
+
+## Reading Title News
+
+Reading the Title News is very simple. The **GetTitleNews** method returns get all published title news entries.
+
+> [!NOTE]
+> Archived and unpublished entries will *not* be returned.
+
+```csharp
+
+
+void ReadTitleNews() {
+    PlayFabClientAPI.GetTitleNews(new GetTitleNewsRequest(), result => {
+        Debug.Log("Got latest news!");
+        // Process news using result.News
+    }, error => Debug.LogError(error.GenerateErrorReport()));
+}
+
+```
+## Update Title News
+
+The content of a Title News entry can only be modified in Game Manager.
+
+To locate the entry you wish to modify in **Game Manager**:
+
+- Go to your menu and select **Content**.
+- Go to your **Title News** tab.
+- Select **Existing Entry**.
+- Update the **Title**, **Status**, or **Data** for the entry.
+- Select the **Save Title News** button.
+
+If plan is to post unpublished entries for future release, this is the methodology to to use to transition them into published and archived states. It also allows the user to fix typos.
+
+## Deleting Title News
+
+Once an entry is no longer needed, you can delete it in the **Game Manager**. Find the entry you wish to modify, then:
+
+- Navigate to your **Title**.
+- In your menu, select **Content**.
+- Go to **Title News**.
+- Put a check in the checkbox for the **Existing Entry**.
+- Select the **Title News** entries you wish to delete, and choose **X Delete Title News**.

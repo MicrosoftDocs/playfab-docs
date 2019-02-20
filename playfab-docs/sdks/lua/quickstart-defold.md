@@ -1,4 +1,16 @@
-# Lua Quickstart for Defold
+---
+title: Lua quickstart for Defold
+author: v-thopra
+description: This guide will help you make your first PlayFab API call using Defold.
+ms.author: v-thopra
+ms.date: 06/11/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, lua, defold, gui script
+ms.localizationpriority: medium
+---
+
+# Lua quickstart for Defold
 
 This guide will help you make your first PlayFab API call using Defold.
 
@@ -6,9 +18,9 @@ This guide will help you make your first PlayFab API call using Defold.
 
 - OS: This guide is written for Windows 10, however it should also work fine with a Mac
 - Download Defold
-  - Create an account, or log in at [http://www.defold.com/](http://www.defold.com/) (Uses Google O-Auth)
+  - Create an account, or log in at [https://www.defold.com/](https://www.defold.com/) (Uses Google O-Auth)
   - Download and install Defold
-    - [http://d.defold.com/stable/](http://d.defold.com/stable/)
+    - [https://d.defold.com/stable/](https://d.defold.com/stable/)
 
   - Create a new project on the Defold Dashboard
     - After logging in, you should find yourself at the Defold dashboard
@@ -60,6 +72,9 @@ This guide will provide the minimum steps make your first PlayFab API call. Conf
   - This should open the file for text editing
   - Update the contents of PfGettingStarted.gui_script as follows:
 
+> [!NOTE]
+> To look up the correct format for the loginRequest object in this example, see the API reference for [LoginWithCustomID](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid).
+
 ```gui_script
 local PlayFabClientApi = require("PlayFab.PlayFabClientApi")
 local IPlayFabHttps = require("PlayFab.IPlayFabHttps")
@@ -70,7 +85,7 @@ PlayFabClientApi.settings.titleId = "144" -- Please change this value to your ow
 
 function init(self)
     local loginRequest = {
-        -- https://api.playfab.com/documentation/Client/method/LoginWithCustomID
+        -- See the API reference for LoginWithCustomID
         TitleId = PlayFabClientApi.settings.titleId,
         CustomId = "GettingStartedGuide",
         CreateAccount = true
@@ -196,8 +211,7 @@ max_nodes: 512
   - Congratulations, you made your first successful API call!
 
 - At this point, you can start making other api calls, and building your game
-  - For a list of all available client API calls, see our documentation:
-    - [https://api.playfab.com/](https://api.playfab.com/)
+  - For a list of all available client API calls, see our [PlayFab API References](../../api-references/index.md) documentation.
 
 - Happy coding!
 
@@ -206,7 +220,7 @@ max_nodes: 512
 - PfGettingStarted.gui
   - Our instructions for PfGettingStarted.gui are for expediency, not instruction. This file is a gui definition, which adds a text box to the screen, binds it to our other script: PfGettingStarted.gui_script. You would NOT typically edit these files in text-form.
   - For proper instructions on how to build Defold GUI widgets, please read this guide:
-  - [http://www.defold.com/manuals/gui/]([http://www.defold.com/manuals/gui/)
+  - [GUI scenes in Defold](https://www.defold.com/manuals/gui/)
 
 - PfGettingStarted.gui_script
   - Require statements and setup
@@ -225,10 +239,10 @@ max_nodes: 512
     - Every API method requires a unique request object, with a mix of optional and mandatory parameters
       - For LoginWithCustomIDRequest, there is a mandatory parameter of CustomId, which uniquely identifies a player and CreateAccount, which allows the creation of a new account with this call.
     - For login, most developers will want to use a more appropriate login method
-      - See the [PlayFab Login documentation](https://api.playfab.com/documentation/Client#Authentication) for a list of all login methods, and input parameters. Common choices are:
-        - [LoginWithAndroidDeviceID](https://api.playfab.com/documentation/Client/method/LoginWithAndroidDeviceID)
-        - [LoginWithIOSDeviceID](https://api.playfab.com/documentation/Client/method/LoginWithIOSDeviceID)
-        - [LoginWithEmailAddress](https://api.playfab.com/documentation/Client/method/LoginWithEmailAddress)
+      - See the [PlayFab Login documentation](xref:titleid.playfabapi.com.client.authentication) for a list of all login methods, and input parameters. Common choices are:
+        - [LoginWithAndroidDeviceID](xref:titleid.playfabapi.com.client.authentication.loginwithandroiddeviceid)
+        - [LoginWithIOSDeviceID](xref:titleid.playfabapi.com.client.authentication.loginwithiosdeviceid)
+        - [LoginWithEmailAddress](xref:titleid.playfabapi.com.client.authentication.loginwithemailaddress)
 
   - PlayFabClientApi.LoginWithCustomID(loginRequest, OnLoginSuccess, OnLoginFailed)
     - This performs the API call using the request, and provides callback functions for success and fail conditions
@@ -243,7 +257,7 @@ max_nodes: 512
       - PlayFabSettings.TitleId is not set. If you forget to set titleId to your title, then nothing will work.
       - Request parameters. If you have not provided the correct or required information for a particular API call, then it will fail. See error.errorMessage, error.errorDetails, or error.GenerateErrorReport() for more info.
       - Device connectivity issue. Cell-phones lose/regain connectivity constantly, and so any API call at any time can fail randomly, and then work immediately after. Going into a tunnel can disconnect you completely.
-      - PlayFab server issue. As with all software, there can be issues. See our [release notes](https://api.playfab.com/releaseNotes/) for updates.
+      - PlayFab server issue. As with all software, there can be issues. See our [release notes](../../release-notes/index.md) for updates.
       - The internet is not 100% reliable. Sometimes the message is corrupted or fails to reach the PlayFab server.
 
     - If you are having difficulty debugging an issue, and the information within the error information is not sufficient, please visit us on our [forums](https://community.playfab.com/index.html)

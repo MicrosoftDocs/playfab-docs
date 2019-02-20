@@ -1,7 +1,34 @@
-- name: Player Data
+- name: Overview
   href: index.md
+- name: Quickstart
+  href: quickstart.md
+- name: Tutorials
+  href: tutorials.md
   items:
-  - name: Quickstart
-    href: quickstart.md
-  - name: Tutorials
-    href: tutorials.md
+  - name: Using Entity Objects
+    href: entity-objects.md
+  - name: Using Entity Files
+    href: entity-files.md
+  - name: Getting Player Profiles
+    href: getting-player-profiles.md
+  - name: Player Inventory
+    href: player-inventory.md
+  - name: Using the Players page
+    href: using-the-players-page.md
+  - name: Using Player details
+    href: player-details.md
+  - name: Player Logins report
+    href: player-logins.md
+  - name: Player Ban System
+    href: player-bans.md
+  - name: Player Segments
+    href: player-segments.md
+  - name: Player Segment configuration
+    href: player-segment-configuration.md
+  - name: PlayFab GDPR
+    href: playfab-gdpr-deleting-and-exporting-player-data.md
+  - name: Using Player Publisher Data
+    href: using-player-publisher-data.md
+  - name: Using player statistics
+    href: using-player-statistics.md
+  

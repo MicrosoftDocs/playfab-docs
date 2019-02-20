@@ -1,27 +1,27 @@
-- name: PlayFab Docs
+- name: PlayFab
   href: index.md
+- name: Quickstarts
+  href: index.md?#pivot=documentation&panel=quickstarts
+- name: Features
+  expanded: true
   items:
-  - name: Personas
-    items: 
-    - name: Developers
-      href: ./personas/developer.md
-    - name: LiveOps
-      href: ./personas/liveops.md
-    - name: Business Intelligence
-      href: ./personas/bi.md
-  - name: Resources
-    items:
-    - name: Event Archive
-      href: ./resources/event-archive.md
-    - name: Recipes
-      href: ./resources/recipes.md
-    - name: Technical Whitepaper
-      href: http://s3-us-west-2.amazonaws.com/api-playfab-com-craft-files/FileAssets/playfabtechnicalwhitepaper_2016.06.18.pdf
-  - name: Features
-    href: ./features/index.md
-  - name: SDKs
-    href: ./sdks/index.md
-  - name: API References
-    href: ./api-references/index.md
-  - name: Release Notes
-    href: ./release-notes/index.md
+  - name: Authentication
+    href: index.md?#pivot=documentation&panel=authentication
+  - name: Data
+    href: index.md?#pivot=documentation&panel=data
+  - name: Config
+    href: index.md?#pivot=documentation&panel=config
+  - name: Automation
+    href: index.md?#pivot=documentation&panel=automation
+  - name: Social
+    href: index.md?#pivot=documentation&panel=social
+  - name: Commerce
+    href: index.md?#pivot=documentation&panel=commerce
+  - name: Multiplayer
+    href: index.md?#pivot=documentation&panel=multiplayer
+  - name: Analytics
+    href: index.md?#pivot=documentation&panel=analytics
+  - name: Engagement
+    href: index.md?#pivot=documentation&panel=engagement
+- name: SDKs
+  href: index.md?#pivot=documentation&panel=sdks

@@ -1,7 +1,0 @@
-- name: Dev-Test-Live
-  href: index.md
-  items:
-  - name: Quickstart
-    href: quickstart.md
-  - name: Tutorials
-    href: tutorials.md

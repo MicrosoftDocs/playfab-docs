@@ -1,3 +1,15 @@
+---
+title: Cocos2D-x Quickstart
+author: v-thopra
+description: This guide will help you make your first PlayFab API call in the Cocos2d-x engine.
+ms.author: v-thopra
+ms.date: 06/11/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, cocos-2dx, playfab cocos-2dx sdk
+ms.localizationpriority: medium
+---
+
 # Cocos2D-x Quickstart
 
 This guide will help you make your first PlayFab API call in the Cocos2d-x engine.
@@ -9,11 +21,11 @@ This guide will help you make your first PlayFab API call in the Cocos2d-x engin
   - Visual Studio 2013 will have identical steps, but the screenshots will look a little different from yours
 
   - Download and install Cocos2d-x
-    - [http://www.cocos2d-x.org/download](http://www.cocos2d-x.org/download)
+    - [https://www.cocos2d-x.org/download](https://www.cocos2d-x.org/download)
     - Setting up Cocos2d-x requires some familiarity. Check out their guides:
-      - [http://cocos2d-x.org/docs/installation/Windows/](http://cocos2d-x.org/docs/installation/Windows/)
-      - [http://cocos2d-x.org/docs/editors_and_tools/cocosCLTool/](http://cocos2d-x.org/docs/editors_and_tools/cocosCLTool/)
-      - Note the [Cocos Prerequisites](http://www.cocos2d-x.org/docs/cocos2d-x/en/installation/prerequisites.html)
+      - [https://cocos2d-x.org/docs/installation/Windows/](https://cocos2d-x.org/docs/installation/Windows/)
+      - [https://cocos2d-x.org/docs/editors_and_tools/cocosCLTool/](https://cocos2d-x.org/docs/editors_and_tools/cocosCLTool/)
+      - Note the [Cocos Prerequisites](https://docs.cocos2d-x.org/cocos2d-x/en/installation/prerequisites.html)
       - This guide also requires Visual Studio 2013 or 2015
 
   - Once you have Cocos2d-x configured, create a project using the Cocos CLI:
@@ -41,7 +53,7 @@ This guide will help you make your first PlayFab API call in the Cocos2d-x engin
 ```
 
 - Download PlayFab Cocos2d-xSdk
-  - [https://api.playfab.com/sdks/download/cpp-cocos2dx](https://api.playfab.com/sdks/download/cpp-cocos2dx)
+  - [Cocos2D-x SDK (C++)](https://api.playfab.com/downloads/cocos-2d-sdk)
   - Save and extract it to a temporary location {PlayFabCocos}
   - Open the following folder in Windows Explorer: {PlayFabCocos}/PlayFabClientSDK
   - Open the following folder in a second Windows Explorer: {CocosGettingStarted}/Classes
@@ -195,8 +207,7 @@ void HelloWorld::OnLoginFail(const PlayFab::PlayFabError& error, void* customDat
   - Congratulations, you made your first successful API call!
 
 - At this point, you can start making other api calls, and building your game
-- For a list of all available client API calls, see our documentation:
-  - [https://api.playfab.com/](https://api.playfab.com/)
+- For a list of all available client API calls, see our [PlayFab API References](../../api-references/index.md) documentation.
   
 - Happy coding!
 

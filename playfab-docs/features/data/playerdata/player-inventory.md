@@ -12,32 +12,43 @@ ms.localizationpriority: medium
 
 # Player inventory
 
-**Requirement**: In order to use Player Inventory, you must have a Catalog defined for your title. Please read our [Catalogs](../../commerce/items/catalogs.md) tutorial for more information. You can, optionally, also define Stores for your Catalog. While a Catalog is the list of all items available in the game, a Store is a subset of items from the Catalog, optionally with unique pricing. Multiple Stores can be defined per Catalog, so that you can have distinct sets of items for presentation to the player based upon user Segmentation or other factors.
+## Requirements
 
-Once you have defined a Catalog through the [Game Manager](https://developer.playfab.com/) or though our Admin [SetCatalogItems](https://api.playfab.com/documentation/admin/method/SetCatalogItems) or [UpdateCatalogItems](https://api.playfab.com/documentation/admin/method/UpdateCatalogItems) API calls, you will be able to use a wide variety of inventory API calls on the client and server.
+In order to use the player inventory, you must have a catalog defined for your title. Please read our [Catalogs](../../commerce/items/catalogs.md) tutorial for more information.
+
+> [!NOTE]
+> Optionally, you can also define stores for your catalog.
+
+While a catalog is the list of all of the items available in the game, a store is a subset of items from the catalog that has the option of unique pricing.
+
+Multiple stores can be defined per catalog, so that you can have distinct sets of items for presentation to the player, based upon user segmentation or other factors.
+
+Once you have defined a catalog through the [**Game Manager**](https://developer.playfab.com/) or though our admin **[SetCatalogItems](xref:titleid.playfabapi.com.admin.title-widedatamanagement.setcatalogitems)** or **[UpdateCatalogItems](xref:titleid.playfabapi.com.admin.title-widedatamanagement.updatecatalogitems) API** calls, you will be able to use a wide variety of **Inventory API** calls on the client and server.
 
 ## API Overview
 
-All inventory API calls are designed to be server-authoritative and secure. Used properly, customers will not be able to cheat or acquire items they did not earn.
+All inventory **API** calls are designed to be *server-authoritative* and secure. Used properly, customers will not be able to cheat or acquire items they did not earn.
 
-Client:
+**Clients**:
 
-- Buy Items with virtual currency: [PurchaseItem](https://api.playfab.com/documentation/client/method/PurchaseItem)
-- Real money purchases: [StartPurchase](https://api.playfab.com/documentation/client/method/StartPurchase), [PayForPurchase](https://api.playfab.com/documentation/client/method/PayForPurchase), [ConfirmPurchase](https://api.playfab.com/documentation/client/method/ConfirmPurchase)
-- View items a player has: [GetUserInventory](https://api.playfab.com/documentation/client/method/GetUserInventory)
-- Remove Items: [ConsumeItem](https://api.playfab.com/documentation/client/method/ConsumeItem), [UnlockContainerInstance](https://api.playfab.com/documentation/client/method/UnlockContainerInstance)
-- Trade Items: [OpenTrade](https://api.playfab.com/documentation/client/method/OpenTrade), [GetPlayerTrades](https://api.playfab.com/documentation/client/method/GetPlayerTrades), [AcceptTrade](https://api.playfab.com/documentation/client/method/AcceptTrade), [CancelTrade](https://api.playfab.com/documentation/client/method/CancelTrade)
+- Buy Items with virtual currency: **[PurchaseItem](xref:titleid.playfabapi.com.client.playeritemmanagement.purchaseitem)**
+- Make Real Money purchases: **[StartPurchase](xref:titleid.playfabapi.com.client.playeritemmanagement.startpurchase), [PayForPurchase](xref:titleid.playfabapi.com.client.playeritemmanagement.payforpurchase), [ConfirmPurchase](xref:titleid.playfabapi.com.client.playeritemmanagement.confirmpurchase)**
+- Can view the items a player has: **[GetUserInventory](xref:titleid.playfabapi.com.client.playeritemmanagement.getuserinventory)**
+- Can remove items: **[ConsumeItem](xref:titleid.playfabapi.com.client.playeritemmanagement.consumeitem), [UnlockContainerInstance](xref:titleid.playfabapi.com.client.playeritemmanagement.unlockcontainerinstance)**
+- Can trade items: **[OpenTrade](xref:titleid.playfabapi.com.client.trading.opentrade), [GetPlayerTrades](xref:titleid.playfabapi.com.client.trading.getplayertrades), [AcceptTrade](xref:titleid.playfabapi.com.client.trading.accepttrade), [CancelTrade](xref:titleid.playfabapi.com.client.trading.canceltrade)**
 
-Server:
+**Server**:
 
-- Gift/Grant Items: [GrantItemsToUser](https://api.playfab.com/documentation/server/method/GrantItemsToUser)
-- View Items: [GetUserInventory](https://api.playfab.com/documentation/server/method/GetUserInventory)
-- Modify items: [ModifyItemUses](https://api.playfab.com/documentation/server/method/ModifyItemUses), [UpdateUserInventoryItemCustomData](https://api.playfab.com/documentation/server/method/UpdateUserInventoryItemCustomData)
-- Remove Items: [RevokeInventoryItem](https://api.playfab.com/documentation/server/method/RevokeInventoryItem), [ConsumeItem](https://api.playfab.com/documentation/server/method/ConsumeItem), [UnlockContainerInstance](https://api.playfab.com/documentation/server/method/UnlockContainerInstance)
+- May Gift/Grant items: **[GrantItemsToUser](xref:titleid.playfabapi.com.server.playeritemmanagement.grantitemstouser)**
+- Can view the  items: **[GetUserInventory](xref:titleid.playfabapi.com.server.playeritemmanagement.getuserinventory)**
+- Can modify items: **[ModifyItemUses](xref:titleid.playfabapi.com.server.playeritemmanagement.modifyitemuses), [UpdateUserInventoryItemCustomData](xref:titleid.playfabapi.com.server.playeritemmanagement.updateuserinventoryitemcustomdata)**
+- Can remove items: **[RevokeInventoryItem](xref:titleid.playfabapi.com.server.playeritemmanagement.revokeinventoryitem), [ConsumeItem](xref:titleid.playfabapi.com.server.playeritemmanagement.consumeitem), [UnlockContainerInstance](xref:titleid.playfabapi.com.server.playeritemmanagement.unlockcontainerinstance)**
+The following example illustrates the code blocks that call these **API** methods, and sets up basic use-cases for player inventory.
 
-Below, we will show code blocks that call these API methods and set up basic use-cases for player inventory.
+> [!NOTE]
+> For reference, these examples come from **Unicorn Battle**, a game we built as an example to demonstrate the PlayFab features.
 
-For reference, these examples come from Unicorn Battle, an example game we built to demonstrate PlayFab features. The AU virtual currency used below is "Gold", a free currency earned by fighting monsters (See our [Currencies](../../commerce/economy/currencies.md) tutorial).
+The AU virtual currency used below is "Gold", a free currency earned by fighting monsters (See our [Currencies](../../commerce/economy/currencies.md) tutorial).
 
 Before we get started, we will be defining a few utility functions that will be used and reused in most of the examples in this guide.
 
@@ -58,21 +69,21 @@ void LogFailure(PlayFabError error) {
 }
 ```
 
-## Client-only Example: Purchase and Consume a Health Potion
+## Client-only example: purchase and consume a health potion
 
-Client API call order: [PurchaseItem](https://api.playfab.com/documentation/client/method/PurchaseItem), [GetUserInventory](https://api.playfab.com/documentation/client/method/GetUserInventory), [ConsumeItem](https://api.playfab.com/documentation/server/method/ConsumeItem)
+Client **API** call order: [PurchaseItem](xref:titleid.playfabapi.com.client.playeritemmanagement.purchaseitem), [GetUserInventory](xref:titleid.playfabapi.com.client.playeritemmanagement.getuserinventory), [ConsumeItem](xref:titleid.playfabapi.com.server.playeritemmanagement.consumeitem)
 
-First we must begin by defining the item in our Catalog:
+First we must begin by defining the item in our catalog.
 
 ![PlayFab - Economy - Edit Catalog Item](media/tutorials/playfab-edit-catalog-item.png)  
 
-CatalogItem requirements for the "Health Potion" in this example:
+Here are the **CatalogItem** requirements for the **Health Potion**.
 
-- PurchaseItem requires a positive item price (5 AU).
-- ConsumeItem requires the item to be Consumable, with a positive item count (3).
+- **PurchaseItem** requires a positive item price (**5 AU**).
+- **ConsumeItem** requires the item to be **Consumable**, with a positive item count (**3**).
 - The player making the purchase must have 5 AU available in their virtual currency balance.
 
-The code for each call:
+The code for each call is provided below.
 
 ```csharp
 void MakePurchase() {
@@ -98,21 +109,27 @@ void ConsumePotion() {
 }
 ```
 
-## Example: Player is Granted and Opens a Container
+## Example: player is granted and opens a container
 
-API call order: Server/[GrantItemsToUser](https://api.playfab.com/documentation/server/method/GrantItemsToUser), Client/[UnlockContainerInstance](https://api.playfab.com/documentation/client/method/UnlockContainerInstance)
+**API** call order:
 
-First, we must begin with a container defined in our catalog. For this example, a "Crystal Container". This example also demonstrates opening the container with a key - an optional item which must also be in the player inventory for the UnlockContainerInstance call to be successful.
+- Server/[GrantItemsToUser](xref:titleid.playfabapi.com.server.playeritemmanagement.grantitemstouser)
+- Client/[UnlockContainerInstance](xref:titleid.playfabapi.com.client.playeritemmanagement.unlockcontainerinstance)
+
+First, we must begin with a container defined in our catalog. For our container in this example, we selected a **Crystal Container**.
+
+This example also demonstrates opening the container with a key - an *optional* item which must also be in the player inventory for the **UnlockContainerInstance** call to be successful.
 
 ![PlayFab - Economy - Edit Catalog Container](media/tutorials/playfab-edit-catalog-container.png)
 
-CatalogItem requirements for the "Crystal Container" in this example:
+**CatalogItem** requirements for our **Crystal Container** in this example include:
 
-- The only required element of this example is that "Crystal Container" be defined as a container.
-- Containers can optionally define a key item, which is then required to unlock the container - in this case, a "Crystal Key".
-- It is highly suggested that your container and any key both be Consumable, with a positive use count, so that they are removed from the player inventory after use.
+- That the **Crystal Container** be defined as a **Container**.
 
-Server code:
+- That **Containers** can optionally define a **Key Item**, which is then required to unlock the **Container** - in this case, a **Crystal Key**.
+- It is highly suggested that your **Container** and any **Key** *both* be **Consumable**, with a positive use count, so that they are removed from the player inventory after use.
+
+**Server code**
 
 ```csharp
 void GrantItem() {
@@ -126,7 +143,7 @@ void GrantItem() {
 }
 ```
 
-Client Code:
+**Client code**
 
 ```csharp
 void OpenContainer() {
@@ -139,29 +156,37 @@ void OpenContainer() {
 }
 ```
 
-### Consuming Keys and Containers
+### Consuming keys and containers
 
-In the previous example, it is suggested that the key and/or container is consumable, though that's only a recommendation. If a container and its key (if any) are not consumable, the container can be re-opened infinitely, granting its contents to the player each time. Because the player inventory capacity is not infinite, this pattern is greatly discouraged. When a consumable container is unlocked, both it and the consumable key used automatically have their usage count decremented, removing them from the player inventory when the usage count reaches zero.
+In the previous example, it is suggested that the key and/or container are *consumable*, though that's only a recommendation.
+
+But if a container and its key (if any) are *not consumable*, the container can be re-opened *infinitely*, granting its contents to the player each time.
+
+Because the player inventory capacity is *not* infinite, this pattern is greatly discouraged. When a consumable container is unlocked, both it and the consumable key that was used will automatically have their usage count *decreased*, removing them from the player inventory when the usage count reaches zero.
 
 ### Viable options
 
-Consumable container, no key: The most basic pattern, in which the container is consumed when opened, and there is no key.
+**Consumable Container**, no **Key**: The most basic pattern, in which the container is consumed when opened, and there is no key.
 
-Consumable container, consumable key: The simple locked container case, which allows the player to open the container with they key. Both are consumed, and the player can only open a container with uses remaining with a key with uses remaining.
+**Consumable Container, consumable Key**: The simple locked container case, which allows the player to open the container with they key. *Both* are consumed, and the player can only open a container with uses remaining with a key with uses remaining.
 
-Durable container, consumable key: This allows a player to open the container every time they find a key. The key is consumed, and the container is only opened while the key has uses remaining.
+**Durable Container, consumable Key**: This allows a player to open the container every time they find a key. The key is consumed, and the container is only opened while the key has uses remaining.
 
-Consumable container, durable key: This allows a player to keep a key that can open all containers for which it is the key item. The container is consumed, but the player retains the ability to open containers with the key later.
+**Consumable Container, durable Key**: This allows a player to keep a key that can open *all* of the containers for which it is the key item. The container is consumed, but the player retains the ability to open containers with the key later.
 
-## Example: Buying Inventory Items from the Player
+## Example: buying inventory items from the player
 
-There is no built-in API for buying back inventory items from the player, as the process is game specific. However, you can use the existing API methods to craft your own sell item experience: Server/[RevokeInventoryItem](https://api.playfab.com/documentation/server/method/RevokeInventoryItem) allows you to remove an inventory item, and Server/[AddUserVirtualCurrency](https://api.playfab.com/documentation/server/method/AddUserVirtualCurrency) can return an appropriate amount of virtual currency. It is not currently possible to return real-money through PlayFab API methods.
+There is no built-in **API** for buying back inventory items from the player, as the process is game-specific. However, you can use the *existing* **API** methods to craft your own Sell Item experience:
+- **Server/[RevokeInventoryItem](xref:titleid.playfabapi.com.server.playeritemmanagement.revokeinventoryitem)** allows you to remove an inventory item.
 
-Items and virtual currencies have a close relationship. For more information, see our [Currencies](../../commerce/economy/currencies.md) tutorial.
+- **Server/[AddUserVirtualCurrency](xref:titleid.playfabapi.com.server.playeritemmanagement.adduservirtualcurrency)** can return an appropriate amount of virtual currency. It is *not* currently possible to return real money through PlayFab **API** methods.
 
-The following Cloud Script function combines the two described server calls into a single client-accessible call:
+> [!NOTE]
+> Items and virtual currencies have a close relationship. For more information, see our [Currencies](../../commerce/economy/currencies.md) tutorial.
 
-```csharp
+The following **CloudScript** function combines the two described server calls into a single client-accessible call.
+
+```javascript
 var SELL_PRICE_RATIO = 0.75;
 function SellItem_internal(soldItemInstanceId, requestedVcType) {
     var inventory = server.GetUserInventory({ PlayFabId: currentPlayerId });
@@ -198,19 +223,23 @@ handlers.SellItem = function (args) {
 };
 ```
 
-### Best Practices
+### Best practices
 
-- Make sure to verify all client input information as valid before making any changes.
-- Cloud Script is not atomic so call order matters: AddUserVirtualCurrency may succeed and RevokeInventoryItem may fail. It is generally better to give the player something they didn't earn in this process, than to take something away without compensation.
+- Make sure to verify all client input information as *valid* before making any changes.
 
-This Cloud Script function can then be accessed from the client:
+- **CloudScript** is *not* atomic, so call order matters: **AddUserVirtualCurrency** may succeed and **RevokeInventoryItem** may fail. 
+
+> [!TIP]
+> It is generally better to give the player something they *didn't* earn in this process, than to take something away *without* compensation.
+
+This **CloudScript** function can then be accessed from the client.
 
 ```csharp
 void SellItem()
 {
     PlayFabClientAPI.ExecuteCloudScript(new ExecuteCloudScriptRequest
     {
-        // This must match "SellItem" from the "handlers.SellItem = ..." line in the Cloud Script file
+        // This must match "SellItem" from the "handlers.SellItem = ..." line in the CloudScript file
         FunctionName = "SellItem", 
         FunctionParameter = new Dictionary<string, string>{
             // This is a hex-string value from the GetUserInventory result

@@ -1,3 +1,15 @@
+---
+title: Unreal Engine Quickstart
+author: v-thopra
+description: This guide will help you set up the Unreal Engine, install the PlayFab Marketplace Plugin, and make your first API call in Unreal, using the PlayFab Marketplace Plugin.
+ms.author: v-thopra
+ms.date: 06/11/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, unreal, playfab marketplace plugin, c++, blueprint
+ms.localizationpriority: medium
+---
+
 # Unreal Engine Quickstart
 
 This guide will help you set up Unreal Engine, install the PlayFab Marketplace Plugin, and make your first API call in Unreal, using the PlayFab Marketplace Plugin. You can make your first API call using Blueprints, or C++, or both.
@@ -8,11 +20,13 @@ This guide will help you set up Unreal Engine, install the PlayFab Marketplace P
 - [Set up your first Blueprint call](#set-up-your-first-blueprint-call)
   - [Finish and Execute with Blueprint](#finish-and-execute-with-blueprint)
 
-- [Set up your first C++ call](#set-up-your-first-c++-call)
-  - [Finish and Execute with C++](#finish-and-execute-with-c++)
+- [Set up your first C++ call](#set-up-your-first-c-call)
+  - [Finish and Execute with C++](#finish-and-execute-with-c)
   
 - [Deconstruct the Blueprint Example](#deconstruct-the-blueprint-example)
-- [Deconstruct the C++ code example](#deconstruct-the-c++-code-example)
+- [Deconstruct the C++ code example](#deconstruct-the-c-code-example)
+
+- [Upgrading to the Unreal Marketplace Plugin](#upgrading-to-the-unreal-marketplace-plugin)
 
 ## Unreal Project Setup
 
@@ -203,10 +217,10 @@ This optional last section describes each part of the blueprints above, in detai
 - Login with Custom ID
   - This begins the async request to "LoginWithCustomID"
   - For login, most developers will want to use a more appropriate login method
-    - See the [PlayFab Login documentation](https://api.playfab.com/documentation/Client#Authentication) for a list of all login methods, and input parameters. Common choices are:
-      - [LoginWithAndroidDeviceID](https://api.playfab.com/documentation/Client#Authentication)
-      - [LoginWithIOSDeviceID](https://api.playfab.com/documentation/Client/method/LoginWithIOSDeviceID)
-      - [LoginWithEmailAddress](https://api.playfab.com/documentation/Client/method/LoginWithEmailAddress)
+    - See the [PlayFab Login documentation](xref:titleid.playfabapi.com.client.authentication) for a list of all login methods, and input parameters. Common choices are:
+      - [LoginWithAndroidDeviceID](xref:titleid.playfabapi.com.client.authentication.loginwithandroiddeviceid)
+      - [LoginWithIOSDeviceID](xref:titleid.playfabapi.com.client.authentication.loginwithiosdeviceid)
+      - [LoginWithEmailAddress](xref:titleid.playfabapi.com.client.authentication.loginwithemailaddress)
   - The left-side blueprint pins
     - Blue: Request
       - For every PlayFab API blueprint, this must always receive from a paired Make Request blueprint node
@@ -242,7 +256,7 @@ This optional last section describes each part of the blueprints above, in detai
       - PlayFabSettings.TitleId is not set. If you forget to set titleId to your title, then nothing will work.
       - Request parameters. If you have not provided the correct or required information for a particular API call, then it will fail. See error.errorMessage, error.errorDetails, or error.GenerateErrorReport() for more info.
       - Device connectivity issue. Cell-phones lose/regain connectivity constantly, and so any API call at any time can fail randomly, and then work immediately after. Going into a tunnel can disconnect you completely.
-      - PlayFab server issue. As with all software, there can be issues. See our [release notes](https://api.playfab.com/releaseNotes) for updates.
+      - PlayFab server issue. As with all software, there can be issues. See our [release notes](../../release-notes/index.md) for updates.
       - The internet is not 100% reliable. Sometimes the message is corrupted or fails to reach the PlayFab server.
     - If you are having difficulty debugging an issue, and the information within the error information is not sufficient, please visit us on our [forums](https://community.playfab.com/index.html)
   
@@ -281,10 +295,10 @@ This optional last section describes the code in this project line by line.
   - clientAPI->LoginWithCustomID(request, {OnSuccess delegate}, {OnFail delegate});
     - This begins the async request to "LoginWithCustomID", which will call LoginCallback when the API call is complete
     - For login, most developers will want to use a more appropriate login method
-      - See the [PlayFab Login documentation](https://api.playfab.com/documentation/Client#Authentication) for a list of all login methods, and input parameters. Common choices are:
-        - [LoginWithAndroidDeviceID](https://api.playfab.com/documentation/Client#Authentication)
-        - [LoginWithIOSDeviceID](https://api.playfab.com/documentation/Client/method/LoginWithIOSDeviceID)
-        - [LoginWithEmailAddress](https://api.playfab.com/documentation/Client/method/LoginWithEmailAddress)
+      - See the [PlayFab Login documentation](xref:titleid.playfabapi.com.client.authentication) for a list of all login methods, and input parameters. Common choices are:
+        - [LoginWithAndroidDeviceID](xref:titleid.playfabapi.com.client.authentication.loginwithandroiddeviceid)
+        - [LoginWithIOSDeviceID](xref:titleid.playfabapi.com.client.authentication.loginwithiosdeviceid)
+        - [LoginWithEmailAddress](xref:titleid.playfabapi.com.client.authentication.loginwithemailaddress)
   - {OnSuccess delegate}: PlayFab::UPlayFabClientAPI::FLoginWithCustomIDDelegate::CreateUObject(this, &ALoginActor::OnSuccess)
     - combined with: void ALoginActor::OnSuccess(const PlayFab::ClientModels::FLoginResult& Result) const
     - These create a UObject callback/delegate which is called if your API call is successful
@@ -297,7 +311,11 @@ This optional last section describes the code in this project line by line.
       - PlayFabSettings.TitleId is not set. If you forget to set titleId to your title, then nothing will work.
       - Request parameters. If you have not provided the correct or required information for a particular API call, then it will fail. See error.errorMessage, error.errorDetails, or error.GenerateErrorReport() for more info.
       - Device connectivity issue. Cell-phones lose/regain connectivity constantly, and so any API call at any time can fail randomly, and then work immediately after. Going into a tunnel can disconnect you completely.
-      - PlayFab server issue. As with all software, there can be issues. See our [release notes](https://api.playfab.com/releaseNotes) for updates.
+      - PlayFab server issue. As with all software, there can be issues. See our [release notes](../../release-notes/index.md) for updates.
       - The internet is not 100% reliable. Sometimes the message is corrupted or fails to reach the PlayFab server.
     - At this time, the PlayFab Unreal C++ SDK maintains state with static variables which are non atomic and are not guarded by synchronization techniques. For this reason, we recommend limiting PlayFab calls to within the main Unreal thread.
     - If you are having difficulty debugging an issue, and the information within the error information is not sufficient, please visit us on our [forums](https://community.playfab.com/index.html)
+
+## Upgrading to the Unreal Marketplace Plugin
+
+The [Unreal Marketplace Plugin - Upgrade Tutorial](unreal-marketplace-plugin-upgrade-tutorial.md) will step you through upgrading your project from either the PlayFab Unreal C++ SDK or the PlayFab Unreal Blueprint SDK, to the new PlayFab Unreal Marketplace Plugin.

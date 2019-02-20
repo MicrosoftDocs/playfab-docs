@@ -1,11 +1,132 @@
-# Content Delivery Network Quickstart
+---
+title: Content Delivery Network quickstart
+author: v-thopra
+description: Describes the PlayFab Content Delivery Network in detail.
+ms.author: v-thopra
+ms.date: 01/11/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, data, content delivery network
+ms.localizationpriority: medium
+---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa tincidunt dui ut ornare lectus. Viverra vitae congue eu consequat ac felis donec. Leo urna molestie at elementum eu facilisis. A cras semper auctor neque vitae tempus quam. Amet cursus sit amet dictum sit amet justo donec enim. Faucibus turpis in eu mi bibendum neque egestas congue. Morbi quis commodo odio aenean sed adipiscing diam. Lectus vestibulum mattis ullamcorper velit. Dictum fusce ut placerat orci nulla pellentesque.
+# Content Delivery Network quickstart
 
-Lorem mollis aliquam ut porttitor leo a diam sollicitudin. Mattis rhoncus urna neque viverra. Pharetra vel turpis nunc eget lorem dolor sed. Aliquam eleifend mi in nulla posuere sollicitudin aliquam ultrices. Adipiscing elit ut aliquam purus sit. Eleifend mi in nulla posuere sollicitudin aliquam. Luctus accumsan tortor posuere ac. Pulvinar sapien et ligula ullamcorper malesuada proin libero nunc consequat. Dignissim cras tincidunt lobortis feugiat vivamus at augue eget. Eu consequat ac felis donec et odio pellentesque diam volutpat. Fermentum odio eu feugiat pretium nibh ipsum. Enim sit amet venenatis urna cursus eget nunc. Sollicitudin nibh sit amet commodo. Varius quam quisque id diam vel quam elementum pulvinar. Vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant. Dui id ornare arcu odio ut. Imperdiet sed euismod nisi porta. Amet purus gravida quis blandit turpis cursus in.
+PlayFab **Content Delivery Network** (**CDN**) stores individual assets as files uniquely identified by the file name, also referred to as a *key*. This implies that you add, update, remove, and retrieve assets by key.
 
-In arcu cursus euismod quis viverra nibh cras. Feugiat scelerisque varius morbi enim nunc faucibus. Sed adipiscing diam donec adipiscing tristique risus nec. Mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien et. Convallis a cras semper auctor neque vitae tempus quam. Et leo duis ut diam quam nulla. Egestas sed tempus urna et pharetra pharetra. Arcu felis bibendum ut tristique et. Donec ac odio tempor orci dapibus ultrices in iaculis nunc. Ullamcorper a lacus vestibulum sed arcu non odio.
+PlayFab **CDN** allows segregating assets by folders. The folder path to the asset becomes part of the *asset key*.
 
-Nulla aliquet enim tortor at auctor urna nunc id. Turpis massa sed elementum tempus. Commodo viverra maecenas accumsan lacus vel facilisis volutpat est. Nibh nisl condimentum id venenatis. Sagittis id consectetur purus ut faucibus. Diam maecenas ultricies mi eget mauris pharetra. Porttitor lacus luctus accumsan tortor posuere ac ut consequat semper. Nunc sed velit dignissim sodales. Tortor condimentum lacinia quis vel. Elementum curabitur vitae nunc sed velit dignissim sodales ut eu. Tincidunt eget nullam non nisi est sit amet facilisis magna. Pellentesque pulvinar pellentesque habitant morbi tristique senectus et netus. Morbi quis commodo odio aenean sed adipiscing diam donec. Nunc sed id semper risus in hendrerit gravida rutrum quisque. Id interdum velit laoreet id. Tempor id eu nisl nunc. Cras tincidunt lobortis feugiat vivamus at augue eget arcu dictum. Tempus urna et pharetra pharetra massa massa.
+The following example is a valid asset key stored inside the folder named **Android**.
 
-Risus in hendrerit gravida rutrum quisque non. Pulvinar mattis nunc sed blandit. Augue mauris augue neque gravida in fermentum et. Odio ut sem nulla pharetra diam sit amet nisl suscipit. Facilisis gravida neque convallis a cras semper. Ac turpis egestas maecenas pharetra convallis. Nunc non blandit massa enim nec dui nunc mattis enim. Eu facilisis sed odio morbi quis commodo odio aenean sed. Amet consectetur adipiscing elit pellentesque habitant. Lorem ipsum dolor sit amet consectetur adipiscing elit ut aliquam. In nibh mauris cursus mattis molestie a. Duis at consectetur lorem donec. Ac odio tempor orci dapibus ultrices in iaculis nunc. A arcu cursus vitae congue mauris rhoncus aenean vel elit. Facilisis magna etiam tempor orci eu lobortis elementum. Congue mauris rhoncus aenean vel elit. Gravida dictum fusce ut placerat orci nulla pellentesque dignissim enim. Netus et malesuada fames ac turpis egestas integer.
+ `Android/Image.png`.
+
+When the user is fetching assets, their requests are automatically routed to the nearest edge location, so content is delivered with the best possible performance.
+
+This, however, can introduce delays into file management actions, like those found in the following examples:
+
+- **File uploading**: Your file will be available immediately.
+
+- **File overwriting**: The old file will appear to users for up to 24 hours until it's overwritten with the new file.
+
+- **File deletion**: The file will continue to exist for up to 24 hours while the delete command removes it from all edge locations.
+
+## Uploading ssets
+
+Before your users are able to fetch an asset, it must be uploaded to the **CDN**. This can be done in **Game Manager**:
+
+- Select **Content** from the menu on the left **(1)**.
+- Choose the **File Management** tab **(2)**.
+- Then select the **Upload Files** button **(3)**.
+
+![Game Manager - Content - File Management - Upload Files](../../data/content-delivery-network/media/tutorials/game-manager-content-file-management-upload-files.png)  
+
+You may:
+
+- Select multiple **Files (1)**.
+- Every file selected will appear in the list **(2)**.
+- Submit your files by selecting the **Upload Files** button **(3)**.
+
+![Game Manager - Choose and Upload Files](../../data/content-delivery-network/media/tutorials/game-manager-choose-and-upload-files.png)  
+
+- Uploaded files will appear in the list **(1)**.
+- Keep in mind that you may also manage *folders*.
+  - To create a folder, select the **New Folder** button **(2)**.
+
+![Game Manager - Content - File Management - File List and New Folder](../../data/content-delivery-network/media/tutorials/game-manager-content-file-management-file-list-new-folder.png)  
+
+- Fill in the **Folder name (1)**.
+- Select the **Create Folder** button **(2)**.
+
+![Game Manager - Create New Folder](../../data/content-delivery-network/media/tutorials/game-manager-create-new-folder.png)  
+
+This will create a new folder in the tree. You may then select this folder, and upload the files normally.
+
+![Game Manager - Content - File Management - Select Folder](../../data/content-delivery-network/media/tutorials/game-manager-content-file-management-select-folder.png)  
+
+Alternatively, you may upload assets via code using the admin **SDK**. This is a two step process:
+
+1. First, call [GetContentUploadUrl](xref:titleid.playfabapi.com.admin.content.getcontentuploadurl) and obtain the pre-signed **URL** that will authorize your upload.
+2. Then, use the **URL** to make a **HTTP PUT** request and provide your data, and (optionally) content type.
+ 
+Consider using the snippet provided below that shows how to get a pre-signed **URL**.
+
+```csharp
+public void UploadFileToCDN(string key, byte[] content, string contentType = "binary/octet-stream") {
+    GetUploadUrl(key, contentType, presignedUrl => {
+        PutFile(presignedUrl, content, contentType);
+    });
+}
+
+void GetUploadUrl(string key, string contentType, Action<string> onComplete) {
+    PlayFabAdminAPI.GetContentUploadUrl(new GetContentUploadUrlRequest() {
+        ContentType = contentType,
+        Key = key
+    }, result => onComplete(result.URL), 
+    error => Debug.LogError(error.GenerateErrorReport()));
+}
+
+void PutFile(string presignedUrl, byte[] content, string contentType = "binary/octet-stream") {
+    // Implement your own PUT HTTP request here.
+    // - Must use PUT method
+    // - Must set content type Header
+}
+```
+
+You may then check the result through the PlayFab Game Manager. Make sure the file is in the list.
+
+## Fetching assets
+
+Downloading the asset via code is identical to uploading the asset. Again, it is a two step process.
+
+1. First, make a call to [GetContentDownloadUrl](xref:titleid.playfabapi.com.client.content.getcontentdownloadurl) and obtain a pre-signed **URL** that will authorize your download.
+2. You then use the  pre-signed **URL** to make a **HTTP GET** request and fetch the data.
+
+Consider using the snippet provided below that shows the bare bones of the process.
+
+```csharp
+public void DownloadFileFromCDN(string key) {
+    GetDownloadUrl(key, presignedUrl =>
+    {
+        GetFile(presignedUrl);
+    });
+}
+
+void GetDownloadUrl(string key, Action<string> onComplete) {
+    PlayFabClientAPI.GetContentDownloadUrl(new GetContentDownloadUrlRequest() {
+        Key = key,
+        ThruCDN = true
+    }, result => onComplete(result.URL), 
+    error => Debug.LogError(error.GenerateErrorReport()));
+}
+
+void GetFile(string preauthorizedUrl) {
+    // Implement your own GET HTTP request here.
+}
+```
+
+As mentioned above, **CDN** may involve latency in regards to file updates. During development it is sometimes useful to force fetch the latest, fresh files.
+
+The  [GetContentDownloadUrl](xref:titleid.playfabapi.com.client.content.getcontentdownloadurl) call allows you to set the **ThruCDN** parameter to **False**. The **URL** returned will then point to non-cached fresh files.
+
+> [!NOTE]
+> Your published game client should *never* use this option!

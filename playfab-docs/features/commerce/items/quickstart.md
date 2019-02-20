@@ -1,11 +1,73 @@
-# Items Quickstart
+---
+title: Items quickstart
+author: thomasgu
+description: Quickstart for Items.
+ms.author: tomg
+ms.date: 30/01/2019
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, commerce, items, catalogs
+ms.localizationpriority: medium
+---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa tincidunt dui ut ornare lectus. Viverra vitae congue eu consequat ac felis donec. Leo urna molestie at elementum eu facilisis. A cras semper auctor neque vitae tempus quam. Amet cursus sit amet dictum sit amet justo donec enim. Faucibus turpis in eu mi bibendum neque egestas congue. Morbi quis commodo odio aenean sed adipiscing diam. Lectus vestibulum mattis ullamcorper velit. Dictum fusce ut placerat orci nulla pellentesque.
+# Items quickstart
 
-Lorem mollis aliquam ut porttitor leo a diam sollicitudin. Mattis rhoncus urna neque viverra. Pharetra vel turpis nunc eget lorem dolor sed. Aliquam eleifend mi in nulla posuere sollicitudin aliquam ultrices. Adipiscing elit ut aliquam purus sit. Eleifend mi in nulla posuere sollicitudin aliquam. Luctus accumsan tortor posuere ac. Pulvinar sapien et ligula ullamcorper malesuada proin libero nunc consequat. Dignissim cras tincidunt lobortis feugiat vivamus at augue eget. Eu consequat ac felis donec et odio pellentesque diam volutpat. Fermentum odio eu feugiat pretium nibh ipsum. Enim sit amet venenatis urna cursus eget nunc. Sollicitudin nibh sit amet commodo. Varius quam quisque id diam vel quam elementum pulvinar. Vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant. Dui id ornare arcu odio ut. Imperdiet sed euismod nisi porta. Amet purus gravida quis blandit turpis cursus in.
+In this quickstart tutorial, you will:
 
-In arcu cursus euismod quis viverra nibh cras. Feugiat scelerisque varius morbi enim nunc faucibus. Sed adipiscing diam donec adipiscing tristique risus nec. Mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien et. Convallis a cras semper auctor neque vitae tempus quam. Et leo duis ut diam quam nulla. Egestas sed tempus urna et pharetra pharetra. Arcu felis bibendum ut tristique et. Donec ac odio tempor orci dapibus ultrices in iaculis nunc. Ullamcorper a lacus vestibulum sed arcu non odio.
+- Set up a virtual currency for your game. 
+- Add an item to your in-game catalog. 
+- Purchase an item in-game using virtual currency. 
+- Set up a Virtual Currency for your game. 
 
-Nulla aliquet enim tortor at auctor urna nunc id. Turpis massa sed elementum tempus. Commodo viverra maecenas accumsan lacus vel facilisis volutpat est. Nibh nisl condimentum id venenatis. Sagittis id consectetur purus ut faucibus. Diam maecenas ultricies mi eget mauris pharetra. Porttitor lacus luctus accumsan tortor posuere ac ut consequat semper. Nunc sed velit dignissim sodales. Tortor condimentum lacinia quis vel. Elementum curabitur vitae nunc sed velit dignissim sodales ut eu. Tincidunt eget nullam non nisi est sit amet facilisis magna. Pellentesque pulvinar pellentesque habitant morbi tristique senectus et netus. Morbi quis commodo odio aenean sed adipiscing diam donec. Nunc sed id semper risus in hendrerit gravida rutrum quisque. Id interdum velit laoreet id. Tempor id eu nisl nunc. Cras tincidunt lobortis feugiat vivamus at augue eget arcu dictum. Tempus urna et pharetra pharetra massa massa.
+PlayFab supports a robust game economy with multiple currencies and items. 
 
-Risus in hendrerit gravida rutrum quisque non. Pulvinar mattis nunc sed blandit. Augue mauris augue neque gravida in fermentum et. Odio ut sem nulla pharetra diam sit amet nisl suscipit. Facilisis gravida neque convallis a cras semper. Ac turpis egestas maecenas pharetra convallis. Nunc non blandit massa enim nec dui nunc mattis enim. Eu facilisis sed odio morbi quis commodo odio aenean sed. Amet consectetur adipiscing elit pellentesque habitant. Lorem ipsum dolor sit amet consectetur adipiscing elit ut aliquam. In nibh mauris cursus mattis molestie a. Duis at consectetur lorem donec. Ac odio tempor orci dapibus ultrices in iaculis nunc. A arcu cursus vitae congue mauris rhoncus aenean vel elit. Facilisis magna etiam tempor orci eu lobortis elementum. Congue mauris rhoncus aenean vel elit. Gravida dictum fusce ut placerat orci nulla pellentesque dignissim enim. Netus et malesuada fames ac turpis egestas integer.
+To access these features:
+
+1. Go to economy and select currencies 
+2. Click New Currency and change these fields: 
+    Currency code (2 uppercase characters): "GD"
+    Display name: "Gold" 
+3. Click Save Currency 
+ 
+![Save Currency](media/tutorials/virtual-currency.png)
+Now you can give players virtual currency directly. Since it can be dangerous to give clients the ability to call AddUserVirtualCurrency, let's add money using the Game Manager:
+
+1. Go to the player's virtual currency tab 
+2. Click on the "GD" currency 
+3. Change the amount to 100 
+4. Click save virtual currency. 
+
+![Modify Currency](media/tutorials/mod-virtual-currency.png)
+Now the player has 100 gold. What can you do with it? Buy an item!
+
+## Adding an item to your in-game catalog
+
+No sense having money if you can't spend it. Let's create a catalog, which is a collection of items. You can create catalogs that correspond to the platforms on which you're releasing your game, or major version numbers, whatever you like.
+ 
+TIP: We don't recommend creating multiple catalogs to differentiate types of items, as you can filter items effectively using classes, tags, and stores.
+
+To make a catalog with an item:
+
+1. Go to economy and select catalogs. 
+2. Create a new catalog named "main." An item with the ID of "One" has been added automatically.
+3. Click on One and change these fields: 
+    Item ID: "apple" 
+    Display name: "Perfectly normal apple." At the bottom of the form is the Prices section, where you define how much an item costs in your game's virtual currency.
+4. Set the apple's price in gold ("GD") to 5.
+5. Click save item.
+
+![Add to Catalog](media/tutorials/add-catalog.png) 
+## Purchase an item using virtual currency
+
+Let's get the catalog and attempt to make a purchase.
+
+1. In your game, call GetCatalogItems:
+    CatalogVersion: "main"
+2. Verify that you see an "apple" with a "GO" price of 5.
+3. Call PurchaseItem to buy the apple.
+    CatalogVersion: "main" 
+    ItemId: "apple" 
+    VirtualCurrency: "GO" 
+    Price: 5 
+4. Last, call GetUserInventory and take a look at the player inventory. You should see an apple! 
+   You can also check the player's PlayStream tab, and you should have seen a "Player vc item purchased." event. That player's Inventory tab will also show the apple. You can also revoke the item or grant yourself more apples on the Inventory tab. If you check the player’s virtual currency, they should only have 95 gold left.

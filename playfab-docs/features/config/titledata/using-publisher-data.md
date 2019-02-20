@@ -10,29 +10,40 @@ keywords: playfab, configuration, publisher data, studio data
 ms.localizationpriority: medium
 ---
 
-# Using publisher data
+# Using Publisher data
 
-This tutorial describes how to create and use publisher (studio) data. Publisher data is data that spans more than one title, such as when you have multiple games that need to share common information among your games. This category also include data for players that spans multiple games. PlayFab stores data as key/value pairs (KVPs).
+This tutorial describes how to create and use Publisher (Studio) data.
 
-Most of these APIs are server APIs that your program must call from a dedicated server or through a CloudScript function within the PlayFab service.
-
-- Use the server APIs [SetPublisherData](https://api.playfab.com/documentation/Server/method/SetPublisherData) to update, and [GetPublisherData](https://api.playfab.com/documentation/Server/method/GetPublisherData) to retrieve, publisher-specific custom KVPs.
-- Use [UpdateUserPublisherData](https://api.playfab.com/documentation/Client/method/UpdateUserPublisherData) to create or update, and ]GetUserPublisherData](https://api.playfab.com/documentation/Client/method/GetUserPublisherData) to retrieve, publisher-specific custom KVPs for the player.
-- Use the server API [UpdateUserPublisherReadOnlyData](https://api.playfab.com/documentation/Server/method/UpdateUserPublisherReadOnlyData) to update, and the client API [GetUserPublisherReadOnlyData](https://api.playfab.com/documentation/Client/method/GetUserPublisherReadOnlyData) to retrieve, the read-only publisher-specific custom KVPs for the user.
-- Use the server APIs [UpdateUserPublisherInternalData](https://api.playfab.com/documentation/Server/method/UpdateUserPublisherInternalData) to update, and [GetUserPublisherInternalData](https://api.playfab.com/documentation/Server/method/GetUserPublisherInternalData) to retrieve, the internal publisher-specific custom KVPs for the user.
-
-You must call the server APIs from a dedicated server or through a CloudScript function through the PlayFab service. This is by design, as the PlayFab server APIs require that you supply your secret key. We do not recommend using Server APIs from within a game client, if you need to make use of a Server API, use CloudScript for this type of functionality.
+Publisher data is data that spans more than one title - such as when you have multiple games that need to share common information.
 
 > [!NOTE]
-> Publisher data values are copied and distributed to potentially hundreds of machines in the PlayFab cluster server. As part of this process, publisher data is cached and changes may take up to fifteen minutes to refresh in those caches. Publisher data is best suited for "global constant/static data", and is not suitable or reliable as "global variables".
+> This category also includes data for players that spans multiple games. PlayFab stores data as Key/Value Pairs (KVPs).
+
+Most of these **APIs** are server **APIs** that your program must call from a dedicated server or through a **CloudScript** function within the PlayFab service.
+
+- Use the server **APIs** **[SetPublisherData](xref:titleid.playfabapi.com.server.title-widedatamanagement.setpublisherdata)** to update, and **[GetPublisherData](xref:titleid.playfabapi.com.server.title-widedatamanagement.getpublisherdata)** to retrieve, Publisher-specific custom KVPs.
+- Use **[UpdateUserPublisherData](xref:titleid.playfabapi.com.client.playerdatamanagement.updateuserpublisherdata)** to create or update, and **[GetUserPublisherData](xref:titleid.playfabapi.com.client.playerdatamanagement.getuserpublisherdata)** to retrieve, Publisher-specific custom KVPs for the player.
+- Use the server **API** **[UpdateUserPublisherReadOnlyData](xref:titleid.playfabapi.com.server.playerdatamanagement.updateuserpublisherreadonlydata)** to update, and the client **API** **[GetUserPublisherReadOnlyData](xref:titleid.playfabapi.com.client.playerdatamanagement.getuserpublisherreadonlydata)** to retrieve, the read-only Publisher-specific custom KVPs for the user.
+- Use the Server **APIs** **[UpdateUserPublisherInternalData](xref:titleid.playfabapi.com.server.playerdatamanagement.updateuserpublisherinternaldata)** to update, and **[GetUserPublisherInternalData](xref:titleid.playfabapi.com.server.playerdatamanagement.updateuserpublisherinternaldata)** to retrieve, the internal Publisher-specific custom KVPs for the user.
+
+You must call the server **APIs** from a dedicated server or through a **CloudScript** function through the PlayFab service. This is by design, as the PlayFab server **APIs** require that you supply your secret key.
+
+> [!TIP]
+> We *do not recommend* using server **APIs** from within a game client. If you need to make use of a server **API**, use **CloudScript** for this type of functionality.
+
+> [!NOTE]
+> Publisher data values are copied and distributed to potentially hundreds of machines in the PlayFab cluster server. As part of this process, this data is cached and changes may take up to *fifteen minutes* to refresh in those caches. Publisher data is best suited for *global constant/static data*, and *is not* suitable or reliable as *global variables*.
 
 ## Publisher data
 
-Publisher data is used to store static data for a set of titles. Each entry **is not bound** to any PlayFab entity such as a Player (as opposed to [user publisher data](#user-publisher-data)).
+Publisher data is used to store static data for a set of titles. Each entry *is not bound* to any PlayFab entity, such as a player (as opposed to [user publisher data](#user-publisher-data)).
 
-### Setting Publisher Data
+### Setting Publisher data
 
-The following snippet demonstrates how to set publisher data using the server API. Note, that there is an Admin API counterpart for this operation.
+The following snippet demonstrates how to set Publisher data using the server **API**.
+
+> [!NOTE]
+> There is an admin **API** counterpart for this operation.
 
 ```csharp
 public void ServerSetPublisherData() {
@@ -49,9 +60,12 @@ public void ServerSetPublisherData() {
 }
 ```
 
-### Getting Publisher Data
+### Getting Publisher data
 
-The following snippet demonstrates getting publisher data using the client API. Note, that there are server and Admin API counterparts for this operation.
+The following snippet demonstrates getting Publisher data using the client **API**.
+
+> [!NOTE]
+> There are server and admin **API** counterparts for this operation.
 
 ```csharp
 public void ClientGetPublisherData() {
@@ -67,29 +81,33 @@ public void ClientGetPublisherData() {
 }
 ```
 
-## User Publisher Data
+## User Publisher data
 
-User publisher data can be used to introduce publisher data that is bound to a PlayFab user (player). Unlike regular publisher data, it is possible for a client application to alter user publisher data. PlayFab exposes 3 protection levels for user publisher data from the client API point-of-view:
+User Publisher data can be used to introduce Publisher data that is bound to a PlayFab user (player).
 
-**Regular user publisher data** exposes read and write access for client applications.
+Unlike regular Publisher data, it is possible for a client application to alter user Publisher data.
 
-- Set via client, server, and Admin API.
-- Get via client, server, and Admin API.
-- The client API may only set publisher data for a player that is currently logged in.
+PlayFab exposes 3 protection levels for user Publisher data from the client **API** point of view:
 
-**Read-Only user publisher data** exposes read access for client applications.
+1. Regular user Publisher data exposes read and write access for client applications.
 
-- Set via server and Admin API.
-- Get via client, server, and Admin API.
+     - Set via client, server, and admin **API**.
+     - Get via client, server, and admin **API**.
+     - The client **API** may only set Publisher data for a player who is currently logged in.
 
-**Internal user publisher data** exposes no access for client applications and is used to store the secret portion of user data.
+1. Read-only user Publisher data exposes read access for client applications.
 
-- Set via server and Admin API.
-- Get via server and Admin API.
+     - Set via server and admin *API**.
+     - Get via client, server, and admin **API**.
 
-### Setting user publisher data
+1. Internal user Publisher data exposes no access for client applications, and is used to store the secret portion of user data.
 
-The following snippet demonstrates how to set all 3 kinds of publisher data using client and server APIs:
+     - Set via server and admin **API**.
+     - Get via server and admin **API**.
+
+### Setting user Publisher data
+
+The following snippet demonstrates how to set all 3 kinds of Publisher data using client and server **APIs**.
 
 ```csharp
 // Use client API to set User Publisher Data for current user 
@@ -140,9 +158,9 @@ public void ServerSetUserPublisherInternalData() {
 }
 ```
 
-### Getting User Publisher Data
+### Getting user Publisher data
 
-The following snippet demonstrates how to get all 3 kinds of publisher data using client and server APIs:
+The following snippet demonstrates how to get all 3 kinds of **Publisher** data using client and server **APIs**.
 
 ```csharp
 // Use client API to get Regular User Publisher Data for selected user 
@@ -188,7 +206,7 @@ public void ServerGetUserPublisherInternalData() {
 }
 ```
 
-## See Also
+## See also
 
-- [Using Title Data](using-title-data.md)
-- [Using Cloud Script](../../automation/cloudscript/using-cloudscript.md)
+- [Title Data quickstart](quickstart.md)
+- [CloudScript quickstart](../../automation/cloudscript/quickstart.md)

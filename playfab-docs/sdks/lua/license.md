@@ -1,0 +1,18 @@
+---
+title: Lua
+author: v-kciril
+description: Landing page for the PlayFab Lua SDK.
+ms.author: v-kciril
+ms.date: 01/22/2019
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, lua sdk, lua, cpp
+ms.localizationpriority: medium
+---
+
+# Javascript licenses
+
+Licenses are available at the following links:
+
+- [json-lua](licenses/json-lua-license.md)
+- [LuaSec](licenses/luasec-license.md)

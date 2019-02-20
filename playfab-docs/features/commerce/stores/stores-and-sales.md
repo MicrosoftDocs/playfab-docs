@@ -3,7 +3,7 @@ title: Stores and Sales
 author: v-thopra
 description: Describes how to configure a Store with a catalog of items available in real money or virtual currency.
 ms.author: v-thopra
-ms.date: 26/10/2018
+ms.date: 10/26/2018
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, commerce, stores, catalogs, currencies
@@ -12,59 +12,84 @@ ms.localizationpriority: medium
 
 # Stores and Sales
 
-Stores are built upon [Catalogs](../items/catalogs.md) and [Currencies](../economy/currencies.md). Your primary catalog should define all of the items in your game. Alternately, a store allows you to single out a specific set of items, and make them available for a set time period. The definition of a store is a small subset of items, available for purchase at a specific price.
+Stores are built upon [Catalogs](../items/catalogs.md) and [Currencies](../economy/currencies.md). Your primary catalog should define all of the items in your game.
+
+Alternately, a store allows you to single out a specific set of items, and make them available for a set time period. The definition of a store is a small subset of items, available for purchase at a specific price.
 
 ## Requirements
 
-- [Game Manger](../../config/gamemanager/game-manager-tour.md)
-- One or more [Virtual Currencies](../economy/currencies.md) defined
-  - The latter example on this guide uses: SS (Silver Shekels) and GS (Gold Shekels).
+- [Game Manager](../../config/gamemanager/quickstart.md)
+- One or more [Virtual Currencies](../economy/currencies.md) defined. The latter example on this guide uses:
+  - **SS** (**Silver Shekels**)
+  - **GS** (**Gold Shekels**).
 
 - A primary [Catalog](../items/catalogs.md) with one or more items defined
-  - The first example uses multiple item bundles, similar to the ones described in the [Drop Tables](../items/drop-tables.md) tutorial.
-  - The second example in this tutorial uses Small, Medium, and Large, Health Potions.
+  - The first example uses multiple item/bundles, similar to the ones described in the [Drop Tables](../items/drop-tables.md) tutorial.
+  - The second example in this tutorial uses small, medium, and large health potions.
 
-**Best Practice**: Catalog prices should be fixed long term and define the "real" price of an item. Stores should be temporary, being added and removed according to your LiveOps strategies. Expect to get most of your revenue from cycling stores, and transitioning items in and out of active stores.
+### Best practice
 
-Please note the following information about Stores and Currencies: 
+Catalog prices should be fixed long-term, and define the *real* price of an item.
 
-- **Pricing**: Store and Catalog pricing is important. The prices defined in the Catalog should be defined as the "regular" price of an item. Stores allow you to define a temporary "sale" price for an item, utilizing the common retail tactic. Alternately stores can provide a temporary price for an item that is not normally available for sale at all.
+Stores should be *temporary*, being added and removed according to your **LiveOps** strategies.
 
-- **Zero Cost**: If a cost is unset (null) or zero, it cannot be purchased using that currency. This is true for both Catalogs and Stores. You can make items available for exclusively free currencies, or exclusively premium currencies by leaving entries blank, or resetting them to zero.
+> [!NOTE]
+> Expect to get most of your revenue by cycling stores, and transitioning items in and out of active stores.
 
-- **Real Money**: The "RM" currency is available in all Catalogs and Stores.  RM is a restricted currency key that indicates real money transactions only. You should only charge RM for items of significant value, or bundles/containers which contain premium currency.
+## General information about stores and catalog pricing
 
-- **Prices are "Either/Or"**: If two prices are defined on an item, the item can be purchased for one or the other. It is not possible to require two currencies for a single item.
+Please note the following information about stores and currencies:
 
-## Defining a Real-Money Store
+- **Pricing**: The prices defined in the catalog should be defined as the *regular* price of an item. Stores allow you to define a temporary sale price for an item, utilizing the common retail tactic. Alternately, stores can provide a temporary price for an item that is not normally available for sale at all.
 
-Game Manager: Navigate to your title -> Economy -> {your primary catalog} -> Stores -> New Store
+- **Zero Cost**: If a cost is unset (**null**) or **zero**, it cannot be purchased using that currency. This is true for both catalogs and stores. You can make items available for exclusively free currencies, or exclusively premium currencies by leaving entries blank, or resetting them to **zero**.
 
-In the [Drop Tables](../items/drop-tables.md) example, we created an "11-Item Drop" Bundle. For this example, we will make 3 similar bundles available in a real-money store. Any item can be sold for real money, but it's a best practice to make only specific valuable items/bundles available directly for real money.
+- **Real Money**: The **RM** currency is available in all catalogs and stores. **RM** is a restricted currency key that indicates *real money transactions only*. You should only charge **RM** for items of significant value, or bundles/containers which contain premium currency.
 
-The following screenshot demonstrates a complete new store, placing three item-bundles available for real money:
+- **Prices are Either/Or**: If two prices are defined on an item, the item can be purchased for one or the other. It is *not possible* to require two currencies for a single item.
 
-![Game Manager - Economy - Edit Store](media/tutorials/game-manager-economy-edit-store.png)  
+## Defining a real-money store
 
-The specifics for completing real money purchases are covered in our advanced tutorial, [Non-Receipt Payment Processing](../economy/non-receipt-payment-processing.md).
+In your **Game Manager**:
 
-**Best Practice**: How you use real money is largely dependent on the specific design of your game. Direct purchase of in-game items is valid, but less common. More typically, your game should allow purchase of a premium virtual currency using real money. You can cycle multiple stores with different ratios of premium currency to real-money.
+- Navigate to your **Title**.
+- Select **Economy** from your menu on the left.
+- On your **Catalogs** tab on the **Edit Store** screen, select the **Stores** column.
+- Select the **New Store** button.
 
-The key takeaway should be: make sure your players can always give you money.
+In the [Drop Tables](../items/drop-tables.md) example, we created an 11-item drop bundle. For this example, we will make 3 similar bundles available in a real money store.
 
-## Defining a Virtual-Currency Store
+> [!NOTE]
+> Any item can be sold for real money, but it is a best practice to make only *specific* valuable items/bundles directly available.
 
-In this example we'll get into the gritty details and code for trading virtual currency for in-game items.
+The screenshot provided below demonstrates a complete new **Store**, placing three **Item Bundles** available for **Real Money**.
 
-The steps are nearly identical to the preceding example.  This time we will create 3 new items: Small, Medium, and Large, Health Potions with a free currency price, and a premium currency price. We'll create a new store which puts these items on sale:
+![Game Manager - economy - edit Store](media/tutorials/game-manager-economy-edit-store.png)  
+
+The specifics for completing real money purchases are covered in our advanced tutorial, [non-receipt payment processing](../economy/non-receipt-payment-processing.md).
+
+### Best practice
+
+How you use real money is largely dependent on the specific design of your game. Direct purchase of in-game items is valid, but less common.
+
+More typically, your game should allow purchase of a premium virtual currency using real money. You can cycle multiple stores with different ratios of premium currency to real money.
+
+> [!TIP]
+> The primary takeaway should be to make sure your players can *always* give you money.
+
+## Defining a virtual-currency store
+
+Let's get into the gritty details and code for trading virtual currency for in-game items. The steps are nearly identical to the preceding example.
+
+This time we will create 3 new items: **Small**, **Medium**, and **Large Health Potions** with a *free* **Currency** price, and a *premium* **Currency** price. We'll create a new **Store** which puts these **Items** on sale.
 
 ![Game Manager - Economy - New Store](media/tutorials/game-manager-economy-new-store.png)  
 
-To purchase a single item for VC, you can use our [PurchaseItem](https://api.playfab.com/documentation/client/method/PurchaseItem) method, as described in our [Player inventory](../../data/playerdata/player-inventory.md) tutorial. This tutorial, however, will cover the more advanced topic of setting up multiple items in a single purchase.
+To purchase a single item for virtual currency, you can use our **[PurchaseItem](xref:titleid.playfabapi.com.client.playeritemmanagement.purchaseitem)** method, as described in our [Player inventory](../../data/playerdata/player-inventory.md) tutorial. This tutorial, however, will cover the more advanced topic of setting up multiple items in a single purchase.
 
-First step, get the store and display it to the user:
+Your first step in this process should be to get the store, and display it to the user.
 
-```chsarp
+```csharp
 // Unity/C#
 void GetVcStore()
 {
@@ -79,15 +104,21 @@ void GetVcStore()
 }
 ```
 
-The LogSuccess callback in this example gets a full description of all items in the store, their prices in the store, and any additional metadata stored within the store itself.
+The **LogSuccess** callback in this example gets a full description of all items in the store, their prices in the store, and any additional metadata stored within the store itself.
 
-**Best Practice**: Games with stores should call and cache their primary catalog with GetCatalog. This allows you to display both the catalog price and the store price, along with a "10% OFF" or similar bonus decoration beside items for sale. Players are more likely to buy items on sale, especially if the sale is a limited-time offer.
+### Best practice
 
-At this point, it is the responsibility of your GUI code to present the user with the opportunity to select which items they wish to buy and how many.
+Games with stores should call and cache their primary catalog with **GetCatalog**. This allows you to display both the catalog price and the store price, along with a **10% OFF** or similar bonus decoration beside items for sale.
+> [!TIP]
+> Players are more likely to buy items on sale, *especially if the sale is a limited-time offer*.
 
-**Best Practice**: Between your game and PlayFab, the remaining steps are several separate API calls, but you can make the sequence of multiple calls invisible to the player. Collect all information about the purchase up-front, and make the full sequence of calls after all player input is collected.
+At this point, it is the responsibility of your **GUI** code to present the user with the opportunity to select which items they wish to buy and how many.
 
-```chsarp
+- Between your gme and PlayFab, the remaining steps are several separate **API** calls, but you can make the sequence of multiple calls invisible to the player.
+
+- Collect all information about the purchase up front, and make the full sequence of calls after *all* player input is collected.
+
+```csharp
 // Unity/C#
 void DefinePurchase()
 {
@@ -108,13 +139,21 @@ void DefinePurchase()
 }
 ```
 
-During the item selection process, you must allow the user to select which currency they wish to spend for these items. In this example, all items have costs in SS and GS, which means the user has a choice of which currency to spend.
+During the item selection process, you must allow the user to select which currency they wish to spend for these items. In this example, all items have costs in **SS** and **GS**, which means the user has a choice of which currency to spend.
 
-**Restriction**: Only one VC is allowed in a single purchase. All selected items must be purchasable with a single currency. The currency must be specified in the call, which is important when there are multiple possible currencies. The sequence will fail if there are items in the request which don't have corresponding costs in the selected currency.
+### Restriction
 
-**Best Practice**: Avoid this confusion for your player. All items in a store should have consistent options. Real-Money items should be in a separate store from premium VC items, and again separate from free VC items. If a single store allows multiple currencies, then ALL items in that store consistently use the same set of multiple currencies. Create as many stores as you need to provide a smooth customer experience.
+Only *one* virtual currency is allowed in a single purchase. All selected items must be purchasable with a *single currency*.
 
-```chsarp
+The currency must be specified in the call, which is important when there are multiple possible currencies. The sequence will fail if there are items in the request which don't have corresponding costs in the selected currency.
+
+### Best practice
+
+Avoid confusion for your player by ensuring that all items in a store have consistent options.
+
+Real money items should be in a separate store from premium VC items, and again separate from free VC items. If a single store allows multiple currencies, then *all* items in that store should consistently use the same set of multiple currencies. Create as many stores as you need to provide a smooth customer experience.
+
+```csharp
 // Unity/C#
 void DefinePaymentCurrency(string orderId, string currencyKey)
 {
@@ -126,9 +165,9 @@ void DefinePaymentCurrency(string orderId, string currencyKey)
 }
 ```
 
-Finally, once the purchase is fully defined, you can complete the process:
+Finally, once the purchase is fully defined, you can complete the process, as shown below.
 
-```chsarp
+```csharp
 // Unity/C#
 void FinishPurchase(string orderId)
 {
@@ -137,12 +176,20 @@ void FinishPurchase(string orderId)
 }
 ```
 
-**Best Practice**: Any single API call can fail for a variety of reasons. Wireless devices such as phones can often have intermittent connectivity, and any internet call can fail due to random latency. Each call should check for multiple failure conditions. If the response indicates that the purchase request is invalid (unable to buy multiple items with a single currency for example) then you should abort (and possibly re-design your store). If the response indicates a connectivity failure, you can try again with an exponential back-off delay.
+### Best practice
+
+Any single **API** call can fail for a variety of reasons. Wireless devices such as phones can often have intermittent connectivity, and any internet call can fail due to random latency.
+
+Each call should check for multiple failure conditions. If the response indicates that the purchase request is invalid (unable to buy multiple items with a single currency for example) then you should abort (and possibly re-design your store).
+
+If the response indicates a connectivity failure, you can try again with an exponential back-off delay.
 
 ## Conclusion
+Stores are a great mechanism for encouraging your players to purchase items.
 
-Stores are a great mechanism for encouraging your players to purchase items. Stores work with any kind of virtual currency. Stores can also work with real-money through an alternate set of API methods.
+Stores work with any kind of virtual currency. Stores can also work with real money through an alternate set of **API** methods.
 
-You can set up a single-item purchase with VC via [PurchaseItem](https://api.playfab.com/documentation/client/method/PurchaseItem). You can set up a multiple-item purchase with VC via the sequence: [StartPurchase](https://api.playfab.com/documentation/client/method/StartPurchase), [PayForPurchase](https://api.playfab.com/documentation/client/method/PayForPurchase), and [ConfirmPurchase](https://api.playfab.com/documentation/client/method/ConfirmPurchase). To perform real money purchases, consult our advanced tutorial [Non-Receipt Payment Processing](../economy/non-receipt-payment-processing.md).
+- You can set up a single-item purchase with VC via [PurchaseItem](xref:titleid.playfabapi.com.client.playeritemmanagement.purchaseitem).
+- You can set up a multiple-item purchase with VC via the sequence: [StartPurchase](xref:titleid.playfabapi.com.client.playeritemmanagement.startpurchase), [PayForPurchase](xref:titleid.playfabapi.com.client.playeritemmanagement.payforpurchase), and [ConfirmPurchase](xref:titleid.playfabapi.com.client.playeritemmanagement.confirmpurchase). To perform real money purchases, consult our advanced tutorial [Non-Receipt Payment Processing](../economy/non-receipt-payment-processing.md).
 
-For advanced Store usage, see our [Custom Stores for Player Segments](../../commerce/stores/custom-stores-for-player-segments.md) tutorial.
+For advanced store usage, see our [Custom Stores for Player Segments](../../commerce/stores/custom-stores-for-player-segments.md) tutorial.

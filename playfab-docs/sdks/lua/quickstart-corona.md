@@ -1,4 +1,16 @@
-# Lua Quickstart for Corona
+---
+title: Lua quickstart for Corona
+author: v-thopra
+description: This guide will help you make your first PlayFab API call in the Corona engine.
+ms.author: v-thopra
+ms.date: 06/11/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, lua, corona, playfab client plugin
+ms.localizationpriority: medium
+---
+
+# Lua quickstart for Corona
 
 This guide will help you make your first PlayFab API call in the Corona engine.
 
@@ -40,13 +52,16 @@ settings =
 
 In your favorite text-editor, REPLACE the contents of main.lua file with this:
 
+> [!NOTE]
+> To look up the correct format for the loginRequest object in this example, see the API reference for [LoginWithCustomID](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid).
+
 ```lua
 local pfClient = require("plugin.playfab.client")
 local PlayFabClientApi = pfClient.PlayFabClientApi
 PlayFabClientApi.settings.titleId = "144"
 
 local loginRequest = {
-    -- https://api.playfab.com/documentation/Client/method/LoginWithCustomID
+    -- See the API reference for LoginWithCustomID.
     CustomId = "GettingStartedGuide",
     CreateAccount = true
 }
@@ -60,11 +75,11 @@ PlayFabClientApi.LoginWithCustomID(loginRequest,
 
 - Corona automatically executes the project source immediately when you save. So as soon as you update and save these two files, you should see this:
 
-![Install PlayFab SDK](media/finished.png)
+![Download Corona Plugin - Finish and Execute](media/finish-and-execute.png)
 
-- At this point, you can start making other api calls, and building your game
-- For a list of all available client API calls, see our documentation:
-  - [https://api.playfab.com/](https://api.playfab.com/)
+- At this point, you can start making other API calls, and building your game.
+- For a list of all available client API calls, see our [PlayFab API References](../../api-references/index.md) documentation.
+
 - Happy coding!
 
 ## Deconstruct the code
@@ -87,10 +102,10 @@ This optional last section describes each part of our example above, line by lin
   - PlayFabClientApi.LoginWithCustomID(loginRequest, {OnLoginSuccess-function}, {OnLoginError-function})
     - This begins the async request to "LoginWithCustomID", which will call the first (OnLoginSuccess) callback if successful, or the second (OnLoginError) function for failures
   - For login, most developers will want to use a more appropriate login method
-    - See the [PlayFab Login documentation](https://api.playfab.com/documentation/Client#Authentication) for a list of all login methods, and input parameters. Common choices are:
-      - [LoginWithAndroidDeviceID](https://api.playfab.com/documentation/Client/method/LoginWithAndroidDeviceID)
-      - [LoginWithIOSDeviceID](https://api.playfab.com/documentation/Client/method/LoginWithIOSDeviceID)
-      - [LoginWithEmailAddress](https://api.playfab.com/documentation/Client/method/LoginWithEmailAddress)
+    - See the [PlayFab Login documentation](xref:titleid.playfabapi.com.client.authentication) for a list of all login methods, and input parameters. Common choices are:
+      - [LoginWithAndroidDeviceID](xref:titleid.playfabapi.com.client.authentication.loginwithandroiddeviceid)
+      - [LoginWithIOSDeviceID](xref:titleid.playfabapi.com.client.authentication.loginwithiosdeviceid)
+      - [LoginWithEmailAddress](xref:titleid.playfabapi.com.client.authentication.loginwithemailaddress)
     - OnLoginSuccess is any function which accepts a single parameter (result)
       - The result object will contain the requested information, according to the API called
       - LoginResult contains some basic information about the player, but for most users, login is simply a mandatory step before calling other APIs
@@ -100,6 +115,6 @@ This optional last section describes each part of our example above, line by lin
         - PlayFabSettings.TitleId is not set. If you forget to set titleId to your title, then nothing will work.
         - Request parameters. If you have not provided the correct or required information for a particular API call, then it will fail. See error.errorMessage, error.errorDetails, or error.GenerateErrorReport() for more info.
         - Device connectivity issue. Cell-phones lose/regain connectivity constantly, and so any API call at any time can fail randomly, and then work immediately after. Going into a tunnel can disconnect you completely.
-        - PlayFab server issue. As with all software, there can be issues. See our [release notes](https://api.playfab.com/releaseNotes/) for updates.
+        - PlayFab server issue. As with all software, there can be issues. See our [release notes](../../release-notes/index.md) for updates.
         - The internet is not 100% reliable. Sometimes the message is corrupted or fails to reach the PlayFab server.
       - If you are having difficulty debugging an issue, and the information within the error information is not sufficient, please visit us on our [forums](https://community.playfab.com/index.html)

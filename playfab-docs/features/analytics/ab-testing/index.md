@@ -1,11 +1,77 @@
-# A/B Testing
+---
+title: What is A/B testing?
+author: v-thopra
+description: Overview of A/B testing.
+ms.author: v-thopra
+ms.date: 01/31/2019
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, analytics, a/b testing
+ms.localizationpriority: medium
+---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa tincidunt dui ut ornare lectus. Viverra vitae congue eu consequat ac felis donec. Leo urna molestie at elementum eu facilisis. A cras semper auctor neque vitae tempus quam. Amet cursus sit amet dictum sit amet justo donec enim. Faucibus turpis in eu mi bibendum neque egestas congue. Morbi quis commodo odio aenean sed adipiscing diam. Lectus vestibulum mattis ullamcorper velit. Dictum fusce ut placerat orci nulla pellentesque.
+# What is A/B testing?
 
-Lorem mollis aliquam ut porttitor leo a diam sollicitudin. Mattis rhoncus urna neque viverra. Pharetra vel turpis nunc eget lorem dolor sed. Aliquam eleifend mi in nulla posuere sollicitudin aliquam ultrices. Adipiscing elit ut aliquam purus sit. Eleifend mi in nulla posuere sollicitudin aliquam. Luctus accumsan tortor posuere ac. Pulvinar sapien et ligula ullamcorper malesuada proin libero nunc consequat. Dignissim cras tincidunt lobortis feugiat vivamus at augue eget. Eu consequat ac felis donec et odio pellentesque diam volutpat. Fermentum odio eu feugiat pretium nibh ipsum. Enim sit amet venenatis urna cursus eget nunc. Sollicitudin nibh sit amet commodo. Varius quam quisque id diam vel quam elementum pulvinar. Vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant. Dui id ornare arcu odio ut. Imperdiet sed euismod nisi porta. Amet purus gravida quis blandit turpis cursus in.
+A/B testing is a technique for running experiments to determine the optimal setting for a particular variable. For example, let’s say you want to test out different sale prices for an item in your in-game store.
 
-In arcu cursus euismod quis viverra nibh cras. Feugiat scelerisque varius morbi enim nunc faucibus. Sed adipiscing diam donec adipiscing tristique risus nec. Mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien et. Convallis a cras semper auctor neque vitae tempus quam. Et leo duis ut diam quam nulla. Egestas sed tempus urna et pharetra pharetra. Arcu felis bibendum ut tristique et. Donec ac odio tempor orci dapibus ultrices in iaculis nunc. Ullamcorper a lacus vestibulum sed arcu non odio.
+With A/B testing, you create a series of player “buckets” into which you partition your players randomly, with weights assigned to each bucket. Each bucket is assigned a different price. Players see the price assigned to their bucket. You then compare the results for each bucket, to determine the most effective price.
 
-Nulla aliquet enim tortor at auctor urna nunc id. Turpis massa sed elementum tempus. Commodo viverra maecenas accumsan lacus vel facilisis volutpat est. Nibh nisl condimentum id venenatis. Sagittis id consectetur purus ut faucibus. Diam maecenas ultricies mi eget mauris pharetra. Porttitor lacus luctus accumsan tortor posuere ac ut consequat semper. Nunc sed velit dignissim sodales. Tortor condimentum lacinia quis vel. Elementum curabitur vitae nunc sed velit dignissim sodales ut eu. Tincidunt eget nullam non nisi est sit amet facilisis magna. Pellentesque pulvinar pellentesque habitant morbi tristique senectus et netus. Morbi quis commodo odio aenean sed adipiscing diam donec. Nunc sed id semper risus in hendrerit gravida rutrum quisque. Id interdum velit laoreet id. Tempor id eu nisl nunc. Cras tincidunt lobortis feugiat vivamus at augue eget arcu dictum. Tempus urna et pharetra pharetra massa massa.
+Consider this test, for example:
 
-Risus in hendrerit gravida rutrum quisque non. Pulvinar mattis nunc sed blandit. Augue mauris augue neque gravida in fermentum et. Odio ut sem nulla pharetra diam sit amet nisl suscipit. Facilisis gravida neque convallis a cras semper. Ac turpis egestas maecenas pharetra convallis. Nunc non blandit massa enim nec dui nunc mattis enim. Eu facilisis sed odio morbi quis commodo odio aenean sed. Amet consectetur adipiscing elit pellentesque habitant. Lorem ipsum dolor sit amet consectetur adipiscing elit ut aliquam. In nibh mauris cursus mattis molestie a. Duis at consectetur lorem donec. Ac odio tempor orci dapibus ultrices in iaculis nunc. A arcu cursus vitae congue mauris rhoncus aenean vel elit. Facilisis magna etiam tempor orci eu lobortis elementum. Congue mauris rhoncus aenean vel elit. Gravida dictum fusce ut placerat orci nulla pellentesque dignissim enim. Netus et malesuada fames ac turpis egestas integer.
+|                      |A                   |B                      |C                      |
+| :--------------------|:-------------------|:----------------------|:----------------------|
+|Weight                |50%                 |25%                    |25%                    |
+|Price per item        |$1.99               |$2.99                  |$4.99                  |
+|Total users           |10,020              |4,996                  |5,025                  |
+|% paying users        |2.1%                |2.0%                   |1.8%                   |
+|Revenue               |$418                |$298                   |$451                   |
+|ARPU                  |$0.0417             |$0.0596                |$0.0898                |
+
+Here, bucket “C”, despite having the highest price, ended up generating the higher Average Revenue Per User (ARPU), and would appear to be the “winner” of the test.
+
+## How PlayFab Supports A/B Testing
+
+We are building support for A/B testing on top of our player segmentation feature of PlayStream. Each test bucket is implemented as a player segment. So if you are running an A/B test called “Price Test” with two buckets, “A” and “B”, then we will create two new segments, “Price Test - A” and “Price Test - B”. All players will be automatically assigned to one of these two segments, based on the bucket weights you selected.
+
+Today, the only feature in PlayFab that can directly show different players different results based on segment is the [targeted store override feature](https://blog.playfab.com/blog/introducing-targeted-stores) of the in-game economy. Effectively, this means the only thing you can A/B test today are stores (including both prices, and collection of items). However, we will soon be adding the ability for other PlayFab features to target different data to different players, such as title data.
+
+Once a test is turned on, we will start generating a daily report for basic **KPIs** (**Key Performance Indicators**) based on bucket. This will allow you to determine the effectiveness of your tests. Later, we will make it possible to do more detailed analysis using an external analytics provider, like [Appuri](https://playfab.com/add-ons/appuri/).
+
+## Creating your first A/B test
+
+After signing into the **PlayFab Game Manager**, click on the **PlayStream** tab, and then on the **A/B testing** sub-tab.
+
+![Game Manager - PlayStream - A/B Testing](media/tutorials/game-manager-playstream-ab-testing.png)  
+
+From here, you can create your first A/B test. At test creation time, you’ll need to provide an **A/B test name**, the **Number of buckets**, and a **Name** and **Percentage** (weight) for each bucket. The weights must add up to 100, and the names must be unique. The corresponding segments are then automatically named *<test name> - <bucket name>*. For example, *Gem Price Test - Control*.
+
+![Game Manager - PlayStream - A/B Testing - New A/B test](media/tutorials/game-manager-playstream-ab-testing-new-ab-test.png)  
+
+Note that bucket assignment is probabilistic, so the populations of each bucket may vary by up to a few percent of the specified weight. This evens out as your player base grows.
+
+## Hooking your test up to stores
+
+Once your test is set up, head to the **Stores** sub-section of the **Catalogs** section in your **Economy** tab. From here, you’ll be able to set overrides for a store on the **Edit Store** page.
+
+![Game Manager - PlayStream - A/B Testing - New A/B test](media/tutorials/game-manager-economy-catalogs-edit-store.png)  
+
+See our [store segment override blog](https://blog.playfab.com/blog/introducing-targeted-stores) for more details on this.
+
+## Reviewing Results
+
+Once you’ve created a test, we will begin to generate a report called “Daily A/B Test KPI Report” each day. This will give you key KPIs by player bucket for each test you’re currently running.
+
+We recommend letting this report run for at least a few days, to get a baseline before configuring store overrides. We partition your users based on their PlayFab IDs, which are randomly assigned at creation time. Due to the probabilistic assignment of players, it is unlikely that the KPI will be uniform at the beginning of the test.
+
+Once you're confident about the results of your test, you can then reconfigure your primary store and safely delete the test.
+
+## Future Work on A/B Testing
+
+Today, Stores are the only PlayFab feature area that have segment overrides. We have plans for overriding Title Data by segments, as well as other areas. This will look much like store overrides, where title-wide variables will be configurable based on the segment of the user requesting title data. This will allow for tuning a much wider variety of features for your title.
+
+We also have plans to allow you to run A/B tests within an existing Segment, instead of for all players. So, for example, you could try running an A/B test on pricing that applies only to members of the VIP segment.
+
+## Links
+
+- [A/B testing quickstart](quickstart.md)
+- [A/B testing tutorials](tutorials.md)

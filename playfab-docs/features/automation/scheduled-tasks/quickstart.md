@@ -1,11 +1,122 @@
-# Scheduled Tasks Quickstart
+---
+title: Scheduled Tasks quickstart
+author: v-thopra
+description: Describes how to create a task that runs on a schedule.
+ms.author: v-thopra
+ms.date: 06/11/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, automation, cloudscript, playstream, events, actions
+ms.localizationpriority: medium
+---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa tincidunt dui ut ornare lectus. Viverra vitae congue eu consequat ac felis donec. Leo urna molestie at elementum eu facilisis. A cras semper auctor neque vitae tempus quam. Amet cursus sit amet dictum sit amet justo donec enim. Faucibus turpis in eu mi bibendum neque egestas congue. Morbi quis commodo odio aenean sed adipiscing diam. Lectus vestibulum mattis ullamcorper velit. Dictum fusce ut placerat orci nulla pellentesque.
+# Scheduled tasks quickstart
 
-Lorem mollis aliquam ut porttitor leo a diam sollicitudin. Mattis rhoncus urna neque viverra. Pharetra vel turpis nunc eget lorem dolor sed. Aliquam eleifend mi in nulla posuere sollicitudin aliquam ultrices. Adipiscing elit ut aliquam purus sit. Eleifend mi in nulla posuere sollicitudin aliquam. Luctus accumsan tortor posuere ac. Pulvinar sapien et ligula ullamcorper malesuada proin libero nunc consequat. Dignissim cras tincidunt lobortis feugiat vivamus at augue eget. Eu consequat ac felis donec et odio pellentesque diam volutpat. Fermentum odio eu feugiat pretium nibh ipsum. Enim sit amet venenatis urna cursus eget nunc. Sollicitudin nibh sit amet commodo. Varius quam quisque id diam vel quam elementum pulvinar. Vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant. Dui id ornare arcu odio ut. Imperdiet sed euismod nisi porta. Amet purus gravida quis blandit turpis cursus in.
+This quickstart walks you through how to create a task that runs on a schedule.
 
-In arcu cursus euismod quis viverra nibh cras. Feugiat scelerisque varius morbi enim nunc faucibus. Sed adipiscing diam donec adipiscing tristique risus nec. Mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien et. Convallis a cras semper auctor neque vitae tempus quam. Et leo duis ut diam quam nulla. Egestas sed tempus urna et pharetra pharetra. Arcu felis bibendum ut tristique et. Donec ac odio tempor orci dapibus ultrices in iaculis nunc. Ullamcorper a lacus vestibulum sed arcu non odio.
+There are many game operation routines that can be automated using a scheduled task, such as modifying prices in a store according to the time of the day, updating title data to reflect changes for a current event, injecting virtual currencies into the game economy daily, etc.
 
-Nulla aliquet enim tortor at auctor urna nunc id. Turpis massa sed elementum tempus. Commodo viverra maecenas accumsan lacus vel facilisis volutpat est. Nibh nisl condimentum id venenatis. Sagittis id consectetur purus ut faucibus. Diam maecenas ultricies mi eget mauris pharetra. Porttitor lacus luctus accumsan tortor posuere ac ut consequat semper. Nunc sed velit dignissim sodales. Tortor condimentum lacinia quis vel. Elementum curabitur vitae nunc sed velit dignissim sodales ut eu. Tincidunt eget nullam non nisi est sit amet facilisis magna. Pellentesque pulvinar pellentesque habitant morbi tristique senectus et netus. Morbi quis commodo odio aenean sed adipiscing diam donec. Nunc sed id semper risus in hendrerit gravida rutrum quisque. Id interdum velit laoreet id. Tempor id eu nisl nunc. Cras tincidunt lobortis feugiat vivamus at augue eget arcu dictum. Tempus urna et pharetra pharetra massa massa.
+In the example used in this quickstart, we show you how to modify a game variable called **rareDropRate** in the title data at 12:00 UTC, and only on weekend days.
 
-Risus in hendrerit gravida rutrum quisque non. Pulvinar mattis nunc sed blandit. Augue mauris augue neque gravida in fermentum et. Odio ut sem nulla pharetra diam sit amet nisl suscipit. Facilisis gravida neque convallis a cras semper. Ac turpis egestas maecenas pharetra convallis. Nunc non blandit massa enim nec dui nunc mattis enim. Eu facilisis sed odio morbi quis commodo odio aenean sed. Amet consectetur adipiscing elit pellentesque habitant. Lorem ipsum dolor sit amet consectetur adipiscing elit ut aliquam. In nibh mauris cursus mattis molestie a. Duis at consectetur lorem donec. Ac odio tempor orci dapibus ultrices in iaculis nunc. A arcu cursus vitae congue mauris rhoncus aenean vel elit. Facilisis magna etiam tempor orci eu lobortis elementum. Congue mauris rhoncus aenean vel elit. Gravida dictum fusce ut placerat orci nulla pellentesque dignissim enim. Netus et malesuada fames ac turpis egestas integer.
+## Step 1 - Prepare the CloudScript
+
+In the **Game Manager**:
+
+- Select **Servers** in the menu to the left.
+- Move to the **CloudScript** tab.
+- Add a **CloudScript** function called **adjustRareDropRate** with a simple call to the **SetTitleData API** as shown in the code snippet and image below.
+
+> [!NOTE]
+> For the sharp-eyed, don’t worry - there’s a bug in there on purpose. Make sure you deploy the new revision, so that it is live in your game.
+
+You can learn more about using **CloudScript** in our [CloudScript quickstart](../cloudscript/quickstart.md), and in documentation for the method [ExecuteCloudScript](xref:titleid.playfabapi.com.client.server-sidecloudscript.executecloudscript).
+
+```javascript
+handlers.adjustRareDropRate = function(args) {
+    // Tutorial demo CloudScript
+    serverAPI.SetTitleData({
+        "Key": "rareDropRate",
+        "Value": args.dropRate
+    });
+}
+```
+
+![Game Manager - CloudScript - Deploy new revision](media/tutorials/game-manager-cloudscript-deploy-new-revision.png)  
+
+## Step 2 - Create a scheduled task
+
+Now select **Servers** from the menu to the left.
+
+- Go to the **Tasks** tab.
+- Select **NEW TASK** on the top right corner of your screen.
+- This will bring up the **Create Task** view. 
+- In the **Type of task** field, choose **Run a CloudScript function**.
+- Below that, you’ll be able to pick a function from the currently deployed revision of **CloudScript** and specify arguments to pass in.
+- Choose the **adjustRareDropRate Handler** that you wrote in the previous step.
+
+To set the schedule for this task:
+
+- Select **On a schedule (UTC)** under the **SCHEDULE** header.
+- A simple schedule builder lets you choose when the **Task** should run (every hour, day, week, etc).
+- For this example, we would like an advanced schedule, where we can specify which days of the week to run the task.
+- So select **CRON EXPRESSION**.
+
+The highly customizable Cron Expression allows you to build a very complex schedule, though it’s important to note that we currently *only* allow schedules whose occurrences happen on 5-minute marks of the hour.
+
+For example, you may specify a task to run on the 5th, 10th, 25th,or 50th minute of the hour, but you may *not* specify a task to run on the 3rd, 11th, or 46th minute of the hour.
+
+If you'd like to learn more about Cron expression, [crontab.guru](https://crontab.guru/) provides rich information and an interactive expression builder.
+
+In this case, we want the task to run at 12:00 UTC on Saturdays and Sundays, which would be “00 12 * * 0,6” (zero minutes past twelve o’clock, every Sunday and Saturday).
+
+Finally, make sure you save the new task before moving on to the next step.
+
+![Game Manager - Tasks - New Scheduled Task](media/tutorials/game-manager-tasks-new-scheduled-task.png)  
+
+## Step 3 - Test the task
+
+On the **Tasks** view (**Servers** -> **Tasks**), we can see that the next run of the newly created task is on the following *Saturday* - as expected.
+
+So, if it’s currently *Tuesday*, then the next scheduled runtime would be *4 days away*. To test the task *now*, select the **Adjust rare drop rate** task and choose **RUN TASKS**.
+
+![Game Manager - Tasks - Run Tasks](media/tutorials/game-manager-tasks-run-tasks.png)  
+
+## Step 4 - Check the results of the test run
+
+Unfortunately, the task run has failed. Select the task instance to see what went wrong.
+
+![Game Manager - Tasks - Recent Task executions - Fail](media/tutorials/game-manager-tasks-recent-task-executions-failed.png)  
+
+The **Task Instance Details** view provides diagnostic information on why the task failed.
+
+In this case, it’s pointing out that the call to **serverAPI.SetTitleData** is incorrect. It should *really* be **server.SetTitleData** (for an explanation, see the **Intermediate: Calling the Server APIs** section of the [Writing Custom CloudScript](../cloudscript/writing-custom-cloudscript.md#intermediate-calling-the-server-apis) tutorial).
+
+There is other important information on the **Task Instance Details** view as well - such as the start and end times, the function that was called, any arguments passed in, the full **CloudScript** execution result, and more.
+
+![Game Manager - Tasks - Tas Instance Details](media/tutorials/game-manager-tasks-task-instance-details.png)  
+
+## Step 5 - Test again (successfully)
+
+Go ahead and fix the error we found in Step 4. The correct code snippet is shown below.
+
+```javascript
+handlers.adjustRareDropRate = function(args) {
+    // Tutorial demo CloudScript
+    server.SetTitleData({
+        "Key": "rareDropRate",
+        "Value": args.dropRate
+    });
+}
+```
+
+And now, repeating Step 3, your final test run is successful.
+
+![Game Manager - Tasks - Recent Task executions - Successful](media/tutorials/game-manager-tasks-recent-task-executions-successful.png)  
+
+To confirm success:
+
+- Select **Content** in the menu to the left.
+- Go to the **Title Data** tab.
+- Verify that the **Title Data** entry was actually set.
+
+![Game Manager - Content - Title Data](media/tutorials/game-manager-content-title-data.png)  

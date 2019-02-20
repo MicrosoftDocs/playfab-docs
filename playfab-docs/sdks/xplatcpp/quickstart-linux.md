@@ -1,4 +1,16 @@
-# C++ Quickstart for Linux
+---
+title: C++ quickstart for Linux
+author: v-thopra
+description: This guide will help you make your first PlayFab API call in Linux C++.
+ms.author: v-thopra
+ms.date: 06/11/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, c++, linux, cocos2d-x, unreal, lua sdk
+ms.localizationpriority: medium
+---
+
+# C++ quickstart for Linux
 
 This guide will help you make your first API call in C++. A native C++ project can be used a few ways:
 
@@ -141,8 +153,7 @@ int main()
   - "Congratulations, you made your first successful API call!"
 
 - At this point, you can start making other API calls, and building your game
-- For a list of all available client API calls, see our documentation:
-  - [https://api.playfab.com/](https://api.playfab.com/)
+- For a list of all available client API calls, see our [PlayFab API References](../../api-references/index.md) documentation.
 
 - Happy coding!
 
@@ -167,10 +178,10 @@ This optional last section describes each part of main.cpp in detail.
       - For LoginWithCustomIDRequest, there is a mandatory parameter of CustomId, which uniquely identifies a player and CreateAccount, which allows the creation of a new account with this call.
 
     - For login, most developers will want to use a more appropriate login method
-      - See the [PlayFab Login documentation](https://api.playfab.com/documentation/Client#Authentication) for a list of all login methods, and input parameters. Common choices are:
-        - [LoginWithAndroidDeviceID](https://api.playfab.com/documentation/Client/method/LoginWithAndroidDeviceID)
-        - [LoginWithIOSDeviceID](https://api.playfab.com/documentation/Client/method/LoginWithIOSDeviceID)
-        - [LoginWithEmailAddress](https://api.playfab.com/documentation/Client/method/LoginWithEmailAddress)
+      - See the [PlayFab Login documentation](xref:titleid.playfabapi.com.client.authentication) for a list of all login methods, and input parameters. Common choices are:
+        - [LoginWithAndroidDeviceID](xref:titleid.playfabapi.com.client.authentication.loginwithandroiddeviceid)
+        - [LoginWithIOSDeviceID](xref:titleid.playfabapi.com.client.authentication.loginwithiosdeviceid)
+        - [LoginWithEmailAddress](xref:titleid.playfabapi.com.client.authentication.loginwithemailaddress)
 
   - PlayFabClientAPI::LoginWithCustomID(request, OnLoginSuccess, OnLoginFail);
     - Triggers the threaded API call. When complete, OnLoginSuccess or OnLoginFail will be invoked appropriately
@@ -191,7 +202,7 @@ This optional last section describes each part of main.cpp in detail.
       - PlayFabSettings.TitleId is not set. If you forget to set titleId to your title, then nothing will work.
       - Request parameters. If you have not provided the correct or required information for a particular API call, then it will fail. See error.errorMessage, error.errorDetails, or error.GenerateErrorReport() for more info.
       - Device connectivity issue. Cell-phones lose/regain connectivity constantly, and so any API call at any time can fail randomly, and then work immediately after. Going into a tunnel can disconnect you completely.
-      - PlayFab server issue. As with all software, there can be issues. See our [release notes](https://api.playfab.com/releaseNotes/) for updates.
+      - PlayFab server issue. As with all software, there can be issues. See our [release notes](../../release-notes/index.md) for updates.
       - The internet is not 100% reliable. Sometimes the message is corrupted or fails to reach the PlayFab server.
 
     - If you are having difficulty debugging an issue, and the information within the error information is not sufficient, please visit us on our [forums](https://community.playfab.com/index.html)

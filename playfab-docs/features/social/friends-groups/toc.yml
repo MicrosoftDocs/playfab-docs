@@ -1,7 +1,0 @@
-- name: Friends & Groups
-  href: index.md
-  items:
-  - name: Quickstart
-    href: quickstart.md
-  - name: Tutorials
-    href: tutorials.md

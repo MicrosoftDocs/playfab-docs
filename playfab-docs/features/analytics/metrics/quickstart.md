@@ -1,11 +1,66 @@
-# Metrics Quickstart
+---
+title: Metrics quickstart
+author: v-thopra
+description: Quickstart for Metrics.
+ms.author: v-kciril
+ms.date: 02/12/2019
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, analytics, metrics
+ms.localizationpriority: medium
+---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa tincidunt dui ut ornare lectus. Viverra vitae congue eu consequat ac felis donec. Leo urna molestie at elementum eu facilisis. A cras semper auctor neque vitae tempus quam. Amet cursus sit amet dictum sit amet justo donec enim. Faucibus turpis in eu mi bibendum neque egestas congue. Morbi quis commodo odio aenean sed adipiscing diam. Lectus vestibulum mattis ullamcorper velit. Dictum fusce ut placerat orci nulla pellentesque.
+# Metrics quickstart
 
-Lorem mollis aliquam ut porttitor leo a diam sollicitudin. Mattis rhoncus urna neque viverra. Pharetra vel turpis nunc eget lorem dolor sed. Aliquam eleifend mi in nulla posuere sollicitudin aliquam ultrices. Adipiscing elit ut aliquam purus sit. Eleifend mi in nulla posuere sollicitudin aliquam. Luctus accumsan tortor posuere ac. Pulvinar sapien et ligula ullamcorper malesuada proin libero nunc consequat. Dignissim cras tincidunt lobortis feugiat vivamus at augue eget. Eu consequat ac felis donec et odio pellentesque diam volutpat. Fermentum odio eu feugiat pretium nibh ipsum. Enim sit amet venenatis urna cursus eget nunc. Sollicitudin nibh sit amet commodo. Varius quam quisque id diam vel quam elementum pulvinar. Vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant. Dui id ornare arcu odio ut. Imperdiet sed euismod nisi porta. Amet purus gravida quis blandit turpis cursus in.
+There are two primary ways to explore your metrics from PlayFab Game Manager:   
+ 
+- Trends - A collection of graphs visualizing performance over time.
+- Reports - Data tables comparing. Covered in detail in the Reports Section.
 
-In arcu cursus euismod quis viverra nibh cras. Feugiat scelerisque varius morbi enim nunc faucibus. Sed adipiscing diam donec adipiscing tristique risus nec. Mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien et. Convallis a cras semper auctor neque vitae tempus quam. Et leo duis ut diam quam nulla. Egestas sed tempus urna et pharetra pharetra. Arcu felis bibendum ut tristique et. Donec ac odio tempor orci dapibus ultrices in iaculis nunc. Ullamcorper a lacus vestibulum sed arcu non odio.
+## Trends Tab 
 
-Nulla aliquet enim tortor at auctor urna nunc id. Turpis massa sed elementum tempus. Commodo viverra maecenas accumsan lacus vel facilisis volutpat est. Nibh nisl condimentum id venenatis. Sagittis id consectetur purus ut faucibus. Diam maecenas ultricies mi eget mauris pharetra. Porttitor lacus luctus accumsan tortor posuere ac ut consequat semper. Nunc sed velit dignissim sodales. Tortor condimentum lacinia quis vel. Elementum curabitur vitae nunc sed velit dignissim sodales ut eu. Tincidunt eget nullam non nisi est sit amet facilisis magna. Pellentesque pulvinar pellentesque habitant morbi tristique senectus et netus. Morbi quis commodo odio aenean sed adipiscing diam donec. Nunc sed id semper risus in hendrerit gravida rutrum quisque. Id interdum velit laoreet id. Tempor id eu nisl nunc. Cras tincidunt lobortis feugiat vivamus at augue eget arcu dictum. Tempus urna et pharetra pharetra massa massa.
+The Trends tab offers an easy way to view and analyze performance across eight key performance indicators: 
 
-Risus in hendrerit gravida rutrum quisque non. Pulvinar mattis nunc sed blandit. Augue mauris augue neque gravida in fermentum et. Odio ut sem nulla pharetra diam sit amet nisl suscipit. Facilisis gravida neque convallis a cras semper. Ac turpis egestas maecenas pharetra convallis. Nunc non blandit massa enim nec dui nunc mattis enim. Eu facilisis sed odio morbi quis commodo odio aenean sed. Amet consectetur adipiscing elit pellentesque habitant. Lorem ipsum dolor sit amet consectetur adipiscing elit ut aliquam. In nibh mauris cursus mattis molestie a. Duis at consectetur lorem donec. Ac odio tempor orci dapibus ultrices in iaculis nunc. A arcu cursus vitae congue mauris rhoncus aenean vel elit. Facilisis magna etiam tempor orci eu lobortis elementum. Congue mauris rhoncus aenean vel elit. Gravida dictum fusce ut placerat orci nulla pellentesque dignissim enim. Netus et malesuada fames ac turpis egestas integer.
+- MAU
+- DAU
+- New Players
+- Screen Time
+- Screen Frequency
+- Classic Retention
+- Revenue 
+- Stickiness
+
+The Trends tab is updated once daily at the close of the UTC day. For details on each metric, see Metrics and Terminology. The Trends tab consists of three sections: Filters, the Spark Cards, and the Graphs. 
+
+![Trends Tab](media/tutorials/trends-tab.png)
+ 
+## Filters 
+
+At the top, there are three page-level filters that can be applied. Choosing any filter will update all spark cards and graphs to match the current active selection: 
+
+**Time:** Choose the time interval to explore, from seven days to six months. 
+**Platform:** See only data for individual device types such as Android, iPhone, or Windows.  
+**Region:** See only data from a specific geographic region. For a complete list of which countries are grouped under each region, see Regions. 
+
+> [!NOTE]
+> Platform and region filters are not currently supported for Revenue. This will be resolved in a future release. 
+
+![Filters](media/tutorials/filters.png) 
+ 
+## Spark cards 
+
+The Spark cards are designed to offer an at-a-glance view of the today’s. Each Spark Card consists of a trend line, the actual value from the most recent UTC day, and the trend comparing the most recent value against the period start. Definitions for each are obtained by hovering over the metric or by tapping on a mobile phone.
+
+![Spark Card](media/tutorials/spark-card.png)  
+ 
+## Graphs 
+
+The graphs provide day level trend data for each of the six metrics. In some cases, the combo box in the upper-left can be used to toggle the active metric. For example, the Active Players graph can show either DAU or Rolling 30-Day MAU.  
+
+In the upper right-hand corner, individual lines can be toggled on and off. Doing so dynamically re-scales the y-axis. Additionally, in the Retention Graph, D1 and D7 can be disabled to emphasize variations in D14 and D30. Hover over any data point to display the actual value for the selected day. To the right of each graph, supporting metrics offer additional insights such as the average and/or total for the period. 
+
+![Graphs](media/tutorials/graph.png)
+ 
+## Data Collection 
+
+If your title is not collecting device information or sessions events, some components of the Trend Explorer will be unavailable. To enable these, change your settings in the Data Collection tab. See Data Collection for more details. 

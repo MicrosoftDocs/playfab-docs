@@ -1,11 +1,18 @@
-- name: SDKS
-  href: ./index.md
+- name: SDKs
+  href: /gaming/playfab/?#pivot=documentation&panel=sdks
   items:
+  - name: SDK Generator
+    href: ./sdkgenerator/index.md
+    items:
+    - name: Quickstart
+      href: ./sdkgenerator/quickstart.md
   - name: ActionScript
     href: ./actionscript/index.md
     items:
     - name: Quickstart
       href: ./actionscript/quickstart.md
+  - name: Android Studio Project (Java)
+    href: ./androidstudio/index.md
   - name:  C++
     href: ./xplatcpp/index.md
     items:
@@ -13,13 +20,13 @@
       href: ./xplatcpp/quickstart-windows.md
     - name: Quickstart - Linux
       href: ./xplatcpp/quickstart-linux.md
+    - name: Quickstart - Xbox
+      href: ./xplatcpp/quickstart-xbox.md
   - name:  C#
     href: ./c-sharp/index.md
     items:
-    - name: Quickstart - C#
-      href: ./c-sharp/quickstart-c-sharp.md
-    - name: Quickstart - Xamarin
-      href: ./c-sharp/quickstart-xamarin.md
+    - name: Quickstart
+      href: ./c-sharp/quickstart.md
   - name: Cocos2d-x
     href: ./cocos2d-x/index.md
     items:
@@ -52,6 +59,8 @@
     items:
     - name: Quickstart
       href: ./objective-c/quickstart.md
+  - name: Phaser.io
+    href: ./phaser/index.md
   - name: PHP
     href: ./php/index.md
     items:
@@ -62,6 +71,8 @@
     items:
     - name: Quickstart
       href: ./postman/quickstart.md
+    - name: Executing the PlaFab API via Postman
+      href: ./postman/executing-the-playfab-api-via-postman.md
   - name: Python
     href: ./python/index.md
     items:
@@ -77,3 +88,20 @@
     items:
     - name: Quickstart
       href: ./unreal/quickstart.md
+    - name: Upgrade Tutorial
+      href: ./unreal/unreal-marketplace-plugin-upgrade-tutorial.md
+  - name: Xamarin (C#)
+    href: ./xamarin/index.md
+    items:
+    - name: Quickstart
+      href: ./xamarin/quickstart.md
+  - name: Cross platform C++
+    href: ./xplatcpp/index.md
+    items:
+    - name: Quickstart - Linux
+      href: ./xplatcpp/quickstart-linux.md
+    - name: Quickstart - Windows
+      href: ./xplatcpp/quickstart-windows.md
+    - name: Quickstart - Xbox One
+      href: ./xplatcpp/quickstart-xbox.md
+  

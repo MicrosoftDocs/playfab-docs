@@ -1,11 +1,146 @@
-# Title Data Quickstart
+---
+title: Title Data quickstart
+author: v-thopra
+description: Describes how to programmatically create and use title data
+ms.author: v-thopra
+ms.date: 06/11/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, configuration, title data
+ms.localizationpriority: medium
+---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa tincidunt dui ut ornare lectus. Viverra vitae congue eu consequat ac felis donec. Leo urna molestie at elementum eu facilisis. A cras semper auctor neque vitae tempus quam. Amet cursus sit amet dictum sit amet justo donec enim. Faucibus turpis in eu mi bibendum neque egestas congue. Morbi quis commodo odio aenean sed adipiscing diam. Lectus vestibulum mattis ullamcorper velit. Dictum fusce ut placerat orci nulla pellentesque.
+# Title Data quickstart
 
-Lorem mollis aliquam ut porttitor leo a diam sollicitudin. Mattis rhoncus urna neque viverra. Pharetra vel turpis nunc eget lorem dolor sed. Aliquam eleifend mi in nulla posuere sollicitudin aliquam ultrices. Adipiscing elit ut aliquam purus sit. Eleifend mi in nulla posuere sollicitudin aliquam. Luctus accumsan tortor posuere ac. Pulvinar sapien et ligula ullamcorper malesuada proin libero nunc consequat. Dignissim cras tincidunt lobortis feugiat vivamus at augue eget. Eu consequat ac felis donec et odio pellentesque diam volutpat. Fermentum odio eu feugiat pretium nibh ipsum. Enim sit amet venenatis urna cursus eget nunc. Sollicitudin nibh sit amet commodo. Varius quam quisque id diam vel quam elementum pulvinar. Vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant. Dui id ornare arcu odio ut. Imperdiet sed euismod nisi porta. Amet purus gravida quis blandit turpis cursus in.
+This quickstart describes how to programmatically create and use title data.
 
-In arcu cursus euismod quis viverra nibh cras. Feugiat scelerisque varius morbi enim nunc faucibus. Sed adipiscing diam donec adipiscing tristique risus nec. Mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien et. Convallis a cras semper auctor neque vitae tempus quam. Et leo duis ut diam quam nulla. Egestas sed tempus urna et pharetra pharetra. Arcu felis bibendum ut tristique et. Donec ac odio tempor orci dapibus ultrices in iaculis nunc. Ullamcorper a lacus vestibulum sed arcu non odio.
+This an important topic because storing a game's configuration data remotely, on the server, where it can be changed at any time, is one of the most basic reasons to use a service like PlayFab.
 
-Nulla aliquet enim tortor at auctor urna nunc id. Turpis massa sed elementum tempus. Commodo viverra maecenas accumsan lacus vel facilisis volutpat est. Nibh nisl condimentum id venenatis. Sagittis id consectetur purus ut faucibus. Diam maecenas ultricies mi eget mauris pharetra. Porttitor lacus luctus accumsan tortor posuere ac ut consequat semper. Nunc sed velit dignissim sodales. Tortor condimentum lacinia quis vel. Elementum curabitur vitae nunc sed velit dignissim sodales ut eu. Tincidunt eget nullam non nisi est sit amet facilisis magna. Pellentesque pulvinar pellentesque habitant morbi tristique senectus et netus. Morbi quis commodo odio aenean sed adipiscing diam donec. Nunc sed id semper risus in hendrerit gravida rutrum quisque. Id interdum velit laoreet id. Tempor id eu nisl nunc. Cras tincidunt lobortis feugiat vivamus at augue eget arcu dictum. Tempus urna et pharetra pharetra massa massa.
+Title data is represented as Key/Value Pairs (KVPs), that can only be associated with a specific title.
 
-Risus in hendrerit gravida rutrum quisque non. Pulvinar mattis nunc sed blandit. Augue mauris augue neque gravida in fermentum et. Odio ut sem nulla pharetra diam sit amet nisl suscipit. Facilisis gravida neque convallis a cras semper. Ac turpis egestas maecenas pharetra convallis. Nunc non blandit massa enim nec dui nunc mattis enim. Eu facilisis sed odio morbi quis commodo odio aenean sed. Amet consectetur adipiscing elit pellentesque habitant. Lorem ipsum dolor sit amet consectetur adipiscing elit ut aliquam. In nibh mauris cursus mattis molestie a. Duis at consectetur lorem donec. Ac odio tempor orci dapibus ultrices in iaculis nunc. A arcu cursus vitae congue mauris rhoncus aenean vel elit. Facilisis magna etiam tempor orci eu lobortis elementum. Congue mauris rhoncus aenean vel elit. Gravida dictum fusce ut placerat orci nulla pellentesque dignissim enim. Netus et malesuada fames ac turpis egestas integer.
+> [!NOTE]
+> Title data values are copied and distributed to potentially *hundreds* of machines in the PlayFab cluster server. As part of this process, title data is cached, and changes may take up to *fifteen minutes* to refresh in those caches. Title data is best suited for *Global Constant/Static Data*, and is *not suitable* or reliable as *Global Variables*.
+
+## Getting title data
+
+### From the game client
+
+Use [GetTitleData](xref:titleid.playfabapi.com.client.title-widedatamanagement.gettitledata) from the **PlayFabClientAPI** to get the KVPs for a specific title. The following code example displays the values of all of the title data.
+
+```csharp
+public void ClientGetTitleData() {
+    PlayFabClientAPI.GetTitleData(new GetTitleDataRequest(),
+        result => {
+            if(result.Data == null || !result.Data.ContainsKey("MonsterName")) Debug.Log("No MonsterName");
+            else Debug.Log("MonsterName: "+result.Data["MonsterName"]);
+        },
+        error => {
+            Debug.Log("Got error getting titleData:");
+            Debug.Log(error.GenerateErrorReport());
+        }
+    );
+}
+```
+
+### From the game server
+
+Use [GetTitleData](xref:titleid.playfabapi.com.server.title-widedatamanagement.gettitledata) from the **PlayFabServerAPI** to get the **KVPs** for a specific **Title**. The following code example displays the values of all of the **Title Data**.
+
+```csharp
+public void ServerGetTitleData() {
+    PlayFabServerAPI.GetTitleData( new GetTitleDataRequest(),
+        result => {
+            if (result.Data == null || !result.Data.ContainsKey("MonsterName")) Debug.Log("No MonsterName");
+            else Debug.Log("MonsterName: " + result.Data["MonsterName"]);
+        },
+        error => {
+            Debug.Log("Got error getting titleData:");
+            Debug.Log(error.GenerateErrorReport());
+        });
+}
+```
+
+## Setting title data
+
+It is unlikely that title data will change very frequently. For most situations, you should use your title data for static data that is mostly unchanged for the life of the title.
+
+You can set title data by using the Game Manager, or by a server **API** function.
+
+After the title data is set for initial release, most titles will not make significant changes from that point.
+
+### Setting title data using Game Manager
+
+To add data to a title, perform the following steps.
+
+1. Open the title in **Game Manager**.
+2. Select **Content**, then **Title Data**.
+3. Select **Add Item**.
+4. Enter a value for the **Key** and a value for the **Value**. Both the **Key** and the **Value** are stored as strings.
+5. Select the **SUBMIT** button to save the new data item.
+
+![Game Manager - Set Title Data](media/tutorials/game-manager-set-title-data.png)  
+
+### Setting title data by calling the server API in C#
+
+The [SetTitleData](xref:titleid.playfabapi.com.server.title-widedatamanagement.settitledata) **API** is a server **API** that you must call from a dedicated server. You can only set one title data KVP in each call to **SetTitleData**.
+
+```csharp
+public void SetTitleData() {
+    PlayFabServerAPI.SetTitleData(
+        new SetTitleDataRequest {
+            Key = "MonsterName",
+            Value = "Dorf"
+        }, 
+        result => Debug.Log("Set titleData successful"),
+        error => {
+            Debug.Log("Got error setting titleData:");
+            Debug.Log(error.GenerateErrorReport());
+        }
+    );
+}
+```
+
+## Internal title data
+
+Similarly to User Data, title data has internal storage that is hidden from the client. This data can also be set in the Game Manager, or via a server **API**.
+
+### Getting internal title data by calling the server API in C#
+
+```csharp
+public void GetTitleInternalData()
+{
+    PlayFabServerAPI.GetTitleInternalData( new GetTitleDataRequest(),
+        result => {
+            if (result.Data == null || !result.Data.ContainsKey("PlayFab")) Debug.Log("No PlayFab");
+            else Debug.Log("PlayFab: " + result.Data["PlayFab"]);
+        },
+        error => {
+            Debug.Log("Got error getting titleData:");
+            Debug.Log(error.GenerateErrorReport());
+        }
+    );
+}
+```
+
+### Setting internal title data by calling the server API in C#
+
+```csharp
+public void SetTitleInternalData() {
+    PlayFabServerAPI.SetTitleInternalData(
+        new SetTitleDataRequest {
+            Key = "PlayFab",
+            Value = "{ \"Status\": \"Secretly Awesome\" }"
+        }, 
+        result => { Debug.Log("Set titleData successful"); },
+        error =>
+        {
+            Debug.Log("Got error setting titleData:");
+            Debug.Log(error.GenerateErrorReport());
+        });
+}
+```
+## See also
+
+- [Using Publisher Data](../../config/titledata/using-publisher-data.md)
+- [Player Data Quickstart](../../data/playerdata/quickstart.md)
+- [CloudScript Quickstart](../../automation/cloudscript/quickstart.md)

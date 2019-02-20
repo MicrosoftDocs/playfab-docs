@@ -1,7 +1,28 @@
-- name: Reports
+- name: Overview
   href: index.md
+- name: Quickstart
+  href: quickstart.md
+- name: Tutorials
+  href: tutorials.md
   items:
-  - name: Quickstart
-    href: quickstart.md
-  - name: Tutorials
-    href: tutorials.md
+  - name: Daily A/B Test KPI Report
+    href: daily-ab-test-kpi-report.md
+  - name: Daily Abuse Reports History Report
+    href: daily-abuse-reports-history-report.md
+  - name: Daily and Monthly CDN Usage Report
+    href: daily-and-monthly-cdn-usage-report.md
+  - name: Daily and Monthly Top Items Report
+    href: daily-and-monthly-top-items-report.md
+  - name: Daily and Monthly Top Spender Report
+    href: daily-and-monthly-top-spender-report.md
+  - name: Daily and Monthly Top Details Report
+    href: daily-api-usage-details-report.md
+  - name: Daily and Monthly Rolling 30-Day Overview and Totals Reports
+    href: daily-monthly-and-rolling-30-day-overview-and-totals-reports.md
+  - name: Thirty-day New User Conversion Report
+    href: thirty-day-new-user-conversion-report.md
+  - name: Thirty-day New User Retention Report
+    href: thirty-day-new-user-retention-report.md
+  - name: Thirty-day Retention Report
+    href: thirty-day-retention-report.md
+

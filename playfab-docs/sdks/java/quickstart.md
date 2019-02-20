@@ -1,9 +1,21 @@
-# Java Quickstart for Native and Android Studio
+---
+title: Java quickstart for Native and Android Studio
+author: v-thopra
+description: This guide will help you get up and running with the PlayFab JavaSDK and a simple Java program.
+ms.author: v-thopra
+ms.date: 06/11/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, java, playfab java sdk, intellij
+ms.localizationpriority: medium
+---
+
+# Java quickstart for Native and Android Studio
 
 This tutorial aims to help you get up and running with PlayFab JavaSDK and simple Java program. The goals we persue in this tutorial:
 - Acquire necessary JAR files
 - Add JAR files to the classpath
-- Create minimal Java console application that executes [Custom ID Login API Call](https://api.playfab.com/documentation/Client/method/LoginWithCustomID)
+- Create minimal Java console application that executes [Custom ID Login API Call](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid)
 
 ## Acquire necessary JAR files
 
@@ -11,7 +23,7 @@ In order to utilize PlayFab JavaSDK we will need PlayFab Client JavaSDK and it's
 
 You may download PlayFab Client JavaSDK JAR library [here](https://github.com/PlayFab/JavaSDK/tree/versioned/builds). Look for **client-sdk-*.jar** and the corresponding Java Doc [Optional but useful].
 
-You may download latest Google GSON [here](http://repo1.maven.org/maven2/com/google/code/gson/gson/2.8.0/). Look for **gson-*.jar**.
+You may download latest Google GSON [here](https://repo1.maven.org/maven2/com/google/code/gson/gson/2.8.0/). Look for **gson-*.jar**.
 
 ## Project Setup with Intellij Idea
 
@@ -99,7 +111,7 @@ public class Main
         _running = false; // Because this is just an example, successful login triggers the end of the program
     }
 
-    // This is a utility function we haven't put into the core SDK yet.  Feel free to use it.
+    // This is a utility function we haven't put into the core SDK yet. Feel free to use it.
     private static <RT> String CompileErrorsFromResult(PlayFabResult<RT> result) {
         if (result == null || result.Error == null)
             return null;
@@ -122,7 +134,7 @@ To run the application, hit the play button in the top right corner (1). This wi
 
 ![Install PlayFab SDK](media/intellij-run-program.png)
 
-At this point, you can start making other api calls, and building your game. For a list of all available client API calls, see our documentation: [https://api.playfab.com/](https://api.playfab.com/).
+At this point, you can start making other api calls, and building your game. For a list of all available client API calls, see our [PlayFab API References](../../api-references/index.md) documentation.
 
 ## Deconstruct the code
 
@@ -166,7 +178,7 @@ This optional last section describes every line in GettingStarted.java in detail
       - PlayFabSettings.TitleId is not set. If you forget to set titleId to your title, then nothing will work.
       - Request parameters. If you have not provided the correct or required information for a particular API call, then it will fail. See error.errorMessage, error.errorDetails, or error.GenerateErrorReport() for more info.
       - Device connectivity issue. Cell-phones lose/regain connectivity constantly, and so any API call at any time can fail randomly, and then work immediately after. Going into a tunnel can disconnect you completely.
-      - PlayFab server issue. As with all software, there can be issues. See our [release notes](https://api.playfab.com/releaseNotes/) for updates.
+      - PlayFab server issue. As with all software, there can be issues. See our [release notes](../../release-notes/index.md) for updates.
       - The internet is not 100% reliable. Sometimes the message is corrupted or fails to reach the PlayFab server.
 
   - If you are having difficulty debugging an issue, and the information within the error information is not sufficient, please visit us on our [forums](https://community.playfab.com/index.html)

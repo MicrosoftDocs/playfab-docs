@@ -1,11 +1,255 @@
-# Player Data Quickstart
+---
+title: Player Data quickstart
+author: v-thopra
+description: Tutorial that describes how to create and use player data.
+ms.author: v-thopra
+ms.date: 10/26/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, player data
+ms.localizationpriority: medium
+---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa tincidunt dui ut ornare lectus. Viverra vitae congue eu consequat ac felis donec. Leo urna molestie at elementum eu facilisis. A cras semper auctor neque vitae tempus quam. Amet cursus sit amet dictum sit amet justo donec enim. Faucibus turpis in eu mi bibendum neque egestas congue. Morbi quis commodo odio aenean sed adipiscing diam. Lectus vestibulum mattis ullamcorper velit. Dictum fusce ut placerat orci nulla pellentesque.
+# Player data quickstart
 
-Lorem mollis aliquam ut porttitor leo a diam sollicitudin. Mattis rhoncus urna neque viverra. Pharetra vel turpis nunc eget lorem dolor sed. Aliquam eleifend mi in nulla posuere sollicitudin aliquam ultrices. Adipiscing elit ut aliquam purus sit. Eleifend mi in nulla posuere sollicitudin aliquam. Luctus accumsan tortor posuere ac. Pulvinar sapien et ligula ullamcorper malesuada proin libero nunc consequat. Dignissim cras tincidunt lobortis feugiat vivamus at augue eget. Eu consequat ac felis donec et odio pellentesque diam volutpat. Fermentum odio eu feugiat pretium nibh ipsum. Enim sit amet venenatis urna cursus eget nunc. Sollicitudin nibh sit amet commodo. Varius quam quisque id diam vel quam elementum pulvinar. Vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant. Dui id ornare arcu odio ut. Imperdiet sed euismod nisi porta. Amet purus gravida quis blandit turpis cursus in.
+> [!NOTE] 
+> In the PlayFab **APIs**, the function names utilize the term **UserData**. In the **Game Manager**, this concept is described as **Player Data**. They are identical, and interchangeable.
 
-In arcu cursus euismod quis viverra nibh cras. Feugiat scelerisque varius morbi enim nunc faucibus. Sed adipiscing diam donec adipiscing tristique risus nec. Mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien et. Convallis a cras semper auctor neque vitae tempus quam. Et leo duis ut diam quam nulla. Egestas sed tempus urna et pharetra pharetra. Arcu felis bibendum ut tristique et. Donec ac odio tempor orci dapibus ultrices in iaculis nunc. Ullamcorper a lacus vestibulum sed arcu non odio.
+This quickstart describes how to create and use player data. Player data is information that applies to an individual player or player group (shared data) and is stored as Key/Value Pairs (KVPs) by PlayFab.
 
-Nulla aliquet enim tortor at auctor urna nunc id. Turpis massa sed elementum tempus. Commodo viverra maecenas accumsan lacus vel facilisis volutpat est. Nibh nisl condimentum id venenatis. Sagittis id consectetur purus ut faucibus. Diam maecenas ultricies mi eget mauris pharetra. Porttitor lacus luctus accumsan tortor posuere ac ut consequat semper. Nunc sed velit dignissim sodales. Tortor condimentum lacinia quis vel. Elementum curabitur vitae nunc sed velit dignissim sodales ut eu. Tincidunt eget nullam non nisi est sit amet facilisis magna. Pellentesque pulvinar pellentesque habitant morbi tristique senectus et netus. Morbi quis commodo odio aenean sed adipiscing diam donec. Nunc sed id semper risus in hendrerit gravida rutrum quisque. Id interdum velit laoreet id. Tempor id eu nisl nunc. Cras tincidunt lobortis feugiat vivamus at augue eget arcu dictum. Tempus urna et pharetra pharetra massa massa.
+This topic covers client-**API** calls, which are safe to call from any process or context. It also covers server-**API** calls, which should *only* be made from a dedicated server process you control, or a carefully secured **CloudScript** call.
 
-Risus in hendrerit gravida rutrum quisque non. Pulvinar mattis nunc sed blandit. Augue mauris augue neque gravida in fermentum et. Odio ut sem nulla pharetra diam sit amet nisl suscipit. Facilisis gravida neque convallis a cras semper. Ac turpis egestas maecenas pharetra convallis. Nunc non blandit massa enim nec dui nunc mattis enim. Eu facilisis sed odio morbi quis commodo odio aenean sed. Amet consectetur adipiscing elit pellentesque habitant. Lorem ipsum dolor sit amet consectetur adipiscing elit ut aliquam. In nibh mauris cursus mattis molestie a. Duis at consectetur lorem donec. Ac odio tempor orci dapibus ultrices in iaculis nunc. A arcu cursus vitae congue mauris rhoncus aenean vel elit. Facilisis magna etiam tempor orci eu lobortis elementum. Congue mauris rhoncus aenean vel elit. Gravida dictum fusce ut placerat orci nulla pellentesque dignissim enim. Netus et malesuada fames ac turpis egestas integer.
+Server-**APIs** require your dev secret key, which you should never provide-to or publish-with your client.
+
+**About the Code Examples:**
+
+- The **C# Code Examples** shown in this quickstart correspond to using the PlayFab **Unity SDK**.
+- Use the client **APIs** [UpdateUserData](xref:titleid.playfabapi.com.client.playerdatamanagement.updateuserdata) to create, update, or delete and [GetUserData](xref:titleid.playfabapi.com.client.playerdatamanagement.getuserdata) to read data for the player.
+- Use the server **API** [UpdateUserReadOnlyData](ref:titleid.playfabapi.com.server.playerdatamanagement.updateuserreadonlydata) to create, update, or delete and the client **API** [GetUserReadOnlyData](xref:titleid.playfabapi.com.client.playerdatamanagement.getuserreadonlydata) to read title-specific data for the player. This data is visible to the player, but can only be modified by the server.
+- Use the server **APIs** [UpdateUserInternalData](xref:titleid.playfabapi.com.server.playerdatamanagement.updateuserinternaldata) to create, update, or delete and [GetUserInternalData](xref:titleid.playfabapi.com.server.playerdatamanagement.getuserinternaldata) to read title-specific data for the player. This data is server-only, and cannot be seen by the client.
+
+## Player data in Game Manager
+
+You can always get and set player data through Game Manager by performing the following steps.
+
+- Open **Game Manager**. If you are unfamiliar with it, see the [Game Manager quickstart](../../config/gamemanager/quickstart.md).
+- Select the **Players** tab.
+- Select the name of the **Player**. This will put you into the **Players Account** tab.
+- Select the **Player Data** tab to see their data.
+
+## Setting player data
+
+This is data that the client can Create, Read, Update, or Delete (CRUD). To set player data, use the [UpdateUserData](xref:titleid.playfabapi.com.client.playerdatamanagement.updateuserdata) method.
+
+### C# code example
+
+The following **C#** code example creates (or updates, if the KVPs already exist) the KVPs **Ancestor** with the value **Arthur**, and **Successor** with the value **Fred**.
+
+```csharp
+void SetUserData() {
+    PlayFabClientAPI.UpdateUserData(new UpdateUserDataRequest() {
+        Data = new Dictionary<string, string>() {
+            {"Ancestor", "Arthur"},
+            {"Successor", "Fred"}
+        }
+    }, 
+    result => Debug.Log("Successfully updated user data"),
+    error => {
+        Debug.Log("Got error setting user data Ancestor to Arthur");
+        Debug.Log(error.GenerateErrorReport());
+    });
+}
+```
+
+## Getting player data
+
+To get player data, use the [GetUserData](xref:titleid.playfabapi.com.client.playerdatamanagement.getuserdata) method.
+
+### C# code example
+
+The following **C#** code example gets the values of all of the player data KVPs.
+
+```csharp
+void GetUserData() {
+    PlayFabClientAPI.GetUserData(new GetUserDataRequest() {
+        PlayFabId = PlayFabId,
+        Keys = null
+    }, result => {
+        Debug.Log("Got user data:");
+        if (result.Data == null || !result.Data.ContainsKey("Ancestor")) Debug.Log("No Ancestor");
+        else Debug.Log("Ancestor: "+result.Data["Ancestor"].Value);
+    }, (error) => {
+        Debug.Log("Got error retrieving user data:");
+        Debug.Log(error.GenerateErrorReport());
+    });
+}
+```
+
+## Setting read-only player data
+
+This is data that the server can modify, but the client can only read. To set read-only KVPs, you must call the [UpdateUserReadOnlyData](ref:titleid.playfabapi.com.server.playerdatamanagement.updateuserreadonlydata) **API** from a server process.
+
+### C# code example
+
+The following **C#** code example uses the PlayFab server **API** to create (or update, if the KVPs already exist) the KVPs with the key named **Father**, with the value **Fred**,  **Mother** with the value **Alice**, **Sister** with the value **Lucy**, and **Brother** with the value **Doug**.
+
+```csharp
+public void UpdateUserReadOnlyData() {
+    PlayFabServerAPI.UpdateUserReadOnlyData(new UpdateUserDataRequest() {
+        PlayFabId = "user PlayFabId here - obtained from any successful LoginResult",
+        Data = new Dictionary<string, string>() {
+            {"Father", "Fred"},
+            {"Mother", "Alice"},
+            {"Sister", "Lucy"},
+            {"Brother", "Doug"}
+        },
+        Permission = UserDataPermission.Public
+    },
+    result => Debug.Log("Set read-only user data successful"), 
+    error => {
+        Debug.Log("Got error updating read-only user data:");
+        Debug.Log(error.GenerateErrorReport());
+    });
+}
+```
+
+## Getting read-only player data
+
+To get read-only player data, use the [GetUserReadOnlyData](xref:titleid.playfabapi.com.client.playerdatamanagement.getuserreadonlydata) method.
+
+### C# code example
+
+The following **C#** code example uses the PlayFab server **API** to get all of the player read-only data.
+
+```csharp
+public void GetUserReadOnlyData()
+{
+    PlayFabServerAPI.GetUserReadOnlyData(new GetUserDataRequest()
+    {
+        PlayFabId = "user PlayFabId here - obtained from any successful LoginResult",
+    },
+    result => {
+        if(result.Data == null || !result.Data.ContainsKey("Sister")) Debug.Log("No Sister");
+        else Debug.Log("Sister: "+result.Data["Sister"].Value);
+    },
+    error => {
+        Debug.Log("Got error getting read-only user data:");
+        Debug.Log(error.GenerateErrorReport());
+    });
+}
+```
+
+## Setting internal player data
+
+This is data that the client cannot access. To set internal player data, use the [UpdateUserInternalData](xref:titleid.playfabapi.com.server.playerdatamanagement.updateuserinternaldata) method.
+
+### C# code example
+
+The following **C#** code example uses the PlayFab server **API** to create (or update, if a key value already exists) the KVP with the **Key: Rank** and **Value: Sargent**.
+
+```csharp
+public void UpdateUserInternalData() {
+    PlayFabServerAPI.UpdateUserInternalData(new UpdateUserInternalDataRequest() {
+        PlayFabId = "user PlayFabId here - obtained from any successful LoginResult",
+        Data = new Dictionary<string, string>() {
+            {"Class", "Fighter"},
+            {"Race", "Human"},
+        },
+    }, 
+    result => Debug.Log("Set internal user data successful"), 
+    error => {
+        Debug.Log("Got error updating internal user data:");
+        Debug.Log(error.GenerateErrorReport());
+    });
+}
+```
+
+## Getting internal player data
+
+To get internal player data, use the [GetUserInternalData](xref:titleid.playfabapi.com.server.playerdatamanagement.getuserinternaldata) method. Since this is *internal* data, you should *not* expose it to the client.
+
+### C# code example
+
+The following **C#** code example retrieves the KVPs of the player internal data.
+
+```csharp
+public void GetUserInternalData() {
+    PlayFabServerAPI.GetUserInternalData(new GetUserDataRequest() {
+        PlayFabId = "user PlayFabId here - obtained from any successful LoginResult",
+    },
+    result => {
+        if(result.Data == null || !result.Data.ContainsKey("Class")) Debug.Log("No Class");
+        else Debug.Log("Class: " + result.Data["Class"].Value);
+    },
+    error => {
+        Debug.Log("Got error getting internal user data:");
+        Debug.Log(error.GenerateErrorReport());
+    });
+}
+```
+
+## CloudScript code example
+
+**CloudScript** is an advanced topic that is covered in the [CloudScript quickstart](../../automation/cloudscript/quickstart.md). Player data does not require **CloudScript**. It is, however, accessible from **CloudScript** if you require it.
+
+Sometimes, you may want to modify read-only or internal player data from **CloudScript**.
+
+You must be very careful to ensure the security of your server-**API** calls in **CloudScript**. The following code demonstrates modifying a piece of read-only player data from **CloudScript** safely.
+
+```javascript
+function IncrementReadOnlyUserData(args) {
+  var playerData = server.GetUserInternalData({
+        PlayFabId: currentPlayerId,
+        Keys: ["ReadOnlyTest"]
+  });
+
+  var prevCount = "0";
+  var nextCount = "1";
+  try {
+    prevCount = playerData.Data["ReadOnlyTest"].Value;
+    var prevInt = parseInt(prevCount, 10);
+    if (prevInt != prevInt) {
+      prevInt = 0;
+      nextCount = (prevInt + 1).toString();
+    }
+  } catch (e) {
+    prevCount = "0";
+    nextCount = "0";
+  }
+
+  var updateUserDataResult = server.UpdateUserInternalData({
+    PlayFabId: currentPlayerId,
+    Data:
+        {
+          "ReadOnlyTest": nextCount
+        }
+  });
+}
+```
+
+### C# code example
+
+As explained in the **CloudScript** tutorial, you can call the following logic from the client.
+
+```csharp
+public void CloudIncrement() {
+    PlayFabClientAPI.ExecuteCloudScript( new ExecuteCloudScriptRequest {
+        FunctionName = "IncrementReadOnlyUserData"
+    }, 
+    result => Debug.Log("CloudScript call successful"), 
+    error => {
+        Debug.Log("CloudScript call failed");
+        Debug.Log(error.GenerateErrorReport());
+    });
+}
+```
+
+Since this example updates internal player data, you will need to call [GetUserInternalData](xref:titleid.playfabapi.com.server.playerdatamanagement.getuserinternaldata) again from your server to see the results.
+
+Also note that we do not allow *any* client inputs from args directly into a server-**API** call. Be sure to sanitize the client-inputs *first*, if you attempt this.
+
+### See Also
+
+[Title Data quickstart](../../config/titledata/quickstart.md)
+[Using Publisher Data](../../config/titledata/using-publisher-data.md)
+[CloudScript quickstart](../../automation/cloudscript/quickstart.md)

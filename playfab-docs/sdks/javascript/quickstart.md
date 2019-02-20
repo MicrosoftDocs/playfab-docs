@@ -1,4 +1,16 @@
-# JavaScript Quickstart for Native and Phaser
+---
+title: JavaScript quickstart for Native and Phaser
+author: v-thopra
+description: This guide will help you make your first PlayFab API call in JavaScript.
+ms.author: v-thopra
+ms.date: 06/11/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, javascript, playfab javascript sdk, native, phaser
+ms.localizationpriority: medium
+---
+
+# JavaScript quickstart for Native and Phaser
 
 This guide will help you make your first API call in JavaScript.
 
@@ -43,12 +55,14 @@ In your favorite text-editor, update the contents of PlayFabGettingStarted.html 
 
 In your favorite text-editor, update the contents of PlayFabGettingStarted.html as follows:
 
+> [!NOTE]
+> To look up the correct format for the loginRequest object in this example, see the API reference for [LoginWithCustomID](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid).
+
 ```javascript
 function DoExampleLoginWithCustomID(){
     PlayFab.settings.titleId = document.getElementById("titleId").value;
     var loginRequest = {
-        // Currently, you need to look up the correct format for this object in the API-docs:
-        // https://api.playfab.com/documentation/Client/method/LoginWithCustomID
+        // Currently, you need to look up the correct format for this object in the API reference for LoginWithCustomID.
         TitleId: PlayFab.settings.titleId,
         CustomId: document.getElementById("customId").value,
         CreateAccount: true
@@ -78,8 +92,7 @@ var LoginCallback = function (result, error) {
 Congratulations, you made your first successful API call!
 
 - At this point, you can start making other api calls, and building your game
-- For a list of all available client API calls, see our documentation:
-  - https://api.playfab.com/
+- For a list of all available client API calls, see our [PlayFab API References](../../api-references/index.md) documentation.
 
 - Happy coding!
 
@@ -93,7 +106,7 @@ The HTML file has a few important lines:
 src="https://download.playfab.com/PlayFabClientApi.js"></script>
 ```
 
-version of PlayFabSDK. It may be safer for you to download the files, and use a fixed version: [PlayFab JavaScriptSDK](https://api.playfab.com/sdks/download/javascript)
+This line loads the Client-SDK directly from the PlayFab CDN. Our CDN always hosts the latest version of PlayFabSDK. It may be safer for you to download the files, and use a fixed version: [PlayFab JavaScript SDK](https://api.playfab.com/downloads/javascript)
 
 ```html
 <script type="text/javascript" src="PlayFabGettingStarted.js"></script>
@@ -115,10 +128,10 @@ As you can see above, PlayFabGettingStarted.js contains the DoExampleLoginWithCu
   - PlayFabClientSDK.LoginWithCustomID(loginRequest, LoginCallback);
     - This begins the async request to "LoginWithCustomID", which will call LoginCallback when the API call is complete
     - For login, most developers will want to use a more appropriate login method
-      - See the [PlayFab Login Documentation](https://api.playfab.com/documentation/Client#Authentication) for a list of all login methods, and input parameters. Common choices are:
-        - [LoginWithAndroidDeviceID](https://api.playfab.com/documentation/Client/method/LoginWithAndroidDeviceID)
-        - [LoginWithIOSDeviceID](https://api.playfab.com/documentation/Client/method/LoginWithIOSDeviceID)
-        - [LoginWithEmailAddress](https://api.playfab.com/documentation/Client/method/LoginWithEmailAddress)
+      - See the [PlayFab Login Documentation](xref:titleid.playfabapi.com.client.authentication) for a list of all login methods, and input parameters. Common choices are:
+        - [LoginWithAndroidDeviceID](xref:titleid.playfabapi.com.client.authentication.loginwithandroiddeviceid)
+        - [LoginWithIOSDeviceID](xref:titleid.playfabapi.com.client.authentication.loginwithiosdeviceid)
+        - [LoginWithEmailAddress](xref:titleid.playfabapi.com.client.authentication.loginwithemailaddress)
 
   - LoginCallback contains two parameters: result, error
     - When successful, error will be null, and the result object will contain the requested information, according to the API called
@@ -130,7 +143,7 @@ As you can see above, PlayFabGettingStarted.js contains the DoExampleLoginWithCu
         - PlayFabSettings.TitleId is not set. If you forget to set titleId to your title, then nothing will work.
         - Request parameters. If you have not provided the correct or required information for a particular API call, then it will fail. See error.errorMessage, error.errorDetails, or error.GenerateErrorReport() for more info.
         - Device connectivity issue. Cell-phones lose/regain connectivity constantly, and so any API call at any time can fail randomly, and then work immediately after. Going into a tunnel can disconnect you completely.
-        - PlayFab server issue. As with all software, there can be issues. See our [release notes](https://api.playfab.com/releaseNotes/) for updates.
+        - PlayFab server issue. As with all software, there can be issues. See our [release notes](../../release-notes/index.md) for updates.
         - The internet is not 100% reliable. Sometimes the message is corrupted or fails to reach the PlayFab server.
 
     - If you are having difficulty debugging an issue, and the information within the error information is not sufficient, please visit us on our [forums](https://community.playfab.com/index.html)

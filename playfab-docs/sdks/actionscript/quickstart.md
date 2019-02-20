@@ -1,4 +1,16 @@
-# ActionScript Quickstart for Flash
+---
+title: ActionScript quickstart for Flash
+author: v-thopra
+description: This guide will help you make your first PlayFab API call using ActionScript.
+ms.author: v-thopra
+ms.date: 07/12/2018
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, sdk, actionscript
+ms.localizationpriority: medium
+---
+
+# ActionScript quickstart for Flash
 
 This guide will help you make your first PlayFab API call using ActionScript.
 
@@ -14,11 +26,11 @@ This guide will help you make your first PlayFab API call using ActionScript.
   - Downloads:
     - For environment variable instructions below, anything in {curly braces} should be replaced with the actual installation path (don't put actual curly braces in your environment variables)
     - Install the Adobe Air SDK
-      - [http://www.adobe.com/devnet/air/air-sdk-download.html](http://www.adobe.com/devnet/air/air-sdk-download.html)
+      - [https://www.adobe.com/devnet/air/air-sdk-download.html](https://www.adobe.com/devnet/air/air-sdk-download.html)
       - Remember your installation path {AirSdkLocation}, as you will use it below
 
     - Install the Adobe Flex SDK
-      - [http://www.adobe.com/devnet/flex/flex-sdk-download.html](http://www.adobe.com/devnet/flex/flex-sdk-download.html) 
+      - [https://www.adobe.com/devnet/flex/flex-sdk-download.html](https://www.adobe.com/devnet/flex/flex-sdk-download.html) 
       - Remember your installation path {FlexSdkLocation}, and modify your system environment variables:
         - Add {FlexSdkLocation}/bin to your PATH environment variable
           - For example, if you install to C:/dev/flex_sdk_4.6, then set FLEX_HOME=C:/dev/flex_sdk_4.6
@@ -32,7 +44,7 @@ This guide will help you make your first PlayFab API call using ActionScript.
       - This will replace some existing files, and that's correct
 
     - Download the PlayFab ActionScriptSDK
-      - [https://api.playfab.com/sdks/download/actionscript](https://api.playfab.com/sdks/download/actionscript)
+      - [ActionScript SDK](https://api.playfab.com/downloads/actionscript)
       - Download the zip file, and extract it to a location of your choice {PlayFabAs3Location}
 
     - Updates to environment variables sometimes require a computer restart
@@ -180,8 +192,7 @@ With absolute paths based on your FlexSdk installation
   ![Install PlayFab SDK](media/exec-success.png)
 
 - At this point, you can start making other api calls, and building your game
-- For a list of all available client API calls, see our documentation:
-  - [https://api.playfab.com/](https://api.playfab.com/)
+- For a list of all available client API calls, see our [PlayFab API References](../../api-references/index.md) documentation.
   
 - Happy coding!
 
@@ -199,7 +210,7 @@ This optional last section describes every file in the ActionScript3 Project in 
       - adl is Air Debug Launcher, which launches a compiled swf file as a Windows app
 
   - GettingStarted.xml
-    - This is a bare bones ActionScript project definition file. The first section of [this Adobe guide](http://help.adobe.com/en_US/air/build/WS901d38e593cd1bac25d3d8c712b2d86751e-8000.html) describes everything in detail:
+    - This is a bare bones ActionScript project definition file. The first section of [this Adobe guide](https://help.adobe.com/en_US/air/build/WS901d38e593cd1bac25d3d8c712b2d86751e-8000.html) describes everything in detail:
 
   - flexcfg.xml
     - This file tells the mxmlc compiler all of the variables and settings it should use
@@ -237,6 +248,6 @@ This optional last section describes every file in the ActionScript3 Project in 
         - PlayFabSettings.TitleId is not set. If you forget to set titleId to your title, then nothing will work.
         - Request parameters. If you have not provided the correct or required information for a particular API method, then it will fail. See error.errorMessage, error.errorDetails for more info.
         - Device connectivity issue. Cell-phones lose/regain connectivity constantly, and so any API call at any time can fail randomly, and then work immediately after. Going into a tunnel can disconnect you completely.
-        - PlayFab server issue. As with all software, there can be issues. See our [release notes](https://api.playfab.com/releaseNotes/) for updates.
+        - PlayFab server issue. As with all software, there can be issues. See our [release notes](../../release-notes/index.md) for updates.
         - The internet is not 100% reliable. Sometimes the message is corrupted or fails to reach the PlayFab server.
       - If you are having difficulty debugging an issue, and the information within the error callback is not sufficient, please visit us on our [forums](https://community.playfab.com/index.html)
