@@ -1,5 +1,5 @@
 ---
-title: Scheduled Tasks quickstart
+title: Scheduled tasks quickstart
 author: v-thopra
 description: Describes how to create a task that runs on a schedule.
 ms.author: v-thopra
@@ -14,9 +14,13 @@ ms.localizationpriority: medium
 
 This quickstart walks you through how to create a task that runs on a schedule.
 
-There are many game operation routines that can be automated using a scheduled task, such as modifying prices in a store according to the time of the day, updating title data to reflect changes for a current event, injecting virtual currencies into the game economy daily, etc.
+There are many game operation routines that can be automated using a scheduled task, such as:
 
-In the example used in this quickstart, we show you how to modify a game variable called **rareDropRate** in the title data at 12:00 UTC, and only on weekend days.
+- Modifying prices in a store according to the time of the day.
+- Updating title data to reflect changes for a current event.
+- Injecting virtual currencies into the game economy daily, etc.
+
+In the example used in this quickstart, we be showing you how to modify a game variable called **rareDropRate** in the title data at 12:00 UTC, and only on weekend days.
 
 ## Step 1 - Prepare the CloudScript
 
@@ -65,7 +69,7 @@ The highly customizable Cron Expression allows you to build a very complex sched
 
 For example, you may specify a task to run on the 5th, 10th, 25th,or 50th minute of the hour, but you may *not* specify a task to run on the 3rd, 11th, or 46th minute of the hour.
 
-If you'd like to learn more about Cron expression, [crontab.guru](https://crontab.guru/) provides rich information and an interactive expression builder.
+If you'd like to learn more about Cron Expression, [crontab.guru](https://crontab.guru/) provides rich information and an interactive expression builder.
 
 In this case, we want the task to run at 12:00 UTC on Saturdays and Sundays, which would be “00 12 * * 0,6” (zero minutes past twelve o’clock, every Sunday and Saturday).
 

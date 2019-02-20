@@ -70,7 +70,7 @@ Head back to the **Profile** settings in the PlayFab **Game Manager**:
 
 ## Testing
 
-Log out of your PlayFab Account and try to log in again. The first step of the authentication process will look normal (see example provided below).
+Log out of your PlayFab account and try to log in again. The first step of the authentication process will look normal (see example provided below).
 
 ![PlayFab - Login Screen](media/tutorials/playfab-login-screen.png)
 

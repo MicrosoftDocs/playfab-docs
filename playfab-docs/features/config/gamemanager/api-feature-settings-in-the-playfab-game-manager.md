@@ -24,7 +24,7 @@ To find the screen for configuring these options:
 
 ![Game Manager - Settings - API Features](media/tutorials/game-manager-settings-api-features-full.png)  
 
-Some of these check boxes are obvious, and some not so much. In this tutorial, we will go into detail about several of them.
+Some of these check boxes are obvious, while some are not. In this tutorial, we will go into detail about several of them.
 
 > [!NOTE]
 > Several screenshots and demonstrations in this tutorial utilize [Postman](../../../sdks/postman/executing-the-playfab-api-via-postman.md).
@@ -40,7 +40,7 @@ When this flag is set, it forces clients to pass in valid **JSON** for each key 
 Checking this option will require that each key saved across all custom data, including player, publisher, character, title, and item data must be valid **JSON**.
 
 > [!NOTE]
-> This flag can be toggled *on* or *off* at any time. But, it’s *not retroactive*. So existing values will *not* be affected. *Only newly written values will be validated.*
+> This flag can be toggled *on* or *off* at any time. But, it’s *not* retroactive. So existing values will *not* be affected. *Only newly written values will be validated.*
 
 If you attempt to pass invalid **JSON** as a value, it will reject the request with an **HTTP Status Code 400 "Bad Request"**.
 

@@ -25,7 +25,7 @@ Policy is a set of rules, a.k.a. Policy Statements, that are applied in a specif
 
 Right now, PlayFab only supports **API** Access Policy. Thus, by definition, it controls access to **API** resources.
 
-Policies are fetched and updated using **API** calls from the PlayFab admin **APIs** (listed under Admin, in the [PlayFab API Reference](../../../api-references/index.md)); specifically, the [GetPolicy](xref:titleid.playfabapi.com.admin.authentication.getpolicy) and [UpdatePolicy](xref:titleid.playfabapi.com.admin.authentication.updatepolicy) methods.
+Policies are fetched and updated using **API** calls from the PlayFab admin **APIs** (listed under **Admin** in the [PlayFab API Reference](../../../api-references/index.md)); specifically, the [GetPolicy](xref:titleid.playfabapi.com.admin.authentication.getpolicy) and [UpdatePolicy](xref:titleid.playfabapi.com.admin.authentication.updatepolicy) methods.
 
 Since we will be utilizing the admin **API**, see our tutorial [Getting PlayFab Developer Keys](getting-playfab-developer-keys.md). Developer keys will let you authorize for admin **API** calls.
 
@@ -99,9 +99,9 @@ Each Permission Statement consists of the following items:
 
   `pfrn:api--/API-GROUP/API-CALL`
 
-  `API-GROUP` should be replaced with one of PlayFab APIs: `Client`, `Server` or `Admin`
+  `API-GROUP` should be replaced with one of PlayFab **APIs**: `Client`, `Server` or `Admin`
 
-  `API-CALL` should be replaced with concrete API name (ex. "ConfirmPurchase", "LoginWithTwitch", "ReportPlayer" etc.
+  `API-CALL` should be replaced with concrete **API** name (ex. **ConfirmPurchase**, **LoginWithTwitch**, **ReportPlayer** etc.
 
   A resource string supports wildcards. The following resource string will match any resource.
 
