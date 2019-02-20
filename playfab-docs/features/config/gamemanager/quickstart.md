@@ -3,7 +3,7 @@ title: Game Manager quickstart
 author: v-thopra
 description: Provides an overview of the features in the PlayFab Game Manager.
 ms.author: v-thopra
-ms.date: 26/10/2018
+ms.date: 10/26/2018
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, config, game manager

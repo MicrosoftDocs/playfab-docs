@@ -3,7 +3,7 @@ title: A/B Testing quickstart
 author: v-thopra
 description: Demonstrates how to create A/B tests with player buckets.
 ms.author: v-thopra
-ms.date: 30/10/2018
+ms.date: 10/30/2018
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, analytics, a/b testing

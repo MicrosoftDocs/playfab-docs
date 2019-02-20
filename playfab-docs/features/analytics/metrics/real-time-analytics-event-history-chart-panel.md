@@ -3,7 +3,7 @@ title: Real-time analytics - Event History Chart panel
 author: v-thopra
 description: Illustrates how to use the Event History Chart panel.
 ms.author: v-thopra
-ms.date: 08/11/2018
+ms.date: 11/08/2018
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, analytics, metrics, event history

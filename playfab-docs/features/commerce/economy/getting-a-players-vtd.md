@@ -3,7 +3,7 @@ title: Getting a player's Value-to-Date (VTD)
 author: v-thopra
 description: Demonstrates how to get a player's Value to Date (VTD) from their Player Profile.
 ms.author: v-thopra
-ms.date: 30/10/2018
+ms.date: 10/30/2018
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, commerce, economy

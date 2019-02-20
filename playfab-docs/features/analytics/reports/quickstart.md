@@ -3,7 +3,7 @@ title: Reports quickstart
 author: v-thopra
 description: Describes how to access the Game Manager reports composed from events, and broken down by dates.
 ms.author: v-thopra
-ms.date: 30/10/2018
+ms.date: 10/30/2018
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, analytics, reports

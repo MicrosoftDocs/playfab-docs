@@ -3,7 +3,7 @@ title: A/B testing with Stores and Test Buckets
 author: v-thopra
 description: Describes how to create an A/B test that contains several versions of a store that are available to different A/B testing groups (buckets).
 ms.author: v-thopra
-ms.date: 30/10/2018
+ms.date: 10/30/2018
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, analytics, a/b testing

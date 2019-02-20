@@ -3,7 +3,7 @@ title: Billing for PlayFab Parties (Bumblelion)
 author: v-thopra
 description: Describes the Billing plan for Bumblelion 1PP Preview (aka PlayFab Parties).
 ms.author: v-thopra
-ms.date: 13/12/2018
+ms.date: 12/13/2018
 ms.topic: article
 ms.prod: playfab
 ROBOTS: NOINDEX,NOFOLLOW

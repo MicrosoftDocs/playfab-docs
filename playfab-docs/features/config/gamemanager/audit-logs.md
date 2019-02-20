@@ -3,7 +3,7 @@ title: Audit Logs
 author: v-thopra
 description: Describes how to access and view audit logs in the PlayFab Game Manager.
 ms.author: v-thopra
-ms.date: 31/10/2018
+ms.date: 10/31/2018
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, config, game manager

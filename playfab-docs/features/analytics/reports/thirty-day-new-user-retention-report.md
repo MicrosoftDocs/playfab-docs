@@ -3,7 +3,7 @@ title: thirty-day New User Retention Report
 author: v-thopra
 description: Describes the report that tracks the percentages of new players who return to your game over the first 30 days.
 ms.author: v-thopra
-ms.date: 30/10/2018
+ms.date: 10/30/2018
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, analytics, reports

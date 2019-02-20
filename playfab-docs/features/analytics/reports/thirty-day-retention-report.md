@@ -3,7 +3,7 @@ title: thirty-day Retention Report
 author: v-thopra
 description: Describes the report that tracks the percentages of all active players who return to your game over 30 days.
 ms.author: v-thopra
-ms.date: 30/10/2018
+ms.date: 10/30/2018
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, analytics, reports

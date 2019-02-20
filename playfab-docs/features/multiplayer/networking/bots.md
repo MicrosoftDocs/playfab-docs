@@ -3,7 +3,7 @@ title: PlayFab Communication Fabric bots
 author: v-thopra
 description: Introduces bots for PlayFab Communication Fabric.
 ms.author: v-thopra
-ms.date: 18/12/2018
+ms.date: 12/18/2018
 ms.topic: article
 ms.prod: playfab
 ROBOTS: NOINDEX,NOFOLLOW

@@ -3,7 +3,7 @@ title: Allocating game servers and connecting Visual Studio debugging tools
 author: v-thopra
 description: Describes how to allocate multiplayer game servers and connect Visual Studio debugging tools.
 ms.author: v-thopra
-ms.date: 08/11/2018
+ms.date: 11/08/2018
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, social, tournaments, leaderboards, servers, debugging

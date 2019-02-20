@@ -3,7 +3,7 @@ title: Currencies
 author: v-thopra
 description: Describes the Currencies tab in the Economy section in Game Manager, and how to configure Virtual Currency.
 ms.author: v-thopra
-ms.date: 26/10/2018
+ms.date: 10/26/2018
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, commerce, economy, currency, virtual currency

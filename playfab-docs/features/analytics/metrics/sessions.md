@@ -3,7 +3,7 @@ title: Sessions
 author: v-thopra
 description: Describes how to enable and manage logging events to calculate Focus Time and Session Duration.
 ms.author: v-thopra
-ms.date: 29/10/2018
+ms.date: 10/29/2018
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, analytics, metrics, sessions

@@ -3,7 +3,7 @@ title: PlayFab Multiplayer Servers 2.0 (Thunderhead)
 author: v-thopra
 description: Describes how to set up PlayFab's multiplayer server hosting service (Thunderhead), which allows you to operate a dynamically scaling pool of custom game servers in Azure.
 ms.author: v-thopra
-ms.date: 26/10/2018
+ms.date: 10/26/2018
 ms.topic: article
 ms.prod: playfab
 keywords: playfab. multiplayer servers, azure, thunderhead

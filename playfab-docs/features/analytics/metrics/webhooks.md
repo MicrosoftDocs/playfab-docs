@@ -3,7 +3,7 @@ title: Webhooks
 author: v-thopra
 description: Provides an overview of the Webhook panel in Game Manager, and describes how to access and configure a Webhook.
 ms.author: v-thopra
-ms.date: 31/10/2018
+ms.date: 10/31/2018
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, analytics, metrics, webhooks, events

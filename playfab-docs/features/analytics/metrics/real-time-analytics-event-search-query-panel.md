@@ -3,7 +3,7 @@ title: Real-time Analytics - Event search query panel
 author: v-thopra
 description: Illustrates how to use the event search query panel.
 ms.author: v-thopra
-ms.date: 08/11/2018
+ms.date: 11/08/2018
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, analytics, metrics, events

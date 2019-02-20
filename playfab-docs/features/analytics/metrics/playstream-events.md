@@ -3,7 +3,7 @@ title: Generating PlayStream events
 author: v-thopra
 description: Provides an overview of automatic and custom PlayStream events in PlayFab.
 ms.author: v-thopra
-ms.date: 30/10/2018
+ms.date: 10/30/2018
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, automation, playstream, events, custom events, automatic events

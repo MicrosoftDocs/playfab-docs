@@ -3,7 +3,7 @@ title: Custom Stores for Player Segments
 author: v-thopra
 description: Tutorial that describes how to create alternate stores that are available only to players from defined Player Segments.
 ms.author: v-thopra
-ms.date: 26/10/2018
+ms.date: 10/26/2018
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, commerce, stores, segmentation
