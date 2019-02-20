@@ -21,8 +21,9 @@ LiveOps refers to an approach to game design and development that centers around
 
 ## Doing LiveOps with PlayFab
 
-PlayFab offer a variety of tools to empower you to run your LiveOps strategy. The [PlayFab GameManager](playfab-docs\features\config\gamemanager\quickstart.md) is your portal to access the tools and abilities described below. GameManager provides a web-based interface from which LiveOps can be managed and deployed. Most LiveOps functions can be created, managed, and deployed entirely from the GameManager and many can also be updated easily in bulk through JSON file uploads.
+PlayFab offer a variety of tools to empower you to run your LiveOps strategy. 
 
+- The [PlayFab GameManager](playfab-docs\features\config\gamemanager\quickstart.md) is your portal to access the tools and abilities described below. GameManager provides a web-based interface from which LiveOps can be managed and deployed. Most LiveOps functions can be created, managed, and deployed entirely from the GameManager and many can also be updated easily in bulk through JSON file uploads.
 - [Player Segments](playfab-docs\features\data\playerdata\player-segments.md) - PlayFab can automatically sort your players into cohorts, that can then be acted upon through [Cloudscript](playfab-docs\features\automation\cloudscript\quickstart.md), [A/B testing](playfab-docs\features\analytics\ab-testing\quickstart.md), or [Rules](playfab-docs\features\automation\actions-rules\quickstart.md). PlayFab comes with several of the most common segments already set up but you can also make your own segments using player login data or Groups defined by in-game behavior.
 - [Economy](playfab-docs\features\commerce\economy\quickstart.md) - Manage your game’s monetization across all platforms through configurable Stores, Currencies, and pricing. Also, in game economy can be managed through PlayFab allowing real-time changes to item Catalogs, availability, pricing, and Drop Tables.
 - [Leaderboards](playfab-docs\features\social\tournaments-leaderboards\quickstart.md) – Create leaderboards to track any aspect of your game and manage reset frequency and aggregation method.
