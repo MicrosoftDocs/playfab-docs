@@ -3,14 +3,14 @@ title: Introduction to LiveOps
 author: v-kciril
 description: Getting started page for LiveOps.
 ms.author: v-kciril
-ms.date: 1/25/19
+ms.date: 01/25/19
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, real-time analytics, PlayStream, live operations, player behaviors, event archiving, data export, player data, webhooks, analytic reporting, reports
 ms.localizationpriority: medium
 ---
 
-## Introduction to LiveOps
+# Introduction to LiveOps
 
 “The single greatest predictor of success and of sustainable competitive advantage in this business is live game operations.”  
 --Owen Mahoney, CEO, Nexon
