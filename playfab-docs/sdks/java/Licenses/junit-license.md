@@ -1,3 +1,17 @@
+---
+title: Junit license
+author: v-kciril
+description: Junit license.
+ms.author: v-kciril
+ms.date: 02/20/2019
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, java sdk, java, junit
+ms.localizationpriority: medium
+---
+
+## Junit license ##
+
 http://junit.org/junit4/license.html
 
 Eclipse Public License - v 1.0

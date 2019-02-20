@@ -1,3 +1,17 @@
+---
+title: Ionic Newton Jsoft license
+author: v-kciril
+description: The Newton Jsoft license.
+ms.author: v-kciril
+ms.date: 02/20/2019
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, unity3d sdk, unity3d, zlib
+ms.localizationpriority: medium
+---
+
+## Newtonsoft Json license ##
+
 THIRD PARTY SOFTWARE NOTICES AND INFORMATION
 Do Not Translate or Localize
 

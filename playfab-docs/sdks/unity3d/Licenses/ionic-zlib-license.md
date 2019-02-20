@@ -1,3 +1,17 @@
+---
+title: Ionic Zlib license
+author: v-kciril
+description: The Ionic ZLib license.
+ms.author: v-kciril
+ms.date: 02/20/2019
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, unity3d sdk, unity3d, zlib
+ms.localizationpriority: medium
+---
+
+## Ionic ZLib license ##
+
 THIRD PARTY SOFTWARE NOTICES AND INFORMATION
 Do Not Translate or Localize
 

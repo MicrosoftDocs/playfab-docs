@@ -1,3 +1,17 @@
+---
+title: SignalR license
+author: v-kciril
+description: The SignalR license.
+ms.author: v-kciril
+ms.date: 02/20/2019
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, unity3d sdk, unity3d, signalr
+ms.localizationpriority: medium
+---
+
+## SignalR license ##
+
 THIRD PARTY SOFTWARE NOTICES AND INFORMATION
 Do Not Translate or Localize
 
