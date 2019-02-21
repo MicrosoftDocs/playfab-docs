@@ -14,13 +14,13 @@ ms.localizationpriority: medium
 
 ## Player shared secrets
 
-Player shared secrets is a new type of pseudo-secret key which is shared amongst game clients, that can be traded with the **API** for the title's public RSA key, and can be used to perform account registration.
+Player shared secrets is a new type of pseudo-secret key which is shared amongst game clients. It can be traded with the **API** for the title's public RSA key, and can be used to perform account registration.
 
-Titles can have multiple player shared keys, and can set them up and revoke them at will via the Admin **API** calls [Create](xref:titleid.playfabapi.com.admin.authentication.createplayersharedsecret), [Update](xref:titleid.playfabapi.com.admin.authentication.updateplayersharedsecret), [Delete](xref:titleid.playfabapi.com.admin.authentication.deleteplayersharedsecret), [List](xref:titleid.playfabapi.com.admin.authentication.getplayersharedsecrets).
+Titles can have multiple player shared keys, and can set them up and revoke them at will, via the Admin **API** calls [Create](xref:titleid.playfabapi.com.admin.authentication.createplayersharedsecret), [Update](xref:titleid.playfabapi.com.admin.authentication.updateplayersharedsecret), [Delete](xref:titleid.playfabapi.com.admin.authentication.deleteplayersharedsecret), [List](xref:titleid.playfabapi.com.admin.authentication.getplayersharedsecrets).
 
 Player shared secrets should be baked into the respective clients, as there are no client **APIs** to retrieve them - either authenticated or otherwise.
 
-## Title Public Key
+## Title public key
 
 The player shared secret is then sent to [GetTitlePublicKey](xref:titleid.playfabapi.com.client.authentication.gettitlepublickey) which - if the key is valid - will return a **Base 64** encoded **RSA CSP** blob byte array that can encrypt 237 bytes of data.
 
@@ -115,14 +115,14 @@ var loginResult = PLayFabClientAPI.LoginWithCustomID(postModel, customHeaders);
 
 ## Using a policy enforcement
 
-[API Policies](https://playfab.com/blog/permission-policies/) can now be used to enforce that either:
+[API Policies](https://playfab.com/blog/permission-policies/) can now be used to enforce either:
 
-- A client request is an encrypted payload.
-- A client request contains signed headers.
+- That a client request is an encrypted payload.
+- That a client request contains signed headers.
 
 Even *without* using the policy enforcement, if an encrypted payload is sent (or the headers are sent), they will be validated and an error will occur if they are not properly formed.
 
-To create a policy to require headers on a specific **API**, use a *Deny* statement. This creates a policy requiring headers on *all* calls you can place that *aren't* permitted by the *Allow* statement.
+To create a policy to require headers on a specific **API**, use a *Deny* statement. This creates a policy requiring headers on *all* calls you can place that aren't permitted by the *Allow* statement.
 
 Policy statements have a property called **ApiConditions**. **ApiConditions** contains a property called **HasSignatureOrEncryption** which is an enum with three possible values:
 
