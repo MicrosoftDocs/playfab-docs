@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 ## Qunit license ##
 
-Copyright (c) 2008 Ariel Flesler - aflesler(at)gmail(dot)com | http://flesler.blogspot.com
+Copyright (c) 2008 Ariel Flesler - aflesler(at)gmail(dot)com | https://flesler.blogspot.com
 
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 

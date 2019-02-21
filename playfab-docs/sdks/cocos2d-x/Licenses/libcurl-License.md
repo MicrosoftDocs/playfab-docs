@@ -21,7 +21,7 @@ I am not a lawyer and this is not legal advice!
 One common dilemma is that GPL[1]-licensed code is not allowed to be linked with code licensed under the Original BSD license (with the announcement clause). You may still build your own copies that use them all, but distributing them as binaries would be to violate the GPL license - unless you accompany your license with an exception[2]. This particular problem was
 addressed when the Modified BSD license was created, which does not have the announcement clause that collides with GPL.
 
-[libcurl] (http://curl.haxx.se/docs/copyright.html)
+[libcurl] (https://curl.haxx.se/docs/copyright.html)
 
         Uses an MIT (or Modified BSD)-style license that is as liberal as possible.
 
@@ -29,7 +29,7 @@ addressed when the Modified BSD license was created, which does not have the ann
 
         (May be used for SSL/TLS support) Uses an Original BSD-style license with an announcement clause that makes it "incompatible" with GPL. You are not allowed to ship binaries that link with OpenSSL that includes GPL code (unless that specific GPL code includes an exception for OpenSSL - a habit that is growing more and more common). If OpenSSL's licensing is a problem for you, consider using another TLS library.
 
-[GnuTLS](http://www.gnutls.org/)
+[GnuTLS](https://www.gnutls.org/)
 
         (May be used for SSL/TLS support) Uses the LGPL[3] license. If this is a problem for you, consider using another TLS library. Also note that GnuTLS itself depends on and uses other libs (libgcrypt and libgpg-error) and they too are LGPL- or GPL-licensed.
 
@@ -41,7 +41,7 @@ addressed when the Modified BSD license was created, which does not have the ann
 
         (May be used for SSL/TLS support) Is covered by the MPL[4] license, the GPL[1] license and the LGPL[3] license. You may choose to license the code under MPL terms, GPL terms, or LGPL terms. These licenses grant you different permissions and impose different obligations. You should select the license that best meets your needs.
 
-[axTLS](http://axtls.sourceforge.net/)
+[axTLS](https://axtls.sourceforge.net/)
 
         (May be used for SSL/TLS support) Uses a Modified BSD-style license.
 
@@ -53,23 +53,23 @@ addressed when the Modified BSD license was created, which does not have the ann
 
         (May be used for SSL/TLS support) As an OpenSSL fork, it has the same license as that.
 
-[libressl](http://www.libressl.org/)
+[libressl](https://www.libressl.org/)
 
         (May be used for SSL/TLS support) As an OpenSSL fork, it has the same license as that.
 
-[c-ares](http://daniel.haxx.se/projects/c-ares/license.html)
+[c-ares](https://daniel.haxx.se/projects/c-ares/license.html)
 
         (Used for asynchronous name resolves) Uses an MIT license that is very liberal and imposes no restrictions on any other library or part you may link with.
 
-[zlib](http://www.zlib.net/zlib_license.html)
+[zlib](https://www.zlib.net/zlib_license.html)
 
         (Used for compressed Transfer-Encoding support) Uses an MIT-style license that shouldn't collide with any other library.
 
-[MIT Kerberos](http://web.mit.edu/kerberos/www/dist/)
+[MIT Kerberos](https://web.mit.edu/kerberos/www/dist/)
 
         (May be used for GSS support) MIT licensed, that shouldn't collide with any other parts.
 
-Heimdal http://www.h5l.org
+Heimdal https://www.h5l.org
 
         (May be used for GSS support) Heimdal is Original BSD licensed with the announcement clause.
 
@@ -77,18 +77,18 @@ Heimdal http://www.h5l.org
 
         (May be used for GSS support) GNU GSS is GPL licensed. Note that you may not distribute binary curl packages that uses this if you build curl to also link and use any Original BSD licensed libraries!
 
-[libidn](http://josefsson.org/libidn/)
+[libidn](https://josefsson.org/libidn/)
 
         (Used for IDNA support) Uses the GNU Lesser General Public License [3]. LGPL is a variation of GPL with slightly less aggressive
         "copyleft". This license requires more requirements to be met when distributing binaries, see the license for details. Also note that if you distribute a binary that includes this library, you must also
         include the full LGPL license text. Please properly point out what parts of the distributed package that the license addresses.
 
-[OpenLDAP](http://www.openldap.org/software/release/license.html)
+[OpenLDAP](https://www.openldap.org/software/release/license.html)
 
         (Used for LDAP support) Uses a Modified BSD-style license. Since libcurl uses OpenLDAP as a shared library only, I have not heard of
         anyone that ships OpenLDAP linked with libcurl in an app.
 
-[libssh2](http://www.libssh2.org/)
+[libssh2](https://www.libssh2.org/)
 
         (Used for scp and sftp support) libssh2 uses a Modified BSD-style license.
 

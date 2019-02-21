@@ -1,3 +1,17 @@
+---
+title: Node Unit
+author: v-kciril
+description: The Node Unit license. 
+ms.author: v-kciril
+ms.date: 02/21/2019
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, nodejs, javascript, npm javascript playfab, nodeunit, node unit
+ms.localizationpriority: medium
+---
+
+## Node Unit license ##
+
 Copyright (c) 2010 Caolan McMahon
 
 Permission is hereby granted, free of charge, to any person obtaining a copy

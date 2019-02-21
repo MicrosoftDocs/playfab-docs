@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 ## Junit license ##
 
-http://junit.org/junit4/license.html
+https://junit.org/junit4/license.html
 
 Eclipse Public License - v 1.0
 

@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 ## Hamcrest ##
 
-http://hamcrest.org/JavaHamcrest/
+https://hamcrest.org/JavaHamcrest/
 (Unspecified date and owner are not provided by hamcrest)
 https://opensource.org/licenses/BSD-3-Clause
 
