@@ -147,7 +147,7 @@ In addition, all handler functions are passed two parameters, detailed below.
 | Name                 | Use                                                                                                  |
 | :------------------- | :----------------------------------------------------------------------------------------------------|
 | **args**                 | First parameter to a handler function. An object representation of the **FunctionParameter** field of an **ExecuteCloudscript** request. |
-| **context**              | Second parameter to a handler function. Additional information about the request when it is triggered by a **PlayStream** event action, including the [data from the event](https://api.playfab.com/playstream/events) that triggered the action (context.playStreamEvent) and the [profile data](xref:titleid.playfabapi.com.client.accountmanagement.getplayerprofile#playerprofilemodel) for the player associated with it. (context.playerProfile)                                     |
+| **context**              | Second parameter to a handler function. Additional information about the request when it is triggered by a **PlayStream** event action, including the [data from the event](../../../api-references/events/index.md) that triggered the action (context.playStreamEvent) and the [profile data](xref:titleid.playfabapi.com.client.accountmanagement.getplayerprofile#playerprofilemodel) for the player associated with it. (context.playerProfile)                                     |
 
 **CloudScript** functions can be called through the **ExecuteCloudScript API** call or by a preset **PlayStream** event action.
 
@@ -332,7 +332,7 @@ Setting **GeneratePlayStreamEvent** makes the **CloudScript** function call gene
 
    ![Game Manager - PlayStream - debugger](media/tutorials/game-manager-playstream-debugger.png)  
 
-Selecting this will display the raw **JSON** of the event, which is detailed for each event [here](https://api.playfab.com/playstream/events). An example of this **JSON** can be seen in the following example.
+Selecting this will display the raw **JSON** of the event, which is detailed for each event [here](../../../api-references/events/index.md). An example of this **JSON** can be seen in the following example.
 
 - If we add the **LogScript MonoBehavior** to the scene, running the game will yield this in **PlayStream**.
 

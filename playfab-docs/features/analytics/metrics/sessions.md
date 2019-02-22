@@ -20,8 +20,8 @@ Session support is currently *only* available in **Unity SDK**. Support for our 
 
 You'll need to have the **180829** version or newer. This **SDK** first introduces two new events that can be configured to be emitted from the client automatically:
 
-1. [client_session_start](https://api.playfab.com/playstream/events/client_session_start)
-2. [client_focus_change](https://api.playfab.com/playstream/events/client_focus_change)
+1. [client_session_start](../../../api-references/events/client-session-start.md)
+2. [client_focus_change](../../../api-references/events/client-focus-change.md)
 
 ## Logging and managing events
 

@@ -31,7 +31,7 @@ This allows you to get access to functionality in a more intuitive way. The full
 - [Groups](xref:titleid.playfabapi.com.groups.groups)
 - [Data - File](xref:titleid.playfabapi.com.data.file)
 - [Data - Object](xref:titleid.playfabapi.com.data.object)
-- [Events](https://api.playfab.com/documentation/Events)
+- [Events](../../../api-references/events/index.md)
 - [CloudScript](xref:titleid.playfabapi.com.cloudscript.server-sidecloudscript)
 - [Multiplayer](xref:titleid.playfabapi.com.multiplayer.multiplayerserver)
 
