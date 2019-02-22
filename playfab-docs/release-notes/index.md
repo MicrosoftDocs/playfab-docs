@@ -19,7 +19,7 @@ Date: 2018-12-18
 **[XPlatCppSdk](https://github.com/PlayFab/XPlatCppSdk) Specific Changes:**
 
 * **SDK Breaking Change** : Updated the folder structure for the XPlatCppSdk repo. If you are using the SDK with project references, an update to vcxproj files path would be required.
-* Adding Xbox support to the XPlatCppSdk. Refer to the [XPlatCpp Getting Started Guide for Xbox](https://api.playfab.com/docs/getting-started/xplatcpp-getting-started-for-xbox).
+* Adding Xbox support to the XPlatCppSdk. Refer to the [C++ quickstart for Xbox](../sdks/xplatcpp/quickstart-xbox.md).
 * **New API**
  * Added PlayFabEventApi to support Heavyweight (low throughput) and Lightweight (high throughput) custom events.
 
@@ -112,9 +112,9 @@ Date: 2018-09-06
 
 **New PlayStream Event Documentation:**
 
-* [client_focus_change](https://api.playfab.com/playstream/events/client_focus_change)
-* [client_session_start](https://api.playfab.com/playstream/events/client_session_start)
-* [player_device_info](https://api.playfab.com/playstream/events/player_device_info)
+* [client_focus_change](../api-references/events/client-focus-change.md)
+* [client_session_start](../api-references/events/client-session-start.md)
+* [player_device_info](../api-references/events/player-device-info.md)
 
 ## 180829  
 
@@ -158,7 +158,7 @@ Date: 2018-08-09
     * client.[UnlinkFacebookInstantGamesId](xref:titleid.playfabapi.com.client.accountmanagement.unlinkfacebookinstantgamesid) (not ready to use yet)
     * server.[GetPlayFabIDsFromFacebookInstantGamesIds](xref:titleid.playfabapi.com.client.accountmanagement.getplayfabidsfromfacebookinstantgamesids) (not ready to use yet)
 * **New PlayStream Events**
-  * title_hopper_config_updated event renamed to [title_queue_config_updated](https://api.playfab.com/playstream/events/title_queue_config_updated)
+  * title_hopper_config_updated event renamed to [title_queue_config_updated](../api-references/events/title-queue-config-updated.md)
 * **General changes**
   * The parameter "ServerAddress" in many models has been deprecated in favor of the new "ServerIPV4Address"
 
@@ -229,7 +229,7 @@ Date: 2018-07-05
 **API Changes:**
 
 * EntityAPI.[ExecuteEntityCloudScript](xref:titleid.playfabapi.com.cloudscript.server-sidecloudscript.executeentitycloudscript)
-* PlayStreamEventModel.[title_hopper_config_updated](https://api.playfab.com/playstream/events/title_hopper_config_updated)
+* PlayStreamEventModel.title_hopper_config_updated
 
 **New [PythonSdk!](https://github.com/PlayFab/PythonSdk)**
 
@@ -256,7 +256,7 @@ Date: 2018-06-18
 **API Changes:**
 
 * Added new error codes in a variety of API methods
-* Multiple entity-related PlayStream events now describe their [EntityLineage](https://api.playfab.com/playstream/events/datatype/EntityLineage)
+* Multiple entity-related PlayStream events now describe their [EntityLineage](../api-references/events/data-types/entitylineage.md)
 
 ## 180528  
 
@@ -271,7 +271,7 @@ Date: 2018-05-28
  * This is a part of the new GDPR launch. See our blog [here](https://blog.playfab.com/blog/gdpr)
 * Updated Error codes in a variety of API methods
 * New PlayStream Event:
- * [player_data_exported](https://api.playfab.com/playstream/events/player_data_exported)
+ * [player_data_exported](../api-references/events/player-data-exported.md)
 
 ## 180514  
 
@@ -290,7 +290,7 @@ Date: 2018-05-07
 * **New API Method:**
   * entity.[GetProfiles](xref:titleid.playfabapi.com.profiles.accountmanagement.getprofiles)
 * **New PlayStream Events:**
-  * [entity_executed_cloud_script](https://api.playfab.com/playstream/events/entity_executed_cloud_script)
+  * [entity_executed_cloud_script](../api-references/events/entity-executed-cloud-script.md)
 * **Updated API Method:**
   * client.[RegisterPlayFabUser](xref:titleid.playfabapi.com.client.authentication.registerplayfabuser) now returns [result](xref:titleid.playfabapi.com.client.authentication.registerplayfabuser#registerplayfabuserresult).[EntityToken](xref:titleid.playfabapi.com.client.authentication.registerplayfabuser#entitytokenresponse)
 
@@ -377,7 +377,7 @@ Date: 2018-03-16
 
 * admin.[RevokeInventoryItems](xref:titleid.playfabapi.com.admin.playeritemmanagement.revokeinventoryitems) and server.[RevokeInventoryItems](xref:titleid.playfabapi.com.server.playeritemmanagement.revokeinventoryitems)
 * A whole new [Entity API](../features/data/entities/quickstart.md)
-* Many new [Entity PlayStream Events](https://api.playfab.com/playstream/events) (search for "entity" on linked page)
+* Many new [Entity PlayStream Events](../api-references/events/index.md) (search for "entity" on linked page)
 
 **Most SDKs Updated to support Entity APIs:**
 
