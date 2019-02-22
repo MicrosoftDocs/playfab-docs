@@ -10,9 +10,9 @@ keywords: playfab, lua sdk, lua, json
 ms.localizationpriority: medium
 ---
 
-## Json Lua ##
+# Json Lua
 
-https://github.com/rxi/json.lua
+[https://github.com/rxi/json.lua](https://github.com/rxi/json.lua)
 
 Copyright (c) 2015 rxi
 

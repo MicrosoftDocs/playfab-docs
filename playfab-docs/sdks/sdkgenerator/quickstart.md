@@ -17,7 +17,7 @@ This is a node.js based program that takes a json description of the PlayFab API
 ## Prerequisites
 
 1. Any recent MS-Windows Operating System
-1. You must have Node.js installed: <http://nodejs.org/>
+1. You must have Node.js installed: <https://nodejs.org/>
    - The location of node.exe must be in your PATH environment variable. Default: C:\Program Files (x86)\nodejs\
    - Highly suggested that you install Node.js tools for Visual Studio: <https://beta.visualstudio.com/vs/node-js/>
 1. SdkGenerator requires several PlayFab repositories, cloned to your local machine, as sibling folders to SdkGenerator.
@@ -25,7 +25,7 @@ This is a node.js based program that takes a json description of the PlayFab API
    - `<parent-folder>/sdks/<targetSDK>` - For every sdk you want to generate, you should git-clone the PlayFab repository for that target into the "sdks" subfolder first. In many cases, there are required files in the repo which are not generated.
 1. SdkGenerator can be configured to read from other PlayFab repositories, cloned to your local machine, as sibling folders to SdkGenerator.
 
-- `<parent-folder>/API_Specs = <https://github.com/PlayFab/api_specs>`
+   - `<parent-folder>/API_Specs = <https://github.com/PlayFab/api_specs>`
 
 ## Usage instructions
 
@@ -81,7 +81,7 @@ PlayFab sometimes accepts submissions for new SDKs. This process is extensive, a
 
 ## Troubleshooting
 
-For a complete list of available APIs, check out the [online documentation](https://docs.microsoft.com/en-us/rest/api/playfab/).
+For a complete list of available APIs, check out the [API References](../../api-references/index.md).
 
 ### Contact Us
 
@@ -89,4 +89,4 @@ We love to hear from our developer community! Do you have ideas on how we can ma
 
 Our Developer Success Team can assist with answering any questions as well as process any feedback you have about PlayFab services.
 
-[Forums, Support and Knowledge Base](https://community.playfab.com/hc/en-us)
+[Forums, Support and Knowledge Base](https://community.playfab.com/)

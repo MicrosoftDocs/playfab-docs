@@ -10,7 +10,7 @@ keywords: playfab, nodejs, javascript, npm javascript playfab, nodeunit, node un
 ms.localizationpriority: medium
 ---
 
-## Node Unit license ##
+# Node Unit license
 
 Copyright (c) 2010 Caolan McMahon
 

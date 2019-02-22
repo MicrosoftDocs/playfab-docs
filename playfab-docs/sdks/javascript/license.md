@@ -1,5 +1,5 @@
 ---
-title: Javascript
+title: Javascript licenses
 author: v-kciril
 description: Landing page for the PlayFab Javascript SDK.
 ms.author: v-kciril
