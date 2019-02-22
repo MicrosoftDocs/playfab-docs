@@ -30,7 +30,6 @@ On the panel shown below:
 
 ![Event History Chart panel](media/tutorials/event-history-chart-panel.png)  
 
-
 ## Tips and Tricks
 
 - It is possible to select an interval in the chart and adjust the chart to reflect only the selected interval.

@@ -35,7 +35,7 @@ We are building support for A/B testing on top of our player segmentation featur
 
 Today, the only feature in PlayFab that can directly show different players different results based on segment is the [targeted store override feature](https://blog.playfab.com/blog/introducing-targeted-stores) of the in-game economy. Effectively, this means the only thing you can A/B test today are stores (including both prices, and collection of items). However, we will soon be adding the ability for other PlayFab features to target different data to different players, such as title data.
 
-Once a test is turned on, we will start generating a daily report for basic **KPIs** (**Key Performance Indicators**) based on bucket. This will allow you to determine the effectiveness of your tests. Later, we will make it possible to do more detailed analysis using an external analytics provider, like [Appuri](https://playfab.com/add-ons/appuri/).
+Once a test is turned on, we will start generating a daily report for basic **KPIs** (**Key Performance Indicators**) based on bucket. This will allow you to determine the effectiveness of your tests. Later, we will make it possible to do more detailed analysis using an external analytics provider.
 
 ## Creating your first A/B test
 

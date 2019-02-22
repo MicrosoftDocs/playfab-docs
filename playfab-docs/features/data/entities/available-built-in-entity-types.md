@@ -23,7 +23,7 @@ These values are meant to be used in the **EntityKey.Type** field.
 
 ## Namespace
 
-**Namespace** is the singular entity that refers to *all* global information for every title within a studio. This information should be static.
+Namespace is the singular entity that refers to *all* global information for every title within a studio. This information should be static.
 
 > [!NOTE]
 > Changes to this entity will *not* be reflected in real time.

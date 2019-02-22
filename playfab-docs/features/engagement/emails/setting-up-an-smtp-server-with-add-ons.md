@@ -51,11 +51,12 @@ To test this feature, you can use the Gmail **SMTP** server, provided you have a
 
 - Host name: **smtp.gmail.com**
 - Port number: **587**
-- Username: (**your gmail address**. E.g., "support@playfab.com")
+- Username: (**your gmail address** - e.g., "support@playfab.com")
+
 - Password: (**your password**)
 
 > [!NOTE]
-> If you have 2-factor authentication enabled, you will need to create an App Password. See [Sign in using an App password](https://support.google.com/accounts/answer/185833?hl=en) for more information.
+> If you have 2-factor authentication enabled, you will need to create an App password. See [Sign in using an App password](https://support.google.com/accounts/answer/185833?hl=en) for more information.
 
 The **SMTP** add-on is now installed, and will show a green check and message indicating success.
 

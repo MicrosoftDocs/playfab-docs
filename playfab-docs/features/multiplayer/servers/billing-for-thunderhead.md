@@ -28,14 +28,14 @@ To learn more about these different virtual machine please see [Azure VM Sizes](
 > [!NOTE]
 > Free evaluation capacity is provided per month by the PlayFab tier.  
 
-| *Feature*	|Essentials |	Indie Studio |	Professional | Enterprise
+| *Feature*|Essentials |Indie Studio |Professional | Enterprise
 |-|-|-|-|-|
-| **Av2 VM Hours** |	Not included | 100 Av2 hours | 100 Av2 hours | 100 Av2 hours |
-| **Dv2 VM Hours** |	Not included | 100 Dv2 hours | 100 Dv2 hours | 100 Dv2 hours |
-| **Maximum Av2 Cores** |	Not included | 16 Av2 Cores | 16 Av2 Cores | 16 Av2 Cores |
-| **Maximum Dv2 Cores** |	Not included | 8 Dv2 Cores | 8 Dv2 Cores  | 8 Dv2 Cores |
-| **Network Egress** |	Not included | 100 GB | 100 GB | 100 GB |
-| **Storage** |	Not included | 50 GB | 50 GB | 50 GB |
+| **Av2 VM Hours** |Not included | 100 Av2 hours | 100 Av2 hours | 100 Av2 hours |
+| **Dv2 VM Hours** |Not included | 100 Dv2 hours | 100 Dv2 hours | 100 Dv2 hours |
+| **Maximum Av2 Cores** |Not included | 16 Av2 Cores | 16 Av2 Cores | 16 Av2 Cores |
+| **Maximum Dv2 Cores** |Not included | 8 Dv2 Cores | 8 Dv2 Cores  | 8 Dv2 Cores |
+| **Network Egress** |Not included | 100 GB | 100 GB | 100 GB |
+| **Storage** |Not included | 50 GB | 50 GB | 50 GB |
 
 ## Consumption pricing for PlayFab Multiplayer Servers
 
@@ -47,18 +47,18 @@ Games that require Multiplayer Servers will need to purchase additional capacity
 
 A typical monthly bill might be:
 
-| *Line item*	| Consumption |	Unit |	Rate | Sub-total
+| *Line item*| Consumption |Unit |Rate | Sub-total
 |-|-|-|-|-|
 | Multiplayer Servers - D2v2 - US East | 1000 | VM Hours | $0.252 | $252.00 |
 | Multiplayer Servers - D2v2 - US South Central | 1000 | VM Hours | $0.252 | $252.00 |
 | Multiplayer Servers - D2v2 - US West | 1000 | VM Hours | $0.252 | $252.00 |
 | Multiplayer Servers - D2v2 - West Europe | 1000 | VM Hours | $0.252 | $252.00 |
 | Multiplayer Servers - D2v2 - Australia  East | 100 | VM Hours | $0.302 | $30.20 |
-| Multiplayer Servers - D2v2 - East Asia |	100 | VM Hours | $0.277 | $27.70 |
-| Multiplayer Servers - Cloud Storage |	10 | GB | $0.10 | $1.00 |
-| Multiplayer - Data Egress - Zone 1 |	1000 | GB | $0.05 | $50.00 |
-| Multiplayer - Data Egress - Zone 2 |	100 | GB | $0.08 | $8.00 |
-| *Total* |	 |  |  | $1,124.90 |
+| Multiplayer Servers - D2v2 - East Asia |100 | VM Hours | $0.277 | $27.70 |
+| Multiplayer Servers - Cloud Storage |10 | GB | $0.10 | $1.00 |
+| Multiplayer - Data Egress - Zone 1 |1000 | GB | $0.05 | $50.00 |
+| Multiplayer - Data Egress - Zone 2 |100 | GB | $0.08 | $8.00 |
+| *Total* | |  |  | $1,124.90 |
 
 ## Estimating cost with an example
 
@@ -73,9 +73,9 @@ An example:
 
 | Input|  Definition|
 |-|-|
-|12 minutes	| Average multiplayer gameplay minutes per user per month
-|100,000 users	| Unique users per month
-|4 users	| Average users per session
+|12 minutes| Average multiplayer gameplay minutes per user per month
+|100,000 users| Unique users per month
+|4 users| Average users per session
 
 ```
   12 User Minutes          100,000 Users        1 Session                  Session Minutes
@@ -89,8 +89,8 @@ In this example we are packing 3 servers on a **2-core D2_v3** virtual machine:
 
 | Input |Definition |
 |-|-|
-| 3 Servers|	Servers per virtual machine |
-|D2_v3 |	Virtual machine size|
+| 3 Servers|Servers per virtual machine |
+|D2_v3 |Virtual machine size|
 
 ```
 300,000 Server Minutes       1 D2_v3 VM        100,000 D2_v3 VM Minutes 
@@ -126,7 +126,7 @@ Network egress can be a substantial expense, especially for large multiplayer se
 |1  | Megabytes per second transmitted from the server during active play|
 
 ```
-300,000 Session Minutes × 60 Seconds/Minute × 1 MBPS/Session   = 18,000,000 MB 
+300,000 Session Minutes × 60 Seconds/Minute × 1 MBPS/Session   = 18,000,000 MB
 ```
 
 In this example, assume that testing shows that a multiplayer session sends 1 MB of data per second of active play.
@@ -147,7 +147,7 @@ PlayFab offers three pathways for billing.
 - **Billing through PlayFab invoicing.** This is ideal for many professional projects, but requires you to contact our [customer services group](https://playfab.com/contact/) to get set up.
 - **Billing through Azure & Microsoft Enterprise Agreements.** This is ideal for organizations that may have a volume deal with **Azure** or another **Microsoft** product line. Please contact our [customer services group](https://playfab.com/contact/) or your **Azure** solutions specialist to learn more.
 
-In all three options you will receive a detailed analysis of your multiplayer server activity in Game Manager. However - for **Azure/EA** customers, the final invoicing through **Azure** is simplified, and will show these high level line-items denominated in dollars:
+In all three options you will receive a detailed analysis of your multiplayer server activity in Game Manager. However - for **Azure/EA** customers - the final invoicing through **Azure** is simplified, and will show these high level line-items denominated in dollars:
 
 - PlayFab Essential Services
 - PlayFab Multiplayer Servers

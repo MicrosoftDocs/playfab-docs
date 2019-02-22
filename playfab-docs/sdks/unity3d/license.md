@@ -14,8 +14,8 @@ ms.localizationpriority: medium
 
 Licenses are available at the following links:
 
-- [ioniczlib](licenses/ionic-zlib-license.md)
-- [Newtonsoft-Json](licenses/newtonsoft-json-license.md)
+- [Ionic Zlib](licenses/ionic-zlib-license.md)
+- [Newtonsoft Json](licenses/newtonsoft-json-license.md)
 - [SignalR](licenses/signalr-license.md)
 - [SimpleJson](licenses/simplejson-license.md)
-- [uunit](licenses/uunit-license.md)
+- [UUnit](licenses/uunit-license.md)

@@ -53,7 +53,7 @@ Enable-PFMultiplayerServer
 
 ## Upload a game server executable as an asset
 
-We're going to use the *managed containers* option to create a build. With managed containers your game server build is created by uploading assets that are combined with a **Windows** container image. For this tutorial upload the `winrunnerSample.zip` folder from the sample servers package you downloaded earlier
+We're going to use the *managed containers* option to create a build. With managed containers your game server build is created by uploading assets that are combined with a **Windows** container image. For this tutorial, upload the `winrunnerSample.zip` folder from the sample servers package you downloaded earlier
 
 ```powershell
 Add-PFMultiplayerAsset -FilePath "C:\winrunnerSample.zip"
@@ -97,7 +97,9 @@ $Regions.Add("EastUS");
 New-PFMultiplayerServer -BuildName "MyBuild" -SessionId "00000000-0000-0000-0000-000000000001" -SessionCookie "test cookie" -PreferredRegions $regions -BuildCerts $null
 ```
 
-This is the core of PlayFab multiplayer servers: within 3 seconds of your matchmaking service calling [RequestMultiplayerServer](xref:titleid.playfabapi.com.multiplayer.multiplayerserver.requestmultiplayerserver) PlayFab will allocate a new server. These servers come from continuously refilled, standing-by server pools you configure on a per-region and per-build basis. After gameplay ends the server is recycled.
+This is the core of PlayFab multiplayer servers: within 3 seconds of your matchmaking service calling [RequestMultiplayerServer](xref:titleid.playfabapi.com.multiplayer.multiplayerserver.requestmultiplayerserver) PlayFab will allocate a new server.
+
+These servers come from continuously refilled, standing-by server pools you configure on a per-region and per-build basis. After gameplay ends the server is recycled.
 
 ### Configure regional settings
 

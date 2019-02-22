@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Bulk Actions for an entire player segment
 
-This tutorial walks you through the steps needed to create a Task to perform one or more actions on every player in a segment.
+This tutorial walks you through the steps needed to create a task to perform one or more actions on every player in a segment.
 
 Tasks are a vital part of live operations for any game, they give you a powerful set of tools for engaging with your players.
 
@@ -36,7 +36,7 @@ You will want to play *several* battles in order to level up your character to a
 
 ## Step 1 - Create the segment
 
-The first step is to create the segment that defines the group of players who will be affected by this action. In this case, we need to create the High XP Segment, defined as all players who have more than **2,725 XP**:
+The first step is to create the segment that defines the group of players who will be affected by this action. In this case, we need to create the **High XP Segment**, defined as all players who have more than **2,725 XP**:
 
 - Select **PlayStream** from the menu on the left.
 - Choose the **Segments** tab.

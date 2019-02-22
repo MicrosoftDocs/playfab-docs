@@ -1,7 +1,20 @@
-https://github.com/rxi/json.lua
+---
+title: Json Lua
+author: v-kciril
+description: The Json Lua license.
+ms.author: v-kciril
+ms.date: 02/20/2019
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, lua sdk, lua, json
+ms.localizationpriority: medium
+---
+
+# Json Lua
+
+[https://github.com/rxi/json.lua](https://github.com/rxi/json.lua)
 
 Copyright (c) 2015 rxi
-
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in

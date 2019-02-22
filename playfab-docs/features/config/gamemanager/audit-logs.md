@@ -29,7 +29,7 @@ To access the audit logs, navigate to your **Title** in **Game Manager**:
 
 ![Game Manager - Admin - Audit History](media/tutorials/game-manager-admin-audit-history.png)  
 
-The **View** column exposes a button to access the **JSON** body of the change. **JSON** is displayed in a modal window.
+The **View** column displays a button to access the **JSON** body of the change. **JSON** is displayed in a modal window.
 
 It contains the same data as the table **(1)**, plus a raw **JSON** body specific for each change type **(2)**.
 

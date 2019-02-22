@@ -1,4 +1,18 @@
-http://hamcrest.org/JavaHamcrest/
+---
+title: Hamcrest license
+author: v-kciril
+description: Hamcrest license.
+ms.author: v-kciril
+ms.date: 02/20/2019
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, java sdk, hamcrest, 
+ms.localizationpriority: medium
+---
+
+# Hamcrest
+
+https://hamcrest.org/JavaHamcrest/
 (Unspecified date and owner are not provided by hamcrest)
 https://opensource.org/licenses/BSD-3-Clause
 

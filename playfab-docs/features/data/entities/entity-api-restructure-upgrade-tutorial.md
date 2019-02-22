@@ -34,10 +34,10 @@ The fundamental impact of this change is that the **PlayFabEntityModel API** gro
 
 ![Changes to PlayFabEntityModel API group](media/tutorials/changes-to-playfabentitymodel-api-group.png)
 
-A full list of the Previous Entity **API** -> **New API** mapping can be found in [APPENDIX 1](#appendix-1-old-to-new-api-mappings) of this tutorial.
+A full list of **Previous Entity API** -> **New API** mapping can be found in [APPENDIX 1](#appendix-1-old-to-new-api-mappings) of this tutorial.
 
 > [!Note]
-> The Classic **API** mapping has *not* been affected.
+> The **Classic API** mapping has *not* been affected.
 
 The next section will walk you through an example of upgrading a **C# SDK** using the **PlayFabEntityAPIGroup** to the new set of **API** groups.
 
@@ -52,7 +52,7 @@ using PlayFab.EntityModels;
 using PlayFab.DataModels;
 ```
 
-You can now be granular in your selection of which of these **APIs** you want to bring in, instead of importing the *whole* Entity **API** group.
+You can now be granular in your selection of which of these **APIs** you want to bring in, instead of importing the whole **Entity API** group.
 
 **Step 2**: A more in-depth coding example of the **New API**, with comments in regard to how it looked before is provided below.
 
@@ -81,7 +81,7 @@ Please follow suit for other **SDKs** using the mapping from [APPENDIX 1](#appen
 
 ## Conclusion
 
-We’re excited to expose the Entity **APIs** in a more intuitive way on our documentation site and in our code, based on your feedback.
+We’re excited to expose the **Entity APIs** in a more intuitive way on our documentation site and in our code, based on your feedback.
 
 If you have any questions and comments, please contact us via the [PlayFab Forums](https://community.playfab.com/index.html).
 

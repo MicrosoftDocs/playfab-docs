@@ -17,12 +17,12 @@ PlayFab allows you to reinforce application security by protecting certain clien
 The method we will be using allows you to protect *any* login **API** call. Since the process is *always* similar, we only show how to protect *one* particular method: **LoginWithCustomID**.
 
 > [!IMPORTANT]
-> Login encryption is meant to be used for *all* players after **Title** creation, or not at all. This is *not* a feature that can be enabled at a later date. You must use it from the *very beginning* or not at all. In particular, *encrypted* players will never be able to log in *un-encrypted*, and *non-encrypted* players will never be able to become *encrypted* players.
+> Login encryption is meant to be used for *all* players after title creation, or not at all. This is *not* a feature that can be enabled at a later date. You must use it from the *very beginning* or not at all. In particular, *encrypted* players will never be able to log in *un-encrypted*, and *non-encrypted* players will never be able to become *encrypted* players.
 
 In this guide we will:
 
 1. Create a player shared secret.
-2. Introduce an **API** Policy Rule to enable protection on a certain method.
+2. Introduce an **API** Policy rule to enable protection on a certain method.
 3. Change the client to use a player shared key to retrieve the public title key and encrypt the payload.
 
 

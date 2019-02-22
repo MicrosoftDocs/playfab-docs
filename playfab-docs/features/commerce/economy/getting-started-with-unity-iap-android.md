@@ -22,7 +22,7 @@ The following image illustrates how the **Android Billing API** and PlayFab work
 
 ![Android Billing - PlayFab - integration timeline](media/tutorials/android-billing-playfab-integration-timeline.png)  
 
-Start by setting up your **Product IDs** and **Prices** via **Play Market**. Initially, all the products are *faceless* - they are just digital entities your player is able to purchase - but they have no meaning to PlayFab players.
+Start by setting up your **Product IDs** and **Prices** via **PlayMarket**. Initially, all the products are *faceless* - they are just digital entities your player is able to purchase - but they have no meaning to PlayFab players.
 
 To make those entities useful, we need to mirror them in the PlayFab item catalogs. This will turn faceless entities into bundles, containers, and individual items.
 
@@ -41,9 +41,9 @@ The best way to access real money items available for purchase is to use [GetCat
 
 The ID of the item is the link between PlayFab and any external **IAP** system. So we pass the item ID to the **IAP** service.
 
-At this point, the purchase process starts. The player interacts with the **IAP** interface and, if The purchase is successful, you obtain a receipt.
+At this point, the purchase process starts. The player interacts with the **IAP** interface and, if the purchase is successful, you obtain a receipt.
 
-PlayFab is then able to validate the receipt and register the purchase, granting the playFab player the items that they just bought.
+PlayFab is then able to validate the receipt and register the purchase, granting the PlayFab player the items that they just bought.
 
 This is a rough idea of how **IAP** integration works, and the following example shows most of it in action.
 
@@ -81,7 +81,7 @@ A page with a list of plugins will appear.
 
 ![UnityIAP service - Import plugins](media/tutorials/import-plugins-unity-iap.png)  
 
-Continue the **Unity** install and import procedure up to the point where it has imported all the plugins.
+Continue the **Unity** install, and import procedure up to the point where it has imported all the plugins.
 
 - Verify that the plugins are in place **(1)**.
 - Then create a new script **(2)**, called **AndroidIAPExample.cs**.
@@ -193,7 +193,7 @@ public class AndroidIAPExample : MonoBehaviour, IStoreListener {
         Debug.Log(string.Format("OnPurchaseFailed: FAIL. Product: '{0}', PurchaseFailureReason: {1}", product.definition.storeSpecificId, failureReason));
     }
 
-    // This is invoked automatically when succesful purchase is ready to be processed
+    // This is invoked automatically when successful purchase is ready to be processed
     public PurchaseProcessingResult ProcessPurchase(PurchaseEventArgs e) {
         // NOTE: this code does not account for purchases that were pending and are
         // delivered on application start.
@@ -240,7 +240,7 @@ public class AndroidIAPExample : MonoBehaviour, IStoreListener {
         return PurchaseProcessingResult.Complete;
     }
 
-    // This is invvoked manually to initiate purchase
+    // This is invoked manually to initiate purchase
     void BuyProductID(string productId) {
         // If IAP service has not been initialized, fail hard
         if (!IsInitialized) throw new Exception("IAP Service is not initialized!");
@@ -251,7 +251,7 @@ public class AndroidIAPExample : MonoBehaviour, IStoreListener {
 }
 
 // The following classes are used to deserialize JSON results provided by IAP Service
-// Please, note that Json fields are case-sensetive and should remain fields to support Unity Deserialization via JsonUtilities
+// Please, note that Json fields are case-sensitive and should remain fields to support Unity Deserialization via JsonUtilities
 public class JsonData {
     // Json Fields, ! Case-sensetive
 
@@ -266,7 +266,7 @@ public class JsonData {
 public class PayloadData {
     public JsonData JsonData;
 
-    // Json Fields, ! Case-sensetive
+    // Json Fields, ! Case-sensitive
     public string signature;
     public string json;
 
@@ -295,7 +295,7 @@ public class GooglePurchase {
 
 - Create a new **Game** object called **Code (1)**.
 - Add the **AndroidIAPExample** component to it **(2)** **(3)**.
-- Make sure to **Save** the **Scene (4)**. 
+- Make sure to **Save** the scene **(4)**.
 
 ![UnityIAP create example game object](media/tutorials/create-example-game-object-unity-iap.png)  
 
@@ -307,17 +307,17 @@ Finally, navigate to **Build Settings**.
 - Assign your **Package Name (4)**.
 
 > [!NOTE]
-> Make sure to come up with your *own* package name to avoid any **Play Market** collisions.
+> Make sure to come up with your *own* package name to avoid any **PlayMarket** collisions.
 
 ![UnityIAP add example game object](media/tutorials/add-example-game-object-unity-iap.png)  
 
 Finally, build the application as usual, and ensure you have an **APK** safe and sound.
 
-We have no means to test it just yet. We need to configure **Play Market** and **PlayFab** first, which is described in the following sections.
+We have no means to test it just yet. We need to configure **PlayMarket** and PlayFab first, which is described in the following sections.
 
 ## Setting up a PlayMarket application for IAP
 
-This section describes the specifics of how to enable **IAP** for your **PlayMarket Application**.
+This section describes the specifics of how to enable **IAP** for your **PlayMarket** application.
 
 > [!NOTE]
 > Setting up the application itself is beyond the scope of this tutorial. We assume you already *have* an application, and that is configured to publish at least **Alpha** releases.
@@ -328,8 +328,8 @@ Useful notes:
 
 - Getting to that point will require you to have an **APK** uploaded. Please use the **APK** we constructed in the previous section.
 - When asked to upload the **APK**, you may upload it as an **Alpha** or **Beta Application** to enable the **IAP** sandbox.
-- Configuring **Content Rating** will include questions about how **IAP** is enabled in the **Application**.
-- **Play Market** does *not* allow **Publishers** to use or test **IAP** - so please, pick *another* **Google** account for testing purposes, and add it as a tester for your **Alpha/Beta** build.
+- Configuring **Content Rating** will include questions about how **IAP** is enabled in the application.
+- **PlayMarket** does *not* allow **Publishers** to use or test **IAP** - so please, pick *another* **Google** account for testing purposes, and add it as a tester for your **Alpha/Beta** build.
 
 Once you have the application build published:
 
@@ -345,7 +345,7 @@ Once you have the application build published:
 
 ![PlayMarket add product ID](media/tutorials/playmarket-add-product-id.png)  
 
-**Play Market** requires you to fill in a **Title (1)** and a **Description (2)**. However, these are not much use in our case.
+**PlayMarket** requires you to fill in a **Title (1)** and a **Description (2)**. However, these are not much use in our case.
 
 We will grab **Data Item** data exclusively from the PlayFab service, and only require IDs to match.
 
@@ -366,7 +366,7 @@ Finally, scroll back to the top of your screen, and change the status of the ite
 
 While this concludes configuring the app, we need a couple more tweaks:
 
-- First, let us save the **Licensing Key** (this will come in handy for linking PlayFab with **Play Market**.
+- First, let us save the **Licensing Key** (this will come in handy for linking PlayFab with **PlayMarket**.
 - Navigate to **Services & APIs** in the menu **(1)**.
 - Then locate and save the **Base64** version of the **Key (2)**.
 
@@ -403,7 +403,7 @@ Our next step is reflecting our Golden Sword item in PlayFab:
 
 - Select **Economy** from the menu **(1)**.
 - Verify that the **Catalogs** sub-tab **(2)** is selected.
-- Selet the **New Catalog** button **(3)**.
+- Select the **New Catalog** button **(3)**.
 
 ![PlayFab open new Catalog](media/tutorials/playfab-open-new-catalog.png)  
 
@@ -412,7 +412,7 @@ Our next step is reflecting our Golden Sword item in PlayFab:
 
 ![PlayFab save Catalog](media/tutorials/playfab-save-catalog.png)  
 
-If the **Catalog** has *no items*, it is *automatically* removed. That's why any new **Catalog** comes with a pre-added item called **One**.
+If the catalog has no items, it is *automatically* removed. That's why any new catalog comes with a pre-added item called **One**.
 
 We can *always* create a *new* item, but to keep things clean, let's modify the existing **One** item.
 
@@ -420,7 +420,7 @@ We can *always* create a *new* item, but to keep things clean, let's modify the 
 
 ![PlayFab open Catalog Item](media/tutorials/playfab-open-catalog-item.png)  
 
-- Set the **Item ID (1)** to match exactly with the ID in **Play Market**.
+- Set the **Item ID (1)** to match exactly with the ID in **PlayMarket**.
 - Next, give a **Display name (2)** and **Description (3)** to your **Item**.
 
   > [!NOTE]
@@ -428,7 +428,7 @@ We can *always* create a *new* item, but to keep things clean, let's modify the 
 
 - Assign a **Price (4)** to your **Item**.
 
-In this tutorial, **IAP** mainly refers to purchases for Real Money. That's why we use RM - special Real Money Currency. The PlayFab amount is defined in US Cents.
+In this tutorial, **IAP** mainly refers to purchases for real money. That's why we use **RM** - special Real Money currency. The PlayFab amount is defined in US Cents.
 
 - Select the **Save Item** button **(5)** to commit your changes.
 
@@ -454,7 +454,7 @@ The **IAP** purchase will be initiated. Follow the **Google Play** instruction u
 
 ![Test app - Google Play - payment successful](media/tutorials/test-app-google-play-payment-successful.png)  
 
-Finally, navigate to your **Title** in the PlayFab **Game Manager** dashboard and locate **New Events**.
+Finally, navigate to your title in the PlayFab **Game Manager** dashboard and locate **New Events**.
 
 ![Game Manager Dashboard new events](media/tutorials/game-manager-dashboard-new-events.png)  
 

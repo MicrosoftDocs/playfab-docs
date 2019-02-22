@@ -1,4 +1,18 @@
-https://github.com/brunoos/luasec
+---
+title: Luasec license
+author: v-kciril
+description: The luasec license.
+ms.author: v-kciril
+ms.date: 02/20/2019
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, lua sdk, lua, luasec
+ms.localizationpriority: medium
+---
+
+# Luasec license
+
+[https://github.com/brunoos/luasec](https://github.com/brunoos/luasec)
 
 LuaSec 0.6 license
 Copyright (C) 2006-2015 Bruno Silvestre, UFG

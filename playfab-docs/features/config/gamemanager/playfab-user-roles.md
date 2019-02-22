@@ -24,7 +24,7 @@ First, let's first see how the new roles work, then we'll discuss how to migrate
 
 ## Permissions and roles
 
-PlayFab features a powerful, fine-grained permissions model with more than 80 individual permissions to determine *exactly* what users are allowed to do. Most features in the Game Manager can be turned off entirely, set to read-only mode, or set to read-write mode.
+PlayFab features a powerful, fine-grained permissions model with more than 80 individual permissions to determine *exactly* what users are allowed to do. Most features in the Game Manager can be completely turned off, set to read-only mode, or set to read-write mode.
 
 For example, you may want your Customer Service rep to be able to edit a player profile, but not view revenue data, and you may want a Product Manager to be able to view revenue data, but *not* upload new multiplayer game server builds.
 
@@ -45,9 +45,9 @@ By default, PlayFab comes with two predefined roles:
 1. **Title Admin**
 2. **Dashboard**
 
-Title Admin gives full permissions to a given game title, and Dashboard only gives permission to view the dashboards for the title.
+Title Admin gives full permissions to a given game title, while Dashboard only gives permission to view the dashboards for the title.
 
-There is also a third, special role -- Studio Admin.
+There is also a third, special role -- **Studio Admin**.
 
 Studio Admins are special users who have permission to create titles, define roles, and have automatic Title Admin rights to every title in the studio.
 
