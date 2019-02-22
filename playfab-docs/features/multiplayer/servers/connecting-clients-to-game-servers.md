@@ -14,7 +14,9 @@ ms.localizationpriority: medium
 
 Playfab game servers are containerized applications. When game servers are deployed to **Azure**, their networking environment is virtualized and the game server will not have direct access to its Internet accessible **IP** addresses.
 
-Instead, game servers using `GetAdaptersInfo` (**Windows**) or `GetIfAddrs` (**Linux**) will observe a single network adapter with non-unique **IP** addresses that have been configured through **Network Address Translation** (**NAT44**). This usage of network virtualization and NAT allows game servers to maintain connections even as underlying **Azure** infrastructure may be changing. All game servers have **IPv4** connectivity, but **IPv6** connectivity will be added in the future.
+Instead, game servers using `GetAdaptersInfo` (**Windows**) or `GetIfAddrs` (**Linux**) will observe a single network adapter with non-unique **IP** addresses that have been configured through **Network Address Translation** (**NAT44**).
+
+This usage of network virtualization and **NAT** allows game servers to maintain connections even as underlying **Azure** infrastructure may be changing. All game servers have **IPv4** connectivity, but **IPv6** connectivity will be added in the future.
 
 This usage of network virtualization and **NAT** allows **Game Servers** to maintain connections even as underlying **Azure** infrastructure may be changing.
 
@@ -33,7 +35,7 @@ Different virtual machine sizes and operating systems are provisioned with diffe
 
 Game servers are allocated through service-to-service calls through the Playfab server **API**. The connection information required for client connectivity is passed through these services and clients which typically use **TCP** or **UDP** sockets to drive a direct connection to the game server.
 
-Typically, **Game Servers** will listen on well-known **UDP** and **TCP** ports selected by the **Game Developer**.
+Typically, game servers will listen on well-known **UDP** and **TCP** ports selected by the **Game Developer**.
 
 Game clients need the Internet-facing IP address of your game servers to connect to them. Clients also need port forwarding information to allow well-known ports that the server is listening upon to be addressable through the **Azure** network virtualization apparatus.
 
@@ -49,4 +51,4 @@ Game clients need the Internet-facing IP address of your game servers to connect
 
 ## Enabling TCP/UDP ports for game servers
 
-The port requirements provided through **Game Manager** or the **Entity API *CreateBuild*** enables **Game Clients** to contact the virtual machine. It also configures the firewall on the resident operating system to enable network traffic on the ports you specify.
+The port requirements provided through **Game Manager** or the **Entity API *CreateBuild*** enables game clients to contact the virtual machine. It also configures the firewall on the resident operating system to enable network traffic on the ports you specify.

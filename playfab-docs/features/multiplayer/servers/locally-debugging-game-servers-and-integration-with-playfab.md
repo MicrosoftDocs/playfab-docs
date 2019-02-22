@@ -18,9 +18,9 @@ PlayFab multiplayer game servers require integration with the [PlayFab Game Serv
 
 Running them as containerized applications enables running and debugging the server locally, in an environment that matches that of the PlayFab platform in **Azure**. This facilitates faster development iterations. This article helps you verify that your PlayFab game server conforms to the platform requirements.  
 
-The PlayFab local debugging toolset includes a mock PlayFab **VmAgent** that provides mock responses to the **GSDK** and verifies whether your game is integrated with **GSDK** correctly. With the mock responses, it cycles the game server through various states in its lifecycle on the PlayFab Multiplayer platform.
+The PlayFab local debugging toolset includes a mock PlayFab **VmAgent** that provides mock responses to the **GSDK**, and verifies whether your game is integrated with **GSDK** correctly. With the mock responses, it cycles the game server through various states in its lifecycle on the PlayFab Multiplayer platform.
 
-The agent can also be configured to run the game server as a containerized application, and verify that your game server is packaged with all the required dependencies and will run without issues on the PlayFab Multiplayer platform.
+The agent can also be configured to run the game server as a containerized application, and verify that your game server is packaged with all the required dependencies and will run without issues.
 
 ## Setup
 
@@ -35,14 +35,14 @@ Integrate your game server with **GSDK** and build it. More information is avail
   - **RunContainer**: Set it to *false*.
 - In a **Powershell** window (as Administrator):  
   - **cd** in to the folder where the toolset was extracted.
-  - Run **MockVmAgent.exe**. At this point, the **MockVmAgent** acts as **HTTP** listener, waiting for heartbeats from the **GSDK** integrated with your game server. 
-- Run your game server executable as it would started on the PlayFab platform (if the game server needs **cmdline** arguments, you may need to run it from a **cmd** window).
+  - Run **MockVmAgent.exe**. At this point, the **MockVmAgent** acts as **HTTP** listener, waiting for heartbeats from the **GSDK** integrated with your game server.
+- Run your game server executable as it would be started on the PlayFab platform (if the game server needs **cmdline** arguments, you may need to run it from a **cmd** window).
 - If the **GSDK** has been integrated correctly, you will see the **MockVmAgent** print the following outputs:  
-  - **CurrentGameState** - Initializing (this is optional and may not show up if your game directly calls **GSDK::ReadyForPlayers** and does not call **GSDK::Start**)
+  - **CurrentGameState** - Initializing (this is optional and may not show up if your game directly calls **GSDK::ReadyForPlayers** and does not call **GSDK::Start**).
   - **CurrentGameState** - StandingBy  
   - **CurrentGameState** - Active
   - **CurrentGameState** - Terminating
-- After the terminating state, your game should exit shortly, saying that the shutdown callbacks have been set up correctly. It is important to verify this to avoid ungraceful shutdowns on the PlayFab platform.
+- After the terminating state, your game should exit shortly, saying that the shutdown callbacks have been set up correctly. It is important to verify this, to avoid ungraceful shutdowns on the PlayFab platform.
 - Close the console window for **MockAgent.exe** (which will terminate it).
 
 ### Testing connection to your game
@@ -62,7 +62,7 @@ The **MockVmAgent** requests the game server to terminate (via **GSDK**) after a
 
 - In a **Powershell** window (as Administrator):  
   - **cd** in to the folder where the toolset was extracted.  
-  - Run **Setup.ps1**. This should set up docker networks, firewall rules to communicate with the local mock Playfab **VMagent** and pull down the PlayFab docker image from [Microsoft/PlayFab-Multiplayer](https://hub.docker.com/r/microsoft/playfab-multiplayer/). Note that the first time this set up runs, it can take a few minutes while it downloads the container image. You might need to override the execution policy to allow script execution.
+  - Run **Setup.ps1**. This should set up docker networks, firewall rules to communicate with the local mock Playfab **VMagent**, and pull down the PlayFab docker image from [Microsoft/PlayFab-Multiplayer](https://hub.docker.com/r/microsoft/playfab-multiplayer/). The first time this set up runs, it can take a few minutes while it downloads the container image. You might need to override the execution policy to allow script execution.
 
 - Compress your game server and its dependencies to a zip archive, in the same way that it's uploaded to PlayFab multiplayer platform.
 
@@ -73,9 +73,9 @@ The **MockVmAgent** requests the game server to terminate (via **GSDK**) after a
   - **RunContainer**: Set it to *true*.
   - **OutputFolder**: Path to a drive or folder where the outputs and config files will be generated. Ensure there is sufficient space available, since the game server will be extracted under this path.
   - **LocalFilePath**: Full local path (on your workstation) to the game server asset zip file created earlier.  For example: **D:\\\\MyAmazingGame\\\\asset.zip** (note that backslashes need to be escaped for **JSON** formatting).
-  - **MountPath**: The path within the container that the asset should be mounted at. Sample value would be:  **C:\\\\Assets** (note that backslashes need to be escaped for **JSON** formatting).
+  - **MountPath**: The path within the container where the asset should be mounted. The sample value should be:  **C:\\\\Assets** (note that backslashes need to be escaped for **JSON** formatting).
   - **StartGameCommand**: The full path to the game server executable within the container (that includes the mount path above). Assuming the executable name is:  **mygame.exe**, a sample path would be **C:\\\\Asssets\\\\mygame.exe**.
-  - **PortMappingsList**: Update the **GamePort** section to match the protocol and port at which your game server is listening for clients. You can leave **NodePort** at **56100**. If your game needs multiple ports, copy paste the existing port configuration and increment **NodePort** (along with new **GamePort** settings).
+  - **PortMappingsList**: Update the **GamePort** section to match the protocol and port where your game server is listening for clients. You can leave **NodePort** at **56100**. If your game needs multiple ports, copy/paste the existing port configuration and increment **NodePort** (along with new **GamePort** settings).
   - **SessionCookie** (optional): Any session cookie that gets passed to your game server as part of the [RequestMultiplayerServer API](xref:titleid.playfabapi.com.multiplayer.multiplayerserver.requestmultiplayerserver) call.
 
 - Open a **Powershell** window (as Administrator) in the folder where the toolset was extracted (**C:\PlayFabVmAgent**) and run **MockVmAgent.exe**. Eventually, you should see game state change output in the **Powershell** window (just like in the Verifying **GSDK** integration section above).
@@ -97,7 +97,9 @@ If the game server was run within a container, there might be an addition level 
 ## Known limitations
 
 1. **Linux** is not currently supported, but will be added soon.
-2. Containers may not be stopped at the end of the debugging. Please run the commands below in **Powershell** (as Administrator). Note that these will stop and remove all containers, including ones not started by the **MockAgent**.
+2. Containers may not be stopped at the end of the debugging.
+
+Please run the commands below in **Powershell** (as Administrator). Note that these will stop and remove all containers, including ones not started by the **MockAgent**.
 
 ```powershell
 docker stop $(docker ps -aq)

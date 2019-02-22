@@ -51,7 +51,8 @@ To test this feature, you can use the Gmail **SMTP** server, provided you have a
 
 - Host name: **smtp.gmail.com**
 - Port number: **587**
-- Username: (**your gmail address**, e.g. "support@playfab.com")
+- Username: (**your gmail address** - e.g., "support@playfab.com")
+
 - Password: (**your password**)
 
 > [!NOTE]
