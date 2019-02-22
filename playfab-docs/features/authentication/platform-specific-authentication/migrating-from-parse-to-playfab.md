@@ -14,15 +14,15 @@ ms.localizationpriority: medium
 
 ## How does PlayFab compare to Parse?
 
-Both PlayFab and **Parse** provide back-end tools and services for building and operating your game, but there are several differences. Understanding these differences is important for planning a migration from **Parse** to PlayFab.
+Both PlayFab and **Parse** provide back-end tools and services for building and operating your game, but there are several differences. Understanding these differences is important for planning a migration from one to the other.
 
 The most important difference is that **Parse** is a *general purpose mobile back-end*, with very few game-specific features.
 
-With **Parse**, you need to write and test game-specific systems *yourself*, using the basic building blocks that **Parse** provides.
+With **Parse**, you need to write and test game-specific systems *yourself*, using the basic building blocks that it provides.
 
-PlayFab, however, is *specifically designed* for games, and includes a large number of game-specific systems that you can *immediately* start using *without* writing any custom code.
+PlayFab, on the other hand, is *specifically designed* for games, and includes a large number of game-specific systems that you can *immediately* start using *without* writing any custom code.
 
-Most developers tell us that building their game on PlayFab is much faster than building their game on **Parse**, but it is less flexible. There may be tasks that you could do in **Parse** that you cannot easily do in PlayFab - at least, not without writing some custom code yourself.
+Most developers tell us that building their game on PlayFab is much faster, but that it is less flexible. There may be tasks that you could do in **Parse** that you cannot easily do in PlayFab - at least, not without writing some custom code yourself.
 
 This migration tutorial assumes that you have *already* familiarized yourself with PlayFab’s features.
 
@@ -32,7 +32,7 @@ Both PlayFab and **Parse** provide systems for storing files and data for your g
 
 **Parse** uses **MongoDB** and loosely-typed objects to allow clients to store whatever information they would like in whatever format is convenient.
 
-Games can write arbitrary **SQL** queries to retrieve data for the game. This is very flexible, but it’s *also easy* to make mistakes that impact your game’s performance. It’s also *hard to scale* -- if your game suddenly takes off, you may need to shard your database to keep up with growth.
+Games can write arbitrary **SQL** queries to retrieve data for the game. This is very flexible, but it’s *also easy* to make mistakes that impact your game’s performance. In addition, it’s  *hard to scale* -- if your game suddenly takes off, you may need to shard your database to keep up with growth.
 
 PlayFab takes a different approach...
 
@@ -42,7 +42,7 @@ In fact, using the PlayFab **APIs**, you *don’t have to worry about growth*. W
 
 With PlayFab, custom data is stored in these places:
 
-- **Game Title data**: Game-wide data which can be accessed by all players and game clients. This data is typically used for game content or configuration, such as level maps, upcoming events, or current promotions.
+- **Game title data**: Game-wide data which can be accessed by all players and game clients. This data is typically used for game content or configuration, such as level maps, upcoming events, or current promotions.
 
   > [!NOTE]
   > For more information on this subject, see the [Title Data quickstart](../../config/titledata/quickstart.md).
@@ -59,7 +59,7 @@ With PlayFab, custom data is stored in these places:
   
 - **Inventory data**: Every item in a player’s inventory can have custom properties associated with it, such as item hit-points, or config data for procedurally generated items.
 - **Group data**: Data is shared among a specific group of players, such as a guild or lobby. Examples include a guild name or message of the day. Players can be added and removed from a shared group, and all members in the group can read or write shared group data.
-- **Player data**: Data is stored per player account, like **Parse *Keyed User Data***.
+- **Player data**: Data is stored per player account, like **Parse** Keyed User data.
 
   > [!NOTE]
   > For more information on this subject, see our quickstart [Player Data](../../data/playerdata/quickstart.md).
@@ -100,7 +100,7 @@ PlayFab *does provide* **GitHub** integration for managing **CloudScript**, and 
 
 ### User management and authentication
 
-Like **Parse**, PlayFab provides rich support for creating and managing player profiles. player accounts can be linked to multiple different authentication mechanisms, such as [Facebook](xref:titleid.playfabapi.com.client.authentication.loginwithfacebook), [Steam](xref:titleid.playfabapi.com.client.authentication.loginwithsteam), an [email/password](xref:titleid.playfabapi.com.client.authentication.loginwithemailaddress), an [iOS](xref:titleid.playfabapi.com.client.authentication.loginwithiosdeviceid) or [Android](xref:titleid.playfabapi.com.client.authentication.loginwithandroiddeviceid) device ID, or your own [custom identifiers](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid), in order to make it easy to share a single player profile across multiple devices or platforms.
+Like **Parse**, PlayFab provides rich support for creating and managing player profiles. Player accounts can be linked to multiple different authentication mechanisms, such as [Facebook](xref:titleid.playfabapi.com.client.authentication.loginwithfacebook), [Steam](xref:titleid.playfabapi.com.client.authentication.loginwithsteam), an [email/password](xref:titleid.playfabapi.com.client.authentication.loginwithemailaddress), an [iOS](xref:titleid.playfabapi.com.client.authentication.loginwithiosdeviceid) or [Android](xref:titleid.playfabapi.com.client.authentication.loginwithandroiddeviceid) device ID, or your own [custom identifiers](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid), in order to make it easy to share a single player profile across multiple devices or platforms.
 
 PlayFab’s Game Manager tool also provides a powerful set of tools for viewing and managing player profiles - ideal for debugging a game in production, or providing customer support for a game post-launch.
 
@@ -140,12 +140,12 @@ Like **Parse**, PlayFab can validate in-app purchase receipts from **Apple** and
 
 ## Importing Parse users to PlayFab
 
-PlayFab’s user import tool imports **Parse User** objects directly into PlayFab player profiles. If your title was primarily just using the **Parse User** object to store player properties, then your migration may be simple:
+PlayFab’s user import tool imports **Parse** user objects directly into PlayFab player profiles. If your title was primarily just using the **Parse User** object to store player properties, then your migration may be simple:
 
 - Just export your users from **Parse**.
 - Import them into PlayFab.
 - Swap **SDKs** in your game.
-- And modify your authentication and player profile storage calls.
+- Modify your authentication and player profile storage calls.
 
 There is *no* risk to experimenting with our **Parse Player** import, since the process does not affect your live game or data.
 
@@ -196,7 +196,7 @@ Also, you can re-run the *import* process as often as necessary during the migra
 
 - Select the **Players** tab in the **Game Manager**.
 - Review some of your imported players for general correctness.
-- Download the PlayFab **SDK** and update your **Game Client** to point to PlayFab for your user functions.
+- Download the PlayFab **SDK** and update your game client to point to PlayFab for your user functions.
 - In particular, the following **APIs** will prove useful:
     - [Client/LoginWithFacebook](xref:titleid.playfabapi.com.client.authentication.loginwithfacebook)
     - [Client/LoginWithEmailAddress](xref:titleid.playfabapi.com.client.authentication.loginwithemailaddress)

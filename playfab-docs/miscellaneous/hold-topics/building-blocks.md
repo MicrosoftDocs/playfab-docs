@@ -12,150 +12,150 @@ ms.localizationpriority: medium
 
 # Building Blocks
 
-Below is a list of fundamental concepts on which **PlayFab** is based. We have termed these **Building Blocks**, because all **PlayFab**-based solutions will be built around these foundational concepts.
+Below is a list of fundamental concepts on which PlayFab is based. We have termed these *Building Blocks*, because all PlayFab-based solutions will be built around these foundational concepts.
 
 ## Accounts
 
-The **PlayFab Account** system is responsible for verifying **Client** details, and issuing authorization tickets. We support most common 3rd party providers, such as **Facebook**, **Steam**, **iOS** devices, **Android** devices, **Xbox**, and **PSN**.
+The PlayFab Account system is responsible for verifying client details, and issuing authorization tickets. We support most common 3rd party providers, such as **Facebook**, **Steam**, **iOS** devices, **Android** devices, **Xbox**, and **PSN**.
 
-**PlayFab Clients** must authenticate before accessing our **APIs**. Additionally, our data models revolve around the **Player Account**, making it easy to save and retrieve data specific to the current **Player**.
+PlayFab clients must authenticate before accessing our **APIs**. Additionally, our data models revolve around the player account, making it easy to save and retrieve data specific to the current player.
 
 ## Actions (PlayStream)
 
-These are the activities triggered when an **Event** or **Player** data passes a corresponding rule set. Separate **Actions** can be taken when entering or exiting a **Segment**.
+These are the activities triggered when an event or player data passes a corresponding rule set. Separate actions can be taken when entering or exiting a segment.
 
-## Catalog / Virtual Goods
+## Catalog/Virtual Goods
 
-**Catalogs** contain **CatalogItems**. These offer an easy way to manage your **Game Items**. **CatalogItems** can be configured in multiple ways, offering a corollary to just about *every* type of **Virtual Goods** that your **Game** might use.
+Catalogs contain **CatalogItems**. These offer an easy way to manage your game items. **CatalogItems** can be configured in multiple ways, offering a corollary to just about *every* type of virtual goods that your game might use.
 
 Examples of the five most common uses for **CatalogItems** include:
 
-1. **Durable Items** - **Items** that can be bought or granted and remain in the **Player's Inventory**.
-2. **Consumable Items** - **Items** that have a set number of uses. After these uses are consumed, the **Item** is destroyed.
-3. **Bundles** - A collection of **Virtual Currencies** and **Virtual Items** that when obtained are automatically unpacked into the **Player's Inventory**.
-4. **Locked and Unlocked Containers** - A collection of **Virtual Currencies** and **Virtual Items** that must me manually unpacked by the **User**. Containers can be unlocked or locked with a **Key** (another **Item** that the **Player** must also have before unpacking).
-5. **Temporal Items** - **Items** that exist for only a limited time. **Items** will be automatically removed after their expiration.
+1. **Durable Items** - Items that can be bought or granted and remain in the player's inventory.
+2. **Consumable Items** - Items that have a set number of uses. After these uses are consumed, the item is destroyed.
+3. **Bundles** - A collection of virtual currencies and virtual items that when obtained are automatically unpacked into the player's inventory.
+4. **Locked and Unlocked Containers** - A collection of virtual currencies and virtual items that must me manually unpacked by the user. Containers can be unlocked or locked with a key (another item that the player must also have before unpacking).
+5. **Temporal Items** - Items that exist for only a limited time. Items will be automatically removed after their expiration.
 
-## CatalogItems/Custom Data
+## CatalogItems/Custom data
 
-**CatalogItems** accept **CustomData**, a collection of **Key**->**Value** pairs of **Yype** <**string,string**>. This collection can be used in numerous ways - such as storing relevant item attributes, modifiers, and durability.
+**CatalogItems** accepts **CustomData**, a collection of **Key**->**Value** pairs of **Yype** <**string,string**>. This collection can be used in numerous ways - such as storing relevant item attributes, modifiers, and durability.
 
 ## CDN (Content Delivery Network)
 
 We offer **Amazon CloudFront** as a built in **CDN** offering. This is a premium service and separate charges will apply.
 
-## Character Inventory
+## Character inventory
 
-Similar to **Player Inventory**, except that it is stored at a **per-Character Level**.
+Similar to player inventory, except that it is stored at a per-character level.
 
-## Character Data
+## Character data
 
-Similar to **Player Data**, except that it is stored at a **per-Character Level**.
+Similar to player data, except that it is stored at a per-character level.
 
 ## Characters
 
-**PlayFab** offers 10 character slots per **Player Account**.
+PlayFab offers 10 character slots per player account.
 
-## Character Statistics
+## Character statistics
 
-Similar to **Player Statistics**, except stored at a **per-Character Level**.
+Similar to player statistics, except stored at a per-character level.
 
 ## CloudScript
 
-Your **JavaScript** code, hosted on **PlayFab**, and running in a protected environment with access to the **Server API** set. This is very useful when you need to run secure **API** calls without needing to host a server.
+Your **JavaScript** code, hosted on PlayFab, and running in a protected environment with access to the **Server API** set. This is very useful when you need to run secure **API** calls without needing to host a server.
 
-## Drop Table
+## Drop tables
 
-**Drop Tables** work in conjunction with **Item Bundles** and **Item Containers**. They represent a convenient, server-side mechanism for calculating the random **Item** distribution when opening **Containers** and **Bundles**.
+Drop tables work in conjunction with item bundles and item containers. They represent a convenient, server-side mechanism for calculating the random item distribution when opening containers and bundles.
 
 ## Events (PlayStream)
 
-The signals that are generated through interacting with **PlayFab** (automatic) or by calling the **WriteEvent API** (manual).
+The signals that are generated through interacting with PlayFab (automatic) or by calling the **WriteEvent API** (manual).
 
 ## Events_Archive (PlayStream)
 
-The recommended solution for long-term storage of **PlayStream Events**. This keeps an external **AWS S3** bucket in-sync with your **Event** stream.
+The recommended solution for long-term storage of **PlayStream** events. This keeps an external **AWS S3** bucket in-sync with your event stream.
 
 ## Leaderboards
 
-**Leaderboards** are derived from the aggregation of **PlayerStatistics**. **Players** will be ranked from **High** to **Low** for each of the **Statistics** for which they have data. **Leaderboards** can also be reset on a re-occurring cadence, making in-**Game** contests easy.
+Leaderboards are derived from the aggregation of **PlayerStatistics**. Players will be ranked from high to low for each of the statistics for which they have data. Leaderboards can also be reset on a re-occurring cadence, making in-game contests easy.
 
 ## Photon
 
-**Photon** and **PlayFab** are two synergistic services, bringing high-quality multilayer features to **Game Developers**. For more information see our **Photon Example Project**.
+**Photon** and PlayFab are two synergistic services, bringing high-quality multilayer features to game developers. For more information see our **Photon Example Project**.
 
-## Player Accounts
+## Player accounts
 
-**Player Accounts**, at their simplest, offer authentication pathways with the most common providers (x,y,z). Beyond authentication, **Accounts** also serve as the central pillar around which your **Game** systems are built.
+Player accounts, at their simplest, offer authentication pathways with the most common providers (x,y,z). Beyond authentication, accounts also serve as the central pillar around which your game systems are built.
 
-## Player Data
+## Player data
 
-These are **Key-Value Pairs** of data that are attached to the **Player Account**. This data can be *public* or *private*, and can also be restricted to **Readable/Writable**, **Only Readable** or **Only Writable**.
+These are **Key/Value Pairs (KVPs)** of data that are attached to the player account. This data can be *public* or *private*, and can also be restricted to **Readable/Writable**, **Only Readable** or **Only Writable**.
 
-## Player Inventory / Item Instance
+## Player inventory/Item instance
 
-All **PlayerAccounts** have an **Inventory**. The **Inventory** contains all of the owned **ItemInstances** as well as the **Item** history to-date.
+All **PlayerAccounts** have an inventory. The inventory contains all of the owned **ItemInstances** as well as the item history to-date.
 
-## Player Statistics
+## Player statistics
 
-**Statistics** are a special form of **PlayerData** that is a set restricted to <**string, int**>. These **Statistics** are saved to the **Player Account** and can be used to automatically generate **Leaderboards**.
+Statistics are a special form of **PlayerData** that is a set restricted to <**string, int**>. These statistics are saved to the player account and can be used to automatically generate leaderboards.
 
-## Publisher Data
+## Publisher data
 
-Similar to **TitleData**, **PublisherData** represents any data stored at the **Publisher Level**. This is a special set of data that can be accessible from any **Title** tied to the corresponding **Publisher ID**.
+Similar to **TitleData**, **PublisherData** represents any data stored at the publisher level. This is a special set of data that ise accessible from any title tied to the corresponding publisher ID.
 
-This is useful for cross-**Game** promotionals, as well as general **Developer** and **Studio News** that might be interesting to the community.
+This is useful for cross-game promotionals, as well as general developer and studio news that might be interesting to the community.
 
-## Push Notifications
+## Push notifications
 
-**PlayFab** provides both server and **Client** support for **Push Notifications**. For **Clients**, **PlayFab** offers the ability to bind **Player Accounts** to your **Developer GCM** & **APNS** messaging channels.
+PlayFab provides both server and client support for push notifications. For clients, PlayFab offers the ability to bind player accounts to your **Developer GCM & APNS** messaging channels.
 
-For servers, we provide an **API** to send **Push Messages** directly to a **Player Account**. **Developers** can send an unlimited number of **Push Messages** at no additional charge.
+For servers, we provide an **API** to send push messages directly to a player account. Developers can send an unlimited number of push messages at no additional charge.
 
 ## Rules (PlayStream)
 
-These are the conditions by which **PlayStream Events** are evaluated.
+These are the conditions by which **PlayStream** events are evaluated.
 
 1. **Filters** (**Logical AND**) - Provides the ability to add logical conditions, where all conditions must be passed before triggering actions.
-2. **Groups** (**Logical OR**) - Provides the ability to add optional *logical* conditions, where at least *one* **Group** must be evaluated as **True** before triggering actions.
+2. **Groups** (**Logical OR**) - Provides the ability to add optional *logical* conditions, where at least *one* *group must be evaluated as *True** before triggering actions.
 
 ## Segments / Segmentation (PlayStream)
 
-Provides subsets of **Players**, grouped by their **Event** history. For example, the **Frequent Players Segment** is comprised of **Players** that have logged in more than 100 times.
+Provides subsets of players, grouped by their event history. For example, the Frequent Players segment is comprised of players that have logged in more than 100 times.
 
 ## Servers
 
-**PlayFab** offers dedicated server hosting. You can upload a **Game** server build via **Game Manager**, configure build parameters, and let the **PlayFab GameWrangler** handle scaling your servers to meet **Player** demand in real time.
+PlayFab offers dedicated server hosting. You can upload a game server build via the Game Manager, configure build parameters, and let the PlayFab **GameWrangler** handle scaling your servers to meet player demand in real time.
 
-## Shared Group Data
+## Shared group data
 
-Provides permission-based arbitrary **Key/Value** storage. **Groups** are collections of **Players** that must be added manually. All **Players** have the ability to view and edit **Keys** and **Values**.
+Provides permission-based arbitrary key/value storage. Groups are collections of players that must be added manually. All players have the ability to view and edit keys and values.
 
-## Stores/Store Items
+## Stores/store items
 
-**Stores** serve a subset of **CatalogItems**. These **Items** can be offered at alternative prices when compared to those set on the corresponding **CatalogItem**.
+Stores serve a subset of **CatalogItems**. These items can be offered at alternative prices when compared to those set on the corresponding **CatalogItem**.
 
-## Title Data
+## Title Ddata
 
-**TitleData** represents any data stored at the **Title Level**. This is the broadest data set, all **Clients** and servers may view **TitleData**.
+**TitleData** represents any data stored at the title level. This is the broadest data set; all clients and servers may view **TitleData**.
 
-General **Game** configuration settings are often stored in **TitleData**, and are typically one of the first **APIs** called when **Clients** connect.
+General game configuration settings are often stored in **TitleData**, and are typically one of the first **APIs** called when clients connect.
 
 ## Title ID
 
-The unique identifier for a **Title**. This **ID** can be obtained from the **Game Manager** under **Settings** > **Credentials**. This value must be *manually* set in the **SDK** prior to calling in to the service.
+The unique identifier for a title. This ID can be obtained from the **Game Manager** under **Settings** > **Credentials**. This value must be *manually* set in the **SDK** prior to calling in to the service.
 
 ## Trading
 
-Using our **Trade API** flow, **Players** and **Characters** can trade **Items** to other **Players** and **Characters**.
+Using our trade **API** flow, players and characters can trade items to other players and characters.
 
-## Virtual Currency
+## Virtual currency
 
-**PlayFab** offers up to 10 **Virtual Currencies** per **Title**. By default, these arbitrary **Currencies** can be used to purchase **Virtual Goods** from the **Catalog** or **Store**, as a **Soft Currency** converted from **IAPs** or as a generic mechanic to derive **Game** play. Additionally, **Currencies** can be configured to *recharge* over time to a predetermined limit.
+PlayFab offers up to 10 virtual currencies per title. By default, these arbitrary currencies can be used to purchase virtual goods from the catalog or store, as a soft currency converted from **IAPs** or as a generic mechanic to derive game play. Additionally, currencies can be configured to *recharge* over time to a predetermined limit.
 
-## Title News
+## Title news
 
-This is a simple **Catalog** of **News Items**. This feature makes sending **Message Of The Days** (**M.O.T.D.**) accessible with a single **API** call.
+This is a simple catalog of news items. This feature makes sending **Message Of The Days** (**M.O.T.D.**) accessible with a single **API** call.
 
 ## Webhooks (PlayStream)
 

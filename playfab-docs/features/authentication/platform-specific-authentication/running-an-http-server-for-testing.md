@@ -30,7 +30,7 @@ Create a new folder on your system from where you want to serve your static file
 
 On **Mac OS** you may want to check for access on the folder. Inside of the newly created folder, create a file called **index.html**.
 
-Fill the file with the content shown below.
+Fill the file with the content provided below.
 
 ```html
 <!doctype html>
@@ -51,7 +51,7 @@ Run the **command line/terminal** and **cd** to the folder with your **index.htm
 
 - Execute **http-server** **(1)**.
 - **HTTP-server** will start serving files from your current directory **(2)**.
-- It will also print out all the **IP** endpoints the server is listening for **(3)**. 
+- It will also print out all the **IP** endpoints the server is listening for **(3)**.
 - Use one of them to reach your web-server through the browser **(4)**.
 - Observe your page being loaded **(5)**.
 
@@ -59,7 +59,7 @@ Run the **command line/terminal** and **cd** to the folder with your **index.htm
 
 You can optionally specify a port to run the server on.
 
-- **Example**: Execute **http-server -p 80** to run your server on **port 80**. If a port is occupied, you will have to find what application is using this port and shut it down before you attempt to run the **HTTP**server again.
+- **Example**: Execute **http-server -p 80** to run your server on **port 80**. If a port is occupied, you will have to find what application is using this port and shut it down before you attempt to run the **HTTP** server again.
 
 ### Serving files with a custom domain name
 
@@ -81,7 +81,7 @@ IP_ADDRESS_1 DOMAIN_NAME_1
 IP_ADDRESS_2 DOMAIN_NAME_2
 IP_ADDRESS_3 DOMAIN_NAME_3
 
-# This is comment 
+# This is comment
 # IP_ADDRESS_4 DOMAIN_NAME_4 <- this entry is commented out and is inactive
 ...
 ```
