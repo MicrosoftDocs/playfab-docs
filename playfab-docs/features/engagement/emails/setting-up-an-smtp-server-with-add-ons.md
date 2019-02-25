@@ -1,13 +1,20 @@
----
-title: Setting up an SMTP server with Add-ons
+ title: Setting up an SMTP server with Add-ons
+
 author: v-thopra
+
 description: Describes how to set up an SMTP add-on to support sending custom emails through PlayFab.
 ms.author: v-thopra
+
 ms.date: 11/08/2018
+
 ms.topic: article
+
 ms.prod: playfab
+
 keywords: playfab, engagement, email, servers, smtp
+
 ms.localizationpriority: medium
+
 ---
 
 # Setting up an SMTP server with add-ons
@@ -51,11 +58,11 @@ To test this feature, you can use the Gmail **SMTP** server, provided you have a
 
 - Host name: **smtp.gmail.com**
 - Port number: **587**
-- Username: (**your gmail address**. E.g., "support@playfab.com")
+- Username: (**your gmail address** - e.g., "support@playfab.com")
 - Password: (**your password**)
 
 > [!NOTE]
-> If you have 2-factor authentication enabled, you will need to create an App Password. See [Sign in using an App password](https://support.google.com/accounts/answer/185833?hl=en) for more information.
+> If you have 2-factor authentication enabled, you will need to create an App password. See [Sign in using an App password](https://support.google.com/accounts/answer/185833?hl=en) for more information.
 
 The **SMTP** add-on is now installed, and will show a green check and message indicating success.
 

@@ -10,7 +10,7 @@ keywords: playfab, java sdk, hamcrest,
 ms.localizationpriority: medium
 ---
 
-## Hamcrest ##
+# Hamcrest
 
 https://hamcrest.org/JavaHamcrest/
 (Unspecified date and owner are not provided by hamcrest)

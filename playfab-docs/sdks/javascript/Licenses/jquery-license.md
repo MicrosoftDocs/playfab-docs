@@ -10,7 +10,7 @@ keywords: playfab, javascript sdk, javascript, jquery
 ms.localizationpriority: medium
 ---
 
-## JQuery license ##
+# JQuery license
 
 The MIT License (MIT)
 

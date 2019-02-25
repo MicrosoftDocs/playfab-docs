@@ -10,7 +10,7 @@ keywords: playfab, unity3d sdk, unity3d, uunit
 ms.localizationpriority: medium
 ---
 
-## UUnit license ##
+# UUnit license
 
 THIRD PARTY SOFTWARE NOTICES AND INFORMATION
 Do Not Translate or Localize
@@ -31,27 +31,32 @@ extent required to debug changes to any libraries licensed under the GNU Lesser
 General Public License.
 
 
-UUnit
+## UUnit
+
 https://wiki.unity3d.com/index.php?title=UUnit
 
 
 Unity has a custom license and subscription, linked to their editor.
+
 https://unity3d.com/get-unity
 
 We are not distributing the Unity-editor, or any Unity source.
+
 We are distributing a unity-example-project and PlayFab add-on for Unity.
+
 The PlayFab code can be examined with any text editor, but the project can only be opened with a properly licensed Unity3d editor, version 5.x or higher.
 
-Uunit Download location
+Uunit Download location:
+
 https://wiki.unity3d.com/index.php?title=UUnit
 
-License
+License:
+
 https://creativecommons.org/licenses/by-sa/3.0/
 
-/*
- * UUnit system from UnityCommunity
- * Heavily modified
- * 0.4 release by pboechat
- * https://wiki.unity3d.com/index.php?title=UUnit
- * https://creativecommons.org/licenses/by-sa/3.0/
-*/
+> UUnit system from UnityCommunity  
+> Heavily modified  
+> 0.4 release by pboechat  
+> https://wiki.unity3d.com/index.php?title=UUnit  
+> https://creativecommons.org/licenses/by-sa/3.0/  
+

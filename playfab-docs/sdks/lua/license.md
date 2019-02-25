@@ -1,5 +1,5 @@
 ---
-title: Lua
+title: Lua licenses
 author: v-kciril
 description: Landing page for the PlayFab Lua SDK.
 ms.author: v-kciril
@@ -10,7 +10,7 @@ keywords: playfab, lua sdk, lua, cpp
 ms.localizationpriority: medium
 ---
 
-# Javascript licenses
+# Lua licenses
 
 Licenses are available at the following links:
 

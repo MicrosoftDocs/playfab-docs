@@ -10,7 +10,9 @@ keywords: playfab, lua sdk, lua, luasec
 ms.localizationpriority: medium
 ---
 
-https://github.com/brunoos/luasec
+# Luasec license
+
+[https://github.com/brunoos/luasec](https://github.com/brunoos/luasec)
 
 LuaSec 0.6 license
 Copyright (C) 2006-2015 Bruno Silvestre, UFG

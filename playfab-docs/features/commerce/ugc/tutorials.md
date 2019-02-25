@@ -22,4 +22,4 @@ ms.localizationpriority: medium
 
 These tutorials show you how to use UGC.
 
-- [TBD]()
+- There are currently no tutorials for UGC.

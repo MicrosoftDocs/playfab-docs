@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 ## Overview
 
-PlayFab PubSub is a flexible system for pushing information in real time between services and clients. Events are relayed via a persistent connection between PlayFab and game clients, allowing clients to subscribe to topics and be notified of events remotely. PubSub is integrated natively with [PlayStream](https://api.playfab.com/playstream) events, extending PlayFab's server-side event-driven model to clients.
+PlayFab PubSub is a flexible system for pushing information in real time between services and clients. Events are relayed via a persistent connection between PlayFab and game clients, allowing clients to subscribe to topics and be notified of events remotely. PubSub is integrated natively with [PlayStream](../../../api-references/events/index.md) events, extending PlayFab's server-side event-driven model to clients.
 
 ![Diagram of data flowing through the PubSub feature to clients](images/pubsub-overview.png)
 

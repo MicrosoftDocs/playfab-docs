@@ -3,7 +3,7 @@ title: Getting started for LiveOps
 author: v-kciril
 description: Getting started page for LiveOps.
 ms.author: v-kciril
-ms.date: 2/19/19
+ms.date: 01/25/2019
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, real-time analytics, PlayStream, live operations, player behaviors, event archiving, data export, player data, webhooks, analytic reporting, reports

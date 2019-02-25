@@ -32,13 +32,13 @@ By editing anything within the event type, start date, or end date, the query fi
 
 ![Event Query Field - Date range](media/tutorials/event-query-field-date-range.png)  
 
-At this point, the search will result in showing only [player_realmoney_purchase](https://api.playfab.com/playstream/events/player_realmoney_purchase) events, as shown below.
+At this point, the search will result in showing only [player_realmoney_purchase](../../../api-references/events/player-realmoney-purchase.md) events, as shown below.
 
 ![Event History Chart - player-realmoney-purchase](media/tutorials/event-history-chart-player-realmoney-purchase.png)  
 
 By default, **Group by** will aggregate events by their event type. Here, we are only querying for a *single* event type.
 
-Instead, let's group by a property of the event. Looking at the [documentation for the event](https://api.playfab.com/playstream/events/player_realmoney_purchase), we can see that **paymentProvider** is a property.
+Instead, let's group by a property of the event. Looking at the [documentation for the event](../../../api-references/events/player-realmoney-purchase.md), we can see that **paymentProvider** is a property.
 
 ![Event Query - Group by paymentProvider](media/tutorials/event-query-group-by-paymentprovider.png)  
 
@@ -46,7 +46,7 @@ Now, the chart shows the counts of how many events occurred for each group, as s
 
 ![Event History Chart - Group by paymentProvider](media/tutorials/event-history-chart-group-by-paymentprovider.png)  
 
-By default, **Sum by** will count the number of events per group. We can sum a property of the event instead. We could find a property by again looking at the [event documentation](https://api.playfab.com/playstream/events/player_realmoney_purchase).
+By default, **Sum by** will count the number of events per group. We can sum a property of the event instead. We could find a property by again looking at the [event documentation](../../../api-references/events/player-realmoney-purchase.md).
 
 There is another way to see the properties of the events - you query by looking at the event **JSON** itself.
 

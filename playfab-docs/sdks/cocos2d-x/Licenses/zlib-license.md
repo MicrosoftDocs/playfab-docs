@@ -1,5 +1,5 @@
 ---
-title: zlib License
+title: zlib license
 author: v-kciril
 description: License for zlib
 ms.author: v-kciril
@@ -9,6 +9,8 @@ ms.prod: playfab
 keywords: playfab, zlib, sdk, cocos
 ms.localizationpriority: medium
 ---
+
+# zlib license
 
 zlib.h -- interface of the 'zlib' general purpose compression library version 1.2.8, April 28th, 2013
 

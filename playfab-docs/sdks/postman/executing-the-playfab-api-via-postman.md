@@ -12,9 +12,9 @@ ms.localizationpriority: medium
 
 # Executing the PlayFab API via Postman
 
-## Postman Overview
+## Postman overview
 
-Knowing how to manually call the **Web API** methods is invaluable when you are trying to integrate **PlayFab** with your game.
+Knowing how to manually call the **Web API** methods is invaluable when you are trying to integrate PlayFab with your game.
 
 If a function isn’t working out quite how you expect, being able to call it in a tool that shows you the specific response data and any error messages is a powerful way to debug those calls.
 
@@ -24,7 +24,7 @@ This tutorial will guide you through setting up and using **Postman**.
 
 ### Disclaimer
 
-**Postman** is an **HTTP Request** tool useful to intermediate and advanced **users**. 
+**Postman** is an **HTTP Request** tool useful to intermediate and advanced **users**.
 
 ### Initial Setup
 
@@ -48,7 +48,7 @@ If you have a look through our collection, you will see **{{____}}** variables i
 
 ### PlayFab Environment Variables
 
-- **{{TitleId}}** - The unique identifier that corresponds to your **PlayFab Title**, found in the [GameManager](https://developer.playfab.com/) -> **Settings**.
+- **{{TitleId}}** - The unique identifier that corresponds to your PlayFab title, found in the [GameManager](https://developer.playfab.com/) -> **Settings**.
 - **{{SecretKey}}** - Found in the [GameManager](https://developer.playfab.com/) -> **Settings** and used to authenticate **Server API** calls.
 - **{{SessionTicket}}** - Provided in response to any [successful login call](xref:titleid.playfabapi.com.client.authentication). This is used to authenticate most **Client API** calls.
 - **{{PlayFabId}}** - Provided in response to any [successful login call](xref:titleid.playfabapi.com.client.authentication).

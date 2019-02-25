@@ -12,39 +12,39 @@ ms.localizationpriority: medium
 
 # Global API method error codes
 
-This tutorial lists the global error codes that apply to every PlayFab **API** method. The following information can be used to decipher **API Errors**.
+This tutorial lists the global error codes that apply to every PlayFab **API** method. The following information can be used to decipher **API** errors.
 
-Each **API Error** contains the following fields:
+Each **API** error contains the following fields:
 
-- **Error** - A human-readable code for the **Error**.
-- **ErrorCode** - A numerical code for the **Error**.
+- **Error** - A human-readable code for the error.
+- **ErrorCode** - A numerical code for the error.
 
-## Safe-to-Retry codes
+## Safe to retry codes
 
 It is usually safe to retry requests that fail with these error codes, with an exponential delay back-off. These errors typically mean that your client is making calls too quickly, but the request itself may be valid.
 
 - **APIClientRequestRateLimitExceeded (1199)**
-Client is making too many **API** calls too quickly. Usually too many calls in a short burst.
+The client is making too many **API** calls too quickly. Usually too many calls in a short burst.
 
 - **APIConcurrentRequestLimitExceeded (1342)**
-Client is making too many **API** calls too quickly. Usually *simultaneous* calls, or too many calls in a short burst.
+The client is making too many **API** calls too quickly. Usually *simultaneous* calls, or too many calls in a short burst.
 
 - **ConcurrentEditError (1133)**
-Client is making too many **API** calls too quickly. Usually caused by *multiple simultaneous* calls, or very rapid *sequential* calls.
+The client is making too many **API** calls too quickly. Usually caused by *multiple simultaneous* calls, or very rapid *sequential* calls.
 
 - **DataUpdateRateExceeded (1287)**
-Client is making too many **API** calls too quickly. Usually caused by *multiple simultaneous calls*, or very rapid *sequential* calls.
+The client is making too many **API** calls too quickly. Usually caused by *multiple simultaneous calls*, or very rapid *sequential* calls.
 
 - **DownstreamServiceUnavailable (1127)**
-**PlayFab** may be having a temporary issue, or **Client** is making too many **API** calls too quickly.
+PlayFab may be having a temporary issue, or the client is making too many **API** calls too quickly.
 
 - **InvalidAPIEndpoint (1131)**
 PlayFab or **Amazon Web Services** (**AWS**) may be having a temporary issue.
 
 - **OverLimit (1214)**
-**Client** is making too many **API** calls too quickly, usually on a specific **API** method.
+The client is making too many **API** calls too quickly, usually on a specific **API** method.
 
-## Never-Retry codes
+## Never retry codes
 
 If you get these error codes, you should *never* retry, because the request can never be completed under the current circumstances without a bug-fix or setting change.
 
@@ -97,7 +97,7 @@ This typically occurs if bad information is sent to a third-party add-on, and ou
 These codes *only* occur on specific **API** methods (listed on the documentation page for those methods), but if you see them, there are important consequences of which you should be aware.
 
 - **APIConcurrentRequestLimitExceeded (1342)**
-Your title is either hitting **CloudScript** too hard, or is trying to force segment evaluation too frequently (or both). For the former, the two things to look at are:
+Your title is either hitting **CloudScript** too hard, or is trying to force segment evaluation too frequently (or both). For the former, the two things to examine are:
 
   1. How *often* your script calls utilize near-maximum time per call (or worse, time out).
-  2. How frequently you're calling **CloudScript** per player. For the latter, calls to get the list of players in a segment would be the key thing to look at (a task targeting a segment also causes re-evaluation, but that should be infrequent).
+  2. How frequently you're calling **CloudScript** per player. Calls to get the list of players in a segment would be the key thing to examine (a task targeting a segment also causes re-evaluation, but that should be infrequent).

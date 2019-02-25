@@ -57,10 +57,10 @@ For more information on specific flows from either your game client or service, 
 
 + [Matchmaking API Reference (Private Preview)](xref:titleid.playfabapi.com.multiplayer.matchmaking)
 + [Matchmaking Admin API Reference (Private Preview)](xref:titleid.playfabapi.com.multiplayer.matchmakingadmin)
-+ [Playstream Events](https://api.playfab.com/playstream/events)
-  + [matchmaking_ticket_completed](https://api.playfab.com/playstream/events/matchmaking_ticket_completed)
-  + [matchmaking_match_found](https://api.playfab.com/playstream/events/matchmaking_match_found)
-  + [title_queue_config_updated](https://api.playfab.com/playstream/events/title_queue_config_updated)
++ [Playstream Events](../../../api-references/events/index.md)
+  + [matchmaking_ticket_completed](../../../api-references/events/matchmaking-ticket-completed.md)
+  + [matchmaking_match_found](../../../api-references/events/matchmaking-match-found.md)
+  + [title_queue_config_updated](../../../api-references/events/title-queue-config-updated.md)
 
 ### September 2018 - Private Preview Release Notes
 

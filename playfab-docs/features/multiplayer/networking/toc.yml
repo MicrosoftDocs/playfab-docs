@@ -1,6 +1,8 @@
 - name: Overview
   href: index.md
   items:
+  - name: Pricing
+    href: pricing.md
   - name: Bots
     href: bots.md
 - name: Quickstart

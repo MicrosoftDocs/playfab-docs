@@ -25,7 +25,7 @@ In the screen shown below:
 1. The **Timestamp** shows the **Date** and **Time** of the event in an easily readable format.
 2. The full **JSON** body of the event. This can be accessed by selecting the **Event Timestamp**.
 3. The **Player ID** is a reference to the player that initiated the event.
-4. **Event Details** show the **Details** associated with an **Event Name**, as well as other useful information.
+4. Event details show the details associated with an **Event Name**, as well as other useful information.
 
 ![Events Timeline panel](media/tutorials/events-timeline-panel.png)  
 

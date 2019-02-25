@@ -41,7 +41,7 @@ The best way to access real money items available for purchase is to use [GetCat
 
 The ID of the item is the link between PlayFab and any external **IAP** system. So we pass the item ID to the **IAP** service.
 
-At this point, the purchase process starts. The player interacts with the **IAP** interface and, if The purchase is successful, you obtain a receipt.
+At this point, the purchase process starts. The player interacts with the **IAP** interface and, if the purchase is successful, you obtain a receipt.
 
 PlayFab is then able to validate the receipt and register the purchase, granting the PlayFab player the items that they just bought.
 
@@ -295,7 +295,7 @@ public class GooglePurchase {
 
 - Create a new **Game** object called **Code (1)**.
 - Add the **AndroidIAPExample** component to it **(2)** **(3)**.
-- Make sure to **Save** the **Scene (4)**. 
+- Make sure to **Save** the scene **(4)**.
 
 ![UnityIAP create example game object](media/tutorials/create-example-game-object-unity-iap.png)  
 
@@ -317,7 +317,7 @@ We have no means to test it just yet. We need to configure **PlayMarket** and Pl
 
 ## Setting up a PlayMarket application for IAP
 
-This section describes the specifics of how to enable **IAP** for your **PlayMarket Application**.
+This section describes the specifics of how to enable **IAP** for your **PlayMarket** application.
 
 > [!NOTE]
 > Setting up the application itself is beyond the scope of this tutorial. We assume you already *have* an application, and that is configured to publish at least **Alpha** releases.
@@ -428,7 +428,7 @@ We can *always* create a *new* item, but to keep things clean, let's modify the 
 
 - Assign a **Price (4)** to your **Item**.
 
-In this tutorial, **IAP** mainly refers to purchases for Real Money. That's why we use **RM** - special Real Money Currency. The PlayFab amount is defined in US Cents.
+In this tutorial, **IAP** mainly refers to purchases for real money. That's why we use **RM** - special Real Money currency. The PlayFab amount is defined in US Cents.
 
 - Select the **Save Item** button **(5)** to commit your changes.
 

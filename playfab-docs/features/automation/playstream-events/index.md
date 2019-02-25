@@ -80,4 +80,4 @@ You can click on a particular event to see details for that particular event, in
 - [Segmentation](../../analytics/segmentation/index.md)
 - [PlayStream Events](../../analytics/metrics/playstream-events.md)
 - [Event History](../../analytics/metrics/event-history.md)
-- [PlayStream Documentation](https://api.playfab.com/playstream)
+- [PlayStream Event Reference](../../../api-references/events/index.md)
