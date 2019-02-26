@@ -35,10 +35,3 @@ PlayFab offer a variety of tools to empower you to run your LiveOps strategy.
 - [A/B testing](../../features/analytics/ab-testing/quickstart.md) – Create, run, and report on A/B testing using PlayFab player segments.
 - [Rules and scheduled tasks](../../features/automation/actions-rules/quickstart.md) – Set up rules and scheduled tasks based on PlayStream events or CloudScripts.
 
-- **Player Segments** - PlayFab can automatically sort your players into cohorts, that can then be acted upon through **Cloudscript**, A/B testing, or rules. PlayFab comes with several of the most common segments already set up - but you can also make your own segments using player login data, or groups defined by in-game behavior.
-- **Economy** - Manage your game’s monetization across all platforms through configurable stores, currencies, and pricing. Also, in-game economy can be managed through PlayFab, allowing real time changes to item catalogs, availability, pricing, and drop tables.
-- **Leaderboards** – Create leaderboards to track any aspect of your game, and manage reset frequency and aggregation methods.
-- **Content Configuration** – PlayFab allows for robust content management in real time, through key value pair definitions, in-game messaging, and email templates.
-- **Automation** – Store and run scripts in the cloud with **CloudScript**, enabling everything from triggered events to highly customized data tracking.
-- **A/B Testing** – Create, run, and report on A/B testing using PlayFab player segments.
-- **Rules and Scheduled Tasks** – Set up rules and scheduled tasks based on **PlayStream** events or **CloudScripts**.
