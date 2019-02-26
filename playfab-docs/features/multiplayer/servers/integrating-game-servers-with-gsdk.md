@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 ## Overview
 
-The PlayFab **Game Server SDK** (**GSDK**) is provided in **C++**, **C#**, and **Java** versions. The **GSDK** connects your game server to the PlayFab agent installed on the VM. This agent facilitates key server interactions with the PlayFab Multiplayer platform.
+The PlayFab **Game Server SDK** (**GSDK**) is provided in **C++**, **C#**, and **Java** versions. The **GSDK** connects your game server to the PlayFab agent installed on the **VM**. This agent facilitates key server interactions with the PlayFab Multiplayer platform.
 
 ## Basic integration
 
@@ -94,12 +94,12 @@ public static void main(String[] args)
 
 ## Logging with the GSDK
 
-When your game server ends, the PlayFab VM agent will zip any log files, and make them available to you via the [GetMultiplayerServerLogs](xref:titleid.playfabapi.com.multiplayer.multiplayerserver.getmultiplayerserverlogs) API.
+When your game server ends, the PlayFab **VM** agent will zip any log files, and make them available to you via the [GetMultiplayerServerLogs](xref:titleid.playfabapi.com.multiplayer.multiplayerserver.getmultiplayerserverlogs) API.
 
 There are two ways to add log files from your game:
 
-1. Use the **GSDK's Log** method - It will add your own log lines to the GSDK log file.
-2. Write your own log file in the appropriate log directory that the PlayFab VM agent will zip up and upload.
+1. Use the **GSDK's Log** method - It will add your own log lines to the **GSDK** log file.
+2. Write your own log file in the appropriate log directory that the PlayFab **VM** agent will zip up and upload.
 
 ### C++
 

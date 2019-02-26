@@ -68,13 +68,13 @@
   - name: matchmaking_ticket_completed
     href: matchmaking-ticket-completed.md
   - name: matchmaking_user_ticket_completed
-    href: matchmaking-user-ticket-completed .md
+    href: matchmaking-user-ticket-completed.md
   - name: matchmaking_user_ticket_invite 
-    href: matchmaking-user-ticket-invite .md
+    href: matchmaking-user-ticket-invite.md
   - name: multiplayer_server_build_deleted
-    href: multiplayer-server-build-deleted .md
+    href: multiplayer-server-build-deleted.md
   - name: multiplayer_server_build_region_status_changed
-    href: multiplayer-server-build-region-status-changed .md
+    href: multiplayer-server-build-region-status-changed.md
   - name: multiplayer_server_build_region_updated
     href: multiplayer-server-build-region-updated.md
   - name: multiplayer_server_certificate_deleted

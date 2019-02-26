@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Quickstart for multiplayer servers (Game Manager)
 
-This tutorial helps you upload a sample multiplayer server and configure a server build.
+This tutorial shows you how to upload a sample multiplayer server and configure a server build.
 
 ## Enable Multiplayer Servers 2.0
 
@@ -28,17 +28,18 @@ Multiplayer servers work through a special state machine by integrating with the
 
 **GSDK** samples show this integration through a very simple **HTTP** server sample app.
 
-**You can download a compiled version of the sample app directly from [github](https://github.com/PlayFab/gsdkSamples/releases/download/v1.0/winrunnerSample.zip).**
+> [!NOTE]
+> You can download a compiled version of the sample app directly from [github](https://github.com/PlayFab/gsdkSamples/releases/download/v1.0/winrunnerSample.zip).
 
 If you want to build the app yourself, download the [GSDK samples from github](https://github.com/PlayFab/gsdkSamples), using standard git methods or downloading as a zip file.
 
 Opening the **Visual Studio** project should automatically trigger dependencies like the [Game Server SDK nuget package](https://www.nuget.org/packages/com.playfab.csharpgsdk) to be downloaded.
 
-Build the project in an **x64 RELEASE** flavor, as shown below
+Build the project in an **x64 RELEASE** flavor, as shown below.
 
 ![Release GSDK Sample](media/tutorials/release-gsdk-sample.png)
 
-ZIP up the produced **x64 release** binaries. There should be no internal folder structure, the zip file should be a simple flat collection of files, as shown below.
+ZIP up the produced **x64 release** binaries. There should be no internal folder structure, the zip file should be a simple flat collection of files, as shown in the following example.
 
 ![GSDK Sample Output](media/tutorials/gsdk-sample-output.png)
 
@@ -48,7 +49,7 @@ You can compare your build output with the compiled release on [github](https://
 
 On the **Multiplayer Servers 2.0** page, select **New Build** at the top right. Configure a new build as found in the example shown below.
 
-1. **Build Name.** This is a string used to refer to the build. 
+1. **Build Name.** This is a string used to refer to the build.
 2. **Virtual machine selection**. The **Azure** virtual machine type used to host this multiplayer server build. Standards **D1_v2** is a suggested choice, and available to customers by default. Learn about other virtual machine selections at [Multiplayer Servers detailed price sheet](multiplayer-servers-detailed-price-sheet.md).
 3. **Servers per machine.** How many multiplayer servers will be hosted on each virtual machine. For testing start with a value of **one.**
 4. **Network.** The **GSDK** sample operates a simple web server on **Port 3600**. It is important we specify this port's name as **game_port**, because the game server inspects the port name through the **GSDK API**. See [Connecting clients to game servers](connecting-clients-to-game-servers.md) for more networking information.

@@ -18,19 +18,19 @@ PlayFab operates game servers as containerized applications. This tutorial descr
 
 Typically you package the game server executable and other files as zip files, and upload them as game assets. Assets are combined with a container image to create your game server build.
 
-The base container image provides the **Windows** operating system files and the execution environment that allows the game to run. PlayFab provides a set of managed container images to use for **Windows** builds.
+The base container image provides the **Windows** operating system files, and the execution environment that allows the game to run. PlayFab provides a set of managed container images to use for **Windows** builds.
 
-When a build is created through Game Manager or **APIs** like [CreateBuildWithManagedContainer()](xref:titleid.playfabapi.com.multiplayer.multiplayerserver.createbuildwithmanagedcontainer), you specify the assets and where they should be mounted within the container's file system. You also specify the shell command to start the game (`StartGameCommand`), this might be:
+When a build is created through Game Manager or **APIs** like [CreateBuildWithManagedContainer()](xref:titleid.playfabapi.com.multiplayer.multiplayerserver.createbuildwithmanagedcontainer), you specify the assets and where they should be mounted within the container's file system. You also specify the shell command to start the game (`StartGameCommand`), this might be similar to what is shown below.
 
 ```cmd
 C:\GameCoreApp\GameServer.exe -mode RETAIL
 ```
 
-The **start game** command must start an application that uses the PlayFab Game Server **SDK** to call `ReadyForPlayers` when ready to serve game clients. The container will be terminated and recycled when the application process exits.
+The **start game** command must start an application that uses the PlayFab **Game Server SDK** to call `ReadyForPlayers` when ready to serve game clients. The container will be terminated and recycled when the application process exits.
 
 ## Managed Containers
 
-PlayFab currently supports one managed container; the *PlayFab Multiplayer* container image, based on Windows Server Core. You can download this container through [Docker Hub](https://hub.docker.com/r/microsoft/playfab-multiplayer/) so that your local environment matches the runtime environment in **Azure**.
+PlayFab currently supports one managed container; the **PlayFab Multiplayer** container image, based on **Windows Server Core**. You can download this container through [Docker Hub](https://hub.docker.com/r/microsoft/playfab-multiplayer/) so that your local environment matches the runtime environment in **Azure**.
 
 There are debugging tools that allow you to step through the multiplayer server state machine locally on your dev box.
 
@@ -52,9 +52,9 @@ When PlayFab intends to update a managed container image that you are using, you
 
 ## Integrating the PlayFab Game Server SDK
 
-*Learn more at:* [Integrating game servers with the PlayFab game server SDK (GSDK)](integrating-game-servers-with-gsdk.md)
+*Learn more at:* [Integrating game servers with the PlayFab Game Server SDK (GSDK)](integrating-game-servers-with-gsdk.md)
 
-The PlayFab Game Server **SDK** (**GSDK**) is provided in  **C++** and **C#** versions. The **GSDK** connects your game server to a local agent installed on the VM. This agent facilitates key server interactions with the PlayFab control infrastructure.
+The PlayFab **Game Server SDK** (**GSDK**) is provided in  **C++** and **C#** versions. The **GSDK** connects your game server to a local agent installed on the VM. This agent facilitates key server interactions with the PlayFab control infrastructure.
 
 ![Thunderhead GSDK](media/tutorials/thunderhead-gsdk.png)
 
@@ -64,7 +64,7 @@ The following image shows the **States of a PlayFab multiplayer server**:
 
 ![Thunderhead Game Server States](media/tutorials/thunderhead-game-server-states.png)
 
-Ostensibly calling `ReadyForPlayers()` is the only requirement to get your game server to run and continue running. However, there are several callbacks/events that you may want to process in order to provide the best user experience.
+Ostensibly, calling `ReadyForPlayers()` is the only requirement to get your game server to run and continue running. However, there are several callbacks/events that you may want to process in order to provide the best user experience.
 
 ## Server scripts and PlayFab-configured environment variables
 

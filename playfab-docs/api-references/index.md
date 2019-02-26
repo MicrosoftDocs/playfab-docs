@@ -46,4 +46,4 @@ Each response from the API service can contain one or more Models in the respons
 
 ### Event Model Definitions
 
-The [PlayStream Event reference](events\index.md) contains the models of the automatically generated PlayStream event types. Each event type has a set of properties that are included as part of event's data wherever it is sent.
+The [PlayStream Event reference](events/index.md) contains the models of the automatically generated PlayStream event types. Each event type has a set of properties that are included as part of event's data wherever it is sent.

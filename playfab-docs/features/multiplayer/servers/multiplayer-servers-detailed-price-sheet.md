@@ -14,9 +14,9 @@ ms.localizationpriority: medium
 
 PlayFab multiplayer servers operate on most generally available **Azure** virtual machine sizes and regions. These are the most popular series for game developers providing progressively faster processors:
 
-- The **Av2**-series **VMs** can be deployed on a variety of hardware types and processors. The size is throttled, based upon the hardware, to offer consistent processor performance for the running instance, regardless of the hardware it is deployed on. 
-- The **Dv3**-series features the 2.4 GHz **Intel Xeon® E5-2673 v3** (**Haswell**) processor or the latest 2.3 GHz **Intel XEON ® E5-2673 v4** (**Broadwell**) processor in a hyper-threaded configuration.
-- The **Fv1**-series is based on the 2.4 GHz **Intel Xeon® E5-2673 v3** (**Haswell**) processor, which can achieve clock speeds as high as 3.1 GHz with the **Intel Turbo Boost Technology 2.0**. This is the same CPU performance as the **Dv2**-series of **VMs**, but **F-series VMs** are a better choice for workloads that demand faster CPUs but do not need as much memory or temporary storage per vCPU.
+- The **Av2**-series **VMs** can be deployed on a variety of hardware types and processors. The size is throttled, based upon the hardware, to offer consistent processor performance for the running instance, regardless of the hardware it is deployed on.
+- The **Dv3**-series features the 2.4 GHz **Intel XEON® E5-2673 v3** (**Haswell**) processor or the latest 2.3 GHz **Intel XEON ® E5-2673 v4** (**Broadwell**) processor in a hyper-threaded configuration.
+- The **Fv1**-series is based on the 2.4 GHz **Intel XEON® E5-2673 v3** (**Haswell**) processor, which can achieve clock speeds as high as 3.1 GHz with the **Intel Turbo Boost Technology 2.0**. This is the same CPU performance as the **Dv2**-series of **VMs**, but **F-series VMs** are a better choice for workloads that demand faster CPUs, but do not need as much memory or temporary storage per CPU.
 
 This page provides detailed pricing information for PlayFab multiplayer servers. Two key points:
 
@@ -112,4 +112,4 @@ Zone | Regions | $/GB of Network Egress
 |-|-|-|
 Zone 1| Australia Central, Australia Central 2, West US, West US 2, West Central US, East US, North Central US, South Central US, East US 2, Central US, West Europe, North Europe, Canada East, Canada Central, France Central, UK South, UK West | $0.05
 Zone 2| East Asia, Southeast Asia, Japan East, Japan West, Australia East, Australia Southeast, Central India, West India, South India, Korea Central, Korea South|  $0.08
-Zone 3 |Brazil South | $0.16 
+Zone 3 |Brazil South | $0.16

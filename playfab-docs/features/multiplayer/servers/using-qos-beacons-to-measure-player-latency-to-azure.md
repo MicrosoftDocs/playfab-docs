@@ -14,18 +14,18 @@ ms.localizationpriority: medium
 
 You can deploy PlayFab multiplayer servers to more than a dozen **Azure** regions. There are two reasons to do this:
 
-1. Additional regions provide redundancy, if a single **Azure** region fails, players can access servers on other regions.
+1. Additional regions provide redundancy, so if a single **Azure** region fails, players can access servers on other regions.
 2. Additional regions allow players to access servers that are “nearby” and deliver low-latency connectivity.
 
-When you call [RequestMultiplayerServer](xref:titleid.playfabapi.com.multiplayer.multiplayerserver.requestmultiplayerserver) you specify a ranked list of **Azure** regions that PlayFab uses to fulfill the request. PlayFab will attempt to fulfill the request using the #1 ranked region, but if there aren't servers standing-by in that region, or the region has some other fault, a sub-optimal region further down the list will be attempted.
+When you call [RequestMultiplayerServer](xref:titleid.playfabapi.com.multiplayer.multiplayerserver.requestmultiplayerserver), you specify a ranked list of **Azure** regions that PlayFab uses to fulfill the request. PlayFab will attempt to fulfill the request using the #1 ranked region, but if there aren't servers standing by in that region, or the region has some other fault, a sub-optimal region further down the list will be attempted.
 
 Whenever possible, you should use player latency data to inform the ranking of **Azure** regions used while requesting a multiplayer server. PlayFab provides services and tools to help with this task.
 
 ## Quality-of-service beacons
 
-PlayFab operates beacons in every Azure region in use by PlayFab multiplayer servers. These beacons will reflect **UDP** traffic and can be used to measure latency with **UDP** transport.
+PlayFab operates beacons in every **Azure** region in use by PlayFab multiplayer servers. These beacons will reflect **UDP** traffic and can be used to measure latency with **UDP** transport.
 
-The usage of UDP is important because most multiplayer games use **UDP** transport for their most performance-critical game traffic. Internet Service Providers and other elements of the Internet ecosystem may deliver differentiated performance for **UDP** vs. **TCP** vs. **ICMP** flows.
+The usage of **UDP** is important, because most multiplayer games use **UDP** transport for their most performance-critical game traffic. Internet service providers and other elements of the Internet ecosystem may deliver differentiated performance for **UDP** vs. **TCP** vs. **ICMP** flows.
 
 This is the typical flow for using these beacons in the context of a player device:
 
@@ -40,7 +40,7 @@ This is the typical flow for using these beacons in the context of a player devi
 
 PlayFab provides **Windows C++** sub-routines demonstrating this QoS flow in the [C++ quickstart for Windows](../../../sdks/xplatcpp/quickstart-windows.md). You can build the **SDK** and use it as a helper library in your PC games, or use the code as an example for other platforms.
 
-These are the two [QoS APIs available in the SDK](https://github.com/PlayFab/XPlatCppSdk/blob/master/cppsdk/include/playfab/QoS/PlayFabQoSApi.h):
+These are the two [QoS APIs available in the SDK](https://github.com/PlayFab/XPlatCppSdk/blob/master/cppsdk/include/playfab/QoS/PlayFabQoSApi.h), as noted below.
 
 ```cpp
   // Runs a QoS operation asynchronously. The operation pings a set of datacenters and returns a result with average response times.

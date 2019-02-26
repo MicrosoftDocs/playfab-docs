@@ -17,8 +17,8 @@ A PlayFab multiplayer server build is a combination of your game server executab
 Some aspects of a build cannot be modified once a build is created, this is the build's *definition*:
 
 - **Assets** - Assets are zip files. At least one asset containing your game server executable is required. (See [Basics of a PlayFab game server](basics-of-a-playFab-game-server.md)). Each asset has an asset mount path that specifies where it is mounted in the container file system. Assets should be less than 10GB in size. A typical mount path might be **C:\Assets**.
-- **Machine selection** - Required. The virtual machine size you want to use. PlayFab currently supports 4 **Azure** compute families (See [Multiplayer Servers detailed price sheet](multiplayer-servers-detailed-price-sheet.md)).  
-- **Servers per machine** - Required. The maximum number of game servers that should be operated on a single virtual machine. A typical configuration may have 4 servers on a **Standard_D2s_v3**, providing each server effectively 50% of a core.
+- **Machine selection** - Required. The virtual machine size you want to use. PlayFab currently supports four **Azure** compute families (See [Multiplayer Servers detailed price sheet](multiplayer-servers-detailed-price-sheet.md)).  
+- **Servers per machine** - Required. The maximum number of game servers that should be operated on a single virtual machine. A typical configuration may have four servers on a **Standard_D2s_v3**, providing each server effectively 50% of a core.
 - **Certificate** - Optional. A **pfx** file (**Windows**) or **pem** file (**Linux**) containing a certificate to be installed within the container. Typically a certificate for service-to-service authentication is installed through this configuration.
 
 > [!NOTE]
@@ -49,15 +49,16 @@ After your game has launched, you will probably want to update your game server 
 
 1. Create a new build: **Server v2.** Deploy this build with the build package containing your updated game server, assets and certificates as appropriate. From the build page you can use an existing build as a template, this can be helpful if most of the configuration is preserved.
 2. On the service performing allocations (through **RequestMultiplayerServer**) - begin allocating and sending players to the new **Server v2** build.
-3. To reduce server consumption, at this point you may want to reduce the standby sessions configuration on the older *Server v1* build, because the build is no longer taking on new allocations. 
+3. To reduce server consumption, at this point you may want to reduce the standby sessions configuration on the older *Server v1* build, because the build is no longer taking on new allocations.
 4. Eventually gameplay on **Server v1** will end, and there will be no more active servers in that deployment. At this point you can delete the build.  You will have successfully migrated your player base to **Server v2.**
 
-### Managing builds using the multiplayer server API and PowerShell
+## Managing builds using the multiplayer server API and PowerShell
+
 You may want to manage PlayFab server builds programmatically. You can do this using the [Multiplayer Server APIs](xref:titleid.playfabapi.com.multiplayer.multiplayerserver) directly our using with any of our [PlayFab SDKs](../../../index.md?#pivot=documentation&panel=sdks).
 
 PlayFab multiplayer servers has a simple **PowerShell** module enabling build management. This module uses PlayFab's **C# SDK** to interact with the entity **API**, and can be a useful resource for navigating the entity **API**.
 
-This module is published on [PowerShell Gallery](https://www.powershellgallery.com/packages/PlayFabMultiplayer/). Install it by running the following in a PowerShell prompt, as shown below.
+This module is published on [PowerShell Gallery](https://www.powershellgallery.com/packages/PlayFabMultiplayer/). Install it by running the following in a **PowerShell** prompt, as shown below.
 
 ```powershell
 Install-Module PlayFabMultiplayer
@@ -81,30 +82,30 @@ Get-PFTitleEntityToken -TitleID "mytitleID" -secretkey "mysecretkey"
 
 ## Add an asset and get the list of assets
 Add-PFMultiplayerAsset -FilePath "C:\example.zip"
-Get-PFMultiplayerAsset 
+Get-PFMultiplayerAsset
 
 ## Add a certificate and get the list of certificates
 Add-PFMultiplayerCertificate -Name "CertName" -FilePath "C:\examplecert.pfx"
-Get-PFMultiplayerCertificate 
+Get-PFMultiplayerCertificate
 
-##Create a build 
+##Create a build
 
-$VMSelection = [PlayFab.MultiplayerModels.AzureVMSize]::Standard_D2_v2 
- 
-$Ports = New-object PlayFab.MultiplayerModels.Port 
-$Ports.Name = "Test Port" 
-$Ports.Num = 3600 
+$VMSelection = [PlayFab.MultiplayerModels.AzureVMSize]::Standard_D2_v2
+
+$Ports = New-object PlayFab.MultiplayerModels.Port
+$Ports.Name = "Test Port"
+$Ports.Num = 3600
 $Ports.Protocol = [PlayFab.MultiplayerModels.ProtocolType]::TCP
- 
+
 $BuildCert = New-Object System.Collections.Generic.List[PlayFab.MultiplayerModels.GameCertificateReferenceParams]
 $BuildCertParams = New-Object PlayFab.MultiplayerModels.GameCertificateReferenceParams
 $BuildCertParams.Name = "FakeCert"
 $BuildCertParams.GsdkAlias = "FakeCert"
 
 $BuildCert.Add($BuildCertParams)
- 
-New-PFMultiplayerBuild -BuildName "PowerShellTest902" -AssetFileName "winrunnerasset_notimeout.zip" -AssetMountPath "C:\Assets\" -StartMultiplayerServerCommand "C:\Assets\WinTestRunnerGame.exe" -MappedPorts $Ports -VMSize $VMSelection -BuildCerts $BuildCert 
- 
+
+New-PFMultiplayerBuild -BuildName "PowerShellTest902" -AssetFileName "winrunnerasset_notimeout.zip" -AssetMountPath "C:\Assets\" -StartMultiplayerServerCommand "C:\Assets\WinTestRunnerGame.exe" -MappedPorts $Ports -VMSize $VMSelection -BuildCerts $BuildCert
+
 
 ##View servers for a build
 Get-PFMultiplayerServer -BuildName "PowerShellTest" 
