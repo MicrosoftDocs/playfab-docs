@@ -10,6 +10,6 @@ keywords: playfab, real-time analytics, PlayStream, live operations, player beha
 ms.localizationpriority: medium
 ---
 
-## LiveOps Tutorials
+# LiveOps Tutorials
 
 Here are the tutorials for LiveOps.

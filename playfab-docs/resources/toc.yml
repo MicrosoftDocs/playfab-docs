@@ -1,0 +1,6 @@
+- name: PlayFab
+  href: /gaming/playfab/
+  expanded: true
+  items:
+  - name: Samples
+    href: samples.md

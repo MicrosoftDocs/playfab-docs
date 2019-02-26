@@ -160,6 +160,7 @@ featureFlags:
                                     </div>
                                 </a>
                             </li>
+                            <!-- Temporarily remove event archive card for now
                             <li>
                                 <a href="/gaming/playfab/resources/event-archive">
                                     <div class="cardSize">
@@ -172,15 +173,16 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Resource: Event Archive</h3>
-                                                    <p>Get access to your data, debug your game, and more. Here you can see in real-time what is going on in your game, giving you ultimate power and insight into player behaviour.</p>
+                                                    <p>Get access to your data, debug your game, and more. Here you can see in real-time what is going on in your game, giving you ultimate power and insight into player behavior.</p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </a>
                             </li>
+                            -->
                             <li>
-                                <a href="/gaming/playfab/resources/recipes">
+                                <a href="/gaming/playfab/resources/samples">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -190,8 +192,8 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Resource: Recipes</h3>
-                                                    <p>PlayFab can be used in many ways. Everything from simple retention mechanics like Daily Prize wheels to complex commerce. Here you will find some useful recipies for using features in PlayFab.</p>
+                                                    <h3>Resource: Samples</h3>
+                                                    <p>PlayFab can be used in many ways. Everything from simple retention mechanics like Daily Prize wheels to complex commerce. Here you will find a list of available sample code for using features in PlayFab.</p>
                                                 </div>
                                             </div>
                                         </div>

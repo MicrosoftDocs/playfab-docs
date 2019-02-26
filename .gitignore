@@ -4,9 +4,8 @@ _site/
 .optemp/
 _themes*/
 _repo.*/
+.vscode/
 
 .openpublishing.buildcore.ps1
-playfab-docs/features/multiplayer/servers/media/tutorials/game-manager-settings-api-features-allow-client-to-start-games.png
-playfab-docs/features/multiplayer/servers/media/tutorials/game-manager-settings-api-features-allow-client-to-start-games.png
 playfab-docs/features/multiplayer/servers/media/tutorials/game-manager-settings-api-features-allow-client-to-start-games.png
 playfab-docs/features/multiplayer/servers/allocating-game-servers-and-configuring-vs-debugging-tools.md

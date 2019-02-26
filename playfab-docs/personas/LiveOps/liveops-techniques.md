@@ -10,11 +10,12 @@ keywords: playfab, real-time analytics, PlayStream, live operations, player beha
 ms.localizationpriority: medium
 ---
 
-## LiveOps Techniques
+# LiveOps Techniques
 
 In the previous section we went through a high-level overview of why LiveOps is a key success driver for today’s top games. Now, we’re going to get into the details of the disciplines that make up the LiveOps toolkit, with examples from folks in the trenches and their best practices.
 
 Topics include:
+
 - Analytics and segmentation
 - Launching with a LiveOps team
 - Running live events
@@ -103,6 +104,7 @@ Once you have defined the segments you care about, you will want to be able to t
 ---Dimitar Draganov, Senior Product Manager, flaregames
 
 Segmentation best practices
+
 - Make a list of the segments you care about in your game, starting with your key funnels, such as your monetization funnel.
 - Ensure that your analytics tools let you view your KPIs by segment, so you can compare performance across your segments. You may also want to view your A/B test results by segment as well.
 - Design your backend tools so you can treat players in each segment differently. The most common areas for differentiation include messaging, stores, game configuration, offers and promotions, limited content, and events.

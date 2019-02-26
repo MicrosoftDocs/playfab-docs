@@ -10,7 +10,7 @@ keywords: playfab, real-time analytics, PlayStream, live operations, player beha
 ms.localizationpriority: medium
 ---
 
-## The PlayFab Definitive Guide to LiveOps
+# The PlayFab Definitive Guide to LiveOps
 
 At PlayFab, we believe that LiveOps techniques are the single most important reason why great games connect with players and grow into communities that remain healthy for years
 

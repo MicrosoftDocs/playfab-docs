@@ -10,7 +10,7 @@ keywords: playfab, social, friends lists
 ms.localizationpriority: medium
 ---
 
-## Friends Leaderboards
+# Friends Leaderboards
 
 Friends-specific **APIs** mirror the standard [GetLeaderboard](xref:titleid.playfabapi.com.client.playerdatamanagement.getleaderboard) and [GetLeaderboardAroundPlayer](xref:titleid.playfabapi.com.client.playerdatamanagement.getleaderboardaroundplayer) **API** calls, but restrict the player pool to the player's friends list. For more information, refer to our tutorials about [Tournaments and Leaderboards](../tournaments-leaderboards/tutorials.md).
 

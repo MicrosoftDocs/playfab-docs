@@ -1,5 +1,5 @@
 - name: API References
   href: index.md
   items:
-  - name: PlayStream Event Reference
+  - name: PlayStream Event reference
     href: events/index.md
