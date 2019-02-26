@@ -8,6 +8,6 @@ PlayFab has partnered with Xbox Live to allow game studios leveraging the Xbox L
 2.	Use PlayFab Matchmaking to match players.
 3.	Use PlayFab Parties to connect players for device-to-device networking or chat.
 
-If you are building a cross-network game, you will need to use the equivalent social APIs from Steam, PlayStation, etc. for those platforms. However you can use the same Matchmaking and Party technologies on all platforms. Usage associated with Xbox Live logged-in players will be zero-rated (see [LoginWithXbox()](https://api.playfab.com/documentation/client/method/LoginWithXbox))
+If you are building a cross-network game, you will need to use the equivalent social APIs from Steam, PlayStation, etc. for those platforms. However you can use the same matchmaking, networking, and chat technologies on all platforms. Usage associated with Xbox Live logged-in players will be zero-rated (see [LoginWithXbox()](https://api.playfab.com/documentation/client/method/LoginWithXbox))
 
 Xbox Live does not recommend new titles use Xbox Live SmartMatch, Game Chat 2, or Xbox Integrated Multiplayer (XIM). These products receive limited support, discourage cross-network play, and may be deprecated in the future.
