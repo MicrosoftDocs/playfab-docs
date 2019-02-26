@@ -182,7 +182,7 @@ featureFlags:
                             </li>
                             -->
                             <li>
-                                <a href="/gaming/playfab/resources/samples">
+                                <a href="/gaming/playfab/resources/recipes-and-samples">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -192,7 +192,7 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Resource: Samples</h3>
+                                                    <h3>Resource: Recipes and samples</h3>
                                                     <p>PlayFab can be used in many ways. Everything from simple retention mechanics like Daily Prize wheels to complex commerce. Here you will find a list of available sample code for using features in PlayFab.</p>
                                                 </div>
                                             </div>
