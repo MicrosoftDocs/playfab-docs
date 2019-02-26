@@ -16,6 +16,7 @@ We believe that a successful **LiveOps** strategy is the single, most important 
 
 This document will introduce you to the **LiveOps** capabilities of PlayFab, and help you discover more resources for **LiveOps** design and implementation.
 
+Before continuing, make sure you have completed [Getting started for developers](../../personas/developer.md) which ensures you have a PlayFab account and are familiar with the PlayFab Game Manager.
 
 ## Exploring LiveOps
 
