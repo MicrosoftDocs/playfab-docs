@@ -12,15 +12,17 @@ ms.localizationpriority: medium
 
 # Archived Release Notes- PlayFab multiplayer servers (Thunderhead)
 
-## October 12, 2018- Update to managed containers
+## October 12, 2018- Updates to managed containers
 
 We are updating the virtual machine and container configuration to use **Windows Server 2016** (**1803**). Please see [PlayFab Multiplayer Server 2.0 - Managed Container Update](thunderhead-managed-container-update.md) to learn more.
 
-## August 26, 2018- Private Preview Release Notes
+## August 26, 2018- Private preview release notes
 
-### PowerShell
+## PowerShell
 
-**Get-PFMultiplayerBuild** now uses the **ListBuilds API** to return a list of build summaries. This makes the **cmdlet** faster but returns less information by default. Detailed information is still available via **Get-PFMultiplayerBuild**, simply use the new **-Default** parameter:
+**Get-PFMultiplayerBuild** now uses the **ListBuilds API** to return a list of build summaries. This makes the **cmdlet** faster, but returns less information by default.
+
+Detailed information is still available via **Get-PFMultiplayerBuild**, simply use the new **-Default** parameter, as shown below.
 
 `Get-PFMultiplayerBuild -Detailed`
 
@@ -28,12 +30,12 @@ We are updating the virtual machine and container configuration to use **Windows
 
 This will use the **GetBuilds API** to obtain the detailed configuration for your builds.
 
-### API changes
+## API changes
 
-ListBuilds:
+### ListBuilds
 
 - **ListBuilds** -> renamed **ListBuildSummaries**
- 
+
 ### Property name changes
 
 **CreateBuildWithManagedContainerRequest/CreateBuildWithManagedContainerResponse**:
@@ -41,39 +43,39 @@ ListBuilds:
 - **StartGameCommand** -> renamed  **StartMultiplayerServerCommand**
 - **RegionConfiguration** is now **RegionConfigurations** (plural) for consistency throughout **APIs** request/responses.
 
-**GetBuilds**:
+### GetBuilds
 
 - Response now contains both **ContainerRunCommand** and **StartMultiplayerServerCommand**.
 - **StartMultiplayerServerCommand** is for Managed builds, and **ContainerRunCommand** is for Custom builds.
 - **GetBuildResponse** will return *both*, but will return null appropriately (i.e. **StartMultiplayerCommand** will be null for Custom builds and **ContainerRunCommand** will be null for Managed` builds).
 
-### Response changes
+## Response changes
 
-**CreateBuildResponse**:
+### CreateBuildResponse
 
 - Renamed **CreateBuildWithManagedContainerResponse** and **CreateBuildWithCustomContainerResponse**.
 
 This separation was necessary to conform to our other **APIs**, as well as ensure that we differentiate between both, and are able to filter/add extra information for the different flavors of builds.
 
-**BuildSummary**:
+### BuildSummary
 
 - This has been eliminated from **GetBuild**, **CreateBuildWithManagedContainerResponse**, and **CreatedBuildWithCustomContainerResponse**.
 - All information will be at the *top level response objects* (**CreateBuildWithManagedContainerResponse**, **CreateBuildWithCustomContainerResponse**, **GetBuildResponse**).
 
 - Additionally, **BuildSummary** has been changed, is only used in **ListBuildSummaries**, and will output as a list of ID and Name. The usage has changed in that developers will have to call **GetBuild** passing in a **BuildId** to get extra information. This is an optimization necessary on our end.
 
-### Enum changes
+## Enum changes
 
 **ContainerFlavor** has had these two enum values:
 
 - **ManagedWindowsServerCore**
 - **CustomLinux**
 
-### August 6, 2018- Private preview release notes
+## August 6, 2018- Private preview release notes
 
 **APIs** and **PowerShell** have been renamed. This is one of the last breaking changes we are making to the **API** before removing the "beta" label.
 
-*API renames:*
+### API renames
 
 - GetComputeStatus        -> GetTitleEnabledForMultiplayerServersStatus
 - AllocateSessionHost     -> RequestMultiplayerServer
@@ -81,14 +83,14 @@ This separation was necessary to conform to our other **APIs**, as well as ensur
 - GetSessionHostDetails   -> GetMultiplayerServerDetails
 - ShutdownSessionHost     -> ShutdownMultiplayerServer
 - ListSessionHosts        -> ListMultiplayerServers
- 
-*Parameter renames:*
+
+### Parameter renames
 
 - SessionHostId           -> ServerId
 - SessionHostCountPerVm   -> MultiplayerServerCountPerVm
 - SessionHostSummary      -> MultiplayerServerSummary
 
-*PowerShell renames:*
+### PowerShell renames
 
 - Get-PFQosServer         -> Get-PFMultiplayerQosServer
 - Get-PFGameAsset         -> Get-PFMultiplayerAsset
@@ -98,7 +100,7 @@ This separation was necessary to conform to our other **APIs**, as well as ensur
 - Get-PFGameBuild         -> Get-PFMultiplayerBuild
 - New-PFGameBuild         -> New-PFMultiplayerBuild
 - Remove-PFGameBuild      -> Remove-PFMultiplayerBuild
-- Get-PFGameSessionHost   -> Get-PFMultiplayerServer 
+- Get-PFGameSessionHost   -> Get-PFMultiplayerServer
 - New-PFGameSessionHost   -> New-PFMultiplayerServer
 
 ### Changes (PowerShell Module v0.884)

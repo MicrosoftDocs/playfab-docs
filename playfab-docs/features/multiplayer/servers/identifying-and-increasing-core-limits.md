@@ -21,14 +21,14 @@ By default, indie, pro, and enterprise customers have limits set to **16 Av2 cor
 
 Contact [PlayFab Support](mailto:support@playfab.com) to gain access to additional compute series, regions, or limit increases.
 
-It is important to review title limits well in advance of any major game event so you can be assured that PlayFab will support peak player demand.
+It is important to review title limits well in advance of any major game event, so you can be assured that PlayFab will support peak player demand.
 
 > [!NOTE]
 > For requests of *1,000 cores or more*, it can take several days for PlayFab to secure the desired limit increases for you.
 
 ## How to view and interpret multiplayer server limits
 
-PlayFab measures your quota in **cores.**:
+PlayFab measures your quota in **cores**:
 
 - **6 F2_v2 virtual machine** consumes **12 Fv2 cores**.
 - **3 F4_v2 virtual machines** also consumes **12 cores**.

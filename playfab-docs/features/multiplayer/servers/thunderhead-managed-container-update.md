@@ -12,16 +12,16 @@ ms.localizationpriority: medium
 
 # PlayFab Multiplayer Server 2.0 - Managed container update
 
-In October 2018, we updated the virtual machine and container configuration of PlayFab **Multiplayer server 2.0** (**Thunderhead**) to use **Windows** Server 2016** (**1803**).
+In October 2018, we updated the virtual machine and container configuration of PlayFab **Multiplayer server 2.0** (**Thunderhead**) to use **Windows Server 2016** (**1803**).
 
 ## October 2018 changes to managed containers
 
-As of October 11, 2018, **Thunderhead** preview customers who use managed, **Windows** containers have their uploaded assets layered on a special PlayFab container image. This image is based on the **Windows 10** client operating system, and those containers are hosted on **Windows Server 2016**.
+As of October 11, 2018, **Thunderhead** preview customers who use managed, **Windows** containers have had their uploaded assets layered on a special PlayFab container image. This image is based on the **Windows 10** client operating system, and those containers are hosted on **Windows Server 2016**.
 
-Over the next two weeks we will transition customers to a more reliable and performant configuration:
+Over the following two weeks customers were transitioned to a more reliable and better performing configuration:
 
-- Managed containers will use an official **Windows Server 2016** (**1803**) container image as their basis. This can be downloaded at [Docker Hub](https://hub.docker.com/r/microsoft/windowsservercore/).
-- Managed containers will be operated on **Windows Server 2016** (**1803**) virtual machines, using the *Server Core* **SKU**. The key implication is that now when you remote desktop into your deployed virtual machines, you will only have **PowerShell** and command-prompt available in the graphical user experience. There will be no "Start menu". This stream-lined configuration provides more CPU and memory resources to your game servers and reduces performance variation.
+- Managed containers are using an official **Windows Server 2016** (**1803**) container image as their basis. This can be downloaded at [Docker Hub](https://hub.docker.com/r/microsoft/windowsservercore/).
+- Managed containers are operated on **Windows Server 2016** (**1803**) virtual machines, using the *Server Core* **SKU**. The key implication is that now when you remote desktop into your deployed virtual machines, you only have **PowerShell** and command-prompt available in the graphical user experience. There is no "Start menu". This stream-lined configuration provides more CPU and memory resources to your game servers and reduces performance variation.
 
 This change is not expected to break game server functionality. However we will roll it out gradually to reduce risk:
 
