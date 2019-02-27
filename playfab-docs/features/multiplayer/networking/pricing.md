@@ -31,7 +31,7 @@ A basic allocation of multiplayer Party time capacity is included with every pai
 There are three key meters used to bill additional Parties utilization:
 
 - **Party Connectivity.** This is measured in player minutes connected to a network. Metering starts when a player creates a network or joins a network, and it stops when they have disconnected.
-- **Party Voice.** This is measured in player minutes speaking. When a player is connected to a network and voice chat has been enabled, player voice chat is measured in seconds and metered.
+- **Party Voice.** This is measured in player minutes speaking. When a player is connected to a network and is actively speaking, that  player voice activity is measured in seconds and metered. 
 - **Network egress.** This meters data *sent* from PlayFab's relay and voice servers. This is congruent to the aggregate amount of data that players *receive* from the network.
 
 ## Party Connectivity   
