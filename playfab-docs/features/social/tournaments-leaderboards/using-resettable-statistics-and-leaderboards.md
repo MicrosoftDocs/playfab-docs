@@ -24,7 +24,7 @@ First, it’s important to note that all statistics defined for a player in a ga
 
 Statistics may not necessarily be visible to players, but they are there. You can use them to get lists of players by a score you define - whether to find the top of all scores, the bottom, those centered around the current player - or those on a user’s friend list.
 
-Many statistics in games are intended to be “lifetime” values - meaning that players continually update their scores, with old ones remaining until each player beats his own personal best. However, for some player experiences, it’s important to be able to “wipe” the leaderboard from time to time.
+Many statistics in games are intended to be “lifetime” values - meaning that players continually update their scores, with old ones remaining until each player beats his own personal best. However, for some player experiences, it’s important to be able to “wipe” the leaderboard from time to time. 
 
 This can be used to encourage a user to try to be the top ranked player for a given period, or to simply remove any players from the rankings who haven’t been active in a while.
 
@@ -64,7 +64,7 @@ public void CreatePlayerStatisticDefinition() {
         new CreatePlayerStatisticDefinitionRequest() {
             StatisticName = "Headshots",
             VersionChangeInterval = StatisticResetIntervalOption.Day
-        },
+        }, 
         result => Debug.Log("Complete"),
         error => Debug.Log(error.GenerateErrorReport())
     );
@@ -97,7 +97,7 @@ public void UpdatePlayerStatisticDefinition() {
         new UpdatePlayerStatisticDefinitionRequest() {
             StatisticName = "Headshots",
             VersionChangeInterval = StatisticResetIntervalOption.Week
-        },
+        }, 
         result => Debug.Log("Complete"),
         error => Debug.Log(error.GenerateErrorReport())
     );
@@ -149,7 +149,7 @@ Using the example above, if the title also had a statistics named **FlagsCapture
 ```csharp
 public void GetPlayerStatisticDefinitions() {
     PlayFabAdminAPI.GetPlayerStatisticDefinitions(
-        new GetPlayerStatisticDefinitionsRequest(),
+        new GetPlayerStatisticDefinitionsRequest(), 
         result => Debug.Log("Complete"),
         error => Debug.Log(error.GenerateErrorReport())
     );
@@ -200,7 +200,7 @@ public void IncrementPlayerStatisticVersion() {
     PlayFabAdminAPI.IncrementPlayerStatisticVersion(
         new IncrementPlayerStatisticVersionRequest() {
             StatisticName = "Headshots"
-        },
+        }, 
         result => Debug.Log("Complete"),
         error => Debug.Log(error.GenerateErrorReport())
     );
@@ -255,7 +255,7 @@ public void GetPlayerStatisticVersions() {
     PlayFabAdminAPI.GetPlayerStatisticVersions(
         new GetPlayerStatisticVersionsRequest() {
             StatisticName = "Headshots"
-        },
+        }, 
         result => Debug.Log("Complete"),
         error => Debug.Log(error.GenerateErrorReport())
     );
@@ -324,7 +324,7 @@ public void GetPlayerStatistics() {
         new GetPlayerStatisticsRequest() {
             PlayFabId= "_PlayFabId_",
             StatisticNames = new List<string>() { "Headshots" }
-        },
+        }, 
         result => Debug.Log("Complete"),
         error => Debug.Log(error.GenerateErrorReport())
     );
@@ -357,7 +357,7 @@ public void GetPlayerStatistics() {
     PlayFabClientAPI.GetPlayerStatistics(
         new GetPlayerStatisticsRequest() {
             StatisticNames = new List<string>() { "Headshots" }
-        },
+        }, 
         result => Debug.Log("Complete"),
         error => Debug.Log(error.GenerateErrorReport())
     );
@@ -400,7 +400,7 @@ public void UpdatePlayerStatistics() {
                     Value = 10
                 }
             }
-        },
+        }, 
         result => Debug.Log("Complete"),
         error => Debug.Log(error.GenerateErrorReport())
     );
@@ -430,7 +430,7 @@ public void UpdatePlayerStatistics() {
                     Value = 10
                 }
             }
-        },
+        }, 
         result => Debug.Log("Complete"),
         error => Debug.Log(error.GenerateErrorReport())
     );
@@ -466,7 +466,7 @@ But remember - while the expired version can be written to for up to 10 minutes,
 
 For completeness, this section provides a list of all the enums, classes, and **API** methods described above, with brief descriptions.
 
-### Base enums
+**Base enums**
 
 - **Interval** - period at which rate the statistic (leaderboard) will be reset:
   - **Never**
@@ -482,7 +482,7 @@ For completeness, this section provides a list of all the enums, classes, and **
   - **Failed**
   - **Complete**
 
-### Base classes and their members
+**Base classes and their members**
 
 - **PlayerStatisticDefinition**
   - **StatisticName** (string) - The unique name of the statistic.
@@ -507,7 +507,7 @@ For completeness, this section provides a list of all the enums, classes, and **
   - **Version** (string) - For updates to a statistic value for a player, the version of the statistic to be updated
   - Value (Int32) - The statistic value for the player.
 
-### Admin API methods
+**Admin API methods**
 
 - **CreatePlayerStatisticDefinition**
   - **CreatePlayerStatisticDefinitionRequest**
@@ -544,7 +544,7 @@ For completeness, this section provides a list of all the enums, classes, and **
   - **IncrementPlayerStatisticVersionResult**
     - **StatisticVersion** (**PlayerStatisticVersion**) - The statistic version which was expired as a result of this operation (and its archival status).
 
-### Client API methods
+**Client API methods**
 
 - **GetPlayerStatistics**
   - **GetPlayerStatisticsRequest**
@@ -559,7 +559,7 @@ For completeness, this section provides a list of all the enums, classes, and **
 
   - **UpdatePlayerStatisticsResult** (no parameters).
 
-### Server API methods
+**Server API methods**
 
 - **GetPlayerStatistics**
   - **GetPlayerStatisticsRequest**

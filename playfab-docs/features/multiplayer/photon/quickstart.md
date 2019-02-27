@@ -37,7 +37,7 @@ In the example shown below:
 
 - Select **Realtime Application** type **(1)**.
 - Choose a **Name (2)**.
-- Create a **Description (3)**.
+- Create a **Description (3)**. 
 - Submit by selecting **Create (4)**.
 
 ![New application form](media/tutorials/photon-new-app-form.png)  
@@ -65,7 +65,6 @@ The format is shown below.
 ```html
 https://{PlayFabTitleId}.playfabapi.com/photon/authenticate
 ```
-
 Replace the **Title Id** place holder with your own **Title Id**.
 
 ```html
@@ -79,7 +78,6 @@ Enter the **URL (1)** and submit by selecting the **Create** button **(2)**.
 ## Setting up a PlayFab title for Photon
 
 Navigate to your title's **Game Manager** page, then:
-
 - Navigate to **Add-ons** tab **(1)**.
 - In the list of **Add-ons**, find and select **Photon (2)**, as shown in the example provided below.
 
@@ -89,7 +87,7 @@ The **Photon Add-on** page will allow you to install **Photon** by specifying yo
 
 - Optionally, you may specify **Chat App ID**.
 - Once you install the **Add-on (3)**, a **Photon secret Key** will be generated **(2)**.
-- Save it for future use when configuring web-hooks.
+- Save it for future use when configuring web-hooks. 
 
 > [!NOTE]
 > Remember to save your Photon secret key in a safe and easily accessible place. It will come in handy when configuring Webhooks.
@@ -155,7 +153,7 @@ If **AppId** was accepted, the **Photon Server Settings** object will be selecte
 - Select **Window**.
 - Then select **Photon Unity Networking (1)**.
 - Finally select **Highlight Server Settings (2)**.
-- The **Standard Unity** project window will reveal the **PhotonServerSettings (3)** object.
+- The **Standard Unity** project window will reveal the **PhotonServerSettings (3)** object. 
 - Select the object to reveal its settings in the **Unity Inspector** window.
 
 ![Photon server settings](media/tutorials/photon-server-settings.png)  
@@ -220,10 +218,10 @@ public class PlayFabAuthenticator : MonoBehaviour {
     * This is a crucial step, because Photon uses different authentication tokens
     * than PlayFab. Thus, you cannot directly use PlayFab SessionTicket and
     * you need to explicitly request a token. This API call requires you to
-    * pass Photon App ID. App ID may be hard coded, but, in this example,
+    * pass Photon App ID. App ID may be hardcoded, but, in this example,
     * We are accessing it using convenient static field on PhotonNetwork class
     * We pass in AuthenticateWithPhoton as a callback to be our next step, if
-    * we have acquired token successfully
+    * we have acquired token succesfully
     */
     private void RequestPhotonToken(LoginResult obj) {
         LogMessage("PlayFab authenticated. Requesting photon token...");
@@ -326,6 +324,7 @@ handlers.RoomCreated = function (args) {
 
 > [!NOTE]
 > You may acquire additional data about the event using the "args" argument. The example of args payload is given below.
+
 
 ```javascript
 {
@@ -543,7 +542,7 @@ When changing custom Room properties using the **Unity** Photon client, *it is i
 // Properties updates ( this hashtable contains the properties to be changed. Properties not mentioned here will stay as is
 var properties = new ExitGames.Client.Photon.Hashtable() { { "CustomProperty" , "It's Value" } };
 
-// Control set. Empty in this case, because our property has not existed before.
+// Control set. Empty in this case, because our property has not existed before. 
 // Otherwise you would include previous value of the property.
 var expectedProperties = new ExitGames.Client.Photon.Hashtable();
 
@@ -728,11 +727,11 @@ public class PlayFabAuthenticator : MonoBehaviour {
 
     /*
      * Step 1
-     * We authenticate current PlayFab user normally.
+     * We authenticate current PlayFab user normally. 
      * In this case we use LoginWithCustomID API call for simplicity.
      * You can absolutely use any Login method you want.
      * We use PlayFabSettings.DeviceUniqueIdentifier as our custom ID.
-     * We pass RequestPhotonToken as a callback to be our next step, if
+     * We pass RequestPhotonToken as a callback to be our next step, if 
      * authentication was successful.
      */
     private void AuthenticateWithPlayFab()  {
@@ -750,11 +749,11 @@ public class PlayFabAuthenticator : MonoBehaviour {
     * We request Photon authentication token from PlayFab.
     * This is a crucial step, because Photon uses different authentication tokens
     * than PlayFab. Thus, you cannot directly use PlayFab SessionTicket and
-    * you need to explicitly request a token. This API call requires you to
-    * pass Photon App ID. App ID may be hard coded, but, in this example,
+    * you need to explicitely request a token. This API call requires you to 
+    * pass Photon App ID. App ID may be hardcoded, but, in this example,
     * We are accessing it using convenient static field on PhotonNetwork class
-    * We pass in AuthenticateWithPhoton as a callback to be our next step, if
-    * we have acquired token successfully
+    * We pass in AuthenticateWithPhoton as a callback to be our next step, if 
+    * we have acquired token succesfully
     */
     private void RequestPhotonToken(LoginResult obj) {
         LogMessage("PlayFab authenticated. Requesting photon token...");
@@ -798,9 +797,9 @@ public class PlayFabAuthenticator : MonoBehaviour {
     }
 
 
-    // Add small button to launch our example code
+    // Add small button to launch our example code 
     public void OnGUI() {
-        if (GUILayout.Button("Execute Example ")) ExecuteExample();
+        if (GUILayout.Button("Execute Example ")) ExecuteExample(); 
     }
 
 

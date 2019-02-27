@@ -21,11 +21,11 @@ The first step is to call the **OpenTrade API** to make a trade available to ano
 **myItemInstanceId**: This is the unique string that identifies an item instance owned by the current player (**InstanceID**).
 
 ```csharp
-void GiveItemTo(string secondPlayerId, string myItemInstanceId) {
-    PlayFabClientAPI.OpenTrade(new OpenTradeRequest {
-        AllowedPlayerIds = new List<string> { secondPlayerId }, // PlayFab ID for the friend who will receive your gift
-        OfferedInventoryInstanceIds = new List<string> { myItemInstanceId } // The item instanceId fetched from GetUserInventory()
-    }, LogSuccess, LogFailure);
+void GiveItemTo(string secondPlayerId, string myItemInstanceId) { 
+    PlayFabClientAPI.OpenTrade(new OpenTradeRequest { 
+        AllowedPlayerIds = new List<string> { secondPlayerId }, // PlayFab ID for the friend who will recieve your gift 
+        OfferedInventoryInstanceIds = new List<string> { myItemInstanceId } // The item instanceId fetched from GetUserInventory() 
+    }, LogSuccess, LogFailure); 
 }
 ```
 
@@ -43,21 +43,21 @@ Once the first player has created the trade, and transferred their **PlayFabId**
 > The most relevant **TradeStatus** values are **Open**, **Filled**, and **Canceled**. All other states are intermediate states. Trades may stay in those intermediate states for a noticeable period of time between calls. A recently-modified trade may not be available immediately.
 
 ```csharp
-void ExamineTrade(string firstPlayFabId, string tradeId) {
-    PlayFabClientAPI.GetTradeStatus(new GetTradeStatusRequest {
-        OfferingPlayerId = firstPlayFabId,
-        TradeId = tradeId
-    }, LogSuccess, LogFailure);
+void ExamineTrade(string firstPlayFabId, string tradeId) { 
+    PlayFabClientAPI.GetTradeStatus(new GetTradeStatusRequest { 
+        OfferingPlayerId = firstPlayFabId, 
+        TradeId = tradeId 
+    }, LogSuccess, LogFailure); 
 }
 
-If the requirements of that trade are acceptable, the gift can be accepted using AcceptTrade
-C# snip
-void AcceptGiftFrom(string firstPlayFabId, string tradeId) {
-    PlayFabClientAPI.AcceptTrade(new AcceptTradeRequest {
-        OfferingPlayerId = firstPlayFabId,
-        TradeId = tradeId
-    }, LogSuccess, LogFailure);
-}
+If the requirements of that trade are acceptable, the gift can be accepted using AcceptTrade 
+C# snip 
+void AcceptGiftFrom(string firstPlayFabId, string tradeId) { 
+    PlayFabClientAPI.AcceptTrade(new AcceptTradeRequest { 
+        OfferingPlayerId = firstPlayFabId, 
+        TradeId = tradeId 
+    }, LogSuccess, LogFailure); 
+} 
 ```
 
 Once complete, the **AcceptGiftFrom** function above will transfer the gifted items from the first player's inventory to the second.
