@@ -12,6 +12,8 @@ ms.localizationpriority: medium
 
 # entity_files_set
 
+This event is triggered when files are attached to an entity.
+
 ## Properties
 
 |Name|Type|Description|

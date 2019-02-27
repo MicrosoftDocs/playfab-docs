@@ -12,6 +12,8 @@ ms.localizationpriority: medium
 
 # entity_created
 
+This event is triggered when an entity is created.
+
 ## Properties
 
 |Name|Type|Description|

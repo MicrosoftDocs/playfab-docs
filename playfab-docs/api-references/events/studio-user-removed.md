@@ -12,6 +12,8 @@ ms.localizationpriority: medium
 
 # studio_user_removed
 
+This event is triggered when a user is removed from a studio.
+
 ## Properties
 
 |Name|Type|Description|

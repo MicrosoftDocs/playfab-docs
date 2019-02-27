@@ -12,6 +12,8 @@ ms.localizationpriority: medium
 
 # group_role_members_removed
 
+This event is triggered when a list of entities are removed from a role within a group.
+
 ## Properties
 
 |Name|Type|Description|

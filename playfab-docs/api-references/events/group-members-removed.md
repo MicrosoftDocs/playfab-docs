@@ -12,6 +12,8 @@ ms.localizationpriority: medium
 
 # group_members_removed
 
+This event is triggered when a member is removed from an entity group
+
 ## Properties
 
 |Name|Type|Description|

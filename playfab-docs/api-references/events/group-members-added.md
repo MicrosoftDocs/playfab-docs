@@ -12,6 +12,8 @@ ms.localizationpriority: medium
 
 # group_members_added
 
+This event is triggered when a member is added to an entity group. 
+
 ## Properties
 
 |Name|Type|Description|
@@ -19,7 +21,7 @@ ms.localizationpriority: medium
 |EntityChain|String|The chain of ownership for this entity.|
 |EntityLineage|[EntityLineage](data-types/entitylineage.md)|Entities that this entity is a child of.|
 |GroupName|String|The name of the group to which this event applies.|
-|Members|[Member](data-types/member.md)|The list of entities that were added to the group and role to which this event applies|
+|Members|[Member](data-types/member.md)|The list of entities that were added to the group and role to which this event applies.|
 |RoleId|String|The role ID of the role to which this event applies.|
 |RoleName|String|The display name of the role to which this event applies.|
 

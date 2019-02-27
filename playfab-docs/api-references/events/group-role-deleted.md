@@ -12,6 +12,8 @@ ms.localizationpriority: medium
 
 # group_role_deleted
 
+This event is triggered when a role is deleted from a group.
+
 ## Properties
 
 |Name|Type|Description|
