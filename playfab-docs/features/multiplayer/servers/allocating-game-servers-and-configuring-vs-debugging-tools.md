@@ -65,7 +65,7 @@ The following procedure should *only* be applied to server builds that are for d
 1. Get the **VS2017 Remote Debugging** tools:
 
 ```cmd
-Invoke-WebRequest -OutFile rtools_setup_x64.exe -Uri 
+Invoke-WebRequest -OutFile rtools_setup_x64.exe -Uri
 https://aka.ms/vs/15/release/RemoteTools.amd64ret.enu.exe
 ```
 

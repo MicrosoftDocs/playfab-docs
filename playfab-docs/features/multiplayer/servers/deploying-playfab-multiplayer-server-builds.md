@@ -108,6 +108,6 @@ New-PFMultiplayerBuild -BuildName "PowerShellTest902" -AssetFileName "winrunnera
 
 
 ##View servers for a build
-Get-PFMultiplayerServer -BuildName "PowerShellTest" 
+Get-PFMultiplayerServer -BuildName "PowerShellTest"
 
 ```

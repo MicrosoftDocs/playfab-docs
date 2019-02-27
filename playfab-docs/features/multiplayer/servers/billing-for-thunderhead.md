@@ -93,7 +93,7 @@ In this example we are packing 3 servers on a **2-core D2_v3** virtual machine:
 |D2_v3 |Virtual machine size|
 
 ```console
-300,000 Server Minutes       1 D2_v3 VM        100,000 D2_v3 VM Minutes 
+300,000 Server Minutes       1 D2_v3 VM        100,000 D2_v3 VM Minutes
 ----------------------- x    ------------ =    ------------------------
          Month                3 Servers                Month
 ```

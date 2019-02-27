@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 The **PlayFab Multiplayer Server** hosting service allows you to operate a dynamically scaling pool of custom game servers in **Azure**.
 
-This service is currently available as a private preview to a limited set of customers. 
+This service is currently available as a private preview to a limited set of customers.
 
 If you are an existing **PlayFab Pro** or **Enterprise** customer, and interested in early access to this feature set, please reach out to us through our community Slack channel, your Account Manager or email us at [playcompute@microsoft.com](mailto:playcompute@microsoft.com).
 
@@ -78,7 +78,7 @@ This will use the **GetBuilds API** to obtain the detailed configuration for you
   - **StartMultiplayerServerCommand** is for **Managed** builds.
   - **ContainerRunCommand** is for **Custom** builds.
 
- - **GetBuildResponse** will return both, but will return **null** appropriately (i.e. **StartMultiplayerCommand** will be **null** for Custom Builds, and **ContainerRunCommand** will be **null** for Managed Builds).
+  - **GetBuildResponse** will return both, but will return **null** appropriately (i.e. **StartMultiplayerCommand** will be **null** for Custom Builds, and **ContainerRunCommand** will be **null** for Managed Builds).
 
 ## Response changes
 

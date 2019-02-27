@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 ## Self-management of custom game servers
 
-While the PlayFab service has always offered the ability to have custom game servers, which are operated and managed by our team on behalf of game titles, the process of uploading and configuring server builds has been largely manual up to now. 
+While the PlayFab service has always offered the ability to have custom game servers, which are operated and managed by our team on behalf of game titles, the process of uploading and configuring server builds has been largely manual up to now.
 
 This update provides developers with the ability to manage builds *directly*, making the process of testing game servers simple and convenient.
 
@@ -90,7 +90,7 @@ It is *also important* to make certain that your server build exits once the las
 1. First, the game server hosting service in PlayFab does not terminate game server instances explicitly.
 2. Second, the log file(s), as well as any other output files specified, are collected in **S3** by our game server hosting service only when the instance ends.
 
-Once ready, the complete zip file can then be uploaded in the PlayFab Game Manager in the **Servers**->**Builds** tab, or uploaded to the URL you get back from a call to [GetServerBuildUploadUrl](xref:titleid.playfabapi.com.admin.customservermanagement.getserverbuilduploadurl). 
+Once ready, the complete zip file can then be uploaded in the PlayFab Game Manager in the **Servers**->**Builds** tab, or uploaded to the URL you get back from a call to [GetServerBuildUploadUrl](xref:titleid.playfabapi.com.admin.customservermanagement.getserverbuilduploadurl).
 
 > [!NOTE]
 > If you are using the URL to upload the build, the **Content-Type** of the upload should be **application/x-zip-compressed**.
