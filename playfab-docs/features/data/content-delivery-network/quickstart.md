@@ -30,7 +30,7 @@ This, however, can introduce delays into file management actions, like those fou
 
 - **File deletion**: The file will continue to exist for up to 24 hours while the delete command removes it from all edge locations.
 
-## Uploading ssets
+## Uploading assets
 
 Before your users are able to fetch an asset, it must be uploaded to the **CDN**. This can be done in **Game Manager**:
 

@@ -12,6 +12,8 @@ ms.localizationpriority: medium
 
 # entity_language_updated
 
+This event is triggered when the language associated with an entity is changed.
+
 ## Properties
 
 |Name|Type|Description|

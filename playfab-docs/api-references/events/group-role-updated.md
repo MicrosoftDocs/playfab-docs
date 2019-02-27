@@ -1,7 +1,7 @@
 ---
-title: group_role_members_updated
+title: group_role_updated
 author: v-thopra
-description: group_role_members_updated event.
+description: group_role_updated event.
 ms.author: v-thopra
 ms.date: 02/19/2019
 ms.topic: article
@@ -10,7 +10,9 @@ keywords: playfab, playstream events
 ms.localizationpriority: medium
 ---
 
-# group_role_members_updated
+# group_role_updated
+
+This event is triggered when a role is updated within a group.
 
 ## Properties
 

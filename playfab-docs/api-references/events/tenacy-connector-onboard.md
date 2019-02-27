@@ -12,6 +12,8 @@ ms.localizationpriority: medium
 
 # tenacy_connector_onboard
 
+This event is triggered when a tenancy connector is onboarded.
+
 ## Properties
 
 |Name|Type|Description|

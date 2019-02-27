@@ -12,7 +12,9 @@ ms.localizationpriority: medium
 
 # PlayFab multiplayer PowerShell update - December 4, 2018
 
-The PlayFab Multiplayer module (v0.920+) has a slightly different API signature for **New-PFMultiplayerBuild** that has fewer defaults (but allows for greater customization). Usage of the updated **cmdlet** is below, and the [Quickstart for multiplayer servers (API/PowerShell)](quickstart-for-multiplayer-servers-api-powershell.md) has been updated.
+The PlayFab multiplayer module (**v0.920+**) has a slightly different **API** signature for **New-PFMultiplayerBuild**, having fewer defaults (but allowing for greater customization).
+
+Usage of the updated **cmdlet** is below, and the [Quickstart for multiplayer servers (API/PowerShell)](quickstart-for-multiplayer-servers-api-powershell.md) has been updated.
 
 This updated module is implemented in **C#** (as opposed to being a **PowerShell** advanced function). This will facilitate improved reliability and capability of PlayFab **PowerShell** modules.
 

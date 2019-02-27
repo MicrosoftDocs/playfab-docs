@@ -18,8 +18,8 @@ A build region can exist in one of the following states:
 - **Deploying**: A small number of VMs are being provisioned in the region in order to validate the build.
 - **Deployed**: The initial set of VMs have all completed loading the game servers and at least one game server has reported a **StandingBy** status (via the **ReadyForPlayers API** call in [GSDK](integrating-game-servers-with-gsdk.md)).
   > [!NOTE]
-  > Even though a build region may configured for say 50 standBy servers, a build region will be marked as **Deployed** even if only one game server has reported **StandingBy**.  
-- **Deleting**: The region is marked for deletion. All VMs are being deprovisioned.
+  > Even though a build region may configured for say 50 standBy servers, a build region will be marked as **Deployed**, even if only one game server has reported **StandingBy**.  
+- **Deleting**: The region is marked for deletion. All VMs are being de-provisioned.
 
 The transitions between these states are depicted in the following image and are described below:
 
@@ -39,6 +39,6 @@ The transitions between these states are depicted in the following image and are
 
 > [!NOTE]
 >
-> - **Start** and **Deleted** states are internal to the system and are not exposed. 
+> - **Start** and **Deleted** states are internal to the system and are not exposed.
 > - If the number of standby servers for a region is configured to be **0**, the region will remain in the **Initialized** state.
 > - In rare unexpected cases (outages), we might see a transition from **Deploying** to **Unhealthy** for a brief period.

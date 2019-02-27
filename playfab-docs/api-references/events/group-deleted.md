@@ -12,6 +12,8 @@ ms.localizationpriority: medium
 
 # group_deleted
 
+This event is triggered when an entity group is deleted. 
+
 ## Properties
 
 |Name|Type|Description|

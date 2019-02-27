@@ -12,6 +12,8 @@ ms.localizationpriority: medium
 
 # group_created
 
+This event is triggered when an entity group is created.
+
 ## Properties
 
 |Name|Type|Description|

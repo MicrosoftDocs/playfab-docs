@@ -12,6 +12,8 @@ ms.localizationpriority: medium
 
 # entity_logged_in
 
+This event is triggered when an entity has logged in.
+
 ## Properties
 
 |Name|Type|Description|

@@ -77,7 +77,7 @@ An example:
 |100,000 users| Unique users per month
 |4 users| Average users per session
 
-```
+```console
   12 User Minutes          100,000 Users        1 Session                  Session Minutes
 ------------------    × -----------------  ×   ------------   =  300,000  -----------------  
      User⁄Month               Month             4 Users                        Month
@@ -92,7 +92,7 @@ In this example we are packing 3 servers on a **2-core D2_v3** virtual machine:
 | 3 Servers|Servers per virtual machine |
 |D2_v3 |Virtual machine size|
 
-```
+```console
 300,000 Server Minutes       1 D2_v3 VM        100,000 D2_v3 VM Minutes 
 ----------------------- x    ------------ =    ------------------------
          Month                3 Servers                Month
@@ -125,7 +125,7 @@ Network egress can be a substantial expense, especially for large multiplayer se
 | -| - |
 |1  | Megabytes per second transmitted from the server during active play|
 
-```
+```console
 300,000 Session Minutes × 60 Seconds/Minute × 1 MBPS/Session   = 18,000,000 MB
 ```
 

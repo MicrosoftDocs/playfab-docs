@@ -12,6 +12,8 @@ ms.localizationpriority: medium
 
 # group_role_members_added
 
+This event is triggered when a list of entities are added to a role within a group.
+
 ## Properties
 
 |Name|Type|Description|

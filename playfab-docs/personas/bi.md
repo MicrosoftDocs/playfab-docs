@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 Getting to know your players and their behavioral patterns in your game is critical to increasing retention, engagement and monetization.
 
-The goal of this document is to help bring you up to speed on how PlayFab empowers your business intelligence and to quickly dive you into the tool sets that we provide.
+The goal of this document is to help bring you up to speed on how PlayFab empowers your business intelligence, and to quickly dive you into the tool sets that we provide.
 
 In general, you can analyze what players are doing in your game by following their event patterns. In PlayFab, these come from **PlayStream** events.
 

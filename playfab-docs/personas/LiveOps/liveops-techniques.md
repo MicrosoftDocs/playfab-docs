@@ -10,11 +10,12 @@ keywords: playfab, real-time analytics, PlayStream, live operations, player beha
 ms.localizationpriority: medium
 ---
 
-## LiveOps Techniques
+# LiveOps Techniques
 
 In the previous section we went through a high-level overview of why LiveOps is a key success driver for today’s top games. Now, we’re going to get into the details of the disciplines that make up the LiveOps toolkit, with examples from folks in the trenches and their best practices.
 
 Topics include:
+
 - Analytics and segmentation
 - Launching with a LiveOps team
 - Running live events
@@ -103,6 +104,7 @@ Once you have defined the segments you care about, you will want to be able to t
 ---Dimitar Draganov, Senior Product Manager, flaregames
 
 Segmentation best practices
+
 - Make a list of the segments you care about in your game, starting with your key funnels, such as your monetization funnel.
 - Ensure that your analytics tools let you view your KPIs by segment, so you can compare performance across your segments. You may also want to view your A/B test results by segment as well.
 - Design your backend tools so you can treat players in each segment differently. The most common areas for differentiation include messaging, stores, game configuration, offers and promotions, limited content, and events.
@@ -210,7 +212,7 @@ You need to have events frequently enough so that you can change the menu every 
 - Give your LiveOps team as much flexibility as possible when creating new events. You never know what they are going to come up with to keep the game fresh and interesting.
 - Maintain an internal event calendar so your team knows what’s coming up and when. Use the calendar to avoid scheduling too many “big” events on top of each other - pace your events to avoid burning out players.
 - When designing events, consider both the “facts” of the event (e.g., what exactly is changing), and the “fiction” of the event (how you communicate it to the player). The fiction often includes the event name, description, and even graphics.
-- 
+
 ## Multiplayer
 
 Playing with or against other players adds a significant element of fun to your game. The challenge of a real-time battle with a well-matched player can provide a deeper level of engagement than playing in a solely computer-controlled environment. Building a great player-vs-player (PvP) experience requires an ability to serve up the right opponent at the right time, so it’s important to ensure that your matchmaking logic is making the right tradeoffs between skill level and time-to-match, particularly as the number of available players ebbs and flows at different times of day. This may take some iteration.
@@ -340,7 +342,7 @@ This calls for storing as much of your in-game text on the server as possible, w
 
 Oscar-winning screenwriter William Goldman has a great quote about making movies: “Nobody knows anything...not one person in the entire motion picture field knows for a certainty what's going to work. Every time out it's a guess and, if you're lucky, an educated one.” It used to be that making games was similar - you had to guess what your audience would like, spend months or years building to this vision, and then launch and hope for the best, with little room to course-correct if you got things wrong. If you’ve read this far, you know that it doesn’t have to be that way anymore. But how, exactly, do you figure out what is and isn’t working about your game, and adapt it over time to build on the elements of the game that are working and de-emphasize those that aren’t?
 
-## Test early and often 
+## Test early and often
 
 Many games run into a chicken-and-egg problem early in their development cycle: they want to test their biggest assumptions before they have really committed, but don’t have enough players to reach statistical significance. So, they feel stuck. However, while split testing is an important technique, it’s not the only tool in your toolkit. In fact, you can get lots of useful information from “scrappy” testing, and your inherent creativity as a game developer can be a significant asset. For example, you can get valuable data on the appeal of a game’s concept and basic mechanics from running surveys or focus groups very early on, before you even have a real product. You can also test your design concepts before you need
  to put them into your game - for example, by measuring click-through rates on ads you buy that are identical other than showing different art styles. Sebastian Knopp notes that “successful games test everything. Game developers should always consider this before building things, and ask themselves if there is a test they could run to decide whether to build it or not.”
@@ -364,7 +366,7 @@ Another way to gather player feedback is with in-game polls. These are especiall
 - Consider limiting your testing to new players, to avoid confusing existing players.
 - Test more qualitative factors by asking questions to players with in-game polls. 
 
-## Community 
+## Community
 
 A strong community can act as a force multiplier for your game. Dedicated fans can help promote your game, becoming a valuable marketing channel, and generate useful content. For some games, that means actually building out aspects of the game, enriching the experience for many players and helping extend its longevity. For games where that’s less practical, it’s still very possible to benefit from community engagement. Says Bulletproof Arcade’s Andy Wiltshire, “User generated content is not something that’s particularly easy for us to do in Brutes.io as it’s too hard for users to build. In fact, even a profile picture can be challenging because you need to moderate them. But we still get the community involved - for new costumes in the game, we’ll do a poll and encourage people to vote on social media, and whichever costume wins is the one that we make. The greatest thing for us community-wise has been having the social buttons on the site - if you click them you get rewarded with a new emblem.” For Coldfire’s Cem Aslan, community is a strategic investment, with Discord the most relevant channel for chatting with players. “Even as a small studio, we prioritized community early on because players will appreciate it if you talk to them and respond fast. Even if you can't fix things immediately, they will honor if you make the effort and answer them.” 
 
@@ -391,7 +393,7 @@ Making monetization work is one of the biggest challenges of games. The three mo
 ## Free-to-play vs. paid
 
 While some games are able to charge for downloads, many find the challenge of getting potential players excited enough to purchase a game without having had a chance to experience it caps their potential revenues too drastically. Offering a free trial for a premium game used to be a very popular model, but has lost favor. That said, you can have a game be free-to-play up to, say, level 10, then charge money via IAP to keep going. However, bear in mind that with a premium game, it’s challenging to capture revenue beyond the price of the game itself, despite potential player willingness to pay. A free game with IAP allows players to spend whatever they want to spend, from zero up to thousands of dollars. While there will probably always be AAA games that can command a high price for download, selling a game outright rather than making it available for free is no longer the typical path for live games, so we won’t focus on it here. 
- 
+
 ## Advertising: The rewards are endless
 
 For free-to-play games, advertising is often an important revenue stream, since at the end of the day the vast majority of players never make a purchase. In the world of games, one of the most popular and successful forms of advertising is “rewarded video” - a short (and sometimes playable) video, generally promoting a different game, that the player can choose to watch in exchange for an incentive within the structure of the game being played currently. There’s understandable fear amongst game developers that rewarded videos featuring games that would appeal to the player can distract that player from their current session or from coming back in the future. The opportunity cost is potentially high, particularly for the most valuable players who are making real-money purchases. However, it doesn’t have to be that way. Notes Dimitar Draganov, Senior Product Manager of flaregames, “a well-designed and integrated into the core loop rewarded video outperforms every other ad inventory by a wide margin; rewarded videos have always been the biggest revenue driver across all the games I've worked on and they are rarely filled with anything but game ads.” If you view rewarded ads as part of the core game loop, you’ll want to optimize the player ad experience along with the rest of your game. That means you’ll need to monitor player engagement with these ad units closely, so you can track and optimize the rewards you offer to players who engage.
@@ -410,7 +412,7 @@ Once you’ve decided to run ads of any type, you will need to figure out how to
 - Test your rewards - don't just build it once and assume it's going to be effective for all players. In fact, the same player may be motivated by different rewards at different stages of his growth. By definition, a good reward is whatever the player most wants at that moment, and what that is will change.
 - When integrating paid ad networks, don't just pick a single network. Different networks perform differently for different regions and types of players. To maximize your revenue, you will likely need several ad networks.
 - Don't be afraid to negotiate with the ad networks. If you have enough players and inventory, they will cut you special deals and even guarantee revenue - if you are willing to give them special rights like first crack at your players.
- 
+
 ## In-app purchases: In for a penny...
 
 Adding in-app purchases to your game adds a significant degree of complexity, but the returns can be well worth the effort. Done right, in-game purchases can drive a significantly higher level of engagement as your players start to feel more invested in the game, as well as incremental revenue. This multiplier effect can help you ensure that you retain your players for longer and increase their lifetime value across multiple dimensions. It’s critical to measure and track your player LTV (lifetime value) closely if you want to optimize your stores to maximize your ability to monetize your players, but that’s not the only reason. If you don’t know how much a player is making, you don’t know what kinds of players you want to attract, or how much doing so is worth to you - which means you’re flying blind on user acquisition as well.
@@ -447,7 +449,7 @@ Notes Draganov of flaregames, “well planned and executed starter bundles have 
 - Consider having a special "starter bundle" for first-time players who have never paid before. Once a player has opened their wallet for a game, they are much more likely to do so again.
 - Since the goal of the first-time bundle is to encourage players to spend, you can test nearly everything about the offer to determine which is most effective at converting players to buy it.
 - When designing your first-time bundle, look at which items new players buy most often and include those at an attractive price. The goal is to provide overwhelming value for your new players.
- 
+
 ## Game economy: The daily grind
 
 One challenge games face in working through their economy is how to differentiate between what can be bought vs. earned. Since the vast majority of players never make a purchase, games risk alienating their base of players if they make it too difficult to progress without purchases. Slogging it out to progress through a game without making purchases - often referred to as “grinding” - is a highly engaged player behavior that should be considered meritorious. As Draganov puts it, “great live-games have both non-paying and paying users in lower, mid- and high-end of the leaderboards. As long as you allow players to trade time or money for progress there will always be both types of players - those who pay and those who grind their way through.”
@@ -568,7 +570,7 @@ In any case, mechanisms to boost engagement all come down to giving the player r
 - Run one-off events with limited time durations to encourage high engagement during those events - but balance these with less-intensive events to avoid burning out your players.
 - Introduce complexity layer by layer to keep more experienced players on their toes without overwhelming new ones. Always monitor when users churn so you can tweak appropriately.
 - Listen to your community - polling is a great technique.
- 
+
 ## Support
 
 Customer support is a key plank in your LiveOps platform. The first, and most critical need of your support team is to ensure that your game is working as intended, and to make it right when things break. To do this well, this team needs the right tools, so they can communicate with players who reach out with issues, investigate problems and take appropriate corrective actions by making adjustments to a player’s profile (e.g. granting virtual currency or items as consolations to players). 
@@ -583,7 +585,7 @@ Your support team is also your front line with players, and a rich source of inf
 - Your CS reps need a way to message players - both replying to tickets, but in some cases sending a bulk message to all players to announce an outage or issue.
 - If a player is having a persistent crash, it’s useful to be able to have them upload a crash log that can be passed along to engineering to investigate.
 - Track support KPIs, including tickets opened and closed, and disseminate them to your team. Changes in CS contact or resolution rates can be a leading indicator of larger issues.
- 
+
 ## Living on the plateau
 
 “Games can last for decades as a service if you know how to operate them properly and invest in scalable solutions.  Some great scalable solutions are automation and tools. Try to automate all the things that don’t matter and build tools for all the things that do. They not only reduce costs and improve efficiency, but they reduce pressure and allow the team to concentrate on the most important parts of the service.”  

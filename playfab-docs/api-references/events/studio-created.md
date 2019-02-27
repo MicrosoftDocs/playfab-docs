@@ -12,6 +12,8 @@ ms.localizationpriority: medium
 
 # studio_created
 
+This event is triggered when a studio is created.
+
 ## Properties
 
 |Name|Type|Description|

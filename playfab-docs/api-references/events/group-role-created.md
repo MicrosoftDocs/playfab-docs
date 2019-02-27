@@ -12,6 +12,8 @@ ms.localizationpriority: medium
 
 # group_role_created
 
+This event is triggered when a role is created for a group.
+
 ## Properties
 
 |Name|Type|Description|

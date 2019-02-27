@@ -10,7 +10,7 @@ keywords: playfab, data, entities, accounts
 ms.localizationpriority: medium
 ---
 
-## Entity files
+# Entity files
 
 Entity files allow you to read and write files attached to an entity, in any format. The example shown below demonstrates a full entity-file loop - logging in, loading a file, and uploading a new file.
 

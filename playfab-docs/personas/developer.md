@@ -12,11 +12,11 @@ ms.localizationpriority: medium
 
 # Getting started for developers
 
-We are excited that you have either chosen PlayFab as your platform for back-end services and Live Ops, or are evaluating the PlayFab offering.
+We are excited that you have either chosen PlayFab as your platform for back-end services and LiveOps, or are evaluating the PlayFab offering.
 
 The purpose of this section is to shed some light on how PlayFab helps you - as a developer - to build your game using PlayFab.
 
-PlayFab offers a wide range of services and has over 280 different **APIs** that you can leverage to make your game. This can be a lot to absorb in one session, so we'll take it slow. 
+PlayFab offers a wide range of services, and has over 280 different **APIs** that you can leverage to make your game. This can be a lot to absorb in one session, so we'll take it slow.
 
 Let's start with the beginnings of making your game, and then move into the more advanced features as we go.
 
@@ -60,19 +60,19 @@ Choose an environment from the list below, and follow the link to the appropriat
 Pick your **SDK**:
 
 - [Unity](../sdks/unity3d/quickstart.md)
-- [HTML5 (Javascript)](../sdks/javascript/quickstart.md) 
+- [HTML5 (Javascript)](../sdks/javascript/quickstart.md)
 - [Flash (ActionScript3)](../sdks/actionscript/quickstart.md)
 - [C#](../sdks/c-sharp/quickstart.md)
-- [Cocos2d-x](../sdks/cocos2d-x/quickstart.md) 
-- [Xamarin](../sdks/xamarin/quickstart.md) 
-- [Node](../sdks/nodejs/quickstart.md) 
-- [Java](../sdks/java/quickstart.md) 
-- [Defold (Lua)](../sdks/lua/quickstart-defold.md) 
+- [Cocos2d-x](../sdks/cocos2d-x/quickstart.md)
+- [Xamarin](../sdks/xamarin/quickstart.md)
+- [Node](../sdks/nodejs/quickstart.md)
+- [Java](../sdks/java/quickstart.md)
+- [Defold (Lua)](../sdks/lua/quickstart-defold.md)
 - [Corona (Lua)](../sdks/lua/quickstart-corona.md)  
-- [Windows - C++](../sdks/xplatcpp/quickstart-windows.md) 
+- [Windows - C++](../sdks/xplatcpp/quickstart-windows.md)
 - [Linux - C++](../sdks/xplatcpp/quickstart-linux.md)  
 
-## Updating your Login mechanism
+## Updating your login mechanism
 
 The first step in adding PlayFab to any game is *always* logging in the player. Logging in the player returns a security token that is needed for all other **API** calls.
 

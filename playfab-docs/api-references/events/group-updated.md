@@ -12,6 +12,8 @@ ms.localizationpriority: medium
 
 # group_updated
 
+This event is triggered when an entity group is updated.
+
 ## Properties
 
 |Name|Type|Description|

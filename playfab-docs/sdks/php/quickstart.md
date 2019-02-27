@@ -3,7 +3,7 @@ title: PHP quickstart
 author: v-kciril
 description: Quickstart for the PlayFab PHP SDK.
 ms.author: v-kciril
-ms.date: 01/22/22
+ms.date: 01/22/2019
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, php, playfab php sdk

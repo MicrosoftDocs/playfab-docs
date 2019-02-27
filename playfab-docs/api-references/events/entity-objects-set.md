@@ -12,6 +12,8 @@ ms.localizationpriority: medium
 
 # entity_objects_set
 
+This event is triggered when objects are attached to an entity.
+
 ## Properties
 
 |Name|Type|Description|
