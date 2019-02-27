@@ -20,7 +20,7 @@ ms.localizationpriority: medium
 >
 > Access to this feature is restricted to select titles. If you are interested in trying it, you can request access by submitting a ticket on [support.playfab.com](https://support.playfab.com/hc/en-us/requests/new).
 
-Most PlayFab services, such as PlayStream or Matchmaking, are included with every paid PlayFab tier as part of our core offering. However, PlayFab Multiplayer Servers and Parties are billed on a consumption basis. This document describes the billing plan for Parties.
+Most PlayFab services, such as PlayStream or Matchmaking, are included with every paid PlayFab tier as part of our core offering. However, PlayFab Parties is billed on a consumption basis. This document describes the billing plan for Parties.
 
 ## What comes with your basic PlayFab Core Services package?
 
@@ -60,3 +60,14 @@ At run-time you can specify which Azure region should host your network. This im
 | Zone 1 | Australia Central, Australia Central 2, West US, West US 2, West Central US, East US, North Central US, South Central US, East US 2, Central US, West Europe, North Europe, Canada East, Canada Central, France Central, UK South, UK West | $0.05 |
 | Zone 2 | East Asia, Southeast Asia, Japan East, Japan West, Australia East, Australia Southeast, Central India, West India, South India, Korea Central, Korea South |  $0.08 |
 | Zone 3 | Brazil South | $0.16 |
+
+
+## Discounted usage for Xbox Live games
+
+PlayFab has partnered with Xbox Live to allow game studios leveraging the Xbox Live gamer network to enjoy certain PlayFab services for free on Xbox One and PC. This includes PlayFab Parties. If you would like to take advantage of this Xbox Live subsidy, Microsoft recommends the following multiplayer design:
+
+1. Use the Xbox Live SDK to interface with Xbox Live social capabilities like Presence, Profile Cards, and game invites.
+1. Use PlayFab Matchmaking to match players.
+1. Use PlayFab Parties to connect players for device-to-device networking or chat.
+
+If you are building a cross-network game, you will need to use the equivalent social APIs from Steam, PlayStation, etc. for those platforms. However you can use the same matchmaking, networking, and chat technologies on all platforms. Usage associated with Xbox Live logged-in players will be zero-rated (see LoginWithXbox())
