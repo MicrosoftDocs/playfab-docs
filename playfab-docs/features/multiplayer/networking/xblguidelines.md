@@ -23,4 +23,4 @@ PlayFab and Xbox Live have colloborated to allow Xbox Live managed partners to p
 If you are building a cross-network game, you will need to use the equivalent social APIs from Steam, PlayStation, etc. for those platforms, and comply with any policies they may have governing multiplayer and cross-network activity. However PlayFab's desire is for game studios to be able to use interoperable matchmaking, networking, and chat infrastructure on all platforms. Usage associated with Xbox Live logged-in players will be zero-rated (see [LoginWithXbox()](xref:
 titleid.playfabapi.com.client.authentication.loginwithxbox)).
 
-Xbox Live continues to support Xbox Live SDK services such as Xbox Live SmartMatch, Game Chat 2, and Xbox Integrated Multiplayer (XIM). However, a goal of the PlayFab-Xbox Live partnership is to facilitate cross-network and cross-platform multiplayer activity, which is prohibited by these prior systems. 
+Xbox Live continues to support Xbox Live SDK services such as Xbox Live SmartMatch, Game Chat 2, and Xbox Integrated Multiplayer (XIM). 
