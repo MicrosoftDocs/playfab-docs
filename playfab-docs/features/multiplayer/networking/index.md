@@ -30,7 +30,7 @@ Parties utilizes Azure Speech Services to transcribe player voice chat and synth
 
 Parties can not only transcribe player chat, but also translate chat in real time. In anonymous matchmaking and international competitive games, these transcription and translation capabilities can make for a more engaging multiplayer experience. 
 
-A goal of PlayFab Parties and our other multiplayer services is to facilitate interoperable multilplayer infrastructure and cross-network gameplay. However we remind customers to ensure their multiplayer experiances comply with relevant platform policies for multiplayer and cross-network player activity. 
+A goal of PlayFab Parties and our other multiplayer services is to facilitate interoperable multiplayer infrastructure and cross-network gameplay. However we remind customers to ensure their multiplayer experiances comply with relevant platform policies for multiplayer and cross-network player activity. 
 
 ## Roadmap
 | | March 2018 | August 2019 |
