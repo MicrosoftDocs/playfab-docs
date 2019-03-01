@@ -190,7 +190,7 @@ if ( confirm successful ) {
            }
        }
    }
-  
+
    //Save listOfReceipts somewhere as proof of deletion.
 
 }

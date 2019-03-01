@@ -61,7 +61,7 @@ public async void Example()
 {
        var logrequest = new PlayFab.ClientModels.LoginWithCustomIDRequest
        {
-       	CustomId = "TestExample",
+           CustomId = "TestExample",
               CreateAccount = true,
               LoginTitlePlayerAccountEntity = true,
        };

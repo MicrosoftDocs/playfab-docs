@@ -136,35 +136,35 @@ For example, imagine you have an event leaderboard that resets every week, and y
 ```javascript
 // this function will be called as a bulk action by a scheduled task for players in a segment
 handlers.GiveTieredReward = function (args, context) {
-	var profile = context.playerProfile;
+    var profile = context.playerProfile;
 
-	var statVersion = 0;        // set to whatever version you need to use
+    var statVersion = 0;        // set to whatever version you need to use
 
-	var getStatRequest = {};
-	getStatRequest.PlayFabId = profile.PlayerId;
-	getStatRequest.StatisticNameVersions = [{ "StatisticName": "Event_QuestsCompleted", "Version": statVersion }];
+    var getStatRequest = {};
+    getStatRequest.PlayFabId = profile.PlayerId;
+    getStatRequest.StatisticNameVersions = [{ "StatisticName": "Event_QuestsCompleted", "Version": statVersion }];
 
-	try {
-		getStatRequest.PlayerResult = server.GetPlayerStatistics(getStatRequest);
-	} catch (e) {
-	};
+    try {
+        getStatRequest.PlayerResult = server.GetPlayerStatistics(getStatRequest);
+    } catch (e) {
+    };
 
-	if (getStatRequest.PlayerResult && getStatRequest.PlayerResult.Statistics.length > 0) {
-		getStatRequest.lastScore = getStatRequest.PlayerResult.Statistics[0].Value
-	}
+    if (getStatRequest.PlayerResult && getStatRequest.PlayerResult.Statistics.length > 0) {
+        getStatRequest.lastScore = getStatRequest.PlayerResult.Statistics[0].Value
+    }
 
-	if (getStatRequest.lastScore && getStatRequest.lastScore > 2) {
-		// give gift to all players with more than 2 quests completed in last event
-		// in a real event we would want to use a lookup table of gifts
-		// but here we are just hard-coding it
-		var giftRequest = {};
-		giftRequest.PlayFabId = profile.PlayerId;
-		giftRequest.ItemIds = ["CrystalKey"];
-		giftRequest.grantResult = server.GrantItemsToUser(giftRequest);
-		return giftRequest;
-	} else {
-		return getStatRequest;
-	}
+    if (getStatRequest.lastScore && getStatRequest.lastScore > 2) {
+        // give gift to all players with more than 2 quests completed in last event
+        // in a real event we would want to use a lookup table of gifts
+        // but here we are just hard-coding it
+        var giftRequest = {};
+        giftRequest.PlayFabId = profile.PlayerId;
+        giftRequest.ItemIds = ["CrystalKey"];
+        giftRequest.grantResult = server.GrantItemsToUser(giftRequest);
+        return giftRequest;
+    } else {
+        return getStatRequest;
+    }
 }
 ```
 

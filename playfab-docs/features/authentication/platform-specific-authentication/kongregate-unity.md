@@ -41,7 +41,7 @@ Our first step is to prepare an **index.html** file with the following content.
 
 Navigate to the [Kongregate website](https://www.kongregate.com/).
 
-- Select the **Games** tab **(1)**. 
+- Select the **Games** tab **(1)**.
 - Then select the **Upload your game** button **(2)**.
 
 ![Kongregate Games tab](media/tutorials/kongregate-games-tab.png)  
@@ -50,7 +50,7 @@ A page to set up a new application will open.
 
 - Make sure to enter the **Application Name (1)**.
 - Enter a **Game Description (2)**.
-- Then select a **Category (3)**. 
+- Then select a **Category (3)**.
 - Submit the new **App** by selecting the **Continue** button **(4)**.
 
 ![Kongregate upload your game](media/tutorials/kongregate-upload-your-game.png)  
@@ -106,6 +106,7 @@ Use this **Unity** setup checklist:
 Create your working scene.
 
 - For testing purposes, use a screen-scaling canvas **(1)** with a couple of text labels.
+
 > [!NOTE]
 > We will only need *one* text label to display debug messages.
 
@@ -120,7 +121,7 @@ This **GameObject** will contain a **KongregateHandler** component with a wired 
 The code for the **KongregateHandler** component is provided below.
 
 ```csharp
-// We are specifically interested in importing PlayFab related namespaces 
+// We are specifically interested in importing PlayFab related namespaces
 using PlayFab;
 using PlayFab.ClientModels;
 using UnityEngine;
@@ -128,21 +129,21 @@ using UnityEngine.UI;
 
 public class KongregateHandler : MonoBehaviour
 {
-   
+  
     // Standard unity callback, executed once for the script to start
     public void Start()
     {
         // Utility: show feedback
         SetMessage("Loading kongregate api...");
-        
-        /* 
+
+        /*
          * Important: execute Javascript in the external context to initialize
          * Kongregate API, Unity Support and set up callback GameObject and Method.
-         * In this case, callback is set to a GameObject called Kongregate and a 
+         * In this case, callback is set to a GameObject called Kongregate and a
          * method called OnKongregateAPILoaded, which we define later in this class.
-         * Once Kongregate API is initialized, Unity will locate this object by name 
-         * ("Kongregate") and execute a method "OnKongregateAPILoaded" passing in user 
-         * info string as an argument. 
+         * Once Kongregate API is initialized, Unity will locate this object by name
+         * ("Kongregate") and execute a method "OnKongregateAPILoaded" passing in user
+         * info string as an argument.
          */
         Application.ExternalEval(
           "if(typeof(kongregateUnitySupport) != 'undefined'){" +
@@ -154,14 +155,14 @@ public class KongregateHandler : MonoBehaviour
     }
 
     /*
-     * Executed once Kongregate API is ready. This method is invoked by KongregateAPI 
-     * and receives a structured text with multiple pieces of data you must parse manually. 
+     * Executed once Kongregate API is ready. This method is invoked by KongregateAPI
+     * and receives a structured text with multiple pieces of data you must parse manually.
      * The userInfo string parameter has the following structure: 'user_identifier|user_name|auth_token'
      */
     public void OnKongregateAPILoaded(string userInfo)
     {
-        SetMessage("Recieved user info! Logging though playfab...");
-        
+        SetMessage("Received user info! Logging though playfab...");
+
         // We split userInfo string using '|' character to acquire auth token and Kongregate ID.
         var userInfoArray = userInfo.Split('|');
         var authTicket = userInfoArray[2];
@@ -170,9 +171,9 @@ public class KongregateHandler : MonoBehaviour
         LogToBrowser("Auth Token: " + authTicket);
         LogToBrowser("Kongregate Id: " + kongregateId);
 
-        /* 
+        /*
          * We then execute PlayFab API call called LoginWithKongregate.
-         * LoginWithKongregate requires KongregateID and AuthTicket. 
+         * LoginWithKongregate requires KongregateID and AuthTicket.
          * We also pass CreateAccount flag, to automatically create player account.
          */
         PlayFabClientAPI.LoginWithKongregate(new LoginWithKongregateRequest
@@ -184,10 +185,10 @@ public class KongregateHandler : MonoBehaviour
     }
 
 
-    /* 
-     * The rest of the code serves as a utility to process results, log debug statements 
+    /*
+     * The rest of the code serves as a utility to process results, log debug statements
      * and display them using Text message label.
-     */ 
+     */
 
     private void OnLoggedIn(LoginResult obj)
     {
@@ -238,7 +239,7 @@ Build the application and open the **Build** folder.
 
 - Use the **URL** you saved earlier to access your **Application Upload** page.
 - Select **index.html** as your **Game File (1)**.
-- Then select the zip archive as **Additional files (2)**. 
+- Then select the zip archive as **Additional files (2)**.
 - Accept the licenses and upload.
 
 ![Kongregate application upload page](media/tutorials/kongregate-unity/kongregate-app-upload-page-add-files.png)

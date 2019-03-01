@@ -88,7 +88,7 @@ void CreatePlayer()
 {
     var loginReq = new LoginWithCustomIDRequest
     {
-        CustomId = "SomeCustomID", // replace with your own Custom ID 
+        CustomId = "SomeCustomID", // replace with your own Custom ID
         CreateAccount = true // otherwise this will create an account with that ID
     };
 
@@ -226,9 +226,9 @@ When the player selects that **URL**, three things happen:
 
 1. PlayFab generates a new **PlayStream** event called **auth_token_validated**. This is how you know that the player selected that **URL** in the email. You can use that event to trigger actions, like granting coins or items to the player.
 2. PlayFab will return a redirect **URL** sending the player to the callback **URL**. In this case, it should be a website for the game with a form for the player to enter a new password.
-3. The redirect **URL** will contain a token in the query string, and will look something like: 
+3. The redirect **URL** will contain a token in the query string, and will look something like:
 
-**https://www.example.com/?token=2346241B7C277796**.
+<https://www.example.com/?token=2346241B7C277796>.
 
 ## Step 6 - Reset the player's password
 

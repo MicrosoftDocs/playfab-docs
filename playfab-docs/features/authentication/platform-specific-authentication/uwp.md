@@ -94,7 +94,7 @@ namespace GettingStartedPlayfabUWP
         /// </summary>
         public App()
         {
-            
+
             // This is the only line of functional code we need to add to this class.
             PlayFab.PlayFabSettings.TitleId = PlayfabTitleId;
 
@@ -271,17 +271,17 @@ namespace GettingStartedPlayfabUWP
             await ShowMessage("Registered and signed in with Session Ticket " + registerResponse.Result.SessionTicket);
         }
 
-        // 
+        //
         /// <summary>
         /// This method is invoked when you click Log In button
         /// This method shows entities flow during the sign in process.
-        /// We have 4 different entities: 
+        /// We have 4 different entities:
         /// - User Credentials of type KeyCredential
         /// - Public Key Hint of type String
         /// - Challenge of type String
         /// - SignedChallenge of type String
-        /// 
-        /// We first acquire the User Credentials. We do it based on Username. Check GetUserCredentials method for implementation details 
+        ///
+        /// We first acquire the User Credentials. We do it based on Username. Check GetUserCredentials method for implementation details
         /// Next, we get Public Key Hint based on those credentials. Check GetPublicKeyHint for implementation details.
         /// Next we request a Challenge from PlayFab. Check GetPlayFabHelloChallenge for implementation details
         /// Next we sign the Challenge using User Credentials, so we obtain Signed Challenge. Check GetPlayFabHelloChallenge for implementation details

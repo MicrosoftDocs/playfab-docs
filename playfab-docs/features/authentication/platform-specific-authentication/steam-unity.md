@@ -36,7 +36,7 @@ To enable support for **Steam** authorization, PlayFab requires you to enable th
 
 - Enter your **App ID (1)**.
 - Enter the **Web API Key (2)**.
-- Then select **Install Steam (3)**. 
+- Then select **Install Steam (3)**.
 
 ![Game Manager install Steam Add-on](media/tutorials/steam-unity/game-manager-install-steam-addon.png)  
 
@@ -58,7 +58,7 @@ Re-open **Unity** and create a new scene.
 
 - Inside that scene create a new **gameobject** called **Steam**.
 - Add a **SteamManager** component to the **gameobject (1)**. This component is part of Steamworks.Net.
-- Create and add a **SteamScript** component to the **gameobject** **(2)**. 
+- Create and add a **SteamScript** component to the **gameobject** **(2)**.
 
 ![Unity project - Add Steam object](media/tutorials/steam-unity/unity-project-add-steam-object.png)  
 

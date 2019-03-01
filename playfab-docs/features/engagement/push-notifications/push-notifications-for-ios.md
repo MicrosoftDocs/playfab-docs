@@ -44,6 +44,7 @@ The request generator uses the following pieces of information to create a **JSO
 
 > [!NOTE]
 > Application names must only be made up of uppercase and lowercase **ASCII** letters, numbers, underscores, hyphens, and periods, and must be between 1 and 256 characters long. They must *also* be must be *unique*.
+
 - **PEM Certificate / API Key** -  For iOS (**APNS** or **APNS_SANDBOX**), use the complete contents of your **PEM** file.
 
 Once the **JSON** is generated, use it to execute a call to **SetupPushNotification**. The response should look like the example that follows.

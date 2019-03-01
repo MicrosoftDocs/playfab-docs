@@ -124,7 +124,7 @@ function wrapHandler(obj, key) {
                 log.error(error); // We log it, but you may want to retry / do something else
                 throw error; // Rethrow to keep the original behaviour
             }
-        } 
+        }
     } else { // If property is not a function, ignore it
         return obj[key];
     }

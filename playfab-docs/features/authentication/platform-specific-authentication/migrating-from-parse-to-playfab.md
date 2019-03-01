@@ -63,7 +63,7 @@ With PlayFab, custom data is stored in these places:
 
   > [!NOTE]
   > For more information on this subject, see our quickstart [Player Data](../../data/playerdata/quickstart.md).
- 
+
   Data can be:
 
   - **Private** (accessed only by the players).
@@ -198,10 +198,11 @@ Also, you can re-run the *import* process as often as necessary during the migra
 - Review some of your imported players for general correctness.
 - Download the PlayFab **SDK** and update your game client to point to PlayFab for your user functions.
 - In particular, the following **APIs** will prove useful:
-    - [Client/LoginWithFacebook](xref:titleid.playfabapi.com.client.authentication.loginwithfacebook)
-    - [Client/LoginWithEmailAddress](xref:titleid.playfabapi.com.client.authentication.loginwithemailaddress)
-    - [Client/GetUserData](xref:titleid.playfabapi.com.client.playerdatamanagement.getuserdata)
-    - [Client/UpdateUserData](xref:titleid.playfabapi.com.client.playerdatamanagement.updateuserdata)
+
+  - [Client/LoginWithFacebook](xref:titleid.playfabapi.com.client.authentication.loginwithfacebook)
+  - [Client/LoginWithEmailAddress](xref:titleid.playfabapi.com.client.authentication.loginwithemailaddress)
+  - [Client/GetUserData](xref:titleid.playfabapi.com.client.playerdatamanagement.getuserdata)
+  - [Client/UpdateUserData](xref:titleid.playfabapi.com.client.playerdatamanagement.updateuserdata)
 
 ### Migrating other Parse functionality
 

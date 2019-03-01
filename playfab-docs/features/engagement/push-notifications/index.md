@@ -11,9 +11,10 @@ ms.localizationpriority: medium
 ---
 
 # Push Notifications
-Push notifications give games a channel to send immediate customized messages to a player’s device, even when the player is not currently running the game. Notifications might be used to indicate that a user has received a message, some update is available in game, or the user needs to take some action. When used well, they can be a very effective tool for improving your game’s retention by drawing players back into your game at key moments before churn. 
 
-Using PlayFab's push notifications feature, developers may send unlimited push notifications to any number of devices completely free of charge. 
+Push notifications give games a channel to send immediate customized messages to a player’s device, even when the player is not currently running the game. Notifications might be used to indicate that a user has received a message, some update is available in game, or the user needs to take some action. When used well, they can be a very effective tool for improving your game’s retention by drawing players back into your game at key moments before churn.
+
+Using PlayFab's push notifications feature, developers may send unlimited push notifications to any number of devices completely free of charge.
 
 The following screenshot is an example from an **Android** device's notifications area showing a push notification.
 

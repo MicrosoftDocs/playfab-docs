@@ -97,6 +97,7 @@ So to be part of a segment:
 
   - To be part of a group, a player must meet all conditions (filters).
   - This is denoted by the OR/AND operators:
+  
     - Filters are combined using the AND operator.
     - Groups are combined using the OR operator.
 
@@ -104,9 +105,9 @@ The screenshot shown above is an example of how a segment can be defined. This s
 
 1. The first group is defined by 2 filters:
 
-     1. A player must be from Canada.
-     1. And must have **Apple** push notifications enabled.
-1. The second group is *also* for players from Canada, but they must have **Google** push notifications enabled.
+   - A player must be from Canada.
+    a. And must have **Apple** push notifications enabled.
+   - The second group is *also* for players from Canada, but they must have **Google** push notifications enabled.
 
 In the end, we have a segment of players from Canada with either **Google** or **Apple** push notifications.
 
@@ -143,14 +144,12 @@ For example, the Player Entered Segment Trigger passes you the context containin
 The general workflow for the **Actions** panel is the following:
 
 1. Select an **event condition (1)** a.k.a a *trigger*.
-
 2. Select the **Type** of action.
 
 > [!NOTE]
 > PlayFab offers a variety of actions. If, at any point, you need a more flexible action, consider a **CloudScript** action. This action type allows you to run your own **CloudScript** function.
 
 3. **Configure the action (3)** (specific for each action type).
-
 4. **Remove an action (4)** from the trigger.
 5. Use **Add Action (5)** to add an action to the trigger.
 
@@ -163,7 +162,6 @@ It is possible to look up what segments a player belongs to by means of the **Pl
 To access **Player Segments**:
 
 - Select **Players** in the sidebar menu **(1)**.
-
 - Then select the **Players** tab **(2)**.
 - Locate the **Player** you want to inspect, and select the **ID** label **(3)**.
 - Finally, select **Segments** in the **Players Toolbar (4)**.
@@ -173,7 +171,6 @@ To access **Player Segments**:
 On the **Player Segments** page, you will see the following:
 
 - The **Player ID (1)** label identifies the player that you are currently inspecting.
-
 - The **Segment** table contains a list of all the segments that a player belongs to.
 - Select the **Segment name** label **(2)** to configure the segment.
 
