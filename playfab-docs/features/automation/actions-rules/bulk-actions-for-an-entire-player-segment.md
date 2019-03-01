@@ -74,7 +74,7 @@ Next, you can finish setting up the task.
 
 ## Step 4 - Monitor your task
 
-The **Tasks** view will show you your running task. Initially the taskk status will be **InProgress**, but it will quickly change to **Succeeded** since the segment is small.
+The **Tasks** view will show you your running task. Initially the task status will be **InProgress**, but it will quickly change to **Succeeded** since the segment is small.
 
 ![Game Manager - Servers - Tasks - Task Succeeded](media/tutorials/game-manager-servers-tasks-task-succeeded.png)
 

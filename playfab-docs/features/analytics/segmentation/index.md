@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Segmentation
 
-Segmentation lets you create targeted groups of players based on player properties. Upon PlayStream events being processed, your configuration will drive the addition of players into and out of the segments you define. This all happens in real time -- there should be no perceptual lag, even at large scale. If you can tie an event to the thing you want to use as a differentiating factor, you can make a segment for it, and segments will apply retroactively to all players, based on the data in their profiles -- so if you define a segment of players where XP > 3,000, then every player with XP > 3,000 will now be in that segment. 
+Segmentation lets you create targeted groups of players based on player properties. Upon PlayStream events being processed, your configuration will drive the addition of players into and out of the segments you define. This all happens in real time -- there should be no perceptual lag, even at large scale. If you can tie an event to the thing you want to use as a differentiating factor, you can make a segment for it, and segments will apply retroactively to all players, based on the data in their profiles -- so if you define a segment of players where XP > 3,000, then every player with XP > 3,000 will now be in that segment.
 
 ![High XP Segment Definition](media/playstream-segment-highxp.png)
 

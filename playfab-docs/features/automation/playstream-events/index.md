@@ -28,7 +28,7 @@ The easiest way to see the event pipeline in action is through the PlayStream De
 
 ![PlayStream Monitor](media/playstream-monitor.png)
 
-The PlayStream monitor is a real-time stream of all the events for your game, including any custom events you choose to send, using our WriteEvent API methods. This is immensely valuable during development, as it gives you a way to immediately see what’s happening on the backend as you test out your client- and server-side code, linking you straight to the player accounts so that you can check them against the game logic you’re working on.
+The PlayStream monitor is a real-time stream of all the events for your game, including any custom events you choose to send, using our WriteEvent API methods. This is immensely valuable during development, as it gives you a way to immediately see what’s happening on the back end as you test out your client- and server-side code, linking you straight to the player accounts so that you can check them against the game logic you’re working on.
 
 There are several clickable fields in each event. If you click the “(i)” information circle, you will see the raw event JSON data.
 
@@ -38,7 +38,7 @@ You can also click the player’s ID to jump straight to the player’s profile,
 
 ## Player Segmentation and Actions
 
-Using those events, you can set up segments which define players within your user base based upon most player properties. This all happens in real time -- there should be no perceptual lag, even at large scale. If you can tie an event to the thing you want to use as a differentiating factor, you can make a segment for it. And segments will apply retroactively to all players, based on the data in their profiles -- so if you define a segment of players where XP > 3,000, then every player with XP > 3,000 will now be in that segment. 
+Using those events, you can set up segments which define players within your user base based upon most player properties. This all happens in real time -- there should be no perceptual lag, even at large scale. If you can tie an event to the thing you want to use as a differentiating factor, you can make a segment for it. And segments will apply retroactively to all players, based on the data in their profiles -- so if you define a segment of players where XP > 3,000, then every player with XP > 3,000 will now be in that segment.
 
 ![High XP Segment Definition](media/playstream-segment-highxp.png)
 
@@ -54,10 +54,9 @@ The same action system shown above can also be utilized to respond on specific e
 
 Using rules and actions, you can affect LiveOps behaviors in your game without making any changes to the game client.
 
-
 ## Webhooks
 
-You can also set up webhooks, such that some or all of the events going through PlayStream will get pushed out to an external service. For example, you could use this feature to call your own backend server on any player login, as follows:
+You can also set up webhooks, such that some or all of the events going through PlayStream will get pushed out to an external service. For example, you could use this feature to call your own back end server on any player login, as follows:
 
 ![Webhook Configuration](media/playstream-webhook.png)
 
@@ -65,14 +64,13 @@ PlayStream webhooks are POST calls to your provided endpoint, which pass along a
 
 ## Event History
 
-You can also access a historical archive of events. By default, events are kept for a certain period of time that depends on your service tier. You can view the event history in two places -- you can view all events for your title in the PlayStream “Event History” tab, or only events for a particular player on that player’s “PlayStream” tab.
+You can also access a historical archive of events. By default, events are kept for a certain period of time that depends on your service tier. You can view the event history in two places -- you can view all events for your title in the **PlayStream Event History** tab, or only events for a particular player on that player’s **PlayStream** tab.
 
 ![Event History](media/playstream-eventHistory.png)
 
-You can click on a particular event to see details for that particular event, including its delivery history. This particular event below, for example, has been delivered to three different Marketplace Add-ons --- Appuri (both legacy and current), and Segment.com.
+You can click on a particular event to see details for that particular event, including its delivery history. This particular event below, for example, has been delivered to three different Marketplace Add-ons - **Appuri** (both legacy and current), and Segment.com.
 
 ![Event History Details](media/playstream-eventHistoryDetails.png)
-
 
 ## Getting Started With PlayStream
 

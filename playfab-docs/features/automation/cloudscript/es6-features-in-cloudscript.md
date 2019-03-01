@@ -30,7 +30,7 @@ This allows you to avoid string concatenation and improve code readability signi
 
 ```javascript
 function sendPushNotification(playerName, prizeAmount, newLevel) {
-    let message = `Congratulations ${playerName}! 
+    let message = `Congratulations ${playerName}!
 You have reached level ${newLevel}.
 You get ${prizeAmount} coins for your efforts.`;
     // Use message variable and send push notification
@@ -100,12 +100,12 @@ Object.assign(handlers, ProductionHandlers);
 // Object.assign(handlers, SomeOtherHandlers);
 ```
 
-This not only allows you to quickly enable and disable handler groups, but it also gives you a point to process your handlers and wrap them with useful code, such as exception handling. 
+This not only allows you to quickly enable and disable handler groups, but it also gives you a point to process your handlers and wrap them with useful code, such as exception handling.
 
 The following code extends the previous snippet with automatic exception logging. As an example, we log the problem, which is not always useful, but you can extend the behavior to your taste.
 
 ```javascript
-// Handlers installer wraps the handler to catch error 
+// Handlers installer wraps the handler to catch error
 function installHandlers(handlersObject) {
     for (var property in handlersObject) {
         handlersObject[property] = wrapHandler(handlersObject,property)

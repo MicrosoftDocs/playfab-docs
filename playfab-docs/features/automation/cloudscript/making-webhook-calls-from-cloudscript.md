@@ -35,7 +35,7 @@ var method = "post";
 var contentBody = "";
 var contentType = "application/json";
 var headers = {};
-var responseString =  http.request(url,method,contentBody,contentType,headers); 
+var responseString =  http.request(url,method,contentBody,contentType,headers);
 ```
 
 The body of the response is returned in stringified form, so that you can subsequently use it in the rest of the script.
@@ -44,7 +44,7 @@ In this case, since we were querying version, you might write the response out t
 
 ```javascript
 // CloudScript
-log.info(responseString); 
+log.info(responseString);
 ```
 
 The response back to the client at the end of running the **CloudScript** might look like this example provided below.

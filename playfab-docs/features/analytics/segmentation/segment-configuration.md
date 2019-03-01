@@ -116,6 +116,7 @@ Each filter has a unique configuration and purpose. As of 4/30/2017 the followin
 
 > [!NOTE]
 > The trick here is that a player may *start* with authentication based on, say, an **iOS** device ID, but later, the *same* player may have a **GameCenter** account linked. In this case, *user origination* will be the **iOS** device ID. For example, players that first signed in using an **iOS** device ID.
+
 - The **Virtual currency balance filter** - Allows you to filter based on a player's custom virtual currency deposit. For example, players that have less than 50 Crystal.
 
 ## How to manage actions
@@ -130,7 +131,8 @@ A trigger defines the *context* of the action. For example, a *player entered se
 4. **Remove** the action from the **Trigger**.
 5. **Add Action** to the **Trigger**.
 
-![Game Manager - Actions panel](media/tutorials/game-manager-actions-panel.png)  
+![Game Manager - Actions panel](media/tutorials/game-manager-actions-panel.png)
+
 ## How to inspect player segments
 
 It is possible to look up what segments a player belongs to by means of the **Player Segments** page. To access the **Player Segments** page:

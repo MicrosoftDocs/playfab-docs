@@ -35,7 +35,7 @@ The first step in setting up A/B testing, is to create an A/B test using the Pla
 - Select **Automation** from the menu to the left **(1)**.
 - Go to the **A/B Testing** tab **(2)**.
 - Create a **New A/B Test** and configure the **A/B test name** and user **Buckets**.
- 
+
 > [!NOTE]
 > You can have up to **5 Buckets** with independent ratios (**%**).
 

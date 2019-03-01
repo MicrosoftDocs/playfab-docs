@@ -74,7 +74,7 @@ The **API** request object sent to PlayFab is invalid and cannot be executed.
 - **InvalidTitleId (1004)**
 The request provided a **TitleId** which does *not* match the title provided in the **URL** of the method. In most **SDKs**, you should not specify a **TitleId** for login requests, as it is done for you. In the admin **API**, explicit **TitleIds** are a **Dev**->**Test**->**Live** safety feature.
 
- - **NotAuthenticated (1074)**
+- **NotAuthenticated (1074)**
 The client has tried to call an **API** that requires **SessionTicket** authentication, without logging in first.
 
 - **NotAuthorized (1089)**

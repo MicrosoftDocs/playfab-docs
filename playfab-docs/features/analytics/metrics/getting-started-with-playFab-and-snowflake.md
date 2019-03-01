@@ -24,7 +24,7 @@ The first step in using **Snowflake** with PlayFab is to create a **Snowflake** 
 
 - After your **Snowflake** account is set up, you can then enable the **Snowflake** add-on in PlayFab by providing your **Snowflake Account ID**.
 
-You can find your **Account ID** in the **URL** you are given to log into **Snowflake**. It will look something like: **jw02773**. 
+You can find your **Account ID** in the **URL** you are given to log into **Snowflake**. It will look something like: **jw02773**.
 
 ![Game Manager - Add-Ons - Snowflake](media/tutorials/game-manager-add-ons-snowflake.png)  
 
@@ -56,8 +56,7 @@ This view's schema deserves some explanation.
 
 ![Databases PlayFab Archive Shared View](media/tutorials/databases-playfab-archive-shared-view.png)  
 
-The most important **Column** is called **P** (for **Payload**). The type of this column is **OBJECT**, which is **Snowflake's** way of saying **JSON**. 
-
+The most important **Column** is called **P** (for **Payload**). The type of this column is **OBJECT**, which is **Snowflake's** way of saying **JSON**.
 > [!NOTE]
 > To understand how this works, refer to later examples, or [their docs on semi-structured data](https://docs.snowflake.net/manuals/sql-reference/data-types-semistructured.html).
 
@@ -134,9 +133,9 @@ Internally, we use a view to parse out the bits and pieces we know we'll need.
 Run this command shown below in your own database.
 
 ```sql
-create view logins as 
+create view logins as
 (
-          select 
+          select
           event_id,
           title_id,
           ts,
@@ -164,31 +163,31 @@ There are a couple things to note:
 Now you can run queries like the following, to get the **DAU** on **June 1st**.
 
 ```sql
-select count(distinct entity_id) from logins where '2017-6-1' <= ts and ts <'2017-6-2' 
+select count(distinct entity_id) from logins where '2017-6-1' <= ts and ts <'2017-6-2'
 ```
 
 With this view, we can also compute 30 day retention.
 
 ```sql
-with logins_yesterday as 
+with logins_yesterday as
 (
-  select distinct entity_id 
+  select distinct entity_id
   from logins
   where dateadd(day, -1, current_date) <= ts and ts < current_date
 ),
-logins_thirty_days_ago as 
+logins_thirty_days_ago as
 (
-  select distinct entity_id 
+  select distinct entity_id
   from logins
   where dateadd(day, -30, current_date) <= ts and ts <dateadd(day, -29, current_date)
 ),
-login_both as 
+login_both as
 (
   select * from logins_thirty_days_ago
-  intersect 
+  intersect
   select * from logins_yesterday
 )
-select 
+select
 (select count(*) from logins_thirty_days_ago) as thirty_days_ago_dau,
 (select count(*) from login_both) as retained,
 retained / thirty_days_ago_dau as thirty_day_retention
@@ -200,7 +199,7 @@ Our table is designed so that query speeds should depend only on the size of the
 
 This is true even if there is only *one* title data being shared. This is a consequence of the additional security that secure views provide.
 
-When dealing with very large datasets (100s of millions of events), you will need to think about indexing as a way to speed up access for your queries.
+When dealing with very large data sets (100s of millions of events), you will need to think about indexing as a way to speed up access for your queries.
 
 If you find yourself running nasty queries (I.E. large joins, or full table scans), you should definitely read [Snowflake's docs on the matter](https://docs.snowflake.net/manuals/user-guide/tables-micro-partitions.html). You should *also* know how we have indexed our tables.
 

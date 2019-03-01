@@ -96,6 +96,7 @@ Specifically, [LoginWithGameCenter](xref:titleid.playfabapi.com.client.authentic
 **GameCenter** is a secure login specifically between an **iOS** device and the **GameCenter** service, but unlike **Apple's Identity Verification** service, there is *no* secure authentication option for a 3rd party service like PlayFab. Even so, some developers are very familiar with **GameCenter**, and wish to use it as their recoverable login mechanism.
 
 ### Good practice
+
 The only *safe* usage of this mechanism is for client-authoritative games with *no multiplayer capability*.
 
 PlayFab can be a useful cloud-save option for this type of game using this mechanism. All other uses of **LoginWithGameCenter** should be considered *unsafe*. Do *not* use this login for *any* kind of game with *any* kind of multiplayer interaction.

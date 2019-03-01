@@ -48,4 +48,3 @@ ms.localizationpriority: medium
 | **Platform**             | PlayFab tracks four different types of platforms: **OS** (**iOS**, **Android**), **Device Type** (**iPhone**, **iPad**, **Samsung Android**, **PC**, **Xbox**, etc.), **Account Type** (**Steam**, **Facebook**, **Kongregate**, **Custom**, etc.), and **Payment Type** (**iTunes**, **Google Play**, **Steam**, **Facebook**, **Xsolla**, etc.).
 | **Segment**              | A group of players who share similar properties, e.g., geography, demographics, platform, purchase patterns, etc. In addition to standard segments, users can define custom segments. Note that segment definitions are limited to properties in the entity profile.
 | **Timestamp** (**TS**)       | All PlayFab real-time analytics and reports are based on **Coordinated Universal Time** (**UTC**).
-

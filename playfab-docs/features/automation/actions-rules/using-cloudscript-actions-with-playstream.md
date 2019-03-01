@@ -23,15 +23,15 @@ The key to getting the most out of **CloudScript** is knowing how to work with t
 For example, here’s the **helloWorld** example from the starter **CloudScript** loaded as Revision 1 in all newly created titles (also available in our **GitHub**, [shown below](https://github.com/PlayFab/CloudScriptSamples/tree/master/BasicSample)).
 
 ```javascript
-// This is a CloudScript function. 
+// This is a CloudScript function.
 // "args" is set to the value of the "FunctionParameter" parameter of the ExecuteCloudScript API.
 // "context" contains additional information when the CloudScript function is called from a PlayStream action.
 handlers.helloWorld = function (args, context) {
-	
+
     // The pre-defined "currentPlayerId" variable is initialized to the PlayFab ID of the player logged-in on the game client.
     // CloudScript handles authenticating the player automatically.
     var message = "Hello " + currentPlayerId + "!";
- 
+
     // You can use the "log" object to write out debugging statements. It has
     // three functions corresponding to logging level: debug, info, and error. These functions
     // take a message string and an optional object.
@@ -42,7 +42,7 @@ handlers.helloWorld = function (args, context) {
         inputValue = args.inputValue;
     }
     log.debug("helloWorld:", { input: inputValue });
- 
+
     // The value you return from a CloudScript function is passed back
     // to the game client in the ExecuteCloudScript API response, along with any log statements
     // and additional diagnostic information, such as any errors returned by API calls or external HTTP
@@ -67,18 +67,18 @@ To view this action, have a look at the **handlePlayStreamEventAndProfile Handle
 ```javascript
 // This is a simple example of a function that is called from a
 handlers.handlePlayStreamEventAndProfile = function (args, context) {
-	
-    // The event that triggered the action. 
+
+    // The event that triggered the action.
     // For a list of event types, see our PlayFAb API documentation.
     var psEvent = context.playStreamEvent;
-	
+
     // The profile data of the player associated with the event
     var profile = context.playerProfile;
-	
+
     // Post data about the event to an external API
     var content = JSON.stringify({user: profile.PlayerId, event: psEvent.EventName});
     var response = http.request('https://httpbin.org/status/200', 'post', content, 'application/json', null, true);
-	
+
     return { externalAPIResponse: response };
 }
 ```

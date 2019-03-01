@@ -16,13 +16,13 @@ This tutorial illustrates how to complement PlayFab's built-in features with som
 
 A/B Testing title data is a planned feature. However, It is possible to build your own solution *now*, using **CloudScript**.
 
-**Requirements**
+## Requirements
 
 - [Writing Custom CloudScript](../../automation/cloudscript/writing-custom-cloudscript.md), and [CloudScript quickstart](../../automation/cloudscript/quickstart.md)
 - [Title Data](../../config/titledata/quickstart.md)
 - [A/B Testing quickstart](../../analytics/ab-testing/quickstart.md)
 
-**Optional Requirements**
+## Optional Requirements
 
 - The final example uses [Unity](../../../sdks/unity3d/quickstart.md), but this technique can be used with any **SDK**.
 
@@ -128,7 +128,7 @@ public void GetContent() {
     PlayFabClientAPI.ExecuteCloudScript(new ExecuteCloudScriptRequest {
         FunctionName = "GetTitleDataAB",
         FunctionParameter = new Dictionary<string, string>() { { "TitleKey", "MyMessage" } },
-    }, 
+    },
     result => Debug.Log(JsonWrapper.SerializeObject(result.FunctionResult)),
     error => Debug.LogError(error.GenerateErrorReport()));
 }
@@ -178,7 +178,7 @@ public class PlayerABTestingTitle : MonoBehaviour {
             // Coroutine will wait here, until we set log in waiting flag to true
             while(!isLoggedIn) yield return null;
 
-            // Secondly, we execute CloudScript call to our function called "GetTItleDataAB"
+            // Secondly, we execute CloudScript call to our function called "GetTitleDataAB"
             // We pass in TitleKey. In this example, it is "MyMessage"
             PlayFabClientAPI.ExecuteCloudScript(new ExecuteCloudScriptRequest {
                 FunctionName = "GetTitleDataAB",
@@ -186,7 +186,7 @@ public class PlayerABTestingTitle : MonoBehaviour {
 
             }, result =>
             {
-                // Once data is obtained, we set isAbDataFetched to true and log the result 
+                // Once data is obtained, we set isAbDataFetched to true and log the result
                 isAbDataFetched = true;
                 Debug.Log(result.FunctionResult);
             },OnError);
