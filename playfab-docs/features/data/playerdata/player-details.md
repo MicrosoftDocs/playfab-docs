@@ -18,7 +18,6 @@ ms.localizationpriority: medium
 
 - Locate the **Player** and select their **ID** label **(2)**.
 
-
 ![Game Manager - Access Player details](media/tutorials/game-manager-access-player-details.png)  
 
 ## Overview
@@ -71,7 +70,7 @@ A PlayFab account contains critical, identifying, player data. As an administrat
 1. **PlayFab ID** - The player ID identifies the player you are currently inspecting.
 2. **Display name** - Allows you to edit the display name for this player.
 3. **Username** - A read-only field for inspecting the player's username. **Username** can be empty. When present, it can be used for a player to log in using a username and password.
-4. **Email** - This field is hidden and locked due to PII concerns. The email field can be empty. When present, it can be used for player to log in using email and password. You may use the **Lock** icon button to unlock and change the email value. 
+4. **Email** - This field is hidden and locked due to PII concerns. The email field can be empty. When present, it can be used for player to log in using email and password. You may use the **Lock** icon button to unlock and change the email value.
 5. **Change Password** - When set, this can be used to assign a new password for the user. This setting is mutually exclusive with **Send password reset** email.
 6. **Send password reset email** - When set, this allows you to send a **password recovery** email when an email value is present. This setting is mutually exclusive with **Change password**.
 7. **Avatar image URL** - This field allows you to force **change avatar** for the user.
@@ -98,4 +97,3 @@ The **Run CloudScript** button on the **Player Overview** page opens the **REVIS
 5. The **Run CloudScript** button - Lets you commit any changes you make on this screen.
 
 ![Game Manager - Player - Run CloudScript](media/tutorials/game-manager-player-run-cloudscript.png)  
-

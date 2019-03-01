@@ -18,9 +18,9 @@ ms.localizationpriority: medium
 >
 > It is provided to give you an early look at an upcoming feature and to allow you to provide feedback while it is still in development.  
 >
-> Access to this feature is restricted to select **Titles**. If you are interested in trying it, you can request access by submitting a ticket on [support.playfab.com](https://support.playfab.com/hc/en-us/requests/new).
+> Access to this feature is restricted to select titles. If you are interested in trying it, you can request access by submitting a ticket on [support.playfab.com](https://support.playfab.com/hc/en-us/requests/new).
 
-**PlayFab UGC** is a new premium feature for assisting **Titles** that want to build **User Generated Content** systems for their games. It’s a full set of **APIs** that allow for **Content** creation, upload, search and simple moderation scenarios. It's designed to provide out-of-the box capabilities that normally require a bit of custom work and service expertise to accomplish.
+**PlayFab UGC** is a new premium feature for assisting titles that want to build user generated content systems for their games. It’s a full set of **APIs** that allow for content creation, upload, search and simple moderation scenarios. It's designed to provide out-of-the box capabilities that normally require a bit of custom work and service expertise to accomplish.
 
 ## Early Access
 
@@ -33,6 +33,7 @@ For now there will be no cost to game developers for use of the **UGC** - howeve
 ## Limitations
 
 The following *known* limitations exist in the system in its current state. Many of these will change in the future.
+
 - **UGC** is only available via server to server calls (no **SDK** support yet) - this will change in the near future.
-- **UGC** *only* supports **Entity**-based **Users**. 
+- **UGC** *only* supports entity-based users.
 - There is currently no **UX/Game Manger** support (just **APIs**) - this will change in the near future.

@@ -67,7 +67,7 @@ Alternatively, you may upload assets via code using the admin **SDK**. This is a
 
 1. First, call [GetContentUploadUrl](xref:titleid.playfabapi.com.admin.content.getcontentuploadurl) and obtain the pre-signed **URL** that will authorize your upload.
 2. Then, use the **URL** to make a **HTTP PUT** request and provide your data, and (optionally) content type.
- 
+
 Consider using the snippet provided below that shows how to get a pre-signed **URL**.
 
 ```csharp
@@ -81,7 +81,7 @@ void GetUploadUrl(string key, string contentType, Action<string> onComplete) {
     PlayFabAdminAPI.GetContentUploadUrl(new GetContentUploadUrlRequest() {
         ContentType = contentType,
         Key = key
-    }, result => onComplete(result.URL), 
+    }, result => onComplete(result.URL),
     error => Debug.LogError(error.GenerateErrorReport()));
 }
 
@@ -115,7 +115,7 @@ void GetDownloadUrl(string key, Action<string> onComplete) {
     PlayFabClientAPI.GetContentDownloadUrl(new GetContentDownloadUrlRequest() {
         Key = key,
         ThruCDN = true
-    }, result => onComplete(result.URL), 
+    }, result => onComplete(result.URL),
     error => Debug.LogError(error.GenerateErrorReport()));
 }
 

@@ -16,11 +16,10 @@ This tutorial describes how to create and use player statistics. Player statisti
 
 Player statistics are also used by leaderboards. This guide covers player statistics exclusively. If you wish to read about how player statistics and leaderboards work together, please read our tutorial [Using resettable statistics and leaderboards](../../social/tournaments-leaderboards/using-resettable-statistics-and-leaderboards.md).
 
-
 > [!NOTE]
 > In some documentation and **API** calls, you may find the term **UserStatistics**. For the purposes of this discussion, the terms *user* and *player* are identical and interchangeable. In the **Game Manager** page, the **Players** tab provides access to the **Users/Players** for your title, and within that, their statistics. Player statistics refers specifically to information bound to a player, not analytics information about player.
 
-### Client API
+## Client API
 
 The client has access to read player statistics, but to prevent cheating, the client is not able to update statistics by default.
 
@@ -93,10 +92,10 @@ To change a **Statistic Aggregation** method, you can use the Game Manager or th
 
 To edit a **Statistic Definition** in **Game Manager**:
 
-- Log into PlayFab.(https://developer.playfab.com/en-us/my-games)
+- Log into [PlayFab](https://developer.playfab.com/en-us/my-games).
 - Select your **Title**.
 - Select **Leaderboards** from the menu on the left (**Statistics** and **Leaderboards** are closely related).
-- Select the existing statistic you want to modify, or - 
+- Select the existing statistic you want to modify, or -
 - Select the **New Leaderboard** button.
   - For an existing statistic, you'll have another page, with an **Edit Leaderboard** button.
 

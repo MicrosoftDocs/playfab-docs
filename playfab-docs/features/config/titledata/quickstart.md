@@ -90,7 +90,7 @@ public void SetTitleData() {
         new SetTitleDataRequest {
             Key = "MonsterName",
             Value = "Dorf"
-        }, 
+        },
         result => Debug.Log("Set titleData successful"),
         error => {
             Debug.Log("Got error setting titleData:");
@@ -130,7 +130,7 @@ public void SetTitleInternalData() {
         new SetTitleDataRequest {
             Key = "PlayFab",
             Value = "{ \"Status\": \"Secretly Awesome\" }"
-        }, 
+        },
         result => { Debug.Log("Set titleData successful"); },
         error =>
         {

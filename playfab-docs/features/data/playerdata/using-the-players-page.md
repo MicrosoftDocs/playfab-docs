@@ -49,9 +49,9 @@ For example, in the preceding screenshot we chose 2 users:
 1. **Lee**
 2. **Vicky**
 3. **3BB0E45D6CB3304A**
-4. **962B724F659A776A**. 
+4. **962B724F659A776A**.
 
-> [!NOTE] 
+> [!NOTE]
 > Remember - you can use any [searchable player field](xref:titleid.playfabapi.com.admin.accountmanagement.getplayerprofile#playerprofilemodel) as a token.
 
 Now let's test a few querying techniques.

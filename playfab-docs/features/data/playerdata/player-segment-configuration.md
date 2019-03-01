@@ -81,7 +81,6 @@ In our example shown here, the segment configuration requires 4 simple steps.
 
 ![Game Manager - players - new segment configuration](media/tutorials/game-manager-players-new-segment-configuration.png)  
 
-
 ## Advanced segment filtering
 
 Segment filtering allows you to define what players are included in the segment.
@@ -96,10 +95,10 @@ So to be part of a segment:
 
 - A player must be part of at least 1 group.
 
-     - To be part of a group, a player must meet all conditions (filters).
-     - This is denoted by the OR/AND operators: 
-          - Filters are combined using the AND operator.
-          - Groups are combined using the OR operator.
+  - To be part of a group, a player must meet all conditions (filters).
+  - This is denoted by the OR/AND operators:
+    - Filters are combined using the AND operator.
+    - Groups are combined using the OR operator.
 
 The screenshot shown above is an example of how a segment can be defined. This segment consists of 2 groups:
 
@@ -130,6 +129,7 @@ Each filter has a unique configuration and purpose. As of 4/30/2017 the followin
 
 > [!NOTE]
 > The trick here is that a player may start with authentication based on, say, an **iOS Device ID**. Later, a player may have a **GameCenter** account linked. In this case, the player origination will be the **iOS Device ID** (example, players that first signed in using an **iOS Device ID**).
+
 - **Virtual currency balance** filter - Allows you to filter based on a player's custom virtual currency deposit (example -  players that have less than 50 Crystal).
 
 ## How to manage actions
@@ -156,7 +156,6 @@ The general workflow for the **Actions** panel is the following:
 
 ![Game Manager - Players - Actions panel](media/tutorials/game-manager-players-actions-panel.png)  
 
-
 ## How to inspect player segments
 
 It is possible to look up what segments a player belongs to by means of the **Player Segments** page.
@@ -165,7 +164,7 @@ To access **Player Segments**:
 
 - Select **Players** in the sidebar menu **(1)**.
 
-- Then select the **Players** tab **(2)**. 
+- Then select the **Players** tab **(2)**.
 - Locate the **Player** you want to inspect, and select the **ID** label **(3)**.
 - Finally, select **Segments** in the **Players Toolbar (4)**.
 

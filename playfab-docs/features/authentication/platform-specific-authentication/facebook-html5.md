@@ -63,7 +63,7 @@ A new **Application** pop-up will open.
 
 ![Facebook login get started](media/tutorials/facebook-html5/login-get-started.png)  
 
- The page should open to display the example shown below. 
+ The page should open to display the example shown below.
 
 - Make sure that **Facebook Login/Settings (1)** is opened on the menu to the left, and you are in  **Client OAuth Settings**.
 - Verify that both the **Client OAuth** and **Web OAuth** are on (marked **Yes**) **(2)**.
@@ -146,7 +146,7 @@ Use the following **HTML** file to test your PlayFab authentication using **Face
         function loginWithFacebook() {
             logLine("Logging in via Facebook...");
 
-            // Standart practice: make call to FB.login.
+            // Standard practice: make call to FB.login.
             // This will show Facebook popup window. To prevent browsers from locking it,
             // always make sure to call it from Button click event
             FB.login(function(response){
@@ -199,4 +199,3 @@ Use the following **HTML** file to test your PlayFab authentication using **Face
 
 - You will obtain a PlayFab session ticket.
 - At this point you have successfully configured PlayFab and **Facebook** authentication using **HTML5** and **JavaScript**.
-

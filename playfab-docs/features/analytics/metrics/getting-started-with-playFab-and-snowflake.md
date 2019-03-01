@@ -57,6 +57,7 @@ This view's schema deserves some explanation.
 ![Databases PlayFab Archive Shared View](media/tutorials/databases-playfab-archive-shared-view.png)  
 
 The most important **Column** is called **P** (for **Payload**). The type of this column is **OBJECT**, which is **Snowflake's** way of saying **JSON**.
+
 > [!NOTE]
 > To understand how this works, refer to later examples, or [their docs on semi-structured data](https://docs.snowflake.net/manuals/sql-reference/data-types-semistructured.html).
 

@@ -28,6 +28,7 @@ This tutorial guides you through an example of PlayFab authentication using **Fa
 ### Registering a Facebook application
 
 Start by navigating to the [Facebook Developer Portal](https://developers.facebook.com/):
+
 - Move your mouse over the **My Apps** button **(1)**.
 - Select **Add a New App (2)**, as shown on the picture below.
 
@@ -43,11 +44,10 @@ A new **Application** pop-up will open.
 
 ![Facebook new app ID](media/tutorials/facebook-new-app-id.png)  
 
-
 - Navigate to the **Settings** tab **(1)**.
-- Then move to the **Basic** sub-tab **(2)**. 
+- Then move to the **Basic** sub-tab **(2)**.
 - Locate your **Application ID (3)**.
-- Copy it somewhere to a safe place that is easily accessed. 
+- Copy it somewhere to a safe place that is easily accessed.
 We will use it later to set up the **Facebook SDK**.
 
 ![Facebook save app ID](media/tutorials/facebook-save-app-id.png)  
@@ -77,7 +77,7 @@ A page with **Login** product settings should open.
 
 Open your **Unity Project**:
 
-- Select **Facebook** in the file menu **(1)**. 
+- Select **Facebook** in the file menu **(1)**.
 - Then select **Edit Settings (2)**.
 
 ![Edit Facebook Unity project settings](media/tutorials/facebook-unity/edit-project-settings.png)  
@@ -118,7 +118,7 @@ public class PlayfabFacebookAuthExample : MonoBehaviour
         SetMessage("Initializing Facebook..."); // logs the given message and displays it on the screen using OnGUI method
 
         // This call is required before any other calls to the Facebook API. We pass in the callback to be invoked once initialization is finished
-        FB.Init(OnFacebookInitialized);    
+        FB.Init(OnFacebookInitialized);
     }
 
     private void OnFacebookInitialized()
@@ -141,7 +141,7 @@ public class PlayfabFacebookAuthExample : MonoBehaviour
             SetMessage("Facebook Auth Complete! Access Token: " + AccessToken.CurrentAccessToken.TokenString + "\nLogging into PlayFab...");
 
             /*
-             * We proceed with making a call to PlayFab API. We pass in current Facebook AccessToken and let it create 
+             * We proceed with making a call to PlayFab API. We pass in current Facebook AccessToken and let it create
              * and account using CreateAccount flag set to true. We also pass the callback for Success and Failure results
              */
             PlayFabClientAPI.LoginWithFacebook(new LoginWithFacebookRequest { CreateAccount = true, AccessToken = AccessToken.CurrentAccessToken.TokenString},

@@ -59,7 +59,7 @@ void GetPlayerProfile(string playFabId) {
         ProfileConstraints = new PlayerProfileViewConstraints() {
             ShowDisplayName = true
         }
-    }, 
+    },
     result => Debug.Log("The player's DisplayName profile data is: " + result.PlayerProfile.DisplayName),
     error => Debug.LogError(error.GenerateErrorReport()));
 }
@@ -87,7 +87,7 @@ void CreatePlayerAndUpdateDisplayName(string playFabId) {
             ShowCreated = true,
             ShowLastLogin = true
         }
-    }, 
+    },
     result => Debug.Log("The player's profile Created date is: " + result.PlayerProfile.Created),
     error => Debug.LogError(error.GenerateErrorReport()));
 }

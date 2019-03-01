@@ -30,7 +30,6 @@ You must call the server **APIs** from a dedicated server or through a **CloudSc
 
 > [!TIP]
 > We *do not recommend* using server **APIs** from within a game client. If you need to make use of a server **API**, use **CloudScript** for this type of functionality.
-
 > [!NOTE]
 > Publisher data values are copied and distributed to potentially hundreds of machines in the PlayFab cluster server. As part of this process, this data is cached and changes may take up to *fifteen minutes* to refresh in those caches. Publisher data is best suited for *global constant/static data*, and *is not* suitable or reliable as *global variables*.
 
@@ -50,7 +49,7 @@ public void ServerSetPublisherData() {
     PlayFabServerAPI.SetPublisherData(new SetPublisherDataRequest() {
             Key = "SomeKey",
             Value = "SomeValue"
-        }, 
+        },
         result => Debug.Log("Complete setting publisher data"),
         error => {
             Debug.Log("Got error setting publisher data");
@@ -110,14 +109,13 @@ PlayFab exposes 3 protection levels for user Publisher data from the client **AP
 The following snippet demonstrates how to set all 3 kinds of Publisher data using client and server **APIs**.
 
 ```csharp
-// Use client API to set User Publisher Data for current user 
-public void ClientSetUserPublisherData() {
+// Use client API to set User Publisher Data for current user
     PlayFabClientAPI.UpdateUserPublisherData(new UpdateUserDataRequest() {
          Data  = new Dictionary<string, string>() {
              { "SomeKey", "SomeValue" }
          }
-    }, 
-    result => Debug.Log("Complete setting Regular User Publisher Data"), 
+    },
+    result => Debug.Log("Complete setting Regular User Publisher Data"),
     error =>
     {
         Debug.Log("Error setting Regular User Publisher Data");
@@ -125,15 +123,15 @@ public void ClientSetUserPublisherData() {
     });
 }
 
-// Use server API to set Read-Only User Publisher Data for selected user 
+// Use server API to set Read-Only User Publisher Data for selected user
 public void ServerSetUserPublisherReadOnlyData() {
     PlayFabServerAPI.UpdateUserPublisherReadOnlyData(new UpdateUserDataRequest() {
          PlayFabId = "< PlayFab Player Id >",
          Data  = new Dictionary<string, string>() {
              { "SomeKey", "SomeValue" }
          }
-    }, 
-    result => Debug.Log("Complete setting Read-Only User Publisher Data"), 
+    },
+    result => Debug.Log("Complete setting Read-Only User Publisher Data"),
     error =>
     {
         Debug.Log("Error setting Read-Only User Publisher Data");
@@ -141,15 +139,15 @@ public void ServerSetUserPublisherReadOnlyData() {
     });
 }
 
-// Use server API to set Internal User Publisher Data for selected user 
+// Use server API to set Internal User Publisher Data for selected user
 public void ServerSetUserPublisherInternalData() {
     PlayFabServerAPI.UpdateUserPublisherInternalData(new UpdateUserInternalDataRequest() {
          PlayFabId = "< PlayFab Player Id >",
          Data  = new Dictionary<string, string>() {
              { "SomeKey", "SomeValue" }
          }
-    }, 
-    result => Debug.Log("Complete setting Internal User Publisher Data"), 
+    },
+    result => Debug.Log("Complete setting Internal User Publisher Data"),
     error =>
     {
         Debug.Log("Error setting Internal User Publisher Data");
@@ -163,7 +161,7 @@ public void ServerSetUserPublisherInternalData() {
 The following snippet demonstrates how to get all 3 kinds of **Publisher** data using client and server **APIs**.
 
 ```csharp
-// Use client API to get Regular User Publisher Data for selected user 
+// Use client API to get Regular User Publisher Data for selected user
 public void ClientGetUserPublisherData() {
     PlayFabClientAPI.GetUserPublisherData(new GetUserDataRequest() {
         PlayFabId = "<PlayFab Player Id>"
@@ -177,7 +175,7 @@ public void ClientGetUserPublisherData() {
     });
 }
 
-// Use client API to get Read-Only User Publisher Data for selected user 
+// Use client API to get Read-Only User Publisher Data for selected user
 public void ClientGetUserPublisherReadOnlyData() {
     PlayFabClientAPI.GetUserPublisherReadOnlyData(new GetUserDataRequest() {
         PlayFabId = "<PlayFab Player Id>"
@@ -191,7 +189,7 @@ public void ClientGetUserPublisherReadOnlyData() {
     });
 }
 
-// Use server API to get Internal User Publisher Data for selected user 
+// Use server API to get Internal User Publisher Data for selected user
 public void ServerGetUserPublisherInternalData() {
     PlayFabServerAPI.GetUserPublisherInternalData(new GetUserDataRequest() {
         PlayFabId = "<PlayFab Player Id>"

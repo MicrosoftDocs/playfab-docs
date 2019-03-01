@@ -41,7 +41,7 @@ To create your new S3 bucket, you must go though a 4-step wizard:
 ![Amazon S3 - Create bucket - add versioning](media/tutorials/amazon-s3-create-bucket-add-versioning.png)  
 
 - During this step, make sure that you have **Read/Write** access **(1)** for objects.
- - Select the **Next** button **(2)** when you are done.
+- Select the **Next** button **(2)** when you are done.
 
 ![Amazon S3 - Create bucket - enable read/write](media/tutorials/amazon-s3-create-bucket-enable-read-write.png)  
 

@@ -93,7 +93,7 @@ From here, you enter your **API Endpoint** which can be found in PlayFab:
 
 ![Google Play Developer Console enter API endpoint](media/tutorials/google-unity/gdpc-set-api-endpoint.png)  
 
-- Enter this endpoint -  **https://[titleid].playfabapi.com** - in the **Launch URL** field.
+- Enter this endpoint **https://[titleid].playfabapi.com** in the **Launch URL** field.
 - Select the **Save** button.
 - This will provide you with the proper **Client ID**.
 
@@ -110,11 +110,12 @@ To obtain your secret key, follow the link to your **API Console**.
 
 ## PlayFab Google Sign-In setup
 
-PlayFab has its own process for setting up **Google** sign-in. You can do this in your PlayFab developer account. If you don't have one, you can [sign-up here](https://developer.playfab.com/en-us/sign-up). 
+PlayFab has its own process for setting up **Google** sign-in. You can do this in your PlayFab developer account. If you don't have one, you can [sign-up here](https://developer.playfab.com/en-us/sign-up).
 
 To set up **Google** in PlayFab:
+
 - Navigate to the **Add-ons** section in your dashboard.
-- Go to the **Google Add-On**. 
+- Go to the **Google Add-On**.
 - From there, select the **Install Add-on** button.
 
 There are a few things you need to enter into this form:
@@ -124,6 +125,7 @@ There are a few things you need to enter into this form:
 
 > [!NOTE]
 > You can get this License Key from the [Google Developer Console](https://play.google.com/apps/publish) under the **Services & APIs** section. Look for a section entitled **YOUR LICENSE KEY FOR THIS APPLICATION**. Copy and paste the Base64-encoded RSA Public Key into this field.
+
 - The **Google OAuth Client ID** - This is the Web Client ID that you used in the **Google Play Games SDK** setup in **Unity**.
 - The **Google OAuth Client Secret** - This is the secret key that you obtained in the last step.
 
@@ -191,7 +193,7 @@ The next set of code, the **OnSignInButtonClicked()** function shown in the exam
             }
             else
             {
-                GoogleStatusText.text = "Google Failed to Authroize your login";
+                GoogleStatusText.text = "Google Failed to Authorize your login";
             }
 
         });

@@ -82,17 +82,17 @@ foreach(title in <all my titles>){
     //so you can find them in PlayFab
     foreach(cred in user.credentials){
       //There are a few helper Admin and Server API's that help you do this part.
-      //See below this psuedo code block for some tips!
+      //See below this pseudo code block for some tips!
       pfid = <find PlayFabId in Title using the credential>
       PlayFabIdList.add(pfid)
     }
 
-    //go through the list of PlayFabIds that you have and fine all titles that 
+    //go through the list of PlayFabIds that you have and fine all titles that
     //performing the action would affect
     foreach(pfid in PlayFabIdList){
       AffectedTitles = title.GetPlayedTitleList(pfid)
     }
-} 
+}
 ```
 
 Here is a quick example on how to use **GetPlayedTitleList**.
@@ -175,7 +175,7 @@ if ( confirm successful ) {
    listOfReceipts
    foreach(title in <all my titles>){
 
-       //You only need to remove the Master Player once per namespace, so check that you have not 
+       //You only need to remove the Master Player once per namespace, so check that you have not
        //already performed this action in the namespace, or you will get an error that
        //the player is already queued for deletion.
        if(title not in listOfTitlesRemovedFrom){
@@ -190,7 +190,7 @@ if ( confirm successful ) {
            }
        }
    }
-   
+  
    //Save listOfReceipts somewhere as proof of deletion.
 
 }
@@ -256,7 +256,7 @@ It is easy to do harm with these **APIs**. Exporting data for or deleting the *w
 
 It is your responsibility as the game developer to verify that the credentials are owned by the player requesting an export or deletion of their player data. PlayFab does *not* provide any type of verification when using these **APIs**.
 
-However **PlayFab** *does* offer an [email verification feature](../../engagement/emails/using-a-rule-to-verify-a-contact-email-address.md). But our solution is not the only option for verification. You can create your *own* process too. 
+However **PlayFab** *does* offer an [email verification feature](../../engagement/emails/using-a-rule-to-verify-a-contact-email-address.md). But our solution is not the only option for verification. You can create your *own* process too.
 
 Regardless of which technology you use, we suggest that you do some sort of verification before performing any of these actions.
 

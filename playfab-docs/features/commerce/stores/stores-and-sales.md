@@ -130,7 +130,7 @@ void DefinePurchase()
         StoreId = storeId,
         Items = new List<ItemPurchaseRequest> {
              // The presence of these lines are based on the results from GetStoreItems, and user selection - Yours will be more generic
-            new ItemPurchaseRequest { ItemId = "Small Health Potion", Quantity = 20,}, 
+            new ItemPurchaseRequest { ItemId = "Small Health Potion", Quantity = 20,},
             new ItemPurchaseRequest { ItemId = "Medium Health Potion", Quantity = 100,},
             new ItemPurchaseRequest { ItemId = "Large Health Potion", Quantity = 2,},
         }
@@ -185,6 +185,7 @@ Each call should check for multiple failure conditions. If the response indicate
 If the response indicates a connectivity failure, you can try again with an exponential back-off delay.
 
 ## Conclusion
+
 Stores are a great mechanism for encouraging your players to purchase items.
 
 Stores work with any kind of virtual currency. Stores can also work with real money through an alternate set of **API** methods.

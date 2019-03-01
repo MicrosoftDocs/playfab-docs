@@ -35,10 +35,9 @@ Once you have set up a similar set of items to work with in your catalog, let's 
 
 ## Building drop tables
 
-### In Game Manager:
+In Game Manager:
 
 - Navigate to your **Title**.
-
 - Select **Economy** from the menu on the left.
 - Go to the **Catalogs** tab.
 - Go to the **Drop Tables** column.

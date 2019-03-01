@@ -39,27 +39,28 @@ Follow through the tutorial for the app, if there is any **(1)**.
 
 - Then select one of two options to add your PlayFab account:
 
-- Either scan a **barcode (1)**.
+- Either scan a **bar code (1)**.
 - Or type in the **key** manually **(2)**.
 
 ![Google - 2-Step Verification - Add account](media/tutorials/google-2-step-verification-add-account.png)  
 
 Whichever option you choose, follow to the PlayFab website and navigate to **Game Manager**. On the **Dashboard** tab:
+
 - Select the **Account** panel **(1)**.
 - Then select **My Profile (2)**.
 
 ![Game Manager - Dashboard - Open My Profile](media/tutorials/game-manager-dashboard-open-my-profile.png)  
 
-The Account settings will open.
+The **Account** settings will open.
 
 - Verify that the **Enable two-factor authentication** checkbox is checked.
-- Depending on which option you have chosen, use the **code (1)** or a **barcode (2)** to add a new Account using the application on your device.
+- Depending on which option you have chosen, use the **code (1)** or a **bar code (2)** to add a new account using the application on your device.
 
 ![Game Manager - My Profile - Two-Factor Authentication](media/tutorials/game-manager-my-profile-two-factor-authentication.png)  
 
 Once this is done, you will obtain a two-factor code.
 
-![Google - Authenticator - Confirm verification code](media/tutorials/google-authenticator-confirm-verification-code.png) 
+![Google - Authenticator - Confirm verification code](media/tutorials/google-authenticator-confirm-verification-code.png)
 
 Head back to the **Profile** settings in the PlayFab **Game Manager**:
 

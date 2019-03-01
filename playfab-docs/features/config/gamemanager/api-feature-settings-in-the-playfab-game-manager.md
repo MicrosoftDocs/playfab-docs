@@ -55,7 +55,7 @@ If, for example, you are performing a sensitive migration with downtime, stray *
 > [!WARNING]
 > Keep in mind, that marking this checkbox will **LITERALLY BREAK YOUR GAME**, so use it with caution!
 
-Once you have decided you need to turn **API** access off, and you check the box, all **API** requests will begin to fail within a few minutes. 
+Once you have decided you need to turn **API** access off, and you check the box, all **API** requests will begin to fail within a few minutes.
 
 PlayFab will return an **HTTP Status Code 400 "Bad Request"** indicating that the title has disabled such usage.
 

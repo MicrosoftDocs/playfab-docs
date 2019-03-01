@@ -12,13 +12,13 @@ ms.localizationpriority: medium
 
 # Metrics
 
-## What are metrics?
+## What are metrics?  
 
 When raw data is combined to produce a meaningful measure, we refer to the result as a metric. Certain metrics have become standard across the game industry because they’ve proven valuable at informing the team and guiding the decision-making process.
 
 Some examples include:
-  
-- New Players
+
+- New Players  
 - Monthly Active Users  
 - Session Length  
 - Retention  

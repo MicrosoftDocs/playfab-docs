@@ -129,7 +129,7 @@ This example also demonstrates opening the container with a key - an *optional* 
 - That **Containers** can optionally define a **Key Item**, which is then required to unlock the **Container** - in this case, a **Crystal Key**.
 - It is highly suggested that your **Container** and any **Key** *both* be **Consumable**, with a positive use count, so that they are removed from the player inventory after use.
 
-**Server code**
+### Server code
 
 ```csharp
 void GrantItem() {
@@ -143,7 +143,7 @@ void GrantItem() {
 }
 ```
 
-**Client code**
+### Client code
 
 ```csharp
 void OpenContainer() {
@@ -177,6 +177,7 @@ Because the player inventory capacity is *not* infinite, this pattern is greatly
 ## Example: buying inventory items from the player
 
 There is no built-in **API** for buying back inventory items from the player, as the process is game-specific. However, you can use the *existing* **API** methods to craft your own Sell Item experience:
+
 - **Server/[RevokeInventoryItem](xref:titleid.playfabapi.com.server.playeritemmanagement.revokeinventoryitem)** allows you to remove an inventory item.
 
 - **Server/[AddUserVirtualCurrency](xref:titleid.playfabapi.com.server.playeritemmanagement.adduservirtualcurrency)** can return an appropriate amount of virtual currency. It is *not* currently possible to return real money through PlayFab **API** methods.
@@ -227,7 +228,7 @@ handlers.SellItem = function (args) {
 
 - Make sure to verify all client input information as *valid* before making any changes.
 
-- **CloudScript** is *not* atomic, so call order matters: **AddUserVirtualCurrency** may succeed and **RevokeInventoryItem** may fail. 
+- **CloudScript** is *not* atomic, so call order matters: **AddUserVirtualCurrency** may succeed and **RevokeInventoryItem** may fail.
 
 > [!TIP]
 > It is generally better to give the player something they *didn't* earn in this process, than to take something away *without* compensation.
@@ -240,11 +241,11 @@ void SellItem()
     PlayFabClientAPI.ExecuteCloudScript(new ExecuteCloudScriptRequest
     {
         // This must match "SellItem" from the "handlers.SellItem = ..." line in the CloudScript file
-        FunctionName = "SellItem", 
+        FunctionName = "SellItem",
         FunctionParameter = new Dictionary<string, string>{
             // This is a hex-string value from the GetUserInventory result
             { "soldItemInstanceId", "sellItemInstanceId" },
-            // Which redeemable virutal currency should be used in your game
+            // Which redeemable virtual currency should be used in your game
             { "requestedVcType", "AU" },
         }
     }, LogSuccess, LogFailure);

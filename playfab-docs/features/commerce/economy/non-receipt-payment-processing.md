@@ -226,7 +226,7 @@ Fortunately, this is simple. In your title setup in **Facebook**, simply enter t
 https://{{TitleId}}.playfabapi.com/ThirdPartyPayments/FacebookPaymentUpdate
 ```
 
-Where **{{TitleId}}** is the **Title ID** for your game in **PlayFab** (for example, https://aaa.playfabapi.com/ThirdPartyPayments/FacebookPaymentUpdate). 
+Where **{{TitleId}}** is the **Title ID** for your game in **PlayFab** (for example, https://aaa.playfabapi.com/ThirdPartyPayments/FacebookPaymentUpdate).
 
 There’s no need to specify a token in the **Facebook** setup - just set the **Callback URL**, confirm that your PlayFab setup is correct in the **Facebook Add-ons** page of the **Game Manager**, and you’re set.
 

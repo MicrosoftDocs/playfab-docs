@@ -53,7 +53,7 @@ Now select **Servers** from the menu to the left.
 
 - Go to the **Tasks** tab.
 - Select **NEW TASK** on the top right corner of your screen.
-- This will bring up the **Create Task** view. 
+- This will bring up the **Create Task** view.
 - In the **Type of task** field, choose **Run a CloudScript function**.
 - Below that, you’ll be able to pick a function from the currently deployed revision of **CloudScript** and specify arguments to pass in.
 - Choose the **adjustRareDropRate Handler** that you wrote in the previous step.

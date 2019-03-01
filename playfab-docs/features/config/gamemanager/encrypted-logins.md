@@ -25,7 +25,6 @@ In this guide we will:
 2. Introduce an **API** Policy rule to enable protection on a certain method.
 3. Change the client to use a player shared key to retrieve the public title key and encrypt the payload.
 
-
 > [!NOTE]
 > Playfab makes the following disclaimer: "All of our **API** calls are already safely encrypted to modern standards, and the standard **API** call encryption is everything most customers will need. This feature represents an *additional* layer of security built around making it harder for players to use an unauthorized client. It is *not* foolproof - it merely increases the difficulty bar for hackers. For most developers, the mild security increase will not be worth the extra effort required."
 

@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Player data quickstart
 
-> [!NOTE] 
+> [!NOTE]
 > In the PlayFab **APIs**, the function names utilize the term **UserData**. In the **Game Manager**, this concept is described as **Player Data**. They are identical, and interchangeable.
 
 This quickstart describes how to create and use player data. Player data is information that applies to an individual player or player group (shared data) and is stored as Key/Value Pairs (KVPs) by PlayFab.
@@ -52,7 +52,7 @@ void SetUserData() {
             {"Ancestor", "Arthur"},
             {"Successor", "Fred"}
         }
-    }, 
+    },
     result => Debug.Log("Successfully updated user data"),
     error => {
         Debug.Log("Got error setting user data Ancestor to Arthur");
@@ -105,7 +105,7 @@ public void UpdateUserReadOnlyData() {
         },
         Permission = UserDataPermission.Public
     },
-    result => Debug.Log("Set read-only user data successful"), 
+    result => Debug.Log("Set read-only user data successful"),
     error => {
         Debug.Log("Got error updating read-only user data:");
         Debug.Log(error.GenerateErrorReport());
@@ -155,8 +155,8 @@ public void UpdateUserInternalData() {
             {"Class", "Fighter"},
             {"Race", "Human"},
         },
-    }, 
-    result => Debug.Log("Set internal user data successful"), 
+    },
+    result => Debug.Log("Set internal user data successful"),
     error => {
         Debug.Log("Got error updating internal user data:");
         Debug.Log(error.GenerateErrorReport());
@@ -235,8 +235,8 @@ As explained in the **CloudScript** tutorial, you can call the following logic f
 public void CloudIncrement() {
     PlayFabClientAPI.ExecuteCloudScript( new ExecuteCloudScriptRequest {
         FunctionName = "IncrementReadOnlyUserData"
-    }, 
-    result => Debug.Log("CloudScript call successful"), 
+    },
+    result => Debug.Log("CloudScript call successful"),
     error => {
         Debug.Log("CloudScript call failed");
         Debug.Log(error.GenerateErrorReport());

@@ -20,7 +20,7 @@ To access the player logins page:
 
 - Select **Players** found in the sidebar menu **(1)**.
 
-- Then select the  **Players** tab **(2)**. 
+- Then select the  **Players** tab **(2)**.
 - Locate the **Player** you want to inspect.
 - Select the **ID** label **(3)**.
 - Finally, select **Logins** in the **Players Toolbar (4)**.

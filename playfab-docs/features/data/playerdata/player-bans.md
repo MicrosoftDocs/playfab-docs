@@ -39,8 +39,8 @@ public void ReportPlayer(string problematicPlayerId, string reason) {
 
 This **API** call will produce:
 
-- A **Report Event**, which you will be able to locate via the **Analytics** tool **(1)**. 
-- Select the **player_reported_as_abusive** event type **(2)**. 
+- A **Report Event**, which you will be able to locate via the **Analytics** tool **(1)**.
+- Select the **player_reported_as_abusive** event type **(2)**.
 - This will show:
   - The **Event Name (3)**.
   - The reported **Player ID (4)**.
@@ -58,9 +58,8 @@ Once the problematic player is identified, you may apply a ban. A community mana
 
 ![Game Manager - Players - Bans](media/tutorials/game-manager-players-bans.png)  
 
-- An **Add Ban** form will appear. 
+- An **Add Ban** form will appear.
 - Type in the **Reason** for the **Ban (1)**.
-
 - Choose if you want to **Ban permanently (2)**.
 - Or specify the **Duration in hours (3)** you want the **Ban** to be in effect.
 - Optionally, you can **Ban** by a specific **IP address (4)**.
