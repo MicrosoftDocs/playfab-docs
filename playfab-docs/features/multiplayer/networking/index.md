@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 >
 > It is provided to give you an early look at an upcoming feature and to allow you to provide feedback while it is still in development.  
 >
-> Access to this feature is restricted to select titles, with SDKs available for Windows 10 PCs and Xbox One. SDKs for iOS, Android, Nintendo Switch, and Sony PlayStation will be available this summer. If you are interested in trying it, you can request access by submitting a ticket on [support.playfab.com](https://support.playfab.com/hc/en-us/requests/new).
+> Access to this feature is restricted to select titles, with SDKs available for Windows 10 PCs and Xbox One. SDKs for iOS, Android, Nintendo Switch, and Sony PlayStation will be available this summer. If you are interested in this feature, you can request access by submitting a ticket on [support.playfab.com](https://support.playfab.com/hc/en-us/requests/new).
 
 PlayFab Parties is a set of libraries and services for easily adding multiplayer real-time networking and chat communication to your game.
 
