@@ -12,11 +12,11 @@ ms.localizationpriority: medium
 
 # Recommendations for Xbox Live games building multiplayer experiences 
 
-This tutorial provides recommendations for Xbox Live games interested in using PlayFab services to accomplish multiplayer scenarios.
+This tutorial provides recommendations for Xbox Live games interested in using PlayFab services to accomplish multiplayer scenarios across PC, Mobile, and Xbox One.
 
-PlayFab has partnered with Xbox Live to allow game studios leveraging the Xbox Live gamer network to enjoy certain PlayFab services for free on Xbox One and PC. This includes matchmaking and Parties, as well as other services<!-- (TBD link)-->. If you would like to take advantage of this Xbox Live subsidy, Microsoft recommends the following multiplayer design:
+PlayFab has partnered with Xbox Live to allow game studios leveraging the Xbox Live identity and gaming community to enjoy certain PlayFab services for free. This includes Matchmaking and Parties, as well as other services<!-- (TBD link)-->. If you would like to take advantage of this program, Microsoft recommends the following multiplayer design:
 
-1. Use the Xbox Live SDK to interface with Xbox Live social capabilities like Presence, Profile Cards, and game invites. 
+1. Use the [Xbox Live SDK](https://docs.microsoft.com/en-us/windows/uwp/xbox-live/developer-program-overview) to interface with Xbox Live social capabilities like Presence, Profile Cards, and game invites. 
 2. Use PlayFab Matchmaking to match players.
 3. Use PlayFab Parties to connect players for device-to-device networking or chat.
 
