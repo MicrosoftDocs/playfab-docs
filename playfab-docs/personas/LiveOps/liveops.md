@@ -1,7 +1,7 @@
 ---
-title: Getting started for LiveOps
+title: Getting started with LiveOps
 author: v-kciril
-description: Getting started page for LiveOps.
+description: The getting started page for LiveOps.
 ms.author: v-kciril
 ms.date: 01/25/2019
 ms.topic: article
