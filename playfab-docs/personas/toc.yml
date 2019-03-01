@@ -12,7 +12,7 @@
       href: LiveOps/intro-liveops.md
     - name: LiveOps techniques
       href: LiveOps/liveops-techniques.md
-  - name: LiveOps Design Guides
-    href: LiveOps/liveops-design-guides.md
+    - name: LiveOps features
+      href: LiveOps/liveops-playfab-features.md
   - name: Tutorials
     href: LiveOps/liveops-tutorials.md

@@ -1,5 +1,5 @@
 ---
-title: LiveOps Features
+title: LiveOps features
 author: v-kciril
 description: Techniques for using LiveOps with PlayFab.
 ms.author: v-kciril
