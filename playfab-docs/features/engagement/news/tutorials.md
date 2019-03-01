@@ -12,4 +12,6 @@ ms.localizationpriority: medium
 
 # News Tutorials
 
-This tutorial shows you how to use Title News to communicate with players.
+This tutorial shows you how to set a default language for your title and for your players.
+
+- [Setting default languages](setting-default-languages.md)

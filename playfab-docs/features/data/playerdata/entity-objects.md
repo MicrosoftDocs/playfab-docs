@@ -10,7 +10,7 @@ keywords: playfab, data, entities, accounts
 ms.localizationpriority: medium
 ---
 
-## Entity objects
+# Entity objects
 
 Entity objects allow you to read and write small **JSON**-serializable objects attached to an entity. All entity types support the same **GetObjects** and **SetObjects** methods.
 

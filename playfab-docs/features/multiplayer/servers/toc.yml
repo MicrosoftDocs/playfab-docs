@@ -3,11 +3,9 @@
   items:
   - name: Accessing increased core limits and additional Azure regions
     href: identifying-and-increasing-core-limits.md
-  - name: Archived Release Notes - PlayFab Multiplayer Servers (Thunderhead)
-    href: thunderhead-archived-release-notes.md
   - name: Basics of a PlayFab game server
     href: basics-of-a-playFab-game-server.md
-  - name: Billing for PlayFab Multiplayer Servers 2.0
+  - name: Billing for PlayFab Multiplayer Servers 
     href: billing-for-thunderhead.md
   - name: Lifecycle of a multiplayer server build region
     href: multiplayer-build-region-lifecycle.md
@@ -15,11 +13,7 @@
     href: multiplayer-build-lifecycle.md
   - name: Multiplayer Servers - detailed price sheet
     href: multiplayer-servers-detailed-price-sheet.md
-  - name: PlayFab Multiplayer PowerShell Update - December 4, 2018
-    href: playfab-multiplayer-powershell-update-12042018.md
-  - name: PlayFab Multiplayer Server 2.0 - Managed Container Update
-    href: thunderhead-managed-container-update.md
-  - name: PlayFab Multiplayer Servers 2.0 (Thunderhead)
+  - name: PlayFab Multiplayer Servers 
     href: thunderhead.md
 - name: Quickstart
   href: quickstart.md
