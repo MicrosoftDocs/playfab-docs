@@ -1,5 +1,5 @@
 ---
-title: Cross-Platform C++
+title: Cross-Platform C++ SDKs
 author: v-thopra
 description: landing page for PlayFab Cross-Platform C++ SDKs.
 ms.author: v-thopra

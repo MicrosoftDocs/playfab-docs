@@ -24,7 +24,7 @@ In this quickstart tutorial, you will:
 ## Set up a virtual currency
 
 Virtual currencies are the foundation of in-game economies. Players and characters can be granted these currencies, which can then be used to buy or trade Items. Items can have a cost in either a virtual currency or real money. Each title can support multiple arbitrary virtual currencies. This provides flexibility for your Game to implement whatever medium of exchange you desire (e.g. gold, gems, hearts or interstellar credits).
- 
+
 1. Go to Economy and select Currencies.
 2. Click New Currency and change these fields:
     Currency code (2 uppercase characters): "GD"
@@ -70,9 +70,9 @@ Playfab’s catalog APIs support many strategies for item purchasing, such as si
 Once you have a Catalog with Items supported by Virtual Currencies, you can use light up your economy with all sorts of scenarios:
 
 1. Real World Purchases: our Getting Started with In App Purchasing and our Non-Receipt Payment Processing    tutorials help you connect your virtual economy with existing stores
-2. You can leverage your Catalog to create Bundles, Containers and Drop Tables. 
-3. You can use Item attributes to define multiple prices and specify stackable, tradable, and limited         edition Items. 
+2. You can leverage your Catalog to create Bundles, Containers and Drop Tables.
+3. You can use Item attributes to define multiple prices and specify stackable, tradable, and limited         edition Items.
 4. Set up unique in-game vendors or Sales events using Stores and Sales.
 5. Create some player Segments and use Stores to drive different item and bundle offers to your players       regardless of where they are in your game lifecycle:  Custom Stores for Player Segments
-6. Verify your assumptions using A/B Testing 
+6. Verify your assumptions using A/B Testing
 7. Finally, gather economic data so that you can improve and iterate on your game using Playfab Reports

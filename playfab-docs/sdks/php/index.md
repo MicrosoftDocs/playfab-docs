@@ -1,5 +1,5 @@
 ---
-title: PHP
+title: PHP SDK
 author: v-thopra
 description: Landing page for the PlayFab PHP SDK.
 ms.author: v-thopra

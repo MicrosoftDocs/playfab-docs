@@ -1,5 +1,5 @@
 ---
-title: NodeJS
+title: NodeJS SDK
 author: v-thopra
 description: Landing page for the PlayFab NodeJS SDK. 
 ms.author: v-thopra
@@ -23,3 +23,7 @@ Download Links:
 - [Download Source Code](https://github.com/PlayFab/NodeSDK)
 - [Download PlayFab SDK](https://api.playfab.com/downloads/js-node)
 - [Install via NPM](https://www.npmjs.com/package/playfab-sdk): `npm install playfab-sdk`
+
+Licenses:
+
+- [Node Unit license](nodeunit-license.md)

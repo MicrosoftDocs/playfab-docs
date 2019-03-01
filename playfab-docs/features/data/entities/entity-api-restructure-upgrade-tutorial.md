@@ -71,7 +71,7 @@ public async void Example()
 
        // PlayFab EntityAPI has been replaced here with the PlayFabProfilesAPI
        // and PlayFab.EntityModels has been replaced with PlayFab.ProfileModels
-       var getProfileResult = await PlayFab.PlayFabProfilesAPI.GetProfileAsync(new 
+       var getProfileResult = await PlayFab.PlayFabProfilesAPI.GetProfileAsync(new
        PlayFab.ProfilesModels.GetEntityProfileRequest());
        var profile = getProfileResult?.Result?.Profile;
 }
@@ -107,7 +107,7 @@ All of the **APIs** listed below were *previously* part of the **PlayFabEntityMo
 - DeleteFiles
 - FinalizeFileUploads
 - GetFiles
-- InitiateFileUploads 
+- InitiateFileUploads
 - GetObjects
 - SetObjects
 

@@ -11,6 +11,7 @@ ms.localizationpriority: medium
 ---
 
 # Tournaments and Leaderboards quickstart
+
 This quickstart will describe how to have a statistic that keeps track of the players high score and how to get a leaderboard of the top high scores.  This can be utilized for a global leaderboard or in conjunction with [resettable statistics](using-resettable-statistics-and-leaderboards.md) to reset for a specific event or tournament.
 
 ## Prerequisites

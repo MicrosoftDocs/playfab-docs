@@ -38,7 +38,7 @@ These are the fields you encounter after you select **Add Catalog** from the mai
 ![Game Manager - Add Catalog](media/tutorials/game-manager-add-catalog.png)  
 
 - **Catalog version (Name)**
-  This required field is the name of your catlog that is shown in the **Catalogs** tab as the **Catalog Version**.
+  This required field is the name of your catalog that is shown in the **Catalogs** tab as the **Catalog Version**.
 
 ### Add new item fields
 
@@ -87,7 +87,7 @@ These are the fields in the **PROPERTIES** section of a new **Catalog Item**. **
 
 ### Add new item, ATTRIBUTES fields
 
-These are the field in the **ATTRIBUTES** section of a new **Catalog Item**. Attributes are Key/Value Pairs (KVPs). Only the key is required for each attribute.
+These are the field in the **ATTRIBUTES** section of a new **Catalog Item**. Attributes are Key Value Pairs (KVPs). Only the key is required for each attribute.
 
 ![Game Manager - Catalog Item Attributes](media/tutorials/game-manager-catalog-item-attributes.png)
 
@@ -182,7 +182,7 @@ To create a **Catalog**:
 4. Give your **Catalog** a **Name** (like *My Catalog*)
 5. Select the **CREATE CATALOG** button.
 6. Set the **Catalog** as the primary **Catalog** by selecting the **Primary Catalog** button.
-7. Add a new **Item**. 
+7. Add a new **Item**.
 8. Select the **Add New Item** button, and then expand the **New Item** to set its properties.
      - Add some properties, such as:
          - **ItemID** (e.g. **shield_level_5**).

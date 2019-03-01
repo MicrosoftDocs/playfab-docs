@@ -5,6 +5,8 @@
 - name: Tutorials
   href: tutorials.md
   items:
+  - name: Localized email templates
+    href: localized-email-templates.md
   - name: Setting up an SMTP server with add-ons
     href: setting-up-an-smtp-server-with-add-ons.md
   - name: Using a rule to verify a contact e-mail address

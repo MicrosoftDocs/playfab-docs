@@ -12,17 +12,17 @@ ms.localizationpriority: medium
 
 # Entity Programming Model
 
-The Entity Progamming Model is the foundation for PlayFab's next generation of data and game services that:
+The entity programming model is the foundation for PlayFab's next generation of data and game services that:
 
-**Provide consistency across the progamming model.**  The new Entity Programming Models are designed to be utilized across all Entity types (e.g., title, player, character, group) anyway that your game wants to interact with PlayFab (e.g., from the client, from your PlayFab hosted CloudScript or your custom game server).  Gone are the aggravations of certain functionality only being available for a subset of your game.
+**Provide consistency across the programming model**  The new entity programming models are designed to be utilized across all entity types (e.g., title, player, character, group) anyway that your game wants to interact with PlayFab (e.g., from the client, from your PlayFab hosted **CloudScript** or your custom game server).  Gone are the aggravations of certain functionality only being available for a subset of your game.
 
-**Significantly improve performance.** Changing the way we store data, as well as unifying the access policies we use, increases performance for player and title CRUD operations. By consolidating all Data API interactions into a single place, all CRUD operations work the same way across the entire service. We unify data across a smaller set of tables and use a common access policy system more efficiently to access the necessary data. 
+**Significantly improve performance** Changing the way we store data, as well as unifying the access policies we use, increases performance for player and title CRUD operations. By consolidating all Data API interactions into a single place, all CRUD operations work the same way across the entire service. We unify data across a smaller set of tables and use a common access policy system more efficiently to access the necessary data.
 
-**Consistency of access control.** The new unified access control policy allows you to have more fine grained control. This includes access control over individual data objects AND access to which APIs and functionality should be exposed to your game client.
+**Consistency of access control** The new unified access control policy allows you to have more fine grained control. This includes access control over individual data objects *and* access to which **APIs** and functionality should be exposed to your game client.
 
 ## API Interactions
 
-The Entity Programming Model APIs are grouped logically by the area of functionality that they expose, instead of how our Classic APIs are based on whether the functionality was being accessed by Clients or Game Servers.
+The entity programming model **APIs** are grouped logically by the area of functionality that they expose, instead of how our classic **APIs** are based on whether the functionality was being accessed by clients or game servers.
 
 This allows you to get access to functionality in a more intuitive way. The full breadth of Entity functionality can be seen at:
 
@@ -34,7 +34,6 @@ This allows you to get access to functionality in a more intuitive way. The full
 - [Events](../../../api-references/events/index.md)
 - [CloudScript](xref:titleid.playfabapi.com.cloudscript.server-sidecloudscript)
 - [Multiplayer](xref:titleid.playfabapi.com.multiplayer.multiplayerserver)
-
 
 ## Supported Entity Types
 

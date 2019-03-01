@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 >
 > It is provided to give you an early look at an upcoming feature and to allow you to provide feedback while it is still in development.  
 >
-> Access to this feature is restricted to select titles. If you are interested in trying it, you can request access by submitting a ticket on [support.playfab.com](https://support.playfab.com/hc/en-us/requests/new).
+> Access to this feature is restricted to select titles, with SDKs available for Windows 10 PCs and Xbox One. SDKs for iOS, Android, Nintendo Switch, and Sony PlayStation will be available this summer. If you are interested in trying it, you can request access by submitting a ticket on [support.playfab.com](https://support.playfab.com/hc/en-us/requests/new).
 
 PlayFab Parties is a set of libraries and services for easily adding multiplayer real-time networking and chat communication to your game.
 
@@ -29,6 +29,8 @@ Parties are an ideal, secure, low-latency transport for non-authoritative design
 Parties utilizes Azure Speech Services to transcribe player voice chat and synthesize utterances for text message. This functionality has several uses, but was primarily designed as an accessibility aide. Typical usage of Parties voice chat is billed on a per-minute basis, and up to 10% of those voice minutes can leverage transcription and synthesis for free. We recommend tying activation of this capability to an ease-of-access player setting.
 
 Parties can not only transcribe player chat, but also translate chat in real time. In anonymous matchmaking and international competitive games, these transcription and translation capabilities can make for a more engaging multiplayer experience. 
+
+A goal of PlayFab Parties and our other multiplayer services is to facilitate interoperable multilplayer infrastructure and cross-network gameplay. However we remind customers to ensure their multiplayer experiances comply with relevant platform policies for multiplayer and cross-network player activity. 
 
 ## Roadmap
 | | March 2018 | August 2019 |

@@ -41,7 +41,7 @@ public void GetContent()
         // Implement your own Download function based on URL
         DownloadContent(result.URL);
     }, error => {
-        Debug.LogError(error.GenerateErrorReport());        
+        Debug.LogError(error.GenerateErrorReport());  
     });
 }
 ```

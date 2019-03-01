@@ -1,5 +1,5 @@
 ---
-title: Java
+title: Java SDK
 author: v-thopra
 description: Landing page for the PlayFab Java SDK.
 ms.author: v-thopra
@@ -22,3 +22,7 @@ Download Links:
 
 - [Download Source Code](https://github.com/PlayFab/JavaSDK)
 - [Download PlayFab SDK](https://api.playfab.com/downloads/java)
+
+Licenses:
+
+- [Java licenses](license.md)

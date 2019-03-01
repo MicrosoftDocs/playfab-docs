@@ -1,5 +1,5 @@
 ---
-title: Unity3D (C#)
+title: Unity3D (C#) SDK
 author: v-thopra
 description: Landing page for the PlayFab Unity3D (C#) SDK.
 ms.author: v-thopra
@@ -25,3 +25,7 @@ Download Links:
 - [Download Source Code](https://github.com/PlayFab/UnitySDK)
 - [Download Editor Extensions](https://api.playfab.com/downloads/unity-edex)
 - [Download PlayFab SDK](https://api.playfab.com/downloads/unity-v2ap)
+
+Licenses:
+
+- [Unity3D licenses](license.md)

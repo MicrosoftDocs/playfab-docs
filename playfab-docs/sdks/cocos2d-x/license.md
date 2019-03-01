@@ -1,16 +1,16 @@
 ---
-title: Cocos2D-x (C++)
+title: Cocos2D-x (C++) licenses
 author: v-kciril
-description: Landing page for the PlayFab Cocos2D-x (C++) SDK.
+description: License pages for Cocos2D-x (C++).
 ms.author: v-kciril
 ms.date: 01/22/2019
 ms.topic: article
 ms.prod: playfab
-keywords: playfab, cocos-2dx sdk, cpp
+keywords: playfab, cocos-2dx sdk, cpp, licenses
 ms.localizationpriority: medium
 ---
 
-# Cocos licenses
+# Cocos2D-x licenses
 
 Licenses are available at the following links:
 

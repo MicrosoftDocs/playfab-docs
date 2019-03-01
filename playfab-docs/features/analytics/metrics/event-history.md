@@ -55,10 +55,11 @@ PlayFabClientAPI.LoginWithCustomID(new LoginWithCustomIDRequest()
 {
     CreateAccount = true,
     CustomId = "12345QWERY"
-}, 
-result => Debug.Log("Logged in"), 
+},
+result => Debug.Log("Logged in"),
 error => Debug.LogError(error.GenerateErrorReport()));
 ```
+
 - If no player is registered with the given **CustomID "12345QWERY"**, the player will be generated thanks to the second parameter that we passed (see below).
 
 ```csharp

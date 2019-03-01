@@ -139,7 +139,7 @@ Selecting the orange **EDIT LEADERBOARD** button allows you to edit your leaderb
 
 At the center of PlayFab economies is the concept of catalogs.
 
-Catalogs are a collection of items, currencies, stores, and droptables. This section provides all the tools needed to manage your game's virtual economy.
+Catalogs are a collection of items, currencies, stores, and drop tables. This section provides all the tools needed to manage your game's virtual economy.
 
 As an example, the following image shows **Unicorn Battle's** primary catalogs.
 
@@ -280,7 +280,6 @@ Notifications include information on new features, **API** updates, and service 
 3. Save your changes and return to the **Studios** page.
     - **Title** - An individual instance of a game within **PlayFab**.
     - **Studio** - A group of **Titles** that can share data and developer access.
-
 
 Developer accounts are special PlayFab accounts permitting access to one or more sections on one or more titles of a given studio.
 

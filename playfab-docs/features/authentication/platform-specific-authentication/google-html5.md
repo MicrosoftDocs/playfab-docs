@@ -47,8 +47,8 @@ Start by navigating to the [Google API Console](https://console.developers.googl
 
 Once the Project is created:
 
-- Navigate to the **OAuth consent screen (1)**. 
-- Make sure the correct email is selected **(2)**. 
+- Navigate to the **OAuth consent screen (1)**.
+- Make sure the correct email is selected **(2)**.
 - Add a **Name** for your **Application (3)**.
 - Select the **Save** button **(4)**.
 
@@ -62,8 +62,8 @@ Next, navigate to **Credentials (1)**:
 ![Google API Manager open OAuth credentials](media/tutorials/google-html5/open-oauth-credentials.png)  
 
 - Select **Web Application (1)** as your **Application type**.
-- Give your application a **Name (2)**. 
-- Add your domain to **Authorized JavaScript origins (3)** (http://playfab.example in our case).
+- Give your application a **Name (2)**.
+- Add your domain to **Authorized JavaScript origins (3)** [PlayFab](http://playfab.example) in our case).
 - Finally, select the **Create (4)** button to commit your changes.
 
 ![Google API Manager create OAuth credentials](media/tutorials/google-html5/create-oauth-credentials.png)  
@@ -152,7 +152,7 @@ In this example, we show how to test using the classic access token approach. Us
 ```
 
 - Remember to serve this page using your web server.
-- Make sure to access this page using the **URL** you specified while configuring **Google Project** (**http://playfab.example** in our case).
+- Make sure to access this page using the **URL** you specified while configuring **Google Project**, ([PlayFab](http://playfab.example) in our case).
 - Once the page opens, select **G Signed In (1)**, and follow the general **Google** authentication flow.
 - When this is finished, the script will try to authenticate on the PlayFab side and output the result **(2)**.
 

@@ -20,7 +20,6 @@ The daily **API** Usage Details report contains statistics for each **API** call
 - **Average Response Time**, **Total Response Time**, **Average Received bytes**, **Total Received bytes**, **Average Sent bytes**, and **Total Sent** (**MB**) - These columns are useful for monitoring system performance as well as optimizing some user-defined, heavy-duty function calls (for example, **CloudScript**).
 
 ![Daily API usage details report table](media/tutorials/daily-api-usage-details-report-table.png)
- 
 
 If you experience lag spikes in your application while executing **API** calls, you can refer to this report to track down the underlying cause.
 

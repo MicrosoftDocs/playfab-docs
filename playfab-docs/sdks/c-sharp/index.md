@@ -1,5 +1,5 @@
 ---
-title: C#
+title: C# SDK
 author: v-thopra
 description: Landing page for PlayFab CSharp SDKs.
 ms.author: v-thopra

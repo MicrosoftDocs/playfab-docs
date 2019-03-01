@@ -15,6 +15,7 @@ ms.localizationpriority: medium
 This Account Linking quickstart demonstrates how to bind an account to multiple devices and login mechanisms.
 
  A single PlayFab account can be accessed by many devices and login credentials. As we discuss in our tutorial [Login basics and Best Practices](../login/login-basics-best-practices.md), there are two forms of user authentication:
+
 1. **Anonymous**
 2. **Recoverable**
 
@@ -74,7 +75,7 @@ Failure to do this step will result in an awkward player experience, where they 
 
 So the flow for the various conditions is as follows - and note that in all cases, there's only *one* player account, which does have a recoverable account linked.
 
-**Device1 State**: **Device ID** is bound to the player account. 
+**Device1 State**: **Device ID** is bound to the player account.
 **Device2 State**: **Device ID** is *not* bound to the player account.
 
 - After signing into the player account on **Device2** (using the recoverable account credentials), make a call to [GetPlayerCombinedInfo](xref:titleid.playfabapi.com.client.accountmanagement.getplayercombinedinfo).
@@ -82,7 +83,7 @@ So the flow for the various conditions is as follows - and note that in all case
 
 Since **Device2** has not yet been linked to this player account, the relevant device ID (**AccountInfo.IosDeviceInfo**, **AccountInfo.AndroidDeviceInfo**, etc.) will not match the **Device2 ID**.
 
-**Device1 State**: **Device ID** is bound to the player account. 
+**Device1 State**: **Device ID** is bound to the player account.
 **Device2 State**: Logged in with recoverable credentials, but **Device ID** is *not* bound to the player account.
 
 Now that we've verified that **Device2** is not bound to this account, we can try to bind it.

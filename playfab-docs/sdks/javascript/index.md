@@ -1,5 +1,5 @@
 ---
-title: JavaScript
+title: JavaScript SDK
 author: v-thopra
 description: Landing page for the PlayFab JavaScript SDK.
 ms.author: v-thopra
@@ -27,3 +27,7 @@ Download Links:
 - [Download Source Code](https://github.com/PlayFab/JavaScriptSDK)
 - [Download PlayFab SDK](https://api.playfab.com/downloads/javascript)
 - [Install via NPM](https://www.npmjs.com/package/playfab-web-sdk): `npm install playfab-web-sdk`
+
+Licenses:
+
+- [Javascript licenses](license.md)

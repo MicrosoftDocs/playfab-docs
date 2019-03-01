@@ -30,8 +30,8 @@ If an email and password pair is valid, The following **API** call will sign in 
 PlayFabClientAPI.LoginWithEmailAddress(new LoginWithEmailAddressRequest() {
     Email = "my@email.com",
     Password = "qwerty"
-}, 
-result=> Debug.Log(result.PlayFabId), 
+},
+result=> Debug.Log(result.PlayFabId),
 error=> Debug.LogError(error.GenerateErrorReport()));
 ```
 

@@ -48,6 +48,7 @@ The image shown below describes the options for configuring a Webhook.
 
 > [!NOTE]
 > You can have several **Filters** per **Group**, but each **Filter** setting must be matched for the event to fall into the **Filter Group**.
+
 - You may define several **Filter Groups** to include different **Filters (5)**. **Events** must fall into at least *one* group to be passed to the **Webhook**.
 
 ![Game Manager - Analytics - Webhooks - Webhook Configuration](media/tutorials/game-manager-analytics-webhook-configuration.png)  

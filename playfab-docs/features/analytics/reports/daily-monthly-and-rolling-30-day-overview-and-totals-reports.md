@@ -67,7 +67,8 @@ The following **API** calls will introduce new data for total logins and total u
 
 - [LoginWithAndroidDeviceID](xref:titleid.playfabapi.com.client.authentication.loginwithandroiddeviceid)
 - [LoginWithCustomID](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid)
-- [LoginWithEmailAddress](xref:titleid.playfabapi.com.client.authentication.loginwithemailaddress)
+- [LoginWithEmailAddress](xref:titleid.playfabapi.com.client.authentication.loginwithemailaddress
+- )
 - [LoginWithFacebook](xref:titleid.playfabapi.com.client.authentication.loginwithfacebook)
 - [LoginWithGameCenter](xref:titleid.playfabapi.com.client.authentication.loginwithgamecenter)
 - [LoginWithGoogleAccount](xref:titleid.playfabapi.com.client.authentication.loginwithgoogleaccount)

@@ -87,7 +87,7 @@ var dataList = new List<SetObject>()
         ObjectName = "PlayerData",
         DataObject = data
     },
-    // A free-tier customer may store upto 3 objects on each entity
+    // A free-tier customer may store up to 3 objects on each entity
 };
 PlayFabDataAPI.SetObjects(new SetObjectsRequest()
 {
@@ -128,7 +128,7 @@ public class EntityFileExample : MonoBehaviour
     private readonly Dictionary<string, string> _tempUpdates = new Dictionary<string, string>();
     public string ActiveUploadFileName;
     public string NewFileName;
-    public int GlobalFileLock = 0; // Kindof cheap and simple way to handle this kind of lock
+    public int GlobalFileLock = 0; // Kind of cheap and simple way to handle this kind of lock
 
     void OnSharedFailure(PlayFabError error)
     {

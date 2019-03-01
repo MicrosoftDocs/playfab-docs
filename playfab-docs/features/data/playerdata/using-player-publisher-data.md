@@ -13,6 +13,7 @@ ms.localizationpriority: medium
 # Using player publisher data
 
 ## Player data vs player publisher data
+
 [Player data](quickstart.md) is information about a player, specific to a game title. It should be used for title-specific information, such as saving your player's position in a dungeon, or other game-specific data.
 
 Player publisher data is data associated with the player account, as opposed to the player account *plus* the title. It is used to save information about a player relevant to all titles in your studio (which may also contain title-specific information, for purposes of cross-title rewards).
@@ -75,7 +76,7 @@ handlers.TrackTitleUsage = function () {
 In particular, this example demonstrates using:
 
 - server.[GetUserPublisherInternalData](xref:titleid.playfabapi.com.server.playerdatamanagement.getuserpublisherinternaldata)
-- server.[UpdateUserPublisherInternalData](xref:titleid.playfabapi.com.server.playerdatamanagement.updateuserpublisherinternaldata). 
+- server.[UpdateUserPublisherInternalData](xref:titleid.playfabapi.com.server.playerdatamanagement.updateuserpublisherinternaldata).
 
 ### Step 2: Each game checks for redeemable rewards
 

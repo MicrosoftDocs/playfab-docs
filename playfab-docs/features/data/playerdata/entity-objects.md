@@ -29,7 +29,7 @@ var dataList = new List<SetObject>()
         ObjectName = "PlayerData",
         DataObject = data
     },
-    // A free-tier customer may store upto 3 objects on each entity
+    // A free-tier customer may store up to 3 objects on each entity
 };
 PlayFabDataAPI.SetObjects(new SetObjectsRequest()
 {
@@ -47,6 +47,7 @@ PlayFabDataAPI.GetObjects(getRequest,
     OnPlayFabError
 );
 ```
+
 ## Game Manager and entities
 
 The Game Manager allows you to manipulate objects and files for players. The player overview has been updated to show both the title player and master player account information.

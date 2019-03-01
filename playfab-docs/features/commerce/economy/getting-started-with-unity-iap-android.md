@@ -117,7 +117,7 @@ public class AndroidIAPExample : MonoBehaviour, IStoreListener {
         // Comment it out if you find the UI too large.
         GUI.matrix = Matrix4x4.TRS(new Vector3(0, 0, 0), Quaternion.identity, new Vector3(3, 3, 3));
 
-        // if we are not initialized, only draw a message 
+        // if we are not initialized, only draw a message
         if (!IsInitialized) {
             GUILayout.Label("Initializing IAP and logging in...");
             return;
@@ -140,7 +140,7 @@ public class AndroidIAPExample : MonoBehaviour, IStoreListener {
             AndroidDeviceId = SystemInfo.deviceUniqueIdentifier
         }, result => {
             Debug.Log("Logged in");
-            // Refresh available items 
+            // Refresh available items
             RefreshIAPItems();
         }, error => Debug.LogError(error.GenerateErrorReport()));
     }
@@ -206,7 +206,7 @@ public class AndroidIAPExample : MonoBehaviour, IStoreListener {
 
         // Test edge case where product is unknown
         if (e.purchasedProduct == null) {
-            Debug.LogWarning("Attempted to process purchasewith unknown product. Ignoring");
+            Debug.LogWarning("Attempted to process purchase with unknown product. Ignoring");
             return PurchaseProcessingResult.Complete;
         }
 
@@ -253,7 +253,7 @@ public class AndroidIAPExample : MonoBehaviour, IStoreListener {
 // The following classes are used to deserialize JSON results provided by IAP Service
 // Please, note that Json fields are case-sensitive and should remain fields to support Unity Deserialization via JsonUtilities
 public class JsonData {
-    // Json Fields, ! Case-sensetive
+    // Json Fields, ! Case-sensitive
 
     public string orderId;
     public string packageName;
@@ -280,7 +280,7 @@ public class PayloadData {
 public class GooglePurchase {
     public PayloadData PayloadData;
 
-    // Json Fields, ! Case-sensetive
+    // Json Fields, ! Case-sensitive
     public string Store;
     public string TransactionID;
     public string Payload;

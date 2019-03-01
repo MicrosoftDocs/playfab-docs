@@ -25,4 +25,4 @@ For example, if you want to send a reward to your players and send a them a noti
 ## Links
 
 - [Actions &amp; Rules quickstart](quickstart.md)
-- [Actions &amp; Rules tutorials](tutorials.md) 
+- [Actions &amp; Rules tutorials](tutorials.md)

@@ -1,5 +1,5 @@
 ---
-title: Objective-C
+title: Objective-C SDK
 author: v-thopra
 description: Landing page for the PlayFab Objective-C SDK.
 ms.author: v-thopra

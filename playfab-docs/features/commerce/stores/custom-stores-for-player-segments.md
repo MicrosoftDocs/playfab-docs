@@ -42,7 +42,7 @@ Finally, return to the base **Equipment** store, and fill in the **Segment Overr
   - You should assume that players will be aware of other stores and their details.
 
 - Provide varying content, *not* varying pricing:
-  - Players will feel cheated if: 
+  - Players will feel cheated if:
     - If prices go up or down when they transition segments.
     - If prices described on wikis are different than their own.
 
