@@ -274,7 +274,7 @@ All that said, many smaller developers are starting to eschew soft launches in f
 
 - Have you set roles and permissions so team members can't make changes they're not trained for? 
 
-## Game Updates 
+## Game updates 
 
 With games-as-service you have to keep players engaged with new content. There cannot be an endgame."  
 -- Pascal Clarysse, CMO, Eden Games
@@ -283,7 +283,7 @@ Today games of any shape and size can amass a large audience quickly if they res
 
 Knowing your players and your community well is a key element of designing and delivering relevant updates - how old are they, where do they live, what motivates them to play? Creating player profiles can help you understand your community better and make content that feels more personal. Understanding your community can also help you determine how frequently to add content and what content will be most enticing. If your players are primarily high school students, they probably don’t want new content to require lots of playtime during weekdays and they may have very different taste in character customization than players that are between 45 and 65 years old. Invest time in trying to understand you players through research and in-game data. 
 
-## Update Strategies
+## Update strategies
 
 When it comes to game updates frequency and consistency are just as important as quality. Setting a consistent update calendar is essential for keeping players engaged because they need to know when to expect new content. Creating a habit loop and becoming a reliable part of your players’ lives goes a long way to moving your game from a piece of consumable entertainment to a hobby. But getting a consistent update pipeline can be challenging especially if your game releases on platforms that require certification. LiveOps games need to employ several techniques to keep their games fresh.
 
@@ -294,7 +294,7 @@ Most teams will benefit from focusing on content configuration changes that are 
 PlayFab “allows us to get a lot more visibility on what players are engaged with, what they enjoy and don’t enjoy...we can really get an idea of how much the high players are engaging and what they value, and can tailor rewards around that.”  
 -- Phil Larsen (Managing Director, Prettygreat)
 
-## Update Scheduling
+## Update scheduling
 
 Choosing what content to update and what to leave alone is both an art and a science, and the right answer for you will of course depend on your game. The goal is to maintain or increase player engagement and monetization without burning players out. Segmenting your players and targeting different segments with different updates (if you have the resources) is a best practice, but timing your content updates thoughtfully is another good approach if you’re resource-constrained. Another thing to consider when it comes to updating content is how often to make changes. Again, this comes down to the nature of your game, and experiments in this area should follow similar principles as those focusing on what and how much to update. 
 
@@ -358,7 +358,7 @@ Companies like Kolibri Games understand the dynamics of limited-time events, and
 
 ![Car Launch](media/car-launch11.png)
 
-## Case study: Co-branded car launch event
+## Case study: co-branded car launch event
 
 *When a new Italian car, the Pagani Huayra Roadster, was introduced at the Geneva Motor Show, Eden Games released the same car exclusively at the same time in our mobile game, Gear.Club. Three days earlier, we did a Facebook Live stream with YouTube influencers testing the game and the riding in the car themselves.*
 
