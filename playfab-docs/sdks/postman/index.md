@@ -1,5 +1,5 @@
 ---
-title: Postman (REST)
+title: Postman (REST) SDK
 author: v-thopra
 description: Landing page for the PlayFab Postman SDK.
 ms.author: v-thopra

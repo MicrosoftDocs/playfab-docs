@@ -1,5 +1,5 @@
 ---
-title: Xamarin
+title: Xamarin SDK
 author: mawillia
 description: Landing page for the PlayFab Xamarin SDK.
 ms.author: mawillia

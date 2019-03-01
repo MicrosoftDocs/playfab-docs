@@ -1,5 +1,5 @@
 ---
-title: Python
+title: Python SDK
 author: v-thopra
 description: Landing page for the PlayFab Python 3 SDK.
 ms.author: v-thopra

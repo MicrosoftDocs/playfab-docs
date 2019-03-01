@@ -1,5 +1,5 @@
 ---
-title: Lua
+title: Lua SDK
 author: v-thopra
 description: Landing page for PlayFab Lua SDKs.
 ms.author: v-thopra
@@ -22,3 +22,7 @@ Download Links:
 
 - [Download Source Code](https://github.com/PlayFab/LuaSdk)
 - [Download PlayFab SDK](https://api.playfab.com/downloads/lua-sdk)
+
+Licenses:
+
+- [Lua licenses](license.md)

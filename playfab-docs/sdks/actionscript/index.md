@@ -1,5 +1,5 @@
 ---
-title: ActionScript
+title: ActionScript SDK
 author: v-thopra
 description: Landing page for the PlayFab ActionScript SDK.
 ms.author: v-thopra

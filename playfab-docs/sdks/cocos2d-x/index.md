@@ -1,5 +1,5 @@
 ---
-title: Cocos2D-x (C++)
+title: Cocos2D-x (C++) SDK
 author: v-thopra
 description: Landing page for the PlayFab Cocos2D-x (C++) SDK.
 ms.author: v-thopra
@@ -38,3 +38,7 @@ Download Links:
 
 - [Download Source Code](https://github.com/PlayFab/Cocos2d-xSDK)
 - [Download PlayFab SDK](https://api.playfab.com/downloads/cocos-2d-sdk)
+
+Licenses:
+
+- [Cocos2D-x licenses](license.md)

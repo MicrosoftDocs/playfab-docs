@@ -3,7 +3,7 @@ title: Reports
 author: v-thopra
 description: Landing page for Reports.
 ms.author: v-kciril
-ms.date: 02/12/19
+ms.date: 02/12/2019
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, analytics, reports

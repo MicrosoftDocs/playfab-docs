@@ -1,5 +1,5 @@
 ---
-title: Android Studio Project (Java)
+title: Android Studio Project (Java) SDK
 author: mawillia
 description: Landing page for the PlayFab Android Studio Project in Java.
 ms.author: mawillia
