@@ -7,6 +7,8 @@
   items:
   - name: Getting Started with Android Push Notifications
     href: getting-started-android-studio-push-notifications.md
+  - name: Push notification templates
+    href: push-notification-templates.md
   - name: Push Notifications for Android
     href: push-notifications-for-android.md
   - name: Push Notifications for iOS
