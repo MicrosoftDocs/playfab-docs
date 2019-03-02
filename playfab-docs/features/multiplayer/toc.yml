@@ -3,7 +3,7 @@
   expanded: true
   items:
   - name: Introduction to Multiplayer
-    href: servers/mpintro.md
+    href: mpintro.md
   - name: Servers
     href: servers/toc.yml
   - name: Matchmaking
