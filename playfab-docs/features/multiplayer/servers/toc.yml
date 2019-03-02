@@ -7,14 +7,13 @@
     href: basics-of-a-playFab-game-server.md
   - name: Billing for PlayFab Multiplayer Servers 
     href: billing-for-thunderhead.md
+  - name: Detailed price sheet for multiplayer servers
+    href: multiplayer-servers-detailed-price-sheet.md
   - name: Lifecycle of a multiplayer server build region
     href: multiplayer-build-region-lifecycle.md
   - name: Lifecycle of multiplayer server builds
     href: multiplayer-build-lifecycle.md
-  - name: Multiplayer Servers - detailed price sheet
-    href: multiplayer-servers-detailed-price-sheet.md
-  - name: PlayFab Multiplayer Servers 
-    href: thunderhead.md
+
 - name: Quickstart
   href: quickstart.md
   items:
