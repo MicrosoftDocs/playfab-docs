@@ -43,7 +43,7 @@ There are three **Google** websites that you must use and synchronize. In **Goog
 - **Google API Manager**:
   - Select your **Project**.
   - Select **Credentials** (left menu).
-  - The **Firebase Project** import will have created a **ServerKey** for you here. 
+  - The **Firebase Project** import will have created a **ServerKey** for you here.
 - **Firebase Console**:
   - Select your **Project** or **App**, and find the **Settings** option (there are many ways to do this, all of which lead you to the same place).
   - In the **General** tab, this is listed as the **Web API Key**.
@@ -60,11 +60,11 @@ There are three **Google** websites that you must use and synchronize. In **Goog
   1. Input your key directly into the **Game Manager UI**: **Settings** (for your **Title**) > **Push Notifications** > **Android**.
   2. Or call [SetupPushNotification](xref:titleid.playfabapi.com.admin.title-widedatamanagement.setuppushnotification) using **Postman** or a **Unity** project with **Server API** methods enabled.
   
-    - Name: **your_game_name**
-    - Platform: **GCM**
-    - Credential: (**Google** server **API Key**) : **AIza******ppo**
-    - OverwriteOldARN: **true**
-    - You should receive an **HTTP 200 OK** response with data similar to the following.
+  - Name: **your_game_name**
+  - Platform: **GCM**
+  - Credential: (**Google** server **API Key**) : **AIza******ppo**
+  - OverwriteOldARN: **true**
+  - You should receive an **HTTP 200 OK** response with data similar to the following.
 
       ```json
       // Postman JSON result output
@@ -80,7 +80,7 @@ There are three **Google** websites that you must use and synchronize. In **Goog
 
 ## Getting started: push notifications for Android + Unity
 
-### To set up your **Unity** project:
+To set up your **Unity** project:
 
 - Create a new **Unity** project.
 - [OPTIONAL] Import the [PlayFab Unity Editor Extensions](https://api.playfab.com/downloads/unity-edex) package.
@@ -194,7 +194,7 @@ public class MsgCatcher : MonoBehaviour
 Build and run your **Unity** project on a device. If you receive a push notification with the text **Push notifications registered successfully**, then everything worked as expected.
 
 > [!NOTE]
-> **PlayFabSettings.TitleId = TITLE_ID**. 
+> **PlayFabSettings.TitleId = TITLE_ID**.
 > You must set your own **TitleId**. This example will not work if you don't update this **TitleId**, because our title is registered with our **Firebase Keys** and settings, *not yours*. You can do so by un-commenting this line and replacing **TITLE_ID** with your **titleId**, or you can choose your title from the optional **Editor Extensions** plugin mentioned in the previous section.
 
 ### Troubleshooting Android
@@ -218,7 +218,7 @@ In **server.[SendPushNotification](xref:titleid.playfabapi.com.server.accountman
 
 You can customize your client receiver to utilize that data however you like. **CustomData** is not displayed to the player, so it can be used to deliver custom game information to your client, or to locally schedule another future notification using the **FCM** plugin.
 
-You can also use **[request.Package](xref:titleid.playfabapi.com.server.accountmanagement.sendpushnotification#pushnotificationpackage).CustomData** or request **[AdvancedPlatformDelivery](xref:titleid.playfabapi.com.server.accountmanagement.sendpushnotification#advancedpushplatformmsg)** to deliver to many 3rd party plugins. 
+You can also use **[request.Package](xref:titleid.playfabapi.com.server.accountmanagement.sendpushnotification#pushnotificationpackage).CustomData** or request **[AdvancedPlatformDelivery](xref:titleid.playfabapi.com.server.accountmanagement.sendpushnotification#advancedpushplatformmsg)** to deliver to many 3rd party plugins.
 
 > [!NOTE]
 > 3rd party plugin delivery is not supported or guaranteed, but is available for advanced users.

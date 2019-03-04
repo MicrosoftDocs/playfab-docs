@@ -1,7 +1,7 @@
 ---
 title: CartItem
 author: v-thopra
-description: BuildRegion data type.
+description: CartItem data type.
 ms.author: v-thopra
 ms.date: 02/19/2019
 ms.topic: article

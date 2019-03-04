@@ -118,7 +118,8 @@ public class PlayfabFacebookAuthExample : MonoBehaviour
         SetMessage("Initializing Facebook..."); // logs the given message and displays it on the screen using OnGUI method
 
         // This call is required before any other calls to the Facebook API. We pass in the callback to be invoked once initialization is finished
-        FB.Init(OnFacebookInitialized);
+        FB.Init(OnFacebookInitialized);  
+
     }
 
     private void OnFacebookInitialized()

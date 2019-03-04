@@ -30,8 +30,11 @@ You must call the server **APIs** from a dedicated server or through a **CloudSc
 
 > [!TIP]
 > We *do not recommend* using server **APIs** from within a game client. If you need to make use of a server **API**, use **CloudScript** for this type of functionality.
+
+Publisher data values are copied and distributed to potentially *hundreds* of machines in the PlayFab cluster server. As part of this process, this data is cached and changes may take up to *fifteen minutes* to refresh in those caches.
+
 > [!NOTE]
-> Publisher data values are copied and distributed to potentially hundreds of machines in the PlayFab cluster server. As part of this process, this data is cached and changes may take up to *fifteen minutes* to refresh in those caches. Publisher data is best suited for *global constant/static data*, and *is not* suitable or reliable as *global variables*.
+> Publisher data is best suited for *global constant/static data*, and *is not* suitable or reliable as *global variables*.
 
 ## Publisher data
 
@@ -110,6 +113,7 @@ The following snippet demonstrates how to set all 3 kinds of Publisher data usin
 
 ```csharp
 // Use client API to set User Publisher Data for current user
+public void ClientSetUserPublisherData() {
     PlayFabClientAPI.UpdateUserPublisherData(new UpdateUserDataRequest() {
          Data  = new Dictionary<string, string>() {
              { "SomeKey", "SomeValue" }

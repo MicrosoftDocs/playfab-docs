@@ -92,7 +92,7 @@ To change a **Statistic Aggregation** method, you can use the Game Manager or th
 
 To edit a **Statistic Definition** in **Game Manager**:
 
-- Log into [PlayFab](https://developer.playfab.com/en-us/my-games).
+- Log into [PlayFab](https://developer.playfab.com/en-us/my-games)
 - Select your **Title**.
 - Select **Leaderboards** from the menu on the left (**Statistics** and **Leaderboards** are closely related).
 - Select the existing statistic you want to modify, or -

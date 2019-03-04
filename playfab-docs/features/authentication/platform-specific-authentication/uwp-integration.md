@@ -99,6 +99,6 @@ Once you have set up the items in the store, you can enable the in-app purchase 
 
 ## Further questions
 
-If you have further questions, please post in our [forums](https://community.playfab.com/index.html). 
+If you have further questions, please post in our [forums](https://community.playfab.com/index.html).
 
 We'd also love to hear from you with any feedback on integrating your game with the **Universal Windows Platform**!

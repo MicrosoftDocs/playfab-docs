@@ -10,7 +10,7 @@ keywords: playfab. multiplayer, servers
 ms.localizationpriority: medium
 ---
 
-# Servers
+# Multiplayer Servers
 
 PlayFab's multiplayer server hosting service allows you to operate a dynamically scaling pool of custom game servers in Azure.
  

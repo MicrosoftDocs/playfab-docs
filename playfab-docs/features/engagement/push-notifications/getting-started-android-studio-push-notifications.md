@@ -129,8 +129,10 @@ Start by visiting the [Google Play Console page](https://play.google.com/apps/pu
 ![Google Play - Console page](../media/tutorials/google-play-console-page.png)
 
 - Assign the **Title**.
+
 > [!NOTE]
 > In this example, we use **Foo PlayFab App**. Please make sure to come up with your *own* title and package name while following this tutorial.
+
 - Select the **Create** button to continue.
 
 ![Google Play - Create application](../media/tutorials/google-play-create-application.png)
@@ -148,8 +150,8 @@ Start by visiting the [Google Play Console page](https://play.google.com/apps/pu
 ![Google Play - FCM panel - Link a Sender ID](../media/tutorials/google-play-fcm-link-sender-id.png)
 
 To link the **Sender ID**:
-- Use the **FCM** server key that you received (and saved) while using the **Firebase** console in the previous Chapter.
 
+- Use the **FCM** server key that you received (and saved) while using the **Firebase** console in the previous Chapter.
 - When done, select the **Link** button, as shown in our example.
 
 ![Google Play - Link a Sender ID - Add FCM API Key](../media/tutorials/google-play-add-fcm-api-key.png)
@@ -202,7 +204,7 @@ In order to utilize the PlayFab **JavaSDK**, you will need the PlayFab client **
 Start by creating a regular **Android** studio project.
 
 - Verify that the **Package name** matches the one you used throughout this tutorial (in **Firebase**, for instance).
- 
+
   > [!NOTE]
   > For our purposes in *this* example, we are using **com.foo.playfab.app**, but please remember to come up with your own package name and title while following this tutorial.
 
@@ -230,7 +232,7 @@ For this tutorial, we suggest using the **Empty Activity** template to begin wit
 
 Once you open the newly created project:
 
-- Switch to the **Project** tab **(1)**. 
+- Switch to the **Project** tab **(1)**.
 
 > [!NOTE]
 > In the previous Chapter, you downloaded the **google-services.json** configuration file from the **Firebase** console. Use this for your next step.
@@ -382,7 +384,7 @@ public class MainActivity extends AppCompatActivity {
     public boolean login(){
         LoginWithAndroidDeviceIDRequest request = new LoginWithAndroidDeviceIDRequest();
         request.CreateAccount = true;
-        
+
         // There are several approaches on getting unique android device id.
         // https://stackoverflow.com/questions/2785485/is-there-a-unique-android-device-id
         request.AndroidDeviceId = "qwerty";

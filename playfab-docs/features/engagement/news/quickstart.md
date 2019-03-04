@@ -126,7 +126,7 @@ If you plan to post unpublished entries for a future release, this will be the w
 
 ## Deleting Title News
 
-Once an entry is no longer needed, you can delete it in the **Game Manager**. 
+Once an entry is no longer needed, you can delete it in the **Game Manager**.
 
 Find the entry you wish to modify, then:
 

@@ -45,6 +45,7 @@ Navigate to the [Kongregate website](https://www.kongregate.com/):
 ![Kongregate Games tab](media/tutorials/kongregate-games-tab.png)  
 
 A page to set up for a new application will open.
+
 - Enter the **Application Name** in the **Title (1)** field.
 - Then enter a **Game Description (2)** in the field provided.
 - Select a **Category (3)**.
@@ -162,7 +163,7 @@ Use the example code shown below to populate the **index.html** for your game.
         console.log("success");
       },
       function(err){
-        $('<div></div>').html('Problem occured: ' + PlayFab.GenerateErrorReport(err)).appendTo('#content')
+        $('<div></div>').html('Problem occurred: ' + PlayFab.GenerateErrorReport(err)).appendTo('#content')
         console.log("failure");
       });
     }

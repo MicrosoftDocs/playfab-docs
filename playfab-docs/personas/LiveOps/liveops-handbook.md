@@ -1,7 +1,7 @@
 ---
-title: The PlayFab LiveOps Handbook
+title: The PlayFab Definitive Guide to LiveOps
 author: v-kciril
-description: Getting started page for LiveOps.
+description: The LiveOps Handbook.
 ms.author: v-kciril
 ms.date: 01/25/2019
 ms.topic: article

@@ -58,12 +58,12 @@ Now add a **New Email Template**, filling in the fields as follows and leaving t
   > [!NOTE]
   > Some email servers, like Gmail, will ignore this field and will send from the account set up with the **SMTP** server.
   
-- **Callback URL**:  https://www.example.com
+- **Callback URL**:  <https://www.example.com>
 
 ### A few things to remember
 
 - The `$ConfirmationUrl$` in the email body generates a customized **URL** that when selected, tracks that a user has selected the **URL**, and then issues a redirect to the **Callback URL**. In this case, it is injected into an **anchor tag**.
-- The **Callback URL** is the **URL** that PlayFab will redirect to after the player selects the **Confirmation URL** link. It can be a static page that tells the user they were successful in confirming their email. In this case, we will redirect to https://www.example.com.
+- The **Callback URL** is the **URL** that PlayFab will redirect to after the player selects the **Confirmation URL** link. It can be a static page that tells the user they were successful in confirming their email. In this case, we will redirect to <https://www.example.com>.
 
 ![Game Manager - Content - Email Templates - New Email Template](media/tutorials/game-manager-content-new-email-template-email-verification.png)  
 
@@ -109,10 +109,10 @@ void AddContactEmailToPlayer()
 {
     var loginReq = new LoginWithCustomIDRequest
     {
-        CustomId = "SomeCustomID", // replace with your own Custom ID 
+        CustomId = "SomeCustomID", // replace with your own Custom ID
         CreateAccount = true // otherwise this will create an account with that ID
-    }; 
-    
+    };
+
     var emailAddress = "testaddress@example.com"; // Set this to your own email
 
     PlayFabClientAPI.LoginWithCustomID(loginReq, loginRes =>
@@ -207,7 +207,7 @@ When the player selects that **URL**, three things happen:
    - You can use that event to trigger actions, like granting coins or items to the player.
 2. Because this email template was the special **Email Verification** template, PlayFab will then mark the player email as *Verified*.
 3. PlayFab will return a redirect **URL** sending the player to the callback **URL** website.
-    - On this website you can show a static **Thanks for verifying your email** message, or something more elaborate. The redirect **URL** will look something like this: **https://www.example.com/?token=2346241B7C277796**.
+    - On this website you can show a static **Thanks for verifying your email** message, or something more elaborate. The redirect **URL** will look something like this: <https://www.example.com/?token=2346241B7C277796>.
 
     - Go ahead and select the **URL** found in the email.
     - You will be taken to the **example.com** website.

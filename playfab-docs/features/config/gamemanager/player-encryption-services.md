@@ -82,7 +82,7 @@ The following code example constructs a signature header that can be used to sig
 
 The format for the signature header is shown below.
 
- **jsonRequestModel.utcTimeStampInISO.playerSecret**
+### jsonRequestModel.utcTimeStampInISO.playerSecret
 
 ```csharp
 var postModel = new LoginWithCustomIDRequest
@@ -137,26 +137,26 @@ The following example policy will allow *all* **API** calls (except un-encrypted
 
 ```json
 {
-	"PolicyName": "ApiPolicy",
-	"OverwritePolicy": true,
-	"Statements":
-	[
-		{
-			"Comment": "Require Headers on LoginWithCustomID",
-			"Action": "*",
-			"Principal": "*",
-			"Effect": "Deny",
-			"Resource": "pfrn:api--/Client/LoginWithCustomID",
-			"ApiConditions": { "HasSignatureOrEncryption": "False" }
-		},
-		{
-			"Comment": "Allow the rest policy",
-			"Action": "*",
-			"Principal": "*",
-			"Effect": "Allow",
-			"Resource": "pfrn:api--*"
-		}
-	]
+    "PolicyName": "ApiPolicy",
+    "OverwritePolicy": true,
+    "Statements":
+    [
+        {
+            "Comment": "Require Headers on LoginWithCustomID",
+            "Action": "*",
+            "Principal": "*",
+            "Effect": "Deny",
+            "Resource": "pfrn:api--/Client/LoginWithCustomID",
+            "ApiConditions": { "HasSignatureOrEncryption": "False" }
+        },
+        {
+            "Comment": "Allow the rest policy",
+            "Action": "*",
+            "Principal": "*",
+            "Effect": "Allow",
+            "Resource": "pfrn:api--*"
+        }
+    ]
 }
 ```
 
