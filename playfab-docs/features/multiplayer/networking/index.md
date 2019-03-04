@@ -44,7 +44,7 @@ A goal of PlayFab Parties and our other multiplayer services is to facilitate in
 ## Features
 
 + **Encryption and authentication.** Parties authenticates player devices using their PlayFab player identity and encrypts data with a DTLS-like protocol.
-+ **NAT traversal and datagrams.** The core of Parties are relays hosted globally across the Azure cloud. Player devices use these relays create Parties networks and game data to one another.
++ **Device to device datagram networking.** The core of Parties are relays hosted globally across the Azure cloud. Player devices use these relays create Parties networks and game data to one another.
 + **Voice and text chat.** Player devices can bind audio devices to Parties networks to accomplish real-time voice chat. Text chat messages between players are also support.
 + **Speech-to-text and voice synthesis.** Parties can transcribe player voice chat and synthesize utterances for text message. This functionality has several uses, but was primarily designed as an accessibility aide. 
 + **Real-time translation.** Parties can understand and synthesize real-time translations of player voice and text chat.
