@@ -18,7 +18,5 @@ Parties is a pre-production service still being shaped up. It is offered with ve
 |[Servers](./servers/index.md)|Production (Preview)|Premium Service - 30% Preview Discount| 
 |[Parties](./networking/index.md)|Pre-production (Beta)|Premium Service - Free during beta| 
 
-|fa|fasd|fasdf|
 
-
-![Thunderhead Container Flow](servers/media/tutorials/Multiplayer-Animation.gif)
+![Multiplayer Animation](./servers/media/tutorials/Multiplayer-Animation.gif)
