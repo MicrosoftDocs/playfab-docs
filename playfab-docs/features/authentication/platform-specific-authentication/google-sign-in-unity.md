@@ -1,5 +1,5 @@
 ---
-title: Setting up PlayFab authentication using Google Play Games Sign-In in Unity
+title: PlayFab authentication with Google Play Games Sign-In in Unity
 author: v-thopra
 description: Guides you through an example of PlayFab authentication using Google Play Games Sign-In in Unity.
 ms.author: v-thopra

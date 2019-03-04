@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 This page provides pricing information and guidance for [Xbox Live managed partners](https://docs.microsoft.com/en-us/windows/uwp/xbox-live/get-started-with-partner/get-started-with-xbox-live-partner) interested in using PlayFab services to accomplish multiplayer scenarios across PC, Mobile, and Xbox One.
 
-PlayFab and Xbox Live have colloborated to allow Xbox Live managed partners to power Xbox Live player activity with free utilization of several PlayFab services. This includes [PlayFab Matchmaking](https://review.docs.microsoft.com/en-us/gaming/playfab/features/multiplayer/matchmaking/?branch=master) and [PlayFab Parties](http://aka.ms/Bumblelion), as well as other PlayFab features<!-- (TBD link)-->. If you would like to take advantage of this program we recommend the following multiplayer design:
+PlayFab and Xbox Live have colloborated to allow Xbox Live managed partners to power Xbox Live player activity with free utilization of several PlayFab services. This includes [PlayFab Matchmaking](https://review.docs.microsoft.com/en-us/gaming/playfab/features/multiplayer/matchmaking/?branch=master) and [PlayFab Parties](https://aka.ms/Bumblelion), as well as other PlayFab features<!-- (TBD link)-->. If you would like to take advantage of this program we recommend the following multiplayer design:
 
 1. Use the [Xbox Live SDK](https://docs.microsoft.com/en-us/windows/uwp/xbox-live/developer-program-overview) to interface with Xbox Live social capabilities like Presence, Profile Cards, and game invites. 
 2. Use [PlayFab Matchmaking](https://review.docs.microsoft.com/en-us/gaming/playfab/features/multiplayer/matchmaking/?branch=master) to match players.
