@@ -175,7 +175,7 @@ Once you do this, it’s easy to track your progress getting players to move up 
 Once you have defined the segments you care about, you will want to be able to treat players in each of those segments differently. For example, you might want to show different tips and tricks to each funnel segment to encourage them to move up to the next segment, or only show in-game ads to non-payers, or tune your game mechanics differently in certain countries.
 
 “Following the machine learning trends, we are quickly getting to a world in which we can't keep track of all the player segments treated differently. While in the past modelling a user journey around 20-50 key points in the game (leveling up, unlocking specific content, taking part in game modes for the first time, etc.) and putting some additional segmenting properties on top - total revenue from a player, total engagement from a player, number of friends, etc. was enough, it's happening already, but will happen even more in the future that we just define a lot of promotions and let the machine learning handle the segmentation.”  
---Dimitar Draganov, Senior Product Manager, Flaregames
+-- Dimitar Draganov, Senior Product Manager, Flaregames
 
 ### Segmentation best practices
 
@@ -386,7 +386,7 @@ Mastering the art of player communication is critical to the success of live eve
 “Events should be enjoyable for everyone. Some games clearly cater their events to their whales, but then the barriers of entry become too high for regular players. The games that do it best have a big event and a smaller event in between. The top players, which usually are the whales, consume the content much faster so they get bored. The events are what keeps them excited.
     
 You need to have events frequently enough so that you can change the menu every now and then. You will never have one event that your entire audience loves. So, if a portion of your audience is disappointed with an event today, it’s ok if in 2 weeks there is another one that they’ll like. They shouldn’t have to wait 6 weeks because they might have left by then. Everyone should get something they like within a month. Keeping the rhythm helps you to fail fast and fail without too much consequence. If you make a mistake it’s alright, because there is another chance in 2 weeks.”  
---Pascal Clarysse, CMO, Eden Games
+-- Pascal Clarysse, CMO, Eden Games
 
 ### Live events best practices
 
@@ -426,7 +426,7 @@ All games must, at some point, determine how they plan to generate revenue. Prev
 
 ### Choosing the right monetization strategy
 
-How your game is monetized will have a major impact on the game’s design so it is best to settle on a general strategy as early in the process as possible. Each game is different, but every monetization discussion should include these concepts:
+How your game is monetized has a major impact on the game’s design so it is best to settle on a general strategy as early in the process as possible. Each game is different, but every monetization discussion should include these concepts:
 
 - Consider the type of game you wish to make, platforms you plan to target, and the demographics of your audience. You may have a great design for a free to play 4x game, but if research suggest that players who love 4x games don’t make microtransaction purchases you may be fighting an uphill battle. 
 
@@ -438,7 +438,7 @@ How your game is monetized will have a major impact on the game’s design so it
 
 ## Microtransactions
 
-Microtransactions, sometimes referred to as in app purchases, are a common form of monetization. Microtransactions are an al-a-carte strategy where players can purchase just the items or features they want each for a relatively low (micro) price. The strategy relies on players making multiple, micro purchases over their time playing the game and often involved active and frequent management of an in-game store where items are sold. 
+Microtransactions, sometimes referred to as in-app purchases, are a common form of monetization. Microtransactions are an a-la-carte strategy where players can purchase just the items or features they want each for a relatively low (micro) price. The strategy relies on players making multiple, micro purchases over their time playing the game and often involved active and frequent management of an in-game store where items are sold. 
 
 ## Value
 
@@ -450,7 +450,7 @@ There are some pitfalls to avoid too. Some game communities might be sensitive t
 
 ## Microtransaction Types
 
-Microtransactions come in many types, and a successful microtransaction strategy is likely to deploy many, here are the most common and how to use them effectively.
+Microtransactions come in many types, and a successful microtransaction strategy is likely to deploy many. Here are the most common and how to use them effectively.
 
 - **Cosmetics**. These are some of the most common microtransactions, especially in-games with primarily western audiences. Cosmetics derive their value from players’ motivation to self-express and socially signal to other players. While self-expression certainly still has value in single player games, the number of players willing to pay for it will be smaller than in-games where other players can see that customization. Also remember that aesthetic preference is highly personal. There is no such thing as a universally appealing cosmetic item. To use cosmetics successfully you must offer a wide range of options. This can be mitigated by presenting cosmetics as collections and offering bonuses for completing them, but if you plan to leverage cosmetics extensively make sure your pipeline is ready to create many assets.
 
@@ -482,11 +482,13 @@ A successful microtransaction strategy requires active store management to keep 
 
 For many games, converting players to paying players is an important focus. Not only does having good conversion strategy increase revenue, it also increasing retention as players that pay feel more invested in your game and are likely to stay longer. Getting players to pay for the first time can be challenging primarily for two reasons:
 
-**Barrier to entry**. There is a lot standing in the way of a first purchase. Depending on your platform, the player may need to enter payment information, or even sign up for an account. Every step in the purchase funnel can easy drop 50% of players even if they are interested in purchasing. The barrier to entry effect can be so strong it even overrides price sensitivity. Take this example of first-time purchasing behavior from an MMO: 
+**Barrier to entry**. There is a lot standing in the way of a first purchase. Depending on your platform, the player may need to enter payment information, or even sign up for an account. Every step in the purchase funnel can easily drop 50% of players even if they are interested in purchasing. 
+
+The barrier to entry effect can be so strong it even overrides price sensitivity. Take this example of first-time purchasing behavior from an MMO: 
 
 ![Purchasers Table](media/purchasers-table.png)
 
-Offering a lower priced bundle doesn’t increase purchasers because only highly motivated purchasers make it all the way through the funnel and they clearly have no greater demand for a $1 dollar bundle than a $10 bundle. 
+Offering a lower-priced bundle doesn’t increase purchasers because only highly motivated purchasers make it all the way through the funnel and they clearly have no greater demand for a $1 dollar bundle than a $10 bundle. 
 
 **Value proposition**. In a 2017 EEDAR survey, 78% of gamers said that good value was the primary decision maker for in-game purchases. Making a valuable offer is essential to getting a first-time purchase but often the less time a player has spent in your game the less valuable any in-game purchases will be to them. And, rushing players into their first purchase could negatively impact their life time value as spenders if they get burnt out and leave your game. Look to in-game data to better understand when players really connect to your game when the best time is to present them with their first offer. Experiment with different timing and offers until you find one that works for your players, and be aware that it may not be one size fits all. Segmentation can help you make offers that feel really valuable to players because they are tailored to their play style.
 
