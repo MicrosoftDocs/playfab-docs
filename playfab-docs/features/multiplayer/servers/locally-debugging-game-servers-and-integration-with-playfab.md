@@ -37,6 +37,8 @@ Integrate your game server with **GSDK** and build it. More information is avail
   - **cd** in to the folder where the toolset was extracted.
   - Run **MockVmAgent.exe**. At this point, the **MockVmAgent** acts as **HTTP** listener, waiting for heartbeats from the **GSDK** integrated with your game server.
 - Run your game server executable as it would be started on the PlayFab platform (if the game server needs **cmdline** arguments, you may need to run it from a **cmd** window).
+  > [!NOTE]
+  > If you are using our [GSDK samples from github](https://github.com/PlayFab/gsdkSamples), run the .exe in Administrator mode to avoid authorization errors.
 - If the **GSDK** has been integrated correctly, you will see the **MockVmAgent** print the following outputs:  
   - **CurrentGameState** - Initializing (this is optional and may not show up if your game directly calls **GSDK::ReadyForPlayers** and does not call **GSDK::Start**).
   - **CurrentGameState** - StandingBy  
@@ -53,9 +55,9 @@ The **MockVmAgent** requests the game server to terminate (via **GSDK**) after a
 
 ## Verifying containerization
 
-### Pre-requisites
+### Prerequisites
 
-- **Windows 10** with April 2018 (**1803**) update.  
+- **Windows 10 Pro (or above)** with April 2018 (**1803**) update.  
 - Get the docker from [here](https://download.docker.com/win/stable/Docker%20for%20Windows%20Installer.exe) or from the main [page](https://www.docker.com/products/docker-desktop).
 
 ### Running the game server in a container
@@ -63,6 +65,8 @@ The **MockVmAgent** requests the game server to terminate (via **GSDK**) after a
 - In a **Powershell** window (as Administrator):  
   - **cd** in to the folder where the toolset was extracted.  
   - Run **Setup.ps1**. This should set up docker networks, firewall rules to communicate with the local mock PlayFab **VMagent**, and pull down the PlayFab docker image from [Microsoft/PlayFab-Multiplayer](https://hub.docker.com/r/microsoft/playfab-multiplayer/). The first time this set up runs, it can take a few minutes while it downloads the container image. You might need to override the execution policy to allow script execution.
+    > [!NOTE]
+    > To run this setup successfully, you may have to configure or turn off the firewall of any 3rd party antivirus program (such as, McAfee, Norton, or Avira) that you have installed.
 
 - Compress your game server and its dependencies to a zip archive, in the same way that it's uploaded to PlayFab multiplayer platform.
 
