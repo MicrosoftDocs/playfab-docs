@@ -24,7 +24,7 @@ Enable the feature by clicking the **Multiplayer** tab in **Game Manager**:
 
 ## Download and build the GDSK sample
 
-Multiplayer servers work through a special state machine by integrating with the PlayFab **Game Server SDK** (**GSDK**) (see [Basics of a PlayFab game server](basics-of-a-playFab-game-server.md)).
+Multiplayer servers work through a special state machine by integrating with the PlayFab **Game Server SDK** (**GSDK**) (see [Basics of a PlayFab game server](basics-of-a-playfab-game-server.md)).
 
 **GSDK** samples show this integration through a very simple **HTTP** server sample app.
 

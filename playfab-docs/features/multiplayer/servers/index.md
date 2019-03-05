@@ -40,7 +40,7 @@ These are the typical steps for using the service:
   - [Quickstart for multiplayer servers (Game Manager)](quickstart-for-multiplayer-servers-game-manager.md)
 
 - **Authoring a game server**
-  - [Basics of a PlayFab game server](basics-of-a-playFab-game-server.md)
+  - [Basics of a PlayFab game server](basics-of-a-playfab-game-server.md)
   - [Integrating game servers with the PlayFab game server SDK (GSDK)](integrating-game-servers-with-gsdk.md)
   - [Locally debugging game servers and integration with PlayFab](locally-debugging-game-servers-and-integration-with-playfab.md)
 

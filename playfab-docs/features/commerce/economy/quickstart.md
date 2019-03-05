@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Economy quickstart
 
-Making monetization work is one of the biggest challenges of games. Playfab helps make this easy by building on top of three foundational pieces: Currencies, Items, and Inventory.
+Making monetization work is one of the biggest challenges of games. PlayFab helps make this easy by building on top of three foundational pieces: Currencies, Items, and Inventory.
 
 In this quickstart tutorial, you will:
 
@@ -53,7 +53,7 @@ To make a catalog with an item:
 
 ## Add an item to a player inventory
 
-Playfab’s catalog APIs support many strategies for item purchasing, such as simple real money or virtual currency purchases of items, triggered item grants based on buying another item, locked (with a potentially purchasable key) and unlocked boxes, random result tables, and non-purchasable items that are granted based on events within a game. In this quickstart we cover the virtual currency purchase use case.
+PlayFab’s catalog APIs support many strategies for item purchasing, such as simple real money or virtual currency purchases of items, triggered item grants based on buying another item, locked (with a potentially purchasable key) and unlocked boxes, random result tables, and non-purchasable items that are granted based on events within a game. In this quickstart we cover the virtual currency purchase use case.
 
 1. In your game, call GetCatalogItems
     CatalogVersion: "main"
@@ -75,4 +75,4 @@ Once you have a Catalog with Items supported by Virtual Currencies, you can use 
 4. Set up unique in-game vendors or Sales events using Stores and Sales.
 5. Create some player Segments and use Stores to drive different item and bundle offers to your players       regardless of where they are in your game lifecycle:  Custom Stores for Player Segments
 6. Verify your assumptions using A/B Testing
-7. Finally, gather economic data so that you can improve and iterate on your game using Playfab Reports
+7. Finally, gather economic data so that you can improve and iterate on your game using PlayFab Reports

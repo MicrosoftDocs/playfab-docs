@@ -18,7 +18,7 @@ The tutorials in this section walk you through multiplayer server topics.
 - [Allocating game servers and configuring vs debugging tools](allocating-game-servers-and-configuring-vs-debugging-tools.md)
 - [Archived Release Notes - PlayFab Multiplayer Servers (Thunderhead)](thunderhead-archived-release-notes.md)
 - [Archiving and retrieving multiplayer server logs](archiving-and-retrieving-multiplayer-server-logs.md)
-- [Basics of a PlayFab game server](basics-of-a-playFab-game-server.md)
+- [Basics of a PlayFab game server](basics-of-a-playfab-game-server.md)
 - [Billing for PlayFab Multiplayer Servers 2.0](billing-for-thunderhead.md)
 - [Connecting clients to game servers](connecting-clients-to-game-servers.md)
 - [Custom Game Servers](custom-game-servers.md)
