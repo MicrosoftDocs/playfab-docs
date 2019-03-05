@@ -32,10 +32,10 @@ Please download the XBox ERA and Win32/Win10 libraries at:
 
 ## Release Notes
 
-- *Region Restrictions.* Parties’s API is documented to support selecting the lowest latency region for a new network by passing an empty/null list of CofaRegions to CreateNewNetwork. This is currently not implemented. As well, the `CofaManager::GetRegions` and `RegionsChanged` state change are not implemented. For the time being when you create a new network please just pass a hardcoded CofaRegion list.
+- *Region Restrictions.* Parties’s API is documented to support selecting the lowest latency region for a new network by passing an empty/null list of PartyRegions to CreateNewNetwork. This is currently not implemented. As well, the `PartyManager::GetRegions` and `RegionsChanged` state change are not implemented. For the time being when you create a new network please just pass a hard coded PartyRegion list.
 
 ```cpp
-CofaRegion regionList[] = {
+PartyRegion regionList[] = {
     // Hard-coded region
     {
         "WestUS", // region name 
@@ -43,7 +43,7 @@ CofaRegion regionList[] = {
     },
 };
 
-RETURN_IF_FAILED(CofaManager::GetSingleton().CreateNewNetwork(
+RETURN_IF_FAILED(PartyManager::GetSingleton().CreateNewNetwork(
     buildId,
     localUser,
     &networkConfiguration,
