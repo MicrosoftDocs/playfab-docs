@@ -24,7 +24,7 @@ The purpose of this guide is to explain how to quickly get started with UGC usin
 
 ## Get an Entity Token
 
-UGC is designed to work with Playfab Entities, so the first step is to get an entity token using LoginWithCustomID. As a service call, that looks something like this:
+UGC is designed to work with PlayFab Entities, so the first step is to get an entity token using LoginWithCustomID. As a service call, that looks something like this:
 
 ```csharp
 POST https://YOURTITLEID.playfabapi.com/Client/LoginWithCustomID HTTP/1.1

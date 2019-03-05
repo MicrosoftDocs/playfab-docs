@@ -4,7 +4,7 @@
   - name: Accessing increased core limits and additional Azure regions
     href: identifying-and-increasing-core-limits.md
   - name: Basics of a PlayFab game server
-    href: basics-of-a-playFab-game-server.md
+    href: basics-of-a-playfab-game-server.md
   - name: Billing for PlayFab Multiplayer Servers 
     href: billing-for-thunderhead.md
   - name: Detailed price sheet for multiplayer servers

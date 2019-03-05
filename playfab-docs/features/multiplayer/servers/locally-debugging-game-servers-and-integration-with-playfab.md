@@ -62,7 +62,7 @@ The **MockVmAgent** requests the game server to terminate (via **GSDK**) after a
 
 - In a **Powershell** window (as Administrator):  
   - **cd** in to the folder where the toolset was extracted.  
-  - Run **Setup.ps1**. This should set up docker networks, firewall rules to communicate with the local mock Playfab **VMagent**, and pull down the PlayFab docker image from [Microsoft/PlayFab-Multiplayer](https://hub.docker.com/r/microsoft/playfab-multiplayer/). The first time this set up runs, it can take a few minutes while it downloads the container image. You might need to override the execution policy to allow script execution.
+  - Run **Setup.ps1**. This should set up docker networks, firewall rules to communicate with the local mock PlayFab **VMagent**, and pull down the PlayFab docker image from [Microsoft/PlayFab-Multiplayer](https://hub.docker.com/r/microsoft/playfab-multiplayer/). The first time this set up runs, it can take a few minutes while it downloads the container image. You might need to override the execution policy to allow script execution.
 
 - Compress your game server and its dependencies to a zip archive, in the same way that it's uploaded to PlayFab multiplayer platform.
 

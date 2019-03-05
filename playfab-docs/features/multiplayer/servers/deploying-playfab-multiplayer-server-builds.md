@@ -16,7 +16,7 @@ A PlayFab multiplayer server build is a combination of your game server executab
 
 Some aspects of a build cannot be modified once a build is created, this is the build's *definition*:
 
-- **Assets** - Assets are zip files. At least one asset containing your game server executable is required. (See [Basics of a PlayFab game server](basics-of-a-playFab-game-server.md)). Each asset has an asset mount path that specifies where it is mounted in the container file system. Assets should be less than 10GB in size. A typical mount path might be **C:\Assets**.
+- **Assets** - Assets are zip files. At least one asset containing your game server executable is required. (See [Basics of a PlayFab game server](basics-of-a-playfab-game-server.md)). Each asset has an asset mount path that specifies where it is mounted in the container file system. Assets should be less than 10GB in size. A typical mount path might be **C:\Assets**.
 - **Machine selection** - Required. The virtual machine size you want to use. PlayFab currently supports four **Azure** compute families (See [Multiplayer Servers detailed price sheet](multiplayer-servers-detailed-price-sheet.md)).  
 - **Servers per machine** - Required. The maximum number of game servers that should be operated on a single virtual machine. A typical configuration may have four servers on a **Standard_D2s_v3**, providing each server effectively 50% of a core.
 - **Certificate** - Optional. A **pfx** file (**Windows**) or **pem** file (**Linux**) containing a certificate to be installed within the container. Typically a certificate for service-to-service authentication is installed through this configuration.

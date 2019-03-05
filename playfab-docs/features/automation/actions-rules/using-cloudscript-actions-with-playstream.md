@@ -69,7 +69,7 @@ To view this action, have a look at the **handlePlayStreamEventAndProfile Handle
 handlers.handlePlayStreamEventAndProfile = function (args, context) {
 
     // The event that triggered the action.
-    // For a list of event types, see our PlayFAb API documentation.
+    // For a list of event types, see our PlayFab API documentation.
     var psEvent = context.playStreamEvent;
 
     // The profile data of the player associated with the event

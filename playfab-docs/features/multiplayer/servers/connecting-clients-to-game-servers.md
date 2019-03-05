@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Connecting clients to game servers
 
-Playfab game servers are containerized applications. When game servers are deployed to **Azure**, their networking environment is virtualized and the game server will not have direct access to its Internet accessible **IP** addresses.
+PlayFab game servers are containerized applications. When game servers are deployed to **Azure**, their networking environment is virtualized and the game server will not have direct access to its Internet accessible **IP** addresses.
 
 Instead, game servers using `GetAdaptersInfo` (**Windows**) or `GetIfAddrs` (**Linux**) will observe a single network adapter with non-unique **IP** addresses that have been configured through **Network Address Translation** (**NAT44**).
 
@@ -33,7 +33,7 @@ While testing high-density configurations, it is important to test that typical 
 
 Different virtual machine sizes and operating systems are provisioned with differing levels of bandwidth. To see the bandwidth provisioned for a specific **SKU**, please see **Azure’s** throughput documentation.
 
-Game servers are allocated through service-to-service calls through the Playfab server **API**. The connection information required for client connectivity is passed through these services and clients which typically use **TCP** or **UDP** sockets to drive a direct connection to the game server.
+Game servers are allocated through service-to-service calls through the PlayFab server **API**. The connection information required for client connectivity is passed through these services and clients which typically use **TCP** or **UDP** sockets to drive a direct connection to the game server.
 
 Typically, game servers will listen on well-known **UDP** and **TCP** ports selected by the game developer.
 
