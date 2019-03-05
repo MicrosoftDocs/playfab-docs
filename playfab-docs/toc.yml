@@ -1,0 +1,27 @@
+- name: PlayFab
+  href: index.md
+- name: Quickstarts
+  href: index.md?#pivot=documentation&panel=quickstarts
+- name: Features
+  expanded: true
+  items:
+  - name: Authentication
+    href: index.md?#pivot=documentation&panel=authentication
+  - name: Data
+    href: index.md?#pivot=documentation&panel=data
+  - name: Config
+    href: index.md?#pivot=documentation&panel=config
+  - name: Automation
+    href: index.md?#pivot=documentation&panel=automation
+  - name: Social
+    href: index.md?#pivot=documentation&panel=social
+  - name: Commerce
+    href: index.md?#pivot=documentation&panel=commerce
+  - name: Multiplayer
+    href: index.md?#pivot=documentation&panel=multiplayer
+  - name: Analytics
+    href: index.md?#pivot=documentation&panel=analytics
+  - name: Engagement
+    href: index.md?#pivot=documentation&panel=engagement
+- name: SDKs
+  href: index.md?#pivot=documentation&panel=sdks

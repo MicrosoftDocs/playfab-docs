@@ -1,0 +1,107 @@
+- name: SDKs
+  href: /gaming/playfab/?#pivot=documentation&panel=sdks
+  items:
+  - name: SDK Generator
+    href: ./sdkgenerator/index.md
+    items:
+    - name: Quickstart
+      href: ./sdkgenerator/quickstart.md
+  - name: ActionScript
+    href: ./actionscript/index.md
+    items:
+    - name: Quickstart
+      href: ./actionscript/quickstart.md
+  - name: Android Studio Project (Java)
+    href: ./androidstudio/index.md
+  - name:  C++
+    href: ./xplatcpp/index.md
+    items:
+    - name: Quickstart - Windows
+      href: ./xplatcpp/quickstart-windows.md
+    - name: Quickstart - Linux
+      href: ./xplatcpp/quickstart-linux.md
+    - name: Quickstart - Xbox
+      href: ./xplatcpp/quickstart-xbox.md
+  - name:  C#
+    href: ./c-sharp/index.md
+    items:
+    - name: Quickstart
+      href: ./c-sharp/quickstart.md
+  - name: Cocos2d-x
+    href: ./cocos2d-x/index.md
+    items:
+    - name: Quickstart
+      href: ./cocos2d-x/quickstart.md
+  - name:  Java
+    href: ./java/index.md
+    items:
+    - name: Quickstart
+      href: ./java/quickstart.md
+  - name: Javascript
+    href: ./javascript/index.md
+    items:
+    - name: Quickstart
+      href: ./javascript/quickstart.md
+  - name:  Lua
+    href: ./lua/index.md
+    items:
+    - name: Quickstart - Corona
+      href: ./lua/quickstart-corona.md
+    - name: Quickstart - Defold
+      href: ./lua/quickstart-defold.md
+  - name: NodeJS
+    href: ./nodejs/index.md
+    items:
+    - name: Quickstart
+      href: ./nodejs/quickstart.md
+  - name:  Objective-C
+    href: ./objective-c/index.md
+    items:
+    - name: Quickstart
+      href: ./objective-c/quickstart.md
+  - name: Phaser.io
+    href: ./phaser/index.md
+  - name: PHP
+    href: ./php/index.md
+    items:
+    - name: Quickstart
+      href: ./php/quickstart.md
+  - name:  Postman
+    href: ./postman/index.md
+    items:
+    - name: Quickstart
+      href: ./postman/quickstart.md
+    - name: Executing the PlaFab API via Postman
+      href: ./postman/executing-the-playfab-api-via-postman.md
+  - name: Python
+    href: ./python/index.md
+    items:
+    - name: Quickstart
+      href: ./python/quickstart.md
+  - name:  Unity3D
+    href: ./unity3d/index.md
+    items:
+    - name: Quickstart
+      href: ./unity3d/quickstart.md
+  - name: Unreal Engine
+    href: ./unreal/index.md
+    items:
+    - name: Quickstart
+      href: ./unreal/quickstart.md
+    - name: Upgrade Tutorial
+      href: ./unreal/unreal-marketplace-plugin-upgrade-tutorial.md
+  - name: Xamarin (C#)
+    href: ./xamarin/index.md
+    items:
+    - name: Quickstart
+      href: ./xamarin/quickstart.md
+  - name: Cross platform C++
+    href: ./xplatcpp/index.md
+    items:
+    - name: Quickstart - Linux
+      href: ./xplatcpp/quickstart-linux.md
+    - name: Quickstart - Windows
+      href: ./xplatcpp/quickstart-windows.md
+    - name: Quickstart - Xbox One
+      href: ./xplatcpp/quickstart-xbox.md
+  

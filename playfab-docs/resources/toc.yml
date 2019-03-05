@@ -1,0 +1,6 @@
+- name: PlayFab
+  href: /gaming/playfab/
+  expanded: true
+  items:
+  - name: Recipes and samples
+    href: recipes-and-samples.md

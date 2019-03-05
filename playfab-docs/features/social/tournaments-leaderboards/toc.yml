@@ -1,0 +1,17 @@
+- name: Overview
+  href: index.md
+- name: Quickstart
+  href: quickstart.md
+- name: Tutorials
+  href: tutorials.md
+  items:
+  - name: Accessing Archived Tournament Results
+    href: accessing-archived-tournament-results.md
+  - name: Using Prize Tables
+    href: using-prize-tables.md
+  - name: Using resettable statistics and leaderboards
+    href: using-resettable-statistics-and-leaderboards.md
+  - name: Using the Profile for Advanced Leaderboards
+    href: using-the-profile-for-advanced-leaderboards.md
+  - name: Using firends leaderboards
+    href: ../friends/friends-leaderboards.md

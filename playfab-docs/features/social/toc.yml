@@ -1,0 +1,12 @@
+- name: PlayFab Social
+  href: /gaming/playfab/?#pivot=documentation&panel=social
+  expanded: true
+  items:
+  - name: Friends
+    href: friends/toc.yml
+  - name: Groups, Guilds and Clans
+    href: groups/toc.yml
+  - name: Tournaments and Leaderboards
+    href: tournaments-leaderboards/toc.yml
+  - name: Trading
+    href: trading/toc.yml
