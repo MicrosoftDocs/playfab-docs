@@ -10,7 +10,7 @@
       "xref_query_tags": [
         "/rest"
       ],
-      "open_to_public_contributors": false,
+      "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
