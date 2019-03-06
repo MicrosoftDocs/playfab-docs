@@ -36,7 +36,7 @@
             "breadcrumb_path": "/gaming/playfab/breadcrumb/toc.json",
             "extendBreadcrumb": true,
             "feedback_system": "GitHub",
-            "feedback_github_repo": "MicrosoftDocs/playfab-docs-pr",
+            "feedback_github_repo": "MicrosoftDocs/playfab-docs",
             "feedback_product_url": "https://community.playfab.com/index.html",
             "searchScope": ["PlayFab"],
             "uhfHeaderId": "MSDocsHeader-PlayFab",
