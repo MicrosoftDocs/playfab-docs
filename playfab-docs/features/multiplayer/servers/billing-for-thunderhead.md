@@ -106,7 +106,7 @@ It is common for games to have higher levels of concurrency during the weekends 
 
 ![Multiplayer demand](media/tutorials/multiplayer-demand.png)
 
-PlayFab Multiplayer Server builds will naturally scale with your player base: servers are transitioned to the active state by calling **RequestMultiplayerServer**, and are later recycled when your game server terminates (typically the end of a “multiplayer round”).
+PlayFab Multiplayer Server builds will naturally scale with your player base: servers are transitioned to the active state by calling [RequestMultiplayerServer](xref:titleid.playfabapi.com.multiplayer.multiplayerserver.requestmultiplayerserver), and are later recycled when your game server terminates (typically the end of a “multiplayer round”).
 
 However, delivering this dynamic scaling with minimal allocation latency requires some overhead, which originates from 2 key sources:
 
