@@ -58,7 +58,7 @@ The PlayFab **Game Server SDK** (**GSDK**) is provided in  **C++** and **C#** ve
 
 ![Thunderhead GSDK](media/tutorials/thunderhead-gsdk.png)
 
-When your game server is initialized it will be put into a **preparing state**, with PlayFab waiting for your game server to call `ReadyForPlayers()`. Once this is called, the game server is put into a **standing by state** and waits for allocation requests from your matchmaking service into PlayFab via `RequestMultiplayerServer`.
+When your game server is initialized it will be put into a **preparing state**, with PlayFab waiting for your game server to call `ReadyForPlayers()`. Once this is called, the game server is put into a **standing by state** and waits for allocation requests from your matchmaking service into PlayFab via the [RequestMultiplayerServer](xref:titleid.playfabapi.com.multiplayer.multiplayerserver.requestmultiplayerserver) method.
 
 The following image shows the **States of a PlayFab multiplayer server**:
 
