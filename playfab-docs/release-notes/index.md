@@ -216,7 +216,7 @@ Date: 2018-07-06
 **API Changes:**
 
 * **New API Method:**
- * entity.[WriteEvents](sref:titleid.playfabapi.com.events.playstreamevents.writeevents)
+ * entity.[WriteEvents](xref:titleid.playfabapi.com.events.playstreamevents.writeevents)
 
 **[UnitySdk](https://github.com/PlayFab/UnitySDK) Specific Changes:**
 

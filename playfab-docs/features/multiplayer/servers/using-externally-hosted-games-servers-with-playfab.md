@@ -122,7 +122,7 @@ For external server hosting, you will not be setting the build to active in any 
 
 As a result of the **RegisterGame** call, the PlayFab Matchmaker assigns the server a **LobbyId**, which is provided in the response.
 
-```csharp
+```json
 HTTP/1.1 200 OK
 Content-Type: application/json; charset=utf-8
 {
@@ -177,7 +177,7 @@ And again, there’s no data needed for the response, which will be a simple **O
 
 Now, for the sake of completeness, there are a few *additional* features we’ve added to server hosting over time, which you can use.
 
-The newest is **Server Tags**, which allow you to apply string tags to servers which can be used for matchmaking. If you look at both the [GetCurrentGames](xref:titleid.playfabapi.com.client.matchmaking.getcurrentgames) and [Matchmake](xref:titleid.playfabapi.com.client.matchmaking.matchmake) calls, you’ll see that they now take a [TagFilter](xref:titleid.playfabapi.com.client.matchmaking.matchmake#collectionfilter), which can be used to define tags that you want to search on, or that you want to exclude from your search.
+The newest is **Server Tags**, which allow you to apply string tags to servers which can be used for matchmaking. If you look at both the [GetCurrentGames](xref:titleid.playfabapi.com.client.matchmaking.getcurrentgames) and [Matchmake](xref:titleid.playfabapi.com.client.matchmaking.matchmake) calls, you’ll see that they now take a [TagFilter] parameter(xref:titleid.playfabapi.com.client.matchmaking.matchmake#collectionfilter), a **collectionfilter** object which can be used to define tags that you want to search on, or that you want to exclude from your search.
 
 This is particularly handy for games with large user populations, where you want to give player the ability to search for games running their favorite maps, or where there are server options running that they particularly like (as well as letting them avoid the ones they hate).
 
