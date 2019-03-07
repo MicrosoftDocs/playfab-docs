@@ -24,7 +24,7 @@ Most PlayFab services, such as PlayStream or Matchmaking, are included with ever
 
 ## What comes with your basic PlayFab Core Services package?
 
-A basic allocation of multiplayer Party time capacity is included with every paid PlayFab tier: 100 player minutes, and 100 voice minutes, with voice chat and Speech services enabled.
+A basic allocation of Party time is included with every paid PlayFab tier: 100 player minutes, and 100 voice minutes.
 
 ## What meters are used for consumption billing?
 
@@ -34,11 +34,13 @@ There are three key meters used to bill additional Parties utilization:
 - **Party Voice.** This is measured in player minutes speaking. When a player is connected to a network and is actively speaking, that  player voice activity is measured in seconds and metered. 
 - **Network egress.** This meters data *sent* from PlayFab's relay and voice servers. This is congruent to the aggregate amount of data that players *receive* from the network.
 
+If you are an Xbox Live managed partner, Parties may be significantly discounted. Learn more at [Powering Xbox Live multiplayer activity with PlayFab](./xblguidelines.md)
+
 ## Party Connectivity   
 
 | SKU | $/player-minute connected to a network |
 | --- | --- |
-| Party Connectivity | $0.00006 |
+| Party Connectivity | $0.0001 |
 
 ## Party Voice
 
@@ -61,13 +63,3 @@ At run-time you can specify which Azure region should host your network. This im
 | Zone 2 | East Asia, Southeast Asia, Japan East, Japan West, Australia East, Australia Southeast, Central India, West India, South India, Korea Central, Korea South |  $0.08 |
 | Zone 3 | Brazil South | $0.16 |
 
-
-## Discounted usage for Xbox Live games
-
-PlayFab has partnered with Xbox Live to allow game studios leveraging the Xbox Live gamer network to enjoy certain PlayFab services for free on Xbox One and PC. This includes PlayFab Parties. If you would like to take advantage of this Xbox Live subsidy, Microsoft recommends the following multiplayer design:
-
-1. Use the Xbox Live SDK to interface with Xbox Live social capabilities like Presence, Profile Cards, and game invites.
-1. Use PlayFab Matchmaking to match players.
-1. Use PlayFab Parties to connect players for device-to-device networking or chat.
-
-If you are building a cross-network game, you will need to use the equivalent social APIs from Steam, PlayStation, etc. for those platforms. However you can use the same matchmaking, networking, and chat technologies on all platforms. Usage associated with Xbox Live logged-in players will be zero-rated (see LoginWithXbox())

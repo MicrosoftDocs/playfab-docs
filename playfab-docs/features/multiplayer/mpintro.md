@@ -10,7 +10,7 @@ keywords: playfab, multiplayer
 ms.localizationpriority: medium
 ---
 
-# Multiplayer at PlayFab
+# Multiplayer with PlayFab
 
 Multiplayer can be a great addition to many games and PlayFab provides several services focused on multiplayer scenarios:
 
