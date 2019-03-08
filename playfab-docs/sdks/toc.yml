@@ -13,15 +13,6 @@
       href: ./actionscript/quickstart.md
   - name: Android Studio Project (Java)
     href: ./androidstudio/index.md
-  - name:  C++
-    href: ./xplatcpp/index.md
-    items:
-    - name: Quickstart - Windows
-      href: ./xplatcpp/quickstart-windows.md
-    - name: Quickstart - Linux
-      href: ./xplatcpp/quickstart-linux.md
-    - name: Quickstart - Xbox
-      href: ./xplatcpp/quickstart-xbox.md
   - name:  C#
     href: ./c-sharp/index.md
     items:
