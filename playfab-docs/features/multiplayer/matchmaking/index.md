@@ -47,7 +47,7 @@ We currently support these rule types:
 
 Rules can be defined to enforce basic functionality, such as matching players with the same map, game mode or game version. More advanced uses allow constraints to relax over time or become disabled after some time. Such rules are useful for skill-based matchmaking. Visit Game Manager for more in-depth documentation on these options.
 
-For more information on specific flows from either your game client or service, see the quick start guides.  
+For more information on specific flows from either your game client or service, see the quickstart guides.  
 
 ### Quickstart Guides
 

@@ -54,7 +54,9 @@ Custom events can be classified by entity. A custom event can be bound to a play
 
 ### Relevant API Calls
 
-[WritePlayerEvent](xref:titleid.playfabapi.com.client.analytics.writeplayerevent), [WriteCharacterEvent](xref:titleid.playfabapi.com.client.analytics.writecharacterevent), [WriteTitleEvent](xref:titleid.playfabapi.com.client.analytics.writetitleevent)
+- [WritePlayerEvent](xref:titleid.playfabapi.com.client.analytics.writeplayerevent)  
+- [WriteCharacterEvent](xref:titleid.playfabapi.com.client.analytics.writecharacterevent)  
+- [WriteTitleEvent](xref:titleid.playfabapi.com.client.analytics.writetitleevent)  
 
 ### Example: Post your own custom event
 

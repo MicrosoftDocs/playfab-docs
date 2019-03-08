@@ -961,23 +961,6 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="https://docs.microsoft.com/media/logos/logo_Cplusplus.svg" alt="PlayFab SDKs: C++ card image" />
-                                                </div>
-                                            </div>
-                                            <div class="cardText">
-                                                <h3>C++</h3>
-                                                <p><a href='/gaming/playfab/sdks/xplatcpp'>SDK</a></p><p><a href='/gaming/playfab/sdks/xplatcpp/quickstart-windows'>Quickstart - Windows</a></p><p><a href='/gaming/playfab/sdks/xplatcpp/quickstart-linux'>Quickstart - Linux</a></p><p><a href='/gaming/playfab/sdks/xplatcpp/quickstart-xbox'>Quickstart - Xbox</a></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="cardSize">
-                                    <div class="cardPadding">
-                                        <div class="card">
-                                            <div class="cardImageOuter">
-                                                <div class="cardImage">
                                                     <img src="https://docs.microsoft.com/media/logos/logo_Csharp.svg" alt="PlayFab SDKs: C# card image" />
                                                 </div>
                                             </div>
@@ -1216,7 +1199,7 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/gaming/playfab/sdks/media/sdk-xplatcpp.png" alt="PlayFab SDKs: Cross platform C++ card image" />
+                                                    <img src="https://docs.microsoft.com/media/logos/logo_Cplusplus.svg" alt="PlayFab SDKs: Cross platform C++ card image" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
