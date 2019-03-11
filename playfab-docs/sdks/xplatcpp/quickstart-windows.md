@@ -15,13 +15,13 @@ ms.localizationpriority: medium
 This guide will help you make your first API call in C++. A native C++ project can be used a few ways:
 
 - Stand-alone console Admin tools for maintaining your game
-  - The C++ Sdk works great for a stand-alone C++ program
+  - The Cross-Platform C++ SDK works great for a stand-alone C++ program
 
 - Integration into an existing Visual Studio based C++ game
   - Follow the instructions below to integrate the NuGet Package into your Visual Studio Solution, and you're ready to go
 
 - Integration into an existing C++ based game engine
-  - The C++ Sdk should not be used if we provide a more specific SDK
+  - The Cross-Platform C++ SDK should not be used if we provide a more specific SDK
     - [Cocos2d-x](https://github.com/PlayFab/Cocos2d-xSDK)
     - [Unreal](https://github.com/PlayFab/UnrealCppSdk)
 
@@ -36,7 +36,7 @@ This guide will help you make your first API call in C++. A native C++ project c
 - Installation
   - Download and install Visual Studio 2017
     > [!NOTE]
-    > The PlayFab Windows C++ SDK is no longer supported on Visual Studio 2013 and Visual Studio 2015.
+    > The Cross-Platform C++ SDK is no longer supported on Visual Studio 2013 and Visual Studio 2015.
   - Create a new C++ Console project
   - Right-click Manage NuGet packages, and search for "playfab"
     - You should see a small number of matches, and you're looking for: "PlayFab Windows C++ SDK For Visual Studio 20XX"

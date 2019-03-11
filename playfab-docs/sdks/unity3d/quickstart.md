@@ -41,7 +41,10 @@ The best way to acquire our Unity SDK is via our editor extensions. Although you
 
     ![Import Unity package](media/import-uedex.png)  
 
-  - Click Import, which will import the PlayFab Unity Editor Extensions into your project.
+  - Click Import, which will import the PlayFab Unity Editor Extensions into your project. 
+
+> [!NOTE] 
+> You can move the editor extensions anywhere you want but you must retain the directory structure when doing so. If the extensions panel stops working, this is often the cause.
 
 - Log In
   - Before you can download the SDK make sure you are logged into your PlayFab account. Click the "Log In" link to take you to the login pane, and log in with your PlayFab username and password.
@@ -116,7 +119,7 @@ public class PlayFabLogin : MonoBehaviour
 > Please note that the above code is not for use with Mobile, this is an example only and shows how to login with a CustomID. Mobile games should use either
 [LoginWithAndroidDeviceID](xref:titleid.playfabapi.com.client.authentication.loginwithandroiddeviceid), [LoginWithIOSDeviceID](xref:titleid.playfabapi.com.client.authentication.loginwithiosdeviceid) or some form of social login like [LoginWithFacebook](xref:titleid.playfabapi.com.client.authentication.loginwithfacebook).
 
-## Finish and Execute
+## Finish and execute
 
 You are now ready to test out this sample.
 
@@ -127,7 +130,8 @@ Ideally, you should see the following in your Unity Console Panel.
 
 ![Console log of first API call](media/first-call-log.png)  
 
-Now you can start making other API calls and build your game.
+> [!TIP]
+>Alternatively, you can also log into the game in the PlayFab Game Manager, and select the PlayStream Monitor tab. Each time you Alt+ TAB focus away from the actively running Unity game, the game passes an event which you can see and confirm in the Playstream Monitor.
 
 For a list of all available client API Calls see our [PlayFab API References](../../api-references/index.md) documentation.
 

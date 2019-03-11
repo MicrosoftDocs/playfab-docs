@@ -71,6 +71,7 @@ Pick your **SDK**:
 - [Corona (Lua)](../sdks/lua/quickstart-corona.md)  
 - [Windows - C++](../sdks/xplatcpp/quickstart-windows.md)
 - [Linux - C++](../sdks/xplatcpp/quickstart-linux.md)  
+- [Xbox - C++](../sdks/xplatcpp/quickstart-xbox.md)
 
 ## Updating your login mechanism
 
