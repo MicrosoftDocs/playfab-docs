@@ -19,7 +19,7 @@ This Account Linking quickstart demonstrates how to bind an account to multiple 
 1. **Anonymous**
 2. **Recoverable**
 
-## Adding a Recoverable login to an existing anonymous account
+## Adding a recoverable login to an existing anonymous account
 
 It is very common for your first login to be an anonymous one. This gets your player into the game, friction-free.
 
