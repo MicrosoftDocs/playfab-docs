@@ -41,7 +41,10 @@ The best way to acquire our Unity SDK is via our editor extensions. Although you
 
     ![Import Unity package](media/import-uedex.png)  
 
-  - Click Import, which will import the PlayFab Unity Editor Extensions into your project.
+  - Click Import, which will import the PlayFab Unity Editor Extensions into your project. 
+
+> [!NOTE] 
+> You can move the editor extensions anywhere you want but you must retain the directory structure when doing so. If the extensions panel stops working, this is often the cause.
 
 - Log In
   - Before you can download the SDK make sure you are logged into your PlayFab account. Click the "Log In" link to take you to the login pane, and log in with your PlayFab username and password.
