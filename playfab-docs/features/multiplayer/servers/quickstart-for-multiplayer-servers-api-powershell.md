@@ -97,7 +97,7 @@ $Regions.Add("EastUS");
 New-PFMultiplayerServer -BuildName "MyBuild" -SessionId "00000000-0000-0000-0000-000000000001" -SessionCookie "test cookie" -PreferredRegions $regions -BuildCerts $null
 ```
 
-This is the core of PlayFab multiplayer servers: within 3 seconds of your matchmaking service calling [RequestMultiplayerServer](xref:titleid.playfabapi.com.multiplayer.multiplayerserver.requestmultiplayerserver) PlayFab will allocate a new server.
+This is the core of PlayFab multiplayer servers: within 3 seconds of your matchmaking service calling [RequestMultiplayerServer](xref:titleid.playfabapi.com.multiplayer.multiplayerserver.requestmultiplayerserver), PlayFab will allocate a new server.
 
 These servers come from continuously refilled, standing-by server pools you configure on a per-region and per-build basis. After gameplay ends the server is recycled.
 

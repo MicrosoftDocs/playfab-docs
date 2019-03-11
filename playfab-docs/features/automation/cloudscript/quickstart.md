@@ -27,7 +27,7 @@ Please note the following when reading this:
 - The **C#** samples shown correspond to using the PlayFab **Unity SDK**.
 - **JavaScript** samples correspond to using the PlayFab **CloudScript** service.
 
-## Your first CloudScript Revision
+## Your first CloudScript revision
 
 After creating a title, PlayFab automatically includes an example script as your first revision. This revision includes a number of methods that you can use for learning and testing **CloudScript**.
 

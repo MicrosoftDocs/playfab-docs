@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Actions &amp; Rules quickstart
 
-A **PlayStream Rule** allows you to react to a subset of one type of **PlayStream Events** in real time.
+A **PlayStream Rule** allows you to react to a subset of one type of **PlayStream** events in real time.
 
 ## Requirements
 

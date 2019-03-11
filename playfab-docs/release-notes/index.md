@@ -300,7 +300,7 @@ Date: 2018-05-07
  * No longer default to ignoring all certificates
  * Customers are expected to implement their own certificate validation, or call PlayFab.Internal.PlayFabWebRequest.SkipCertificateValidation()
 
-**[WindowsSdk](https://github.com/PlayFab/WindowsSDK) Specific Changes:**
+**WindowsSdk Specific Changes:**
 
 * Fixed hundreds of Level 4 warnings
 * The version number published in PlayFabSettings.cpp has been corrected
@@ -388,7 +388,7 @@ Date: 2018-03-16
  * [CSharpSDK](https://github.com/PlayFab/CSharpSDK)
  * [NodeSDK](https://github.com/PlayFab/NodeSDK)
  * [PostmanCollection](https://github.com/PlayFab/PostmanCollection)
- * [WindowsSDK](https://github.com/PlayFab/WindowsSDK)
+ * WindowsSDK
  * [Cocos2d-xSDK](https://github.com/PlayFab/Cocos2d-xSDK)
  * [JavaSDK](https://github.com/PlayFab/JavaSDK)
  * [LuaSdk](https://github.com/PlayFab/LuaSDK) (Including Corona and Defold)
