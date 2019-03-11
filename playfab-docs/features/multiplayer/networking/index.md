@@ -1,5 +1,5 @@
 ---
-title: Overview of PlayFab Parties
+title: Overview of PlayFab Party
 author: v-thopra
 description: Introduces the concepts and APIs for PlayFab networking.
 ms.author: v-thopra
@@ -11,7 +11,7 @@ keywords: playfab, multiplayer, networking
 ms.localizationpriority: medium
 ---
 
-# PlayFab Parties
+# PlayFab Party
 
 > [!IMPORTANT]
 > This feature is currently in **Private Preview**.  
@@ -20,17 +20,17 @@ ms.localizationpriority: medium
 >
 > Access to this feature is restricted to select titles, with SDKs available for Windows 10 PCs and Xbox One. Interoperable SDKs for iOS and Android will be available this summer. If you are interested in this feature, you can request access by submitting a ticket on [support.playfab.com](https://support.playfab.com/hc/en-us/requests/new).
 
-PlayFab Parties is a set of libraries and services for easily adding multiplayer real-time networking and chat communication to your game.
+PlayFab Party is a set of libraries and services for easily adding multiplayer real-time networking and chat communication to your game.
 
 Multiplayer games are typically one of two designs: authoritative and non-authoritative. Authoritative games have a central authority for game state, this may be a player device or [a cloud-hosted dedicated server](https://aka.ms/PlayFabCompute). Non-authoritative designs require player devices to synchronize game state cooperatively over a peer-to-peer network.
 
 Parties are an ideal, secure, low-latency transport for non-authoritative designs and authoritative designs where a cloud-hosted dedicated server is not desired. Parties is also well-suited to add voice and text communication to non-gameplay social experiences your app may provide (e.g. an in-game squad experience, or post-game lobbies).
 
-Parties utilizes Azure Speech Services to transcribe player voice chat and synthesize utterances for text message. This functionality has several uses, but was primarily designed as an accessibility aide. Typical usage of Parties voice chat is billed on a per-minute basis, and up to 10% of those voice minutes can leverage transcription and synthesis for free. We recommend tying activation of this capability to an ease-of-access player setting.
+Party utilizes Azure Speech Services to transcribe player voice chat and synthesize utterances for text message. This functionality has several uses, but was primarily designed as an accessibility aide. Typical usage of Party voice chat is billed on a per-minute basis, and up to 10% of those voice minutes can leverage transcription and synthesis for free. We recommend tying activation of this capability to an ease-of-access player setting.
 
-Parties can not only transcribe player chat, but also translate chat in real time. In anonymous matchmaking and international competitive games, these transcription and translation capabilities can make for a more engaging multiplayer experience. 
+Party can not only transcribe player chat, but also translate chat in real time. In anonymous matchmaking and international competitive games, these transcription and translation capabilities can make for a more engaging multiplayer experience. 
 
-A goal of PlayFab Parties and our other multiplayer services is to facilitate interoperable multiplayer infrastructure and cross-network gameplay. However we remind customers to ensure their multiplayer experiances comply with relevant platform policies for multiplayer and cross-network player activity. 
+A goal of PlayFab Party and our other multiplayer services is to facilitate interoperable multiplayer infrastructure and cross-network gameplay. We encourage customers to ensure their multiplayer experiances comply with relevant platform policies for multiplayer and cross-network player activity. 
 
 ## Roadmap
 | | March 2018 | August 2019 |
@@ -51,7 +51,7 @@ A goal of PlayFab Parties and our other multiplayer services is to facilitate in
 
 ## Concepts
 
-Parties is oriented around a few key concepts:
+Party is oriented around a few key concepts:
 
 - `Network` - A logical representation of a set of interconnected devices participating in a particular multiplayer experience, as well as basic state describing that collection. 
 - `Endpoint` - A facility associated with a device that can receive data from other devices and is the source for sending data to other devices.
