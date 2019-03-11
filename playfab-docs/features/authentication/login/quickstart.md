@@ -21,14 +21,14 @@ This Account Linking quickstart demonstrates how to bind an account to multiple 
 
 ## Adding a Recoverable login to an existing anonymous account
 
-It is very common for your first login to be an Anonymous one. This gets your player into the game, friction-free.
+It is very common for your first login to be an anonymous one. This gets your player into the game, friction-free.
 
-Once a player has become invested in your game, you should prompt them to add a Recoverable login method, which makes their account *recoverable* in the case of device failure or other issues.
+Once a player has become invested in your game, you should prompt them to add a recoverable login method, which makes their account *recoverable* in the case of device failure or other issues.
 
-This section covers adding a Recoverable login mechanism to an Anonymous account.
+This section covers adding a recoverable login mechanism to an anonymous account.
 
 > [!NOTE]
-> An Anonymous login is still relevant, and can continue to be the primary frictionless login for the player. Many players will *only* use these options again if they are attempting to recover their account, use platform-specific features, or link a second Anonymous device.
+> An anonymous login is still relevant, and can continue to be the primary frictionless login for the player. Many players will *only* use these options again if they are attempting to recover their account, use platform-specific features, or link a second Anonymous device.
 
 ![PayFab anonymous login and recoverable login mechanism](../media/tutorials/playfab-anonymous-login-and-recoverable-login.png)  
 
