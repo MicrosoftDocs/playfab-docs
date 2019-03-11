@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 Multiplayer can be a great addition to many games and PlayFab provides several services focused on multiplayer scenarios:
 
-- **Leaderboards** - Rank players with resettable statistics and leaderboards
+- **Leaderboards** - Track and respond to player activity with statistics and leaderboards
 - **Matchmaking** - Deploy custom matchmaking rules to group players quickly
 - **Servers** - Dynamically scale custom multiplayer servers in Azure
 - **Parties** - Connect players with networking and accessible in-game chat
@@ -29,5 +29,3 @@ Parties is a pre-production service still being shaped up. It is offered with ve
 |[Matchmaking](./matchmaking/index.md)|Production (Preview)|Included in PlayFab essentials| 
 |[Servers](./servers/index.md)|Production (Preview)|Premium Service - 30% Preview Discount|
 |[Parties](./networking/index.md)|Pre-production (Beta)|Premium Service - Free during beta|
-
-![Multiplayer Animation](./servers/media/tutorials/Multiplayer-Animation.gif)
