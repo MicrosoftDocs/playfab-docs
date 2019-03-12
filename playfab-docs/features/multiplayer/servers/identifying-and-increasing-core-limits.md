@@ -36,7 +36,7 @@ PlayFab measures your quota in **cores**:
 The number of virtual machines does not matter, *only the number of cores*. Quota is specifically allocated for each available compute series (A v2, D v2, D v3, F v1...) and region.
 
 You can view the quota for a title on the **Builds** page by selecting **View Quota** in the top right.
-> {!NOTE]
+> [!NOTE]
 > In the future, this will be integrated with the PlayFab limits page.
 
 ![Quota cores PopUp](media/tutorials/quota-cores-popup.png)
