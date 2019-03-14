@@ -750,6 +750,23 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
+                                                    <img src="/gaming/playfab/features/media/feature-party.svg" alt="PlayFab Multiplayer Features: Party card image" />
+                                                </div>
+                                            </div>
+                                            <div class="cardText">
+                                                <h3>Party</h3>
+                                                <p style='color: #7f7f7f'>Add real-time networking and chat into your game.</p><p><a href='/gaming/playfab/features/multiplayer/networking/'>Overview</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardImageOuter">
+                                                <div class="cardImage">
                                                     <img src="/gaming/playfab/features/media/feature-photon.svg" alt="PlayFab Multiplayer Features: Photon card image" />
                                                 </div>
                                             </div>

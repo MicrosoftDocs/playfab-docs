@@ -8,5 +8,7 @@
     href: servers/toc.yml
   - name: Matchmaking
     href: matchmaking/toc.yml
+  - name: Party
+    href: networking/toc.yml
   - name: Photon
     href: photon/toc.yml
