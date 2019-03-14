@@ -23,6 +23,7 @@ Essentially, it's the same as player data, only with no associated player by def
 
 > [!WARNING]
 > **Shared Group Data** should not be used by Groups larger than a dozen or so players, at most. One issue is that too many players attempting to read the same data at the same time will result in delays reading the data (**Shared Group Data** is not *sharded* or *cached*, the way that data meant to be read by many players at once, like **Title Data** is). And special care should be taken to prevent players from over-writing each others data. In the instance that multiple players try to write to the same **Key** at the same time, only one of those writes will "win", resulting in the loss of the other user's data.
+
 ## Example: Turn-based multiplayer Async games
 
 The original, and still best, use case for **Shared Group Data** is best described as storing state for an online board game. players take turns modifying the data via **CloudScript**, with a clear turn order.

@@ -69,14 +69,14 @@ using UnityEngine;
 
 /// <summary>
 /// Assumptions for this controller:
-/// + Entitites can be in multiple groups
+/// + Entities can be in multiple groups
 ///   - This is game specific, many games would only allow 1 group, meaning you'd have to perform some additional checks to validate this.
 /// </summary>
 [Serializable]
 public class GuildTestController
 {
     // A local cache of some bits of PlayFab data
-    // This cache pretty much only serves this example , and assumes that entities are uniquely identifyable by EntityId alone, which isn't technically true. Your data cache will have to be better.
+    // This cache pretty much only serves this example , and assumes that entities are uniquely identifiable by EntityId alone, which isn't technically true. Your data cache will have to be better.
     public readonly HashSet<KeyValuePair<string, string>> EntityGroupPairs = new HashSet<KeyValuePair<string, string>>();
     public readonly Dictionary<string, string> GroupNameById = new Dictionary<string, string>();
 
@@ -206,8 +206,8 @@ Let's take a look at some of the functions in the example provided:
 - **CreateGroup/DeleteGroup** - Mostly self-explanatory. This example demonstrates updating the local group info cache when these calls are executed successfully.
 
 - **InviteToGroup/ApplyToGroup** - Joining a group is a two-step process, and it can be activated both directions:
-     - A player can ask to join a group.
-     - A group can invite a player.
+   - A player can ask to join a group.
+   - A group can invite a player.
 
 - **AcceptGroupInvitation/AcceptGroupApplication** - The second step of the join process. The responding entity accepts the invitation, completing the process of making the player a part of the group.
 

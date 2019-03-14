@@ -153,19 +153,19 @@ If your store, catalog, or item IDs are *not* alpha-numeric, they must be [HTML 
 
 ```csharp
 FB.ui({
-	method: 'pay',
-	action: 'purchaseitem',
-	product: "https://{{TitleId}}.playfabapi.com/OpenGraphProduct/{{TitleId}}/{{StoreId}}/IAP1_0/BigBagOfGold",
-	request_id: "1234567890ABCDEF"
+    method: 'pay',
+    action: 'purchaseitem',
+    product: "https://{{TitleId}}.playfabapi.com/OpenGraphProduct/{{TitleId}}/{{StoreId}}/IAP1_0/BigBagOfGold",
+    request_id: "1234567890ABCDEF"
 }, function (response) {
-	console.log('Payment completed', response);
-	print(response);
-	if (response.payment_id) {
-		facebookPurchaseId = response.payment_id;
-		payForOrder(); // This is a function call you need to write
-					   // which makes the call to Client/PayForPurchase
-					   // (see below)
-	}
+    console.log('Payment completed', response);
+    print(response);
+    if (response.payment_id) {
+        facebookPurchaseId = response.payment_id;
+        payForOrder(); // This is a function call you need to write
+                       // which makes the call to Client/PayForPurchase
+                       // (see below)
+    }
 });
 ```
 
@@ -226,7 +226,7 @@ Fortunately, this is simple. In your title setup in **Facebook**, simply enter t
 https://{{TitleId}}.playfabapi.com/ThirdPartyPayments/FacebookPaymentUpdate
 ```
 
-Where **{{TitleId}}** is the **Title ID** for your game in **PlayFab** (for example, https://aaa.playfabapi.com/ThirdPartyPayments/FacebookPaymentUpdate).
+Where **{{TitleId}}** is the **Title ID** for your game in **PlayFab** (for example, <https://aaa.playfabapi.com/ThirdPartyPayments/FacebookPaymentUpdate>).
 
 There’s no need to specify a token in the **Facebook** setup - just set the **Callback URL**, confirm that your PlayFab setup is correct in the **Facebook Add-ons** page of the **Game Manager**, and you’re set.
 

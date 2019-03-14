@@ -109,4 +109,4 @@ On **Mac OS**, the HOSTS file is normally located at:
  `/private/etc/hosts`.
 
 > [!WARNING]
-> When entering your domain name in your browser address bar, always make sure to include the schema: http://playfab.example
+> When entering your domain name in your browser address bar, always make sure to include the schema: <http://playfab.example>.

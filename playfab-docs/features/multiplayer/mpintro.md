@@ -25,7 +25,7 @@ Parties is a pre-production service still being shaped up. It is offered with ve
 
 |Service|Production Readiness|Billing|
 |--|--|--|
-|[Leaderboards](../social/tournaments-leaderboards/using-resettable-statistics-and-leaderboards.md)|Production|Included in PlayFab essentials| 
-|[Matchmaking](./matchmaking/index.md)|Production (Preview)|Included in PlayFab essentials| 
+|[Leaderboards](../social/tournaments-leaderboards/using-resettable-statistics-and-leaderboards.md)|Production|Included in PlayFab essentials|
+|[Matchmaking](./matchmaking/index.md)|Production (Preview)|Included in PlayFab essentials|
 |[Servers](./servers/index.md)|Production (Preview)|Premium Service - 30% Preview Discount|
 |[Parties](./networking/index.md)|Pre-production (Beta)|Premium Service - Free during beta|

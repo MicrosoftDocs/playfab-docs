@@ -38,7 +38,7 @@ Examples of the five most common uses for **CatalogItems** include:
 
 ## CatalogItems/Custom data
 
-**CatalogItems** accepts **CustomData**, a collection of **Key**->**Value** pairs of **Yype** <**string,string**>. This collection can be used in numerous ways - such as storing relevant item attributes, modifiers, and durability.
+**CatalogItems** accepts **CustomData**, a collection of **Key**->**Value** pairs of **Type** <**string,string**>. This collection can be used in numerous ways - such as storing relevant item attributes, modifiers, and durability.
 
 ## CDN (Content Delivery Network)
 
@@ -135,7 +135,7 @@ Provides permission-based arbitrary key/value storage. Groups are collections of
 
 Stores serve a subset of **CatalogItems**. These items can be offered at alternative prices when compared to those set on the corresponding **CatalogItem**.
 
-## Title Ddata
+## Title Data
 
 **TitleData** represents any data stored at the title level. This is the broadest data set; all clients and servers may view **TitleData**.
 
