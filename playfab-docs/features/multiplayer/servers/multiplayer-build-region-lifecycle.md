@@ -21,7 +21,7 @@ A build region can exist in one of the following states:
   > Even though a build region may configured for say 50 standBy servers, a build region will be marked as **Deployed**, even if only one game server has reported **StandingBy**.  
 - **Deleting**: The region is marked for deletion. All VMs are being de-provisioned.
 
-The transitions between these states are depicted in the following image and are described below:
+The transitions between these states are depicted in the following image and described below:
 
 ![Multiplayer - Build Region Status](media/tutorials/multiplayer-build-region-status.jpg)
 
