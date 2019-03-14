@@ -38,7 +38,7 @@ Please download the XBox ERA and Win32/Win10 libraries at:
 PartyRegion regionList[] = {
     // Hard-coded region
     {
-        "WestUS", // region name 
+        "WestUS", // region name
         0         // round trip latency
     },
 };

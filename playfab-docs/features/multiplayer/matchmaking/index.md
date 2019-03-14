@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 The new PlayFab Matchmaking feature provides a great way to build anonymous matchmaking into your game and offering the best balance of gameplay for your users. This feature is an upgrade to PlayFab’s existing matchmaker and uses the proven capabilities of Xbox Live’s SmartMatch feature. This marks the first time the firmly established technology of Xbox Live matchmaking has been available outside of the Xbox Live ecosystem, and will be available to you *everywhere* via PlayFab.
 
-Individuals or groups who want to enter matchmaking request the matchmaking service to find other players with whom to set up a match. Once the request is made, the service will hold on to the request and try to match it with other requests. The service creates matches that contains players who are most compatible. 
+Individuals or groups who want to enter matchmaking request the matchmaking service to find other players with whom to set up a match. Once the request is made, the service will hold on to the request and try to match it with other requests. The service creates matches that contains players who are most compatible.
 
 ## Terminology
 

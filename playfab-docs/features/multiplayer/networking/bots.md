@@ -28,7 +28,7 @@ PlayFab Parties introduces experimental integration with Azure-powered chat bots
 Both Zo and Mo can be customized through PlayFab APIs with:
 
 1. Different languages
-2. Different voices 
+2. Different voices
 3. Game-specific vocabulary
 4. Game-specific objectives
 

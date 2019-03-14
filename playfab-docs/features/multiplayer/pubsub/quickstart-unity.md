@@ -98,7 +98,7 @@ Using the pubsub plugin is pretty easy. If you have not looked at our reference 
    // Here we are just going to log a message to the console for disconnection and errors
    private void OnSocketsDisconnected()
    {
-       Debug.Log("PlayFab Sockets:You were disconnected from the server");		
+       Debug.Log("PlayFab Sockets:You were disconnected from the server");
    }
 
    private void OnSocketsConnectionError(PlayFabError error)
@@ -126,7 +126,7 @@ Using the pubsub plugin is pretty easy. If you have not looked at our reference 
        EventName = "custom_event_name",
        EventNamespace = "com.playfab.events.mygame"
    };
-   //Add that topic to the array		
+   //Add that topic to the array
    topics.Add(objectChangeTopic);
    ```
 
