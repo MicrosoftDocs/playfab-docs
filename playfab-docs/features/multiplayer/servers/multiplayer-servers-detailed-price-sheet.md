@@ -20,8 +20,8 @@ PlayFab multiplayer servers operate on most generally available **Azure** virtua
 
 This page provides detailed pricing information for PlayFab multiplayer servers. Two key points:
 
-- During the public preview of PlayFab multiplayer servers, utilization is billed with a 30% discount. This discount ends when the service exits preview in March 2019.
-- Unless otherwise specified, the price for a virtual machine is proportional to the number of virtual CPUs and their type. For example, a 4-core virtual machine from the **Dv3** series will cost twice as much as a 2-core virtual machine.
+1. During the public preview of PlayFab multiplayer servers, utilization is billed with a 30% discount. This discount ends when the service exits preview in March 2019.
+2. Unless otherwise specified, the price for a virtual machine is proportional to the number of virtual CPUs and their type. For example, a 4-core virtual machine from the **Dv3** series will cost twice as much as a 2-core virtual machine.
 
 > [!NOTE]
 > The following prices are *per virtual machine compute hour*.
