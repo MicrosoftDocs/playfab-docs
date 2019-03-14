@@ -48,7 +48,7 @@ The following example illustrates the code blocks that call these **API** method
 > [!NOTE]
 > For reference, these examples come from **Unicorn Battle**, a game we built as an example to demonstrate the PlayFab features.
 
-The AU virtual currency used below is "Gold", a free currency earned by fighting monsters (See our [Currencies](../../commerce/economy/currencies.md) tutorial).
+The **AU** virtual currency used below is **Gold**, a free currency earned by fighting monsters (See our [Currencies](../../commerce/economy/currencies.md) tutorial).
 
 Before we get started, we will be defining a few utility functions that will be used and reused in most of the examples in this guide.
 
@@ -176,7 +176,7 @@ Because the player inventory capacity is *not* infinite, this pattern is greatly
 
 ## Example: buying inventory items from the player
 
-There is no built-in **API** for buying back inventory items from the player, as the process is game-specific. However, you can use the *existing* **API** methods to craft your own Sell Item experience:
+There is no built-in **API** for buying back inventory items from the player, as the process is game-specific. However, you can use the *existing* **API** methods to craft your own **SellItem** experience:
 
 - **Server/[RevokeInventoryItem](xref:titleid.playfabapi.com.server.playeritemmanagement.revokeinventoryitem)** allows you to remove an inventory item.
 

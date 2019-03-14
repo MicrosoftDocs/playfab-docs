@@ -43,7 +43,7 @@ Games that require Multiplayer Servers will need to purchase additional capacity
 
 - **Virtual machine instance hours** - The hours of virtual machine time that your game servers are utilizing. Different virtual machine and container selections are priced at different rates. See [Multiplayer Servers detailed price sheet](multiplayer-servers-detailed-price-sheet.md) for more information.
 - **Network egress** - The volume of data transmitted by your game servers to the Internet (in gigabytes). Network egress is billed at different rates depending on the originating data center.
-- Storage - The storage used by PlayFab (in gigabytes) to host and replicate you game server assets and containers.
+- **Storage** - The storage used by PlayFab (in gigabytes) to host and replicate you game server assets and containers.
 
 A typical monthly bill might be:
 
@@ -102,11 +102,11 @@ Since we are running 3 servers on our **D2_v3 VM**, we can divide the total sess
 
 Traditional multiplayer server hosting may require you to pay for significant overhead capacity, to handle natural variation in player activity.
 
-It is common for games to have higher levels of concurrency during the weekends and holiday that require you to "pre-pay" for more servers than necessary, as shown below.
+It is common for games to have higher levels of concurrency during the weekends and holidays that require you to "pre-pay" for more servers than necessary, as shown below.
 
 ![Multiplayer demand](media/tutorials/multiplayer-demand.png)
 
-PlayFab Multiplayer Server builds will naturally scale with your player base: servers are transitioned to the active state by calling [RequestMultiplayerServer](xref:titleid.playfabapi.com.multiplayer.multiplayerserver.requestmultiplayerserver), and are later recycled when your game server terminates (typically the end of a “multiplayer round”).
+PlayFab Multiplayer Server builds will naturally scale with your player base.  Servers are transitioned to the active state by calling [RequestMultiplayerServer](xref:titleid.playfabapi.com.multiplayer.multiplayerserver.requestmultiplayerserver), and are later recycled when your game server terminates (typically the end of a “multiplayer round”).
 
 However, delivering this dynamic scaling with minimal allocation latency requires some overhead, which originates from 2 key sources:
 
