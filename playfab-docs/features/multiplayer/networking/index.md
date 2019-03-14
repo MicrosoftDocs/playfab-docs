@@ -1,5 +1,5 @@
 ---
-title: Overview of PlayFab Parties
+title: Overview of PlayFab Party
 author: v-thopra
 description: Introduces the concepts and APIs for PlayFab networking.
 ms.author: v-thopra
@@ -11,7 +11,7 @@ keywords: playfab, multiplayer, networking
 ms.localizationpriority: medium
 ---
 
-# PlayFab Parties
+# PlayFab Party
 
 > [!IMPORTANT]
 > This feature is currently in **Private Preview**.  
@@ -20,25 +20,26 @@ ms.localizationpriority: medium
 >
 > Access to this feature is restricted to select titles, with SDKs available for Windows 10 PCs and Xbox One. Interoperable SDKs for iOS and Android will be available this summer. If you are interested in this feature, you can request access by submitting a ticket on [support.playfab.com](https://support.playfab.com/hc/en-us/requests/new).
 
-PlayFab Parties is a set of libraries and services for easily adding multiplayer real-time networking and chat communication to your game.
+PlayFab Party is a set of libraries and services for easily adding multiplayer real-time networking and chat communication to your game.
 
 Multiplayer games are typically one of two designs: authoritative and non-authoritative. Authoritative games have a central authority for game state, this may be a player device or [a cloud-hosted dedicated server](https://aka.ms/PlayFabCompute). Non-authoritative designs require player devices to synchronize game state cooperatively over a peer-to-peer network.
 
 Parties are an ideal, secure, low-latency transport for non-authoritative designs and authoritative designs where a cloud-hosted dedicated server is not desired. Parties is also well-suited to add voice and text communication to non-gameplay social experiences your app may provide (e.g. an in-game squad experience, or post-game lobbies).
 
-Parties utilizes Azure Speech Services to transcribe player voice chat and synthesize utterances for text message. This functionality has several uses, but was primarily designed as an accessibility aide. Typical usage of Parties voice chat is billed on a per-minute basis, and up to 10% of those voice minutes can leverage transcription and synthesis for free. We recommend tying activation of this capability to an ease-of-access player setting.
+Party utilizes Azure Speech Services to transcribe player voice chat and synthesize utterances for text message. This functionality has several uses, but was primarily designed as an accessibility aide. Typical usage of Party voice chat is billed on a per-minute basis, and up to 10% of those voice minutes can leverage transcription and synthesis for free. We recommend tying activation of this capability to an ease-of-access player setting.
 
-Parties can not only transcribe player chat, but also translate chat in real time. In anonymous matchmaking and international competitive games, these transcription and translation capabilities can make for a more engaging multiplayer experience. 
+Party can not only transcribe player chat, but also translate chat in real time. In anonymous matchmaking and international competitive games, these transcription and translation capabilities can make for a more engaging multiplayer experience.
 
-A goal of PlayFab Parties and our other multiplayer services is to facilitate interoperable multiplayer infrastructure and cross-network gameplay. However we remind customers to ensure their multiplayer experiances comply with relevant platform policies for multiplayer and cross-network player activity. 
+A goal of PlayFab Party and our other multiplayer services is to facilitate interoperable multiplayer infrastructure and cross-network gameplay. We encourage customers to ensure their multiplayer experiences comply with relevant platform policies for multiplayer and cross-network player activity.
 
 ## Roadmap
+
 | | March 2018 | August 2019 |
 |-|-|-|
 |Project Phase | Private Preview | Public Preview|
-| SLA | Non-Production | Production | 
+| SLA | Non-Production | Production |
 | API | Breaking Changes | Stable |
-|Platforms | Win 10, Win 7, Xbox One | Win 10, Win 7, Xbox One, iOS, Android | 
+|Platforms | Win 10, Win 7, Xbox One | Win 10, Win 7, Xbox One, iOS, Android |
 |Pricing | Free | 30% Discount |
 
 ## Features
@@ -46,21 +47,21 @@ A goal of PlayFab Parties and our other multiplayer services is to facilitate in
 + **Encryption and authentication.** Parties authenticates player devices using their PlayFab player identity and encrypts data with a DTLS-like protocol.
 + **Device to device datagram networking.** The core of Parties are relays hosted globally across the Azure cloud. Player devices use these relays create Parties networks and game data to one another.
 + **Voice and text chat.** Player devices can bind audio devices to Parties networks to accomplish real-time voice chat. Text chat messages between players are also support.
-+ **Speech-to-text and voice synthesis.** Parties can transcribe player voice chat and synthesize utterances for text message. This functionality has several uses, but was primarily designed as an accessibility aide. 
++ **Speech-to-text and voice synthesis.** Parties can transcribe player voice chat and synthesize utterances for text message. This functionality has several uses, but was primarily designed as an accessibility aide.
 + **Real-time translation.** Parties can understand and synthesize real-time translations of player voice and text chat.
 
 ## Concepts
 
-Parties is oriented around a few key concepts:
+Party is oriented around a few key concepts:
 
-- `Network` - A logical representation of a set of interconnected devices participating in a particular multiplayer experience, as well as basic state describing that collection. 
-- `Endpoint` - A facility associated with a device that can receive data from other devices and is the source for sending data to other devices.
-- `Network_state_change` - A structure representing a notification to the local device regarding an asynchronous change in some aspect of the network.
-- `StartProcessingStateChanges` and `FinishProcessingStateChanges` - The pair of methods called by the app every UI frame to perform asynchronous operations, to retrieve results to be handled in the form of state_change structures, and then to free the associated resources when finished.
++ `Network` - A logical representation of a set of interconnected devices participating in a particular multiplayer experience, as well as basic state describing that collection.
++ `Endpoint` - A facility associated with a device that can receive data from other devices and is the source for sending data to other devices.
++ `Network_state_change` - A structure representing a notification to the local device regarding an asynchronous change in some aspect of the network.
++ `StartProcessingStateChanges` and `FinishProcessingStateChanges` - The pair of methods called by the app every UI frame to perform asynchronous operations, to retrieve results to be handled in the form of state_change structures, and then to free the associated resources when finished.
 
 At a very high level, the game application uses the PlayFab Parties library to configure a set of users signed-in on the local device to be moved into a PlayFab network. The app calls `StartProcessingStateChanges()` and `FinishProcessingStateChanges()` every UI frame. As app instances on remote devices add their users into a network, every participating instance is provided state_change updates describing the local and remote devices joining that  network. When a player stops participating in the  network (gracefully or due to network connectivity problems), state_change updates are provided to all app instances indicating the user and associated endpoints have  left.
 
-As opposed to a client-server model, a PlayFab network is logically a fully-connected mesh of peer devices. 
+As opposed to a client-server model, a PlayFab network is logically a fully-connected mesh of peer devices.
 
 ## Initialization
 
@@ -184,7 +185,7 @@ void NetworkManager::CreateAndConnectToNetwork(std::vector<std::string>& playerI
     // TODO: revisit
     PartiesRegion regionList[] = {
         {
-            "WestUS", // region name 
+            "WestUS", // region name
             0         // round trip latency
         },
     };

@@ -22,8 +22,8 @@ ms.localizationpriority: medium
 
 PlayFab is consistently looking to bring new capabilities to our game developers. We know how important it is to understand the health of your game as part of your overall LiveOps view.  We are excited to announce that we have partnered with App Center to bring their diagnostic capabilities directly into PlayFab.
 
-App Center provides tools to help you build, test, deploy and monitor mobile and pc apps.  It is especially good at detecting when your app has crashed and saving that information to help you fix it quickly. 
- 
+App Center provides tools to help you build, test, deploy and monitor mobile and pc apps.  It is especially good at detecting when your app has crashed and saving that information to help you fix it quickly.
+
 ## Prerequisites
 
 * You will need a PlayFab Account
@@ -37,13 +37,13 @@ To get started, login to your PlayFab account.  Once App Center integration is e
 
 ![diagnostics tab screenshot image](media/diag_tab_screenshot.png)
 
-Since the add-on has not yet been enabled, you will need to nagivate to the add-ons page to turn on the integration.
+Since the add-on has not yet been enabled, you will need to navigate to the add-ons page to turn on the integration.
 
-![navagate to addons page image](media/go_to_addons_diag_page.png)
+![navigate to addons page image](media/go_to_addons_diag_page.png)
 
 Click the install button on the App Center Add-On page.  You should see the following screenshot.
 
-![navagate to addons page image](media/addon-installed.png)
+![navigate to addons page image](media/addon-installed.png)
 
 Now you need to link your PlayFab title to your App Center titles.  To do this, click on **Go to App Center**
 
@@ -51,6 +51,6 @@ This will ask you to authenticate to AppCenter and will provide you with a list 
 
 Once you have completed the above steps click **Save Settings**
 
-Your integration is now enabled, if you nagivate back to the Diagnostics tab, you should see your crash data enabled.
+Your integration is now enabled, if you navigate back to the Diagnostics tab, you should see your crash data enabled.
 
 ![Diagnostics Tab Dashboard active Image](media/appcenter_gm_dash.png)

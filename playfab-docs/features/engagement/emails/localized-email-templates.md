@@ -6,7 +6,7 @@ ms.author: v-thopra
 ms.date: 03/01/2019
 ms.topic: article
 ms.prod: playfab
-keywords: playfab, engagement, email, localizaton, languages
+keywords: playfab, engagement, email, localization, languages
 ms.localizationpriority: medium
 ---
 

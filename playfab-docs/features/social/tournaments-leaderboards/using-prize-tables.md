@@ -44,7 +44,7 @@ In the Game Manager:
 - Select **New Leaderboard**.
 - Add a **Leaderboard** called **tournamentScore_manual** in the **Statistic name** field.
 - Using the drop-down menu provided, set the **Reset frequency** field to **Manually**.
-- Move to the **Aggregation mehtod** field and select **Maximum (always use the highest value)** from the drop-down menu provided.
+- Move to the **Aggregation method** field and select **Maximum (always use the highest value)** from the drop-down menu provided.
 
 ![Game Manager - Leaderboards - New Leaderboard](media/tutorials/game-manager-new-leaderboard.png)  
 

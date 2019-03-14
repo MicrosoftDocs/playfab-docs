@@ -15,8 +15,10 @@ ms.localizationpriority: medium
 These tutorials teach you how to use Groups functionality for your games and to build Guilds and Clans within your game.
 
 To store data for your groups, guilds or clans:
-- [Objects](../../data/playerdata/entity-objects.md) 
+
+- [Objects](../../data/playerdata/entity-objects.md)
 - [Files](../../data/playerdata/entity-files.md)
 
 For turn based games:
+
 - [Using Shared Group Data](using-shared-group-data.md)

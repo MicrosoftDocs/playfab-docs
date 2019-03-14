@@ -3,14 +3,14 @@ layout: HubPage
 hide_bc: false
 experimental: true
 experiment_id: "81ba5f65-59fb-4d"
-title: PlayFab Documentation
+title: Microsoft Azure PlayFab documentation
 author: v-thopra  
-description: Hub page for PlayFab Documentation.
+description: Hub page for Microsoft Azure PlayFab documentation.
 ms.author: v-thopra
 ms.date: 05/12/2018
 ms.topic: hub-page
 ms.prod: playfab
-keywords: playfab, documentation
+keywords: playfab, documentation, azure
 ms.localizationpriority: medium
 featureFlags:
 - clicktale
@@ -22,10 +22,10 @@ featureFlags:
                 <a href="#documentation"></a>
                 <ul id="documentation">
                     <li>
-                        <a href="#playfab">PlayFab</a>
+                        <a href="#playfab">Azure PlayFab</a>
                         <ul id="playfab" class="cardsK">
                             <li class="fullSpan">
-                                <h2>PlayFab Documentation</h2>
+                                <h2>Azure PlayFab documentation</h2>
                             </li>
                             <li>
                                 <a href="/gaming/playfab/personas/developer">

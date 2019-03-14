@@ -10,11 +10,12 @@ keywords: playfab, social, tournaments, leaderboards
 ms.localizationpriority: medium
 ---
 
-# Tournaments and Leaderboards quickstart
+# Tournaments and leaderboards quickstart
 
 This quickstart will describe how to have a statistic that keeps track of the players high score and how to get a leaderboard of the top high scores.  This can be utilized for a global leaderboard or in conjunction with [resettable statistics](using-resettable-statistics-and-leaderboards.md) to reset for a specific event or tournament.
 
 ## Prerequisites
+
 Your player is already logged into PlayFab.  
 
 ## Step 1 - Create a statistic and leaderboard
@@ -27,7 +28,6 @@ In the Game Manager:
 - Using the drop-down menu provided, set the **Reset frequency** field to **Manually**.
 - Move to the **Aggregation method** field and select **Maximum (always use the highest value)** from the drop-down menu provided.
 
-
 ## Step 2 - Update the statistic with the high score for a player
 
 Before we can use [UpdatePlayerStatistics](xref:titleid.playfabapi.com.client.playerdatamanagement.updateplayerstatistics) from the client, we must enable it in **API Features**.
@@ -39,9 +39,9 @@ Before we can use [UpdatePlayerStatistics](xref:titleid.playfabapi.com.client.pl
 
 ![Game Manager - Settings - API Features - Allow client to post player statistics](media/tutorials/api-features-allow-client-to-post-player-statistics.png)  
 
-### C# Code Example
-In this code example we will have a SubmitScore function that would be called at the end of a game.
+### C# code example
 
+In this code example we will have a SubmitScore function that would be called at the end of a game.
 
 ```csharp
 
@@ -57,7 +57,7 @@ public void SubmitScore(int playerScore) {
 }
 
 private void OnStatisticsUpdated(UpdatePlayerStatisticsResult updateResult) {
-    Debug.Log("Successfully submitted high score");    
+    Debug.Log("Successfully submitted high score");
 }
 
 private void FailureCallback(PlayFabError error){
@@ -66,11 +66,12 @@ private void FailureCallback(PlayFabError error){
 }
 ```
 
-### Step 3 - Request the leaderboard for the highscore
+### Step 3 - Request the leaderboard for the high score
 
 In order to get the leaderboard of the top high scores of all players that have played the game, you will make a call to [GetLeaderboard](xref:titleid.playfabapi.com.client.playerdatamanagement.getleaderboard).
 
-### C# Code Example
+### C# code example
+
 In this code example we will have a RequestLeaderboard function that would be called to get the leaderboard and will pass the results to a function of DisplayLeaderboard which would populate the experience in your game that shows the high scores.
 
 ```csharp
