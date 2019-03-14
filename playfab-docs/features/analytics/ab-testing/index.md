@@ -43,7 +43,7 @@ After signing into the **PlayFab Game Manager**, click on the **PlayStream** tab
 
 ![Game Manager - PlayStream - A/B Testing](media/tutorials/game-manager-playstream-ab-testing.png)  
 
-From here, you can create your first A/B test. At test creation time, you’ll need to provide an **A/B test name**, the **Number of buckets**, and a **Name** and **Percentage** (weight) for each bucket. The weights must add up to 100, and the names must be unique. The corresponding segments are then automatically named *<test name> - <bucket name>*. For example, *Gem Price Test - Control*.
+From here, you can create your first A/B test. At test creation time, you’ll need to provide an **A/B test name**, the **Number of buckets**, and a **Name** and **Percentage** (weight) for each bucket. The weights must add up to 100, and the names must be unique. The corresponding segments are then automatically named *test name* - *bucket name*. For example, *Gem Price Test - Control*.
 
 ![Game Manager - PlayStream - A/B Testing - New A/B test](media/tutorials/game-manager-playstream-ab-testing-new-ab-test.png)  
 

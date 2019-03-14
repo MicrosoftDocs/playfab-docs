@@ -32,7 +32,6 @@ If **Albert** adds **Bob** as a **Friend**, there is *no* approval process for *
 
 In the event that a player has linked their **Steam**, **Facebook**, or **Xbox Live** account, their platform-specific friends can also be displayed, if those friends also play your title.
 
-
 ## Making friends
 
 The example code will be using the functions `DisplayFriends()`, and `DisplayError(string error)` as a proxy of your app's **UI**. You can paste these into your editor to get it to work without any extra effort, or replace the calls with your own code.
@@ -135,4 +134,3 @@ You can use tags to inform matchmaking, (for example, the player doesn't like pl
 An important note is that PlayFab currently does not index these tags in any way. [GetFriendsList](xref:titleid.playfabapi.com.client.friendlistmanagement.getfriendslist) can't filter based on them, so that must be done locally.
 
 Keep this in mind when considering any performance implications resulting from this system.
-

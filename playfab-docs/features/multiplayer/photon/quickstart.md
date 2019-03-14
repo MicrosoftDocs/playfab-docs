@@ -37,7 +37,7 @@ In the example shown below:
 
 - Select **Realtime Application** type **(1)**.
 - Choose a **Name (2)**.
-- Create a **Description (3)**. 
+- Create a **Description (3)**.
 - Submit by selecting **Create (4)**.
 
 ![New application form](media/tutorials/photon-new-app-form.png)  
@@ -65,6 +65,7 @@ The format is shown below.
 ```html
 https://{PlayFabTitleId}.playfabapi.com/photon/authenticate
 ```
+
 Replace the **Title Id** place holder with your own **Title Id**.
 
 ```html
@@ -78,6 +79,7 @@ Enter the **URL (1)** and submit by selecting the **Create** button **(2)**.
 ## Setting up a PlayFab title for Photon
 
 Navigate to your title's **Game Manager** page, then:
+
 - Navigate to **Add-ons** tab **(1)**.
 - In the list of **Add-ons**, find and select **Photon (2)**, as shown in the example provided below.
 
@@ -87,7 +89,7 @@ The **Photon Add-on** page will allow you to install **Photon** by specifying yo
 
 - Optionally, you may specify **Chat App ID**.
 - Once you install the **Add-on (3)**, a **Photon secret Key** will be generated **(2)**.
-- Save it for future use when configuring web-hooks. 
+- Save it for future use when configuring web-hooks.
 
 > [!NOTE]
 > Remember to save your Photon secret key in a safe and easily accessible place. It will come in handy when configuring Webhooks.
@@ -153,7 +155,7 @@ If **AppId** was accepted, the **Photon Server Settings** object will be selecte
 - Select **Window**.
 - Then select **Photon Unity Networking (1)**.
 - Finally select **Highlight Server Settings (2)**.
-- The **Standard Unity** project window will reveal the **PhotonServerSettings (3)** object. 
+- The **Standard Unity** project window will reveal the **PhotonServerSettings (3)** object.
 - Select the object to reveal its settings in the **Unity Inspector** window.
 
 ![Photon server settings](media/tutorials/photon-server-settings.png)  
@@ -218,14 +220,14 @@ public class PlayFabAuthenticator : MonoBehaviour {
     * This is a crucial step, because Photon uses different authentication tokens
     * than PlayFab. Thus, you cannot directly use PlayFab SessionTicket and
     * you need to explicitly request a token. This API call requires you to
-    * pass Photon App ID. App ID may be hardcoded, but, in this example,
+    * pass Photon App ID. App ID may be hard coded, but, in this example,
     * We are accessing it using convenient static field on PhotonNetwork class
     * We pass in AuthenticateWithPhoton as a callback to be our next step, if
-    * we have acquired token succesfully
+    * we have acquired token successfully
     */
     private void RequestPhotonToken(LoginResult obj) {
         LogMessage("PlayFab authenticated. Requesting photon token...");
-        
+
         //We can player PlayFabId. This will come in handy during next step
         _playFabPlayerIdCache = obj.PlayFabId;
 
@@ -245,13 +247,13 @@ public class PlayFabAuthenticator : MonoBehaviour {
 
         //We set AuthType to custom, meaning we bring our own, PlayFab authentication procedure.
         var customAuth = new AuthenticationValues { AuthType = CustomAuthenticationType.Custom };
-        
+
         //We add "username" parameter. Do not let it confuse you: PlayFab is expecting this parameter to contain player PlayFab ID (!) and not username.
         customAuth.AddAuthParameter("username", _playFabPlayerIdCache);    // expected by PlayFab custom auth service
-       
+
         //We add "token" parameter. PlayFab expects it to contain Photon Authentication Token issues to your during previous step.
         customAuth.AddAuthParameter("token", obj.PhotonCustomAuthenticationToken);
-        
+
         //We finally tell Photon to use this authentication parameters throughout the entire application.
         PhotonNetwork.AuthValues = customAuth;
     }
@@ -318,13 +320,12 @@ The Room Created handler is invoked every time a Photon room is created. The fol
 ```javascript
 // Triggered automatically when a Photon room is first created
 handlers.RoomCreated = function (args) {
-    return { ResultCode : 0, Message: 'Success' }; 
+    return { ResultCode : 0, Message: 'Success' };
 };
 ```
 
 > [!NOTE]
 > You may acquire additional data about the event using the "args" argument. The example of args payload is given below.
-
 
 ```javascript
 {
@@ -337,7 +338,7 @@ handlers.RoomCreated = function (args) {
     "LobbyId": null,
     "LobbyType": 0,
     "CustomProperties": {
-      
+
     },
     "EmptyRoomTTL": 0,
     "PlayerTTL": 0,
@@ -364,7 +365,7 @@ The Room Joined handler is invoked every time a player joins the room. The follo
 ```javascript
 // Triggered automatically when a player joins a Photon room
 handlers.RoomJoined = function (args) {
-    return { ResultCode : 0, Message: 'Success' }; 
+    return { ResultCode : 0, Message: 'Success' };
 };
 ```
 
@@ -394,7 +395,7 @@ The Room Left handler is invoked every time a player leaves the room. The follow
 ```javascript
 // Triggered automatically when a player leaves a Photon room
 handlers.RoomLeft = function (args) {
-    return { ResultCode : 0, Message: 'Success' }; 
+    return { ResultCode : 0, Message: 'Success' };
 };
 ```
 
@@ -441,7 +442,7 @@ You may acquire additional data about the event using "args" argument. The examp
   "Region": "EU",
   "State2": {
     "ActorList": [
-      
+
     ]
   },
   "Type": "Close"
@@ -456,7 +457,7 @@ The Room Property Updated handler is invoked every time the room property is cha
 // Triggered automatically when a Photon room game property is updated.
 // Note: currentPlayerId is undefined in this function
 handlers.RoomPropertyUpdated = function (args) {
-    return { ResultCode : 0, Message: 'Success' }; 
+    return { ResultCode : 0, Message: 'Success' };
 };
 ```
 
@@ -497,7 +498,7 @@ You may acquire additional data about the event using "args" argument. The examp
     },
     "CheckUserOnJoin": false,
     "CustomProperties": {
-      
+
     },
     "DeleteCacheOnLeave": true,
     "EmptyRoomTTL": 0,
@@ -505,7 +506,7 @@ You may acquire additional data about the event using "args" argument. The examp
     "IsVisible": true,
     "LobbyType": 0,
     "LobbyProperties": [
-      
+
     ],
     "MaxPlayers": 4,
     "PlayerTTL": 0,
@@ -514,7 +515,7 @@ You may acquire additional data about the event using "args" argument. The examp
     "DebugInfo": {
       "DEBUG_PROPERTIES_18": {
         "250": [
-          
+
         ],
         "PlayerIndexes": {
           "1": 0
@@ -523,11 +524,11 @@ You may acquire additional data about the event using "args" argument. The examp
       }
     },
     "ExcludedActors": [
-      
+
     ],
     "PublishUserId": false,
     "ExpectedUsers": [
-      
+
     ]
   },
   "Type": "Game",
@@ -542,7 +543,7 @@ When changing custom Room properties using the **Unity** Photon client, *it is i
 // Properties updates ( this hashtable contains the properties to be changed. Properties not mentioned here will stay as is
 var properties = new ExitGames.Client.Photon.Hashtable() { { "CustomProperty" , "It's Value" } };
 
-// Control set. Empty in this case, because our property has not existed before. 
+// Control set. Empty in this case, because our property has not existed before.
 // Otherwise you would include previous value of the property.
 var expectedProperties = new ExitGames.Client.Photon.Hashtable();
 
@@ -598,7 +599,7 @@ You may acquire additional data about the event using "args" argument. The examp
     },
     "CheckUserOnJoin": false,
     "CustomProperties": {
-      
+
     },
     "DeleteCacheOnLeave": true,
     "EmptyRoomTTL": 0,
@@ -606,7 +607,7 @@ You may acquire additional data about the event using "args" argument. The examp
     "IsVisible": true,
     "LobbyType": 0,
     "LobbyProperties": [
-      
+
     ],
     "MaxPlayers": 4,
     "PlayerTTL": 0,
@@ -615,7 +616,7 @@ You may acquire additional data about the event using "args" argument. The examp
     "DebugInfo": {
       "DEBUG_PROPERTIES_18": {
         "250": [
-          
+
         ],
         "PlayerIndexes": {
           "1": 0
@@ -623,11 +624,11 @@ You may acquire additional data about the event using "args" argument. The examp
       }
     },
     "ExcludedActors": [
-      
+
     ],
     "PublishUserId": false,
     "ExpectedUsers": [
-      
+
     ]
   },
   "Type": "Event",
@@ -662,42 +663,42 @@ Upload the following **CloudScript** for your title.
 ```javascript
 handlers.RoomCreated = function (args) {
     server.WriteTitleEvent({
-    	EventName : "room_created"
+        EventName : "room_created"
     });
     return { ResultCode : 0, Message: 'Success' };
 };
 
 handlers.RoomJoined = function (args) {
     server.WriteTitleEvent({
-    	EventName : "room_joined"
+        EventName : "room_joined"
     });
     return { ResultCode : 0, Message: 'Success' };
 };
 
 handlers.RoomLeft = function (args) {
     server.WriteTitleEvent({
-    	EventName : "room_left"
+        EventName : "room_left"
     });
     return { ResultCode : 0, Message: 'Success' };
 };
 
 handlers.RoomClosed = function (args) {
     server.WriteTitleEvent({
-    	EventName : "room_closed"
+        EventName : "room_closed"
     });
     return { ResultCode : 0, Message: 'Success' };
 };
 
 handlers.RoomPropertyUpdated = function (args) {
     server.WriteTitleEvent({
-    	EventName : "room_property_changed"
+        EventName : "room_property_changed"
     });
     return { ResultCode : 0, Message: 'Success' };
 };
 
 handlers.RoomEventRaised = function (args) {
     server.WriteTitleEvent({
-    	EventName : "room_event_raised"
+        EventName : "room_event_raised"
     });
     return { ResultCode : 0, Message: 'Success' };
 };
@@ -727,11 +728,11 @@ public class PlayFabAuthenticator : MonoBehaviour {
 
     /*
      * Step 1
-     * We authenticate current PlayFab user normally. 
+     * We authenticate current PlayFab user normally.
      * In this case we use LoginWithCustomID API call for simplicity.
      * You can absolutely use any Login method you want.
      * We use PlayFabSettings.DeviceUniqueIdentifier as our custom ID.
-     * We pass RequestPhotonToken as a callback to be our next step, if 
+     * We pass RequestPhotonToken as a callback to be our next step, if
      * authentication was successful.
      */
     private void AuthenticateWithPlayFab()  {
@@ -749,15 +750,15 @@ public class PlayFabAuthenticator : MonoBehaviour {
     * We request Photon authentication token from PlayFab.
     * This is a crucial step, because Photon uses different authentication tokens
     * than PlayFab. Thus, you cannot directly use PlayFab SessionTicket and
-    * you need to explicitely request a token. This API call requires you to 
-    * pass Photon App ID. App ID may be hardcoded, but, in this example,
+    * you need to explicitly request a token. This API call requires you to
+    * pass Photon App ID. App ID may be hard coded, but, in this example,
     * We are accessing it using convenient static field on PhotonNetwork class
-    * We pass in AuthenticateWithPhoton as a callback to be our next step, if 
-    * we have acquired token succesfully
+    * We pass in AuthenticateWithPhoton as a callback to be our next step, if
+    * we have acquired token successfully
     */
     private void RequestPhotonToken(LoginResult obj) {
         LogMessage("PlayFab authenticated. Requesting photon token...");
-        
+
         //We can player PlayFabId. This will come in handy during next step
         _playFabPlayerIdCache = obj.PlayFabId;
 
@@ -780,10 +781,10 @@ public class PlayFabAuthenticator : MonoBehaviour {
 
         //We add "username" parameter. Do not let it confuse you: PlayFab is expecting this parameter to contain player PlayFab ID (!) and not username.
         customAuth.AddAuthParameter("username", _playFabPlayerIdCache);    // expected by PlayFab custom auth service
-       
+
         //We add "token" parameter. PlayFab expects it to contain Photon Authentication Token issues to your during previous step.
         customAuth.AddAuthParameter("token", obj.PhotonCustomAuthenticationToken);
-        
+
         //We finally tell Photon to use this authentication parameters throughout the entire application.
         PhotonNetwork.AuthValues = customAuth;
     }
@@ -797,9 +798,9 @@ public class PlayFabAuthenticator : MonoBehaviour {
     }
 
 
-    // Add small button to launch our example code 
+    // Add small button to launch our example code
     public void OnGUI() {
-        if (GUILayout.Button("Execute Example ")) ExecuteExample(); 
+        if (GUILayout.Button("Execute Example ")) ExecuteExample();
     }
 
 

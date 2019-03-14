@@ -31,12 +31,12 @@ A basic allocation of Party time is included with every paid PlayFab tier: 100 p
 There are three key meters used to bill additional Parties utilization:
 
 - **Party Connectivity.** This is measured in player minutes connected to a network. Metering starts when a player creates a network or joins a network, and it stops when they have disconnected.
-- **Party Voice.** This is measured in player minutes speaking. When a player is connected to a network and is actively speaking, that  player voice activity is measured in seconds and metered. 
+- **Party Voice.** This is measured in player minutes speaking. When a player is connected to a network and is actively speaking, that  player voice activity is measured in seconds and metered.
 - **Network egress.** This meters data *sent* from PlayFab's relay and voice servers. This is congruent to the aggregate amount of data that players *receive* from the network.
 
 If you are an Xbox Live managed partner, Parties may be significantly discounted. Learn more at [Powering Xbox Live multiplayer activity with PlayFab](./xblguidelines.md)
 
-## Party Connectivity   
+## Party Connectivity
 
 | SKU | $/player-minute connected to a network |
 | --- | --- |
@@ -55,11 +55,10 @@ In-game chat text messages, even when text-to-text translation or text-to-speech
 
 ## Network egress
 
-At run-time you can specify which Azure region should host your network. This impacts network egress charges. 
+At run-time you can specify which Azure region should host your network. This impacts network egress charges.
 
 | Zone | Regions | $/GB of Network Egress |
 | --- | --- | --- |
 | Zone 1 | Australia Central, Australia Central 2, West US, West US 2, West Central US, East US, North Central US, South Central US, East US 2, Central US, West Europe, North Europe, Canada East, Canada Central, France Central, UK South, UK West | $0.05 |
 | Zone 2 | East Asia, Southeast Asia, Japan East, Japan West, Australia East, Australia Southeast, Central India, West India, South India, Korea Central, Korea South |  $0.08 |
 | Zone 3 | Brazil South | $0.16 |
-
