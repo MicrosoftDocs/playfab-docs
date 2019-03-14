@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 This tutorial helps you quickly upload a sample multiplayer server, configure a server build, and create server instances.
 
-On a **Windows 10** PC, get the following pre-requisites ready:
+On a **Windows 10** PC, get the following prerequisites ready:
 
 - A PlayFab title ID, this needs to be a title that PlayFab has authorized for the private preview.
 - A developer key for the title (See [Getting PlayFab Developer Keys](../../config/gamemanager/getting-playfab-developer-keys.md)).

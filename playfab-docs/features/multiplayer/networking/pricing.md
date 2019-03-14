@@ -1,17 +1,17 @@
 ---
-title: Billing for PlayFab Parties (Bumblelion)
+title: Billing for PlayFab Party
 author: v-thopra
-description: Describes the Billing plan for Bumblelion 1PP Preview (aka PlayFab Parties).
+description: Describes the Billing plan for PlayFab Party. (Note - PlayFab Party 1PP Preview was originally called Bumblelion)
 ms.author: v-thopra
 ms.date: 13/12/2018
 ms.topic: article
 ms.prod: playfab
 ROBOTS: NOINDEX,NOFOLLOW
-keywords: playfab, multiplayer, bumblelion, networking, pricing, billing
+keywords: playfab, multiplayer, party, networking, pricing, billing, bumblelion
 ms.localizationpriority: medium
 ---
 
-# Billing for PlayFab Parties (Bumblelion)
+# Billing for PlayFab Party
 
 > [!IMPORTANT]
 > This feature is currently in **Private Preview**.  
@@ -20,7 +20,7 @@ ms.localizationpriority: medium
 >
 > Access to this feature is restricted to select titles. If you are interested in trying it, you can request access by submitting a ticket on [support.playfab.com](https://support.playfab.com/hc/en-us/requests/new).
 
-Most PlayFab services, such as PlayStream or Matchmaking, are included with every paid PlayFab tier as part of our core offering. However, PlayFab Parties is billed on a consumption basis. This document describes the billing plan for Parties.
+Most PlayFab services, such as PlayStream or Matchmaking, are included with every paid PlayFab tier as part of our core offering. However, PlayFab Party is billed on a consumption basis. This document describes the billing plan for Party.
 
 ## What comes with your basic PlayFab Core Services package?
 
@@ -28,13 +28,11 @@ A basic allocation of Party time is included with every paid PlayFab tier: 100 p
 
 ## What meters are used for consumption billing?
 
-There are three key meters used to bill additional Parties utilization:
+There are three key meters used to bill additional Party utilization:
 
 - **Party Connectivity.** This is measured in player minutes connected to a network. Metering starts when a player creates a network or joins a network, and it stops when they have disconnected.
 - **Party Voice.** This is measured in player minutes speaking. When a player is connected to a network and is actively speaking, that  player voice activity is measured in seconds and metered.
 - **Network egress.** This meters data *sent* from PlayFab's relay and voice servers. This is congruent to the aggregate amount of data that players *receive* from the network.
-
-If you are an Xbox Live managed partner, Parties may be significantly discounted. Learn more at [Powering Xbox Live multiplayer activity with PlayFab](./xblguidelines.md)
 
 ## Party Connectivity
 

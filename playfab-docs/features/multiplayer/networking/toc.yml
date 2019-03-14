@@ -1,7 +1,10 @@
 - name: Overview
   href: index.md
   items:
+  - name: PlayFab Party Speech-to-Text UX Guidelines
+    href: party-speech-to-text-ux-guidelines.md
+  - name: PlayFab Party Text-to-Speech UX Guidelines
+    href: party-text-to-speech-ux-guidelines.md
   - name: Pricing
     href: pricing.md
-- name: Quickstart
-  href: quickstart.md
+    
