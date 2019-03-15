@@ -6,7 +6,6 @@ ms.author: v-thopra
 ms.date: 03/11/2019
 ms.topic: article
 ms.prod: playfab
-ROBOTS: NOINDEX,NOFOLLOW
 keywords: playfab, multiplayer, bumblelion, party, networking, UX, speech to text (STT), text-to-speech (TTS)
 ms.localizationpriority: medium
 ---
