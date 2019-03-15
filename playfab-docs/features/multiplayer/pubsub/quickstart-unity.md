@@ -20,41 +20,52 @@ ms.localizationpriority: medium
 >
 > Access to this feature is restricted to select titles. If you are interested in trying it, you can request access by submitting a ticket on [support.playfab.com](https://support.playfab.com/hc/en-us/requests/new).
 
-The purpose of this topic is to explain how to quickly get started with using the PubSub client for Unity. In this guide, we will show you step by step how to connect to the PubSub hub and subscribe to topics. Then we will show you how to receive your first message.
+The purpose of this topic is to explain how to quickly get started with using the PubSub client for Unity. In this guide, we will show you step-by-step how to connect to the PubSub hub and subscribe to topics. Then we will show you how to receive your first message.
 
 ## Prerequisites
 
 - **Unity 2018** - This package currently only works with Unity 2018 or later.
+
 - **PlayFab SDK for Unity** - To use this package, you must be familiar with the PlayFab SDK and have it already installed. Please be sure to have the latest PlayFab SDK installed.
+
 - **PlayFab Authentication** - To use this package, you must also be familiar with authenticating in PlayFab.
+
 - **Unity .Net 4.X** - This package uses 4.x within Unity. Your project must be set to 4.x in **PlayerSettings**.
+
 - **Setup PubSub policies** - You will need to setup PubSub policies in order to receive events on the clients. If you have not setup a policy yet, please visit [PubSub policies](pubsub-policies.md) to learn more.
 
 ## Installation
 
-The pubsub feature does not come with the PlayFab SDK by default. You can acquire it via GitHub from our site, or from within the Unity PlayFab Editor Extensions panel.
+The PubSub feature does not come with the PlayFab SDK by default and you must acquire it via GitHub from our site.
 
 > [!IMPORTANT]
 > **Private preview only.**  While this feature is in [Private Preview](pubsub-private-preview-notes.md), you must be logged into GitHub for the package to download and install correctly.
 
-### Installing from **Editor Extensions**
-
-1. Ensure you are logged into the **PlayFab Editor Extensions  Window-->PlayFab-->Editor Extensions**.
-2. Login with your PlayFab developer account, if you are not currently logged in.
-3. Select your title with PubSub enabled.
-4. Install from **Editor Extensions** via the **Packages Tab**, this will import all files into the project.
-
-### Installing from GitHub
+### Install from GitHub
 
 1. Login to GitHub.
+
 2. Go to [GitHub: PlayFab PubSub](https://github.com/PlayFab/UnitySignalRBetaSdk/releases/download/0.0.1/PubSub.unitypackage) - If you don't have access to this repository, please speak with your PlayFab contact.
+
 3. If the above link didn't automatically download, then you can click on the releases tab and download the latest released distribution package. You may also obtain updates from this location.
-4. Open the **PubSub.unityPackage**.
+
+4. In Unity select **Assets, Import Package, Custom Package** and open the **PubSub.unityPackage** you downloaded.
+
 5. Click **Import All** to import all the files into your Unity Project.
+
+### Enable PubSub
+
+To enable PubSub, perform the following:
+
+1. Select **Settings**, **API**
+
+2. Check the boxes for the Client and the Entity API. This will display the Feature sub-menu.
+
+3. Check the boxes to **Enable Unstable Features** and **Enable PubSub**. You can then read information about the PubSub package specifically, on the Packages tab.
 
 ## Usage
 
-Using the pubsub plugin is pretty easy. If you have not looked at our reference for this feature, you should get familiar with it at [PubSub client API](pubsub-reference.md).
+Using the PubSub plugin is pretty easy. If you have not looked at our reference for this feature, you should get familiar with it at [PubSub client API](pubsub-reference.md).
 
 1. **Initializing PubSub** - While you can initialize the plugin at any time in your code, we recommend that you initialize in either the `start` or `awake` method. When just getting started it also helps to set `Debugging` to true.
 
