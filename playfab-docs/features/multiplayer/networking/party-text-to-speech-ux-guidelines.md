@@ -29,13 +29,13 @@ Part one focuses on text-to-speech implementation, requirements, console and PC 
 
 This chart guides you through scenarios that players will experience when you enable speech-to-text (STT) and text-to-speech (TTS) features. It outlines user impact for three stages of the gaming experience: initial setup, playing a game, and engaging in game chat.
 
-|Experience Stage|SET-UP              |                |PLAY                          |CHAT                |                        |
-| :--------------|:-------------------|:---------------|:-----------------------------|:-------------------|:-----------------------|
-|Goal            |User enables Setting|Alternative for |User enters a multiplayer game|User sends a message|User receives messages 
-|Action          |STT|Hearing voice replies            |Launches game <br /> Enters MP lobby <br /> Overlay opens when game chat is initiated  |User speaks|User reads team’s voice replies converted to text in a STT chat overlay
-| |TTS|Speaking voice replies|Launches game <br /> Enters MP lobby <br /> Game displays method for text input (keyboard, input field, etc) |User types replies using platform supported input methods. <br /> Typed messages are converted to synthesized voice | User hears team member’s voice replies 
-| |UI Narration (in-game) |Reading in-game menus and text replies|User is guided by the Xbox OS synthesized voice to launch game <br /> Game uses the Speech Synthesis API to narrate menu options leading the user to the MP lobby |For text messaging systems: games use the Speech synthesis API to guide the user to launch the Xbox OS keyboard| For text messaging systems: Games use the Speech Synthesis API to narrate replies
-| |Narrator (Xbox OS) |Reading Xbox menus|User is guided by the Xbox OS synthesized voice to launch game|For text messaging systems: a virtual Keyboard is narrated as the user types a message| N/A |
+|**Experience Stage**|**SET-UP**                |**PLAY**                           |**CHAT**                 |                           |
+| :------------------|:-------------------------|:----------------------------------|:------------------------|:--------------------------|
+|**Goal**            |**User enables Setting**  |**User enters a multiplayer game** |**User sends a message** |**User receives messages** 
+|**Action**          |STT <br /> **Alternative for** Hearing voice replies |Launches game <br /> Enters MP lobby <br /> Overlay opens when game chat is initiated  |User speaks |User reads team’s voice replies converted to text in a STT chat overlay
+| |TTS <br /> **Alternative for** Speaking voice replies |Launches game <br /> Enters MP lobby <br /> Game displays method for text input (keyboard, input field, etc) |User types replies using platform supported input methods <br /> Typed messages are converted to synthesized voice | User hears team member’s voice replies 
+| |UI Narration (in-game) <br /> **Alternative for** Reading in-game menus and text replies |User is guided by the Xbox OS synthesized voice to launch game <br /> Game uses the Speech Synthesis API to narrate menu options leading the user to the MP lobby |For text messaging systems: games use the Speech synthesis API to guide the user to launch the Xbox OS keyboard | For text messaging systems: Games use the Speech Synthesis API to narrate replies
+| |Narrator (Xbox OS) <br /> **Alternative for** Reading Xbox menus |User is guided by the Xbox OS synthesized voice to launch game |For text messaging systems: a virtual Keyboard is narrated as the user types a message | N/A |
 
 ## Understanding the API
 
@@ -85,14 +85,14 @@ Users will find TTS and STT settings in the **Accessibility** section under **Se
 
 **A title is responsible for prompting and accepting text**. This could be a custom text-entry field or the platform-provided keyboard. The resulting entry can then be passed into PlayFab Party to be processed into a synthetic stream. That stream is sent to the other players in the chat session as voice. The receiving end would handle this voice stream in the same way they would another voice stream from a user speaking through a microphone.
 
-1. **Xbox One virtual keyboard** (*console example*)
+1. **Console OS virtual keyboard** (*Xbox console example*)
 
    > [!NOTE]
    > The keyboard will still appear when a gamepad is installed. It will not appear when a hardware keyboard is installed.
 
    ![Xbox One - Virtual Keyboard](media/xbox-one-virtual-keyboard.jpg)
 
-2. **Windows 10 virtual keyboard**
+2. **PC OS virtual keyboard**  (*Windows 10 example*)
 
    The PlayFab Party APIs support receiving input across all platforms. However, text-input components are not provided in a consistent manner.
  
