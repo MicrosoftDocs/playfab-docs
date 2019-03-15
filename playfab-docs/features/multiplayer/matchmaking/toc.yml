@@ -1,5 +1,19 @@
 - name: Overview
   href: index.md
-- name: Matchmaking with Unity Quickstart
-  href: quickstart-unity.md
-
+- name: Quickstart
+  href: quickstart.md
+- name: Tutorials
+  href: tutorials.md
+  items:
+  - name: Configuring matchmaking queues
+    href: config-queues.md
+  - name: Matchmaking scenario and configuration examples
+    href: config-examples.md
+  - name: Specifying attributes with your tickets
+    href: ticket-attributes.md
+  - name: Displaying queue statistics in your title
+    href: display-statistics.md
+  - name: Integrating with PlayFab Multiplayer Servers
+    href: multiplayer-servers.md
+  - name: Handling common error cases
+    href: error-cases.md

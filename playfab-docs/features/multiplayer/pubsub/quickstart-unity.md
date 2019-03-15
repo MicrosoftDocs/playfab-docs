@@ -57,9 +57,9 @@ The PubSub feature does not come with the PlayFab SDK by default and you must ac
 
 To enable PubSub, perform the following:
 
-1. Select **Settings**, **API**
+1. Select **Settings**, **API**.
 
-2. Check the boxes for the Client and the Entity API. This will display the Feature sub-menu.
+2. Check the boxes for both the Client and the Entity API. This will display the Feature sub-menu.
 
 3. Check the boxes to **Enable Unstable Features** and **Enable PubSub**. You can then read information about the PubSub package specifically, on the Packages tab.
 
