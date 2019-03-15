@@ -29,13 +29,13 @@ This document is part two of a two-part series covering UX solutions for speech-
 
 The following chart guides you through scenarios that players will experience when you enable speech-to-text and text-to-speech features. It outlines user impact for three stages of the gaming experience: initial setup, playing a game, and engaging in game chat.
 
-|Experience Stage|SET-UP              |                |PLAY                          |CHAT                |                        |
-| :--------------|:-------------------|:---------------|:-----------------------------|:-------------------|:-----------------------|
-|Goal            |User enables Setting|Alternative for |User enters a multiplayer game|User sends a message|User receives messages 
-|Action          |STT|Hearing voice replies            |Launches game <br /> Enters MP lobby <br /> Overlay opens when game chat is initiated  |User speaks|User reads team’s voice replies converted to text in a STT chat overlay
-| |TTS|Speaking voice replies|Launches game <br /> Enters MP lobby <br /> Game displays method for text input (keyboard, input field, etc) |User types replies using platform supported input methods <br /> Typed messages are converted to synthesized voice | User hears team member’s voice replies 
-| |UI Narration (in-game) |Reading in-game menus and text replies|User is guided by the Xbox OS synthesized voice to launch game <br /> Game uses the Speech Synthesis API to narrate menu options leading the user to the MP lobby |For text messaging systems: games use the Speech synthesis API to guide the user to launch the Xbox OS keyboard.| For text messaging systems: Games use the Speech Synthesis API to narrate replies
-| |Narrator (Xbox OS) |Reading Xbox menus|User is guided by the Xbox OS synthesized voice to launch game|For text messaging systems: a virtual Keyboard is narrated as the user types a message| N/A |
+|**Experience Stage**|**SET-UP**                |**PLAY**                           |**CHAT**                 |                           |
+| :------------------|:-------------------------|:----------------------------------|:------------------------|:--------------------------|
+|**Goal**            |**User enables Setting**  |**User enters a multiplayer game** |**User sends a message** |**User receives messages** 
+|**Action**          |STT <br /> **Alternative for** Hearing voice replies |Launches game <br /> Enters MP lobby <br /> Overlay opens when game chat is initiated  |User speaks |User reads team’s voice replies converted to text in a STT chat overlay
+| |TTS <br /> **Alternative for** Speaking voice replies |Launches game <br /> Enters MP lobby <br /> Game displays method for text input (keyboard, input field, etc) |User types replies using platform supported input methods <br /> Typed messages are converted to synthesized voice | User hears team member’s voice replies 
+| |UI Narration (in-game) <br /> **Alternative for** Reading in-game menus and text replies |User is guided by the Xbox OS synthesized voice to launch game <br /> Game uses the Speech Synthesis API to narrate menu options leading the user to the MP lobby |For text messaging systems: games use the Speech synthesis API to guide the user to launch the Xbox OS keyboard | For text messaging systems: Games use the Speech Synthesis API to narrate replies
+| |Narrator (Xbox OS) <br /> **Alternative for** Reading Xbox menus |User is guided by the Xbox OS synthesized voice to launch game |For text messaging systems: a virtual Keyboard is narrated as the user types a message | N/A |
 
 ## Understanding the API
 
@@ -197,8 +197,8 @@ There may be screens where there simply isn’t room to accommodate a conversati
 
 #### Solutions for game UI and conversation window conflicts
 
-1. **The user can disable the feature in Xbox Settings**  
-   The user has the option to leave the game and turn the STT option on or off by using the Ease of Access settings. 
+1. **The user should be able to disable the feature via the OS**  
+   Ideally, the user has the option to leave the game and turn the STT option on or off by using the Ease of Access settings. 
 
    - **UI impact: NONE**
    - **UX impact: POOR**
