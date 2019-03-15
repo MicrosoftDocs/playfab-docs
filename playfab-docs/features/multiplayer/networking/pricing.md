@@ -6,7 +6,6 @@ ms.author: v-thopra
 ms.date: 13/12/2018
 ms.topic: article
 ms.prod: playfab
-ROBOTS: NOINDEX,NOFOLLOW
 keywords: playfab, multiplayer, party, networking, pricing, billing, bumblelion
 ms.localizationpriority: medium
 ---
