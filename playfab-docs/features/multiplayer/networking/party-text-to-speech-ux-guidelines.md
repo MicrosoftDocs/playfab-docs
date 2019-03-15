@@ -12,6 +12,13 @@ ms.localizationpriority: medium
 
 # PlayFab Party Text to Speech UX Guidelines
 
+> [!IMPORTANT]
+> This feature is currently in **Private Preview**.  
+>
+> It is provided to give you an early look at an upcoming feature and to allow you to provide feedback while it is still in development.  
+>
+> Access to this feature is restricted to select titles, with SDKs available for Windows 10 PCs and Xbox One. Interoperable SDKs for iOS and Android will be available this summer. If you are interested in this feature, you can request access by submitting a ticket on [support.playfab.com](https://support.playfab.com/hc/en-us/requests/new).
+
 The PlayFab Party service gives creators more options for delivering  great in-game chat experiences. It provides a means for voice chat to be transcribed to text and for text input to be converted to synthesized voice.
 
 This topic is part one of a two-part series covering UX solutions for speech-to-text (STT) and text-to-speech (TTS) implementation. 
