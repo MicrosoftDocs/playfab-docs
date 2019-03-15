@@ -235,7 +235,7 @@ PlayFab supports your game well beyond your LiveOps needs, so this guide wouldnâ
 
   - Synchronous matchmaking, allowing flexibility through real-time configuration to balance quality games against time to match. The matchmaking system is highly customizable to fit many game variations.
 
-  - Chat and voice services through PlayFab Parties.
+  - Chat and voice services through PlayFab Party.
 
   - Support for Photon to handle message passing between clients for multiplayer without requiring a custom game server.
 
@@ -295,7 +295,7 @@ PlayFab supports your game well beyond your LiveOps needs, so this guide wouldnâ
 
 - **Player-to-Player** communication. Tools to help keep your players connected in-game and out.
 
-  - PlayFab Parties offers cross platform networking and voice chat services.
+  - PlayFab Party offers cross platform networking and voice chat services.
 
   - Cross platform device to device messaging makes it easy to add voice and text chat to your multiplayer game.
 

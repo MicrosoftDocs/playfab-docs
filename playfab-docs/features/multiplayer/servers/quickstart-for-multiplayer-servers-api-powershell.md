@@ -14,9 +14,9 @@ ms.localizationpriority: medium
 
 This tutorial helps you quickly upload a sample multiplayer server, configure a server build, and create server instances.
 
-On a **Windows 10** PC, get the following pre-requisites ready:
+On a **Windows 10** PC, get the following prerequisites ready:
 
-- A PlayFab title ID, this needs to be a title that PlayFab has authorized for the private preview.
+- A PlayFab title ID - this needs to be a title that PlayFab has authorized for the private preview.
 - A developer key for the title (See [Getting PlayFab Developer Keys](../../config/gamemanager/getting-playfab-developer-keys.md)).
 - [Game Server SDK Sample - Windows Runner](https://github.com/PlayFab/gsdkSamples/releases/download/v1.0/winrunnerSample.zip)
 
@@ -53,7 +53,7 @@ Enable-PFMultiplayerServer
 
 ## Upload a game server executable as an asset
 
-We're going to use the *managed containers* option to create a build. With managed containers your game server build is created by uploading assets that are combined with a **Windows** container image. For this tutorial, upload the `winrunnerSample.zip` folder from the sample servers package you downloaded earlier
+We're going to use the *managed containers* option to create a build. With managed containers, your game server build is created by uploading assets that are combined with a **Windows** container image. For this tutorial, upload the `winrunnerSample.zip` folder from the sample servers package you downloaded earlier
 
 ```powershell
 Add-PFMultiplayerAsset -FilePath "C:\winrunnerSample.zip"
