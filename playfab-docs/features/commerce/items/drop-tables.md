@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Drop Tables
 
-This tutorial shows you the steps fpr creating drop tables using the PlayFab Game Manager.
+This tutorial shows you the steps for creating drop tables using the PlayFab Game Manager.
 
 Drop tables allow you to randomly generate [inventory items](../../data/playerdata/player-inventory.md), and *sequential* drop tables can provide some randomness to player rewards.
 

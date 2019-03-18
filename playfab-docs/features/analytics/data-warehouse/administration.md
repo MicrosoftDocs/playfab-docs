@@ -1,17 +1,17 @@
 ---
-title: Data Warehouse tutorial - administration
-author: kennethsabotta
-description: Learn how to administer permissions and tables with Data Warehouse.
-ms.author: Kenneth.Sabotta
+title: PlayFab Insights tutorial - administration
+author: cjwilliams
+description: Learn how to administer permissions and tables with PlayFab Insights
+ms.author: CJ.Williams
 ms.date: 01/17/2019
 ms.topic: article
 ms.prod: playfab
 ROBOTS: NOINDEX,NOFOLLOW
-keywords: playfab. analytics, data warehouse, permissions, tables, administration
+keywords: playfab. insights,analytics, data warehouse, permissions, tables, administration
 ms.localizationpriority: medium
 ---
 
-# Data Warehouse tutorial - administration
+# PlayFab Insights tutorial - administration
 
 > [!IMPORTANT]
 > This feature is currently in **Private Preview**.  
@@ -24,7 +24,7 @@ The Data Warehouse Premium offering grants customers access to an isolated clust
 
 ## Administering Permissions
 
-Adds a new user with an MSA to access the cluster:
+Adds a new user with a [Microsoft Account](https://account.microsoft.com/account) to access the cluster:
 
 ```cmd
 .add follower database {DATABASENAME} admins/users ('msauser={MSA Email}')

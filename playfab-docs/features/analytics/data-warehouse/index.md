@@ -1,8 +1,8 @@
 ---
-title: Data Warehouse
+title: PlayFab Insights
 author: kennethsabotta
-description: Data Warehouse overview
-ms.author: Kenneth.Sabotta
+description: PlayFab Insights overview
+ms.author: CJ.Williams
 ms.date: 01/17/2019
 ms.topic: article
 ms.prod: playfab
@@ -11,7 +11,7 @@ keywords: playfab. analytics, data warehouse
 ms.localizationpriority: medium
 ---
 
-# Data Warehouse
+# PlayFab Insights
 
 > [!IMPORTANT]
 > This feature is currently in **Private Preview**.  
@@ -20,9 +20,11 @@ ms.localizationpriority: medium
 >
 > Access to this feature is restricted to select titles. If you are interested in trying it, you can request access by submitting a ticket on [support.playfab.com](https://support.playfab.com/hc/en-us/requests/new).
 
-The PlayFab Data Warehouse is a premium PlayFab offering that provides a central repository for your data, whether it’s generated from our services or imported from an external source. The data warehouse is directly integrated with Game Manager, allowing you to query across multiple data assets in a single location where you control the storage retention period or size. Your events can be joined with other data sets we make available or you may import your own sources such as acquisition channel, social activity, and more.
+PlayFab Insights is your integrated big data solution for gaming insights driving intelligent actions inside PlayFab.  It combines high throughput in-game telemetry with game data from multiple other sources to measure your game’s performance, create actionable insights and build a holistic view of each of your players.
 
-The PlayFab platform and data warehouse are built on a fast and highly scalable data exploration service for log and telemetry data providing fast indexing and querying on large, diverse data sets. Powered by the Azure Data Explorer Engine, PlayFab data warehouse can handle high throughput of events emitted by games so that you can collect, store and analyze gaming data. The underlying architecture is ideal for quickly identifying trends, patterns, or anomalies in your gaming data. Your data is highly available and secure on Azure's global footprint for massive scalability.
+PlayFab Insights is powered by [Azure Data Explorer](https://azure.microsoft.com/en-us/services/data-explorer/), a fast and highly scalable data exploration service for log and telemetry data providing fast indexing and querying on large, diverse data sets.  For optimized queries, the engine can query millions of records in a few seconds - a demonstrable benefit for games producing high throughput or large volumes of gaming events.  
+
+The Insights service provides you complete access to your game's raw telemetry data, in under 5 minutes from ingestion, using a powerful SQL-like query language that's optimized for business-critical data exploration and analytics.  Your data can be joined with other data sets we make available or you import from your own sources such as acquisition channel, economy or marketing metrics. 
 
 The capabilities include:
 
@@ -37,10 +39,10 @@ To get you started,  here are some really great guides that will walk you though
 
 ## Quickstart
 
-[Data Warehouse quickstart](quickstart.md)
+[PlayFab Insights quickstart](quickstart.md)
 
 ## Tutorials
 
-[Data Warehouse tutorial - administration](administration.md)
+[PlayFab Insights tutorial - administration](administration.md)
 
-[Viewing or analyzing event data with Data Warehouse](view-or-analyze-event-data.md)
+[Viewing or analyzing event data with PlayFab Insights](view-or-analyze-event-data.md)
