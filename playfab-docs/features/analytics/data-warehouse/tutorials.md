@@ -1,8 +1,8 @@
 ---
-title: Data Warehouse tutorials
-author: kennethsabotta
-description: Overview page for tutorials on how to work with Data Warehouse.
-ms.author: Kenneth.Sabotta
+title: PlayFab Insights tutorials
+author: cjwilliams
+description: Overview page for tutorials on how to work with PlayFab Insights.
+ms.author: CJ.Williams
 ms.date: 01/17/2019
 ms.topic: article
 ms.prod: playfab
@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 # Data Warehouse Tutorials
 
-The following tutorial shows you how to work with PlayFab and Data Warehouse:
+The following tutorial shows you how to work with PlayFab Insights:
 
-- [Data Warehouse tutorial - administration](administration.md)
-- [Viewing or analyzing event data with Data Warehouse](view-or-analyze-event-data.md)
+- [PlayFab Insights tutorial - administration](administration.md)
+- [Viewing or analyzing event data with the Insights service](view-or-analyze-event-data.md)
