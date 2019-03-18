@@ -1,17 +1,17 @@
 ---
-title: Data Warehouse quickstart
-author: kennethsabotta
-description: Get started with PlayFab Data Warehouse. 
-ms.author: Kenneth.Sabotta
+title: PlayFab Insights quickstart
+author: cjwilliams
+description: Get started with PlayFab Insights. 
+ms.author: CJ.Williams
 ms.date: 01/17/2019
 ms.topic: article
 ms.prod: playfab
 ROBOTS: NOINDEX,NOFOLLOW
-keywords: playfab. analytics, data warehouse
+keywords: playfab. analytics, insights
 ms.localizationpriority: medium
 ---
 
-# Data Warehouse quickstart
+# PlayFab Insights quickstart
 
 > [!IMPORTANT]
 > This feature is currently in **Private Preview**.  
@@ -25,13 +25,13 @@ To enable the offering which entitles you to a dedicated compute and storage clu
 1. Organizational account (i.e. AAD ID)
 1. Microsoft account (i.e. MSA)
 
-You must have one of these account types in order to administer and access data warehouse databases. Neither an AAD nor an MSA ID are required for accessing the PlayFab data warehouse' non-dedicated (i.e. shared) cluster. It takes approximately 24-48 hours to completely provision an isolated cluster for customers to preview. After the private preview window is over, the provisioning process will be automated.
+You must have one of these account types in order to administer and access the Insights Service's databases. Neither an AAD nor an MSA ID are required for accessing PlayFab Insights' non-dedicated (i.e. shared) cluster. It takes approximately 24-48 hours to completely provision an isolated cluster for customers to preview. After the private preview window is over, the provisioning process will be automated.
   
 ## Organizational Account
 
 An organizational account is an account created by an organization’s administrator to enable a member of the organization access to all Microsoft cloud services such as Microsoft Azure, Windows Intune, or Office 365. An Organizational account can take the form of a user’s organizational email address, such as username@orgname.com, when an organization federates or synchronizes its Active Directory accounts with Azure Active Directory.
 
-If you want to provision the data warehouse with an organizational account, you will also need to provide the Azure Active Directory ID associated with your organization. Follow the steps below to capture your directory ID:
+If you want to provision theInsight service with an organizational account, you will also need to provide the Azure Active Directory ID associated with your organization. Follow the steps below to capture your directory ID:
 
 1. Visit the Azure Portal:
 
