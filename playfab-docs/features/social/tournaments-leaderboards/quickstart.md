@@ -39,7 +39,7 @@ Before we can use [UpdatePlayerStatistics](xref:titleid.playfabapi.com.client.pl
 
 ![Game Manager - Settings - API Features - Allow client to post player statistics](media/tutorials/api-features-allow-client-to-post-player-statistics.png)  
 
-### C# code example
+### C# code example - SubmitScore
 
 In this code example we will have a SubmitScore function that would be called at the end of a game.
 
@@ -70,7 +70,7 @@ private void FailureCallback(PlayFabError error){
 
 In order to get the leaderboard of the top high scores of all players that have played the game, you will make a call to [GetLeaderboard](xref:titleid.playfabapi.com.client.playerdatamanagement.getleaderboard).
 
-### C# code example
+### C# code example - RequestLeaderboard
 
 In this code example we will have a RequestLeaderboard function that would be called to get the leaderboard and will pass the results to a function of DisplayLeaderboard which would populate the experience in your game that shows the high scores.
 

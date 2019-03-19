@@ -25,7 +25,7 @@ For your game server to be able to communicate with the PlayFab multiplayer plat
 ```cpp
 int main()
 {
-    // Call this while your game is initializing, it will start heartbeating to our agent and put the game server in an Initializing state
+    // Call this while your game is initializing, it will start a heartbeat to our agent and put the game server in an Initializing state
     Microsoft::Azure::Gaming::GSDK::start();
 
     /* Add any other initialization code your game server needs before players can connect */
@@ -49,7 +49,7 @@ int main()
 ```csharp
 static void Main(string[] args)
 {
-    // Call this while your game is initializing, it will start heartbeating to our agent and put the game server in an Initializing state
+    // Call this while your game is initializing, it will start a heart beat to our agent and put the game server in an Initializing state
     GameserverSDK.Start();
 
     /* Add any other initializion code your game server needs before players can connect */
@@ -73,7 +73,7 @@ static void Main(string[] args)
 ```java
 public static void main(String[] args)
 {
-    // Call this while your game is initializing, it will start heartbeating to our agent and put the game server in an Initializing state
+    // Call this while your game is initializing, it will start a heart beat to our agent and put the game server in an Initializing state
     GameserverSDK.start();
 
     /* Add any other initializion code your game server needs before players can connect */
@@ -136,9 +136,12 @@ String logFolder = GameserverSDK.getLogsDirectory();
 There are three scenarios in which your game server will end:
 
 1. Your game server application exits.
+
 2. PlayFab terminates your game server because there are more game servers available than is necessary for the current player load.
+
 > [!NOTE]
->  PlayFab will *only* terminate game servers that are not currently active.
+> PlayFab will *only* terminate game servers that are not currently active.
+
 3. **Azure** will perform required maintenance on the virtual machine that is hosting your game server.
 
 For **(1)** above: You control when it happens, and can perform any necessary cleanup before your application exits.

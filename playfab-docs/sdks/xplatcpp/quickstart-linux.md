@@ -15,10 +15,10 @@ ms.localizationpriority: medium
 This guide will help you make your first API call in C++. A native C++ project can be used a few ways:
 
 - Stand-alone console Admin tools for maintaining your game
-  - The C++ Sdk works great for a stand-alone C++ program
+  - The C++ SDK works great for a stand-alone C++ program
 
 - Integration into an existing C++ based game engine
-  - The C++ Sdk should not be used if we provide a more specific SDK
+  - The C++ SDK should not be used if we provide a more specific SDK
     - [Cocos2d-x](https://github.com/PlayFab/Cocos2d-xSDK)
     - [Unreal](https://github.com/PlayFab/UnrealCppSdk)
 
@@ -29,18 +29,22 @@ If you have any issues, let us know on the [Forums](https://community.playfab.co
 
 ## Linux C++ Project Setup
 
-- OS: This guide is written for Linux, using Ubuntu 18.04 LTS
-- Install Requirements (sudo apt install ____ on Ubuntu)
-  - g++
-  - gdb
-  - make
-  - cmake
-  - libjsoncpp-dev
-  - libcurl4-openssl-dev
-  - git-all
-  
-- Clone [XPlatCppSdk](https://github.com/PlayFab/XPlatCppSdk) into your project folder
-- Create main.cpp and write Hello World in it:
+OS: This guide is written for Linux, using Ubuntu 18.04 LTS.
+
+Before continuing, make sure you have completed [Getting started for developers](../../personas/developer.md) which ensures you have a PlayFab account and are familiar with the PlayFab Game Manager.
+
+Installation
+
+1. Install the following (sudo apt install ____ on Ubuntu):
+    - g++
+    - gdb
+    - make
+    - cmake
+    - libjsoncpp-dev
+    - libcurl4-openssl-dev
+    - git-all
+2. Clone [XPlatCppSdk](https://github.com/PlayFab/XPlatCppSdk) into your project folder.  
+3. Create main.cpp and write Hello World in it as shown below.
 
 ```cpp
 // main.cpp: entry point for the console application
@@ -88,14 +92,14 @@ target_link_libraries(PlayFab_Test -ljsoncpp -lcurl -lpthread)
   - make
   - ./PlayFab_Test
 
-- Your project should compile and successfully run Hello World!
+Your project should compile and successfully run Hello World!
 
 
 ## Set up your first API call
 
-This guide will provide the minimum steps to make your first PlayFab API call, without any GUI or on-screen feedback. Confirmation will be done with a console print statement.
+This guide will provide the minimum steps to make your first PlayFab API call without any GUI or on-screen feedback. Confirmation is through a console print statement.
 
-- Replace the contents of main.cpp with the following:
+First, replace the contents of main.cpp with the following:
 
 ```cpp
 // main.cpp: entry point for the console application
@@ -144,18 +148,18 @@ int main()
 }
 ```
 
-## Finish and Execute
+## Finish and execute
 
-- Build and run the project inside your IDE, or open Terminal and run:
-  - ./PlayFab_Test
+1. Build and run the project inside your IDE, or open Terminal and run:
+    - ./PlayFab_Test
 
-- When it loads, you should see the following text:
-  - "Congratulations, you made your first successful API call!"
+2. When it loads, you should see the following text:
+    - "Congratulations, you made your first successful API call!"
 
-- At this point, you can start making other API calls, and building your game
-- For a list of all available client API calls, see our [PlayFab API References](../../api-references/index.md) documentation.
+3. At this point, you can start making other API calls and build your game.
+    - For a list of all available client API calls, see our [PlayFab API References](../../api-references/index.md) documentation.
 
-- Happy coding!
+Happy coding!
 
 ## Deconstruct the code
 
