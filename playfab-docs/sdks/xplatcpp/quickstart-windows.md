@@ -41,7 +41,7 @@ OS: This guide is written for Windows 10, using Visual Studio 2017.
 
 Installation:
 
-1. Download and install the PlayFab [Windows - C++](../sdks/xplatcpp/quickstart-windows.md) SDK.
+1. Download and install the PlayFab [Windows - C++](https://github.com/PlayFab/XPlatCppSdk) SDK.
 
 2. Download and install Visual Studio 2017.
     > [!NOTE]
