@@ -29,7 +29,7 @@ This is an advanced tutorial. Please make sure that all requirements have been m
 
 The first thing we will do is update the existing account recovery email template we made in the [Using Email Templates to Send an Account Recovery Email](using-email-templates-to-send-an-account-recovery-email.md) tutorial mentioned above.
 
-Go to **Content -> Email Templates** and click on the “PasswordRecoveryTemplate”.
+Go to **Content -> Email Templates** and select the “PasswordRecoveryTemplate”.
 
 ![Game Manager - Content - Email Templates - Edit Email Template](media/tutorials/game-manager-content-edit-email-template.png)
 
