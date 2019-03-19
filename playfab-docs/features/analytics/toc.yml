@@ -2,12 +2,14 @@
   href: /gaming/playfab/?#pivot=documentation&panel=analytics
   expanded: true
   items:
+  - name: A/B testing
+    href: ab-testing/toc.yml
+  - name: Insights
+    href: data-warehouse/toc.yml
   - name: Metrics
     href: metrics/toc.yml
   - name: Reports
     href: reports/toc.yml
-  - name: A/B testing
-    href: ab-testing/toc.yml
   - name: Segmentation
     href: segmentation/toc.yml
 

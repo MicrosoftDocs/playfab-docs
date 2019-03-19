@@ -6,8 +6,7 @@ ms.author: CJ.Williams
 ms.date: 01/17/2019
 ms.topic: article
 ms.prod: playfab
-ROBOTS: NOINDEX,NOFOLLOW
-keywords: playfab. insights,analytics, data warehouse, permissions, tables, administration
+keywords: playfab. insights,analytics, insights, permissions, tables, administration
 ms.localizationpriority: medium
 ---
 
@@ -20,7 +19,7 @@ ms.localizationpriority: medium
 >
 > Access to this feature is restricted to select titles. If you are interested in trying it, you can request access by submitting a ticket on [support.playfab.com](https://support.playfab.com/hc/en-us/requests/new).
 
-The Data Warehouse Premium offering grants customers access to an isolated cluster to conduct queries or create, schedule and monitor custom data pipelines without sharing compute or storage resources. When enabling the offering, an organizational or Microsoft account (MSA) is required in order to access the cluster and perform administrative tasks like create tables or assign user permissions. This tutorial demonstrates helpful queries to complete these tasks.
+The PlayFab Insights Premium offering grants customers access to an isolated cluster to conduct queries or create, schedule and monitor custom data pipelines without sharing compute or storage resources. When enabling the offering, an organizational or Microsoft account (MSA) is required in order to access the cluster and perform administrative tasks like create tables or assign user permissions. This tutorial demonstrates helpful queries to complete these tasks.
 
 ## Administering Permissions
 
