@@ -27,11 +27,11 @@ Install-Module -Name PlayFabMultiplayer -MaximumVersion 0.919
 ## Previous module (v0.919)
 
 ```powershell
-$VMSelection = [PlayFab.MultiplayerModels.AzureVMSize]::Standard_D2_v2 
+$VMSelection = [PlayFab.MultiplayerModels.AzureVMSize]::Standard_D2_v2
 
-$Ports = New-object PlayFab.MultiplayerModels.Port 
-$Ports.Name = "game_port" 
-$Ports.Num = 3600 
+$Ports = New-object PlayFab.MultiplayerModels.Port
+$Ports.Name = "game_port"
+$Ports.Num = 3600
 $Ports.Protocol = [PlayFab.MultiplayerModels.ProtocolType]::TCP
 
 
@@ -41,16 +41,16 @@ New-PFMultiplayerBuild -BuildName "PowerShellTest" -AssetFileName "winrunnerSamp
 ## New module (v0.920)
 
 ```powershell
-$VMSelection = [PlayFab.MultiplayerModels.AzureVMSize]::Standard_D2_v2 
+$VMSelection = [PlayFab.MultiplayerModels.AzureVMSize]::Standard_D2_v2
 
-$Ports = New-object PlayFab.MultiplayerModels.Port 
-$Ports.Name = "game_port" 
-$Ports.Num = 3600 
+$Ports = New-object PlayFab.MultiplayerModels.Port
+$Ports.Name = "game_port"
+$Ports.Num = 3600
 $Ports.Protocol = [PlayFab.MultiplayerModels.ProtocolType]::TCP
 
 $Asset = NEW-OBJECT PlayFab.MultiplayerModels.AssetReferenceParams
 $Asset.FileName = "winrunnerSample2.zip"
-$Asset.MountPath = "C:\Assets\" 
+$Asset.MountPath = "C:\Assets\"
 
 $Regions = NEW-OBJECT PlayFab.MultiplayerModels.BuildRegionParams
 $Regions.MaxServers = 10

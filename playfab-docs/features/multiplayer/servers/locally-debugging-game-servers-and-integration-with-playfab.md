@@ -71,7 +71,7 @@ The **MockVmAgent** requests the game server to terminate (via GSDK) after a con
   - **cd** in to the folder where the toolset was extracted.  
   - Run **Setup.ps1**. This should set up docker networks, firewall rules to communicate with the local **MockVmAgent** and pull down the PlayFab docker image from [Microsoft/PlayFab-Multiplayer](https://hub.docker.com/r/microsoft/playfab-multiplayer/). Note that the first time this set up runs, it can take a few minutes while it downloads the container image.  
       > [!NOTE]
-    > To run this setup successfully, you may have to configure the firewall of any 3rd party antivirus program (such as, McAfee, Norton, or Avira) that you have installed.  
+    > To run this setup successfully, you may have to configure the firewall of any 3rd party antivirus program (such as McAfee, Norton, or Avira) that you have installed.  
 
 ### Running the game server within a container
 

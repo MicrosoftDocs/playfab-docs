@@ -12,45 +12,56 @@ ms.localizationpriority: medium
 
 # C++ quickstart for Windows
 
-This guide will help you make your first API call in C++. A native C++ project can be used a few ways:
+This guide helps you make your first PlayFab API call in C++. 
 
-- Stand-alone console Admin tools for maintaining your game
-  - The Cross-Platform C++ SDK works great for a stand-alone C++ program
+Before continuing, make sure you have completed [Getting started for developers](../../personas/developer.md) which ensures you have a PlayFab account and are familiar with the PlayFab Game Manager.
 
-- Integration into an existing Visual Studio based C++ game
-  - Follow the instructions below to integrate the NuGet Package into your Visual Studio Solution, and you're ready to go
+A native C++ project can be used a few ways:
 
-- Integration into an existing C++ based game engine
-  - The Cross-Platform C++ SDK should not be used if we provide a more specific SDK
+- As stand-alone console Admin tools for maintaining your game.
+  - The PlayFab C++ SDK works great for a stand-alone C++ program.
+
+- Integrated into an existing Visual Studio based C++ game.
+  - Follow the instructions below to integrate the NuGet Package into your Visual Studio Solution, and you're ready to go.
+
+- Integrated into an existing C++ based game engine.
+  - The PlayFab C++ SDK should not be used if we provide a more specific SDK.
     - [Cocos2d-x](https://github.com/PlayFab/Cocos2d-xSDK)
     - [Unreal](https://github.com/PlayFab/UnrealCppSdk)
 
-  - Many C++ based engines also integrate Lua:
-    - [LuaSdk]https://github.com/PlayFab/LuaSdk)
+  - Many C++ based engines also integrate Lua.
+
+    - [LuaSDK](https://github.com/PlayFab/LuaSdk)
 
   - Finally, if none of these options work for you, follow the instructions below to integrate the NuGet Package into your Visual Studio Solution. If you have any issues, let us know on the [Forums](https://community.playfab.com/index.html).
 
-## Windows C++ Project Setup
+## Windows C++ project setup
 
-- OS: This guide is written for Windows 10, using Visual Studio 2017
-- Installation
-  - Download and install Visual Studio 2017
+OS: This guide is written for Windows 10, using Visual Studio 2017.
+
+Installation:
+
+1. Download and install the PlayFab [Windows - C++](https://github.com/PlayFab/XPlatCppSdk) SDK.
+
+2. Download and install Visual Studio 2017.
     > [!NOTE]
-    > The Cross-Platform C++ SDK is no longer supported on Visual Studio 2013 and Visual Studio 2015.
-  - Create a new C++ Console project
-  - Right-click Manage NuGet packages, and search for "playfab"
-    - You should see a small number of matches, and you're looking for: "PlayFab Windows C++ SDK For Visual Studio 20XX"
+    > The PlayFab Windows C++ SDK is no longer supported on Visual Studio 2013 and Visual Studio 2015.
 
-- Your project should now compile
-- PlayFab Installation Complete!
+3. Create a new C++ Console project.
+
+4. Right-click on the project in Solution Explorer, select **Manage NuGet packages**, and search for "playfab." You should see a small number of matches, and you're looking for: "com.playfab.xplatcppsdk.vXXX." Install the json cpp packages. Your project should now compile.  
+
+PlayFab Installation Complete!  
 
 ## Set up your first API call
 
 This guide will provide the minimum steps to make your first PlayFab API call, without any GUI or on-screen feedback. Confirmation will be done with a console print statement.
 
-- In Visual Studio, Create a new C++ Console Application
-  - Open up the main cpp document for this project (by default it would be ConsoleApplication1.cpp unless you renamed your project)
-  - Replace the contents of that file with the following:
+1. In Visual Studio, Create a new C++ Console Application.
+
+2. Open up the main cpp document for this project (by default it would be ConsoleApplication1.cpp unless you renamed your project).
+
+3. Replace the contents of that file with the following:
 
 ```cpp
 // ConsoleApplication1.cpp : Defines the entry point for the console application.
@@ -76,14 +87,14 @@ void OnLoginFail(const PlayFabError& error, void* customData)
 {
     printf("Something went wrong with your first API call.\n");
     printf("Here's some debug information:\n");
-    printf(error.GenerateReport().c_str());
+    printf(error.GenerateErrorReport().c_str());
     printf("\n");
     finished = true;
 }
 
 int main()
 {
-    PlayFabSettings::titleId = WidenString("144");
+    PlayFabSettings::titleId = ("144");
 
     LoginWithCustomIDRequest request;
     request.CreateAccount = true;
@@ -100,18 +111,16 @@ int main()
 }
 ```
 
-## Finish and Execute
+## Finish and execute
 
-- Run this project
-  - Debug (dropdown) -> Start Debugging
+1. Run this project by selecting **Debug** (dropdown) -> **Start Debugging**.
 
-- When it loads, you should see the following text:
-  - "Congratulations, you made your first successful API call!"
+1. When it loads, you should see the following text: "Congratulations, you made your first successful API call!"  
 
-- At this point, you can start making other API calls, and building your game
-- For a list of all available client API calls, see our [PlayFab API References](../../api-references/index.md) documentation.
+2. Start making other API calls and build your game.
 
-- Happy coding!
+> [!NOTE]
+> For a list of all available client API calls, see our [PlayFab API References](../../api-references/index.md) documentation. Happy coding!
 
 ## Deconstruct the code
 

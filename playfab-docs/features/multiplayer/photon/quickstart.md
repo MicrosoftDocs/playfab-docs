@@ -227,7 +227,6 @@ public class PlayFabAuthenticator : MonoBehaviour {
     */
     private void RequestPhotonToken(LoginResult obj) {
         LogMessage("PlayFab authenticated. Requesting photon token...");
-
         //We can player PlayFabId. This will come in handy during next step
         _playFabPlayerIdCache = obj.PlayFabId;
 
@@ -247,7 +246,6 @@ public class PlayFabAuthenticator : MonoBehaviour {
 
         //We set AuthType to custom, meaning we bring our own, PlayFab authentication procedure.
         var customAuth = new AuthenticationValues { AuthType = CustomAuthenticationType.Custom };
-
         //We add "username" parameter. Do not let it confuse you: PlayFab is expecting this parameter to contain player PlayFab ID (!) and not username.
         customAuth.AddAuthParameter("username", _playFabPlayerIdCache);    // expected by PlayFab custom auth service
 

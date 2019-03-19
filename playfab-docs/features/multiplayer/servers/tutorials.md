@@ -33,4 +33,3 @@ The tutorials in this section walk you through multiplayer server topics.
 - [PlayFab Multiplayer Servers 2.0 (Thunderhead)](thunderhead.md)
 - [Using Externally-hosted game servers](using-externally-hosted-games-servers-with-playfab.md)
 - [Using quality-of-service (QoS) beacons to measure player latency to Azure](using-qos-beacons-to-measure-player-latency-to-azure.md)
-

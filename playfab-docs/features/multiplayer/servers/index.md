@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 # Multiplayer Servers
 
 PlayFab's multiplayer server hosting service allows you to operate a dynamically scaling pool of custom game servers in Azure.
- 
+
 All PlayFab indie, pro, and enterprise tier customers can access the service and use a limited, free quota of multiplayer servers for product evaluation and testing. Because we're still improving the portal experience, samples, and documentation, this service is in a **preview** mode. During this public preview, if you're interested in operating the service at production-scale, you will enjoy a 30% discount. The preview period and discount are expected to end in March 2019.
 
 There are three key concepts to PlayFab multiplayer servers:
@@ -24,7 +24,7 @@ There are three key concepts to PlayFab multiplayer servers:
 
 These are the typical steps for using the service:
 
-1. **Author game server**. Scaling your server requires integration with the PlayFab game server SDK (GSDK) and testing the server executable in a container. You can download a mock agent and the Windows container image PlayFab uses for local development. 
+1. **Author game server**. Scaling your server requires integration with the PlayFab game server SDK (GSDK) and testing the server executable in a container. You can download a mock agent and the Windows container image PlayFab uses for local development.
 2. **Upload game server executable and assets**. Upload the server and manage builds through Game Manager or PlayFab APIs and SDKs.
 3. **Scale game server build**. Once you've uploaded server assets you can create *builds*. PlayFab dynamically creates and recycles virtual machines to fulfill player demand and maintain standing-by levels you specify.
 4. **Measure player latency**. When players initiate a multiplayer experience, send UDP messages to PlayFab quality-of-service (QoS) beacons to measure network latency to Azure.
@@ -44,14 +44,14 @@ These are the typical steps for using the service:
   - [Integrating game servers with the PlayFab game server SDK (GSDK)](integrating-game-servers-with-gsdk.md)
   - [Locally debugging game servers and integration with PlayFab](locally-debugging-game-servers-and-integration-with-playfab.md)
 
-- **Managing server builds** 
+- **Managing server builds**
   - [Deploying PlayFab multiplayer server builds](deploying-playfab-multiplayer-server-builds.md)
   - [Archiving and retrieving multiplayer server logs](archiving-and-retrieving-multiplayer-server-logs.md)
   - [Lifecycle of multiplayer server builds](multiplayer-build-lifecycle.md)
   - [Lifecycle of a multiplayer server build region](multiplayer-build-region-lifecycle.md)
 
 - **Connecting clients and requesting servers**
-  - [Using quality-of-service (QoS) beacons to measure player latency to Azure ](using-qos-beacons-to-measure-player-latency-to-azure.md)
+  - [Using quality-of-service (QoS) beacons to measure player latency to Azure](using-qos-beacons-to-measure-player-latency-to-azure.md)
   - [Allocating game servers and connecting Visual Studio debugging tools](allocating-game-servers-and-configuring-vs-debugging-tools.md)
   - [Connecting clients to game servers](connecting-clients-to-game-servers.md)
 
@@ -80,4 +80,4 @@ We do not have a Unity sample demonstrating PlayFab Multiplayer Servers, but sho
 
 ### Only 14 Azure regions and 4 VM series appear currently supported. Can I get access to additional series or regions?
 
-Please contact the team through [PlayFab support](mailto:support@playfab.com) as we are adding additional series and regions in response to customer requests. The current selection are the most popular options used by several games in production. 
+Please contact the team through [PlayFab support](mailto:support@playfab.com) as we are adding additional series and regions in response to customer requests. The current selection are the most popular options used by several games in production.
