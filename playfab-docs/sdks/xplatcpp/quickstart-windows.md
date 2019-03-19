@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # C++ quickstart for Windows
 
-This guide helps you make your first PlayFab API call in C++. 
+This guide will help you make your first API call in C++. 
 
 Before continuing, make sure you have completed [Getting started for developers](../../personas/developer.md) which ensures you have a PlayFab account and are familiar with the PlayFab Game Manager.
 
