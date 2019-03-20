@@ -25,10 +25,7 @@ time the firmly established technology of Xbox Live matchmaking has been
 available outside of the Xbox Live ecosystem, and it will be available to you
 *everywhere* via PlayFab.
 
-When an individual or group wants to enter a match, your title submits a request
-to the matchmaking service. Once the request is made, the service will hold on
-to the request and try to match it with other requests. The service then creates
-matches that contain players who are most compatible.
+When an individual or group wants to enter a match, your title submits a request to the matchmaking service. Once the request is made, the service will hold on to the request and try to match it with other requests. The service then creates matches that contain players who are most compatible.
 
 ## Terminology
 
