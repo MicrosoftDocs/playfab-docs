@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # entity_executed_cloud_script
 
-This event is optionally triggered when an Entity CloudScript function is executed, either by calling the ExecuteCloudScript API with the GeneratePlayStreamEvent option or triggered by a PlayStream event action with the **Publish results as a PlayStream Event** box checked.
+This event is optionally triggered when a Cloud Script function is executed by calling the ExecuteEntityCloudScript API. If you want the Event logged, you can pass in GeneratePlayStreamEvent.
 
 ## Properties
 
