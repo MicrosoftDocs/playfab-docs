@@ -65,7 +65,7 @@ The following procedure should *only* be applied to server builds that are for d
 1. Get the **VS2017 Remote Debugging** tools:
 
 ```cmd
-Invoke-WebRequest -OutFile rtools_setup_x64.exe -Uri 
+Invoke-WebRequest -OutFile rtools_setup_x64.exe -Uri
 https://aka.ms/vs/15/release/RemoteTools.amd64ret.enu.exe
 ```
 
@@ -74,13 +74,13 @@ https://aka.ms/vs/15/release/RemoteTools.amd64ret.enu.exe
 4. You will need to run **msvsmon** within the container to enable remote debugging. A common pattern is to specify a **CMD** script as the **Game Start** command, and to use a command-line argument to launch **msvsmon** in addition to your game server executable.
 5. Execute **msvsmon** once with:
 
-```cmd    
+```cmd
 /prepcomputer
 ```
 
 6. Execute **msvsmon** with flags:
 
-```cmd    
+```cmd
 /nostatus /noauth /nosecuritywarn /anyuser /nofirewallwarn /nodiscovery /port 4022
 ```
 

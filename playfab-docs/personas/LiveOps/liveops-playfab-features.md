@@ -87,7 +87,7 @@ Included here are some suggestions of how customers today are combining PlayFab 
 
   - Review your 1, 7, and 30-day new player retention with the **daily retention report**.
 
-  - Help game designers tune and tweak the game to make it more fun by digging deeply into player behavior using PlayFab’s **data warehouse**. Analyze where players are dropping out and test theories for why.
+  - Help game designers tune and tweak the game to make it more fun by digging deeply into player behavior using PlayFab Insights. Analyze where players are dropping out and test theories for why.
 
   - Build game mechanics like “daily rewards” using a combination of PlayFab’s **CloudScript** (server-hosted game logic) and **player data** stored on the server - where it can’t be tampered with by players intent on cheating.
 

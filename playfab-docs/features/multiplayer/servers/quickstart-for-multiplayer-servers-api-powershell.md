@@ -65,12 +65,12 @@ Now that the asset is uploaded, we can create a build.
 
 ```powershell  
 $VMSelection = [PlayFab.MultiplayerModels.AzureVMSize]::Standard_D2_v2
- 
+
 $Ports = New-object PlayFab.MultiplayerModels.Port
 $Ports.Name = "game_port"
 $Ports.Num = 3600
 $Ports.Protocol = [PlayFab.MultiplayerModels.ProtocolType]::TCP
- 
+
 New-PFMultiplayerBuild -BuildName "PowerShellTest" -AssetFileName "winrunnerSample.zip" -AssetMountPath "C:\Assets\" -StartMultiplayerServerCommand "C:\Assets\WindowsRunnerCSharp.exe" -MappedPorts $Ports -VMSize $VMSelection
 ```
 

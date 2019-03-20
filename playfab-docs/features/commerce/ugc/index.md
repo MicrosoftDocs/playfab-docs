@@ -6,7 +6,6 @@ ms.author: thomg
 ms.date: 01/17/2019
 ms.topic: article
 ms.prod: playfab
-ROBOTS: NOINDEX,NOFOLLOW
 keywords: playfab, commerce, monetization, ugc
 ms.localizationpriority: medium
 ---
