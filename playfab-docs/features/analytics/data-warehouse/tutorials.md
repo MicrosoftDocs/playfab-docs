@@ -6,12 +6,11 @@ ms.author: CJ.Williams
 ms.date: 01/17/2019
 ms.topic: article
 ms.prod: playfab
-ROBOTS: NOINDEX,NOFOLLOW
-keywords: playfab. analytics, data warehouse
+keywords: playfab, analytics, insights
 ms.localizationpriority: medium
 ---
 
-# Data Warehouse Tutorials
+# PlayFab Insights tutorials
 
 The following tutorial shows you how to work with PlayFab Insights:
 

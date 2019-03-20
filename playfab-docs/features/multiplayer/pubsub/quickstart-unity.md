@@ -6,7 +6,6 @@ ms.author: mawillia
 ms.date: 12/21/2018
 ms.topic: article
 ms.prod: playfab
-ROBOTS: NOINDEX,NOFOLLOW
 keywords: playfab, multiplayer, pubsub, Unity
 ms.localizationpriority: medium
 ---
