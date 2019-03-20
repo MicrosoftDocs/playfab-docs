@@ -6,7 +6,7 @@ ms.author: CJ.Williams
 ms.date: 01/17/2019
 ms.topic: article
 ms.prod: playfab
-keywords: playfab. insights,analytics, insights, permissions, tables, administration
+keywords: playfab, insights, analytics, permissions, tables, administration
 ms.localizationpriority: medium
 ---
 
