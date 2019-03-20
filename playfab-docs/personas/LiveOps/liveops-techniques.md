@@ -67,10 +67,10 @@ For Coldfire’s Cem Aslan, community is a strategic investment, with Discord th
 
 Having an engagement strategy is essential for LiveOps games. Some companies, like Riot, are famous for only measuring engagement, and consider it their most important KPI. Some key things to consider when thinking of how you will engage your community are:
 
-- Channels
-- Moderation
-- Fan Celebrity
-- Measurement
+- **Channels**
+- **Moderation**
+- **Fan Celebrity**
+- **Measurement**
 
 ### Support
 
@@ -118,7 +118,9 @@ Measuring and analyzing your game’s performance is critical for improving that
 
 - **Content Logs**. These are specific logs that are unique to the content of your game that measure player activities or events. These can be used to gauge content popularity, stability, or engagement depending on the specific content being tracked.
 
-All of these metrics can be used to gain insights into your game, track the impact of changes, or gauge general health. Most analytics solutions provide at-a-glance reporting for these key KPIs, but for in-depth analysis, you’ll likely want the ability to run custom queries across your full data set as well. This requires the ability to store and access your raw game data through a data warehouse. You’ll also want to slice these KPIs into different player cohorts or time frames depending on what you’re trying to learn. Player segmentation is a powerful way to get more insight from your data, we’ll dive into using segmentation in the next section.
+All of these metrics can be used to gain insights into your game, track the impact of changes, or gauge general health. Most analytics solutions provide at-a-glance reporting for these key KPIs, but for in-depth analysis, you’ll likely want the ability to run custom queries across your full data set as well.
+
+This requires the ability to store and access your raw game data through a data warehouse. You’ll also want to slice these KPIs into different player cohorts or time frames depending on what you’re trying to learn. Player segmentation is a powerful way to get more insight from your data, we’ll dive into using segmentation in the next section.
 
 The speed of data is also an important component of LiveOps analytics. Somethings only need to be reviewed occasionally but others benefit greatly from being real-time. Waiting 24 hours or more to learn how players react to a change or to discover issues like fraud can be a crippling blow to your game.
 
@@ -168,6 +170,7 @@ This will help you design and test hypotheses - for example, perhaps players are
 Not all players are created equal, and one important tactic for making your game successful is segmenting your players and finding ways to stimulate each segment to behave in a way that benefits your game. Many parts of a game team use segmentation to make data more useful.
 
 - Marketers need the ability to create **custom segments** and then message to those segments differently to optimize messaging an avoid annoying players with irrelevant messages. They also need to track players via acquisition segments to evaluate whether certain channels are performing well enough.
+
 - Designers need to be able to segment players based on their in-game behavior to better understand player needs and develop the right content. They also need to validate their experiments and A/B tests to see if they are achieving their goals.
 - Monetization teams need segments to understand spending patterns, identify degenerate or fraudulent behavior, and to make better revenue predictions.
 
@@ -179,10 +182,10 @@ Then, as you run experiments and test your ideas, you can track how players in y
 
 At a minimum, games should think about the basic "funnel" in their game. For example, you can define some simple segments as follows:
 
-- "new players" - anyone up to level 10
-- "non-spenders" - over level 10, LTV = 0
-- "spenders" - where LTV > 0 but < $100
-- "whales" - where LTV > $100
+- **New Players** - anyone up to level 10
+- **Non-Spenders** - over level 10, LTV = 0
+- **Spenders** - where LTV > 0 but < $100
+- **Whales** - where LTV > $100
 
 Once you do this, it’s easy to track your progress getting players to move up the value chain from one segment to the next through various tactics you try out. Other common player segments can include your early adopters (players who participated in your beta, perhaps), by platform (e.g., console versus mobile), by country (especially if you think you need to tune your game differently in different countries).
 
@@ -239,7 +242,11 @@ In fact, players may get upset if they feel like *one* group in an experiment is
 
 It’s possible to treat every change you make to your game as a kind of experiment if you are thoughtful about the approach. If you are constantly monitoring user feedback on channels like **Discord**, **Facebook**, and email, you can use the feedback from these channels - carefully! - to gauge player reaction to changes you make. This approach is less scientific, and has the risk of giving your most vocal players too much influence, but can be a good way to go, particularly early on in your game’s lifecycle (i.e. soft or limited launch) when you have little by way of player data and few resources. You’ll want to augment this stream of data with careful analysis of your player behavior, which you should be tracking closely in your analytics toolset. What happens to your key engagement and retention stats after a change? How does this vary by segment, for example players who make a purchase vs. those who do not?
 
-Another way to gather player feedback is with in-game polls and micro surveys. These are especially helpful to evaluate qualitative factors that are not easily measured with analytics. The best time to pop up a poll question is between levels, or at the end of a game. Avoid asking more than one question at a time, though - more than a few seconds and you may interrupt the player’s flow. These sorts of surveys are really valuable when run in many times as changes are made to your game. Often the results of a specific survey questions such as “Are you enjoying the game?” may not mean much but seeing the trend of sentiment over time on that same question can give you clear insights into the mood of your community.
+You’ll want to augment this stream of data with careful analysis of your player behavior, which you should be tracking closely in your analytics toolset. What happens to your key engagement and retention stats after a change? How does this vary by segment, for example players who make a purchase vs. those who do not?
+
+Another way to gather player feedback is with in-game polls and micro surveys. These are especially helpful to evaluate qualitative factors that are not easily measured with analytics. The best time to pop up a poll question is between levels, or at the end of a game. Avoid asking more than one question at a time, though - more than a few seconds and you may interrupt the player’s flow.
+
+These sorts of surveys are really valuable when run in many times as changes are made to your game. Often the results of a specific survey questions such as “Are you enjoying the game?” may not mean much but seeing the trend of sentiment over time on that same question can give you clear insights into the mood of your community.
 
 ### Testing best practices
 
@@ -285,7 +292,7 @@ Unfortunately, there’s no such thing as a dry run in live games. Determining i
 
 When designed correctly, soft launches should give you nearly as much insight into your game play and operational performance as a full launch, but at a small fraction of the risk. Soft launches are a fantastic way to see if your game is connecting with its intended audience, track if players are behaving as you’d expect them to, and tweak monetization - without squandering the momentum you can get from a new launch.
 
-During your soft launch phase, make sure to put your game through its paces. Confirm your operations are running smoothly: get your LiveOps team lined up and have them start using their tools; put your CS team to work handling support issues - and then keep an eye on how both teams are doing. Did everything work as planned? How did customers react? Did your reps break anything? If you experienced any surprises, consider how you might want to create guard rails that will prevent those from happening again when the consequences are greater. Server logic provides a quick, yet scalable, means of handling unexpected or changing scenarios. If your back-end doesn’t already support this, you can still augment your existing structure with a back-end-as-a-service product such as PlayFab.
+During your soft launch phase, make sure to put your game through its paces. Confirm your operations are running smoothly: get your LiveOps team lined up and have them start using their tools; put your CS team to work handling support issues - and then keep an eye on how both teams are doing. Did everything work as planned? How did customers react? Did your reps break anything?
 
 *“What we have done [during soft launch] is via game analytics, monitoring how long people play and how often, how many brutes are killed, etc. Also watching the YouTube videos that people make to understand their interactions with the game. A few years ago you didn’t really have that, it’s a big help - you can literally watch someone go through their first play experience. If they pick it up, whether they’re struggling or not. It’s really valuable.”*  
 -- Andy Wiltshire, Director, Bulletproof Arcade
@@ -426,7 +433,7 @@ Companies like Kolibri Games understand the dynamics of limited-time events, and
 
 ## Case study: co-branded car launch event
 
-*"When a new Italian car, the Pagani Huayra Roadster, was introduced at the Geneva Motor Show, Eden Games released the same car exclusively at the same time in our mobile game, **Gear.Club**. Three days earlier, we did a **Facebook** live stream, with **YouTube** influencers testing the game and the riding in the car themselves.*
+*"When a new Italian car, the Pagani Huayra Roadster, was introduced at the Geneva Motor Show, Eden Games released the same car exclusively at the same time in our mobile game, Gear.Club. Three days earlier, we did a Facebook live stream, with YouTube influencers testing the game and the riding in the car themselves.*
 
 *We had the idea of a big launch event, a social moment that people will share. We came up with a concept to take a fast car and a driver and put YouTube influencers in the passenger seat while playing our game. And after a long search, we found a car manufacturer to do the event together.*
 
@@ -522,7 +529,9 @@ Microtransactions, sometimes referred to as in-app purchases, are a common form 
 
 Successful microtransaction strategies are all about player value. Since you need players to make many, small purchases you must offer items that give them good value and avoid purchasing regret. But how do we know what is valuable to players? A good place to start is to look at what motivates players in your game and sell things that satisfy those motivation needs.
 
-For example, collectable card games offer a lot of autonomy satisfaction as acquiring more cards give the player more combat choices. Selling card packs can increase that autonomy satisfaction. Complimenting core gameplay needs satisfaction can also be successful, if that same collectable card game doesn’t offer much in the way of social connection, microtransactions could fill in that need with things like custom backgrounds or avatars.
+For example, collectable card games offer a lot of autonomy satisfaction as acquiring more cards give the player more combat choices. Selling card packs can increase that autonomy satisfaction.
+
+Complimenting/satisfying core gameplay needs can also be successful, if that same collectable card game doesn’t offer much in the way of social connection, microtransactions could fill in that need with things like custom backgrounds or avatars.
 
 There are some pitfalls to avoid too. Some game communities might be sensitive to the idea of money being used to gain mastery in contexts where mastery is seen as being earned. And using microtransactions to satisfy the same motivations as your progression systems can make balancing the two difficult. Every game’s community will be different so make extensive use of experimentation and A/B testing to see what your community responds to.
 
@@ -538,13 +547,13 @@ Microtransactions come in many types, and a successful microtransaction strategy
 
 - **VIP programs**. Usually subscription-based programs that give players access to perks and enhancements for an on-going fee. A good way to combat the inconvenience of consumables is to bundle them up into a VIP program that the player only needs to set up once. In fact, good VIP program design revolves around convenience and investment. VIP subscribers should get access to all your games convenience enhancements and should see a tangible increase in the value of their investment in your game. Fortnite’s battle pass is a great example of a good VIP program where players get more rewards for investing there time in the game.
 
-- **Content access**. While most commonly used by premium games in the form of DLC (downloadable content), access to content can be a solid microtransaction offering for free to play games as well. The key to managing content access is to ensure that it does not split your player base isolating those with access from those without. Guild Wars 2 (a PC MMORPG) uses an interesting content access strategy with their Living World content. New episodes include story content and maps and are free to anyone player that logs in within 2 months of an episode’s release, but after that, access to the episode must be paid for. This ensures that active players all have access to the content while still allowing returning players a chance to catch up.
+- **Content access**. While most commonly used by premium games in the form of DLC (downloadable content), access to content can be a solid microtransaction offering for free to play games as well. The key to managing content access is to ensure that it does not split your player base isolating those with access from those without. **Guild Wars 2** (a PC MMORPG) uses an interesting content access strategy with their Living World content. New episodes include story content and maps and are free to anyone player that logs in within 2 months of an episode’s release, but after that, access to the episode must be paid for. This ensures that active players all have access to the content while still allowing returning players a chance to catch up.
 
 - **Random boxes**. Any item that players purchase without knowing exactly what they will receive is a random box or loot box. Random boxes have a long history in loot based RPGs and they can provide great value to some players but they are also incredibly easy to design in such a way that their value is murky, leading to confusion and even resentment. Once a player opens a random box and feels ripped off they are much less likely to buy another one. The key to designing good random boxes is to understand their value and make that clear to your players. Also, recognize that not all players like getting things randomly. Forcing players that dislike random boxes to use them to get what they want is not a good strategy for long term engagement.
 
 ### Store management
 
-A successful microtransaction strategy requires active store management to keep players engaged and making repeat purchases. It is essential that your pipeline allow for frequent updates to your in-game store, ideally without requiring client updates. This will allow your team keep the store fresh and to monitor store data and react without disrupting the rest of your game’s live development. The key elements of in-game store management are:
+A successful microtransaction strategy requires active store management to keep players engaged and making repeat purchases. It is essential that your pipeline allow for frequent updates to your in-game store, ideally without requiring client updates. This will allow your team keep the store fresh and to monitor store data and react without disrupting the rest of your game’s live development.
 
 - **Store presentation and layout**. How your store is presented to players will have a major impact on your sales. Keep things simple! Make items easy to identify and make sure that players know exactly what they are buying from the item name alone. And keep it dynamic, surface new items and offers on the front page ensuring the player always sees the most relevant info first.
 
