@@ -21,7 +21,7 @@ This tutorial covers writing your **CloudScript** functions. Please see the [Clo
 
 Prerequisites for this tutorial:
 
-- [Unity environment set up with the PlayFab Unity SDK](../../../sdks/unity3d/quickstart.md)
+- [**Unity** environment set up with the PlayFab **Unity SDK**](../../../sdks/unity3d/quickstart.md)
   - The title ID is set in the **PlayFabSharedSettings** object.
   - The project can successfully log in a user.
 
@@ -72,9 +72,7 @@ See **FunctionParameter** in the next section.
 
 ## Executing CloudScript functions from a Unity game client
 
-Calling a **CloudScript** function from within a client is straightforward. You first have to create an **ExecuteCloudScriptRequest**, set the **ActionId** property to the name of the **CloudScript** function you wish to execute (in this case it would be **helloWorld**).
-
-Then send the object to PlayFab via our **API**.
+Calling a **CloudScript** function from within a client is straightforward. You first have to create an **ExecuteCloudScriptRequest**, and set the **ActionId** property to the name of the **CloudScript** function you wish to execute (in this case it would be **helloWorld**),then send the object to PlayFab via our **API**.
 
 > [!NOTE]
 > You can only call **CloudScript** methods attached to the handlers **JavaScript** object.
@@ -140,7 +138,7 @@ private static void OnErrorShared(PlayFabError error)
 | **log**                  | Creates log statements and adds them to the response. Logs have three levels: **log.info()**, **log.debug()**, and **log.error()**. All three levels take a message string, along with an optional object containing extra data to include with the log. e.g. **log.info('hello!', { time: new Date() });**   |
 | **currentPlayerId**      | PlayFab ID of the player who triggered the **CloudScript** call.                                       |
 | **handlers**             | Global object which contains all **CloudScript** functions for your title. Functions can be added or called through this object, e.g. **handlers.pop = function() {};, handlers.pop();**.                                                                               |
-| **script**               | Global object which contains Revision and **titleId**. Revision represents the **Revision Number** for the currently executing **CloudScript**, and **titleId** represents the **titleId** for the current title.                                                             |
+| **script**               | Global object which contains **Revision** and **titleId**. **Revision** represents the **Revision Number** for the currently executing **CloudScript**, and **titleId** represents the ID for the current title.                                                             |
 
 In addition, all handler functions are passed two parameters, detailed below.
 
@@ -157,7 +155,7 @@ Full details about the response to **ExecuteCloudScript** can be found in the [E
 
 In the previous section, we described how to populate the **request.FunctionParameter**, and view that info in the **args** parameter. The [CloudScript quickstart](quickstart.md) demonstrates how to upload new **CloudScript**.
 
- Putting both together, we can provide another example of how to pass arguments from client to **CloudScript**. Take the previous example, modify the **CloudScript** code and your client code as shown below.
+ Putting both together, we can provide another example of how to pass arguments from client to **CloudScript**. Take the previous example, and modify the **CloudScript** code and your client code as shown below.
 
 ```javascript
 handlers.helloWorld = function (args) {
@@ -283,7 +281,7 @@ The page will look like the example provided below.
 
 ### Logging
 
-One of the most important tools for debugging code is *logging*. Our **CloudScript** provides a utility for performing th function.
+One of the most important tools for debugging code is *logging*. Our **CloudScript** provides a utility for performing the function.
 
 This takes the form of the *log* object, which can log any message desired using the **Info**, **Debug**, and **Error** methods.
 
