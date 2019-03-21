@@ -17,7 +17,9 @@ At PlayFab, we believe that LiveOps techniques are the single most important rea
 “The single greatest predictor of success and of sustainable competitive advantage in this business is live game operations.”  
 --Owen Mahoney, CEO, Nexon
 
-This guide is for anyone interested in learning more about LiveOps, whether you’re totally new to the concept, already a practitioner but want to brush up on some aspects that you’re less familiar with, or you’re an expert. We hope you find the guide useful and would love to get your feedback—or contributions—as we refine this guide over time to highlight evolving techniques. Feel free to drop us a line anytime at PlayFabLiveOps@microsoft.com. We’d love to hear from you.
+This guide is for anyone interested in learning more about LiveOps, whether you’re totally new to the concept, already a practitioner but want to brush up on some aspects that you’re less familiar with, or you’re an expert.
+
+We hope you find the guide useful and would love to get your feedback—or contributions—as we refine this guide over time to highlight evolving techniques. Feel free to drop us a line anytime at PlayFabLiveOps@microsoft.com. We’d love to hear from you.
 
 This LiveOps guide has three sections:
 

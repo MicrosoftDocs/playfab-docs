@@ -38,7 +38,7 @@ The purpose of this topic is to explain how to quickly get started with using th
 The PubSub feature does not come with the PlayFab SDK by default and you must acquire it via GitHub from our site.
 
 > [!IMPORTANT]
-> **Private preview only.**  While this feature is in [Private Preview](pubsub-private-preview-notes.md), you must be logged into GitHub for the package to download and install correctly.
+> **Private preview only.**  While this feature is in [Private Preview](pubsub-private-preview-notes.md), you must be logged into **GitHub** for the package to download and install correctly.
 
 ### Install from GitHub
 
@@ -66,16 +66,16 @@ To enable PubSub, perform the following:
 
 Using the PubSub plugin is pretty easy. If you have not looked at our reference for this feature, you should get familiar with it at [PubSub client API](pubsub-reference.md).
 
-1. **Initializing PubSub** - While you can initialize the plugin at any time in your code, we recommend that you initialize in either the `start` or `awake` method. When just getting started it also helps to set `Debugging` to true.
+1. **Initializing PubSub** - While you can initialize the plugin at any time in your code, we recommend that you initialize in either the **start** or **awake** method. When just getting started, it also helps to set **Debugging** to **true**.
 
    ```csharp
    PlayFabSocketsAPI.Debugging = true;
    PlayFabSocketsAPI.Initialize();
    ```
 
-2. **Authenticate** - Before you can use the PubSub feature, you must authenticate your client via PlayFab. For more information about Authenticating, please go to [Platform-Specific Authentication](../../authentication/platform-specific-authentication/index.md) to learn more.
+2. **Authenticate** - Before you can use the PubSub feature, you must authenticate your client via PlayFab. For more information about authenticating, please go to [Platform-Specific Authentication](../../authentication/platform-specific-authentication/index.md) to learn more.
 
-    When you authenticate, you must store your Entity Key for later usage. In addition, this is when you want to start your connection by using the `PlayFabSocketsAPI.Connect()` method.
+    When you authenticate, you must store your entity key for later usage. In addition, this is when you want to start your connection by using the **PlayFabSocketsAPI.Connect()** method.
 
    ```csharp
    private EntityKey _currentEntity;
@@ -117,7 +117,7 @@ Using the PubSub plugin is pretty easy. If you have not looked at our reference 
    }
    ```
 
-4. **Create a topic message** - To create a topic, we must create an Entity Object and a Topic object to pass to the Subscribe method. In this example, we will use the current logged in Player's Entity. You will put this code in the ``OnSocketsConnected()`` method you defined in step 3.
+4. **Create a topic message** - To create a topic, we must create an entity object and a topic object to pass to the **Subscribe** method. In this example, we will use the current logged in player's entity. You will put this code in the **OnSocketsConnected()** method you defined in step 3.
 
    ```csharp
    //First we must transform your EntityKey that you received at login, to the proper Entity Object
@@ -140,13 +140,13 @@ Using the PubSub plugin is pretty easy. If you have not looked at our reference 
    topics.Add(objectChangeTopic);
    ```
 
-5. **Register a Handler** - Register a handler for when your event is received. Add the following after you create your Topic:
+5. **Register a Handler** - Register a handler for when your event is received. Add the following after you create your topic:
 
    ```csharp
    PlayFabSocketsAPI.RegisterHandler(customEventTopic, OnCustomEvent);
    ```
 
-6. **Create a Handler Method** - Be sure to define the method that you registered in the previous step. In this example we are just logging the received JSON payload. You can use `var myMessage = netMsg.ReadMessage<T>` where T is a model you want to de-serialize to make this a strongly typed object.
+6. **Create a Handler Method** - Be sure to define the method that you registered in the previous step. In this example we are just logging the received **JSON** payload. You can use `var myMessage = netMsg.ReadMessage<T>` where T is a model you want to de-serialize to make this a strongly typed object.
 
    ```csharp
    private void OnCustomEvent(PlayFabNetworkMessage netMsg)
@@ -180,13 +180,13 @@ Using the PubSub plugin is pretty easy. If you have not looked at our reference 
 
 ## Example usage
 
-In this example, we will use a custom CloudScript function to increment a statistic, **Score**, and then push a message to the player with the updated player statistics via PubSub.
+In this example, we will use a custom **CloudScript** function to increment a statistic - **Score** - and then push a message to the player with the updated player statistics via PubSub.
 
-1. First we need to create a statistic for Players. This is done under [Leaderboards](../../social/tournaments-leaderboards/index.md). Click on **Leaderboards** and create a new leaderboard with the following settings:
+1. First we need to create a statistic for players. This is done under [Leaderboards](../../social/tournaments-leaderboards/index.md). Select **Leaderboards** and create a new leaderboard with the following settings:
 
    ![Leaderboard Statistic Setup](images/leaderboard-setup-score.png)
 
-2. We need a [CloudScript](../../automation/cloudscript/index.md) function that you can run on a player to increment the statistic for the player and then fire your custom event. You can edit this directly in PlayFab by going to **Automation --> CloudScript**. Add the following handler to your CloudScript:
+2. We need a [CloudScript](../../automation/cloudscript/index.md) function that you can run on a player, to increment the statistic for the player and then fire your custom event. You can edit this directly in PlayFab by going to **Automation --> CloudScript**. Add the handler shown below to your **CloudScript**.
 
    ```javascript
 
@@ -237,13 +237,13 @@ In this example, we will use a custom CloudScript function to increment a statis
 
 Now you have all the pieces to run and test your code.
 
-1. Run your project in unity. You should see the following:
+1. Run your project in **Unity**. You should see the following:
 
    !["Console Output"](images/console.png)
 
 1. Login to [Game Manager](https://developer.playfab.com) and navigate to your player that just logged int.
 
-1. Run the CloudScript method on the player from the CloudScript Tab.
+1. Run the **CloudScript** method on the player from the **CloudScript** Tab.
 
    !["Run CloudScript](images/run-cloudscript-function.png)
 

@@ -17,7 +17,7 @@ Use PlayStream Rules to react to PlayStream Events in real time. A Rule consists
 For example, if you want to send a reward to your players and send a them a notification when they have more than 10,000 XP you could:
 
 1. Define a [Segment](../../analytics/segmentation/index.md) for your users called “High XP Players” and set the criteria as XP >= 10,000.
-2. Create a Rule that is triggered by the PlayStream event of those players moving into the High XP Players segment.
+2. Create a rule that is triggered by the PlayStream event of those players moving into the High XP Players segment.
 3. Set two actions for that rule:
    1. Grant virtual currency to the player in the segment.
    2. Send a push notification to congratulate the player and let them know what they've received.

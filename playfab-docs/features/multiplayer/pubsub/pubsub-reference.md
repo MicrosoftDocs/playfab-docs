@@ -23,8 +23,8 @@ This topic explains the technical design behind the Persistent Sockets API in a 
 
 ## Dependencies
 
-- SignalR - The underlying technology in which messages are sent to the game client and referred to as a PbuSub service (aka: a Relay Server).
-- (A JSON Serializer) – `PluginManager<ISerializePlugin>` - Any serialization or de-serialization uses the PlayFab SDK's serialization.
+- **SignalR** - The underlying technology in which messages are sent to the game client and referred to as a PubSub service (aka: a Relay Server).
+- (A **JSON** Serializer) – `PluginManager<ISerializePlugin>` - Any serialization or de-serialization uses the PlayFab **SDK** serialization.
 
 ## Design
 

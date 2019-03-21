@@ -74,6 +74,7 @@ There are three **Google** websites that you must use and synchronize. In **Goog
           "data": { "ARN" : "arn:*******/GCM/your_game_name" }
       }
       ```
+
 - Once set up properly (using either method), you should see this in the **Game Manager UI** **Settings (for your title) > Push Notifications > Android**.
 
   ![PlayFab Settings - Push Notifications - Android](../media/tutorials/playfab-settings-push-notification-android.png)

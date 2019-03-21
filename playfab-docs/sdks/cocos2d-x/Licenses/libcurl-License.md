@@ -69,7 +69,7 @@ addressed when the Modified BSD license was created, which does not have the ann
 
    (May be used for GSS support) MIT licensed, that shouldn't collide with any other parts.
 
-Heimdal https://www.h5l.org
+[Heimdal](https://heimdalsecurity.com)
 
    (May be used for GSS support) Heimdal is Original BSD licensed with the announcement clause.
 

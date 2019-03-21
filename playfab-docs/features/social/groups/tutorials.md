@@ -1,7 +1,7 @@
 ---
 title: Groups, guilds and clans Tutorials
 author: v-thopra
-description: Overview page for tutorials about how to use Friends and Groups.
+description: Overview page for tutorials about how to use Groups functionality for your games and to build Guilds and Clans within your game.
 ms.author: v-thopra
 ms.date: 11/19/2018
 ms.topic: article
