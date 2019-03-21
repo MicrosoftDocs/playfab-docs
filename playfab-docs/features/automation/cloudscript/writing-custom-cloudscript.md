@@ -272,7 +272,7 @@ The page will look like the example provided below.
    - Save the **Action**.
    - Then trigger an event.
    - In the **PlayStream Debugger**, a new event that corresponds to the **CloudScript** execution should be present which contains the appropriate information.
-   - For more information on checking a **PlayStream** event in the debugger, see the optional [Debugging **CloudScript** section](#Advanced: Debugging **CloudScript**).
+   - For more information on checking a **PlayStream** event in the debugger, see the optional [Debugging CloudScript section](#Advanced: Debugging **CloudScript**).
 
    > [!NOTE]
    > Event actions can only use the live revision when calling **CloudScript** functions. If you cannot find the **helloWorld** function in the drop-down, this is the most likely reason.

@@ -579,9 +579,9 @@ Offering a lower-priced bundle doesn’t increase purchasers, because only highl
 
 **Value proposition**. In a 2017 EEDAR survey, 78% of gamers said that good value was the primary decision maker for in-game purchases. Making a valuable offer is essential to getting a first-time purchase but often the less time a player has spent in your game the less valuable any in-game purchases will be to them.
 
-And rushing players into their first purchase could negatively impact their life time value as spenders, if they get burnt out and leave your game. Look to in-game data to better understand when players really connect to your game when the best time is to present them with their first offer. Experiment with different timing and offers until you find one that works for your players, and be aware that it may not be one size fits all. Segmentation can help you make offers that feel really valuable to players because they are tailored to their play style.
+Notes Draganov of flaregames, “well planned and executed starter bundles have been known to improve first-time conversion by 80-200%.” Getting it right is an optimization problem as well. Per Draganov, “even miniscule changes (e.g. change of main art or slightly bigger discount / value added to the offer) in such offers can bring significant uplifts, so AB-testing such offers is key.” With IAP, “the goal is to offer players what they need and when they need it. This requires design of features to be done in a specific way to make the needs and provided solutions obvious and straightforward...everything takes iteration, so analyzing how well a promotion converts new or reconverts old users is key to improving your operations' effectiveness over time.”
 
-Notes Draganov of flaregames, *“well planned and executed starter bundles have been known to improve first-time conversion by 80-200%.”*
+Also, remember to account for spending potential when designing first-time purchasing experiences. Players will have different levels of spending they are comfortable with or able to afford. It can easy to get caught up in only targeting those that can spend the most but this leaves large portions of your player base under served. As Ken Go, Founder of Deca Games, notes. “Many developers think that squeezing more money out of your top spenders is the best way to maintain a game longer. In the very short term this will work, but if you are selling content that affects competition then you will increase churn and shorten the lifespan of the game by creating a large power gap between spender segments. Invest in-game designs that scale without large inflation in power.” Instead, Go recommends investing “in rubber-banded designs that pit equally powered players against each other instead of having the strong only prey on the weak. Having a broader spending base that is paying less is much more sustainable than focusing only on ‘whales.’”
 
 Getting it right is an optimization problem as well.
 
@@ -792,8 +792,7 @@ Guilds boost engagement, by providing social incentives on guild members to play
 
 ## Localization
 
-You never know where your game will find its audience, so it’s smart to be prepared to localize your game. Take it from Kolibri Games’ Oliver Löffler: *“We support more than 20 languages. In the beginning we didn’t localize, but then a lot of players messaged us that we should translate and were very happy that we did.”*
-
+You never know where your game will find its audience, so it’s smart to be prepared to localize your game. Take it from Kolibri Games’ Oliver Löffler: *“We support more than 20 languages. In the beginning we didn’t localize, but then a lot of players messaged us that we should translate and were very happy that we did.”
 Localization will do more than make your players happy - it also encourages them to spend. Some estimates are that up to 50% or more of online users will only buy when presented offers in their native language. Localizing to English, Chinese, Spanish, Arabic, Portuguese, Indonesian, Japanese, Russian, French and German gets you up to 80% of the online population, vs. just 25% for native English speakers.
 
 Localizing in a live game is especially challenging, because the content is continuously changing. This is especially true for your in-game events. It’s one thing when the only thing you need to localize is your game UI and tutorial. You can localize that once, using an outsourced vendor, and not worry about it again. But when you are running continuous A/B tests, or launching new events every week, you will have a continuous stream of content that requires localization.
@@ -822,9 +821,7 @@ This calls for storing as much of your in-game text on the server as possible, w
 
 - Listen to your community - polling is a great technique.
 
-- Make sure all player communications can be localized.
-
-- not just in-game text, but also push notifications, emails, and the like.
+- Make sure all player communications can be localized- not just in-game text, but also push notifications, emails, and the like.
 
 - When localizing your game, don’t forget that your game also needs to fit into the regional culture, so research your launch regions to avoid finding yourself in an unfortunate situation. Touch points like the use of alcohol, food, symbols, hand gestures or affection displays are all little things that have the potential to offend.
 
