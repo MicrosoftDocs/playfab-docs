@@ -319,11 +319,11 @@ The PlayFab Party TTS and STT APIs are a highly effective feature for including 
 
 ### Accessibility guidance
 
-- Griffiths, Gareth. [Subtitles: Increasing Game Accessibility, Comprehension](http://www.gamasutra.com/view/feature/132315/subtitles_increasing_game_.php?print=1)   
+- Griffiths, Gareth. [Subtitles: Increasing Game Accessibility, Comprehension](https://www.gamasutra.com/view/feature/132315/subtitles_increasing_game_.php?print=1)   
   *Gamasutra*
 - [Game Accessibility Guidelines](http://gameaccessibilityguidelines.com/)
 A straightforward reference for inclusive game design
-- Straub, Josh. [Game Accessibility: What It Is And Why It Matters](http://www.gameinformer.com/b/features/archive/2012/08/03/game-accessibility-what-it-is-and-why-it-matters.aspx)   
+- Straub, Josh. [Game Accessibility: What It Is And Why It Matters](https://www.gameinformer.com/b/features/archive/2012/08/03/game-accessibility-what-it-is-and-why-it-matters.aspx)   
   *Game Informer* 
 
 ### Inclusive design

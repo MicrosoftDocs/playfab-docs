@@ -64,6 +64,7 @@ The format is shown below.
 
 ```html
 https://{PlayFabTitleId}.playfabapi.com/photon/authenticate
+
 ```
 
 Replace the **Title Id** place holder with your own **Title Id**.

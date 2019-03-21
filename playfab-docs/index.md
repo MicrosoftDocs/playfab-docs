@@ -341,7 +341,7 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>Multiplayer</h3>
-                                                <p><a href='/gaming/playfab/features/multiplayer/servers/quickstart'>Servers</a></p><p><a href='/gaming/playfab/features/multiplayer/matchmaking/quickstart'>Matchmaking</a></p><p><a href='/gaming/playfab/features/multiplayer/photon/quickstart'>Photon</a></p>
+                                                <p><a href='/gaming/playfab/features/multiplayer/servers/quickstart'>Servers</a></p><p><a href='/gaming/playfab/features/multiplayer/matchmaking/quickstart'>Matchmaking</a></p><p><a href='/gaming/playfab/features/multiplayer/networking/quickstart'>Party</a></p><p><a href='/gaming/playfab/features/multiplayer/photon/quickstart'>Photon</a></p>
                                             </div>
                                         </div>
                                     </div>

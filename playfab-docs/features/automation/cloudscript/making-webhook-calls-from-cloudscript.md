@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Making Webhook calls from CloudScript
 
-One of the less well-known features of PlayFab’s **CloudScript** is the fact that you can make Webhook calls from it to any web **API** endpoint, using standard Representational State Transfer (REST) calls.
+One of the less well-known features of PlayFab’s **CloudScript** is that you can make Webhook calls from it to any web **API** endpoint, using standard Representational State Transfer (REST) calls.
 
 This allows titles to make calls to basic informational services, but it *also* enables more complex scenarios (such as using **OAuth**), to secure a communication to an endpoint you own.
 

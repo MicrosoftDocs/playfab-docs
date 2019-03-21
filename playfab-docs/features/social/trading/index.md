@@ -33,7 +33,7 @@ Trading requires familiarity with both Catalogs and Inventory Items. Players mus
 
 ## APIs
 
-Trading flow is handled by a handful of **APIs**:
+Trading flow is handled by a handful of APIs:
 
 [OpenTrade](xref:titleid.playfabapi.com.client.trading.opentrade)  
 Opens a new outstanding trade. This can between two specific players (PlayfabIDs) or with one player opening a trade open to anyone. Note that any one given item instance may only be in one open trade at a time.
@@ -45,7 +45,7 @@ Allows a client to evaluate a given trade by getting its current status.
 Accepts an open trade. If the call is successful, the offered and accepted items will be swapped between the two players' inventories.
 
 [CancelTrade](xref:titleid.playfabapi.com.client.trading.canceltrade)  
-Cancels an open trade. Note that only the player who created the trade can cancel it via this **API** call, to prevent grief.
+Cancels an open trade. Note that only the player who created the trade can cancel it via this API call, to prevent grief.
 
 [GetPlayerTrades](xref:titleid.playfabapi.com.client.trading.getplayertrades)  
 **GetPlayerTrades** will return all trades a player has either opened or accepted, optionally filtered by trade status.

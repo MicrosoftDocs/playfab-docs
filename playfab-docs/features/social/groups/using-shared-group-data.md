@@ -14,10 +14,6 @@ ms.localizationpriority: medium
 
 **Shared Group Data** is a simple way for players to share some information with a tightly constrained list of other players.
 
-The only data-structures owned by **Shared Group Data** is a list of players and a Key/Value pair mapping primarily used to store arbitrary strings (usually **JSON** objects).
-
-Essentially, it's the same as player data, only with no associated player by default.
-
 > [!NOTE]
 > **Shared Group Data** was originally designed to be driven by server-authoritative for most cases, and the previous advice was to *not* add players directly to the **Shared Group Data**, as that gave them read/write permissions (allowing for cheating). However, our new [API Access Policy](../../config/gamemanager/api-access-policy.md) allows a much greater variance in functionality and security over the original design. More details are available in the advanced section of this document.
 > [!WARNING]

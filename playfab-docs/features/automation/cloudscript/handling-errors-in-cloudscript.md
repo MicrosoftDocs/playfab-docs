@@ -35,7 +35,7 @@ handlers.GenerateError = () => {
 }
 ```
 
-Notice how the error codes were extracted within the catch block? Consult our [Global API Method Error Codes](global-api-method-error-codes.md) tutorial for a complete list of error and their identifying codes. The error code on it's own is sufficient to identify the error.
+Notice how the error codes were extracted within the catch block? Consult our [Global API Method Error Codes](global-api-method-error-codes.md) tutorial for a complete list of error and their identifying codes. The error code on its own is sufficient to identify the error.
 
 ## Logging
 
