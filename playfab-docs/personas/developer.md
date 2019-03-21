@@ -79,7 +79,7 @@ The first step in adding PlayFab to any game is *always* logging in the player. 
 
 The quickstart guides utilize a test **TitleId** - but from *now on*, you should be using your *own*.
 
-Create a **Title** in **Game Manager**, and update your environment with your own **TitleId**.
+Create a **Title** in Game Manager, and update your environment with your own **TitleId**.
 
 ### Obtaining your TitleId
 
@@ -122,7 +122,7 @@ Some of the number of different ways that PlayFab maps onto a game are shown bel
 
 ## PlayFab advanced
 
-Mapping your game on top of PlayFab is a great start.  But there is more power to be harnessed in PlayFab that can help your **LiveOps** team create better engagement, retention and monetization mechanics.
+Mapping your game on top of PlayFab is a great start.  But there is more power to be harnessed in PlayFab that can help your LiveOps team create better engagement, retention and monetization mechanics.
 
 A majority of these features leverage **PlayStream**, an event system that drives real time events.  This enables you to perform actions on player behaviors. Actions can occur in a number of ways - either via segmentation, or direct rules that are applied to specific events.
 

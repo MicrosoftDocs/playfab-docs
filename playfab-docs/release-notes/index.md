@@ -21,12 +21,11 @@ Date: 2018-12-18
 * **SDK Breaking Change** : Updated the folder structure for the XPlatCppSdk repo. If you are using the SDK with project references, an update to vcxproj files path would be required.
 * Adding Xbox support to the XPlatCppSdk. Refer to the [C++ quickstart for Xbox](../sdks/xplatcpp/quickstart-xbox.md).
 * **New API**
- * Added PlayFabEventApi to support Heavyweight (low throughput) and Lightweight (high throughput) custom events.
-
+* Added PlayFabEventApi to support Heavyweight (low throughput) and Lightweight (high throughput) custom events.
 
  **[UnrealMarketplacePlugin](https://github.com/PlayFab/UnrealMarketplacePlugin) Specific Changes:**
 
- * Adding support for Unreal Engine 4.21
+* Adding support for Unreal Engine 4.21
 
 ## 181204
 
@@ -36,7 +35,7 @@ Date: 2018-12-04
 
 * Added support to build external dependencies.
 * Updated nuget composition. This is not a breaking change. Added binaries for the external dependencies to the nuget and updated the properties sheet.
-* Bug fixes for QoSAPI.
+* Bug fixes for **QoSAPI**.
 
 **[CSharpSDK](https://github.com/PlayFab/CSharpSDK) Specific Changes:**
 
@@ -67,9 +66,9 @@ Date: 2018-10-01
 **API Changes:**
 
 * A variety of deprecations have taken effect, and those elements have been removed from SDKs and documentation
-    * Some Admin API methods related to unreleased features have been hidden
-    * server.DeleteUsers deprecation has taken effect
-    * A field deprecation for "ServerHostname", spread across a variety of matchmaking related calls in admin, client, matchmaker, and server APIs has taken effect. "ServerIPV4Address" is the replacement.
+  * Some Admin API methods related to unreleased features have been hidden
+  * server.DeleteUsers deprecation has taken effect
+  * A field deprecation for "ServerHostname", spread across a variety of matchmaking related calls in admin, client, matchmaker, and server APIs has taken effect. "ServerIPV4Address" is the replacement.
 
 **UnitySdk Changes:**
 
@@ -77,8 +76,8 @@ Date: 2018-10-01
 
 **All SDKs:**
 
-* The automated-build branch structure for GitHub repos is changing
-    * The normal customer facing branches, "versioned" and "master" will be unchanged
+* The automated-build branch structure for **GitHub** repos is changing
+  * The normal customer facing branches, "versioned" and "master" will be unchanged
 
 ## 180924
 
@@ -97,10 +96,10 @@ Date: 2018-09-17
 
 * The Server API method **DeleteUsers** is deprecated and replaced with [DeletePlayer](xref:titleid.playfabapi.com.server.accountmanagement.deleteplayer)
 * Unreal Marketplace Plugin:
-    * Updated Marketplace Plugin to include our Blueprint interface
-    * [New Unreal Engine quickstart guide](../sdks/unreal/quickstart.md)
-    * [View in Unreal Marketplace](https://www.unrealengine.com/marketplace/playfab-sdk)
-    * [Upgrade Tutorial](../sdks/unreal/unreal-marketplace-plugin-upgrade-tutorial.md)
+  * Updated Marketplace Plugin to include our Blueprint interface
+  * [New Unreal Engine quickstart guide](../sdks/unreal/quickstart.md)
+  * [View in Unreal Marketplace](https://www.unrealengine.com/marketplace/playfab-sdk)
+  * [Upgrade Tutorial](../sdks/unreal/unreal-marketplace-plugin-upgrade-tutorial.md)
 
 ## 180906  
 
@@ -124,12 +123,12 @@ Date: 2018-08-29
 
 * renaming Entity.TypeString to Entity.Type
 * renaming EmptyResult to [EmptyResponse](xref:titleid.playfabapi.com.groups.groups.removemembers#emptyresponse)
-* Renamed most Authentication function calls like GameServer* to MutliplayerServer*
-* [Admin.GetUserAccountInfo](xref:titleid.playfabapi.com.admin.accountmanagement.getuseraccountinfo) has more detailed platform information
+* Renamed most Authentication function calls like **GameServer** to **MutliplayerServer**.
+* [Admin.GetUserAccountInfo](xref:titleid.playfabapi.com.admin.accountmanagement.getuseraccountinfo) has more detailed platform information.
 
 **Objective C Specific Changes:**
 
-* various bug fixes and refactors
+* Various bug fixes and refactors.
 * Changing AttributeInstallRequest to be api specific
 
 **Unreal Engine Specific Changes:**
@@ -150,7 +149,7 @@ Date: 2018-08-09
 **API Changes:**
 
 * **New Api Methods :**
-  * The following APIs are released and visible in SDKs, but the accompanying documentation isn't ready yet:
+  * The following APIs are released and visible in **SDKs**, but the accompanying documentation isn't ready yet:
     * client.[LoginWithNintendoSwitchDeviceId](xref:titleid.playfabapi.com.client.authentication.loginwithnintendoswitchdeviceid)
     * client.[UnlinkNintendoSwitchDeviceId](xref:titleid.playfabapi.com.client.accountmanagement.unlinknintendoswitchdeviceid)
     * server.[GetPlayFabIDsFromNintendoSwitchDeviceIds](xref:titleid.playfabapi.com.client.accountmanagement.getplayfabidsfromnintendoswitchdeviceids)
@@ -168,13 +167,13 @@ Date: 2018-08-09
 
 **[PythonSdk!](https://github.com/PlayFab/PythonSdk) Specific Changes:**
 
-* Bugfixes and improvements
+* Bug fixes and improvements
 
 **[UnitySdk](https://github.com/PlayFab/UnitySDK) and [CSharpSDK](https://github.com/PlayFab/CSharpSDK) Specific Changes:**
 
-* Added a new structure called Plugin Manager. For now, this is just a foundation for future changes. Some old function signatures have been marked as obsolete, and should be updated. (No breaking changes though)
+* Added a new structure called Plugin Manager. For now, this is just a foundation for future changes. Some old function signatures have been marked as obsolete, and should be updated. (No breaking changes though).
 * Found and resolved multiple issues with HTTPS.Put, which makes Entity Files more accessible on more platforms.
-* Bugfixes in the ScreenTime feature
+* Bug fixes in the ScreenTime feature.
 
 ## 180716  
 
@@ -216,7 +215,7 @@ Date: 2018-07-06
 **API Changes:**
 
 * **New API Method:**
- * entity.[WriteEvents](xref:titleid.playfabapi.com.events.playstreamevents.writeevents)
+  * entity.[WriteEvents](xref:titleid.playfabapi.com.events.playstreamevents.writeevents)
 
 **[UnitySdk](https://github.com/PlayFab/UnitySDK) Specific Changes:**
 
@@ -265,13 +264,13 @@ Date: 2018-05-28
 **API Changes:**
 
 * **New API Methods:**
- * Admin.[GetPlayedTitleList](xref:titleid.playfabapi.com.admin.accountmanagement.getplayedtitlelist)
- * Admin.[DeleteMasterPlayerAccount](xref:titleid.playfabapi.com.admin.accountmanagement.deletemasterplayeraccount)
- * Admin.[ExportMasterPlayerData](xref:titleid.playfabapi.com.admin.accountmanagement.exportmasterplayerdata)
- * This is a part of the new GDPR launch. See our blog [here](https://blog.playfab.com/blog/gdpr)
+  * Admin.[GetPlayedTitleList](xref:titleid.playfabapi.com.admin.accountmanagement.getplayedtitlelist)
+  * Admin.[DeleteMasterPlayerAccount](xref:titleid.playfabapi.com.admin.accountmanagement.deletemasterplayeraccount)
+  * Admin.[ExportMasterPlayerData](xref:titleid.playfabapi.com.admin.accountmanagement.exportmasterplayerdata)
+  * This is a part of the new GDPR launch. See our blog [here](https://blog.playfab.com/blog/gdpr)
 * Updated Error codes in a variety of API methods
 * New PlayStream Event:
- * [player_data_exported](../api-references/events/player-data-exported.md)
+  * [player_data_exported](../api-references/events/player-data-exported.md)
 
 ## 180514  
 
@@ -296,30 +295,30 @@ Date: 2018-05-07
 
 **[UnitySdk](https://github.com/PlayFab/UnitySDK) Specific Changes:**
 
-* HttpWebRequest certificate validation security has been improved
- * No longer default to ignoring all certificates
- * Customers are expected to implement their own certificate validation, or call PlayFab.Internal.PlayFabWebRequest.SkipCertificateValidation()
+* HttpWebRequest certificate validation security has been improved.
+* No longer default to ignoring all certificates.
+* Customers are expected to implement their own certificate validation, or call PlayFab.Internal.PlayFabWebRequest.SkipCertificateValidation().
 
 **WindowsSdk Specific Changes:**
 
-* Fixed hundreds of Level 4 warnings
+* Fixed hundreds of Level 4 warnings.
 * The version number published in PlayFabSettings.cpp has been corrected
- * Most previous versions will have all had the wrong version number embedded in-code, and in call headers
+* Most previous versions will have all had the wrong version number embedded in-code, and in call headers
 
 **[XPlatCppSdk](https://github.com/PlayFab/XPlatCppSdk) has been created:**
 
-* Currently in beta
- * Built using WindowsSdk as a template
- * May become a replacement to WindowsSdk (At least several months away)
- * Upgrade should require almost no breaking changes
-  * Some cpprestsdk strings should be converted to std::string
-  * some web::json::value types have been converted to json::value
- * timestamps are not fully tested in Linux
+* Currently in beta.
+* Built using **WindowsSdk** as a template.
+* May become a replacement to **WindowsSdk** (At least several months away).
+* Upgrade should require almost no breaking changes.
+* Some **cpprestsdk** strings should be converted to std::string
+* some web::json::value types have been converted to json::value
+* timestamps are not fully tested in Linux
 * NuGet package
 * Uses lighter weight dependencies
- * Specifically jsoncpp and curl, rather than cpprestsdk
- * uses std::string everywhere, rather than a mix of 2 string types
-* Adds Linux Support
+* Specifically **jsoncpp** and curl, rather than **cpprestsdk**.
+* Uses std::string everywhere, rather than a mix of 2 string types.
+* Adds Linux Support.
 
 ## 180414  
 
@@ -327,7 +326,7 @@ Date: 2018-04-14
 
 ~~**UnrealCppSdk HotFix:**~~ (UPDATED : This SDK has been deprecated. For the new unreal SDK, please refer to [UnrealMarketplaceSDK](https://www.unrealengine.com/marketplace/playfab-sdk))
 
-* ~~Issues were discovered in the Entity API release for UnrealCppSdk. These are hotfixed, and the Entity API should now work as expected.~~
+* ~~Issues were discovered in the Entity API release for UnrealCppSdk. These are hot fixed, and the Entity API should now work as expected.~~
 
 ## 180409  
 
@@ -369,9 +368,9 @@ Date: 2018-03-16
 **API Changes:**
 
 * Entities! [Blog](https://api.playfab.com/blog/introducing-entities-objects-and-files)! [Quickstart Guide](../features/data/entities/quickstart.md)!
- * All Client login methods return Entity credentials if request.LoginTitlePlayerAccountEntity is set to true
+* All Client login methods return Entity credentials if request.LoginTitlePlayerAccountEntity is set to *true*.
 * Guilds! [Blog](https://api.playfab.com/blog/announcing-groups-for-guilds-friends-clans-and-more)! [Guide](../features/social/groups/index.md)!
-* Error Codes for many API methods updated for accuracy (Dozens!)
+* Error Codes for many API methods updated for accuracy (Dozens!).
 
 **New API Methods:**
 
@@ -382,18 +381,18 @@ Date: 2018-03-16
 **Most SDKs Updated to support Entity APIs:**
 
 * **Full Support:**
- * [UnitySdk](https://github.com/PlayFab/UnitySDK)
- * [JavaScriptSDK](https://github.com/PlayFab/JavaScriptSDK)
- * [ActionScriptSDK](https://github.com/PlayFab/ActionScriptSDK)
- * [CSharpSDK](https://github.com/PlayFab/CSharpSDK)
- * [NodeSDK](https://github.com/PlayFab/NodeSDK)
- * [PostmanCollection](https://github.com/PlayFab/PostmanCollection)
- * WindowsSDK
- * [Cocos2d-xSDK](https://github.com/PlayFab/Cocos2d-xSDK)
- * [JavaSDK](https://github.com/PlayFab/JavaSDK)
- * [LuaSdk](https://github.com/PlayFab/LuaSDK) (Including Corona and Defold)
- * [PhpSdk](https://github.com/PlayFab/PhpSdk)
- * CloudScript
+  * [UnitySdk](https://github.com/PlayFab/UnitySDK)
+  * [JavaScriptSDK](https://github.com/PlayFab/JavaScriptSDK)
+  * [ActionScriptSDK](https://github.com/PlayFab/ActionScriptSDK)
+  * [CSharpSDK](https://github.com/PlayFab/CSharpSDK)
+  * [NodeSDK](https://github.com/PlayFab/NodeSDK)
+  * [PostmanCollection](https://github.com/PlayFab/PostmanCollection)
+  * WindowsSDK
+  * [Cocos2d-xSDK](https://github.com/PlayFab/Cocos2d-xSDK)
+  * [JavaSDK](https://github.com/PlayFab/JavaSDK)
+  * [LuaSdk](https://github.com/PlayFab/LuaSDK) (Including Corona and Defold)
+  * [PhpSdk](https://github.com/PlayFab/PhpSdk)
+  * CloudScript
 * **Will Support Soon:** Unreal Bp and Cpp (Sorry, delayed due to technical difficulties!)
 
 ## 180213  
@@ -469,7 +468,7 @@ Date: 2018-01-03
 
 **[LuaSdk](https://github.com/PlayFab/LuaSDK)/Defold/Corona Specific Updates:**
 
-* Bugfix update
+* Bug fix update.
 * Some platforms were producing a malformed URL which could not be resolved
 
 ## 180102  
@@ -478,7 +477,7 @@ Date: 2018-01-02
 
 **[UnitySdk](https://github.com/PlayFab/UnitySDK) Specific Updates:**
 
-* Bugfix update
-* In order to avoid an issue with response headers, compression should be disabled for all device builds. This update makes that possible
+* Bug fix update.
+* In order to avoid an issue with response headers, compression should be disabled for all device builds. This update makes that possible.
 * Alternately, switching to Web Request will also avoid the issue
-* A new HTTP option has been added for Unity versions > 2017
+* A new HTTP option has been added for Unity versions > 2017.

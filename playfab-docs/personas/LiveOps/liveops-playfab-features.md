@@ -12,13 +12,11 @@ ms.localizationpriority: medium
 
 # LiveOps features
 
-We hope you’ve found our Definitive Guide to LiveOps to be useful. At PlayFab, our passion is to provide the best set of tools and services to support LiveOps for all types of game developers. This appendix lays out how PlayFab can support you in implementing the best practices described in this guide. Furthermore we are continually investing in new features, guided in part by the LiveOps practices detailed in this guide. Games built on PlayFab should expect a continuous stream of new features to help make their LiveOps practices ever more effective.
+We hope you’ve found our definitive guide to LiveOps to be useful. At PlayFab, our passion is to provide the best set of tools and services to support LiveOps for all types of game developers.
 
-## How PlayFab supports LiveOps
+This appendix details how PlayFab can support you in implementing the best practices described in this guide. We are continually investing in new features, guided in part by the LiveOps practices detailed in this guide.
 
-Included here are some suggestions of how customers today are combining PlayFab features together to enable entirely new LiveOps features. One of PlayFab’s most powerful aspects is its configurability, thanks to its scripting functions and powerful API. That means PlayFab is capable of supporting additional features even if they’re not available out-of-the-box. Curious about how this can work for you? Come talk with us - we’d love to show you how, or help you brainstorm how you can use PlayFab to unlock your own innovative ideas.
-
-- **Analytics**: we’ve discussed at length in this guide how data is the lifeblood of live games, and that the ability to respond quickly to issues is a key capability for a LiveOps team. PlayFab provides a robust data infrastructure for live games out of the box, with optional supplements like integrated data warehousing via Snowflake. Key analytics tools supporting LiveOps include:
+Games built on PlayFab should expect a continuous stream of new features, to help make their LiveOps practices ever more effective.
 
   - **Real-time visualization of your data pipeline**, so your LiveOps team can monitor the “heartbeat” of your game and track if anything is outside of normal trends. In-game events stream into PlayFab in real time and can be viewed in the **Game Manager** web-based tool. If they need to drill down, they can click to view full JSON data of any event in the pipeline.
 
@@ -28,7 +26,7 @@ Included here are some suggestions of how customers today are combining PlayFab 
 
   - Support for real-time **player segmentation** - with PlayFab you can define segments based on player behavior and then customize your game experience for each segment, or target each segment with campaigns.
 
-- **Building an effective LiveOps team**: while it’s up to you to staff this team with the right people and create a work environment where they can be successful, PlayFab can help with critical aspects like disseminating information across the team and facilitating team collaboration.
+That means PlayFab is capable of supporting additional features, even if they’re not available out-of-the-box. Curious about how this can work for you? Come talk with us - we’d love to show you how - or help you brainstorm how you can use PlayFab to unlock your own innovative ideas.
 
   - All team members can have direct access to all features of PlayFab from **Game Manager**, a single easy-to-use web portal; fees are based on how many active players you have, not employees, so everyone can collaborate.
 
@@ -36,7 +34,7 @@ Included here are some suggestions of how customers today are combining PlayFab 
 
   - Customer support reps can quickly **search across all player profiles** to locate a particular player record, review their play history, and then **make changes or grant items or currency** to help deal with a service recovery issue. They can also **ban abusive players** with temporary or permanent bans.
 
-- **Tournaments, multiplayer and groups** are some of the most effective tactics for driving engagement and increase the longevity of your game, and PlayFab provides the critical components for incorporating these into your game.
+- **High-level overview and drill-down detailed reports of all major KPIs**, on-demand and via email, so you can keep a close eye on performance and measure the impact of changes on your live game.
 
   - Use **leaderboards** to rank players based on a numerical statistic, then create a social leaderboard by filtering to just friends (from Facebook, Steam, Xbox, etc.). Manually remove any players suspected of cheating.
 
@@ -50,7 +48,7 @@ Included here are some suggestions of how customers today are combining PlayFab 
 
 - Use **groups** to drive engagement through team dynamics. Make **custom player groups** and take actions based on player membership.
 
-- **Updating your content often** is another key pillar of an effective LiveOps strategy, and PlayFab has you covered with a full set of tools to help your team update virtually any part of your game after you launch.
+- **Customer support reps can quickly search across all player profiles** to locate a particular player record, review their play history, and then make changes or grant items or currency to help deal with a service recovery issue. They can also *ban abusive players* with temporary or permanent bans.
 
 - Store your **game configuration** in PlayFab, then remotely tune and adjust your settings anytime you want, without a client update. Settings can be anything from simple key/value pairs (e.g., “XP gain rate: 1.0”) or complex JSON files.
 
@@ -60,7 +58,7 @@ Included here are some suggestions of how customers today are combining PlayFab 
 
 - Stream assets down to your game clients via a **global CDN**. Use our default CDN (with pass-through billing) or configure your own custom CDN to point to PlayFab to retrieve files.
 
-- **Running experiments** is a critical part of honing a game after launch for maximum effectiveness. With PlayFab, you can set up **A/B** tests with multiple buckets and A/B test elements of your game that often drive significant - and easy - wins, including stores, rewarded video-ad offers, and even game behavior.
+- **For sophisticated multiplayer games, build your own custom game server**, then let PlayFab host it for you with **automatic scaling** in data centers around the world to ensure you never run out of room for new players. Use PlayFab’s built-in *matchmaking* algorithm to find the best match between players in real-time, based on logic you configure, or plug in your own matchmaking server.
 
 - **Monetization** is one of the most important elements of your game’s strategy.. Here too PlayFab has powerful tools and services to maximize your upside while protecting you from the many pitfalls.
 
@@ -184,12 +182,13 @@ PlayFab supports your game well beyond your LiveOps needs, so this guide wouldn�
     - Ban abusive players with temporary or permanent bans. Allow other players to report abuse.
 
 - **Data Exchange**. Bring all your game’s data together in one place no matter where it was generated.
+  - Ingest event data from **PlayFab SDK**, **PlayFab** services, and other services you use to acquire, engage, and retain players.
 
   - Ingest event data from PlayFab SDK, PlayFab services, and other services you use to acquire, engage, and retain players.
 
     - Explore and operate on the data to create custom insights and operationalize them.
 
-    - Create custom reports by connecting directly to the data using your favorite reporting tools, including PowerBI, and (coming soon) Grafana and Tableau.
+  - Create custom reports by connecting directly to the data using your favorite reporting tools, including **PowerBI**, and (coming soon) **Grafana** and **Tableau**.
 
     - Continuously export your data to Blob and S3 for ingestion into a pre-existing data warehouse solution.
 

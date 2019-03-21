@@ -3,7 +3,7 @@ title: Matchmaking Tutorials
 author: keithrkline
 description: Tutorials for matchmaking.
 ms.author: multiplayer
-ms.date: 3/15/2019
+ms.date: 03/15/2019
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, multiplayer, matchmaking, tutorials
