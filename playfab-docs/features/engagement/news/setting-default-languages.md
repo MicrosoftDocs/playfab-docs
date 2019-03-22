@@ -21,7 +21,6 @@ To accomplish this, we will be leveraging two new language settings: one is asso
 
 Using these two settings, PlayFab logic will match up localized strings with the players who prefer that language. Players without a language preference will receive strings in your title’s specified default language.
 
-
 Players with a preference for a language that your title doesn’t support will *also* receive strings, based on your title’s default language.
 
 This tutorial walks you through how to set the default language of your title and the preferred language of your players.
@@ -47,7 +46,7 @@ Before setting your player’s preferred language, figure out how you want to co
 
 ### Step 1 – Set the language
 
-￼PlayFab allows you to choose from a specific list of languages to support. You can make a call to **GetLanguageList]()** to see the language codes.
+￼PlayFab allows you to choose from a specific list of languages to support. You can make a call to the **GetLanguageList()** method to see the language codes.
 
 First, we will update a player’s profile to include the language in which they would prefer to get content from your title.
 
@@ -62,7 +61,7 @@ void SetProfileLanguage(string language, int? profileExpectedVersion, EntityKey 
         ExpectedVersion = profileExpectedVersion,
         Entity = entity
     };
-    PlayFabServerAPI.SetProfileLanguage(request, res =>
+    PlayFabProfilesAPI.SetProfileLanguage(request, res =>
     {
         Debug.Log("The language on the entity's profile has been updated.");
     }, FailureCallback);
@@ -87,7 +86,7 @@ Next, you can navigate to the player’s **PlayStream**, and it will show an **E
 
 ![Game Manager - Players - PlayStream - Entity Language Updated event](../media/tutorials/game-manager-players-playstream-entity-language-updated-event.png)
 
-Selecting the info icon on the event should show **JSON** similar the example shown below.
+Selecting the info icon on the event should show JSON similar the example shown below.
 
 ```json
 {
@@ -133,7 +132,7 @@ If you return to the dashboard, you will see a **Title API settings changed** ev
 
 ![PlayStream - Title API Setting Changed](../media/tutorials/playstream-title-api-settings-changed.png)
 
-Selecting the **info icon** on the event should display **JSON** similar to the example provided below.
+Selecting the **info icon** on the event should display JSON similar to the example provided below.
 
 ```json
 {
