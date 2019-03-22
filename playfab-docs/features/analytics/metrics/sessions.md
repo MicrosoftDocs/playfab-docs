@@ -16,16 +16,16 @@ PlayFab supports logging events to calculate focus time and session duration. Yo
 
 ## Supported SDK versions
 
-Session support is currently *only* available in **Unity SDK**. Support for our other **SDKs** will be added in the future.
+Session support is currently *only* available in Unity SDK. Support for our other SDKs will be added in the future.
 
-You'll need to have the **180829** version or newer. This **SDK** first introduces two new events that can be configured to be emitted from the client automatically:
+You'll need to have the **180829** version or newer. This SDK first introduces two new events that can be configured to be emitted from the client automatically:
 
 1. [client_session_start](../../../api-references/events/client-session-start.md)
 2. [client_focus_change](../../../api-references/events/client-focus-change.md)
 
 ## Logging and managing events
 
-To begin collecting these two events, you'll first need to integrate the **Unity SDK** in your client.
+To begin collecting these two events, you'll first need to integrate the Unity SDK in your client.
 
 Instructions on how to do this can be found in the [Unity3D quickstart](../../../sdks/unity3d/quickstart.md).
 
@@ -48,9 +48,9 @@ PlayFabSettings.DisableFocusTimeCollection = true
 
 ## Legacy Instructions
 
-If your game uses an **SDK** between the **180716** and **180809**, it's possible for you to send the focus time events, although it requires additional steps.
+If your game uses an SDK between the **180716** and **180809**, it's possible for you to send the focus time events, although it requires additional steps.
 
-Because these events leverage the **WriteEvents API**, you'll first need to ensure the **Enable Entity API** flag is enabled from the **SDK** settings at the time you update the **SDK**.
+Because these events leverage the WriteEvents API, you'll first need to ensure the **Enable Entity API** flag is enabled from the SDK settings at the time you update the SDK.
 
 ![PlayFab - Settings - Enable Entity API](media/tutorials/playfab-settings-enable-entity-api.png)  
 

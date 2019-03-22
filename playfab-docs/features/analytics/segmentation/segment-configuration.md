@@ -41,7 +41,7 @@ To configure a segment like the example in this tutorial, you will need the foll
 In this example we are going to:
 
 1. Configure a segment using this *defining characteristic*:  all players that come from Canada.
-2. Run a **CloudScript** function **helloWorld** for each player that enters the segment.
+2. Run a CloudScript function **helloWorld** for each player that enters the segment.
 
 The *defining characteristic* of a player can be:
 
@@ -57,20 +57,20 @@ The *defining characteristic* of a player can be:
 
 When a segment is defined, you have a variety of action options to run when a player enters or leaves the segment.
 
-**CloudScript** is by far the most flexible action, granting you full control of the player and segmentation information at the time of segment transition.
+CloudScript is by far the most flexible action, granting you full control of the player and segmentation information at the time of segment transition.
 
-Utilize the second parameter, *Context* in your **CloudScript** handler to identify the player, and segment transition. Afterwards, perform any action you wish on the player, such as granting inventory items, virtual currency, player data, or statistics.
+Utilize the second parameter, *Context* in your CloudScript handler to identify the player, and segment transition. Afterwards, perform any action you wish on the player, such as granting inventory items, virtual currency, player data, or statistics.
 
 In this particular case, segment configuration requires 4 simple steps:
 
 1. Assign an appropriate name for the segment. It's a good idea to use a name that incorporates your *Defining Characteristic* - **Canada Players**
 2. Assign conditions that a player has to meet to enter the segment. In this case we want a *country* filter with the strict value: *Canada*.
-3. Add a **CloudScript** action for the entered segment trigger. Configure the action to run the function you want. In this example, we want **helloWorld**.
+3. Add a CloudScript action for the entered segment trigger. Configure the action to run the function you want. In this example, we want **helloWorld**.
 4. Commit by selecting the **Save Segment** button.
 
-When a segment is defined, you have a variety of action options to run when a player enters or leaves the segment. **CloudScript** is by far the most flexible action, granting you full control of the player and segmentation information at the time of segment transition.
+When a segment is defined, you have a variety of action options to run when a player enters or leaves the segment. CloudScript is by far the most flexible action, granting you full control of the player and segmentation information at the time of segment transition.
 
-Utilize the second parameter, *Context* in your **CloudScript** handler to identify the player, and segment transition. Afterwards, perform any action you wish on the player, such as granting inventory items, virtual currency, player data, or statistics.
+Utilize the second parameter, *Context* in your CloudScript handler to identify the player, and segment transition. Afterwards, perform any action you wish on the player, such as granting inventory items, virtual currency, player data, or statistics.
 
 In this particular case, segment configuration requires 4 simple steps:
 
@@ -92,11 +92,11 @@ This is denoted by the OR/AND operators: filters are combined using the AND oper
 The previous screenshot shows an example of how a segment can be defined. This segment consists of 2 groups. The first group is defined by 2 filters:
 
 - A player must be from Canada.
-- A player must have **Apple** push notifications enabled.
+- A player must have Apple **Push notifications enabled**.
 
-The second group is also for players from Canada, but they must have **Google** push notifications enabled.
+The second group is also for players from Canada, but they must have Google **Push notifications enabled**.
 
-In the end, we have a segment of players from Canada with either **Google** or **Apple** push notifications.
+In the end, we have a segment of players from Canada with either Google or Apple push notifications.
 
 Each filter has a unique configuration and purpose. As of 4/30/2017 the following filters are available:
 
@@ -105,9 +105,9 @@ Each filter has a unique configuration and purpose. As of 4/30/2017 the followin
 - The **First login (timespan) filter** - Allows you to filter based on first login timespan relative to the current datetime. For example, player that have first signed in 20 minutes ago (from now).
 - The **Last login (date) filter** - Allows you to filter based on last login datetime. For example, players that have not signed since 1/1/2017.
 - The **Last login (timespan) filter** - Allows you to filter based on last login timespan relative to the current datetime. For example, players that have not signed in for a week (from now).
-- The **Linked user account to filter** - Allows you to filter based on users' linked accounts. For example, players that have a **Steam** account linked with an email account.
+- The **Linked user account to filter** - Allows you to filter based on users' linked accounts. For example, players that have a Steam account linked with an email account.
 - The **Location (country) Filter** - Allows you to filter based on a player's country. For example, players from Canada.
-- The **Push notifications enabled with filter** - Allows you to filter based on player push settings and capabilities. For example, players that have **Google** push notifications enabled.
+- The **Push notifications enabled with filter** - Allows you to filter based on player push settings and capabilities. For example, players that have Google push notifications enabled.
 - The **Statistics value filter** - Allows you to filter based on your own custom statistic attribute. For example, players that inflicted 20000 damage in total.
 - The **Tag filter** - Allows you to filter based on whether a player has or doesn't have a certain tag. For example, players that have a *cheater* tag.
 - The **Total value to date in US filter** - Allows you to filter based on how much USD currency a player has spent in your game. For example, players that have spent over $30.
@@ -115,7 +115,7 @@ Each filter has a unique configuration and purpose. As of 4/30/2017 the followin
 - The **User origination filter** - Allows you to filter based on the first authentication method that a player used to start playing the game.
 
 > [!NOTE]
-> The trick here is that a player may *start* with authentication based on, say, an **iOS** device ID, but later, the *same* player may have a **GameCenter** account linked. In this case, *user origination* will be the **iOS** device ID. For example, players that first signed in using an **iOS** device ID.
+> The trick here is that a player may *start* with authentication based on, say, an iOS device ID, but later, the *same* player may have a GameCenter account linked. In this case, *user origination* will be the iOS device ID. For example, players that first signed in using an iOS device ID.
 
 - The **Virtual currency balance filter** - Allows you to filter based on a player's custom virtual currency deposit. For example, players that have less than 50 Crystal.
 

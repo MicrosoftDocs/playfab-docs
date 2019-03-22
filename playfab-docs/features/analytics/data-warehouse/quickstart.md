@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 > [!IMPORTANT]
 > This feature is currently in **Private Preview**.  
 >
-> It is provided to give you an early look at an upcoming feature and to allow you to provide feedback while it is still in development.  
+> It is provided to give you an early look at an upcoming feature, and to allow you to provide feedback while it is still in development.  
 >
 > Access to this feature is restricted to select titles. If you are interested in trying it, you can request access by submitting a ticket on [support.playfab.com](https://support.playfab.com/hc/en-us/requests/new).
 
@@ -24,13 +24,17 @@ To enable the offering which entitles you to a dedicated compute and storage clu
 1. Organizational account (i.e. AAD ID)
 1. Microsoft account (i.e. MSA)
 
-You must have one of these account types in order to administer and access the Insights Service's databases. Neither an AAD nor an MSA ID are required for accessing PlayFab Insights' non-dedicated (i.e. shared) cluster. It takes approximately 24-48 hours to completely provision an isolated cluster for customers to preview. After the private preview window is over, the provisioning process will be automated.
+You must have one of these account types in order to administer and access the Insights Service's databases. Neither an AAD nor an MSA ID are required for accessing PlayFab Insights' non-dedicated (i.e. shared) cluster.
+
+It takes approximately 24-48 hours to completely provision an isolated cluster for customers to preview. After the private preview window is over, the provisioning process will be automated.
   
 ## Organizational Account
 
-An organizational account is an account created by an organization’s administrator to enable a member of the organization access to all Microsoft cloud services such as Microsoft Azure, Windows Intune, or Office 365. An Organizational account can take the form of a user’s organizational email address, such as username@orgname.com, when an organization federates or synchronizes its Active Directory accounts with Azure Active Directory.
+An organizational account is an account created by an organization’s administrator to enable a member of the organization access to all Microsoft Cloud services - such as Microsoft Azure, Windows Intune, or Office 365.
 
-If you want to provision theInsight service with an organizational account, you will also need to provide the Azure Active Directory ID associated with your organization. Follow the steps below to capture your directory ID:
+An Organizational account can take the form of a user’s organizational email address, such as username@orgname.com, when an organization federates or synchronizes its Active Directory accounts with Azure Active Directory.
+
+If you want to provision the Insight service with an organizational account, you will also need to provide the Azure Active Directory ID associated with your organization. Follow the steps outlined below to capture your directory ID:
 
 1. Visit the Azure Portal:
 

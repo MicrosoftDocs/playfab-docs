@@ -13,11 +13,11 @@ ms.localizationpriority: medium
 # S3 event archiving
 
 PlayFab allows you to archive the entire event flow using the
- **Amazon S3** bucket. This tutorial shows you step-by-step how to configure event archiving from scratch.
+ Amazon S3 bucket. This tutorial shows you step-by-step how to configure event archiving from scratch.
 
 ## Configuring Amazon S3 bucket
 
-Once you have created an **Amazon** account:
+Once you have created an Amazon account:
 
 - Navigate to **Services (1)**.
 - Select **S3 (2)**.
@@ -30,7 +30,7 @@ Once you have created an **Amazon** account:
 ![Amazon S3 - Create bucket](media/tutorials/amazon-s3-create-bucket.png)  
 To create your new S3 bucket, you must go though a 4-step wizard:
 
-1. You must assign a unique, **DNS**-compliant **Bucket name** for your bucket. Make sure to have that name available somewhere for copying and pasting. We will need it when we configure PlayFab event archiving.
+1. You must assign a unique, DNS-compliant **Bucket name** for your bucket. Make sure to have that name available somewhere for copying and pasting. We will need it when we configure PlayFab event archiving.
 2. When you are done, select the **Next** button.
 
 ![Amazon S3 - Create bucket - enter bucket name](media/tutorials/amazon-s3-create-bucket-enter-bucket-name.png)  
@@ -75,7 +75,7 @@ This is done by means of an access key.
 
 ## Configuring PlayFab event archiving
 
-When your **Amazon S3** bucket is ready, it's time to set up the PlayFab side of things.
+When your Amazon S3 bucket is ready, it's time to set up the PlayFab side of things.
 
 We need to pass the access key data and bucket name to PlayFab to enable event archiving.
 
@@ -91,18 +91,18 @@ The **Update Settings** page will offer you the following settings:
 
 1. The **Amazon S3 bucket name** (use the one you created while configuring the **Amazon S3 Bucket**).
 2. **Prefix** is the *root folder* under which PlayFab will store all the relevant data.
-3. **Access key ID** (use the one you obtained while configuring access to the **Amazon Account**).
-4. **Secret Key** (use the one you obtained while configuring access to the **Amazon** account).
+3. **Access key ID** (use the one you obtained while configuring access to the Amazon account).
+4. **Secret key** (use the one you obtained while configuring access to the Amazon account).
 5. Select the **Save Settings** button when everything is in place.
 
 ![Game Manager - Analytics - Event Archive - Update Settings](media/tutorials/game-manager-analytics-event-archive-update-settings.png)
 
-PlayFab should present you with a nice page indicating that event archiving is enabled.
+PlayFab should present you with a nice page, indicating that event archiving is enabled.
 
 ![Game Manager - Analytics - Event Archiving Enabled](media/tutorials/game-manager-analytics-event-archiving-enabled.png)  
 
-Make sure to post some events and then check your bucket on the **Amazon** portal.
+Make sure to post some events and then check your bucket on the Amazon portal.
 
-After a short period of time, you should see that new compressed **JSON** streams are appearing, nicely broken out by title, event name, year, month and day.
+After a short period of time, you should see that new compressed JSON streams are appearing, nicely broken out by title, event name, year, month and day.
 
 ![Amazon S3 - Event Bucket](media/tutorials/amazon-s3-event-bucket.png)  

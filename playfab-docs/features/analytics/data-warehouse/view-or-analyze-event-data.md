@@ -15,11 +15,11 @@ ms.localizationpriority: medium
 > [!IMPORTANT]
 > This feature is currently in **Private Preview**.  
 >
-> It is provided to give you an early look at an upcoming feature and to allow you to provide feedback while it is still in development.  
+> It is provided to give you an early look at an upcoming feature, and to allow you to provide feedback while it is still in development.  
 >
 > Access to this feature is restricted to select titles. If you are interested in trying it, you can request access by submitting a ticket on [support.playfab.com](https://support.playfab.com/hc/en-us/requests/new).
 
-Creating and editing queries, in addition to working interactively with returned data, can be accomplished with the Azure Data Explorer Web or Desktop Client. Both tools provide powerful client querying capabilities. It's simply a matter of preference between which tool you chose.
+Creating and editing queries - in addition to working interactively with returned data - can be accomplished with the Azure Data Explorer Web or Desktop Client. Both tools provide powerful client querying capabilities. It's simply a matter of preference between which tool you chose.
 
 ## 1. Log into the Data Explorer Web Client
 
@@ -32,11 +32,11 @@ Sign-in with your organizational or Microsoft account.
 ## 2. Connect your PlayFab Insights cluster to Azure Data Explorer
 
 * Return to the **Analytics | Insights** page and capture the name of the cluster assigned to your title.
-* Click the **Add Cluster** button in the Azure Data Explorer.
+* Select the **Add Cluster** button in the Azure Data Explorer.
 
    ![Image of adding a cluster](media/tutorials/dw-tutorial-add-cluster.png)
 
-* Enter the URI in the format `https://`*clustername*`.kusto.windows.net`. For example, if the cluster is named PlayFab34239 then the URI is `https://PlayFab34239.kusto.windows.net`
+* Enter the URI in the format `https://`*clustername*`.kusto.windows.net`. For example, if the cluster is named **PlayFab34239**, then the URI is `https://PlayFab34239.kusto.windows.net`
 
    ![Image of adding a cluster part 2](media/tutorials/dw-tutorial-add-cluster-2.png)
 
@@ -51,39 +51,39 @@ Your Insight service will contain a database with the icon of a database and eve
 
 ## 4. Create a simple search
 
-The quickest way to retrieve some data to work with is a simple query that returns all records in table.
+The quickest way to retrieve some data to work with, is a simple query that returns all records in table.
 
-Enter the following query to return all records of players logged in:
+Enter the query shown below to return all records of players logged in.
 
 ```cmd
 player_logged_in
 ```
 
-Enter the following query to return the top 10 rows of the players logged in:
+Enter the query shown below to return the top 10 rows of the players logged in.
 
 ```cmd
 player_logged_in | limit 10
 ```
 
-Enter the following query to return all player logged in events between now and 3 days ago:
+Enter the query shown below to return all player logged in events between now and 3 days ago.
 
 ```cmd
 player_logged_in | where Timestamp >= ago(3d)
 ```
 
-Enter the following query to return the count of all players logged in, grouped by platform:
+Enter the query shown below to return the count of all players logged in, grouped by platform.
 
 ```cmd
 player_logged_in | summarize count() by Platform
 ```
 
-Enter the following query to return the count of all players logged in, grouped by platform and visualized in a pie chart:
+Enter the query shown below to return the count of all players logged in, grouped by platform and visualized in a pie chart.
 
 ```cmd
 player_logged_in | summarize count() by Platform | render piechart
 ```
 
-## 5. Data Explorer Resources
+## 5. Data Explorer resources
 
 Here are some additional resources to help you take the full advantage of the Data Explorer:
 

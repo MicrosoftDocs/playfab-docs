@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 ## Daily Content Usage report
 
-The **CDN** Usage report contains two graphs displaying content usage over a 24 hour period:
+The CDN Usage report contains two graphs displaying content usage over a 24 hour period:
 
 - The **Data Volume (1)** graph illustrates the distribution of transferred bytes.
 - The **Access Count (2)** graph shows the distribution of content downloads over a specified period of time.
@@ -47,9 +47,9 @@ public void GetContent()
 }
 ```
 
-It is important to understand that the [GetContentDownloadUrl](xref:titleid.playfabapi.com.client.content.getcontentdownloadurl) **API** call, on it's own, does not produce a new entry in the report.
+It is important to understand that the [GetContentDownloadUrl](xref:titleid.playfabapi.com.client.content.getcontentdownloadurl) API call, on it's own, does not produce a new entry in the report.
 
-Instead, it provides you with a **URI** for the content download. You may use any **HTTP** request technique to execute a **GET** request. Once this is done, a new entry will be added and reflected in both reports.
+Instead, it provides you with a URI for the content download. You may use any HTTP request technique to execute a GET request. Once this is done, a new entry will be added and reflected in both reports.
 
 ## How to work with report charts
 
@@ -57,7 +57,7 @@ PlayFab report charts all follow the same model:
 
 - In the top area of the page, you usually get a **Control Panel (1)**. This contains a report name, observed time period, and **Prev/Next** buttons to switch between the time periods.
 
-- The **Chart Panel (2)** area shows the available data as a chart, where the horizontal axis corresponds to the time flow, and the vertical axis corresponds to the number of relevant instances - such as **API** calls, purchases, users, and so on, depending on the report type.
+- The **Chart Panel (2)** area shows the available data as a chart, where the horizontal axis corresponds to the time flow, and the vertical axis corresponds to the number of relevant instances - such as API calls, purchases, users, and so on, depending on the report type.
 
 ![Monthly Overview Report](media/tutorials/monthly-overview-report.png)  
 
