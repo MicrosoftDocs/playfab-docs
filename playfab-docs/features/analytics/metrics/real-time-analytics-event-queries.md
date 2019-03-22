@@ -59,21 +59,21 @@ Let's begin a query:
 
 ![Simplistic Event Query - Straight value](media/tutorials/simplistic-event-query-straight-value.png)  
 
-This occurs because PlayFab analyzed all the events and found that *this particular one* has some property with the value of **tournamentScore_hourly**.
+This occurs because PlayFab analyzed all the events, and found that *this particular one* has some property with the value of **tournamentScore_hourly**.
 
 > [!IMPORTANT]
-> PlayFab supports wildcards and some of the **regex** expressions.
+> PlayFab supports wildcards, and some of the **regex** expressions.
 
 This means that you may search by part of the value. In the example shown below:
 
 - Querying **tournamentScore_** in the field **(1)**.
 - Results in **no events found** in the list **(2)**.
-- Using a wildcard, we adjust the query to **"tournamentScore_" (3)**.
+- Using a wildcard, we adjust the query to **tournamentScore_\* (3)**.
 - This results in displaying *all* events that have a field with the value starting with **tournamentScore_ (4)**.
 
 ![Simplistic Event Query - Wildcard value](media/tutorials/simplistic-event-query-wildcard-value.png)  
 
-Using this technique, you can quickly search for relevant events with no need to build complex queries or to use a query builder.
+Using this technique, you can quickly search for relevant events, without a need to build complex queries or to use a query builder.
 
 ## Complex queries
 
@@ -99,7 +99,7 @@ The `eventData` part is absolutely necessary to point PlayFab to an event object
 We can customize the value descriptor by kicking in some regular expression elements, like wildcards.
 
 > [!NOTE]
-> By convention, *all* of PlayFab player-oriented event names start with **player_ .**
+> By convention, *all* of the PlayFab player-oriented event names start with "**player_**".
 
 ![PlayFab player event names](media/tutorials/playfab-player-event-names.png)  
 
@@ -111,11 +111,11 @@ Another example of a complicated value descriptor is the one for the date proper
 
 `eventData.timestamp:[2017-04-01T00:00:00 TO 2017-04-17T00:00:00]`
 
-Finally, we can combine *several* filter expressions using AND/OR operators and parenthesis for grouping.
+Finally, we can combine *several* filter expressions using AND/OR operators, with parenthesis for grouping.
 
-The query shown below will locate *all* of the events that occurred from **April 1st** to **April 17th**, and have the following event names:
+The query shown below will locate *all* of the events that occurred from **April 1st** to **April 17th**, and have the following event names.
 
 - **player_logged_in**
-- **player_statistic_changed**.
+- **player_statistic_changed**
 
 `eventData.timestamp:[2017-04-01T00:00:00 TO 2017-04-17T00:00:00]  AND ( eventData.eventName:player_logged_in OR eventData.eventName:player_statistic_changed )`

@@ -61,19 +61,19 @@ Use the following steps to ensure you've properly installed the PlayFab Plugin.
 
     ![Install to engine](media/uemk-install-to-engine.png) 
 
-3. Pick your version again.
+3. Confirm your version and click **Install**.
 
     ![Pick version again](media/uemk-version-again.png) 
 
-4. Click the "Launch" button, and run Unreal Engine.
+4. Click the **Launch** button, and run Unreal Engine.
 
 5. Select all the options as seen here:  **New Project** tab, **C++** sub-tab, **No Starter Content**.
 
       ![Create project settings](media/uemk-create-project-settings.png) 
 
-5. Create Project with these options.
+6. Now, click **Create Project** with these options.
 
-6. Enable the PlayFab Plugin.
+7. Enable the PlayFab Plugin.
 
     ![Enable plugin](media/uemk-enable-plugin.png) 
 

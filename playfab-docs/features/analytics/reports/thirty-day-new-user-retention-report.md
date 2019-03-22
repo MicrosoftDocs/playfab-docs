@@ -22,15 +22,15 @@ Cohort size indicates the number of players in a cohort.
 
 ![Thirty-day New User Retention Report Table](media/tutorials/thirty-day-new-user-retention-report-table.png)  
 
-The Thirty Day New User Retention report tracks the percentage of a new user cohort who return to the game on subsequent days.
+The Thirty Day New User Retention report tracks the percentage of a new user Cohort who return to the game on subsequent days.
 
-A cohort of players is defined by grouping newly-registered players on a given day (**Day 0**) and their retention is tracked over a 30-day period. Cohort size indicates the number of players in a cohort.
+A Cohort of players is defined by grouping newly-registered players on a given day (**Day 0**) and their retention is tracked over a 30-day period. Cohort size indicates the number of players in a cohort.
 
 The preceding example report, was generated on **2/5/2018**. On **1/6/2018**, **39,132** new *players created accounts in the example title.
 
 Since **Day 0** is an initiation date for a new cohort, this column always has **100%** retention rate.
 
-Then **33.84%** of those players logged in again the *next day*, **24.64%** in *two days* later, and so on. **10.84%** of the cohort returned on the *30th day*, which corresponds to **2/5/2018**.
+Then **33.84%** of those players logged in again the *next day*, **24.64%** in *two days* later, and so on. **10.84%** of the Cohort returned on the *30th day*, which corresponds to **2/5/2018**.
 
 For additional details, see [Metrics and Terminology](../metrics/metrics-and-terminology.md).
 
@@ -42,7 +42,7 @@ This, however, will produce trivial results, with **100%** retention for each da
 
 Throwing more players into the process and skipping some days will produce more interesting results.
 
-The following **API** calls may be used to log in:
+The following API calls may be used to log in:
 
 - [LoginWithAndroidDeviceID](xref:titleid.playfabapi.com.client.authentication.loginwithandroiddeviceid)
 - [LoginWithCustomID](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid)
@@ -57,12 +57,12 @@ The following **API** calls may be used to log in:
 - [LoginWithTwitch](xref:titleid.playfabapi.com.client.authentication.loginwithtwitch)
 - [LoginWithWindowsHello](xref:titleid.playfabapi.com.client.authentication.loginwithwindowshello)
 
-To register a player you may use the following **API** calls:
+To register a player you may use the following API calls:
 
 - [RegisterPlayFabUser](xref:titleid.playfabapi.com.client.authentication.registerplayfabuser)
 - [RegisterWithWindowsHello](xref:titleid.playfabapi.com.client.authentication.registerwithwindowshello)
 
-You may also you use the following **API** calls to register and log in simultaneously if the **CreateAccount** flag is set:
+You may also you use the following API calls to register and log in simultaneously if the **CreateAccount** flag is set:
 
 - [LoginWithAndroidDeviceID](xref:titleid.playfabapi.com.client.authentication.loginwithandroiddeviceid)
 - [LoginWithCustomID](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid)

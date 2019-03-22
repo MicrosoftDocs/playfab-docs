@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 In complex systems you may want to provide additional event handling on your custom server.
 
-PlayFab offers Webhooks to achieve this. Whenever a new event is emitted, it can be forwarded to your server by making a **POST** request to your custom web endpoint, and the event data is passed as the **JSON** body of the request.
+PlayFab offers Webhooks to achieve this. Whenever a new event is emitted, it can be forwarded to your server by making a POST request to your custom web endpoint, and the event data is passed as the JSON body of the request.
 
 ## Accessing Webhooks
 
@@ -29,8 +29,8 @@ To access the **Webhooks** panel in the PlayFab **Game Manager** screen:
 
 The image shown below provides an overview of the **Webhooks** panel.
 
-- The **New Webhook** button **(1)** allows you to create and configure a new **Webhook**.
-- The **Webhook Name** area **(2)** can be used to access and configure the **Webhook**.
+- The **New Webhook** button **(1)** allows you to create and configure a new Webhook.
+- The **Webhook Name** area **(2)** can be used to access and configure the Webhook.
 - The **Status** area **(3)** shows whether a Webhook is currently **enabled**.
 - The **Failing Since** area **(4)** shows when a Webhook endpoint stopped returning **OK** responses.
 - When one or more Webhooks are selected, you can use the **Delete** button to permanently remove them.
@@ -43,7 +43,7 @@ The image shown below describes the options for configuring a Webhook.
 
 - Use the **Name** field **(1)** to create a Webhook name that will uniquely identify the Webhook.
 - Set up the **Endpoint URI (2)**. This **URI** will be hit when the **Event** occurs.
-- You may set the **Webhook** to be **Enabled** or **Disabled (3)**. This allows you to temporarily suspend a **Webhook** without completely removing (deleting) it from the system.
+- You may set the **Webhook** as **Enabled** - **true** or **false (3)**. This allows you to temporarily suspend a **Webhook** without completely removing (deleting) it from the system.
 - Set up the **Filters** to only process the **Events** you need **(4)**. You can **Filter** by **Event Name**, **Event Source**, and **PlayerID**.
 
 > [!NOTE]

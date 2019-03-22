@@ -48,13 +48,13 @@ Now, the chart shows the counts of how many events occurred for each group, as s
 
 By default, **Sum by** will count the number of events per group. We can sum a property of the event instead. We could find a property by again looking at the [event documentation](../../../api-references/events/player-realmoney-purchase.md).
 
-There is another way to see the properties of the events - you query by looking at the event **JSON** itself.
+There is another way to see the properties of the events - you query by looking at the event JSON itself.
 
 We do this by selecting the **Show JSON** button to the left of the **Event name** column, as seen in the following screen capture.
 
 ![Event - Show JSON Button](media/tutorials/event-show-json-button.png)  
 
-Now we can find for a value to compute with. Looking at the **JSON**, an appropriate value (a number value, not an ID) is **OrderTotal**.
+Now we can find for a value to compute with. Looking at the JSON, an appropriate value (a number value, not an ID) is **OrderTotal**.
 
 ![Event - JSON](media/tutorials/event-json.png)  
 

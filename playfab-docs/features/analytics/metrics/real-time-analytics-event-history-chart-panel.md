@@ -16,7 +16,7 @@ This tutorial illustrates how to use the **Event History Chart** panel.
 
 ## Overview
 
-The [**Event History Chart**](event-history.md) panel represents the event flow as a chart of events distributed over a timeline and grouped by time intervals.
+The [**Event History Chart**](event-history.md) panel represents the event flow as a chart of events, distributed over a timeline and grouped by time intervals.
 
 To generate events for testing purposes, see the [Generating PlayStream Events tutorial](playstream-events.md) for examples of how to post custom events.
 
@@ -26,11 +26,11 @@ On the panel shown below:
 2. The **horizontal axis** represents a timeline, grouped by intervals.
 3. The legend is represented as a color map, where each event name is mapped to a certain color.
 4. Events are grouped by intervals into columns. Within a certain interval, events are grouped by name (visually by color).
-5. Hovering over a color rectangle reveals *additional information* about that event group.
+5. Hovering over a color rectangle reveals additional information about that event group.
 
 ![Event History Chart panel](media/tutorials/event-history-chart-panel.png)  
 
-## Tips and Tricks
+## Tips and tricks
 
 - It is possible to select an interval in the chart and adjust the chart to reflect only the selected interval.
   

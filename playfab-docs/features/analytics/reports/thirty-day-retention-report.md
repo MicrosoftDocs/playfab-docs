@@ -16,17 +16,17 @@ ms.localizationpriority: medium
 
 The Thirty day Retention report table illustrates how many of your players came back to the game within a 30-day period.
 
-A new cohort of players is formed every day, based on all the players (new and returning), who have logged in to your game on a given day (**Day 0**).
+A new Cohort of players is formed every day, based on all the players (new and returning), who have logged in to your game on a given day (**Day 0**).
 
-Cohort size is defined by the number of players included in a cohort. Then each cell shows the percentage of players **(%)** from a given cohort who returned on each subsequent day.
+Cohort size is defined by the number of players included in a Cohort. Then each cell shows the percentage of players **(%)** from a given Cohort who returned on each subsequent day.
 
 ![Thirty-day Retention Report](media/tutorials/thirty-day-retention-report-table.png)  
 
 The Thirty Day Retention Report table illustrates how many of your players came back to the game within a 30-day period.
 
-A new cohort of players is formed every day, based on all the players (new and returning) who have logged in to your game on a given day (Day 0).
+A new Cohort of players is formed every day, based on all the players (new and returning) who have logged in to your game on a given day (Day 0).
 
-Cohort size is defined by the number of players included in a cohort. Then each cell shows the percentage of players (%) from a given cohort who returned on each subsequent day.
+Cohort size is defined by the number of players included in a Cohort. Then each cell shows the percentage of players (%) from a given cohort who returned on each subsequent day.
 
 The preceding example report was generated on **1/24/2018**. It shows, for instance, that on **12/25/2017**, 1.38M users logged in.
 
@@ -42,7 +42,7 @@ To populate this report, you need to register a player and then log in several d
 
 This, however, will produce trivial results, with **100%** retention for each day. Throwing more players into the process and skipping some days will produce more interesting results.
 
-The following **API** calls may be used to log in:
+The following API calls may be used to log in:
 
 - [LoginWithAndroidDeviceID](xref:titleid.playfabapi.com.client.authentication.loginwithandroiddeviceid)
 - [LoginWithCustomID](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid)
