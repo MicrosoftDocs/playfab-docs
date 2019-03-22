@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 This tutorial illustrates how to complement PlayFab's built-in features with something which is not a fully integrated feature yet.
 
-A/B Testing title data is a planned feature. However, It is possible to build your own solution *now*, using **CloudScript**.
+A/B Testing title data is a planned feature. However, It is possible to build your own solution *now*, using CloudScript.
 
 ## Requirements
 
@@ -24,7 +24,7 @@ A/B Testing title data is a planned feature. However, It is possible to build yo
 
 ## Optional Requirements
 
-- The final example uses [Unity](../../../sdks/unity3d/quickstart.md), but this technique can be used with any **SDK**.
+- The final example uses [Unity](../../../sdks/unity3d/quickstart.md), but this technique can be used with any SDK.
 
 ## General idea and implementation
 
@@ -34,7 +34,7 @@ First, we will need an A/B test. Please, follow the [A/B Testing quickstart](../
 
 ![Game Manager - A/B Test - Buckets](media/tutorials/game-manager-ab-test-buckets.png)  
 
-Functionally, a bucket ID is the same as a normal segment ID - an **API** call to [GetPlayerSegments](xref:titleid.playfabapi.com.server.playstream.getplayersegments) will return both segment IDs and A/B test bucket IDs.
+Functionally, a bucket ID is the same as a normal segment ID - an API call to [GetPlayerSegments](xref:titleid.playfabapi.com.server.playstream.getplayersegments) will return both segment IDs and A/B test bucket IDs.
 
 We can use this to our advantage and introduce a convention for A/B-Tested title data keys, as shown below.
 
@@ -50,7 +50,7 @@ We can use this to our advantage and introduce a convention for A/B-Tested title
 > [!NOTE]
 > Make *sure* to use double quotes ( " ). Otherwise, the **JavaScript** runtime will not be able to parse it properly.
 
-Now let us define a brand new **API** call using **CloudScript**. This **API** call is named **GetTitleDataAB** and performs a very simple procedure:
+Now let us define a brand new API call using CloudScript. This API call is named **GetTitleDataAB** and performs a very simple procedure:
 
 1. We receive a regular title data key (ex. **MyMessage**) from the client, via args.
 2. We get all the bucket IDs participating in the testing.
@@ -121,7 +121,7 @@ handlers.GetTitleDataAB = function (args, ctx) {
 
 ## Testing
 
-Once the **CloudScript** from the previous section is uploaded, the code snippet shown below can be used to test the described technique.
+Once the CloudScript from the previous section is uploaded, the code snippet shown below can be used to test the described technique.
 
 ```csharp
 public void GetContent() {
@@ -136,9 +136,9 @@ public void GetContent() {
 
 ## [Optional] Demonstration (with Unity)
 
-Follow the steps in our [CloudScript quickstart](../../automation/cloudscript/quickstart.md) to deploy the **CloudScript** sample to your PlayFab title.
+Follow the steps in our [CloudScript quickstart](../../automation/cloudscript/quickstart.md) to deploy the CloudScript sample to your PlayFab title.
 
-Once this is done, open a new **Unity** project. Make sure you have the PlayFab **SDK** imported, and the title setting configured.
+Once this is done, open a new Unity project. Make sure you have the PlayFab SDK imported, and the title setting configured.
 
 Create an empty scene and an empty game object. Attach the script that follows to the game object.
 
@@ -205,4 +205,4 @@ Start the scene and open the console. If everything is configured properly, you 
 
 ![Output of A/B Test Title Data example](media/tutorials/output-of-ab-test-title-data-example.png)  
 
-At this point, you can use this implementation to A/B-test *any* data in your title.
+At this point, you can use this implementation to A/B test *any* data in your title.

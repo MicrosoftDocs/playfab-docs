@@ -33,7 +33,7 @@ An overview report contains trend charts of each metric during the past 24 hours
 
 A totals report contains the summary of each metric shown in the overview report. Daily and Rolling Thirty Day reports are generated on a daily basis, whereas Monthly reports are generated on the first day of each month.
 
-Report times are based on Coordinated Universal Time (**UTC**). For additional details on metrics, see [Metrics and Terminology](../metrics/metrics-and-terminology.md).
+Report times are based on Coordinated Universal Time (UTC). For additional details on metrics, see [Metrics and Terminology](../metrics/metrics-and-terminology.md).
 
 ## Totals reports
 
@@ -55,15 +55,15 @@ Overview reports consist of 12 trend charts - one for each metric described in t
 
 ## Populating the reports
 
-Any **API** call may introduce new data for total **API** calls, total successful **API** calls and total **API** call errors.
+Any API call may introduce new data for total API calls, total successful API calls and total API call errors.
 
-- Once executed, an **API** call will be added to total **API** calls.
-- If there is an error that is introduced, it will be recorded to total **API** call errors.
-- If *no* error is introduced, it will belong to total successful **API** calls.
+- Once executed, an API call will be added to total API calls.
+- If there is an error that is introduced, it will be recorded to total API call errors.
+- If *no* error is introduced, it will belong to total successful API calls.
 
-Please consult our [PlayFab API Reference documentation](../../../api-references/index.md) to review all available **API** calls.
+Please consult our [PlayFab API Reference documentation](../../../api-references/index.md) to review all available API calls.
 
-The following **API** calls will introduce new data for total logins and total unique logins:
+The following API calls will introduce new data for total logins and total unique logins:
 
 - [LoginWithAndroidDeviceID](xref:titleid.playfabapi.com.client.authentication.loginwithandroiddeviceid)
 - [LoginWithCustomID](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid)
@@ -79,12 +79,12 @@ The following **API** calls will introduce new data for total logins and total u
 - [LoginWithTwitch](xref:titleid.playfabapi.com.client.authentication.loginwithtwitch)
 - [LoginWithWindowsHello](xref:titleid.playfabapi.com.client.authentication.loginwithwindowshello)
 
-The **API** calls shown below will introduce new data for total new users.
+The API calls shown below will introduce new data for total new users.
 
 - [RegisterPlayFabUser](xref:titleid.playfabapi.com.client.authentication.registerplayfabuser)
 - [RegisterWithWindowsHello](xref:titleid.playfabapi.com.client.authentication.registerwithwindowshello)
 
-The **API** calls shown below will introduce new data for total new users if the **CreateAccount** flag is set.
+The API calls shown below will introduce new data for total new users if the **CreateAccount** flag is set.
 
 - [LoginWithAndroidDeviceID](xref:titleid.playfabapi.com.client.authentication.loginwithandroiddeviceid)
 - [LoginWithCustomID](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid)
@@ -96,7 +96,7 @@ The **API** calls shown below will introduce new data for total new users if the
 - [LoginWithSteam](xref:titleid.playfabapi.com.client.authentication.loginwithsteam)
 - [LoginWithTwitch](xref:titleid.playfabapi.com.client.authentication.loginwithtwitch)
 
-The unique paying users, revenue, purchases, Average Revenue Per User (**ARPU**), Average Revenue Per Paying User (**ARPPU**) and average purchase price metrics are used to analyze purchases and payments.
+The unique paying users, revenue, purchases, Average Revenue Per User (ARPU), Average Revenue Per Paying User (ARPPU) and average purchase price metrics are used to analyze purchases and payments.
 
 See the [Non-receipt Payment Processing](../../commerce/economy/non-receipt-payment-processing.md) tutorial for more information on conducting payments.
 
@@ -112,7 +112,7 @@ The **Chart Panel (2)** area shows the available data as a chart, where the hori
 
 There are some metrics available in the chart panel **Timeline (3)** area. Those contain:
 
-- The sum of all the instance across the time period (**SUM**).
-- The average number of instances through all the timestamps (**AVG**).
-- The peak value (**MAX**).
-- The lowest value (**MIN**).
+- The sum of all the instance across the time period (SUM).
+- The average number of instances through all the timestamps (AVG).
+- The peak value (MAX).
+- The lowest value (MIN).

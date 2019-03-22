@@ -15,16 +15,16 @@ ms.localizationpriority: medium
 This tutorial shows you how to access and utilize the event history in PlayFab.
 
 > [!IMPORTANT]
-> Before using this tutorial, make sure that you already have some recent events posted to your title. Otherwise, the event flow will render empty. Most PlayFab **APIs** will post **PlayStream** events, or you can post your *own* custom events. For an overview of automatic and custom events, see the [PlayStream quickstart](quickstart.md).
+> Before using this tutorial, make sure that you already have some recent events posted to your title. Otherwise, the event flow will render empty. Most PlayFab APIs will post PlayStream events, or you can post your *own* custom events. For an overview of automatic and custom events, see the [PlayStream quickstart](quickstart.md).
 
 ## Access event history
 
-1. Open the PlayFab *Game Manager* and select **Analytics** from the navigation sidebar.
+1. Open the PlayFab Game Manager and select **Analytics** from the navigation sidebar.
 2. Locate and select the **Event History** tab.
 
 ![Game Manager - Access Event History](media/tutorials/game-manager-access-event-history.png)  
 
-### Event History Page overview
+### Event History page overview
 
 ![Game Manager - Event History page overview](media/tutorials/game-manager-event-history-page-overview.png)  
 
@@ -46,9 +46,9 @@ In this section we have the following goals:
 
 #### Demonstration
 
-We are going to use the **CustomID** method to sign the player in and produce a **player_logged_in** event.
+We are going to use the **LoginWithCustomID** method to sign the player in and produce a **player_logged_in** event.
 
-Execute the **API** call shown below.
+Execute the API call shown below.
 
 ```csharp
 PlayFabClientAPI.LoginWithCustomID(new LoginWithCustomIDRequest()
@@ -60,7 +60,7 @@ result => Debug.Log("Logged in"),
 error => Debug.LogError(error.GenerateErrorReport()));
 ```
 
-- If no player is registered with the given **CustomID "12345QWERY"**, the player will be generated thanks to the second parameter that we passed (see below).
+- If no player is registered with the **CustomId** value of **12345QWERY**, the player will be generated thanks to the second parameter that we passed (see below).
 
 ```csharp
 CreateAccount = true
@@ -68,7 +68,7 @@ CreateAccount = true
 
 We now have to locate the event.
 
-- The easiest way to do this is by means of the [Event Search Query panel](../../analytics/metrics/real-time-analytics-event-search-query-panel.md). We know the **Custom ID**, and we can use it as a search query.
+- The easiest way to do this is by means of the [Event Search Query panel](../../analytics/metrics/real-time-analytics-event-search-query-panel.md). We know the **CustomId** value, so we can use it as a search query.
 
 ![Game Manager - Event History Chart - search query](media/tutorials/game-manager-event-history-chart-search-query.png)  
 

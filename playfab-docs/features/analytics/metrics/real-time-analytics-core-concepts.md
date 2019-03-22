@@ -28,7 +28,7 @@ At its core, the analytics system provides tools to aggregate, query, and analyz
 
 ## PlayFab event
 
-An event - as a data structure - represents a change in state for your game. Events are represented as **JSON** objects. Each event has four parts:
+An event - as a data structure - represents a change in state for your game. Events are represented as JSON objects. Each event has four parts:
 
 1. **Name** (Or unique type identifier) -  (*What happened?*)
 2. **Entity** (player, title, or character) - (*Who's guilty?*)
@@ -43,10 +43,10 @@ The core of any analytics system is the event flow, a big list of events sorted 
 
 Your players produce a large number of different events. Of course, events are not captured by themselves - you need an analytics system to capture those for later analysis.
 
-A solid analytics system allows you to group, sort, filter, count, transform, and perform calculations on a given set of events, turning event flow into valuable, up-to-date information that you can use to run efficient **LiveOps**.
+A solid analytics system allows you to group, sort, filter, count, transform, and perform calculations on a given set of events, turning event flow into valuable, up-to-date information that you can use to run efficient LiveOps.
 
 ## Guides
 
 - [Event History](../../analytics/metrics/event-history.md): **Game Manager** page for inspecting the event flow inside your title.
 - [Webhooks](../../analytics/metrics/webhooks.md): **Game Manager** page for automatically triggering non-PlayFab servers on specific game events.
-- [S3 Event Archiving](../../analytics/metrics/s3-event-archiving.md): **Game Manager** page for accessing recent **PlayStream** events.
+- [S3 Event Archiving](../../analytics/metrics/s3-event-archiving.md): **Game Manager** page for accessing recent PlayStream events.
