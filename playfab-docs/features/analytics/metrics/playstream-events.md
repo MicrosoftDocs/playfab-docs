@@ -16,7 +16,7 @@ This tutorial provides an overview of automatic and custom **PlayStream** events
 
 ## Automatic event overview
 
-As the name implies, an automatic event is one that occurs *automatically* with a normal **API** method call. Most existing **API** methods will generate **PlayStream** events.
+As the name implies, an automatic event is one that occurs *automatically* with a normal API method call. Most existing API methods will generate PlayStream events.
 
 Sometimes, however, you will need to capture events that are very specific for your game, and are not provided by PlayFab out of the box.
 
@@ -24,7 +24,7 @@ For that purpose, consider using a custom event (as described in the next sectio
 
 ### Example
 
-If an email and password pair is valid, The following **API** call will sign in a player with email and password.
+If an email and password pair is valid, The following API call will sign in a player with email and password.
 
 ```csharp
 PlayFabClientAPI.LoginWithEmailAddress(new LoginWithEmailAddressRequest() {
@@ -47,10 +47,10 @@ The concept of custom events allows you to post events with an arbitrary type an
 
 Similar to automatic events, custom events are fully reflected through [real-time analytics tools](../../analytics/metrics/real-time-analytics-core-concepts.md). Unlike automatic events, you need a little bit of custom code to post custom events.
 
-Custom events can be classified by entity. A custom event can be bound to a player, character, or title. An event entity reference is specified using two fields:
+Custom events can be classified by entity. A custom event can be bound to a player, character, or title. An event entity reference is specified using these two fields.
 
 - **EntityType**
-- **EntityID**.
+- **EntityID**
 
 ### Relevant API Calls
 
@@ -66,7 +66,7 @@ Unfortunately, PlayFab does not provide a corresponding [Automatic Event](#autom
 
 ### Prerequisites
 
-Your player is already logged in. In your code, you have a callback **OnChestOpen**. **LevelID** and **ChestType** are passed into that callback.
+Your player is already logged in. In your code, you have a callback **OnChestOpen**, **LevelID**, and **ChestType** are passed into that callback.
 
 ### Solution
 
@@ -87,9 +87,9 @@ private void OnChestOpened(string chestType, int levelId) {
 ```
 
 1. The method receives **ChestType** and **LevelId**.
-2. Use the [WritePlayerEvent](xref:titleid.playfabapi.com.client.analytics.writeplayerevent) **API** call for posting a custom event bound to a player.
+2. Use the [WritePlayerEvent](xref:titleid.playfabapi.com.client.analytics.writeplayerevent) API call for posting a custom event bound to a player.
 3. Provide a body, specific for your events and your needs. In this case we provide the **ChestType** and **LevelId** fields.
-4. Provide an event name identifying your custom event. In this case we use the **""player_chest_opened" Event Type Name**.
+4. Provide an event name identifying your custom event. In this case we use the **player_chest_opened** event type name.
 
 ### Testing
 

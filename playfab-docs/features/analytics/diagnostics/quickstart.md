@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 > [!IMPORTANT]
 > This feature is currently in **Private Preview**.  
 >
-> It is provided to give you an early look at an upcoming feature and to allow you to provide feedback while it is still in development.  
+> It is provided to give you an early look at an upcoming feature, and to allow you to provide feedback while it is still in development.  
 >
 > Access to this feature is restricted to select titles. If you are interested in trying it, you can request access by submitting a ticket on [support.playfab.com](https://support.playfab.com/hc/en-us/requests/new).
 
@@ -26,14 +26,14 @@ App Center provides tools to help you build, test, deploy and monitor mobile and
 
 ## Prerequisites
 
-* You will need a PlayFab Account
-* You will need an App Center Account
-* You will need to have the App Center SDK installed in your game
+* You will need a PlayFab Account.
+* You will need an App Center Account.
+* You will need to have the App Center SDK installed in your game.
 * Private Preview enabled for your title (email [devrel@playfab.com](mailto:devrel@playfab.com)) to get access for your title.
 
-## Getting Started
+## Getting started
 
-To get started, login to your PlayFab account.  Once App Center integration is enabled for your title (private preview only) you will see a diagnostics tab in the sidebar.
+To get started, log into your PlayFab account.  Once App Center integration is enabled for your title (private preview only), you will see a **Diagnostics** tab in the sidebar.
 
 ![diagnostics tab screenshot image](media/diag_tab_screenshot.png)
 
@@ -41,16 +41,16 @@ Since the add-on has not yet been enabled, you will need to navigate to the add-
 
 ![navigate to addons page image](media/go_to_addons_diag_page.png)
 
-Click the install button on the App Center Add-On page.  You should see the following screenshot.
+Select the install button on the **App Center Add-On** page.  You should see the screenshot shown below.
 
 ![navigate to addons page image](media/addon-installed.png)
 
-Now you need to link your PlayFab title to your App Center titles.  To do this, click on **Go to App Center**
+Now you need to link your PlayFab title to your App Center titles.  To do this, select **Go to App Center**.
 
-This will ask you to authenticate to AppCenter and will provide you with a list of titles you can select and link to your PlayFab title.  If you have more an iOS & Android App Center titles, be sure to select both of them to get your diagnostic information for both titles.
+This will ask you to authenticate for AppCenter, and will provide you with a list of titles you can select and link to your PlayFab title.  If you have more iOS and Android App Center titles, be sure to select both of them to get your diagnostic information for both titles.
 
-Once you have completed the above steps click **Save Settings**
+Once you have completed the above steps select the **Save Settings** button.
 
-Your integration is now enabled, if you navigate back to the Diagnostics tab, you should see your crash data enabled.
+Your integration is now enabled.  If you navigate back to the **Diagnostics** tab, you should see your crash data enabled.
 
 ![Diagnostics Tab Dashboard active Image](media/appcenter_gm_dash.png)

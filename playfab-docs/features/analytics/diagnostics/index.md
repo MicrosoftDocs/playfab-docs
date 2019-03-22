@@ -26,7 +26,9 @@ Crash reporting is a critical part of developing quality games. This diagnostics
 
 ![App Center Dashboard Image](media/appcenter_gm_dash.png)
 
-Coming soon, will be per player crash reporting and PlayStream events when a player reports a crash. This means for the first time ever you can, in real-time, react to a player experiencing problems in your app.  You will be able to use crash data that is impacting your players to segment them, create targeted messaging, extend promotional offers, grant virtual currency and more.  This will help you mitigate a bad experience in your game.
+Coming soon, will be per player crash reporting and PlayStream events when a player reports a crash. This means for the first time ever you can, in real-time, react to a player experiencing problems in your app. 
+
+You will be able to use crash data that is impacting your players to segment them, create targeted messaging, extend promotional offers, grant virtual currency and more.  This will help you mitigate a bad experience in your game.
 
 To get started follow our [QuickStart Guide](quickstart.md)
 
