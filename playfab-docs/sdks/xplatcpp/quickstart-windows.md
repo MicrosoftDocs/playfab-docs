@@ -19,13 +19,13 @@ Before continuing, make sure you have completed [Getting started for developers]
 A native C++ project can be used a few ways:
 
 - As stand-alone console Admin tools for maintaining your game.
-  - The PlayFab C++ SDK works great for a stand-alone C++ program.
+  - The PlayFab Cross-Platform C++ SDK works great for a stand-alone C++ program.
 
 - Integrated into an existing Visual Studio based C++ game.
   - Follow the instructions below to integrate the NuGet Package into your Visual Studio Solution, and you're ready to go.
 
 - Integrated into an existing C++ based game engine.
-  - The PlayFab C++ SDK should not be used if we provide a more specific SDK.
+  - The PlayFab Cross-Platform C++ SDK should not be used if we provide a more specific SDK.
     - [Cocos2d-x](https://github.com/PlayFab/Cocos2d-xSDK)
     - [Unreal](https://github.com/PlayFab/UnrealCppSdk)
 
@@ -41,11 +41,11 @@ OS: This guide is written for Windows 10, using Visual Studio 2017.
 
 Installation:
 
-1. Download and install the PlayFab [Windows - C++](https://github.com/PlayFab/XPlatCppSdk) SDK.
+1. Download and install the [PlayFab Cross-Platform C++ SDK](https://github.com/PlayFab/XPlatCppSdk).
 
 2. Download and install Visual Studio 2017.
     > [!NOTE]
-    > The PlayFab Windows C++ SDK is no longer supported on Visual Studio 2013 and Visual Studio 2015.
+    > The PlayFab Cross-Platform C++ SDK is no longer supported on Visual Studio 2013 and Visual Studio 2015.
 
 3. Create a new C++ Console project.
 

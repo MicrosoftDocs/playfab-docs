@@ -38,9 +38,9 @@ This is the typical flow for using these beacons in the context of a player devi
 
 ## Using the quality-of-service C++ SDK
 
-PlayFab provides **Windows C++** sub-routines demonstrating this QoS flow in the [C++ quickstart for Windows](../../../sdks/xplatcpp/quickstart-windows.md). You can build the **SDK** and use it as a helper library in your PC games, or use the code as an example for other platforms.
+PlayFab provides **C++** sub-routines demonstrating this QoS flow in the [PlayFab Cross-Platform C++ SDK](https://github.com/PlayFab/XPlatCppSdk). You can build the **SDK** and use it as a helper library in your PC games, or use the code as an example for other platforms.
 
-These are the two QoS APIs available in the [PlayFab XplatCppSdk](https://github.com/PlayFab/XPlatCppSdk), as noted below.
+These are the two QoS APIs available in the [PlayFab Cross-Platform C++ SDK](https://github.com/PlayFab/XPlatCppSdk), as noted below.
 
 ```cpp
   // Runs a QoS operation asynchronously. The operation pings a set of datacenters and returns a result with average response times.

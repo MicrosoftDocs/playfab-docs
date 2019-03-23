@@ -15,10 +15,10 @@ ms.localizationpriority: medium
 This guide will help you make your first API call in C++. A native C++ project can be used a few ways:
 
 - Stand-alone console Admin tools for maintaining your game
-  - The C++ SDK works great for a stand-alone C++ program
+  - The PlayFab Cross-Platform C++ SDK works great for a stand-alone C++ program
 
 - Integration into an existing C++ based game engine
-  - The C++ SDK should not be used if we provide a more specific SDK
+  - The PlayFab Cross-Platform C++ SDK should not be used if we provide a more specific SDK
     - [Cocos2d-x](https://github.com/PlayFab/Cocos2d-xSDK)
     - [Unreal](https://github.com/PlayFab/UnrealCppSdk)
 
