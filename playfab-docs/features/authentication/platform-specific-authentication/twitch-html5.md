@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Setting up PlayFab authentication using Twitch and HTML5
 
-This tutorial guides you through the process of PlayFab authentication using **Twitch** and **HTML5/JavaScript**.
+This tutorial guides you through the process of PlayFab authentication using Twitch and HTML5/JavaScript.
 
 ## Requirements
 
@@ -21,7 +21,7 @@ Prior to beginning, you should have:
 - A [Twitch Account](https://www.twitch.tv/) for testing.
 - A Registered [PlayFab](https://playfab.com/) title.
 - Familiarity with [Login basics and Best Practices](../../authentication/login/login-basics-best-practices.md).
-- At the minimum, a server with a valid domain name to serve static **HTML** files.
+- At the minimum, a server with a valid domain name to serve static HTML files.
 
 > [!NOTE]
 > Consult the [Running an HTTP server for testing](running-an-http-server-for-testing.md) tutorial for information on how to set one up.
@@ -57,7 +57,7 @@ A page will open that lets you configure a new app.
 ![Twitch register your application](media/tutorials/twitch-html5/twitch-register-your-application.png)  
 
 > [!IMPORTANT]  
-> When testing using a local web server, **Twitch** allows you to use **<http://localhost>** as a redirect **URL**. Make sure to include the leading slash **/**. Without a leading slash, **Twitch** will fail to recognize the **localhost URL**.
+> When testing using a local web server, Twitch allows you to use **<http://localhost>** as a redirect URL. Make sure to include the leading slash **/**. Without a leading slash, Twitch will fail to recognize the **localhost URL**.
 
 Once the application is registered, the page will be updated and reveal the client ID for your application.
 
@@ -68,7 +68,7 @@ Once the application is registered, the page will be updated and reveal the clie
 
 ## Configuring a PlayFab title
 
-Once you acquire your **Twitch** client ID, you may enable and configure a **Twitch Add-on** for your PlayFab title.
+Once you acquire your Twitch Client ID, you may enable and configure a Twitch Add-on for your PlayFab title.
 
 - On your **PlayFab Title** screen, go to the menu and select the **Add-ons** item **(1)**.
 - Then select the **Twitch** icon link **(2)**.
@@ -87,7 +87,7 @@ Take a moment to verify that the add-on was installed, and that no errors have o
 
 ## Testing
 
-Use the following **HTML** file to test PlayFab authentication using **Twitch**.
+Use the following HTML file to test PlayFab authentication using Twitch.
 
 Make sure to replace **TWITCH_CLIENT_ID_GOES_HERE** and **PLAYFAB_TITLE_ID_GOES_HERE** with your own values.
 
@@ -159,7 +159,7 @@ Make sure to replace **TWITCH_CLIENT_ID_GOES_HERE** and **PLAYFAB_TITLE_ID_GOES_
 </html>
 ```
 
-Request the following file from your server, using the domain you set up during the **Twitch Application** configuration **<http://localhost>** in our case **(1)**.
+Request the following file from your server, using the domain you set up during the Twitch Application configuration **<http://localhost>** in our case **(1)**.
 
 - Once the page opens, wait for the message indicating that the **Twitch SDK** was initialized **(2)**.
 - Then select the **Login with Twitch** button **(3)**.
@@ -167,8 +167,8 @@ Request the following file from your server, using the domain you set up during 
 - Watch the output **(4)**.
 
 > [!IMPORTANT]
-> If you *already have* a **Twitch** auth session going when reaching the page, it is possible for callbacks to fire in a different, unexpected order. This case is shown in the screenshot shown below. However, you should make sure that only **Logging in via PlayFab** follows after **Logged in with Twitch**. This indicates that the token was received or restored from the local storage, and we do not have to wait for the **Twitch SDK** to start signing in to PlayFab.
+> If you *already have* a Twitch auth session going when reaching the page, it is possible for callbacks to fire in a different, unexpected order. This case is shown in the screenshot shown below. However, you should make sure that only **Logging in via PlayFab** follows after **Logged in with Twitch**. This indicates that the token was received or restored from the local storage, and we do not have to wait for the Twitch SDK to start signing in to PlayFab.
 
 ![Twitch Auth Example](media/tutorials/twitch-html5/twitch-auth-example.png)  
 
-If PlayFab manages to acquire a **SessionTicket**, you have successfully integrated **Twitch** authentication with your PlayFab app.
+If PlayFab manages to acquire a **SessionTicket**, you have successfully integrated Twitch authentication with your PlayFab app.

@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Setting up PlayFab authentication using Google and HTML5
 
-This tutorial guides you through the process of PlayFab authentication using **Google** and **HTML5/JavaScript**.
+This tutorial guides you through the process of PlayFab authentication using Google and HTML5/JavaScript.
 
 ## Requirements
 
@@ -21,7 +21,7 @@ You will need:
 - A [Google account](https://google.com/) for testing.
 - A Registered [PlayFab](https://playfab.com/) title.
 - Familiarity with [Login basics and Best Practices](../../authentication/login/login-basics-best-practices.md).
-- At the minimum, a server with a valid domain name to act as a static **HTML** file. Consult the [Running an HTTP server for testing](running-an-http-server-for-testing.md) tutorial for information on how to set one up.
+- At the minimum, a server with a valid domain name to act as a static HTML file. Consult the [Running an HTTP server for testing](running-an-http-server-for-testing.md) tutorial for information on how to set one up.
 
 ## Server and Domain
 
@@ -54,8 +54,7 @@ Once the Project is created:
 
 ![Google API Manager OAuth consent screen](media/tutorials/google-html5/oauth-consent-screen.png)  
 
-Next, navigate to **Credentials (1)**:
-
+- Next, navigate to **Credentials (1)**.
 - Select **Create credentials (2)**.
 - Then select **OAuth client ID (3)**.
 
@@ -68,7 +67,7 @@ Next, navigate to **Credentials (1)**:
 
 ![Google API Manager create OAuth credentials](media/tutorials/google-html5/create-oauth-credentials.png)  
 
-On the **OAuth client** screen shown below, the **Google API Manager** reveals two important pieces of information:
+On the **OAuth client** screen shown below, the Google API Manager reveals two important pieces of information:
 
 1. The **client ID (1)**
 2. The **client secret (2)**.
@@ -152,11 +151,11 @@ In this example, we show how to test using the classic access token approach. Us
 ```
 
 - Remember to serve this page using your web server.
-- Make sure to access this page using the **URL** you specified while configuring **Google Project**, ([PlayFab](http://playfab.example) in our case).
-- Once the page opens, select **G Signed In (1)**, and follow the general **Google** authentication flow.
+- Make sure to access this page using the URL you specified while configuring Google Project, ([PlayFab](http://playfab.example) in our case).
+- Once the page opens, select **G Signed In (1)**, and follow the general Google authentication flow.
 - When this is finished, the script will try to authenticate on the PlayFab side and output the result **(2)**.
 
 ![Google Auth Example](media/tutorials/google-html5/google-auth-example.png)  
 
 > [!NOTE]
-> If you *already have* a **Google** authentication session running, you will not have to select **G Signed In**. Everything will happen automatically.
+> If you *already have* a Google authentication session running, you will not have to select **G Signed In**. Everything will happen automatically.

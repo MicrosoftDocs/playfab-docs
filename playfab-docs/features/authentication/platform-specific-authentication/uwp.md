@@ -12,23 +12,23 @@ ms.localizationpriority: medium
 
 # Setting up PlayFab authentication using Universal Windows Platform
 
-This tutorial guides you through the procedure for PlayFab authentication using the **Universal Windows Platform** (**UWP**).
+This tutorial guides you through the procedure for PlayFab authentication using the Universal Windows Platform (UWP).
 
 > [!IMPORTANT]
-> This procedure serves as a very basic introduction on how you can obtain all entities and commit authentication via **Windows Hello** and PlayFab. For a more sophisticated example of **Windows Hello** and PlayFab authentication, consider our [UWPExample project](https://github.com/PlayFab/UWPExample).
+> This procedure serves as a very basic introduction on how you can obtain all entities and commit authentication via Windows Hello and PlayFab. For a more sophisticated example of Windows Hello and PlayFab authentication, consider our [UWPExample project](https://github.com/PlayFab/UWPExample).
 
 ## Requirements
 
-- Follow the [MSDN "Get Set Up" Guide](https://docs.microsoft.com/en-us/windows/uwp/get-started/get-set-up) to prepare **Windows** and **Visual Studio** for **UWP** development.
+- Follow the [MSDN "Get Set Up" Guide](https://docs.microsoft.com/en-us/windows/uwp/get-started/get-set-up) to prepare Windows and Visual Studio for UWP development.
 - Have a registered [PlayFab](https://playfab.com/) title.
 - Be familiar with [Login basics and Best Practices](../../authentication/login/login-basics-best-practices.md).
 
 > [!NOTE]
-> it is *very important* that you are using the **Windows 10** operating system, are logged in with a verified **Microsoft** account, and have configured an access interface such as **PIN**. If these requirements are *not* met, the app will fail without any useful explanation of why.
+> it is *very important* that you are using the Windows 10 operating system, are logged in with a verified Microsoft account, and have configured an access interface such as PIN. If these requirements are *not* met, the app will fail without any useful explanation of why.
 
 ## Preparing a Visual Studio project
 
-Start **Visual Studio** and create a new project.
+Start Visual Studio and create a new project.
 
 - Under **Templates**, select **Windows Universal (1)**.
 - Then select the **Blank App (Universal Windows)** type **(2)**.
@@ -68,7 +68,7 @@ Once finished, your basic project setup is complete. In the next section we will
 
 ### App.xaml.cs  
 
-This class will just set up our PlayFab **SDK** by setting a proper title ID. Do not forget to replace the title ID with your own.
+This class will just set up our PlayFab SDK by setting a proper title ID. Do not forget to replace the title ID with your own.
 
 ```csharp
 using System;
@@ -198,7 +198,7 @@ The buttons are bound to specific methods, and the textbox is accessible via its
 
 ### MainPage.xaml.cs
 
-This is the functional class for the main page and it is the heart of the example. Please refer to the code comments, and review the different methods that are designed to walk you through **PlayFab+Hello** register and login.
+This is the functional class for the main page and it is the heart of the example. Please refer to the code comments, and review the different methods that are designed to walk you through PlayFab+Hello register and login.
 
 The easiest approach to start learning the code is to review the methods that are triggered by the corresponding buttons:
 
@@ -466,9 +466,9 @@ To run the application:
 
 ![UWP example - sign in](media/tutorials/uwp/uwp-example-sign-in.png)  
 
-- Follow the instruction that **Windows** offers for authentication.
+- Follow the instruction that Windows offers for authentication.
 - Once your identity is confirmed, you will see the confirmation message saying that the account is **Signed in (1)** with a **Session Ticket (2)**.
 
 ![UWP example - sign in confirmation](media/tutorials/uwp/uwp-example-sign-in-confirmation.png)  
 
-At this point you have successfully integrated PlayFab into your **UWP** application.
+At this point you have successfully integrated PlayFab into your UWP application.
