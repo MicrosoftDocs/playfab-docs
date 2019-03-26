@@ -12,15 +12,15 @@ ms.localizationpriority: medium
 
 # SDK error handling best practices
 
-This tutorial shows how to access, recognize, and handle **API** errors using the PlayFab **SDK**.
+This tutorial shows how to access, recognize, and handle API errors using the PlayFab SDK.
 
- The practices describes here are equally applicable to the admin, server, and client **SDKs**, but the patterns depend *highly* on the language of your choice.
+ The practices describes here are equally applicable to the admin, server, and client SDKs, but the patterns depend *highly* on the language of your choice.
 
-Simply put, the pattern of your choice will be valid for any **SDK** (admin/server/client) but implementation details will be specific to *your* programming language and environment.
+Simply put, the pattern of your choice will be valid for any SDK (admin/server/client) but implementation details will be specific to *your* programming language and environment.
 
 ## Catching and accessing the error
 
-PlayFab **SDKs** usually report errors by returning an error object. The following snippet shows how to detect and access the error.
+PlayFab SDKs usually report errors by returning an error object. The following snippet shows how to detect and access the error.
 
 ```csharp
 PlayFabClientAPI.LoginWithEmailAddress(new LoginWithEmailAddressRequest() {
@@ -39,7 +39,7 @@ Generally, if an error object is defined (not null), it indicates that an error 
 
 The most common way to inspect an error is to recognize it through the code. As described in the [Global API Method Error Codes](global-api-method-error-codes.md) tutorial, each generated error contains human-readable and numeric error codes. The code on its own is sufficient to recognize and process the error accordingly.
 
-Let's take the [LoginWithEmailAddress](xref:titleid.playfabapi.com.client.authentication.loginwithemailaddress) **API** method as an example. As stated in the [documentation](xref:titleid.playfabapi.com.client.authentication.loginwithemailaddress) for this method, the following internal error may be thrown upon execution:
+Let's take the [LoginWithEmailAddress](xref:titleid.playfabapi.com.client.authentication.loginwithemailaddress) API method as an example. As stated in the [documentation](xref:titleid.playfabapi.com.client.authentication.loginwithemailaddress) for this method, the following internal error may be thrown upon execution:
 
 - **InvalidTitleId 1004**
 - **AccountNotFound 1001**
@@ -81,7 +81,7 @@ PlayFabClientAPI.LoginWithEmailAddress(new LoginWithEmailAddressRequest() {
 
 ## Handling the error
 
-Once the error is identified, the handle/recover strategy depends on the error type and nature. Errors such as *invalid arguments* will never succeed if retried. The request must be fixed for that **API** call to succeed.
+Once the error is identified, the handle/recover strategy depends on the error type and nature. Errors such as *invalid arguments* will never succeed if retried. The request must be fixed for that API call to succeed.
 
 There is a sub-set of errors, where a retry strategy can be applied. *Retry-able* error types are described in the [Global API Method Error Codes](global-api-method-error-codes.md) tutorial.
 

@@ -28,12 +28,12 @@ In the **Game Manager**:
 
 - Select **Servers** in the menu to the left.
 - Move to the **CloudScript** tab.
-- Add a **CloudScript** function called **adjustRareDropRate** with a simple call to the **SetTitleData API** as shown in the code snippet and image below.
+- Add a CloudScript function called **adjustRareDropRate** with a simple call to the **SetTitleData API** as shown in the code snippet and image below.
 
 > [!NOTE]
 > For the sharp-eyed, don’t worry - there’s a bug in there on purpose. Make sure you deploy the new revision, so that it is live in your game.
 
-You can learn more about using **CloudScript** in our [CloudScript quickstart](../cloudscript/quickstart.md), and in documentation for the method [ExecuteCloudScript](xref:titleid.playfabapi.com.client.server-sidecloudscript.executecloudscript).
+You can learn more about using CloudScript in our [CloudScript quickstart](../cloudscript/quickstart.md), and in documentation for the method [ExecuteCloudScript](xref:titleid.playfabapi.com.client.server-sidecloudscript.executecloudscript).
 
 ```javascript
 handlers.adjustRareDropRate = function(args) {
@@ -55,7 +55,7 @@ Now select **Servers** from the menu to the left.
 - Select **NEW TASK** on the top right corner of your screen.
 - This will bring up the **Create Task** view.
 - In the **Type of task** field, choose **Run a CloudScript function**.
-- Below that, you’ll be able to pick a function from the currently deployed revision of **CloudScript** and specify arguments to pass in.
+- Below that, you’ll be able to pick a function from the currently deployed revision of CloudScript, and specify arguments to pass in.
 - Choose the **adjustRareDropRate Handler** that you wrote in the previous step.
 
 To set the schedule for this task:
@@ -71,7 +71,7 @@ For example, you may specify a task to run on the 5th, 10th, 25th,or 50th minute
 
 If you'd like to learn more about Cron Expression, [crontab.guru](https://crontab.guru/) provides rich information and an interactive expression builder.
 
-In this case, we want the task to run at 12:00 UTC on Saturdays and Sundays, which would be “00 12 * * 0,6” (zero minutes past twelve o’clock, every Sunday and Saturday).
+In this case, we want the task to run at 12:00 UTC on Saturdays and Sundays, which would be **00 12 * * 0,6**  (zero minutes past twelve o’clock, every Sunday and Saturday).
 
 Finally, make sure you save the new task before moving on to the next step.
 
@@ -95,7 +95,7 @@ The **Task Instance Details** view provides diagnostic information on why the ta
 
 In this case, it’s pointing out that the call to **serverAPI.SetTitleData** is incorrect. It should *really* be **server.SetTitleData** (for an explanation, see the **Intermediate: Calling the Server APIs** section of the [Writing Custom CloudScript](../cloudscript/writing-custom-cloudscript.md#intermediate-calling-the-server-apis) tutorial).
 
-There is other important information on the **Task Instance Details** view as well - such as the start and end times, the function that was called, any arguments passed in, the full **CloudScript** execution result, and more.
+There is other important information on the **Task Instance Details** view as well - such as the start and end times, the function that was called, any arguments passed in, the full CloudScript execution result, and more.
 
 ![Game Manager - Tasks - Tas Instance Details](media/tutorials/game-manager-tasks-task-instance-details.png)  
 
