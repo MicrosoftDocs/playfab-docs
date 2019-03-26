@@ -12,21 +12,21 @@ ms.localizationpriority: medium
 
 # Setting up PlayFab authentication using Steam and Unity
 
-This tutorial guides you through the steps for logging into PlayFab using **Steam** through **SteamWorks** and **Unity**.
+This tutorial guides you through the steps for logging into PlayFab using Steam through SteamWorks and Unity.
 
 ## Prerequisites
 
 Before beginning, you should have:
 
-- A **Unity** project with an imported PlayFab **SDK** and a configured title ID.
-- A **Steam Application** with:
+- A Unity project with an imported PlayFab SDK and a configured title ID.
+- A Steam Application with:
   - The **AppID** already set up. The **AppID** is usually acquired through the [Steam Direct (Formerly Greenlight)](https://partner.steamgames.com/steamdirect) process.
   - A **Steam Publisher Web API Key**. Follow [Creating a Publisher Web API Key](https://partner.steamgames.com/doc/webapi_overview/auth#create_publisher_key) in the **Steamworks** documentation to generate a publisher key.
 - Familiarity with [Login basics and Best Practices](../../authentication/login/login-basics-best-practices.md).
 
 ## Setting up a PlayFab title
 
-To enable support for **Steam** authorization, PlayFab requires you to enable the **Steam** add-on.
+To enable support for Steam authorization, PlayFab requires you to enable the Steam add-on.
 
 - Go to your **Game Manager** page.
 - Select the **Add-ons** menu item **(1)**.
@@ -40,21 +40,21 @@ To enable support for **Steam** authorization, PlayFab requires you to enable th
 
 ![Game Manager install Steam Add-on](media/tutorials/steam-unity/game-manager-install-steam-addon.png)  
 
-This concludes setting up a PlayFab title for **Steam** integration.
+This concludes setting up a PlayFab title for Steam integration.
 
 ## Setting up a Unity project
 
 Start by downloading the latest release of Steamworks.NET from the [Releases page](https://github.com/rlabrecque/Steamworks.NET/releases).
 
-- Get the **Unity Package** version of the release, and import it into the project.
-- Once you import the package, close **Unity**.
+- Get the Unity Package version of the release, and import it into the project.
+- Once you import the package, close Unity.
 - Navigate to the **Project** root folder.
 - Locate the **steam_appid.txt** file.
 - Open the file and replace the **App ID** value with your own.
 
 ![Unity project - Update AppId](media/tutorials/steam-unity/unity-project-update-appid.png)  
 
-Re-open **Unity** and create a new scene.
+Re-open Unity and create a new scene.
 
 - Inside that scene create a new **gameobject** called **Steam**.
 - Add a **SteamManager** component to the **gameobject (1)**. This component is part of Steamworks.Net.

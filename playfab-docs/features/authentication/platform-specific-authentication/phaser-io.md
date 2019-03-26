@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Setting up PlayFab authentication in Phaser.io
 
-[Phaser.io](https://phaser.io/) is a desktop and mobile **HTML5** game framework that PlayFab now supports in our **Javascript SDK**.
+[Phaser.io](https://phaser.io/) is a desktop and mobile HTML5 game framework that PlayFab now supports in our Javascript SDK.
 
 Phaser.io supports plugins, so we at PlayFab thought that it would be useful for the Phaser.io community to have a powerful back end system that works as a plugin to the Phaser.io engine.
 
@@ -20,17 +20,17 @@ This tutorial guides you through the procedure for setting up Phaser.io, and get
 
 ## Requirements
 
-- Knowledge of **JavaScript**.
+- Knowledge of JavaScript.
 - Knowledge of setting up a web server.
 - General understanding of Phaser.io (a plus!).
 
 ## Setting up a web server using MAMP
 
-To serve **HTML** pages to your browser you will need a web server. We use [MAMP/MAMP Pro](https://www.mamp.info/en/), but you can use whatever you are most comfortable with.
+To serve HTML pages to your browser you will need a web server. We use [MAMP/MAMP Pro](https://www.mamp.info/en/), but you can use whatever you are most comfortable with.
 
 To begin:
 
-- Set up a website via **Mamp/Mamp Pro** or your webserver of choice.
+- Set up a website via Mamp/Mamp Pro, or your webserver of choice.
 - Create an **Index.html** file in the root of your website folder.
 
 > [!NOTE]
@@ -38,7 +38,7 @@ To begin:
 
 ## Setting up Phaser
 
-The first step is to download **Phaser** from [Phaser.io](https://phaser.io/) and set it up. For this tutorial, we advise you to just download the **min.js** file.
+The first step is to download Phaser from [Phaser.io](https://phaser.io/) and set it up. For this tutorial, we advise you to just download the **min.js** file.
 
 - Create a folder in your website root called **js**.
 - Download **Phaser min.js** and save it to your **/js** folder in the website root.
@@ -98,11 +98,11 @@ You should now see that Phaser.io has initialized a blank canvas (like that show
 
 ## Adding PlayFab and Phaser plugin
 
-The PlayFab **Javascript SDK** will now auto-detect if you have **Phaser** loaded on the webpage, and inject itself into it as a **Phaser** plugin.
+The PlayFab Javascript SDK will now auto-detect if you have Phaser loaded on the webpage, and inject itself into it as a Phaser plugin.
 
 There are only two lines of code needed to make this happen:
   
-1. Add the script tag to load PlayFab just after loading **Phaser**.
+1. Add the script tag to load PlayFab just after loading Phaser.
 
 ![Add Script tag to load PlayFab](media/tutorials/phaser-io/load-playfab.png)
 
@@ -116,9 +116,9 @@ function create() {
 
 ## Making your first API call
 
-Now that you have PlayFab installed as a plugin to **Phaser**, you can set your PlayFab title ID and make **API** calls.
+Now that you have PlayFab installed as a plugin to Phaser, you can set your PlayFab title ID and make API calls.
 
-The code presented below shows you how to log in a **Player**.
+The code presented below shows you how to log in a Player.
 
 ```javascript
     game.PlayFab.settings.titleId = "D6EC"; //Your title Id from playfab goes here.

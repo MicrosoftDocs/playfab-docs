@@ -20,7 +20,7 @@ Otherwise, it is very rare for a published title to use a custom ID for a primar
 
 ### Why we demonstrate this first
 
-Bluntly, because it's the easiest. A custom ID can be anything, and it makes it easier to **call your first API**. Once you get serious about developing and releasing your title, it is very likely you will switch to another login mechanism.
+Bluntly - because it's the easiest. A custom ID can be anything, and it makes it easier to call your first API. Once you get serious about developing and releasing your title, it is very likely you will switch to another login mechanism.
 
 ### Best practice
 
@@ -28,7 +28,7 @@ Unless you know *exactly* why you want **LoginWithCustomId** in your released ti
 
 ## Anonymous login mechanisms
 
-The anonymous login mechanisms are the simplest to use. They require *zero* input from the player so there's no friction to the first time user experience, and the result is a unique account in PlayFab for each player. This is the most common login mechanism.
+Anonymous login mechanisms are the simplest to use. They require *zero* input from the player, so there's no friction to the first time user experience - and the result is a unique account in PlayFab for each player. *This is the most common login mechanism*.
 
 These logins include:
 
@@ -42,24 +42,24 @@ So why use it? Because it's the lowest possible barrier to entry for the player,
 
 ### Best practice
 
-Your game should use an anonymous login for creating a new account and linking new devices to an existing account. Some players may abandon a game that asks for an e-mail or identifiable information. However, once the anonymous login is complete you should provide the option to add *recoverable* login credentials and provide some explanation regarding the benefits.
+Your game should use an anonymous login for creating a new account and linking new devices to an existing account. Some players may abandon a game that asks for an e-mail or identifiable information. However, once the anonymous login is complete, you should provide the option to add *recoverable* login credentials, and provide some explanation regarding the benefits.
 
-In particular, you should *make sure* that paying customers are guided to the recoverable login systems to prevent loss of their accounts. A free account lost forever is a disappointment. A paid account lost forever affects revenue.
+In particular, you should make sure that paying customers are guided to the recoverable login systems, to prevent loss of their accounts. A free account lost forever is a disappointment. A paid account lost forever affects revenue.
 
 ### iOS devices
 
-For **iOS** devices, the player ID changes if they uninstall your game and then *re*-install it. One way to make sure you have a consistent ID on **iOS** is to save the Device ID for the player to the **iTunes KeyChain**, so that you can read it from there on game start, and use it to sign in.
+For iOS devices, the player ID changes if they uninstall your game and then *re*-install it. One way to make sure you have a consistent ID on iOS is to save the device ID for the player to the iTunes KeyChain, so that you can read it from there on game start, and use it to sign in.
 
 You must determine how to generate unique custom IDs for any other device or platform. Custom IDs are an effective alternative for other platforms or devices, but you must generate your custom IDs with care. Too simple, and you risk hackers stealing the accounts of others.
 
 > [!NOTE]
-> Binding a recoverable login is only required once per device. Once bound, the game can continue to use the anonymous login with no drawbacks. See the next section.
+> Binding a recoverable login is only required *once* per device. Once bound, the game can continue to use the anonymous login with no drawbacks. See the next section.
 
 Anonymous login is convenient for the player, but it is *not* required. Your game can rely exclusively on a recoverable login mechanism. However, your players will be happier if they *don't* have to type a password every time they log in.
 
 ## Recoverable login mechanisms
 
-A recoverable login mechanism requires some identity information from the player. As described above, it can be paired with an anonymous login for the best player experience.
+A *recoverable* login mechanism requires some identity information from the player. As described above, it can be paired with an anonymous login for the best player experience.
 
 ### Pure PlayFab options
 
@@ -72,11 +72,11 @@ If used, the e-mail or username-plus-password are authenticated directly by Play
 
 ### Third party API options
 
-These require separate **API** calls to another service (but do not require additional **SDK** installations): [LoginWithKongregate](xref:titleid.playfabapi.com.client.authentication.loginwithkongregate), [LoginWithSteam](xref:titleid.playfabapi.com.client.authentication.loginwithsteam), [LoginWithTwitch](xref:titleid.playfabapi.com.client.authentication.loginwithtwitch). Secure authentication happens between your user, and the 3rd party service **API** call.
+These require separate API calls to another service (but do not require additional SDK installations): [LoginWithKongregate](xref:titleid.playfabapi.com.client.authentication.loginwithkongregate), [LoginWithSteam](xref:titleid.playfabapi.com.client.authentication.loginwithsteam), [LoginWithTwitch](xref:titleid.playfabapi.com.client.authentication.loginwithtwitch). Secure authentication happens between your user, and the 3rd party service API call.
 
 ### Third party SDK options
 
-[LoginWithFacebook](xref:titleid.playfabapi.com.client.authentication.loginwithfacebook), [LoginWithGoogleAccount](xref:titleid.playfabapi.com.client.authentication.loginwithgoogleaccount), [LoginWithWindowsHello](xref:titleid.playfabapi.com.client.authentication.loginwithwindowshello). These require a separate **SDK** installed into your game. Secure authentication happens within the 3rd party **SDK**.
+[LoginWithFacebook](xref:titleid.playfabapi.com.client.authentication.loginwithfacebook), [LoginWithGoogleAccount](xref:titleid.playfabapi.com.client.authentication.loginwithgoogleaccount), [LoginWithWindowsHello](xref:titleid.playfabapi.com.client.authentication.loginwithwindowshello). These require a separate SDK installed into your game. Secure authentication happens within the 3rd party SDK.
 
 In all 3rd party options, those services process the login credentials, and you pass a secure token to the appropriate PlayFab login method. PlayFab remains unaware of the login credentials for those services.
 
@@ -93,7 +93,7 @@ It is possible to set up an insecure recoverable login for a legitimate (if limi
 
 Specifically, [LoginWithGameCenter](xref:titleid.playfabapi.com.client.authentication.loginwithgamecenter) is considered an *insecure login mechanism*, and you should use it with *extreme* care (or not at all).
 
-**GameCenter** is a secure login specifically between an **iOS** device and the **GameCenter** service, but unlike **Apple's Identity Verification** service, there is *no* secure authentication option for a 3rd party service like PlayFab. Even so, some developers are very familiar with **GameCenter**, and wish to use it as their recoverable login mechanism.
+GameCenter is a secure login specifically between an iOS device and the GameCenter service, but unlike Apple's Identity Verification service, there is *no* secure authentication option for a 3rd party service like PlayFab. Even so, some developers are very familiar with GameCenter, and wish to use it as their recoverable login mechanism.
 
 ### Good practice
 
@@ -109,7 +109,7 @@ PlayFab can be a useful cloud-save option for this type of game using this mecha
 
 Anonymous login is great, and it provides the user with a fully automated login process. The downside is account recovery, which is sometimes impossible without a recoverable login.
 
-The following flow-chart describes anonymous login followed by adding a recoverable login mechanism.
+The following flowchart describes anonymous login followed by adding a recoverable login mechanism.
 
 ![PayFab anonymous login and recoverable login mechanism](../media/tutorials/playfab-anonymous-login-and-recoverable-login.png)  
 

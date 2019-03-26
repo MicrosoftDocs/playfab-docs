@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Setting up PlayFab authentication using Facebook and Unity
 
-This tutorial guides you through an example of PlayFab authentication using **Facebook** and **Unity**.
+This tutorial guides you through an example of PlayFab authentication using Facebook and Unity.
 
 ## Requirements
 
@@ -48,7 +48,7 @@ A new **Application** pop-up will open.
 - Then move to the **Basic** sub-tab **(2)**.
 - Locate your **Application ID (3)**.
 - Copy it somewhere to a safe place that is easily accessed.
-We will use it later to set up the **Facebook SDK**.
+We will use it later to set up the Facebook SDK.
 
 ![Facebook save app ID](media/tutorials/facebook-save-app-id.png)  
 
@@ -201,9 +201,9 @@ public class PlayfabFacebookAuthExample : MonoBehaviour
 
 ### Running the application on Android
 
-Before launching the application on **Android**, you are required to perform additional configuration steps:
+Before launching the application on Android, you are required to perform additional configuration steps:
 
-- First, you need to ensure you have the **Android** platform selected, and the unique **Package ID** set (as indicated in the example below.
+- First, you need to ensure you have the Android platform selected, and the unique **Package ID** set (as indicated in the example below.
 
 > [!NOTE]
 > Please make sure to create your own *unique* **Package ID**.
@@ -211,7 +211,7 @@ Before launching the application on **Android**, you are required to perform add
 ![Set Android package ID](media/tutorials/facebook-unity/set-android-package-id.png)  
 
 > [!TIP]
-> **Optional step**:  Install [Open SSL](https://wiki.openssl.org/index.php/Binaries) and add it to the **PATH** environment variable. If it is missing, **Unity** will produce a harmless error during the build. This error does *not* stop the build, or effect the execution.
+> **Optional step**:  Install [Open SSL](https://wiki.openssl.org/index.php/Binaries) and add it to the **PATH** environment variable. If it is missing, Unity will produce a harmless error during the build. This error does *not* stop the build, or effect the execution.
 
 Next, in your **Facebook Application** console:
 
@@ -231,9 +231,9 @@ A panel with platform-specific settings will appear.
 
 ![Android platform settings](media/tutorials/facebook-unity/android-platform-settings.png)
 
-Build and run the **Application** normally on your **Android** Device.
+Build and run the Application normally on your Android Device.
 
-- The **Application** should welcome you with a **Facebook** sign-in page.
+- The Application should welcome you with a Facebook sign-in page.
 - Once you sign in, watch the message on the screen as it changes.
 - Finally, you should be presented with a message indicating successful authentication in PlayFab. The entire procedure is illustrated in the example provided below.
 
@@ -241,7 +241,7 @@ Build and run the **Application** normally on your **Android** Device.
 
 ### Running the Application on iOS
 
-Before launching the **Application** on **iOS**, you have to perform additional configuration steps.
+Before launching the Application on iOS, you have to perform additional configuration steps.
 
 - First, you must ensure you have the **iOS** platform selected **(1)**.
 - And a unique **Bundle ID** set **(4)** as indicated in the example provided below.
@@ -287,18 +287,18 @@ A panel with platform-specific settings will appear.
 
 Finally, run the application as normal.
 
-- Once started, the application will allow you to log in to **Facebook** using the web browser.
+- Once started, the application will allow you to log in to Facebook using the web browser.
 - Once done, PlayFab authentication will be invoked, and a message will indicate the result.
 
 ![PlayFab Facebook authentication on iOS](media/tutorials/facebook-unity/playfab-facebook-auth-on-ios.png)
 
 ### Checking through PlayFab Game Manager
 
-Open your **PlayFab** title in Game Manager.
+Open your PlayFab title in Game Manager.
 
 - Navigate to the dashboard.
-- Refer to the **PlayStream Debugger** panel to check for the latest events. You should see the **Facebook** authentication event as displayed in the following example.
+- Refer to the **PlayStream Debugger** panel to check for the latest events. You should see the Facebook authentication event as displayed in the following example.
 
 ![PlayStream Debugger Facebook authentication event](media/tutorials/facebook-unity/playfab-facebook-auth-event.png)
 
-At this point you have successfully integrated **Facebook Authentication** for PlayFab.
+At this point you have successfully integrated Facebook Authentication for PlayFab.
