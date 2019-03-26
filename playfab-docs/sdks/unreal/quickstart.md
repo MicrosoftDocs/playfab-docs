@@ -35,11 +35,9 @@ OS: This guide is written for Windows 10, however, steps should be similar for M
 
 1. Download Unreal Engine.
   
-2. Register and log in on the Unreal website.
-    - [https://accounts.unrealengine.com/login/index](https://accounts.unrealengine.com/login/index)
+2. Register and log in on the Unreal website: [https://accounts.unrealengine.com/login/index](https://accounts.unrealengine.com/login/index)
   
-3. Download the Epic Games Launcher.
-    - [https://www.unrealengine.com/dashboard](https://www.unrealengine.com/dashboard)
+3. Download the Epic Games Launcher: [https://www.unrealengine.com/dashboard](https://www.unrealengine.com/dashboard)
 
 4. Open the Epic Games Launcher.
 
@@ -212,7 +210,7 @@ Earlier, you created a level with a LoginActor entity already placed in the worl
 1. Load this level.
 
 2. Press Play. You will immediately see the following in the output log: 
-    - LogTemp: Congratulations, you made your first successful API call!
+LogTemp: Congratulations, you made your first successful API call!
 
     ![C++ log verify](media/ue-log-verify.png) 
 

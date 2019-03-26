@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Setting up PlayFab authentication using Facebook and HTML5
 
-This tutorial has been created to guide you through PlayFab authentication using **Facebook** and **HTML5/JavaScript**.
+This tutorial has been created to guide you through PlayFab authentication using Facebook and HTML5/JavaScript.
 
 ## Requirements
 
@@ -20,7 +20,7 @@ This tutorial has been created to guide you through PlayFab authentication using
 - Registered [PlayFab](https://playfab.com/) title
 - Familiarity with [Login basics and Best Practices](../../authentication/login/login-basics-best-practices.md)
 
-- A Minimal server with a valid domain name to serve static **HTML** file.
+- A Minimal server with a valid domain name to serve static HTML file.
 
 > [!NOTE]
 > If you are unsure if you have the proper requirements for this activity, please consult the [Running an HTTP server for testing](running-an-http-server-for-testing.md) tutorial.
@@ -103,7 +103,7 @@ The **Website** configuration panel should now appear.
 
 ## Testing
 
-Use the following **HTML** file to test your PlayFab authentication using **Facebook**.
+Use the following HTML file to test your PlayFab authentication using Facebook.
 
 > [!NOTE]
 > Make sure to replace **YOUR-APPLICATION-ID** and **YOUR-PLAYFAB-TITLE** with your own.
@@ -192,10 +192,10 @@ Use the following **HTML** file to test your PlayFab authentication using **Face
 
 - Request the following file from your server using the domain you set up during **Facebook Application** configuration (**playfab.example** in our case).
 - Once the **Facebook Auth Example** page opens, select **Log In with Facebook** button **(1)**.
-- Follow any **Facebook** instructions in the pop-up window.
+- Follow any Facebook instructions in the pop-up window.
 - Watch the output **(2)**.
 
 ![Facebook Auth Example](media/tutorials/facebook-html5/facebook-auth-example.png)  
 
 - You will obtain a PlayFab session ticket.
-- At this point you have successfully configured PlayFab and **Facebook** authentication using **HTML5** and **JavaScript**.
+- At this point you have successfully configured PlayFab and Facebook authentication using HTML5 and JavaScript.
