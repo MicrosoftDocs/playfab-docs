@@ -33,7 +33,7 @@ All PlayStream events are formatted as JSON objects and share the following comm
 | :--------------------|:-------------------|:----------------------|
 |CustomTags|Object|Key-Value pair storage. Any provider of this event schema is allowed to send additional values in this property.|
 |EntityId|String|The identifier for the entity (title, player, etc) to which this event applies.|
-|EntityType|String|The type of entity (player, title, etc.) to which this event applies. If PlayFab is meant to take action on this entity, then the EntityType must be either 'player', 'character', or 'title'. It is required that any entity type that PlayFab does not currently parse should be prepended with a namespace (like 'com.mygame.guild') as PlayFab may begin to parse root entities at any time.|
+|EntityType|String|The type of entity (player, title, etc.) to which this event applies. If PlayFab is meant to take action on this entity, then the EntityType must be either 'player', 'character', or 'title'. It is required that any entity type that PlayFab does not currently parse should be pre-pended with a namespace (like 'com.mygame.guild') as PlayFab may begin to parse root entities at any time.|
 |EventId|String|PlayFab-assigned unique identifier for this event.|
 |EventName|String|The name of this event.|
 |EventNamespace|String|The assigned namespacing for this event. For example: 'com.myprogram.ads'|
