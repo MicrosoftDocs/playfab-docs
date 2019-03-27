@@ -12,21 +12,21 @@ ms.localizationpriority: medium
 
 # Making Webhook calls from CloudScript
 
-One of the less well-known features of PlayFab’s **CloudScript** is that you can make Webhook calls from it to any web **API** endpoint, using standard Representational State Transfer (REST) calls.
+One of the less well-known features of PlayFab’s CloudScript is that you can make Webhook calls from it to any web API endpoint, using standard Representational State Transfer (REST) calls.
 
-This allows titles to make calls to basic informational services, but it *also* enables more complex scenarios (such as using **OAuth**), to secure a communication to an endpoint you own.
+This allows titles to make calls to basic informational services, but it *also* enables more complex scenarios (such as using OAuth), to secure a communication to an endpoint you own.
 
-This tutorial discusses making Webhook calls from **CloudScript**, for both *non-secure* and *secure* scenarios.
+This tutorial discusses making Webhook calls from CloudScript, for both *non-secure* and *secure* scenarios.
 
-As a REST call, the structure of a Webhook call from **CloudScript** is simple. The elements to be specified are:
+As a REST call, the structure of a Webhook call from CloudScript is simple. The elements to be specified are:
 
-- The **URL** endpoint.
+- The URL endpoint.
 - The REST method (post, get, put, or delete).
 - Any headers required.
-- The content type (most commonly application/**JSON**).
+- The content type (most commonly application/JSON).
 - The content itself (body).
 
-For example, a basic web **API** call to get the version number of your server-side logic might look something like the example provided below.
+For example, a basic web API call to get the version number of your server-side logic might look something like the example provided below.
 
 ```javascript
 // CloudScript
@@ -40,14 +40,14 @@ var responseString =  http.request(url,method,contentBody,contentType,headers);
 
 The body of the response is returned in stringified form, so that you can subsequently use it in the rest of the script.
 
-In this case, since we were querying version, you might write the response out to the log like the one provided here.
+In this case, since we were querying version, you might write the response out to the `log` like the one provided here.
 
 ```javascript
 // CloudScript
 log.info(responseString);
 ```
 
-The response back to the client at the end of running the **CloudScript** might look like this example provided below.
+The response back to the client at the end of running the CloudScript might look like this example provided below.
 
 ```json
 //HTTP Response
@@ -74,7 +74,7 @@ The response back to the client at the end of running the **CloudScript** might 
 
 If, however, you have a *secure* service you need to communicate with, you will *first* need to exchange credentials with that service to establish identity.
 
-For an **OAuth** solution, that means requesting a Bearer Access token, using your client ID and secret. This will vary based upon your specific **OAuth** implementation, but your call could look something like the following example.
+For an OAuth solution, that means requesting a Bearer Access token, using your client ID and secret. This will vary based upon your specific OAuth implementation, but your call could look something like the following example.
 
 ```javascript
 //CloudScript
@@ -89,7 +89,7 @@ Headers["client_secret"] = clientSecret;
 var tokenResponse =  http.request(url,method,contentBody,contentType,headers);
 ```
 
-Given a good response, you would *then* be able to parse the Bearer Access token from the response like this (again, this *does depend* upon the specifics of your **OAuth** implementation, but this is a fairly common pattern for this form of authentication).
+Given a good response, you would *then* be able to parse the Bearer Access token from the response like this (again, this *does depend* upon the specifics of your OAuth implementation, but this is a fairly common pattern for this form of authentication).
 
 ```javascript
 //CloudScript
@@ -97,7 +97,7 @@ var parsedData = JSON.parse(tokenResponse);
 var bearer_access_token = parsedData["access_token"];
 ```
 
-This would then allow you to call into your **OAuth**-secured functionality by providing the Bearer Access token.
+This would then allow you to call into your OAuth-secured functionality by providing the `bearer_access_token`.
 
 ```javascript
 //CloudScript
@@ -111,8 +111,8 @@ Headers["authorization"] = "Bearer " + bearer_access_token;
 
 So the basic pattern in this case is that you use your application’s client ID and secret, in order to obtain the unique Bearer Access token for the call - and then use it to secure that call.
 
-As you can see, these calls would all be made using **SSL**, in order to help prevent man-in-the-middle attacks.
+As you can see, these calls would all be made using SSL, in order to help prevent man-in-the-middle attacks.
 
-Using **HTTP** calls from **CloudScript**, you can make calls into any other web **API** you need to for your title. This allows you to extend your title functionality beyond even what PlayFab offers directly, giving you the option to make and use your own custom services, or access others.
+Using HTTP calls from CloudScript, you can make calls into any other web API you need to for your title. This allows you to extend your title functionality beyond even what PlayFab offers directly, giving you the option to make and use your own custom services, or access others.
 
-And because this all takes place in **CloudScript**, it provides a server-authoritative context in which to make those calls, so that they can have the necessary protections in your **CloudScript** to help prevent players from cheating, or accessing features and data they shouldn’t.
+And because this all takes place in CloudScript, it provides a server-authoritative context in which to make those calls, so that they can have the necessary protections in your CloudScript to help prevent players from cheating, or accessing features and data they shouldn’t.
