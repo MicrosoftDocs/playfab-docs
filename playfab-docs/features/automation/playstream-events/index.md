@@ -22,33 +22,39 @@ PlayStream offers the following features to developers:
 
 Let’s look at these features in more detail.
 
-## PlayStream Event Pipeline and Monitor
+## PlayStream event pipeline and monitor
 
-The easiest way to see the event pipeline in action is through the PlayStream Debugger. You’ll notice the monitor as soon as you click on the PlayStream Monitor tab for your game.
+The easiest way to see the event pipeline in action is through the PlayStream Debugger. You’ll notice the monitor as soon as you click on the **PlayStream Monitor** tab for your game.
 
 ![PlayStream Monitor](media/playstream-monitor.png)
 
-The PlayStream monitor is a real-time stream of all the events for your game, including any custom events you choose to send, using our WriteEvent API methods. This is immensely valuable during development, as it gives you a way to immediately see what’s happening on the back end as you test out your client- and server-side code, linking you straight to the player accounts so that you can check them against the game logic you’re working on.
+The PlayStream monitor is a real-time stream of all the events for your game, including any custom events you choose to send, using our WriteEvent API methods.
 
-There are several clickable fields in each event. If you click the “(i)” information circle, you will see the raw event JSON data.
+This is immensely valuable during development, as it gives you a way to immediately see what’s happening on the back end as you test out your client- and server-side code, linking you straight to the player accounts so that you can check them against the game logic you’re working on.
+
+There are several selectable fields in each event. If you select the “(i)” information circle, you will see the raw event JSON data.
 
 ![Event Raw JSON Data](media/playstream-event-rawjson.png)
 
-You can also click the player’s ID to jump straight to the player’s profile, and certain other events have other clickable fields.
+You can also select the player’s ID to jump straight to the player’s profile.  Certain other events also have  selectable fields.
 
-## Player Segmentation and Actions
+## Player segmentation and actions
 
-Using those events, you can set up segments which define players within your user base based upon most player properties. This all happens in real time -- there should be no perceptual lag, even at large scale. If you can tie an event to the thing you want to use as a differentiating factor, you can make a segment for it. And segments will apply retroactively to all players, based on the data in their profiles -- so if you define a segment of players where XP > 3,000, then every player with XP > 3,000 will now be in that segment.
+Using those events, you can set up segments which define players within your users, based upon most player properties. This all happens in real time - there should be no perceptual lag, even at large scale.
+
+If you can tie an event to the thing you want to use as a differentiating factor, you can make a segment for it. And segments will apply retroactively to *all* players, based on the data in their profiles -- so if you define a segment of players where XP > 3,000, then every player with XP > 3,000 will now be in that segment.
 
 ![High XP Segment Definition](media/playstream-segment-highxp.png)
 
-This particular segment will be evaluated anytime the statistic called "Total_XPGained" changes. If the condition (> 3000) evaluates to true, then the player will enter the “High XP Players" segment, and the corresponding action(s) will be triggered -- in this case, it will send a push notification, and grants gold to the player. You can also trigger a different custom action(s) when the player leaves a segment, allowing you to make any other changes needed as a result.
+This particular segment will be evaluated anytime the statistic called "Total_XPGained" changes. If the condition (> 3000) evaluates to true, then the player will enter the “High XP Players" segment, and the corresponding action(s) will be triggered -- in this case, it will send a push notification, and grants gold to the player.
+
+You can also trigger a different custom action(s) when the player leaves a segment, allowing you to make any other changes needed as a result.
 
 There are a variety of basic actions available, including granting an item to the player, granting virtual currency, changing a statistic, banning a player, sending a player an email or sending a Push notification. You can also trigger custom CloudScript to be run instead.
 
 ## Rules and Actions
 
-The same action system shown above can also be utilized to respond on specific events coming from your game.  For example, the following rule demonstrates how when a custom event (Client_StoreVisit) is seen, the player receives some virtual currency and receives a push notification thanking them for their visit.
+The same action system shown above can also be utilized to respond on specific events coming from your game.  For example, the rule shown below demonstrates how when a custom event (Client_StoreVisit) is seen, the player receives some virtual currency, and receives a push notification thanking them for their visit.
 
 ![Rule responding to custom event](media/playstream-rule.png)
 
@@ -56,7 +62,9 @@ Using rules and actions, you can affect LiveOps behaviors in your game without m
 
 ## Webhooks
 
-You can also set up webhooks, such that some or all of the events going through PlayStream will get pushed out to an external service. For example, you could use this feature to call your own back end server on any player login, as follows:
+You can also set up webhooks, such that some or all of the events going through PlayStream will get pushed out to an external service.
+
+For example, you could use the feature sown below to call your own back end server on any player login.
 
 ![Webhook Configuration](media/playstream-webhook.png)
 
@@ -68,7 +76,7 @@ You can also access a historical archive of events. By default, events are kept 
 
 ![Event History](media/playstream-eventHistory.png)
 
-You can click on a particular event to see details for that particular event, including its delivery history. This particular event below, for example, has been delivered to three different Marketplace Add-ons - **Appuri** (both legacy and current), and Segment.com.
+You can select a particular event to see details for that particular event, including its delivery history. For example, the event shown below has been delivered to three different Marketplace Add-ons - **Appuri** (both legacy and current), and **Segment.com**.
 
 ![Event History Details](media/playstream-eventHistoryDetails.png)
 

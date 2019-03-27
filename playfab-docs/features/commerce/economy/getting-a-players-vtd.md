@@ -12,9 +12,17 @@ ms.localizationpriority: medium
 
 # Getting a player's Value-to-Date (VTD)
 
-Player profiles now track the total amount spent by a player as both a total across all currencies converted to **USD** in the field **totalValueToDateInUSD** and a **Dictionary** field named **valuesToDate** of **Currency**, and total spent in that **Currency**. Both totals are expressed in **cents** or **centesimal**.
+Player profiles now track the total amount spent by a player as both:
 
-Along with this, there are two new segment predicates, **TotalValueToDate** (**Total value to date in USD** in the **UI**) and **ValueToDate** (**Value to date** in the **UI**).
+- A total across all currencies converted to **USD** in the field **totalValueToDateInUSD**.
+- A **Dictionary** field named **valuesToDate of Currency**, and **total spent in that Currency**.
+
+Both totals are expressed in cents or centesimal.
+
+Along with this, there are two new segment predicates:
+
+ 1. **TotalValueToDate** (**Total value to date in USD** in the **UI**).
+ 1. **ValueToDate** (**Value to date** in the **UI**).
 
 ## Examples
 
@@ -28,7 +36,7 @@ Along with this, there are two new segment predicates, **TotalValueToDate** (**T
 
 ## Player profile details
 
-The player profile model now contains the following fields:
+The player profile model now contains the fields shown below.
 
 ```json
 // JSON
@@ -38,7 +46,7 @@ The player profile model now contains the following fields:
 }
 ```
 
-The following **JSON** shows the fields with example values:
+The JSON that follows shows the fields with example values.
 
 ```json
 // JSON
