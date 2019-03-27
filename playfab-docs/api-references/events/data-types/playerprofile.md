@@ -33,7 +33,7 @@ Below is a description of the Player Profile table queried from the Players page
 |Locations_LastLogin_Longitude|Real|Longitude coordinate of the player's geographic location on last login|
 |Origination|[LoginIdentityProvider](loginidentityprovider.md)|Player account origination|
 |PlayerId|String|PlayFab Player ID|
-|PlayerMemberships|Dynamic|Array of memberships this player owns|
+|PlayerMemberships|[PlayerMemberships](playermemberships.md)|Array of memberships this player owns|
 |PlayerStatistics|[PlayerStatistic](playerstatistic.md)|Array of player statistics|
 |PublisherId|String|Publisher this player belongs to|
 |PushNotificationRegistrations|[PushNotificationRegistration](pushnotificationregistration.md)|Array of configured push notification end points|
