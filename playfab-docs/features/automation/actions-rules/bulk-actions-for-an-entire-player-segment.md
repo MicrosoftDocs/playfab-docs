@@ -26,7 +26,7 @@ In this tutorial, based on our **Unicorn Battle Sample App**, we will grant a sp
 
 ## Prerequisites
 
-You will need to install the **Unicorn Battle Sample App** to run this tutorial. You can read more about it [in our blog](https://playfab.com/check-out-unicorn-battle/), or go directly to the [GitHub repository](https://github.com/PlayFab/UnicornBattle) and follow the instructions there.
+You will need to install the Unicorn Battle Sample App to run this tutorial. You can read more about it [in our blog](https://playfab.com/check-out-unicorn-battle/), or go directly to the [GitHub repository](https://github.com/PlayFab/UnicornBattle) and follow the instructions there.
 
 ![Unicorn Battle - Launch Screen](media/tutorials/unicorn-battle-launch-screen.png)  
 
@@ -87,7 +87,7 @@ Now, let's check out the task execution detail. Select the completed task in the
 - Who ran it.
 - If it was scheduled manually, etc.
 
-If the task is still in progress, you can check the **Task Instance Detail** view for the progress and see the estimated time remaining.
+If the task is still in progress, you can check the **Task Instance Detail** view for the progress, and see the estimated time remaining.
 
 ![Game Manager - Servers - Tasks - Task Instance Details](media/tutorials/game-manager-servers-tasks-task-instance-details.png)
 
@@ -111,7 +111,7 @@ Here are a few ideas for other things you can try...
 
 ### Schedule your tasks
 
-You don’t need to run tasks manually - you can schedule a task to run *automatically* on a *recurring* basis. For example, you could create a segment of all players who played the game in the last 24 hours, then run a scheduled tasks each day to give those players an **XP** boost.
+You don’t need to run tasks manually - you can schedule a task to run *automatically* on a *recurring* basis. For example, you could create a segment of all players who played the game in the last 24 hours, then run a scheduled tasks each day to give those players an XP boost.
 
 ![Game Manager - PlayStream - Segments - Players in 24 hours](media/tutorials/game-manager-segments-players-in-24-hours.png)
 
@@ -119,7 +119,7 @@ You don’t need to run tasks manually - you can schedule a task to run *automat
 
 ### Run CloudScript for each player
 
-The most powerful use of bulk actions is running an arbitrary **CloudScript** function for each player. This **CloudScript** can do anything the PlayFab server **API** can do - grant items, currency, inspect and change player data, and so on.
+The most powerful use of bulk actions is running an arbitrary CloudScript function for each player. This CloudScript can do anything the PlayFab server API can do - grant items, currency, inspect and change player data, and so on.
 
 For example, imagine you have an event leaderboard that resets every week, and you want to go through all players and give a reward based on the value of the *last* event before it reset. The example provided below is using **Unicorn Battle**.
 
@@ -127,11 +127,11 @@ For example, imagine you have an event leaderboard that resets every week, and y
 
    ![Players - Leaderboards - Edit Leaderboard](media/tutorials/players-leaderboards-edit-leaderboard.png)
 
-2. Create a new **PlayStream** action that increments this **Event_QuestsCompleted** stat whenever **Total_QuestsCompleted** is changed.
+2. Create a new PlayStream action that increments this **Event_QuestsCompleted** stat whenever **Total_QuestsCompleted** is changed.
 
    ![PlayStream - Event Actions - Edit Event Action](media/tutorials/playstream-event-actions-edit-event-action.png)
 
-3. Write a **CloudScript** function to be called by a Bulk Action task which will go through players and give rewards based on the last value.
+3. Write a CloudScript function to be called by a Bulk Action task which will go through players and give rewards based on the last value.
 
 ```javascript
 // this function will be called as a bulk action by a scheduled task for players in a segment
@@ -168,14 +168,14 @@ handlers.GiveTieredReward = function (args, context) {
 }
 ```
 
-4. Set the new **CloudScript** version to **Live**, and create a new task that calls **GiveTieredReward** function for all players. Don't forget to **Save** and **Run** the task.
+4. Set the new CloudScript version to **Live**, and create a new task that calls **GiveTieredReward** function for all players. Don't forget to **Save** and **Run** the task.
 
    ![Servers - Tasks - New Scheduled Task](media/tutorials/servers-tasks-new-scheduled-task.png)
 
-5. You should notice events from this task appear in the **PlayStream** event debugger.
+5. You should notice events from this task appear in the PlayStream event debugger.
 
    ![PlayStream - Dashboard - Event Debugger](media/tutorials/playstream-dashboard-event-debugger.png)
 
-6. You can select any player triggered action executed **CloudScript** event (by selecting the time stamp), and see the detailed result of **CloudScript** execution for each player. This includes useful diagnostic information such as the snapshot of the player profile at the time of the **CloudScript** execution.
+6. You can select any player triggered action executed CloudScript event (by selecting the time stamp), and see the detailed result of CloudScript execution for each player. This includes useful diagnostic information such as the snapshot of the player profile at the time of the CloudScript execution.
 
    ![PlayStream - Dashboard - Raw Event JSON](media/tutorials/playstream-dashboard-raw-event-json.png)

@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Setting up PlayFab authentication using Kongregate and HTML5
 
-This tutorial shows you the minimal setup required to authenticate your players in PlayFab using **Kongregate** and **HTML5/JavaScript**.
+This tutorial shows you the minimal setup required to authenticate your players in PlayFab using Kongregate and HTML5/JavaScript.
 
 ## Requirements
 
@@ -23,7 +23,7 @@ This tutorial shows you the minimal setup required to authenticate your players 
 
 ## Setting up a Kongregate app
 
-**Kongregate** requires you to upload a preview version of the app, before you gain access to the necessary **API** information.
+Kongregate requires you to upload a preview version of the app, before you gain access to the necessary API information.
 
 To do this, we need to prepare an **index.html** file with the following content.
 
@@ -88,7 +88,7 @@ A new page will open, allowing you to set up **Kongregate** integration.
 
 ![PlayFab set up Kongregate integration](media/tutorials/playfab-set-up-kongregate-integration.png)
 
-If you receive no error message, then you have configured PlayFab title integration with your **Kongregate** application.
+If you receive no error message, then you have configured PlayFab title integration with your Kongregate application.
 
 ## Preparing some code
 
@@ -183,7 +183,7 @@ Use the example code shown below to populate the **index.html** for your game.
 
 ## Testing
 
-Remember that **URL** we asked you to save in a safe and accessible place a little earlier?  Use it now to access your **Application Upload** page.
+Remember that URL we asked you to save in a safe and accessible place a little earlier?  Use it now to access your **Application Upload** page.
 
 - Select **index.html** as your **Game File (1)**.
 - Set up the screen size **(2)**.
@@ -192,10 +192,10 @@ Remember that **URL** we asked you to save in a safe and accessible place a litt
 
 ![Kongregate application upload page](media/tutorials/kongregate-app-upload-page.png)
 
-Once the preview loads, wait for the **Application** to obtain the **Kongregate User ID** and **Username**.
+Once the preview loads, wait for the Application to obtain the **Kongregate User ID** and **Username**.
 
 - When that has happened, select the **PlayFab Login With Kongregate** button.
 - After a brief pause, you should receive an **Authenticated via PlayFab** message.
-- At this point you have successfully logged in using PlayFab and **Kongregate**!
+- At this point you have successfully logged in using PlayFab and Kongregate!
 
 ![Testing PlayFab Login with Kongregate](media/tutorials/kongregate-html5/testing-playfab-login-with-kongregate.png)

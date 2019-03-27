@@ -12,14 +12,14 @@ ms.localizationpriority: medium
 
 # ES6 features in CloudScript
 
-The **CloudScript** runtime environment supports most of the modern **ECMAScript 6** features. While a majority of these features are syntactical tricks, one can use them to improve and clean the **CloudScript** code base.
+The CloudScript runtime environment supports most of the modern ECMAScript 6 features. While a majority of these features are syntactical tricks, one can use them to improve and clean the CloudScript code base.
 
-A complete overview of **ES6** features is available in this [Cheat Sheet](https://devhints.io/es6).
+A complete overview of ES6 features is available in this [Cheat Sheet](https://devhints.io/es6).
 
-This tutorial shows several tricks you may use in your **CloudScript**.
+This tutorial shows several tricks you may use in your CloudScript.
 
 > [!NOTE]
-> Some of the features require **Strict** mode. Enable this mode by placing the following snippet as the very first line of your **CloudScript** file:
+> Some of the features require *Strict* mode. Enable this mode by placing the following snippet as the very first line of your CloudScript file:
 > `use strict;`
 
 ## String interpolation
@@ -40,7 +40,7 @@ You get ${prizeAmount} coins for your efforts.`;
 
 ## New methods and arrow functions
 
-**ES6** brings *new* syntax for defining functions using the arrow operator `=>`. The snippet displayed below shows approximate translations for certain operator usages.
+ES6 brings *new* syntax for defining functions using the arrow operator `=>`. The snippet displayed below shows approximate translations for certain operator usages.
 
 ```javascript
 // The following snippets:
@@ -137,11 +137,11 @@ installHandlers(ProductionHandlers);
 
 ## Getters
 
-One may use **Getters** to encapsulate common **API** calls into a more syntactically pleasing look and feel. Consider the following **TitleData** state.
+One may use Getters to encapsulate common API calls into a more syntactically pleasing look and feel. Consider the following **TitleData** state.
 
 ![Game Manager - Title Data](media/tutorials/game-manager-title-data.png)  
 
-The following snippet shows how to retrieve **Foo** and **Bar** data from **TitleData** and then use them in a very straightforward way.
+The following snippet shows how to retrieve `foo` and `bar` data from `TitleData` and then use them in a very straightforward way.
 
 ```javascript
 'use strict'
