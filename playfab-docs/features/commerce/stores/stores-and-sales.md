@@ -31,7 +31,7 @@ Alternately, a store allows you to single out a specific set of items, and make 
 
 Catalog prices should be fixed long-term, and define the *real* price of an item.
 
-Stores should be *temporary*, being added and removed according to your **LiveOps** strategies.
+Stores should be *temporary*, being added and removed according to your LiveOps strategies.
 
 > [!NOTE]
 > Expect to get most of your revenue by cycling stores, and transitioning items in and out of active stores.
@@ -44,11 +44,11 @@ Please note the following information about stores and currencies:
 
 - **Zero Cost**: If a cost is unset (**null**) or **zero**, it cannot be purchased using that currency. This is true for both catalogs and stores. You can make items available for exclusively free currencies, or exclusively premium currencies by leaving entries blank, or resetting them to **zero**.
 
-- **Real Money**: The **RM** currency is available in all catalogs and stores. **RM** is a restricted currency key that indicates *real money transactions only*. You should only charge **RM** for items of significant value, or bundles/containers which contain premium currency.
+- **Real Money**: The **RM** currency is available in all catalogs and stores. RM is a restricted currency key that indicates *real money transactions only*. You should only charge RM for items of significant value, or bundles/containers which contain premium currency.
 
 - **Prices are Either/Or**: If two prices are defined on an item, the item can be purchased for one or the other. It is *not possible* to require two currencies for a single item.
 
-## Defining a real-money store
+## Defining a real money store
 
 In your **Game Manager**:
 
@@ -81,7 +81,7 @@ More typically, your game should allow purchase of a premium virtual currency us
 
 Let's get into the gritty details and code for trading virtual currency for in-game items. The steps are nearly identical to the preceding example.
 
-This time we will create 3 new items: **Small**, **Medium**, and **Large Health Potions** with a *free* **Currency** price, and a *premium* **Currency** price. We'll create a new **Store** which puts these **Items** on sale.
+This time we will create 3 new items: **Small**, **Medium**, and **Large Health Potions** with a *free* **Currency** price, and a *premium* **Currency** price. We'll create a new Store which puts these Items on sale.
 
 ![Game Manager - Economy - New Store](media/tutorials/game-manager-economy-new-store.png)  
 
@@ -112,9 +112,9 @@ Games with stores should call and cache their primary catalog with **GetCatalog*
 > [!TIP]
 > Players are more likely to buy items on sale, *especially if the sale is a limited-time offer*.
 
-At this point, it is the responsibility of your **GUI** code to present the user with the opportunity to select which items they wish to buy and how many.
+At this point, it is the responsibility of your GUI code to present the user with the opportunity to select which items they wish to buy and how many.
 
-- Between your gme and PlayFab, the remaining steps are several separate **API** calls, but you can make the sequence of multiple calls invisible to the player.
+- Between your gme and PlayFab, the remaining steps are several separate API calls, but you can make the sequence of multiple calls invisible to the player.
 
 - Collect all information about the purchase up front, and make the full sequence of calls after *all* player input is collected.
 
@@ -178,7 +178,7 @@ void FinishPurchase(string orderId)
 
 ### Best practice
 
-Any single **API** call can fail for a variety of reasons. Wireless devices such as phones can often have intermittent connectivity, and any internet call can fail due to random latency.
+Any single API call can fail for a variety of reasons. Wireless devices such as phones can often have intermittent connectivity, and any internet call can fail due to random latency.
 
 Each call should check for multiple failure conditions. If the response indicates that the purchase request is invalid (unable to buy multiple items with a single currency for example) then you should abort (and possibly re-design your store).
 
@@ -188,7 +188,7 @@ If the response indicates a connectivity failure, you can try again with an expo
 
 Stores are a great mechanism for encouraging your players to purchase items.
 
-Stores work with any kind of virtual currency. Stores can also work with real money through an alternate set of **API** methods.
+Stores work with any kind of virtual currency. Stores can also work with real money through an alternate set of API methods.
 
 - You can set up a single-item purchase with VC via [PurchaseItem](xref:titleid.playfabapi.com.client.playeritemmanagement.purchaseitem).
 - You can set up a multiple-item purchase with VC via the sequence: [StartPurchase](xref:titleid.playfabapi.com.client.playeritemmanagement.startpurchase), [PayForPurchase](xref:titleid.playfabapi.com.client.playeritemmanagement.payforpurchase), and [ConfirmPurchase](xref:titleid.playfabapi.com.client.playeritemmanagement.confirmpurchase). To perform real money purchases, consult our advanced tutorial [Non-Receipt Payment Processing](../economy/non-receipt-payment-processing.md).

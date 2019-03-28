@@ -94,12 +94,12 @@ Our other categorization is by rarity, so we'll create an alternate set of table
 
 ## Using drop tables
 
-You can access drop tables directly by using one of the two server **API** methods:
+You can access drop tables directly by using one of the two server API methods:
 
 - [GetRandomResultTables](xref:titleid.playfabapi.com.server.playeritemmanagement.getrandomresulttables)
 - [EvaluateRandomResultTable](xref:titleid.playfabapi.com.server.playeritemmanagement.evaluaterandomresulttable)
 
-Using the server **API** method, you can read the raw drop table data which we just entered into Game Manager.
+Using the server API method, you can read the raw drop table data which we just entered into Game Manager.
 
 > [!NOTE]
 > It does *not* roll random values or award results. This would let you read the data and parse the information however you see fit.
@@ -120,7 +120,7 @@ public void ReadDropTableData() {
 
 The result handler will receive the structure information we input above, formatted as [GetRandomResultTablesResult](xref:titleid.playfabapi.com.server.playeritemmanagement.getrandomresulttables#getrandomresulttablesresult).
 
-Alternately, you can let PlayFab evaluate the table *for* you, and give you a single item result. Doing so returns the **itemId** that can be used to generate a single item, rolled according to the weights provided.
+Alternately, you can let PlayFab evaluate the table *for* you, and give you a single item result. Doing so returns the itemId that can be used to generate a single item, rolled according to the weights provided.
 
 You can then make a second call which creates the item and gives it to the player.
 
@@ -153,7 +153,7 @@ public void OnError(PlayFabError error) {
 
 **Option 1** - Allows you to load the data once, cache it, and perform the roll *yourself* on your own game server. This has lower latency due to fewer calls to PlayFab, and allows you to customize the rolls based on game-specific logic.
 
-**Option 2** - Lets PlayFab do more of the work, but remember - multiple **API** calls means *higher* latency.
+**Option 2** - Lets PlayFab do more of the work, but remember - multiple API calls means *higher* latency.
 
 ## Advanced drop table usage (setting up a loot crate)
 
@@ -174,7 +174,7 @@ At this point, we're done with drop tables, and we're going to navigate to **Bun
 This **Bundle** area uses several features:
 
 - All items of *any* kind must have an **Item ID**.
-- A **Bundle** counts as its own **Item**, and its contents are delivered at the same time it is granted. For this reason, we're making the **Bundle** itself consumable, and it expires 15 seconds after delivery.
+- A **Bundle** counts as its own Item, and its contents are delivered at the same time it is granted. For this reason, we're making the **Bundle** itself consumable, and it expires 15 seconds after delivery.
 - We add different **Drop tables** in different quantities to ensure that **11 Items** are delivered, but different items roll on different tables.
   - First, we guarantee at least **1 legendary item**, so the first slot will roll on **Legendary Equipment**.
   - The next 3 slots roll on **Anything**, which can roll additional **Legendaries**, or roll crappy common equipment. These rolls will define a *good* roll vs. a *bad* one, as these 3 items can vary wildly.
