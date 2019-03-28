@@ -36,7 +36,7 @@ There are several selectable fields in each event. If you select the “(i)” i
 
 ![Event Raw JSON Data](media/playstream-event-rawjson.png)
 
-You can also select the player’s ID to jump straight to the player’s profile.  Certain other events also have  selectable fields.
+You can also select the player’s ID to jump straight to the player’s profile. Certain other events also have  selectable fields.
 
 ## Player segmentation and actions
 
@@ -54,7 +54,7 @@ There are a variety of basic actions available, including granting an item to th
 
 ## Rules and Actions
 
-The same action system shown above can also be utilized to respond on specific events coming from your game.  For example, the rule shown below demonstrates how when a custom event (Client_StoreVisit) is seen, the player receives some virtual currency, and receives a push notification thanking them for their visit.
+The same action system shown above can also be utilized to respond on specific events coming from your game. For example, the rule shown below demonstrates how when a custom event (Client_StoreVisit) is seen, the player receives some virtual currency, and receives a push notification thanking them for their visit.
 
 ![Rule responding to custom event](media/playstream-rule.png)
 
