@@ -12,9 +12,9 @@ ms.localizationpriority: medium
 
 # Encrypted logins
 
-PlayFab allows you to reinforce application security by protecting certain client **API** calls with custom encryption. This tutorial shows you how to enable encryption for your client.
+PlayFab allows you to reinforce application security by protecting certain client API calls with custom encryption. This tutorial shows you how to enable encryption for your client.
 
-The method we will be using allows you to protect *any* login **API** call. Since the process is *always* similar, we only show how to protect *one* particular method: **LoginWithCustomID**.
+The method we will be using allows you to protect *any* login API call. Since the process is *always* similar, we only show how to protect *one* particular method: **LoginWithCustomID**.
 
 > [!IMPORTANT]
 > Login encryption is meant to be used for *all* players after title creation, or not at all. This is *not* a feature that can be enabled at a later date. You must use it from the *very beginning* or not at all. In particular, *encrypted* players will never be able to log in *un-encrypted*, and *non-encrypted* players will never be able to become *encrypted* players.
@@ -22,15 +22,15 @@ The method we will be using allows you to protect *any* login **API** call. Sinc
 In this guide we will:
 
 1. Create a player shared secret.
-2. Introduce an **API** Policy rule to enable protection on a certain method.
+2. Introduce an API Policy rule to enable protection on a certain method.
 3. Change the client to use a player shared key to retrieve the public title key and encrypt the payload.
 
 > [!NOTE]
-> PlayFab makes the following disclaimer: "All of our **API** calls are already safely encrypted to modern standards, and the standard **API** call encryption is everything most customers will need. This feature represents an *additional* layer of security built around making it harder for players to use an unauthorized client. It is *not* foolproof - it merely increases the difficulty bar for hackers. For most developers, the mild security increase will not be worth the extra effort required."
+> PlayFab makes the following disclaimer: "All of our API calls are already safely encrypted to modern standards, and the standard API call encryption is everything most customers will need. This feature represents an *additional* layer of security built around making it harder for players to use an unauthorized client. It is *not* foolproof - it merely increases the difficulty bar for hackers. For most developers, the mild security increase will not be worth the extra effort required."
 
 ## Creating a player shared secret
 
-The PlayFab Admin **API** exposes a method to manage your player shared secrets.
+The PlayFab Admin API exposes a method to manage your player shared secrets.
 
 > [!NOTE]
 > Creating a new shared secret by a certain name will override the existing key with the same name, if any. In addition, you may have *several* shared secrets registered under different names.
@@ -63,9 +63,9 @@ The secret looks like this: **QC953WQ3TU6ZJTZMAT1FNJQIKR92FPUQTISW4Q6WD8SY841MQQ
 
 ## Updating the policy
 
-We have a new shared secret created. Now we need to tell PlayFab which **API** calls to protect.
+We have a new shared secret created. Now we need to tell PlayFab which API calls to protect.
 
-Run the code shown below to protect the **LoginWithCustomId API** call, and *unprotect* the rest of the **API** calls.
+Run the code shown below to protect the `LoginWithCustomId` API call, and *unprotect* the rest of the API calls.
 
 ```csharp
 // Set development key and title id
@@ -130,7 +130,7 @@ public static async Task SetApiPermission(bool restrictCustomId)
 
 ## Setting up the client
 
-Now when the policy is updated, you are no longer able to just call **LoginWithCustomID API**. Consider the code shown below.
+Now when the policy is updated, you are no longer able to just call `LoginWithCustomID` API. Consider the code shown below.
 
 ```csharp
 var result = await PlayFabClientAPI.LoginWithCustomIDAsync(new LoginWithCustomIDRequest()
@@ -149,7 +149,7 @@ else
 }
 ```
 
-Normally, this would log in the user without a problem. However, *now* this **API** call is *protected* - and the code will yield a **Not Authorized** error (not to be confused with **Not Authenticated**).
+Normally, this would log in the user without a problem. However, *now* this API call is *protected* - and the code will yield a **Not Authorized** error (not to be confused with **Not Authenticated**).
 
 We need to modify the client to properly encrypt the call payload. This is done in 2 steps:
 
@@ -207,4 +207,4 @@ public static async Task DoEncryptedLogin()
 }
 ```
 
-Once you run the code, you should be able to log in. Keep in mind that once a player shared secret is created, it must be hard coded into your client code, as there is *no way* to fetch or request it by using any **API** call.
+Once you run the code, you should be able to log in. Keep in mind that once a player shared secret is created, it must be hard coded into your client code, as there is *no way* to fetch or request it by using any API call.

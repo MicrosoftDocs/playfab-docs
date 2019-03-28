@@ -14,17 +14,17 @@ ms.localizationpriority: medium
 
 ## Player shared secrets
 
-Player shared secrets is a new type of pseudo-secret key which is shared amongst game clients. It can be traded with the **API** for the title's public RSA key, and can be used to perform account registration.
+Player shared secrets is a new type of pseudo-secret key which is shared amongst game clients. It can be traded with the API for the title's public RSA key, and can be used to perform account registration.
 
-Titles can have multiple player shared keys, and can set them up and revoke them at will, via the Admin **API** calls [Create](xref:titleid.playfabapi.com.admin.authentication.createplayersharedsecret), [Update](xref:titleid.playfabapi.com.admin.authentication.updateplayersharedsecret), [Delete](xref:titleid.playfabapi.com.admin.authentication.deleteplayersharedsecret), [List](xref:titleid.playfabapi.com.admin.authentication.getplayersharedsecrets).
+Titles can have multiple player shared keys, and can set them up and revoke them at will, via the Admin API calls [Create](xref:titleid.playfabapi.com.admin.authentication.createplayersharedsecret), [Update](xref:titleid.playfabapi.com.admin.authentication.updateplayersharedsecret), [Delete](xref:titleid.playfabapi.com.admin.authentication.deleteplayersharedsecret), [List](xref:titleid.playfabapi.com.admin.authentication.getplayersharedsecrets).
 
-Player shared secrets should be baked into the respective clients, as there are no client **APIs** to retrieve them - either authenticated or otherwise.
+Player shared secrets should be baked into the respective clients, as there are no client APIs to retrieve them - either authenticated or otherwise.
 
 ## Title public key
 
 The player shared secret is then sent to [GetTitlePublicKey](xref:titleid.playfabapi.com.client.authentication.gettitlepublickey) which - if the key is valid - will return a **Base 64** encoded **RSA CSP** blob byte array that can encrypt 237 bytes of data.
 
-All **APIs** that allow accounts to be created now accept posting registration request as an encrypted payload on the **EncryptedRequest** field.
+All APIs that allow accounts to be created now accept posting registration request as an encrypted payload on the **EncryptedRequest** field.
 
 > [!NOTE]
 > The standard fields **TitleId**, **InfoRequestParameters** and **CreateAccount** should *not* be included in the encrypted payload.
@@ -67,18 +67,18 @@ var createAccountResult = PlayFabClientAPI.LoginWithCustomID(postModel);
 
 ## Player secret
 
-A part of the new registration system is a new field called **PlayerSecret**. If set, it allows you to sign request headers that will be validated by the server during **API** calls to all services, including **Login Requests**.
+A part of the new registration system is a new field called **PlayerSecret**. If set, it allows you to sign request headers that will be validated by the server during API calls to all services, including Login Requests.
 
 The player secret can only be set *once* per user per title (a user with multiple titles in the same studio will need to set the player secret for each one).
 
-If the player secret isn't set during registration, it is possible to set it (if it is not already set) by calling [SetPlayerSecret](xref:titleid.playfabapi.com.client.authentication.setplayersecret). There are admin and server **APIs** that allow setting the player secret to a *new* value even if it has previously been set.
+If the player secret isn't set during registration, it is possible to set it (if it is not already set) by calling [SetPlayerSecret](xref:titleid.playfabapi.com.client.authentication.setplayersecret). There are admin and server APIs that allow setting the player secret to a *new* value even if it has previously been set.
 
 > [!NOTE]
-> Once set, the player secret should be stored securely on the device, as it is *not* recoverable if lost, and *no* **APIs** exist to recover it.
+> Once set, the player secret should be stored securely on the device, as it is *not* recoverable if lost, and *no* APIs exist to recover it.
 
 ## Using player secret to sign API requests
 
-The following code example constructs a signature header that can be used to sign **API** requests.
+The following code example constructs a signature header that can be used to sign API requests.
 
 The format for the signature header is shown below.
 
@@ -122,9 +122,9 @@ var loginResult = PLayFabClientAPI.LoginWithCustomID(postModel, customHeaders);
 
 Even *without* using the policy enforcement, if an encrypted payload is sent (or the headers are sent), they will be validated and an error will occur if they are not properly formed.
 
-To create a policy to require headers on a specific **API**, use a *Deny* statement. This creates a policy requiring headers on *all* calls you can place that aren't permitted by the *Allow* statement.
+To create a policy to require headers on a specific API, use a *Deny* statement. This creates a policy requiring headers on *all* calls you can place that aren't permitted by the *Allow* statement.
 
-Policy statements have a property called **ApiConditions**. **ApiConditions** contains a property called **HasSignatureOrEncryption** which is an enum with three possible values:
+Policy statements have a property called **ApiConditions**. ApiConditions contains a property called **HasSignatureOrEncryption**, which is an enum with three possible values:
 
 - **Any**
 - **True**
@@ -133,7 +133,7 @@ Policy statements have a property called **ApiConditions**. **ApiConditions** co
 >[!NOTE]
 > The default (if it is *not* set by the policy), is **Any**.
 
-The following example policy will allow *all* **API** calls (except un-encrypted or missing header calls) to **LoginWithCustomID**.
+The following example policy will allow *all* API calls (except un-encrypted or missing header calls) to **LoginWithCustomID**.
 
 ```json
 {
@@ -162,4 +162,4 @@ The following example policy will allow *all* **API** calls (except un-encrypted
 
 Because the *Deny* statement is **HasSignatureOrEncryption False**, those requests that *do not match* it will be rejected.
 
-However, requests that *have* signature headers or encryption will be allowed by the **Allow the rest** policy.
+However, requests that *have* signature headers or encryption will be allowed by the `Allow the rest policy`.
