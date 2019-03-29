@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 This quickstart familiarizes you with the high-level aspects of the Game Manager. For more detailed information, select your specific topic of interest in the PlayFab documentation. By now, you should have created your PlayFab account, logged in, and viewed the Game Manager for your title, even if it's an empty title for now.
 
-The following provides more detail on each Game Manager area. Each time you perform an **API** call or task, view the results in the Game Manager in the appropriate area for that task.
+The following provides more detail on each Game Manager area. Each time you perform an API call or task, view the results in the Game Manager in the appropriate area for that task.
 
 ## Game Manager sections
 
@@ -34,15 +34,15 @@ Now that you have an account, select a title (either the one we created or one o
 
 ### 1. Settings
 
-The **Credentials** tab provides basic information that you will use to configure your **SDK**.
+The **Credentials** tab provides basic information that you will use to configure your SDK.
 
 ![Game Manager - Settings - Credentials Tab](media/tutorials/game-manager-settings-credentials-tab.png)
 
-Never share your PlayFab **API** secret key with anyone; doing so may jeopardize your title's security.
+Never share your PlayFab API secret key with anyone; doing so may jeopardize your title's security.
 
 - **Game Title ID**: The unique identifier for your title in the PlayFab system.
-- **PlayFab API Endpoint**: The unique base **URI** for your title. **API** calls to this endpoint are tracked in your title's reports.
-- **PlayFab API Secret Key**: The unique identifier for your game when making Admin and server **API** calls. This key should only be shared with trusted members of your development team, since it enables **API** calls that can affect game data and player accounts.
+- **PlayFab API Endpoint**: The unique base URI for your title. **API** calls to this endpoint are tracked in your title's reports.
+- **PlayFab API Secret Key**: The unique identifier for your game when making Admin and server API calls. This key should only be shared with trusted members of your development team, since it enables API calls that can affect game data and player accounts.
 - **Publisher ID**: The unique identifier for your studio.
 
 ### 2. Dashboard
@@ -62,7 +62,7 @@ You can see data for previous months in the [Reports Section](#9-reports).
 
 ![Game Manager - Dashboard](media/tutorials/game-manager-dashboard.png)
 
-Monitor your title's KPIs and watch your **PlayStream** events in real time.
+Monitor your title's KPIs and watch your PlayStream events in real time.
 
 The dashboard has six sections. Left to right, top to bottom they are the following.
 
@@ -80,25 +80,25 @@ The dashboard has six sections. Left to right, top to bottom they are the follow
 
 ### 3. PlayStream
 
-This section houses the control panel for everything that is **PlayStream**. Here you will find a graph of the **PlayStream** activity (filtered for the selected time span). The stream debugger (like in other sections) displays title events as they are generated in real time.
+This section houses the control panel for everything that is PlayStream. Here you will find a graph of the PlayStream activity (filtered for the selected time span). The stream debugger (like in other sections) displays title events as they are generated in real time.
 
 ![Game Manager - PlayStream](media/tutorials/game-manager-playstream.png)
 
 Use the sampling controls to gather more or less events per second.
 
-**PlayStream** is our latest and greatest addition to the PlayFab platform. More information will be coming soon on what actions you can do with **PlayStream**.
+PlayStream is our latest and greatest addition to the PlayFab platform. More information will be coming soon on what actions you can do with PlayStream.
 
 [Back to Game Manager Sections](#game-manager-sections)
 
 ### 4. Players
 
-The **Players** tab presents you with a sorted list by most recent login. Selecting any of the records will take you to that player's overview. Using the search box you can easily search for players by **ID**, **Username**, **Display Name**, or **Email**.
+The **Players** tab presents you with a sorted list by most recent login. Selecting any of the records will take you to that player's overview. Using the **Search** box allows you to easily search for players by **ID**, **Username**, **Display Name**, or **Email**.
 
 ![Game Manager - Players Tab](media/tutorials/game-manager-players-tab.png)
 
 #### Player overview
 
-This detailed screen provides a wealth of insight into the players activity. The **Overview** sub-menu contains many links to other **Players**-centric information, as shown below.
+This detailed screen provides a wealth of insight into the players activity. The **Overview** sub-menu contains many links to other Players-centric information, as shown below.
 
 ![Game Manager - Player - Overview](media/tutorials/game-manager-player-overview.png)
 
@@ -132,8 +132,7 @@ Selecting the orange **EDIT LEADERBOARD** button allows you to edit your leaderb
 **Additional information:**
 
 - [Using resettable statistics and leaderboards](../../social/tournaments-leaderboards/using-resettable-statistics-and-leaderboards.md)
-
-[Back to Game Manager Sections](#game-manager-sections)
+- [Back to Game Manager Sections](#game-manager-sections)
 
 ### 5. Economy
 
@@ -171,11 +170,11 @@ PlayFab works with many architectures and game types. Whether you are looking to
 
 ![Game Manager - Servers - CloudScript](media/tutorials/game-manager-servers-cloudscript.png)
 
-**CloudScript** offers an excellent alternative when compared with the overhead of dedicated game servers.
+CloudScript offers an excellent alternative when compared with the overhead of dedicated game servers.
 
 The servers section of the Game Manager has two major roles:
 
-1. The main interface for uploading **CloudScript** files.
+1. The main interface for uploading CloudScript files.
 2. A control panel for your hosted multiplayer servers.
 
 **Additional information:**
@@ -219,7 +218,7 @@ PlayFab generates catalogs that capture daily and monthly activity. Currently, t
 
 For additional or custom reports, please open a feature request in our [community forums](https://community.playfab.com/spaces/24/index.html).
 
-[Back to Game Manager Sections](#game-manager-sections)
+- [Back to Game Manager Sections](#game-manager-sections)
 
 ## Basic actions
 
@@ -245,7 +244,7 @@ New notifications will be called out with a pink delimiter containing the number
 
 ![Game manager - Published Notifications](media/tutorials/game-manager-published-notifications.png)
 
-Notifications include information on new features, **API** updates, and service outages.
+Notifications include information on new features, API updates, and service outages.
 
 ### Create and edit studios and titles
 
@@ -295,7 +294,7 @@ If you do not already have a PlayFab developer account, an email will be sent to
 
 ### Toggle API features
 
-The **API Features** tab provides optional permissions that affect what an **API** set has permission to do. By default, all options are *Off*. Enabling these features will allow your title to be client-authoritative at the expense of security.
+The **API Features** tab provides optional permissions that affect what an API set has permission to do. By default, all options are *Off*. Enabling these features will allow your title to be client-authoritative at the expense of security.
 
 ![Game manager - Settings - API Features](media/tutorials/game-manager-settings-api-features.png)
 
@@ -303,7 +302,7 @@ Choose your preferred permissions, and select the **Save API Features** button.
 
 ### View and edit title data
 
-Title data is accessible from all **API** sets by all users. This makes title data an ideal place to store your custom title settings.
+Title data is accessible from all API sets by all users. This makes title data an ideal place to store your custom title settings.
 
 In the example below, we store: quests, enemy encounter details, achievement thresholds, events and sales data, and more.
 
@@ -355,7 +354,7 @@ Select any change to view the complete details.
 
 1. Select an old **News** item to edit, or create a new one by selecting **NEW TITLE NEWS**.
 2. Enter a **Title**, set the **Status** to **Published**, and enter your text into the **Body** field.
-3. Select **SAVE TITLE NEWS** and your **News** is now ready for the client to receive.
+3. Select **SAVE TITLE NEWS** and your News is now ready for the client to receive.
 
 ![Game manager - Promotions - Edit Title News](media/tutorials/game-manager-promotions-edit-title-news.png)
 

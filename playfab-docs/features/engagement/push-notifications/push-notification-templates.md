@@ -43,7 +43,7 @@ In this example, our title’s default language is **English**, so we’re requi
 
 ![Game Manager - Content - New Push Notification Template - Default language](../media/tutorials/new-push-notification-template-default-language.png)
 
-Adding more languages is as simple as selecting the **V** drop-down menu symbol to the left of the **Language (Title default)** field.  Then choose the language you want to add to the template, and type in the localized strings.
+Adding more languages is as simple as selecting the **V** drop-down menu symbol to the left of the **Language (Title default)** field. Then choose the language you want to add to the template, and type in the localized strings.
 
 In this example, we're going to add the following Korean strings to our template.
 
@@ -69,7 +69,7 @@ Sending this template to players who prefer Korean will get the localized versio
 
 ## Triggering push notifications via rules, tasks, and player segmentation
 
-The next step for our scenario is to leverage PlayFab triggered actions to send push notifications when a player meets our specified criteria.  We want to entice players to return if they haven’t visited our game in over 30 days.
+The next step for our scenario is to leverage PlayFab triggered actions to send push notifications when a player meets our specified criteria. We want to entice players to return if they haven’t visited our game in over 30 days.
 
 This kind of criteria makes using player segmentation logic a natural fit for our lapsed player scenario, but please note that you can trigger these same kinds of actions on rules and scheduled tasks. Both of those are under the **Automation** menu in Game Manager. You can also use **CloudScript**, or our **APIs** to send a push notification.
 

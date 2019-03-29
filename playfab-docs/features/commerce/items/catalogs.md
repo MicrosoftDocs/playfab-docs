@@ -20,7 +20,7 @@ Many games offer the player items for purchase such as a shield, a level-unlock,
 
 Before the player can purchase an item from any catalog, you must create the items that you want to populate it.
 
-The catalog **APIs** support many strategies for item purchasing, such as simple real money or virtual currency purchases of items, triggered item grants based on buying another item, locked (with a potentially purchasable key) and unlocked boxes, random result tables, and non-purchasable items that are granted based on events within a game.
+The catalog APIs support many strategies for item purchasing, such as simple real money or virtual currency purchases of items, triggered item grants based on buying another item, locked (with a potentially purchasable key) and unlocked boxes, random result tables, and non-purchasable items that are granted based on events within a game.
 
 > [!NOTE]
 > In catalogs, the currency type of **RM** is reserved for Real Money, which is in cents USD. $1.99 is represented as **RM 199**.
@@ -48,33 +48,33 @@ These are the fields you encounter after you select **Add New Item** in the **Ca
 
 ### Add new item, PROPERTIES fields
 
-These are the fields in the **PROPERTIES** section of a new **Catalog Item**. **Item ID** is the only required field.
+These are the fields in the **PROPERTIES** section of a new Catalog Item. **Item ID** is the only required field.
 
 ![Game Manager - Catalog Item Properties](media/tutorials/game-manager-catalog-item-properties.png)
 
 - **Item ID**:
-  This required field is the unique identifier for the item within the **Catalog**. The item ID must be unique within the **Catalog**, but you can have multiple versions containing items with the same item ID.
+  This required field is the unique identifier for the item within the Catalog. The item ID must be unique within the Catalog, but you can have multiple versions containing items with the same item ID.
 
 - **Display Name**:
-  This optional field is the name displayed for the **Catalog item**. One common usage is when you want to offer the item in your in-game store. Display names do not need to be unique.
+  This optional field is the name displayed for the Catalog item. One common usage is when you want to offer the item in your in-game store. Display names do not need to be unique.
 
 - **Usage Count**:
-  This optional field is the number of times an item can be used by a player, using the **ConsumeItem Client-API** call. For example, the item could be a reward doubler that can be used three times.
+  This optional field is the number of times an item can be used by a player, using the ConsumeItem Client-API call. For example, the item could be a reward doubler that can be used three times.
 
 - **Item Class**:
-  This optional field is identifier that you can use to help manage your **Catalog Items**.
+  This optional field is identifier that you can use to help manage your Catalog Items.
 
 - **Description**:
-  This optional field is the description for the **Catalog Item**. One common usage is when you want to offer the item in your in-game store.
+  This optional field is the description for the Catalog Item. One common usage is when you want to offer the item in your in-game store.
 
 - **Usage Period (Seconds)**:
-  This is the period of time between when the item is created, and when the item is auto-revoked. For example, your **Catalog Item** could be an XP boost that is active for 30 minutes after the player receives it.
+  This is the period of time between when the item is created, and when the item is auto-revoked. For example, your Catalog Item could be an XP boost that is active for 30 minutes after the player receives it.
 
   > [!NOTE]
   > You can specify the period in seconds, minutes, hours, days, weeks, months, or years.
 
 - **Edit Tags (Comma Separated List)**:
-  This optional field contains tags that you can use to organize your **Catalog Items**. Like the field name implies, the tags are text strings, separated by commas.
+  This optional field contains tags that you can use to organize your Catalog Items. Like the field name implies, the tags are text strings, separated by commas.
 
 - **Usage Period Group**:
   This optional field is identifies a group of items where their usage period values are accumulated, and they share the result. When the specified period has elapsed, all of the items in the group are removed. This can be used to recharge a player’s power-ups if they purchase another power-up of the same type before their current ones have expired.
@@ -83,11 +83,11 @@ These are the fields in the **PROPERTIES** section of a new **Catalog Item**. **
   Marking an item as **Stackable** allows only one item of this type in the inventory and increments the quantity count of the item.
 
 - **Tradeable Item checkbox**:
-  Marking an item as **Tradeable** makes it tradeable via the trade **API** calls.
+  Marking an item as **Tradeable** makes it tradeable via the trade API calls.
 
 ### Add new item, ATTRIBUTES fields
 
-These are the field in the **ATTRIBUTES** section of a new **Catalog Item**. Attributes are Key Value Pairs (KVPs). Only the key is required for each attribute.
+These are the field in the **ATTRIBUTES** section of a new Catalog Item. Attributes are Key Value Pairs (KVPs). Only the key is required for each attribute.
 
 ![Game Manager - Catalog Item Attributes](media/tutorials/game-manager-catalog-item-attributes.png)
 
@@ -99,10 +99,10 @@ These are the field in the **ATTRIBUTES** section of a new **Catalog Item**. Att
 
 ### Add new item, PRICES fields
 
-These are the field in the **PRICES** section of a new **Catalog** item.
+These are the field in the **PRICES** section of a new Catalog item.
 
 - **Currency**:
-  Specifies the **Currency** used for the item's cost. Real money (RM) is always available as it's built into PlayFab.
+  Specifies the currency used for the item's cost. Real money (RM) is always available as it's built into PlayFab.
 
 - **Amount**:
   This required field represents the units of currency for the item's cost.
@@ -111,19 +111,19 @@ These are the field in the **PRICES** section of a new **Catalog** item.
 
 ### Add new item, BUNDLE/CONTAINER
 
-These are the field in the **BUNDLE/CONTAINER** section of a new **Catalog** item.
+These are the field in the **BUNDLE/CONTAINER** section of a new Catalog item.
 
 - **Container**:
-  Select this checkbox to specify that the **Item** is a **Container**. This means the items within it are not immediately granted upon purchase, but must be unlocked to grant their contents. If this checkbox is *unselected*, the item is a bundle that can grant virtual currency, other items, or random items from a drop table when purchased or granted.
+  Select this checkbox to specify that the Item is a Container. This means the items within it are not immediately granted upon purchase, but must be unlocked to grant their contents. If this checkbox is *unselected*, the item is a bundle that can grant virtual currency, other items, or random items from a drop table when purchased or granted.
 
 - **Key Item ID**:
-  If **Container** is selected, and this field has a value, players can only unlock the **Container** and add the contents to their inventory if they already *have* an item with this item ID in their inventory. Unlocking the **Container** consumes the referenced item.
+  If Container is selected, and this field has a value, players can only unlock the Container and add the contents to their inventory if they already *have* an item with this item ID in their inventory. Unlocking the Container consumes the referenced item.
 
-  If **Container** is selected *but this field has no value*, players can unlock the **Container** at any time to add the **Container Items** to their inventory. **Keyless Containers** are useful for granting specific rewards to players, since it requires a player action to acknowledge receipt of the item, instead of adding it directly to the player’s inventory.
+  If **Container** is selected *but this field has no value*, players can unlock the Container at any time to add the Container Items to their inventory. Keyless Containers are useful for granting specific rewards to players, since it requires a player action to acknowledge receipt of the item, instead of adding it directly to the player’s inventory.
 
 ![Game Manager - Catalog Item Container](media/tutorials/game-manager-catalog-item-container.png)
 
-The following icons indicate the type of **Item** in the **Bundle/Container**.
+The following icons indicate the type of **Item** in the **BUNDLE/CONTAINER**.
 
 - The **Item** is an **Item**
   ![Game Manager - Catalog Type Item Icon](media/tutorials/game-manager-catalog-type-item-icon.png)
@@ -136,25 +136,25 @@ The following icons indicate the type of **Item** in the **Bundle/Container**.
 
 ### Add new item, BUNDLE/CONTAINER, Add Item
 
-These are the fields in the **BUNDLE/CONTAINER, Add Item** section of a new **Catalog** item.
+These are the fields in the **BUNDLE/CONTAINER, Add Item** section of a new Catalog item.
 
 - **Item ID**:
-  Identifies the item, by **Catalog Item ID**, to add to the **Bundle/Container**. Although the current **Item** appears in the list, you cannot select it and save the **Bundle/Container**, as that would cause an infinite loop.
+  Identifies the item, by Catalog Item ID, to add to the **BUNDLE/CONTAINER**. Although the current Item appears in the list, you cannot select it and save the **BUNDLE/CONTAINER**, as that would cause an infinite loop.
 
 - **Qty.**:
-  Specifies how many of the item in **Item ID** to add to the **bundle/container**. You must specify a value greater than **0** (zero), otherwise the item is not added to the **bundle/container**.
+  Specifies how many of the item in Item ID to add to the **BUNDLE/CONTAINER**. You must specify a value greater than **0** (zero), otherwise the item is not added to the **BUNDLE/CONTAINER**.
 
 ![Game Manager - Catalog Item Container](media/tutorials/game-manager-catalog-item-container.png)
 
-### Add new item, BUNDLE/CONTAINER, Add Currency
+### Add new item, **BUNDLE/CONTAINER**, Add Currency
 
 These are the fields in the **BUNDLE/CONTAINER, Add Currency** section of a new catalog item.
 
 - **Item ID**:
-  Identifies the currency, by **Currency Code**, to add to the **Bundle/Container**.
+  Identifies the currency, by Currency Code, to add to the **BUNDLE/CONTAINER**.
 
 - **Qty.**:
-  Specifies how many of the item in Item ID to add to the **Bundle/Container**. You can specify a value of **0** (zero) or more.
+  Specifies how many of the item in Item ID to add to the **BUNDLE/CONTAINER**. You can specify a value of **0** (zero) or more.
 
 ![Game Manager - Catalog Item Container](media/tutorials/game-manager-catalog-item-container.png)
 
@@ -163,10 +163,10 @@ These are the fields in the **BUNDLE/CONTAINER, Add Currency** section of a new 
 These are the field in the **BUNDLE/CONTAINER, Add Table** section of a new **Catalog Item**.
 
 - **Item ID**:
-  Identifies the drop table, by **Table ID**, to add to the **Bundle/Container**.
+  Identifies the drop table, by Table ID, to add to the **Bundle/Container**.
 
 - **Qty.**:
-  Specifies how many of the drop tables in **Item ID** to add to the **Bundle/Container**. You can specify a value of **0** (zero) or more.
+  Specifies how many of the drop tables in Item ID to add to the **Bundle/Container**. You can specify a value of **0** (zero) or more.
 
 ![Game Manager - Catalog Item Container](media/tutorials/game-manager-catalog-item-container.png)
 
@@ -195,17 +195,17 @@ To create a **Catalog**:
 12. Repeat Steps 4 – 8 for each new **Item** you wish to create.
 
 > [!NOTE]
-> You can also save and upload **Catalogs** as **JSON** files through the Game Manager or the **GetCatalogItems** and **SetCatalogItems APIs**, respectively.
+> You can also save and upload Catalogs as JSON files through the Game Manager or the GetCatalogItems and SetCatalogItems APIs, respectively.
 
 ## Uploading a catalog
 
-To upload a a **JSON** file to create a catalog, perform the following steps:
+To upload a a JSON file to create a catalog, perform the following steps:
 
 - Select your **Game** in **Game Manager**.
 - Select **Economy**.
 - Select **Catalogs**.
 - Select **Upload JSON**.
-- Select your **JSON** file and select **Upload**.
+- Select your JSON file and select **Upload**.
 
 > [!NOTE]
-> The **JSON** code in **ExampleCatalog.json** represents the catalog you just created.
+> The JSON code in **ExampleCatalog.json** represents the catalog you just created.

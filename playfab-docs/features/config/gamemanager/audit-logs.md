@@ -29,8 +29,8 @@ To access the audit logs, navigate to your **Title** in **Game Manager**:
 
 ![Game Manager - Admin - Audit History](media/tutorials/game-manager-admin-audit-history.png)  
 
-The **View** column displays a button to access the **JSON** body of the change. **JSON** is displayed in a modal window.
+The **View** column displays a button to access the JSON body of the change. JSON is displayed in a modal window.
 
-It contains the same data as the table **(1)**, plus a raw **JSON** body specific for each change type **(2)**.
+It contains the same data as the table **(1)**, plus a raw JSON body specific for each change type **(2)**.
 
 ![Game Manager - Admin - Audit History - View Event Body](media/tutorials/game-manager-admin-audit-history-view-event-body.png)  

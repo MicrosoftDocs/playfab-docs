@@ -57,7 +57,7 @@ The PlayFab Game Manager allows you to do whatever you need to with your game ti
 
 Real time events are amazing and actionable. However, sometimes you need to do deeper analytics over a period of time to get retention, or a better understanding of how your players are engaging with your game.
 
-For this, we offer a variety of solutions.  Let's begin by talking about our built-in tools in Game Manager, which  is our online portal to your game title.
+For this, we offer a variety of solutions. Let's begin by talking about our built-in tools in Game Manager, which  is our online portal to your game title.
 
 You can learn more about [Game Manager here](../features/config/gamemanager/quickstart.md).
 

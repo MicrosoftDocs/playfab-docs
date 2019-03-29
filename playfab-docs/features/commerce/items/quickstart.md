@@ -23,12 +23,12 @@ PlayFab supports a robust game economy with multiple currencies and items.
 
 To access these features:
 
-1. Go to **Economy** and select currencies.
+1. Go to **Economy** and select **Currencies**.
 2. Select **New Currency** and change these fields:
 
    - **Currency code** (2 uppercase characters): **GD**.
    - **Display name**: **Gold**.
-3. Select **Save Currency**.
+3. Select the **Save Currency** button.
 
 ![Save Currency](media/tutorials/virtual-currency.png)
 Now you can give players virtual currency directly. Since it can be dangerous to give clients the ability to call **AddUserVirtualCurrency**, let's add money using the Game Manager:
@@ -80,6 +80,6 @@ Let's get the catalog and attempt to make a purchase.
 4. Last, call **GetUserInventory** and take a look at the player inventory. You should see an apple!
 
 > [!NOTE]
-> You can also check the player's **PlayStream** tab, where you should see a **Player vc item purchased** event. The player's **Inventory** tab will also show the apple. In addition, you can revoke the item or grant yourself *more* apples on the **Inventory** tab.
+> You can also check the player's **PlayStream** tab, where you should see a **Player vc item purchased** event. The player's **Inventory** tab will also show the apple. In addition, you can revoke the item, or grant yourself *more* apples on the **Inventory** tab.
 
 If you check the player’s virtual currency, they should only have 95 gold left.

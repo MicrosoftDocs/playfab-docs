@@ -122,9 +122,9 @@ Some of the number of different ways that PlayFab maps onto a game are shown bel
 
 ## PlayFab advanced
 
-Mapping your game on top of PlayFab is a great start.  But there is more power to be harnessed in PlayFab that can help your LiveOps team create better engagement, retention and monetization mechanics.
+Mapping your game on top of PlayFab is a great start. But there is more power to be harnessed in PlayFab that can help your LiveOps team create better engagement, retention and monetization mechanics.
 
-A majority of these features leverage **PlayStream**, an event system that drives real time events.  This enables you to perform actions on player behaviors. Actions can occur in a number of ways - either via segmentation, or direct rules that are applied to specific events.
+A majority of these features leverage **PlayStream**, an event system that drives real time events. This enables you to perform actions on player behaviors. Actions can occur in a number of ways - either via segmentation, or direct rules that are applied to specific events.
 
 Actions might result in a **CloudScript** being run. Our **CloudScript** is **JavaScript** code that lives on a remote server, and you can execute it either from a rule, or directly from a game client.
 

@@ -89,8 +89,8 @@ Here are the steps to assign a role:
 2. Select **Users and Roles** from the list of options. You will see a list of users for your studio.
 3. Select **Settings** for the user for whom you wish to assign roles.
 4. Select the **Roles** tab. You will see a list of all titles in your studio, and any roles that user already has for each title.
-5. Select **Assign Roles** for each title for which you wish to give the user a role. You will see a list of your **Roles**. Check any role you wish to give the user on that title.
-6. After you have assigned **Roles**, be sure to select **Save User**, otherwise your role assignments will be lost.
+5. Select **Assign Roles** for each title for which you wish to give the user a role. You will see a list of your Roles. Check any role you wish to give the user on that title.
+6. After you have assigned Roles, be sure to select **Save User**, otherwise your role assignments will be lost.
 
 ## Migrating to the new roles system
 
