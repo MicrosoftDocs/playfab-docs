@@ -92,7 +92,7 @@ X-EntityToken: eyJJc3N1ZWQiOiIyMDE4LTEyLTE0VDAxOjU1OjMwLjY4MTMwOTJaIiwiRXhwaXJlc
 
 ## Publish a UGC item
 
-Once an item is in draft, you can then push it to a published state using **PublishItem**. Once a UGC item is published, its generally searchable and available publicly. You need to use the **itemId** returned from the **CreateDraftItem** response.
+Once an item is in draft, you can then push it to a published state using **PublishItem**. Once a UGC item is published, its generally searchable and available publicly. You need to use the itemId returned from the CreateDraftItem response.
 
 ```csharp
 POST  https://YOURTITLEID.playfabapi.com/UserGeneratedContent/PublishItem HTTP/1.1
@@ -108,7 +108,7 @@ X-EntityToken: eyJJc3N1ZWQiOiIyMDE4LTEyLTE0VDAxOjU1OjMwLjY4MTMwOTJaIiwiRXhwaXJlc
 
 ## Get the published status of a UGC item
 
-Using the **itemId**, you can always get the state of an item in your UGC catalog.
+Using the itemId, you can always get the state of an item in your UGC catalog.
 
 ```csharp
 POST  https://YOURTITLEID.playfabapi.com/UserGeneratedContent/GetPublishStatus HTTP/1.1
@@ -124,7 +124,7 @@ X-EntityToken: eyJJc3N1ZWQiOiIyMDE4LTEyLTE0VDAxOjU1OjMwLjY4MTMwOTJaIiwiRXhwaXJlc
 
 ## Do a simple search
 
-Once the publish call succeeds, it can be searched for using the previously published **itemId**.
+Once the publish call succeeds, it can be searched for using the previously published itemId.
 
 ```csharp
 POST  https://YOURTITLEID.playfabapi.com/UserGeneratedContent/Search HTTP/1.1

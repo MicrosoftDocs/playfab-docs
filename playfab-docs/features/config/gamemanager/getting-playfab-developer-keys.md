@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Getting PlayFab developer keys
 
-A PlayFab developer key is used to authorize an application to use PlayFab Admin and server **APIs** for a specific title. A developer key is strongly coupled with a PlayFab title.
+A PlayFab developer key is used to authorize an application to use PlayFab Admin and server APIs for a specific title. A developer key is strongly coupled with a PlayFab title.
 
 ## Acquiring a developer key
 
@@ -28,7 +28,7 @@ In **Game Manager**:
 
 ## Multiple keys
 
-Generally, the default key is sufficient to authorize your application for admin and server **API** calls. However, you may also select the **New Secret Key** button **(1)**.
+Generally, the default key is sufficient to authorize your application for admin and server API calls. However, you may also select the **New Secret Key** button **(1)**.
 
 ![Game Manager - Secret Keys - New Secret Key Button](media/tutorials/game-manager-new-secret-key-button.png)  
 
@@ -39,7 +39,7 @@ Generally, the default key is sufficient to authorize your application for admin
 
 ![Game Manager - Secret Keys - Save New Secret Key](media/tutorials/game-manager-save-new-secret-key.png)  
 
-This will create a new key that you may use to authorize admin and server **API** calls.
+This will create a new key that you may use to authorize admin and server API calls.
 
 ### Use case for multiple keys
 

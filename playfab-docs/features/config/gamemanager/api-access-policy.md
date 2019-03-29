@@ -12,9 +12,9 @@ ms.localizationpriority: medium
 
 # API access policy
 
-Often times, it is necessary for a title to allow/deny certain **APIs** from the game client for anti-cheat or other security purposes.
+Often times, it is necessary for a title to allow/deny certain APIs from the game client for anti-cheat or other security purposes.
 
-This tutorial will walk you through how to use **API** permission policies to achieve this.
+This tutorial will walk you through how to use API permission policies to achieve this.
 
 > [!NOTE]
 > This is an advanced guide. Please be aware that it is possible to completely disable client access to your title using this feature.
@@ -23,11 +23,11 @@ This tutorial will walk you through how to use **API** permission policies to ac
 
 Policy is a set of rules, a.k.a. Policy Statements, that are applied in a specific situation.
 
-Right now, PlayFab only supports **API** Access Policy. Thus, by definition, it controls access to **API** resources.
+Right now, PlayFab only supports API Access Policy. Thus, by definition, it controls access to API resources.
 
-Policies are fetched and updated using **API** calls from the PlayFab admin **APIs** (listed under **Admin** in the [PlayFab API Reference](../../../api-references/index.md)); specifically, the [GetPolicy](xref:titleid.playfabapi.com.admin.authentication.getpolicy) and [UpdatePolicy](xref:titleid.playfabapi.com.admin.authentication.updatepolicy) methods.
+Policies are fetched and updated using API calls from the PlayFab admin APIs (listed under Admin in the [PlayFab API Reference](../../../api-references/index.md)); specifically, the [GetPolicy](xref:titleid.playfabapi.com.admin.authentication.getpolicy) and [UpdatePolicy](xref:titleid.playfabapi.com.admin.authentication.updatepolicy) methods.
 
-Since we will be utilizing the admin **API**, see our tutorial [Getting PlayFab Developer Keys](getting-playfab-developer-keys.md). Developer keys will let you authorize for admin **API** calls.
+Since we will be utilizing the admin API, see our tutorial [Getting PlayFab Developer Keys](getting-playfab-developer-keys.md). Developer keys will let you authorize for admin API calls.
 
 Each policy contains a list of statements, which act as rules for one or more PlayFab resources.
 
@@ -95,13 +95,13 @@ As shown in the preceding picture, a policy consists of several [Permission Stat
 
 Each Permission Statement consists of the following items:
 
-[RESOURCE](xref:titleid.playfabapi.com.admin.authentication.updatepolicy#permissionstatement) - A string that uniquely identifies one or more PlayFab resources. To describe the **API** resource, please use the convention shown below.
+[RESOURCE](xref:titleid.playfabapi.com.admin.authentication.updatepolicy#permissionstatement) - A string that uniquely identifies one or more PlayFab resources. To describe the API resource, please use the convention shown below.
 
   `pfrn:api--/API-GROUP/API-CALL`
 
-  `API-GROUP` should be replaced with one of PlayFab **APIs**: `Client`, `Server` or `Admin`
+  `API-GROUP` should be replaced with one of PlayFab APIs: `Client`, `Server` or `Admin`
 
-  `API-CALL` should be replaced with concrete **API** name (ex. **ConfirmPurchase**, **LoginWithTwitch**, **ReportPlayer** etc.
+  `API-CALL` should be replaced with concrete API name (ex. **ConfirmPurchase**, **LoginWithTwitch**, **ReportPlayer** etc.
 
   A resource string supports wildcards. The following resource string will match any resource.
 
@@ -117,4 +117,4 @@ Each Permission Statement consists of the following items:
 
 [APICONDITIONS](xref:titleid.playfabapi.com.admin.authentication.updatepolicy#permissionstatement) - An *optional object* that defines advanced rule conditions, for example - Encryption and Signed Headers.
 
-By modifying your policy to use more detailed permission statements, you can set up strong security rules for your application, by only allowing the **API** you use in your application.
+By modifying your policy to use more detailed permission statements, you can set up strong security rules for your application, by only allowing the API you use in your application.

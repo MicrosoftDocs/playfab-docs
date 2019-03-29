@@ -20,7 +20,9 @@ In this quickstart tutorial, you will:
 - Buy an item from the store.
 - Create a store with a discounted price.  
 
-Buying items out of the Catalog is supported, but it's not how most games structure their purchases. Whether you're making an idle clicker, an RPG, an FPS, or an endless runner, you probably have vendors in your game where players can buy weapons, armor, or running shoes. Our solution for this is Stores, a subset of your catalog with prices you can override. Stores also enable sale prices, price overrides for segments, and some amazing functionality in PlayStream (we'll get to that later).
+Buying items out of the Catalog is supported, but it's not how most games structure their purchases. Whether you're making an idle clicker, an RPG, an FPS, or an endless runner, you probably have vendors in your game where players can buy weapons, armor, or running shoes.
+
+Our solution for this is **Stores**, a subset of your catalog with prices you can override. Stores also enable sale prices, price overrides for segments, and some amazing functionality in PlayStream (we'll get to that later).
 
 First, add some Items to sell in your catalog:
 
@@ -46,7 +48,7 @@ You should now have a few items with prices. Let's create a store to sell them t
 
 You should see your items listed in the store, but they're not valid until they have at least one price.
 
-The little static number (e.g. <5) next to the price text box is the original catalog price. You only have to enter a price for *one* box in each row, but you can enter as many prices as you want.
+The little static number (e.g. **<5**) next to the price text box is the original catalog price. You only have to enter a price for *one* box in each row, but you can enter as many prices as you want.
 
 If you don't enter any price for an item, it will be removed from the store. If a store item doesn't have a price in a currency, it can't be bought using that currency. Store prices can be higher than catalog prices, and zero is a valid price for an item.
 
@@ -79,7 +81,7 @@ Next we're going to buy an item. You have a store, now let's purchase something.
     - **VirtualCurrency: GO**.
     - **Price: 2**.
 
-4. Look in your player's **Inventory** tab for the pear, and check their virtual currency to verify that they only spent 2 gold. You will see events in the **PlayStream** debugger showing the purchase flow from the store. The player's **Inventory** tab also shows the purchase.
+4. Look in your player's **Inventory** tab for the pear, and check their virtual currency to verify that they only spent 2 gold. You will see events in the PlayStream debugger showing the purchase flow from the store. The player's **Inventory** tab also shows the purchase.
 
 > [!TIP]
 > If you don't specify the **StoreId** when calling **PurchaseItem**, the purchase is attempted against the catalog price.

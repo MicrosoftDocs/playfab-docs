@@ -10,9 +10,9 @@ keywords: playfab, commerce, stores
 ms.localizationpriority: medium
 ---
 
-# Stores Tutorials
+# Stores tutorials
 
-These tutorials show you how to use Stores.
+These tutorials show you how to use stores.
 
 - [Best Practices for Store segmentation](best-practices-for-store-segmentation.md)
 - [Custom Stores for Player Segments](custom-stores-for-player-segments.md)

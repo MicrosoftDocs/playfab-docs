@@ -24,7 +24,7 @@ Install a **Two-Factor Authentication** app to your device. You can search on yo
 - [Android phone or tablet](https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2)
 - [Windows phone or tablet](https://www.windowsphone.com/en-us/store/app/authenticator/e7994dbc-2336-4950-91ba-ca22d653759b)
 
-The steps are basically similar on all the platforms. This example shows an **Android**-based device and a **Google Authenticator** application.
+The steps are basically similar on all the platforms. This example shows an Android-based device and a Google Authenticator application.
 
 Once the application is downloaded;
 

@@ -28,7 +28,7 @@ First, you must create each store separately, and give it an identifiable name. 
 
 ![Game Manager - Economy - Catalogs - Stores](media/tutorials/game-manager-economy-catalogs-stores.png)  
 
-Finally, return to the base **Equipment** store, and fill in the **Segment Overrides** section at the bottom (This section is *only visible* if there are defined player segments).
+Finally, return to the base **Equipment** store, and fill in the **Segment Overrides** section at the bottom (this section is *only visible* if there are defined player segments).
 
 ![Game Manager - Edit Store - Segment Overrides](media/tutorials/game-manager-edit-store-segment-overrides.png)  
 
@@ -38,7 +38,7 @@ Finally, return to the base **Equipment** store, and fill in the **Segment Overr
   - There are many ways for player to gain information about alternate stores.
   - Players naturally transition between segments, and they'll see those changes when they transition.
   - Players discuss content on forums, community sites, wikis, etc.
-  - In the PlayFab **API**, store information is public unless you disable those **APIs** with our [API Access Policy](../../config/gamemanager/api-access-policy.md).
+  - In the PlayFab API, store information is public unless you disable those APIs with our [API Access Policy](../../config/gamemanager/api-access-policy.md).
   - You should assume that players will be aware of other stores and their details.
 
 - Provide varying content, *not* varying pricing:
@@ -47,9 +47,9 @@ Finally, return to the base **Equipment** store, and fill in the **Segment Overr
     - If prices described on wikis are different than their own.
 
   - The only exception to the pricing rule would be *first time* purchases:
-    - You must secure the client **API** methods with our [API Access Policy](../../config/gamemanager/api-access-policy.md) to prevent multiple purchases, or make repurchasing less meaningful through game design.
+    - You must secure the client API methods with our [API Access Policy](../../config/gamemanager/api-access-policy.md) to prevent multiple purchases, or make repurchasing less meaningful through game design.
 
 - Content should be relevant to the segment:
-  - Whales are willing to spend large amounts of real money, and thus are likely to buy more expensive bundles, if the value is worthwhile.
+  - Whales are willing to spend large amounts of real money, and are therefore likely to buy more expensive bundles, if the value is worthwhile.
   - First time buyers may be given an option which is a particularly good deal, but can only be (usefully) obtained once.
   - End game players may only be interested in a specific subset of items.

@@ -76,7 +76,7 @@ Having an engagement strategy is essential for LiveOps games. Some companies, li
 
 Customer support is a key plank in your LiveOps platform. The first, and most critical need of your support team, is to ensure that your game is working as intended, and to make it right when things break. To do this well, this team needs the right tools, so they can communicate with players who reach out with issues, investigate problems and take appropriate corrective actions by making adjustments to a player’s profile (e.g. granting virtual currency or items as consolations to players).
 
-Your support team is also your front line with players, and a rich source of information on what is and is not working in your game. It’s important to treat support as a communication channel rather than a cost center - particularly because your paying players typically have the most questions and provide the most feedback.  Giving them exceptional support encourages them to keep spending. You should also have a feedback loop between your agents and other departments where problems encountered by players are tracked and addressed.
+Your support team is also your front line with players, and a rich source of information on what is and is not working in your game. It’s important to treat support as a communication channel rather than a cost center - particularly because your paying players typically have the most questions and provide the most feedback. Giving them exceptional support encourages them to keep spending. You should also have a feedback loop between your agents and other departments where problems encountered by players are tracked and addressed.
 
 ### Customer support best practices
 
@@ -497,7 +497,7 @@ Mastering the art of player communication is critical to the success of live eve
 
 - If possible, design your game so you can have multiple overlapping events running at the same time.
 
-- Give your LiveOps team as much flexibility as possible when creating new events. You never know what they are going to come up with to keep the game fresh and interesting.  
+- Give your LiveOps team as much flexibility as possible when creating new events. You never know what they are going to come up with to keep the game fresh and interesting.
 
 - Have your LiveOps team set goals for their events that they can measure against when the event runs. These can be anything that makes sense for your game like increasing KPIs or having a desired community effect.
 
