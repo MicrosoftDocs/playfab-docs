@@ -20,7 +20,7 @@ It is possible to inspect the players you have in your title using the **Players
 - Select **Players** from the menu on the left.
 - Select the **Players** tab.
 
-![Game Manager - Players Page](media/tutorials/game-manager-players-page.png)  
+![Game Manager - Players Page](playfab-docs/media/Player Profile Search.png)  
 
 On this page, You can inspect the list of registered players as a table. The table contains general information about the player.
 
