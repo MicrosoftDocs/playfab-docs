@@ -46,7 +46,7 @@ void UpdateDisplayName() {
 
 The response should show:
 
-- **Successfully logged in a player with PlayFabId: SOME_PLAYFAB_ID**
+- **Successfully logged in a player with PlayFabId: SOME_PLAYFAB_ID**, followed by:
 - **The player's display name is now: UnicornTossMaster**.
 
 ## Step 2 - Making a player profile call

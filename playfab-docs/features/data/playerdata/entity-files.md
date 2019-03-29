@@ -197,7 +197,7 @@ public class EntityFileExample : MonoBehaviour
   - Each file action requires many steps and multiple API calls, so don't try to access the same file in multiple ways at the same time.
   - If you are very careful, you won't need any locking mechanism.
   - If you want to do something complicated, your locking mechanism may be much more complex.
-- **OnGUI** is a very old (but very dense) way to build a **Unity GUI** entirely within script.
+- **OnGUI** is a very old (but very dense) way to build a Unity GUI entirely within script.
   - Your GUI will be much better, and game-specific.
 - All PlayFab features *first* require a login or authentication.
 - **LoadAllFiles()** will do exactly as it says. For the current logged-in entity, load all file saved to PlayFab.

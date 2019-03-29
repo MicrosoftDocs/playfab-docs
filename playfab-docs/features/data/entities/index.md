@@ -16,7 +16,11 @@ The entity programming model is the foundation for PlayFab's next generation of 
 
 ## Provide consistency across the programming model
 
-The new entity programming models are designed to be utilized across all entity types (e.g., title, player, character, group) anyway that your game wants to interact with PlayFab (e.g., from the client, from your PlayFab hosted CloudScript or your custom game server).  Gone are the aggravations of certain functionality only being available for a subset of your game.
+The new entity programming models are designed to be utilized across all entity types (e.g., title, player, character, group) anyway that your game wants to interact with PlayFab (e.g., from the client, from your PlayFab hosted CloudScript or your custom game server). Gone are the aggravations of certain functionality only being available for a subset of your game.
+
+## Significantly improve performance
+
+Changing the way we store data, as well as unifying the access policies we use, increases performance for player and title CRUD operations. By consolidating all Data API interactions into a single place, all CRUD operations work the same way across the entire service. We unify data across a smaller set of tables and use a common access policy system more efficiently to access the necessary data.
 
 ## Significantly improve performance
 
@@ -43,7 +47,7 @@ This allows you to get access to functionality in a more intuitive way. The full
 
 ## Supported Entity Types
 
-The following list describes the available **Entity Types**, which can be used to construct an **EntityKey**. Entity Keys are used to identify Entities in most newer API methods.
+The following list describes the available Entity Types, which can be used to construct an **EntityKey**. Entity Keys are used to identify Entities in most newer API methods.
 
 These values are meant to be used in the **EntityKey.Type** field.
 
@@ -72,9 +76,9 @@ The **ID** field should be set to your game's **TitleId**, found in **Game Manag
 
 ### master_player_account
 
-The **master_player_account** is a Player Entity that is shared among all Titles within a Studio.
+The **master_player_account** is a **Player Entity** that is shared among all Titles within a Studio.
 
-The **ID** field should be set to **PlayFabId** from the Classic API, returned by any **Login Result.PlayFabId**.
+The **ID** field should be set to **PlayFabId** from the Classic API, returned by any Login Result.PlayFabId.
 
 ### title_player_account
 

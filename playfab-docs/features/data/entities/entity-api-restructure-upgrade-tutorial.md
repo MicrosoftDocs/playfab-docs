@@ -87,7 +87,7 @@ If you have any questions and comments, please contact us via the [PlayFab Forum
 
 ## APPENDIX 1: OLD to NEW API mappings
 
-All of the APIs listed below were *previously* part of the PlayFabEntityModel API group. They are categorized under the New API groups that they are part of now.
+All of the APIs listed below were *previously* part of the PlayFabEntityModel API group. They are categorized under the **New API** groups that they are part of now.
 
 ### PlayFabProfilesApi
 

@@ -57,7 +57,7 @@ The **ID** field should be set to **PlayFabId** from the classic API, returned b
 
 **title_player_account**, for most developers, represents the player in the most traditional way.
 
-The **ID** field should be set to **LoginResult.EntityToken.Id** in the Client API, or **GetEntityTokenResponse.Entity.Id** in the Authentication API.
+The **ID** field should be set to **LoginResult.EntityToken.Id** in the client API, or **GetEntityTokenResponse.Entity.Id** in the authentication API.
 
 ## Character
 

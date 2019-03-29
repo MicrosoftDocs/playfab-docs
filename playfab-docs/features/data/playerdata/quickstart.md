@@ -194,7 +194,7 @@ CloudScript is an advanced topic that is covered in the [CloudScript quickstart]
 
 Sometimes, you may want to modify read-only or internal player data from CloudScript.
 
-You must be very careful to ensure the security of your server-API calls in CloudScript. The following code demonstrates modifying a piece of read-only player data from CloudScript safely.
+You must be very careful to ensure the security of your server API calls in CloudScript. The following code demonstrates modifying a piece of read-only player data from CloudScript safely.
 
 ```javascript
 function IncrementReadOnlyUserData(args) {
@@ -246,7 +246,7 @@ public void CloudIncrement() {
 
 Since this example updates internal player data, you will need to call [GetUserInternalData](xref:titleid.playfabapi.com.server.playerdatamanagement.getuserinternaldata) again from your server to see the results.
 
-Also note that we do not allow *any* client inputs from args directly into a server-**API** call. Be sure to sanitize the client-inputs *first*, if you attempt this.
+Also note that we do not allow *any* client inputs from args directly into a server API call. Be sure to sanitize the client-inputs *first*, if you attempt this.
 
 ### See Also
 

@@ -25,10 +25,10 @@ Each segment allows you to define useful or interesting groups of players, and p
 To access segment configuration:
 
 - Go to the menu on the left of your screen and select **Players (1)**.
-- Then select the **Segments** tab **(2)**. You can then opt to:
+- Then select the **Segments** tab **(2)**. You can then opt:
 
-- To use the **New Segment** button **(3)** to create and configure a new **Segment**.
-- Locate an existing **Segment** and select its **Name** label **(4)** to configure the **Segment**.
+  - To use the **New Segment** button **(3)** to create and configure a new **Segment**.
+  - Locate an existing **Segment** and select its **Name** label **(4)** to configure the **Segment**.
 
 ![Game Manager - Players - Create or access Segments](media/tutorials/game-manager-create-or-access-player-segments.png)  
 
@@ -39,7 +39,7 @@ To access segment configuration:
 Some things must preexist for you to configure a segment. There must be:
 
 - Players with and without a distinctive characteristic defined in PlayFab.
-- A defined **CloudScript PlayStream** hook.
+- A defined CloudScript PlayStream hook.
 
 > [!NOTE]
 > For more about this, see [Using CloudScript actions with PlayStream](../../automation/actions-rules/using-cloudscript-actions-with-playstream.md).

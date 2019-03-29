@@ -23,7 +23,7 @@ While a catalog is the list of all of the items available in the game, a store i
 
 Multiple stores can be defined per catalog, so that you can have distinct sets of items for presentation to the player, based upon user segmentation or other factors.
 
-Once you have defined a catalog through the [**Game Manager**](https://developer.playfab.com/) or though our admin **[SetCatalogItems](xref:titleid.playfabapi.com.admin.title-widedatamanagement.setcatalogitems)** or **[UpdateCatalogItems](xref:titleid.playfabapi.com.admin.title-widedatamanagement.updatecatalogitems) API** calls, you will be able to use a wide variety of Inventory API calls on the client and server.
+Once you have defined a catalog through the [**Game Manager**](https://developer.playfab.com/) or though our admin **[SetCatalogItems](xref:titleid.playfabapi.com.admin.title-widedatamanagement.setcatalogitems)** or **[UpdateCatalogItems](xref:titleid.playfabapi.com.admin.title-widedatamanagement.updatecatalogitems)** API calls, you will be able to use a wide variety of Inventory API calls on the client and server.
 
 ## API Overview
 

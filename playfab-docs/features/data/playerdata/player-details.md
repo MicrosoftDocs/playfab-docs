@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 - To access player details, move to the sidebar menu and select [Players](../../data/playerdata/using-the-players-page.md) **(1)**.
 
-- Locate the **Player** and select their **ID** label **(2)**.
+- Locate the Player and select their **ID** label **(2)**.
 
 ![Game Manager - Access Player details](media/tutorials/game-manager-access-player-details.png)  
 
@@ -72,8 +72,8 @@ A PlayFab account contains critical, identifying, player data. As an administrat
 3. **Username** - A read-only field for inspecting the player's username. Username can be empty. When present, it can be used for a player to log in using a username and password.
 4. **Email** - This field is hidden and locked due to PII concerns. The email field can be empty. When present, it can be used for player to log in using email and password. You may use the **Lock** icon button to unlock and change the email value.
 5. **Change Password** - When set, this can be used to assign a new password for the user. This setting is mutually exclusive with **Send password reset** email.
-6. **Send password reset email** - When set, this allows you to send a password recovery email when an email value is present. This setting is mutually exclusive with **Change password**.
-7. **Avatar image URL** - This field allows you to force **change avatar** for the user.
+6. **Send password reset email** - When set, this allows you to send a **password recovery** email when an email value is present. This setting is mutually exclusive with **Change password**.
+7. **Avatar image URL** - This field allows you to force change avatar for the user.
 8. **Update PlayFab account** - Use this button to commit any changes you make on this account screen.
 
 ![Game Manager - Player - PlayFab account](media/tutorials/game-manager-player-playfab-account.png)  

@@ -12,12 +12,12 @@ ms.localizationpriority: medium
 
 # Email Messaging quickstart
 
-To send emails from PlayFab, you will need to have your own external **SMTP** server with a username and password. Once you have an **SMTP** server available, check out [Setting up an SMTP server with add-ons](../../engagement/emails/setting-up-an-smtp-server-with-add-ons.md) to configure your title to send emails.
+To send emails from PlayFab, you will need to have your own external SMTP server with a username and password. Once you have an SMTP server available, check out [Setting up an SMTP server with add-ons](../../engagement/emails/setting-up-an-smtp-server-with-add-ons.md) to configure your title to send emails.
 
 > [!NOTE]
-> You can use Gmail as an **SMTP** server for testing, but with Gmail, you are limited to 2,000 emails per day.
+> You can use Gmail as an SMTP server for testing, but with Gmail, you are limited to 2,000 emails per day.
 
-Once your **SMTP** Server is set up and configured in PlayFab, you can follow our tutorials for [Using a rule to verify a contact email address](using-a-rule-to-verify-a-contact-email-address.md) or [Using email templates](using-email-templates-to-send-an-account-recovery-email.md)
+Once your SMTP Server is set up and configured in PlayFab, you can follow our tutorials for [Using a rule to verify a contact email address](using-a-rule-to-verify-a-contact-email-address.md) or [Using email templates](using-email-templates-to-send-an-account-recovery-email.md)
 
 You can also use the following APIs to manage player contact information and email functionality:
 

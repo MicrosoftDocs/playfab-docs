@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 ## Player data vs player publisher data
 
-[Player data](quickstart.md) is information about a player, specific to a game title. It should be used for title-specific information, such as saving your player's position in a dungeon, or other game-specific data.
+[Player data](quickstart.md) is information about a player that is specific to a game title. It should be used for title-specific information, such as saving your player's position in a dungeon, or other game-specific data.
 
 Player Publisher data is data associated with the player account, as opposed to the player account *plus* the title. It is used to save information about a player relevant to all titles in your Studio (which may also contain title-specific information, for purposes of cross-title rewards).
 
@@ -25,7 +25,7 @@ If you need to have titles in a Studio that have different Publisher IDs, or tit
 > [!NOTE]
 > Please don't confuse player Publisher data with [Publisher data](../../config/titledata/using-publisher-data.md) which is Key/Value Pair data shared by all titles (it is *not* per-player).
 
-Player Publisher data usage is nearly identical to player data usage. They are *both* dictionaries mapping a string to a JSON blob (or other arbitrary string value).
+Player publisher data usage is nearly identical to player data usage. They are *both* dictionaries mapping a string to a JSON blob (or other arbitrary string value).
 
 Our example in this tutorial, [Grant a reward for playing multiple titles](#grant-a-reward-for-playing-multiple-titles), will demonstrate saving JSON blobs, and focus on a targeted example of why you might use player publisher data.
 
@@ -35,7 +35,7 @@ Rewards usually involve *other* systems outside of player data, so this example 
 
 ### Requirements
 
-- A player must sign into *both* titles using the same credentials. One approach is to use *Recoverable Credentials*, as described in our [Login Basics and Best Practices](../../authentication/login/login-basics-best-practices.md) tutorial. To add a *Recoverable* login to an anonymous account, see our [Account Linking](../../authentication/login/quickstart.md) tutorial.
+- A player must sign into *both* titles using the same credentials. One approach is to use **Recoverable Credentials**, as described in our [Login Basics and Best Practices](../../authentication/login/login-basics-best-practices.md) tutorial. To add a **Recoverable** login to an anonymous account, see our [Account Linking](../../authentication/login/quickstart.md) tutorial.
 - This example requires a working knowledge of [CloudScript](../../automation/cloudscript/writing-custom-cloudscript.md):
   - Our example demonstrates basic data security to avoid player cheating. One could likewise use the server API on a custom game server, if the title makes use of them.
 - Rewards triggered through PlayFab require usage of the appropriate PlayFab features. PlayFab Rewards can be in the form of [**Virtual Currency**](../../commerce/economy/currencies.md), [**Inventory Items**](player-inventory.md), [**Custom Player Data**](quickstart.md), [**Statistics**](using-player-statistics.md), etc. Distributing rewards outside of PlayFab systems is an advanced topic, and will not be covered in this tutorial.

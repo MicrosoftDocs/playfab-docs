@@ -12,13 +12,13 @@ ms.localizationpriority: medium
 
 # PlayFab GDPR - Deleting and exporting player data
 
-PlayFab is committed to being **General Data Protection Regulation (GDPR)** compliant - and as your service provider, ensuring that we provide you with the hooks you need to allow Players to view or delete the data stored about them.
+**PlayFab** is committed to being **General Data Protection Regulation (GDPR)** compliant - and as your service provider, ensuring that we provide you with the hooks you need to allow Players to view or delete the data stored about them.
 
 While we can’t provide you with legal advice — *and we do encourage you to seek legal counsel to ensure your compliance with the GDPR* — we are here to help you fulfill your obligations under GDPR.
 
 PlayFab is introducing three new APIs to help you respond to Player data requests:
 
-- [GetPlayedTitleList](xref:titleid.playfabapi.com.admin.accountmanagement.getplayedtitlelist) - Call this API to get a list of **TitleIds** which have data associated with the given player. This list is scoped by **PublisherID**, and represents the set of titles which would be impacted were you to delete or export this player's data.
+- [GetPlayedTitleList](xref:titleid.playfabapi.com.admin.accountmanagement.getplayedtitlelist) - Call this API to get a list of TitleIds which have data associated with the given player. This list is scoped by PublisherID and represents the set of titles which would be impacted were you to delete or export this player's data.
 - [DeleteMasterPlayerAccount](xref:titleid.playfabapi.com.admin.accountmanagement.deletemasterplayeraccount) - Call this API to delete the records of a given player.
 - [ExportMasterPlayerData](xref:titleid.playfabapi.com.admin.accountmanagement.exportmasterplayerdata) - Call this API to export all of the associated data and records of a given player.
 
@@ -43,10 +43,10 @@ With these credentials, we can identify the PlayFabIds for *each* Master Player 
 
 The following APIs will help you translate from credential to PlayFabId:
 
-- [GetUserAccountInfo](xref:titleid.playfabapi.com.admin.accountmanagement.getuseraccountinfo) - This API will help you find players by email, TitleDisplayName, PlayFabId, or a PlayFab Username.
-- [GetPlayerIdFromAuthToken](xref:titleid.playfabapi.com.admin.accountmanagement.getplayeridfromauthtoken) - This API will allow you to find a player from a specific **AuthToken**, which is granted to the player when they log in.
-- [GetPlayFabIDsFromFacebookIDs](xref:titleid.playfabapi.com.server.accountmanagement.getplayfabidsfromfacebookids) - This API derives the player's PlayFabId from one or more FacebookIds.
-- [GetPlayFabIDsFromSteamIDs](xref:titleid.playfabapi.com.server.accountmanagement.getplayfabidsfromsteamids) - This API derives the player's PlayFabId from one or more SteamIds.
+- [GetUserAccountInfo](xref:titleid.playfabapi.com.admin.accountmanagement.getuseraccountinfo) - This API will help you find players by email, **TitleDisplayName**, **PlayFabId**, or a **PlayFab Username**.
+- [GetPlayerIdFromAuthToken](xref:titleid.playfabapi.com.admin.accountmanagement.getplayeridfromauthtoken) - This API will allow you to find a player from a specific **AuthToken** which is granted to the player when they log in.
+- [GetPlayFabIDsFromFacebookIDs](xref:titleid.playfabapi.com.server.accountmanagement.getplayfabidsfromfacebookids) - This API derives the player's **PlayFabId** from one or more **FacebookIds**.
+- [GetPlayFabIDsFromSteamIDs](xref:titleid.playfabapi.com.server.accountmanagement.getplayfabidsfromsteamids) - This API derives the player's **PlayFabId** from one or more **SteamIds**.
 
 > [!NOTE]
 > All of these APIs are title-specific. The first two are Admin APIs and the last two are Server APIs.
@@ -120,7 +120,7 @@ public static async void StartFindTitlesExample(Action<PlayFabError> callback)
 }
 ```
 
-At this this point you have a list of **PlayFabIds** for this player (based on the credentials they’ve shared) and a list of titles for each **PlayFabId**. Now what?
+At this this point you have a list of PlayFabIds for this player (based on the credentials they’ve shared) and a list of titles for each PlayFabId. Now what?
 
 Now you’re ready to delete or export!
 
@@ -130,7 +130,7 @@ Deleting a Master Player account can be accomplished by using the new DeleteMast
 
 When you make a request to delete a player, PlayFab will quickly remove the player's personal information from our core system before sending the request to a queue processing agent, which works to remove any remaining information about the player from ancillary systems and sub-processors.
 
-This API returns immediately and provides a **JobReceiptId** which you should store for your records. The **JobReceiptId** is your validation that PlayFab received the request to delete the player.
+This API returns immediately and provides a **JobReceiptId** which you should store for your records. The JobReceiptId is your validation that PlayFab received the request to delete the player.
 
 Once the delete is complete, an email will be sent to the notification email address configured for the title. It will contain the same **JobReceiptId** which was initially returned by the API. The completion of the task will also trigger a PlayStream event.
 
@@ -224,7 +224,7 @@ This API immediately returns a **JobReceiptId** which you should store in your r
 
 The completion of the task will also trigger a PlayStream event. Using our WebHook feature, you can register to receive these events on an endpoint of your choosing and process as needed. The event will contain a JSON blob that has information such as the **JobReceiptId** and the download URL for the exported data.
 
-The following example is how to use the Admin API with the [C# SDK](../../../sdks/c-sharp/index.md). If you would like to use a different SDK, then select one from the list of [PlayFab SDKs](../../../index.md?#pivot=documentation&panel=sdks).
+The following example is how to use the Admin API with the [C# SDK](../../../sdks/c-sharp/index.md). If you would like to use a different SDK then select one from the list of [PlayFab SDKs](../../../index.md?#pivot=documentation&panel=sdks).
 
 ```csharp
 public static async void ExportMasterPlayerExample(Action<PlayFabError> callback)
