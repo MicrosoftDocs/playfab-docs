@@ -36,7 +36,7 @@ There are several selectable fields in each event. If you select the “(i)” i
 
 ![Event Raw JSON Data](media/playstream-event-rawjson.png)
 
-You can also select the player’s ID to jump straight to the player’s profile. Certain other events also have  selectable fields.
+You can also select the player’s ID to jump straight to the player’s profile. Certain other events also have selectable fields.
 
 ## Player segmentation and actions
 
