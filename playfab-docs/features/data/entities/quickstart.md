@@ -14,17 +14,17 @@ ms.localizationpriority: medium
 
 Read our introductory blog about [Entities, Objects and Files](https://blog.playfab.com/blog/introducing-entities-objects-and-files)!
 
-The entity **API** introduces new access patterns that are designed to alleviate the pain points of the current account and data systems.
+The entity API introduces new access patterns that are designed to alleviate the pain points of the current account and data systems.
 
-With the existing **APIs**, saving a data value has separate **API** calls for:
+With the existing APIs, saving a data value has separate API calls for:
 
 - **Title** access - (client/[GetTitleData](xref:titleid.playfabapi.com.client.title-widedatamanagement.gettitledata), admin/[GetTitleData](xref:titleid.playfabapi.com.admin.title-widedatamanagement.gettitledata), server/[GetTitleData](xref:titleid.playfabapi.com.server.title-widedatamanagement.gettitledata)).
 - **Player** access - (client/[GetUserReadOnlyData](xref:titleid.playfabapi.com.client.playerdatamanagement.getuserreadonlydata), client/[UpdateUserData](xref:titleid.playfabapi.com.client.playerdatamanagement.updateuserdata), client/[UpdateUserPublisherData](xref:titleid.playfabapi.com.client.playerdatamanagement.updateuserpublisherdata)).
 - **Character** access - (client/[GetCharacterData](xref:titleid.playfabapi.com.client.characterdata.getcharacterdata), client/[UpdateCharacterData](xref:titleid.playfabapi.com.client.characterdata.updatecharacterdata)).
 
-In the new **API** scheme, a single call supports saving a data value for a title, player, character, and every other future entity type, combined with powerful access rules that replicate and expand the current system behavior of custom data in a better interface.
+In the new API scheme, a single call supports saving a data value for a title, player, character, and every other future entity type, combined with powerful access rules that replicate and expand the current system behavior of custom data in a better interface.
 
-In some regards, these changes are not backwards compatible. However, using them will not change the behavior of the existing **APIs**.
+In some regards, these changes are not backwards compatible. However, using them will not change the behavior of the existing APIs.
 
 ## Terminology
 
@@ -37,11 +37,11 @@ Entities are any PlayFab concept which can contain data. Currently we have a num
 
 This system will be expanded, so you will see future entity types added to cover guilds or groups, game servers, and more.
 
-Because this is a new **API**, we are refining some of the terms used in other **API** methods:
+Because this is a new API, we are refining some of the terms used in other API methods:
 
 - **Title** - This concept is unchanged. Your title may contain global information available to all players. This is similar to [TitleData](xref:titleid.playfabapi.com.client.title-widedatamanagement.gettitledata). It is identified by the title ID (**TitleId**) of the game/application.
 - **master_player_account** - This entity Type allows you to share information about a player across multiple games within a studio. This is similar to [UserPublisherData](xref:titleid.playfabapi.com.client.playerdatamanagement.getuserpublisherdata). It is identified by the PlayFab ID (**PlayFabId**) of the player, which is returned as part of any login or any call to retrieve account information for the player account (for example, [Client/GetAccountInfo](xref:titleid.playfabapi.com.client.accountmanagement.getaccountinfo)).
-- **title_player_account** - This concept is based on user/player in the existing **API** methods. Each player may contain some information for the current title. This is similar to the [GetUserData](xref:titleid.playfabapi.com.client.playerdatamanagement.getuserdata) method. This is identified by the entity ID (**EntityKey.Id**) you get back in the [EntityKey](xref:titleid.playfabapi.com.authentication.authentication.getentitytoken#entitykey) object on any login where you specify **LoginTitlePlayerAccountEntity** as *True*.
+- **title_player_account** - This concept is based on user/player in the existing API methods. Each player may contain some information for the current title. This is similar to the [GetUserData](xref:titleid.playfabapi.com.client.playerdatamanagement.getuserdata) method. This is identified by the entity ID (**EntityKey.Id**) you get back in the [EntityKey](xref:titleid.playfabapi.com.authentication.authentication.getentitytoken#entitykey) object on any login where you specify **LoginTitlePlayerAccountEntity** as *True*.
 - **character** - This concept is unchanged. Your player may own characters, which can each contain some information. This is similar to [CharacterData](xref:titleid.playfabapi.com.client.characterdata.getcharacterdata). It is identified by the character ID (**CharacterId**) of the character.
 
 See the [Available built-in Entity types](../../data/entities/available-built-in-entity-types.md) tutorial, for a list of all built-in entity types.
@@ -51,7 +51,7 @@ See the [Available built-in Entity types](../../data/entities/available-built-in
 
 ## Entity initialization
 
-Before you can use any **Entity API** calls you must get an [EntityKey](xref:titleid.playfabapi.com.authentication.authentication.getentitytoken#entitykey). You do this by using any normal login call, with a new optional parameter [LoginTitlePlayerAccountEntity](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid#loginwithcustomidrequest) set to *True*, or by calling the [GetEntityToken](xref:titleid.playfabapi.com.authentication.authentication.getentitytoken) **API** method.
+Before you can use any Entity API calls you must get an [EntityKey](xref:titleid.playfabapi.com.authentication.authentication.getentitytoken#entitykey). You do this by using any normal login call, with a new optional parameter [LoginTitlePlayerAccountEntity](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid#loginwithcustomidrequest) set to *True*, or by calling the [GetEntityToken](xref:titleid.playfabapi.com.authentication.authentication.getentitytoken) API method.
 
 ```csharp
 PlayFabAuthenticationAPI.GetEntityToken(new GetEntityTokenRequest(),
@@ -62,15 +62,15 @@ PlayFabAuthenticationAPI.GetEntityToken(new GetEntityTokenRequest(),
 }, OnPlayFabError); // Define your own OnPlayFabError function to report errors
 ```
 
-This **API** method returns an [Authentication/EntityKey](xref:titleid.playfabapi.com.authentication.authentication.getentitytoken#entitykey) object, which contains the ID and type, which you should save. If called from the client, this typically represents the logged-in player.
+This API method returns an [Authentication/EntityKey](xref:titleid.playfabapi.com.authentication.authentication.getentitytoken#entitykey) object, which contains the ID and type, which you should save. If called from the client, this typically represents the logged-in player.
 
-Called from game servers, this will represent your title. With the **entityId** and **entityType**, you can make other calls to other **Entity API** methods.
+Called from game servers, this will represent your title. With the **entityId** and **entityType**, you can make other calls to other Entity API methods.
 
-You should save a reference to the **entityId** and **entityType** to use in other **API** calls (Each **API** has an **EntityKey** structure, above). **EntityToken** is handled internally by the **SDK**, so you can ignore that.
+You should save a reference to the **entityId** and **entityType** to use in other API calls (Each API has an **EntityKey** structure, above). **EntityToken** is handled internally by the SDK, so you can ignore that.
 
 ## Entity objects
 
-Entity objects allow you to read and write small **JSON**-serializable objects attached to an entity. All entity types support the same **GetObjects** and **SetObjects** methods.
+Entity objects allow you to read and write small JSON-serializable objects attached to an entity. All entity types support the same **GetObjects** and **SetObjects** methods.
 
 The examples that are shown below demonstrate setting and reading an **Object** on a **title_player_account**.
 
@@ -290,11 +290,11 @@ public class EntityFileExample : MonoBehaviour
 
 - **GlobalFileLock** is a very simplistic way to avoid file collisions, specifically designed for this example.
   - Independent file actions will not cause any issues.
-  - Each file action requires many steps and multiple **API** calls, so don't try to access the same file in multiple ways at the same time.
+  - Each file action requires many steps and multiple API calls, so don't try to access the same file in multiple ways at the same time.
   - If you are very careful, you won't need any locking mechanism.
   - If you want to do something complicated, your locking mechanism may be much more complex.
-- **OnGUI** is a very old (but very dense) way to build a **Unity GUI** entirely within script.
-  - Your **GUI** will be much better, and game-specific.
+- **OnGUI** is a very old (but very dense) way to build a Unity GUI entirely within script.
+  - Your GUI will be much better, and game-specific.
 - All PlayFab features *first* require a login or authentication.
 - **LoadAllFiles()** will do exactly as it says. For the current logged-in entity, load all file saved to PlayFab.
   - This requires multiple steps:

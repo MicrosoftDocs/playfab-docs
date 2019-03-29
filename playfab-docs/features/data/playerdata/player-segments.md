@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 Players can be collected together into a segment, with the idea that all players in the segment meet certain conditions (filters).
 
-Once the segment is defined, you can monitor the total number of player in the segment and run custom actions on those player automatically or manually.
+Once the segment is defined, you can monitor the total number of players in the segment and run custom actions on those players automatically or manually.
 
 ## Access players segments
 

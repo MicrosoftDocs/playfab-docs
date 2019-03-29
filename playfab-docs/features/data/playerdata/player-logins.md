@@ -10,13 +10,13 @@ keywords: playfab, game manager, player data, login
 ms.localizationpriority: medium
 ---
 
-# Player logins
+# Players logins
 
-The **Player logins** page offers an overview of all the login attempts for a specific player.
+The **Players logins** page offers an overview of all the login attempts for a specific player.
 
-## Access player logins
+## Access players logins
 
-To access the player logins page:
+To access the players logins page:
 
 - Select **Players** found in the sidebar menu **(1)**.
 
@@ -29,11 +29,11 @@ To access the player logins page:
 
 ## Overview
 
-The **Player Login** page contains the following information:
+The **Players Login** page contains the following information:
 
 - **Player ID** - A label that identifies the player you are inspecting.
 - **Total login attempts** - The total number of login attempts by this player.
-- **Date of login attempt** - A human readable **Date** label for each login attempt.
-- **IP address** - A label showing the **IP** address.
-- **Source** - A label that indicates where login attempt came from.
+- **Date of login attempt** - A human readable date label for each login attempt.
+- **IP address** - A label showing the IP address.
+- **Source** - A label that indicates where the login attempt came from.
 - **Result** - Indicates whether the login attempt was successful.

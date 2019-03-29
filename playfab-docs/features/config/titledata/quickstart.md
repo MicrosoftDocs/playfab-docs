@@ -44,7 +44,7 @@ public void ClientGetTitleData() {
 
 ### From the game server
 
-Use [GetTitleData](xref:titleid.playfabapi.com.server.title-widedatamanagement.gettitledata) from the **PlayFabServerAPI** to get the **KVPs** for a specific **Title**. The following code example displays the values of all of the **Title Data**.
+Use [GetTitleData](xref:titleid.playfabapi.com.server.title-widedatamanagement.gettitledata) from the **PlayFabServerAPI** to get the KVPs for a specific Title. The following code example displays the values of all of the Title Data.
 
 ```csharp
 public void ServerGetTitleData() {
@@ -64,7 +64,7 @@ public void ServerGetTitleData() {
 
 It is unlikely that title data will change very frequently. For most situations, you should use your title data for static data that is mostly unchanged for the life of the title.
 
-You can set title data by using the Game Manager, or by a server **API** function.
+You can set title data by using the Game Manager, or by a server API function.
 
 After the title data is set for initial release, most titles will not make significant changes from that point.
 
@@ -82,7 +82,7 @@ To add data to a title, perform the following steps.
 
 ### Setting title data by calling the server API in C#
 
-The [SetTitleData](xref:titleid.playfabapi.com.server.title-widedatamanagement.settitledata) **API** is a server **API** that you must call from a dedicated server. You can only set one title data KVP in each call to **SetTitleData**.
+The [SetTitleData](xref:titleid.playfabapi.com.server.title-widedatamanagement.settitledata) API is a server API that you must call from a dedicated server. You can only set one title data KVP in each call to **SetTitleData**.
 
 ```csharp
 public void SetTitleData() {
@@ -102,7 +102,7 @@ public void SetTitleData() {
 
 ## Internal title data
 
-Similarly to User Data, title data has internal storage that is hidden from the client. This data can also be set in the Game Manager, or via a server **API**.
+Similarly to User Data, title data has internal storage that is hidden from the client. This data can also be set in the Game Manager, or via a server API.
 
 ### Getting internal title data by calling the server API in C#
 

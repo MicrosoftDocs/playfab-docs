@@ -19,7 +19,7 @@ This tutorial walks you through the steps for creating a rule that sends an veri
 > [!IMPORTANT]
 > This is an advanced tutorial. Please *make sure* that all of the requirements have been met, or you will *not* be able to complete this tutorial.
 
-- To send custom emails with email templates, you will need to have your own **SMTP** server with a username and password. Please ensure that you have your own **SMTP** server before following our tutorial [Setting up an SMTP server with add-ons](../../engagement/emails/setting-up-an-smtp-server-with-add-ons.md).
+- To send custom emails with email templates, you will need to have your own SMTP server with a username and password. Please ensure that you have your own SMTP server before following our tutorial [Setting up an SMTP server with add-ons](../../engagement/emails/setting-up-an-smtp-server-with-add-ons.md).
 
 > [!NOTE]
 > You can use Gmail for testing, but with Gmail you are limited to 2,000 emails per day.
@@ -53,17 +53,17 @@ Now add a **New Email Template**, filling in the fields as follows and leaving t
 ```
 
 - **From Name**: The name you want to show in the **From** field in the email.
-- **From Email Address**:  The email address you want to show in the **From** field in the email. This must be an email domain that the **SMTP** server enables you to send emails from.
+- **From Email Address**:  The email address you want to show in the **From** field in the email. This must be an email domain that the SMTP server enables you to send emails from.
 
   > [!NOTE]
-  > Some email servers, like Gmail, will ignore this field and will send from the account set up with the **SMTP** server.
+  > Some email servers, like Gmail, will ignore this field and will send from the account set up with the SMTP server.
   
 - **Callback URL**:  <https://www.example.com>
 
 ### A few things to remember
 
-- The `$ConfirmationUrl$` in the email body generates a customized **URL** that when selected, tracks that a user has selected the **URL**, and then issues a redirect to the **Callback URL**. In this case, it is injected into an **anchor tag**.
-- The **Callback URL** is the **URL** that PlayFab will redirect to after the player selects the **Confirmation URL** link. It can be a static page that tells the user they were successful in confirming their email. In this case, we will redirect to <https://www.example.com>.
+- The `$ConfirmationUrl$` in the email body generates a customized URL that when selected, tracks that a user has selected the URL, and then issues a redirect to the **Callback URL**. In this case, it is injected into an **anchor tag**.
+- The **Callback URL** is the URL that PlayFab will redirect to after the player selects the **Confirmation URL** link. It can be a static page that tells the user they were successful in confirming their email. In this case, we will redirect to <https://www.example.com>.
 
 ![Game Manager - Content - Email Templates - New Email Template](media/tutorials/game-manager-content-new-email-template-email-verification.png)  
 
@@ -167,7 +167,7 @@ The first thing you can do is to go to the the player's **PlayStream** in **Game
 
 ![Game Manager - Players - PlayStream - Sent email event](media/tutorials/game-manager-players-playstream-sent-email-event.png)  
 
-Selecting the **Info** icon on the **Event** should show **JSON** similar to the one shown below.
+Selecting the **Info** icon on the Event should show JSON similar to the one shown below.
 
 ```json
 {
@@ -195,21 +195,21 @@ To verify that you actually received the email, go to the email of the player yo
 
 ![Verify your email - email](media/tutorials/verify-your-email-email.png)  
 
-If you inspect the **URL** in that email, you will see that it looks something like the one shown below.
+If you inspect the URL in that email, you will see that it looks something like the one shown below.
 
 ```html
 https://a5f3.playfabapi.com/EmailConfirmation/Confirm/?token=2346241B7C277796&titleId=A5F3&templateId=38017AAE7F494AB3
 ```
 
-When the player selects that **URL**, three things happen:
+When the player selects that URL, three things happen:
 
-1. PlayFab generates a new **PlayStream** event, called **auth_token_validated**. This is how you know that the player selected that **URL** in the email.
+1. PlayFab generates a new **PlayStream** event, called **auth_token_validated**. This is how you know that the player selected that URL in the email.
    - You can use that event to trigger actions, like granting coins or items to the player.
 2. Because this email template was the special **Email Verification** template, PlayFab will then mark the player email as *Verified*.
-3. PlayFab will return a redirect **URL** sending the player to the callback **URL** website.
-    - On this website you can show a static **Thanks for verifying your email** message, or something more elaborate. The redirect **URL** will look something like this: <https://www.example.com/?token=2346241B7C277796>.
+3. PlayFab will return a redirect URL sending the player to the callback URL website.
+    - On this website you can show a static **Thanks for verifying your email** message, or something more elaborate. The redirect URL will look something like this: <https://www.example.com/?token=2346241B7C277796>.
 
-    - Go ahead and select the **URL** found in the email.
+    - Go ahead and select the URL found in the email.
     - You will be taken to the **example.com** website.
     - View your **Player Profile** using the **Game Manager**.
     - You will see that the **Verification status** has changed.
@@ -218,6 +218,6 @@ When the player selects that **URL**, three things happen:
 
 ## Conclusion
 
-So that's it for this tutorial. You've seen how to setup your **SMTP** server, create an email template, and create a rule that sends an email to a player verifying their email address.
+So that's it for this tutorial. You've seen how to setup your SMTP server, create an email template, and create a rule that sends an email to a player verifying their email address.
 
 If you have any questions or feedback on this tutorial, please email us at [devrel@playfab.com](mailto:devrel@playfab.com).
