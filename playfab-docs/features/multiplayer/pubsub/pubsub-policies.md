@@ -50,7 +50,7 @@ Then choose the type of entity which will be subscribing to the desired event in
 > [!NOTE]
 > For now, ignore the check boxes under **PUBLISH** as they currently have no effect.
 
-For custom events, the process is largely the same.  The big difference is that you need to select **Custom** for the namespace, type in the full namespace (beginning with `com.playfab.events`), and the name of the event into the text boxes which appear.
+For custom events, the process is largely the same. The big difference is that you need to select **Custom** for the namespace, type in the full namespace (beginning with `com.playfab.events`), and the name of the event into the text boxes which appear.
 
 ![Screen shot of the new custom PubSub policy configuration page](images/new-custom-policy.png)
 

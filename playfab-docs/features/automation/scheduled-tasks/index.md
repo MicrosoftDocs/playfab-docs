@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Scheduled tasks
 
-Scheduled tasks are a way to automate common game operation routines.  Some common examples are:
+Scheduled tasks are a way to automate common game operation routines. Some common examples are:
 
 - Updating [Title Data](../../config/titledata/index.md) to reflect changes for a current event.
 - Injecting virtual currencies into the game economy daily.

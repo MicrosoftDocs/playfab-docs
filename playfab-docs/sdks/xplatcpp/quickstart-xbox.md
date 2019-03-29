@@ -95,7 +95,7 @@ Now, deploy your game:
 1. In **Visual Studio**, right click on the **Solution**. Select **Add \> Existing Project**. 
 2. Navigate to and select **XPlatXbox.vcxproj** under the **build \> Xbox** folder of the **XPlatCppSdk** folder.
 3. Hit **Open**. You should now see the **XPlatXbox** project as part of your solution.
-4.  Right-click on **References** under the *PlayFabXboxGuide* project. 
+4. Right-click on **References** under the *PlayFabXboxGuide* project. 
 5. Click on **Add Reference**. 
 6. Under **Project \> Solution**, select the **XPlatXbox** project and hit **OK**. 
 7. Now your project is linked to the **XPlatXbox SDK** and you should be able to build to make **PlayFab API** calls.

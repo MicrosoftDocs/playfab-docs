@@ -418,7 +418,7 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>Platform-Specific Authentication</h3>
-                                                <p style='color: #7f7f7f'>Use the providers that your players want.  Seemlessly integrate login in your game.</p><p><a href='/gaming/playfab/features/authentication/platform-specific-authentication/'>Overview</a></p><p><a href='/gaming/playfab/features/authentication/platform-specific-authentication/tutorials'>Tutorials</a></p>
+                                                <p style='color: #7f7f7f'>Use the providers that your players want. Seemlessly integrate login in your game.</p><p><a href='/gaming/playfab/features/authentication/platform-specific-authentication/'>Overview</a></p><p><a href='/gaming/playfab/features/authentication/platform-specific-authentication/tutorials'>Tutorials</a></p>
                                             </div>
                                         </div>
                                     </div>

@@ -35,4 +35,4 @@ The following known limitations exist in the system in its current state. Many o
 - While in private preview, there is no **SLA** for PlayFab PubSub. We do not recommend shipping a game which uses this feature.
 - Only entity-based events are supported in the current version. For custom events, that means any event sent via the [WriteEvents](xref:titleid.playfabapi.com.events.playstreamevents.writeevents) **API**. For the full list of supported standard events, see the drop-down in the PubSub Policy UI.
 - There is no way to publish an event through PubSub without also sending it through **PlayStream**. To publish a custom event, call the **PlayStream WriteEvents API**.
-- The Publish permissions UI is currently not functional; you can ignore it.  **WriteEvents** has a built-in policy on who can send events, which remains the single policy for who can publish events for now.
+- The Publish permissions UI is currently not functional; you can ignore it. **WriteEvents** has a built-in policy on who can send events, which remains the single policy for who can publish events for now.

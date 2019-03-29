@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Player Data
 
-Store player information and game state in the cloud so data is never lost.  This allows a player to share across multiple devices and your multiple games.
+Store player information and game state in the cloud so data is never lost. This allows a player to share across multiple devices and your multiple games.
 
 There are two models for storing player data:
 
