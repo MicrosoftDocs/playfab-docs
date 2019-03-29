@@ -14,9 +14,9 @@ ms.localizationpriority: medium
 
 ## Monitoring players
 
-It is possible to inspect the players you have in your title using the **Players Page**.
+It is possible to inspect the players you have in your title using the **Players** page.
 
-- Go to the **Game Manager** page.
+- Go to **Game Manager**.
 - Select **Players** from the menu on the left.
 - Select the **Players** tab.
 
@@ -74,7 +74,7 @@ Now let's test a few querying techniques.
 
 ### Complex queries
 
-**Complex** queries add more flexibility by introducing field referencing (dot notation, camelCase), operands, grouping using parenthesis, operators AND/OR/NOT and value descriptors.
+Complex queries add more flexibility by introducing field referencing (dot notation, camelCase), operands, grouping using parenthesis, operators AND/OR/NOT and value descriptors.
 
 The basic element of a Complex query is a query expression in the format **fieldName:valueDescriptor**. The search engine will then look for all players that have the  specified field (denoted by **fieldName**) with the value (denoted by **valueDescriptor**):
 

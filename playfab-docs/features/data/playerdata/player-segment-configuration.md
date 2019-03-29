@@ -49,7 +49,7 @@ Some things must preexist for you to configure a segment. There must be:
 In this example we are going to:
 
 - Configure a segment using the defining characteristic: all players that come from Canada.
-- Run a **CloudScript** function **helloWorld** for each player that enters the segment.
+- Run a CloudScript function **helloWorld** for each player that enters the segment.
 
 A *defining characteristic* of a player might be a:
 
@@ -66,7 +66,7 @@ A *defining characteristic* of a player might be a:
 
 When a segment is defined, you have a variety of action options to run when a player enters or leaves the segment.
 
- **CloudScript** is by far the most flexible action, granting you full control of the player and segment information at the time of segment-transition.
+ CloudScript is by far the most flexible action, granting you full control of the player and segment information at the time of segment-transition.
 
 Use the second parameter - *context* - in your [CloudScript handler](../../automation/actions-rules/using-cloudscript-actions-with-playstream.md) to identify the player and segment transition. Afterwards, you can perform any action you wish for the player, such as granting [inventory items](../../data/playerdata/player-inventory.md), [virtual currency](../../commerce/economy/currencies.md), [player data](../../data/playerdata/quickstart.md), or [statistics](using-player-statistics.md).
 
@@ -85,9 +85,9 @@ In our example shown here, the segment configuration requires 4 simple steps.
 
 Segment filtering allows you to define what players are included in the segment.
 
-Formally speaking, area **(1)** on the left of the screen shown below is a set of **Players** that belong to at least one group.
+Formally speaking, area **(1)** on the left of the screen shown below is a set of Players that belong to at least one group.
 
-**Group (2)** is a set of players that meet all defined conditions, called **filters (3)**.
+**Group (2)** is a set of Players that meet all defined conditions, called **filters (3)**.
 
 ![Game Manager - players - advanced segment filtering](media/tutorials/game-manager-players-advanced-segment-filtering.png)  
 
@@ -106,10 +106,10 @@ The screenshot shown above is an example of how a segment can be defined. This s
 1. The first group is defined by 2 filters:
 
    - A player must be from Canada.
-    a. And must have **Apple** push notifications enabled.
-   - The second group is *also* for players from Canada, but they must have **Google** push notifications enabled.
+    a. And must have Apple push notifications enabled.
+   - The second group is *also* for players from Canada, but they must have Google push notifications enabled.
 
-In the end, we have a segment of players from Canada with either **Google** or **Apple** push notifications.
+In the end, we have a segment of players from Canada with either Google or Apple push notifications.
 
 Each filter has a unique configuration and purpose. As of 4/30/2017 the following filters are available:
 
@@ -119,9 +119,9 @@ Each filter has a unique configuration and purpose. As of 4/30/2017 the followin
 - **First login (timespan)** filter - Allows you to filter based on first login timespan relative to the current datetime (example - players that have first signed in 20 minutes ago [from now]).
 - **Last login (date)** filter - Allows you to filter based on the last login datetime (example - players that have not signed in since 1/1/2017).
 - **Last login (timespan)** filter - Allows you to filter based on the last login timespan relative to the current datetime  (example, players that have not signed in for a week [from now]).
-- **Linked user account to** filter  - Allows you to filter based on the users' linked accounts (example - players that have a **Steam** account linked with email).
+- **Linked user account to** filter  - Allows you to filter based on the users' linked accounts (example - players that have a Steam account linked with email).
 - **Location (country)** filter - Allows you to filter based on a player's country (example - players from Canada).
-- **Push notifications enabled with** filter - Allows you to filter based on player push notification settings and capabilities (example - players that have **Google** push notifications enabled.
+- **Push notifications enabled with** filter - Allows you to filter based on player push notification settings and capabilities (example - players that have Google push notifications enabled.
 - **Statistics value** filter - Allows you to filter based on your own custom statistic attribute (example - players that inflicted 20000 damage in total).
 - **Tag** filter - Allows you to filter based on whether a player has or doesn't have a certain tag (example - players that have a *cheater* tag).
 - **Total value to date in USD** filter - Allows you to filter based on how much USD currency a player spent in your game (example - players that have spent over $30.
@@ -129,7 +129,7 @@ Each filter has a unique configuration and purpose. As of 4/30/2017 the followin
 - **User Origination** filter - Allows you to filter based on the first authentication method that a player used to start playing the game.
 
 > [!NOTE]
-> The trick here is that a player may start with authentication based on, say, an **iOS Device ID**. Later, a player may have a **GameCenter** account linked. In this case, the player origination will be the **iOS Device ID** (example, players that first signed in using an **iOS Device ID**).
+> The trick here is that a player may start with authentication based on, say, an iOS Device ID. Later, a player may have a GameCenter account linked. In this case, the player origination will be the iOS Device ID (example, players that first signed in using an iOS Device ID).
 
 - **Virtual currency balance** filter - Allows you to filter based on a player's custom virtual currency deposit (example -  players that have less than 50 Crystal).
 
@@ -147,7 +147,7 @@ The general workflow for the **Actions** panel is the following:
 2. Select the **Type** of action.
 
 > [!NOTE]
-> PlayFab offers a variety of actions. If, at any point, you need a more flexible action, consider a **CloudScript** action. This action type allows you to run your own **CloudScript** function.
+> PlayFab offers a variety of actions. If, at any point, you need a more flexible action, consider a CloudScript action. This action type allows you to run your own CloudScript function.
 
 3. **Configure the action (3)** (specific for each action type).
 4. **Remove an action (4)** from the trigger.
