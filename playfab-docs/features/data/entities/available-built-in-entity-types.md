@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 The following list describes the available entity types, which can be used to construct an **EntityKey**.
 
-Entity keys are used to identify entities in most newer **API** methods.
+Entity keys are used to identify entities in most newer API methods.
 
 These values are meant to be used in the **EntityKey.Type** field.
 
@@ -51,13 +51,13 @@ The **ID** field should be set to your game's **TitleId**, found in **Game Manag
 
 The **master_player_account** is a player entity that is shared among all titles within a studio.
 
-The **ID** field should be set to **PlayFabId** from the classic **API**, returned by any **Login Result.PlayFabId**.
+The **ID** field should be set to **PlayFabId** from the classic API, returned by any **Login Result.PlayFabId**.
 
 ## title_player_account
 
 **title_player_account**, for most developers, represents the player in the most traditional way.
 
-The **ID** field should be set to **LoginResult.EntityToken.Id** in the client **API**, or **GetEntityTokenResponse.Entity.Id** in the authentication **API**.
+The **ID** field should be set to **LoginResult.EntityToken.Id** in the client API, or **GetEntityTokenResponse.Entity.Id** in the authentication API.
 
 ## Character
 

@@ -44,7 +44,10 @@ void UpdateDisplayName() {
 }
 ```
 
-The response should show: **Successfully logged in a player with PlayFabId: SOME_PLAYFAB_ID**, followed by: **The player's display name is now: UnicornTossMaster**.
+The response should show:
+
+- **Successfully logged in a player with PlayFabId: SOME_PLAYFAB_ID**, followed by:
+- **The player's display name is now: UnicornTossMaster**.
 
 ## Step 2 - Making a player profile call
 
@@ -93,13 +96,13 @@ void CreatePlayerAndUpdateDisplayName(string playFabId) {
 }
 ```
 
-This call should result in an error with an **Error Code 1303**. **RequestViewConstraintParamsNotAllowed** and an error message stating that there are **Invalid view constraints** with a **JSON** output of constraints that the title currently has set.
+This call should result in an error with an **Error Code 1303**. **RequestViewConstraintParamsNotAllowed** and an error message stating that there are **Invalid view constraints** with a JSON output of constraints that the title currently has set.
 
 The error message has occurred because we have not yet configured the ability to show **Created** and **LastLogin** in our title’s profile constraint settings.
 
 ## Step 4 - Configuring player profile view constraints for the title
 
-In order to get more data when we call the [GetPlayerProfile](xref:titleid.playfabapi.com.server.accountmanagement.getplayerprofile) **API**, we will need to configure the constraints on the data to be available. These settings are in the title’s settings in Game Manager.
+In order to get more data when we call the [GetPlayerProfile](xref:titleid.playfabapi.com.server.accountmanagement.getplayerprofile) API, we will need to configure the constraints on the data to be available. These settings are in the title’s settings in Game Manager.
 
 To configure constraints for the title:
 
@@ -120,9 +123,9 @@ Executing the same code again will now return a successful [PlayerProfileModel](
 
 ## Step 6 - Getting player profile via login operation
 
-In most cases you will want to get certain player profile data as soon as a player is logged in. The PlayFab **API** allows you to combine those 2 calls into one.
+In most cases you will want to get certain player profile data as soon as a player is logged in. The PlayFab API allows you to combine those 2 calls into one.
 
-The following example shows how to gain profile information through a login request, and uses **LoginWithCustomId** as an example.
+The following example shows how to gain profile information through a login request, and uses `LoginWithCustomId` as an example.
 
 > [!NOTE]
 > This works with *every* login mechanism.
