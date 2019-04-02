@@ -31,7 +31,7 @@ By default, all event subscriptions are disallowed, so prior to setting up polic
 
 For your clients to receive any events via PubSub, you must first configure the appropriate policies on the PubSub Policy page within Game Manager.
 
-Open **Game Manager**, and select to the **Settings** tab on the left, then move to the **PubSub** tab on the top.
+Open Game Manager, and navigate to the **Settings** tab on the left, then to the **PubSub** tab on the top.
 
 ![Screenshot of PubSub Policy configuration page.](images/pubsub-policy-list-ui.png)
 
@@ -45,12 +45,12 @@ To create a new PubSub policy, click on the **NEW POLICY** button at the top rig
 
 For standard PlayFab events, select a **Namespace** and **Event Name** from the drop-downs to indicate what sort of event you wish to configure (standard events are under the `com.playfab` namespace).
 
-Then choose the type of entity which will be subscribing to the desired event in the **Target Entity** dropdown. Check the appropriate boxes under **SUBSCRIBE** to control who is allowed to receive these events.
+Then choose the type of entity which will be subscribing to the desired event in the **Target Entity** drop-down. Check the appropriate boxes under **SUBSCRIBE** to control who is allowed to receive these events.
 
 > [!NOTE]
 > For now, ignore the check boxes under **PUBLISH** as they currently have no effect.
 
-For custom events, the process is largely the same. The big difference is that you need to select **Custom** for the namespace, type in the full namespace (beginning with `com.playfab.events`), and the name of the event into the text boxes which appear.
+For custom events, the process is largely the same.  The big difference is that you need to select **Custom** for the namespace, type in the full namespace (beginning with `com.playfab.events`), and the name of the event into the text boxes which appear.
 
 ![Screen shot of the new custom PubSub policy configuration page](images/new-custom-policy.png)
 

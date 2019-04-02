@@ -172,7 +172,7 @@ namespace GettingStartedXamarin
 ## Finish and Execute
 
 - Run this project
-  - Build (dropdown) -> Start Debugging
+  - Build (drop-down) -> Start Debugging
 
 - The first time you run a UWP program, it can take a long time to load
 - When it loads, you should see the following text:
