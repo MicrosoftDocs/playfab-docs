@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 >
 > It is provided to give you an early look at an upcoming feature and to allow you to provide feedback while it is still in development.  
 >
-> Access to this feature is restricted to select titles, with SDKs available for Windows 10 PCs and Xbox One. Interoperable SDKs for iOS and Android will be available this summer. If you are interested in this feature, you can request access by submitting a ticket on [support.playfab.com](https://support.playfab.com/hc/en-us/requests/new).
+> Access to this feature is restricted to select titles, with SDKs available for Windows 10 PCs and Xbox One. Interoperable SDKs for iOS,  Android, and Nintendo Switch will be available this summer. If you are interested in this feature, email us at helloplayfab@microsoft.com
 
 PlayFab Party is a set of libraries and services for easily adding multiplayer real-time networking and chat communication to your game.
 
@@ -25,20 +25,24 @@ Multiplayer games are typically one of two designs: authoritative and non-author
 
 Party is an ideal, secure, low-latency transport for non-authoritative designs and authoritative designs where a cloud-hosted dedicated server is not desired. Party is also well-suited to add voice and text communication to non-gameplay social experiences your app may provide (e.g. an in-game squad experience, or post-game lobbies).
 
-Party utilizes Azure Speech Services to transcribe player voice chat and synthesize utterances for text message. This functionality has several uses, but was primarily designed as an accessibility aide. Typical usage of Party voice chat is billed on a per-minute basis, and up to 10% of those voice minutes can leverage transcription and synthesis for free. We recommend tying activation of this capability to an ease-of-access player setting.
+Party utilizes Azure Cognitive Services to transcribe player voice chat and synthesize speech auditorily for text messages. This functionality has several uses, but was primarily designed as an accessibility aide. Typical usage of Party voice chat is billed on a per-minute basis, and up to 10% of those voice minutes can leverage transcription and synthesis for free. We recommend tying activation of this capability to an ease-of-access player setting.
 
 Party can not only transcribe player chat, but also translate chat in real time. In anonymous matchmaking and international competitive games, these transcription and translation capabilities can make for a more engaging multiplayer experience.
 
 A goal of PlayFab Party and our other multiplayer services is to facilitate interoperable multiplayer infrastructure and cross-network gameplay. We encourage customers to ensure that their multiplayer experiences comply with relevant platform policies for multiplayer and cross-network player activity.
 
+## Key Resources
+- [Windows 7 (Win32 C++), Windows 10 (Win32 C++), and Xbox One (XDK C++) libraries on Github](https://www.nuget.org/packages?q=%22playfab+party%22)
+- [Windows 10 and Xbox One sample (BumbleRumble)](https://github.com/PlayFab/PlayFab-Samples)
+
 ## Roadmap
 
-| | March 2018 | August 2019 |
+| | March 2019 | August 2019 |
 |-|-|-|
 |Project Phase | Private Preview | Public Preview|
 | SLA | Non-Production | Production |
 | API | Breaking Changes | Stable |
-|Platforms | Win 10, Win 7, Xbox One | Win 10, Win 7, Xbox One, iOS, Android |
+|Platforms | Win 10, Win 7, Xbox One | Win 10, Win 7, Xbox One, iOS, Android, Nintendo Switch |
 |Pricing | Free | 30% Discount |
 
 ## Features

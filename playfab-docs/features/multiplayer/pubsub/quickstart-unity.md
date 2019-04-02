@@ -64,9 +64,9 @@ To enable PubSub, perform the following:
 
 ## Usage
 
-Using the PubSub plugin is pretty easy. If you have not looked at our reference for this feature, you should get familiar with it at [PubSub client API](pubsub-reference.md).
+Using the PubSub plug-in is pretty easy. If you have not looked at our reference for this feature, you should get familiar with it at [PubSub client API](pubsub-reference.md).
 
-1. **Initializing PubSub** - While you can initialize the plugin at any time in your code, we recommend that you initialize in either the **start** or **awake** method. When just getting started, it also helps to set **Debugging** to **true**.
+1. **Initializing PubSub** - While you can initialize the plug-in at any time in your code, we recommend that you initialize in either the **start** or **awake** method. When just getting started, it also helps to set **Debugging** to **true**.
 
    ```csharp
    PlayFabSocketsAPI.Debugging = true;

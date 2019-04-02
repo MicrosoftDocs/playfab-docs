@@ -19,7 +19,7 @@ The first feature using this new behavior is localized email templates.
 With localized email templates, you can make multiple translated versions of an email, and associate *all* of them with one template ID.
 
 > [!NOTE]
-> Any preexisting templates prior to the release of this feature will continue to behave as they have in the past. However, you can easily update them to use the new localized format used by new email templates.
+> Any templates introduced before this feature was released will retain their behavior.  However, you can easily update them to use the new localized format used by new email templates.
 
 This tutorial walks you through how to use localized email templates.
 

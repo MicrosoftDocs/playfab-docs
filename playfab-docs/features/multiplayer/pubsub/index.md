@@ -42,13 +42,21 @@ PlayFab features are also built with standard PubSub events in mind. The first e
 ## Key concepts
 
 - **Event** - Each message sent or received via PubSub is called an event.
-- **Topic** - PubSub events are addressed based on Topics. A Topic is made up of three components:
+
+- **Topic** - PubSub events are addressed based on Topics. A Topic is made up of three components:  
+
   - **event namespace**
+  
   - **event name**
+  
   - **target entity**  
-  Each published event has a specified topic and clients specify the topic they are interested in with each subscription.
+  
+Each published event has a specified topic, and with each subscription, clients specify the topic in which they are most interested.
+
 - **Event Namespace** - The namespace representing the category of an event. Standard PlayFab events reside under the `com.playfab` namespace. Custom events fall under the `com.playfab.events` namespace.
+
 - **Event Name** - The specific type of event.
+
 - **Target Entity** - The target entity component of a topic indicates what entity the event is about. It may or may not be the entity which is sending and/or receiving the event.
 
 ## Example
