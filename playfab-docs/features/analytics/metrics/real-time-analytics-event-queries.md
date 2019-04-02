@@ -94,7 +94,7 @@ The `eventData` part is absolutely necessary to point PlayFab to an event object
 
 **value_descriptor** is an expression that describes the value of the field you want to use to filter. The simplest form of value descriptor is the value itself. The query shown below will look for all events with names equal to **player_created**.
 
-`eventData.eventName:player_created`
+`player_created`
 
 We can customize the value descriptor by kicking in some regular expression elements, like wildcards.
 
