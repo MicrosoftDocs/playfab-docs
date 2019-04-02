@@ -105,11 +105,11 @@ We can customize the value descriptor by kicking in some regular expression elem
 
 The query shown below will allow us to locate *all* such events.
 
-`eventData.eventName:player_*`
+`player_*`
 
 Another example of a complicated value descriptor is the one for the date property. The following query incorporates all the events which have a timestamp between **April 1st** and **April 17th**.
 
-`eventData.timestamp:[2017-04-01T00:00:00 TO 2017-04-17T00:00:00]`
+`search * | where Timestamp between (datetime(2017-04-01T00:00:00)..datetime(2017-04-17T00:00:00))`
 
 Finally, we can combine *several* filter expressions using AND/OR operators, with parenthesis for grouping.
 
@@ -118,4 +118,4 @@ The query shown below will locate *all* of the events that occurred from **April
 - **player_logged_in**
 - **player_statistic_changed**
 
-`eventData.timestamp:[2017-04-01T00:00:00 TO 2017-04-17T00:00:00]  AND ( eventData.eventName:player_logged_in OR eventData.eventName:player_statistic_changed )`
+`search * | where (EventName == 'player_logged_in' or EventName == 'player_statistic_changed') and Timestamp between (datetime(2017-04-01T00:00:00)..datetime(2017-04-17T00:00:00))`
