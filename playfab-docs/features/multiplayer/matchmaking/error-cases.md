@@ -33,26 +33,30 @@ If you receive an HTTP error code of 503, simply retry your request after a brie
 
 ## Call returns MatchmakingRateLimitExceeded
 
-Similar to other PlayFab features, PlayFab matchmaking will restrict the number of calls you make according to the limits configured inside the game manager. Receiving this error indicates the title has exceeded the limit for this call type. In matchmaking, this most frequently occurs when polling [GetMatchmakingTicket](xref:titleid.playfabapi.com.multiplayer.matchmaking.getmatchmakingticket) to see if a ticket has matched.
+Similar to other PlayFab features, PlayFab matchmaking will restrict the number of calls you make, according to the limits configured inside the game manager. Receiving this error indicates the title has exceeded the limit for this call type.
 
-To avoid this error, either increase your limit or reduce your call frequency.
+In matchmaking, this most frequently occurs when polling [GetMatchmakingTicket](xref:titleid.playfabapi.com.multiplayer.matchmaking.getmatchmakingticket) to see if a ticket has matched.
+
+To avoid this error either increase your limit, or reduce your call frequency.
 
 > [!NOTE]  
 > Although the response will have an HTTP status code of 429, the request itself is valid and can still be retried.
 
 ## Creating or joining a ticket returns MatchmakingTicketMembershipLimitExceeded
 
-In PlayFab matchmaking, a user can only be in one ticket at a time per queue, to avoid a case where a user enters two matches and must decide which ticket to honor. whichever match is not honored will be short a player and its players will likely be forced to re-enter matchmaking. The error `MatchmakingTicketMembershipLimitExceeded` is returned if a user is already in one ticket that is neither canceled nor matched, but tries to create or join another.
+In PlayFab matchmaking, a user can only be in one ticket at a time per queue, to avoid a case where a user enters two matches and must decide which ticket to honor. Whichever match is not honored, it will be short a player, and its players will likely be forced to re-enter matchmaking. The error `MatchmakingTicketMembershipLimitExceeded` is returned if a user is already in one ticket that is neither canceled nor matched, but tries to create or join another.
 
-However, sometimes a title or server may lose track of a ticket, either by crashing, restarting, or other unforeseen errors. When this occurs it will leave an active ticket that neither the user nor title is aware of. This lost ticket prevents any future tickets from being submitted for this user until it expires. If this happens, there are two options available to resolve the issue.
+However, sometimes a title or server may lose track of a ticket, either by crashing, restarting, or other unforeseen errors. When this occurs it will leave an active ticket that neither the user nor title is aware of.
 
-### Clear the ticket from matchmaking
+This lost ticket prevents any future tickets from being submitted for this user until it expires. If this happens, there are two options available to resolve the issue:
 
-The first option is to simply cancel all of a user's existing tickets. Calling [CancelAllMatchmakingTicketsForPlayer](xref:titleid.playfabapi.com.multiplayer.matchmaking.cancelallmatchmakingticketsforplayer) will perform this task. Afterwards matchmaking will have no tickets in progress, and be ready for a new ticket to be created.
+### Option 1: Clear the ticket from matchmaking
 
-### Find the lost ticket
+Simply cancel all of a user's existing tickets. Calling [CancelAllMatchmakingTicketsForPlayer](xref:titleid.playfabapi.com.multiplayer.matchmaking.cancelallmatchmakingticketsforplayer) will perform this task. Afterwards matchmaking will have no tickets in progress, and be ready for a new ticket to be created.
 
-The second option is to find the user's existing ticket and continue using it. Calling
+### Option 2: Find the lost ticket
+
+Find the user's existing ticket and continue using it. Calling
 [ListMatchmakingTicketsForPlayer](xref:titleid.playfabapi.com.multiplayer.matchmaking.listmatchmakingticketsforplayer)
 will return all the matchmaking ticket ids the user is a member of. Calling [GetMatchmakingTicket](xref:titleid.playfabapi.com.multiplayer.matchmaking.getmatchmakingticket)
 on each ticketId provided will allow you to retrieve its state and continue monitoring it until it finds a match.
@@ -63,7 +67,7 @@ When creating a multi-user ticket, one of the invited players may fail or refuse
 
 ## The ticket is canceled
 
-Tickets may be canceled for multiple reasons. The most common cases are user cancellations and tickets expiring, but the ticket can also be canceled by the server. If you call GetMatchmakingTicket and discover your ticket is canceled, the reason will be listed in the CancellationReason field. Requested, Timeout, and Internal correspond to user cancellation, ticket expiration, and server cancellation respectively.
+Tickets may be canceled for multiple reasons. The most common cases are user cancellations and tickets expiring, but the ticket can also be canceled by the server. If you call **GetMatchmakingTicket**, and discover your ticket is canceled, the reason will be listed in the **CancellationReason** field. Requested, Timeout, and Internal correspond to user cancellation, ticket expiration, and server cancellation respectively.
 
 In all cases, if the user still wishes to perform matchmaking, the title should simply submit another ticket.
 
