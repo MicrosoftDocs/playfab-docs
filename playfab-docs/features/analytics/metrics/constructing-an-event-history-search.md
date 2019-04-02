@@ -82,4 +82,5 @@ Now, if we save the search...
 
 When you select the **Search** from your **Saved Searches** drop-down, your search will be reconstructed, and the dates will be relative to the current time.
 
-![Event Query - Saved Searches drop-down](media/tutorials/event-query-saved-searches-drop-down.png)
+![Event Query - Saved Searches Dropdown](media/tutorials/event-query-saved-searches-dropdown.png)  
+
