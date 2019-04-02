@@ -1,16 +1,16 @@
 ---
-title: Emails quickstart
+title: Email messaging quickstart
 author: v-thopra
-description: Quickstart for Emails.
+description: Quickstart for email messaging.
 ms.author: v-thopra
 ms.date: 06/12/2018
 ms.topic: article
 ms.prod: playfab
-keywords: playfab, engagement, email, servers, smtp
+keywords: playfab, engagement, email, servers, smtp, messaging
 ms.localizationpriority: medium
 ---
 
-# Email Messaging quickstart
+# Email messaging quickstart
 
 To send emails from PlayFab, you will need to have your own external SMTP server with a username and password. Once you have an SMTP server available, check out [Setting up an SMTP server with add-ons](../../engagement/emails/setting-up-an-smtp-server-with-add-ons.md) to configure your title to send emails.
 

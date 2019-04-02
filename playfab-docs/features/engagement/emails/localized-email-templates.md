@@ -19,7 +19,7 @@ The first feature using this new behavior is localized email templates.
 With localized email templates, you can make multiple translated versions of an email, and associate *all* of them with one template ID.
 
 > [!NOTE]
-> Any preexisting templates prior to the release of this feature will continue to behave as they have in the past. However, you can easily update them to use the new localized format used by new email templates.
+> Any templates introduced before this feature was released will retain their behavior.  However, you can easily update them to use the new localized format used by new email templates.
 
 This tutorial walks you through how to use localized email templates.
 
@@ -81,7 +81,7 @@ Set the other new player's language by using Game Manager or by using the [SetPr
 
 Make sure you have set the contact email on both players as explained in [Step 2 of the Using Email Templates to Send an Account Recovery Email](using-email-templates-to-send-an-account-recovery-email.md#step-2---add-username-password-login-email-and-contact-email-to-a-player) tutorial, before continuing on to the next step.
 
-Use the [SendCustomAccountRecoveryEmail](xref:titleid.playfabapi.com.server.accountmanagement.sendcustomaccountrecoveryemail) **API** once per player to send this template:
+Use the [SendCustomAccountRecoveryEmail](xref:titleid.playfabapi.com.server.accountmanagement.sendcustomaccountrecoveryemail) API once per player to send this template:
 
 - Once in French to the player whose preferred language is French.
 - Once in the default language to a player with no preferred language set.
