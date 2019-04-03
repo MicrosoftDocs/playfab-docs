@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 > [!IMPORTANT]
 > This feature is currently in **Private Preview**.  
 >
-> It is provided to give you an early look at an upcoming feature and to allow you to provide feedback while it is still in development.  
+> It is provided to give you an early look at an upcoming feature, and to allow you to provide feedback while it is still in development.  
 >
 > Access to this feature is restricted to select titles. If you are interested in trying it, please contact us at [helloplayfab@microsoft.com](mailto:helloplayfab@microsoft.com).
 
@@ -38,7 +38,7 @@ The purpose of this topic is to explain how to quickly get started with using th
 The PubSub feature does not come with the PlayFab SDK by default and you must acquire it via GitHub from our site.
 
 > [!IMPORTANT]
-> **Private preview only.**  While this feature is in [Private Preview](pubsub-private-preview-notes.md), you must be logged into **GitHub** for the package to download and install correctly.
+> **Private preview only.**  While this feature is in [Private Preview](pubsub-private-preview-notes.md), you must be logged into GitHub for the package to download and install correctly.
 
 ### Install from GitHub
 
@@ -50,7 +50,7 @@ The PubSub feature does not come with the PlayFab SDK by default and you must ac
 
 4. In Unity select **Assets, Import Package, Custom Package** and open the **PubSub.unityPackage** you downloaded.
 
-5. Click **Import All** to import all the files into your Unity Project.
+5. Select **Import All** to import all the files into your Unity Project.
 
 ### Enable PubSub
 
@@ -58,9 +58,9 @@ To enable PubSub, perform the following:
 
 1. Select **Settings**, **API**.
 
-2. Check the boxes for both the Client and the Entity API. This will display the Feature sub-menu.
+2. Check the boxes for both the **Client** and the Entity API. This will display the **Feature** sub-menu.
 
-3. Check the boxes to **Enable Unstable Features** and **Enable PubSub**. You can then read information about the PubSub package specifically, on the Packages tab.
+3. Check the boxes to **Enable Unstable Features** and **Enable PubSub**. You can then read information about the PubSub package specifically, on the **Packages** tab.
 
 ## Usage
 
@@ -75,7 +75,7 @@ Using the PubSub plug-in is pretty easy. If you have not looked at our reference
 
 2. **Authenticate** - Before you can use the PubSub feature, you must authenticate your client via PlayFab. For more information about authenticating, please go to [Platform-Specific Authentication](../../authentication/platform-specific-authentication/index.md) to learn more.
 
-    When you authenticate, you must store your entity key for later usage. In addition, this is when you want to start your connection by using the **PlayFabSocketsAPI.Connect()** method.
+    When you authenticate, you must store your entity key for later usage. In addition, this is when you want to start your connection by using the `PlayFabSocketsAPI.Connect()` method.
 
    ```csharp
    private EntityKey _currentEntity;
@@ -140,13 +140,13 @@ Using the PubSub plug-in is pretty easy. If you have not looked at our reference
    topics.Add(objectChangeTopic);
    ```
 
-5. **Register a Handler** - Register a handler for when your event is received. Add the following after you create your topic:
+5. **Register a Handler** - Register a handler for when your event is received. Add the following after you create your topic.
 
    ```csharp
    PlayFabSocketsAPI.RegisterHandler(customEventTopic, OnCustomEvent);
    ```
 
-6. **Create a Handler Method** - Be sure to define the method that you registered in the previous step. In this example we are just logging the received **JSON** payload. You can use `var myMessage = netMsg.ReadMessage<T>` where T is a model you want to de-serialize to make this a strongly typed object.
+6. **Create a Handler Method** - Be sure to define the method that you registered in the previous step. In this example we are just logging the received JSON payload. You can use `var myMessage = netMsg.ReadMessage<T>`, where `T` is a model you want to de-serialize to make this a strongly typed object.
 
    ```csharp
    private void OnCustomEvent(PlayFabNetworkMessage netMsg)
@@ -180,13 +180,13 @@ Using the PubSub plug-in is pretty easy. If you have not looked at our reference
 
 ## Example usage
 
-In this example, we will use a custom **CloudScript** function to increment a statistic - **Score** - and then push a message to the player with the updated player statistics via PubSub.
+In this example, we will use a custom CloudScript function to increment a statistic - **Score** - and then push a message to the player with the updated player statistics via PubSub.
 
 1. First we need to create a statistic for players. This is done under [Leaderboards](../../social/tournaments-leaderboards/index.md). Select **Leaderboards** and create a new leaderboard with the following settings:
 
    ![Leaderboard Statistic Setup](images/leaderboard-setup-score.png)
 
-2. We need a [CloudScript](../../automation/cloudscript/index.md) function that you can run on a player, to increment the statistic for the player and then fire your custom event. You can edit this directly in PlayFab by going to **Automation --> CloudScript**. Add the handler shown below to your **CloudScript**.
+2. We need a [CloudScript](../../automation/cloudscript/index.md) function that you can run on a player, to increment the statistic for the player and then fire your custom event. You can edit this directly in PlayFab by going to **Automation --> CloudScript**. Add the handler shown below to your CloudScript.
 
    ```javascript
 
@@ -237,13 +237,13 @@ In this example, we will use a custom **CloudScript** function to increment a st
 
 Now you have all the pieces to run and test your code.
 
-1. Run your project in **Unity**. You should see the following:
+1. Run your project in Unity. You should see the following:
 
    !["Console Output"](images/console.png)
 
 1. Login to [Game Manager](https://developer.playfab.com) and navigate to your player that just logged int.
 
-1. Run the **CloudScript** method on the player from the **CloudScript** Tab.
+1. Run the CloudScript method on the player from the **CloudScript** Tab.
 
    !["Run CloudScript](images/run-cloudscript-function.png)
 

@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 > [!IMPORTANT]
 > This feature is currently in **Private Preview**.  
 >
-> It is provided to give you an early look at an upcoming feature and to allow you to provide feedback while it is still in development.  
+> It is provided to give you an early look at an upcoming feature, and to allow you to provide feedback while it is still in development.  
 >
 > Access to this feature is restricted to select titles. If you are interested in trying it, please contact us at [helloplayfab@microsoft.com](mailto:helloplayfab@microsoft.com).
 
@@ -24,7 +24,7 @@ This topic explains the technical design behind the Persistent Sockets API in a 
 ## Dependencies
 
 - **SignalR** - The underlying technology in which messages are sent to the game client and referred to as a PubSub service (aka: a Relay Server).
-- (A **JSON** Serializer) – `PluginManager<ISerializePlugin>` - Any serialization or de-serialization uses the PlayFab **SDK** serialization.
+- (A JSON Serializer) – `PluginManager<ISerializePlugin>` - Any serialization or de-serialization uses the PlayFab SDK serialization.
 
 ## Design
 
