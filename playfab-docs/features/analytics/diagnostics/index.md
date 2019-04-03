@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 >
 > It is provided to give you an early look at an upcoming feature and to allow you to provide feedback while it is still in development.  
 >
-> Access to this feature is restricted to select titles. If you are interested in trying it, you can request access by submitting a ticket on [support.playfab.com](https://support.playfab.com/hc/en-us/requests/new).
+> Access to this feature is restricted to select titles. If you are interested in trying it, please contact us at [helloplayfab@microsoft.com](mailto:helloplayfab@microsoft.com).
 
 App Center provides tools to help you build, test, deploy and monitor mobile and pc apps. It is especially good at detecting when your app has crashed and saving that information to help you fix it quickly. When you link your App Center titles to a PlayFab title, you will be able to see crash data in the diagnostics tab in Game Manager.
 

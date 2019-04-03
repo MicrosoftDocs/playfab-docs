@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 >
 > It is provided to give you an early look at an upcoming feature, and to allow you to provide feedback while it is still in development.  
 >
-> Access to this feature is restricted to select titles. If you are interested in trying it, you can request access by submitting a ticket on [support.playfab.com](https://support.playfab.com/hc/en-us/requests/new).
+> Access to this feature is restricted to select titles. If you are interested in trying it, please contact us at [helloplayfab@microsoft.com](mailto:helloplayfab@microsoft.com).
 
 PlayFab is consistently looking to bring new capabilities to our game developers. We know how important it is to understand the health of your game as part of your overall LiveOps view. We are excited to announce that we have partnered with App Center to bring their diagnostic capabilities directly into PlayFab.
 
@@ -29,7 +29,7 @@ App Center provides tools to help you build, test, deploy and monitor mobile and
 * You will need a PlayFab Account.
 * You will need an App Center Account.
 * You will need to have the App Center SDK installed in your game.
-* Private Preview enabled for your title (email [devrel@playfab.com](mailto:devrel@playfab.com)) to get access for your title.
+* Private Preview enabled for your title (email [helloplayfab@microsoft.com](mailto:helloplayfab@microsoft.com)) to get access for your title.
 
 ## Getting started
 
