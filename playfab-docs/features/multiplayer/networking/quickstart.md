@@ -15,9 +15,8 @@ ms.localizationpriority: medium
 > [!IMPORTANT]
 > This feature is currently in **Private Preview**.  
 >
-> It is provided to give you an early look at an upcoming feature and to allow you to provide feedback while it is still in development.  
+> It is provided to give you an early look at an upcoming feature, and to allow you to provide feedback while it is still in development.  
 >
 > Access to this feature is restricted to select titles. If you are interested in trying it, you can request access by submitting a ticket on [support.playfab.com](https://support.playfab.com/hc/en-us/requests/new).
 
 This quickstart helps you get started with PlayFab Party.
-

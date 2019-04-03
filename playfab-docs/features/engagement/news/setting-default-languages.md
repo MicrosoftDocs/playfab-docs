@@ -42,8 +42,7 @@ This tutorial assumes you have the following working knowledge about using PlayF
 Before setting your player’s preferred language, figure out how you want to collect it. You have a couple of options:
 
 - Ask them: Add an option on your game’s menu.
-
-- Intuit their language: Use the language of the player’s device by calling the provided platform API (for example, **Locale.getDefault.getLanguage()** for **Android**).
+- Intuit their language: Use the language of the player’s device by calling the provided platform API (for example, **Locale.getDefault.getLanguage()** for Android).
 
 > [!NOTE]
 > There are a lot of languages out there, and your title *may not* support them all. While not required, we recommend future-proofing your title, and storing the player’s actual preference. If you come back and add support for that language later, PlayFab’s logic will automatically start serving up the new strings (rather than the default).
@@ -82,9 +81,9 @@ void FailureCallback(PlayFabError error)
 
 Go to the player’s overview. In Game Manager, go to **Player** -> **Overview**, and see that their contact info section is updated with their preferred language.
 
-![Game Manager - Player - Overview - Contact email - Language](../media/tutorials/game-manager-player-overview-contact-email-language.png)
+The language can also be updated with the **Language** dropdown menu displayed in the following image.
 
-The language can also be updated with the **Language** drop-down displayed in the previous image.
+![Game Manager - Player - Overview - Contact email - Language](../media/tutorials/game-manager-player-overview-contact-email-language.png)
 
 Next, you can navigate to the player’s **PlayStream**, and it will show an **Entity language updated** event.
 
@@ -128,9 +127,9 @@ To begin, select **Settings** in the menu to the left, as shown below.
 
 ![Game Manager - Settings - General - Default language](../media/tutorials/game-manager-settings-general-default-language.png)
 
-Under the new **TITLE DEFAULTS** header, you will see the **Default language** drop-down. You must set a default language before you can use any of the add localization features.
+In the **General** tab under the new **TITLE DEFAULTS** header, you will see the **Default language** dropdown. You must set a default language before you can use any of the add localization features.
 
-Select the **SAVE** button, and message will appear stating that your update was successful.
+When you are done, select the **SAVE** button, and message will appear stating that your update was successful.
 
 If you return to the dashboard, you will see a **Title API settings changed** event in your **PlayStream** event list, as shown below.
 

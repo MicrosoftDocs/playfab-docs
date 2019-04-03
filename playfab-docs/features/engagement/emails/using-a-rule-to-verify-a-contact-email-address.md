@@ -39,7 +39,7 @@ The first thing we will do is create an account recovery email template.
 
 ![Game Manager - Content - Email Templates](media/tutorials/game-manager-content-email-template.png)  
 
-Now add a **New Email Template**, filling in the fields as follows and leaving the **Error Callback URL** empty:
+Now add a **New Email Template**, filling in the fields as follows and leaving the **Error Callback** URL empty:
 
 - **Template name**: MyFirstEmailVerificationTemplate
 - **Template type**: Email Verification
@@ -98,7 +98,7 @@ For this next step, you will need an existing player account.
 We add a contact email to the player using [AddOrUpdateContactEmail](xref:titleid.playfabapi.com.client.accountmanagement.addorupdatecontactemail).
 
 > [!NOTE]
-> A **Contact Email** field in a **Player Profile** is different from the **Login Email** field on a **Player Profile**, even though they may both contain the same email address. Anytime you send email to the player, it will only go to the contact email address.
+> A **Contact Email** field in a Player Profile is different from the **Login Email** field on a Player Profile, even though they may both contain the same email address. Anytime you send email to the player, it will only go to the contact email address.
 
 ### C# code example
 
@@ -146,7 +146,7 @@ void FailureCallback(PlayFabError error)
 
 Next, confirm that the contact email was added to the player’s profile. Log into the **Game Manager**, and visit the **Players Profile** page.
 
-You should see a **Contact Email** listed for that **Player**, with **Verification Status**: **Pending**.
+You should see a **Contact Email** listed for that Player, with **Verification Status**: **Pending**.
 
 > [!NOTE]
 > The **Verification Status** could be **Unverified**, if the verification email was not sent out yet, but will be in the **Pending** state as soon as the email is sent.
@@ -191,11 +191,11 @@ Selecting the **Info** icon on the Event should show JSON similar to the one sho
 }
 ```
 
-To verify that you actually received the email, go to the email of the player you created in Step 3. There should be an email that looks similar to this one.
+To verify that you actually received the email, go to the email of the player you created in Step 3. There should be an email that looks similar to the one shown below.
 
 ![Verify your email - email](media/tutorials/verify-your-email-email.png)  
 
-If you inspect the URL in that email, you will see that it looks something like the one shown below.
+If you inspect the URL in that email, you will see that it looks something like this one.
 
 ```html
 https://a5f3.playfabapi.com/EmailConfirmation/Confirm/?token=2346241B7C277796&titleId=A5F3&templateId=38017AAE7F494AB3
@@ -203,7 +203,7 @@ https://a5f3.playfabapi.com/EmailConfirmation/Confirm/?token=2346241B7C277796&ti
 
 When the player selects that URL, three things happen:
 
-1. PlayFab generates a new **PlayStream** event, called **auth_token_validated**. This is how you know that the player selected that URL in the email.
+1. PlayFab generates a new PlayStream event, called **auth_token_validated**. This is how you know that the player selected that URL in the email.
    - You can use that event to trigger actions, like granting coins or items to the player.
 2. Because this email template was the special **Email Verification** template, PlayFab will then mark the player email as *Verified*.
 3. PlayFab will return a redirect URL sending the player to the callback URL website.

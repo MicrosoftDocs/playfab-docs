@@ -81,7 +81,7 @@ Set the other new player's language by using Game Manager or by using the [SetPr
 
 Make sure you have set the contact email on both players as explained in [Step 2 of the Using Email Templates to Send an Account Recovery Email](using-email-templates-to-send-an-account-recovery-email.md#step-2---add-username-password-login-email-and-contact-email-to-a-player) tutorial, before continuing on to the next step.
 
-Use the [SendCustomAccountRecoveryEmail](xref:titleid.playfabapi.com.server.accountmanagement.sendcustomaccountrecoveryemail) **API** once per player to send this template:
+Use the [SendCustomAccountRecoveryEmail](xref:titleid.playfabapi.com.server.accountmanagement.sendcustomaccountrecoveryemail) API once per player to send this template:
 
 - Once in French to the player whose preferred language is French.
 - Once in the default language to a player with no preferred language set.

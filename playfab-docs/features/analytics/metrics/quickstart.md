@@ -14,8 +14,9 @@ ms.localizationpriority: medium
 
 There are two primary ways to explore your metrics from PlayFab Game Manager:
 
-- **Trends** - A collection of graphs visualizing performance over time.
-- **Reports** - Data tables comparing. Covered in detail in the Reports Section.
+**Trends** - A collection of graphs visualizing performance over time.
+
+**Reports** - Data tables comparing. Covered in detail in the Reports Section.
 
 ## Trends tab
 
@@ -51,15 +52,15 @@ At the top, there are three page-level filters that can be applied. Choosing any
 
 ## Spark Cards
 
-The Spark Cards are designed to offer an at-a-glance view of the today’s. Each Spark Card consists of a trend line, the actual value from the most recent UTC day, and the trend comparing the most recent value against the period start. Definitions for each are obtained by hovering over the metric or by tapping on a mobile phone.
+The Spark Cards are designed to offer an at-a-glance view of what happened that particular day. Each Spark Card consists of a trend line, the actual value from the most recent UTC day, and the trend comparing the most recent value against the period start. Definitions for each are obtained by hovering over the metric or by tapping, if using a mobile phone.
 
 ![Spark Card](media/tutorials/spark-card.png)  
 
 ## Graphs
 
-The Graphs provide day level trend data for each of the six metrics. In some cases, the combo box in the upper-left can be used to toggle the active metric. For example, the Active Players graph can show either DAU or Rolling 30-Day MAU.  
+The Graphs provide trend data for each of the six metrics, through that day. In some cases, the drop-down over each graph can be used to toggle the active metric. For example, the Active Players graph can show either DAU or the Rolling 30-Day MAU.  
 
-In the upper right-hand corner, individual lines can be toggled on and off. Doing so dynamically re-scales the y-axis. Additionally, in the Retention Graph, D1 and D7 can be disabled to emphasize variations in D14 and D30.
+In the upper right-hand corner of each graph, individual lines can be toggled on and off. Doing so dynamically re-scales the y-axis. Additionally, in the Retention Graph, D1 and D7 can be disabled to emphasize variations in D14 and D30.
 
 Hover over any data point to display the actual value for the selected day. To the right of each graph, supporting metrics offer additional insights such as the average and/or total for the period.
 

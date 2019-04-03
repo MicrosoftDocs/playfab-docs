@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 # Integrating with PlayFab Multiplayer Servers
 
 Matchmaking allows for an option that will automatically create a game server
-for the resulting match. The server allocated will run a build which is
+for the resulting match. The server allocated will run a build, which is
 configured in the queue's config. On startup, the server is passed in the
 members of the match as the list of initial players.
 
@@ -21,27 +21,27 @@ A matchmaking queue is tied to a single multiplayer server build.
 
 ## Requirements to use direct integration of matchmaking and servers
 
-In order to allocate a multiplayer server from matchamking you will first need
+In order to allocate a multiplayer server from matchmaking you will first need
 to configure a build and deploy it. Follow the instructions here to learn
 more about how to do that [Multiplayer Server
 builds](../servers/deploying-playfab-multiplayer-server-builds.md).
 
-Matchmaking also needs a region selection rule to be added to the queue so that
+Matchmaking also needs a region selection rule to be added to the queue, so that
 matches can be allocated in the optimal region for the build. The latency
-measurements passed into the region selection rule should match the regions that
-the build is active in. For more information on how to pass attributes to a
+measurements passed into the region selection rule should match the regions where
+the build is active. For more information on how to pass attributes to a
 region selection rule see [Region selection
 rule](ticket-attributes.md#region-selection-rule).
 
 ## Activating server allocation for the queue
 
 In order to enable server allocation for a queue you will need to enable the
-checkbox for `Enable server allocation` on the queue config page and provide the
+checkbox for **Enable server allocation** on the queue config page, and provide the
 build id (guid) to associate with the queue. Once you enable the feature
 matchmaking will try to allocate a server for all the matches created within the
 queue.
 
-Here is what the config for a queue with multiplayer server integration would
+The following example is what the config for a queue with multiplayer server integration should
 look like.
 
 ```json
@@ -65,7 +65,7 @@ look like.
 ```
 
 The flow of calls to matchmaking remains the same with the server allocation
-enabled. Once matchmaking allocates a server for the match the resulting server
+enabled. Once matchmaking allocates a server for the match, the resulting server
 details can be read from the Match object itself by calling
 [GetMatch](xref:titleid.playfabapi.com.multiplayer.matchmaking.getmatch). Here
 is a sample response for a GetMatch call for a queue with server allocation
@@ -121,16 +121,16 @@ servers](../servers/connecting-clients-to-game-servers.md)
 
 Here is the list of information that matchmaking will pass to the server.
 
-- SessionId - The SessionId for the server will be equal to the MatchId for the
+- **SessionId** - The SessionId for the server will be equal to the MatchId for the
   match.
-- InitialPlayers - This value is set to the list of members in the match. The
+- **InitialPlayers** - This value is set to the list of members in the match. The
   list of players can be read in the game by using the
   [GSDK](../servers/integrating-game-servers-with-gsdk.md).
-- PreferredRegions - This field is set to the RegionPreferences field from the
+- **PreferredRegions** - This field is set to the RegionPreferences field from the
   match. The game server service will choose an appropriate region for the
   server from this list.
 
 Matchmaking does not pass any ticket attributes to the game server. If the game
-needs to access any ticket attributes on the server it can do so by calling
+needs to access any ticket attributes on the server, it can do so by calling
 [GetMatch](xref:titleid.playfabapi.com.multiplayer.matchmaking.getmatch) with
-the `ReturnMemberAttributes` header to true.
+the `ReturnMemberAttributes` header to *true*.

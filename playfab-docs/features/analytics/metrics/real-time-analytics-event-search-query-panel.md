@@ -33,6 +33,12 @@ On the primary screen shown below:
 
 ![Event Search Query Panel](media/tutorials/event-search-query-panel.png)  
 
+## Powered by Azure Data Explorer
+
+Event search is powered by [Azure Data Explorer](https://azure.microsoft.com/en-us/services/data-explorer/), a fast and highly scalable data exploration service for log and telemetry data providing fast indexing and querying on large, diverse data sets. For optimized queries, the engine can query millions of records in a few seconds - a demonstrable benefit for games producing high throughput or large volumes of gaming events.  
+
+The Event Search Query field allows you to enter query expressions using a powerful SQL-like query language that's optimized for ad-hoc data exploration and analytics.  This SQL like query language is called Kusto and its [documentation](https://docs.microsoft.com/en-us/azure/kusto/query/) can be accessed in the Azure Data Explorer [reference documentation](https://docs.microsoft.com/en-us/azure/kusto/query/).
+
 ## Tips and tricks
 
 - The **Query Builder** panel (the area in the image **outlined in green**) offers help with user input:
