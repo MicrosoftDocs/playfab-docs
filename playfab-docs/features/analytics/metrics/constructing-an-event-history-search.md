@@ -70,7 +70,7 @@ We could be done here, but there's one issue - If you want to *save* this search
 
 We can do better by *manually editing* the Query field.
 
-The constructed Query field uses elastic search syntax, meaning that you can use elastic search's features, such as Logical Operators (see the **AND** between **eventName** and **timestamp**) in your queries. Or, what we want here, [date math expressions](https://www.elastic.co/guide/en/elasticsearch/client/net-api/current/date-math-expressions.html).
+The constructed Query field uses Azure Data Explorer search syntax, meaning that you can use Azure Data Explorer's query language scalar function ago() and the datetime data type.  Literals of type datetime are accessible at the Azure Data Explorer [Data Types](https://docs.microsoft.com/azure/kusto/query/scalar-data-types/datetime) page.  The ago() function is documented in the Azure Data Explorer [Scalar Functions](https://docs.microsoft.com/azure/kusto/query/agofunction) page. 
 
 We can directly substitute the dates in the Query field for relative dates, as indicated in the following example.
 
