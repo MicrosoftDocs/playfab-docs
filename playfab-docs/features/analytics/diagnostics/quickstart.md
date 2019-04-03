@@ -1,5 +1,5 @@
 ---
-title: App Center Diagnostics Quickstart
+title: App Center Diagnostics quickstart
 author: mawillia
 description: Get valuable diagnostic data in PlayFab with this App Center integration quickstart
 ms.author: Marco.Williams
@@ -11,7 +11,7 @@ keywords: playfab, diagnostics, App Center, Crash Reporting, Crash Data, quickst
 ms.localizationpriority: medium
 ---
 
-# Diagnostics with App Center Quickstart (Private Preview)
+# Diagnostics with App Center quickstart (Private Preview)
 
 > [!IMPORTANT]
 > This feature is currently in **Private Preview**.  
@@ -27,8 +27,11 @@ App Center provides tools to help you build, test, deploy and monitor mobile and
 ## Prerequisites
 
 * You will need a PlayFab Account.
+
 * You will need an App Center Account.
+
 * You will need to have the App Center SDK installed in your game.
+
 * Private Preview enabled for your title (email [helloplayfab@microsoft.com](mailto:helloplayfab@microsoft.com)) to get access for your title.
 
 ## Getting started
