@@ -21,8 +21,9 @@ The **Reports** page gives you access to various reports composed from events, a
 
 To access the **Reports** page:
 
-1. Use the sidebar menu and navigate to **Analytics (1)**.
-2. Select the **Reports** tab **(2)**.
+1. Use the sidebar menu and navigate to **Analytics**.
+
+2. Select the **Reports** tab.
 
 ![Game Manager - Analytics - Reports](media/tutorials/game-manager-analytics-open-reports.png)  
 
@@ -31,16 +32,20 @@ To access the **Reports** page:
 The following shows an overview of the **Reports** page.
 
 1. The First section allows you to filter **Reports** by **Type** (**Name**).
+
 2. The **Report Date** column lists the time intervals for all **Reports** that have been  generated. You can select the **Date** label to access report details for a specific date.
+
 3. The **Report Name** column identifies the **Report Type** uniquely. You can select the **Name** label to access **Reports** details for the corresponding **Date (2)**.
+
 4. When **Report** data is available, you can download a **CSV** representation of the data by selecting **Download CSV**.
+
 5. When **Reports** data is *not* available for a given day (no events that day), the date and name labels will render black, will not be selectable, and downloading as **CSV** will not be available.
 
 ![Game Manager - Analytics - Reports](media/tutorials/game-manager-analytics-reports-overview.png)  
 
 ## Report Types
 
-- [Daily, Monthly, and Rolling 30-Day Overview and Totals Reports](daily-monthly-and-rolling-30-day-overview-and-totals-reports.md)
+- [Daily, Monthly, and Rolling Thirty-Day Overview and Totals Reports](daily-monthly-and-rolling-30-day-overview-and-totals-reports.md)
   - Tracks hourly, daily, and monthly logins, revenue, and API usage.
 - [Thirty-day Retention Report](thirty-day-retention-report.md)
   - Tracks the percentages of all active players who return to your game over 30 days.
@@ -60,5 +65,5 @@ The following shows an overview of the **Reports** page.
   - Tracks **Content Delivery Network** (**CDN**) usage by your players.
 - [Daily Abuse Reports History Report](daily-abuse-reports-history-report.md)
   - This is the place for you to read player bug reporting, and/or to let players report each other for cheating.
-  - > [!NOTE]
-    > The **Name** column is never selectable on this report, but the **Download CSV** column will *still* work if there is data present.
+> [!NOTE]
+> The **Name** column is never selectable on this report, but the **Download CSV** column will *still* work if there is data present.

@@ -85,12 +85,12 @@ A *filter expression* consists of 2 parts, and has the format shown below.
 
 **object_property** points to a property on your event data (that you want to filter by), and generally looks like the following example.
 
- `eventData.propertyName<.otherPropertyName*>`.
+ `propertyName<_._otherPropertyName*>`.
 
-The `eventData` part is absolutely necessary to point PlayFab to an event object. You can then extract specific properties using dot notation: `eventData.eventName`. You may also refer to nested properties like this: `eventData.history.triggeredEvents`.
+The `properyName` part is absolutely necessary to point PlayFab to an event object. You may also refer to nested properties like this: `history_._triggeredEvents` where each property is separated with an underscore.
 
 > [!IMPORTANT]
-> Object property requires **camelCase** parts starting with a lowercase letter. For example, each event has a property called **EventName**. However, to access this property in a query, you have to adjust the first letter of the property and use **eventData.eventName**.
+> The syntax of the query expression statement has event data flow from one event output to another, starting with an event source and then flowing through a set of data transformation operators that are bound together through the use of the pipe (|) delimiter.
 
 **value_descriptor** is an expression that describes the value of the field you want to use to filter. The simplest form of value descriptor is the value itself. The query shown below will look for all events with names equal to **player_created**.
 
@@ -119,3 +119,8 @@ The query shown below will locate *all* of the events that occurred from **April
 - **player_statistic_changed**
 
 `search * | where (EventName == 'player_logged_in' or EventName == 'player_statistic_changed') and Timestamp between (datetime(2017-04-01T00:00:00)..datetime(2017-04-17T00:00:00))`
+
+> [!IMPORTANT]
+> Event queries are powered by [Azure Data Explorer](https://azure.microsoft.com/services/data-explorer/), a fast and highly scalable data exploration service for log and telemetry data providing fast indexing and querying on large, diverse data sets. For optimized queries, the engine can query millions of records in a few seconds - a demonstrable benefit for games producing high throughput or large volumes of gaming events.
+>   
+> Event queries allows you to enter query expressions using a powerful SQL-like query language that's optimized for ad-hoc data exploration and analytics.  This SQL like query language is called Kusto and its [documentation](https://docs.microsoft.com/azure/kusto/query/) can be accessed in the Azure Data Explorer [reference documentation](https://docs.microsoft.com/azure/kusto/query/).
