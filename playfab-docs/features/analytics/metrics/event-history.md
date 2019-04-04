@@ -16,14 +16,14 @@ This tutorial shows you how to access and utilize the event history in PlayFab.
 
 > [!IMPORTANT]
 > Before using this tutorial, make sure that you already have some recent events posted to your title. Otherwise, the event flow will render empty. Most PlayFab APIs will post PlayStream events, or you can post your *own* custom events. For an overview of automatic and custom events, see the [PlayStream quickstart](quickstart.md).
-
->The underlying storage service enabling the event history is being migrated to Azure Data Explorer, a fast and highly scalable data exploration service for log and telemetry data providing fast indexing and querying on large, diverse data sets.
-
->This back-end capability is currently in Private Preview.  It is provided to give you an early look at an upcoming feature and to allow you to provide feedback while it is still in development.
-
->Access to this feature will be methodically rolled out to PlayFab customers over the next few weeks.  PlayFab customers can determine if their title is given access to this feature if they observe a search query auto prefill the search query edit box after an event is selected from the event pull down list.
-
->If you are interested in trying it, please contact us at [helloplayfab@microsoft.com](mailto:helloplayfab@microsoft.com).
+>
+> The underlying storage service enabling the event history is being migrated to Azure Data Explorer, a fast and highly scalable data exploration service for log and telemetry data providing fast indexing and querying on large, diverse data sets.
+>
+> This back-end capability is currently in Private Preview.  It is provided to give you an early look at an upcoming feature and to allow you to provide feedback while it is still in development.
+>
+> Access to this feature will be methodically rolled out to PlayFab customers over the next few weeks.  PlayFab customers can determine if their title is given access to this feature if they observe a search query auto prefill the search query edit box after an event is selected from the event pull down list.
+>
+> If you are interested in trying it, please contact us at [helloplayfab@microsoft.com](mailto:helloplayfab@microsoft.com).
 
 ## Access event history
 

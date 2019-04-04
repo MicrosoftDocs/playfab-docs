@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 >
 > It is provided to give you an early look at an upcoming feature and to allow you to provide feedback while it is still in development.  
 >
-> Access to this feature is restricted to select titles. If you are interested in trying it, you can request access by submitting a ticket on [support.playfab.com](https://support.playfab.com/hc/en-us/requests/new).
+> Access to this feature is restricted to select titles. If you are interested in trying it, please contact us at [helloplayfab@microsoft.com](mailto:helloplayfab@microsoft.com).
 
 PlayFab Insights is your integrated big data solution for gaming insights driving intelligent actions inside PlayFab. It combines high throughput in-game telemetry with game data from multiple other sources to measure your game’s performance, create actionable insights and build a holistic view of each of your players.
 

@@ -85,9 +85,9 @@ A *filter expression* consists of 2 parts, and has the format shown below.
 
 **object_property** points to a property on your event data (that you want to filter by), and generally looks like the following example.
 
- `propertyName<_._otherPropertyName*>`.
+ `propertyName<_otherPropertyName*>`
 
-The `properyName` part is absolutely necessary to point PlayFab to an event object. You may also refer to nested properties like this: `history_._triggeredEvents` where each property is separated with an underscore.
+The `properyName` part is absolutely necessary to point PlayFab to an event object. You may also refer to nested properties like this: `history_triggeredEvents` where each property is separated with an underscore.
 
 > [!IMPORTANT]
 > The syntax of the query expression statement has event data flow from one event output to another, starting with an event source and then flowing through a set of data transformation operators that are bound together through the use of the pipe (|) delimiter.

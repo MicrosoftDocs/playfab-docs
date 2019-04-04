@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 >
 > It is provided to give you an early look at an upcoming feature, and to allow you to provide feedback while it is still in development.  
 >
-> Access to this feature is restricted to select titles, with SDKs available for Windows 10 PCs and Xbox One. Interoperable SDKs for iOS and Android will be available this summer. If you are interested in this feature, you can request access by submitting a ticket on [support.playfab.com](https://support.playfab.com/hc/en-us/requests/new).
+> Access to this feature is restricted to select titles, with SDKs available for Windows 10 PCs and Xbox One. Interoperable SDKs for iOS and Android will be available this summer. If you are interested in this feature, please contact us at [helloplayfab@microsoft.com](mailto:helloplayfab@microsoft.com).
 
 The PlayFab Party API gives gamers more options for engaging with and enjoying game chat. It provides a means for voice chat to be transcribed to text, and for text input to be converted to synthesized voice. Titles can now surface UI, via either the Xbox or Windows OS or a custom solution within their title.
 
