@@ -13,9 +13,9 @@ ms.localizationpriority: medium
 # Accessing increased core limits and additional Azure regions
 
 > [!NOTE]
-> This topic frequently references available **Azure** compute series and regions. To review PlayFab's current selection and pricing see [Multiplayer Servers - detailed price sheet](multiplayer-servers-detailed-price-sheet.md).
+> This topic frequently references available Azure compute series and regions. To review PlayFab's current selection and pricing see [Multiplayer Servers - detailed price sheet](multiplayer-servers-detailed-price-sheet.md).
 
-Usage of PlayFab multiplayer servers has limits that are applied on a per-title basis. A key limit is the aggregate number of **Azure** compute cores.
+Usage of PlayFab multiplayer servers has limits that are applied on a per-title basis. A key limit is the aggregate number of Azure compute cores.
 
 By default, indie, pro, and enterprise customers have limits set to **16 Av2 cores** and **8 Dv2 cores** split in East US and West US.
 
@@ -47,6 +47,6 @@ The following screenshot of the **Edit Build** page shows these safeguards in ac
 
 ![Game Manager- Multiplayer - Thunderhead - Edit Build Page](media/tutorials/game-manager-thunderhead-edit-build-page.png)
 
-You can use this page to specify the maximum number of multiplayer servers that a build can support in each region. Depending on your virtual machine and density selections, a single server might require 1/4 of a **Av2 core**, or **4 Av2 cores**.
+You can use this page to specify the maximum number of multiplayer servers that a build can support in each region. Depending on your virtual machine and density selections, a single server might require 1/4 of a Av2 core, or 4 Av2 cores.
 
-In the above example there are **8 Av2 cores** allocated to this title in West US. This build is configured to pack 3 servers on an single-core **A1v2 virtual machine**, so the configured "6 servers" maximum will consume 25% (**2 cores**) of the available **8 Av2 core** quota in West US.
+In the above example there are 8 Av2 cores allocated to this title in West US. This build is configured to pack 3 servers on an single-core A1v2 virtual machine, so the configured "6 servers" maximum will consume 25% (2 cores) of the available 8 Av2 core quota in West US.

@@ -14,21 +14,23 @@ ms.localizationpriority: medium
 
 ## October 12, 2018- Updates to managed containers
 
-We are updating the virtual machine and container configuration to use **Windows Server 2016** (**1803**). Please see [PlayFab Multiplayer Server 2.0 - Managed Container Update](thunderhead-managed-container-update.md) to learn more.
+We are updating the virtual machine and container configuration to use Windows Server 2016 (1803). Please see [PlayFab Multiplayer Server 2.0 - Managed Container Update](thunderhead-managed-container-update.md) to learn more.
 
 ## August 26, 2018- Private preview release notes
 
 ## PowerShell
 
-**Get-PFMultiplayerBuild** now uses the **ListBuilds API** to return a list of build summaries. This makes the **cmdlet** faster, but returns less information by default.
+`Get-PFMultiplayerBuild` now uses the ListBuilds API to return a list of build summaries. This makes the cmdlet faster, but returns less information by default.
 
-Detailed information is still available via **Get-PFMultiplayerBuild**, simply use the new **-Default** parameter, as shown below.
+Detailed information is still available via `Get-PFMultiplayerBuild`, simply use the new -Default parameter, as shown below.
 
-`Get-PFMultiplayerBuild -Detailed`
+```azurepowershell
+Get-PFMultiplayerBuild -Detailed
 
-`Get-PFMultiplayerBuild "my build name" -Detailed`
+Get-PFMultiplayerBuild "my build name" -Detailed
+```
 
-This will use the **GetBuilds API** to obtain the detailed configuration for your builds.
+This will use the GetBuilds API to obtain the detailed configuration for your builds.
 
 ## API changes
 
@@ -55,14 +57,14 @@ This will use the **GetBuilds API** to obtain the detailed configuration for you
 
 - Renamed **CreateBuildWithManagedContainerResponse** and **CreateBuildWithCustomContainerResponse**.
 
-This separation was necessary to conform to our other **APIs**, as well as ensure that we differentiate between both, and are able to filter/add extra information for the different flavors of builds.
+This separation was necessary to conform to our other APIs, as well as ensure that we differentiate between both, and are able to filter/add extra information for the different flavors of builds.
 
 ### BuildSummary
 
 - This has been eliminated from **GetBuild**, **CreateBuildWithManagedContainerResponse**, and **CreatedBuildWithCustomContainerResponse**.
 - All information will be at the *top level response objects* (**CreateBuildWithManagedContainerResponse**, **CreateBuildWithCustomContainerResponse**, **GetBuildResponse**).
 
-- Additionally, **BuildSummary** has been changed, is only used in **ListBuildSummaries**, and will output as a list of ID and Name. The usage has changed in that developers will have to call **GetBuild** passing in a **BuildId** to get extra information. This is an optimization necessary on our end.
+- Additionally, **BuildSummary** has been changed, is only used in **ListBuildSummaries**, and will output as a list of ID and Name. The usage has changed in that developers will have to call `GetBuild` passing in a `BuildId` to get extra information. This is an optimization necessary on our end.
 
 ## Enum changes
 
@@ -73,7 +75,7 @@ This separation was necessary to conform to our other **APIs**, as well as ensur
 
 ## August 6, 2018- Private preview release notes
 
-**APIs** and **PowerShell** have been renamed. This is one of the last breaking changes we are making to the **API** before removing the "beta" label.
+APIs and PowerShell have been renamed. This is one of the last breaking changes we are making to the API before removing the "beta" label.
 
 ### API renames
 
@@ -105,7 +107,7 @@ This separation was necessary to conform to our other **APIs**, as well as ensur
 
 ### Changes (PowerShell Module v0.884)
 
-- **Add-PFGameCertificate** now supports uploading certificates (**PFX**) that require a password.
+- `Add-PFGameCertificate` now supports uploading certificates (PFX) that require a password.
 
 ### Changes (PowerShell Module v0.882)
 

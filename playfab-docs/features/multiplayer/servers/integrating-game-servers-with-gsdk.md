@@ -14,11 +14,11 @@ ms.localizationpriority: medium
 
 ## Overview
 
-The PlayFab **Game Server SDK** (**GSDK**) is provided in **C++**, **C#**, and **Java** versions. The **GSDK** connects your game server to the PlayFab agent installed on the **VM**. This agent facilitates key server interactions with the PlayFab Multiplayer platform.
+The PlayFab Game Server SDK (GSDK) is provided in C++, C#, and Java versions. The GSDK connects your game server to the PlayFab agent installed on the VM. This agent facilitates key server interactions with the PlayFab Multiplayer platform.
 
 ## Basic integration
 
-For your game server to be able to communicate with the PlayFab multiplayer platform, you need to integrate with the **GSDK**. At a minimum, we recommend that you implement the **Start** and **ReadyForPlayers** methods in your game server.
+For your game server to be able to communicate with the PlayFab multiplayer platform, you need to integrate with the GSDK. At a minimum, we recommend that you implement the `Start` and `ReadyForPlayers` methods in your game server.
 
 ### C++
 
@@ -94,12 +94,12 @@ public static void main(String[] args)
 
 ## Logging with the GSDK
 
-When your game server ends, the PlayFab **VM** agent will zip any log files, and make them available to you via the [GetMultiplayerServerLogs](xref:titleid.playfabapi.com.multiplayer.multiplayerserver.getmultiplayerserverlogs) API.
+When your game server ends, the PlayFab VM agent will zip any log files, and make them available to you via the [GetMultiplayerServerLogs](xref:titleid.playfabapi.com.multiplayer.multiplayerserver.getmultiplayerserverlogs) API.
 
 There are two ways to add log files from your game:
 
-1. Use the **GSDK's Log** method - It will add your own log lines to the **GSDK** log file.
-2. Write your own log file in the appropriate log directory that the PlayFab **VM** agent will zip up and upload.
+1. Use the GSDK's `Log` method - It will add your own log lines to the GSDK log file.
+2. Write your own log file in the appropriate log directory that the PlayFab VM agent will zip up and upload.
 
 ### C++
 
@@ -142,11 +142,11 @@ There are three scenarios in which your game server will end:
 > [!NOTE]
 > PlayFab will *only* terminate game servers that are not currently active.
 
-3. **Azure** will perform required maintenance on the virtual machine that is hosting your game server.
+3. Azure will perform required maintenance on the virtual machine that is hosting your game server.
 
 For **(1)** above: You control when it happens, and can perform any necessary cleanup before your application exits.
 
-For **(2)** and **(3)** above: The **GSDK** provides a way for you to know when they will occur, by specifying a callback method.
+For **(2)** and **(3)** above: The GSDK provides a way for you to know when they will occur, by specifying a callback method.
 
 ### C++
 
@@ -249,7 +249,7 @@ static void Main(string[] args)
 
 ## Giving PlayFab information about your game server
 
-Currently there are two things you can communicate to PlayFab using the **GSDK**:
+Currently there are two things you can communicate to PlayFab using the GSDK:
 
 1. Your game server's current health status.
 2. A list of players that are currently connected to your game server.
@@ -342,7 +342,7 @@ static void Main(string[] args)
 
 ## Getting configuration settings within your game server
 
-There are several PlayFab settings related to your game server that you can retrieve using the **GSDK**.
+There are several PlayFab settings related to your game server that you can retrieve using the GSDK.
 
 > [!NOTE]
 > Two of these settings are *actually* passed in to PlayFab by your clients, as part of the call to request a multiplayer server. So those settings will *not* be available to your game server until it is allocated.
