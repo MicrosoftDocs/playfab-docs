@@ -12,21 +12,21 @@ ms.localizationpriority: medium
 
 # PlayFab Multiplayer Servers 2.0 (Thunderhead)
 
-The **PlayFab Multiplayer Server** hosting service allows you to operate a dynamically scaling pool of custom game servers in **Azure**.
+The PlayFab Multiplayer Server hosting service allows you to operate a dynamically scaling pool of custom game servers in Azure.
 
 This service is currently available as a private preview to a limited set of customers.
 
-If you are an existing **PlayFab Pro** or **Enterprise** customer, and interested in early access to this feature set, please reach out to us through our community Slack channel, your Account Manager or email us at [playcompute@microsoft.com](mailto:playcompute@microsoft.com).
+If you are an existing PlayFab Pro or Enterprise customer, and interested in early access to this feature set, please reach out to us through our community Slack channel, your Account Manager or email us at [playcompute@microsoft.com](mailto:playcompute@microsoft.com).
 
-There are three key concepts to **PlayFab Multiplayer Servers**:
+There are three key concepts to PlayFab Multiplayer Servers:
 
 1. **Game Server executable** - The application that you are running in **Azure**. This server may be a simple network repeater, a fully authoritative game server running physics and AI, or anything in between.
-2. **Build** - The game server executable, packaged with assets and certificates needed to run the game. This content can be uploaded as individual certificates, zip files, and/or a container image. If you do not need a custom container image, you can use our managed **Windows** containers.
-3. **Game Server** - A container running your **Game Server Executable**. There may be multiple servers running on a single virtual machine.
+2. **Build** - The game server executable, packaged with assets and certificates needed to run the game. This content can be uploaded as individual certificates, zip files, and/or a container image. If you do not need a custom container image, you can use our managed Windows containers.
+3. **Game Server** - A container running your Game Server Executable. There may be multiple servers running on a single virtual machine.
 
-Using PlayFab **REST APIs**, your matchmaking or lobby services allocates session hosts in your preferred [Azure region](https://azure.microsoft.com/en-us/global-infrastructure/regions/). Game clients can then connect players to the newly created server for play. As your player base ebbs and flows globally, your build scales to meet the demand.
+Using PlayFab REST APIs, your matchmaking or lobby services allocates session hosts in your preferred [Azure region](https://azure.microsoft.com/en-us/global-infrastructure/regions/). Game clients can then connect players to the newly created server for play. As your player base ebbs and flows globally, your build scales to meet the demand.
 
-You can upload and manage multiplayer server builds using Game Manager or the **Entity API**.
+You can upload and manage multiplayer server builds using Game Manager or the Entity API.
 
 ## Getting started documentation
 
@@ -35,7 +35,7 @@ You can upload and manage multiplayer server builds using Game Manager or the **
 
 ## SDKs and Tools
 
-- Select Multiplayer in the [PlayFab API Reference Documentation](../../../api-references/index.md) to see the **Multiplayer API** Reference.
+- Select Multiplayer in the [PlayFab API Reference Documentation](../../../api-references/index.md) to see the Multiplayer API Reference.
 - [Beta PlayFab & Entity API SDKs (Windows C++, C#, Java, Node.js)](https://s3-us-west-2.amazonaws.com/api-playfab-com-craft-files/FileAssets/BetaSDKs-180827.zip)
 - [Game Server SDK (GSDK) for C++ Windows Servers](https://s3-us-west-2.amazonaws.com/api-playfab-com-craft-files/FileAssets/microsoft.playfab.gaming.gsdk.cpp.0.0.0-beta-180613.zip)
 - [GSDK C++ Windows Test Servers](https://s3-us-west-2.amazonaws.com/api-playfab-com-craft-files/FileAssets/windows_cpp_testapps_180829.zip)
@@ -47,19 +47,19 @@ You can upload and manage multiplayer server builds using Game Manager or the **
 
 ### PowerShell
 
-**Get-PFMultiplayerBuild** now uses the **ListBuilds API** to return a list of build summaries. This makes the **cmdlet** faster, but returns less information by default. Detailed information is still available via **Get-PFMultiplayerBuild**.
+`Get-PFMultiplayerBuild` now uses the ListBuilds API to return a list of build summaries. This makes the cmdlet faster, but returns less information by default. Detailed information is still available via `Get-PFMultiplayerBuild`.
 
-Simply use the new **-Default** parameter, as seen below.
+Simply use the new `-Default` parameter, as seen below.
 
-```powershell
+```azurepowershell
 Get-PFMultiplayerBuild -Detailed
 
 Get-PFMultiplayerBuild "my build name" -Detailed
 ```
 
-This will use the **GetBuilds API** to obtain the detailed configuration for your builds.
+This will use the GetBuilds API to obtain the detailed configuration for your builds.
 
-## API Changes
+## API changes
 
 ### ListBuilds
 
@@ -88,7 +88,7 @@ Has been separated and renamed to:
 - **CreateBuildWithManagedContainerResponse**
 - **CreateBuildWithCustomContainerResponse**
 
-This separation was necessary to conform to our other **APIs** - as well as to ensure that we differentiate between both and are able to filter/add extra information for the different flavors of Builds.
+This separation was necessary to conform to our other APIs - as well as to ensure that we differentiate between both and are able to filter/add extra information for the different flavors of Builds.
 
 ### BuildSummary
 
@@ -106,7 +106,7 @@ All information will be at the top level response objects:
 
 Additionally, **BuildSummary** has been changed, and is only used in **ListBuildSummaries** and will output as a list of IDs and names.
 
-The usage has changed, so that developers will have to call **GetBuild** passing in a **BuildId** to get extra information. This optimization is required on our end.
+The usage has changed, so that developers will have to call `GetBuild` passing in a BuildId to get extra information. This optimization is required on our end.
 
 ### Enum changes
 
@@ -118,4 +118,4 @@ The usage has changed, so that developers will have to call **GetBuild** passing
 ### Known Issues and limitations
 
 - Custom containers are not enabled in Game Manager (this is coming in an update soon).
-- Deleting builds through the **Entity API** always returns a **400** (**Error**), but this usually means that the build will be deleted over the next 5-10 minutes.
+- Deleting builds through the Entity API always returns a **400** (**Error**), but this usually means that the build will be deleted over the next 5-10 minutes.

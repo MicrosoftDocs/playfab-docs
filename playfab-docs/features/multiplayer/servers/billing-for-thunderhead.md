@@ -110,7 +110,7 @@ PlayFab Multiplayer Server builds will naturally scale with your player base. Se
 
 However, delivering this dynamic scaling with minimal allocation latency requires some overhead, which originates from 2 key sources:
 
-1. **Standing by servers** - Players do not want to wait for servers, and PlayFab targets a 3 second response time for fulfilling a server request. PlayFab will maintain a set of standing-by servers to ensure that servers are immediately available. As this standing-by pool is consumed by new allocations, PlayFab initializes new standing-by sessions. The amount of standing-by sessions required is dependent on how fast new sessions are requested during peak utilization, and how quickly they can be created and initialized.
+1. **Standing-by servers** - Players do not want to wait for servers, and PlayFab targets a 3 second response time for fulfilling a server request. PlayFab will maintain a set of standing-by servers to ensure that servers are immediately available. As this standing-by pool is consumed by new allocations, PlayFab initializes new standing-by sessions. The amount of standing-by sessions required is dependent on how fast new sessions are requested during peak utilization, and how quickly they can be created and initialized.
 
 2. **Virtual machine fragmentation** - If you configure multiple sessions to be hosted on a single virtual machine, sometimes there may be extra standing-by capacity due to fragmentation. In our example of 3 sessions per virtual machine, a virtual machine at times may have only 1 active session, and the remaining two “spaces” will be added to the standing-by pool. Until the active session is terminated, the virtual machine *must stay online* - even if the additional standing-by capacity is not needed.
 
@@ -143,11 +143,11 @@ At 100,000 users, each averaging 12 user minutes per month, this comes out to 1.
 
 PlayFab offers three pathways for billing.
 
-- **Billing through credit card.**
-- **Billing through PlayFab invoicing.** This is ideal for many professional projects, but requires you to contact our [customer services group](https://playfab.com/contact/) to get set up.
-- **Billing through Azure & Microsoft Enterprise Agreements.** This is ideal for organizations that may have a volume deal with **Azure** or another **Microsoft** product line. Please contact our [customer services group](https://playfab.com/contact/) or your **Azure** solutions specialist to learn more.
+1. **Billing through credit card.**
+2.  **Billing through PlayFab invoicing.** This is ideal for many professional projects, but requires you to contact our [customer services group](https://playfab.com/contact/) to get set up.
+3. **Billing through Azure & Microsoft Enterprise Agreements.** This is ideal for organizations that may have a volume deal with **Azure** or another **Microsoft** product line. Please contact our [customer services group](https://playfab.com/contact/) or your **Azure** solutions specialist to learn more.
 
-In all three options you will receive a detailed analysis of your multiplayer server activity in Game Manager. However - for **Azure/EA** customers - the final invoicing through **Azure** is simplified, and will show these high level line-items denominated in dollars:
+In all three options you will receive a detailed analysis of your multiplayer server activity in Game Manager. However - for Azure/EA customers - the final invoicing through Azure is simplified, and will show these high level line-items denominated in dollars:
 
 - PlayFab Essential Services
 - PlayFab Multiplayer Servers
