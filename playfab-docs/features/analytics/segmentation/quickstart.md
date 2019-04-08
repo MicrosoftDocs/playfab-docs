@@ -17,9 +17,10 @@ Player segmentation is defined in [Game Manager](../../config/gamemanager/quicks
 **Requirements:**
 
 - Players with and without a distinctive characteristic defined in PlayFab.
-- A defined [CloudScript PlayStream Hook](../../automation/actions-rules/using-cloudscript-actions-with-playstream.md).
 
-## Example case: Run a custom CloudScript for every player who reaches an in-game goal
+- A defined [Cloud Script PlayStream Hook](../../automation/actions-rules/using-cloudscript-actions-with-playstream.md).
+
+## Example case: Run a custom Cloud Script for every player who reaches an in-game goal
 
 The *defining characteristic* of a player might be:
 
@@ -36,7 +37,7 @@ For this example, our distinctive characteristic will be a statistic - specifica
 > [!NOTE]
 >  Statistics are one of many possible options, and only specifically required for this example. Feel free to replace the statistic requirement with another filter of your choice.
 
-Our action will be to run a CloudScript function. CloudScript is by far the most flexible trigger option, granting you full control of the player and segmentation information at the time of segment-transition.
+Our action will be to run a Cloud Script function. Cloud Script is by far the most flexible trigger option, granting you full control of the player and segmentation information at the time of segment-transition.
 
 From the **Game Manager** screen:
 
@@ -49,7 +50,7 @@ The screen shown below is an example of the **Segment** described above.
 
 ![Game Manager - players - segments - new segment](media/tutorials/game-manager-players-segments-new-segment.png)  
 
-The most complex part of this example is the CloudScript. Utilize the second parameter, *Context*, in your [CloudScript handler](../../automation/actions-rules/using-cloudscript-actions-with-playstream.md) to identify the player, and segment transition.
+The most complex part of this example is the Cloud Script. Utilize the second parameter, *Context*, in your [Cloud Script handler](../../automation/actions-rules/using-cloudscript-actions-with-playstream.md) to identify the player, and segment transition.
 
 Afterwards, perform any action you wish on the player, such as granting [inventory items](../../data/playerdata/player-inventory.md), [virtual currency](../../commerce/economy/currencies.md), [player data](../../data/playerdata/quickstart.md), or [statistics](../../data/playerdata/using-player-statistics.md).
 
