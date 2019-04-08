@@ -55,16 +55,16 @@ The agent can also be configured to run the game server as a containerized appli
 
 ### Testing connection to your game
 
-Once your game executable is running and **MockVmAgent** output prints **CurrentGameState - Active**, you should be able to connect to your game using **ipaddress 127.0.0.1** and port at which your game server is listening on.
-  
+Once your game executable is running and **MockVmAgent** output prints **CurrentGameState - Active**, you should be able to connect to your game using **ipaddress 127.0.0.1** and the port at which your game server is listening on.
+
 The **MockVmAgent** requests the game server to terminate (via GSDK) after a configurable number of heartbeats. This can be tuned by updating **NumHeartBeatsForTerminateResponse** in the **MultiplayerSettings.json** file.
 
 ## Verifying containerization
 
 ### Prerequisites
 
-- Windows 10 Pro (or above) with April 2018 (**1803**) update.
-- Get the docker from [here](https://download.docker.com/win/stable/Docker%20for%20Windows%20Installer.exe) or from the main [page](https://www.docker.com/products/docker-desktop).
+- Windows 10 Pro (or above) with April 2018 (1803) update.
+- Get Docker from [here](https://download.docker.com/win/stable/Docker%20for%20Windows%20Installer.exe) or from the main [page](https://www.docker.com/products/docker-desktop).
 
 ### Setup
 

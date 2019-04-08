@@ -18,7 +18,7 @@ See [Integrating game servers with the PlayFab game server SDK (GSDK)](integrati
 
 **Archived Servers** is the vehicle for retrieving these logs after the game server has terminated.
 
-First, go to the **Servers** page in the **Multiplayer Servers 2.0 tab** and select **View Archive** on the top right, as shown below.
+First, go to the **Servers** page in the **Multiplayer Servers 2.0 tab**, and select **View Archive** on the top right, as shown below.
 
 ![Multiplayer - Servers - View Archive](media/tutorials/multiplayer-servers-view-archive.png)
 
