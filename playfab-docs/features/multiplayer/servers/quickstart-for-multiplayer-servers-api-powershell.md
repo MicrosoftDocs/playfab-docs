@@ -103,7 +103,7 @@ These servers come from continuously refilled, standing-by server pools you conf
 
 ### Configure regional settings
 
-To tune the number of standing-by servers and regional allocation, the portal might be simpler to use than the *APIs.
+To tune the number of standing-by servers and regional allocation, the portal might be simpler to use than the APIs.
 
 In Game Manager, you should see a **Multiplayer** tab and your builds listed under **Servers 2.0**, as shown below.
 

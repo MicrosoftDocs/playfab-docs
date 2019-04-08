@@ -26,7 +26,7 @@ When a build is created through Game Manager or APIs like [CreateBuildWithManage
 C:\GameCoreApp\GameServer.exe -mode RETAIL
 ```
 
-The **start game** command must start an application that uses the PlayFab Game Server SDK, to call `ReadyForPlayers` when ready to serve game clients. The container will be terminated and recycled when the application process exits.
+The `StartGameCommand` must start an application that uses the PlayFab Game Server SDK, to call `ReadyForPlayers` when ready to serve game clients. The container will be terminated and recycled when the application process exits.
 
 ## Managed Containers
 

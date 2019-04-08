@@ -144,7 +144,7 @@ At 100,000 users, each averaging 12 user minutes per month, this comes out to 1.
 PlayFab offers three pathways for billing.
 
 1. **Billing through credit card.**
-2.  **Billing through PlayFab invoicing.** This is ideal for many professional projects, but requires you to contact our [customer services group](https://playfab.com/contact/) to get set up.
+2. **Billing through PlayFab invoicing.** This is ideal for many professional projects, but requires you to contact our [customer services group](https://playfab.com/contact/) to get set up.
 3. **Billing through Azure & Microsoft Enterprise Agreements.** This is ideal for organizations that may have a volume deal with **Azure** or another **Microsoft** product line. Please contact our [customer services group](https://playfab.com/contact/) or your **Azure** solutions specialist to learn more.
 
 In all three options you will receive a detailed analysis of your multiplayer server activity in Game Manager. However - for Azure/EA customers - the final invoicing through Azure is simplified, and will show these high level line-items denominated in dollars:

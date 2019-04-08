@@ -20,7 +20,7 @@ As of October 11, 2018, Thunderhead preview customers who use managed, Windows c
 
 Over the following two weeks customers were transitioned to a more reliable and better performing configuration:
 
-- Managed containers are using an official **Windows Server 2016** (**1803**) container image as their basis. This can be downloaded at [Docker Hub](https://hub.docker.com/r/microsoft/windowsservercore/).
+- Managed containers are using an official Windows Server 2016 (1803) container image as their basis. This can be downloaded at [Docker Hub](https://hub.docker.com/r/microsoft/windowsservercore/).
 - Managed containers are operated on Windows Server 2016 (1803) virtual machines, using the *Server Core* SKU. The key implication is that now when you remote desktop into your deployed virtual machines, you only have PowerShell and command-prompt available in the graphical user experience. There is no "Start menu". This stream-lined configuration provides more CPU and memory resources to your game servers and reduces performance variation.
 
 This change is not expected to break game server functionality. However we will roll it out gradually to reduce risk:

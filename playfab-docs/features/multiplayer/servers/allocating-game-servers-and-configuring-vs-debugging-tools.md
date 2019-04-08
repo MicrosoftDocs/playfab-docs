@@ -71,14 +71,14 @@ https://aka.ms/vs/15/release/RemoteTools.amd64ret.enu.exe
 
 2. Include these tools in your game server asset package.
 3. As part of creating your server build in Game Manager or with the Entity API, configure port 4022 TCP as a debug port.
-4. You will need to run **msvsmon** within the container, to enable remote debugging. A common pattern is to specify a CMD script as the Game Start command, and to use a command-line argument to launch **msvsmon** in addition to your game server executable.
-5. Execute **msvsmon** once with:
+4. You will need to run `msvsmon` within the container, to enable remote debugging. A common pattern is to specify a CMD script as the Game Start command, and to use a command-line argument to launch `msvsmon` in addition to your game server executable.
+5. Execute `msvsmon` once with:
 
 ```cmd
 /prepcomputer
 ```
 
-6. Execute **msvsmon** with flags (shown below).
+6. Execute `msvsmon` with flags (shown below).
 
 ```cmd
 /nostatus /noauth /nosecuritywarn /anyuser /nofirewallwarn /nodiscovery /port 4022

@@ -72,7 +72,7 @@ View help for the module by running:
 Get-Command -Module PlayFabMultiplayer| Get-Help
 ```
 
-The PowerShell module, like all of the SDKs, requires you to specify the PlayFab titleid you want to manage, and to provide a developer secret key to authenticate.
+The PowerShell module, like all of the SDKs, requires you to specify the PlayFab `TitleID` you want to manage, and to provide a developer secret key to authenticate.
 
 You can get this information through **Game Manager** -> **Settings** -> **Secret Key**. Some examples of using the PowerShell module are shown below.
 

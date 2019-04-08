@@ -20,7 +20,7 @@ If you are an existing PlayFab Pro or Enterprise customer, and interested in ear
 
 There are three key concepts to PlayFab Multiplayer Servers:
 
-1. **Game Server executable** - The application that you are running in **Azure**. This server may be a simple network repeater, a fully authoritative game server running physics and AI, or anything in between.
+1. **Game Server executable** - The application that you are running in Azure. This server may be a simple network repeater, a fully authoritative game server running physics and AI, or anything in between.
 2. **Build** - The game server executable, packaged with assets and certificates needed to run the game. This content can be uploaded as individual certificates, zip files, and/or a container image. If you do not need a custom container image, you can use our managed Windows containers.
 3. **Game Server** - A container running your Game Server Executable. There may be multiple servers running on a single virtual machine.
 
@@ -70,7 +70,7 @@ This will use the GetBuilds API to obtain the detailed configuration for your bu
 **CreateBuildWithManagedContainerRequest/CreateBuildWithManagedContainerResponse**:
 
 - **StartGameCommand** -> renamed **StartMultiplayerServerCommand**
-- **RegionConfiguration** is now **RegionConfigurations** (plural) for consistency throughout **APIs** request/responses.
+- **RegionConfiguration** is now **RegionConfigurations** (plural) for consistency throughout APIs request/responses.
 
 ### GetBuilds
 

@@ -24,7 +24,7 @@ A build can exist in one of the following states:
   - One or more regions are in **Deleting** state.
 - **Deployed**: All configured regions are in **Deployed** state.
 
-The transitions between these states are depicted in the following image and described below:
+The transitions between these states are depicted in the following image, and described below:
 
 ![Multiplayer - Build Region Status](media/tutorials/multiplayer-build-status.jpg)
 

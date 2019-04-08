@@ -10,7 +10,7 @@ keywords: playfab, multiplayer servers, thunderhead, release notes
 ms.localizationpriority: medium
 ---
 
-# Archived Release Notes- PlayFab multiplayer servers (Thunderhead)
+# Archived release notes- PlayFab multiplayer servers (Thunderhead)
 
 ## October 12, 2018- Updates to managed containers
 
@@ -20,9 +20,9 @@ We are updating the virtual machine and container configuration to use Windows S
 
 ## PowerShell
 
-`Get-PFMultiplayerBuild` now uses the ListBuilds API to return a list of build summaries. This makes the cmdlet faster, but returns less information by default.
+`Get-PFMultiplayerBuild` now uses the ListBuilds API to return a list of build summaries. This makes the **cmdlet** faster, but returns less information by default.
 
-Detailed information is still available via `Get-PFMultiplayerBuild`, simply use the new -Default parameter, as shown below.
+Detailed information is still available via `Get-PFMultiplayerBuild`, simply use the new **-Default** parameter, as shown below.
 
 ```azurepowershell
 Get-PFMultiplayerBuild -Detailed
