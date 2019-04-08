@@ -109,8 +109,6 @@ APIs and PowerShell have been renamed. This is one of the last breaking changes 
 
 - `Add-PFGameCertificate` now supports uploading certificates (PFX) that require a password.
 
-- **Add-PFGameCertificate** now supports uploading certificates (PFX) that require a password.
-
 ### Changes (PowerShell Module v0.882)
 
 - Allocating session hosts with `New-PFGameSessionHost` requires additional parameters (region in particular) as these are no longer hard coded values.
