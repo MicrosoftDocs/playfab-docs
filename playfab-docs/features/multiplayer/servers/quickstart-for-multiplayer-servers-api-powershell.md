@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 This tutorial helps you quickly upload a sample multiplayer server, configure a server build, and create server instances.
 
-On a **Windows 10** PC, get the following prerequisites ready:
+On a Windows 10 PC, get the following prerequisites ready:
 
 - A PlayFab title ID - this needs to be a title that PlayFab has authorized for the private preview.
 - A developer key for the title (See [Getting PlayFab Developer Keys](../../config/gamemanager/getting-playfab-developer-keys.md)).
@@ -24,7 +24,7 @@ On a **Windows 10** PC, get the following prerequisites ready:
 
 1. Install the [PlayFab Multiplayer PowerShell module](https://www.powershellgallery.com/packages/PlayFabMultiplayer)
 
-2. Open a **Windows PowerShell** window and run the commands shown below.
+2. Open a Windows PowerShell window and run the commands shown below.
 
 ```powershell
 Install-Module Azure.Storage
@@ -53,7 +53,7 @@ Enable-PFMultiplayerServer
 
 ## Upload a game server executable as an asset
 
-We're going to use the *managed containers* option to create a build. With managed containers, your game server build is created by uploading assets that are combined with a **Windows** container image. For this tutorial, upload the `winrunnerSample.zip` folder from the sample servers package you downloaded earlier
+We're going to use the *managed containers* option to create a build. With managed containers, your game server build is created by uploading assets that are combined with a Windows container image. For this tutorial, upload the `winrunnerSample.zip` folder from the sample servers package you downloaded earlier
 
 ```powershell
 Add-PFMultiplayerAsset -FilePath "C:\winrunnerSample.zip"
@@ -103,9 +103,9 @@ These servers come from continuously refilled, standing-by server pools you conf
 
 ### Configure regional settings
 
-To tune the number of standing-by servers and regional allocation, the portal might be simpler to use than the **APIs**.
+To tune the number of standing-by servers and regional allocation, the portal might be simpler to use than the APIs.
 
-In Game Manager, you should see a **Multiplayer** tab and your builds listed under Servers 2.0, as shown below.
+In Game Manager, you should see a **Multiplayer** tab and your builds listed under **Servers 2.0**, as shown below.
 
 ![Game Manager - Thunderhead Table](media/tutorials/game-manager-thunderhead-table.png)
 

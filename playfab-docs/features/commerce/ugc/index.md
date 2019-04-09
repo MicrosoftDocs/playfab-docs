@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 >
 > It is provided to give you an early look at an upcoming feature and to allow you to provide feedback while it is still in development.  
 >
-> Access to this feature is restricted to select titles. If you are interested in trying it, you can request access by submitting a ticket on [support.playfab.com](https://support.playfab.com/hc/en-us/requests/new).
+> Access to this feature is restricted to select titles. If you are interested in trying it, please contact us at [helloplayfab@microsoft.com](mailto:helloplayfab@microsoft.com).
 
 **PlayFab UGC** is a new premium feature for assisting titles that want to build user generated content systems for their games. It contains a full set of APIs that allow for content creation, upload, search and simple moderation scenarios. It's designed to provide out-of-the box capabilities that normally require a bit of custom work and service expertise to accomplish.
 

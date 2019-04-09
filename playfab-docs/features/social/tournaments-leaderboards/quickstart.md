@@ -26,7 +26,7 @@ In the Game Manager:
 - Select **New Leaderboard**.
 - Add a **Leaderboard** called **HighScore** in the **Statistic name** field.
 - Using the drop-down menu provided, set the **Reset frequency** field to **Manually**.
-- Move to the **Aggregation method** field and select **Maximum (always use the highest value)** from the drop-down menu provided.
+- Move to the **Aggregation method** field and select **Maximum** (always use the highest value) from the drop-down menu provided.
 
 ## Step 2 - Update the statistic with the high score for a player
 
@@ -41,7 +41,7 @@ Before we can use [UpdatePlayerStatistics](xref:titleid.playfabapi.com.client.pl
 
 ### C# code example - SubmitScore
 
-In this code example we will have a SubmitScore function that would be called at the end of a game.
+In this code example we will have a `SubmitScore` function that would be called at the end of a game.
 
 ```csharp
 
@@ -72,7 +72,7 @@ In order to get the leaderboard of the top high scores of all players that have 
 
 ### C# code example - RequestLeaderboard
 
-In this code example we will have a RequestLeaderboard function that would be called to get the leaderboard and will pass the results to a function of DisplayLeaderboard which would populate the experience in your game that shows the high scores.
+In this code example we will have a `RequestLeaderboard` function that would be called to get the leaderboard and will pass the results to a function of `DisplayLeaderboard` which would populate the experience in your game that shows the high scores.
 
 ```csharp
 //Get the players with the top 10 high scores in the game

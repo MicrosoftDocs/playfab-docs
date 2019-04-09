@@ -15,9 +15,9 @@ ms.localizationpriority: medium
 > [!IMPORTANT]
 > This feature is currently in **Private Preview**.  
 >
-> It is provided to give you an early look at an upcoming feature and to allow you to provide feedback while it is still in development.  
+> It is provided to give you an early look at an upcoming feature, and to allow you to provide feedback while it is still in development.  
 >
-> Access to this feature is restricted to select titles. If you are interested in trying it, you can request access by submitting a ticket on [support.playfab.com](https://support.playfab.com/hc/en-us/requests/new).
+> Access to this feature is restricted to select titles. If you are interested in trying it, please contact us at [helloplayfab@microsoft.com](mailto:helloplayfab@microsoft.com).
 
 ## Overview
 
@@ -31,7 +31,7 @@ By default, all event subscriptions are disallowed, so prior to setting up polic
 
 For your clients to receive any events via PubSub, you must first configure the appropriate policies on the PubSub Policy page within Game Manager.
 
-Open Game Manager, and navigate to the **Settings** tab on the left, then to the **PubSub** tab on the top.
+Open **Game Manager**, and navigate to the **Settings** tab on the left, then to the **PubSub** tab on the top.
 
 ![Screenshot of PubSub Policy configuration page.](images/pubsub-policy-list-ui.png)
 
@@ -39,28 +39,31 @@ If you are using a title with access to PubSub, this page provides you with a li
 
 ### New policy
 
-To create a new PubSub policy, click on the **NEW POLICY** button at the top right of the page. This opens up a new page which should look like the example shown below.
+To create a new PubSub policy, select the **NEW POLICY** button at the top right of the page. This opens up a new page which should look like the example provided below.
 
 ![Screen shot of the new PubSub policy configuration page](images/new-pubsub-policy.png)
 
-For standard PlayFab events, select a **Namespace** and **Event Name** from the drop-downs to indicate what sort of event you wish to configure (standard events are under the `com.playfab` namespace).
+For standard PlayFab events, select a **Namespace** and **Event Name** from the drop-downs, to indicate what sort of event you wish to configure (standard events are under the `com.playfab` namespace).
 
-Then choose the type of entity which will be subscribing to the desired event in the **Target Entity** drop-down. Check the appropriate boxes under **SUBSCRIBE** to control who is allowed to receive these events.
+Then choose the type of entity that will be subscribing to the desired event in the **Target Entity** drop-down. Check the appropriate boxes under **SUBSCRIBE**, to control who is allowed to receive these events.
 
 > [!NOTE]
-> For now, ignore the check boxes under **PUBLISH** as they currently have no effect.
+> For now, ignore the check boxes under **PUBLISH**, as they currently have no effect.
 
 For custom events, the process is largely the same.  The big difference is that you need to select **Custom** for the namespace, type in the full namespace (beginning with `com.playfab.events`), and the name of the event into the text boxes which appear.
 
 ![Screen shot of the new custom PubSub policy configuration page](images/new-custom-policy.png)
 
 > [!NOTE]
-> For now, ignore the check boxes under **PUBLISH** as they currently have no effect.
+> For now, ignore the check boxes under **PUBLISH**, as they currently have no effect.
 
-When you are ready, click **SAVE** to store and enable your new policy.
+When you are ready, select the **SAVE** button to store and enable your new policy.
 
 ## Edit policy
 
-To edit a policy later, select its **Event Name** in the list of policies. When editing a policy, you cannot change any of the fields which make up the topic of the event. If you wish to change the topic, create a new policy and delete the old one.
+To edit a policy later, select its **Event Name** in the list of policies.
+
+>[!NOTE]
+> When editing a policy, you cannot change any of the fields which make up the topic of the event. If you wish to change the topic, create a new policy and delete the old one.
 
 ![Screenshot of the event name link.](images/click-to-edit.png)

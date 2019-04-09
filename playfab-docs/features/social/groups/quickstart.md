@@ -32,7 +32,7 @@ Examples:
 - **Chat Channels** - Short or long term chat channels can be defined as an entity group.
 - **In-Game subscription to information** - Do you have a single-instance legendary item in your game? Do players want constant updates about what is happening with that item? Create an entity group focused on that item, with all player entities interested in the item as members.
 
-In short, entity groups can be *any* collection of entities (whether **NPC** or player-controlled, real or abstract), which need a persistent-state bound to that group.
+In short, entity groups can be *any* collection of entities (whether NPC or player-controlled, real or abstract), which need a persistent-state bound to that group.
 
 A friends list is a group. A three person private chat is a group. Go nuts!
 
@@ -53,7 +53,7 @@ Today, entity groups can contain players and/or characters. When creating a grou
 
 The owner will then be able to invite new members, create new roles with a wide variety of customizable permissions, modify member roles, kick members, etc.
 
-Additionally, the same entity functions that exist for entities also function for groups, so you will be able to save **JSON** objects, and files directly to the group to save arbitrary game-specific data.
+Additionally, the same entity functions that exist for entities also function for groups, so you will be able to save JSON objects, and files directly to the group to save arbitrary game-specific data.
 
 The code example that is provided below should give you a head start on basic guild interaction.
 
@@ -201,7 +201,7 @@ Let's take a look at some of the functions in the example provided:
 
 - **OnSharedError** - This is a typical pattern with PlayFab examples. The simplest way to handle an error is to report it. Your game client will probably have much more sophisticated error handling logic.
 
-- **ListGroups** - This calls **ListMembership** to determine all the groups that the given entity belongs to.Players will want to know the groups they have already joined.
+- **ListGroups** - This calls ListMembership to determine all the groups that the given entity belongs to. Players will want to know the groups they have already joined.
 
 - **CreateGroup/DeleteGroup** - Mostly self-explanatory. This example demonstrates updating the local group info cache when these calls are executed successfully.
 
@@ -215,8 +215,8 @@ Let's take a look at some of the functions in the example provided:
 
 ## Server vs client
 
-Like all new entity **API** methods, there is no distinction between the server **API** and the client **API**.
+Like all new entity API methods, there is no distinction between the server API and the client API.
 
 The action is performed by the caller, according to how the process was authenticated. A client will be identified as such, and will call these methods as a title player entity, and their roles and permissions within the group will be evaluated with every call, ensuring they have permission to perform this action.
 
-A server is authenticated with the same **developerSecretKey**, which identifies that process as a title entity. A title will bypass the role checks, and **API** calls executed by a title will only fail if the action is impossible to perform, in an instance such as if an entity cannot be removed if they are not a member.
+A server is authenticated with the same **developerSecretKey**, which identifies that process as a title entity. A title will bypass the role checks, and API calls executed by a title will only fail if the action is impossible to perform, in an instance such as if an entity cannot be removed if they are not a member.

@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 >
 > It is provided to give you an early look at an upcoming feature, and to allow you to provide feedback while it is still in development.  
 >
-> Access to this feature is restricted to select titles. If you are interested in trying it, you can request access by submitting a ticket on [support.playfab.com](https://support.playfab.com/hc/en-us/requests/new).
+> Access to this feature is restricted to select titles. If you are interested in trying it, please contact us at [helloplayfab@microsoft.com](mailto:helloplayfab@microsoft.com).
 
 Creating and editing queries - in addition to working interactively with returned data - can be accomplished with the Azure Data Explorer Web or Desktop Client. Both tools provide powerful client querying capabilities. It's simply a matter of preference between which tool you chose.
 
