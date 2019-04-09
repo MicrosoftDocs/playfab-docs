@@ -23,7 +23,7 @@ Before that happens, however, PlayFab creates a snapshot of all the leaderboard 
 
 ## Initial setup
 
-Before using this guide, please make sure that you have some players already registered for the title. The following screenshot shows 5 players artificially registered using the [LoginWithCustomID](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid) **API** call.
+Before using this guide, please make sure that you have some players already registered for the title. The following screenshot shows 5 players artificially registered using the [LoginWithCustomID](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid) API call.
 
 ![Game Manager - Players - Most recent logins](media/tutorials/game-manager-players-most-recent-logins.png)  
 
@@ -56,11 +56,11 @@ You will end up on the new **Leaderboards** page which will render blank data (s
 > [!IMPORTANT]
 > The following section is an example of how to populate test data for the purpose of this example. Your *real* game will populate this data in a more natural way.
 
-Our next step is simulating some data for our leaderboard. The quickest way to do this is to create a **CloudScript** handler, which will set random statistics for a given player. We will invoke this handler for every player over the All Players segment.
+Our next step is simulating some data for our leaderboard. The quickest way to do this is to create a CloudScript handler, which will set random statistics for a given player. We will invoke this handler for every player over the All Players segment.
 
 As a result, each player will get a random statistic value, which is a *good enough* approximation of a real world scenario.
 
-Let's start with defining our **CloudScript** (refer to the code comments for further information).
+Let's start with defining our CloudScript (refer to the code comments for further information).
 
 ```javascript
 // Should be invoked from a task that runs over certain segment
@@ -87,7 +87,7 @@ let getRandomInRange = (min, max) => {
 }
 ```
 
-Let's upload the **CloudScript**. Using Game Manager:
+Let's upload the CloudScript. Using Game Manager:
 
 - Navigate to the **Automation (1)** tab.
 - Then navigate to the **CloudScript (2)** sub-tab.
@@ -97,7 +97,7 @@ Let's upload the **CloudScript**. Using Game Manager:
 
 ![Game Manager - Automation - CloudScript - upload CloudScript](media/tutorials/game-manager-automation-cloudscript-upload-cloudscript.png)  
 
-Next, we need to define a task to execute our **CloudScript** over a specific segment:
+Next, we need to define a task to execute our CloudScript over a specific segment:
 
 - Navigate to the **Players** tab **(1)**.
 - Then, navigate to the **Segments** sub-tab **(2)**.
@@ -114,10 +114,10 @@ To configure the task:
 
 - Set up the **Name (1)**.
 - Make sure the type of task is set to **Run actions on each Player in a Segment (2)**.
-- In addition, verify that the **All Players** segment is selected.
+- In addition, verify that **All Players**  is selected under **Segment**.
 - Add a new **Action (3)**.
-- Select the **Execute CloudScript** type **(4)**.
-- Then select the **PopulateLeaderboard** handler **(5)**.
+- Select **Execute CloudScript** under **Type (4)**.
+- Then select the **PopulateLeaderboard** handler **(5)** under **Cloud Script Function**.
 - Finally, select the **Save and Run** button **(6)**.
 
 ![Game Manager - Configure Task](media/tutorials/game-manager-configure-task.png)  
@@ -142,7 +142,7 @@ To configure the task:
 
 This will create a snapshot of all the data we currently have, and then it will *nullify* statistic values on every player and increment the version.
 
-- Once your leaderboard is reset, run the **CloudScript** task again.
+- Once your leaderboard is reset, run the CloudScript task again.
 - Repeat this 2-3 times, then reset and repopulate.
 
 You will end up with several **Leaderboard** versions **(1)**:
@@ -214,7 +214,7 @@ Free tier only allows you to access the *very latest* archived version of the le
 
 ![Error - Leaderboard Version not available](media/tutorials/error-leaderboard-version-not-available.png)  
 
-The same rules apply for all the **Leaderboard** requests.
+The same rules apply for all the Leaderboard requests.
 
 - [GetLeaderboard](xref:titleid.playfabapi.com.client.playerdatamanagement.getleaderboard)
 - [GetLeaderboardAroundPlayer](xref:titleid.playfabapi.com.client.playerdatamanagement.getleaderboardaroundplayer)

@@ -29,7 +29,7 @@ The usage of UDP is important, because most multiplayer games use UDP transport 
 
 This is the typical flow for using these beacons in the context of a player device:
 
-1. Log in the player to PlayFab. This is typically done with a [LoginWithCustomID](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid) or another login API.
+1. Login the player to PlayFab. This is typically done with a [LoginWithCustomID](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid) or another login API.
 2. Call [ListQoSServers](xref:titleid.playfabapi.com.multiplayer.multiplayerserver.listqosservers). This provides hostnames to PlayFab’s QoS beacons. A typical implementation might have this procedure occur on the **Multiplayer Menu** page for the game.
 3. Create a UDP socket.
 4. Send a single UDP datagram to port 3075 on the QoS server. The message content must start with 2 bytes of 255 (1111 1111 1111 1111).  
@@ -38,7 +38,7 @@ This is the typical flow for using these beacons in the context of a player devi
 
 ## Using the quality-of-service C++ SDK
 
-PlayFab provides **C++** sub-routines demonstrating this QoS flow in the [PlayFab Cross-Platform C++ SDK](https://github.com/PlayFab/XPlatCppSdk). You can build the SDK and use it as a helper library in your PC games, or use the code as an example for other platforms.
+PlayFab provides C++ sub-routines demonstrating this QoS flow in the [PlayFab Cross-Platform C++ SDK](https://github.com/PlayFab/XPlatCppSdk). You can build the SDK and use it as a helper library in your PC games, or use the code as an example for other platforms.
 
 These are the two QoS APIs available in the [PlayFab Cross-Platform C++ SDK](https://github.com/PlayFab/XPlatCppSdk), as noted below.
 

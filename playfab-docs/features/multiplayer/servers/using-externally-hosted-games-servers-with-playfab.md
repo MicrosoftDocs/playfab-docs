@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Using externally hosted game servers with PlayFab
 
-## External game server hosting
+## External Game Server Hosting
 
 While PlayFab has always offered custom game server hosting as a paid service on top of Amazon web services, we’re aware that some developers would prefer to manage their *own* servers, using a variety of server providers and server operating systems.
 
@@ -24,9 +24,9 @@ First, it’s important to understand the differences between PlayFab game serve
 
 **PlayFab Game Servers**:
 
-- Are hosted using **AWS EC2**.
-- Are available in any **AWS EC2 Region**, including the US, Europe, Australia, Singapore, Japan, and others.
-- Can be provisioned using any **EC2** server type. By default they are **t2.medium**.
+- Are hosted using AWS EC2.
+- Are available in any AWS EC2 Region, including the US, Europe, Australia, Singapore, Japan, and others.
+- Can be provisioned using any EC2 server type. By default they are t2.medium.
 - Run Windows Server 2012 R2.
 - Automatically spin up/down based on demand and capacity needed.
 - Have Log and Output files automatically captured, and archived on instance shut-down.
@@ -52,11 +52,11 @@ The key limitations with externally hosted servers are imposed by the fact that 
 Once you’ve made the decision to use externally hosted servers, the setup is easy:
 
 - Select **Settings** from the left menu.
-- Select the **API Features** tab of the PlayFab Game Manager.
+- Select the **API Features** tab.
 - Select the **Use external game server provider** option.
 - Select the **Save API Features** button.
 
-Here, you can also set your server timeout period, which determines how often you need to call **RefreshGameServerInstanceHeartbeat** (see the following list of [PlayFab API Calls](#playfab-api-calls)) from the server, in order to tell the service to keep it in the active set.
+You can also set your server timeout period here, which determines how often you need to call **RefreshGameServerInstanceHeartbeat** (see the following list of [PlayFab API Calls](#playfab-api-calls)) from the server, in order to tell the service to keep it in the active set.
 
 > [!NOTE]
 > Please be aware that External Game Server Hosting is *not* designed to work in conjunction with PlayFab Custom Game Server Hosting - so turning this option *on* means that no game server hosts will be created in PlayFab.
@@ -83,7 +83,7 @@ In addition, you should be aware of the following API methods:
 
 Once you’ve selected external game server hosting in your PlayFab Game Manager settings, game servers can be registered with PlayFab. The way this works is that PlayFab maintains a registry of all game instances running, and which players occupy the slots in those games.
 
-Game servers are responsible for adding themselves to that registry, using the RegisterGame API method. The following example demonstrates this.
+Game servers are responsible for adding themselves to that registry, using the `RegisterGame` API method. The following example demonstrates this.
 
 ```csharp
 public void RegisterGame() {
@@ -104,9 +104,9 @@ public void RegisterGame() {
 
 In this case, a server for Title ID AAA is informing PlayFab that it is now available. Clients can query for a list of running games, or for an available slot in a game instance that matches some specified criteria.
 
-Apart from **Tags**, all of the fields you see here are required for the call, so that we have enough information to correctly "matchmake" players into the game session, and to let the client know how to communicate with it.
+Apart from `Tags`, all of the fields you see here are required for the call, so that we have enough information to correctly "matchmake" players into the game session, and to let the client know how to communicate with it.
 
-Even though they are required, the tags are worth a special mention, as they allow you to specify additional elements that can be used for your matchmaking calls. In particular, it’s worth pointing out the **custom_region** tag we’re using in this example.
+Even though they are required, the tags are worth a special mention, as they allow you to specify additional elements that can be used for your matchmaking calls. In particular, it’s worth pointing out the custom_region tag we’re using in this example.
 
 The Region element of the server must be set to one of the PlayFab-supported regions, but your GSP may have regions that don’t align well to the EC2 regions.
 
@@ -114,9 +114,9 @@ The way to handle this is by using a tag to specify your own custom regions, and
 
 The Build, Region, and GameMode parameters are all used exactly as they are in our tutorial on PlayFab's hosting of [Custom Game Servers](custom-game-servers.md), because they are the primary elements used for matchmaking.
 
-Obviously, they're not used the same way, as you're not starting servers in our hosting, but you do still need to upload a build and set up the **GameMode** you'll be using.
+Obviously, they're not used the same way, as you're not starting servers in our hosting, but you do still need to upload a build and set up the `GameMode` you'll be using.
 
-They are used to check the validity of the call to **RegisterGame**, so the Matchmaker knows how many slots are free at any given time (specifically, the **Build ID** needs to match - you don't need to keep the build up-to-date, apart from that).
+They are used to check the validity of the call to `RegisterGame`, so the Matchmaker knows how many slots are free at any given time (specifically, the Build ID needs to match - you don't need to keep the build up-to-date, apart from that).
 
 For external server hosting, you will not be setting the build to active in any region, however.
 

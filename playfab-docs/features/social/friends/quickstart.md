@@ -26,15 +26,15 @@ Friends lists are a great feature for improving your players' ability to sociali
 
 Any player in your title may be friends with any other player in your title. Notably, friendship on PlayFab is a one-way street.
 
-If **Albert** adds **Bob** as a **Friend**, there is *no* approval process for **Bob**, and **Bob** may be unaware.
+If **Albert** adds **Bob** as a Friend, there is *no* approval process for **Bob**, and **Bob** may be unaware.
 
 **Bob** must separately add **Albert** for the friendship to be *mutual*. If you wish to have reciprocity rules, it is your title's responsibility to enforce these conditions with a custom game server or **CloudScript** logic, if necessary.
 
-In the event that a player has linked their **Steam**, **Facebook**, or **Xbox Live** account, their platform-specific friends can also be displayed, if those friends also play your title.
+In the event that a player has linked their Steam, Facebook, or Xbox Live account, their platform-specific friends can also be displayed, if those friends also play your title.
 
 ## Making friends
 
-The example code will be using the functions `DisplayFriends()`, and `DisplayError(string error)` as a proxy of your app's **UI**. You can paste these into your editor to get it to work without any extra effort, or replace the calls with your own code.
+The example code will be using the functions `DisplayFriends()`, and `DisplayError(string error)` as a proxy of your app's UI. You can paste these into your editor to get it to work without any extra effort, or replace the calls with your own code.
 
 ```csharp
 void DisplayFriends(List<FriendInfo> friendsCache) { friendsCache.ForEach(f => Debug.Log(f.FriendPlayFabId)); }
@@ -42,8 +42,8 @@ void DisplayPlayFabError(PlayFabError error) { Debug.Log(error.GenerateErrorRepo
 void DisplayError(string error) { Debug.LogError(error); }
 ```
 
-1. Once a player has logged in, they can access your **UI** for friends. The functionality probably includes adding, removing, and displaying friends, at a minimum.
-2. To get the player's current friends list, use the [GetFriendsList](xref:titleid.playfabapi.com.client.friendlistmanagement.getfriendslist) **API** call.
+1. Once a player has logged in, they can access your UI for friends. The functionality probably includes adding, removing, and displaying friends, at a minimum.
+2. To get the player's current friends list, use the [GetFriendsList](xref:titleid.playfabapi.com.client.friendlistmanagement.getfriendslist) API call.
 
 ```csharp
 List<FriendInfo> _friends = null;
@@ -62,7 +62,7 @@ void GetFriends() {
 
 The [GetFriendsList](xref:titleid.playfabapi.com.client.friendlistmanagement.getfriendslist) result contains a parameter friends which is a list of [FriendInfo](xref:titleid.playfabapi.com.client.friendlistmanagement.getfriendslist#friendinfo) objects.
 
-3. To add a friend to the player's friend list, use the [AddFriend](xref:titleid.playfabapi.com.client.friendlistmanagement.addfriend) **API** call.
+3. To add a friend to the player's friend list, use the [AddFriend](xref:titleid.playfabapi.com.client.friendlistmanagement.addfriend) API call.
 
 ```csharp
 enum FriendIdType { PlayFabId, Username, Email, DisplayName };
@@ -90,7 +90,7 @@ void AddFriend(FriendIdType idType, string friendId) {
 }
 ```
 
-4. To remove a player from a player's friends list, use the [RemoveFriend](xref:titleid.playfabapi.com.client.friendlistmanagement.removefriend) **API** call.
+4. To remove a player from a player's friends list, use the [RemoveFriend](xref:titleid.playfabapi.com.client.friendlistmanagement.removefriend) API call.
 
 ```csharp
 // unlike AddFriend, RemoveFriend only takes a PlayFab ID
@@ -110,7 +110,7 @@ There are other things you can do with friends besides adding, removing, and dis
 
 ### Tagging friends
 
-The [FriendInfo](xref:titleid.playfabapi.com.client.friendlistmanagement.getfriendslist#friendinfo) object, retrieved from [GetFriendsList](xref:titleid.playfabapi.com.client.friendlistmanagement.getfriendslist), includes a list of tags for the friend. When updating the list, you would want to add and remove from this list and include it in the **API** call, as shown below.
+The [FriendInfo](xref:titleid.playfabapi.com.client.friendlistmanagement.getfriendslist#friendinfo) object, retrieved from [GetFriendsList](xref:titleid.playfabapi.com.client.friendlistmanagement.getfriendslist), includes a list of tags for the friend. When updating the list, you would want to add and remove from this list and include it in the API call, as shown below.
 
 ```csharp
 // this REPLACES the list of tags on the server
@@ -129,7 +129,7 @@ void SetFriendTags(FriendInfo friend, List<string> newTags)
 }
 ```
 
-You can use tags to inform matchmaking, (for example, the player doesn't like playing with friends tagged **2tuff** at hard difficulty) implement friend groups, or just use them to store any metadata associated with a relationship that you need.
+You can use tags to inform matchmaking (for example, the player doesn't like playing with friends tagged **2tuff** at hard difficulty), implement friend groups - or just use them to store any metadata associated with a relationship that you need.
 
 An important note is that PlayFab currently does not index these tags in any way. [GetFriendsList](xref:titleid.playfabapi.com.client.friendlistmanagement.getfriendslist) can't filter based on them, so that must be done locally.
 

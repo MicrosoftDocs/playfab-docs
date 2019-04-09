@@ -16,6 +16,6 @@ Letting players connect with their friends is a great engagement tool for your g
 
 Any player in your title may be friends with any other player in your title. Notably, friendship on PlayFab is a one-way street.
 
-If **Julie** adds **Bob** as a **Friend**, there is *no* approval process for **Bob**, and **Bob** may be unaware.
+If **Julie** adds **Bob** as a Friend, there is *no* approval process for **Bob**, and **Bob** may be unaware.
 
 **Bob** must separately add **Julie** for the friendship to be *mutual*. If you wish to have reciprocity rules, it is your title's responsibility to enforce these conditions with a custom game server or [CloudScript](../../automation/cloudscript/index.md) logic, if necessary.

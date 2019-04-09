@@ -1,18 +1,18 @@
 ---
-title: Linking & Unlinking
+title: Player Login
 author: v-thopra
-description: Landing page for Account Linking topics.
+description: Landing page for Player login topics.
 ms.author: v-thopra
 ms.date: 02/19/2019
 ms.topic: article
 ms.prod: playfab
-keywords: playfab, authentication, accounts, linking
+keywords: playfab, authentication, accounts, login, linking
 ms.localizationpriority: medium
 ---
 
 # Player Login
 
-The first step adding PlayFab to any game is always logging in the player. Logging in the player returns a security token that is needed for all other API calls.
+The first step in adding PlayFab to any game is to log in the player. Logging in the player returns a security token that is needed for all other API calls.
 
 PlayFab provides a breadth of login providers to enable both anonymous and recoverable login mechanisms.  
 
