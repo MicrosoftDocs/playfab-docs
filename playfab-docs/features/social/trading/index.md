@@ -12,10 +12,10 @@ ms.localizationpriority: medium
 
 # Trading
 
-The PlayFab client **API** allows players to trade items with one another. These **API** methods are enabled by default, so for the security of your title you may need to use our policy **API** to disable them.
+The PlayFab client API allows players to trade items with one another. These API methods are enabled by default, so for the security of your title you may need to use our policy API to disable them.
 
 > [!NOTE]
-> Inventory-trading functionality is in a preview phase. The methods are functional, but lack some useful elements that would make it a complete feature. Currently you can only trade virtual items. You cannot request or trade virtual currency, and PlayFab does not provide a list of trades that are available to you from other players. Trade methods are only available in the client **API**, and not available from the server **API**.
+> Inventory-trading functionality is in a preview phase. The methods are functional, but lack some useful elements that would make it a complete feature. Currently you can only trade virtual items. You cannot request or trade virtual currency, and PlayFab does not provide a list of trades that are available to you from other players. Trade methods are only available in the client API, and not available from the server API.
 
 ## Key concepts
 

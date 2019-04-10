@@ -12,11 +12,11 @@ ms.localizationpriority: medium
 
 # Using prize tables
 
-This tutorial walks you through how to create a Prize Table, that triggers a set of actions on a group of players within a range of ranks, in a [Resettable Leaderboard](using-resettable-statistics-and-leaderboards.md).
+This tutorial walks you through how to create a prize table that triggers a set of actions on a group of players within a range of ranks, in a [Resettable Leaderboard](using-resettable-statistics-and-leaderboards.md).
 
 In particular, this is a way to trigger emails, send push notifications, grant [Inventory Items](../../data/playerdata/player-inventory.md) and [Virtual Currency](../../commerce/economy/currencies.md), or execute a [CloudScript](../../automation/cloudscript/writing-custom-cloudscript.md) function at the reset of a leaderboard.
 
-In this example, we show you how to create Prize Table End Tournament prizes, which grants virtual currency to 5 players based on their rank in a leaderboard after a reset is performed.
+In this example, we show you how to create prize table end tournament prizes, which grants virtual currency to 5 players based on their rank in a leaderboard after a reset is performed.
 
 ## Requirements
 
@@ -89,7 +89,7 @@ Now, we’ll add a second rank range:
 
 ## Step 3 - Populate the leaderboard with a player
 
-A leaderboard and Prize Table associated with it has now been created. The next step is to populate the leaderboard with players.
+A leaderboard and prize table associated with it has now been created. The next step is to populate the leaderboard with players.
 
 To create players, we will use [LoginWithCustomID](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid). Then, we will use the players to populate the leaderboard with [UpdatePlayerStatistics](xref:titleid.playfabapi.com.client.playerdatamanagement.updateplayerstatistics).
 
@@ -104,9 +104,9 @@ Before we can use [UpdatePlayerStatistics](xref:titleid.playfabapi.com.client.pl
 
 ### C# code example
 
-The following **C#** code example creates 5 players and logs them in using [LoginWithCustomID](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid).
+The following **C#** code example creates 5 players, and logs them in using [LoginWithCustomID](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid).
 
-It then populates the leaderboard you created earlier (**tournamentScore_manual**) with the 5 players with values of: **105**, **104**, **103**, **102**, and **101** using [UpdatePlayerStatistics](xref:titleid.playfabapi.com.client.playerdatamanagement.updateplayerstatistics).
+It then populates the leaderboard you created earlier (`tournamentScore_manual`) with the 5 players with values of: **105**, **104**, **103**, **102**, and **101** using [UpdatePlayerStatistics](xref:titleid.playfabapi.com.client.playerdatamanagement.updateplayerstatistics).
 
 ```csharp
 // Note: This is a recursive function. Invoke it initially with no parameter
