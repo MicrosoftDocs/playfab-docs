@@ -18,20 +18,17 @@ On a Windows 10 PC, get the following prerequisites ready:
 
 - A PlayFab title ID - this needs to be a title that PlayFab has authorized for the private preview.
 - A developer key for the title (See [Getting PlayFab Developer Keys](../../config/gamemanager/getting-playfab-developer-keys.md)).
-- [Game Server SDK Sample - Windows Runner](https://github.com/PlayFab/gsdkSamples/releases/download/v1.0/winrunnerSample.zip)
+- [Game Server SDK Sample - Windows Runner](https://github.com/PlayFab/gsdkSamples/releases/)
 
 ## Install the PlayFab Multiplayer PowerShell module
 
-1. Install the [PlayFab Multiplayer PowerShell module](https://www.powershellgallery.com/packages/PlayFabMultiplayer)
-
-2. Open a Windows PowerShell window and run the commands shown below.
+1. Install the [PlayFab Multiplayer PowerShell module](https://www.powershellgallery.com/packages/PlayFabMultiplayer) by opening a Windows Powershell window as Administrator and run the command:
 
 ```powershell
-Install-Module Azure.Storage
 Install-Module PlayFabMultiplayer
 ```
 
-3. You can learn more about the modules by running the following command.
+2. You can learn more about the cmdlets in the PlayFab Multiplayer PowerShell module by running the following command.
 
 ```powershell
 Get-Command -Module PlayFabMultiplayer| Get-Help
@@ -42,10 +39,10 @@ Get-Command -Module PlayFabMultiplayer| Get-Help
 In the **PowerShell** window, run the following command using your title ID and associated developer key:
 
 ```powershell
-Get-PFTitleEntityToken -TitleID "mytitleID" -secretkey "mysecretkey"
+Set-PFTitle -TitleID "mytitleID" -secretkey "mysecretkey"
 ```
 
-This command uses the [PlayFab C# beta SDK](https://s3-us-west-2.amazonaws.com/api-playfab-com-craft-files/FileAssets/BetaSDKs-180827.zip) to call[GetEntityToken](xref:titleid.playfabapi.com.authentication.authentication.getentitytoken). Now let's [enable multiplayer servers](xref:titleid.playfabapi.com.multiplayer.multiplayerserver.enablemultiplayerserversfortitle) for the title:
+This command uses the [PlayFab C# SDK](https://www.nuget.org/packages/PlayFabAllSDK/) to call [GetEntityToken](xref:titleid.playfabapi.com.authentication.authentication.getentitytoken). Now let's [enable multiplayer servers](xref:titleid.playfabapi.com.multiplayer.multiplayerserver.enablemultiplayerserversfortitle) for the title:
 
 ```powershell
 Enable-PFMultiplayerServer
