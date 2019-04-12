@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Using the profile for advanced leaderboards
 
-With PlayFab, you usually construct leaderboards using the following **API** methods:
+With PlayFab, you usually construct leaderboards using the following API methods:
 
 - [**GetFriendLeaderboard**](xref:titleid.playfabapi.com.client.playerdatamanagement.getfriendleaderboard)
 - [**GetFriendLeaderboardAroundPlayer**](xref:titleid.playfabapi.com.client.playerdatamanagement.getfriendleaderboardaroundplayer)
@@ -28,7 +28,7 @@ However, PlayFab also allows you to use [**PlayerProfileViewConstraints**](xref:
 
 ## Configuring player profile view constraints
 
-By default, the **Client API** may only fetch the display name from another player profile. In this example, we will allow *all* players to access additional information about *other* players in the leaderboard.
+By default, the Client API may only fetch the display name from another player profile. In this example, we will allow *all* players to access additional information about *other* players in the leaderboard.
 
 Navigate to your title Game Manager:
 
@@ -43,7 +43,7 @@ Navigate to your title Game Manager:
 
 The previous step allows client code to use **DisplayName** and **AvatarUrl Profile** constraints.
 
-The following sample shows how to fetch and print a leaderboard using any mentioned **Profile** data. Please refer to the code comments for further information.
+The following sample shows how to fetch and print a leaderboard using any mentioned Profile data. Please refer to the code comments for further information.
 
 ```csharp
 private static async Task DoReadLeaderboard()
@@ -85,7 +85,7 @@ private static async Task DoReadLeaderboard()
 ```
 
 > [!NOTE]
-> The individual Profile fields are *only* available if the client explicitly asks for them using Profile Constraints. Also be aware that if certain profile constraint are *not* allowed in the Game Manager and your client requests them, the **API** call will fail with a corresponding error. The result will look similar to the example provided below.
+> The individual Profile fields are *only* available if the client explicitly asks for them using Profile Constraints. Also be aware that if certain profile constraint are *not* allowed in the Game Manager and your client requests them, the API call will fail with a corresponding error. The result will look similar to the example provided below.
 
 ![Output - Display Leaderboard](media/tutorials/output-display-leaderboard.png)  
 

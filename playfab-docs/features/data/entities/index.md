@@ -16,11 +16,7 @@ The entity programming model is the foundation for PlayFab's next generation of 
 
 ## Provide consistency across the programming model
 
-The new entity programming models are designed to be utilized across all entity types (e.g., title, player, character, group) anyway that your game wants to interact with PlayFab (e.g., from the client, from your PlayFab hosted CloudScript or your custom game server). Gone are the aggravations of certain functionality only being available for a subset of your game.
-
-## Significantly improve performance
-
-Changing the way we store data, as well as unifying the access policies we use, increases performance for player and title CRUD operations. By consolidating all Data API interactions into a single place, all CRUD operations work the same way across the entire service. We unify data across a smaller set of tables and use a common access policy system more efficiently to access the necessary data.
+The new entity programming models are designed to be utilized across all entity types (for example, title, player, character, or group) in any way that your game wants to interact with PlayFab - from the client, from your PlayFab hosted CloudScript, or from your custom game server. Gone are the aggravations of certain functionality only being available for a subset of your game.
 
 ## Significantly improve performance
 
