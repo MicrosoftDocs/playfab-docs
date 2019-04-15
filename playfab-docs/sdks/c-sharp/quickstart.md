@@ -17,6 +17,7 @@ This guide will help you make your first PlayFab API call using CSharp.
 ## CSharp Getting Started Guide
 
 A native C# project can be used two ways:
+
 - Admin tools for maintaining your game
   - Usually, you will want to make synchronous calls back-to-back
   - Each API call will lock the program while it's executing, but that's not an issue for this type of program
@@ -26,7 +27,7 @@ A native C# project can be used two ways:
   - You need to take advantage of the async nature of API calls, and the C# async/await feature keywords
     - Read the [MSDN guide - Asynchronous Programming with async and await (C#)](https://msdn.microsoft.com/en-us/library/mt674882.aspx) for this
 
-## CSharp Project Setup 
+## CSharp Project Setup
 
 - OS: This guide is written for Windows 10, and VS 2017
 - Installation
@@ -52,7 +53,7 @@ A native C# project can be used two ways:
 ========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
 ```
 
-  - And your PlayFab installation is complete!
+- And your PlayFab installation is complete!
 
 ## Set up your first API call
 
@@ -61,7 +62,6 @@ A native C# project can be used two ways:
   - Open that file, and replace the contents with this:
 
 - The result should look like this (Sometimes you need to refresh):
-
 
 ```csharp
 using System;
@@ -79,7 +79,7 @@ public static class Program
 
         var request = new LoginWithCustomIDRequest { CustomId = "GettingStartedGuide", CreateAccount = true };
         var loginTask = PlayFabClientAPI.LoginWithCustomIDAsync(request);
-        // If you want a synchronous ressult, you can call loginTask.Wait() - Note, this will halt the program until the function returns
+        // If you want a synchronous result, you can call loginTask.Wait() - Note, this will halt the program until the function returns
 
         while (_running)
         {
@@ -145,10 +145,10 @@ This optional last section describes each part of Program.cs in detail.
 
 Inside of Main:
 
-- PlayFabSettings.TitleId = "xxxx";
+- `PlayFabSettings.TitleId = "xxxx";`
   - Every PlayFab developer creates a title in Game Manager. When you publish your game, you must code that titleId into your game. This lets the client know how to access the correct data within PlayFab. For most users, just consider it a mandatory step that makes PlayFab work.
 
-- var request = new LoginWithCustomIDRequest { CustomId = "GettingStartedGuide", CreateAccount = true };
+- `var request = new LoginWithCustomIDRequest { CustomId = "GettingStartedGuide", CreateAccount = true };`
   - Most PlayFab API methods require input parameters, and those input parameters are packed into a request object
   - Every API method requires a unique request object, with a mix of optional and mandatory parameters
     - For LoginWithCustomIDRequest, there is a mandatory parameter of CustomId, which uniquely identifies a player and CreateAccount, which allows the creation of a new account with this call.
@@ -159,27 +159,27 @@ Inside of Main:
       - [LoginWithIOSDeviceID](xref:titleid.playfabapi.com.client.authentication.loginwithiosdeviceid)
       - [LoginWithEmailAddress](xref:titleid.playfabapi.com.client.authentication.loginwithemailaddress)
 
-- var loginTask = PlayFabClientAPI.LoginWithCustomIDAsync(request);
+- `var loginTask = PlayFabClientAPI.LoginWithCustomIDAsync(request);`
   - This begins the async request to "LoginWithCustomID", using the C# async/await feature
 
-- while (running)
+- `while (_running)`
   - Running in a native C# environment means you have to code your own main loop.
   - This serves the purpose in the most trivial possible way
 
 Inside of OnLoginComplete:
 
-- var apiResult = taskResult.Result.Result;
+- `var apiResult = taskResult.Result.Result;`
   - When successful, apiResult object of many API callbacks will contain the requested information
   - If not-null, apiResult for LoginResult contains some basic information about the player, but for most users, login is simply a mandatory step before calling other APIs.
 
-- var apiError = taskResult.Result.Error;
+- `var apiError = taskResult.Result.Error;`
   - If apiError is not null, your API has failed
   - API calls can fail for many reasons, and you should always attempt to handle failure
   - Why API calls fail (In order of likelihood)
-    -  PlayFabSettings.TitleId is not set. If you forget to set titleId to your title, then nothing will work.
-    -  Request parameters. If you have not provided the correct or required information for a particular API call, then it will fail. See error.errorMessage, error.errorDetails, or error.GenerateErrorReport() for more info.
-    -   Device connectivity issue. Cell-phones lose/regain connectivity constantly, and so any API call at any time can fail randomly, and then work immediately after. Going into a tunnel can disconnect you completely.
-    -   PlayFab server issue. As with all software, there can be issues. See our [release notes](../../release-notes/index.md) for updates.
-    -  The internet is not 100% reliable. Sometimes the message is corrupted or fails to reach the PlayFab server.
+    - PlayFabSettings.TitleId is not set. If you forget to set titleId to your title, then nothing will work.
+    - Request parameters. If you have not provided the correct or required information for a particular API call, then it will fail. See error.errorMessage, error.errorDetails, or error.GenerateErrorReport() for more info.
+    - Device connectivity issue. Cell-phones lose/regain connectivity constantly, and so any API call at any time can fail randomly, and then work immediately after. Going into a tunnel can disconnect you completely.
+    - PlayFab server issue. As with all software, there can be issues. See our [release notes](../../release-notes/index.md) for updates.
+    - The internet is not 100% reliable. Sometimes the message is corrupted or fails to reach the PlayFab server.
 
   - If you are having difficulty debugging an issue, and the information within the error information is not sufficient, please visit us on our [forums](https://community.playfab.com/index.html)
