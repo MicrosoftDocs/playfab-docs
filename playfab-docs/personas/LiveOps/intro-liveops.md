@@ -35,7 +35,7 @@ Today, LiveOps is having a dramatic impact on game development both in the realm
 
 Companies that adopt a LiveOps mindset focus on making their games last longer - turning them into “forever franchises” - and find that this produces a far higher return on their development and marketing investment than traditional game development and advertising.
 
-For example, as of Q3 2017, live services represented roughly **half** of EA’s net bookings, and this number has been growing at 10-15% annually. Additionally, LiveOps techniques drive developers to design systems and content that can be enjoyed for months or years.
+For example, as of Q3 2017, live services represented roughly *half* of EA’s net bookings, and this number has been growing at 10-15% annually. Additionally, LiveOps techniques drive developers to design systems and content that can be enjoyed for months or years.
 
 To see the impact that LiveOps can have on game longevity, look no further than the top 10 games by revenue for 2017 and 2018. Fully 80% of the games in the top 10 in 2017 were also in the charts in 2018 - and all of them are operated as services, with a strong emphasis on LiveOps.
 
@@ -124,7 +124,7 @@ You’ll also want to think about **automation** early on, so that you can move 
 
 Collecting and analyzing your **crash data** and **retention metrics** is also a must, even if you are taking a lean approach to development.
 
-“We mostly focused on the game itself during development, because nothing else would make sense if the game wasn’t fun,” says Kolibri Games’ Oliver Löffler.
+“We mostly focused on the game itself during development, because nothing else would make sense if the game wasn’t fun,” says Oliver Löffler of Kolibri Games.
 
 “We did focus on crash analytics and basic analytics to measure retention, which was a key performance indicator for us. We also built functionality to make sure we could make commits without breaking anything. At the beginning we were aiming to make something that would be fun for up to 4 days, and see if players would be engaged enough in that time period to add on more content to sustain engagement over a longer period.”
 
@@ -178,9 +178,9 @@ In the **plateau phase** of a game, you can dynamically right-size your back-end
 
 Don’t write off your game without thinking through your options; Deca Games has successfully used LiveOps techniques to reinvigorate games they’ve acquired well into their plateau phase, such as *Realm of the Mad God.*
 
-A browser-based game originally invented by two developers in a 2010 hackathon, *Realm of the Mad God* was a cult hit that was acquired by Kabam in 2012. When Kabam shifted its priorities to mobile, the game lost focus internally and was on “life support” when Deca Games took it on.
+A browser-based game originally invented by two developers in a 2010 hackathon, *Realm of the Mad God* was a cult hit that was acquired by Kabam in 2012. When Kabam shifted its priorities to mobile, the game lost focus internally, and was on “life support” when Deca Games took it on.
 
-Deca grew the game without any marketing spend “by working with the community and hyper-delivering on their wants and needs,” notes Deca’s Ken Go, helping the game grow through word of mouth. As a result, 7 years on the game has more active players than ever before. Investing in keeping your game alive longer also presents a great cross-marketing opportunity since you’ve got an active audience to which you can promote your other games.
+Deca grew the game without any marketing spend “by working with the community and hyper-delivering on their wants and needs,” notes Deca’s Ken Go, helping the game grow through word of mouth. As a result, 7 years later the game has more active players than *ever before*. Investing in keeping your game alive longer also presents a great cross-marketing opportunity since you’ve got an active audience to which you can promote your other games.
 
 “*In three years our games have generated over $80m revenue. Depending on how you account for it, Live Ops initiatives generated between one and two-thirds of that revenue…Live Ops underpins everything we do.*”  
 -- Simon Hade, COO, SpaceApe
