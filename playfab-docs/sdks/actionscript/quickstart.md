@@ -17,7 +17,7 @@ This guide will help you make your first PlayFab API call using ActionScript.
 ## ActionScript3 Project Setup
 
 - **OS**: This guide is for Windows 10
-  - The steps for Mac should be similar, but probably not identical (Good luck!)
+- The steps for Mac should be similar, but probably not identical (Good luck!)
 
 - Installation
   - These steps describe building an AS3 project using entirely free tools. As such, this might be more complicated than something like Adobe Flash Builder.
@@ -29,7 +29,6 @@ This guide will help you make your first PlayFab API call using ActionScript.
     - Install the Adobe Air SDK
       - [https://www.adobe.com/devnet/air/air-sdk-download.html](https://www.adobe.com/devnet/air/air-sdk-download.html)
       - Remember your installation path `{AirSdkLocation}`, as you will use it below.
-
     - Install the Adobe Flex SDK
       - [https://www.adobe.com/devnet/flex/flex-sdk-download.html](https://www.adobe.com/devnet/flex/flex-sdk-download.html)
       - Remember your installation path `{FlexSdkLocation}`, and modify your system environment variables:
@@ -42,14 +41,14 @@ This guide will help you make your first PlayFab API call using ActionScript.
       - Open two Explorer windows: **{AirSdkLocation}** and **{FlexSdkLocation}**.
       - Select all in **{AirSdkLocation}** folder.
       - Paste into the **{FlexSdkLocation}** folder.
-      - This will replace some existing files, and that's correct.
+
+
+    - This will replace some existing files, and that's correct.
 
     - Download the PlayFab ActionScriptSDK
       - [ActionScript SDK](https://api.playfab.com/downloads/actionscript)
-      - Download the zip file, and extract it to a location of your choice **{PlayFabAs3Location}**.
-
-    - Updates to environment variables sometimes require a computer restart.
-
+  - Download the zip file, and extract it to a location of your choice **{PlayFabAs3Location}**.
+  - Updates to environment variables sometimes require a computer restart.
   - Create a new empty folder for your GettingStartedAs3 Project
     - Create a new empty text file called GettingStarted.as.
     - Create a new empty text file called **GettingStarted.xml**.
@@ -64,11 +63,12 @@ This guide will help you make your first PlayFab API call using ActionScript.
     - Open a command window in your project folder
       - Hold shift and right-click in the empty white space of the Explorer window
 
+
         ![Install PlayFab SDK](media/cmd-exe.png)
 
       - In the new console window enter this command:
-        - `mxmlc -dump-config flexcfg.xml`
 
+         `mxmlc -dump-config flexcfg.xml`
       - This should create a new text file called **flexcfg.xml**.
     - We will modify all these project files in the next section.
 
@@ -141,6 +141,7 @@ package
 ```
 
 In your favorite text-editor, update the contents of `GettingStarted.xml` as shown below.
+
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -222,7 +223,7 @@ This optional last section describes every file in the ActionScript3 Project in 
     - We only made trivial changes from the default setting.
 
   - GettingStarted.as
-    - This file contains the only code relevant to the PlayFab SDK
+    - This file contains the only code relevant to the PlayFab SDK.
     - textField:
       - These lines are just controlling the GUI output, displaying the results of the API call.
 
