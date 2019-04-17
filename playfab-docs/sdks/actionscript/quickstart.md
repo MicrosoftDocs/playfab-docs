@@ -42,7 +42,6 @@ This guide will help you make your first PlayFab API call using ActionScript.
       - Select all in **{AirSdkLocation}** folder.
       - Paste into the **{FlexSdkLocation}** folder.
 
-
     - This will replace some existing files, and that's correct.
 
     - Download the PlayFab ActionScriptSDK
@@ -63,12 +62,12 @@ This guide will help you make your first PlayFab API call using ActionScript.
     - Open a command window in your project folder
       - Hold shift and right-click in the empty white space of the Explorer window
 
-
         ![Install PlayFab SDK](media/cmd-exe.png)
 
       - In the new console window enter this command:
 
          `mxmlc -dump-config flexcfg.xml`
+
       - This should create a new text file called **flexcfg.xml**.
     - We will modify all these project files in the next section.
 
@@ -141,7 +140,6 @@ package
 ```
 
 In your favorite text-editor, update the contents of `GettingStarted.xml` as shown below.
-
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>

@@ -20,11 +20,8 @@ This collection of examples shows familiar patterns and mechanics implemented us
 
 ### Player Retention
 
-
 - [Daily Prize Wheel](https://github.com/PlayFab/PlayFab-Samples/tree/master/Recipes/PrizeWheel) - Give players a randomized gift every day based on the values on a "Prize Wheel".
-
 - [Progressive Reward System](https://github.com/PlayFab/PlayFab-Samples/tree/master/Recipes/ProgressiveRewards) - Players that sign in consecutively over several days are granted an item depending on how long their login streak is.
-
 
 ### User Acquisition
 
@@ -33,9 +30,7 @@ This collection of examples shows familiar patterns and mechanics implemented us
 
 ### Monetization
 
-
 - [Regenerating Currency Mechanic](https://github.com/PlayFab/PlayFab-Samples/tree/master/Recipes/RegeneratingCurrency) - A play-limiting mechanic (similar to Candy Crush lives) that slowly refills to a maximum over time.
-
 
 ## Samples
 
