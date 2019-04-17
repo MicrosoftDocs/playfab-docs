@@ -34,6 +34,7 @@ Adds a new user with a organizational account (i.e. AAD):
 ```cmd
 .add follower database {DATABASENAME} admins/users ('aaduser=imikeoein@fabrikam.com;TENANTID'')
 ```
+
 > [!TIP]
 > You can easily select the database name for copy and paste as shown below.  
 > ![Select Database Name](../../data/playerdata/media/tutorials/dw-tutorial-select-database.png)

@@ -14,17 +14,17 @@ ms.localizationpriority: medium
 
 Getting to know your players and their behavioral patterns in your game is critical to increasing retention, engagement and monetization.
 
-The goal of this document is to help bring you up to speed on how PlayFab empowers your business intelligence, and to quickly dive you into the tool sets that we provide.
+The goal of this document is to help bring you up to speed on how PlayFab empowers your business intelligence, and to quickly immerse you in the tool sets that we provide.
 
-In general, you can analyze what players are doing in your game by following their event patterns. In PlayFab, these come from **PlayStream** events.
+In general, you can analyze what players are doing in your game by following their event patterns. In PlayFab, these come from PlayStream events.
 
-**PlayStream** is an event processing system that unifies the entire data flow from your game into a single event stream. You can then visualize and take actions on that stream in real time.
+PlayStream is an event processing system that unifies the entire data flow from your game into a single event stream. You can then visualize and take actions on that stream in real time.
 
 <img alt="Analytic Dashboards" src="images/analytics-dashboard.png" width="500" />
 
-## Create a PlayFab Account
+## Create a PlayFab account
 
-Before you can call any PlayFab **API**, you must have a [PlayFab developer account](https://developer.playfab.com/en-us/sign-up). If you already have a PlayFab account, you can skip this step.
+Before you can call any PlayFab API, you must have a [PlayFab developer account](https://developer.playfab.com/en-us/sign-up). If you already have a PlayFab account, you can skip this step.
 
 ![PlayFab - Create your account](images/playfab-create-account.png)
 
@@ -35,7 +35,7 @@ Since PlayFab does not know the name of your game studio or the title of your ga
 **Unnamed Studio** is the default name of your game studio, and **Unnamed Title** is the default **Title** of your game, as shown in the following screenshot. You can rename these at any time.
 
 > [!NOTE]
-> The **Title ID** is unique to your game, which we refer to as a title. You will use this value when you make **PlayFab API** calls (your **Title ID** will *not* be **BCFE**).
+> The **Title ID** is unique to your game, which we refer to as a title. You will use this value when you make PlayFab API calls (your **Title ID** will *not* be **BCFE**).
 
 ![PlayFab - Create a new game](images/playfab-create-new-game.png)
 
@@ -45,11 +45,11 @@ The current **Title** and **User** can be found in the top right. An **Admin** m
 
 ## Open the Game Manager for your title
 
-Before installing your **SDK**, select any title, and the Game Manager opens it. Take the time to familiarize yourself with the various sections in the Game Manager dashboard.
+Before installing your SDK, select any title, and the Game Manager opens it. Take the time to familiarize yourself with the various sections in the Game Manager dashboard.
 
 For a more detailed overview, visit the [Game Manager quickstart](../features/config/gamemanager/quickstart.md).
 
-The PlayFab Game Manager allows you to do whatever you need to with your game title. Once you have a grasp on the aspects of the Game Manager, install the **SDK** so you can start using **APIs**.
+The PlayFab Game Manager allows you to do whatever you need to with your game title. Once you have a grasp on the aspects of the Game Manager, install the SDK so you can start using APIs.
 
 ![PlayFab - Unicorn Battle - Admin Menu](images/playfab-unicorn-battle-admin-menu.png)
 
@@ -73,11 +73,13 @@ Here are some resources to get you started with the Event Viewer:
 
 ## Getting to know your players outside of Game Manager
 
-While PlayFab provides some awesome tools for getting to know your players, sometimes you may need a bit more customization.
+While PlayFab provides some awesome tools for getting to know your players, sometimes you may need a *bit more* customization.
 
-PlayFab has a number of ways to reach your data outside of our Game Manager tool set. For this we offer several ways to export data into various systems. Here are a few great ways to access your data:
+PlayFab has a number of ways to reach your data outside of our Game Manager tool set. For this, we offer several ways to export data into various systems.
 
-- [S3 Event Archiving](../features/analytics/metrics/s3-event-archiving.md) – PlayFab allows you to archive the entire event flow by using an **Amazon S3** bucket. This guide shows step-by-step how to configure event archiving from scratch.
-- **Snowflake** – See the entire event flow in **Snowflake**, for deep analytics query power.
-- [Webhooks](../features/analytics/metrics/webhooks.md) - In complex systems you may want to provide additional event handling on your custom server. PlayFab offers **Webhooks** to achieve this. Whenever a new event is detected, it can be forwarded to your server by making a **POST** request to your custom web endpoint, and the event data is passed as the **JSON** body of the request.
+Here are a few great ways to access your data:
+
+- [S3 Event Archiving](../features/analytics/metrics/s3-event-archiving.md) – PlayFab allows you to archive the entire event flow by using an Amazon S3 bucket. This guide shows step-by-step how to configure event archiving from scratch.
+- **Snowflake** – See the entire event flow in Snowflake, for deep analytics query power.
+- [Webhooks](../features/analytics/metrics/webhooks.md) - In complex systems you may want to provide additional event handling on your custom server. PlayFab offers Webhooks to achieve this. Whenever a new event is detected, it can be forwarded to your server by making a POST request to your custom web endpoint, and the event data is passed as the JSON body of the request.
 - **PlayFab Insights** (preview) - PlayFab Insights is a premium PlayFab offering that provides a central repository for your data, whether it's generated from our services or imported from an external source.
