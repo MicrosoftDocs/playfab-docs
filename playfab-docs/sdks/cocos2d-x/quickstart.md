@@ -27,12 +27,12 @@ This guide will help you make your first PlayFab API call in the Cocos2d-x engin
       - [https://cocos2d-x.org/docs/installation/Windows/](https://cocos2d-x.org/docs/installation/Windows/)
       - [https://cocos2d-x.org/docs/editors_and_tools/cocosCLTool/](https://cocos2d-x.org/docs/editors_and_tools/cocosCLTool/)
       - Note the [Cocos Prerequisites](https://docs.cocos2d-x.org/cocos2d-x/en/installation/prerequisites.html)
-      - This guide also requires Visual Studio 2013 or 2015
+      - This guide also requires Visual Studio 2013 or 2015.
 
   - Once you have Cocos2d-x configured, create a project using the Cocos CLI:
     - Navigate to a location where you wish to store your Cocos project.
     - Open a command window in your parent folder (Cocos CLI will create the actual project directory).
-      - Hold shift and right-click in the empty-white-space of the Explorer window.
+      - Hold down **Shift** and right-click in the empty-white-space of the Explorer window.
 
         ![Install PlayFab SDK](media/cmd-exe2.png)
 
@@ -66,7 +66,7 @@ This guide will help you make your first PlayFab API call in the Cocos2d-x engin
   - Open a Windows Explorer window at **{CocosGettingStarted}/Classes**.
     - Select all files in **{CocosGettingStarted}/Classes**, EXCEPT **AppDelegate.h, AppDelegate.cpp, HelloWorldScene.h, HelloWorldScene.cpp**.
     - Drag and drop all of those files from Explorer, onto the Visual Studio Solution **CocosGettingStarted/src** folder we found above.
-      - If you experience problems, you can drag and drop each file one at a time, just be careful and get all of them.
+      - If you experience problems, you can drag-and-drop each file one at a time, just be careful and get all of them.
       - You should see the files shown below in your VS project.
 
         ![Install PlayFab SDK](media/sln-src.png)
@@ -82,15 +82,15 @@ This guide will help you make your first PlayFab API call in the Cocos2d-x engin
 $(ProjectDir)..\cocos2d\external\zlib\include;$(ProjectDir)..\cocos2d\external\curl\include\win32;$(EngineRoot)cocos\audio\include;$(EngineRoot)external;$(EngineRoot)external\chipmunk\include\chipmunk;$(EngineRoot)extensions;..\Classes;..;%(AdditionalIncludeDirectories);$(_COCOS_HEADER_WIN32_BEGIN);$(_COCOS_HEADER_WIN32_END);..\cocos2d
 ```
 
-  - We are adding curl and zlib, which libraries that come with Cocos, but not enabled by default.
-  - Your CocosGettingStarted project should now compile (and even run), but we are not yet making any PlayFab API calls.
-    - Installation is now complete!
+- We are adding curl and zlib, which are libraries that come with Cocos, but are not enabled by default.
+- Your CocosGettingStarted project should now compile (and even run), but we are not yet making any PlayFab API calls.
+  - Installation is now complete!
 
 ## Set up your first API call
 
 This guide will provide the minimum steps to make your first PlayFab API call. Confirmation will be visible in the app.
 
-- In Visual Studio, inside of the **Solution/CocosGettingStarted/src** folder, Open `HelloWorldScene.h` and replace the contents with this:
+- In Visual Studio, inside of the **Solution/CocosGettingStarted/src** folder, Open `HelloWorldScene.h` and replace the contents with those shown below.
 
 ```cpp
 #ifndef __HELLOWORLD_SCENE_H__
@@ -118,7 +118,7 @@ public:
 #endif // __HELLOWORLD_SCENE_H__
 ```
 
-- And immediately next to that, open `HelloWorldScene.cpp` and replace the contents with this:
+- And immediately next to that, open `HelloWorldScene.cpp` and replace the contents with those shown below.
 
 ```cpp
 #include "HelloWorldScene.h"
@@ -202,7 +202,7 @@ void HelloWorld::OnLoginFail(const PlayFab::PlayFabError& error, void* customDat
 
 ## Finish and Execute
 
-- Build and Execute your Cocos Project
+- Build and Execute your Cocos Project.
   - **Dropdowns -> Debug -> Start Debugging**
     - This may prompt you to build.
     - Select **yes**.
