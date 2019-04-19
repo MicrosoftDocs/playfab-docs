@@ -121,11 +121,13 @@ public static class Program
 ## Finish and Execute
 
 - When you execute this program, you should get the following console output:
-`Congratulations, you made your first successful API call!`
 
-- You're finished! You can press any key to close.
+```console
+Congratulations, you made your first successful API call!
+Done! Press any key to close.
+```
 
-- At this point, you can start making other API calls, and building your game.
+- At this point, you can start making other api calls, and building your game.
 - For a list of all available client API calls, see our [PlayFab API References](../../api-references/index.md) documentation.
 
 - To build Admin utilities, see the alternate source files in the PlayFab CSharpSdk zip file:
