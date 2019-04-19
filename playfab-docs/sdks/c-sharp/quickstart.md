@@ -122,9 +122,9 @@ public static class Program
 
 - When you execute this program, you should get the following console output:
 
-```console
+```output
 Congratulations, you made your first successful API call!
-Done! Press any key to close.
+Done! Press any key to close
 ```
 
 - At this point, you can start making other api calls, and building your game.
