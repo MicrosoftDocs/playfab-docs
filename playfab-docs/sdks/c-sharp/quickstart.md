@@ -127,7 +127,7 @@ Congratulations, you made your first successful API call!
 Done! Press any key to close
 ```
 
-- At this point, you can start making other api calls, and building your game.
+- At this point, you can start making other API calls, and building your game.
 - For a list of all available client API calls, see our [PlayFab API References](../../api-references/index.md) documentation.
 
 - To build Admin utilities, see the alternate source files in the PlayFab CSharpSdk zip file:
@@ -145,7 +145,7 @@ This optional last section describes each part of Program.cs in detail.
     - Main kicks off a login, and enters a main-loop.
     - OnLoginComplete is an asynchronous handler, executed once the login call completes (You can also use Lambda functions).
 
-Inside of Main:
+### Inside of Main
 
 - `PlayFabSettings.TitleId = "xxxx";`
   - Every PlayFab developer creates a title in Game Manager. When you publish your game, you must code that titleId into your game. This lets the client know how to access the correct data within PlayFab. For now, just consider it a mandatory step that makes PlayFab work.
@@ -167,7 +167,7 @@ Inside of Main:
   - Running in a native C# environment means you have to code your own main loop.
   - This serves the purpose in the most trivial possible way.
 
-Inside of OnLoginComplete:
+### Inside of OnLoginComplete
 
 - `var apiResult = taskResult.Result.Result;`
   - When successful, the apiResult object of many API callbacks will contain the requested information.
