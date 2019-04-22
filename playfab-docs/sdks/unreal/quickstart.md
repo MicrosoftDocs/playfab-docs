@@ -20,11 +20,11 @@ Before continuing, make sure you have completed [Getting started for developers]
 
 - [Unreal project setup](#unreal-project-setup)  
 - [Set up your first Blueprint call](#set-up-your-first-blueprint-call)  
-    - [Finish and execute with Blueprint](#finish-and-execute-with-blueprint) 
-- [Set up your first C++ call](#set-up-your-first-c-call)   
-    - [Finish and Execute with C++](#finish-and-execute-with-c)
-- [Deconstruct the Blueprint example](#deconstruct-the-blueprint-example)   
-- [Deconstruct the C++ code example](#deconstruct-the-c-code-example)   
+  - [Finish and execute with Blueprint](#finish-and-execute-with-blueprint)
+- [Set up your first C++ call](#set-up-your-first-c-call)
+  - [Finish and Execute with C++](#finish-and-execute-with-c)
+- [Deconstruct the Blueprint example](#deconstruct-the-blueprint-example)
+- [Deconstruct the C++ code example](#deconstruct-the-c-code-example)
 - [Upgrading to the Unreal Marketplace plugin](#upgrading-to-the-unreal-marketplace-plugin)
 
 ## Unreal project setup
@@ -45,7 +45,7 @@ OS: This guide is written for Windows 10, however, steps should be similar for M
 
 6. Click "+Add Versions."
 
-7. Select the most recent version of the [SDK](https://www.unrealengine.com/marketplace/en-US/playfab-sdk). 
+7. Select the most recent version of the [SDK](https://www.unrealengine.com/marketplace/en-US/playfab-sdk).
 
 ### Install the PlayFab Plugin into your engine
 
@@ -53,27 +53,25 @@ Use the following steps to ensure you've properly installed the PlayFab Plugin.
 
 1. In the Epic Games launcher, go to the **Marketplace** and Search for the **PlayFab SDK**.
 
-    ![Unreal Engine Marketplace](media/uemk-001.jpg)
+  ![Unreal Engine Marketplace](media/uemk-001.jpg)
 
 2. Select the **PlayFab SDK**, then **Free**, and **Install to Engine**.
 
-    ![Install to engine](media/uemk-install-to-engine.png) 
+  ![Install to engine](media/uemk-install-to-engine.png)
 
 3. Confirm your version and select **Install**.
 
-    ![Pick version again](media/uemk-version-again.png) 
+  ![Pick version again](media/uemk-version-again.png) 
 
 4. Select the **Launch** button, and run Unreal Engine.
-
 5. Select all the options as seen here:  **New Project** tab, **C++** sub-tab, **No Starter Content**.
 
-      ![Create project settings](media/uemk-create-project-settings.png) 
+  ![Create project settings](media/uemk-create-project-settings.png) 
 
 6. Now, select **Create Project** with these options.
-
 7. Enable the PlayFab Plugin.
 
-    ![Enable plugin](media/uemk-enable-plugin.png) 
+  ![Enable plugin](media/uemk-enable-plugin.png) 
 
 PlayFab Installation Complete!
 
@@ -215,7 +213,7 @@ Earlier, you created a level with a LoginActor entity already placed in the worl
 
 `LogTemp: Congratulations, you made your first successful API call!`
 
-    ![C++ log verify](media/ue-log-verify.png)
+  ![C++ log verify](media/ue-log-verify.png)
 
 3. Press any key to close.
 
@@ -240,11 +238,12 @@ Every API method requires a unique request object, with a mix of optional and ma
   
 **Login with Custom ID**  
 This begins the async request to "LoginWithCustomID"
-  - For login, most developers will want to use a more appropriate login method. See the [PlayFab Login documentation](xref:titleid.playfabapi.com.client.authentication) for a list of all login methods, and input parameters. Common choices are:
-      - [LoginWithAndroidDeviceID](xref:titleid.playfabapi.com.client.authentication.loginwithandroiddeviceid)
-      - [LoginWithIOSDeviceID](xref:titleid.playfabapi.com.client.authentication.loginwithiosdeviceid)
-      - [LoginWithEmailAddress](xref:titleid.playfabapi.com.client.authentication.loginwithemailaddress)
-       
+
+- For login, most developers will want to use a more appropriate login method. See the [PlayFab Login documentation](xref:titleid.playfabapi.com.client.authentication) for a list of all login methods, and input parameters. Common choices are:
+  - [LoginWithAndroidDeviceID](xref:titleid.playfabapi.com.client.authentication.loginwithandroiddeviceid)
+    - [LoginWithIOSDeviceID](xref:titleid.playfabapi.com.client.authentication.loginwithiosdeviceid)
+    - [LoginWithEmailAddress](xref:titleid.playfabapi.com.client.authentication.loginwithemailaddress)
+
 **The left-side blueprint pins**  
 
 - Blue: Request - For every PlayFab API blueprint, this must always receive from a paired Make Request blueprint node
@@ -253,20 +252,20 @@ This begins the async request to "LoginWithCustomID"
 
 - Cyan: Custom Data - Custom Data is just a relay. That object is passed un-touched into the red custom events. This isn't terribly useful for blueprints, but it's very useful when invoking API calls directly from C++ (Advanced topic: won't be covered in this guide).
 
-**The right-side blueprint pins**  
+**The right-side blueprint pins**
 
 - White: the unlabeled first exec pin is executed immediately as the API call is queued (response does not exist yet) - Do not use this pin!
 
 - White: the second exec pin is labeled "On PlayFab Response," and is executed after the async remote call has returned. Use this to trigger logic that needs to wait or use the Response.
 
 - Blue: Response  
-This is a JSON representation of the result.  
-    - The OnSuccess pin provides a properly typed object with the correct fields pre-built into the blueprint.
-        - This JSON field is an older pin which is only maintained for legacy.
-    - Cyan: Custom Data - Same as Custom Data above.
-    - Maroon: Successful
-      - Legacy boolean which indicates how to safely unpack the legacy Response pin.
-      - Again, it's better to use the red OnSuccess and OnFailure pins.
+  - This is a JSON representation of the result.  
+- The OnSuccess pin provides a properly typed object with the correct fields pre-built into the blueprint.
+  - This JSON field is an older pin which is only maintained for legacy.
+- Cyan: Custom Data - Same as Custom Data above.
+- Maroon: Successful
+  - Legacy boolean which indicates how to safely unpack the legacy Response pin.
+  - Again, it's better to use the red OnSuccess and OnFailure pins.
   
 **OnLoginSuccess and OnLoginFail**  
 The names of these modules are optional, and should be different for every API call.
@@ -283,7 +282,7 @@ If you drag the Result pin from OnSuccess, it'll create a Break-Result blueprint
 **The OnFailure/Error pin**
 
 - Always connects to a Break PlayFabError blueprint.
-- ontains some information about why your API call failed
+- Contains some information about why your API call failed
 
 **Why API calls fail (In order of likelihood)**
 
