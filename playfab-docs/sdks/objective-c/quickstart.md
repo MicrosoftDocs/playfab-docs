@@ -1,18 +1,18 @@
 ---
-title: Objective-C Quickstart
+title: Objective-C quickstart
 author: v-thopra
 description: This guide will help you make your first PlayFab API call using Objective-C.
 ms.author: v-thopra
 ms.date: 06/11/2018
 ms.topic: article
 ms.prod: playfab
-keywords: playfab, objective-c, playfab objecctive-c sdk, native osx, ios development
+keywords: playfab, objective-c, playfab objective-c sdk, native osx, ios development
 ms.localizationpriority: medium
 ---
 
-# Objective-C Quickstart
+# Objective-C quickstart
 
-This guide will help you make your first PlayFab API call using Objective-C by showing you how to get started with our [Objective-C SDK for native OSX & iOS development](https://github.com/PlayFab/Objective_C_SDK)
+This guide will help you make your first PlayFab API call using Objective-C, by showing you how to get started with our [Objective-C SDK for native OSX & iOS development](https://github.com/PlayFab/Objective_C_SDK)
 
 > [!Note]
 > This SDK is currently in Beta, so please let us know if you run into any issues.
@@ -36,7 +36,7 @@ Set your PlayFab TitleId in PlayFabSettings.m, on the line:
 
 ## Set up your first API call
 
-The following code example shows you how to make a PlayFab API request and receive the response.
+The following code example shows you how to make a PlayFab API request, and receive the response.
 
 ```objc
 //EXAMPLE: Login with custom id request:
@@ -45,10 +45,10 @@ The following code example shows you how to make a PlayFab API request and recei
   LoginWithCustomIDRequest* login_request = [LoginWithCustomIDRequest new];
   login_request.CustomId = [[[UIDevice currentDevice] identifierForVendor] UUIDString]; //use the identifier for vendor as our custom ID.
   login_request.CreateAccount = true; //creates a new account if no existing one
-    
+
 //Make each call to [PlayFabClientAPI GetInstance], the first time you do this, an instance will be created and then used.
   [[PlayFabClientAPI GetInstance] LoginWithCustomID:login_request
-      
+
       success:^(LoginResult* result, NSObject* userData) {
         //This block will run when we receive successful response, inspect the result class for pertinent info.
         NSLog(@"error %@",result.PlayFabId);
