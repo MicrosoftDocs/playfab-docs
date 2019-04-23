@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Python quickstart
 
-This guide will help you make your first API call in Python 3. A native Python project can be used a few ways:
+This quickstart was designed to assist you in making your first API call in Python 3. A native Python project can be used a few ways:
 
 - Stand-alone console Admin tools for maintaining your game.
   - The Python Sdk works great for a stand-alone Python program.
@@ -28,13 +28,13 @@ If you have any issues, let us know on the [Forums](https://community.playfab.co
 ## Python project setup
 
 - Make sure [Python 3](https://www.python.org/downloads/) is installed on your system.
-- Install the [PlayFab Package](https://pypi.org/project/playfab/) using the below command.
+- Install the [PlayFab Package](https://pypi.org/project/playfab/) using the command shown below.
 
 ```cmd
 pip install playfab
 ```
 
-- If `pip` is not in your path, use the below command instead
+- If `pip` is not in your path, use the command shown below instead.
 
 ```cmd
 python -m pip install playfab
@@ -46,7 +46,7 @@ python -m pip install playfab
 
 This guide will provide the minimum steps to make your first PlayFab API call, without any GUI or on-screen feedback. Confirmation will be done with a console print statement.
 
-- Replace the contents of playfab_test.py with the contents shown below.
+- Replace the contents of `playfab_test.py` with the contents shown below.
 
 ```python
 from playfab import PlayFabClientAPI, PlayFabSettings

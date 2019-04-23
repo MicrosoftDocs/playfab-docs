@@ -16,16 +16,16 @@ This guide will help you make your first API call in NodeJS.
 
 ## Node project setup
 
-- OS
+### OS
 
 This guide is written for Windows 10, however it should also work fine with a Mac.
 
-- Download and install Node.js
+### Download and install Node.js
   - [https://nodejs.org/en/download/](https://nodejs.org/en/download/)
   - Install, and verify that Node is in your PATH environment variable.
     - If you used the installer, it's probably set for you, and it's probably set to the default location: C:/Program Files (x86)/nodejs/
 
-- New Project Setup
+### New Project Setup
   - Create a new folder for your project {NodeProjLocation}:
     - GettingStarted.js
 
@@ -93,7 +93,8 @@ DoExampleLoginWithCustomID();
 ## Finish and execute
 
 - In the console window we opened during installation, run the command:
-  - node GettingStarted.js
+
+    `node GettingStarted.js`
 
 - You should see the following text as a result:
   - Congratulations, you made your first successful API call!
@@ -105,7 +106,7 @@ DoExampleLoginWithCustomID();
 
 ## Deconstruct the code
 
-- Line by line breakdown for GettingStarted.js
+- Line by line breakdown for `GettingStarted.js`
   - `PlayFab.settings.titleId = "xxxx";`
     - Every PlayFab developer creates a title in Game Manager. When you publish your game, you must code that titleId into your game. This lets the client know how to access the correct data within PlayFab. For most users, just consider it a mandatory step that makes PlayFab work.
 

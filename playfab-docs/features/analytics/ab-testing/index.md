@@ -33,17 +33,21 @@ Here, bucket “C”, despite having the highest price, ended up generating the 
 
 We are building support for A/B testing on top of our player segmentation feature of PlayStream. Each test bucket is implemented as a player segment. So if you are running an A/B test called “Price Test” with two buckets, “A” and “B”, then we will create two new segments, “Price Test - A” and “Price Test - B”. All players will be automatically assigned to one of these two segments, based on the bucket weights you selected.
 
-Today, the only feature in PlayFab that can directly show different players different results based on segment is the [targeted store override feature](https://blog.playfab.com/blog/introducing-targeted-stores) of the in-game economy. Effectively, this means the only thing you can A/B test today are stores (including both prices, and collection of items). However, we will soon be adding the ability for other PlayFab features to target different data to different players, such as title data.
+Today, the only feature in PlayFab that can directly show different players different results based on segment is the [targeted store override feature](https://blog.playfab.com/blog/introducing-targeted-stores) of the in-game economy. Effectively, this means the only thing you can A/B test today are stores (including both prices, and collection of items).
 
-Once a test is turned on, we will start generating a daily report for basic **KPIs** (**Key Performance Indicators**) based on bucket. This will allow you to determine the effectiveness of your tests. Later, we will make it possible to do more detailed analysis using an external analytics provider.
+However, we will soon be adding the ability for other PlayFab features to target different data to different players, such as title data.
+
+Once a test is turned on, we will start generating a daily report for basic Key Performance Indicators (KPIs), based on buckets. This will allow you to determine the effectiveness of your tests. Later, we will make it possible to do more detailed analysis using an external analytics provider.
 
 ## Creating your first A/B test
 
-After signing into the **PlayFab Game Manager**, click on the **PlayStream** tab, and then on the **A/B testing** sub-tab.
+After signing into the **PlayFab Game Manager**, select the **PlayStream** tab, and then on the **A/B testing** sub-tab.
 
 ![Game Manager - PlayStream - A/B Testing](media/tutorials/game-manager-playstream-ab-testing.png)  
 
-From here, you can create your first A/B test. At test creation time, you’ll need to provide an **A/B test name**, the **Number of buckets**, and a **Name** and **Percentage** (weight) for each bucket. The weights must add up to 100, and the names must be unique. The corresponding segments are then automatically named *test name* - *bucket name*. For example, *Gem Price Test - Control*.
+From here, you can create your first A/B test. At test creation time, you’ll need to provide an **A/B test name**, the **Number of buckets**, and a **Name** and **Percentage** (weight) for each bucket.
+
+The weights must add up to 100, and the names must be unique. The corresponding segments are then automatically named *test name* - *bucket name*. For example, *Gem Price Test - Control*.
 
 ![Game Manager - PlayStream - A/B Testing - New A/B test](media/tutorials/game-manager-playstream-ab-testing-new-ab-test.png)  
 
@@ -67,9 +71,9 @@ Once you're confident about the results of your test, you can then reconfigure y
 
 ## Future Work on A/B Testing
 
-Today, Stores are the only PlayFab feature area that have segment overrides. We have plans for overriding Title Data by segments, as well as other areas. This will look much like store overrides, where title-wide variables will be configurable based on the segment of the user requesting title data. This will allow for tuning a much wider variety of features for your title.
+Today, Stores are the only PlayFab feature area that have segment overrides. We have plans for overriding Title Data by segments, as well as other areas. This will look much like store overrides, where title-wide variables will be configurable, based on the segment of the user requesting title data. This will allow for tuning a much wider variety of features for your title.
 
-We also have plans to allow you to run A/B tests within an existing Segment, instead of for all players. So, for example, you could try running an A/B test on pricing that applies only to members of the VIP segment.
+We also have plans to allow you to run A/B tests within an existing segment, instead of for all players. So, for example, you could try running an A/B test on pricing, that applies only to members of the VIP segment.
 
 ## Links
 

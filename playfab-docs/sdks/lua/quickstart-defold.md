@@ -18,14 +18,14 @@ This guide will help you make your first PlayFab API call using Defold.
 
 - OS: This guide is written for Windows 10, however it should also work fine with a Mac.
 - Download Defold
-  - Create an account, or log in at [https://www.defold.com/](https://www.defold.com/) (Uses Google O-Auth)
+  - Create an account, or log in at [https://www.defold.com/](https://www.defold.com/) (Uses Google O-Auth).
   - Download and install Defold.
     - [https://d.defold.com/stable/](https://d.defold.com/stable/)
 
-  - Create a new project on the Defold Dashboard.
+  - Create a new project on the Defold dashboard.
     - After logging in, you should find yourself at the Defold dashboard.
     - If you have not completed the Defold "Getting Started Tutorial", you should do that now.
-    - Finally create a new project in the Defold web Dashboard.
+    - Finally create a new project in the Defold web dashboard.
 
       ![Create new Defold project](media/defold-add-project.png)
 
