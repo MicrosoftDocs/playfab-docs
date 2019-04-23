@@ -117,7 +117,7 @@ To configure the task:
 - In addition, verify that **All Players**  is selected under **Segment**.
 - Add a new **Action (3)**.
 - Select **Execute CloudScript** under **Type (4)**.
-- Then select the **PopulateLeaderboard** handler **(5)** under **Cloud Script Function**.
+- Then select the **PopulateLeaderboard** handler **(5)** under **CloudScript Function**.
 - Finally, select the **Save and Run** button **(6)**.
 
 ![Game Manager - Configure Task](media/tutorials/game-manager-configure-task.png)  

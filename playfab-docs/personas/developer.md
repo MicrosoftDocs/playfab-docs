@@ -6,7 +6,7 @@ ms.author: mawillia
 ms.date: 11/16/2018
 ms.topic: article
 ms.prod: playfab
-keywords: playfab, authentication, developer persona, game developer, catalogs, entities, groups, automation, liveops, player data, cloud script, playfab features, mobile login, social login
+keywords: playfab, authentication, developer persona, game developer, catalogs, entities, groups, automation, liveops, player data, cloudscript, playfab features, mobile login, social login
 ms.localizationpriority: medium
 ---
 
