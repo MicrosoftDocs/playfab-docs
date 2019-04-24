@@ -26,13 +26,13 @@ App Center provides tools to help you build, test, deploy and monitor mobile and
 
 ## Prerequisites
 
-* You will need a PlayFab Account.
+- You will need a PlayFab Account.
 
-* You will need an App Center Account.
+- You will need an App Center Account.
 
-* You will need to have the App Center SDK installed in your game.
+- You will need to have the App Center SDK installed in your game.
 
-* Private Preview enabled for your title (email [helloplayfab@microsoft.com](mailto:helloplayfab@microsoft.com)) to get access for your title.
+- Private Preview enabled for your title (email [helloplayfab@microsoft.com](mailto:helloplayfab@microsoft.com)) to get access for your title.
 
 ## Getting started
 
@@ -48,11 +48,14 @@ Select the install button on the **App Center Add-On** page. You should see the 
 
 ![navigate to addons page image](media/addon-installed.png)
 
-Now you need to link your PlayFab title to your App Center titles. To do this, select **Go to App Center**.
+Now you need to link your PlayFab title to your App Center titles.
 
-This will ask you to authenticate for AppCenter, and will provide you with a list of titles you can select and link to your PlayFab title. If you have more iOS and Android App Center titles, be sure to select both of them to get your diagnostic information for both titles.
+- To do this, select **Go to App Center**.
 
-Once you have completed the above steps select the **Save Settings** button.
+- You will be asked to authenticate for AppCenter, and will be provided with a list of titles you can select and link to your PlayFab title.
+- If you have more iOS and Android App Center titles, be sure to select *both of them* to get your diagnostic information for both titles.
+
+- Once you have completed the above steps, select the **Save Settings** button.
 
 Your integration is now enabled. If you navigate back to the **Diagnostics** tab, you should see your crash data enabled.
 

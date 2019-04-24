@@ -14,24 +14,24 @@ ms.localizationpriority: medium
 
 There are two primary ways to explore your metrics from PlayFab Game Manager:
 
-**Trends** - A collection of graphs visualizing performance over time.
+1. **Trends** - A collection of graphs visualizing performance over time.
 
-**Reports** - Data tables comparing. Covered in detail in the Reports Section.
+2. **Reports** - Data tables comparing. Covered in detail in the Reports Section.
 
 ## Trends tab
 
 The Trends tab offers an easy way to view and analyze performance across eight key performance indicators:
 
-- MAU
-- DAU
-- New Players
-- Screen Time
-- Screen Frequency
-- Classic Retention
-- Revenue
-- Stickiness
+1. MAU
+2. DAU
+3. New Players
+4. Screen Time
+5. Screen Frequency
+6. Classic Retention
+7. Revenue
+8. Stickiness
 
-The Trends tab is updated once daily at the close of the UTC day. For details on each metric, see Metrics and Terminology. The Trends tab consists of three sections: Filters, the Spark Cards, and the Graphs.
+The Trends tab is updated once daily at the close of the UTC day. For details on each metric, see [Metrics and terminology](metrics-and-terminology.md). The Trends tab consists of three sections: Filters, the Spark Cards, and the Graphs.
 
 ![Trends Tab](media/tutorials/trends-tab.png)
 
@@ -39,11 +39,11 @@ The Trends tab is updated once daily at the close of the UTC day. For details on
 
 At the top, there are three page-level filters that can be applied. Choosing any filter will update all Spark Cards and Graphs to match the current active selection:
 
-**Time:** Choose the time interval to explore, from seven days to six months.
+- **Time:** Choose the time interval to explore, from seven days to six months.
 
-**Platform:** See only data for individual device types such as Android, iPhone, or Windows.
+- **Platform:** See only data for individual device types such as Android, iPhone, or Windows.
 
-**Region:** See only data from a specific geographic region. For a complete list of which countries are grouped under each region, see Regions.
+- **Region:** See only data from a specific geographic region. For a complete list of which countries are grouped under each region, see Regions.
 
 > [!NOTE]
 > Platform and Region filters are not currently supported for Revenue. This will be resolved in a future release.
@@ -60,7 +60,7 @@ The Spark Cards are designed to offer an at-a-glance view of what happened that 
 
 The Graphs provide trend data for each of the six metrics, through that day. In some cases, the drop-down over each graph can be used to toggle the active metric. For example, the Active Players graph can show either DAU or the Rolling 30-Day MAU.  
 
-In the upper right-hand corner of each graph, individual lines can be toggled on and off. Doing so dynamically re-scales the y-axis. Additionally, in the Retention Graph, D1 and D7 can be disabled to emphasize variations in D14 and D30.
+In the upper right-hand corner of each graph, individual lines can be toggled on and off. Doing so dynamically re-scales the y-axis.  Additionally, in the Retention Graph, D1 and D7 can be disabled to emphasize variations in D14 and D30.
 
 Hover over any data point to display the actual value for the selected day. To the right of each graph, supporting metrics offer additional insights such as the average and/or total for the period.
 

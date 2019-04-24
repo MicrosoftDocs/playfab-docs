@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 >
 > Access to this feature is restricted to select titles. If you are interested in trying it, please contact us at [helloplayfab@microsoft.com](mailto:helloplayfab@microsoft.com).
 
-To enable using a dedicated compute and storage cluster, you must provide an account ID for administering databases, and in one of the following formats:
+To enable using a dedicated compute and storage cluster, you must provide an account ID for administering databases in one of the following formats:
 
 1. Organizational account (i.e. AAD ID)
 
@@ -57,8 +57,10 @@ If you want to provision the Insight service with an organizational account, you
 
 ## Microsoft account
 
-A Microsoft account (MSA) is the combination of an email address and a password used to sign in to all Microsoft products and services. If a user uses an email address and password to sign in to these or other services, then the user already has a Microsoft account; however, the user can also sign up for a new one at any time. You can find more information at [account.microsoft.com](https://account.microsoft.com/account).
+A Microsoft account (MSA) is the combination of an email address and a password used to sign in to all Microsoft products and services. If a user uses an email address and password to sign in to these or other services, then the user already has a Microsoft account.
 
-If you don't have an organizational account or a Microsoft account, you can quickly create an organizational account at [signup.live.com](https://signup.live.com):
+However, the user can also sign up for a new one at any time. You can find more information at [account.microsoft.com](https://account.microsoft.com/account).
+
+If you don't have an organizational account or a Microsoft account, you can quickly create an organizational account at [signup.live.com](https://signup.live.com), as shown below.
 
 ![Screenshot of Microsoft account sign up dialog](media/quickstart/dw-quickstart-step6.png)

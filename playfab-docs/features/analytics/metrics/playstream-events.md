@@ -47,10 +47,10 @@ The concept of custom events allows you to post events with an arbitrary type an
 
 Similar to automatic events, custom events are fully reflected through [real-time analytics tools](../../analytics/metrics/real-time-analytics-core-concepts.md). Unlike automatic events, you need a little bit of custom code to post custom events.
 
-Custom events can be classified by entity. A custom event can be bound to a player, character, or title. An event entity reference is specified using these two fields.
+Custom events can be classified by entity. A custom event can be bound to a player, character, or title. An event entity reference is specified using these two fields:
 
-- **EntityType**
-- **EntityID**
+1. **EntityType**
+2. **EntityID**
 
 ### Relevant API Calls
 
@@ -66,7 +66,7 @@ Unfortunately, PlayFab does not provide a corresponding [Automatic Event](#autom
 
 ### Prerequisites
 
-Your player is already logged in. In your code, you have a callback **OnChestOpen**, **LevelID**, and **ChestType** are passed into that callback.
+Your player is already logged in. In your code, you have a callback `OnChestOpen`, `LevelID`, and `ChestType` are passed into that callback.
 
 ### Solution
 
@@ -86,10 +86,10 @@ private void OnChestOpened(string chestType, int levelId) {
 }
 ```
 
-1. The method receives **ChestType** and **LevelId**.
+1. The method receives `ChestType` and `LevelId`.
 2. Use the [WritePlayerEvent](xref:titleid.playfabapi.com.client.analytics.writeplayerevent) API call for posting a custom event bound to a player.
-3. Provide a body, specific for your events and your needs. In this case we provide the **ChestType** and **LevelId** fields.
-4. Provide an event name identifying your custom event. In this case we use the **player_chest_opened** event type name.
+3. Provide a body, specific for your events and your needs. In this case we provide the `ChestType` and `LevelId` fields.
+4. Provide an event name identifying your custom event. In this case we use the `player_chest_opened` event type name.
 
 ### Testing
 

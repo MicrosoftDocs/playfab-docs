@@ -12,27 +12,29 @@ ms.localizationpriority: medium
 
 # Getting started with PlayFab and Snowflake
 
-This tutorial describes how to enable the **Snowflake** add-on from PlayFab, and then provides some starter examples of queries you can do in **Snowflake** to show off the integration.
+This tutorial describes how to enable the Snowflake add-on from PlayFab, and then provides some starter examples of queries you can do in Snowflake to show off the integration.
 
-If you are looking for a high-level description of why **Snowflake** integration with PlayFab is *cool*, you may want to start with our introductory blog post first.
+If you are looking for a high-level description of why Snowflake integration with PlayFab is *cool*, you may want to start with our introductory blog post first.
 
 ## Setting it up
 
-The first step in using **Snowflake** with PlayFab is to create a **Snowflake** account. If you already have a **Snowflake** account, you can skip this step. Otherwise, you can [create a new Snowflake account](https://api.playfab.com/downloads/newSnowflake) for free with a trial period.
+The first step in using Snowflake with PlayFab is to create a Snowflake account. If you already have a Snowflake account, you can skip this step. Otherwise, you can [create a new Snowflake account](https://api.playfab.com/downloads/newSnowflake) for free with a trial period.
 
-- Create a standard account in the US-West region. **Snowflake** provides a 30 day trial period, so you can evaluate **Snowflake** risk-free, though you may need to provide billing information.
+- Create a standard account in the US-West region. Snowflake provides a 30 day trial period, so you can evaluate Snowflake risk-free, though you may need to provide billing information.
 
-- After your **Snowflake** account is set up, you can then enable the **Snowflake** add-on in PlayFab by providing your **Snowflake Account ID**.
+- After your Snowflake account is set up, you can then enable the Snowflake add-on in PlayFab by providing your Snowflake Account ID.
 
-You can find your **Account ID** in the **URL** you are given to log into **Snowflake**. It will look something like: **jw02773**.
+You can find your Account ID in the URL you are given to log into Snowflake. It will look something like: **jw02773**.
 
 ![Game Manager - Add-Ons - Snowflake](media/tutorials/game-manager-add-ons-snowflake.png)  
 
 - After you select the **Install Snowflake** button, the add-on will enter the *pending* state for about a minute.
-- When complete, a *feed* of your data will have been created. The next step is to subscribe to that feed from your **Snowflake Account**.
+- When complete, a *feed* of your data will have been created.
+
+The next step is to subscribe to that feed from your Snowflake account.
 
 - To subscribe, log into your **Snowflake Account**.
-- In a worksheet, execute the **SQL** command shown below with the role **ACCOUNTADMIN**.
+- In a worksheet, execute the SQL command shown below with the role **ACCOUNTADMIN**.
 
 ```sql
 CREATE DATABASE playfab_shared FROM SHARE jr71147.playfab_share
@@ -40,15 +42,15 @@ CREATE DATABASE playfab_shared FROM SHARE jr71147.playfab_share
 
 ![Snowflake - Database - Create](media/tutorials/snowflake-database-create.png)  
 
-That will create a new database in your **Snowflake** account, called **PLAYFAB_SHARED** which is a read-only view of your game's **PlayStream** data from PlayFab.
+That will create a new database in your Snowflake account, called **playfab_shared**, which is a read-only view of your game's PlayStream data from PlayFab.
 
 ![Snowflake - Databases](media/tutorials/snowflake-databases.png)  
 
 ## The PlayFab_Shared database
 
-Let's take a moment to discuss the contents of this database. It has one schema, called **playfab_shared**.
+Let's take a moment to discuss the contents of this **playfab_shared** database.
 
-In this schema, there is *one* view. It is called **playfab_archive_shared**. In this view, you can see all of the events for all of the game titles that are linked to this **Snowflake** account.
+In this schema, there is *one* view. It is called **playfab_archive_shared**. In this view, you can see all of the events for all of the game titles that are linked to this Snowflake account.
 
 ### The playfab_archive_shared view
 
@@ -56,7 +58,7 @@ This view's schema deserves some explanation.
 
 ![Databases PlayFab Archive Shared View](media/tutorials/databases-playfab-archive-shared-view.png)  
 
-The most important **Column** is called **P** (for **Payload**). The type of this column is **OBJECT**, which is **Snowflake's** way of saying JSON.
+The most important **Column** is called **P** (for **Payload**). The type of this column is **OBJECT**, which is Snowflake's way of saying JSON.
 
 > [!NOTE]
 > To understand how this works, refer to later examples, or [their docs on semi-structured data](https://docs.snowflake.net/manuals/sql-reference/data-types-semistructured.html).
@@ -64,11 +66,11 @@ The most important **Column** is called **P** (for **Payload**). The type of thi
 The other **Columns** are effectively for indexing purposes.
 
 > [!NOTE]
-> The **TS Column** is truncated to the hour for more effective indexing. If you need the *exact* time of an event for a query, access the raw timestamp from the payload using **to_timestamp(p:Timestamp)**.
+> The **TS Column** is truncated to the hour for more effective indexing. If you need the *exact* time of an event for a query, access the raw timestamp from the payload using `to_timestamp(p:Timestamp)`.
 
 ### Running your first query
 
-Now that you have verified that the **PLAYFAB_SHARED** database exists, you can run your first query.
+Now that you have verified that the playfab_shared database exists, you can run your first query.
 
 Let's run a simple query to count how many unique players played your game in the last 24 hours (**DAU**).
 
@@ -81,7 +83,7 @@ where event_name = 'player_logged_in' and ts >= dateadd(day, -1, current_date)
 and title_id = '<my title id goes here in all caps>'
 ```
 
-This query may take a few minutes to run, depending on the size of your database instance, and how much data your game contains, but when done you'll see the answer in the results section.
+This query may take a few minutes to run, depending on the size of your database instance, and how much data your game contains.  When it has completed, you'll see the answer in the results section.
 
 ![Snowflake - Database - Query](media/tutorials/snowflake-database-query.png)  
 
@@ -89,7 +91,7 @@ For a more advanced query, examine the raw JSON of the **player_logged_in** even
 
 ![PlayFab - Analytics - Event - JSON](media/tutorials/playfab-analytics-event-json.png)  
 
-Thanks to **Snowflake's** ability to parse any fields of a JSON object, you can access *any* of these fields.
+Thanks to Snowflake's ability to parse any fields of a JSON object, you can access *any* of these fields.
 
 Let's run a query to count how many players are coming from which countries. Enter and run the query shown below in your worksheet.
 
@@ -113,19 +115,19 @@ You can then export these results as a **CSV** file and load them into **Excel**
 
 ### Cross-database querying
 
-So far these examples have used the **PlayFab_Shared** database directly - however, this database is *read only*.
+So far these examples have used the **playfab_shared** database directly - however, this database is *read only*.
 
-You cannot modify this database, or create temp tables, something you will need to do to improve performance. Therefore for any serious work, you should *create your own database*, and reference the **PlayFab_Shared** database with a fully qualified name.
+You cannot modify this database, or create temp tables, something you will need to do to improve performance. Therefore for any serious work, you should *create your own database*, and reference the **playfab_shared** database with a fully qualified name.
 
 That is, **PLAYFAB_SHARED.PLAYFAB_SHARED.PLAYFAB_ARCHIVE_SHARED**.
 
-**Snowflake** is perfectly capable of access tables across databases, you just have to *ask*.
+Snowflake is perfectly capable of access tables across databases, you just have to *ask*.
 
 ### Making schema with views
 
-As we've seen above, one of the *best* parts about **Snowflake** is its ability to parse JSON objects. But it is tiring (and error prone) to access the same values out of payloads with known schema. This is where views come in.
+As we've seen above, one of the *best* parts about Snowflake is its ability to parse JSON objects. But it is tiring (and error prone) to access the same values out of payloads with known schema. This is where views come in.
 
-Views are great here because they act like tables in traditional **SQL** databases, enforcing schema on the data. But it's *way* easier to change a view than to migrate a table.
+Views are great here because they act like tables in traditional SQL databases, enforcing schema on the data. But it's *way* easier to change a view than to migrate a table.
 
 For example, we can create a logins view, based on the PlayFab login event, since that event has a known schema.
 
@@ -158,7 +160,7 @@ When done, you will have a custom view in your database that can be used to acce
 There are a couple things to note:
 
 - First of all, we used some of the fixed **Columns**, like **event_id** and **title_id**.
-- We *also* picked some columns out of **P**, such as **p:Platform**. But properties chosen from inside JSON objects may be JSON objects *themselves*, so we need to tell **Snowflake** what *type* they really are. That's what **to_varchar** is doing.
+- We *also* picked some columns out of **P**, such as **p:Platform**. But properties chosen from inside JSON objects may be JSON objects *themselves*, so we need to tell Snowflake what *type* they really are. That's what **to_varchar** is doing.
 - We recommend building these sort of views as you need them, as views like this are primarily a code factoring tool. They just let you forget the actual naming (and capitalization) of the properties in **P**.
 
 Now you can run queries like the following, to get the **DAU** on **June 1st**.
@@ -206,11 +208,11 @@ If you find yourself running nasty queries (I.E. large joins, or full table scan
 
 The **playfab_archive_view** is indexed by **TitleId**, then **TS**. **TitleId** is indexed *first* because the secure view always run the **title_id filter** first. We automatically apply a **title_id filter** for all queries.
 
-However, we apply that filter *inside* the secure view, so it may not contribute to optimization. So it's important for *you* to also include a **title_id filter** in your query statements (where **title_id = `<your title id here>`**).
+However, we apply that filter *inside* the secure view, so it may not contribute to optimization. So it's important for *you* to also include a **title_id filter** in your query statements (where `title_id = <your title id here>`).
 
 The **TS** index is important because queries often have a time range. We use a truncated timestamp because Snowflake can index better on a column with a relatively small number of values. A block of data - where each row has the same timestamp - is more efficient to scan, because it simply already knows the values in that column.
 
-The efficiency boost is decent, and the raw timestamp is always available via **to_timestamp(p:Timestamp)**. Additionally, many of the most common queries (such as DAU, MAU), don't need more granularity than hour, anyway. In practice, we have found that we rarely need to access the *exact* timestamp.
+The efficiency boost is decent, and the raw timestamp is always available via **to_timestamp(p:Timestamp)**. Additionally, many of the most common queries (such as **DAU**, **MAU**), don't need more granularity than hour, anyway. In practice, we have found that we rarely need to access the *exact* timestamp.
 
 If you are running a query without a timestamp filter, that is still ok. It may scan some extra data, but Snowflake is still pretty fast.
 
