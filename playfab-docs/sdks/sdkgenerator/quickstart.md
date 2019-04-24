@@ -24,7 +24,6 @@ This is a node.js-based program that takes a JSON description of the PlayFab API
    - `<parent-folder>/SdkGenerator = <https://github.com/PlayFab/SDKGenerator>` (you're looking at it)
    - `<parent-folder>/sdks/<targetSDK>` - For every SDK you want to generate, you should git-clone the PlayFab repository for that target into the "sdks" sub-folder first. In many cases, there are required files in the repo which are not generated.
 4. `SdkGenerator` can be configured to read from other PlayFab repositories, cloned to your local machine, as sibling folders to SdkGenerator.
-
    - `<parent-folder>/API_Specs = <https://github.com/PlayFab/api_specs>`
 
 ## Usage instructions
