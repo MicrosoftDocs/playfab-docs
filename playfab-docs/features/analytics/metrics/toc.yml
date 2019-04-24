@@ -20,14 +20,19 @@
       href: getting-started-with-playfab-and-snowflake.md
     - name: Real-Time Analytics - Event History Chart Panel
       href: real-time-analytics-event-history-chart-panel.md
-      name: Real-Time Analytics - Event Queries
+    - name: Real-Time Analytics - Event Queries
       href: real-time-analytics-event-queries.md
     - name: Real-Time Analytics - Event Search Query Panel
       href: real-time-analytics-event-search-query-panel.md
     - name: Real-Time Analytics - Event Timeline Panel
       href: real-time-analytics-events-timeline-panel.md
-      name: S3 Event Archiving
+    - name: Event Archiving V2 (preview)
+      href: event-archiving-v2.md
+    - name: S3 Event Archiving
       href: s3-event-archiving.md
+      items:
+      - name: Set up an Amazon S3 bucket
+        href: configure-s3-bucket.md
     - name: Sessions
       href: sessions.md
     - name: Webhooks
