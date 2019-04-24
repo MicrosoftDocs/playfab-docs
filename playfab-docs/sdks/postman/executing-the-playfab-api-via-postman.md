@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 Knowing how to manually call Web API methods is invaluable when you are trying to integrate PlayFab with your game.
 
-If a function isn’t working out quite how you expect, being able to call it in a tool that shows you the specific response data and any error messages is a powerful way to debug those calls.
+If a function isn’t working out quite as you have expected, being able to call it in a tool that shows you the specific response data and any error messages is a powerful way to debug those calls.
 
 There are a number of tools out there that make it easy to interact directly with a Web API, but one that we *really* like is the Postman Chrome plugin.
 
@@ -33,7 +33,7 @@ Postman is an HTTP Request tool useful to intermediate and advanced users.
 
    ![Postman - Blank screen](media/tutorials/postman-blank-screen.png)  
 
-3. Download our Postman [JSON collection](https://api.playfab.com/downloads/postman) (right-click, **Save link** as...).
+3. Download our Postman [JSON collection](https://api.playfab.com/downloads/postman) (right-click, **Save link as...**).
     - Select **Import** (on the top, black bar), and drag the saved JSON file into Postman.
 
    ![Postman - Import file](media/tutorials/postman-import-file.png)  
@@ -42,7 +42,7 @@ Postman is an HTTP Request tool useful to intermediate and advanced users.
 
    ![Postman - Manage Environment variables](media/tutorials/postman-manage-environment-variables.png)  
 
-Postman environments are a way to save Key Value Pairs (KVPs) which can be automatically injected into any portion of the HTML call.
+Postman environments are a way to save Key Value Pairs (KVPs), which can be automatically injected into any portion of the HTML call.
 
 If you have a look through our collection, you will see **{{____}}** variables in most of them. These act as a time saver, as well as an easy way to switch between different environments.
 

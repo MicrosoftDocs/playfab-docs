@@ -12,19 +12,18 @@ ms.localizationpriority: medium
 
 # SDK Generator quickstart
 
-This is a node.js-based program that takes a json description of the PlayFab API, and uses it to generate out all the different SDKs that must be kept up to date. This project also contains the sources for all PlayFab SDKs on all platforms. If you want to make a change in an SDK, this is where the change has to go.
+This is a node.js-based program that takes a JSON description of the PlayFab API, and uses it to generate out all the different SDKs that must be kept up to date. This project also contains the sources for all PlayFab SDKs on all platforms. If you want to make a change in an SDK, this is where the change has to go.
 
 ## Prerequisites
 
 1. Any recent MS-Windows Operating System.
-1. You must have Node.js installed: <https://nodejs.org/>
+2. You must have Node.js installed: <https://nodejs.org/>
    - The location of node.exe must be in your PATH environment variable. Default: C:\Program Files (x86)\nodejs\
-   - Highly suggested that you install Node.js tools for Visual Studio: <https://beta.visualstudio.com/vs/node-js/>
-1. SdkGenerator requires several PlayFab repositories, cloned to your local machine, as sibling folders to SdkGenerator.
+   - Highly suggested that you install Node.js tools for Visual Studio: <https://beta.visualstudio.com/vs/node-js/>.
+3. `SdkGenerator` requires several PlayFab repositories, cloned to your local machine, as sibling folders to `SdkGenerator`.
    - `<parent-folder>/SdkGenerator = <https://github.com/PlayFab/SDKGenerator>` (you're looking at it)
    - `<parent-folder>/sdks/<targetSDK>` - For every SDK you want to generate, you should git-clone the PlayFab repository for that target into the "sdks" sub-folder first. In many cases, there are required files in the repo which are not generated.
-1. SdkGenerator can be configured to read from other PlayFab repositories, cloned to your local machine, as sibling folders to SdkGenerator.
-
+4. `SdkGenerator` can be configured to read from other PlayFab repositories, cloned to your local machine, as sibling folders to SdkGenerator.
    - `<parent-folder>/API_Specs = <https://github.com/PlayFab/api_specs>`
 
 ## Usage instructions
@@ -56,24 +55,24 @@ Where `<targetName>` is one of the supported SDK targets, and `<targetOutputLoca
 ### API-Spec location
 
 - You may optionally define exactly one location to read Api-Spec information.
-  - -apiSpecPath []
+  - `-apiSpecPath []`
     - If the `-apiSpecPath` switch is defined without a path, this defaults to `../API_Specs` (relative path, sibling to SdkGenerator repo location).
-  - -apiSpecGitUrl []
+  - `-apiSpecGitUrl []`
     - If the `-apiSpecGitUrl` switch is defined without a URL, this defaults to `<https://raw.githubusercontent.com/PlayFab/API_Specs/master/>`
     - Reads API_Specs directly from a GitHub repository.
-  - -apiSpecPfUrl []
+  - `-apiSpecPfUrl []`
     - If the `-apiSpecPfUrl` switch is defined without a URL, this defaults to `<https://www.playfabapi.com/apispec/>`
-    - Reads API_Specs directly from the PlayFab API-Server.
+    - Reads API_Specs directly from the PlayFab API Server.
 
-Flags are optional, and can be used to generate console apis.
+Flags are optional, and can be used to generate console APIs.
 
 ## Building a new SDK
 
-Setting up a new target in the SdkGenerator is fairly simple. This example has been added to the SdkGenerator for reference: [https://github.com/PlayFab/SDKGenerator/tree/master/targets/newTarget](https://github.com/PlayFab/SDKGenerator/tree/master/targets/newTarget).
+Setting up a new target in the `SdkGenerator` is fairly simple. This example has been added to the `SdkGenerator` for reference: [https://github.com/PlayFab/SDKGenerator/tree/master/targets/newTarget](https://github.com/PlayFab/SDKGenerator/tree/master/targets/newTarget).
 
-- Add a new subfolder in [SdkGenerator/Targets](https://github.com/PlayFab/SDKGenerator/tree/master/targets)
+- Add a new sub-folder in [SdkGenerator/Targets](https://github.com/PlayFab/SDKGenerator/tree/master/targets)
 - Add a "make.js" file to your new target.
-  - Implement makeClientAPI2, makeServerAPI, and/or makeCombinedAPI in the file, as shown in the [NewTarget Example](https://github.com/PlayFab/SDKGenerator/blob/master/targets/newTarget/make.js).
+  - Implement `makeClientAPI2`, `makeServerAPI`, and/or `makeCombinedAPI` in the file, as shown in the [NewTarget Example](https://github.com/PlayFab/SDKGenerator/blob/master/targets/newTarget/make.js).
   - Optionally, you may use template files and source files, as described in the NewTarget example.
 - Add a new bat-file to generate your sdk in [SdkGenerator/SDKBuildScripts](https://github.com/PlayFab/SDKGenerator/tree/master/SDKBuildScripts).
 

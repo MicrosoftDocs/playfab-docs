@@ -20,14 +20,14 @@ This guide is written for Windows 10, however it should also work fine with a Ma
 
 ## Requirements
 
-Before continuing, make sure you have completed [Getting started for developers](../../personas/developer.md) which ensures you have a PlayFab account and are familiar with the PlayFab Game Manager.
+Before continuing, make sure you have completed [Getting started for developers](../../personas/developer.md), which ensures you have a PlayFab account, and are familiar with the PlayFab Game Manager.
 
 ## Download Unity
 
-If you don't have unity installed, then you will need to install it and create a project.
+If you don't have Unity installed, then you will need to install it and create a project.
 
 - Download Unity3D.
-  - [Download Unity](https://store.unity.com/download)
+  - [Download Unity](https://store.unity.com/download).
   - We support all recent versions of Unity, some features work better with 5.3 or higher.
   - Unity requires a license. Pick personal or professional based on your preferences.
   - Keep going until you can start a new project.
@@ -38,10 +38,10 @@ If you don't have unity installed, then you will need to install it and create a
 
 ## Download PlayFab SDK
 
-The best way to acquire our Unity SDK is via our editor extensions. Although you can directly download the Unity 3D SDK from our github page. [PlayFab Unity3D SDK](https://api.playfab.com/downloads/unity-v2ap).
+The best way to acquire our Unity SDK is via our editor extensions - although you can directly download the Unity 3D SDK from our github page. [PlayFab Unity3D SDK](https://api.playfab.com/downloads/unity-v2ap).
 
-- Download and Import the [PlayFab Unity Editor Extensions package](https://github.com/PlayFab/UnityEditorExtensions/raw/master/Packages/PlayFabEditorExtensions.unitypackage)
-  - To import the the Unity Editor Extensions package, navigate to where the file was downloaded and double-click on the .UnityPackage file. This will bring up the following window.
+- Download and Import the [PlayFab Unity Editor Extensions package](https://github.com/PlayFab/UnityEditorExtensions/raw/master/Packages/PlayFabEditorExtensions.unitypackage).
+  - To import the the Unity Editor Extensions package, navigate to where the file was downloaded, and double-click on the .UnityPackage file. This will bring up the following window.
 
     ![Import Unity package](media/import-uedex.png)  
 
@@ -56,7 +56,7 @@ The best way to acquire our Unity SDK is via our editor extensions. Although you
 
     ![Log in to PlayFab](media/login-register-uedex.png)
 
-  - Once you have logged in, you will find yourself on this screen.
+  - Once you have logged in, your screen should change to the one shown in the following example.
   - Select **Install PlayFab SDK**, and it will automatically import the SDK into your project, or upgrade the version you currently have.
   
     ![Install PlayFab SDK](media/install-sdk.png)
@@ -92,7 +92,7 @@ This part of the guide will provide the minimum steps to make your first PlayFab
 - In Unity, double-click this file to open it in a code-editor.
   - Depending on your settings/installed-programs, this will likely be Visual Studio or MonoDevelop.
 
-- Next, Create a new GameObject, and attach this script (`PlayFabLogin.cs`) to the newly created GameObject
+- Next, Create a new GameObject, and attach this script (`PlayFabLogin.cs`) to the newly created GameObject.
 - Replace the contents of `PlayFabLogin.cs` with the code shown below.
 
 ```csharp
@@ -166,7 +166,7 @@ Inside of Start():
 - `var request = new LoginWithCustomIDRequest { CustomId = "GettingStartedGuide", CreateAccount = true};`
   - Most PlayFab API methods require input parameters, and those input parameters are packed into a request object.
   - Every API method requires a unique request object, with a mix of optional and mandatory parameters.
-    - For LoginWithCustomIDRequest, there is a mandatory parameter of CustomId, which uniquely identifies a player and CreateAccount, which allows the creation of a new account with this call.
+    - For `LoginWithCustomIDRequest`, there is a mandatory parameter of `CustomId`, which uniquely identifies a player and `CreateAccount`, which allows the creation of a new account with this call.
 
   - For login, most developers will want to use a more appropriate login method.
     - See the PlayFab Login Documentation for:
@@ -177,7 +177,7 @@ Inside of Start():
 
 Inside of OnLoginSuccess
 
-- The result object of many API success callbacks will contain the requested information
+- The result object of many API success callbacks will contain the requested information.
 - LoginResult contains some basic information about the player, but for most users, login is simply a mandatory step before calling other APIs.
 
 Inside of OnLoginFailure
@@ -186,7 +186,7 @@ Inside of OnLoginFailure
   - You can find error codes shared by all API methods in our [Global API Method Error Codes](../../features/automation/cloudscript/global-api-method-error-codes.md) tutorial, or specific codes at the bottom of each API method documentation.
 
 - Why API calls fail (In order of likelihood).
-  - PlayFabSettings.TitleId is not set. If you forget to set titleId to your title, then nothing will work.
+  - `PlayFabSettings.TitleId` is not set. If you forget to set titleId to your title, then nothing will work.
   - Request parameters. If you have not provided the correct or required information for a particular API call, then it will fail. See error.errorMessage, error.errorDetails, or error.GenerateErrorReport() for more info.
   - Device connectivity issue. Cell-phones lose/regain connectivity constantly, and so any API call at any time can fail randomly, and then work immediately after. Going into a tunnel can disconnect you completely.
   - The PlayFab Unity SDK currently expects API calls from the main Unity thread. Calling the SDK on a background thread will likely cause exceptions with coroutines and other Unity methods not being invoked on the main Unity thread.

@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Postman quickstart
 
-This guide describes how to download and set up the all-inclusive PlayFab Postman collection. The collection contains files that will help you make your first PlayFab API call using Postman.
+This quickstart has been designed to assist you in the download and setup of the all-inclusive PlayFab Postman collection. The collection contains files that will help you make your first PlayFab API call using Postman.
 
 ## Prerequisites
 
