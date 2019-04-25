@@ -23,7 +23,7 @@ The CDN Usage report contains two graphs displaying content usage over a 24 hour
 
 ## Monthly Content Usage Summary report
 
-This report summarizes monthly content usage. The table contains the amount of content bytes transferred, as well as the total number of downloads during a specified month.
+This report summarizes monthly content usage. The table within it contains the amount of content bytes transferred, as well as the total number of downloads during a specified month.
 
 ![Monthly Content Usage Report Table](media/tutorials/monthly-content-usage-report-table.png)  
 
@@ -47,7 +47,7 @@ public void GetContent()
 }
 ```
 
-It is important to understand that the [GetContentDownloadUrl](xref:titleid.playfabapi.com.client.content.getcontentdownloadurl) API call, on it's own, does not produce a new entry in the report.
+It is important to understand that the [GetContentDownloadUrl](xref:titleid.playfabapi.com.client.content.getcontentdownloadurl) API call, on its own, does not produce a new entry in the report.
 
 Instead, it provides you with a URI for the content download. You may use any HTTP request technique to execute a GET request. Once this is done, a new entry will be added and reflected in both reports.
 

@@ -10,7 +10,7 @@ keywords: playfab, analytics, reports
 ms.localizationpriority: medium
 ---
 
-# Daily API Usage Details Report
+# Daily API Usage Details report
 
 ## Overview
 
@@ -23,8 +23,8 @@ The daily API Usage Details report contains statistics for each API call, aggreg
 
 If you experience lag spikes in your application while executing API calls, you can refer to this report to track down the underlying cause.
 
-For example, using the report, you will be able to check whether the data was too large or a handler worked inefficiently. You can further utilize the report to tune the performance of CloudScript execution by adjusting its behavior and associated data.
+For example - using the report, you will be able to check whether the data was too large or a handler worked inefficiently. You can further utilize the report to tune the performance of CloudScript execution by adjusting its behavior and associated data.
 
 ## Populating the report
 
-Any **API** call will be captured and included into this report. Check the [PlayFab API Reference documentation](../../../api-references/index.md) for the list of all API options.
+Any API call will be captured and included into this report. Check the [PlayFab API Reference documentation](../../../api-references/index.md) for the list of all API options.

@@ -10,17 +10,17 @@ keywords: playfab, analytics, reports
 ms.localizationpriority: medium
 ---
 
-# Daily Abuse Reports History Report
+# Daily Abuse Reports history report
 
 ## Overview
 
-The Daily Abuse Reports history report contains a CSV document with all of the player reports that happened during the specified day.
+The Daily Abuse Reports history report contains a CSV document with all of the player reports that occurred within a specific day.
 
 ![Daily Abuse Reports History Report Table](media/tutorials/daily-abuse-reports-history-report-table.png)  
 
 In the preceding example, a player with ID of  **6079A16A9E4FB67** is reporting a player with ID of **94A248B3B9E628F2** for the reason **Test Report** on 5/14/2017.
 
-Using this information, you can then use the reportee ID, to quickly look up the reported player and investigate.
+Using this information, you can then use the reportee ID to quickly look up the reported player and investigate.
 
 ![Game Manager - Players - Player ID Search](media/tutorials/game-manager-players-player-id-search.png)
 
