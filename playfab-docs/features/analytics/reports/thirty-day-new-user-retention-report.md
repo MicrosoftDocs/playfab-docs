@@ -18,17 +18,13 @@ The Thirty Day New User Retention report tracks the percentage of new user cohor
 
 A cohort of players is defined by grouping newly registered players on a given day (**Day 0**) and their retention is tracked over a 30-day period.
 
-Cohort size indicates the number of players in a cohort.
+Cohort size is indicated by the number of players in a cohort.
 
-![Thirty-day New User Retention Report Table](media/tutorials/thirty-day-new-user-retention-report-table.png)  
+The example report shown below, was generated on **2/5/2018**. On **1/6/2018**, **39,132** new players created accounts in the example title.
 
-The Thirty Day New User Retention report tracks the percentage of a new user Cohort who return to the game on subsequent days.
+![Thirty-day New User Retention Report Table](media/tutorials/thirty-day-new-user-retention-report-table.png)
 
-A Cohort of players is defined by grouping newly-registered players on a given day (**Day 0**) and their retention is tracked over a 30-day period. Cohort size indicates the number of players in a cohort.
-
-The preceding example report, was generated on **2/5/2018**. On **1/6/2018**, **39,132** new *players created accounts in the example title.
-
-Since **Day 0** is an initiation date for a new cohort, this column always has **100%** retention rate.
+Since **Day 0** is an initiation date for a new Cohort, this column always has **100%** retention rate.
 
 Then **33.84%** of those players logged in again the *next day*, **24.64%** in *two days* later, and so on. **10.84%** of the Cohort returned on the *30th day*, which corresponds to **2/5/2018**.
 
@@ -36,9 +32,9 @@ For additional details, see [Metrics and Terminology](../metrics/metrics-and-ter
 
 ## Populating the report
 
-To populate this report, you must register a players and then log in several days in a row, at least once.
+To populate this report, you must register a player and then log in for several days in a row at least once.
 
-This, however, will produce trivial results, with **100%** retention for each day.
+This, however, will produce trivial results, (with **100%** retention for each day).
 
 Throwing more players into the process and skipping some days will produce more interesting results.
 

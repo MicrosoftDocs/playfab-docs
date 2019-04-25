@@ -12,6 +12,6 @@ ms.localizationpriority: medium
 
 # Segmentation Tutorials
 
-These tutorials show you how to set up Player Segments.
+These tutorials show you how to set up player Segments.
 
 - [Segment Configuration](segment-configuration.md)

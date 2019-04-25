@@ -32,12 +32,12 @@ The *defining characteristic* of a player might be:
 - Virtual currency values
 - Real money purchases, and more.
 
-For this example, our distinctive characteristic will be a statistic - specifically players who achieve **50 str**.
+For this example, our distinctive characteristic will be a statistic - specifically, players who achieve **50 str**.
 
 > [!NOTE]
->  Statistics are one of many possible options, and only specifically required for this example. Feel free to replace the statistic requirement with another filter of your choice.
+> Statistics are one of many possible options, and only specifically required for this example. Feel free to replace the statistic requirement with another filter of your choice.
 
-Our action will be to run a CloudScript function. CloudScript is by far the most flexible trigger option, granting you full control of the player and segmentation information at the time of segment-transition.
+Our action will be to run a CloudScript function. CloudScript is by far the most flexible trigger option, granting you full control of the player and segmentation information at the time of segment transition.
 
 From the **Game Manager** screen:
 
