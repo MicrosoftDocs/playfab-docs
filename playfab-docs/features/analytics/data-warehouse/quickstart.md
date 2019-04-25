@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 >
 > Access to this feature is restricted to select titles. If you are interested in trying it, please contact us at [helloplayfab@microsoft.com](mailto:helloplayfab@microsoft.com).
 
-To enable using a dedicated compute and storage cluster, you must provide an account ID for administering databases in one of the following formats:
+For customers onboarded to the PlayFab Private Preview, Insights is accessed from Game Manager by navigating to Analytics > Insights (Preview). Your first step will be to enable a dedicated storage and compute cluster. To do so, you must provide an account ID for administering databases in one of the following formats:
 
 1. Organizational account (i.e. AAD ID)
 
