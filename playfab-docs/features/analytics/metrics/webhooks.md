@@ -12,16 +12,16 @@ ms.localizationpriority: medium
 
 # Webhooks
 
-In complex systems you may want to provide additional event handling on your custom server.
+In complex systems, you may want to provide additional event handling on your custom server. PlayFab offers Webhooks to achieve this.
 
-PlayFab offers Webhooks to achieve this. Whenever a new event is emitted, it can be forwarded to your server by making a POST request to your custom web endpoint, and the event data is passed as the JSON body of the request.
+Whenever a new event is emitted, it can be forwarded to your server by making a POST request to your custom web endpoint, and the event data is passed as the JSON body of the request.
 
 ## Accessing Webhooks
 
 To access the **Webhooks** panel in the PlayFab **Game Manager** screen:
 
 - Select **Analytics (1)** in the sidebar menu.
-- Then select the **Webhooks** tab **(2)**.
+- Then choose the **Webhooks** tab **(2)**.
 
 ![Game Manager - Analytics - Webhooks](media/tutorials/game-manager-analytics-webhooks.png)  
 
