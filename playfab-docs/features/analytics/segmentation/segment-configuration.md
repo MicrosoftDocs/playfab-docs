@@ -87,26 +87,25 @@ In other words, to be part of a segment, a player must be part of at least 1 gro
 
 This is denoted by the OR/AND operators: filters are combined using the AND operator, while groups are combined using the OR operator.
 
-![Game Manager - Players - Segments - Segment Filtering](media/tutorials/game-manager-players-segments-segment-filtering.png)  
-
-The previous screenshot shows an example of how a segment can be defined. This segment consists of 2 groups. The first group is defined by 2 filters:
+The screenshot shown below offers an example of how a segment can be defined. This segment consists of 2 groups. The first group is defined by 2 filters:
 
 - A player must be from Canada.
 - A player must have Apple **Push notifications enabled**.
 
 The second group is also for players from Canada, but they must have Google **Push notifications enabled**.
 
+![Game Manager - Players - Segments - Segment Filtering](media/tutorials/game-manager-players-segments-segment-filtering.png)  
 In the end, we have a segment of players from Canada with either Google or Apple push notifications.
 
-Each filter has a unique configuration and purpose. As of 4/30/2017 the following filters are available:
+Each filter has a unique configuration and purpose. As of 4/30/2017, the following filters are available:
 
 - The **All players filter** - This filter has no configuration and is unique, because it allows you to create a segment of all players. This comes in handy when you want to run automatic operations for every new player (segment actions are described in the [How to manage actions](#how-to-manage-actions) section, later in this tutorial).
 - The **First login (date) filter** - Allows you to filter based on first login datetime. For example, players that have first logged in after 1/1/2017.
 - The **First login (timespan) filter** - Allows you to filter based on first login timespan relative to the current datetime. For example, player that have first signed in 20 minutes ago (from now).
 - The **Last login (date) filter** - Allows you to filter based on last login datetime. For example, players that have not signed since 1/1/2017.
 - The **Last login (timespan) filter** - Allows you to filter based on last login timespan relative to the current datetime. For example, players that have not signed in for a week (from now).
-- The **Linked user account to filter** - Allows you to filter based on users' linked accounts. For example, players that have a Steam account linked with an email account.
-- The **Location (country) Filter** - Allows you to filter based on a player's country. For example, players from Canada.
+- The **Linked user account to filter** - Allows you to filter based on users linked accounts. For example, players that have a Steam account linked with an email account.
+- The **Location (country) Filter** - Allows you to filter based on a player country. For example, players from Canada.
 - The **Push notifications enabled with filter** - Allows you to filter based on player push settings and capabilities. For example, players that have Google push notifications enabled.
 - The **Statistics value filter** - Allows you to filter based on your own custom statistic attribute. For example, players that inflicted 20000 damage in total.
 - The **Tag filter** - Allows you to filter based on whether a player has or doesn't have a certain tag. For example, players that have a *cheater* tag.
@@ -117,19 +116,19 @@ Each filter has a unique configuration and purpose. As of 4/30/2017 the followin
 > [!NOTE]
 > The trick here is that a player may *start* with authentication based on, say, an iOS device ID, but later, the *same* player may have a GameCenter account linked. In this case, *user origination* will be the iOS device ID. For example, players that first signed in using an iOS device ID.
 
-- The **Virtual currency balance filter** - Allows you to filter based on a player's custom virtual currency deposit. For example, players that have less than 50 Crystal.
+- The **Virtual currency balance filter** - Allows you to filter based on the custom virtual currency deposit of a player. For example, players that have less than 50 Crystal.
 
 ## How to manage actions
 
 Each *action* needs a *trigger* in order to run. Some actions are run manually, triggered right from the page. Sometimes, though, you have to select a trigger - an event that causes an action to run.
 
-A trigger defines the *context* of the action. For example, a *player entered segment* trigger passes you the context containing a reference to the player. The general workflow for the **Action** panel is:
+A trigger defines the *context* of the action. For example, a *player entered segment* trigger passes you the context containing a reference to the player. The general workflow for the **Actions** panel is:
 
 1. Select an **Event condition**, also known as a *Trigger*.
-2. Select an **Action** type. PlayFab offers a variety of **Actions**. If, at any point, you need more a flexible action, consider a **CloudScript Action**. This **Action** type allows you to run your own **CloudScript** function.
-3. Configure the action (specific for each **Action** type).
-4. **Remove** the action from the **Trigger**.
-5. **Add Action** to the **Trigger**.
+2. Select an action **Type**. PlayFab offers a variety of actions. If, at any point, you need more a flexible action, consider a CloudScript action. This action type allows you to run your own CloudScript function.
+3. Configure the action (specific for each action **Type**).
+4. Select **REMOVE** to remove the action from the trigger.
+5. Select **Add Action** to add action to the trigger.
 
 ![Game Manager - Actions panel](media/tutorials/game-manager-actions-panel.png)
 
@@ -138,8 +137,8 @@ A trigger defines the *context* of the action. For example, a *player entered se
 It is possible to look up what segments a player belongs to by means of the **Player Segments** page. To access the **Player Segments** page:
 
 - Select **Players** in the sidebar menu **(1)**.
-- Then select the **Player** tab **(2)**.
-- Locate the **Player** you want to inspect and select the **ID** label **(3)**.
+- Then select the **Players** tab **(2)**.
+- Locate the player you want to inspect, and select the **ID** label **(3)**.
 - Finally select **Segments** in the **Players Toolbar (4)**.
 
 ![Game Manager - Open - Players Segments page](media/tutorials/game-manager-open-players-segments-page.png)  
@@ -147,6 +146,6 @@ It is possible to look up what segments a player belongs to by means of the **Pl
 On the **Player Segments** page, note the following:
 
 1. The **Player ID** label identifies the player you currently inspecting.
-2. The **Segment** table contains a list of all segments a player belongs to. Select the **Segment name** label to configure a segment.
+2. The **Segments** table contains a list of all segments a player belongs to. Select the **Segment name** label to configure a segment.
 
 ![Game Manager - Players Segments Page](media/tutorials/game-manager-players-segments-page.png)  

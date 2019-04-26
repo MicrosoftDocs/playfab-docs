@@ -29,15 +29,15 @@ PlayFab offers a set of daily and monthly Key Performance Indicator (KPI) report
 - **Average Revenue Per Paying User** (**ARPPU**)
 - **Average Purchase Price**
 
-An overview report contains trend charts of each metric during the past 24 hours (daily), past 30 days (rolling 30-day), and in last month (monthly).
+An Overview report contains trend charts of each metric during the past 24 hours (daily), past 30 days (rolling 30-day), and in last month (monthly).
 
-A totals report contains the summary of each metric shown in the overview report. Daily and Rolling Thirty Day reports are generated on a daily basis, whereas Monthly reports are generated on the first day of each month.
+A Totals report contains the summary of each metric shown in the overview report. Daily and Rolling Thirty Day reports are generated on a daily basis, whereas Monthly reports are generated on the first day of each month.
 
 Report times are based on Coordinated Universal Time (UTC). For additional details on metrics, see [Metrics and Terminology](../metrics/metrics-and-terminology.md).
 
 ## Totals reports
 
-Totals reports include a table which contains the 12 Key Performance metrics described in the introduction.
+Totals reports include a table, which contains the 12 Key Performance metrics described in the introduction.
 
 ![Daily Totals Report](media/tutorials/daily-totals-report.png)  
 
@@ -55,7 +55,7 @@ Overview reports consist of 12 trend charts - one for each metric described in t
 
 ## Populating the reports
 
-Any API call may introduce new data for total API calls, total successful API calls and total API call errors.
+Any API call may introduce new data for total API calls, total successful API calls, and total API call errors.
 
 - Once executed, an API call will be added to total API calls.
 - If there is an error that is introduced, it will be recorded to total API call errors.
@@ -67,8 +67,7 @@ The following API calls will introduce new data for total logins and total uniqu
 
 - [LoginWithAndroidDeviceID](xref:titleid.playfabapi.com.client.authentication.loginwithandroiddeviceid)
 - [LoginWithCustomID](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid)
-- [LoginWithEmailAddress](xref:titleid.playfabapi.com.client.authentication.loginwithemailaddress
-- )
+- [LoginWithEmailAddress](xref:titleid.playfabapi.com.client.authentication.loginwithemailaddress)
 - [LoginWithFacebook](xref:titleid.playfabapi.com.client.authentication.loginwithfacebook)
 - [LoginWithGameCenter](xref:titleid.playfabapi.com.client.authentication.loginwithgamecenter)
 - [LoginWithGoogleAccount](xref:titleid.playfabapi.com.client.authentication.loginwithgoogleaccount)
