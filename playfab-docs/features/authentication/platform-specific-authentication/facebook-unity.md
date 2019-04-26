@@ -98,7 +98,7 @@ Create a script called **PlayfabFacebookAuthExample.cs (1)**, and add it to the 
 
 ![Add example script to game object](media/tutorials/facebook-unity/add-example-script.png)
 
-Inside  **PlayfabFacebookAuthExample.cs** place the following code.
+Inside  `PlayfabFacebookAuthExample.cs` place the following code.
 
 ```csharp
 // Import statements introduce all the necessary classes for this example.
@@ -186,7 +186,7 @@ public class PlayfabFacebookAuthExample : MonoBehaviour
 
 ## Testing
 
-### Running the **Application** in the editor
+### Running the application in the editor
 
 - Select the **Play** button **(1)**.
 - Once **Facebook** is initialized (and an authentication call is made), a **Facebook** authentication dialog will appear in your game view.
@@ -231,15 +231,15 @@ A panel with platform-specific settings will appear.
 
 ![Android platform settings](media/tutorials/facebook-unity/android-platform-settings.png)
 
-Build and run the Application normally on your Android Device.
+Build and run the application normally on your Android Device.
 
-- The Application should welcome you with a Facebook sign-in page.
+- The application should welcome you with a Facebook sign-in page.
 - Once you sign in, watch the message on the screen as it changes.
 - Finally, you should be presented with a message indicating successful authentication in PlayFab. The entire procedure is illustrated in the example provided below.
 
 ![PlayFab Facebook authentication on Android](media/tutorials/facebook-unity/playfab-facebook-auth-on-android.png)
 
-### Running the Application on iOS
+### Running the application on iOS
 
 Before launching the Application on iOS, you have to perform additional configuration steps.
 

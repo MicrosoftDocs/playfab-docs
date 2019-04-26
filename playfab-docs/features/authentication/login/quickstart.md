@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Account linking quickstart
 
-This Account Linking quickstart demonstrates how to bind an account to multiple devices and login mechanisms.
+This Account linking quickstart demonstrates how to bind an account to multiple devices and login mechanisms.
 
  A single PlayFab account can be accessed by many devices and login credentials. As we discuss in our tutorial [Login basics and Best Practices](../login/login-basics-best-practices.md), there are two forms of user authentication:
 
@@ -28,7 +28,7 @@ Once a player has become invested in your game, you should prompt them to add a 
 This section covers adding a recoverable login mechanism to an anonymous account.
 
 > [!NOTE]
-> An anonymous login is still relevant, and can continue to be the primary frictionless login for the player. Many players will *only* use these options again if they are attempting to recover their account, use platform-specific features, or link a second Anonymous device.
+> An anonymous login is still relevant, and can continue to be the primary frictionless login for the player. Many players will *only* use these options again if they are attempting to recover their account, are using platform-specific features, or link a second Anonymous device.
 
 ![PayFab anonymous login and recoverable login mechanism](../media/tutorials/playfab-anonymous-login-and-recoverable-login.png)  
 
@@ -40,7 +40,7 @@ The focus of this tutorial is at the bottom of the preceding image, with the cel
 The third-party recoverable login mechanisms each involve prompting the user to log in via an appropriate SDK or third-party API call. Linking that account to PlayFab generally follows the same pattern:
 
 1. First, prompt the user to log into that service (more details in [Login basics and Best Practices](../login/login-basics-best-practices.md)).
-2. Once you have logged in, those services will provide some kind of Token, which can be passed to PlayFab.
+2. Once you have logged in, those services will provide some kind of token, which can be passed to PlayFab.
 3. This allows PlayFab to safely link to that account without being aware of the user's credentials in that service.
 
 > [!NOTE]
@@ -54,11 +54,11 @@ If you're using a third-party authentication system, retrieve the appropriate To
 
 ### Best practice
 
-For user privacy, do *not* save or store any user credentials (this is also one of many steps required for COPPA compliance - and if that's a requirement for your title, please be sure to talk to your legal counsel to confirm your compliance).
+- For user privacy, do *not* save or store any user credentials (this is also one of many steps required for COPPA compliance - and if that's a requirement for your title, please be sure to talk to your legal counsel to confirm your compliance).
 
-If you are using the PlayFab credentials, or calling a third-party API directly, you should clear their login information from memory as soon as possible. Generally, the third-party SDKs take care of this for you.
+- If you are using the PlayFab credentials, or calling a third-party API directly, you should clear their login information from memory as soon as possible. Generally, the third-party SDKs take care of this for you.
 
-Do not keep any identifiable or secure information in memory longer than you need it, and don't save it to a file or remote location. The PlayFab APIs are designed to utilize only the minimum required information.
+- Do not keep any identifiable or secure information in memory longer than you need it, and don't save it to a file or remote location. The PlayFab APIs are designed to utilize only the minimum required information.
 
 ## Add new devices to an existing recoverable account
 

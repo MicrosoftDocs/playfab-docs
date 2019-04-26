@@ -12,15 +12,14 @@ ms.localizationpriority: medium
 
 # Setting up PlayFab authentication using Facebook and HTML5
 
-This tutorial has been created to guide you through PlayFab authentication using Facebook and HTML5/JavaScript.
+This tutorial is designed to guide you through PlayFab authentication using Facebook and HTML5/JavaScript.
 
 ## Requirements
 
-- [Facebook account](https://www.facebook.com/) for testing
-- Registered [PlayFab](https://playfab.com/) title
-- Familiarity with [Login basics and Best Practices](../../authentication/login/login-basics-best-practices.md)
-
-- A Minimal server with a valid domain name to serve static HTML file.
+- A [Facebook account](https://www.facebook.com/) for testing
+- A registered [PlayFab](https://playfab.com/) title
+- A familiarity with [Login basics and Best Practices](../../authentication/login/login-basics-best-practices.md)
+- A minimal server, with a valid domain name to serve static HTML file.
 
 > [!NOTE]
 > If you are unsure if you have the proper requirements for this activity, please consult the [Running an HTTP server for testing](running-an-http-server-for-testing.md) tutorial.
@@ -35,7 +34,7 @@ Throughout this guide, we will assume your domain is ['http://playfab.example'](
 
 Start by navigating to the [Facebook Developer Portal](https://developers.facebook.com/).
 
-- Move your mouse over the **My Apps (1)** button.
+- Hover your mouse over the **My Apps (1)** button.
 - Select **Add a New App (2)** from the drop-down menu, as shown in the example provided below.
 
 ![Facebook add a new app](media/tutorials/facebook-add-a-new-app.png)  
@@ -106,7 +105,7 @@ The **Website** configuration panel should now appear.
 Use the following HTML file to test your PlayFab authentication using Facebook.
 
 > [!NOTE]
-> Make sure to replace **YOUR-APPLICATION-ID** and **YOUR-PLAYFAB-TITLE** with your own.
+> Make sure to replace `YOUR-APPLICATION-ID` and `YOUR-PLAYFAB-TITLE` with your own.
 
 ```html
 <!DOCTYPE html>
@@ -190,7 +189,7 @@ Use the following HTML file to test your PlayFab authentication using Facebook.
 </html>
 ```
 
-- Request the following file from your server using the domain you set up during **Facebook Application** configuration (**playfab.example** in our case).
+- Request the following file from your server using the domain you set up during **Facebook Application** configuration (`playfab.example` in our case).
 - Once the **Facebook Auth Example** page opens, select **Log In with Facebook** button **(1)**.
 - Follow any Facebook instructions in the pop-up window.
 - Watch the output **(2)**.

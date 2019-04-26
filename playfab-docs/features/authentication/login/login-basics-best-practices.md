@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 While all of the platform-specific authentication tutorials demonstrate logging in with [LoginWithCustomID](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid), the uses for this login in a published game are limited to pairing a PlayFab account to a pre-existing database, or another back-end system.
 
-Otherwise, it is very rare for a published title to use a custom ID for a primary login since in most cases, you want to capture additional information on the player's platform.
+Otherwise, it is very rare for a published title to use a custom ID for a primary login, since in most cases you want to capture additional information on the player's platform.
 
 ### Why we demonstrate this first
 
@@ -36,7 +36,7 @@ These logins include:
 - [LoginWithAndroidDeviceID](xref:titleid.playfabapi.com.client.authentication.loginwithandroiddeviceid)
 - [LoginWithCustomID](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid)
 
-Since they are anonymous, these methods can uniquely identify a device, but contain no recoverable information about the player. If the player loses or breaks their device, the account is lost and may be very difficult to recover. In most cases the account is simply orphaned and not retrievable.
+Since they are anonymous, these methods can uniquely identify a device, *but contain no recoverable information about the player*. If the player loses or breaks their device, the account is lost, and may be very difficult to recover. In most cases the account is simply orphaned and not retrievable.
 
 So why use it? Because it's the lowest possible barrier to entry for the player, requiring no interaction. It gets the player trying your game with minimal effort, while creating an account they can get back to for continuity (as long as they have that device).
 
@@ -44,7 +44,7 @@ So why use it? Because it's the lowest possible barrier to entry for the player,
 
 Your game should use an anonymous login for creating a new account and linking new devices to an existing account. Some players may abandon a game that asks for an e-mail or identifiable information. However, once the anonymous login is complete, you should provide the option to add *recoverable* login credentials, and provide some explanation regarding the benefits.
 
-In particular, you should make sure that paying customers are guided to the recoverable login systems, to prevent loss of their accounts. A free account lost forever is a disappointment. A paid account lost forever affects revenue.
+In particular, you should make sure that paying customers are guided to the *recoverable* login systems, to prevent loss of their accounts. A free account lost forever is a disappointment. A paid account lost forever affects revenue.
 
 ### iOS devices
 
@@ -66,9 +66,9 @@ A *recoverable* login mechanism requires some identity information from the play
 The simplest options are:
 
 - [LoginWithPlayFab](xref:titleid.playfabapi.com.client.authentication.loginwithplayfab)
-- [LoginWithEmailAddress](xref:titleid.playfabapi.com.client.authentication.loginwithemailaddress).
+- [LoginWithEmailAddress](xref:titleid.playfabapi.com.client.authentication.loginwithemailaddress)
 
-If used, the e-mail or username-plus-password are authenticated directly by PlayFab. The account is recoverable by the e-mail or username, *even* if the user forgets their password. The login is generally secure (you can implement your own *password strength check* into your game to improve this).
+If used, the e-mail or username-plus-password are authenticated directly by PlayFab. The account is recoverable by the e-mail or username, *even* if the user forgets their password. The login is generally secure (you can implement your own password strength check into your game to improve this).
 
 ### Third party API options
 
@@ -95,11 +95,11 @@ Specifically, [LoginWithGameCenter](xref:titleid.playfabapi.com.client.authentic
 
 GameCenter is a secure login specifically between an iOS device and the GameCenter service, but unlike Apple's Identity Verification service, there is *no* secure authentication option for a 3rd party service like PlayFab. Even so, some developers are very familiar with GameCenter, and wish to use it as their recoverable login mechanism.
 
-### Good practice
+### Safe usage
 
 The only *safe* usage of this mechanism is for client-authoritative games with *no multiplayer capability*.
 
-PlayFab can be a useful cloud-save option for this type of game using this mechanism. All other uses of **LoginWithGameCenter** should be considered *unsafe*. Do *not* use this login for *any* kind of game with *any* kind of multiplayer interaction.
+PlayFab can be a useful cloud-save option for this type of game, using this mechanism. All other uses of **LoginWithGameCenter** should be considered *unsafe*. Do *not* use this login for *any* kind of game with *any* kind of multiplayer interaction.
 
 ### Best practice
 
