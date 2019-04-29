@@ -23,7 +23,7 @@ You will need:
 - Familiarity with [Login basics and Best Practices](../../authentication/login/login-basics-best-practices.md).
 - At the minimum, a server with a valid domain name to act as a static HTML file. Consult the [Running an HTTP server for testing](running-an-http-server-for-testing.md) tutorial for information on how to set one up.
 
-## Server and Domain
+## Server and domain
 
 This guide requires a server with a valid domain to follow. If you do not have a registered domain and remote web server yet, please follow our [Running an HTTP server for testing](running-an-http-server-for-testing.md) tutorial for information on how to set one to run a local web server with a valid domain name. Throughout this guide, we will assume your domain is [http://playfab.example](http://playfab.example).
 
@@ -31,8 +31,8 @@ This guide requires a server with a valid domain to follow. If you do not have a
 
 Start by navigating to the [Google API Console](https://console.developers.google.com/):
 
-- Navigate to **Credentials (1)**.
-- Locate the **API Manager** panel and select **Create (2)**.
+- Navigate to **Credentials (1)** and select it.
+- In the **Credentials** panel to the right, select the **Create (2)** button.
 
 ![Google API Manager create new credentials](media/tutorials/google-html5/create-new-credentials.png)  
 
@@ -62,7 +62,7 @@ Once the Project is created:
 
 - Select **Web Application (1)** as your **Application type**.
 - Give your application a **Name (2)**.
-- Add your domain to **Authorized JavaScript origins (3)** [PlayFab](http://playfab.example) in our case).
+- Add your domain to **Authorized JavaScript origins (3)**  - [PlayFab](http://playfab.example) in our case.
 - Finally, select the **Create (4)** button to commit your changes.
 
 ![Google API Manager create OAuth credentials](media/tutorials/google-html5/create-oauth-credentials.png)  
@@ -84,7 +84,7 @@ Go to the PlayFab **Game Manager** page for your title.
 
 ![PlayFab Game Manager Add-on](media/tutorials/google-html5/open-google-add-on.png)  
 
-- Fill in the **client ID (1)** and **client secret (2)**.
+- Fill in the **Client ID (1)** and **Client secret (2)**.
 - Then select the **Install Google (3)** button.
 
 ![PlayFab Game Manager Install Google Add-on](media/tutorials/google-html5/install-google-add-on.png)  
@@ -92,14 +92,14 @@ Go to the PlayFab **Game Manager** page for your title.
 > [!NOTE]
 > As of July 2017, **Google API Manager** has a bad habit of *not* hooking the **Allowed JS** origin domain properly. If you receive the following error:  
 > `"idpiframe_initialization_failed", details: "Not a valid origin for the client: somedomain.com..."`  
-> Please remove the credentials and recreate them. *There is no need to delete the entire project, just the credentials.*
+> Please remove the credentials and recreate them. *There is no need to delete the entire project - just the credentials.*
 
 ## Testing using an access token
 
-In this example, we show how to test using the classic access token approach. Use the **HTML** file provided below for your testing.
+In this example, we show how to test using the classic access token approach. Use the HTML file provided below for your testing.
 
 > [!NOTE]
-> Please *make sure* to replace **YOUR_CLIENT_ID** and **YOUR_PLAYFAB_TITLE** with your own values.
+> Please *make sure* to replace `YOUR_CLIENT_ID` and `YOUR_PLAYFAB_TITLE` with your own values.
 
 ```html
 <!DOCTYPE html>
@@ -150,8 +150,8 @@ In this example, we show how to test using the classic access token approach. Us
 </html>
 ```
 
-- Remember to serve this page using your web server.
-- Make sure to access this page using the URL you specified while configuring Google Project, ([PlayFab](http://playfab.example) in our case).
+- Remember to open this page using your web server.
+- Make sure to access this page using the URL you specified, while configuring Google Project, ([PlayFab](http://playfab.example) in our case).
 - Once the page opens, select **G Signed In (1)**, and follow the general Google authentication flow.
 - When this is finished, the script will try to authenticate on the PlayFab side and output the result **(2)**.
 

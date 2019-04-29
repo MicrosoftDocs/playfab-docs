@@ -15,11 +15,11 @@ ms.localizationpriority: medium
 ## Tutorial Video
 
 > [!NOTE]
-> The audio portion of the following video is currently unavailable. A new recording is pending and will be available in the immediate future.
+> The audio portion of the following video is currently unavailable. A new recording is pending, and will be available in the immediate future.
 
 [HowTo: Use Google SignIn (GPG) + PlayFab (Unity)](https://youtu.be/igup53sdmHg)
 
-This tutorial illustrates the steps to successfully add Google Play Games sign-in to your PlayFab games, built with the Unity SDK. Actually, this should be a fairly simple procedure once you know all the steps.
+This tutorial illustrates the steps to successfully add Google Play Games sign-in to your PlayFab games, built with the Unity SDK. Actually, this should be a fairly simple procedure, once you know all the steps.
 
 However, finding all the required information can be tricky. So we will try to centralize all the steps you need to get this feature working.
 
@@ -62,7 +62,7 @@ You can configure Google Play Games from the toolset that is installed with the 
 
 ![Google Play Developer Console Linked apps](media/tutorials/google-unity/gpdc-linked-apps.png)  
 
-- Then, populate your **app_id** and **package_name** in the resource definition.
+- Then, populate your `app_id` and `package_name` in the resource definition, as shown below.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -73,7 +73,7 @@ You can configure Google Play Games from the toolset that is installed with the 
 ```
 
 > [!NOTE]
-> The Client ID that is generated for you when you link the **App** (shown in this image) is **NOT** the correct one!
+> The Client ID that is generated for you when you link the **App** (shown in this image) is NOT the correct one!
 
 ![Google Play Developer Console Web App Client ID](media/tutorials/google-unity/gpdc-client-id.png)  
 
@@ -120,7 +120,7 @@ To set up Google in PlayFab:
 
 There are a few things you need to enter into this form:
 
-- The **Google App Package ID** - This is the name of your Android package. For example, our sample uses **com.playfab.gpgexample**.
+- The **Google App Package ID** - This is the name of your Android package. For example, our sample uses `com.playfab.gpgexample`.
 - The **Google App License Key** - While this is a required field, it is not related to the Google Sign-In. This field is for setting up a Receipt Validation using our **Receipt Validation APIs**.
 
 > [!NOTE]
@@ -164,7 +164,7 @@ PlayGamesPlatform.DebugLogEnabled = true;
 PlayGamesPlatform.Activate();
 ```
 
-The next set of code, the **OnSignInButtonClicked()** function shown in the example provided below, is bound to a **Sign In** button in the UI in our example.
+The next set of code, the `OnSignInButtonClicked()` function shown in the example provided below, is bound to a **Sign In** button in the UI in our example.
 
 ![Google Sign-In button screen](media/tutorials/google-unity/sign-in-button-screen.png)  
 
@@ -201,17 +201,17 @@ The next set of code, the **OnSignInButtonClicked()** function shown in the exam
     }
 ```
 
-The **OnSignInButtonClicked()** code can be a bit overwhelming, so let's break down exactly what is happening:
+The `OnSignInButtonClicked()` code can be a bit overwhelming, so let's break down exactly what is happening:
 
-- First, we log in with **Social.localUser.Authenticate** - This will return a boolean if we are able to successfully login. Be aware that if you have not added your test account to your app, this will always return *False* when testing.
+- First, we log in with `Social.localUser.Authenticate` - This will return a boolean if we are able to successfully login. Be aware that if you have not added your test account to your app, this will always return *False* when testing.
 - When this happens - important step here - [add your test account](https://developers.google.com/games/services/console/testpub).
-- The link will take you to instructions on adding testers to your **Google** application.
+- The link will take you to instructions on adding testers to your Google application.
 
 > [!NOTE]
 > This is what will trigger the **Google Play Games** sign-in dialog to pop-up.
 
-- Next, if we have a successful login, we make a call to **PlayGamesPlatform.Instance.GetServerAuthCode** and store it in a variable.
-- Lastly, we make the **LoginWithGoogleAccount** call and pass the **AuthCode** we just got from Google in as the **ServerAuthCode** parameter.
+- Next, if we have a successful login, we make a call to `PlayGamesPlatform.Instance.GetServerAuthCode`, and store it in a variable.
+- Lastly, we make the `LoginWithGoogleAccount` call, and pass the `AuthCode` we just got from Google in as the `ServerAuthCode` parameter.
 
 There is a callback which will have the results of your login to PlayFab. At this point, you should see a successful login in your dashboard!
 
