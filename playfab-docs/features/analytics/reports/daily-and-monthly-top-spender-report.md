@@ -16,6 +16,8 @@ ms.localizationpriority: medium
 
 The Daily and Monthly Top Spender report shows the list of players who spent money in your game on a given day or month, sorted by the transaction amount.
 
+> Note: For GDPR compliance reasons, the Daily and Monthly Top Spender Reports are only available for the past 30 days. To learn more, visit our [GDPR documentation](/playfab-docs/features/data/playerdata/playfab-gdpr-deleting-and-exporting-player-data.md).  
+
 You can select the PlayFab ID label to quickly navigate to the **Player's Details** page.
 
 ![Daily Top Spender Report Table](media/tutorials/daily-top-spender-report-table.png)  
