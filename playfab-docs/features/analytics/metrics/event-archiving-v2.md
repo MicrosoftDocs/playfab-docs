@@ -3,7 +3,7 @@ title: Event Archiving V2
 author: mafonten
 description: Shows step-by-step how to configure PlayFab event archiving from scratch to output data to Azure Blob Storage or Amazon S3 bucket.
 ms.author: mafonten
-ms.date: 4/18/2019
+ms.date: 04/18/2019
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, analytics, metrics, events
