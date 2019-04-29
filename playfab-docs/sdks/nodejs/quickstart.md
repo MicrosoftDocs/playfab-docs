@@ -14,35 +14,37 @@ ms.localizationpriority: medium
 
 This guide will help you make your first API call in NodeJS.
 
+Before continuing, make sure you have completed [Getting started for developers](../../personas/developer.md) which ensures you have a PlayFab account and are familiar with the PlayFab Game Manager.
+
 ## Node project setup
 
-### OS
+OS: This guide is written for Windows 10, however it should also work fine with a Mac.
 
-This guide is written for Windows 10, however it should also work fine with a Mac.
+1. Run this command:
 
-### Download and install Node.js
-  - [https://nodejs.org/en/download/](https://nodejs.org/en/download/)
-  - Install, and verify that Node is in your PATH environment variable.
-    - If you used the installer, it's probably set for you, and it's probably set to the default location: C:/Program Files (x86)/nodejs/
+        `npm install playfab-sdk --save`
 
-### New Project Setup
-  - Create a new folder for your project {NodeProjLocation}:
-    - GettingStarted.js
+    Keep this window open (we'll use it again later).
 
-  - Open a command window in your project folder.
+2. Download and install Node.js ([https://nodejs.org/en/download/](https://nodejs.org/en/download/))
+
+2. Verify that Node is in your PATH environment variable. If you use the installer, it will install to: C:/Program Files/nodejs/
+
+### New project setup
+
+1. Create a new folder for your project {NodeProjLocation}:
+    
+        GettingStarted.js
+
+2. Open a command or powershell window (depending on Windows version) in your project folder.
 
     ![Install PlayFab SDK](media/open-cmd-window.png)
 
-  - Run this command:
-    - `npm install playfab-sdk --save`
-
-  - Keep this window open (We'll use it again later).
-
-The PlayFab installation is now complete.
+PlayFab installation complete!
 
 ## Setting up your first API call
 
-This guide will provide the minimum steps to make your first PlayFab API call, without any GUI or on-screen feedback. Confirmation will be done with the Console log.
+This guide provides the minimum steps for you to make your first PlayFab API call, without any GUI or on-screen feedback. Confirmation is done with the Console log.
 
 In your favorite text editor, update the contents of GettingStarted.js as follows:
 
@@ -50,8 +52,8 @@ In your favorite text editor, update the contents of GettingStarted.js as follow
 > To look up the correct format for the `loginRequest` object in this example, see the API reference for [LoginWithCustomID](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid).
 
 ```javascript
-var PlayFab = require("playfab-sdk/PlayFab");
-var PlayFabClient = require("playfab-sdk/PlayFabClient");
+var PlayFab = require("./node_modules/playfab-sdk/Scripts/PlayFab/PlayFab"); 
+var PlayFabClient = require("./node_modules/playfab-sdk/Scripts/PlayFab/PlayFabClient");
 
 function DoExampleLoginWithCustomID() {
     PlayFab.settings.titleId = "144";
@@ -92,22 +94,20 @@ DoExampleLoginWithCustomID();
 
 ## Finish and execute
 
-- In the console window we opened during installation, run the command:
+In the console window we opened during installation, run the command:
+  
+           node GettingStarted.js
 
-    `node GettingStarted.js`
+   You should see the following text as a result:  "Congratulations, you made your first successful API call!" Now you can start making other API calls and building your game.
 
-- You should see the following text as a result:
-  - Congratulations, you made your first successful API call!
+For a list of all available client API calls, see our [PlayFab API References](../../api-references/index.md) documentation.
 
-- At this point, you can start making other API calls, and building your game.
-- For a list of all available client API calls, see our [PlayFab API References](../../api-references/index.md) documentation.
-
-- Happy coding!
+Happy coding!
 
 ## Deconstruct the code
 
-- Line by line breakdown for `GettingStarted.js`
-  - `PlayFab.settings.titleId = "xxxx";`
+- Line-by-line breakdown for GettingStarted.js
+  - PlayFab.settings.titleId = "xxxx";
     - Every PlayFab developer creates a title in Game Manager. When you publish your game, you must code that titleId into your game. This lets the client know how to access the correct data within PlayFab. For most users, just consider it a mandatory step that makes PlayFab work.
 
   - `var loginRequest = { TitleId: PlayFab.settings.titleId, CustomId: "GettingStartedGuide", CreateAccount: true };`
