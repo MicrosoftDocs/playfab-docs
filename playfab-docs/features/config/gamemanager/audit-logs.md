@@ -16,16 +16,15 @@ Audit logs allow you to observe and analyze the history of important changes mad
 
 ## Accessing audit logs
 
-To access the audit logs, navigate to your **Title** in **Game Manager**:
+On the Audit History page, select any entry in the log to view the complete details. You can also navigate through the **Logs** using the **SEARCH** button.
 
-- Select **Admin** from the menu to the left **(1)**.
-- Choose the **Audit History** tab **(2)**.
-- You can navigate through the **Logs** using the search panels **(3)**.
-- Each **Log** entry is located in the table.
-- The **Event time** column **(4)** exposes information about the time and author of the change.
-- The **Log type** column **(5)** gives you a clue about the kind of change that was made.
-- The **String change** and **Value** columns **(6)** represent short details of the change.
-- The **View** column **(7)** allows you to access a full **JSON** description of the change.
+- The **Event time** column exposes information about the time and the author of the change.
+
+- The **Log type** column gives you a clue about the kind of change that was made.
+
+- The **String change** and **Value** columns represent short details of the change.
+ 
+- The **View** column allows you to access a full **JSON** description of the change.
 
 ![Game Manager - Admin - Audit History](media/tutorials/game-manager-admin-audit-history.png)  
 
