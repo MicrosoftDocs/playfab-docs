@@ -105,7 +105,7 @@ The Dashboard allows you to configure, control and track many aspects of your ga
 
 - **mtd**: This will load data generated within the current month.
 
-You can see data for previous months in the [Reports Section](#9-reports).
+You can see data for previous months under **Reports** in the [Analytics](#analytics) area.
 
 > [!NOTE]
 > In Game Manager, all times are displayed in local time.
