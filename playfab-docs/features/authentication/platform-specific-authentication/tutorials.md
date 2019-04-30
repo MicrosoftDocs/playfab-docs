@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Platform-Specific Authentication Tutorials
 
-These tutorials provide basic information and Best Practices for setting up PlayFab authentication.
+These tutorials provide basic information and best practices for setting up PlayFab authentication.
 
 - [Login basics and Best Practices](../login/login-basics-best-practices.md)
 - [Running an HTTP server for testing](running-an-http-server-for-testing.md)

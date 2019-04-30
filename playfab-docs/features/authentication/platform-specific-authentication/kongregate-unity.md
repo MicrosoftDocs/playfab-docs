@@ -17,7 +17,7 @@ This tutorial shows you the minimal setup required to authenticate your players 
 ## Requirements
 
 - A registered [Kongregate](https://www.kongregate.com/) account.
-  - Familiarity with the [Kongregate Developers Guide](https://developers.kongregate.com/docs/api-overview/intro).
+- Familiarity with the [Kongregate Developers Guide](https://developers.kongregate.com/docs/api-overview/intro).
 - A registered PlayFab title.
 - A Unity project with PlayFab configured for your title.
 - Unity WebGL support installed.
@@ -25,9 +25,7 @@ This tutorial shows you the minimal setup required to authenticate your players 
 
 ## Setting up a Kongregate app
 
-Kongregate requires you to upload a preview version of the app, before you gain access to the necessary app information.
-
-Our first step is to prepare an **index.html** file with the following content.
+Kongregate requires you to upload a preview version of the app, before you gain access to the necessary app information. Our first step is to prepare an **index.html** file with the content shown below.
 
 ```html
 <!doctype html>
@@ -51,13 +49,13 @@ A page to set up a new application will open.
 - Make sure to enter the **Application Name (1)**.
 - Enter a **Game Description (2)**.
 - Then select a **Category (3)**.
-- Submit the new **App** by selecting the **Continue** button **(4)**.
+- Submit the new app by selecting the **Continue** button **(4)**.
 
 ![Kongregate upload your game](media/tutorials/kongregate-upload-your-game.png)  
 
 You will be transferred to the **Application Upload** page.
 
-- First - *and most importantly* - make sure to save the **URL** from your **Web Address Bar** in a safe and easily accessible place. *This will save you a lot of time restoring access to the application once you close the page*.
+- First - *and most importantly* - make sure to save the URL from your **Web Address Bar** in a safe and easily accessible place. *This will save you a lot of time restoring access to the application once you close the page*.
 
 - Once this is done, select the prepared **index.html** file as your **Game File (1)**.
 - Then set up the screen size **(2)**.
@@ -78,8 +76,8 @@ When the **API Information** page opens, locate the **API Key** and keep it in a
 
 In your PlayFab title Game Manager:
 
-- Navigate to **Add-ons (1)** in your menu.
-- Then locate and select **Kongregate (2)**.
+- Select **Add-ons (1)** from the menu on the left.
+- Locate and select the **Kongregate (2)** icon.
 
 ![PlayFab select Kongregate Add-on](media/tutorials/playfab-select-kongregate-add-on.png)
 
@@ -97,13 +95,13 @@ At ths point, if you do not receive an error message, you have configured PlayFa
 Use this Unity setup checklist:
 
 - [OPTIONAL] Install the [PlayFab Editor Extensions](https://api.playfab.com/downloads/unity-edex).
-  - Set up your **TitleId** in the **PlayFabSharedSettings Scriptable Object**.
-- For Unity 5.6+, download the [Kongregate Preloader WebGL Template](https://github.com/kongregate/webgl-preloader), and place it inside the **Assets/WebGLTemplates** folder **(2)**.
-- For Unity < 5.6, download the [Kongregate Preloader WebGL Template 5.5 and below](https://github.com/kongregate/webgl-preloader/tree/unity-5.5-and-below), and place it inside the **Assets/WebGLTemplates** folder **(2)**.
+  - Set up your `TitleId` in the `PlayFabSharedSettings` Scriptable Object.
+- For Unity 5.6+, download the [Kongregate Preloader WebGL Template](https://github.com/kongregate/webgl-preloader), and place it inside the `Assets/WebGLTemplates` folder **(2)**.
+- For Unity < 5.6, download the [Kongregate Preloader WebGL Template 5.5 and below](https://github.com/kongregate/webgl-preloader/tree/unity-5.5-and-below), and place it inside the `Assets/WebGLTemplates` folder **(2)**.
 
 ![Unity Assets/WebGL Templates folder](media/tutorials/kongregate-unity/unity-assets-webgltemplates-folder.png)
 
-Create your working scene.
+Now let's create your working scene.
 
 - For testing purposes, use a screen-scaling canvas **(1)** with a couple of text labels.
 
@@ -114,11 +112,11 @@ Create your working scene.
 
 ![Unity BootScene](media/tutorials/kongregate-unity/unity-boot-scene.png)
 
-This **GameObject** will contain a **KongregateHandler** component with a wired text label for debug messages.
+This `GameObject` will contain a `KongregateHandler` component with a wired text label for debug messages.
 
 ![Unity GameObject Kongregate Handler](media/tutorials/kongregate-unity/unity-kongregate-handler.png)
 
-The code for the **KongregateHandler** component is provided below.
+The code for the `KongregateHandler` component is provided below.
 
 ```csharp
 // We are specifically interested in importing PlayFab related namespaces

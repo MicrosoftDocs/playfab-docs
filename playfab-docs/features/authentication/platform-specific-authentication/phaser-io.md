@@ -26,7 +26,7 @@ This tutorial guides you through the procedure for setting up Phaser.io, and get
 
 ## Setting up a web server using MAMP
 
-To serve HTML pages to your browser you will need a web server. We use [MAMP/MAMP Pro](https://www.mamp.info/en/), but you can use whatever you are most comfortable with.
+To serve HTML pages to your browser, you will need a web server. We use [MAMP/MAMP Pro](https://www.mamp.info/en/), but you can use whatever you are most comfortable with.
 
 To begin:
 
@@ -47,7 +47,7 @@ The first step is to download Phaser from [Phaser.io](https://phaser.io/) and se
 
 ## Setup code
 
-Start by copying and pasting the following code into **Index.html**.
+Start by copying and pasting the code that follows into `Index.html`.
 
 ```html
 <!doctype html>
@@ -76,8 +76,8 @@ You should see a page similar to the one in the image below, with **Hello World!
 
 ### Next Steps
 
-- Add a new file in your **/js** folder called **main.js**.
-- Add the following code to **main.js**.
+- Add a new file in your **/js** folder called `main.js`.
+- Add the code shown below to `main.js`.
 
 ```javascript
 var game = new Phaser.Game(800, 600, Phaser.AUTO, '', { preload: preload, create: create, update: update });
@@ -106,7 +106,7 @@ There are only two lines of code needed to make this happen:
 
 ![Add Script tag to load PlayFab](media/tutorials/phaser-io/load-playfab.png)
 
-2. Copy this code into the create() method of **main.js**
+2. Copy this code into the create() method of `main.js`
 
 ```javascript
 function create() {
@@ -118,7 +118,7 @@ function create() {
 
 Now that you have PlayFab installed as a plugin to Phaser, you can set your PlayFab title ID and make API calls.
 
-The code presented below shows you how to log in a Player.
+The code presented below shows you how to log in a player.
 
 ```javascript
     game.PlayFab.settings.titleId = "D6EC"; //Your title Id from playfab goes here.

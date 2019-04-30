@@ -24,7 +24,7 @@ This tutorial guides you through the procedure for PlayFab authentication using 
 - Be familiar with [Login basics and Best Practices](../../authentication/login/login-basics-best-practices.md).
 
 > [!NOTE]
-> it is *very important* that you are using the Windows 10 operating system, are logged in with a verified Microsoft account, and have configured an access interface such as PIN. If these requirements are *not* met, the app will fail without any useful explanation of why.
+> it is *very* important that you use the Windows 10 operating system, are logged in with a verified Microsoft account, and have configured an access interface such as PIN. If these requirements are *not* met, the app will fail without any useful explanation of why.
 
 ## Preparing a Visual Studio project
 
@@ -174,7 +174,7 @@ namespace GettingStartedPlayfabUWP
 
 This file contains the layout for our main page. This is a *super trivial* layout with 2 buttons, and a text input combined in a vertically oriented grid.
 
-The buttons are bound to specific methods, and the textbox is accessible via its name **UsernameInput**.
+The buttons are bound to specific methods, and the textbox is accessible via its name `UsernameInput`.
 
 ```xaml
 <Page
@@ -235,7 +235,7 @@ namespace GettingStartedPlayfabUWP
         }
 
         /// <summary>
-        /// This method is invoked when you click Register button
+        /// This method is invoked when you select the Register button
         /// This method illustrates the flow for Registration process.
         /// We operate on 2 entities:
         /// - User Credentials of type KeyCredential
@@ -273,7 +273,7 @@ namespace GettingStartedPlayfabUWP
 
         //
         /// <summary>
-        /// This method is invoked when you click Log In button
+        /// This method is invoked when you select the Log In button
         /// This method shows entities flow during the sign in process.
         /// We have 4 different entities:
         /// - User Credentials of type KeyCredential

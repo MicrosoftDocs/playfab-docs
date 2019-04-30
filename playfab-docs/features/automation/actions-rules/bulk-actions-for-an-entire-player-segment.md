@@ -30,7 +30,7 @@ You will need to install the Unicorn Battle Sample App to run this tutorial. You
 
 ![Unicorn Battle - Launch Screen](media/tutorials/unicorn-battle-launch-screen.png)  
 
-You will want to play *several* battles in order to level up your character to at least **Level 2** which you reach at **2,725 XP** points.
+You will want to play *several* battles, in order to level up your character to at least **Level 2**, which you reach at **2,725 XP** points.
 
 ![Unicorn Battle - Level 2](media/tutorials/unicorn-battle-level-two.png)
 
@@ -74,7 +74,7 @@ Next, you can finish setting up the task.
 
 ## Step 4 - Monitor your task
 
-The **Tasks** view will show you your running task. Initially the task status will be **InProgress**, but it will quickly change to **Succeeded** since the segment is small.
+The **Tasks** view will show you your running task. Initially the task status will be **InProgress**, but it will quickly change to **Succeeded**, since the segment is small.
 
 ![Game Manager - Servers - Tasks - Task Succeeded](media/tutorials/game-manager-servers-tasks-task-succeeded.png)
 
@@ -123,15 +123,15 @@ The most powerful use of bulk actions is running an arbitrary CloudScript functi
 
 For example, imagine you have an event leaderboard that resets every week, and you want to go through all players and give a reward based on the value of the *last* event before it reset. The example provided below is using **Unicorn Battle**.
 
-1. Create a new stat (**Event_QuestsCompleted**) that resets weekly and uses the aggregation method **Last**.
+1. Create a new stat **Event_QuestsCompleted**, that resets weekly and uses the aggregation method **Last**.
 
    ![Players - Leaderboards - Edit Leaderboard](media/tutorials/players-leaderboards-edit-leaderboard.png)
 
-2. Create a new PlayStream action that increments this **Event_QuestsCompleted** stat whenever **Total_QuestsCompleted** is changed.
+2. Create a new PlayStream action that increments this `Event_QuestsCompleted` stat, whenever `Total_QuestsCompleted` is changed.
 
    ![PlayStream - Event Actions - Edit Event Action](media/tutorials/playstream-event-actions-edit-event-action.png)
 
-3. Write a CloudScript function to be called by a Bulk Action task which will go through players and give rewards based on the last value.
+3. Write a CloudScript function to be called by a Bulk Action task, which will go through players and give rewards based on the last value.
 
 ```javascript
 // this function will be called as a bulk action by a scheduled task for players in a segment

@@ -20,8 +20,8 @@ Before beginning, you should have:
 
 - A Unity project with an imported PlayFab SDK and a configured title ID.
 - A Steam Application with:
-  - The **AppID** already set up. The **AppID** is usually acquired through the [Steam Direct (Formerly Greenlight)](https://partner.steamgames.com/steamdirect) process.
-  - A **Steam Publisher Web API Key**. Follow [Creating a Publisher Web API Key](https://partner.steamgames.com/doc/webapi_overview/auth#create_publisher_key) in the **Steamworks** documentation to generate a publisher key.
+  - The AppID already set up. The AppID is usually acquired through the [Steam Direct (Formerly Greenlight)](https://partner.steamgames.com/steamdirect) process.
+  - A Steam Publisher Web API Key. Follow [Creating a Publisher Web API Key](https://partner.steamgames.com/doc/webapi_overview/auth#create_publisher_key) in the Steamworks documentation to generate a publisher key.
 - Familiarity with [Login basics and Best Practices](../../authentication/login/login-basics-best-practices.md).
 
 ## Setting up a PlayFab title
@@ -62,7 +62,9 @@ Re-open Unity and create a new scene.
 
 ![Unity project - Add Steam object](media/tutorials/steam-unity/unity-project-add-steam-object.png)  
 
-The following example shows the code for the **SteamScript** component. [Thanks to Dylan Hunt for this example.](https://community.playfab.com/answers/8875/view.html)
+The following example shows the code for the **SteamScript** component.
+
+([Thanks to Dylan Hunt for this example.](https://community.playfab.com/answers/8875/view.html))
 
 ```csharp
 // Import all the necessary namespaces

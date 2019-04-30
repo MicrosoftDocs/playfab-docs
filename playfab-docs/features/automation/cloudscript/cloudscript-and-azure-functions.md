@@ -12,7 +12,9 @@ ms.localizationpriority: medium
 
 # CloudScript integration with Azure Functions
 
-At GDC 2019, we shared our plans to integrate the power and ease of [Azure Functions](https://docs.microsoft.com/azure/azure-functions/) with PlayFab CloudScript's flexible configuration capabilities. This allows us to address several big customer requests:
+At GDC 2019, we shared our plans to integrate the power and ease of [Azure Functions](https://docs.microsoft.com/azure/azure-functions/) with PlayFab CloudScript's flexible configuration capabilities.
+
+This allows us to address several big customer requests:
 
 * Support for C#, JavaScript, and other additional languages.
 * Seamless switching from local to remote debugging.
