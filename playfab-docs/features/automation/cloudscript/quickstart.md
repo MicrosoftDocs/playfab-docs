@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 CloudScript offers a fast, secure and scalable alternative to dedicated servers. Your custom JavaScript lives and executes directly on PlayFab machines.
 
-From here, your code can be called *directly* by your game clients or indirectly via PlayStream actions. Additionally, CloudScript methods have full access to PlayFab's [Server](../../../api-references/index.md) API set.
+From here, your code can be called *directly* by your game clients - or indirectly via PlayStream actions. Additionally, CloudScript methods have full access to PlayFab's [Server](../../../api-references/index.md) API set.
 
 This quickstart covers uploading and managing your CloudScript files in the PlayFab Game Manager.
 
@@ -37,7 +37,7 @@ To see these functions:
 - Select your title.
 - Select **Automation** on the left side bar.
 
-You should see a number of CloudScript methods, such as **HelloWorld**, which logs the message **Hello PLAYERID**, where **PLAYERID** is the current player's PlayFab ID.
+You should see a number of CloudScript methods - such as **HelloWorld**, which logs the message **Hello PLAYERID**, where **PLAYERID** is the current player's PlayFab ID.
 
 ![Game Manager - Automation - CloudScript](media/tutorials/game-manager-cloudscript.png)  
 
@@ -67,7 +67,7 @@ You may also use GitHub to manage your CloudScript revisions. You must have a Gi
 - The next window will have an orange **AUTHORIZE GITHUB ACCOUNT** button.
 - Create a new, empty repository in **GitHub**.
 - Return to the **GitHub** page in the PlayFab Game Manager (refresh tab).
-- At this point, you should be able to select your **GitHub** repository and bind it to your title.
+- At this point, you should be able to select your **GitHub** repository, and bind it to your title.
 
 ![Game Manager - Addons - GitHub](media/tutorials/game-manager-addons-github.png)  
 
