@@ -22,7 +22,7 @@ In some scenarios, you may need to run a local HTTP server for test purposes. Fo
 
 Run the command line/terminal on your system (it doesn't matter which directory you are currently in).
 
-Execute **npm install -g http-server**. Once NPM finishes, you have the tiny HTTP-server installed. That's it.
+Execute `npm install -g http-server`. Once NPM finishes, you have the tiny HTTP-server installed. That's it.
 
 ## Serving files
 
@@ -59,7 +59,7 @@ Run the **command line/terminal** and cd to the folder with your **index.html** 
 
 You can optionally specify a port to run the server on.
 
-- **Example**: Execute **http-server -p 80** to run your server on **port 80**. If a port is occupied, you will have to find what application is using this port and shut it down before you attempt to run the HTTP server again.
+- **Example**: Execute `http-server -p 80` to run your server on **port 80**. If a port is occupied, you will have to find what application is using this port and shut it down before you attempt to run the HTTP server again.
 
 ### Serving files with a custom domain name
 
@@ -72,7 +72,7 @@ They also often use this configuration to ensure that a user can only log into y
 > [!NOTE]
 > While this is an important and useful security restriction, it may produce complications when trying to locally test your code.
 
-If you run your server on **port 80** and your use-case is simple enough, you can utilize the HOSTS file on your operating system to access your HTTP server through a valid domain name.
+If you run your server on Port 80, and your use-case is simple enough, you can utilize the HOSTS file on your operating system to access your HTTP server through a valid domain name.
 
 The HOSTS file is a special file available on both Windows and Mac OS. It allows you to override certain domain names with custom endpoints. Schematically, the HOSTS file looks like this:
 
@@ -86,9 +86,9 @@ IP_ADDRESS_3 DOMAIN_NAME_3
 ...
 ```
 
-Each line represents exactly *one* entry. When you try to reach **DOMAIN_NAME_1**, your browser will direct your request to **IP_ADDRESS_1**.
+Each line represents exactly *one* entry. When you try to reach `DOMAIN_NAME_1`, your browser will direct your request to `IP_ADDRESS_1`.
 
-The same applies for *each* entry in the HOSTS file. In the preceding example, entry number **4** starts with **#**. This is a syntax for *comment*.
+The same applies for *each* entry in the HOSTS file. In the preceding example, entry number `4` starts with `#`. This is a syntax for comment.
 
 By *commenting* out certain entries you may disable them, without necessarily removing them from the HOSTS file.
 

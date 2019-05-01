@@ -12,11 +12,11 @@ ms.localizationpriority: medium
 
 # Migrating from Parse to PlayFab
 
-## How does PlayFab compare to Parse?
+## A PlayFab comparison to Parse
 
 Both PlayFab and Parse provide back-end tools and services for building and operating your game, but there are several differences. Understanding these differences is important for planning a migration from one to the other.
 
-The most important difference is that Parse is a *general purpose mobile back-end*, with very few game-specific features.
+The most important difference is that Parse is a *general purpose mobile back end*, with very few game-specific features.
 
 With Parse, you need to write and test game-specific systems *yourself*, using the basic building blocks that it provides.
 
@@ -57,7 +57,7 @@ With PlayFab, custom data is stored in these places:
   > [!NOTE]
   > For more information on this subject, see [Catalogs](../../commerce/items/catalogs.md).
   
-- **Inventory data**: Every item in a player’s inventory can have custom properties associated with it, such as item hit-points, or config data for procedurally generated items.
+- **Inventory data**: Every item in a player's inventory can have custom properties associated with it, such as item hit-points, or config data for procedurally generated items.
 - **Group data**: Data is shared among a specific group of players, such as a guild or lobby. Examples include a guild name or message of the day. Players can be added and removed from a shared group, and all members in the group can read or write shared group data.
 - **Player data**: Data is stored per player account, like Parse Keyed User data.
 
@@ -84,7 +84,7 @@ With PlayFab, custom data is stored in these places:
   - **Segmentation** - Stats can be used to define player segmentation rules.
   - **Match-making** - Stats can be used as part of the match-making logic (e.g., find a match based on player’s level or weapon rating).
 
-One limitation of the **+** approach is that it is not possible to write your own SQL queries directly against data stored in PlayFab.
+One limitation of the **+** approach, is that it is not possible to write your own SQL queries directly against data stored in PlayFab.
 
 But with PlayFab you *can* segment players into different groups, based on player stats and other properties. You can *then* trigger actions automatically, as players enter and exit these segments, and soon you will be able to execute batch actions across an entire segment (e.g., give a gift, or send a message).
 
@@ -102,7 +102,7 @@ PlayFab *does provide* GitHub integration for managing CloudScript, and it is *v
 
 Like Parse, PlayFab provides rich support for creating and managing player profiles. Player accounts can be linked to multiple different authentication mechanisms, such as [Facebook](xref:titleid.playfabapi.com.client.authentication.loginwithfacebook), [Steam](xref:titleid.playfabapi.com.client.authentication.loginwithsteam), an [email/password](xref:titleid.playfabapi.com.client.authentication.loginwithemailaddress), an [iOS](xref:titleid.playfabapi.com.client.authentication.loginwithiosdeviceid) or [Android](xref:titleid.playfabapi.com.client.authentication.loginwithandroiddeviceid) device ID, or your own [custom identifiers](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid), in order to make it easy to share a single player profile across multiple devices or platforms.
 
-PlayFab’s Game Manager tool also provides a powerful set of tools for viewing and managing player profiles - ideal for debugging a game in production, or providing customer support for a game post-launch.
+The PlayFab Game Manager tool also provides a powerful set of tools for viewing and managing player profiles - ideal for debugging a game in production, or providing customer support for a game post-launch.
 
 Using the Game Manager you can:
 

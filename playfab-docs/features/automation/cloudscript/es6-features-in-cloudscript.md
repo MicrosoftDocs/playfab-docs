@@ -12,21 +12,24 @@ ms.localizationpriority: medium
 
 # ES6 features in CloudScript
 
-The CloudScript runtime environment supports most of the modern ECMAScript 6 features. While a majority of these features are syntactical tricks, one can use them to improve and clean the CloudScript code base.
+The CloudScript runtime environment supports most of the modern ECMAScript 6 features. While a majority of these features are syntactical tricks, you can use them to improve and clean the CloudScript code base.
 
 A complete overview of ES6 features is available in this [Cheat Sheet](https://devhints.io/es6).
 
 This tutorial shows several tricks you may use in your CloudScript.
 
 > [!NOTE]
-> Some of the features require *Strict* mode. Enable this mode by placing the following snippet as the very first line of your CloudScript file:
+> Some of the features require `strict` mode. Enable this mode by placing the following snippet as the very first line of your CloudScript file:
 > `use strict;`
 
 ## String interpolation
 
 When composing messages for your players, you may want to use multi-line interpolated strings. Use the *back-tick symbol* to create an interpolated string. You may then insert data right into the string using `${ variable }` syntax.
 
-This allows you to avoid string concatenation and improve code readability significantly. *Back-tick strings are verbatim and may be multi-line*. This means you have to keep an eye on all indention, as any extra space/tab will be captured into the string.
+This allows you to avoid string concatenation, and improve code readability significantly.
+
+> [!NOTE]
+> Back-tick strings are verbatim and may be multi-line. This means you have to keep an eye on *all indention*, as any extra space/tab will be captured into the string.
 
 ```javascript
 function sendPushNotification(playerName, prizeAmount, newLevel) {
@@ -102,7 +105,7 @@ Object.assign(handlers, ProductionHandlers);
 
 This not only allows you to quickly enable and disable handler groups, but it also gives you a point to process your handlers and wrap them with useful code, such as exception handling.
 
-The following code extends the previous snippet with automatic exception logging. As an example, we log the problem, which is not always useful, but you can extend the behavior to your taste.
+The following code extends the previous snippet with automatic exception logging. As an example, we log the problem (which is not always useful), but you can extend the behavior to your taste.
 
 ```javascript
 // Handlers installer wraps the handler to catch error
@@ -137,11 +140,11 @@ installHandlers(ProductionHandlers);
 
 ## Getters
 
-One may use Getters to encapsulate common API calls into a more syntactically pleasing look and feel. Consider the following **TitleData** state.
+One may use "Getters" to encapsulate common API calls into a more syntactically pleasing look and feel. Consider the following **Title Data** state.
 
 ![Game Manager - Title Data](media/tutorials/game-manager-title-data.png)  
 
-The following snippet shows how to retrieve `foo` and `bar` data from `TitleData` and then use them in a very straightforward way.
+The following snippet shows how to retrieve `Foo` and `Bar` data from `TitleData` and then use them in a very straightforward way.
 
 ```javascript
 'use strict'

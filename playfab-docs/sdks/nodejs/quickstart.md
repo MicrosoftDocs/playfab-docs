@@ -22,23 +22,23 @@ OS: This guide is written for Windows 10, however it should also work fine with 
 
 1. Run this command:
 
-        `npm install playfab-sdk --save`
+   `npm install playfab-sdk --save`  
 
-    Keep this window open (we'll use it again later).
+   Keep this window open (we'll use it again later).
 
 2. Download and install Node.js ([https://nodejs.org/en/download/](https://nodejs.org/en/download/))
 
-2. Verify that Node is in your PATH environment variable. If you use the installer, it will install to: C:/Program Files/nodejs/
+3. Verify that Node is in your PATH environment variable. If you use the installer, it will install to: C:/Program Files/nodejs/
 
 ### New project setup
 
 1. Create a new folder for your project {NodeProjLocation}:
-    
-        GettingStarted.js
+
+   `GettingStarted.js`
 
 2. Open a command or powershell window (depending on Windows version) in your project folder.
 
-    ![Install PlayFab SDK](media/open-cmd-window.png)
+   ![Install PlayFab SDK](media/open-cmd-window.png)
 
 PlayFab installation complete!
 
@@ -95,10 +95,10 @@ DoExampleLoginWithCustomID();
 ## Finish and execute
 
 In the console window we opened during installation, run the command:
-  
-           node GettingStarted.js
 
-   You should see the following text as a result:  "Congratulations, you made your first successful API call!" Now you can start making other API calls and building your game.
+`node GettingStarted.js`
+
+You should see the following text as a result:  "Congratulations, you made your first successful API call!" Now you can start making other API calls and building your game.
 
 For a list of all available client API calls, see our [PlayFab API References](../../api-references/index.md) documentation.
 
