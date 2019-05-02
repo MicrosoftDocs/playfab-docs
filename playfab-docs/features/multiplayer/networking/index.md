@@ -34,7 +34,7 @@ A goal of PlayFab Party and our other multiplayer services is to facilitate inte
 ## Key Resources
 
 - [Windows 7 (Win32 C++), Windows 10 (Win32 C++), and Xbox One (XDK C++) libraries on Github](https://www.nuget.org/packages?q=%22playfab+party%22)
-- [Windows 10 and Xbox One sample (BumbleRumble)](https://github.com/PlayFab/PlayFab-Samples)
+- [Windows 10 and Xbox One sample (BumbleRumble)](https://github.com/PlayFab/PlayFab-Samples/tree/master/Samples/All/BumbleRumble)
 
 ## Roadmap
 
