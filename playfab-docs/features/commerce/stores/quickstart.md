@@ -17,14 +17,13 @@ This stores quickstart gets you started with creating and using stores with Play
 In this quickstart tutorial, you will:
 
 - Create a store with a discounted price.
-- Buy an item from the store.
-- Create a store with a discounted price.  
+- Buy an item from the store.  
 
 Buying items out of the Catalog is supported, but it's not how most games structure their purchases. Whether you're making an idle clicker, an RPG, an FPS, or an endless runner, you probably have vendors in your game where players can buy weapons, armor, or running shoes.
 
 Our solution for this is **Stores**, a subset of your catalog with prices you can override. Stores also enable sale prices, price overrides for segments, and some amazing functionality in PlayStream (we'll get to that later).
 
-First, add some Items to sell in your catalog:
+First, let's add some Items to sell in your catalog:
 
 1. Go to **Economy** and select **Catalogs**.
 2. Select your **main** catalog.
@@ -55,7 +54,7 @@ If you don't enter any price for an item, it will be removed from the store. If 
 ![Create Store](media/tutorials/create-store.png)
 
 > [!TIP]
-> You can drag and drop the rows to rearrange the order of the items.
+> You can drag-and-drop the rows to rearrange the order of the items.
 
 1. Next, add some **GD** prices to your items, but make them lower than the catalog prices:
 

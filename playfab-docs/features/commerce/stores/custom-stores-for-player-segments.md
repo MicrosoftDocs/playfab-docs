@@ -18,11 +18,11 @@ In our [Player Segmentation](../../analytics/segmentation/index.md) overview, we
 
 This tutorial lets you *combine* these features, and produce alternate stores available *only* to players from defined player segments.
 
-First, we need some example segments, so here are some segments that are segmented-store-testing friendly.
+Let's begin with some example segments. In the screen shot shown below, we have provided some segments that are segmented-store-testing friendly.
 
 ![Game Manager - Players - Segments - Example Segments](media/tutorials/game-manager-players-segments-example-segments.png)  
 
-For the next image, we will reuse the **Equipment** store created in the [Stores and Sales](stores-and-sales.md) tutorial, and add player segmentation.
+In the next image, we will reuse the **Equipment** store created in the [Stores and Sales](stores-and-sales.md) tutorial, and add player segmentation.
 
 First, you must create each store separately, and give it an identifiable name. Each store should have content that is customized for that segment.
 

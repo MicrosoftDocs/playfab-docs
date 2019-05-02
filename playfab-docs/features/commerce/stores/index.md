@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # PlayFab Stores
 
-Stores are the best way to let players purchase items in your game. You can use the Game Manager to change the order of items and adjust prices at any time. Using segments, you can even give special prices to certain players without touching your game code.  
+Stores are the best way to let players purchase items in your game. You can use the Game Manager to change the order of items, and adjust prices at any time. Using segments, you can even give special prices to certain players without touching your game code.  
   
 ## Key concepts
 
