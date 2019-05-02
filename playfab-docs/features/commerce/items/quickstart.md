@@ -3,7 +3,7 @@ title: Items quickstart
 author: thomasgu
 description: Quickstart for Items.
 ms.author: tomg
-ms.date: 30/01/2019
+ms.date: 01/30/2019
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, commerce, items, catalogs
@@ -12,73 +12,102 @@ ms.localizationpriority: medium
 
 # Items quickstart
 
-In this quickstart tutorial, you will:
+The Items quickstart gets you started with the building blocks of your in-game economy: virtual currency, catalogs, items, and purchases.
+
+In this quickstart, you will:
 
 - Set up a virtual currency for your game.
+- Give virtual currency to a player.
 - Add an item to your in-game catalog.
-- Purchase an item in-game, using virtual currency.
+- Use PlayFab APIs to purchase an item from the catalog using virtual currency.
+- Use information in the Game Manager to confirm that the purchase was successful.
+
+## Setting up a virtual currency
 
 PlayFab supports a robust game economy with multiple currencies and items.
 
-To access these features:
+To access these features and create a virtual currency:
 
-1. Go to **Economy** and select **Currencies**.
-2. Select **New Currency** and change these fields:
+1. Open **Game Manager** and select **Economy** on the left side bar.
+2. Select the **Currency** tab, and select **New Currency**. (This opens the **New Currency** screen shown below).
+3. To create your virtual currency, edit these fields:
 
-   - **Currency code** (2 uppercase characters): **GD**.
-   - **Display name**: **Gold**.
-3. Select the **Save Currency** button.
+   - Set **Currency code (2 uppercase characters)** to **GD**.
+   - Set **Display name** to **Gold**.
+4. Select **SAVE CURRENCY**.
 
-![Save Currency](media/tutorials/virtual-currency.png)
-Now you can give players virtual currency directly. Since it can be dangerous to give clients the ability to call `AddUserVirtualCurrency`, let's add money using the Game Manager:
+![Save New Currency](media/tutorials/game-manager-economy-currency-new-currency.png)
 
-1. Go to the player's **Virtual Currency** tab.
-2. Select the **GD** currency.
-3. Change the amount to **100**.
-4. Select **Save virtual currency**.
+## Giving virtual currency to a player
 
-![Modify Currency](media/tutorials/mod-virtual-currency.png)
-Now the player has 100 gold. What can you do with it? Buy an item!
+You can give players virtual currency directly, so let's add money to a player using the Game Manager:
+
+1. Select **Players** on the left side bar, and select the **ID** of a player.
+2. Select the player's **Virtual Currency** tab.
+3. Select the **GD** currency. (This opens the **Modify Virtual Currency** screen shown below).
+4. Change the **Amount** to **100**.
+5. Select **SAVE VIRTUAL CURRENCY**.
+
+![Modify Currency](media/tutorials/game-manager-players-modify-virtual-currency.png)
+
+> [!TIP]  
+> It can be dangerous to give clients the ability to call the [AddUserVirtualCurrency](xref:titleid.playfabapi.com.client.playeritemmanagement.adduservirtualcurrency) API. To set restrictions on specific APIs, use the [API access policy](../../config/gamemanager/api-access-policy.md).
+
+Now the player has 100 gold. What can they do with it? Buy an item!
 
 ## Adding an item to your in-game catalog
 
-No sense having money if you can't spend it! Let's create a catalog, (which is a collection of items). You can create catalogs that correspond to the platforms on which you're releasing your game, or major version numbers - whatever you like.
+No sense having money if you can't spend it! Let's create a catalog, (which is a collection of items).
+
+You can create catalogs that correspond to the platforms on which you're releasing your game, or major version numbers - whatever you like.
 
 > [!TIP]
-> We don't recommend creating multiple catalogs to differentiate types of items.  You can filter items more effectively using classes, tags, and stores.
+> We don't recommend creating multiple catalogs to differentiate types of items. You can filter items more effectively using classes, tags, and stores.
 
 To make a catalog with an item:
 
-1. Go to **Economy**, and select **Catalogs**.
-2. Create a new catalog named **main**. An item with the ID of **One** is added automatically.
-3. Select **One** and change these fields:
+1. Select **Economy** on the left side bar and select the **Catalogs** tab.
+2. Select the **New Catalog** button and enter **main** as the **Catalog version**. An item with the ID of **One** is added automatically.
+3. Select **One**. (This opens the **Edit Catalog Item** screen shown below). Edit these fields:
 
-   - **Item ID**: **apple**.
-   - **Display name**: **Perfectly normal apple**.
+   - Set **Item ID** to **apple**.
+   - Set **Display name** to **apple**.
+   - Set **Description** to **Perfectly normal apple**.
 
-At the bottom of the form is the **Prices** section, where you define how much an item costs in your game's virtual currency.
+At the bottom of the form is the **PRICES** section, where you define how much an item costs in your game's virtual currency.
 
 1. Set the apple's price in gold (**GD**) to **5**.
-1. Select **Save item**.
+2. Select **SAVE ITEM**.
 
 ![Add to Catalog](media/tutorials/add-catalog.png)
 
-## Purchase an item using virtual currency
+## Purchasing an item using virtual currency
 
-Let's get the catalog and attempt to make a purchase.
+Let's use the PlayFab APIs to make a purchase in your game.
 
-1. In your game, call `GetCatalogItems:
-    CatalogVersion: main`.
-2. Verify that you see an **apple** with a **GO** price of **5**.
-3. Call `PurchaseItem` to buy the apple.
+1. Log in as the player that was assigned 100 gold in virtual currency (as described in [Giving virtual currency to a player](#giving-virtual-currency-to-a-player)).
+2. Call [GetCatalogItems](xref:titleid.playfabapi.com.client.title-widedatamanagement.getcatalogitems) with the following parameter in the request:
+   - `CatalogVersion = "main"`
 
-   - **CatalogVersion: main**.
-   - **ItemId: apple**.
-   - **VirtualCurrency: GO**.
-   - **Price: 5**.
-4. Last, call `GetUserInventory`, and take a look at the player inventory. You should see an apple!
+3. Verify that the `Catalog` in the result contains an **apple** with a **GD** price of **5**.
+4. Purchase the apple by calling [PurchaseItem](xref:titleid.playfabapi.com.client.playeritemmanagement.purchaseitem) with these parameter values in the request:
 
-> [!NOTE]
-> You can also check the player's **PlayStream** tab, where you should see a **Player vc item purchased** event. The player's **Inventory** tab will also show the apple. In addition, you can revoke the item, or grant yourself *more* apples on the **Inventory** tab.
+   - `CatalogVersion = "main"`
+   - `ItemId = "apple"`
+   - `VirtualCurrency = "GD"`
+   - `Price = 5`
 
-If you check the player’s virtual currency, they should only have 95 gold left.
+5. Finally, call [GetUserInventory](xref:titleid.playfabapi.com.client.playeritemmanagement.getuserinventory) and take a look at the result of that method. In the array of items in the player's `Inventory` - you should see an apple!
+
+## Confirming that the purchase was successful
+
+To confirm the purchase in Game Manager:
+
+1. Select **Players** from the left side bar to open the **Players** tab.
+2. Select the **ID** of the player that purchased the item.
+
+Check the following:
+
+- Open the **PlayStream** tab. You should see a [Player virtual currency item purchased](../../../api-references/events/player-vc-item-purchased.md) event.
+- Open the **Inventory** tab. The inventory should now contain an apple. You can also use features on the **Inventory** tab to revoke the item, or grant the player *more* apples.
+- Open the **Virtual Currency** tab. The player should only have 95 gold left.
