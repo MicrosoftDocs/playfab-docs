@@ -16,7 +16,7 @@ This tutorial describes how to recognize and handle errors within your CloudScri
 
 ## Identifying
 
-The first step is identifying the error. While every uncaught error is logged and available from the response to the caller (client), you may still catch the error early by using a try/catch block.
+The first step is identifying the error. While every uncaught error is logged and available from the response to the caller (client), you may still catch the error early by using a `try/catch` block.
 
 Consider the following CloudScript snippet that produces and catches the error.
 
@@ -35,7 +35,10 @@ handlers.GenerateError = () => {
 }
 ```
 
-Notice how the error codes were extracted within the catch block? Consult our [Global API Method Error Codes](global-api-method-error-codes.md) tutorial for a complete list of error and their identifying codes. The error code on its own is sufficient to identify the error.
+Notice how the error codes were extracted within the catch block? Consult our [Global API Method Error Codes](global-api-method-error-codes.md) tutorial, for a complete list of errors and their identifying codes.
+
+> [!NOTE]
+> The error code on its own is sufficient to identify the error.
 
 ## Logging
 

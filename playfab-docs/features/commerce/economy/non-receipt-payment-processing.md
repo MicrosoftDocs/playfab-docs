@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Non-receipt payment processing
 
-In addition to receipt validation for a variety of platforms, PlayFab also provides a mechanism for enabling purchases via payment providers that don’t use a receipt or entitlement-based systems, such as Facebook, PayPal, Xsolla, and Steam.
+In addition to receipt validation for a variety of platforms, PlayFab also provides a mechanism for enabling purchases via payment providers that don’t use a receipt or entitlement-based systems - such as Facebook, PayPal, Xsolla, and Steam.
 
 This tutorial will walk you through using this cart-style payments system, showing you how to:
 
@@ -33,7 +33,6 @@ Before we begin with the logic for actually processing payments, the first thing
 To do that:
 
 - Choose your game in the PlayFab Game Manager.
-
 - Select the **Add-ons** tab.
 
 That takes you to our **Add-ons Marketplace**, where you can find all our third-party integrations, including **Payment Providers**.
@@ -43,7 +42,6 @@ That takes you to our **Add-ons Marketplace**, where you can find all our third-
 
 - Select the **Providers** you want to use.
 - Then choose the **Install** option for each.
-
 - Enter the requested information (commonly an application and secret key), but each provider will have their own unique requirements.
 
 > [!NOTE]
@@ -62,7 +60,7 @@ From the client, the sequence of calls for this process are very similar for mos
 > [!NOTE]
 > The exception to this is Xsolla, which we'll address separately at the end of this tutorial.
 
-In the examples that follow, you’ll see fields like **{{TitleID}}** and **{{SessionTicket}}**. You will need to replace these values in your own code, with the appropriate values for your game, and the player’s authentication ticket.
+In the examples that follow, you’ll see fields like `{{TitleID}}` and `{{SessionTicket}}`. You will need to replace these values in your own code, with the appropriate values for your game, and the player’s authentication ticket.
 
 ## Initiating the purchase
 
@@ -87,15 +85,15 @@ PlayFabClientAPI.StartPurchase(new StartPurchaseRequest() {
 });
 ```
 
-In this example, we’re loading up the cart with an item defined in the game catalog with the ID of **IAP1_0** - a **BigBagOfGold**. This is the ItemId, as defined in the game catalog.
+In this example, we’re loading up the cart with an item defined in the game catalog with the ID of `IAP1_0` - a `BigBagOfGold`. This is the `ItemId`, as defined in the game catalog.
 
 The player wants to purchase only *one* of it, and the annotation is being used to indicate how the item wound up in the player inventory, which is useful for later review.
 
 It’s also possible to specify that this purchase is using the pricing from a store you’ve defined in your game, by including the StoreId parameter, but we’ll leave that out of this example, for simplicity.
 
-The return from the StartPurchase call contains a lot of information - including the DisplayName and Description values for the items from your catalog, any defined prices for them, plus the player's virtual currency balances.
+The return from the StartPurchase call contains a lot of information - including the `DisplayName` and `Description` values for the items from your catalog, any defined prices for them, plus the player's virtual currency balances.
 
-But the primary things you’ll need for the next step are the OrderId (which uniquely identifies this purchase), and the specific provider you want to use, which is in the PaymentOptions.
+But the primary things you’ll need for the next step are the `OrderId` (which uniquely identifies this purchase), and the specific provider you want to use, which is in the `PaymentOptions`.
 
 > [!NOTE]
 > Only Payment Providers you have enabled for your title will appear in the `PaymentOptions`.
@@ -149,7 +147,7 @@ Normally, the flow at this point is to tell PlayFab which payment providers will
 
 Facebook is an exception to this procedure. It requires that the purchase be initiated in *their* service *first*. After that, a third-party service such as PlayFab can use the Facebook-provided transaction identifier to validate the status of the purchase.
 
-If your store, catalog, or item IDs are *not* alpha-numeric, they must be [HTML / URL encoded](https://www.w3schools.com/tags/ref_urlencode.asp) when building the OpenGraphProduct URL, as shown in the following code.
+If your store, catalog, or item IDs are *not* alpha-numeric, they must be [HTML / URL encoded](https://www.w3schools.com/tags/ref_urlencode.asp) when building the `OpenGraphProduct` URL, as shown in the following code.
 
 ```csharp
 FB.ui({
@@ -175,10 +173,10 @@ In particular, the TitleId - which you need to replace with the *correct* title 
 
 In addition, you’ll also need to make sure you’re using the values from earlier in the flow:
 
-- The **Catalog ID** of the PlayFab-defined catalog containing the item to be purchased (**IAP1_0**).
+- The **Catalog ID** of the PlayFab-defined catalog containing the item to be purchased (`IAP1_0`).
 
-- The **Item ID** of the item in the game’s PlayFab catalog which is to be purchased (**BigBagOfGold**)
-- The **Order ID** returned from the call to **StartPurchase**, at the beginning of this process (**1234567890ABCDEF**)
+- The **Item ID** of the item in the game’s PlayFab catalog which is to be purchased (`BigBagOfGold`)
+- The **Order ID** returned from the call to **StartPurchase**, at the beginning of this process (`1234567890ABCDEF`)
 
 On a successful response, Facebook will return a payment_id, which can then be used in the Client/PayForPurchase call as the `ProviderTransactionId`.
 
@@ -216,17 +214,15 @@ This completes the loop, connecting PlayFab to the purchase on both sides of the
 
 You can read more about the Facebook payment system on the Facebook Developer Portal: [https://developers.facebook.com/docs/payments/overview](https://developers.facebook.com/docs/payments/overview)
 
-Now, an additional aspect of Facebook Payments is that there is a requirement that titles use webhooks for payments to enable real time change notifications to payment status.
+An additional aspect of Facebook Payments is that there is a requirement that titles use webhooks for payments, to enable real time change notifications to payment status.
 
-This is necessary in the Facebook model, as payments can take a very long time to complete in some cases.
-
-Fortunately, this is simple. In your title setup in Facebook, simply enter the following as your Callback URL.
+This is necessary in the Facebook model, as payments can take a very long time to complete in some cases. Fortunately, this is simple. In your title setup in Facebook, simply enter the following as your Callback URL.
 
 ```html
 https://{{TitleId}}.playfabapi.com/ThirdPartyPayments/FacebookPaymentUpdate
 ```
 
-Where **{{TitleId}}** is the **Title ID** for your game in PlayFab (for example, <https://aaa.playfabapi.com/ThirdPartyPayments/FacebookPaymentUpdate>).
+Where `{{TitleId}}` is the **Title ID** for your game in PlayFab (for example, <https://aaa.playfabapi.com/ThirdPartyPayments/FacebookPaymentUpdate>).
 
 There’s no need to specify a token in the Facebook setup - just set the Callback URL, confirm that your PlayFab setup is correct in the **Facebook Add-ons** page of the **Game Manager**, and you’re set.
 
@@ -257,7 +253,7 @@ PlayFabClientAPI.PayForPurchase(new PayForPurchaseRequest() {
 
 As a result of the PayForPurchase call, PlayFab uses the web methods provided by Steam to initiate the purchase in that service. This automatically causes the user to be presented with the purchase confirmation dialog via the Steam client.
 
-So at the same time you’re getting the response to the Client/PayForPurchase call, the user is being asked to accept the payment.
+So at the same time you’re getting the response to the `Client/PayForPurchase` call, the user is being asked to accept the payment.
 
 ```json
 {
@@ -273,11 +269,11 @@ So at the same time you’re getting the response to the Client/PayForPurchase c
 }
 ```
 
-Steam uses a callback mechanism to inform the title of completion of the purchase process, so you will need to register a callback handler for the MicroTxnAuthorizationResponse_t callback.
+Steam uses a callback mechanism to inform the title of completion of the purchase process, so you will need to register a callback handler for the `MicroTxnAuthorizationResponse_t` callback.
 
 Registered Steam developers can get further information on this process at this location: [https://partner.steamgames.com/documentation/MicroTxn#WebPurchasing](https://partner.steamgames.com/documentation/MicroTxn#WebPurchasing).
 
-Upon receiving the callback, the title should proceed to the ConfirmPurchase call, shown in the [Last Step: Confirm the Purchase](#last-step-confirm-the-purchase) section.
+Upon receiving the callback, the title should proceed to the `ConfirmPurchase` call, shown in the [Last Step: Confirm the Purchase](#last-step-confirm-the-purchase) section.
 
 ### PayPal
 
@@ -324,7 +320,7 @@ The final part of the process is for PlayFab to complete the purchase process, a
 
 In the case of some providers, at this stage the title already knows if the purchase was completed successfully.
 
-In any case, a call to Client/ConfirmPurchase will only add the items to the player inventory if the payment was made, and they haven’t already been added.
+In any case, a call to `Client/ConfirmPurchase` will only add the items to the player inventory if the payment was made, and they haven’t already been added.
 
 ```csharp
 PlayFabClientAPI.ConfirmPurchase(new ConfirmPurchaseRequest() {
@@ -336,7 +332,7 @@ PlayFabClientAPI.ConfirmPurchase(new ConfirmPurchaseRequest() {
 });
 ```
 
-At this point, if the order has been completed successfully, we iterate through the items in the cart you set up with the call to Client/StartPurchase.
+At this point, if the order has been completed successfully, we iterate through the items in the cart you set up with the call to `Client/StartPurchase`.
 
 This adds the items to the player's inventory and returns the information about the items purchased to the title.
 
@@ -364,7 +360,7 @@ This adds the items to the player's inventory and returns the information about 
 
 Behind the scenes, there are a number of state changes the order goes through. The complete list is provided below, though it should be noted that depending on the specific provider process, some of these states will never show up in the results of any of the three purchase process API calls, and are included here for completeness.
 
-- **CreateCart** - While the order object itself is not returned in the response to Client/StartPurchase, it has been created at that point. At this stage, the items and prices are stored in the object, but it has not been submitted to any payment provider.
+- **CreateCart** - While the order object itself is not returned in the response to `Client/StartPurchase`, it has been created at that point. At this stage, the items and prices are stored in the object, but it has not been submitted to any payment provider.
 
 - **Init** - As shown above, this is the status returned when the order has been submitted to the payment provider, but has not yet been authorized by the player.
 - **Approved** - This occurs briefly, after the player has approved the payment, but before PlayFab has completed the process of placing the items in the player inventory. *It is only included in this list for completeness, as titles should never see an order with this status*.
@@ -391,7 +387,7 @@ First, you'll need to have a merchant ID, project ID, and merchant API key from 
 
 ### Initiating the purchase (Xsolla)
 
-Once you're ready to make a purchase, you'll use the GetPaymentToken API call to request a token from the Xsolla service, by specifying it as the `TokenProvider`.
+Once you're ready to make a purchase, you'll use the `GetPaymentToken` API call to request a token from the Xsolla service, by specifying it as the `TokenProvider`.
 
 ```csharp
 PlayFabClientAPI.GetPaymentToken(new GetPaymentTokenRequest() {
@@ -438,7 +434,7 @@ Again, you'll need to refer to the Xsolla documentation found in the link we pro
 
 Once that is done, there's no further need for you to take any action. Xsolla and PlayFab will exchange webhook calls, and PlayFab will fulfill the purchase by putting the purchased items into the player inventory and posting the appropriate events to PlayStream.
 
-You can check the transaction status (see the full list above) by polling the client/GetPurchase API call.
+You can check the transaction status (see the full list above) by polling the `Client/GetPurchase` API call.
 
 In most cases, this process should not take more than 2-3 seconds to complete.
 
@@ -472,9 +468,9 @@ PlayFabClientAPI.GetPurchase(new GetPurchaseRequest()
 
 One thing to be aware of is that payments can take a long time to complete with some providers.
 
-If you find that the status of the purchase in the response from a call to Client/ConfirmPurchase is still Init, you should wait before re-querying. The best practice here is to store the OrderId at the start of the process, and then use an exponential back-off when querying for the result.
+If you find that the status of the purchase in the response from a call to `Client/ConfirmPurchase` is still Init, you should wait before re-querying. The best practice here is to store the OrderId at the start of the process, and then use an exponential back-off when querying for the result.
 
-So if the status is Init, wait *one* minute before re-trying the call to Client/ConfirmPurchase, then wait *two* minutes, then *four*, *eight*, etc., until you hit some max value. Including a **check for completed transactions** option would then provide a way for the user to reset that timer.
+So if the status is Init, wait *one* minute before re-trying the call to `Client/ConfirmPurchase`, then wait *two* minutes, then *four*, *eight*, etc., until you hit some max value. Including a **check for completed transactions** option would then provide a way for the user to reset that timer.
 
 Finally, it’s worth noting that you can use sandbox mode for testing purchases with some payment providers.
 

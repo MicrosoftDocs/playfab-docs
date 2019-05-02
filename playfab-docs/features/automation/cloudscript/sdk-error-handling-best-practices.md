@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 This tutorial shows how to access, recognize, and handle API errors using the PlayFab SDK.
 
- The practices describes here are equally applicable to the admin, server, and client SDKs, but the patterns depend *highly* on the language of your choice.
+ The practices described here are equally applicable to the admin, server, and client SDKs - but the patterns depend *highly* on the language of your choice.
 
 Simply put, the pattern of your choice will be valid for any SDK (admin/server/client) but implementation details will be specific to *your* programming language and environment.
 
@@ -37,7 +37,10 @@ Generally, if an error object is defined (not null), it indicates that an error 
 
 ## Inspecting the error
 
-The most common way to inspect an error is to recognize it through the code. As described in the [Global API Method Error Codes](global-api-method-error-codes.md) tutorial, each generated error contains human-readable and numeric error codes. The code on its own is sufficient to recognize and process the error accordingly.
+The most common way to inspect an error is to recognize it through the code. As described in the [Global API Method Error Codes](global-api-method-error-codes.md) tutorial, each generated error contains human-readable and numeric error codes.
+
+> [!NOTE]
+> The code *on its own* is sufficient to recognize and process the error accordingly.
 
 Let's take the [LoginWithEmailAddress](xref:titleid.playfabapi.com.client.authentication.loginwithemailaddress) API method as an example. As stated in the [documentation](xref:titleid.playfabapi.com.client.authentication.loginwithemailaddress) for this method, the following internal error may be thrown upon execution:
 

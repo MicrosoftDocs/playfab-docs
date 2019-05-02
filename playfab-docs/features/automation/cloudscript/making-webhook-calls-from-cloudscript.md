@@ -113,6 +113,6 @@ So the basic pattern in this case is that you use your application’s client ID
 
 As you can see, these calls would all be made using SSL, in order to help prevent man-in-the-middle attacks.
 
-Using HTTP calls from CloudScript, you can make calls into any other web API you need to for your title. This allows you to extend your title functionality beyond even what PlayFab offers directly, giving you the option to make and use your own custom services, or access others.
+Using HTTP calls from CloudScript, you can make calls into any other web API you need to for your title. This allows you to extend your title functionality beyond even what PlayFab offers directly, giving you the option to make and use your own custom services - or access others.
 
-And because this all takes place in CloudScript, it provides a server-authoritative context in which to make those calls, so that they can have the necessary protections in your CloudScript to help prevent players from cheating, or accessing features and data they shouldn’t.
+Because this all takes place within CloudScript, it provides a server-authoritative context in which to make those calls. This means that they will have the necessary protections in your CloudScript to help prevent players from cheating, or accessing features and data they shouldn’t.

@@ -16,7 +16,7 @@ This tutorial describes the function of the **Currency** tab in the **Economy** 
 
 Virtual Currency are the foundation of in-game economies. Players and characters can be granted these currencies, which can then be used to buy or trade items. Items can have a cost in either a virtual currency or real money.
 
-It's *exactly* like real life - except its *virtual*! Economic regulation in-game is up to *you*.
+It's *exactly* like real life - except it's *virtual!* Economic regulation in-game is up to *you*.
 
 ## What is virtual currency?
 
@@ -38,16 +38,16 @@ Leaving **Recharge Rate** and **Recharge Max** set to **zero** (default) will sp
 
 ### Currency code
 
-**Currency Code** is a required field. It represents the currency, and will be used in the other economy sections.
+**Currency code** is a required field. It represents the currency, and will be used in the other economy sections.
 
 It must be a two-character code, and convention is *all upper-case* (although a two-digit number is also allowed).
 
 > [!NOTE]
 > **RM** is reserved for Real Money and cannot be used as a Currency Code.
 
-### Display Name
+### Display name
 
-**Display Name** is a required field. It represents the name that is attached to the currency that is typically displayed to the user in your game.
+**Display name** is a required field. It represents the name that is attached to the currency that is typically displayed to the user in your game.
 
 The only restriction is that it must be *at least one letter long*. Common examples include **Gold** or **Space Bux**.
 
@@ -76,6 +76,6 @@ To create a virtual currency, you should use the following steps:
 9. Select **Save**.
 10. Refresh the page.
 
-Your new virtual currency is now added. The greyed-out **Currency Code** means your new currency has been saved.
+Your new virtual currency is now added. The grayed-out **Currency Code** means your new currency has been saved.
 
 Don't be confused by the persistent **SAVE** button. It is necessary for subsequent operations on your currency, such as deleting or renaming.

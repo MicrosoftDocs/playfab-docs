@@ -27,7 +27,7 @@ The catalog APIs support many strategies for item purchasing, such as simple rea
 
 ## Field reference
 
-This section describes each field you see in the **Catalogs** tab. When you first create a title, you have no catalogs. You won't see any fields in the **Catalogs** tab until you create a catalog, as shown in the example provided following this section.
+This section describes each field you see in the **Catalogs** tab. When you first create a title, you have no catalogs. You won't see any fields in the **Catalogs** tab, until you create a catalog, as shown in the example provided following this section.
 
 The fields are presented in groups, which you will encounter as you select the tab. Any values you see in the examples provided are those created by following the step-by-step instructions for creating a catalog.
 
@@ -59,7 +59,7 @@ These are the fields in the **PROPERTIES** section of a new Catalog Item. **Item
   This optional field is the name displayed for the Catalog item. One common usage is when you want to offer the item in your in-game store. Display names do not need to be unique.
 
 - **Usage Count**:
-  This optional field is the number of times an item can be used by a player, using the ConsumeItem Client-API call. For example, the item could be a reward doubler that can be used three times.
+  This optional field is the number of times an item can be used by a player, using the ConsumeItem Client API call. For example, the item could be a reward doubler that can be used three times.
 
 - **Item Class**:
   This optional field is identifier that you can use to help manage your Catalog Items.
@@ -189,8 +189,8 @@ To create a **Catalog**:
          - **Display Name** (e.g. **Level 5 Shield**).
          - **Description** (e.g. **Strong defense against projectile attacks**).
 9. Set a price by selecting the **Prices** tab and then th **Add** button.
-10. Set the **Currency** to **Gold**, (See [Currencies](../economy/currencies.md)).
-. Then set the **Amount** (e.g. **250**) and **Save** the **Item**.
+10. Set the **Currency** to **Gold**, (See [Currencies](../economy/currencies.md)
+. Then set the **Amount** (e.g. **250**), and **Save** the **Item**.
 11. If you want your **Item** to have a **Real Money** (**RM**) cost, then set that **Value** as well.
 12. Repeat Steps 4 – 8 for each new **Item** you wish to create.
 

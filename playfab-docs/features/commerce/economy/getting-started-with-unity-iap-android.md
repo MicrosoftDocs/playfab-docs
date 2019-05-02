@@ -16,13 +16,13 @@ This tutorial shows you how to set up In-App Purchasing (IAP) using PlayFab, the
 
 ## Before we start
 
-Setting up IAP may be tedious if you are not quite sure how different services are supposed to integrate and cooperate.
+Setting up IAP may be tedious, especially if you are not quite sure how different services are supposed to integrate and cooperate.
 
 The following image illustrates how the Android Billing API and PlayFab work together to provide a solid IAP experience for your client.
 
 ![Android Billing - PlayFab - integration timeline](media/tutorials/android-billing-playfab-integration-timeline.png)  
 
-Start by setting up your Product IDs and Prices via PlayMarket. Initially, all the products are *faceless* - they are just digital entities your player is able to purchase - but they have no meaning to PlayFab players.
+Start by setting up your **Product IDs** and **Prices** via PlayMarket. Initially, all the products are *faceless* - they are just digital entities your player is able to purchase - but they have no meaning to PlayFab players.
 
 To make those entities useful, we need to mirror them in the PlayFab item catalogs. This will turn faceless entities into bundles, containers, and individual items.
 
@@ -88,7 +88,7 @@ Continue the Unity install, and import procedure up to the point where it has im
 
 ![UnityIAP Create new script](media/tutorials/create-new-script-unity-iap.png)  
 
-**AndroidIAPExample.cs** will contain the code shown below (please refer to the code comments for further explanation).
+`AndroidIAPExample.cs` will contain the code shown below (please refer to the code comments for further explanation).
 
 ```csharp
 using PlayFab;
@@ -294,7 +294,7 @@ public class GooglePurchase {
 ```
 
 - Create a new **Game** object called **Code (1)**.
-- Add the **AndroidIAPExample** component to it **(2)** **(3)**.
+- Add the `AndroidIAPExample` component to it **(2)** **(3)**.
 - Make sure to **Save** the scene **(4)**.
 
 ![UnityIAP create example game object](media/tutorials/create-example-game-object-unity-iap.png)  
@@ -378,7 +378,7 @@ The next step is enabling IAP testing. While sandbox is automatically enabled fo
 - Locate and select the **Account details (2)** in the menu to the left.
 - Locate the **License Testing** area **(3)**.
 - Verify that your **Test Accounts** are in the list **(4)** and that the **License Test Response** is set to **RESPOND_NORMALLY (5)**.
-- Do *not* forget to apply the settings.
+- *Don't* forget to apply the settings.
 
 ![PlayMarket enable IAP testing](media/tutorials/playmarket-enable-iap-testing.png)  
 
