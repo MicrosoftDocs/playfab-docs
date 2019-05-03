@@ -77,8 +77,8 @@ The PowerShell module, like all of the SDKs, requires you to specify the PlayFab
 You can get this information through **Game Manager** -> **Settings** -> **Secret Key**. Some examples of using the PowerShell module are shown below.
 
 ```powershell
-## Get an entity token for the specific title and using a developer secret key for auth
-Get-PFTitleEntityToken -TitleID "mytitleID" -secretkey "mysecretkey"
+## Specify your PlayFab Title ID for the specific title and use a developer secret key for authorization.
+Set-PFTitle -TitleID "mytitleID" -secretkey "mysecretkey"
 
 ## Add an asset and get the list of assets
 Add-PFMultiplayerAsset -FilePath "C:\example.zip"
@@ -88,7 +88,7 @@ Get-PFMultiplayerAsset
 Add-PFMultiplayerCertificate -Name "CertName" -FilePath "C:\examplecert.pfx"
 Get-PFMultiplayerCertificate
 
-##Create a build
+## Create a build
 
 $VMSelection = [PlayFab.MultiplayerModels.AzureVMSize]::Standard_D2_v2
 
@@ -107,7 +107,6 @@ $BuildCert.Add($BuildCertParams)
 New-PFMultiplayerBuild -BuildName "PowerShellTest902" -AssetFileName "winrunnerasset_notimeout.zip" -AssetMountPath "C:\Assets\" -StartMultiplayerServerCommand "C:\Assets\WinTestRunnerGame.exe" -MappedPorts $Ports -VMSize $VMSelection -BuildCerts $BuildCert
 
 
-##View servers for a build
+## View servers for a build
 Get-PFMultiplayerServer -BuildName "PowerShellTest"
-
 ```

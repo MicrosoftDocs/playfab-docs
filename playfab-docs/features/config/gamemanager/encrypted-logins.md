@@ -57,9 +57,11 @@ else
 
 To run this code, you will need a developer key. Please consult the [Getting PlayFab Developer Keys](getting-playfab-developer-keys.md) tutorial to see how to obtain one. You can pick any key name you would like.
 
-This application should print a newly created player shared secret. *Make sure to save it*. If lost, you can always generate a new secret by running the application again.
+This application should print a newly created player shared secret. *Make sure to save it*. If it is lost, you will have to generate a new secret by running the application again.
 
-The secret looks like this: **QC953WQ3TU6ZJTZMAT1FNJQIKR92FPUQTISW4Q6WD8SY841MQQ**
+The secret looks like this:
+
+`QC953WQ3TU6ZJTZMAT1FNJQIKR92FPUQTISW4Q6WD8SY841MQQ`
 
 ## Updating the policy
 
@@ -149,7 +151,7 @@ else
 }
 ```
 
-Normally, this would log in the user without a problem. However, *now* this API call is *protected* - and the code will yield a **Not Authorized** error (not to be confused with **Not Authenticated**).
+Normally, this would log in the user without a problem. However, *now* this API call is *protected* - and the code will yield a `Not Authorized` error (not to be confused with `Not Authenticated`).
 
 We need to modify the client to properly encrypt the call payload. This is done in 2 steps:
 

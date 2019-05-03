@@ -12,9 +12,7 @@ ms.localizationpriority: medium
 
 # API feature settings in the PlayFab Game Manager
 
-The API features in the PlayFab Game Manager are a handful of options for managing the behavior of PlayFab APIs for your title.
-
-These options give you the tools for managing access, privacy, and other features.
+The API features in the PlayFab Game Manager are a handful of options for managing the behavior of PlayFab APIs for your title. These options give you the tools for managing access, privacy, and other features.
 
 To find the screen for configuring these options:
 
@@ -31,18 +29,18 @@ Some of these check boxes are obvious, while some are not. In this tutorial, we 
 
 ## Requiring valid JSON for custom data values
 
-Hacked clients can cause *some serious* problems for games. Rogue API callers posting badly formatted data can produce noise, bugs, and issues for developers. Players who have poorly formatted data will often require manual intervention to cleanup.
+Hacked clients can cause some *serious* problems for games. Rogue API callers posting badly formatted data can produce noise, bugs, and issues for developers. Players who have poorly formatted data will often require manual intervention for clean up.
 
 Requiring valid JSON for custom data values will perform basic content type validation *before* data is saved to the database. Catching these problems early prevents these issues from lingering on, and stops hackers from interfering with normal development.
 
-When this flag is set, it forces clients to pass in valid JSON for each key of their custom data. Simple JSON validation by itself won't prevent *all* issues, but can help weed out some bad behavior.
+When this flag is set, it forces clients to pass in valid JSON for each key of their custom data. Simple JSON validation by itself won't prevent *all* issues - but can help weed out some bad behavior.
 
 Checking this option will require that each key saved across all custom data, including player, publisher, character, title, and item data must be valid JSON.
 
 > [!NOTE]
 > This flag can be toggled *on* or *off* at any time. But, it’s *not* retroactive. So existing values will *not* be affected. *Only newly written values will be validated.*
 
-If you attempt to pass invalid JSON as a value, it will reject the request with an **HTTP Status Code 400 "Bad Request"**.
+If you attempt to pass invalid JSON as a value, it will reject the request with an `HTTP Status Code 400 "Bad Request"`.
 
 ![Postman - Sending invalid JSON](media/tutorials/postman-sending-invalid-json.png)  
 
@@ -57,19 +55,19 @@ If, for example, you are performing a sensitive migration with downtime, stray A
 
 Once you have decided you need to turn API access off, and you check the box, all API requests will begin to fail within a few minutes.
 
-PlayFab will return an **HTTP Status Code 400 "Bad Request"** indicating that the title has disabled such usage.
+PlayFab will return an `HTTP Status Code 400 "Bad Request"`, indicating that the title has disabled such usage.
 
 ![Postman - Accessing a disabled API](media/tutorials/postman-accessing-a-disabled-api.png)  
 
-These **HTTP Status Code 400** responses will persist until you un-check the box. Again, un-checking may take a few minutes to have effect.
+These `HTTP Status Code 400` responses will persist until you un-check the box. Again, un-checking may take a few minutes to have effect.
 
 ## Enabling player IP address obfuscation
 
 For many studios, owning **Personally Identifiable Information** (**PII**) is a liability best avoided. One common (and useful) form of **PII** is **IP Address**.
 
-**IP Address** is useful for a handful of reasons, including geo-location. However, the *full* accuracy of the IP is often considered PII.
+IP Address is useful for a handful of reasons, including geo-location. However, the *full* accuracy of the IP is often considered PII.
 
-PlayFab can help limit this is by obfuscating parts of the **IP** addresses. Now, by checking a box, you can stop gathering this sensitive data.
+PlayFab can help limit this is by obfuscating parts of the IP addresses. Now, by checking a box, you can stop gathering this sensitive data.
 
 After you check this box, PlayFab will always record **0** for the last octet of a player's IP. You can verify this is working by checking the login history for players in the **Players** tab.
 
