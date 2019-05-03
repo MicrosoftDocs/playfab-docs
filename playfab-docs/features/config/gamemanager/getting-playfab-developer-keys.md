@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Getting PlayFab developer keys
 
-A PlayFab developer key is used to authorize an application to use PlayFab Admin and server APIs for a specific title. A developer key is strongly coupled with a PlayFab title.
+A PlayFab developer key is used to authorize an application to use PlayFab admin and server APIs for a specific title. A developer key is strongly coupled with a PlayFab title.
 
 ## Acquiring a developer key
 

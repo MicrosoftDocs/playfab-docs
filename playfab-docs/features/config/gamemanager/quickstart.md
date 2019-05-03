@@ -12,9 +12,11 @@ ms.localizationpriority: medium
 
 # Game Manager quickstart
 
-This quickstart familiarizes you with the high-level aspects of the Game Manager. For more detailed information, select your specific topic of interest in the PlayFab documentation. By now, you should have created your PlayFab account, logged in, and viewed the Game Manager for your title, even if it's an empty title for now.
+This quickstart familiarizes you with the high-level aspects of the Game Manager. For more detailed information, you may select your specific topic of interest in the PlayFab documentation that follows.
 
-The following provides more detail on each Game Manager area. Each time you perform an API call or task, view the results in the Game Manager in the appropriate area for that task.
+By now, you should have created your PlayFab account, logged in, and viewed the Game Manager for your title, even if it's an empty title for now.
+
+The sections provided below offer greater insight on each Game Manager area. Each time you perform an API call or task, view the results in the Game Manager in the appropriate area for that task.
 
 ## Game Manager sections
 
@@ -24,7 +26,7 @@ Now that you have an account, select a title (either the one we created or one o
 
 **Players** - settings and data pertaining to your individual players, including player segmentation.  
 
-**Economy** - manage Catalogs and Currency. 
+**Economy** - manage Catalogs and Currency.
 
 **Leaderboards** - create and manage Leaderboards and Prize Tables.  
 
@@ -48,7 +50,7 @@ Now that you have an account, select a title (either the one we created or one o
 
 In Admin, you can view your Audit History and Billing.
 
-**Audit History** - Every action taken within the Game Manager is logged for posterity in the Audit History log. 
+**Audit History** - Every action taken within the Game Manager is logged for posterity in the Audit History log.
 
 ![Game manager - Settings - Audit History](media/tutorials/game-manager-admin-audit-history.png)
 
@@ -59,7 +61,7 @@ On the Audit History page, select any entry in the log to view the complete deta
 - The **Log type** column gives you a clue about the kind of change that was made.
 
 - The **String change** and **Value** columns represent short details of the change.
- 
+
 - The **View** column allows you to access a full **JSON** description of the change.
 
 **Billing** - On the Billing page you can view your Contact Information and Credit Card information upon which PlayFab invoicing references for payment.
@@ -76,7 +78,7 @@ On the Audit History page, select any entry in the log to view the complete deta
 
 Choose your preferred options, and select the **Save** button.
 
-**Secret Keys** - is where you create and manage your PlayFab secret keys, the unique identifier for your game when making Admin and server API calls. 
+**Secret Keys** - is where you create and manage your PlayFab secret keys, the unique identifier for your game when making Admin and server API calls.
 
 > [!IMPORTANT]
 > This key should only be shared with trusted members of your development team, since it enables API calls that can affect game data and player accounts. Never share your PlayFab API secret key with anyone; doing so may jeopardize your title's security.
@@ -122,7 +124,7 @@ The tables in the Overview tab allow you to monitor PlayStream events in real ti
 
 - **LOGINS**: The number of logins recorded for the selected time span.
 
-- **NEW USERS**: New users added in the time period. 
+- **NEW USERS**: New users added in the time period.
 
 - **PURCHASES**: The USD value of real money transactions processed for the selected time span.
 
@@ -172,11 +174,11 @@ Some specific tools your team can use to remedy defrauded players and identify p
 
 ## Economy
 
-This section provides all the tools needed to manage your game's virtual economy.
+This section provides all the tools needed to manage the virtual economy of your game.
 
-**Catalogs** - At the center of PlayFab economies is the concept of catalogs. Catalogs are a collection of items, stores, and drop tables. 
+**Catalogs** - At the center of PlayFab economies is the concept of catalogs. Catalogs are a collection of items, stores, and drop tables.
 
-As an example, the following image shows **Unicorn Battle's** primary catalogs.
+As an example, the following image shows the primary catalogs for **Unicorn Battle**.
 
 ![Game Manager - Economy - Catalogs](media/tutorials/game-manager-economy-catalogs.png)
 
@@ -189,11 +191,11 @@ As an example, the following image shows **Unicorn Battle's** primary catalogs.
 ![Game Manager - Economy - Catalogs - Edit Container](media/tutorials/game-manager-economy-catalogs-edit-container.png)
 
 > [!NOTE]
-> Select any catalog item to open a detailed editor for the item's properties.
+> Select any catalog item to open a detailed editor for the properties of the item.
 
 **Currency** - trackers for each currency that can be exchanged for catalog items.
 
-The following example shows the **Edit Currency** page for **Great Game**. 
+The following example shows the **Edit Currency** page for **Great Game**.
 
 ![Game Manager - Economy - Catalogs - Edit Currency](media/tutorials/game-manager-economy-currency.png)
 
@@ -219,9 +221,9 @@ Select the orange **EDIT LEADERBOARD** button to edit your leaderboard name as w
 **Additional information**:
 
 - [Using resettable statistics and leaderboards](../../social/tournaments-leaderboards/using-resettable-statistics-and-leaderboards.md)
-- [Back to Game Manager Sections](#game-manager-sections) 
+- [Back to Game Manager Sections](#game-manager-sections)
 
-## Multiplayer 
+## Multiplayer
 
 **Servers** - Whether you are looking to hosting multi-player matches or just need a secure environment that can reduce many common forms of hacking and abuse, the PlayFab Thunderhead servers work with many architectures and game types. These servers provide an excellent alternative when compared with the overhead of dedicated game servers.
 
@@ -232,7 +234,7 @@ Select the orange **EDIT LEADERBOARD** button to edit your leaderboard name as w
 **Party** - Create and configure the Parties for your title.
 
 > [!NOTE]
-> You must be an Indie, Pro or Enterprise subscriber, in order to enable Parties.
+> You must be an Indie, Pro or Enterprise subscriber in order to enable Parties.
 
 **Legacy Multiplayer** - Here you can see your active and archived games, as well as server activity, game builds, and game modes.
 
@@ -245,7 +247,7 @@ Select the orange **EDIT LEADERBOARD** button to edit your leaderboard name as w
 
 ## Groups
 
-The Groups section allows you to create and manage groups of players designated by entity type and ID. 
+The Groups section allows you to create and manage groups of players designated by entity type and ID.
 
 ![Create New Group](media/tutorials/game-manager-groups-new.png)
 
@@ -255,11 +257,11 @@ The Content section offers tools for engaging with your players.
 
 **Title Data** - here you can configure and store key properties which you can change after your game launches. Title data is accessible from all API sets by all users. Because of this, title data is an ideal place to store your custom title settings. Internal data is hidden from game clients and only available on your game servers.
 
-#### Add or edit title data keys
+### Add or edit title data keys
 
-1. Enter text for your key (keys must be unique).
+1. Enter text for your **Key** (keys must be unique).
 
-2. Enter text for your value (accepts strings up to 10KB).
+2. Enter text for your **Value** (accepts strings up to 10KB).
 
 3. Save your changes with the orange **SAVE TITLE DATA** button under the data table.
 
@@ -275,7 +277,7 @@ The Content section offers tools for engaging with your players.
 
 **Title News** - create title news for your game title. As needed, add additional languages.
 
-**File Management** - create, organize and upload files for your game client via the Content Delivery Network (CDN). 
+**File Management** - create, organize and upload files for your game client via the Content Delivery Network (CDN).
 > [!NOTE]
 > There are varying time delays, depending on the type of file handling that is required. For detailed information, view the online Help for the File Management tab.
 
@@ -295,19 +297,19 @@ In the **Automation** area, you can run CloudScript, run A/B tests, assign Rules
 
 ## Analytics
 
-In the **Analytics** area you can do a number of things to track and analyze data from your players' activities. There are a number of graphing and reports capabilities that provide the ability to consolidate and visualize the data. 
+In the **Analytics** area you can do a number of things to track and analyze data from your players' activities. There are a number of graphing and reports capabilities that provide the ability to consolidate and visualize the data.
 
-**Trends** - configure and view trends for a number of statistics for time periods ranging from 7 days to 26 months. 
+**Trends** - configure and view trends for a number of statistics for time periods ranging from 7 days to 26 months.
 
 **Event History** - search and display a number of different Event History types, depending on the query you create. Use event name, date range, or event values.
 
-**Reports** - here you can view and download a number of different types of reports based on player data and statistical values. 
+**Reports** - here you can view and download a number of different types of reports based on player data and statistical values.
 
 ![Game Manager - Reports](media/tutorials/game-manager-analytics-reports.png)
 
 For additional or custom reports, please open a feature request in our [community forums](https://community.playfab.com/spaces/24/index.html).
 
-**Webhooks** - here you can configure your Webhooks. Webhooks allow you to have some or all of your PlayStream events forwarded to any web URL you want. The event data is sent via POST in the request body as JSON. 
+**Webhooks** - here you can configure your Webhooks. Webhooks allow you to have some or all of your PlayStream events forwarded to any web URL you want. The event data is sent via POST in the request body as JSON.
 
 [Back to Game Manager Sections](#game-manager-sections)
 
@@ -344,7 +346,7 @@ New notifications will be called out with a pink delimiter containing the number
 
 ![Unicorn Battle - Notifications indicator](media/tutorials/unicorn-battle-notifications-indicator.png)
 
-1. From the drop-down menu under the current user,  select **News**. 
+1. From the drop-down menu under the current user,  select **News**.
 
 2. View the news from the PlayFab team, ordered by the most recent, first. The news feeds include information on new features, API updates, and service outages.
 
@@ -356,7 +358,7 @@ In this section you learn how to create and manage studios and game titles.
 
 **To add a new studio:**
 
-1. Click the PlayFab icon to display the My Studios and Titles page. 
+1. Click the PlayFab icon to display the **My Studios** and **Titles** pages.
 
 2. Click **NEW STUDIO** to create a new studio in the dialog that appears.
 
@@ -366,7 +368,7 @@ In this section you learn how to create and manage studios and game titles.
 
 **To edit an existing studio:**
 
-1. Select the elipsis drop-down to the right side of your **Studio's Name**, and then select **Settings**.
+1. Select the drop-down menu to the right side of your **Studio name**, then select **Settings**.
 
 ![Game manager - Edit Studio](media/tutorials/game-manager-mystudiosandtitles-settings.png)
 
@@ -376,7 +378,7 @@ In this section you learn how to create and manage studios and game titles.
 
 **To add a new title:**
 
-1. Select the elipsis drop-down to the right side of your **Studio's Name**, and then select **New title** to display the Create Title page.
+1. Select the drop-down menu to the right side of your **Studio's Name**, and then select **New title** to display the Create Title page.
 
 2. Enter the details and click the **CREATE TITLE** button.
 
@@ -400,10 +402,10 @@ You can create user accounts that are individual or Admin-level accounts. Admin 
 
 ![Game manager - Studio Users](media/tutorials/game-manager-studio-users.png)
 
-1. Select the elipsis drop-down menu to the far right from your Studio name, and then select **Studio users**.
+1. Select the drop-down menu to the far right from your Studio name, and then select **Studio users**.
 
-2. Click **ADD USER** to display the Add New User page. Check the box if you want to make the user an Admin.
+2. Choose **ADD USER** to display the Add New User page. Check the box if you want to make the user an Admin.
 
-3. To remove accounts, in the Users page, simply click **Remove**.
+3. To remove accounts in the **Users** page, simply select **Remove**.
 
 If you do not already have a PlayFab Admin account, an e-mail will be sent to the address you provided. Upon confirmation, the new account will have access to the Studio and title.

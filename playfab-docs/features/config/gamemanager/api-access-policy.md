@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # API access policy
 
-Often times, it is necessary for a title to allow/deny certain APIs from the game client for anti-cheat or other security purposes.
+Often times, it is necessary for a title to allow or deny certain APIs from the game client, for anti-cheat or other security purposes.
 
 This tutorial will walk you through how to use API permission policies to achieve this.
 
@@ -21,11 +21,11 @@ This tutorial will walk you through how to use API permission policies to achiev
 
 ## Policy control and structure
 
-Policy is a set of rules, a.k.a. Policy Statements, that are applied in a specific situation.
+Policy is a set of rules - a.k.a. Policy Statements - that are applied in a specific situation.
 
 Right now, PlayFab only supports API Access Policy. Thus, by definition, it controls access to API resources.
 
-Policies are fetched and updated using API calls from the PlayFab admin APIs (listed under Admin in the [PlayFab API Reference](../../../api-references/index.md)); specifically, the [GetPolicy](xref:titleid.playfabapi.com.admin.authentication.getpolicy) and [UpdatePolicy](xref:titleid.playfabapi.com.admin.authentication.updatepolicy) methods.
+Policies are fetched and updated using API calls from the PlayFab admin APIs (listed under Admin in the [PlayFab API Reference](../../../api-references/index.md)) -  specifically, the [GetPolicy](xref:titleid.playfabapi.com.admin.authentication.getpolicy) and [UpdatePolicy](xref:titleid.playfabapi.com.admin.authentication.updatepolicy) methods.
 
 Since we will be utilizing the admin API, see our tutorial [Getting PlayFab Developer Keys](getting-playfab-developer-keys.md). Developer keys will let you authorize for admin API calls.
 
@@ -101,7 +101,7 @@ Each Permission Statement consists of the following items:
 
   `API-GROUP` should be replaced with one of PlayFab APIs: `Client`, `Server` or `Admin`
 
-  `API-CALL` should be replaced with concrete API name (ex. **ConfirmPurchase**, **LoginWithTwitch**, **ReportPlayer** etc.
+  `API-CALL` should be replaced with a concrete API name (ex. **ConfirmPurchase**, **LoginWithTwitch**, **ReportPlayer** etc.
 
   A resource string supports wildcards. The following resource string will match any resource.
 
