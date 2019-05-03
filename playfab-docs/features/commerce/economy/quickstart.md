@@ -32,7 +32,6 @@ To create a virtual currency:
 1. Open **Game Manager** and select **Economy** on the left side bar.
 2. Select the **Currency** tab.
 3. Select **New Currency** and change these fields (as shown in the image below):
-
    - Set **Currency code (2 uppercase characters)** to **GD**.
    - Set **Display name** to **Gold**.
 4. Select **SAVE CURRENCY**.
