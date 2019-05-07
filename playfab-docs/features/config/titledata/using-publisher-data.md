@@ -14,12 +14,12 @@ ms.localizationpriority: medium
 
 This tutorial describes how to create and use Publisher (Studio) data.
 
-Publisher data is data that spans more than one title - such as when you have multiple games that need to share common information.
+Publisher data is data that spans *more than one title* - such as when you have multiple games that need to share common information.
 
 > [!NOTE]
 > This category also includes data for players that spans multiple games. PlayFab stores data as Key/Value Pairs (KVPs).
 
-Most of these APIs are server APIs that your program must call from a dedicated server or through a CloudScript function within the PlayFab service.
+Most of these APIs are server APIs that your program must call from a dedicated server, or through a CloudScript function within the PlayFab service.
 
 - Use the server APIs **[SetPublisherData](xref:titleid.playfabapi.com.server.title-widedatamanagement.setpublisherdata)** to update, and **[GetPublisherData](xref:titleid.playfabapi.com.server.title-widedatamanagement.getpublisherdata)** to retrieve, Publisher-specific custom KVPs.
 - Use **[UpdateUserPublisherData](xref:titleid.playfabapi.com.client.playerdatamanagement.updateuserpublisherdata)** to create or update, and **[GetUserPublisherData](xref:titleid.playfabapi.com.client.playerdatamanagement.getuserpublisherdata)** to retrieve, Publisher-specific custom KVPs for the player.

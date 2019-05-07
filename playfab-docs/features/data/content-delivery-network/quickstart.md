@@ -12,11 +12,11 @@ ms.localizationpriority: medium
 
 # Content Delivery Network quickstart
 
-PlayFab **Content Delivery Network** (**CDN**) stores individual assets as files uniquely identified by the file name, also referred to as a *key*. This implies that you add, update, remove, and retrieve assets by key.
+The PlayFab Content Delivery Network (CDN) stores individual assets as files uniquely identified by the file name (also referred to as a *key*). This implies that you add, update, remove, and retrieve assets by key.
 
 PlayFab CDN allows segregating assets by folders. The folder path to the asset becomes part of the *asset key*.
 
-The following example is a valid asset key stored inside the folder named **Android**.
+The following example is a valid asset key stored inside the folder named `Android`.
 
  `Android/Image.png`.
 
@@ -26,9 +26,9 @@ This, however, can introduce delays into file management actions, like those fou
 
 - **File uploading**: Your file will be available immediately.
 
-- **File overwriting**: The old file will appear to users for up to 24 hours until it's overwritten with the new file.
+- **File overwriting**: The old file will appear to users for up to 24 hours, until it's overwritten with the new file.
 
-- **File deletion**: The file will continue to exist for up to 24 hours while the delete command removes it from all edge locations.
+- **File deletion**: The file will continue to exist for up to 24 hours, while the delete command removes it from all edge locations.
 
 ## Uploading assets
 
@@ -66,7 +66,7 @@ This will create a new folder in the tree. You may then select this folder, and 
 Alternatively, you may upload assets via code using the admin SDK. This is a two step process:
 
 1. First, call [GetContentUploadUrl](xref:titleid.playfabapi.com.admin.content.getcontentuploadurl) and obtain the pre-signed URL that will authorize your upload.
-2. Then, use the URL to make a **HTTP PUT** request and provide your data, and (optionally) content type.
+2. Then, use the URL to make a `HTTP PUT` request,  provide your data, and (optionally) content type.
 
 Consider using the snippet provided below that shows how to get a pre-signed URL.
 
@@ -96,10 +96,10 @@ You may then check the result through the PlayFab Game Manager. Make sure the fi
 
 ## Fetching assets
 
-Downloading the asset via code is identical to uploading the asset. Again, it is a two step process.
+Downloading the asset via code is identical to uploading the asset. As wwe mentioned earlier, it is a two step process.
 
 1. First, make a call to [GetContentDownloadUrl](xref:titleid.playfabapi.com.client.content.getcontentdownloadurl) and obtain a pre-signed URL that will authorize your download.
-2. You then use the  pre-signed URL to make a **HTTP GET** request and fetch the data.
+2. You then use the  pre-signed URL to make a `HTTP GET` request, and fetch the data.
 
 Consider using the snippet provided below that shows the bare bones of the process.
 
@@ -124,9 +124,9 @@ void GetFile(string preauthorizedUrl) {
 }
 ```
 
-As mentioned above, CDN may involve latency in regards to file updates. During development it is sometimes useful to force fetch the latest, fresh files.
+As mentioned above, CDN may involve latency in regards to file updates. During development, it is sometimes useful to force-fetch the latest, freshest files.
 
-The  [GetContentDownloadUrl](xref:titleid.playfabapi.com.client.content.getcontentdownloadurl) call allows you to set the **ThruCDN** parameter to **False**. The **URL** returned will then point to non-cached fresh files.
+The  [GetContentDownloadUrl](xref:titleid.playfabapi.com.client.content.getcontentdownloadurl) call allows you to set the `ThruCDN` parameter to `False`. The URL returned will then point to non-cached fresh files.
 
 > [!NOTE]
 > Your published game client should *never* use this option!
