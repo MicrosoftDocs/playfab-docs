@@ -23,14 +23,14 @@ The immediate impact is that if you have been using the entity-based APIs in you
 The following conditions must be true for this upgrade guide to apply to you:
 
 1. You are using the entity-based PlayFab APIs.
-2. You have upgraded to a PlayFab SDK published on 8/9/2018 or later.
+2. You have upgraded to a PlayFab SDK, published on 8/9/2018 or later.
 
-   > [!Note]
-   > There are *no* service level changes – For example, existing titles using old SDKs will work without requiring changes.
+> [!Note]
+> There are *no* service level changes. For example, existing titles using old SDKs will work without requiring changes.
 
 ## How to upgrade
 
-The fundamental impact of this change is that the PlayFabEntityModel API group has been separated out into six different API groups that are logically bound together, as shown in the following picture.
+The fundamental impact of this change is that the `PlayFabEntityModel` API group has been separated out into six different API groups that are logically bound together, as shown in the following picture.
 
 ![Changes to PlayFabEntityModel API group](media/tutorials/changes-to-playfabentitymodel-api-group.png)
 
@@ -39,13 +39,13 @@ A full list of **Previous Entity API** -> **New API** mapping can be found in [A
 > [!Note]
 > The Classic API mapping has *not* been affected.
 
-The next section will walk you through an example of upgrading a C# SDK using the **PlayFabEntityAPIGroup** to the new set of API groups.
+The next section will walk you through an example of upgrading a C# SDK using the `PlayFabEntityAPIGroup` to the new set of API groups.
 
 ## Upgrade example: C# SDK
 
 Please follow these steps to upgrade your application.
 
-**Step 1**: Change any `using` statements that reference **PlayFab.EntityModels** such as those shown below.
+**Step 1**: Change any `using` statements that reference `PlayFab.EntityModels` such as those shown below.
 
 ```csharp
 using PlayFab.EntityModels;
@@ -77,7 +77,8 @@ public async void Example()
 }
 ```
 
-Please follow suit for other SDKs using the mapping from [APPENDIX 1](#appendix-1-old-to-new-api-mappings) in this tutorial.
+Please follow suit for other SDKs,
+  using the mapping from [APPENDIX 1](#appendix-1-old-to-new-api-mappings) in this tutorial.
 
 ## Conclusion
 
@@ -87,7 +88,7 @@ If you have any questions and comments, please contact us via the [PlayFab Forum
 
 ## APPENDIX 1: OLD to NEW API mappings
 
-All of the APIs listed below were *previously* part of the PlayFabEntityModel API group. They are categorized under the **New API** groups that they are part of now.
+All of the APIs listed below were *previously* part of the `PlayFabEntityModel` API group. They are *now* categorized under the following new API groups.
 
 ### PlayFabProfilesApi
 
