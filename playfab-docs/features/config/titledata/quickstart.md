@@ -71,6 +71,7 @@ You can set title data by using the Game Manager, or by a server API function. A
 To add data to a title, perform the following steps.
 
 1. Open the title in **Game Manager**.
+
 2. Select **Content**, then **Title Data**.
 3. Select **Add Item**.
 4. Enter a value for the **Key** and a value for the **Value**. Both the **Key** and the **Value** are stored as strings.
