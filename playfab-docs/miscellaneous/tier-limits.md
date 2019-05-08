@@ -164,4 +164,3 @@ Below are the limits per PlayFab resource. The Essentials tier provides enough r
 | ServerBackfillTicketGetsPerMinute | requests | 6 | 6 |
 | ServerBackfillListTicketsForPlayerPerMinute | requests | 3 | 3 |
 | QueueStatisticGetsPerMinute | requests | 1 | 1 |
-| 
