@@ -14,18 +14,14 @@ ms.localizationpriority: medium
 
 PlayFab is introducing support for storing localized strings on behalf of game developers. In addition, we are adding the necessary logic to provide your players with the correct strings for the language they prefer.
 
-The first feature using this new behavior is localized email templates.
-
-With localized email templates, you can make multiple translated versions of an email, and associate *all* of them with one template ID.
+This tutorial walks you through how to use localized email templates. With localized email templates, you can make multiple translated versions of an email, and associate *all* of them with one template ID.
 
 > [!NOTE]
 > Any templates introduced before this feature was released will retain their behavior.  However, you can easily update them to use the new localized format used by new email templates.
 
-This tutorial walks you through how to use localized email templates.
-
 ## Requirements
 
-This is an advanced tutorial. Please make sure that all requirements have been met, or you will not be able to complete this tutorial.
+This is an *advanced* tutorial. Please make sure that all requirements have been met, or you will not be able to complete this tutorial.
 
 - For an introduction to email templates, refer to the [Using Email Templates to Send an Account Recovery Email](using-email-templates-to-send-an-account-recovery-email.md) tutorial.
 - Please review the information provided on how to work with default languages on your title, and preferred languages for your players in the [Setting Default Languages](../news/setting-default-languages.md) tutorial. You must have a title default language set to continue with localized email templates.
@@ -77,7 +73,7 @@ To verify this behavior, create two test players.
 
 Leave one of the new players without a preferred language. This will demonstrate how PlayFab falls back to the title's default if there is no language specified or if there is no match between the title's language and the player's language.
 
-Set the other new player's language by using Game Manager or by using the [SetProfileLanguage](xref:titleid.playfabapi.com.profiles.accountmanagement.setprofilelanguage) API. We have used French in this example.
+Set the *other* new player's language by using Game Manager, or by using the [SetProfileLanguage](xref:titleid.playfabapi.com.profiles.accountmanagement.setprofilelanguage) API. We have used French in this example.
 
 Make sure you have set the contact email on both players as explained in [Step 2 of the Using Email Templates to Send an Account Recovery Email](using-email-templates-to-send-an-account-recovery-email.md#step-2---add-username-password-login-email-and-contact-email-to-a-player) tutorial, before continuing on to the next step.
 

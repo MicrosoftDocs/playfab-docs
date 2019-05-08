@@ -16,7 +16,7 @@ Stores are the best way to let players purchase items in your game.
 
 As shown in the [Items quickstart](../items/quickstart.md), PlayFab supports buying items out of a catalog, but that's not how most games structure their purchases. Whether you're making an idle clicker, an RPG, an FPS, or an endless runner, you probably have vendors in your game where players can buy weapons, armor, or running shoes.
 
-Our solution for this is **Stores**, a subset of your catalog with prices you can override.
+Our solution for this is Stores, a subset of your catalog with prices you can override.
 
 In this stores quickstart, you will:
 

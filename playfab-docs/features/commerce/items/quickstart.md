@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Items quickstart
 
-The Items quickstart gets you started with the building blocks of your in-game economy: virtual currency, catalogs, items, and purchases.
+The Items quickstart gives you the building blocks of your in-game economics: virtual currency, catalogs, items, and purchases.
 
 In this quickstart, you will:
 
@@ -42,9 +42,9 @@ To access these features and create a virtual currency:
 
 You can give players virtual currency directly, so let's add money to a player using the Game Manager:
 
-1. Select **Players** on the left side bar, and select the **ID** of a player.
-2. Select the player's **Virtual Currency** tab.
-3. Select the **GD** currency. (This opens the **Modify Virtual Currency** screen shown below).
+1. Select **Players** on the left side bar, then select the **ID** of a player.
+2. Go to the player's **Virtual Currency** tab.
+3. Choose the **GD** currency. (This opens the **Modify Virtual Currency** screen shown below).
 4. Change the **Amount** to **100**.
 5. Select **SAVE VIRTUAL CURRENCY**.
 

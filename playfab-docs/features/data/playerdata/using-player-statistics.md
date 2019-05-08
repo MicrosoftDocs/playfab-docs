@@ -79,7 +79,7 @@ void OnGetStatistics(GetPlayerStatisticsResult result)
 
 ## Aggregation method
 
-PlayFab supports some convenience options for **Statistic Aggregation**. The 4 options include:
+PlayFab supports some convenience options for Statistic Aggregation. The 4 options include:
 
 - **Last**
 - **Min**
@@ -88,9 +88,9 @@ PlayFab supports some convenience options for **Statistic Aggregation**. The 4 o
 
 You can create a statistic definition via the [CreatePlayerStatisticDefinition](xref:titleid.playfabapi.com.admin.playerdatamanagement.createplayerstatisticdefinition) API call, though it's not required. Any call to update a player statistic for the title will *automatically* create the default statistic definition, using the **Last Aggregation** method.
 
-To change a **Statistic Aggregation** method, you can use the Game Manager or the [UpdatePlayerStatisticDefinition](xref:titleid.playfabapi.com.admin.playerdatamanagement.updateplayerstatisticdefinition) API call.
+To change a statistic aggregation method, you can use the Game Manager or the [UpdatePlayerStatisticDefinition](xref:titleid.playfabapi.com.admin.playerdatamanagement.updateplayerstatisticdefinition) API call.
 
-To edit a **Statistic Definition** in **Game Manager**:
+To edit a statistic definition in **Game Manager**:
 
 - Log into [PlayFab](https://developer.playfab.com/en-us/my-games)
 - Select your **Title**.
@@ -103,7 +103,7 @@ To edit a **Statistic Definition** in **Game Manager**:
 
   ![PlayFab Leaderboards - Edit Leaderboard - Stat aggregation](media/tutorials/playfab-edit-leaderboard-stat-aggregation.png)  
 
-Some examples of how to use **Statistic Aggregation**:
+Some examples of how to use statistic aggregation:
 
 - **Max** and **Min** can be used to save **best/worst** scores such as Headshots or Accuracy:
   - In short, they apply the rule of: **if this is higher (or lower) than the existing score, update the score**.
@@ -120,6 +120,6 @@ Some examples of how to use **Statistic Aggregation**:
 
 A leaderboard is generated for all statistics saved in PlayFab. Accessing a leaderboard for a specific stat is optional.
 
-**Reset Frequency** and **Aggregation** methods play a major role in how dynamic the leaderboards are in your game. The **Tournaments** feature focuses on leaderboards with automatic reset frequencies, and is described in the tutorial [Using resettable statistics and leaderboards](../../social/tournaments-leaderboards/using-resettable-statistics-and-leaderboards.md).
+Reset frequency and aggregation methods play a major role in how dynamic the leaderboards are in your game. The **Tournaments** feature focuses on leaderboards with automatic reset frequencies, and is described in the tutorial [Using resettable statistics and leaderboards](../../social/tournaments-leaderboards/using-resettable-statistics-and-leaderboards.md).
 
 We encourage you to use statistics in every manner relevant to your game. You can use resettable statistics to run daily tournaments, and long-term statistics like experience points, side-by-side.
