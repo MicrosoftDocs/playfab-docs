@@ -94,7 +94,7 @@ public static void main(String[] args)
 
 ## Logging with the GSDK
 
-When your game server ends, the PlayFab VM agent will zip any log files, and make them available to you via the [GetMultiplayerServerLogs](xref:titleid.playfabapi.com.multiplayer.multiplayerserver.getmultiplayerserverlogs) API.
+When your game server ends, the PlayFab VM agent will zip any log files, and make them available to you.  <!--via the [GetMultiplayerServerLogs](xref:titleid.playfabapi.com.multiplayer.multiplayerserver.getmultiplayerserverlogs) API.-->
 
 There are two ways to add log files from your game:
 
