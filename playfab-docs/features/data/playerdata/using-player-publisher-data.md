@@ -14,18 +14,18 @@ ms.localizationpriority: medium
 
 ## Player data vs player publisher data
 
-[Player data](quickstart.md) is information about a player that is specific to a game title. It should be used for title-specific information, such as saving your player's position in a dungeon, or other game-specific data.
+[Player data](quickstart.md) is player information that is specific to a game title. It should be used for title-specific information - such as saving your player's position in a dungeon, or other game-specific data.
 
-Player Publisher data is data associated with the player account, as opposed to the player account *plus* the title. It is used to save information about a player relevant to all titles in your Studio (which may also contain title-specific information, for purposes of cross-title rewards).
+Player Publisher data is data associated with the player account, as opposed to the player account *plus* the title. It is used to save information about a player relevant to all titles in your studio (which may also contain title-specific information, for purposes of cross-title rewards).
 
 All titles within a studio in PlayFab share a Publisher ID by default, and that ID defines this relationship. Player accounts exist at the Publisher layer, and are shared across all titles with the same Publisher ID (and then additionally have distinct player data per title).
 
-If you need to have titles in a Studio that have different Publisher IDs, or titles in different studios that share the same Publisher ID, you can open a ticket in the [PlayFab community forums](https://community.playfab.com/) and our **Developer Success** team will help you out.
+If you need to have titles in a studio that have different Publisher IDs, or titles in different studios that share the same Publisher ID, you can open a ticket in the [PlayFab community forums](https://community.playfab.com/) and our **Developer Success** team will help you out.
 
 > [!NOTE]
-> Please don't confuse player Publisher data with [Publisher data](../../config/titledata/using-publisher-data.md) which is Key/Value Pair data shared by all titles (it is *not* per-player).
+> Please don't confuse *player* Publisher data with [Publisher data](../../config/titledata/using-publisher-data.md) which is Key/Value Pair data shared by all titles (it is *not* per-player).
 
-Player publisher data usage is nearly identical to player data usage. They are *both* dictionaries mapping a string to a JSON blob (or other arbitrary string value).
+Player Publisher data usage is nearly identical to player data usage. They are *both* dictionaries mapping a string to a JSON blob (or other arbitrary string value).
 
 Our example in this tutorial, [Grant a reward for playing multiple titles](#grant-a-reward-for-playing-multiple-titles), will demonstrate saving JSON blobs, and focus on a targeted example of why you might use player publisher data.
 

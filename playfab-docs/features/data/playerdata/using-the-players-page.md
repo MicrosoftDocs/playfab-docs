@@ -22,7 +22,7 @@ It is possible to inspect the players you have in your title using the **Players
 
 ![Game Manager - Players Page](media/tutorials/player-search-page.png)  
 
-On this page, You can inspect the list of registered players as a table. The table contains general information about the player.
+On this page, You can inspect the list of registered players in a table format. The table contains general information about the player.
 
 You can select a player ID label (blue) to [inspect details about a particular player](player-details.md). You can also use the **Search Query** field to look up players.
 
@@ -33,7 +33,7 @@ The **Search** query field accepts two types of queries:
 1. **Simple**: Type plain text in the search box to return literal string matches on the ID column.
 2. **Complex**: Construct queries using the [KQL syntax](https://docs.microsoft.com/en-us/azure/kusto/query/).
 
-Sample complex queries can be accessed from the **Search Tips** button in the upper right. Clicking a sample query will automatically populate the search box with the correct KQL syntax. You can then edit the query to suit your use case.
+Sample complex queries can be accessed from the **Search Tips** button in the upper right. Selecting a sample query will automatically populate the search box with the correct KQL syntax. You can then edit the query to suit your use case.
 
 There are many attributes of the Player Profile table, not all of which are visualized in the UI. However, you may search on any of these [PlayerProfile](../../../api-references/events/data-types/playerprofile.md) columns using a complex query.
 

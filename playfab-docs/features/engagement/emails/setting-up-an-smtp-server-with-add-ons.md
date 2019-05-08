@@ -12,11 +12,11 @@ ms.localizationpriority: medium
 
 # Setting up an SMTP server with add-ons
 
-This tutorial walks you through how to set up an SMTP add-on to support sending custom emails through PlayFab.
+This tutorial walks you through how to set up an SMTP add-on, to support sending custom emails through PlayFab.
 
 ## Requirements
 
-Game Manager will be required, as a title's SMTP server is set up using an add-on. Read our [Game Manager Quickstart](../../config/gamemanager/quickstart.md) if you are unfamiliar with it.
+Game Manager will be required, as the SMTP server for the title is set up using an add-on. Read our [Game Manager Quickstart](../../config/gamemanager/quickstart.md) if you are unfamiliar with it.
 
 ## Go to the add-on page and install SMTP
 
