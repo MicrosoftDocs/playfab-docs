@@ -12,11 +12,11 @@ ms.localizationpriority: medium
 
 # Player ban system
 
-The player ban feature allows you to restrict access to the game for certain players that break the rules.
+The player ban feature allows you to restrict access to the game for certain players who break the rules.
 > [!NOTE]
 > Bans can be temporary or permanent.
 
-The following tutorial shows you how to utilize the ban system using the PlayFab API and Game Manager.
+The following tutorial shows you how to utilize the ban system, using the PlayFab API and Game Manager.
 
 ## Identify
 
@@ -62,14 +62,14 @@ Once the problematic player is identified, you may apply a ban. A community mana
 - Type in the **Reason** for the **Ban (1)**.
 - Choose if you want to **Ban permanently (2)**.
 - Or specify the **Duration in hours (3)** you want the **Ban** to be in effect.
-- Optionally, you can **Ban** by a specific **IP address (4)**.
-- Finally, select the **Add Ban** button **(5)**.
+- Optionally, you can **Ban** by a specific **IP ADDRESS (4)**.
+- Finally, select the **ADD BAN** button **(5)**.
 
 ![Game Manager - Players - Add Ban](media/tutorials/game-manager-players-add-ban.png)  
 
 If everything is set correctly, you will see a new **Ban** in the table.
 
-- You may optionally remove the **Ban** manually **(1)** by selecting it in the **Revoke Bans** field.
+- You may optionally remove the **Ban** manually **(1)** by selecting it in the **REVOKE BANS** field.
 
 ![Game Manager - Players - Bans - Revoke Ban](media/tutorials/game-manager-players-bans-revoke-ban.png)  
 

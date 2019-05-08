@@ -17,11 +17,11 @@ ms.localizationpriority: medium
 
 This quickstart describes how to create and use player data. Player data is information that applies to an individual player or player group (shared data) and is stored as Key/Value Pairs (KVPs) by PlayFab.
 
-This topic covers Client API calls, which are safe to call from any process or context. It also covers Server API calls, which should *only* be made from a dedicated server process you control, or a carefully secured CloudScript call.
+This topic covers client API calls, which are safe to call from any process or context. It also covers server API calls, which should *only* be made from a dedicated server process you control, or a carefully secured CloudScript call.
 
 Server APIs require your dev secret key, which you should never provide-to or publish-with your client.
 
-**About the Code Examples:**
+## About the code examples
 
 - The **C# Code Examples** shown in this quickstart correspond to using the PlayFab Unity SDK.
 - Use the client APIs [UpdateUserData](xref:titleid.playfabapi.com.client.playerdatamanagement.updateuserdata) to create, update, or delete and [GetUserData](xref:titleid.playfabapi.com.client.playerdatamanagement.getuserdata) to read data for the player.
@@ -43,7 +43,7 @@ This is data that the client can Create, Read, Update, or Delete (CRUD). To set 
 
 ### C# code example
 
-The following **C#** code example creates (or updates, if the KVPs already exist) the KVPs **Ancestor** with the value **Arthur**, and **Successor** with the value **Fred**.
+The following **C#** code example creates (or updates, if the KVPs already exist) the KVPs `Ancestor` with the value `Arthur`, and `Successor` with the value `Fred`.
 
 ```csharp
 void SetUserData() {
@@ -91,7 +91,7 @@ This is data that the server can modify, but the client can only read. To set re
 
 ### C# code example
 
-The following **C#** code example uses the PlayFab server API to create (or update, if the KVPs already exist) the KVPs with the key named **Father**, with the value **Fred**,  **Mother** with the value **Alice**, **Sister** with the value **Lucy**, and **Brother** with the value **Doug**.
+The following **C#** code example uses the PlayFab server API to create (or update, if the KVPs already exist) the KVPs with the key named `Father`, with the value `Fred`,  `Mother` with the value `Alice`, `Sister` with the value `Lucy`, and `Brother` with the value `Doug`.
 
 ```csharp
 public void UpdateUserReadOnlyData() {
@@ -145,7 +145,7 @@ This is data that the client cannot access. To set internal player data, use the
 
 ### C# code example
 
-The following **C#** code example uses the PlayFab server API to create (or update, if a key value already exists) the KVP with the **Key: Rank** and **Value: Sargent**.
+The following **C#** code example uses the PlayFab server API to create (or update, if a key value already exists) the KVPs with the key named `Class`, with the value `Fighter`, and `Race` with the value `Human`.
 
 ```csharp
 public void UpdateUserInternalData() {

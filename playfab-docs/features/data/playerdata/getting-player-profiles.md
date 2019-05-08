@@ -12,17 +12,17 @@ ms.localizationpriority: medium
 
 # Getting player profiles
 
-This tutorial walks you through how to use the [GetPlayerProfile](xref:titleid.playfabapi.com.server.accountmanagement.getplayerprofile) call to get a player’s profile with [PlayerProfileViewConstraints](xref:titleid.playfabapi.com.server.accountmanagement.getplayerprofile#playerprofileviewconstraints) properties that are enabled from your title’s setting. In the following example, we will be getting a player’s profile, created date, and last login time.
+This tutorial walks you through how to use the [GetPlayerProfile](xref:titleid.playfabapi.com.server.accountmanagement.getplayerprofile) call to get a player’s profile with [PlayerProfileViewConstraints](xref:titleid.playfabapi.com.server.accountmanagement.getplayerprofile#playerprofileviewconstraints) properties that are enabled from your title’s setting. In the following example, we will be getting a player’s profile, their created date, and last login time.
 
 ## Requirements
 
-For this tutorial, basic knowledge of how to create a player for your title is needed, so that you can perform a **GetPlayerProfile** on the player.
+For this tutorial, basic knowledge of how to create a player for your title is needed, so that you can perform a `GetPlayerProfile` on the player.
 
 It is also worthwhile to read the [Game Manager quickstart](../../config/gamemanager/quickstart.md) if you are unfamiliar with the Game Manager, as it is the place where we configure profile constraints.
 
 ## Step 1 - Create a user with a display name
 
-The first step is to create a player and add a display name to the user. This example will create a new user with the display name **UnicornTossMaster**.
+The first step is to create a player and add a display name to the user. This example will create a new user with the display name `UnicornTossMaster`.
 
 ```csharp
 void CreatePlayerAndUpdateDisplayName() {
@@ -44,10 +44,12 @@ void UpdateDisplayName() {
 }
 ```
 
-The response should show:
+The console output should show:
 
-- **Successfully logged in a player with PlayFabId: SOME_PLAYFAB_ID**, followed by:
-- **The player's display name is now: UnicornTossMaster**.
+```output
+Successfully logged in a player with PlayFabId: SOME_PLAYFAB_ID
+The player's display name is now: UnicornTossMaster
+```
 
 ## Step 2 - Making a player profile call
 
@@ -68,15 +70,15 @@ void GetPlayerProfile(string playFabId) {
 }
 ```
 
-In the response there will be a [PlayerProfileModel](xref:titleid.playfabapi.com.server.accountmanagement.getplayerprofile#playerprofilemodel) object which will contain the display name **UnicornTossMaster** for the player.
+In the response there will be a [PlayerProfileModel](xref:titleid.playfabapi.com.server.accountmanagement.getplayerprofile#playerprofilemodel) object which will contain the display name `UnicornTossMaster` for the player.
 
 ## Step 3 - Attempting to get Player Created time and Last Login time
 
-In the [PlayerProfileModel](xref:titleid.playfabapi.com.server.accountmanagement.getplayerprofile#playerprofilemodel) object there is a fair amount of data about the player. In the previous step, a **GetPlayerProfile** was issued, and the response that was received only contained display name information.
+In the [PlayerProfileModel](xref:titleid.playfabapi.com.server.accountmanagement.getplayerprofile#playerprofilemodel) object there is a fair amount of data about the player. In the previous step, a `GetPlayerProfile` was issued, and the response that was received only contained display name information.
 
-The next step is to get even *more* profile data for the player. To do so, we will call **GetPlayerProfile** with additional fields in the [PlayerProfileViewConstraints](xref:titleid.playfabapi.com.server.accountmanagement.getplayerprofile#playerprofileviewconstraints) request parameter.
+The next step is to get even *more* profile data for the player. To do so, we will call `GetPlayerProfile` with additional fields in the [PlayerProfileViewConstraints](xref:titleid.playfabapi.com.server.accountmanagement.getplayerprofile#playerprofileviewconstraints) request parameter.
 
-The following **C#** example modifies the **GetPlayerProfile** method from step 2 and calls **GetPlayerProfile** to request the **Created** and **LastLogin** fields by setting their flags in the [ProfileConstraints](xref:titleid.playfabapi.com.server.accountmanagement.getplayerprofile#playerprofileviewconstraints).
+The following **C#** example modifies the `GetPlayerProfile` method from step 2 and calls `GetPlayerProfile` to request the `Created` and `LastLogin` fields by setting their flags in the [ProfileConstraints](xref:titleid.playfabapi.com.server.accountmanagement.getplayerprofile#playerprofileviewconstraints).
 
 > [!NOTE]
 > **This will be an unsuccessful call at this step!!!**
@@ -96,9 +98,9 @@ void CreatePlayerAndUpdateDisplayName(string playFabId) {
 }
 ```
 
-This call should result in an error with an **Error Code 1303**. **RequestViewConstraintParamsNotAllowed** and an error message stating that there are **Invalid view constraints** with a JSON output of constraints that the title currently has set.
+This call should result in an error with an `Error Code 1303`. `RequestViewConstraintParamsNotAllowed`, and an error message stating that there are `Invalid view constraints` with a JSON output of constraints that the title currently has set.
 
-The error message has occurred because we have not yet configured the ability to show **Created** and **LastLogin** in our title’s profile constraint settings.
+The error message has occurred because we have not yet configured the ability to show `Created` and `LastLogin` in our title’s profile constraint settings.
 
 ## Step 4 - Configuring player profile view constraints for the title
 
@@ -117,9 +119,9 @@ To configure constraints for the title:
 
 ## Step 5 - Getting player created time and last login time
 
-Now we can go back to the **GetPlayerProfile** call in step 3.
+Now we can go back to the `GetPlayerProfile` call in step 3.
 
-Executing the same code again will now return a successful [PlayerProfileModel](xref:titleid.playfabapi.com.server.accountmanagement.getplayerprofile#playerprofilemodel) with data on the user’s creation time, last login, and the display name of **UnicornTossMaster**.
+Executing the same code again will now return a successful [PlayerProfileModel](xref:titleid.playfabapi.com.server.accountmanagement.getplayerprofile#playerprofilemodel) with data on the user’s creation time, last login, and the display name of `UnicornTossMaster`.
 
 ## Step 6 - Getting player profile via login operation
 
