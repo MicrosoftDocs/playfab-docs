@@ -12,9 +12,9 @@ ms.localizationpriority: medium
 
 # Entity objects
 
-Entity objects allow you to read and write small JSON-serializable objects attached to an entity. All entity types support the same **GetObjects** and **SetObjects** methods.
+Entity objects allow you to read and write small JSON-serializable objects attached to an entity. All entity types support the same `GetObjects` and `SetObjects` methods.
 
-The examples that are shown below demonstrate setting and reading an Object on a **title_player_account**.
+The examples that are shown below demonstrate setting and reading an `Object` on a `title_player_account`.
 
 ```csharp
 var data = new Dictionary<string, object>()

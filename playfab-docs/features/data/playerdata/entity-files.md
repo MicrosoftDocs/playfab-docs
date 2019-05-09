@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Entity files
 
-Entity files allow you to read and write files attached to an entity, in any format. The example shown below demonstrates a full entity-file loop - logging in, loading a file, and uploading a new file.
+Entity files allow you to read and write files attached to an entity, in any format. The example shown below demonstrates a full entity-file loop, from logging in, to loading a file, and uploading a new file.
 
 ```csharp
 #if !DISABLE_PLAYFABENTITY_API && !DISABLE_PLAYFABCLIENT_API
@@ -192,19 +192,19 @@ public class EntityFileExample : MonoBehaviour
 
 ## Deconstructing this example
 
-- **GlobalFileLock** is a very simplistic way to avoid file collisions, specifically designed for this example.
+- `GlobalFileLock` is a very simplistic way to avoid file collisions, specifically designed for this example.
   - Independent file actions will not cause any issues.
   - Each file action requires many steps and multiple API calls, so don't try to access the same file in multiple ways at the same time.
   - If you are very careful, you won't need any locking mechanism.
   - If you want to do something complicated, your locking mechanism may be much more complex.
-- **OnGUI** is a very old (but very dense) way to build a Unity GUI entirely within script.
+- `OnGUI` is a very old (but very dense) way to build a Unity GUI entirely within script.
   - Your GUI will be much better, and game-specific.
 - All PlayFab features *first* require a login or authentication.
-- **LoadAllFiles()** will do exactly as it says. For the current logged-in entity, load all file saved to PlayFab.
+- `LoadAllFiles()` will do exactly as it says. For the current logged-in entity, load all file saved to PlayFab.
   - This requires multiple steps:
     - Asking PlayFab where the files are located,
     - And then downloading them separately.  
-- **UploadFile(string fileName)** saves the file to the service for the entity.
+- `UploadFile(string fileName)` saves the file to the service for the entity.
   - For simplicity, this example saves one file at a time, but files can be uploaded atomically in sets as well.
   - The steps for this are:
     - Initialize an atomic upload operation,

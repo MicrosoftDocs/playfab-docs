@@ -77,7 +77,7 @@ To add data to a title, perform the following steps.
 4. Enter a value for the **Key** and a value for the **Value**. Both the **Key** and the **Value** are stored as strings.
 5. Use the **SUBMIT** button to save the new data item.
 
-![Title Data](media/tutorials/game-manager-content-title-data-keys.png)  
+![Title Data](media/tutorials/game-manager-content-title-data-keys.png)
 
 ### Setting title data by calling the server API in C#
 

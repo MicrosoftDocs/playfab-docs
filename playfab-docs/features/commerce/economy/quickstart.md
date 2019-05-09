@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Economy quickstart
 
-Making monetization work is one of the biggest challenges of games. PlayFab helps make this easy by building on top of three foundational pieces: Currencies, Items, and Inventory.
+Making monetization work is one of the biggest challenges of games. PlayFab simplifies this for you, by building on top of three foundational pieces: Currencies, Items, and Inventory.
 
 In this quickstart, you will:
 
@@ -31,7 +31,7 @@ To create a virtual currency:
 
 1. Open **Game Manager** and select **Economy** on the left side bar.
 2. Select the **Currency** tab.
-3. Select **New Currency** and change these fields (as shown in the image below):
+3. Choose **New Currency** and change these fields (as shown in the image below):
    - Set **Currency code (2 uppercase characters)** to **GD**.
    - Set **Display name** to **Gold**.
 4. Select **SAVE CURRENCY**.
@@ -47,7 +47,7 @@ Many games offer the player items for purchase such as a shield, a level-unlock,
 To create a catalog with an item:
 
 1. Select **Economy** on the left side bar and select the **Catalogs** tab.
-2. Select the **NEW CATALOG** button and enter **main** as the **Catalog version**. An item with the ID of **One** is added automatically.
+2. Choose the **NEW CATALOG** button and enter **main** as the **Catalog version**. An item with the ID of **One** is added automatically.
 3. Select **One** and change these fields (as shown in the image below):
 
    - Set **Item ID** to **apple**.

@@ -26,6 +26,6 @@ To do this programmatically, use the [ListArchivedMultiplayerServers](xref:title
 
 ![Multiplayer - Servers - Archived Servers list](media/tutorials/multiplayer-archived-servers-list.png)
 
-Use the **Search Logs** button to download logs for a specific server by **Server ID**. The programmatic equivalent is the [GetMultiplayerServerLogs](xref:titleid.playfabapi.com.multiplayer.multiplayerserver.getmultiplayerserverlogs) method.
+Use the **Search Logs** button to download logs for a specific server by **Server ID**. <!--The programmatic equivalent is the [GetMultiplayerServerLogs](xref:titleid.playfabapi.com.multiplayer.multiplayerserver.getmultiplayerserverlogs) method. -->
 
 ![Multiplayer - Servers - Search logs](media/tutorials/multiplayer-servers-search-logs.png)

@@ -17,16 +17,16 @@ This tutorial walks you through the steps for creating a rule that sends an veri
 ## Requirements
 
 > [!IMPORTANT]
-> This is an advanced tutorial. Please *make sure* that all of the requirements have been met, or you will *not* be able to complete this tutorial.
+> This is an *advanced* tutorial. Please make sure that all of the requirements have been met, or you will *not* be able to complete this tutorial.
 
-- To send custom emails with email templates, you will need to have your own SMTP server with a username and password. Please ensure that you have your own SMTP server before following our tutorial [Setting up an SMTP server with add-ons](../../engagement/emails/setting-up-an-smtp-server-with-add-ons.md).
+- To send custom emails with email templates, you will need to have your own SMTP server with a username and password. Please verify that you have your own SMTP server *before* following our tutorial [Setting up an SMTP server with add-ons](../../engagement/emails/setting-up-an-smtp-server-with-add-ons.md).
 
 > [!NOTE]
-> You can use Gmail for testing, but with Gmail you are limited to 2,000 emails per day.
+> You can use Gmail for testing - but with Gmail you are limited to 2,000 emails per day.
 
-- Basic knowledge of how to create a player will be necessary since there will need to be players with a username and password before calling account recovery logic.
-- Read the [Game Manager quickstart](../../config/gamemanager/quickstart.md) if you are unfamiliar with the Game Manager as it is the place where email templates are created.
-- Knowledge of how to work with player profiles will be necessary to confirm that emails will be necessary for checking that a contact email has been added to a player's profile. Please read up on how to get a player’s profile in the [Getting Player Profiles](../../data/playerdata/getting-player-profiles.md) tutorial and make sure that under the **Client Profile Options** on your **Title** you allow **Contact email addresses**.
+- Basic knowledge of how to create a player will be necessary, since there will need to be players with a username and password before calling account recovery logic.
+- Read the [Game Manager quickstart](../../config/gamemanager/quickstart.md) if you are unfamiliar with the Game Manager, as it is the place where email templates are created.
+- Knowledge of how to work with player profiles will be required, to confirm that emails will be necessary for checking that a contact email has been added to a player's profile. Please read up on how to get a player’s profile in the [Getting Player Profiles](../../data/playerdata/getting-player-profiles.md) tutorial, and make sure that under the **Client Profile Options** on your **Title** you allow **Contact email addresses**.
 - Creating a rule will be necessary in this tutorial it is a good idea to read up on how [Rules](../../automation/actions-rules/quickstart.md) work.
 
 ## Step 1 - Create an email template
@@ -56,7 +56,7 @@ Now add a **New Email Template**, filling in the fields as follows and leaving t
 - **From Email Address**:  The email address you want to show in the **From** field in the email. This must be an email domain that the SMTP server enables you to send emails from.
 
   > [!NOTE]
-  > Some email servers, like Gmail, will ignore this field and will send from the account set up with the SMTP server.
+  > Some email servers, like Gmail, will ignore this field and send from the account set up with the SMTP server.
   
 - **Callback URL**:  <https://www.example.com>
 
@@ -79,7 +79,7 @@ Next, we will create a rule to send a verification email every time a player upd
 - Select the **Rules** tab.
 - Select **NEW RULE**.
 - Fill out the **Rule Name** field with your **Rule VerifyUpdatedEmail**.
-- From the **Event Type** drop-down, pick **com.playfab.player_updated_contact_email**.
+- From the **Event Type** drop-down, select **com.playfab.player_updated_contact_email**.
 - Under the **Actions** heading, select **+ADD ACTION**.
 
 ![Game Manager - Automation - New Rule](media/tutorials/game-manager-automation-new-rule-add-action.png)  
@@ -87,7 +87,7 @@ Next, we will create a rule to send a verification email every time a player upd
 Choose **Send Email** from the **Type** drop-down.
 
 - The **Email template** drop-down should be populated by the template created in Step 1 **MyFirstEmailVerificationTemplate**.
-- If it is not, pick **MyFirstEmailVerificationTemplate** from the drop-down.
+- If it is not, select **MyFirstEmailVerificationTemplate** from the drop-down.
 
 ![Game Manager - Automation - New Rule](media/tutorials/game-manager-automation-new-rule-save-action.png)  
 
@@ -98,11 +98,11 @@ For this next step, you will need an existing player account.
 We add a contact email to the player using [AddOrUpdateContactEmail](xref:titleid.playfabapi.com.client.accountmanagement.addorupdatecontactemail).
 
 > [!NOTE]
-> A **Contact Email** field in a Player Profile is different from the **Login Email** field on a Player Profile, even though they may both contain the same email address. Anytime you send email to the player, it will only go to the contact email address.
+> A **Contact Email** field in a Player Profile is different from the **Login Email** field on a Player Profile, even though they may both contain the same email address. Any time you send email to the player, it will *only* go to the contact email address.
 
 ### C# code example
 
-In the following example, we log in a player, then add a contact email using [AddOrUpdateContactEmail](xref:titleid.playfabapi.com.client.accountmanagement.addorupdatecontactemail). Make sure the email address associated with the player is one that you have access to.
+In the following example, we log in a player, then add a contact email using [AddOrUpdateContactEmail](xref:titleid.playfabapi.com.client.accountmanagement.addorupdatecontactemail). Make sure the email address associated with the player is one that you can access.
 
 ```csharp
 void AddContactEmailToPlayer()
@@ -146,10 +146,10 @@ void FailureCallback(PlayFabError error)
 
 Next, confirm that the contact email was added to the player’s profile. Log into the **Game Manager**, and visit the **Players Profile** page.
 
-You should see a **Contact Email** listed for that Player, with **Verification Status**: **Pending**.
+You should see a **Contact Email** listed for that player, with **Verification Status**: **Pending**.
 
 > [!NOTE]
-> The **Verification Status** could be **Unverified**, if the verification email was not sent out yet, but will be in the **Pending** state as soon as the email is sent.
+> The **Verification Status** could be **Unverified**, if the verification email was not sent out yet, but will move to the **Pending** state as soon as the email is sent.
 
 ![Game Manager - Player Profile - Contact email](media/tutorials/game-manager-player-profile-contact-email-verification-pending.png)  
 

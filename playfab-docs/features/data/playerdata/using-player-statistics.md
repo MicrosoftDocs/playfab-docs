@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 This tutorial describes how to create and use player statistics. Player statistics are stored as Key Value Pairs (KVPs) where the Key is a string, and the Value is a 32-bit integer (for compatibility with languages which do not support 64-bit).
 
-Player statistics are also used by leaderboards. This guide covers player statistics exclusively. If you wish to read about how player statistics and leaderboards work together, please read our tutorial [Using resettable statistics and leaderboards](../../social/tournaments-leaderboards/using-resettable-statistics-and-leaderboards.md).
+Player statistics are also used by leaderboards, but this guide only covers player statistics exclusively. If you wish to read about how player statistics and leaderboards work *together*, please read our tutorial [Using resettable statistics and leaderboards](../../social/tournaments-leaderboards/using-resettable-statistics-and-leaderboards.md).
 
 > [!NOTE]
 > In some documentation and API calls, you may find the term **UserStatistics**. For the purposes of this discussion, the terms *user* and *player* are identical and interchangeable. In the **Game Manager** page, the **Players** tab provides access to the **Users/Players** for your title, and within that, their statistics. Player statistics refers specifically to information bound to a player, not analytics information about player.
@@ -79,18 +79,18 @@ void OnGetStatistics(GetPlayerStatisticsResult result)
 
 ## Aggregation method
 
-PlayFab supports some convenience options for **Statistic Aggregation**. The 4 options include:
+PlayFab supports some convenience options for Statistic Aggregation. The 4 options include:
 
 - **Last**
 - **Min**
 - **Max**
 - **Sum**
 
-You can create a statistic definition via the [CreatePlayerStatisticDefinition](xref:titleid.playfabapi.com.admin.playerdatamanagement.createplayerstatisticdefinition) API call, though it's not required. Any call to update a player statistic for the title will *automatically* create the default statistic definition, using the **Last Aggregation** method.
+You can create a statistic definition via the [CreatePlayerStatisticDefinition](xref:titleid.playfabapi.com.admin.playerdatamanagement.createplayerstatisticdefinition) API call, though it's not required. Any call to update a player statistic for the title will *automatically* create the default statistic definition, using the Last Aggregation method.
 
-To change a **Statistic Aggregation** method, you can use the Game Manager or the [UpdatePlayerStatisticDefinition](xref:titleid.playfabapi.com.admin.playerdatamanagement.updateplayerstatisticdefinition) API call.
+To change a statistic aggregation method, you can use the Game Manager or the [UpdatePlayerStatisticDefinition](xref:titleid.playfabapi.com.admin.playerdatamanagement.updateplayerstatisticdefinition) API call.
 
-To edit a **Statistic Definition** in **Game Manager**:
+To edit a statistic definition in **Game Manager**:
 
 - Log into [PlayFab](https://developer.playfab.com/en-us/my-games)
 - Select your **Title**.
@@ -103,7 +103,7 @@ To edit a **Statistic Definition** in **Game Manager**:
 
   ![PlayFab Leaderboards - Edit Leaderboard - Stat aggregation](media/tutorials/playfab-edit-leaderboard-stat-aggregation.png)  
 
-Some examples of how to use **Statistic Aggregation**:
+Some examples of how to use statistic aggregation:
 
 - **Max** and **Min** can be used to save **best/worst** scores such as Headshots or Accuracy:
   - In short, they apply the rule of: **if this is higher (or lower) than the existing score, update the score**.
@@ -120,6 +120,6 @@ Some examples of how to use **Statistic Aggregation**:
 
 A leaderboard is generated for all statistics saved in PlayFab. Accessing a leaderboard for a specific stat is optional.
 
-**Reset Frequency** and **Aggregation** methods play a major role in how dynamic the leaderboards are in your game. The **Tournaments** feature focuses on leaderboards with automatic reset frequencies, and is described in the tutorial [Using resettable statistics and leaderboards](../../social/tournaments-leaderboards/using-resettable-statistics-and-leaderboards.md).
+Reset frequency and aggregation methods play a major role in how dynamic the leaderboards are in your game. The **Tournaments** feature focuses on leaderboards with automatic reset frequencies, and is described in the tutorial [Using resettable statistics and leaderboards](../../social/tournaments-leaderboards/using-resettable-statistics-and-leaderboards.md).
 
 We encourage you to use statistics in every manner relevant to your game. You can use resettable statistics to run daily tournaments, and long-term statistics like experience points, side-by-side.

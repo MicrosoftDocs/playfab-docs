@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 ## Overview
 
-The system of queues and rules provides the flexibility to handle a large number of scenarios. Below are examples of some of the more common matchmaking use cases, and their associated queues. Each of these can be submitted directly via the [Matchmaking Admin API](xref:titleid.playfabapi.com.multiplayer.matchmakingadmin). These options can also be set via the Game Manager UI.
+The system of queues and rules provides the flexibility to handle a large number of scenarios. Below are examples of some of the more common matchmaking use cases, and their associated queues. Each of these can be submitted directly via PlayFab APIs. <!--the [Matchmaking Admin API](xref:titleid.playfabapi.com.multiplayer.matchmakingadmin).--> These options can also be set via the Game Manager UI.
 
 ## My first queue, or "quick match"
 

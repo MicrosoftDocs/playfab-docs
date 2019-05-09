@@ -25,7 +25,7 @@ The Xbox Data Add On provides transaction-level usage and purchase data from Mic
 
 #### Step 1 | Create a PlayFab Account
 
-To onboard to the Xbox Data Add On, first sign up for a PlayFab account and create a title at [www.playfab.com](https://www.playfab.com). Follow the account creation flow to create a studio and at least one title you'd like to receive data for. 
+To onboard to the Xbox Data Add On, first sign up for a PlayFab account and create a title at [www.playfab.com](https://www.playfab.com). Follow the account creation flow to create a studio and at least one title you'd like to receive data for.
 
 #### Step 2 | Request to the PlayFab Insights Private Preview
 
@@ -39,13 +39,14 @@ With the credentials used to publish your Xbox title, log in to your [Microsoft 
 From the dashboard, find each of the parent Product, Bundle, or Edition you want mapped:
  ![Image of all services menu item](../../media/feature-partner-center-productid.png)
 
-Copy the Product ID using right-click, copy link, and paste into a document. Now copy the 12 digit Product ID and share the request in an email to [pfgaminginsights@microsoft.com](mailto:pfgaminginsights@microsoft.com). The mapping step is handled by a PlayFab team member. 
+Copy the Product ID using right-click, copy link, and paste into a document. Now copy the 12 digit Product ID and share the request in an email to [pfgaminginsights@microsoft.com](mailto:pfgaminginsights@microsoft.com). The mapping step is handled by a PlayFab team member.
 
 #### Step 4 | Access the Data
 
 Once a PlayFab team member has mapped your product IDs, processing your new title's data takes will take approximately eight hours. When the data is ready, visit www.PlayFab.com, sign in, select your mapped title, choose Analytics from the left-hand nav. Choose Insights (Preview) from the top nav. Click "Open in Azure Data Explorer." Once connected, find the following tables in your title's database:
-1.	Fact_Xbox_Purchase_ChargeBack
-2.	Fact_Xbox_Purchase_OrderCancellations
-3.	Fact_Xbox_Purchase_Orders
-4.	Fact_Xbox_Purcahse_Refunds
-5.	Fact_Xbox_Usage
+
+1. Fact_Xbox_Purchase_ChargeBack
+2. Fact_Xbox_Purchase_OrderCancellations
+3. Fact_Xbox_Purchase_Orders
+4. Fact_Xbox_Purcahse_Refunds
+5. Fact_Xbox_Usage

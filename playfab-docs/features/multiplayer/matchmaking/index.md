@@ -120,7 +120,7 @@ see the following documentation.
 
 ### SDKs and Tools
 + [Matchmaking API Reference (Public Preview)](xref:titleid.playfabapi.com.multiplayer.matchmaking)
-+ [Matchmaking Admin API Reference (Public Preview)](xref:titleid.playfabapi.com.multiplayer.matchmakingadmin)
+<!-- + [Matchmaking Admin API Reference (Public Preview)](xref:titleid.playfabapi.com.multiplayer.matchmakingadmin) -->
 
 ### March 2019 - Public Preview Release Notes
 

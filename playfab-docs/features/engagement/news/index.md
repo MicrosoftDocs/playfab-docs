@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # News
 
-**Title News** is a mechanism for broadcasting information to your Players. It allows you to post updates about things such as upcoming in-game events, patch notes, future downtime, community activity, or anything else you'd like your players to know.
+Title News is a mechanism for broadcasting information to your players. It allows you to post updates about things such as upcoming in-game events, patch notes, future downtime, community activity, or anything else you'd like your players to know.
 
 Each post contains a few basic elements:
 

@@ -94,6 +94,6 @@ The **Run CloudScript** button on the **Player Overview** page opens the **REVIS
 2. **Revision** - Lets you select the revision level of the CloudScript to use. You can select **Refresh** to grab the latest changes.
 3. The **Function name** - Lets you select the function to run. The list of available functions is based on your CloudScript revision content.
 4. The **Arguments** field - Lets you supply optional JSON arguments.
-5. The **Run CloudScript** button - Lets you commit any changes you make on this screen.
+5. The **RUN CLOUDSCRIPT** button - Lets you commit any changes you make on this screen.
 
 ![Game Manager - Player - Run CloudScript](media/tutorials/game-manager-player-run-cloudscript.png)  

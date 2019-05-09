@@ -12,21 +12,21 @@ ms.localizationpriority: medium
 
 # Using email templates to send an account recovery email
 
-This tutorial walks you through how to use the email template feature of PlayFab to send an account recovery player's contact email address to let a player reset their password.
+This tutorial walks you through how to use the email template feature of PlayFab to send an account recovery player's contact email address, to let a player reset their password.
 
 ## Requirements
 
 > [!IMPORTANT]
-> This is an advanced tutorial. Please make sure that all requirements have been met or you will not be able to complete this tutorial.
+> This is an advanced tutorial. Please make sure that all requirements have been met, or you will not be able to complete this tutorial.
 
-- To send custom emails with email templates, you will need to have your own **SMTP** server with a username and password. Please be sure that you have your own **SMTP** server *before* using our tutorial [Setting up an SMTP server with add-ons](../../engagement/emails/setting-up-an-smtp-server-with-add-ons.md).
+- To send custom emails with email templates, you will need to have your own SMTP server with a username and password. Please be sure that you have your own SMTP server *before* using our tutorial [Setting up an SMTP server with add-ons](../../engagement/emails/setting-up-an-smtp-server-with-add-ons.md).
 
 > [!NOTE]
 > You can use Gmail for testing, but Gmail limits you to 2,000 emails per day.
 
-- Basic knowledge of how to create a player will be necessary since there will need to be players with a usernames and passwords before calling account recovery logic.
+- Basic knowledge of how to create a player will be necessary, since there will need to be players with a usernames and passwords before calling account recovery logic.
 - Read the [Game Manager quickstart](../../config/gamemanager/quickstart.md) if you are unfamiliar with the Game Manager, as it is the place where email templates are created.
-- Knowledge of how to work with player profiles will be necessary to confirm that emails will be necessary for checking that a contact email has been added to a player's profile. Please read up on how to get a player profile in the [Getting Player Profiles](../../data/playerdata/getting-player-profiles.md) tutorial, and make sure that under the **Client Profile Options** on your **Title** you allow **Contact email addresses**.
+- Knowledge of how to work with player profiles will be required to confirm that emails will be necessary for checking that a contact email has been added to a player's profile. Please read up on how to get a player profile in the [Getting Player Profiles](../../data/playerdata/getting-player-profiles.md) tutorial, and make sure that under the **Client Profile Options** on your **Title** you allow **Contact email addresses**.
 
 ## Step 1 - Create an email template
 
@@ -77,11 +77,11 @@ For this next step, you will need an existing player account.
 We will add a username, password, and login email using [AddUsernamePassword](xref:titleid.playfabapi.com.client.accountmanagement.addusernamepassword). Additionally, we add a contact email to the player using [AddOrUpdateContactEmail](xref:titleid.playfabapi.com.client.accountmanagement.addorupdatecontactemail).
 
 > [!NOTE]
-> A contact email field on a player profile is different from the login email field on a player profile, even though they may *both* contain the same email address. Anytime you send email to the player, it will go to the contact email address.
+> A contact email field on a player profile is different from the login email field on a player profile, even though they may *both* contain the same email address. Any time you send email to the player, it will go to the contact email address.
 
 ### C# code example
 
-In the following example, we log in a player, then add a username, password, and login email using [AddUsernamePassword](xref:titleid.playfabapi.com.client.accountmanagement.addusernamepassword). We then add a contact email using [AddOrUpdateContactEmail](xref:titleid.playfabapi.com.client.accountmanagement.addorupdatecontactemail). Make sure the email address associated with the player is one that you have access to.
+In the following example, we log in a player, then add a username, password, and login email using [AddUsernamePassword](xref:titleid.playfabapi.com.client.accountmanagement.addusernamepassword). We then add a contact email using [AddOrUpdateContactEmail](xref:titleid.playfabapi.com.client.accountmanagement.addorupdatecontactemail). Make sure the email address associated with the player is one that you can access.
 
 ```csharp
 void CreatePlayer()
@@ -180,7 +180,7 @@ void FailureCallback(PlayFabError error)
 
 Finally, we can check that the account recovery email was sent.
 
-The first thing you can do is go the player's **PlayStream**. In **Game Manager**:
+The first thing you can do is go to the player's PlayStream area. In **Game Manager**:
 
 - Select **Player** from the menu on the left.
 - Go to the **PlayStream** area of the screen.
@@ -263,7 +263,7 @@ void FailureCallback(PlayFabError error)
 
 ## Step 7 - Check that the password was reset
 
-Finally, check that the player has reset their password successfully by logging in with [LoginWithPlayFab](xref:titleid.playfabapi.com.client.authentication.loginwithplayfab).
+Finally, verify that the player has reset their password successfully by logging in with [LoginWithPlayFab](xref:titleid.playfabapi.com.client.authentication.loginwithplayfab).
 
 ### C# Code Example
 
@@ -293,6 +293,6 @@ void FailureCallback(PlayFabError error)
 
 ## Conclusion
 
-So that's it for this tutorial. You've seen how to set up your SMTP server, create an email template, send an account recovery email, and reset a player's password.
+That's it for this tutorial! You've seen how to set up your SMTP server, create an email template, send an account recovery email, and reset a player's password.
 
 If you have any questions or feedback on this tutorial, please email us at [helloplayfab@microsoft.com](mailto:helloplayfab@microsoft.com).
