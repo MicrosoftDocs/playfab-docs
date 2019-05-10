@@ -22,11 +22,11 @@ ms.localizationpriority: medium
 ## Configuring the Android notification channel
 
 > [!NOTE]
-> The **Google** and **Firebase** developer consoles experience changes regularly. The setup description in this section best describes the values you need - and how to get them - as of June 2017.
+> The Google and Firebase developer consoles experience changes regularly. The setup description in this section best describes the values you need - and how to get them - as of June 2017.
 
 ### Google and Firebase setup
 
-There are three **Google** websites that you must use and synchronize. In **Google/Firebase**, there are both Projects and Apps:
+There are three Google websites that you must use and synchronize. In Google/Firebase, there are both Projects and Apps:
 
 - **Project**:
   - Ensure that your project is set up and accessible from the [Google API Manager](https://console.developers.google.com/).
@@ -49,21 +49,21 @@ There are three **Google** websites that you must use and synchronize. In **Goog
   - In the **General** tab, this is listed as the **Web API Key**.
   - In the **Cloud Messaging** tab, this is listed as the **Legacy server key**.
 
-- All of the keys described above should be identical, and they are all the **API** key described in this document.
+- All of the keys described above should be identical, and they are all the API key described in this document.
 
 > [!NOTE]
 > If they are not identical, the **Legacy server key** is the one needed by PlayFab.
 
 ## Using the API key
 
-- Provide your **API** key in one of two ways:
+- Provide your API key in one of two ways:
   1. Input your key directly into the **Game Manager UI**: **Settings** (for your **Title**) > **Push Notifications** > **Android**.
-  2. Or call [SetupPushNotification](xref:titleid.playfabapi.com.admin.title-widedatamanagement.setuppushnotification) using **Postman** or a **Unity** project with **Server API** methods enabled.
+  2. Or call [SetupPushNotification](xref:titleid.playfabapi.com.admin.title-widedatamanagement.setuppushnotification) using Postman or a Unity project with Server API methods enabled.
   
   - Name: **your_game_name**
   - Platform: **GCM**
-  - Credential: (**Google** server **API Key**) : **AIza******ppo**
-  - OverwriteOldARN: **true**
+  - Credential: (**Google server API Key**): `AIza**ppo`
+  - Overwrite OldARN: `true`
   - You should receive an **HTTP 200 OK** response with data similar to the following.
 
       ```json
@@ -81,21 +81,21 @@ There are three **Google** websites that you must use and synchronize. In **Goog
 
 ## Getting started: push notifications for Android + Unity
 
-To set up your **Unity** project:
+To set up your Unity project:
 
-- Create a new **Unity** project.
+- Create a new Unity project.
 - [OPTIONAL] Import the [PlayFab Unity Editor Extensions](https://api.playfab.com/downloads/unity-edex) package.
 - Import the [Unity PlayFab SDK](https://api.playfab.com/downloads/unity-v2ap) package.
-- Follow the [FCM Unity](https://firebase.google.com/docs/cloud-messaging/unity/client) guide to install **FCM** messaging, and set up a project for push notifications.
+- Follow the [FCM Unity](https://firebase.google.com/docs/cloud-messaging/unity/client) guide to install FCM messaging, and set up a project for push notifications.
   - Once finished, you can continue with this guide to receive messages from PlayFab.
-  - We will give you a complete **FCM**-ready **monoBehaviour** script in the following example, which combines **FCM** and PlayFab.
+  - We will give you a complete FCM-ready monoBehaviour script in the following example, which combines FCM and PlayFab.
 
-- In the **FCM guide**, you created a **monobehavior** script that set up the **Firebase** plugin.
-  - You can continue using that **monobehavior** script, or replace it with the one in the example that follows.
+- In the FCM guide, you created a monobehavior script that set up the Firebase plugin.
+  - You can continue using that monobehavior script, or replace it with the one in the example that follows.
 
 ### Setting up your first Push Notification
 
-In **Unity**, open the script you created in the **FCM** tutorial, and replace the contents.
+In Unity, open the script you created in the FCM tutorial, and replace the contents.
 
 ```csharp
 using PlayFab;
@@ -192,22 +192,22 @@ public class MsgCatcher : MonoBehaviour
 }
 ```
 
-Build and run your **Unity** project on a device. If you receive a push notification with the text **Push notifications registered successfully**, then everything worked as expected.
+Build and run your Unity project on a device. If you receive a push notification with the text, **Push notifications registered successfully**, then everything worked as expected.
 
 > [!NOTE]
-> **PlayFabSettings.TitleId = TITLE_ID**.
-> You must set your own **TitleId**. This example will not work if you don't update this **TitleId**, because our title is registered with our **Firebase Keys** and settings, *not yours*. You can do so by un-commenting this line and replacing **TITLE_ID** with your **titleId**, or you can choose your title from the optional **Editor Extensions** plugin mentioned in the previous section.
+> `PlayFabSettings.TitleId = TITLE_ID`.
+> You must set your own `TitleId`. This example will not work if you don't update this `TitleId`, because our title is registered with our Firebase Keys and settings, *not yours*. You can do so by un-commenting this line and replacing `TITLE_ID` with your `titleId`, or you can choose your title from the optional Editor Extensions plugin mentioned in the previous section.
 
 ### Troubleshooting Android
 
-- Verify that you can send a test push notifications from the **Firebase** Console.
-  - If you cannot, then your **Firebase** plugin is not set up correctly, and you should review the **Firebase Documentation** to find out why, or contact **Firebase Support**.
+- Verify that you can send a test push notifications from the Firebase Console.
+  - If you cannot, then your Firebase plugin is not set up correctly, and you should review the Firebase Documentation to find out why, or contact Firebase Support.
 
-- Ensure your **FCM client pushToken** is set properly.
-  - The **OnTokenReceived** function in the example should be called, and should have a valid token.
-  - If it is *not* called, your **Firebase** plugin is *not* set up correctly, and you should review the **Firebase Documentation** to find out why, or contact **Firebase Support**.
+- Ensure your FCM client pushToken is set properly.
+  - The `OnTokenReceived` function in the example should be called, and should have a valid token.
+  - If it is *not* called, your Firebase plugin is *not* set up correctly, and you should review the Firebase Documentation to find out why, or contact Firebase Support.
 
-- Ensure your **titleId** is set to a title that you own, and that it has been registered with the server **API** key from your **Firebase** project.
+- Ensure your `titleId` is set to a title that you own, and that it has been registered with the server API key from your Firebase project.
 
 ### Advanced Features
 
@@ -230,6 +230,6 @@ For help, example bugs, and related questions, drop us a line in our [Forums](ht
 
 Currently, we only support our services for the standard flow described in this document. If you team is looking for additional functionality with other common push services or plugins, please let us know! We love getting feedback from our developer community.
 
-For documentation on the push payload via **Amazon SNS**:
+For documentation on the push payload via Amazon SNS:
 
 - [Amazon SNS Message & JSON Formats](https://docs.aws.amazon.com/sns/latest/dg/json-formats.html)
