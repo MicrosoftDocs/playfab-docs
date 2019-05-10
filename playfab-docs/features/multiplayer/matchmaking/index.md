@@ -27,7 +27,10 @@ time the firmly established technology of Xbox Live matchmaking has been
 available outside of the Xbox Live ecosystem, and it will be available to you
 *everywhere* via PlayFab.
 
-When an individual or group wants to enter a match, your title submits a request to the matchmaking service. Once the request is made, the service will hold on to the request and try to match it with other requests. The service then creates matches that contain players who are most compatible.
+When an individual or group wants to enter a match, your title submits a request
+to the matchmaking service. Once the request is made, the service will hold on
+to the request and try to match it with other requests. The service then creates
+matches that contain players who are most compatible.
 
 ## Terminology
 
@@ -117,6 +120,8 @@ see the following documentation.
 + [Displaying queue statistics in your title](display-statistics.md)
 + [Integrating with PlayFab Multiplayer Servers](multiplayer-servers.md)
 + [Handling common error cases](error-cases.md)
++ [Workaround for peer-to-peer connection](peer-to-peer.md)
++ [Using server backfill tickets](backfill-tickets.md)
 
 ### SDKs and Tools
 + [Matchmaking API Reference (Public Preview)](xref:titleid.playfabapi.com.multiplayer.matchmaking)
