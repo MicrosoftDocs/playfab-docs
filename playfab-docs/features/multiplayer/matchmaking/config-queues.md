@@ -18,11 +18,11 @@ Match configuration centers around queues, which represent a place where tickets
 
 ## Queue configuration
 
-At the queue level, there is configuration that describes basic requirements for how tickets are matched inside a queue, as well as how you obtain statistics information about the queue.
+At the queue level, the configuration describes basic requirements regarding how tickets are matched inside a queue, as well as how you obtain statistics information about the queue.
 
 ### Queue name
 
-The name for this queue. It is between 1 and 64 characters long (inclusive) and is case-sensitive. It is alpha-numeric plus underscores and hyphens, and starts with a letter or number. Generally a queue name represents a way to play a game, such as "4v4CaptureTheFlag" or "UnrankedRace". When creating a matchmaking ticket, the queue name must be specified to identify which queue it should enter.
+The name for a specific queue. It is between 1 and 64 characters long (inclusive) and is case-sensitive. It is alpha-numeric, plus underscores and hyphens, and starts with a letter or number. Generally a queue name represents a way to play a game, such as "4v4CaptureTheFlag" or "UnrankedRace". When creating a matchmaking ticket, the queue name must be specified to identify which queue it should enter.
 
 ### Match size
 
@@ -32,7 +32,7 @@ In addition, even if a ticket alone already meets the minimum requirements for a
 
 ### Statistics available to players
 
-Determines which queue statistics are exposed to players through the [GetQueueStatistics API](xref:titleid.playfabapi.com.multiplayer.matchmaking.getqueuestatistics). Servers always have access to all statistics. See the [Displaying queue statistics in your title](display-statistics.md) tutorial for more information.
+This determines which queue statistics are exposed to players through the [GetQueueStatistics API](xref:titleid.playfabapi.com.multiplayer.matchmaking.getqueuestatistics). Servers always have access to all statistics. See the [Displaying queue statistics in your title](display-statistics.md) tutorial for more information.
 
 There are two options you can control within this:
 
@@ -41,18 +41,18 @@ There are two options you can control within this:
 
 ### Teams
 
-A queue can include team configuration to have the match service assign players to teams. Additional team specific rules can be used to control how team assignment is done. Furthermore, the match service will ensure that players matching together in the same ticket are not assigned to different teams.
+A queue can include team configuration to have the match service assign players to teams. Additional team-specific rules can be used to control how team assignment is done. Furthermore, the match service will ensure that players matching together in the same ticket are not assigned to different teams.
 
 You can have 2 or more teams defined in a queue.
 
-+ **Team name** - Name used for this team. Team names are between 1 and 64 characters long (inclusive) and are case-sensitive. They are alphanumeric, plus underscores and hyphens, and start with a letter or number. In addition they must be unique within a queue.
++ **Team name** - The name used for this team. Team names are between 1 and 64 characters long (inclusive) and are case-sensitive. They are alphanumeric, plus underscores and hyphens, and start with a letter or number. In addition they must be unique within a queue.
 + **Team size** - Minimum and maximum number of players that can be on the team. Matchmaking will try to form teams with as many players as possible up to the maximum.
 
 Besides defining the teams and their sizes, additional rules can be enabled to help with how to handle teams in matchmaking. See [below](#team-rule-types) for information on team-specific rules.
 
 ## Rule configuration
 
-Rules may be optionally defined for a queue. When configured, they help the matchmaking algorithm determine which tickets should match together. Each rule applies to a single attribute in the player's metadata. You can have a maximum of 20 rules defined for a single queue.
+Rules may be optionally defined for a queue. When configured, they help the matchmaking algorithm determine which tickets should match together. Each rule applies to a single attribute in the player metadata. You can have a maximum of 20 rules defined for a single queue.
 
 There are many types of rules. Each contains some common configurable elements, as well as elements that are specific to that particular type of rule. In addition, many rules allow an expansion, in which the rules become less restrictive over time.
 
@@ -67,7 +67,7 @@ The elements below are often used by all rules.
   1. **User** - Attributes are submitted alongside players in the create or join ticket request.
   2. **Player Entity** - Attributes are retrieved from the player's associated Player Entity. These can be set via the [SetObjects API](xref:titleid.playfabapi.com.data.object.setobjects)
 + **Attribute Path** - The path to reach the attribute. When using a User Attribute Source, it is simply the name of the attribute. When using a Player
-  Entity Attribute Source, it is a [JSONPath](https://github.com/json-path/JsonPath) that retrieves a particular item from the entity, such as $.playerSkill.Mean.
+  Entity Attribute Source, it is a [JSONPath](https://github.com/json-path/JsonPath) that retrieves a particular item from the entity, such as `$.playerSkill.Mean`.
 + **Behavior when attribute is not specified** - If a rule requires an attribute, but none is specified, the rule may be configured with one of two behaviors:
 
   1. It may supply a default value for the attribute.
@@ -101,7 +101,7 @@ Rules may become optional or less restrictive over time, allowing tickets that h
 
 1. **Seconds until optional** - Simply indicates a length of time that the rule is active. The rule no longer restricts matches among tickets that have waited this time.
 
-2. A process called **expansion** - Where rules gradually adjust their configured thresholds over time. For instance, a Difference Rule may require matches within a particular maximum difference. As a ticket waits, the rule may expand the maximum difference, to allow a larger and larger range for the ticket, allowing it to be matched even if perfect opponents are unavailable.
+2. **Expansion process** - Rules gradually adjust their configured thresholds over time. For instance, a Difference Rule may require matches within a particular maximum difference. As a ticket waits, the rule may expand the maximum difference, permitting expansion to a larger and larger range for the ticket, and allowing it to be matched even if perfect opponents are unavailable.
 
 Expansions can be either **linear** or **custom**. In a linear expansion, a value grows over time, using a fixed change after each time interval. The items customized in a linear expansion are:
 
