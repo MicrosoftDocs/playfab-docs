@@ -20,3 +20,5 @@ The tutorials in this section walk you through matchmaking topics.
 - [Displaying queue statistics in your title](display-statistics.md)
 - [Integrating with PlayFab Multiplayer Servers](multiplayer-servers.md)
 - [Handling common error cases](error-cases.md)
+- [Using server backfill tickets](backfill-tickets.md)
+- [Workaround for peer-to-peer connection](peer-to-peer.md)
