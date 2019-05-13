@@ -7,13 +7,17 @@
   items:
   - name: Configuring matchmaking queues
     href: config-queues.md
+  - name: Displaying queue statistics in your title
+    href: display-statistics.md    
+  - name: Handling common error cases
+    href: error-cases.md    
+  - name: Integrating with PlayFab Multiplayer Servers
+    href: multiplayer-servers.md    
   - name: Matchmaking scenario and configuration examples
     href: config-examples.md
   - name: Specifying attributes with your tickets
     href: ticket-attributes.md
-  - name: Displaying queue statistics in your title
-    href: display-statistics.md
-  - name: Integrating with PlayFab Multiplayer Servers
-    href: multiplayer-servers.md
-  - name: Handling common error cases
-    href: error-cases.md
+  - name: Using server backfill tickets
+    href: backfill-tickets.md
+  - name: Workaround for peer-to-peer connection
+    href: peer-to-peer.md

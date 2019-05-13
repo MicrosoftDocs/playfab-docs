@@ -163,6 +163,22 @@ PlayFabMultiplayerAPI.JoinMatchmakingTicket(
 
 The rest of the flow is the same as that of [single user ticket matchmaking](#single-user-ticket-matchmaking)
 
+### Connecting your players together
+
+Once your players have matched, you will want to have them join each other,
+either through a server, or by peer-to-peer connections.
+
+If you are using a dedicated server, you can rely on the Match ID to uniquely
+identify the group of players they should be in.  If you are using PlayFab's
+multiplayer servers, GetMatch will provide a server and port for your players to
+connect to.  See [Integrating with PlayFab Multiplayer
+Servers](multiplayer-servers.md) for more information.
+
+As of this release, peer-to-peer connection is currently not officially
+supported by matchmaking.  If peer-to-peer is required, consider using [Playfab
+Party](../networking/index.md), or an [interim workaround](peer-to-peer.md).
+Contact us for more support on this.
+
 ## Conclusion
 
 Using this quickstart, you should now have a successful matchmaking flow in your game. In addition, you should consider the following:

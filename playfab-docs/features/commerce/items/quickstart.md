@@ -79,7 +79,7 @@ At the bottom of the form is the **PRICES** section, where you define how much a
 1. Set the apple's price in gold (**GD**) to **5**.
 2. Select **SAVE ITEM**.
 
-![Add to Catalog](media/tutorials/add-catalog.png)
+![Add to Catalog](media/tutorials/game-manager-economy-catalogs-edit-catalog-item.png)
 
 ## Purchasing an item using virtual currency
 

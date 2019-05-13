@@ -19,11 +19,11 @@ Push notifications from PlayFab are enabled by a linkage of three major systems:
 3. Cross-platform message routing (PlayFab via Amazon Simple Notification Service [SNS]).
 
 > [!NOTE]
-> If any of these systems are unlinked, clients will stop getting notifications. It is fairly simple to accidentally change one of the three systems and thereby break the link. Furthermore, it is difficult to know at any individual point in the flow if all of the systems are configured properly.
+> If any of these systems are unlinked, clients will stop getting notifications. It is fairly simple to accidentally change one of the three systems, and wind up breaking the link. Furthermore, it is difficult to know at any individual point in the flow if all of the systems are configured properly.
 
 ## The PlayFab push routing system
 
-Every PlayFab title can enable one Google (GCM) and one Apple Push (APNS, APNS_SANDBOX) notification channel at a given time. These can be configured in one of two ways:
+Every PlayFab title can enable one Google (GCM), and one Apple Push (APNS, APNS_SANDBOX) notification channel at a given time. These can be configured in one of two ways:
 
 1. Using the UI in **Game Manager** under **Settings -> Push Notifications**.
 2. Using the **PlayFab Admin API** - [SetupPushNotification](xref:titleid.playfabapi.com.admin.title-widedatamanagement.setuppushnotification).
@@ -45,7 +45,7 @@ Push messages will vary based on the development engine/platform. However, the e
 
 ## Testing the setup
 
-After configuring your title and client, you can test your configuration using the PlayFab server **API** - [SendPushNotification](xref:titleid.playfabapi.com.server.accountmanagement.sendpushnotification). This API allows you to send as many push notifications as needed at no extra cost.
+After configuring your title and client, you can test your configuration using the PlayFab server API - [SendPushNotification](xref:titleid.playfabapi.com.server.accountmanagement.sendpushnotification). This API allows you to send as many push notifications as needed at no extra cost.
 
 You can use the PlayFab CloudScript service as a quick and secure server API environment. From there, push notifications can be sent as needed.
 
@@ -145,9 +145,9 @@ handlers.ChallengePlayer = function (args) {
 
 ## Push notification usage
 
-Having the ability to use push notifications is an awesome power. When *abused*, however, it can cause users to opt out of future notifications or even *leave a game entirely*.
+Having the ability to use push notifications is an awesome power. When *abused*, however, it can cause users to opt out of future notifications - or even *leave a game entirely*.
 
-If used judiciously, though, push notifications can be one of your best tools for building and maintaining your game's community.
+If used judiciously, though, push notifications can be one of your best tools for building and maintaining your game community.
 
 Push notifications are a *fire and forget* message protocol which does not guarantee delivery.
 

@@ -10,9 +10,9 @@ keywords: playfab, engagement, title news
 ms.localizationpriority: medium
 ---
 
-# Push Notifications Tutorials
+# Push notifications tutorials
 
-These tutorials show you how to use Push Notifications.
+These tutorials have been designed to instruct you on how to use push notifications.
 
 - [Getting Started with Android Push Notifications](getting-started-android-studio-push-notifications.md)
 - [Push notification templates](push-notification-templates.md)
