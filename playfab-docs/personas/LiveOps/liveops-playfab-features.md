@@ -18,21 +18,22 @@ This appendix details how PlayFab can support you in implementing the best pract
 
 Games built on PlayFab should expect a continuous stream of new features, to help make their LiveOps practices ever more effective.
 
-  - **Real-time visualization of your data pipeline**, so your LiveOps team can monitor the “heartbeat” of your game and track if anything is outside of normal trends. In-game events stream into PlayFab in real time and can be viewed in the **Game Manager** web-based tool. If they need to drill down, they can click to view full JSON data of any event in the pipeline.
+- **Real-time visualization of your data pipeline**, so your LiveOps team can monitor the “heartbeat” of your game and track if anything is outside of normal trends. In-game events stream into PlayFab in real time, and can be viewed in **Game Manager**, our web-based tool. If they need to drill down, they can make a selection, and view full JSON data of any event in the pipeline.
 
-  - The ability to troubleshoot a range of issues, allowing you to tweak your game with confidence and your CS reps to respond effectively to service-recovery scenarios. **Filter and search through recent events history**, zooming in on a particular time period, player, event type, or error condition.
+- The ability to **troubleshoot a range of issues**, allowing you to tweak your game with confidence and your CS reps to respond effectively to service-recovery scenarios.
+- **Filter and search through recent events history**, zooming in on a particular time period, player, event type, or error condition.
 
-  - High-level overview and drill-down **detailed reports of all major KPIs**, on-demand and via email, so you can keep a close eye on performance and measure the impact of changes on your live game.
+- High-level overview and drill-down **detailed reports of all major KPIs**, on-demand and via email, so you can keep a close eye on performance and measure the impact of changes on your live game.
 
-  - Support for real-time **player segmentation** - with PlayFab you can define segments based on player behavior and then customize your game experience for each segment, or target each segment with campaigns.
+- Support for real-time **player segmentation** - with PlayFab you can define segments based on player behavior and then customize your game experience for each segment, or target each segment with campaigns.
 
 That means PlayFab is capable of supporting additional features, even if they’re not available out-of-the-box. Curious about how this can work for you? Come talk with us - we’d love to show you how - or help you brainstorm how you can use PlayFab to unlock your own innovative ideas.
 
-  - All team members can have direct access to all features of PlayFab from **Game Manager**, a single easy-to-use web portal; fees are based on how many active players you have, not employees, so everyone can collaborate.
+- All team members can have direct access to all features of PlayFab from **Game Manager**, a single easy-to-use web portal; fees are based on how many active players you have, not employees, so everyone can collaborate.
 
-  - With powerful **APIs** and **data-warehouse** integration, PlayFab can be your teams once source of truth for data with everything in one place and a common visualization.
+- With powerful APIs and data-warehouse integration, PlayFab can be your teams once source of truth for data with everything in one place and a common visualization.
 
-  - Customer support reps can quickly **search across all player profiles** to locate a particular player record, review their play history, and then **make changes or grant items or currency** to help deal with a service recovery issue. They can also **ban abusive players** with temporary or permanent bans.
+- Customer support reps can quickly **search across all player profiles** to locate a particular player record, review their play history, and then **make changes or grant items or currency** to help deal with a service recovery issue. They can also **ban abusive players** with temporary or permanent bans.
 
 - **High-level overview and drill-down detailed reports of all major KPIs**, on-demand and via email, so you can keep a close eye on performance and measure the impact of changes on your live game.
 
@@ -44,7 +45,7 @@ That means PlayFab is capable of supporting additional features, even if they’
 
 - For sophisticated multiplayer games, build your own **custom game server**, then let PlayFab host it for you with **automatic scaling** in data centers around the world to ensure you never run out of room for new players. Use PlayFab’s built-in **matchmaking** algorithm to find the best match between players in real-time, based on logic you configure, or plug in your own matchmaking server.
 
-- For simpler multiplayer games, PlayFab also offers direct support for **Photon** to handle message passing between clients for multiplayer without requiring a custom game server.
+- For simpler multiplayer games, PlayFab also offers direct support for Photon to handle message passing between clients for multiplayer without requiring a custom game server.
 
 - Use **groups** to drive engagement through team dynamics. Make **custom player groups** and take actions based on player membership.
 
@@ -87,7 +88,7 @@ That means PlayFab is capable of supporting additional features, even if they’
 
   - Help game designers tune and tweak the game to make it more fun by digging deeply into player behavior using PlayFab Insights. Analyze where players are dropping out and test theories for why.
 
-  - Build game mechanics like “daily rewards” using a combination of PlayFab’s **CloudScript** (server-hosted game logic) and **player data** stored on the server - where it can’t be tampered with by players intent on cheating.
+  - Build game mechanics like “daily rewards” using a combination of PlayFab’s CloudScript (server-hosted game logic) and player data stored on the server - where it can’t be tampered with by players intent on cheating.
 
   - Use the **rules engine** and **custom player data events** to build a powerful achievements system that reacts in real-time when players meet the criteria for a new event, and can be updated with new achievements at any time.
 
@@ -139,7 +140,7 @@ PlayFab supports your game well beyond your LiveOps needs, so this guide wouldn�
 
   - Support for breadth of platforms. Games utilizing PlayFab are shipping via the Amazon Kindle Store, App Store, Facebook Game Center, Facebook Instant Games, Google Play Store, Kongregate, Nintendo Switch, PlayStation, Steam, Xbox and more.
 
-  - Access to the full set of PlayFab services, with client, server, and admin **APIs**. Built-in integration support for popular third-party back end services, such as analytics, profanity filtering, payments, and more.
+  - Access to the full set of PlayFab services, with client, server, and admin APIs. Built-in integration support for popular third-party back end services, such as analytics, profanity filtering, payments, and more.
 
 - **Player authentication**. Bred of support for allowing you to track your players.  
 
@@ -182,7 +183,7 @@ PlayFab supports your game well beyond your LiveOps needs, so this guide wouldn�
     - Ban abusive players with temporary or permanent bans. Allow other players to report abuse.
 
 - **Data Exchange**. Bring all your game’s data together in one place no matter where it was generated.
-  - Ingest event data from **PlayFab SDK**, **PlayFab** services, and other services you use to acquire, engage, and retain players.
+  - Ingest event data from PlayFab SDK, PlayFab services, and other services you use to acquire, engage, and retain players.
 
   - Ingest event data from PlayFab SDK, PlayFab services, and other services you use to acquire, engage, and retain players.
 
@@ -226,7 +227,7 @@ PlayFab supports your game well beyond your LiveOps needs, so this guide wouldn�
 
 - **Multiplayer**. A variety of technologies to support multiplayer games.
 
-  - Dynamically scaling, cloud based multiplayer server back end powered by Azure, serving 50 global regions including China.
+  - Dynamically scaling, cloud-based multiplayer server back end powered by Azure, serving 50 global regions including China.
 
   - Server hosting. Upload server builds, choose regions, spin up servers to host game sessions, automatic load balancing.
 

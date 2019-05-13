@@ -238,7 +238,7 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>Authentication</h3>
-                                                <p><a href='/gaming/playfab/features/authentication/login/quickstart'>Linking and Unlinking</a></p>
+                                                <p><a href='/gaming/playfab/features/authentication/login/quickstart'>Account Linking</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -255,7 +255,7 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>Data</h3>
-                                                <p><a href='/gaming/playfab/features/data/playerdata/quickstart'>Player, Character, and Group Data</a></p><p><a href='/gaming/playfab/features/data/content-delivery-network/quickstart'>Content Delivery Network</a></p>
+                                                <p><a href='/gaming/playfab/features/data/playerdata/quickstart'>Players, Characters, and Group Data</a></p><p><a href='/gaming/playfab/features/data/content-delivery-network/quickstart'>Content Delivery Network</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -324,7 +324,7 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>Commerce</h3>
-                                                <p><a href='/gaming/playfab/features/commerce/items/quickstart'>Items</a></p><p><a href='/gaming/playfab/features/commerce/stores/quickstart'>Stores</a></p><p><a href='/gaming/playfab/features/commerce/economy/quickstart'>Economy</a></p>
+                                                <p><a href='/gaming/playfab/features/commerce/items/quickstart'>Items</a></p><p><a href='/gaming/playfab/features/commerce/stores/quickstart'>Stores</a></p><p><a href='/gaming/playfab/features/commerce/economy/quickstart'>Economy</a></p><p><a href='/gaming/playfab/features/commerce/ugc/quickstart'>User-Generated Content</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -341,7 +341,7 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>Multiplayer</h3>
-                                                <p><a href='/gaming/playfab/features/multiplayer/servers/quickstart'>Servers</a></p><p><a href='/gaming/playfab/features/multiplayer/matchmaking/quickstart'>Matchmaking</a></p><p><a href='/gaming/playfab/features/multiplayer/networking/quickstart'>Party</a></p><p><a href='/gaming/playfab/features/multiplayer/photon/quickstart'>Photon</a></p>
+                                                <p><a href='/gaming/playfab/features/multiplayer/servers/quickstart'>Servers</a></p><p><a href='/gaming/playfab/features/multiplayer/matchmaking/quickstart'>Matchmaking</a></p><p><a href='/gaming/playfab/features/multiplayer/networking/quickstart'>PlayFab Party</a></p><p><a href='/gaming/playfab/features/multiplayer/photon/quickstart'>Photon</a></p><p><a href='/gaming/playfab/features/multiplayer/pubsub/quickstart-unity'>PubSub Unity</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -358,7 +358,7 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>Analytics</h3>
-                                                <p><a href='/gaming/playfab/features/analytics/metrics/quickstart'>Metrics</a></p><p><a href='/gaming/playfab/features/analytics/reports/quickstart'>Reports</a></p><p><a href='/gaming/playfab/features/analytics/ab-testing/quickstart'>A/B Testing</a></p><p><a href='/gaming/playfab/features/analytics/segmentation/quickstart'>Segmentation</a></p>
+                                                <p><a href='/gaming/playfab/features/analytics/metrics/quickstart'>Metrics</a></p><p><a href='/gaming/playfab/features/analytics/reports/quickstart'>Reports</a></p><p><a href='/gaming/playfab/features/analytics/ab-testing/quickstart'>A/B Testing</a></p><p><a href='/gaming/playfab/features/analytics/segmentation/quickstart'>Segmentation</a></p><p><a href='/gaming/playfab/features/analytics/data-warehouse/quickstart'>Insights</a></p><p><a href='/gaming/playfab/features/analytics/xbox-data/quickstart'>Xbox Data Add On</a></p><p><a href='/gaming/playfab/features/analytics/diagnostics/quickstart'>Diagnostics with App Center</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -721,7 +721,7 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>Servers</h3>
-                                                <p style='color: #7f7f7f'>Dynamically scale custom multiplayer servers.</p><p><a href='/gaming/playfab/features/multiplayer/servers/'>Overview</a></p><p><a href='/gaming/playfab/features/multiplayer/servers/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/multiplayer/servers/tutorials'>Tutorials</a></p>
+                                                <p style='color: #7f7f7f'>Dynamically scale custom multiplayer servers.</p><p><a href='/gaming/playfab/features/multiplayer/servers/'>Overview</a></p><p><a href='/gaming/playfab/features/multiplayer/servers/tutorials'>Tutorials</a></p>
                                             </div>
                                         </div>
                                     </div>

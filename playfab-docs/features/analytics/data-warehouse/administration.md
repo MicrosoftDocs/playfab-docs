@@ -17,9 +17,11 @@ ms.localizationpriority: medium
 >
 > It is provided to give you an early look at an upcoming feature and to allow you to provide feedback while it is still in development.  
 >
-> Access to this feature is restricted to select titles. If you are interested in trying it, you can request access by submitting a ticket on [support.playfab.com](https://support.playfab.com/hc/en-us/requests/new).
+> Access to this feature is restricted to select titles. If you are interested in trying it, please contact us at [helloplayfab@microsoft.com](mailto:helloplayfab@microsoft.com).
 
-The PlayFab Insights Premium offering grants customers access to an isolated cluster to conduct queries or create, schedule and monitor custom data pipelines without sharing compute or storage resources. When enabling the offering, an organizational or Microsoft account (MSA) is required in order to access the cluster and perform administrative tasks like create tables or assign user permissions. This tutorial demonstrates helpful queries to complete these tasks.
+The PlayFab Insights Premium offering grants customers access to an isolated cluster to conduct queries or create, schedule and monitor custom data pipelines without sharing compute or storage resources.
+
+When enabling the offering, an organizational or Microsoft account (MSA) is required, to access the cluster and perform administrative tasks like create tables or assign user permissions. This tutorial demonstrates helpful queries to complete these tasks.
 
 ## Administering Permissions
 
@@ -34,6 +36,11 @@ Adds a new user with a organizational account (i.e. AAD):
 ```cmd
 .add follower database {DATABASENAME} admins/users ('aaduser=imikeoein@fabrikam.com;TENANTID'')
 ```
+
+> [!NOTE]
+> You can easily select the database name for copy and paste, as shown below.
+
+ ![Select Database Name](../../data/playerdata/media/tutorials/dw-tutorial-select-database.png)
 
 ## Table Administration
 

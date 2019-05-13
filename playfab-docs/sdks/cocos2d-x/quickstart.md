@@ -14,33 +14,34 @@ ms.localizationpriority: medium
 
 This guide will help you make your first PlayFab API call in the Cocos2d-x engine.
 
-## Cocos2d-x Project Setup 
-- OS: This guide is written for Windows 10, using Visual Studio 2015
-  - Cocos works on most modern OS's, and environments. The installation instructions are similar, but different for each combination
-  - If you are building for other platforms, the files you need are the same, but you will need to do the project-setup yourself
-  - Visual Studio 2013 will have identical steps, but the screenshots will look a little different from yours
+## Cocos2d-x Project Setup
 
-  - Download and install Cocos2d-x
+- OS: This guide is written for Windows 10, using Visual Studio 2015.
+  - Cocos works on most modern OS's, and environments. The installation instructions are similar, but different for each combination.
+  - If you are building for other platforms, the files you need are the same, but you will need to do the project-setup yourself.
+  - Visual Studio 2013 will have identical steps, but the screenshots will look a little different from yours.
+
+  - Download and install Cocos2d-x.
     - [https://www.cocos2d-x.org/download](https://www.cocos2d-x.org/download)
     - Setting up Cocos2d-x requires some familiarity. Check out their guides:
       - [https://cocos2d-x.org/docs/installation/Windows/](https://cocos2d-x.org/docs/installation/Windows/)
       - [https://cocos2d-x.org/docs/editors_and_tools/cocosCLTool/](https://cocos2d-x.org/docs/editors_and_tools/cocosCLTool/)
       - Note the [Cocos Prerequisites](https://docs.cocos2d-x.org/cocos2d-x/en/installation/prerequisites.html)
-      - This guide also requires Visual Studio 2013 or 2015
+      - This guide also requires Visual Studio 2013 or 2015.
 
   - Once you have Cocos2d-x configured, create a project using the Cocos CLI:
-    - Navigate to a location where you wish to store your Cocos project
-    - Open a command window in your parent folder (Cocos CLI will create the actual project directory)
-      - Hold shift and right click in the empty-white-space of the Explorer window
+    - Navigate to a location where you wish to store your Cocos project.
+    - Open a command window in your parent folder (Cocos CLI will create the actual project directory).
+      - Hold down **Shift** and right-click in the empty-white-space of the Explorer window.
 
         ![Install PlayFab SDK](media/cmd-exe2.png)
 
     - In the new console window enter this command:
-      - cocos new CocosGettingStarted -l cpp
-        - Make sure your target sub-directory (CocosGettingStarted) does not already exist - This command will fail if the folder exists
-        - If you get a message about "'cocos' is not recognized as an internal or external command" you have not configured the cocos installation correctly (Go back to the Cocos windows installation guide)
-        - If successful, there will be a new folder "CocosGettingStarted". This guide will refer to that directory location as {CocosGettingStarted}
-        - Success output looks like this:
+      - `cocos new CocosGettingStarted -l cpp`
+        - Make sure your target sub-directory (**CocosGettingStarted**) does not already exist - This command will fail if the folder exists.
+        - If you get a message about "'cocos' is not recognized as an internal or external command" you have not configured the cocos installation correctly (Go back to the Cocos windows installation guide).
+        - If successful, there will be a new folder **CocosGettingStarted**. This guide will refer to that directory location as `{CocosGettingStarted}`.
+        - Successful output looks like the example provided below.
 
 ```output
 > Copy template into C:\dev\CocosGettingStarted
@@ -52,42 +53,44 @@ This guide will help you make your first PlayFab API call in the Cocos2d-x engin
 > Replace the iOS bundle id from 'org.cocos2dx.hellocpp' to 'org.cocos2dx.CocosGettingStarted'
 ```
 
-- Download PlayFab Cocos2d-xSdk
+- Download PlayFab Cocos2d-xSdk.
   - [Cocos2D-x SDK (C++)](https://api.playfab.com/downloads/cocos-2d-sdk)
-  - Save and extract it to a temporary location {PlayFabCocos}
-  - Open the following folder in Windows Explorer: {PlayFabCocos}/PlayFabClientSDK
-  - Open the following folder in a second Windows Explorer: {CocosGettingStarted}/Classes
-  - Copy paste all files from {PlayFabCocos}/PlayFabClientSDK to {CocosGettingStarted}/Classes
+  - Save and extract it to a temporary location **{PlayFabCocos}**.
+  - Open the following folder in Windows Explorer: **{PlayFabCocos}/PlayFabClientSDK**.
+  - Open the following folder in a second Windows Explorer: **{CocosGettingStarted}/Classes**.
+  - Copy paste all files from **{PlayFabCocos}/PlayFabClientSDK** to **{CocosGettingStarted}/Classes**.
 
-- In Visual Studio, Load {CocosGettingStarted}/proj.win32/CocosGettingStarted.sln
-- We want to add the PlayFab files to the Cocos project
-  - In Visual Studio, Solution Explorer panel, expand to the folder: Solution/CocosGettingStarted/src
-  - Open a Windows Explorer window at {CocosGettingStarted}/Classes
-    - Select all files in {CocosGettingStarted}/Classes, EXCEPT AppDelegate.h, AppDelegate.cpp, HelloWorldScene.h, HelloWorldScene.cpp
-    - Drag and drop all of those files from Explorer, onto the Visual Studio Solution/CocosGettingStarted/src folder we found above
-      - If you experience problems, you can drag and drop each file one at a time, just be careful and get all of them
-      - You should see these files in your VS project:
+- In Visual Studio, Load `{CocosGettingStarted}/proj.win32/CocosGettingStarted.sln`
+- We want to add the PlayFab files to the Cocos project.
+  - In Visual Studio, Solution Explorer panel, expand to the folder: **Solution/CocosGettingStarted/src**.
+  - Open a Windows Explorer window at **{CocosGettingStarted}/Classes**.
+    - Select all files in **{CocosGettingStarted}/Classes**, EXCEPT **AppDelegate.h, AppDelegate.cpp, HelloWorldScene.h, HelloWorldScene.cpp**.
+    - Drag and drop all of those files from Explorer, onto the Visual Studio Solution **CocosGettingStarted/src** folder we found above.
+      - If you experience problems, you can drag-and-drop each file one at a time, just be careful and get all of them.
+      - You should see the files shown below in your VS project.
 
         ![Install PlayFab SDK](media/sln-src.png)
 
-- PlayFab uses several Cocos libraries that have to be manually added to the dependencies list
-  - Open the Properties window for your CocosGettingStarted project:
+- PlayFab uses several Cocos libraries that have to be manually added to the dependencies list.
+  - Open the **Properties** window for your CocosGettingStarted project (as shown below).
 
     ![Install PlayFab SDK](media/cocos-include.png)
 
   - Replace the Additional Include Directories with this:
-    - $(ProjectDir)..\cocos2d\external\zlib\include;$(ProjectDir)..\cocos2d\external\curl\include\win32;$(EngineRoot)cocos\audio\include;$(EngineRoot)external;$(EngineRoot)external\chipmunk\include\chipmunk;$(EngineRoot)extensions;..\Classes;..;%(AdditionalIncludeDirectories);$(_COCOS_HEADER_WIN32_BEGIN);$(_COCOS_HEADER_WIN32_END);..\cocos2d
-    - We are adding curl and zlib, which libraries that come with Cocos, but not enabled by default
 
-  - Your CocosGettingStarted project should now compile (and even run), but we are not yet making any PlayFab API calls
-    - Installation complete!
+```cmd
+$(ProjectDir)..\cocos2d\external\zlib\include;$(ProjectDir)..\cocos2d\external\curl\include\win32;$(EngineRoot)cocos\audio\include;$(EngineRoot)external;$(EngineRoot)external\chipmunk\include\chipmunk;$(EngineRoot)extensions;..\Classes;..;%(AdditionalIncludeDirectories);$(_COCOS_HEADER_WIN32_BEGIN);$(_COCOS_HEADER_WIN32_END);..\cocos2d
+```
 
-## Set up your first API call   
+- We are adding curl and zlib, which are libraries that come with Cocos, but are not enabled by default.
+- Your CocosGettingStarted project should now compile (and even run), but we are not yet making any PlayFab API calls.
+  - Installation is now complete!
+
+## Set up your first API call
 
 This guide will provide the minimum steps to make your first PlayFab API call. Confirmation will be visible in the app.
 
-- In Visual Studio, inside of the Solution/CocosGettingStarted/src folder, Open HelloWorldScene.h and replace the contents with this:
-
+- In Visual Studio, inside of the **Solution/CocosGettingStarted/src** folder, Open `HelloWorldScene.h` and replace the contents with those shown below.
 
 ```cpp
 #ifndef __HELLOWORLD_SCENE_H__
@@ -115,7 +118,7 @@ public:
 #endif // __HELLOWORLD_SCENE_H__
 ```
 
-- And immediately next to that, open HelloWorldScene.cpp and replace the contents with this:
+- And immediately next to that, open `HelloWorldScene.cpp` and replace the contents with those shown below.
 
 ```cpp
 #include "HelloWorldScene.h"
@@ -199,14 +202,15 @@ void HelloWorld::OnLoginFail(const PlayFab::PlayFabError& error, void* customDat
 
 ## Finish and Execute
 
-- Build and Execute your Cocos Project
-  - Dropdowns -> Debug -> Start Debugging
-    - This may prompt you to build, click yes
+- Build and Execute your Cocos Project.
+  - **Dropdowns -> Debug -> Start Debugging**
+    - This may prompt you to build.
+    - Select **yes**.
 
 - You should see a screen that says:
-  - Congratulations, you made your first successful API call!
+  - **Congratulations, you made your first successful API call!**
 
-- At this point, you can start making other api calls, and building your game
+- At this point, you can start making other API calls, and building your game.
 - For a list of all available client API calls, see our [PlayFab API References](../../api-references/index.md) documentation.
   
 - Happy coding!
@@ -214,51 +218,52 @@ void HelloWorld::OnLoginFail(const PlayFab::PlayFabError& error, void* customDat
 ## Deconstruct the code
 
 This optional last section describes each part of source code above, in detail.
-- HelloWorldScene.h
-  - This is only trivially modified from the default HelloWorldScene.h generated by Cocos
-  - Specifically, it defines some cocos GUI we are using, and the prototype for OnLoginSuccess and OnLoginFail
-  - Everything else is just standard Cocos Engine functions
 
-- HelloWorldScene.cpp
-  - createScene() is a standard Cocos Engine function
-  - init()
-    - Normal Cocos Gui stuff: closeItem and testReportLabel
-    - PlayFab::PlayFabSettings::titleId = "xxxx";
+- `HelloWorldScene.h`
+  - This is only trivially modified from the default `HelloWorldScene.h` generated by Cocos.
+  - Specifically, it defines some Cocos GUI we are using, and the prototype for `OnLoginSuccess` and `OnLoginFail`.
+  - Everything else is just standard Cocos Engine functions.
+
+- `HelloWorldScene.cpp`
+  - `createScene()` is a standard Cocos Engine function.
+  - `init()`
+    - Normal Cocos Gui stuff: `closeItem` and `testReportLabel`.
+    - `PlayFab::PlayFabSettings::titleId = "xxxx";`
       - Every PlayFab developer creates a title in Game Manager. When you publish your game, you must code that titleId into your game. This lets the client know how to access the correct data within PlayFab. For most users, just consider it a mandatory step that makes PlayFab work.
 
-    - PlayFab::ClientModels::LoginWithCustomIDRequest request;
-      - Most PlayFab API methods require input parameters, and those input parameters are packed into a request object
-      - Every API method requires a unique request object, with a mix of optional and mandatory parameters
-        - For LoginWithCustomIDRequest, there is a mandatory parameter of CustomId, which uniquely identifies a player and CreateAccount, which allows the creation of a new account with this call.
-      - For login, most developers will want to use a more appropriate login method
+    - `PlayFab::ClientModels::LoginWithCustomIDRequest request;`
+      - Most PlayFab API methods require input parameters, and those input parameters are packed into a request object.
+      - Every API method requires a unique request object, with a mix of optional and mandatory parameters.
+        - For `LoginWithCustomIDRequest`, there is a mandatory parameter of `CustomId`, which uniquely identifies a player and `CreateAccount`, which allows the creation of a new account with this call.
+      - For login, most developers will want to use a more appropriate login method.
         - See the PlayFab Login documentation for a list of all login methods, and input parameters. Common choices are:
           - LoginWithAndroidDeviceID
           - LoginWithIOSDeviceID
           - LoginWithEmailAddress
 
-    - PlayFab::PlayFabClientAPI::LoginWithCustomID(request, OnLoginSuccess, OnLoginFail, nullptr);
-      - This begins the async request to "LoginWithCustomID", and will invoke the OnLoginSuccess or OnLoginFail function when complete
+    - `PlayFab::PlayFabClientAPI::LoginWithCustomID(request, OnLoginSuccess, OnLoginFail, nullptr);`
+      - This begins the async request to `LoginWithCustomID`, and will invoke the `OnLoginSuccess` or `OnLoginFail` function when complete.
 
-  - update(float delta)
-    - Simply setting the statusMsg variable does not update the on-screen text
-    - This function sets the GUI text to match the contents of statusMsg every tick (not very efficient)
+  - `update(float delta)`
+    - Simply setting the `statusMsg` variable does not update the on-screen text.
+    - This function sets the GUI text to match the contents of `statusMsg` every tick (not very efficient).
 
-  - OnLoginSuccess(result, customData)
-    - When the success callback is called, the result object of many API callbacks will contain the requested information
-    - LoginResult contains some basic information about the player, but for most users, login is simply a mandatory step before calling other APIs.
+  - `OnLoginSuccess(result, customData)`
+    - When the success callback is called, the result object of many API callbacks will contain the requested information.
+    - `LoginResult` contains some basic information about the player, but for most users, login is simply a mandatory step before calling other APIs.
 
-  - OnLoginFail(error, customData)
-    - If the error-function is called, your API call has failed
-    - API calls can fail for many reasons, and you should always attempt to handle failure
+  - `OnLoginFail(error, customData)`
+    - If the error-function is called, your API call has failed.
+    - API calls can fail for many reasons, and you should always attempt to handle failure.
     - Why API calls fail (In order of likelihood)
-      - PlayFabSettings.TitleId is not set. If you forget to set titleId to your title, then nothing will work
-        - In Cocos, the curl library will probably just crash your game if you fail to set titleId correctly
-      - Request parameters. If you have not provided the correct or required information for a particular API call, then it will fail. See error.errorMessage, error.errorDetails, or error.GenerateErrorReport() for more info
-      - Device connectivity issue. Cell-phones lose/regain connectivity constantly, and so any API call at any time can fail randomly, and then work immediately after. Going into a tunnel can disconnect you completely
-      - PlayFab server issue. As with all software, there can be issues. See our release notes for updates
-      - The internet is not 100% reliable. Sometimes the message is corrupted or fails to reach the PlayFab server
-    - If you are having difficulty debugging an issue, and the information within the error callback is not sufficient, please visit us on our forums
+      - `PlayFabSettings.TitleId` is not set. If you forget to set titleId to your title, then nothing will work.
+        - In Cocos, the curl library will probably just crash your game if you fail to set titleId correctly.
+      - Request parameters. If you have not provided the correct or required information for a particular API call, then it will fail. See `error.errorMessage`, `error.errorDetails`, or `error.GenerateErrorReport()` for more info.
+      - Device connectivity issue. Cell phones lose/regain connectivity constantly, and so any API call at any time can fail randomly, and then work immediately after. Going into a tunnel can disconnect you completely.
+      - PlayFab server issue. As with all software, there can be issues. See our release notes for updates.
+      - The internet is not 100% reliable. Sometimes the message is corrupted or fails to reach the PlayFab server.
+    - If you are having difficulty debugging an issue, and the information within the error callback is not sufficient, please visit us on our forums.
 
-  - customData is a void-pointer which can be used in any way to establish context
-    - In C++, it is harder to maintain the context of an API call, so we added the customData parameter which can relay any object to the callback, which can be used however you like to establish context
-    - Thus, if you make API calls to retrieve inventory, you can pass a player, or inventory pointer as customData, and update the inventory on that object, in the callback
+  - customData is a void-pointer which can be used in any way to establish context.
+    - In C++, it is harder to maintain the context of an API call, so we added the `customData` parameter, which can relay any object to the callback, which can be used however you like to establish context.
+    - Thus, if you make API calls to retrieve inventory, you can pass a player, or inventory pointer as `customData`, and update the inventory on that object, in the callback.

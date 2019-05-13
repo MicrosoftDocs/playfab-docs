@@ -3,7 +3,7 @@ title: Stores quickstart
 author: thomasgu
 description: Quickstart for Stores.
 ms.author: tomg
-ms.date: 30/01/2019
+ms.date: 05/02/2019
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, commerce, stores
@@ -12,80 +12,126 @@ ms.localizationpriority: medium
 
 # Stores quickstart
 
-This stores quickstart gets you started with creating and using stores with PlayFab.
+Stores are the best way to let players purchase items in your game.
 
-In this quickstart tutorial, you will:
+As shown in the [Items quickstart](../items/quickstart.md), PlayFab supports buying items out of a catalog, but that's not how most games structure their purchases. Whether you're making an idle clicker, an RPG, an FPS, or an endless runner, you probably have vendors in your game where players can buy weapons, armor, or running shoes.
 
-- Create a store with a discounted price.
-- Buy an item from the store.
-- Create a store with a discounted price.  
+Our solution for this is Stores, a subset of your catalog with prices you can override.
 
-Buying items out of the Catalog is supported, but it's not how most games structure their purchases. Whether you're making an idle clicker, an RPG, an FPS, or an endless runner, you probably have vendors in your game where players can buy weapons, armor, or running shoes.
+In this stores quickstart, you will:
 
-Our solution for this is **Stores**, a subset of your catalog with prices you can override. Stores also enable sale prices, price overrides for segments, and some amazing functionality in PlayStream (we'll get to that later).
+- Add items to a catalog with regular prices.
+- Create a store that contains the same items with discounted prices.
+- Use PlayFab APIs to purchase an item from the store.
+- Use information in the Game Manager to confirm that the item was purchased at the discounted store price.  
 
-First, add some Items to sell in your catalog:
+## Adding items to a catalog
 
-1. Go to **Economy** and select **Catalogs**.
-2. Select your **main** catalog.
+First, let's add some Items to sell in your catalog:
+
+1. Open **Game Manager** and select **Economy** on the left side bar.
+2. Select the **Catalogs** tab, and open your **main** catalog.
 3. Select **New Item** a few times, and create some items:
 
-    - **Apricot** with a **GD** cost of **4**.
-    - **Pear** with a **GD** cost of **3**.
-    - **Grape** with no **GD** cost (don't select any prices).
+    - **apricot** with a **GD** price of **4**.
+    - **pear** with a **GD** price of **3**.
+    - **grape** with no **GD** price (don't select any prices).
 
 > [!TIP]
 > You don't have to assign a virtual currency price to items in a catalog for them to appear in a store.
 
-![Add Items](media/tutorials/add-items.png)
+In the following example, an item called **apricot** is added to the **main** catalog with a **GD** price of **4**.
 
-You should now have a few items with prices. Let's create a store to sell them to the player.
+![Economy - Catalogs - Add Item](media/tutorials/game-manager-economy-catalogs-add-item.png)
 
-1. Go to the **Stores** tab in the **main** catalog.
-2. Select **New store** and give it an ID of: **fruits**.
-3. Select **Add To Store**. A popup shows all items, bundles, and containers in the current catalog.
-4. Select the **Add** button next to a few items to add them to your store.
+## Creating a store
 
-You should see your items listed in the store, but they're not valid until they have at least one price.
+You should now have a few items with prices in your catalog. Let's create a store to sell them to a player.
 
-The little static number (e.g. **<5**) next to the price text box is the original catalog price. You only have to enter a price for *one* box in each row, but you can enter as many prices as you want.
+1. Open your **main** catalog and select **Stores**.
+2. Select **New store**.
+3. Set the **Store Id** and **Store name** to **fruits** (as shown in the following example).
 
-If you don't enter any price for an item, it will be removed from the store. If a store item doesn't have a price in a currency, it can't be bought using that currency. Store prices can be higher than catalog prices, and zero is a valid price for an item.
+![Economy - Catalogs - Stores - New Store](media/tutorials/game-manager-economy-catalogs-stores-new-store.png)
 
-![Create Store](media/tutorials/create-store.png)
+4. Select **ADD TO STORE**.
+   - A pop-up screen - like the one shown below - will display all the items, bundles, and containers in the current catalog.
+
+5. Add a few items to your store by selecting the **Add** button next to the item.
+
+![Economy - Catalogs - Stores - Add To Store](media/tutorials/game-manager-economy-catalogs-stores-add-to-store.png)
+
+## Setting the store price for an item
+
+You should now see your items listed in the **STORE CONTENTS**, but they're not valid until they have at least one price.
+
+The little static number (for example, **< 4**) next to the price text box is the original catalog price. You only have to enter a price for *one* box in each row, but you can enter as many prices as you want.
+
+- If you don't enter any price for an item, it will be removed from the store.
+- If a store item doesn't have a price in a currency, it can't be bought using that currency.
+- Store prices can be higher than catalog prices, and zero is a valid price for an item.
 
 > [!TIP]
-> You can drag and drop the rows to rearrange the order of the items.
+> You can drag-and-drop the rows in the store contents to rearrange the order of the items.
 
-1. Next, add some **GD** prices to your items, but make them lower than the catalog prices:
+1. Add some **GD** prices to your items, but make them lower than the catalog prices:
 
-    - **Apricot: 4**.
+    - **Apricot: 3**.
     - **Pear: 2**.
     - **Grape: 1**.
 
-2. Select **Save Store** when you're done.
+2. Select **SAVE STORE** when you're done.
 
-Next we're going to buy an item. You have a store, now let's purchase something.
+In the following example, an item called **apricot** with a catalog price of **4 GD** is given a store price of **3 GD**.
 
-1. In your game, call **GetStoreItems** and get your store.
+![Create Store](media/tutorials/game-manager-economy-catalogs-stores-set-price.png)
 
-    - **CatalogVersion: main**.
-    - **StoreId: fruits**.
+## Purchasing an item from the store
 
-2. Verify you received an object with the list of items in the store and their prices, in the order you selected.
-3. In your game, call **PurchaseItem** and give it the currency and store price of the item you want to buy:
+Now that you have a store, let's use the PlayFab APIs to buy an item from the store in your game.
 
-    - **CatalogVersion: main**.
-    - **StoreId: fruits**.
-    - **ItemId: pear**.
-    - **VirtualCurrency: GO**.
-    - **Price: 2**.
+1. Get your store by calling [GetStoreItems](xref:titleid.playfabapi.com.client.title-widedatamanagement.getstoreitems) with these parameters in the request:
 
-4. Look in your player's **Inventory** tab for the pear, and check their virtual currency to verify that they only spent 2 gold. You will see events in the PlayStream debugger showing the purchase flow from the store. The player's **Inventory** tab also shows the purchase.
+    - `CatalogVersion = "main"`
+    - `StoreId = "fruits"`
+
+2. The `Store` field in [GetStoreItemsResult](xref:titleid.playfabapi.com.client.title-widedatamanagement.getstoreitems#getstoreitemsresult) should contain a list of your store items and their prices.
+
+3. Call [PurchaseItem](xref:titleid.playfabapi.com.client.playeritemmanagement.purchaseitem) with values in the request that specify the currency and store price of the item you want to buy.
+
+    - `CatalogVersion = "main"`
+    - `StoreId = "fruits"`
+    - `ItemId = "pear"`
+    - `VirtualCurrency = "GD"`
+    - `Price = 2`
 
 > [!TIP]
-> If you don't specify the **StoreId** when calling **PurchaseItem**, the purchase is attempted against the catalog price.
+> If you don't specify the `StoreId` when calling [PurchaseItem](xref:titleid.playfabapi.com.client.playeritemmanagement.purchaseitem), the purchase is attempted against the catalog price.
 
-Stores are the best way to let players purchase items in your game. You can use the Game Manager to change the order of items and adjust prices at any time.
+## Confirming the purchase price
 
-Using segments, you can even give special prices to certain players without touching your game code.
+Open Game Manager, and confirm that the purchase was made at the store price of 2 GD.
+
+1. Select **Players** from the left side bar to open the **Players** tab.
+2. Select the **ID** of the player that purchased the item.
+3. Check the following information for the player:
+
+   - Open the **Inventory** tab. The inventory should now contain a **pear**.
+   - Open the **Virtual Currency** tab. Check the virtual currency **Amount** to verify that the player only spent 2 GD.
+   - Open the **PlayStream** tab. You will see events showing the purchase flow from the store. These should include a [Player virtual currency item purchased](../../../api-references/events/player-vc-item-purchased.md) event, and a [Player virtual currency balance changed](../../../api-references/events/player-virtual-currency-balance-changed.md) event showing that the virtual currency balance changed by 2 GD.
+
+> [!TIP]
+> You can use the Game Manager to change the order of items in your store and adjust prices at any time.
+
+## Next steps
+
+Now that you've learned how to create and utilize stores in your game, you're ready to explore some more advanced uses of stores.
+
+For example, by using **segments** in conjunction with stores, you can give special prices to certain players without touching your game code.
+
+- [Custom stores for player segments](custom-stores-for-player-segments.md)
+- [Best practices for store segmentation](best-practices-for-store-segmentation.md)
+
+Also, by combining stores and segments with A/B testing, you can produce several versions of a store available to different A/B testing groups (buckets).
+
+- [A/B testing with stores and test buckets](../../analytics/ab-testing/ab-testing-with-stores-and-test-buckets.md)

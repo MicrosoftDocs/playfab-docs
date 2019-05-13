@@ -15,15 +15,15 @@ ms.localizationpriority: medium
 > [!IMPORTANT]
 > This feature is currently in **Private Preview**.  
 >
-> It is provided to give you an early look at an upcoming feature and to allow you to provide feedback while it is still in development.  
+> It is provided to give you an early look at an upcoming feature, and to allow you to provide feedback while it is still in development.  
 >
-> Access to this feature is restricted to select titles. If you are interested in trying it, you can request access by submitting a ticket on [support.playfab.com](https://support.playfab.com/hc/en-us/requests/new).
+> Access to this feature is restricted to select titles. If you are interested in trying it, please contact us at [helloplayfab@microsoft.com](mailto:helloplayfab@microsoft.com).
 
-The purpose of this guide is to explain how to quickly get started with UGC using direct service-to-service calls. We will show you step-by-step how to connect to the draft UGC content items, publish those items, and then search and find them.
+The purpose of this guide is to explain how to quickly get started with UGC, using direct service-to-service calls. We will show you step-by-step how to connect to the draft UGC content items, publish those items, and then search and find them.
 
 ## Get an Entity Token
 
-UGC is designed to work with PlayFab Entities, so the first step is to get an entity token using LoginWithCustomID. As a service call, that looks something like this:
+UGC is designed to work with PlayFab entities, so the first step is to get an entity token using `LoginWithCustomID`. As a service call, that looks something like this:
 
 ```csharp
 POST https://YOURTITLEID.playfabapi.com/Client/LoginWithCustomID HTTP/1.1
@@ -41,13 +41,13 @@ Content-Type: application/json
 
 ## Create a draft UGC item
 
-You create "Draft" UGC items by calling the CreateDraftItem API. Draft items are designed to be reviewed and accessed by their creators and, potentially, a group of Moderators you can designate to review the content before it moves to a published state. To create a draft item you need:
+You create "draft" UGC items by calling the `CreateDraftItem` API. Draft items are designed to be reviewed and accessed by their creators and - potentially - a group of Moderators you can designate to review the content before it moves to a published state. To create a draft item you need:
 
-- the EntityToken from the previous call in the X-EntityToken header
-- the Entity.Id from the previous call in the item’s CreatorEntityKey.Id
-- the titleId for the title in the item’s sourceId
+- The `EntityToken` from the previous call in the X-EntityToken header.
+- The `Entity.Id` from the previous call in the item’s `CreatorEntityKey.Id`.
+- The `titleId` for the title in the item’s sourceId.
 
-This call looks something like:
+This call looks something like the following.
 
 ```csharp
 Sample POST https:// YOURTITLEID.playfabapi.com/UserGeneratedContent/CreateDraftItem HTTP/1.1
@@ -92,7 +92,7 @@ X-EntityToken: eyJJc3N1ZWQiOiIyMDE4LTEyLTE0VDAxOjU1OjMwLjY4MTMwOTJaIiwiRXhwaXJlc
 
 ## Publish a UGC item
 
-Once an item is in draft, you can then push it to a published state using **PublishItem**. Once a UGC item is published, its generally searchable and available publicly. You need to use the itemId returned from the CreateDraftItem response.
+Once an item is in draft, you can then push it to a published state using `PublishItem`. Once a UGC item is published, its generally searchable and available publicly. You need to use the `itemId` returned from the `CreateDraftItem` response.
 
 ```csharp
 POST  https://YOURTITLEID.playfabapi.com/UserGeneratedContent/PublishItem HTTP/1.1
@@ -108,7 +108,7 @@ X-EntityToken: eyJJc3N1ZWQiOiIyMDE4LTEyLTE0VDAxOjU1OjMwLjY4MTMwOTJaIiwiRXhwaXJlc
 
 ## Get the published status of a UGC item
 
-Using the itemId, you can always get the state of an item in your UGC catalog.
+Using the `itemId`, you can always get the state of an item in your UGC catalog.
 
 ```csharp
 POST  https://YOURTITLEID.playfabapi.com/UserGeneratedContent/GetPublishStatus HTTP/1.1

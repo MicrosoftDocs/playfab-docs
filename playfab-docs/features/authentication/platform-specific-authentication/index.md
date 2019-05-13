@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Platform-Specific Authentication
 
-PlayFab supports a wide variety of authentication providers that allow you to allow your players to authenticate in the way that would be most natural to them. Depending on the platforms and distribution methods that you are targeting, you will want to utilize the authentication provider that will be most meaningful for your games.
+PlayFab supports a wide variety of authentication providers that allow you to permit your players to authenticate in the way that would be most natural to them. Depending on the platforms and distribution methods that you are targeting, you will want to utilize the authentication provider that will be most meaningful for your games.
 
 ## Links
 

@@ -12,11 +12,15 @@ ms.localizationpriority: medium
 
 # LiveOps techniques
 
-In the previous section we went through a high-level overview of why LiveOps is a key success driver for today’s top games. Now we’re going to get into the details of the disciplines that make up the LiveOps toolkit, with examples from folks in the trenches and their best practices.
+In the previous section we went through a high-level overview of why LiveOps is a key success driver for today’s top games.
+
+Now we’re going to get into the details of the disciplines that make up the LiveOps toolkit, with examples from folks in the trenches and their best practices.
 
 ## Player Lifecycle
 
-LiveOps is fundamentally a way of thinking about your game and your community as something that changes and evolves over time as opposed to a single, static product. When creating a game with the LiveOps mindset, you are not an amateur film director crafting your singular vision but a creative director of a television station, curating content and monitoring your audiences’ tastes.
+LiveOps is fundamentally a way of thinking about your game and your community as something that changes and evolves over time as opposed to a single, static product.
+
+When creating a game with the LiveOps mindset, you are not an amateur film director crafting your singular vision, but a creative director of a television station, curating content and monitoring your audiences’ tastes.
 
 This means that LiveOps games must be more player-centric in their design, and must contend with the passage of time as a part of their strategy. As such, there are a number of important terms and concepts in LiveOps the concern the player lifecycle.
 
@@ -24,7 +28,9 @@ This means that LiveOps games must be more player-centric in their design, and m
 
 Acquiring players is something all games must consider, for obvious reasons. Traditionally, player acquisition has been focused on pre-launch excitement building and attracting players to purchase a game as soon as it is available.
 
-For LiveOps focused games, however, player acquisition is an ongoing process. Developers must consider a variety of acquisition channels both for their effectiveness at driving interest and installs but also for their quality of player. For most LiveOps games, it is not enough to just add more players, they need to be players that will stick with your game and become a part of the community.
+For LiveOps focused games, however, player acquisition is an ongoing process. Developers must consider a variety of acquisition channels both for their effectiveness at driving interest and installs but also for their quality of player.
+
+For most LiveOps games, it is not enough to just add more players, they need to be players that will stick with your game and become a part of the community.
 
 - **Organic (“word of mouth”) acquisition**. All games should aspire to having great organic acquisition, because that means your game is so great that players are raving about it to their friends and acquaintances without any prompting from you. However, driving organic acquisition is very challenging. Effective community management and an active live content plan can help, but to a large degree true organic acquisition is out of a game developer’s control. Organic acquisition does tend to be very high quality from a retention and monetization standpoint, so boost it where you can, but keep a light touch as you can quickly wear out your welcome attempting to force content to go viral.
 
@@ -42,11 +48,15 @@ For LiveOps focused games, however, player acquisition is an ongoing process. De
 
 - **Influencer marketing** is promotion via celebrity gamers who record themselves playing your game and talking about it. If you’re able to get influencers interested in your game and sharing their exploits on Twitch, Mixer or YouTube, this is a great way to get new players excited about your game and also to communicate tweaks and changes to people who haven’t experienced your game recently. Mainly, however, this is a pay-to-play set up and it’s not cheap; big influencers can charge $50-100,000 or more to promote your game - and the ROI is not always easy to calculate. If you are interested in going this route, consider using a special code or offer so you can tie the install back to the influencer.
 
-- **Paid Acquisition**, where a player installs your game after seeing a paid ad, is certainly popular (for example, the bulk of rewarded video ads in-games are for other games), but your mileage can vary significantly here so you’ll need to sharpen your pencils if you want to go this route. Regardless of whether you pay by impression (CPI), or per install (PPI); run ads on search sites (**Google**), social networks (**Facebook**), or ad networks, the math is the same. If your cost-per-acquired player (CPA) is less than your lifetime value of a player (LTV) then you're ultimately making money. If your CPA > LTV then you're losing money. Your goal is to pick the channels that maximize your ROI (LTV/CPA). Not all channels are equal, and neither are all players acquired; the cheapest CPA is not necessarily the best.
+- **Paid Acquisition**, where a player installs your game after seeing a paid ad, is certainly popular (for example, the bulk of rewarded video ads in-games are for other games), but your mileage can vary significantly here so you’ll need to sharpen your pencils if you want to go this route. Regardless of whether you pay by impression (CPI), or per install (PPI); run ads on search sites (Google), social networks (Facebook), or ad networks, the math is the same. If your cost-per-acquired player (CPA) is less than your lifetime value of a player (LTV) then you're ultimately making money. If your CPA is greater than your LTV, then you're losing money. Your goal is to pick the channels that maximize your ROI (LTV/CPA). Not all channels are equal, and neither are all players acquired; the cheapest CPA is not necessarily the best.
 
 ### Retention  
 
-Retention is concerned with how many players not only try your game but come back for more. We’ll go into how this metric is tracked in the next section, but basically retention looks at how many players log back into your game. Since LiveOps is about an ongoing relationship with players, retention is a incredibly important health metric because it’s one of the only data supported ways we have to tell if players are enjoying your game. There are games that are wonderful, and satisfying, short, single session games but LiveOps games must be built to be fun over a longer time frame. So, it follows that the best way to increase retention is to focus on making your game more fun, but how? There are many strategy options for creating fun that leads to retention.
+Retention is concerned with how many players not only try your game but come back for more. We’ll go into how this metric is tracked in the next section, but basically retention looks at how many players log back into your game.
+
+Since LiveOps is about an ongoing relationship with players, retention is a incredibly important health metric, because it’s one of the only data supported ways we have to tell if players are enjoying your game.
+
+There are games that are wonderful and satisfying, short, single session games - but LiveOps games must be built to be fun over a *longer* time frame. So, it follows that the best way to increase retention is to focus on making your game more fun - but how? There are many strategy options for creating fun that leads to retention.
 
 - **Content**. Adding more content for players to consume is often the default option for increasing retention. Levels, maps, story, enemies, anything new and novel that players can consume. But this is very expensive to develop and attempts to make development more efficient can make content start to feel like it was created in an assembly line which can decrease its effectiveness. Regular, slow trickle of content that you know your team can consistently deliver is the best bet for using this retention strategy. Also, make generous use of in-game events to keep content interesting and varied.
 
@@ -57,13 +67,19 @@ iteration as the game’s community becomes more mature.
 
 - **Core Loop**. Some games are so deep that they take a lot of time to master and so players return over and over again to keep getting better. Classic games like Go are an excellent example of this; simple rules govern a 1V1 game of placing stones on a board but people continue to uncover new tactics after decades of play. Games that use this strategy are often competitive as human opponents offer the best possibility for continued challenge.
 
-Regardless of what retention strategy you decide to employ, make sure you take steps to communicate and encourage players to log in on a regular basis but be careful not to desensitize your players to those messages. Things like daily rewards can be a good way to remind players to login, but they are extrinsic rewards and can quickly lose their appeal as players become accustom to them. Make an effort to communicate things that will be interesting and valuable to your players, to keep their attention and mix up extrinsic rewards so they don’t become background noise.
+Regardless of what retention strategy you decide to employ, make sure you take steps to communicate and encourage players to log in on a regular basis but be careful not to desensitize your players to those messages.
+
+Things like daily rewards can be a good way to remind players to login, but they are extrinsic rewards and can quickly lose their appeal as players become accustom to them. Make an effort to communicate things that will be interesting and valuable to your players, to keep their attention and mix up extrinsic rewards so they don’t become background noise.
 
 ### Engagement
 
-If retention tells us how strong your game play is, engagement tells us how strong your community is. Active communities engage with your game not only by playing but also by promoting the game, creating fan content, carrying on a dialog about the game, and providing feedback and suggestions. Says Bulletproof Arcade’s Andy Wiltshire, “User generated content is not something that’s particularly easy for us to do in Brutes.io as it’s too hard for users to build. In fact, even a profile picture can be challenging because you need to moderate them. But we still get the community involved - for new costumes in the game, we’ll do a poll and encourage people to vote on social media, and whichever costume wins is the one that we make. The greatest thing for us community-wise has been having the social buttons on the site - if you click them you get rewarded with a new emblem.”
+If retention tells us how strong your game play is, engagement tells us how strong your community is. Active communities engage with your game not only by playing but also by promoting the game, creating fan content, carrying on a dialog about the game, and providing feedback and suggestions.
 
-For Coldfire’s Cem Aslan, community is a strategic investment, with Discord the most relevant channel for chatting with players. “Even as a small studio, we prioritized community early on because players will appreciate it if you talk to them and respond fast. Even if you can't fix things immediately, they will honor if you make the effort and answer them.”
+Says Bulletproof Arcade’s Andy Wiltshire, *“User generated content is not something that’s particularly easy for us to do in Brutes.io as it’s too hard for users to build. In fact, even a profile picture can be challenging because you need to moderate them.*
+
+*But we still get the community involved - for new costumes in the game, we’ll do a poll and encourage people to vote on social media, and whichever costume wins is the one that we make. The greatest thing for us community-wise has been having the social buttons on the site - if you click them you get rewarded with a new emblem.”*
+
+For Coldfire’s Cem Aslan, community is a strategic investment, with Discord the most relevant channel for chatting with players. *“Even as a small studio, we prioritized community early on because players will appreciate it if you talk to them and respond fast. Even if you can't fix things immediately, they will honor if you make the effort and answer them.”*
 
 Having an engagement strategy is essential for LiveOps games. Some companies, like Riot, are famous for only measuring engagement, and consider it their most important KPI. Some key things to consider when thinking of how you will engage your community are:
 
@@ -74,9 +90,13 @@ Having an engagement strategy is essential for LiveOps games. Some companies, li
 
 ### Support
 
-Customer support is a key plank in your LiveOps platform. The first, and most critical need of your support team, is to ensure that your game is working as intended, and to make it right when things break. To do this well, this team needs the right tools, so they can communicate with players who reach out with issues, investigate problems and take appropriate corrective actions by making adjustments to a player’s profile (e.g. granting virtual currency or items as consolations to players).
+Customer support is a key plank in your LiveOps platform. The first, and most critical need of your support team, is to ensure that your game is working as intended, and to make it right when things break.
 
-Your support team is also your front line with players, and a rich source of information on what is and is not working in your game. It’s important to treat support as a communication channel rather than a cost center - particularly because your paying players typically have the most questions and provide the most feedback. Giving them exceptional support encourages them to keep spending. You should also have a feedback loop between your agents and other departments where problems encountered by players are tracked and addressed.
+To do this well, this team needs the right tools, so they can communicate with players who reach out with issues, investigate problems and take appropriate corrective actions by making adjustments to a player’s profile (e.g. granting virtual currency or items as consolations to players).
+
+Your support team is also your front line with players, and a rich source of information on what is and is not working in your game. It’s important to treat support as a communication channel rather than a cost center - particularly because your paying players typically have the most questions and provide the most feedback.
+
+Giving them exceptional support encourages them to keep spending. You should also have a feedback loop between your agents and other departments where problems encountered by players are tracked and addressed.
 
 ### Customer support best practices
 
@@ -124,14 +144,16 @@ This requires the ability to store and access your raw game data through a data 
 
 The speed of data is also an important component of LiveOps analytics. Somethings only need to be reviewed occasionally but others benefit greatly from being real-time. Waiting 24 hours or more to learn how players react to a change or to discover issues like fraud can be a crippling blow to your game.
 
-Notes Renee Ya, Founder at Tiger Byte Studios, *“I believe it's important to stay nimble in a constantly changing environment where you are willing to pivot to a new strategy at a moment's notice based off of rigorous data analysis.”* She advocates for deep-diving into a game’s stats at least twice a week with key stakeholders, “reviewing metrics and creating hypotheses with action items and checking back often to see how we moved the needle based off of feedback.”  
+Notes Renee Ya, Founder at Tiger Byte Studios, *“I believe it's important to stay nimble in a constantly changing environment where you are willing to pivot to a new strategy at a moment's notice based off of rigorous data analysis.”* She advocates for deep-diving into a game’s stats at least twice a week with key stakeholders, *“reviewing metrics and creating hypotheses with action items and checking back often to see how we moved the needle based off of feedback.”*
 
-When Kolibri Games launched its hit game **Idle Miner Tycoon**, the team made the decision to launch a lightweight version of the game as quickly as possible and iterate, rather than building out a fully-featured game. This Minimum Viable Product (MVP) model is becoming popular with cutting-edge game developers and Kolibri Games took this approach to heart; rather than focusing on growing player numbers through user acquisition or being featured in an app store, they focused on building traction, focusing tightly on key metrics like early retention signals, number of sessions, DAU (Daily Active Users), and ad monetization.
+When Kolibri Games launched its hit game *Idle Miner Tycoon*, the team made the decision to launch a lightweight version of the game as quickly as possible and iterate, rather than building out a fully-featured game. This Minimum Viable Product (MVP) model is becoming popular with cutting-edge game developers and Kolibri Games took this approach to heart; rather than focusing on growing player numbers through user acquisition or being featured in an app store, they focused on building traction, focusing tightly on key metrics like early retention signals, number of sessions, DAU (Daily Active Users), and ad monetization.
 
-In the game’s early days, before there were large numbers of players, Kolibri Games Marketing Director Volkmar Reinerth relied heavily on *“player feedback, following the company spirit to be player-centric.”* Then, as the game found and began to grow an audience of players, who in turn began to generate more data, the company prioritized collecting more data for analytics.
+In the game’s early days, before there were large numbers of players, Kolibri Games Marketing Director Volkmar Reinerth relied heavily on *“player feedback, following the company spirit to be player-centric.”*
+
+Then, as the game found and began to grow an audience of players - who in turn began to generate more data - the company prioritized collecting more data for analytics.
 
 ![Rank History](media/ranker-history1.png)
-**Idle Miner Tycoon:** focusing on customer traction pays off in the long run.
+*Idle Miner Tycoon:* focusing on customer traction pays off in the long run.
 
 Data visualization is an important tool for understanding the story your data is telling you. Look for cyclical trends like weekday vs. weekend, track performance over time, and get a feel for the impact that major changes - whether that’s your live events or error spikes - have on your game in the short and longer term.
 
@@ -139,7 +161,7 @@ Data visualization is an important tool for understanding the story your data is
 
 ![Calls and Errors](media/calls-errors3.png)
 
-You’ll also want to be able to drill into your event history across preset or custom event queries as a way to help you track and optimize performance and monetization of your live events and benchmark your performance vs. past initiatives.
+You’ll also want to be able to drill into your event history across preset or custom event queries as a way to help you track and optimize performance and monetization of your live events, and benchmark your performance vs. past initiatives.
 
 ![Event History](media/event-history4.png)
 
@@ -176,7 +198,7 @@ Not all players are created equal, and one important tactic for making your game
 
 As your game gains traction, you’ll start to see player segments form naturally, and your analytics toolset should make it easy for you to define custom segments in a way that makes sense for your game (e.g. high XP players, currently active players, lapsed players, players who have made purchases, LTV tiers, etc.)
 
-Then, as you run experiments and test your ideas, you can track how players in your key segments react. When you do something that stimulates the behavior you want to see in a key segment (such as a particular kind of promotion or event), make a note of it and try other similar tactics to see if you can get that effect consistently. Of course, you need to be thoughtful about going to the same well too often or you can burn players out.
+Then, as you run experiments and test your ideas, you can track how players in your key segments react. When you do something that stimulates the behavior you want to see in a key segment (such as a particular kind of promotion or event), make a note of it, and try other similar tactics to see if you can get that effect consistently. Of course, you need to be thoughtful about going to the same well too often or you can burn players out.
 
 ![Segments](media/segments5.png) | ![Segments](media/segments6.png)
 
@@ -212,11 +234,13 @@ It used to be that making games was similar - you had to guess what your audienc
 
 ### Test early and often
 
-Many games run into a chicken-and-egg problem early in their development cycle: they want to test their biggest assumptions before they have really committed, but don’t have enough players to reach statistical significance. So, they feel stuck. However, while split testing is an important technique, it’s not the only tool in your toolkit. In fact, you can get lots of useful information from “scrappy” testing, and your inherent creativity as a game developer can be a significant asset.
+Many games run into a chicken-and-egg problem early in their development cycle: they want to test their biggest assumptions before they have really committed, but don’t have enough players to reach statistical significance. So, they feel stuck.
 
-For example, you can get valuable data on the appeal of a game’s concept and basic mechanics from running surveys or focus groups very early on, before you even have a real product. You can also test your design concepts before you need to put them into your game - for example, by measuring click-through rates on ads you buy that are identical other than showing different art styles.
+However, while split testing is an important technique, it’s not the *only* tool in your toolkit. In fact, you can get lots of useful information from “scrappy” testing, and your inherent creativity as a game developer can be a significant asset.
 
-Sebastian Knopp notes that *“successful games test everything. Game developers should always consider this before building things, and ask themselves if there is a test they could run to decide whether to build it or not.”*
+For example - you can get valuable data on the appeal of a game’s concept and basic mechanics from running surveys or focus groups very early on, before you even have a real product. You can also test your design concepts *before* you need to put them into your game, by measuring click-through rates on ads you buy that are identical, other than showing different art styles.
+
+Sebastian Knopp notes that *“Successful games test everything. Game developers should always consider this before building things, and ask themselves if there is a test they could run to decide whether to build it or not.”*
 
 ### Know what you’re testing
 
@@ -226,21 +250,29 @@ Experimentation is great, and testing can significantly improve your game for yo
 
 Split testing, or splitting your users into two (A/B) or more (multivariate) groups and measuring which variant has the best performance, is often considered the “gold standard” when it comes to running experiments, because you can get statistically significant results that paint a clear picture. If you have zillions of players, you can run even a subtle A/B or multivariate test for a reasonable period of time (typically at least a week, to measure fluctuations between weekend and weekday players) and measure the effect in a statistically significant manner.
 
-But if you don’t - because you’ve just launched, or your game hasn’t yet become massively popular - then you’ll need to measure a big effect in order to be able to be certain that it’s real and not just random fluctuation. The same goes for how many tests you can run simultaneously - unless you have enough users to be able to separate them out completely, you’re stuck running tests in series rather than parallel (and even if you do have tons of players, remember that you can only match players from the same bucket for multiplayer experiences).  
+But if you don’t - because you’ve just launched, or your game hasn’t yet become massively popular - then you’ll need to measure a big effect in order to be able to be certain that it’s real and not just random fluctuation.
+
+The same goes for how many tests you can run simultaneously - unless you have enough users to be able to separate them out completely, you’re stuck running tests in series rather than parallel (and even if you do have tons of players, remember that you can only match players from the same bucket for multiplayer experiences).  
 
 Your goal with testing should be to run as *many* tests as possible. Since you never know in advance whether a test will produce an actual signal, let alone a positive one, the more tests you run, the more chances you have for success - it’s just math.
 
 ColdFire makes it a practice to run many sorts of tests - everything from the look and feel of a game to the game mechanics, tutorials and stores. *“Recently, we did a successful gameplay A/B test: before you get to a boss you have to kill some kind of minions - so we reduced that to see if there was a difference in day1 retention,”* says Cem Aslan.
 
-“It was around 7 percent points better, so we went ahead and deployed the change. As it turned out, getting to the boss earlier was more fun for the players than spending so much time on the level minions, so we just gave the players what they wanted.” Establishing a test-and-learn mindset within an organization is not a trivial endeavor. Sebastian Knopp often sees “teams that are willing to test things in theory but when it comes to building them they get stuck in endless discussions...Failed experiments are an important part of the process to learn, especially for the team running the experiment. The companies that learn fastest, usually win.”*
+*“It was around 7 percent points better, so we went ahead and deployed the change. As it turned out, getting to the boss earlier was more fun for the players than spending so much time on the level minions, so we just gave the players what they wanted.” Establishing a test-and-learn mindset within an organization is not a trivial endeavor.
+
+Sebastian Knopp often sees “teams that are willing to test things in theory - but when it comes to building them, they get stuck in endless discussions... Failed experiments are an important part of the process to learn, especially for the team running the experiment. The companies that learn fastest, usually win.”*
 
 Finally, be aware of cross-talk and cross-contamination. Game communities are notorious for dissecting every aspect of the games they love. If you already have an established player base, you cannot assume that your experiments will go unnoticed and undiscussed.
 
-In fact, players may get upset if they feel like *one* group in an experiment is getting something better than another. The best policy for testing with an active community is to make sure that if one player sees something different from another, they can clearly understand why. For example, it is unlikely to cause complaints if new players get a discount offer for level appropriate gear while veteran players get a discount on something else but if a random set of players get offered a discount on a popular items and others do not, expect backlash.
+In fact, players may get upset if they feel like *one* group in an experiment is getting something better than another. The best policy for testing with an active community is to make sure that if one player sees something different from another, they can clearly understand why.
+
+For example, it is unlikely to cause complaints if new players get a discount offer for level appropriate gear, while veteran players get a discount on something else - but if a random set of players get offered a discount on a popular items and others do not, expect backlash.
 
 ## Monitoring player behavior and feedback
 
-It’s possible to treat every change you make to your game as a kind of experiment if you are thoughtful about the approach. If you are constantly monitoring user feedback on channels like **Discord**, **Facebook**, and email, you can use the feedback from these channels - carefully! - to gauge player reaction to changes you make. This approach is less scientific, and has the risk of giving your most vocal players too much influence, but can be a good way to go, particularly early on in your game’s lifecycle (i.e. soft or limited launch) when you have little by way of player data and few resources. You’ll want to augment this stream of data with careful analysis of your player behavior, which you should be tracking closely in your analytics toolset. What happens to your key engagement and retention stats after a change? How does this vary by segment, for example players who make a purchase vs. those who do not?
+It’s possible to treat every change you make to your game as a kind of experiment if you are thoughtful about the approach. If you are constantly monitoring user feedback on channels like Discord, Facebook, and email, you can use the feedback from these channels - carefully! - to gauge player reaction to changes you make.
+
+This approach is less scientific, and has the risk of giving your most vocal players too much influence, but can be a good way to go, particularly early on in your game’s lifecycle (i.e. soft or limited launch) when you have little by way of player data and few resources.
 
 You’ll want to augment this stream of data with careful analysis of your player behavior, which you should be tracking closely in your analytics toolset. What happens to your key engagement and retention stats after a change? How does this vary by segment, for example players who make a purchase vs. those who do not?
 
@@ -262,7 +294,7 @@ These sorts of surveys are really valuable when run in many times as changes are
 
 ## Launching with LiveOps
 
-Since there have been games, there have been launches...and all the things that can and do go wrong with launch. The advent of games-as-a-service makes it easier for studios to dodge some of the most common pitfalls that have crippled previous generations of games, such as failing to scale your back end and then falling over when your game spikes in popularity after being featured. But savvy developers know to start planning their LiveOps strategy well before launch day.
+Since there have been games, there have been launches...and all the things that can and do go wrong with launch. The advent of games-as-a-service makes it easier for studios to dodge some of the most common pitfalls that have crippled previous generations of games - such as failing to scale your back end and then falling over when your game spikes in popularity after being featured. But savvy developers know to start planning their LiveOps strategy well before launch day.
 
 *“With a LiveOps game, the real work starts with launch, instead of ending there. And that is a big challenge for game developers,” says growth and strategy consultant Sebastian Knopp.
 “Move fast and scale everything.”*  
@@ -322,7 +354,9 @@ All that said, many smaller developers are starting to eschew soft launches in f
 *"With games-as-service, you have to keep players engaged with new content. There cannot be an endgame."*  
 -- Pascal Clarysse, CMO, Eden Games
 
-Today games of any shape and size can amass a large audience quickly if they resonate with players. But keeping that game at the top of the charts is a different matter. Updating your game strategically is a crucial technique for keeping games fresh so that players remain engaged to keeping your game feeling alive for the community. It’s important to note that game update doesn't just mean new levels or new game mechanics. It can also mean new items for purchase, new playable characters, new tournaments, balance, new bundles, or virtually anything that would encourage a player to come back and play more.
+Today games of any shape and size can amass a large audience quickly if they resonate with players. But keeping that game at the top of the charts is a different matter. Updating your game strategically is a crucial technique for keeping games fresh so that players remain engaged to keeping your game feeling alive for the community.
+
+It’s important to remember that a game update doesn't just mean new levels or new game mechanics. It can also mean new items for purchase, new playable characters, new tournaments, balance, new bundles, or virtually anything that would encourage a player to come back and play more.
 
 Notes Hyper Hippo’s David Eckert, *“People only download so many apps, to have a game that is constantly updating with new features and events means a lot to people. It keeps them engaged with your game. It turns them into a loyal fan that sticks around on a platform where people are onto the latest and greatest week after week.”*
 
@@ -332,7 +366,9 @@ If your players are primarily high school students, they probably don’t want n
 
 ## Update strategies
 
-When it comes to game updates frequency and consistency are just as important as quality. Setting a consistent update calendar is essential for keeping players engaged because they need to know when to expect new content. Creating a habit loop and becoming a reliable part of your players’ lives goes a long way to moving your game from a piece of consumable entertainment to a hobby. But getting a consistent update pipeline can be challenging especially if your game releases on platforms that require certification. LiveOps games need to employ several techniques to keep their games fresh.
+When it comes to game updates frequency and consistency are just as important as quality. Setting a consistent update calendar is essential for keeping players engaged because they need to know when to expect new content. Creating a habit loop and becoming a reliable part of your players’ lives goes a long way to moving your game from a piece of consumable entertainment to a hobby.
+
+But getting a consistent update pipeline can be challenging especially if your game releases on platforms that require certification. LiveOps games need to employ several techniques to keep their games fresh.
 
 The traditional approach to updating a game is to release a new version of your client. This type of update is most in line with pre-launch game pipelines and so most teams are already well equipped to deploy client updates.
 
@@ -340,9 +376,11 @@ However, client updates require a great deal of testing, on many platforms they 
 
 Most teams will benefit from focusing on content configuration changes that are deployed via the cloud or onto owned servers. This requires a *different* pipeline than client updates.
 
-In this model, assets like art, animation, and core gameplay logic are included in the client but how those assets are assembled and displayed to players is largely driven by server side logic that can be changed without a client update.
+In this model, assets like art, animation, and core gameplay logic are included in the client, but how those assets are assembled and displayed to players is largely driven by server side logic that can be changed without a client update.
 
-To use this strategy effectively, you’ll want to plan your content architecture in advance and try to move as much of your game design logic as possible onto the server or into the cloud. Tools like PlayFab enable you to upload your game logic to the cloud then manage and manipulate it to make changes to your game in real time. This means you can turn live events on and off, change which items are available for purchase, run sales, and message players when you need to without worrying about traditional build processes.
+To use this strategy effectively, you’ll want to plan your content architecture in advance and try to move as much of your game design logic as possible onto the server or into the cloud. Tools like PlayFab enable you to upload your game logic to the cloud then manage and manipulate it to make changes to your game in real time.
+
+This means you can turn live events on and off, change which items are available for purchase, run sales, and message players when you need to without worrying about traditional build processes.
 
 PlayFab *“allows us to get a lot more visibility on what players are engaged with, what they enjoy and don’t enjoy...we can really get an idea of how much the high players are engaging and what they value, and can tailor rewards around that.”*  
 -- Phil Larsen (Managing Director, Prettygreat)
@@ -355,7 +393,9 @@ Another thing to consider when it comes to updating content is how often to make
 
 The conventional wisdom is that for games with light levels of daily player engagement, such as idle clicker games, significant changes may disorient players who haven’t been back in a while. On the other hand, games with a highly engaged community (like MMORPGs) may have tolerance for major updates.
 
-Start with a strong hypothesis, based on your analysis of how players interact with your game - and always measure the response, as your game may behave differently than you expect. One important caveat to bear in mind is that content that significantly changes the nature of game play has the risk of turning off players - potentially your most valuable players. Consider focusing instead on temporary content that comes and goes to gage player reaction before making permanent changes.
+Start with a strong hypothesis, based on your analysis of how players interact with your game - and *always* measure the response, as your game may behave differently than you expect.
+
+One important caveat to bear in mind is that content that significantly changes the nature of game play has the risk of turning off players - potentially your most valuable players. Consider focusing instead on temporary content that comes and goes to gage player reaction before making permanent changes.
 
 Games with a long development cycle may choose to front load their content production as well, but faster-moving studios may not have the ability - or desire - to plan that far ahead. Many experts recommend investing in a few months of forward-looking content by launch, and maintaining a focus on new content creation once the game is live.
 
@@ -367,7 +407,7 @@ Regardless of how often you do game updates, it’s important to think about you
 
 Successful games try hard to put real customer benefit into each and every game update, while also evolving and improving their underlying infrastructure based on current needs.
 
-Kolibri Games’ Oliver Löffler tries *“to release a new update each week, and we always try to get something for the user in there as well as bug fixes and reducing technical debt.”*
+Oliver Löffler (Kolibri Games), tries *“to release a new update each week, and we always try to get something for the user in there as well as bug fixes and reducing technical debt.”*
 
 Similarly, David Eckert of Hyper Hippo notes that *“Our client updates focus on general game features and monetization improvements, but we are always evolving our Events system through client updates too.”*
 
@@ -387,7 +427,7 @@ Similarly, David Eckert of Hyper Hippo notes that *“Our client updates focus o
 
 ## Live events
 
-Running successful events is perhaps the most essential LiveOps skill. A good event has the ability to stimulate player engagement while also encouraging players to step up purchase activity. A really good event accomplishes both those things, without burning players out. The key elements of successful events include:
+Running successful events is perhaps the most essential LiveOps skill. A good event has the ability to stimulate player engagement, while also encouraging players to step up purchase activity. A really good event accomplishes both those things, without burning players out. The key elements of successful events include:
 
 - **Limited-time nature** - most events run for a week or less, though some games (where it takes time to ramp up on how to play using the new content, or where it takes time to assemble a team) might well run events for longer. But it is important for events to come and go. This creates a sense of community history and time passing that helps your game feel more alive and dynamic.
 
@@ -407,25 +447,27 @@ Running successful events is perhaps the most essential LiveOps skill. A good ev
 
 ![Adventures](media/adventures7.png)
 
-So, what does that mean, exactly? In the abstract, a live event is simply a temporary but meaningful change to a game’s content. Holidays are an obvious theme for events, both because players will generally share some similar associations with the holiday which can be reflected in fun limited-time changes to the game’s appearance, and because holidays can be times when players have more free time available and offering them a reason to play can provide a boost in engagement. Games like **ClashClashClash of Clans** and **Brutes**.io make a practice of running major events for Halloween and the winter holidays, for example.
+So, what does that mean, exactly? In the abstract, a live event is simply a temporary but meaningful change to a game’s content. Holidays are an obvious theme for events, both because players will generally share some similar associations with the holiday which can be reflected in fun limited-time changes to the game’s appearance, and because holidays can be times when players have more free time available and offering them a reason to play can provide a boost in engagement. Games like *Clash of Clans* and *Brutes.io* make a practice of running major events for Halloween and the winter holidays, for example.
 
 However, events like contests and tournaments can also run at a smaller scale than full-game live events, requiring significantly less overhead, and furthermore can be targeted to different segments to help minimize player burnout. Space Ape and Hyper Hippo both make a point of scheduling multiple smaller events in between their periodic bigger events to avoid player burnout.
 
-Events can also run in parallel, not just in series. **Clash Royale** organizes daily and weekly “quests”, in addition to special Gold Rush and Gem Rush events, where players can earn gold or gems.
+Events can also run in parallel, not just in series. *Clash Royale* organizes daily and weekly “quests”, in addition to special Gold Rush and Gem Rush events, where players can earn gold or gems.
 
 Events are a great way to experiment with new ideas for your game, to see what stimulates the kinds of player behaviors you want to see. Just remember to track and analyze the data, as well as to keep a calendar of your current and planned events to avoid tripping yourself up.
 
 Events often have a "fiction" that masks the actual changes associated with the event. The changes themselves can be something simple, like a higher drop-rate on a particular rare item, or perhaps a new bundle for sale. However, the fiction for the event might still be something dramatic like "Midsummer Night’s Terror" with an equally dramatic description.
 
-This helps create shared history in the game’s community. The community's ability to look back fondly on events or benchmark moments in the game’s history via events is just as important as the content of the events themselves. Furthermore, while some types of events require in-game work, others can be run entirely by looking at event logs and analytics after the fact. For example, an event where players compete to catch the most fish doesn't necessarily require any changes to the game - you can just run a database query after the event to measure who caught the most fish., then let the community celebrate with prizes.
+This helps create shared history in the game’s community. The community's ability to look back fondly on events or benchmark moments in the game’s history via events is just as important as the content of the events themselves. Furthermore, while some types of events require in-game work, others can be run entirely by looking at event logs and analytics after the fact.
+
+For example, an event where players compete to catch the most fish doesn't necessarily require any changes to the game - you can just run a database query after the event to measure who caught the most fish., then let the community celebrate with prizes.
 
 ![Snowpark](media/snowpark8.png)
 
-Companies like Kolibri Games understand the dynamics of limited-time events, and have hit all the right notes in their game **Idle Miner Tycoon**.
+Companies like Kolibri Games understand the dynamics of limited-time events, and have hit all the right notes in their game *Idle Miner Tycoon*.
 
 *“We do event mines on a regular basis - at least one event mine per month and also focus on special events, holidays like Halloween, Christmas etc. You can access mines for a limited time period (3-7 days) and get specific rewards for achieving specific obstacles - different from the normal mines. For special events, we try to get new offers with specific items, for example a really good boost. We also have limited offers which rotate - every second day or so you can get very special items. We schedule countdowns and times on PlayFab,”* says Oliver Löffler, Kolibri Games CTO.
 
-*“To prepare - first we have to prepare new assets with the graphic teams, the game designers refresh the ideas and then bring it all together on the development side. We have different channels to message players. Push notifications have generated a huge increase in logins. In-game messaging - pop-ups that notify players of events. Also all the channels - **Facebook**, **Discord**, **Reddit**.”*
+*“To prepare - first we have to prepare new assets with the graphic teams, the game designers refresh the ideas and then bring it all together on the development side. We have different channels to message players. Push notifications have generated a huge increase in logins. In-game messaging - pop-ups that notify players of events. Also all the channels - Facebook, Discord, Reddit.”*
 
 ![Popups](media/popups9.png) | ![Popups](media/popups10.png)
 
@@ -433,7 +475,7 @@ Companies like Kolibri Games understand the dynamics of limited-time events, and
 
 ## Case study: co-branded car launch event
 
-*"When a new Italian car, the Pagani Huayra Roadster, was introduced at the Geneva Motor Show, Eden Games released the same car exclusively at the same time in our mobile game, Gear.Club. Three days earlier, we did a Facebook live stream, with YouTube influencers testing the game and the riding in the car themselves.*
+"*When a new Italian car, the Pagani Huayra Roadster, was introduced at the Geneva Motor Show, Eden Games released the same car exclusively at the same time in our mobile game, Gear.Club. Three days earlier, we did a Facebook live stream, with YouTube influencers testing the game and the riding in the car themselves.*
 
 *We had the idea of a big launch event, a social moment that people will share. We came up with a concept to take a fast car and a driver and put YouTube influencers in the passenger seat while playing our game. And after a long search, we found a car manufacturer to do the event together.*
 
@@ -441,30 +483,34 @@ Companies like Kolibri Games understand the dynamics of limited-time events, and
 
 *Games have come to this point now where they are the biggest entertainment medium out there, much bigger than Hollywood. It’s only natural that we now speak as equals to the automotive industry, Hollywood, sports industry. We are not the lesser product, we are not the license, we are a partner. The market is mature enough that if you think big, there is a market for it. We are catering to potentially 3 billion people now.*
 
-*After a 20 minutes tutorial the special event would appear on the game map – players could borrow the car for 2 weeks and drive 30 special tracks. If they beat all of the tracks within the time limit, they could keep the car in the game. If they only beat 75% of the tracks, they’d get a 75% discount on buying the car.*
+*After a 20 minute tutorial, the special event would appear on the game map – players could borrow the car for 2 weeks and drive 30 special tracks. If they beat all of the tracks within the time limit, they could keep the car in the game. If they only beat 75% of the tracks, they’d get a 75% discount on buying the car.*
 
-*We used push notifications and retargeting to alert players that something special is happening. Players could share the championships from within the game. We also did what Phil Hickey calls marketing the marketing – we marketed the marketing day, like they do on TV when there’s a big live event coming up. We leveraged all our social media channels to prepare for the day, and we teased users about the car, even before we revealed that we had it. We reached out to Apple and Google and gave them a detailed concept two months before the event: 4 slides about what was going to happen in the game and the marketing campaign to support it. This is something I always recommend with Apple and Google. If you want Marketing through featuring from them, tell them what marketing you give them in return. It’s a relationship, it cannot be one-way."*  
+*We used push notifications and retargeting to alert players that something special is happening. Players could share the championships from within the game. We also did what Phil Hickey calls marketing the marketing – we marketed the marketing day, like they do on TV when there’s a big live event coming up. We leveraged all our social media channels to prepare for the day, and we teased users about the car, even before we revealed that we had it. We reached out to Apple and Google and gave them a detailed concept two months before the event: 4 slides about what was going to happen in the game and the marketing campaign to support it. This is something I always recommend with Apple and Google. If you want Marketing through featuring from them, tell them what marketing you give them in return. It’s a relationship, it cannot be one-way."*
 -- Pascal Clarysse, CMO, Eden Games
 
 Finding the right cadence for events is important, since you want to stimulate engagement and purchase behavior without burning players out.
 
 *“When we do big LiveOps events we see a big spike then a decline back to normal or a little below normal numbers for a couple days, so we pair LiveOps with client updates every 4-6 weeks to raise the baseline higher for the peaks and the valleys and people stay in the game longer than they would if it weren’t a living thing,”* says Hyper Hippo’s David Ecker.
 
-"**AdVenture Capitalist** *has found a sweet spot with more frequent, shorter events: “We’re seeing that if our ARPDAU takes a little dip, we can do a shorter event and it can erase the negative event. We’re trying two in a week to try to mitigate those dips. Waiting 3-4 weeks is way too long. Now, we’re condensing a 7-day event into a 4-day event and even a 2-day event.”*
+*AdVenture Capitalist* has found a sweet spot with more frequent, shorter events: *“We’re seeing that if our ARPDAU takes a little dip, we can do a shorter event and it can erase the negative event. We’re trying two in a week to try to mitigate those dips. Waiting 3-4 weeks is way too long. Now, we’re condensing a 7-day event into a 4-day event and even a 2-day event.”*
 
 Pascal Clarysse of Eden Games notices similar behavior. *“Rhythm is important – every 4 weeks would be the slowest you can be, every 2 to 3 weeks is better. You have to keep in mind that the week after the event there will be a bit of a cannibalization effect. If your event is successful, it will increase monetization but then it will decrease afterward. Your game economy person needs to be part of the planning of the event, your marketing person needs to be part of the planning as well to decide when to plan it.”*
 
-**Gear.Club** also runs longer events, “between 10 days for the more casual events and 20 days for e-sports events to give players the chance to really compete and learn the tracks.” Also, notes Clarysse, “with team-based events, you have to give people more time to organize schedules than with a single player event.”
+Gear.Club also runs longer events, *“between 10 days for the more casual events and 20 days for e-sports events to give players the chance to really compete and learn the tracks.”* Also, notes Clarysse,*“with team-based events, you have to give people more time to organize schedules than with a single player event.”*
 
-Running a live game can at times be like orchestrating a complex ballet of teams working together. So, it is essential to build and maintain a calendar view of your live events that’s shared by all the departments that contribute to your LiveOps team. Calendars are essential for planning the nuts and bolts of a live event, including the required new content, localization and communication, as well as the related marketing effort. More than just internal communication tools, calendars should also drive your LiveOps team to deliver events consistently on a schedule that players can count on.
+Running a live game can at times be like orchestrating a complex ballet of teams working together. So, it is essential to build and maintain a calendar view of your live events that’s shared by all the departments that contribute to your LiveOps team.
+
+Calendars are essential for planning the nuts and bolts of a live event, including the required new content, localization and communication, as well as the related marketing effort. More than just internal communication tools, calendars should also drive your LiveOps team to deliver events consistently on a schedule that players can count on.
 
 Calendars can also help you manage one of the key risks with running events: player fatigue. As noted above, it’s normal for players to slow down their activity somewhat after an event, and you’ll typically see this drop in playing and spending activity reflected on your KPIs.
 
 But going too far - perhaps running monetization promotions at the same time as an intensive special live event - may fatigue your users in terms of their spending and/or their playing, putting them in jeopardy of leaving. Maintaining a holistic view of all your events will help you see if you’re getting the behavior you expect out of player segments and cohorts.
 
-Mastering the art of player communication is critical to the success of live events. It’s important to be able to communicate with players dynamically through channels that match how they engage with your game. Short session, mobile games will want to use push notifications to let players know things are happening now. While a premium MMO or console game will want to establish a regular cadence of communication cia email or website. Both notifications and emails can be effective tools for re-engagement as well, so make sure you give players enough lead time to get interested and return if they have lapsed.
+Mastering the art of player communication is critical to the success of live events. It’s important to be able to communicate with players dynamically through channels that match how they engage with your game. Short session, mobile games will want to use push notifications to let players know things are happening now.
 
-**Idle Miner Tycoon** has *“a social media team which engages with our players, collects suggestions, and answers questions; we not only react to our players but also actively engage them and start conversations to be as transparent and communicative as possible,”* says Kolibri Games Marketing Director Volkmar Reinerth.
+While a premium MMO or console game will want to establish a regular cadence of communication cia email or website. Both notifications and emails can be effective tools for re-engagement as well, so make sure you give players enough lead time to get interested and return if they have lapsed.
+
+*Idle Miner Tycoon* has *“a social media team which engages with our players, collects suggestions, and answers questions; we not only react to our players but also actively engage them and start conversations to be as transparent and communicative as possible,”* says Kolibri Games Marketing Director Volkmar Reinerth.
 
 *“We post interactive content across various l channels which is continuously showing that we are player-centric and receives good feedback.”* As the game’s player base has grown, Kolibri Games tactics have become more sophisticated and retargeting has become more of a focus. Now, *“we use push notifications and retargeting campaigns which present the newest features to the users which didn’t play for a while; both are effective.”*
 
@@ -507,7 +553,9 @@ Mastering the art of player communication is critical to the success of live eve
 
 ## Monetization
 
-All games must, at some point, determine how they plan to generate revenue. Prevalent monetization strategies have changed over time. It was once expected that games would monetize by charging quarters for player ‘lives’, then it was common to charge for access, and today there are many viable business models with most games choosing one that matches their gameplay and target audience best. Regardless, your monetization strategy will have a profound impact on your relationship with your community because there are few activities that generate more passion than spending money.
+All games must, at some point, determine how they plan to generate revenue. Prevalent monetization strategies have changed over time. It was once expected that games would monetize by charging quarters for player ‘lives’, then it was common to charge for access, and today there are many viable business models with most games choosing one that matches their gameplay and target audience best.
+
+Regardless, your monetization strategy will have a profound impact on your relationship with your community because there are few activities that generate more passion than spending money.
 
 ### Choosing the right monetization strategy
 
@@ -523,7 +571,9 @@ How your game is monetized has a major impact on the game’s design so it is be
 
 ## Microtransactions
 
-Microtransactions, sometimes referred to as in-app purchases, are a common form of monetization. Microtransactions are an a-la-carte strategy where players can purchase just the items or features they want each for a relatively low (micro) price. The strategy relies on players making multiple, micro purchases over their time playing the game and often involved active and frequent management of an in-game store where items are sold.
+Microtransactions, sometimes referred to as in-app purchases, are a common form of monetization. Microtransactions are an a-la-carte strategy where players can purchase just the items or features they want each for a relatively low (micro) price.
+
+The strategy relies on players making multiple, micro purchases over their time playing the game and often involved active and frequent management of an in-game store where items are sold.
 
 ## Value
 
@@ -533,7 +583,9 @@ For example, collectable card games offer a lot of autonomy satisfaction as acqu
 
 Complimenting/satisfying core gameplay needs can also be successful, if that same collectable card game doesn’t offer much in the way of social connection, microtransactions could fill in that need with things like custom backgrounds or avatars.
 
-There are some pitfalls to avoid too. Some game communities might be sensitive to the idea of money being used to gain mastery in contexts where mastery is seen as being earned. And using microtransactions to satisfy the same motivations as your progression systems can make balancing the two difficult. Every game’s community will be different so make extensive use of experimentation and A/B testing to see what your community responds to.
+There are some pitfalls to avoid too. Some game communities might be sensitive to the idea of money being used to gain mastery in contexts where mastery is seen as being earned. And using microtransactions to satisfy the same motivations as your progression systems can make balancing the two difficult.
+
+Every game’s community will be different, so make extensive use of experimentation and A/B testing to see what your community responds to.
 
 ## Microtransaction Types
 
@@ -547,7 +599,7 @@ Microtransactions come in many types, and a successful microtransaction strategy
 
 - **VIP programs**. Usually subscription-based programs that give players access to perks and enhancements for an on-going fee. A good way to combat the inconvenience of consumables is to bundle them up into a VIP program that the player only needs to set up once. In fact, good VIP program design revolves around convenience and investment. VIP subscribers should get access to all your games convenience enhancements and should see a tangible increase in the value of their investment in your game. Fortnite’s battle pass is a great example of a good VIP program where players get more rewards for investing there time in the game.
 
-- **Content access**. While most commonly used by premium games in the form of DLC (downloadable content), access to content can be a solid microtransaction offering for free to play games as well. The key to managing content access is to ensure that it does not split your player base isolating those with access from those without. **Guild Wars 2** (a PC MMORPG) uses an interesting content access strategy with their Living World content. New episodes include story content and maps and are free to anyone player that logs in within 2 months of an episode’s release, but after that, access to the episode must be paid for. This ensures that active players all have access to the content while still allowing returning players a chance to catch up.
+- **Content access**. While most commonly used by premium games in the form of DLC (downloadable content), access to content can be a solid microtransaction offering for free to play games as well. The key to managing content access is to ensure that it does not split your player base isolating those with access from those without. *Guild Wars 2* (a PC MMORPG) uses an interesting content access strategy with their Living World content. New episodes include story content and maps and are free to anyone player that logs in within 2 months of an episode’s release, but after that, access to the episode must be paid for. This ensures that active players all have access to the content while still allowing returning players a chance to catch up.
 
 - **Random boxes**. Any item that players purchase without knowing exactly what they will receive is a random box or loot box. Random boxes have a long history in loot based RPGs and they can provide great value to some players but they are also incredibly easy to design in such a way that their value is murky, leading to confusion and even resentment. Once a player opens a random box and feels ripped off they are much less likely to buy another one. The key to designing good random boxes is to understand their value and make that clear to your players. Also, recognize that not all players like getting things randomly. Forcing players that dislike random boxes to use them to get what they want is not a good strategy for long term engagement.
 
@@ -579,7 +631,7 @@ Offering a lower-priced bundle doesn’t increase purchasers, because only highl
 
 **Value proposition**. In a 2017 EEDAR survey, 78% of gamers said that good value was the primary decision maker for in-game purchases. Making a valuable offer is essential to getting a first-time purchase but often the less time a player has spent in your game the less valuable any in-game purchases will be to them.
 
-Notes Draganov of flaregames, “well planned and executed starter bundles have been known to improve first-time conversion by 80-200%.”
+Notes Draganov of flaregames, *“well planned and executed starter bundles have been known to improve first-time conversion by 80-200%.”*
 
 Getting it right is an optimization problem as well.
 
@@ -605,7 +657,7 @@ If you view rewarded ads as part of the core game loop, you’ll want to optimiz
 
 ![Quick Boost](media/quickboost13.png) | ![Adventure Communist](media/adventure-communist14.png)
 
-Other important ad formats include banners (ads that run across the top or bottom of the screen, similar to what you might see on non-game websites), interstitials (ads that run while the game pauses briefly, for example between levels), and offer walls (a page that offers users rewards or incentives for real-money purchase or in exchange for completing a specific task).
+Other important ad formats include *banners* (ads that run across the top or bottom of the screen, similar to what you might see on non-game websites), *interstitials* (ads that run while the game pauses briefly, for example between levels), and *offer walls* (a page that offers users rewards or incentives for real-money purchase or in exchange for completing a specific task).
 
 With all forms of advertising, remember that testing and segmentation are key to optimizing ads for your community. Fundamentally, you want to make sure that your monetization efforts aren’t at cross-purposes with your strategy for fostering player engagement and retention. Many developers look to segmentation for this and choose not to show ads to every segment, for example choosing to limit ads to those who do not make real-money purchases.
 
@@ -649,7 +701,9 @@ Ideally, your optimization process will be based an on-the-fly calculation of th
 
 Economy play, acquiring and managing scarce resources, is a corner stone of many LiveOps focused games because economy play scales well across long periods of time and is highly engaging. While not all games will have systems that would traditionally considered an economy, any LiveOps focused game would do well to think about the way their players interact with resources whether they are materials, time, or currencies.
 
-One challenge games face in economy design is how to differentiate between what can be bought vs. earned. Since some players never make a purchase, games risk alienating their base of players if they make it too difficult to progress without purchases. Many games are designed such that non-paying players are incredibly valuable to the game community and the game health, so making space for systems and progression that are not monetized is essential.
+One challenge games face in economy design is how to differentiate between what can be bought vs. earned. Since some players never make a purchase, games risk alienating their base of players if they make it too difficult to progress without purchases.
+
+Many games are designed such that non-paying players are incredibly valuable to the game community and the game health, so making space for systems and progression that are not monetized is essential.
 
 As Draganov puts it, *“great live-games have both non-paying and paying users in lower, mid- and high-end of the leaderboards. As long as you allow players to trade time or money for progress there will always be both types of players - those who pay and those who grind their way through.*
 
@@ -693,7 +747,7 @@ Playing with or against other players adds a significant element of fun to your 
 
 Building a great player-vs-player (PvP) experience requires an ability to serve up the right opponent at the right time, so it’s important to ensure that your matchmaking logic is making the right tradeoffs between skill level and time-to-match, particularly as the number of available players ebbs and flows at different times of day. This may take some iteration.
 
-As Cem Aslan notes, *“For **Evoker**, a collectible card game, we first looked at how long the players had been active in the game. That didn't work really well because players already start a game with different knowledge. You can't just assume that all the players who have spent, say, 2 days in the game are on the same level. Then, we looked at how good their stats were and which cards they had already collected. This worked a little better, but we also found it's not ideal to match players that are exactly the same level. Sometimes it's fun to just win easily, and sometimes it's great to have an opponent who is really hard to beat, so you have to put up a fight. In the end, we mostly looked at how often a player had won and how often they had lost. Players who win a lot were matched with other players that win a lot - and vice versa. For this particular game, this approach created the best matches.”*
+As Cem Aslan notes, *“For *Evoker*, a collectible card game, we first looked at how long the players had been active in the game. That didn't work really well because players already start a game with different knowledge. You can't just assume that all the players who have spent, say, 2 days in the game are on the same level. Then, we looked at how good their stats were and which cards they had already collected. This worked a little better, but we also found it's not ideal to match players that are exactly the same level. Sometimes it's fun to just win easily, and sometimes it's great to have an opponent who is really hard to beat, so you have to put up a fight. In the end, we mostly looked at how often a player had won and how often they had lost. Players who win a lot were matched with other players that win a lot - and vice versa. For this particular game, this approach created the best matches.”*
 
 - Integrate rewarded video ads into your game.
 
@@ -703,9 +757,9 @@ As Cem Aslan notes, *“For **Evoker**, a collectible card game, we first looked
 
 - Don't be afraid to negotiate with the ad networks. If you have enough players and inventory, they will cut you special deals and even guarantee revenue - if you are willing to give them special rights like first crack at your players.
 
-While the PvP modality often garners the most attention, cooperative multiplayer modalities can be highly successful as well. For example, **Idle Miner Tycoon** organizes cooperative multiplayer events where players recruit friends to join their teams; the bigger the team a player recruits, the more resources the team gets. This is highly engaging and also provides a method of user acquisition.
+While the PvP modality often garners the most attention, cooperative multiplayer modalities can be highly successful as well. For example, *Idle Miner Tycoon* organizes cooperative multiplayer events where players recruit friends to join their teams; the bigger the team a player recruits, the more resources the team gets. This is highly engaging and also provides a method of user acquisition.
 
-IDreamSky’s **Sky Fall** offers cooperative team battles, meaning that players assemble a team together and can then attack another team with an element of surprise. Blackstorm Labs’ **Everwing** offers a cooperative multiplayer experience where players can team up to defeat very powerful bosses. Forming a team with friends in a multiplayer modality means that the game has an opportunity to message others in the team to join the fun as soon as one player picks up the game, which is a powerful engagement tool.
+IDreamSky’s *Sky Fall* offers cooperative team battles, meaning that players assemble a team together and can then attack another team with an element of surprise. Blackstorm Labs’ *Everwing* offers a cooperative multiplayer experience where players can team up to defeat very powerful bosses. Forming a team with friends in a multiplayer modality means that the game has an opportunity to message others in the team to join the fun as soon as one player picks up the game, which is a powerful engagement tool.
 
 When building synchronous multiplayer, you have two different options. You can build and host your own multiplayer server, then connect players to your server to play against each other. This is the best solution when your multiplayer game requires complex back end logic, such as a Multiplayer Online Battle Arena (MOBA), but adds complexity in terms of scaling up the number of servers.
 
@@ -727,7 +781,7 @@ Asynchronous multiplayer is also a great option for offering players the thrill 
 
 One of the biggest benefits of having an online game is fostering interactions between players. Adding social and competitive elements to a game help keep players engaged and leverage your most valuable asset; your community.
 
-The most straightforward mode is of course 1:1 competition, allowing players to compete against one another in a head-to-head fashion. This can be based on the players’ location in the game, as in Brutes.io, or via a matchmaking logic to pair players of roughly equal skill. Games like *Clash of Clans* have invested in “2v2” play, letting teams of two compete head-to-head against other teams in multiple modes (draft, challenge, and friendly battle).
+The most straightforward mode is of course 1:1 competition, allowing players to compete against one another in a head-to-head fashion. This can be based on the players’ location in the game, as in *Brutes.io*, or via a matchmaking logic to pair players of roughly equal skill. Games like *Clash of Clans* have invested in “2v2” play, letting teams of two compete head-to-head against other teams in multiple modes (draft, challenge, and friendly battle).
 
 No matter what form player interaction takes in your game, leaderboards and tournaments offer players a way to measure their ability and see a representation of the community’s ability at large. Filtering leaderboards by friends adds a social layer where you are competing with people you know from social networks or your guild or clan. For example, *Arena of Valor* uses leaderboards to shows rank vs. friends as well as current progression tier, so players always have their next objective set.
 
@@ -737,7 +791,9 @@ Other important multiplayer modes include players cooperating towards a shared g
 
 Leaderboards don’t need to be static, in fact leaderboards that reset regularly can engender more engagement as resets become a new opportunity and a community moment. Prize tables take this a step further by allowing a set of actions (such as a notification to players or the awarding of prizes) to be performed on a group of players based on their ranking in the leaderboard when that leaderboard is reset.
 
-Synchronous multiplayer games, like Brutes.io, pit players against each other in real-time match ups. Support for synchronous multiplayer is a key decision in how the game is built and played, so is generally incorporated during a game’s development. Asynchronous multiplayer techniques, on the other hand, can be added to virtually any single-player game to encourage more engagement. This can be as simple as adding a leaderboard, or more complex, like having limited-time events with leaderboards used to compare performance. Creating an asynchronous multiplayer event, with a special prize for the winner, can be a significant engagement driver compared to a leaderboard alone.
+Synchronous multiplayer games, like *Brutes.io*, pit players against each other in real-time match ups. Support for synchronous multiplayer is a key decision in how the game is built and played, so is generally incorporated during a game’s development. Asynchronous multiplayer techniques, on the other hand, can be added to virtually any single-player game to encourage more engagement.
+
+This can be as simple as adding a leaderboard, or more complex, like having limited-time events with leaderboards used to compare performance. Creating an asynchronous multiplayer event, with a special prize for the winner, can be a significant engagement driver compared to a leaderboard alone.
 
 ### Leaderboard and tournaments best practices
 
@@ -790,7 +846,7 @@ Guilds boost engagement, by providing social incentives on guild members to play
 
 ## Localization
 
-You never know where your game will find its audience, so it’s smart to be prepared to localize your game. Take it from Kolibri Games’ Oliver Löffler:  *“We support more than 20 languages. In the beginning we didn’t localize, but then a lot of players messaged us that we should translate and were very happy that we did.”*
+You never know where your game will find its audience, so it’s smart to be prepared to localize your game. Take it from Oliver Löffler of Kolibri Games:  *“We support more than 20 languages. In the beginning we didn’t localize, but then a lot of players messaged us that we should translate and were very happy that we did.”*
 
 Localization will do more than make your players happy - it also encourages them to spend. Some estimates are that up to 50% or more of online users will only buy when presented offers in their native language. Localizing to English, Chinese, Spanish, Arabic, Portuguese, Indonesian, Japanese, Russian, French and German gets you up to 80% of the online population, vs. just 25% for native English speakers.
 

@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Groups, Guilds, and Clans Tutorials
 
-These tutorials teach you how to use Groups functionality for your games and to build Guilds and Clans within your game.
+These tutorials teach you how to use Groups functionality for your games, and how to build Guilds and Clans within your game.
 
 To store data for your groups, guilds or clans:
 

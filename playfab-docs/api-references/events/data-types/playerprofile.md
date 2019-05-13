@@ -12,6 +12,8 @@ ms.localizationpriority: medium
 
 # PlayerProfile
 
+Below is a description of the Player Profile table queried from the Players page on Game Manager. For instructions on searching for players, please see [this tutorial.](playerprofile.md)  
+
 ## Properties
 
 |Name|Type|Description|
@@ -24,9 +26,14 @@ ms.localizationpriority: medium
 |DisplayName|String|Player Display Name|
 |LastLogin|DateTime|Last login|
 |LinkedAccounts|[PlayerLinkedAccount](playerlinkedaccount.md)|Array of third party accounts linked to this player|
-|Locations|[PlayerLocation](playerlocation.md)|Dictionary of player's locations by type.|
+|Locations_LastLogin_City|String|City of the player's geographic location on last login|
+|Locations_LastLogin_ContinentCode|[ContinentCode](continentcode.md)|The two-character continent code for this location|
+|Locations_LastLogin_CountryCode|[CountryCode](countrycode.md)|The two-character ISO 3166-1 country code for the country associated with the location|
+|Locations_LastLogin_Latitude|Real|Latitude coordinate of the player's geographic location on last login|
+|Locations_LastLogin_Longitude|Real|Longitude coordinate of the player's geographic location on last login|
 |Origination|[LoginIdentityProvider](loginidentityprovider.md)|Player account origination|
 |PlayerId|String|PlayFab Player ID|
+|PlayerMemberships|[PlayerMemberships](playermemberships.md)|Array of memberships this player owns|
 |PlayerStatistics|[PlayerStatistic](playerstatistic.md)|Array of player statistics|
 |PublisherId|String|Publisher this player belongs to|
 |PushNotificationRegistrations|[PushNotificationRegistration](pushnotificationregistration.md)|Array of configured push notification end points|

@@ -14,13 +14,15 @@ ms.localizationpriority: medium
 
 PlayFab's multiplayer server hosting service allows you to operate a dynamically scaling pool of custom game servers in Azure.
 
-All PlayFab indie, pro, and enterprise tier customers can access the service and use a limited, free quota of multiplayer servers for product evaluation and testing. Because we're still improving the portal experience, samples, and documentation, this service is in a **preview** mode. During this public preview, if you're interested in operating the service at production-scale, you will enjoy a 30% discount. The preview period and discount are expected to end in March 2019.
+All PlayFab indie, pro, and enterprise tier customers can access the service and use a limited, free quota of multiplayer servers for product evaluation and testing. Because we're still improving the portal experience, samples, and documentation, this service is in a **preview** mode.
+
+During this public preview, if you're interested in operating the service at production-scale, you will enjoy a 30% discount. The preview period and discount are expected to end in March 2019.
 
 There are three key concepts to PlayFab multiplayer servers:
 
-- **Game server executable**. This is the application that you are running in Azure. This server may be a simple network repeater, a fully authoritative game server running physics and AI, or anything in between.
-- **Build**. This is the game server executable, packaged with assets and certificates needed to run the game. This content can be uploaded as individual certificates, zip files, and/or a container image. If you do not need a custom container image, you can use PlayFab managed Windows containers.
-- **Game server**. A container running your game server executable. There may be multiple servers running on a single virtual machine.
+1. **Game server executable**. This is the application that you are running in Azure. This server may be a simple network repeater, a fully authoritative game server running physics and AI, or anything in between.
+2. **Build**. This is the game server executable, packaged with assets and certificates needed to run the game. This content can be uploaded as individual certificates, zip files, and/or a container image. If you do not need a custom container image, you can use PlayFab managed Windows containers.
+3. **Game server**. A container running your game server executable. There may be multiple servers running on a single virtual machine.
 
 These are the typical steps for using the service:
 
@@ -74,10 +76,10 @@ These are the typical steps for using the service:
 
 ## Frequently asked questions
 
-### I am using Unity. Do you have a sample of a Unity-based game interfacing with the game server SDK?
+### Q: I am using Unity. Do you have a sample of a Unity-based game interfacing with the game server SDK?
 
-We do not have a Unity sample demonstrating PlayFab Multiplayer Servers, but should have one by January 2019. A small group of preview customers have gotten the C# GSDK to work with their Unity-based game server but it is not a straightforward experience.
+We do not have a Unity sample demonstrating PlayFab Multiplayer Servers, but should have one by July 2019. A small group of preview customers have gotten the C# GSDK to work with their Unity-based game server but it is not a straightforward experience.
 
-### Only 14 Azure regions and 4 VM series appear currently supported. Can I get access to additional series or regions?
+### Q: Only 14 Azure regions and 4 VM series appear currently supported. Can I get access to additional series or regions?
 
 Please contact the team through [PlayFab support](mailto:support@playfab.com) as we are adding additional series and regions in response to customer requests. The current selection are the most popular options used by several games in production.

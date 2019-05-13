@@ -24,20 +24,26 @@ A build can exist in one of the following states:
   - One or more regions are in **Deleting** state.
 - **Deployed**: All configured regions are in **Deployed** state.
 
-The transitions between these states are depicted in the following image and described below:
+The transitions between these states are depicted in the following image, and described below:
 
 ![Multiplayer - Build Region Status](media/tutorials/multiplayer-build-status.jpg)
 
-1. (a) **Deploying -> Deployed**: All regions in **Deploying** are now in a **Deployed** state.  
-   (b) **Deployed -> Deploying**: One or more new regions were configured for the build. The new regions are in **Deploying** state.
+1. **Deploying/Deployed Regions**
+
+   - **Deploying -> Deployed**: All regions in **Deploying** are now in a **Deployed** state.  
+   - **Deployed -> Deploying**: One or more new regions were configured for the build. The new regions are in **Deploying** state.
 
 2. **Deploying -> Unhealthy**: One or more regions which were in **Deploying** state are now in **Unhealthy** state.
 
-3. (a) **Deploying -> DeletingRegion** (rare scenario): Regions which were in **Deploying** were requested to be deleted.  
-   (b) **DeletingRegion -> Deploying** (rare scenario): All regions in **Deleting** completed deletion, and new regions were added which are the new regions in **Deploying** state.
+3. **Deploying/Deleting Regions**
 
-4. (a) **Deployed -> DeletingRegion**: One or more regions were requested to be deleted.  
-   (b) **DeletingRegion -> Deployed**: All regions that were requested to be deleted have been deleted. The rest of the regions are in **Deployed** state.
+   - **Deployed -> DeletingRegion** (rare scenario): Regions which were in **Deploying** were requested to be deleted.
+   - **DeletingRegion -> Deploying** (rare scenario): All regions in **Deleting** completed deletion, and new regions were added which are the new regions in **Deploying** state.
+
+4. **Deployed/Deleting Regions**
+
+    - **Deployed -> DeletingRegion**: One or more regions were requested to be deleted.
+    - **DeletingRegion -> Deployed**: All regions that were requested to be deleted have been deleted. The rest of the regions are in **Deployed** state.
 
 > [!NOTE]
-> **Start** and **Deleted** are internal states and are not exposed.
+> Start and Deleted are internal states and are not exposed.

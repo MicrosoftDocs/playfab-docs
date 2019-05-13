@@ -32,6 +32,8 @@
     href: connecting-clients-to-game-servers.md
   - name: Custom Game Servers
     href: custom-game-servers.md
+  - name: Deploying Linux based builds
+    href: deploying-linux-based-builds.md    
   - name: Deploying PlayFab multiplayer server builds
     href: deploying-playfab-multiplayer-server-builds.md
   - name: Integrating game servers with the PlayFab game server SDK (GSDK)

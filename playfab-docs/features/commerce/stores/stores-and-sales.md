@@ -10,11 +10,11 @@ keywords: playfab, commerce, stores, catalogs, currencies
 ms.localizationpriority: medium
 ---
 
-# Stores and Sales
+# Stores and sales
+
+The definition of a store is a small subset of items, available for purchase at a specific price. Alternately, a store allows you to single out a specific set of items, and make them available for a set time period.
 
 Stores are built upon [Catalogs](../items/catalogs.md) and [Currencies](../economy/currencies.md). Your primary catalog should define all of the items in your game.
-
-Alternately, a store allows you to single out a specific set of items, and make them available for a set time period. The definition of a store is a small subset of items, available for purchase at a specific price.
 
 ## Requirements
 
@@ -23,7 +23,7 @@ Alternately, a store allows you to single out a specific set of items, and make 
   - **SS** (**Silver Shekels**)
   - **GS** (**Gold Shekels**).
 
-- A primary [Catalog](../items/catalogs.md) with one or more items defined
+- A primary [Catalog](../items/catalogs.md) with one or more items defined.
   - The first example uses multiple item/bundles, similar to the ones described in the [Drop Tables](../items/drop-tables.md) tutorial.
   - The second example in this tutorial uses small, medium, and large health potions.
 
@@ -85,7 +85,7 @@ This time we will create 3 new items: **Small**, **Medium**, and **Large Health 
 
 ![Game Manager - Economy - New Store](media/tutorials/game-manager-economy-new-store.png)  
 
-To purchase a single item for virtual currency, you can use our **[PurchaseItem](xref:titleid.playfabapi.com.client.playeritemmanagement.purchaseitem)** method, as described in our [Player inventory](../../data/playerdata/player-inventory.md) tutorial. This tutorial, however, will cover the more advanced topic of setting up multiple items in a single purchase.
+To purchase a single item for virtual currency, you can use our [PurchaseItem](xref:titleid.playfabapi.com.client.playeritemmanagement.purchaseitem) method, as described in our [Player inventory](../../data/playerdata/player-inventory.md) tutorial. This tutorial, however, will cover the more advanced topic of setting up multiple items in a single purchase.
 
 Your first step in this process should be to get the store, and display it to the user.
 
@@ -104,17 +104,18 @@ void GetVcStore()
 }
 ```
 
-The **LogSuccess** callback in this example gets a full description of all items in the store, their prices in the store, and any additional metadata stored within the store itself.
+The `LogSuccess` callback in this example gets a full description of all items in the store, their prices in the store, and any additional metadata stored within the store itself.
 
 ### Best practice
 
-Games with stores should call and cache their primary catalog with **GetCatalog**. This allows you to display both the catalog price and the store price, along with a **10% OFF** or similar bonus decoration beside items for sale.
+Games with stores should call and cache their primary catalog using the [GetCatalogItems](xref:titleid.playfabapi.com.server.title-widedatamanagement.getcatalogitems) method. This allows you to display both the catalog price and the store price, along with a 10% OFF or similar bonus decoration beside items for sale.
+
 > [!TIP]
-> Players are more likely to buy items on sale, *especially if the sale is a limited-time offer*.
+> Players are more likely to buy items on sale, especially if the sale is a limited-time offer.
 
 At this point, it is the responsibility of your GUI code to present the user with the opportunity to select which items they wish to buy and how many.
 
-- Between your gme and PlayFab, the remaining steps are several separate API calls, but you can make the sequence of multiple calls invisible to the player.
+- Between your game and PlayFab, the remaining steps are several separate API calls, but you can make the sequence of multiple calls invisible to the player.
 
 - Collect all information about the purchase up front, and make the full sequence of calls after *all* player input is collected.
 

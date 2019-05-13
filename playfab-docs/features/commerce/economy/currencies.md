@@ -1,7 +1,7 @@
 ---
-title: Currencies
+title: Currency
 author: v-thopra
-description: Describes the Currencies tab in the Economy section in Game Manager, and how to configure Virtual Currency.
+description: Describes the Currency tab in the Economy section in Game Manager, and how to configure Virtual Currency.
 ms.author: v-thopra
 ms.date: 10/26/2018
 ms.topic: article
@@ -10,13 +10,13 @@ keywords: playfab, commerce, economy, currency, virtual currency
 ms.localizationpriority: medium
 ---
 
-# Currencies
+# Currency
 
-This tutorial describes the function of the **Currencies** tab in the **Economy** section in **Game Manager**.
+This tutorial describes the function of the **Currency** tab in the **Economy** section in **Game Manager**.
 
-Virtual currencies are the foundation of in-game economies. Players and characters can be granted these currencies, which can then be used to buy or trade items. Items can have a cost in either a virtual currency or real money.
+Virtual Currency are the foundation of in-game economies. Players and characters can be granted these currencies, which can then be used to buy or trade items. Items can have a cost in either a virtual currency or real money.
 
-It's *exactly* like real life - except its *virtual*! Economic regulation in-game is up to *you*.
+It's *exactly* like real life - except it's *virtual!* Economic regulation in-game is up to *you*.
 
 ## What is virtual currency?
 
@@ -30,7 +30,7 @@ Our Game Manager provides tools to make managing your virtual economy straightfo
 
 ## Field reference
 
-This section describes each field you see in the **Game Manager -> Economy Currencies** tab.
+This section describes each field you see in the **Game Manager -> Economy Currency** tab.
 
 All fields are required - however both **Currency Code** and **Display Name** are not pre-populated with default values.
 
@@ -38,16 +38,16 @@ Leaving **Recharge Rate** and **Recharge Max** set to **zero** (default) will sp
 
 ### Currency code
 
-**Currency Code** is a required field. It represents the currency, and will be used in the other economy sections.
+**Currency code** is a required field. It represents the currency, and will be used in the other economy sections.
 
 It must be a two-character code, and convention is *all upper-case* (although a two-digit number is also allowed).
 
 > [!NOTE]
 > **RM** is reserved for Real Money and cannot be used as a Currency Code.
 
-### Display Name
+### Display name
 
-**Display Name** is a required field. It represents the name that is attached to the currency that is typically displayed to the user in your game.
+**Display name** is a required field. It represents the name that is attached to the currency that is typically displayed to the user in your game.
 
 The only restriction is that it must be *at least one letter long*. Common examples include **Gold** or **Space Bux**.
 
@@ -67,7 +67,7 @@ To create a virtual currency, you should use the following steps:
 
 1. Select your **Game** in **Game Manager**.
 2. Choose **Economy**.
-3. Select **Currencies**.
+3. Select **Currency**.
 4. Choose **Add Currency**.
 5. Set the **Currency Code**. We'll use **GO** in this example.
 6. Set the **Display Name**. We'll use **Gold** in this example.
@@ -76,6 +76,6 @@ To create a virtual currency, you should use the following steps:
 9. Select **Save**.
 10. Refresh the page.
 
-Your new virtual currency is now added. The greyed-out **Currency Code** means your new currency has been saved.
+Your new virtual currency is now added. The grayed-out **Currency Code** means your new currency has been saved.
 
 Don't be confused by the persistent **SAVE** button. It is necessary for subsequent operations on your currency, such as deleting or renaming.

@@ -12,11 +12,16 @@ ms.localizationpriority: medium
 
 # Specifying attributes with your tickets
 
-Rules determine which tickets are matched based on the attributes specified by players. These attributes can be specified in two ways, either within the create ticket request, or in the player's entity. This tutorial describes how to specify those attributes.
+Rules determine which tickets are matched, based on the attributes specified by
+players. These attributes can be specified in two ways, either within the create
+ticket request, or in the player's entity. This tutorial describes how to
+specify those attributes.
 
 ## Specifying within the create ticket request
 
-For rules configured with the attribute type "User", attributes are specified in a CreateMatchmakingTicket request, alongside the player entity inside of an Attributes DataObject.
+For rules configured with the attribute type "User", attributes are specified in
+a CreateMatchmakingTicket request, alongside the player entity inside of an
+Attributes DataObject.
 
 ```json
 POST https://{{TitleId}}.playfabapi.com/Match/CreateMatchmakingTicket
@@ -43,7 +48,9 @@ POST https://{{TitleId}}.playfabapi.com/Match/CreateMatchmakingTicket
 }
 ```
 
-Below is an example queue configuration with a Difference Rule. This rule contains an attribute path and source that will pick up the value 16.0, specified by the CreateMatchmakingTicket request above.
+Below is an example queue configuration with a Difference Rule. This rule
+contains an attribute path and source that will pick up the value 16.0,
+specified by the **CreateMatchmakingTicket** request above.
 
 ```json
 "MatchmakingQueue": {
@@ -74,7 +81,11 @@ Below is an example queue configuration with a Difference Rule. This rule contai
 
 ## Specifying through player entities
 
-For rules with the attribute type "Player Entity", attributes are specified through a separate call to the SetObjects API. This allows data to be stored for a user, rather than the title needing to specify it on each create ticket call. This may make more sense for values that persist for a user, or that users cannot be trusted to submit. An example of this SetObjects call would be:
+For rules with the attribute type "Player Entity", attributes are specified
+through a separate call to the SetObjects API. This allows data to be stored for
+a user, rather than the title needing to specify it on each create ticket call.
+This may make more sense for values that persist for a user, or that users
+cannot be trusted to submit. An example of this SetObjects call is shown below.
 
 ```json
 POST https://{{TitleID}}.playfabapi.com/Object/SetObjects
@@ -98,7 +109,11 @@ POST https://{{TitleID}}.playfabapi.com/Object/SetObjects
 }
 ```
 
-A queue with the following configuration would retrieve the value 16.0 for use in its Difference Rule rule when a ticket is created with this player. Note that in the Path field, the first item after the root is the ObjectName, allowing you to choose which stored object to reference.
+A queue with the following configuration would retrieve the value 16.0 for use
+in its Difference Rule rule when a ticket is created with this player.
+
+> [!NOTE]
+> In the `Path` field, the first item after the root is the `ObjectName`, allowing you to choose which stored object to reference.
 
 ```json
 "MatchmakingQueue": {
@@ -126,11 +141,16 @@ A queue with the following configuration would retrieve the value 16.0 for use i
 
 ## Special formats
 
-Most rules use attributes that are either strings or numeric, and are simply those values in JSON format. Rules that require more complex attributes to be passed in are listed below.
+Most rules use attributes that are either strings or numeric, and are simply
+those values in JSON format. Rules that require more complex attributes to be
+passed in are listed below.
 
 ### Region Selection rule
 
-A Region Selection rule requires an array of latency measurements with the specified schema. The following is the expected attribute format for a region selection rule, shown alongside the two attributes used in the CreateMatchTicket example for comparison.
+A Region Selection rule requires an array of latency measurements with the
+specified schema. The following is the expected attribute format for a region
+selection rule, shown alongside the two attributes used in the
+`CreateMatchmakingTicket` request example for comparison.
 
 ```json
 POST https://{{TitleId}}.playfabapi.com/Match/CreateMatchmakingTicket
@@ -147,11 +167,11 @@ POST https://{{TitleId}}.playfabapi.com/Match/CreateMatchmakingTicket
                 "sigma": 1.8,
                 "Latencies": [
                     {
-                        "region": "East_US",
+                        "region": "EastUs",
                         "latency": 150
                     },
                     {
-                        "region": "West_US",
+                        "region": "WestUs",
                         "latency": 400
                     }
                 ]
@@ -164,7 +184,9 @@ POST https://{{TitleId}}.playfabapi.com/Match/CreateMatchmakingTicket
 }
 ```
 
-In this example, "Latencies" must match the field referenced by the Path field in the rule. An example of a rule which would use the Latencies field is included in the queue below.
+In this example, "Latencies" must match the field referenced by the `Path` field
+in the rule. An example of a rule which would use the Latencies field is
+included in the queue below.
 
 ```json
 "MatchmakingQueue": {
@@ -185,3 +207,6 @@ In this example, "Latencies" must match the field referenced by the Path field i
     ]
 }
 ```
+
+> [!NOTE]
+> When using the region selection rule for a queue that has server allocation enabled, the regions must be valid Azure Regions. You can find the list of valid Azure Regions [here](../../../api-references/events/data-types/azureregion.md).

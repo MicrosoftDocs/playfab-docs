@@ -15,9 +15,9 @@ ms.localizationpriority: medium
 > [!IMPORTANT]
 > This feature is currently in **Private Preview**.  
 >
-> It is provided to give you an early look at an upcoming feature and to allow you to provide feedback while it is still in development.  
+> It is provided to give you an early look at an upcoming feature, and to allow you to provide feedback while it is still in development.  
 >
-> Access to this feature is restricted to select titles. If you are interested in trying it, you can request access by submitting a ticket on [support.playfab.com](https://support.playfab.com/hc/en-us/requests/new).
+> Access to this feature is restricted to select titles. If you are interested in trying it, please contact us at [helloplayfab@microsoft.com](mailto:helloplayfab@microsoft.com).
 
 ## Overview
 
@@ -29,7 +29,9 @@ PubSub is integrated natively with [PlayStream](../../../api-references/events/i
 
 ## Uses of PubSub
 
-Game clients can use PlayFab PubSub to receive all sorts of events, including standard built-in events like `entity_logged_in` or custom events you can define like `player_won_match`. This can be used in a variety of scenarios. For example:
+Game clients can use PlayFab PubSub to receive all sorts of events, including standard built-in events like `entity_logged_in`, or custom events you can define like `player_won_match`. This can be used in a variety of scenarios.
+
+For example:
 
 - Populating a player's friends list with presence information
 - Sending in-game text chat messages
@@ -42,18 +44,26 @@ PlayFab features are also built with standard PubSub events in mind. The first e
 ## Key concepts
 
 - **Event** - Each message sent or received via PubSub is called an event.
-- **Topic** - PubSub events are addressed based on Topics. A Topic is made up of three components:
-  - **event namespace**
-  - **event name**
-  - **target entity**  
-  Each published event has a specified topic and clients specify the topic they are interested in with each subscription.
-- **Event Namespace** - The namespace representing the category of an event. Standard PlayFab events reside under the `com.playfab` namespace. Custom events fall under the `com.playfab.events` namespace.
-- **Event Name** - The specific type of event.
-- **Target Entity** - The target entity component of a topic indicates what entity the event is about. It may or may not be the entity which is sending and/or receiving the event.
+
+- **Topic** - PubSub events are addressed based on Topics. A Topic is made up of three components:  
+
+  - **Event namespace**
+  
+  - **Event name**
+  
+  - **Target entity**  
+  
+Each published event has a specified topic, and with each subscription, clients specify the topic in which they are most interested.
+
+- **Event namespace** - The namespace representing the category of an event. Standard PlayFab events reside under the `com.playfab` namespace. Custom events fall under the `com.playfab.events` namespace.
+
+- **Event name** - The specific type of event.
+
+- **Target entity** - The target entity component of a topic indicates what entity the event is about. It may or may not be the entity which is sending and/or receiving the event.
 
 ## Example
 
-Imagine you want to add a feature to your game that will pop up a notification whenever one of a player's friends logs in. This can be done by leveraging the built-in `entity_logged_in` **PlayStream** event. At a high level, you can set up this functionality in just a few steps:
+Imagine you want to add a feature to your game that will pop up a notification whenever one of a player's friends logs in. This can be done by leveraging the built-in `entity_logged_in` PlayStream event. At a high level, you can set up this functionality in just a few steps:
 
 1. Use the [policy manager](pubsub-policies.md) to configure a policy which allows a player's friends to subscribe to their `entity_logged_in` events (Event Namespace = `com.playfab`, Event Name = `entity_logged_in`, Target Entity = `Player`).
 

@@ -18,17 +18,13 @@ The Thirty day Retention report table illustrates how many of your players came 
 
 A new Cohort of players is formed every day, based on all the players (new and returning), who have logged in to your game on a given day (**Day 0**).
 
-Cohort size is defined by the number of players included in a Cohort. Then each cell shows the percentage of players **(%)** from a given Cohort who returned on each subsequent day.
-
-![Thirty-day Retention Report](media/tutorials/thirty-day-retention-report-table.png)  
+Cohort size is defined by the number of players within in a Cohort. Then each cell shows the percentage of players **(%)** from a given Cohort who returned on each subsequent day.
 
 The Thirty Day Retention Report table illustrates how many of your players came back to the game within a 30-day period.
 
-A new Cohort of players is formed every day, based on all the players (new and returning) who have logged in to your game on a given day (Day 0).
+The example report shown below was generated on **1/24/2018**. It shows, for instance, that on **12/25/2017**, 1.38M users logged in.
 
-Cohort size is defined by the number of players included in a Cohort. Then each cell shows the percentage of players (%) from a given cohort who returned on each subsequent day.
-
-The preceding example report was generated on **1/24/2018**. It shows, for instance, that on **12/25/2017**, 1.38M users logged in.
+![Thirty-day Retention Report](media/tutorials/thirty-day-retention-report-table.png)
 
 Then **61.85%** of them logged in the *next* day, and **55.85%** of them logged in *two days* later.
 
@@ -38,9 +34,9 @@ This report, in addition to the [New User Retention Report](thirty-day-new-user-
 
 ## Populating the report
 
-To populate this report, you need to register a player and then log in several days in a row, at least once.
+To populate this report, you need to register a player, and then log in several days in a row at least once.
 
-This, however, will produce trivial results, with **100%** retention for each day. Throwing more players into the process and skipping some days will produce more interesting results.
+This, however, will produce trivial results, (with **100%** retention for each day). Throwing more players into the process and skipping some days will produce more interesting results.
 
 The following API calls may be used to log in:
 

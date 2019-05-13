@@ -25,7 +25,7 @@ In your **Game Manager**:
 
 ![Game Manager - Settings - Secret Keys](../../../personas/images/game-manager-settings-secret-keys.png)  
 
-You can rename, enable, disable, or set expirations for existing keys via the Dashboard. Selecting a key, you see options for these. Each title will start with a default key.
+You can rename, enable, disable, or set expirations for existing keys via the dashboard. To see the options for a key, simply select it. Each title will start with a default key.
 
 To rotate your keys, perform the following steps:
 
@@ -36,7 +36,7 @@ To rotate your keys, perform the following steps:
 > [!NOTE]
 > Even if, for some reason, your old key was compromised, this rotation will leave your title in a secured state.
 
-- This flow is zero-downtime, and each stage can be rolled back safely. If there are issues at step one, you can simply delete your new key. No one should be using it.
+- This flow is zero-downtime, and each stage can be rolled back safely. If there are issues at the first step, you can simply delete your new key. No one should be using it.
 
 - At step two, both keys are active, so you can roll your code forward or back safely.
 

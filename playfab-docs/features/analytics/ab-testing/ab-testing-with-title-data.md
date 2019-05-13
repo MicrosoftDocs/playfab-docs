@@ -48,13 +48,13 @@ We can use this to our advantage and introduce a convention for A/B-Tested title
 ![Game Manager - A/B Test - Bucket IDs](media/tutorials/game-manager-ab-test-bucket-ids.png)  
 
 > [!NOTE]
-> Make *sure* to use double quotes ( " ). Otherwise, the **JavaScript** runtime will not be able to parse it properly.
+> Make *sure* to use double quotes ( " ). Otherwise, the JavaScript runtime will not be able to parse it properly.
 
 Now let us define a brand new API call using CloudScript. This API call is named **GetTitleDataAB** and performs a very simple procedure:
 
 1. We receive a regular title data key (ex. **MyMessage**) from the client, via args.
 2. We get all the bucket IDs participating in the testing.
-    - We do this by reading the **"TitleDataAbTestSegmentIds" Key** from our title data.
+    - We do this by reading the `TitleDataAbTestSegmentIds` key from our title data.
 
 3. We get all the segment IDs a player belongs to.
     - We do this by making a call to [GetPlayerSegments](xref:titleid.playfabapi.com.server.playstream.getplayersegments) and passing the current player ID.

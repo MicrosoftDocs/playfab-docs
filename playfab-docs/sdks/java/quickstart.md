@@ -12,44 +12,45 @@ ms.localizationpriority: medium
 
 # Java quickstart for Native and Android Studio
 
-This tutorial aims to help you get up and running with PlayFab JavaSDK and simple Java program. The goals we persue in this tutorial:
-- Acquire necessary JAR files
-- Add JAR files to the classpath
-- Create minimal Java console application that executes [Custom ID Login API Call](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid)
+This tutorial is designed to get you up and running with PlayFab JavaSDK and simple Java program. The goals for this tutorial are:
+
+- Acquire necessary JAR files.
+- Add JAR files to the classpath.
+- Create minimal Java console application that executes [Custom ID Login API Call](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid).
 
 ## Acquire necessary JAR files
 
-In order to utilize PlayFab JavaSDK we will need PlayFab Client JavaSDK and it's dependency Google GSON.
+In order to utilize PlayFab JavaSDK, we will need PlayFab Client JavaSDK and it's dependency Google GSON.
 
-You may download PlayFab Client JavaSDK JAR library [here](https://github.com/PlayFab/JavaSDK/tree/versioned/builds). Look for **client-sdk-*.jar** and the corresponding Java Doc [Optional but useful].
+You may download the PlayFab Client JavaSDK JAR library [here](https://github.com/PlayFab/JavaSDK/tree/versioned/builds). Look for **client-sdk-*.jar** and the corresponding Java Doc [Optional but useful].
 
 You may download latest Google GSON [here](https://repo1.maven.org/maven2/com/google/code/gson/gson/2.8.0/). Look for **gson-*.jar**.
 
 ## Project Setup with Intellij Idea
 
-Once you have initialized simple Intellij Idea Java Project, make sure to place necessary JAR files as shown on the picture:
+Once you have initialized a simple Intellij Idea Java Project, make sure to place necessary JAR files as shown in the following screen shot.
 
 ![Install PlayFab SDK](media/intellij-proj-setup.png)
 
-The next step is adding JAR files to the classpath. Navigate to File -> Project Structure... as shown on the picture:
+The next step is adding JAR files to the classpath. Navigate to **File -> Project Structure...** as shown in the example provided below.
 
 ![Install PlayFab SDK](media/intellij-add-jar-files-to-classpath.png)
 
-Navigate to *Libraries* and add new Java library as shown on the picture:
+Navigate to **Libraries**, and add a new **Java** library as shown in the example.
 
 ![Install PlayFab SDK](media/intellij-add-new-java-library.png)
 
-Select the JAR files you have added to the libs folder, then click OK as shown on the picture:
+Select the JAR files you have added to the libs folder, then select the **OK** button, as indicated in the following example.
 
 ![Install PlayFab SDK](media/intellij-select-jar-files.png)
 
-If asked for the Module, select the first one in the list. Ensure that all the JAR files were added to the libraries list: 
+If asked for the **Module**, select the first one in the list. Ensure that all the JAR files were added to the libraries list.
 
 ![Install PlayFab SDK](media/intellij-ensure-jar-files-added.png)
 
 ## Project Setup with any IDE
 
-The main requirement is to have JAR files added to the classpath. Please, consult with the guide for your IDE on how to add jar files to classpath.
+The main requirement is to have JAR files added to the classpath. Please consult the guide for your IDE on how to add JAR files to classpath.
 
 ## Set up your first API call
 
@@ -130,55 +131,56 @@ public class Main
 
 ## Finish and Execute
 
-To run the application, hit the play button in the top right corner (1). This will start program execution, and output panel will pop up. Locate the debug message (2). This indicates that API call was successful.
+To run the application, select the **play arrow >** in the top right corner **(1)**. This will start program execution, and output panel will appear. Locate the **debug message** **(2)**. This indicates that API call was successful.
 
 ![Install PlayFab SDK](media/intellij-run-program.png)
 
-At this point, you can start making other api calls, and building your game. For a list of all available client API calls, see our [PlayFab API References](../../api-references/index.md) documentation.
+At this point, you can start making other API calls, and building your game. For a list of all available client API calls, see our [PlayFab API References](../../api-references/index.md) documentation.
 
 ## Deconstruct the code
 
-This optional last section describes every line in GettingStarted.java in detail.
-- Imports
-  - This is the minimal set of imports used to make PlayFab API calls
+This optional last section describes every line in `GettingStarted.java` in detail.
 
-- public static void main(String[] args) {
-  - Just a basic loop that kicks off an API call, and waits for it to complete
-  - PlayFabSettings.TitleId = "xxxx";
+- Imports
+  - This is the minimal set of imports used to make PlayFab API calls.
+
+- public static void `main(String[] args) {`
+  - Just a basic loop that kicks off an API call, and waits for it to complete.
+  - `PlayFabSettings.TitleId = "xxxx"`;
     - Every PlayFab developer creates a title in Game Manager. When you publish your game, you must code that titleId into your game. This lets the client know how to access the correct data within PlayFab. For most users, just consider it a mandatory step that makes PlayFab work.
 
-  - PlayFabClientModels.LoginWithCustomIDRequest request = new PlayFabClientModels.LoginWithCustomIDRequest();
-    - Most PlayFab API methods require input parameters, and those input parameters are packed into a request object
-    - Every API method requires a unique request object, with a mix of optional and mandatory parameters
-      - For LoginWithCustomIDRequest, there is a mandatory parameter of CustomId, which uniquely identifies a player and CreateAccount, which allows the creation of a new account with this call.
+  - `PlayFabClientModels.LoginWithCustomIDRequest request = new PlayFabClientModels.LoginWithCustomIDRequest();`
+    - Most PlayFab API methods require input parameters, and those input parameters are packed into a request object.
+    - Every API method requires a unique request object, with a mix of optional and mandatory parameters.
+      - For `LoginWithCustomIDRequest`, there is a mandatory parameter of `CustomId`, which uniquely identifies a player and `CreateAccount`, which allows the creation of a new account with this call.
 
-    - For login, most developers will want to use a more appropriate login method
+    - For login, most developers will want to use a more appropriate login method.
       - See the PlayFab Login Documentation for a list of all login methods, and input parameters. Common choices are:
         - LoginWithAndroidDeviceID
         - LoginWithIOSDeviceID
         - LoginWithEmailAddress
 
-  - FutureTask<PlayFabResult<com.playfab.PlayFabClientModels.LoginResult>> loginTask = PlayFabClientAPI.LoginWithCustomIDAsync(request);
-    - This begins the async request to "LoginWithCustomID", using the Java FutureTask framework
+  - `FutureTask<PlayFabResult<com.playfab.PlayFabClientModels.LoginResult>> loginTask = PlayFabClientAPI.LoginWithCustomIDAsync(request)`;
+    - This begins the async request to `LoginWithCustomID`, using the Java FutureTask framework.
 
-  - while (running) { if (loginTask.isDone()) { OnLoginComplete(loginTask); } }
-    - Run a trivial main loop and asynchronously wait for the loginTask to complete
-    - When finished call OnLoginComplete
+  - While (running) `{ if (loginTask.isDone()) { OnLoginComplete(loginTask); } }`
+    - Run a trivial main loop, and asynchronously wait for the loginTask to complete.
+    - When finished call `OnLoginComplete`.
 
-- OnLoginComplete(loginTask)
-  - result = loginTask.get();
-    - Fetch the async result (this won't cause a block, because we confirmed the FutureTask is already complete
+- `OnLoginComplete (loginTask)`
+  - `result = loginTask.get()`;
+    - Fetch the async result (this won't cause a block, because we confirmed the FutureTask is already complete.
 
-  - if (result.Result != null), the API call is successful
-    - When successful, result.Result object of many API callbacks will contain the requested information
-    - LoginResult specifically contains some basic information about the player, but for most users, login is simply a mandatory step before calling other APIs.
-  - if (result.Error != null), the API call has failed
-    - API calls can fail for many reasons, and you should always attempt to handle failure
+  - if (`result.Result != null`), then the API call was successful.
+    - When successful, the `result.Result` object of many API callbacks will contain the requested information.
+    - `LoginResult` specifically contains some basic information about the player.  But for most users, login is simply a mandatory step before calling other APIs.
+  - If (`result.Error != null`), the API call has failed.
+    - API calls can fail for many reasons, and you should always attempt to handle failure.
     - Why API calls fail (In order of likelihood)
-      - PlayFabSettings.TitleId is not set. If you forget to set titleId to your title, then nothing will work.
-      - Request parameters. If you have not provided the correct or required information for a particular API call, then it will fail. See error.errorMessage, error.errorDetails, or error.GenerateErrorReport() for more info.
-      - Device connectivity issue. Cell-phones lose/regain connectivity constantly, and so any API call at any time can fail randomly, and then work immediately after. Going into a tunnel can disconnect you completely.
+      - `PlayFabSettings.TitleId` is not set. If you forget to set titleId to your title, then nothing will work.
+      - Request parameters. If you have not provided the correct or required information for a particular API call, then it will fail. See `error.errorMessage`, `error.errorDetails`, or `error.GenerateErrorReport()` for more info.
+      - Device connectivity issue. Cell phones lose/regain connectivity constantly, and so any API call at any time can fail randomly, and then work immediately after. Going into a tunnel can disconnect you completely.
       - PlayFab server issue. As with all software, there can be issues. See our [release notes](../../release-notes/index.md) for updates.
-      - The internet is not 100% reliable. Sometimes the message is corrupted or fails to reach the PlayFab server.
+      - The internet is not 100% reliable. Sometimes the message is corrupted, or fails to reach the PlayFab server.
 
-  - If you are having difficulty debugging an issue, and the information within the error information is not sufficient, please visit us on our [forums](https://community.playfab.com/index.html)
+  - If you are having difficulty debugging an issue, and the information within the error information is not sufficient, please visit us on our [forums](https://community.playfab.com/index.html).

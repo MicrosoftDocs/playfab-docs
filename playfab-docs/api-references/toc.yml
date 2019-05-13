@@ -152,6 +152,10 @@
       href: events/player-logged-in.md
     - name: player_matched_with_lobby 
       href: events/player-matched-with-lobby.md
+    - name: player_profile_memberships
+      href: events/data-types/playermemberships.md
+    - name: player_profile_subscriptions
+      href: events/data-types/subscriptions.md
     - name: player_paid_for_purchase  
       href: events/player-paid-for-purchase.md
     - name: player_password_reset_link_sent 
@@ -214,6 +218,7 @@
       href: events/studio-user-invited.md
     - name: studio_user_removed  
       href: events/studio-user-removed.md
+
     - name: tenacy_connector_onboard 
       href: events/tenacy-connector-onboard.md
     - name: title_aborted_task  

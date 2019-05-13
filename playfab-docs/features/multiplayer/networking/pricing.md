@@ -15,11 +15,11 @@ ms.localizationpriority: medium
 > [!IMPORTANT]
 > This feature is currently in **Private Preview**.  
 >
-> It is provided to give you an early look at an upcoming feature and to allow you to provide feedback while it is still in development.  
+> It is provided to give you an early look at an upcoming feature, and to allow you to provide feedback while it is still in development.  
 >
-> Access to this feature is restricted to select titles. If you are interested in trying it, you can request access by submitting a ticket on [support.playfab.com](https://support.playfab.com/hc/en-us/requests/new).
+> Access to this feature is restricted to select titles. If you are interested in trying it, please contact us at [helloplayfab@microsoft.com](mailto:helloplayfab@microsoft.com).
 
-Most PlayFab services, such as PlayStream or Matchmaking, are included with every paid PlayFab tier as part of our core offering. However, PlayFab Party is billed on a consumption basis. This document describes the billing plan for Party.
+Most PlayFab services - such as PlayStream or Matchmaking - are included with every paid PlayFab tier as part of our core offering. However, PlayFab Party is billed on a consumption basis. This document describes the billing plan for Party.
 
 ## What comes with your basic PlayFab Core Services package?
 
@@ -29,9 +29,9 @@ A basic allocation of Party time is included with every paid PlayFab tier: 100 p
 
 There are three key meters used to bill additional Party utilization:
 
-- **Party Connectivity.** This is measured in player minutes connected to a network. Metering starts when a player creates a network or joins a network, and it stops when they have disconnected.
-- **Party Voice.** This is measured in player minutes speaking. When a player is connected to a network and is actively speaking, that  player voice activity is measured in seconds and metered.
-- **Network egress.** This meters data *sent* from PlayFab's relay and voice servers. This is congruent to the aggregate amount of data that players *receive* from the network.
+1. **Party Connectivity.** This is measured in player minutes connected to a network. Metering starts when a player creates a network or joins a network, and it stops when they have disconnected.
+2. **Party Voice.** This is measured in player minutes speaking. When a player is connected to a network and is actively speaking, that  player voice activity is measured in seconds and metered.
+3. **Network egress.** This meters data *sent* from PlayFab's relay and voice servers. This is congruent to the aggregate amount of data that players *receive* from the network.
 
 ## Party Connectivity
 

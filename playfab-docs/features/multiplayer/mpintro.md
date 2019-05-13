@@ -12,12 +12,12 @@ ms.localizationpriority: medium
 
 # Multiplayer with PlayFab
 
-Multiplayer can be a great addition to many games and PlayFab provides several services focused on multiplayer scenarios:
+Multiplayer can be a great addition to many games, and PlayFab provides several services focused on multiplayer scenarios:
 
-- **Leaderboards** - Track and respond to player activity with statistics and leaderboards
-- **Matchmaking** - Deploy custom matchmaking rules to group players quickly
-- **Servers** - Dynamically scale custom multiplayer servers in Azure
-- **Party** - Connect players with networking and accessible in-game chat
+- **Leaderboards** - Track and respond to player activity with statistics and leaderboards.
+- **Matchmaking** - Deploy custom matchmaking rules to group players quickly.
+- **Servers** - Dynamically scale custom multiplayer servers in Azure.
+- **Party** - Connect players with networking and accessible in-game chat.
 
 Leaderboards and Matchmaking are both production services offered in PlayFab Essentials, our core services package, without any additional cost. Servers is a production service, but costs extra (see [Multiplayer Server billing](./servers/billing-for-thunderhead.md)).
 

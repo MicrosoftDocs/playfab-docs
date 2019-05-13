@@ -20,11 +20,11 @@ Let's start by looking at the final results of a successful search, displaying a
 
 Searches are constructed from three fields:
 
-- The **Query** field
-- The **Group by** field
-- The **Sum by** field
+1. The **Query** field
+2. The **Group by** field
+3. The **Sum by** field
 
-The first field to edit will usually be the Query field, which is constructed by selecting an event type, a start date, and an end date.
+The first field to edit will usually be the **Query** field, which is constructed by selecting an event type, a start date, and an end date.
 
 ![Event Query - Event Type and Dates](media/tutorials/event-query-event-type-and-dates.png)  
 
@@ -70,9 +70,9 @@ We could be done here, but there's one issue - If you want to *save* this search
 
 We can do better by *manually editing* the Query field.
 
-The constructed Query field uses elastic search syntax, meaning that you can use elastic search's features, such as Logical Operators (see the **AND** between **eventName** and **timestamp**) in your queries. Or, what we want here, [date math expressions](https://www.elastic.co/guide/en/elasticsearch/client/net-api/current/date-math-expressions.html).
+The constructed **Query** field uses Azure Data Explorer search syntax, meaning that you can use Azure Data Explorer's query language scalar function `ago()` and the `datetime` data type. Literals of type `datetime` are accessible at the Azure Data Explorer [Data Types](https://docs.microsoft.com/azure/kusto/query/scalar-data-types/datetime) page. The `ago()` function is documented in the Azure Data Explorer [Scalar Functions](https://docs.microsoft.com/azure/kusto/query/agofunction) page.
 
-We can directly substitute the dates in the Query field for relative dates, as indicated in the following example.
+We can directly substitute the dates in the **Query** field for relative dates, as indicated in the following example.
 
 ![Event Query Field - RElative dates](media/tutorials/event-query-field-relative-dates.png)  
 
@@ -80,6 +80,6 @@ Now, if we save the search...
 
 ![Event Query Field - Save search](media/tutorials/event-query-field-save-search.png)  
 
-When you select the **Search** from your **Saved Searches** drop-down, your search will be reconstructed, and the dates will be relative to the current time.
+When you select the search from your **Saved Searches** drop-down, your search will be reconstructed, and the dates will be relative to the current time.
 
-![Event Query - Saved Searches Dropdown](media/tutorials/event-query-saved-searches-dropdown.png)
+![Event Query - Saved Searches Dropdown](media/tutorials/event-query-saved-searches-dropdown.png)  

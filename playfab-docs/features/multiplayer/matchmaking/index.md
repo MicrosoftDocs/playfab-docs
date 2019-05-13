@@ -20,7 +20,9 @@ ms.localizationpriority: medium
 The new PlayFab Matchmaking feature provides a great way to build matchmaking
 into your game and offers a simple, yet powerful system to help your users find
 each other. This feature is an upgrade to PlayFab’s existing matchmaker and uses
-the proven capabilities of Xbox Live’s SmartMatch. This marks the first
+the proven capabilities of Xbox Live’s SmartMatch.
+
+This marks the first
 time the firmly established technology of Xbox Live matchmaking has been
 available outside of the Xbox Live ecosystem, and it will be available to you
 *everywhere* via PlayFab.
@@ -66,8 +68,10 @@ To define a queue, you must create a queue configuration. The simplest
 configuration consists of the queue name and the match size (a minimum and
 maximum number of players). The matchmaking service will attempt to fill the
 match to the max size provided, but if insufficient tickets are available a
-match of the minimum size can be generated. If you have different game modes
-with different match size requirements, it’s best to create multiple queue
+match of the minimum size can be generated.
+
+If you have different game modes
+with different match size requirements, it is best to create multiple queue
 configurations. For more advanced matchmaking scenarios, queue rules can be
 configured.
 
@@ -116,7 +120,7 @@ see the following documentation.
 
 ### SDKs and Tools
 + [Matchmaking API Reference (Public Preview)](xref:titleid.playfabapi.com.multiplayer.matchmaking)
-+ [Matchmaking Admin API Reference (Public Preview)](xref:titleid.playfabapi.com.multiplayer.matchmakingadmin)
+<!-- + [Matchmaking Admin API Reference (Public Preview)](xref:titleid.playfabapi.com.multiplayer.matchmakingadmin) -->
 
 ### March 2019 - Public Preview Release Notes
 

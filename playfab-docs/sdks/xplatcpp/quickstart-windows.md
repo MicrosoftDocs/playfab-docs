@@ -113,7 +113,7 @@ int main()
 
 ## Finish and execute
 
-1. Run this project by selecting **Debug** (dropdown) -> **Start Debugging**.
+1. Run this project by selecting **Debug** (drop-down) -> **Start Debugging**.
 
 1. When it loads, you should see the following text: "Congratulations, you made your first successful API call!"  
 

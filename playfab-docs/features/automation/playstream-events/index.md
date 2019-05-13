@@ -13,12 +13,12 @@ ms.localizationpriority: medium
 
 PlayStream offers the following features to developers:
 
-- **An event pipeline** which unifies the entire data flow from your game into a single data stream. The PlayFab Game Services will automatically insert events into PlayStream, and you can add custom events from your using our new WriteEvent API client and server methods. Our Marketplace Add-ons will also generate events automatically. Events are managed as JSON data.
-- **A real-time rules engine,** which can evaluate complex rules in response to incoming events through PlayStream, and trigger a variety of actions, including CloudScript.
-- **A real-time segmentation system,** which can group players into segments based on a variety of player properties. Segments are calculated in real-time and always up-to-date. Actions may be triggered automatically as players enter or exit segments.
-- **Real-time visualization of event data,** including a real-time event debugger.
-- The ability to send some or all of the events to **external web services via webhooks**. These can be configured automatically by installing Marketplace Add-ons, or configured manually to send events to your own servers.
-- **An event archive** where you can filter, search, and view historical events, including event delivery history.
+- **An event pipeline** - Which unifies the entire data flow from your game into a single data stream. The PlayFab Game Services will automatically insert events into PlayStream, and you can add custom events from your using our new WriteEvent API client and server methods. Our Marketplace Add-ons will also generate events automatically. Events are managed as JSON data.
+- **A real-time rules engine** - Which can evaluate complex rules in response to incoming events through PlayStream, and trigger a variety of actions, including CloudScript.
+- **A real-time segmentation system** - Which can group players into segments based on a variety of player properties. Segments are calculated in real-time and always up-to-date. Actions may be triggered automatically as players enter or exit segments.
+- **A real-time visualization of event data** - Which includes a real-time event debugger.
+- The ability to send some or all of the events to **external web services via webhooks** - These can be configured automatically by installing Marketplace Add-ons, or configured manually to send events to your own servers.
+- **An event archive** - Where you can filter, search, and view historical events, including event delivery history.
 
 Let’s look at these features in more detail.
 
@@ -40,7 +40,7 @@ You can also select the player’s ID to jump straight to the player’s profile
 
 ## Player segmentation and actions
 
-Using those events, you can set up segments which define players within your users, based upon most player properties. This all happens in real time - there should be no perceptual lag, even at large scale.
+Using those events, you can set up segments which define players within your users, based upon most player properties. This all happens in real time - so there should be no perceptual lag, even at large scale.
 
 If you can tie an event to the thing you want to use as a differentiating factor, you can make a segment for it. And segments will apply retroactively to *all* players, based on the data in their profiles -- so if you define a segment of players where XP > 3,000, then every player with XP > 3,000 will now be in that segment.
 
@@ -64,7 +64,7 @@ Using rules and actions, you can affect LiveOps behaviors in your game without m
 
 You can also set up webhooks, such that some or all of the events going through PlayStream will get pushed out to an external service.
 
-For example, you could use the feature sown below to call your own back end server on any player login.
+For example, you could use the feature shown below to call your own back end server on any player login.
 
 ![Webhook Configuration](media/playstream-webhook.png)
 
@@ -76,7 +76,7 @@ You can also access a historical archive of events. By default, events are kept 
 
 ![Event History](media/playstream-eventHistory.png)
 
-You can select a particular event to see details for that particular event, including its delivery history. For example, the event shown below has been delivered to three different Marketplace Add-ons - **Appuri** (both legacy and current), and **Segment.com**.
+You can select a particular event to see details only for that event, including its delivery history. For example, the event shown below has been delivered to three different Marketplace Add-ons - **Appuri** (both legacy and current), and **Segment.com**.
 
 ![Event History Details](media/playstream-eventHistoryDetails.png)
 

@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Title News quickstart
 
-Title news is a mechanism for communicating with your players for patch notes or big events your game may be hosting. It contains a few basic elements:
+Title News is a mechanism for communicating with your players for patch notes or big events your game may be hosting. It contains a few basic elements:
 
 - **Date**
 - **Status**
@@ -21,22 +21,26 @@ Title news is a mechanism for communicating with your players for patch notes or
 - **Language(s)**
 
 > [!NOTE]
-> The Body element is a string which can contain raw text or **JSON**.
+> The Body element is a string which can contain raw text or JSON.
 
 ## Requirements
 
-This quickstart builds on information presented in other topics. Please refer to the following topics if you have questions.
+This quickstart builds on information presented in other topics. Please refer to the topic links that follow if you have questions.
 
 - You should be familiar with the PlayFab [Game Manager](../../config/gamemanager/quickstart.md).
-- Title news can now be localized, so please read up on how to work with default languages on your title and preferred languages for your players in the [Setting Default Languages](setting-default-languages.md) tutorial. You must have a **title default language** set to continue with localized title news.
 
-## Creating title news
+> [!NOTE]
+> You must already have a **title default language** set to continue with localized title news.
 
-PlayFab supports storing localized strings on behalf of game developers by associating a title and body with a language for a title news entry.
+- Title news can now be localized. For details on working with the default languages in your title and with the preferred languages for your players, please review the [Setting Default Languages](setting-default-languages.md) tutorial. Remember - to continue with localized title news, you must have **title default language** set accordingly.
 
-We added the necessary logic to provide your players with the correct strings for the language they prefer. When the client queries for title news, they will receive different versions of title news, based on the players preferred language. You can add multiple translated versions to a single title news entry.
+PlayFab supports storing localized strings on behalf of game developers, by associating a title and body with a language for a title news entry.
 
-There are two ways to create title news entries:
+We have added the necessary logic to provide your players with the correct strings for the language they prefer. When the client queries for title news, they will receive different versions of title news, based on the players preferred language. You can add multiple translated versions to a single title news entry.
+
+## Creating Title News entries
+
+There are two ways to create Title News entries:
 
 1. Via Game Manager.
 2. Using the Admin API method [AddNews](xref:titleid.playfabapi.com.admin.title-widedatamanagement.addnews).
@@ -55,11 +59,11 @@ Adding more languages is as simple as clicking on **ADD LANGUAGE**, choosing the
 
 Select the **Save Title News** button, and your entry will be created.
 
-The date will be set to the date when you selected the **Save Title News** button. You can also edit the timestamp to your preference if you would like a timestamp different from the current time. The timestamp is the time that players will see along with the title news. After saving, you will be redirected back to the page containing the list of your title news entries.
+The timestamp is the time that players will see next to the title news. The timestamp is automatically set to the system date at the moment you select the **Save Title News** button, but you can *also* set it manually. After saving the title news page, you'll be redirected back to the page that contains the list of your title news entries.
 
 ### Creating title news using the PlayFab Admin API
 
-You can create title news by calling [AddNews](xref:titleid.playfabapi.com.admin.title-widedatamanagement.addnews) method. Using this Admin **API** allows you to specify a custom timestamp. News added this way is *immediately* published. You can then add localized content to the item you just created by calling [AddLocalizedNews](xref:titleid.playfabapi.com.admin.title-widedatamanagement.addlocalizednews) with the news ID returned from the **AddNews** method.
+You can create title news by calling [AddNews](xref:titleid.playfabapi.com.admin.title-widedatamanagement.addnews) method. Using this Admin API allows you to specify a custom timestamp. News added this way is *immediately* published. You can then add localized content to the item you just created by calling [AddLocalizedNews](xref:titleid.playfabapi.com.admin.title-widedatamanagement.addlocalizednews), with the news ID returned from the `AddNews` method.
 
 The code example that follows demonstrates this.
 
@@ -87,11 +91,10 @@ void CreateNews() {
 
 ## Reading title news
 
-Reading the title news is very simple. The **GetTitleNews** method returns all published title news entries, except for archived and unpublished entries which will *not* be returned.
+The `GetTitleNews` method makes reading the title news very easy. The method returns all published title news entries and does not return archived and unpublished entries.
 
-- Calling [GetTitleNews](xref:titleid.playfabapi.com.client.title-widedatamanagement.gettitlenews) from the client **API** will return the news entries in the preferred language of the player, if the title news item has added localized content in that language, or in the title default language.
-
-- Calling [GetTitleNews](xref:titleid.playfabapi.com.server.title-widedatamanagement.gettitlenews) from the server **API** will return the news entries in the title default language.
+- Calling [GetTitleNews](xref:titleid.playfabapi.com.client.title-widedatamanagement.gettitlenews) from the client API will return the news entries in the preferred language of the player, if the title news item has added localized content in that language, or in the title default language.
+- Calling [GetTitleNews](xref:titleid.playfabapi.com.server.title-widedatamanagement.gettitlenews) from the server API will return the news entries in the title default language.
 
 ```csharp
 void ReadTitleNews() {
@@ -114,7 +117,7 @@ The content of a title news entry can only be modified in Game Manager.
 
 To locate and select the entry you wish to modify in **Game Manager**:
 
-- Go to your menu and select **Content**.
+- Go to the menu on the left and select **Content**.
 - Go to your **Title News** tab.
 - Select **Existing Entry**.
 
@@ -133,7 +136,7 @@ Once an entry is no longer needed, you can delete it in the **Game Manager**.
 Find the entry you wish to modify, then:
 
 - Navigate to your **Title**.
-- In your menu, select **Content**.
+- In your menu on the left, select **Content**.
 - Go to **Title News**.
 - Put a check in the checkbox for the **Existing Entry**.
 - Select the **Title News** entries you wish to delete and choose **X Delete Title News**.

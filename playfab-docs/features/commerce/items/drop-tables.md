@@ -10,7 +10,7 @@ keywords: playfab, commerce, items, catalogs, drop tables
 ms.localizationpriority: medium
 ---
 
-# Drop Tables
+# Drop tables
 
 This tutorial shows you the steps for creating drop tables using the PlayFab Game Manager.
 
@@ -19,8 +19,8 @@ Drop tables allow you to randomly generate [inventory items](../../data/playerda
 ## Requirements
 
 - We assume that you are already  familiar with [Catalogs](catalogs.md), [Inventory](../../data/playerdata/player-inventory.md), and [Game Manager](../../config/gamemanager/quickstart.md).
-- You must have a primary catalog, which contains standard, non-bundle/non-container items.
-- You must have defined at least one virtual currency which you will use as "free" in-game currency.
+- You must have a *primary catalog* - which contains standard, non-bundle/non-container items.
+- You must have defined at least *one* virtual currency which you will use as "free" in-game currency.
 
 You may use your own set of items, but our goal is to create an overlapping categorization of items. As an example, we'll use the following table of items:
 
@@ -96,8 +96,8 @@ Our other categorization is by rarity, so we'll create an alternate set of table
 
 You can access drop tables directly by using one of the two server API methods:
 
-- [GetRandomResultTables](xref:titleid.playfabapi.com.server.playeritemmanagement.getrandomresulttables)
-- [EvaluateRandomResultTable](xref:titleid.playfabapi.com.server.playeritemmanagement.evaluaterandomresulttable)
+1. [GetRandomResultTables](xref:titleid.playfabapi.com.server.playeritemmanagement.getrandomresulttables)
+2. [EvaluateRandomResultTable](xref:titleid.playfabapi.com.server.playeritemmanagement.evaluaterandomresulttable)
 
 Using the server API method, you can read the raw drop table data which we just entered into Game Manager.
 
@@ -184,8 +184,8 @@ This **Bundle** area uses several features:
 
 A drop table generates a single item randomly from a list of potential items and weights. Bundles and containers can be one of the simplest ways to deliver one or more items to a player using drop tables.
 
-You can manually use a drop table from a [Custom Game Server](../../multiplayer/servers/custom-game-servers.md) or [CloudScript](../../automation/cloudscript/writing-custom-cloudscript.md), using one of the two server **API** methods:
+You can manually use a drop table from a [Custom Game Server](../../multiplayer/servers/custom-game-servers.md) or [CloudScript](../../automation/cloudscript/writing-custom-cloudscript.md), using one of the two server API methods:
 
-- [GetRandomResultTables](xref:titleid.playfabapi.com.server.playeritemmanagement.getrandomresulttables)
+1. [GetRandomResultTables](xref:titleid.playfabapi.com.server.playeritemmanagement.getrandomresulttables)
 
-- [EvaluateRandomResultTable](xref:titleid.playfabapi.com.server.playeritemmanagement.evaluaterandomresulttable)
+2. [EvaluateRandomResultTable](xref:titleid.playfabapi.com.server.playeritemmanagement.evaluaterandomresulttable)

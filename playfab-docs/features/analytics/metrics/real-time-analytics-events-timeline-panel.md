@@ -32,7 +32,7 @@ In the screen shown below:
 ## Tips
 
 - The **JSON** body of the event **(2)** is a mix of PlayFab event data, and any custom body that is attached to the event when it is posted. You will find that all of this data is stored in one object.
-- The **Player ID (3)** may render empty for events that are bound to a title instead of the player.
+- The **Player ID (3)** may render empty for events that are bound to a title, instead of the player.
 - You can select the **Player ID (3)** to quickly navigate to the player's personal PlayFab page, where you can obtain additional information about the player, their account activities, etc.
 - You can select the **Event Name** label **(4)** to adjust the query to filter the event timeline by that **Event Name**.
 - If present, you can select the **Region** label to open a Google map pointing to the region location.

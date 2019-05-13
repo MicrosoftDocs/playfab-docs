@@ -12,9 +12,9 @@ ms.localizationpriority: medium
 
 # Content Delivery Network (CDN)
 
-The Content Delivery Network (CDN) is an infrastructure used to deliver assets (images, audio, binary content, etc) to the end user that focuses on speed and availability.
+The Content Delivery Network (CDN) is an infrastructure used to deliver assets - such as images, audio, binary content, etc. - to the end user that focuses on speed and availability.
 
-CDN costs are independent from your tier (Essentials, Professional, etc.) and require a payment account to be set up with PlayFab.
+CDN costs are independent from your tier (Essentials, Professional, etc.), and require a payment account to be set up with PlayFab.
 
 This can be done by entering your credit card information in the **Admin**->**Billing** tab of your title. CDN costs are based on your usage.
 

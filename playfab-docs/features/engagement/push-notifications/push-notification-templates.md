@@ -12,10 +12,10 @@ ms.localizationpriority: medium
 
 # Push notification templates
 
-Do you have a player base which prefers different languages? PlayFab simplifies localized push notifications by allowing multiple languages to be stored against a single template ID. You provide the strings, and we’ll provide the smarts to send the right localized versions to your players.
+Do you have a player base which prefers different languages? PlayFab simplifies localized push notifications by allowing multiple languages to be stored against a single template ID. You provide the strings - and we’ll provide the smarts to send the *right* localized versions to your players.
 
 > [!NOTE]
-> Before we added support for push notification templates, developers were able to explicitly define their push notifications inside the rules or scheduled tasks that triggered them. These will continue to behave as they have before; however, in order to add additional languages, you must use templates.
+> Before we added support for push notification templates, developers were able to explicitly define their push notifications inside the rules or scheduled tasks that triggered them. These will continue to behave as they have before - however, in order to add additional languages, you must use templates.
 
 This tutorial walks you through the steps required to create a basic localized push notification template, and then discusses how to configure PlayFab to automatically send it, when one of your players meets the specified criteria.
 
@@ -23,10 +23,12 @@ This tutorial walks you through the steps required to create a basic localized p
 
 This is an advanced tutorial. It focuses on how to create a push notification template with localized strings, and then configure logic to trigger the sending of that template to your players.
 
-Please make sure that all requirements have been met or you will not be able to complete this tutorial.
+Please make sure that all requirements have been met or you will not be able to complete this tutorial. This tutorial assumes your title has *already been configured* to send push notifications.
 
-- This tutorial assumes your title has already been configured to send push notifications. For an introduction to push notifications and instructions for how to enable them on your title, please refer to the [Push notifications quickstart](quickstart.md). It includes pointers for both [iOS](push-notifications-for-ios.md) and [Android](push-notifications-for-android.md) (including configuring advanced payloads), as well as how to use Postman to validate behavior.
-- Please become familiar with how to leverage our title default language and preferred player language support in the [Setting Default Languages](../news/setting-default-languages.md) tutorial. You must have a title default language set to continue with push notification templates.
+> [!NOTE]
+> For an introduction to push notifications and instructions for how to enable them on your title, please refer to the [Push notifications quickstart](quickstart.md). It includes pointers for both [iOS](push-notifications-for-ios.md) and [Android](push-notifications-for-android.md) (including configuring advanced payloads), as well as how to use Postman to validate behavior.
+
+Please become familiar with how to leverage our title default language and preferred player language support in the [Setting Default Languages](../news/setting-default-languages.md) tutorial. You must have a title default language set to continue with push notification templates.
 
 ## Create a push notification template
 
@@ -39,11 +41,11 @@ In the PlayFab Game Manager:
 
 ![Game Manager - Content - New Push Notification Template](../media/tutorials/new-push-notification-template.png)
 
-In this example, our title’s default language is **English**, so we’re required to provide those strings first.
+In this example, our title’s default language is English, so we’re required to provide those strings first.
 
 ![Game Manager - Content - New Push Notification Template - Default language](../media/tutorials/new-push-notification-template-default-language.png)
 
-Adding more languages is as simple as selecting the **V** drop-down menu symbol to the left of the **Language (Title default)** field. Then choose the language you want to add to the template, and type in the localized strings.
+Adding more languages is as simple as selecting the **V** drop-down menu symbol to the left of the **Language (Title default)** field.  Then choose the language you want to add to the template, and type in the localized strings.
 
 In this example, we're going to add the following Korean strings to our template.
 
@@ -69,9 +71,9 @@ Sending this template to players who prefer Korean will get the localized versio
 
 ## Triggering push notifications via rules, tasks, and player segmentation
 
-The next step for our scenario is to leverage PlayFab triggered actions to send push notifications when a player meets our specified criteria. We want to entice players to return if they haven’t visited our game in over 30 days.
+The next step for our scenario is to leverage PlayFab triggered actions to send push notifications when a player meets our specified criteria.  We want to entice players to return if they haven’t visited our game in over 30 days.
 
-This kind of criteria makes using player segmentation logic a natural fit for our lapsed player scenario, but please note that you can trigger these same kinds of actions on rules and scheduled tasks. Both of those are under the **Automation** menu in Game Manager. You can also use **CloudScript**, or our **APIs** to send a push notification.
+This kind of criteria makes using player segmentation logic a natural fit for our lapsed player scenario, but please note that you can trigger these same kinds of actions on rules and scheduled tasks. Both of those are under the **Automation** menu in Game Manager. You can also use CloudScript, or our APIs to send a push notification.
 
 Let’s continue with the player segmentation example. First, we’ll set up a player segment for lapsed players:
 
@@ -89,7 +91,7 @@ Then, if a lapsed player logs in again, PlayFab will automatically remove them f
 
 - With the entered **Segment** tab selected, select **ADD ACTION** that appears just above the **Save Segment** button.
 - Then go to the **Type** field, and use the drop-down menu to select **Send push notification**.
-- Go to the **Push notification template** field next to it, and select **Lapsed Players** template from the second dropdown menu.
+- Go to the **Push notification template** field next to it, and select **Lapsed Players** template from the second drop-down menu.
 
  Below is an example of how your screen should appear.
 
@@ -99,6 +101,6 @@ Now, when a player enters the **Lapsed Players** segment, PlayFab will send your
 
 While we’re here, let’s quickly discuss how you might make good on the promise of the “Welcome Back” goodies we mention in the notification itself. Configuring actions to fire when the player leaves the segment is an easy way (but not the only way) to make sure the player gets the gift you promised.
 
-For this game, we have a **CloudScript** function which triggers an in-game experience welcoming the player back, so we want to execute that for the player and grant them a special item from our catalog.
+For this game, we have a CloudScript function which triggers an in-game experience welcoming the player back, so we want to execute that for the player and grant them a special item from our catalog.
 
 ![Game Manager - Players - Segment - Configure Action](../media/tutorials/segment-configure-action.png)

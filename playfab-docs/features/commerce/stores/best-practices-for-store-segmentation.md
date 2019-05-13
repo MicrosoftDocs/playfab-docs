@@ -14,16 +14,15 @@ ms.localizationpriority: medium
 
 - Store segmentation is public information.
   - There are many ways for players to gain information about alternate stores.
-  - Players naturally transition between segments, and they'll see those changes when they transition.
+  - Players naturally transition between segments, and see those changes when they transition.
   - Players discuss content on forums, community sites, wikis, etc.
-  - In the PlayFab API, store information is *public* unless you disable those APIs with our [API Access Policy](../../config/gamemanager/api-access-policy.md)
+  - In the PlayFab API, store information is *public*, unless you disable those APIs with our [API Access Policy](../../config/gamemanager/api-access-policy.md)
   - You should assume that players will be aware of other stores and their details.
 
 - Provide varying content, *not* varying pricing.
   - Players will feel cheated if:
     - Prices go up or down when they transition segments.
     - Prices described on wikis are different than their own.
-
   - The only exception to the pricing rule would be *first time* purchases.
     - You must secure the client API methods with our [API Access Policy](../../config/gamemanager/api-access-policy.md) to prevent multiple purchases, or make repurchasing less meaningful through game design.
 

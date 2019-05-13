@@ -14,15 +14,15 @@ ms.localizationpriority: medium
 
 ## Overview
 
-The Daily and Monthly Top Spender report shows the list of players who spent money in your game on a given day or month, sorted by the transaction amount.
+The Daily Top Spender report shows the list of players who spent money in your game on a given day, sorted by the transaction amount.
 
 You can select the PlayFab ID label to quickly navigate to the **Player's Details** page.
 
-![Daily Top Spender Report Table](media/tutorials/daily-top-spender-report-table.png)  
+![Daily Top Spender Report Table](media/tutorials/daily-top-spender-report-table.png)
 
-![Daily Top Spender Report Table](media/tutorials/monthly-top-spender-report-table.png)  
+The Monthly Top Spender report shows the list of players who spent money in your game on a given month, sorted by the transaction amount.
 
-The Daily and Monthly Top Spender report shows the list of players who spent money in your game on a given day or month, sorted by the transaction amount.
+![Daily Top Spender Report Table](media/tutorials/monthly-top-spender-report-table.png)
 
 You can select the PlayFab ID label to quickly navigate to the **Player's Details** page.
 

@@ -6,7 +6,7 @@ ms.author: mawillia
 ms.date: 11/16/2018
 ms.topic: article
 ms.prod: playfab
-keywords: playfab, authentication, developer persona, game developer, catalogs, entities, groups, automation, liveops, player data, cloud script, playfab features, mobile login, social login
+keywords: playfab, authentication, developer persona, game developer, catalogs, entities, groups, automation, liveops, player data, cloudscript, playfab features, mobile login, social login
 ms.localizationpriority: medium
 ---
 
@@ -16,13 +16,13 @@ We are excited that you have either chosen PlayFab as your platform for back-end
 
 The purpose of this section is to shed some light on how PlayFab helps you - as a developer - to build your game using PlayFab.
 
-PlayFab offers a wide range of services, and has over 280 different **APIs** that you can leverage to make your game. This can be a lot to absorb in one session, so we'll take it slow.
+PlayFab offers a wide range of services, and has over 280 different APIs that you can leverage to make your game. This can be a lot to absorb in one session, so we'll take it slow.
 
 Let's start with the beginnings of making your game, and then move into the more advanced features as we go.
 
 ## Create a PlayFab account
 
-Before you can call any PlayFab **API**, you must have a [PlayFab developer account](https://developer.playfab.com/en-us/sign-up). If you already have a PlayFab account, you can skip this step.
+Before you can call any PlayFab API, you must have a [PlayFab developer account](https://developer.playfab.com/en-us/sign-up). If you already have a PlayFab account, you can skip this step.
 
 ![PlayFab - Create your account](images/playfab-create-account.png)
 
@@ -33,7 +33,7 @@ Since PlayFab does not know the name of your game studio or the title of your ga
 **Unnamed Studio** is the default name of your game studio, and **Unnamed Title** is the default **Title** of your game, as shown in the following screenshot. You can rename these at any time.
 
 > [!NOTE]
-> The **Title ID** is unique to your game, which we call a title. You will use this value when you make PlayFab **API** calls (your title ID will *not* be **BCFE**).
+> The **Title ID** is unique to your game, which we call a title. You will use this value when you make PlayFab API calls (your title ID will *not* be **BCFE**).
 
 ![PlayFab - Create a new game](images/playfab-create-new-game.png)
 
@@ -43,21 +43,21 @@ The current title and user can be found in the top right. An **Admin** menu appe
 
 ## Open the Game Manager for your title
 
-Before installing your **SDK**, select any title and the Game Manager will open for it. Take the time to familiarize yourself with the various sections in the Game Manager dashboard.
+Before installing your SDK, select any title and the Game Manager will open for it. Take the time to familiarize yourself with the various sections in the Game Manager dashboard.
 
 For a more detailed overview, visit the [Game Manager quickstart](../features/config/gamemanager/quickstart.md).
 
-The PlayFab Game Manager allows you to do whatever you need with your game title. Once you have a grasp of the aspects of the Game Manager, install the **SDK** so you can start using **APIs**.
+The PlayFab Game Manager allows you to do whatever you need with your game title. Once you have a grasp of the aspects of the Game Manager, install the SDK so you can start using APIs.
 
 ![PlayFab - Unicorn Battle - Admin Menu](images/playfab-unicorn-battle-admin-menu.png)
 
 ## Making your first API call
 
-We have **SDKs** for all major game engines and languages.
+We have SDKs for all major game engines and languages.
 
-Choose an environment from the list below, and follow the link to the appropriate quickstart guide. These guides will walk you through installing your environment, creating a new test project, and making your first **API** call.
+Choose an environment from the list below, and follow the link to the appropriate quickstart guide. These guides will walk you through installing your environment, creating a new test project, and making your first API call.
 
-Pick your **SDK**:
+Pick your SDK:
 
 - [Unity](../sdks/unity3d/quickstart.md)
 - [HTML5 (Javascript)](../sdks/javascript/quickstart.md)
@@ -75,7 +75,7 @@ Pick your **SDK**:
 
 ## Updating your login mechanism
 
-The first step in adding PlayFab to any game is *always* logging in the player. Logging in the player returns a security token that is needed for all other **API** calls.
+The first step in adding PlayFab to any game is *always* logging in the player. Logging in the player returns a security token that is needed for all other API calls.
 
 The quickstart guides utilize a test **TitleId** - but from *now on*, you should be using your *own*.
 
@@ -83,24 +83,24 @@ Create a **Title** in Game Manager, and update your environment with your own **
 
 ### Obtaining your TitleId
 
-A **TitleId** is obtained from the Game Manager. If you haven't already, [register for a free **PlayFab** developer account](https://developer.playfab.com/en-us/sign-up), then [login to the **Game Manager**](https://developer.playfab.com/en-us/login).
+A **TitleId** is obtained from the Game Manager. If you haven't already, [register for a free **PlayFab** developer account](https://developer.playfab.com/en-us/sign-up), then [log into the **Game Manager**](https://developer.playfab.com/en-us/login).
 
 Once you have logged in, select **Settings**. The **TitleId** for your game should already be present in the field below the **Name** column.
 
 ![Game Manager - Settings - Secret Keys - Title ID](images/game-manager-settings-secret-keys.png)  
 
-The **SDK** guide that you followed in the first step should have included instructions on how to enter your **Title ID**.
+The SDK guide that you followed in the first step should have included instructions on how to enter your **Title ID**.
 
 ## Login and account basics
 
-Now that you're set up to make **API** calls, the starting point for any PlayFab integration is *authentication*.
+Now that you're set up to make API calls, the starting point for any PlayFab integration is *authentication*.
 
 You have to authenticate your player to make further API calls. PlayFab offers a number of methods to authenticate and link your players.
 
 Here are some resources that will help you with the initial authentication of your player:
 
 - [Login basics and Best Practices](../features/authentication/login/login-basics-best-practices.md) – Check this tutorial first to learn about the best practices to use various authentication methods in your game.
-- **Authentication Service Helper** – Learn how this service can save you valuable time by leveraging building best practices in this authentication service for each **SDK**.
+- **Authentication Service Helper** – Learn how this service can save you valuable time by leveraging building best practices in this authentication service for each SDK.
 - [Authentication quickstart](../features/authentication/platform-specific-authentication/index.md) – Use this guide to understand the basics of authentication calls into PlayFab.
 - [Account Linking tutorial](../features/authentication/login/quickstart.md) - Learn about linking and unlinking different types of accounts to a single player profile.
 
@@ -124,17 +124,17 @@ Some of the number of different ways that PlayFab maps onto a game are shown bel
 
 Mapping your game on top of PlayFab is a great start. But there is more power to be harnessed in PlayFab that can help your LiveOps team create better engagement, retention and monetization mechanics.
 
-A majority of these features leverage **PlayStream**, an event system that drives real time events. This enables you to perform actions on player behaviors. Actions can occur in a number of ways - either via segmentation, or direct rules that are applied to specific events.
+A majority of these features leverage PlayStream, an event system that drives real time events. This enables you to perform actions on player behaviors. Actions can occur in a number of ways - either via segmentation, or direct rules that are applied to specific events.
 
-Actions might result in a **CloudScript** being run. Our **CloudScript** is **JavaScript** code that lives on a remote server, and you can execute it either from a rule, or directly from a game client.
+Actions might result in a CloudScript being run. Our CloudScript is JavaScript code that lives on a remote server, and you can execute it either from a rule, or directly from a game client.
 
-For more information, check out these resources to get you started with **Cloud Scripting and Automation** on PlayFab:
+For more information, check out these resources to get you started with Cloud Scripting and Automation on PlayFab:
 
-- [Automation](../index.md?#pivot=documentation&panel=automation) – A hub for information on **CloudScript**, **Scheduled Tasks**, **PlayStream** and **Action & Rules**.
-- [CloudScript quickstart](../features/automation/cloudscript/quickstart.md) – Get up and running quickly with your first **CloudScript** call.
+- [Automation](../index.md?#pivot=documentation&panel=automation) – A hub for information on CloudScript, Scheduled Tasks, PlayStream and Action & Rules.
+- [CloudScript quickstart](../features/automation/cloudscript/quickstart.md) – Get up and running quickly with your first CloudScript call.
 
 > [!TIP]
-> To leverage rules in the automation system, [write custom events](../features/analytics/metrics/playstream-events.md#custom-event-overview) in your game which will create a **PlayStream** event.
+> To leverage rules in the automation system, [write custom events](../features/analytics/metrics/playstream-events.md#custom-event-overview) in your game which will create a PlayStream event.
 
 ## Get to know PlayFab features
 

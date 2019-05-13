@@ -3,8 +3,6 @@
 - name: Tutorials
   href: tutorials.md
   items:
-  - name: Login basics and Best Practices
-    href: ../login/login-basics-best-practices.md
   - name: Running an HTTP server for testing
     href: running-an-http-server-for-testing.md
   - name: Migrating from Parse to PlayFab
