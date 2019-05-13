@@ -108,7 +108,7 @@ Here are some resources that will help you with the initial authentication of yo
 
 Every game is fairly different, so you will have a unique set of features that you must build every time. It is important to know and understand how to map those features onto PlayFab.
 
-This generally starts with the configuration of your game. You will want to store variables in PlayFab, and pull them down on to game clients. But these are not the only types of configurations that you'll want to make.
+This generally starts with the configuration of your game. You will want to store variables in PlayFab and pull them down on to game clients. But these are not the only types of configurations that you'll want to make.
 
 Some of the number of different ways that PlayFab maps onto a game are shown below, giving you the opportunity to find the combo tool set that is just right for your game:
 
