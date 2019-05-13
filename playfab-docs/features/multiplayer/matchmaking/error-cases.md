@@ -12,9 +12,9 @@ ms.localizationpriority: medium
 
 # Handling common error cases
 
-PlayFab matchmaking provides a simple interface for entering and leaving matchmaking. Despite this, there are still multiple points where things may not go according to plan. Below are some common error cases, and how a title should handle them.
+PlayFab matchmaking provides a simple interface for entering and leaving matchmaking. Despite this, there are still multiple points where things *may not* go according to plan. Some of the more common error cases are shown below, along with the ways a title should handle them.
 
-This page assumes you are familiar with the general flow of PlayFab matchmaking. See [Matchmaking Quickstart](quickstart.md) for more information on the
+This page assumes you are familiar with the general flow of PlayFab matchmaking. See our [Matchmaking quickstart](quickstart.md) for more information on the
 common use of matchmaking.
 
 ## Errors on ticket creation
@@ -33,7 +33,7 @@ If you receive an HTTP error code of 503, simply retry your request after a brie
 
 ## Call returns MatchmakingRateLimitExceeded
 
-Similar to other PlayFab features, PlayFab matchmaking will restrict the number of calls you make, according to the limits configured inside the game manager. Receiving this error indicates the title has exceeded the limit for this call type.
+Similar to other PlayFab features, PlayFab matchmaking will restrict the number of calls you make, according to the limits configured inside the game manager. Receiving the `MatchmakingRateLimitExceeded` error indicates the title has exceeded the limit for this call type.
 
 In matchmaking, this most frequently occurs when polling [GetMatchmakingTicket](xref:titleid.playfabapi.com.multiplayer.matchmaking.getmatchmakingticket) to see if a ticket has matched.
 
@@ -63,11 +63,13 @@ on each ticketId provided will allow you to retrieve its state and continue moni
 
 ## Not all players join a multi-user ticket
 
-When creating a multi-user ticket, one of the invited players may fail or refuse to join. In a case like this, the created ticket will remain in the WaitingForPlayers status until it expires. Titles should expect this situation to happen from time to time, and set a fairly short timeout within the UI. After that timeout, the title should cancel the ticket and check that all players have still agreed to play a game together.
+When creating a multi-user ticket, one of the invited players may fail or refuse to join. In a case like this, the created ticket will remain in the WaitingForPlayers status until it expires. Titles should expect this situation to happen from time to time, and set a fairly short timeout within the UI.
+
+After that timeout, the title should cancel the ticket and check that all players have still agreed to play a game together.
 
 ## The ticket is canceled
 
-Tickets may be canceled for multiple reasons. The most common cases are user cancellations and tickets expiring, but the ticket can also be canceled by the server. If you call **GetMatchmakingTicket**, and discover your ticket is canceled, the reason will be listed in the **CancellationReason** field. Requested, Timeout, and Internal correspond to user cancellation, ticket expiration, and server cancellation respectively.
+Tickets may be canceled for multiple reasons. The most common cases are user cancellations and tickets expiring, but the ticket can also be canceled by the server. If you call `GetMatchmakingTicket`, and discover your ticket is canceled, the reason will be listed in the `CancellationReason` field. Requested, Timeout, and Internal correspond to user cancellation, ticket expiration, and server cancellation respectively.
 
 In all cases, if the user still wishes to perform matchmaking, the title should simply submit another ticket.
 
@@ -75,8 +77,8 @@ In all cases, if the user still wishes to perform matchmaking, the title should 
 
 Cancelling a ticket is not guaranteed to succeed. While most errors are self-explanatory, the error `MatchmakingTicketAlreadyCompleted` indicates one of two possibilities:
 
-1. The ticket was already canceled
-2. The ticket was already matched
+1. The ticket was already canceled.
+2. The ticket was already matched.
 
 When receiving this error, titles should call [GetMatchmakingTicket](xref:titleid.playfabapi.com.multiplayer.matchmaking.getmatchmakingticket) to differentiate between these two cases. In the first case, the ticket is already in the desired state, and no further action needs to be taken. The second case indicates that a user's cancellation was too late, and it has already matched. This race condition between a user's cancellation and a match being found is unavoidable, and must be handled by the title.
 

@@ -18,12 +18,12 @@ This tutorial assumes that you are familiar with the concepts covered in our [Pu
 
 ## Configuring the Apple notification channel
 
-1. Ensure you have an active iO development (APNS_SANDBOX) or production (APNS) certificate. If you do not, create one from the **Apple Developer Portal** under **Certificates**, **Identities** and **Profiles**.
+1. Ensure you have an active iO development (APNS_SANDBOX) or production (APNS) certificate. If you do not, create one from the **Apple Developer Portal** under **Certificates, Identities and Profiles**.
 
 ![Apple request APNS certificate](../media/tutorials/apple-request-cert.png)
 
 2. Export the certificate of your choosing (development or production):  
-    - Begin by downloading a copy of your certificate from the **Apple Developer Portal** under **Certificates**, **Identities** and **Profiles**. This will create a **.cer** file.
+    - Begin by downloading a copy of your certificate from the **Apple Developer Portal** under **Certificates, Identities and Profiles**. This will create a **.cer** file.
     - Open and install the certificate into your **Keychain Access**.
     - View your installed certificate under the **Certificates** subcategory.
     - Export your **Keychain Access Certificate** to **.p12** format.
@@ -66,9 +66,9 @@ Congratulations! You have now configured your title’s iOS messaging channel.
 
 For iOS, you must rely on the default behavior of how iOS handles push notifications, as PlayFab does not offer a native implementation on Unity at this time.
 
-By default, notifications received while the game is in the background will be routed to the Notification area.
+By default, notifications received while the game is in the background will be routed to the **Notification** area.
 
-Alternatively, notifications received while the game is the active app will be received silently, and will not be visible in the Notification area.
+Alternatively, notifications received while the game is the active app will be received silently, and will not be visible in the **Notification** area.
 
 - The following code from the sample is run on `client Start()`.
 
