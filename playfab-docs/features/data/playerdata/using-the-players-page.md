@@ -39,3 +39,4 @@ There are many attributes of the Player Profile table, not all of which are visu
 
 > [!NOTE]
 > Remember - you can use any [searchable player field](../../../api-references/events/data-types/playerprofile.md) as a query parameter.
+
