@@ -210,7 +210,7 @@ There may be screens where there simply isn’t room to accommodate a conversati
    - **UI impact: NONE**
    - **UX impact: POOR**
 
-*Example: Disabling the STT setting via OS Settings. (This shows a critical path for the Xbox One console)*
+An example of Disabling the STT setting via OS Settings is shown below. (This shows a critical path for the Xbox One console)
 
    ![Critical Path for the Xbox One Console](media/critical-path-for-xbox-1-console.png)
 
@@ -224,7 +224,7 @@ There may be screens where there simply isn’t room to accommodate a conversati
    - **UI impact: MODERATE**
      Requires adding a minimize/maximize chat window button to an in-game settings menu. We recommend that this option appear only when the STT is detected as enabled.
 
-   *Example: Minimize/maximize STT window via in-game Options menu (Xbox Console/PC critical path*
+   An example of minimizing/maximizing the STT window via the in-game Options menu is shown below. (Xbox Console/PC critical path)
 
    ![Critical Path for Xbox Console/PC](media/critical-path-xbox-console-pc.png)
 
@@ -232,7 +232,7 @@ There may be screens where there simply isn’t room to accommodate a conversati
 
    ![Console Example - Add STT setting in the Pause menu](media/console-example-add-stt-in-pause-menu.png)
 
-   *PC example: Add an **STT** setting in the **Pause** menu.*
+   A PC example is shown below. Add an **STT** setting in the **Pause** menu.
 
    ![PC Example - Add STT setting in the Pause menu](media/pc-example-add-stt-in-pause-menu.png)
 
@@ -242,11 +242,11 @@ There may be screens where there simply isn’t room to accommodate a conversati
 
    For game screens that do require immediate responses, or when point-and-click (PC) is not an option, a button or key command can be directly mapped.
 
-   *Console example: A button is mapped to toggle the display ON/OFF, and annotated in the legend.*
+   A Console example is shown below. A button is mapped to toggle the display ON/OFF, and annotated in the legend.
 
    ![Capture the Flag Game - Console toggle for Chat](media/capture-the-flag-game-console-toggle-chat.jpg)
 
-   *PC example: A button is mapped to toggle the display ON/OFF and is annotated in the legend.*
+   A PC example is shown below. A button is mapped to toggle the display ON/OFF and is annotated in the legend.
 
    ![Capture the Flag Game - PC toggle for Chat](media/capture-the-flag-game-pc-toggle-chat.jpg)
 
@@ -259,11 +259,9 @@ There may be screens where there simply isn’t room to accommodate a conversati
 
 ### Display frequency
 
-Chat activity will fluctuate between players during game sessions. There is no value to keeping an empty chat window open when players aren’t chatting.
+Chat activity will fluctuate between players during game sessions. There is no value to keeping an empty chat window open when players aren’t chatting. It will automatically close the window when chat has been inactive for a set period.
 
-Automatically close the window when chat has been inactive for a set period.
-
-*Example: The STT window closes after 15s of inactivity. This number is based on the time it would take a user to read one message of 280 characters.*
+An example of this might be when the STT window closes after 15s of inactivity. This number is based on the time it would take a user to read one message of 280 characters.
 
 ![STT Window](media/stt-window.png)
 
@@ -292,9 +290,9 @@ For example, if a user walks away from their console or pauses a game, the conve
 > [!NOTE]
 > UX recommendation: Keep the window active when a game is constrained or paused. Close the window when the game is killed.
 
-## TCUI (title-callable UI)
+## TCUI (Title Callable UI)
 
-*Console example: The Xbox One Guide is TCUI and has a transparent overlay that dims the screen.*
+A console example is shown below. The Xbox One Guide is TCUI, and has a transparent overlay that dims the screen.
 
 ![Conversation Window Obscured](media/conversation-window-obscured.jpg)
 
@@ -304,7 +302,9 @@ Its common for a platform’s system UI to be the ‘top’ visible layer of any
 
 ## Conclusion
 
-The PlayFab Party TTS and STT APIs are a highly effective feature for including a wider range of users to a game and gaming conversations. The more gamers engage and develop relationships, the more likely they are to continue playing. The APIs and presentation are simple. This guidance will help you ensure that the user experience is too.
+The PlayFab Party TTS and STT APIs are a highly effective feature for including a wider range of users in a game and gaming conversations. The more gamers engage and develop relationships, the more likely they are to continue playing.
+
+The APIs and presentation are simple. This guidance will help you ensure that the user experience is too.
 
 ## Resources
 
@@ -312,8 +312,8 @@ The PlayFab Party TTS and STT APIs are a highly effective feature for including 
 
 - [PlayFab Parties_AI_Templates.zip](https://aka.ms/gamechat-ai-templates)
   Contains:
-  - PlayFab Parties_9GridTemplate.ai
-  - ConversationWindow_Template.ai
+  - `PlayFab Parties_9GridTemplate.ai`
+  - `ConversationWindow_Template.ai`
 
 ### Text-to-speech narration menu guidelines
 
@@ -322,7 +322,7 @@ The PlayFab Party TTS and STT APIs are a highly effective feature for including 
 
 ### PlayFab Party TTS/STT UX series
 
-- Part 1: **PlayFab Party Speech-to-Text (Custom) UX Guidance**
+- Part 1: PlayFab Party Speech-to-Text (Custom) UX Guidance
 - Part 2: [PlayFab Party Text-to-Speech UX Guidance](party-text-to-speech-ux-guidelines.md)
 
 ### SDK documentation
@@ -334,7 +334,7 @@ The PlayFab Party TTS and STT APIs are a highly effective feature for including 
 - Griffiths, Gareth. [Subtitles: Increasing Game Accessibility, Comprehension](https://www.gamasutra.com/view/feature/132315/subtitles_increasing_game_.php?print=1)
   *Gamasutra*
 - [Game Accessibility Guidelines](http://gameaccessibilityguidelines.com/)
-A straightforward reference for inclusive game design
+A straightforward reference for inclusive game design.
 - Straub, Josh. [Game Accessibility: What It Is And Why It Matters](https://www.gameinformer.com/b/features/archive/2012/08/03/game-accessibility-what-it-is-and-why-it-matters.aspx)
   *Game Informer*
 
