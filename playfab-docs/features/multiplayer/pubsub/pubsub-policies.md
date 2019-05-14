@@ -21,7 +21,7 @@ ms.localizationpriority: medium
 
 ## Overview
 
-PubSub events are governed by a set of policies which control who is allowed to publish to and subscribe to each topic. You can use these policies to ensure that only authorized clients are able to receive or send each type of event.
+PubSub events are governed by a set of policies, which control who is allowed to publish to (and subscribe to) each topic. You can use these policies to ensure that only *authorized* clients are able to receive or send each type of event.
 
 Each policy specifies permissions for one set of topics (combination of event namespace, event name, and entity type), including which entities are allowed to subscribe to the specified events.
 
@@ -29,7 +29,7 @@ By default, all event subscriptions are disallowed, so prior to setting up polic
 
 ## Configuring policies
 
-For your clients to receive any events via PubSub, you must first configure the appropriate policies on the PubSub Policy page within Game Manager.
+For your clients to receive any events via PubSub, you must first configure the appropriate policies on the **PubSub Policy** page within **Game Manager**.
 
 Open **Game Manager**, and navigate to the **Settings** tab on the left, then to the **PubSub** tab on the top.
 
@@ -39,7 +39,7 @@ If you are using a title with access to PubSub, this page provides you with a li
 
 ### New policy
 
-To create a new PubSub policy, select the **NEW POLICY** button at the top right of the page. This opens up a new page which should look like the example provided below.
+To create a new PubSub policy, select the **NEW POLICY** button at the top right of the page. This opens up a **New Policy** screen, which should look like the example provided below.
 
 ![Screen shot of the new PubSub policy configuration page](images/new-pubsub-policy.png)
 
