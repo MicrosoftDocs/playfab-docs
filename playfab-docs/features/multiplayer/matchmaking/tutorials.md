@@ -10,9 +10,9 @@ keywords: playfab, multiplayer, matchmaking, tutorials
 ms.localizationpriority: medium
 ---
 
-# Matchmaking Tutorials
+# Matchmaking tutorials
 
-The tutorials in this section walk you through matchmaking topics.
+The tutorials in this section will guide you through a variety matchmaking topics.
 
 - [Configuring matchmaking queues](config-queues.md)
 - [Matchmaking scenario and configuration examples](config-examples.md)

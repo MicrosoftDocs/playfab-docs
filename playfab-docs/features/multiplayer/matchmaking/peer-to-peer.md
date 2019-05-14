@@ -12,9 +12,8 @@ ms.localizationpriority: medium
 
 # Workaround for peer-to-peer connection
 
-The end result of matchmaking is a Match--a collection of tickets that satisfy
-the rules for the queue. For titles with a dedicated server, the match ID is
-unique and can be used to identify groups of players that should play together.
+The end result of matchmaking is a Match - a collection of tickets that satisfy the rules for the queue. For titles with a dedicated server, the match ID is unique, and can be used to identify groups of players that should play together.
+
 In the peer-to-peer case however, the title needs to pass connection information
 to each other. This tutorial describes a workaround to perform this.
 
@@ -50,9 +49,8 @@ POST https://{{TitleId}}.playfabapi.com/Match/CreateMatchmakingTicket
 ## Retrieving all player IPs from a Match
 
 When calling
-[GetMatch](xref:titleid.playfabapi.com.multiplayer.matchmaking.getmatch),
-specify the flag `ReturnMemberAttributes` as true to have each ticket's
-attributes to be returned. This will include the specified IP addresses.
+[GetMatch](xref:titleid.playfabapi.com.multiplayer.matchmaking.getmatch), specify the flag `ReturnMemberAttributes` as `true` to have the attributes of each ticket returned. This will include the specified IP addresses.
+
 ```json
 {
     "code": 200,
@@ -93,4 +91,3 @@ attributes to be returned. This will include the specified IP addresses.
 
 > [!NOTE]
 > While this can be used to exchange IPs, it does not guarantee connectivity between the clients.
-

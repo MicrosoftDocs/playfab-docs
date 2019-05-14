@@ -12,17 +12,21 @@ ms.localizationpriority: medium
 
 # Matchmaking quickstart
 
-This quickstart guide walks you through the entire flow for integrating the matchmaking feature. All code examples within this quickstart are for Unity - however, the concepts and flow apply (in general), to other platforms as well. Depending on your game design, consider the [single user](#single-user-ticket-matchmaking) and [multiple
+This quickstart guide walks you through the entire process for integrating the matchmaking feature. All code examples within this quickstart are for Unity - however, the concepts and flow apply (in general), to other platforms as well.
+
+Depending on your game design, consider the [single user](#single-user-ticket-matchmaking) and [multiple
 user](#multiple-user-ticket-matchmaking) matchmaking section.
 
 > [!NOTE]
 > This guide assumes that you have *already configured* a matchmaking queue in Game Manager.
 
-This tutorial shows how to submit a ticket to a specific queue in order to find a game. A queue likely maps to a game mode or multiple game modes (ex.: a capture the flag mode and a king of the hill mode in the same queue). The matchmaking service handles finding a match amongst tickets in a queue. When a match is found, your title must handle connecting the players together for gameplay.
+This tutorial illustrates how to submit a ticket to a specific queue in order to find a game. A queue likely maps to a game mode or multiple game modes (ex.: a capture the flag mode and a king of the hill mode in the same queue).
+
+The matchmaking service handles finding a match amongst tickets in a queue. When a match is found, your title must handle connecting the players together for gameplay.
 
 ## Single user ticket matchmaking
 
-If your game has a 1v1 game mode, or supports a single user entering matchmaking by themselves, consider single user matchmaking. Single user matchmaking follows the pattern illustrated here.
+If your game has a 1v1 game mode, or supports a single user entering matchmaking by themselves, consider single user matchmaking. Single user matchmaking follows the pattern illustrated below.
 
 ![Matchmaking Flow](media/quickstart/matchmaking-single-user-flow.png)
 
@@ -121,7 +125,7 @@ PlayFabMultiplayerAPI.CancelMatchmakingTicket(
 
 ## Multiple user ticket matchmaking
 
-If your game allows groups of players to go into a matchmaking queue together, there are a few more things that need to be done to enter matchmaking. We advise that your title assigns a group leader (the creator) to avoid making unnecessary calls. The leader creates the ticket, but all members of the group must consent to join it.
+If your game allows groups of players to go into a matchmaking queue together, there are a few more things that need to be done to enter matchmaking. We advise that your title assigns a group leader (the creator), to avoid making unnecessary calls. The leader creates the ticket, but all members of the group must consent to join it.
 
 ### Create a matchmaking ticket (multiple users)
 
@@ -161,22 +165,18 @@ PlayFabMultiplayerAPI.JoinMatchmakingTicket(
     this.OnMatchmakingError);
 ```
 
-The rest of the flow is the same as that of [single user ticket matchmaking](#single-user-ticket-matchmaking)
+The rest of the process is the same as that of [single user ticket matchmaking](#single-user-ticket-matchmaking)
 
 ### Connecting your players together
 
-Once your players have matched, you will want to have them join each other,
-either through a server, or by peer-to-peer connections.
+Once your players have matched, you will want to have them join each other - either through a server, or by peer-to-peer connections.
 
-If you are using a dedicated server, you can rely on the Match ID to uniquely
-identify the group of players they should be in.  If you are using PlayFab's
-multiplayer servers, GetMatch will provide a server and port for your players to
-connect to.  See [Integrating with PlayFab Multiplayer
-Servers](multiplayer-servers.md) for more information.
+If you are using a dedicated server, you can rely on the Match ID to uniquely identify the group of players they should be in.  If you are using PlayFab's
+multiplayer servers, `GetMatch` will provide a server and port for your players to connect to.
 
-As of this release, peer-to-peer connection is currently not officially
-supported by matchmaking.  If peer-to-peer is required, consider using [Playfab
-Party](../networking/index.md), or an [interim workaround](peer-to-peer.md).
+Please refer to [Integrating with PlayFab Multiplayer Servers](multiplayer-servers.md) for more information.
+
+As of this release, peer-to-peer connection is currently not officially supported by matchmaking. If peer-to-peer is required, consider using [Playfab Party](../networking/index.md), or an [interim workaround](peer-to-peer.md).
 Contact us for more support on this.
 
 ## Conclusion
