@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 >
 > Access to this feature is restricted to select titles. If you are interested in trying it, please contact us at [helloplayfab@microsoft.com](mailto:helloplayfab@microsoft.com).
 
-Most PlayFab services - such as PlayStream or Matchmaking - are included with every paid PlayFab tier as part of our core offering. However, PlayFab Party is billed on a consumption basis. This document describes the billing plan for Party.
+Most PlayFab services - such as PlayStream or Matchmaking - are included with every paid PlayFab tier as part of our core offering. However, PlayFab Party is billed on a *consumption* basis. This document describes the billing plan for Party.
 
 ## What comes with your basic PlayFab Core Services package?
 
@@ -30,7 +30,7 @@ A basic allocation of Party time is included with every paid PlayFab tier: 100 p
 There are three key meters used to bill additional Party utilization:
 
 1. **Party Connectivity.** This is measured in player minutes connected to a network. Metering starts when a player creates a network or joins a network, and it stops when they have disconnected.
-2. **Party Voice.** This is measured in player minutes speaking. When a player is connected to a network and is actively speaking, that  player voice activity is measured in seconds and metered.
+2. **Party Voice.** This is measured in player minutes speaking. When a player is connected to a network and is actively speaking, that player voice activity is measured in seconds and metered.
 3. **Network egress.** This meters data *sent* from PlayFab's relay and voice servers. This is congruent to the aggregate amount of data that players *receive* from the network.
 
 ## Party Connectivity
@@ -41,18 +41,20 @@ There are three key meters used to bill additional Party utilization:
 
 ## Party Voice
 
-Usage of voice chat is priced differently if Speech Services are enabled. Speech Services enables speech-to-text transcription, speech-to-text translation, and text-to-text translation. 10% of voice minutes can leverage transcription and synthesis for free before the below meter is billed. We recommend tying activation of this capability to an ease-of-access player setting.
+Usage of voice chat is priced differently if Speech Services are enabled. Speech Services enables speech-to-text transcription, speech-to-text translation, and text-to-text translation.
+
+10% of voice minutes can leverage transcription and synthesis for free before the below meter is billed. We recommend tying activation of this capability to an ease-of-access player setting.
 
 | SKU | $/player-minute speaking |
 | --- | --- |
 | Party Voice | $0.001 |
 | Party Voice + Speech Services | $0.015 |
 
-In-game chat text messages, even when text-to-text translation or text-to-speech synthesis are activated, do not drive metering and are not billed to your account.
+In-game chat text messages - even when text-to-text translation or text-to-speech synthesis are activated - do not drive metering and are not billed to your account.
 
 ## Network egress
 
-At run-time you can specify which Azure region should host your network. This impacts network egress charges.
+At run time, you can specify which Azure region should host your network. This impacts network egress charges.
 
 | Zone | Regions | $/GB of Network Egress |
 | --- | --- | --- |
