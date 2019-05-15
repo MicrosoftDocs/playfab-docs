@@ -10,7 +10,7 @@ keywords: playfab, multiplayer, bumblelion, party, networking, UX, speech to tex
 ms.localizationpriority: medium
 ---
 
-# PlayFab Party Speech to Text UX Guidelines
+# PlayFab Party Speech-to-Text UX guidelines
 
 > [!IMPORTANT]
 > This feature is currently in **Private Preview**.  
@@ -21,7 +21,7 @@ ms.localizationpriority: medium
 
 The PlayFab Party API gives gamers more options for engaging with and enjoying game chat. It provides a means for voice chat to be transcribed to text, and for text input to be converted to synthesized voice. Titles can now surface UI, via either the Xbox or Windows OS or a custom solution within their title.
 
-This document is part two of a two-part series covering UX solutions for speech-to-text (STT) and text-to-speech (TTS) implementation.
+This document is part two of a two-part series covering UX solutions for Speech-to-Text (STT) and Text-to-Speech (TTS) implementation.
 
 [Part one](party-text-to-speech-ux-guidelines.md) focuses on text-to-speech implementation, requirements, console and PC UI solutions, while this topic focuses on speech-to-text implementation, requirements, and custom console and PC UI solutions.
 
@@ -43,35 +43,35 @@ The following chart guides you through scenarios that players will experience wh
 
 ## Understanding the API
 
-### Speech to Text
+### Speech-to-Text
 
-1. **SetTextToSpeechProfile** (*regional voice selection*)
+1. `SetTextToSpeechProfile` (*regional voice selection*):  
    A speech profile can be specified when the chat control is created for the user. It could be changed mid-game (if the title supports it). It will determine the language, dialect, and gender of the transcribed voice output. Refer to the [Language support reference](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/language-support) for a complete list of supported languages and voice options.
 
-2. **SetTranscriptionRequested**
+2. `SetTranscriptionRequested`:  
    The Title detects that User A turned the STT preference on.
 
-3. **VoiceChatTranscriptionReceived**
+3. `VoiceChatTranscriptionReceived`:  
    When the system receives a chat voice message, it will automatically generate the transcribed text. The game will receive the transcription.
 
-4. a. Render the text (Title-specific code)
+4. a. Render the text (Title-specific code):  
    Transcribed text will be added to a 'queue'. It is up to the Title to initiate the display of the transcription.
 
-   b. **Windows::Xbox::UI::Accessibility::SendSpeechToTextString** (Xbox and Windows only)
+   b. **Windows::Xbox::UI::Accessibility::SendSpeechToTextString** (Xbox and Windows only):
    Call the OS generated Chat UI. This feature is rendered by the Xbox or Windows OS.
 
-### Text to speech
+### Text-to-Speech
 
-1. **SetTextToSpeechProfile** (*regional voice selection*)  
+1. `SetTextToSpeechProfile` (*regional voice selection*):  
    The Title needs to set the regional voice/language for the user. This will determine the language, dialect, and gender of the transcribed voice output. Go to the [Language support reference](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/language-support) for a complete list of supported languages and voice options.
 
-2. **SynthesizeTextToSpeech**  
+2. `SynthesizeTextToSpeech`  
    The text received will be synthesized and shared with the rest of the chat party. If a game calls **SynthesizedTextToSpeech**, synthesized audio data will appear as though it was captured "naturally" by the audio capture device (microphone) associated with user A (the sender). It’s as if you were holding your microphone up to a computer that’s speaking on the user’s behalf.
 
-3. **SendText**  
-   User A submits a text message (**std::string message**) to the chat group. The Title accepts text input from User A via a virtual keyboard, or other text input method. **SendText** sends this message to the chat group.
+3. `SendText`  
+   User A submits a text message (`std::string message`) to the chat group. The Title accepts text input from User A via a virtual keyboard, or other text input method. **SendText** sends this message to the chat group.
 
-4. **ChatTextReceived**  
+4. `ChatTextReceived`  
    The group receives the message. Their only property is the sender. The type determination is whether it’s a text message or a transcribed message and that’s done based on which event is fired.
 
 ## Discovery

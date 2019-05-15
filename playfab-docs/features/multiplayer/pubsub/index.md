@@ -33,19 +33,19 @@ Game clients can use PlayFab PubSub to receive all sorts of events, including st
 
 For example:
 
-- Populating a player's friends list with presence information
-- Sending in-game text chat messages
-- Displaying a game invite or friend request notification
-- Syncing state changes between a game and its companion app
-- Notifying a player that an opponent has made a move in a turn-based game
+- Populating a player's friends list with presence information.
+- Sending in-game text chat messages.
+- Displaying a game invite or friend request notification.
+- Syncing state changes between a game and its companion app.
+- Notifying a player that an opponent has made a move in a turn-based game.
 
-PlayFab features are also built with standard PubSub events in mind. The first example of this is the new PlayFab [Matchmaking preview](https://blog.playfab.com/blog/matchmaking-preview), which leverages PubSub to inform clients of updates to the status of their matchmaking tickets, such as when a match is found. This allows clients to avoid constantly polling the service for updates while ensuring they are informed of matches as soon as they happen.
+PlayFab features are also built with standard PubSub events in mind. The first example of this is the new PlayFab [Matchmaking preview](https://blog.playfab.com/blog/matchmaking-preview), which leverages PubSub to inform clients of updates to the status of their matchmaking tickets, such as when a match is found. This allows clients to avoid constantly polling the service for updates, while ensuring they are informed of matches as soon as they happen.
 
 ## Key concepts
 
 - **Event** - Each message sent or received via PubSub is called an event.
 
-- **Topic** - PubSub events are addressed based on Topics. A Topic is made up of three components:  
+- **Topic** - PubSub events are addressed based on topics. A topic is made up of three components:  
 
   - **Event namespace**
   
@@ -59,7 +59,7 @@ Each published event has a specified topic, and with each subscription, clients 
 
 - **Event name** - The specific type of event.
 
-- **Target entity** - The target entity component of a topic indicates what entity the event is about. It may or may not be the entity which is sending and/or receiving the event.
+- **Target entity** - The target entity component of a topic indicates the entity associated with the event. It may or may not be the entity which is sending and/or receiving the event.
 
 ## Example
 

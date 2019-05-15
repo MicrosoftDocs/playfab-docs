@@ -10,7 +10,7 @@ keywords: playfab, multiplayer, bumblelion, party, networking, UX, speech to tex
 ms.localizationpriority: medium
 ---
 
-# PlayFab Party Text to Speech UX Guidelines
+# PlayFab Party Text-to-Speech UX guidelines
 
 > [!IMPORTANT]
 > This feature is currently in **Private Preview**.  
@@ -21,13 +21,17 @@ ms.localizationpriority: medium
 
 The PlayFab Party service gives creators more options for delivering  great in-game chat experiences. It provides a means for voice chat to be transcribed to text and for text input to be converted to synthesized voice.
 
-This topic is part one of a two-part series covering UX solutions for speech-to-text (STT) and text-to-speech (TTS) implementation.
+This topic is part one of a two-part series covering UX solutions for Speech-to-Text (STT) and Text-to-Speech (TTS) implementation.
 
 Part one focuses on text-to-speech implementation, requirements, console and PC UI solutions, while [part two](party-speech-to-text-ux-guidelines.md) focuses on speech-to-text implementation, requirements, and custom console and PC UI solutions.
 
 ## TTS/STT scenarios
 
-This chart guides you through scenarios that players will experience when you enable speech-to-text (STT), and text-to-speech (TTS) features. It outlines user impact for three stages of the gaming experience: initial setup, playing a game, and engaging in game chat.
+This chart guides you through scenarios that players will experience when you enable speech-to-text, and text-to-speech features. It outlines user impact for three stages of the gaming experience:
+
+1. Initial setup
+2. Playing a game
+3. Engaging in game chat.
 
 |**Experience Stage**|**SET-UP**                |**PLAY**                           |**CHAT**                 |                           |
 | :------------------|:-------------------------|:----------------------------------|:------------------------|:--------------------------|
@@ -39,29 +43,29 @@ This chart guides you through scenarios that players will experience when you en
 
 ## Understanding the API
 
-### Text to speech
+### Text-to-Speech
 
-1. **SetTextToSpeechProfile** (*regional voice selection*)  
+1. `SetTextToSpeechProfile` (*regional voice selection*)  
 The Title needs to set the regional voice/language for the user. This will determine the language, dialect, and gender of the transcribed voice output. Refer to the [Language support reference](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/language-support) for a complete list of supported languages and voice options.
 
-2. **SynthesizeTextToSpeech**
+2. `SynthesizeTextToSpeech`:  
 The text received will be synthesized and shared with the rest of the chat party. If a game calls **SynthesizedTextToSpeech**, synthesized audio data will appear as though it was captured ”naturally” by the audio capture device (microphone) associated with user A (the sender). It’s as if you were holding your microphone up to a computer that’s talking on the user’s behalf.
 
-3. **SendText**  
-User A submits a text message (**std::string message**) to the chat group. The Title accepts text input from User A via a virtual keyboard, or other text input method. **SendText** sends this message to the chat group.
+3. `SendText`  
+User A submits a text message (`std::string message`) to the chat group. The Title accepts text input from User A via a virtual keyboard, or other text input method. `SendText` sends this message to the chat group.
 
-4. **ChatTextReceived**  
+4. `ChatTextReceived`  
 The group receives the message. Their only property is the sender. The type determination is whether it’s a text message or a transcribed message and that’s done based on which event is fired.
 
-### Speech to Text
+### Speech-to-Text
 
-1. **SetTextToSpeechProfile** (*regional voice selection*)  
+1. `SetTextToSpeechProfile` (*regional voice selection*)  
 A speech profile can be specified when the chat control is created for the user. It could be changed mid-game (if the title supports it). It will determine the language, dialect and gender of the transcribed voice output. Refer to the [Language support reference](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/language-support) for a complete list of supported languages and voice options.
 
-2. **SetTranscriptionRequested**  
+2. `SetTranscriptionRequested`  
 The Title detects that User A turned the STT preference on.
 
-3. **VoiceChatTranscriptionReceived**  
+3. `VoiceChatTranscriptionReceived`  
 When the system receives a chat voice message, it will automatically generate the transcribed text. The game will receive the transcription.
 
 4. a. Render the text (Title-specific code)  
@@ -70,7 +74,7 @@ When the system receives a chat voice message, it will automatically generate th
    b. **Windows::Xbox::UI::Accessibility::SendSpeechToTextString** (Xbox and Windows only)  
    Call the OS generated Chat UI. This feature is rendered by the Xbox or Windows OS.
 
-## Text to speech UX (TTS)
+## Text-to-Speech UX (TTS)
 
 Text to speech enables a person to use the platform to send a synthesized voice stream to the active game chat participants. This is great for enabling the person to participate when there is no text chat-based system available, and all communication is active through the in-game voice chat.
 
@@ -124,7 +128,7 @@ Here are two examples, using the Xbox console and Windows 10 platforms:
 
 ### 1a. Phrase list mapped to the D-pad
 
-Pressing a direction (up, down, left, right) on the directional pad (D-pad) opens the chosen category. Once the category list is open, D-pad directions apply to the choices within that category.
+Pressing a direction (**up, down, left, right**) on the directional pad (D-pad) opens the chosen category. Once the category list is open, D-pad directions apply to the choices within that category.
 
 To swap categories, the user waits for the window to close (two seconds of inactivity) and then chooses an alternate D-pad direction to open a new list of replies.
 
@@ -132,7 +136,7 @@ To swap categories, the user waits for the window to close (two seconds of inact
 
 ### 1b. Phrase list mapped to a keyboard
 
-Pressing a number key (1-4) opens the chosen category. Once the category list is open, the number keys apply to the choices within that category.
+Pressing a number key (**1-4**) opens the chosen category. Once the category list is open, the number keys apply to the choices within that category.
 
 To swap categories, the user waits for the window to close (two seconds of inactivity), and then chooses an alternate number key to open a new list of replies.
 
@@ -140,13 +144,13 @@ To swap categories, the user waits for the window to close (two seconds of inact
 
 ### 1c. Phrase list mapped to a keyboard with customizable reply settings
 
-Take this feature one step further by allowing the user to choose from a range of responses.
+Take this feature one step further, by allowing the user to choose from a range of responses.
 
 - **Console example**: For keyboard and controller design template natives, see [Resources](#resources).
 
 In the first image, the **Options** menu includes a **Chat** section. This screen displays default and user-selected replies, listed under four categories of conversation types (compliments, instructional, and so on).
 
-Each category is mapped to a single-tap D-pad direction. Each reply is mapped to a double-tap D-pad direction. A user can select a reply to edit by pressing A.
+Each category is mapped to a single-tap D-pad direction. Each reply is mapped to a double-tap D-pad direction. A user can select a reply to edit by pressing **A**.
 
 ![Options Menu - Chat](media/options-menu-chat.jpg)
 
@@ -164,13 +168,13 @@ During a game session, a user can swap control schemas with a dedicated button p
 
 ### Quick Chat reply guidance: A method to get gamers engaged
 
-What if gamers could personalize a quick chat solution that enhances player-to-player exchange? What if there were a solution that maximizes game performance while minimizing communication barriers?
+What if gamers could personalize a quick chat solution that enhances the player-to-player exchange? What if there were a solution that maximizes game performance, while minimizing communication barriers?
 
 Quick Chat comes close, by allowing users to choose from a list of predefined replies. Typically, however, these replies have been limited, redundant phrases that appear automated and boring. The guidelines below explore a strategy for keeping players engaged.
 
 #### Goal: Make this behavior automatic
 
-If Quick Chat satisfies a need repeatedly, a habit can be formed. Consider ways to trigger responses and how that can meet the conversational need at that moment.
+If Quick Chat satisfies a need repeatedly, a habit can be formed. Consider ways to trigger responses, and how that can meet the conversational need at that moment.
 
 #### Quick Chat use cases
 
@@ -183,19 +187,19 @@ If Quick Chat satisfies a need repeatedly, a habit can be formed. Consider ways 
 
 2. **Surface the solution at the time the need arises**
 
-   - Make Quick Chat available anytime game chat is engaged.
-   - Use a dedicated button-press to launch Quick Chat replies.
-   - Default to a category that is contextual to current game activity. For example, when a user scores, the default category is ”Compliments."
+   - Make Quick Chat available any time game chat is engaged.
+   - Use a dedicated button selection to launch Quick Chat replies.
+   - Default to a category that is contextual with current game activity. For example, when a user scores, the default category is ”Compliments."
 
 3. **Keep replies focused and concrete**  
    This is mostly to keep cognitive load low. Users should be able to read an entire message effortlessly.
 
    - Make replies relevant to gameplay and its category.
-   - Use short phrases, and one-syllable words, that are most commonly used in your game.
+   - Use short phrases, with one-syllable words, and words that are most commonly used in your game.
    - Use words that you can instantly visualize.
 
 4. **Use humor**  
-   *Banter* is a common form of taunting that addresses players in a friendly manner. This is different from *griefing*, where, all too often, users are harassed. If replies are clever, relevant, and varied, some users may not resort to inappropriate choices.
+   *Banter* is a common form of taunting that addresses players in a friendly manner. This is different from *griefing*, where, all too often, users are harassed. If replies are clever, relevant and varied, some users may not resort to inappropriate choices.
 
 5. **Be relative to skill and progress**  
 
@@ -207,7 +211,7 @@ If Quick Chat satisfies a need repeatedly, a habit can be formed. Consider ways 
 
 ## Conclusion
 
-PlayFab Party TTS and STT APIs are a highly effective feature for including a wider range of users to a game and gaming conversations. The more gamers engage and develop relationships, the more likely they are to continue playing. The APIs and presentation are simple. This guidance will help you ensure that the user experience is too.
+PlayFab Party TTS and STT APIs are a highly effective feature for including a wider range of users to a game and gaming conversations. The more gamers engage and develop relationships, the more likely they are to continue playing. The APIs and presentation are simple. This guidance will help you ensure that the user experience is as well.
 
 ## Resources
 
@@ -215,7 +219,7 @@ PlayFab Party TTS and STT APIs are a highly effective feature for including a wi
 
 - [QuickChat_AI_Template.zip](https://aka.ms/quickchat-ai-template)  
   Contains:
-  - QuickChat_ConsolePC_Templates.ai
+  - `QuickChat_ConsolePC_Templates.ai`
 
 ### Text-to-speech narration menu guidelines
 
