@@ -20,29 +20,27 @@ Before continuing, make sure you have completed [Getting started for developers]
 
 OS: This guide is written for Windows 10, however it should also work fine with a Mac.
 
-1. Run this command:
+1. Download and install Node.js ([https://nodejs.org/en/download/](https://nodejs.org/en/download/))
 
-   `npm install playfab-sdk --save`  
-
-   Keep this window open (we'll use it again later).
-
-2. Download and install Node.js ([https://nodejs.org/en/download/](https://nodejs.org/en/download/))
-
-3. Verify that Node is in your PATH environment variable. If you use the installer, it will install to: C:/Program Files/nodejs/
+2. Verify that Node is in your PATH environment variable. If you used the installer, it's probably set for you, and it's probably set to the default location: C:/Program Files (x86)/nodejs/
 
 ### New project setup
 
 1. Create a new folder for your project {NodeProjLocation}:
+    
+       `GettingStarted.js`
 
-   `GettingStarted.js`
+2. Open a command window in your project folder.
 
-2. Open a command or powershell window (depending on Windows version) in your project folder.
+3. Run this command:
 
-   ![Install PlayFab SDK](media/open-cmd-window.png)
+       `npm install playfab-sdk --save`
+
+   (Keep this window open (we'll use it again later.)
 
 PlayFab installation complete!
 
-## Setting up your first API call
+### New project setup
 
 This guide provides the minimum steps for you to make your first PlayFab API call, without any GUI or on-screen feedback. Confirmation is done with the Console log.
 
@@ -94,11 +92,13 @@ DoExampleLoginWithCustomID();
 
 ## Finish and execute
 
-In the console window we opened during installation, run the command:
+1. In the console window we opened during installation, run the command:
+  
+    `node GettingStarted.js`
 
-`node GettingStarted.js`
+    You should see the following text as a result:  "Congratulations, you made your first successful API call!"
 
-You should see the following text as a result:  "Congratulations, you made your first successful API call!" Now you can start making other API calls and building your game.
+Now, you can start making other API calls and building your game.
 
 For a list of all available client API calls, see our [PlayFab API References](../../api-references/index.md) documentation.
 
