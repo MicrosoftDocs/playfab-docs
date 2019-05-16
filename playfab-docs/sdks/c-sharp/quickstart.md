@@ -14,7 +14,9 @@ ms.localizationpriority: medium
 
 This guide will help you make your first PlayFab API call using CSharp (C#).
 
-## CSharp getting started guide
+Before continuing, make sure you have completed [Getting started for developers](../../personas/developer.md) which ensures you have a PlayFab account and are familiar with the PlayFab Game Manager.
+
+## CSharp Getting Started Guide
 
 A native C# project can be used two ways:
 
@@ -29,23 +31,22 @@ A native C# project can be used two ways:
 
 ## CSharp project setup
 
-- OS: This guide is written for Windows 10, and VS 2017.
-- Installation:
-  - Download Visual Studio
-    - [https://www.visualstudio.com/downloads/](https://www.visualstudio.com/downloads/)
-    - Older versions should also work.
+OS: This guide is written for Windows 10, and VS 2017.
 
-- New Project Setup
-  - Open Visual Studio and create a new project.
+Installation
+
+1. Download Visual Studio: [https://www.visualstudio.com/downloads/](https://www.visualstudio.com/downloads/)
+(Older versions should also work.)
+
+2. Open Visual Studio and create a new project.
 
   ![Install PlayFab SDK](media/csharp-new-project.png)
 
-  - Install nuget package for PlayFabAllSDK.
+3. Install nuget package for PlayFabAllSDK
 
   ![Install PlayFab SDK](media/csharp-nuget-add.png)
 
-  - At this point you should be able to successfully compile the project.
-    - Output window should contain something like the example shown below.
+At this point you should be able to successfully compile the project. The output window should contain something like this:
 
 ```output
 1>------ Build started: Project: CSharpGettingStarted, Configuration: Debug Any CPU ------
@@ -53,14 +54,13 @@ A native C# project can be used two ways:
 ========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
 ```
 
-- And your PlayFab installation is complete!
+Your PlayFab installation is complete!
 
 ## Set up your first API call
 
-- This example code provides the minimum steps needed to make your first PlayFab API call. 
-  - Your new project should contain a file called Program.cs, created automatically by Visual Studio.
-  - Open that file, and replace the contents with the code in the example below (after pasting the code, you may need to refresh the file to see it).
-  - Confirmation of the API call will be done using messages written to the console output.
+This guide provides the minimum steps for you to make your first PlayFab API call. Confirmation is done via a console print.
+
+Your new project should contain a file called Program.cs, created automatically by Visual Studio. Open that file, and replace the contents with the code in the example below (after pasting the code, you may need to refresh the file to see it). Confirmation of the API call will be done using messages written to the console output.
 
 ```csharp
 using System;
@@ -118,23 +118,15 @@ public static class Program
 }
 ```
 
-## Finish and Execute
+## Finish and execute
 
-- When you execute this program, you should get the following console output:
+When you execute this program, you should get the following console output:  "Congratulations, you made your first successful API call! Done! Press any key to close."
 
-```output
-Congratulations, you made your first successful API call!
-Done! Press any key to close
-```
+At this point, you can start making other api calls, and building your game.
 
-- At this point, you can start making other API calls, and building your game.
-- For a list of all available client API calls, see our [PlayFab API References](../../api-references/index.md) documentation.
+To build Admin utilities, see the alternate source files in the PlayFab CSharpSdk zip file: {CSharpSdk}/PlayFabClientSDK/source. For a list of all available client API calls, or many other topics, see our [PlayFab API References](../../api-references/index.md) documentation.
 
-- To build Admin utilities, see the alternate source files in the PlayFab CSharpSdk zip file:
-  - {CSharpSdk}/PlayFabClientSDK/source
-  - See the topics under **Admin** in the [PlayFab API References](../../api-references/index.md) documentation.
-
-- Happy coding!
+Happy coding!
 
 ## Deconstruct the code
 
