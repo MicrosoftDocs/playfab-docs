@@ -14,63 +14,66 @@ ms.localizationpriority: medium
 
 This guide will help you make your first PlayFab API call using Defold.
 
-## Defold Project Setup
+Before continuing, make sure you have completed [Getting started for developers](../../personas/developer.md) which ensures you have a PlayFab account and are familiar with the PlayFab Game Manager.
 
-- OS: This guide is written for Windows 10, however it should also work fine with a Mac.
-- Download Defold
-  - Create an account, or log in at [https://www.defold.com/](https://www.defold.com/) (Uses Google O-Auth).
-  - Download and install Defold.
-    - [https://d.defold.com/stable/](https://d.defold.com/stable/)
+## Defold project setup
 
-  - Create a new project on the Defold dashboard.
-    - After logging in, you should find yourself at the Defold dashboard.
-    - If you have not completed the Defold "Getting Started Tutorial", you should do that now.
-    - Finally create a new project in the Defold web dashboard.
+OS: This guide is written for Windows 10, however it should also work fine with a Mac.
 
-      ![Create new Defold project](media/defold-add-project.png)
+1. Create an account and download defold, or log in at [https://www.defold.com/](https://www.defold.com/) (Uses Google O-Auth): [https://d.defold.com/stable/](https://d.defold.com/stable/)
 
-  - Run Defold, and load your new project.
-  - You should see several windows that look similar to what is shown below.
+2. If you have not completed the Defold "Getting Started Tutorial", you should do that now.
 
-    ![Defold dashboard](media/defold-dashboard.png)
+3. Create a new project on the Defold Dashboard:
 
-  - Update the Project Settings, and include PlayFab in the dependencies.
-    - dependencies: [https://github.com/PlayFab/LuaSdk/raw/master/Defold/PlayFabClientSdk.zip](https://github.com/PlayFab/LuaSdk/raw/master/Defold/PlayFabClientSdk.zip)
+![Create new Defold project](media/defold-add-project.png)
 
-      ![Add PlayFab to dependencies](media/defold-dependency-1.png)
+4. Run Defold, and load your new project. You should see several windows that look something like this:
 
-    - Select: **Project -> Fetch Libraries**, and you should see a new built-in "PlayFab" folder.
+![Defold dashboard](media/defold-dashboard.png)
 
-      ![Project fetch libraries](media/defold-dependency-2.png)
+5. Update the Project Settings, and include PlayFab in the dependencies: [https://github.com/PlayFab/LuaSdk/raw/master/Defold/PlayFabClientSdk.zip](https://github.com/PlayFab/LuaSdk/raw/master/Defold/PlayFabClientSdk.zip)
 
-  - Create a few files:
+![Add PlayFab to dependencies](media/defold-dependency-1.png)
+
+6. Click: Project -> Fetch Libraries, and you should see a new built-in "PlayFab" folder:
+
+![Project fetch libraries](media/defold-dependency-2.png)
+
+7. Create a few files:
+    
     - main/PfGettingStarted.gui
-      - right-click **main** folder -> **new** -> **Gui File** -> **PfGettingStarted.gui**
+
+    - right-click "main" folder -> new -> Gui File -> PfGettingStarted.gui
 
     - main/PfGettingStarted.gui_script
-      - right-click **main** folder -> **new** -> **Gui Script File** -> **PfGettingStarted.gui_script**
 
-  - Finally, hook up our new gui in the main.collection
-    - Double-click **main.collection** to open it.
-    - In the Outline panel:
-      - Right-Click, **Add Game Object** (Optionally rename to **PfGui**).
-        - Right-Click the new object, **Add Component From File...**
-          - PfGettingStarted.gui (Created above).
+    - right-click "main" folder -> new -> Gui Script File -> PfGettingStarted.gui_script
+
+8. Hook up our new GUI in the main.collection
+
+   - Double-click main.collection to open it.  
+   
+   - In the Outline panel:
+      - Right-Click, Add Game Object (Optionally rename to PfGui)
+        - Right-Click the new object, Add Component From File...
+          - PfGettingStarted.gui (Created above)
 
     - The Outline panel viewing main.collection should look like the example shown below.
 
       ![Main Outline panel](media/defold-main-outline.png)
 
-- The PlayFab installation is now complete.
-  - This project isn't ready to build yet, but we'll fix that in the next step.
+PlayFab installation complete. This project isn't ready to build yet, but we'll fix that in the next step.
 
 ## Set up your first API call
 
 This guide will provide the minimum steps make your first PlayFab API call. Confirmation will be visible in the game window.
 
-- In the Defold editor, double-click **PfGettingStarted.gui_script**
-  - This should open the file for text editing.
-  - Update the contents of PfGettingStarted.gui_script as follows:
+1. In the Defold editor, double-click PfGettingStarted.gui_script
+
+2. This should open the file for text editing
+
+3. Update the contents of PfGettingStarted.gui_script as follows:
 
 > [!NOTE]
 > To look up the correct format for the loginRequest object in this example, see the API reference for [LoginWithCustomID](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid).
@@ -107,13 +110,13 @@ function OnLoginFailed(error)
 end
 ```
 
-- In the Defold editor, right-click **PfGettingStarted.gui** -> **Open With** -> **Text Editor**.
-  - Unfortunately, this changes an internal setting in Defold, so:
-    - Open it again: right-click **PfGettingStarted.gui** -> **Open With** -> **Gui Editor**.
-    - This resets the default back to normal.
+4. In the Defold editor, right-click **PfGettingStarted.gui** -> **Open With** -> **Text Editor**. Unfortunately, this changes an internal setting in Defold, so:
 
-  - Select the text-edit tab for **PfGettingStarted.gui**.
-  - Update the text contents of PfGettingStarted.gui as shown below.
+    - Open it again: right-click **PfGettingStarted.gui** -> **Open With** -> **GUI Editor**. This resets the default back to normal.
+
+    - Click the text-edit tab for PfGettingStarted.gui  
+
+    - Update the text contents of PfGettingStarted.gui as follows:
 
 ```gui_script
 script: "/main/PfGettingStarted.gui_script"
@@ -200,21 +203,14 @@ max_nodes: 512
 
 ## Finish and execute
 
-- Make sure everything is saved.
-  - Select another tab, and look for " * " markers - sometimes Defold doesn't refresh.
-  - Save everything.
+First, make sure everything is saved and click another tab, and look for " * " markers - sometimes Defold doesn't refresh. 
 
-- Build your game
-  - Ctrl+b or dropdowns: **Project** -> **Build and Launch**.
+Then, build your game (Ctrl+b or dropdowns: **Project** -> **Build and Launch**). You should see the following text on your screen:
+"Congratulations, you made your first successful API call!" At this point, you can start making other API calls, and finish building your game.
 
-- You should see the following text on your screen:
-  
- **Congratulations, you made your first successful API call**!
+For a list of all available client API calls, see our [PlayFab API References](../../api-references/index.md) documentation.
 
-- At this point, you can start making other API calls, and building your game.
-  - For a list of all available client API calls, see our [PlayFab API References](../../api-references/index.md) documentation.
-
-- Happy coding!
+Happy coding!
 
 ## Deconstruct the code
 

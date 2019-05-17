@@ -19,23 +19,23 @@ ms.localizationpriority: medium
 >
 > Access to this feature is restricted to select titles. If you are interested in trying it, please contact us at [helloplayfab@microsoft.com](mailto:helloplayfab@microsoft.com).
 
-The purpose of this topic is to explain how to quickly get started with using the PubSub client for Unity. In this guide, we will show you step-by-step how to connect to the PubSub hub and subscribe to topics. Then we will show you how to receive your first message.
+This quickstart describes how to quickly get started using the PubSub client for Unity. It is designed to give you step-by-step instructions for connecting to the PubSub hub, and how to subscribe to topics. It will also show you how to receive your first message.
 
 ## Prerequisites
 
 - **Unity 2018** - This package currently only works with Unity 2018 or later.
 
-- **PlayFab SDK for Unity** - To use this package, you must be familiar with the PlayFab SDK and have it already installed. Please be sure to have the latest PlayFab SDK installed.
+- **PlayFab SDK for Unity** - To use this package, you must be familiar with the PlayFab SDK and have it already installed. *Please be sure to have the latest PlayFab SDK installed.*
 
 - **PlayFab Authentication** - To use this package, you must also be familiar with authenticating in PlayFab.
 
-- **Unity .Net 4.X** - This package uses 4.x within Unity. Your project must be set to 4.x in **PlayerSettings**.
+- **Unity .Net 4.X** - This package uses 4.x within Unity. Your project must be set to 4.x in `PlayerSettings`.
 
 - **Setup PubSub policies** - You will need to setup PubSub policies in order to receive events on the clients. If you have not setup a policy yet, please visit [PubSub policies](pubsub-policies.md) to learn more.
 
 ## Installation
 
-The PubSub feature does not come with the PlayFab SDK by default and you must acquire it via GitHub from our site.
+The PubSub feature does not come with the PlayFab SDK by default, and you must acquire it via GitHub from our site.
 
 > [!IMPORTANT]
 > **Private preview only.**  While this feature is in [Private Preview](pubsub-private-preview-notes.md), you must be logged into GitHub for the package to download and install correctly.
@@ -46,9 +46,9 @@ The PubSub feature does not come with the PlayFab SDK by default and you must ac
 
 2. Go to [GitHub: PlayFab PubSub](https://github.com/PlayFab/UnitySignalRBetaSdk/releases/download/0.0.1/PubSub.unitypackage) - If you don't have access to this repository, please speak with your PlayFab contact.
 
-3. If the above link didn't automatically download, then you can click on the releases tab and download the latest released distribution package. You may also obtain updates from this location.
+3. If the above link didn't automatically download, select the releases tab and download the latest released distribution package. You may also obtain updates from this location.
 
-4. In Unity select **Assets, Import Package, Custom Package** and open the **PubSub.unityPackage** you downloaded.
+4. In Unity select **Assets, Import Package, Custom Package** and open the `PubSub.unityPackage` you downloaded.
 
 5. Select **Import All** to import all the files into your Unity Project.
 
@@ -56,9 +56,9 @@ The PubSub feature does not come with the PlayFab SDK by default and you must ac
 
 To enable PubSub, perform the following:
 
-1. Select **Settings**, **API**.
+1. Select **Settings**, and then **API**.
 
-2. Check the boxes for both the **Client** and the Entity API. This will display the **Feature** sub-menu.
+2. Check the boxes for both the **Client** and the **Entity API**. This will display the **Feature** sub-menu.
 
 3. Check the boxes to **Enable Unstable Features** and **Enable PubSub**. You can then read information about the PubSub package specifically, on the **Packages** tab.
 
@@ -66,7 +66,7 @@ To enable PubSub, perform the following:
 
 Using the PubSub plug-in is pretty easy. If you have not looked at our reference for this feature, you should get familiar with it at [PubSub client API](pubsub-reference.md).
 
-1. **Initializing PubSub** - While you can initialize the plug-in at any time in your code, we recommend that you initialize in either the **start** or **awake** method. When just getting started, it also helps to set **Debugging** to **true**.
+1. **Initializing PubSub** - While you can initialize the plugin at any time in your code, we recommend that you initialize in either the **start** or **awake** method. When just getting started, it also helps to set `Debugging` to `true` (see the example provided below).
 
    ```csharp
    PlayFabSocketsAPI.Debugging = true;
@@ -117,7 +117,7 @@ Using the PubSub plug-in is pretty easy. If you have not looked at our reference
    }
    ```
 
-4. **Create a topic message** - To create a topic, we must create an entity object and a topic object to pass to the **Subscribe** method. In this example, we will use the current logged in player's entity. You will put this code in the **OnSocketsConnected()** method you defined in step 3.
+4. **Create a topic message** - To create a topic, we must create an entity object and a topic object to pass to the `Subscribe` method. In this example, we will use the current logged in player's entity. You will put this code in the `OnSocketsConnected()` method you defined in step 3.
 
    ```csharp
    //First we must transform your EntityKey that you received at login, to the proper Entity Object
@@ -155,7 +155,7 @@ Using the PubSub plug-in is pretty easy. If you have not looked at our reference
    }
    ```
 
-7. **Subscribe to topic(s)** - Now that you have topics you want to subscribe to, we need to notify the PubSub service that we want to receive these events. This requires that you have setup a policy to allow this. For more information, see [PubSub policies](pubsub-policies.md).
+7. **Subscribe to topic(s)** - Now that you have topics you want to subscribe to, we need to notify the PubSub service that we want to receive these events. This requires that you have set up a policy to allow this. For more information, see [PubSub policies](pubsub-policies.md).
 
    ```csharp
    //send topic subscriptions and output any success or failures
@@ -241,12 +241,12 @@ Now you have all the pieces to run and test your code.
 
    !["Console Output"](images/console.png)
 
-1. Login to [Game Manager](https://developer.playfab.com) and navigate to your player that just logged int.
+1. Log into [Game Manager](https://developer.playfab.com), and navigate to your player that just logged in.
 
 1. Run the CloudScript method on the player from the **CloudScript** Tab.
 
    !["Run CloudScript](images/run-cloudscript-function.png)
 
-1. You should have received a message to your console that is similar to the following.
+1. You should have received a message to your console similar to the following.
 
    !["Console Output"](images/console-result.png)

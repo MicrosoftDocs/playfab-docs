@@ -25,14 +25,14 @@ PlayFab PubSub is still in active development and will be changing over time. We
 
 ## Pricing
 
-For now there will be no cost to game developers for use of the PubSub functionality, however at some point in the future there will be a charge for PubSub usage. More details on pricing will be made available prior to the charges coming into effect.
+For now, there will be no cost to game developers for use of PubSub functionality. However, at some point in the future there will be a charge for this PubSub usage. More details on pricing will be made available, prior to the charges coming into effect.
 
 ## Limitations
 
 The following known limitations exist in the system in its current state. Many of these will change in the future.
 
 - PubSub is only available in the PlayFab SDK for Unity 2018 or later.
-- While in private preview, there is no SLA for PlayFab PubSub. We do not recommend shipping a game which uses this feature.
+- While in Private Preview, there is no SLA for PlayFab PubSub. We do not recommend shipping a game which uses this feature.
 - Only entity-based events are supported in the current version. For custom events, that means any event sent via the [WriteEvents](xref:titleid.playfabapi.com.events.playstreamevents.writeevents) API. For the full list of supported standard events, see the drop-down in the PubSub Policy UI.
-- There is no way to publish an event through PubSub without also sending it through PlayStream. To publish a custom event, call the PlayStream WriteEvents API.
-- The Publish permissions UI is currently not functional; you can ignore it. WriteEvents has a built-in policy on who can send events, which remains the single policy for who can publish events for now.
+- There is no way to publish an event through PubSub without *also* sending it through PlayStream. To publish a custom event, call the PlayStream WriteEvents API.
+- The Publish permissions UI is currently not functional, so you can ignore it. WriteEvents has a built-in policy on who can send events, which remains the single policy for who can publish events for now.
