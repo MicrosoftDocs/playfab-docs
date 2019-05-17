@@ -14,28 +14,35 @@ ms.localizationpriority: medium
 
 This guide will help you make your first PlayFab API call in the Corona engine.
 
-## Corona project setup
+Before continuing, make sure you have completed [Getting started for developers](../../personas/developer.md) which ensures you have a PlayFab account and are familiar with the PlayFab Game Manager.
 
-- OS: This guide is written for Windows 10, however it should also work fine with a Mac
-- Download the Corona Engine.
-  - Download and install Corona.
+## Corona Project Setup 
+
+OS: This guide is written for Windows 10, however it should also work fine with a Mac.
+
+1. Download and install Corona.
+
     - [https://coronalabs.com/](https://coronalabs.com/)
 
-  - Run Corona, and create a new project.
-    - This guide will help you through the first-time steps if you haven't already done them:
-    - [https://docs.coronalabs.com/guide/start/installWin/index.html](https://docs.coronalabs.com/guide/start/installWin/index.html)
-  - Once you've installed, logged in, and created a new project, you should see several windows that look like the example shown below.
+2. Run Corona, and create a new project.
+
+The following guide will help you through the first-time steps if you haven't already done them:
+
+- [https://docs.coronalabs.com/guide/start/installWin/index.html](https://docs.coronalabs.com/guide/start/installWin/index.html)
+
+Once you've installed, logged in, and created a new project, you should see several windows that look something like this:
 
     ![Install PlayFab SDK](media/new-project.png)
 
-  - Activate the PlayFab Client plugin on the Corona Marketplace.
+3. Activate the PlayFab Client plugin on the Corona Marketplace.
+
     - [https://marketplace.coronalabs.com/plugin/playfab-client](https://marketplace.coronalabs.com/plugin/playfab-client)
   
-- The PlayFab installation is complete!
+The PlayFab installation is complete!
 
 ## Setting up your first API call
 
-This guide will provide the minimum steps make your first PlayFab API call. Confirmation will be visible in the Corona Engine output log.
+This guide provides the minimum steps to make your first PlayFab API call. Confirmation is visible in the Corona Engine output log. 
 
 In your favorite text-editor, ADD the lines shown in the following screen shot to **build.settings.**
 
@@ -74,18 +81,17 @@ PlayFabClientApi.LoginWithCustomID(loginRequest,
 
 ## Finish and execute
 
-- Corona automatically executes the project source immediately when you save. So as soon as you update and save these two files, you should see the screen shown below.
+Corona automatically executes the project source immediately when you save. So, as soon as you update and save these two files, you should see this:
 
 ![Download Corona Plugin - Finish and Execute](media/finish-and-execute.png)
 
-- At this point, you can start making other API calls, and building your game.
-- For a list of all available client API calls, see our [PlayFab API References](../../api-references/index.md) documentation.
+At this point, you can start making other API calls, and building your game. For a list of all available client API calls, see our [PlayFab API References](../../api-references/index.md) documentation.
 
-- Happy coding!
+Happy coding!
 
 ## Deconstruct the code
 
-This optional last section describes each part of our example above, line by line.
+This optional last section describes each part of our example above, line-by-line.
 
 - build.settings
   - `plugins = {`

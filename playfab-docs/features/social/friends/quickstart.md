@@ -18,7 +18,7 @@ Friends lists are a great feature for improving your players' ability to sociali
 
 ### SDK: Unity
 
-- The title ID is set in the **PlayFabSharedSettings** object.
+- The title ID is set in the `PlayFabSharedSettings` object.
 - The project can successfully log in a user.
 - The title has at least two registered users.
 
@@ -26,9 +26,9 @@ Friends lists are a great feature for improving your players' ability to sociali
 
 Any player in your title may be friends with any other player in your title. Notably, friendship on PlayFab is a one-way street.
 
-If **Albert** adds **Bob** as a Friend, there is *no* approval process for **Bob**, and **Bob** may be unaware.
+If **Albert** adds **Bob** as a friend, there is *no* approval process for **Bob**.  In fact, **Bob** may be completely unaware.
 
-**Bob** must separately add **Albert** for the friendship to be *mutual*. If you wish to have reciprocity rules, it is your title's responsibility to enforce these conditions with a custom game server or **CloudScript** logic, if necessary.
+**Bob** must separately add **Albert** for the friendship to be *mutual*. If you wish to have reciprocity rules, it is your title's responsibility to enforce these conditions with a custom game server or CloudScript logic, if necessary.
 
 In the event that a player has linked their Steam, Facebook, or Xbox Live account, their platform-specific friends can also be displayed, if those friends also play your title.
 
@@ -110,7 +110,7 @@ There are other things you can do with friends besides adding, removing, and dis
 
 ### Tagging friends
 
-The [FriendInfo](xref:titleid.playfabapi.com.client.friendlistmanagement.getfriendslist#friendinfo) object, retrieved from [GetFriendsList](xref:titleid.playfabapi.com.client.friendlistmanagement.getfriendslist), includes a list of tags for the friend. When updating the list, you would want to add and remove from this list and include it in the API call, as shown below.
+The [FriendInfo](xref:titleid.playfabapi.com.client.friendlistmanagement.getfriendslist#friendinfo) object, retrieved from [GetFriendsList](xref:titleid.playfabapi.com.client.friendlistmanagement.getfriendslist), includes a list of tags for the friend. When updating the list, you would want to add and remove from this list, and include it in the API call (as shown below).
 
 ```csharp
 // this REPLACES the list of tags on the server
