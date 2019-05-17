@@ -1,9 +1,9 @@
 ---
 title: PubSub private preview notes
-author: MarcoWilliamsPF
+author: TomGu
 description: Private preview release notes for PubSub.
-ms.author: mawillia
-ms.date: 12/21/2018
+ms.author: tomgu
+ms.date: 5/9/2019
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, multiplayer, pubsub, policies
@@ -31,8 +31,8 @@ For now, there will be no cost to game developers for use of PubSub functionalit
 
 The following known limitations exist in the system in its current state. Many of these will change in the future.
 
+- PubSub uses PlayStream V2 events.  V2 events can be identified in the PlayStream monitor by a small "v2" icon which shows up on each V2 event.  You can also identify them by namespace.  V2 events have namsepaces which start with either "playfab" or "custom".  V2 events are a work in progress and do not yet support all features of V1 PlayStream events.
 - PubSub is only available in the PlayFab SDK for Unity 2018 or later.
-- While in Private Preview, there is no SLA for PlayFab PubSub. We do not recommend shipping a game which uses this feature.
-- Only entity-based events are supported in the current version. For custom events, that means any event sent via the [WriteEvents](xref:titleid.playfabapi.com.events.playstreamevents.writeevents) API. For the full list of supported standard events, see the drop-down in the PubSub Policy UI.
-- There is no way to publish an event through PubSub without *also* sending it through PlayStream. To publish a custom event, call the PlayStream WriteEvents API.
-- The Publish permissions UI is currently not functional, so you can ignore it. WriteEvents has a built-in policy on who can send events, which remains the single policy for who can publish events for now.
+- While in private preview, there is no SLA for PlayFab PubSub. We do not recommend shipping a game which uses this feature.
+- Only entity-based events are supported in the current version. For custom events, that means any event sent via the [WriteEvents](xref:titleid.playfabapi.com.events.playstreamevents.writeevents) or PublisEvents API. For the full list of supported standard events, see the drop-down in the PubSub Policy UI.
+- WriteEvents has a built-in policy on who can send events, which is not affected by the publish policies configured for PubSub.  Publish policies control who can send via the PublishEvents API.
