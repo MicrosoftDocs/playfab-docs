@@ -1,9 +1,9 @@
 ---
 title: Lua quickstart for Corona
-author: v-thopra
-description: This guide will help you make your first PlayFab API call in the Corona engine.
-ms.author: v-thopra
-ms.date: 06/11/2018
+author: v-kciril
+description: This guide helps you make your first PlayFab API call in the Corona engine.
+ms.author: v-kciril
+ms.date: 04/30/2019
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, lua, corona, playfab client plugin
@@ -12,31 +12,23 @@ ms.localizationpriority: medium
 
 # Lua quickstart for Corona
 
-This guide will help you make your first PlayFab API call in the Corona engine.
+This quickstart helps you make your first PlayFab API call in the Corona engine.
 
 Before continuing, make sure you have completed [Getting started for developers](../../personas/developer.md) which ensures you have a PlayFab account and are familiar with the PlayFab Game Manager.
 
 ## Corona Project Setup 
 
-OS: This guide is written for Windows 10, however it should also work fine with a Mac.
+OS: This quickstart is written for Windows 10; however, it should also work fine with a Mac.
 
-1. Download and install Corona.
+1. Download and install Corona:  [https://coronalabs.com/](https://coronalabs.com/)
 
-    - [https://coronalabs.com/](https://coronalabs.com/)
+2. Run Corona, and create a new project. The following helps you through the first-time steps if you haven't done them:  [https://docs.coronalabs.com/guide/start/installWin/index.html](https://docs.coronalabs.com/guide/start/installWin/index.html)
 
-2. Run Corona, and create a new project.
-
-The following guide will help you through the first-time steps if you haven't already done them:
-
-- [https://docs.coronalabs.com/guide/start/installWin/index.html](https://docs.coronalabs.com/guide/start/installWin/index.html)
-
-Once you've installed, logged in, and created a new project, you should see several windows that look something like this:
+3. Once you've installed, logged in, and created a new project, you should see several windows that look something like this:
 
     ![Install PlayFab SDK](media/new-project.png)
 
-3. Activate the PlayFab Client plugin on the Corona Marketplace.
-
-    - [https://marketplace.coronalabs.com/plugin/playfab-client](https://marketplace.coronalabs.com/plugin/playfab-client)
+4. Activate the PlayFab Client plugin on the Corona Marketplace:  [https://marketplace.coronalabs.com/plugin/playfab-client](https://marketplace.coronalabs.com/plugin/playfab-client)
   
 The PlayFab installation is complete!
 
@@ -44,7 +36,7 @@ The PlayFab installation is complete!
 
 This guide provides the minimum steps to make your first PlayFab API call. Confirmation is visible in the Corona Engine output log. 
 
-In your favorite text-editor, ADD the lines shown in the following screen shot to **build.settings.**
+In your favorite text-editor, ADD the following lines to build.settings.
 
 ```lua
 settings =
