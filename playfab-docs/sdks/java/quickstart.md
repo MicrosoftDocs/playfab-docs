@@ -1,9 +1,9 @@
 ---
 title: Java quickstart for Native and Android Studio
-author: v-thopra
-description: This guide will help you get up and running with the PlayFab JavaSDK and a simple Java program.
-ms.author: v-thopra
-ms.date: 06/11/2018
+author: v-kciril
+description: This guide helps you get up and running with the PlayFab JavaSDK and a simple Java program.
+ms.author: v-kciril
+ms.date: 04/20/2019
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, java, playfab java sdk, intellij
@@ -12,35 +12,41 @@ ms.localizationpriority: medium
 
 # Java quickstart for Native and Android Studio
 
-This tutorial is designed to get you up and running with PlayFab JavaSDK and simple Java program. The goals for this tutorial are:
+This tutorial gets you get up and running with the PlayFab JavaSDK and simple Java program. 
 
-- Acquire necessary JAR files.
-- Add JAR files to the classpath.
-- Create minimal Java console application that executes [Custom ID Login API Call](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid).
+Before continuing, make sure you have completed [Getting started for developers](../../personas/developer.md) which ensures you have a PlayFab account and are familiar with the PlayFab Game Manager.
+
+The goals for this tutorial are:  
+
+- Acquire necessary JAR files
+
+- Add JAR files to the classpath
+
+- Create minimal Java console application that executes [Custom ID Login API Call](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid)
 
 ## Acquire necessary JAR files
 
-In order to utilize PlayFab JavaSDK, we will need PlayFab Client JavaSDK and it's dependency Google GSON.
+In order to utilize the PlayFab JavaSDK we need the PlayFab Client JavaSDK and it's dependency, the Google GSON.
 
-You may download the PlayFab Client JavaSDK JAR library [here](https://github.com/PlayFab/JavaSDK/tree/versioned/builds). Look for **client-sdk-*.jar** and the corresponding Java Doc [Optional but useful].
+Download the PlayFab Client JavaSDK JAR library [here](https://github.com/PlayFab/JavaSDK/tree/versioned/builds). Look for **client-sdk-*.jar** and the corresponding Java Doc [Optional but useful].
 
 You may download latest Google GSON [here](https://repo1.maven.org/maven2/com/google/code/gson/gson/2.8.0/). Look for **gson-*.jar**.
 
 ## Project Setup with Intellij Idea
 
-Once you have initialized a simple Intellij Idea Java Project, make sure to place necessary JAR files as shown in the following screen shot.
+Once you have initialized a simple Intellij Idea Java Project, make sure to place the necessary JAR files as shown below:
 
 ![Install PlayFab SDK](media/intellij-proj-setup.png)
 
-The next step is adding JAR files to the classpath. Navigate to **File -> Project Structure...** as shown in the example provided below.
+The next step is adding JAR files to the classpath. Navigate to File -> Project Structure as shown in the following:
 
 ![Install PlayFab SDK](media/intellij-add-jar-files-to-classpath.png)
 
-Navigate to **Libraries**, and add a new **Java** library as shown in the example.
+Navigate to *Libraries* and add a new Java library as illustrated in the image below:
 
 ![Install PlayFab SDK](media/intellij-add-new-java-library.png)
 
-Select the JAR files you have added to the libs folder, then select the **OK** button, as indicated in the following example.
+Select the JAR files you added to the libs folder, then select OK as shown below:
 
 ![Install PlayFab SDK](media/intellij-select-jar-files.png)
 

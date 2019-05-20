@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Friends lists
 
-Friends lists are a great feature for improving your players' ability to socialize. They're simple to work with, and can make leaderboards more engaging for your users.
+Friends lists are a great feature for improving your players' ability to socialize. They're easy to work with, and can make leaderboards more engaging for your users.
 
 ## Prerequisites
 
@@ -26,7 +26,7 @@ Friends lists are a great feature for improving your players' ability to sociali
 
 Any player in your title may be friends with any other player in your title. Notably, friendship on PlayFab is a one-way street.
 
-If **Albert** adds **Bob** as a friend, there is *no* approval process for **Bob**.  In fact, **Bob** may be completely unaware.
+If **Albert** adds **Bob** as a friend, there is *no* approval process for **Bob**.  In fact, **Bob** may be unaware.
 
 **Bob** must separately add **Albert** for the friendship to be *mutual*. If you wish to have reciprocity rules, it is your title's responsibility to enforce these conditions with a custom game server or CloudScript logic, if necessary.
 
@@ -34,7 +34,7 @@ In the event that a player has linked their Steam, Facebook, or Xbox Live accoun
 
 ## Making friends
 
-The example code will be using the functions `DisplayFriends()`, and `DisplayError(string error)` as a proxy of your app's UI. You can paste these into your editor to get it to work without any extra effort, or replace the calls with your own code.
+The example code will be using the functions `DisplayFriends()`, and `DisplayError(string error)` as a proxy of your app's UI. You can paste these into your editor to get it to work without any extra effort - or replace the calls with your own code.
 
 ```csharp
 void DisplayFriends(List<FriendInfo> friendsCache) { friendsCache.ForEach(f => Debug.Log(f.FriendPlayFabId)); }

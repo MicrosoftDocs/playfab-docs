@@ -10,9 +10,9 @@ keywords: playfab, social, groups, group data
 ms.localizationpriority: medium
 ---
 
-# Groups, Guilds, and Clans Tutorials
+# Groups, guilds, and clans tutorials
 
-These tutorials teach you how to use Groups functionality for your games, and how to build Guilds and Clans within your game.
+These tutorials teach you how to use groups functionality for your games, and how to build guilds and clans within your game.
 
 To store data for your groups, guilds or clans:
 
