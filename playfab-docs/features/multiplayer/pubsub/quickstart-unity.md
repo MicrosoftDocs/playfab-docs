@@ -31,7 +31,7 @@ This quickstart describes how to quickly get started using the PubSub client for
 
 - **Unity .Net 4.X** - This package uses 4.x within Unity. Your project must be set to 4.x in `PlayerSettings`.
 
-- **Setup PubSub policies** - You will need to setup PubSub policies in order to receive events on the clients. If you have not setup a policy yet, please visit [PubSub policies](pubsub-policies.md) to learn more.
+- **Set up PubSub policies** - You will need to setup PubSub policies in order to receive events on the clients. If you have not setup a policy yet, please visit [PubSub policies](pubsub-policies.md) to learn more.
 
 ## Installation
 
@@ -42,9 +42,9 @@ The PubSub feature does not come with the PlayFab SDK by default, and you must a
 
 ### Install from GitHub
 
-1. Login to GitHub.
+1. Log in to GitHub.
 
-2. Go to [GitHub: PlayFab PubSub](https://github.com/PlayFab/UnitySignalRBetaSdk/releases/download/0.0.1/PubSub.unitypackage) - If you don't have access to this repository, please speak with your PlayFab contact.
+2. Go to [GitHub: PlayFab PubSub](https://github.com/PlayFab/UnityFeatureBetaSdks/releases/download/0.0.3/PubSub.unitypackage) - If you don't have access to this repository, please speak with your PlayFab contact.
 
 3. If the above link didn't automatically download, select the releases tab and download the latest released distribution package. You may also obtain updates from this location.
 
@@ -117,11 +117,11 @@ Using the PubSub plug-in is pretty easy. If you have not looked at our reference
    }
    ```
 
-4. **Create a topic message** - To create a topic, we must create an entity object and a topic object to pass to the `Subscribe` method. In this example, we will use the current logged in player's entity. You will put this code in the `OnSocketsConnected()` method you defined in step 3.
+4. **Create a topic message** - To create a topic, we must combine an entity object, event name, and event namespace to pass to the **Subscribe** method. In this example, we will use the current logged in player's entity. You will put this code in the **OnSocketsConnected()** method you defined in step 3.
 
    ```csharp
    //First we must transform your EntityKey that you received at login, to the proper Entity Object
-   var entity = new PlayFab.Sockets.Models.Entity()
+   var entity = new PlayFab.Sockets.Models.EntityKey()
    {
        Id = _currentEntity.Id,
        Type = _currentEntity.Type
@@ -130,14 +130,18 @@ Using the PubSub plug-in is pretty easy. If you have not looked at our reference
    var topics = new List<Topic>();
 
    //Create a Topic object to listen to
-   var objectChangeTopic = new Topic()
+   var customEventTopic = new Topic()
    {
        Entity = entity,
-       EventName = "custom_event_name",
-       EventNamespace = "com.playfab.events.mygame"
+       FullName = new EventFullName()
+       {
+           Namespace = "custom.mygame",
+           Name = "custom_event_name"
+       }
    };
+
    //Add that topic to the array
-   topics.Add(objectChangeTopic);
+   topics.Add(customEventTopic);
    ```
 
 5. **Register a Handler** - Register a handler for when your event is received. Add the following after you create your topic.
@@ -151,9 +155,11 @@ Using the PubSub plug-in is pretty easy. If you have not looked at our reference
    ```csharp
    private void OnCustomEvent(PlayFabNetworkMessage netMsg)
    {
-       Debug.Log(netMsg.PayloadJSON);
+       Debug.Log("Event received: " + netMsg.@event.fullName + " " + netMsg.@event.payload)
    }
    ```
+
+    In addition, there are several fields that are part of netMsg.@event.  Here you can get timestamp, entity associated with the event, entity lineage and much more. For a full list of what netMsg.@event contains, inspect the Event class in PlayFabSocketModels.cs.
 
 7. **Subscribe to topic(s)** - Now that you have topics you want to subscribe to, we need to notify the PubSub service that we want to receive these events. This requires that you have set up a policy to allow this. For more information, see [PubSub policies](pubsub-policies.md).
 
@@ -165,7 +171,7 @@ Using the PubSub plug-in is pretty easy. If you have not looked at our reference
 
        subscribedTopics.ForEach((t) =>
        {
-           Debug.LogFormat("{0} Subscribed Successfully", t.EventName);
+           Debug.LogFormat("{0} Subscribed Successfully", t.FullName);
        });
    }, (subscribedErrors) =>
    {
@@ -224,7 +230,7 @@ In this example, we will use a custom CloudScript function to increment a statis
      //Trigger our event we will receive in PubSub
      var entityEvent = {};
      entityEvent.Entity = titleEntity;
-     entityEvent.EventNamespace = "com.playfab.events.mygame";
+     entityEvent.EventNamespace = "custom.mygame";
      entityEvent.Name = "custom_event_name";
      entityEvent.PayloadJSON = JSON.stringify(stats);
      entity.WriteEvents({Events:[entityEvent]});
@@ -241,7 +247,7 @@ Now you have all the pieces to run and test your code.
 
    !["Console Output"](images/console.png)
 
-1. Log into [Game Manager](https://developer.playfab.com), and navigate to your player that just logged in.
+1. Log in to [Game Manager](https://developer.playfab.com) and navigate to your player that just logged in.
 
 1. Run the CloudScript method on the player from the **CloudScript** Tab.
 

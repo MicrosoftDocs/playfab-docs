@@ -21,7 +21,7 @@ In this example, we show you how to create prize table end tournament prizes, wh
 ## Requirements
 
 > [!IMPORTANT]
-> This is an advanced tutorial. Please make sure that all requirements shown below have been met, or you will *not* be able to complete this tutorial.
+> This is an *advanced* tutorial. Please make sure that all requirements shown below have been met, or you will *not* be able to complete this tutorial.
 
 - Basic knowledge of how to create a player will be necessary, as there will need to be players in a leaderboard before it can perform any actions on those players.
 

@@ -28,7 +28,9 @@ Players can log off and resume play later, with their game state stored in the c
 
 The following CloudScript example is the turn-based structure for any common board game. The board game itself is stubbed out as pseudo-code.
 
-- **Assumptions:**  The Shared Group Data that represents the game has already been started, and its membership is already defined.
+### Assumptions
+
+The Shared Group Data that represents the game has already been started, and its membership is already defined.
 
 ```csharp
 // CloudScript/Javascript
@@ -91,10 +93,6 @@ While there's no strictly enforced limit currently, usage with many players is n
 
 There is no role/rank system within a group, meaning any member in the group has absolute authority within the group (there is no defined leader).
 
-So unless you disable the Client Shared Group Data methods with our [API Access Policy](../../config/gamemanager/api-access-policy.md), the clients have complete control of the data, which could result in exploitation of the data.
-
-There is no Role/Rank System within a group; this means that any member in the group has absolute authority within it (there is no defined leader).
-
-So unless you disable the Client Shared Group Data methods with our [API Access Policy](../../config/gamemanager/api-access-policy.md), the clients have complete control of the data, which could result in exploitation of the data.
+Bluntly, what this means is that unless you disable the Client Shared Group Data methods with our [API Access Policy](../../config/gamemanager/api-access-policy.md), the clients will have *complete control of the data*, which could result in exploitation of the data.
 
  Best practice is to either *not* use Shared Group Data for gameplay-impacting data, or to disable the Shared Group Data methods in the Client API.

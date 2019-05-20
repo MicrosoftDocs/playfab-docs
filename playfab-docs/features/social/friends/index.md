@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Friends
 
-Letting players connect with their friends is a great engagement tool for your game. With PlayFab, you have the ability to integrate with your players' existing social network (like Facebook, Steam, or Xbox Live), or to manage your own custom friends lists within your game.
+Letting players connect with their friends is a great engagement tool for your game! PlayFab offers you the ability to integrate with your players' existing social network (like Facebook, Steam, or Xbox Live) or to manage your own custom friends lists within your game.
 
 Any player in your title may be friends with any other player in your title. Notably, friendship on PlayFab is a one-way street.
 

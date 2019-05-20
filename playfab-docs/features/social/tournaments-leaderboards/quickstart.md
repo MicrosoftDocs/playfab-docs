@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Tournaments and leaderboards quickstart
 
-This quickstart will describe how to have a statistic that keeps track of the players high score and how to get a leaderboard of the top high scores. This can be utilized for a global leaderboard or in conjunction with [resettable statistics](using-resettable-statistics-and-leaderboards.md) to reset for a specific event or tournament.
+This quickstart describes how to have a statistic that keeps track of the players high score, and how to get a leaderboard of the top high scores. This can be utilized for a global leaderboard, or in conjunction with [resettable statistics](using-resettable-statistics-and-leaderboards.md) to reset for a specific event or tournament.
 
 ## Prerequisites
 
@@ -72,7 +72,7 @@ In order to get the leaderboard of the top high scores of all players that have 
 
 ### C# code example - RequestLeaderboard
 
-In this code example we will have a `RequestLeaderboard` function that would be called to get the leaderboard and will pass the results to a function of `DisplayLeaderboard` which would populate the experience in your game that shows the high scores.
+In this code example we will have a `RequestLeaderboard` function that would be called to get the leaderboard, and will pass the results to a function of `DisplayLeaderboard`, which would populate the experience in your game that shows the high scores.
 
 ```csharp
 //Get the players with the top 10 high scores in the game
