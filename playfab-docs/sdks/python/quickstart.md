@@ -23,30 +23,31 @@ This quickstart was designed to assist you in making your first API call in Pyth
 If you have any issues, let us know on the [Forums](https://community.playfab.com/index.html).
 
 > [!NOTE]
-> This beta release of the PythonSdk only supports synchronous API calls, and your game loop may become blocked performing PlayFab API calls. You may need to create your own async/threading model to avoid this problem.
+> This beta release of the Python SDK only supports synchronous API calls, and your game loop may become blocked performing PlayFab API calls. You may need to create your own async/threading model to avoid this problem.
+
+Before continuing, make sure you have completed [Getting started for developers](../../personas/developer.md) which ensures you have a PlayFab account and are familiar with the PlayFab Game Manager.
 
 ## Python project setup
 
-- Make sure [Python 3](https://www.python.org/downloads/) is installed on your system.
-- Install the [PlayFab Package](https://pypi.org/project/playfab/) using the command shown below.
+1. Make sure [Python 3](https://www.python.org/downloads/) is installed on your system
+
+2. Install the [PlayFab Package](https://pypi.org/project/playfab/) using the below command:
 
 ```cmd
 pip install playfab
 ```
 
-- If `pip` is not in your path, use the command shown below instead.
+    If `pip` is not in your path, use the command shown below instead.
 
 ```cmd
 python -m pip install playfab
 ```
 
-- Create a new python script in your desired directory called `playfab_test.py`.
+3. Create a new python script in your desired directory called `playfab_test.py`.
 
 ## Set up your first API call
 
-This guide will provide the minimum steps to make your first PlayFab API call, without any GUI or on-screen feedback. Confirmation will be done with a console print statement.
-
-- Replace the contents of `playfab_test.py` with the contents shown below.
+This guide will provide the minimum steps to make your first PlayFab API call, without any GUI or on-screen feedback. Confirmation will be done with a console print statement. To do this, replace the contents of `playfab_test.py` with the contents shown below.
 
 ```python
 from playfab import PlayFabClientAPI, PlayFabSettings
@@ -72,21 +73,21 @@ PlayFabClientAPI.LoginWithCustomID(request, callback)
 
 ## Finish and execute
 
-- Run the Python script.
-  - From the command line, run the following command:
+1. Run the Python script.
+
+2. From the command line, run the following command:
 
 ```cmd
-python playfab_test.py
+       python playfab_test.py
 ```
 
-- When it finishes, you should see the following text:
-
-**Congratulations, you made your first successful API call!**
+3. When it finishes, you should see the following text:  "Congratulations, you made your first successful API call!"
   
-- At this point, you can start making other API calls, and building your game.
-- For a list of all available client API calls, see our [PlayFab API References](../../api-references/index.md) documentation.
+At this point, you can start making other API calls, and building your game
 
-- Happy coding!
+For a list of all available client API calls, see our [PlayFab API References](../../api-references/index.md) documentation.
+
+Happy coding!
 
 ## Deconstruct the code
 
