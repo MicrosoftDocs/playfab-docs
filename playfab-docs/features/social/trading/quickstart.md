@@ -13,9 +13,9 @@ ms.localizationpriority: medium
 # Trading quickstart
 
 > [!NOTE]
-> This quickstart assumes you are already familiar with both Catalogs and Inventory Items. The example player must already own the Inventory Items they wish to trade away.
+> This quickstart assumes you are already familiar with both catalogs and inventory items. The example player must already own the inventory items they wish to trade away.
 
-The first step is to call the OpenTrade API to make a trade available to another player. You will need a PlayfabID to identify the gift recipient and the Item InstanceID for the player who currently has the item in their Inventory.
+The first step is to call the `OpenTrade` API, to make a trade available to another player. You will need a `playfabId` to identify the gift recipient, and the `ItemInstanceID` for the player who currently has the item in their Inventory.
   
 `secondPlayerId`: This is the unique string that identifies the gift recipient (`PlayFabId`).
 
@@ -38,10 +38,10 @@ In this snip the `LogSuccess` callback must also evaluate `result.Trade.TradeId`
 > [!NOTE]
 > In the current preview you need to ensure that your trades are thread-safe from concurrent actions. Thread-safe options include custom game servers and Webhook calls via CloudScript to an external database/system. Thread-Unsafe options can be built with CloudScript which directly modifies a Player Data Key. The latter option has concurrency issues where simultaneous trade-list-updates may not process correctly.
 
-Once the first player has created the trade, and transferred their `PlayFabId` and the `tradeId` to the second player, the second player can examine the trade requirements (verifying it is a gift) by making a `GetTradeStatus` request.
+Once the first player has created the trade, and transferred their `playFabId` and the `tradeId` to the second player, the second player can examine the trade requirements (verifying it is a gift) by making a `GetTradeStatus` request.
 
 > [!NOTE]
-> The most relevant `TradeStatus` values are **Open**, **Filled**, and **Canceled**. All other states are intermediate states. Trades may stay in those intermediate states for a noticeable period of time between calls. A recently-modified trade may not be available immediately.
+> The most relevant **TradeStatus** values are **Open**, **Filled**, and **Canceled**. All other states are intermediate states. Trades may stay in those intermediate states for a noticeable period of time between calls. A recently-modified trade may not be available immediately.
 
 ```csharp
 void ExamineTrade(string firstPlayFabId, string tradeId) {
