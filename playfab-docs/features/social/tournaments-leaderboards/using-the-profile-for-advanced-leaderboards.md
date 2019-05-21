@@ -19,9 +19,9 @@ With PlayFab, you usually construct leaderboards using the following API methods
 - [**GetLeaderboard**](xref:titleid.playfabapi.com.client.playerdatamanagement.getleaderboard)
 - [**GetLeaderboardAroundPlayer**](xref:titleid.playfabapi.com.client.playerdatamanagement.getleaderboardaroundplayer)
 
-The result is a list of [**PlayerLeaderboardEntry**](xref:titleid.playfabapi.com.client.playerdatamanagement.getleaderboard#playerleaderboardentry) objects that contain only basic information about the player and their relation to the current leaderboard.
+The result is a list of [**PlayerLeaderboardEntry**](xref:titleid.playfabapi.com.client.playerdatamanagement.getleaderboard#playerleaderboardentry) objects that contain only basic information about the player, and their relation to the current leaderboard.
 
-However, PlayFab also allows you to use [**PlayerProfileViewConstraints**](xref:titleid.playfabapi.com.server.accountmanagement.getplayerprofile#playerprofileviewconstraints) to gain additional information about each player.
+However, PlayFab also allows you to use [**PlayerProfileViewConstraints**](xref:titleid.playfabapi.com.server.accountmanagement.getplayerprofile#playerprofileviewconstraints), to gain additional information about each player.
 
 > [!NOTE]
 > This example assumes you already have some leaderboard data to play with. Please refer to our [Accessing Archived Tournament Results](accessing-archived-tournament-results.md) tutorial, for a method to generate some test data.
@@ -32,16 +32,17 @@ By default, the Client API may only fetch the display name from another player p
 
 Navigate to your title Game Manager:
 
-- Select **Settings** in the menu to the left **(1)**.
-- Then select the **Client Profile Options** tab **(2)**.
-- Make sure the **DisplayName (3)** and **Avatar URL (4)** properties are selected.
-- Submit your changes by selecting the **Save Client Profile Options** button **(5)**.
+1. Select **Settings** in the menu to the left.
+2. Then select the **Client Profile Options** tab.
+3. Verify that the **DisplayName** is selected.
+4. Make sure that the **Avatar URL** is selected.
+5. Submit your changes by selecting the **Save Client Profile Options** button.
 
 ![Game Manager - Settings - Client Profile Options](media/tutorials/game-manager-settings-client-profile-options.png)  
 
 ## Testing
 
-The previous step allows client code to use **DisplayName** and **AvatarUrl Profile** constraints.
+The previous step allows client code to use `DisplayName` and `AvatarUrl` profile constraints.
 
 The following sample shows how to fetch and print a leaderboard using any mentioned Profile data. Please refer to the code comments for further information.
 
@@ -85,7 +86,7 @@ private static async Task DoReadLeaderboard()
 ```
 
 > [!NOTE]
-> The individual Profile fields are *only* available if the client explicitly asks for them using Profile Constraints. Also be aware that if certain profile constraint are *not* allowed in the Game Manager and your client requests them, the API call will fail with a corresponding error. The result will look similar to the example provided below.
+> The individual Profile fields are *only* available if the client explicitly asks for them using Profile Constraints. Also be aware that if certain profile constraint are *not* allowed in the Game Manager - and your client requests them - the API call will fail with a corresponding error. The result will look similar to the example provided below.
 
 ![Output - Display Leaderboard](media/tutorials/output-display-leaderboard.png)  
 
