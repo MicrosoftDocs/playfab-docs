@@ -21,22 +21,22 @@ The PlayFab client API allows players to trade items with one another. These API
 
 **Catalog** - Catalogs offer an easy way to manage your game's virtual items. They are listings of every item that is available in your game.
 
-**Catalog Items** – PlayFab Items can represent just about any type of virtual good that you might use, from durables, to bundles to locked containers.
+**Catalog Items** – PlayFab Items can represent just about any type of virtual goods that you might use - from durables, to bundles to locked containers.
 
-**Inventory** - All accounts (player accounts and character accounts) have an inventory. The inventory contains all owned item instances as well as item history.
+**Inventory** - All accounts (player accounts and character accounts) have an inventory. The inventory contains all owned item instances, as well as item history.
 
-**Virtual Currency** - PlayFab offers up to 10 virtual currencies per title. Currencies can be used to purchase items from a catalog or store, can represent soft currency converted from in-app purchases, or can be used as a mechanic to drive gameplay.
+**Virtual Currency** - PlayFab offers up to 10 virtual currencies per title. Currencies can be used to purchase items from a catalog or store, can represent soft currency converted from in-app purchases, or they can be used as a mechanic to drive gameplay.
 
 ## Prerequisites
 
-Trading requires familiarity with both Catalogs and Inventory Items. Players must own Inventory Items they wish to trade.
+Trading requires familiarity with both catalog and inventory items. Players must own inventory items they wish to trade.
 
 ## APIs
 
 Trading flow is handled by a handful of APIs:
 
 [OpenTrade](xref:titleid.playfabapi.com.client.trading.opentrade)  
-Opens a new outstanding trade. This can between two specific players (PlayfabIDs) or with one player opening a trade open to anyone. Note that any one given item instance may only be in one open trade at a time.
+Opens a new outstanding trade. This can between two specific players (PlayfabIDs) or with one player opening a trade open to anyone. Understand that any single given item instance may only be in one open trade at a time.
 
 [GetTradeStatus](xref:titleid.playfabapi.com.client.trading.gettradestatus)  
 Allows a client to evaluate a given trade by getting its current status.

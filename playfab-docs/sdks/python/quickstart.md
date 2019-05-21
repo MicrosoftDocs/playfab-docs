@@ -1,9 +1,9 @@
 ---
 title: Python quickstart
-author: v-thopra
+author: v-kciril
 description: This guide will help you make your first PlayFab API call in Python 3.
-ms.author: v-thopra
-ms.date: 06/11/2018
+ms.author: v-kciril
+ms.date: 04/20/2019
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, python 3, python sdk
@@ -12,41 +12,48 @@ ms.localizationpriority: medium
 
 # Python quickstart
 
-This quickstart was designed to assist you in making your first API call in Python 3. A native Python project can be used a few ways:
+This quickstart is designed to help you make your first API call in Python 3. 
 
-- Stand-alone console Admin tools for maintaining your game.
-  - The Python Sdk works great for a stand-alone Python program.
+Before continuing, make sure you have completed [Getting started for developers](../../personas/developer.md) which ensures you have a PlayFab account and are familiar with the PlayFab Game Manager.
+
+A native Python project can be used a few ways:
+
+- As a stand-alone console Admin tool for maintaining your game.
+  - The Python SDK works great as a stand-alone Python program.
   
-- Integration into an existing Python based game engine.
+- Integration into an existing Python-based game engine.
   - See [list of game engines](https://wiki.python.org/moin/PythonGameLibraries)
 
 If you have any issues, let us know on the [Forums](https://community.playfab.com/index.html).
 
 > [!NOTE]
-> This beta release of the PythonSdk only supports synchronous API calls, and your game loop may become blocked performing PlayFab API calls. You may need to create your own async/threading model to avoid this problem.
+> This beta release of the Python SDK only supports synchronous API calls, and your game loop may become blocked performing PlayFab API calls. You may need to create your own async/threading model to avoid this problem.
+
+Before continuing, make sure you have completed [Getting started for developers](../../personas/developer.md) which ensures you have a PlayFab account and are familiar with the PlayFab Game Manager.
 
 ## Python project setup
 
-- Make sure [Python 3](https://www.python.org/downloads/) is installed on your system.
-- Install the [PlayFab Package](https://pypi.org/project/playfab/) using the command shown below.
+1. Make sure [Python 3](https://www.python.org/downloads/) is installed on your system.
+
+2. Install the [PlayFab Package](https://pypi.org/project/playfab/) using the command shown below.
 
 ```cmd
 pip install playfab
 ```
 
-- If `pip` is not in your path, use the command shown below instead.
+If `pip` is not in your path, use the command shown below instead.
 
 ```cmd
 python -m pip install playfab
 ```
 
-- Create a new python script in your desired directory called `playfab_test.py`.
+3. Create a new python script in your desired directory called `playfab_test.py`.
 
 ## Set up your first API call
 
-This guide will provide the minimum steps to make your first PlayFab API call, without any GUI or on-screen feedback. Confirmation will be done with a console print statement.
+This quickstart provides the minimum steps to make your first PlayFab API call without any GUI or on-screen feedback. Confirmation is accomplished with a console print statement.
 
-- Replace the contents of `playfab_test.py` with the contents shown below.
+To start, replace the contents of `playfab_test.py` with the contents shown below.
 
 ```python
 from playfab import PlayFabClientAPI, PlayFabSettings
@@ -72,21 +79,17 @@ PlayFabClientAPI.LoginWithCustomID(request, callback)
 
 ## Finish and execute
 
-- Run the Python script.
-  - From the command line, run the following command:
+Run the Python script using the following command:
 
 ```cmd
-python playfab_test.py
+       python playfab_test.py
 ```
 
-- When it finishes, you should see the following text:
-
-**Congratulations, you made your first successful API call!**
+When it finishes, you should see the following text: "Congratulations, you made your first successful API call!"
   
-- At this point, you can start making other API calls, and building your game.
-- For a list of all available client API calls, see our [PlayFab API References](../../api-references/index.md) documentation.
+At this point, you can start making other API calls, and building your game. For a list of all available client API calls, see our [PlayFab API References](../../api-references/index.md) documentation.
 
-- Happy coding!
+Happy coding!
 
 ## Deconstruct the code
 
