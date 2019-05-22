@@ -12,47 +12,41 @@ ms.localizationpriority: medium
 
 # Unity3D quickstart
 
-This guide will help you make your first PlayFab API call in the Unity3d engine.
+This guide helps you make your first PlayFab API call in the Unity3d engine. Before continuing, make sure you have completed [Getting started for developers](../../personas/developer.md) which ensures you have a PlayFab account and are familiar with the PlayFab Game Manager.
 
 ## OS
 
 This guide is written for Windows 10, however it should also work fine with a Mac.
 
-## Requirements
-
-Before continuing, make sure you have completed [Getting started for developers](../../personas/developer.md), which ensures you have a PlayFab account, and are familiar with the PlayFab Game Manager.
-
 ## Download Unity
 
 If you don't have Unity installed, then you will need to install it and create a project.
 
-- Download Unity3D.
-  - [Download Unity](https://store.unity.com/download).
-  - We support all recent versions of Unity, some features work better with 5.3 or higher.
-  - Unity requires a license. Pick personal or professional based on your preferences.
-  - Keep going until you can start a new project.
+1. [Download Unity3D](https://store.unity.com/download)  
+    We support all recent versions of Unity including 2019 versions. Most features work better with 5.3 or higher.
+
+2. Pick a personal or professional license based on your preferences.
+
+3. Keep going until you can start a new project.
 
 ![Create Unity project](media/unity-create-project.png)
 
-- Finish creating a new empty project with a name and location of your choice.
+4. Finish creating a new empty project with a name and location of your choice. 
 
 ## Download PlayFab SDK
 
 The best way to acquire our Unity SDK is via our editor extensions - although you can directly download the Unity 3D SDK from our github page. [PlayFab Unity3D SDK](https://api.playfab.com/downloads/unity-v2ap).
 
-- Download and Import the [PlayFab Unity Editor Extensions package](https://github.com/PlayFab/UnityEditorExtensions/raw/master/Packages/PlayFabEditorExtensions.unitypackage).
-  - To import the the Unity Editor Extensions package, navigate to where the file was downloaded, and double-click on the .UnityPackage file. This will bring up the following window.
+1. Download and Import the [PlayFab Unity Editor Extensions package](https://github.com/PlayFab/UnityEditorExtensions/raw/master/Packages/PlayFabEditorExtensions.unitypackage)
+
+2. To import the the Unity Editor Extensions package, navigate to where the file was downloaded and double-click on the .UnityPackage file. This will bring up the following window.
 
     ![Import Unity package](media/import-uedex.png)  
 
-  - Select **Import**, which will import the PlayFab Unity Editor Extensions into your project.
+3. Click Import, which will import the PlayFab Unity Editor Extensions into your project.
 
 > [!NOTE]
-> You can move the editor extensions anywhere you want, but you must retain the directory structure when doing so. If the extensions panel stops working, this is often the cause.
-
-### Log In
-
-- Before you can download the SDK, make sure you are logged into your PlayFab account. Select the **Log In** link to take you to the login pane, and log in with your PlayFab username and password.
+> Before you can download the SDK make sure you are logged into your PlayFab account. Click the "Log In" link to take you to the login pane, and log in with your PlayFab username and password.
 
     ![Log in to PlayFab](media/login-register-uedex.png)
 
@@ -84,8 +78,9 @@ Now that you have installed the SDK and set your Title Settings, you are ready t
 
 This part of the guide will provide the minimum steps to make your first PlayFab API call, without any GUI or on-screen feedback. Confirmation will be done with the Console log.
 
-- Find the Project panel.
-- Create a new C# script named `PlayFabLogin`.
+- Find the Project panel
+
+- Create a new C# script named "PlayFabLogin" 
 
 ![Create a new C# script](media/first-script.png)
 
@@ -134,7 +129,12 @@ public class PlayFabLogin : MonoBehaviour
 
 You are now ready to test out this sample.
 
+- Be sure to Save all files, and return to the Unity Editor
+
+- Press the Play button at the top of the editor   
+
 - Be sure to **Save** all files, and return to the Unity Editor.
+
 - Press the **Play** button at the top of the editor.
 
 Ideally, you should see the following in your Unity Console Panel.
