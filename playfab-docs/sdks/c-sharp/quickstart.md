@@ -12,11 +12,11 @@ ms.localizationpriority: medium
 
 # C# quickstart
 
-This guide will help you make your first PlayFab API call using CSharp (C#).
+This quickstart has been created to help you make your first PlayFab API call using CSharp (C#).
 
-Before continuing, make sure you have completed [Getting started for developers](../../personas/developer.md) which ensures you have a PlayFab account and are familiar with the PlayFab Game Manager.
+Before continuing, make sure you have completed [Getting started for developers](../../personas/developer.md), which ensures you have a PlayFab account and are familiar with the PlayFab Game Manager.
 
-## CSharp Getting Started Guide
+## CSharp Getting Started guide
 
 A native C# project can be used two ways:
 
@@ -42,11 +42,11 @@ Installation
 
   ![Install PlayFab SDK](media/csharp-new-project.png)
 
-3. Install nuget package for PlayFabAllSDK
+3. Install nuget package for **PlayFabAllSDK**.
 
   ![Install PlayFab SDK](media/csharp-nuget-add.png)
 
-At this point you should be able to successfully compile the project. The output window should contain something like this:
+At this point, you should be able to successfully compile the project. The output window should contain something like the following example.
 
 ```output
 1>------ Build started: Project: CSharpGettingStarted, Configuration: Debug Any CPU ------
@@ -58,9 +58,9 @@ Your PlayFab installation is complete!
 
 ## Set up your first API call
 
-This guide provides the minimum steps for you to make your first PlayFab API call. Confirmation is done via a console print.
+This guide provides the minimum steps required to make your first PlayFab API call. Confirmation is done via a console print.
 
-Your new project should contain a file called Program.cs, created automatically by Visual Studio. Open that file, and replace the contents with the code in the example below (after pasting the code, you may need to refresh the file to see it). Confirmation of the API call will be done using messages written to the console output.
+Your new project should contain a file called Program.cs, which was created automatically by Visual Studio. Open that file, and replace the contents with the code in the example shown below (after pasting the code, you may need to refresh the file to see it). Confirmation of the API call will be done using messages written to the console output.
 
 ```csharp
 using System;
@@ -122,9 +122,11 @@ public static class Program
 
 When you execute this program, you should get the following console output:  "Congratulations, you made your first successful API call! Done! Press any key to close."
 
-At this point, you can start making other api calls, and building your game.
+- At this point, you can start making other API calls, and building your game.
 
-To build Admin utilities, see the alternate source files in the PlayFab CSharpSdk zip file: {CSharpSdk}/PlayFabClientSDK/source. For a list of all available client API calls, or many other topics, see our [PlayFab API References](../../api-references/index.md) documentation.
+- To build Admin utilities, see the alternate source files in the [PlayFab CSharpSdk zip file]({CSharpSdk}/PlayFabClientSDK/).
+
+For a list of all available client API calls, or many other topics, see our [PlayFab API References](../../api-references/index.md) documentation.
 
 Happy coding!
 
@@ -145,7 +147,7 @@ This optional last section describes each part of Program.cs in detail.
 - `var request = new LoginWithCustomIDRequest { CustomId = "GettingStartedGuide", CreateAccount = true };`
   - Most PlayFab API methods require input parameters, and those input parameters are packed into a request object.
   - Every API method requires a unique request object, with a mix of optional and mandatory parameters
-    - For `LoginWithCustomIDRequest`, there is a mandatory parameter of CustomId, which uniquely identifies a player and CreateAccount, which allows the creation of a new account with this call.
+    - For `LoginWithCustomIDRequest`, there is a mandatory parameter of `CustomId`, which uniquely identifies a player and `CreateAccount`, which allows the creation of a new account with this call.
   - For login, most developers will want to use a more appropriate login method.
     - See the [PlayFab Login documentation](xref:titleid.playfabapi.com.client.authentication) for a list of all login methods, and input parameters. Common choices are:
       - [LoginWithAndroidDeviceID](xref:titleid.playfabapi.com.client.authentication.loginwithandroiddeviceid)
@@ -166,7 +168,7 @@ This optional last section describes each part of Program.cs in detail.
   - If not-null, the apiResult object for LoginResult contains some basic information about the player, but typically, login is simply a mandatory step before calling other APIs.
 
 - `var apiError = taskResult.Result.Error;`
-  - If apiError is not null, your API has failed.
+  - If `apiError` is not `null`, your API has failed.
   - API calls can fail for many reasons, and you should always attempt to handle failure.
   - Why API calls fail (In order of likelihood).
     - PlayFabSettings.TitleId is not set. If you forget to set titleId to your title, then nothing will work.

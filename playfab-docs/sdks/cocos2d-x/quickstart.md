@@ -12,13 +12,15 @@ ms.localizationpriority: medium
 
 # Cocos2D-x quickstart
 
-This guide will help you make your first PlayFab API call in the Cocos2d-x engine.
+This quickstart will assist you in making your first PlayFab API call in the Cocos2d-x engine.
 
-Before continuing, make sure you have completed [Getting started for developers](../../personas/developer.md) which ensures you have a PlayFab account and are familiar with the PlayFab Game Manager.
+Before continuing, be certain you have completed [Getting started for developers](../../personas/developer.md) which ensures you have a PlayFab account, and are familiar with the PlayFab Game Manager.
 
-## Cocos2d-x Project Setup 
+## Cocos2d-x project setup
 
-OS: This guide is written for Windows 10, using Visual Studio 2015. Cocos works on most modern OSs and environments. The installation instructions are similar, but different for each combination. If you are building for other platforms, the files you need are the same, but you will need to do the project-setup yourself. Visual Studio 2013 will have identical steps, but the screenshots will look a little different from yours.
+OS: This guide is written for Windows 10, using Visual Studio 2015. Cocos works on most modern OSs and environments. The installation instructions are similar, but different for each combination.
+
+If you are building for other platforms, the files you need are the same, but you will need to do the project setup yourself. Visual Studio 2013 will have identical steps, but the screenshots provided here will look a bit different from yours.
 
 1. Download and install Cocos2d-x
     - [https://www.cocos2d-x.org/download](https://www.cocos2d-x.org/download)
@@ -31,16 +33,17 @@ OS: This guide is written for Windows 10, using Visual Studio 2015. Cocos works 
 2. Once you have Cocos2d-x configured, create a project using the Cocos CLI:
     - Navigate to a location where you wish to store your Cocos project
     - Open a command window in your parent folder (Cocos CLI will create the actual project directory)
-      - Hold down **Shift** and right-click in the empty-white-space of the Explorer window.
+      - Hold down your **Shift** key, and right-click in the empty white space of the Explorer window.
 
         ![Install PlayFab SDK](media/cmd-exe2.png)
 
     - In the new console window enter this command:
       - `cocos new CocosGettingStarted -l cpp`
-        - Make sure your target sub-directory (**CocosGettingStarted**) does not already exist - This command will fail if the folder exists.
-        - If you get a message about "'cocos' is not recognized as an internal or external command" you have not configured the cocos installation correctly (Go back to the Cocos windows installation guide).
+        - Make sure your target sub-directory (**CocosGettingStarted**) does not already exist - This command will fail if the folder already exists.
+        - If you get a message that "'cocos' is not recognized as an internal or external command", you have not configured the cocos installation correctly (Go back to the Cocos windows installation guide).
         - If successful, there will be a new folder **CocosGettingStarted**. This guide will refer to that directory location as `{CocosGettingStarted}`.
-        - Successful output looks like the example provided below.
+
+    - Successful output should appear similar to the example provided below.
 
 ```output
 > Copy template into C:\dev\CocosGettingStarted
@@ -51,19 +54,20 @@ OS: This guide is written for Windows 10, using Visual Studio 2015. Cocos works 
 > Replace the Mac bundle id from 'org.cocos2dx.hellocpp' to 'org.cocos2dx.CocosGettingStarted'
 > Replace the iOS bundle id from 'org.cocos2dx.hellocpp' to 'org.cocos2dx.CocosGettingStarted'
 ```
+
 3. Download PlayFab Cocos2d-xSdk: [Cocos2D-x SDK (C++)](https://api.playfab.com/downloads/cocos-2d-sdk). Save and extract it to a temporary location {PlayFabCocos}
     - Open the following folder in Windows Explorer: {PlayFabCocos}/PlayFabClientSDK
     - Open the following folder in a second Windows Explorer: {CocosGettingStarted}/Classes
 
 4. Copy paste all files from {PlayFabCocos}/PlayFabClientSDK to {CocosGettingStarted}/Classes
 
-5. In Visual Studio, Load {CocosGettingStarted}/proj.win32/CocosGettingStarted.sln
-6. We want to add the PlayFab files to the Cocos project
+5. In Visual Studio, Load `{CocosGettingStarted}/proj.win32/CocosGettingStarted.sln`.
+6. We want to add the PlayFab files to the Cocos project.
 7. In Visual Studio, Solution Explorer panel, expand to the folder: Solution/CocosGettingStarted/src
 8. Open a Windows Explorer window at {CocosGettingStarted}/Classes
-    
+
     - Select all files in {CocosGettingStarted}/Classes, EXCEPT AppDelegate.h, AppDelegate.cpp, HelloWorldScene.h, HelloWorldScene.cpp
-    
+
     - Drag and drop all of those files from Explorer, onto the Visual Studio Solution/CocosGettingStarted/src folder we found above  
 **Note**: If you experience problems, you can drag and drop each file one at a time, just be careful and get all of them
 
@@ -72,14 +76,15 @@ OS: This guide is written for Windows 10, using Visual Studio 2015. Cocos works 
         ![Install PlayFab SDK](media/sln-src.png)
 
 PlayFab uses several Cocos libraries that have to be manually added to the dependencies list.
+
   - Open the **Properties** window for your CocosGettingStarted project (as shown below).
 
     ![Install PlayFab SDK](media/cocos-include.png)
 
   - Replace the Additional Include Directories with this:
-    
-      $(ProjectDir)..\cocos2d\external\zlib\include;$(ProjectDir)..\cocos2d\external\curl\include\win32;$(EngineRoot)cocos\audio\include;$(EngineRoot)external;$(EngineRoot)external\chipmunk\include\chipmunk;$(EngineRoot)extensions;..\Classes;..;%(AdditionalIncludeDirectories);$(_COCOS_HEADER_WIN32_BEGIN);$(_COCOS_HEADER_WIN32_END);..\cocos2d
-    
+
+      `$(ProjectDir)..\cocos2d\external\zlib\include;$(ProjectDir)..\cocos2d\external\curl\include\win32;$(EngineRoot)cocos\audio\include;$(EngineRoot)external;$(EngineRoot)external\chipmunk\include\chipmunk;$(EngineRoot)extensions;..\Classes;..;%(AdditionalIncludeDirectories);$(_COCOS_HEADER_WIN32_BEGIN);$(_COCOS_HEADER_WIN32_END);..\cocos2d`
+
 > [!NOTE]
 We are adding curl and zlib, which are libraries that come with Cocos, but are not enabled by default.
 
@@ -87,13 +92,12 @@ Your CocosGettingStarted project should now compile (and even run), but we are n
 
 Installation complete!
 
-## Set up your first API call 
+## Set up your first API call
   
 This guide provides the minimum steps to make your first PlayFab API call. Confirmation is visible in the app.
 
 1. In Visual Studio, inside of the Solution/CocosGettingStarted/src folder, Open HelloWorldScene.h and replace the contents with this:
-
-- In Visual Studio, inside of the **Solution/CocosGettingStarted/src** folder, Open `HelloWorldScene.h` and replace the contents with those shown below.
+    - In Visual Studio, inside of the **Solution/CocosGettingStarted/src** folder, Open `HelloWorldScene.h` and replace the contents with those shown below.
 
 ```cpp
 #ifndef __HELLOWORLD_SCENE_H__
@@ -121,7 +125,7 @@ public:
 #endif // __HELLOWORLD_SCENE_H__
 ```
 
-2. Immediately next to that, open HelloWorldScene.cpp and replace the contents with this:
+2. Immediately next to that, open `HelloWorldScene.cpp`, and replace the contents with this:
 
 ```cpp
 #include "HelloWorldScene.h"
@@ -206,11 +210,13 @@ These files take the existing HelloWorldScene that is part of the new-Cocos-proj
 ## Finish and execute
 
 1. Build and Execute your Cocos Project: Dropdowns -> Debug -> Start Debugging.
-2. This may prompt you to build. Click **Yes**.
+2. This may prompt you to build. Select **Yes**.
 
-2. You should see a screen that says: Congratulations, you made your first successful API call!
+3. You should see a screen that says:
 
-3. Now, you can start making other api calls, and building your game.  
+    **Congratulations, you made your first successful API call!**
+
+4. Now, you can start making other api calls, and building your game.  
 For a list of all available client API calls, see our [PlayFab API References](../../api-references/index.md) documentation.
   
 Happy coding!
@@ -237,9 +243,9 @@ This optional last section describes each part of source code above, in detail.
         - For `LoginWithCustomIDRequest`, there is a mandatory parameter of `CustomId`, which uniquely identifies a player and `CreateAccount`, which allows the creation of a new account with this call.
       - For login, most developers will want to use a more appropriate login method.
         - See the PlayFab Login documentation for a list of all login methods, and input parameters. Common choices are:
-          - LoginWithAndroidDeviceID
-          - LoginWithIOSDeviceID
-          - LoginWithEmailAddress
+          - `LoginWithAndroidDeviceID`
+          - `LoginWithIOSDeviceID`
+          - `LoginWithEmailAddress`
 
     - `PlayFab::PlayFabClientAPI::LoginWithCustomID(request, OnLoginSuccess, OnLoginFail, nullptr);`
       - This begins the async request to `LoginWithCustomID`, and will invoke the `OnLoginSuccess` or `OnLoginFail` function when complete.
