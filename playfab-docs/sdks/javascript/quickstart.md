@@ -12,24 +12,24 @@ ms.localizationpriority: medium
 
 # JavaScript quickstart for Native and Phaser
 
-This guide will help you make your first API call in JavaScript.
+This guide helps you make your first API call in JavaScript.
 
-## JavaScript Project Setup
+Before continuing, make sure you have completed [Getting started for developers](../../personas/developer.md) which ensures you have a PlayFab account and are familiar with the PlayFab Game Manager.
 
-- OS: This guide should work in any OS capable of running a web-browser
-- Installation
-  - You are probably already reading this page on your favorite browser
+## JavaScript project setup
 
-- New Project Setup
-  - Create a new folder, with two empty text files:
-    - PlayFabGettingStarted.html
+OS: This guide should work in any OS capable of running a web browser, and you are probably already reading this page on your favorite browser.
+
+To set up a new project, create a new folder with two empty text files:  
+
+    - PlayFabGettingStarted.html  
     - PlayFabGettingStarted.js
 
-- PlayFab installation complete
+That's it - PlayFab installation complete!
 
 ## Set up your first API call
 
-This guide will provide the minimum steps to make your first PlayFab API call. Confirmation will be visible on the webpage.
+This guide provides the minimum steps to make your first PlayFab API call. Confirmation is visible on the webpage.
 
 In your favorite text-editor, update the contents of PlayFabGettingStarted.html as follows:
 
@@ -83,18 +83,17 @@ var LoginCallback = function (result, error) {
 }
 ```
 
-## Finish and Execute
+## Finish and execute
 
-- Open PlayFabGettingStarted.html in your favorite browser
-- Click the "Call LoginWithCustomID" button
-- You should see the following text in the Result section:
+1. Open PlayFabGettingStarted.html in your favorite browser.
+2. Click the **Call LoginWithCustomID** button.
+3. You should see the following text in the Result section:
 
-Congratulations, you made your first successful API call!
+"Congratulations, you made your first successful API call!" At this point, you can start making other api calls, and building your game.
 
-- At this point, you can start making other api calls, and building your game
-- For a list of all available client API calls, see our [PlayFab API References](../../api-references/index.md) documentation.
+For a list of all available client API calls, see our [PlayFab API References](../../api-references/index.md) documentation.
 
-- Happy coding!
+Happy coding!
 
 ## Deconstruct the code
 
