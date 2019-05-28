@@ -12,41 +12,41 @@ ms.localizationpriority: medium
 
 # Java quickstart for Native and Android Studio
 
-This tutorial gets you get up and running with the PlayFab JavaSDK and simple Java program. 
+This tutorial gets you get up and running with the PlayFab JavaSDK and simple Java program.
 
 Before continuing, make sure you have completed [Getting started for developers](../../personas/developer.md) which ensures you have a PlayFab account and are familiar with the PlayFab Game Manager.
 
 The goals for this tutorial are:  
 
-- Acquire necessary JAR files
+- Acquire necessary JAR files.
 
-- Add JAR files to the classpath
+- Add JAR files to the classpath.
 
-- Create minimal Java console application that executes [Custom ID Login API Call](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid)
+- Create minimal Java console application that executes [Custom ID Login API Call](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid).
 
 ## Acquire necessary JAR files
 
-In order to utilize the PlayFab JavaSDK we need the PlayFab Client JavaSDK and it's dependency, the Google GSON.
+In order to utilize the PlayFab JavaSDK, we need the PlayFab Client JavaSDK and its dependency, the Google GSON.
 
-Download the PlayFab Client JavaSDK JAR library [here](https://github.com/PlayFab/JavaSDK/tree/versioned/builds). Look for **client-sdk-*.jar** and the corresponding Java Doc [Optional but useful].
+Download the PlayFab Client JavaSDK JAR library [here](https://github.com/PlayFab/JavaSDK/tree/versioned/builds). Look for **client-sdk-*.jar**, and the corresponding Java Doc [Optional but useful].
 
 You may download latest Google GSON [here](https://repo1.maven.org/maven2/com/google/code/gson/gson/2.8.0/). Look for **gson-*.jar**.
 
 ## Project Setup with Intellij Idea
 
-Once you have initialized a simple Intellij Idea Java Project, make sure to place the necessary JAR files as shown below:
+Once you have initialized a simple Intellij Idea Java Project, make sure to place the necessary JAR files as shown in the following example.
 
 ![Install PlayFab SDK](media/intellij-proj-setup.png)
 
-The next step is adding JAR files to the classpath. Navigate to File -> Project Structure as shown in the following:
+The next step is adding JAR files to the classpath. Navigate to **File** -> **,** as shown in the example below.
 
 ![Install PlayFab SDK](media/intellij-add-jar-files-to-classpath.png)
 
-Navigate to *Libraries* and add a new Java library as illustrated in the image below:
+Navigate to **Libraries**, and add a new Java library as illustrated in the image provided below.
 
 ![Install PlayFab SDK](media/intellij-add-new-java-library.png)
 
-Select the JAR files you added to the libs folder, then select OK as shown below:
+Select the JAR files you added to the libs folder, then select **OK** as shown below.
 
 ![Install PlayFab SDK](media/intellij-select-jar-files.png)
 
@@ -60,7 +60,7 @@ The main requirement is to have JAR files added to the classpath. Please consult
 
 ## Set up your first API call
 
-Use the following code as your main class code:
+Use the code shown below as your main class code.
 
 ```java
 import java.util.concurrent.*;
@@ -137,11 +137,14 @@ public class Main
 
 ## Finish and Execute
 
-To run the application, select the **play arrow >** in the top right corner **(1)**. This will start program execution, and output panel will appear. Locate the **debug message** **(2)**. This indicates that API call was successful.
+To run the application:
+
+1. Select the **play arrow >** in the top right corner. This will start program execution, and output panel will appear.
+2. Locate the **debug message**. This indicates that API call was successful.
 
 ![Install PlayFab SDK](media/intellij-run-program.png)
 
-At this point, you can start making other API calls, and building your game. For a list of all available client API calls, see our [PlayFab API References](../../api-references/index.md) documentation.
+At this point, you can start making other API calls and building your game. For a list of all available client API calls, see our [PlayFab API References](../../api-references/index.md) documentation.
 
 ## Deconstruct the code
 
