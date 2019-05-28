@@ -22,8 +22,8 @@ OS: This guide should work in any OS capable of running a web browser, and you a
 
 To set up a new project, create a new folder with two empty text files:  
 
-    - PlayFabGettingStarted.html  
-    - PlayFabGettingStarted.js
+    - `PlayFabGettingStarted.html`  
+    - `PlayFabGettingStarted.js`
 
 That's it - PlayFab installation complete!
 
@@ -31,7 +31,7 @@ That's it - PlayFab installation complete!
 
 This guide provides the minimum steps to make your first PlayFab API call. Confirmation is visible on the webpage.
 
-In your favorite text-editor, update the contents of PlayFabGettingStarted.html as shown below.
+In your favorite text-editor, update the contents of `PlayFabGettingStarted.html` as follows:
 
 ```html
 <!DOCTYPE html>
@@ -53,7 +53,7 @@ In your favorite text-editor, update the contents of PlayFabGettingStarted.html 
 </html>
 ```
 
-In your favorite text-editor, update the contents of PlayFabGettingStarted.html as shown below.
+In your favorite text-editor, update the contents of `PlayFabGettingStarted.html` as follows:
 
 > [!NOTE]
 > To look up the correct format for the loginRequest object in this example, see the API reference for [LoginWithCustomID](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid).
@@ -85,7 +85,7 @@ var LoginCallback = function (result, error) {
 
 ## Finish and execute
 
-1. Open PlayFabGettingStarted.html in your favorite browser.
+1. Open `PlayFabGettingStarted.html` in your favorite browser.
 2. Click the **Call LoginWithCustomID** button.
 3. You should see the following text in the Result section:
 "Congratulations, you made your first successful API call!"
@@ -120,7 +120,7 @@ As you can see above, `PlayFabGettingStarted.js` contains the `DoExampleLoginWit
   - `PlayFab.settings.titleId = "xxxx";`
     - Every PlayFab developer creates a title in Game Manager. When you publish your game, you must code that titleId into your game. This lets the client know how to access the correct data within PlayFab. For most users, just consider it a mandatory step that makes PlayFab work.
 
-  - `var loginRequest = { TitleId: PlayFab.settings.titleId`, `CustomId: "GettingStartedGuide", CreateAccount: true };`
+  - `var loginRequest = { TitleId: PlayFab.settings.titleId, CustomId: "GettingStartedGuide", CreateAccount: true };`
     - Most PlayFab API methods require input parameters, and those input parameters are packed into a request object
     - Every API method requires a unique request object, with a mix of optional and mandatory parameters
       - For `LoginWithCustomIDRequest`, there is a mandatory parameter of `CustomId`, which uniquely identifies a player and `CreateAccount`, which allows the creation of a new account with this call. `TitleId` is another mandatory parameter in JavaScript, and it must match `PlayFab.settings.titleId`.
@@ -133,17 +133,17 @@ As you can see above, `PlayFabGettingStarted.js` contains the `DoExampleLoginWit
         - [LoginWithIOSDeviceID](xref:titleid.playfabapi.com.client.authentication.loginwithiosdeviceid)
         - [LoginWithEmailAddress](xref:titleid.playfabapi.com.client.authentication.loginwithemailaddress)
 
-  - `LoginCallback` contains two parameters: `result` and `error`.
-    - When successful, `error` will be `null`, and the `result` object will contain the requested information, according to the API called.
-      - This `result` contains some basic information about the player, but for most users, login is simply a mandatory step before calling other APIs.
+  - `LoginCallback` contains two parameters: result, error
+    - When successful, error will be null, and the result object will contain the requested information, according to the API called.
+      - This result contains some basic information about the player, but for most users, login is simply a mandatory step before calling other APIs.
 
     - If error is not `null`, your API has failed.
       - API calls can fail for many reasons, and you should always attempt to handle failure.
-      - Why API calls fail (In order of likelihood):
+      - Why API calls fail (In order of likelihood)
         - PlayFabSettings.TitleId is not set. If you forget to set titleId to your title, then nothing will work.
-        - Request parameters. If you have not provided the correct or required information for a particular API call, then it will fail. See `error.errorMessage`, `error.errorDetails`, or `error.GenerateErrorReport()` for more info.
+        - Request parameters. If you have not provided the correct or required information for a particular API call, then it will fail. See `error.errorMessage, error.errorDetails`, or `error.GenerateErrorReport()` for more info.
         - Device connectivity issue. Cell-phones lose/regain connectivity constantly, and so any API call at any time can fail randomly, and then work immediately after. Going into a tunnel can disconnect you completely.
         - PlayFab server issue. As with all software, there can be issues. See our [release notes](../../release-notes/index.md) for updates.
         - The internet is not 100% reliable. Sometimes the message is corrupted or fails to reach the PlayFab server.
 
-    - If you are having difficulty debugging an issue, and the information within the error information is not sufficient, please visit us on our [forums](https://community.playfab.com/index.html)
+    - If you are having difficulty debugging an issue, and the information within the error information is not sufficient, please visit us on our [forums](https://community.playfab.com/index.html).

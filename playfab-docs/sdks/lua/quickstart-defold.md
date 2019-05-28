@@ -12,31 +12,33 @@ ms.localizationpriority: medium
 
 # Lua quickstart for Defold
 
-This guide will help you make your first PlayFab API call using Defold.
+This guide has been created to assist you in making your first PlayFab API call using Defold.
 
-Before continuing, make sure you have completed [Getting started for developers](../../personas/developer.md), which ensures you have a PlayFab account and are familiar with the PlayFab Game Manager.
+Before continuing, be sure you have completed [Getting started for developers](../../personas/developer.md), which ensures you have a PlayFab account and are familiar with the PlayFab Game Manager.
 
 ## Defold project setup
 
-OS: This guide is written for Windows 10, however it should also work well with a Mac.
+OS: This guide is written for Windows 10.  It should also work well with a Mac.
 
 1. Create an account and download defold, or log in at [https://www.defold.com/](https://www.defold.com/) (Uses Google O-Auth): [https://d.defold.com/stable/](https://d.defold.com/stable/).
 
 2. If you have not completed the Defold "Getting Started Tutorial", you should do that now.
 
-3. Create a new project on the Defold Dashboard:
+3. Create a new project on the Defold Dashboard, as shown below.
 
 ![Create new Defold project](media/defold-add-project.png)
 
-4. Run Defold, and load your new project. You should see several windows that look something like the following examples.
+4. Run **Defold**, and load your new project. You should see several windows that look something like the example shown below.
 
 ![Defold dashboard](media/defold-dashboard.png)
 
-5. Update the Project Settings, and include PlayFab in the dependencies: [https://github.com/PlayFab/LuaSdk/raw/master/Defold/PlayFabClientSdk.zip](https://github.com/PlayFab/LuaSdk/raw/master/Defold/PlayFabClientSdk.zip)
+5. Update the Project Settings, and include PlayFab in the dependencies:
+
+    [https://github.com/PlayFab/LuaSdk/raw/master/Defold/PlayFabClientSdk.zip](https://github.com/PlayFab/LuaSdk/raw/master/Defold/PlayFabClientSdk.zip)
 
 ![Add PlayFab to dependencies](media/defold-dependency-1.png)
 
-6. Select: **Project** -> **Fetch Libraries**, and you should see a new built-in "PlayFab" folder:
+6. Select: **Project** -> **Fetch Libraries**, and you should see a new built-in PlayFab folder, as shown below.
 
 ![Project fetch libraries](media/defold-dependency-2.png)
 
@@ -63,17 +65,17 @@ OS: This guide is written for Windows 10, however it should also work well with 
 
       ![Main Outline panel](media/defold-main-outline.png)
 
-The PlayFab installation is complete. However, this project isn't quite ready to build yet, but we'll fix that in the next step.
+The PlayFab installation is complete. This project isn't ready to build yet, but we'll fix that in the next step.
 
 ## Set up your first API call
 
 This guide will provide the minimum steps make your first PlayFab API call. Confirmation will be visible in the game window.
 
-1. In the **Defold** editor, double-click **PfGettingStarted.gui_script**.
+1. In the Defold editor, double-click **PfGettingStarted.gui_script**.
 
 2. This should open the file for text editing.
 
-3. Update the contents of `PfGettingStarted.gui_script` as shown below.
+3. Update the contents of PfGettingStarted.gui_script as shown below.
 
 > [!NOTE]
 > To look up the correct format for the loginRequest object in this example, see the API reference for [LoginWithCustomID](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid).
@@ -116,7 +118,7 @@ end
 
     - Select the text-edit tab for **PfGettingStarted.gui**.  
 
-    - Update the text contents of `PfGettingStarted.gui` as shown below.
+    - Update the text contents of PfGettingStarted.gui as shown below.
 
 ```gui_script
 script: "/main/PfGettingStarted.gui_script"
@@ -203,13 +205,11 @@ max_nodes: 512
 
 ## Finish and execute
 
-First, make sure everything is saved, and then select another tab. Look for " * " markers - sometimes Defold doesn't refresh.
+First, make sure everything is saved and select another tab.  Then look for " * " markers - sometimes Defold doesn't refresh.
 
 Then, build your game (Ctrl+b or dropdowns: **Project** -> **Build and Launch**). You should see the following text on your screen:
 
 "Congratulations, you made your first successful API call!"
-
-At this point, you can start making other API calls, and finish building your game.
 
 For a list of all available client API calls, see our [PlayFab API References](../../api-references/index.md) documentation.
 
@@ -225,7 +225,7 @@ Happy coding!
 - `PfGettingStarted.gui_script`
   - Require statements and setup.
     - `PlayFabClientApi` allows you to make Client API calls - This is why you're here.
-    - `IPlayFabHttps` and `PlayFabHttps_Defold`:
+    - IPlayFabHttps and PlayFabHttps_Defold:
       - The PlayFab Defold plugins are built on the PlayFab LuaSdk. The Lua language does not have a proper HTTPS module. Each game-engine that uses Lua implements their own. These two variables tell PlayFabSdk how to access HTTPS. You only need to do this once in your project, in the first scene. Otherwise it's just required boilerplate
 
   - `PlayFabClientApi.settings.titleId = "144"`
@@ -253,8 +253,9 @@ Happy coding!
 
   - `function OnLoginFailed(error)`
     - API calls can fail for many reasons, and you should always attempt to handle failure.
-    - Why API calls fail (In order of likelihood):
-      - `PlayFabSettings.TitleId` is not set. If you forget to set `titleId` to your title, then nothing will work.
+    - Why API calls fail (In order of likelihood)
+      - PlayFabSettings.TitleId is not set. If you forget to set titleId to your title, then nothing will work.
+
       - Request parameters. If you have not provided the correct or required information for a particular API call, then it will fail. See `error.errorMessage`, `error.errorDetails`, or `error.GenerateErrorReport()` for more info.
       - Device connectivity issue. Cell-phones lose/regain connectivity constantly, and so any API call at any time can fail randomly, and then work immediately after. Going into a tunnel can disconnect you completely.
       - PlayFab server issue. As with all software, there can be issues. See our [release notes](../../release-notes/index.md) for updates.

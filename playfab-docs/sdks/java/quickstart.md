@@ -144,7 +144,9 @@ To run the application:
 
 ![Install PlayFab SDK](media/intellij-run-program.png)
 
-At this point, you can start making other API calls and building your game. For a list of all available client API calls, see our [PlayFab API References](../../api-references/index.md) documentation.
+At this point, you can start making other API calls, and building your game.
+
+For a list of all available client API calls, see our [PlayFab API References](../../api-references/index.md) documentation.
 
 ## Deconstruct the code
 
@@ -164,10 +166,10 @@ This optional last section describes every line in `GettingStarted.java` in deta
       - For `LoginWithCustomIDRequest`, there is a mandatory parameter of `CustomId`, which uniquely identifies a player and `CreateAccount`, which allows the creation of a new account with this call.
 
     - For login, most developers will want to use a more appropriate login method.
-      - See the PlayFab Login Documentation for a list of all login methods, and input parameters. Common choices are:
-        - LoginWithAndroidDeviceID
-        - LoginWithIOSDeviceID
-        - LoginWithEmailAddress
+      - See the PlayFab Login documentation for a list of all login methods, and input parameters. Common choices are:
+        - `LoginWithAndroidDeviceID`
+        - `LoginWithIOSDeviceID`
+        - `LoginWithEmailAddress`
 
   - `FutureTask<PlayFabResult<com.playfab.PlayFabClientModels.LoginResult>> loginTask = PlayFabClientAPI.LoginWithCustomIDAsync(request)`;
     - This begins the async request to `LoginWithCustomID`, using the Java FutureTask framework.
@@ -182,11 +184,12 @@ This optional last section describes every line in `GettingStarted.java` in deta
 
   - if (`result.Result != null`), then the API call was successful.
     - When successful, the `result.Result` object of many API callbacks will contain the requested information.
+
     - `LoginResult` specifically contains some basic information about the player.  But for most users, login is simply a mandatory step before calling other APIs.
   - If (`result.Error != null`), the API call has failed.
     - API calls can fail for many reasons, and you should always attempt to handle failure.
     - Why API calls fail (In order of likelihood)
-      - `PlayFabSettings.TitleId` is not set. If you forget to set titleId to your title, then nothing will work.
+      - `PlayFabSettings.TitleId` is not set. If you forget to set `TitleId` to your title, then nothing will work.
       - Request parameters. If you have not provided the correct or required information for a particular API call, then it will fail. See `error.errorMessage`, `error.errorDetails`, or `error.GenerateErrorReport()` for more info.
       - Device connectivity issue. Cell phones lose/regain connectivity constantly, and so any API call at any time can fail randomly, and then work immediately after. Going into a tunnel can disconnect you completely.
       - PlayFab server issue. As with all software, there can be issues. See our [release notes](../../release-notes/index.md) for updates.
