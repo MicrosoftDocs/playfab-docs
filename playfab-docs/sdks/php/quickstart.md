@@ -32,8 +32,8 @@ This quickstart will get you up and running with the PHP SDK.
 
 If you set up everything correctly, this page should work: <https://localhost/ExampleProject/gui.php>.
 
-* Set your PlayFab TitleId at the top.
-* Select Client, and LoginWithCustomID.
+* Set your PlayFab **TitleId** at the top.
+* Select **Client**, and **LoginWithCustomID**.
 * Put this in JsonRequest:
   * `{"CustomID":"GettingStartedGuide", "CreateAccount": true}`
 * Select **Send**.

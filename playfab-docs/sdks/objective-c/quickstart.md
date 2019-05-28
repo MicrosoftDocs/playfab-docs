@@ -23,12 +23,12 @@ Happy Developing!
 
 There are two ways to get started:
 
-  1. Start by adding our [example implementation project](https://github.com/PlayFab/Objective_C_SDK/tree/master/ExampleProject), and using that to begin.
-  2. Importing the [Objective-C SDK](https://github.com/PlayFab/Objective_C_SDK/tree/master/PlayFabSDK) into an existing XCode project.
+  1. You can begin by adding our [example implementation project](https://github.com/PlayFab/Objective_C_SDK/tree/master/ExampleProject), or...
+  2. You can begin by importing the [Objective-C SDK](https://github.com/PlayFab/Objective_C_SDK/tree/master/PlayFabSDK) into an existing XCode project.
 
 ## Configuring PlayFab
 
-Set your PlayFab TitleId in PlayFabSettings.m, on the line:
+Set your PlayFab `TitleId` in PlayFabSettings.m, on the line:
 
 ```objc
   static NSString * TitleId = @"XXXX";
