@@ -24,12 +24,13 @@ This tutorial will guide you through setting up and using Postman.
 
 ### Disclaimer
 
-Postman is an HTTP Request tool useful to intermediate and advanced users.
+Postman is an HTTP Request tool, useful to both intermediate and advanced users.
 
 ### Initial setup
 
 1. Get [Google Chrome](https://google.com/chrome).
-2. Get [Postman](https://www.getpostman.com/), the free Chrome plugin. After you have Postman, you should see a screen similar to the following.
+2. Get [Postman](https://www.getpostman.com/), the free Chrome plugin.
+3. After you have Postman, you should see a screen similar to the one shown below.
 
    ![Postman - Blank screen](media/tutorials/postman-blank-screen.png)  
 
@@ -44,21 +45,21 @@ Postman is an HTTP Request tool useful to intermediate and advanced users.
 
 Postman environments are a way to save Key Value Pairs (KVPs), which can be automatically injected into any portion of the HTML call.
 
-If you have a look through our collection, you will see **{{____}}** variables in most of them. These act as a time saver, as well as an easy way to switch between different environments.
+If you have a look through our collection, you will see `{{____}}` variables in most of them. These act as a time saver, as well as an easy way to switch between different environments.
 
 ### PlayFab Environment Variables
 
-- **{{TitleId}}** - The unique identifier that corresponds to your PlayFab title, found in the [GameManager](https://developer.playfab.com/) -> **Settings**.
-- **{{SecretKey}}** - Found in the [GameManager](https://developer.playfab.com/) -> **Settings**, and used to authenticate Server API calls.
-- **{{SessionTicket}}** - Provided in response to any [successful login call](xref:titleid.playfabapi.com.client.authentication). This is used to authenticate most Client API calls.
-- **{{PlayFabId}}** - Provided in response to any [successful login call](xref:titleid.playfabapi.com.client.authentication).
-- **{{CharacterId}}** - Returned from [GetAllUsersCharacters](xref:titleid.playfabapi.com.client.characters.getalluserscharacters).
-- **{{PrimaryCatalogName}}** - Found in the [GameManager](https://developer.playfab.com/) -> **Economy** -> **Catalogs**.
+- `{{TitleId}}` - The unique identifier that corresponds to your PlayFab title, found in the [GameManager](https://developer.playfab.com/) -> **Settings**.
+- `{{SecretKey}}` - Found in the [GameManager](https://developer.playfab.com/) -> **Settings**, and used to authenticate Server API calls.
+- `{{SessionTicket}}` - Provided in response to any [successful login call](xref:titleid.playfabapi.com.client.authentication). This is used to authenticate most Client API calls.
+- `{{PlayFabId}}` - Provided in response to any [successful login call](xref:titleid.playfabapi.com.client.authentication).
+- `{{CharacterId}}` - Returned from [GetAllUsersCharacters](xref:titleid.playfabapi.com.client.characters.getalluserscharacters).
+- `{{PrimaryCatalogName}}` - Found in the [GameManager](https://developer.playfab.com/) -> **Economy** -> **Catalogs**.
 
 If you *already* have an account:
 
 - Select [Client\LoginWithPlayFab](xref:titleid.playfabapi.com.client.authentication.loginwithplayfab) (from the **Postman** menu on the left).
-- Update the body JSON with your credentials (*or* - *highly recommended* - add them as {{}} variables and use that).
+- Update the body JSON with your credentials (*or* - *highly recommended* - add them as `{{}}` variables and use that).
 - Select the **Send** button.
 
    -OR-
@@ -69,18 +70,18 @@ Create a **New Player Account** by selecting:
 - Update the body JSON with your credentials as above.
 - Select the **Send** button.
 
-   In either case, after sending the request, you should receive an **HTTP Status Code 200** (**success**) response, with a fresh SessionTicket.
+   In either case, after sending the request, you should receive an **HTTP Status Code** `200` (`success`) response, with a fresh SessionTicket.
 
    ![Postman - Create Session Ticket - Success](media/tutorials/postman-create-session-ticket-success.png)  
 
    > [!NOTE]
    > PlayFab SessionTickets will expire after **24 hrs**. Beyond that time, you will need to re-authenticate and update your environment variable.
 
-Copy your SessionTicket and paste it into the corresponding environment variable. Postman also provides a convenient shortcut to this:
+Copy your `SessionTicket`, and paste it into the corresponding environment variable. Postman also provides a convenient shortcut to this:
 
 - Just select the full text of the **Ticket** (everything in the quote marks).
 - Right-click and select **Set: [Environment]** for the environment you created to store your variables.
-- Select the **SessionTicket**.
+- Select the `SessionTicket`.
 
    ![Postman - Session Ticket - Set Environment](media/tutorials/postman-session-ticket-set-environment.png)  
 
