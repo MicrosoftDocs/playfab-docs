@@ -21,9 +21,9 @@ Multiplayer action can be a great addition to many games, and PlayFab provides s
 
 Leaderboards and Matchmaking are both production services offered in PlayFab Essentials, our core services package, without any additional cost.
 
-Servers is a production service, but costs extra (see [Multiplayer Server billing](./servers/billing-for-thunderhead.md)).
+Servers is a production service, which costs extra (see [Multiplayer Server billing](./servers/billing-for-thunderhead.md)).
 
-Party is a pre-production service still being finalized. It is offered with very limited quota and for free (for the time being). It will become a premium service when production support is enabled later this year.
+Party is a pre-production service still being finalized. It is offered with very limited quota, and is free (for the time being). It will become a premium service when production support is enabled later this year.
 
 |Service|Production Readiness|Billing|
 |--|--|--|

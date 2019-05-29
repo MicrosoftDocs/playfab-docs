@@ -12,13 +12,13 @@ ms.localizationpriority: medium
 
 # Friends lists
 
-Friends lists are a great feature for improving your players' ability to socialize. They're simple to work with, and can make leaderboards more engaging for your users.
+Friends lists are a great feature for improving your players' ability to socialize. They're easy to work with, and can make leaderboards more engaging for your users.
 
 ## Prerequisites
 
 ### SDK: Unity
 
-- The title ID is set in the **PlayFabSharedSettings** object.
+- The title ID is set in the `PlayFabSharedSettings` object.
 - The project can successfully log in a user.
 - The title has at least two registered users.
 
@@ -26,15 +26,15 @@ Friends lists are a great feature for improving your players' ability to sociali
 
 Any player in your title may be friends with any other player in your title. Notably, friendship on PlayFab is a one-way street.
 
-If **Albert** adds **Bob** as a Friend, there is *no* approval process for **Bob**, and **Bob** may be unaware.
+If **Albert** adds **Bob** as a friend, there is *no* approval process for **Bob**.  In fact, **Bob** may be unaware.
 
-**Bob** must separately add **Albert** for the friendship to be *mutual*. If you wish to have reciprocity rules, it is your title's responsibility to enforce these conditions with a custom game server or **CloudScript** logic, if necessary.
+**Bob** must separately add **Albert** for the friendship to be *mutual*. If you wish to have reciprocity rules, it is your title's responsibility to enforce these conditions with a custom game server or CloudScript logic, if necessary.
 
 In the event that a player has linked their Steam, Facebook, or Xbox Live account, their platform-specific friends can also be displayed, if those friends also play your title.
 
 ## Making friends
 
-The example code will be using the functions `DisplayFriends()`, and `DisplayError(string error)` as a proxy of your app's UI. You can paste these into your editor to get it to work without any extra effort, or replace the calls with your own code.
+The example code will be using the functions `DisplayFriends()`, and `DisplayError(string error)` as a proxy of your app's UI. You can paste these into your editor to get it to work without any extra effort - or replace the calls with your own code.
 
 ```csharp
 void DisplayFriends(List<FriendInfo> friendsCache) { friendsCache.ForEach(f => Debug.Log(f.FriendPlayFabId)); }
@@ -110,7 +110,7 @@ There are other things you can do with friends besides adding, removing, and dis
 
 ### Tagging friends
 
-The [FriendInfo](xref:titleid.playfabapi.com.client.friendlistmanagement.getfriendslist#friendinfo) object, retrieved from [GetFriendsList](xref:titleid.playfabapi.com.client.friendlistmanagement.getfriendslist), includes a list of tags for the friend. When updating the list, you would want to add and remove from this list and include it in the API call, as shown below.
+The [FriendInfo](xref:titleid.playfabapi.com.client.friendlistmanagement.getfriendslist#friendinfo) object, retrieved from [GetFriendsList](xref:titleid.playfabapi.com.client.friendlistmanagement.getfriendslist), includes a list of tags for the friend. When updating the list, you would want to add and remove from this list, and include it in the API call (as shown below).
 
 ```csharp
 // this REPLACES the list of tags on the server

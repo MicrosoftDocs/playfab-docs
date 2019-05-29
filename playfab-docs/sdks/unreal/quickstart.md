@@ -59,16 +59,19 @@ Use the following steps to ensure you've properly installed the PlayFab Plugin.
 
   ![Install to engine](media/uemk-install-to-engine.png)
 
-3. Confirm your version and select **Install**.
+3. Confirm your version and click **Install**.
 
-  ![Pick version again](media/uemk-version-again.png) 
+    ![Pick version again](media/uemk-version-again.png) 
+
+4. Click the **Launch** button, and run Unreal Engine.
 
 4. Select the **Launch** button, and run Unreal Engine.
 5. Select all the options as seen here:  **New Project** tab, **C++** sub-tab, **No Starter Content**.
 
-  ![Create project settings](media/uemk-create-project-settings.png) 
+      ![Create project settings](media/uemk-create-project-settings.png) 
 
-6. Now, select **Create Project** with these options.
+6. Now, click **Create Project** with these options.
+
 7. Enable the PlayFab Plugin.
 
   ![Enable plugin](media/uemk-enable-plugin.png) 
@@ -209,7 +212,8 @@ Earlier, you created a level with a LoginActor entity already placed in the worl
 
 1. Load this level.
 
-2. Press **Play**. You will immediately see the following in the output log:
+2. Press **Play**. You will immediately see the following in the output log: 
+"LogTemp: Congratulations, you made your first successful API call!"
 
 `LogTemp: Congratulations, you made your first successful API call!`
 
