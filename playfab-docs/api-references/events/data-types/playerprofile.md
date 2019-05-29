@@ -12,8 +12,6 @@ ms.localizationpriority: medium
 
 # PlayerProfile
 
-Below is a description of the Player Profile table queried from the Players page on Game Manager. For instructions on searching for players, please see [this tutorial.](playerprofile.md)  
-
 ## Properties
 
 |Name|Type|Description|
