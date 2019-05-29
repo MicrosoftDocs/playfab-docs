@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Python quickstart
 
-This quickstart is designed to help you make your first API call in Python 3. 
+This quickstart is designed to help you make your first API call in Python 3.
 
 Before continuing, make sure you have completed [Getting started for developers](../../personas/developer.md) which ensures you have a PlayFab account and are familiar with the PlayFab Game Manager.
 
@@ -28,8 +28,6 @@ If you have any issues, let us know on the [Forums](https://community.playfab.co
 
 > [!NOTE]
 > This beta release of the Python SDK only supports synchronous API calls, and your game loop may become blocked performing PlayFab API calls. You may need to create your own async/threading model to avoid this problem.
-
-Before continuing, make sure you have completed [Getting started for developers](../../personas/developer.md) which ensures you have a PlayFab account and are familiar with the PlayFab Game Manager.
 
 ## Python project setup
 
@@ -51,7 +49,7 @@ python -m pip install playfab
 
 ## Set up your first API call
 
-This quickstart provides the minimum steps to make your first PlayFab API call without any GUI or on-screen feedback. Confirmation is accomplished with a console print statement.
+This quickstart provides the minimum steps to make your first PlayFab API call, without any GUI or on-screen feedback. Confirmation is accomplished with a console print statement.
 
 To start, replace the contents of `playfab_test.py` with the contents shown below.
 
@@ -79,7 +77,7 @@ PlayFabClientAPI.LoginWithCustomID(request, callback)
 
 ## Finish and execute
 
-Run the Python script using the following command:
+Run the Python script using the command shown below.
 
 ```cmd
        python playfab_test.py
@@ -87,7 +85,7 @@ Run the Python script using the following command:
 
 When it finishes, you should see the following text: "Congratulations, you made your first successful API call!"
   
-At this point, you can start making other API calls, and building your game. For a list of all available client API calls, see our [PlayFab API References](../../api-references/index.md) documentation.
+At this point, you can start making other API calls and building your game. For a list of all available client API calls, see our [PlayFab API References](../../api-references/index.md) documentation.
 
 Happy coding!
 
@@ -103,7 +101,7 @@ This optional last section describes each part of `playfab_test.py` in detail.
 
 - request
   - Most PlayFab API methods require input parameters, and those input parameters are packed into a dictionary object.
-    - For `LoginWithCustomIDRequest`, there is a mandatory parameter of CustomId, which uniquely identifies a player, `LoginTitlePlayerAccountEntity`, which automatically logs the player's title_player_account in and returns the associated entity token, and CreateAccount, which allows the creation of a new account with this call.
+    - For `LoginWithCustomIDRequest`, there is a mandatory parameter of `CustomId`, which uniquely identifies a player, `LoginTitlePlayerAccountEntity`, which automatically logs the player's `title_player_account` in and returns the associated entity token, and `CreateAccount`, which allows the creation of a new account with this call.
     - For login, most developers will want to use a more appropriate login method.
       - See the [PlayFab Login documentation](xref:titleid.playfabapi.com.client.authentication) for a list of all login methods, and input parameters. Common choices are:
         - [LoginWithAndroidDeviceID](xref:titleid.playfabapi.com.client.authentication.loginwithandroiddeviceid)
@@ -112,14 +110,14 @@ This optional last section describes each part of `playfab_test.py` in detail.
 
 - Callback
   - Success
-    - If the API call was successful, success will contain the requested information and failure will be None.
+    - If the API call was successful, success will contain the requested information and failure will be `None`.
     - For login requests, success will contain basic information about the player, but for most users, login is simply a mandatory step before calling other APIs.
 
   - Failure
-    - If the API call wasn't successful, failure will contain some error information and success will be None.
-    - API calls can fail for many reasons, and you should always attempt to handle failure.
+    - If the API call wasn't successful, failure will contain some error information and success will be `None`.
+    - API calls can fail for many reasons, and you should always attempt to handle the failure.
     - Why API calls fail (In order of likelihood)
-      - PlayFabSettings.TitleId is not set. If you forget to set titleId to your title, then nothing will work.
+      - `PlayFabSettings.TitleId` is not set. If you forget to set `titleId` to your title, then nothing will work.
       - Request parameters. If you have not provided the correct or required information for a particular API call, then it will fail.
       - Device connectivity issue. Cell-phones lose/regain connectivity constantly, and so any API call at any time can fail randomly, and then work immediately after. Going into a tunnel can disconnect you completely.
       - PlayFab server issue. As with all software, there can be issues. See our [release notes](../../release-notes/index.md) for updates.

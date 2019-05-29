@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 # PlayFab Tier Limits
 
-Below are the limits per PlayFab resource. The Essentials tier provides enough resources to fully test your title, but not enough to launch your title in production. The Indie, Pro, and Enterprise tiers all provide the same higher limits, which are enough to support a production title.
+Below are the limits per PlayFab resource. There are four PlayFab tiers - Essentials, Indie, Professional, and Enterprise. The Indie, Professional, and Enterprise tiers all share the same limits.
 
 > [!NOTE]
 >To learn more about the pricing of each PlayFab tier, please take a look at the [Pricing Page](https://playfab.com/pricing/).
@@ -146,11 +146,6 @@ Below are the limits per PlayFab resource. The Essentials tier provides enough r
 | --- | --- | --- | --- |
 | GroupMemberCount | members | 1,000 | 1,000 |
 | GroupRoleCount | roles | 10 | 10 |
-
-### Beta Economy
-| Resource | Unit | Essentials Limit | Indie/Pro/Enterprise Limit |
-| --- | --- | --- | --- |
-| WalletVirtualCurrencyCount | wallet virtual currencies | 8 | 10 |
 
 ### Matchmaking
 | Resource | Unit | Essentials Limit | Indie/Pro/Enterprise Limit |
