@@ -27,6 +27,6 @@ ms.localizationpriority: medium
     - You must secure the client API methods with our [API Access Policy](../../config/gamemanager/api-access-policy.md) to prevent multiple purchases, or make repurchasing less meaningful through game design.
 
 - Content should be relevant to the segment.
-  - Whales are willing to spend large amounts of real money, and are therefor likely to buy more expensive bundles, if the value is worthwhile.
+  - Whales are willing to spend large amounts of real money, and are therefore likely to buy more expensive bundles, if the value is worthwhile.
   - First time buyers may be given an option which is a particularly good deal, but can *only* be (usefully) obtained once.
   - End game players may only be interested in a specific subset of items.
