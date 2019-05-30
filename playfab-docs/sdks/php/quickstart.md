@@ -39,7 +39,11 @@ Before continuing, make sure you have completed [Getting started for developers]
 
 If you set up everything correctly, this page should work: <https://localhost/ExampleProject/gui.php>.
 
-1. Set your PlayFab TitleId at the top.
+* Set your PlayFab **TitleId** at the top.
+* Select **Client**, and **LoginWithCustomID**.
+* Put this in JsonRequest:
+  * `{"CustomID":"GettingStartedGuide", "CreateAccount": true}`
+* Select **Send**.
 
 2. Select Client, and LoginWithCustomID
 
