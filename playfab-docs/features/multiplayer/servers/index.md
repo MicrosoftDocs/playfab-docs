@@ -78,7 +78,7 @@ These are the typical steps for using the service:
 
 ### Q: I am using Unity. Do you have a sample of a Unity-based game interfacing with the game server SDK?
 
-We do not have a Unity sample demonstrating PlayFab Multiplayer Servers, but should have one by July 2019. A small group of preview customers have gotten the C# GSDK to work with their Unity-based game server but it is not a straightforward experience.
+At this time, we do not have a Unity sample demonstrating PlayFab Multiplayer Servers. A small group of preview customers have gotten the C# GSDK to work with their Unity-based game server, but it is not a straightforward experience.
 
 ### Q: Only 14 Azure regions and 4 VM series appear currently supported. Can I get access to additional series or regions?
 

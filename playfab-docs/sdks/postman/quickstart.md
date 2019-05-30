@@ -12,16 +12,20 @@ ms.localizationpriority: medium
 
 # Postman quickstart
 
-This quickstart has been designed to assist you in the download and setup of the all-inclusive PlayFab Postman collection. The collection contains files that will help you make your first PlayFab API call using Postman.
+This quickstart helps you set up the all-inclusive PlayFab Postman collection. The collection contains files that will help you make your first PlayFab API call using Postman.
+
+Before continuing, make sure you have completed [Getting started for developers](../../personas/developer.md) which ensures you have a PlayFab account and are familiar with the PlayFab Game Manager.
 
 ## Prerequisites
 
-- You should be familiar with basic PlayFab topics.
+- Familiarity with basic PlayFab topics.
 
-- To connect to the PlayFab service, your machine must be running TLS v1.2 or better.
+- A machine running TLS v1.2 or better to connect to the PlayFab service.
 
-- For Windows, this means Windows 7 and above.
+- Windows 7 or newer.
+
 - [Official Microsoft Documentation](https://msdn.microsoft.com/en-us/library/windows/desktop/aa380516%28v=vs.85%29.aspx)
+
 - [Support for SSL/TLS protocols on Windows](https://blogs.msdn.com/b/kaushal/archive/2011/10/02/support-for-ssl-tls-protocols-on-windows.aspx)
 
 ## Setup
@@ -34,7 +38,7 @@ This quickstart has been designed to assist you in the download and setup of the
 
 For a complete list of available APIs, see our [PlayFab API References](../../api-references/index.md) documentation.
 
-## Contact Us
+## Contact us
 
 We love to hear from our developer community!
 Do you have ideas on how we can make our products and services better?
