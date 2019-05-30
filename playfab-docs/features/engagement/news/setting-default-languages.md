@@ -50,7 +50,10 @@ Before setting your player’s preferred language, figure out how you want to co
 
 ### Step 1 – Set the language
 
-￼PlayFab allows you to choose from a specific list of languages to support. You can make a call to the `GetLanguageList()` method to see the language codes.
+PlayFab allows you to choose from a specific list of languages to support. You can make a call to the `GetLanguageList()` method to see the language codes.
+
+> [!NOTE]
+> When using the `SetProfileLanguage` API, the language string must be specified in the ISO 639-1 format (for example, "en", "es", or "ja"). At the current time, the code "zh" is not supported.
 
 First, we will update a player’s profile to include the language in which they would prefer to get content from your title.
 
