@@ -76,6 +76,9 @@ Leave one of the new players without a preferred language. This will demonstrate
 
 Set the *other* new player's language by using Game Manager, or by using the [SetProfileLanguage](xref:titleid.playfabapi.com.profiles.accountmanagement.setprofilelanguage) API. We have used French in this example.
 
+> [!NOTE]
+> When using the `SetProfileLanguage` API, the language string must be specified in the ISO 639-1 format (for example, "en", "es", or "ja"). At the current time, the code "zh" is not supported.
+
 Make sure you have set the contact email on both players as explained in [Step 2 of the Using Email Templates to Send an Account Recovery Email](using-email-templates-to-send-an-account-recovery-email.md#step-2---add-username-password-login-email-and-contact-email-to-a-player) tutorial, before continuing on to the next step.
 
 Use the [SendCustomAccountRecoveryEmail](xref:titleid.playfabapi.com.server.accountmanagement.sendcustomaccountrecoveryemail) API once per player to send this template:
