@@ -12,11 +12,11 @@ ms.localizationpriority: medium
 
 # Unity3D quickstart
 
-This guide helps you make your first PlayFab API call in the Unity3d engine. Before continuing, make sure you have completed [Getting started for developers](../../personas/developer.md) which ensures you have a PlayFab account and are familiar with the PlayFab Game Manager.
+This guide helps you make your first PlayFab API call in the Unity3d engine. Before continuing, make sure you have completed [Getting started for developers](../../personas/developer.md), which ensures you have a PlayFab account and are familiar with the PlayFab Game Manager.
 
 ## OS
 
-This guide is written for Windows 10, however it should also work fine with a Mac.
+This guide is written for Windows 10, however it should also work well with a Mac.
 
 ## Download Unity
 
@@ -31,22 +31,22 @@ If you don't have Unity installed, then you will need to install it and create a
 
 ![Create Unity project](media/unity-create-project.png)
 
-4. Finish creating a new empty project with a name and location of your choice. 
+4. Finish creating a new empty project with a name and location of your choice.
 
 ## Download PlayFab SDK
 
 The best way to acquire our Unity SDK is via our editor extensions - although you can directly download the Unity 3D SDK from our github page. [PlayFab Unity3D SDK](https://api.playfab.com/downloads/unity-v2ap).
 
-1. Download and Import the [PlayFab Unity Editor Extensions package](https://github.com/PlayFab/UnityEditorExtensions/raw/master/Packages/PlayFabEditorExtensions.unitypackage)
+1. Download and Import the [PlayFab Unity Editor Extensions package](https://github.com/PlayFab/UnityEditorExtensions/raw/master/Packages/PlayFabEditorExtensions.unitypackage).
 
-2. To import the the Unity Editor Extensions package, navigate to where the file was downloaded and double-click on the .UnityPackage file. This will bring up the following window.
+2. To import the the Unity Editor Extensions package, navigate to where the file was downloaded, and double-click on the .UnityPackage file. This will bring up the following window.
 
     ![Import Unity package](media/import-uedex.png)  
 
-3. Click Import, which will import the PlayFab Unity Editor Extensions into your project.
+3. Select **Import**, which will import the PlayFab Unity Editor Extensions into your project.
 
 > [!NOTE]
-> Before you can download the SDK make sure you are logged into your PlayFab account. Click the "Log In" link to take you to the login pane, and log in with your PlayFab username and password.
+> Before you can download the SDK make sure you are logged into your PlayFab account. Select the **Log In** link to take you to the login pane, and log in with your PlayFab username and password.
 
     ![Log in to PlayFab](media/login-register-uedex.png)
 
@@ -61,10 +61,10 @@ Now that you have installed the PlayFab SDK, you will need to set your title in 
 
 ![PlayFab setting scriptable object](media/playfab-settings-so.png)
 
-Otherwise, you can see the **Title Settings** in the Editor Extensions UI.
+Otherwise, you can see the **Title Settings** in the **Editor Extensions** UI.
 
-- Select the **Settings** tab in the Editor Extensions.
-- The Title ID and Developer Secret Key are set automatically.
+- Select the **Settings** tab in the **Editor Extensions**.
+- The **Title ID** and **Developer Secret Key** are set automatically.
 
 ![PlayFab Settings tab](media/playfab-settings-tab.png)
 
@@ -78,16 +78,16 @@ Now that you have installed the SDK and set your Title Settings, you are ready t
 
 This part of the guide will provide the minimum steps to make your first PlayFab API call, without any GUI or on-screen feedback. Confirmation will be done with the Console log.
 
-- Find the Project panel
+- Find the Project panel.
 
-- Create a new C# script named "PlayFabLogin" 
+- Create a new C# script named "PlayFabLogin".
 
 ![Create a new C# script](media/first-script.png)
 
 - In Unity, double-click this file to open it in a code-editor.
   - Depending on your settings/installed-programs, this will likely be Visual Studio or MonoDevelop.
 
-- Next, Create a new GameObject, and attach this script (`PlayFabLogin.cs`) to the newly created GameObject.
+- Next, create a new `GameObject`, and attach the script (`PlayFabLogin.cs`) to it.
 - Replace the contents of `PlayFabLogin.cs` with the code shown below.
 
 ```csharp
@@ -129,9 +129,9 @@ public class PlayFabLogin : MonoBehaviour
 
 You are now ready to test out this sample.
 
-- Be sure to Save all files, and return to the Unity Editor
+- Be sure to Save all files, and return to the Unity Editor.
 
-- Press the Play button at the top of the editor   
+- Press the Play button at the top of the editor.
 
 - Be sure to **Save** all files, and return to the Unity Editor.
 
@@ -150,12 +150,12 @@ Happy Coding!
 
 ## Deconstruct the code
 
-This optional last section describes each part of PlayFabLogin.cs in detail.
+This optional last section describes each part of `PlayFabLogin.cs` in detail.
 
 - There are 3 functions in PlayFabLogin:
 
-  - Start, OnLoginSuccess, OnLoginFailure
-  - Start is a Unity function which is automatically called for every MonoBehaviour object
+  - `Start`, `OnLoginSuccess`, `OnLoginFailure`
+  - `Start` is a Unity function which is automatically called for every `MonoBehaviour` object.
     - See the [Unity MonoBehaviour Guide](https://docs.unity3d.com/ScriptReference/MonoBehaviour.html) for more information.
 
 Inside of Start():
@@ -175,10 +175,10 @@ Inside of Start():
     - [LoginWithEmailAddress](xref:titleid.playfabapi.com.client.authentication.loginwithemailaddress)
     - [LoginWithFacebook](xref:titleid.playfabapi.com.client.authentication.loginwithfacebook)
 
-Inside of OnLoginSuccess
+Inside of `OnLoginSuccess`
 
 - The result object of many API success callbacks will contain the requested information.
-- LoginResult contains some basic information about the player, but for most users, login is simply a mandatory step before calling other APIs.
+- `LoginResult` contains some basic information about the player, but for most users, login is simply a mandatory step before calling other APIs.
 
 Inside of OnLoginFailure
 
@@ -187,7 +187,7 @@ Inside of OnLoginFailure
 
 - Why API calls fail (In order of likelihood).
   - `PlayFabSettings.TitleId` is not set. If you forget to set titleId to your title, then nothing will work.
-  - Request parameters. If you have not provided the correct or required information for a particular API call, then it will fail. See error.errorMessage, error.errorDetails, or error.GenerateErrorReport() for more info.
+  - Request parameters. If you have not provided the correct or required information for a particular API call, then it will fail. See `error.errorMessage`, `error.errorDetails`, or `error.GenerateErrorReport()` for more info.
   - Device connectivity issue. Cell-phones lose/regain connectivity constantly, and so any API call at any time can fail randomly, and then work immediately after. Going into a tunnel can disconnect you completely.
   - The PlayFab Unity SDK currently expects API calls from the main Unity thread. Calling the SDK on a background thread will likely cause exceptions with coroutines and other Unity methods not being invoked on the main Unity thread.
   - PlayFab server issue. As with all software, there can be issues. See our [forums](https://community.playfab.com/index.html) to look for issue reports similar to yours, or post your own question. You can also review our [release notes](../../release-notes/index.md).

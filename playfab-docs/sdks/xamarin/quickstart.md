@@ -12,95 +12,104 @@ ms.localizationpriority: medium
 
 # Xamarin quickstart
 
-This guide will help you make your first PlayFab API call in the Xamarin IDE using C#.
+This guide helps you make your first PlayFab API call in the Xamarin IDE using C#.
 
-## Xamarin Project Setup
+Before continuing, make sure you have completed [Getting started for developers](../../personas/developer.md) which ensures you have a PlayFab account and are familiar with the PlayFab Game Manager.
 
-- OS: This guide is written for Windows 10, using Visual Studio 2015
-- Download Visual Studio 2015
-  - [https://www.visualstudio.com/downloads/](https://www.visualstudio.com/downloads/)
+## Xamarin project setup
 
-- Download Xamarin for Visual Studio
-  - Create an account or log in here: https://www.xamarin.com/download
-  - That link should then provide you with a "Download Now" option after login/registration
-  - Even with a fresh install, it is a good idea to check for updates
-    - Tools -> Options -> Xamarin -> Other -> Check Now
+OS: This guide is written for Windows 10, using Visual Studio 2015.
+
+1. Download Visual Studio 2015: [https://www.visualstudio.com/downloads/](https://www.visualstudio.com/downloads/)
+
+2. Download Xamarin for Visual Studio by first creating an account or log-in here: https://www.xamarin.com/download
+  
+3. After registering and logging in, a "Download Now" link is provided for you.
+
+4. Check for updates, even with fresh installs:
+    
+        Tools -> Options -> Xamarin -> Other -> Check Now
 
       ![Xamarin Updates for Visual Studio](media/xamarin-vs-updates.png)
 
-- Download and extract the PlayFab Xamarin (C#) SDK
-  - [Xamarin (C#) SDK](https://api.playfab.com/downloads/xamarin)
-  - This guide will use {CSharpSdkLocation} to describe the extracted location of this SDK
+5. Download and extract the PlayFab [Xamarin (C#) SDK](https://api.playfab.com/downloads/xamarin). This guide will use {CSharpSdkLocation} to describe the extracted location of this SDK.
 
-- Open Visual Studio and create a new Cross-Platform Xamarin project
-  - This example demonstrates a single Xamarin solution for all mobile platforms at the same time - You may however find it easier to target a single platform per solution
-  - Create a new project using these options:
-    - Templates -> Visual C# -> Cross-Platform -> Blank App (Xamarin.Forms Shared)
+6. Open Visual Studio and create a new cross-platform Xamarin project.
 
-      ![Create new Xamarin Project](media/xamarin-new-project.png)
+> [!NOTE]
+> This example demonstrates a single Xamarin solution for all mobile platforms at the same time - you may however find it easier to target a single platform per solution.
 
-  - Popups:
-    - Mac agent window: Close this for now
-      - If you plan to build for iOS, you'll need to set this up properly later
+7. Create a new project using these options: 
 
-    - New Universal Windows Project
-      - Choose your target version, or just use latest (highest build number) for all options
+        Templates -> Visual C# -> Cross-Platform -> Blank App (Xamarin.Forms Shared)  
 
-  - Set your platform and project settings to: x86 & Universal Windows for the remainder of this example
-    - The UWP project can run directly on Windows 10, making it easier to demonstrate this example
+![Create new Xamarin Project](media/xamarin-new-project.png)  
 
-      ![Xamarin build settings](media/xamarin-build-settings.png)
+Pop-ups:  
 
-- Import the PlayFab files into your project
-  - We will copy/paste those files from the extracted zip we downloaded earlier
-    - Keep Visual Studio open
-    - Open an Explorer window to {CSharpSdkLocation}/PlayFabClientSDK, and find the "source" sub-folder (don't open it)
-    - Drag the "source" sub-folder from the Explorer window, into the non-platform specific "GettingStartedXamarin" project in Visual Studio
-    - Once imported, rename the new "source" folder to "PlayFab"
-    - If you did this correctly, your "Solution Explorer" panel in Visual Studio should look like this:
+   - **Mac agent window**. Close this for now. If you plan to build for iOS, you'll need to set this up properly later.
 
-      ![Rename import folder](media/xamarin-import-rename.png)
+- **New Universal Windows Project**. Choose your target version, or just use latest (highest build number) for all options.
 
-- Update a few project settings
-  - Add "XAMARIN" to all your platform specific properites
-    - This flag is not a default for Xamarin, it's an identifier used by the PlayFab CSharpSdk which activates some Xamarin specific code - Mostly you should just consider this a required step
-    - For each Project in (GettingStartedXamarin.Droid, GettingStartedXamarin.iOS, GettingStartedXamarin.UWP, GettingStartedXamarin.Windows, GettingStartedXamarin.WinPhone)
-      - RClick -> Properties -> Left-Menu: Build -> "Conditional compilation symbols:" -> Append ";XAMARIN" to existing symbols (if any)
-      - Each of these panels looks a little different, but each one should have this option
+- Set your platform and project settings to: x86 & Universal Windows for the remainder of this example.
 
-  - Android specific settings
-    - RClick GettingStartedXamarin.Droid -> Properties (If you closed it, otherwise you already opened this window above)
-      - Left-Menu: Android Manifest -> Required Permissions -> Check "Internet"
-      - Left-Menu: Application -> Depending on your AndroidSDK installation, choose your SDK (In all 3 options, this guide uses "Android 6.0 (API Level 23 - Marshmallow)")
-        - Xamarin installation prompted you to install the AndroidSDK
-          - You can navigate to that folder, and run "SDK Manager.exe" to modify which Android APIs you have available
+> [!NOTE]
+> The UWP project runs directly on Windows 10, making it also easier to demonstrate with this example.
 
-  - Additional References
-    - For each Project in (GettingStartedXamarin.Droid, GettingStartedXamarin.iOS)
-      - In Solution Explorer panel, expand each project, and RClick "References" -> Add Reference
-        - Find "System.Net.Http" and activate the checkbox
+![Xamarin build settings](media/xamarin-build-settings.png)
 
-          ![Add references](media/xamarin-add-net-http-ref.png)
+8. Import the PlayFab files into your project. We will copy and paste those files from the extracted zip we downloaded earlier.
 
-- Your project should now compile
-  - You likely have several warnings
-    - The Android warnings almost certainly prevent you from testing or building to an actual device
-      - Commit to a source code repository before you attempt to resolve Android warnings - These issues are insidious, and it's possible to permanently break your project
+9. Keep Visual Studio open and also open an Explorer window to {CSharpSdkLocation}/PlayFabClientSDK, and find the "source" sub-folder (don't open it).
 
-    - GettingStartedXamarin.Windows, and GettingStartedXamarin.UWP projects
-      - These are missing a certificate, which is required for deploying builds
-      - However, this will NOT prevent you from running a debug build on your local machine
+10. Drag the "source" sub-folder from the Explorer window, into the non-platform specific "GettingStartedXamarin" project in Visual Studio.
 
-  - This guide does not require that you resolve these warnings
+11. Once imported, rename the new "source" folder to "PlayFab." If you did this correctly, your "Solution Explorer" panel in Visual Studio should look like this:
 
-- PlayFab installation complete!
+    ![Rename import folder](media/xamarin-import-rename.png)  
+
+12. Update a few project settings:
+
+    - Add "XAMARIN" to all your platform specific properites.
+
+        - This flag is not a default for Xamarin, it's an identifier used by the PlayFab CSharpSdk which activates some Xamarin specific code - Mostly you should just consider this a required step.  
+    
+        - For each Project in (GettingStartedXamarin.Droid, GettingStartedXamarin.iOS, GettingStartedXamarin.UWP, GettingStartedXamarin.Windows, GettingStartedXamarin.WinPhone)  
+ 
+            - RClick -> Properties -> Left-Menu: Build -> "Conditional compilation symbols:" -> Append ";XAMARIN" to existing symbols (if any)  
+        
+            - Each of these panels looks a little different, but each one should have this option  
+
+13. Update your Android specific settings:
+
+    - Right-click GettingStartedXamarin.Droid -> Properties (If you closed it, otherwise you already opened this window above).
+ 
+         - Left-menu: Android Manifest -> Required Permissions -> Check "Internet"
+        
+        - Left-menu: Application -> Depending on your AndroidSDK installation, choose your SDK (In all 3 options, this guide uses "Android 6.0 (API Level 23 - Marshmallow)")
+
+14. Xamarin installation prompts you to install the AndroidSDK. Navigate to that folder, and run "SDK Manager.exe" to modify which Android APIs you have available.
+
+15. For each Project in (GettingStartedXamarin.Droid, GettingStartedXamarin.iOS), open the Solution Explorer panel, expand each project, and right-click **References** -> **Add Reference**. Find "System.Net.Http" and select the checkbox.
+
+![Add references](media/xamarin-add-net-http-ref.png)
+
+Your project should now compile.
+
+> [!CAUTION]
+>You likely have several warnings. The Android warnings can prevent you from testing or building to an actual device. Make sure to commit to a source code repository before you attempt to resolve Android warnings. These issues are insidious, and it's possible to permanently break your project.
+
+Also, for GettingStartedXamarin.Windows, and GettingStartedXamarin.UWP projects, there are missing  certificates, which are required for deploying builds. However, this will NOT prevent you from running a debug build on your local machine. Ultimately, we do not require that you resolve these warnings.
+
+PlayFab installation complete!
 
 ## Set up your first API call
 
-This guide will provide the minimum steps to make your first PlayFab API call, without any GUI or on-screen feedback. Confirmation will be done with an on-screen text widget.
+This guide provides the minimum steps to make your first PlayFab API call, without any GUI or on-screen feedback. Confirmation will be done with an on-screen text widget.
 
-- In Visual Studio, Solution Explorer (panel), find this file: Solution/GettingStartedXamarin/App.cs
-- Replace the contents of App.cs with the following:
+1. In Visual Studio, Solution Explorer (panel), find this file: Solution/GettingStartedXamarin/App.cs
+
+2. Replace the contents of App.cs with the following:
 
 ```csharp
 using System;
@@ -169,20 +178,21 @@ namespace GettingStartedXamarin
 }
 ```
 
-## Finish and Execute
+## Finish and execute
 
-- Run this project
-  - Build (drop-down) -> Start Debugging
+1. Select **Build** from the drop-down menu -> and **Start Debugging** to run this project. 
 
-- The first time you run a UWP program, it can take a long time to load
-- When it loads, you should see the following text:
-  - "Congratulations, you made your first successful API call!"
+> [!NOTE]
+> The first time you run a UWP program, it can take a long time to load.
 
-- At this point, you can start making other API calls, and building your game
-- For a list of all available client API calls, see our [PlayFab API References](../../api-references/index.md) documentation.
+2. When the project loads, you should see the following text:
+"Congratulations, you made your first successful API call!"
 
-  
-- Happy coding!
+At this point, you can start making other API calls, and building your game.
+
+For a list of all available client API calls, see our [PlayFab API References](../../api-references/index.md) documentation.
+
+Happy coding!
 
 ## Deconstruct the code
 
