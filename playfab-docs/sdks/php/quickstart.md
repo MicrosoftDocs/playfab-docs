@@ -17,7 +17,7 @@ This quickstart will get you up and running with the PHP SDK.
 > [!Note]
 > This SDK is currently in Beta, so please let us know if you run into any issues.
 
-Before continuing, make sure you have completed [Getting started for developers](../../personas/developer.md) which ensures you have a PlayFab account and are familiar with the PlayFab Game Manager.
+Before continuing, make sure you have completed [Getting started for developers](../../personas/developer.md), which ensures you have a PlayFab account and are familiar with the PlayFab Game Manager.
 
 ## PHP project setup
 

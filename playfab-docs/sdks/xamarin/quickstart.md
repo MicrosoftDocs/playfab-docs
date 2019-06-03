@@ -97,7 +97,7 @@ Pop-ups:
 Your project should now compile.
 
 > [!CAUTION]
->You likely have several warnings. The Android warnings can prevent you from testing or building to an actual device. Make sure to commit to a source code repository before you attempt to resolve Android warnings. These issues are insidious, and it's possible to permanently break your project.
+> You likely have several warnings. The Android warnings can prevent you from testing or building to an actual device. Make sure to commit to a source code repository before you attempt to resolve Android warnings. These issues are insidious, and it's possible to permanently break your project.
 
 Also, for `GettingStartedXamarin.Windows`, and `GettingStartedXamarin.UWP` projects, there are missing certificates, which are required for deploying builds. However, this will NOT prevent you from running a debug build on your local machine. Ultimately, we do not require that you resolve these warnings.
 

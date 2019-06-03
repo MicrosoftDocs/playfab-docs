@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 This tutorial lets you get up and running with the PlayFab JavaSDK and simple Java program.
 
-Before continuing, make sure you have completed [Getting started for developers](../../personas/developer.md) which ensures you have a PlayFab account and are familiar with the PlayFab Game Manager.
+Before continuing, make sure you have completed [Getting started for developers](../../personas/developer.md), which ensures you have a PlayFab account and are familiar with the PlayFab Game Manager.
 
 The goals for this tutorial are:  
 

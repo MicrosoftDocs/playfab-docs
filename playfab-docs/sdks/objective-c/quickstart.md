@@ -17,7 +17,7 @@ This quickstart assists you in making your first PlayFab API call using Objectiv
 > [!Note]
 > This SDK is currently in Beta, so please let us know if you run into any issues.
 
-Before continuing, make sure you have completed [Getting started for developers](../../personas/developer.md) which ensures you have a PlayFab account and are familiar with the PlayFab Game Manager.
+Before continuing, make sure you have completed [Getting started for developers](../../personas/developer.md), which ensures you have a PlayFab account and are familiar with the PlayFab Game Manager.
 
 Happy Developing!
 
