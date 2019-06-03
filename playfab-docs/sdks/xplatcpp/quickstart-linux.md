@@ -31,7 +31,7 @@ If you have any issues, let us know on the [Forums](https://community.playfab.co
 
 OS: This guide is written for Linux, using Ubuntu 18.04 LTS.
 
-Before continuing, make sure you have completed [Getting started for developers](../../personas/developer.md) which ensures you have a PlayFab account and are familiar with the PlayFab Game Manager.
+Before continuing, make sure you have completed [Getting started for developers](../../personas/developer.md), which ensures you have a PlayFab account and are familiar with the PlayFab Game Manager.
 
 Installation
 

@@ -14,6 +14,8 @@ ms.localizationpriority: medium
 
 This guide helps you make your first PlayFab API call in the Unity3d engine. Before continuing, make sure you have completed [Getting started for developers](../../personas/developer.md), which ensures you have a PlayFab account and are familiar with the PlayFab Game Manager.
 
+Before continuing, make sure you have completed [Getting started for developers](../../personas/developer.md), which ensures you have a PlayFab account and are familiar with the PlayFab Game Manager.
+
 ## OS
 
 This guide is written for Windows 10, however it should also work well with a Mac.
