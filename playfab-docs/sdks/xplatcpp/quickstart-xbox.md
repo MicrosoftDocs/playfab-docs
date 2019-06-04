@@ -12,45 +12,45 @@ ms.localizationpriority: medium
 
 # C++ quickstart for Xbox
 
-This guide helps you make your first PlayFab API call in C++ on an **Xbox**.
+This guide helps you make your first PlayFab API call in C++ on an Xbox.
 
-Before continuing, make sure you have completed [Getting started for developers](../../personas/developer.md) which ensures you have a PlayFab account and are familiar with the PlayFab Game Manager.
+Before beginning, please take the time to make sure you have completed [Getting started for developers](../../personas/developer.md), which ensures you have a PlayFab account and are familiar with the PlayFab Game Manager.
 
 ## Xbox project setup
 
-Make sure to follow the **Xbox** setup guide for **Universal Windows Platform (UWP)** applications: [UWP on Xbox One](https://docs.microsoft.com/en-us/windows/uwp/xbox-apps). This will help with setting up your **Xbox**, the **XDK**, and **Visual Studio**, for building an **Xbox** application.
+Make sure to follow the Xbox setup guide for Universal Windows Platform (UWP) applications: [UWP on Xbox One](https://docs.microsoft.com/en-us/windows/uwp/xbox-apps). This will help with setting up your Xbox, the XDK, and Visual Studio, for building an Xbox application.
 
 ## Using the PlayFab XplatCPP SDK
 
 Let's take a look at how to use the **PlayFab XplatCPP SDK**.
 
 > [!NOTE]
-> The main difference for **Xbox** is that it has a separate project file for the solution.
+> The main difference for Xbox is that it has a separate project file for the solution.
 
-- Download the latest [XPlatCppSdk](https://github.com/PlayFab/XPlatCppSdk). Follow the instructions in the *Readme* to recursively clone the dependencies. Note that this SDK is supported across **Windows**, **Linux**, and **Xbox**. The **Xbox SDK** is currently supported only on **Visual Studio 2017**.
+- Download the latest [XPlatCppSdk](https://github.com/PlayFab/XPlatCppSdk). Follow the instructions in the *Readme* to recursively clone the dependencies. Note that this SDK is supported across Windows, Linux, and Xbox. The Xbox SDK is currently supported only on Visual Studio 2017.
 
-Now, let's build the dependencies for **Xbox**.
+Now, let's build the dependencies for Xbox.
 
-1. Open the **Xbox One XDK Visual Studio 2017 Command Prompt** and run the **build-dependencies-{debug/profile/release}.bat** script. This script can be found under the **build \> Xbox** folder.
+1. Open the **Xbox One XDK Visual Studio 2017 Command Prompt** and run the `build-dependencies-{debug/profile/release}.bat` script. This script can be found under the **build \> Xbox** folder.
 2. We will use debug for now, so make sure you run the debug script. The profile and release scripts can be run to build the respective configurations of the external dependencies. If the build fails, make sure that you completed a recursive clone of the repo to also clone the external dependencies.
 
 ### Setting up your Visual Studio project
 
 We will use a Direct3D sample for the guide. This will help you understand how to set up the project. You can later choose to start with a different starting sample.
 
-1. Create a new **Direct3D** sample project by clicking on **File \> New \> Project**.
-2. Under **Installed**, click on **Visual C++ \> Xbox One \> XDK \> July 2018 QFE 2**.
+1. Create a new **Direct3D** sample project by selecting **File \> New \> Project**.
+2. Under **Installed**, select **Visual C++ \> Xbox One \> XDK \> July 2018 QFE 2**.
   
 > [!NOTE]
 > Based on the **XDK** you have installed, the version might be different. If you do not see **Xbox One** under **Visual C++**, re-install the **XDK** and try again.
 
-3. Select the **Direct3D 11 Game**. Name the project as *PlayFabXboxGuide* and select a desirable location. Hit **OK** to create the project.
+3. Select the **Direct3D 11 Game**. Name the project as `PlayFabXboxGuide` and select a desirable location. Select the **OK** button to create the project.
 
-4. Modify the **Xbox Live Manifest** by editing the **package.appxmanifest** file to explicitly call out port numbers. When using ports internally, make the following change to allow the application to talk to the network:
+4. Modify the **Xbox Live Manifest** by editing the `package.appxmanifest` file to explicitly call out port numbers. When using ports internally, make the following change to allow the application to talk to the network:
 
 - Refer to the manifest template code example in this documentation [Xbox One exclusive resource application network manifest templates](https://docs.microsoft.com/en-us/windows/uwp/xbox-live/multiplayer/xbox-integrated-multiplayer/xim-manifest#xbox-one-exclusive-resource-application-network-manifest-templates).
 
-5. Modify the section for the **XML** header `<mx:Extension Category="windows.xbox.networking">` so that it looks like this:
+5. Modify the section for the **XML** header `<mx:Extension Category="windows.xbox.networking">` so that it looks like what is shown below.
 
 ```xml
          ...
@@ -85,38 +85,39 @@ We will use a Direct3D sample for the guide. This will help you understand how t
          </mx:Extension>
 ```
 
-Now, deploy your game:
-1. Hit **F5** to deploy and run the game. 
-2. Make sure you are connected to your **Xbox**. 
-3. On the **Xbox One XDK Visual Studio 2017 Command Prompt**, run the `xbconnect \<xbox ip\>` command to connect to your **Xbox**. You should see the game running on your **Xbox**.
+Now, to deploy your game:
+
+1. Select **F5** to deploy and run the game.
+2. Make sure you are connected to your Xbox.
+3. On the **Xbox One XDK Visual Studio 2017 Command Prompt**, run the `xbconnect \<xbox ip\>` command to connect to your Xbox. You should see the game running on your Xbox.
 
 ### Adding the XPlatCppSdk to your project
 
-1. In **Visual Studio**, right click on the **Solution**. Select **Add \> Existing Project**. 
+1. In **Visual Studio**, right-click on the **Solution**. Select **Add \> Existing Project**.
 2. Navigate to and select **XPlatXbox.vcxproj** under the **build \> Xbox** folder of the **XPlatCppSdk** folder.
 3. Hit **Open**. You should now see the **XPlatXbox** project as part of your solution.
-4. Right-click on **References** under the *PlayFabXboxGuide* project. 
-5. Click on **Add Reference**. 
-6. Under **Project \> Solution**, select the **XPlatXbox** project and hit **OK**. 
-7. Now your project is linked to the **XPlatXbox SDK** and you should be able to build to make **PlayFab API** calls.
+4. Right-click on **References** under the *PlayFabXboxGuide* project.
+5. Select **Add Reference**.
+6. Under **Project \> Solution**, select the **XPlatXbox** project and hit **OK**.
+7. Now your project is linked to the XPlatXbox SDK, and you should be able to build to make PlayFab API calls.
 
-Now, verify that the project builds. Try to build the Solution and make sure you do not have any build errors. If successful, you are ready to write some code and make your first API call.
+Take a moment to verify that the project builds. Try to build the Solution and make sure you do not have any build errors. If successful, you are ready to write some code and make your first API call.
 
 ### Making your first API call
 
-1. Add the **PlayFab** header file paths to the **Additional Include Directories**. 
-2. Right-click on the *PlayFabXboxGuide* project and click **properties**. 
-3. Under **Configuration Properties \> C/C++ \> General \> Additional Include Directories**, add the path to the **code**, **code\include** and **external\include** folders. 
+1. Add the **PlayFab** header file paths to the **Additional Include Directories**.
+2. Right-click on the *PlayFabXboxGuide* project and select **Properties**.
+3. Under **Configuration Properties \> C/C++ \> General \> Additional Include Directories**, add the path to the **code**, **code\include** and **external\include** folders.
 4. Once added, the **Additional Include Directories** value should look like this:  
-    ` \<path to the sdk root\>\code; \<path to the sdk root\>\code\include; \<path to the sdk root\>\external\include;%(AdditionalIncludeDirectories)`
-5. Add a new header file called **PlayFabApiCall.h**, and add the following code to the file:
+    `\<path to the sdk root\>\code; \<path to the sdk root\>\code\include; \<path to the sdk root\>\external\include;%(AdditionalIncludeDirectories)`
+5. Add a new header file called **PlayFabApiCall.h**, and add the code shown below to the file.
 
 ```cpp
 #pragma once
 void MakePlayFabCall();
 ```
 
-- Add a new source file called **PlayFabApiCall.cpp** with the following code:
+- Add a new source file called **PlayFabApiCall.cpp** with the code shown below.
 
 ```cpp
 #include "pch.h"
@@ -184,8 +185,8 @@ Now you have the code to make your first API call.
     #include "PlayFabApiCall.h"
     ```
 
-2. In the **virtualvoid Initialize(CoreApplicationView^ applicationView)** function in **Main.cpp**, add `MakePlayFabCall();` as the last call.
-3. Hit **F5** to deploy and run the application. 
-4. In the Output log window, you should be able to see the result of your first **PlayFab API** call from the **Xbox**.
+2. In the `virtualvoid Initialize(CoreApplicationView^ applicationView)` function in `Main.cpp`, add `MakePlayFabCall();` as the last call.
+3. Hit **F5** to deploy and run the application.
+4. In the Output log window, you should be able to see the result of your first PlayFab API call from the Xbox.
 
-Great! Now that you know how to set up the **XplatCPP SDK** for **Xbox**, you can create your game and start making **PlayFab API** calls.
+Great! Now that you know how to set up the XplatCPP SDK for Xbox, you can create your game and start making PlayFab API calls.

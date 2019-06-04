@@ -4,6 +4,8 @@
   href: developer.md
 - name: LiveOps
   href: LiveOps/liveops.md
+- name: Create a PlayFab Account
+- href: pfab-account.md
   items:
   - name: LiveOps Handbook
     href: LiveOps/liveops-handbook.md

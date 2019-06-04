@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 This quickstart is designed to help you make your first API call in Python 3.
 
-Before continuing, make sure you have completed [Getting started for developers](../../personas/developer.md) which ensures you have a PlayFab account and are familiar with the PlayFab Game Manager.
+Before continuing, make sure you have completed [Getting started for developers](../../personas/developer.md), which ensures you have a PlayFab account and are familiar with the PlayFab Game Manager.
 
 A native Python project can be used a few ways:
 
