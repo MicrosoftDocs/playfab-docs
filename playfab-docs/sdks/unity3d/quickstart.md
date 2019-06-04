@@ -101,9 +101,9 @@ public class PlayFabLogin : MonoBehaviour
 {
     public void Start()
     {
-        //Note: Setting title Id here can be skipped if you have set the value in Editor Extensions already.
-        if (string.IsNullOrEmpty(PlayFabSettings.TitleId)){
-            PlayFabSettings.TitleId = "144"; // Please change this value to your own titleId from PlayFab Game Manager
+        // Note: Setting title Id here can be skipped if you have set the value in Editor Extensions already.
+        if (string.IsNullOrEmpty(PlayFabSettings.staticSettings.TitleId)){
+            PlayFabSettings.staticSettings.TitleId = "144"; // Please change this value to your own titleId from PlayFab Game Manager
         }
         var request = new LoginWithCustomIDRequest { CustomId = "GettingStartedGuide", CreateAccount = true};
         PlayFabClientAPI.LoginWithCustomID(request, OnLoginSuccess, OnLoginFailure);
@@ -162,7 +162,7 @@ This optional last section describes each part of `PlayFabLogin.cs` in detail.
 
 Inside of Start():
 
-- `PlayFabSettings.TitleId = "xxxx"`;
+- `PlayFabSettings.staticSettings.TitleId = "xxxx"`;
   - Every PlayFab developer creates a title in Game Manager. When you publish your game, you must code that titleId into your game. This lets the client know how to access the correct data within PlayFab. For most users, just consider it a mandatory step that makes PlayFab work.
 
 - `var request = new LoginWithCustomIDRequest { CustomId = "GettingStartedGuide", CreateAccount = true};`
@@ -188,7 +188,7 @@ Inside of OnLoginFailure
   - You can find error codes shared by all API methods in our [Global API Method Error Codes](../../features/automation/cloudscript/global-api-method-error-codes.md) tutorial, or specific codes at the bottom of each API method documentation.
 
 - Why API calls fail (In order of likelihood).
-  - `PlayFabSettings.TitleId` is not set. If you forget to set titleId to your title, then nothing will work.
+  - `PlayFabSettings.staticSettings.TitleId` is not set. If you forget to set titleId to your title, then nothing will work.
   - Request parameters. If you have not provided the correct or required information for a particular API call, then it will fail. See `error.errorMessage`, `error.errorDetails`, or `error.GenerateErrorReport()` for more info.
   - Device connectivity issue. Cell-phones lose/regain connectivity constantly, and so any API call at any time can fail randomly, and then work immediately after. Going into a tunnel can disconnect you completely.
   - The PlayFab Unity SDK currently expects API calls from the main Unity thread. Calling the SDK on a background thread will likely cause exceptions with coroutines and other Unity methods not being invoked on the main Unity thread.
