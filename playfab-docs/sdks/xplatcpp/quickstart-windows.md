@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # C++ quickstart for Windows
 
-This guide will help you make your first API call in C++. 
+This guide will help you make your first API call in C++.
 
 Before continuing, make sure you have completed [Getting started for developers](../../personas/developer.md), which ensures you have a PlayFab account and are familiar with the PlayFab Game Manager.
 
@@ -49,7 +49,7 @@ Installation:
 
 3. Create a new C++ Console project.
 
-4. Right-click on the project in Solution Explorer, select **Manage NuGet packages**, and search for "playfab." You should see a small number of matches, and you're looking for: "com.playfab.xplatcppsdk.vXXX." Install the json cpp packages. Your project should now compile.  
+4. Right-click on the project in **Solution Explorer**, select **Manage NuGet packages**, and search for "playfab." You should see a small number of matches, and you're looking for `com.playfab.xplatcppsdk.vXXX`. Install the `json cpp` packages. Your project should now compile.  
 
 PlayFab Installation Complete!  
 
@@ -59,9 +59,9 @@ This guide will provide the minimum steps to make your first PlayFab API call, w
 
 1. In Visual Studio, Create a new C++ Console Application.
 
-2. Open up the main cpp document for this project (by default it would be ConsoleApplication1.cpp unless you renamed your project).
+2. Open up the main cpp document for this project (by default it would be `ConsoleApplication1.cpp` unless you renamed your project).
 
-3. Replace the contents of that file with the following:
+3. Replace the contents of that file with the content shown below.
 
 ```cpp
 // ConsoleApplication1.cpp : Defines the entry point for the console application.
@@ -117,29 +117,31 @@ int main()
 
 1. When it loads, you should see the following text: "Congratulations, you made your first successful API call!"  
 
-2. Start making other API calls and build your game.
+2. Start making other API calls, and build your game.
 
 > [!NOTE]
 > For a list of all available client API calls, see our [PlayFab API References](../../api-references/index.md) documentation. Happy coding!
 
 ## Deconstruct the code
 
-This optional last section describes each part of ConsoleApplication1.cpp in detail.
-- Includes
-  - The PlayFab includes get you access to the the Client APIs. In this example, Windows.h is only used for Sleep()
+This optional last section describes each part of `ConsoleApplication1.cpp` in detail.
 
-- using namespaces
-  - PlayFab and PlayFab::ClientModels. The first is for API methods and general PlayFab usage, and the latter is for the objects sent to and received by Client API calls
+- Includes PlayFab access to the the Client APIs.
+  - In this example, `Windows.h` is only used for `Sleep()`.
 
-- OnLoginSuccess, OnLoginFailure are callback functions asynchronously invoked by PlayFabClientAPI.LoginWithCustomID
-- main()
-  - PlayFabSettings::titleId = WidenString("144");
-    - Every PlayFab developer creates a title in Game Manager. When you publish your game, you must code that titleId into your game. This lets the client know how to access the correct data within PlayFab. For most users, just consider it a mandatory step that makes PlayFab work
+- Using namespaces in PlayFab and PlayFab::ClientModels.
+  - Playfab is used for API methods and general PlayFab usage.
+  - PlayFab::ClientModels is used for the objects sent to and received by Client API calls.
 
-  - LoginWithCustomIDRequest request; (and field initialization)
+- `OnLoginSuccess`, `OnLoginFailure` are callback functions asynchronously invoked by `PlayFabClientAPI.LoginWithCustomID`.
+- `main()`
+  - `PlayFabSettings::titleId = WidenString("144");`
+    - Every PlayFab developer creates a title in Game Manager. When you publish your game, you must code that `titleId` into your game. This lets the client know how to access the correct data within PlayFab. For most users, just consider it a mandatory step that makes PlayFab work
+
+  - `LoginWithCustomIDRequest request;` (and field initialization)
     - Most PlayFab API methods require input parameters, and those input parameters are packed into a request object
     - Every API method requires a unique request object, with a mix of optional and mandatory parameters
-      - For LoginWithCustomIDRequest, there is a mandatory parameter of CustomId, which uniquely identifies a player and CreateAccount, which allows the creation of a new account with this call.
+      - For `LoginWithCustomIDRequest`, there is a mandatory parameter of `CustomId`, which uniquely identifies a player and `CreateAccount`, which allows the creation of a new account with this call.
 
     - For login, most developers will want to use a more appropriate login method
       - See the [PlayFab Login documentation](xref:titleid.playfabapi.com.client.authentication) for a list of all login methods, and input parameters. Common choices are:
@@ -147,25 +149,25 @@ This optional last section describes each part of ConsoleApplication1.cpp in det
         - [LoginWithIOSDeviceID](xref:titleid.playfabapi.com.client.authentication.loginwithiosdeviceid)
         - [LoginWithEmailAddress](xref:titleid.playfabapi.com.client.authentication.loginwithemailaddress)
 
-  - PlayFabClientAPI::LoginWithCustomID(request, OnLoginSuccess, OnLoginFail);
-    - Triggers the threaded API call. When complete, OnLoginSuccess or OnLoginFail will be invoked appropriately
+  - `PlayFabClientAPI::LoginWithCustomID(request, OnLoginSuccess, OnLoginFail);`
+    - Triggers the threaded API call. When complete, `OnLoginSuccess` or `OnLoginFail` will be invoked appropriately.
 
-  - while (PlayFabClientAPI::Update() != 0) Sleep(1);
-    - Update returns the number of API calls that are in-progress
-    - Update also executes the actual calls to OnLoginSuccess or OnLoginFail, once the threaded API calls are complete
-      - This allows your callbacks to execute in a thread-safe manner, when your program is inherently single-threaded
-      - True multi-threaded options are also available, but not demonstrated here
+  - While `(PlayFabClientAPI::Update() != 0) Sleep(1);`
+    - Update returns the number of API calls that are in progress.
+    - Update also executes the actual calls to `OnLoginSuccess` or `OnLoginFail`, once the threaded API calls are complete.
+      - This allows your callbacks to execute in a thread-safe manner, when your program is inherently single-threaded.
+      - True multi-threaded options are also available, but not demonstrated here.
 
-  - Inside of OnLoginSuccess:
+  - Inside of `OnLoginSuccess`:
     - The result object of many API success callbacks will contain the requested information
-    - LoginResult contains some basic information about the player, but for most users, login is simply a mandatory step before calling other APIs
+    - `LoginResult` contains some basic information about the player, but for most users, login is simply a mandatory step before calling other APIs.
 
-  - Inside of OnLoginFailure:
-    - API calls can fail for many reasons, and you should always attempt to handle failure
+  - Inside of `OnLoginFailure`:
+    - API calls can fail for many reasons, and you should always attempt to handle failure.
     - Why API calls fail (In order of likelihood)
-      - PlayFabSettings.TitleId is not set. If you forget to set titleId to your title, then nothing will work.
-      - Request parameters. If you have not provided the correct or required information for a particular API call, then it will fail. See error.errorMessage, error.errorDetails, or error.GenerateErrorReport() for more info.
-      - Device connectivity issue. Cell-phones lose/regain connectivity constantly, and so any API call at any time can fail randomly, and then work immediately after. Going into a tunnel can disconnect you completely.
+      - `PlayFabSettings.TitleId` is not set. If you forget to set `titleId` to your title, then nothing will work.
+      - Request parameters. If you have not provided the correct or required information for a particular API call, then it will fail. See `error.errorMessage`, `error.errorDetails`, or `error.GenerateErrorReport()` for more info.
+      - Device connectivity issue. Cell phones lose/regain connectivity constantly, and so any API call at any time can fail randomly, and then work immediately after. Going into a tunnel can disconnect you completely.
       - PlayFab server issue. As with all software, there can be issues. See our [release notes](../../release-notes/index.md) for updates.
       - The internet is not 100% reliable. Sometimes the message is corrupted or fails to reach the PlayFab server.
 
