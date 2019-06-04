@@ -239,7 +239,7 @@ This optional last section describes each part of App.cs in detail.
       - Why API calls fail (In order of likelihood)
         - `PlayFabSettings.TitleId` is not set. If you forget to set `titleId` to your title, then nothing will work.
         - Request parameters. If you have not provided the correct or required information for a particular API call, then it will fail. See `error.errorMessage`, `error.errorDetails`, or `error.GenerateErrorReport()` for more info.
-        - Device connectivity issue. Cell-phones lose/regain connectivity constantly, and so any API call at any time can fail randomly, and then work immediately after. Going into a tunnel can disconnect you completely.
+        - Device connectivity issue. Cell phones lose/regain connectivity constantly, and so any API call at any time can fail randomly, and then work immediately after. Going into a tunnel can disconnect you completely.
         - PlayFab server issue. As with all software, there can be issues. See our [release notes](../../release-notes/index.md) for updates.
         - The internet is not 100% reliable. Sometimes the message is corrupted or fails to reach the PlayFab server.
 
