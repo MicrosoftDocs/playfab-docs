@@ -12,9 +12,9 @@ ms.localizationpriority: medium
 
 # Cocos2D-x quickstart
 
-This quickstart will assist you in making your first PlayFab API call in the Cocos2d-x engine.
+This quickstart assists you in making your first PlayFab API call in the Cocos2d-x engine.
 
-Before continuing, make sure you have completed [Getting started for developers](../../personas/developer.md), which ensures you have a PlayFab account and are familiar with the PlayFab Game Manager.
+Before you can call any PlayFab API, you must have a [PlayFab developer account](https://developer.playfab.com/en-us/sign-up). 
 
 ## Cocos2d-x project setup
 
