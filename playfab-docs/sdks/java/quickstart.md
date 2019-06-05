@@ -12,9 +12,9 @@ ms.localizationpriority: medium
 
 # Java quickstart for Native and Android Studio
 
-This tutorial lets you get up and running with the PlayFab JavaSDK and simple Java program.
+This quickstart lets you get up and running with the PlayFab JavaSDK and simple Java program.
 
-Before continuing, make sure you have completed [Getting started for developers](../../personas/developer.md), which ensures you have a PlayFab account and are familiar with the PlayFab Game Manager.
+Before you can call any PlayFab API, you must have a [PlayFab developer account](https://developer.playfab.com/en-us/sign-up). 
 
 The goals for this tutorial are:  
 

@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 The SDK Generator is a node.js-based program that takes a JSON description of the PlayFab API, and uses it to generate out all the different SDKs that must be kept up to date. The SDK Generator project also contains the sources for all PlayFab SDKs on all platforms. If you want to make a change in an SDK, this is where the change has to go.
 
-Before continuing, make sure you have completed [Getting started for developers](../../personas/developer.md), which ensures you have a PlayFab account and are familiar with the PlayFab Game Manager.
+Before you can call any PlayFab API, you must have a [PlayFab developer account](https://developer.playfab.com/en-us/sign-up). 
 
 ## Prerequisites
 

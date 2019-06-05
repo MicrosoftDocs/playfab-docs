@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # C++ quickstart for Linux
 
-This guide will help you make your first API call in C++. A native C++ project can be used a few ways:
+This quickstart helps you make your first API call in C++. A native C++ project can be used a few ways:
 
 - Stand-alone console Admin tools for maintaining your game.
   - The PlayFab Cross-Platform C++ SDK works great for a stand-alone C++ program.
@@ -31,7 +31,7 @@ If you have any issues, let us know on the [Forums](https://community.playfab.co
 
 OS: This guide is written for Linux, using Ubuntu 18.04 LTS.
 
-Before beginning, please take the time to make sure you have completed [Getting started for developers](../../personas/developer.md), which ensures you have a PlayFab account and are familiar with the PlayFab Game Manager.
+Before you can call any PlayFab API, you must have a [PlayFab developer account](https://developer.playfab.com/en-us/sign-up). 
 
 ### Installation
 

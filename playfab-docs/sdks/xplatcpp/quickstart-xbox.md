@@ -12,9 +12,9 @@ ms.localizationpriority: medium
 
 # C++ quickstart for Xbox
 
-This guide helps you make your first PlayFab API call in C++ on an Xbox.
+This quickstart helps you make your first PlayFab API call in C++ on an Xbox.
 
-Before beginning, please take the time to make sure you have completed [Getting started for developers](../../personas/developer.md), which ensures you have a PlayFab account and are familiar with the PlayFab Game Manager.
+Before you can call any PlayFab API, you must have a [PlayFab developer account](https://developer.playfab.com/en-us/sign-up). 
 
 ## Xbox project setup
 

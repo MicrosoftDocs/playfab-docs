@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 This quickstart has been created to help you make your first PlayFab API call using CSharp (C#).
 
-Before continuing, make sure you have completed [Getting started for developers](../../personas/developer.md), which ensures you have a PlayFab account and are familiar with the PlayFab Game Manager.
+Before you can call any PlayFab API, you must have a [PlayFab developer account](https://developer.playfab.com/en-us/sign-up). 
 
 ## CSharp Getting Started guide
 

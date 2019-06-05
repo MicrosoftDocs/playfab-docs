@@ -12,9 +12,9 @@ ms.localizationpriority: medium
 
 # Lua quickstart for Defold
 
-This guide has been created to assist you in making your first PlayFab API call using Defold.
+This quickstart assists you in making your first PlayFab API call using Defold.
 
-Before continuing, be sure you have completed [Getting started for developers](../../personas/developer.md), which ensures you have a PlayFab account and are familiar with the PlayFab Game Manager.
+Before you can call any PlayFab API, you must have a [PlayFab developer account](https://developer.playfab.com/en-us/sign-up). 
 
 ## Defold project setup
 
