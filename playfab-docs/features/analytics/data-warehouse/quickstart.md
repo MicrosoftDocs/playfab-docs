@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 >
 > Access to this feature is restricted to select titles. If you are interested in trying it, please contact us at [helloplayfab@microsoft.com](mailto:helloplayfab@microsoft.com).
 
-For customers onboarded to the PlayFab Private Preview, Insights is accessed from Game Manager by navigating to Analytics > Insights (Preview). Your first step will be to enable a dedicated storage and compute cluster. To do so, you must provide an account ID for administering databases in one of the following formats:
+For customers onboarded to the PlayFab Private Preview, Insights is accessed from your Game Manager by navigating to **Analytics** > **Insights (Preview)**. Your first step will be to enable a dedicated storage and compute cluster. To do that, you must provide an account ID for administering databases in one of the following formats:
 
 1. Organizational account (i.e. AAD ID)
 
@@ -33,7 +33,7 @@ It takes approximately 24-48 hours to completely provision an isolated cluster f
 
 An organizational account is an account created by an organization’s administrator to enable a member of the organization access to all Microsoft Cloud services - such as Microsoft Azure, Windows Intune, or Office 365.
 
-It can take the form of a user’s organizational email address, such as username@orgname.com, when an organization federates or synchronizes its Active Directory accounts with Azure Active Directory.
+It can take the form of a user’s organizational email address - such as `username@orgname.com`, when an organization federates or synchronizes its Active Directory accounts with Azure Active Directory.
 
 If you want to provision the Insight service with an organizational account, you will also need to provide the Azure Active Directory ID associated with your organization. Follow the steps outlined below to capture your directory ID:
 
@@ -59,7 +59,7 @@ If you want to provision the Insight service with an organizational account, you
 
 A Microsoft account (MSA) is the combination of an email address and a password used to sign in to all Microsoft products and services. If a user uses an email address and password to sign in to these or other services, then the user already has a Microsoft account.
 
-However, the user can also sign up for a new one at any time. You can find more information at [account.microsoft.com](https://account.microsoft.com/account).
+However, the user can *also* sign up for a new one at any time. You can find more information at [account.microsoft.com](https://account.microsoft.com/account).
 
 If you don't have an organizational account or a Microsoft account, you can quickly create an organizational account at [signup.live.com](https://signup.live.com), as shown below.
 
