@@ -16,7 +16,7 @@ A/B testing is a technique for running experiments to determine the optimal sett
 
 With A/B testing, you create a series of player “buckets” into which you partition your players randomly, with weights assigned to each bucket. Each bucket is assigned a different price. Players see the price assigned to their bucket. You then compare the results for each bucket, to determine the most effective price.
 
-Consider this test, for example:
+The following table of values gives you an example of what this might look like.
 
 |                      |A                   |B                      |C                      |
 | :--------------------|:-------------------|:----------------------|:----------------------|
@@ -35,7 +35,7 @@ We are building support for A/B testing on top of our player segmentation featur
 
 Today, the only feature in PlayFab that can directly show different players different results based on segment is the [targeted store override feature](https://blog.playfab.com/blog/introducing-targeted-stores) of the in-game economy. Effectively, this means the only thing you can A/B test today are stores (including both prices, and collection of items).
 
-However, we will soon be adding the ability for other PlayFab features to target different data to different players, such as title data.
+However, we will soon be adding the ability for other PlayFab features to target different data to different players - such as title data.
 
 Once a test is turned on, we will start generating a daily report for basic Key Performance Indicators (KPIs), based on buckets. This will allow you to determine the effectiveness of your tests. Later, we will make it possible to do more detailed analysis using an external analytics provider.
 
@@ -63,7 +63,7 @@ See our [store segment override blog](https://blog.playfab.com/blog/introducing-
 
 ## Reviewing Results
 
-Once you’ve created a test, we will begin to generate a report called “Daily A/B Test KPI Report” each day. This will give you key KPIs by player bucket for each test you’re currently running.
+Once you’ve created a test, we will begin to generate a daily report referred to as the Daily A/B Test KPI Report. This will give you key KPIs by player bucket for each test you are currently running.
 
 We recommend letting this report run for at least a few days, to get a baseline before configuring store overrides. We partition your users based on their PlayFab IDs, which are randomly assigned at creation time. Due to the probabilistic assignment of players, it is unlikely that the KPI will be uniform at the beginning of the test.
 
@@ -71,7 +71,9 @@ Once you're confident about the results of your test, you can then reconfigure y
 
 ## Future Work on A/B Testing
 
-Today, Stores are the only PlayFab feature area that have segment overrides. We have plans for overriding Title Data by segments, as well as other areas. This will look much like store overrides, where title-wide variables will be configurable, based on the segment of the user requesting title data. This will allow for tuning a much wider variety of features for your title.
+Today, stores are the only PlayFab feature area that have segment overrides. We have plans for overriding Title Data by segments - as well as other areas - in the immediate future.
+
+This will look much like store overrides, where title-wide variables will be configurable, based on the segment of the user requesting title data. This will allow for tuning a much wider variety of features for your title.
 
 We also have plans to allow you to run A/B tests within an existing segment, instead of for all players. So, for example, you could try running an A/B test on pricing, that applies only to members of the VIP segment.
 

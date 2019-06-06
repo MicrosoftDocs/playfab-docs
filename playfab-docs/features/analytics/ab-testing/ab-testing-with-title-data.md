@@ -28,20 +28,20 @@ A/B Testing title data is a planned feature. However, It is possible to build yo
 
 ## General idea and implementation
 
-We already have a built-in feature of defining A/B segments for a player (described in the [A/B Testing quickstart](../../analytics/ab-testing/quickstart.md)). Let's reuse those segments to return title data, based on which bucket our player belongs to.
+We already have a built-in feature defining A/B segments for a player (described in the [A/B Testing quickstart](../../analytics/ab-testing/quickstart.md)). Let's reuse those segments to return title data, based on which bucket our player belongs to.
 
 First, we will need an A/B test. Please, follow the [A/B Testing quickstart](../../analytics/ab-testing/quickstart.md) to create an A/B test. Once the test is created, you will see the IDs of each of the individual **Buckets**, as shown below.
 
 ![Game Manager - A/B Test - Buckets](media/tutorials/game-manager-ab-test-buckets.png)  
 
-Functionally, a bucket ID is the same as a normal segment ID - an API call to [GetPlayerSegments](xref:titleid.playfabapi.com.server.playstream.getplayersegments) will return both segment IDs and A/B test bucket IDs.
+Functionally, a bucket ID is the same as a normal segment ID. An API call to [GetPlayerSegments](xref:titleid.playfabapi.com.server.playstream.getplayersegments) will return both segment IDs and A/B test bucket IDs.
 
-We can use this to our advantage and introduce a convention for A/B-Tested title data keys, as shown below.
+We can use this to our advantage, and introduce a convention for A/B-Tested title data keys, as shown below.
 
 ![Game Manager - A/B Test - Title Data Keys](media/tutorials/game-manager-ab-test-title-data-keys.png)  
 
-- We *first* introduce a regular entry with the **Key** called **MyMessage**.
-- We then introduce an **A/B**-version for each **Bucket**. The **Key** is composed using the *original* **Key** and a suffix in the form **_BUCKETID**.
+- First, we introduce a regular entry with the **Key** called **MyMessage**.
+- We then introduce an **A/B**-version for each **Bucket**. The **Key** is composed using the *original* **Key** and a suffix in the form `_BUCKETID`.
 - At any point in time, if we are given an *original* key and segment ID, we can easily compose a key that is entry-specific for this segment/bucket.
 - Our next step is defining one more entry - a list of all the bucket IDs participating in the testing. In this case we have three of those, as shown below.
 
@@ -50,7 +50,7 @@ We can use this to our advantage and introduce a convention for A/B-Tested title
 > [!NOTE]
 > Make *sure* to use double quotes ( " ). Otherwise, the JavaScript runtime will not be able to parse it properly.
 
-Now let us define a brand new API call using CloudScript. This API call is named **GetTitleDataAB** and performs a very simple procedure:
+Now let us define a brand new API call using CloudScript. This API call is named `GetTitleDataAB`, and performs a very simple procedure:
 
 1. We receive a regular title data key (ex. **MyMessage**) from the client, via args.
 2. We get all the bucket IDs participating in the testing.
@@ -63,7 +63,7 @@ Now let us define a brand new API call using CloudScript. This API call is named
     - For example, **MyMessage** -> **This is normal message**.
 
 5. If a player belongs to one of the tested segments, we assemble a new key using our convention, and try to fetch the value for this key:
-    - For example, if a player belongs to a bucket with the ID **920BD7F496ACB328**, we read the value for the **MyMessage_920BD7F496ACB328** key.
+    - For example, if a player belongs to a bucket with the ID `920BD7F496ACB328`, we read the value for the `MyMessage_920BD7F496ACB328` key.
 
 6. If no bucket-specific value was defined, we, again, return the value for the original key.
 
