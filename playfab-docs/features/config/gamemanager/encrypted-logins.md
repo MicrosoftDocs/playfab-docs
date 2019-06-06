@@ -38,8 +38,8 @@ The PlayFab Admin API exposes a method to manage your player shared secrets.
 Run the following code to add a player shared secret to your title.
 
 ```csharp
-PlayFabSettings.DeveloperSecretKey = "__DEVELOPER_KEY__";
-PlayFabSettings.TitleId = "__TITLE_ID__";
+PlayFabSettings.staticSettings.DeveloperSecretKey = "__DEVELOPER_KEY__";
+PlayFabSettings.staticSettings.TitleId = "__TITLE_ID__";
 var response = await PlayFabAdminAPI.CreatePlayerSharedSecretAsync(new CreatePlayerSharedSecretRequest()
 {
     FriendlyName = "__KEY_NAME__"

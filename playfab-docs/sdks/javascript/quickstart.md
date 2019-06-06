@@ -12,9 +12,9 @@ ms.localizationpriority: medium
 
 # JavaScript quickstart for Native and Phaser
 
-This guide helps you make your first API call in JavaScript.
+This quickstart helps you make your first API call in JavaScript.
 
-Before continuing, make sure you have completed [Getting started for developers](../../personas/developer.md), which ensures you have a PlayFab account and are familiar with the PlayFab Game Manager.
+Before you can call any PlayFab API, you must have a [PlayFab developer account](https://developer.playfab.com/en-us/sign-up). 
 
 ## JavaScript project setup
 

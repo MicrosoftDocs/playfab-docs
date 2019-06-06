@@ -25,18 +25,20 @@ Creating and editing queries - in addition to working interactively with returne
 
 - Log in to [AzureData Explorer](https://dataexplorer.azure.com).
 
-- Sign-in with your organizational or Microsoft account.
+- Sign in with your organizational or Microsoft account.
 
 ![Image of sign in to Microsoft account](media/tutorials/dw-tutorial-sign-in.png)
 
 ## 2. Connect your PlayFab Insights cluster to Azure Data Explorer
 
-- Return to the **Analytics | Insights** page, and capture the name of the cluster assigned to your title.
+- Return to the **Analytics > Insights** page, and capture the name of the cluster assigned to your title.
 - Select the **Add Cluster** button in the Azure Data Explorer.
 
    ![Image of adding a cluster](media/tutorials/dw-tutorial-add-cluster.png)
 
-- Enter the URI in the format `https://`*clustername*`.kusto.windows.net`. For example, if the cluster is named **PlayFab34239**, then the URI is: `https://PlayFab34239.kusto.windows.net`
+- Enter the URI in the format `https://`*clustername*`.kusto.windows.net`.  
+
+     For example, if the cluster is named **PlayFab34239**, then the URI is: `https://PlayFab34239.kusto.windows.net`
 
    ![Image of adding a cluster part 2](media/tutorials/dw-tutorial-add-cluster-2.png)
 
@@ -89,7 +91,7 @@ player_logged_in | summarize count() by Platform | render piechart
 
 ## 5. Data Explorer resources
 
-Here are some additional resources to help you take the full advantage of the Data Explorer:
+Here are some links for additional resources to help you take the full advantage of the Data Explorer:
 
 ### Tutorials
 
