@@ -25,7 +25,7 @@ The Xbox Data Add On provides transaction-level usage and purchase data from Mic
 
 #### Step 1 | Create a PlayFab Account
 
-To onboard to the Xbox Data Add On, first sign up for a PlayFab account and create a title at [www.playfab.com](https://www.playfab.com). Follow the account creation flow to create a studio and at least one title you'd like to receive data for.
+To onboard to the Xbox Data Add On, first sign up for a PlayFab account and create a title at [https://playfab.com](https://playfab.com). Follow the account creation flow to create a studio and at least one title you'd like to receive data for.
 
 #### Step 2 | Request to the PlayFab Insights Private Preview
 
