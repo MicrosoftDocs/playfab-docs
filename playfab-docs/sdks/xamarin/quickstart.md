@@ -28,7 +28,7 @@ OS: This guide is written for Windows 10, using Visual Studio 2015.
 
 4. Check for updates, even with fresh installs, as shown below.
 
-        Tools -> Options -> Xamarin -> Other -> Check Now
+      **Tools -> Options -> Xamarin -> Other -> Check Now**
 
       ![Xamarin Updates for Visual Studio](media/xamarin-vs-updates.png)
 
@@ -41,7 +41,7 @@ OS: This guide is written for Windows 10, using Visual Studio 2015.
 
 7. Create a new project using the options shown below.
 
-        Templates -> Visual C# -> Cross-Platform -> Blank App (Xamarin.Forms Shared)  
+    **Templates -> Visual C# -> Cross-Platform -> Blank App (Xamarin.Forms Shared)**
 
 ![Create new Xamarin Project](media/xamarin-new-project.png)  
 

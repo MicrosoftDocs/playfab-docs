@@ -45,19 +45,19 @@ The best way to acquire our Unity SDK is via our editor extensions - although yo
 
 2. To import the the Unity Editor Extensions package, navigate to where the file was downloaded, and double-click on the .UnityPackage file. This will bring up the following window.
 
-    ![Import Unity package](media/import-uedex.png)  
+   ![Import Unity package](media/import-uedex.png)
 
 3. Select **Import**, which will import the PlayFab Unity Editor Extensions into your project.
 
 > [!NOTE]
-> Before you can download the SDK make sure you are logged into your PlayFab account. Select the **Log In** link to take you to the login pane, and log in with your PlayFab username and password.
+> Before you can download the SDK make sure you are logged into your PlayFab account. Select the **Log In** link to take you to the login pane, and log in with your PlayFab username and password.  
 
-    ![Log in to PlayFab](media/login-register-uedex.png)
+   ![Log in to PlayFab](media/login-register-uedex.png)  
 
-  - Once you have logged in, your screen should change to the one shown in the following example.
-  - Select **Install PlayFab SDK**, and it will automatically import the SDK into your project, or upgrade the version you currently have.
-  
-    ![Install PlayFab SDK](media/install-sdk.png)
+   - Once you have logged in, your screen should change to the one shown in the following example.
+   - Select **Install PlayFab SDK**, and it will automatically import the SDK into your project, or upgrade the version you currently have.
+
+   ![Install PlayFab SDK](media/install-sdk.png)
 
 ## Set title settings
 
