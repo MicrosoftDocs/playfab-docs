@@ -20,15 +20,15 @@ Let's start by looking at the final results of a successful search, displaying a
 
 Searches are constructed from three fields:
 
-1. The **Query** field
-2. The **Group by** field
-3. The **Sum by** field
+1. The **Query** field.
+2. The **Group by** field.
+3. The **Sum by** field.
 
 The first field to edit will usually be the **Query** field, which is constructed by selecting an event type, a start date, and an end date.
 
 ![Event Query - Event Type and Dates](media/tutorials/event-query-event-type-and-dates.png)  
 
-By editing anything within the event type, start date, or end date, the query field itself will be constructed.
+By editing anything within the event type, start date, or end date, the **Query** field itself will be constructed.
 
 ![Event Query Field - Date range](media/tutorials/event-query-field-date-range.png)  
 
@@ -38,7 +38,7 @@ At this point, the search will result in showing only [player_realmoney_purchase
 
 By default, **Group by** will aggregate events by their event type. Here, we are only querying for a *single* event type.
 
-Instead, let's group by a property of the event. Looking at the [documentation for the event](../../../api-references/events/player-realmoney-purchase.md), we can see that **paymentProvider** is a property.
+Instead, let's group by a property of the event. Looking at the [documentation for the event](../../../api-references/events/player-realmoney-purchase.md), we can see that `paymentProvider` is a property.
 
 ![Event Query - Group by paymentProvider](media/tutorials/event-query-group-by-paymentprovider.png)  
 
@@ -54,7 +54,7 @@ We do this by selecting the **Show JSON** button to the left of the **Event name
 
 ![Event - Show JSON Button](media/tutorials/event-show-json-button.png)  
 
-Now we can find for a value to compute with. Looking at the JSON, an appropriate value (a number value, not an ID) is **OrderTotal**.
+Now we can find for a value to compute with. Looking at the JSON, an appropriate value (a number value, not an ID) is `OrderTotal`.
 
 ![Event - JSON](media/tutorials/event-json.png)  
 
@@ -68,7 +68,7 @@ After searching again, we can see that our chart is now what we want, as shown i
 
 We could be done here, but there's one issue - If you want to *save* this search, the dates will still be the week of **Aug 25** to **Aug 31**!
 
-We can do better by *manually editing* the Query field.
+We can do better by *manually editing* the **Query** field.
 
 The constructed **Query** field uses Azure Data Explorer search syntax, meaning that you can use Azure Data Explorer's query language scalar function `ago()` and the `datetime` data type. Literals of type `datetime` are accessible at the Azure Data Explorer [Data Types](https://docs.microsoft.com/azure/kusto/query/scalar-data-types/datetime) page. The `ago()` function is documented in the Azure Data Explorer [Scalar Functions](https://docs.microsoft.com/azure/kusto/query/agofunction) page.
 
