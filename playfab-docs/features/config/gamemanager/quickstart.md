@@ -299,7 +299,7 @@ In the **Automation** area, you can run CloudScript, run A/B tests, assign Rules
 
 In the **Analytics** area you can do a number of things to track and analyze data from your players' activities. There are a number of graphing and reports capabilities that provide the ability to consolidate and visualize the data.
 
-**Trends** - configure and view trends for a number of statistics for time periods ranging from 7 days to 26 months. The Trends graph shows classic retention - only new players that have returned, in the designated time period. The 30-day retention report includes new and returning players.
+**Trends** - configure and view trends for a number of statistics for time periods ranging from 7 days to 26 months. The Trends graph shows classic retention - only new players that have returned - for the chosen time period. The 30-day retention report includes both new and returning players.
 
 **Event History** - search and display a number of different Event History types, depending on the query you create. Use event name, date range, or event values.
 
