@@ -12,9 +12,9 @@ ms.localizationpriority: medium
 
 # Currencies
 
-This tutorial describes the function of the **Currency** tab in the **Economy** section in **Game Manager**. From this tab, you configure the virtual currencies that you will use in your game.
+This tutorial describes the function of the **Currency** tab in the **Economy** section in **Game Manager**. Use this tab to configure virtual currencies to use in your game.
 
-Virtual Currencies are the foundation of in-game economies. Players and characters can be granted these currencies, which can then be used to buy or trade items. Items can have a cost in either a virtual currency or real money.
+Virtual Currencies are the foundation of in-game economies. Players and characters can be granted these currencies, which they can use to buy or trade items. Items have a cost in either virtual currency or real money.
 
 It's *exactly* like real life - except it's *virtual!* Economic regulation in-game is up to *you*.
 
@@ -30,9 +30,7 @@ Our Game Manager provides tools to make managing your virtual economy straightfo
 
 ## Field reference
 
-This section describes each field in the **Currency** section of the **Economy** area in **Game Manager**. These are the fields that you'll use to create and maintain the virtual currencies that make up your in-game economy.
-
-All of these fields are present in the **New Currency** screen (shown below).
+This section describes each field in the **Currency** section of the **Economy** area in **Game Manager**. The following are the fields in the **New Currency** screen (shown below) which you'll use to create and maintain the virtual currencies that make up your in-game economy.
 
 - **Currency code** and **Display name** are *required* fields with no default values. The other fields have a default value of **zero**.
 
