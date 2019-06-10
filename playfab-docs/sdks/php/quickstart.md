@@ -45,13 +45,6 @@ If you set up everything correctly, this page should work: <https://localhost/Ex
   * `{"CustomID":"GettingStartedGuide", "CreateAccount": true}`
 * Select **Send**.
 
-2. Select Client, and LoginWithCustomID
-
-3. Put this in JsonRequest:  
-
-        {"CustomID":"GettingStartedGuide", "CreateAccount": true}
-4. Press "Send."
-
 ## Pending changes
 
 This guide and example describe using the Client API via your PHP server. This is not a best practice. Your game should use the JavaScriptSdk for client calls, from the client HTML. Your server logic should make server API calls as needed, and you should implement your own server logic between your client and our server API.
