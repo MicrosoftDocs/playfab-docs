@@ -15,17 +15,17 @@ ms.localizationpriority: medium
 > [!IMPORTANT]
 > This feature is currently in **Private Preview**.  
 >
-> It is provided to give you an early look at an upcoming feature, and to allow you to provide feedback while it is still in development.  
+> It is provided to give you an early look at an upcoming feature, and to allow you to give us feedback while it is still in development.  
 >
 > Access to this feature is restricted to select titles. If you are interested in trying it, please contact us at [helloplayfab@microsoft.com](mailto:helloplayfab@microsoft.com).
 
- Event Archive (preview) can be used to get your events out of PlayFab and into your Azure Blob Storage (ABS) account or Amazon Simple Storage Service (S3) bucket. Event Archive allows you to decide which of your title’s events to export, and how often. The events are dropped in [JSONL format](#event-output-format), each event in its own individual file.
+ Event Archive (preview) can be used to get your events out of PlayFab and into your Azure Blob Storage (ABS) account or Amazon Simple Storage Service (S3) bucket. Event Archive allows you to decide which of your title’s events to export, and how often. The events are dropped in [JSONL format](#event-output-format), with each event in its own individual file.
 
 This tutorial shows you how to configure event archiving from scratch.
 
 ## Event Archiving overview
 
-### Setup Storage Account
+### Setting up a Storage Account
 
 - To create an Amazon S3 bucket, navigate to this section:  [Create an Amazon S3 Bucket](configure-s3-bucket.md).
 - To create an Azure storage account, visit [Create a Storage Account](https://docs.microsoft.com/en-us/azure/storage/common/storage-quickstart-create-account?tabs=azure-portal).
@@ -97,7 +97,7 @@ The frequency you select will affect how often your data is output. A frequency 
 
 - Event archiving does not support archiving historical data. It only archives data starting when the archive is created.
 - There is a limit of 250 events per archive and 3 *active* archives per title. You may request to have this limit increased by reaching out to the PlayFab team.
-- Event archiving V2 does not support subdividing outputs by date. (e.g. /2019/04/22/my_event_1.json).
+- Event archiving V2 does not support subdividing outputs by date (e.g. /2019/04/22/my_event_1.json).
 - Event archiving to Azure blob storage does not support SAS tokens.
 - Event archiving does not guarantee that each record will be written only once. The output may contain duplicates if a failure (rare) occurs during an export.
 
@@ -144,7 +144,7 @@ Select the **Save Settings** button when everything is in place. **This operatio
 > [!NOTE]
 > The same flow applies for editing an existing event archive. **Your key will be encrypted and you can never view it again.**
 
-Azure Blob Storage Example:
+#### Azure Blob Storage Example
 
 ![New Archive Blob Storage UI](media/tutorials/event-archive-azure-blob-ui.png)  
 
@@ -163,8 +163,8 @@ Your archive will show as **Pending** until data starts being exported, at which
 
 ## Handling Failures
 
-You can see the status of a given event by going to the archive details page. The status and failures will be displayed on the archive details page below the events:
+You can see the status of a given event by going to the archive details page. The status and failures will be displayed on the archive details page below the events, as shown below.
 
 ![Archive No Failures](media/tutorials/event-archive-failures.png)  
 
-Selecting the **FAILURES** icon will show you the error report. A green check mark indicates that there are no ongoing errors and your data is archiving properly.
+Selecting the **FAILURES** icon will display the error report. A green check mark indicates that there are no ongoing errors and your data is archiving properly.
