@@ -87,7 +87,7 @@ This query may take a few minutes to run, depending on the size of your database
 
 ![Snowflake - Database - Query](media/tutorials/snowflake-database-query.png)  
 
-For a more advanced query, examine the raw JSON of the **player_logged_in** event using the **PlayFab Analytics** tab.
+For a more advanced query, examine the raw JSON of the `player_logged_in` event using the **PlayFab Analytics** tab.
 
 ![PlayFab - Analytics - Event - JSON](media/tutorials/playfab-analytics-event-json.png)  
 
@@ -107,7 +107,7 @@ group by country
 order by players desc
 ```
 
-Notice how this query is not just accessing an arbitrary field inside the **P Column**, but a sub-field inside an object (**Location.CountryCode**).
+Notice how this query is not just accessing an arbitrary field inside the **P Column**, but a sub-field inside an object (`Location.CountryCode`).
 
 You can then export these results as a **CSV** file and load them into **Excel**, or some other tool, for easy visualization.
 
@@ -133,7 +133,7 @@ For example, we can create a logins view, based on the PlayFab login event, sinc
 
 Internally, we use a view to parse out the bits and pieces we know we'll need.
 
-Run this command shown below in your own database.
+Run the command shown below in your own database.
 
 ```sql
 create view logins as
@@ -153,14 +153,14 @@ create view logins as
 )
 ```
 
-When done, you will have a custom view in your database that can be used to access the login data directly.
+When complete, you will have a custom view in your database that can be used to access the login data directly.
 
 ![Snowflake - Database - custom view](media/tutorials/snowflake-database-custom-view.png)  
 
 There are a couple things to note:
 
 - First of all, we used some of the fixed **Columns**, like **event_id** and **title_id**.
-- We *also* picked some columns out of **P**, such as **p:Platform**. But properties chosen from inside JSON objects may be JSON objects *themselves*, so we need to tell Snowflake what *type* they really are. That's what **to_varchar** is doing.
+- We *also* picked some columns out of **P**, such as **p:Platform**. But properties chosen from inside JSON objects may be JSON objects *themselves*, so we need to tell Snowflake what *type* they really are. That's what `to_varchar` is doing.
 - We recommend building these sort of views as you need them, as views like this are primarily a code factoring tool. They just let you forget the actual naming (and capitalization) of the properties in **P**.
 
 Now you can run queries like the following, to get the **DAU** on **June 1st**.
@@ -198,7 +198,7 @@ retained / thirty_days_ago_dau as thirty_day_retention
 
 ### Performance considerations
 
-Our table is designed so that query speeds should depend only on the size of the title's data you're querying. However, to reap this benefit you must include a **TitleId** filter in your own query.
+Our table is designed so that query speeds should depend only on the size of the title data you're querying. However, to reap this benefit you must include a `TitleId` filter in your own query.
 
 This is true even if there is only *one* title data being shared. This is a consequence of the additional security that secure views provide.
 
@@ -206,13 +206,13 @@ When dealing with very large data sets (100s of millions of events), you will ne
 
 If you find yourself running nasty queries (I.E. large joins, or full table scans), you should definitely read [Snowflake's docs on the matter](https://docs.snowflake.net/manuals/user-guide/tables-micro-partitions.html). You should *also* know how we have indexed our tables.
 
-The **playfab_archive_view** is indexed by **TitleId**, then **TS**. **TitleId** is indexed *first* because the secure view always run the **title_id filter** first. We automatically apply a **title_id filter** for all queries.
+The `playfab_archive_view` is indexed by `TitleId`, then `TS`.  As such, `TitleId` is indexed *first* because the secure view always runs the `title_id filter` first. We automatically apply a `title_id filter` for all queries.
 
-However, we apply that filter *inside* the secure view, so it may not contribute to optimization. So it's important for *you* to also include a **title_id filter** in your query statements (where `title_id = <your title id here>`).
+However, we apply that filter *inside* the secure view, so it may not contribute to optimization. So it's important for *you* to also include a `title_id filter` in your query statements (where `title_id = <your title id here>`).
 
-The **TS** index is important because queries often have a time range. We use a truncated timestamp because Snowflake can index better on a column with a relatively small number of values. A block of data - where each row has the same timestamp - is more efficient to scan, because it simply already knows the values in that column.
+The `TS` index is important because queries often have a time range. We use a truncated timestamp because Snowflake can index better on a column with a relatively small number of values. A block of data - where each row has the same timestamp - is more efficient to scan, because it simply already knows the values in that column.
 
-The efficiency boost is decent, and the raw timestamp is always available via **to_timestamp(p:Timestamp)**. Additionally, many of the most common queries (such as **DAU**, **MAU**), don't need more granularity than hour, anyway. In practice, we have found that we rarely need to access the *exact* timestamp.
+The efficiency boost is decent, and the raw timestamp is always available via `to_timestamp(p:Timestamp)`. Additionally, many of the most common queries (such as **DAU**, **MAU**), don't need more granularity than hour, anyway. In practice, we have found that we rarely need to access the *exact* timestamp.
 
 If you are running a query without a timestamp filter, that is still ok. It may scan some extra data, but Snowflake is still pretty fast.
 
@@ -223,19 +223,19 @@ If you are running a query without a timestamp filter, that is still ok. It may 
 
 You might be concerned that everyone is using the same view.
 
-In a traditional database, this would be a *gigantic* security risk. However Snowflake is *not* your average database. The **playfab_archive_shared** view is actually a [Secure View](https://docs.snowflake.net/manuals/user-guide/views-secure.html).
+In a traditional database, this would be a *gigantic* security risk. However Snowflake is *not* your average database. The `playfab_archive_shared` view is actually a [Secure View](https://docs.snowflake.net/manuals/user-guide/views-secure.html).
 
-The main point is that other viewers are *guaranteed* to never know your data exists. (For those of you who are interested, it means the TitleId "where" clause runs un-optimized to thwart subtle attacks that take advantage of order of operations changes made by the SQL compiler).
+The main point is that other viewers are *guaranteed* to never know your data exists. (For those of you who are interested, it means the `TitleId` "where" clause runs un-optimized to thwart subtle attacks that take advantage of order of operations changes made by the SQL compiler).
 
 This secure view knows what account it's running in, and we keep track of what titles are enabled for what accounts (via the add-on). So in effect, every account sees a *different* view.
 
-Furthermore, all data in Snowflake is backed up, encrypted at rest, and everything else you would expect. Check out [Snowflake's security certifications](https://www.snowflake.net/product/data-warehouse-security/) for further reading about Snowflake's security.
+Furthermore, all data in Snowflake is backed up, encrypted at rest, and everything else you would expect. Check out [Snowflake's security certifications](https://www.snowflake.net/product/data-warehouse-security/) for further reading about Snowflake security.
 
 ### Data visualizations
 
 Tableau, Looker, and many other visualizers have first-party support for Snowflake. Making your own partially rolled-up tables will dramatically improve your experience with visualization tools, so that it doesn't have to duplicate large computations.
 
-For example, consider the query presented below to generate a latitude and longitude map of logins.
+For example, consider the query shown below to generate a latitude and longitude map of logins.
 
 ```sql
 create or replace table login_map as
