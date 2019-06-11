@@ -12,19 +12,19 @@ ms.localizationpriority: medium
 
 # Generating PlayStream events
 
-This tutorial provides an overview of automatic and custom **PlayStream** events in PlayFab.
+This tutorial provides an overview of automatic and custom PlayStream events in PlayFab.
 
 ## Automatic event overview
 
 As the name implies, an automatic event is one that occurs *automatically* with a normal API method call. Most existing API methods will generate PlayStream events.
 
-Sometimes, however, you will need to capture events that are very specific for your game, and are not provided by PlayFab out of the box.
+Sometimes, however, you will need to capture events that are *very specific* for your game, and are not provided by PlayFab out of the box.
 
 For that purpose, consider using a custom event (as described in the next section, [Custom Event Overview](#custom-event-overview)).
 
 ### Example
 
-If an email and password pair is valid, The following API call will sign in a player with email and password.
+If an email and password pair is valid, the following API call will sign in a player with email and password.
 
 ```csharp
 PlayFabClientAPI.LoginWithEmailAddress(new LoginWithEmailAddressRequest() {
@@ -35,7 +35,7 @@ result=> Debug.Log(result.PlayFabId),
 error=> Debug.LogError(error.GenerateErrorReport()));
 ```
 
-As a side effect, PlayFab will record a **player_logged_in** event. Consider using the [Event History](event-history.md) to test the described behavior.
+As a side effect, PlayFab will record a `player_logged_in` event. Consider using the [Event History](event-history.md) to test the described behavior.
 
 ![Game Manager - Event History Chart](media/tutorials/game-manager-event-history-chart.png)  
 
@@ -60,7 +60,7 @@ Custom events can be classified by entity. A custom event can be bound to a play
 
 ### Example: Post your own custom event
 
-You want to aggregate information about players opening various chests. Along with standard event information, you want to record **ChestType** and **LevelID**.
+You want to aggregate information about players opening various chests. Along with standard event information, you want to record `ChestType` and `LevelID`.
 
 Unfortunately, PlayFab does not provide a corresponding [Automatic Event](#automatic-event-overview) out of the box. Use a custom player event to solve the problem.
 
@@ -96,7 +96,7 @@ private void OnChestOpened(string chestType, int levelId) {
 Once the solution code is executed, consider using the [Event History](event-history.md) to check that your event has been successfully registered.
 
 1. Filter using the event name.
-2. Ensure the **player_chest_opened** events are in the list.
-3. Ensure that your custom body fields are recorded: **ChestType** and **LevelId**.
+2. Ensure the `player_chest_opened` events are in the list.
+3. Ensure that your custom body fields are recorded: `ChestType` and `LevelId`.
 
 ![Game Manager - Event History Detail](media/tutorials/game-manager-event-history-detail.png)  
