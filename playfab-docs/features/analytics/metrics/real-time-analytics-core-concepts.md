@@ -19,7 +19,7 @@ The analytics system gives you precise insights into the activities going on ins
 - What do they like?
 - How many games were played?
 - How much XP was gained?
-- How many chests were opened and on which levels?
+- How many chests were opened - and on which levels?
 - What is the average time for completing a certain level?
 
 Such information is invaluable to you for marketing, level design, UX troubleshooting, and other aspects of your product development.
@@ -30,20 +30,20 @@ At its core, the analytics system provides you with the tools to aggregate, quer
 
 An event - as a data structure - represents a change in state for your game. Events are represented as JSON objects. Each event has four parts:
 
-1. **Name** (Or unique type identifier) -  (*What happened?*)
+1. **Name** (or unique type identifier) -  (*What happened?*)
 2. **Entity** (player, title, or character) - (*Who's guilty?*)
 3. **Timestamp** - (*When did it happen?*)
 4. **Associated Data** ( a.k.a. **Body**) - (*What are the relevant details?*)
 
-It is important to distinguish between *Automatic* and *Custom events*. Our [Generating PlayStream Events Tutorial](../../analytics/metrics/playstream-events.md) explains the difference.
+It is important to distinguish between *Automatic* and *Custom* events. Our [Generating PlayStream Events Tutorial](../../analytics/metrics/playstream-events.md) explains the difference.
 
-## Event Flow
+## Event flow
 
 The core of any analytics system is the *event flow* - which is a all-inclusive list of events sorted by time.
 
 Your players are going to produce a large number of different events. But these events are not captured by themselves - you need an analytics system to capture them for later analysis.
 
-A solid analytics system allows you to group, sort, filter, count, transform, and perform calculations on a given set of events, turning event flow into valuable, up-to-date information that you can use to run efficient LiveOps.
+A solid analytics system allows you to group, sort, filter, count, transform, and perform calculations on a given set of events, turning the event flow into valuable, up-to-date information that you can use to run efficient LiveOps.
 
 ## Guides
 
