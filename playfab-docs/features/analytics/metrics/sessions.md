@@ -40,7 +40,7 @@ Presently, these events are disabled by default, though we plan to change this i
 
 ![Game Manager - Settings - Data Collection](media/tutorials/game-manager-settings-data-collection.png)  
 
-You can also disable these from the code by setting the option shown below to `true` in your title setup, as shown below.
+You can also disable these from the code, by setting the option shown below to `true` in your title setup, as shown below.
 
 ```csharp
 PlayFabSettings.DisableFocusTimeCollection = true
@@ -50,11 +50,11 @@ PlayFabSettings.DisableFocusTimeCollection = true
 
 If your game uses an SDK between the **180716** and **180809**, it's possible for you to send the focus time events, although it requires additional steps.
 
-Because these events leverage the WriteEvents API, you'll first need to ensure the **Enable Entity API** flag is enabled from the SDK settings at the time you update the SDK.
+Because these events leverage the [WriteEvents](xref:titleid.playfabapi.com.events.playstreamevents.writeevents) API, you'll first need to ensure the **Enable Entity API** flag is enabled (checked) in the SDK settings at the time you update the SDK.
 
 ![PlayFab - Settings - Enable Entity API](media/tutorials/playfab-settings-enable-entity-api.png)  
 
-Next, you'll need to login to the entity system, by adding the line shown below to each of your login requests.
+Next, you'll need to log into the entity system, by adding the line shown below to each of your login requests.
 
 ```csharp
 LoginTitlePlayerAccountEntity

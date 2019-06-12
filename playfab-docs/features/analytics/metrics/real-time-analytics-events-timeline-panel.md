@@ -16,16 +16,16 @@ This tutorial illustrates how to use the Events Timeline panel.
 
 ## Overview
 
-This panel is a subsection of [PlayStream Event History](event-history.md) in the form of a table of event data sorted by time.
+This panel is a subsection of [PlayStream Event History](event-history.md), in the form of a table of event data sorted by time.
 
 To generate events for testing purposes, see the [Generating PlayStream Events tutorial](playstream-events.md) for examples of how to post custom events.
 
 In the screen shown below:
 
-1. The **Timestamp** shows the **Date** and **Time** of the event in an easily readable format.
-2. The full **JSON** body of the event. This can be accessed by selecting the **Event Timestamp**.
+1. The **Timestamp** displays the **Date** and **Time** of the event in an easily readable format.
+2. This is the full **JSON** body of the event. It can be accessed by selecting the **Event Timestamp**.
 3. The **Player ID** is a reference to the player that initiated the event.
-4. Event details show the details associated with an **Event Name**, as well as other useful information.
+4. The **Event Name** area displays the details associated with an event, as well as other useful information.
 
 ![Events Timeline panel](media/tutorials/events-timeline-panel.png)  
 
