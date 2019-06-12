@@ -33,8 +33,7 @@ If **Albert** adds **Bob** as a friend, there is *no* approval process for **Bob
 In the event that a player has linked their Steam, Facebook, or Xbox Live account, their platform-specific friends can also be displayed, if those friends also play your title.
 
 ## Making friends
-
-The example code will be using the functions `DisplayFriends()`, and `DisplayError(string error)` as a proxy of your app's UI. You can paste these into your editor to get it to work without any extra effort - or replace the calls with your own code.
+The example code uses the functions `DisplayFriends()`, and `DisplayError(string error)` as a proxy of your app's UI. You paste these into your editor to get it to work without any extra effort - or replace the calls with your own code.
 
 ```csharp
 void DisplayFriends(List<FriendInfo> friendsCache) { friendsCache.ForEach(f => Debug.Log(f.FriendPlayFabId)); }
@@ -42,7 +41,7 @@ void DisplayPlayFabError(PlayFabError error) { Debug.Log(error.GenerateErrorRepo
 void DisplayError(string error) { Debug.LogError(error); }
 ```
 
-1. Once a player has logged in, they can access your UI for friends. The functionality probably includes adding, removing, and displaying friends, at a minimum.
+1. Once a player logs in, they can access the UI for friends. The functionality usually includes adding, removing, and displaying friends, at a minimum.
 2. To get the player's current friends list, use the [GetFriendsList](xref:titleid.playfabapi.com.client.friendlistmanagement.getfriendslist) API call.
 
 ```csharp
