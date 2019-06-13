@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 The **Reports** page gives you access to various reports composed from events, and broken down by dates.
 
 > [!IMPORTANT]
-> Before using **Reports**, make sure you have executed some **API** calls which have been captured by the **Reports** system already.
+> Before using **Reports**, make sure you have executed some API calls which have been captured by the **Reports** system already.
 
 ## Access reports
 
@@ -31,15 +31,15 @@ To access the **Reports** page:
 
 The example shown below shows an overview of the **Reports** page.
 
-1. The first section **(1)** allows you to filter **Reports** by **Type** (**Name**).
+1. The first section allows you to filter **Reports** by **Type** (**Name**).
 
-2. The **Report Date (2)** column lists the time intervals for all **Reports** that have been  generated. You can select the **Date** label to access report details for a specific date.
+2. The **Date** column lists the time intervals for all **Reports** that have been generated. You can select the **Date** label to access report details for a specific date.
 
-3. The **Report Name (3)** column identifies the **Report Type** uniquely. You can select the **Name** label to access **Reports** details for the corresponding **Date**.
+3. The **Name** column identifies the **Report Type** uniquely. You can select the **Name** label to access report details for the corresponding **Date**.
 
-4. When **Report** data is available, you can download a **CSV** representation of the data by selecting **Download CSV (4)**.
+4. When **Report** data is available, you can download a **CSV** representation of the data by selecting **Download CSV**.
 
-5. When **Reports** data is *not* available for a given day (no events that day), the date and name labels will render black, will not be selectable, and downloading as **CSV** will not be available.
+5. When **Report** data is *not* available for a given day (no events that day), the **Date** and **Name** labels will render black, will not be selectable, and the option of downloading the report as a **CSV** will not be available.
 
 ![Game Manager - Analytics - Reports](media/tutorials/game-manager-analytics-reports-overview.png)  
 

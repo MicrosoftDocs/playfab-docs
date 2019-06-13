@@ -15,8 +15,7 @@ ms.localizationpriority: medium
 This quickstart explains how to create A/B tests with player buckets.
 
 A/B tests allow you to use the buckets as [Player Segments](../segmentation/index.md). Unlike [player segments](../segmentation/index.md), however, A/B buckets distribute players randomly.
-
-A/B tests buckets may then be used in some of the features, where you would normally use player segments.
+The buckets defined for these tests may then be used in some of the features, where you would normally use player segments.
 
 For an example of this, see our tutorial [A/B Testing with Stores and A/B Test Buckets](ab-testing-with-stores-and-test-buckets.md).
 

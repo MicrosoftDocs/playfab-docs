@@ -19,10 +19,10 @@ Date: 2018-12-18
 ### XPlatCppSdk specific changes
 
 - [XPlatCppSdk](https://github.com/PlayFab/XPlatCppSdk)
-  -**SDK Breaking Change** : Updated the folder structure for the XPlatCppSdk repo. If you are using the SDK with project references, an update to vcxproj files path would be required.
-  - Adding Xbox support to the XPlatCppSdk. Refer to the [C++ quickstart for Xbox](../sdks/xplatcpp/quickstart-xbox.md).
+  -**SDK Breaking Change** : Updated the folder structure for the ``XPlatCppSdk`` repo. If you are using the SDK with project references, an update to vcxproj files path would be required.
+  - Adding Xbox support to the `XPlatCppSdk`. Refer to the [C++ quickstart for Xbox](../sdks/xplatcpp/quickstart-xbox.md).
   - **New API**
-  - Added PlayFabEventApi to support Heavyweight (low throughput) and Lightweight (high throughput) custom events.
+  - Added `PlayFabEventApi` to support Heavyweight (low throughput) and Lightweight (high throughput) custom events.
 
 ### UnrealMarketplacePlugin specific changes
 
@@ -50,8 +50,8 @@ Date: 2018-12-04
 ### UnitySDK specific changes
 
 - [UnitySDK](https://github.com/PlayFab/UnitySDK)
-  - **SDK Breaking Change**: The SimpleGet success callback signature has changed, and now must accept a new single parameter of a byte[]
-  - Added SimplePost.
+  - **SDK Breaking Change**: The `SimpleGet` success callback signature has changed, and now must accept a new single parameter of a byte[].
+  - Added `SimplePost`.
 
 ## 181105
 
@@ -59,8 +59,8 @@ Date: 2018-11-05
 
 ### API changes
 
-- PlayFab now supports login and account-linking with OpenID
-- Additional XboxLive ID support, and enabling Xbox login via server
+- PlayFab now supports login and account-linking with `OpenID`.
+- Additional XboxLive ID support, and enabling Xbox login via server.
 
 In preparation for wider release of the service, we are rolling out PlayFab Multiplayer Servers 2.0 APIs. See [PlayFab Multiplayer Servers 2.0 (Thunderhead)](../features/multiplayer/servers/thunderhead.md) for more information
 
@@ -72,12 +72,12 @@ Date: 2018-10-01
 
 - A variety of deprecations have taken effect, and those elements have been removed from SDKs and documentation.
   - Some Admin API methods related to unreleased features have been hidden.
-  - server.DeleteUsers deprecation has taken effect.
-  - A field deprecation for "ServerHostname", spread across a variety of matchmaking related calls in admin, client, matchmaker, and server APIs has taken effect. "ServerIPV4Address" is the replacement.
+  - `server.DeleteUsers` deprecation has taken effect.
+  - A field deprecation for `ServerHostname`, spread across a variety of matchmaking related calls in admin, client, matchmaker, and server APIs has taken effect. `ServerIPV4Address` is the replacement.
 
 ### UnitySDK changes
 
-- Minor fixes/improvements to ScreenTime analytics.
+- Minor fixes/improvements to `ScreenTime` analytics.
 
 ### All SDKs
 
@@ -90,7 +90,7 @@ Date: 2018-09-24
 
 ### API changes
 
-- Adding Metadata to the [DeleteMasterPlayerAccountRequest](xref:titleid.playfabapi.com.admin.accountmanagement.deletemasterplayeraccount#deletemasterplayeraccountrequest) Model
+- Adding Metadata to the [DeleteMasterPlayerAccountRequest](xref:titleid.playfabapi.com.admin.accountmanagement.deletemasterplayeraccount#deletemasterplayeraccountrequest) Model.
 - Bug fixes in the Unreal Marketplace Plugin to expand supported versions.
 
 ## 180917  
@@ -101,7 +101,7 @@ Date: 2018-09-17
 
 - The Server API method `DeleteUsers` is deprecated, and replaced with [DeletePlayer](xref:titleid.playfabapi.com.server.accountmanagement.deleteplayer)
 - Unreal Marketplace Plugin:
-  - Updated Marketplace Plugin to include our Blueprint interface
+  - Updated Marketplace Plugin to include our Blueprint interface.
   - [New Unreal Engine quickstart guide](../sdks/unreal/quickstart.md)
   - [View in Unreal Marketplace](https://www.unrealengine.com/marketplace/playfab-sdk)
   - [Upgrade Tutorial](../sdks/unreal/unreal-marketplace-plugin-upgrade-tutorial.md)
@@ -126,9 +126,9 @@ Date: 2018-08-29
 
 ### API changes
 
-- renaming Entity.TypeString to Entity.Type
-- renaming EmptyResult to [EmptyResponse].(xref:titleid.playfabapi.com.groups.groups.removemembers#emptyresponse)
-- Renamed most Authentication function calls like **GameServer** to **MutliplayerServer**.
+- renaming `Entity.TypeString` to `Entity.Type`.
+- renaming `EmptyResult` to [EmptyResponse].(`xref:titleid.playfabapi.com.groups.groups.removemembers#emptyresponse`)
+- Renamed most Authentication function calls like `GameServer` to `MutliplayerServer`.
 - [Admin.GetUserAccountInfo](xref:titleid.playfabapi.com.admin.accountmanagement.getuseraccountinfo) has more detailed platform information.
 
 ### Objective C specific changes
@@ -146,14 +146,14 @@ Date: 2018-08-09
 
 ### API group changes
 
-- We have separated the Entity API Group into multiple new Api Groups.
+- We have separated the Entity API Group into multiple new API Groups.
 - This is a big SDK breaking change for anybody using the former Entity API.
-- See our [Upgrade Guide!](../features/data/entities/entity-api-restructure-upgrade-tutorial.md)
+- See our [Upgrade Guide](../features/data/entities/entity-api-restructure-upgrade-tutorial.md)!
 - (Please note, the links for blog and upgrade guide may not work yet, they're almost done.)
 
 ### API changes
 
-- **New Api Methods:**
+- **New API Methods:**
   - The following APIs are released and visible in SDK, but the accompanying documentation isn't ready yet:
     - client.[LoginWithNintendoSwitchDeviceId](xref:titleid.playfabapi.com.client.authentication.loginwithnintendoswitchdeviceid)
     - client.[UnlinkNintendoSwitchDeviceId](xref:titleid.playfabapi.com.client.accountmanagement.unlinknintendoswitchdeviceid)
@@ -162,18 +162,18 @@ Date: 2018-08-09
     - client.[UnlinkFacebookInstantGamesId](xref:titleid.playfabapi.com.client.accountmanagement.unlinkfacebookinstantgamesid) (not ready to use yet)
     - server.[GetPlayFabIDsFromFacebookInstantGamesIds](xref:titleid.playfabapi.com.client.accountmanagement.getplayfabidsfromfacebookinstantgamesids) (not ready to use yet).
 - **New PlayStream Events**
-  - title_hopper_config_updated event renamed to [title_queue_config_updated](../api-references/events/title-queue-config-updated.md)
+  - `title_hopper_config_updated` event renamed to [title_queue_config_updated](../api-references/events/title-queue-config-updated.md)
 - **General changes**
-  - The parameter "ServerAddress" in many models has been deprecated in favor of the new "ServerIPV4Address".
+  - The parameter `ServerAddress` in many models has been deprecated in favor of the new `ServerIPV4Address`.
 
 ### Unreal (multiple SDKs) Specific Changes
 
-- Minor updates to both SDKs/plugins leading to a final merge to the Marketplace plugin (Coming soon!)
+- Minor updates to both SDKs/plugins leading to a final merge to the Marketplace plugin. (Coming soon!)
 
 ### PythonSDK! specific changes
 
 - [PythonSDK!](https://github.com/PlayFab/PythonSdk)
-  - Bug fixes and improvements
+  - Bug fixes and improvements.
 
 ### UnitySDK and CSharpSDK specific changes
 
@@ -189,12 +189,12 @@ Date: 2018-07-16
 ### UnitySDK changes
 
 - [UnitySDK](https://github.com/PlayFab/UnitySDK)
-  - Fixed minor issues with ScreenTime under some rare circumstances
+  - Fixed minor issues with ScreenTime under some rare circumstances.
 
 ### CSharpSDK changes
 
 - [CSharpSDK](https://github.com/PlayFab/CSharpSDK)
-  - Added [Plugin Manager API](https://github.com/PlayFab/CSharpSDK/blob/master/PluginManager.md) to C# SDK to support optional custom implementations of JSON Serializer and HTTP client.
+  - Added [Plugin Manager API](https://github.com/PlayFab/CSharpSDK/blob/master/PluginManager.md) to C# SDK, to support optional custom implementations of JSON Serializer and HTTP client.
 
   - ~~**UnrealCppSdk Changes:**~~ (UPDATED : This SDK has been deprecated. For the new unreal SDK, please refer to [UnrealMarketplaceSDK](https://www.unrealengine.com/marketplace/playfab-sdk))
 
@@ -206,7 +206,7 @@ Date: 2018-07-10
 
 ### Unity hotfix release
 
-- Further refinements and optimizations to the Screen-Time events.
+- Further refinements and optimizations to the ScreenTime events.
 
 ## 180709  
 
@@ -229,7 +229,7 @@ Date: 2018-07-06
 ### UnitySdDK specific changes
 
 - [UnitySdDK](https://github.com/PlayFab/UnitySDK)
-  - Screen-time tracking, described in the previous release is no longer Beta-only.
+  - Screen time tracking, described in the previous release is no longer Beta-only.
 
 ## 180705  
 
@@ -238,7 +238,7 @@ Date: 2018-07-05
 ### API changes
 
 - EntityAPI.[ExecuteEntityCloudScript](xref:titleid.playfabapi.com.cloudscript.server-sidecloudscript.executeentitycloudscript)
-- PlayStreamEventModel.title_hopper_config_updated
+- `PlayStreamEventModel.title_hopper_config_updated`
 
 ### New PythonSDK! changes
 
@@ -255,7 +255,7 @@ Date: 2018-07-05
 ### JavaScriptSDK changes
 
 - [JavaScriptSDK](https://github.com/PlayFab/JavaScriptSDK)
-  - customData relay parameter should now work for Login functions.
+  - `customData` relay parameter should now work for Login functions.
 
 ### XPlatCppSDK specific changes
 
@@ -311,22 +311,22 @@ Date: 2018-05-07
 ### UnitySDK specific changes
 
 - [UnitySDK](https://github.com/PlayFab/UnitySDK)
-  - HttpWebRequest certificate validation security has been improved.
+  - `HttpWebRequest` certificate validation security has been improved.
   - No longer default to ignoring all certificates.
   - Customers are expected to implement their own certificate validation, or call `PlayFab.Internal.PlayFabWebRequest.SkipCertificateValidation()`.
 
 ### WindowsSdk specific changes
 
 - Fixed hundreds of Level 4 warnings.
-- The version number published in PlayFabSettings.cpp has been corrected.
+- The version number published in `PlayFabSettings.cpp` has been corrected.
 - Most previous versions will have all had the wrong version number embedded in-code, and in call headers.
 
 ### XPlatCppSDK has been created
 
 - [XPlatCppSDK](https://github.com/PlayFab/XPlatCppSDK)
   - Currently in beta.
-  - Built using WindowsSDK as a template.
-  - May become a replacement to WindowsSDK (At least several months away).
+  - Built using Windows SDK as a template.
+  - May become a replacement to Windows SDK (At least several months away).
   - Upgrade should require almost no breaking changes.
   - Some `cpprestsdk` strings should be converted to `std::string`.
   - Some `web::json::value` types have been converted to `json::value`.
@@ -355,12 +355,12 @@ Date: 2018-04-09
   - Only the date was updated, not the major/minor version numbers.
 - **Guilds:**
   - client.[GetAccountInfo](xref:titleid.playfabapi.com.client.accountmanagement.getaccountinfo).[UserAccountInfo](xref:titleid.playfabapi.com.client.accountmanagement.getaccountinfo#useraccountinfo).[UserTitleInfo](xref:titleid.playfabapi.com.client.accountmanagement.getaccountinfo#usertitleinfo).[TitlePlayerAccount](xref:titleid.playfabapi.com.client.accountmanagement.getaccountinfo#entitykey) now contains the required information to identify other players and add them to your guild/group.
-  - The same information can also be found with admin.[GetUserAccountInfo].(xref:titleid.playfabapi.com.admin.accountmanagement.getuseraccountinfo) and server.[GetUserAccountInfo](xref:titleid.playfabapi.com.server.accountmanagement.getuseraccountinfo)
+  - The same information can also be found with [admin.GetUserAccountInfo](xref:titleid.playfabapi.com.admin.accountmanagement.getuseraccountinfo) and [server.GetUserAccountInfo](xref:titleid.playfabapi.com.server.accountmanagement.getuseraccountinfo).
 
 ### [UnitySDK](https://github.com/PlayFab/UnitySDK) specific changes
 
 - [UnitySDK](https://github.com/PlayFab/UnitySDK)
-  - Performance improvement for default HTTP settings (UnityWWW), for long-running processes
+  - Performance improvement for default HTTP settings (UnityWWW), for long-running processes.
 
 ## 180403  
 
@@ -386,13 +386,13 @@ Date: 2018-03-16
 ### API changes
 
 - Entities! [Blog](https://api.playfab.com/blog/introducing-entities-objects-and-files)! [Quickstart Guide](../features/data/entities/quickstart.md)!
-- All Client login methods return Entity credentials if request.LoginTitlePlayerAccountEntity is set to *true*.
+- All Client login methods return Entity credentials if `request.LoginTitlePlayerAccountEntity` is set to `true`.
 - Guilds! [Blog](https://api.playfab.com/blog/announcing-groups-for-guilds-friends-clans-and-more)! [Guide](../features/social/groups/index.md)!
 - Error Codes for many API methods updated for accuracy (Dozens!).
 
 ### New API methods
 
-- admin.[RevokeInventoryItems](xref:titleid.playfabapi.com.admin.playeritemmanagement.revokeinventoryitems) and server.[RevokeInventoryItems].(xref:titleid.playfabapi.com.server.playeritemmanagementrevokeinventoryitems).
+- [admin.RevokeInventoryItems](xref:titleid.playfabapi.com.admin.playeritemmanagement.revokeinventoryitems) and [server.RevokeInventoryItems](xref:titleid.playfabapi.com.server.playeritemmanagement.revokeinventoryitems).
 - A whole new [Entity API](../features/data/entities/quickstart.md).
 - Many new [Entity PlayStream Events](../api-references/events/index.md) (search for "entity" on linked page).
 
@@ -411,7 +411,7 @@ Date: 2018-03-16
   - [LuaSdk](https://github.com/PlayFab/LuaSDK) (Including Corona and Defold)
   - [PhpSdk](https://github.com/PlayFab/PhpSdk)
   - CloudScript
-- **Will Support Soon:** Unreal Bp and Cpp (Sorry, delayed due to technical difficulties!)
+- **Will Support Soon:** Unreal Bp and Cpp. (Sorry - delayed due to technical difficulties!)
 
 ## 180213  
 
@@ -419,7 +419,7 @@ Date: 2018-02-13
 
 ### API changes
 
-- SendAccountRecoveryEmail now supports custom account recovery email templates when a custom account recovery email template ID is passed in with the request parameters.
+- `SendAccountRecoveryEmail` now supports custom account recovery email templates when a custom account recovery email template ID is passed in with the request parameters.
 - All Client Login Mechanisms can now optionally return Entity API credentials.
 (This is part of a coming-soon feature.)
 

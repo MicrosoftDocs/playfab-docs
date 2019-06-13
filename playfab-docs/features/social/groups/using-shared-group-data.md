@@ -12,23 +12,25 @@ ms.localizationpriority: medium
 
 # Using Shared Group Data
 
-**Shared Group Data** is a simple way for players to share some information with a tightly constrained list of other players.
+Shared Group Data is a simple way for players to share some information with a tightly constrained list of other players.
 
 > [!NOTE]
-> Shared Group Data was originally designed to be driven by server-authoritative for most cases, and the previous advice was to *not* add players directly to the Shared Group Data, as that gave them read/write permissions (allowing for cheating). However, our new [API Access Policy](../../config/gamemanager/api-access-policy.md) allows a much greater variance in functionality and security over the original design. More details are available in the advanced section of this document.
+> Shared Group Data was originally designed to be driven by server-authoritative for most cases, and the previous advice was to *not* add players directly to the Shared Group data, as that gave them read/write permissions (allowing for cheating). However, our new [API Access Policy](../../config/gamemanager/api-access-policy.md) allows a much greater variance in functionality and security over the original design. More details are available in the advanced section of this document.
 
 > [!WARNING]
-> Shared Group Data should not be used by Groups larger than a dozen or so players, at most. One issue is that too many players attempting to read the same data at the same time will result in delays reading the data (Shared Group Data is not *sharded* or *cached*, the way that data meant to be read by many players at once, like Title Data is). And special care should be taken to prevent players from over-writing each others data. In the instance that multiple players try to write to the same Key at the same time, only one of those writes will "win", resulting in the loss of the other user's data.
+> Shared Group Data should not be used by groups larger than a dozen or so players, at most. One issue is that too many players attempting to read the same data at the same time will result in delays reading the data (Shared Group Data is not *sharded* or *cached*, the way that data meant to be read by many players at once, like Title Data is). And special care should be taken to prevent players from over-writing each others data. In the instance that multiple players try to write to the same Key at the same time, only one of those writes will "win", resulting in the loss of the other user's data.
 
 ## Example: Turn-based multiplayer Async games
 
-The original, and still best, use case for Shared Group Data is best described as storing state for an online board game. players take turns modifying the data via CloudScript, with a clear turn order.
+The original, and still best, use case for Shared Group data is best described as storing state for an online board game. players take turns modifying the data via CloudScript, with a clear turn order.
 
 Players can log off and resume play later, with their game state stored in the cloud.
 
 The following CloudScript example is the turn-based structure for any common board game. The board game itself is stubbed out as pseudo-code.
 
-- **Assumptions:**  The Shared Group Data that represents the game has already been started, and its membership is already defined.
+### Assumptions
+
+The Shared Group Data that represents the game has already been started, and its membership is already defined.
 
 ```csharp
 // CloudScript/Javascript
@@ -91,10 +93,6 @@ While there's no strictly enforced limit currently, usage with many players is n
 
 There is no role/rank system within a group, meaning any member in the group has absolute authority within the group (there is no defined leader).
 
-So unless you disable the Client Shared Group Data methods with our [API Access Policy](../../config/gamemanager/api-access-policy.md), the clients have complete control of the data, which could result in exploitation of the data.
-
-There is no Role/Rank System within a group; this means that any member in the group has absolute authority within it (there is no defined leader).
-
-So unless you disable the Client Shared Group Data methods with our [API Access Policy](../../config/gamemanager/api-access-policy.md), the clients have complete control of the data, which could result in exploitation of the data.
+Bluntly, what this means is that unless you disable the Client Shared Group Data methods with our [API Access Policy](../../config/gamemanager/api-access-policy.md), the clients will have *complete control of the data*, which could result in exploitation of the data.
 
  Best practice is to either *not* use Shared Group Data for gameplay-impacting data, or to disable the Shared Group Data methods in the Client API.

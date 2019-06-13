@@ -12,9 +12,11 @@ ms.localizationpriority: medium
 
 # ActionScript quickstart for Flash
 
-This guide will help you make your first PlayFab API call using ActionScript.
+This quickstart helps you make your first PlayFab API call using ActionScript.
 
-## ActionScript3 Project Setup
+Before you can call any PlayFab API, you must have a [PlayFab developer account](https://developer.playfab.com/en-us/sign-up). 
+
+## ActionScript3 project setup
 
 - **OS**: This guide is for Windows 10
 - The steps for Mac should be similar, but probably not identical (Good luck!)
@@ -42,9 +44,9 @@ This guide will help you make your first PlayFab API call using ActionScript.
       - Select all in **{AirSdkLocation}** folder.
       - Paste into the **{FlexSdkLocation}** folder.
 
-    - This will replace some existing files, and that's correct.
+    - This will replace some existing files, which is correct.
 
-    - Download the PlayFab ActionScriptSDK
+    - Download the PlayFab ActionScriptSDK:
       - [ActionScript SDK](https://api.playfab.com/downloads/actionscript)
   - Download the zip file, and extract it to a location of your choice **{PlayFabAs3Location}**.
   - Updates to environment variables sometimes require a computer restart.
@@ -60,24 +62,69 @@ This guide will help you make your first PlayFab API call using ActionScript.
 
   - Create the **flexcfg.xml** file.
     - Open a command window in your project folder
-      - Hold shift and right-click in the empty white space of the Explorer window
+      - Hold down the **Shift** key, and right-click in the empty white space of the Explorer window.
+
+## ActionScript3 project setup  
+
+OS: This guide is for Windows 10. However, the steps for Mac should be similar, but probably not identical.
+
+## Installation 
+
+These steps describe building an AS3 project using entirely free tools. As such, this might be more complicated than something like Adobe Flash Builder. The instructions are the result of lots of experimentation and testing, rather than expert knowledge. If you're already aware of simpler installation steps, feel free to skip to the next section.
+
+## Downloads 
+
+For environment variable instructions below, anything in {curly braces} should be replaced with the actual installation path (don't put actual curly braces in your environment variables).
+
+1. Install the Adobe Air SDK: [https://www.adobe.com/devnet/air/air-sdk-download.html](https://www.adobe.com/devnet/air/air-sdk-download.html).  
+Remember your installation path {AirSdkLocation} since you will use it below.
+
+2. Install the Adobe Flex SDK: [https://www.adobe.com/devnet/flex/flex-sdk-download.html](https://www.adobe.com/devnet/flex/flex-sdk-download.html)    
+Remember your installation path {FlexSdkLocation}, and modify your system environment variables:  
+      - Add {FlexSdkLocation}/bin to your PATH environment variable. For example, if you install to C:/dev/flex_sdk_4.6, then set FLEX_HOME=C:/dev/flex_sdk_4.6  
+      - Add a FLEX_HOME system environment variable, and set it to {FlexSdkLocation} For example, if you install to C:/dev/flex_sdk_4.6, then add C:/dev/flex_sdk_4.6/bin to your PATH  
+
+3. Open two Explorer windows: {AirSdkLocation} and {FlexSdkLocation} 
+
+4. Select All in the {AirSdkLocation} folder.
+
+5. Copy and Paste the contents of {AirSdkLocation} over the top of {FlexSdkLocation}. This will replace some existing files, and that's correct.  
+
+6. Download the PlayFab ActionScriptSD [ActionScript SDK](https://api.playfab.com/downloads/actionscript) zip file, and extract it to a location of your choice {PlayFabAs3Location}.
+
+> [!NOTE]
+> Updates to environment variables sometimes require a computer restart.
+
+7. Create a new empty folder for your GettingStartedAs3 Project, with the following three empty files:
+
+    - A new text file called GettingStarted
+    - A new text file called GettingStarted.xml  
+    - A new text file called buildAndRun.bat  
+
+8. Import the PlayFab ActionScriptSDK into this project:
+    - In Windows-Explorer, navigate to {PlayFabAs3Location}/PfApiTest
+    - Select the "com" folder, and copy it to your project folder. This contains a subfolder called "playfab" which is the PlayFabSDK.
+
+9. Create the flexcfg.xml file.
+    
+    - Open a command window in your project folder. Hold shift and right-click in the empty-white-space of the Explorer window.
 
         ![Install PlayFab SDK](media/cmd-exe.png)
 
-      - In the new console window enter this command:
+    - In the new console window enter this command:
+        - mxmlc -dump-config flexcfg.xml
 
-         `mxmlc -dump-config flexcfg.xml`
+      - This should create a new text file called flexcfg.xml
 
-      - This should create a new text file called **flexcfg.xml**.
-    - We will modify all these project files in the next section.
+We will modify all these project files in the next section.
 
-  - Installation complete!
+Installation complete!
 
-## Set up your first API call
+## Set up your first API call 
+ 
+This quickstart provides the minimum steps for making your first PlayFab API call. Confirmation is visible in the app.
 
-This guide will provide the minimum steps to make your first PlayFab API call. Confirmation will be visible in the app.
-
-In your favorite text-editor, update the contents of `buildAndRun.bat` as shown below.
+In your favorite text editor, update the contents of `buildAndRun.bat` as follows:
 
 ```cmd
 call mxmlc GettingStarted.as -load-config flexcfg.xml
@@ -88,7 +135,7 @@ if %errorlevel% EQU 0 (
 pause
 ```
 
-In your favorite text-editor, update the contents of GettingStarted.as as shown below.
+In your favorite text-editor, update the contents of `GettingStarted`, as shown below.
 
 ```as
 package
@@ -139,7 +186,7 @@ package
 }
 ```
 
-In your favorite text-editor, update the contents of `GettingStarted.xml` as shown below.
+In your favorite text-editor, update the contents of `GettingStarted.xml` as follows:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -173,7 +220,7 @@ In your favorite text-editor, open **flexcfg.xml** and make the following change
 
 With absolute paths based on your FlexSdk installation:
 
-- In my case, I installed Flex to `C:/dev/flex_sdk_4.6/`, so my replacements look like the example below.
+- In this case, we installed Flex to `C:/dev/flex_sdk_4.6/`, so the replacements look similar to the example that appears below.
 
 ```xml
 <external-library-path>
@@ -186,24 +233,25 @@ With absolute paths based on your FlexSdk installation:
 </library-path>
 ```
 
-## Finish and Execute
+## Finish and execute
 
-- In Windows explorer, double-click **buildAndRun.bat**.
-  - After running, note the new file **GettingStarted.swf** - This is our compiled project.
-- This will open two new windows, which collectively should look like the example shown below.
+1. In Windows explorer, double-click **buildAndRun.bat**.
+    
+      - After running, note the new file **GettingStarted.swf** - This is our compiled project, and it will open two new windows, which collectively should look like the example shown below.
 
   ![Install PlayFab SDK](media/exec-success.png)
 
-- At this point, you can start making other api calls, and building your game.
-- For a list of all available client API calls, see our [PlayFab API References](../../api-references/index.md) documentation.
+At this point, you can start making other api calls, and building your game.
+
+For a list of all available client API calls, see our [PlayFab API References](../../api-references/index.md) documentation.
   
-- Happy coding!
+Happy coding!
 
 ## Deconstruct the code
 
 This optional last section describes every file in the ActionScript3 Project in detail.
 
-- buildAndRun.bat
+- **buildAndRun.bat**
   - This file is a simple Windows batch file which compiles and executes this project.
   - call `mxmlc GettingStarted.as -load-config flexcfg.xml`.
     - mxmlc is the Flex compiler for ActionScript3.
@@ -213,10 +261,10 @@ This optional last section describes every file in the ActionScript3 Project in 
   - call `adl GettingStarted.xml`
     - adl is Air Debug Launcher, which launches a compiled swf file as a Windows app.
 
-  - GettingStarted.xml
+  - **GettingStarted.xml**
     - This is a bare bones ActionScript project definition file. The first section of [this Adobe guide](https://help.adobe.com/en_US/air/build/WS901d38e593cd1bac25d3d8c712b2d86751e-8000.html) describes everything in detail.
 
-  - flexcfg.xml
+  - **flexcfg.xml**
     - This file tells the mxmlc compiler all of the variables and settings it should use.
     - We only made trivial changes from the default setting.
 
@@ -231,13 +279,13 @@ This optional last section describes every file in the ActionScript3 Project in 
     - `var loginRequest:com.playfab.ClientModels.LoginWithCustomIDRequest = new com.playfab.ClientModels.LoginWithCustomIDRequest();`
       - Most PlayFab API methods require input parameters, and those input parameters are packed into a request object.
       - Every API method requires a unique request object, with a mix of optional and mandatory parameters.
-        - For **LoginWithCustomIDRequest**, there is a mandatory parameter of **CustomId**, which uniquely identifies a player and **CreateAccount**, which allows the creation of a new account with this call.
+        - For `LoginWithCustomIDRequest`, there is a mandatory parameter of `CustomId`, which uniquely identifies a player and `CreateAccount`, which allows the creation of a new account with this call.
 
       - For login, most developers will want to use a more appropriate login method.
         - See the PlayFab Login documentation for a list of all login methods, and input parameters. Common choices are:
-          - LoginWithAndroidDeviceID
-          - LoginWithIOSDeviceID
-          - LoginWithEmailAddress
+          - `LoginWithAndroidDeviceID`
+          - `LoginWithIOSDeviceID`
+          - `LoginWithEmailAddress`
 
     - `PlayFabClientAPI.LoginWithCustomID(loginRequest, OnLoginSuccess, OnLoginFail);`
       - This begins the async request to `LoginWithCustomID`. When complete, it will call `OnLoginSuccess` or `OnLoginFail` for success or failure respectively.

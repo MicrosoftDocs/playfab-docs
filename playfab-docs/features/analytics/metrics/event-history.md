@@ -24,7 +24,7 @@ This tutorial shows you how to access and utilize the event history in PlayFab.
 ## Event History page overview
 
 1. The **Event Data Retention** area shows the time interval for the events. For example, when it says **7 Days**, only events that happened a week ago or later will be queried.
-2. The [Event Search Query panel](../../analytics/metrics/real-time-analytics-event-search-query-panel.md) allows the changing of graph behavior and the filtering of event flow by different event properties.
+2. The [Event Search Query panel](../../analytics/metrics/real-time-analytics-event-search-query-panel.md) allows the changing of graph behavior, and the filtering of event flow by different event properties.
 3. The [Event History Chart panel](../../analytics/metrics/real-time-analytics-event-history-chart-panel.md) displays a chart that shows the number and types of events happening in your title during the specified time interval.
 4. The [Events Timeline panel](../../analytics/metrics/real-time-analytics-events-timeline-panel.md) is a list of events data sorted by time (starting with the most recent).
 
@@ -34,14 +34,14 @@ This tutorial shows you how to access and utilize the event history in PlayFab.
 
 In this section we have the following goals:
 
-- Sign the player in and produce a **player_logged_in** event.
+- Sign the player in and produce a `player_logged_in` event.
 - Use the [Event Search Query Panel](../../analytics/metrics/real-time-analytics-event-search-query-panel.md) to find this event using search query.
 - Inspect this event using the [Events Timeline Panel](../../analytics/metrics/real-time-analytics-events-timeline-panel.md).
 - Observe how this event effects the [Event History Chart](../../analytics/metrics/real-time-analytics-event-history-chart-panel.md).
 
 ### Demonstration
 
-We are going to use the **LoginWithCustomID** method, to sign the player in and produce a **player_logged_in** event.
+We are going to use the `LoginWithCustomID` method, to sign the player in and produce a `player_logged_in` event.
 
 - Execute the API call shown below.
 
@@ -68,7 +68,7 @@ We now have to locate the event.
 ![Game Manager - Event History Chart - search query](media/tutorials/game-manager-event-history-chart-search-query.png)  
 
 - Once you have located the event in the [Events Timeline panel](
-../../analytics/metrics/real-time-analytics-events-timeline-panel.md) you can further inspect it by selecting the timestamp label, as shown below.
+../../analytics/metrics/real-time-analytics-events-timeline-panel.md), you can further inspect it by selecting the timestamp label, as shown below.
 
 ![Game Manager - Event History - Timestamp](media/tutorials/game-manager-event-history-timestamp.png)
 
