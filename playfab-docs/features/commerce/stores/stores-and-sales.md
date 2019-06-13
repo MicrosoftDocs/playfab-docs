@@ -20,7 +20,7 @@ This tutorial illustrates the best practices for defining stores based on virtua
 
 ## Requirements
 
-- We assume that you are already familiar with the PlayFab [Game Manager](../../config/gamemanager/quickstart.md).
+- Familiarity with the PlayFab [Game Manager](../../config/gamemanager/quickstart.md).
 - You must have defined one or more [Virtual Currencies](../economy/currencies.md). The latter example in this tutorial uses:
   - **SS** (**Silver Shekels**)
   - **GS** (**Gold Shekels**).
@@ -31,7 +31,7 @@ This tutorial illustrates the best practices for defining stores based on virtua
 
 ### Best practice
 
-Catalog prices should be fixed long-term, and define the *real* price of an item.
+Catalog prices should be fixed long-term - they define the *real* price of an item.
 
 Stores should be *temporary*, being added and removed according to your LiveOps strategies.
 
