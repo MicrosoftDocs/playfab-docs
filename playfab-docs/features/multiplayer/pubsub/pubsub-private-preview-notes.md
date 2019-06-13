@@ -3,7 +3,7 @@ title: PubSub private preview notes
 author: TomGu
 description: Private preview release notes for PubSub.
 ms.author: tomgu
-ms.date: 5/9/2019
+ms.date: 05/09/2019
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, multiplayer, pubsub, policies

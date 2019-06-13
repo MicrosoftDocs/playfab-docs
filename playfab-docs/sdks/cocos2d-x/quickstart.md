@@ -68,12 +68,11 @@ If you are building for other platforms, the files you need are the same, but yo
 
     - Select all files in {CocosGettingStarted}/Classes, EXCEPT AppDelegate.h, AppDelegate.cpp, HelloWorldScene.h, HelloWorldScene.cpp
 
-    - Drag and drop all of those files from Explorer, onto the Visual Studio Solution/CocosGettingStarted/src folder we found above  
-**Note**: If you experience problems, you can drag and drop each file one at a time, just be careful and get all of them
+    - Drag and drop all of those files from Explorer, onto the Visual Studio Solution/CocosGettingStarted/src folder we found above. If you experience problems, you can drag and drop each file one at a time, *just be careful and get all of them*.
 
     - You should see these files in your VS project:
 
-        ![Install PlayFab SDK](media/sln-src.png)
+      ![Install PlayFab SDK](media/sln-src.png)
 
 PlayFab uses several Cocos libraries that have to be manually added to the dependencies list.
 
@@ -86,7 +85,7 @@ PlayFab uses several Cocos libraries that have to be manually added to the depen
       `$(ProjectDir)..\cocos2d\external\zlib\include;$(ProjectDir)..\cocos2d\external\curl\include\win32;$(EngineRoot)cocos\audio\include;$(EngineRoot)external;$(EngineRoot)external\chipmunk\include\chipmunk;$(EngineRoot)extensions;..\Classes;..;%(AdditionalIncludeDirectories);$(_COCOS_HEADER_WIN32_BEGIN);$(_COCOS_HEADER_WIN32_END);..\cocos2d`
 
 > [!NOTE]
-We are adding curl and zlib, which are libraries that come with Cocos, but are not enabled by default.
+> We are adding curl and zlib, which are libraries that come with Cocos, but are not enabled by default.
 
 Your CocosGettingStarted project should now compile (and even run), but we are not yet making any PlayFab API calls.
 

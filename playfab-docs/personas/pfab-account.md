@@ -1,16 +1,16 @@
 ---
 title: Creating a PlayFab Account
 author: v-kciril
-description: Understanding how to use PlayFab for a Business Intelligence Persona
+description: Describes how to create a PlayFab account.
 ms.author: v-kciril
 ms.date: 06/03/2019
 ms.topic: article
 ms.prod: playfab
-keywords: playfab, real-time analytics, PlayStream, player behaviors, event archiving, data export, player data, webhooks, analytic reporting, reports
+keywords: playfab, developer account, game manager, sdk, api
 ms.localizationpriority: medium
 ---
 
-## Create a PlayFab account
+# Creating a PlayFab account
 
 Before you can call any PlayFab API, you must have a [PlayFab developer account](https://developer.playfab.com/en-us/sign-up). If you already have a PlayFab account, you can skip this step.
 
@@ -40,4 +40,3 @@ For a more detailed overview, visit the [Game Manager quickstart](../features/co
 The PlayFab Game Manager allows you to do whatever you need to with your game title. Once you have a grasp on the aspects of the Game Manager, install the SDK so you can start using APIs. for more information on how to do this, see [Getting Started for Developers](developer.md).
 
 ![PlayFab - Unicorn Battle - Admin Menu](images/playfab-unicorn-battle-admin-menu.png)
-
