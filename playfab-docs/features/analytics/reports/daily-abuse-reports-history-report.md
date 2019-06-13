@@ -16,9 +16,9 @@ ms.localizationpriority: medium
 
 The Daily Abuse Reports history report contains a CSV document with all of the player reports that happened during the specified day.
 
-![Daily Abuse Reports History Report Table](media/tutorials/daily-abuse-reports-history-report-table.png)  
+In the example shown below, a player with ID of  **6079A16A9E4FB67** is reporting a player with ID of **94A248B3B9E628F2** for the reason **Test Report** on 5/14/2017.
 
-In the preceding example, a player with ID of  **6079A16A9E4FB67** is reporting a player with ID of **94A248B3B9E628F2** for the reason **Test Report** on 5/14/2017.
+![Daily Abuse Reports History Report Table](media/tutorials/daily-abuse-reports-history-report-table.png)  
 
 > [!NOTE]
 > For GDPR compliance reasons, the Daily Abuse History Reports are only available for the past 30 days. To learn more, visit our [GDPR documentation](../../data/playerdata/playfab-gdpr-deleting-and-exporting-player-data.md).

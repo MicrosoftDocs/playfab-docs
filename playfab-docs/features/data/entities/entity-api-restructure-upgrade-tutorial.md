@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 ## Introduction
 
-We have restructured the APIs that were lumped under the Entity API group into coherent logical groups that make their consumption easier, both via the [documentation site](../../../api-references/index.md), and the [SDKs](../../../index.md?#pivot=documentation&panel=sdks).
+We have restructured the APIs that were lumped under the Entity API group into coherent logical groups that make their consumption easier, both via the [documentation site](../../../api-references/index.md), and the PlayFab SDKs.
 
 The immediate impact is that if you have been using the entity-based APIs in your game, the code will need to be updated when you upgrade your SDKs.
 
