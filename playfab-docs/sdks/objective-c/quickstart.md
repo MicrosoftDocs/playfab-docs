@@ -26,7 +26,6 @@ Happy Developing!
 There are two ways to get started:
 
 1. Start with our [example implementation project](https://github.com/PlayFab/Objective_C_SDK/tree/master/Example/PFExample).
-
 2. Import the [Objective-C SDK](https://github.com/PlayFab/Objective_C_SDK/tree/master/PlayFabSDK) into an existing XCode project.
 
 ## Configuring PlayFab
