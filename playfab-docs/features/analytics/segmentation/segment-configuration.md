@@ -20,12 +20,13 @@ Each segment allows you to define useful or interesting groups of players, and p
 
 To access segment configuration:
 
-- Select **Players** from the menu on the left.
-- Select the **Segments** tab **(2)**.
-- You may then choose to:
+1. Select **Players** from the menu on the left.
+2. Select the **Segments** tab.
 
-  - Use the **New Segment** button **(3)** to create and configure a new **Segment**.
-  - Locate an *existing* **Segment** and select the name label **(4)** to configure the **Segment**.
+You may then choose to:
+
+  3. Use the **New Segment** button to create and configure a new **Segment**.
+  4. Locate an *existing* **Segment**, and select the name label to configure the **Segment**.
 
 ![Game Manager - Players - Segments - Create or Configure New Segment](media/tutorials/game-manager-players-segments-create-or-configure-new-segment.png)  
 
@@ -33,15 +34,15 @@ To access segment configuration:
 
 **Prerequisites**:
 
-To configure a segment like the example in this tutorial, you will need the following:
+To configure a segment like the example in this tutorial, you will need:
 
 - Players with and without a distinctive characteristic defined in PlayFab.
 - A defined [CloudScript PlayStream Hook](../../automation/actions-rules/using-cloudscript-actions-with-playstream.md).
 
 In this example we are going to:
 
-1. Configure a segment using this *defining characteristic*:  all players that come from Canada.
-2. Run a CloudScript function **helloWorld** for each player that enters the segment.
+- Configure a segment using this *defining characteristic*:  all players that come from Canada.
+- Run a CloudScript function **helloWorld** for each player that enters the segment.
 
 The *defining characteristic* of a player can be:
 
@@ -63,7 +64,7 @@ Utilize the second parameter, *Context* in your CloudScript handler to identify 
 
 In this particular case, segment configuration requires 4 simple steps:
 
-1. Assign an appropriate name for the segment. It's a good idea to use a name that incorporates your *Defining Characteristic* - **Canada Players**
+1. Assign an appropriate name for the segment. It's a good idea to use a name that incorporates your *Defining Characteristic* - **Canada Players**.
 2. Assign conditions that a player has to meet to enter the segment. In this case we want a *country* filter with the strict value: *Canada*.
 3. Add a CloudScript action for the entered segment trigger. Configure the action to run the function you want. In this example, we want **helloWorld**.
 4. Commit by selecting the **Save Segment** button.
@@ -81,7 +82,7 @@ In this particular case, segment configuration requires 4 simple steps:
 
 ![Game Manager - Players - Segments - New Segment Configuration](media/tutorials/game-manager-players-segments-new-segment-configuration.png)  
 
-**Group (2)** is a set of players that meet all defined conditions (called **Filters (3)**).
+**Group (2)** is a set of players that meet all defined conditions called **Filters (3)**.
 
 In other words, to be part of a segment, a player must be part of at least 1 group. To be part of a group, a player must meet all conditions (filters).
 
@@ -136,10 +137,10 @@ A trigger defines the *context* of the action. For example, a *player entered se
 
 It is possible to look up what segments a player belongs to by means of the **Player Segments** page. To access the **Player Segments** page:
 
-- Select **Players** in the sidebar menu **(1)**.
-- Then select the **Players** tab **(2)**.
-- Locate the player you want to inspect, and select the **ID** label **(3)**.
-- Finally select **Segments** in the **Players Toolbar (4)**.
+1. Select **Players** in the sidebar menu.
+2. Then select the **Players** tab.
+3. Locate the player you want to inspect, and select the **ID** label.
+4. Finally, select **Segments** in the **Players Toolbar**.
 
 ![Game Manager - Open - Players Segments page](media/tutorials/game-manager-open-players-segments-page.png)  
 
