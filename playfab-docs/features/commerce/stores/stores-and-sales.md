@@ -191,6 +191,11 @@ Stores are a great mechanism for encouraging your players to purchase items.
 Stores work with any kind of virtual currency. Stores can also work with real money through an alternate set of API methods.
 
 - You can set up a single-item purchase with VC via [PurchaseItem](xref:titleid.playfabapi.com.client.playeritemmanagement.purchaseitem).
-- You can set up a multiple-item purchase with VC via the sequence: [StartPurchase](xref:titleid.playfabapi.com.client.playeritemmanagement.startpurchase), [PayForPurchase](xref:titleid.playfabapi.com.client.playeritemmanagement.payforpurchase), and [ConfirmPurchase](xref:titleid.playfabapi.com.client.playeritemmanagement.confirmpurchase). To perform real money purchases, consult our advanced tutorial [Non-Receipt Payment Processing](../economy/non-receipt-payment-processing.md).
+- You can set up a multiple-item purchase with real money via the sequence:
+  - [StartPurchase](xref:titleid.playfabapi.com.client.playeritemmanagement.startpurchase)
+  - [PayForPurchase](xref:titleid.playfabapi.com.client.playeritemmanagement.payforpurchase)
+  - [ConfirmPurchase](xref:titleid.playfabapi.com.client.playeritemmanagement.confirmpurchase)
+
+For more information on real money purchases, consult our advanced tutorial [Non-Receipt Payment Processing](../economy/non-receipt-payment-processing.md).
 
 For advanced store usage, see our [Custom Stores for Player Segments](../../commerce/stores/custom-stores-for-player-segments.md) tutorial.
