@@ -16,9 +16,9 @@ ms.localizationpriority: medium
 
 The Thirty Day New User Retention report tracks the percentage of new user cohorts who return to the game on subsequent days.
 
-A cohort of players is defined by grouping newly registered players on a given day (**Day 0**) and their retention is tracked over a 30-day period.
+A Cohort of players is defined by grouping newly registered players on a given day (**Day 0**) and their retention is tracked over a 30-day period.
 
-Cohort size is indicated by the number of players in a cohort.
+Cohort size is determined by the number of players within it.
 
 The example report shown below, was generated on **2/5/2018**. On **1/6/2018**, **39,132** new players created accounts in the example title.
 
@@ -32,7 +32,7 @@ For additional details, see [Metrics and Terminology](../metrics/metrics-and-ter
 
 ## Populating the report
 
-To populate this report, you must register a player and then log in for several days in a row at least once.
+To populate this report, you must register a player and then have them log in for several days in a row at least once.
 
 This, however, will produce trivial results, (with **100%** retention for each day).
 
@@ -58,7 +58,7 @@ To register a player you may use the following API calls:
 - [RegisterPlayFabUser](xref:titleid.playfabapi.com.client.authentication.registerplayfabuser)
 - [RegisterWithWindowsHello](xref:titleid.playfabapi.com.client.authentication.registerwithwindowshello)
 
-You may also you use the following API calls to register and log in simultaneously if the **CreateAccount** flag is set:
+You may also you use the following API calls to register and log in simultaneously if the `CreateAccount` flag is set:
 
 - [LoginWithAndroidDeviceID](xref:titleid.playfabapi.com.client.authentication.loginwithandroiddeviceid)
 - [LoginWithCustomID](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid)

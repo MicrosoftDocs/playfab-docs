@@ -14,13 +14,13 @@ ms.localizationpriority: medium
 
 Player segmentation is defined in [Game Manager](../../config/gamemanager/quickstart.md). Segments allow you to define useful or interesting groups of players, and perform exclusive actions on that group.
 
-**Requirements:**
+## Requirements
 
 - Players with and without a distinctive characteristic defined in PlayFab.
 
 - A defined [CloudScript PlayStream Hook](../../automation/actions-rules/using-cloudscript-actions-with-playstream.md).
 
-## Example case: Run a custom CloudScript for every player who reaches an in-game goal
+### Example case: Run a custom CloudScript for every player who reaches an in-game goal
 
 The *defining characteristic* of a player might be:
 
@@ -37,7 +37,7 @@ For this example, our distinctive characteristic will be a statistic - specifica
 > [!NOTE]
 > Statistics are one of many possible options, and only specifically required for this example. Feel free to replace the statistic requirement with another filter of your choice.
 
-Our action will be to run a CloudScript function. CloudScript is by far the most flexible trigger option, granting you full control of the player and segmentation information at the time of segment transition.
+Our action will be to run a CloudScript function. CloudScript is by far the most flexible trigger option, granting you the full control of player and segmentation information at the time of segment transition.
 
 From the **Game Manager** screen:
 
