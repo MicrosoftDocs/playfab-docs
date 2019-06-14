@@ -134,7 +134,7 @@ This API returns immediately and provides a `JobReceiptId`, which you should sto
 
 Once the delete is complete, an email will be sent to the notification email address configured for the title. It will contain the same `JobReceiptId`, which was initially returned by the API. The completion of the task will also trigger a PlayStream event.
 
-Using our WebHook feature, you can register to receive these events on an endpoint of your choosing, and process them as needed. The event will contain a JSON blob that has the `JobReceiptId`.
+Using our Webhook feature, you can register to receive these events on an endpoint of your choosing, and process them as needed. The event will contain a JSON blob that has the `JobReceiptId`.
 
 The following example shows how to use the Admin API with the [C# SDK](../../../sdks/c-sharp/index.md). If you would like to use a different SDK, select one from the list of [PlayFab SDKs](../../../index.md).
 
@@ -222,7 +222,7 @@ This API immediately returns a `JobReceiptId`, which you should store in your re
 
  Upon completion of the export, an email containing the URL to download the export dump will be sent to the notification email address configured for the title.
 
-The completion of the task will also trigger a PlayStream event. Using our WebHook feature, you can register to receive these events on an endpoint of your choosing and process as needed. The event will contain a JSON blob that has information such as the **JobReceiptId** and the download URL for the exported data.
+The completion of the task will also trigger a PlayStream event. Using our Webhook feature, you can register to receive these events on an endpoint of your choosing and process as needed. The event will contain a JSON blob that has information such as the **JobReceiptId** and the download URL for the exported data.
 
 The following example is how to use the Admin API with the [C# SDK](../../../sdks/c-sharp/index.md). If you would like to use a different SDK, select one from the list of [PlayFab SDKs](../../../index.md).
 

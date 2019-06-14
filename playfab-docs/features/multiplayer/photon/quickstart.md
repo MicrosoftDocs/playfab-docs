@@ -539,7 +539,7 @@ You may acquire additional data about the event using "args" argument. The examp
 }
 ```
 
-When changing custom Room properties using the Unity Photon client, *it is important to mark the call*, so that it passes the event to WebHook (PlayFab in this case).
+When changing custom Room properties using the Unity Photon client, *it is important to mark the call*, so that it passes the event to Webhook (PlayFab in this case).
 
 ```csharp
 // Properties updates ( this hashtable contains the properties to be changed. Properties not mentioned here will stay as is
@@ -642,7 +642,7 @@ You may acquire additional data about the event using "args" argument. The examp
 }
 ```
 
-When raising custom room events using Unity Photon client, it is important to mark the call so that it passes the event to WebHooks (PlayFab in this case).
+When raising custom room events using Unity Photon client, it is important to mark the call so that it passes the event to Webhooks (PlayFab in this case).
 
 ```csharp
 var data = new Dictionary<string,object>() {
@@ -652,7 +652,7 @@ var data = new Dictionary<string,object>() {
 // Raise custom room event
 // Replace 15 with any custom event code of your choice [0..299]
 PhotonNetwork.RaiseEvent(15, data, true, new RaiseEventOptions() {
-    ForwardToWebhook = true, // Mark call to pass event to WebHook (PlayFab in this case)
+    ForwardToWebhook = true, // Mark call to pass event to Webhook (PlayFab in this case)
 });
 ```
 

@@ -92,4 +92,4 @@ For more information on specific flows from either your game client or service, 
 
 ### March 2019 - Public preview release notes
 
-We have temporarily removed the matchmaking Playstream events while we adjust the schema. This will be re-enabled in a future update. As a result, polling is still the only method for checking the status of matchmaking a ticket.
+We have temporarily removed the matchmaking PlayStream events while we adjust the schema. This will be re-enabled in a future update. As a result, polling is still the only method for checking the status of matchmaking a ticket.
