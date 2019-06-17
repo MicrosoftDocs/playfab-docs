@@ -81,13 +81,18 @@ More typically, your game should allow purchase of a premium virtual currency us
 
 ## Defining a virtual-currency store
 
-Let's get into the gritty details and code for purchasing in-game items with virtual currency. The initial steps are nearly identical to the preceding example.
+Let's get into the gritty details and code for purchasing in-game items with virtual currency.
 
-This time we will create 3 new items: **Small**, **Medium**, and **Large Health Potions** with a *free* **Currency** price, and a *premium* **Currency** price. We'll create a new store which puts these items on sale.
+The initial steps are nearly identical to the preceding example:
+
+- Create 3 new items: **Small**, **Medium**, and **Large Health Potions** with a *free* **Currency** price, and a *premium* **Currency** price.
+- Create a new store which puts these items on sale.
 
 ![Game Manager - Economy - New Store](media/tutorials/game-manager-economy-new-store.png)  
 
-To purchase a single item for virtual currency, use the [PurchaseItem](xref:titleid.playfabapi.com.client.playeritemmanagement.purchaseitem) method, as described in our [Stores quickstart](quickstart.md). This tutorial, however, will cover the more advanced topic of purchasing multiple items in a single purchase.
+To purchase a single item for virtual currency, use the [PurchaseItem](xref:titleid.playfabapi.com.client.playeritemmanagement.purchaseitem) method, as described in our [Stores quickstart](quickstart.md).
+
+This tutorial, however, will cover the more advanced topic of purchasing multiple items in a single purchase.
 
 Your first step in this process should be to get the store, and display it to the user.
 
