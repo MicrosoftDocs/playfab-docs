@@ -16,8 +16,6 @@ This quickstart helps you make your first PlayFab API call in the Unity3d engine
 
 Before you can call any PlayFab API, you must have a [PlayFab developer account](https://developer.playfab.com/en-us/sign-up). 
 
-Before continuing, make sure you have completed [Getting started for developers](../../personas/developer.md), which ensures you have a PlayFab account and are familiar with the PlayFab Game Manager.
-
 ## OS
 
 This guide is written for Windows 10, however it should also work well with a Mac.
