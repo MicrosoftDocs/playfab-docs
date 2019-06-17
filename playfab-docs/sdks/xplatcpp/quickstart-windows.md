@@ -130,7 +130,7 @@ This optional last section describes each part of `ConsoleApplication1.cpp` in d
   - In this example, `Windows.h` is only used for `Sleep()`.
 
 - Using namespaces in PlayFab and PlayFab::ClientModels.
-  - Playfab is used for API methods and general PlayFab usage.
+  - PlayFab is used for API methods and general PlayFab usage.
   - PlayFab::ClientModels is used for the objects sent to and received by Client API calls.
 
 - `OnLoginSuccess`, `OnLoginFailure` are callback functions asynchronously invoked by `PlayFabClientAPI.LoginWithCustomID`.

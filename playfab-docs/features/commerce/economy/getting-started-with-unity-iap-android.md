@@ -251,9 +251,9 @@ public class AndroidIAPExample : MonoBehaviour, IStoreListener {
 }
 
 // The following classes are used to deserialize JSON results provided by IAP Service
-// Please, note that Json fields are case-sensitive and should remain fields to support Unity Deserialization via JsonUtilities
+// Please, note that JSON fields are case-sensitive and should remain fields to support Unity Deserialization via JsonUtilities
 public class JsonData {
-    // Json Fields, ! Case-sensitive
+    // JSON Fields, ! Case-sensitive
 
     public string orderId;
     public string packageName;
@@ -266,7 +266,7 @@ public class JsonData {
 public class PayloadData {
     public JsonData JsonData;
 
-    // Json Fields, ! Case-sensitive
+    // JSON Fields, ! Case-sensitive
     public string signature;
     public string json;
 
@@ -280,7 +280,7 @@ public class PayloadData {
 public class GooglePurchase {
     public PayloadData PayloadData;
 
-    // Json Fields, ! Case-sensitive
+    // JSON Fields, ! Case-sensitive
     public string Store;
     public string TransactionID;
     public string Payload;

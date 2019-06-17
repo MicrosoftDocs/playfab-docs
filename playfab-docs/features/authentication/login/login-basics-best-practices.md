@@ -24,7 +24,7 @@ Bluntly - because it's the easiest. A custom ID can be anything, and it makes it
 
 ### Best practice
 
-Unless you know *exactly* why you want **LoginWithCustomId** in your released title, you should migrate to another login mechanism before you launch.
+Unless you know *exactly* why you want `LoginWithCustomId` in your released title, you should migrate to another login mechanism before you launch.
 
 ## Anonymous login mechanisms
 
@@ -72,17 +72,27 @@ If used, the e-mail or username-plus-password are authenticated directly by Play
 
 ### Third party API options
 
-These require separate API calls to another service (but do not require additional SDK installations): [LoginWithKongregate](xref:titleid.playfabapi.com.client.authentication.loginwithkongregate), [LoginWithSteam](xref:titleid.playfabapi.com.client.authentication.loginwithsteam), [LoginWithTwitch](xref:titleid.playfabapi.com.client.authentication.loginwithtwitch). Secure authentication happens between your user, and the 3rd party service API call.
+These require separate API calls to another service, but do not require additional SDK installations:
+
+- [LoginWithKongregate](xref:titleid.playfabapi.com.client.authentication.loginwithkongregate)
+- [LoginWithSteam](xref:titleid.playfabapi.com.client.authentication.loginwithsteam)
+- [LoginWithTwitch](xref:titleid.playfabapi.com.client.authentication.loginwithtwitch).
+
+Secure authentication happens between your user, and the 3rd party service API call.
 
 ### Third party SDK options
 
-[LoginWithFacebook](xref:titleid.playfabapi.com.client.authentication.loginwithfacebook), [LoginWithGoogleAccount](xref:titleid.playfabapi.com.client.authentication.loginwithgoogleaccount), [LoginWithWindowsHello](xref:titleid.playfabapi.com.client.authentication.loginwithwindowshello). These require a separate SDK installed into your game. Secure authentication happens within the 3rd party SDK.
+These require a separate SDK installed into your game. Secure authentication happens within the 3rd party SDK.
+
+- [LoginWithFacebook](xref:titleid.playfabapi.com.client.authentication.loginwithfacebook)
+- [LoginWithGoogleAccount](xref:titleid.playfabapi.com.client.authentication.loginwithgoogleaccount)
+- [LoginWithWindowsHello](xref:titleid.playfabapi.com.client.authentication.loginwithwindowshello).
 
 In all 3rd party options, those services process the login credentials, and you pass a secure token to the appropriate PlayFab login method. PlayFab remains unaware of the login credentials for those services.
 
 ### More best practices
 
-You should use an appropriate anonymous login for a basic login, and encourage your player to link a recoverable login. You should pick any one or more of the recoverable mechanisms with which you are comfortable and familiar.
+You should use an appropriate anonymous login for a basic login, and encourage your player to link to a recoverable login. You should pick any one or more of the recoverable mechanisms with which you are comfortable and familiar.
 
 > [!TIP]
 > Account recovery only requires *one* recoverable login, so don't pressure your player to use all of them.
@@ -99,7 +109,7 @@ GameCenter is a secure login specifically between an iOS device and the GameCent
 
 The only *safe* usage of this mechanism is for client-authoritative games with *no multiplayer capability*.
 
-PlayFab can be a useful cloud-save option for this type of game, using this mechanism. All other uses of **LoginWithGameCenter** should be considered *unsafe*. Do *not* use this login for *any* kind of game with *any* kind of multiplayer interaction.
+PlayFab can be a useful Cloud-save option for this type of game, using this mechanism. All other uses of `LoginWithGameCenter` should be considered *unsafe*. Do *not* use this login for *any* kind of game with *any* kind of multiplayer interaction.
 
 ### Best practice
 

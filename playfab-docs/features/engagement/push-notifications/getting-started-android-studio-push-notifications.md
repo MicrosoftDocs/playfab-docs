@@ -37,7 +37,7 @@ Firebase Cloud Messaging services offer you a cloud-based system to send, direct
 
 It also allows other services (like PlayFab) to send push notifications on your behalf using the FCM server key.
 
-### 3. Playfab Services
+### 3. PlayFab Services
 
 PlayFab Services then uses the FCM server key to send push notifications to your clients.
 
