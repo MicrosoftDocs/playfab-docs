@@ -1,7 +1,7 @@
 ---
-title: Simple Json license
+title: Simple JSON license
 author: v-kciril
-description: The Simple Json license.
+description: The Simple JSON license.
 ms.author: v-kciril
 ms.date: 02/20/2019
 ms.topic: article
@@ -10,7 +10,7 @@ keywords: playfab, unity3d sdk, unity3d, simple json
 ms.localizationpriority: medium
 ---
 
-# Simple Json license
+# Simple JSON license
 
 THIRD PARTY SOFTWARE NOTICES AND INFORMATION
 Do Not Translate or Localize

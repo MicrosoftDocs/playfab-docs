@@ -146,7 +146,7 @@ Ideally, you should see the following in your Unity Console Panel.
 ![Console log of first API call](media/first-call-log.png)  
 
 > [!TIP]
->Alternatively, you can also log into the game in the PlayFab Game Manager, and select the **PlayStream Monitor** tab. Each time you **Alt+ TAB** focus away from the actively running Unity game, the game passes an event which you can see and confirm in the Playstream Monitor.
+>Alternatively, you can also log into the game in the PlayFab Game Manager, and select the **PlayStream Monitor** tab. Each time you **Alt+ TAB** focus away from the actively running Unity game, the game passes an event which you can see and confirm in the PlayStream Monitor.
 
 For a list of all available client API calls, see our [PlayFab API References](../../api-references/index.md) documentation.
 

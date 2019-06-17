@@ -1,7 +1,7 @@
 ---
 title: LiveOps Tutorials
 author: v-kciril
-description: Tutorials for using Liveops with PlayFab.
+description: Tutorials for using LiveOps with PlayFab.
 ms.author: v-kciril
 ms.date: 01/25/2019
 ms.topic: article
