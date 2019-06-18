@@ -29,3 +29,4 @@ Recoverable login mechanisms require some identity information from the player. 
 ## Best practices
   
 You should begin by reading the [login best practices guide](login-basics-best-practices.md). Make sure that your game enables your players to join in and start playing quickly and easily, while providing them with a safe and secure method of getting access to their game data on multiple devices.
+
