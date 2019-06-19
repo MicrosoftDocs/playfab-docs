@@ -23,7 +23,7 @@ This Account linking quickstart demonstrates how to bind an account to multiple 
 
 It is very common for your first login to be an anonymous one. This gets your player into the game, friction-free.
 
-Once a player has become invested in your game, you should prompt them to add a recoverable login method, which makes their account *recoverable* in the case of device failure or other issues.
+But once a player becomes invested in your game, you should prompt them to add a recoverable login method, which makes their account *recoverable* in the case of device failure or other issues.
 
 This section covers adding a recoverable login mechanism to an anonymous account.
 
@@ -48,9 +48,9 @@ The third-party recoverable login mechanisms each involve prompting the user to 
 
 ### Best practice
 
- Use an anonymous login to create new players with zero friction. After a tutorial phase, gently encourage players to link your preferred choice of recoverable credentials to their account.
+Use an anonymous login to create new players with zero friction. After a tutorial phase, gently encourage players to link your preferred choice of recoverable credentials to their account.
 
-If you're using a third-party authentication system, retrieve the appropriate Token from that service (via API calls or SDK functions), then call the appropriate PlayFab API to link the player's account from that service to their PlayFab account: [LinkFacebookAccount](xref:titleid.playfabapi.com.client.accountmanagement.linkfacebookaccount), [LinkGameCenterAccount](xref:titleid.playfabapi.com.client.accountmanagement.linkgamecenteraccount), [LinkGoogleAccount](xref:titleid.playfabapi.com.client.accountmanagement.linkgoogleaccount), [LinkKongregate](xref:titleid.playfabapi.com.client.accountmanagement.linkkongregate), [LinkSteamAccount](xref:titleid.playfabapi.com.client.accountmanagement.linksteamaccount), [LinkTwitch](xref:titleid.playfabapi.com.client.accountmanagement.linktwitch), [LinkWindowsHello](xref:titleid.playfabapi.com.client.accountmanagement.linkwindowshello).
+If you're using a third-party authentication system, retrieve the appropriate token from that service (via API calls or SDK functions), then call the appropriate PlayFab API to link the player's account from that service to their PlayFab account: [LinkFacebookAccount](xref:titleid.playfabapi.com.client.accountmanagement.linkfacebookaccount), [LinkGameCenterAccount](xref:titleid.playfabapi.com.client.accountmanagement.linkgamecenteraccount), [LinkGoogleAccount](xref:titleid.playfabapi.com.client.accountmanagement.linkgoogleaccount), [LinkKongregate](xref:titleid.playfabapi.com.client.accountmanagement.linkkongregate), [LinkSteamAccount](xref:titleid.playfabapi.com.client.accountmanagement.linksteamaccount), [LinkTwitch](xref:titleid.playfabapi.com.client.accountmanagement.linktwitch), [LinkWindowsHello](xref:titleid.playfabapi.com.client.accountmanagement.linkwindowshello).
 
 ### Best practice
 
@@ -101,7 +101,7 @@ Now that we've verified that **Device2** is not bound to this account, we can tr
 Use CloudScript, or a PlayStream event to record information on abandoned accounts somewhere where your customer service reps might be able to recover it, if the player made a mistake.
 
 > [!NOTE]
-> Even something as simple as writing the PlayFabId to a cloud-based log file may save an account for a dedicated player.
+> Even something as simple as writing the PlayFabId to a Cloud-based log file may save an account for a dedicated player.
 
 **Device1 State**: **Device ID** is bound to the player account.
 **Device2 State**: **Device ID** is bound to the player account.

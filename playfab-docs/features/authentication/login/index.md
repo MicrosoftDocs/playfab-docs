@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Player login
 
-The first step in adding PlayFab to any game is to log in the player. Logging in the player returns a security token that is needed for all other API calls.
+The first step in adding PlayFab to any game is to log in the player. Logging in the player returns a security token that is required for all other API calls.
 
 PlayFab provides a breadth of login providers to enable both anonymous and recoverable login mechanisms.
 
@@ -24,7 +24,7 @@ This is the most common login mechanism to use initially (especially for mobile 
 
 ## Recoverable login mechanisms
 
-Recoverable login mechanisms require some identity information from the player. They require the player to either authenticate with an external provider (e.g., Facebook, iOS, Google, Kongregate, PlayStation, Steam, Xbox Live, and others), or manage the login directly with PlayFab, by using either a user name or email address and password.
+Recoverable login mechanisms require some identity information from the player. The player must either authenticate with an external provider (e.g. Facebook, iOS, Google, Kongregate, PlayStation, Steam, Xbox Live, etc.), or manage the login directly with PlayFab, by using either a user name or email address and password.
 
 ## Best practices
   
