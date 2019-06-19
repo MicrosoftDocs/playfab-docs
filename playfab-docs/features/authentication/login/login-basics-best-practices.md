@@ -42,20 +42,24 @@ So why use it? Because it's the lowest possible barrier to entry for the player,
 
 ### Best practice
 
-Your game should use an anonymous login for creating a new account and linking new devices to an existing account. Some players may abandon a game that asks for an e-mail or identifiable information. However, once the anonymous login is complete, you should provide the option to add *recoverable* login credentials, and provide some explanation regarding the benefits.
+Your game should use an *anonymous* login for creating a new account and linking new devices to an existing account. We recommend this because some players may abandon a game that asks for an e-mail or identifiable information.
 
-In particular, you should make sure that paying customers are guided to the *recoverable* login systems, to prevent loss of their accounts. A free account lost forever is a disappointment. A paid account lost forever affects revenue.
+However, once the anonymous login is complete, you should provide the option to add *recoverable* login credentials, and provide some explanation regarding the benefits.
+
+In particular, you should make sure that paying customers are guided to the *recoverable* login systems, to prevent loss of their accounts. A free account lost forever is a disappointment...
+
+A paid account lost forever affects revenue.
 
 ### iOS devices
 
-For iOS devices, the player ID changes if they uninstall your game and then *re*-install it. One way to make sure you have a consistent ID on iOS is to save the device ID for the player to the iTunes KeyChain, so that you can read it from there on game start, and use it to sign in.
+For iOS devices, the player ID changes if they uninstall your game, and then *re*-install it. One way to make sure you have a consistent ID on iOS is to save the device ID for the player to the iTunes KeyChain, so that you can read it from there on game start, and use it to sign in.
 
-You must determine how to generate unique custom IDs for any other device or platform. Custom IDs are an effective alternative for other platforms or devices, but you must generate your custom IDs with care. Too simple, and you risk hackers stealing the accounts of others.
+You must determine how to generate unique custom IDs for any other device or platform. Custom IDs are an effective alternative for other platforms or devices, but you must generate your custom IDs with care. If they are too simple, you risk hackers stealing the accounts of others.
 
 > [!NOTE]
 > Binding a recoverable login is only required *once* per device. Once bound, the game can continue to use the anonymous login with no drawbacks. See the next section.
 
-Anonymous login is convenient for the player, but it is *not* required. Your game can rely exclusively on a recoverable login mechanism. However, your players will be happier if they *don't* have to type a password every time they log in.
+An anonymous login is convenient for the player, but it is *not* required. Your game can rely exclusively on a recoverable login mechanism. However, your players will be happier if they *don't* have to type a password every time they log in.
 
 ## Recoverable login mechanisms
 
@@ -92,7 +96,7 @@ In all 3rd party options, those services process the login credentials, and you 
 
 ### More best practices
 
-You should use an appropriate anonymous login for a basic login, and encourage your player to link to a recoverable login. You should pick any one or more of the recoverable mechanisms with which you are comfortable and familiar.
+Use an appropriate anonymous login for a basic login, and encourage your player to link to a recoverable login. You should pick any one or more of the recoverable mechanisms with which you are comfortable and familiar.
 
 > [!TIP]
 > Account recovery only requires *one* recoverable login, so don't pressure your player to use all of them.
@@ -113,13 +117,13 @@ PlayFab can be a useful Cloud-save option for this type of game, using this mech
 
 ### Best practice
 
-*Don't use it*. Instead, use a secure recoverable mechanism described in the previous section. Even if your game is safe *today*, you may add a feature tomorrow (like Chat or Trading), which *seems* innocuous but opens up your players to theft, cheating, and malicious user activity.
+*Don't use it!* Instead - use a secure recoverable mechanism described in the previous section. Even if your game is safe *today*, you may add a feature tomorrow (like Chat or Trading), which *seems* innocuous but opens up your players to theft, cheating, and malicious user activity.
 
 ## Conclusion
 
 Anonymous login is great, and it provides the user with a fully automated login process. The downside is account recovery, which is sometimes impossible without a recoverable login.
 
-The following flowchart describes anonymous login followed by adding a recoverable login mechanism.
+The following flow chart describes anonymous login followed by adding a recoverable login mechanism.
 
 ![PayFab anonymous login and recoverable login mechanism](../media/tutorials/playfab-anonymous-login-and-recoverable-login.png)  
 
