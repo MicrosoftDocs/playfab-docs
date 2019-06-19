@@ -164,7 +164,8 @@ void DefinePaymentCurrency(string orderId, string currencyKey)
 {
     var request =new PayForPurchaseRequest {
         OrderId = orderId, // orderId comes from StartPurchase above
-        Currency = currencyKey // User defines which currency they wish to use to pay for this purchase (all items must have a defined/non-zero cost in this currency)
+        Currency = currencyKey, // User defines which currency they wish to use to pay for this purchase (all items must have a defined/non-zero cost in this currency)
+        ProviderName = "Facebook" // Payment provider used to fund the purchase.
     };
     PlayFabClientAPI.PayForPurchase(request, LogSuccess, LogFailure);
 }
