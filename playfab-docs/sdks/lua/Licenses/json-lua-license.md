@@ -1,7 +1,7 @@
 ---
-title: Json Lua
+title: JSON Lua
 author: v-kciril
-description: The Json Lua license.
+description: The JSON Lua license.
 ms.author: v-kciril
 ms.date: 02/20/2019
 ms.topic: article
@@ -10,7 +10,7 @@ keywords: playfab, lua sdk, lua, json
 ms.localizationpriority: medium
 ---
 
-# Json Lua
+# JSON Lua
 
 [https://github.com/rxi/json.lua](https://github.com/rxi/json.lua)
 

@@ -29,47 +29,48 @@ This tutorial guides you through an example of PlayFab authentication using Face
 
 Start by navigating to the [Facebook Developer Portal](https://developers.facebook.com/):
 
-- Move your mouse over the **My Apps** button **(1)**.
-- Select **Add a New App (2)**, as shown on the picture below.
+1. Move your mouse over the **My Apps** button.
+2. Select **Add a New App**, as shown on the picture below.
 
 ![Facebook add a new app](media/tutorials/facebook-add-a-new-app.png)  
 
 A new **Application** pop-up will open.
 
-- Enter a name for your **Application (1)**.
-- Enter a **Contact Email (2)**.
+1. Enter a name for your **Application**.
+2. Enter a **Contact Email**.
 
 > [!NOTE]
 > Make sure to come up with your own *unique* **Application Name** and **Email**, as shown on the picture below.
 
 ![Facebook new app ID](media/tutorials/facebook-new-app-id.png)  
 
-- Navigate to the **Settings** tab **(1)**.
-- Then move to the **Basic** sub-tab **(2)**.
-- Locate your **Application ID (3)**.
-- Copy it somewhere to a safe place that is easily accessed.
+1. Navigate to the **Settings** tab.
+2. Then move to the **Basic** sub-tab.
+3. Locate your **Application ID**.
+    - Copy it somewhere to a safe place that is easily accessed.
 We will use it later to set up the Facebook SDK.
 
 ![Facebook save app ID](media/tutorials/facebook-save-app-id.png)  
 
-- Navigate to the [Facebook Access Token Tool](https://developers.facebook.com/tools/accesstoken/).
-- Locate your **App** in the list **(1)**.
-- Verify that it has an assigned **User Token (2)**.
+ Navigate to the [Facebook Access Token Tool](https://developers.facebook.com/tools/accesstoken/).
+
+1. Locate your **App** in the list.
+2. Verify that it has an assigned **User Token**.
 
 > [!NOTE]
 > If you *do not* have an assigned user token, request one using the button to the right of your screen. Refer to this page whenever you need a fresh user token. If authorization fails during testing on a PC, token expiration may be the most likely reason. Refresh the page to get a new user token and test again.
 
 ![Facebook Access Token Tool](media/tutorials/facebook-unity/access-token-tool.png)  
 
-- On your **Application Manager** page, navigate to **+ Add Products (1)**.
-- Locate the **Facebook Login** entry and select **Get Started (2)**.
+1. On your **Application Manager** page, navigate to **+ Add Products**.
+2. Locate the **Facebook Login** entry and select **Get Started**.
 
 ![Facebook login get started](media/tutorials/facebook-html5/login-get-started.png)  
 
 A page with **Login** product settings should open.
 
-- Make sure that you have the **Login** product **Settings** page opened **(1)**.
-- Verify that both **Client OAuth** and **Web OAuth** are on **(2)**.
+1. Make sure that you have the **Login** product **Settings** page opened.
+2. Verify that both **Client OAuth** and **Web OAuth** are on.
 
 ![Facebook login product settings](media/tutorials/facebook-html5/login-product-settings.png)  
 
@@ -77,8 +78,8 @@ A page with **Login** product settings should open.
 
 Open your **Unity Project**:
 
-- Select **Facebook** in the file menu **(1)**.
-- Then select **Edit Settings (2)**.
+1. Select **Facebook** in the file menu.
+2. Then select **Edit Settings**.
 
 ![Edit Facebook Unity project settings](media/tutorials/facebook-unity/edit-project-settings.png)  
 
@@ -92,9 +93,10 @@ The **Inspector** window will display the current **Facebook SDK** configuration
 
 Create a new **Game Object**, and rename it to **PlayfabFacebookAuthExample**, as shown in the following picture.
 
-![Create a new Game Object](media/tutorials/facebook-unity/create-game-object.png)  
-
-Create a script called **PlayfabFacebookAuthExample.cs (1)**, and add it to the **Game Object (2)** as shown on the picture below.
+![Create a new Game Object](media/tutorials/facebook-unity/create-game-object.png)
+  
+1. Create a script called **PlayfabFacebookAuthExample.cs**.
+2. Add it to the **Game Object** as shown on the picture below.
 
 ![Add example script to game object](media/tutorials/facebook-unity/add-example-script.png)
 
@@ -188,9 +190,9 @@ public class PlayfabFacebookAuthExample : MonoBehaviour
 
 ### Running the application in the editor
 
-- Select the **Play** button **(1)**.
-- Once **Facebook** is initialized (and an authentication call is made), a **Facebook** authentication dialog will appear in your game view.
-- Enter the **User Token (2)** and select the **Send Success** button **(3)**, as shown in the following picture.
+1. Select the **Play** button. Once **Facebook** is initialized (and an authentication call is made), a **Facebook** authentication dialog will appear in your game view.
+2. Enter the **User Token**.
+3. Select the **Send Success** button, as shown in the following picture.
 
 ![Enter user token in Facebook Auth dialog](media/tutorials/facebook-unity/enter-user-token.png)  
 
@@ -215,8 +217,8 @@ Before launching the application on Android, you are required to perform additio
 
 Next, in your **Facebook Application** console:
 
-- Navigate to **Basic** settings **(1)**.
-- Select **+ Add Platform (2)**, as indicated in the example provided below.
+1. Navigate to **Basic** settings.
+2. Select **+ Add Platform**, as indicated in the example provided below.
 
 ![Facebook App Console add platform](media/tutorials/facebook-unity/facebook-add-platform.png)  
 
@@ -243,16 +245,16 @@ Build and run the application normally on your Android Device.
 
 Before launching the Application on iOS, you have to perform additional configuration steps.
 
-- First, you must ensure you have the **iOS** platform selected **(1)**.
-- And a unique **Bundle ID** set **(4)** as indicated in the example provided below.
+- First, ensure that you have the **iOS** platform selected.
+- Then, set a unique **Bundle ID** as indicated in the example provided below.
 - Please make sure to create your own *unique* **Package ID**.
 
 ![Set iOS bundle ID](media/tutorials/facebook-unity/set-ios-bundle-id.png)
 
 Next, in your **Facebook Application Console**:
 
-- Navigate to **Basic** settings **(1)**.
-- Select **+ Add Platform (2)**, as indicated in the example provided below.
+1. Navigate to **Basic** settings.
+2. Select **+ Add Platform**, as indicated in the example provided below.
 
 ![Facebook App Console add platform](media/tutorials/facebook-unity/facebook-add-platform.png)  
 

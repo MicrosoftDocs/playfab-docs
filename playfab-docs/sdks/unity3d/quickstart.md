@@ -16,8 +16,6 @@ This quickstart helps you make your first PlayFab API call in the Unity3d engine
 
 Before you can call any PlayFab API, you must have a [PlayFab developer account](https://developer.playfab.com/en-us/sign-up). 
 
-Before continuing, make sure you have completed [Getting started for developers](../../personas/developer.md), which ensures you have a PlayFab account and are familiar with the PlayFab Game Manager.
-
 ## OS
 
 This guide is written for Windows 10, however it should also work well with a Mac.
@@ -146,7 +144,7 @@ Ideally, you should see the following in your Unity Console Panel.
 ![Console log of first API call](media/first-call-log.png)  
 
 > [!TIP]
->Alternatively, you can also log into the game in the PlayFab Game Manager, and select the **PlayStream Monitor** tab. Each time you **Alt+ TAB** focus away from the actively running Unity game, the game passes an event which you can see and confirm in the Playstream Monitor.
+>Alternatively, you can also log into the game in the PlayFab Game Manager, and select the **PlayStream Monitor** tab. Each time you **Alt+ TAB** focus away from the actively running Unity game, the game passes an event which you can see and confirm in the PlayStream Monitor.
 
 For a list of all available client API calls, see our [PlayFab API References](../../api-references/index.md) documentation.
 
