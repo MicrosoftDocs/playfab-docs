@@ -392,7 +392,7 @@ Date: 2018-03-16
 
 ### New API methods
 
-- [admin.RevokeInventoryItems](xref:titleid.playfabapi.com.admin.playeritemmanagement.revokeinventoryitems) and [server.RevokeInventoryItems](xref:titleid.playfabapi.com.server.playeritemmanagementrevokeinventoryitems).
+- [admin.RevokeInventoryItems](xref:titleid.playfabapi.com.admin.playeritemmanagement.revokeinventoryitems) and [server.RevokeInventoryItems](xref:titleid.playfabapi.com.server.playeritemmanagement.revokeinventoryitems).
 - A whole new [Entity API](../features/data/entities/quickstart.md).
 - Many new [Entity PlayStream Events](../api-references/events/index.md) (search for "entity" on linked page).
 

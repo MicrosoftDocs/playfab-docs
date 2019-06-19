@@ -35,8 +35,8 @@ The code shown below illustrates basic operations with policies (please read the
 
 ```csharp
 public void Start() {
-    PlayFabSettings.DeveloperSecretKey = "<insert key here>";
-    PlayFabSettings.TitleId = "< insert title id here >";
+    PlayFabSettings.staticSettings.DeveloperSecretKey = "<insert key here>";
+    PlayFabSettings.staticSettings.TitleId = "< insert title id here >";
     FetchApiPolicy(UpdateApiPolicy);
 }
 

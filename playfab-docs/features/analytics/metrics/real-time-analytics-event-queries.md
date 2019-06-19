@@ -48,14 +48,14 @@ Please post on our [forums](https://community.playfab.com/questions/ask.html) to
 
 A simplistic query is just a value you want to search for. PlayFab goes through every property of each event, looking for that specific value.
 
-For example - consider the aforementioned event and its field called **StatisticName**.
-This field has the value: **tournamentScore_hourly**.
+For example - consider the aforementioned event and its field called `StatisticName`.
+This field has the value: `tournamentScore_hourly`.
 
 Let's begin a query:
 
-- Using the **Search Field** provided, enter **tournamentScore_hourly (1)**.
-- Select the **Run Query** button **(2)**.
-- The result will be rendered in the **Event Timeline** columns **(3)** and will contain the specified **Event**.
+1. Using the **Search Field** provided, enter **tournamentScore_hourly**.
+2. Select the **Run Query** button.
+3. The result will be rendered in the **Event Timeline** columns, and will contain the specified event.
 
 ![Simplistic Event Query - Straight value](media/tutorials/simplistic-event-query-straight-value.png)  
 
@@ -66,10 +66,10 @@ This occurs because PlayFab analyzed all the events, and found that *this partic
 
 This means that you may search by part of the value. In the example shown below:
 
-- Querying **tournamentScore_** in the field **(1)**.
-- Results in **no events found** in the list **(2)**.
-- Using a wildcard, we adjust the query to **tournamentScore_\* (3)**.
-- This results in displaying *all* events that have a field with the value starting with **tournamentScore_ (4)**.
+1. Querying **tournamentScore_** in the field.
+2. Results in **no events found** in the list.
+3. Using a wildcard, we adjust the query to **tournamentScore_\**.
+4. This results in displaying *all* events that have a field with the value starting with **tournamentScore_**.
 
 ![Simplistic Event Query - Wildcard value](media/tutorials/simplistic-event-query-wildcard-value.png)  
 
@@ -123,4 +123,4 @@ The query shown below will locate *all* of the events that occurred from **April
 > [!IMPORTANT]
 > Event queries are powered by [Azure Data Explorer](https://azure.microsoft.com/services/data-explorer/), a fast and highly scalable data exploration service for log and telemetry data providing fast indexing and querying on large, diverse data sets. For optimized queries, the engine can query millions of records in a few seconds - a demonstrable benefit for games producing high throughput or large volumes of gaming events.
 
-Event queries allows you to enter query expressions using a powerful SQL-like query language that's optimized for ad-hoc data exploration and analytics.  This SQL-like query language is called Kusto and its [documentation](https://docs.microsoft.com/azure/kusto/query/) can be accessed in the Azure Data Explorer [reference documentation](https://docs.microsoft.com/azure/kusto/query/).
+Event queries allows you to enter query expressions using a powerful SQL-like query language that's optimized for ad-hoc data exploration and analytics. This SQL-like query language is called Kusto and its [documentation](https://docs.microsoft.com/azure/kusto/query/) can be accessed in the Azure Data Explorer [reference documentation](https://docs.microsoft.com/azure/kusto/query/).

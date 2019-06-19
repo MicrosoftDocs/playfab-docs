@@ -12,9 +12,9 @@ ms.localizationpriority: medium
 
 # Lua quickstart for Corona
 
-This quickstart has been designed to assist you in making your first PlayFab API call in the Corona engine.
+This quickstart assists you in making your first PlayFab API call in the Corona engine.
 
-Before beginning, please make sure you have completed [Getting started for developers](../../personas/developer.md), which ensures that you have a PlayFab account, and are familiar with the PlayFab Game Manager.
+Before you can call any PlayFab API, you must have a [PlayFab developer account](https://developer.playfab.com/en-us/sign-up). 
 
 ## Corona Project Setup
 

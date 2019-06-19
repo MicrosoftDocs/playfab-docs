@@ -25,18 +25,21 @@ You will need:
 
 ## Server and domain
 
-This guide requires a server with a valid domain to follow. If you do not have a registered domain and remote web server yet, please follow our [Running an HTTP server for testing](running-an-http-server-for-testing.md) tutorial for information on how to set one to run a local web server with a valid domain name. Throughout this guide, we will assume your domain is [http://playfab.example](http://playfab.example).
+This guide requires a server with a valid domain to follow. If you do not have a registered domain and remote web server yet, please follow our [Running an HTTP server for testing](running-an-http-server-for-testing.md) tutorial for information on how to set one to run a local web server with a valid domain name.
+
+Throughout this guide, we will assume your domain is [http://playfab.example](http://playfab.example).
 
 ## Registering a Google API project
 
 Start by navigating to the [Google API Console](https://console.developers.google.com/):
 
-- Navigate to **Credentials (1)** and select it.
-- In the **Credentials** panel to the right, select the **Create (2)** button.
+1. Navigate to **Credentials** and select it.
+2. In the **Credentials** panel to the right, select the **Create** button.
 
 ![Google API Manager create new credentials](media/tutorials/google-html5/create-new-credentials.png)  
 
-- Fill in the field under **Project Name (1)** and select the **Create (2)** button.
+1. Fill in the field under **Project Name**.
+2. Select the **Create** button.
 
 ![Google API Manager new project](media/tutorials/google-html5/create-new-project.png)  
 
@@ -47,30 +50,30 @@ Start by navigating to the [Google API Console](https://console.developers.googl
 
 Once the Project is created:
 
-- Navigate to the **OAuth consent screen (1)**.
-- Make sure the correct email is selected **(2)**.
-- Add a **Name** for your **Application (3)**.
-- Select the **Save** button **(4)**.
+1. Navigate to the **OAuth consent screen**.
+2. Make sure the correct email is selected.
+3. Add a **Name** for your **Application**.
+4. Select the **Save** button.
 
 ![Google API Manager OAuth consent screen](media/tutorials/google-html5/oauth-consent-screen.png)  
 
-- Next, navigate to **Credentials (1)**.
-- Select **Create credentials (2)**.
-- Then select **OAuth client ID (3)**.
+1. Next, navigate to **Credentials**.
+2. Select **Create credentials**.
+3. Then select **OAuth client ID**.
 
 ![Google API Manager open OAuth credentials](media/tutorials/google-html5/open-oauth-credentials.png)  
 
-- Select **Web Application (1)** as your **Application type**.
-- Give your application a **Name (2)**.
-- Add your domain to **Authorized JavaScript origins (3)**  - [PlayFab](http://playfab.example) in our case.
-- Finally, select the **Create (4)** button to commit your changes.
+1. Select **Web Application** as your **Application type**.
+2. Give your application a **Name**.
+3. Add your domain to **Authorized JavaScript origins**  - [PlayFab](http://playfab.example) in our case.
+4. Finally, select the **Create** button to commit your changes.
 
 ![Google API Manager create OAuth credentials](media/tutorials/google-html5/create-oauth-credentials.png)  
 
 On the **OAuth client** screen shown below, the Google API Manager reveals two important pieces of information:
 
-1. The **client ID (1)**
-2. The **client secret (2)**.
+1. The **client ID**
+2. The **client secret**.
 
 > [!NOTE]
 > Be sure to copy and save these values in a safe place that is easily accessible, as they will be used in the authorization process shown later in this tutorial.
@@ -79,19 +82,20 @@ On the **OAuth client** screen shown below, the Google API Manager reveals two i
 
 Go to the PlayFab **Game Manager** page for your title.
 
-- Navigate to **Add-ons (1)** in the menu.
-- Locate and open the **Google Add-on (2)** icon/link.
+1. Navigate to **Add-ons** in the menu.
+2. Locate and open the **Google Add-on** icon/link.
 
 ![PlayFab Game Manager Add-on](media/tutorials/google-html5/open-google-add-on.png)  
 
-- Fill in the **Client ID (1)** and **Client secret (2)**.
-- Then select the **Install Google (3)** button.
+1. Fill in the **Client ID**.
+2. Fill in the **Client secret**.
+3. Then select the **Install Google** button.
 
 ![PlayFab Game Manager Install Google Add-on](media/tutorials/google-html5/install-google-add-on.png)  
 
 > [!NOTE]
 > As of July 2017, **Google API Manager** has a bad habit of *not* hooking the **Allowed JS** origin domain properly. If you receive the following error:  
-> `"idpiframe_initialization_failed", details: "Not a valid origin for the client: somedomain.com..."`  
+> **"idpiframe_initialization_failed", details: "Not a valid origin for the client: somedomain.com..."**  
 > Please remove the credentials and recreate them. *There is no need to delete the entire project - just the credentials.*
 
 ## Testing using an access token
@@ -150,10 +154,10 @@ In this example, we show how to test using the classic access token approach. Us
 </html>
 ```
 
-- Remember to open this page using your web server.
-- Make sure to access this page using the URL you specified, while configuring Google Project, ([PlayFab](http://playfab.example) in our case).
-- Once the page opens, select **G Signed In (1)**, and follow the general Google authentication flow.
-- When this is finished, the script will try to authenticate on the PlayFab side and output the result **(2)**.
+Remember to open this page using your web server, and make sure to access this page using the URL you specified, while configuring Google Project, ([PlayFab](http://playfab.example) in our case).
+
+1. Once the page opens, select **G Signed In**, and follow the general Google authentication flow.
+2. When this is finished, the script will try to authenticate on the PlayFab side and output the result.
 
 ![Google Auth Example](media/tutorials/google-html5/google-auth-example.png)  
 

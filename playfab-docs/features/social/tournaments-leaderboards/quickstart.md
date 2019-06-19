@@ -18,12 +18,12 @@ This quickstart describes how to have a statistic that keeps track of the player
 
 Your player is already logged into PlayFab.  
 
-## Step 1 - Create a statistic and leaderboard
+## Step 1 - Create a statistic and associated leaderboard
 
 In the Game Manager:
 
 - Go to **Leaderboards** in the menu to the left.
-- Select **New Leaderboard**.
+- Select **NEW LEADERBOARD**.
 - Add a **Leaderboard** called **HighScore** in the **Statistic name** field.
 - Using the drop-down menu provided, set the **Reset frequency** field to **Manually**.
 - Move to the **Aggregation method** field and select **Maximum** (always use the highest value) from the drop-down menu provided.
@@ -35,7 +35,7 @@ Before we can use [UpdatePlayerStatistics](xref:titleid.playfabapi.com.client.pl
 - Select **Settings** in the menu on your left.
 - Select the **API Features** tab.
 - Check the box for **Allow client to post player statistics**.
-- Then select the **SAVE API FEATURES** button at the bottom of the screen.
+- Click the **SAVE** button at the bottom of the screen.
 
 ![Game Manager - Settings - API Features - Allow client to post player statistics](media/tutorials/api-features-allow-client-to-post-player-statistics.png)  
 

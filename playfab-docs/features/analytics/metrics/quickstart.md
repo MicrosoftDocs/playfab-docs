@@ -31,7 +31,13 @@ The Trends tab offers an easy way to view and analyze performance across eight k
 7. Revenue
 8. Stickiness
 
-The Trends tab is updated once daily at the close of the UTC day. For details on each metric, see [Metrics and terminology](metrics-and-terminology.md). The Trends tab consists of three sections: Filters, the Spark Cards, and the Graphs.
+The Trends tab is updated once daily at the close of the UTC day. For details on each metric, see [Metrics and terminology](metrics-and-terminology.md).
+
+The Trends tab consists of three sections:
+
+1. Filters
+2. Spark Cards
+3. Graphs
 
 ![Trends Tab](media/tutorials/trends-tab.png)
 
@@ -52,7 +58,13 @@ At the top, there are three page-level filters that can be applied. Choosing any
 
 ## Spark Cards
 
-The Spark Cards are designed to offer an at-a-glance view of what happened that particular day. Each Spark Card consists of a trend line, the actual value from the most recent UTC day, and the trend comparing the most recent value against the period start. Definitions for each are obtained by hovering over the metric or by tapping, if using a mobile phone.
+The Spark Cards are designed to offer an at-a-glance view of what happened that particular day. Each Spark Card consists of:
+
+- A trend line
+- The actual value from the most recent UTC day
+- The trend comparing the most recent value against the period start.
+
+Definitions for each are obtained by hovering over the metric or by tapping, if using a mobile phone.
 
 ![Spark Card](media/tutorials/spark-card.png)  
 

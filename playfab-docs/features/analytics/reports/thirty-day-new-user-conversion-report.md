@@ -21,11 +21,11 @@ A Cohort of players is formed every day by grouping newly-registered players. Co
 > [!NOTE]
 > Unlike Retention reports, the Conversion report tracks a cumulative total of players who converted within a given time span.
 
-The example report shown below was generated on **2/13/2018**. On **1/14/2018**, **77,532** new players created accounts in the example title.
+The example report shown below was generated on **2/13/2018**. On **1/14/2018** under the **Cohort** column, **77,532** new players created accounts in the example title.
 
 ![thirty-day New User Conversion Report Table](media/tutorials/thirty-day-new-user-conversion-report-table.png)
 
-On **Day 0**, **0.50%** of these players made at least *one* transaction in the game.
+Under the **Day 0** column of that date, **0.50%** of these players made at least *one* transaction in the game.
 
 Since conversion reflects a *cumulative* total of players, these percentage values increase along the time span, and reach **1.07%** on the **30th Day** - which corresponds to the report generation date, **2/13/2018**.
 

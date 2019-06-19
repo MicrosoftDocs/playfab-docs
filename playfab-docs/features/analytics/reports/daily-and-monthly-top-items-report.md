@@ -14,15 +14,15 @@ ms.localizationpriority: medium
 
 ## Overview
 
-The Daily and Monthly Top Items report contains a list of top selling items - or bundles - in a given day or month.
+The Daily and Monthly Top Items report contains a list of top selling items, or *bundles*, in a given day or month.
 
-These tables include:
+This list includes:
 
 - Item names from your primary catalog
 - Associated numbers of sales
 - Total revenue
 
-This report can assist you in identifying trending items over time, which can be useful for planning future promotions or events.
+The report can assist you in identifying trending items over time, which can be useful for planning future promotions or events.
 
 ![Daily Top Items Report Table](media/tutorials/daily-top-items-report-table.png)  
 
@@ -30,9 +30,9 @@ This report can assist you in identifying trending items over time, which can be
 
 The Daily and Monthly Top Items report contains a list of top selling items or bundles in a given day or month.
 
-Both daily and monthly tables include item names from your primary catalog, associated number of sales, and total revenue.
+Both daily and monthly tables within these reports include item names from your primary catalog, associated number of sales, and total revenue.
 
-You can utilize the data contained within his report to identify trending items on visible timelines, a feature that is useful for the design and execution of promotions and events.
+You can utilize the data contained within this report to identify trending items on visible timelines - a feature that is useful for the design and execution of promotions and events.
 
 ## Populating the reports
 

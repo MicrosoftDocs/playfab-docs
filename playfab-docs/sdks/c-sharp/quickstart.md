@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 This quickstart has been created to help you make your first PlayFab API call using CSharp (C#).
 
-Before continuing, make sure you have completed [Getting started for developers](../../personas/developer.md), which ensures you have a PlayFab account and are familiar with the PlayFab Game Manager.
+Before you can call any PlayFab API, you must have a [PlayFab developer account](https://developer.playfab.com/en-us/sign-up). 
 
 ## CSharp Getting Started guide
 
@@ -74,7 +74,7 @@ public static class Program
     private static bool _running = true;
     static void Main(string[] args)
     {
-        PlayFabSettings.TitleId = "144"; // Please change this value to your own titleId from PlayFab Game Manager
+        PlayFabSettings.staticSettings.TitleId = "144"; // Please change this value to your own titleId from PlayFab Game Manager
 
         var request = new LoginWithCustomIDRequest { CustomId = "GettingStartedGuide", CreateAccount = true };
         var loginTask = PlayFabClientAPI.LoginWithCustomIDAsync(request);
@@ -124,7 +124,7 @@ When you execute this program, you should get the following console output:  "Co
 
 - At this point, you can start making other API calls, and building your game.
 
-- To build Admin utilities, see the alternate source files in the [PlayFab CSharpSdk zip file]({CSharpSdk}/PlayFabClientSDK/).
+- To build Admin utilities, see the alternate source files in the PlayFab CSharpSdk zip file located in `{CSharpSdk}/PlayFabClientSDK/sources`.
 
 For a list of all available client API calls, or many other topics, see our [PlayFab API References](../../api-references/index.md) documentation.
 
@@ -141,7 +141,7 @@ This optional last section describes each part of Program.cs in detail.
 
 ### Inside of Main
 
-- `PlayFabSettings.TitleId = "xxxx";`
+- `PlayFabSettings.staticSettings.TitleId = "xxxx";`
   - Every PlayFab developer creates a title in Game Manager. When you publish your game, you must code that titleId into your game. This lets the client know how to access the correct data within PlayFab. For now, just consider it a mandatory step that makes PlayFab work.
 
 - `var request = new LoginWithCustomIDRequest { CustomId = "GettingStartedGuide", CreateAccount = true };`

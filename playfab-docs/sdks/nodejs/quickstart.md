@@ -12,9 +12,9 @@ ms.localizationpriority: medium
 
 # NodeJS quickstart
 
-This guide will help you make your first API call in NodeJS.
+This quickstart helps you make your first API call in NodeJS.
 
-Before continuing, make sure you have completed [Getting started for developers](../../personas/developer.md) which ensures you have a PlayFab account and are familiar with the PlayFab Game Manager.
+Before you can call any PlayFab API, you must have a [PlayFab developer account](https://developer.playfab.com/en-us/sign-up). 
 
 ## Node project setup
 
@@ -28,13 +28,13 @@ OS: This guide is written for Windows 10, however it should also work well with 
 
 1. Create a new folder for your project {NodeProjLocation}:
 
-       `GettingStarted.js`
+   `GettingStarted.js`
 
 2. Open a command window in your project folder.
 
 3. Run this command:
 
-       `npm install playfab-sdk --save`
+   `npm install playfab-sdk --save`
 
    (Keep this window open (we'll use it again later.)
 
@@ -47,7 +47,7 @@ This guide provides the minimum steps for you to make your first PlayFab API cal
 In your favorite text editor, update the contents of GettingStarted.js as follows:
 
 > [!NOTE]
-> To look up the correct format for the `loginRequest` object in this example, see the API reference for [LoginWithCustomID](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid).
+> To look up the correct format for the `loginRequest` object in this example, see the API reference for [LoginWithCustomID](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid).  
 
 ```javascript
 var PlayFab = require("./node_modules/playfab-sdk/Scripts/PlayFab/PlayFab");

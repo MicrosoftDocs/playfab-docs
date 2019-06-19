@@ -12,9 +12,9 @@ ms.localizationpriority: medium
 
 # JavaScript quickstart for Native and Phaser
 
-This guide helps you make your first API call in JavaScript.
+This quickstart helps you make your first API call in JavaScript.
 
-Before continuing, make sure you have completed [Getting started for developers](../../personas/developer.md) which ensures you have a PlayFab account and are familiar with the PlayFab Game Manager.
+Before you can call any PlayFab API, you must have a [PlayFab developer account](https://developer.playfab.com/en-us/sign-up). 
 
 ## JavaScript project setup
 
@@ -22,8 +22,8 @@ OS: This guide should work in any OS capable of running a web browser, and you a
 
 To set up a new project, create a new folder with two empty text files:  
 
-    - `PlayFabGettingStarted.html`  
-    - `PlayFabGettingStarted.js`
+- `PlayFabGettingStarted.html`  
+- `PlayFabGettingStarted.js`
 
 That's it - PlayFab installation complete!
 
@@ -103,7 +103,7 @@ This optional last section describes each part of Program.cs in detail.
 The HTML file has a few important lines:
 
 ```html
-src="https://download.playfab.com/PlayFabClientApi.js"></script>
+<script type="text/javascript" src="https://download.playfab.com/PlayFabClientApi.js"></script>
 ```
 
 This line loads the Client-SDK directly from the PlayFab CDN. Our CDN always hosts the latest version of PlayFabSDK. It may be safer for you to download the files, and use a fixed version: [PlayFab JavaScript SDK](https://api.playfab.com/downloads/javascript)

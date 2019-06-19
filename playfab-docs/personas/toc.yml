@@ -2,6 +2,8 @@
   href: bi.md
 - name: Developer
   href: developer.md
+- name: Create a PlayFab Account
+  href: pfab-account.md
 - name: LiveOps
   href: LiveOps/liveops.md
   items:

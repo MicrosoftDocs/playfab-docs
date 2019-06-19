@@ -17,7 +17,7 @@ This quickstart assists you in making your first PlayFab API call using Objectiv
 > [!Note]
 > This SDK is currently in Beta, so please let us know if you run into any issues.
 
-Before continuing, make sure you have completed [Getting started for developers](../../personas/developer.md) which ensures you have a PlayFab account and are familiar with the PlayFab Game Manager.
+Before you can call any PlayFab API, you must have a [PlayFab developer account](https://developer.playfab.com/en-us/sign-up). 
 
 Happy Developing!
 
@@ -25,8 +25,7 @@ Happy Developing!
 
 There are two ways to get started:
 
-1. Start with our [example implementation project](https://github.com/PlayFab/Objective_C_SDK/tree/master/ExampleProject.
-
+1. Start with our [example implementation project](https://github.com/PlayFab/Objective_C_SDK/tree/master/Example/PFExample).
 2. Import the [Objective-C SDK](https://github.com/PlayFab/Objective_C_SDK/tree/master/PlayFabSDK) into an existing XCode project.
 
 ## Configuring PlayFab

@@ -22,15 +22,17 @@ ms.localizationpriority: medium
 
 PlayFab is consistently looking to bring new capabilities to our game developers. We know how important it is to understand the health of your game as part of your overall LiveOps view. We are excited to announce that we have partnered with App Center to bring their diagnostic capabilities directly into PlayFab.
 
-App Center provides tools to help you build, test, deploy and monitor mobile and pc apps. It is especially good at detecting when your app has crashed and saving that information to help you fix it quickly.
+App Center provides tools to help you build, test, deploy and monitor mobile and PC apps. It is especially good at detecting when your app has crashed, and saving that information to help you fix it quickly.
 
 ## Prerequisites
 
-- You will need a PlayFab Account.
+You will need:
 
-- You will need an App Center Account.
+- A PlayFab Account.
 
-- You will need to have the App Center SDK installed in your game.
+- An App Center Account.
+
+- The App Center SDK installed in your game.
 
 - Private Preview enabled for your title (email [helloplayfab@microsoft.com](mailto:helloplayfab@microsoft.com)) to get access for your title.
 
@@ -41,6 +43,8 @@ To get started, log into your PlayFab account. Once App Center integration is en
 ![diagnostics tab screenshot image](media/diag_tab_screenshot.png)
 
 Since the add-on has not yet been enabled, you will need to navigate to the add-ons page to turn on the integration.
+
+- In **App Center Diagnostics**, select **Manage Add-Ons**.
 
 ![navigate to addons page image](media/go_to_addons_diag_page.png)
 

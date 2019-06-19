@@ -21,7 +21,7 @@ Event triggered when reported value of ad view is recorded
 |AdPlacementId|String|Id of the placement|
 |AdPlacementName|String|Name of the placement|
 |AdUnit|String|Ad unit type|
-|RevenueShare|double|Share of the revenue for this ad view (calculated as total revenue for placement devided by total views for that placement in that time window)|
+|RevenueShare|double|Share of the revenue for this ad view (calculated as total revenue for placement divided by total views for that placement in that time window)|
 |RewardId|String|Id of the reward|
 |RewardName|String|Name of the reward|
 |TitleId|String|The ID of the title to which this player event applies.|

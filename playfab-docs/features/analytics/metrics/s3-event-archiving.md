@@ -25,7 +25,7 @@ Once you have created an Amazon account:
 ![Select Amazon S3](media/tutorials/select-amazon-s3.png)  
 
 - On the **S3** page, you will have an overview of all your buckets.
-- Notice the **Create bucket** button?  Select it to create a new bucket.
+- Use the **Create bucket** button to create a new bucket.
 
 ![Amazon S3 - Create bucket](media/tutorials/amazon-s3-create-bucket.png)  
 To create your new S3 bucket, you must go though a 4-step wizard:
@@ -81,9 +81,9 @@ We need to pass the access key data and bucket name to PlayFab to enable event a
 
 To access the PlayFab **Event Archive**:
 
-- Select **Analytics** in the menu on the left **(1)**.
-- Then select the **Event Archive** tab **(2)**.
-- Finally, select the **Update Settings** button **(3)**.
+1. Select **Analytics** in the menu on the left.
+2. Then select the **Event Archive** tab.
+3. Finally, select the **Update Settings** button, as shown below.
 
 ![Game Manager - Analytics - Event Archive](media/tutorials/game-manager-analytics-event-archive.png)  
 

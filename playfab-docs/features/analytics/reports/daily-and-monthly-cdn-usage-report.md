@@ -16,8 +16,8 @@ ms.localizationpriority: medium
 
 The CDN Usage report contains two graphs displaying content usage over a 24 hour period:
 
-- The **Data Volume (1)** graph illustrates the distribution of transferred bytes.
-- The **Access Count (2)** graph shows the distribution of content downloads over a specified period of time.
+1. The **Data Volume** graph illustrates the distribution of transferred bytes.
+2. The **Access Count** graph shows the distribution of content downloads over a specified period of time.
 
 ![Daily Content Usage Report Table](media/tutorials/daily-content-usage-report-table.png)  
 
@@ -55,10 +55,10 @@ Instead, it provides you with a URI for the content download. You may use any HT
 
 PlayFab report charts all follow the same model:
 
-- In the top area of the page, you usually get a **Control Panel (1)**. This contains a report name, observed time period, and **Prev/Next** buttons to switch between the time periods.
+1. In the top area of the page, you usually get a **Control Panel**. This contains a report name, observed time period, and **Prev/Next** buttons to switch between the time periods.
 
-- The **Chart Panel (2)** area shows the available data as a chart, where the horizontal axis corresponds to the time flow, and the vertical axis corresponds to the number of relevant instances - such as API calls, purchases, users, and so on, depending on the report type.
+2. The **Chart Panel** area shows the available data as a chart, where the horizontal axis corresponds to the time flow, and the vertical axis corresponds to the number of relevant instances - such as API calls, purchases, users, and so on, depending on the report type.
 
 ![Monthly Overview Report](media/tutorials/monthly-overview-report.png)  
 
-- The metrics available in the **Timeline** area **(3)** contain the sum of all the instance across the time period (**SUM**), the average number of instances through all the timestamps (**AVG**), the peak value (**MAX**), and the lowest value (**MIN**).
+3. The metrics available in the **Timeline** area contain the sum of all the instance across the time period (**SUM**), the average number of instances through all the timestamps (**AVG**), the peak value (**MAX**), and the lowest value (**MIN**).

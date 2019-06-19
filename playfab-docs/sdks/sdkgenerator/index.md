@@ -14,7 +14,9 @@ ms.localizationpriority: medium
 
 ![SDK Generator](./media/sdk_generator1.png)
 
-Our SDK Generator provides everything you need to build your own SDK. Internally, we use this generator to automate our many SDKs. We have made the project open-source to aide others that are looking for a language, platform or environment that is not currently supported.
+Our SDK Generator provides everything you need to build your own SDK. Internally, we use this generator to automate our many SDKs.
+
+We have made the project open-source, to aide others who are looking for a language, platform or environment that is not currently supported.
 
 Download Links:
 
