@@ -12,7 +12,9 @@ ms.localizationpriority: medium
 
 # Stores and sales
 
-In PlayFab, **Stores** are built upon [Catalogs](../items/catalogs.md) and [Currencies](../economy/currencies.md). Your primary catalog should define all of the items in your game and assign them prices in the currencies that you've created. Your stores will define subsets of those items - making them available for purchase at specific prices that can be different than the catalog prices.
+In PlayFab, **Stores** are built upon [Catalogs](../items/catalogs.md) and [Currencies](../economy/currencies.md). Your primary catalog should define all of the items in your game and assign them prices in the currencies that you've created.
+
+Stores should define subsets of the items in your catalog, and make them available for purchase at specific prices that can be different than the catalog prices.
 
 A store allows you to single out a specific set of items, and make them available at specific prices for a set time period.
 
@@ -70,7 +72,7 @@ The screenshot provided below shows a complete new **Store**, containing three *
 
 The specifics for completing real money purchases are covered in our advanced tutorial, [non-receipt payment processing](../economy/non-receipt-payment-processing.md).
 
-### Best practice
+### Best practices for real money stores
 
 How you use real money is largely dependent on the specific design of your game. Direct purchase of in-game items is valid, but less common.
 
@@ -90,9 +92,11 @@ The initial steps are nearly identical to the preceding example:
 
 ![Game Manager - Economy - New Store](media/tutorials/game-manager-economy-new-store.png)  
 
+## Purchasing multiple items in a single purchase
+
 To purchase a single item for virtual currency, use the [PurchaseItem](xref:titleid.playfabapi.com.client.playeritemmanagement.purchaseitem) method, as described in our [Stores quickstart](quickstart.md).
 
-This tutorial, however, will cover the more advanced topic of purchasing multiple items in a single purchase.
+This tutorial, however, covers the more advanced topic of purchasing multiple items in a single purchase.
 
 Your first step in this process should be to get the store, and display it to the user.
 
@@ -112,7 +116,7 @@ void GetVcStore()
 
 The `LogSuccess` callback in this example receives a [GetStoreItemsResult](xref:titleid.playfabapi.com.client.title-widedatamanagement.getstoreitems#getstoreitemsresult) that contains a full description of all the items in the store, their *store* prices, and any additional metadata contained in the store itself.
 
-### Best practice
+### Best practices for displaying stores
 
 Games with stores should call and cache their primary catalog using the [GetCatalogItems](xref:titleid.playfabapi.com.server.title-widedatamanagement.getcatalogitems) method. This allows you to display both the catalog price and the store price, along with a 10% OFF or similar bonus decoration beside items for sale.
 
@@ -147,25 +151,33 @@ void DefinePurchase()
 
 During the item selection process, you must allow the user to select which currency they wish to spend for these items. In this example, all items have costs in **SS** and **GS**, which means the user has a choice of which currency to spend.
 
-### Restriction
+> [!NOTE]
+> The [result](xref:titleid.playfabapi.com.client.playeritemmanagement.startpurchase#startpurchaseresult) from the `StartPurchase` API in the code example above, contains a list of `PaymentOptions`. Each payment option contains the `Currency`, `Price`, and  `ProviderName` that can be used to make the purchase.
+
+### Restrictions
 
 Only *one* virtual currency is allowed in a single purchase. All selected items must be purchasable with a *single currency*.
 
 The currency must be specified in the call, which is important when there are multiple possible currencies. The sequence will fail if there are items in the request which don't have corresponding costs in the selected currency.
 
-### Best practice
+The `ProviderName` must also be specified in the call. For real money purchases, this will be the name of the provider that is used to fund the purchase. For example, Facebook, PayPal, or Steam. For VC purchases, it will be a string based on your title ID. The `ProviderName` can be obtained from the `PaymentOptions` field of the [StartPurchaseResult](xref:titleid.playfabapi.com.client.playeritemmanagement.startpurchase#startpurchaseresult) as described in the previous **Note**.
+
+> [!TIP]
+> For VC purchases, the `ProviderName` for your title is a string constructed from the word "Title" concatenated with the decimal equivalent of your hexadecimal `TitleId`. For example, "Title123456".
+
+### Best practices for displaying store items
 
 Avoid confusion for your player by ensuring that all items in a store have consistent options.
 
 Real money items should be in a separate store from premium VC items, and again separate from free VC items. If a single store allows multiple currencies, then *all* items in that store should consistently use the same set of multiple currencies. Create as many stores as you need to provide a smooth customer experience.
 
 ```csharp
-void DefinePaymentCurrency(string orderId, string currencyKey)
+void DefinePaymentCurrency(string orderId, string currencyKey, string providerName)
 {
     var request =new PayForPurchaseRequest {
         OrderId = orderId, // orderId comes from StartPurchase above
         Currency = currencyKey, // User defines which currency they wish to use to pay for this purchase (all items must have a defined/non-zero cost in this currency)
-        ProviderName = "Facebook" // Payment provider used to fund the purchase.
+        ProviderName = providerName // providerName comes from the PaymentOptions in the result from StartPurchase above.
     };
     PlayFabClientAPI.PayForPurchase(request, LogSuccess, LogFailure);
 }
@@ -182,7 +194,7 @@ void FinishPurchase(string orderId)
 }
 ```
 
-### Best practice
+### Best practices for handling API failure results
 
 Any single API call can fail for a variety of reasons. Wireless devices such as phones can often have intermittent connectivity, and any internet call can fail due to random latency.
 
@@ -197,7 +209,7 @@ Stores are a great mechanism for encouraging your players to purchase items.
 Stores work with any kind of virtual currency. Stores can also work with real money through an alternate set of API methods.
 
 - You can set up a single-item purchase with VC via [PurchaseItem](xref:titleid.playfabapi.com.client.playeritemmanagement.purchaseitem).
-- You can set up a multiple-item purchase with real money via the sequence:
+- You can set up a multiple-item purchase with real money or VC via the sequence:
   - [StartPurchase](xref:titleid.playfabapi.com.client.playeritemmanagement.startpurchase)
   - [PayForPurchase](xref:titleid.playfabapi.com.client.playeritemmanagement.payforpurchase)
   - [ConfirmPurchase](xref:titleid.playfabapi.com.client.playeritemmanagement.confirmpurchase)
