@@ -18,7 +18,7 @@ This tutorial guides you through the steps for logging into PlayFab using Steam 
 
 Before beginning, you should have:
 
-- A Unity project with an imported PlayFab SDK and a configured title ID.
+- A Unity project with an imported PlayFab SDK, and a configured title ID.
 - A Steam Application with:
   - The AppID already set up. The AppID is usually acquired through the [Steam Direct (Formerly Greenlight)](https://partner.steamgames.com/steamdirect) process.
   - A Steam Publisher Web API Key. Follow [Creating a Publisher Web API Key](https://partner.steamgames.com/doc/webapi_overview/auth#create_publisher_key) in the Steamworks documentation to generate a publisher key.
@@ -28,15 +28,16 @@ Before beginning, you should have:
 
 To enable support for Steam authorization, PlayFab requires you to enable the Steam add-on.
 
-- Go to your **Game Manager** page.
-- Select the **Add-ons** menu item **(1)**.
-- In the list of available **Add-ons**, locate **Steam** and select the title link **(2)**:
+Go to your **Game Manager** page:
+
+1. Select the **Add-ons** menu item.
+2. In the list of available **Add-ons**, locate **Steam** and select the title link:
 
 ![Game Manager Add-ons tab](media/tutorials/steam-unity/game-manager-addons-tab-steam.png)  
 
-- Enter your **App ID (1)**.
-- Enter the **Web API Key (2)**.
-- Then select **Install Steam (3)**.
+1. Enter your **App ID**.
+2. Enter the **Web API Key**.
+3. Then select **Install Steam**.
 
 ![Game Manager install Steam Add-on](media/tutorials/steam-unity/game-manager-install-steam-addon.png)  
 
@@ -56,13 +57,14 @@ Start by downloading the latest release of Steamworks.NET from the [Releases pag
 
 Re-open Unity and create a new scene.
 
-- Inside that scene create a new **gameobject** called **Steam**.
-- Add a **SteamManager** component to the **gameobject (1)**. This component is part of Steamworks.Net.
-- Create and add a **SteamScript** component to the **gameobject** **(2)**.
+Inside that scene create a new **gameobject** called **Steam**:
+
+1. Add a **SteamManager** component to the **gameobject**. This component is part of Steamworks.Net.
+2. Create and add a **SteamScript** component to the **gameobject**.
 
 ![Unity project - Add Steam object](media/tutorials/steam-unity/unity-project-add-steam-object.png)  
 
-The following example shows the code for the **SteamScript** component.
+The following example shows the code for the `SteamScript` component.
 
 ([Thanks to Dylan Hunt for this example.](https://community.playfab.com/answers/8875/view.html))
 
@@ -123,7 +125,7 @@ public class SteamScript : MonoBehaviour {
 
 You may test right inside the editor:
 
-- Run the scene and select the **Log In** button **(1)**.
-- The console message should appear after a moment, indicating the authentication result **Success! (2)**.
+1. Run the scene and select the **Log In** button.
+2. The console message should appear after a moment, indicating the authentication result **Success!**.
 
 ![Unity test PlayFab login with Steam](media/tutorials/steam-unity/unity-test-playfab-login-with-steam.png)

@@ -39,27 +39,28 @@ To do this, we need to prepare an `index.html` file with the following content.
 
 Navigate to the [Kongregate website](https://www.kongregate.com/):
 
-- Select the **Games** tab **(1)**.
-- Then select the **Upload your game** button **(2)**.
+1. Select the **Games** tab.
+2. Then select the **Upload your game** button.
 
 ![Kongregate Games tab](media/tutorials/kongregate-games-tab.png)  
 
 A page to set up for a new application will open.
 
-- Enter the **Application Name** in the **Title (1)** field.
-- Then enter a **Game Description (2)** in the field provided.
-- Select a **Category (3)**.
-- Submit the new app by selecting the **Continue** button **(4)** as indicated in the example provided below.
+1. Enter the **Application Name** in the **Title** field.
+2. Then enter a **Game Description** in the field provided.
+3. Select a **Category**.
+4. Submit the new app by selecting the **Continue** button, as indicated in the example provided below.
 
 ![Kongregate upload your game](media/tutorials/kongregate-upload-your-game.png)  
 
 You will be moved to the **Application Upload** page.
 
-- As a *very* important first step, make sure to save the **URL** from your **Web Address Bar**. This will save you a lot of time trying to restore access to the application once you close the page.
-- Once this is done, select the prepared **index.html** file as your **Game File (1)**.
-- Then set up the screen size **(2)**.
-- Make sure to accept all the required licenses **(3)**.
-- Upload your application by selecting the **Upload** button **(4)**, as shown in the example provided below.
+As a *very* important first step, make sure to save the **URL** from your **Web Address Bar**. This will save you a lot of time trying to restore access to the application once you close the page.
+
+1. Once this is done, select the prepared **index.html** file as your **Game File**.
+2. Then set up the screen size.
+3. Make sure to accept all the required licenses.
+4. Upload your application by selecting the **Upload** button, as shown in the example provided below.
 
 ![Kongregate application upload page](media/tutorials/kongregate-app-upload-page.png)
 
@@ -76,15 +77,15 @@ You will be moved to the **Application Upload** page.
 
 In your PlayFab title Game Manager:
 
-- Navigate to **Add-ons (1)**.
-- Then locate and select **Kongregate (2)**, as shown in the example provided below.
+1. Navigate to **Add-ons**.
+2. Then locate and select **Kongregate**, as shown in the example provided below.
 
 ![PlayFab select Kongregate Add-on](media/tutorials/playfab-select-kongregate-add-on.png)
 
 A new page will open, allowing you to set up **Kongregate** integration.
 
-- Enter the **API Key (1)** you acquired in the previous section.
-- Select the **Install Kongregate** button **(2)**.
+1. Enter the **API Key** you acquired in the previous section.
+2. Select the **Install Kongregate** button.
 
 ![PlayFab set up Kongregate integration](media/tutorials/playfab-set-up-kongregate-integration.png)
 
@@ -185,10 +186,10 @@ Use the example code shown below to populate the `index.html` for your game.
 
 Remember that URL we asked you to save in a safe and accessible place a little earlier?  Use it now to access your **Application Upload** page.
 
-- Select **index.html** as your **Game File (1)**.
-- Set up the screen size **(2)**.
-- Make sure to accept all the required licenses **(3)**.
-- Upload your application by selecting the **Upload** button **(4)**.
+1. Select **index.html** as your **Game File**.
+2. Set up the screen size.
+3. Make sure to accept all the required licenses.
+4. Upload your application by selecting the **Upload** button.
 
 ![Kongregate application upload page](media/tutorials/kongregate-app-upload-page.png)
 
