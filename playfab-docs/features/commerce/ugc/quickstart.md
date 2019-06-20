@@ -41,7 +41,7 @@ Content-Type: application/json
 
 ## Create a draft UGC item
 
-You create "draft" UGC items by calling the `CreateDraftItem` API. Draft items are designed to be reviewed and accessed by their creators and - potentially - a group of Moderators you can designate to review the content before it moves to a published state. To create a draft item you need:
+You create "draft" UGC items by calling the `CreateDraftUgcItem` API. Draft items are designed to be reviewed and accessed by their creators before being moved to a published state. To create a draft item you need:
 
 - The `EntityToken` from the previous call in the X-EntityToken header.
 - The `Entity.Id` from the previous call in the item’s `CreatorEntityKey.Id`.
@@ -50,7 +50,7 @@ You create "draft" UGC items by calling the `CreateDraftItem` API. Draft items a
 This call looks something like the following.
 
 ```csharp
-Sample POST https:// YOURTITLEID.playfabapi.com/UserGeneratedContent/CreateDraftItem HTTP/1.1
+POST https:// YOURTITLEID.playfabapi.com/UserGeneratedContent/CreateDraftUgcItem HTTP/1.1
 Host: YOURTITLEID.playfabapi.com/
 Content-Length: 642
 Content-Type: application/json
@@ -92,10 +92,10 @@ X-EntityToken: eyJJc3N1ZWQiOiIyMDE4LTEyLTE0VDAxOjU1OjMwLjY4MTMwOTJaIiwiRXhwaXJlc
 
 ## Publish a UGC item
 
-Once an item is in draft, you can then push it to a published state using `PublishItem`. Once a UGC item is published, its generally searchable and available publicly. You need to use the `itemId` returned from the `CreateDraftItem` response.
+Once an item is in draft, you can then push it to a published state using `PublishUgcItem`. Once a UGC item is published, its generally searchable and available publicly. You need to use the `itemId` returned from the `CreateDraftUgcItem` response.
 
 ```csharp
-POST  https://YOURTITLEID.playfabapi.com/UserGeneratedContent/PublishItem HTTP/1.1
+POST  https://YOURTITLEID.playfabapi.com/UserGeneratedContent/PublishUgcItem HTTP/1.1
 Host: YOURTITLEID.playfabapi.com/
 Content-Length: 54
 Content-Type: application/json
@@ -111,7 +111,7 @@ X-EntityToken: eyJJc3N1ZWQiOiIyMDE4LTEyLTE0VDAxOjU1OjMwLjY4MTMwOTJaIiwiRXhwaXJlc
 Using the `itemId`, you can always get the state of an item in your UGC catalog.
 
 ```csharp
-POST  https://YOURTITLEID.playfabapi.com/UserGeneratedContent/GetPublishStatus HTTP/1.1
+POST  https://YOURTITLEID.playfabapi.com/UserGeneratedContent/GetUgcPublishStatus HTTP/1.1
 Host: YOURTITLEID.playfabapi.com/
 Content-Length: 54
 Content-Type: application/json
@@ -124,10 +124,10 @@ X-EntityToken: eyJJc3N1ZWQiOiIyMDE4LTEyLTE0VDAxOjU1OjMwLjY4MTMwOTJaIiwiRXhwaXJlc
 
 ## Do a simple search
 
-Once the publish call succeeds, it can be searched for using the previously published itemId.
+Once the publish call succeeds, it can be searched for using the previously published itemId. The Catalog/Search API executes a search against published catalog (including UGC items) using the provided parameters and returns a set of paginated results. Note that the filter, orderBy and select fields use OData as the query standard.
 
 ```csharp
-POST  https://YOURTITLEID.playfabapi.com/UserGeneratedContent/Search HTTP/1.1
+POST  https://YOURTITLEID.playfabapi.com/Catalog/Search HTTP/1.1
 Host: YOURTITLEID.playfabapi.com/
 Content-Length: 66
 Content-Type: application/json

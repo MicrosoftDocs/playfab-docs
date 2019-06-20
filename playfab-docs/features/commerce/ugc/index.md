@@ -23,16 +23,16 @@ PlayFab UGC is a new premium feature for assisting titles that want to build use
 
 ## Early access
 
-PlayFab UGC is still in active development, and will be changing over time. We will strive to avoid breaking changes, but such changes may turn out to be necessary during the preview, in order to deliver the optimal experience for customers in the general release. We *do not* recommend shipping a game to the public which relies on this feature until it is more stable.
+PlayFab UGC is still in active development. At this point API contracts are generally locked, and we strive to avoid breaking changes, but such changes may turn out to be necessary in order to deliver the optimal experience for customers. We *do not* recommend shipping a game to the public which relies on this feature until it is in Public Preview.
 
 ## Pricing
 
-For now there will be no cost to game developers for the use of the UGC - however at some point in the future there will be a charge for usage. More details on pricing will be made available prior to the charges coming into effect.
+For now there will be no cost to game developers for the use of the UGC. UGC will be charged in the same way other PlayFab services are charged (consumption based similar to other Azure hosted services). More details on pricing will be made available prior to the charges coming into effect.
 
 ## Limitations
 
-The following *known* limitations exist in the system in its current state. Many of these will change in the future.
+The following limitations exist in the system in its current state. Many of these will change in the future.
 
-- UGC is only available via server to server calls (no SDK support yet) - this will change in the near future.
-- UGC *only* supports entity-based users.
-- There is currently no UX/Game Manger support (just APIs) - this will change in the near future.
+- UGC *only* supports PlayFab Entities - you need to use entity-based authentication to utilize UGC.
+- UGC Ties into Playfab V2 Economy features, and does not work with the classic PlayFab commerce APIs
+- Although UGC Search and Item Details are part of the Game Manger preview UX flows do not exist for all of the V2 Monetization features. These are in development and will be coming online in the near future.
