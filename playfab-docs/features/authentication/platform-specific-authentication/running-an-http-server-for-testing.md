@@ -49,11 +49,11 @@ Fill the file with the content provided below.
 
 Run the **command line/terminal** and cd to the folder with your **index.html** file, then:
 
-- Execute **http-server** **(1)**.
-- **HTTP-server** will start serving files from your current directory **(2)**.
-- It will also print out all the **IP** endpoints the server is listening for **(3)**.
-- Use one of them to reach your web-server through the browser **(4)**.
-- Observe your page being loaded **(5)**.
+1. Execute **http-server**.
+2. **HTTP-server** will start serving files from your current directory.
+3. It will also print out all the **IP** endpoints that the server is listening for.
+4. Use one of them to reach your web-server through the browser.
+5. Observe your page being loaded.
 
 ![Serving files with the http-server command](media/tutorials/serving-files-with-http-server.png)  
 
@@ -92,7 +92,7 @@ The same applies for *each* entry in the HOSTS file. In the preceding example, e
 
 By *commenting* out certain entries you may disable them, without necessarily removing them from the HOSTS file.
 
-**playfab.example** is a valid domain name, but it is unlikely that your browser will reach any website with it. By adding the following entry to your HOSTS file, you will be able to reach your local HTTP server with that domain name.
+`playfab.example` is a valid domain name, but it is unlikely that your browser will reach any website with it. By adding the following entry to your HOSTS file, you will be able to reach your local HTTP server with that domain name.
 
 ```cmd
 127.0.0.1 playfab.example
