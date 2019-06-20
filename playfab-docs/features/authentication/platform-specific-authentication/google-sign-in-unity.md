@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Setting up PlayFab authentication using Google Play games sign-in in Unity
 
-## Tutorial Video
+## Tutorial video
 
 > [!NOTE]
 > The audio portion of the following video is currently unavailable. A new recording is pending, and will be available in the immediate future.
@@ -29,14 +29,14 @@ You can also download the sample for this tutorial [here](https://github.com/Pla
 
 - A project built using the Unity game engine.
 - A Google developer account.
-- A PlayFab developer account which has access to a game title in PlayFab.
+- A PlayFab developer account that has access to a game title in PlayFab.
 - The [PlayFab Unity Editor Extensions & Unity SDK](../../../sdks/unity3d/quickstart.md).
 - The [Google Play Games SDK](https://github.com/playgameservices/play-games-plugin-for-unity).
 - Familiarity with [Login basics and Best Practices](../../authentication/login/login-basics-best-practices.md).
 
 ## Getting started
 
-First, we will start by getting the basic things set up in Google Play. There are a few good guides on how to do this, so we are not going to reinvent the wheel.
+First, we will start by setting up some basic things in Google Play. There are a few good guides on how to do this, so we are not going to reinvent the wheel.
 
 1. Create an **Application** - If you have not done so already, you will need to create an application in the [Google Play Developer Console](https://play.google.com/apps/publish).
 2. Build your game APK, and upload it as an Alpha Build.
@@ -110,7 +110,7 @@ To obtain your secret key, follow the link to your **API Console**.
 
 ## PlayFab Google Sign-In setup
 
-PlayFab has its own process for setting up Google sign-in. You can do this in your PlayFab developer account. If you don't have one, you can [sign-up here](https://developer.playfab.com/en-us/sign-up).
+PlayFab has its own process for setting up a Google sign-in. You can do this in your PlayFab developer account. If you don't have one, you can [sign-up here](https://developer.playfab.com/en-us/sign-up).
 
 To set up Google in PlayFab:
 
@@ -139,7 +139,7 @@ The code to get Google sign-in working is fairly minimal. There is the initializ
 This can be in different places, depending on the architecture and framework of your game or app. In any case, the code below will initialize Google Play Games.
 
 > [!NOTE]
-> Make *sure* that you don't forget the **Using** statements, so that you can use the Google Play Games SDK.
+> Make *sure* that you don't forget the **using** statements, so that you can use the Google Play Games SDK.
 
 ```csharp
 // These using statements are required.
