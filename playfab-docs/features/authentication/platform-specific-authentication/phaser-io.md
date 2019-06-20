@@ -116,7 +116,7 @@ function create() {
 
 ## Making your first API call
 
-Now that you have PlayFab installed as a plugin to Phaser, you can set your PlayFab title ID and make API calls.
+Now that you have PlayFab installed as a plugin to Phaser, you can set your PlayFab `titleId` and make API calls.
 
 The code presented below shows you how to log in a player.
 

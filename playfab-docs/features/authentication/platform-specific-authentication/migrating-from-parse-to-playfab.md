@@ -14,11 +14,15 @@ ms.localizationpriority: medium
 
 ## A PlayFab comparison to Parse
 
+### Parse
+
 Both PlayFab and Parse provide back-end tools and services for building and operating your game, but there are several differences. Understanding these differences is important for planning a migration from one to the other.
 
 The most important difference is that Parse is a *general purpose mobile back end*, with very few game-specific features.
 
 With Parse, you need to write and test game-specific systems *yourself*, using the basic building blocks that it provides.
+
+### PlayFab
 
 PlayFab, on the other hand, is *specifically designed* for games, and includes a large number of game-specific systems that you can *immediately* start using *without* writing any custom code.
 
@@ -26,7 +30,7 @@ Most developers tell us that building their game on PlayFab is much faster, but 
 
 This migration tutorial assumes that you have *already* familiarized yourself with PlayFab’s features.
 
-### Storing files and data
+## Storing files and data
 
 Both PlayFab and Parse provide systems for storing files and data for your game and players, but they do it differently.
 
@@ -90,7 +94,7 @@ But with PlayFab you *can* segment players into different groups, based on playe
 
 Also on our short-term road map is searching for specific players, based on their properties for match-making or challenges.
 
-### Cloud code
+## Cloud code
 
 Both Parse and PlayFab provide server-side JavaScript for writing custom game code.
 
@@ -113,7 +117,7 @@ Using the Game Manager you can:
 - Reset a player’s password, or unlink an authentication type.
 - Temporarily or permanently ban a player.
 
-### Push notifications
+## Push notifications
 
 PlayFab has native support for sending push notifications to players, but this feature is primarily aimed at sending personalized messages directly to *specific* players.
 
@@ -121,7 +125,7 @@ For sending *bulk* messages to many or *all* of your players, we have partnered 
 
 For now, you can integrate the OneSignal SDK directly in your game. Once the add-on is complete, OneSignal will be integrated directly with PlayFab player segmentation.
 
-### Analytics and reporting
+## Analytics and reporting
 
 PlayFab has basic support for analytics and reporting built into the Game Manager. More advanced analytics providers are available through the PlayFab Add-on Marketplace, including segment, Appuri, and Omniata (coming soon).
 
@@ -131,7 +135,7 @@ Games can also log custom events using the client [WritePlayerEvent](xref:titlei
 
 All events are automatically forwarded to any analytics providers installed via the Marketplace.
 
-### Receipt validation
+## Receipt validation
 
 Like Parse, PlayFab can validate in-app purchase receipts from Apple and Google.
 
