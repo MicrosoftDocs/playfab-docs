@@ -16,6 +16,9 @@ In complex systems, you may want to provide additional event handling on your cu
 
 Whenever a new event is emitted, it can be forwarded to your server by making a POST request to your custom web endpoint. The event data is then passed as the JSON body of the request.
 
+> [!IMPORTANT]
+> Entity API calls do not currently support forwarding with Webhooks.
+
 ## Accessing Webhooks
 
 To access the **Webhooks** panel in the PlayFab **Game Manager** screen:
