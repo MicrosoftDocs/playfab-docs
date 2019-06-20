@@ -36,23 +36,23 @@ You may download latest Google GSON [here](https://repo1.maven.org/maven2/com/go
 
 Once you have initialized a simple Intellij Idea Java Project, make sure to place the necessary JAR files as shown in the following example.
 
-![Install PlayFab SDK](media/intellij-proj-setup.png)
+![Intellij - Project setup](media/intellij-proj-setup.png)
 
 The next step is adding JAR files to the classpath. Navigate to **File** -> **,** as shown in the example below.
 
-![Install PlayFab SDK](media/intellij-add-jar-files-to-classpath.png)
+![Intellij - Add jar files to classpath](media/intellij-add-jar-files-to-classpath.png)
 
 Navigate to **Libraries**, and add a new Java library as illustrated in the image provided below.
 
-![Install PlayFab SDK](media/intellij-add-new-java-library.png)
+![Intellij - Add new Java library](media/intellij-add-new-java-library.png)
 
 Select the JAR files you added to the libs folder, then select **OK** as shown below.
 
-![Install PlayFab SDK](media/intellij-select-jar-files.png)
+![Intellij - Select jar files](media/intellij-select-jar-files.png)
 
 If asked for the **Module**, select the first one in the list. Ensure that all the JAR files were added to the libraries list.
 
-![Install PlayFab SDK](media/intellij-ensure-jar-files-added.png)
+![Intellij - Ensure jar files added](media/intellij-ensure-jar-files-added.png)
 
 ## Project Setup with any IDE
 
@@ -142,7 +142,7 @@ To run the application:
 1. Select the **play arrow >** in the top right corner. This will start program execution, and output panel will appear.
 2. Locate the **debug message**. This indicates that API call was successful.
 
-![Install PlayFab SDK](media/intellij-run-program.png)
+![Intellij - Run program](media/intellij-run-program.png)
 
 At this point, you can start making other API calls, and building your game.
 

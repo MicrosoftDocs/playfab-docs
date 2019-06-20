@@ -245,14 +245,14 @@ Now you have all the pieces to run and test your code.
 
 1. Run your project in Unity. You should see the following:
 
-   !["Console Output"](images/console.png)
+   ![Console Output - Run your project](images/console.png)
 
 1. Log in to [Game Manager](https://developer.playfab.com) and navigate to your player that just logged in.
 
 1. Run the CloudScript method on the player from the **CloudScript** Tab.
 
-   !["Run CloudScript](images/run-cloudscript-function.png)
+   ![Run CloudScript](images/run-cloudscript-function.png)
 
 1. You should have received a message to your console similar to the following.
 
-   !["Console Output"](images/console-result.png)
+   ![Console Output - Result](images/console-result.png)

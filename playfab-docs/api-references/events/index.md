@@ -135,7 +135,7 @@ Each event type has a set of properties that are included as part of event's dat
 - [studio_user_removed](studio-user-removed.md)  
   This event is triggered when a user is removed from a studio.
 
-- [tenacy_connector_onboard](tenacy-connector-onboard.md)  
+- [tenancy_connector_onboard](tenancy-connector-onboard.md)  
   This event is triggered when a tenancy connector is onboarded.
 
 - [studio_tier_updated](studio-tier-updated.md)  

@@ -109,7 +109,7 @@ Remember your installation path {FlexSdkLocation}, and modify your system enviro
     
     - Open a command window in your project folder. Hold shift and right-click in the empty-white-space of the Explorer window.
 
-        ![Install PlayFab SDK](media/cmd-exe.png)
+        ![Install PlayFab SDK - Open a command window](media/cmd-exe.png)
 
     - In the new console window enter this command:
         - mxmlc -dump-config flexcfg.xml
@@ -239,7 +239,7 @@ With absolute paths based on your FlexSdk installation:
     
       - After running, note the new file **GettingStarted.swf** - This is our compiled project, and it will open two new windows, which collectively should look like the example shown below.
 
-  ![Install PlayFab SDK](media/exec-success.png)
+  ![Install PlayFab SDK - Execute success](media/exec-success.png)
 
 At this point, you can start making other api calls, and building your game.
 
