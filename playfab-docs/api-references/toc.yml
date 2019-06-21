@@ -218,9 +218,8 @@
       href: events/studio-user-invited.md
     - name: studio_user_removed  
       href: events/studio-user-removed.md
-
-    - name: tenacy_connector_onboard 
-      href: events/tenacy-connector-onboard.md
+    - name: tenancy_connector_onboard 
+      href: events/tenancy-connector-onboard.md
     - name: title_aborted_task  
       href: events/title-aborted-task.md
     - name: title_added_cloudscript  

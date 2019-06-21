@@ -55,7 +55,7 @@ public void WriteEvent() {
 }
 ```
 
-In this case, the client is manually reporting a Custom forum post Event (this does not currently correspond to any Automatic Event in PlayFab or supported partners)
+In this case, the client is manually reporting a custom `ForumPostEvent` (this does not currently correspond to any Automatic Event in PlayFab or supported partners)
 
  We will use a PlayStream Rule to count the number of times that a Player reports a forum post in this way.
 
@@ -72,10 +72,10 @@ Go to your **Game Manager**:
 
 Let's evaluate the **New Rule** in this example piece by piece:
 
-- **title.6195.ForumPostEvent**
-  - **6195** is the Title used in this tutorial. Your titleId will match your own Title.
-  - **ForumPostEvent** is the event name used in the code for this example case.
-  - This line will only be available if you have recently posted at least one **ForumPostEvent** in your Title.
+- **`title.6195.ForumPostEvent`**
+  - `6195` is the title used in this tutorial. Your titleId will match your own Title.
+  - `ForumPostEvent` is the event name used in the code for this example case.
+  - This line will only be available if you have recently posted at least one `ForumPostEvent` in your Title.
 - The **Conditions** used specifically in this example, has minimal use.
   - However, it *does* demonstrate filtering our Custom Event if the **Body** key is mapped to **Invalid string** in our **Body** dictionary.
   - Filters are optional, and should remove irrelevant players from your Rule.

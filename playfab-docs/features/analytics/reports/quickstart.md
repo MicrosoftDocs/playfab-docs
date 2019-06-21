@@ -25,7 +25,7 @@ To access the **Reports** page:
 
 2. Select the **Reports** tab.
 
-![Game Manager - Analytics - Reports](media/tutorials/game-manager-analytics-open-reports.png)  
+![Game Manager - Analytics - Open Reports](media/tutorials/game-manager-analytics-open-reports.png)  
 
 ## Reports overview
 
@@ -41,7 +41,7 @@ The example shown below shows an overview of the **Reports** page.
 
 5. When **Report** data is *not* available for a given day (no events that day), the **Date** and **Name** labels will render black, will not be selectable, and the option of downloading the report as a **CSV** will not be available.
 
-![Game Manager - Analytics - Reports](media/tutorials/game-manager-analytics-reports-overview.png)  
+![Game Manager - Analytics - Reports Overview](media/tutorials/game-manager-analytics-reports-overview.png)  
 
 ## Report Types
 

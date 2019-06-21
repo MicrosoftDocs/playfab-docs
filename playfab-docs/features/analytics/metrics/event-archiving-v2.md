@@ -37,11 +37,11 @@ Before you begin, visit the [Event History](event-history.md) section to learn h
 
 #### Example events
 
-![Example Sample Events](media/tutorials/event-archive-sample-events.png)
+![Event Archive - Sample Events](media/tutorials/event-archive-sample-events.png)
 
 #### Event format
 
-![Example Sample Events](media/tutorials/event-archive-event-history-sample-event.png)  
+![Event Archive - Event History - Sample Event](media/tutorials/event-archive-event-history-sample-event.png)  
 
 ### Event Output Format
 

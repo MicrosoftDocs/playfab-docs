@@ -25,7 +25,7 @@ This quickstart describes how to quickly get started using the PubSub client for
 
 - **Unity 2018** - This package currently only works with Unity 2018 or later.
 
-- **PlayFab SDK for Unity** - To use this package, you must be familiar with the PlayFab SDK and have it already installed. *Please be sure to have the latest PlayFab SDK installed.*
+- **PlayFab SDK for Unity** - To use this package, you must be familiar with the PlayFab SDK and have it already installed. *Please be sure to have the [ver 2.61.190219](https://github.com/PlayFab/UnitySDK/releases/tag/2.61.190219) or earlier of the PlayFab SDK installed, the current version of PubSub package does not support the new multi-user features yet.*
 
 - **PlayFab Authentication** - To use this package, you must also be familiar with authenticating in PlayFab.
 
@@ -44,7 +44,7 @@ The PubSub feature does not come with the PlayFab SDK by default, and you must a
 
 1. Log in to GitHub.
 
-2. Go to [GitHub: PlayFab PubSub](https://github.com/PlayFab/UnityFeatureBetaSdks/releases/download/0.0.3/PubSub.unitypackage) - If you don't have access to this repository, please speak with your PlayFab contact.
+2. Go to [GitHub: PlayFab PubSub](https://aka.ms/PubSubUnityPackage) - If you don't have access to this repository, please speak with your PlayFab contact.
 
 3. If the above link didn't automatically download, select the releases tab and download the latest released distribution package. You may also obtain updates from this location.
 
@@ -245,14 +245,14 @@ Now you have all the pieces to run and test your code.
 
 1. Run your project in Unity. You should see the following:
 
-   !["Console Output"](images/console.png)
+   ![Console Output - Run your project](images/console.png)
 
 1. Log in to [Game Manager](https://developer.playfab.com) and navigate to your player that just logged in.
 
 1. Run the CloudScript method on the player from the **CloudScript** Tab.
 
-   !["Run CloudScript](images/run-cloudscript-function.png)
+   ![Run CloudScript](images/run-cloudscript-function.png)
 
 1. You should have received a message to your console similar to the following.
 
-   !["Console Output"](images/console-result.png)
+   ![Console Output - Result](images/console-result.png)
