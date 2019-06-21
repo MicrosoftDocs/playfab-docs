@@ -46,11 +46,11 @@ Since the add-on has not yet been enabled, you will need to navigate to the add-
 
 - In **App Center Diagnostics**, select **Manage Add-Ons**.
 
-![navigate to addons page image](media/go_to_addons_diag_page.png)
+![App Center Diagnostics - Manage Add Ons](media/go_to_addons_diag_page.png)
 
 Select the install button on the **App Center Add-On** page. You should see the screenshot shown below.
 
-![navigate to addons page image](media/addon-installed.png)
+![App Center Diagnostics - Add On Installed](media/addon-installed.png)
 
 Now you need to link your PlayFab title to your App Center titles.
 

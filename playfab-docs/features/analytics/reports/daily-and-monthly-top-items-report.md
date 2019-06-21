@@ -26,7 +26,7 @@ The report can assist you in identifying trending items over time, which can be 
 
 ![Daily Top Items Report Table](media/tutorials/daily-top-items-report-table.png)  
 
-![Daily Top Items Report Table](media/tutorials/monthly-top-items-report-table.png)  
+![Monthly Top Items Report Table](media/tutorials/monthly-top-items-report-table.png)  
 
 The Daily and Monthly Top Items report contains a list of top selling items or bundles in a given day or month.
 

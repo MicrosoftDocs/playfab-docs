@@ -248,7 +248,7 @@ create or replace table login_map as
 
 We can then tell Tableau to retrieve data from this table.
 
-![Snowflake - Database - Query](media/tutorials/tableau-custom-sql-query.png)  
+![Tableau - Custom SQL Query](media/tutorials/tableau-custom-sql-query.png)  
 
 and then use the latitude and longitude data to generate a map.
 

@@ -40,11 +40,11 @@ To onboard to the Xbox Data Add-On:
 - With the credentials used to publish your Xbox title, log into your [Microsoft Partner Center](https://partner.microsoft.com) account.
 - Navigate to the dashboard, as shown below.
 
- ![Image of all services menu item](../../media/feature-partner-center-dashboard.png)
+ ![Partner Center - Dashboard](../../media/feature-partner-center-dashboard.png)
 
 - From the dashboard, find each of the parent Product, Bundle, or Edition you want mapped, as illustrated below.
 
- ![Image of all services menu item](../../media/feature-partner-center-productid.png)
+ ![Partner Center - Product ID](../../media/feature-partner-center-productid.png)
 
 - Copy the Product ID using right-click, copy link, and paste into a document.
 - Now copy the 12 digit Product ID and share the request in an email to [pfgaminginsights@microsoft.com](mailto:pfgaminginsights@microsoft.com).

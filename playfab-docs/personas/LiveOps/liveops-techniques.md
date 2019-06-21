@@ -200,7 +200,7 @@ As your game gains traction, you’ll start to see player segments form naturall
 
 Then, as you run experiments and test your ideas, you can track how players in your key segments react. When you do something that stimulates the behavior you want to see in a key segment (such as a particular kind of promotion or event), make a note of it, and try other similar tactics to see if you can get that effect consistently. Of course, you need to be thoughtful about going to the same well too often or you can burn players out.
 
-![Segments](media/segments5.png) | ![Segments](media/segments6.png)
+![Segments - List](media/segments5.png) | ![Segments - Edit Segment](media/segments6.png)
 
 At a minimum, games should think about the basic "funnel" in their game. For example, you can define some simple segments as follows:
 
@@ -469,7 +469,7 @@ Companies like Kolibri Games understand the dynamics of limited-time events, and
 
 *“To prepare - first we have to prepare new assets with the graphic teams, the game designers refresh the ideas and then bring it all together on the development side. We have different channels to message players. Push notifications have generated a huge increase in logins. In-game messaging - pop-ups that notify players of events. Also all the channels - Facebook, Discord, Reddit.”*
 
-![Popups](media/popups9.png) | ![Popups](media/popups10.png)
+![Popup - Event Mine - Announcement](media/popups9.png) | ![Popup - Event Mine - Rewards](media/popups10.png)
 
 ![Car Launch](media/car-launch11.png)
 
