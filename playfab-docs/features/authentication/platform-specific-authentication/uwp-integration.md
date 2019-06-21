@@ -32,7 +32,7 @@ There are two ways you can link a Windows Hello account to your PlayFab account:
 1. You can either create a new PlayFab account using your Windows Hello credentials.
 2. You can link Windows Hello credentials to your existing PlayFab account.
 
-Which one you use depends on whether Windows Hello is your primary authentication or not.
+Which one you use depends on whether or not Windows Hello is your primary authentication.
 
 ### Creating a new account with Windows credentials
 
@@ -56,7 +56,7 @@ The process for linking Windows credentials to an existing PlayFab account is ve
 
 1. First, you must already be logged into a PlayFab account. Typically this is done anonymously, using an insecure, device ID.
 2. Then, follow the steps in the previous section, but use [LinkWindowsHello](xref:titleid.playfabapi.com.client.accountmanagement.linkwindowshello) instead of `RegisterWithWindowsHello`.
-3. Now the user can login with Windows credentials in the future and access or recover their PlayFab account.
+3. Now the user can log in with Windows credentials in the future and access or recover their PlayFab account.
 
 ## Logging in the Player via Windows Hello
 
@@ -65,7 +65,7 @@ Once you have linked Windows Hello credentials to a PlayFab account, you can log
 Follow these steps:
 
 1. Call [PlayFabClientAPI.GetWindowsHelloChallengeAsync](xref:titleid.playfabapi.com.client.authentication.getwindowshellochallenge) to create a signing challenge.
-2. Call [CryptographicBuffer.DecodeFromBase64String](https://docs.microsoft.com/en-us/uwp/api/Windows.Security.Cryptography.CryptographicBuffer#Windows_Security_Cryptography_CryptographicBuffer_DecodeFromBase64String_System_String_) to create an IBuffer for the **KeyCredentialManager** to have the user sign.
+2. Call [CryptographicBuffer.DecodeFromBase64String](https://docs.microsoft.com/en-us/uwp/api/Windows.Security.Cryptography.CryptographicBuffer#Windows_Security_Cryptography_CryptographicBuffer_DecodeFromBase64String_System_String_) to create an IBuffer for the `KeyCredentialManager` to have the user sign.
 3. Call `var retrieveResult = await` [KeyCredentialManager.OpenAsync(userId)](https://docs.microsoft.com/en-us/uwp/api/windows.security.credentials.keycredentialmanager#Windows_Security_Credentials_KeyCredentialManager_OpenAsync_System_String_) to create a key signing service.
 4. Get the credential for this user: `var userCredential = retrieveResult.Credential`.
 5. Call await [userCredential.RequestSignAsync(challengeBuffer)](https://docs.microsoft.com/en-us/uwp/api/Windows.Security.Credentials.KeyCredential#Windows_Security_Credentials_KeyCredential_RequestSignAsync_Windows_Storage_Streams_IBuffer_) to have Windows request that the user sign the server's challenge for this user.
