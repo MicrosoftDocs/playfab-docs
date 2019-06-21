@@ -57,7 +57,7 @@ Note that bucket assignment is probabilistic, so the populations of each bucket 
 
 Once your test is set up, head to the **Stores** sub-section of the **Catalogs** section in your **Economy** tab. From here, you’ll be able to set overrides for a store on the **Edit Store** page.
 
-![Game Manager - PlayStream - A/B Testing - New A/B test](media/tutorials/game-manager-economy-catalogs-edit-store.png)  
+![Game Manager - Economy - Catalogs - Stores - Edit Store](media/tutorials/game-manager-economy-catalogs-edit-store.png)  
 
 See our [store segment override blog](https://blog.playfab.com/blog/introducing-targeted-stores) for more details on this.
 

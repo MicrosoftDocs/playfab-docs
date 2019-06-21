@@ -82,14 +82,14 @@ Next, we will create a rule to send a verification email every time a player upd
 - From the **Event Type** drop-down, select **com.playfab.player_updated_contact_email**.
 - Under the **Actions** heading, select **+ADD ACTION**.
 
-![Game Manager - Automation - New Rule](media/tutorials/game-manager-automation-new-rule-add-action.png)  
+![Game Manager - Automation - New Rule - Add Action](media/tutorials/game-manager-automation-new-rule-add-action.png)  
 
 Choose **Send Email** from the **Type** drop-down.
 
 - The **Email template** drop-down should be populated by the template created in Step 1 **MyFirstEmailVerificationTemplate**.
 - If it is not, select **MyFirstEmailVerificationTemplate** from the drop-down.
 
-![Game Manager - Automation - New Rule](media/tutorials/game-manager-automation-new-rule-save-action.png)  
+![Game Manager - Automation - New Rule - Save Action](media/tutorials/game-manager-automation-new-rule-save-action.png)  
 
 ## Step 3 - Add a contact email to a player
 
@@ -151,7 +151,7 @@ You should see a **Contact Email** listed for that player, with **Verification S
 > [!NOTE]
 > The **Verification Status** could be **Unverified**, if the verification email was not sent out yet, but will move to the **Pending** state as soon as the email is sent.
 
-![Game Manager - Player Profile - Contact email](media/tutorials/game-manager-player-profile-contact-email-verification-pending.png)  
+![Game Manager - Player Profile - Contact email - Verification Pending](media/tutorials/game-manager-player-profile-contact-email-verification-pending.png)  
 
 You can also make a call to [GetPlayerProfile](xref:titleid.playfabapi.com.client.accountmanagement.getplayerprofile) with **ShowContactEmailAddresses** in the [PlayerProfileViewConstraints](xref:titleid.playfabapi.com.server.accountmanagement.getplayerprofile#playerprofileviewconstraints) set as *True* to show that the player now has the contact email that we just added.
 
@@ -214,7 +214,7 @@ When the player selects that URL, three things happen:
     - View your **Player Profile** using the **Game Manager**.
     - You will see that the **Verification status** has changed.
 
-![Game Manager - Player Profile - Contact email](media/tutorials/game-manager-player-profile-contact-email-verification-confirmed.png)  
+![Game Manager - Player Profile - Contact email - Verification Confirmed](media/tutorials/game-manager-player-profile-contact-email-verification-confirmed.png)  
 
 ## Conclusion
 

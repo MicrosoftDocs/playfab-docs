@@ -240,7 +240,7 @@ Use the URL you saved earlier to access your **Application Upload** page.
 2. Then select the zip archive as **Additional files**.
     - Accept the licenses and upload.
 
-![Kongregate application upload page](media/tutorials/kongregate-unity/kongregate-app-upload-page-add-files.png)
+![Kongregate application upload page - Add files](media/tutorials/kongregate-unity/kongregate-app-upload-page-add-files.png)
 
 Once the preview opens, you should be able to see your game live as the message changes.
 

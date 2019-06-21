@@ -40,11 +40,11 @@ Installation
 
 2. Open Visual Studio and create a new project.
 
-  ![Install PlayFab SDK](media/csharp-new-project.png)
+  ![VS - Create new project](media/csharp-new-project.png)
 
 3. Install nuget package for **PlayFabAllSDK**.
 
-  ![Install PlayFab SDK](media/csharp-nuget-add.png)
+  ![VS - Install nuget package for PlayFab SDK](media/csharp-nuget-add.png)
 
 At this point, you should be able to successfully compile the project. The output window should contain something like the following example.
 

@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 This tutorial walks you through the steps needed to create a task to perform one or more actions on every player in a segment.
 
-Tasks are a vital part of live operations for any game, they give you a powerful set of tools for engaging with your players.
+Tasks are a vital part of live operations for any game. They give you a powerful set of tools for engaging with your players.
 
 Examples might include:
 
@@ -168,7 +168,7 @@ handlers.GiveTieredReward = function (args, context) {
 }
 ```
 
-4. Set the new CloudScript version to **Live**, and create a new task that calls **GiveTieredReward** function for all players. Don't forget to **Save** and **Run** the task.
+4. Set the new CloudScript version to **Live**, and create a new task that calls the `GiveTieredReward` function for all players. Don't forget to **Save** and **Run** the task.
 
    ![Servers - Tasks - New Scheduled Task](media/tutorials/servers-tasks-new-scheduled-task.png)
 

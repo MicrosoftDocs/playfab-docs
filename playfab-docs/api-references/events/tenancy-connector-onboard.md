@@ -1,7 +1,7 @@
 ---
-title: tenacy_connector_onboard
+title: tenancy_connector_onboard
 author: v-thopra
-description: tenacy_connector_onboard event.
+description: tenancy_connector_onboard event.
 ms.author: v-thopra
 ms.date: 02/19/2019
 ms.topic: article
@@ -10,7 +10,7 @@ keywords: playfab, playstream events
 ms.localizationpriority: medium
 ---
 
-# tenacy_connector_onboard
+# tenancy_connector_onboard
 
 This event is triggered when a tenancy connector is onboarded.
 

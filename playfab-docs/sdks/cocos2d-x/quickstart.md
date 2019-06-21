@@ -35,7 +35,7 @@ If you are building for other platforms, the files you need are the same, but yo
     - Open a command window in your parent folder (Cocos CLI will create the actual project directory)
       - Hold down your **Shift** key, and right-click in the empty white space of the Explorer window.
 
-        ![Install PlayFab SDK](media/cmd-exe2.png)
+        ![Cocos CLI - Open a command window](media/cmd-exe2.png)
 
     - In the new console window enter this command:
       - `cocos new CocosGettingStarted -l cpp`
@@ -72,13 +72,13 @@ If you are building for other platforms, the files you need are the same, but yo
 
     - You should see these files in your VS project:
 
-      ![Install PlayFab SDK](media/sln-src.png)
+      ![Solution Explorer - VS project files](media/sln-src.png)
 
 PlayFab uses several Cocos libraries that have to be manually added to the dependencies list.
 
   - Open the **Properties** window for your CocosGettingStarted project (as shown below).
 
-    ![Install PlayFab SDK](media/cocos-include.png)
+    ![Properties Window - Cocos include directories](media/cocos-include.png)
 
   - Replace the Additional Include Directories with this:
 

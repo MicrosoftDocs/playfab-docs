@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 This tutorial guides you through the procedure for PlayFab authentication using the Universal Windows Platform (UWP).
 
 > [!IMPORTANT]
-> This procedure serves as a very basic introduction on how you can obtain all entities and commit authentication via Windows Hello and PlayFab. For a more sophisticated example of Windows Hello and PlayFab authentication, consider our [UWPExample project](https://github.com/PlayFab/UWPExample).
+> This procedure serves as a very basic introduction on how you can obtain all entities, and commit authentication via Windows Hello and PlayFab. For a more sophisticated example of Windows Hello and PlayFab authentication, consider our [UWPExample project](https://github.com/PlayFab/UWPExample).
 
 ## Requirements
 
@@ -30,32 +30,31 @@ This tutorial guides you through the procedure for PlayFab authentication using 
 
 Start Visual Studio and create a new project.
 
-- Under **Templates**, select **Windows Universal (1)**.
-- Then select the **Blank App (Universal Windows)** type **(2)**.
-- Name it **GettingStartedPlayfabUWP (3)**.
-- Select the **OK** button **(4)** to submit.
+1. Under **Templates**, select **Windows Universal**.
+2. Then select the **Blank App (Universal Windows)** type.
+3. Name it **GettingStartedPlayfabUWP**.
+4. Select the **OK** button to submit.
 
 ![Visual Studio new blank UWP app](media/tutorials/uwp/vs-new-uwp-app.png)  
 
-- Select the **Target Version** and the **Minimum Version** that match your **Project (1)**.
-- Select the  **OK** button **(2)**.
+1. Select the **Target Version** and the **Minimum Version** that match your **Project**.
+2. Select the  **OK** button.
 
 ![Visual Studio UWP SDK version](media/tutorials/uwp/vs-uwp-sdk-version.png)  
 
 Once the **Project** is created, add the **PlayFab SDK** using the **NuGet Package Manager**.
 
-- First, select the **Tools** tab **(1)**.
-- In the drop-down menu, select **NuGet Package Manager (2)**.
-- Then select **Manage NuGet Packages for Solution (3)**.
+1. First, select the **Tools** tab.
+2. In the drop-down menu, select **NuGet Package Manager**.
+3. Then select **Manage NuGet Packages for Solution**.
 
 ![Visual Studio NuGet Package Manager](media/tutorials/uwp/vs-nuget-package-manager.png)  
 
 In the **NuGet Manager** window:
 
-- Select **Browse** and search for the **PlayFabAllSDK** package.
- **(1)**.
-- Select your target **Project (2)**.
-- Then select the **Install** button **(3)**.
+1. Select **Browse** and search for the **PlayFabAllSDK** package.
+2. Select your target **Project**.
+3. Then select the **Install** button.
 
 ![Visual Studio Install PlayFab SDK](media/tutorials/uwp/vs-install-playfab-sdk.png)  
 
@@ -452,22 +451,26 @@ namespace GettingStartedPlayfabUWP
 
 To run the application:
 
-- Enter your username **(1)**.
-- Select the **Register With Hello** button **(2)**.
+1. Enter your username.
+2. Select the **Register With Hello** button.
 
 ![UWP example - register](media/tutorials/uwp/uwp-example-register.png)  
 
-- Follow the instruction that **Windows** offers for authentication.
-- Once your identity is confirmed, you will see the confirmation message saying that the account was **Registered and signed in (1)** with a **Session Ticket (2)**.
+Follow the instruction that **Windows** offers for authentication.
+
+1. Once your identity is confirmed, you will see the confirmation message saying that the account was **Registered and signed in**.
+2. With a **Session Ticket**.
 
 ![UWP example - register confirmation](media/tutorials/uwp/uwp-example-register-confirmation.png)  
 
-- Select the **Sign in With Hello** button **(1)**.
+1. Select the **Sign in With Hello** button.
 
 ![UWP example - sign in](media/tutorials/uwp/uwp-example-sign-in.png)  
 
-- Follow the instruction that Windows offers for authentication.
-- Once your identity is confirmed, you will see the confirmation message saying that the account is **Signed in (1)** with a **Session Ticket (2)**.
+Follow the instruction that Windows offers for authentication.
+
+1. Once your identity is confirmed, you will see the confirmation message saying that the account is **Signed in**.
+2. With a **Session Ticket**.
 
 ![UWP example - sign in confirmation](media/tutorials/uwp/uwp-example-sign-in-confirmation.png)  
 
