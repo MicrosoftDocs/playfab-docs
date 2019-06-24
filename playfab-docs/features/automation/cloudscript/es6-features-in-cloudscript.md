@@ -19,7 +19,7 @@ A complete overview of ES6 features is available in this [Cheat Sheet](https://d
 This tutorial shows several tricks you may use in your CloudScript.
 
 > [!NOTE]
-> Some of the features require `strict` mode. Enable this mode by placing the following snippet as the very first line of your CloudScript file:
+> Some of the features require **strict** mode. Enable this mode by placing the following code as the very first line of your CloudScript file:
 > `use strict;`
 
 ## String interpolation

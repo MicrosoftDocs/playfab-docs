@@ -85,7 +85,7 @@ handlers.GenerateError = () => {
 
 ## Recovery
 
-It's not always possible to recover from errors. Issues like **InvalidArguments** leave you with no option but to report the problem back to the player.
+It's not always possible to recover from errors. Issues like `InvalidArguments` leave you with no option but to report the problem back to the player.
 
 There are a subset of errors where a retry strategy can be applied. *Retry-able* error types are described in the [Global API Method Error Codes](global-api-method-error-codes.md) tutorial.
 
