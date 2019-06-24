@@ -75,7 +75,7 @@ PlayFabMultiplayerAPI.CreateMatchmakingTicket(
 
 ### Check the status of the matchmaking ticket
 
-You must poll the service by `TicketId` to access the `Status` of the ticket in matchmaking. In order to do so, have your title call [GetMatchmakingTicket](xref:titleid.playfabapi.com.multiplayer.matchmaking.getmatchmakingticket). We recommend polling for the ticket status every 10 seconds.
+You must poll the service by `TicketId` to access the `Status` of the ticket in matchmaking. In order to do so, have your title call [GetMatchmakingTicket](xref:titleid.playfabapi.com.multiplayer.matchmaking.getmatchmakingticket). You can poll up to 10 times per minute. For instance, poll for the ticket status every 6 seconds.
 
 When the status of
 the ticket changes to `Matched`, your client can stop polling the ticket. From that point on, the ticket will include the `MatchId`.
@@ -109,8 +109,7 @@ PlayFabMultiplayerAPI.GetMatch(
 
 ### Cancelling a matchmaking ticket
 
-If for some reason your client wants to cancel the matchmaking process prior to `GiveUpAfterSeconds` being reached, call [CancelMatchmakingTicket](xref:titleid.playfabapi.com.multiplayer.matchmaking.cancelmatchmakingticket) with the `TicketId`. If a match hasn’t already been found, the ticket is taken
-out of the matchmaking process and its status changes to `Canceled`.
+If for some reason your client wants to cancel the matchmaking process prior to `GiveUpAfterSeconds` being reached, call [CancelMatchmakingTicket](xref:titleid.playfabapi.com.multiplayer.matchmaking.cancelmatchmakingticket) with the `TicketId`. If a match hasn’t already been found, the ticket is taken out of the matchmaking process and its status changes to `Canceled`.
 
 ```csharp
 PlayFabMultiplayerAPI.CancelMatchmakingTicket(
@@ -171,8 +170,7 @@ The rest of the process is the same as that of [single user ticket matchmaking](
 
 Once your players have matched, you will want to have them join each other - either through a server, or by peer-to-peer connections.
 
-If you are using a dedicated server, you can rely on the Match ID to uniquely identify the group of players they should be in.  If you are using PlayFab's
-multiplayer servers, `GetMatch` will provide a server and port for your players to connect to.
+If you are using a dedicated server, you can rely on the Match ID to uniquely identify the group of players they should be in. If you are using PlayFab's multiplayer servers, `GetMatch` will provide a server and port for your players to connect to.
 
 Please refer to [Integrating with PlayFab Multiplayer Servers](multiplayer-servers.md) for more information.
 

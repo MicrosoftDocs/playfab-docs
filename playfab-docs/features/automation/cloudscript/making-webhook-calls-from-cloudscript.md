@@ -89,7 +89,7 @@ Headers["client_secret"] = clientSecret;
 var tokenResponse =  http.request(url,method,contentBody,contentType,headers);
 ```
 
-Given a good response, you would *then* be able to parse the Bearer Access token from the response like this (again, this *does depend* upon the specifics of your OAuth implementation, but this is a fairly common pattern for this form of authentication).
+Given a good response, you would *then* be able to parse the `bearer_access_token` from the response like this (again, this *does depend* upon the specifics of your OAuth implementation, but this is a fairly common pattern for this form of authentication).
 
 ```javascript
 //CloudScript
