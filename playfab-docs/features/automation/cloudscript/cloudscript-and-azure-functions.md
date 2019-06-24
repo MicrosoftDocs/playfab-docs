@@ -20,4 +20,6 @@ This allows us to address several big customer requests:
 * Seamless switching from local to remote debugging.
 * Easy deployment through GitHub, Azure DevOps, and more.
 
-While we're not yet in public preview, we are looking for a handful of partners for early access to our beta SDK. Reach out to [HelloPlayFab@microsoft.com](mailto:HelloPlayFab@microsoft.com) to be kept in the loop!
+While we are not yet in public preview, we are looking for a handful of partners for early access to our beta SDK.
+
+Reach out to [HelloPlayFab@microsoft.com](mailto:HelloPlayFab@microsoft.com) to be kept in the loop!

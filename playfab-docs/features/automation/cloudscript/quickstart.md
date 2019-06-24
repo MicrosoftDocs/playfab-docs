@@ -37,7 +37,7 @@ To see these functions:
 - Select your title.
 - Select **Automation** on the left side bar.
 
-You should see a number of CloudScript methods - such as **HelloWorld**, which logs the message **Hello PLAYERID**, where **PLAYERID** is the current player's PlayFab ID.
+You should see a number of CloudScript methods - such as **HelloWorld**, which logs the message **Hello PLAYERID** - where **PLAYERID** is the current player's PlayFab ID.
 
 ![Game Manager - Automation - CloudScript](media/tutorials/game-manager-cloudscript.png)  
 
