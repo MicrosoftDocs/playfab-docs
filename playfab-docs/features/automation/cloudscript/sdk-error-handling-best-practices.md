@@ -42,12 +42,12 @@ The most common way to inspect an error is to recognize it through the code. As 
 > [!NOTE]
 > The code *on its own* is sufficient to recognize and process the error accordingly.
 
-Let's take the [LoginWithEmailAddress](xref:titleid.playfabapi.com.client.authentication.loginwithemailaddress) API method as an example. As stated in the [documentation](xref:titleid.playfabapi.com.client.authentication.loginwithemailaddress) for this method, the following internal error may be thrown upon execution:
+Let's take the [LoginWithEmailAddress](xref:titleid.playfabapi.com.client.authentication.loginwithemailaddress) API method as an example. As stated in the [documentation](xref:titleid.playfabapi.com.client.authentication.loginwithemailaddress) for this method, the following internal errors may be thrown upon execution:
 
-- **InvalidTitleId 1004**
-- **AccountNotFound 1001**
-- **InvalidEmailOrPassword 1142**
-- **RequestViewConstraintParamsNotAllowed 1303**
+- `InvalidTitleId 1004`
+- `AccountNotFound 1001`
+- `InvalidEmailOrPassword 1142`
+- `RequestViewConstraintParamsNotAllowed 1303`
 
 The following method illustrates how to inspect and recognize such an error.
 
