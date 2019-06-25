@@ -76,7 +76,7 @@ void UseCoupon(string couponCode)
 
 The most straightforward way to use coupons is gifting an inventory item. Once you have created your catalog, you can generate coupons for regular items by following the previous instructions we have already discussed. There are no other special steps for this case.
 
-### Example case: Virtual currency coupon *or*  multiple-item coupon
+### Example case: Virtual currency coupon *or*  multiple item coupon
 
 Coupons cannot grant [Virtual Currency](currencies.md) directly, and they can only grant a single item.
 
@@ -99,7 +99,7 @@ Multiple items work the same way:
 - Physical rewards at conventions:
   - Print out your list of coupon codes, and hand them out as swag at conventions.
 - Out-of-game communication such as forums, [Push Notifications](../../engagement/push-notifications/quickstart.md) and email.
-  - Send your players coupon codes directly as part of re-acquisition campaigns or other community outreach.
+  - Send your players coupon codes *directly*, as part of re-acquisition campaigns or other community outreach.
 - Tournaments:
   - Send coupons to the top ranked players when using [Resettable Leaderboards](../../social/tournaments-leaderboards/using-resettable-statistics-and-leaderboards.md).
 
@@ -108,6 +108,4 @@ Multiple items work the same way:
 
 ## Best practices
 
-Using the PlayFab inventory, you should keep inventory sizes relatively small - *less than 100 items total* per player.
-
-A bundle which grants *too many items* may be throttled or rate-limited.
+Using the PlayFab inventory, you should keep inventory sizes relatively small - *less than 100 items total* per player.  A bundle which grants *too many items* may be throttled or rate-limited.
