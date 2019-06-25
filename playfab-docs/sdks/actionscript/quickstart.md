@@ -16,54 +16,6 @@ This quickstart helps you make your first PlayFab API call using ActionScript.
 
 Before you can call any PlayFab API, you must have a [PlayFab developer account](https://developer.playfab.com/en-us/sign-up). 
 
-## ActionScript3 project setup
-
-- **OS**: This guide is for Windows 10
-- The steps for Mac should be similar, but probably not identical (Good luck!)
-
-- Installation
-  - These steps describe building an AS3 project using entirely free tools. As such, this might be more complicated than something like Adobe Flash Builder.
-    - These instructions are the result of lots of experimentation and testing, rather than expert knowledge.
-    - If you're already aware of simpler installation steps, feel free to skip to the next section.
-
-  - Downloads:
-    - For environment variable instructions below, anything in {curly braces} should be replaced with the actual installation path (don't put actual curly braces in your environment variables).
-    - Install the Adobe Air SDK
-      - [https://www.adobe.com/devnet/air/air-sdk-download.html](https://www.adobe.com/devnet/air/air-sdk-download.html)
-      - Remember your installation path `{AirSdkLocation}`, as you will use it below.
-    - Install the Adobe Flex SDK
-      - [https://www.adobe.com/devnet/flex/flex-sdk-download.html](https://www.adobe.com/devnet/flex/flex-sdk-download.html)
-      - Remember your installation path `{FlexSdkLocation}`, and modify your system environment variables:
-        - Add `{FlexSdkLocation}/bin` to your PATH environment variable.
-          - For example, if you install to `C:/dev/flex_sdk_4.6`, then set `FLEX_HOME=C:/dev/flex_sdk_4.6`.
-        - Add a `FLEX_HOME` system environment variable, and set it to `{FlexSdkLocation}`.
-          - For example, if you install to `C:/dev/flex_sdk_4.6`, then add `C:/dev/flex_sdk_4.6/bin` to your PATH.
-
-    - Copy/Paste the contents of **{AirSdkLocation}** over-top of {**FlexSdkLocation}**.
-      - Open two Explorer windows: **{AirSdkLocation}** and **{FlexSdkLocation}**.
-      - Select all in **{AirSdkLocation}** folder.
-      - Paste into the **{FlexSdkLocation}** folder.
-
-    - This will replace some existing files, which is correct.
-
-    - Download the PlayFab ActionScriptSDK:
-      - [ActionScript SDK](https://api.playfab.com/downloads/actionscript)
-  - Download the zip file, and extract it to a location of your choice **{PlayFabAs3Location}**.
-  - Updates to environment variables sometimes require a computer restart.
-  - Create a new empty folder for your GettingStartedAs3 Project
-    - Create a new empty text file called GettingStarted.as.
-    - Create a new empty text file called **GettingStarted.xml**.
-    - Create a new empty text file called **buildAndRun.bat**.
-
-  - Import the PlayFab ActionScriptSDK into this project
-    - In Windows-Explorer, navigate to **{PlayFabAs3Location}/PfApiTest**.
-    - Select the **com** folder, and copy it to your project folder.
-      - This contains a sub-folder called **playfab**, which is the PlayFabSDK.
-
-  - Create the **flexcfg.xml** file.
-    - Open a command window in your project folder
-      - Hold down the **Shift** key, and right-click in the empty white space of the Explorer window.
-
 ## ActionScript3 project setup  
 
 OS: This guide is for Windows 10. However, the steps for Mac should be similar, but probably not identical.

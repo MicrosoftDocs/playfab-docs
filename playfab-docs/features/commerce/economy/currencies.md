@@ -30,7 +30,7 @@ Our Game Manager provides tools to make managing your virtual economy straightfo
 
 ## Field reference
 
-This section describes each field in the **Currency** section of the **Economy** area in **Game Manager**. The following are the fields in the **New Currency** screen (shown below) which you'll use to create and maintain the virtual currencies that make up your in-game economy.
+This section describes each field in the **Currency** section of the **Economy** area in **Game Manager**. The following are the fields in the **New Currency** screen (shown below), which you'll use to create and maintain the virtual currencies that make up your in-game economy.
 
 - **Currency code** and **Display name** are *required* fields with no default values. The other fields have a default value of **zero**.
 
@@ -59,9 +59,7 @@ The only restriction is that it must be *at least one letter long*. Common examp
 
 ### Recharge rate (units per day)
 
-**Recharge rate** is an *optional* field. It specifies how much of this virtual currency is granted to each player per day.
-
-Virtual currency that is granted to the player via a recharge rate is granted to them *gradually*, and is evenly distributed over a 24 hour period.
+**Recharge rate** is an *optional* field. It specifies how much of this virtual currency is granted to each player per day. Virtual currency that is granted to the player via a recharge rate is granted to them *gradually*, and is evenly distributed over a 24 hour period.
 
 ### Recharge maximum
 
