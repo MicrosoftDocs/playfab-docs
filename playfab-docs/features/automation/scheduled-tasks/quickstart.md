@@ -12,15 +12,13 @@ ms.localizationpriority: medium
 
 # Scheduled tasks quickstart
 
-This quickstart walks you through how to create a task that runs on a schedule.
-
-There are many game operation routines that can be automated using a scheduled task, such as:
+This quickstart shows you how to create a task that runs on a schedule. There are many game operation routines that can be automated using a scheduled task, such as:
 
 - Modifying prices in a store according to the time of the day.
 - Updating title data to reflect changes for a current event.
 - Injecting virtual currencies into the game economy daily, etc.
 
-In the example used in this quickstart, we be showing you how to modify a game variable called **rareDropRate** in the title data at 12:00 UTC, and only on weekend days.
+In the example used in this quickstart, we'll show you how to modify a game variable called **rareDropRate** in the title data at 12:00 UTC, and only on weekend days.
 
 ## Step 1 - Prepare the CloudScript
 
@@ -28,7 +26,7 @@ In the **Game Manager**:
 
 - Select **Servers** in the menu to the left.
 - Move to the **CloudScript** tab.
-- Add a CloudScript function called **adjustRareDropRate** with a simple call to the **SetTitleData API** as shown in the code snippet and image below.
+- Add a CloudScript function called `adjustRareDropRate` with a simple call to the `SetTitleData` API as shown in the code snippet and image below.
 
 > [!NOTE]
 > For the sharp-eyed, don’t worry - there’s a bug in there on purpose. Make sure you deploy the new revision, so that it is live in your game.
@@ -67,7 +65,7 @@ To set the schedule for this task:
 
 The highly customizable Cron Expression allows you to build a very complex schedule, though it’s important to note that we currently *only* allow schedules whose occurrences happen on 5-minute marks of the hour.
 
-For example, you may specify a task to run on the 5th, 10th, 25th,or 50th minute of the hour, but you may *not* specify a task to run on the 3rd, 11th, or 46th minute of the hour.
+For example, you may specify a task to run on the 5th, 10th, 25th, or 50th minute of the hour, but you may *not* specify a task to run on the 3rd, 11th, or 46th minute of the hour.
 
 If you'd like to learn more about Cron Expression, [crontab.guru](https://crontab.guru/) provides rich information and an interactive expression builder.
 
@@ -123,4 +121,4 @@ To confirm success:
 - Go to the **Title Data** tab.
 - Verify that the **Title Data** entry was actually set.
 
-![Game Manager - Content - Title Data](media/tutorials/game-manager-content-title-data.png)  
+![Game Manager - Content - Title Data](media/tutorials/game-manager-content-title-data.png)

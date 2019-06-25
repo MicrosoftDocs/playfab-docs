@@ -10,6 +10,6 @@ keywords: playfab, automation, scheduled tasks
 ms.localizationpriority: medium
 ---
 
-# Scheduled Tasks Tutorials
+# Scheduled Tasks tutorials
 
 This tutorial shows you how to schedule a task.

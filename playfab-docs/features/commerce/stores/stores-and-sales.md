@@ -18,7 +18,7 @@ Stores should define subsets of the items in your catalog, and make them availab
 
 A store allows you to single out a specific set of items, and make them available at specific prices for a set time period.
 
-This tutorial illustrates the best practices for defining stores based on virtual currency and real money.
+This tutorial illustrates the best practices for defining stores, based on virtual currency and real money.
 
 ## Requirements
 
@@ -27,13 +27,13 @@ This tutorial illustrates the best practices for defining stores based on virtua
   - **SS** (**Silver Shekels**)
   - **GS** (**Gold Shekels**).
 
-- You must have a *primary catalog* with one or more items defined.
+- You must have a *primary catalog*, with one or more items defined.
   - The first example uses multiple item/bundles, similar to the ones described in the [Drop Tables](../items/drop-tables.md) tutorial.
   - The second example in this tutorial uses small, medium, and large health potions.
 
 ### Best practice
 
-Catalog prices should be fixed long-term - they define the *real* price of an item.
+Catalog prices should be fixed for the long-term, as they define the *real* price of an item.
 
 Stores should be *temporary*, being added and removed according to your LiveOps strategies.
 
@@ -48,7 +48,7 @@ Please note the following information about stores and currencies:
 
 - **Zero Cost**: If the cost of an item in a particular currency is unset (**null**) or **zero**, it cannot be purchased using that currency. This is true for both catalogs and stores. This allows you to make items available for exclusively free currencies, or exclusively premium currencies, by leaving the entries for the other currencies blank or by resetting them to **zero**.
 
-- **Real Money**: The **RM** currency is available in all catalogs and stores. RM is a restricted currency key that indicates *real money transactions only*. You should only charge RM for items of significant value, or bundles/containers which contain premium currency.
+- **Real Money**: The RM currency is available in all catalogs and stores. RM is a restricted currency key that indicates *real money transactions only*. You should only charge RM for items of significant value, or bundles/containers which contain premium currency.
 
 - **Prices are Either/Or**: If two prices are defined on an item, the item can be purchased for one or the other. It is *not possible* to require two currencies for a single item.
 
@@ -123,7 +123,7 @@ Games with stores should call and cache their primary catalog using the [GetCata
 > [!TIP]
 > Players are more likely to buy items on sale, especially if the sale is a limited-time offer.
 
-At this point, it is the responsibility of your GUI code to present the user with the opportunity to select which items they wish to buy and how many.
+At this point, it is the responsibility of your GUI code to offer the user the opportunity to select which items they wish to buy and how many.
 
 - Between your game and PlayFab, the remaining steps are several separate API calls, but you can make the sequence of multiple calls invisible to the player.
 
@@ -206,7 +206,7 @@ If the response indicates a connectivity failure, you can try again with an expo
 
 Stores are a great mechanism for encouraging your players to purchase items.
 
-Stores work with any kind of virtual currency. Stores can also work with real money through an alternate set of API methods.
+Stores work with any kind of virtual currency, and can also work with real money through an alternate set of API methods.
 
 - You can set up a single-item purchase with VC via [PurchaseItem](xref:titleid.playfabapi.com.client.playeritemmanagement.purchaseitem).
 - You can set up a multiple-item purchase with real money or VC via the sequence:
