@@ -26,7 +26,7 @@ XLC customers will need to do several things to migrate:
 4. Transition of production activity from XLC to PlayFab. If you would like to continue to use XLC endpoints for allocation, we can work with you to direct those API calls to new PlayFab titles. 
 5. Perform ongoing management operations with PlayFab APIs and the PlayFab portal
 
-![XLC Flows](media/tutorials/xlcdiagram.png)  
+![XLC Flows](media/tutorials/xlc-flows-diagram.png)  
 
 We regret the inconvenience this may cause. XLC was an innovative preview program but has increasingly become difficult to maintain and operate. PlayFab Multiplayer Servers is a much more advanced orchestrator and we hope these compatibility features allow for a reasonable migration.
 

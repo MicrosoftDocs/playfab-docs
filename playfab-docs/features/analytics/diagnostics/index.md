@@ -27,7 +27,7 @@ When you link your App Center titles to a PlayFab title, you will be able to see
 
 Crash reporting is a critical part of developing quality games. This diagnostics integration with App Center will aid you in mitigating players that are having a bad experience in your game. Currently, you will have the ability to see title level diagnostics - including limited stacktrace and deep linking into App Center - to further explore issues so you can resolve them.
 
-![App Center Dashboard Image](media/appcenter_gm_dash.png)
+![App Center Dashboard Image](media/appcenter-gm-dash.png)
 
 In the near future, there will be per player crash reporting and PlayStream events when a player reports a crash. This means for the first time ever you can, in real-time, react to a player experiencing problems in your app.
 
