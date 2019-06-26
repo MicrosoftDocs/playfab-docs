@@ -721,7 +721,7 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>Servers</h3>
-                                                <p style='color: #7f7f7f'>Dynamically scale custom multiplayer servers.</p><p><a href='/gaming/playfab/features/multiplayer/servers/'>Overview</a></p><p><a href='/gaming/playfab/features/multiplayer/servers/tutorials'>Tutorials</a></p>
+                                                <p style='color: #7f7f7f'>Dynamically scale custom multiplayer servers.</p><p><a href='/gaming/playfab/features/multiplayer/servers/'>Overview</a></p><p><a href='/gaming/playfab/features/multiplayer/servers/quickstart'>Quickstart</a></p>
                                             </div>
                                         </div>
                                     </div>

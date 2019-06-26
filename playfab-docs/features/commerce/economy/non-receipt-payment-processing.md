@@ -66,7 +66,7 @@ In the examples that follow, you’ll see fields like `{{TitleID}}` and `{{Sessi
 
 Throughout the purchase flow, you’ll be working with a defined set of goods from your game catalog that the player wants to purchase.
 
-This is the cart of goods, which you define by a call to `client/startPurchase`, to start the process.
+This is the cart of goods, which you define by a call to PlayFab Client API method `StartPurchase`, to start the process.
 
 ```csharp
 PlayFabClientAPI.StartPurchase(new StartPurchaseRequest() {
@@ -96,7 +96,7 @@ The return from the StartPurchase call contains a lot of information - including
 But the primary things you’ll need for the next step are the `OrderId` (which uniquely identifies this purchase), and the specific provider you want to use, which is in the `PaymentOptions`.
 
 > [!NOTE]
-> Only Payment Providers you have enabled for your title will appear in the `PaymentOptions`.
+> Only Payment Providers you have enabled for your title will appear in the **`PaymentOptions`**.
 
 ```JSON
 {
@@ -169,16 +169,16 @@ FB.ui({
 
 When making this call, lease remember that the product is *case-sensitive* in Facebook.
 
-In particular, the TitleId - which you need to replace with the *correct* title ID for your game in PlayFab - is usually in lower-case in their service. If you encounter any issues with Facebook not finding the correct product, try grabbing the product manually using a GET request, as shown on [this page](https://developers.facebook.com/docs/payments/product/).
+In particular, the `TitleId` - which you need to replace with the *correct* title ID for your game in PlayFab - is usually in lower-case in their service. If you encounter any issues with Facebook not finding the correct product, try grabbing the product manually using a GET request, as shown on [this page](https://developers.facebook.com/docs/payments/product/).
 
 In addition, you’ll also need to make sure you’re using the values from earlier in the flow:
 
-- The **Catalog ID** of the PlayFab-defined catalog containing the item to be purchased (`IAP1_0`).
+- The `CatalogID` of the PlayFab-defined catalog containing the item to be purchased (`IAP1_0`).
 
-- The **Item ID** of the item in the game’s PlayFab catalog which is to be purchased (`BigBagOfGold`)
-- The **Order ID** returned from the call to **StartPurchase**, at the beginning of this process (`1234567890ABCDEF`)
+- The `itemID` of the item in the game’s PlayFab catalog which is to be purchased (`BigBagOfGold`)
+- The `OrderID` returned from the call to `StartPurchase`, at the beginning of this process (`1234567890ABCDEF`)
 
-On a successful response, Facebook will return a payment_id, which can then be used in the Client/PayForPurchase call as the `ProviderTransactionId`.
+On a successful response, Facebook will return a `payment_id`, which can then be used as the `ProviderTransactionId` in the call to the Client API method `PayForPurchase`.
 
 ```csharp
 const string paymentId = "_SOME_PAYMENT_ID" ;
@@ -251,9 +251,9 @@ PlayFabClientAPI.PayForPurchase(new PayForPurchaseRequest() {
 });
 ```
 
-As a result of the PayForPurchase call, PlayFab uses the web methods provided by Steam to initiate the purchase in that service. This automatically causes the user to be presented with the purchase confirmation dialog via the Steam client.
+As a result of the `PayForPurchase` call, PlayFab uses the web methods provided by Steam to initiate the purchase in that service. This automatically causes the user to be presented with the purchase confirmation dialog via the Steam client.
 
-So at the same time you’re getting the response to the `Client/PayForPurchase` call, the user is being asked to accept the payment.
+So at the same time you’re getting the response to the Client API `PayForPurchase` call, the user is being asked to accept the payment.
 
 ```json
 {
@@ -320,7 +320,7 @@ The final part of the process is for PlayFab to complete the purchase process, a
 
 In the case of some providers, at this stage the title already knows if the purchase was completed successfully.
 
-In any case, a call to `Client/ConfirmPurchase` will only add the items to the player inventory if the payment was made, and they haven’t already been added.
+In any case, a call to the Client API method `ConfirmPurchase` will only add the items to the player inventory if the payment was made, and they haven’t already been added.
 
 ```csharp
 PlayFabClientAPI.ConfirmPurchase(new ConfirmPurchaseRequest() {
@@ -332,7 +332,7 @@ PlayFabClientAPI.ConfirmPurchase(new ConfirmPurchaseRequest() {
 });
 ```
 
-At this point, if the order has been completed successfully, we iterate through the items in the cart you set up with the call to `Client/StartPurchase`.
+At this point, if the order has been completed successfully, we iterate through the items in the cart that you set up with the call to the Client API `StartPurchase`.
 
 This adds the items to the player's inventory and returns the information about the items purchased to the title.
 
@@ -360,7 +360,7 @@ This adds the items to the player's inventory and returns the information about 
 
 Behind the scenes, there are a number of state changes the order goes through. The complete list is provided below, though it should be noted that depending on the specific provider process, some of these states will never show up in the results of any of the three purchase process API calls, and are included here for completeness.
 
-- **CreateCart** - While the order object itself is not returned in the response to `Client/StartPurchase`, it has been created at that point. At this stage, the items and prices are stored in the object, but it has not been submitted to any payment provider.
+- **CreateCart** - While the order object itself is not returned in the response to the Client API `StartPurchase`, it has been created at that point. At this stage, the items and prices are stored in the object, but it has not been submitted to any payment provider.
 
 - **Init** - As shown above, this is the status returned when the order has been submitted to the payment provider, but has not yet been authorized by the player.
 - **Approved** - This occurs briefly, after the player has approved the payment, but before PlayFab has completed the process of placing the items in the player inventory. *It is only included in this list for completeness, as titles should never see an order with this status*.
@@ -434,7 +434,7 @@ Again, you'll need to refer to the Xsolla documentation found in the link we pro
 
 Once that is done, there's no further need for you to take any action. Xsolla and PlayFab will exchange webhook calls, and PlayFab will fulfill the purchase by putting the purchased items into the player inventory and posting the appropriate events to PlayStream.
 
-You can check the transaction status (see the full list above) by polling the `Client/GetPurchase` API call.
+You can check the transaction status (see the full list above) by polling the Client API `GetPurchase`.
 
 In most cases, this process should not take more than 2-3 seconds to complete.
 
@@ -468,9 +468,9 @@ PlayFabClientAPI.GetPurchase(new GetPurchaseRequest()
 
 One thing to be aware of is that payments can take a long time to complete with some providers.
 
-If you find that the status of the purchase in the response from a call to `Client/ConfirmPurchase` is still Init, you should wait before re-querying. The best practice here is to store the OrderId at the start of the process, and then use an exponential back-off when querying for the result.
+If you find that the status of the purchase in the response from a call to the Client API `ConfirmPurchase` is still `Init`, you should wait before re-querying. The best practice here is to store the `OrderId` at the start of the process, and then use an exponential back-off when querying for the result.
 
-So if the status is Init, wait *one* minute before re-trying the call to `Client/ConfirmPurchase`, then wait *two* minutes, then *four*, *eight*, etc., until you hit some max value. Including a **check for completed transactions** option would then provide a way for the user to reset that timer.
+So if the status is Init, wait *one* minute before re-trying the call to the Client API `ConfirmPurchase`, then wait *two* minutes, then *four*, *eight*, etc., until you hit some max value. Including a **check for completed transactions** option would then provide a way for the user to reset that timer.
 
 Finally, it’s worth noting that you can use sandbox mode for testing purchases with some payment providers.
 

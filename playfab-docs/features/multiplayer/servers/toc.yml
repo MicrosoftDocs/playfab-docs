@@ -1,46 +1,44 @@
 - name: Overview
   href: index.md
-  items:
-  - name: Accessing increased core limits and additional Azure regions
-    href: identifying-and-increasing-core-limits.md
-  - name: Basics of a PlayFab game server
-    href: basics-of-a-playfab-game-server.md
-  - name: Billing for PlayFab Multiplayer Servers 
-    href: billing-for-thunderhead.md
-  - name: Detailed price sheet for multiplayer servers
-    href: multiplayer-servers-detailed-price-sheet.md
-  - name: Lifecycle of a multiplayer server build region
-    href: multiplayer-build-region-lifecycle.md
-  - name: Lifecycle of multiplayer server builds
-    href: multiplayer-build-lifecycle.md
-
-- name: Quickstart
-  href: quickstart.md
+- name: Quickstarts
   items:
   - name: Quickstart for multiplayer servers (API/PowerShell)
     href: quickstart-for-multiplayer-servers-api-powershell.md
   - name: Quickstart for multiplayer servers (Game Manager)
     href: quickstart-for-multiplayer-servers-game-manager.md
-- name: Tutorials
-  href: tutorials.md
+- name: Authoring a game server
   items:
-  - name: Allocating game servers and connecting Visual Studio debugging tools
-    href: allocating-game-servers-and-configuring-vs-debugging-tools.md
-  - name: Archiving and retrieving multiplayer server logs
-    href: archiving-and-retrieving-multiplayer-server-logs.md
-  - name: Connecting clients to game servers
-    href: connecting-clients-to-game-servers.md
-  - name: Custom Game Servers
-    href: custom-game-servers.md
-  - name: Deploying Linux based builds
-    href: deploying-linux-based-builds.md    
-  - name: Deploying PlayFab multiplayer server builds
-    href: deploying-playfab-multiplayer-server-builds.md
+  - name: Basics of a PlayFab game server
+    href: basics-of-a-playfab-game-server.md
   - name: Integrating game servers with the PlayFab game server SDK (GSDK)
     href: integrating-game-servers-with-gsdk.md
   - name: Locally debugging game servers and integration with PlayFab
     href: locally-debugging-game-servers-and-integration-with-playfab.md
-  - name: Using Externally-hosted game servers
-    href: using-externally-hosted-games-servers-with-playfab.md
+- name: Managing server builds
+  items:
+  - name: Deploying PlayFab multiplayer server builds
+    href: deploying-playfab-multiplayer-server-builds.md
+  - name: Archiving and retrieving multiplayer server logs
+    href: archiving-and-retrieving-multiplayer-server-logs.md
+  - name: Lifecycle of multiplayer server builds
+    href: multiplayer-build-lifecycle.md
+  - name: Lifecycle of a multiplayer server build region
+    href: multiplayer-build-region-lifecycle.md
+- name: Connecting clients and requesting servers
+  items:
   - name: Using quality-of-service (QoS) beacons to measure player latency to Azure
     href: using-qos-beacons-to-measure-player-latency-to-azure.md
+  - name: Allocating game servers and connecting Visual Studio debugging tools
+    href: allocating-game-servers-and-configuring-vs-debugging-tools.md
+  - name: Connecting clients to game servers
+    href: connecting-clients-to-game-servers.md
+- name: Limits and billing
+  items:
+  - name: Accessing increased core limits and additional Azure regions
+    href: identifying-and-increasing-core-limits.md
+  - name: Billing for PlayFab Multiplayer Servers 
+    href: billing-for-thunderhead.md
+  - name: Detailed price sheet for multiplayer servers
+    href: multiplayer-servers-detailed-price-sheet.md
+  - name: PlayFab incident response procedures
+    href: comm-sla.md

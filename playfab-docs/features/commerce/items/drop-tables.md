@@ -106,7 +106,7 @@ You can access drop tables programmatically using these two PlayFab Server API m
 Using [GetRandomResultTables](xref:titleid.playfabapi.com.server.playeritemmanagement.getrandomresulttables), you can read the raw drop table data that we've just entered into Game Manager.
 
 > [!NOTE]
-> `GetRandomResultTables` does *not* roll random values or award results. The API lets you read the data and parse the information however you see fit.
+> **`GetRandomResultTables`** does *not* roll random values or award results. The API lets you read the data and parse the information however you see fit.
 
 ### Option 1
 
