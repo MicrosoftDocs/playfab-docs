@@ -41,7 +41,7 @@ The best way to access real money items available for purchase is to use [GetCat
 
 The ID of the item is the link between PlayFab and any external IAP system. So we pass the item ID to the IAP service.
 
-At this point, the purchase process starts. The player interacts with the IAP interface and, if the purchase is successful, you obtain a receipt.
+At this point, the purchase process begins. The player interacts with the IAP interface and - if the purchase is successful - you obtain a receipt.
 
 PlayFab is then able to validate the receipt and register the purchase, granting the PlayFab player the items that they just bought.
 
@@ -58,33 +58,33 @@ Prerequisites:
 
 Our first step is setting up UnityIAP:
 
-- Navigate to **Services (1)**.
-- Make sure the **Services** tab is selected **(2)**.
-- Select your **Unity Services** profile or organization **(3)**.
-- Select the **Create** button **(4)**.
+1. Navigate to **Services**.
+2. Make sure the **Services** tab is selected.
+3. Select your **Unity Services** profile or organization.
+4. Select the **Create** button.
 
 ![Setting up UnityIAP service](media/tutorials/setting-up-unity-iap-service.png)  
 
-- Next, navigate to the **In-App Purchasing (IAP)** service **(1)**.
+1. Next, navigate to the **In-App Purchasing (IAP)** service.
 
 ![Navigate to UnityIAP service](media/tutorials/navigate-to-unity-iap-service.png)  
 
-- Make sure to enable the **Service**, by setting the **Simplify cross-platform IAP** toggle **(1)**.
+1. Make sure to enable the **Service**, by setting the **Simplify cross-platform IAP** toggle.
 
-- Then select the **Continue** button **(2)**.
+2. Then select the **Continue** button.
 
 ![Enable UnityIAP service](media/tutorials/enable-unity-iap-service.png)  
 
 A page with a list of plugins will appear.
 
-- Select the **Import** button **(1)**.
+1. Select the **Import** button.
 
 ![UnityIAP service - Import plugins](media/tutorials/import-plugins-unity-iap.png)  
 
 Continue the Unity install, and import procedure up to the point where it has imported all the plugins.
 
-- Verify that the plugins are in place **(1)**.
-- Then create a new script **(2)**, called **AndroidIAPExample.cs**.
+1. Verify that the plugins are in place.
+2. Then create a new script, called **AndroidIAPExample.cs**.
 
 ![UnityIAP Create new script](media/tutorials/create-new-script-unity-iap.png)  
 
@@ -293,18 +293,19 @@ public class GooglePurchase {
 }
 ```
 
-- Create a new **Game** object called **Code (1)**.
-- Add the `AndroidIAPExample` component to it **(2)** **(3)**.
-- Make sure to **Save** the scene **(4)**.
+1. Create a new **Game** object called **Code**.
+2. Add the `AndroidIAPExample` component to it (2-step process).
+3. Add the `AndroidIAPExample` component to it.
+4. Make sure to **Save** the scene.
 
 ![UnityIAP create example game object](media/tutorials/create-example-game-object-unity-iap.png)  
 
 Finally, navigate to **Build Settings**.
 
-- Verify that your scene has been added to the **Scenes In Build** area **(1)**.
-- Make sure that the **Android** platform has been selected **(2)**.
-- Move to the **Player Settings** area **(3)**.
-- Assign your **Package Name (4)**.
+1. Verify that your scene has been added to the **Scenes In Build** area.
+2. Make sure that the **Android** platform has been selected.
+3. Move to the **Player Settings** area.
+4. Assign your **Package Name**.
 
 > [!NOTE]
 > Make sure to come up with your *own* package name to avoid any **PlayMarket** collisions.
@@ -333,15 +334,15 @@ Useful notes:
 
 Once you have the application build published:
 
-- Select **In-app products** from the menu **(1)**.
-- If you are asked for a **Merchant Account**, link or create one.
-- Select the **Add New Product** button **(2)**.
+1. Select **In-app products** from the menu.
+   - If you are asked for a **Merchant Account**, link or create one.
+2. Select the **Add New Product** button.
 
 ![PlayMarket add new product](media/tutorials/playmarket-add-new-product.png)  
 
-- On this screen, select **Managed Product (1)**.
-- Give it a descriptive **Product ID (2)**.
-- Select **Continue (3)**.
+1. On this screen shown below, select **Managed Product**.
+2. Give it a descriptive **Product ID**.
+3. Select **Continue**.
 
 ![PlayMarket add product ID](media/tutorials/playmarket-add-product-id.png)  
 
@@ -351,34 +352,35 @@ We will grab **Data Item** data exclusively from the PlayFab service, and only r
 
 ![PlayMarket add product title description](media/tutorials/playmarket-add-product-title-description.png)  
 
-Scroll further and select the **Add a price** button **(1)**.
+1. Scroll further and select the **Add a price** button.
 
 ![PlayMarket add product price](media/tutorials/playmarket-add-product-price.png)  
 
-- Enter a valid price **(1)** (notice how price is converted for each country independently).
-- Select the  **Apply** button **(2)**.
+1. Enter a valid price (notice how price is converted for each country independently).
+2. Select the **Apply** button.
 
-![PlayMarket add product apply local prices](media/tutorials/playmarket-add-product-apply-local-prices.png)  
+![PlayMarket add product apply local prices](media/tutorials/playmarket-add-product-apply-local-prices.png)
 
-Finally, scroll back to the top of your screen, and change the status of the item to **Active (1)**.
+1. Finally, scroll back to the top of your screen, and change the status of the item to **Active**.
 
 ![PlayMarket make product active](media/tutorials/playmarket-make-product-active.png)  
 
-While this concludes configuring the app, we need a couple more tweaks:
+While this concludes configuring the app, we need a couple more tweaks. First, let us save the **Licensing Key** (this will come in handy for linking PlayFab with PlayMarket.
 
-- First, let us save the **Licensing Key** (this will come in handy for linking PlayFab with PlayMarket.
-- Navigate to **Services & APIs** in the menu **(1)**.
-- Then locate and save the **Base64** version of the **Key (2)**.
+1. Navigate to **Services & APIs** in the menu.
+2. Then locate and save the **Base64** version of the **Key**.
 
 ![PlayMarket save product licensing key](media/tutorials/playmarket-save-product-licensing-key.png)
 
 The next step is enabling IAP testing. While sandbox is automatically enabled for Alpha and Beta builds, we need to set up accounts that are authorized to test the app:
 
-- Navigate to **Home (1)**.
-- Locate and select the **Account details (2)** in the menu to the left.
-- Locate the **License Testing** area **(3)**.
-- Verify that your **Test Accounts** are in the list **(4)** and that the **License Test Response** is set to **RESPOND_NORMALLY (5)**.
-- *Don't* forget to apply the settings.
+1. Navigate to **Home**.
+2. Locate and select the **Account details** in the menu to the left.
+3. Locate the **License Testing** area.
+4. Verify that your **Test Accounts** are in the list.
+5. Make sure the **License Test Response** is set to **RESPOND_NORMALLY**.
+
+Don't forget to apply the settings!
 
 ![PlayMarket enable IAP testing](media/tutorials/playmarket-enable-iap-testing.png)  
 
@@ -388,27 +390,27 @@ The Play Market side of the integration should be set up at this point.
 
 Our last step is configuring a PlayFab title to reflect our products, and integrate with the Google Billing API.
 
-- Select **Add-ons** from the menu **(1)**.
-- Then select the **Google** add-on **(2)**.
+1. Select **Add-ons** from the menu.
+2. Then select the **Google** add-on.
 
 ![PlayFab open Google Add-on](../../authentication/platform-specific-authentication/media/tutorials/google-html5/open-google-add-on.png)  
 
-- Fill in your **Package ID (1)**.
-- Fill in the **Google App License Key (2)** that you acquired in the previous section.
-- Commit your changes by selecting the **Install Google** button **(3)**.
+1. Fill in your **Package ID**.
+2. Fill in the **Google App License Key** that you acquired in the previous section.
+3. Commit your changes by selecting the **Install Google** button.
 
 ![PlayFab install Google Add-on](media/tutorials/playfab-install-google-add-on.png)  
 
 Our next step is reflecting our Golden Sword item in PlayFab:
 
-- Select **Economy** from the menu **(1)**.
-- Verify that the **Catalogs** sub-tab **(2)** is selected.
-- Select the **New Catalog** button **(3)**.
+1. Select **Economy** from the menu.
+2. Verify that the **Catalogs** sub-tab is selected.
+3. Select the **New Catalog** button.
 
 ![PlayFab open new Catalog](media/tutorials/playfab-open-new-catalog.png)  
 
-- Provide a **Version Name** for the **Catalog (1)**.
-- Select the **Save Catalog** button **(2)**.
+1. Provide a **Version Name** for the **Catalog**.
+2. Select the **Save Catalog** button.
 
 ![PlayFab save Catalog](media/tutorials/playfab-save-catalog.png)  
 
@@ -416,25 +418,26 @@ If the catalog has no items, it is *automatically* removed. That's why any new c
 
 We can *always* create a *new* item, but to keep things clean, let's modify the existing **One** item.
 
-- Select the **Item ID** entry **(1)** from the column.
+1. Select the **Item ID** entry from the column.
 
 ![PlayFab open Catalog Item](media/tutorials/playfab-open-catalog-item.png)  
 
-- Set the **Item ID (1)** to match exactly with the ID in PlayMarket.
-- Next, give a **Display name (2)** and **Description (3)** to your **Item**.
+1. Set the **Item ID** to match exactly with the ID in PlayMarket.
+2. Give a **Display name** to your **Item**.
+3. Give a **Description** to your **Item**.
 
   > [!NOTE]
   > Keep in mind that this data has *nothing to do* with the **Play Market Item Title** and **Description** - it is *totally* independent.
 
-- Assign a **Price (4)** to your **Item**.
+4. Assign a **Price** to your **Item**.
 
 In this tutorial, IAP mainly refers to purchases for real money. That's why we use **RM** - special Real Money currency. The PlayFab amount is defined in US Cents.
 
-- Select the **Save Item** button **(5)** to commit your changes.
+5. Select the **Save Item** button* to commit your changes.
 
 ![PlayFab Edit and Save Catalog Item](media/tutorials/playfab-edit-save-catalog-item.png)  
 
-Observe your item in the **Item ID** list **(1)**.
+1. Observe your item in the **Item ID** list.
 
 ![PlayFab Catalog Items list](media/tutorials/playfab-catalog-items-list.png)  
 

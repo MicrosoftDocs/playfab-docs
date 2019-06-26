@@ -16,7 +16,7 @@ ms.localizationpriority: medium
   - There are many ways for players to gain information about alternate stores.
   - Players naturally transition between segments, and see those changes when they transition.
   - Players discuss content on forums, community sites, wikis, etc.
-  - In the PlayFab API, store information is *public*, unless you disable those APIs with our [API Access Policy](../../config/gamemanager/api-access-policy.md)
+  - In the PlayFab API, store information is *public*, unless you disable those APIs with our [API Access Policy](../../config/gamemanager/api-access-policy.md).
   - You should assume that players will be aware of other stores and their details.
 
 - Provide varying content, *not* varying pricing.
@@ -24,7 +24,7 @@ ms.localizationpriority: medium
     - Prices go up or down when they transition segments.
     - Prices described on wikis are different than their own.
   - The only exception to the pricing rule would be *first time* purchases.
-    - You must secure the client API methods with our [API Access Policy](../../config/gamemanager/api-access-policy.md) to prevent multiple purchases, or make repurchasing less meaningful through game design.
+    - You must secure the Client API methods with our [API Access Policy](../../config/gamemanager/api-access-policy.md) to prevent multiple purchases, or make repurchasing less meaningful through game design.
 
 - Content should be relevant to the segment.
   - Whales are willing to spend large amounts of real money, and are therefore likely to buy more expensive bundles, if the value is worthwhile.
