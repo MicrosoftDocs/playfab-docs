@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # SDK Generator
 
-![SDK Generator](./media/sdk_generator1.png)
+![SDK Generator](./media/sdk-generator.png)
 
 Our SDK Generator provides everything you need to build your own SDK. Internally, we use this generator to automate our many SDKs.
 

@@ -33,7 +33,7 @@ For your clients to receive any events via PubSub, you must first configure the 
 
 Open **Game Manager**, and navigate to the **Settings** tab on the left, then to the **PubSub** tab on the top.
 
-![Screenshot of PubSub Policy configuration page.](images/PubSub_policy_list_UI_v2.png)
+![Screenshot of PubSub Policy configuration page.](images/pubsub-policy-list-ui-v2.png)
 
 If you are using a title with access to PubSub, this page provides you with a list of any existing PubSub policies configured for your title as well as the ability to modify those policies or create new ones.  If you don't see this tab, your title has not been given access to the PubSub preview.
 
@@ -41,7 +41,7 @@ If you are using a title with access to PubSub, this page provides you with a li
 
 To create a new PubSub policy, select the **NEW POLICY** button at the top right of the page. This opens up a **New Policy** screen, which should look like the example provided below.
 
-![Screen shot of the new PubSub policy configuration page](images/pubsub_new_policy_page.png)
+![Screen shot of the new PubSub policy configuration page](images/pubsub-new-policy-page.png)
 
 For standard PlayFab events, select **Type** of Standard and choose your event from the drop-down to indicate what sort of event you wish to configure (standard events are under `playfab.*` namespaces).
 
