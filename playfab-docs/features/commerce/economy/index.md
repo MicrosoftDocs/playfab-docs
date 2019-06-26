@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Economy
 
-Making your economy work is one of the biggest challenges in games. You want to balance between what can be earned in game and what can be purchased. You want to support highly engaged players and those with light engagements. You want to support different store placements and sales events based on player segments.
+Making your economy work is one of the biggest challenges in games. You need to balance between what can be earned in game and what can be purchased, while supporting both highly engaged players and those with light engagements. You want to support different store placements and sales events based on player segments.
 
 ## Key concepts  
 

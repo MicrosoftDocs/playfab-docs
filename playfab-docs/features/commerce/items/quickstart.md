@@ -40,7 +40,7 @@ To access these features and create a virtual currency:
 
 ## Giving virtual currency to a player
 
-You can give players virtual currency directly, so let's add money to a player using the Game Manager:
+You can give players virtual currency directly. As an example, let's add money to a player using the Game Manager:
 
 1. Select **Players** on the left side bar, then select the **ID** of a player.
 2. Go to the player's **Virtual Currency** tab.
@@ -97,7 +97,7 @@ Let's use the PlayFab APIs to make a purchase in your game.
    - `VirtualCurrency = "GD"`
    - `Price = 5`
 
-5. Finally, call [GetUserInventory](xref:titleid.playfabapi.com.client.playeritemmanagement.getuserinventory) and take a look at the result of that method. In the array of items in the player's `Inventory` - you should see an apple!
+5. Finally, call [GetUserInventory](xref:titleid.playfabapi.com.client.playeritemmanagement.getuserinventory) and take a look at the result of that method. In the array of items in the player's inventory, you should see an apple!
 
 ## Confirming that the purchase was successful
 

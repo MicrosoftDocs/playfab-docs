@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Economy quickstart
 
-Making monetization work is one of the biggest challenges of games. PlayFab simplifies this for you, by building on top of three foundational pieces: Currencies, Items, and Inventory.
+Making monetization work is one of the biggest challenges in games. PlayFab simplifies this for you, by building on top of three foundational pieces: Currencies, Items, and Inventory.
 
 In this quickstart, you will:
 
@@ -83,10 +83,10 @@ Let's use the PlayFab APIs to add an item to a player's inventory by purchasing 
 
 Once you have a Catalog with Items supported by Virtual Currencies, you can light up your economy with:
 
-- **Real World Purchases**: our [Getting started with PlayFab, Unity IAP, and Android](getting-started-with-unity-iap-android.md) and our [Non-receipt payment processing](non-receipt-payment-processing.md) tutorials help you connect your virtual economy with existing stores.
-- **Leveraging your Catalog**: to create Bundles, Containers and Drop Tables. For more information, see our [Catalogs](../items/catalogs.md) tutorial.
-- **Using Item attributes**: to define multiple prices and specify stackable, tradable, and limited edition [Items](../items/index.md).
-- **Setting up unique in-game vendors or Sales events**: using [Stores and Sales](../stores/stores-and-sales.md).
-- **Creating some player Segments and use Stores**: to drive different item and bundle offers to your players regardless of where they are in your game lifecycle. For an example, see our [Custom stores for player segments](../stores/custom-stores-for-player-segments.md) tutorial.
-- **Verifying your assumptions**: using [A/B testing](../../analytics/ab-testing/index.md).
-- **Gathering economic data**: enabling you to improve and iterate your game using PlayFab [Reports](../../analytics/reports/index.md).
+- **Real World Purchases**: Our [Getting started with PlayFab, Unity IAP, and Android](getting-started-with-unity-iap-android.md) and our [Non-receipt payment processing](non-receipt-payment-processing.md) tutorials help you connect your virtual economy with existing stores.
+- **Leveraging your Catalog**: To create Bundles, Containers and Drop Tables. For more information, see our [Catalogs](../items/catalogs.md) tutorial.
+- **Using Item attributes**: To define multiple prices and specify stackable, tradable, and limited edition [Items](../items/index.md).
+- **Setting up unique in-game vendors or Sales events**: Using [Stores and Sales](../stores/stores-and-sales.md).
+- **Creating some player Segments and use Stores**: To drive different item and bundle offers to your players regardless of where they are in your game lifecycle. For an example, see our [Custom stores for player segments](../stores/custom-stores-for-player-segments.md) tutorial.
+- **Verifying your assumptions**: Using [A/B testing](../../analytics/ab-testing/index.md).
+- **Gathering economic data**: Enabling you to improve and iterate your game using PlayFab [Reports](../../analytics/reports/index.md).
