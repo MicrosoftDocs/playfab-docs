@@ -24,12 +24,12 @@ PlayFab’s [Player Item Management (Server)](xref:titleid.playfabapi.com.server
 
 - Simple real money or virtual currency purchases of items.
 - Triggered item grants based on buying another item.
-- Locked (with a potentially purchasable key) and unlocked boxes
+- Locked (with a potentially purchasable key) and unlocked boxes.
 - Random result tables.
 - Non-purchasable items that are granted based on events within a game.
 
 > [!NOTE]
-> In catalogs, the currency type of **RM** is reserved for Real Money, which is in cents USD. $1.99 is represented as **RM 199**.
+> In catalogs, the currency type of **RM** is reserved for **real money**, which is in cents USD. $1.99 is represented as **RM 199**.
 
 ## Field reference
 
@@ -86,7 +86,7 @@ The **New Catalog Item** page (shown above) contains these fields:
   - **Is tradable**:
     Indicates whether the item is tradeable via the trade API calls.
   - **Is a token for character creation**:
-  - Indicates whether the item is involved in character creation.
+Indicates whether the item is involved in character creation.
 
 - **PRICES**
   - **Currency**:
