@@ -27,7 +27,7 @@ PlayFab UGC is still in active development. At this point API contracts are gene
 
 ## Pricing
 
-For now there will be no cost to game developers for the use of the UGC. UGC will be charged in the same way other PlayFab services are charged (consumption based similar to other Azure hosted services). More details on pricing will be made available prior to the charges coming into effect.
+For now, there will be no cost to game developers for the use of the UGC. In the future, UGC will be charged in the same way other PlayFab services are charged (consumption based similar to other Azure hosted services). More details on pricing will be made available prior to the charges coming into effect.
 
 ## Limitations
 

@@ -40,13 +40,13 @@ You will need:
 
 To get started, log into your PlayFab account. Once App Center integration is enabled for your title (private preview only), you will see a **Diagnostics** tab in the sidebar.
 
-![diagnostics tab screenshot image](media/diag_tab_screenshot.png)
+![diagnostics tab screenshot image](media/diagnostics-tab-screenshot.png)
 
 Since the add-on has not yet been enabled, you will need to navigate to the add-ons page to turn on the integration.
 
 - In **App Center Diagnostics**, select **Manage Add-Ons**.
 
-![App Center Diagnostics - Manage Add Ons](media/go_to_addons_diag_page.png)
+![App Center Diagnostics - Manage Add Ons](media/go-to-addons-diagnostics-page.png)
 
 Select the install button on the **App Center Add-On** page. You should see the screenshot shown below.
 
@@ -63,4 +63,4 @@ Now you need to link your PlayFab title to your App Center titles.
 
 Your integration is now enabled. If you navigate back to the **Diagnostics** tab, you should see your crash data enabled.
 
-![Diagnostics Tab Dashboard active Image](media/appcenter_gm_dash.png)
+![Diagnostics Tab Dashboard active Image](media/appcenter-gm-dash.png)

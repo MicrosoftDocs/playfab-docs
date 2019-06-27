@@ -114,8 +114,8 @@ void ConsumePotion() {
 
 API call order:
 
-- Server/[GrantItemsToUser](xref:titleid.playfabapi.com.server.playeritemmanagement.grantitemstouser)
-- Client/[UnlockContainerInstance](xref:titleid.playfabapi.com.client.playeritemmanagement.unlockcontainerinstance)
+- PlayFab Server API [GrantItemsToUser](xref:titleid.playfabapi.com.server.playeritemmanagement.grantitemstouser)
+- PlayFab Client API [UnlockContainerInstance](xref:titleid.playfabapi.com.client.playeritemmanagement.unlockcontainerinstance)
 
 First, we must begin with a container defined in our catalog. For our container in this example, we selected a **CrystalContainer**.
 
@@ -179,9 +179,9 @@ Because the player inventory capacity is *not* infinite, this pattern is greatly
 
 There is no built-in API for buying back inventory items from the player, as the process is game-specific. However, you can use the *existing* API methods to craft your own **SellItem** experience:
 
-- **Server/[RevokeInventoryItem](xref:titleid.playfabapi.com.server.playeritemmanagement.revokeinventoryitem)** allows you to remove an inventory item.
+- The PlayFab Server API [RevokeInventoryItem](xref:titleid.playfabapi.com.server.playeritemmanagement.revokeinventoryitem)** allows you to remove an inventory item.
 
-- **Server/[AddUserVirtualCurrency](xref:titleid.playfabapi.com.server.playeritemmanagement.adduservirtualcurrency)** can return an appropriate amount of virtual currency. It is *not* currently possible to return real money through PlayFab API methods.
+- The PlayFab Server API [AddUserVirtualCurrency](xref:titleid.playfabapi.com.server.playeritemmanagement.adduservirtualcurrency)** can return an appropriate amount of virtual currency. It is *not* currently possible to return real money through PlayFab API methods.
 
 > [!NOTE]
 > Items and virtual currencies have a close relationship. For more information, see our [Currencies](../../commerce/economy/currencies.md) tutorial.

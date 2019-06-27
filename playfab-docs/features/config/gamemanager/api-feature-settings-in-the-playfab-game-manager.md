@@ -51,7 +51,7 @@ Surprisingly, it can be useful to disable all API access to your titles.
 If, for example, you are performing a sensitive migration with downtime, stray API requests could cause serious interruptions. If you are retiring your game, this will guarantee your game really is off.
 
 > [!WARNING]
-> Keep in mind, that marking this checkbox will **LITERALLY BREAK YOUR GAME**, so use it with caution!
+> Keep in mind, that marking this checkbox will **literally break your game**, so use it with caution!
 
 Once you have decided you need to turn API access off, and you check the box, all API requests will begin to fail within a few minutes.
 
@@ -88,6 +88,6 @@ However, with obfuscated IPs, banning an exact IP cannot work. Instead, you must
 
 ![Game Manager - Players - Add Ban](media/tutorials/game-manager-players-add-ban.png)  
 
-However, keep in mind this will effectively ban an *entire* IP range.
+Please keep in mind this will effectively ban an *entire IP range*.
 
 This will still ban the bad actor, but other innocent players with similar IP addresses may be affected. Furthermore, existing precise IP bans will cease to be effective.
