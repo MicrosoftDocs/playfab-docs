@@ -27,7 +27,7 @@ Right now, PlayFab only supports API Access Policy. Thus, by definition, it cont
 
 Policies are fetched and updated using API calls from the PlayFab admin APIs (listed under Admin in the [PlayFab API Reference](../../../api-references/index.md)) -  specifically, the [GetPolicy](xref:titleid.playfabapi.com.admin.authentication.getpolicy) and [UpdatePolicy](xref:titleid.playfabapi.com.admin.authentication.updatepolicy) methods.
 
-Since we will be utilizing the admin API, see our tutorial [Getting PlayFab Developer Keys](getting-playfab-developer-keys.md). Developer keys will let you authorize for admin API calls.
+Since we will be utilizing the admin API, please refer to our tutorial [Getting PlayFab Developer Keys](getting-playfab-developer-keys.md). Developer keys will let you authorize for admin API calls.
 
 Each policy contains a list of statements, which act as rules for one or more PlayFab resources.
 
@@ -83,9 +83,9 @@ private void UpdateApiPolicy() {
 }
 ```
 
-- The program will fetch and print the existing **Policy (1)**.
-- Then update the policy **(2)**.
-- Then fetch and print it again **(3)**.
+1. The program will fetch and print the existing **Policy**.
+2. Then update the policy.
+3. Then fetch and print it again.
 
 After you run this code for the first time, the (**C#**) output will look like the example shown below.
 
@@ -95,26 +95,26 @@ As shown in the preceding picture, a policy consists of several [Permission Stat
 
 Each Permission Statement consists of the following items:
 
-[RESOURCE](xref:titleid.playfabapi.com.admin.authentication.updatepolicy#permissionstatement) - A string that uniquely identifies one or more PlayFab resources. To describe the API resource, please use the convention shown below.
+- [RESOURCE](xref:titleid.playfabapi.com.admin.authentication.updatepolicy#permissionstatement) - A string that uniquely identifies one or more PlayFab resources. To describe the API resource, please use the convention shown below.
 
   `pfrn:api--/API-GROUP/API-CALL`
 
-  `API-GROUP` should be replaced with one of PlayFab APIs: `Client`, `Server` or `Admin`
+  `API-GROUP` should be replaced with one of PlayFab APIs: `Client`, `Server` or `Admin`.
 
-  `API-CALL` should be replaced with a concrete API name (ex. **ConfirmPurchase**, **LoginWithTwitch**, **ReportPlayer** etc.
+   `API-CALL` should be replaced with a concrete API name (ex. `ConfirmPurchase`, `LoginWithTwitch`, `ReportPlayer`, etc.
 
   A resource string supports wildcards. The following resource string will match any resource.
 
   `pfrn:api--*`
 
-[ACTION](xref:titleid.playfabapi.com.admin.authentication.updatepolicy#permissionstatement) - A string that describes operation over the resource. Use `*` to match any operation.
+- [ACTION](xref:titleid.playfabapi.com.admin.authentication.updatepolicy#permissionstatement) - A string that describes operation over the resource. Use `*` to match any operation.
 
-[EFFECT](xref:titleid.playfabapi.com.admin.authentication.updatepolicy#permissionstatement) - A string that serves as a rule definition. Use `Allow` or `Deny` to allow or deny operations over the resource.
+- [EFFECT](xref:titleid.playfabapi.com.admin.authentication.updatepolicy#permissionstatement) - A string that serves as a rule definition. Use `Allow` or `Deny` to allow or deny operations over the resource.
 
-[PRINCIPAL](xref:titleid.playfabapi.com.admin.authentication.updatepolicy#permissionstatement) - A string that uniquely identifies the class of the user. Use `*` to match any user.
+- [PRINCIPAL](xref:titleid.playfabapi.com.admin.authentication.updatepolicy#permissionstatement) - A string that uniquely identifies the class of the user. Use `*` to match any user.
 
-[COMMENT](xref:titleid.playfabapi.com.admin.authentication.updatepolicy#permissionstatement) - A user-defined string that serves to provide more information about the policy statement.
+- [COMMENT](xref:titleid.playfabapi.com.admin.authentication.updatepolicy#permissionstatement) - A user-defined string that serves to provide more information about the policy statement.
 
-[APICONDITIONS](xref:titleid.playfabapi.com.admin.authentication.updatepolicy#permissionstatement) - An *optional object* that defines advanced rule conditions, for example - Encryption and Signed Headers.
+- [APICONDITIONS](xref:titleid.playfabapi.com.admin.authentication.updatepolicy#permissionstatement) - An *optional object* that defines advanced rule conditions, for example - Encryption and Signed Headers.
 
 By modifying your policy to use more detailed permission statements, you can set up strong security rules for your application, by only allowing the API you use in your application.

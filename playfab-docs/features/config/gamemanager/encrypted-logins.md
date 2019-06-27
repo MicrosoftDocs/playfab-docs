@@ -14,28 +14,28 @@ ms.localizationpriority: medium
 
 PlayFab allows you to reinforce application security by protecting certain client API calls with custom encryption. This tutorial shows you how to enable encryption for your client.
 
-The method we will be using allows you to protect *any* login API call. Since the process is *always* similar, we only show how to protect *one* particular method: **LoginWithCustomID**.
+The method we will be using allows you to protect *any* login API call. Since the process is *always* similar, we only show how to protect *one* particular method, `LoginWithCustomID`.
 
 > [!IMPORTANT]
 > Login encryption is meant to be used for *all* players after title creation, or not at all. This is *not* a feature that can be enabled at a later date. You must use it from the *very beginning* or not at all. In particular, *encrypted* players will never be able to log in *un-encrypted*, and *non-encrypted* players will never be able to become *encrypted* players.
 
 In this guide we will:
 
-1. Create a player shared secret.
+1. Create a player-shared secret.
 2. Introduce an API Policy rule to enable protection on a certain method.
-3. Change the client to use a player shared key to retrieve the public title key and encrypt the payload.
+3. Change the client to use a player-shared key to retrieve the public title key and encrypt the payload.
 
 > [!NOTE]
 > PlayFab makes the following disclaimer: "All of our API calls are already safely encrypted to modern standards, and the standard API call encryption is everything most customers will need. This feature represents an *additional* layer of security built around making it harder for players to use an unauthorized client. It is *not* foolproof - it merely increases the difficulty bar for hackers. For most developers, the mild security increase will not be worth the extra effort required."
 
-## Creating a player shared secret
+## Creating a player-shared secret
 
-The PlayFab Admin API exposes a method to manage your player shared secrets.
+The PlayFab Admin API exposes a method to manage your player-shared secrets.
 
 > [!NOTE]
 > Creating a new shared secret by a certain name will override the existing key with the same name, if any. In addition, you may have *several* shared secrets registered under different names.
 
-Run the following code to add a player shared secret to your title.
+Run the following code to add a player-shared secret to your title.
 
 ```csharp
 PlayFabSettings.staticSettings.DeveloperSecretKey = "__DEVELOPER_KEY__";
@@ -57,7 +57,7 @@ else
 
 To run this code, you will need a developer key. Please consult the [Getting PlayFab Developer Keys](getting-playfab-developer-keys.md) tutorial to see how to obtain one. You can pick any key name you would like.
 
-This application should print a newly created player shared secret. *Make sure to save it*. If it is lost, you will have to generate a new secret by running the application again.
+This application should print a newly created player-shared secret. *Make sure to save it*. If it is lost, you will have to generate a new secret by running the application again.
 
 The secret looks like this:
 
@@ -155,7 +155,7 @@ Normally, this would log in the user without a problem. However, *now* this API 
 
 We need to modify the client to properly encrypt the call payload. This is done in 2 steps:
 
-1. Use the player shared secret to fetch the title public key.
+1. Use the player-shared secret to fetch the title public key.
 2. Use the title public key to encrypt the payload.
 
 The code shown below illustrates this.
@@ -209,4 +209,4 @@ public static async Task DoEncryptedLogin()
 }
 ```
 
-Once you run the code, you should be able to log in. Keep in mind that once a player shared secret is created, it must be hard coded into your client code, as there is *no way* to fetch or request it by using any API call.
+Once you run the code, you should be able to log in. Keep in mind that once a player-shared secret is created, it must be hard coded into your client code, as there is *no way* to fetch or request it by using any API call.

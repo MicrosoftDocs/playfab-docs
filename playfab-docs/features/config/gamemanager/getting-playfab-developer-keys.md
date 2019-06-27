@@ -16,13 +16,11 @@ A PlayFab developer key is used to authorize an application to use PlayFab admin
 
 ## Acquiring a developer key
 
-In **Game Manager**:
+In **Game Manager**, navigate to your **Title**, then:
 
-- Navigate to your **Title**.
-
-- Select **Settings** on the menu to the left **(1)**.
-- Then select the **Secret Keys** tab **(2)**.
-- Locate the default key **(3)** in the field under the **Secret Key** column on the screen.
+1. Select **Settings** on the menu to the left.
+2. Then select the **Secret Keys** tab.
+3. Locate the default key in the field under the **Secret Key** column on the screen.
 
 ![Game Manager - Secret Keys - Default Key](media/tutorials/game-manager-secret-keys-default-key.png)  
 
@@ -32,10 +30,9 @@ Generally, the default key is sufficient to authorize your application for admin
 
 ![Game Manager - Secret Keys - New Secret Key Button](media/tutorials/game-manager-new-secret-key-button.png)  
 
-- Fill in the title for your **New Key** in the **Name** field provided **(1)**.
-
-- Enter an optional **Expiration Date (2)**.
-- Select the **Save Secret Key** button **(3)**.
+1. Fill in the title for your **New Key** in the **Name** field provided.
+2. Enter an optional **Expiration Date**.
+3. Select the **Save Secret Key** button.
 
 ![Game Manager - Secret Keys - Save New Secret Key](media/tutorials/game-manager-save-new-secret-key.png)  
 

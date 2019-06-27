@@ -161,7 +161,7 @@ FB.ui({
     if (response.payment_id) {
         facebookPurchaseId = response.payment_id;
         payForOrder(); // This is a function call you need to write
-                       // which makes the call to Client/PayForPurchase
+                       // which makes the call to the Client API PayForPurchase
                        // (see below)
     }
 });

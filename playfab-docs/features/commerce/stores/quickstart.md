@@ -106,7 +106,7 @@ Now that you have a store, let's use the PlayFab APIs to buy an item from the st
     - `Price = 2`
 
 > [!TIP]
-> If you don't specify the `StoreId` when calling [PurchaseItem](xref:titleid.playfabapi.com.client.playeritemmanagement.purchaseitem), the purchase is attempted against the catalog price.
+> If you don't specify the **`StoreId`** when calling [PurchaseItem](xref:titleid.playfabapi.com.client.playeritemmanagement.purchaseitem), the purchase is attempted against the catalog price.
 
 ## Confirming the purchase price
 
@@ -127,7 +127,7 @@ Open Game Manager, and confirm that the purchase was made at the store price of 
 
 Now that you've learned how to create and utilize stores in your game, you're ready to explore some more advanced uses of stores.
 
-For example, by using **segments** in conjunction with stores, you can give special prices to certain players without touching your game code.
+For example, by using segments in conjunction with stores, you can give special prices to certain players without touching your game code.
 
 - [Custom stores for player segments](custom-stores-for-player-segments.md)
 - [Best practices for store segmentation](best-practices-for-store-segmentation.md)

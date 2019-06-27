@@ -41,7 +41,7 @@ For example, as of Q3 2017, live services represented roughly *half* of EA’s n
 
 To see the impact that LiveOps can have on game longevity, look no further than the top 10 games by revenue for 2017 and 2018. Fully 80% of the games in the top 10 in 2017 were also in the charts in 2018 - and all of them are operated as services, with a strong emphasis on LiveOps.
 
-![Mobile Revenue](media/wwrevenue.png)
+![Top Games by revenue worldwide 2017-2018](media/top-games-by-revenue-worldwide-2017-2018.png)
 
 ## What is LiveOps?
 
@@ -148,7 +148,7 @@ Smart soft-launching saved Nvizzio’s Roller Coaster Tycoon for Touch from fall
 
 At the time of soft-launch, the game was seeing 65% player loss on day one. The team dug into the data, and realized that their tutorial was too complex. So the team changed the flow of the tutorial. By the time they released worldwide, the game topped the charts during release week.
 
-![Tycoon Example](media/tycoon.png)
+![Tycoon Example](media/tycoon-example.png)
 
 ### Launch
 

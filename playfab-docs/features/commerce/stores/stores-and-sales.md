@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Stores and sales
 
-In PlayFab, **Stores** are built upon [Catalogs](../items/catalogs.md) and [Currencies](../economy/currencies.md). Your primary catalog should define all of the items in your game and assign them prices in the currencies that you've created.
+In PlayFab, Stores are built upon [Catalogs](../items/catalogs.md) and [Currencies](../economy/currencies.md). Your primary catalog should define all of the items in your game, and assign them prices in the currencies that you've created.
 
 Stores should define subsets of the items in your catalog, and make them available for purchase at specific prices that can be different than the catalog prices.
 
