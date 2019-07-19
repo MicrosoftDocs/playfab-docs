@@ -3,7 +3,7 @@ title: Event Archiving V2
 author: mafonten
 description: Shows step-by-step how to configure PlayFab event archiving from scratch to output data to Azure Blob Storage or Amazon S3 bucket.
 ms.author: mafonten
-ms.date: 04/18/2019
+ms.date: 07/01/2019
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, analytics, metrics, events
@@ -13,13 +13,13 @@ ms.localizationpriority: medium
 # Event Archiving (preview)
 
 > [!IMPORTANT]
-> This feature is currently in **Private Preview**.  
+> This feature is currently in **Private Preview**.
 >
-> It is provided to give you an early look at an upcoming feature, and to allow you to give us feedback while it is still in development.  
+> It is provided to give you an early look at an upcoming feature, and to allow you to give us feedback while it is still in development.
 >
 > Access to this feature is restricted to select titles. If you are interested in trying it, please contact us at [helloplayfab@microsoft.com](mailto:helloplayfab@microsoft.com).
 
- Event Archive (preview) can be used to get your events out of PlayFab and into your Azure Blob Storage (ABS) account or Amazon Simple Storage Service (S3) bucket. Event Archive allows you to decide which of your title’s events to export, and how often. The events are dropped in [JSONL format](#event-output-format), with each event in its own individual file.
+ Event Archive (preview) can be used to get your events out of PlayFab and into your Azure Blob Storage (ABS) account or Amazon Simple Storage Service (S3) bucket. Event Archive allows you to decide which of your title’s events to export, and how often. The events are dropped in [JSONL format](#event-output-format), all combined in a single file.
 
 This tutorial shows you how to configure event archiving from scratch.
 
@@ -33,7 +33,7 @@ This tutorial shows you how to configure event archiving from scratch.
 
 ### Viewing Your Events
 
-Before you begin, visit the [Event History](event-history.md) section to learn how to find all the events your title has sent. Event archiving allows you to select which of those events you wish to export. You may export any standard and custom events, up to 250 total per archive (see [Limits and Notes](#limits-and-notes)).
+Before you begin, visit the [Event History](event-history.md) section to learn how to find all the events your title has sent. Event archiving allows you to select which of those events you wish to export. You may export any standard and custom events.
 
 #### Example events
 
@@ -41,12 +41,12 @@ Before you begin, visit the [Event History](event-history.md) section to learn h
 
 #### Event format
 
-![Event Archive - Event History - Sample Event](media/tutorials/event-archive-event-history-sample-event.png)  
+![Event Archive - Event History - Sample Event](media/tutorials/event-archive-event-history-sample-event.png)
 
 ### Event Output Format
 
 The files we output to your storage system have a maximum size of 1GB. They are given the following naming format:
-`{eventName}_{unique identifier}.json`, where the unique identifier is `{digit(s)}_{guid}`. The files contain a list of events formatted in JSONL (see example below). The contents of the JSON should match what you see when digging into events in event history.
+`events.all_{unique identifier}.json`, where the unique identifier is `{digit(s)}_{guid}`. The files contain a list of events formatted in JSONL (see example below). The contents of the JSON should match what you see when digging into events in event history.
 
 > [!NOTE]
 > Events are separated by newline characters rather than commas. Learn more about the JSONL format here: <http://jsonlines.org/.>
@@ -55,33 +55,21 @@ The files we output to your storage system have a maximum size of 1GB. They are 
 
 ```json
 {
-    "Export": {
-        "ver": "3.0",
-        "name": "player_logged_in",
-        "time": "2019-04-18T00:48:31.6936829Z",
-        "popSample": 0.0,
-        "iKey": "",
-        "flags": 1,
-        "tags": "{}",
-        "EventName": "player_logged_in",
-        "Platform": "AndroidDevice",
-        "PlatformUserId": "794048642ecd3e03",
-        "Location_ContinentCode": "NA",
-        "Location_CountryCode": "US",
-        "Location_City": "Benicia",
+    "EventData": {
+        "PlayFabEnvironment": {
+            ...
+        },
         "EventNamespace": "com.playfab",
         "EntityType": "player",
+        "SourceType": "BackEnd",
+        "EventName": "player_created",
+        "Timestamp": "2019-07-01T18:57:41.8536624Z",
+        "EntityId": "C721B22EA883D00E",
+        "TitleId": "4B50EC3D",
+        "EventId": "4ef5df95861740d87a5dcbf1424a78efc",
         "Source": "PlayFab",
-        "TitleId": "",
-        "EntityId": "",
-        "EventId": "",
-        "Timestamp": "2019-04-18T00:48:28.5332232Z"
-    }
-    "Export": {
-        "ver": "3.0",
-        "name": "player_logged_in",
-        ...
-        "Timestamp": "2019-04-18T00:48:28.5332232Z"
+        "PublisherId": "93D92F3F10FE4848",
+        "Created": "2019-07-01T18:57:41.8536624Z"
     }
 }
 ```
@@ -96,8 +84,8 @@ The frequency you select will affect how often your data is output. A frequency 
 ### Limits and Notes
 
 - Event archiving does not support archiving historical data. It only archives data starting when the archive is created.
-- There is a limit of 250 events per archive and 3 *active* archives per title. You may request to have this limit increased by reaching out to the PlayFab team.
-- Event archiving V2 does not support subdividing outputs by date (e.g. /2019/04/22/my_event_1.json).
+- There is a limit of 3 *active* archives per title. You may request to have this limit increased by reaching out to the PlayFab team.
+- Event archiving (Preview) does not support subdividing outputs by date (e.g. /2019/04/22/events.all_1.json).
 - Event archiving to Azure blob storage does not support SAS tokens.
 - Event archiving does not guarantee that each record will be written only once. The output may contain duplicates if a failure (rare) occurs during an export.
 
@@ -127,26 +115,24 @@ This brings you to a **New Event Archive** page where you:
     - Access key id: use the one you obtained while configuring access to the Amazon account.
     - Secret Key: use the one you obtained while configuring access to the Amazon account.
 - Choose which events you wish to archive, or archive all events.
-
->[!NOTE]
-> Any new events sent by your titles will *not* automatically be exported. You will have to come back and add the event to your archive.
-
-- To choose all events, select **Archive all events up to today** (see [Limits and Notes](#limits-and-notes)).
+  - To choose all events, select **Archive all events**
   - To select *specific* events:
-    - Un-select **Archive all events up to today**.
+    - Un-select **Archive all events**.
     - Select **+ Add**.
     - Select your event from the drop-down.
+    > [!NOTE]
+    > If you select "Archive All", any new events types sent by your titles will also automatically be exported.
   - Select the frequency at which you wish to archive your events.
   - Select whether you want this archive to be active or inactive (aka **enabled**/**disabled**). By default, new archives are set to active.
 
-Select the **Save Settings** button when everything is in place. **This operation can take up to a couple minutes, depending on how many events you are archiving.**
+Select the **Save Settings** button when everything is in place.
 
 > [!NOTE]
 > The same flow applies for editing an existing event archive. **Your key will be encrypted and you can never view it again.**
 
 #### Azure Blob Storage Example
 
-![New Archive Blob Storage UI](media/tutorials/event-archive-azure-blob-ui.png)  
+![New Archive Blob Storage UI](media/tutorials/event-archive-azure-blob-ui.png)
 
 ## Testing your Archive
 
@@ -157,7 +143,7 @@ To ensure everything is working properly, make sure to post some events. Wait fo
 ## Monitoring your Archives
 
 Once your archive is created, you will see it on the home page of your event archives, as seen below.
-![Archive Index Page](media/tutorials/event-archive-index-page.png)  
+![Archive Index Page](media/tutorials/event-archive-index-page.png)
 
 Your archive will show as **Pending** until data starts being exported, at which point it will update to **Succeeded** or **Failed**. This page also shows you how much data was exported by a given archive.
 
@@ -165,6 +151,6 @@ Your archive will show as **Pending** until data starts being exported, at which
 
 You can see the status of a given event by going to the archive details page. The status and failures will be displayed on the archive details page below the events, as shown below.
 
-![Archive No Failures](media/tutorials/event-archive-failures.png)  
+![Archive No Failures](media/tutorials/event-archive-failures.png)
 
 Selecting the **FAILURES** icon will display the error report. A green check mark indicates that there are no ongoing errors and your data is archiving properly.
