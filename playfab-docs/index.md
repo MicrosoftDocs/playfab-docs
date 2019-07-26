@@ -857,6 +857,48 @@ featureFlags:
                         </ul>
                     </li>
                     <li>
+                        <a href="#insights">Insights</a>
+                        <ul id="insights" class="cardsF">
+                            <li class="fullSpan">
+                                <h2>PlayFab Insights Features (FPO)</h2>
+                            </li>
+                            <li>
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardImageOuter">
+                                                <div class="cardImage">
+                                                    <img src="/gaming/playfab/features/media/feature-reports.svg" alt="PlayFab Insights Features: Explorer card FPO" />
+                                                </div>
+                                            </div>
+                                            <div class="cardText">
+                                                <h3>Explorer</h3>
+                                                <p style='color: #7f7f7f'>Discover insights in your data from Game Manager using the Explorer feature. Whether you're an expert or brand new to authoring queries, Explorer is for you.</p><p><a href='/gaming/playfab/features/insights/explorer/'>Overview</a></p><p><a href='/gaming/playfab/features/insights/explorer/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/insights/explorer/tutorials'>Tutorials</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardImageOuter">
+                                                <div class="cardImage">
+                                                    <img src="/gaming/playfab/features/media/feature-ab-testing.svg" alt="PlayFab Analytics Features: A/B Testing card image" />
+                                                </div>
+                                            </div>
+                                            <div class="cardText">
+                                                <h3>Schemas</h3>
+                                                <p style='color: #7f7f7f'>Familiarize yourself with the data and data products available out-of-the-box in Insights for use in your analysis.</p><p><a href='/gaming/playfab/features/insights/schemas/'>Overview</a></p><p><a href='/gaming/playfab/features/insights/schemas/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/insights/schemas/tutorials'>Tutorials</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
                         <a href="#engagement">Engagement</a>
                         <ul id="engagement" class="cardsF">
                             <li class="fullSpan">

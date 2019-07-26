@@ -11,6 +11,8 @@
     href: index.md?#pivot=documentation&panel=data
   - name: Config
     href: index.md?#pivot=documentation&panel=config
+  - name: Insights
+    href: index.md?#pivot=documentation&panel=insights
   - name: Automation
     href: index.md?#pivot=documentation&panel=automation
   - name: Social
