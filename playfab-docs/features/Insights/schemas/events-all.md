@@ -10,7 +10,7 @@ keywords: playfab, insights, schemas
 ms.localizationpriority: medium
 ---
 
-# The events.all table
+# About the events.all table
 
 The events.all table is the destination for all incoming events regardless of the ingestion pipeline 
 they come through. This table powers several features on Game Manager, including Event History and Explorer. 
