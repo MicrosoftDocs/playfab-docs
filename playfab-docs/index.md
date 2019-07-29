@@ -860,7 +860,7 @@ featureFlags:
                         <a href="#insights">Insights</a>
                         <ul id="insights" class="cardsF">
                             <li class="fullSpan">
-                                <h2>PlayFab Insights Features (FPO)</h2>
+                                <h2>PlayFab Insights</h2>
                             </li>
                             <li>
                                 <div class="cardSize">
@@ -868,7 +868,7 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/gaming/playfab/features/media/feature-reports.svg" alt="PlayFab Insights Features: Explorer card FPO" />
+                                                    <img src="/gaming/playfab/features/media/feature-reports.svg" alt="PlayFab Insights Features: Explorer card" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -885,7 +885,7 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/gaming/playfab/features/media/feature-ab-testing.svg" alt="PlayFab Analytics Features: A/B Testing card image" />
+                                                    <img src="/gaming/playfab/features/media/feature-schemas.svg" alt="PlayFab Insights Features: Schemas card" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
