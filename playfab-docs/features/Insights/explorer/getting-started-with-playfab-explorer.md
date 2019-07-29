@@ -10,7 +10,7 @@ keywords: playfab, insights, explorer
 ms.localizationpriority: medium
 ---
 
-# Using the PlayFab Explorer
+# Getting Started with PlayFab Explorer
 
 >[!IMPORTANT] 
 >The Explorer Feature is in public preview. We anticipate ongoing changes to it as we continue gathering feedback 
