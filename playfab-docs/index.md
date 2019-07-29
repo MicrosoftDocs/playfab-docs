@@ -860,7 +860,7 @@ featureFlags:
                         <a href="#insights">Insights</a>
                         <ul id="insights" class="cardsF">
                             <li class="fullSpan">
-                                <h2>PlayFab Insights</h2>
+                                <h2>PlayFab Insights Features</h2>
                             </li>
                             <li>
                                 <div class="cardSize">
