@@ -358,13 +358,33 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>Analytics</h3>
-                                                <p><a href='/gaming/playfab/features/analytics/metrics/quickstart'>Metrics</a></p><p><a href='/gaming/playfab/features/analytics/reports/quickstart'>Reports</a></p><p><a href='/gaming/playfab/features/analytics/ab-testing/quickstart'>A/B Testing</a></p><p><a href='/gaming/playfab/features/analytics/segmentation/quickstart'>Segmentation</a></p><p><a href='/gaming/playfab/features/analytics/data-warehouse/quickstart'>Insights</a></p><p><a href='/gaming/playfab/features/analytics/xbox-data/quickstart'>Xbox Data Add On</a></p><p><a href='/gaming/playfab/features/analytics/diagnostics/quickstart'>Diagnostics with App Center</a></p>
+                                                <p><a href='/gaming/playfab/features/analytics/metrics/quickstart'>Metrics</a></p><p><a href='/gaming/playfab/features/analytics/reports/quickstart'>Reports</a></p><p><a href='/gaming/playfab/features/analytics/ab-testing/quickstart'>A/B Testing</a></p><p><a href='/gaming/playfab/features/analytics/segmentation/quickstart'>Segmentation</a></p><p><a href='/gaming/playfab/features/analytics/xbox-data/quickstart'>Xbox Data Add On</a></p><p><a href='/gaming/playfab/features/analytics/diagnostics/quickstart'>Diagnostics with App Center</a></p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </li>
                             <li>
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardImageOuter">
+                                                <div class="cardImage">
+                                                    <img src="/gaming/playfab/media/quickstart-insights.svg" alt="PlayFab Quickstarts: Insights card image" />
+                                                </div>
+                                            </div>
+                                            <div class="cardText">
+                                                <h3>Insights</h3>
+                                                <p><a href='/gaming/playfab/features/insights/explorer/quickstart'>Explorer</a></p><p><a href='/gaming/playfab/features/insights/schemas/quickstart'>Schemas</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                    <li>
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
