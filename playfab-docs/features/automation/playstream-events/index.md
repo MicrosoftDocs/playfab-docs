@@ -1,7 +1,7 @@
 ---
 title: PlayStream
 description: Landing page for PlayStream.
-ms.author: v-thopra
+ms.author: v-kciril
 ms.date: 06/12/2018
 ms.topic: article
 ms.prod: playfab

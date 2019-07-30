@@ -1,8 +1,8 @@
 ---
 title: Ingestion
-author: kciril
+author: v-kciril
 description: TBD
-ms.author: kciril
+ms.author: v-kciril
 ms.date: 07/23/19    
 ms.topic: article
 ms.prod: playfab
