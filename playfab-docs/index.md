@@ -376,7 +376,7 @@ featureFlags:
                                             <div class="cardText">
                                                 <h3>Insights</h3>
                                                 <p><a href='/gaming/playfab/features/insights/explorer/quickstart'>Explorer</a></p><p><a href='/gaming/playfab/features/insights/schemas/quickstart'>Schemas</a></p>
-                                                a></p>
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
