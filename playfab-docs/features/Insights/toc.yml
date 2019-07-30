@@ -1,0 +1,9 @@
+- name: PlayFab Insights
+  href: /gaming/playfab/?#pivot=documentation&panel=insights
+  expanded: true
+  items:
+  - name: Explorer
+    href: explorer/toc.yml
+  - name: Schemas
+    href: schemas/toc.yml
+ 
