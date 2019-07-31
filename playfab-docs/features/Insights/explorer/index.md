@@ -3,7 +3,7 @@ title: Explorer
 author: belmer831
 description: Overview for PlayFab Explorer
 ms.author: belmer831
-ms.date: 07/23/19    
+ms.date: 07/23/2019    
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, insights, explorer
@@ -25,4 +25,4 @@ Explorer provides fast indexing and querying on large, diverse data sets. For op
 
 Explorer uses a simplified SQL-like language that's easy to pick up and learn. The [intellisense](https://docs.microsoft.com/en-us/azure/data-explorer/write-queries) capabilities make it possible for users of all skill levels to author complex queries and [render](https://docs.microsoft.com/en-us/azure/kusto/query/renderoperator) the results in-line.
 
-Learn how to get started in the [QuickStart](quickstart.md) section. 
+Learn how to get started in the [Quickstart](quickstart.md) section. 
