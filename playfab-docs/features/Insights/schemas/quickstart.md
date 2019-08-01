@@ -3,7 +3,7 @@ title: Schemas quickstart
 author: belmer831
 description: Gets you started with schemas.
 ms.author: belmer831
-ms.date: 07/23/19    
+ms.date: 07/23/2019    
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, insights, schemas

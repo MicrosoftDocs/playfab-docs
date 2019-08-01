@@ -1,9 +1,9 @@
 ---
 title: Ingestion quickstart
-author: kciril
+author: v-kciril
 description: TBD
-ms.author: kciril
-ms.date: 07/23/19    
+ms.author: v-kciril
+ms.date: 07/23/2019    
 ms.topic: article
 ms.prod: playfab
 ROBOTS: NOINDEX,NOFOLLOW

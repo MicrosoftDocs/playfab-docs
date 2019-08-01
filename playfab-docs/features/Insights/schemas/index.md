@@ -3,7 +3,7 @@ title: Schemas
 author: belmer831
 description: Overview of schemas.
 ms.author: belmer831
-ms.date: 07/23/19    
+ms.date: 07/23/2019    
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, insights, schemas
