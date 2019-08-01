@@ -3,7 +3,7 @@ title: Ingestion tutorials
 author: v-kciril
 description: TBD
 ms.author: v-kciril
-ms.date: 07/23/2019    
+ms.date: 07/23/2019 
 ms.topic: article
 ms.prod: playfab
 ROBOTS: NOINDEX,NOFOLLOW
