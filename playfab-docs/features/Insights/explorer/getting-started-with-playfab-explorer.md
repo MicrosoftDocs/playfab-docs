@@ -32,23 +32,23 @@ The `events.all` table is the default destination for all incoming events. It is
 A query expression most commonly begins with the name of the table. This is followed by the pipe delimiter (|). 
 Next comes one or more operators. Each operator is separated by the pipe delimiter. 
 
-![Explorer interface](media/Explorer4-02.png)
+![Expression](media/Explorer4-02.png)
 
 As a matter of preference, a query can be expressed on a single line or using a line return before each pipe delimiter. It makes no difference to the query itself.
 
-![Explorer interface](media/Explorer5-02.png)
+![Query pane](media/Explorer5-02.png)
 
 The Query pane can contain more than one query. This makes it easy to start with a simple expression, validate it runs, and build on it.
 
 A blank line will separate one query from another. Your cursor position determines which query will run when you press the “Run” button. You can also highlight a portion of the query to run only that expression. 
 
-![Explorer interface](media/Explorer6-02.png)
+![Run](media/Explorer6-02.png)
 
 ### Building Your first query
 
 Now let’s author your first query from scratch. You can type the table name into the Query pane. But we’re going to use a little shortcut. Find the `events.all` table in the Resources pane. You may have to expand your title ID database by clicking the arrow.
 
-![Explorer interface](media/Explorer7-01.png)
+![Events.all table](media/Explorer7-01.png)
 
 Once you’ve located the `events.all` table, double click the table name. You’ll notice this expression has been added to the Query pane. 
 
@@ -71,7 +71,7 @@ Run this query. Note that the Results pane now shows 100 rows of raw data.
 
 In the Results pane, click the top row. Using the right arrow, navigate over to the FullName_Name column. This is the name of the event. Arrow down until you find a `player_logged_in` event. Once you’ve found one, right arrow over to the EventData column and double click. You should now see this:
 
-![Explorer interface](media/Explorer8-01.png)
+![Event Data Column](media/Explorer8-01.png)
 
 Your query can reference any properties in the EventData JSON using the dot notation (.). You can try this now by modifying your query to return only player_logged_in events from a single player. Double-click the EntityID GUID and copy it to the clipboard. 
 
@@ -114,7 +114,7 @@ Run this query to get a full list of all log-in events over the past three days.
 
 This query returns a list of Entity IDs who’ve logged in during the past three days. The Results pane shows the number of records, so we can see the total count. 
 
-![Explorer interface](media/Explorer9-03.png)
+![Records](media/Explorer9-03.png)
 
 Now let’s get the count of players who’ve logged in from each platform. To do this, we’ll need the distinct count of Entity IDs grouped by the platform property in the EventData JSON. This requires the `summarize` operator. Because `summarize` does not support dynamic types, we’ll also need to cast platform to a string.  
 
@@ -135,7 +135,7 @@ Let’s finish this off with a flourish. By adding a single additional expressio
 | render columnchart
 ```
 
-![Explorer Interface](media/Explorer10-01.png)
+![Queries](media/Explorer10-01.png)
 
 ## Sample Queries
 
