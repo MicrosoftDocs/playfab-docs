@@ -30,7 +30,7 @@ The first field to edit will usually be the **Query** field, which is constructe
 
 By editing anything within the event type, start date, or end date, the **Query** field itself will be constructed.
 
-![Event Query Field - Date range](media/tutorials/event-query-field-date-range.png)  
+![Event Query Field - Date range](media/tutorials/event-query-auto-populate1.png)  
 
 At this point, the search will result in showing only [player_realmoney_purchase](../../../api-references/events/player-realmoney-purchase.md) events, as shown below.
 
@@ -74,12 +74,8 @@ The constructed **Query** field uses Azure Data Explorer search syntax, meaning 
 
 We can directly substitute the dates in the **Query** field for relative dates, as indicated in the following example.
 
-![Event Query Field - RElative dates](media/tutorials/event-query-field-relative-dates.png)  
+![Event Query Field - RElative dates](media/tutorials/event-query-ago-7d.png)  
 
-Now, if we save the search...
-
-![Event Query Field - Save search](media/tutorials/event-query-field-save-search.png)  
-
-When you select the search from your **Saved Searches** drop-down, your search will be reconstructed, and the dates will be relative to the current time.
+Once we save the search, it will be available from the **Saved Searches** drop-down. By selecting it, your search will be reconstructed, and the dates will be relative to the current time.
 
 ![Event Query - Saved Searches Dropdown](media/tutorials/event-query-saved-searches-dropdown.png)  

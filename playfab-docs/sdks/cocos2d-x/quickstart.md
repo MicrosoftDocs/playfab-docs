@@ -24,11 +24,10 @@ If you are building for other platforms, the files you need are the same, but yo
 
 1. Download and install Cocos2d-x
     - [https://www.cocos2d-x.org/download](https://www.cocos2d-x.org/download)
-    - Setting up Cocos2d-x requires some familiarity. Check out their guides:
-      - [https://cocos2d-x.org/docs/installation/Windows/](https://cocos2d-x.org/docs/installation/Windows/)
-      - [https://cocos2d-x.org/docs/editors_and_tools/cocosCLTool/](https://cocos2d-x.org/docs/editors_and_tools/cocosCLTool/)
-      - Note the [Cocos Prerequisites](https://docs.cocos2d-x.org/cocos2d-x/en/installation/prerequisites.html)
-      - This guide also requires Visual Studio 2013 or 2015.
+    - Setting up Cocos2d-x requires some familiarity. Check out their docs site:
+      - [https://docs.cocos2d-x.org/cocos2d-x/en/en/](https://cocos2d-x.org/docs/cocos2d-x/en/en/)
+      - Note the [Cocos Prerequisites](https://docs.cocos2d-x.org/cocos2d-x/en/en/installation/prerequisites.html?h=prerequisites)
+      - Visual Studio 2013 or 2015 are also required.
 
 2. Once you have Cocos2d-x configured, create a project using the Cocos CLI:
     - Navigate to a location where you wish to store your Cocos project

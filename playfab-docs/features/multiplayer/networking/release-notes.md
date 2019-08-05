@@ -14,6 +14,21 @@ ms.localizationpriority: medium
 
 PlayFab Party is available on [Nuget.org](https://www.nuget.org/profiles/PlayFab)!
 
+## 0.5.0-prerelease
+
+*Released July 18, 2019*
+
+### API Changes
+
+#### Accessible Chat
+* Added support for text-to-speech narration. (see `PartyLocalChatControl::SetTextToSpeechProfile()`)
+* Added more options for controlling when speech-to-text occurs. (see `PartyLocalChatControl::SetTranscriptionOptions()`)
+* Added text-to-text translation to the API, although it is not yet supported. ( see `PartyLocalChatControl::SetTextChatOptions()`)
+* Reduced text-to-speech bandwidth and memory usage.
+
+#### Network access control
+* `PartyNetwork::SetAccessControlList()` and related methods have been removed from the API. Use the new `PartyInvitation` class and related methods to create open invitations or grant access to specific PlayFab users to your Party networks.
+
 ## 0.2.0-pre-release
 
 *Released April 08, 2019*

@@ -68,7 +68,7 @@ $Ports.Name = "game_port"
 $Ports.Num = 3600
 $Ports.Protocol = [PlayFab.MultiplayerModels.ProtocolType]::TCP
 
-New-PFMultiplayerBuild -BuildName "PowerShellTest" -AssetFileName "winrunnerSample.zip" -AssetMountPath "C:\Assets\" -StartMultiplayerServerCommand "C:\Assets\WindowsRunnerCSharp.exe" -MappedPorts $Ports -VMSize $VMSelection
+New-PFMultiplayerBuild -BuildName "PSTest_built"  -StartMultiplayerServerCommand "C:\Assets\WindowsRunnerCSharp.exe" -Ports $Ports -VMSize $VMSelection -AssetReferences $Asset -MultiplayerServerCountPerVm 1 -RegionConfiguration $Regions
 ```
 
 In a few seconds we should see the build through the **PowerShell** or [ListBuildSummaries API](xref:titleid.playfabapi.com.multiplayer.multiplayerserver.listbuildsummaries), as shown below.
