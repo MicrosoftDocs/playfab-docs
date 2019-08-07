@@ -67,6 +67,7 @@ This guide will provide the minimum steps to make your first PlayFab API call, w
 // ConsoleApplication1.cpp : Defines the entry point for the console application.
 //
 
+#include "playfab/PlayFabError.h"
 #include "playfab/PlayFabClientDataModels.h"
 #include "playfab/PlayFabClientApi.h"
 #include "playfab/PlayFabSettings.h"
