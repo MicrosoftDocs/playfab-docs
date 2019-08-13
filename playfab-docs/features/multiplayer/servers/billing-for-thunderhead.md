@@ -37,7 +37,7 @@ To learn more about these different virtual machine please see [Azure VM Sizes](
 | **Network Egress** |Not included | 100 GB | 100 GB | 100 GB |
 | **Storage** |Not included | 50 GB | 50 GB | 50 GB |
 
-## Consumption pricing for PlayFab Multiplayer Servers
+## <a name="consumption-pricing"> Consumption pricing for PlayFab Multiplayer Servers</a>
 
 Games that require Multiplayer Servers will need to purchase additional capacity through PlayFab’s consumption pricing plan. Below are the PlayFab resources used to bill for server utilization:
 
