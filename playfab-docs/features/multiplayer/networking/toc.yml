@@ -11,8 +11,10 @@
     href: pricing.md
   - name: Release Notes
     href: release-notes.md
-- name: Non-windows quickstart
-  href: non-windows-quickstart.md
-- name: Windows quickstart
-  href: quickstart-windows.md
+- name: Quickstarts
+  items:
+  - name: Non-Windows quickstart
+    href: quickstart-non-windows.md
+  - name: Windows quickstart
+    href: quickstart-windows.md
   

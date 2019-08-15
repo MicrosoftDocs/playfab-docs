@@ -772,7 +772,7 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>Party</h3>
-                                                <p style='color: #7f7f7f'>Add real-time networking and chat into your game.</p><p><a href='/gaming/playfab/features/multiplayer/networking/'>Overview</a></p>
+                                                <p style='color: #7f7f7f'>Add real-time networking and chat into your game.</p><p><a href='/gaming/playfab/features/multiplayer/networking/'>Overview</a></p><p><a href='/gaming/playfab/features/multiplayer/networking/quickstart'>Quickstarts</a></p><p><a href='/gaming/playfab/features/multiplayer/networking/tutorials'>Tutorials</a></p>
                                             </div>
                                         </div>
                                     </div>

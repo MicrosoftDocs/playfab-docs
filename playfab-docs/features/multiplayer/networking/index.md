@@ -1,5 +1,5 @@
 ---
-title: Overview of PlayFab Party
+title: PlayFab Party Overview
 author: v-thopra
 description: Introduces the concepts and APIs for PlayFab networking.
 ms.author: v-thopra
@@ -10,7 +10,7 @@ keywords: playfab, multiplayer, networking
 ms.localizationpriority: medium
 ---
 
-# PlayFab Party
+# PlayFab Party Overview
 
 > [!IMPORTANT]
 > This feature is currently in **Private Preview**.  
