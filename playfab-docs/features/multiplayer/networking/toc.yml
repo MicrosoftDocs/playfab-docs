@@ -1,5 +1,9 @@
 - name: Overview
   href: index.md
+- name: Quickstart non-Windows
+  href: quickstart-non-windows.md
+- name: Quickstart Windows
+  href: quickstart-windows.md
   items:
   - name: PlayFab Party speech-to-text UX guidelines
     href: party-speech-to-text-ux-guidelines.md
@@ -11,10 +15,4 @@
     href: pricing.md
   - name: Release Notes
     href: release-notes.md
-- name: Quickstarts
-  items:
-  - name: Non-Windows quickstart
-    href: quickstart-non-windows.md
-  - name: Windows quickstart
-    href: quickstart-windows.md
   

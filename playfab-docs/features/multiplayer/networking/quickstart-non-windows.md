@@ -10,7 +10,7 @@ keywords: playfab, multiplayer, party, networking, communication
 ms.localizationpriority: medium
 ---
 
-# Overview
+# Quickstart for PlayFab Party on Android, iOS, Switch and PS4
 
 This quickstart is intended to be a high-level overview of the facets of PlayFab Party on Platforms other than Windows and Xbox (iOS, Android, Nintendo Switch and PS4). PlayFab Party was designed to be cross-platform from the ground up. 
 
