@@ -1,16 +1,63 @@
 - name: Overview
   href: index.md
-- name: Quickstart non-Windows
-  href: quickstart-non-windows.md
+- name: Quickstarts 
+  items:
+  - name: Quickstart non-Windows
+    href: quickstart-non-windows.md
+  - name: Quickstart Windows
+    href: quickstart-windows.md
+  items:
+  - name: PlayFab Party speech-to-text UX guidelines
+    href: party-speech-to-text-ux-guidelines.md
+  - name: PlayFab Party text-to-speech UX guidelines
+    href: party-text-to-speech-ux-guidelines.md
+  - name: Enabling PlayFab Party
+    href: enable-party.md
+  - name: Pricing
+    href: pricing.md
+  - name: Release Notes
+    href: release-notes.md
+- name: Understanding PlayFab Party
+  href: understanding-party.md
+  items:
+  - name: Core architecture
+    items:
+    - name: Overview
+      href: understanding-party-overview.md
+    - name: PlayFab Party objects and their relationships
+      href: understanding-party-objects.md
+    - name: Invitations and security model
+      href: understanding-party-invitations.md
+    - name: Integrating discovery with PlayFab Party
+      href: understanding-party-discovery.md
+    - name: Understanding chat
+      href: understanding-party-chat.md
+    - name: Asynchronous operations and notifications
+      href: understanding-party-asynchronous-operations.md
+  - name: Effective communication
+    items:
+    - name: Chat permissions and muting
+      href: understanding-party-chat-permissions-and-muting.md
+    - name: Endpoint-to-endpoint data transmission pipeline
+      href: understanding-party-endpoint-transmission.md
+    - name: Text-to-speech profiles
+      href: understanding-party-text-to-speech-profiles.md
+    - name: Connecting to more than one network at a time
+      href: understanding-party-multiple-networks.md
+    - name: Understanding regions
+      href: understanding-party-regions.md
+    - name: Porting existing game code from "Sockets" to PlayFab Party
+      href: party-porting-from-sockets.md
+    - name: PlayStream events
+      href: party-playstream-events.md
+  - name: Environmental considerations and troubleshooting
+    items:
+    - name: Port usage and firewall requirements
+      href: understanding-party-port-usage.md
+    - name: Xbox One XDK network manifest snippet
+      href: understanding-party-xbox-one-xdk-network-manifest.md
+    - name: Troubleshooting tips
+      href: understanding-party-troubleshooting.md
+    - name: Frequently asked questions
+      href: understanding-party-frequently-asked-questions.md
 
-- name: PlayFab Party speech-to-text UX guidelines
-  href: party-speech-to-text-ux-guidelines.md
-- name: PlayFab Party text-to-speech UX guidelines
-  href: party-text-to-speech-ux-guidelines.md
-- name: Enabling PlayFab Party
-  href: enable-party.md
-- name: Pricing
-  href: pricing.md
-- name: Release Notes
-  href: release-notes.md
-  

@@ -1,9 +1,9 @@
 ---
 title: PlayFab Party Overview
 author: v-thopra
-description: Introduces the concepts and APIs for PlayFab networking.
+description: Learn about PlayFab Party real-time chat and data communication libraries for your game.
 ms.author: v-thopra
-ms.date: 07/12/2018
+ms.date: TBD
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, multiplayer, networking
@@ -13,9 +13,9 @@ ms.localizationpriority: medium
 # PlayFab Party Overview
 
 > [!IMPORTANT]
-> This feature is currently in **Private Preview**.  
+> This feature is currently in **Private Preview**.
 >
-> It is provided to give you an early look at an upcoming feature and to allow you to provide feedback while it is still in development.  
+> It is provided to give you an early look at an upcoming feature and to allow you to provide feedback while it is still in development.
 >
 > Access to this feature is restricted to select titles, with SDKs available for Windows 10 PCs and Xbox One. Interoperable SDKs for iOS,  Android, and Nintendo Switch will be available this summer. If you are interested in this feature, please contact us at [helloplayfab@microsoft.com](mailto:helloplayfab@microsoft.com).
 
@@ -203,41 +203,17 @@ void NetworkManager::CreateAndConnectToNetwork(std::vector<std::string>& playerI
         },
     };
 
-    std::vector<PartiesString> additionalIds;
+PlayFab Party is a service and client libraries for enabling safe, low latency, data and chat communication in your multiplayer game across platforms.
+It removes barriers between players through support for real-time *speech-to-text transcription*, *text-to-speech synthesis*, and *language translation*.
+It can be used with other [**PlayFab Multiplayer**](../mpintro.md) features such as [**Matchmaking**](../matchmaking/index.md) for discovering the teammates or opponents that will communicate, and [**Servers**](../servers/index.md) for powering expansive game worlds using custom, centralized logic but that need inter-player voice and text communication (e.g., squad or lobby chat experiences).
+It can also supplement your own player rendezvous, game session management, or data transport technologies.
 
-    DEBUGLOG(L"Additional user ids: \n");
-    for (const auto& id : playerIds)
-    {
-        additionalIds.push_back(id.c_str());
-        DEBUGLOG(L"\t%hs\n", id.c_str());
-    }
+To learn about PlayFab Party features, common concepts, and how they fit together, see the [Understanding PlayFab Party](understanding-party.md) topic.
 
-    PartiesNetworkDescriptor networkDescriptor = {};
+To follow examples of using the libraries in common scenarios, see the [PlayFab Party API Usage Guides](party-usage.md) topic.
 
-    // Create a new network descriptor
-    PartiesManager::GetSingleton().CreateNewNetwork(
-        c_PartiesBuildId,                              // BuildId
-        m_localUser,                                // Local User
-        &cfg,                                       // Network Config
-        1,                                          // Region List Count
-        regionList,                                 // Region List
-        static_cast<uint32_t>(additionalIds.size()),// Additional UserId Count
-        additionalIds.data(),                       // Additional UserId List
-        nullptr,                                    // Async Identifier
-        &networkDescriptor                          // OUT network descriptor
-        );
+For details on parameters, return values, and behaviors when invoking the libraries, see the [PlayFab Party API Reference Documentation](party-reference.md) topic.
 
-    if (Parties_FAILED(err))
-    {
-        DEBUGLOG(L"CreateNewNetwork failed: %hs\n", GetErrorMessage(err));
-        return;
-    }
+To read best practices for user experiences and Microsoft's recommendations around chat and data communication user interfaces, see the [PlayFab Party UX Guidelines](party-ux-guidelines.md) topic.
 
-    // Connect to the new network
-    if (InternalConnectToNetwork(networkDescriptor))
-    {
-        m_state = NetworkManagerState::WaitingForNetwork;
-        m_onnetworkcreated = callback;
-    }
-}
-```
+For information on where to get client libraries and details on service pricing, see the [PlayFab Party Availability and Pricing](party-availability-and-pricing.md) topic.

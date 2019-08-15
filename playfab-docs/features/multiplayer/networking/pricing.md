@@ -13,13 +13,13 @@ ms.localizationpriority: medium
 # Billing for PlayFab Party
 
 > [!IMPORTANT]
-> This feature is currently in **Private Preview**.  
+> This feature is currently in **Private Preview**.
 >
-> It is provided to give you an early look at an upcoming feature, and to allow you to provide feedback while it is still in development.  
+> It is provided to give you an early look at an upcoming feature and to allow you to provide feedback while it is still in development.
 >
-> Access to this feature is restricted to select titles. If you are interested in trying it, please contact us at [helloplayfab@microsoft.com](mailto:helloplayfab@microsoft.com).
+> Access to this feature is restricted to select titles, with SDKs available for Windows 10 PCs and Xbox One. Interoperable SDKs for iOS and Android will be available later in 2019. If you are interested in this feature, you can request access by submitting a ticket on [support.playfab.com](https://support.playfab.com/hc/en-us/requests/new).
 
-Most PlayFab services - such as PlayStream or Matchmaking - are included with every paid PlayFab tier as part of our core offering. However, PlayFab Party is billed on a *consumption* basis. This document describes the billing plan for Party.
+Most PlayFab services, such as PlayStream or Matchmaking, are included with every paid PlayFab tier as part of our core offering. However, PlayFab Party is billed on a consumption basis. This document describes the billing plan for Party.
 
 ## What comes with your basic PlayFab Core Services package?
 
@@ -50,11 +50,11 @@ Usage of voice chat is priced differently if Speech Services are enabled. Speech
 | Party Voice | $0.001 |
 | Party Voice + Speech Services | $0.015 |
 
-In-game chat text messages - even when text-to-text translation or text-to-speech synthesis are activated - do not drive metering and are not billed to your account.
+In-game chat text messages, even when text-to-text translation or text-to-speech synthesis are activated, do not drive metering and are not billed to your account.
 
 ## Network egress
 
-At run time, you can specify which Azure region should host your network. This impacts network egress charges.
+At run-time you can specify which Azure region should host your network. This impacts network egress charges.
 
 | Zone | Regions | $/GB of Network Egress |
 | --- | --- | --- |
