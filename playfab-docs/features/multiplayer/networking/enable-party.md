@@ -69,5 +69,7 @@ For more on the PlayFab Game Manager, see the [Game Manager quickstart](../../co
 
 4. Press the **Save As Revision** button and confirm the changes.
 
+5. Press **Deploy Revision** to make the new revision live.
+
 ![Add CloudScript Functions](media/add-cloudscript-functions.png)
 
