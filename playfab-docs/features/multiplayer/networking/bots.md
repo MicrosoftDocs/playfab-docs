@@ -23,7 +23,7 @@ ms.localizationpriority: medium
 PlayFab Party introduces experimental integration with Azure powered chat bots. These pre-baked personalities connect to the network, and use voice and text to chat with 2-6 connected players.
 
 - **Zo.** Zo helps players in cooperative game modes accomplished shared game objectives. Zo is ideal for “campaign” or “free world” modes. You can connect Zo to a network with 2-4 players.
-- **Mo.** Mo helps players (on a team) in a competitive game mode, for example a 6 player vs. 6 player Team Deathmatch. With Mo, you can connect up to two bot instances to a network with 2-12 connected players, using 1 instance for each team.
+- **Mo.** Mo helps players (on a team) in a competitive game mode, for example a six-player against six-player Team Deathmatch. With Mo, you can connect up to two bot instances to a network with 2-12 connected players, using 1 instance for each team.
 
 Both Zo and Mo can be customized through PlayFab APIs with:
 
@@ -34,6 +34,6 @@ Both Zo and Mo can be customized through PlayFab APIs with:
 
 Using Bot APIs, your multiplayer game host can provide connected Bots with continuous information on player activity, and progress towards shared objectives.
 
-For example, a player damaging another player can be communicated to the Bot, and the Bot can discourage that behavior (“stop killing your teammate!"). A player approaching a “key” or other accomplishment may be encouraged by the bot (“keep going, you’re close!”).
+For example, a player damaging another player can be communicated to the Bot, and the Bot can discourage that behavior (“Stop killing your teammate!"). A player approaching a “key” or other accomplishment may be encouraged by the bot (“Keep going, you’re close!”).
 
-Both Zo and Mo can be configured to monitor player chat for inappropriate communication. Transcripts of worrisome communication can be automatically retained for review by your moderation team.
+Both Zo and Mo can also be configured to monitor player chat for inappropriate communication. Transcripts of worrisome communication can be automatically retained for review by your moderation team.

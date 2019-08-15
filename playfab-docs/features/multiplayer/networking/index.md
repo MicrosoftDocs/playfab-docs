@@ -65,10 +65,10 @@ One of the goals of PlayFab Party (and our other multiplayer services), is to fa
 
 PlayFab Party is oriented around a few key concepts:
 
-- `Network` - A logical representation of a set of interconnected devices participating in a particular multiplayer experience, as well as basic state describing that collection.
-- `Endpoint` - A facility associated with a device that can receive data from other devices and is the source for sending data to other devices.
-- `Network_state_change` - A structure representing a notification to the local device regarding an asynchronous change in some aspect of the network.
-- `StartProcessingStateChanges` and `FinishProcessingStateChanges` - The pair of methods called by the app every UI frame to perform asynchronous operations, to retrieve results to be handled in the form of state_change structures, and then to free the associated resources when finished.
+- **Network** - A logical representation of a set of interconnected devices participating in a particular multiplayer experience, as well as basic state describing that collection.
+- **Endpoint** - A facility associated with a device that can receive data from other devices and is the source for sending data to other devices.
+- **Network_state_change** - A structure representing a notification to the local device regarding an asynchronous change in some aspect of the network.
+- **StartProcessingStateChanges** and **FinishProcessingStateChanges** - The pair of methods called by the app every UI frame to perform asynchronous operations, to retrieve results to be handled in the form of state_change structures, and then to free the associated resources when finished.
 
 At a very high level, the game application uses the PlayFab Party library to configure a set of users signed-in on the local device to be moved into a PlayFab network. The app calls `StartProcessingStateChanges()` and `FinishProcessingStateChanges()` every UI frame.
 

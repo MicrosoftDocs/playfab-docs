@@ -3,7 +3,7 @@ title: Billing for PlayFab Party
 author: v-thopra
 description: Describes the Billing plan for PlayFab Party. (Note - PlayFab Party 1PP Preview was originally called Bumblelion)
 ms.author: v-thopra
-ms.date: 13/12/2018
+ms.date: 8/12/2019
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, multiplayer, party, networking, pricing, billing, bumblelion
@@ -29,21 +29,21 @@ A basic allocation of Party time is included with every paid PlayFab tier: 100 p
 
 There are three key meters used to bill additional Party utilization:
 
-1. **Party Connectivity.** This is measured in player minutes connected to a network. Metering starts when a player creates a network or joins a network, and it stops when they have disconnected.
-2. **Party Voice.** This is measured in player minutes speaking. When a player is connected to a network and is actively speaking, that player voice activity is measured in seconds and metered.
+1. **Party connectivity.** This is measured in player minutes connected to a network. Metering starts when a player creates a network or joins a network, and it stops when they have disconnected.
+2. **Party voice.** This is measured in player minutes speaking. When a player is connected to a network and is actively speaking, that player voice activity is measured in seconds and metered.
 3. **Network egress.** This meters data *sent* from PlayFab's relay and voice servers. This is congruent to the aggregate amount of data that players *receive* from the network.
 
-## Party Connectivity
+## Party connectivity
 
 | SKU | $/player-minute connected to a network |
 | --- | --- |
 | Party Connectivity | $0.0001 |
 
-## Party Voice
+## Party voice
 
 Usage of voice chat is priced differently if Speech Services are enabled. Speech Services enables speech-to-text transcription, speech-to-text translation, and text-to-text translation.
 
-10% of voice minutes can leverage transcription and synthesis for free before the below meter is billed. We recommend tying activation of this capability to an ease-of-access player setting.
+10% of voice minutes can leverage transcription and synthesis for free before the below-meter is billed. We recommend tying activation of this capability to an ease-of-access player setting.
 
 | SKU | $/player-minute speaking |
 | --- | --- |

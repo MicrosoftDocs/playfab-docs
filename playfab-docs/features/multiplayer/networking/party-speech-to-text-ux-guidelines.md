@@ -1,5 +1,5 @@
 ---
-title: PlayFab Party Speech to Text UX Guidelines
+title: PlayFab Party speech-to-text UX guidelines
 author: v-thopra
 description: Describes the PlayFab Party APIs, and focuses on speech-to-text implementation, requirements, and custom console and PC UI solutions.
 ms.author: v-thopra
@@ -10,7 +10,7 @@ keywords: playfab, multiplayer, bumblelion, party, networking, UX, speech to tex
 ms.localizationpriority: medium
 ---
 
-# PlayFab Party Speech-to-Text UX guidelines
+# PlayFab Party speech-to-text (STT) UX guidelines
 
 > [!IMPORTANT]
 > This feature is currently in **Private Preview**.  
@@ -21,7 +21,7 @@ ms.localizationpriority: medium
 
 The PlayFab Party API gives gamers more options for engaging with and enjoying game chat. It provides a means for voice chat to be transcribed to text, and for text input to be converted to synthesized voice. Titles can now surface UI, via either the Xbox or Windows OS or a custom solution within their title.
 
-This document is part two of a two-part series covering UX solutions for Speech-to-Text (STT) and Text-to-Speech (TTS) implementation.
+This document is part two of a two-part series covering UX solutions for speech-to-text (STT) and text-to-speech (TTS) implementation.
 
 [Part one](party-text-to-speech-ux-guidelines.md) focuses on text-to-speech implementation, requirements, console and PC UI solutions, while this topic focuses on speech-to-text implementation, requirements, and custom console and PC UI solutions.
 
@@ -43,7 +43,7 @@ The following chart guides you through scenarios that players will experience wh
 
 ## Understanding the API
 
-### Speech-to-Text
+### Speech-to-text
 
 1. `SetTextToSpeechProfile` (*regional voice selection*):  
    A speech profile can be specified when the chat control is created for the user. It could be changed mid-game (if the title supports it). It will determine the language, dialect, and gender of the transcribed voice output. Refer to the [Language support reference](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/language-support) for a complete list of supported languages and voice options.
@@ -60,16 +60,16 @@ The following chart guides you through scenarios that players will experience wh
    b. **Windows::Xbox::UI::Accessibility::SendSpeechToTextString** (Xbox and Windows only):
    Call the OS generated Chat UI. This feature is rendered by the Xbox or Windows OS.
 
-### Text-to-Speech
+### Text-to-speech
 
 1. `SetTextToSpeechProfile` (*regional voice selection*):  
    The Title needs to set the regional voice/language for the user. This will determine the language, dialect, and gender of the transcribed voice output. Go to the [Language support reference](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/language-support) for a complete list of supported languages and voice options.
 
 2. `SynthesizeTextToSpeech`  
-   The text received will be synthesized and shared with the rest of the chat party. If a game calls **SynthesizedTextToSpeech**, synthesized audio data will appear as though it was captured "naturally" by the audio capture device (microphone) associated with user A (the sender). It’s as if you were holding your microphone up to a computer that’s speaking on the user’s behalf.
+   The text received will be synthesized and shared with the rest of the chat party. If a game calls `SynthesizedTextToSpeech`, synthesized audio data will appear as though it was captured "naturally" by the audio capture device (microphone) associated with user A (the sender). It’s as if you were holding your microphone up to a computer that’s speaking on the user’s behalf.
 
 3. `SendText`  
-   User A submits a text message (`std::string message`) to the chat group. The Title accepts text input from User A via a virtual keyboard, or other text input method. **SendText** sends this message to the chat group.
+   User A submits a text message (`std::string message`) to the chat group. The Title accepts text input from User A via a virtual keyboard, or other text input method. `SendText` sends this message to the chat group.
 
 4. `ChatTextReceived`  
    The group receives the message. Their only property is the sender. The type determination is whether it’s a text message or a transcribed message and that’s done based on which event is fired.
@@ -79,7 +79,7 @@ The following chart guides you through scenarios that players will experience wh
 Users will find TTS and STT settings in the **Accessibility** section under **Settings**, via Xbox Home (console) or Xbox App (Windows 10). For all other platforms, refer to their Accessibility guidelines for TTS/STT locations.
 
 > [!NOTE]
-> In general, accessibility options belong under the game’s settings/options menu. Ideally, settings are available as a dedicated button and accessible from any screen, or at least from the pause menu.
+> In general, accessibility options belong under the game’s settings/options menu. Ideally, settings are available as a dedicated button and accessible from any screen, or at least from the Pause menu.
 
 ## UX guidance for creating a custom conversation window
 
@@ -90,10 +90,10 @@ Subtitles and voice chat transcription tackle a similar challenge: display rapid
 #### Basics
 
 1. High contrast between text and background.
-2. Avoid presenting too much text onscreen at one time.
-3. Use a large enough text size, based on screen experience (10’ vs. desktop).
+2. Avoid presenting too much text on-screen at one time.
+3. Use a large enough text size, for the screen size.
 
-#### Good Practices
+#### Good practices
 
 1. Ensure users can find and enable TTS settings *before* engaging in game chat.
 2. Avoid clashes with other UI elements.
@@ -115,7 +115,7 @@ This section will walk through a method for determining the best display, based 
 
 #### Users’ chat behavior
 
-Different game features will drive varying chat density. For example - the game lobby during the game session, and end-of-game wrap-up are areas where game chat is engaged. However, the types of discussion change to meet the objectives of the screen. Knowing the type of discussion can help gauge whether a conversation window is critical or optional to gameplay needs.
+Different game features will drive varying chat density. For example - the game lobby during the game session, and end-of-game wrap-up are areas where game chat is engaged. However, the types of discussions change the objectives of the screen. Knowing the type of discussion can help gauge whether a conversation window is critical or optional to gameplay needs.
 
 ![Users Chat](media/users-chat.jpg)
 
@@ -123,10 +123,10 @@ Different game features will drive varying chat density. For example - the game 
 
 Discussion types
 
-- **Small talk**: Not critical for achieving objectives. For example; common interests, expletives, socializing.
-- **Functional**: Critical for achieving game objectives. For example, coordinating strategy with your team.
+- **Small talk**. Not critical for achieving objectives. For example, common interests, expletives, socializing.
+- **Functional**. Critical for achieving game objectives. For example, coordinating strategy with your team.
 
-#### Chat length: Minimum requirements
+#### Chat length: minimum requirements
 
 Discussion types in game chat influence a wide range of reply types by a single user (from greetings/confirmation to instructional/descriptive). Once you’ve determined a primary discussion type for each screen, you can begin to make some broad assumptions about the type and length of replies.
 
@@ -150,7 +150,7 @@ That data can then be applied to this simple strategy for determining conversati
 
 #### Font size and type
 
-Choosing a legible font is important for players who are reading any onscreen text UI, and some of whom might have low vision.
+Choosing a legible font is important for players who are reading any on-screen text UI, and some of whom might have low vision.
 
 > [!NOTE]
 > Verdana is the most legible font that Microsoft ships. Even better than Verdana by itself, is to present the font with high contrast (full black on full white or vice-versa) and at large sizes. Size, contrast, and letter form are the three biggest factors in legibility (in that priority order).
@@ -175,7 +175,7 @@ Start testing your design by using the **ConversationWindow_Template.ai**. Go to
 
 Now that you have minimum text requirements for the conversation window, you can begin testing positioning and size ratio.
 
-#### Positioning: Relative vs. fixed
+#### Positioning: relative vs. fixed
 
 Aligning the conversation window to a grid format provides a very straightforward set of inputs that can scale regardless of the screen resolution. For example, the Xbox OS STT UI references nine quadrants (Left/Top, Left/Center, Left/Bottom, Middle/Top, and so on) for positioning.
 
@@ -202,10 +202,10 @@ There may be screens where there simply isn’t room to accommodate a conversati
 
 ![Capture the Flag - Game with Chat](media/capture-the-flag-game-with-chat.jpg)
 
-#### Solutions for game UI and conversation window conflicts
+### Solutions for game UI and conversation window conflicts
 
-1. **The user should be able to disable the feature via the OS**  
-   Ideally, the user has the option to leave the game and turn the STT option on or off, by using the Ease of Access settings.
+1. **The user should be able to disable the feature via the OS**.  
+   Ideally, the user has the option to leave the game and turn the STT option on or off, by using the Ease-of-Access settings.
 
    - **UI impact: NONE**
    - **UX impact: POOR**
@@ -214,7 +214,7 @@ An example of Disabling the STT setting via OS Settings is shown below. (This sh
 
    ![Critical Path for the Xbox One Console](media/critical-path-for-xbox-1-console.png)
 
-2. **The game provides a method for users to minimize the window**
+2. **The game provides a method for users to minimize the window**.
 
    Having an STT setting to minimize or move the window offers added flexibility for the designer and the user.
 
@@ -270,7 +270,7 @@ An example of this might be when the STT window closes after 15s of inactivity. 
 
 ### Scrolling
 
-During ongoing conversations, the window must facilitate a view of most recent replies. Most recent replies are displayed at the bottom of the replies, and scroll up
+During ongoing conversations, the window must facilitate a view of most recent replies. Most recent replies are displayed at the bottom of the replies, and scroll up.
 
 > [!NOTE]
 > Auto-scrolling is a solution that makes managing conversations easier for both developers and users. It comes closest to mimicking fluid conversation. The less effort a user has to make to manage the view, the more time they have to focus on gameplay. A manual scroll bar would require shifting controller focus, which can be disruptive during active gameplay.
@@ -279,7 +279,7 @@ During ongoing conversations, the window must facilitate a view of most recent r
 
 It may be tempting to design this chat window to match your UI style. However, the chat window has a specific function, unique from other game components. It is presenting information that originates outside of game instruction.
 
-Game information that also uses text and frames. A user could confuse the intention of the chat window with actual in-game components, if they look too similar. Therefore, it is recommended that the Chat overlay possess unique attributes that clearly separate it from the game UI. Degree of disparity is up to the designer’s discretion.
+It is game information that also uses text and frames. A user could confuse the intention of the chat window with actual in-game components, if they look too similar. Therefore, the Chat overlay must possess unique attributes that clearly separate it from the game UI. Degree of disparity is up to the designer’s discretion.
 
 ### Closing or destroying the conversation window
 
@@ -296,13 +296,13 @@ A console example is shown below. The Xbox One Guide is TCUI, and has a transpar
 
 ![Conversation Window Obscured](media/conversation-window-obscured.jpg)
 
-Its common for a platform’s system UI to be the ‘top’ visible layer of any game or app UI. For example, the Xbox One operating system-initiated UI (error messaging, a virtual keyboard, toasts, the Xbox One Guide, people picker, and other elements) applies a full screen, semi-transparent, black overlay with their content window.
+It's common for a platform’s system UI to be the ‘top’ visible layer of any game or app UI. For example, the Xbox One operating system-initiated UI (error messaging, a virtual keyboard, toasts, the Xbox One Guide, people picker, and other elements) applies a full screen, semi-transparent, black overlay with their content window.
 
-- **UX impact: Visibility of the conversation window will be obscured.**
+- **UX impact**: Visibility of the conversation window will be obscured.
 
 ## Conclusion
 
-The PlayFab Party TTS and STT APIs are a highly effective feature for including a wider range of users in a game and gaming conversations. The more gamers engage and develop relationships, the more likely they are to continue playing.
+The PlayFab Party TTS and STT APIs are highly effective features for including a wider range of users in a game and gaming conversations. The more gamers engage and develop relationships, the more likely they are to continue playing.
 
 The APIs and presentation are simple. This guidance will help you ensure that the user experience is too.
 
@@ -322,8 +322,8 @@ The APIs and presentation are simple. This guidance will help you ensure that th
 
 ### PlayFab Party TTS/STT UX series
 
-- Part 1: PlayFab Party Speech-to-Text (Custom) UX Guidance
-- Part 2: [PlayFab Party Text-to-Speech UX Guidance](party-text-to-speech-ux-guidelines.md)
+- Part 1: PlayFab Party speech-to-text (Custom) UX guidance
+- Part 2: [PlayFab Party text-to-speech UX guidance](party-text-to-speech-ux-guidelines.md)
 
 ### SDK documentation
 

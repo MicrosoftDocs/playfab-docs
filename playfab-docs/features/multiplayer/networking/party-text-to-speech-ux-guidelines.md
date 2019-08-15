@@ -1,5 +1,5 @@
 ---
-title: PlayFab Party Text to Speech UX Guidelines
+title: PlayFab Party text-to-speech UX Guidelines
 author: v-thopra
 description: Describes the PlayFab Party APIs, and focuses on text-to-speech implementation, requirements, and console and PC UI solutions.
 ms.author: v-thopra
@@ -10,7 +10,7 @@ keywords: playfab, multiplayer, bumblelion, party, networking, UX, speech to tex
 ms.localizationpriority: medium
 ---
 
-# PlayFab Party Text-to-Speech UX guidelines
+# PlayFab Party text-to-speech (TTS) UX guidelines
 
 > [!IMPORTANT]
 > This feature is currently in **Private Preview**.  
@@ -21,7 +21,7 @@ ms.localizationpriority: medium
 
 The PlayFab Party service gives creators more options for delivering  great in-game chat experiences. It provides a means for voice chat to be transcribed to text and for text input to be converted to synthesized voice.
 
-This topic is part one of a two-part series covering UX solutions for Speech-to-Text (STT) and Text-to-Speech (TTS) implementation.
+This topic is part one of a two-part series covering UX solutions for speech-to-text (STT) and text-to-speech (TTS) implementation.
 
 Part one focuses on text-to-speech implementation, requirements, console and PC UI solutions, while [part two](party-speech-to-text-ux-guidelines.md) focuses on speech-to-text implementation, requirements, and custom console and PC UI solutions.
 
@@ -68,22 +68,22 @@ The Title detects that User A turned the STT preference on.
 3. `VoiceChatTranscriptionReceived`  
 When the system receives a chat voice message, it will automatically generate the transcribed text. The game will receive the transcription.
 
-4. a. Render the text (Title-specific code)  
-   Transcribed text will be added to a 'queue'. It is up to the Title to initiate the display of the transcription.
+4. a. Render the text (title-specific code)  
+   Transcribed text will be added to a 'queue'. It is up to the title to initiate the display of the transcription.
 
    b. **Windows::Xbox::UI::Accessibility::SendSpeechToTextString** (Xbox and Windows only)  
    Call the OS generated Chat UI. This feature is rendered by the Xbox or Windows OS.
 
-## Text-to-Speech UX (TTS)
+## Text-to-speech UX (TTS)
 
-Text to speech enables a person to use the platform to send a synthesized voice stream to the active game chat participants. This is great for enabling the person to participate when there is no text chat-based system available, and all communication is active through the in-game voice chat.
+Text-to-speech enables a person to use the platform to send a synthesized voice stream to the active game chat participants. This is great for enabling the person to participate when there is no text chat-based system available, and all communication is active through the in-game voice chat.
 
 ### Discovery
 
 Users will find TTS and STT settings in the **Accessibility** section under **Settings**, via Xbox Home (console) or Xbox App (Windows 10). This is a toggle button that enables/disables this feature for all Xbox games specific to the user profile. For all other platforms, refer to their Accessibility guidelines for TTS/STT locations.
 
 - **UX recommendation**  
-  If your game chooses to add additional settings that are game specific only, then they should be placed inside your game. In general, accessibility options belong under the game’s settings/options menu. Ideally, settings are available as a dedicated button press and accessible from any screen, or at least, accessible from the pause menu.
+  If your game chooses to add additional settings that are game specific only, then they should be placed inside your game. In general, accessibility options belong under the game’s settings/options menu. Ideally, settings are available as a dedicated button press and accessible from any screen, or at least, accessible from the Pause menu.
 
 ### Text input/output options
 
@@ -94,7 +94,7 @@ Users will find TTS and STT settings in the **Accessibility** section under **Se
    > [!NOTE]
    > The keyboard will still appear when a gamepad is installed. It will not appear when a hardware keyboard is installed.
 
-   ![Xbox One - Virtual Keyboard](media/xbox-one-virtual-keyboard.jpg)
+   ![Xbox One - virtual keyboard](media/xbox-one-virtual-keyboard.jpg)
 
 2. **PC OS virtual keyboard**  (*Windows 10 example*)
 
@@ -148,23 +148,23 @@ Take this feature one step further, by allowing the user to choose from a range 
 
 - **Console example**: For keyboard and controller design template natives, see [Resources](#resources).
 
-In the first image, the **Options** menu includes a **Chat** section. This screen displays default and user-selected replies, listed under four categories of conversation types (compliments, instructional, and so on).
+In the first image, the Options menu includes a Chat section. This screen displays default and user-selected replies, listed under four categories of conversation types (compliments, instructional, and so on).
 
 Each category is mapped to a single-tap D-pad direction. Each reply is mapped to a double-tap D-pad direction. A user can select a reply to edit by pressing **A**.
 
-![Options Menu - Chat](media/options-menu-chat.jpg)
+![Options menu - chat](media/options-menu-chat.jpg)
 
 In the second image, a pop-up display offers a list of ten replies. A user can select up to four, each mapped to a D-pad direction based on the order of selection.
 
-![Pop-up Display - Chat](media/pop-up-display-chat.jpg)
+![Pop-up display - chat](media/pop-up-display-chat.jpg)
 
 ### Controller schematic for mapping replies
 
-Some games already provide custom controller mapping for a variety of gameplay preferences. This example proposes an alternative controller schema for TTS/STT. Users can select from a list of predefined replies and map to 4 D-pad directions. The left and right bumpers scroll through categories; the Y button launches a virtual keyboard for custom replies.
+Some games already provide custom controller mapping for a variety of gameplay preferences. This example proposes an alternative controller schema for TTS/STT. Users can select from a list of predefined replies and map to four D-pad directions. The left and right bumpers scroll through categories; the Y button launches a virtual keyboard for custom replies.
 
 During a game session, a user can swap control schemas with a dedicated button press (assigned by the game). In this case, the **B** button exits this mode.
 
-![Controller Schematic](media/controller-schematic.png)
+![Controller schematic](media/controller-schematic.png)
 
 ### Quick Chat reply guidance: A method to get gamers engaged
 
