@@ -24,17 +24,22 @@ The following topics can help you understand common PlayFab Party concepts and h
 ## Core architecture
 
   - [Overview](understanding-party-overview.md)
+  
   - [PlayFab Party objects and their relationships](understanding-party-objects.md)
-  - [The security model and invitations](understanding-party-invitations.md)
+  
+  - Learn more about **Invitations** and the **security model** - COMING SOON!
+  
   - [How PlayFab Party interacts with your discovery flows](understanding-party-discovery.md)
+  
   - [Understanding chat](understanding-party-chat.md)
+  
   - [Asynchronous operations and notifications](understanding-party-asynchronous-operations.md)
 
 ## Effective communication
 
-  - [Chat permissions and muting](understanding-party-chat-permissions-and-muting.md)
+  - [Chat permissions and muting](understanding-party-chat-permissions-and-muting.md) 
   
-  - [The endpoint-to-endpoint data transmission pipeline](understanding-party-endpoint-transmission.md)
+  - [The endpoint-to-endpoint data transmission pipeline](understanding-party-endpoint-transmission.md) 
 
   - [Text-to-speech profiles](understanding-party-text-to-speech-profiles.md)
 
