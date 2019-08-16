@@ -1,9 +1,9 @@
 ---
 title: PlayFab Party port usage and firewall considerations
 description: Details on PlayFab Party chat and data communication port usage and firewall configuration requirements.
-author: TBD
-ms.author: TBD
-ms.date: TBD
+author: v-kciril
+ms.author: v-kciril
+ms.date: v-kciril
 ms.topic: article
 ms.prod: playfab
 ROBOTS: NOINDEX,NOFOLLOW
@@ -23,5 +23,3 @@ keywords: playfab, multiplayer, networking
 
 What needs to be opened on clients, mention of Azure IP ranges and (absence of guarantees around) relay ports.
 
-#### Next steps
-* [??? **TBD** ???](???)

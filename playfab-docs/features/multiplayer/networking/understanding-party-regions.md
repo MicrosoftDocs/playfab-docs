@@ -1,9 +1,9 @@
 ---
 title: PlayFab Party regions
 description: The role of PlayFab Party chat and data communication network regions.
-author: TBD
-ms.author: TBD
-ms.date: TBD
+author: v-kciril
+ms.author: v-kciril
+ms.date: v-kciril
 ms.topic: article
 ms.prod: playfab
 ROBOTS: NOINDEX,NOFOLLOW
@@ -23,6 +23,3 @@ keywords: playfab, multiplayer, networking
 
 Background RegionsChanged, latency measurement, choosing regions other than the default for the allocator, awareness of pricing differences.
 
-
-#### Next steps
-* [??? **TBD** ???](???)

@@ -1,9 +1,9 @@
 ---
 title: PlayFab Party Xbox One XDK network manifest
 description: The template Xbox One XDK network manifest snippet to include with your game for enabling PlayFab Party chat and data communication.
-author: TBD
-ms.author: TBD
-ms.date: TBD
+author: v-kciril
+ms.author: v-kciril
+ms.date: v-kciril
 ms.topic: article
 ms.prod: playfab
 ROBOTS: NOINDEX,NOFOLLOW
@@ -23,5 +23,3 @@ keywords: playfab, multiplayer, networking
 
 Same pattern as XIM.
 
-#### Next steps
-* [??? **TBD** ???](???)

@@ -1,9 +1,9 @@
 ---
 title: PlayFab Party text-to-speech profiles
 description: Information on PlayFab Party text-to-speech profiles.
-author: TBD
-ms.author: TBD
-ms.date: TBD
+author: v-kciril
+ms.author: v-kciril
+ms.date: v-kciril
 ms.topic: article
 ms.prod: playfab
 ROBOTS: NOINDEX,NOFOLLOW
@@ -23,5 +23,3 @@ keywords: playfab, multiplayer, networking
 
 Regional differences, best practices for displaying, auditioning, and persisting with user preferences.
 
-#### Next steps
-* [??? **TBD** ???](???)

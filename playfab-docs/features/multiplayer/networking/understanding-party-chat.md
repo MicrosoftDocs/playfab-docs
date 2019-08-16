@@ -10,7 +10,7 @@ ROBOTS: NOINDEX,NOFOLLOW
 keywords: playfab, multiplayer, networking
 ---
 
-# Understanding How PlayFab Party Chat Works
+# Understanding how PlayFab Party chat works
 
 > [!IMPORTANT]
 > This feature is currently in **Private Preview**.
@@ -111,4 +111,4 @@ of this capability to an ease-of-access player setting. For more guidance on how
 by PlayFab Party, please refer to the [text-to-speech guideline](party-text-to-speech-ux-guidelines.md) and the [speech-to-text guideline](party-speech-to-text-ux-guidelines.md).
 
 ## Next steps
-* [Find out more about PlayFab Party chat permissions and muting](understanding-party-chat-permissions-and-muting.md)
+- [Find out more about PlayFab Party chat permissions and muting](understanding-party-chat-permissions-and-muting.md)

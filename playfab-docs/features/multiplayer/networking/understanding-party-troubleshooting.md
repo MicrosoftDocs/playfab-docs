@@ -1,9 +1,9 @@
 ---
 title: Troubleshooting PlayFab Party
 description: Tips for troubleshooting PlayFab Party real-time chat and data communication.
-author: TBD
-ms.author: TBD
-ms.date: TBD
+author: v-kciril
+ms.author: v-kciril
+ms.date: v-kciril
 ms.topic: article
 ms.prod: playfab
 ROBOTS: NOINDEX,NOFOLLOW
@@ -22,6 +22,3 @@ keywords: playfab, multiplayer, networking
 **TBD**
 
 Steps for developers to self-diagnose API errors and connectivity problems, and recommendations for troubleshooting steps to convey to their end users for connectivity problems.
-
-#### Next steps
-* [??? **TBD** ???](???)
