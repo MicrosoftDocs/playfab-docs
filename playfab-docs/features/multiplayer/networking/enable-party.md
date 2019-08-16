@@ -47,13 +47,13 @@ For more on the PlayFab Game Manager, see the [Game Manager quickstart](../../co
 
 2. Set the  **Start game command** to C:\Assets\WindowsRunnerCSharp.exe
 
-3. Press **+ Upload New Asset** and follow the dialogs to upload your previously-downloaded `winrunnerSample.zip`. 
+3. Press **+ Upload New Asset** and follow the dialogs to upload your previously-downloaded `winrunnerSample.zip`.  
 
 4. Select the **Asset Package** dropdown and set it to the `winrunnerSample.zip` file that was just uploaded.
 
 ![Configure build](media/configure-build.png)
 
-5. Select an appropriate region in which to deploy the server and then press **Deploy**.
+5. Select an appropriate region in which to deploy the server and then press **Deploy**. 
 
 ![Deploy build](media/deploy-build.png)
 
