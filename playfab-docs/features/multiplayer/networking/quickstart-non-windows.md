@@ -1,5 +1,5 @@
 ---
-title: Quickstart for PlayFab Party on Android, iOS, Switch and PS4
+title: Quickstart for PlayFab Party on Android, iOS, and Switch
 author: debhaldarMS
 description: Guide to help you integrate PlayFab Party in your Game.
 ms.author: debh
@@ -11,15 +11,15 @@ keywords: playfab, multiplayer, party, networking, communication
 ms.localizationpriority: medium
 ---
 
-# Quickstart for PlayFab Party on Android, iOS, Switch and PS4
+# Quickstart for PlayFab Party on Android, iOS and Switch
 
-This quickstart is intended to be a high-level overview of the facets of PlayFab Party on Platforms other than Windows and Xbox (iOS, Android, Nintendo Switch and PS4). PlayFab Party was designed to be cross-platform from the ground up. 
+This quickstart is intended to be a high-level overview of the facets of PlayFab Party on Platforms other than Windows and Xbox (iOS, Android, Nintendo Switch and Switch). PlayFab Party was designed to be cross-platform from the ground up. 
 
 Similarly, we've structured these quickstarts in the same way, where most of the information applies to all platforms, and platform-specific prerequisites and steps are described in the linked documents.
 
 In this quickstart, critical pieces of functionality are highlighted via explanatory text and code snippets. However, please note that this is not a step-by-step walk-through. Please consult the linked reference and conceptual documentation, as well as refer to the source code of the demo sample for different platforms that comes with the Party libraries, for a deeper understanding.
 
-## Requirements for Nintendo Switch, PS4, iOS and Android
+## Requirements for Nintendo Switch, iOS and Android
 
 This document lists the basic prerequisites necessary to integrate PlayFab Party into your specific platform applications. 
 
@@ -30,9 +30,6 @@ Before you start this tutorial, ensure that the following prerequisites have bee
 2. [iOS-specific requirements](ios-specific-requirements.md)
 
 3. [Nintendo Switch specific Requirements](https://github.com/PlayFab/PlayFabPartySwitch/releases)
-
-4. [PlayStation 4 Specific Requirements](https://github.com/PlayFab/PlayFabPartyPS4/releases)
-
 
 Once you've finished the platform-specific steps, please continue with the rest of the steps in this document to set up PlayFab Party.
 
@@ -240,16 +237,14 @@ The following code snippet shows how we can create a Party Network.
 Once the function call to CreateNewNetwork() succeeds, a network descriptor [PartyNetworkDescriptor](understanding-party-objects.md#network
 ) object will be returned/populated. The descriptor contains the data required by other players to connect to a network. Please refer to the [API Reference Documentation] for a detailed discussion of the other function parameters.
 
-
-### Connect to a Party Network  
+### Connect to a Party network  
 Once a Party network has been created and you have a network descriptor, the next step is to somehow broadcast this network descriptor to other users such that they can join. This is where PlayFab Matchmaking or any matchmaking service can come into play. 
 
 We implemented simple matchmaking using [PlayFab CloudScripts](https://api.playfab.com/docs/tutorials/landing-automation/using-cloud-script) in the demo samples, which work as follows:
-
    
 1. The user creating the network creates a json key value pair with a room number as key and the network descriptor as value. 
    
-2. They store this json object in playfab backend via a CloudScript function `save_network_descriptor`.
+2. They store this json object in playfab backend via a CloudScript function `save_network_descriptor`. 
    
 3. Any player that wishes to join the same network (abstracted away through the concept of a chat room), queries for the network descriptor associated with the room they seek to join. This is accomplished via calling the CloudScript function `get_network_descriptor`.
 
