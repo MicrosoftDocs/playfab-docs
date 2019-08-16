@@ -3,9 +3,10 @@ title: Billing for PlayFab Party
 author: v-thopra
 description: Describes the Billing plan for PlayFab Party. (Note - PlayFab Party 1PP Preview was originally called Bumblelion)
 ms.author: v-thopra
-ms.date: 13/12/2018
+ms.date: 8/12/2019
 ms.topic: article
 ms.prod: playfab
+ROBOTS: NOINDEX,NOFOLLOW
 keywords: playfab, multiplayer, party, networking, pricing, billing, bumblelion
 ms.localizationpriority: medium
 ---
@@ -13,13 +14,13 @@ ms.localizationpriority: medium
 # Billing for PlayFab Party
 
 > [!IMPORTANT]
-> This feature is currently in **Private Preview**.  
+> This feature is currently in **Private Preview**.
 >
-> It is provided to give you an early look at an upcoming feature, and to allow you to provide feedback while it is still in development.  
+> It is provided to give you an early look at an upcoming feature and to allow you to provide feedback while it is still in development.
 >
-> Access to this feature is restricted to select titles. If you are interested in trying it, please contact us at [helloplayfab@microsoft.com](mailto:helloplayfab@microsoft.com).
+> Access to this feature is restricted to select titles, with SDKs available for Windows 10 PCs and Xbox One. Interoperable SDKs for iOS and Android are available now. If you are interested in this feature, you can request access by submitting a ticket on [support.playfab.com](https://support.playfab.com/hc/en-us/requests/new).
 
-Most PlayFab services - such as PlayStream or Matchmaking - are included with every paid PlayFab tier as part of our core offering. However, PlayFab Party is billed on a *consumption* basis. This document describes the billing plan for Party.
+Most PlayFab services, such as PlayStream or Matchmaking, are included with every paid PlayFab tier as part of our core offering. However, PlayFab Party is billed on a consumption basis. This document describes the billing plan for Party.
 
 ## What comes with your basic PlayFab Core Services package?
 
@@ -29,32 +30,32 @@ A basic allocation of Party time is included with every paid PlayFab tier: 100 p
 
 There are three key meters used to bill additional Party utilization:
 
-1. **Party Connectivity.** This is measured in player minutes connected to a network. Metering starts when a player creates a network or joins a network, and it stops when they have disconnected.
-2. **Party Voice.** This is measured in player minutes speaking. When a player is connected to a network and is actively speaking, that player voice activity is measured in seconds and metered.
+1. **Party connectivity.** This is measured in player minutes connected to a network. Metering starts when a player creates a network or joins a network, and it stops when they have disconnected.
+2. **Party voice.** This is measured in player minutes speaking. When a player is connected to a network and is actively speaking, that player voice activity is measured in seconds and metered.
 3. **Network egress.** This meters data *sent* from PlayFab's relay and voice servers. This is congruent to the aggregate amount of data that players *receive* from the network.
 
-## Party Connectivity
+## Party connectivity
 
 | SKU | $/player-minute connected to a network |
 | --- | --- |
 | Party Connectivity | $0.0001 |
 
-## Party Voice
+## Party voice
 
 Usage of voice chat is priced differently if Speech Services are enabled. Speech Services enables speech-to-text transcription, speech-to-text translation, and text-to-text translation.
 
-10% of voice minutes can leverage transcription and synthesis for free before the below meter is billed. We recommend tying activation of this capability to an ease-of-access player setting.
+10% of voice minutes can leverage transcription and synthesis for free before the below-meter is billed. We recommend tying activation of this capability to an ease-of-access player setting.
 
 | SKU | $/player-minute speaking |
 | --- | --- |
 | Party Voice | $0.001 |
 | Party Voice + Speech Services | $0.015 |
 
-In-game chat text messages - even when text-to-text translation or text-to-speech synthesis are activated - do not drive metering and are not billed to your account.
+In-game chat text messages, even when text-to-text translation or text-to-speech synthesis are activated, do not drive metering and are not billed to your account.
 
 ## Network egress
 
-At run time, you can specify which Azure region should host your network. This impacts network egress charges.
+At run-time you can specify which Azure region should host your network. This impacts network egress charges.
 
 | Zone | Regions | $/GB of Network Egress |
 | --- | --- | --- |
