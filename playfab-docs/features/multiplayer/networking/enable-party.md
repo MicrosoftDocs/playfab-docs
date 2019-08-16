@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 # Enabling PlayFab Party
 
-This tutorial will get you up and running quickly by showing you in a few steps how to enable the use of PlayFab Party in with the PlayFab demo app.
+This tutorial will get you up and running quickly by showing you in a few steps how to enable the use of PlayFab Party with the PlayFab demo app.
 
 For more on the PlayFab Game Manager, see the [Game Manager quickstart](../../config/gamemanager/quickstart.md).
 
