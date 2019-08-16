@@ -2,10 +2,6 @@
   href: index.md
 - name: Quickstart
   href: quickstart-non-windows.md
-- name: PlayFab Party speech-to-text UX guidelines
-  href: party-speech-to-text-ux-guidelines.md
-- name: PlayFab Party text-to-speech UX guidelines
-  href: party-text-to-speech-ux-guidelines.md
 - name: Enabling PlayFab Party
   href: enable-party.md
 - name: Pricing
@@ -19,6 +15,10 @@
     items:
     - name: Overview
       href: understanding-party-overview.md
+    - name: PlayFab Party speech-to-text UX guidelines
+      href: party-speech-to-text-ux-guidelines.md
+    - name: PlayFab Party text-to-speech UX guidelines
+      href: party-text-to-speech-ux-guidelines.md
     - name: PlayFab Party objects and their relationships
       href: understanding-party-objects.md
     - name: Integrating discovery with PlayFab Party
@@ -29,6 +29,5 @@
     items:
     - name: Chat permissions and muting
       href: understanding-party-chat-permissions-and-muting.md
-  - name: Environmental considerations and troubleshooting
 
 
