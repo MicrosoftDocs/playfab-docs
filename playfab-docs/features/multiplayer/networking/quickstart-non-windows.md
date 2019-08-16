@@ -33,6 +33,9 @@ Before you start this tutorial, ensure that the following prerequisites have bee
 
 Once you've finished the platform-specific steps, please continue with the rest of the steps in this document to set up PlayFab Party.
 
+> [!IMPORTANT]
+> Follow these steps to [Enable PlayFab Party](enable-party.md).
+
 ## Log into your PlayFab title and obtain an entity token and entity ID
 
 In order to initialize and use Party, it is a requirement to log in to PlayFab. You can use [PlayFabClientAPI::LoginWithCustomID](https://api.playfab.com/documentation/client/method/LoginWithCustomID) or any other login method to do this. 
