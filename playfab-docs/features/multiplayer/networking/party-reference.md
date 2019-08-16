@@ -6,8 +6,10 @@ ms.author: TBD
 ms.date: TBD
 ms.topic: article
 ms.prod: playfab
+ROBOTS: NOINDEX,NOFOLLOW
 keywords: playfab, multiplayer, networking
 ---
+
 # PlayFab Party API Reference Documentation
 
 > [!IMPORTANT]

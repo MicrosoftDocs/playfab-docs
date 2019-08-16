@@ -6,6 +6,7 @@ ms.author: debh
 ms.date: 08/05/2019
 ms.topic: article
 ms.prod: playfab
+ROBOTS: NOINDEX,NOFOLLOW
 keywords: playfab, multiplayer, party, networking, communication, prerequisites, Android
 ms.localizationpriority: medium
 ---

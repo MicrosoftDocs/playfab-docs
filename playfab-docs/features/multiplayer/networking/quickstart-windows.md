@@ -6,6 +6,7 @@ ms.author: v-thopra
 ms.date: 03/14/2019
 ms.topic: article
 ms.prod: playfab
+ROBOTS: NOINDEX,NOFOLLOW
 keywords: playfab, multiplayer, party, networking, communication
 ms.localizationpriority: medium
 ---

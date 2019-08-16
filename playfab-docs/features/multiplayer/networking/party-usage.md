@@ -5,6 +5,7 @@ author: TBD
 ms.author: TBD
 ms.date: TBD
 ms.topic: article
+ROBOTS: NOINDEX,NOFOLLOW
 ms.prod: playfab
 keywords: playfab, multiplayer, networking
 ---

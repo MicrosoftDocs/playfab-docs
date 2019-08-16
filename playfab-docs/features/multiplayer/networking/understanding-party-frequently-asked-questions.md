@@ -6,9 +6,11 @@ ms.author: TBD
 ms.date: TBD
 ms.topic: article
 ms.prod: playfab
+ROBOTS: NOINDEX,NOFOLLOW
 keywords: playfab, multiplayer, networking
 ---
-# PlayFab Party Frequently Asked Questions
+
+# PlayFab Party frequently asked questions
 
 > [!IMPORTANT]
 > This feature is currently in **Private Preview**.

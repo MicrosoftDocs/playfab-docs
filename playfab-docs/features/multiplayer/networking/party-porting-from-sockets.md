@@ -6,6 +6,7 @@ ms.author: TBD
 ms.date: TBD
 ms.topic: article
 ms.prod: playfab
+ROBOTS: NOINDEX,NOFOLLOW
 keywords: playfab, multiplayer, networking
 ---
 # Porting to PlayFab Party from Sockets
