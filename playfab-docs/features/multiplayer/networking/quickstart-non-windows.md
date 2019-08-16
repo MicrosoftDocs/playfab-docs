@@ -241,6 +241,7 @@ Once the function call to CreateNewNetwork() succeeds, a network descriptor [Par
 ) object will be returned/populated. The descriptor contains the data required by other players to connect to a network. Please refer to the [API Reference Documentation] for a detailed discussion of the other function parameters.
 
 ## Connect to a Party network
+
 Once a Party network has been created and you have a network descriptor, the next step is to somehow broadcast this network descriptor to other users such that they can join. This is where PlayFab Matchmaking or any matchmaking service can come into play. 
 
 We implemented simple matchmaking using [PlayFab CloudScripts](https://api.playfab.com/docs/tutorials/landing-automation/using-cloud-script) in the demo samples, which work as follows:

@@ -1,15 +1,16 @@
 ---
-title: PlayFab Party UX Guidelines
-description: Instructions for downloading the PlayFab Party API reference documentation.
-author: v-kciril
-ms.author: v-kciril
-ms.date: 08/16/2019
+title: Asynchronous PlayFab Party operations and notifications
+description: How PlayFab Party real-time chat and data communication performs asynchronous work and notifies callers of state changes.
+author: TBD
+ms.author: TBD
+ms.date: TBD
 ms.topic: article
-ROBOTS: NOINDEX,NOFOLLOW
 ms.prod: playfab
+ROBOTS: NOINDEX,NOFOLLOW
 keywords: playfab, multiplayer, networking
 ---
-# PlayFab Party UX Guidelines
+
+# Asynchronous PlayFab Party operations and notifications
 
 > [!IMPORTANT]
 > This feature is currently in **Private Preview**.
@@ -20,9 +21,8 @@ keywords: playfab, multiplayer, networking
 
 **TBD**
 
-Recommendations on how to integrate UX elements into your game, particularly accessible STT / TTS.
-Maybe also opinions on squawkers, RTT bar meters, region lists, error/troubleshooting display in the future.
+Immediate errors, "state changes", async identifiers, immediate object returns + chained operation queuing.
 
-* [PlayFab Party Speech-to-Text UX Guidelines](party-speech-to-text-ux-guidelines.md)
-* [PlayFab Party Text-to-Speech UX Guidelines](party-text-to-speech-ux-guidelines.md)
 
+#### Next steps
+* [??? **TBD** ???](???)
