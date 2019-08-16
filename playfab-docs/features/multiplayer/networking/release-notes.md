@@ -1,11 +1,12 @@
 ---
 title: PlayFab Party Release Notes
-author: AlexAtXbox
+author: v-kciril
 description: Release notes for PlayFab Party
-ms.author: alstonge
-ms.date: 04/08/2019
+ms.author: v-kciril
+ms.date: 08/15/2019
 ms.topic: article
 ms.prod: playfab
+ROBOTS: NOINDEX,NOFOLLOW
 keywords: playfab, party, release notes, multiplayer, networking
 ms.localizationpriority: medium
 ---
@@ -13,6 +14,17 @@ ms.localizationpriority: medium
 # PlayFab Party release notes
 
 PlayFab Party is available on [Nuget.org](https://www.nuget.org/profiles/PlayFab)!
+
+## 0.6.0-release
+
+Added support for iOS, Android, and Nintendo Switch platforms. 
+
+For more information, see the following links:
+
+[iOS/Android](https://github.com/PlayFab/PlayFabParty/releases)
+
+[Nintendo Switch](https://github.com/PlayFab/PlayFabPartySwitch/releases)
+
 
 ## 0.5.0-prerelease
 

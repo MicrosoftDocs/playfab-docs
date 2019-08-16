@@ -1,23 +1,24 @@
 ---
-title: Overview of PlayFab Party
+title: PlayFab Party Overview
 author: v-thopra
-description: Introduces the concepts and APIs for PlayFab networking.
+description: Learn about PlayFab Party real-time chat and data communication libraries for your game.
 ms.author: v-thopra
-ms.date: 07/12/2018
+ms.date: TBD
 ms.topic: article
 ms.prod: playfab
+ROBOTS: NOINDEX,NOFOLLOW
 keywords: playfab, multiplayer, networking
 ms.localizationpriority: medium
 ---
 
-# PlayFab Party
+# PlayFab Party Overview
 
 > [!IMPORTANT]
-> This feature is currently in **Private Preview**.  
+> This feature is currently in **Private Preview**.
 >
-> It is provided to give you an early look at an upcoming feature and to allow you to provide feedback while it is still in development.  
+> It is provided to give you an early look at an upcoming feature and to allow you to provide feedback while it is still in development.
 >
-> Access to this feature is restricted to select titles, with SDKs available for Windows 10 PCs and Xbox One. Interoperable SDKs for iOS,  Android, and Nintendo Switch will be available this summer. If you are interested in this feature, please contact us at [helloplayfab@microsoft.com](mailto:helloplayfab@microsoft.com).
+> Access to this feature is restricted to select titles, with SDKs available for Windows 10 PCs and Xbox One. Interoperable SDKs for iOS,  Android, and Nintendo Switch are available now. If you are interested in this feature, please contact us at [helloplayfab@microsoft.com](mailto:helloplayfab@microsoft.com).
 
 PlayFab Party is a set of libraries and services for easily adding multiplayer real-time networking and chat communication to your game.
 
@@ -40,7 +41,7 @@ One of the goals of PlayFab Party (and our other multiplayer services), is to fa
 
 ## Key Resources
 
-- [Windows 7 (Win32 C++), Windows 10 (Win32 C++), and Xbox One (XDK C++) libraries on Github](https://www.nuget.org/packages?q=%22playfab+party%22)
+- [Windows 7 (Win32 C++), Windows 10 (Win32 C++), and Xbox One (XDK C++) libraries on Github](https://www.nuget.org/profiles/PlayFab)
 - [Windows 10 and Xbox One sample (BumbleRumble)](https://github.com/PlayFab/PlayFab-Samples/tree/master/Samples/All/BumbleRumble)
 
 ## Roadmap
@@ -65,10 +66,10 @@ One of the goals of PlayFab Party (and our other multiplayer services), is to fa
 
 PlayFab Party is oriented around a few key concepts:
 
-- `Network` - A logical representation of a set of interconnected devices participating in a particular multiplayer experience, as well as basic state describing that collection.
-- `Endpoint` - A facility associated with a device that can receive data from other devices and is the source for sending data to other devices.
-- `Network_state_change` - A structure representing a notification to the local device regarding an asynchronous change in some aspect of the network.
-- `StartProcessingStateChanges` and `FinishProcessingStateChanges` - The pair of methods called by the app every UI frame to perform asynchronous operations, to retrieve results to be handled in the form of state_change structures, and then to free the associated resources when finished.
+- **Network** - A logical representation of a set of interconnected devices participating in a particular multiplayer experience, as well as basic state describing that collection.
+- **Endpoint** - A facility associated with a device that can receive data from other devices and is the source for sending data to other devices.
+- **Network_state_change** - A structure representing a notification to the local device regarding an asynchronous change in some aspect of the network.
+- **StartProcessingStateChanges** and **FinishProcessingStateChanges** - The pair of methods called by the app every UI frame to perform asynchronous operations, to retrieve results to be handled in the form of state_change structures, and then to free the associated resources when finished.
 
 At a very high level, the game application uses the PlayFab Party library to configure a set of users signed-in on the local device to be moved into a PlayFab network. The app calls `StartProcessingStateChanges()` and `FinishProcessingStateChanges()` every UI frame.
 
@@ -76,168 +77,12 @@ As app instances on remote devices add their users into a network, every partici
 
 As opposed to a client-server model, a PlayFab network is logically a fully-connected mesh of peer devices.
 
-## Initialization
+To learn about PlayFab Party features, common concepts, and how they fit together, see the [Understanding PlayFab Party](understanding-party.md) topic.
 
-```cpp
-void NetworkManager::Initialize()
-{
-    DEBUGLOG(L"NetworkManager::Initialize()\n");
+To follow examples of using the libraries in common scenarios, see the [PlayFab Party API Usage Guides](party-usage.md) topic.
 
-    auto& Parties = PartiesManager::GetSingleton();
+For details on parameters, return values, and behaviors when invoking the libraries, see the [PlayFab Party API Reference Documentation](party-reference.md) topic.
 
-    // Initialize the communication fabric with our developer secret key
-    PartiesError err = Parties.Initialize(c_PartiesDevKey);
-    if (Parties_FAILED(err))
-    {
-        DEBUGLOG(L"Initialize failed: %hs\n", GetErrorMessage(err));
-        return;
-    }
+To read best practices for user experiences and Microsoft's recommendations around chat and data communication user interfaces, see the [PlayFab Party UX Guidelines](party-ux-guidelines.md) topic.
 
-    PartiesString entityId = Managers::Get<PlayFabManager>()->EntityId().c_str();
-
-    // Create a local user object
-    err = Parties.CreateLocalUser(
-        entityId,                                   // User id
-        entityId,                                   // User entity token
-        &m_localUser                                // OUT local user object
-        );
-
-    if (Parties_FAILED(err))
-    {
-        DEBUGLOG(L"CreateLocalUser failed: %hs\n", GetErrorMessage(err));
-        return;
-    }
-
-    PartiesLocalDevice* localDevice = nullptr;
-
-    // Retrieve the local device
-    err = Parties.GetLocalDevice(&localDevice);
-
-    if (Parties_FAILED(err))
-    {
-        DEBUGLOG(L"GetLocalDevice failed: %hs\n", GetErrorMessage(err));
-        return;
-    }
-
-    // Create a chat control for the local user on the local device
-    err = localDevice->CreateChatControl(
-        m_localUser,                                // Local user object
-        "en-us",                                    // Language id
-        nullptr,                                    // Async identifier
-        &m_localChatControl                         // OUT local chat control
-        );
-
-    if (Parties_FAILED(err))
-    {
-        DEBUGLOG(L"CreateChatControl failed: %hs\n", GetErrorMessage(err));
-        return;
-    }
-
-    // Use automatic settings for the audio input device
-    err = m_localChatControl->SetAudioInput(
-        PartiesAudioDeviceSelectionType::Automatic,    // Selection type
-        nullptr,                                    // Device id
-        nullptr                                     // Async identifier
-        );
-
-    if (Parties_FAILED(err))
-    {
-        DEBUGLOG(L"SetAudioInput failed: %hs\n", GetErrorMessage(err));
-        return;
-    }
-
-    // Use automatic settings for the audio output device
-    err = m_localChatControl->SetAudioOutput(
-        PartiesAudioDeviceSelectionType::Automatic,    // Selection type
-        nullptr,                                    // Device id
-        nullptr                                     // Async identifier
-        );
-
-    if (Parties_FAILED(err))
-    {
-        DEBUGLOG(L"SetAudioOutput failed: %hs\n", GetErrorMessage(err));
-    }
-
-    // Enable transcriptions always for sample purposes
-    err = m_localChatControl->SetTranscriptionRequested(
-        true,                                       // Turn on speech-to-text transcription
-        nullptr                                     // Async identifier
-        );
-
-    if (Parties_FAILED(err))
-    {
-        DEBUGLOG(L"SetTranscriptionRequested failed: %hs\n", GetErrorMessage(err));
-    }
-}
-
-void NetworkManager::CreateAndConnectToNetwork(std::vector<std::string>& playerIds, std::function<void(std::string)> callback)
-{
-    DEBUGLOG(L"NetworkManager::CreateAndConnectToNetwork()\n");
-
-    PartiesNetworkConfiguration cfg = {};
-
-    // Setup the network to allow 8 single-device players of any device type
-    cfg.allowedDeviceTypeCount = 0;
-    cfg.allowedDeviceTypes = nullptr;
-    cfg.maxDeviceCount = 8;
-    cfg.maxDevicesPerUserCount = 1;
-    cfg.maxEndpointsPerDeviceCount = 1;
-    cfg.maxUserCount = 8;
-    cfg.maxUsersPerDeviceCount = 1;
-
-    PartiesString uid = nullptr;
-    PartiesError err = m_localUser->GetUserIdentifier(&uid);
-
-    if (Parties_FAILED(err))
-    {
-        DEBUGLOG(L"GetUserIdentifier failed: %hs\n", GetErrorMessage(err));
-        return;
-    }
-
-    // Force the region for Wave 1
-    // TODO: revisit
-    PartiesRegion regionList[] = {
-        {
-            "WestUS", // region name
-            0         // round trip latency
-        },
-    };
-
-    std::vector<PartiesString> additionalIds;
-
-    DEBUGLOG(L"Additional user ids: \n");
-    for (const auto& id : playerIds)
-    {
-        additionalIds.push_back(id.c_str());
-        DEBUGLOG(L"\t%hs\n", id.c_str());
-    }
-
-    PartiesNetworkDescriptor networkDescriptor = {};
-
-    // Create a new network descriptor
-    PartiesManager::GetSingleton().CreateNewNetwork(
-        c_PartiesBuildId,                              // BuildId
-        m_localUser,                                // Local User
-        &cfg,                                       // Network Config
-        1,                                          // Region List Count
-        regionList,                                 // Region List
-        static_cast<uint32_t>(additionalIds.size()),// Additional UserId Count
-        additionalIds.data(),                       // Additional UserId List
-        nullptr,                                    // Async Identifier
-        &networkDescriptor                          // OUT network descriptor
-        );
-
-    if (Parties_FAILED(err))
-    {
-        DEBUGLOG(L"CreateNewNetwork failed: %hs\n", GetErrorMessage(err));
-        return;
-    }
-
-    // Connect to the new network
-    if (InternalConnectToNetwork(networkDescriptor))
-    {
-        m_state = NetworkManagerState::WaitingForNetwork;
-        m_onnetworkcreated = callback;
-    }
-}
-```
+For information on where to get client libraries and details on service pricing, see the [PlayFab Party Availability and Pricing](party-availability-and-pricing.md) topic.
