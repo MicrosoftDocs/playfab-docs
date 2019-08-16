@@ -26,7 +26,7 @@
     - name: Chat permissions and muting
       href: understanding-party-chat-permissions-and-muting.md
 - name: Pricing
-- href: pricing.md
+  href: pricing.md
 - name: Release notes
   href: release-notes.md
 
