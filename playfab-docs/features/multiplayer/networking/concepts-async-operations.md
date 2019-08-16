@@ -1,16 +1,16 @@
 ---
-title: PlayFab Party API Reference Documentation
-description: Instructions for downloading the PlayFab Party API reference documentation.
-author: v-kciril
-ms.author: v-kciril
-ms.date: 08/16/2019
+title: Asynchronous PlayFab Party operations and notifications
+description: How PlayFab Party real-time chat and data communication performs asynchronous work and notifies callers of state changes.
+author: TBD
+ms.author: TBD
+ms.date: TBD
 ms.topic: article
 ms.prod: playfab
 ROBOTS: NOINDEX,NOFOLLOW
 keywords: playfab, multiplayer, networking
 ---
 
-# PlayFab Party API reference documentation
+# Asynchronous PlayFab Party operations and notifications
 
 > [!IMPORTANT]
 > This feature is currently in **Private Preview**.
@@ -19,4 +19,10 @@ keywords: playfab, multiplayer, networking
 >
 > Access to this feature is restricted to select titles, with SDKs available for Windows 10 PCs and Xbox One. Interoperable SDKs for iOS and Android are available now. If you are interested in this feature, you can request access by submitting a ticket on [support.playfab.com](https://support.playfab.com/hc/en-us/requests/new).
 
-Reference documentation for PlayFab Party is currently available in the header.
+**TBD**
+
+Immediate errors, "state changes", async identifiers, immediate object returns + chained operation queuing.
+
+
+#### Next steps
+* [??? **TBD** ???](???)

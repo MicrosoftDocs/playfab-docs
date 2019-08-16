@@ -1,16 +1,16 @@
 ---
-title: PlayFab Party API Reference Documentation
-description: Instructions for downloading the PlayFab Party API reference documentation.
+title: PlayFab Party regions
+description: The role of PlayFab Party chat and data communication network regions.
 author: v-kciril
 ms.author: v-kciril
-ms.date: 08/16/2019
+ms.date: v-kciril
 ms.topic: article
 ms.prod: playfab
 ROBOTS: NOINDEX,NOFOLLOW
 keywords: playfab, multiplayer, networking
 ---
 
-# PlayFab Party API reference documentation
+# PlayFab Party regions
 
 > [!IMPORTANT]
 > This feature is currently in **Private Preview**.
@@ -19,4 +19,7 @@ keywords: playfab, multiplayer, networking
 >
 > Access to this feature is restricted to select titles, with SDKs available for Windows 10 PCs and Xbox One. Interoperable SDKs for iOS and Android are available now. If you are interested in this feature, you can request access by submitting a ticket on [support.playfab.com](https://support.playfab.com/hc/en-us/requests/new).
 
-Reference documentation for PlayFab Party is currently available in the header.
+**TBD**
+
+Background RegionsChanged, latency measurement, choosing regions other than the default for the allocator, awareness of pricing differences.
+

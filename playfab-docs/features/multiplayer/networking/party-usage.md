@@ -1,9 +1,9 @@
 ---
 title: PlayFab Party API Usage Guides
 description: How to use the PlayFab Party real-time chat and data communication API in common scenarios.
-author: TBD
-ms.author: TBD
-ms.date: TBD
+author: v-kciril
+ms.author: v-kciril
+ms.date: 08/16/2019
 ms.topic: article
 ROBOTS: NOINDEX,NOFOLLOW
 ms.prod: playfab
@@ -16,8 +16,7 @@ keywords: playfab, multiplayer, networking
 >
 > Access to this feature is restricted to select titles, with SDKs available for Windows 10 PCs and Xbox One. Interoperable SDKs for iOS and Android are available now. If you are interested in this feature, you can request access by submitting a ticket on [support.playfab.com](https://support.playfab.com/hc/en-us/requests/new).
 
-There are two main ways Party can help you: full chat + data transport and as chat sidecar.
-The following are walkthroughs of code for common scenarios for each usage.
+There are two main ways Party can help you: full chat + data transport and as chat sidecar. The following are walk-throughs of code for common scenarios for each usage.
 
 * Leveraging PlayFab Party for data transport and chat
   * Summary.

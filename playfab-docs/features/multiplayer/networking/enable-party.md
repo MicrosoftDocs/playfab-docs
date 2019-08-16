@@ -1,7 +1,7 @@
 ---
 title: Enabling PlayFab Party
 author: debhaldarMS
-description: This tutorial explains how to enable PlayFab Party and use it with the PlayFab demo app.
+description: This tutorial explains how to enable PlayFab Party and use it with the PlayFab Party demo app.
 ms.author: v-kciril
 ms.date: 08/15/2019
 ms.topic: article
@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 # Enabling PlayFab Party
 
-This tutorial will get you up and running quickly by showing you in a few steps how to enable the use of PlayFab Party in with the PlayFab demo app.
+This tutorial will get you up and running quickly by showing you in a few steps how to enable the use of PlayFab Party with the PlayFab Party demo app.
 
 For more on the PlayFab Game Manager, see the [Game Manager quickstart](../../config/gamemanager/quickstart.md).
 
@@ -60,7 +60,7 @@ For more on the PlayFab Game Manager, see the [Game Manager quickstart](../../co
 > [!NOTE]
 > If you are using your own title, you can skip the following steps which apply to connecting to the PlayFab demo only.
 
-### Connect to the PlayFab demo app
+### Connect to the PlayFab Party demo app
 
 1. Open the **Automation** page in Game Manager.
 

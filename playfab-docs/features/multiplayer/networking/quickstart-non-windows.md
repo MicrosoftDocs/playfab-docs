@@ -62,9 +62,9 @@ PlayFabClientAPI::LoginWithCustomID(
 
 Once you've successfully obtained the entity ID and entity token from PlayFab, you're all set to proceed with enabling and then initializing Party.
 
-### Initialize PlayFab Party
+## Initialize PlayFab Party
 
-Before proceeding with this section, it is recommended that you read through [Understanding Party conceptual documentation.](understanding-party.md) and the code comments in the public Party.h header.
+Before proceeding with this section, it is recommended that you read through [Understanding Party conceptual documentation.](concepts-overview.md) and the code comments in the public Party.h header.
 
 Initializing Party is done via the NetworkManager.cpp code that's provided as part of the Party Demo Apps, and is common to all platforms. 
 
@@ -211,9 +211,9 @@ At a high level, initializing Party involves the following steps:
 Please refer to the NetworkManager::Initialize() code in [NetworkManager.cpp](https://github.com/PlayFab/PlayFabParty/blob/docs/android/PartySampleNetworkCommon/lib/NetworkManager.cpp) in the demo app for a complete sample.
 
 
-At this point, you have the PlayFab Party initialized in your application or game. The next step is to Create and Connect to a Party Network. Before proceeding further, you should have a basic understanding of the various [PlayFab Party objects and their relationships](understanding-party-objects.md#network).
+At this point, you have the PlayFab Party initialized in your application or game. The next step is to Create and Connect to a Party Network. Before proceeding further, you should have a basic understanding of the various [PlayFab Party objects and their relationships](concepts-objects.md#network).
 
-### Create a Party Network
+## Create a Party Network
 
 A Party Network is a  secured collection of one or more devices and their authorized users that the game creates for the purpose of exchanging chat or data communication. This typically aligns with a game's multiplayer session or chat "lobby" concept. You can
 only send messages to players inside your own network.
@@ -237,10 +237,11 @@ The following code snippet shows how we can create a Party Network.
     );
 ```
 
-Once the function call to CreateNewNetwork() succeeds, a network descriptor [PartyNetworkDescriptor](understanding-party-objects.md#network
+Once the function call to CreateNewNetwork() succeeds, a network descriptor [PartyNetworkDescriptor](concepts-objects.md#network
 ) object will be returned/populated. The descriptor contains the data required by other players to connect to a network. Please refer to the [API Reference Documentation] for a detailed discussion of the other function parameters.
 
-### Connect to a Party network  
+## Connect to a Party network
+
 Once a Party network has been created and you have a network descriptor, the next step is to somehow broadcast this network descriptor to other users such that they can join. This is where PlayFab Matchmaking or any matchmaking service can come into play. 
 
 We implemented simple matchmaking using [PlayFab CloudScripts](https://api.playfab.com/docs/tutorials/landing-automation/using-cloud-script) in the demo samples, which work as follows:
@@ -339,7 +340,7 @@ The following steps are required to successfully join a PlayFab Party Network:
 
 5. Connect the local chat control to the network so that we can use VOIP.
 
-6. Establish a [Party Network endoint](understanding-party-objects.md#EndPoint) for game message traffic.
+6. Establish a [Party Network endpoint](concepts-objects.md#endpoint) for game message traffic.
 
 ```cpp
     PartyNetworkDescriptor networkDescriptor = {};
@@ -415,7 +416,7 @@ The following steps are required to successfully join a PlayFab Party Network:
     }
 ```
 
-### Send a message to another network device or endpoint
+## Send a message to another network device or endpoint
 
 Once you've connected your device to the Party Network, you can send a message using the local endpoint object. The full code is available in NetworkManager.cpp
 
@@ -455,12 +456,12 @@ Once you've connected your device to the Party Network, you can send a message u
     }
 ```
 
-### Receive a message and render it on the local device
+## Receive a message and render it on the local device
 
 The final step is receiving messages sent by remote Party members and rendering (playing) them on your device. 
 
 > [!IMPORTANT]
-> While creating the chat control in one of the previous steps, you've already set up the audio input and output devices which will be used by Party to send, receive and render audio data. To receive the audio messages, in addition to setting the chat control with right audio input/output setup, you'll need to set the appropriate chat permission between each chat control if you want audio to flow. By default, the chat permissions are set to NONE. For more information, please refer to the [Chat Permissions](understanding-party-chat-permissions-and-muting.md) article.
+> While creating the chat control in one of the previous steps, you've already set up the audio input and output devices which will be used by Party to send, receive and render audio data. To receive the audio messages, in addition to setting the chat control with right audio input/output setup, you'll need to set the appropriate chat permission between each chat control if you want audio to flow. By default, the chat permissions are set to NONE. For more information, please refer to the [Chat Permissions](concepts-chat-permissions-and-muting.md) article.
 
 The processing of other messages from the Party layer is best accomplished in an update or game loop. The game loop should be set up to run every frame and receive messages from the Party Manager via the StartProcessingStateChanges() function. 
 
