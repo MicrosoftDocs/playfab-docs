@@ -4,10 +4,6 @@
   href: quickstart-non-windows.md
 - name: Enabling PlayFab Party
   href: enable-party.md
-- name: Pricing
-  href: pricing.md
-- name: Release Notes
-  href: release-notes.md
 - name: Understanding PlayFab Party
   href: understanding-party.md
   items:
@@ -29,5 +25,8 @@
     items:
     - name: Chat permissions and muting
       href: understanding-party-chat-permissions-and-muting.md
-
+- name: Pricing
+- href: pricing.md
+- name: Release notes
+  href: release-notes.md
 
