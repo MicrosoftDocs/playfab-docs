@@ -83,8 +83,6 @@ If this applies to your game, you may wish to consider using [PlayFab multiplaye
 
 ### Next steps
 
-- [Learn about PlayFab Party objects and their relationships](understanding-party-objects.md)
-
-- [Learn how PlayFab Party interacts with your Discovery flows](understanding-party-discovery.md)
-
-- [Find out more about PlayFab Party chat communication](understanding-party-chat.md)
+- [Learn about PlayFab Party objects and their relationships](concepts-objects.md)
+- [Learn how PlayFab Party interacts with your Discovery flows](concepts-discovery.md)
+- [Find out more about PlayFab Party chat communication](concepts-chat.md)

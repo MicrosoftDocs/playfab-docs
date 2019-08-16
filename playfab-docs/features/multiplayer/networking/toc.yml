@@ -1,32 +1,35 @@
 - name: Overview
   href: index.md
 - name: Quickstart
-  href: quickstart-non-windows.md
+  items:
+  - name: Quickstart non-Windows
+    href: quickstart-non-windows.md
+  - name: Quickstart Windows
+    href: quickstart-windows.md
 - name: Enabling PlayFab Party
   href: enable-party.md
-- name: Understanding PlayFab Party
-  href: understanding-party.md
+- name: Concepts
   items:
-  - name: Core architecture
-    items:
-    - name: Overview
-      href: understanding-party-overview.md
-    - name: PlayFab Party speech-to-text UX guidelines
-      href: party-speech-to-text-ux-guidelines.md
-    - name: PlayFab Party text-to-speech UX guidelines
-      href: party-text-to-speech-ux-guidelines.md
-    - name: PlayFab Party objects and their relationships
-      href: understanding-party-objects.md
-    - name: Integrating discovery with PlayFab Party
-      href: understanding-party-discovery.md
-    - name: Understanding chat
-      href: understanding-party-chat.md
-  - name: Effective communication
-    items:
-    - name: Chat permissions and muting
-      href: understanding-party-chat-permissions-and-muting.md
+  - name: Overview
+    href: concepts-overview.md
+  - name: PlayFab Party objects and their relationships
+    href: concepts-objects.md
+  - name: Integrating discovery with PlayFab Party
+    href: concepts-discovery.md
+  - name: Understanding chat
+    href: concepts-chat.md
+  - name: Chat permissions and muting
+    href: concepts-chat-permissions-and-muting.md
+- name: UX guidelines
+  items:
+  - name: Speech-to-text UX guidelines
+    href: party-speech-to-text-ux-guidelines.md
+  - name: Text-to-speech UX guidelines
+    href: party-text-to-speech-ux-guidelines.md
 - name: Pricing
   href: pricing.md
 - name: Release notes
   href: release-notes.md
+- name: Reference
+  href: party-reference.md
 

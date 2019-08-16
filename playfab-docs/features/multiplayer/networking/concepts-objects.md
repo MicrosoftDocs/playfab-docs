@@ -1,16 +1,16 @@
 ---
 title: PlayFab Party objects and their relationships
 description: Understanding the important PlayFab Party real-time chat and data communication objects and their usage.
-author: TBD
-ms.author: TBD
-ms.date: TBD
+author: jdeweyMSFT
+ms.author: jdewey
+ms.date: 08/16/2019
 ms.topic: article
 ms.prod: playfab
 ROBOTS: NOINDEX,NOFOLLOW
 keywords: playfab, multiplayer, networking
 ---
 
-# PlayFab Party Objects and Their Relationships
+# PlayFab Party objects and their relationships
 
 > [!IMPORTANT]
 > This feature is currently in **Private Preview**.
@@ -21,11 +21,11 @@ keywords: playfab, multiplayer, networking
 
 Successfully using the power and flexibility of the PlayFab Party API begins with understanding the following crucial objects defined in its scope:
 
-* [***Device***](#device) - A distinct instance of the game executing on a physical device. A local [device](#device) exists whenever the API is being used.
-* [***User***](#user) - An individual logged-on player, or more precisely, a **PlayFab** `title_player_account` [Entity](/../../data/entities/index.md) that the game has actively provided to PlayFab Party for authentication and identification purposes. One or more [users](#user) are associated with a given [device](#device).
-* [***Network***](#network) - A secured collection of one or more [devices](#device) and their authorized [users](#user) that the game creates for the purpose of exchanging chat or data communication. This typically aligns with a game's multiplayer session or chat "lobby" concept.
-* [***Endpoint***](#endpoint) - An abstraction for sending and receiving data within a [network](#network). An endpoint may represent a [device](#device), a [user](#user), or any desired game-specific concept.
-* [***Chat control***](#chat-control) - A representation of a [user](#user) specifically for configuring, originating, and targeting voice and text chat in one or more [networks](#network).
+* [**Device**](#device) - A distinct instance of the game executing on a physical device. A local [device](#device) exists whenever the API is being used.
+* [**User**](#user) - An individual logged-on player, or more precisely, a PlayFab `title_player_account` [Entity](/../../data/entities/index.md) that the game has actively provided to PlayFab Party for authentication and identification purposes. One or more [users](#user) are associated with a given [device](#device).
+* [**Network**](#network) - A secured collection of one or more [devices](#device) and their authorized [users](#user) that the game creates for the purpose of exchanging chat or data communication. This typically aligns with a game's multiplayer session or chat "lobby" concept.
+* [**Endpoint**](#endpoint) - An abstraction for sending and receiving data within a [network](#network). An endpoint may represent a [device](#device), a [user](#user), or any desired game-specific concept.
+* [**Chat control**](#chat-control) - A representation of a [user](#user) specifically for configuring, originating, and targeting voice and text chat in one or more [networks](#network).
 
 ## Object relationships
 
@@ -65,12 +65,12 @@ But if there are no common [networks](#network), then the remote object will nev
 
 > [!NOTE]
 > Games are not required to connect to more than one [network](#network) simultaneously in order to use PlayFab Party successfully.
-> You can learn more about whether and how to use multiple [networks](#network) in a [subsequent advanced topic](understanding-party-multiple-networks.md).
+> You can learn more about whether and how to use multiple [networks](#network) in a [subsequent advanced topic](concepts-multiple-networks.md).
 
 ## Common object attributes
 
 All of the above objects have well-defined lifetimes where they're created and destroyed either directly by the local game instance, or using standardized notification mechanisms that are only signaled during windows of a game's choosing.
-Working with notifications is described in more detail in a [later topic](understanding-party-asynchronous-operations.md).
+Working with notifications is described in more detail in a [later topic](concepts-async-operations.md).
 
 All of the PlayFab Party API objects also support the concept of a *custom context*, which is simply a way to store an optional, local-only "shortcut" pointer or value with the object.
 This makes it easy to go from PlayFab Party objects back to your corresponding private game objects in memory (if any) without needing to perform an inefficient lookup.
@@ -110,7 +110,7 @@ A `PartyNetwork` object represents a secured collection of participating [device
 
 In order to connect to them, *networks* are referenced using *network descriptors*.
 These are largely opaque binary structures containing the information that PlayFab Party needs internally to identify and locate the *network*.
-The API provides methods for serializing the structures to web-service-friendly strings and back so they can be exchanged with other devices using common social platform invite mechanisms, [**PlayFab Matchmaking**](../matchmaking/index.md), or other external rendezvous mechanisms outside the scope of PlayFab Party itself.
+The API provides methods for serializing the structures to web-service-friendly strings and back so they can be exchanged with other devices using common social platform invite mechanisms, [PlayFab Matchmaking](../matchmaking/index.md), or other external rendezvous mechanisms outside the scope of PlayFab Party itself.
 > [!NOTE]
 > The *network descriptor* for a *network* can change in rare circumstances.
 > Games should be prepared for notifications of such changes, and then update or re-advertise the new *network descriptor* for an existing *network* in order to avoid problems with additional [devices](#device) connecting.
@@ -121,7 +121,7 @@ This [user](#user) authorization is done during *network* creation and through s
 Games can choose to use invitations to restrict entry to only [users'](#user) friends, or to prevent malicious players from joining the *network*.
 
 [Devices](#device) can connect to more than one *network* at a time.
-You can learn more about whether and how to use multiple *networks* in a [later topic](understanding-party-multiple-networks.md).
+You can learn more about whether and how to use multiple *networks* in a [later topic](concepts-multiple-networks.md).
 
 The kinds of actions that can be taken on `PartyNetwork` objects include authenticating local [users](#user) into it, connecting and enumerating [chat controls](#chat-control), creating and enumerating [endpoints](#endpoint), or getting *network*-wide performance information.
 
@@ -139,13 +139,13 @@ It is never explicitly created or destroyed.
 
 ### User
 
-A PlayFab Party *user* is a unique human player for whom the game has performed [**PlayFab** Player Login](../../authentication/login/index.md) in order to acquire a `title_player_account` [Entity ID](/../../data/entities/index.md) and token.
+A PlayFab Party *user* is a unique human player for whom the game has performed [PlayFab Player Login](../../authentication/login/index.md) in order to acquire a `title_player_account` [Entity ID](/../../data/entities/index.md) and token.
 Remote users are identified within the PlayFab Party API solely by their [Entity ID](/../../data/entities/index.md) string associated with [chat controls](#chat-control) and optionally with [endpoints](#endpoint).
 They are not represented using a dedicated object.
 This is because PlayFab Party doesn't have functionality that meaningfully interacts with arbitrary users, other than for raw identification and as a label associated with those other objects.
 
 However, for local *users* there are explicit `PartyLocalUser` objects, since games own managing their lifetimes within PlayFab Party.
-The game will typically create a `PartyLocalUser` when the game has successfully logged in that **PlayFab** player using the applicable [login](../../authentication/login/index.md) method, and destroy the `PartyLocalUser` as appropriate when that user logs off.
+The game will typically create a `PartyLocalUser` when the game has successfully logged in that PlayFab player using the applicable [login](../../authentication/login/index.md) method, and destroy the `PartyLocalUser` as appropriate when that user logs off.
 For platforms and games that support multiple local players logged in, additional `PartyLocalUser` objects should be created for each player.
 
 `PartyLocalUser` objects are also important because they're the basis of all authentication.
@@ -169,7 +169,7 @@ The specialized `PartyLocalEndpoint` sub-object is for *endpoints* created in th
 This is where most *endpoint* functionality resides.
 Its `PartyLocalEndpoint::SendMessage()` transmits game data payloads from the `PartyLocalEndpoint` to one or more other `PartyEndpoint` objects in the same [network](#network).
 It provides various options for selecting how best to handle Internet packet loss (e.g., guarantee delivery and/or ordering), to control the tradeoff between low latency versus coalescing multiple messages from the same or other local endpoints for lower bandwidth usage, and to react when the connection quality isn't sufficient to support the rate at which the game is sending.
-You can learn more about transmitting game data using *endpoints* in a [later topic](understanding-party-endpoint-transmission.md).
+You can learn more about transmitting game data using *endpoints* in a [later topic](concepts-endpoint-transmission.md).
 
 In addition to being a source or destination for data messages itself, each `PartyEndpoint` object is also assigned a 16-bit *endpoint unique identifier* by PlayFab Party that allows you to reference the specific *endpoint* in message payloads sent to or from separate `PartyEndpoint` objects within the [network](#network).
 This provides a convenient way to avoid the overhead of sending a full, larger user [Entity ID](/../../data/entities/index.md) string or other identifier it might represent, for example, without having to build your own peer-to-peer identity agreement negotiation.
@@ -206,14 +206,14 @@ Once the game has handled the *state changes*, the array is returned using `Part
 
 The `PartyStateChange` structure is not a full object by itself. It's a base header to be cast to a more detailed structure containing information on the specific type of completion or notification, pointers to the relevant objects, and any error information.
 
-Working with *state changes* is described in full detail in a [later topic](understanding-party-asynchronous-operations.md).
+Working with *state changes* is described in full detail in a [later topic](concepts-async-operations.md).
 
 ## Next steps
 
 - Learn more about **Invitations** and the **security model** - COMING SOON!
 
-- [Learn how PlayFab Party interacts with your Discovery flows](understanding-party-discovery.md)
+- [Learn how PlayFab Party interacts with your Discovery flows](concepts-discovery.md)
 
-- [Find out more about PlayFab Party chat communication](understanding-party-chat.md)
+- [Find out more about PlayFab Party chat communication](concepts-chat.md)
 
-- [See how to work with asynchronous operations and notifications in PlayFab Party](understanding-party-asynchronous-operations.md)
+- [See how to work with asynchronous operations and notifications in PlayFab Party](concepts-async-operations.md)

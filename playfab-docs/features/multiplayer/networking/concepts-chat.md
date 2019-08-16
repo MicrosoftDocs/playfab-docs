@@ -37,7 +37,7 @@ have no more than one chat control. For a local chat control to communicate with
 requirements must be met:
 
 1. The two chat controls must be in the same network.
-2. The [chat permissions](understanding-party-chat-permissions-and-muting.md) between the two chat controls must allow
+2. The [chat permissions](concepts-chat-permissions-and-muting.md) between the two chat controls must allow
 audio and/or text communication to flow.
 
 With your local chat control in-hand you are now ready to have it connect to a network by calling `PartyNetwork::ConnectChatControl()`.
@@ -82,15 +82,14 @@ matching that identifier. Refer to the following table to see what kind of ident
 | Xbox One     | Please refer to the Xbox One XDK documentation
 
 > [!NOTE]
-> We strongly recommend using `PartyAudioDeviceSelectionType::PlatformUserDefault` on Xbox One and `PartyAudioDeviceSelectionType::SystemDefault`
-> On Windows platform.
+> We strongly recommend using `PartyAudioDeviceSelectionType::PlatformUserDefault` on Xbox One and `PartyAudioDeviceSelectionType::SystemDefault` on Windows platforms.
 
 ## Chat permissions and muting
 
 PlayFab Party gives you fine-grained control over how your players can communicate with each other. Rather than
 specifying teams or channels, PlayFab Party requires explicitly defining the permissions between each pair of chat controls.
 To learn more about chat permissions, muting and how to build common chat scenario, please refer to the
-[chat permission overview](understanding-party-chat-permissions-and-muting.md) page.
+[chat permission overview](concepts-chat-permissions-and-muting.md) page.
 
 ## Text chat and translation
 
@@ -111,4 +110,4 @@ of this capability to an ease-of-access player setting. For more guidance on how
 by PlayFab Party, please refer to the [text-to-speech guideline](party-text-to-speech-ux-guidelines.md) and the [speech-to-text guideline](party-speech-to-text-ux-guidelines.md).
 
 ## Next steps
-- [Find out more about PlayFab Party chat permissions and muting](understanding-party-chat-permissions-and-muting.md)
+- [Find out more about PlayFab Party chat permissions and muting](concepts-chat-permissions-and-muting.md)

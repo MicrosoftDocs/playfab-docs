@@ -1,16 +1,16 @@
 ---
-title: How PlayFab Party networks interact With your Discovery flows
+title: How PlayFab Party networks interact with your discovery flows
 description: How to incorporate PlayFab Party real-time chat and data communication networks into discovery flows.
-author: TBD
-ms.author: TBD
-ms.date: TBD
+author: jdeweyMSFT
+ms.author: jdewey
+ms.date: 08/16/2019
 ms.topic: article
 ms.prod: playfab
 ROBOTS: NOINDEX,NOFOLLOW
 keywords: playfab, multiplayer, networking
 ---
 
-# Integrating Discovery with PlayFab Party
+# Integrating discovery with PlayFab Party
 
 > [!IMPORTANT]
 > This feature is currently in **Private Preview**.
