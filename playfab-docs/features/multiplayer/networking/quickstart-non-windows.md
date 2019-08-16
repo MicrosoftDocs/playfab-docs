@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 # Quickstart for PlayFab Party on Android, iOS and Switch
 
-This quickstart is intended to be a high-level overview of the facets of PlayFab Party on Platforms other than Windows and Xbox (iOS, Android, Nintendo Switch and Switch). PlayFab Party was designed to be cross-platform from the ground up. 
+This quickstart is intended to be a high-level overview of the facets of PlayFab Party on Platforms other than Windows and Xbox (iOS, Android, and Nintendo Switch). PlayFab Party was designed to be cross-platform from the ground up. 
 
 Similarly, we've structured these quickstarts in the same way, where most of the information applies to all platforms, and platform-specific prerequisites and steps are described in the linked documents.
 

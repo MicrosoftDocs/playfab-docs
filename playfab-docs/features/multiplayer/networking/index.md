@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 >
 > It is provided to give you an early look at an upcoming feature and to allow you to provide feedback while it is still in development.
 >
-> Access to this feature is restricted to select titles, with SDKs available for Windows 10 PCs and Xbox One. Interoperable SDKs for iOS,  Android, and Nintendo Switch will be available this summer. If you are interested in this feature, please contact us at [helloplayfab@microsoft.com](mailto:helloplayfab@microsoft.com).
+> Access to this feature is restricted to select titles, with SDKs available for Windows 10 PCs and Xbox One. Interoperable SDKs for iOS,  Android, and Nintendo Switch are available now. If you are interested in this feature, please contact us at [helloplayfab@microsoft.com](mailto:helloplayfab@microsoft.com).
 
 PlayFab Party is a set of libraries and services for easily adding multiplayer real-time networking and chat communication to your game.
 
