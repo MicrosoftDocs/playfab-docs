@@ -1,6 +1,6 @@
 ---
-title: PlayFab Party API Reference Documentation
-description: Instructions for downloading the PlayFab Party API reference documentation.
+title: Understanding PlayFab Party endpoint data transmission
+description: How PlayFab Party real-time data communication works and the endpoint-to-endpoint transmission pipeline.
 author: v-kciril
 ms.author: v-kciril
 ms.date: 08/16/2019
@@ -10,7 +10,7 @@ ROBOTS: NOINDEX,NOFOLLOW
 keywords: playfab, multiplayer, networking
 ---
 
-# PlayFab Party API reference documentation
+# Understanding PlayFab Party endpoint data transmission
 
 > [!IMPORTANT]
 > This feature is currently in **Private Preview**.
@@ -19,4 +19,6 @@ keywords: playfab, multiplayer, networking
 >
 > Access to this feature is restricted to select titles, with SDKs available for Windows 10 PCs and Xbox One. Interoperable SDKs for iOS and Android are available now. If you are interested in this feature, you can request access by submitting a ticket on [support.playfab.com](https://support.playfab.com/hc/en-us/requests/new).
 
-Reference documentation for PlayFab Party is currently available in the header.
+**TBD**  
+
+Various option flags, send queues, and their behavior, getting visibility via statistics. 
