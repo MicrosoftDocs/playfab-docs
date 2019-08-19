@@ -116,8 +116,7 @@ The API provides methods for serializing the structures to web-service-friendly 
 > Games should be prepared for notifications of such changes, and then update or re-advertise the new *network descriptor* for an existing *network* in order to avoid problems with additional [devices](#device) connecting.
 
 Even with a *network descriptor* available, gaining access to a *network* is restricted to [users](#user) that the game authorizes to join the particular *network* in advance (or perhaps "just-in-time" when the [user](#user) has been added to a corresponding externally-managed gameplay session, for example).
-This [user](#user) authorization is done during *network* creation and through subsequent creation and revocation of [invitations](understanding-party-invitations.md) as described in more detail in the next topic.
-Games can choose to use invitations to restrict entry to only [users'](#user) friends, or to prevent malicious players from joining the *network*.
+This [user](#user) authorization is done during *network* creation and through subsequent creation and revocation of invitations - learn more about **Invitations** and the **security model** - COMING SOON! Games can choose to use invitations to restrict entry to only [users'](#user) friends, or to prevent malicious players from joining the *network*.
 
 [Devices](#device) can connect to more than one *network* at a time.
 You can learn more about whether and how to use multiple *networks* in a [later topic](understanding-party-multiple-networks.md).
@@ -149,8 +148,7 @@ For platforms and games that support multiple local players logged in, additiona
 
 `PartyLocalUser` objects are also important because they're the basis of all authentication.
 A valid local *user* must exist in order to create a new [network](#network) or to authentication into one.
-Authorizing users is described in more detail in the [next topic](understanding-party-invitations.md).
-Almost every operation requires a `PartyLocalUser` to be provided or present, even though very few operations are performed on `PartyLocalUser` objects themselves.
+Authorizing users is described in more detail in the next topic about **Invitations** and the **security model** - COMING SOON! Almost every operation requires a `PartyLocalUser` to be provided or present, even though very few operations are performed on `PartyLocalUser` objects themselves.
 
 `PartyLocalUser` objects are created using the `PartyManager` object.
 They can only be explicitly destroyed by their creators.
@@ -207,7 +205,7 @@ Working with *state changes* is described in full detail in a [later topic](unde
 
 ## Next steps
 
-* [Learn about the PlayFab Party security model and invitations](understanding-party-invitations.md)
+* Learn more about **Invitations** and the **security model** - COMING SOON!
 * [Learn how PlayFab Party interacts with your Discovery flows](understanding-party-discovery.md)
 * [Find out more about PlayFab Party chat communication](understanding-party-chat.md)
 * [See how to work with asynchronous operations and notifications in PlayFab Party](understanding-party-asynchronous-operations.md)

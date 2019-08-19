@@ -43,7 +43,7 @@ Before you can call any PlayFab API, you must have a [PlayFab developer account]
     - libjsoncpp-dev
     - libcurl4-openssl-dev
     - git-all
-2. Clone [XPlatCppSdk](https://github.com/PlayFab/XPlatCppSdk) into your project folder.  
+2. Clone [PlayFab cross-platform (CPP) SDK](https://github.com/PlayFab/XPlatCppSdk) into your project folder.  
 3. Create `main.cpp` and write `Hello World` in it, as shown below.
 
 ```cpp

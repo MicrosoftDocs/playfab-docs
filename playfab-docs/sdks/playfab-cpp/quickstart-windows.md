@@ -41,7 +41,7 @@ OS: This guide is written for Windows 10, using Visual Studio 2017.
 
 Installation:
 
-1. Download and install the [PlayFab Cross-Platform C++ SDK](https://github.com/PlayFab/XPlatCppSdk).
+1. Download and install the [PlayFab Cross-Platform (CPP) SDK](https://github.com/PlayFab/XPlatCppSdk).
 
 2. Download and install Visual Studio 2017.
     > [!NOTE]

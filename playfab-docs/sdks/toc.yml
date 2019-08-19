@@ -86,13 +86,13 @@
     items:
     - name: Quickstart
       href: ./xamarin/quickstart.md
-  - name: Cross platform C++
-    href: ./xplatcpp/index.md
+  - name: PlayFab CPP
+    href: ./playfab-cpp/index.md
     items:
     - name: Quickstart - Linux
-      href: ./xplatcpp/quickstart-linux.md
+      href: ./playfab-cpp/quickstart-linux.md
     - name: Quickstart - Windows
-      href: ./xplatcpp/quickstart-windows.md
+      href: ./playfab-cpp/quickstart-windows.md
     - name: Quickstart - Xbox One
-      href: ./xplatcpp/quickstart-xbox.md
+      href: ./playfab-cpp/quickstart-xbox.md
   
