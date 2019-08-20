@@ -50,3 +50,6 @@ Game clients need the Internet-facing IP address of your game servers to connect
 ## Enabling TCP/UDP ports for game servers
 
 The port requirements provided through Game Manager or the Entity API CreateBuild enables game clients to contact the virtual machine. It also configures the firewall on the resident operating system to enable network traffic on the ports you specify.
+
+## Public Internet-facing ports and IP addresses used by multiplayer servers
+The IP addresses used by the multiplayer VMs can be found [here](https://www.microsoft.com/en-us/download/details.aspx?id=56519). All VMs use a port range of 30000-31000. 
