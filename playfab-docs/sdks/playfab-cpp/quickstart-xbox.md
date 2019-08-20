@@ -20,14 +20,14 @@ Before you can call any PlayFab API, you must have a [PlayFab developer account]
 
 Make sure to follow the Xbox setup guide for Universal Windows Platform (UWP) applications: [UWP on Xbox One](https://docs.microsoft.com/en-us/windows/uwp/xbox-apps). This will help with setting up your Xbox, the XDK, and Visual Studio, for building an Xbox application.
 
-## Using the PlayFab XplatCPP SDK
+## Using the PlayFab CPP SDK
 
-Let's take a look at how to use the **PlayFab XplatCPP SDK**.
+Let's take a look at how to use the **PlayFab CPP SDK**.
 
 > [!NOTE]
 > The main difference for Xbox is that it has a separate project file for the solution.
 
-- Download the latest [XPlatCppSdk](https://github.com/PlayFab/XPlatCppSdk). Follow the instructions in the *Readme* to recursively clone the dependencies. Note that this SDK is supported across Windows, Linux, and Xbox. The Xbox SDK is currently supported only on Visual Studio 2017.
+- Download the latest [PlayFab cross-platform (CPP) SDK](https://github.com/PlayFab/XPlatCppSdk). Follow the instructions in the *README* to recursively clone the dependencies. Note that this SDK is supported across Windows, Linux, and Xbox. The Xbox SDK is currently supported only on Visual Studio 2017.
 
 Now, let's build the dependencies for Xbox.
 
@@ -91,7 +91,7 @@ Now, to deploy your game:
 2. Make sure you are connected to your Xbox.
 3. On the **Xbox One XDK Visual Studio 2017 Command Prompt**, run the `xbconnect \<xbox ip\>` command to connect to your Xbox. You should see the game running on your Xbox.
 
-### Adding the XPlatCppSdk to your project
+### Adding the PlayFab CPP SDK to your project
 
 1. In **Visual Studio**, right-click on the **Solution**. Select **Add \> Existing Project**.
 2. Navigate to and select **XPlatXbox.vcxproj** under the **build \> Xbox** folder of the **XPlatCppSdk** folder.
@@ -189,4 +189,4 @@ Now you have the code to make your first API call.
 3. Hit **F5** to deploy and run the application.
 4. In the Output log window, you should be able to see the result of your first PlayFab API call from the Xbox.
 
-Great! Now that you know how to set up the XplatCPP SDK for Xbox, you can create your game and start making PlayFab API calls.
+Great! Now that you know how to set up the PlayFab CPP SDK for Xbox, you can create your game and start making PlayFab API calls.
