@@ -42,9 +42,9 @@ Pick your SDK:
 - [Java](../sdks/java/quickstart.md)
 - [Defold (Lua)](../sdks/lua/quickstart-defold.md)
 - [Corona (Lua)](../sdks/lua/quickstart-corona.md)  
-- [Windows - C++](../sdks/xplatcpp/quickstart-windows.md)
-- [Linux - C++](../sdks/xplatcpp/quickstart-linux.md)  
-- [Xbox - C++](../sdks/xplatcpp/quickstart-xbox.md)
+- [Windows - C++](../sdks/playfab-cpp/quickstart-windows.md)
+- [Linux - C++](../sdks/playfab-cpp/quickstart-linux.md)  
+- [Xbox - C++](../sdks/playfab-cpp/quickstart-xbox.md)
 
 ## Updating your login mechanism
 

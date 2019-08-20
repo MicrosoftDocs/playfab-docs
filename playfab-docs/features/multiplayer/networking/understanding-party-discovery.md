@@ -92,4 +92,4 @@ A matchmaking service, such as [PlayFab Matchmaking](/../matchmaking/index.md), 
 
 ## Next steps
 
-- Learn more about [invitations and the security model](understanding-party-invitations.md).
+Learn more about **Invitations** and the **security model** - COMING SOON!
