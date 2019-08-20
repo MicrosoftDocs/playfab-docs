@@ -1,6 +1,6 @@
 - name: Overview
   href: index.md
-- name: Quickstart
+- name: Quickstarts
   items:
   - name: Quickstart non-Windows
     href: quickstart-non-windows.md
