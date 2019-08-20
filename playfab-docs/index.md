@@ -341,7 +341,7 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>Multiplayer</h3>
-                                                <p><a href='/gaming/playfab/features/multiplayer/servers/quickstart'>Servers</a></p><p><a href='/gaming/playfab/features/multiplayer/matchmaking/quickstart'>Matchmaking</a></p><p><a href='/gaming/playfab/features/multiplayer/networking/quickstart'>PlayFab Party</a></p><p><a href='/gaming/playfab/features/multiplayer/photon/quickstart'>Photon</a></p><p><a href='/gaming/playfab/features/multiplayer/pubsub/quickstart-unity'>PubSub Unity</a></p>
+                                                <p><a href='/gaming/playfab/features/multiplayer/servers/quickstart'>Servers</a></p><p><a href='/gaming/playfab/features/multiplayer/matchmaking/quickstart'>Matchmaking</a></p><p><a href='/gaming/playfab/features/multiplayer/networking/quickstart-non-windows'>PlayFab Party</a></p><p><a href='/gaming/playfab/features/multiplayer/photon/quickstart'>Photon</a></p><p><a href='/gaming/playfab/features/multiplayer/pubsub/quickstart-unity'>PubSub Unity</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -772,7 +772,7 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>Party</h3>
-                                                <p style='color: #7f7f7f'>Add real-time networking and chat into your game.</p><p><a href='/gaming/playfab/features/multiplayer/networking/'>Overview</a></p><p><a href='/gaming/playfab/features/multiplayer/networking/quickstart'>Quickstart</a></p>
+                                                <p style='color: #7f7f7f'>Add real-time networking and chat into your game.</p><p><a href='/gaming/playfab/features/multiplayer/networking/'>Overview</a></p><p><a href='/gaming/playfab/features/multiplayer/networking/quickstart-non-windows'>Quickstart</a></p>
                                             </div>
                                         </div>
                                     </div>
