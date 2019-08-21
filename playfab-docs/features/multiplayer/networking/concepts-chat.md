@@ -24,7 +24,7 @@ With PlayFab Party you can easily add voice and text communication to your game.
 PlayFab Party chat is:
 
 * **Flexible**: Gives you full control of how you want your player to communicate.
-* **Powerful**: Makes full use of hardware offload for encoding and de on supported platform.
+* **Powerful**: Uses hardware codec acceleration on supported platforms.
 * **Accessible**: Powered by Azure Cognitive Services, speech-to-text, text-to-speech and translation features are built-in and easy to enable.
 * **Efficient**: Having your chat system tightly integrated with your networking layer means voice data get sent where it needs to go in the most efficient way possible.
 
