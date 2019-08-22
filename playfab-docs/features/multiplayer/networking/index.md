@@ -31,7 +31,7 @@ Authoritative games have a central authority for game state, this may be a playe
 
 Non-authoritative designs require player devices to synchronize game state cooperatively, over a peer-to-peer network.
 
-Party is an ideal, secure, low latency transport for non-authoritative designs and authoritative designs where a cloud hosted dedicated server is not desired. Party is also well suited to add voice and text communication to non-gameplay social experiences your app may provide (e.g. in-game squad experiences, or post-game lobbies).
+Party is an ideal, secure, low-latency transport for non-authoritative designs and authoritative designs, where a cloud-hosted dedicated server is not desired. Party is also well-suited to add voice and text communication to non-gameplay social experiences your app may provide (e.g. in-game squad experiences, or post-game lobbies).
 
 Party utilizes Azure Cognitive Services to transcribe player voice chat and synthesize speech for text messages. This functionality has several uses, but was primarily designed as an accessibility aide. Typical usage of Party voice chat is billed on a per-minute basis, and up to 10% of those voice minutes can leverage transcription and synthesis for free. We recommend tying activation of this capability to an ease-of-access player setting.
 
@@ -41,7 +41,7 @@ One of the goals of PlayFab Party (and our other multiplayer services), is to fa
 
 ## Key Resources
 
-- [Windows 7 (Win32 C++), Windows 10 (Win32 C++), and Xbox One (XDK C++) nuget packages](https://www.nuget.org/profiles/PlayFab)
+- [Windows 7 (Win32 C++), Windows 10 (Win32 C++), and Xbox One (XDK C++) Nuget packages](https://www.nuget.org/profiles/PlayFab)
 - [Windows 10 and Xbox One sample (BumbleRumble)](https://github.com/PlayFab/PlayFab-Samples/tree/master/Samples/All/BumbleRumble)
 
 ## Roadmap
@@ -66,10 +66,10 @@ One of the goals of PlayFab Party (and our other multiplayer services), is to fa
 
 PlayFab Party is oriented around a few key concepts:
 
-- **Network** - A logical representation of a set of interconnected devices participating in a particular multiplayer experience, as well as basic state describing that collection.
+- **Network** - A logical representation of a set of interconnected devices participating in a particular multiplayer experience, as well as basic-state describing that collection.
 - **Endpoint** - A facility associated with a device that can receive data from other devices and is the source for sending data to other devices.
 - **State change** - A structure representing a notification to the local device regarding an asynchronous change in some aspect of the network.
-- **StartProcessingStateChanges** and **FinishProcessingStateChanges** - The pair of methods called by the app every UI frame to perform asynchronous operations, to retrieve results to be handled in the form of `PartyStateChange` structures, and then to free the associated resources when finished.
+- **`StartProcessingStateChanges`** and **`FinishProcessingStateChanges`** - The pair of methods called by the app every UI frame to perform asynchronous operations, to retrieve results to be handled in the form of `PartyStateChange` structures, and then to free the associated resources when finished.
 
 At a very high level, the game application uses the PlayFab Party library to configure a set of users signed-in on the local device to be moved into a PlayFab network. The app calls `StartProcessingStateChanges()` and `FinishProcessingStateChanges()` every UI frame.
 
@@ -79,8 +79,8 @@ As opposed to a client-server model, a PlayFab network is logically a fully-conn
 
 To learn about PlayFab Party features, common concepts, and how they fit together, see the [Understanding PlayFab Party](concepts-overview.md) topic.
 
-For details on parameters, return values, and behaviors when invoking the libraries, see the [PlayFab Party API Reference Documentation](party-reference.md) topic.
+For details on parameters, return values, and behaviors when invoking the libraries, see the [PlayFab Party API reference documentation](party-reference.md) topic.
 
-To read best practices for user experiences and Microsoft's recommendations around chat and data communication user interfaces, see the [PlayFab Party UX Guidelines](party-ux-guidelines.md) topic.
+To read best practices for user experiences and Microsoft's recommendations around chat and data communication user interfaces, see the [PlayFab Party UX guidelines](party-ux-guidelines.md) topic.
 
-For information on where to get client libraries and details on service pricing, see the [PlayFab Party Availability and Pricing](party-availability-and-pricing.md) topic.
+For information on where to get client libraries and details on service pricing, see the [PlayFab Party availability and pricing](party-availability-and-pricing.md) topic.

@@ -1,6 +1,6 @@
 - name: Overview
   href: index.md
-- name: Quickstart
+- name: Quickstarts
   items:
   - name: Quickstart non-Windows
     href: quickstart-non-windows.md
@@ -20,6 +20,10 @@
     href: concepts-chat.md
   - name: Chat permissions and muting
     href: concepts-chat-permissions-and-muting.md
+- name: Troubleshooting
+  items:
+  - name: Troubleshooting voice chat
+    href: concepts-audio-troubleshooting.md
 - name: UX guidelines
   items:
   - name: Speech-to-text UX guidelines
