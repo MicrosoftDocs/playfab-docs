@@ -1,5 +1,5 @@
 ---
-title: PlayFab Party Overview
+title: PlayFab Party conceptual overview
 description: An introduction to PlayFab Party real-time chat and data communication solutions.
 author: v-kciril
 ms.author: v-kciril
@@ -10,7 +10,7 @@ ROBOTS: NOINDEX,NOFOLLOW
 keywords: playfab, multiplayer, networking
 ---
 
-# PlayFab Party Overview
+# PlayFab Party conceptual overview
 
 > [!IMPORTANT]
 > This feature is currently in **Private Preview**.
@@ -81,8 +81,9 @@ Some multiplayer games have designs or modes that are not well-suited to this re
 
 If this applies to your game, you may wish to consider using [PlayFab multiplayer servers](../servers/index.md) to host custom dedicated game logic in a dynamically-scaling cloud environment in addition to using PlayFab Party for chat communication.
 
-### Next steps
+## Next steps
 
 - [Learn about PlayFab Party objects and their relationships](concepts-objects.md)
-- [Learn how PlayFab Party interacts with your Discovery flows](concepts-discovery.md)
+- [Learn about PlayFab Party invitations and the security model](concepts-invitations-security-model.md)
+- [Learn how PlayFab Party interacts with your discovery flows](concepts-discovery.md)
 - [Find out more about PlayFab Party chat communication](concepts-chat.md)

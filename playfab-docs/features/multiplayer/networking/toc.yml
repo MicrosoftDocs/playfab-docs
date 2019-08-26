@@ -14,6 +14,8 @@
     href: concepts-overview.md
   - name: PlayFab Party objects and their relationships
     href: concepts-objects.md
+  - name: Invitations and the security model
+    href: concepts-invitations-security-model.md
   - name: Integrating discovery with PlayFab Party
     href: concepts-discovery.md
   - name: Understanding chat
@@ -36,5 +38,4 @@
   href: release-notes.md
 - name: Reference
   href: party-reference.md
-
 

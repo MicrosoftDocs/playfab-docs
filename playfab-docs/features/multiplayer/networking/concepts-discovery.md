@@ -89,7 +89,3 @@ A matchmaking service, such as [PlayFab Matchmaking](/../matchmaking/index.md), 
 
 > [!NOTE]
 > An out-of-band communication medium is required to send the connection information from the creator to the other matched users.
-
-## Next steps
-
-Learn more about **Invitations** and the **security model** - COMING SOON!

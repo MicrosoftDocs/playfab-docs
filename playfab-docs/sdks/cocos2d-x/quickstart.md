@@ -25,8 +25,8 @@ If you are building for other platforms, the files you need are the same, but yo
 1. Download and install Cocos2d-x
     - [https://www.cocos2d-x.org/download](https://www.cocos2d-x.org/download)
     - Setting up Cocos2d-x requires some familiarity. Check out their docs site:
-      - [https://docs.cocos2d-x.org/cocos2d-x/en/en/](https://cocos2d-x.org/docs/cocos2d-x/en/en/)
-      - Note the [Cocos Prerequisites](https://docs.cocos2d-x.org/cocos2d-x/en/en/installation/prerequisites.html?h=prerequisites)
+      - [https://docs.cocos2d-x.org/cocos2d-x/en/en/](https://docs.cocos2d-x.org/cocos2d-x/v3/en/)
+      - Note the [Cocos Prerequisites](https://docs.cocos2d-x.org/cocos2d-x/v3/en/installation/prerequisites.html)
       - Visual Studio 2013 or 2015 are also required.
 
 2. Once you have Cocos2d-x configured, create a project using the Cocos CLI:
@@ -61,8 +61,11 @@ If you are building for other platforms, the files you need are the same, but yo
 4. Copy paste all files from {PlayFabCocos}/PlayFabClientSDK to {CocosGettingStarted}/Classes
 
 5. In Visual Studio, Load `{CocosGettingStarted}/proj.win32/CocosGettingStarted.sln`.
+
 6. We want to add the PlayFab files to the Cocos project.
+
 7. In Visual Studio, Solution Explorer panel, expand to the folder: Solution/CocosGettingStarted/src
+
 8. Open a Windows Explorer window at {CocosGettingStarted}/Classes
 
     - Select all files in {CocosGettingStarted}/Classes, EXCEPT AppDelegate.h, AppDelegate.cpp, HelloWorldScene.h, HelloWorldScene.cpp

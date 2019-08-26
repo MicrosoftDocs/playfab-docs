@@ -19,11 +19,11 @@ ms.localizationpriority: medium
 >
 > Access to this feature is restricted to select titles. If you are interested in trying it, please contact us at [helloplayfab@microsoft.com](mailto:helloplayfab@microsoft.com).
 
-This quickstart has been created to explain how to quickly get started with UGC, using direct service-to-service calls. In it, we will show you the step-by-step process for connecting to draft UGC content items, publishing those items, and then searching and finding them.
+The purpose of this guide is to explain how to quickly get started with UGC, using direct service-to-service calls. We will show you step-by-step how to connect to the draft UGC content items, publish those items, and then search and find them.
 
 ## Get an Entity Token
 
-UGC is designed to work with PlayFab entities, so the first step is to get an entity token using `LoginWithCustomID`. As a service call, it looks something like the example shown below.
+UGC is designed to work with PlayFab entities, so the first step is to get an entity token using `LoginWithCustomID`. As a service call, that looks something like this:
 
 ```csharp
 POST https://YOURTITLEID.playfabapi.com/Client/LoginWithCustomID HTTP/1.1
@@ -39,7 +39,7 @@ Content-Type: application/json
 }
 ```
 
-## Creating a draft UGC item
+## Create a draft UGC item
 
 You create "draft" UGC items by calling the `CreateDraftUgcItem` API. Draft items are designed to be reviewed and accessed by their creators before being moved to a published state. To create a draft item you need:
 
@@ -124,7 +124,7 @@ X-EntityToken: eyJJc3N1ZWQiOiIyMDE4LTEyLTE0VDAxOjU1OjMwLjY4MTMwOTJaIiwiRXhwaXJlc
 
 ## Do a simple search
 
-Once the publish call succeeds, it can be searched for using the previously published itemId. The Catalog/Search API executes a search against published catalog (including UGC items) using the provided parameters and returns a set of paginated results. Note that the `filter`, `orderBy` and `select` fields use OData as the query standard.
+Once the publish call succeeds, it can be searched for using the previously published itemId. The Catalog/Search API executes a search against published catalog (including UGC items) using the provided parameters and returns a set of paginated results. Note that the filter, orderBy and select fields use OData as the query standard.
 
 ```csharp
 POST  https://YOURTITLEID.playfabapi.com/Catalog/Search HTTP/1.1
