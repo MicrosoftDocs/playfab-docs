@@ -200,7 +200,7 @@ As your game gains traction, you’ll start to see player segments form naturall
 
 Then, as you run experiments and test your ideas, you can track how players in your key segments react. When you do something that stimulates the behavior you want to see in a key segment (such as a particular kind of promotion or event), make a note of it, and try other similar tactics to see if you can get that effect consistently. Of course, you need to be thoughtful about going to the same well too often or you can burn players out.
 
-![Segments - List](media/segments-list.png) | ![Segments - Edit Segment](media/segments-edit-segment.png)
+![Segments - List](media/segments5.png) | ![Segments - Edit Segment](media/segments6.png)
 
 At a minimum, games should think about the basic "funnel" in their game. For example, you can define some simple segments as follows:
 
@@ -445,7 +445,7 @@ Running successful events is perhaps the most essential LiveOps skill. A good ev
 
 - **A goal**. Good events start with measurable goals that the team can design toward. Make every event a part of your iterative, learning mindset and set goals then measure how well your events meet them in the wild.
 
-![Adventures](media/adventures-7.png)
+![Adventures](media/adventures7.png)
 
 So, what does that mean, exactly? In the abstract, a live event is simply a temporary but meaningful change to a game’s content. Holidays are an obvious theme for events, both because players will generally share some similar associations with the holiday which can be reflected in fun limited-time changes to the game’s appearance, and because holidays can be times when players have more free time available and offering them a reason to play can provide a boost in engagement. Games like *Clash of Clans* and *Brutes.io* make a practice of running major events for Halloween and the winter holidays, for example.
 
@@ -461,7 +461,7 @@ This helps create shared history in the game’s community. The community's abil
 
 For example, an event where players compete to catch the most fish doesn't necessarily require any changes to the game - you can just run a database query after the event to measure who caught the most fish., then let the community celebrate with prizes.
 
-![Snowpark](media/snowpark-8.png)
+![Snowpark](media/snowpark8.png)
 
 Companies like Kolibri Games understand the dynamics of limited-time events, and have hit all the right notes in their game *Idle Miner Tycoon*.
 
@@ -469,7 +469,7 @@ Companies like Kolibri Games understand the dynamics of limited-time events, and
 
 *“To prepare - first we have to prepare new assets with the graphic teams, the game designers refresh the ideas and then bring it all together on the development side. We have different channels to message players. Push notifications have generated a huge increase in logins. In-game messaging - pop-ups that notify players of events. Also all the channels - Facebook, Discord, Reddit.”*
 
-![Popup - Event Mine - Announcement](media/popup-event-mine-announcement.png) | ![Popup - Event Mine - Rewards](media/popup-event-mine-rewards.png)
+![Popup - Event Mine - Announcement](media/popups9.png) | ![Popup - Event Mine - Rewards](media/popups10.png)
 
 ![Car Launch](media/car-launch11.png)
 
@@ -655,7 +655,7 @@ Notes Dimitar Draganov, Senior Product Manager of flaregames, *“a well-designe
 
 If you view rewarded ads as part of the core game loop, you’ll want to optimize the player ad experience along with the rest of your game. That means you’ll need to monitor player engagement with these ad units closely, so you can track and optimize the rewards you offer to players who engage.
 
-![Quick Boost](media/quick-boost-13.png) | ![Adventure Communist](media/adventure-communist14.png)
+![Quick Boost](media/quickboost13.png) | ![Adventure Communist](media/adventure-communist14.png)
 
 Other important ad formats include *banners* (ads that run across the top or bottom of the screen, similar to what you might see on non-game websites), *interstitials* (ads that run while the game pauses briefly, for example between levels), and *offer walls* (a page that offers users rewards or incentives for real-money purchase or in exchange for completing a specific task).
 
