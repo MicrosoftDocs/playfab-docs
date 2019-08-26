@@ -16,8 +16,6 @@ PlayFab's multiplayer server hosting service allows you to operate a dynamically
 
 All PlayFab indie, pro, and enterprise tier customers can access the service and use a limited, free quota of multiplayer servers for product evaluation and testing. Because we're still improving the portal experience, samples, and documentation, this service is in a **preview** mode.
 
-During this public preview, if you're interested in operating the service at production-scale, you will enjoy a 30% discount. The preview period and discount are expected to end in March 2019.
-
 There are three key concepts to PlayFab multiplayer servers:
 
 1. **Game server executable**. This is the application that you are running in Azure. This server may be a simple network repeater, a fully authoritative game server running physics and AI, or anything in between.
