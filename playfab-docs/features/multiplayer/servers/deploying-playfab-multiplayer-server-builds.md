@@ -16,20 +16,21 @@ A PlayFab multiplayer server build is a combination of your game server executab
 
 Some aspects of a build cannot be modified once a build is created, this is the build's *definition*:
 
-- **Assets** - Assets are zip files. At least one asset containing your game server executable is required. (See [Basics of a PlayFab game server](basics-of-a-playfab-game-server.md)). Each asset has an asset mount path that specifies where it is mounted in the container file system. Assets should be less than 10GB in size. A typical mount path might be `C:\Assets`.
+- **Assets** - Assets are zip files. At least one asset containing your game server executable is required. (See [Basics of a PlayFab game server](basics-of-a-playfab-game-server.md)). Each asset has an asset mount path that specifies where it is mounted in the container file system. Assets should be less than 10GB in size and be of *zip*, *tar.gz* or *tar* file type. A typical mount path might be `C:\Assets`.
 - **Machine selection** - Required. The virtual machine size you want to use. PlayFab currently supports four Azure compute families (See [Multiplayer Servers detailed price sheet](multiplayer-servers-detailed-price-sheet.md)).  
 - **Servers per machine** - Required. The maximum number of game servers that should be operated on a single virtual machine. A typical configuration may have four servers on a Standard_D2s_v3, providing each server effectively 50% of a core.
-- **Certificate** - Optional. A pfx file (Windows) or pem file (Linux) containing a certificate to be installed within the container. Typically a certificate for service-to-service authentication is installed through this configuration.
-
-> [!NOTE]
-> Certificate names provided to PlayFab can *only contain letters and numbers*. No spaces or special characters (dashes, underscores, etc.)
-
+- **Certificate** - Optional. A *pfx* file (Windows) or *pem* file (Linux) containing a certificate to be installed within the container. Typically a certificate for service-to-service authentication is installed through this configuration.
 - **Network** - Required. A 3-tuple array of Ports, Names, and Protocols (TCP or UDP) that your game server is listening upon for incoming traffic. Outgoing (or solicited) network flows do not need to be configured. (See [Connecting clients to game servers](connecting-clients-to-game-servers.md)).
-- **Container** - Required. The container that will host your game server. Currently only Windows Server Core is supported.
+- **Container** - Required. The container that will host your game server. Currently only Windows Server Core containers can be chosen through the Game Manager UX ([although the API does support the usage of custom Linux containers](xref:titleid.playfabapi.com.multiplayer.multiplayerserver.createbuildwithcustomcontainer)). 
+
+> [!NOTE] 
+> Asset filenames cannot only contain alphanumeric characters, underscores, hyphens, and periods.
+>
+> Certificate names can *only contain letters and numbers*. No spaces or special characters (dashes, underscores, etc.)
 
 You provide the build definition when you create a build through the PlayFab **Multiplayer Servers** tab:
 
-![Game Manager - Multiplayer - Thunderhead - New Build](media/tutorials/game-manager-thunderhead-new-build.png)
+![Game Manager - Multiplayer - Thunderhead - New Build](media/tutorials/game-manager-thunderhead-new-build-navAUG2019.png)
 
 Build configuration can be modified at any time in a build's life. The build configuration is a 3-tuple array containing:
 
@@ -37,13 +38,13 @@ Build configuration can be modified at any time in a build's life. The build con
 - **Standby servers** - How many game servers should be maintained in a "standby state" to handle incoming allocations in the specified region. This should be determined by the maximum allocation rate (allocations per second) for the build, and tuned over time as player behavior changes.
 - **Maximum servers** - The maximum number of game servers to operate in the specified region
 
-![Game Manager - Multiplayer - Thunderhead - New Build - Regions](media/tutorials/game-manager-thunderhead-new-build-regions.png)
+![Game Manager - Multiplayer - Thunderhead - New Build - Regions](media/tutorials/game-manager-thunderhead-new-build-regions-navAUG2019.png)
 
 When selecting the virtual machine size and regional configuration, keep in mind the overall usage limits configured for your PlayFab title. See [Accessing increased core limits and additional Azure regions](identifying-and-increasing-core-limits.md).
 
-Once you've provided a valid build definition, you will be able to deploy the build in Game Manager. In 5-10 minutes you should see standing by machines on the **View Sessions** page for your build, as shown below.
+Once you've provided a valid build definition, you will be able to deploy the build in Game Manager. In 5-10 minutes you should see standing by machines on the **Servers** page for your build, as shown below.
 
-![Game Manager - Thunderhead - View Sessions](media/tutorials/game-manager-thunderhead-view-sessions.png)
+![Game Manager - Thunderhead - View Sessions](media/tutorials/game-manager-thunderhead-view-servers-navAUG2019.png)
 
 After your game has launched, you will probably want to update your game server without interrupting service to players. This is a typical workflow for updating a game server:
 

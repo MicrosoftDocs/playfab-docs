@@ -25,7 +25,7 @@ This quickstart describes how to quickly get started using the PubSub client for
 
 - **Unity 2018** - This package currently only works with Unity 2018 or later.
 
-- **PlayFab SDK for Unity** - To use this package, you must be familiar with the PlayFab SDK and have it already installed.  Please ensure you have the latest SDK if you are having issues.
+- **PlayFab SDK for Unity** - To use this package, you must be familiar with the PlayFab SDK and have it already installed. *Please be sure to have the [ver 2.61.190219](https://github.com/PlayFab/UnitySDK/releases/tag/2.61.190219) or earlier of the PlayFab SDK installed, the current version of PubSub package does not support the new multi-user features yet.*
 
 - **PlayFab Authentication** - To use this package, you must also be familiar with authenticating in PlayFab.
 

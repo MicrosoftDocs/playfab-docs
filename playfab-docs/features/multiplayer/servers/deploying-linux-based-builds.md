@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Deploying Linux based builds
 
-PlayFab Multiplayer Servers can deploy Linux-based game servers. While [Windows managed container configurations](deploying-playfab-multiplayer-server-builds.md) are a simple and default choice for many game developers, Linux servers are deployed on virtual machines running Ubuntu and enjoy a cheaper hourly rate.
+PlayFab Multiplayer Servers can deploy Linux-based game servers. While [Windows managed container configurations](servers\deploying-playfab-multiplayer-server-builds.md) are a simple and default choice for many game developers, Linux servers are deployed on virtual machines running Ubuntu and enjoy a cheaper hourly rate.
 
 Linux-based multiplayer server builds are deployed and managed very similarly to Windows builds. But there are a few important differences between PlayFab's Windows and Linux options:
 

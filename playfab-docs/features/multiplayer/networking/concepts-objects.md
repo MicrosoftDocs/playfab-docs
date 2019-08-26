@@ -21,11 +21,11 @@ keywords: playfab, multiplayer, networking
 
 Successfully using the power and flexibility of the PlayFab Party API begins with understanding the following crucial objects defined in its scope:
 
-* [**Device**](#device) - A distinct instance of the game executing on a physical device. A local [device](#device) exists whenever the API is being used.
-* [**User**](#user) - An individual logged-on player, or more precisely, a PlayFab `title_player_account` [Entity](/../../data/entities/index.md) that the game has actively provided to PlayFab Party for authentication and identification purposes. One or more [users](#user) are associated with a given [device](#device).
-* [**Network**](#network) - A secured collection of one or more [devices](#device) and their authorized [users](#user) that the game creates for the purpose of exchanging chat or data communication. This typically aligns with a game's multiplayer session or chat "lobby" concept.
-* [**Endpoint**](#endpoint) - An abstraction for sending and receiving data within a [network](#network). An endpoint may represent a [device](#device), a [user](#user), or any desired game-specific concept.
-* [**Chat control**](#chat-control) - A representation of a [user](#user) specifically for configuring, originating, and targeting voice and text chat in one or more [networks](#network).
+* [**Device**](#device) - A distinct instance of the game executing on a physical device. A local device exists whenever the API is being used.
+* [**User**](#user) - An individual logged-on player, or more precisely, a PlayFab `title_player_account` [Entity](/../../data/entities/index.md) that the game has actively provided to PlayFab Party for authentication and identification purposes. One or more users are associated with a given device.
+* [**Network**](#network) - A secured collection of one or more devices and their authorized users that the game creates for the purpose of exchanging chat or data communication. This typically aligns with a game's multiplayer session or chat "lobby" concept.
+* [**Endpoint**](#endpoint) - An abstraction for sending and receiving data within a network. An endpoint may represent a device, a user, or any desired game-specific concept.
+* [**Chat control**](#chat-control) - A representation of a user specifically for configuring, originating, and targeting voice and text chat in one or more networks.
 
 ## Object relationships
 
@@ -34,38 +34,38 @@ For example:
 
 ![Simplified PlayFab Party object hierarchy](media/simplified-party-object-hierarchy.png)
 
-The preceding relationship diagram is incomplete because PlayFab Party supports [devices](#device) connecting to more than one [network](#network) at a time, for example to maintain communication with a set of friends over time while the group also joins and leaves separate larger game sessions with strangers.
+The preceding relationship diagram is incomplete because PlayFab Party supports devices connecting to more than one network at a time, for example to maintain communication with a set of friends over time while the group also joins and leaves separate larger game sessions with strangers.
 
-Using multiple networks results in slightly more nuanced object relationships for games that choose to leverage that feature. Only a single remote [device](#device) API object is created when a particular instance is encountered in the context of multiple [networks](#network).
+Using multiple networks results in slightly more nuanced object relationships for games that choose to leverage that feature. Only a single remote device API object is created when a particular instance is encountered in the context of multiple networks.
 
-This allows games to perform any desired optimization or security correlation regarding the [device](#device) across the [networks](#network).
-PlayFab Party itself also does this internally to ensure [users](#user) experience efficient and interruption-free transmission of chat data between a pair of [chat controls](#chat-control) even when there's more than one possible [network](#network) connection to use.
-Thus, it can sometimes be helpful to think of [device](#device) or [chat control](#chat-control) objects as conceptually residing "outside" of [networks](#network).
+This allows games to perform any desired optimization or security correlation regarding the device across the networks.
+PlayFab Party itself also does this internally to ensure users experience efficient and interruption-free transmission of chat data between a pair of chat controls even when there's more than one possible network connection to use.
+Thus, it can sometimes be helpful to think of device or chat control objects as conceptually residing "outside" of networks.
 
-As an example, the following diagram shows two [networks](#network) and three [devices](#device) with [users](#user), [chat controls](#chat-control) and [endpoints](#endpoint).
-*Device A* and its two [chat controls](#chat-control) (with associated [users](#user)) are participating in *Network 1*, while *Devices B* and *C* have connected both there and to *Network 2* with a single [chat control](#chat-control) (and associated [user](#user)) each.
-All [devices](#device) have created one or two [endpoints](#endpoint) in each [network](#network) where they're connected:
+As an example, the following diagram shows two networks and three devices with users, chat controls and endpoints.
+*Device A* and its two chat controls (with associated users) are participating in *Network 1*, while *Devices B* and *C* have connected both there and to *Network 2* with a single chat control (and associated user) each.
+All devices have created one or two endpoints in each network where they're connected:
 
 ![PlayFab Party objects in multiple networks](media/party-objects-in-multiple-networks.png)
 
-In the above diagram, every [device](#device) sees a single instance of all three [devices](#device) and their [chat controls](#chat-control), since they have at least one [network](#network) in common with each other.
+In the above diagram, every device sees a single instance of all three devices and their[chat controls, since they have at least one network in common with each other.
 *Device A* only knows about *Endpoints 1-4* in *Network 1*, but *Devices B* and *C* can see the *Endpoints 5-7* they created in *Network 2* as well.
 
-If *Device C* were instead only participating in *Network 2* in the above diagram and not both [networks](#network), then:
+If *Device C* were instead only participating in *Network 2* in the above diagram and not both networks, then:
 
 * *Device C* obviously would not have been able to create *Endpoint 4* in *Network 1*, nor see *Endpoints 1-3* that the others had created within it.
-* *Device C* would not know about *Device A* or its two [chat controls](#chat-control) only in *Network 1*.
-* *Device A* would similarly not see *Device C* or its [chat control](#chat-control) only in *Network 2*.
+* *Device C* would not know about *Device A* or its two chat controls only in *Network 1*.
+* *Device A* would similarly not see *Device C* or its chat control only in *Network 2*.
 
-*Device B* however **would** still see all [devices](#device) and their [chat controls](#chat-control) since it's still in both [networks](#network).
+*Device B* however **would** still see all devices and their chat controls since it's still in both networks.
 
-So, despite [devices](#device) and [chat controls](#chat-control) being "outside" a strict hierarchical tree relationship with [networks](#network), it's important to note that a game instance will never actually encounter a remote [device](#device) or [chat control](#chat-control) without the context of an accompanying [network](#network).
-If the local and remote [device](#device) or [chat control](#chat-control) have at least one [network](#network) in common, the remote object may be visible.
-But if there are no common [networks](#network), then the remote object will never be created.
+So, despite devices and chat controls being "outside" a strict hierarchical tree relationship with networks, it's important to note that a game instance will never actually encounter a remote device or chat control without the context of an accompanying network.
+If the local and remote device or chat control have at least one network in common, the remote object may be visible.
+But if there are no common networks, then the remote object will never be created.
 
 > [!NOTE]
-> Games are not required to connect to more than one [network](#network) simultaneously in order to use PlayFab Party successfully.
-> You can learn more about whether and how to use multiple [networks](#network) in a [subsequent advanced topic](concepts-multiple-networks.md).
+> Games are not required to connect to more than one network simultaneously in order to use PlayFab Party successfully.
+> You can learn more about whether and how to use multiple networks in a [subsequent advanced topic](concepts-multiple-networks.md).
 
 ## Common object attributes
 
@@ -78,9 +78,9 @@ These values aren't transmitted remotely, since pointer values only have meaning
 
 Finally, all of the above objects except [network](#network) have a specialized "Local" sub-object containing methods and properties that are only available to the local [device](#device) that owns the object.
 
-For example, there's a base `PartyEndpoint` object used to represent any local or remote [endpoint](#endpoint), and a more specific `PartyLocalEndpoint` object that can be retrieved via `PartyEndpoint::GetLocal()` only if that [endpoint](#endpoint) was actually created by the local [device](#device).
+For example, there's a base `PartyEndpoint` object used to represent any local or remote [endpoint](#endpoint), and a more specific `PartyLocalEndpoint` object that can be retrieved via `PartyEndpoint::GetLocal()` only if that endpoint was actually created by the local device.
 
-This is where the `PartyLocalEndpoint::SendMessage()` method for transmitting game data is exposed, for example, since it wouldn't make sense for one [device](#device) to be able to somehow transmit data from a completely different remote [device](#device)'s source [endpoints](#endpoint).
+This is where the `PartyLocalEndpoint::SendMessage()` method for transmitting game data is exposed, for example, since it wouldn't make sense for one device to be able to somehow transmit data from a completely different remote device's source endpoints.
 
 When using the C++ PlayFab Party interface (recommended), objects are exposed as C++ class instances.
 When using the flat C interface, objects are represented by handle values.
@@ -105,7 +105,7 @@ This is where new [networks](#network) and local [users](#user) are initially cr
 ### Network
 
 A `PartyNetwork` object represents a secured collection of participating [devices](#device), their authorized [users](#user), and any accompanying [endpoints](#endpoint) or [chat controls](#chat-control).
-*Networks* are initially created by the game as empty, but [devices](#device) connect to them and authenticate at least one local [user](#user) into the *network*.
+*Networks* are initially created by the game as empty, but devices connect to them and authenticate at least one local user into the *network*.
 *Networks* that don't have any authenticated users are automatically destroyed after a timeout.
 
 In order to connect to them, *networks* are referenced using *network descriptors*.
@@ -113,17 +113,17 @@ These are largely opaque binary structures containing the information that PlayF
 The API provides methods for serializing the structures to web-service-friendly strings and back so they can be exchanged with other devices using common social platform invite mechanisms, [PlayFab Matchmaking](../matchmaking/index.md), or other external rendezvous mechanisms outside the scope of PlayFab Party itself.
 > [!NOTE]
 > The *network descriptor* for a *network* can change in rare circumstances.
-> Games should be prepared for notifications of such changes, and then update or re-advertise the new *network descriptor* for an existing *network* in order to avoid problems with additional [devices](#device) connecting.
+> Games should be prepared for notifications of such changes, and then update or re-advertise the new *network descriptor* for an existing *network* in order to avoid problems with additional devices connecting.
 
-Even with a *network descriptor* available, gaining access to a *network* is restricted to [users](#user) that the game authorizes to join the particular *network* in advance (or perhaps "just-in-time" when the [user](#user) has been added to a corresponding externally-managed gameplay session, for example).
-This [user](#user) authorization is done during *network* creation and through subsequent creation and revocation of as described in more detail in the topic **Invitations** and the **security model** - COMING SOON!.
+Even with a *network descriptor* available, gaining access to a *network* is restricted to users that the game authorizes to join the particular *network* in advance (or perhaps "just-in-time" when the user has been added to a corresponding externally-managed gameplay session, for example).
+This user authorization is done during *network* creation and through subsequent creation and revocation of as described in more detail in the topic [Invitations and the security model](concepts-invitations-security-model.md).
 
-Games can choose to use invitations to restrict entry to only [users'](#user) friends, or to prevent malicious players from joining the *network*.
+Games can choose to use invitations to restrict entry to only users' friends, or to prevent malicious players from joining the *network*.
 
-[Devices](#device) can connect to more than one *network* at a time.
+Devices can connect to more than one *network* at a time.
 You can learn more about whether and how to use multiple *networks* in a [later topic](concepts-multiple-networks.md).
 
-The kinds of actions that can be taken on `PartyNetwork` objects include authenticating local [users](#user) into it, connecting and enumerating [chat controls](#chat-control), creating and enumerating [endpoints](#endpoint), or getting *network*-wide performance information.
+The kinds of actions that can be taken on `PartyNetwork` objects include authenticating local users into it, connecting and enumerating chat controls, creating and enumerating endpoints, or getting *network*-wide performance information.
 
 ### Device
 
@@ -131,8 +131,8 @@ The `PartyDevice` object represents a distinct instance of the game and its Play
 Most operations aren't performed on `PartyDevice` objects themselves; rather they're an organizational mechanism for defining which [endpoints](#endpoint) or [chat controls](#chat-control) belong to that game instance, particularly for platforms and games that support more than one local [user](#user) simultaneously.
 PlayFab Party uses this relationship knowledge to optimize transmission of game data and chat by only sending one copy of a message even if multiple targets on the device need to receive it, for example.
 
-Remote `PartyDevice` objects are "byproducts" of connecting to a [network](#network) and authenticating a [user](#user) into that [network](#network).
-They're only created when valid, authenticated remote [users](#user) associated with the *device* are participating in a [network](#network) to which the local *device* is also connected, and are destroyed once that is no longer true.
+Remote `PartyDevice` objects are "byproducts" of connecting to a [network](#network) and authenticating a user into that network.
+They're only created when valid, authenticated remote users associated with the *device* are participating in a network to which the local *device* is also connected, and are destroyed once that is no longer true.
 
 On the other hand, the `PartyLocalDevice` specialized sub-object is always available for the local game instance to reference as long as PlayFab Party is initialized.
 It is never explicitly created or destroyed.
@@ -140,7 +140,7 @@ It is never explicitly created or destroyed.
 ### User
 
 A PlayFab Party *user* is a unique human player for whom the game has performed [PlayFab Player Login](../../authentication/login/index.md) in order to acquire a `title_player_account` [Entity ID](/../../data/entities/index.md) and token.
-Remote users are identified within the PlayFab Party API solely by their [Entity ID](/../../data/entities/index.md) string associated with [chat controls](#chat-control) and optionally with [endpoints](#endpoint).
+Remote users are identified within the PlayFab Party API solely by their Entity ID string associated with [chat controls](#chat-control) and optionally with [endpoints](#endpoint).
 They are not represented using a dedicated object.
 This is because PlayFab Party doesn't have functionality that meaningfully interacts with arbitrary users, other than for raw identification and as a label associated with those other objects.
 
@@ -151,13 +151,13 @@ For platforms and games that support multiple local players logged in, additiona
 `PartyLocalUser` objects are also important because they're the basis of all authentication.
 A valid local *user* must exist in order to create a new [network](#network) or to authentication into one.
 
-Authorizing users is described in more detail in the the topic covering **Invitations** and the **security model** - COMING SOON!
+Authorizing users is described in more detail in the the topic covering [Invitations and the security model](concepts-invitations-security-model.md).
 
 Almost every operation requires a `PartyLocalUser` to be provided or present, even though very few operations are performed on `PartyLocalUser` objects themselves.
 
 `PartyLocalUser` objects are created using the `PartyManager` object.
 They can only be explicitly destroyed by their creators.
-They have no direct object representation on remote [devices](#device), but [chat controls](#chat-control) and [endpoints](#endpoint) associated with them will be destroyed if the owning [device](#device) removes the `PartyLocalUser` or disconnects from the network, gracefully or otherwise.
+They have no direct object representation on remote [devices](#device), but chat controls and endpoints associated with them will be destroyed if the owning device removes the `PartyLocalUser` or disconnects from the network, gracefully or otherwise.
 
 ### Endpoint
 
@@ -165,18 +165,18 @@ They have no direct object representation on remote [devices](#device), but [cha
 Like typical networking sockets, *endpoints* are an abstracted addressing mechanism for originating or targeting data messages within a [network](#network).
 They could represent a [device](#device), an individual [user](#user), or any arbitrary game-defined concept (e.g., a tank unit) that you'd like to uniquely identify for sending and receiving messages.
 
-The specialized `PartyLocalEndpoint` sub-object is for *endpoints* created in the [network](#network) by the local game instance.
+The specialized `PartyLocalEndpoint` sub-object is for *endpoints* created in the network by the local game instance.
 This is where most *endpoint* functionality resides.
-Its `PartyLocalEndpoint::SendMessage()` transmits game data payloads from the `PartyLocalEndpoint` to one or more other `PartyEndpoint` objects in the same [network](#network).
+Its `PartyLocalEndpoint::SendMessage()` transmits game data payloads from the `PartyLocalEndpoint` to one or more other `PartyEndpoint` objects in the same network.
 It provides various options for selecting how best to handle Internet packet loss (e.g., guarantee delivery and/or ordering), to control the tradeoff between low latency versus coalescing multiple messages from the same or other local endpoints for lower bandwidth usage, and to react when the connection quality isn't sufficient to support the rate at which the game is sending.
 You can learn more about transmitting game data using *endpoints* in a [later topic](concepts-endpoint-transmission.md).
 
-In addition to being a source or destination for data messages itself, each `PartyEndpoint` object is also assigned a 16-bit *endpoint unique identifier* by PlayFab Party that allows you to reference the specific *endpoint* in message payloads sent to or from separate `PartyEndpoint` objects within the [network](#network).
+In addition to being a source or destination for data messages itself, each `PartyEndpoint` object is also assigned a 16-bit *endpoint unique identifier* by PlayFab Party that allows you to reference the specific *endpoint* in message payloads sent to or from separate `PartyEndpoint` objects within the network.
 This provides a convenient way to avoid the overhead of sending a full, larger user [Entity ID](/../../data/entities/index.md) string or other identifier it might represent, for example, without having to build your own peer-to-peer identity agreement negotiation.
 
 `PartyLocalEndpoint` objects are created using their containing `PartyNetwork` object.
-This results in corresponding `PartyEndpoint` objects being created on remote [devices](#device).
-An *endpoint* can be destroyed explicitly by its creator, or will be destroyed implicitly when the owning [device](#device) disconnects from the network or the associated `PartyLocalUser` object (if one had been specified) is removed from the network.
+This results in corresponding `PartyEndpoint` objects being created on remote devices.
+An *endpoint* can be destroyed explicitly by its creator, or will be destroyed implicitly when the owning device disconnects from the network or the associated `PartyLocalUser` object (if one had been specified) is removed from the network.
 
 ### Chat control
 
@@ -187,12 +187,12 @@ The specialized `PartyLocalChatControl` sub-object is also available for *chat c
 This is where you configure the permissions allowing chat communication to or from remote `PartyChatControl` objects, for example, to choose network-wide vs. team-only chat, or to apply platform policy restrictions.
 Local *chat controls* are used for sending chat text, synthesizing text to speech, requesting transcriptions and translations of voice streams, muting, and more.
 
-`PartyLocalChatControl` objects must be connected to a [network](#network) before they will be created as `PartyChatControl` objects on remote [devices](#device) in that same [network](#network).
-A [device](#device) will always only see a single representative `PartyChatControl` object created, even when that [device](#device) and *chat control* have connected to more than one [network](#network) in common.
+`PartyLocalChatControl` objects must be connected to a [network](#network) before they will be created as `PartyChatControl` objects on remote [devices](#device) in that same network.
+A device will always only see a single representative `PartyChatControl` object created, even when that device and *chat control* have connected to more than one network in common.
 This helps avoid unnecessary duplication or interruption of audio and text chat messages.
 
 `PartyLocalChatControl` objects are created using the containing `PartyLocalDevice` object.
-A *chat control* can be destroyed explicitly by its creator, or will be destroyed implicitly when the owning [device](#device) disconnects from the network or the associated `PartyLocalUser` object is removed from the network.
+A *chat control* can be destroyed explicitly by its creator, or will be destroyed implicitly when the owning device disconnects from the network or the associated `PartyLocalUser` object is removed from the network.
 
 ### State Change
 
@@ -210,10 +210,7 @@ Working with *state changes* is described in full detail in a [later topic](conc
 
 ## Next steps
 
-- Learn more about **Invitations** and the **security model** - COMING SOON!
-
-- [Learn how PlayFab Party interacts with your Discovery flows](concepts-discovery.md)
-
+- [Learn about PlayFab Party invitations and the security model](concepts-invitations-security-model.md)
+- [Learn how PlayFab Party interacts with your discovery flows](concepts-discovery.md)
 - [Find out more about PlayFab Party chat communication](concepts-chat.md)
-
 - [See how to work with asynchronous operations and notifications in PlayFab Party](concepts-async-operations.md)
