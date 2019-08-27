@@ -18,6 +18,8 @@
   items:
   - name: Deploying PlayFab multiplayer server builds
     href: deploying-playfab-multiplayer-server-builds.md
+  - name: Deploying Linux based builds via API
+    href: deploying-linux-based-builds.md
   - name: Archiving and retrieving multiplayer server logs
     href: archiving-and-retrieving-multiplayer-server-logs.md
   - name: Lifecycle of multiplayer server builds
