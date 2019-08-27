@@ -20,7 +20,7 @@ ms.localizationpriority: medium
 >
 > Access to this feature is restricted to select titles. Interoperable SDKs for Windows 10 PCs, Windows 7 PCs, Xbox One, iOS,  Android, and Nintendo Switch are available now. If you are interested in this feature, please contact us at [helloplayfab@microsoft.com](mailto:helloplayfab@microsoft.com).
 
-PlayFab Party simplifies adding low-latency chat and data communication to your game in a way that's flexible, inclusive, and secured. This fully managed service and SDKS are available for a variety of platforms and takes care of:
+PlayFab Party simplifies adding low-latency chat and data communication to your game in a way that's flexible, inclusive, and secured. This fully-managed service and SDKs are available for a variety of platforms and take care of:
 
 - establishing connections that are encrypted and authenticated to protect game information and user privacy
 
@@ -28,7 +28,8 @@ PlayFab Party simplifies adding low-latency chat and data communication to your 
 
 - working with each device's platform and audio hardware (e.g., microphone input, headset output) for enabling voice chat
 
-- seamlessly integrating real-time *speech-to-text transcription*, *text-to-speech synthesis
+- seamlessly integrating real-time *speech-to-text transcription*, *text-to-speech synthesis*, and *language translation* so that player abilities or preferences aren't artificial barriers to social participation.
+
 PlayFab Party is a set of libraries and services for easily adding multiplayer real-time networking and chat communication to your game.
 
 Multiplayer games are typically one of two designs:
