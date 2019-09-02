@@ -47,7 +47,6 @@ For details on parameters, return values, and behaviors when invoking the librar
 
 To read best practices for user experiences and Microsoft's recommendations around chat and data communication user interfaces, see the [PlayFab Party UX guidelines](party-ux-guidelines.md) topic.
 
-
 ## Resources
 
 - [Windows 7 (Win32 C++), Windows 10 (Win32 C++), and Xbox One (XDK C++) Nuget packages](https://www.nuget.org/profiles/PlayFab)
@@ -100,5 +99,3 @@ Multiple local users on a single device, as well as connecting to more than one 
 While PlayFab Party is flexible regarding topology for exchanging data among inter-connected devices, its conceptually peer-to-peer orientation implies that the authoritative game state will be managed on one or more of the users' devices cooperatively.
 
 Some multiplayer games have designs or modes that are not well-suited to this requirement, perhaps due to supporting device form factors with insufficient resources, or due to competitive cheating concerns, for example. If this applies to your game, you may wish to consider using [PlayFab multiplayer servers](../servers/index.md) to host custom dedicated game logic in a dynamically-scaling cloud environment in addition to using PlayFab Party for chat communication.
-
-
