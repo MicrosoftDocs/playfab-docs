@@ -109,7 +109,7 @@ Take a moment to verify that the project builds. Try to build the Solution and m
 2. Right-click on the *PlayFabXboxGuide* project and select **Properties**.
 3. Under **Configuration Properties \> C/C++ \> General \> Additional Include Directories**, add the path to the **code**, **code\include** and **external\include** folders.
 4. Once added, the **Additional Include Directories** value should look like this:  
-    `\<path to the sdk root\>\code; \<path to the sdk root\>\code\include; \<path to the sdk root\>\external\include;%(AdditionalIncludeDirectories)`
+    `\<path to the sdk root\>\code; \<path to the sdk root\>\code\include; \<path to the sdk root\>\external\json\include;%(AdditionalIncludeDirectories)`
 5. Add a new header file called **PlayFabApiCall.h**, and add the code shown below to the file.
 
 ```cpp
