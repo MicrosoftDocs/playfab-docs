@@ -49,7 +49,7 @@ If it finds an error:
 
 - An error message will be displayed.
 - Fix the error, and select **SUBMIT** again.
-- By default, new uploads must deployed by selecting the **DEPLOY REVISION # TO LIVE** link. This enables you to update or roll back to/from multiple versions of CloudScript.
+- By default, new uploads must be deployed by selecting the **DEPLOY REVISION # TO LIVE** link. This enables you to update or roll back to/from multiple versions of CloudScript.
 
 The first time you press the orange **UPLOAD NEW REVISION** button, you will see a file selector where you can upload a file from your local machine.
 
