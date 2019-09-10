@@ -83,7 +83,7 @@ Replace the `Title Id` place holder with your own Title Id.
 Navigate to your title's **Game Manager** page, then:
 
 1. Navigate to **Add-ons** tab.
-2. In the list of **Add-ons**, find and select **Photon**, as shown in the example provided below.
+2. In the list of **Add-ons**, find and select **Photon**.
 
 ![Game Manager Add-ons tab](media/tutorials/photon-game-manager-addons-tab.png)  
 

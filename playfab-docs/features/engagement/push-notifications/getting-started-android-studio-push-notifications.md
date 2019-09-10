@@ -176,24 +176,23 @@ At this point, the **Google Play Console Project** is successfully linked to the
 
 The purpose of this chapter is to show you how to configure PlayFab Services, so that it can send push notifications to the player on your behalf.
 
-- First, you must go to **Settings (1)** in your menu.
-- Then select the  **Push Notifications (2)** tab.
+- First, you must go to **Title settings** in your title's Settings menu.
 
-- On your screen, select the **Android Settings (3)** button, as shown in the example provided below.
+- Select the  **Push Notifications** tab.
+
+- For the Android option, select the **Settings** icon.
 
 ![PlayFab - Push Notifications - Android settings](../media/tutorials/playfab-push-notifications-android-settings.png)
 
-- You will be asked for the **FCM** server key.
+- You will be asked for your **Google server API key**.
 
 - Copy the one you received through the Firebase console, as shown in the example provided below.
 
 ![PlayFab - Firebase Console - add server api key](../media/tutorials/playfab-firebase-add-server-api-key.png)
 
-- If everything is correct, you will be presented with a page that shows **Push Notifications** as wired and **Active (1)**.
+- If everything is correct, you will be presented with a page that shows **Push Notifications** as **Active**.
 
-- Now you must verify that the title is using the newest FCM architecture. To do this, select the **Upgrade Push Notifications (2)** button.
-
-![PlayFab - Push Notifications - Upgrade Push Notifications](../media/tutorials/playfab-upgrade-push-notifications.png)
+![PlayFab - Push Notifications - active](../media/tutorials/playfab-push-notifications-android-active.png)
 
 This concludes configuring your PlayFab title.
 
