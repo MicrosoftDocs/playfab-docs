@@ -90,8 +90,7 @@ Some of the number of different ways that PlayFab maps onto a game are shown bel
 - [Catalogs](../features/commerce/items/catalogs.md) (Items) - Very useful for storing configuration data about your Items and potentially being able to sell them as virtual goods.
 - [Groups](../features/social/groups/using-shared-group-data.md) – Groups are generally used for things like guilds or clans. Groups are arbitrary and have members, roles and other guild-like features.
 
-<!-- ![Configuration and Events](https://playfab.com/assets/img/products/liveops-config.png) -->
-<img src="images/liveops-config.png" alt="LiveOps configuration and events" width="600" />
+![Configuration and Events](images/liveops-config.png)
 
 ## PlayFab advanced
 
