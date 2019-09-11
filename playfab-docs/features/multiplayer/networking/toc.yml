@@ -18,6 +18,8 @@
     href: concepts-chat.md
   - name: Chat permissions and muting
     href: concepts-chat-permissions-and-muting.md
+  - name: Using the Xbox Live helper library for PlayFab Party
+    href: party-xbox-live-guide.md
 - name: Troubleshooting
   items:
   - name: Troubleshooting voice chat
