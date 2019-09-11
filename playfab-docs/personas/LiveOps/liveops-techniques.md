@@ -198,9 +198,13 @@ Not all players are created equal, and one important tactic for making your game
 
 As your game gains traction, you’ll start to see player segments form naturally, and your analytics toolset should make it easy for you to define custom segments in a way that makes sense for your game (e.g. high XP players, currently active players, lapsed players, players who have made purchases, LTV tiers, etc.)
 
-Then, as you run experiments and test your ideas, you can track how players in your key segments react. When you do something that stimulates the behavior you want to see in a key segment (such as a particular kind of promotion or event), make a note of it, and try other similar tactics to see if you can get that effect consistently. Of course, you need to be thoughtful about going to the same well too often or you can burn players out.
+Then, as you run experiments and test your ideas, you can track how players in your key segments react. When you do something that stimulates the behavior you want to see in a key segment (such as a particular kind of promotion or event), make a note of it, and try other similar tactics to see if you can get that effect consistently. 
 
-![Segments - List](media/segments5.png) | ![Segments - Edit Segment](media/segments6.png)
+![Segments - List](media/segments5.png) 
+
+Of course, you need to be thoughtful about going to the same well too often or you can burn players out.
+
+![Segments - Edit Segment](media/segments6.png)
 
 At a minimum, games should think about the basic "funnel" in their game. For example, you can define some simple segments as follows:
 
@@ -654,8 +658,8 @@ There’s understandable fear amongst game developers that rewarded videos featu
 Notes Dimitar Draganov, Senior Product Manager of flaregames, *“a well-designed and integrated into the core loop rewarded video outperforms every other ad inventory by a wide margin; rewarded videos have always been the biggest revenue driver across all the games I've worked on and they are rarely filled with anything but game ads.”*
 
 If you view rewarded ads as part of the core game loop, you’ll want to optimize the player ad experience along with the rest of your game. That means you’ll need to monitor player engagement with these ad units closely, so you can track and optimize the rewards you offer to players who engage.
-
-![Quick Boost](media/quickboost13.png) | ![Adventure Communist](media/adventure-communist14.png)
+ 
+![Quick Boost](media/quick-boost-13.png)  ![Adventure Communist](media/adventure-communist14.png)
 
 Other important ad formats include *banners* (ads that run across the top or bottom of the screen, similar to what you might see on non-game websites), *interstitials* (ads that run while the game pauses briefly, for example between levels), and *offer walls* (a page that offers users rewards or incentives for real-money purchase or in exchange for completing a specific task).
 
