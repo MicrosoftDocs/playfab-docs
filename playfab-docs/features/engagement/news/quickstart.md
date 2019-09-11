@@ -55,9 +55,7 @@ Navigate to your title -> **Content** -> **Title News** -> **New Title News** as
 
 For the purposes of this tutorial, we will assume your title’s default language is English. This means that you must add strings for your default language before you can save the title news.
 
-Adding more languages is as simple as clicking on **ADD LANGUAGE**, choosing the language you want to add, and then typing in the localized strings. In the previous image, we added Korean strings to our title news entry.
-
-Select the **Save Title News** button, and your entry will be created.
+Adding more languages is as simple as clicking on **ADD LANGUAGE**, choosing the language you want to add, and then typing in the localized strings. Select the **Save Title News** button, and your entry is created.
 
 The timestamp is the time that players will see next to the title news. The timestamp is automatically set to the system date at the moment you select the **Save Title News** button, but you can *also* set it manually. After saving the title news page, you'll be redirected back to the page that contains the list of your title news entries.
 
