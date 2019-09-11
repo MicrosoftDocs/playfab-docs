@@ -390,8 +390,8 @@ The Play Market side of the integration should be set up at this point.
 
 Our last step is configuring a PlayFab title to reflect our products, and integrate with the Google Billing API.
 
-1. Select **Add-ons** from the menu.
-2. Then select the **Google** add-on.
+1. Select **Add-ons**.
+2. Then, select the **Google** add-on.
 
 ![PlayFab open Google Add-on](../../authentication/platform-specific-authentication/media/tutorials/google-html5/open-google-add-on.png)  
 
@@ -403,14 +403,11 @@ Our last step is configuring a PlayFab title to reflect our products, and integr
 
 Our next step is reflecting our Golden Sword item in PlayFab:
 
-1. Select **Economy** from the menu.
-2. Verify that the **Catalogs** sub-tab is selected.
-3. Select the **New Catalog** button.
-
-![PlayFab open new Catalog](media/tutorials/playfab-open-new-catalog.png)  
-
-1. Provide a **Version Name** for the **Catalog**.
-2. Select the **Save Catalog** button.
+1. Select **Economy**. 
+1. Verify that the **Catalogs** sub-tab is selected.
+1. Select **New Catalog**.
+1. Provide a **Catalog version** name.
+1. Select **Save Catalog**.
 
 ![PlayFab save Catalog](media/tutorials/playfab-save-catalog.png)  
 
@@ -418,26 +415,22 @@ If the catalog has no items, it is *automatically* removed. That's why any new c
 
 We can *always* create a *new* item, but to keep things clean, let's modify the existing **One** item.
 
-1. Select the **Item ID** entry from the column.
-
-![PlayFab open Catalog Item](media/tutorials/playfab-open-catalog-item.png)  
-
-1. Set the **Item ID** to match exactly with the ID in PlayMarket.
-2. Give a **Display name** to your **Item**.
-3. Give a **Description** to your **Item**.
+1. Select the item to edit the **Item ID** to match the ID in PlayMarket.
+2. Now, edit the **Display name** and add a  **Description**.
 
   > [!NOTE]
   > Keep in mind that this data has *nothing to do* with the **Play Market Item Title** and **Description** - it is *totally* independent.
 
-4. Assign a **Price** to your **Item**.
+3. Assign a **Price** to your **Item**. 
 
-In this tutorial, IAP mainly refers to purchases for real money. That's why we use **RM** - special Real Money currency. The PlayFab amount is defined in US Cents.
+4. Select **Save Item** to commit your changes.
 
-5. Select the **Save Item** button* to commit your changes.
+![PlayFab Edit and Save Catalog Item](media/tutorials/playfab-edit-save-catalog-item.png) 
 
-![PlayFab Edit and Save Catalog Item](media/tutorials/playfab-edit-save-catalog-item.png)  
+> [!NOTE]
+> In this tutorial, IAP mainly refers to purchases for real money. That's why we use **RM** - special Real Money currency. The PlayFab amount is defined in US Cents.  
 
-1. Observe your item in the **Item ID** list.
+5. Observe your item in the **Item ID** list.
 
 ![PlayFab Catalog Items list](media/tutorials/playfab-catalog-items-list.png)  
 
