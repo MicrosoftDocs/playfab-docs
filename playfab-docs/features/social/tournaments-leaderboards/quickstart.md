@@ -32,10 +32,10 @@ In the Game Manager:
 
 Before we can use [UpdatePlayerStatistics](xref:titleid.playfabapi.com.client.playerdatamanagement.updateplayerstatistics) from the client, we must enable it in **API Features**.
 
-- Select **Settings** in the menu on your left.
-- Select the **API Features** tab.
-- Check the box for **Allow client to post player statistics**.
-- Click the **SAVE** button at the bottom of the screen.
+1. Select **Title settings** off the Settings menu for your title.
+2. Select the **API Features** tab.
+3. Check the box for **Allow client to post player statistics**.
+4. Click the **SAVE** button at the bottom of the screen.
 
 ![Game Manager - Settings - API Features - Allow client to post player statistics](media/tutorials/api-features-allow-client-to-post-player-statistics.png)  
 
