@@ -24,9 +24,8 @@ In the example used in this quickstart, we'll show you how to modify a game vari
 
 In the **Game Manager**:
 
-- Select **Servers** in the menu to the left.
-- Move to the **CloudScript** tab.
-- Add a CloudScript function called `adjustRareDropRate` with a simple call to the `SetTitleData` API as shown in the code snippet and image below.
+- Select **Automation** in the menu to the left.
+- On the **CloudScript Revisions** tab add a new CloudScript function called `adjustRareDropRate` with a simple call to the `SetTitleData` API as shown in the code snippet and image below.
 
 > [!NOTE]
 > For the sharp-eyed, don’t worry - there’s a bug in there on purpose. Make sure you deploy the new revision, so that it is live in your game.
@@ -49,8 +48,8 @@ handlers.adjustRareDropRate = function(args) {
 
 Now select **Servers** from the menu to the left.
 
-- Go to the **Tasks** tab.
-- Select **NEW TASK** on the top right corner of your screen.
+- Go to the **Scheduled Tasks** tab.
+- Select **New Scheduled Task** on the upper-right corner of your screen.
 - This will bring up the **Create Task** view.
 - In the **Type of task** field, choose **Run a CloudScript function**.
 - Below that, you’ll be able to pick a function from the currently deployed revision of CloudScript, and specify arguments to pass in.
