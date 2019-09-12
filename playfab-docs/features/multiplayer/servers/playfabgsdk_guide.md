@@ -145,7 +145,7 @@ With these code changes, before you can package HuliServer, you need to compile 
 
 ![](media/364cc9fc28933473cf29f000d7f827de.png)
 
-2. Then right-click on the Huli project in Solution Explorer and click **Build** from the context-menu.  
+2. Then right-click on the Huli project in Solution Explorer and click **Build** from the context menu.  
 ![](media/f1f98ade12ac3c2664a44abbac914ab0.png)
 
 3. From here, the standard way we package our Server build is to use the Project Launcher.  
@@ -164,7 +164,7 @@ icon to edit the profile, which opens up a new dialog for you to customize it.
 
 6. Give it a name such as “Huli Dedicated Server (Development)” or something similar, and make sure that you target the Huli project (navigate to the `Huli.uproject` file within the project drop-down on this editor).
 
-7. Make sure to cook the content “By the book” and select “WindowsServer” from the platform options.  
+7. Make sure to cook the content “By the book” and select **WindowsServer** from the platform options.  
 
 ![](media/d52d7d82f610076b5aa1ca4496a1590f.png)
 
@@ -290,6 +290,6 @@ and wait for it to finish uploading to PlayFab.
 
 ![](media/530f3634dc07a609b9ea88eec5787525.png)
 
-16. The number under the build name, is the build id. This is a custom build id that we can use within the PlayFabSDK blueprints to make a new multiplayer server request to start up a new server and connect our players to this new dedicated server.  
+16. The number under the build name, is the build ID. This is a custom build ID that we can use within the PlayFabSDK blueprints to make a new multiplayer server request to start up a new server and connect our players to this new dedicated server.  
 
 ![](media/b9118fb57b60a478343489be356a6667.png)
