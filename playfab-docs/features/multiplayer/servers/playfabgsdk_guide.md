@@ -98,21 +98,17 @@ The way we chose to integrate the PlayFab GSDK’s core functions was to overrid
 
 ![](media/1c9daa35536ccf8d3aef3a854d2e8e7a.png)
 
-Figure 1 Huli.h
-
 2. In this header file, we’ve defined our public overrides of the UE4: `StartupModule()`, `ShutdownModule()` and `IsGameModule()` as well as added a couple of private methods that made it easier to call PlayFab GSDK functions.
 
 3.  Next, we implemented the methods we’ve defined in our header file, in our `Huli.cpp` file as well as include the `gsdk.h` file.
 
-Figure 2 our includes in `Huli.cpp`
+4. Override the default game modules in `Huli.cpp`.
 
-Figure 3 overriding default game modules in `Huli.cpp`.
+5. Implement OnShutDown, HealthCheck and StartServer methods in `Huli.cpp`
 
-Figure 4 implementing OnShutDown, HealthCheck and StartServer methods in `Huli.cpp`
+6. Use custom logging methods for debugging in `Huli.cpp`
 
-Figure 5 custom logging methods to use for debugging in `Huli.cpp`
-
-Adding All Runtime Dependencies, .lib’s, .dll’s and include paths to `Huli.Build.cs`
+7. Add All Runtime Dependencies, .lib’s, .dll’s and include paths to `Huli.Build.cs`
 
 > [!NOTE]
 > Because they don’t get included automatically, we had to add all of our runtime dependencies modules that, for whatever reason, don’t get included when packaging our Huli dedicated server. Some of these are Windows-specific binaries that are required to run on the PlayFab Windows servers, but the others are required GSDK files.
