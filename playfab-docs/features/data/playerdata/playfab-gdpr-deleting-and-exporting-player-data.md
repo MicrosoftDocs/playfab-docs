@@ -33,7 +33,7 @@ This can happen when a player uses different devices or different credentials to
 
 Another way a player may have multiple Master Player accounts is if you have configured your studio to use multiple Publisher IDs; however, having multiple Publisher IDs is not common.
 
-You can check your title's Publisher IDs in the PlayFab Game Manager, on each **Title's** **Settings** > **API** tab.
+You can check your title's Publisher IDs in the PlayFab Game Manager, on each Title settings menu's **API Features** tab.
 
 ![PlayFab - Settings - API Tab](media/tutorials/playfab-settings-api-tab.png)  
 

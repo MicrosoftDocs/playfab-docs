@@ -33,10 +33,8 @@ In this step, we will create a leaderboard for our test purposes. Then we will s
 
 Open Game Manager:
 
-1.  Navigate to the **Leaderboards** tab.
-2. Then select the **New Leaderboard** button, as shown below.
-
-![Game Manager - Leaderboards - New Leaderboard](media/tutorials/game-manager-leaderboards-new-leaderboard.png)  
+1. Navigate to the **Leaderboards** section.
+2. Select the **New Leaderboard** button, as shown below.
 
 To configure the new leaderboard:
 
