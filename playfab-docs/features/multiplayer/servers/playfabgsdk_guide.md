@@ -19,9 +19,9 @@ ms.localizationpriority: medium
 
 ## What this document is not
 
-This document should not be used as a best-practices document. Each project is vastly different from one another, and as such has different requirements. We are aware there may be much better ways to integrate the PlayFab GSDK (for *Servers 2.0* in particular) into your Unreal Engine 4 project; however, for our project and without any official documentation this was the way we got it deployed.
+This document should not be used as a best-practices document. Each project is vastly different from one another, and as such has different requirements. There may be much better ways to integrate the PlayFab GSDK (for *Servers 2.0* in particular) into your Unreal Engine 4 project; however, for our customer HICON Games this was the way they got it deployed.
 
-As of this date, there is no official documentation from PlayFab in integrating their C++ GSDK into Unreal Engine 4. Once official documentation does come out, this documentation may become obsolete. This is also not a how-to use PlayFab or Unreal Engine 4 guide.
+Once official documentation for integrating PlayFab GSDK C++ into Unreal Engine 4 does come out, this documentation may become obsolete. In addition, this guide is not a how-to use PlayFab or Unreal Engine 4 guide.
 
 ## What this document is
 
@@ -31,10 +31,7 @@ Because this is being made a public release document after the fact, we have not
 
 Your project will be named something completely different, and any occurrences of the name “Huli” should be replaced to reflect your own project name.
 
-This document should be used as a starting point for the bare minimum integration requirements needed to get the PlayFab GSDK integrated into your
-
-Unreal Engine 4 project and to deploy a successful UE4 dedicated server to the Thunderhead 2.0 servers hosted by PlayFab. This document assumes you can
-compile a standalone dedicated server build with UE4 and you have the correct [Project]Server.Target.cs files in your solution.
+This document should be used as a starting point for the bare minimum integration requirements needed to get the PlayFab GSDK integrated into your Unreal Engine 4 project and to deploy a successful UE4 dedicated server to the Multiplayer Server 2.0 servers hosted by PlayFab. This document assumes you can compile a standalone dedicated server build with UE4 and you have the correct [Project]Server.Target.cs files in your solution.
 
 ## Products and versions used
 
