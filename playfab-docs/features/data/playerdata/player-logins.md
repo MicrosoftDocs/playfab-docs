@@ -18,12 +18,10 @@ The **Players logins** page offers an overview of all the login attempts for a s
 
 To access the players logins page:
 
-- Select **Players** found in the sidebar menu **(1)**.
-
-- Then select the  **Players** tab **(2)**.
-- Locate the **Player** you want to inspect.
-- Select the **ID** label **(3)**.
-- Finally, select **Logins** in the **Players Toolbar (4)**.
+1. Select **Players** found in the sidebar menu.
+2. Select the  **Players** tab.
+3. From the list, select the **ID** of the player you want to inspect.
+4. Then, select **Logins** in the **Players** toolbar.
 
 ![Game Manager - Access Player Logins](media/tutorials/game-manager-access-player-logins.png)  
 
