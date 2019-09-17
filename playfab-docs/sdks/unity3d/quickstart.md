@@ -35,7 +35,19 @@ If you don't have Unity installed, then you will need to install it and create a
 
 ## Download PlayFab SDK
 
-The best way to acquire our Unity SDK is via our editor extensions - although you can directly download the Unity 3D SDK from our github page. [PlayFab Unity3D SDK](https://api.playfab.com/downloads/unity-v2ap).
+The best way to acquire our Unity SDK is via the Unity editor extensions right within the Unity project window. Alternatively, you can directly download the Unity 3D SDK from our GitHub page. 
+
+### Download the SDK only 
+
+1. Log into your Unity project.
+
+2. Click on this link to download the [PlayFab Unity3D SDK](https://api.playfab.com/downloads/unity-v2ap) from our GitHub page.
+
+![Unity 3D SDK](media/unity-sdk.png)
+
+3. Choose **Import** to install the selected components to your project. 
+
+### Install the editor extensions
 
 1. Download and Import the [PlayFab Unity Editor Extensions package](https://github.com/PlayFab/UnityEditorExtensions/raw/master/Packages/PlayFabEditorExtensions.unitypackage).
 
