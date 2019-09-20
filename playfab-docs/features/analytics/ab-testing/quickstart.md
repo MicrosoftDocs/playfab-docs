@@ -27,19 +27,15 @@ A/B tests are created through the PlayFab Game Manager. Open your **Title** page
 
 2. Move to the **A/B Testing** tab.
 
-3. Select the **NEW A/B TEST** button.
+3. Select the **NEW A/B TEST** button. The New A/B Test dialog appears.
 
-![Game Manager - Automation - A/B Testing - Open New A/B Test](media/tutorials/game-manager-automation-ab-testing-open-new-ab-test.png)  
+4. Fill in the **A/B Test Name**.
 
-A new **A/B Test** page will open. Keep in mind that once created, an **A/B Test** *cannot* be modified.
+5. Set the number of buckets for your player groups.
 
-1. Fill in the **A/B Test Name**.
+6. Name each **Bucket** you define and select a percentage of **Players** that belong to the **Bucket**.
 
-2. Set the number of buckets for your player groups.
-
-3. Name each **Bucket** you define and select a percentage of **Players** that belong to the **Bucket**.
-
-4. Select the **SAVE A/B TEST** button to submit the test.
+7. Select the **SAVE A/B TEST** button to submit the test.
 
 The workflow is illustrated in the following picture.
 

@@ -51,29 +51,22 @@ This API call will produce:
 
 Once the problematic player is identified, you may apply a ban. A community management rep may also apply a ban using Game Manager.
 
-- Navigate to the **Players** tab **(1)**.
-- Locate the problematic **Player (2)**.
-- Navigate to **Bans** settings **(3)**.
-- Select the **Add Ban** button **(4)**:
-
-![Game Manager - Players - Bans](media/tutorials/game-manager-players-bans.png)  
-
-- An **Add Ban** form will appear.
-- Type in the **Reason** for the **Ban (1)**.
-- Choose if you want to **Ban permanently (2)**.
-- Or specify the **Duration in hours (3)** you want the **Ban** to be in effect.
-- Optionally, you can **Ban** by a specific **IP ADDRESS (4)**.
-- Finally, select the **ADD BAN** button **(5)**.
+1. Navigate to the Players section.
+2. Locate and select the problematic Player.
+3. Navigate to the **Bans** tab.
+4. Select **Add Ban** to display the **Add Ban** form.
+5. Type in the **Reason** for the ban, and the desired duration. Optionally, you can **Ban** by a specific **IP ADDRESS (4)**.
+6. Last, select the **ADD BAN** button.
 
 ![Game Manager - Players - Add Ban](media/tutorials/game-manager-players-add-ban.png)  
 
-If everything is set correctly, you will see a new **Ban** in the table.
-
-- You may optionally remove the **Ban** manually **(1)** by selecting it in the **REVOKE BANS** field.
+If everything is set correctly, you will see a new **Ban** in the table. You may optionally remove a **Ban** manually by selecting it in the **REVOKE BANS** field.
 
 ![Game Manager - Players - Bans - Revoke Ban](media/tutorials/game-manager-players-bans-revoke-ban.png)  
 
-- Alternatively, you may use the Server SDK to apply a ban via code by using the snippet provided below.
+### Creating a ban on the server
+
+Alternatively, you may use the Server SDK to apply a ban via code by using the snippet provided below.
 
 ```csharp
 public void AddBan(string playerId, uint hours) {

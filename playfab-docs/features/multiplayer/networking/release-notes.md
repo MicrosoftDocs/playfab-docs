@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 
 PlayFab Party is available on [Nuget.org](https://www.nuget.org/profiles/PlayFab)!
 
-## 0.6.0-release
+## 0.6.0-prerelease
 
 Added support for iOS, Android, and Nintendo Switch platforms. 
 
@@ -40,6 +40,14 @@ For more information, see the following links:
 
 #### Network access control
 * `PartyNetwork::SetAccessControlList()` and related methods have been removed from the API. Use the new `PartyInvitation` class and related methods to create open invitations or grant access to specific PlayFab users to your Party networks.
+
+
+## 0.4.6-prerelease
+
+### API Changes
+
+Added new public API `PartyLocalUser::UpdateEntityToken()`.
+
 
 ## 0.2.0-pre-release
 
