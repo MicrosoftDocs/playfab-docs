@@ -22,16 +22,12 @@ Game Manager will be required, as the SMTP server for the title is set up using 
 
 In **Game Manager**:
 
-- Go to **Add-ons**.
-- Under the **Marketing** section, there will be an **SMTP Add-on**.
-- Select the **Add-on**. It should look like the example shown below.
+1. Go to **Add-ons**.
+2. Under the **Marketing** section, select the **SMTP** add-on. This will redirect you to the **Add-on** page.
 
 ![Marketing-SMTP Add-On button](media/tutorials/marketing-smtp-add-on-button.png)  
 
-- This will redirect you to the **Add-on** page.
-- Select the **INSTALL SMTP** button.
-
-![Game Manager-Add-ons-SMTP-page](media/tutorials/game-manager-add-ons-smtp-page.png)  
+3. Select the **INSTALL SMTP** button.
 
 ## Configure SMTP
 
