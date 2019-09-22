@@ -37,6 +37,7 @@ There are a couple of steps needed to get started with PlayFab C# CloudScript.
 * You must have a [PlayFab account](https://developer.playfab.com/en-us/signup). 
 * You must have the C# CloudScript feature enabled for your title. Please contact [helloplayfab@microsoft.com](mailto:helloplayfab@microsoft.com) to request access while in Private Preview.
 * You will need access to the Beta PlayFab SDKs while this feature is in Private Preview.  You can also request access to these SDKs via [helloplayfab@microsoft.com](mailto:helloplayfab@microsoft.com).
+* You must use C# Functions. At this time the PlayFab integraiton with Azure Functions only supports the C# language. So be sure to create all your Azure Functions with C#.
 
 ### Getting Started
 There are two ways to get started with C# CloudScript using Azure Functions.  The easiest and quickest way is to use Azure Functions right out of the box.  To get started with Azure Functions with either Visual Studio Code or Visual Studio visit their [getting started guide](https://docs.microsoft.com/en-us/azure/azure-functions/) and return here once you are completely setup.
@@ -101,3 +102,25 @@ private void CallCSharpExecuteFunction(){
 } 
 
 ```
+
+### PlayFab Function Context, Variables and using the Server SDKs
+Like our previous CloudScript, some data will be automatically passed to the Azure Function that tells you information about who called the Function and in what context the Function was called (eg. PlayStream Action, or Called From the client). 
+
+There are a couple of steps that you need to do if you are coding Functions without our Visual Studio Code Extension. 
+
+1. You will need to install the PlayFab SDK via Package Manager.
+
+> TODO - marco: Complete the steps here once we have access to the feature and get better azure function code examples from Gudge.
+
+
+### Debugging your Azure Function
+With Azure Functions, you can now test and debug your CloudScript code locally.  Here is a great guide on how to [test and debug your Functions](https://docs.microsoft.com/en-us/azure/azure-functions/functions-develop-local) locally. 
+
+Here are some highlights from the above document.
+
+* Make sure that your Azure Functions Core Tools are installed.
+* Configure your [Local Settings File](https://docs.microsoft.com/en-us/azure/azure-functions/functions-develop-vs-code?tabs=nodejs#local-settings-file)
+* Set a break point in your code
+* Press F5 to start debugging
+
+
