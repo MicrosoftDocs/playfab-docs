@@ -34,9 +34,9 @@ This, however, can introduce delays into file management actions, like those fou
 
 Before your users are able to fetch an asset, it must be uploaded to the CDN. This can be done in **Game Manager**:
 
-- Select **Content** from the menu on the left **(1)**.
-- Choose the **File Management** tab **(2)**.
-- Then select the **Upload Files** button **(3)**.
+- Select **Content** from the menu on the left.
+- Choose the **File Management** tab.
+- Then select the **Upload Files**.
 
 ![Game Manager - Content - File Management - Upload Files](../../data/content-delivery-network/media/tutorials/game-manager-content-file-management-upload-files.png)  
 
@@ -52,7 +52,6 @@ You may:
 - Keep in mind that you may also manage *folders*.
   - To create a folder, select the **New Folder** button **(2)**.
 
-![Game Manager - Content - File Management - File List and New Folder](../../data/content-delivery-network/media/tutorials/game-manager-content-file-management-file-list-new-folder.png)  
 
 - Fill in the **Folder name (1)**.
 - Select the **Create Folder** button **(2)**.
@@ -60,8 +59,6 @@ You may:
 ![Game Manager - Create New Folder](../../data/content-delivery-network/media/tutorials/game-manager-create-new-folder.png)  
 
 This will create a new folder in the tree. You may then select this folder, and upload the files normally.
-
-![Game Manager - Content - File Management - Select Folder](../../data/content-delivery-network/media/tutorials/game-manager-content-file-management-select-folder.png)  
 
 Alternatively, you may upload assets via code using the admin SDK. This is a two step process:
 
