@@ -67,13 +67,13 @@ Use the following steps to ensure you've properly installed the PlayFab Plugin.
 
 5. Select all the options as seen here:  **New Project** tab, **C++** sub-tab, **No Starter Content**.
 
-      ![Create project settings](media/uemk-create-project-settings.png)
+      ![Create project settings](media/uemk-create-project-settings.jpg)
 
 6. Now select **Create Project** with these options.
 
 7. Enable the PlayFab Plugin.
 
-  ![Enable plugin](media/uemk-enable-plugin.png)
+  ![Enable plugin](media/uemk-enable-plugin.jpg)
 
 The PlayFab Installation is complete!
 
