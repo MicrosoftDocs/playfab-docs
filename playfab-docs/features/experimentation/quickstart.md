@@ -18,8 +18,7 @@ In this quickstart, you will:
 
 1. Set up a virtual currency.
 2. Create an item.
-3. Add an item to a player's inventory.
-4. Learn the next steps for customizing your economy.
+3. Learn the next steps for customizing your economy.
 
 ## Setting up a virtual currency
 
