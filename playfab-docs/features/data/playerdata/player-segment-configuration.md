@@ -24,11 +24,12 @@ Each segment allows you to define useful or interesting groups of players, and p
 
 To access segment configuration:
 
-- Go to the menu on the left of your screen and select **Players (1)**.
-- Then select the **Segments** tab **(2)**. You can then opt:
+1. On the left side select the **Players** area.
+2. Select the **Segments** tab. From there you can then opt to:
 
-  - To use the **New Segment** button **(3)** to create and configure a new **Segment**.
-  - To locate an existing **Segment**, and select its **Name** label **(4)** to configure the **Segment**.
+    - Use the **New Segment** button to create and configure a new Segment*.
+      
+    - Locate an existing Segment, and select its **Name** label to configure the Segment.
 
 ![Game Manager - Players - Create or access Segments](media/tutorials/game-manager-create-or-access-player-segments.png)  
 
@@ -157,18 +158,18 @@ The general workflow for the **Actions** panel is the following:
 
 ## How to inspect player segments
 
-It is possible to look up what segments a player belongs to by means of the **Player Segments** page.
+It is possible to look up what segments a player belongs to by means of the Player Segments page.
 
-To access **Player Segments**:
+To access Player Segments:
 
-- Select **Players** in the sidebar menu **(1)**.
-- Then select the **Players** tab **(2)**.
-- Locate the **Player** you want to inspect, and select the **ID** label **(3)**.
-- Finally, select **Segments** in the **Players Toolbar (4)**.
+1. Select the **Players** section.
+2. Select the **Players** tab.
+3. Click on the **ID** label for the player you want to inspect. 
+4. Select **Segments** in the Players toolbar.
 
-![Game Manager - players - access segments](media/tutorials/game-manager-access-player-segments-2.png)  
+![Game Manager - players - access segments](media/tutorials/game-manager-access-player-segments-2.png)
 
-On the **Player Segments** page, you will see the following:
+On the Player Segments page, you will see the following:
 
 - The **Player ID (1)** label identifies the player that you are currently inspecting.
 - The **Segment** table contains a list of all the segments that a player belongs to.

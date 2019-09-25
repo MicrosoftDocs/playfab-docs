@@ -103,14 +103,13 @@ See the [Non-receipt Payment Processing](../../commerce/economy/non-receipt-paym
 
 PlayFab report charts all follow the same model:
 
-1. In the top space of the page, you usually get a **Control Panel**. The **Control Panel** contains a report name, observed time period, and **Prev/Next** buttons to switch between the time periods.
+In the top space of the page, view the report name, time period, and **Prev/Next** buttons to switch between the time periods.
 
-2. The **Chart Panel** area shows the available data as a chart, where the horizontal axis corresponds to the time flow, and the vertical axis corresponds to the number of relevant instances, such as API calls, purchases, users, and so on, depending on the report type.
+Move your cursor along the timeline in the chart to view the associated interactive data.
 
 ![Monthly Overview Report](media/tutorials/monthly-overview-report.png)
 
-3. There are some metrics available in the chart panel **Timeline** area. Those contain:
-   - The sum of all the instance across the time period (SUM).
-   - The average number of instances through all the timestamps (AVG).
-   - The peak value (MAX).
-   - The lowest value (MIN).
+Metrics available in the chart timeline include:
+- The average number of instances through all the timestamps (AVG).
+- The peak value (MAX).
+- The lowest value (MIN).
