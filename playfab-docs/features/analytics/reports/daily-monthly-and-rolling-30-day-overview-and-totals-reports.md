@@ -114,4 +114,3 @@ Metrics available in the chart timeline include:
 - The average number of instances through all the timestamps (AVG).
 - The peak value (MAX).
 - The lowest value (MIN). 
-
