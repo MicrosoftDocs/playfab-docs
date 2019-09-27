@@ -55,19 +55,20 @@ Once you have gained access to the feature, you need to enable it.  Visit Automa
 
 ![Enable PlayFab C# CloudScript](media/enable_azure_functions.jpg)
 
-> TODO - marco: Complete the steps here once we have access to the feature.
-
 ### Create an Azure Function
-1. We first need you to create a basic "hello world" example function.  You can see how to do this by following the [Create your first function using Visual Studio Code guide](https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-first-function-vs-code).
-2. Once your function has been created, click the Register Function button in the top right hand corner of the Functions (Preview) page.
+1. We first need you to create a basic "HelloWorld" example function.  You can see how to do this by following the [Create your first function using Visual Studio Code guide](https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-first-function-vs-code).  For a code example using PlayFab variables see the section below **(PlayFab Function Context, Variables and using the Server SDKs)**
+2. Once your function has been created and deployed, click the Register Function button in the top right hand corner of the Functions (Preview) page.
+![Register CloudScript Function](media/register_cs_function.jpg)
+3. Put the name and Function URL.  The URL can be found in the output of your deployment.
+![Deployment Output](media/azure_func_deployment.jpg)    
+> Tip: Click to [learn more about deploying azure functions](https://code.visualstudio.com/tutorials/functions-extension/deploy-app) 
 
-> TODO - marco: Complete the steps here once we have access to the feature.
 
 
 ### Using and Calling C# CloudScript from your PlayFab Title.
 In order to use the function you just created from the PlayFab SDK.  You will need to download one of our BetaSDKs.  These are gated SDKs, and you will need to request access to them via [helloplayfab@microsoft.com](mailto:helloplayfab@microsoft.com).  Once you have access to the [Beta SDKs](https://github.com/PlayFab?utf8=%E2%9C%93&q=beta&type=&language=) you can download the one specificly for the environment you are making your game in.  
 
-> Note: The example code within the rest of this guide will be written in Unity C# code.
+> Note: The examples code within the this guide will be written in Unity C# & Azure Function C# code.
 
 Now that your function is registered, and you have the Beta SDK installed, you can now call that function from within your SDK.
 
@@ -86,7 +87,9 @@ private void CallCSharpExecuteFunction(){
             Type = [Authenticationcontext.Entity.Type] //Get this from when you logged in
         }, 
         FunctionName = "HelloWorld", //This should be the name of your Azure Function that you created.
-        FunctionParameter = new Dictionary<string,object>(), //This is the data that you would want to pass into your function.
+        FunctionParameter = new Dictionary<string,object>(){
+            {"inputValue": "Test"}
+        }, //This is the data that you would want to pass into your function.
         GeneratePlayStreamEvent:false, //Set this to true if you would like this call to show up in PlayStream
     }, (ExecuteFunctionResult result)=>{
         if(result.FunctionResultTooLarge){
@@ -102,16 +105,60 @@ private void CallCSharpExecuteFunction(){
 } 
 
 ```
-
 ### PlayFab Function Context, Variables and using the Server SDKs
 Like our previous CloudScript, some data will be automatically passed to the Azure Function that tells you information about who called the Function and in what context the Function was called (eg. PlayStream Action, or Called From the client). 
 
 There are a couple of steps that you need to do if you are coding Functions without our Visual Studio Code Extension. 
 
-1. You will need to install the PlayFab SDK via Package Manager.
+1. You will need to install the PlayFab SDK via Package Manager. To do this open Terminal or CMD Console in Visual Studio Code and type: `dotnet add package PlayFabAllSDK`
+2. We have created some helpers that will ship with the cSharpSDK,  they are in beta.  If you have access to the beta repository, then you can get the cloudscript project.  If not, you can copy the file *PlayFabFunctionContexts.cs* from the [pf-af-samples](https://github.com/PlayFab/pf-af-samples) repository.
+3. You need to edit your .csproj file and include `<DefineConstants>NETCOREAPP2_0</DefineConstants>` in your default PropertyGroup.
+![Define Constants](media/define_constants.jpg)
 
-> TODO - marco: Complete the steps here once we have access to the feature and get better azure function code examples from Gudge.
+A hello world example is always nice,  see the below HelloWorld Sample that you can use as your first Azure Function.
 
+```C#
+using System.Net.Http;
+using System.Threading.Tasks;
+using Microsoft.Azure.WebJobs;
+using Microsoft.Azure.WebJobs.Extensions.Http;
+using Microsoft.Extensions.Logging;
+using PlayFab;
+using PlayFab.Plugins.CloudScript;
+
+namespace PlayFabCS2AFTests.HelloWorld
+{
+    public static class HelloWorld
+    {
+        [FunctionName("HelloWorld")]
+        public static async Task<dynamic> Run(
+            [HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route = null)] HttpRequestMessage req,
+            ILogger log)
+        {
+            /* Create the function execution's context through the request */
+            var context = await FunctionContext<dynamic>.Create(req);
+            var args = context.FunctionArgument;
+
+            var message = $"Hello {context.CurrentPlayerId}!";
+            log.LogInformation(message);
+
+            dynamic inputValue = null;
+            if (args != null && args["inputValue"] != null)
+            {
+                inputValue = args["inputValue"];
+            }
+
+            log.LogDebug($"HelloWorld: {new { input = inputValue} }");
+
+            return new { messageValue = message };
+        }
+    }
+}
+
+```
+As you can see in the above, the CurrentPlayerId of the caller is available like in our traditional CloudScript implementation.  Parameters you have passed in the FunctionParameters field will be available in the *args*.
+
+>Note: You will need to call this HelloWorld Azure Function via ExecuteFunction from an SDK.
 
 ### Debugging your Azure Function
 With Azure Functions, you can now test and debug your CloudScript code locally.  Here is a great guide on how to [test and debug your Functions](https://docs.microsoft.com/en-us/azure/azure-functions/functions-develop-local) locally. 
