@@ -36,18 +36,11 @@ For the purpose of this tutorial, we’ll create a basic push notification to se
 
 In the PlayFab Game Manager:
 
-- Select **Content** in the menu to the left.
-- Go to the **Push Notification Templates** tab.
-
-![Game Manager - Content - New Push Notification Template](../media/tutorials/new-push-notification-template.png)
-
-In this example, our title’s default language is English, so we’re required to provide those strings first.
-
-![Game Manager - Content - New Push Notification Template - Default language](../media/tutorials/new-push-notification-template-default-language.png)
-
-Adding more languages is as simple as selecting the **V** drop-down menu symbol to the left of the **Language (Title default)** field.  Then choose the language you want to add to the template, and type in the localized strings.
-
-In this example, we're going to add the following Korean strings to our template.
+1. Select the Content section.
+2. Select the **Push Notifications Templates** tab.
+3. Click the **New Push Notification Template** button.
+4. Add a new language using the drop-down menu in the **Language (Title default)** field. 
+5. Choose the language you want to add to the template, and type in the localized strings as shown below.
 
 Subject:
 
@@ -69,7 +62,7 @@ Select the **SAVE PUSH NOTIFICATION TEMPLATE** button and you’re ready to go!
 
 Sending this template to players who prefer Korean will get the localized version of the notification, all other players will receive your default language message in English.
 
-## Triggering push notifications via rules, tasks, and player segmentation
+## Trigger push notifications via rules, tasks, and player segments
 
 The next step for our scenario is to leverage PlayFab triggered actions to send push notifications when a player meets our specified criteria.  We want to entice players to return if they haven’t visited our game in over 30 days.
 
@@ -77,8 +70,8 @@ This kind of criteria makes using player segmentation logic a natural fit for ou
 
 Let’s continue with the player segmentation example. First, we’ll set up a player segment for lapsed players:
 
-- Select **Players** in the menu to the left.
-- Then go to the **Segments** tab, and go to **New Segment**.
+1. Select the **Players** area.
+2. Choose the **Segments** tab, and **New Segment**.
 
 > [!NOTE]
 > We’re defining “lapsed” as not logging into the game for over 30 days (43200 minutes).

@@ -110,6 +110,7 @@ Move your cursor along the timeline in the chart to view the associated interact
 ![Monthly Overview Report](media/tutorials/monthly-overview-report.png)
 
 Metrics available in the chart timeline include:
+
 - The average number of instances through all the timestamps (AVG).
 - The peak value (MAX).
-- The lowest value (MIN).
+- The lowest value (MIN). 
