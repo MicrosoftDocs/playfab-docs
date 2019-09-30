@@ -45,7 +45,7 @@ The **A/B Testing** page will open and a newly created **Test** will appear in t
 
 ![Game Manager - Automation - A/B Testing - List A/B Tests](media/tutorials/game-manager-automation-ab-testing-list-ab-tests.png)
 
-## Links
+## Linkss
 
 To dive deeper into A/B testing, read the following tutorials:
 
