@@ -20,6 +20,8 @@ In this quickstart, you will:
 2. Create an item.
 3. Learn the next steps for customizing your economy.
 
+> [!NOTE] Here is a test note.
+
 ## Setting up a virtual currency
 
 Virtual currencies are the foundation of in-game economies. Players and characters can be granted these currencies, which can then be used to buy or trade items.
