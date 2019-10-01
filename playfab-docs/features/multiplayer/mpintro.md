@@ -31,10 +31,10 @@ Increasingly games are building "cross-network" experiences, with players engagi
 |Service|Production Readiness|Billing|
 |--|--|--|
 |[Leaderboards](../social/tournaments-leaderboards/using-resettable-statistics-and-leaderboards.md)|Production|Included in PlayFab essentials|
-|[Entity Groups](../data/playerdata/index.md)|Production (Preview)|Included in PlayFab essentials|
-|[Matchmaking](./matchmaking/index.md)|Production (Preview)|Included in PlayFab essentials|
-|[Party](./networking/index.md)|Pre-production (Beta)|Premium Service - Free during beta|
-|[Servers](./servers/index.md)|Production (Preview)|Premium Service - 30% Preview Discount|
+|[Entity Groups](../data/playerdata/index.md)|Production |Included in PlayFab essentials|
+|[Matchmaking](./matchmaking/index.md)|Production |Included in PlayFab essentials|
+|[Party](./networking/index.md)|Pre-production|Premium Service - Free during private preview|
+|[Servers](./servers/index.md)|Production |Premium Service|
 
 ## Example multiplayer scenarios
 PlayFab is designed to support a variety of multiplayer modes. Below is an list of modes that might be integrated in a single, fairly sophisticated title. In this section we will briefly suggest how to implement these experiences using PlayFab services.
