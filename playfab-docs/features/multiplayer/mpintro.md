@@ -41,13 +41,13 @@ PlayFab is designed to support a variety of multiplayer modes. Below is an list 
 
 |Game Mode | Max # of Players | Leaderboard | Matchmaking | Backfill | Invite friends | Unsolicited join-in-progress | Chat | Server Model|
 |--|--|--|--|--|--|--|--|--|
-|Single-player campaign | 1 | **Yes** | No | No | No | No | No | No |
-|Cooperative campaign | 4 | **Yes** | No | No | **Yes** | **Yes** | **Yes** | P2P |
-|In-Game Parties  | 8 |  No | No | No | No | **Yes** | **Yes** | P2P |
-|Casual player vs. player  | 8 | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** | P2P |
-|Casual custom  | 8 | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** | P2P |
-|Competitive small sessions | 8 | **Yes** | **Yes** | No | **Yes** | No | **Yes** | Cloud Server |
-|Competitive large sessions | 32 | **Yes** | **Yes** | No | **Yes** | No | **Yes** | Cloud Server |
+|**Single-player campaign** | 1 | **Yes** | No | No | No | No | No | No |
+|**Cooperative campaign** | 4 | **Yes** | No | No | **Yes** | **Yes** | **Yes** | P2P |
+|**In-Game parties**  | 8 |  No | No | No | **Yes** | **Yes** | **Yes** | P2P |
+|**Casual small sessions**  | 8 | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** | P2P |
+|**Casual large sessions**  | 32 | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** | Cloud Server |
+|**Competitive small sessions** | 8 | **Yes** | **Yes** | No | **Yes** | No | **Yes** | Cloud Server |
+|**Competitive large sessions** | 32 | **Yes** | **Yes** | No | **Yes** | No | **Yes** | Cloud Server |
 
 ### Leaderboards and player data
 In-game leaderboards can be used to:
