@@ -10,7 +10,7 @@ keywords: playfab, commerce, economy, media, coupons, promotions, cloudscript
 ms.localizationpriority: medium
 ---
 
-# Economy quickstart
+# Experimentation quickstart
 
 Making monetization work is one of the biggest challenges in games. PlayFab simplifies this for you, by building on top of three foundational pieces: Currencies, Items, and Inventory.
 
