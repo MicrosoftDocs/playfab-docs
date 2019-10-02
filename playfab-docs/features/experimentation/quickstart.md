@@ -1,5 +1,5 @@
 ---
-title: Economy quickstart
+title: Experimentation quickstart
 author: thomasgu
 description: Quickstart for Economy.
 ms.author: tomg
