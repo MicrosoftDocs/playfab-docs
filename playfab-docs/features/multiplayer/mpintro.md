@@ -12,32 +12,26 @@ ms.localizationpriority: medium
 
 # Multiplayer with PlayFab
 
-Multiplayer can be a great addition to many titles, and PlayFab provides several services focused on multiplayer scenarios:
+Multiplayer is be a great addition to many titles, and PlayFab provides several services focused on multiplayer scenarios:
 
-- **Leaderboards** - Track and respond to player activity with statistics and leaderboards.
-- **Entity Groups** - Create permanent or temporary groups of players and signal activity.
-- **Matchmaking** - Deploy custom matchmaking rules to group players quickly.
-- **Party** - Connect players with networking and accessible in-game chat.
-- **Servers** - Dynamically scale custom multiplayer servers in Azure.
+|Service|Description|Production Readiness|Billing|
+|--|--|--|--|
+|[Leaderboards](../social/tournaments-leaderboards/using-resettable-statistics-and-leaderboards.md)| Track and respond to player activity with statistics and leaderboards | Production|PlayFab essentials|
+|[Entity Groups](../data/playerdata/index.md)|Create permanent or temporary groups of players and signal activity.|Production |PlayFab essentials|
+|[Matchmaking](./matchmaking/index.md)| Deploy custom matchmaking rules to group players quickly |Production |PlayFab essentials|
+|[Party](./networking/index.md)|Connect players with networking and accessible in-game chat|Pre-production|Premium Service - Free during private preview|
+|[Servers](./servers/index.md)|Dynamically scale custom multiplayer servers in Azure| Production |Premium Service|
 
 Leaderboards, Entity Groups, and Matchmaking are production services offered in PlayFab Essentials, our core services package, without any additional cost.
 
-Servers is a production service, which costs extra (see [Multiplayer Server billing](./servers/billing-for-thunderhead.md)). Party is a pre-production service still being finalized. It is offered with very limited quota, and is free (for the time being). It will become a premium service when production support is enabled later this year.
+Servers is a production service, which costs extra (see [Multiplayer Server billing](./servers/billing-for-thunderhead.md)). Party is a pre-production service that we are working to operationalize. It is offered with limited quota, and is free (for the time being). Party will become a premium service when production support is enabled later this year (see [Party billing](./networking/pricing.md)).
 
 While titles can use all of these services in combination, they can be used independently as well, and this is quite common. For example titles might use PlayFab matchmaking but allocate servers from an alternative multiplayer server hosting solution. Or games might use PlayFab multiplayer servers for hosting, but use their own matchmaking system to bring players together.
 
 Increasingly games are building "cross-network" experiences, with players engaging each other from different identity domains (e.g. Xbox Live players interacting with Steam players interacting with custom identity systems). PlayFab's services were designed to support cross-progression and cross-network play.
 
-|Service|Production Readiness|Billing|
-|--|--|--|
-|[Leaderboards](../social/tournaments-leaderboards/using-resettable-statistics-and-leaderboards.md)|Production|Included in PlayFab essentials|
-|[Entity Groups](../data/playerdata/index.md)|Production |Included in PlayFab essentials|
-|[Matchmaking](./matchmaking/index.md)|Production |Included in PlayFab essentials|
-|[Party](./networking/index.md)|Pre-production|Premium Service - Free during private preview|
-|[Servers](./servers/index.md)|Production |Premium Service|
-
 ## Example multiplayer scenarios
-PlayFab is designed to support a variety of multiplayer modes. Below is an list of modes that might be integrated in a single, fairly sophisticated title. In this section we will briefly suggest how to implement these experiences using PlayFab services.
+PlayFab is designed to support a variety of multiplayer modes. Below is a list of modes that might be integrated in a single, fairly sophisticated title. In this section we will briefly suggest how to implement these experiences using PlayFab services.
 
 |Game Mode | Max # of Players | Leaderboard | Matchmaking | Backfill | Invite friends | Unsolicited join-in-progress | Chat | Server Model|
 |--|--|--|--|--|--|--|--|--|
