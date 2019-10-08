@@ -66,7 +66,7 @@ PlayFab’s [Player Item Management (Server)](xref:titleid.playfabapi.com.server
 
 Let's use the PlayFab APIs to add an item to a player's inventory by purchasing it with virtual currency.
 
-1. In your game, log in as a player that has been given virtual currency. ([Giving virtual currency to a player](../items/quickstart#giving-virtual-currency-to-a-player) has more information, if needed.)
+1. In your game, log in as a player that has been given virtual currency. ([Giving virtual currency to a player] has more information, if needed.)
 2. Call [GetCatalogItems](xref:titleid.playfabapi.com.client.title-widedatamanagement.getcatalogitems) with the following parameter in the request:
    - `CatalogVersion = "main"`
 3. Verify that the `Catalog` in the result contains an **apple** with a **GD** price of **5**.
