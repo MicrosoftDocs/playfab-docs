@@ -64,7 +64,7 @@ Once you've successfully obtained the entity ID and entity token from PlayFab, y
 
 ## Initialize PlayFab Party
 
-Before proceeding with this section, it is recommended that you read through [Understanding Party conceptual documentation.](concepts-overview.md) and the code comments in the public Party.h header.
+Before proceeding with this section, it is recommended that you read through [Understanding Party conceptual documentation.](concepts-objects.md) and the code comments in the public Party.h header.
 
 Initializing Party is done via the NetworkManager.cpp code that's provided as part of the Party Demo Apps, and is common to all platforms. 
 

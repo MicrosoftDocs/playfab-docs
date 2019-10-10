@@ -24,6 +24,8 @@ Before you start this tutorial, please ensure that the following prerequisites h
 4. You have access to the [PlayFab Party platforms repository] (https://github.com/PlayFab/PlayFabParty )
 5. You have created an apple developer account that can be used to sign your app for deployment.
 
+NOTE: If you're planning to use the XCode simulator for testing, you'll need to target your application for 64-bit ($(ARCHS_STANDARD_64_BIT)) architecture. 32-bit simulators are currently not supported.
+
 # Including the required libraries and header files
 
 You'll need to include the following header files from the [PlayFab Party distribution repository] (https://github.com/PlayFab/PlayFabParty/releases).

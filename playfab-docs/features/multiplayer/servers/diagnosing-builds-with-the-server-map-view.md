@@ -1,8 +1,8 @@
 ---
 title: Diagnosing builds with the server map view
-author: t-eldum
+author: chpalm
 description: Describes how to diagnose server availability issues using the PlayFab multiplayer server mapview.
-ms.author: t-eldum
+ms.author: chpalm
 ms.date: 08/23/2019
 ms.topic: article
 ms.prod: playfab
