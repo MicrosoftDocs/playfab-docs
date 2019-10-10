@@ -1,3 +1,14 @@
+---
+title: Collecting performance metrics on Windows multiplayer servers.
+author: chpalm
+description: Collecting performance metrics on Windows multiplayer servers.
+ms.author: chpalm
+ms.date: 01/18/2019
+ms.topic: article
+ms.prod: playfab
+keywords: playfab. multiplayer, servers
+ms.localizationpriority: medium
+---
 # Collecting performance metrics on Windows multiplayer servers (experimental)
 Performance metrics can support a variety of development scenarios:
 
