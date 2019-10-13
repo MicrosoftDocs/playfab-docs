@@ -102,7 +102,7 @@ Actions might result in a CloudScript being run. Our CloudScript is JavaScript c
 
 For more information, check out these resources to get you started with Cloud Scripting and Automation on PlayFab:
 
-- [Automation](../index.md?#pivot=documentation&panel=automation) – A hub for information on CloudScript, Scheduled Tasks, PlayStream and Action & Rules.
+- [Automation](../index?#pivot=documentation&panel=automation) – A hub for information on CloudScript, Scheduled Tasks, PlayStream and Action & Rules.
 - [CloudScript quickstart](../features/automation/cloudscript/quickstart.md) – Get up and running quickly with your first CloudScript call.
 
 > [!TIP]
@@ -112,12 +112,12 @@ For more information, check out these resources to get you started with Cloud Sc
 
 There is much more you can do with PlayFab. Check out each of our feature areas in the links provided below to find the right feature set for your game:
 
-- [Authentication](../index.md?#pivot=documentation&panel=authentication)
-- [Data](../index.md?#pivot=documentation&panel=data)
-- [Config](../index.md?#pivot=documentation&panel=config)
-- [Automation](../index.md?#pivot=documentation&panel=automation)
-- [Social](../index.md?#pivot=documentation&panel=social)
-- [Commerce](../index.md?#pivot=documentation&panel=commerce)
-- [Multiplayer](../index.md?#pivot=documentation&panel=multiplayer)
-- [Analytics](../index.md?#pivot=documentation&panel=analytics)
-- [Engagement](../index.md?#pivot=documentation&panel=engagement)
+- [Authentication](../index?#pivot=documentation&panel=authentication)
+- [Data](../index?#pivot=documentation&panel=data)
+- [Config](../index?#pivot=documentation&panel=config)
+- [Automation](../index?#pivot=documentation&panel=automation)
+- [Social](../index?#pivot=documentation&panel=social)
+- [Commerce](../index?#pivot=documentation&panel=commerce)
+- [Multiplayer](../index?#pivot=documentation&panel=multiplayer)
+- [Analytics](../index?#pivot=documentation&panel=analytics)
+- [Engagement](../index?#pivot=documentation&panel=engagement)
