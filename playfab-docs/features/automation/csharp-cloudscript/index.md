@@ -24,10 +24,10 @@ C# CloudScript is a new feature that grants you event-driven compute on demand. 
 Using Azure Funcitons to run cloud code that is bound to a PlayFab title gives you the power of C# and strongly typed code. In addition, it also gives you the ability to leverage any number of Azure features such as CosmosDB.
 
 ### Early Access
-PlayFab C# CloudScript is still in development.  At this point the API contracts are generally locked, and we strive to avoid breaking changes, but such changes may turn out to be necessary in order to deliver the optimal experience for customers.  We *do not* recommend shipping a game to the public which relies on this feature until it is in Public Preview.
+PlayFab C# CloudScript is still in development.  API contracts may be necessary in order to deliver the optimal experience for customers.  We *do not* recommend shipping a game to the public which relies on this feature until it is in Public Preview.
 
 ### Pricing
-Currently access to C# CloudScript is free from within PlayFab. However, in order to use this feature you **must** bring your own Azure Subscription.  This means, that usage charges will apply to your Azure Subscription the same as if you used Azure Functions without a PlayFab integration. For more information about [Azure Function pricing](https://azure.microsoft.com/en-us/pricing/details/functions/) visit the Azure Site.
+Currently access to C# CloudScript is free from within PlayFab. However, in order to use this feature you **must** bring your own Azure Subscription.  This means, that usage charges will apply to your Azure Subscription the same as if you used Azure Functions without a PlayFab integration. For more information about [Azure Function pricing](https://azure.microsoft.com/en-us/pricing/details/functions/) visit the Azure Site. In addition, it is worth noting that Azure Funcitons does come with a certian amount of free usage with a paid subscription.
 
 ### Prerequisites
 There are a couple of steps needed to get started with PlayFab C# CloudScript.
@@ -37,7 +37,8 @@ There are a couple of steps needed to get started with PlayFab C# CloudScript.
 * You must have a [PlayFab account](https://developer.playfab.com/en-us/signup). 
 * You must have the C# CloudScript feature enabled for your title. Please contact [helloplayfab@microsoft.com](mailto:helloplayfab@microsoft.com) to request access while in Private Preview.
 * You will need access to the Beta PlayFab SDKs while this feature is in Private Preview.  You can also request access to these SDKs via [helloplayfab@microsoft.com](mailto:helloplayfab@microsoft.com).
-* You must use C# Functions. At this time the PlayFab integraiton with Azure Functions only supports the C# language. So be sure to create all your Azure Functions with C#.
+* While we do support all languages that Azure Functions support, our documentation only focuses on C# at this time.
+* PlayFab Azure Functions use V2 of Azure Functions, so please be sure to use the V2 runtime.
 
 ### Getting Started
 There are two ways to get started with C# CloudScript using Azure Functions.  The easiest and quickest way is to use Azure Functions right out of the box.  To get started with Azure Functions with either Visual Studio Code or Visual Studio visit their [getting started guide](https://docs.microsoft.com/en-us/azure/azure-functions/) and return here once you are completely setup.
@@ -159,6 +160,19 @@ namespace PlayFabCS2AFTests.HelloWorld
 As you can see in the above, the CurrentPlayerId of the caller is available like in our traditional CloudScript implementation.  Parameters you have passed in the FunctionParameters field will be available in the *args*.
 
 >Note: You will need to call this HelloWorld Azure Function via ExecuteFunction from an SDK.
+
+### Azure Function Rules
+Azure Functions can also be called by creating rules and scheduled tasks.  This works in the same way as our standard CloudScript.  To create a rule, go to Automation->Rules  or Automation->Scheduled Tasks. 
+
+* Click **New Rule**
+* Enter a name for your rule
+* Select the event type that this rule will trigger on
+* Add an action
+* From the action dropdown select **Execute Azure Funciton**
+
+A list of available Azure Functions that you've registered will be available in the drop down list.
+
+![Configure Rule for Azure Functions](media/azure_function_rules.jpg)
 
 ### Debugging your Azure Function
 With Azure Functions, you can now test and debug your CloudScript code locally.  Here is a great guide on how to [test and debug your Functions](https://docs.microsoft.com/en-us/azure/azure-functions/functions-develop-local) locally. 
