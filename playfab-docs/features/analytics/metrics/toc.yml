@@ -16,8 +16,6 @@
       href: playstream-events.md
     - name: Constructing an Event History search
       href: constructing-an-event-history-search.md
-    - name: Getting Started with PlayFab and Snowflake
-      href: getting-started-with-playfab-and-snowflake.md
     - name: Real-Time Analytics - Event History Chart Panel
       href: real-time-analytics-event-history-chart-panel.md
     - name: Real-Time Analytics - Event Queries
