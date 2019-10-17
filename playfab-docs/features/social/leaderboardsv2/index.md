@@ -1,4 +1,3 @@
-
 ---
 title: Introduction to Leaderboards v2
 author: carocai
@@ -64,4 +63,3 @@ In the Game Manager:
     - **"Sort direction"** allows you to rank your leaderboard in either acsending or descending order.
     - **"Child leaderboards"** allows you to choose between *Dynamic* and *Fixed*, with the differences mentioned under **Child Leaderboards** secion above. Note that you won't be able to change this setting once you create your leaderboard.
 * Click **SAVE**.
-
