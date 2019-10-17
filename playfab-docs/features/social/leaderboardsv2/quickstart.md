@@ -1,4 +1,3 @@
-
 ---
 title: Leaderboards v2 quickstart
 author: carocai
@@ -23,4 +22,3 @@ In the Game Manager:
     - Reset frequency is currently greyed out because our v2 doesn't support automatic reset yet.
     - Toggle "Classic statistics" to make it a v
 * Click **SAVE**.
-  
