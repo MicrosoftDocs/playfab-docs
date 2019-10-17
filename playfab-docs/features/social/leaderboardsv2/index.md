@@ -1,4 +1,3 @@
-
 ---
 title: Introduction to Leaderboards v2
 author: carocai
@@ -19,6 +18,7 @@ ms.localizationpriority: medium
 > This documentation is provided to give you an early look at an upcoming feature and to allow you to provide feedback while it is still in development.  
 >
 > Access to this feature is restricted to select titles. If you are interested in trying it, please contact us at [helloplayfab@microsoft.com](mailto:helloplayfab@microsoft.com).
+
 
 
 ## Overview
