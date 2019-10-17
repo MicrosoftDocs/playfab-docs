@@ -22,12 +22,6 @@ Your player is already logged into PlayFab.
 
 In the Game Manager:
 
-- 	Go to Leaderboards in the menu to the left.
-- 	Select NEW LEADERBOARD.
-- 	Configure your new leaderboard the way you want.
-- 	Click SAVE.
-  
-  -----------------------
 - Go to **Leaderboards** in the menu to the left.
 - Select **NEW LEADERBOARD**.
 - Add a **Leaderboard** called **HighScore** in the **Statistic name** field.
