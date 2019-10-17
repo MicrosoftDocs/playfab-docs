@@ -1,8 +1,8 @@
 ---
 title: Introduction to Leaderboards v2
-author: carocai
+author: xmcai2016
 description: Introduction to Leaderboards v2.
-ms.author: carocai
+ms.author: xmcai2016
 ms.date: 10/14/2019
 ms.topic: article
 ms.prod: playfab
@@ -64,4 +64,3 @@ In the Game Manager:
     - **"Sort direction"** allows you to rank your leaderboard in either acsending or descending order.
     - **"Child leaderboards"** allows you to choose between *Dynamic* and *Fixed*, with the differences mentioned under **Child Leaderboards** secion above. Note that you won't be able to change this setting once you create your leaderboard.
 * Click **SAVE**.
-
