@@ -22,21 +22,6 @@ Leaderboards are essentially rankings of entities such as players, groups, or it
 
 Leaderboards encourage competition among players of your game, and create incentives for the players to get better at the game. Adopting leaderboards allows players to keep up with each other and facilitates building a community. It can also result in players spending more time with the game and higher retention.
 
-## What’s the Difference Between Leaderboards V1 and V2?
-
-- V2 now supports ranking of other entity types in Playfab, in addition to Players that V1 supported.
-- V2 added the feature of child leaderboards, which allows categorization of leaderboards within the title. 
-
-### How to Implement Leaderboards
-
-In the Game Manager:
-
-- Go to **Leaderboards** in the menu to the left.
-- Select **NEW LEADERBOARD**.
-- Configure your new leaderboard the way you want.
-- Click **SAVE**.
-  
-
 ## Tournaments 
 
 ### Designing your tournament
