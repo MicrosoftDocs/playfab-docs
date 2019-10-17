@@ -20,6 +20,7 @@ ms.localizationpriority: medium
 > Access to this feature is restricted to select titles. If you are interested in trying it, please contact us at [helloplayfab@microsoft.com](mailto:helloplayfab@microsoft.com).
 
 
+
 ## Overview
 Leaderboards are such a significant part of game development that we are constantly iterating on customer feedback. To cater to new customer needs, we are currently developing a second version of Leaderboards APIs that would allow many more functionalities that our current Leaderboards APIs don't. Aligned with the new PlayFab entity model, the new APIs sit on top of entity statistics and is backed by Azure.
 
@@ -63,3 +64,4 @@ In the Game Manager:
     - **"Sort direction"** allows you to rank your leaderboard in either acsending or descending order.
     - **"Child leaderboards"** allows you to choose between *Dynamic* and *Fixed*, with the differences mentioned under **Child Leaderboards** secion above. Note that you won't be able to change this setting once you create your leaderboard.
 * Click **SAVE**.
+
