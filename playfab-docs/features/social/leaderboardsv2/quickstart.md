@@ -12,6 +12,13 @@ ms.localizationpriority: medium
 
 # Leaderboards v2 QuickStart 
 
+> [!IMPORTANT]
+> This feature is currently in **Private Preview**.  
+>
+> This documentation is provided to give you an early look at an upcoming feature and to allow you to provide feedback while it is still in development.  
+>
+> Access to this feature is restricted to select titles. If you are interested in trying it, please contact us at [helloplayfab@microsoft.com](mailto:helloplayfab@microsoft.com).
+
 ## Creating a new leaderboard
 
 ### In the Game Manager:

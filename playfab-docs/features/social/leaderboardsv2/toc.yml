@@ -5,5 +5,5 @@
 - name: Tutorials
   href: tutorials.md
   items:
-  - name: Using Child Leaderboards
-    href: using-child-leaderboards.md
+  - name: Getting Started
+    href: getting-started.md
