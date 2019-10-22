@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 PlayFab's multiplayer server hosting service allows you to operate a dynamically scaling pool of custom game servers in Azure.
 
-All PlayFab indie, pro, and enterprise tier customers can access the service and use a limited, free quota of multiplayer servers for product evaluation and testing. Because we're still improving the portal experience, samples, and documentation, this service is in a **preview** mode.
+All PlayFab indie, pro, and enterprise tier customers can access the service and use a limited, free quota of multiplayer servers for product evaluation and testing. 
 
 There are three key concepts to PlayFab multiplayer servers:
 
@@ -32,33 +32,6 @@ These are the typical steps for using the service:
 6. **Connect and play**. PlayFab will fulfill a server request within 1 second if standing-by servers are available. Once a server has been put into the active state, clients connect to the server and play.
 
 ![PlayFab Multiplayer Server Hosting Service diagram](media/tutorials/multiplayer-server-hosting-service-diagram.png)
-
-## Conceptual Documentation
-
-- **Quickstarts**
-  - [Quickstart for multiplayer servers (API/PowerShell)](quickstart-for-multiplayer-servers-api-powershell.md)
-  - [Quickstart for multiplayer servers (Game Manager)](quickstart-for-multiplayer-servers-game-manager.md)
-
-- **Authoring a game server**
-  - [Basics of a PlayFab game server](basics-of-a-playfab-game-server.md)
-  - [Integrating game servers with the PlayFab game server SDK (GSDK)](integrating-game-servers-with-gsdk.md)
-  - [Locally debugging game servers and integration with PlayFab](locally-debugging-game-servers-and-integration-with-playfab.md)
-
-- **Managing server builds**
-  - [Deploying PlayFab multiplayer server builds](deploying-playfab-multiplayer-server-builds.md)
-  - [Archiving and retrieving multiplayer server logs](archiving-and-retrieving-multiplayer-server-logs.md)
-  - [Lifecycle of multiplayer server builds](multiplayer-build-lifecycle.md)
-  - [Lifecycle of a multiplayer server build region](multiplayer-build-region-lifecycle.md)
-
-- **Connecting clients and requesting servers**
-  - [Using quality-of-service (QoS) beacons to measure player latency to Azure](using-qos-beacons-to-measure-player-latency-to-azure.md)
-  - [Allocating game servers and connecting Visual Studio debugging tools](allocating-game-servers-and-configuring-vs-debugging-tools.md)
-  - [Connecting clients to game servers](connecting-clients-to-game-servers.md)
-
-- **Limits and billing**
-  - [Accessing increased core limits and additional Azure regions](identifying-and-increasing-core-limits.md)
-  - [Billing for PlayFab Multiplayer Servers 2.0](billing-for-thunderhead.md)
-  - [Multiplayer Servers - detailed spec sheet](multiplayer-servers-detailed-price-sheet.md)
 
 ## Reference Documentation, Samples, and Tools
 
