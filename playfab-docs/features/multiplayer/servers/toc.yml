@@ -20,6 +20,8 @@
     href: deploying-playfab-multiplayer-server-builds.md
   - name: Deploying Linux based builds via API
     href: deploying-linux-based-builds.md
+  - name: Using aliases to aggregate and manage multiple builds
+    href: allocating-with-build-alias.md     
   - name: Archiving and retrieving multiplayer server logs
     href: archiving-and-retrieving-multiplayer-server-logs.md
   - name: Lifecycle of multiplayer server builds
