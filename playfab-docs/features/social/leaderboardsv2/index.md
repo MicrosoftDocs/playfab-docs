@@ -47,5 +47,5 @@ When you are creating a new Leaderboard, you can specify whether you want child 
 #### Fixed Child Leaderboards
  If you choose "Fixed", you can add up to 10 child leaderboards. Note that you won't be able to add more once the parent Statistic is created. Although the maximum number of fixed child leaderboards is 10, you are allowed to have very large child leaderboards under this option. You can visualize the parent leaderboard under this option as fairly *deep*.
 
-#### Dynamic  Child Leaderboards
+### Dynamic  Child Leaderboards
 If you choose "Dynamic", you will need to specify the maximum size (number of entities ranked) of your individual child leaderboards. Then you can add child leaderboards "on-the-go" after you create your parant Statistic. While you are limited to having a small number of rankings on each child leaderboard, you are allowed to have a lot of child leaderboards in parallel. You can visualize the parent leaderboard under this option as fairly *wide*.
