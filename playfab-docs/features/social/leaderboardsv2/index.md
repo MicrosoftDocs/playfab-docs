@@ -21,6 +21,7 @@ ms.localizationpriority: medium
 
 
 
+
 ## Overview
 Leaderboards are such a significant part of game development that we are constantly iterating on customer feedback. To cater to new customer needs, we are currently developing a second version of Leaderboards APIs that would allow many more functionalities that our current Leaderboards APIs don't. Aligned with the new PlayFab entity model, the new APIs sit on top of entity statistics and is backed by Azure.
 
