@@ -58,9 +58,9 @@ Create a **Title** in Game Manager, and update your environment with your own **
 
 A **TitleId** is obtained from the Game Manager. If you haven't already, [register for a free PlayFab developer account](https://developer.playfab.com/en-us/sign-up), then [log into the Game Manager](https://developer.playfab.com/en-us/login).
 
-Once you have logged in, select **Settings**. The **TitleId** for your game should already be present in the field below the **Name** column.
+Once you have logged into the Game Manager, the **TitleId** for your game should already be present below its name.
 
-![Game Manager - Settings - Secret Keys - Title ID](images/game-manager-settings-secret-keys.png)  
+![Game Manager - Title ID](images/game-manager.png)
 
 The SDK guide that you followed in the first step should have included instructions on how to enter your **Title ID**.
 
