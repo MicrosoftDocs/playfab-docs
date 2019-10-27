@@ -18,22 +18,22 @@ Using Azure Funcitons to run code for your game in the cloud that is bound to a 
 * The power of C# and strongly typed code. In addition, it also gives you the ability to leverage any number of Azure features such as CosmosDB.
 
 ### Pricing
-Currently access to PlayFab CloudScript using Azure Functions is free from within PlayFab. However, in order to use this feature you **must** bring your own Azure Subscription.  This means, that usage charges will apply to your Azure Subscription the same as if you used Azure Functions without a PlayFab integration. For more information about [Azure Function pricing](https://azure.microsoft.com/en-us/pricing/details/functions/) visit the Azure Site.
+Currently access to PlayFab CloudScript using Azure Functions is free from within PlayFab. However, in order to use this feature you **must** bring your own Azure Subscription.  This means, that usage charges will apply to your Azure Subscription the same as if you used Azure Functions without a PlayFab integration. For more information about [Azure Function pricing](https://azure.microsoft.com/pricing/details/functions/) visit the Azure Site.
 
 ### Prerequisites
 There are a couple of steps needed to get started with PlayFab C# CloudScript.
 
-* You must have an [Azure account](https://azure.microsoft.com/en-us/free/search/?&ef_id=EAIaIQobChMIhqGcsOTk5AIVF6rsCh0RIAJQEAAYASAAEgK6OfD_BwE:G:s&OCID=AID2000128_SEM_fNqQIgDa&MarinID=fNqQIgDa_306007172569_azure_e_c__46775454899_kwd-295407966859&lnkd=Google_Azure_Brand&gclid=EAIaIQobChMIhqGcsOTk5AIVF6rsCh0RIAJQEAAYASAAEgK6OfD_BwE) already setup.  Signing up for an Azure Account is free.
-* You must have an [Azure Subscription setup](https://docs.microsoft.com/en-us/azure/billing/billing-create-subscription), Subscriptions can be cancelled at any time. Visit [Cancel Azure Subscription](https://docs.microsoft.com/en-us/azure/billing/billing-how-to-cancel-azure-subscription) for more info.
+* You must have an [Azure account](https://azure.microsoft.com/free/search/?&ef_id=EAIaIQobChMIhqGcsOTk5AIVF6rsCh0RIAJQEAAYASAAEgK6OfD_BwE:G:s&OCID=AID2000128_SEM_fNqQIgDa&MarinID=fNqQIgDa_306007172569_azure_e_c__46775454899_kwd-295407966859&lnkd=Google_Azure_Brand&gclid=EAIaIQobChMIhqGcsOTk5AIVF6rsCh0RIAJQEAAYASAAEgK6OfD_BwE) already setup.  Signing up for an Azure Account is free.
+* You must have an [Azure Subscription setup](https://docs.microsoft.com/azure/billing/billing-create-subscription), Subscriptions can be cancelled at any time. Visit [Cancel Azure Subscription](https://docs.microsoft.com/azure/billing/billing-how-to-cancel-azure-subscription) for more info.
 * You must have a [PlayFab account](https://developer.playfab.com/en-us/signup). 
 
 ### Getting Started
-The easiest and quickest way is to use Azure Functions right out of the box.  To get started with Azure Functions with either Visual Studio Code or Visual Studio visit their [getting started guide](https://docs.microsoft.com/en-us/azure/azure-functions/) and return here once you are completely setup.
+The easiest and quickest way is to use Azure Functions right out of the box.  To get started with Azure Functions with either Visual Studio Code or Visual Studio visit their [getting started guide](https://docs.microsoft.com/azure/azure-functions/) and return here once you are completely setup.
 
 
 >Note: In this guide, we will focus only on using Visual Studio Code.
 
->Note: You can use any [language that is supported in Azure Functions](https://docs.microsoft.com/en-us/azure/azure-functions/supported-languages).  At this time the samples we provide with PlayFab integration uses the C# language.
+>Note: You can use any [language that is supported in Azure Functions](https://docs.microsoft.com/azure/azure-functions/supported-languages).  At this time the samples we provide with PlayFab integration uses the C# language.
 
 ### Enable the Feature
 Once you have gained access to the feature, you need to enable it.  Visit Automation -> CloudScript tab -> Functions (Preview).
@@ -43,7 +43,7 @@ Once you have gained access to the feature, you need to enable it.  Visit Automa
 ![Enable PlayFab C# CloudScript](media/enable_azure_functions.jpg)
 
 ### Create an Azure Function
-1. Following the Visual Studio Code getting started guide create a basic "HelloWorld" example function.  You can see how to do this by following the [Create your first function using Visual Studio Code guide](https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-first-function-vs-code).  For a code example using PlayFab variables see the section below **(PlayFab Function Context, Variables and using the Server SDKs)**
+1. Following the Visual Studio Code getting started guide create a basic "HelloWorld" example function.  You can see how to do this by following the [Create your first function using Visual Studio Code guide](https://docs.microsoft.com/azure/azure-functions/functions-create-first-function-vs-code).  For a code example using PlayFab variables see the section below **(PlayFab Function Context, Variables and using the Server SDKs)**
 2. Once your function has been created and deployed, click the Register Function button in the top right hand corner of the Functions (Preview) page.
 ![Register CloudScript Function](media/register_cs_function.jpg)
 3. Put the name and Function URL.  The URL can be found in the output of your deployment.
@@ -148,12 +148,12 @@ As you can see in the above, the CurrentPlayerId of the caller is available like
 >Note: You will need to call this HelloWorld Azure Function via ExecuteFunction from an SDK.
 
 ### Debugging your Azure Function
-With Azure Functions, you can now test and debug your CloudScript code locally.  Here is a great guide on how to [test and debug your Functions](https://docs.microsoft.com/en-us/azure/azure-functions/functions-develop-local) locally. 
+With Azure Functions, you can now test and debug your CloudScript code locally.  Here is a great guide on how to [test and debug your Functions](https://docs.microsoft.com/azure/azure-functions/functions-develop-local) locally. 
 
 Here are some highlights from the above document.
 
 * Make sure that your Azure Functions Core Tools are installed.
-* Configure your [Local Settings File](https://docs.microsoft.com/en-us/azure/azure-functions/functions-develop-vs-code?tabs=nodejs#local-settings-file)
+* Configure your [Local Settings File](https://docs.microsoft.com/azure/azure-functions/functions-develop-vs-code?tabs=nodejs#local-settings-file)
 * Set a break point in your code
 * Press F5 to start debugging
 
