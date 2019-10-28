@@ -473,7 +473,7 @@
     href: reference/typedefs.md
 - name: Xbox Live Helper Library
   items:
-  - name: Xbox Live helper library for PlayFab Party
+  - name: Overview
     href: party-xbox-live-guide.md
   - name: Release Notes
     href: party-xboxlive-relnotes.md

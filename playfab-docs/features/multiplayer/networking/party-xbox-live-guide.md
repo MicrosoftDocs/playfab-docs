@@ -1,5 +1,5 @@
 ---
-title: Respecting Xbox Live policies with Party
+title: Xbox Live helper library for PlayFab Party
 description: Xbox Live helper library for PlayFab Party
 author: AlexAtXbox
 ms.author: alstonge
@@ -10,7 +10,7 @@ ROBOTS: NOINDEX,NOFOLLOW
 keywords: playfab, multiplayer, networking, xbox live
 ---
 
-# Using the Xbox Live helper library for PlayFab Party
+# Xbox Live Helper Library Overview
 
 > [!IMPORTANT]
 > This feature is currently in **Private Preview**.
