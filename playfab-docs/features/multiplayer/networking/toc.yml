@@ -28,8 +28,6 @@
     href: party-speech-to-text-ux-guidelines.md
   - name: Text-to-speech UX guidelines
     href: party-text-to-speech-ux-guidelines.md
-- name: Xbox Live helper library for PlayFab Party
-  href: party-xbox-live-guide.md
 - name: Pricing
   href: pricing.md
 - name: Release notes
@@ -473,3 +471,9 @@
       href: reference/enums/partyvoicechattranscriptionphrasetype.md
   - name: Typedefs
     href: reference/typedefs.md
+- name: Xbox Live Helper Library
+  items:
+  - name: Xbox Live helper library for PlayFab Party
+    href: party-xbox-live-guide.md
+  - name: Release Notes
+    href: party-xboxlive-relnotes.md
