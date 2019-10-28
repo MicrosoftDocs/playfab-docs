@@ -43,7 +43,7 @@ Once you have gained access to the feature, you need to enable it.  Visit Automa
 ![Enable PlayFab C# CloudScript](media/enable_azure_functions.jpg)
 
 ### Create an Azure Function
-1. Following the Visual Studio Code getting started guide create a basic "HelloWorld" example function.  You can see how to do this by following the [Create your first function using Visual Studio Code guide](https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-first-function-vs-code).  For a code example using PlayFab variables see the section below **(PlayFab Function Context, Variables and using the Server SDKs)**
+1. We first need you to create a basic "HelloWorld" example function.  You can see how to do this by following the [Create your first function using Visual Studio Code guide](https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-first-function-vs-code).  For a code example using PlayFab variables see the section below **(PlayFab Function Context, Variables and using the Server SDKs)**
 2. Once your function has been created and deployed, click the Register Function button in the top right hand corner of the Functions (Preview) page.
 ![Register CloudScript Function](media/register_cs_function.jpg)
 3. Put the name and Function URL.  The URL can be found in the output of your deployment.
