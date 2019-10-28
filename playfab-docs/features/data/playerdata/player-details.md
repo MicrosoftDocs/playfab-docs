@@ -14,9 +14,9 @@ ms.localizationpriority: medium
 
 ## Accessing player details
 
-- To access player details, move to the sidebar menu and select [Players](../../data/playerdata/using-the-players-page.md) **(1)**.
+1. To access player details, first select **Players**.
 
-- Locate the Player and select their **ID** label **(2)**.
+2. From the list, locate the player whose details you want to review, and select their **ID**. This displays the Player Overview page.
 
 ![Game Manager - Access Player details](media/tutorials/game-manager-access-player-details.png)  
 

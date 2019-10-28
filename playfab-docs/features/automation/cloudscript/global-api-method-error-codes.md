@@ -39,7 +39,7 @@ The client is making too many API calls too quickly. Usually caused by *multiple
 PlayFab may be having a temporary issue, or the client is making too many API calls too quickly.
 
 - `InvalidAPIEndpoint (1131)`:
-PlayFab or Amazon Web Services (AWS) may be having a temporary issue.
+The URL for this request is not valid for this title.
 
 - `OverLimit (1214)`:
 The client is making too many API calls too quickly, usually on a specific API method.

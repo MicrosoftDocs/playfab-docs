@@ -22,7 +22,14 @@ The sections provided below offer greater insight on each Game Manager area. Eac
 
 Now that you have an account, select a title (either the one we created or one of your own) to follow along. Within each title, the scope of a new Game Manager is distributed across the following major sections.
 
-**Title Overview** - an overview of the recent and less-recent performance of your title.
+Game Manager is split into four major sections:
+- [Title Overview]
+- [Build]
+- [Engage]
+- [Analyze]
+
+### Title Overview
+An overview of the recent and less-recent performance of your title.
 
 **Overview** - shows your game’s basic statistics and what you may have assigned as Key Performance Indicators (KPIs). In the upper-right, you will find time period toggle buttons, and there are also filters for the tables.
 
@@ -57,13 +64,13 @@ The tables in the Overview tab allow you to monitor PlayStream events in real ti
 
 - **REPORTS**: The Reports table consolidates several critical categories into a useful format. Specific Reports are also available under the **Reports** tab in Analytics.
 
-[Back to Game Manager Sections](#game-manager-sections)
+[Back to About the Game Manager](#about-the-game-manager)
 
 **PlayStream Monitor** - PlayStream is our latest and greatest addition to the PlayFab platform. It displays title events as they are generated in real time, and you can visualize them at whatever granularity you prefer on the world map. Use the sampling controls to gather more or less events per second.
 
 ![Game Manager - PlayStream](media/tutorials/game-manager-playstream.png)
 
-[Back to Game Manager Sections](#game-manager-sections)
+[Back to About the Game Manager](#about-the-game-manager)
 
 ### Build 
 
@@ -149,7 +156,7 @@ Some specific tools your team can use to remedy defrauded players and identify p
 - [CloudScript Quickstart](../../automation/cloudscript/quickstart.md)
 - [Building Custom Game Servers Tutorial](../../multiplayer/servers/custom-game-servers.md)
 
-[Back to Game Manager Sections](#game-manager-sections)
+[Back to About the Game Manager](#about-the-game-manager)
 
 ### Groups
 
@@ -171,7 +178,7 @@ To configure marketplace integrations for your title: Explore the **Add-ons** se
 
 Setup instructions for each add-on may vary. Additional billing information may also be required.
 
-[Back to Game Manager Sections](#game-manager-sections)
+[Back to About the Game Manager](#about-the-game-manager)
 
 ## Engage
 
@@ -207,7 +214,7 @@ The following example shows the **Edit Currency** page for **Great Game**.
 - [Catalogs Tutorial](../../commerce/items/catalogs.md)
 - [Currencies Tutorial](../../commerce/economy/currencies.md)
 
-[Back to Game Manager Sections](#game-manager-sections)
+[Back to About the Game Manager](#about-the-game-manager)
 
 ### Leaderboards  
 
@@ -224,7 +231,7 @@ Select the orange **EDIT LEADERBOARD** button to edit your leaderboard name as w
 **Additional information**:
 
 - [Using resettable statistics and leaderboards](../../social/tournaments-leaderboards/using-resettable-statistics-and-leaderboards.md)
-- [Back to Game Manager Sections](#game-manager-sections)
+- [Back to About the Game Manager](#about-the-game-manager)
 
 ### Content
 
@@ -262,7 +269,7 @@ The following example shows the **Email Templates** tab for *Great Game*.
 
 ![Game Manager - Email Templates](media/tutorials/game-manager-content-email.png)
 
-[Back to Game Manager Sections](#game-manager-sections)
+[Back to About the Game Manager](#about-the-game-manager)
 
 **Push Notifications Templates** - create and manage new Push Notification templates.
 
@@ -288,7 +295,7 @@ For additional or custom reports, please open a feature request in our [communit
 
 **Webhooks** - here you can configure your Webhooks. Webhooks allow you to have some or all of your PlayStream events forwarded to any web URL you want. The event data is sent via POST in the request body as JSON.
 
-[Back to Game Manager Sections](#game-manager-sections)
+[Back to About the Game Manager](#about-the-game-manager)
 
 ## About Audit History and Billing
 

@@ -20,14 +20,14 @@ This tutorial describes how to *combine* these features, and produce alternate s
 
 1. Let's begin with some example segments. In the screen shot shown below, we have provided some segments that are segmented-store-testing friendly.
 
-![Game Manager - Players - Segments - Example Segments](media/tutorials/game-manager-players-segments-example-segments.png)  
+![Game Manager - Players - Segments - Example Segments](media/tutorials/game-manager-players-segments-new-segment.png)  
 
 2. Next, we'll reuse the **Equipment Store** created in the [Stores and Sales](stores-and-sales.md) tutorial, and add player segmentation. To do this, you must create each store separately, and give it an identifiable name. Each store should have content that is customized for that segment.
 
 > [!TIP]
 > Using the **DUPLICATE** feature on the **Stores** screen, you can duplicate stores quickly, and then modify the **Store Id**, **Store name**, and other parameters to make the new store unique.  
 
-The following screen shot, shows our customized stores.
+The following screen shot shows our customized stores.
 
 ![Game Manager - Economy - Catalogs - Stores](media/tutorials/game-manager-economy-catalogs-stores.png)  
 

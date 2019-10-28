@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 PlayFab Party simplifies adding low-latency chat and data communication to your game in a way that's flexible, inclusive, and secured. Party is ideal for multiplayer implementations where a cloud-hosted dedicated server is not desired (sometimes called "peer to peer or P2P games"). Party is also well-suited to power voice and text communication for social experiences your app may provide (e.g. in-game squads, or post-game lobbies), even if you're using a cloud server as the game host.
 
-Party utilizes Azure Cognitive Services to transcribe player voice chat and synthesize text as speech. This functionality has several uses, but was primarily designed as an accessibility aide. Typical usage of Party voice chat is billed on a per-minute basis, and up to 10% of those voice minutes can leverage transcription and synthesis for free. We recommend tying activation of this capability to an ease-of-access player setting. 
+Party utilizes Azure Cognitive Services to transcribe player voice chat and synthesize text as speech. This functionality has several uses, but was primarily designed as an accessibility aide. Typical usage of Party voice chat is billed on a per-minute basis, and up to 10% of those voice minutes can leverage transcription and synthesis for free. We recommend tying activation of this capability to an ease-of-access player setting.
 
 Party can not only transcribe player chat, but also translate chat in real time. In anonymous matchmaking and international competitive games, these transcription and translation capabilities can make for a more engaging multiplayer experience.
 
@@ -48,21 +48,24 @@ For details on parameters, return values, and behaviors when invoking the librar
 To read best practices for user experiences and Microsoft's recommendations around chat and data communication user interfaces, see the [PlayFab Party UX guidelines](party-ux-guidelines.md) topic.
 
 ## Resources
+|Platform|SDKs|Samples|
+|-|-|-|
+|Windows 10 |[C++ SDK](https://www.nuget.org/packages/Microsoft.PlayFab.PlayFabParty.Cpp.Win10), [Xbox Live Helper Library](https://www.nuget.org/packages/Microsoft.PlayFab.PlayFabPartyXboxLive.Cpp.Win10)|[BumbleRumble](https://github.com/PlayFab/PlayFab-Samples/tree/master/Samples/All/BumbleRumble)|
+|Xbox One (XDK) |[C++ SDK](https://www.nuget.org/packages/Microsoft.PlayFab.PlayFabParty.Cpp.XboxOneXDK), [Xbox Live Helper Library](https://www.nuget.org/packages/Microsoft.PlayFab.PlayFabPartyXboxLive.Cpp.XboxOneXDK)|[BumbleRumble](https://github.com/PlayFab/PlayFab-Samples/tree/master/Samples/All/BumbleRumble)||
+|Windows 7 |[C++ SDK](https://www.nuget.org/packages/Microsoft.PlayFab.PlayFabParty.Cpp.Win7/), [Xbox Live Helper Library](https://www.nuget.org/packages/Microsoft.PlayFab.PlayFabPartyXboxLive.Cpp.Win7)|Pending|
+|iOS | [C++ SDK](https://github.com/PlayFab/PlayFabParty/releases)| [Chat App](https://github.com/PlayFab/PlayFabParty/tree/master/iOS/PartySample)
+|Android | [C++ SDK](https://github.com/PlayFab/PlayFabParty/releases)| [Chat App](https://github.com/PlayFab/PlayFabParty/tree/master/android/PartySample)
+|Nintendo Switch | [C++ SDK](https://github.com/PlayFab/PlayFabPartySwitch)| [Chat App](https://github.com/PlayFab/PlayFabPartySwitch/tree/master/Switch/PartySample)
+|Sony PlayStation 4 | [C++ SDK](https://github.com/PlayFab/PlayFabPartyPS4)| [Chat App](https://github.com/PlayFab/PlayFabPartyPS4/tree/master/PS4/PartySample)
 
-- [Windows 7 (Win32 C++), Windows 10 (Win32 C++), and Xbox One (XDK C++) Nuget packages](https://www.nuget.org/profiles/PlayFab)
-- [Windows 10 and Xbox One sample (BumbleRumble)](https://github.com/PlayFab/PlayFab-Samples/tree/master/Samples/All/BumbleRumble)
-- [iOS SDK (C++)](https://github.com/PlayFab/PlayFabParty/releases)
-- [Android SDK (C++)](https://github.com/PlayFab/PlayFabParty/releases)
-- [Nintendo Switch SDK (C++)](https://github.com/PlayFab/PlayFabPartySwitch/releases/), this requires approval from Nintendo and PlayFab, contact us for access
+Access to the SDKs for Nintendo Switch and Sony PlayStation 4 requires special approval and adherence to platform policies, please contact us via [email](mailto:helloplayfab@microsoft.com) or [Game Manager](https://blog.playfab.com/blog/playfab-support-overview) for access.
 
 
 ## Relationship to the game and other components
 
 ### Discovery
 
-PlayFab Party provides a communication data transport that relies on an external discovery or advertisement mechanism to share initial connectivity information.
-This integrates well with various social platforms' invitation mechanisms that can include connection information.
-It could also leverage other [PlayFab multiplayer](../mpintro.md) features such as [Matchmaking](../matchmaking/index.md) for like-minded players to find each other, and [Servers](../servers/index.md) that host dynamically scaling custom game worlds where players have already gathered. Or, you can have players rendezvous using your own preferred technology.
+PlayFab Party provides a data transport, and games will typically need an external discovery or signaling mechanism in order to share initial connectivity information. For example, many social platforms provide invitation systems that can include connection information and be used for signaling. You can also leverage other [PlayFab multiplayer](../mpintro.md) features such as [Matchmaking](../matchmaking/index.md) for like-minded players to find each other. Or, you can have players rendezvous using your own custom technology.
 
 ### Policy
 
