@@ -19,13 +19,11 @@ keywords: playfab, multiplayer, networking, xbox live
 >
 > Access to this feature is restricted to select titles, with SDKs available for Windows 10 PCs and Xbox One. Interoperable SDKs for iOS and Android are available now. If you are interested in this feature, you can request access by submitting a ticket on [support.playfab.com](https://support.playfab.com/hc/en-us/requests/new).
 
-The PlayFab Party Helper Library for Xbox Live is a library designed to help games using PlayFab Party meet Xbox Live policies related to communication (XR-015 and XR-045).
+The PlayFab Party Helper Library for Xbox Live is designed to help games using PlayFab Party meet Xbox Live policies related to communication (XR-015 and XR-045).
 
 ## User creation and interaction with PlayFab Party
 
 The Party Xbox Live Helper library can be used to retrieve the right `PartyChatPermissionOptions` for each of your players to ensure that each player's preferences and privileges are respected. To do so, you will need to create `PartyXblLocalChatUser` and `PartyXblChatUser` for each Xbox Live user actively participating in the gaming session.
-
-To ensure Xbox Live policies are respected, you should be creating one `PartyXblLocalChatUser` object for every local `PartyChatControl` currently active on the device, assuming that the chat control object also represent an Xbox Live user. A `PartyXblCreateLocalChatUserCompletedStateChange` state change will be returned by `PartyXblManager::StartProcessingStateChanges()` to indicate if the creation was successful or not. While you are free to call `PartyXblLocalChatUser::LoginToPlayFab()` while creation is pending, most other `PartyXblLocalChatUser` methods will return an error indicating that the information are currently being queried by the library.
 
 While the [PlayFab CPP SDK](https://docs.microsoft.com/en-us/gaming/playfab/sdks/playfab-cpp/) can be used to obtain the `entityId` and `titlePlayerEntityToken` needed by the `PartyManager::CreateLocalUser()` method, the Xbox Live Helper library also provide the `PartyXblManager::LoginToPlayFab()` method for title that wish to avoid taking on the extra dependency.
 
@@ -164,9 +162,9 @@ PartyError GetRequiredChatPermissionInfo(
 ```
 
 The `PartyXblChatPermissionInfo` structure contains two pieces of information:
+
 - A `PartyChatPermissionOptions` mask that can be either pass as-is to the `PartyLocalChatControl::SetPermission()` method or that can be used as a binary mask if you already have a `PartyChatPermissionOptions` value that you would like to use but want to make sure that you are respecting Xbox Live policies.
 - A `PartyXblChatPermissionMaskReason` value that provides extra information regarding the value of `PartyXblChatPermissionInfo::chatPermissionMask`
-
 
 | **PartyXblChatPermissionMaskReason** | **Explanation** |
 |:-----------|:----------------|
@@ -244,4 +242,3 @@ Once you have the token and signature, they can be provided to the Party Xbox Li
         _In_opt_ PartyString signature
         );
 ```
-
