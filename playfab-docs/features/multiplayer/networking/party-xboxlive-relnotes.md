@@ -11,6 +11,12 @@ keywords: playfab, party, release notes, multiplayer, networking, xbox, xbl
 ms.localizationpriority: medium
 ---
 
-# PlayFab Party Xbox Live Helper release notes
+# Xbox Live Helper library release notes
 
-PlayFab Party Xbox Live is available on [Nuget.org](https://www.nuget.org/profiles/PlayFab)!
+The Xbox Live Helper library is available on [Nuget.org](https://www.nuget.org/profiles/PlayFab)!
+
+## 1.0.1
+
+#### LoginToPlayFab API
+
+This release of the Party Xbox Live Helper library introduces the `PartyXblManager::LoginToPlayFab()` API and associated completion state change, `PartyXblLoginToPlayFabCompletedStateChange`. This API provides equivalent functionality to the PlayFab SDK `LoginWithXbox` API.
