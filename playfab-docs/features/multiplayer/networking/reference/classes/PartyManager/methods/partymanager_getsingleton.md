@@ -1,0 +1,40 @@
+---
+author: jdeweyMSFT
+title: "PartyManager::GetSingleton"
+description: Retrieves a reference to the PartyManager singleton instance.
+ms.author: jdewey
+ms.topic: reference
+ms.prod: playfab
+ms.date: 09/25/2019
+ROBOTS: NOINDEX,NOFOLLOW
+---
+
+# PartyManager::GetSingleton  
+
+Retrieves a reference to the PartyManager singleton instance.  
+
+## Syntax  
+  
+```cpp
+PartyManager& GetSingleton(  
+)  
+```  
+  
+### Parameters  
+  
+  
+### Return value  
+PartyManager&
+  
+The PartyManager singleton instance.
+  
+  
+## Requirements  
+  
+**Header:** Party.h
+  
+## See also  
+[PartyManager](../partymanager.md)  
+
+  
+  

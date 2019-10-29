@@ -449,7 +449,7 @@ Running successful events is perhaps the most essential LiveOps skill. A good ev
 
 - **A goal**. Good events start with measurable goals that the team can design toward. Make every event a part of your iterative, learning mindset and set goals then measure how well your events meet them in the wild.
 
-![Adventures](media/adventures7.png)
+![Adventures](media/adventures-7.png)
 
 So, what does that mean, exactly? In the abstract, a live event is simply a temporary but meaningful change to a game’s content. Holidays are an obvious theme for events, both because players will generally share some similar associations with the holiday which can be reflected in fun limited-time changes to the game’s appearance, and because holidays can be times when players have more free time available and offering them a reason to play can provide a boost in engagement. Games like *Clash of Clans* and *Brutes.io* make a practice of running major events for Halloween and the winter holidays, for example.
 
@@ -473,7 +473,7 @@ Companies like Kolibri Games understand the dynamics of limited-time events, and
 
 *“To prepare - first we have to prepare new assets with the graphic teams, the game designers refresh the ideas and then bring it all together on the development side. We have different channels to message players. Push notifications have generated a huge increase in logins. In-game messaging - pop-ups that notify players of events. Also all the channels - Facebook, Discord, Reddit.”*
 
-![Popup - Event Mine - Announcement](media/popups9.png) | ![Popup - Event Mine - Rewards](media/popups10.png)
+![Popup - Event Mine - Announcement](media/popup-event-mine-announcement.png) | ![Popup - Event Mine - Rewards](media/popup-event-mine-rewards.png)
 
 ![Car Launch](media/car-launch11.png)
 
