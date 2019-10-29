@@ -1,3 +1,15 @@
+---
+title: Managing standing by servers
+author: tophpalmer
+description: Managing standing by servers
+ms.author: chpalm
+ms.date: 10/18/2019
+ms.topic: article
+ms.prod: playfab
+keywords: playfab. multiplayer, servers
+ms.localizationpriority: medium
+---
+# Managing standing by servers
 A key benefit of using PlayFab multiplayer servers or other orchestrators is fulfilling player demand efficiently. Ideally you would only consume as much cloud compute as necessary to power active player activity. The reality is that  multiplayer servers spend some time in the following non-active states:
 
 - **Pre-propping**. Azure and PlayFab must create the virtual machine, initialize its operating system, and configure its environment. PlayFab drives this pre-propping activity before the virtual machine is assigned to a customer and billed.
