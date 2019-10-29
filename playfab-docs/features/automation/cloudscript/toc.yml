@@ -1,8 +1,5 @@
 - name: Overview
   href: index.md
-  items:
-  - name: CloudScript and Azure Functions
-    href: cloudscript-and-azure-functions.md
 - name: Quickstart
   href: quickstart.md
 - name: Tutorials
