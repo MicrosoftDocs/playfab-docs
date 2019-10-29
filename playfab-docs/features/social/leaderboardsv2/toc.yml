@@ -7,3 +7,5 @@
   items:
   - name: Getting Started
     href: getting-started.md
+  - name: Child Leaderboards
+    href: child-leaderboards.md

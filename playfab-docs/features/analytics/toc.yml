@@ -4,8 +4,6 @@
   items:
   - name: A/B testing
     href: ab-testing/toc.yml
-  - name: Insights
-    href: data-warehouse/toc.yml
   - name: Xbox Data Add On
     href: xbox-data/toc.yml
   - name: Metrics

@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 >
 > This documentation is provided to give you an early look at an upcoming feature and to allow you to provide feedback while it is still in development.  
 >
-> Access to this feature is restricted to select titles. If you are interested in trying it, please contact us at [helloplayfab@microsoft.com](mailto:helloplayfab@microsoft.com).
+> Access to this feature is restricted to select titles that PlayFab actively reaches out to.
 
 ## Creating a new leaderboard
 
@@ -32,6 +32,7 @@ ms.localizationpriority: medium
   
   
 * Configure your new leaderboard the way you want.
+
     - **"Statisitc name"** is the name of your new leaderboard. Note that you won't be able to edit the name once the leaderboard is created.
     -** "Reset frequency" **is how often you want your leaderboard to automatically reset. It is currently greyed out because our v2 doesn't support automatic reset yet.
     -** "Agrregation method"** applies to the values in your new leaderboard.
@@ -65,3 +66,4 @@ Sample Response
 HTTP/1.1 200 OK
 Content-Type: application/json; charset=utf-8
 ```
+

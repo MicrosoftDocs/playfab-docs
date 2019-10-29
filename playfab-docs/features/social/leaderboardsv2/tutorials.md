@@ -12,3 +12,4 @@ ms.localizationpriority: medium
 
 # Leaderboards v2 tutorials
 - [Getting Started](getting-started.md)
+- [Child Leaderboards](child-leaderboards.md)
