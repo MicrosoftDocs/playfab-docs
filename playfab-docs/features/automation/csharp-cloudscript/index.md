@@ -21,13 +21,13 @@ ms.localizationpriority: medium
 
 C# CloudScript is a new feature that grants you event-driven compute on demand.  In order to do this we leverage Azure Functions and provide you with a tight integration via Visual Studio Code.  
 
-Using Azure Funcitons to run cloud code that is bound to a PlayFab title gives you the power of C# and strongly typed code. In addition, it also gives you the ability to leverage any number of Azure features such as CosmosDB.
+Using Azure Functions to run cloud code that is bound to a PlayFab title gives you the power of C# and strongly typed code. In addition, it also gives you the ability to leverage any number of Azure features such as CosmosDB.
 
 ### Early Access
 PlayFab C# CloudScript is still in development.  API contract changes may be necessary in order to deliver the optimal experience for customers.  We *do not* recommend shipping a game to the public which relies on this feature until it is in Public Preview.
 
 ### Pricing
-Currently access to C# CloudScript is free from within PlayFab. However, in order to use this feature you **must** bring your own Azure Subscription.  This means, that usage charges will apply to your Azure Subscription the same as if you used Azure Functions without a PlayFab integration. For more information about [Azure Function pricing](https://azure.microsoft.com/en-us/pricing/details/functions/) visit the Azure Site. In addition, it is worth noting that Azure Funcitons does come with a certian amount of free usage with a paid subscription.
+Currently access to C# CloudScript is free from within PlayFab. However, in order to use this feature you **must** bring your own Azure Subscription.  This means, that usage charges will apply to your Azure Subscription the same as if you used Azure Functions without a PlayFab integration. For more information about [Azure Function pricing](https://azure.microsoft.com/en-us/pricing/details/functions/) visit the Azure Site. In addition, it is worth noting that Azure Functions does come with a certain amount of free usage with a paid subscription.
 
 ### Prerequisites
 There are a couple of steps needed to get started with PlayFab C# CloudScript.
@@ -168,7 +168,7 @@ Azure Functions can also be called by creating rules and scheduled tasks.  This 
 * Enter a name for your rule
 * Select the event type that this rule will trigger on
 * Add an action
-* From the action dropdown select **Execute Azure Funciton**
+* From the action dropdown select **Execute Azure Function**
 
 A list of available Azure Functions that you've registered will be available in the drop down list.
 
@@ -182,6 +182,6 @@ Here are some highlights from the above document.
 * Make sure that your Azure Functions Core Tools are installed.
 * Configure your [Local Settings File](https://docs.microsoft.com/en-us/azure/azure-functions/functions-develop-vs-code?tabs=nodejs#local-settings-file)
 * Set a break point in your code
-* Press F5 to start debugging
+* Selct **F5** to start debugging
 
 
