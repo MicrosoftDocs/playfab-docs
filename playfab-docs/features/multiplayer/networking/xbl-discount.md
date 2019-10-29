@@ -12,13 +12,13 @@ ms.localizationpriority: medium
 
 # Multiplayer subsidy and FAQ for Xbox Live managed partners
 
-This page provides pricing information and guidance for [Xbox Live managed partners](https://docs.microsoft.com/en-us/gaming/xbox-live/get-started/setup-partner-center/setup-partner-center-id-partners) interested in using PlayFab services to accomplish multiplayer scenarios across PC, Mobile, and Xbox One.
+This page provides pricing information and guidance for [Xbox Live managed partners](https://docs.microsoft.com/gaming/xbox-live/get-started/setup-partner-center/setup-partner-center-id-partners) interested in using PlayFab services to accomplish multiplayer scenarios across PC, Mobile, and Xbox One.
 
 PlayFab and Xbox Live have partnered so game developers can power Xbox Live multiplayer activity with several PlayFab services for free. This includes [PlayFab Matchmaking](../../multiplayer/matchmaking/index.md) and [PlayFab Party](../../multiplayer/networking/index.md). If you would like to take advantage of this program we recommend the following multiplayer design:
 
 1. Use the [Xbox Live SDK](https://docs.microsoft.com/gaming/xbox-live) to interface with Xbox Live social capabilities like 
 Activity, Profile Cards, and game invites.
-2. Use [Xbox Live SmartMatch](https://docs.microsoft.com/en-us/gaming/xbox-live/multiplayer/multiplayer-manager/play-multiplayer-with-matchmaking) or  [PlayFab Matchmaking](../../multiplayer/matchmaking/index.md) to match players.
+2. Use [Xbox Live SmartMatch](https://docs.microsoft.com/gaming/xbox-live/multiplayer/multiplayer-manager/play-multiplayer-with-matchmaking) or  [PlayFab Matchmaking](../../multiplayer/matchmaking/index.md) to match players.
 3. Use [PlayFab Party](../../multiplayer/networking/index.md) to connect players for device-to-device networking or chat.
 
 If you are building a cross-network game, you will need to use the equivalent social APIs from Steam, Sony PlayStation, etc. for those platforms, and comply with any platform policies governing multiplayer and cross-network activity.
@@ -39,14 +39,14 @@ Yes. These services are already used by several games in production and are supp
 ## How do I ensure my usage of PlayFab Party is compliant with Xbox Live Integration policies?
 PlayFab Party is always compliant with Xbox Live network security requirements, and uses appropriately updated DTLS ciphers and complex keys. 
 
-To facilitate using Party with Xbox Live and ensure communication behavior is compliant and respects player privacy and mute settings, there is an Xbox Live plug-in for Party. [Please check out the Xbox Live Party plug-in topic for more information.](https://review.docs.microsoft.com/en-us/gaming/playfab/features/multiplayer/networking/party-xbox-live-guide?branch=pr-en-us-912)
+To facilitate using Party with Xbox Live and ensure communication behavior is compliant and respects player privacy and mute settings, there is an Xbox Live plug-in for Party. [Please check out the Xbox Live Party plug-in topic for more information.](https://review.docs.microsoft.com/gaming/playfab/features/multiplayer/networking/party-xbox-live-guide)
 
 ## I am not currently a PlayFab customer but want to take advantage of the Xbox Live subsidy. How do I get started?
 
 1. Make a PlayFab developer account at https://developer.playfab.com
 2. Create PlayFab titles for your project. These do not need to be linked in any way to your Partner Center titles.
 3. Enable Matchmaking and Party in their respective pages in Game Manager. Because we are controlling access to Party during the preview, you will need an access code from your Microsoft developer partner manager. 
-4. Download [Party SDK](https://docs.microsoft.com/en-us/gaming/playfab/features/multiplayer/networking/) or [PlayFab REST SDKs](https://docs.microsoft.com/en-us/gaming/playfab/index#pivot=documentation&panel=sdks).
+4. Download [Party SDK](https://docs.microsoft.com/gaming/playfab/features/multiplayer/networking/) or [PlayFab REST SDKs](https://docs.microsoft.com/gaming/playfab/index#pivot=documentation&panel=sdks).
 
 ## Do I need to upgrade my studio tier to Pro or Enterprise to make use of the subsidy?
 No. You can access PlayFab Party and Matchmaking at unlimited scale, for free, as part of the indie tier, as long as the originating player used the `LoginWithXbox()` API to access PlayFab services. 
