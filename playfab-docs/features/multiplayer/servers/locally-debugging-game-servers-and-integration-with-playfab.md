@@ -35,7 +35,7 @@ The agent can also be configured to run the game server as a containerized appli
   - **OutputFolder**: Path to a drive or folder where the outputs and config files will be generated. Ensure there is sufficient space available since the game server will be extracted under this path.
   - **LocalFilePath**: Full Local Path (on your workstation) to the game server asset zip file created earlier, for example: **D:\\\\MyAmazingGame\\\\asset.zip** (note that backslashes need to be escaped for JSON formatting).
   - **MountPath**: The path within the container that the asset should be mounted at. We recommend using the sample value - **C:\\\\Assets** (note that backslashes need to be escaped for JSON formatting).
-  - **StartGameCommand**: The full path to the game server executable within the container (that includes the mount path above). Assuming the executable name is **mygame.exe**, a sample path would be **C:\\\\Asssets\\\\mygame.exe**.
+  - **StartGameCommand**: The full path to the game server executable within the container (that includes the mount path above). Assuming the executable name is **mygame.exe**, a sample path would be **C:\\\\Assets\\\\mygame.exe**.
   - **PortMappingsList**: Update the GamePort section to match the protocol and port at which your game server is listening for clients. You can leave NodePort at 56100. If your game needs multiple ports, copy paste the existing port configuration and increment NodePort (along with new GamePort settings).
   - **SessionCookie** (optional): Any session cookie that gets passed to your game server as part of the [RequestMultiplayerServer API](xref:titleid.playfabapi.com.multiplayer.multiplayerserver.requestmultiplayerserver) call.
 
