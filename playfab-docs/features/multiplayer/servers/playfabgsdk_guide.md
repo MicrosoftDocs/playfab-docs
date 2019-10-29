@@ -55,14 +55,14 @@ Our programmers use Visual Studio 2017.
 -------------
 
 - Unreal Engine 4 Documentation:
-https://docs.unrealengine.com/en-US/index.html
+https://docs.unrealengine.com/index.html
 
-- PlayFab Documentation (NEW): https://docs.microsoft.com/en-us/gaming/playfab/
+- PlayFab Documentation (NEW): https://docs.microsoft.com/gaming/playfab/
 
 - PlayFab API Reference: <https://api.playfab.com/>
 
 - PlayFab Local Debugging (MockVM):
-<https://docs.microsoft.com/en-us/gaming/playfab/features/multiplayer/servers/locally-debugging-game-servers-and-integration-with-playfab>
+<https://docs.microsoft.com/gaming/playfab/features/multiplayer/servers/locally-debugging-game-servers-and-integration-with-playfab>
 
 ## Integrating the PlayFab GSDK into Huli
 
