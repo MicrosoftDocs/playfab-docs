@@ -12,14 +12,14 @@ ms.localizationpriority: medium
 
 # Multiplayer subsidy and FAQ for Xbox Live managed partners
 
-This page provides pricing information and guidance for [Xbox Live managed partners](https://docs.microsoft.com/en-us/windows/uwp/xbox-live/get-started-with-partner/get-started-with-xbox-live-partner) interested in using PlayFab services to accomplish multiplayer scenarios across PC, Mobile, and Xbox One.
+This page provides pricing information and guidance for [Xbox Live managed partners](https://docs.microsoft.com/en-us/gaming/xbox-live/get-started/setup-partner-center/setup-partner-center-id-partners) interested in using PlayFab services to accomplish multiplayer scenarios across PC, Mobile, and Xbox One.
 
-PlayFab and Xbox Live have partnered so game developers can power Xbox Live multiplayer activity with several PlayFab services at zero cost. This includes [PlayFab Matchmaking](../../features/multiplayer/matchmaking/index.md) and [PlayFab Party](../../features/multiplayer/networking/index.md). If you would like to take advantage of this program we recommend the following multiplayer design:
+PlayFab and Xbox Live have partnered so game developers can power Xbox Live multiplayer activity with several PlayFab services at zero cost. This includes [PlayFab Matchmaking](../../multiplayer/matchmaking/index.md) and [PlayFab Party](../../multiplayer/networking/index.md). If you would like to take advantage of this program we recommend the following multiplayer design:
 
 1. Use the [Xbox Live SDK](https://docs.microsoft.com/gaming/xbox-live) to interface with Xbox Live social capabilities like 
 Activity, Profile Cards, and game invites.
-2. Use [Xbox Live SmartMatch](https://docs.microsoft.com/en-us/gaming/xbox-live/multiplayer/multiplayer-manager/play-multiplayer-with-matchmaking) or  [PlayFab Matchmaking](../../features/multiplayer/matchmaking/index.md) to match players.
-3. Use [PlayFab Party](../../features/multiplayer/networking/index.md) to connect players for device-to-device networking or chat.
+2. Use [Xbox Live SmartMatch](https://docs.microsoft.com/en-us/gaming/xbox-live/multiplayer/multiplayer-manager/play-multiplayer-with-matchmaking) or  [PlayFab Matchmaking](../../multiplayer/matchmaking/index.md) to match players.
+3. Use [PlayFab Party](../../multiplayer/networking/index.md) to connect players for device-to-device networking or chat.
 
 If you are building a cross-network game, you will need to use the equivalent social APIs from Steam, Sony PlayStation, etc. for those platforms, and comply with any platform policies governing multiplayer and cross-network activity.
 
@@ -30,12 +30,16 @@ There are reasonable limits enforced by the PlayFab terms of service (e.g. unnec
 
 **The other limit is translation.** Translation functionality is not included in the subsidy.
 
-
 ## Does the subsidy apply only to Xbox console?
 No. The subsidy applies to Xbox Live activity on any platform, including PC, iOS, and Android.
 
 ## PlayFab Matchmaking and PlayFab Party are labeled as preview programs. Can I use these services in production?
 Yes. These services are already used by several games in production and are supported 24/7 by PlayFab. We are using the preview phase to grow our customer base methodically, improve usability, and action customer feedback. 
+
+## How do I ensure my usage of PlayFab Party is compliant with Xbox Live Integration policies?
+PlayFab Party is always compliant with Xbox Live network security requirements, and uses appropriately updated DTLS ciphers and complex keys. 
+
+To facilitate using Party with Xbox Live and ensure communication behavior is compliant and respects player privacy and mute settings, there is an Xbox Live plug-in for Party. [Please check out the Xbox Live Party plug-in topic for more information.](https://review.docs.microsoft.com/en-us/gaming/playfab/features/multiplayer/networking/party-xbox-live-guide?branch=pr-en-us-912)
 
 ## I am not currently a PlayFab customer but want to take advantage of the Xbox Live subsidy. How do I get started?
 
