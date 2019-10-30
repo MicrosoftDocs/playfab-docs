@@ -22,9 +22,7 @@ Multiplayer is be a great addition to many titles, and PlayFab provides several 
 |[Party](./networking/index.md)|Connect players with networking and accessible in-game chat|Pre-production|Premium Service - Free during private preview|
 |[Servers](./servers/index.md)|Dynamically scale custom multiplayer servers in Azure| Production |Premium Service|
 
-Leaderboards, Entity Groups, and Matchmaking are production services offered in PlayFab Essentials, our core services package, without any additional cost.
-
-Servers is a production service, which costs extra (see [Multiplayer Server billing](./servers/billing-for-thunderhead.md)). Party is a preview service that we are working to operationalize. It is offered with limited quota, and is free (for the time being). Party will become a premium service when broad production support is enabled later this year (see [Party billing](./networking/pricing.md)).
+Leaderboards, Entity Groups, and Matchmaking are production services offered in PlayFab Essentials, our core services package, without any additional cost. Servers and Party are production services, which cost extra (see [Multiplayer Server billing](./servers/billing-for-thunderhead.md) and [Party billing](./networking/pricing.md)).
 
 While titles can use all of these services in combination, they can be used independently as well, and this is quite common. For example titles might use PlayFab matchmaking but allocate servers from an alternative multiplayer server hosting solution. Or games might use PlayFab multiplayer servers for hosting, but use their own matchmaking system to bring players together.
 
