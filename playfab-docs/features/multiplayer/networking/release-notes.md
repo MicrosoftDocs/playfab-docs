@@ -15,6 +15,8 @@ ms.localizationpriority: medium
 
 PlayFab Party is available on [Nuget.org](https://www.nuget.org/profiles/PlayFab)!
 
+Release notes for the Xbox Live Helper library can be found [here](party-xboxlive-relnotes.md).
+
 ## 1.0.1
 
 ### Party API Changes
@@ -26,12 +28,6 @@ This release of Party adds fixes for `SetMemoryCallbacks()` and also restriction
 #### Removal of PartyStateChangeResult::TitleCreateNetworkThrottled
 
 The `PartyStateChangeResult` value `TitleCreateNetworkThrottled` has been removed from the API, since the Party library will never generate it.
-
-### PartyXboxLive API Changes
-
-#### LoginToPlayFab API
-
-This release of the Party Xbox Live Helper library introduces the `PartyXblManager::LoginToPlayFab()` API and associated completion state change, `PartyXblLoginToPlayFabCompletedStateChange`. This API provides equivalent functionality to the PlayFab SDK `LoginWithXbox` API.
 
 ## 0.7.0-prerelease
 
