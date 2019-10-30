@@ -15,6 +15,24 @@ ms.localizationpriority: medium
 
 PlayFab Party is available on [Nuget.org](https://www.nuget.org/profiles/PlayFab)!
 
+## 1.0.1
+
+### Party API Changes
+
+#### PartyManager::SetMemoryCallbacks Changes
+
+This release of Party adds fixes for `SetMemoryCallbacks()` and also restrictions about when this API is safe to call. Check the reference documentation of the API in Party.h for details.
+
+#### Removal of PartyStateChangeResult::TitleCreateNetworkThrottled
+
+The `PartyStateChangeResult` value `TitleCreateNetworkThrottled` has been removed from the API, since the Party library will never generate it.
+
+### PartyXboxLive API Changes
+
+#### LoginToPlayFab API
+
+This release of the Party Xbox Live Helper library introduces the `PartyXblManager::LoginToPlayFab()` API and associated completion state change, `PartyXblLoginToPlayFabCompletedStateChange`. This API provides equivalent functionality to the PlayFab SDK `LoginWithXbox` API.
+
 ## 0.7.0-prerelease
 
 ### Windows Packaging Changes
@@ -35,7 +53,7 @@ The iOS flavor of Party now has the framework package included for dynamically l
 
 #### UpdateEntityToken API
 
-This release of Party makes a change related to the handling of PlayFab entity tokens. In the previous version, the game provided Party with a user’s entity token in the `CreateLocalUser` API. Thereafter, Party internally refreshed the entity token and kept it up to date.
+This release of Party makes a change related to the handling of PlayFab entity tokens. In the previous version, the game provided Party with a user’s entity token in the `CreateLocalUser()` API. Thereafter, Party internally refreshed the entity token and kept it up to date.
 
 In this version, the internal token refreshing behavior has been removed and is replaced by a new API, `PartyLocalUser::UpdateEntityToken()`. The caller is now responsible for monitoring the expiration of the entity token provided to `PartyManager::CreateLocalUser()` and `PartyLocalUser::UpdateEntityToken()`. When the token is nearing or past the expiration time a new token should be obtained by performing a PlayFab login operation and provided to the Party library by calling `UpdateEntityToken()`. It is recommended to acquire a new token when the previously supplied token is halfway through its validity period. On platforms that may enter a low power state or otherwise cause the application to pause execution for a long time, preventing the token from being refreshed before it expires, the token should be checked for expiration once execution resumes.
 
