@@ -12,13 +12,9 @@ ms.localizationpriority: medium
 ---
 
 # Billing for PlayFab Party
-
 > [!IMPORTANT]
-> This feature is currently in **Private Preview**.
+> This feature is currently in ** Preview**  and this page describes preview pricing, which is subject to change upon launch of service.
 >
-> It is provided to give you an early look at an upcoming feature and to allow you to provide feedback while it is still in development.
->
-> Access to this feature is restricted to select titles. If you are interested in this feature, you can request access by submitting a ticket on [support.playfab.com](https://support.playfab.com/hc/en-us/requests/new).
 
 Most PlayFab services, such as PlayStream or Matchmaking, are included with every paid PlayFab tier as part of our core offering. However, PlayFab Party is billed on a consumption basis. This document describes the billing plan for Party.
 
