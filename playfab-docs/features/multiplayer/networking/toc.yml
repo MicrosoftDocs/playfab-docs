@@ -471,3 +471,9 @@
       href: reference/enums/partyvoicechattranscriptionphrasetype.md
   - name: Typedefs
     href: reference/typedefs.md
+- name: Xbox Live Helper library
+  items:
+  - name: Overview
+    href: party-xbox-live-guide.md
+  - name: Release notes
+    href: party-xboxlive-relnotes.md
