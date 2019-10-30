@@ -2,12 +2,10 @@
   href: index.md
 - name: Quickstarts
   items:
-  - name: Quickstart non-Windows
+  - name: Enabling PlayFab Party in Game Manager
+    href: enable-party.md
+  - name: Creating a Party with the client SDK
     href: quickstart-non-windows.md
-  - name: Quickstart Windows
-    href: quickstart-windows.md
-- name: Enabling PlayFab Party
-  href: enable-party.md
 - name: Concepts
   items:
   - name: Party objects and their relationships
