@@ -11,7 +11,7 @@ keywords: playfab, multiplayer, party, networking, communication
 ms.localizationpriority: medium
 ---
 
-# Overview
+# iOS getting started
 
 This document lists the basic prerequisites and requirements necessary to integrate PlyFab Party into your iOS Applications. Once you've set up your system according to this document, please have a look at the [Bumblelion platforms quickstart](quickstart-non-windows.md) for getting set up with the building blocks of PlayFab Party.
 
