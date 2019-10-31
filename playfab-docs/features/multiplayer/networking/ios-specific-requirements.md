@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 This document lists the basic prerequisites and requirements necessary to integrate PlyFab Party into your iOS Applications. Once you've set up your system according to this document, please have a look at the [Bumblelion platforms quickstart](quickstart-non-windows.md) for getting set up with the building blocks of PlayFab Party.
 
-# Prerequisites
+## Prerequisites
 Before you start this tutorial, please ensure that the following prerequisites have been met:
 
 1. You have created a [PlayFab developer account](https://developer.playfab.com/en-us/sign-up)
@@ -25,7 +25,7 @@ Before you start this tutorial, please ensure that the following prerequisites h
 
 NOTE: If you're planning to use the XCode simulator for testing, you'll need to target your application for 64-bit ($(ARCHS_STANDARD_64_BIT)) architecture. 32-bit simulators are currently not supported.
 
-# Including the required libraries and header files
+## Including the required libraries and header files
 
 You'll need to include the following header files from the [PlayFab Party distribution repository] (https://github.com/PlayFab/PlayFabParty/releases).
 
@@ -45,7 +45,7 @@ Header includes
 
 Note that in addition to the lib files and headers above, you'll also need the libs and headers for PlayFab SDK and any other platform-specific dependencies your app needs. Please take a look at the project file organization for the Swithc Sample for more info.
 
-# Steps to get PlayFab Party working on iOS
+## Steps to get PlayFab Party working on iOS
 
 Since the core Party library is written using C++, it is directly accessible from objective C++ code. For convenience, we've made a simple Objective-C++ wrapper class to access the Party lib functionality. At a high level, you'll want a class that has access to Party API methods to create a network, connect to a network, and send messages across a network. We've achieved this in our demo app via the [SimpleClientClass](https://github.com/PlayFab/PlayFabParty/blob/docs/iOS/PartySample/app/inc/SimpleClient.h).
 
@@ -225,5 +225,5 @@ NetworkManager::CreateAndConnectToNetwork(
 
 In a similar way, each method in the SimpleClient objective-C interface is mapped to Party API via the `SimpleClientImpl` and `NetworkManager`.
 
-# Next steps
+## Next steps
 In this article we saw how to get started integrating the Party library into your iOS application. Please refer to [Quickstart](quickstart-non-windows.md) for getting set up with the rest of the building blocks of PlayFab Party.
