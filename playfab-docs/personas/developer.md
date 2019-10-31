@@ -27,7 +27,7 @@ Let's start with the first steps of making your game - and then move into the mo
 
 The first step in adding PlayFab to any game is adding code to login the player. Logging in the player returns a security token that is needed for all other API calls.
 
-Your game is identified by its **TitleId**. The quickstart guides a test **TitleId** - but from *now on*, you should be using your *own*.
+Your game is identified by its **TitleId**. The quickstart guides listed later on this topic use a test **TitleId**. When following the guides, use a **TitleId** for a game that you have created.
 
 ### Retrieving your TitleId
 
@@ -39,9 +39,8 @@ To retrieve the **TitleId** for your game, log into the [Game Manager](https://d
 
 On the **My Studios and Titles** screen, locate your game. The **TitleId** is located just below the name of your game.
 
-![Game Manager - My Studios and Titles - Title ID](images/game-manager-settings-secret-keys.png)  
-
-The SDK guide that you followed in the first step should have included instructions on how to enter your **Title ID**.
+> [!div class="mx-imgBorder"]
+> ![Game Manager - My Studios and Titles - Title ID](images/my-titlles-titleid.png)  
 
 ## Login and account basics
 
