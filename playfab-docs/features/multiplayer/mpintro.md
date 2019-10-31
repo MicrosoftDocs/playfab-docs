@@ -52,9 +52,9 @@ Leaderboards can augment both single-player and multiplayer modes. For example a
 If player results do not need to be shared broadly with other players, player-associated PlayFab Entity data may be better suited to store this data. A benefit of PlayFab's Entity system is the ability to track cross-network progression of player's activity and other data across multiple accounts. Changes to PlayFab leaderboards and data both fire PlayStream events which can trigger custom CloudScript. This allows for highly customizable responses to player activity in real-time.
 
 Applicable services:
-- [Learn more about Leaderboards](https://docs.microsoft.com/en-us/gaming/playfab/features/social/tournaments-leaderboards/)
-- [Learn more about Entity data](https://docs.microsoft.com/en-us/gaming/playfab/features/data/playerdata/)
-- [Learn more about CloudScript](https://docs.microsoft.com/en-us/gaming/playfab/features/automation/cloudscript/)
+- [Learn more about Leaderboards](https://docs.microsoft.com/gaming/playfab/features/social/tournaments-leaderboards/)
+- [Learn more about Entity data](https://docs.microsoft.com/gaming/playfab/features/data/playerdata/)
+- [Learn more about CloudScript](https://docs.microsoft.com/gaming/playfab/features/automation/cloudscript/)
 
 ### In-game parties and unsolicited join-in-progress
 Players often want to commiserate outside of proper gameplay and your title may support this through an in-game guild or party experience. PlayFab Entity groups and PlayFab Party are designed with these scenarios in mind.
@@ -70,8 +70,8 @@ While you can use Entity groups for signaling and other *slow* data-sharing, Pla
 
 PlayFab Entity groups does not have a push notification system for players to be notified of Entity object changes and requires polling the service to keep updated. Platforms may provide built-in invitation and presence systems that launch toasts and have other beneficial experiences (join in progress from the player profile card) that you should consider integrating if applicable.
 
-- [Learn more about Entity groups](https://docs.microsoft.com/en-us/gaming/playfab/features/social/groups/quickstart)
-- [Learn more about Party](https://docs.microsoft.com/en-us/gaming/playfab/features/multiplayer/networking/)
+- [Learn more about Entity groups](https://docs.microsoft.com/gaming/playfab/features/social/groups/quickstart)
+- [Learn more about Party](https://docs.microsoft.com/gaming/playfab/features/multiplayer/networking/)
 
 ### Matchmaking and backfill
 Players may want to play with new people they don't know, and balanced anonymous matchmaking experiences are core to many multiplayer games. PlayFab Matchmaking is designed to get players together quickly using rules you customize.
@@ -80,14 +80,14 @@ When a player or group of players want to play together, one player creates a ma
 
 PlayFab Matchmaking is integrated with PlayFab Multiplayer Servers to simplify server allocations for completed tickets and improve match security. Also PlayFab Matchmaking tickets fire PlayStream events that can trigger CloudScript, this can help integrate matchmaking with your own multiplayer systems.
 
-- [Learn more about Matchmaking](https://docs.microsoft.com/en-us/gaming/playfab/features/multiplayer/matchmaking/)
+- [Learn more about Matchmaking](https://docs.microsoft.com/gaming/playfab/features/multiplayer/matchmaking/)
 
 ### Chat
 PlayFab Party be used to add real-time voice and text chat to social or gameplay experiences for up to 32 players. PlayFab Party enables a player's presence in multiple networks simultaneously, with customized muting rules for each network. This provides flexibility to implement channels and complex chat relationships.
 
 Party utilizes Azure Cognitive Services to transcribe player voice chat and synthesize text as speech. This functionality has several uses, but was primarily designed as an accessibility aide. Party not only transcribes player chat, but also translates chat in real time. In anonymous matchmaking and international competitive games, these transcription and translation capabilities make for a more engaging multiplayer experience.
 
-- [Learn more about Party](https://docs.microsoft.com/en-us/gaming/playfab/features/multiplayer/networking/)
+- [Learn more about Party](https://docs.microsoft.com/gaming/playfab/features/multiplayer/networking/)
 
 ### Game hosting
 Real-time multiplayer games typically select a specific player device to host game state (aka "peer to peer") or use a dedicated multiplayer server. If hosting a game on a player device, PlayFab Party is an ideal low-latency device-to-device networking system to synchronize this game state across the session's participants.
@@ -96,5 +96,5 @@ It is difficult to scale peer to peer games when the device count grows. While P
 
 PlayFab Multiplayer Servers provides simple and efficient scaling of multiplayer across Azure's global cloud. Using a small server, for example loading 10 sessions of 10 players each on a F2v2 Linux virtual machine, can efficiently and dramatically simplify your multiplayer design and improve it's reliability compared to a P2P implementation. Sophisticated multiplayer computation can be achieved by setting a server's build configuration to allocate more Azure resources to a session, perhaps using 8 or more cores for a 200 player experience.
 
-- [Learn more about Party](https://docs.microsoft.com/en-us/gaming/playfab/features/multiplayer/networking/)
-- [Learn more about Multiplayer Servers](https://docs.microsoft.com/en-us/gaming/playfab/features/multiplayer/servers/)
+- [Learn more about Party](https://docs.microsoft.com/gaming/playfab/features/multiplayer/networking/)
+- [Learn more about Multiplayer Servers](https://docs.microsoft.com/gaming/playfab/features/multiplayer/servers/)
