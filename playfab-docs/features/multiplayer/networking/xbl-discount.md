@@ -41,6 +41,7 @@ No. This free program applies to any platform where you can sign in with Xbox Li
 3. Enable Matchmaking and Party in their respective pages in Game Manager. Because we are controlling access to Party during the preview, you will need an access code from your Microsoft developer partner manager.
 4. Download [Party SDK](https://docs.microsoft.com/gaming/playfab/features/multiplayer/networking/) or [PlayFab REST SDKs](https://docs.microsoft.com/gaming/playfab/index#pivot=documentation&panel=sdks).
 
+
 ## Do I need to upgrade my studio tier to Pro or Enterprise to make use of the free program?
 No. You can access PlayFab Party and Matchmaking at unlimited scale, for free, as part of the free PlayFab essentials tier, as long as the originating player uses the `LoginWithXbox()` API to access these services. 
 
