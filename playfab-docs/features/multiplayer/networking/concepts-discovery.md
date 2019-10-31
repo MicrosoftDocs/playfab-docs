@@ -6,27 +6,16 @@ ms.author: jdewey
 ms.date: 08/16/2019
 ms.topic: article
 ms.prod: playfab
-ROBOTS: NOINDEX,NOFOLLOW
 keywords: playfab, multiplayer, networking
 ---
 
 # Integrating discovery with PlayFab Party
-
-> [!IMPORTANT]
-> This feature is currently in **Private Preview**.
->
-> It is provided to give you an early look at an upcoming feature and to allow you to provide feedback while it is still in development.
->
-> Access to this feature is restricted to select titles, with SDKs available for Windows 10 PCs and Xbox One. Interoperable SDKs for iOS and Android are available now. If you are interested in this feature, you can request access by submitting a ticket on [support.playfab.com](https://support.playfab.com/hc/en-us/requests/new).
-
 Discovery is the process by which users find each other to play together. PlayFab Party does not provide a discovery mechanism, but can be used with any existing mechanism which provides communication between users.
 
 ## Basic creation and join flow
-
 A PlayFab Party network is [created](#creating-a-network) by a user on a single client, [advertised](#advertising-a-network), and then [joined](#joining-a-network) by other users on different clients.
 
 ### Creating a network
-
 The first consideration when using a PlayFab Party network with a game session is choosing which client and user will create the network (`PartyManager::CreateNewNetwork()`). From the perspective of PlayFab Party, it doesn't matter which user does this; any user can create a network. The creator is given no special privileges within the network. However, the client which creates the network is responsible for:
 
 - setting immutable network configuration (`PartyNetworkConfiguration`)

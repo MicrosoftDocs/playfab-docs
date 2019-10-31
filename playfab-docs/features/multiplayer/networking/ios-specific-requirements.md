@@ -1,17 +1,16 @@
 ---
-title: ios Prerequisites for PlayFab Party
+title: iOS getting started
 author: debhaldarMS
 description: Supplement to PlayFab Party quickstart for iOS
 ms.author: debh
 ms.date: 08/05/2019
 ms.topic: article
 ms.prod: playfab
-ROBOTS: NOINDEX,NOFOLLOW
 keywords: playfab, multiplayer, party, networking, communication
 ms.localizationpriority: medium
 ---
 
-# Overview
+# iOS getting started
 
 This document lists the basic prerequisites and requirements necessary to integrate PlyFab Party into your iOS Applications. Once you've set up your system according to this document, please have a look at the [Bumblelion platforms quickstart](quickstart-non-windows.md) for getting set up with the building blocks of PlayFab Party.
 
@@ -21,7 +20,7 @@ Before you start this tutorial, please ensure that the following prerequisites h
 1. You have created a [PlayFab developer account](https://developer.playfab.com/en-us/sign-up)
 2. You've created a PlayFab Title and your title has been whitelisted for PlayFab Party
 3. You have Xcode version 10.2.1 installed
-4. You have access to the [PlayFab Party platforms repository] (https://github.com/PlayFab/PlayFabParty )
+4. You have access to the [PlayFab Party platforms repository](https://github.com/PlayFab/PlayFabParty)
 5. You have created an apple developer account that can be used to sign your app for deployment.
 
 NOTE: If you're planning to use the XCode simulator for testing, you'll need to target your application for 64-bit ($(ARCHS_STANDARD_64_BIT)) architecture. 32-bit simulators are currently not supported.
@@ -224,10 +223,7 @@ NetworkManager::CreateAndConnectToNetwork(
 }
 ```
 
-In a similar way, each method in the SimpleClient objective-C interface is mapped to Party API via the SimpleClientImpl and NetworkManager.
+In a similar way, each method in the SimpleClient objective-C interface is mapped to Party API via the `SimpleClientImpl` and `NetworkManager`.
 
 # Next steps
-
-In this article we saw how to get started integrating the Party library into your iOS application. Please refer to [Quickstart For Bumblelion (non-Windows) Platforms](quickstart-non-windows.md) for getting set up with the rest of the building blocks of PlayFab Party.
-
-
+In this article we saw how to get started integrating the Party library into your iOS application. Please refer to [Quickstart](quickstart-non-windows.md) for getting set up with the rest of the building blocks of PlayFab Party.

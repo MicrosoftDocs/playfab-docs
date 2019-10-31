@@ -19,7 +19,7 @@ Multiplayer is be a great addition to many titles, and PlayFab provides several 
 |[Leaderboards](../social/tournaments-leaderboards/using-resettable-statistics-and-leaderboards.md)| Track and respond to player activity with statistics and leaderboards | Production|PlayFab essentials|
 |[Entity Groups](../data/playerdata/index.md)|Create permanent or temporary groups of players and signal activity.|Production |PlayFab essentials|
 |[Matchmaking](./matchmaking/index.md)| Deploy custom matchmaking rules to group players quickly |Production |PlayFab essentials|
-|[Party](./networking/index.md)|Connect players with networking and accessible in-game chat|Pre-production|Premium Service - Free during private preview|
+|[Party](./networking/index.md)|Connect players with networking and accessible in-game chat|Production|Premium Service|
 |[Servers](./servers/index.md)|Dynamically scale custom multiplayer servers in Azure| Production |Premium Service|
 
 Leaderboards, Entity Groups, and Matchmaking are production services offered in PlayFab Essentials, our core services package, without any additional cost. Servers and Party are production services, which cost extra (see [Multiplayer Server billing](./servers/billing-for-thunderhead.md) and [Party billing](./networking/pricing.md)).
