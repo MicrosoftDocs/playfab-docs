@@ -11,7 +11,7 @@ keywords: playfab, multiplayer, party, networking, communication, prerequisites,
 ms.localizationpriority: medium
 ---
 
-# Overview
+# Android getting started
 
 This document lists the basic prerequisites and requirements necessary to integrate PlayFab Party into your Android applications. Once you've set up your system according to this document, please have a look at the [Quickstart for Bumblelion (non-windows) Platforms](quickstart-non-windows.md) to get set up with the building blocks of PlayFab Party.
 
