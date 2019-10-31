@@ -8,9 +8,9 @@
     href: enable-party.md
   - name: Creating a Party with the client SDK
     href: quickstart-non-windows.md
-  - name: Android specific requirements
+  - name: Android getting started
     href: android-specific-requirements.md
-  - name: iOS-specific requirements
+  - name: iOS getting started
     href: ios-specific-requirements.md
 - name: Networking and security
   items:
