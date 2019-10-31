@@ -1,12 +1,11 @@
 ---
-title: ios Prerequisites for PlayFab Party
+title: iOS getting started
 author: debhaldarMS
 description: Supplement to PlayFab Party quickstart for iOS
 ms.author: debh
 ms.date: 08/05/2019
 ms.topic: article
 ms.prod: playfab
-ROBOTS: NOINDEX,NOFOLLOW
 keywords: playfab, multiplayer, party, networking, communication
 ms.localizationpriority: medium
 ---
