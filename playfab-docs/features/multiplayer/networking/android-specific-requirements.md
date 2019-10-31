@@ -1,12 +1,11 @@
 ---
-title: Android prerequisites for PlayFab Party
+title: Android getting started
 author: debhaldarMS
 description: Supplement to quickstart for non-Windows platforms.
 ms.author: debh
 ms.date: 08/05/2019
 ms.topic: article
 ms.prod: playfab
-ROBOTS: NOINDEX,NOFOLLOW
 keywords: playfab, multiplayer, party, networking, communication, prerequisites, Android
 ms.localizationpriority: medium
 ---
