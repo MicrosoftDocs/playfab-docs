@@ -6,7 +6,6 @@ ms.author: jdewey
 ms.date: 08/16/2019
 ms.topic: article
 ms.prod: playfab
-ROBOTS: NOINDEX,NOFOLLOW
 keywords: playfab, multiplayer, networking
 ms.localizationpriority: medium
 ---
@@ -14,11 +13,11 @@ ms.localizationpriority: medium
 # PlayFab Party Overview
 
 > [!IMPORTANT]
-> This feature is currently in **Private Preview**.
+> This feature is currently in **Preview**.
 >
 > It is provided to give you an early look at an upcoming feature and to allow you to provide feedback while it is still in development.
 >
-> Access to this feature is restricted to select titles. Interoperable SDKs for Windows 10 PCs, Windows 7 PCs, Xbox One, iOS,  Android, and Nintendo Switch are available now. If you are interested in this feature, please contact us at [helloplayfab@microsoft.com](mailto:helloplayfab@microsoft.com).
+> PlayFab customers in the Indie, Pro, and Enterprise tiers can access the Matchmaking and Party previews automatically through Game Manager. Xbox managed partners are approved for the preview, and can get a preview access code from your Microsoft developer partner manager. 
 
 PlayFab Party simplifies adding low-latency chat and data communication to your game in a way that's flexible, inclusive, and secured. Party is ideal for multiplayer implementations where a cloud-hosted dedicated server is not desired (sometimes called "peer to peer or P2P games"). Party is also well-suited to power voice and text communication for social experiences your app may provide (e.g. in-game squads, or post-game lobbies), even if you're using a cloud server as the game host.
 

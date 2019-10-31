@@ -6,16 +6,13 @@ ms.author: debh
 ms.date: 08/05/2019
 ms.topic: article
 ms.prod: playfab
-ROBOTS: NOINDEX,NOFOLLOW
 keywords: playfab, multiplayer, party, networking, communication
 ms.localizationpriority: medium
 ---
 
-# Quickstart for PlayFab Party on Android, iOS and Switch
+# Getting started with the Party SDK
 
-This quickstart is intended to be a high-level overview of the facets of PlayFab Party on Platforms other than Windows and Xbox (iOS, Android, and Nintendo Switch). PlayFab Party was designed to be cross-platform from the ground up. 
-
-Similarly, we've structured these quickstarts in the same way, where most of the information applies to all platforms, and platform-specific prerequisites and steps are described in the linked documents.
+This quickstart is intended to be a high-level overview of the facets of PlayFab Party. PlayFab Party was designed to be cross-platform from the ground up. We've structured these quickstarts in the same way, where most of the information applies to all platforms, and platform-specific prerequisites and steps are described in the linked documents.
 
 In this quickstart, critical pieces of functionality are highlighted via explanatory text and code snippets. However, please note that this is not a step-by-step walk-through. Please consult the linked reference and conceptual documentation, as well as refer to the source code of the demo sample for different platforms that comes with the Party libraries, for a deeper understanding.
 

@@ -6,17 +6,18 @@ ms.author: v-thopra
 ms.date: 8/12/2019
 ms.topic: article
 ms.prod: playfab
-ROBOTS: NOINDEX,NOFOLLOW
 keywords: playfab, multiplayer, party, networking, pricing, billing, bumblelion
 ms.localizationpriority: medium
 ---
 
 # Billing for PlayFab Party
 > [!IMPORTANT]
-> This feature is currently in ** Preview**  and this page describes preview pricing, which is subject to change upon launch of service.
+> This feature is currently in **Preview**  and this page describes preview pricing, which is subject to change upon launch of service.
 >
 
 Most PlayFab services, such as PlayStream or Matchmaking, are included with every paid PlayFab tier as part of our core offering. However, PlayFab Party is billed on a consumption basis. This document describes the billing plan for Party.
+
+Party can be used for free when powering Xbox Live activity. For more information on this free program see the [Xbox Live discount and FAQ](./xbl-discount.md) topic.
 
 ## What comes with your basic PlayFab Core Services package?
 

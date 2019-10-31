@@ -1,17 +1,16 @@
 ---
-title: Android prerequisites for PlayFab Party
+title: Android getting started
 author: debhaldarMS
 description: Supplement to quickstart for non-Windows platforms.
 ms.author: debh
 ms.date: 08/05/2019
 ms.topic: article
 ms.prod: playfab
-ROBOTS: NOINDEX,NOFOLLOW
 keywords: playfab, multiplayer, party, networking, communication, prerequisites, Android
 ms.localizationpriority: medium
 ---
 
-# Overview
+# Android getting started
 
 This document lists the basic prerequisites and requirements necessary to integrate PlayFab Party into your Android applications. Once you've set up your system according to this document, please have a look at the [Quickstart for Bumblelion (non-windows) Platforms](quickstart-non-windows.md) to get set up with the building blocks of PlayFab Party.
 
@@ -57,7 +56,7 @@ Header Includes
 > [!NOTE]
 > In addition to the lib files and headers above, you'll also need the libs and headers for PlayFab SDK and any other platform-specific dependencies your app needs. Please take a look at the project file organization for the Android sample for more info.
 
-# Steps to get PlayFab Party working on Android
+## Steps to get PlayFab Party working on Android
 
 Since the core Party library is written using C++, we'll need to make a simple JNI wrapper class to access the Party lib functionality. At a high level, you'll want a class that has access to Party API methods to create a network, connect to a network, and send messages across a network. We've achieved this in our demo app via the [NetworkManager Java class](https://github.com/PlayFab/PlayFabParty/blob/docs/android/PartySample/demo/src/main/java/com/microsoft/playfab/party/sdk/NetworkManager.java).
 

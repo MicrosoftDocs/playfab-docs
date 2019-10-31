@@ -1,35 +1,49 @@
 - name: Overview
   href: index.md
+- name: API concepts and object relationships
+  href: concepts-objects.md
 - name: Quickstarts
   items:
-  - name: Enabling PlayFab Party in Game Manager
+  - name: Enabling Party in Game Manager
     href: enable-party.md
   - name: Creating a Party with the client SDK
     href: quickstart-non-windows.md
-- name: Concepts
+  - name: Android getting started
+    href: android-specific-requirements.md
+  - name: iOS getting started
+    href: ios-specific-requirements.md
+- name: Networking and security
   items:
-  - name: Party objects and their relationships
-    href: concepts-objects.md
   - name: Invitations and the security model
     href: concepts-invitations-security-model.md
   - name: Integrating discovery with Party
     href: concepts-discovery.md
+- name: Chat
+  items:
   - name: Understanding chat
     href: concepts-chat.md
   - name: Chat permissions and muting
     href: concepts-chat-permissions-and-muting.md
-- name: Troubleshooting
-  items:
   - name: Troubleshooting voice chat
     href: concepts-audio-troubleshooting.md
-- name: UX guidelines
+- name: Accessibility
   items:
   - name: Speech-to-text UX guidelines
     href: party-speech-to-text-ux-guidelines.md
   - name: Text-to-speech UX guidelines
     href: party-text-to-speech-ux-guidelines.md
-- name: Pricing
-  href: pricing.md
+- name: Xbox Live Helper library
+  items:
+  - name: Overview
+    href: party-xbox-live-guide.md
+  - name: Release notes
+    href: party-xboxlive-relnotes.md
+- name: Limits and Billing 
+  items:
+  - name: Pricing
+    href: pricing.md
+  - name: Xbox Live Free Program
+    href: xbl-discount.md
 - name: Release notes
   href: release-notes.md
 - name: Reference
