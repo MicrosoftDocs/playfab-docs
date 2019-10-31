@@ -1,8 +1,10 @@
 - name: Overview
   href: index.md
+- name: API concepts and object relationships
+  href: concepts-objects.md
 - name: Quickstarts
   items:
-  - name: Enabling PlayFab Party in Game Manager
+  - name: Enabling Party in Game Manager
     href: enable-party.md
   - name: Creating a Party with the client SDK
     href: quickstart-non-windows.md
@@ -10,9 +12,7 @@
     href: android-specific-requirements.md
   - name: iOS-specific requirements
     href: ios-specific-requirements.md
-- name: Party objects and their relationships
-  href: concepts-objects.md
-- name: Networking and Security
+- name: Networking and security
   items:
   - name: Invitations and the security model
     href: concepts-invitations-security-model.md
