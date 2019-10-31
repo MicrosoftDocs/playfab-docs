@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 
 Most PlayFab services, such as PlayStream or Matchmaking, are included with every paid PlayFab tier as part of our core offering. However, PlayFab Party is billed on a consumption basis. This document describes the billing plan for Party.
 
-Party can be used for free when power Xbox Live activity. For more information on this free program see the [Xbox Live discount and FAQ](./xbl-discount.md) topic.
+Party can be used for free when powering Xbox Live activity. For more information on this free program see the [Xbox Live discount and FAQ](./xbl-discount.md) topic.
 
 ## What comes with your basic PlayFab Core Services package?
 
