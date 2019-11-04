@@ -1,3 +1,15 @@
+---
+title: TBD
+author: v-doglo
+description: TBD
+ms.author: v-doglo
+ms.date: 11/04/2019
+ms.topic: article
+ms.prod: playfab
+keywords: playfab, pricing
+ms.localizationpriority: medium
+---
+
 # Profile Writes
 
 Explanatory text.
