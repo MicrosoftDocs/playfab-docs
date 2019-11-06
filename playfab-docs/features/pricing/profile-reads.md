@@ -1,7 +1,7 @@
 ---
-title: TBD
+title: Profile Reads Meter API Description
 author: v-doglo
-description: TBD
+description: This file details the APIs that cause profile reads meter to increment.
 ms.author: v-doglo
 ms.date: 11/04/2019
 ms.topic: article
@@ -12,7 +12,9 @@ ms.localizationpriority: medium
 
 # Profile Reads
 
-Explanatory text.
+Profile includes any data stored related to the player profile, entity profile, character profile, groups, and inventory. Profile data is information that applies to an individual player, group of players, or items, and is stored as Key/Value Pairs (KVPs) by PlayFab. 
+
+The following APIs cause the Profile read meter to increment.
 
 ## General
 
