@@ -1,6 +1,6 @@
 ---
 title: Profile Reads Meter API Description
-author: v-doglo
+author: vDonGlover
 description: This file details the APIs that cause profile reads meter to increment.
 ms.author: v-doglo
 ms.date: 11/04/2019
@@ -18,7 +18,7 @@ The following APIs cause the Profile read meter to increment.
 
 ## General
 
-- [CheckLimitedEditionItemAvailability]https://docs.microsoft.com/rest/api/playfab/admin/player-item-management/checklimitededitionitemavailability?view=playfab-rest)
+- [CheckLimitedEditionItemAvailability](https://docs.microsoft.com/rest/api/playfab/admin/player-item-management/checklimitededitionitemavailability?view=playfab-rest)
     Checks the global count for the limited edition item.
 
 - [GetAllSegments](https://docs.microsoft.com/rest/api/playfab/admin/playstream/getallsegments?view=playfab-rest)
@@ -33,19 +33,9 @@ The following APIs cause the Profile read meter to increment.
 - [GetDataReport](https://docs.microsoft.com/rest/api/playfab/admin/player-data-management/getdatareport?view=playfab-rest)
     Retrieves a download URL for the requested report.
 
-- [GetPlayedTitleList]()
-
-- [GetPlayerProfile]()
-
 - [GetPlayerSegments](https://docs.microsoft.com/rest/api/playfab/admin/playstream/getplayersegments?view=playfab-rest)
     List all segments that a player currently belongs to at this moment in time.
-
-- [GetPlayerSharedSecrets]()
-
-- [GetPlayerStatisticDefinitions]()
-
-- [GetPlayerStatisticVersions]()
-
+    
 - [GetPlayerTags](https://docs.microsoft.com/rest/api/playfab/admin/playstream/getplayertags?view=playfab-rest)
     Get all tags with a given Namespace (optional) from a player profile.
 
@@ -264,14 +254,14 @@ The following APIs cause the Profile read meter to increment.
 
 - [LoginWithPSN](https://docs.microsoft.com/rest/api/playfab/client/authentication/loginwithpsn?view=playfab-rest)    Signs the user into the PlayFab account, returning a session identifier that can subsequently be used for API calls which require an authenticated user. Unlike most other login API calls, LoginWithPlayFab does not permit the creation of new accounts via the CreateAccountFlag. Username/Password credentials may be used to create accounts via RegisterPlayFabUser, or added to existing accounts using AddUsernamePassword.
 
-- [LoginWithSteam]https://docs.microsoft.com/rest/api/playfab/client/authentication/loginwithsteam?view=playfab-rest)
+- [LoginWithSteam](https://docs.microsoft.com/rest/api/playfab/client/authentication/loginwithsteam?view=playfab-rest)
     Signs the user in using a Steam authentication ticket, returning a session identifier that can subsequently be used for API calls which require an authenticated user.
 
 - [LoginWithTwitch](https://docs.microsoft.com/rest/api/playfab/client/authentication/loginwithtwitch?view=playfab-rest)
     Signs the user in using a Twitch access token.
 
 - [LoginWithWindowsHello](https://docs.microsoft.com/rest/api/playfab/client/authentication/loginwithwindowshello?view=playfab-rest)
-    Completes the Windows Hello login flow by returning the signed value of the challange from GetWindowsHelloChallenge. Windows Hello has a 2 step client to server authentication scheme. Step one is to request from the server a challenge string. Step two is to request the user sign the string via Windows Hello and then send the signed value back to the server.
+    Completes the Windows Hello login flow by returning the signed value of the challenge from GetWindowsHelloChallenge. Windows Hello has a 2 step client to server authentication scheme. Step one is to request from the server a challenge string. Step two is to request the user sign the string via Windows Hello and then send the signed value back to the server.
 
 - [LoginWithXbox](https://docs.microsoft.com/rest/api/playfab/client/authentication/loginwithxbox?view=playfab-rest)
     Signs the user in using a Xbox Live Token, returning a session identifier that can subsequently be used for API calls which require an authenticated user.
@@ -342,9 +332,6 @@ The following APIs cause the Profile read meter to increment.
 - [GetCharacterInventory](https://docs.microsoft.com/rest/api/playfab/server/player-item-management/getcharacterinventory?view=playfab-rest)
     Retrieves the specified character's current inventory of virtual goods.
 
-- [GetCharacterLeaderboard]()
-    Retrieves a list of ranked characters for the given statistic, starting from the indicated point in the leaderboard.
-
 - [GetCharacterReadOnlyData](https://docs.microsoft.com/rest/api/playfab/server/characters/getcharacterleaderboard?view=playfab-rest)
 
 - [GetCharacterStatistics](https://docs.microsoft.com/rest/api/playfab/server/characters/getcharacterstatistics?view=playfab-rest)
@@ -389,7 +376,7 @@ The following APIs cause the Profile read meter to increment.
 - [GetPlayerTags](https://docs.microsoft.com/rest/api/playfab/server/playstream/getplayertags?view=playfab-rest)
     Get all tags with a given Namespace (optional) from a player profile.
 
-- [GetPlayFabIDsFromFacebookIDs]()
+- [GetPlayFabIDsFromFacebookIDs](https://docs.microsoft.com/rest/api/playfab/server/account-management/getplayfabidsfromfacebookids?view=playfab-rest)
     Retrieves the unique PlayFab identifiers for the given set of Facebook identifiers.
 
 - [GetPlayFabIDsFromFacebookInstantGamesIds](https://docs.microsoft.com/rest/api/playfab/server/account-management/getplayfabidsfromfacebookids?view=playfab-rest)
@@ -449,7 +436,7 @@ The following APIs cause the Profile read meter to increment.
 - [GetUserPublisherData](https://docs.microsoft.com/rest/api/playfab/server/player-data-management/getuserpublisherdata?view=playfab-rest)
     Retrieves the publisher-specific custom data for the user which is readable and writable by the client.
 
-- [GetUserPublisherInternalData]()
+- [GetUserPublisherInternalData](https://docs.microsoft.com/rest/api/playfab/server/player-data-management/getuserpublisherinternaldata?view=playfab-rest)
     Retrieves the publisher-specific custom data for the user which cannot be accessed by the client.
 
 - [GetUserPublisherReadOnlyData](https://docs.microsoft.com/rest/api/playfab/server/player-data-management/getuserpublisherinternaldata?view=playfab-rest)

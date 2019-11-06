@@ -1,6 +1,6 @@
 ---
 title: Profile Writes Meter API Description
-author: v-doglo
+author: vDonGlover
 description: This file details the APIs that cause profile writes meter to increment.
 ms.author: v-doglo
 ms.date: 11/04/2019
@@ -139,9 +139,6 @@ The following APIs cause the Profile writes meter to increment.
 - [CreateSharedGroup](https://docs.microsoft.com/rest/api/playfab/client/shared-group-data/createsharedgroup?view=playfab-rest)
     Requests the creation of a shared group object, containing key/value pairs which may be updated by all members of the group. Upon creation, the current user will be the only member of the group. Shared Groups are designed for sharing data between a very small number of players, please see our guide: https://docs.microsoft.com/gaming/playfab/features/social/groups/using-shared-group-data
 
-- [GetUserCombinedInfo]()
-    Note found.
-
 - [GetUserData](https://docs.microsoft.com/rest/api/playfab/client/player-data-management/getuserdata?view=playfab-rest)
     Retrieves the title-specific custom data for the user which is readable and writable by the client.
 
@@ -220,7 +217,7 @@ The following APIs cause the Profile writes meter to increment.
 - [SetFriendTags](https://docs.microsoft.com/rest/api/playfab/client/friend-list-management/setfriendtags?view=playfab-rest)
     Updates the tag list for a specified user in the friend list of the local user.
 
-- [SubtractUserVirtualCurrency]https://docs.microsoft.com/rest/api/playfab/client/player-item-management/subtractuservirtualcurrency?view=playfab-rest()
+- [SubtractUserVirtualCurrency](https://docs.microsoft.com/rest/api/playfab/client/player-item-management/subtractuservirtualcurrency?view=playfab-rest)
     Decrements the user's balance of the specified virtual currency by the stated amount. It is possible to make a VC balance negative with this API.
 
 - [UnlinkAndroidDeviceID](https://docs.microsoft.com/rest/api/playfab/client/account-management/unlinkandroiddeviceid?view=playfab-rest)
@@ -271,12 +268,13 @@ The following APIs cause the Profile writes meter to increment.
 - [UnlockContainerInstance](https://docs.microsoft.com/rest/api/playfab/client/player-item-management/unlockcontainerinstance?view=playfab-rest)
     Opens the specified container, with the specified key (when required), and returns the contents of the opened container. If the container (and key when relevant) are consumable (RemainingUses > 0), their RemainingUses will be decremented, consistent with the operation of ConsumeItem.
 
-- [UnlockContainerItem]()
+- [UnlockContainerItem](https://docs.microsoft.com/rest/api/playfab/client/player-item-management/unlockcontaineritem?view=playfab-rest)
     Searches target inventory for an ItemInstance matching the given CatalogItemId, if necessary unlocks it using an appropriate key, and returns the contents of the opened container. If the container (and key when relevant) are consumable (RemainingUses > 0), their RemainingUses will be decremented, consistent with the operation of ConsumeItem.
 
-- [UpdateAvatarUrl](https://docs.microsoft.com/rest/api/playfab/client/player-item-management/unlockcontaineritem?view=playfab-rest)
+- [UpdateAvatarUrl](https://docs.microsoft.com/rest/api/playfab/client/account-management/updateavatarurl?view=playfab-rest)
+    Update the avatar URL of the player.
 
-- [UpdateCharacterData]()
+- [UpdateCharacterData](https://docs.microsoft.com/rest/api/playfab/client/character-data/updatecharacterdata?view=playfab-rest)
     Creates and updates the title-specific custom data for the user's character which is readable and writable by the client
 
 - [UpdateCharacterStatistics](https://docs.microsoft.com/rest/api/playfab/client/characters/updatecharacterstatistics?view=playfab-rest)
@@ -322,7 +320,7 @@ Creates and updates the title-specific custom data for the user which is readabl
     Changes the role membership of a list of entities from one role to another.
 
 - [CreateGroup](https://docs.microsoft.com/rest/api/playfab/groups/groups/creategroup?view=playfab-rest)
-    https://docs.microsoft.com/rest/api/playfab/groups/groups/changememberrole?view=playfab-rest
+    Creates a new group.
 
 - [CreateRole](https://docs.microsoft.com/rest/api/playfab/groups/groups/createrole?view=playfab-rest)
     Creates a new group role.
@@ -357,7 +355,7 @@ Creates and updates the title-specific custom data for the user which is readabl
 - [SetGlobalPolicy](https://docs.microsoft.com/rest/api/playfab/profiles/account-management/setglobalpolicy?view=playfab-rest)
     Sets the global title access policy.
 
-- [SetProfileLanguage](Updates the entity's language. The precedence hierarchy for communication to the player is Title Player Account language, Master Player Account language, and then title default language if the first two aren't set or supported.)
+- [SetProfileLanguage](Uhttps://docs.microsoft.com/rest/api/playfab/profiles/account-management/setprofilelanguage?view=playfab-rest)
     Updates the entity's language. The precedence hierarchy for communication to the player is Title Player Account language, Master Player Account language, and then title default language if the first two aren't set or supported.
 
 - [SetProfilePolicy](https://docs.microsoft.com/rest/api/playfab/profiles/account-management/setprofilepolicy?view=playfab-rest)
@@ -395,8 +393,6 @@ Creates and updates the title-specific custom data for the user which is readabl
 
 - [DeleteCharacterFromUser](https://docs.microsoft.com/rest/api/playfab/server/characters/deletecharacterfromuser?view=playfab-rest)
     Deletes the specific character ID from the specified user.
-
-- [DeletePlayer]()
 
 - [DeleteSharedGroup](https://docs.microsoft.com/rest/api/playfab/server/shared-group-data/deletesharedgroup?view=playfab-rest)
     Deletes a shared group, freeing up the shared group ID to be reused for a new group. Shared Groups are designed for sharing data between a very small number of players, please see our guide: https://api.playfab.com/docs/tutorials/landing-players/shared-groups
@@ -518,8 +514,6 @@ Creates and updates the title-specific custom data for the user which is readabl
 - [UpdatePlayerStatistics](https://docs.microsoft.com/rest/api/playfab/server/player-data-management/updateplayerstatistics?view=playfab-rest)
     Updates the values of the specified title-specific statistics for the user.
 
-- [UpdateSharedGroupData]()
-
 - [UpdateUserData](https://docs.microsoft.com/rest/api/playfab/server/player-data-management/updateuserdata?view=playfab-rest)
     Updates the title-specific custom data for the user which is readable and writable by the client.
 
@@ -540,6 +534,3 @@ Creates and updates the title-specific custom data for the user which is readabl
 
 - [UpdateUserReadOnlyData](https://docs.microsoft.com/rest/api/playfab/server/player-data-management/updateuserreadonlydata?view=playfab-rest)
     Updates the title-specific custom data for the user which can only be read by the client.
-
-- [UpdateUserStatistics]()
-    Not available.
