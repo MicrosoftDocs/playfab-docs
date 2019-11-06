@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 Files include the following items: entity files, actions, rules, scheduled tasks, matchmaking, push notifications, emails, and title news. Files are a set of key/value pairs that are primarily used to manage configuration for your game remotely.
 
-The following APIs cause the File meter to increment.
+The following APIs cause the File reads meter to increment.
 
 ## General
 
