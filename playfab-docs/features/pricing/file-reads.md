@@ -1,7 +1,7 @@
 ---
-title: TBD
+title: File Reads Meter API Description
 author: v-doglo
-description: TBD
+description: This file details the APIs that cause file reads meter to increment.
 ms.author: v-doglo
 ms.date: 11/04/2019
 ms.topic: article
@@ -12,7 +12,9 @@ ms.localizationpriority: medium
 
 # File Reads
 
-Explanatory Text
+Files include the following items: entity files, actions, rules, scheduled tasks, matchmaking, push notifications, emails, and title news. Files are a set of key/value pairs that are primarily used to manage configuration for your game remotely.
+
+The following APIs cause the File meter to increment.
 
 ## General
 
