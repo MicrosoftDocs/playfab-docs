@@ -35,7 +35,7 @@ The following APIs cause the Profile read meter to increment.
 
 - [GetPlayerSegments](https://docs.microsoft.com/rest/api/playfab/admin/playstream/getplayersegments?view=playfab-rest)
     List all segments that a player currently belongs to at this moment in time.
-
+    
 - [GetPlayerTags](https://docs.microsoft.com/rest/api/playfab/admin/playstream/getplayertags?view=playfab-rest)
     Get all tags with a given Namespace (optional) from a player profile.
 
