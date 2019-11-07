@@ -7,7 +7,7 @@ ms.date: 10/30/2018
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, analytics, a/b testing
-ms.localizationpriority: medium
+ms.localizationpriority: mediumb
 ---
 
 # Experimentation
