@@ -87,7 +87,7 @@ A type 2 error is a measure of “false negatives,” an incorrect belief that a
 
 ## Experimentations as a Practice
 
-1.	**Start with hypothesis** 
+-	**Start with hypothesis** 
 
     Hypothesize to ensure that the experiment have a clear focus and goal. Also, make sure the changes you are testing are significant enough to matter.
     
@@ -95,33 +95,33 @@ A type 2 error is a measure of “false negatives,” an incorrect belief that a
 
     Because of observation [A] and feedback [B], the belief is that changing [C] for players [D] will make [E] happen. It will be validated when I see [F] and obtain [G]
 
-2.	**Schedule experiment correctly**
+-	**Schedule experiment correctly**
     
     To get reliable results, run your A/B experiments for comparable periods. Do account for seasonal peaks and troughs
 
-3.	**Duration of an experiment** 
+-	**Duration of an experiment** 
 
     Give the experiment enough time. An experiment’s insufficient time can mean skewed results. Run it too short and you might not collect enough data points for statistically accurate conclusion. Run it too long and you might risk missing out on conversions by not rolling the winning variant to the potentials. If you are in doubt, it is perfectly reasonable to retest
 
-4.	**Pay attention to % of a flight** 
+-	**Pay attention to % of a flight** 
     
     % of flight determines your sample size. Target the audience with a right sample size, otherwise, you will not get reliable results and the decisions made based on that data may be flawed
 
-5.	**Avoid Type 1 and Type 2 errors** 
+-	**Avoid Type 1 and Type 2 errors** 
     Statistics in A/B experimentation can never tell with 100% certainty whether one variant of the experiment is best. It only provides probability, not certainty. So, avoid Type 1 and Type 2 errors. 
 
     To avoid type 1 error, raise the required significance level before reaching a decision (which we have done for you by setting it to 95%, by default) and running the experiment longer to collect more data. And to reduce the chance of type 2 error, increase the experiment's flighting population (sample size)
 
-6.	**Do not make changes mid-way to an experiment**
+-	**Do not make changes mid-way to an experiment**
 
     If you interrupt the test before the end of the ideal duration or introduce new variables that were not part of the original hypothesis, the results will not be reliable. Meaning, it would be difficult to determine whether one of the changes caused the lift in conversions, or just a random chance.
 
     Please note, the more variations there are, the longer you must run the tests to get reliable results. Take a granular approach. Recommendation is to experiment with 2-4 variables in any variant group at the same time. That gives the best balance of test duration and efficiency
 
-7.	**Pay attention to statistical significance as reflected in p-value**
+-	**Pay attention to statistical significance as reflected in p-value**
 
     Make sure that the data is reliable. The measure of data reliability is statistical significance which determines that the results are not due to random chance.
     p-values are used to determine statistical significance in a null hypothesis onto which AB experiments are based. Basically, it measures the compatibility between the collected data and the null hypothesis. The lower it is, the more confident one can be in rejecting the null hypothesis
-8.	**Keep an open mind**
+-	**Keep an open mind**
 
     At times, one ignores statistical information in favor of using conventional knowledge or even previous experience, to make decision. Use A/B experiment data to inform business decisions – no matter how much it surprises you. If you are not convinced by the results of a test, run it again and compare the data
