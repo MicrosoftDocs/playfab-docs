@@ -46,12 +46,16 @@ When you make decisions based on the results of experiments that you are running
 
 For example, if you run an A/B experiment with a significance level of 95%, this means that if you determine a winner, you can be 95% confident that the observed results are real and not an error caused by randomness. It also means that there is a 5% chance that you could be wrong.
 
-Statistical significance is important because it reflects your risk tolerance and confidence level. The metrics can fluctuate from day to day, and statistical analysis provides a sound mathematical foundation for making business decisions and eliminating false positives.
+Statistical significance is important because it reflects your risk tolerance and confidence level. The metrics can fluctuate from day to day, and statistical analysis provides a sound mathematical foundation for making business decisions and eliminating false positives. 
+
 PlayFab Experimentation operates on a build-in statistical computation engine which ensures 95% statistical significance level for your experiments.
 
-### Key Terms
+## Key Terms
 #### Conversion Rate: 
-A conversion refers to any desired action that you want the player to take. Conversions do not have to be tied to monetary goals. This can include anything from a click on a button to making a purchase and becoming a player. Conversion is the goal of A/B experiments.
+A conversion refers to any desired action that you want the player to take. Conversions do not have to be tied to monetary goals. This can include anything from a click on a button to making a purchase and becoming a player. 
+
+Conversion is the goal of A/B experiments.
+
 Conversions are an absolute number, whereas a conversion rate is the number of conversions divided by the total player traffic. 
 
 #### Hypothesis:
@@ -64,8 +68,9 @@ A control variant is an existing experience which is used in an experiment as a 
 A treatment variant receives the experimental treatment(s) or difference in experience(s) in an experiment. It is the treatment variant(s) which are studied in an A/B experiment and contains the experience changes.
 
 #### Variables:
-Variables are defined to set the feature or experience configuration. Defining feature variables allows you to iterate on your feature without redeploying the code. 
-% Of Flight (Flight Allocation):
+Variables are defined to set the feature or experience configuration. Defining feature variables allows you to iterate on your feature without redeploying the code.
+
+#### % Of Flight (Flight Allocation):
 A percentage of the total player base (audience) that are considered for the A/B experiment and will receive the control or treatment variant.
 
 #### Segment:
@@ -74,6 +79,7 @@ One can flight an experiment with a customized experience for a Segment to verif
 
 #### P-Value:
 The p-value in an A/B experiment is the probability that one would get the observed difference between the variant groups (or a more extreme difference) by random chance. 
+
 When the p-value is high implies that the probability of randomly seeing a difference between the A and B groups is high, due to sampling noise. When the p-value is low (below our threshold) implies that the probability of seeing a difference randomly is low and one can be confident about making the change to the new alternative applicable treatment variant from the original control variant. 
 
 #### Confidence Interval
@@ -121,7 +127,30 @@ A type 2 error is a measure of “false negatives,” an incorrect belief that a
 -	**Pay attention to statistical significance as reflected in p-value**
 
     Make sure that the data is reliable. The measure of data reliability is statistical significance which determines that the results are not due to random chance.
+
     p-values are used to determine statistical significance in a null hypothesis onto which AB experiments are based. Basically, it measures the compatibility between the collected data and the null hypothesis. The lower it is, the more confident one can be in rejecting the null hypothesis
 -	**Keep an open mind**
 
     At times, one ignores statistical information in favor of using conventional knowledge or even previous experience, to make decision. Use A/B experiment data to inform business decisions – no matter how much it surprises you. If you are not convinced by the results of a test, run it again and compare the data.
+
+## Adopt Experimentation Culture and Process
+Experimentation culture is valuable. You must bake it as part of the other processes, so everyone feel/ take its benefits throughout the organization. A/B experimentation done consistently, can improve conversion substantially as you have greater chance of finding ways to add positive product value for the players.
+
+You can shift the decision-making paradigm from relying on HiPPOs (the Highest Paid Person’s Opinion) to data-driven choices. More employee ideas will see daylight in the form of tests. Importantly, when it is easy to try ideas, speak about results and next steps. On top of it, employees feel motivated to come to work.
+
+To build an experimentation culture, introduce reliable and repeatable processes for game iteration. With below foundational steps, one can acquire the culture of constant experimentation. 
+-	**Set goals**
+    
+    Actionable experiment goals (ex. engagement) allow team to move forward with experiments, rather than getting stuck in abstract objectives like ‘growth’
+-	**Test more with your team’s support and prioritize**
+
+    Collect and analyze qualitative and quantitative data such that hypothesizes/ ideas can be brainstormed and prioritized based on the business impact. Guide your team throughout experimentation journey using a reliable and repeatable framework, otherwise, team will feel lost if you suddenly ask them to experiment more and make multiple changes 
+-	**Communicate results back to your team**
+    
+    Build momentum around experimentation by communicating test results as a team. Sharing provides the team with insights on how to iterate and improve future testing. Plus, gets people excited about further experimentation
+-	**Embrace failure** 
+
+    Failure is a part of testing, normalize failure. Do not let failure stall experimentation, reflect, learn, and move on to continue experimenting 
+-	**Practice good experiment hygiene**
+
+    Create a standard protocol for every experiment your team runs. It helps to keep experiments’ results accurate and meaningful, regardless of who is controlling the experiment
