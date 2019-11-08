@@ -5,7 +5,7 @@ description: Queues an asynchronous attempt to create a local endpoint.
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/26/2019
+ms.date: 11/01/2019
 ROBOTS: NOINDEX,NOFOLLOW
 ---
 
@@ -79,7 +79,6 @@ This function queues an asynchronous attempt to create an endpoint associated wi
 [PartyNetworkDestroyedStateChange](../../../structs/partynetworkdestroyedstatechange.md)  
 [PartyNetworkConfiguration](../../../structs/partynetworkconfiguration.md)  
 [PartyNetwork::GetEndpoints](partynetwork_getendpoints.md)  
-[PartyNetwork::CreateEndpoint](partynetwork_createendpoint.md)  
 [PartyLocalEndpoint::SendMessage](../../PartyLocalEndpoint/methods/partylocalendpoint_sendmessage.md)  
 [PartyEndpoint::GetUniqueIdentifier](../../PartyEndpoint/methods/partyendpoint_getuniqueidentifier.md)  
 [PartyEndpoint::GetEntityId](../../PartyEndpoint/methods/partyendpoint_getentityid.md)  

@@ -5,7 +5,7 @@ description: "The types of state changes that can occur."
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/25/2019
+ms.date: 10/30/2019
 ROBOTS: NOINDEX,NOFOLLOW
 ---
 
@@ -90,7 +90,7 @@ enum class PartyStateChangeType  : uint32_t
 | LeaveNetworkCompleted | The operation started by a previous call to [PartyNetwork::LeaveNetwork()](../classes/PartyNetwork/methods/partynetwork_leavenetwork.md) completed.<br/><br/> The PartyStateChange object should be cast to a [PartyLeaveNetworkCompletedStateChange](../structs/partyleavenetworkcompletedstatechange.md) object for more information. |  
 | NetworkDestroyed | A network was destroyed.<br/><br/> The PartyStateChange object should be cast to a [PartyNetworkDestroyedStateChange](../structs/partynetworkdestroyedstatechange.md) object for more information. |  
 | EndpointMessageReceived | A data send was received from an endpoint.<br/><br/> The PartyStateChange object should be cast to a [PartyEndpointMessageReceivedStateChange](../structs/partyendpointmessagereceivedstatechange.md) object for more information. |  
-| DataBuffersReturned | The PartyDataBuffer set provided to SendMessage has been returned.<br/><br/> The PartyStateChange object should be cast to a [PartyDataBuffersReturnedStateChange](../structs/partydatabuffersreturnedstatechange.md) object for more information. |  
+| DataBuffersReturned | The PartyDataBuffer set provided to SendMessage is no longer in use by the library.<br/><br/> The PartyStateChange object should be cast to a [PartyDataBuffersReturnedStateChange](../structs/partydatabuffersreturnedstatechange.md) object for more information. |  
 | CreateInvitationCompleted | The operation started by a previous call to [PartyNetwork::CreateInvitation()](../classes/PartyNetwork/methods/partynetwork_createinvitation.md) completed.<br/><br/> The PartyStateChange object should be cast to a [PartyCreateInvitationCompletedStateChange](../structs/partycreateinvitationcompletedstatechange.md) object for more information. |  
 | RevokeInvitationCompleted | The operation started by a previous call to [PartyNetwork::RevokeInvitation()](../classes/PartyNetwork/methods/partynetwork_revokeinvitation.md) completed.<br/><br/> The PartyStateChange object should be cast to a [PartyRevokeInvitationCompletedStateChange](../structs/partyrevokeinvitationcompletedstatechange.md) object for more information. |  
 | InvitationCreated | A new invitation was created.<br/><br/> The PartyStateChange object should be cast to a [PartyInvitationCreatedStateChange](../structs/partyinvitationcreatedstatechange.md) object for more information. |  

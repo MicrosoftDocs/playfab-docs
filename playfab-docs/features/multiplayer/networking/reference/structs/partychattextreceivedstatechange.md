@@ -5,7 +5,7 @@ description: "Information specific to the *ChatTextReceived* type of state chang
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/26/2019
+ms.date: 11/01/2019
 ROBOTS: NOINDEX,NOFOLLOW
 ---
 
@@ -48,7 +48,7 @@ The local receiver chat controls to which the text message is addressed.
   
 The language of the chat text.
   
-The language will only be provided when translation to the local language is enabled. If translation isn't enabled, or failure is encountered during translation, the language code will be an empty string. <br /><br /> The language code will be in BCP 47 format, such as en-US for English (United States). Supported language codes are enumerated at [https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/language-support](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/language-support).
+The language will only be provided when translation to the local language is enabled. If translation isn't enabled, or failure is encountered during translation, the language code will be an empty string. <br /><br /> The language code will be in BCP 47 format, such as en-US for English (United States). Supported language codes are enumerated at [https://docs.microsoft.com/azure/cognitive-services/speech-service/language-support](https://docs.microsoft.com/azure/cognitive-services/speech-service/language-support).
   
 **`chatText`** &nbsp; [PartyString](../typedefs.md)  
   

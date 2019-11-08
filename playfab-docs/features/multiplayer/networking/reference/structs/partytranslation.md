@@ -5,7 +5,7 @@ description: "A translation."
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/26/2019
+ms.date: 11/01/2019
 ROBOTS: NOINDEX,NOFOLLOW
 ---
 
@@ -43,7 +43,7 @@ The human-readable form of this error detail can be retrieved via [PartyManager:
   
 The language code of the translation.
   
-The language code will be in BCP 47 format, such as en-US for English (United States). Supported language codes are enumerated at [https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/language-support](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/language-support).
+The language code will be in BCP 47 format, such as en-US for English (United States). Supported language codes are enumerated at [https://docs.microsoft.com/azure/cognitive-services/speech-service/language-support](https://docs.microsoft.com/azure/cognitive-services/speech-service/language-support).
   
 **`options`** &nbsp; [PartyTranslationReceivedOptions](../enums/partytranslationreceivedoptions.md)  
   

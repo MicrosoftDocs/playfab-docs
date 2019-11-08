@@ -5,7 +5,7 @@ description: Optionally configures the memory allocation and freeing callbacks t
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/26/2019
+ms.date: 11/01/2019
 ROBOTS: NOINDEX,NOFOLLOW
 ---
 
@@ -25,14 +25,12 @@ PartyError SetMemoryCallbacks(
 ### Parameters  
   
 **`allocateMemoryCallback`** &nbsp; [PartyAllocateMemoryCallback](../../../callbacks/partyallocatememorycallback.md)  
-*optional*  
   
-A pointer to the custom allocation callback to use, or nullptr to restore the default.  
+A pointer to the custom allocation callback to use.  
   
 **`freeMemoryCallback`** &nbsp; [PartyFreeMemoryCallback](../../../callbacks/partyfreememorycallback.md)  
-*optional*  
   
-A pointer to the custom freeing callback to use, or nullptr to restore the default.  
+A pointer to the custom freeing callback to use.  
   
   
 ### Return value  
@@ -42,7 +40,7 @@ PartyError
   
 ## Remarks  
   
-This method allows the title to install custom memory allocation routines in order to service all requests by the Party library for new memory buffers instead of using its default allocation routines. <br /><br /> The `allocateMemoryCallback` and `freeMemoryCallback` parameters can be null pointers to restore the default routines. Both callback pointers must be null or both must be non-null. Mixing custom and default routines is not permitted.   <br /><br /> This method must be called prior to the [Initialize()](partymanager_initialize.md) method. The callbacks cannot change while any allocations are outstanding. It also must be only called by one thread at a time as it isn't multithreading safe.   <br /><br /> The configured callbacks are persisted until changed, including across calls to [Cleanup()](partymanager_cleanup.md).
+This method allows the title to install custom memory allocation routines in order to service all requests by the Party library for new memory buffers instead of using its default allocation routines. <br /><br /> The `allocateMemoryCallback` and `freeMemoryCallback` parameters must both be non-null.   <br /><br /> To use this method, it must be called before any other Party method except for PartyManager::GetMemoryCallbacks(). This method cannot be called again for the lifetime of this process.
   
 ## Requirements  
   

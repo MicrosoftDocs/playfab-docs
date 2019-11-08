@@ -212,7 +212,7 @@ More information on XR-015 and how it pertains to cross network play and communi
 
 ## Special consideration for Windows 10 and Windows 7
 
-On Windows, the Xbox Live Helper library needs helps from the title to obtain Xbox Live tokens. The library will request tokens by generating `PartyXblTokenAndSignatureRequestedStateChange`. The title can use the [Xbox Authentication Library](https://docs.microsoft.com/gaming/xbox-live/using-xbox-live/auth/xal-overview) (XAL) to fulfil these request. Offloading this work to the title ensures that it remains in full control of any UI handling and consent prompt that is normally associated with user authentication.
+On Windows, the Xbox Live Helper library needs helps from the title to obtain Xbox Live tokens. The library will request tokens by generating `PartyXblTokenAndSignatureRequestedStateChange`. The title can use the [Xbox Authentication Library](https://docs.microsoft.com/gaming/xbox-live/using-xbox-live/auth/xal-overview) (XAL) to fulfill these requests. Offloading this work to the title ensures that it remains in full control of any UI handling and consent prompt that is normally associated with user authentication.
 
 ```cpp
     if (stateChange->stateChangeType == PartyXblStateChangeType::TokenAndSignatureRequested)

@@ -38,7 +38,7 @@
     href: party-xbox-live-guide.md
   - name: Release notes
     href: party-xboxlive-relnotes.md
-- name: Limits and Billing 
+- name: Limits and Billing
   items:
   - name: Pricing
     href: pricing.md
@@ -219,6 +219,10 @@
         items:
         - name: GetSingleton
           href: reference/classes/PartyManager/methods/partymanager_getsingleton.md
+        - name: SetOption
+          href: reference/classes/PartyManager/methods/partymanager_setoption.md
+        - name: GetOption
+          href: reference/classes/PartyManager/methods/partymanager_getoption.md
         - name: GetErrorMessage
           href: reference/classes/PartyManager/methods/partymanager_geterrormessage.md
         - name: SerializeNetworkDescriptor
@@ -333,6 +337,8 @@
       href: reference/structs/partydatabuffer.md
     - name: PartyInvitationConfiguration
       href: reference/structs/partyinvitationconfiguration.md
+    - name: PartyLocalUdpSocketBindAddressConfiguration
+      href: reference/structs/partylocaludpsocketbindaddressconfiguration.md
     - name: PartyNetworkConfiguration
       href: reference/structs/partynetworkconfiguration.md
     - name: PartyNetworkDescriptor
@@ -459,12 +465,16 @@
       href: reference/enums/partyinvitationrevocability.md
     - name: PartyLocalChatControlChatIndicator
       href: reference/enums/partylocalchatcontrolchatindicator.md
+    - name: PartyLocalUdpSocketBindAddressOptions
+      href: reference/enums/partylocaludpsocketbindaddressoptions.md
     - name: PartyLocalUserRemovedReason
       href: reference/enums/partylocaluserremovedreason.md
     - name: PartyMessageReceivedOptions
       href: reference/enums/partymessagereceivedoptions.md
     - name: PartyNetworkStatistic
       href: reference/enums/partynetworkstatistic.md
+    - name: PartyOption
+      href: reference/enums/partyoption.md
     - name: PartySendMessageOptions
       href: reference/enums/partysendmessageoptions.md
     - name: PartyStateChangeResult
@@ -485,3 +495,114 @@
       href: reference/enums/partyvoicechattranscriptionphrasetype.md
   - name: Typedefs
     href: reference/typedefs.md
+- name: Xbox Live Helper library
+  items:
+  - name: Overview
+    href: party-xbox-live-guide.md
+  - name: Release notes
+    href: party-xboxlive-relnotes.md
+  - name: Reference
+    items:
+    - name: PartyXboxLive members
+      href: xblreference/partyxboxlive_members.md
+    - name: Classes
+      items:
+      - name: PartyXblChatUser
+        href: xblreference/classes/PartyXblChatUser/partyxblchatuser.md
+        items:
+        - name: Methods
+          items:
+          - name: GetLocal
+            href: xblreference/classes/PartyXblChatUser/methods/partyxblchatuser_getlocal.md
+          - name: GetXboxUserId
+            href: xblreference/classes/PartyXblChatUser/methods/partyxblchatuser_getxboxuserid.md
+          - name: GetCustomContext
+            href: xblreference/classes/PartyXblChatUser/methods/partyxblchatuser_getcustomcontext.md
+          - name: SetCustomContext
+            href: xblreference/classes/PartyXblChatUser/methods/partyxblchatuser_setcustomcontext.md
+      - name: PartyXblLocalChatUser
+        href: xblreference/classes/PartyXblLocalChatUser/partyxbllocalchatuser.md
+        items:
+        - name: Methods
+          items:
+          - name: GetAccessibilitySettings
+            href: xblreference/classes/PartyXblLocalChatUser/methods/partyxbllocalchatuser_getaccessibilitysettings.md
+          - name: GetRequiredChatPermissionInfo
+            href: xblreference/classes/PartyXblLocalChatUser/methods/partyxbllocalchatuser_getrequiredchatpermissioninfo.md
+          - name: GetCrossNetworkCommunicationPrivacySetting
+            href: xblreference/classes/PartyXblLocalChatUser/methods/partyxbllocalchatuser_getcrossnetworkcommunicationprivacysetting.md
+      - name: PartyXblManager
+        href: xblreference/classes/PartyXblManager/partyxblmanager.md
+        items:
+        - name: Methods
+          items:
+          - name: GetSingleton
+            href: xblreference/classes/PartyXblManager/methods/partyxblmanager_getsingleton.md
+          - name: GetErrorMessage
+            href: xblreference/classes/PartyXblManager/methods/partyxblmanager_geterrormessage.md
+          - name: SetMemoryCallbacks
+            href: xblreference/classes/PartyXblManager/methods/partyxblmanager_setmemorycallbacks.md
+          - name: GetMemoryCallbacks
+            href: xblreference/classes/PartyXblManager/methods/partyxblmanager_getmemorycallbacks.md
+          - name: SetThreadAffinityMask
+            href: xblreference/classes/PartyXblManager/methods/partyxblmanager_setthreadaffinitymask.md
+          - name: GetThreadAffinityMask
+            href: xblreference/classes/PartyXblManager/methods/partyxblmanager_getthreadaffinitymask.md
+          - name: Initialize
+            href: xblreference/classes/PartyXblManager/methods/partyxblmanager_initialize.md
+          - name: Cleanup
+            href: xblreference/classes/PartyXblManager/methods/partyxblmanager_cleanup.md
+          - name: StartProcessingStateChanges
+            href: xblreference/classes/PartyXblManager/methods/partyxblmanager_startprocessingstatechanges.md
+          - name: FinishProcessingStateChanges
+            href: xblreference/classes/PartyXblManager/methods/partyxblmanager_finishprocessingstatechanges.md
+          - name: CompleteGetTokenAndSignatureRequest
+            href: xblreference/classes/PartyXblManager/methods/partyxblmanager_completegettokenandsignaturerequest.md
+          - name: CreateLocalChatUser
+            href: xblreference/classes/PartyXblManager/methods/partyxblmanager_createlocalchatuser.md
+          - name: CreateRemoteChatUser
+            href: xblreference/classes/PartyXblManager/methods/partyxblmanager_createremotechatuser.md
+          - name: DestroyChatUser
+            href: xblreference/classes/PartyXblManager/methods/partyxblmanager_destroychatuser.md
+          - name: GetChatUsers
+            href: xblreference/classes/PartyXblManager/methods/partyxblmanager_getchatusers.md
+          - name: LoginToPlayFab
+            href: xblreference/classes/PartyXblManager/methods/partyxblmanager_logintoplayfab.md
+    - name: Structures
+      items:
+      - name: PartyXblAccessibilitySettings
+        href: xblreference/structs/partyxblaccessibilitysettings.md
+      - name: PartyXblChatPermissionInfo
+        href: xblreference/structs/partyxblchatpermissioninfo.md
+      - name: PartyXblHttpHeader
+        href: xblreference/structs/partyxblhttpheader.md
+    - name: State changes
+      items:
+      - name: PartyXblCreateLocalChatUserCompletedStateChange
+        href: xblreference/structs/partyxblcreatelocalchatusercompletedstatechange.md
+      - name: PartyXblLocalChatUserDestroyedStateChange
+        href: xblreference/structs/partyxbllocalchatuserdestroyedstatechange.md
+      - name: PartyXblLoginToPlayFabCompletedStateChange
+        href: xblreference/structs/partyxbllogintoplayfabcompletedstatechange.md
+      - name: PartyXblRequiredChatPermissionInfoChangedStateChange
+        href: xblreference/structs/partyxblrequiredchatpermissioninfochangedstatechange.md
+      - name: PartyXblStateChange
+        href: xblreference/structs/partyxblstatechange.md
+      - name: PartyXblTokenAndSignatureRequestedStateChange
+        href: xblreference/structs/partyxbltokenandsignaturerequestedstatechange.md
+    - name: Enumerations
+      items:
+      - name: PartyXblChatPermissionMaskReason
+        href: xblreference/enums/partyxblchatpermissionmaskreason.md
+      - name: PartyXblCrossNetworkCommunicationPrivacySetting
+        href: xblreference/enums/partyxblcrossnetworkcommunicationprivacysetting.md
+      - name: PartyXblLocalChatUserDestroyedReason
+        href: xblreference/enums/partyxbllocalchatuserdestroyedreason.md
+      - name: PartyXblStateChangeResult
+        href: xblreference/enums/partyxblstatechangeresult.md
+      - name: PartyXblStateChangeType
+        href: xblreference/enums/partyxblstatechangetype.md
+      - name: PartyXblThreadId
+        href: xblreference/enums/partyxblthreadid.md
+    - name: Typedefs
+      href: xblreference/xbltypedefs.md

@@ -5,7 +5,7 @@ description: TBD
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/25/2019
+ms.date: 10/30/2019
 ROBOTS: NOINDEX,NOFOLLOW
 ---
 
@@ -24,6 +24,8 @@ class PartyManager
 | Name | Description |  
 | --- | --- |  
 | [GetSingleton](methods/partymanager_getsingleton.md) | Retrieves a reference to the PartyManager singleton instance. |  
+| [SetOption](methods/partymanager_setoption.md) | Configures an option to fine-tune Party library functionality. |  
+| [GetOption](methods/partymanager_getoption.md) | Retrieves an option used to fine-tune Party library functionality. |  
 | [GetErrorMessage](methods/partymanager_geterrormessage.md) | Get the human-readable form of an error. |  
 | [SerializeNetworkDescriptor](methods/partymanager_serializenetworkdescriptor.md) | Serializes a network descriptor structure into an opaque string that is safe to communicate over title and platform-specific communication channels. |  
 | [DeserializeNetworkDescriptor](methods/partymanager_deserializenetworkdescriptor.md) | Deserializes a network descriptor structure from an opaque string serialized via a prior call to [SerializeNetworkDescriptor()](methods/partymanager_serializenetworkdescriptor.md). |  
