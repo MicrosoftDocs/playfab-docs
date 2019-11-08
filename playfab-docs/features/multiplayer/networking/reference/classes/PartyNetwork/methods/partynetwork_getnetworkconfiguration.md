@@ -5,8 +5,7 @@ description: Gets the network configuration which was set when creating the netw
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/25/2019
-ROBOTS: NOINDEX,NOFOLLOW
+ms.date: 11/08/2019
 ---
 
 # PartyNetwork::GetNetworkConfiguration  
@@ -24,7 +23,7 @@ PartyError GetNetworkConfiguration(
 ### Parameters  
   
 **`networkConfiguration`** &nbsp; [PartyNetworkConfiguration**](../../../structs/partynetworkconfiguration.md)  
-*output*  
+*library-allocated output*  
   
 The output network configuration.  
   
@@ -36,7 +35,7 @@ PartyError
   
 ## Remarks  
   
-Returns nullptr until a call to [PartyManager::StartProcessingStateChanges()](../../PartyManager/methods/partymanager_startprocessingstatechanges.md) returns a [PartyNetworkConfigurationMadeAvailableStateChange](../../../structs/partynetworkconfigurationmadeavailablestatechange.md).
+This method returns an error until [PartyManager::StartProcessingStateChanges()](../../PartyManager/methods/partymanager_startprocessingstatechanges.md) provides a [PartyNetworkConfigurationMadeAvailableStateChange](../../../structs/partynetworkconfigurationmadeavailablestatechange.md).
   
 ## Requirements  
   
@@ -44,6 +43,6 @@ Returns nullptr until a call to [PartyManager::StartProcessingStateChanges()](..
   
 ## See also  
 [PartyNetwork](../partynetwork.md)  
-
+[PartyNetworkConfigurationMadeAvailableStateChange](../../../structs/partynetworkconfigurationmadeavailablestatechange.md)
   
   

@@ -5,8 +5,7 @@ description: TBD
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/25/2019
-ROBOTS: NOINDEX,NOFOLLOW
+ms.date: 11/08/2019
 ---
 
 # PartyLocalDevice  
@@ -23,8 +22,8 @@ class PartyLocalDevice : public PartyDevice
   
 | Name | Description |  
 | --- | --- |  
-| [CreateChatControl](methods/partylocaldevice_createchatcontrol.md) | Creates a local chat control for the specified user. |  
-| [DestroyChatControl](methods/partylocaldevice_destroychatcontrol.md) | Destroys a local chat control. |  
+| [CreateChatControl](methods/partylocaldevice_createchatcontrol.md) | Queues an asynchronous operation to create a local chat control for the specified user. |  
+| [DestroyChatControl](methods/partylocaldevice_destroychatcontrol.md) | Queues an asynchronous operation to destroy a local chat control. |  
 
   
   

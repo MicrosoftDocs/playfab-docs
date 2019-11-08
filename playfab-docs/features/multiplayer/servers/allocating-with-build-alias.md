@@ -18,11 +18,11 @@ A build alias is a management layer on top of builds, which allows calls to `Req
 This is the most common scenario for a build to build upgrade, where you are updating the game server and retail clients are compatible with both servers.
 
 Clients will reference Alias 1, which would have the following configuration:
-- Build 1: Weight = 1.0
+- Build 1: Weight = 1
 
 Once Build 2 is created, Alias 1 will be changed to be:
-- Build 1: Weight = 0.8
-- Build 2: Weight = 0.2
+- Build 1: Weight = 8
+- Build 2: Weight = 2
 
 You can gradually change the weights until all new server requests are fulfilled by Build 2. At this point the weight for Build 1 is 0 and can be removed from the alias.
 
@@ -32,10 +32,10 @@ A typical use case for an alias is affinitizing them to a client compatibility v
 In this case you want to update the game server at the same time you are updating game clients, as your current game clients are not compatible with the old server build. Transitioning from one build to another would be done as follows:
 
 Old clients will reference Alias 1, which would have the following:
-- Build 1: Weight = 1.0
+- Build 1: Weight = 1
 
 Once Build 2 is created, new clients will reference Alias 2, which would have the following:
-- Build 2: Weight = 1.0
+- Build 2: Weight = 1
 
 In this scenario aliases are used similarly to builds, and their multiplexing functionality is not used. 
 
@@ -44,24 +44,24 @@ In this scenario aliases are used similarly to builds, and their multiplexing fu
 This is similar to the backwards compatible build to build upgrade scenario, but with a more sudden switch in demand behavior. Transitioning from one build to another would be done as follows:
 
 Clients will reference Alias 1, which would have the following:
-- Build 1: Weight = 1.0
+- Build 1: Weight = 1
 
 Once Build 2 is created, Alias 1 will be changed to be:
-- Build 1: Weight = 0.0
-- Build 2: Weight = 1.0
+- Build 1: Weight = 0
+- Build 2: Weight = 1
 
 ### Testing a deployment that is backwards compatible
 When you want to update the game server, and the client version is compatible with both servers, but you wants to test the second version before deploying it at scale for all players. Testing and transitioning from one build to another could be done as follows:
 
 Clients will reference Alias 1, which would have the following:
-- Build 1: Weight = 1.0
+- Build 1: Weight = 1
 
 Once Build 2 is created. Testing clients would reference Alias 2, which would have the following:
-- Build 2: Weight = 1.0
+- Build 2: Weight = 1
 
 Once Build 2 is verified. Alias 1 will be changed to be:
-- Build 1: Weight = 0.8
-- Build 2: Weight = 0.2
+- Build 1: Weight = 8
+- Build 2: Weight = 2
 
 Gradually build 2 would be weighted more and absorb all traffic.
 

@@ -6,7 +6,6 @@ ms.author: alstonge
 ms.date: 7/22/2019
 ms.topic: article
 ms.prod: playfab
-ROBOTS: NOINDEX,NOFOLLOW
 keywords: playfab, multiplayer, networking
 ---
 
@@ -77,8 +76,8 @@ matching that identifier. Refer to the following table to see what kind of ident
 
 | **Platform** | **What to Use** |
 |:-------------|:----------------|
-| Windows 7    | [`IMMDevice`](https://docs.microsoft.com/en-us/windows/win32/api/mmdeviceapi/nf-mmdeviceapi-immdevice-getid)
-| Windows 10   | [`IMMDevice`](https://docs.microsoft.com/en-us/windows/win32/api/mmdeviceapi/nf-mmdeviceapi-immdevice-getid) or [`Windows.Media.Devices`](https://docs.microsoft.com/en-us/uwp/api/windows.media.devices.mediadevice)
+| Windows 7    | [`IMMDevice`](https://docs.microsoft.com/windows/win32/api/mmdeviceapi/nf-mmdeviceapi-immdevice-getid)
+| Windows 10   | [`IMMDevice`](https://docs.microsoft.com/windows/win32/api/mmdeviceapi/nf-mmdeviceapi-immdevice-getid) or [`Windows.Media.Devices`](https://docs.microsoft.com/uwp/api/windows.media.devices.mediadevice)
 | Xbox One     | Please refer to the Xbox One XDK documentation
 
 > [!NOTE]

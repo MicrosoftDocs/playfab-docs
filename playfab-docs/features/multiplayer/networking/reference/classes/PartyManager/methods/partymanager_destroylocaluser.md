@@ -5,8 +5,7 @@ description: Starts an asynchronous operation to destroy a local user.
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/25/2019
-ROBOTS: NOINDEX,NOFOLLOW
+ms.date: 11/08/2019
 ---
 
 # PartyManager::DestroyLocalUser  
@@ -41,7 +40,7 @@ PartyError
   
 ## Remarks  
   
-A successful return value signifies that the asynchronous operation has started and a DestroyLocalUserCompleted state change is guaranteed to eventually be provided, via [StartProcessingStateChanges()](partymanager_startprocessingstatechanges.md), with the result of the operation. A failing return value signifies that the asynchronous operation will not execute and no completion state change will be provided. If the asynchronous operation succeeds, the local user will be removed from the list returned by [GetLocalUsers()](partymanager_getlocalusers.md) during the [StartProcessingStateChanges()](partymanager_startprocessingstatechanges.md) call that provides the [PartyDestroyLocalUserCompletedStateChange](../../../structs/partydestroylocalusercompletedstatechange.md). The user object will be destroyed upon returning the final state change referencing the user via [FinishProcessingStateChanges()](partymanager_finishprocessingstatechanges.md). <br /><br /> Before the asynchronous operation completes, i.e. before the PartyDestroyLocalUserCompletedStateChange is provided by [StartProcessingStateChanges()](partymanager_startprocessingstatechanges.md), the local user will be removed from all objects and networks referencing the local user. If the object depended on the user to remain in a valid state, such as with a chat control or endpoint tied to the user, or a network where the local user is the only authenticated local user, the object will be destroyed and the relevant state change will be provided prior to the DestroyLocalUserCompleted state change.
+This method queues an asynchronous operation to destroy a local user. A [PartyDestroyLocalUserCompletedStateChange](../../../structs/partydestroylocalusercompletedstatechange.md) will be provided upon completion of the operation, indicating success or failure. Before successful completion of the operation, the local user will no longer authenticated into any networks (each indicated by a [PartyLocalUserRemovedStateChange](../../../structs/partylocaluserremovedstatechange.md)) and any local chat control associated with the user will be destroyed (indicated by a [PartyChatControlDestroyedStateChange](../../../structs/partychatcontroldestroyedstatechange.md)). Memory for the local user will remain valid until all state changes referencing the local user have been returned to [PartyManager::FinishProcessingStateChanges()](partymanager_finishprocessingstatechanges.md).
   
 ## Requirements  
   
@@ -50,6 +49,8 @@ A successful return value signifies that the asynchronous operation has started 
 ## See also  
 [PartyManager](../partymanager.md)  
 [PartyDestroyLocalUserCompletedStateChange](../../../structs/partydestroylocalusercompletedstatechange.md)  
+[PartyChatControlDestroyedStateChange](../../../structs/partychatcontroldestroyedstatechange.md)  
+[PartyLocalUserRemovedStateChange](../../../structs/partylocaluserremovedstatechange.md)  
 [PartyManager::GetLocalUsers](partymanager_getlocalusers.md)
   
   

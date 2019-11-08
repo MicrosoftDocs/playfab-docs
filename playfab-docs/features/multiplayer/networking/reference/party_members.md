@@ -5,8 +5,7 @@ description: TBD
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/27/2019
-ROBOTS: NOINDEX,NOFOLLOW
+ms.date: 11/08/2019
 ---
 
 # Party members  
@@ -41,6 +40,7 @@ ROBOTS: NOINDEX,NOFOLLOW
 | --- | --- |  
 | [PartyDataBuffer](structs/partydatabuffer.md) | A data buffer. |  
 | [PartyInvitationConfiguration](structs/partyinvitationconfiguration.md) | Invitation configuration data. |  
+| [PartyLocalUdpSocketBindAddressConfiguration](structs/partylocaludpsocketbindaddressconfiguration.md) | The configuration used by the Party library to bind to a UDP socket. |  
 | [PartyNetworkConfiguration](structs/partynetworkconfiguration.md) | Network configuration data. |  
 | [PartyNetworkDescriptor](structs/partynetworkdescriptor.md) | A descriptor containing the data required for a device to connect to a network. |  
 | [PartyRegion](structs/partyregion.md) | Represents a Party library region. |  
@@ -112,9 +112,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 | [PartyGender](enums/partygender.md) | Genders for text to speech profiles.|  
 | [PartyInvitationRevocability](enums/partyinvitationrevocability.md) | Options for who may revoke an invitation.|  
 | [PartyLocalChatControlChatIndicator](enums/partylocalchatcontrolchatindicator.md) | Audio states for a local chat control.|  
+| [PartyLocalUdpSocketBindAddressOptions](enums/partylocaludpsocketbindaddressoptions.md) | Additional options to control how the Party library binds to the UDP socket specified by the [PartyLocalUdpSocketBindAddressConfiguration](structs/partylocaludpsocketbindaddressconfiguration.md) structure.|  
 | [PartyLocalUserRemovedReason](enums/partylocaluserremovedreason.md) | Reasons for removing a local user from a network.|  
 | [PartyMessageReceivedOptions](enums/partymessagereceivedoptions.md) | Flags describing how a message was received.|  
 | [PartyNetworkStatistic](enums/partynetworkstatistic.md) | Types of statistics that can be retrieved for a network.|  
+| [PartyOption](enums/partyoption.md) | Additional options that can be set to fine-tune Party library functionality.|  
 | [PartySendMessageOptions](enums/partysendmessageoptions.md) | Options for controlling how a message is sent.|  
 | [PartyStateChangeResult](enums/partystatechangeresult.md) | Results for operations that generate state changes.|  
 | [PartyStateChangeType](enums/partystatechangetype.md) | The types of state changes that can occur.|  

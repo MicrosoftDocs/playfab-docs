@@ -5,8 +5,7 @@ description: Gets an array containing all invitations exposed to the local devic
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/26/2019
-ROBOTS: NOINDEX,NOFOLLOW
+ms.date: 11/08/2019
 ---
 
 # PartyNetwork::GetInvitations  
@@ -25,7 +24,7 @@ PartyError GetInvitations(
 ### Parameters  
   
 **`invitationCount`** &nbsp; uint32_t*  
-*library-allocated output*  
+*output*  
   
 An output value indicating the number of invitations provided in `invitations`.  
   
@@ -42,7 +41,7 @@ PartyError
   
 ## Remarks  
   
-The array is backed by the library's internal memory. The array is only valid until the next call to either [CreateInvitation()](partynetwork_createinvitation.md) or [PartyManager::StartProcessingStateChanges()](../../PartyManager/methods/partymanager_startprocessingstatechanges.md). <br /><br /> A new invitation is exposed to the local device whenever the local device calls CreateInvitation() or a [PartyInvitationCreatedStateChange](../../../structs/partyinvitationcreatedstatechange.md) is provided via [PartyManager::StartProcessingStateChanges()](../../PartyManager/methods/partymanager_startprocessingstatechanges.md).   <br /><br /> Invitations created via CreateInvitation() will only be exposed to the local device. The initial invitation will be exposed to all devices in the network via a PartyInvitationCreatedStateChange.   <br /><br /> An invitation will no longer be exposed to the local device whenever a [PartyInvitationDestroyedStateChange](../../../structs/partyinvitationdestroyedstatechange.md) is provided via [PartyManager::StartProcessingStateChanges()](../../PartyManager/methods/partymanager_startprocessingstatechanges.md).
+The array is backed by the library's internal memory. The array is only valid until the next call to either [CreateInvitation()](partynetwork_createinvitation.md) or [PartyManager::StartProcessingStateChanges()](../../PartyManager/methods/partymanager_startprocessingstatechanges.md). <br /><br /> A new invitation is exposed to the local device whenever the local device calls CreateInvitation() or a [PartyInvitationCreatedStateChange](../../../structs/partyinvitationcreatedstatechange.md) is provided via PartyManager::StartProcessingStateChanges().   <br /><br /> Invitations created via CreateInvitation() will only be exposed to the local device. The initial invitation will be exposed to all devices in the network via a PartyInvitationCreatedStateChange.   <br /><br /> Once a [PartyInvitationDestroyedStateChange](../../../structs/partyinvitationdestroyedstatechange.md) has been provided by PartyManager::StartProcessingStateChanges(), the invitation will no longer be present in the array returned by this method.
   
 ## Requirements  
   

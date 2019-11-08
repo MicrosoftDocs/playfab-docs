@@ -5,8 +5,7 @@ description: Gets the network associated with this endpoint.
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/25/2019
-ROBOTS: NOINDEX,NOFOLLOW
+ms.date: 11/08/2019
 ---
 
 # PartyEndpoint::GetNetwork  
@@ -24,7 +23,7 @@ PartyError GetNetwork(
 ### Parameters  
   
 **`network`** &nbsp; [PartyNetwork**](../../PartyNetwork/partynetwork.md)  
-*output*  
+*library-allocated output*  
   
 The output network associated with this endpoint.  
   

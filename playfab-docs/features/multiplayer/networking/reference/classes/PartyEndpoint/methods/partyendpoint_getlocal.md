@@ -5,8 +5,7 @@ description: Gets the [PartyLocalEndpoint](../../PartyLocalEndpoint/partylocalen
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/25/2019
-ROBOTS: NOINDEX,NOFOLLOW
+ms.date: 11/08/2019
 ---
 
 # PartyEndpoint::GetLocal  
@@ -24,7 +23,7 @@ PartyError GetLocal(
 ### Parameters  
   
 **`localEndpoint`** &nbsp; [PartyLocalEndpoint**](../../PartyLocalEndpoint/partylocalendpoint.md)  
-*output, may return nullptr*  
+*library-allocated output, may return nullptr*  
   
 The output local version of this endpoint object, or nullptr if this is not a local endpoint.  
   

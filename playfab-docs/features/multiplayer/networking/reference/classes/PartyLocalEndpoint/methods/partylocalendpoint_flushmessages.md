@@ -5,8 +5,7 @@ description: Forces all queued messages to the specified endpoints from this loc
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/26/2019
-ROBOTS: NOINDEX,NOFOLLOW
+ms.date: 11/08/2019
 ---
 
 # PartyLocalEndpoint::FlushMessages  
@@ -41,7 +40,7 @@ PartyError
   
 ## Remarks  
   
-When [PartySendMessageOptions::CoalesceOpportunistically](../../../enums/partysendmessageoptions.md) or [PartySendMessageOptions::AlwaysCoalesceUntilFlushed](../../../enums/partysendmessageoptions.md) is specified in a call to [SendMessage()](partylocalendpoint_sendmessage.md), the message may not be transmitted immediately and instead be combined with other messages. This coalescing can improve bandwidth efficiency at the potential expense of perceived latency. This function allows the title to manually force such coalesced messages to begin transmitting as soon as possible. <br /><br /> Currently this function ignores the `targetEndpoints` parameter and forces all queued messages from this local endpoint to be transmitted as soon as possible.
+When [PartySendMessageOptions::CoalesceOpportunistically](../../../enums/partysendmessageoptions.md) or [PartySendMessageOptions::AlwaysCoalesceUntilFlushed](../../../enums/partysendmessageoptions.md) is specified in a call to [SendMessage()](partylocalendpoint_sendmessage.md), the message may not be transmitted immediately and instead be combined with other messages. This coalescing can improve bandwidth efficiency at the potential expense of perceived latency. This method allows the title to manually force such coalesced messages to begin transmitting as soon as possible. <br /><br /> Currently this method ignores the `targetEndpoints` parameter and forces all queued messages from this local endpoint to be transmitted as soon as possible.
   
 ## Requirements  
   
@@ -50,7 +49,6 @@ When [PartySendMessageOptions::CoalesceOpportunistically](../../../enums/partyse
 ## See also  
 [PartyLocalEndpoint](../partylocalendpoint.md)  
 [PartyLocalEndpoint::SendMessage](partylocalendpoint_sendmessage.md)  
-[PartySendMessageOptions](../../../enums/partysendmessageoptions.md)  
-[PartyManager::StartProcessingStateChanges](../../PartyManager/methods/partymanager_startprocessingstatechanges.md)
+[PartySendMessageOptions](../../../enums/partysendmessageoptions.md)
   
   

@@ -5,8 +5,7 @@ description: Gets one or more statistic counter values for the specified target 
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/26/2019
-ROBOTS: NOINDEX,NOFOLLOW
+ms.date: 11/08/2019
 ---
 
 # PartyLocalEndpoint::GetEndpointStatistics  
@@ -58,7 +57,7 @@ PartyError
   
 ## Remarks  
   
-This function is used to retrieve performance counters, queue lengths, historical usage metrics, or other statistical information recorded between this local endpoint and a target endpoint. <br /><br /> Alternatively, multiple target endpoints can be provided, or a zero-entry array to retrieve statistics for all target endpoints currently in the network, including this local one. If multiple target endpoints are requested, then the values returned are the combined statistics for those endpoints. The particular method used to combine multiple endpoint statistics into a single value depends on and is described by the specific PartyEndpointStatistic type.   <br /><br /> A given PartyEndpointStatistic type may appear in any order in the `statisticTypes` array, but must not be specified more than once. Each corresponding statistic value will be written to the `statisticValues` array in the same order.   <br /><br /> The returned statistic values are always the most current ones available. There is no guarantee they will report the same value from one GetEndpointStatistics() call to the next, even if there were no intervening calls to [PartyManager::StartProcessingStateChanges()](../../PartyManager/methods/partymanager_startprocessingstatechanges.md) or [PartyManager::FinishProcessingStateChanges()](../../PartyManager/methods/partymanager_finishprocessingstatechanges.md).
+This method is used to retrieve performance counters, queue lengths, historical usage metrics, or other statistical information recorded between this local endpoint and a target endpoint. <br /><br /> Alternatively, multiple target endpoints can be provided, or a zero-entry array to retrieve statistics for all target endpoints currently in the network, including this local one. If multiple target endpoints are requested, then the values returned are the combined statistics for those endpoints. The particular method used to combine multiple endpoint statistics into a single value depends on and is described by the specific PartyEndpointStatistic type.   <br /><br /> A given PartyEndpointStatistic type may appear in any order in the `statisticTypes` array, but must not be specified more than once. Each corresponding statistic value will be written to the `statisticValues` array in the same order.   <br /><br /> The returned statistic values are always the most current ones available. There is no guarantee they will report the same value from one GetEndpointStatistics() call to the next, even if there were no intervening calls to [PartyManager::StartProcessingStateChanges()](../../PartyManager/methods/partymanager_startprocessingstatechanges.md) or [PartyManager::FinishProcessingStateChanges()](../../PartyManager/methods/partymanager_finishprocessingstatechanges.md).
   
 ## Requirements  
   

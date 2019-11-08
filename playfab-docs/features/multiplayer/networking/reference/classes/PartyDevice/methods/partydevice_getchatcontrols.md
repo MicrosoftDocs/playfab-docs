@@ -5,8 +5,7 @@ description: Gets the chat controls on this device.
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/26/2019
-ROBOTS: NOINDEX,NOFOLLOW
+ms.date: 11/08/2019
 ---
 
 # PartyDevice::GetChatControls  
@@ -25,7 +24,7 @@ PartyError GetChatControls(
 ### Parameters  
   
 **`chatControlCount`** &nbsp; uint32_t*  
-*library-allocated output*  
+*output*  
   
 The output number of chat controls on this device.  
   
@@ -42,7 +41,7 @@ PartyError
   
 ## Remarks  
   
-The memory for the returned array is invalidated whenever the title calls [PartyManager::StartProcessingStateChanges()](../../PartyManager/methods/partymanager_startprocessingstatechanges.md). If this is the local device, the memory for the array is also invalidated when [PartyLocalDevice::CreateChatControl()](../../PartyLocalDevice/methods/partylocaldevice_createchatcontrol.md) returns success.
+Once a [PartyChatControlDestroyedStateChange](../../../structs/partychatcontroldestroyedstatechange.md) has been provided by [PartyManager::StartProcessingStateChanges()](../../PartyManager/methods/partymanager_startprocessingstatechanges.md), the chat control will no longer be present in the array returned by this method. <br /><br /> The memory for the returned array is invalidated whenever the title calls PartyManager::StartProcessingStateChanges(). If this is the local device, the memory for the array is also invalidated when [PartyLocalDevice::CreateChatControl()](../../PartyLocalDevice/methods/partylocaldevice_createchatcontrol.md) returns success.
   
 ## Requirements  
   
@@ -50,6 +49,8 @@ The memory for the returned array is invalidated whenever the title calls [Party
   
 ## See also  
 [PartyDevice](../partydevice.md)  
-
+[PartyLocalDevice::CreateChatControl](../../PartyLocalDevice/methods/partylocaldevice_createchatcontrol.md)  
+[PartyLocalDevice::DestroyChatControl](../../PartyLocalDevice/methods/partylocaldevice_destroychatcontrol.md)  
+[PartyChatControlDestroyedStateChange](../../../structs/partychatcontroldestroyedstatechange.md)
   
   

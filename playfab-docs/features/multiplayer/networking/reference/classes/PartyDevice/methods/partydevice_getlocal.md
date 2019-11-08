@@ -5,8 +5,7 @@ description: Gets the [PartyLocalDevice](../../PartyLocalDevice/partylocaldevice
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/25/2019
-ROBOTS: NOINDEX,NOFOLLOW
+ms.date: 11/08/2019
 ---
 
 # PartyDevice::GetLocal  
@@ -24,7 +23,7 @@ PartyError GetLocal(
 ### Parameters  
   
 **`localDevice`** &nbsp; [PartyLocalDevice**](../../PartyLocalDevice/partylocaldevice.md)  
-*output, may return nullptr*  
+*library-allocated output, may return nullptr*  
   
 The output local version of this device object, or nullptr if this is not a local device.  
   

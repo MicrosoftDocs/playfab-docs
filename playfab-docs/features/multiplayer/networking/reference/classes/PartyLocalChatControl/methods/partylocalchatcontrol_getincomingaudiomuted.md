@@ -5,8 +5,7 @@ description: Provides whether the incoming audio from the target chat control, i
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/27/2019
-ROBOTS: NOINDEX,NOFOLLOW
+ms.date: 11/08/2019
 ---
 
 # PartyLocalChatControl::GetIncomingAudioMuted  
@@ -29,7 +28,7 @@ PartyError GetIncomingAudioMuted(
 The target chat control.  
   
 **`muted`** &nbsp; [PartyBool*](../../../typedefs.md)  
-*library-allocated output*  
+*output*  
   
 True if muted, false otherwise.  
   

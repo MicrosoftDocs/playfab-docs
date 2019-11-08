@@ -5,8 +5,7 @@ description: "Information specific to the *DataBuffersReturned* type of state ch
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/26/2019
-ROBOTS: NOINDEX,NOFOLLOW
+ms.date: 10/30/2019
 ---
 
 # PartyDataBuffersReturnedStateChange  
@@ -50,7 +49,7 @@ The message identifier provided to the call associated with this state change.
   
 ## Remarks  
   
-This state change is only returned if the corresponding call to [PartyLocalEndpoint::SendMessage()](../classes/PartyLocalEndpoint/methods/partylocalendpoint_sendmessage.md) included the [PartySendMessageOptions::DontCopyDataBuffers](../enums/partysendmessageoptions.md) option. This state change is returned once the data buffers passed with this call are no longer in use by the PartyManager instance.
+This state change is only returned if the corresponding call to [PartyLocalEndpoint::SendMessage()](../classes/PartyLocalEndpoint/methods/partylocalendpoint_sendmessage.md) included the [PartySendMessageOptions::DontCopyDataBuffers](../enums/partysendmessageoptions.md) option. This state change is returned once the data buffers passed with this call are no longer in use by the library.
   
 ## Requirements  
   

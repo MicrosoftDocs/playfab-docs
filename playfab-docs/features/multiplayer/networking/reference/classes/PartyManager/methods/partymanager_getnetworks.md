@@ -1,17 +1,16 @@
 ---
 author: jdeweyMSFT
 title: "PartyManager::GetNetworks"
-description: Gets an array of all networks to which the local device is connected.
+description: Gets an array of all networks to which the local device is connected or connecting.
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/26/2019
-ROBOTS: NOINDEX,NOFOLLOW
+ms.date: 11/08/2019
 ---
 
 # PartyManager::GetNetworks  
 
-Gets an array of all networks to which the local device is connected.  
+Gets an array of all networks to which the local device is connected or connecting.  
 
 ## Syntax  
   
@@ -25,14 +24,14 @@ PartyError GetNetworks(
 ### Parameters  
   
 **`networkCount`** &nbsp; uint32_t*  
-*library-allocated output*  
+*output*  
   
-The output number of networks to which the local device is connected provided in `networks`.  
+The output number of networks to which the local device is connected or connecting provided in `networks`.  
   
 **`networks`** &nbsp; [PartyNetworkArray*](../../../typedefs.md)  
 *library-allocated output array of size `*networkCount`*  
   
-A library-allocated output array containing the networks to which the local device is connected.  
+A library-allocated output array containing the networks to which the local device is connected or connecting.  
   
   
 ### Return value  
@@ -42,7 +41,7 @@ PartyError
   
 ## Remarks  
   
-The array is backed by the library's internal memory. The array is only valid until the next call to [StartProcessingStateChanges()](partymanager_startprocessingstatechanges.md). The individual network objects are valid until the network is destroyed and all state changes referencing the network have been returned via [FinishProcessingStateChanges()](partymanager_finishprocessingstatechanges.md).
+Once a [PartyNetworkDestroyedStateChange](../../../structs/partynetworkdestroyedstatechange.md) has been provided by [PartyManager::StartProcessingStateChanges()](partymanager_startprocessingstatechanges.md), the network will no longer be present in the array returned by this method. <br /><br /> The memory for the returned array is invalidated whenever the title calls PartyManager::StartProcessingStateChanges() or [ConnectToNetwork()](partymanager_connecttonetwork.md) returns success.
   
 ## Requirements  
   
@@ -51,6 +50,7 @@ The array is backed by the library's internal memory. The array is only valid un
 ## See also  
 [PartyManager](../partymanager.md)  
 [PartyManager::ConnectToNetwork](partymanager_connecttonetwork.md)  
-[PartyManager::StartProcessingStateChanges](partymanager_startprocessingstatechanges.md)
+[PartyNetwork::LeaveNetwork](../../PartyNetwork/methods/partynetwork_leavenetwork.md)  
+[PartyNetworkDestroyedStateChange](../../../structs/partynetworkdestroyedstatechange.md)
   
   

@@ -1,12 +1,11 @@
 ---
 author: jdeweyMSFT
-title: "PartyNetwork"
+title: "Typedefs"
 description: TBD
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
 ms.date: 09/25/2019
-ROBOTS: NOINDEX,NOFOLLOW
 ---
 
 # Typedefs
@@ -69,11 +68,10 @@ typedef class PartyLocalUser * const * PartyLocalUserArray;
 | PartyStateChangeArray | [PartyStateChange](structs/partystatechange.md) |
 | PartyLocalUserArray | [PartyLocalUser](classes/PartyLocalUser/partylocaluser.md) |
 
-## Requirements  
-  
+## Requirements
+
 **Header:** Party.h
-  
-## See also  
-[Party members](party_members.md)  
-  
-  
+
+## See also
+[Party members](party_members.md)
+

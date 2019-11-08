@@ -1,17 +1,16 @@
 ---
 author: jdeweyMSFT
 title: "PartyNetwork::GetLocalUsers"
-description: Gets an array containing the local users that are authenticated into the network.
+description: Gets an array containing the local users that are authenticated or authenticating into the network.
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/26/2019
-ROBOTS: NOINDEX,NOFOLLOW
+ms.date: 11/08/2019
 ---
 
 # PartyNetwork::GetLocalUsers  
 
-Gets an array containing the local users that are authenticated into the network.  
+Gets an array containing the local users that are authenticated or authenticating into the network.  
 
 ## Syntax  
   
@@ -25,14 +24,14 @@ PartyError GetLocalUsers(
 ### Parameters  
   
 **`userCount`** &nbsp; uint32_t*  
-*library-allocated output*  
+*output*  
   
 An output value indicating the number of users provided in `localUsers`.  
   
 **`localUsers`** &nbsp; [PartyLocalUserArray*](../../../typedefs.md)  
 *library-allocated output array of size `*userCount`*  
   
-A library-allocated output array containing the local users that are authenticated into the network.  
+A library-allocated output array containing the local users that are authenticated or authenticating into the network.  
   
   
 ### Return value  
@@ -42,7 +41,7 @@ PartyError
   
 ## Remarks  
   
-The array is backed by the library's internal memory. The array is only valid until the next call to either [AuthenticateLocalUser()](partynetwork_authenticatelocaluser.md) or [PartyManager::StartProcessingStateChanges()](../../PartyManager/methods/partymanager_startprocessingstatechanges.md). The individual local user objects are valid until the local user's [PartyDestroyLocalUserCompletedStateChange](../../../structs/partydestroylocalusercompletedstatechange.md) is reported and all state changes referencing the local user object are returned via [PartyManager::FinishProcessingStateChanges()](../../PartyManager/methods/partymanager_finishprocessingstatechanges.md).
+Once a [PartyLocalUserRemovedStateChange](../../../structs/partylocaluserremovedstatechange.md) has been provided by [PartyManager::StartProcessingStateChanges()](../../PartyManager/methods/partymanager_startprocessingstatechanges.md), the local user will no longer be present in the array returned by this method. <br /><br /> The memory for the returned array is invalidated whenever the title calls PartyManager::StartProcessingStateChanges() or [AuthenticateLocalUser()](partynetwork_authenticatelocaluser.md) returns success.
   
 ## Requirements  
   
@@ -51,6 +50,7 @@ The array is backed by the library's internal memory. The array is only valid un
 ## See also  
 [PartyNetwork](../partynetwork.md)  
 [PartyNetwork::AuthenticateLocalUser](partynetwork_authenticatelocaluser.md)  
-[PartyNetwork::RemoveLocalUser](partynetwork_removelocaluser.md)
+[PartyNetwork::RemoveLocalUser](partynetwork_removelocaluser.md)  
+[PartyLocalUserRemovedStateChange](../../../structs/partylocaluserremovedstatechange.md)
   
   

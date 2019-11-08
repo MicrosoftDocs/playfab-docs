@@ -5,8 +5,7 @@ description: Provides the volume setting for audio received from a target chat c
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/25/2019
-ROBOTS: NOINDEX,NOFOLLOW
+ms.date: 11/08/2019
 ---
 
 # PartyLocalChatControl::GetAudioRenderVolume  
@@ -29,7 +28,7 @@ PartyError GetAudioRenderVolume(
 The target chat control.  
   
 **`volume`** &nbsp; float*  
-*library-allocated output*  
+*output*  
   
 The volume.  
   

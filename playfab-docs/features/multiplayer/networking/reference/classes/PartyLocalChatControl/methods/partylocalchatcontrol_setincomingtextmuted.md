@@ -6,7 +6,6 @@ ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
 ms.date: 09/27/2019
-ROBOTS: NOINDEX,NOFOLLOW
 ---
 
 # PartyLocalChatControl::SetIncomingTextMuted  

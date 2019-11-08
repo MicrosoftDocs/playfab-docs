@@ -5,8 +5,7 @@ description: Gets the PlayFab Entity ID of the user associated with this chat co
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/26/2019
-ROBOTS: NOINDEX,NOFOLLOW
+ms.date: 11/08/2019
 ---
 
 # PartyChatControl::GetEntityId  
@@ -24,7 +23,7 @@ PartyError GetEntityId(
 ### Parameters  
   
 **`entityId`** &nbsp; [PartyString*](../../../typedefs.md)  
-*output*  
+*library-allocated output*  
   
 The output Entity ID.  
   

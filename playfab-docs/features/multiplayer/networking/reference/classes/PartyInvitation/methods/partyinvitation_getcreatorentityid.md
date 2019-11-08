@@ -5,8 +5,7 @@ description: Gets the PlayFab Entity ID of the user that created this invitation
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/26/2019
-ROBOTS: NOINDEX,NOFOLLOW
+ms.date: 11/08/2019
 ---
 
 # PartyInvitation::GetCreatorEntityId  
@@ -24,7 +23,7 @@ PartyError GetCreatorEntityId(
 ### Parameters  
   
 **`entityId`** &nbsp; [PartyString*](../../../typedefs.md)  
-*output, may return nullptr*  
+*library-allocated output, may return nullptr*  
   
 The output Entity ID of the user that created this invitation, or nullptr.  
   

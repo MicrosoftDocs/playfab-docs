@@ -5,8 +5,7 @@ description: Provides the transcription options associated with voice chat audio
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/25/2019
-ROBOTS: NOINDEX,NOFOLLOW
+ms.date: 11/08/2019
 ---
 
 # PartyLocalChatControl::GetTranscriptionOptions  
@@ -24,7 +23,7 @@ PartyError GetTranscriptionOptions(
 ### Parameters  
   
 **`options`** &nbsp; [PartyVoiceChatTranscriptionOptions*](../../../enums/partyvoicechattranscriptionoptions.md)  
-*library-allocated output*  
+*output*  
   
 Options associated with voice chat transcription, such as whether it should be enabled only for the local chat control, remote chat controls, or none.  
   

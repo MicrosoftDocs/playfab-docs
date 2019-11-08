@@ -5,8 +5,7 @@ description: Gets the device associated with this endpoint.
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/25/2019
-ROBOTS: NOINDEX,NOFOLLOW
+ms.date: 11/08/2019
 ---
 
 # PartyEndpoint::GetDevice  
@@ -24,7 +23,7 @@ PartyError GetDevice(
 ### Parameters  
   
 **`device`** &nbsp; [PartyDevice**](../../PartyDevice/partydevice.md)  
-*output*  
+*library-allocated output*  
   
 The output device associated with this endpoint.  
   
