@@ -99,13 +99,13 @@ At completion,
 PlayFab has pre-identified the simple, effective, and actionable set of metrics for analysis of experimentation results. These are tracked and categorized to measure impact on the acquisition, activation, retention, and revenue of the title. These are computed on player_logged_in and player_realmoney_purchase events. 
 
 The identified metrics are:  
-| **Type        | Metric                              | 
-| ------------- |:------------------------------------| 
-| Acquisition   | Average Login Per User              |
-| Activation    | Payer Conversion Rate               | 
-| Revenue       | Average Revenue Per Payer           |    
-| Revenue       | Average Transactions Count Per Payer|   
-| Retention     | Day N Retention (*N = 1, 2, 3, 5, 7, 14, 21 day)|
+| **Type**                  | **Metric**                                                                                             |
+| :-----------------------| :------------------------------------------------------------------------------------------------------|
+| Acquisition               | **Average Login Per User** |
+| Activation                | **Payer Conversion Rate**  |
+| Revenue                   | **Average Revenue Per Payer**|
+| Revenue                   | **Average Transactions Count Per Payer**                 |
+| Retention                 | **Day N Retention** (N = 1, 2, 3, 5, 7, 14, 21 day)|
 
 ## Experimentation APIs
 
@@ -115,14 +115,27 @@ PlayFab has scalable and integrable APIs for experimentation as below:
 > Note: API details and access will be provided on Public Preview 
 
 The APIs and associated operation details are:  
-| **API Name                         |      Operation               |
-|:-------------------------|:---------------------------------------------------------|
-| Create Experiment                  |                   It allows client to request creation of an experiment for the title. The experiment configuration gets defined as part of it, containing the experiment details, like target audience, start date, variant groups, and associated variables for orchestrating the change in experience (or treatment assignment). The treatment assignment can include virtually anything on client or PlayFab services |
-| Update Experiment                  | It allows client to request update in experiment configuration of an existing experiment for the title based on the experimentation ID |
-| Start Experiment                   | It allows client to request start of an existing experiment for the title based on the experiment ID. The client code gets orchestrated for the change in experience as per the treatment assignment given for the experimental study on the target audience |
-| Stop Experiment                    | It allows client to request stop of an existing running experiment for the title based on the experiment ID. The default client code (control variant) gets orchestrated for the change in experience for the entire audience |
-| Delete Experiment                  | It allows client to request delete of an experiment in completed/ stopped status for the title based on the experiment ID |
-| Get Experiment                     | Lists all the experiments and its details of drafted, running and completed an experiment for the title |
-| Get Treatment Assignment           | List the treatment assignments for a player for every running experiment in the title |
-| Get Experiment Scorecard           | Gives the latest scorecard result for an experiment of the title |
-| Get Title Scorecards               | Gives the latest scorecard results for all the experiments of the title |
+| **API Name**                  | **Operation**                                                                                             |
+| :-----------------------| :------------------------------------------------------------------------------------------------------|
+| **Create Experiment**               | It allows client to request creation of an experiment for the title. The experiment configuration gets defined as part of it, containing the experiment details, like target audience, start date, variant groups, and associated variables for orchestrating the change in experience (or treatment assignment). The treatment assignment can include virtually anything on client or PlayFab services|
+| **Update Experiment**                | It allows client to request update in experiment configuration of an existing experiment for the title based on the experimentation ID|
+| **Start Experiment**      | It allows client to request start of an existing experiment for the title based on the experiment ID. The client code gets orchestrated for the change in experience as per the treatment assignment given for the experimental study on the target audience|
+| **Stop Experiment**                 | It allows client to request start of an existing experiment for the title based on the experiment ID. The client code gets orchestrated for the change in experience as per the treatment assignment given for the experimental study on the target audience                 |
+| **Delete Experiment**                 | It allows client to request delete of an experiment in completed/ stopped status for the title based on the experiment ID|
+| **Get Experiment**                 | Lists all the experiments and its details of drafted, running and completed an experiment for the title|
+| **Get Treatment Assignment**                 | List the treatment assignments for a player for every running experiment in the title|
+| **Get Experiment Scorecard**                 | Gives the latest scorecard result for an experiment of the title|
+| **Get Title Scorecards**                 | Gives the latest scorecard results for all the experiments of the title|
+
+
+| **API Name    | Operation                              | 
+| ---------------------- |:-----------------------------------:| 
+| Create Experiment        | It allows client to request creation of an experiment for the title. The experiment configuration gets defined as part of it, containing the experiment details, like target audience, start date, variant groups, and associated variables for orchestrating the change in experience (or treatment assignment). The treatment assignment can include virtually anything on client or PlayFab services |
+| Update Experiment        | It allows client to request update in experiment configuration of an existing experiment for the title based on the experimentation ID |
+| Start Experiment         | It allows client to request start of an existing experiment for the title based on the experiment ID. The client code gets orchestrated for the change in experience as per the treatment assignment given for the experimental study on the target audience |
+| Stop Experiment          | It allows client to request stop of an existing running experiment for the title based on the experiment ID. The default client code (control variant) gets orchestrated for the change in experience for the entire audience |
+| Delete Experiment        | It allows client to request delete of an experiment in completed/ stopped status for the title based on the experiment ID |
+| Get Experiment           | Lists all the experiments and its details of drafted, running and completed an experiment for the title |
+| Get Treatment Assignment | List the treatment assignments for a player for every running experiment in the title |
+| Get Experiment Scorecard | Gives the latest scorecard result for an experiment of the title |
+| Get Title Scorecards     | Gives the latest scorecard results for all the experiments of the title |
