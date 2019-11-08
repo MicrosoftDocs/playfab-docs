@@ -28,10 +28,10 @@
     href: concepts-audio-troubleshooting.md
 - name: Accessibility
   items:
-  - name: Speech-to-text UX guidelines
-    href: party-speech-to-text-ux-guidelines.md
-  - name: Text-to-speech UX guidelines
+  - name: Text-to-speech and text input UX guidelines
     href: party-text-to-speech-ux-guidelines.md
+  - name: Speech-to-text and text display UX guidelines
+    href: party-speech-to-text-ux-guidelines.md
 - name: Xbox Live Helper library
   items:
   - name: Overview

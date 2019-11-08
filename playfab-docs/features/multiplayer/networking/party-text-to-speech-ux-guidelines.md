@@ -1,90 +1,85 @@
 ---
-title: PlayFab Party text-to-speech UX Guidelines
+title: PlayFab Party text-to-speech and text input UX Guidelines
 author: v-thopra
-description: Describes the PlayFab Party APIs, and focuses on text-to-speech implementation, requirements, and console and PC UI solutions.
+description: Describes the PlayFab Party APIs, and focuses on text input and text-to-speech implementation, requirements, and console and PC UI solutions.
 ms.author: v-thopra
 ms.date: 03/11/2019
 ms.topic: article
 ms.prod: playfab
 ROBOTS: NOINDEX,NOFOLLOW
-keywords: playfab, multiplayer, bumblelion, party, networking, UX, speech to text (STT), text-to-speech (TTS)
+keywords: playfab, multiplayer, bumblelion, party, networking, UX, speech-to-text, STT, text-to-speech, TTS
 ms.localizationpriority: medium
 ---
 
-# PlayFab Party text-to-speech (TTS) UX guidelines
+# PlayFab Party text-to-speech and text input UX guidelines
 
 > [!IMPORTANT]
 > This feature is currently in **Private Preview**.
 >
 > It is provided to give you an early look at an upcoming feature and to allow you to provide feedback while it is still in development.
 >
-> Access to this feature is restricted to select titles, with SDKs available for Windows 10 PCs and Xbox One. Interoperable SDKs for iOS and Android are available now. If you are interested in this feature, you can request access by submitting a ticket on [support.playfab.com](https://support.playfab.com/hc/en-us/requests/new).
+> Access to this feature is restricted to select titles, with SDKs available for Windows 10 PCs and Xbox One. Interoperable SDKs for iOS and Android are available now. If you are interested in this feature, you can request access by submitting a ticket on [support.playfab.com](https://support.playfab.com/hc/requests/new).
 
-The PlayFab Party service gives creators more options for delivering great in-game chat experiences. It provides a means for voice chat to be transcribed to text and for text input to be converted to synthesized voice.
+The PlayFab Party library gives game creators the power to engage more players through accessible game chat options. It provides a means for voice chat to be transcribed to text and for text input to be converted to synthesized voice. You can implement a custom UI solution for these features in your title. On Xbox and Windows, you can use platform APIs to implement the relevant UI.
 
-This topic is part one of a two-part series covering UX solutions for speech-to-text (STT) and text-to-speech (TTS) implementation.
+This topic is part one of a two-part series covering UX solutions for speech-to-text and text-to-speech implementation. Part one focuses on text-to-speech implementation, requirements, and console and PC UI solutions, while [part two](party-speech-to-text-ux-guidelines.md) focuses on speech-to-text implementation, requirements, and console and PC UI solutions.
 
-Part one focuses on text-to-speech implementation, requirements, console and PC UI solutions, while [part two](party-speech-to-text-ux-guidelines.md) focuses on speech-to-text implementation, requirements, and custom console and PC UI solutions.
+## Text-to-speech and speech-to-text scenarios
 
-## TTS/STT scenarios
+The following chart guides you through scenarios that players will experience when you enable speech-to-text and text-to-speech features. It outlines user impact for three stages of the gaming experience: initial setup, playing a game, and engaging in game chat.
 
-This chart guides you through scenarios that players will experience when you enable speech-to-text (STT) and text-to-speech (TTS) features. It outlines user impact for three stages of the gaming experience: initial setup, playing a game, and engaging in game chat.
-
-|**Experience Stage**|**SET-UP**                |**PLAY**                           |**CHAT**                 |                           |
+|**Experience Stage**|**Set up**                |**Play**                           |**Chat**                 |                           |
 | :------------------|:-------------------------|:----------------------------------|:------------------------|:--------------------------|
-|**Goal**            |**User enables Setting**  |**User enters a multiplayer game** |**User sends a message** |**User receives messages**
-|**Action**          |STT <br /> **Alternative for** Hearing voice replies |Launches game <br /> Enters MP lobby <br /> Overlay opens when game chat is initiated  |User speaks |User reads team's voice replies converted to text in a STT chat overlay
-| |TTS <br /> **Alternative for** Speaking voice replies |Launches game <br /> Enters MP lobby <br /> Game displays method for text input (keyboard, input field, etc) |User types replies using platform supported input methods <br /> Typed messages are converted to synthesized voice | User hears team member's voice replies
-| |UI Narration (in-game) <br /> **Alternative for** Reading in-game menus and text replies |User is guided by the Xbox OS synthesized voice to launch game <br /> Game uses the Speech Synthesis API to narrate menu options leading the user to the MP lobby |For text messaging systems: games use the Speech synthesis API to guide the user to launch the Xbox OS keyboard | For text messaging systems: Games use the Speech Synthesis API to narrate replies
-| |Narrator (Xbox OS) <br /> **Alternative for** Reading Xbox menus |User is guided by the Xbox OS synthesized voice to launch game |For text messaging systems: a virtual Keyboard is narrated as the user types a message | N/A |
+|**Goal**            |**User enables setting**  |**User enters a multiplayer game** |**User sends communication** |**User receives communication**
+|**Action**          |Speech-to-Text <br/><br/> Alternative for hearing voice replies |Launches game <br/><br/> Enters MP lobby <br/><br/> Overlay opens when game chat is initiated  |User speaks |User reads team's voice replies converted to text in a speech-to-text chat overlay
+| |Text-to-speech <br /><br/> Alternative for speaking voice replies |Launches game <br/><br/> Enters MP lobby <br/><br/> Game displays method for text input (keyboard, input field, etc) |User types replies using platform supported input methods <br/><br/> Typed messages are converted to synthesized voice | User hears team member's voice replies
+| |UI Narration (in-game) <br/><br/> Alternative for reading in-game menus and text replies |User is guided by the Xbox OS synthesized voice to launch game <br/><br/> Game uses the Speech Synthesis API to narrate menu options leading the user to the MP lobby |For text messaging systems: Games use the Speech synthesis API to guide the user to launch the Xbox OS keyboard | For text messaging systems: Games use the Speech Synthesis API to narrate replies
+| |Narrator (Xbox OS) <br/><br/> Alternative for reading Xbox menus |User is guided by the Xbox OS synthesized voice to launch game |For text messaging systems: A virtual Keyboard is narrated as the user types a message | N/A |
 
 ## Understanding the API
 
-### Text to speech
+### Text-to-speech
 
-1. **SetTextToSpeechProfile** (*regional voice selection*)
-The Title needs to set the regional voice/language for the user. This will determine the language, dialect, and gender of the transcribed voice output. Refer to the [Language support reference](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/language-support) for a complete list of supported languages and voice options.
+#### Types of text-to-speech
 
-2. **SynthesizeTextToSpeech**
-The text received will be synthesized and shared with the rest of the chat party. If a game calls **SynthesizedTextToSpeech**, synthesized audio data will appear as though it was captured "naturally" by the audio capture device (microphone) associated with user A (the sender). It's as if you were holding your microphone up to a computer that's talking on the user's behalf.
+Party supports two types of text-to-speech - **Voice Chat** and **Narration**. The Voice Chat type is for the scenario where a user elects to use text-to-speech audio as their speaking voice for voice chat communication. When this page discusses Party and text-to-speech, it's typically talking about this scenario. The Narration type is for the scenario where a user should have text-to-speech audio played to their audio output. This is primarily to support the "voice auditioning" scenario where a user compares audio between text-to-speech voice options to select the profile they prefer to use in Voice Chat scenarios. Although this can be used for arbitrary, game-defined narration scenarios, each platform typically provides a more flexible solution for in-game narration, such as the Speech Synthesis API on Xbox and Windows. Each method used to start a text-to-speech operation takes a [`PartySynthesizeTextToSpeechType`](reference/enums/partysynthesizetexttospeechtype.md) parameter that specifies which of the two text-to-speech scenarios is being used.
 
-3. **SendText**
-User A submits a text message (**std::string message**) to the chat group. The Title accepts text input from User A via a virtual keyboard, or other text input method. **SendText** sends this message to the chat group.
+#### Text-to-speech voice profiles
 
-4. **ChatTextReceived**
-The group receives the message. Their only property is the sender. The type determination is whether it's a text message or a transcribed message and that's done based on which event is fired.
+A text-to-speech voice profile defines the audio characteristics used to generate text-to-speech audio. Profiles vary by language, locale, and gender. There may be multiple options for each combination. Party supports all profiles supported by Azure Cognitive Services. Refer to the [Language support reference](https://docs.microsoft.com/azure/cognitive-services/speech-service/language-support) for a complete list of supported languages and voice options.
+  
+The profile options can also be enumerated by the Party library. The first step is to start an asynchronous operation that will populate the text-to-speech profiles via [`PartyLocalChatControl::PopulateAvailableTextToSpeechProfiles()`](reference/classes/PartyLocalChatControl/methods/partylocalchatcontrol_populateavailabletexttospeechprofiles.md). Once the operation completes, indicated by [`PartyManager::StartProcessingStateChanges()`](reference/classes/PartyManager/methods/partymanager_startprocessingstatechanges.md) providing a [`PartyPopulateAvailableTextToSpeechProfilesCompletedStateChange`](reference/structs/partypopulateavailabletexttospeechprofilescompletedstatechange.md), the profiles can be queried via [`PartyLocalChatControl::GetAvailableTextToSpeechProfiles()`](reference/classes/PartyLocalChatControl/methods/partylocalchatcontrol_getavailabletexttospeechprofiles.md).
 
-### Speech to Text
+#### Configuring the text-to-speech voice profile
 
-1. **SetTextToSpeechProfile** (*regional voice selection*)
-A speech profile can be specified when the chat control is created for the user. It could be changed mid-game (if the title supports it). It will determine the language, dialect and gender of the transcribed voice output. Refer to the [Language support reference](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/language-support) for a complete list of supported languages and voice options.
+Before any text-to-speech can be generated by the Party library, the title must configure the text-to-speech voice profile. An asynchronous option to configure the profile can be started via [`PartyLocalChatControl::SetTextToSpeechProfile()`](reference/classes/PartyLocalChatControl/methods/partylocalchatcontrol_settexttospeechprofile.md). The completion of the operation is indicated by `PartyManager::StartProcessingStateChanges()` providing a [`PartySetTextToSpeechProfileCompletedStateChange`](reference/structs/partysettexttospeechprofilecompletedstatechange.md).
 
-2. **SetTranscriptionRequested**
-The Title detects that User A turned the STT preference on.
+#### Synthesizing text-to-speech
 
-3. **VoiceChatTranscriptionReceived**
-When the system receives a chat voice message, it will automatically generate the transcribed text. The game will receive the transcription.
+Once the title has configured a text-to-speech voice profile, text can be synthesized to speech audio via [`PartyLocalChatControl::SynthesizeTextToSpeech()`](reference/classes/PartyLocalChatControl/methods/partylocalchatcontrol_synthesizetexttospeech.md). For the Voice Chat scenario, the audio data will appear as though it was captured "naturally" by the microphone associated with the user starting the text-to-speech operation. This is akin to the user holding the microphone to a computer that is talking on their behalf. For the Narration scenario, the audio data will be played to the user's audio output.
 
-4. a. Render the text (title-specific code)  
-   Transcribed text will be added to a 'queue'. It is up to the title to initiate the display of the transcription.
+Synthesizing text-to-speech is an asynchronous operation; the completion of the operation is indicated by `PartyManager::StartProcessingStateChanges()` providing a [`PartySynthesizeTextToSpeechCompletedStateChange`](reference/structs/partysynthesizetexttospeechcompletedstatechange.md).
 
-   b. **Windows::Xbox::UI::Accessibility::SendSpeechToTextString** (Xbox and Windows only)
-   Call the OS generated Chat UI. This feature is rendered by the Xbox or Windows OS.
+Although a voice profile must be configured before synthesizing text-to-speech, it isn't necessary to wait for the asynchronous operation started by `PartyLocalChatControl::SetTextToSpeechProfile()` to complete before calling `PartyLocalChatControl::SynthesizeTextToSpeech()`. If a profile operation is in progress, the text-to-speech operation will be queued and start after the profile operation completes.
 
-## Text-to-speech UX (TTS)
+### Text messaging
+
+In addition to text-to-speech, Party supports traditional text messaging. Although many titles tie text-to-speech to text messaging, that isn't a requirement - Party supports text-to-speech and text messaging as independent features. For more information, see [Understanding chat](concepts-chat.md).
+
+## Text-to-speech UX
 
 Text-to-speech enables a person to use the platform to send a synthesized voice stream to the active game chat participants. This is great for enabling the person to participate when there is no text chat-based system available, and all communication is active through the in-game voice chat.
 
 ### Discovery
 
-Users will find TTS and STT settings in the **Accessibility** section under **Settings**, via Xbox Home (console) or Xbox App (Windows 10). This is a toggle button that enables/disables this feature for all Xbox games specific to the user profile. For all other platforms, refer to their Accessibility guidelines for TTS/STT locations.
+For Xbox and Windows, users can find text-to-speech and speech-to-text settings in the **Accessibility** section under **Settings** in Xbox Home (Xbox console) or Xbox App (Windows 10). The settings are controlled via toggle buttons that enable or disable the features for all Xbox games specific to the user profile that integrate with the platform settings. For all other platforms, refer to their accessibility guidelines for text-to-speech and speech-to-text setting locations.
 
-- **UX recommendation**  
-  If your game chooses to add additional settings that are game specific only, then they should be placed inside your game. In general, accessibility options belong under the game’s settings/options menu. Ideally, settings are available as a dedicated button press and accessible from any screen, or at least, accessible from the Pause menu.
+> [!NOTE]
+> If your game chooses to add additional settings that are game specific only, then they should be placed inside your game. In general, accessibility options belong under the game’s settings/options menu. Ideally, settings should be available as a dedicated button press and accessible from any screen or, at least, the Pause menu.
 
 ### Text input/output options
 
-**A title is responsible for prompting and accepting text**. This could be a custom text-entry field or the platform-provided keyboard. The resulting entry can then be passed into PlayFab Party to be processed into a synthetic stream. That stream is sent to the other players in the chat session as voice. The receiving end would handle this voice stream in the same way they would another voice stream from a user speaking through a microphone.
+**A title is responsible for prompting and accepting text**. This could be a custom text entry field or the platform-provided keyboard. The resulting entry can then be passed into PlayFab Party to be processed into a synthetic stream. That stream is sent to the other players in the chat session as voice. The receiving end would handle this voice stream in the same way they would another voice stream from a user speaking through a microphone.
 
 1. **Console OS virtual keyboard** (*Xbox console example*)
 
@@ -95,20 +90,20 @@ Users will find TTS and STT settings in the **Accessibility** section under **Se
 
 2. **PC OS virtual keyboard**  (*Windows 10 example*)
 
-   The PlayFab Party APIs support receiving input across all platforms. However, text-input components are not provided in a consistent manner.
+   The PlayFab Party API supports receiving input across all platforms. However, text input components are not provided consistently across those platforms.
 
-   - On the console we have the virtual keyboard. It has its own input box, which accepts text and sends it back to the title.
-   - On Windows, games also have the virtual keyboard but it doesn't have an input box. This means that the title still must code a little rectangle to take in the keystrokes. That's a problem if a cross-play title doesn't support text chat and needs just the input rectangle for TTS.
+   - On the Xbox console, games can rely on the virtual keyboard. It has its own input box, which accepts text that is then provided to the title.
+   - On Windows, games can rely on the virtual keyboard with a caveat - it doesn't have an input box. This means that the game must provide a text input box to accept the keystrokes generated by the virtual keyboard. Even if the game does not support traditional text chat, text input may be required for text-to-speech support.
 
-   **UX recommendation (Windows)**
-   Cross-platform games that do not have text messaging in Windows 10 must provide a text-input box to take in keystrokes.
+   #### UX recommendation (Windows)
+   Cross-platform games that do not support traditional text messaging must provide a text input box to accept keystrokes to support text-to-speech.
 
    ![Windows - Input Box](media/windows-input-box.jpg)
 
 3. **A game-provided custom keyboard** (*console example*)
 
    > [!NOTE]
-   > The phrases used here are relevant to the game.
+   > The phrases used here specific to the sample game being shown.
 
    - Games have full control over visibility.
    - Games can enhance the keyboard to include phrases for quick replies.
@@ -151,7 +146,7 @@ In the second image, a pop-up display offers a list of ten replies. A user can s
 
 ### Controller schematic for mapping replies
 
-Some games already provide custom controller mapping for a variety of gameplay preferences. This example proposes an alternative controller schema for TTS/STT. Users can select from a list of predefined replies and map to four D-pad directions. The left and right bumpers scroll through categories; the Y button launches a virtual keyboard for custom replies.
+Some games already provide custom controller mapping for a variety of gameplay preferences. This example proposes an alternative controller schema for text-to-speech and speech-to-tet. Users can select from a list of predefined replies and map to four D-pad directions. The left and right bumpers scroll through categories; the Y button launches a virtual keyboard for custom replies.
 
 During a game session, a user can swap control schemas with a dedicated button press (assigned by the game). In this case, the B button exits this mode.
 
@@ -184,11 +179,11 @@ If Quick Chat satisfies a need repeatedly, a habit can be formed. Consider ways 
    This is mostly to keep cognitive load low. Users should be able to read an entire message effortlessly.
 
    - Make replies relevant to gameplay and its category.
-   - Use short phrases, and one-syllable words, that are most commonly used in your game.
+   - Use short phrases and one-syllable words that are most commonly used in your game.
    - Use words that you can instantly visualize.
 
 4. **Use humor**
-   *Banter* is a common form of taunting that addresses players in a friendly manner. This is different from *griefing*, where, all too often, users are harassed. If replies are clever, relevant, and varied, some users may not resort to inappropriate choices.
+   *Banter* is a common form of taunting that addresses players in a friendly manner. This is different from *griefing*, where all too often, users are harassed. If replies are clever, relevant, and varied, some users may not resort to inappropriate choices.
 
 5. **Be relative to skill and progress**
 
@@ -196,11 +191,11 @@ If Quick Chat satisfies a need repeatedly, a habit can be formed. Consider ways 
    - Surface suggested replies that a user can communicate to other team members. These options would be contextual to current game activity. For example, "Anyone have an axe to beat this zombie?"
 
 6. **Focus on the emotions**
-   PlayFab Party is a vehicle for deepening player engagement through relationships. Replies that communicate certain target emotions can help make their experience more relatable.
+   Replies that communicate certain target emotions can help make their experience more relatable.
 
 ## Conclusion
 
-PlayFab Party TTS and STT APIs are a highly effective feature for including a wider range of users to a game and gaming conversations. The more gamers engage and develop relationships, the more likely they are to continue playing. The APIs and presentation are simple. This guidance will help you ensure that the user experience is too.
+PlayFab Party text-to-speech and speech-to-text APIs are highly effective features for including a wider range of users in a game and gaming conversations. The more gamers engage and develop relationships, the more likely they are to continue playing. This guidance will help ensure the best possible user experience.
 
 ## Resources
 
@@ -212,13 +207,13 @@ PlayFab Party TTS and STT APIs are a highly effective feature for including a wi
 
 ### Text-to-speech narration menu guidelines
 
-- [Speech interactions](https://msdn.microsoft.com/windows/uwp/input-and-devices/speech-interactions)
-- [Speech synthesis API (Windows)](https://msdn.microsoft.com/en-us/library/windows/apps/windows.media.speechsynthesis.aspx)
+- [Speech interactions](https://docs.microsoft.com/windows/uwp/design/input/speech-interactions)
+- [Speech synthesis API (Windows)](https://docs.microsoft.com/uwp/api/Windows.Media.SpeechSynthesis)
 
-### PlayFab Party TTS/STT UX series
+### PlayFab Party text-to-speech and speech-to-text UX series
 
-- Part 1: [PlayFab Party Speech-to-Text (Custom) UX Guidance](party-speech-to-text-ux-guidelines.md)
-- Part 2: **PlayFab Party Text-to-Speech UX Guidance**
+- Part 1: PlayFab Party text-to-speech and text input UX Guidance
+- Part 2: [PlayFab Party speech-to-text and text display UX Guidance](party-speech-to-text-ux-guidelines.md)
 
 ### SDK documentation
 

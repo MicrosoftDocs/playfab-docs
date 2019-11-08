@@ -1,17 +1,17 @@
 ---
-title: PlayFab Party speech-to-text UX guidelines
+title: PlayFab Party speech-to-text and text display UX guidelines
 author: v-thopra
-description: Describes the PlayFab Party APIs, and focuses on speech-to-text implementation, requirements, and custom console and PC UI solutions.
+description: Describes the PlayFab Party APIs, and focuses on speech-to-text and text display implementation, requirements, and custom console and PC UI solutions.
 ms.author: v-thopra
 ms.date: 03/11/2019
 ms.topic: article
 ms.prod: playfab
 ROBOTS: NOINDEX,NOFOLLOW
-keywords: playfab, multiplayer, bumblelion, party, networking, UX, speech to text (STT), text-to-speech (TTS)
+keywords: playfab, multiplayer, bumblelion, party, networking, UX, speech-to-text, STT, text-to-speech, TTS
 ms.localizationpriority: medium
 ---
 
-# PlayFab Party speech-to-text (STT) UX guidelines
+# PlayFab Party speech-to-text and text display UX guidelines
 
 > [!IMPORTANT]
 > This feature is currently in **Private Preview**.
@@ -20,63 +20,44 @@ ms.localizationpriority: medium
 >
 > Access to this feature is restricted to select titles, with SDKs available for Windows 10 PCs and Xbox One. Interoperable SDKs for iOS and Android are available now. If you are interested in this feature, you can request access by submitting a ticket on [support.playfab.com](https://support.playfab.com/hc/en-us/requests/new).
 
-The PlayFab Party API gives gamers more options for engaging with and enjoying game chat. It provides a means for voice chat to be transcribed to text and for text input to be converted to synthesized voice. Titles can now surface UI, via either the Xbox or Windows OS or a custom solution within their title.
+The PlayFab Party library gives game creators the power to engage more players through accessible game chat options. It provides a means for voice chat to be transcribed to text and for text input to be converted to synthesized voice. You can implement a custom UI solution for these features in your title. On Xbox and Windows, you can use platform APIs to implement the relevant UI.
 
-This document is part two of a two-part series covering UX solutions for speech-to-text (STT) and text-to-speech (TTS) implementation.
+This document is part two of a two-part series covering UX solutions for speech-to-text and text-to-speech implementation. [Part one](party-text-to-speech-ux-guidelines.md) focuses on text-to-speech implementation, requirements, and console and PC UI solutions, while this topic focuses on speech-to-text implementation, requirements, and console and PC UI solutions.
 
-[Part one](party-text-to-speech-ux-guidelines.md) focuses on text-to-speech implementation, requirements, console and PC UI solutions, while this topic focuses on speech-to-text implementation, requirements, and custom console and PC UI solutions.
-
-## TTS/STT scenarios
+## Text-to-speech and speech-to-text scenarios
 
 The following chart guides you through scenarios that players will experience when you enable speech-to-text and text-to-speech features. It outlines user impact for three stages of the gaming experience: initial setup, playing a game, and engaging in game chat.
 
-|**Experience Stage**|**SET-UP**                |**PLAY**                           |**CHAT**                 |                           |
+|**Experience Stage**|**Set up**                |**Play**                           |**Chat**                 |                           |
 | :------------------|:-------------------------|:----------------------------------|:------------------------|:--------------------------|
-|**Goal**            |**User enables Setting**  |**User enters a multiplayer game** |**User sends a message** |**User receives messages**
-|**Action**          |STT <br/> **Alternative for** Hearing voice replies |Launches game <br /> Enters MP lobby <br /> Overlay opens when game chat is initiated  |User speaks |User reads team's voice replies converted to text in a STT chat overlay
-| |TTS <br /> **Alternative for** Speaking voice replies |Launches game <br /> Enters MP lobby <br /> Game displays method for text input (keyboard, input field, etc) |User types replies using platform supported input methods <br /> Typed messages are converted to synthesized voice | User hears team member's voice replies
-| |UI Narration (in-game) <br /> **Alternative for** Reading in-game menus and text replies |User is guided by the Xbox OS synthesized voice to launch game <br /> Game uses the Speech Synthesis API to narrate menu options leading the user to the MP lobby |For text messaging systems: games use the Speech synthesis API to guide the user to launch the Xbox OS keyboard | For text messaging systems: Games use the Speech Synthesis API to narrate replies
-| |Narrator (Xbox OS) <br /> **Alternative for** Reading Xbox menus |User is guided by the Xbox OS synthesized voice to launch game |For text messaging systems: a virtual Keyboard is narrated as the user types a message | N/A |
+|**Goal**            |**User enables setting**  |**User enters a multiplayer game** |**User sends communication** |**User receives communication**
+|**Action**          |Speech-to-Text <br/><br/> Alternative for hearing voice replies |Launches game <br/><br/> Enters MP lobby <br/><br/> Overlay opens when game chat is initiated  |User speaks |User reads team's voice replies converted to text in a speech-to-text chat overlay
+| |Text-to-speech <br /><br/> Alternative for speaking voice replies |Launches game <br/><br/> Enters MP lobby <br/><br/> Game displays method for text input (keyboard, input field, etc) |User types replies using platform supported input methods <br/><br/> Typed messages are converted to synthesized voice | User hears team member's voice replies
+| |UI Narration (in-game) <br/><br/> Alternative for reading in-game menus and text replies |User is guided by the Xbox OS synthesized voice to launch game <br/><br/> Game uses the Speech Synthesis API to narrate menu options leading the user to the MP lobby |For text messaging systems: Games use the Speech synthesis API to guide the user to launch the Xbox OS keyboard | For text messaging systems: Games use the Speech Synthesis API to narrate replies
+| |Narrator (Xbox OS) <br/><br/> Alternative for reading Xbox menus |User is guided by the Xbox OS synthesized voice to launch game |For text messaging systems: A virtual Keyboard is narrated as the user types a message | N/A |
 
 ## Understanding the API
 
 ### Speech-to-text
 
-1. **SetTextToSpeechProfile** (*regional voice selection*)
-   A speech profile can be specified when the chat control is created for the user. It could be changed mid-game (if the title supports it). It will determine the language, dialect, and gender of the transcribed voice output. Refer to the [Language support reference](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/language-support) for a complete list of supported languages and voice options.
+#### Enabling transcription
 
-2. **SetTranscriptionRequested**
-   The Title detects that User A turned the STT preference on.
+Transcription of incoming audio for the user associated with a local chat control can be enabled by calling [`PartyLocalChatControl::SetTranscriptionOptions()`](reference/classes/PartyLocalChatControl/methods/partylocalchatcontrol_settranscriptionoptions.md). When the operation completes, a [`PartySetTranscriptionOptionsCompletedStateChange`](reference/structs/partysettranscriptionoptionscompletedstatechange.md) will be provided by [`PartyManager::StartProcessingStateChanges()`](reference/classes/PartyManager/methods/partymanager_startprocessingstatechanges.md) indicating whether the asynchronous operation succeeded.
 
-3. **VoiceChatTranscriptionReceived**
-   When the system receives a chat voice message, it will automatically generate the transcribed text. The game will receive the transcription.
+#### Receiving transcriptions
 
-4. a. Render the text (Title-specific code)
-   Transcribed text will be added to a 'queue'. It is up to the Title to initiate the display of the transcription.
+When audio is sent to a chat control associated with a local user that has enabled transcription, the audio will be transcribed. Each transcription will be indicated by a [`PartyVoiceChatTranscriptionReceivedStateChange`](reference/structs/partyvoicechattranscriptionreceivedstatechange.md) provided by `PartyManager::StartProcessingStateChanges()`. The speaker, receiver(s), and transcription text will be specified in the state change. Additionally, the state change will specify whether the transcription text is a `Hypothesis` or `Final` phrase. A `Hypothesis` phrase is a snapshot in the transcription process that indicates an iterative refinement of the transcription text. These can optionally be used to improve the perceived responsiveness of the transcription process. A `Final` phrase represents the end of the transcription process after a user has completed a sentence or phrase.
 
-   b. **Windows::Xbox::UI::Accessibility::SendSpeechToTextString** (Xbox and Windows only)
-   Call the OS generated Chat UI. This feature is rendered by the Xbox or Windows OS.
+#### Displaying transcriptions
 
-### Text-to-speech
-
-1. **SetTextToSpeechProfile** (*regional voice selection*)
-   The Title needs to set the regional voice/language for the user. This will determine the language, dialect, and gender of the transcribed voice output. Go to the [Language support reference](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/language-support) for a complete list of supported languages and voice options.
-
-2. `SynthesizeTextToSpeech`  
-   The text received will be synthesized and shared with the rest of the chat party. If a game calls `SynthesizedTextToSpeech`, synthesized audio data will appear as though it was captured "naturally" by the audio capture device (microphone) associated with user A (the sender). It’s as if you were holding your microphone up to a computer that’s speaking on the user’s behalf.
-
-3. `SendText`  
-   User A submits a text message (`std::string message`) to the chat group. The Title accepts text input from User A via a virtual keyboard, or other text input method. `SendText` sends this message to the chat group.
-
-4. **ChatTextReceived**
-   The group receives the message. Their only property is the sender. The type determination is whether it's a text message or a transcribed message and that's done based on which event is fired.
+When transcription text is received, it should be displayed according to the following UX design guidelines. The [Windows::Gaming::UI::GameChatOverlay](https://docs.microsoft.com/uwp/api/windows.gaming.ui.gamechatoverlay) or `Windows::Xbox::UI::Accessibility` API can be used on Windows or Xbox, respectively, to use the default system text chat UI that has been designed to comply with these guidelines.
 
 ## Discovery
 
-Users will find TTS and STT settings in the **Accessibility** section under **Settings**, via Xbox Home (console) or Xbox App (Windows 10). For all other platforms, refer to their Accessibility guidelines for TTS/STT locations.
+For Xbox and Windows, users can find text-to-speech and speech-to-text settings in the **Accessibility** section under **Settings** in Xbox Home (Xbox console) or Xbox App (Windows 10). The settings are controlled via toggle buttons that enable or disable the features for all Xbox games specific to the user profile that integrate with the platform settings. For all other platforms, refer to their accessibility guidelines for text-to-speech and speech-to-text setting locations.
 
 > [!NOTE]
-> In general, accessibility options belong under the game’s settings/options menu. Ideally, settings are available as a dedicated button and accessible from any screen, or at least from the Pause menu.
+> If your game chooses to add additional settings that are game specific only, then they should be placed inside your game. In general, accessibility options belong under the game’s settings/options menu. Ideally, settings should be available as a dedicated button press and accessible from any screen or, at least, the Pause menu.
 
 ## UX guidance for creating a custom conversation window
 
@@ -88,13 +69,13 @@ Subtitles and voice chat transcription tackle a similar challenge: display rapid
 
 1. High contrast between text and background.
 2. Avoid presenting too much text on-screen at one time.
-3. Use a large enough text size, for the screen size.
+3. Use a large enough text size for the screen size.
 
 #### Good practices
 
-1. Ensure users can find and enable TTS settings before engaging in game chat.
+1. Ensure users can find and enable text-to-speech settings before engaging in game chat.
 2. Avoid clashes with other UI elements.
-3. When stacking multiple replies, add newest strings from the bottom.
+3. When stacking multiple replies, add newest strings at the bottom.
 4. Distinguish between speakers.
 5. Use a clear, readable font.
 6. Allow the conversation window and content to be customized by the user.
@@ -107,12 +88,12 @@ This section will walk through a method for determining the best display, based 
 
 - The user's chat behavior.
 - Varying UI layouts using game chat (lobbies, game setup, game session).
-- TCUI impact (for example, overlays, toasts, virtual keyboard).
+- Title-callable UI (TCUI) impact (for example, overlays, toasts, virtual keyboard).
 - Presentation requirements such as fonts and formatting.
 
 #### Users' chat behavior
 
-Different game features will drive varying chat density. For example - the game lobby during the game session, and end-of-game wrap-up are areas where game chat is engaged. However, the types of discussions change the objectives of the screen. Knowing the type of discussion can help gauge whether a conversation window is critical or optional to gameplay needs.
+Different game features will drive varying chat density. For example - the game lobby during the game session, and end-of-game wrap-up are times when game chat is engaged. However, the types of discussions change the objectives of the screen. Knowing the type of discussion can help gauge whether a conversation window is critical or optional to gameplay needs.
 
 ![Users Chat](media/users-chat.jpg)
 
@@ -125,29 +106,26 @@ Discussion types
 
 #### Chat length: minimum requirements
 
-Discussion types in game chat influence a wide range of reply types by a single user (from greetings/confirmation to instructional/descriptive). Once you've determined a primary discussion type for each screen, you can begin to make some broad assumptions about the type and length of replies.
+Discussion types in game chat influence a wide range of reply types by a single user (from short greetings and confirmations to longer instructional and descriptive replies). Once you've determined a primary discussion type for each screen, you can begin to make some broad assumptions about the type and length of replies.
 
-Researching game chat activity for your game will deliver the most accurate results. It requires identifying common patterns in multiple user conversations. One solution is to conduct a user-research test, using the STT functionality inside your game to capture the UR data of participants. Another suggestion is to watch Twitch streams of similar genres and track conversation patterns.
+Researching game chat activity for your game will deliver the most accurate results. It requires identifying common patterns in multiple user conversations. One solution is to conduct a user-research test, using the speech-to-text functionality inside your game to capture the user-research data of participants. Another suggestion is to watch game streams of similar genres and track conversation patterns.
 
 That data can then be applied to this simple strategy for determining conversation length:
 
-1. Reply frequency
-   Determine how many replies were exchanged before a lull, and then average those replies to arrive at a final number. *Example: Two players chatting averaged five replies before a lull occurred.*
+* **Reply frequency** - Determine how many replies were exchanged before a lull, and then average those replies to arrive at a final number. *Example: Two players chatting averaged five replies before a lull occurred.*
 
-2. Reply length
-   Determine the average word and character count of a single reply. *Example: A single reply averaged 10 words and 35 characters (with spaces) per reply.*
+* **Reply length** - Determine the average word and character count of a single reply. *Example: A single reply averaged 10 words and 35 characters (with spaces) per reply.*
 
-3. Formatting
-   The STT APIs will support **reply origin** (gamertag) and **message type** (voice, text). Combine spoken characters and unspoken characters to arrive at your total character count.
+* **Formatting** - Each chat-related state change includes useful information to help visualize it. The lengths of each field need to be taken into account when determining formatting. In the following example, the **message type**, i.e. whether the message is a result of speech-to-text or text message, can be inferred from the state change type. A `PartyVoiceChatTranscriptionReceivedStateChange` will always indicate text that is a result of voice input, and a [`PartyChatTextReceivedStateChange`](reference/structs/partychattextreceivedstatechange.md) will always indicate text that is a result of text input. The **reply origin**, i.e. who sent the communication, and the **reply** itself can be determined by the fields within each state change.
 
 ![Example - Numerical Value = Character Count](media/numerical-value-equals-character-count.png)
 
 #### Font size and type
 
-Choosing a legible font is important for players who are reading any on-screen text UI, and some of whom might have low vision.
+Choosing a legible font is important for players who are reading any on-screen text UI, some of whom might have low vision.
 
 > [!NOTE]
-> Verdana is the most legible font that Microsoft ships. Even better than Verdana by itself, is to present the font with high contrast (full black on full white or vice-versa) and at large sizes. Size, contrast, and letterform are the three biggest factors in legibility (in that priority order).
+> Verdana is the most legible font that Microsoft ships. Even better than Verdana by itself is to present the font with high contrast (full black on full white or vice-versa) and at large sizes. Size, contrast, and letterform are the three biggest factors in legibility (in that priority order).
 
 *Example: Different typefaces of the same size can vary in readability.*
 
@@ -171,7 +149,7 @@ Now that you have minimum text requirements for the conversation window, you can
 
 #### Positioning: relative vs. fixed
 
-Aligning the conversation window to a grid format provides a very straightforward set of inputs that can scale regardless of the screen resolution. For example, the Xbox OS STT UI references nine quadrants (Left/Top, Left/Center, Left/Bottom, Middle/Top, and so on) for positioning.
+Aligning the conversation window to a grid format provides a very straightforward set of inputs that can scale regardless of the screen resolution. For example, the Xbox OS speech-to-text UI references nine quadrants (Left/Top, Left/Center, Left/Bottom, Middle/Top, and so on) for positioning.
 
 If your game outputs to multiple screen resolutions (4K, PC), you won't have to worry about scaling 1080p X,Y pixel values to a different screen size.
 
@@ -184,7 +162,7 @@ Consider referencing multiple positions to accommodate varying screen complexity
 - Avoid hiding critical details. (See Note)
 
 > [!NOTE]
-> If the conversation window inhibits game activity and prevents STT users from achieving the same objectives as all users, it defeats the purpose of this feature.
+> Take care to position the conversation window so that it doesn't inhibit game activity. This will ensure speech-to-text users can enjoy a comparable experience as other users.
 
 ![Users Chat](media/users-chat.jpg)
 
@@ -199,36 +177,36 @@ There may be screens where there simply isn't room to accommodate a conversation
 ### Solutions for game UI and conversation window conflicts
 
 1. **The user should be able to disable the feature via the OS**.  
-   Ideally, the user has the option to leave the game and turn the STT option on or off, by using the Ease-of-Access settings.
+   Ideally, the user has the option to leave the game and turn the speech-to-text option on or off, by using the Ease-of-Access settings.
 
    - **UI impact: NONE**
    - **UX impact: POOR**
 
-   *Example: Disabling the STT setting via OS Settings. (This shows a critical path for the Xbox One console)*
+   *Example: Disabling the speech-to-text setting via OS Settings. (This shows a critical path for the Xbox One console)*
 
    ![Critical Path for the Xbox One Console](media/critical-path-for-xbox-1-console.png)
 
 2. **The game provides a method for users to minimize the window**.
 
-   Having an STT setting to minimize or move the window offers added flexibility for the designer and the user.
+   Having a speech-to-text setting to minimize or move the window offers added flexibility for the designer and the user.
+
+   - **UI impact: MODERATE**
+     Requires adding a minimize/maximize chat window button to an in-game settings menu. We recommend that this option appear only when speech-to-text is enabled.
 
    - **UX impact: GOOD**
      This is a 3-click solution where settings menus are surfaced in the game.
 
-   - **UI impact: MODERATE**
-     Requires adding a minimize/maximize chat window button to an in-game settings menu. We recommend that this option appear only when the STT is detected as enabled.
-
-   *Example: Minimize/maximize STT window via in-game Options menu (Xbox Console/PC critical path*
+   *Example: Minimize/maximize speech-to-text window via in-game Options menu (Xbox Console/PC critical path*
 
    ![Critical Path for Xbox Console/PC](media/critical-path-xbox-console-pc.png)
 
-   *Console example: Add an STT setting in the Pause menu.*
+   *Console example: Add a speech-to-text setting in the Pause menu.*
 
-   ![Console Example - Add STT setting in the Pause menu](media/console-example-add-stt-in-pause-menu.png)
+   ![Console Example - Add speech-to-text setting in the Pause menu](media/console-example-add-stt-in-pause-menu.png)
 
-   *PC example: Add an STT setting in the Pause menu.*
+   *PC example: Add a speech-to-text setting in the Pause menu.*
 
-   ![PC Example - Add STT setting in the Pause menu](media/pc-example-add-stt-in-pause-menu.png)
+   ![PC Example - Add speech-to-text setting in the Pause menu](media/pc-example-add-stt-in-pause-menu.png)
 
    Enabling users to minimize or maximize the conversation window puts the choice in their hands. The game doesn't have to try to avoid compromising critical real estate.
 
@@ -236,7 +214,7 @@ There may be screens where there simply isn't room to accommodate a conversation
 
    For game screens that do require immediate responses, or when point-and-click (PC) is not an option, a button or key command can be directly mapped.
 
-   *Console example: A button is mapped to toggle the display ON/OFF, and annotated in the legend.*
+   *Console example: A button is mapped to toggle the display ON/OFF and is annotated in the legend.*
 
    ![Capture the Flag Game - Console toggle for Chat](media/capture-the-flag-game-console-toggle-chat.jpg)
 
@@ -248,8 +226,8 @@ There may be screens where there simply isn't room to accommodate a conversation
 
 - Conversation continues to be tracked while the window is minimized.
 - The user can expand and see the latest replies. (The user does not see a history of missed replies.)
-- This option appears when a user profile/STT setting is detected as enabled.
-- This setting would not override the OS Profile/STT setting.
+- This option appears when a user profile's speech-to-text setting is detected as enabled.
+- This setting would not override the OS Profile's speech-to-text setting.
 
 ### Display frequency
 
@@ -257,16 +235,16 @@ Chat activity will fluctuate between players during game sessions. There is no v
 
 Automatically close the window when chat has been inactive for a set period.
 
-*Example: The STT window closes after 15s of inactivity. This number is based on the time it would take a user to read one message of 280 characters.*
+*Example: The speech-to-text window closes after 15s of inactivity. This number is based on the time it would take a user to read one message of 280 characters.*
 
-![STT Window](media/stt-window.png)
+![Speech-to-text Window](media/stt-window.png)
 
 > [!NOTE]
 > It's worth testing various settings to ensure that opening and closing a window isn't too distracting on a game screen with a lot of activity.
 
 ### Scrolling
 
-During ongoing conversations, the window must facilitate a view of most recent replies. Most recent replies are displayed at the bottom of the replies, and scroll up.
+During ongoing conversations, the window must facilitate a view of most recent replies. Most recent replies are displayed at the bottom of the replies and scroll up.
 
 > [!NOTE]
 > Auto-scrolling is a solution that makes managing conversations easier for both developers and users. It comes closest to mimicking fluid conversation. The less effort a user has to make to manage the view, the more time they have to focus on gameplay. A manual scrollbar would require shifting controller focus, which can be disruptive during active gameplay.
@@ -282,9 +260,9 @@ It is game information that also uses text and frames. A user could confuse the 
 A game must determine when the conversation window remains active (while a user is multi-tasking) or when it should close (for example, when a user exits a chat session). Keep in mind that this window represents a live chat conversation and is not to be confused with instant messaging (IM). For example, if a user walks away from their console or pauses a game, the conversation will continue but they'll have missed replies that occurred before they return.
 
 > [!NOTE]
-> UX recommendation: Keep the window active when a game is constrained or paused. Close the window when the game is killed.
+> UX recommendation: Keep the window active when a game is constrained or paused. Close the window when the game exits.
 
-## TCUI (title-callable UI)
+## Title-callable UI (TCUI)
 
 *Console example: The Xbox One Guide is TCUI and has a transparent overlay that dims the screen.*
 
@@ -296,9 +274,7 @@ It's common for a platform’s system UI to be the ‘top’ visible layer of an
 
 ## Conclusion
 
-The PlayFab Party TTS and STT APIs are highly effective features for including a wider range of users in a game and gaming conversations. The more gamers engage and develop relationships, the more likely they are to continue playing.
-
-The APIs and presentation are simple. This guidance will help you ensure that the user experience is too.
+PlayFab Party text-to-speech and speech-to-text APIs are highly effective features for including a wider range of users in a game and gaming conversations. The more gamers engage and develop relationships, the more likely they are to continue playing. This guidance will help ensure the best possible user experience.
 
 ## Resources
 
@@ -311,13 +287,13 @@ The APIs and presentation are simple. This guidance will help you ensure that th
 
 ### Text-to-speech narration menu guidelines
 
-- [Speech interactions](https://msdn.microsoft.com/windows/uwp/input-and-devices/speech-interactions)
-- [Speech synthesis API (Windows)](https://msdn.microsoft.com/en-us/library/windows/apps/windows.media.speechsynthesis.aspx)
+- [Speech interactions](https://docs.microsoft.com/windows/uwp/design/input/speech-interactions)
+- [Speech synthesis API (Windows)](https://docs.microsoft.com/uwp/api/Windows.Media.SpeechSynthesis)
 
-### PlayFab Party TTS/STT UX series
+### PlayFab Party text-to-speech and speech-to-text UX series
 
-- Part 1: PlayFab Party speech-to-text (Custom) UX guidance
-- Part 2: [PlayFab Party text-to-speech UX guidance](party-text-to-speech-ux-guidelines.md)
+- Part 1: [PlayFab Party text-to-speech and text input UX guidance](party-text-to-speech-ux-guidelines.md)
+- Part 2: PlayFab Party speech-to-text and text display UX guidance
 
 ### SDK documentation
 
