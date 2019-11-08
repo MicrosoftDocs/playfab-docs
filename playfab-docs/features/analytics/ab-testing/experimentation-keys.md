@@ -154,3 +154,23 @@ To build an experimentation culture, introduce reliable and repeatable processes
 -	**Practice good experiment hygiene**
 
     Create a standard protocol for every experiment your team runs. It helps to keep experiments’ results accurate and meaningful, regardless of who is controlling the experiment
+
+| **Experimentation**                            |**Planning Process Recommended**                    | 
+|:--------------------------------------------- |:-----------------------------------------------| 
+| **Stages**                                      | **Description**                              |
+| **Opportunity Analysis**                               |
+| Investigation                               | Experiment owner investigate and analyzes A/B experimentation opportunities. Prioritize the experiments  |
+| **Experiment Design**                               |
+| Scoping                                 | Start experiment design. Identify goal metric(s) to formulate a hypothesis  |
+| Feature Design Review                                 | Finalize design for feature/ experience change. As part of experiment, it is introduced to a treatment variant group via variables   |
+| Coding                                 | Implement the feature change |
+| Prod Deployment                                 | Review the experiment design. Deploy the associated code   |
+| **Experiment Creation**                               |
+| Experiment Configuration                                  | Create an experiment in PlayFab |
+| **Experiment Execution**                               |
+| Run A/B Experiment                                  | Experiment starts as per the experiment configuration. Experiences are orchestrated to the targeted audience. Telemetry is collected and statistical computations are performed |
+| **Experiment Analysis**                               |
+| Evaluate Results                               | Evaluate the results via Scorecards |
+| Make Launch Decision                             | Stakeholders evaluate the launch decision |
+| **Roll-out or roll-back**                               |
+| Wrap-up Experiment                               | Winning variant is rolled up to a 100% of audience  |
