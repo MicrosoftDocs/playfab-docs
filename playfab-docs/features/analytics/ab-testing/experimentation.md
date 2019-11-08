@@ -35,7 +35,7 @@ PlayFab’s Experiment is a tailored solution for A/B experimentation in gaming.
 
 ### PlayFab Experimentation at a Glance
 
-![Screenshot of Experimentation at a Glance.](media/tutorials/game-manager-new-ab-test.png/playFab-Experimentation-at-a-glance.png)
+![Screenshot of Experimentation at a Glance](media/tutorials/game-manager-new-ab-test.png/playFab-Experimentation-at-a-glance.png "Experimentation at a Glance")
 
 PlayFab’s Experiments enables to run multiple concurrent experiments in random and controlled manner. In the process, 
 - A unique identifier for each running experiment’s variant groups called variant ID is tagged to each player profile. These variant IDs enables you to assign different treatments via any client or server-side code
@@ -62,5 +62,29 @@ From the Game Manager,
   * With Save Experiment the experiment will be in Drafted status in the manage experiment page
   * With Save and Run Experiment the experiment will be in Running status in the manage experiment page 
 
+![Screenshot of Experimentation at a Glance](media/tutorials/game-manager-new-ab-test.png/create_edit-an-experiment.JPG "Create an Experiment")
 
-![Screenshot of Experimentation at a Glance.](media/tutorials/game-manager-new-ab-test.png/create_edit-an-experiment.JPG)
+### Manage Experiment
+
+One can modify an experiment when it is in drafted status. Each field is modifiable. Although, for any experiment in running state, no modification is possible.
+
+- To start the experiment, select the desired experiment from the list of drafted experiment and click ‘Start’
+  * The experience/ behavior in each variant of experiment is in-flighted to the qualifying traffic immediately at random 
+  * A few other actions can be taken in an experiment, like, ‘Clone’, ‘Rerun’, ‘Delete’. The applicability and availability of the option is based on the state the experiment
+
+![Screenshot of Experimentation at a Glance](media/tutorials/game-manager-new-ab-test.png/manage-an-experiment.JPG "Manage an Experiment")
+
+### Analyze Experiment  
+
+Experiments results will be showed in a scorecard which is generated in a regular and near-real-time cadence. The cadence is 12 hours, 1 day, 2 day, 3 day, 5 day, 7 day, 14 day, 21 day.
+
+From the manage experiment page, click on the **View Scorecard** link 
+
+At the run, 
+ * If an issue of Statistical Ratio Mismatch (SRM) is identified, then it is flagged to the user for investigation
+  * SRM indicates sampling bias in the randomization which leads to the options of resolving bugs (if any), wait till certain duration of the experiment for auto-resolution or immediately stop the experiment based on the estimated impact 
+
+At completion,   
+ * Th overall statistical computation of each metric is available for analysis
+
+![Screenshot of Experimentation at a Glance](media/tutorials/game-manager-new-ab-test.png/manage-an-experiment.JPG "Manage an Experiment")
