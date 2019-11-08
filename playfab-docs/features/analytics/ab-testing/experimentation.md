@@ -83,7 +83,7 @@ One can modify an experiment when it is in drafted status. Each field is modifia
 
 Experiments results will be showed in a scorecard which is generated in a regular cadence. The cadence is 12 hours, 1 day, 2 day, 3 day, 5 day, 7 day, 14 day, 21 day.
 
-Once the experiment is complted or stopped, click on the **View Scorecard** link of the experiment from the manage experiment page,
+Once the experiment is completed or stopped, click on the **View Scorecard** link of the experiment from the manage experiment page,
 
 At the run: 
  * If an issue of Statistical Ratio Mismatch (SRM) is identified, then it is flagged to the user for investigation
