@@ -66,7 +66,7 @@ From the Game Manager:
   * With Save Experiment the experiment will be in **Drafted** status in the manage experiment page
   * With Save and Run Experiment the experiment will be in **Running** status in the manage experiment page 
 
-![Screenshot of Experimentation at a Glance](media/tutorials/create_edit-an-experiment.JPG "Create an Experiment")
+![Screenshot of Experimentation at a Glance](media/tutorials/create_edit-an-experiment.png "Create an Experiment")
 
 ### Manage Experiment
 
@@ -77,7 +77,7 @@ One can modify an experiment when it is in drafted status. Each field is modifia
   * A few other actions can be taken in an experiment, like, **Clone**, **Rerun**, ****Delete**. The applicability and availability of the option is based on the state the experiment
 - Once the duration of the experiment is reached or a user explicitly stops the experiment, the experiment status is turned **Stopped/ completed**
 
-![Screenshot of Experimentation at a Glance](media/tutorials/manage-an-experiment.JPG "Manage an Experiment")
+![Screenshot of Experimentation at a Glance](media/tutorials/manage-an-experiment.png "Manage an Experiment")
 
 ### Analyze Experiment  
 
