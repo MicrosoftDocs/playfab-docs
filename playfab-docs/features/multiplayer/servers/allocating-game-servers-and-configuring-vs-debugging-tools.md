@@ -75,7 +75,7 @@ https://aka.ms/vs/15/release/RemoteTools.amd64ret.enu.exe
 5. Execute `msvsmon` once with:
 
 ```cmd
-/prepcomputer
+/prepcomputer /quiet
 ```
 
 6. Execute `msvsmon` with flags (shown below).
