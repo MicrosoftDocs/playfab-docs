@@ -22,16 +22,26 @@ ms.localizationpriority: medium
 
 PlayFab’s Experimentation feature enables you to elevate the player experience by helping you identify the best strategies for your game via A/B experiment. It does so by helping you run multiple simultaneous trustworthy experiment and analysis. You can compare different versions of game configurations, pricing models, and outreach mechanisms to determine which is better in bringing conversions. This enables you to make data-informed decisions an area like your game’s roll-out strategy or feature changes of the game, ensuring that every change produces positive results.
 
-## Capabilities of PlayFab’s Experimentation 
+### Capabilities of PlayFab’s Experimentation 
 
 PlayFab’s Experiment is a tailored solution for A/B experimentation in gaming. It is powered by Microsoft’s scalable and reliable experiment and statistics computation platform. This feature empowers you in your A/B experiment journey by providing the following capabilities:
 
 - Create, manage, and analyze A/B experiments via Game Manager or APIs. 
-- Run multiple concurrent experiments each coming out with results you can trust 
+- Run multiple concurrent experiments 
 - Target audience by making use of existing traffic. One can in-flight the experiment on specific audience by running experiment on a segment 
-- Get near real-time reliable results of the experiment as scorecard. The scorecard is enriched, and detailed
+- Get reliable results of the experiment as scorecard. The scorecard is enriched, and detailed
 - Support of end-to-end A/B experiment workflow with simple, easy-to-use APIs
 - Integration into PlayFab’s though the player profile, cloud script and PlayFab Explorer
+
+### PlayFab Experimentation at a Glance
+
+![Screenshot of PlayFab Experimentation at a Glance.](media/tutorials/game-manager-new-ab-test.png/playFab-Experimentation-at-a-glance.png)
+
+PlayFab’s Experiments enables to run multiple concurrent experiments in random and controlled manner. In the process, 
+- A unique identifier for each running experiment’s variant groups called variant ID is tagged to each player profile. These variant IDs enables you to assign different treatments via any client or server-side code
+- Each variant group is supported and defined by variables. These variables are attributes on variant groups that allow you to bundle a different set of game experience via parameterization
+- The computation of the experiment for reliable results takes care of statistical significance level
+- Despite your best attempt to in-flight the traffic to suitable audience, there are certain cases where ratio of traffic allocation is way off. PlayFab’s experimentation feature flags such issues enabling you to run reliable experiment 
 
 
 
