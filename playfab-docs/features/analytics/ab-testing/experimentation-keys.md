@@ -156,8 +156,8 @@ To build an experimentation culture, introduce reliable and repeatable processes
     Create a standard protocol for every experiment your team runs. It helps to keep experiments’ results accurate and meaningful, regardless of who is controlling the experiment
 
 | **Experimentation**                            |**Planning Process Recommended**                    | 
-|:--------------------------------------------- |:-----------------------------------------------| 
-| **Stages**                                      | **Description**                              |
+|:----------------------------------------------------------- |:-----------------------------------------------| 
+| **Stages**                                      | **Description**                                   |
 | **Opportunity Analysis**                               |
 | Investigation                               | Experiment owner investigate and analyzes A/B experimentation opportunities. Prioritize the experiments  |
 | **Experiment Design**                               |
