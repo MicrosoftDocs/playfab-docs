@@ -92,7 +92,7 @@ At the run:
 At the completion:  
  * The overall statistical computation of each metric is available for analysis
 
-![Screenshot of Experimentation at a Glance](media/tutorials/view-scorecard.png "Manage an Experiment")
+![Screenshot of Experimentation at a Glance](media/tutorials/view-scorecard.png "Analyze an Experiment")
 
 ## Scorecard Metrics
 
