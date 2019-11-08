@@ -1,6 +1,6 @@
 ---
 title: Experimentation Conceptual Recap
-author: shtarwar
+author: shikha-tarware
 description: Experimentation Conceptual Recap and Best Practices.
 ms.author: shtarwar
 ms.date: 11/07/2019

@@ -1,6 +1,6 @@
 ---
 title: Experimentation
-author: shtarwar
+author: shikha-tarware
 description: Demonstrates how to use experimentation.
 ms.author: shtarwar
 ms.date: 11/07/2019
