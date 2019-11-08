@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 # Experimentation Recap
 
 > [!IMPORTANT]
-> This improvised experimentation feature is currently in **Private Preview**. 
+> This improved experimentation feature is currently in **Private Preview**. 
 > It is provided to give you an early look at an upcoming feature, and to allow you to provide feedback while it is still in development. 
 > 
 > Access to this feature is restricted to select titles. If you are interested in trying it, please contact us at [helloplayfab@microsoft.com](mailto:helloplayfab@microsoft.com). 
@@ -21,7 +21,7 @@ ms.localizationpriority: medium
 Experimentations explained conceptually by keeping Game and its Players at the center as below:
 
 ## A/B Experimentation
-A/B Experimentation (Or just “Experimentation”) is a method of comparing two or more different versions (or variants) of a game screen against each other to determine the one which performs or converts the best. This is done so by enabling the versions to users at random, and statistical analysis is done on the collected telemetry to determine which variation performs better as per the conversion goal. 
+A/B Experimentation (Or just “Experimentation”) is a method of comparing two or more different versions (or variants) of a game  against each other to determine the one which performs or converts the best. This is done so by splitting users randomly into two or more groups and provding those different experiences to each group over a period of time, and statistical analysis is done on the collected telemetry to determine which variation performs better based on the goals you decide for the experiment. 
 
 Please note, despite the name (A/B Experimentation), the experiment can be conducted with as many versions as desired. Also, you can run experiment to compare against existing or entirely new version of the game screen(s). 
 
