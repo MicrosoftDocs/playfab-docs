@@ -35,7 +35,7 @@ PlayFab’s Experiment is a tailored solution for A/B experimentation in gaming.
 
 ### PlayFab Experimentation at a Glance
 
-![Screenshot of PlayFab Experimentation at a Glance.](media/tutorials/game-manager-new-ab-test.png/playFab-Experimentation-at-a-glance.png)
+![Screenshot of Experimentation at a Glance.](media/tutorials/game-manager-new-ab-test.png/playFab-Experimentation-at-a-glance.png)
 
 PlayFab’s Experiments enables to run multiple concurrent experiments in random and controlled manner. In the process, 
 - A unique identifier for each running experiment’s variant groups called variant ID is tagged to each player profile. These variant IDs enables you to assign different treatments via any client or server-side code
@@ -43,6 +43,24 @@ PlayFab’s Experiments enables to run multiple concurrent experiments in random
 - The computation of the experiment for reliable results takes care of statistical significance level
 - Despite your best attempt to in-flight the traffic to suitable audience, there are certain cases where ratio of traffic allocation is way off. PlayFab’s experimentation feature flags such issues enabling you to run reliable experiment 
 
+## Quick Start
+
+### Create an Experiment
+
+An experiment is created to compare a control variant against one or more treatment variant (up to 9). The experiment is controlled and managed as the target audience is as per the user-input. 
+
+From the Game Manager, 	
+- Navigate to your Title 
+- Select Experimentation from the menu on the left 
+- Click on New A/B Experiment, experiment configuration page is opened 
+- Enter Experiment Name, Description, Duration and Flight to Population % 
+- Under Settings, define the Control Variant and Treatment Variant 
+  * Each variant is supported and defined by Variables (up to 10). These variables are attributes on variant groups that allow you to bundle different set of user-experience via parameterization. This variable parametrization configures the feature settings for variants without deploying new code. This allows you to iterate faster on changes and make fixes and updates to live games. It is recommended to have name variable name in each of the variant group as a best practice of experimentation  
+  * A/B Experimentation is a controlled experiment, hence, a weight % determines the traffic ratio to be in-flighted for target audience. Ideally, a ratio of 1:1 is recommended  
+  * An experiment can be configured to run on a Segment
+- Click Save Experiment or Save and Run Experiment 
+  * With Save Experiment the experiment will be in Drafted status in the manage experiment page
+  * With Save and Run Experiment the experiment will be in Running status in the manage experiment page 
 
 
-
+![Screenshot of Experimentation at a Glance.](media/tutorials/game-manager-new-ab-test.png/create_edit-an-experiment.JPG)
