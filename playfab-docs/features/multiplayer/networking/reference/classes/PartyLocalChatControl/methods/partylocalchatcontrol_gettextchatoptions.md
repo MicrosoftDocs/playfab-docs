@@ -5,8 +5,7 @@ description: Provides the text chat options associated with text chat for this c
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/25/2019
-ROBOTS: NOINDEX,NOFOLLOW
+ms.date: 11/08/2019
 ---
 
 # PartyLocalChatControl::GetTextChatOptions  
@@ -24,7 +23,7 @@ PartyError GetTextChatOptions(
 ### Parameters  
   
 **`options`** &nbsp; [PartyTextChatOptions*](../../../enums/partytextchatoptions.md)  
-*library-allocated output*  
+*output*  
   
 Options associated with text chat.  
   

@@ -5,8 +5,7 @@ description: "Information specific to the *VoiceChatTranscriptionReceived* type 
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/26/2019
-ROBOTS: NOINDEX,NOFOLLOW
+ms.date: 11/01/2019
 ---
 
 # PartyVoiceChatTranscriptionReceivedStateChange  
@@ -61,7 +60,7 @@ The local receiver chat controls to which the transcription is addressed.
   
 The language code of the transcription.
   
-The language code will always be provided when the ```result``` field indicates success. Otherwise, the language code will be an empty string. <br /><br /> The language code will be in BCP 47 format, such as en-US for English (United States). Supported language codes are enumerated at [https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/language-support](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/language-support).
+The language code will always be provided when the ```result``` field indicates success. Otherwise, the language code will be an empty string. <br /><br /> The language code will be in BCP 47 format, such as en-US for English (United States). Supported language codes are enumerated at [https://docs.microsoft.com/azure/cognitive-services/speech-service/language-support](https://docs.microsoft.com/azure/cognitive-services/speech-service/language-support).
   
 **`transcription`** &nbsp; [PartyString](../typedefs.md)  
   

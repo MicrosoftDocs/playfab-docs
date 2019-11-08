@@ -5,8 +5,7 @@ description: Gets the [PartyLocalChatControl](../../PartyLocalChatControl/partyl
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/25/2019
-ROBOTS: NOINDEX,NOFOLLOW
+ms.date: 11/08/2019
 ---
 
 # PartyChatControl::GetLocal  
@@ -24,7 +23,7 @@ PartyError GetLocal(
 ### Parameters  
   
 **`localChatControl`** &nbsp; [PartyLocalChatControl**](../../PartyLocalChatControl/partylocalchatcontrol.md)  
-*output, may return nullptr*  
+*library-allocated output, may return nullptr*  
   
 The local version of this chat control object, or nullptr if this is not a local chat control.  
   

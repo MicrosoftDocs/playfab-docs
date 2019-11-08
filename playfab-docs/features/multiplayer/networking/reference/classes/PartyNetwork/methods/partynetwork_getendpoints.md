@@ -5,8 +5,7 @@ description: Gets the endpoints in this network.
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/26/2019
-ROBOTS: NOINDEX,NOFOLLOW
+ms.date: 11/08/2019
 ---
 
 # PartyNetwork::GetEndpoints  
@@ -25,7 +24,7 @@ PartyError GetEndpoints(
 ### Parameters  
   
 **`endpointCount`** &nbsp; uint32_t*  
-*library-allocated output*  
+*output*  
   
 The output number of PartyEndpoint entries in the `endpoints` array.  
   
@@ -42,7 +41,7 @@ PartyError
   
 ## Remarks  
   
-This function gets all endpoints currently associated with the network and visible to the local device. <br /><br /> All local endpoints that have successfully been created or are in the process of being created will be present in `endpoints`.   <br /><br /> Only remote endpoints that have successfully been created in the network and are visible to the local device will be present in `endpoints`.   <br /><br /> The memory for the returned array is invalidated whenever the title calls [PartyManager::StartProcessingStateChanges()](../../PartyManager/methods/partymanager_startprocessingstatechanges.md) or [CreateEndpoint()](partynetwork_createendpoint.md) returns success.
+This method gets all endpoints currently associated with the network and visible to the local device. <br /><br /> All local endpoints that have successfully been created or are in the process of being created will be present in `endpoints`. All remote endpoints that have been successfully created will also be present.   <br /><br /> Once a [PartyEndpointDestroyedStateChange](../../../structs/partyendpointdestroyedstatechange.md) has been provided by [PartyManager::StartProcessingStateChanges()](../../PartyManager/methods/partymanager_startprocessingstatechanges.md), the endpoint will no longer be present in the array returned by this method.   <br /><br /> The memory for the returned array is invalidated whenever the title calls [PartyManager::StartProcessingStateChanges()](../../PartyManager/methods/partymanager_startprocessingstatechanges.md) or [CreateEndpoint()](partynetwork_createendpoint.md) returns success.
   
 ## Requirements  
   
@@ -51,7 +50,7 @@ This function gets all endpoints currently associated with the network and visib
 ## See also  
 [PartyNetwork](../partynetwork.md)  
 [PartyEndpointCreatedStateChange](../../../structs/partyendpointcreatedstatechange.md)  
-[PartyNetwork::CreateEndpoint](partynetwork_createendpoint.md)  
-[PartyManager::StartProcessingStateChanges](../../PartyManager/methods/partymanager_startprocessingstatechanges.md)
+[PartyEndpointDestroyedStateChange](../../../structs/partyendpointdestroyedstatechange.md)  
+[PartyNetwork::CreateEndpoint](partynetwork_createendpoint.md)
   
   

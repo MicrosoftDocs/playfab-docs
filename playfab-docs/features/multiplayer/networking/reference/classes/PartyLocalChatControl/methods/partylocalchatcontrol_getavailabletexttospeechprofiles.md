@@ -5,8 +5,7 @@ description: Gets the text to speech profiles for this chat control.
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/26/2019
-ROBOTS: NOINDEX,NOFOLLOW
+ms.date: 11/08/2019
 ---
 
 # PartyLocalChatControl::GetAvailableTextToSpeechProfiles  
@@ -25,7 +24,7 @@ PartyError GetAvailableTextToSpeechProfiles(
 ### Parameters  
   
 **`profileCount`** &nbsp; uint32_t*  
-*library-allocated output*  
+*output*  
   
 The output number of available profiles.  
   

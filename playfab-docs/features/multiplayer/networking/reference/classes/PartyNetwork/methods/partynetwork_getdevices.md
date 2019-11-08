@@ -5,8 +5,7 @@ description: Gets the devices in this network.
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/26/2019
-ROBOTS: NOINDEX,NOFOLLOW
+ms.date: 11/08/2019
 ---
 
 # PartyNetwork::GetDevices  
@@ -25,7 +24,7 @@ PartyError GetDevices(
 ### Parameters  
   
 **`deviceCount`** &nbsp; uint32_t*  
-*library-allocated output*  
+*output*  
   
 The output number of devices in this network.  
   
@@ -42,7 +41,7 @@ PartyError
   
 ## Remarks  
   
-The memory for the returned array is invalidated whenever the title calls [PartyManager::StartProcessingStateChanges()](../../PartyManager/methods/partymanager_startprocessingstatechanges.md). The local device is always in the array.
+Once a [PartyRemoteDeviceLeftNetworkStateChange](../../../structs/partyremotedeviceleftnetworkstatechange.md) has been provided by [PartyManager::StartProcessingStateChanges()](../../PartyManager/methods/partymanager_startprocessingstatechanges.md), the remote device will no longer be present in the array returned by this method. The local device is always in the array. <br /><br /> The memory for the returned array is invalidated whenever the title calls PartyManager::StartProcessingStateChanges().
   
 ## Requirements  
   
@@ -50,6 +49,6 @@ The memory for the returned array is invalidated whenever the title calls [Party
   
 ## See also  
 [PartyNetwork](../partynetwork.md)  
-
+[PartyRemoteDeviceLeftNetworkStateChange](../../../structs/partyremotedeviceleftnetworkstatechange.md)
   
   

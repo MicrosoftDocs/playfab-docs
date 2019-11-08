@@ -5,8 +5,7 @@ description: Provides the preferred speakers or headset device that the chat con
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/26/2019
-ROBOTS: NOINDEX,NOFOLLOW
+ms.date: 11/08/2019
 ---
 
 # PartyLocalChatControl::GetAudioOutput  
@@ -26,17 +25,17 @@ PartyError GetAudioOutput(
 ### Parameters  
   
 **`audioDeviceSelectionType`** &nbsp; [PartyAudioDeviceSelectionType*](../../../enums/partyaudiodeviceselectiontype.md)  
-*library-allocated output*  
+*output*  
   
 An output value indicating the selection type that was used to select the provided `deviceId`.  
   
 **`audioDeviceSelectionContext`** &nbsp; [PartyString*](../../../typedefs.md)  
-*output*  
+*library-allocated output*  
   
 When using [PartyAudioDeviceSelectionType::None](../../../enums/partyaudiodeviceselectiontype.md), `audioDeviceSelectionContext` will be empty. When using [PartyAudioDeviceSelectionType::SystemDefault](../../../enums/partyaudiodeviceselectiontype.md), `audioDeviceSelectionContext` will be empty. When using [PartyAudioDeviceSelectionType::PlatformUserDefault](../../../enums/partyaudiodeviceselectiontype.md), `audioDeviceSelectionContext` will be the value provided in a previous call to [SetAudioOutput()](partylocalchatcontrol_setaudiooutput.md). When using [PartyAudioDeviceSelectionType::Manual](../../../enums/partyaudiodeviceselectiontype.md), `audioDeviceSelectionContext` will be empty.  
   
 **`deviceId`** &nbsp; [PartyString*](../../../typedefs.md)  
-*output*  
+*library-allocated output*  
   
 An output value indicating the selected audio output device's identifier.  
   

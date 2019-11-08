@@ -5,8 +5,7 @@ description: Provides whether the user's audio input is in the mute state.
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/26/2019
-ROBOTS: NOINDEX,NOFOLLOW
+ms.date: 11/08/2019
 ---
 
 # PartyLocalChatControl::GetAudioInputMuted  
@@ -24,7 +23,7 @@ PartyError GetAudioInputMuted(
 ### Parameters  
   
 **`muted`** &nbsp; [PartyBool*](../../../typedefs.md)  
-*library-allocated output*  
+*output*  
   
 True if muted, false otherwise.  
   

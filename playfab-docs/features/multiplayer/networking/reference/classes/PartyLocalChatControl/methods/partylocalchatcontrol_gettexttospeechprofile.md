@@ -5,8 +5,7 @@ description: Gets the profile that was last configured from a successfully compl
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/25/2019
-ROBOTS: NOINDEX,NOFOLLOW
+ms.date: 11/08/2019
 ---
 
 # PartyLocalChatControl::GetTextToSpeechProfile  
@@ -29,7 +28,7 @@ PartyError GetTextToSpeechProfile(
 The type of text-to-speech operations for which the profile should be retrieved.  
   
 **`profile`** &nbsp; [PartyTextToSpeechProfile**](../../PartyTextToSpeechProfile/partytexttospeechprofile.md)  
-*output, may return nullptr*  
+*library-allocated output, may return nullptr*  
   
 The output profile. The profile may be nullptr if none has been set for the specified type. The pointer is only valid until the next call to [PartyManager::StartProcessingStateChanges()](../../PartyManager/methods/partymanager_startprocessingstatechanges.md).  
   

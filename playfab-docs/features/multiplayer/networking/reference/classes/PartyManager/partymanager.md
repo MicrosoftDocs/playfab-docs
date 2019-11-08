@@ -5,8 +5,7 @@ description: TBD
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/25/2019
-ROBOTS: NOINDEX,NOFOLLOW
+ms.date: 11/08/2019
 ---
 
 # PartyManager  
@@ -24,6 +23,8 @@ class PartyManager
 | Name | Description |  
 | --- | --- |  
 | [GetSingleton](methods/partymanager_getsingleton.md) | Retrieves a reference to the PartyManager singleton instance. |  
+| [SetOption](methods/partymanager_setoption.md) | Configures an option to fine-tune Party library functionality. |  
+| [GetOption](methods/partymanager_getoption.md) | Retrieves an option used to fine-tune Party library functionality. |  
 | [GetErrorMessage](methods/partymanager_geterrormessage.md) | Get the human-readable form of an error. |  
 | [SerializeNetworkDescriptor](methods/partymanager_serializenetworkdescriptor.md) | Serializes a network descriptor structure into an opaque string that is safe to communicate over title and platform-specific communication channels. |  
 | [DeserializeNetworkDescriptor](methods/partymanager_deserializenetworkdescriptor.md) | Deserializes a network descriptor structure from an opaque string serialized via a prior call to [SerializeNetworkDescriptor()](methods/partymanager_serializenetworkdescriptor.md). |  
@@ -41,8 +42,8 @@ class PartyManager
 | [GetLocalDevice](methods/partymanager_getlocaldevice.md) | Gets the local device. |  
 | [CreateLocalUser](methods/partymanager_createlocaluser.md) | Creates a local user object that is used to represent a local user when performing networking and chat operations. |  
 | [DestroyLocalUser](methods/partymanager_destroylocaluser.md) | Starts an asynchronous operation to destroy a local user. |  
-| [GetLocalUsers](methods/partymanager_getlocalusers.md) | Gets an array containing all local users created by CreateLocalUser(). |  
-| [GetNetworks](methods/partymanager_getnetworks.md) | Gets an array of all networks to which the local device is connected. |  
+| [GetLocalUsers](methods/partymanager_getlocalusers.md) | Gets an array containing all local users created by [CreateLocalUser()](methods/partymanager_createlocaluser.md). |  
+| [GetNetworks](methods/partymanager_getnetworks.md) | Gets an array of all networks to which the local device is connected or connecting. |  
 | [GetChatControls](methods/partymanager_getchatcontrols.md) | Gets an array that contains a combined list of all chat controls on the local device and all remote devices. |  
 
   

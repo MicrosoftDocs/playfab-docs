@@ -5,8 +5,7 @@ description: Retrieves the current set of processors on which internal Party lib
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/25/2019
-ROBOTS: NOINDEX,NOFOLLOW
+ms.date: 11/08/2019
 ---
 
 # PartyManager::GetThreadAffinityMask  
@@ -29,7 +28,7 @@ PartyError GetThreadAffinityMask(
 The type of internal Party library thread for which processor affinity should be retrieved.  
   
 **`threadAffinityMask`** &nbsp; uint64_t*  
-*library-allocated output*  
+*output*  
   
 The output affinity mask for this type of Party library thread.  
   

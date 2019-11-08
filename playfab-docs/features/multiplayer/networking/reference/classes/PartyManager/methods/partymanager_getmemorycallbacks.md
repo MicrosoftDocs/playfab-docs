@@ -5,8 +5,7 @@ description: Retrieves the memory allocation and freeing callbacks the Party lib
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/26/2019
-ROBOTS: NOINDEX,NOFOLLOW
+ms.date: 11/08/2019
 ---
 
 # PartyManager::GetMemoryCallbacks  
@@ -25,12 +24,12 @@ PartyError GetMemoryCallbacks(
 ### Parameters  
   
 **`allocateMemoryCallback`** &nbsp; [PartyAllocateMemoryCallback*](../../../callbacks/partyallocatememorycallback.md)  
-*library-allocated output*  
+*output*  
   
 A place to store a pointer to the memory allocation callback currently used.  
   
 **`freeMemoryCallback`** &nbsp; [PartyFreeMemoryCallback*](../../../callbacks/partyfreememorycallback.md)  
-*library-allocated output*  
+*output*  
   
 A place to store a pointer to the memory freeing callback currently used.  
   
@@ -42,7 +41,7 @@ PartyError
   
 ## Remarks  
   
-This retrieves the memory allocation routines servicing requests by the Party library for new memory. <br /><br /> This method does not require the [Initialize()](partymanager_initialize.md) method to have been called first.
+This retrieves the memory allocation functions servicing requests by the Party library for new memory. <br /><br /> This method does not require the [Initialize()](partymanager_initialize.md) method to have been called first.
   
 ## Requirements  
   

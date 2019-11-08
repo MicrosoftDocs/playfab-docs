@@ -5,8 +5,7 @@ description: Queues an asynchronous attempt to create an invitation for the netw
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/25/2019
-ROBOTS: NOINDEX,NOFOLLOW
+ms.date: 11/08/2019
 ---
 
 # PartyNetwork::CreateInvitation  
@@ -52,7 +51,7 @@ PartyError
   
 ## Remarks  
   
-To join a network, a user must provide an invitation to [AuthenticateLocalUser()](partynetwork_authenticatelocaluser.md). <br /><br /> This function queues an asynchronous attempt to create an invitation for the network. A [PartyCreateInvitationCompletedStateChange](../../../structs/partycreateinvitationcompletedstatechange.md) will be provided upon completion of the asynchronous operation, indicating success or failure. On success, a [PartyInvitationCreatedStateChange](../../../structs/partyinvitationcreatedstatechange.md) will have been generated beforehand to indicate that the transparent cloud relay server is ready to accept authentications using the invitation's identifier. On failure, a [PartyInvitationDestroyedStateChange](../../../structs/partyinvitationdestroyedstatechange.md) will have been generated beforehand to indicate that the invitation object is no longer valid and will no longer be queryable via [GetInvitations()](partynetwork_getinvitations.md).   <br /><br /> The lifetime of the invitation is tied to the owning local user's membership in the network, therefore `localUser` must be authenticated or in the process of authenticating. If `localUser` leaves the network for any reason the invitation will be automatically revoked and subsequent attempts to use that invitation's identifier to join the network will fail until a new invitation is created using that identifier.   <br /><br /> Invitations created with this method will only be queryable via GetInvitations() on the local device where the invitation was created.   <br /><br /> On successful return, this method invalidates the memory for any array previously returned by GetInvitations(), as it synchronously adds the new invitation to the array. [PartyManager::StartProcessingStateChanges()](../../PartyManager/methods/partymanager_startprocessingstatechanges.md) also invalidates the memory for the array.
+To join a network, a user must provide an invitation to [AuthenticateLocalUser()](partynetwork_authenticatelocaluser.md). <br /><br /> This method queues an asynchronous attempt to create an invitation for the network. A [PartyCreateInvitationCompletedStateChange](../../../structs/partycreateinvitationcompletedstatechange.md) will be provided upon completion of the asynchronous operation, indicating success or failure. On success, a [PartyInvitationCreatedStateChange](../../../structs/partyinvitationcreatedstatechange.md) will have been generated beforehand to indicate that the transparent cloud relay server is ready to accept authentications using the invitation's identifier. On failure, a [PartyInvitationDestroyedStateChange](../../../structs/partyinvitationdestroyedstatechange.md) will have been generated beforehand to indicate that the invitation object is no longer valid and will no longer be queryable via [GetInvitations()](partynetwork_getinvitations.md).   <br /><br /> The lifetime of the invitation is tied to the owning local user's membership in the network, therefore `localUser` must be authenticated or in the process of authenticating. If `localUser` leaves the network for any reason the invitation will be automatically revoked and subsequent attempts to use that invitation's identifier to join the network will fail until a new invitation is created using that identifier.   <br /><br /> Invitations created with this method will only be queryable via GetInvitations() on the local device where the invitation was created.   <br /><br /> On successful return, this method invalidates the memory for any array previously returned by GetInvitations(), as it synchronously adds the new invitation to the array. [PartyManager::StartProcessingStateChanges()](../../PartyManager/methods/partymanager_startprocessingstatechanges.md) also invalidates the memory for the array. The returned `invitation` object will be valid until a PartyInvitationDestroyedStateChange has been generated and all state changes referencing the object have been returned to [PartyManager::FinishProcessingStateChanges()](../../PartyManager/methods/partymanager_finishprocessingstatechanges.md).
   
 ## Requirements  
   
@@ -60,8 +59,11 @@ To join a network, a user must provide an invitation to [AuthenticateLocalUser()
   
 ## See also  
 [PartyNetwork](../partynetwork.md)  
+[PartyInvitationRevocability](../../../enums/partyinvitationrevocability.md)  
 [PartyNetwork::AuthenticateLocalUser](partynetwork_authenticatelocaluser.md)  
+[PartyInvitationCreatedStateChange](../../../structs/partyinvitationcreatedstatechange.md)  
+[PartyCreateInvitationCompletedStateChange](../../../structs/partycreateinvitationcompletedstatechange.md)  
 [PartyInvitationDestroyedStateChange](../../../structs/partyinvitationdestroyedstatechange.md)  
-[PartyCreateInvitationCompletedStateChange](../../../structs/partycreateinvitationcompletedstatechange.md)
+[PartyManager::CreateNewNetwork](../../PartyManager/methods/partymanager_createnewnetwork.md)
   
   
