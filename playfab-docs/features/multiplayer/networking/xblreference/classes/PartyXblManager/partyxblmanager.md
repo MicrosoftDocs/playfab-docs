@@ -6,7 +6,6 @@ ms.author: alstonge
 ms.topic: reference
 ms.prod: playfab
 ms.date: 11/01/2019
-ROBOTS: NOINDEX,NOFOLLOW
 ---
 
 # PartyXblManager  

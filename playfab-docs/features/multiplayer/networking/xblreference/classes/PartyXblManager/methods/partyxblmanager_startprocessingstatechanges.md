@@ -5,8 +5,7 @@ description: Retrieves an array of all Party Xbox Live state changes to process 
 ms.author: alstonge
 ms.topic: reference
 ms.prod: playfab
-ms.date: 11/01/2019
-ROBOTS: NOINDEX,NOFOLLOW
+ms.date: 11/08/2019
 ---
 
 # PartyXblManager::StartProcessingStateChanges  
@@ -25,7 +24,7 @@ PartyError StartProcessingStateChanges(
 ### Parameters  
   
 **`stateChangeCount`** &nbsp; uint32_t*  
-*library-allocated output*  
+*output*  
   
 A place to write the number of PartyXblStateChange entries for the title to handle in the `stateChanges` array.  
   
@@ -42,7 +41,7 @@ PartyError
   
 ## Remarks  
   
-This method provides the Party Xbox Live Helper library an opportunity to retrieves a list of all changes currently available for the title since the last call to this method. The title should use the provided array of 0 or more changes to update its own state or UI, and then call [FinishProcessingStateChanges()](partyxblmanager_finishprocessingstatechanges.md) with them in a timely manner. <br /><br /> State exposed by the library can change during this call, so you must be thread-safe in your use of it. StartProcessingStateChanges() should be called frequently-- at least once every 100 milliseconds. It's designed to execute and return quickly such that it can be called on your main UI thread with negligible impact. For best results, you should also minimize the time you spend handling state changes before calling FinishProcessingStateChanges().
+This method provides the Party Xbox Live Helper library an opportunity to retrieves a list of all changes currently available for the title since the last call to this method. The title should use the provided array of 0 or more changes to update its own state or UI, and then call [FinishProcessingStateChanges()](partyxblmanager_finishprocessingstatechanges.md) with them in a timely manner. <br /><br /> State exposed by the library can change during this call, so you must be thread-safe in your use of it. StartProcessingStateChanges() should be called frequently-- at least once every 100 milliseconds. It's designed to execute and return quickly such that it can be called on your main UI thread with negligible impact. For best results, you should also minimize the time you spend handling state changes before calling FinishProcessingStateChanges().   <br /><br /> Each state change returned by StartProcessingStateChanges() must be returned to FinishProcessingStateChanges() exactly once, but may be returned out of order and may be interleaved with state changes from other calls to StartProcessingStateChanges(). Any resources associated with a specific state change are guaranteed to stay valid until the state change is returned to FinishProcessingStateChanges().
   
 ## Requirements  
   

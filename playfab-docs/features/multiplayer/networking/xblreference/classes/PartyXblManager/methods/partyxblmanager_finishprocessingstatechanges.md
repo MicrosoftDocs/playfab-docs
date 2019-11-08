@@ -5,8 +5,7 @@ description: Returns an array of Party Xbox Live state changes that were being p
 ms.author: alstonge
 ms.topic: reference
 ms.prod: playfab
-ms.date: 11/01/2019
-ROBOTS: NOINDEX,NOFOLLOW
+ms.date: 11/08/2019
 ---
 
 # PartyXblManager::FinishProcessingStateChanges  
@@ -41,7 +40,7 @@ PartyError
   
 ## Remarks  
   
-This method informs the Party Xbox Live Helper library that the state changes reported by a previous call to [StartProcessingStateChanges()](partyxblmanager_startprocessingstatechanges.md) have now been handled by the title, so their associated resources can be reclaimed. You may call FinishProcessingStateChanges() with any number of state changes. Each state change returned by StartProcessingStateChanges() must be included in a call to FinishProcessingStateChanges() exactly once but they may be returned out of order and may be interleaved with state changes from subsequent calls to StartProcessingStateChanges() <br /><br /> For best results, you should minimize the time you spend handling state changes before calling FinishProcessingStateChanges().
+This method informs the Party Xbox Live Helper library that the state changes reported by a previous call to [StartProcessingStateChanges()](partyxblmanager_startprocessingstatechanges.md) have now been handled by the title, so their associated resources can be reclaimed. You may call FinishProcessingStateChanges() with any number of state changes. Each state change returned by StartProcessingStateChanges() must be returned to FinishProcessingStateChanges() exactly once, but may be returned out of order and may be interleaved with state changes from other calls to StartProcessingStateChanges(). Even if state changes are held across subsequent calls to StartProcessingStateChanges(), the Party Xbox Live Helper library state returned by all getters will advance and may no longer reflect the same state that the held state changes refer to. <br /><br /> Any resources associated with a specific state change are guaranteed to stay valid until the state change is returned to FinishProcessingStateChanges().   <br /><br /> For best results, you should minimize the time you spend handling state changes before calling FinishProcessingStateChanges().
   
 ## Requirements  
   

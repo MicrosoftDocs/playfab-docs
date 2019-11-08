@@ -5,8 +5,7 @@ description: Gets this invitation's configuration.
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/25/2019
-ROBOTS: NOINDEX,NOFOLLOW
+ms.date: 11/08/2019
 ---
 
 # PartyInvitation::GetInvitationConfiguration  
@@ -24,7 +23,7 @@ PartyError GetInvitationConfiguration(
 ### Parameters  
   
 **`configuration`** &nbsp; [PartyInvitationConfiguration**](../../../structs/partyinvitationconfiguration.md)  
-*output*  
+*library-allocated output*  
   
 The output configuration of this invitation.  
   

@@ -5,8 +5,7 @@ description: Optionally configures the memory allocation and freeing callbacks t
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 11/01/2019
-ROBOTS: NOINDEX,NOFOLLOW
+ms.date: 11/08/2019
 ---
 
 # PartyManager::SetMemoryCallbacks  
@@ -40,7 +39,7 @@ PartyError
   
 ## Remarks  
   
-This method allows the title to install custom memory allocation routines in order to service all requests by the Party library for new memory buffers instead of using its default allocation routines. <br /><br /> The `allocateMemoryCallback` and `freeMemoryCallback` parameters must both be non-null.   <br /><br /> To use this method, it must be called before any other Party method except for PartyManager::GetMemoryCallbacks(). This method cannot be called again for the lifetime of this process.
+This method allows the title to install custom memory allocation functions in order to service all requests by the Party library for new memory buffers instead of using its default allocation functions. <br /><br /> The `allocateMemoryCallback` and `freeMemoryCallback` parameters must both be non-null.   <br /><br /> To use this method, it must be called before any other Party method except for PartyManager::GetMemoryCallbacks(). This method cannot be called again for the lifetime of this process.
   
 ## Requirements  
   

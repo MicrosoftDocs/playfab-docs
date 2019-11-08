@@ -5,8 +5,7 @@ description: Gets the local user associated with this local endpoint.
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/25/2019
-ROBOTS: NOINDEX,NOFOLLOW
+ms.date: 11/08/2019
 ---
 
 # PartyLocalEndpoint::GetLocalUser  
@@ -24,7 +23,7 @@ PartyError GetLocalUser(
 ### Parameters  
   
 **`localUser`** &nbsp; [PartyLocalUser**](../../PartyLocalUser/partylocaluser.md)  
-*output, may return nullptr*  
+*library-allocated output, may return nullptr*  
   
 The output local user associated with this local endpoint, or nullptr.  
   

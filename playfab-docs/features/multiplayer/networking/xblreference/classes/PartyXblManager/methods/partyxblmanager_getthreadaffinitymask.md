@@ -5,8 +5,7 @@ description: Retrieves the current set of processors on which internal Party Xbo
 ms.author: alstonge
 ms.topic: reference
 ms.prod: playfab
-ms.date: 11/01/2019
-ROBOTS: NOINDEX,NOFOLLOW
+ms.date: 11/08/2019
 ---
 
 # PartyXblManager::GetThreadAffinityMask  
@@ -29,7 +28,7 @@ PartyError GetThreadAffinityMask(
 The type of internal library thread for which processor affinity should be retrieved.  
   
 **`threadAffinityMask`** &nbsp; uint64_t*  
-*library-allocated output*  
+*output*  
   
 A place to store the affinity mask for this type of Party thread.  
   

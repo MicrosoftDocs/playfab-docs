@@ -5,8 +5,7 @@ description: Gets the network descriptor for this network.
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/25/2019
-ROBOTS: NOINDEX,NOFOLLOW
+ms.date: 11/08/2019
 ---
 
 # PartyNetwork::GetNetworkDescriptor  
@@ -24,7 +23,7 @@ PartyError GetNetworkDescriptor(
 ### Parameters  
   
 **`networkDescriptor`** &nbsp; [PartyNetworkDescriptor*](../../../structs/partynetworkdescriptor.md)  
-*library-allocated output*  
+*output*  
   
 The output network descriptor.  
   

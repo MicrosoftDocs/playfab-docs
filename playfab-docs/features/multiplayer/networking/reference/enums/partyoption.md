@@ -5,8 +5,7 @@ description: "Additional options that can be set to fine-tune Party library func
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 10/30/2019
-ROBOTS: NOINDEX,NOFOLLOW
+ms.date: 11/08/2019
 ---
 
 # PartyOption  

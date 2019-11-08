@@ -5,8 +5,7 @@ description: Gets one or more statistic counter values for the network.
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/25/2019
-ROBOTS: NOINDEX,NOFOLLOW
+ms.date: 11/08/2019
 ---
 
 # PartyNetwork::GetNetworkStatistics  
@@ -47,7 +46,7 @@ PartyError
   
 ## Remarks  
   
-This function is used to retrieve performance counters, queue lengths, historical usage metrics, or other statistical information recorded for this network. <br /><br /> A given PartyNetworkStatistic type may appear in any order in the `statisticTypes` array, but must not be specified more than once. Each corresponding statistic value will be written to the `statisticValues` array in the same order.   <br /><br /> The returned statistic values are always the most current ones available. There is no guarantee they will report the same value from one GetNetworkStatistics() call to the next, even if there were no intervening calls to [PartyManager::StartProcessingStateChanges()](../../PartyManager/methods/partymanager_startprocessingstatechanges.md) or [PartyManager::FinishProcessingStateChanges()](../../PartyManager/methods/partymanager_finishprocessingstatechanges.md).
+This method is used to retrieve performance counters, queue lengths, historical usage metrics, or other statistical information recorded for this network. <br /><br /> A given PartyNetworkStatistic type may appear in any order in the `statisticTypes` array, but must not be specified more than once. Each corresponding statistic value will be written to the `statisticValues` array in the same order.   <br /><br /> The returned statistic values are always the most current ones available. There is no guarantee they will report the same value from one GetNetworkStatistics() call to the next, even if there were no intervening calls to [PartyManager::StartProcessingStateChanges()](../../PartyManager/methods/partymanager_startprocessingstatechanges.md) or [PartyManager::FinishProcessingStateChanges()](../../PartyManager/methods/partymanager_finishprocessingstatechanges.md).
   
 ## Requirements  
   

@@ -5,8 +5,7 @@ description: Deserializes a network descriptor structure from an opaque string s
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/26/2019
-ROBOTS: NOINDEX,NOFOLLOW
+ms.date: 11/08/2019
 ---
 
 # PartyManager::DeserializeNetworkDescriptor  
@@ -29,7 +28,7 @@ PartyError DeserializeNetworkDescriptor(
 The serialized network descriptor string.  
   
 **`networkDescriptor`** &nbsp; [PartyNetworkDescriptor*](../../../structs/partynetworkdescriptor.md)  
-*library-allocated output*  
+*output*  
   
 The output network descriptor. `serializedNetworkDescriptorString`.  
   

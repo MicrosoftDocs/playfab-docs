@@ -5,8 +5,7 @@ description: Gets the cached required chat permission information related to a t
 ms.author: alstonge
 ms.topic: reference
 ms.prod: playfab
-ms.date: 11/01/2019
-ROBOTS: NOINDEX,NOFOLLOW
+ms.date: 11/08/2019
 ---
 
 # PartyXblLocalChatUser::GetRequiredChatPermissionInfo  
@@ -29,7 +28,7 @@ PartyError GetRequiredChatPermissionInfo(
 The chat user for which permissions relative to the local chat user should be retrieved.  
   
 **`chatPermissionInfo`** &nbsp; [PartyXblChatPermissionInfo*](../../../structs/partyxblchatpermissioninfo.md)  
-*library-allocated output*  
+*output*  
   
 The output chat permission info object. The chat permission info object contains the most permissive chat permission possible while still respecting Xbox Live requirements.  
   

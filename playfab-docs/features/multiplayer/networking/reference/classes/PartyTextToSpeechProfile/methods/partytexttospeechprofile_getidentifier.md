@@ -5,8 +5,7 @@ description: Gets the unique identifier associated with this profile.
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/26/2019
-ROBOTS: NOINDEX,NOFOLLOW
+ms.date: 11/08/2019
 ---
 
 # PartyTextToSpeechProfile::GetIdentifier  
@@ -24,7 +23,7 @@ PartyError GetIdentifier(
 ### Parameters  
   
 **`identifier`** &nbsp; [PartyString*](../../../typedefs.md)  
-*output*  
+*library-allocated output*  
   
 The output unique identifier.  
   

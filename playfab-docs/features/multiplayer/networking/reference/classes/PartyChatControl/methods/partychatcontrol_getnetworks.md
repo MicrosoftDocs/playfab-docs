@@ -5,8 +5,7 @@ description: Gets the networks to which this chat control is connected.
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/26/2019
-ROBOTS: NOINDEX,NOFOLLOW
+ms.date: 11/08/2019
 ---
 
 # PartyChatControl::GetNetworks  
@@ -25,7 +24,7 @@ PartyError GetNetworks(
 ### Parameters  
   
 **`networkCount`** &nbsp; uint32_t*  
-*library-allocated output*  
+*output*  
   
 The output number of networks to which this chat control is connected.  
   
@@ -42,7 +41,7 @@ PartyError
   
 ## Remarks  
   
-The returned array is only valid until the next call to either [PartyManager::StartProcessingStateChanges()](../../PartyManager/methods/partymanager_startprocessingstatechanges.md) or [PartyNetwork::ConnectChatControl()](../../PartyNetwork/methods/partynetwork_connectchatcontrol.md).
+Once a [PartyChatControlLeftNetworkStateChange](../../../structs/partychatcontrolleftnetworkstatechange.md) has been provided by [PartyManager::StartProcessingStateChanges()](../../PartyManager/methods/partymanager_startprocessingstatechanges.md), the network will no longer be present in the array returned by this method. <br /><br /> The memory for the returned array is invalidated whenever the title calls PartyManager::StartProcessingStateChanges() or [PartyNetwork::ConnectChatControl()](../../PartyNetwork/methods/partynetwork_connectchatcontrol.md) returns success.
   
 ## Requirements  
   
@@ -50,6 +49,8 @@ The returned array is only valid until the next call to either [PartyManager::St
   
 ## See also  
 [PartyChatControl](../partychatcontrol.md)  
-
+[PartyNetwork::ConnectChatControl](../../PartyNetwork/methods/partynetwork_connectchatcontrol.md)  
+[PartyNetwork::DisconnectChatControl](../../PartyNetwork/methods/partynetwork_disconnectchatcontrol.md)  
+[PartyChatControlLeftNetworkStateChange](../../../structs/partychatcontrolleftnetworkstatechange.md)
   
   

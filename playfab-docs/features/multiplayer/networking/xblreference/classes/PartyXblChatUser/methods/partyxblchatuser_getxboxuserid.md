@@ -5,8 +5,7 @@ description: Gets the Xbox Live User Id associated with this user.
 ms.author: alstonge
 ms.topic: reference
 ms.prod: playfab
-ms.date: 11/01/2019
-ROBOTS: NOINDEX,NOFOLLOW
+ms.date: 11/08/2019
 ---
 
 # PartyXblChatUser::GetXboxUserId  
@@ -24,7 +23,7 @@ PartyError GetXboxUserId(
 ### Parameters  
   
 **`xboxUserId`** &nbsp; uint64_t*  
-*library-allocated output*  
+*output*  
   
 The output xbox user id.  
   

@@ -5,8 +5,7 @@ description: Gets the network-unique identifier for this endpoint.
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/25/2019
-ROBOTS: NOINDEX,NOFOLLOW
+ms.date: 11/08/2019
 ---
 
 # PartyEndpoint::GetUniqueIdentifier  
@@ -24,7 +23,7 @@ PartyError GetUniqueIdentifier(
 ### Parameters  
   
 **`uniqueIdentifier`** &nbsp; uint16_t*  
-*library-allocated output*  
+*output*  
   
 The output unique identifier.  
   
@@ -36,7 +35,7 @@ PartyError
   
 ## Remarks  
   
-This identifier is unique within the endpoint's network and is consistent across all endpoints in a network. It is intended to be used as a compact option for titles to refer to specific endpoints in [PartyLocalEndpoint::SendMessage()](../../PartyLocalEndpoint/methods/partylocalendpoint_sendmessage.md) data buffers without much bandwidth overhead or the need to manually negotiate identifiers. This identifier is not unique across networks. <br /><br /> This does not solve the "A talks to B about C before B sees C join" problem. See PartyManager::SynchronizeMessagesBetweenEndpoints() as a solution for this problem.   <br /><br /> For local endpoints, this method will fail until the unique identifier is assigned by the transparent cloud relay. The unique identifier will be assigned when the [PartyEndpointCreatedStateChange](../../../structs/partyendpointcreatedstatechange.md) for this endpoint is provided via [PartyManager::StartProcessingStateChanges()](../../PartyManager/methods/partymanager_startprocessingstatechanges.md). For remote endpoints, this method will always succeed.
+This identifier is unique within the endpoint's network and is consistent across all endpoints in a network. It is intended to be used as a compact option for titles to refer to specific endpoints in [PartyLocalEndpoint::SendMessage()](../../PartyLocalEndpoint/methods/partylocalendpoint_sendmessage.md) data buffers without much bandwidth overhead or the need to manually negotiate identifiers. This identifier is not unique across networks. <br /><br /> For local endpoints, this method will fail until the [PartyEndpointCreatedStateChange](../../../structs/partyendpointcreatedstatechange.md) has been provided by [PartyManager::StartProcessingStateChanges()](../../PartyManager/methods/partymanager_startprocessingstatechanges.md). For remote endpoints, this method will always succeed.   <br /><br /> All devices in a network will agree on a given endpoint's unique identifier, but different devices may not see the same endpoints at a given moment. For example, it's possible for endpoint A to send a message to endpoint B that references a newly-created endpoint C's unique identifier, but that message between A and B may arrive before the PartyEndpointCreatedStateChange for endpoint C is generated on endpoint B's device.
   
 ## Requirements  
   
@@ -45,7 +44,6 @@ This identifier is unique within the endpoint's network and is consistent across
 ## See also  
 [PartyEndpoint](../partyendpoint.md)  
 [PartyEndpointCreatedStateChange](../../../structs/partyendpointcreatedstatechange.md)  
-[PartyManager::StartProcessingStateChanges](../../PartyManager/methods/partymanager_startprocessingstatechanges.md)  
 [PartyNetwork::FindEndpointByUniqueIdentifier](../../PartyNetwork/methods/partynetwork_findendpointbyuniqueidentifier.md)
   
   

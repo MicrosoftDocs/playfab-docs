@@ -5,8 +5,7 @@ description: Configures the profile to use for a specified type of text-to-speec
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/26/2019
-ROBOTS: NOINDEX,NOFOLLOW
+ms.date: 11/08/2019
 ---
 
 # PartyLocalChatControl::SetTextToSpeechProfile  
@@ -54,7 +53,6 @@ The profile provided will be used for all subsequent calls to [SynthesizeTextToS
   
 ## See also  
 [PartyLocalChatControl](../partylocalchatcontrol.md)  
-[PartyLocalChatControl::GetTextToSpeechProfile](partylocalchatcontrol_gettexttospeechprofile.md)  
-[PartyManager::StartProcessingStateChanges](../../PartyManager/methods/partymanager_startprocessingstatechanges.md)
+[PartyLocalChatControl::GetTextToSpeechProfile](partylocalchatcontrol_gettexttospeechprofile.md)
   
   

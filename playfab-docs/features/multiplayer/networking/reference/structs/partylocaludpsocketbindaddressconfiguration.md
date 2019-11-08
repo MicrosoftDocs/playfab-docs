@@ -5,8 +5,7 @@ description: "The configuration used by the Party library to bind to a UDP socke
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 10/30/2019
-ROBOTS: NOINDEX,NOFOLLOW
+ms.date: 11/08/2019
 ---
 
 # PartyLocalUdpSocketBindAddressConfiguration  

@@ -5,8 +5,7 @@ description: Gets the voice communication relationship between the local chat co
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/25/2019
-ROBOTS: NOINDEX,NOFOLLOW
+ms.date: 11/08/2019
 ---
 
 # PartyLocalChatControl::GetPermissions  
@@ -29,7 +28,7 @@ PartyError GetPermissions(
 The target chat control.  
   
 **`chatPermissionOptions`** &nbsp; [PartyChatPermissionOptions*](../../../enums/partychatpermissionoptions.md)  
-*library-allocated output*  
+*output*  
   
 The output chat permission options.  
   

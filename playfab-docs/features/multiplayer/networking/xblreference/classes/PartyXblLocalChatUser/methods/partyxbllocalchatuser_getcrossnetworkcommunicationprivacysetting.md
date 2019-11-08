@@ -5,8 +5,7 @@ description: Gets the cross-network communication privacy setting for this chat 
 ms.author: alstonge
 ms.topic: reference
 ms.prod: playfab
-ms.date: 11/01/2019
-ROBOTS: NOINDEX,NOFOLLOW
+ms.date: 11/08/2019
 ---
 
 # PartyXblLocalChatUser::GetCrossNetworkCommunicationPrivacySetting  
@@ -24,7 +23,7 @@ PartyError GetCrossNetworkCommunicationPrivacySetting(
 ### Parameters  
   
 **`setting`** &nbsp; [PartyXblCrossNetworkCommunicationPrivacySetting*](../../../enums/partyxblcrossnetworkcommunicationprivacysetting.md)  
-*library-allocated output*  
+*output*  
   
 The output cross-network communication privacy setting.  
   

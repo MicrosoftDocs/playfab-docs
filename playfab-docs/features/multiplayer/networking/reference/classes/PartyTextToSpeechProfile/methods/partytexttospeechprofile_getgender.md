@@ -5,8 +5,7 @@ description: Gets the gender associated with this profile.
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/25/2019
-ROBOTS: NOINDEX,NOFOLLOW
+ms.date: 11/08/2019
 ---
 
 # PartyTextToSpeechProfile::GetGender  
@@ -24,7 +23,7 @@ PartyError GetGender(
 ### Parameters  
   
 **`gender`** &nbsp; [PartyGender*](../../../enums/partygender.md)  
-*library-allocated output*  
+*output*  
   
 The output profile gender.  
   

@@ -5,8 +5,7 @@ description: Configures the preferred microphone or recording device that the ch
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/26/2019
-ROBOTS: NOINDEX,NOFOLLOW
+ms.date: 11/08/2019
 ---
 
 # PartyLocalChatControl::SetAudioInput  
@@ -47,7 +46,7 @@ PartyError
   
 ## Remarks  
   
-If the specified device isn't present, the chat control will subscribe to audio device changes and use the device when it does appear.
+This method queues an asynchronous operation to configure the preferred recording device associated with this local chat control. If the method succeeds, a [PartyLocalChatAudioInputChangedStateChange](../../../structs/partylocalchataudioinputchangedstatechange.md) will be provided by [PartyManager::StartProcessingStateChanges()](../../PartyManager/methods/partymanager_startprocessingstatechanges.md) with details about the input device status and a [PartySetChatAudioInputCompletedStateChange](../../../structs/partysetchataudioinputcompletedstatechange.md) will be provided upon completion of the operation, indicating success or failure. After completion, an additional [PartyLocalChatAudioInputChangedStateChange](../../../structs/partylocalchataudioinputchangedstatechange.md) will be provided each time the audio device status changes, such as due to device removal. <br /><br /> If the specified device isn't present, the chat control will subscribe to audio device changes and use the device when it does appear.
   
 ## Requirements  
   

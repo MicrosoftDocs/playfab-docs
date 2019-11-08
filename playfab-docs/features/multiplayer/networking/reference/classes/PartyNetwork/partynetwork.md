@@ -5,8 +5,7 @@ description: TBD
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/25/2019
-ROBOTS: NOINDEX,NOFOLLOW
+ms.date: 11/08/2019
 ---
 
 # PartyNetwork  
@@ -29,12 +28,12 @@ class PartyNetwork
 | [RevokeInvitation](methods/partynetwork_revokeinvitation.md) | Queues an asynchronous attempt to revoke an invitation from the network. |  
 | [GetInvitations](methods/partynetwork_getinvitations.md) | Gets an array containing all invitations exposed to the local device. |  
 | [CreateEndpoint](methods/partynetwork_createendpoint.md) | Queues an asynchronous attempt to create a local endpoint. |  
-| [DestroyEndpoint](methods/partynetwork_destroyendpoint.md) | Queues an asynchronous attempt to destroy a local endpoint. |  
-| [LeaveNetwork](methods/partynetwork_leavenetwork.md) | Leaves the network. |  
+| [DestroyEndpoint](methods/partynetwork_destroyendpoint.md) | Queues an asynchronous operation to destroy a local endpoint. |  
+| [LeaveNetwork](methods/partynetwork_leavenetwork.md) | Queues an asynchronous operation to leave the network gracefully. |  
 | [GetEndpoints](methods/partynetwork_getendpoints.md) | Gets the endpoints in this network. |  
 | [FindEndpointByUniqueIdentifier](methods/partynetwork_findendpointbyuniqueidentifier.md) | Finds the endpoint with the corresponding network-unique identifier in this network, if it exists. |  
 | [GetDevices](methods/partynetwork_getdevices.md) | Gets the devices in this network. |  
-| [GetLocalUsers](methods/partynetwork_getlocalusers.md) | Gets an array containing the local users that are authenticated into the network. |  
+| [GetLocalUsers](methods/partynetwork_getlocalusers.md) | Gets an array containing the local users that are authenticated or authenticating into the network. |  
 | [GetNetworkDescriptor](methods/partynetwork_getnetworkdescriptor.md) | Gets the network descriptor for this network. |  
 | [GetNetworkConfiguration](methods/partynetwork_getnetworkconfiguration.md) | Gets the network configuration which was set when creating the network. |  
 | [ConnectChatControl](methods/partynetwork_connectchatcontrol.md) | Connects the local chat control to the network. |  

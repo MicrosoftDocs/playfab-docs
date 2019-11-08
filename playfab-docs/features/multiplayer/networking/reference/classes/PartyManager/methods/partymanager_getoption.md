@@ -5,8 +5,7 @@ description: Retrieves an option used to fine-tune Party library functionality.
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 10/30/2019
-ROBOTS: NOINDEX,NOFOLLOW
+ms.date: 11/08/2019
 ---
 
 # PartyManager::GetOption  
@@ -35,7 +34,7 @@ The Party library object that may be required as context for different [PartyOpt
 The Party library option to retrieve.  
   
 **`value`** &nbsp; void*  
-*library-allocated output*  
+*output*  
   
 An output value to fill with the current `option` setting. If this option has not yet been overridden by a call to [PartyManager::SetOption()](partymanager_setoption.md), this method will retrieve that option's default value.  
   

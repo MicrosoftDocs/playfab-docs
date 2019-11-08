@@ -5,8 +5,7 @@ description: Gets the PartyXblLocalChatUser version of this chat user.
 ms.author: alstonge
 ms.topic: reference
 ms.prod: playfab
-ms.date: 11/01/2019
-ROBOTS: NOINDEX,NOFOLLOW
+ms.date: 11/08/2019
 ---
 
 # PartyXblChatUser::GetLocal  
@@ -24,7 +23,7 @@ PartyError GetLocal(
 ### Parameters  
   
 **`localChatUser`** &nbsp; [PartyXblLocalChatUser**](../../PartyXblLocalChatUser/partyxbllocalchatuser.md)  
-*output, may return nullptr*  
+*library-allocated output, may return nullptr*  
   
 The output local version of this chat user object, or nullptr if this is not a local chat user.  
   

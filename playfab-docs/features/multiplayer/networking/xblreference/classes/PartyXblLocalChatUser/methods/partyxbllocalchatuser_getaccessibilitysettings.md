@@ -5,8 +5,7 @@ description: Returns the accessibility settings associated with this chat user.
 ms.author: alstonge
 ms.topic: reference
 ms.prod: playfab
-ms.date: 11/01/2019
-ROBOTS: NOINDEX,NOFOLLOW
+ms.date: 11/08/2019
 ---
 
 # PartyXblLocalChatUser::GetAccessibilitySettings  
@@ -24,7 +23,7 @@ PartyError GetAccessibilitySettings(
 ### Parameters  
   
 **`settings`** &nbsp; [PartyXblAccessibilitySettings*](../../../structs/partyxblaccessibilitysettings.md)  
-*library-allocated output*  
+*output*  
   
 The output accessibility settings.  
   

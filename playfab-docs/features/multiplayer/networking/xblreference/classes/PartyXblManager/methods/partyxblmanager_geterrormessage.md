@@ -5,8 +5,7 @@ description: Get the human-readable form of an error.
 ms.author: alstonge
 ms.topic: reference
 ms.prod: playfab
-ms.date: 11/01/2019
-ROBOTS: NOINDEX,NOFOLLOW
+ms.date: 11/08/2019
 ---
 
 # PartyXblManager::GetErrorMessage  
@@ -29,7 +28,7 @@ PartyError GetErrorMessage(
 An error code.  
   
 **`errorMessage`** &nbsp; [PartyString*](../../../../../networking/reference/typedefs.md)  
-*output*  
+*library-allocated output*  
   
 The output, human-readable error message.  
   

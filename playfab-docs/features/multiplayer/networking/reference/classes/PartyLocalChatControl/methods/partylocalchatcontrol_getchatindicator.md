@@ -5,8 +5,7 @@ description: Provides a chat indicator specifying the audio state of a target ch
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/25/2019
-ROBOTS: NOINDEX,NOFOLLOW
+ms.date: 11/08/2019
 ---
 
 # PartyLocalChatControl::GetChatIndicator  
@@ -29,7 +28,7 @@ PartyError GetChatIndicator(
 The target chat control.  
   
 **`chatIndicator`** &nbsp; [PartyChatControlChatIndicator*](../../../enums/partychatcontrolchatindicator.md)  
-*library-allocated output*  
+*output*  
   
 The chat indicator.  
   

@@ -5,8 +5,7 @@ description: Gets an array containing all chat users created by [CreateLocalChat
 ms.author: alstonge
 ms.topic: reference
 ms.prod: playfab
-ms.date: 11/01/2019
-ROBOTS: NOINDEX,NOFOLLOW
+ms.date: 11/08/2019
 ---
 
 # PartyXblManager::GetChatUsers  
@@ -25,7 +24,7 @@ PartyError GetChatUsers(
 ### Parameters  
   
 **`userCount`** &nbsp; uint32_t*  
-*library-allocated output*  
+*output*  
   
 An output value indicating the number of chat users provided in `chatUsers`.  
   

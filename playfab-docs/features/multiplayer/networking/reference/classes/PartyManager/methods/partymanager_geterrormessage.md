@@ -5,8 +5,7 @@ description: Get the human-readable form of an error.
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/26/2019
-ROBOTS: NOINDEX,NOFOLLOW
+ms.date: 11/08/2019
 ---
 
 # PartyManager::GetErrorMessage  
@@ -29,7 +28,7 @@ PartyError GetErrorMessage(
 An error code.  
   
 **`errorMessage`** &nbsp; [PartyString*](../../../typedefs.md)  
-*output*  
+*library-allocated output*  
   
 The output, human-readable error message.  
   

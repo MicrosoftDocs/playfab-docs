@@ -6,7 +6,6 @@ ms.author: alstonge
 ms.date: 8/21/2019
 ms.topic: article
 ms.prod: playfab
-ROBOTS: NOINDEX,NOFOLLOW
 keywords: playfab, multiplayer, networking
 ---
 
