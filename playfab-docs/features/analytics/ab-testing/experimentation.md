@@ -99,20 +99,23 @@ At completion,
 PlayFab has pre-identified the simple, effective, and actionable set of metrics for analysis of experimentation results. These are tracked and categorized to measure impact on the acquisition, activation, retention, and revenue of the title. These are computed on player_logged_in and player_realmoney_purchase events. 
 
 The identified metrics are:  
-| **Type**     | **Metric**  | 
-|:---------------------- |:-----------------------------------| 
-| Acquisition               | Average Login Per User |
-| Activation                | Payer Conversion Rate  |
-| Revenue                   | Average Revenue Per Payer|
-| Revenue                   | Average Transactions Count Per Payer                 |
-| Retention                 | Day N Retention (N = 1, 2, 3, 5, 7, 14, 21 day)|
+
+
+| **Type**                    | **Metric**                              | 
+|:---------------------------------- |:-----------------------------------| 
+| **Acquisition**        | Average Login Per User |
+| **Activation**         | Payer Conversion Rate |
+| **Revenue**            | Average Revenue Per Payer |
+| **Revenue**            | Average Transactions Count Per Payer |
+| **Retention**          | Day N Retention (N = 1, 2, 3, 5, 7, 14, 21 day) |
+
 
 ## Experimentation APIs
 
 PlayFab has scalable and integrable APIs for experimentation as below: 
 
 > [!Note]
-> Note: API details and access will be provided on Public Preview 
+> API details and access will be provided on Public Preview 
 
 The APIs and associated operation details are:  
 

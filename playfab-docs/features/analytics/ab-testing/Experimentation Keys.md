@@ -124,4 +124,4 @@ A type 2 error is a measure of “false negatives,” an incorrect belief that a
     p-values are used to determine statistical significance in a null hypothesis onto which AB experiments are based. Basically, it measures the compatibility between the collected data and the null hypothesis. The lower it is, the more confident one can be in rejecting the null hypothesis
 -	**Keep an open mind**
 
-    At times, one ignores statistical information in favor of using conventional knowledge or even previous experience, to make decision. Use A/B experiment data to inform business decisions – no matter how much it surprises you. If you are not convinced by the results of a test, run it again and compare the data
+    At times, one ignores statistical information in favor of using conventional knowledge or even previous experience, to make decision. Use A/B experiment data to inform business decisions – no matter how much it surprises you. If you are not convinced by the results of a test, run it again and compare the data.
