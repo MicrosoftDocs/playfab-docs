@@ -37,7 +37,7 @@ PlayFab’s Experiment is a tailored solution for A/B experimentation in gaming.
 
 ### PlayFab Experimentation at a Glance
 
-![Screenshot of Experimentation at a Glance](media/tutorials/game-manager-new-ab-test.png/playFab-Experimentation-at-a-glance.png "Experimentation at a Glance")
+![Screenshot of Experimentation at a Glance](media/tutorials/playFab-Experimentation-at-a-glance.png "Experimentation at a Glance")
 
 PlayFab’s Experiments enables to run multiple concurrent experiments in managed and controlled randomization manner. In the process, 
 
@@ -52,7 +52,7 @@ PlayFab’s Experiments enables to run multiple concurrent experiments in manage
 
 An experiment is created to compare a control variant against one or more treatment variant (up to 9). The experiment is controlled and managed as the target audience is as per the user-input. 
 
-From the Game Manager, 	
+From the Game Manager: 	
 - Navigate to your **Title** 
 - Select **Experimentation** from the menu on the left 
 - Click on **New A/B Experiment**, experiment configuration page is opened 
@@ -66,7 +66,7 @@ From the Game Manager,
   * With Save Experiment the experiment will be in **Drafted** status in the manage experiment page
   * With Save and Run Experiment the experiment will be in **Running** status in the manage experiment page 
 
-![Screenshot of Experimentation at a Glance](media/tutorials/game-manager-new-ab-test.png/create_edit-an-experiment.JPG "Create an Experiment")
+![Screenshot of Experimentation at a Glance](media/tutorials/create_edit-an-experiment.JPG "Create an Experiment")
 
 ### Manage Experiment
 
@@ -77,7 +77,7 @@ One can modify an experiment when it is in drafted status. Each field is modifia
   * A few other actions can be taken in an experiment, like, **Clone**, **Rerun**, ****Delete**. The applicability and availability of the option is based on the state the experiment
 - Once the duration of the experiment is reached or a user explicitly stops the experiment, the experiment status is turned **Stopped/ completed**
 
-![Screenshot of Experimentation at a Glance](media/tutorials/game-manager-new-ab-test.png/manage-an-experiment.JPG "Manage an Experiment")
+![Screenshot of Experimentation at a Glance](media/tutorials/manage-an-experiment.JPG "Manage an Experiment")
 
 ### Analyze Experiment  
 
@@ -85,14 +85,14 @@ Experiments results will be showed in a scorecard which is generated in a regula
 
 Once the experiment is complted or stopped, click on the **View Scorecard** link of the experiment from the manage experiment page,
 
-At the run, 
+At the run: 
  * If an issue of Statistical Ratio Mismatch (SRM) is identified, then it is flagged to the user for investigation
   * SRM indicates sampling bias in the randomization which leads to the options of resolving bugs (if any), wait till certain duration of the experiment for auto-resolution or immediately stop the experiment based on the estimated impact 
 
-At completion,   
- * Th overall statistical computation of each metric is available for analysis
+At the completion:  
+ * The overall statistical computation of each metric is available for analysis
 
-![Screenshot of Experimentation at a Glance](media/tutorials/game-manager-new-ab-test.png/manage-an-experiment.JPG "Manage an Experiment")
+![Screenshot of Experimentation at a Glance](media/tutorials/view-scorecard.png "Manage an Experiment")
 
 ## Scorecard Metrics
 
@@ -112,21 +112,19 @@ The identified metrics are:
 
 ## Experimentation APIs
 
-PlayFab has scalable and integrable APIs for experimentation as below: 
-
 > [!Note]
 > API details and access will be provided on Public Preview 
 
-The APIs and associated operation details are:  
+PlayFab has scalable and integrable APIs for experimentation. The APIs and associated operation details are as below:  
 
 | **API Name**                    | **Operation**                              | 
 |:---------------------------------- |:-----------------------------------| 
-| **Create Experiment**        | It allows client to request creation of an experiment for the title. The experiment configuration gets defined as part of it, containing the experiment details, like target audience, start date, variant groups, and associated variables for orchestrating the change in experience (or treatment assignment). The treatment assignment can include virtually anything on client or PlayFab services |
-| **Update Experiment**        | It allows client to request update in experiment configuration of an existing experiment for the title based on the experimentation ID |
-| **Start Experiment**         | It allows client to request start of an existing experiment for the title based on the experiment ID. The client code gets orchestrated for the change in experience as per the treatment assignment given for the experimental study on the target audience |
-| **Stop Experiment**          | It allows client to request stop of an existing running experiment for the title based on the experiment ID. The default client code (control variant) gets orchestrated for the change in experience for the entire audience |
-| **Delete Experiment**        | It allows client to request delete of an experiment in completed/ stopped status for the title based on the experiment ID |
-| **Get Experiment**           | Lists all the experiments and its details of drafted, running and completed an experiment for the title |
-| **Get Treatment Assignment** | List the treatment assignments for a player for every running experiment in the title |
-| **Get Experiment Scorecard** | Gives the latest scorecard result for an experiment of the title |
-| **Get Title Scorecards**     | Gives the latest scorecard results for all the experiments of the title |
+| **Create Experiment**        | It allows client to request creation of an experiment for the title. The experiment configuration gets defined as part of it, containing the experiment details, like target audience, start date, variant groups, and associated variables for orchestrating the change in experience (or treatment assignment). The treatment assignment can include virtually anything on client or PlayFab services. |
+| **Update Experiment**        | It allows client to request update in experiment configuration of an existing experiment for the title based on the experimentation ID. |
+| **Start Experiment**         | It allows client to request start of an existing experiment for the title based on the experiment ID. The client code gets orchestrated for the change in experience as per the treatment assignment given for the experimental study on the target audience. |
+| **Stop Experiment**          | It allows client to request stop of an existing running experiment for the title based on the experiment ID. The default client code (control variant) gets orchestrated for the change in experience for the entire audience. |
+| **Delete Experiment**        | It allows client to request delete of an experiment in completed/ stopped status for the title based on the experiment ID. |
+| **Get Experiment**           | Lists all the experiments and its details of drafted, running and completed an experiment for the title. |
+| **Get Treatment Assignment** | List the treatment assignments for a player for every running experiment in the title. |
+| **Get Experiment Scorecard** | Gives the latest scorecard result for an experiment of the title. |
+| **Get Title Scorecards**     | Gives the latest scorecard results for all the experiments of the title. |
