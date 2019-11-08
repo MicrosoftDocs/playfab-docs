@@ -116,8 +116,8 @@ PlayFab has scalable and integrable APIs for experimentation as below:
 
 The APIs and associated operation details are:  
 
-| **API Name**    | **Operation**                              | 
-|:---------------------- |:-----------------------------------| 
+| **API Name**                    | **Operation**                              | 
+|:---------------------------------- |:-----------------------------------| 
 | **Create Experiment**        | It allows client to request creation of an experiment for the title. The experiment configuration gets defined as part of it, containing the experiment details, like target audience, start date, variant groups, and associated variables for orchestrating the change in experience (or treatment assignment). The treatment assignment can include virtually anything on client or PlayFab services |
 | **Update Experiment**        | It allows client to request update in experiment configuration of an existing experiment for the title based on the experimentation ID |
 | **Start Experiment**         | It allows client to request start of an existing experiment for the title based on the experiment ID. The client code gets orchestrated for the change in experience as per the treatment assignment given for the experimental study on the target audience |
