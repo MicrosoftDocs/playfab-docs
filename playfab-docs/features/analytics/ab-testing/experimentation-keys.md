@@ -29,8 +29,9 @@ Here are some common goals for the game studios when A/B testing:
 - Higher Conversion Rate
 - Lower Churn Rate
 
-## Statistical Significance of an Experiment
-A result of an experiment is said to have statistical significance, or be statistically significant, if it is likely not caused by chance for a given statistical significance level. 
+## Experiment's trustworthiness is a must
+
+An experiment's trustworthiness is equated by the Statistical Significance of the experiment results. An experiment is said to be have statistical significance, or be statistically significant, if it is likely not caused by chance. 
 
 When you make decisions based on the results of experiments that you are running, you will want to make sure that a relationship exists. Statistical significance indicates it. 
 
