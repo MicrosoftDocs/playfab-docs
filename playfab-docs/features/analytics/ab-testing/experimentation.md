@@ -12,12 +12,6 @@ ms.localizationpriority: medium
 
 # Experimentation
 
-> [!IMPORTANT]
-> This improvised experimentation feature is currently in **Private Preview**. 
-> It is provided to give you an early look at an upcoming feature, and to allow you to provide feedback while it is still in development. 
-> 
-> Access to this feature is restricted to select titles. If you are interested in trying it, please contact us at [helloplayfab@microsoft.com](mailto:helloplayfab@microsoft.com). 
-
 ## Overview
 
 PlayFab’s **Experimentation** feature enables you to elevate the player experience by helping you identify the best strategies for your game via A/B experiment. It does so by helping you run multiple simultaneous trustworthy experiment and analysis. 
@@ -58,9 +52,9 @@ From the Game Manager:
 - Click on **New A/B Experiment**, experiment configuration page is opened 
 - Enter **Experiment Name**, **Description**, **Duration** (up to 21 days) and **Flight to Population %** 
 - Under **Settings**, define the **Control Variant** and **Treatment Variant** 
-  * Each variant is supported and defined by **Variables** (up to 10). These variables are attributes on variant groups that allow you to bundle different set of user-experience via parameterization
-  * This variable parametrization configures the feature settings for variants without deploying new code. This allows you to iterate faster on changes and make fixes and updates to live games. It is recommended to have name variable name in each of the variant group as a best practice of experimentation  
-  * A/B Experimentation is a controlled experiment, hence, a weight % determines the traffic ratio to be in-flighted for target audience. Ideally, a ratio of 1:1 is recommended  
+  * Each variant is supported and defined by **Variables** (up to 10) and associated weight %. These variables are attributes on variant groups that allow you to bundle different set of user-experience via parameterization
+  * This variable parametrization configures the feature settings for variants without deploying new code. This allows you to iterate faster on changes and make fixes and updates to live games. It is recommended to have same variable name in each of the variant group as a best practice of experimentation  
+  * A/B Experimentation is a controlled experiment, hence, a **weight %** determines the traffic ratio to be in-flighted for target audience. Ideally, a ratio of 1:1 is recommended  
   * An experiment can be configured to run on a Segment
 - Click **Save Experiment** or **Save and Run Experiment** 
   * With Save Experiment the experiment will be in **Drafted** status in the manage experiment page
