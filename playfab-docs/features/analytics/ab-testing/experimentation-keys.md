@@ -12,12 +12,12 @@ ms.localizationpriority: medium
 
 # Experimentation Recap
 
-## A/B Experimentation
+## Experimentation
 A/B Experimentation is a method of comparing two or more different versions (or variants) of a game experience against each other to determine the one which performs or converts the best. This is done so by splitting users randomly into two or more groups and provding those different experiences to each group over a period of time, and statistical analysis is done on the collected telemetry to determine which variation performs better based on the goals you decide for the experiment. 
 
 Please note, despite the name (A/B Experimentation), the experiment can be conducted with as many versions as desired. Also, you can run experiment to compare against existing or entirely new version of the game screen(s). 
 
-## Reasons A/B Experimentation matters
+## Reasons Experimentation matters
 If you know what works and what doesn’t, and have data to back it up, it is easier to make decision, and you can often craft more effective game design, experiences, marketing strategies from the outset. Just remember to keep testing regularly, since the effectiveness of anything can change over time. 
 
 Regardless of what stage of game development journey (creation or operation) you’re on, PlayFab’s A/B experimentation allows individuals, teams, and studios to make careful changes to the game experiences while collecting empirical data which in-turn helps you figure out exactly what works best for the game. 
@@ -29,7 +29,7 @@ Here are some common goals for the game studios when A/B testing:
 - Higher Conversion Rate
 - Lower Churn Rate
 
-## Experiment's trustworthiness is a must
+## Experiment's trustworthiness is Important
 
 An experiment's trustworthiness is equated by the Statistical Significance of the experiment results. An experiment is said to be have statistical significance, or be statistically significant, if it is likely not caused by chance. 
 
