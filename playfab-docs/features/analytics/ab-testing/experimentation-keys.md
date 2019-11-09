@@ -22,7 +22,7 @@ If you know what works and what doesn’t, and have data to back it up, it is ea
 
 Regardless of what stage of game development journey (creation or operation) you’re on, PlayFab’s A/B experimentation allows individuals, teams, and studios to make careful changes to the game experiences while collecting empirical data which in-turn helps you figure out exactly what works best for the game. 
 
-A/B experimentation helps you transform from “we think” to “we know” decision making power as it gives you insights into gamer’s behavior. It is an effective practice which continuously allow room for growth of your game, be it on any conversion arena - engagement and monetization. Also, one can make better use of the resources and easily enable/ disable game features in a live game.
+A/B experimentation helps you transform from “we think” to “we know” decision making power. It is an effective practice which gives you insights into gamer’s behavior with controlled and limited audience (player traffic). Thus, protecting your player base from repulsive game experience. Also, one can make better use of the resources and easily enable/ disable game features in a live game. 
 
 Here are some common goals for the game studios when A/B testing:
 - Increased Active Player Base 
