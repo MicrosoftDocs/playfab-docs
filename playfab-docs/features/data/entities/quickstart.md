@@ -179,7 +179,6 @@ public class EntityFileExample : MonoBehaviour
         {
             CustomId = SystemInfo.deviceUniqueIdentifier,
             CreateAccount = true,
-            LoginTitlePlayerAccountEntity = true
         };
         PlayFabClientAPI.LoginWithCustomID(request, OnLogin, OnSharedFailure);
     }
@@ -266,7 +265,7 @@ public class EntityFileExample : MonoBehaviour
         );
         GlobalFileLock -= 1; // Finish InitiateFileUploads
     }
-    void FinalizeUpload()
+    void FinalizeUpload(byte[] data)
     {
         GlobalFileLock += 1; // Start FinalizeFileUploads
         var request = new PlayFab.DataModels.FinalizeFileUploadsRequest
