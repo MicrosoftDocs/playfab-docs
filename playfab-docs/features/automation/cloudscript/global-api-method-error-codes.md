@@ -19,6 +19,9 @@ Each API error contains the following fields:
 - **Error** - A human-readable code for the error.
 - **ErrorCode** - A numerical code for the error.
 
+> [!NOTE]
+> This page lists the common error codes that you might encounter. If the error code you are looking for is not available on this page, ask for additional information on the [PlayFab forum](https://community.playfab.com/spaces/24/index.html).
+
 ## Safe to retry codes
 
 It is usually safe to retry requests that fail with these error codes, with an exponential delay back-off. These errors typically mean that your client is making calls too quickly, but the request itself may be valid.
