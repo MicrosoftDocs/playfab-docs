@@ -61,7 +61,7 @@ PlayFabMultiplayerAPI.CreateMatchmakingTicket(
             },
         },
 
-        // Cancel matchmaking if a match is not found after 600 seconds.
+        // Cancel matchmaking if a match is not found after 120 seconds.
         GiveUpAfterSeconds = 120,
 
         // The name of the queue to submit the ticket into.
@@ -187,6 +187,6 @@ Using this quickstart, you should now have a successful matchmaking flow in your
 
 ### Known issues and limitations
 
-In Public Preview, polling of tickets is required to obtain the the match status and match ID. In the near future, we will have a push mechanism for the clients to be updated on state changes.
+In Public Preview, polling of tickets is required to obtain the match status and match ID. In the near future, we will have a push mechanism for the clients to be updated on state changes.
 
 The multi-user ticket flow will also be improved by the push mechanism. Follow the [PlayFab blog](https://blog.playfab.com/blog) for future updates on improvements to matchmaking.
