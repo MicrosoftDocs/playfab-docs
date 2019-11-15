@@ -12,6 +12,8 @@
     href: android-specific-requirements.md
   - name: iOS getting started
     href: ios-specific-requirements.md
+  - name: AppX manifest for Xbox One
+    href: concepts-project-config.md
 - name: Networking and security
   items:
   - name: Invitations and the security model
