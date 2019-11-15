@@ -679,7 +679,7 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>Items</h3>
-                                                <p style='color: #7f7f7f'>Items and inventories are common mechanisms to add customization and depth to your game. PlayFab gives you top-notch support to define and track items for your game and and support a cloud based inventory for your players.</p><p><a href='/gaming/playfab/features/commerce/items/'>Overview</a></p><p><a href='/gaming/playfab/features/commerce/items/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/commerce/items/tutorials'>Tutorials</a></p>
+                                                <p style='color: #7f7f7f'>Items and inventories are common mechanisms to add customization and depth to your game. PlayFab gives you top-notch support to define and track items for your game and support a cloud based inventory for your players.</p><p><a href='/gaming/playfab/features/commerce/items/'>Overview</a></p><p><a href='/gaming/playfab/features/commerce/items/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/commerce/items/tutorials'>Tutorials</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -696,7 +696,7 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>Stores</h3>
-                                                <p style='color: #7f7f7f'>Stores serve a subset of Catalog Items; these items can be offered at alternative prices when compared to those set on the corresponding Catalog and are the best way to manage virtual purchases in your game. You can use the Game Manager or APIs to change the order of items, adjust prices, and leverage Plafab Segments to give special prices to certain players, run special sales events, or handle customized in-game vendors.</p><p><a href='/gaming/playfab/features/commerce/stores/'>Overview</a></p><p><a href='/gaming/playfab/features/commerce/stores/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/commerce/stores/tutorials'>Tutorials</a></p>
+                                                <p style='color: #7f7f7f'>Stores serve a subset of Catalog Items; these items can be offered at alternative prices when compared to those set on the corresponding Catalog and are the best way to manage virtual purchases in your game. You can use the Game Manager or APIs to change the order of items, adjust prices, and leverage PlayFab Segments to give special prices to certain players, run special sales events, or handle customized in-game vendors.</p><p><a href='/gaming/playfab/features/commerce/stores/'>Overview</a></p><p><a href='/gaming/playfab/features/commerce/stores/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/commerce/stores/tutorials'>Tutorials</a></p>
                                             </div>
                                         </div>
                                     </div>
