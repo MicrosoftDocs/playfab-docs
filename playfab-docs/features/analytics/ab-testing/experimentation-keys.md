@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 # Experimentation Recap
 
 ## Experimentation
-A/B Experimentation is a method of comparing two or more different versions (or variants) of a game experience against each other to determine the one which performs or converts the best. This is done so by splitting users randomly into two or more groups and provding those different experiences to each group over a period of time, and statistical analysis is done on the collected telemetry to determine which variation performs better based on the goals you decide for the experiment. 
+A/B Experimentation is a method of comparing two or more different versions (or variants) of a game experience against each other to determine the one which performs or converts the best. This is done by splitting users randomly into two or more groups and provding different experiences to each group over a period of time, and statistical analysis is done on the collected telemetry to determine which variation performs better based on the goals you decide for the experiment. 
 
 Please note, despite the name (A/B Experimentation), the experiment can be conducted with as many versions as desired. Also, you can run experiment to compare against existing or entirely new version of the game screen(s). 
 

@@ -14,13 +14,13 @@ ms.localizationpriority: medium
 
 ## Overview
 
-PlayFab’s **Experimentation** feature enables you to elevate the player experience by helping you identify the best strategies for your game via A/B experiment. It does so by helping you run multiple simultaneous trustworthy experiment and analysis. 
+PlayFab’s **Experimentation** feature enables you to elevate the player experience by helping you identify the best strategies for your game via A/B experiment. It does so by helping you run multiple simultaneous trustworthy experiments with statistical analysis. 
 
-You can compare different versions of game configurations, pricing models, and outreach mechanisms to determine which is better in bringing conversions. This enables you to make data-informed decisions an area like your game’s roll-out strategy or feature changes of the game, ensuring that every change produces positive results.
+You can compare different versions of game configurations, pricing models, and outreach mechanisms to determine which is better in bringing conversions. This enables you to make data-informed decisions in area like your game’s roll-out strategy or feature changes of the game, ensuring that every change produces positive results.
 
 ### Capabilities of PlayFab’s Experimentation 
 
-PlayFab’s Experiment is a tailored solution for A/B experimentation in gaming. It is powered by Microsoft’s scalable and reliable experiment and statistics computation platform. This feature empowers you in your A/B experiment journey by providing the following capabilities:
+PlayFab’s Experimentation is a tailored solution for A/B experimentation in gaming. It is powered by Microsoft’s scalable and reliable experiment and statistics computation platform. This feature empowers you in your A/B experiment journey by providing the following capabilities:
 
 - Create, manage, and analyze A/B experiments via Game Manager or APIs. 
 - Run multiple concurrent experiments 
@@ -33,18 +33,19 @@ PlayFab’s Experiment is a tailored solution for A/B experimentation in gaming.
 
 ![Screenshot of Experimentation at a Glance](media/tutorials/playFab-Experimentation-at-a-glance.png "Experimentation at a Glance")
 
-PlayFab’s Experiments enables to run multiple concurrent experiments in managed and controlled randomization manner. In the process, 
+PlayFab’s Experimentation enables to run multiple concurrent experiments in managed and controlled randomization manner. In the process, 
 
 - A unique identifier for each running experiment’s variant groups called variant ID is tagged to each player profile. These variant IDs enables you to assign different treatments via any client or server-side code
 - Each variant group is supported and defined by variables. These variables are attributes on variant groups that allow you to bundle a different set of game experience via parameterization
-- The computation of the experiment for reliable results takes care of statistical significance level
-- Despite your best attempt to in-flight the traffic to suitable audience, there are certain cases where ratio of traffic allocation is way off. PlayFab’s experimentation feature flags such issues enabling you to run reliable experiment 
+-	Reliable computation of results of an experiment with statistical significance  calculation 
+-	Detection of issues when the targeted audience traffic is way off. This is often caused by a treatment causing crashes or affecting logging. PlayFab’s experimentation feature flags such issues enabling you to run reliable experiment   
+
 
 ## Quick Start
 
 ### Create an Experiment
 
-An experiment is created to compare a control variant against one or more treatment variant (up to 9). The experiment is controlled and managed as the target audience is as per the user-input. 
+An experiment is created to compare a control variant against one or more treatment variant (up to 9). The experiment is managed through a target audience controlled by the user.
 
 From the Game Manager: 	
 - Navigate to your **Title** 
@@ -53,7 +54,8 @@ From the Game Manager:
 - Enter **Experiment Name**, **Description**, **Duration** (up to 21 days) and **Flight to Population %** 
 - Under **Settings**, define the **Control Variant** and **Treatment Variant** 
   * Each variant is supported and defined by **Variables** (up to 10) and associated weight %. These variables are attributes on variant groups that allow you to bundle different set of user-experience via parameterization
-  * This variable parametrization configures the feature settings for variants without deploying new code. This allows you to iterate faster on changes and make fixes and updates to live games. It is recommended to have same variable name in each of the variant group as a best practice of experimentation  
+  * This variable parametrization configures the feature settings for variants without deploying new code. This allows you to iterate faster on changes and make fixes and updates to live games. It is recommended to have same variable name in each of the variant group as a best practice of experimentation 
+  * It is recommended to have same variable name in each of the variant group as a best practice of experimentation        
   * A/B Experimentation is a controlled experiment, hence, a **weight %** determines the traffic ratio to be in-flighted for target audience. Ideally, a ratio of 1:1 is recommended  
   * An experiment can be configured to run on a Segment
 - Click **Save Experiment** or **Save and Run Experiment** 
