@@ -3,7 +3,7 @@ title: Experimentation Conceptual Recap
 author: shikha-tarware
 description: Experimentation Conceptual Recap and Best Practices.
 ms.author: shtarwar
-ms.date: 11/07/2019
+ms.date: 11/19/2019
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, analytics, a/b testing, experimentation
