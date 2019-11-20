@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 PlayFab’s **Experimentation** feature enables you to elevate the player experience by helping you identify the best strategies for your game via A/B experiment. It does so by helping you run multiple simultaneous trustworthy experiments with statistical analysis. 
 
-You can compare different versions of game configurations, pricing models, and outreach mechanisms to determine which is better in bringing conversions. This enables you to make data-informed decisions in area like your game’s roll-out strategy or feature changes of the game, ensuring that every change produces positive results.
+You can compare different versions of game configurations, pricing models, and outreach mechanisms, determining the best variation for your titles goals (engagement, monetization, retention, etc.)
 
 ### Capabilities of PlayFab’s Experimentation 
 
