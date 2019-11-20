@@ -42,9 +42,13 @@
   items:
   - name: Accessing increased core limits and additional Azure regions
     href: identifying-and-increasing-core-limits.md
-  - name: Billing for PlayFab Multiplayer Servers 
+  - name: Azure Enterprise Agreement (EA) billing for PlayFab services
+    href: ea-billing.md
+  - name: Billing for PlayFab Multiplayer Servers
     href: billing-for-thunderhead.md
   - name: Detailed price sheet for multiplayer servers
     href: multiplayer-servers-detailed-price-sheet.md
   - name: PlayFab incident response procedures
     href: comm-sla.md
+  - name: Tracking title consumption of multiplayer servers
+    href: tracking-consumption.md

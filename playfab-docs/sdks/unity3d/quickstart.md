@@ -51,7 +51,7 @@ The best way to acquire our Unity SDK is via the Unity editor extensions right w
 
 1. Download and Import the [PlayFab Unity Editor Extensions package](https://github.com/PlayFab/UnityEditorExtensions/raw/master/Packages/PlayFabEditorExtensions.unitypackage).
 
-2. To import the the Unity Editor Extensions package, navigate to where the file was downloaded, and double-click on the .UnityPackage file. This will bring up the following window.
+2. To import the Unity Editor Extensions package, navigate to where the file was downloaded, and double-click on the .UnityPackage file. This will bring up the following window.
 
    ![Import Unity package](media/import-uedex.png)
 
