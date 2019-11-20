@@ -127,7 +127,7 @@ int main()
 
 This optional last section describes each part of `ConsoleApplication1.cpp` in detail.
 
-- Includes PlayFab access to the the Client APIs.
+- Includes PlayFab access to the Client APIs.
   - In this example, `Windows.h` is only used for `Sleep()`.
 
 - Using namespaces in PlayFab and PlayFab::ClientModels.

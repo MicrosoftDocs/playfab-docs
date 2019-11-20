@@ -486,7 +486,7 @@ featureFlags:
                         </ul>
                     </li>
                     <li>
-                        <a href="#config">Config</a>
+                        <a href="#config">Configuration</a>
                         <ul id="config" class="cardsF">
                             <li class="fullSpan">
                                 <h2>PlayFab Config Features</h2>
