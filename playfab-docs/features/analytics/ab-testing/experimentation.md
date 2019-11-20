@@ -3,7 +3,7 @@ title: Experimentation
 author: shikha-tarware
 description: Demonstrates how to use experimentation.
 ms.author: shtarwar
-ms.date: 11/07/2019
+ms.date: 11/19/2019
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, analytics, a/b testing, experimentation
