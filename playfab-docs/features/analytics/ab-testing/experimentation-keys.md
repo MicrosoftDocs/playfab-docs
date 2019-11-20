@@ -31,15 +31,15 @@ Here are some common goals for the game studios when A/B testing:
 
 ## Experiment's trustworthiness is Important
 
-An experiment's trustworthiness is equated by the Statistical Significance of the experiment results. An experiment is said to be have statistical significance, or be statistically significant, if it is likely not caused by chance. 
+An experiment's trustworthiness is equated by the Statistical Significance of the experiment results. When you make decisions based on the results of experiments that you are running, you will want to make sure that a relationship/ causation exists. 
 
-When you make decisions based on the results of experiments that you are running, you will want to make sure that a relationship exists. Statistical significance indicates it. 
+Trustworthiness is focus of Playfab’s experiment results. All metrics are checked for statistical significance. Playfab Experimentation only highlights statistically significant metric movements. 
 
-For example, if you run an A/B experiment with a significance level of 95%, this means that if you determine a winner, you can be 95% confident that the observed results are real and not an error caused by randomness. It also means that there is a 5% chance that you could be wrong.
+For example if you run an A/B experiment that measures a 2% lift in retention and it is show as statistically significant with a p-value of 0.04 that means there is a 96% chance the true difference between treatment and control is greater than zero and 2% is the most likely value. The true difference is not directly measurable, and statistics are used to get as close to it as we can. The 4% chance that natural noise or randomness of the system mislead us. 
 
-Statistical significance is important because it reflects your risk tolerance and confidence level. The metrics can fluctuate from day to day, and statistical analysis provides a sound mathematical foundation for making business decisions and eliminating false positives. 
+Statistical significance is important because it reflects your risk tolerance and confidence level. The metrics can fluctuate from day to day, and statistical analysis provides the sound mathematical foundation for making business decisions in a noisy environment. 
 
-PlayFab Experimentation operates on a build-in statistical computation engine which ensures 95% statistical significance level for your experiments.
+Playfab’s Experimentation flags metric movements as statistically significant at 95% confidence or a p-value of 0.05.
 
 ## Experimentations as a Practice
 
