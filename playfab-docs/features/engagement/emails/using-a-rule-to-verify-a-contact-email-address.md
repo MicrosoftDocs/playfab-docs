@@ -159,7 +159,7 @@ You can also make a call to [GetPlayerProfile](xref:titleid.playfabapi.com.clien
 
 Finally, we can check that the account recovery email was sent.
 
-The first thing you can do is to go to the the player's **PlayStream** in **Game Manager**:
+The first thing you can do is to go to the player's **PlayStream** in **Game Manager**:
 
 - Select **Players** in the menu to the left.
 - On the **Players** Tab,  go to the **PlayStream** area.

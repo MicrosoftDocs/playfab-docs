@@ -437,7 +437,7 @@ Creates and updates the title-specific custom data for the user which is readabl
     Validates a Game Server session ticket and returns details about the user.
 
 - [RemoveFriend](https://docs.microsoft.com/rest/api/playfab/server/friend-list-management/removefriend?view=playfab-rest)
-    Removes the specified friend from the the user's friend list.
+    Removes the specified friend from the user's friend list.
 
 - [RemoveGenericID](https://docs.microsoft.com/rest/api/playfab/server/account-management/removegenericid?view=playfab-rest)
     Removes the specified generic service identifier from the player's PlayFab account.

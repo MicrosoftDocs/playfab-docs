@@ -34,5 +34,5 @@ For now there will be no cost to game developers for the use of the UGC. UGC wil
 The following limitations exist in the system in its current state. Many of these will change in the future.
 
 - UGC *only* supports PlayFab Entities - you need to use entity-based authentication to utilize UGC.
-- UGC Ties into Playfab V2 Economy features, and does not work with the classic PlayFab commerce APIs
+- UGC Ties into PlayFab V2 Economy features, and does not work with the classic PlayFab commerce APIs
 - Although UGC Search and Item Details are part of the Game Manger preview UX flows do not exist for all of the V2 Monetization features. These are in development and will be coming online in the near future.

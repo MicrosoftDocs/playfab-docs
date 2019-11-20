@@ -44,7 +44,7 @@ There are two ways to get started with C# CloudScript using Azure Functions.  Th
 
 [!NOTE] In this guide, we will focus only on using Visual Studio Code. You can use any [language that is supported in Azure Functions](https://docs.microsoft.com/azure/azure-functions/supported-languages).  At this time the samples we provide with PlayFab integration uses the C# language.
 
-What is the the difference between the two?  The main difference is that our Visual Studio Code Extension provide some easy ways to registers and unregister functions with your PlayFab title. However, you do not need the extension to do this as there is a user interface for it in [Game Manager](https://developer.playfab.com/login).  We will cover more about this below.
+What is the difference between the two?  The main difference is that our Visual Studio Code Extension provide some easy ways to registers and unregister functions with your PlayFab title. However, you do not need the extension to do this as there is a user interface for it in [Game Manager](https://developer.playfab.com/login).  We will cover more about this below.
 
 ### Enable the Feature
 
