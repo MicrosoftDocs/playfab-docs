@@ -20,7 +20,7 @@
   items:
   - name: Deploying PlayFab multiplayer server builds
     href: deploying-playfab-multiplayer-server-builds.md
-  - name: Deploying Linux based builds via API
+  - name: Deploying Linux builds
     href: deploying-linux-based-builds.md
   - name: Using aliases to aggregate and manage multiple builds
     href: allocating-with-build-alias.md     

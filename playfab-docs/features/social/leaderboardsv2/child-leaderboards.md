@@ -27,7 +27,9 @@ An example to help understand this concept is to imagine an array of game stream
 
 When you are creating a new Leaderboard, you can specify whether you want child leaderboards. If so, you need to specify whether you want them to be Fixed or Dynamic:
 #### Fixed Child Leaderboards
- If you choose "Fixed", you can add up to 10 child leaderboards. Note that you won't be able to add more once the parent Statistic is created. Although the maximum number of fixed child leaderboards is 10, you are allowed to have very large child leaderboards under this option. You can visualize the parent leaderboard under this option as fairly *deep*.
+If you choose "Fixed", you can add up to 10 child leaderboards. Note that you won't be able to add more once the parent Statistic is created. Although the maximum number of fixed child leaderboards is 10, you are allowed to have very large child leaderboards under this option. You can visualize the parent leaderboard under this option as fairly *deep*.
 
 #### Dynamic  Child Leaderboards
-If you choose "Dynamic", you will need to specify the maximum size of your individual child leaderboards. You can rank at most 100 items on each child leaderboard. Then you can add child leaderboards "on-the-go" after you create your parant Statistic. While you are limited to having a small number of rankings on each child leaderboard, you are allowed to have a lot of child leaderboards in parallel. You can visualize the parent leaderboard under this option as fairly *wide*.
+If you choose "Dynamic", you will need to specify the maximum size of your individual child leaderboards. You can rank at most 100 items on each child leaderboard. Note that this size limit is maximum size of each individual child leaderboard, not the total number of child leaderboards that you are allowed to have. 
+
+You can add child leaderboards "on-the-go" after you create your parant Statistic. While you are limited to having a small number of rankings on each child leaderboard, you are allowed to have a lot of child leaderboards in parallel. You can visualize the parent leaderboard under this option as fairly *wide*.
