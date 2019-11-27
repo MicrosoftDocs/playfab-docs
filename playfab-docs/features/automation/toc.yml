@@ -4,6 +4,8 @@
   items:
   - name: CloudScript
     href: cloudscript/toc.yml
+    -name: CloudScript using Azure Functions
+    href: cloudscript-af/toc.yml
   - name: Actions and rules
     href: actions-rules/toc.yml
   - name: Scheduled tasks

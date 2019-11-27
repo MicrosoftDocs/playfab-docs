@@ -1,0 +1,13 @@
+- name: Overview
+  href: index.md
+- name: Quickstart
+  href: quickstart.md
+  name: Tutorials
+  href: tutorials.md
+  items:
+  - name: Debugging CloudScript using Azure Functions with Visual Studio Code
+    href: debugging-with-CloudScript-AF-VSCode.md
+  - name: Debugging CloudScript using Azure Functions with Visual Studio
+    href: debugging-with-CloudScript-AF-VS.md
+  - name: Debugging CloudScript using Azure Functions with the Azure Portal
+    href: debugging-with-CloudScript-AF-Azure.md
