@@ -25,7 +25,6 @@ There are a couple of steps needed to get started with PlayFab C# CloudScript.
 
 * You must have an [Azure account](https://azure.microsoft.com/free/) already setup.  Signing up for an Azure Account is free.
 * You must have an [Azure Subscription setup](https://docs.microsoft.com/azure/billing/billing-create-subscription), Subscriptions can be cancelled at any time. Visit [Cancel Azure Subscription](https://docs.microsoft.com/azure/billing/billing-how-to-cancel-azure-subscription) for more info.
-  * **Note** To minimize latency create your functions in either US-West or US-West 2.  The PlayFab services used by CloudScript using Azure Functions are located in the western US region.
 * You must have a [PlayFab account](https://developer.playfab.com/signup). 
 * While we do support all languages that Azure Functions support, our documentation samples are in C#.
 * PlayFab Azure Functions use V2 of Azure Functions, so please be sure to use the V2 runtime.
