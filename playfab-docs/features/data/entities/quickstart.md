@@ -81,7 +81,7 @@ Entity objects allow you to read and write small JSON-serializable objects attac
 
 The following code snippets show how to set and read an `Object` on a `title_player_account` entity.
 
-Use the [SetObjects](xref:titleid.playfabapi.com.features.data.object.SetObjects) method to set entity objects on a player or a title.
+Use the [SetObjects](xref:titleid.playfabapi.com.data.object.setobjects) method to set entity objects on a player or a title.
 
 ```csharp
 var data = new Dictionary<string, object>()
