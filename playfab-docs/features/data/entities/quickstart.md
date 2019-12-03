@@ -1,9 +1,9 @@
 ---
 title: Entities quickstart
-author: v-thopra
+author: williacj
 description: Quickstart for using entities in PlayFab.
-ms.author: v-thopra
-ms.date: 10/26/2018
+ms.author: cjwill
+ms.date: 12/03/2019
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, data, entities, accounts
@@ -13,6 +13,8 @@ ms.localizationpriority: medium
 # Entities quickstart
 
 This entities quickstart demonstrates how to work with entity objects and entity files.
+
+For information on migrating from the legacy account and data systems to PlayFab entities, see [Entities migration guide](migration-guide.md)
 
 ## Requirements
 
