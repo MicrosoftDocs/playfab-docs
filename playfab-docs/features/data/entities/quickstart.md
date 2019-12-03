@@ -12,46 +12,57 @@ ms.localizationpriority: medium
 
 # Entities quickstart
 
-Read our introductory blog about [Entities, Objects and Files](https://blog.playfab.com/blog/introducing-entities-objects-and-files)!
+This entities quickstart demonstrates how to work with entity objects and entity files.
 
-The entity API introduces new access patterns that are designed to alleviate the pain points of the current account and data systems.
+## Requirements
 
-With the existing APIs, saving a data value has separate API calls for:
-
-- **Title** access - (client/[GetTitleData](xref:titleid.playfabapi.com.client.title-widedatamanagement.gettitledata), admin/[GetTitleData](xref:titleid.playfabapi.com.admin.title-widedatamanagement.gettitledata), server/[GetTitleData](xref:titleid.playfabapi.com.server.title-widedatamanagement.gettitledata)).
-- **Player** access - (client/[GetUserReadOnlyData](xref:titleid.playfabapi.com.client.playerdatamanagement.getuserreadonlydata), client/[UpdateUserData](xref:titleid.playfabapi.com.client.playerdatamanagement.updateuserdata), client/[UpdateUserPublisherData](xref:titleid.playfabapi.com.client.playerdatamanagement.updateuserpublisherdata)).
-- **Character** access - (client/[GetCharacterData](xref:titleid.playfabapi.com.client.characterdata.getcharacterdata), client/[UpdateCharacterData](xref:titleid.playfabapi.com.client.characterdata.updatecharacterdata)).
-
-In the new API scheme, a single call supports saving a data value for a title, player, character, and every other future entity type, combined with powerful access rules that replicate and expand the current system behavior of custom data in a better interface.
-
-In some regards, these changes are not backwards compatible. However, using them will not change the behavior of the existing APIs.
+- A [PlayFab developer account](https://developer.playfab.com/en-us/sign-up).
+- An installed copy of the Unity Editor. For information on installing the Unity Editor, see [Installing Unity](https://docs.unity3d.com/Manual/GettingStartedInstallingUnity.html) in the Unity documentation. You can also install a version of the Unity using the Visual Studio feature installer.
+  > [!NOTE]
+  > The PlayFab Unity3D SDK supports Unity Editor version 5.3 and higher.
+  >
+- A Unity Project. For information on creating a Unity Project, see [Starting Unity for the first time](https://docs.unity3d.com/Manual/GettingStarted.html).
+  > [!NOTE]
+  > If you are unfamiliar with Unity, recent installation packages give you the option of installing game creation walkthroughs. You can use one of the walkthroughs to create a sample game to use in the following quickstart.
+  >
+- The PlayFab Unity3D SDK.
 
 ## Terminology
 
-Entities are any PlayFab concept that can contain data. Currently we have a number of built-in entity types:
+Entities are any PlayFab concept that can contain data. The built-in entity types are:
 
-- **Title**
-- **master_player_account**
-- **title_player_account**
-- **Character**
+- **Title** - A title contains global information available to all players. This is similar to [TitleData](xref:titleid.playfabapi.com.client.title-widedatamanagement.gettitledata). It is identified by the title ID (`TitleId`) of the game/application.
+- **master_player_account** - This entity Type allows you to share information about a player across multiple games within a studio. It is identified by the PlayFab ID (`PlayFabId`) of the player, which is returned as part of any login or any call to retrieve account information for the player account (for example, the PlayFab Client API [GetAccountInfo](xref:titleid.playfabapi.com.client.accountmanagement.getaccountinfo)).
+- **title_player_account** - Identifies a player account that contains some information for the current title. This is identified by the entity ID (`EntityKey.Id`) you get back in the [EntityKey](xref:titleid.playfabapi.com.authentication.authentication.getentitytoken#entitykey) object on any login.
+- **character** - Identifies a character that the player owns which contains information that you can retrieve. It is identified by the character ID (`CharacterId`) of the character.
 
-This system will be expanded, so you will see future entity types added to cover guilds or groups, game servers, and more.
-
-Because this is a new API, we are refining some of the terms used in other API methods:
-
-- **Title** - This concept is unchanged. Your title may contain global information available to all players. This is similar to [TitleData](xref:titleid.playfabapi.com.client.title-widedatamanagement.gettitledata). It is identified by the title ID (`TitleId`) of the game/application.
-- **master_player_account** - This entity Type allows you to share information about a player across multiple games within a studio. This is similar to [UserPublisherData](xref:titleid.playfabapi.com.client.playerdatamanagement.getuserpublisherdata). It is identified by the PlayFab ID (`PlayFabId`) of the player, which is returned as part of any login or any call to retrieve account information for the player account (for example, the PlayFab Client API [GetAccountInfo](xref:titleid.playfabapi.com.client.accountmanagement.getaccountinfo)).
-- **title_player_account** - This concept is based on user/player in the existing API methods. Each player may contain some information for the current title. This is similar to the [GetUserData](xref:titleid.playfabapi.com.client.playerdatamanagement.getuserdata) method. This is identified by the entity ID (`EntityKey.Id`) you get back in the [EntityKey](xref:titleid.playfabapi.com.authentication.authentication.getentitytoken#entitykey) object on any login where you specify `LoginTitlePlayerAccountEntity` as `True`.
-- **character** - This concept is unchanged. Your player may own characters, which can each contain some information. This is similar to [CharacterData](xref:titleid.playfabapi.com.client.characterdata.getcharacterdata). It is identified by the character ID (`CharacterId`) of the character.
-
-See the [Available built-in Entity types](../../data/entities/available-built-in-entity-types.md) tutorial, for a list of all built-in entity types.
-
-> [!NOTE]
-> Formerly, `PlayFabId` covered both `master_player` and `title_player` concepts. Separating these concepts simplifies and clarifies the functionality. A player can interact with multiple titles that are all in the same studio, so while they can have unique information as a different player in each title, the owner of the studio also needs to identify that player as a single entity with shared data across titles. This enables things like cross-promotion of games and giving players cross-game rewards.
+For more information on the built-in entity types, see [Available built-in Entity types](../../data/entities/available-built-in-entity-types.md).
 
 ## Entity initialization
 
-Before you can use any Entity API calls you must get an [EntityKey](xref:titleid.playfabapi.com.authentication.authentication.getentitytoken#entitykey). You do this by using any normal login call, with a new optional parameter [LoginTitlePlayerAccountEntity](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid#loginwithcustomidrequest) set to `True`, or by calling the [GetEntityToken](xref:titleid.playfabapi.com.authentication.authentication.getentitytoken) API method.
+To call any of the Entity API you must obtain the entity `ID` and  entity `Type`. You use the `ID` and `Type` to make calls to other Entity API methods. These are members of an [EntityKey](xref:titleid.playfabapi.com.authentication.authentication.getentitytoken#entitykey) object.
+
+You do this by calling any of the login methods, such as `LoginWithCustomID`.
+
+```csharp
+    void Login()
+    {
+        var request = new PlayFab.ClientModels.LoginWithCustomIDRequest
+        {
+            CustomId = SystemInfo.deviceUniqueIdentifier,
+            CreateAccount = true,
+        };
+        PlayFabClientAPI.LoginWithCustomID(request, OnLogin, OnSharedFailure);
+    }
+
+    void OnLogin(PlayFab.ClientModels.LoginResult result)
+    {
+        entityId = result.EntityToken.Entity.Id;
+        entityType = result.EntityToken.Entity.Type;
+    }
+```
+
+You can also obtain the entity `ID` and  entity `Type` by calling the [GetEntityToken](xref:titleid.playfabapi.com.authentication.authentication.getentitytoken) method.
 
 ```csharp
 PlayFabAuthenticationAPI.GetEntityToken(new GetEntityTokenRequest(),
@@ -62,17 +73,15 @@ PlayFabAuthenticationAPI.GetEntityToken(new GetEntityTokenRequest(),
 }, OnPlayFabError); // Define your own OnPlayFabError function to report errors
 ```
 
-This API method returns an [Authentication/EntityKey](xref:titleid.playfabapi.com.authentication.authentication.getentitytoken#entitykey) object, which contains the ID and type, which you should save. If called from the client, this typically represents the logged-in player.
-
-Called from game servers, this will represent your title. With the `entityId` and `entityType`, you can make other calls to other Entity API methods.
-
-You should save a reference to the `entityId` and `entityType` to use in other API calls (Each API has an `EntityKey` structure, above). `EntityToken` is handled internally by the SDK, so you can ignore that.
+When called from the client, this typically represents the logged-in player. When called from game servers, this represents your title.
 
 ## Entity objects
 
-Entity objects allow you to read and write small JSON-serializable objects attached to an entity. All entity types support the same `GetObjects` and `SetObjects` methods.
+Entity objects allow you to read and write small JSON-serializable objects attached to an entity. All entity types support the `GetObjects` and `SetObjects` methods.
 
-The examples that are shown below demonstrate setting and reading an `Object` on a `title_player_account`.
+The following code snippets show how to set and read an `Object` on a `title_player_account` entity.
+
+Use the [SetObjects](xref:titleid.playfabapi.com.data.object.SetObjects) method to set entity objects on a player or a title.
 
 ```csharp
 var data = new Dictionary<string, object>()
@@ -89,6 +98,7 @@ var dataList = new List<SetObject>()
     },
     // A free-tier customer may store up to 3 objects on each entity
 };
+
 PlayFabDataAPI.SetObjects(new SetObjectsRequest()
 {
     Entity = new EntityKey {Id = entityId, Type = entityType}, // Saved from GetEntityToken, or a specified key created from a titlePlayerId, CharacterId, etc
@@ -97,6 +107,8 @@ PlayFabDataAPI.SetObjects(new SetObjectsRequest()
     Debug.Log(setResult.ProfileVersion);
 }, OnPlayFabError);
 ```
+
+Use the [GetObjects](xref:titleid.playfabapi.com.data.object.GetObjects) method to retrieve entity objects on a player or a title.
 
 ```csharp
 var getRequest = new GetObjectsRequest {Entity = new EntityKey {Id = entityId, Type = entityType}};
@@ -108,7 +120,92 @@ PlayFabDataAPI.GetObjects(getRequest,
 
 ## Entity files
 
-Entity files allow you to read and write files attached to an entity, in any format. The example shown below demonstrates a full entity-file loop, from logging in, to loading a file, and uploading a new file.
+Entity files allow you to read and write files attached to an entity, in any format.
+
+Use the [GetFiles](xref:titleid.playfabapi.com.data.file.GetFiles) method to retrieve entity files.
+
+```csharp
+    void LoadAllFiles()
+    {
+        if (GlobalFileLock != 0)
+            throw new Exception("This example overly restricts file operations for safety. Careful consideration must be made when doing multiple file operations in parallel to avoid conflict.");
+
+        GlobalFileLock += 1; // Start GetFiles
+        var request = new PlayFab.DataModels.GetFilesRequest { Entity = new PlayFab.DataModels.EntityKey { Id = entityId, Type = entityType } };
+        PlayFabDataAPI.GetFiles(request, OnGetFileMeta, OnSharedFailure);
+    }
+```
+
+Use the [initiatefileuploads](xref:titleid.playfabapi.com.data.file.initiatefileuploads) method to initiate a file upload to an entity's profile.
+
+```csharp
+    void UploadFile(string fileName)
+    {
+        if (GlobalFileLock != 0)
+            throw new Exception("This example overly restricts file operations for safety. Careful consideration must be made when doing multiple file operations in parallel to avoid conflict.");
+
+        ActiveUploadFileName = fileName;
+
+        GlobalFileLock += 1; // Start InitiateFileUploads
+        var request = new PlayFab.DataModels.InitiateFileUploadsRequest
+        {
+            Entity = new PlayFab.DataModels.EntityKey { Id = entityId, Type = entityType },
+            FileNames = new List<string> { ActiveUploadFileName },
+        };
+        PlayFabDataAPI.InitiateFileUploads(request, OnInitFileUpload, OnInitFailed);
+    }
+```
+
+Use the [AbortFileUploads](xref:titleid.playfabapi.com.data.file.AbortFileUploads) method to abort a pending file upload to an entity's profile.
+
+```csharp
+    void OnInitFailed(PlayFabError error)
+    {
+        if (error.Error == PlayFabErrorCode.EntityFileOperationPending)
+        {
+            // This is an error you should handle when calling InitiateFileUploads, but your resolution path may vary
+            GlobalFileLock += 1; // Start AbortFileUploads
+            var request = new PlayFab.DataModels.AbortFileUploadsRequest
+            {
+                Entity = new PlayFab.DataModels.EntityKey { Id = entityId, Type = entityType },
+                FileNames = new List<string> { ActiveUploadFileName },
+            };
+            PlayFabDataAPI.AbortFileUploads(request, (result) => { GlobalFileLock -= 1; UploadFile(ActiveUploadFileName); }, OnSharedFailure); GlobalFileLock -= 1; // Finish AbortFileUploads
+            GlobalFileLock -= 1; // Failed InitiateFileUploads
+        }
+        else
+            OnSharedFailure(error);
+    }
+```
+
+Use the [FinalizeFileUploads](xref:titleid.playfabapi.com.data.file.FinalizeFileUploads) method to finalize file uploads to an entity's profile. The entity system does not consider the file upload complete, nor reflect any changes to other callers until the atomic upload operation is successfully finalized.
+
+```csharp
+    void FinalizeUpload(byte[] data)
+    {
+        GlobalFileLock += 1; // Start FinalizeFileUploads
+        var request = new PlayFab.DataModels.FinalizeFileUploadsRequest
+        {
+            Entity = new PlayFab.DataModels.EntityKey { Id = entityId, Type = entityType },
+            FileNames = new List<string> { ActiveUploadFileName },
+        };
+        PlayFabDataAPI.FinalizeFileUploads(request, OnUploadSuccess, OnSharedFailure);
+        GlobalFileLock -= 1; // Finish SimplePutCall
+    }
+```
+
+The example shown below demonstrates a full entity-file loop, from logging in, to loading a file, and uploading a new file.
+
+The steps for this are:
+
+- login and retrieve the entity `ID` and  entity `Type`.
+- Initialize the atomic upload operation.
+- Upload all of the files.
+- Finalize the atomic upload operation.
+
+For simplicity, this example saves one file at a time, but files can be uploaded atomically in sets.
+
+The example assumes that you're familiar with using the Unity 3D engine.
 
 ```csharp
 #if !DISABLE_PLAYFABENTITY_API && !DISABLE_PLAYFABCLIENT_API
@@ -128,7 +225,8 @@ public class EntityFileExample : MonoBehaviour
     private readonly Dictionary<string, string> _tempUpdates = new Dictionary<string, string>();
     public string ActiveUploadFileName;
     public string NewFileName;
-    public int GlobalFileLock = 0; // Kind of cheap and simple way to handle this kind of lock
+    // GlobalFileLock provides is a simplistic way to avoid file collisions, specifically designed for this example.
+    public int GlobalFileLock = 0; 
 
     void OnSharedFailure(PlayFabError error)
     {
@@ -136,6 +234,8 @@ public class EntityFileExample : MonoBehaviour
         GlobalFileLock -= 1;
     }
 
+    // OnGUI provides a way to build a Unity GUI entirely within script.
+  - // Your GUI will be game-specific.
     void OnGUI()
     {
         if (!PlayFabClientAPI.IsClientLoggedIn() && GUI.Button(new Rect(0, 0, 100, 30), "Login"))
@@ -182,6 +282,7 @@ public class EntityFileExample : MonoBehaviour
         };
         PlayFabClientAPI.LoginWithCustomID(request, OnLogin, OnSharedFailure);
     }
+
     void OnLogin(PlayFab.ClientModels.LoginResult result)
     {
         entityId = result.EntityToken.Entity.Id;
@@ -197,6 +298,7 @@ public class EntityFileExample : MonoBehaviour
         var request = new PlayFab.DataModels.GetFilesRequest { Entity = new PlayFab.DataModels.EntityKey { Id = entityId, Type = entityType } };
         PlayFabDataAPI.GetFiles(request, OnGetFileMeta, OnSharedFailure);
     }
+
     void OnGetFileMeta(PlayFab.DataModels.GetFilesResponse result)
     {
         Debug.Log("Loading " + result.Metadata.Count + " files");
@@ -209,6 +311,7 @@ public class EntityFileExample : MonoBehaviour
         }
         GlobalFileLock -= 1; // Finish GetFiles
     }
+
     void GetActualFile(PlayFab.DataModels.GetFileMetadata fileData)
     {
         GlobalFileLock += 1; // Start Each SimpleGetCall
@@ -233,6 +336,7 @@ public class EntityFileExample : MonoBehaviour
         };
         PlayFabDataAPI.InitiateFileUploads(request, OnInitFileUpload, OnInitFailed);
     }
+
     void OnInitFailed(PlayFabError error)
     {
         if (error.Error == PlayFabErrorCode.EntityFileOperationPending)
@@ -250,6 +354,7 @@ public class EntityFileExample : MonoBehaviour
         else
             OnSharedFailure(error);
     }
+
     void OnInitFileUpload(PlayFab.DataModels.InitiateFileUploadsResponse response)
     {
         string payloadStr;
@@ -265,6 +370,7 @@ public class EntityFileExample : MonoBehaviour
         );
         GlobalFileLock -= 1; // Finish InitiateFileUploads
     }
+
     void FinalizeUpload(byte[] data)
     {
         GlobalFileLock += 1; // Start FinalizeFileUploads
@@ -285,34 +391,21 @@ public class EntityFileExample : MonoBehaviour
 #endif
 ```
 
-## Deconstructing this example
-
-- `GlobalFileLock` is a very simplistic way to avoid file collisions, specifically designed for this example.
-  - Independent file actions will not cause any issues.
-  - Each file action requires many steps and multiple API calls, so don't try to access the same file in multiple ways at the same time.
-  - If you are very careful, you won't need any locking mechanism.
-  - If you want to do something complicated, your locking mechanism may be much more complex.
-- `OnGUI` is a very old (but very dense) way to build a Unity GUI entirely within script.
-  - Your GUI will be much better, and game-specific.
-- All PlayFab features *first* require a login or authentication.
-- `LoadAllFiles()` will do exactly as it says. For the current logged-in entity, load all file saved to PlayFab.
-  - This requires multiple steps:
-    - Asking PlayFab where the files are located,
-    - And then downloading them separately.  
-- `UploadFile(string fileName)` saves the file to the service for the entity.
-  - For simplicity, this example saves one file at a time, but files can be uploaded atomically in sets as well.
-  - The steps for this are:
-    - Initialize an atomic upload operation,
-    - Upload all files,
-    - Finalize an atomic upload operation.
-  - The entity will not consider the file upload complete, nor reflect any changes to other callers until the atomic upload operation has been finalized successfully.
+> [!NOTE]
+> Each file action requires many steps and multiple API calls, so don't try to access the same file in multiple ways at the same time.
+> If you are very careful, you might not need a locking mechanism.
+> If you want to do something complicated, your locking mechanism may be much more complex.
 
 ## Game Manager and entities
 
-The Game Manager allows you to manipulate objects and files for players. The player overview has been updated to show both the title player and master player account information.
+The Game Manager allows you to manipulate objects and files for players. The player overview shows both the title player and master player account information.
 
 ![Game Manager - Entities - Player overview](../playerdata/media/tutorials/game-manager-entities-player-overview.png)  
 
 In addition, files and objects now have their own sections in the **Players** tab.
 
-![Game Manager - Entities - Player Files and Objects](../playerdata/media/tutorials/game-manager-entities-player-files.png)  
+![Game Manager - Entities - Player Files and Objects](../playerdata/media/tutorials/game-manager-entities-player-files.png) 
+
+## See also
+
+[Introducing Entities, Objects and Files](https://blog.playfab.com/blog/introducing-entities-objects-and-files) on the PlayFab blog.
