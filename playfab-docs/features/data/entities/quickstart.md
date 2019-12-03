@@ -81,7 +81,7 @@ Entity objects allow you to read and write small JSON-serializable objects attac
 
 The following code snippets show how to set and read an `Object` on a `title_player_account` entity.
 
-Use the [SetObjects](xref:titleid.playfabapi.com.data.object.SetObjects) method to set entity objects on a player or a title.
+Use the [SetObjects](xref:titleid.playfabapi.com.features.data.object.SetObjects) method to set entity objects on a player or a title.
 
 ```csharp
 var data = new Dictionary<string, object>()
@@ -108,7 +108,7 @@ PlayFabDataAPI.SetObjects(new SetObjectsRequest()
 }, OnPlayFabError);
 ```
 
-Use the [GetObjects](xref:titleid.playfabapi.com.data.object.GetObjects) method to retrieve entity objects on a player or a title.
+Use the [GetObjects](xref:titleid.playfabapi.com.features.data.object.GetObjects) method to retrieve entity objects on a player or a title.
 
 ```csharp
 var getRequest = new GetObjectsRequest {Entity = new EntityKey {Id = entityId, Type = entityType}};
@@ -122,7 +122,7 @@ PlayFabDataAPI.GetObjects(getRequest,
 
 Entity files allow you to read and write files attached to an entity, in any format.
 
-Use the [GetFiles](xref:titleid.playfabapi.com.data.file.GetFiles) method to retrieve entity files.
+Use the [GetFiles](xref:titleid.playfabapi.com.features.data.file.GetFiles) method to retrieve entity files.
 
 ```csharp
     void LoadAllFiles()
@@ -136,7 +136,7 @@ Use the [GetFiles](xref:titleid.playfabapi.com.data.file.GetFiles) method to ret
     }
 ```
 
-Use the [initiatefileuploads](xref:titleid.playfabapi.com.data.file.initiatefileuploads) method to initiate a file upload to an entity's profile.
+Use the [initiatefileuploads](xref:titleid.playfabapi.com.features.data.file.initiatefileuploads) method to initiate a file upload to an entity's profile.
 
 ```csharp
     void UploadFile(string fileName)
@@ -156,7 +156,7 @@ Use the [initiatefileuploads](xref:titleid.playfabapi.com.data.file.initiatefile
     }
 ```
 
-Use the [AbortFileUploads](xref:titleid.playfabapi.com.data.file.AbortFileUploads) method to abort a pending file upload to an entity's profile.
+Use the [AbortFileUploads](xref:titleid.playfabapi.com.features.data.file.AbortFileUploads) method to abort a pending file upload to an entity's profile.
 
 ```csharp
     void OnInitFailed(PlayFabError error)
