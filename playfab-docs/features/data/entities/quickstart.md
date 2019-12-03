@@ -108,7 +108,7 @@ PlayFabDataAPI.SetObjects(new SetObjectsRequest()
 }, OnPlayFabError);
 ```
 
-Use the [GetObjects](xref:titleid.playfabapi.com.features.data.object.GetObjects) method to retrieve entity objects on a player or a title.
+Use the [GetObjects](xref:titleid.playfabapi.com.data.object.getobjects) method to retrieve entity objects on a player or a title.
 
 ```csharp
 var getRequest = new GetObjectsRequest {Entity = new EntityKey {Id = entityId, Type = entityType}};
@@ -122,7 +122,7 @@ PlayFabDataAPI.GetObjects(getRequest,
 
 Entity files allow you to read and write files attached to an entity, in any format.
 
-Use the [GetFiles](xref:titleid.playfabapi.com.features.data.file.GetFiles) method to retrieve entity files.
+Use the [GetFiles](xref:titleid.playfabapi.com.data.file.getfiles) method to retrieve entity files.
 
 ```csharp
     void LoadAllFiles()
@@ -136,7 +136,7 @@ Use the [GetFiles](xref:titleid.playfabapi.com.features.data.file.GetFiles) meth
     }
 ```
 
-Use the [initiatefileuploads](xref:titleid.playfabapi.com.features.data.file.initiatefileuploads) method to initiate a file upload to an entity's profile.
+Use the [initiatefileuploads](xref:titleid.playfabapi.com.data.file.initiatefileuploads) method to initiate a file upload to an entity's profile.
 
 ```csharp
     void UploadFile(string fileName)
@@ -156,7 +156,7 @@ Use the [initiatefileuploads](xref:titleid.playfabapi.com.features.data.file.ini
     }
 ```
 
-Use the [AbortFileUploads](xref:titleid.playfabapi.com.features.data.file.AbortFileUploads) method to abort a pending file upload to an entity's profile.
+Use the [AbortFileUploads](xref:titleid.playfabapi.com.data.file.abortfileuploads) method to abort a pending file upload to an entity's profile.
 
 ```csharp
     void OnInitFailed(PlayFabError error)
@@ -178,7 +178,7 @@ Use the [AbortFileUploads](xref:titleid.playfabapi.com.features.data.file.AbortF
     }
 ```
 
-Use the [FinalizeFileUploads](xref:titleid.playfabapi.com.data.file.FinalizeFileUploads) method to finalize file uploads to an entity's profile. The entity system does not consider the file upload complete, nor reflect any changes to other callers until the atomic upload operation is successfully finalized.
+Use the [FinalizeFileUploads](xref:titleid.playfabapi.com.data.file.finalizefileuploads) method to finalize file uploads to an entity's profile. The entity system does not consider the file upload complete, nor reflect any changes to other callers until the atomic upload operation is successfully finalized.
 
 ```csharp
     void FinalizeUpload(byte[] data)
