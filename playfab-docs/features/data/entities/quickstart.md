@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 This entities quickstart demonstrates how to work with entity objects and entity files.
 
-For information on migrating from the legacy account and data systems to PlayFab entities, see [Entities migration guide](migration-guide.md)
+For information on migrating from the legacy account and data systems to PlayFab entities, see [Entities migration information](migration-information.md)
 
 ## Requirements
 
