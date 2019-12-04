@@ -1,7 +1,9 @@
+- name: 2020 Release Notes
+  href: ./index.md
 - name: 2019 Release Notes
   href: ./2019.md
 - name: 2018 Release Notes
-  href: ./index.md
+  href: ./2018.md
 - name: 2017 Release Notes
   href: ./2017.md
 - name: 2016 Release Notes

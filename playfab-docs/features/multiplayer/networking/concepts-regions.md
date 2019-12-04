@@ -3,7 +3,7 @@ title: PlayFab Party regions
 description: The role of PlayFab Party chat and data communication network regions.
 author: v-kciril
 ms.author: v-kciril
-ms.date: v-kciril
+ms.date: 08/15/2019
 ms.topic: article
 ms.prod: playfab
 ROBOTS: NOINDEX,NOFOLLOW

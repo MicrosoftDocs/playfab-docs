@@ -3,7 +3,7 @@ title: Viewing billing details
 author: v-thopra
 description: How to use the multiplayer servers billing view to assess monthly costs.
 ms.author: t-eldum
-ms.date: 29/07/2019
+ms.date: 07/29/2019
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, multiplayer servers, thunderhead, billing, multiplayer
