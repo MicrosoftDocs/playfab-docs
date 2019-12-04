@@ -28,7 +28,7 @@ The information presented here is useful if you have previously used the followi
 - client/[UpdateUserData](xref:titleid.playfabapi.com.client.playerdatamanagement.updateuserdata)
 - client/[UpdateUserPublisherData](xref:titleid.playfabapi.com.client.playerdatamanagement.updateuserpublisherdata)
 
-- **Character** access:
+**Character** access:
 
 - client/[GetCharacterData](xref:titleid.playfabapi.com.client.characterdata.getcharacterdata)
 - client/[UpdateCharacterData](xref:titleid.playfabapi.com.client.characterdata.updatecharacterdata)
