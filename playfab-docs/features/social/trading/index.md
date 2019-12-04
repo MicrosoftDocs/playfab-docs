@@ -3,7 +3,7 @@ title: Trading
 author: thomasgu
 description: Landing page for Trading.
 ms.author: tomg
-ms.date: 30/01/2019
+ms.date: 01/30/2019
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, social, trading

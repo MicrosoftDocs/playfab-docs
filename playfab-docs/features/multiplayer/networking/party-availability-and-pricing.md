@@ -3,7 +3,7 @@ title: PlayFab Party Availability and Pricing
 description: Where to get the PlayFab Party API client libraries and information on service pricing.
 author: TBD
 ms.author: TBD
-ms.date: TBD
+ms.date: 08/15/2019
 ms.topic: article
 ms.prod: playfab
 ROBOTS: NOINDEX,NOFOLLOW

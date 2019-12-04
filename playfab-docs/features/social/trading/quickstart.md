@@ -3,7 +3,7 @@ title: Trading quickstart
 author: thomasgu
 description: Describes how to perform player-to-player trading.
 ms.author: tomg
-ms.date: 30/01/2013
+ms.date: 01/30/2019
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, social, trading
