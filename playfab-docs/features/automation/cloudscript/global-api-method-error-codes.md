@@ -27,25 +27,25 @@ Each API error contains the following fields:
 It is usually safe to retry requests that fail with these error codes, with an exponential delay back-off. These errors typically mean that your client is making calls too quickly, but the request itself may be valid.
 
 - `APIClientRequestRateLimitExceeded (1199)`:
-The client is making too many API calls too quickly. Usually too many calls in a short burst.
+Indicates too many calls in a short burst.
 
 - `APIConcurrentRequestLimitExceeded (1342)`:
-The client is making too many API calls too quickly. Usually *simultaneous* calls, or too many calls in a short burst.
+Indicates too many *simultaneous* calls.
 
 - `ConcurrentEditError (1133)`:
-The client is making too many API calls too quickly. Usually caused by *multiple simultaneous* calls, or very rapid *sequential* calls.
+Indicates too many *simultaneous* calls or very rapid *sequential* calls.
 
 - `DataUpdateRateExceeded (1287)`:
-The client is making too many API calls too quickly. Usually caused by *multiple simultaneous calls*, or very rapid *sequential* calls.
+Indicates too many *simultaneous calls*, or very rapid *sequential* calls.
 
 - `DownstreamServiceUnavailable (1127)`:
-PlayFab may be having a temporary issue, or the client is making too many API calls too quickly.
+Indicates that PlayFab might be having a temporary issue, or the client is making too many API calls too quickly.
 
 - `InvalidAPIEndpoint (1131)`:
-The URL for this request is not valid for this title.
+Indicates that the URL for this request is not valid for this title.
 
 - `OverLimit (1214)`:
-The client is making too many API calls too quickly, usually on a specific API method.
+Indicates that an attempt to perform an operation will cause the service usage to go over the limit as shown in the Game Manager limit pages. Evaluate the returned error details to determine which limit would be exceeded.
 
 ## Never retry codes
 
