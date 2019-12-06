@@ -4,11 +4,7 @@
   items:
   - name: CloudScript
     href: cloudscript/toc.yml
-<<<<<<< HEAD
   - name: CloudScript using Azure Functions
-=======
-    -name: CloudScript using Azure Functions
->>>>>>> origin/live
     href: cloudscript-af/toc.yml
   - name: Actions and rules
     href: actions-rules/toc.yml
