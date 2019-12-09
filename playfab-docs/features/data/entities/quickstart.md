@@ -33,8 +33,8 @@ For information on migrating from the legacy account and data systems to PlayFab
 
 Entities are any PlayFab concept that can contain data. The built-in entity types are:
 
-- **Title** - A title contains global information available to all players. This is similar to [TitleData](xref:titleid.playfabapi.com.client.title-widedatamanagement.gettitledata). It is identified by the title ID (`TitleId`) of the game/application.
-- **master_player_account** - This entity Type allows you to share information about a player across multiple games within a studio. It is identified by the PlayFab ID (`PlayFabId`) of the player, which is returned as part of any login or any call to retrieve account information for the player account (for example, the PlayFab Client API [GetAccountInfo](xref:titleid.playfabapi.com.client.accountmanagement.getaccountinfo)).
+- **title** - A title contains global information available to all players. This is similar to [TitleData](xref:titleid.playfabapi.com.client.title-widedatamanagement.gettitledata). It is identified by the title ID (`TitleId`) of the game/application.
+- **master_player_account** - This entity Type allows you to share information about a player across multiple games within a namespace. It is identified by the player ID (`PlayFabId`) of the player, which is returned as part of any login or any call to retrieve account information for the player account (for example, the PlayFab Client API [GetAccountInfo](xref:titleid.playfabapi.com.client.accountmanagement.getaccountinfo)).
 - **title_player_account** - Identifies a player account that contains some information for the current title. This is identified by the entity ID (`EntityKey.Id`) you get back in the [EntityKey](xref:titleid.playfabapi.com.authentication.authentication.getentitytoken#entitykey) object on any login.
 - **character** - Identifies a character that the player owns which contains information that you can retrieve. It is identified by the character ID (`CharacterId`) of the character.
 
@@ -60,6 +60,7 @@ You do this by calling any of the login methods, such as `LoginWithCustomID`.
     void OnLogin(PlayFab.ClientModels.LoginResult result)
     {
         entityId = result.EntityToken.Entity.Id;
+        // The expected entity type is title_player_account.
         entityType = result.EntityToken.Entity.Type;
     }
 ```
