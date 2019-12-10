@@ -37,20 +37,6 @@ Using the entities API, you can call a single method to save the data values for
 
 In some regards, these changes are not backwards compatible. However, you can add calls to the entity API without changing the behavior of the existing APIs.
 
-## Example usage
-
-The following code snippet saves some Title, Player, and Character information using the legacy API.
-
-```csharp
-Sample code showing how you would have saved/retrieved the data previously
-```
-
-The following code snippet demonstrates how you might store the same data as entities.
-
-```charp
-entity code snippet.
-```
-
 ## Terminology
 
 The following table describes refinements in terminology related to the entity APIs.
