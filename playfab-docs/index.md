@@ -441,6 +441,23 @@ featureFlags:
                                     </div>
                                 </div>
                             </li>
+                            <li>
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardImageOuter">
+                                                <div class="cardImage">
+                                                    <img src="/gaming/playfab/features/media/feature-party.svg" alt="PlayFab Authentication Features: Platform-Specific Authentication card image" />
+                                                </div>
+                                            </div>
+                                            <div class="cardText">
+                                                <h3>Azure Active Directory Authentication for PlayFab Game Manager</h3>
+                                                <p style='color: #7f7f7f'>Use AAD to create PlayFab accounts and users.</p><p><a href='/gaming/playfab/features/authentication/aad-authentication/'>Overview</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
                         </ul>
                     </li>
                     <li>

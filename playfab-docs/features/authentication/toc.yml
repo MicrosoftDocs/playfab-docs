@@ -6,3 +6,5 @@
     href: login/toc.yml
   - name: Platform specific authentication
     href: platform-specific-authentication/toc.yml
+  - name: Azure Active Directory Authentication for Game Manager
+    href: aad-authentication/toc.yml
