@@ -1,9 +1,9 @@
 ---
 title: Python quickstart
-author: v-kciril
+author: DanBehrendt
 description: This guide will help you make your first PlayFab API call in Python 3.
-ms.author: v-kciril
-ms.date: 04/20/2019
+ms.author: dabe
+ms.date: 12/04/2019
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, python 3, python sdk
@@ -14,44 +14,46 @@ ms.localizationpriority: medium
 
 This quickstart is designed to help you make your first API call in Python 3.
 
-Before you can call any PlayFab API, you must have a [PlayFab developer account](https://developer.playfab.com/en-us/sign-up). 
-
 A native Python project can be used a few ways:
 
 - As a stand-alone console Admin tool for maintaining your game.
-  - The Python SDK works great as a stand-alone Python program.
-  
 - Integration into an existing Python-based game engine.
-  - See [list of game engines](https://wiki.python.org/moin/PythonGameLibraries)
+  - For a list of Python game engines, see [PythonGameLibraries](https://wiki.python.org/moin/PythonGameLibraries) on the python.org website.
 
-If you have any issues, let us know on the [Forums](https://community.playfab.com/index.html).
+## Prerequisites
+
+- A [PlayFab developer account](https://developer.playfab.com/en-us/sign-up).
+- [Python 3](https://www.python.org/downloads/) installed on your system.
+  - You must also have the requests module installed.
 
 > [!NOTE]
 > This beta release of the Python SDK only supports synchronous API calls, and your game loop may become blocked performing PlayFab API calls. You may need to create your own async/threading model to avoid this problem.
+>
+
+  
+If you are having difficulty debugging an issue, and the information provided the error information is not sufficient, please visit us on our [PlayFab forums](https://community.playfab.com/index.html).
 
 ## Python project setup
 
-1. Make sure [Python 3](https://www.python.org/downloads/) is installed on your system.
-
-2. Install the [PlayFab Package](https://pypi.org/project/playfab/) using the command shown below.
+1. From a command prompt, install the [PlayFab Package](https://pypi.org/project/playfab/) using following command.
 
 ```cmd
 pip install playfab
 ```
 
-If `pip` is not in your path, use the command shown below instead.
+If `pip` is not in your path, use the following command instead.
 
 ```cmd
 python -m pip install playfab
 ```
 
-3. Create a new python script in your desired directory called `playfab_test.py`.
+2. In your project directory, create a python script called playfab_test.py.
 
 ## Set up your first API call
 
 This quickstart provides the minimum steps to make your first PlayFab API call, without any GUI or on-screen feedback. Confirmation is accomplished with a console print statement.
 
-To start, replace the contents of `playfab_test.py` with the contents shown below.
+Replace the contents of your playfab_test.py file with the contents shown below.
 
 ```python
 from playfab import PlayFabClientAPI, PlayFabSettings
@@ -60,8 +62,7 @@ PlayFabSettings.TitleId = "144"
 
 request = {
     "CustomId": "GettingStartedGuide",
-    "CreateAccount": True,
-    "LoginTitlePlayerAccountEntity": True
+    "CreateAccount": True
 }
 
 def callback(success, failure):
@@ -80,7 +81,7 @@ PlayFabClientAPI.LoginWithCustomID(request, callback)
 Run the Python script using the command shown below.
 
 ```cmd
-       python playfab_test.py
+python playfab_test.py
 ```
 
 When it finishes, you should see the following text: "Congratulations, you made your first successful API call!"
@@ -91,7 +92,7 @@ Happy coding!
 
 ## Deconstruct the code
 
-This optional last section describes each part of `playfab_test.py` in detail.
+This optional last section describes each part of playfab_test.py in detail.
 
 - Imports
   - The PlayFab imports get you access to the APIs.
@@ -101,7 +102,7 @@ This optional last section describes each part of `playfab_test.py` in detail.
 
 - request
   - Most PlayFab API methods require input parameters, and those input parameters are packed into a dictionary object.
-    - For `LoginWithCustomIDRequest`, there is a mandatory parameter of `CustomId`, which uniquely identifies a player, `LoginTitlePlayerAccountEntity`, which automatically logs the player's `title_player_account` in and returns the associated entity token, and `CreateAccount`, which allows the creation of a new account with this call.
+    - `LoginWithCustomIDRequest` takes a mandatory parameter of `CustomId`, which uniquely identifies a player and returns the associated entity token, and `CreateAccount`, which allows the creation of a new account with this call.
     - For login, most developers will want to use a more appropriate login method.
       - See the [PlayFab Login documentation](xref:titleid.playfabapi.com.client.authentication) for a list of all login methods, and input parameters. Common choices are:
         - [LoginWithAndroidDeviceID](xref:titleid.playfabapi.com.client.authentication.loginwithandroiddeviceid)
@@ -122,8 +123,6 @@ This optional last section describes each part of `playfab_test.py` in detail.
       - Device connectivity issue. Cell-phones lose/regain connectivity constantly, and so any API call at any time can fail randomly, and then work immediately after. Going into a tunnel can disconnect you completely.
       - PlayFab server issue. As with all software, there can be issues. See our [release notes](../../release-notes/index.md) for updates.
       - The internet is not 100% reliable. Sometimes the message is corrupted or fails to reach the PlayFab server.
-  
-    - If you are having difficulty debugging an issue, and the information within the error information is not sufficient, please visit us on our [forums](https://community.playfab.com/index.html)
 
 - `PlayFabClientAPI.LoginWithCustomID`
   - Triggers the API call synchronously. When complete, the callback will be invoked.
