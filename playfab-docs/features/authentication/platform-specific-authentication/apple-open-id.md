@@ -24,7 +24,7 @@ Before you can use Sign In with Apple in your applications, you'll need to addre
 1. In the **Identifiers** pane, select the **(+)** add button.
 apple-dev-certificates-hub.png
 
-    ![Certificates, Identifiers and Profiles screen](media/apple-dev-certificates-hub.png)
+    ![Certificates, Identifiers and Profiles screen](apple-open-id/apple-dev-certificates-hub.png)
 
 1. Select **App IDs**. If you already have an **App ID**, choose to edit it instead.
 
@@ -75,7 +75,7 @@ Save your changes when finished.
 1. In **Key Name**, enter a name to identify the key.
 1. Select the **Sign in with Apple** check box and then select **Configure**.
 
-    ![Create a new Key](register-key.png)
+    ![Create a new Key](apple-open-id/register-key.png)
 
 1. Ensure that the correct **Primary App ID** is selected and select **Save**.
 1. Select **Continue** and then **Register** to create  the key.
@@ -86,7 +86,7 @@ Save your changes when finished.
 
 1. Select **Download** and store the key in a secure location.
 
-![Download Key](media/readme-key-download.png)
+![Download Key](apple-open-id/readme-key-download.png)
 
 Also, take note of your **Key ID** at this step. This will be used for your `KeyId` later on.
 
