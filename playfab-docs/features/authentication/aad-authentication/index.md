@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Azure Active Directory Authentication for Playfab Game Manager
 
-PlayFab now supports two methods of user authentication. The first is the original PlayFab user authentication system. The second is now Azure Active Directory (AAD).
+PlayFab now supports three methods of user authentication. The first two are the original PlayFab user authentication system and SAML. The third is now Azure Active Directory (AAD).
 
 ### To Create a New AAD User
 1. Navigate to your studio's users section. ![Studio Users](media/AADDoc1.png )
