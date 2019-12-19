@@ -42,7 +42,7 @@ Remember your installation path {FlexSdkLocation}, and modify your system enviro
 
 5. Copy and Paste the contents of {AirSdkLocation} over the top of {FlexSdkLocation}. This will replace some existing files, and that's correct.  
 
-6. Download the PlayFab ActionScriptSD [ActionScript SDK](https://api.playfab.com/downloads/actionscript) zip file, and extract it to a location of your choice {PlayFabAs3Location}.
+6. Download the PlayFab ActionScriptSD [ActionScript SDK](https://aka.ms/playfabactionscriptsdkdownload) zip file, and extract it to a location of your choice {PlayFabAs3Location}.
 
 > [!NOTE]
 > Updates to environment variables sometimes require a computer restart.
