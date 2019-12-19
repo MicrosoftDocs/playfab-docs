@@ -23,8 +23,8 @@ Check out our [Editor Extensions](https://github.com/PlayFab/UnityEditorExtensi
 Download Links:
 
 - [Download Source Code](https://github.com/PlayFab/UnitySDK)
-- [Download Editor Extensions](https://api.playfab.com/downloads/unity-edex)
-- [Download PlayFab SDK](https://api.playfab.com/downloads/unity-v2ap)
+- [Download Editor Extensions](https://aka.ms/playfabunityextension)
+- [Download PlayFab SDK](https://aka.ms/playfabunitysdkdownload)
 
 Licenses:
 

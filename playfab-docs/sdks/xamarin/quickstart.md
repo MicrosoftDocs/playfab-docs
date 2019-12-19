@@ -32,7 +32,7 @@ OS: This guide is written for Windows 10, using Visual Studio 2015.
 
       ![Xamarin Updates for Visual Studio](media/xamarin-vs-updates.png)
 
-5. Download and extract the PlayFab [Xamarin (C#) SDK](https://api.playfab.com/downloads/xamarin). This guide will use {CSharpSdkLocation} to describe the extracted location of this SDK.
+5. Download and extract the PlayFab [Xamarin (C#) SDK](https://aka.ms/playfabxamarinsdkdownload). This guide will use {CSharpSdkLocation} to describe the extracted location of this SDK.
 
 6. Open Visual Studio and create a new cross-platform Xamarin project.
 

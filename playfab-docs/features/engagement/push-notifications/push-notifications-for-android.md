@@ -84,8 +84,8 @@ There are three Google websites that you must use and synchronize. In Google/Fir
 To set up your Unity project:
 
 - Create a new Unity project.
-- [OPTIONAL] Import the [PlayFab Unity Editor Extensions](https://api.playfab.com/downloads/unity-edex) package.
-- Import the [Unity PlayFab SDK](https://api.playfab.com/downloads/unity-v2ap) package.
+- [OPTIONAL] Import the [PlayFab Unity Editor Extensions](https://aka.ms/playfabunityextension) package.
+- Import the [Unity PlayFab SDK](https://aka.ms/playfabunitysdkdownload) package.
 - Follow the [FCM Unity](https://firebase.google.com/docs/cloud-messaging/unity/client) guide to install FCM messaging, and set up a project for push notifications.
   - Once finished, you can continue with this guide to receive messages from PlayFab.
   - We will give you a complete FCM-ready monoBehaviour script in the following example, which combines FCM and PlayFab.
