@@ -21,5 +21,5 @@ We have made the project open-source, to aide others who are looking for a langu
 Download Links:
 
 - [Download Source Code](https://github.com/PlayFab/SDKGenerator)
-- [Download PlayFab SDK Generator](https://api.playfab.com/downloads/generator)
+- [Download PlayFab SDK Generator](https://aka.ms/playfabsdkgeneratordownload)
 - [Usage Guide](./quickstart.md)

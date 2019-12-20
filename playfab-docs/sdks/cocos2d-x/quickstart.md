@@ -54,7 +54,7 @@ If you are building for other platforms, the files you need are the same, but yo
 > Replace the iOS bundle id from 'org.cocos2dx.hellocpp' to 'org.cocos2dx.CocosGettingStarted'
 ```
 
-3. Download PlayFab Cocos2d-xSdk: [Cocos2D-x SDK (C++)](https://api.playfab.com/downloads/cocos-2d-sdk). Save and extract it to a temporary location {PlayFabCocos}
+3. Download PlayFab Cocos2d-xSdk: [Cocos2D-x SDK (C++)](https://aka.ms/playfabCsharpsdkdownload). Save and extract it to a temporary location {PlayFabCocos}
     - Open the following folder in Windows Explorer: {PlayFabCocos}/PlayFabClientSDK
     - Open the following folder in a second Windows Explorer: {CocosGettingStarted}/Classes
 

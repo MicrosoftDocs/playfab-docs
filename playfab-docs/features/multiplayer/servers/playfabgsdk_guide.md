@@ -59,7 +59,7 @@ https://docs.unrealengine.com/index.html
 
 - PlayFab Documentation (NEW): https://docs.microsoft.com/gaming/playfab/
 
-- PlayFab API Reference: <https://api.playfab.com/>
+- PlayFab API Reference: <https://docs.microsoft.com/gaming/playfab/api-references/>
 
 - PlayFab Local Debugging (MockVM):
 <https://docs.microsoft.com/gaming/playfab/features/multiplayer/servers/locally-debugging-game-servers-and-integration-with-playfab>

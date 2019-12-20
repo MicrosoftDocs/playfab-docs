@@ -21,4 +21,4 @@ Every API call imported is set up with variables in URLs and parameters, making 
 Download Links:
 
 - Download the source code from the [Postman GitHub repo](https://github.com/PlayFab/PostmanCollection).
-- Download just the JSON file by right-clicking the following link, and selecting **Save Link As**: [Postman JSON](https://api.playfab.com/downloads/postman).
+- Download just the JSON file by right-clicking the following link, and selecting **Save Link As**: [Postman JSON](https://aka.ms/playfabpostmanjsondownload).

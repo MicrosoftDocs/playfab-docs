@@ -22,4 +22,4 @@ Download Links:
 
 - [Download Source Code](https://github.com/PlayFab/UnrealMarketplacePlugin)
 - [Unreal Marketplace Page](https://www.unrealengine.com/marketplace/playfab-sdk)
-- [Download from GitHub](https://api.playfab.com/downloads/unreal-mkpl)
+- [Download from GitHub](https://aka.ms/playfabunrealsdkdownload)
