@@ -35,8 +35,8 @@ Once you've finished the platform-specific steps, please continue with the rest 
 
 ## Log into your PlayFab title and obtain an entity token and entity ID
 
-In order to initialize and use Party, it is a requirement to log in to PlayFab. You can use [PlayFabClientAPI::LoginWithCustomID](https://api.playfab.com/documentation/client/method/LoginWithCustomID) or any other login method to do this. 
-Once you execute login, you'll be returned an entity ID and entity token as part of the [LoginResult](https://api.playfab.com/documentation/client/datatype/playfab.client.models/PlayFab.Client.Models.LoginResult).
+In order to initialize and use Party, it is a requirement to log in to PlayFab. You can use [PlayFabClientAPI::LoginWithCustomID](xref:titleid.playfabapi.com.client.authentication.LoginWithCustomID) or any other login method to do this. 
+Once you execute login, you'll be returned an entity ID and entity token as part of the [LoginResult](xref:titleid.playfabapi.com.client.authentication.LoginWithCustomID#loginresult).
 
 These two key pieces of information are later utilized to initialize a Local user instance for PlayFab Party. The relevant code snippet is below and as always, please refer to the demo sample code in PlayFabManager.cpp
 
@@ -46,7 +46,7 @@ PlayFabClientAPI::LoginWithCustomID(
         [this, callback, userId](const LoginResult& loginResult, void*)
         {
             // Sign in was successful.
-            DEBUGLOG("Playfab::signin -- Login with custom id callback\n");
+            DEBUGLOG("PlayFab::signin -- Login with custom id callback\n");
 
             // Save the PlayFab id and entity data for Party authentication.
             m_playfabId = loginResult.PlayFabId;
@@ -241,7 +241,7 @@ Once the function call to CreateNewNetwork() succeeds, a network descriptor [Par
 
 Once a Party network has been created and you have a network descriptor, the next step is to somehow broadcast this network descriptor to other users such that they can join. This is where PlayFab Matchmaking or any matchmaking service can come into play. 
 
-We implemented simple matchmaking using [PlayFab CloudScripts](https://api.playfab.com/docs/tutorials/landing-automation/using-cloud-script) in the demo samples, which work as follows:
+We implemented simple matchmaking using [PlayFab CloudScripts](../../cloudscript/quickstart.md) in the demo samples, which work as follows:
    
 1. The user creating the network creates a json key value pair with a room number as key and the network descriptor as value. 
    
