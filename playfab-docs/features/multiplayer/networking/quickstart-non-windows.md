@@ -35,7 +35,8 @@ Once you've finished the platform-specific steps, please continue with the rest 
 
 ## Log into your PlayFab title and obtain an entity token and entity ID
 
-In order to initialize and use Party, it is a requirement to log in to PlayFab. You can use [PlayFabClientAPI::LoginWithCustomID](xref:titleid.playfabapi.com.client.authentication.LoginWithCustomID) or any other login method to do this. 
+In order to initialize and use Party, it is a requirement to log in to PlayFab. You can use [PlayFabClientAPI::LoginWithCustomID](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid)
+ or any other login method to do this. 
 Once you execute login, you'll be returned an entity ID and entity token as part of the [LoginResult](xref:titleid.playfabapi.com.client.authentication.LoginWithCustomID#loginresult).
 
 These two key pieces of information are later utilized to initialize a Local user instance for PlayFab Party. The relevant code snippet is below and as always, please refer to the demo sample code in PlayFabManager.cpp
