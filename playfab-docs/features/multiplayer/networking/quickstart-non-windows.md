@@ -242,7 +242,7 @@ Once the function call to CreateNewNetwork() succeeds, a network descriptor [Par
 
 Once a Party network has been created and you have a network descriptor, the next step is to somehow broadcast this network descriptor to other users such that they can join. This is where PlayFab Matchmaking or any matchmaking service can come into play. 
 
-We implemented simple matchmaking using [PlayFab CloudScripts](../../cloudscript/quickstart.md) in the demo samples, which work as follows:
+We implemented simple matchmaking using [PlayFab CloudScripts](../automation/cloudscript/quickstart.md) in the demo samples, which work as follows:
    
 1. The user creating the network creates a json key value pair with a room number as key and the network descriptor as value. 
    
