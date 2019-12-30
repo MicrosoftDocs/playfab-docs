@@ -17,7 +17,7 @@ There are two ways to get started with C# CloudScript using Azure Functions.  Th
 >**NOTE:**
 >In this guide, we will focus only on using Visual Studio Code. You can use any  [language that is supported in Azure Functions](https://docs.microsoft.com/azure/azure-functions/supported-languages).  At this time, the samples we provide with PlayFab integration uses the C# language.
 
-What is the the difference between the two?  The main difference is that our Visual Studio Code Extension provide some easy ways to registers and unregister functions with your PlayFab title. However, you do not need the extension to do this as there is a user interface for it in [Game Manager](https://developer.playfab.com/login).  We will cover more about this below.
+What is the difference between the two?  The main difference is that our Visual Studio Code Extension provide some easy ways to registers and unregister functions with your PlayFab title. However, you do not need the extension to do this as there is a user interface for it in [Game Manager](https://developer.playfab.com/login).  We will cover more about this below.
 
 ### Prerequisites
 
@@ -90,7 +90,7 @@ private void CallCSharpExecuteFunction(){
 
 ### PlayFab Function Context, Variables and using the Server SDKs
 
-One advantage of using CloudScript using Azure Functions is that some data will be automatically passed to the Azure Function, passing you context on the invocation of the Cloudscript and in what context the Function was called (eg. PlayStream Action, or directly from the client). This includes information like the entity profile that was the CloudScripts was invoked on behalf of and potentially the PlayStream events used to invoke the CloudScript.
+One advantage of using CloudScript using Azure Functions is that some data will be automatically passed to the Azure Function, passing you context on the invocation of the Cloudscript and in what context the Function was called (For example, PlayStream Action or directly from the client). This includes information like the entity profile that was the CloudScripts was invoked on behalf of and potentially the PlayStream events used to invoke the CloudScript.
 
 There are a couple of steps that you need to do if you are coding Functions without our Visual Studio Code Extension. 
 
@@ -145,7 +145,7 @@ As you can see in the above, the CurrentPlayerId of the caller is available like
 
 > **NOTE:** You will need to call this HelloWorld Azure Function via ExecuteFunction from an SDK.
 
-> **NOTE:** In the PlayStream event, sent back from the CloudScript function, the Player Profile is returned.  If the returned Player Profile is over 2048 bytes then the profile will be trucated with a property set indicating it has been truncated.  If this occurs you will need to use the profile APIs (either server, client or entity APIs) to retrieve the full profile.
+> **NOTE:** In the PlayStream event, sent back from the CloudScript function, the Player Profile is returned.  If the returned Player Profile is over 2048 bytes then the profile will be truncated with a property set indicating it has been truncated.  If this occurs you will need to use the profile APIs (either server, client or entity APIs) to retrieve the full profile.
 
 ### Azure Function Rules
 
@@ -157,7 +157,7 @@ Azure Functions can also be called by creating rules and scheduled tasks.  This 
 * Add an action
 * From the action dropdown select **Execute Azure Function**
 
-A list of available Azure Functions that you've registered will be available in the drop down list.
+A list of available Azure Functions that you've registered will be available in the drop-down list.
 
 ![Configure Rule for Azure Functions](media/azure_function_rules.jpg)
 
