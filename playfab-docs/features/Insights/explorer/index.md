@@ -23,6 +23,6 @@ Explorer is designed to let you discover insights in your event data using the [
 
 Explorer provides fast indexing and querying on large, diverse data sets. For optimized queries, the engine can query millions of records in a few seconds - a critical capability for games producing high throughput or large volumes of gaming events.
 
-Explorer uses a simplified SQL-like language that's easy to pick up and learn. The [intellisense](https://docs.microsoft.com/azure/data-explorer/write-queries) capabilities make it possible for users of all skill levels to author complex queries and [render](https://docs.microsoft.com/en-us/azure/kusto/query/renderoperator) the results in-line.
+Explorer uses a simplified SQL-like language that's easy to pick up and learn. The [intellisense](https://docs.microsoft.com/azure/data-explorer/write-queries) capabilities make it possible for users of all skill levels to author complex queries and [render](https://docs.microsoft.com/azure/kusto/query/renderoperator) the results in-line.
 
 Learn how to get started in the [Quickstart](quickstart.md) section. 

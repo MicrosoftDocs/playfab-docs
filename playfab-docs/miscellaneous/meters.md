@@ -35,10 +35,10 @@ These APIs can create custom events:
 * Analytics
   * Write Title Event
     * [Client](xref:titleid.playfabapi.com.client.analytics.writetitleevent)
-    * [Server](xref:titleid.playfabapi.com.server.analytics.writetitleevent )
+    * [Server](xref:titleid.playfabapi.com.server.analytics.writetitleevent)
   * Write Player Event
     * [Client](xref:titleid.playfabapi.com.client.analytics.writeplayerevent)
-    * [Server](xref:titleid.playfabapi.com.server.analytics.writeplayerevent )
+    * [Server](xref:titleid.playfabapi.com.server.analytics.writeplayerevent)
   * Write Character Event
     * [Client](xref:titleid.playfabapi.com.client.analytics.writecharacterevent)
     * [Server](xref:titleid.playfabapi.com.server.analytics.writecharacterevent)
