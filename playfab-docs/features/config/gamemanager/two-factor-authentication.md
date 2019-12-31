@@ -22,7 +22,7 @@ Install a **Two-Factor Authentication** app to your device. You can search on yo
 
 - [iPhone, iPad, and iPod Touch](https://itunes.apple.com/us/app/google-authenticator/id388497605?mt=8)
 - [Android phone or tablet](https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2)
-- [Windows phone or tablet](https://www.windowsphone.com/en-us/store/app/authenticator/e7994dbc-2336-4950-91ba-ca22d653759b)
+- [Windows phone or tablet](https://www.windowsphone.com/store/app/authenticator/e7994dbc-2336-4950-91ba-ca22d653759b)
 
 The steps are basically similar on all the platforms. This example shows an Android-based device, and a Google Authenticator application.
 

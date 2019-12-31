@@ -28,8 +28,8 @@ This tutorial shows you how to configure event archiving from scratch.
 ### Setting up a Storage Account
 
 - To create an Amazon S3 bucket, navigate to this section:  [Create an Amazon S3 Bucket](configure-s3-bucket.md).
-- To create an Azure storage account, visit [Create a Storage Account](https://docs.microsoft.com/en-us/azure/storage/common/storage-quickstart-create-account?tabs=azure-portal).
-  - You also need to [Create a Container](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal).
+- To create an Azure storage account, visit [Create a Storage Account](https://docs.microsoft.com/azure/storage/common/storage-quickstart-create-account?tabs=azure-portal).
+  - You also need to [Create a Container](https://docs.microsoft.com/azure/storage/blobs/storage-quickstart-blobs-portal).
 
 ### Viewing Your Events
 

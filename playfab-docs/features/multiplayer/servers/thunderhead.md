@@ -24,7 +24,7 @@ There are three key concepts to PlayFab Multiplayer Servers:
 2. **Build** - The game server executable, packaged with assets and certificates needed to run the game. This content can be uploaded as individual certificates, zip files, and/or a container image. If you do not need a custom container image, you can use our managed Windows containers.
 3. **Game Server** - A container running your Game Server Executable. There may be multiple servers running on a single virtual machine.
 
-Using PlayFab REST APIs, your matchmaking or lobby services allocates session hosts in your preferred [Azure region](https://azure.microsoft.com/en-us/global-infrastructure/regions/). Game clients can then connect players to the newly created server for play. As your player base ebbs and flows globally, your build scales to meet the demand.
+Using PlayFab REST APIs, your matchmaking or lobby services allocates session hosts in your preferred [Azure region](https://azure.microsoft.com/global-infrastructure/regions/). Game clients can then connect players to the newly created server for play. As your player base ebbs and flows globally, your build scales to meet the demand.
 
 You can upload and manage multiplayer server builds using Game Manager or the Entity API.
 

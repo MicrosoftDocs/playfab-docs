@@ -26,8 +26,7 @@ A native C# project can be used two ways:
   - See the comment about `loginTask.Wait()` in the example code below. This is how you'll usually make API calls.
 
 - An actual game coded in native C#
-  - You need to take advantage of the async nature of API calls, and the C# async/await feature keywords.
-    - Read the [MSDN guide - Asynchronous Programming with async and await (C#)](https://msdn.microsoft.com/en-us/library/mt674882.aspx) for this.
+  - You need to take advantage of the async nature of API calls, and the C# async/await feature keywords. For more information about asynchronous programming, see [Asynchronous Programming with async and await (C#)](https://docs.microsoft.com/dotnet/csharp/async).
 
 ## CSharp project setup
 

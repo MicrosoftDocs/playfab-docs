@@ -216,7 +216,7 @@ PlayFab Party text-to-speech and speech-to-text APIs are highly effective featur
 
 ### SDK documentation
 
-- "Accessible in-game chat overview" in the PlayFab SDK (see [SDK Downloads](https://developer.xboxlive.com/en-us/live/development/Pages/Downloads.aspx))
+- "Accessible in-game chat overview" in the PlayFab SDK (see [SDK Downloads](https://developer.xboxlive.com/live/development/Pages/Downloads.aspx))
 
 ### Accessibility guidance
 

@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 and optimizing for customer use.
 
 Explorer is designed to let you discover insights in your event data the [Azure Data Explorer query language]
-(https://docs.microsoft.com/en-us/azure/data-explorer/write-queries) – a SQL-like language optimized for ad hoc data exploration. 
+(https://docs.microsoft.com/azure/data-explorer/write-queries) – a SQL-like language optimized for ad hoc data exploration. 
 
 ## Authoring custom queries
 

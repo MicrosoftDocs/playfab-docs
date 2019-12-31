@@ -15,7 +15,7 @@ Performance metrics can support a variety of development scenarios:
 1. Using CPU and memory utilization data to measure the resource needs of multiplayer servers
 2. Using network counters to detect an irregular network environment, such as attempted DDoS attacks or other network congestion
 
-As an experimental feature PlayFab can monitor these Windows performance counters and write them to the virtual machine's filesystem. The multiplayer server application can upload this content to a game system or locally copy these to the [archived session directory](https://docs.microsoft.com/en-us/gaming/playfab/features/multiplayer/servers/archiving-and-retrieving-multiplayer-server-logs) for later access via blob storage.
+As an experimental feature PlayFab can monitor these Windows performance counters and write them to the virtual machine's filesystem. The multiplayer server application can upload this content to a game system or locally copy these to the [archived session directory](archiving-and-retrieving-multiplayer-server-logs.md) for later access via blob storage.
 
 Collecting these performance metrics has itself a performance impact on the virtual machine, in particular increasing the CPU utilization of the collector, `VMAgent.` This is why performance collection is not enabled by default and requires explicit activation.
 

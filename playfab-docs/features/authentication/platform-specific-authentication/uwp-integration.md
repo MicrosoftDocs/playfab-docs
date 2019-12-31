@@ -40,14 +40,14 @@ Before you can begin this process, you need to ask the user for their username i
 
 Then you can follow these steps:
 
-1. Call [KeyCredentialManager.RequestCreateAsync](https://docs.microsoft.com/en-us/uwp/api/windows.security.credentials.keycredentialmanager), to generate a new public key for this user.
-2. Call [CryptographicBuffer.EncodeToBase64String](https://docs.microsoft.com/en-us/uwp/api/Windows.Security.Cryptography.CryptographicBuffer#Windows_Security_Cryptography_CryptographicBuffer_EncodeToBase64String_Windows_Storage_Streams_IBuffer_), to convert the IBuffer from above to a string.
+1. Call [KeyCredentialManager.RequestCreateAsync](https://docs.microsoft.com/uwp/api/windows.security.credentials.keycredentialmanager), to generate a new public key for this user.
+2. Call [CryptographicBuffer.EncodeToBase64String](https://docs.microsoft.com/uwp/api/Windows.Security.Cryptography.CryptographicBuffer#Windows_Security_Cryptography_CryptographicBuffer_EncodeToBase64String_Windows_Storage_Streams_IBuffer_), to convert the IBuffer from above to a string.
 3. Call [PlayFabClientAPI.RegisterWithWindowsHello](xref:titleid.playfabapi.com.client.authentication.registerwithwindowshello), with the following required parameters:  
    - The Windows username.
    - The Base 64-encoded public key from above.
 4. Assuming the register was successful, the player will now be logged in. You will get back a session token that you can use to authenticate the player with all other PlayFab APIs.
-5. Also, you can now use [HashAlgorithmProvider.OpenAlgorithm(HashAlgorithmNames.Sha256)](https://docs.microsoft.com/en-us/uwp/api/windows.security.cryptography.core.hashalgorithmprovider#Windows_Security_Cryptography_Core_HashAlgorithmProvider_OpenAlgorithm_System_String_) to create a hash provider, and hash the public key by calling [hashProvider.HashData(publicKey)](https://docs.microsoft.com/en-us/uwp/api/windows.security.cryptography.core.hashalgorithmprovider#Windows_Security_Cryptography_Core_HashAlgorithmProvider_HashData_Windows_Storage_Streams_IBuffer_).
-6. Convert the hashed public key to a Base 64-encoded string [(CryptographicBuffer.EncodeToBase64String(publicKeyHash))](https://docs.microsoft.com/en-us/uwp/api/Windows.Security.Cryptography.CryptographicBuffer#Windows_Security_Cryptography_CryptographicBuffer_EncodeToBase64String_Windows_Storage_Streams_IBuffer_) and store this string and the username in the application settings. (ApplicationData.Current.LocalSettings.Values["publicKeyHint"]). This public key hint is used to log back in.
+5. Also, you can now use [HashAlgorithmProvider.OpenAlgorithm(HashAlgorithmNames.Sha256)](https://docs.microsoft.com/uwp/api/windows.security.cryptography.core.hashalgorithmprovider#Windows_Security_Cryptography_Core_HashAlgorithmProvider_OpenAlgorithm_System_String_) to create a hash provider, and hash the public key by calling [hashProvider.HashData(publicKey)](https://docs.microsoft.com/en-us/uwp/api/windows.security.cryptography.core.hashalgorithmprovider#Windows_Security_Cryptography_Core_HashAlgorithmProvider_HashData_Windows_Storage_Streams_IBuffer_).
+6. Convert the hashed public key to a Base 64-encoded string [(CryptographicBuffer.EncodeToBase64String(publicKeyHash))](https://docs.microsoft.com/uwp/api/Windows.Security.Cryptography.CryptographicBuffer#Windows_Security_Cryptography_CryptographicBuffer_EncodeToBase64String_Windows_Storage_Streams_IBuffer_) and store this string and the username in the application settings. (ApplicationData.Current.LocalSettings.Values["publicKeyHint"]). This public key hint is used to log back in.
 7. The username should also be stored in the user's local settings, as well for simpler login.
 
 ### Linking Windows credentials to an existing PlayFab account
@@ -65,10 +65,10 @@ Once you have linked Windows Hello credentials to a PlayFab account, you can log
 Follow these steps:
 
 1. Call [PlayFabClientAPI.GetWindowsHelloChallengeAsync](xref:titleid.playfabapi.com.client.authentication.getwindowshellochallenge) to create a signing challenge.
-2. Call [CryptographicBuffer.DecodeFromBase64String](https://docs.microsoft.com/en-us/uwp/api/Windows.Security.Cryptography.CryptographicBuffer#Windows_Security_Cryptography_CryptographicBuffer_DecodeFromBase64String_System_String_) to create an IBuffer for the `KeyCredentialManager` to have the user sign.
-3. Call `var retrieveResult = await` [KeyCredentialManager.OpenAsync(userId)](https://docs.microsoft.com/en-us/uwp/api/windows.security.credentials.keycredentialmanager#Windows_Security_Credentials_KeyCredentialManager_OpenAsync_System_String_) to create a key signing service.
+2. Call [CryptographicBuffer.DecodeFromBase64String](https://docs.microsoft.com/uwp/api/Windows.Security.Cryptography.CryptographicBuffer#Windows_Security_Cryptography_CryptographicBuffer_DecodeFromBase64String_System_String_) to create an IBuffer for the `KeyCredentialManager` to have the user sign.
+3. Call `var retrieveResult = await` [KeyCredentialManager.OpenAsync(userId)](https://docs.microsoft.com/uwp/api/windows.security.credentials.keycredentialmanager#Windows_Security_Credentials_KeyCredentialManager_OpenAsync_System_String_) to create a key signing service.
 4. Get the credential for this user: `var userCredential = retrieveResult.Credential`.
-5. Call await [userCredential.RequestSignAsync(challengeBuffer)](https://docs.microsoft.com/en-us/uwp/api/Windows.Security.Credentials.KeyCredential#Windows_Security_Credentials_KeyCredential_RequestSignAsync_Windows_Storage_Streams_IBuffer_) to have Windows request that the user sign the server's challenge for this user.
+5. Call await [userCredential.RequestSignAsync(challengeBuffer)](https://docs.microsoft.com/uwp/api/Windows.Security.Credentials.KeyCredential#Windows_Security_Credentials_KeyCredential_RequestSignAsync_Windows_Storage_Streams_IBuffer_) to have Windows request that the user sign the server's challenge for this user.
 6. Finally, call [PlayFabClientAPI.LoginWithWindowsHello](xref:titleid.playfabapi.com.client.authentication.loginwithwindowshello) to complete the process and log in the player.
 7. Assuming the login was successful, the player is now logged in. You will get back a session token that you can use to authenticate the player with all other PlayFab APIs.
 
@@ -83,7 +83,7 @@ Making a purchase via the Windows store is similar to the purchase process via i
 
 Microsoft has published several documents describing this process. For example:
 
-[Setting up the in-app purchase in the Windows Store](https://docs.microsoft.com/en-us/windows/uwp/publish/add-on-submissions)
+[Setting up the in-app purchase in the Windows Store](https://docs.microsoft.com/windows/uwp/publish/add-on-submissions)
 
 You must also be sure to set up a matching item in the PlayFab catalog, with the same product ID.
 
@@ -92,9 +92,9 @@ You must also be sure to set up a matching item in the PlayFab catalog, with the
 Once you have set up the items in the store, you can enable the in-app purchase in your app.
 
 1. Make the purchase in the application, and be sure to request a receipt.
-   - This document explains the process: [making in-app purchases with UWP](https://docs.microsoft.com/en-us/uwp/api/windows.applicationmodel.store.currentapp#Windows_ApplicationModel_Store_CurrentApp_RequestProductPurchaseAsync_System_String_System_Boolean_).
+   - This document explains the process: [making in-app purchases with UWP](https://docs.microsoft.com/uwp/api/windows.applicationmodel.store.currentapp#Windows_ApplicationModel_Store_CurrentApp_RequestProductPurchaseAsync_System_String_System_Boolean_).
 2. You will get back a receipt.
-   - You can find [more information on receipts here](https://docs.microsoft.com/en-us/windows/uwp/monetize/use-receipts-to-verify-product-purchases).
+   - You can find [more information on receipts here](https://docs.microsoft.com/windows/uwp/monetize/use-receipts-to-verify-product-purchases).
 3. Call [PlayFabClientAPI.ValidateWindowsStoreReceipt](xref:titleid.playfabapi.com.client.platformspecificmethods.validatewindowsstorereceipt) to validate the receipt. This will automatically credit the player's inventory in PlayFab with the item they just purchased.
 
 ## Further questions
