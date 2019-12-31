@@ -144,9 +144,9 @@ For the completed list, the reset periods are:
 
 All statistics defined in the game can be queried for their definition, regardless of whether they were set up as resetting statistics or not.
 
-This is important to note, since statistics can be created via the [UpdateUserStatistics](xref:titleid.playfabapi.com.client.playerdatamanagement.updateuserstatistics) call. Any statistics not created with a reset period (`VersionChangeInterval`) will not have one to start, and so a query for the statistic configuration would return with this parameter set to `Never`.
+This is important to note, since statistics can be created using the [UpdatePlayerStatistics](xref:titleid.playfabapi.com.client.playerdatamanagement.updateplayerstatistics) call. Any statistics not created with a reset period (`VersionChangeInterval`) will not have one to start, and so a query for the statistic configuration would return with this parameter set to `Never`.
 
-Using the example above, if the title also had a statistics named `FlagsCaptured` created via [UpdateUserStatistics](xref:titleid.playfabapi.com.client.playerdatamanagement.updateuserstatistics) (or created in the Game Manager directly on a player), and a couple of weeks had passed, it would appear like the call shown below...
+Using the example above, if the title also had a statistics named `FlagsCaptured` created using [UpdatePlayerStatistics](xref:titleid.playfabapi.com.client.playerdatamanagement.updateplayerstatistics) (or created in the Game Manager directly on a player), and a couple of weeks had passed, it would appear as shown in the call shown below.
 
 ```csharp
 public void GetPlayerStatisticDefinitions() {
@@ -185,7 +185,7 @@ In this case, the statistics named `Headshots` has a reset interval defined, and
 
 Meanwhile, `FlagsCaptured` does not have a `VersionChangeInterval`, which is also why the `CurrentVersion` is **0** (since it has never been versioned).
 
-Statistics created via [UpdateUserStatistics](xref:titleid.playfabapi.com.client.playerdatamanagement.updateuserstatistics) (or the PlayFab Game Manager), can still be defined to have a reset period using `UpdatePlayerStatisticDefinition`, as described above.
+Statistics created via [UpdatePlayerStatistics](xref:titleid.playfabapi.com.client.playerdatamanagement.updateplayerstatistics) (or the PlayFab Game Manager), can still be defined to have a reset period using `UpdatePlayerStatisticDefinition`, as described above.
 
 Once this has been done, they will reset on that interval exactly as if they were originally defined using `CreatePlayerStatisticDefinition`.
 
@@ -577,3 +577,4 @@ For completeness, this section provides a list of all the enums, classes, and AP
     - **Statistics** (**StatisticUpdate[]**) - The statistic to be updated, with the provided values.
 
   - **UpdatePlayerStatisticsResult** (no parameters).
+ 
