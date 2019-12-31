@@ -31,7 +31,7 @@ You can select a player ID label (blue) to [inspect details about a particular p
 The **Search** query field accepts two types of queries:
 
 1. **Simple**: Type plain text in the search box to return literal string matches on the ID column.
-2. **Complex**: Construct queries using the [KQL syntax](https://docs.microsoft.com/en-us/azure/kusto/query/).
+2. **Complex**: Construct queries using the [KQL syntax](https://docs.microsoft.com/azure/kusto/query/).
 
 Sample complex queries can be accessed from the **Search Tips** button in the upper right. Selecting a sample query will automatically populate the search box with the correct KQL syntax. You can then edit the query to suit your use case.
 

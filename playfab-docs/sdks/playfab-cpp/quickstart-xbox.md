@@ -18,7 +18,7 @@ Before you can call any PlayFab API, you must have a [PlayFab developer account]
 
 ## Xbox project setup
 
-Make sure to follow the Xbox setup guide for Universal Windows Platform (UWP) applications: [UWP on Xbox One](https://docs.microsoft.com/en-us/windows/uwp/xbox-apps). This will help with setting up your Xbox, the XDK, and Visual Studio, for building an Xbox application.
+Make sure to follow the Xbox setup guide for Universal Windows Platform (UWP) applications: [UWP on Xbox One](https://docs.microsoft.com/windows/uwp/xbox-apps). This will help with setting up your Xbox, the XDK, and Visual Studio, for building an Xbox application.
 
 ## Using the PlayFab CPP SDK
 
@@ -48,7 +48,7 @@ We will use a Direct3D sample for the guide. This will help you understand how t
 
 4. Modify the **Xbox Live Manifest** by editing the `package.appxmanifest` file to explicitly call out port numbers. When using ports internally, make the following change to allow the application to talk to the network:
 
-- Refer to the manifest template code example in this documentation [Xbox One exclusive resource application network manifest templates](https://docs.microsoft.com/en-us/windows/uwp/xbox-live/multiplayer/xbox-integrated-multiplayer/xim-manifest#xbox-one-exclusive-resource-application-network-manifest-templates).
+- Refer to the manifest template code example in this documentation [Xbox One exclusive resource application network manifest templates](https://docs.microsoft.com/windows/uwp/xbox-live/multiplayer/xbox-integrated-multiplayer/xim-manifest#xbox-one-exclusive-resource-application-network-manifest-templates).
 
 5. Modify the section for the **XML** header `<mx:Extension Category="windows.xbox.networking">` so that it looks like what is shown below.
 

@@ -24,7 +24,7 @@ Before you can call any PlayFab API, you must have a [PlayFab developer account]
 
 - Windows 7 or newer.
 
-- [Official Microsoft Documentation](https://msdn.microsoft.com/en-us/library/windows/desktop/aa380516%28v=vs.85%29.aspx)
+- [Transport Layer Security Protocol](https://docs.microsoft.com/windows/win32/secauthn/transport-layer-security-protocol)
 
 - [Support for SSL/TLS protocols on Windows](https://blogs.msdn.com/b/kaushal/archive/2011/10/02/support-for-ssl-tls-protocols-on-windows.aspx)
 

@@ -23,7 +23,7 @@ A basic allocation of multiplayer server capacity is included with every paid Pl
 
 This is typically *not* enough to launch a live game, but it can help you evaluate the service and get started.
 
-To learn more about these different virtual machine please see [Azure VM Sizes](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes).
+To learn more about these different virtual machine please see [Azure VM Sizes](https://docs.microsoft.com/azure/virtual-machines/windows/sizes).
 
 > [!NOTE]
 > Free evaluation capacity is provided per month by the PlayFab tier.  
