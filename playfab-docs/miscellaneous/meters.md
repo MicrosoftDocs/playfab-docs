@@ -84,7 +84,7 @@ The number of writes to profile data over the course of the calendar month. If t
 > A single API call can trigger multiple write operations, resulting in many updates. You can learn more on our [API to Number of Updates](https://www.playfab.com) page.
 
 > [!WARNING]
-> Based on the [Player Profile](xref:titleid.playfabapi.com.events.datatypes.playerprofile) docs page, will a player login result in 6 updates?
+> Based on the [Player Profile](https://docs.microsoft.com/gaming/playfab/api-references/events/data-types/playerprofile) docs page, will a player login result in 6 updates?
 
 #### Example
 Let's take a look at a sample title's updates for the previous month:
