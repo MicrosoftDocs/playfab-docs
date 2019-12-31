@@ -25,5 +25,7 @@
     href: twitch-html5.md
   - name: Setting up PlayFab authentication using Universal Windows Platform
     href: uwp.md
+  - name: Setup Sign In with Apple for PlayFab
+    href: apple-open-id.md
   - name: Integrating the Universal Windows Platform with PlayFab
     href: uwp-integration.md
