@@ -312,7 +312,7 @@ In addition to the values returned from `IncrementPlayerStatisticVersion`, the r
 
 Finally, from the server and client API side of the story, the calls are very similar to what you know from original PlayFab user and character statistics calls.
 
-In this case, there is a call to [UpdateUserStatistics](xref:titleid.playfabapi.com.client.playerdatamanagement.updateuserstatistics) and another to `UpdatePlayerStatistics` in each API set. The difference here is that now, the version is part of either the request or the response.
+The difference is that now, the version is part of either the request or the response.
 
 When retrieving statistics, the value for the current statistic version - as well as the version number itself - is returned.
 
@@ -448,10 +448,6 @@ public void UpdatePlayerStatistics() {
     "data": {}
 }
 ```
-
-> [!NOTE]
-> In both cases, if the version were left out of the [UpdateUserStatistics](xref:titleid.playfabapi.com.client.playerdatamanagement.updateuserstatistics) call, the current version (3, in this case) would be the one updated.
-
 But remember - while the expired version can be written to for up to 10 minutes, any attempt to write to that version *beyond* that time will fail, with a response like the one shown below.
 
 ```json
