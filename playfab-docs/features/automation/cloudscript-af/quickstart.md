@@ -54,7 +54,7 @@ In order to use the function you just created from the PlayFab SDK, you will nee
 
 > **NOTE:** The examples code within the this guide will be written in Unity C# & Azure Function C# code.
 
-Now that your function is registered, and you have the Beta SDK installed, you can now call that function from within your SDK.
+Now that your function is registered, and you have the Beta SDK installed, you can now call that function from within your client.
 
 ```C#
 //This snippet assumes that your game client is already logged into PlayFab.
