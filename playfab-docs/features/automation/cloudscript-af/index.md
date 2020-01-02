@@ -25,8 +25,9 @@ Basing CloudScript to be based on Azure Functions brings a few key improvements:
 
 
 ### Type of Cloud Script using Azure Functions
-One of the major new capabilities of CloudScript is the ability to have long running CloudScript.  This is introduced by having a new type of Cloud Script based on Azure Functions queued storage triggered Cloud Script.  With this new type of CloudScript your will need to decide the type of CloudScript to use for each 
+One of the major new capabilities of CloudScript is the ability to have long running CloudScript.  This is introduced by having a new type of Cloud Script based on Azure Functions queued storage triggered Cloud Script.  With this new type of CloudScript, you will need to decide the type of CloudScript to use for each CloudScript you create. 
 
+For more information about the advantages and limitations of each type of function you can read the Azure documentation of each:
 * [HTTP Triggered Cloud Script](https://docs.microsoft.com/azure/azure-functions/functions-bindings-http-webhook?tabs=csharp)
 
 * [Queued Triggered Cloud Script](https://docs.microsoft.com/azure/azure-functions/functions-bindings-storage-queue)
