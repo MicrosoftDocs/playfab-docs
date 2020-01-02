@@ -16,6 +16,10 @@ PlayFab supports a wide variety of authentication providers, that allow you to p
 
 ## Links
 
+![Apple](media/apple.png)
+
+- [Setup Sign In with Apple for PlayFab](apple-open-id.md)
+
  ![Facebook](media/facebook.png)
 
 - [Setting up PlayFab authentication using Facebook and HTML5](facebook-html5.md)
