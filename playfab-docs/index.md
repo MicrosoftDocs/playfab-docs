@@ -1265,7 +1265,6 @@ featureFlags:
                                     <div class="cardPadding">
                                         <div class="card">
                                            <div class="cardText">
-                                               <>
                                                 <h3>PlayFab CPP</h3>
                                                 <p><a href='/gaming/playfab/sdks/playfab-cpp'>SDK</a></p><p><a href='/gaming/playfab/sdks/playfab-cpp/quickstart-linux'>Quickstart - Linux</a></p><p><a href='/gaming/playfab/sdks/playfab-cpp/quickstart-windows'>Quickstart - Windows</a></p><p><a href='/gaming/playfab/sdks/playfab-cpp/quickstart-xbox'>Quickstart - Xbox One</a></p>
                                             </div>
