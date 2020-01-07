@@ -991,28 +991,19 @@ featureFlags:
                             </li>
                         </ul>
                     </li>
+                    <!-- Start SDK Section -->
                     <li>
                         <a href="#sdks">SDKs</a>
                         <ul id="sdks" class="cardsF">
                             <li class="fullSpan">
-                                <h2>PlayFab SDKs</h2>
+                                <h2>PlayFab SDKs, tools, and extensions</h2>
+                                <h3>SDKs are available for most popular engines and platforms.</h3>
                             </li>
-                            <li>
-                                <div class="cardSize">
-                                    <div class="cardPadding">
-                                        <div class="card">
-                                            <div class="cardImageOuter">
-                                                <div class="cardImage">
-                                                    <img src="/gaming/playfab/sdks/media/sdk-generator.png" alt="PlayFab SDKs: SDK generator card image" />
-                                                </div>
-                                            </div>
-                                            <div class="cardText">
-                                                <h3>SDK Generator</h3>
-                                                <p><a href='/gaming/playfab/sdks/sdkgenerator'>SDK</a></p><p><a href='/gaming/playfab/sdks/sdkgenerator/quickstart'>Quickstart</a></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                            <li class="fullSpan">
+                                <h2>PlayFab Core</h2>
+                            </li>
+                            <li class="fullSpan">
+                                <h2>Core SDKs</h2>
                             </li>
                             <li>
                                 <div class="cardSize">
@@ -1207,23 +1198,6 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/gaming/playfab/sdks/media/sdk-postman.svg" alt="PlayFab SDKs: Postman card image" />
-                                                </div>
-                                            </div>
-                                            <div class="cardText">
-                                                <h3>Postman</h3>
-                                                <p><a href='/gaming/playfab/sdks/postman'>SDK</a></p><p><a href='/gaming/playfab/sdks/postman/quickstart'>Quickstart</a></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="cardSize">
-                                    <div class="cardPadding">
-                                        <div class="card">
-                                            <div class="cardImageOuter">
-                                                <div class="cardImage">
                                                     <img src="https://docs.microsoft.com/media/logos/logo_python.svg" alt="PlayFab SDKs: Python card image" />
                                                 </div>
                                             </div>
@@ -1290,6 +1264,19 @@ featureFlags:
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
+                                           <div class="cardText">
+                                               <>
+                                                <h3>PlayFab CPP</h3>
+                                                <p><a href='/gaming/playfab/sdks/playfab-cpp'>SDK</a></p><p><a href='/gaming/playfab/sdks/playfab-cpp/quickstart-linux'>Quickstart - Linux</a></p><p><a href='/gaming/playfab/sdks/playfab-cpp/quickstart-windows'>Quickstart - Windows</a></p><p><a href='/gaming/playfab/sdks/playfab-cpp/quickstart-xbox'>Quickstart - Xbox One</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
                                                     <img src="https://docs.microsoft.com/media/logos/logo_Cplusplus.svg" alt="PlayFab SDKs: PlayFab CPP card image" />
@@ -1298,6 +1285,64 @@ featureFlags:
                                             <div class="cardText">
                                                 <h3>PlayFab CPP</h3>
                                                 <p><a href='/gaming/playfab/sdks/playfab-cpp'>SDK</a></p><p><a href='/gaming/playfab/sdks/playfab-cpp/quickstart-linux'>Quickstart - Linux</a></p><p><a href='/gaming/playfab/sdks/playfab-cpp/quickstart-windows'>Quickstart - Windows</a></p><p><a href='/gaming/playfab/sdks/playfab-cpp/quickstart-xbox'>Quickstart - Xbox One</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="fullSpan">
+                                <h2>Multiplayer</h2>
+                            </li>
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardImageOuter">
+                                                <div class="cardImage">
+                                                    <img src="https://docs.microsoft.com/media/logos/logo_Cplusplus.svg" alt="PlayFab SDKs: PlayFab CPP card image" />
+                                                </div>
+                                            </div>
+                                            <div class="cardText">
+                                                <h3>PlaceHolder</h3>
+                                                <p><a href='/gaming/playfab/sdks/playfab-cpp'>SDK</a></p><p><a href='/gaming/playfab/sdks/playfab-cpp/quickstart-linux'>Quickstart - Linux</a></p>
+                                                <p><a href='/gaming/playfab/sdks/playfab-cpp/quickstart-windows'>Quickstart - Windows</a></p>
+                                                <p><a href='/gaming/playfab/sdks/playfab-cpp/quickstart-xbox'>Quickstart - Xbox One</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="fullSpan">
+                                <h2>Tools and extensions</h2>
+                            </li>
+                            <li>
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardImageOuter">
+                                                <div class="cardImage">
+                                                    <img src="/gaming/playfab/sdks/media/sdk-generator.png" alt="PlayFab SDKs: SDK generator card image" />
+                                                </div>
+                                            </div>
+                                            <div class="cardText">
+                                                <h3>SDK Generator</h3>
+                                                <p><a href='/gaming/playfab/sdks/sdkgenerator'>SDK</a></p><p><a href='/gaming/playfab/sdks/sdkgenerator/quickstart'>Quickstart</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardImageOuter">
+                                                <div class="cardImage">
+                                                    <img src="/gaming/playfab/sdks/media/sdk-postman.svg" alt="PlayFab SDKs: Postman card image" />
+                                                </div>
+                                            </div>
+                                            <div class="cardText">
+                                                <h3>Postman</h3>
+                                                <p><a href='/gaming/playfab/sdks/postman'>SDK</a></p><p><a href='/gaming/playfab/sdks/postman/quickstart'>Quickstart</a></p>
                                             </div>
                                         </div>
                                     </div>
