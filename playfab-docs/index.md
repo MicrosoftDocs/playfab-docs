@@ -1264,18 +1264,6 @@ featureFlags:
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
-                                           <div class="cardText">
-                                                <h3>PlayFab CPP</h3>
-                                                <p><a href='/gaming/playfab/sdks/playfab-cpp'>SDK</a></p><p><a href='/gaming/playfab/sdks/playfab-cpp/quickstart-linux'>Quickstart - Linux</a></p><p><a href='/gaming/playfab/sdks/playfab-cpp/quickstart-windows'>Quickstart - Windows</a></p><p><a href='/gaming/playfab/sdks/playfab-cpp/quickstart-xbox'>Quickstart - Xbox One</a></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="cardSize">
-                                    <div class="cardPadding">
-                                        <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
                                                     <img src="https://docs.microsoft.com/media/logos/logo_Cplusplus.svg" alt="PlayFab SDKs: PlayFab CPP card image" />
@@ -1292,7 +1280,7 @@ featureFlags:
                             <li class="fullSpan">
                                 <h2>Multiplayer</h2>
                             </li>
-                            </li>
+                            <li>
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
@@ -1311,7 +1299,7 @@ featureFlags:
                                     </div>
                                 </div>
                             </li>
-                         </ul>   
+                         </ul>
                          <ul id="tools" class="cardsF">
                             <li class="fullSpan">
                                 <h2>Tools and extensions</h2>
