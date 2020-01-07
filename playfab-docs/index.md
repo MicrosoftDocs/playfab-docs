@@ -1290,10 +1290,46 @@ featureFlags:
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3>PlaceHolder</h3>
-                                                <p><a href='/gaming/playfab/sdks/playfab-cpp'>SDK</a></p><p><a href='/gaming/playfab/sdks/playfab-cpp/quickstart-linux'>Quickstart - Linux</a></p>
-                                                <p><a href='/gaming/playfab/sdks/playfab-cpp/quickstart-windows'>Quickstart - Windows</a></p>
-                                                <p><a href='/gaming/playfab/sdks/playfab-cpp/quickstart-xbox'>Quickstart - Xbox One</a></p>
+                                                <h3>Multiplayer Servers</h3>
+                                                <p><a href="https://www.nuget.org/packages/com.playfab.cppgsdk.v140" data-linktype="external">Game Server SDK (GSDK) for C++ Windows servers via nuget</a></p>
+                                                <p><a href="https://www.nuget.org/packages/com.playfab.csharpgsdk" data-linktype="external">Game Server SDK (GSDK) for C# Windows servers via nuget</a></p>
+                                                <p><a href="https://mvnrepository.com/artifact/com.playfab/gameserverSDK" data-linktype="external">Game Server SDK (GSDK) for Java Windows &amp; Linux servers via Maven</a></p>
+                                                <p><a href="/gaming/playfab/features/multiplayer/servers/quickstart-for-multiplayer-servers-api-powershell">Quickstart for multiplayer servers (API/PowerShell)</a></p>
+                                                <p><a href="/gaming/playfab/features/multiplayer/servers/quickstart-for-multiplayer-servers-game-manager">Quickstart for multiplayer servers (Game Manager)]</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardImageOuter">
+                                                <div class="cardImage">
+                                                    <img src="https://docs.microsoft.com/media/logos/logo_Cplusplus.svg" alt="PlayFab SDKs: PlayFab CPP card image" />
+                                                </div>
+                                            </div>
+                                            <div class="cardText">
+                                                <h3>Party</h3>
+                                                <p><a href='/gaming/playfab/features/multiplayer/matchmaking/quickstart'>Quickstart</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                           <li>
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardImageOuter">
+                                                <div class="cardImage">
+                                                    <img src="https://docs.microsoft.com/media/logos/logo_Cplusplus.svg" alt="PlayFab SDKs: PlayFab CPP card image" />
+                                                </div>
+                                            </div>
+                                            <div class="cardText">
+                                                <h3>Party</h3>
+                                                <p><a href='/gaming/playfab/features/multiplayer/networking/quickstart-non-windows'>Quickstart</a></p>
                                             </div>
                                         </div>
                                     </div>
