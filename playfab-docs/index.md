@@ -1299,8 +1299,6 @@ featureFlags:
                                     </div>
                                 </div>
                             </li>
-                         </ul>
-                         <ul id="tools" class="cardsF">
                             <li class="fullSpan">
                                 <h2>Tools and extensions</h2>
                             </li>
