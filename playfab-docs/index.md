@@ -1311,7 +1311,7 @@ featureFlags:
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3>Party</h3>
+                                                <h3>Matchmaking</h3>
                                                 <p><a href='/gaming/playfab/features/multiplayer/matchmaking/quickstart'>Quickstart</a></p>
                                             </div>
                                         </div>
