@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 >
 > It is provided to give you an early look at an upcoming feature, and to allow you to give us feedback while it is still in development.  
 >
-> Access to this feature is restricted to select titles. If you are interested in trying it, please contact us at [helloplayfab@microsoft.com](mailto:helloplayfab@microsoft.com).
+> Access to this feature is restricted to select titles. Customers in our Indie, Pro, and Enterprise tiers can request access by opening a ticket with our support team via the Contact Us tab in the PlayFab Game Manager.
 
  Event Archive (preview) can be used to get your events out of PlayFab and into your Azure Blob Storage (ABS) account or Amazon Simple Storage Service (S3) bucket. Event Archive allows you to decide which of your title’s events to export, and how often. The events are dropped in [JSONL format](#event-output-format), with each event in its own individual file.
 
