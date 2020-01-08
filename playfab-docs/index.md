@@ -1286,33 +1286,16 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="https://docs.microsoft.com/media/logos/logo_Cplusplus.svg" alt="PlayFab SDKs: PlayFab CPP card image" />
+                                                    <img src="/gaming/playfab/features/media/feature-compute.svg" alt="PlayFab SDKs: PlayFab Servers card image" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
                                                 <h3>Multiplayer Servers</h3>
-                                                <p><a href="https://www.nuget.org/packages/com.playfab.cppgsdk.v140" data-linktype="external">Game Server SDK (GSDK) for C++ Windows servers via nuget</a></p>
-                                                <p><a href="https://www.nuget.org/packages/com.playfab.csharpgsdk" data-linktype="external">Game Server SDK (GSDK) for C# Windows servers via nuget</a></p>
-                                                <p><a href="https://mvnrepository.com/artifact/com.playfab/gameserverSDK" data-linktype="external">Game Server SDK (GSDK) for Java Windows &amp; Linux servers via Maven</a></p>
-                                                <p><a href="/gaming/playfab/features/multiplayer/servers/quickstart-for-multiplayer-servers-api-powershell">Quickstart for multiplayer servers (API/PowerShell)</a></p>
-                                                <p><a href="/gaming/playfab/features/multiplayer/servers/quickstart-for-multiplayer-servers-game-manager">Quickstart for multiplayer servers (Game Manager)]</a></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="cardSize">
-                                    <div class="cardPadding">
-                                        <div class="card">
-                                            <div class="cardImageOuter">
-                                                <div class="cardImage">
-                                                    <img src="https://docs.microsoft.com/media/logos/logo_Cplusplus.svg" alt="PlayFab SDKs: PlayFab CPP card image" />
-                                                </div>
-                                            </div>
-                                            <div class="cardText">
-                                                <h3>Matchmaking</h3>
-                                                <p><a href='/gaming/playfab/features/multiplayer/matchmaking/quickstart'>Quickstart</a></p>
+                                                <p><a href="https://www.nuget.org/packages/com.playfab.cppgsdk.v140" data-linktype="external">GSDK for C++ Windows servers</a></p>
+                                                <p><a href="https://www.nuget.org/packages/com.playfab.csharpgsdk" data-linktype="external">GSDK for C# Windows servers</a></p>
+                                                <p><a href="https://mvnrepository.com/artifact/com.playfab/gameserverSDK" data-linktype="external">GSDK for Java Windows &amp; Linux servers</a></p>
+                                                <p><a href="/gaming/playfab/features/multiplayer/servers/quickstart-for-multiplayer-servers-api-powershell">Quickstart (API/PowerShell)</a></p>
+                                                <p><a href="/gaming/playfab/features/multiplayer/servers/quickstart-for-multiplayer-servers-game-manager">Quickstart (Game Manager)]</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -1324,12 +1307,13 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="https://docs.microsoft.com/media/logos/logo_Cplusplus.svg" alt="PlayFab SDKs: PlayFab CPP card image" />
+                                                    <img src="/gaming/playfab/features/media/feature-party.svg" alt="PlayFab SDKs: PlayFab Party card image" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
                                                 <h3>Party</h3>
                                                 <p><a href='/gaming/playfab/features/multiplayer/networking/quickstart-non-windows'>Quickstart</a></p>
+                                                <p><a href="/gaming/playfab/features/multiplayer/networking/#resources">Party SDKs</a></p>
                                             </div>
                                         </div>
                                     </div>
