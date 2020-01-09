@@ -13,11 +13,9 @@ ms.localizationpriority: medium
 # User-Generated Content (UGC) quickstart
 
 > [!IMPORTANT]
-> This feature is currently in **Private Preview**.  
+> This feature is currently in **Private Preview**. We will be making it broadly available to developers as soon as we can.
 >
 > It is provided to give you an early look at an upcoming feature, and to allow you to provide feedback while it is still in development.  
->
-> Access to this feature is restricted to select titles. If you are interested in trying it, please contact us at [helloplayfab@microsoft.com](mailto:helloplayfab@microsoft.com).
 
 The purpose of this guide is to explain how to quickly get started with UGC, using direct service-to-service calls. We will show you step-by-step how to connect to the draft UGC content items, publish those items, and then search and find them.
 
