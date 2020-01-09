@@ -9,6 +9,8 @@ ms.prod: playfab
 keywords: playfab, automation, cloudscript, azure functions
 ms.localizationpriority: medium
 ---
+> [!NOTE]
+> This feature is in private preview and intended for use by customers participating in the preview program.  We anticipate ongoing changes to it as we continue gathering feedback and optimizing for customer use.
 
 # PlayFab CloudScript using Azure Functions
 
