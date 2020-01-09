@@ -53,7 +53,8 @@ In this topic we show you how to retrieve the **TitleId** for your Title. You ca
 
 Before you can make your first API call to log a player in, you must create a [PlayFab Developer account](pfab-account.md).
 
-> [!NOTE] The quickstart guides use a test **TitleId**. When you follow a guide, use a **TitleId** for Title that you have created in your PlayFab Developer account.
+> [!NOTE] 
+> The quickstart guides use a test **TitleId**. When you follow a guide, use a **TitleId** for Title that you have created in your PlayFab Developer account.
 
 ## Player login
 
@@ -134,7 +135,8 @@ For more information, check out these resources to get you started with Cloud Sc
 - [Automation](../index?#pivot=documentation&panel=automation) – A hub for information on CloudScript, Scheduled Tasks, PlayStream and Action & Rules.
 - [CloudScript quickstart](../features/automation/cloudscript/quickstart.md) – Get up and running quickly with your first CloudScript call.
 
-> [!TIP] To leverage rules in the automation system, [write custom events](../features/analytics/metrics/playstream-events.md#custom-event-overview) in your Title which creates a PlayStream event.
+> [!TIP]
+> To leverage rules in the automation system, [write custom events](../features/analytics/metrics/playstream-events.md#custom-event-overview) in your Title which creates a PlayStream event.
 
 ## Get to know PlayFab features
 
