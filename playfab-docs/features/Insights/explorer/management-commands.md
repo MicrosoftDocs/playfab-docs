@@ -1,9 +1,9 @@
 ---
 title: Insights Management Commands
-author: johsmi
+author: john-smith-microsoft
 description: management commands for title adx
 ms.author: johsmi
-ms.date: 11/27/2019    
+ms.date: 1/9/2020    
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, insights, explorer
