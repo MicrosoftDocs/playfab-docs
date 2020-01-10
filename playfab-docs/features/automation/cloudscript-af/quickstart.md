@@ -55,6 +55,8 @@ To begin using this feature you need to enable it.  Visit Automation -> CloudScr
 
 ### Using and Calling CloudScript using Azure Functions from your PlayFab Title
 
+In order to use the function you just created from the PlayFab SDK, you will need to download one of our BetaSDKs. These are gated SDKs, and access instructions are in the email sent to developers as part of the beta admission process. Once you have access to the [Beta SDKs](https://github.com/PlayFab?utf8=%E2%9C%93&q=beta&type=&language=) you can download the one specifically for the environment you are making your game in.
+
 > **NOTE:** The examples code within the this guide will be written in Unity C# & Azure Function C# code.
 
 Now that your function is registered, and you have the Beta SDK installed, you can now call that function from within your client.
