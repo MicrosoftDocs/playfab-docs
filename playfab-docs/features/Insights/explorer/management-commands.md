@@ -52,57 +52,57 @@ Example: `.show table ['events.all'] policy retention`<br>
 This shows the current retention policy for the "events.all" table.
 
 
-**.alter table policy retention**<br>
+**.alter table policy retention**<br>(coming soon)
 Change the current retention policy on table(s) to <retention_policy><br>
 Usage: `.alter tables (<table_name> [, ...]) policy retention <retention_policy>`<br>
 Example: `.alter table ['events.all'] policy retention softdelete = 90d`<br>
 This sets data in the "events.all" table to be removed from the table after 90 days.
 
 ## Data Control
-**.create table**<br>
+**.create table**<br>(coming soon)
 Creates a new empty table. The command must run in context of a specific database. If the table already exists the command will return success.<br>
 Usage: `.create table TableName ([columnName:columnType], ...)`<br>
 Example: `.create table ['custom.logs'] (Level:string, Timestamp:datetime, Id:string, Message:string)`<br>
-This creates a new table called "custom.logs" with four columns.
+This creates a new table called "custom.logs" with four columns. **IMPORTANT Custom tables must begin with "custom.".**
 
-**.drop table**<br>
+**.drop table**<br>(coming soon)
 Drops the specified table. Note: This cannot be undone.<br>
 Usage: `.drop table TableName [ifexists]`<br>
 Example: `.drop table ['custom.logs']`<br>
 This drops the table named "custom.logs".
 
-**.set**<br>
+**.set**<br>(coming soon)
 Creates a table with results of Query Or Command<br>
 Usage: `.set  TableName [with (PropertyName = PropertyValue [, ...])] <| QueryOrCommand`<br>
 Example: `.set [‘custom.recentEvents’] <| [‘events.all’] | where Timestamp > now() – time(1h)`<br>
 This creates a table "custom.recentEvents" containing the results of the above query
 
-**.append**<br>
+**.append**<br>(coming soon)
 Appends an existing table with results of QueryOrCommand<br>
 Usage: `.append  TableName [with (PropertyName = PropertyValue [, ...])] <| QueryOrCommand`<br>
 Example: `.append [‘custom.recentEvents’] <| [‘events.all’] | where Timestamp > now() – time(1h)`<br>
 This adds to existing table "custom.recentEvents" with the results of the above query
 
-**.set-or-append**<br>
+**.set-or-append**<br>(coming soon)
 Create or appends to a table with results of QueryOrCommand<br>
 Usage: `.set-or-append  TableName [with (PropertyName = PropertyValue [, ...])] <| QueryOrCommand`<br>
 Example: `.set-or-append [‘custom.weekEvents’] <| [‘events.all’] | where Timestamp > now() – time(7d)`<br>
 This appends data from the above query to table "custom.weekEvents". If the table does not exist, create it.
 
-**.set-or-replace**<br>
+**.set-or-replace**<br>(coming soon)
 Replaces the data of the table if it exists (drops the existing data shards), or creates the target table if doesn't already exist. The table schema will be preserved unless one of extend_schema or recreate_schema ingestion property is set to true. If the schema is modified, this happens before the actual data ingestion in its own transaction, so a failure to ingest the data doesn't mean the schema wasn't modified.<br>
 Usage: `.set-or-replace  TableName [with (PropertyName = PropertyValue [, ...])] <| QueryOrCommand`<br>
 Example: `.set-or-replace [‘custom.dayEvents’] <| [‘events.all’] | where Timestamp > now() – time(1d)`<br>
 This replaces the data in table "custom.dayEvents" with the above query.
 
-**.ingest into**<br>
+**.ingest into**<br>(coming soon)
 Ingests data into a table by "pulling" the data from one or more cloud storage artifacts. <br>
 Usage: `.ingest  into table TableName SourceDataLocator [with ( IngestionPropertyName = IngestionPropertyValue [, ...] )]`<br>
 Example: `.ingest into table [‘custom.myData’] (h’<your url here>’) with(ignoreFirstRecord=true)`<br>
 This pushes data into table "custom.myData" from your cloud storage listed in the url.
 
-**.purge table**<br>
-Permenantly deletes data in table from the database<br>
+**.purge table**<br>(coming soon)
+Permanently deletes data in table from the database<br>
 Usage: `.purge table [TableName] in database [DatabaseName] allrecords with (noregrets='true')`<br>
 Example: `.purge table [‘custom.toPurge’] in database MyDatabase allrecords`<br>
 This purges all data from table "custom.toPurge", permenantly deleting it from your data system.
