@@ -12,6 +12,11 @@ ms.localizationpriority: medium
 
 # Getting Started
 
+> [!IMPORTANT]
+> This feature is currently in **Private Preview**.  
+>
+> It is provided to give you an early look at an upcoming feature, and to allow you to provide feedback while it is still in development. We will be making it broadly available to developers as soon as we can.
+
 There are two ways to get started with C# CloudScript using Azure Functions.  The easiest and quickest way is to use Azure Functions right out of the box.  To get started with Azure Functions with either Visual Studio Code or Visual Studio visit their [getting started guide](https://docs.microsoft.com/azure/azure-functions/) and return here once you are completely setup.
 
 >**NOTE:**
@@ -49,8 +54,6 @@ To begin using this feature you need to enable it.  Visit Automation -> CloudScr
 > **TIP**: To learn more about deploying azure functions, see [Deploy Azure Functions from Visual Studio Code]](https://code.visualstudio.com/tutorials/functions-extension/deploy-app).
 
 ### Using and Calling CloudScript using Azure Functions from your PlayFab Title
-
-In order to use the function you just created from the PlayFab SDK, you will need to download one of our BetaSDKs.  These are gated SDKs, and you will need to request access to them via [helloplayfab@microsoft.com](mailto:helloplayfab@microsoft.com).  Once you have access to the [Beta SDKs](https://github.com/PlayFab?utf8=%E2%9C%93&q=beta&type=&language=) you can download the one specifically for the environment you are making your game in.  
 
 > **NOTE:** The examples code within the this guide will be written in Unity C# & Azure Function C# code.
 
