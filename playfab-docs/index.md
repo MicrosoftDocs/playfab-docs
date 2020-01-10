@@ -997,13 +997,11 @@ featureFlags:
                         <ul id="sdks" class="cardsF">
                             <li class="fullSpan">
                                 <h2>PlayFab SDKs, tools, and extensions</h2>
-                                <h3>SDKs are available for most popular engines and platforms.</h3>
-                            </li>
-                            <li class="fullSpan">
-                                <h2>PlayFab Core</h2>
+                                <p>SDKs are available for most popular engines and platforms.<p>
                             </li>
                             <li class="fullSpan">
                                 <h2>Core SDKs</h2>
+                                <p>Core SDKs let you perform the core player, admin, and server functions for your PlayFab titles.</p>
                             </li>
                             <li>
                                 <div class="cardSize">
@@ -1279,6 +1277,7 @@ featureFlags:
                             </li>
                             <li class="fullSpan">
                                 <h2>Multiplayer</h2>
+                                <p>Multiplayer SDKs allow you to manage your PlayFab multiplayer services.</p>
                             </li>
                             <li>
                                 <div class="cardSize">
