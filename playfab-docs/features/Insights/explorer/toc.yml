@@ -3,7 +3,7 @@
 - name: Quickstart
   href: quickstart.md
 - name: Insights Management Commands
-  href: managament-commands.md
+  href: management-commands.md
 - name: Tutorials
   href: tutorials.md
   items:
