@@ -15,9 +15,7 @@ ms.localizationpriority: medium
 > [!IMPORTANT]
 > This feature is currently in **Private Preview**.  
 >
-> It is provided to give you an early look at an upcoming feature, and to allow you to provide feedback while it is still in development.  
->
-> Access to this feature is restricted to select titles. If you are interested in trying it, please contact us at [helloplayfab@microsoft.com](mailto:helloplayfab@microsoft.com).
+> It is provided to give you an early look at an upcoming feature, and to allow you to provide feedback while it is still in development. We will be making it broadly available to developers as soon as we can.
 
 This topic explains the technical design behind the Persistent Sockets API in a PlayFab client. In the text that follows, you will find dependencies and explanations of each API signature.  These signatures are required to make a clean Persistent Socket API that can talk to the PlayFab PubSub service, receive events and subscribe handlers to those events.
 
