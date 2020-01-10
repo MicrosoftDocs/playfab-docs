@@ -1,30 +1,25 @@
 ---
-title: C# CloudScript
-author: mawillia
-description: Overview of the PlayFab C# CloudScript using Azure Functions
-ms.author: mawillia
-ms.date: 09/22/2019
+title: PlayFab CloudScript using Azure Functions Quickstart Guide  
+author: williacj
+description: PlayFab CloudScript using Azure Functions Quickstart Guide
+ms.author: cjwill
+ms.date: 11/25/2019
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, automation, cloudscript, azure functions
 ms.localizationpriority: medium
 ---
+> [!NOTE]
+> This feature is in private preview and intended for use by customers participating in the preview program.  We anticipate ongoing changes to it as we continue gathering feedback and optimizing for customer use.
+> 
+# Getting Started
 
-# PlayFab CloudScript using Azure Functions
+There are two ways to get started with C# CloudScript using Azure Functions.  The easiest and quickest way is to use Azure Functions right out of the box.  To get started with Azure Functions with either Visual Studio Code or Visual Studio visit their [getting started guide](https://docs.microsoft.com/azure/azure-functions/) and return here once you are completely setup.
 
-PlayFab CloudScript using Azure Functions is a new feature that grants you event-driven compute on demand in the language of your choice.  In order to do this we leverage Azure Functions and provide you with a tight integration via Visual Studio Code.  
+>**NOTE:**
+>In this guide, we will focus only on using Visual Studio Code. You can use any  [language that is supported in Azure Functions](https://docs.microsoft.com/azure/azure-functions/supported-languages).  At this time, the samples we provide with PlayFab integration uses the C# language.
 
-C# CloudScript is a new feature that grants you event-driven compute on demand.  In order to do this we leverage Azure Functions and provide you with a tight integration via Visual Studio Code.  
-
-Using Azure Functions to run cloud code that is bound to a PlayFab title gives you the power of C# and strongly typed code. In addition, it also gives you the ability to leverage any number of Azure features such as CosmosDB.
-
-## Early Access
-
-PlayFab C# CloudScript is still in development.  API contract changes may be necessary in order to deliver the optimal experience for customers.  We *do not* recommend shipping a game to the public which relies on this feature until it is in Public Preview.
-
-### Pricing
-
-Currently access to C# CloudScript is free from within PlayFab. However, in order to use this feature you **must** bring your own Azure Subscription.  This means, that usage charges will apply to your Azure Subscription the same as if you used Azure Functions without a PlayFab integration. For more information about [Azure Function pricing](https://azure.microsoft.com/pricing/details/functions/) visit the Azure Site. In addition, it is worth noting that Azure Functions does come with a certain amount of free usage with a paid subscription.
+What is the difference between the two?  The main difference is that our Visual Studio Code Extension provide some easy ways to registers and unregister functions with your PlayFab title. However, you do not need the extension to do this as there is a user interface for it in [Game Manager](https://developer.playfab.com/login).  We will cover more about this below.
 
 ### Prerequisites
 
@@ -32,23 +27,14 @@ There are a couple of steps needed to get started with PlayFab C# CloudScript.
 
 * You must have an [Azure account](https://azure.microsoft.com/free/) already setup.  Signing up for an Azure Account is free.
 * You must have an [Azure Subscription setup](https://docs.microsoft.com/azure/billing/billing-create-subscription), Subscriptions can be cancelled at any time. Visit [Cancel Azure Subscription](https://docs.microsoft.com/azure/billing/billing-how-to-cancel-azure-subscription) for more info.
+* **Note:** To minimize latency of your CloudScript using Azure Functions place them in either US-West or US-West 2 Azure regions.   
 * You must have a [PlayFab account](https://developer.playfab.com/signup). 
-* You must have the C# CloudScript feature enabled for your title. Please contact [helloplayfab@microsoft.com](mailto:helloplayfab@microsoft.com) to request access while in Private Preview.
-* You will need access to the Beta PlayFab SDKs while this feature is in Private Preview.  You can also request access to these SDKs via [helloplayfab@microsoft.com](mailto:helloplayfab@microsoft.com).
-* While we do support all languages that Azure Functions support, our documentation only focuses on C# at this time.
+* While we do support all languages that Azure Functions support, our documentation samples are in C#.
 * PlayFab Azure Functions use V2 of Azure Functions, so please be sure to use the V2 runtime.
-
-## Getting Started
-
-There are two ways to get started with C# CloudScript using Azure Functions.  The easiest and quickest way is to use Azure Functions right out of the box.  To get started with Azure Functions with either Visual Studio Code or Visual Studio visit their [getting started guide](https://docs.microsoft.com/azure/azure-functions/) and return here once you are completely setup.
-
-[!NOTE] In this guide, we will focus only on using Visual Studio Code. You can use any [language that is supported in Azure Functions](https://docs.microsoft.com/azure/azure-functions/supported-languages).  At this time the samples we provide with PlayFab integration uses the C# language.
-
-What is the difference between the two?  The main difference is that our Visual Studio Code Extension provide some easy ways to registers and unregister functions with your PlayFab title. However, you do not need the extension to do this as there is a user interface for it in [Game Manager](https://developer.playfab.com/login).  We will cover more about this below.
 
 ### Enable the Feature
 
-Once you have gained access to the feature, you need to enable it.  Visit Automation -> CloudScript tab -> Functions (Preview).
+To begin using this feature you need to enable it.  Visit Automation -> CloudScript tab -> Functions (Preview).
 
 * Click the Enable button to turn on the various pieces of Game Manager that will allow you to register functions, hook them up to rules, tasks etc.
 
@@ -62,17 +48,15 @@ Once you have gained access to the feature, you need to enable it.  Visit Automa
 3. Put the name and Function URL.  The URL can be found in the output of your deployment.
 ![Deployment Output](media/azure_func_deployment.jpg)
 
-[!TIP] To learn more about deploying azure functions, see [Deploy Azure Functions from Visual Studio Code]](https://code.visualstudio.com/tutorials/functions-extension/deploy-app).
+> **TIP**: To learn more about deploying azure functions, see [Deploy Azure Functions from Visual Studio Code]](https://code.visualstudio.com/tutorials/functions-extension/deploy-app).
 
-### Using and Calling C# CloudScript from your PlayFab Title
+### Using and Calling CloudScript using Azure Functions from your PlayFab Title
 
-In order to use the function you just created from the PlayFab SDK.  You will need to download one of our BetaSDKs.  These are gated SDKs, and you will need to request access to them via [helloplayfab@microsoft.com](mailto:helloplayfab@microsoft.com).  Once you have access to the [Beta SDKs](https://github.com/PlayFab?utf8=%E2%9C%93&q=beta&type=&language=) you can download the one specifically for the environment you are making your game in.  
+In order to use the function you just created from the PlayFab SDK, you will need to download one of our BetaSDKs.  These are gated SDKs, and you will need to request access to them via [helloplayfab@microsoft.com](mailto:helloplayfab@microsoft.com).  Once you have access to the [Beta SDKs](https://github.com/PlayFab?utf8=%E2%9C%93&q=beta&type=&language=) you can download the one specifically for the environment you are making your game in.  
 
-[!NOTE] The examples code within the this guide will be written in Unity C# & Azure Function C# code.
+> **NOTE:** The examples code within the this guide will be written in Unity C# & Azure Function C# code.
 
-Now that your function is registered, and you have the Beta SDK installed, you can now call that function from within your SDK.
-
-Calling the C# CloudScript is virtually identical to the way you call our traditional CloudScript.  
+Now that your function is registered, and you have the Beta SDK installed, you can now call that function from within your client.
 
 ```C#
 //This snippet assumes that your game client is already logged into PlayFab.
@@ -108,7 +92,7 @@ private void CallCSharpExecuteFunction(){
 
 ### PlayFab Function Context, Variables and using the Server SDKs
 
-Like our previous CloudScript, some data will be automatically passed to the Azure Function that tells you information about who called the Function and in what context the Function was called (eg. PlayStream Action, or Called From the client). 
+One advantage of using CloudScript using Azure Functions is that some data will be automatically passed to the Azure Function, passing you context on the invocation of the Cloudscript and in what context the Function was called (For example, PlayStream Action or directly from the client). This includes information like the entity profile that was the CloudScripts was invoked on behalf of and potentially the PlayStream events used to invoke the CloudScript.
 
 There are a couple of steps that you need to do if you are coding Functions without our Visual Studio Code Extension. 
 
@@ -161,7 +145,9 @@ namespace PlayFabCS2AFTests.HelloWorld
 
 As you can see in the above, the CurrentPlayerId of the caller is available like in our traditional CloudScript implementation.  Parameters you have passed in the FunctionParameters field will be available in the *args*.
 
-[!NOTE]  You will need to call this HelloWorld Azure Function via ExecuteFunction from an SDK.
+> **NOTE:** You will need to call this HelloWorld Azure Function via ExecuteFunction from an SDK.
+
+> **NOTE:** In the PlayStream event, sent back from the CloudScript function, the Player Profile is returned.  If the returned Player Profile is over 2048 bytes then the profile will be truncated with a property set indicating it has been truncated.  If this occurs you will need to use the profile APIs (either server, client or entity APIs) to retrieve the full profile.
 
 ### Azure Function Rules
 
@@ -173,7 +159,7 @@ Azure Functions can also be called by creating rules and scheduled tasks.  This 
 * Add an action
 * From the action dropdown select **Execute Azure Function**
 
-A list of available Azure Functions that you've registered will be available in the drop down list.
+A list of available Azure Functions that you've registered will be available in the drop-down list.
 
 ![Configure Rule for Azure Functions](media/azure_function_rules.jpg)
 

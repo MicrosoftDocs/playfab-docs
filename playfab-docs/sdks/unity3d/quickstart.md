@@ -58,7 +58,7 @@ There are two ways to install the PlayFab Unity3D SDK:
 ### Download and install the SDK only
 
 1. Log in to the Unity editor and open your Unity project.
-2. Download the [PlayFab Unity3D SDK Asset Package](https://api.playfab.com/downloads/unity-v2ap) from the PlayFab GitHub repo.
+2. Download the [PlayFab Unity3D SDK Asset Package](https://aka.ms/playfabunitysdkdownload) from the PlayFab GitHub repo.
 3. Navigate to where you downloaded the file, and double-click on the .UnityPackage file to open the **Import Unity Package** dialog in the Unity Editor.
 4. To import the PlayFab Unity3D SDK into your project, select **Import**.
 

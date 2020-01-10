@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 >
 > It is provided to give you an early look at an upcoming feature, and to allow you to give us feedback while it is still in development.  
 >
-> Access to this feature is restricted to select titles. If you are interested in trying it, please contact us at [helloplayfab@microsoft.com](mailto:helloplayfab@microsoft.com).
+> Access to this feature is restricted to select titles. Customers in our Indie, Pro, and Enterprise tiers can request access by opening a ticket with our support team via the Contact Us tab in the PlayFab Game Manager.
 
  Event Archive (preview) can be used to get your events out of PlayFab and into your Azure Blob Storage (ABS) account or Amazon Simple Storage Service (S3) bucket. Event Archive allows you to decide which of your title’s events to export, and how often. The events are dropped in [JSONL format](#event-output-format), with each event in its own individual file.
 
@@ -28,8 +28,8 @@ This tutorial shows you how to configure event archiving from scratch.
 ### Setting up a Storage Account
 
 - To create an Amazon S3 bucket, navigate to this section:  [Create an Amazon S3 Bucket](configure-s3-bucket.md).
-- To create an Azure storage account, visit [Create a Storage Account](https://docs.microsoft.com/en-us/azure/storage/common/storage-quickstart-create-account?tabs=azure-portal).
-  - You also need to [Create a Container](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal).
+- To create an Azure storage account, visit [Create a Storage Account](https://docs.microsoft.com/azure/storage/common/storage-quickstart-create-account?tabs=azure-portal).
+  - You also need to [Create a Container](https://docs.microsoft.com/azure/storage/blobs/storage-quickstart-blobs-portal).
 
 ### Viewing Your Events
 

@@ -106,7 +106,7 @@ The HTML file has a few important lines:
 <script type="text/javascript" src="https://download.playfab.com/PlayFabClientApi.js"></script>
 ```
 
-This line loads the Client-SDK directly from the PlayFab CDN. Our CDN always hosts the latest version of PlayFabSDK. It may be safer for you to download the files, and use a fixed version: [PlayFab JavaScript SDK](https://api.playfab.com/downloads/javascript)
+This line loads the Client-SDK directly from the PlayFab CDN. Our CDN always hosts the latest version of PlayFabSDK. It may be safer for you to download the files, and use a fixed version: [PlayFab JavaScript SDK](https://aka.ms/playfabjavascriptsdkdownload)
 
 ```html
 <script type="text/javascript" src="PlayFabGettingStarted.js"></script>

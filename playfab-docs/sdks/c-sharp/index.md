@@ -22,4 +22,4 @@ Download Links:
 
 - [Download Source Code](https://github.com/PlayFab/CSharpSDK)
 - [C# Nuget Package](https://www.nuget.org/packages/PlayFabAllSDK/)
-- [Download PlayFab SDK](https://api.playfab.com/downloads/csharp)
+- [Download PlayFab SDK](https://aka.ms/playfabCsharpsdkdownload)

@@ -94,7 +94,7 @@ At ths point, if you do not receive an error message, you have configured PlayFa
 
 Use this Unity setup checklist:
 
-- [OPTIONAL] Install the [PlayFab Editor Extensions](https://api.playfab.com/downloads/unity-edex).
+- [OPTIONAL] Install the [PlayFab Editor Extensions](https://aka.ms/playfabunityextension).
   - Set up your `TitleId` in the `PlayFabSharedSettings` Scriptable Object.
 - For Unity 5.6+, download the [Kongregate Preloader WebGL Template](https://github.com/kongregate/webgl-preloader), and place it inside the `Assets/WebGLTemplates` folder **(2)**.
 - For Unity < 5.6, download the [Kongregate Preloader WebGL Template 5.5 and below](https://github.com/kongregate/webgl-preloader/tree/unity-5.5-and-below), and place it inside the `Assets/WebGLTemplates` folder **(2)**.

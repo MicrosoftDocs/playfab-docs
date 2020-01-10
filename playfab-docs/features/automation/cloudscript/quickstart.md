@@ -10,6 +10,9 @@ keywords: playfab, automation, game manager, cloudscript
 ms.localizationpriority: medium
 ---
 
+> [!NOTE]
+> This feature is in private preview and intended for use by customers participating in the preview program.  We anticipate ongoing changes to it as we continue gathering feedback and optimizing for customer use.
+
 # CloudScript quickstart
 
 CloudScript offers a fast, secure and scalable alternative to dedicated servers. Your custom JavaScript lives and executes directly on PlayFab machines.

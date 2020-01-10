@@ -14,9 +14,9 @@ ms.localizationpriority: low
 
 > [!IMPORTANT]
 > This feature is currently in **Private Preview**.
-> It is provided to give you an early look at an upcoming feature, and to allow you to provide feedback while it is still in development.  
+> It is provided to give you an early look at an upcoming feature, and to allow you to provide feedback while it is still in development.
 >
-> Access to this feature is restricted to select titles. If you are interested in trying it, please contact us at [helloplayfab@microsoft.com](mailto:helloplayfab@microsoft.com).
+> Access to this feature is restricted to select titles. Customers in our Indie, Pro, and Enterprise tiers can request access by opening a ticket with our support team via the Contact Us tab in the PlayFab Game Manager.
 
 The Xbox Data Add-On provides transaction-level usage and purchase data from Microsoft's Xbox and Store to your PlayFab Insights database/cluster. From here, you can run direct queries against the data. It is designed to benefit any Xbox developer, whether or not they use the PlayFab SDK.
 

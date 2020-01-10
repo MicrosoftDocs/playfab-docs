@@ -1,8 +1,8 @@
 ---
 title: CloudScript Tutorials
-author: v-thopra
+author: williacj
 description: Overview page for tutorials about CloudScript.
-ms.author: v-thopra
+ms.author: cjwill
 ms.date: 11/19/2018
 ms.topic: article
 ms.prod: playfab

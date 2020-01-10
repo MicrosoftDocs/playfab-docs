@@ -5,8 +5,6 @@
   items:
   - name: Running an HTTP server for testing
     href: running-an-http-server-for-testing.md
-  - name: Migrating from Parse to PlayFab
-    href: migrating-from-parse-to-playfab.md
   - name: Setting up PlayFab authentication using Facebook and HTML5
     href: facebook-html5.md
   - name: Setting up PlayFab authentication using Facebook and Unity
@@ -27,5 +25,7 @@
     href: twitch-html5.md
   - name: Setting up PlayFab authentication using Universal Windows Platform
     href: uwp.md
+  - name: Setup Sign In with Apple for PlayFab
+    href: apple-open-id.md
   - name: Integrating the Universal Windows Platform with PlayFab
     href: uwp-integration.md

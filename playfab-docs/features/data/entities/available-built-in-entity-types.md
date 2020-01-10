@@ -61,7 +61,7 @@ Set the `ID` field to the `LoginResult.PlayFabId` from the classic API. To retri
 
 For most developers, `title_player_account` represents the player in the most traditional way.
 
-Set the `ID` field to `LoginResult.EntityToken.Id` in the client API, or `GetEntityTokenResponse.Entity.Id` in the authentication API.
+Set the `ID` field to `LoginResult.EntityToken.Entity.Id` in the client API, or `GetEntityTokenResponse.Entity.Id` in the authentication API.
 
 To retrieve the `LoginResult`, call one of the login methods in [Client Authentication](xref:titleid.playfabapi.com.client.authentication).
 To retrieve the `GetEntityTokenResponse`, call [Get Entity Token](xref:titleid.playfabapi.com.authentication.authentication.getentitytoken).

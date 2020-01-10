@@ -25,7 +25,7 @@ This SDK can alternatively be obtained via NPM using the command `npm install pl
 Download Links:
 
 - [Download Source Code](https://github.com/PlayFab/JavaScriptSDK)
-- [Download PlayFab SDK](https://api.playfab.com/downloads/javascript)
+- [Download PlayFab SDK](https://aka.ms/playfabjavascriptsdkdownload)
 - [Install via NPM](https://www.npmjs.com/package/playfab-web-sdk): `npm install playfab-web-sdk`
 
 Licenses:
