@@ -295,4 +295,4 @@ void FailureCallback(PlayFabError error)
 
 That's it for this tutorial! You've seen how to set up your SMTP server, create an email template, send an account recovery email, and reset a player's password.
 
-If you have any questions or feedback on this tutorial, please email us at [helloplayfab@microsoft.com](mailto:helloplayfab@microsoft.com).
+If you have any questions or feedback on this tutorial, please let us know in our [community forums](https://community.playfab.com/).
