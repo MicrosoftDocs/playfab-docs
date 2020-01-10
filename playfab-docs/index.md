@@ -1002,7 +1002,8 @@ featureFlags:
                             </li>
                             <li class="fullSpan">
                                 <h2>Core SDKs</h2>
-                                <p>Core SDKs let you perform the core player, admin, and server functions for your PlayFab titles.</p>
+                                <p>&nbsp;&nbsp;&nbsp;Core SDKs let you perform the core player, admin, and server functions for your PlayFab titles.</p>
+                                <p>&nbsp;</p>
                             </li>
                             <li>
                                 <div class="cardSize">
