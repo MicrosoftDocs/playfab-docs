@@ -2,6 +2,8 @@
   href: index.md
 - name: Quickstart
   href: quickstart.md
+- name: Insights Management Commands
+  href: management-commands.md
 - name: Tutorials
   href: tutorials.md
   items:
