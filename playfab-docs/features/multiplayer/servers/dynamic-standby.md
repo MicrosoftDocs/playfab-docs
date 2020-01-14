@@ -35,7 +35,7 @@ The following graphs show the difference of availability of servers when Dynamic
 
 |                       |                       |
 | --------------------- | --------------------- |
-| ![Dynamic Server enabled/disabled comparison chart](media/dynamic-server-count-time-chart.png) | ![Dynamic Server chart key](media/dynamic-server=chart-key.png) |
+| ![Dynamic Server enabled/disabled comparison chart](media/dynamic-server-count-time-chart.png) | ![Dynamic Server chart key](media/dynamic-server-chart-key.png) |
 
 At time T2, even though the target standby floor setting is 10, the actual standby value reported by the platform is near zero because the rate at which active servers allocated is too large for the number of standby servers. With Dynamic Standby enabled, the target standby is set to 20. This allows the standby pool to handle the request rate and rebuild to handle the additional growth in active servers.
 
