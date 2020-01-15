@@ -1,7 +1,7 @@
 ---
 title: Dynamic Standby
-author: vDonGlover
-description: TBD
+author: lejackso
+description: Dynamic Standby provides auto scaling enhancement and dynamically activates increased provisioning of game servers to meet demand.
 ms.author: lejackso
 ms.date: 01/14/2020
 ms.topic: article
@@ -11,6 +11,11 @@ ms.localizationpriority: medium
 ---
 
 # Dynamic Standby
+
+> [!IMPORTANT]
+> This feature is currently in **Private Preview**.  
+>
+> It is provided to give you an early look at an upcoming feature, and to allow you to provide feedback while it is still in development. We will be making it broadly available to developers as soon as we can.
 
 Dynamic Standby is an auto scaling enhancement that monitors standby server threshold levels and dynamically activates increased provisioning of game servers to meet demand at scale.
 
@@ -37,7 +42,7 @@ The following graphs show the difference of availability of servers when Dynamic
 | --------------------- | --------------------- |
 | ![Dynamic Server enabled/disabled comparison chart](media/dynamic-server-count-time-chart.png) | ![Dynamic Server chart key](media/dynamic-server-chart-key.png) |
 
-At time T2, even though the target standby floor setting is 10, the actual standby value reported by the platform is near zero because the rate at which active servers allocated is too large for the number of standby servers. With Dynamic Standby enabled, the target standby is set to 20. This allows the standby pool to handle the request rate and rebuild to handle the additional growth in active servers.
+At time T2, even though the target standby floor setting is 10, the actual standby value reported by the platform is near zero because the rate at which active servers are allocated is too large for the number of standby servers. With Dynamic Standby enabled, the target standby is set to 20. This allows the standby pool to handle the request rate and rebuild to handle the additional growth in active servers.
 
 ### Calculating Dynamic Standby Targets
 
@@ -70,7 +75,7 @@ Revisiting figure \#1 above, the following table illustrates the target standby 
 | T5 | 80 | +10 servers per time T | 10 | 10 | 40 |
 | T6 | 50 | -30 servers per time T | 10 | 10 | 10 |
 
-Once Dynamic Standby is deactivated, there is a gradual ramp down of standby servers until the original standby floor is reached.
+When Dynamic Standby is deactivated, there is a gradual ramp down of standby servers until the original standby floor is reached.
 
 ## Dynamic Standby Programmers Interface
 
