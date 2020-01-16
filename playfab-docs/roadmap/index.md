@@ -76,7 +76,7 @@ We continue to work on migrating completely from AWS to Azure.
 
 **_Insights Management Commands_**
 
-Insights now has a series of [management commands](https://docs.microsoft.com/en-us/gaming/playfab/features/insights/explorer/management-commands) allowing users to view more information about queries and commands, and alter retention policy.
+Insights now has a series of [management commands](https://docs.microsoft.com/en-us/gaming/playfab/features/insights/explorer/management-commands) that allow you to gain a better understanding of your data environment.
 
 **_Azure Active Directory Authentication_**
 
