@@ -25,4 +25,5 @@ Access Explorer from the Data section in the PlayFab Game Manager. Now, select t
 
 ![Explorer query](media/insights-explorer-query.png)
 
-To learn how to author custom queries, see the [Getting Started with PlayFab Explorer](getting-started-with-playfab-explorer.md) tutorial.
+To learn how to author custom queries, see the [Getting Started with PlayFab Explorer](getting-started-with-playfab-explorer.md) tutorial.<br>
+To learn about how to assign roles for read and write data access see [PLayFab User Roles](https://docs.microsoft.com/en-us/gaming/playfab/features/config/gamemanager/playfab-user-roles)
