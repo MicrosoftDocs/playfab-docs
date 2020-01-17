@@ -74,8 +74,6 @@ Some of the different ways that you can map PlayFab onto a Title are shown below
 - [Catalogs](../features/commerce/items/catalogs.md) (Items) - Very useful for storing configuration data about your Items and potentially being able to sell them as virtual goods.
 - [Groups](../features/social/groups/using-shared-group-data.md) – Groups are generally used for things like guilds or clans. Groups are arbitrary and have members, roles and other guild-like features.
 
-![Configuration and Events](images/liveops-config.png)
-
 ## PlayFab advanced
 
 Mapping your Title on top of PlayFab is a great start. But there is more power to be harnessed in PlayFab that can help your LiveOps team create better engagement, retention, and monetization mechanics.
