@@ -61,19 +61,6 @@ To allow you to integrate PlayFab into your Title, we provide SDKs, libraries, a
 
 Visit the [PlayFab SDKs, tools, and extensions](~/index?#pivot=documentation&panel=sdks) and choose the appropriate quickstart guide for your preferred environment. The quickstart walk you through installing your environment, creating a new test project, and making your first API call.
 
-## Next steps
-
-Every Title is different, so you will have a unique set of features that you must build every time. It is important to know and understand how to map those features onto PlayFab.
-
-This generally starts with the configuration of your Title. You will want to store variables in PlayFab and pull them down on to game clients. But these are not the only types of configurations that you'll want to make.
-
-Some of the different ways that you can map PlayFab onto a Title are shown below; use these to find the combination of tools that is just right for your Title:
-
-- [Title Data](../features/config/titledata/quickstart.md) – Map variables containing data on PlayFab to data structures in your game clients.
-- [Entity Objects](../features/data/entities/quickstart.md) (aka: Player Data) – Store and retrieve data on a per player basis.
-- [Catalogs](../features/commerce/items/catalogs.md) (Items) - Very useful for storing configuration data about your Items and potentially being able to sell them as virtual goods.
-- [Groups](../features/social/groups/using-shared-group-data.md) – Groups are generally used for things like guilds or clans. Groups are arbitrary and have members, roles and other guild-like features.
-
 ## PlayFab advanced
 
 Mapping your Title on top of PlayFab is a great start. But there is more power to be harnessed in PlayFab that can help your LiveOps team create better engagement, retention, and monetization mechanics.
@@ -90,9 +77,20 @@ For more information, check out these resources to get you started with Cloud Sc
 > [!TIP]
 > To leverage rules in the automation system, write custom events in your Title which creates a PlayStream event. For more information on custom events, see [Custom event overview](../features/analytics/metrics/playstream-events.md#custom-event-overview) in Generating PlayStream events.
 
-## Get to know PlayFab features
+## Next steps
 
-Check out each of our feature areas in the links provided below to find the right feature set for your Title:
+Every Title is different, so you will have a unique set of features that you must build every time. It is important to know and understand how to map those features onto PlayFab.
+
+This generally starts with the configuration of your Title. You will want to store variables in PlayFab and pull them down on to game clients. But these are not the only types of configurations that you'll want to make.
+
+Some of the different ways that you can map PlayFab onto a Title are shown below; use these to find the combination of tools that is just right for your Title:
+
+- [Title Data](../features/config/titledata/quickstart.md) – Map variables containing data on PlayFab to data structures in your game clients.
+- [Entity Objects](../features/data/entities/quickstart.md) (aka: Player Data) – Store and retrieve data on a per player basis.
+- [Catalogs](../features/commerce/items/catalogs.md) (Items) - Very useful for storing configuration data about your Items and potentially being able to sell them as virtual goods.
+- [Groups](../features/social/groups/using-shared-group-data.md) – Groups are generally used for things like guilds or clans. Groups are arbitrary and have members, roles and other guild-like features.
+
+Finally, check out each of our feature areas in the links provided below to find the right feature set for your Title:
 
 - [Authentication](../index?#pivot=documentation&panel=authentication)
 - [Data](../index?#pivot=documentation&panel=data)
