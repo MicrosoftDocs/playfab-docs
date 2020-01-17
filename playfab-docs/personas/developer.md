@@ -29,8 +29,6 @@ When you create a Title in Game Manager, PlayFab generates a **TitleId** that id
 
 For information about using Game Manager and creating a Title, see [Game Manager quickstart](../features/config/gamemanager/quickstart.md).
 
-### Retrieving your TitleId
-
 To retrieve the **TitleId** for your Title, log in to the [Game Manager](https://developer.playfab.com/en-us/login).
 
 On the **My Studios and Titles** screen, locate your Title. The **TitleId** is located just below the name of your Title.
