@@ -32,4 +32,4 @@ To query the data created by PlayFab API calls:
 
 To learn how to author custom queries, see the [Getting Started with PlayFab Explorer](getting-started-with-playfab-explorer.md) tutorial.
 
-To learn about how to assign roles for read and write data access, see [PLayFab User Roles](https://docs.microsoft.com/gaming/playfab/features/config/gamemanager/playfab-user-roles).
+To learn about how to assign roles for read and write data access, see [PlayFab User Roles](https://docs.microsoft.com/gaming/playfab/features/config/gamemanager/playfab-user-roles).
