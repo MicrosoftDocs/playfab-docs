@@ -23,7 +23,7 @@ Please note that while this roadmap reflects our aspirations, features and timel
 
 **_CloudScript with Azure Functions_**
 
-[CloudScript using Azure Functions](https://docs.microsoft.com/en-us/gaming/playfab/features/automation/cloudscript-af/) brings support for [new languages](https://docs.microsoft.com/en-us/azure/azure-functions/supported-languages) (including C#) as well as local debugging in Visual Studio and Visual Studio Code. 
+[CloudScript using Azure Functions](https://docs.microsoft.com/gaming/playfab/features/automation/cloudscript-af/) brings support for [new languages](https://docs.microsoft.com/azure/azure-functions/supported-languages) (including C#) as well as local debugging in Visual Studio and Visual Studio Code. 
 PlayFab asynchronously waits for these functions to complete, allowing them to run for extended periods of time.  You can watch a demo [here](https://youtu.be/apQbkDn1lNo).
 
 **_PlayFab Visual Studio Extension_**
@@ -40,7 +40,7 @@ These services are available today as previews. As we further incorporate your f
 
 **_Server Tags_**
 
-This addition to [Multiplayer Servers](https://docs.microsoft.com/en-us/gaming/playfab/features/multiplayer/servers/) will simplify the management of server allocation. It’s especially geared towards build-to-build upgrades and reducing the chance of any player interruption as you update your multiplayer servers.
+This addition to [Multiplayer Servers](https://docs.microsoft.com/gaming/playfab/features/multiplayer/servers/) will simplify the management of server allocation. It’s especially geared towards build-to-build upgrades and reducing the chance of any player interruption as you update your multiplayer servers.
 
 **_Billing details page for Multiplayer Servers and Party_**
 
@@ -76,11 +76,11 @@ We continue to work on migrating completely from AWS to Azure.
 
 **_Insights Management Commands_**
 
-Insights now has a series of [management commands](https://docs.microsoft.com/en-us/gaming/playfab/features/insights/explorer/management-commands) that allow you to gain a better understanding of your data environment.
+Insights now has a series of [management commands](https://docs.microsoft.com/gaming/playfab/features/insights/explorer/management-commands) that allow you to gain a better understanding of your data environment.
 
 **_Azure Active Directory Authentication_**
 
-Now you can “Sign in with Microsoft” at the bottom of the [PlayFab developer login page](https://developer.playfab.com/en-US/login) thanks to Azure Active Directory authentication. This enables one-click access to PlayFab from Partner Center, Azure Portal and other Microsoft portals. 
+Now you can “Sign in with Microsoft” at the bottom of the PlayFab developer login page thanks to Azure Active Directory authentication. This enables one-click access to PlayFab from Partner Center, Azure Portal and other Microsoft portals. 
 
 **_Multiplayer Servers in South Africa_**
 
@@ -88,11 +88,11 @@ New Dv2 virtual machines allow for improved latency and experiences for this rap
 
 **_Matchmaking_**
 
-[Matchmaking](https://docs.microsoft.com/en-us/gaming/playfab/features/multiplayer/matchmaking/) is publicly available and includes support for back-filled tickets, allowing you to re-fill open slots if players leave mid-game.
+[Matchmaking](https://docs.microsoft.com/gaming/playfab/features/multiplayer/matchmaking/) is publicly available and includes support for back-filled tickets, allowing you to re-fill open slots if players leave mid-game.
 
 **_Party_**
 
-[Party](https://docs.microsoft.com/en-us/gaming/playfab/features/multiplayer/networking/pricing) accessibility and translation services are in Private Preview in 20+ languages, making it easier for players to communicate with each other. 
+[Party](https://docs.microsoft.com/gaming/playfab/features/multiplayer/networking/) accessibility and translation services are in Private Preview in 20+ languages, making it easier for players to communicate with each other. 
 
 Party C++ SDKs are available for more platforms, including PC, Xbox, iOS, Android, Nintendo Switch and Sony PlayStation, so you can connect players with low-latency networking and chat anywhere. 
 
@@ -106,7 +106,7 @@ New APIs for Push Notifications enable you to Delete, Create, Save, and Send Pus
 
 **_PlayFab Explorer_**
 
-[PlayFab Explorer](https://docs.microsoft.com/en-us/gaming/playfab/features/insights/explorer/) is an integrated Game Manager experience that allows direct data access to events for ad hoc queries. 
+[PlayFab Explorer](https://docs.microsoft.com/gaming/playfab/features/insights/explorer/) is an integrated Game Manager experience that allows direct data access to events for ad hoc queries. 
 We’ve modernized the user experience, given you more flexibility, and improved usability. This new style is inspired by the [Fluent design language](https://www.microsoft.com/design/fluent/#/) adopted across Microsoft. 
 
 **_Improved Onboarding_**
