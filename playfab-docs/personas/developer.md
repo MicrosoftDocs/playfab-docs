@@ -14,16 +14,16 @@ ms.localizationpriority: medium
 
 Thank you for either choosing PlayFab as your platform for back-end services and LiveOps or evaluating the PlayFab offering. Welcome!
 
-The first step in adding PlayFab to any Title is adding code authenticate and log in the player. Logging in the player returns a security token that is needed for all other API calls.
+The first step in adding PlayFab to any Title is adding code to authenticate and log in the player. Logging in the player returns a security token that is needed for all other API calls.
 
 In this topic we show you how to retrieve the **TitleId** for your Title. You can then follow the quickstart guides listed later on in this topic to learn how to use the **TitleId** to log a player in.
 
 > [!NOTE]
-> The quickstart guides use a test **TitleId**. When you follow a guide, use a **TitleId** for Title that you have created in your PlayFab Developer account.
+> The quickstart guides use a test **TitleId**. When you follow a guide, use a **TitleId** for a Title that you have created in your PlayFab Developer account.
 
 Before you can make your first API call to log a player in, you must create a [PlayFab Developer account](pfab-account.md).
 
-## Player login
+## Retrieving your TitleId
 
 When you create a Title in Game Manager, PlayFab generates a **TitleId** that identifies your Title. When following the guides, use a **TitleId** for a Titled that you have created.
 
@@ -38,7 +38,7 @@ On the **My Studios and Titles** screen, locate your Title. The **TitleId** is l
 > [!div class="mx-imgBorder"]
 > ![Game Manager - My Studios and Titles - Title ID](images/my-titlles-titleid.png)  
 
-## Login and account basics
+### Login and account basics
 
 Now that you have retrieved a Title in Game Manager and retrieved your **TitleId**, you're ready to make API calls.
 
@@ -59,7 +59,7 @@ To allow you to integrate PlayFab into your Title, we provide SDKs, libraries, a
 - Game Engines: Corona (Lua), Defold (Lua), Unity3D (C#), Unreal Engine
 - Languages: C#, C# (Xamarin), CPP (Linux), CPP (Windows), CPP (Xbox One), Java, Java (Android Studio Project), Objective-C
 
-Visit the [PlayFab SDKs, tools, and extensions](~/index?#pivot=documentation&panel=sdks) and choose the appropriate quickstart guide for your preferred environment. The quickstart walk you through installing your environment, creating a new test project, and making your first API call.
+Visit the [PlayFab SDKs, tools, and extensions](~/index?#pivot=documentation&panel=sdks) and choose the appropriate quickstart guide for your preferred environment. The quickstarts walk you through installing your environment, creating a new test project, and making your first API call.
 
 ## PlayFab advanced
 
