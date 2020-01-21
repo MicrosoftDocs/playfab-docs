@@ -81,26 +81,28 @@ When Dynamic Standby is deactivated, there is a gradual ramp down of standby ser
 
 The Dynamic Standby feature introduces a new object to the Multiplayer programming interface called `DynamicStandby`. The Dynamic Standby object is an optional property of the [BuildRegionParams](https://docs.microsoft.com/rest/api/playfab/multiplayer/multiplayerserver/updatebuildregions?view=playfab-rest#buildregionparams) object.
 
-### DYNAMIC STANDBY SETTINGS OBJECT
+Configuring Dynamic Standby requires editing the settings properties of the Dynamic Standby object. Modifying the default values of the properties is an an advanced game server feature and must be done with caution.
+
+### Dynamic Standby Settings Object
 
 The default settings of the objects’ properties are described in the following table.
 
 | UI Name | Object Property Name | Required  | Type | Default | Description |
 |---|---|---|---|---|---|
-| Mode | Mode | Yes | Bool | Off | Switch that enables/disables adaptive standby settings |
-| <strong>Ramp Down Seconds</strong> | RampDownSeconds | No | Int | 1800 | The time it takes to reduce target standby to configured floor value after auto-increase. Defaults to 30 minutes (i.e. 1800 seconds) |
-| <strong>Thresholds</strong> | DynamicFloorMultiplierThresholds| No | List&lt;DynamicStandbyThreshold&gt; | <p>{0.5,1.5},</p><p>{0.25,3},</p><p>{0.05,4}</p> | The sorted list of thresholds and multipliers used to make the automatic Standby Server increase. |
+| Mode | Mode | Yes | Bool | Off | Switch that enables/disables dynamic standby settings |
+| **Ramp Down Seconds** | RampDownSeconds | No | Int | 1800 | The time it takes to reduce target standby to configured floor value after auto-increase. Defaults to 30 minutes (i.e. 1800 seconds) |
+| **Thresholds** | DynamicFloorMultiplierThresholds| No | List&lt;DynamicStandbyThreshold&gt; | <p>{0.5,1.5},</p><p>{0.25,3},</p><p>{0.05,4}</p> | The sorted list of thresholds and multipliers used to make the automatic Standby Server increase. |
 
-### DYNAMIC STANDBY THRESHOLDS OBJECT
+###  Dynamic Standby Thresholds Object
 
 | UI Name | Name | Required  | Type | Default | Description |
 |---|---|---|---|---|---|
 | Threshold Percentage | TriggerThresholdPercentage | Yes | Double | 0 | The threshold for the ratio between current standby servers and the standby servers floor where the corresponding multiplier will be applied |
 | Threshold Multiplier | Multiplier | Yes | Double | 1 | The value to multiple the standby floor value by when the corresponding threshold is hit |
 
-## CREATE API  
+## Enabling Dynamic Standby
 
-You can The Dynamic Standby can be programmatically enabled by calling any of the following Multiplayer Server methods:  
+You can programmatically enable Dynamic Standby by calling any of the following Multiplayer Server methods:  
 
 1. Override [Update Build Regions](https://docs.microsoft.com/rest/api/playfab/multiplayer/multiplayerserver/updatebuildregions?view=playfab-rest)  
    *UPSERT: An operation that inserts rows into a database table (if they do not already exist) or updates them (if they do).*
@@ -109,7 +111,7 @@ You can The Dynamic Standby can be programmatically enabled by calling any of th
 
 To enable Dynamic Standby programmatically, toggle the `Mode` property to ON. The `Mode` is the only required property of the Dynamic Standby Settings object. Its default value is **OFF**.
 
-## UPDATE API
+## Modifying Dynamic Standby
 
 The Dynamic Standby can be programmatically edited by calling the Override [Update Build Regions](https://docs.microsoft.com/rest/api/playfab/multiplayer/multiplayerserver/updatebuildregions?view=playfab-rest) method.
 
