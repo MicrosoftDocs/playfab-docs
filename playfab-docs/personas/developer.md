@@ -59,7 +59,7 @@ To allow you to integrate PlayFab into your Title, we provide SDKs, libraries, a
 
 Visit the [PlayFab SDKs, tools, and extensions](~/index?#pivot=documentation&panel=sdks) and choose the appropriate quickstart guide for your preferred environment. The quickstarts walk you through installing your environment, creating a new test project, and making your first API call.
 
-## PlayFab advanced
+## Using PlayFab services to instrument your Title
 
 Mapping your Title on top of PlayFab is a great start. But there is more power to be harnessed in PlayFab that can help your LiveOps team create better engagement, retention, and monetization mechanics.
 
