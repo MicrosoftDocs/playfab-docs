@@ -17,7 +17,7 @@ ms.localizationpriority: low
 >
 > It is provided to give you an early look at an upcoming feature, and to allow you to provide feedback while it is still in development.  
 >
-> Access to this feature is restricted to select titles. If you are interested in trying it, please contact us at [helloplayfab@microsoft.com](mailto:helloplayfab@microsoft.com).
+> Access to this feature is restricted to select titles. Customers in our Indie, Pro, and Enterprise tiers can request access by opening a ticket with our support team via the Contact Us tab in the PlayFab Game Manager.
 
 The Xbox Data-Add On has been created to provide developers with near-real-time analytics from products that are available on the Windows Store, and on Xbox Live services.
 

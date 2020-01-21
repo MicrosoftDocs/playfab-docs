@@ -1,8 +1,8 @@
 ---
 title: Entity API Restructure Upgrade Tutorial
-author: v-thopra
+author: VDonGlover
 description: Explains the restructuring of the Entity API Group and how to change your code accordingly.
-ms.author: v-thopra
+ms.author: doglo
 ms.date: 06/12/2018
 ms.topic: article
 ms.prod: playfab
@@ -62,8 +62,7 @@ public async void Example()
        var logrequest = new PlayFab.ClientModels.LoginWithCustomIDRequest
        {
            CustomId = "TestExample",
-              CreateAccount = true,
-              LoginTitlePlayerAccountEntity = true,
+           CreateAccount = true,
        };
 
        var loginResult = await PlayFab.PlayFabClientAPI.LoginWithCustomIDAsync(logrequest);
