@@ -50,12 +50,7 @@ Here are some resources to help you with the initial authentication of your play
 
 ## Calling the PlayFab API to log in
 
-To allow you to integrate PlayFab into your Title, we provide SDKs, libraries, and extensions for the most popular game engines, frameworks, and platforms:
-
-- Scripting: ActionScript, JavaScript, NodeJS, PHP, Python
-- Frameworks: Cocos2D-x, Phaser.io (Javascript)
-- Game Engines: Corona (Lua), Defold (Lua), Unity3D (C#), Unreal Engine
-- Languages: C#, C# (Xamarin), CPP (Linux), CPP (Windows), CPP (Xbox One), Java, Java (Android Studio Project), Objective-C
+To allow you to integrate PlayFab into your Title, we provide SDKs, libraries, and extensions for the most popular game engines, frameworks, and platforms.
 
 Visit the [PlayFab SDKs, tools, and extensions](~/index?#pivot=documentation&panel=sdks) and choose the appropriate quickstart guide for your preferred environment. The quickstarts walk you through installing your environment, creating a new test project, and making your first API call.
 
