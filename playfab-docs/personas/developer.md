@@ -12,94 +12,55 @@ ms.localizationpriority: medium
 
 # Getting started for developers
 
-Thank you for either choosing PlayFab as your platform for back-end services and LiveOps, or evaluating the PlayFab offering.  Welcome!
+Thank you for either choosing PlayFab as your platform for back-end services and LiveOps or evaluating the PlayFab offering. Welcome!
 
-The purpose of this section is to shed some light on how PlayFab helps you - as a developer - to build your game using PlayFab.
+The first step in adding PlayFab to any Title is adding code to authenticate and log in the player. Logging in the player returns a security token that is needed for all other API calls.
 
-PlayFab offers you a wide range of services, and has over 280 different APIs that you can leverage to make your game. This can be a lot to absorb in one session, so we'll take it slow.
-
-Let's start with the first steps of making your game - and then move into the more advanced features as we go.
+In this topic we show you how to retrieve the **TitleId** for your Title. You can then follow the quickstart guides listed later on in this topic to learn how to use the **TitleId** to log a player in.
 
 > [!NOTE]
-> Before you can make your first API call, you need to create a [PlayFab Developer account](pfab-account.md).
+> The quickstart guides use a test **TitleId**. When you follow a guide, use a **TitleId** for a Title that you have created in your PlayFab Developer account.
 
-## Player login
+Before you can make your first API call to log a player in, you must create a [PlayFab Developer account](pfab-account.md).
 
-The first step in adding PlayFab to any game is adding code to login the player. Logging in the player returns a security token that is needed for all other API calls.
+## Retrieving your TitleId
 
-Your game is identified by its **TitleId**. The quickstart guides listed later on this topic use a test **TitleId**. When following the guides, use a **TitleId** for a game that you have created.
+When you create a Title in Game Manager, PlayFab generates a **TitleId** that identifies your Title. When following the guides, use a **TitleId** for a Titled that you have created.
 
-### Retrieving your TitleId
+For information about using Game Manager and creating a Title, see [Game Manager quickstart](../features/config/gamemanager/quickstart.md).
 
-If you haven't already, [register for a free PlayFab developer account](https://developer.playfab.com/en-us/sign-up).
+To retrieve the **TitleId** for your Title, log in to the [Game Manager](https://developer.playfab.com/en-us/login).
 
-When you create a **Title** in Game Manager PlayFab generates a **TitleId**.
-
-To retrieve the **TitleId** for your game, log into the [Game Manager](https://developer.playfab.com/en-us/login).
-
-On the **My Studios and Titles** screen, locate your game. The **TitleId** is located just below the name of your game.
+On the **My Studios and Titles** screen, locate your Title. The **TitleId** is located just below the name of your Title.
 
 > [!div class="mx-imgBorder"]
 > ![Game Manager - My Studios and Titles - Title ID](images/my-titlles-titleid.png)  
 
-## Login and account basics
+### Login and account basics
 
-Now that you have created a game and retrieved your **TitleId**, you're set up to make API calls.
+Now that you have retrieved a Title in Game Manager and retrieved your **TitleId**, you're ready to make API calls.
 
-The starting point for any PlayFab integration is *authentication*. You must authenticate your player to make further API calls. PlayFab offers a number of methods to authenticate and link your players.
+The starting point for any PlayFab integration is *authentication*. You must authenticate your player to make further API calls.
 
-Here are some resources that will help you with the initial authentication of your player:
+Here are some resources to help you with the initial authentication of your player:
 
-- [Login basics and Best Practices](../features/authentication/login/login-basics-best-practices.md) – Check this tutorial first to learn about the best practices to use various authentication methods in your game.
-- **Authentication Service Helper** – Learn how this service can save you valuable time by leveraging building best practices in this authentication service for each SDK.
-- [Authentication quickstart](../features/authentication/platform-specific-authentication/index.md) – Use this guide to understand the basics of authentication calls into PlayFab.
+- [Login basics and Best Practices](../features/authentication/login/login-basics-best-practices.md) – Check this tutorial first to learn about the best practices to use various authentication methods in your Title.
+- [Platform-Specific Authentication](../features/authentication/platform-specific-authentication/index.md) – Use these guides to understand the basics of authentication calls into PlayFab.
 - [Account Linking tutorial](../features/authentication/login/quickstart.md) - Learn about linking and unlinking different types of accounts to a single player profile.
 
-## Making your first API call with PlayFab
+## Calling the PlayFab API to log in
 
-We have SDKs for all major game engines and languages.
+To allow you to integrate PlayFab into your Title, we provide SDKs, libraries, and extensions for the most popular game engines, frameworks, and platforms.
 
-Choose an environment from the links provided below, and follow it to the appropriate quickstart guide. These quickstarts walk you through installing your environment, creating a new test project, and making your first API call.
+Visit [PlayFab SDKs, tools, and extensions](~/index?#pivot=documentation&panel=sdks) and choose the appropriate quickstart guide for your preferred environment. The quickstarts walk you through installing your environment, creating a new test project, and making your first API call.
 
-Pick your SDK:
+## Using PlayFab services to instrument your Title
 
-- [Unity](../sdks/unity3d/quickstart.md)
-- [Unreal](../sdks/unreal/quickstart.md)
-- [HTML5 (Javascript)](../sdks/javascript/quickstart.md)
-- [Flash (ActionScript3)](../sdks/actionscript/quickstart.md)
-- [C#](../sdks/c-sharp/quickstart.md)
-- [Cocos2d-x](../sdks/cocos2d-x/quickstart.md)
-- [Xamarin](../sdks/xamarin/quickstart.md)
-- [Node](../sdks/nodejs/quickstart.md)
-- [Java](../sdks/java/quickstart.md)
-- [Defold (Lua)](../sdks/lua/quickstart-defold.md)
-- [Corona (Lua)](../sdks/lua/quickstart-corona.md)  
-- [Windows - C++](../sdks/playfab-cpp/quickstart-windows.md)
-- [Linux - C++](../sdks/playfab-cpp/quickstart-linux.md)  
-- [Xbox - C++](../sdks/playfab-cpp/quickstart-xbox.md)
+Mapping your Title on top of PlayFab is a great start. But there is more power to be harnessed in PlayFab that can help your LiveOps team create better engagement, retention, and monetization mechanics.
 
-## Next steps
+Many of these features leverage PlayStream, an event system that drives real time events. This enables you to perform actions on player behaviors. Actions can occur in several ways - using either segmentation or direct rules that are applied to specific events.
 
-Every game is fairly different, so you will have a unique set of features that you must build every time. It is important to know and understand how to map those features onto PlayFab.
-
-This generally starts with the configuration of your game. You will want to store variables in PlayFab, and pull them down on to game clients. But these are not the only types of configurations that you'll want to make.
-
-Some of the number of different ways that PlayFab maps onto a game are shown below, giving you the opportunity to find the combo tool set that is just right for your game:
-
-- [Title Data](../features/config/titledata/quickstart.md) – Map variables containing data on PlayFab to data structures in your game clients.
-- [Entity Objects](../features/data/entities/quickstart.md) (aka: Player Data) – Store and retrieve data on a per player basis.
-- [Catalogs](../features/commerce/items/catalogs.md) (Items) - Very useful for storing configuration data about your Items and potentially being able to sell them as virtual goods.
-- [Groups](../features/social/groups/using-shared-group-data.md) – Groups are generally used for things like guilds or clans. Groups are arbitrary and have members, roles and other guild-like features.
-
-![Configuration and Events](images/liveops-config.png)
-
-## PlayFab advanced
-
-Mapping your game on top of PlayFab is a great start. But there is more power to be harnessed in PlayFab that can help your LiveOps team create better engagement, retention and monetization mechanics.
-
-A majority of these features leverage PlayStream, an event system that drives real time events. This enables you to perform actions on player behaviors. Actions can occur in a number of ways - either via segmentation, or direct rules that are applied to specific events.
-
-Actions might result in a CloudScript being run. Our CloudScript is JavaScript code that lives on a remote server, and you can execute it either from a rule, or directly from a game client.
+Actions might result in a CloudScript being run. Our CloudScript is JavaScript code that lives on a remote server, and you can execute it either from a rule, or directly from a client.
 
 For more information, check out these resources to get you started with Cloud Scripting and Automation on PlayFab:
 
@@ -107,11 +68,22 @@ For more information, check out these resources to get you started with Cloud Sc
 - [CloudScript quickstart](../features/automation/cloudscript/quickstart.md) – Get up and running quickly with your first CloudScript call.
 
 > [!TIP]
-> To leverage rules in the automation system, [write custom events](../features/analytics/metrics/playstream-events.md#custom-event-overview) in your game which will create a PlayStream event.
+> To leverage rules in the automation system, write custom events in your Title which creates a PlayStream event. For more information on custom events, see [Custom event overview](../features/analytics/metrics/playstream-events.md#custom-event-overview) in Generating PlayStream events.
 
-## Get to know PlayFab features
+## Next steps
 
-There is much more you can do with PlayFab. Check out each of our feature areas in the links provided below to find the right feature set for your game:
+Every Title is different, so you will have a unique set of features that you must build every time. It is important to know and understand how to map those features onto PlayFab.
+
+This generally starts with the configuration of your Title. You will want to store variables in PlayFab and pull them down on to game clients. But these are not the only types of configurations that you'll want to make.
+
+Some of the different ways that you can map PlayFab onto a Title are shown below; use these to find the combination of tools that is just right for your Title:
+
+- [Title Data](../features/config/titledata/quickstart.md) – Map variables containing data on PlayFab to data structures in your game clients.
+- [Entity Objects](../features/data/entities/quickstart.md) (aka: Player Data) – Store and retrieve data on a per player basis.
+- [Catalogs](../features/commerce/items/catalogs.md) (Items) - Very useful for storing configuration data about your Items and potentially being able to sell them as virtual goods.
+- [Groups](../features/social/groups/using-shared-group-data.md) – Groups are generally used for things like guilds or clans. Groups are arbitrary and have members, roles and other guild-like features.
+
+Finally, check out each of our feature areas in the links provided below to find the right feature set for your Title:
 
 - [Authentication](../index?#pivot=documentation&panel=authentication)
 - [Data](../index?#pivot=documentation&panel=data)
