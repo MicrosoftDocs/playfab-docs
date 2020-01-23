@@ -93,14 +93,14 @@ The default settings of the objects’ properties are described in the following
 | **Ramp Down Seconds** | RampDownSeconds | No | Int | 1800 | The time it takes to reduce target standby to configured floor value after auto-increase. Defaults to 30 minutes (i.e. 1800 seconds) |
 | **Thresholds** | DynamicFloorMultiplierThresholds| No | List&lt;DynamicStandbyThreshold&gt; | <p>{0.5,1.5},</p><p>{0.25,3},</p><p>{0.05,4}</p> | The sorted list of thresholds and multipliers used to make the automatic Standby Server increase. |
 
-### giDynamic Standby Thresholds Object
+### Dynamic Standby Thresholds Object
 
 | UI Name | Name | Required  | Type | Default | Description |
 |---|---|---|---|---|---|
 | Threshold Percentage | TriggerThresholdPercentage | Yes | Double | 0 | The threshold for the ratio between current standby servers and the standby servers floor where the corresponding multiplier will be applied |
 | Threshold Multiplier | Multiplier | Yes | Double | 1 | The value to multiple the standby floor value by when the corresponding threshold is hit |
 
-## Enabling Dynamic Standby
+### Enable Dynamic Standby programmatically
 
 You can programmatically enable Dynamic Standby by calling any of the following Multiplayer Server methods:  
 
@@ -111,7 +111,7 @@ You can programmatically enable Dynamic Standby by calling any of the following 
 
 To enable Dynamic Standby programmatically, toggle the `Mode` property to ON. The `Mode` is the only required property of the Dynamic Standby Settings object. Its default value is **OFF**.
 
-## Modifying Dynamic Standby
+### Modify Dynamic Standby Programmatically
 
 The Dynamic Standby can be programmatically edited by calling the Override [Update Build Regions](https://docs.microsoft.com/rest/api/playfab/multiplayer/multiplayerserver/updatebuildregions?view=playfab-rest) method.
 
