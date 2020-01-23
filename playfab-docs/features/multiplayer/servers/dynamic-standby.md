@@ -93,7 +93,7 @@ The default settings of the objects’ properties are described in the following
 | **Ramp Down Seconds** | RampDownSeconds | No | Int | 1800 | The time it takes to reduce target standby to configured floor value after auto-increase. Defaults to 30 minutes (i.e. 1800 seconds) |
 | **Thresholds** | DynamicFloorMultiplierThresholds| No | List&lt;DynamicStandbyThreshold&gt; | <p>{0.5,1.5},</p><p>{0.25,3},</p><p>{0.05,4}</p> | The sorted list of thresholds and multipliers used to make the automatic Standby Server increase. |
 
-### giDynamic Standby Thresholds Object
+### Dynamic Standby Thresholds Object
 
 | UI Name | Name | Required  | Type | Default | Description |
 |---|---|---|---|---|---|
