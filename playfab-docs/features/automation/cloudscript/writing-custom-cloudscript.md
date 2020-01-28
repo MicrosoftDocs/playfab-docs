@@ -1,9 +1,9 @@
 ---
 title: Writing custom CloudScript
-author: v-thopra
+author: williacj
 description: Describes how to write CloudScript functions.
-ms.author: v-thopra
-ms.date: 06/11/2018
+ms.author: williacj
+ms.date: 01/28/2020
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, automation, cloudscript, unity
