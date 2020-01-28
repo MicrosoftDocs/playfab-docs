@@ -59,7 +59,7 @@ See **FunctionParameter** in the next section.
 
 - `Context` is an advanced parameter. In this example, it is *null*. This parameter is server-controlled and safe.
 
-- `currentPlayerId` is a global variable, which is set to the PlayFabId of the player requesting this call. This parameter is server-controlled and safe. **Note:** When using ExecuteEntityCloudScript API this parameter will be null unless the entity has a MasterPlayerID in its entity chain.
+- `currentPlayerId` is a global variable, which is set to the PlayFabId of the player requesting this call. This parameter is server-controlled and safe. **Note:** When using ExecuteEntityCloudScript API this parameter is null unless the entity has a MasterPlayerID in its entity chain.
 
 - `log.info`: `log` is a global object. It is primarily used for debugging your CloudScript. The `log` object exposes the following methods: `info`, `debug`, and `error`. There are more details later in this tutorial.
 
