@@ -1,8 +1,8 @@
 ---
 title: Global API Method Error Codes
-author: v-thopra
+author: williacj
 description: Lists the global error codes that apply to every PlayFab API method.
-ms.author: v-thopra
+ms.author: cjwill
 ms.date: 06/11/2018
 ms.topic: article
 ms.prod: playfab
@@ -39,13 +39,16 @@ Indicates too many *simultaneous* calls or very rapid *sequential* calls.
 Indicates too many *simultaneous calls*, or very rapid *sequential* calls.
 
 - `DownstreamServiceUnavailable (1127)`:
-Indicates that PlayFab might be having a temporary issue, or the client is making too many API calls too quickly.
+Indicates that PlayFab or a third-party service might be having a temporary issue.
 
 - `InvalidAPIEndpoint (1131)`:
 Indicates that the URL for this request is not valid for this title.
 
 - `OverLimit (1214)`:
 Indicates that an attempt to perform an operation will cause the service usage to go over the limit as shown in the Game Manager limit pages. Evaluate the returned error details to determine which limit would be exceeded.
+
+- `ServiceUnavailable (1123)`:
+Indicates that PlayFab may be having a temporary issue or the client is making too many API calls too quickly.
 
 ## Never retry codes
 
