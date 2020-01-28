@@ -2,7 +2,7 @@
 title: Writing custom CloudScript
 author: williacj
 description: Describes how to write CloudScript functions.
-ms.author: williacj
+ms.author: cjwill
 ms.date: 01/28/2020
 ms.topic: article
 ms.prod: playfab
