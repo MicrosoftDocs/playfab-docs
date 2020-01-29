@@ -1,8 +1,8 @@
 ---
 title: Handling Errors in CloudScript
-author: v-thopra
+author: williacj
 description: Describes how to recognize and handle errors within your CloudScript handlers.
-ms.author: v-thopra
+ms.author: cjwill
 ms.date: 06/11/2018
 ms.topic: article
 ms.prod: playfab
@@ -16,7 +16,7 @@ This tutorial describes how to recognize and handle errors within your CloudScri
 
 ## Identifying
 
-The first step is identifying the error. While every uncaught error is logged and available from the response to the caller (client), you may still catch the error early by using a `try/catch` block.
+The first step is identifying the error. While every uncaught error is logged and available from the response to the caller (client), you can catch the error early by using a `try/catch` block.
 
 Consider the following CloudScript snippet that produces and catches the error.
 
@@ -42,9 +42,9 @@ Notice how the error codes were extracted within the catch block? Consult our [G
 
 ## Logging
 
-Any unhandled error will be added to the response, allowing the client to process the problem.
+Any unhandled error is added to the response, allowing the client to process the problem.
 
-At the same time, it does create a CloudScript error entry, and is added to the total statistics available on your CloudScript dashboard.
+At the same time, it creates a CloudScript error entry and adds it to the total statistics available on your CloudScript dashboard.
 
 ![Game Manager - Automation - CloudScript Dashboard](media/tutorials/game-manager-cloudscript-dashboard.png)  
 
@@ -64,7 +64,7 @@ handlers.GenerateError = () => {
 }
 ```
 
-Finally, you may write title/player events for later processing through analytics.
+Finally, you can write title/player events for later processing through analytics.
 
 ```javascript
 "use strict";
@@ -85,7 +85,7 @@ handlers.GenerateError = () => {
 
 ## Recovery
 
-It's not always possible to recover from errors. Issues like `InvalidArguments` leave you with no option but to report the problem back to the player.
+It's not always possible to recover from errors. Issues such as `InvalidArguments` leave you with no option but to report the problem back to the player.
 
 There are a subset of errors where a retry strategy can be applied. *Retry-able* error types are described in the [Global API Method Error Codes](global-api-method-error-codes.md) tutorial.
 
@@ -94,3 +94,27 @@ We ask that you *make sure* you meet the following requirements when applying a 
 - With each retry, the delay between retries should *increase* exponentially. This increases your chances for a successful call, and prevents your game from spamming the PlayFab server (which will result in *more* rejected calls).
 
 - You should apply this retry strategy *selectively*, only using it for those codes that are worth retrying.
+
+## CloudScript timeout error
+
+CloudScript limits the execution time of CloudScript API calls to 4 seconds.
+
+If the execution time exceeds 4 seconds, an `InternalServerError` is raised and the PlayStream Event writes a Logs object similar to the following:
+
+```
+    "Logs":[
+        {
+        "Level":"Error",
+        "Message":"PlayFab API request failure",
+        "Data":{
+            "request":{
+                "PlayFabId":"9437A5ADDAE3012D"
+            },
+            "error":"Timeout",
+            "api":"/Server/GetPlayerSegments"
+        }
+        }
+    ]
+```
+
+ If you encounter this error, break your CloudScript into smaller segments of code which will run in under 4 seconds.
