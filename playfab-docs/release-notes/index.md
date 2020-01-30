@@ -12,6 +12,17 @@ ms.localizationpriority: medium
 
 # PlayFab Release Notes 2020
 
+## 200128
+
+### Multiplayer Server Event Changes:
+
+We are introducing a change to the Multiplayer Server event naming convention in efforts to unify our event names with that of the rest of PlayFab event names.  Additionally, we are making these changes in advance of the Multiplayer Server feature becoming Public Preview.  The changes are:
+
+* Multiplayer Server event names will be right casing
+* Multiplayer Server events will no longer be sent in the legacy v1 PlayStream event format; only v2 PlayStream event format will be supported
+
+ These two changes represent breaking changes, particularly for developers who take a dependency on non-right casing of names or PlayStream v1 of Multiplayer Server events.  These changes are not breaking for developers who leverage event names in the Game Manager UI (cloud script, insights, rules, or scheduled tasks).  This change will take effect Wednesday February 26, 2020 at 10:00 AM PST.  Please adjust your code for these changes before the change date.
+
 ## 200121
 
 ### API & Documentation Changes:
