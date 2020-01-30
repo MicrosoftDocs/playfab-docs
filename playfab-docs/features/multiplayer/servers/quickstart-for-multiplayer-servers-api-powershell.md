@@ -91,7 +91,9 @@ Once we see some standing by servers, let's request one for gameplay...
 $Regions = new-object 'System.Collections.Generic.List[PlayFab.MultiplayerModels.AzureRegion]'
 $Regions.Add("EastUS");
 
-New-PFMultiplayerServer -BuildName "MyBuild" -SessionId "00000000-0000-0000-0000-000000000001" -SessionCookie "test cookie" -PreferredRegions $regions
+$svr = New-PFMultiplayerServer -BuildName "MyBuild" -SessionId "00000000-0000-0000-0000-000000000001" -SessionCookie "test cookie" -PreferredRegions $regions
+$svr
+$svr.Ports
 ```
 
 This is the core of PlayFab multiplayer servers: within 3 seconds of your matchmaking service calling [RequestMultiplayerServer](xref:titleid.playfabapi.com.multiplayer.multiplayerserver.requestmultiplayerserver), PlayFab will allocate a new server.
