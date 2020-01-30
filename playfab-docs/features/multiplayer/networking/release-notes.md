@@ -14,7 +14,22 @@ ms.localizationpriority: medium
 
 PlayFab Party is available on [Nuget.org](https://www.nuget.org/profiles/PlayFab)!
 
+PlayFab Party is available on [GitHub.com](https://github.com/PlayFab/PlayFabParty/releases)
+
 Release notes for the Xbox Live Helper library can be found [here](party-xboxlive-relnotes.md).
+
+## 1.2.2
+
+### iOS Changes
+
+- Adds support for the volume control API.
+
+## 1.2.0
+
+### Android Changes
+
+- Adds support for the volume control API.
+- Removes audio focus handling from the library.  Host applications are now expected to implement their own focus handling logic.
 
 ## 1.0.1
 
