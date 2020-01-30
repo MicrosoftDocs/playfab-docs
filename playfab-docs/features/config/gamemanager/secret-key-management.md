@@ -35,6 +35,8 @@ To rotate your keys:
 4. Disable the old key. Select the old key and then on the **Edit Secret Key** page, select the **Disable** checkbox.
 5. Select **SAVE SECRET KEY**.
 
+![Game Manager - Settings - Edit Secret Key](media/tutorials/game-manager-settings-edit-secret-key.png)  
+
 > [!Important]
 > If your old keys are compromised, rotate the keys to return your Title to a secured state.
 
@@ -46,8 +48,6 @@ At step three, you can re-enable the key while you fix whatever was still depend
 
 When the process is complete, you do not need to delete the old key. If you delete that key, it cannot be recovered. The delete is permanent and irrevocable.
 
-![Game Manager - Settings - Edit Secret Key](media/tutorials/game-manager-settings-edit-secret-key.png)  
-
-Setting a key to Expire keys is useful when you need to give someone temporary access to your Title.
+Setting a key to Expire is useful when you need to give someone temporary access to your Title.
 
 For example, if you have a contractor working on your game, you can give them keys that only have access for as long as you expect them to need it. If they require access beyond the original expected expiration date, you can reset the expiration date to extend the lifetime of the secret key.
