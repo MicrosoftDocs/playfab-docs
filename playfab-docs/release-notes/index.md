@@ -23,7 +23,7 @@ We are introducing a change to the Multiplayer Server event naming convention in
 
  These two changes represent breaking changes, particularly for developers who take a dependency on non-right casing of names or PlayStream v1 of Multiplayer Server events.  These changes are not breaking for developers who leverage event names in the Game Manager UI (cloud script, insights, rules, or scheduled tasks).  This change will take effect Wednesday February 26, 2020 at 10:00 AM PST.  Please adjust your code for these changes before the change date.
 
-**++Format Changes++**
+**Format Changes**
 
 Generally, PlayFab Events have the format similar to:
 
@@ -57,7 +57,7 @@ Observe that the property names of Multiplayer server events are now right cased
 
 This change will impact customers who process Multiplayer server events in (a) Kusto queries or (b) PlayFab cloud scripts.  Lastly, if a customer leverages the PlayFab Event Archive feature (currently in public preview), the properties of Multiplayer server events exported will also be right cased.
 
-**++Schema Changes++**
+**Schema Changes**
 
 The second change introduced are that Multiplayer server events will only be delivered in PlayStream v2 format and no longer the legacy PlayStream v1 format.
 
