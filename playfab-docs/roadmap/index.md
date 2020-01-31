@@ -80,7 +80,7 @@ Insights now has a series of [management commands](https://docs.microsoft.com/ga
 
 **_Azure Active Directory Authentication_**
 
-Now you can “Sign in with Microsoft” at the bottom of the PlayFab developer login page thanks to Azure Active Directory authentication. This enables one-click access to PlayFab from Partner Center, Azure Portal and other Microsoft portals. 
+Now you can “Sign in with Microsoft” at the bottom of the PlayFab developer login page thanks to Azure Active Directory authentication. This enables one-click access to PlayFab from Partner Center, Azure Portal and other Microsoft portals. When adding users to an existing account, be sure to set the correct authentication provider as specified in the [documentation](https://docs.microsoft.com/gaming/playfab/features/authentication/aad-authentication/).
 
 **_Multiplayer Servers in South Africa_**
 
