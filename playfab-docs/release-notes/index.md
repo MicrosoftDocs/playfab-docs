@@ -85,8 +85,7 @@ To distinguish between Multiplayer Server events of V1 and V2 format, examine th
 }
 ```
 
-The property to search for is named “Namespace”.
-
+The property to search for is named `Namespace`.
 
 
 ## 200121
