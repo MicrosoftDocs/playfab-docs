@@ -14,6 +14,7 @@ ms.localizationpriority: medium
 
 ## 200128
 
+
 ### Multiplayer Server Event Changes:
 
 We are introducing a change to the Multiplayer Server event naming convention in efforts to unify our event names with that of the rest of PlayFab event names.  Additionally, we are making these changes in advance of the Multiplayer Server feature becoming Public Preview.  The changes are:
