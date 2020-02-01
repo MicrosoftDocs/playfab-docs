@@ -67,7 +67,6 @@ PlayFab currently supports two event schemas.
 |-------------|-----------|----------------------------------|
 |PlayStream V1|Designed around player events|com.playfab.events.multiplayer|
 |PlayStream V2|Designed around entity events|playfab.servers|
-|Schema Format|Description|Multiplayer Events Namespace Value|
 
 Generally, PlayFab API’s generate events in either PlayStream V1 format or PlayStream V2 format.  For example, APIs that grant player items generated a PlayStream V1 event.  Whereas APIs that grant entity items generated a PlayStream V2 event.
 
