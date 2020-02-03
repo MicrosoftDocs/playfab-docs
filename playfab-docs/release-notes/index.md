@@ -14,6 +14,7 @@ ms.localizationpriority: medium
 
 ## 200128
 
+
 ### Multiplayer Server Event Changes:
 
 We are introducing a change to the Multiplayer Server event naming convention in efforts to unify our event names with that of the rest of PlayFab event names.  Additionally, we are making these changes in advance of the Multiplayer Server feature becoming Public Preview.  The changes are:
@@ -67,7 +68,6 @@ PlayFab currently supports two event schemas.
 |-------------|-----------|----------------------------------|
 |PlayStream V1|Designed around player events|com.playfab.events.multiplayer|
 |PlayStream V2|Designed around entity events|playfab.servers|
-|Schema Format|Description|Multiplayer Events Namespace Value|
 
 Generally, PlayFab API’s generate events in either PlayStream V1 format or PlayStream V2 format.  For example, APIs that grant player items generated a PlayStream V1 event.  Whereas APIs that grant entity items generated a PlayStream V2 event.
 
@@ -85,8 +85,7 @@ To distinguish between Multiplayer Server events of V1 and V2 format, examine th
 }
 ```
 
-The property to search for is named “Namespace”.
-
+The property to search for is named `Namespace`.
 
 
 ## 200121
