@@ -3,15 +3,12 @@ title: CloudScript using Azure Functions
 author: williacj
 description: Overview of the PlayFab CloudScript using Azure Functions
 ms.author: cjwill
-ms.date: 09/22/2019
+ms.date: 02/05/2020
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, automation, cloudscript, azure functions
 ms.localizationpriority: medium
 ---
-> [!NOTE]
-> This feature is in private preview and intended for use by customers participating in the preview program.  We anticipate ongoing changes to it as we continue gathering feedback and optimizing for customer use.
-
 # PlayFab CloudScript using Azure Functions
 
 PlayFab CloudScript using Azure Functions is a new feature that enables serverless compute on demand in the language of your choice.  In order to do this we leverage Azure Functions and provide you with a tight integration via Visual Studio Code.  
