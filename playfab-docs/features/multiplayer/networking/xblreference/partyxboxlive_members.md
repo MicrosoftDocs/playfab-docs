@@ -5,7 +5,7 @@ description: TBD
 ms.author: alstonge
 ms.topic: reference
 ms.prod: playfab
-ms.date: 11/01/2019
+ms.date: 01/17/2020
 ---
 
 # PartyXboxLive members  
@@ -26,12 +26,14 @@ ms.date: 11/01/2019
 | [PartyXblAccessibilitySettings](structs/partyxblaccessibilitysettings.md) | Accessibility settings associated with an Xbox Live account. |  
 | [PartyXblChatPermissionInfo](structs/partyxblchatpermissioninfo.md) | Information regarding a required chat permission. |  
 | [PartyXblHttpHeader](structs/partyxblhttpheader.md) | Information about an HTTP header. |  
+| [PartyXblXboxUserIdToPlayFabEntityIdMapping](structs/partyxblxboxuseridtoplayfabentityidmapping.md) | Mapping between an Xbox Live User Id and a PlayFab Entity Id. |  
   
 ## State changes  
   
 | State change | Description |  
 | --- | --- |  
 | [PartyXblCreateLocalChatUserCompletedStateChange](structs/partyxblcreatelocalchatusercompletedstatechange.md) | Information specific to the *CreateLocalChatUserCompleted* type of state change. |  
+| [PartyXblGetEntityIdsFromXboxLiveUserIdsCompletedStateChange](structs/partyxblgetentityidsfromxboxliveuseridscompletedstatechange.md) | Information specific to the *GetEntityIdsFromXboxLiveUserIdsCompleted* type of state change. |  
 | [PartyXblLocalChatUserDestroyedStateChange](structs/partyxbllocalchatuserdestroyedstatechange.md) | Information specific to the *LocalChatUserDestroyed* type of state change. |  
 | [PartyXblLoginToPlayFabCompletedStateChange](structs/partyxbllogintoplayfabcompletedstatechange.md) | Information specific to the *LoginToPlayFabCompleted* type of state change. |  
 | [PartyXblRequiredChatPermissionInfoChangedStateChange](structs/partyxblrequiredchatpermissioninfochangedstatechange.md) | Information specific to the *RequiredChatPermissionInfoChanged* type of state change. |  
