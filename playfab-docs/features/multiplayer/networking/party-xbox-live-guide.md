@@ -17,7 +17,16 @@ keywords: playfab, multiplayer, networking, xbox live
 > It is provided to give you an early look at an upcoming feature and to allow you to provide feedback while it is still in development.
 >
 
-The Xbox Live Helper library for PlayFab Party is designed to help games using PlayFab Party meet [Xbox Live policies](https://docs.microsoft.com/gaming/xbox-live/xboxlive-policies) related to communication (XR-015 and XR-045).
+The Xbox Live Helper library for PlayFab Party is designed to help games using PlayFab Party meet [Xbox Live policies](https://docs.microsoft.com/gaming/xbox-live/xboxlive-policies) related to communication (XR-015 and XR-045). The Xbox Live Helper library is available on [Nuget.org](https://www.nuget.org/profiles/PlayFab).
+
+## Compatibility with the PlayFab Party library
+
+While we strive to minimize breaking changes in our APIs, some changes made to the PlayFab Party API might cause the Xbox Live Helper library to return erroneous values. Refer to the below table to ensure that your libraries' version are compatible.
+
+| Xbox Live Helper Library <br> version   | PlayFab Party Version <br> 1.0.1 |
+|--------------------------------------|:--------------------------------:|
+| **1.0.1**                            | ✔                               |
+| **1.1.0**                            | ✔                               |
 
 ## User creation and interaction with PlayFab Party
 
@@ -208,6 +217,50 @@ Titles that support cross-network play and communication between Xbox Live and n
 ```
 
 More information on XR-015 and how it pertains to cross network play and communication can be found [here](https://docs.microsoft.com/gaming/xbox-live/policies/xr015)
+
+## Translating Xbox Live User Ids to PlayFab Entity Ids
+
+Xbox Live titles using PlayFab Party will often need to translate Xbox Live Users Ids used throughout the Xbox Live ecosystem to PlayFab EntityIds that are used by PlayFab Party. Using `PartyXblManager::GetEntityIdsFromXboxLiveUserIds`, Titles can retrieve a list of PlayFab Entity Ids corresponding to the given list of Xbox Live User Ids. Titles are expected to already have a list of Xbox Live User Ids through the use of an external roster service, like the [Multiplayer Session Directory](https://docs.microsoft.com/gaming/xbox-live/features/multiplayer/mpsd/live-mpsd-nav). This mapping can then be used to associate `PartyEndpoint` and `PartyChatControl` to their corresponding Xbox Live User.
+
+> [!NOTE]
+> Each Xbox Live User Id will only map to a PlayFab Entity Id if this Xbox Live User has already been linked to a PlayFab account. A PlayFab account is automatically created and linked when calling `PartyXblManager::LoginToPlayFab()` for the first time. The [LoginWithXbox](https://docs.microsoft.com/rest/api/playfab/client/authentication/loginwithxbox?view=playfab-rest) API provided by the PlayFab SDK can also be used to link an account.
+
+The local `PartyXblLocalChatUser` will be used to authenticate with PlayFab. If the user was not previously logged in to PlayFab with a call to `PartyXblManager::LoginToPlayFab()`, the Xbox Live Helper library will need to authenticate the user in the background.
+
+```cpp
+    std::vector<uint64_t> remoteXboxLiveUserIds = {2533274792693551, 2814659110958830};
+    PartyError err = PartyXblManager::GetSingleton().GetEntityIdsFromXboxLiveUserIds(
+        remoteXboxLiveUserIds.size(),
+        remoteXboxLiveUserIds.data(),
+        localChatUser,
+        nullptr);
+    if (PARTY_FAILED(err))
+    {
+        DEBUGLOG("GetEntityIdsFromXboxLiveUserIds failed: %s\n", PartyXblManager::GetErrorMessage(err));
+        return;
+    }
+```
+
+Shortly after calling `PartyXblManager::GetEntityIdsFromXboxLiveUserIds()` you will receive a `PartyXblGetEntityIdsFromXboxLiveUserIdsCompleted` containing the result of the operation.
+
+```cpp
+    // Wait for PartyXblGetEntityIdsFromXboxLiveUserIdsCompleted
+    if (stateChange->stateChangeType == PartyXblStateChangeType::GetEntityIdsFromXboxLiveUserIdsCompleted)
+    {
+        auto getEntityIdsFromXboxLiveUserIds static_cast<PartyXblGetEntityIdsFromXboxLiveUserIdsCompletedStateChange*>(stateChange);
+        for (uint32_t i = 0; i < getEntityIdsFromXboxLiveUserIds.entityIdMappingCount; ++i)
+        {
+            Log("   Xbox Live User Id: %llu", getEntityIdsFromXboxLiveUserIds.entityIdMappings[i].xboxLiveUserId);
+            if (strlen(getEntityIdsFromXboxLiveUserIds.entityIdMappings[i].playfabEntityId)) != 0)
+            {
+                Log("PlayFab Entity Id: %s", getEntityIdsFromXboxLiveUserIds.entityIdMappings[i].playfabEntityId);
+            }
+            else
+            {
+                // This Xbox Live User did not have a linked PlayFab Account.
+            }
+        }
+```
 
 ## Special consideration for Windows 10 and Windows 7
 

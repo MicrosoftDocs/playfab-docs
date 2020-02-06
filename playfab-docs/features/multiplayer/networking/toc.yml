@@ -564,6 +564,8 @@
             href: xblreference/classes/PartyXblManager/methods/partyxblmanager_getchatusers.md
           - name: LoginToPlayFab
             href: xblreference/classes/PartyXblManager/methods/partyxblmanager_logintoplayfab.md
+          - name: GetEntityIdsFromXboxLiveUserIds
+            href: xblreference/classes/PartyXblManager/methods/partyxblmanager_getentityidsfromxboxliveuserids.md
     - name: Structures
       items:
       - name: PartyXblAccessibilitySettings
@@ -572,10 +574,14 @@
         href: xblreference/structs/partyxblchatpermissioninfo.md
       - name: PartyXblHttpHeader
         href: xblreference/structs/partyxblhttpheader.md
+      - name: PartyXblXboxUserIdToPlayFabEntityIdMapping
+        href: xblreference/structs/partyxblxboxuseridtoplayfabentityidmapping.md
     - name: State changes
       items:
       - name: PartyXblCreateLocalChatUserCompletedStateChange
         href: xblreference/structs/partyxblcreatelocalchatusercompletedstatechange.md
+      - name: PartyXblGetEntityIdsFromXboxLiveUserIdsCompletedStateChange
+        href: xblreference/structs/partyxblgetentityidsfromxboxliveuseridscompletedstatechange.md
       - name: PartyXblLocalChatUserDestroyedStateChange
         href: xblreference/structs/partyxbllocalchatuserdestroyedstatechange.md
       - name: PartyXblLoginToPlayFabCompletedStateChange
