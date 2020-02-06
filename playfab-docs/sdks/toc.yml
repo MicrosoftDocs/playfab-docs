@@ -61,9 +61,7 @@
     href: ./postman/index.md
     items:
     - name: Quickstart
-      href: ./postman/quickstart.md
-    - name: Executing the PlaFab API via Postman
-      href: ./postman/executing-the-playfab-api-via-postman.md
+      href: ./postman/postman-quickstart.md
   - name: Python
     href: ./python/index.md
     items:
