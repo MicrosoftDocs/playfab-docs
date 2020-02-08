@@ -23,6 +23,9 @@ PlayStream offers the following features to developers:
 
 Let’s look at these features in more detail.
 
+> [!NOTE]
+> PlayStream now offers support for **entity events** as well as classic PlayStream events. To learn more, please reference the [PlayStream with entity events]() section after you finish this article.
+
 ## PlayStream event pipeline and monitor
 
 The easiest way to see the event pipeline in action is through the PlayStream Debugger. You’ll notice the monitor as soon as you click on the **PlayStream Monitor** tab for your game.
