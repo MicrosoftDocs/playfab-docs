@@ -25,7 +25,7 @@ Before you can make your first API call to log a player in, you must create a [P
 
 ## Retrieving your TitleId
 
-When you create a Title in Game Manager, PlayFab generates a **TitleId** that identifies your Title. When following the guides, use a **TitleId** for a Titled that you have created.
+When you create a Title in Game Manager, PlayFab generates a **TitleId** that identifies your Title. When following the guides, use a **TitleId** for a Title that you have created.
 
 For information about using Game Manager and creating a Title, see [Game Manager quickstart](../features/config/gamemanager/quickstart.md).
 
