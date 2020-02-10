@@ -24,7 +24,7 @@ PlayStream offers the following features to developers:
 Let’s look at these features in more detail.
 
 > [!NOTE]
-> PlayStream now offers support for **entity events** as well as classic PlayStream events. To learn more, please reference the [PlayStream with entity events]() section after you finish this article.
+> PlayStream now offers support for **entity events** as well as classic PlayStream events. To learn more, please reference the [PlayStream with entity events](https://docs.microsoft.com/en-us/gaming/playfab/features/automation/playstream-events/playstream-with-entity-events/) article after you finish this one.
 
 ## PlayStream event pipeline and monitor
 

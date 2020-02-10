@@ -27,7 +27,11 @@ PlayStream now has a number of features that support entity events:
   - Send emails and push notifications
 * **A real-time debugger** - See entity events appear in the [PlayStream monitor](https://docs.microsoft.com/gaming/playfab/features/automation/playstream-events/#playstream-event-pipeline-and-monitor) alongside classic events. 
 
+> [!NOTE]
+> Currently Playstream does not support creating rules for events with names longer than 40 characters.
+
+
 Entity events are also supported for data and analytics features that allow you to discover pertinent information about your game:
 * **Event History** - Filter and search through an [archive of events](https://docs.microsoft.com/gaming/playfab/features/analytics/metrics/event-history). Classic events and entity events will appear together here, and can be filtered by event name. 
 * **PlayFab Insights** - Have the tools to examine all of your event data together, both classic and entity events.
-  
+
