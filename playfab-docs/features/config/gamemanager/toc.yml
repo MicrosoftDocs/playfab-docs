@@ -1,9 +1,13 @@
 - name: Overview
-  href: index.md
-- name: Quickstart
-  href: quickstart.md
+  expanded: false
+  items:
+  - name: What is Game Manager?  
+    href: index.md
+  - name: Quickstart
+    href: quickstart.md
+  - name: Reference
+    href: reference.md  
 - name: Tutorials
-  href: tutorials.md
   items:
   - name: API Access Policy
     href: api-access-policy.md
