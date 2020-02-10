@@ -31,6 +31,10 @@ PlayFab Party for Android and iOS are available on [GitHub.com](https://github.c
 - Adds support for the volume control API.
 - Removes audio focus handling from the library.  Host applications are now expected to implement their own focus handling logic.
 
+## 1.0.2
+
+- Fixed crash in background telemetry
+
 ## 1.0.1
 
 ### Party API Changes
