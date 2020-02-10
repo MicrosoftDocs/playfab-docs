@@ -3,7 +3,7 @@ title: PlayFab CloudScript using Azure Functions Quickstart Guide
 author: williacj
 description: PlayFab CloudScript using Azure Functions Quickstart Guide
 ms.author: cjwill
-ms.date: 02/05/2020
+ms.date: 02/10/2020
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, automation, cloudscript, azure functions
@@ -46,7 +46,7 @@ To begin using this feature you need to enable it.  Visit Automation -> CloudScr
 3. Put the name and Function URL.  The URL can be found in the output of your deployment.
 ![Deployment Output](media/azure_func_deployment.jpg)
 
-> **TIP**: To learn more about deploying azure functions, see [Deploy Azure Functions from Visual Studio Code]](https://code.visualstudio.com/tutorials/functions-extension/deploy-app).
+> **TIP**: To learn more about deploying azure functions, see [Deploy Azure Functions from Visual Studio Code](https://code.visualstudio.com/tutorials/functions-extension/deploy-app).
 
 ### Using and Calling CloudScript using Azure Functions from your PlayFab Title
 
@@ -90,7 +90,7 @@ private void CallCSharpExecuteFunction(){
 
 One advantage of using CloudScript using Azure Functions is that some data will be automatically passed to the Azure Function, passing you context on the invocation of the Cloudscript and in what context the Function was called (For example, PlayStream Action or directly from the client). This includes information like the entity profile that was the CloudScripts was invoked on behalf of and potentially the PlayStream events used to invoke the CloudScript.
 
-There are a couple of steps that you need to do if you are coding Functions without our Visual Studio Code Extension. 
+There are a couple of steps that you need to do if you are coding Functions without our [PlayFab Visual Studio Code Extension]()https://github.com/PlayFab/vscode-playfab-explorer). 
 
 1. You will need to install the PlayFab SDK via Package Manager. To do this open Terminal or CMD Console in Visual Studio Code and type: `dotnet add package PlayFabAllSDK`
 2. We have created some helpers that will ship with the cSharpSDK.  
