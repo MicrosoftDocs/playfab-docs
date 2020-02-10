@@ -68,10 +68,6 @@ The initial release of a new stand-alone PlayFab Insights service will give you 
 
 These services will begin to move from private to public preview in the first half of 2020. Monetization provides redemption, wallet and inventory capabilities while UGC provides a highly scalable catalog plus content moderation, ratings and reviews. These services are used to power the Minecraft Marketplace and the Mixer Sparks system supporting millions of transactions and the consumption of user generated content at scale. 
 
-**_AWS to Azure Migration_**
-
-We continue to work on migrating completely from AWS to Azure.
-
 **Available Now:**
 
 **_Insights Management Commands_**
