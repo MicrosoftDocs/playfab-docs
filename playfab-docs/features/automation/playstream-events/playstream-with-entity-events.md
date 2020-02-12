@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # PlayStream with entity events
 
-PlayFab has introduced the **entity event model**, a new event model that corresponds to the **entity programming model**. An [entity](https://docs.microsoft.com/gaming/playfab/features/data/entities) refers to any PlayFab concept that contains data. That can be a player, title, character, group, etc. 
+PlayFab has introduced the **entity event model**, a new event model that corresponds to the **entity programming model**. An [entity](../../data/entities/index.md) refers to any PlayFab concept that contains data. That can be a player, title, character, group, etc. 
 
 In the classic event model, there existed different events and APIs for each type of entity. For example, when creating a new entity you'd see an event like `group_created`, `character_created`, or `player_created` depending on what type of entity was created. Under the entity event model, there's only a single event, `entity_created`, to encompass all of the above.    
 

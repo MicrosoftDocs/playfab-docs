@@ -86,6 +86,7 @@ You can select a particular event to see details only for that event, including 
 
 ## Getting Started With PlayStream
 
+- [PlayStream with entity events](playstream-with-entity-events.md)
 - [Actions and Rules](../actions-rules/index.md)
 - [Segmentation](../../analytics/segmentation/index.md)
 - [PlayStream Events](../../analytics/metrics/playstream-events.md)
