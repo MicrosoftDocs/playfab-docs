@@ -21,17 +21,17 @@ In the classic event model, there existed different events and APIs for each typ
 Entity events support the following PlayFab features:
 
 * **Batches of events** - Write multiple entity events to PlayStream at once with the [WriteEvents](https://docs.microsoft.com/rest/api/playfab/events/playstream-events?view=playfab-rest) API.
-* **A real-time rules engine** - Set up rules that react in real time to entity events flowing through PlayStream, and trigger a variety of [actions](https://docs.microsoft.com/gaming/playfab/features/automation/playstream-events/#rules-and-actions). PlayFab supports the following actions on entity events:
+* **A real-time rules engine** - Set up rules that react in real time to entity events flowing through PlayStream, and trigger a variety of [actions](index.md/#rules-and-actions). PlayFab supports the following actions on entity events:
   - Run custom CloudScript (including CloudScript with Azure functions)
   - Grant items and virtual currency
   - Send emails and push notifications
-* **A real-time debugger** - See entity events appear in the [PlayStream monitor](https://docs.microsoft.com/gaming/playfab/features/automation/playstream-events/#playstream-event-pipeline-and-monitor) alongside classic events. 
+* **A real-time debugger** - See entity events appear in the [PlayStream monitor](index.md/#playstream-event-pipeline-and-monitor) alongside classic events. 
 
 > [!NOTE]
 > Currently Playstream does not support creating rules for events with names longer than 40 characters.
 
 
 Entity events are also supported for data and analytics features that allow you to discover pertinent information about your game:
-* **Event History** - Filter and search through an [archive of events](https://docs.microsoft.com/gaming/playfab/features/analytics/metrics/event-history). Classic events and entity events will appear together here, and can be filtered by event name. 
+* **Event History** - Filter and search through an [archive of events](../../analytics/metrics/event-history.md). Classic events and entity events will appear together here, and can be filtered by event name. 
 * **PlayFab Insights** - Have the tools to examine all of your event data together, both classic and entity events.
 
