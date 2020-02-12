@@ -18,7 +18,7 @@ In the classic event model, there existed different events and APIs for each typ
 
  With the new entity format, we were able to simplify the amount of different APIs and events that exist. You'll continue to see classic events alongside entity events in the PlayStream monitor in order to support existing titles as we finish migrating to the new event model.    
 
-PlayStream now has a number of features that support entity events:
+Entity events support the following PlayFab features:
 
 * **Batches of events** - Write multiple entity events to PlayStream at once with the [WriteEvents](https://docs.microsoft.com/rest/api/playfab/events/playstream-events?view=playfab-rest) API.
 * **A real-time rules engine** - Set up rules that react in real time to entity events flowing through PlayStream, and trigger a variety of [actions](https://docs.microsoft.com/gaming/playfab/features/automation/playstream-events/#rules-and-actions). PlayFab supports the following actions on entity events:
