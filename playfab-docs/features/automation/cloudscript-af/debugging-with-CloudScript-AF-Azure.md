@@ -3,15 +3,12 @@ title: Debugging CloudScript using Azure Functions with the Azure portal
 author: williacj
 description: Debugging CloudScript using Azure Functions with the Azure portal
 ms.author: cjwill
-ms.date: 11/26/2019
+ms.date: 02/10/2020
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, automation, cloudscript, azure functions, debugging
 ms.localizationpriority: medium
 ---
-> [!NOTE]
-> This feature is in private preview and intended for use by customers participating in the preview program.  We anticipate ongoing changes to it as we continue gathering feedback and optimizing for customer use.
-
 # Debugging CloudScript using Azure Functions with the Azure portal 
 
 If you are editing your Azure Functions using the [Azure portal](https://portal.azure.com), you can get logs directly in the portal.
