@@ -1,7 +1,7 @@
 ---
-title: CloudScript using Azure Functions
+title: PlayFab CloudScript using Azure Functions
 author: williacj
-description: Overview of the PlayFab CloudScript using Azure Functions
+description: Overview of PlayFab CloudScript using Azure Functions
 ms.author: cjwill
 ms.date: 02/10/2020
 ms.topic: article
@@ -22,6 +22,7 @@ Basing CloudScript to be based on Azure Functions brings a few key improvements:
 3)	Ability to write queued Cloudscript functions that can run for extended periods of time since we asynchronously wait for it to complete.
 4)  No limits to the number of API calls within the Azure Function code.  
 
+>**NOTE:** For more information about Azure Functions please visit the [Azure Functions documentation](https://docs.microsoft.com/azure/azure-functions/)
 
 ### Types of Cloud Script using Azure Functions
 One of the major new capabilities of CloudScript is the ability to have long running CloudScript.  This is introduced by having a new type of Cloud Script based on Azure Functions queued storage triggered Cloud Script.  With this new type of CloudScript, you will need to decide the type of CloudScript to use for each CloudScript you create. 
