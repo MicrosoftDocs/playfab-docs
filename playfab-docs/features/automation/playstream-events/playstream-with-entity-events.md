@@ -23,8 +23,7 @@ Entity events support the following PlayFab features:
 * **Batches of events** - Write multiple entity events to PlayStream at once with the [WriteEvents](https://docs.microsoft.com/rest/api/playfab/events/playstream-events?view=playfab-rest) API.
 * **A real-time rules engine** - Set up rules that react in real time to entity events flowing through PlayStream, and trigger a variety of [actions](index.md/#rules-and-actions). PlayFab supports the following actions on entity events:
   - Run custom CloudScript (including CloudScript with Azure functions)
-  - Grant items and virtual currency
-  - Send emails and push notifications
+  - Send emails
 * **A real-time debugger** - See entity events appear in the [PlayStream monitor](index.md/#playstream-event-pipeline-and-monitor) alongside classic events. 
 
 > [!NOTE]
