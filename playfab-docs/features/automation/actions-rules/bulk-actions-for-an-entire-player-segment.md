@@ -43,6 +43,7 @@ The first step is to create the segment that defines the group of players who wi
 - Then select the **New Segment** button.
 - Make the **Segment Name**: **High XP Players**.
 - Define it as **Player**, where the **Statistic Value** called **Total_XP Gained** is greater than **2725**.
+> **NOTE:** The current scheduled task system can process 10-15 tasks per second per segment.  When designing your segments plan ahead for how large they will be and how long the task execution will run.  There is no limit for how long a task can run but if they task needs to be executed in a specific timeframe then the segment needs to be sized properly.
 
 ![Game Manager - PlayStream - Segments - High XP Players](media/tutorials/game-manager-segments-high-xp-players.png)
 
