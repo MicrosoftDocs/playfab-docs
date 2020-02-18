@@ -5,7 +5,7 @@ description: "Information specific to the *VoiceChatTranscriptionReceived* type 
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 11/01/2019
+ms.date: 02/10/2020
 ---
 
 # PartyVoiceChatTranscriptionReceivedStateChange  
@@ -21,6 +21,7 @@ typedef struct PartyVoiceChatTranscriptionReceivedStateChange {
     PartyChatControl* senderChatControl;  
     uint32_t receiverChatControlCount;  
     PartyLocalChatControlArray receiverChatControls;  
+    PartyAudioSourceType sourceType;  
     PartyString languageCode;  
     PartyString transcription;  
     PartyVoiceChatTranscriptionPhraseType type;  
@@ -55,6 +56,12 @@ The number of local receiver chat controls to which the transcription is address
 *array of size `receiverChatControlCount`*  
   
 The local receiver chat controls to which the transcription is addressed.
+  
+**`sourceType`** &nbsp; [PartyAudioSourceType](../enums/partyaudiosourcetype.md)  
+  
+The type of audio source this transcription represents.
+  
+The audio source type can optionally be used for game scenarios in which transcriptions from different source types should be treated differently. For instance, different iconography may be shown depending on whether the transcription is associated with microphone or text-to-speech audio.
   
 **`languageCode`** &nbsp; [PartyString](../typedefs.md)  
   

@@ -14,6 +14,10 @@ ms.localizationpriority: medium
 
 The Xbox Live Helper library is available on [Nuget.org](https://www.nuget.org/profiles/PlayFab)!
 
+## 1.2.0
+
+This release of the Party Xbox Live Helper library includes support for the updated chat permission options in version 1.3.0 of PlayFab Party. For a full list of Party and Party Xbox Live Helper library version compatibility, see the [Party Xbox Live Helper Library overview](party-xbox-live-guide.md).
+
 ## 1.1.0
 
 ### GetEntityIdsFromXboxLiveUserIds API
