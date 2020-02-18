@@ -1352,7 +1352,7 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>Postman</h3>
-                                                <p><a href='/gaming/playfab/sdks/postman'>SDK</a></p><p><a href='/gaming/playfab/sdks/postman/quickstart'>Quickstart</a></p>
+                                                <p><a href='/gaming/playfab/sdks/postman'>SDK</a></p><p><a href='/gaming/playfab/sdks/postman/postman-quickstart'>Quickstart</a></p>
                                             </div>
                                         </div>
                                     </div>
