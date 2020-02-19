@@ -20,11 +20,11 @@ In the classic event model, there existed different events and APIs for each typ
 
 Entity events support the following PlayFab features:
 
-* **Batches of events** - Write multiple entity events to PlayStream at once with the [WriteEvents](https://docs.microsoft.com/rest/api/playfab/events/playstream-events?view=playfab-rest) API.
-* **A real-time rules engine** - Set up rules that react in real time to entity events flowing through PlayStream, and trigger a variety of [actions](index.md/#rules-and-actions). PlayFab supports the following actions on entity events:
+* **Batches of events** - Write multiple entity events to PlayStream at once with the [WriteEvents](https://docs.microsoft.com/rest/api/playfab/events/playstream-events?view=playfab-rest) API. 
+* **A real-time rules engine** - Set up rules that react in real time to entity events flowing through PlayStream, and trigger a variety of [actions](../actions-rules/index.md). PlayFab supports the following actions on entity events:
   - Run custom CloudScript (including CloudScript with Azure functions)
   - Send emails
-* **A real-time debugger** - See entity events appear in the [PlayStream monitor](index.md/#playstream-event-pipeline-and-monitor) alongside classic events. 
+* **A real-time debugger** - See entity events appear in the [PlayStream monitor](index.md) alongside classic events. 
 
 > [!NOTE]
 > Currently Playstream does not support creating rules for events with names longer than 40 characters.
