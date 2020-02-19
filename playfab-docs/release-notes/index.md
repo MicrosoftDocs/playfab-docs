@@ -40,9 +40,13 @@ ms.localizationpriority: medium
 
 * Overhaul and improve the QoS ping calculation for PlayFab Multiplayer
 
+## 200213
+
+PlayFab’s Multiplayer Servers introduces an auto scaling enhancement named Dynamic Standby that monitors standby server threshold levels and dynamically activates increased provisioning of game servers so that demand can be met at scale.  This feature feature adds a new object to the Multiplayer programming interface called “DynamicStandby” object. The Dynamic Standby object is an optional property of the [BuildRegionParams](https://docs.microsoft.com/rest/api/playfab/multiplayer/multiplayerserver/updatebuildregions?view=playfab-rest#buildregionparams) object.
+
+Dynamic Standby is an advanced game server feature and editing the settings from its default values should be done with caution. Configuring Dynamic Standby can be accomplished in the Game Manager Developers' portal or programmatically editing properties of the Dynamic Standby object. To learn more about Dynamic Standby, visit its user guide in the [PlayFab Multiplayer Servers](../features/multiplayer/servers/dynamic-standby.md) online documentation.
 
 ## 200128
-
 
 ### Multiplayer Server Event Changes:
 
