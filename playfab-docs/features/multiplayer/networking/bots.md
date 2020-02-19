@@ -14,9 +14,9 @@ ms.localizationpriority: medium
 # Bots
 
 > [!IMPORTANT]
-> This feature is currently in **Private Preview**.  
+> This feature is currently in **Preview**. It is provided to give you an early look at an upcoming feature and to allow you to provide feedback while it is still in development.
 >
-> It is provided to give you an early look at an upcoming feature, and to allow you to provide feedback while it is still in development. We will be making it broadly available to developers as soon as we can.
+> PlayFab customers in the Indie, Pro, and Enterprise tiers can access the Matchmaking and Party previews automatically through Game Manager. Xbox managed partners are also invited for the preview in the free tier and can get a preview access code from your Microsoft developer partner manager.
 
 PlayFab Party introduces experimental integration with Azure powered chat bots. These pre-baked personalities connect to the network, and use voice and text to chat with 2-6 connected players.
 

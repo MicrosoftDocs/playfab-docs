@@ -12,6 +12,35 @@ ms.localizationpriority: medium
 
 # PlayFab Release Notes 2020
 
+## 200218
+
+### API & Documentation Changes:
+
+* New api methods:
+    * admin.CreateInsightsScheduledScalingTask
+    * multiplayer.GetMultiplayerSessionLogsBySessionId
+* New feature and methods:
+    * A new mechanism for Cloud Script: Azure functions, can now be used in PlayFab
+    * [Feature Documentation](https://docs.microsoft.com/gaming/playfab/features/automation/cloudscript-af/)
+    * List of New Methods:
+       * cloudscript.ExecuteFunction
+       * cloudscript.ListFunctions
+       * cloudscript.ListHttpFunctions
+       * cloudscript.ListQueuedFunctions
+       * cloudscript.PostFunctionResultForEntityTriggeredAction
+       * cloudscript.PostFunctionResultForFunctionExecution
+       * cloudscript.PostFunctionResultForScheduledTask
+       * cloudscript.RegisterHttpFunction
+       * cloudscript.RegisterQueuedFunction
+       * cloudscript.UnregisterFunction
+* Api method changes:
+    * Region request parameter is no longer required for multiplayer.GetMultiplayerServerLogs
+
+### [CSharpSdk](https://github.com/PlayFab/CSharpSDK) specific changes:
+
+* Overhaul and improve the QoS ping calculation for PlayFab Multiplayer
+
+
 ## 200128
 
 
