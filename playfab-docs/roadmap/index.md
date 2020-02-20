@@ -47,7 +47,7 @@ We’re working on management experiences for Linux builds and additional graphs
 
 This service is available today in previews. As we further incorporate your feedback, we will make this generally available to all PlayFab users. 
 
-**_PlayFab Experimentation_**
+**_PlayFab Experiments_**
 
 This will provide a more advanced framework for A/B tests and other experiments.
 
