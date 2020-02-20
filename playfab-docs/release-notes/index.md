@@ -26,7 +26,7 @@ Date: 2020-02-20
     |`GSDK::getLogsDirectory()`|`const std::string&`|`const std::string`|
     |`GSDK::getSharedContentDirectory()`|`const std::string& `|`const std::string`|
 
-    Upgrade guide can be found in the [repository]((https://github.com/PlayFab/gsdk)) 
+    Please see our [Upgrade guide](https://github.com/PlayFab/gsdk/blob/master/200220Upgrade.md) 
 
 ## 200218
 
