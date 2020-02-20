@@ -3,124 +3,102 @@ title: Unity3D quickstart
 author: DanBehrendt
 description: This guide will help you make your first PlayFab API call in the Unity3d engine.
 ms.author: dabe
-ms.date: 11/27/2019
+ms.date: 1/25/2020
 ms.topic: article
 ms.prod: playfab
-keywords: playfab, unity3d, playfab unity sdk, csharp
+keywords: playfab, unity3d, playfab unity sdk, csharp, unity
 ms.localizationpriority: medium
 ---
 
-# Unity3D quickstart
+# Quickstart: PlayFab Client library for C# in Unity
+
+Get started with the PlayFab Client library for C# in Unity. Follow steps to install the package and try out example code for a basic task.
 
 This quickstart helps you make your first PlayFab API call in the Unity3d engine. Before continuing, make sure you have completed [Getting started for developers](../../personas/developer.md), which ensures you have a PlayFab account and are familiar with the PlayFab Game Manager.
 
 ## Requirements
 
-- A [PlayFab developer account](https://developer.playfab.com/en-us/sign-up).
-- An installed copy of the Unity Editor. For information on installing the Unity Editor, see [Installing Unity](https://docs.unity3d.com/Manual/GettingStartedInstallingUnity.html) in the Unity documentation. You can also install a version of the Unity using the Visual Studio feature installer.
+- A [PlayFab developer account](https://developer.playfab.com/sign-up).
+- An installed copy of the Unity Editor. To install Unity for personal use via Unity Hub, or Unity+ for professional use, see [Download Unity](https://unity3d.com/get-unity/download).
   > [!NOTE]
-  > The PlayFab Unity3D SDK supports Unity Editor version 5.3 and higher.
-  >
-- A Unity Project. For information on creating a Unity Project, see [Starting Unity for the first time](https://docs.unity3d.com/Manual/GettingStarted.html).
-  > [!NOTE]
-  > If you are unfamiliar with Unity, recent installation packages give you the option of installing game creation walkthroughs. You can use one of the walkthroughs to create a sample game to use in the following quickstart.
-  >
+  > The PlayFab Unity3D SDK supports Unity Editor version 5.3 (released December 2015) and higher.
+- A Unity Project - this can be any of the following:
+  - A brand new project. For more information, see [Starting Unity for the first time](https://docs.unity3d.com/Manual/GettingStarted.html).
+  - A guided tutorial project. For more information, see [Getting Started with Unity](https://learn.unity.com/).
+  - An existing project.
 - The PlayFab Unity3D SDK.
 
-This guide is written for Windows 10, however it should also work well on the MacOS.
+## Download and install PlayFab SDK
 
-## Download PlayFab SDK
+Use the PlayFab Editor Extensions package to install the SDK. The PlayFab Editor Extensions are a stand-alone Unity plug-in that streamlines installing the SDK and configuring the PlayFab settings for your Title. For information about installing the SDK without using the PlayFab Editor Extensions, see [Installing the PlayFab SDK for Unity](installing-unity3d-sdk.md#download-and-install-the-sdk-only).
 
-There are two ways to install the PlayFab Unity3D SDK:
-
-- The preferred method is to install Unity SDK by using the Unity Editor extensions from within the Unity project window.
-- You can also download the Unity 3D SDK from our GitHub page.
-
-### Installing the Unity 3D SDK using the editor extensions
-
-1. Download [PlayFab Unity Editor Extensions Asset Package](https://github.com/PlayFab/UnityEditorExtensions/raw/master/Packages/PlayFabEditorExtensions.unitypackage).
-2. Sign in to the Unity Editor.
-3. Navigate to where you downloaded the file, and double-click on the `.UnityPackage` file to open the **Import Unity Package** dialog in the Unity Editor.
+1. Download the [PlayFab Unity Editor Extensions Asset Package](https://github.com/PlayFab/UnityEditorExtensions/raw/master/Packages/PlayFabEditorExtensions.unitypackage).
+2. Open your Unity Project.
+3. Navigate to where you downloaded the file and double-click on the `PlayFabEditorExtensions.UnityPackage` file to open the **Import Unity Package** dialog in the Unity Editor.
 
    ![Import Unity Asset package](media/import-uedex.png)
-
 4. To import the PlayFab Unity Editor Extensions into your project, select **Import**.
-5. Select the **Log In** link to take you to the login pane and log in with your PlayFab username and password.  
+5. When the import has completed, the PlayFab Unity Editor Extensions panel should open automatically. If you've already created a PlayFab developer account, select the **Log In** link to log in with your PlayFab username and password.
 
-   ![Log in to PlayFab](media/login-register-uedex.png)  
-
-   When you have logged in, your screen will change to the one shown in the following example.
+   ![Log in to PlayFab](media/extensions-login-dialog.png)
+   > [!NOTE]
+   > If the panel did not open, or if you close the panel and want to reopen it, you can do so by selecting **Window** > **PlayFab** > **Editor Extensions**
+6. After logging in, the extension displays the SDK installation dialog.
 
    ![Install PlayFab SDK](media/install-sdk.png)
-
-6. Select **Install PlayFab SDK** to automatically import the SDK into your project or upgrade the version that is currently installed.
-
-### Download and install the SDK only
-
-1. Log in to the Unity editor and open your Unity project.
-2. Download the [PlayFab Unity3D SDK Asset Package](https://aka.ms/playfabunitysdkdownload) from the PlayFab GitHub repo.
-3. Navigate to where you downloaded the file, and double-click on the .UnityPackage file to open the **Import Unity Package** dialog in the Unity Editor.
-4. To import the PlayFab Unity3D SDK into your project, select **Import**.
+7. Select **Install PlayFab SDK** to automatically import the SDK into your project or upgrade the version that is currently installed.
 
 ## Set your title settings
 
-Before you can make an API call, you must specify the title to receive the call in the PlayFab **Title Settings**.
+Before you can make an API call, you must specify the Title to receive the call in the PlayFab **Title Settings**. To set the Title:
 
-### Setting the title using the editor extensions
+1. Select **SET MY TITLE** in the **Editor Extensions**.
 
-To set the title:
+    ![Set my title in the Editor Extensions](media/sdk-installation-success.png)
 
-1. Select the **Settings** tab in the **Editor Extensions**. The **STUDIO** field displays your studio name. If you are a member of more than one studio you can select the field and then select the studio which contains your game from the drop-down menu.
-2. The **Title ID** and **Developer Secret Key** are set automatically to the default title.
+2. Select the **Studio** entry to open the studio drop-down menu. Select the studio that contains the Title to which you would like to connect.
+3. Select the **Title ID** entry to open a drop-down menu of Titles associated with the selected studio.
 
-    ![PlayFab Title Settings](media/save-title-settings-uedex.png)
+The **Developer Secret Key** is automatically set to the default secret key for the Title. For more information about secret keys, see [Getting PlayFab developer keys](../../features/config/gamemanager/getting-playfab-developer-keys.md).
 
-### Setting the Title ID without using the editor extensions
-
-To set the title:
-
-1. In the Unity Editor Project panel select the **Assets** folder.
-2. Open the **Assets** > **PlayFabSdk** > **Shared** > **Public** > **Resources** folder.
-3. Select the PlayFabSettings Asset.
-4. In the **Inspector** window, set the **Title ID** and the **Developer Secret Key**.
-
-    ![PlayFab Inspector window](media/playfab-settings-inspector-window.png)
+![PlayFab Title Settings](media/save-title-settings-uedex.png)
 
 ## Making your first API call
 
 This part of the guide provides the minimum steps to make your first PlayFab API call. This example does not provide any GUI or on-screen feedback. Confirmation is displayed in the Console log.
 
-1. In the Unity Editor, on the Project panel left-click the **Assets** folder and select **Create**, then select **Folder**.
-2. In the Assets window name the folder *scripts*.
-3. Left-click the scripts folder and select **Create**, then select **C# Script**.
+1. If your Unity Project doesn't already have a *Scripts* folder (**HDRP** and **LWRP/URP** templates have one by default), right-click on the **Assets** folder in the Project panel and select **Create** > **Folder**.
+2. In the **Assets** window, name the folder *Scripts*.
+3. Right-click the Scripts folder and select **Create** > **C# Script**.
 4. Name the script PlayFabLogin.
-5. Double-click the file to open it in a code-editor.
-
-    Depending on your settings/installed-programs, this will likely be Visual Studio or MonoDevelop.
-6. In your code editor, replace the contents of `PlayFabLogin.cs` with the code shown below and save the file.
+5. Double-click the file to open it in a code-editor. Depending on your settings/installed-programs, this is likely Visual Studio or MonoDevelop.
+6. In your code editor, replace the contents of PlayFabLogin.cs with the code shown below and save the file.
 
     ```csharp
     using PlayFab;
     using PlayFab.ClientModels;
     using UnityEngine;
-    
+
     public class PlayFabLogin : MonoBehaviour
     {
         public void Start()
         {
-            // Note: Setting title Id here can be skipped if you have set the value in Editor Extensions already.
-            if (string.IsNullOrEmpty(PlayFabSettings.staticSettings.TitleId)){
-                PlayFabSettings.staticSettings.TitleId = "144"; // Please change this value to your own titleId from PlayFab Game Manager
+            if (string.IsNullOrEmpty(PlayFabSettings.TitleId)){
+                /*
+                Please change the titleId below to your own titleId from PlayFab Game Manager.
+                If you have already set the value in the Editor Extensions, this can be skipped.
+                */
+                PlayFabSettings.TitleId = "42";
             }
             var request = new LoginWithCustomIDRequest { CustomId = "GettingStartedGuide", CreateAccount = true};
             PlayFabClientAPI.LoginWithCustomID(request, OnLoginSuccess, OnLoginFailure);
         }
-    
+
         private void OnLoginSuccess(LoginResult result)
         {
             Debug.Log("Congratulations, you made your first successful API call!");
         }
-    
+
         private void OnLoginFailure(PlayFabError error)
         {
             Debug.LogWarning("Something went wrong with your first API call.  :(");
@@ -129,13 +107,13 @@ This part of the guide provides the minimum steps to make your first PlayFab API
         }
     }
     ```
-    > [!IMPORTANT]
-    > The code shown above is not for use with Mobile. This is only an example, and shows how to log in with a CustomID. Mobile games should use either
-    [LoginWithAndroidDeviceID](xref:titleid.playfabapi.com.client.authentication.loginwithandroiddeviceid), [LoginWithIOSDeviceID](xref:titleid.playfabapi.com.client.authentication.loginwithiosdeviceid), or some form of social login such as [LoginWithFacebook](xref:titleid.playfabapi.com.client.authentication.loginwithfacebook).
 
-7. In the **Hierarchy** panel, select left-click your scene, then select **Game Object** > **Create Empty**.
-8. Select the new Game Object and in the inspector window, select **Add Component**.
-9. From the component drop-down menu, select **Scripts**, then from the **Scripts** panel select **Play Fab Login".
+    > [!IMPORTANT]
+    > The code shown above is not for use with mobile Titles. This is only an example, and shows how to log in with a `CustomID`. To implement login for a mobile Title, use either
+    [LoginWithAndroidDeviceID](xref:titleid.playfabapi.com.client.authentication.loginwithandroiddeviceid), [LoginWithIOSDeviceID](xref:titleid.playfabapi.com.client.authentication.loginwithiosdeviceid), or some form of social login such as [LoginWithFacebook](xref:titleid.playfabapi.com.client.authentication.loginwithfacebook).
+7. In the **Hierarchy** panel, right-click your scene, then select **Create Empty** (or **Game Object** > **Create Empty** in older versions of Unity).
+8. Select the new Game Object and in the **Inspector** panel, select **Add Component**.
+9. From the component drop-down menu, select **Scripts** > **PlayFabLogin**.
 
 For more information on creating and using scripts in the Unity Editor, see [Creating and Using Scripts](https://docs.unity3d.com/Manual/CreatingAndUsingScripts.html) in the Unity documentation.
 
@@ -143,60 +121,20 @@ For more information on creating and using scripts in the Unity Editor, see [Cre
 
 You are now ready to test out this sample.
 
-- Be sure to save all files and return to the Unity Editor.
-- Press the **Play** button at the top of the editor.
+- Be sure to save all files and return to the Unity Editor
+- Press the **Play** button at the top of the editor
 
 You should see the following in your Unity Console Panel.
 
 ![Console log of first API call](media/first-call-log.png)  
 
 > [!TIP]
->Alternatively, you can also log into the game in the PlayFab Game Manager, and select the **PlayStream Monitor** tab. Each time you **Alt+ TAB** focus away from the actively running Unity game, the game passes an event which you can see and confirm in the PlayStream Monitor.
+>Alternatively, you can log into PlayFab and navigate to the title in Game Manager, and select the **PlayStream Monitor** tab. Each time you **Alt+ TAB** focus away from the actively running Unity Title, it passes an event which you can see and confirm in the PlayStream Monitor.
 
-For a list of all available client API calls, see our [PlayFab API References](../../api-references/index.md) documentation.
+For a list of all available client API calls, see [PlayFab API References](../../api-references/index.md).
 
-Happy Coding!
+## Next steps
 
-## Deconstruct the code
+This quickstart shows a simplified procedure for authenticating a user. For additional information on user authentication, see [Login basics and best practices](../../features/authentication/login/login-basics-best-practices.md).
 
-This optional last section describes each part of the code in PlayFabLogin.cs in detail.
-
-- There are 3 functions in PlayFabLogin:
-
-  - `Start`, `OnLoginSuccess`, `OnLoginFailure`
-  - `Start` is a Unity function which is automatically called for every `MonoBehaviour` object.
-    - See the [Unity MonoBehaviour Guide](https://docs.unity3d.com/ScriptReference/MonoBehaviour.html) for more information.
-
-Inside of Start():
-
-- `PlayFabSettings.staticSettings.TitleId = "xxxx"`;
-  - Every PlayFab developer creates a title in Game Manager. When you publish your game, you must code that titleId into your game. This lets the client know how to access the correct data within PlayFab. For most users, just consider it a mandatory step that makes PlayFab work.
-
-- `var request = new LoginWithCustomIDRequest { CustomId = "GettingStartedGuide", CreateAccount = true};`
-  - Most PlayFab API methods require input parameters, and those input parameters are packed into a request object.
-  - Every API method requires a unique request object, with a mix of optional and mandatory parameters.
-    - For `LoginWithCustomIDRequest`, there is a mandatory parameter of `CustomId`, which uniquely identifies a player and `CreateAccount`, which allows the creation of a new account with this call.
-
-  - For login, most developers will want to use a more appropriate login method.
-    - See the PlayFab Login Documentation for:
-    - [LoginWithAndroidDeviceID](xref:titleid.playfabapi.com.client.authentication.loginwithandroiddeviceid)
-    - [LoginWithIOSDeviceID](xref:titleid.playfabapi.com.client.authentication.loginwithiosdeviceid)
-    - [LoginWithEmailAddress](xref:titleid.playfabapi.com.client.authentication.loginwithemailaddress)
-    - [LoginWithFacebook](xref:titleid.playfabapi.com.client.authentication.loginwithfacebook)
-
-Inside of `OnLoginSuccess`
-
-- The result object of many API success callbacks will contain the requested information.
-- `LoginResult` contains some basic information about the player, but for most users, login is simply a mandatory step before calling other APIs.
-
-Inside of OnLoginFailure
-
-- API calls can fail for many reasons, and you should always attempt to handle failure.
-  - You can find error codes shared by all API methods in our [Global API Method Error Codes](../../features/automation/cloudscript/global-api-method-error-codes.md) tutorial, or specific codes at the bottom of each API method documentation.
-
-- Why API calls fail (In order of likelihood).
-  - `PlayFabSettings.staticSettings.TitleId` is not set. If you forget to set titleId to your title, then nothing will work.
-  - Request parameters. If you have not provided the correct or required information for a particular API call, then it will fail. See `error.errorMessage`, `error.errorDetails`, or `error.GenerateErrorReport()` for more info.
-  - Device connectivity issue. Cell-phones lose/regain connectivity constantly, and so any API call at any time can fail randomly, and then work immediately after. Going into a tunnel can disconnect you completely.
-  - The PlayFab Unity SDK currently expects API calls from the main Unity thread. Calling the SDK on a background thread will likely cause exceptions with coroutines and other Unity methods not being invoked on the main Unity thread.
-  - PlayFab server issue. As with all software, there can be issues. See our [forums](https://community.playfab.com/index.html) to look for issue reports similar to yours, or post your own question. You can also review our [release notes](../../release-notes/index.md).
+Learn how to bind an account to multiple devices and login mechanisms: [Account linking quickstart](../../features/authentication/login/quickstart.md).

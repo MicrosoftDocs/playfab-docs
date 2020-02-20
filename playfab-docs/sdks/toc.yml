@@ -72,6 +72,8 @@
     items:
     - name: Quickstart
       href: ./unity3d/quickstart.md
+    - name: Installing the PlayFab SDK for Unity
+      href: ./unity3d/installing-unity3d-sdk.md
   - name: Unreal Engine
     href: ./unreal/index.md
     items:
