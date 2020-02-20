@@ -12,21 +12,21 @@ ms.localizationpriority: medium
 
 # Upgrade guide for 0.7.190918 -> 0.7.200220
 
-The new release of cpp Gsdk will contain a some breaking changes, detailed later in the document. The primary goal for these changes is to maintain thread safety. The un-fixed implementation would allow a thread to alter a dictionary while another thread read it, causing exceptions.
+The 0.7.200220 release of the GSDK for C++ contains breaking changes. The primary change in this update is provide thread safety. Previous implementations allowed a thread to alter a dictionary while another thread read it which caused errors and raised exceptions. This topic provides detailed instructions on the steps you must take to update your code when you update to current release.
 
-The PR itself has a thorough explanation of all changes (here)[https://github.com/PlayFab/gsdk/pull/43/].
+The PR contains a detailed explanation of the changes: [c++ change for thread safety #43](https://github.com/PlayFab/gsdk/pull/43/)
 
-Most customers will only be affected by 3 very minor breaking changes in this PR. Nearly all customers will need to change 1 or 2 lines of code, but very few customers should need to change more. The upgrade guide below should cover all possible changes required for even the most obscure breaking changes.
+Most customers are only affected by 3 very minor breaking changes in this release. Nearly all customers will need to change 1 or 2 lines of code, but very few customers might need to change more. The upgrade guide below cover all of the possible changes required for even the most obscure breaking changes.
 
 ## Upgrade instructions - Affects most/all customers
 
 
-All customers will need to update how they treat the returned value of the following methods:
+The following methods have been updated to return an object instead of a reference:
 1. `GSDK::getConfigSettings()`
 2. `GSDK::getLogsDirectory()`
 3. `GSDK::getSharedContentDirectory()`
 
-* All customers should change the expected return value from references to objects:
+* You must update your code as follows to accept the returned object:
 
     `GSDK::getConfigSettings()`
     * Old: ```const std::unordered_map<std::string, std::string>& config = GSDK::getConfigSettings();```
