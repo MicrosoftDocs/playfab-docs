@@ -12,6 +12,22 @@ ms.localizationpriority: medium
 
 # PlayFab Release Notes 2020
 
+## 200220
+
+Date: 2020-02-20
+
+### [Cpp Gsdk](https://github.com/PlayFab/gsdk)- Breaking change
+- Due to thread safety concerns, the signatures of the following methods were modified:
+
+
+    |Method name| Old return type | New return type|
+    |-----|--------|-----|
+    |`GSDK::getConfigSettings()`| `const std::unordered_map <std::string, std::string>&` | `const std::unordered_map <std::string, std::string>`|
+    |`GSDK::getLogsDirectory()`|`const std::string&`|`const std::string`|
+    |`GSDK::getSharedContentDirectory()`|`const std::string& `|`const std::string`|
+
+    Upgrade guide can be found in the [repository]((https://github.com/PlayFab/gsdk)) 
+
 ## 200218
 
 ### API & Documentation Changes:
