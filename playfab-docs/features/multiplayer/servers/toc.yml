@@ -38,6 +38,8 @@
     href: allocating-game-servers-and-configuring-vs-debugging-tools.md
   - name: Connecting clients to game servers
     href: connecting-clients-to-game-servers.md
+  - name: Dynamic Standby
+    href: dynamic-standby.md
 - name: Limits and billing
   items:
   - name: Accessing increased core limits and additional Azure regions
