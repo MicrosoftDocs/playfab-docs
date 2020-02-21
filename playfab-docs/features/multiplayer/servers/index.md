@@ -33,24 +33,15 @@ These are the typical steps for using the service:
 
 ![PlayFab Multiplayer Server Hosting Service diagram](media/tutorials/multiplayer-server-hosting-service-diagram.png)
 
-## Reference Documentation, Samples, and Tools
-
+## Reference Documentation and Tools
 - [Multiplayer Server API Reference](xref:titleid.playfabapi.com.multiplayer.multiplayerserver)
 - [PowerShell Module](https://www.powershellgallery.com/packages/PlayFabMultiplayer)
 
-## Game Server SDK & Samples
-
-- [Game Server SDK (GSDK) Sample - Basic Windows Runner](https://github.com/PlayFab/gsdkSamples)
+## Game Server SDK 
 - [Game Server SDK (GSDK) for C++ Windows servers via nuget](https://www.nuget.org/packages/com.playfab.cppgsdk.v140)
 - [Game Server SDK (GSDK) for C# Windows servers via nuget](https://www.nuget.org/packages/com.playfab.csharpgsdk)
 - [Game Server SDK (GSDK) for Java Windows & Linux servers via Maven](https://mvnrepository.com/artifact/com.playfab/gameserverSDK)
 
-## Frequently asked questions
-
-### Q: I am using Unity. Do you have a sample of a Unity-based game interfacing with the game server SDK?
-
-At this time, we do not have a Unity sample demonstrating PlayFab Multiplayer Servers. A small group of preview customers have gotten the C# GSDK to work with their Unity-based game server, but it is not a straightforward experience.
-
-### Q: Only 14 Azure regions and 4 VM series appear currently supported. Can I get access to additional series or regions?
-
-Please contact the team through [PlayFab support](mailto:support@playfab.com) as we are adding additional series and regions in response to customer requests. The current selection are the most popular options used by several games in production.
+## Game Server SDK Samples
+- [Game Server SDK (GSDK) Sample - Basic Windows Runner](https://github.com/PlayFab/gsdkSamples)
+- [Game Server SDK (GSDK) Sample - Unity Windows 10](https://github.com/PlayFab/gsdkSamples/blob/master/UnityMirror/README.md)
