@@ -18,7 +18,7 @@ Using Azure Functions to run cloud code that is bound to a PlayFab title gives y
 Basing CloudScript to be based on Azure Functions brings a few key improvements:
 
 1)	Ability to write Cloudscript in C# as well as Javascript and the [other supported Azure Functions languages](https://docs.microsoft.com/azure/azure-functions/supported-languages)
-2)	Ability to locally debug Cloudscript using [Visual Studio](https://visualstudio.microsoft.com/) or [Visual Studio Code](https://code.visualstudio.com/).  In addition, we have released an open sourced [Visual Studio Code Extention for PlayFab](https://github.com/PlayFab/vscode-playfab-explorer) that makes it easier to create CloudScript using Azure Functions.
+2)	Ability to locally debug Cloudscript using [Visual Studio](https://visualstudio.microsoft.com/) or [Visual Studio Code](https://code.visualstudio.com/).  In addition, we have released an open sourced [Visual Studio Code Extension for PlayFab](https://github.com/PlayFab/vscode-playfab-explorer) that makes it easier to create CloudScript using Azure Functions.
 3)	Ability to write queued Cloudscript functions that can run for extended periods of time since we asynchronously wait for it to complete.
 4)  No limits to the number of API calls within the Azure Function code.  
 
