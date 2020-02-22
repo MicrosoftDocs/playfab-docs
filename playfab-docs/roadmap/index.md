@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 ---
 
 # PlayFab Roadmap
-_Last Update: 1/16/2020_
+_Last Update: 2/20/2020_
 
 PlayFab is gearing up for an exciting decade! With 2020 comes a modern vision of our services that we’re working hard to deliver. 
 
@@ -20,15 +20,6 @@ As always, we want your feedback. The [Feature Requests](https://community.playf
 Please note that while this roadmap reflects our aspirations, features and timelines are subject to change without notice.
 
 **Coming Soon:**
-
-**_CloudScript with Azure Functions_**
-
-[CloudScript using Azure Functions](https://docs.microsoft.com/gaming/playfab/features/automation/cloudscript-af/) brings support for [new languages](https://docs.microsoft.com/azure/azure-functions/supported-languages) (including C#) as well as local debugging in Visual Studio and Visual Studio Code. 
-PlayFab asynchronously waits for these functions to complete, allowing them to run for extended periods of time.  You can watch a demo [here](https://youtu.be/apQbkDn1lNo).
-
-**_PlayFab Visual Studio Extension_**
-
-The PlayFab Visual Studio Code Extension will roll out soon with a GitHub open source repository for community involvement.
 
 **_PlayFab in China_**
 
@@ -56,7 +47,7 @@ We’re working on management experiences for Linux builds and additional graphs
 
 This service is available today in previews. As we further incorporate your feedback, we will make this generally available to all PlayFab users. 
 
-**_PlayFab Experimentation_**
+**_PlayFab Experiments_**
 
 This will provide a more advanced framework for A/B tests and other experiments.
 
@@ -69,6 +60,15 @@ The initial release of a new stand-alone PlayFab Insights service will give you 
 These services will begin to move from private to public preview in the first half of 2020. Monetization provides redemption, wallet and inventory capabilities while UGC provides a highly scalable catalog plus content moderation, ratings and reviews. These services are used to power the Minecraft Marketplace and the Mixer Sparks system supporting millions of transactions and the consumption of user generated content at scale. 
 
 **Available Now:**
+
+**_CloudScript with Azure Functions_**
+
+[CloudScript using Azure Functions](https://docs.microsoft.com/gaming/playfab/features/automation/cloudscript-af/) brings support for [new languages](https://docs.microsoft.com/azure/azure-functions/supported-languages) (including C#) as well as local debugging in Visual Studio and Visual Studio Code. 
+PlayFab asynchronously waits for these functions to complete, allowing them to run for extended periods of time.  You can watch a demo [here](https://youtu.be/apQbkDn1lNo).
+
+**_PlayFab Visual Studio Extension_**
+
+The PlayFab Visual Studio Code Extension will roll out soon with a GitHub open source repository for community involvement.
 
 **_Insights Management Commands_**
 
