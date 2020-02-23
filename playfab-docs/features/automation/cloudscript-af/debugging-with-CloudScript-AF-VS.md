@@ -4,12 +4,12 @@ author: williacj
 description: Debugging CloudScript using Azure Functions with Visual Studio
 ms.author: cjwill
 ms.date: 02/10/2020
-ms.topic: article
+ms.topic: tutorial
 ms.prod: playfab
 keywords: playfab, automation, cloudscript, azure functions, visual studio, visual studio 2019, debugging
 ms.localizationpriority: medium
 ---
-# Debugging CloudScript using Azure Functions with Visual Studio 
+# Tutorial: Debugging CloudScript using Azure Functions with Visual Studio 
 
 If you are using Visual Studio, a similar UX is available in Cloud Explorer:
 

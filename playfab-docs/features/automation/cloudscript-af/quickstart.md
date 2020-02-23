@@ -4,7 +4,7 @@ author: williacj
 description: PlayFab CloudScript using Azure Functions Quickstart Guide
 ms.author: cjwill
 ms.date: 02/10/2020
-ms.topic: article
+ms.topic: quickstart
 ms.prod: playfab
 keywords: playfab, automation, cloudscript, azure functions
 ms.localizationpriority: medium
@@ -44,12 +44,14 @@ To begin using this feature you need to enable it.  Visit Automation -> CloudScr
 3. Put the name and Function URL.  The URL can be found in the output of your deployment.
 ![Deployment Output](media/azure_func_deployment.jpg)
 
-> **TIP**: To learn more about deploying azure functions, see [Deploy Azure Functions from Visual Studio Code](https://code.visualstudio.com/tutorials/functions-extension/deploy-app).
+> [!TIP] 
+> To learn more about deploying azure functions, see [Deploy Azure Functions from Visual Studio Code](https://code.visualstudio.com/tutorials/functions-extension/deploy-app).
 
 
 ## Using and Calling CloudScript using Azure Functions from your PlayFab Title
 
-> **NOTE:** The examples code within the this guide will be written in Unity C# & Azure Function C# code.
+> [!NOTE]
+>  The examples code within the this guide will be written in Unity C# & Azure Function C# code.
 
 Now that your function is registered, you can now call that function from within your client.
 
@@ -95,32 +97,33 @@ There are a couple of steps that you need to do if you are coding Functions with
 2. We have created some helpers that will ship with the cSharpSDK.  
 3. You need to edit your .csproj file and include `<DefineConstants>NETCOREAPP2_0</DefineConstants>` in your default PropertyGroup.
 ![Define Constants](media/define_constants.jpg)
+4. To use the context about how the CloudScript with executed see the [Using CloudScript context models tutorial](CloudScript-af-context.md) 
 
-A hello world example is always nice,  see the below HelloWorld Sample that you can use as your first Azure Function.
+A hello world example is always nice,  see the below HelloWorld Sample that you can use as your first Azure Function. 
 
 ```C#
-using System.Net.Http;
 using System.Threading.Tasks;
 using Microsoft.Azure.WebJobs;
 using Microsoft.Azure.WebJobs.Extensions.Http;
+using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
-using PlayFab;
-using PlayFab.Plugins.CloudScript;
+using Newtonsoft.Json;
+using PlayFab.Samples;
 
-namespace PlayFabCS2AFTests.HelloWorld
+namespace PlayFabCS2AFSample.HelloWorld
 {
     public static class HelloWorld
     {
         [FunctionName("HelloWorld")]
         public static async Task<dynamic> Run(
-            [HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route = null)] HttpRequestMessage req,
+            [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)] HttpRequest req,
             ILogger log)
         {
-            /* Create the function execution's context through the request */
-            var context = await FunctionContext<dynamic>.Create(req);
-            var args = context.FunctionArgument;
+            FunctionExecutionContext<dynamic> context = JsonConvert.DeserializeObject<FunctionExecutionContext<dynamic>>(await req.ReadAsStringAsync());
 
-            var message = $"Hello {context.CurrentPlayerId}!";
+            dynamic args = context.FunctionArgument;
+
+            var message = $"Hello {context.CallerEntityProfile.Lineage.MasterPlayerAccountId}!";
             log.LogInformation(message);
 
             dynamic inputValue = null;
@@ -135,14 +138,15 @@ namespace PlayFabCS2AFTests.HelloWorld
         }
     }
 }
-
 ```
 
 As you can see in the above, the CurrentPlayerId of the caller is available like in our traditional CloudScript implementation.  Parameters you have passed in the FunctionParameters field will be available in the *args*.
 
-> **NOTE:** You will need to call this HelloWorld Azure Function via ExecuteFunction from an SDK.
+> [!NOTE]
+> You will need to call this HelloWorld Azure Function via ExecuteFunction from an SDK.
 
-> **NOTE:** In the PlayStream event, sent back from the CloudScript function, the Player Profile is returned.  If the returned Player Profile is over 2048 bytes then the profile will be truncated with a property set indicating it has been truncated.  If this occurs you will need to use the profile APIs (either server, client or entity APIs) to retrieve the full profile.
+> [!NOTE]
+> In the PlayStream event, sent back from the CloudScript function, the Player Profile is returned.  If the returned Player Profile is over 2048 bytes then the profile will be truncated with a property set indicating it has been truncated.  If this occurs you will need to use the profile APIs (either server, client or entity APIs) to retrieve the full profile.
 
 ## Azure Function Rules
 
