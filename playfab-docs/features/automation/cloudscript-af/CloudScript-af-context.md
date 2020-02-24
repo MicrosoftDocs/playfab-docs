@@ -3,7 +3,7 @@ title: PlayFab CloudScript using Azure Functions Context Models
 author: williacj
 description: This file details the different context variables that are available in PlayFab CloudScript using Azure Functions
 ms.author: cjwill
-ms.date: 02/10/2020
+ms.date: 02/23/2020
 ms.topic: tutorial
 ms.prod: playfab
 keywords: playfab, automation, cloudscript, azure functions
@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 ---
   
 # Tutorial: Using CloudScript context models
-CloudScript  can be executed through several mechanisms in PlayFab including execution through APIs, through scheduled tasks, through PlayStream events and through a player entering and existing segments.  In many cases, the context in which the CloudScript is executed is important for how the CloudScript runs.  A simple example of this is knowing the Player ID of the player the CloudScript is being run on behalf of. The data model available in CloudScript in each of the context is different and provides important data used in your CloudScript.
+CloudScript  can be executed through several mechanisms in PlayFab including execution through APIs, through scheduled tasks, through PlayStream events and through a player entering and exiting segments.  In many cases, the context in which the CloudScript is executed is important for how the CloudScript runs.  A simple example of this is knowing the Player ID of the player the CloudScript is being run on behalf of. The data model available in CloudScript in each of the context is different and provides important data used in your CloudScript.
 
 In your CloudScript code you will need to reference each of these context models.  You can add individual models or use the file provided at the end of this tutorial.
 
@@ -25,7 +25,7 @@ In this tutorial, you learn how to:
 > * Use the context model when executing in the context of an Entity.
 
 ## Use the shared Title Authentication context model
-No matter the method for executing a CloudScript the Title Authentication context is always provided.  This includes the Title ID and Entity Token (see [GetEntityToken](https://docs.microsoft.com/en-us/rest/api/playfab/authentication/authentication/getentitytoken?view=playfab-rest) for more details) used to execute the CloudScript.  Knowing this context allows you to make additional API calls in your CloudScript into PlayFab using the Server APIs.
+No matter the method for executing a CloudScript the Title Authentication context is always provided.  This includes the Title ID and Entity Token (see [GetEntityToken](https://docs.microsoft.com/rest/api/playfab/authentication/authentication/getentitytoken?view=playfab-rest) for more details) used to execute the CloudScript.  Knowing this context allows you to make additional API calls in your CloudScript into PlayFab using the Server APIs.
 
 ```C#
 // Shared models
@@ -37,7 +37,7 @@ public class TitleAuthenticationContext
 ```
 
 ## Use the context model when executing via the ExecuteFunction API
-When executing CloudScript through the ExecuteFunction API the context that is returned includes the following information:
+When executing CloudScript through the ExecuteFunction API the context that is provided includes the following information:
 * The Entity Profile of the caller
 * The Title Authentication Context
 * A boolean indicating if a Playsteam event will be sent as part of the function being executed
@@ -59,7 +59,7 @@ public class FunctionExecutionContext : FunctionExecutionContext<object>
 ```
 
 ## Use the context model when executing via Scheduled Task
-When executing CloudScript through [Scheduled Tasks](https://docs.microsoft.com/gaming/playfab/features/automation/scheduled-tasks/) the context that is returned includes the following information:
+When executing CloudScript through [Scheduled Tasks](https://docs.microsoft.com/gaming/playfab/features/automation/scheduled-tasks/) the context that is provided includes the following information:
 * The Scheduled Task Name Id
 * The event history which includes a stack of PlayStream Events
 * The title Authentication Context
@@ -90,7 +90,7 @@ public class ScheduledTaskFunctionExecutionContext : ScheduledTaskFunctionExecut
 ```
 
 ## Use the context model when executing in the context of a Player 
-When executing CloudScript through Player PlayStream Events, entering or leaving an segment or as part of a segment based scheduled task the context that is returned includes the following information:
+When executing CloudScript through Player PlayStream Events, entering or leaving an segment or as part of a segment based scheduled task the context that is provided includes the following information:
 * The Player Profile
 * Boolean indicating if the player profile is trunctated.  
    * The Player Profile will be truncated if it is over 2048 bytes.  If this occurs you will need to use the profile APIs (either server, client or entity APIs) to retrieve the full profile.
@@ -117,10 +117,8 @@ public class PlayerPlayStreamFunctionExecutionContext : PlayerPlayStreamFunction
 ```
 
 ## Use the context model when executing via an Entity PlayStream Events, entering or leaving an entity segment or as part of an entity segment based scheduled task.
-When executing CloudScript through Entity PlayStream Events, entering or leaving an entity segment or as part of a entity segment based scheduled task the context that is returned includes the following information:
+When executing CloudScript through Entity PlayStream Events, entering or leaving an entity segment or as part of a entity segment based scheduled task the context that is provided includes the following information:
 * The Entity Profile
-* Boolean indicating if the player profile is trunctated.  
-   * The Player Profile will be truncated if it is over 2048 bytes.  If this occurs you will need to use the profile APIs (either server, client or entity APIs) to retrieve the full profile.
 * The PlayStream event which triggered the CloudScript.
 * A boolean indicating if a Playsteam event will be sent as part of the function being executed
 * The functions arguements used when calling the ExecuteFunction API

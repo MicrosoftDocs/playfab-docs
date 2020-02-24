@@ -145,9 +145,6 @@ As you can see in the above, the CurrentPlayerId of the caller is available like
 > [!NOTE]
 > You will need to call this HelloWorld Azure Function via ExecuteFunction from an SDK.
 
-> [!NOTE]
-> In the PlayStream event, sent back from the CloudScript function, the Player Profile is returned.  If the returned Player Profile is over 2048 bytes then the profile will be truncated with a property set indicating it has been truncated.  If this occurs you will need to use the profile APIs (either server, client or entity APIs) to retrieve the full profile.
-
 ## Azure Function Rules
 
 Azure Functions can also be called by creating rules and scheduled tasks.  This works in the same way as our standard CloudScript.  To create a rule, go to Automation->Rules  or Automation->Scheduled Tasks. 
