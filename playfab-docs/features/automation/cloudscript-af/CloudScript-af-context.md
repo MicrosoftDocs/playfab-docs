@@ -23,7 +23,7 @@ In this tutorial, you learn how to:
 > * Use the context model when executing in the context of an Entity.
 
 ## Use the shared Title Authentication context model
-No matter the method for executing a CloudScript the Title Authentication context is always provided.  This includes the Title ID and Entity Token (see [GetEntityToken](https://docs.microsoft.com/rest/api/playfab/authentication/authentication/getentitytoken?view=playfab-rest) for more details) used to execute the CloudScript.  Knowing this context allows you to make additional API calls in your CloudScript into PlayFab using the Server APIs.
+No matter the method for executing a script the Title Authentication context is always provided.  This includes the Title ID and Entity Token (see [GetEntityToken](https://docs.microsoft.com/rest/api/playfab/authentication/authentication/getentitytoken?view=playfab-rest) for more details) used to execute the CloudScript.  Knowing this context allows you to make additional API calls in your CloudScript into PlayFab using the Server APIs.
 
 ```C#
 // Shared models
@@ -39,7 +39,7 @@ When you use the the [ExecuteFunction API](https://docs.microsoft.com/rest/api/p
 * The Entity Profile of the caller
 * The Title Authentication Context
 * A boolean that indicates whether a Playsteam event is sent as part of the function being executed
-* The functions arguements used when calling the CloudScript
+* The functions arguements used when calling the script
 
 ```C#
 // Models via ExecuteFunction API
@@ -57,12 +57,12 @@ public class FunctionExecutionContext : FunctionExecutionContext<object>
 ```
 
 ## Use the context model when executing via Scheduled Task
-When you [Scheduled Tasks](https://docs.microsoft.com/gaming/playfab/features/automation/scheduled-tasks/) to execute a CloudScript, the context that is provided includes the following information:
+When you [Scheduled Tasks](https://docs.microsoft.com/gaming/playfab/features/automation/scheduled-tasks/) to execute a script, the context that is provided includes the following information:
 * The Scheduled Task Name Id
 * The event history which includes a stack of PlayStream Events
 * The title Authentication Context
 * A boolean that indicates whether a Playsteam event is sent as part of the function being executed
-* The functions arguements used when calling the CloudScript
+* The functions arguements used when calling the script
 
 ```C#
 // Models via Scheduled task
@@ -88,13 +88,13 @@ public class ScheduledTaskFunctionExecutionContext : ScheduledTaskFunctionExecut
 ```
 
 ## Use the context model when executing in the context of a Player 
-When executing CloudScript through Player PlayStream Events, entering or leaving an segment or as part of a segment based scheduled task the context that is provided includes the following information:
+When executing a script through Player PlayStream Events, entering or leaving an segment or as part of a segment based scheduled task the context that is provided includes the following information:
 * The Player Profile
 * Boolean indicating if the player profile is trunctated.  
    * The Player Profile will be truncated if it is over 2048 bytes.  If this occurs you will need to use the profile APIs (either server, client or entity APIs) to retrieve the full profile.
-* The PlayStream event which triggered the CloudScript.
+* The PlayStream event which triggered the script.
 * A boolean that indicates whether a Playsteam event is sent as part of the function being executed
-* The functions arguements used when calling the CloudScript
+* The functions arguements used when calling the script
 
 ```C#
 // Models via Player PlayStream event, entering or leaving a 
@@ -115,9 +115,9 @@ public class PlayerPlayStreamFunctionExecutionContext : PlayerPlayStreamFunction
 ```
 
 ## Use the context model when executing via an Entity PlayStream Events, entering or leaving an entity segment or as part of an entity segment based scheduled task.
-When executing CloudScript through Entity PlayStream Events, entering or leaving an entity segment or as part of a entity segment based scheduled task the context that is provided includes the following information:
+When executing script through Entity PlayStream Events, entering or leaving an entity segment or as part of a entity segment based scheduled task the context that is provided includes the following information:
 * The Entity Profile
-* The PlayStream event which triggered the CloudScript.
+* The PlayStream event which triggered the script.
 * A boolean that indicates whether a Playsteam event is sent as part of the function being executed
 
 ```C#
