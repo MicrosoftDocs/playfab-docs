@@ -87,7 +87,7 @@ private void CallCSharpExecuteFunction(){
 
 ```
 
-### PlayFab Function Context, Variables and using the Server SDKs <a name="playfabfunctioncontext"></a>
+### PlayFab CloudScript Context, Variables and Server SDKs <a name="playfabfunctioncontext"></a>
 
 One advantage of using CloudScript using Azure Functions is that the PlayStream Event and Player Profile context is automatically passed to the Azure Function. On invocation of the Cloudscript you receive the context and in what context the Function was called. For example, from PlayStream Action or directly from the client. This includes information such as the entity profile on whose behalf the CloudScripts was invoked and potentially the PlayStream events used to invoke the CloudScript.
 
@@ -97,7 +97,7 @@ There are a couple of steps that you need to do if you are coding Functions with
 2. We have created some helpers that will ship with the cSharpSDK.  
 3. You need to edit your .csproj file and include `<DefineConstants>NETCOREAPP2_0</DefineConstants>` in your default PropertyGroup.
 ![Define Constants](media/define_constants.jpg)
-4. Execution of a script can occur through several methods (APIs, Scheduled Tasks, PlayStream Event, Segment Entering and Exit method).  The context of the execution is often important to implement your CloudScript. To use the context about how the CloudScript with executed see the [Using CloudScript context models tutorial](CloudScript-af-context.md).
+4. Execution of a script can occur through several methods (APIs, Scheduled Tasks, PlayStream Event, Segment Entering and Exit method).  The context of the execution is important to implement your CloudScript. See the [Using CloudScript context models tutorial](CloudScript-af-context.md) for details on how to use the context of the script.
 
 A hello world example is always nice, see the HelloWorld Sample below that you can use as your first Azure Function.
 

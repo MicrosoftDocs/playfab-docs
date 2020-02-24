@@ -94,7 +94,7 @@ When executing a script through Player PlayStream Events, entering or leaving an
    * The Player Profile will be truncated if it is over 2048 bytes.  If this occurs you will need to use the profile APIs (either server, client or entity APIs) to retrieve the full profile.
 * The PlayStream event which triggered the script.
 * A boolean that indicates whether a Playsteam event is sent as part of the function being executed
-* The functions arguements used when calling the script
+* The functions arguments used when calling the script
 
 ```C#
 // Models via Player PlayStream event, entering or leaving a 
