@@ -12,7 +12,7 @@ namespace PlayFab.Samples
         public string EntityToken { get; set; }
     }
 
-    // Models for execution via ExecuteFunction API
+    // Models  via ExecuteFunction API
     public class FunctionExecutionContext<T>
     {
         public PlayFab.ProfilesModels.EntityProfileBody CallerEntityProfile { get; set; }
@@ -25,7 +25,7 @@ namespace PlayFab.Samples
     {
     }
 
-    // Models for execution via Player PlayStream event, entering or leaving a 
+    // Models via Player PlayStream event, entering or leaving a 
     // player segment or as part of a player segment based scheduled task.
     public class PlayerPlayStreamFunctionExecutionContext<T>
     {
@@ -41,7 +41,7 @@ namespace PlayFab.Samples
     {
     }
 
-    // Models for execution via Scheduled task
+    // Models via Scheduled task
     public class PlayStreamEventHistory
     {
         public string ParentTriggerId { get; set; }
@@ -62,7 +62,7 @@ namespace PlayFab.Samples
     {
     }
 
-    // Models for execution via entity PlayStream event, entering or leaving an 
+    // Models via entity PlayStream event, entering or leaving an 
     // entity segment or as part of an entity segment based scheduled task.
     public class EventFullName
     {

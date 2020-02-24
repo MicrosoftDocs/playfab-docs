@@ -51,7 +51,7 @@ To begin using this feature you need to enable it.  Visit Automation -> CloudScr
 ## Using and Calling CloudScript using Azure Functions from your PlayFab Title
 
 > [!NOTE]
->  The examples code within the this guide will be written in Unity C# & Azure Function C# code.
+>  The example code in this guide are written in Unity C# & Azure Function C# code.
 
 Now that your function is registered, you can now call that function from within your client.
 
@@ -91,15 +91,15 @@ private void CallCSharpExecuteFunction(){
 
 One advantage of using CloudScript using Azure Functions is that the PlayStream Event and Player Profile context is automatically passed to the Azure Function. On invocation of the Cloudscript you receive the context and in what context the Function was called. For example, from PlayStream Action or directly from the client. This includes information such as the entity profile on whose behalf the CloudScripts was invoked and potentially the PlayStream events used to invoke the CloudScript.
 
-There are a couple of steps that you need to do if you are coding Functions without our [PlayFab Visual Studio Code Extension]()https://github.com/PlayFab/vscode-playfab-explorer). 
+There are a couple of steps that you need to do if you are coding Functions without our [PlayFab Visual Studio Code Extension](https://github.com/PlayFab/vscode-playfab-explorer). 
 
 1. You will need to install the PlayFab SDK via Package Manager. To do this open Terminal or CMD Console in Visual Studio Code and type: `dotnet add package PlayFabAllSDK`
 2. We have created some helpers that will ship with the cSharpSDK.  
 3. You need to edit your .csproj file and include `<DefineConstants>NETCOREAPP2_0</DefineConstants>` in your default PropertyGroup.
 ![Define Constants](media/define_constants.jpg)
-4. To use the context about how the CloudScript with executed see the [Using CloudScript context models tutorial](CloudScript-af-context.md) 
+4. CloudScript can be executioned through several methods (APIs, Scheduled Tasks, PlayStream Event, Segment Entering and Exit method).  The context of the execution is often important to implement your CloudScript. To use the context about how the CloudScript with executed see the [Using CloudScript context models tutorial](CloudScript-af-context.md).
 
-A hello world example is always nice,  see the below HelloWorld Sample that you can use as your first Azure Function. 
+A hello world example is always nice, see the HelloWorld Sample below that you can use as your first Azure Function.
 
 ```C#
 using System.Threading.Tasks;

@@ -11,8 +11,7 @@ ms.localizationpriority: medium
 ---
   
 # Tutorial: Using CloudScript context models
-CloudScript  can be executed through several mechanisms in PlayFab including execution through APIs, through scheduled tasks, through PlayStream events and through a player entering and exiting segments.  In many cases, the context in which the CloudScript is executed is important for how the CloudScript runs.  A simple example of this is knowing the Player ID of the player the CloudScript is being run on behalf of. The data model available in CloudScript in each of the context is different and provides important data used in your CloudScript.
-
+PlayFab executes CloudScripts through several mechanisms including execution through APIs, through scheduled tasks, through PlayStream events, and when a player enters and exits segments. In many cases, the context in which the cloud script executes is important to how it runs. An example of this is knowing the Player ID of the player on whose behalf the cloud script is being run. The context in which your cloud script is run determines the available data model and provides context specific data that is used in your CloudScript.
 In your CloudScript code you will need to reference each of these context models.  You can add individual models or use the file provided at the end of this tutorial.
 
 In this tutorial, you learn how to:
@@ -37,14 +36,14 @@ public class TitleAuthenticationContext
 ```
 
 ## Use the context model when executing via the ExecuteFunction API
-When executing CloudScript through the ExecuteFunction API the context that is provided includes the following information:
+When you use the the [ExecuteFunction API](https://docs.microsoft.com/rest/api/playfab/cloudscript/server-side-cloud-script/executefunction?view=playfab-rest) to execute a CloudScript, the context that is provided includes the following information:
 * The Entity Profile of the caller
 * The Title Authentication Context
-* A boolean indicating if a Playsteam event will be sent as part of the function being executed
-* The functions arguements used when calling the ExecuteFunction API
+* A boolean that indicates whether a Playsteam event is sent as part of the function being executed
+* The functions arguements used when calling the CloudScript
 
 ```C#
-// Models for execution via ExecuteFunction API
+// Models via ExecuteFunction API
 public class FunctionExecutionContext<T>
 {
     public PlayFab.ProfilesModels.EntityProfileBody CallerEntityProfile { get; set; }
@@ -59,15 +58,15 @@ public class FunctionExecutionContext : FunctionExecutionContext<object>
 ```
 
 ## Use the context model when executing via Scheduled Task
-When executing CloudScript through [Scheduled Tasks](https://docs.microsoft.com/gaming/playfab/features/automation/scheduled-tasks/) the context that is provided includes the following information:
+When you [Scheduled Tasks](https://docs.microsoft.com/gaming/playfab/features/automation/scheduled-tasks/) to execute a CloudScript, the context that is provided includes the following information:
 * The Scheduled Task Name Id
 * The event history which includes a stack of PlayStream Events
 * The title Authentication Context
-* A boolean indicating if a Playsteam event will be sent as part of the function being executed
-* The functions arguements used when calling the ExecuteFunction API
+* A boolean that indicates whether a Playsteam event is sent as part of the function being executed
+* The functions arguements used when calling the CloudScript
 
 ```C#
-// Models for execution via Scheduled task
+// Models via Scheduled task
 public class PlayStreamEventHistory
 {
     public string ParentTriggerId { get; set; }
@@ -95,11 +94,11 @@ When executing CloudScript through Player PlayStream Events, entering or leaving
 * Boolean indicating if the player profile is trunctated.  
    * The Player Profile will be truncated if it is over 2048 bytes.  If this occurs you will need to use the profile APIs (either server, client or entity APIs) to retrieve the full profile.
 * The PlayStream event which triggered the CloudScript.
-* A boolean indicating if a Playsteam event will be sent as part of the function being executed
-* The functions arguements used when calling the ExecuteFunction API
+* A boolean that indicates whether a Playsteam event is sent as part of the function being executed
+* The functions arguements used when calling the CloudScript
 
 ```C#
-// Models for execution via Player PlayStream event, entering or leaving a 
+// Models via Player PlayStream event, entering or leaving a 
 // player segment or as part of a player segment based scheduled task.
 public class PlayerPlayStreamFunctionExecutionContext<T>
 {
@@ -120,11 +119,10 @@ public class PlayerPlayStreamFunctionExecutionContext : PlayerPlayStreamFunction
 When executing CloudScript through Entity PlayStream Events, entering or leaving an entity segment or as part of a entity segment based scheduled task the context that is provided includes the following information:
 * The Entity Profile
 * The PlayStream event which triggered the CloudScript.
-* A boolean indicating if a Playsteam event will be sent as part of the function being executed
-* The functions arguements used when calling the ExecuteFunction API
+* A boolean that indicates whether a Playsteam event is sent as part of the function being executed
 
 ```C#
-// Models for execution via Entity PlayStream event, entering or leaving an 
+// Models via Entity PlayStream event, entering or leaving an 
 // entity segment or as part of an entity segment based scheduled task.
 public class EventFullName
 {
