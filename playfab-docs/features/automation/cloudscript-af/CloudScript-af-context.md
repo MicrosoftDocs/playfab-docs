@@ -170,4 +170,4 @@ public class EntityPlayStreamFunctionExecutionContext : EntityPlayStreamFunction
 ```
 
 > [!NOTE]
-> You can download the [full CloudScript using Azure Functions helper class](.\CS2AFHelperClasses.cs).
+> You can download the [full CloudScript using Azure Functions helper class](CS2AFHelperClasses.cs).
