@@ -11,8 +11,7 @@ ms.localizationpriority: medium
 ---
   
 # Tutorial: Using CloudScript context models
-PlayFab executes CloudScripts through several mechanisms including execution through APIs, through scheduled tasks, through PlayStream events, and when a player enters and exits segments. In many cases, the context in which the cloud script executes is important to how it runs. An example of this is knowing the Player ID of the player on whose behalf the cloud script is being run. The context in which your cloud script is run determines the available data model and provides context specific data that is used in your CloudScript.
-In your CloudScript code you will need to reference each of these context models.  You can add individual models or use the file provided at the end of this tutorial.
+PlayFab executes scripts through several mechanisms including execution through APIs, through scheduled tasks, through PlayStream events, and when a player enters and exits segments. In many cases, the context in which the script executes is important to how it runs. An example of this is knowing the Player ID of the player on whose behalf the script is being run. The context in which your script is run determines the available data model and provides context specific data that is used in your script.
 
 In this tutorial, you learn how to:
 
