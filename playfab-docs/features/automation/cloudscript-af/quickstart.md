@@ -97,7 +97,7 @@ There are a couple of steps that you need to do if you are coding Functions with
 2. We have created some helpers that will ship with the cSharpSDK.  
 3. You need to edit your .csproj file and include `<DefineConstants>NETCOREAPP2_0</DefineConstants>` in your default PropertyGroup.
 ![Define Constants](media/define_constants.jpg)
-4. CloudScript can be executioned through several methods (APIs, Scheduled Tasks, PlayStream Event, Segment Entering and Exit method).  The context of the execution is often important to implement your CloudScript. To use the context about how the CloudScript with executed see the [Using CloudScript context models tutorial](CloudScript-af-context.md).
+4. Execution of a script can occur through several methods (APIs, Scheduled Tasks, PlayStream Event, Segment Entering and Exit method).  The context of the execution is often important to implement your CloudScript. To use the context about how the CloudScript with executed see the [Using CloudScript context models tutorial](CloudScript-af-context.md).
 
 A hello world example is always nice, see the HelloWorld Sample below that you can use as your first Azure Function.
 

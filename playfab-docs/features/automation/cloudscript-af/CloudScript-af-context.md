@@ -23,7 +23,7 @@ In this tutorial, you learn how to:
 > * Use the context model when executing in the context of an Entity.
 
 ## Use the shared Title Authentication context model
-No matter the method for executing a script the Title Authentication context is always provided.  This includes the Title ID and Entity Token (see [GetEntityToken](https://docs.microsoft.com/rest/api/playfab/authentication/authentication/getentitytoken?view=playfab-rest) for more details) used to execute the CloudScript.  Knowing this context allows you to make additional API calls in your CloudScript into PlayFab using the Server APIs.
+No matter the method for executing a script the Title Authentication context is always provided.  This includes the Title ID and Entity Token (see [GetEntityToken](https://docs.microsoft.com/rest/api/playfab/authentication/authentication/getentitytoken?view=playfab-rest) for more details) used to execute the script.  Knowing this context allows you to make additional API calls in your script into PlayFab using the Server APIs.
 
 ```C#
 // Shared models
@@ -35,11 +35,11 @@ public class TitleAuthenticationContext
 ```
 
 ## Use the context model when executing via the ExecuteFunction API
-When you use the the [ExecuteFunction API](https://docs.microsoft.com/rest/api/playfab/cloudscript/server-side-cloud-script/executefunction?view=playfab-rest) to execute a CloudScript, the context that is provided includes the following information:
+When you use the the [ExecuteFunction API](https://docs.microsoft.com/rest/api/playfab/cloudscript/server-side-cloud-script/executefunction?view=playfab-rest) to execute a script, the context that is provided includes the following information:
 * The Entity Profile of the caller
 * The Title Authentication Context
 * A boolean that indicates whether a Playsteam event is sent as part of the function being executed
-* The functions arguements used when calling the script
+* The functions arguments used when calling the script
 
 ```C#
 // Models via ExecuteFunction API
@@ -62,7 +62,7 @@ When you [Scheduled Tasks](https://docs.microsoft.com/gaming/playfab/features/au
 * The event history which includes a stack of PlayStream Events
 * The title Authentication Context
 * A boolean that indicates whether a Playsteam event is sent as part of the function being executed
-* The functions arguements used when calling the script
+* The functions argument used when calling the script
 
 ```C#
 // Models via Scheduled task
@@ -167,4 +167,4 @@ public class EntityPlayStreamFunctionExecutionContext : EntityPlayStreamFunction
 ```
 
 > [!NOTE]
-> You can download the [full CloudScript using Azure Functions helper class](https://github.com/PlayFab/PlayFab-Samples/blob/master/Samples/CSharp/AzureFunctions/CS2AFHelperClasses.cs).
+> You can download the full [CloudScript using Azure Functions helper class](https://github.com/PlayFab/PlayFab-Samples/blob/master/Samples/CSharp/AzureFunctions/CS2AFHelperClasses.cs).
