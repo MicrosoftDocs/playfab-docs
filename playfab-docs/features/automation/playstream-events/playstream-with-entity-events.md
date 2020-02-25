@@ -20,7 +20,7 @@ In the classic event model, there existed different events and APIs for each typ
 
 Entity events support the following PlayFab features:
 
-* **Batches of events** - Write multiple entity events to PlayStream at once with the [WriteEvents](https://docs.microsoft.com/rest/api/playfab/events/playstream-events?view=playfab-rest) API. 
+* **Batches of events** - Write multiple entity events to PlayStream at once with the [WriteEvents](https://docs.microsoft.com/en-us/rest/api/playfab/events/playstream-events/writeevents) API.
 * **A real-time rules engine** - Set up rules that react in real time to entity events flowing through PlayStream, and trigger a variety of [actions](../actions-rules/index.md). PlayFab supports the following actions on entity events:
   - Run custom CloudScript (including CloudScript with Azure functions)
   - Send emails

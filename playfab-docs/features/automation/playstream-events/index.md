@@ -24,7 +24,7 @@ PlayStream offers the following features to developers:
 Let’s look at these features in more detail.
 
 > [!NOTE]
-> PlayStream now offers support for **entity events** as well as classic PlayStream events. To learn more, please reference the [PlayStream with entity events](https://docs.microsoft.com/gaming/playfab/features/automation/playstream-events/playstream-with-entity-events/) article after you finish this one.
+> PlayStream now offers support for **entity events** as well as classic PlayStream events. To learn more, please reference the [PlayStream with entity events](playstream-with-entity-events.md) article after you finish this one.
 
 ## PlayStream event pipeline and monitor
 
@@ -76,11 +76,11 @@ PlayStream Webhooks are POST calls to your provided endpoint, which pass along a
 
 ## Event History
 
-You can also access a historical archive of events. By default, events are kept for a certain period of time that depends on your service tier. You can view the event history in two places - you can view all events for your title in the **PlayStream Event History** tab, or only events for a particular player on that player’s **PlayStream** tab.
+You can also access a historical archive of events. By default, events are kept for a certain period of time that depends on your service tier. You can view the event history in two places - you can view all events for your title in the **PlayStream Event History** tab, or only events for a particular player on that player’s **PlayStream** tab. 
 
 ![Event History](media/playstream-eventHistory.png)
 
-You can select a particular event to see details only for that event, including its delivery history. For example, the event shown below has been delivered to three different Marketplace Add-ons - **Appuri** (both legacy and current), and **Segment.com**.
+You can select the arrow to the left of a particular event to see details only for that event, including its delivery history. For example, the event shown below has been delivered to three different Marketplace Add-ons - **Appuri** (both legacy and current), and **Segment.com**. You can click on the event name to filter the list of events by all events of that name. 
 
 ![Event History Details](media/playstream-eventHistoryDetails.png)
 
