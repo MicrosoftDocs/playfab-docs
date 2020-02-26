@@ -4,7 +4,7 @@ author: williacj
 description: PlayFab CloudScript using Azure Functions Quickstart Guide
 ms.author: cjwill
 ms.date: 02/10/2020
-ms.topic: article
+ms.topic: quickstart
 ms.prod: playfab
 keywords: playfab, automation, cloudscript, azure functions
 ms.localizationpriority: medium
@@ -44,12 +44,14 @@ To begin using this feature you need to enable it.  Visit Automation -> CloudScr
 3. Put the name and Function URL.  The URL can be found in the output of your deployment.
 ![Deployment Output](media/azure_func_deployment.jpg)
 
-> **TIP**: To learn more about deploying azure functions, see [Deploy Azure Functions from Visual Studio Code](https://code.visualstudio.com/tutorials/functions-extension/deploy-app).
+> [!TIP] 
+> To learn more about deploying azure functions, see [Deploy Azure Functions from Visual Studio Code](https://code.visualstudio.com/tutorials/functions-extension/deploy-app).
 
 
 ## Using and Calling CloudScript using Azure Functions from your PlayFab Title
 
-> **NOTE:** The examples code within the this guide will be written in Unity C# & Azure Function C# code.
+> [!NOTE]
+>  The example code in this guide are written in Unity C# & Azure Function C# code.
 
 Now that your function is registered, you can now call that function from within your client.
 
@@ -85,42 +87,43 @@ private void CallCSharpExecuteFunction(){
 
 ```
 
-### PlayFab Function Context, Variables and using the Server SDKs <a name="playfabfunctioncontext"></a>
+### PlayFab CloudScript Context, Variables and Server SDKs <a name="playfabfunctioncontext"></a>
 
 One advantage of using CloudScript using Azure Functions is that the PlayStream Event and Player Profile context is automatically passed to the Azure Function. On invocation of the Cloudscript you receive the context and in what context the Function was called. For example, from PlayStream Action or directly from the client. This includes information such as the entity profile on whose behalf the CloudScripts was invoked and potentially the PlayStream events used to invoke the CloudScript.
 
-There are a couple of steps that you need to do if you are coding Functions without our [PlayFab Visual Studio Code Extension]()https://github.com/PlayFab/vscode-playfab-explorer). 
+There are a couple of steps that you need to do if you are coding Functions without our [PlayFab Visual Studio Code Extension](https://github.com/PlayFab/vscode-playfab-explorer). 
 
 1. You will need to install the PlayFab SDK via Package Manager. To do this open Terminal or CMD Console in Visual Studio Code and type: `dotnet add package PlayFabAllSDK`
 2. We have created some helpers that will ship with the cSharpSDK.  
 3. You need to edit your .csproj file and include `<DefineConstants>NETCOREAPP2_0</DefineConstants>` in your default PropertyGroup.
 ![Define Constants](media/define_constants.jpg)
+4. Execution of a script can occur through several methods (APIs, Scheduled Tasks, PlayStream Event, Segment Entering and Exit method).  The context of the execution is important to implement your CloudScript. See the [Using CloudScript context models tutorial](CloudScript-af-context.md) for details on how to use the context of the script.
 
-A hello world example is always nice,  see the below HelloWorld Sample that you can use as your first Azure Function.
+A hello world example is always nice, see the HelloWorld Sample below that you can use as your first Azure Function.
 
 ```C#
-using System.Net.Http;
 using System.Threading.Tasks;
 using Microsoft.Azure.WebJobs;
 using Microsoft.Azure.WebJobs.Extensions.Http;
+using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
-using PlayFab;
-using PlayFab.Plugins.CloudScript;
+using Newtonsoft.Json;
+using PlayFab.Samples;
 
-namespace PlayFabCS2AFTests.HelloWorld
+namespace PlayFabCS2AFSample.HelloWorld
 {
     public static class HelloWorld
     {
         [FunctionName("HelloWorld")]
         public static async Task<dynamic> Run(
-            [HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route = null)] HttpRequestMessage req,
+            [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)] HttpRequest req,
             ILogger log)
         {
-            /* Create the function execution's context through the request */
-            var context = await FunctionContext<dynamic>.Create(req);
-            var args = context.FunctionArgument;
+            FunctionExecutionContext<dynamic> context = JsonConvert.DeserializeObject<FunctionExecutionContext<dynamic>>(await req.ReadAsStringAsync());
 
-            var message = $"Hello {context.CurrentPlayerId}!";
+            dynamic args = context.FunctionArgument;
+
+            var message = $"Hello {context.CallerEntityProfile.Lineage.MasterPlayerAccountId}!";
             log.LogInformation(message);
 
             dynamic inputValue = null;
@@ -135,14 +138,12 @@ namespace PlayFabCS2AFTests.HelloWorld
         }
     }
 }
-
 ```
 
 As you can see in the above, the CurrentPlayerId of the caller is available like in our traditional CloudScript implementation.  Parameters you have passed in the FunctionParameters field will be available in the *args*.
 
-> **NOTE:** You will need to call this HelloWorld Azure Function via ExecuteFunction from an SDK.
-
-> **NOTE:** In the PlayStream event, sent back from the CloudScript function, the Player Profile is returned.  If the returned Player Profile is over 2048 bytes then the profile will be truncated with a property set indicating it has been truncated.  If this occurs you will need to use the profile APIs (either server, client or entity APIs) to retrieve the full profile.
+> [!NOTE]
+> You will need to call this HelloWorld Azure Function via ExecuteFunction from an SDK.
 
 ## Azure Function Rules
 

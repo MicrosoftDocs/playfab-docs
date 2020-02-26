@@ -68,7 +68,7 @@ PlayFab asynchronously waits for these functions to complete, allowing them to r
 
 **_PlayFab Visual Studio Extension_**
 
-The PlayFab Visual Studio Code Extension will roll out soon with a GitHub open source repository for community involvement.
+The [PlayFab Visual Studio Code Extension](https://marketplace.visualstudio.com/items?itemName=PlayFab.playfab-explorer) will roll out soon with a [GitHub open source repository](https://github.com/PlayFab/vscode-playfab-explorer) for community involvement.
 
 **_Insights Management Commands_**
 
