@@ -10,3 +10,5 @@
     href: actions-rules/toc.yml
   - name: Scheduled tasks
     href: scheduled-tasks/toc.yml
+  - name: Playstream
+    href: playstream-events/toc.yml
