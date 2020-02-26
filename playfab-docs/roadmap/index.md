@@ -19,7 +19,9 @@ As always, we want your feedback. The [Feature Requests](https://community.playf
 
 Please note that while this roadmap reflects our aspirations, features and timelines are subject to change without notice.
 
-**Coming Soon:**
+***
+
+## **Coming Soon:**
 
 **_PlayFab in China_**
 
@@ -41,7 +43,9 @@ These pages will allow you to view costs for each day.
 
 We’re working on management experiences for Linux builds and additional graphs for smarter administration. 
 
-**Coming Later:**
+***
+
+## **Coming Later:**
 
 **_General availability of improved Leaderboards_**
 
@@ -59,7 +63,9 @@ The initial release of a new stand-alone PlayFab Insights service will give you 
 
 These services will begin to move from private to public preview in the first half of 2020. Monetization provides redemption, wallet and inventory capabilities while UGC provides a highly scalable catalog plus content moderation, ratings and reviews. These services are used to power the Minecraft Marketplace and the Mixer Sparks system supporting millions of transactions and the consumption of user generated content at scale. 
 
-**Available Now:**
+***
+
+## **Available Now:**
 
 **_CloudScript with Azure Functions_**
 
