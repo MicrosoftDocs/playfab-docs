@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 You can deploy PlayFab multiplayer servers to more than a dozen Azure regions. There are two reasons to do this:
 
-1. Additional regions provide redundancy, so if a single Azure region fails, players can access servers on other regions.
+1. Additional regions provide redundancy. If a single Azure region fails, players can access servers in other regions.
 2. Additional regions allow players to access servers that are “nearby” and deliver low-latency connectivity.
 
 When you call [RequestMultiplayerServer](xref:titleid.playfabapi.com.multiplayer.multiplayerserver.requestmultiplayerserver), you specify a ranked list of Azure regions that PlayFab uses to fulfill the request. PlayFab will attempt to fulfill the request using the #1 ranked region, but if there aren't servers standing by in that region, or the region has some other fault, a sub-optimal region further down the list will be attempted.
@@ -32,11 +32,17 @@ This is the typical flow for using these beacons in the context of a player devi
 1. Login the player to PlayFab. This is typically done with a [LoginWithCustomID](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid) or another login API.
 2. Call [ListQoSServers](xref:titleid.playfabapi.com.multiplayer.multiplayerserver.listqosservers). This provides hostnames to PlayFab’s QoS beacons. A typical implementation might have this procedure occur on the **Multiplayer Menu** page for the game.
 3. Create a UDP socket.
-4. Send a single UDP datagram to port 3075 on the QoS server. The message content must start with 2 bytes of 255 (1111 1111 1111 1111).  
-5. The server will reply with a single datagram, with the message contents having the first 2 bytes "flipped" to **0** (**0000 0000 0000 0000**). The rest of the datagram contents will be copied from the initial ping.
+4. Send a single UDP datagram to port 3075 on the QoS server. The message content must start with 0xFFFF (1111 1111 1111 1111).  
+5. The server will reply with a single datagram, with the message contents having the first 2 bytes "flipped" to **0x0000** (0000 0000 0000 0000). The rest of the datagram contents will be copied from the initial ping.
 6. Measure the time between sending the UDP message and receiving a response.
 
-## Using the quality-of-service C++ SDK
+## Using the quality-of-service SDK
+### C#
+Playfab provides an [implementation](https://github.com/PlayFab/CSharpSDK/blob/master/PlayFabSDK/source/Qos/PlayFabQosApi.cs) of the QoS ping code in the [C# SDK](https://github.com/PlayFab/CSharpSDK). You title can call `PlayFabQosApi.GetQosResultAsync()` to get a `QosResult` which will contain a sorted list of regions along with the average ping time to each region.
+
+A sample implementation named [WindowsRunnerCSharp](https://github.com/PlayFab/gsdkSamples/tree/master/WindowsRunnerCSharp#running-the-client) is available in the [gsdkSamples repository](https://github.com/PlayFab/gsdkSamples).
+
+### C++
 
 PlayFab provides C++ sub-routines demonstrating this QoS flow in the [PlayFab cross-platform (CPP) SDK](https://github.com/PlayFab/XPlatCppSdk). You can build the SDK and use it as a helper library in your PC games, or use the code as an example for other platforms.
 
