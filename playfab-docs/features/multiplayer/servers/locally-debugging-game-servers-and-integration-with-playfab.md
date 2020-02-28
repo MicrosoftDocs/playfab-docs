@@ -20,7 +20,7 @@ Running them as containerized applications enables running and debugging the ser
 
 The PlayFab local debugging toolset includes a mock PlayFab VmAgent that provides mock responses to the GSDK and verifies whether your game server is integrated with the GSDK correctly. With the mock responses, the VmAgent cycles the game server through various states in its lifecycle on the PlayFab Multiplayer platform.
 
-The agent can also be configured to run the game server as a containerized application and verify that your game server is packaged with all the required dependencies and will run without issues on the PlayFab Multiplayer platform.
+You can configure the agent cto run the game server as a containerized application and verify that your game server is packaged with all the required dependencies and will run without issues on the PlayFab Multiplayer platform.
 
 ## Basic Setup
 
@@ -31,17 +31,17 @@ The agent can also be configured to run the game server as a containerized appli
   > Avoid this common mistake - do not accidentally zip a folder *within* a folder in the zip. After zipping, browse the zip folder and double-check that your compression software did not add an extra layer of file hierarchy.
 
 - Download the [local debugging toolset](https://github.com/PlayFab/LocalMultiplayerAgent/releases) and extract it to a folder of your choice (such as *C:\PlayFabVmAgent*).
-- Navigate to location of the extracted the folder and open the *MultiplayerSettings.json* file, in a text editor (such as [Visual Studio Code](https://code.visualstudio.com/download)). Update the following properties:  
+- Navigate to the location of the extracted folder and open the *MultiplayerSettings.json* file in a text editor (such as [Visual Studio Code](https://code.visualstudio.com/download)). Update the following properties:  
   - `LocalFilePath` - Full Local Path (on your workstation) to the game server asset zip file created earlier, for example: *D:\\\\MyAmazingGame\\\\asset.zip* (note that backslashes need to be escaped for JSON formatting).
-  - `StartGameCommand` - The full path to the game server executable within the container. For example, if the name of the executable is mygame.exe, a sample path would be *C:\\\\Assets\\\\mygame.exe*. The paths for the StartGameCommand are different for a Process and a Container. The StartGameCommand path for a container is an absolute path to a resource in the container or asset folder. The StartGameCommand path for a process is a relative path where the working directory will be the first asset specified.
-  - `PortMappingsList` - These are the ports that will be available to your game while running. `NodePort` is the port that will be opened on your workstation, `GamePort.Number` is the port that your game server needs to bind to when running in a container. Update the GamePort section to match the protocol and port at which your game server is listening for clients. If your game server needs multiple ports, copy/paste the existing port configuration and increment `NodePort` then update `GamePort.Number` and `GamePort.Name` to the required port. When running as a process, `GamePort.Number` is ignored, your process should bind to NodePort. To handle both cases, do one of the following:
+  - `StartGameCommand` - The full path to the game server executable within the container. For example, if the name of the executable is *mygame.exe*, a sample path would be *C:\\\\Assets\\\\mygame.exe*. The paths for the StartGameCommand are different for a Process and a Container. The StartGameCommand path for a container is an absolute path to a resource in the container or asset folder. The StartGameCommand path for a process is a relative path where the working directory will be the first asset specified.
+  - `PortMappingsList` - These are the ports that are available to your game while running. `NodePort` is the port that is opened on your workstation, `GamePort.Number` is the port that your game server needs to bind to when running in a container. Update the GamePort section to match the protocol and port at which your game server is listening for clients. If your game server needs multiple ports, copy/paste the existing port configuration and increment `NodePort` then update `GamePort.Number` and `GamePort.Name` to the required port. When running as a process, `GamePort.Number` is ignored, your process should bind to NodePort. To handle both cases, do one of the following:
     - Set the ports to the same value
-    - Check the gsdk config at runtime for the value with the key `GamePort.Name` which always returns the correct port to bind against.
+    - Check the GSDK config at runtime for the value with the key `GamePort.Name` which always returns the correct port to bind against.
   
-- There are additional fields in the *MultiplayerSettings.json* file you may want to edit:
-  - `ResourceLimits` (optional) - If specified, docker limits CPU/memory usage. Warning: If your server goes over the allowed memory, it will be killed. ResourceLimits can only be specified in container mode.
-  - `SessionCookie` (optional) - Any session cookie that gets passed to your game server as part of the [RequestMultiplayerServer API](xref:titleid.playfabapi.com.multiplayer.multiplayerserver.requestmultiplayerserver) call.
-  - `OutputFolder` (optional) -  Path to a drive or folder where the outputs and config files are generated. Ensure there is sufficient space available since the game server will be extracted under this path. If not specified, the agent folder is used.
+- There are additional fields in the *MultiplayerSettings.json* file you might want to edit:
+  - `ResourceLimits` (optional) - If specified, docker limits CPU/memory usage. Warning: If your server goes over the allowed memory, it is killed. ResourceLimits can only be specified in container mode.
+  - `SessionCookie` (optional) - Any session cookie that is passed to your game server as part of the [RequestMultiplayerServer API](xref:titleid.playfabapi.com.multiplayer.multiplayerserver.requestmultiplayerserver) call.
+  - `OutputFolder` (optional) -  Path to a drive or folder where the outputs and config files are generated. Ensure that there is sufficient space available since the game server will be extracted under this path. If not specified, the agent folder is used.
   - `MountPath` - The path within the container at which to mount the asset. This field does not need to be specified when running in process mode. We recommend using the sample value - *C:\\\\Assets* (note that backslashes need to be escaped for JSON formatting).
   - `AgentListeningPort` - Specifies the port to which the agent binds to communicate with the game server. Any open port will work, if you have another process binding to 56001 you must change this value (or kill the other process).
 
@@ -51,7 +51,7 @@ The agent can also be configured to run the game server as a containerized appli
 - In a Powershell window (as Administrator):  
   - Change your working directory to the folder where the toolset was extracted.
   - Run *MockVmAgent.exe*. At this point, **MockVmAgent** sets up the http listener, unzips the game asset, and starts the game server in a separate process. **MockVmAgent** then waits for heartbeats from the GSDK integrated with your game server.
-- If the GSDK has been integrated correctly, you will see the **MockVmAgent** print the following outputs:  
+- If the GSDK is integrated correctly, **MockVmAgent** prints the following outputs:  
   - `CurrentGameState - Initializing` (this is optional and may not show up if your game server directly calls `GSDK::ReadyForPlayers` and does not call `GSDK::Start`)
   - `CurrentGameState - StandingBy`
   - `CurrentGameState - Active`
@@ -76,15 +76,15 @@ After `NumHeartBeatsForActivateResponse` heartbeats, **MockVmAgent** requests th
 
 - Ensure that Docker is set to [use Windows Containers](https://docs.docker.com/docker-for-windows/#switch-between-windows-and-linux-containers)
 - In a Powershell window (as Administrator):  
-  - **cd** in to the folder where the toolset was extracted.  
-  - Run *Setup.ps1* which will set up docker networks, add firewall rules to communicate with **MockVmAgent**, and pull down the PlayFab docker image from [Microsoft/PlayFab-Multiplayer](https://hub.docker.com/r/microsoft/playfab-multiplayer/). Note that the first time the script runs, it can take a few minutes to download the container image.
+  - Navigate to the folder where the toolset was extracted.  
+  - Run *Setup.ps1* which sets up the docker networks, add firewall rules to communicate with **MockVmAgent**, and pull down the PlayFab docker image from [Microsoft/PlayFab-Multiplayer](https://hub.docker.com/r/microsoft/playfab-multiplayer/). Note that the first time the script runs, it can take a few minutes to download the container image.
       > [!NOTE]
     > To run this setup successfully, you may have to configure the firewall of any 3rd party antivirus program (such as McAfee, Norton, or Avira) that you have installed.  
 
 ### Running the game server within a container
 
 - In the *MultiplayerSettings.json* file, set `RunContainer` to `true`.
-- Open a **Powershell** window (as Administrator) in the folder where the toolset was extracted (*C:\PlayFabVmAgent*) and run `MockVmAgent.exe`. This should start the game server within a container. Eventually, you should see game state change output in the Powershell window (just like in the Verifying GSDK integration section above).
+- Open a **Powershell** window (as Administrator) in the folder where the toolset was extracted (*C:\PlayFabVmAgent*) and run `MockVmAgent.exe`. This startd the game server within a container. Eventually, you should see game state change output in the Powershell window (just like in the Verifying GSDK integration section above).
 
 ### Testing connection to your game server running within a container
 
@@ -94,11 +94,11 @@ After `NumHeartBeatsForActivateResponse` heartbeats, **MockVmAgent** requests th
 
 ### Troubleshooting
 
-- All logs are located under `OutputFolder` specified in the *MultiplayerSettings.json* file. **MockVmAgent** creates a new folder each time it is started, with the timestamp as folder name. All game server logs emitted via GSDK are located within the GameLogs folder.  
+- All logs are located under `OutputFolder` that is specified in the *MultiplayerSettings.json* file. **MockVmAgent** creates a new folder each time it is started, with the timestamp as folder name. All game server logs emitted via GSDK are located within the GameLogs folder.  
 If the game server is running in a container, there might be an additional level of directory hierarchy to sift through.
 - The GSDK writes debug logs to the GameLogs folder. These logs are located within the GameLogs folder along with the logs output by the game server.
 - Ensure firewalls (windows and other anti-virus) are configured to allow the traffic over the ports.
-- If you get an error similar to: `Docker API responded with status code=InternalServerError, response={"message":"failed to create endpoint <container_name> on network playfab: hnsCall failed in Win32: The specified port already exists". It is likely there is already a container running on the specified port.` This can happen if **MockVmAgent** exits prematurely, Find the container that is running via the command `docker ps`, and then kill it using `docker kill <container_name>`.
+- If you get an error similar to: `Docker API responded with status code=InternalServerError, response={"message":"failed to create endpoint <container_name> on network playfab: hnsCall failed in Win32: The specified port already exists". It is likely there is already a container running on the specified port.` This can happen if **MockVmAgent** exits prematurely. Use the command `docker ps` to find the container that is running, and then kill it using `docker kill <container_name>`.
 - If you get an error that contains `Failed to find network 'playfab'`. Try rerunning *Setup.ps1*
 
 ### Known Limitations
