@@ -95,7 +95,7 @@ The MockVmAgent requests the game server to terminate (via GSDK) after a configu
 ### Troubleshooting
 
 - All logs are located under `OutputFolder` specified in the *MultiplayerSettings.json* file. MockVmAgent creates a new folder each time it is started, with the timestamp as folder name. All game server logs emitted via GSDK are located within the GameLogs folder.  
-If the game server in running in a container, there might be an additional level of directory hierarchy to sift through.
+If the game server is running in a container, there might be an additional level of directory hierarchy to sift through.
 - The GSDK writes debug logs to the GameLogs folder. These logs are located within the GameLogs folder along with the logs output by the game server.
 - Ensure firewalls (windows and other anti-virus) are configured to allow the traffic over the ports.
 - If you get an error similar to: `Docker API responded with status code=InternalServerError, response={"message":"failed to create endpoint <container_name> on network playfab: hnsCall failed in Win32: The specified port already exists". It is likely there is already a container running on the specified port.` This can happen if the MockVmAgent exits prematurely, Find the container that is running via the command `docker ps`, and then kill it using `docker kill <container_name>`.

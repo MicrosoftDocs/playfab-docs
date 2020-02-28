@@ -42,14 +42,14 @@ The PlayFab [C# SDK](https://github.com/PlayFab/CSharpSDK) and [cross-platform (
 Each API returns a `QosResult` which contains a sorted list of regions along with the average ping time to each region.
 
 ### C#
-A sample implementation, [WindowsRunnerCSharpClient](https://github.com/PlayFab/gsdkSamples/tree/master/WindowsRunnerCSharp#running-the-client), is available in the [gsdkSamples repository](https://github.com/PlayFab/gsdkSamples).
+There is a QoS APIs available in the [C# SDK](https://github.com/PlayFab/CSharpSDK). A sample implementation, [WindowsRunnerCSharpClient](https://github.com/PlayFab/gsdkSamples/tree/master/WindowsRunnerCSharp#running-the-client), is available in the [gsdkSamples repository](https://github.com/PlayFab/gsdkSamples).
 
 The code is located in [*PlayFabQosApi.cs*](https://github.com/PlayFab/CSharpSDK/blob/master/PlayFabSDK/source/Qos/PlayFabQosApi.cs).
 
 Parameters:
 * `timeoutMs` - The timeout (in milliseconds) applied to each ping attempt (Default: 250ms). 
-* `pingsPerRegion` - The number of ping attempts to make against each region (Default: 10). Increasing this number will increase execution time, but reduce the change of inaccurate results.
-* `degreeOfParallelism` - The maximum number of pings to make in parallel (Default: 4). Increasing this number will reduce execution time, but network contention can cause inaccurate results if this number is too big.
+* `pingsPerRegion` - The number of ping attempts to make against each region (Default: 10). Increasing this number will increase execution time, but reduce the chance of inaccurate results.
+* `degreeOfParallelism` - The maximum number of pings to make in parallel (Default: 4). Increasing this number will reduce execution time, but network contention can cause inaccurate results if this number is too large.
 
 ```csharp
         public async Task<QosResult> GetQosResultAsync(
@@ -60,7 +60,7 @@ Parameters:
 ```
 
 ### C++
-These are the two QoS APIs available in the [PlayFab cross-platform (CPP) SDK](https://github.com/PlayFab/XPlatCppSdk), as noted below.
+There are the two QoS APIs available in the [PlayFab cross-platform (CPP) SDK](https://github.com/PlayFab/XPlatCppSdk).
 
 The code is located in [*PlayFabQosApi.cpp*](https://github.com/PlayFab/XPlatCppSdk/blob/master/code/source/playfab/QoS/PlayFabQoSApi.cpp). 
 
