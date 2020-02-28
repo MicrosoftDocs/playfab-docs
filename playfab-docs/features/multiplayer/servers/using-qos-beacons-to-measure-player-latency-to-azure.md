@@ -37,16 +37,36 @@ This is the typical flow for using these beacons in the context of a player devi
 6. Measure the time between sending the UDP message and receiving a response.
 
 ## Using the quality-of-service SDK
-### C#
-Playfab provides an [implementation](https://github.com/PlayFab/CSharpSDK/blob/master/PlayFabSDK/source/Qos/PlayFabQosApi.cs) of the QoS ping code in the [C# SDK](https://github.com/PlayFab/CSharpSDK). You title can call `PlayFabQosApi.GetQosResultAsync()` to get a `QosResult` which will contain a sorted list of regions along with the average ping time to each region.
+The PlayFab [C# SDK](https://github.com/PlayFab/CSharpSDK) and [cross-platform (CPP) SDK](https://github.com/PlayFab/XPlatCppSdk) provide an implementation of the QoS ping code. You can build an SDK and use it as a helper library in your PC games, reference the C# NuGet package, or use the code as an example for other platforms.
 
-A sample implementation named [WindowsRunnerCSharp](https://github.com/PlayFab/gsdkSamples/tree/master/WindowsRunnerCSharp#running-the-client) is available in the [gsdkSamples repository](https://github.com/PlayFab/gsdkSamples).
+Each API returns a `QosResult` which contains a sorted list of regions along with the average ping time to each region.
+
+### C#
+A sample implementation, [WindowsRunnerCSharpClient](https://github.com/PlayFab/gsdkSamples/tree/master/WindowsRunnerCSharp#running-the-client), is available in the [gsdkSamples repository](https://github.com/PlayFab/gsdkSamples).
+
+The code is located in [*PlayFabQosApi.cs*](https://github.com/PlayFab/CSharpSDK/blob/master/PlayFabSDK/source/Qos/PlayFabQosApi.cs).
+
+Parameters:
+* `timeoutMs` - The timeout (in milliseconds) applied to each ping attempt (Default: 250ms). 
+* `pingsPerRegion` - The number of ping attempts to make against each region (Default: 10). Increasing this number will increase execution time, but reduce the change of inaccurate results.
+* `degreeOfParallelism` - The maximum number of pings to make in parallel (Default: 4). Increasing this number will reduce execution time, but network contention can cause inaccurate results if this number is too big.
+
+```csharp
+        public async Task<QosResult> GetQosResultAsync(
+            int timeoutMs = DefaultTimeoutMs,
+            int pingsPerRegion = DefaultPingsPerRegion,
+            int degreeOfParallelism = DefaultDegreeOfParallelism)
+        {
+```
 
 ### C++
-
-PlayFab provides C++ sub-routines demonstrating this QoS flow in the [PlayFab cross-platform (CPP) SDK](https://github.com/PlayFab/XPlatCppSdk). You can build the SDK and use it as a helper library in your PC games, or use the code as an example for other platforms.
-
 These are the two QoS APIs available in the [PlayFab cross-platform (CPP) SDK](https://github.com/PlayFab/XPlatCppSdk), as noted below.
+
+The code is located in [*PlayFabQosApi.cpp*](https://github.com/PlayFab/XPlatCppSdk/blob/master/code/source/playfab/QoS/PlayFabQoSApi.cpp). 
+
+Parameters:
+* `numThreads` - The maximum number of pings to make in parallel. Increasing this number will reduce execution time, but network contention can cause inaccurate results if this number is too big.
+* `timeoutMs` - The timeout (in milliseconds) applied to each ping attempt (Default: 250ms). 
 
 ```cpp
   // Runs a QoS operation asynchronously. The operation pings a set of datacenters and returns a result with average response times.
