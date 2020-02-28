@@ -1,15 +1,12 @@
 - name: Overview
   href: index.md
 - name: Performance Levels and Rentention
-  href: performancelevels.md
-- name: Insights Management Commands
-  href: management-commands.md
-- name: Best Practices and FAQ
-  href: best-practices.md
+  href: performance-retention.md
+- name: Insights Scheduled Scaling
+  href: scheduled-scaling.md
 - name: Connecting External Tools
   href: connectivity.md
 - name: Exporting Data
   href: export.md
-  items:
-  - name: Getting started with PlayFab Explorer
-    href: getting-started-with-playfab-explorer.md
+- name: Best Practices and FAQ
+  href: best-practices.md
