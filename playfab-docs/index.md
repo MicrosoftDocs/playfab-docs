@@ -375,6 +375,7 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>Insights</h3>
+                                                <p><a href='/gaming/playfab/features/insights/explorer/quickstart'>Insights</a></p>
                                                 <p><a href='/gaming/playfab/features/insights/explorer/quickstart'>Explorer</a></p><p><a href='/gaming/playfab/features/insights/schemas/quickstart'>Schemas</a></p>
                                             </div>
                                         </div>
@@ -895,6 +896,23 @@ featureFlags:
                         <ul id="insights" class="cardsF">
                             <li class="fullSpan">
                                 <h2>PlayFab Insights Features</h2>
+                            </li>
+                                   <li>
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardImageOuter">
+                                                <div class="cardImage">
+                                                    <img src="/gaming/playfab/features/media/feature-explorer.svg" alt="PlayFab Insights Features: Explorer card image" />
+                                                </div>
+                                            </div>
+                                            <div class="cardText">
+                                                <h3>Insights</h3>
+                                                <p style='color: #7f7f7f'>Insights is a completely managed, cloud-scalable data system for your games.</p><p><a href='/gaming/playfab/features/insights/insights/'>Overview</a></p><p><a href='/gaming/playfab/features/insights/insights/performance-retention'>Performance and Retention</a></p><p><a href='/gaming/playfab/features/insights/insights/scheduled-scaling'>Scheduled Scaling</a></p><p><a href='/gaming/playfab/features/insights/insights/export'>Exporting Data</a></p><p><a href='/gaming/playfab/features/insights/insights/connectivity'>Connectivity</a></p><p><a href='/gaming/playfab/features/insights/insights/best-practices'>Best Practices and FAQ</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </li>
                             <li>
                                 <div class="cardSize">
