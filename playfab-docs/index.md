@@ -47,7 +47,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/gaming/playfab/personas/liveops/liveops">
+                                <a href="Fix Link">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
