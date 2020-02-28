@@ -21,11 +21,12 @@ ms.localizationpriority: medium
 - Reducing data storage can result in data loss. You will be warned when attempting to reduce storage. Due to the low cost of storage, long term retention is recommended. 
 - Insights management commands allow the creation of updating of custom tables. For core reporting and often used tables it's helpful to build custom aggregation tables. Aggregation tables generally have a much smaller data footprint than the source data. This increases query performance and reduces the need for a higher performance level. 
   - For automating aggergation we recommend using Azure Data Factory, a low-cost and scalable automation option. For more information on using Azure Data Factory see the [connectivity]('https://docs.microsoft.com/en-us/gaming/playfab/features/insights/insights/connectivity') section.
+- Limit queries by timestamp, don't pull all data to explore the last several days (this is generally good advice in any data system).
 
 
 ## FAQ
 1. How can I query data?
-   1. the simplest way is to use our built int [data explorer]('https://docs.microsoft.com/en-us/gaming/playfab/features/insights/explorer/')
+   1. the simplest way is to use our built in [data explorer]('https://docs.microsoft.com/en-us/gaming/playfab/features/insights/explorer/')
    2. The [connectivity]('https://docs.microsoft.com/en-us/gaming/playfab/features/insights/insights/connectivity') section has details on additional ways to access data.
 2. Why am I getting an error when trying to change my performance level or data retention?
    1. If you have not signed up for a paid account, changing performance levels, retention, exports and some management commands will be unavailable. 
@@ -36,7 +37,7 @@ ms.localizationpriority: medium
    1. Most PlayFab services will automatically generate data for you. 
    2. You can also implement your own telemetry [through PlayStream, or our Telemetry system,]('https://docs.microsoft.com/en-us/rest/api/playfab/events/playstream-events?view=playfab-rest'). 
    3. You can use [Management Commands]('https://review.docs.microsoft.com/en-us/gaming/playfab/features/insights/explorer/management-commands?branch=managementcommands') to ingest custom datasets.
-5. What is the standard data schema ofr PlayFab events?
+5. What is the standard data schema for PlayFab events?
    1. In PlayFab Insights we load all the data from all events into a single table. This table is named ['events.all]. Inside that table you will see a column called "EventData" that contains the payload of JSON information for each event.  
 6. Why can't I write SQL?
    1. As of now, we only support KQL (Kusto Query Language) queries in most scenarios. We're actively exploring adding full SQL support. While KQL takes some getting used to, we think you'll like it once you do.
