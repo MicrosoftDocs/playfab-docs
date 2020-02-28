@@ -32,9 +32,21 @@ PlayFab services automatically fire Playstream events. Any events fired by PlayF
 
 ### Change Your Performance Level To Meet Your Needs
 ![Insights Slider](media/insights-slider.png)<br>
-Match your cluster performance to your needs minute by minute. Slide your performance level up or down or alternative schedule your cluster to have different performance levels automatically using scheduled tasks.
+Match your cluster performance to your needs minute by minute. Slide your performance level up or down or alternative schedule your cluster to have different performance levels automatically using scheduled tasks. See [Performance Level & Retention]('https://docs.microsoft.com/en-us/gaming/playfab/features/insights/insights/performance-retention') for details.
 
 ### Schedule Your Performance Level
 ![Insights Slider](media/insights-schedule.png)<br>
-Use standard cron expressions to automically scale your cluster up and down during known times.
+Use standard cron expressions to automically scale your cluster up and down during known times. See [Scheduled Scaling]('https://docs.microsoft.com/en-us/gaming/playfab/features/insights/insights/scheduled-scaling') for details.
 
+### Keep Your Data as Long as You Need
+![Insights Slider](media/insights-retention.png)<br>
+Never delete your data or clear your data out every 30 days, whatever is needed for your studio. See [Performance Level & Retention]('https://docs.microsoft.com/en-us/gaming/playfab/features/insights/insights/performance-retention') for details.
+
+### Connect Outside Tools
+Connect PowerBI or Grafana for visualization, automate data jobs with Python or Azure Data Factory, explore your data with Azure Data Explorer.  See [Connectivity]('https://docs.microsoft.com/en-us/gaming/playfab/features/insights/insights/connectivity') for details.
+
+### Bring Your Own Datasets
+Ingest your own custom datasets with [Management Commands]('https://review.docs.microsoft.com/en-us/gaming/playfab/features/insights/explorer/management-commands?branch=managementcommands'). Merge your custom Playstream events, standard Playstream events, and custom uploaded data to create more robust datasets.
+
+### GDPR Compliant
+Standard reporting is tracked and GDPR compliant. Simply call the playfab GDPR delete request and we'll do the rest. Have custom data you need to delete? No problem, use the [Management Commands]('https://review.docs.microsoft.com/en-us/gaming/playfab/features/insights/explorer/management-commands?branch=managementcommands') to maintain your custom data.
