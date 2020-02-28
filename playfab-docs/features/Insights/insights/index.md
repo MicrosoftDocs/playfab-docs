@@ -12,10 +12,10 @@ ms.localizationpriority: medium
 # PlayFab Insights
 
 > <br>
-> The PlayFab Insights feature is in public preview. We anticipate ongoing changes to it as we continue gathering feedback and optimizing for customer use.
+> **NOTE** The PlayFab Insights feature is in public preview. We anticipate ongoing changes to it as we continue gathering feedback and optimizing for customer use.
 
 ## What is PlayFab Insights?
-PlayFab Insights is a completely managed data environment, giving you instant access to your game's data without the need for additional engineering. Unlike other hosted data solutions Insights requires no setup, no GDPR work, no extra engineering, simply use PlayFab services and your data is available. Automatically ingest and scale, connect external visualization tools and query freely. This represents a huge improvement to our previous data offering.
+PlayFab Insights is a completely managed data environment, giving you instant access to your game's data without the need for additional engineering. Unlike other hosted data solutions Insights requires no setup, no GDPR work, no extra engineering, simply use PlayFab services and your data is available. Automatically ingest and scale, connect external visualization tools and query freely. 
 
 ## Key Features
 ### Automatic Ingestion
@@ -23,7 +23,7 @@ PlayFab services automatically fire Playstream events. Any events fired by PlayF
 
 ### Change Your Performance Level To Meet Your Needs
 ![Insights Slider](media/insights-slider.png)<br>
-Match your cluster performance to your needs minute by minute. Slide your performance level up or down or alternative schedule your cluster to have different performance levels automatically using scheduled tasks. See [Performance Level & Retention]('https://docs.microsoft.com/en-us/gaming/playfab/features/insights/insights/performance-retention') for details.
+Match your cluster performance to your needs minute by minute. Slide your performance level up or down or alternatively schedule your cluster to have different performance levels automatically using scheduled tasks. See [Performance Level & Retention]('https://docs.microsoft.com/en-us/gaming/playfab/features/insights/insights/performance-retention') for details.
 
 ### Schedule Your Performance Level
 ![Insights Slider](media/insights-schedule.png)<br>
