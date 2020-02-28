@@ -43,5 +43,6 @@ These are the typical steps for using the service:
 - [Game Server SDK (GSDK) for Java Windows & Linux servers via Maven](https://mvnrepository.com/artifact/com.playfab/gameserverSDK)
 
 ## Game Server SDK Samples
-- [Game Server SDK (GSDK) Sample - Basic Windows Runner](https://github.com/PlayFab/gsdkSamples)
-- [Game Server SDK (GSDK) Sample - Unity Windows 10](https://github.com/PlayFab/gsdkSamples/blob/master/UnityMirror/README.md)
+*Links navigate to PlayFab's sample repo in Github*
+- [Game Server SDK (GSDK) Sample - Basic Windows Server](https://github.com/PlayFab/gsdkSamples)
+- [Game Server SDK (GSDK) Sample - Unity - Windows Server and Linux Server](https://github.com/PlayFab/gsdkSamples/blob/master/UnityMirror/README.md)
