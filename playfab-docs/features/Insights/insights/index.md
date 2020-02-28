@@ -9,15 +9,6 @@ ms.prod: playfab
 keywords: playfab, insights
 ms.localizationpriority: medium
 ---
----
-Introduction & Overview
-Performance Level & Retention
-Scheduled Scaling
-Best Practices & FAQ
-Connectivity
-Export
-
----
 # PlayFab Insights
 
 > <br>
