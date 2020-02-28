@@ -26,7 +26,7 @@ ms.localizationpriority: medium
 
 ## FAQ
 1. How can I query data?
-   1. the simplest way is to use our built in [data explorer]('https://docs.microsoft.com/en-us/gaming/playfab/features/insights/explorer/')
+   1. The simplest way is to use our built in [data explorer]('https://docs.microsoft.com/en-us/gaming/playfab/features/insights/explorer/')
    2. The [connectivity]('https://docs.microsoft.com/en-us/gaming/playfab/features/insights/insights/connectivity') section has details on additional ways to access data.
 2. Why am I getting an error when trying to change my performance level or data retention?
    1. If you have not signed up for a paid account, changing performance levels, retention, exports and some management commands will be unavailable. 
