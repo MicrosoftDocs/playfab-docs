@@ -32,8 +32,8 @@ The agent can also be configured to run the game server as a containerized appli
 
 - Download the local debugging toolset from [here](https://github.com/PlayFab/LocalMultiplayerAgent/releases) and extract it to a folder of your choice (such as *C:\PlayFabVmAgent*).
 - In the extracted folder, you will find a *MultiplayerSettings.json* file, open it in a text editor (such as [Visual Studio Code](https://code.visualstudio.com/download)) and update the following properties:  
-  - `LocalFilePath` - Full Local Path (on your workstation) to the game server asset zip file created earlier, for example: `D:\\MyAmazingGame\\asset.zip` (note that backslashes need to be escaped for JSON formatting).
-  - `StartGameCommand` - The full path to the game server executable within the container. For example, if the name of the executable is mygame.exe, a sample path would be `C:\\Assets\\mygame.exe`. The paths for the StartGameCommand are different for a Process and a Container. The StartGameCommand path for a container is absolute path to a resource in the container or asset folder. The StartGameCommand path for a process is a relative path where the working directory will be the first asset specified.
+  - `LocalFilePath` - Full Local Path (on your workstation) to the game server asset zip file created earlier, for example: *D:\\\\MyAmazingGame\\\\asset.zip* (note that backslashes need to be escaped for JSON formatting).
+  - `StartGameCommand` - The full path to the game server executable within the container. For example, if the name of the executable is mygame.exe, a sample path would be *C:\\\\Assets\\\\mygame.exe*. The paths for the StartGameCommand are different for a Process and a Container. The StartGameCommand path for a container is absolute path to a resource in the container or asset folder. The StartGameCommand path for a process is a relative path where the working directory will be the first asset specified.
   - `PortMappingsList` - These are the ports that will be available to your game while running. `NodePort` is the port that will be opened on your workstation, `GamePort.Number` is the port that your game server needs to bind to when running in a container. Update the GamePort section to match the protocol and port at which your game server is listening for clients. If your game server needs multiple ports, copy/paste the existing port configuration and increment `NodePort` then update `GamePort.Number` and `GamePort.Name` to the required port. When running as a process, `GamePort.Number` is ignored, your process should bind to NodePort. To handle both cases, do one of the following:
     - Set the ports to the same value
     - Check the gsdk config at runtime for the value with key `GamePort.Name` which will always return the correct port to bind against.
@@ -42,7 +42,7 @@ The agent can also be configured to run the game server as a containerized appli
   - `ResourceLimits` (optional) - If specified, docker limits CPU/memory usage. Warning: If your server goes over the allowed memory, it will be killed. ResourceLimits can only be specified in container mode.
   - `SessionCookie` (optional) - Any session cookie that gets passed to your game server as part of the [RequestMultiplayerServer API](xref:titleid.playfabapi.com.multiplayer.multiplayerserver.requestmultiplayerserver) call.
   - `OutputFolder` (optional) -  Path to a drive or folder where the outputs and config files are be generated. Ensure there is sufficient space available since the game server will be extracted under this path. If not specified, the agent folder is used.
-  - `MountPath` - The path within the container at which to mount the asset. This field does not need to be specified when running in process mode. We recommend using the sample value - `C:\\Assets` (note that backslashes need to be escaped for JSON formatting).
+  - `MountPath` - The path within the container at which to mount the asset. This field does not need to be specified when running in process mode. We recommend using the sample value - *C:\\\\Assets* (note that backslashes need to be escaped for JSON formatting).
   - `AgentListeningPort` - Specifies the port to which the agent binds to communicate with the game server. Any open port will work, if you have another process binding to 56001 you must change this value (or kill the other process).
 
 ## Verifying GSDK integration
@@ -84,7 +84,7 @@ After `NumHeartBeatsForActivateResponse` heartbeats, The **MockVmAgent** request
 ### Running the game server within a container
 
 - In the *MultiplayerSettings.json* file, set `RunContainer` to `true`.
-- Open a **Powershell** window (as Administrator) in the folder where the toolset was extracted (C:\PlayFabVmAgent) and run `MockVmAgent.exe`. This should start the game server within a container. Eventually, you should see game state change output in the Powershell window (just like in the Verifying GSDK integration section above).
+- Open a **Powershell** window (as Administrator) in the folder where the toolset was extracted (*C:\PlayFabVmAgent*) and run `MockVmAgent.exe`. This should start the game server within a container. Eventually, you should see game state change output in the Powershell window (just like in the Verifying GSDK integration section above).
 
 ### Testing connection to your game server running within a container
 
