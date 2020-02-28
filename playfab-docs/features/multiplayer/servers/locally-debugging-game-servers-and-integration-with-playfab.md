@@ -20,7 +20,7 @@ Running them as containerized applications enables running and debugging the ser
 
 The PlayFab local debugging toolset includes a mock PlayFab VmAgent that provides mock responses to the GSDK and verifies whether your game server is integrated with the GSDK correctly. With the mock responses, the VmAgent cycles the game server through various states in its lifecycle on the PlayFab Multiplayer platform.
 
-You can configure the agent cto run the game server as a containerized application and verify that your game server is packaged with all the required dependencies and will run without issues on the PlayFab Multiplayer platform.
+You can configure the agent to run the game server as a containerized application and verify that your game server is packaged with all the required dependencies and will run without issues on the PlayFab Multiplayer platform.
 
 ## Basic Setup
 
@@ -84,7 +84,7 @@ After `NumHeartBeatsForActivateResponse` heartbeats, **MockVmAgent** requests th
 ### Running the game server within a container
 
 - In the *MultiplayerSettings.json* file, set `RunContainer` to `true`.
-- Open a **Powershell** window (as Administrator) in the folder where the toolset was extracted (*C:\PlayFabVmAgent*) and run `MockVmAgent.exe`. This startd the game server within a container. Eventually, you should see game state change output in the Powershell window (just like in the Verifying GSDK integration section above).
+- Open a **Powershell** window (as Administrator) in the folder where the toolset was extracted (*C:\PlayFabVmAgent*) and run `MockVmAgent.exe`. This starts the game server within a container. Eventually, you should see game state change output in the Powershell window (just like in the Verifying GSDK integration section above).
 
 ### Testing connection to your game server running within a container
 
