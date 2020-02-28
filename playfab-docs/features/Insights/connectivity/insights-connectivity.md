@@ -10,13 +10,13 @@ keywords: playfab, insights
 ms.localizationpriority: medium
 ---
 
-[comment]: < Replace links with relative links once placement of article is determined. >
-
 # Connecting Insights to other tools
 
+[comment]: < Replace links with relative links once placement of article is determined. >
+
 ## Prerequisites
-* A PlayFab user account authenticated with [AAD (Azure Active Directory)](https://docs.microsoft.com/en-us/gaming/playfab/features/authentication/aad-authentication/).
-* The following [Game Manager permissions](https://docs.microsoft.com/en-us/gaming/playfab/features/config/gamemanager/playfab-user-roles#assigning-roles) enabled for your user:
+* A PlayFab user account authenticated with [AAD (Azure Active Directory)](https://docs.microsoft.com/gaming/playfab/features/authentication/aad-authentication/).
+* The following [Game Manager permissions](https://docs.microsoft.com/gaming/playfab/features/config/gamemanager/playfab-user-roles#assigning-roles) enabled for your user:
     *  Admin status.
     *  Access to the Explorer tab and associated data.
     *  Read and write access to Analytics data.
