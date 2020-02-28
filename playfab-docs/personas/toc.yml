@@ -5,7 +5,4 @@
 - name: Create a PlayFab Account
   href: pfab-account.md
 - name: LiveOps
-  href: LiveOps/liveops.md
-  items:
-  - name: LiveOps Handbook
-    href: Fix Link
+  href: Fix Link
