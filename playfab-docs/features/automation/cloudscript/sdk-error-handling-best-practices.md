@@ -37,7 +37,7 @@ Generally, if an error object is defined (not null), it indicates that an error 
 
 ## Inspecting the error
 
-The most common way to inspect an error is to recognize it through the code. As described in the [Global API Method Error Codes](global-api-method-error-codes.md) tutorial, each generated error contains human-readable and numeric error codes.
+The most common way to inspect an error is to recognize it through the code. As described in the [Global API Method Error Codes](../../../api-references/global-api-method-error-codes.md), each generated error contains human-readable and numeric error codes.
 
 > [!NOTE]
 > The code *on its own* is sufficient to recognize and process the error accordingly.
@@ -86,7 +86,7 @@ PlayFabClientAPI.LoginWithEmailAddress(new LoginWithEmailAddressRequest() {
 
 Once the error is identified, the handle/recover strategy depends on the error type and nature. Errors such as *invalid arguments* will never succeed if retried. The request must be fixed for that API call to succeed.
 
-There is a sub-set of errors, where a retry strategy can be applied. *Retry-able* error types are described in the [Global API Method Error Codes](global-api-method-error-codes.md) tutorial.
+There is a sub-set of errors, where a retry strategy can be applied. *Retry-able* error types are described in the [Global API Method Error Codes](../../../api-references/global-api-method-error-codes.md).
 
 Please make sure to meet the following requirements when applying a retry strategy:
 
@@ -94,4 +94,4 @@ Please make sure to meet the following requirements when applying a retry strate
 
 - You should apply this retry strategy *selectively*, only using it for those codes that are worth retrying.
 
-See our [Global API Method Error Codes](global-api-method-error-codes.md) tutorial for a list of codes that are safe to retry.
+See our [Global API Method Error Codes](../../../api-references/global-api-method-error-codes.md) tutorial for a list of codes that are safe to retry.
