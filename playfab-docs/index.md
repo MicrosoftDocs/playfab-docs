@@ -47,7 +47,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="Fix Link">
+                                <a href="http://aka.ms/LiveOpsGuide">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
