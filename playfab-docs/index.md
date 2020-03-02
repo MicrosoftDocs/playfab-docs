@@ -58,7 +58,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Getting Started: LiveOps</h3>
-                                                    <p>Everything you need to know about doing LiveOps on the PlayFab Platform. We have everything you need to manage and optimize player engagement and monetization.</p>
+                                                    <p>A comprehensive book that provides everything you need to know about doing LiveOps on the PlayFab Platform.</p>
                                                 </div>
                                             </div>
                                         </div>
