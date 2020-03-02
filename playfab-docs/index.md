@@ -201,7 +201,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="https://s3-us-west-2.amazonaws.com/api-playfab-com-craft-files/FileAssets/playfabtechnicalwhitepaper_2016.06.18.pdf">
+                                <a href="https://aka.ms/PlayFabTechnicalWhitePaper">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
