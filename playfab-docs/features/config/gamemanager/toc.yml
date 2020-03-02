@@ -9,6 +9,8 @@
     href: reference.md  
 - name: Tutorials
   items:
+  - name: Create a PlayFab Account
+    href: pfab-account.md
   - name: API Access Policy
     href: api-access-policy.md
   - name: API Feature Settings in the PlayFab Game Manager
