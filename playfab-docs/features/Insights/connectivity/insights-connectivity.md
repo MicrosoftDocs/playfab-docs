@@ -56,9 +56,31 @@ Open [Azure Data Explorer](https://dataexplorer.azure.com/). Select **Add Cluste
 
 ![ADX Add connection](media/adx-add-cluster-button.png)
 
-Enter your title API endpoint, which follows the format `https://<titleID>.playfabapi.com`. Select **Add**, and you should be able to execute queries or commands on the database. 
+Enter your title API endpoint, which follows the format `https://<titleID>.playfabapi.com`. Select **Add**, and you should now be able to execute queries or commands on the database. 
 
 ## Connect with Azure Data Factory (ADF)
+
+First, you will need to log into the [Azure portal](https://portal.azure.com) and create a new Azure App. If you don't have an Azure subscription, [create a free trial account](https://azure.microsoft.com).
+
+After logging into the portal, use the search bar to find and select **App Registrations**. Then, select **New registration** in the upper left-hand corner.  
+
+![ADF New Registrations](media/adf-new-registration.png)
+
+Enter a name for your registration, then select which account types you would like this registration to support. (If you need help deciding, select the **Help me choose** link which will open a window with more information.) Once you have filled out the fields, select **Register**. You will be directed to a page with an overview of your newly-registered applcation. Save the **Application (client) ID** and **Directory (tenant) ID** somewhere (you will need these later).
+
+![ADF Register App](media/adf-register-app.png)
+
+Next, in the navigation panel on the left-hand side select **Certificates & secrets** -> **New client secret**. 
+
+![ADF Certificates & Secrets](media/adf-certificates-secrets.png)
+
+Enter a description for the secret and select how long you would like it to be valid. 
+
+![ADF Add Secret](media/adf-add-secret.png)
+
+Select **Add**, and the new secret will appear below **Client secrets**. Now make sure to copy the secret key and save it somewhere secure. It's essential that you do this now, since you won't be able to access the secret key once you leave this page.   
+
+Now we will connect the Azure app to Kusto Explorer. 
 
 
 ## Connect with Grafana
