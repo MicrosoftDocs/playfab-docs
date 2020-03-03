@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 [comment]: < Replace links with relative links once placement of article is determined. >
 
-PlayFab Insights offers an unprecedented look into your game's data and the trends of your users. Part of Insights' power is the flexibility to sync with many other data and analytics tools. This guide will help you connect your Insights to other tools.
+placeholder [PlayFab Insights offers an unprecedented look into your game's data and the trends of your users. Part of Insights' power is the flexibility to sync with many other data and analytics tools. This guide will help you connect your Insights to other tools.]
 
 ## Prerequisites
 * A PlayFab user account authenticated with [AAD (Azure Active Directory)](https://docs.microsoft.com/gaming/playfab/features/authentication/aad-authentication/).
