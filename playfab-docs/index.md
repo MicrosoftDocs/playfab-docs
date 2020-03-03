@@ -47,7 +47,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/gaming/playfab/personas/liveops/liveops">
+                                <a href="https://aka.ms/LiveOpsGuide">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -58,7 +58,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Getting Started: LiveOps</h3>
-                                                    <p>Everything you need to know about doing LiveOps on the PlayFab Platform. We have everything you need to manage and optimize player engagement and monetization.</p>
+                                                    <p>A comprehensive book that provides everything you need to know about doing LiveOps on the PlayFab Platform. This book takes you from the basics of LiveOps all the way though implementing your LiveOps strategy with PlayFab.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -201,7 +201,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="https://s3-us-west-2.amazonaws.com/api-playfab-com-craft-files/FileAssets/playfabtechnicalwhitepaper_2016.06.18.pdf">
+                                <a href="https://aka.ms/PlayFabTechnicalWhitePaper">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
