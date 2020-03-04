@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 ### API Changes:
 
 * server.UnlinkXboxAccountRequest no longer requires the XboxToken to be unlinked
-* The Experiments feature and API have been relased
+* The Experiments feature and API have been released
     * See our [Blog Post](https://api.playfab.com/blog/announcing-playfabs-experimentation-all-new-for-trustworthy-experiments) for more details
 * New Methods
     * client.LoginWithApple
