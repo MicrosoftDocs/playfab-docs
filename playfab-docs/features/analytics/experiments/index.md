@@ -58,7 +58,7 @@ From the Game Manager:
 - Select **New Experiment**, experiment configuration page is opened 
 - Enter **Experiment Name**, **Description**, **Start Date & Time**, **Duration** (up to 21 days) 
 - Under **Settings**, configure your target audience for the experiment. By default, the experiment's audience is all players from the title. 
- * Configure to run the experiment on a Segment by unckecking **Run across all title players**
+  * Configure to run the experiment on a Segment by unckecking **Run across all title players**
 - Under **Settings**, define the **Control Variant** and **Treatment Variant(s)** 
   * Each variant is supported and defined by **Variables** (up to 10) and associated **% of target audience**. These variables are attributes on variant groups that allow you to bundle different set of user-experience via parameterization
   * This variable parametrization configures the feature settings for variants without deploying new code. This allows you to iterate faster on changes and make fixes and updates to live games. It is recommended to have the same variable name in each of the variant group as part of best practices of experimentation  
