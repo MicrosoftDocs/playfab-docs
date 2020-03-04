@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 ## 200303
 
-### API Changes
+### API Changes:
 
 * server.UnlinkXboxAccountRequest no longer requires the XboxToken to be unlinked
 * The Experimentation feature and API have been relased
