@@ -131,10 +131,9 @@ PlayFab has scalable and integrable [APIs](https://docs.microsoft.com/rest/api/p
 | **Start Experiment**         | Allows a client to request the start of an existing experiment for the title based on the experiment ID. The client code gets orchestrated for the change in experience as per the treatment assignment given for the experimental study on the target audience. |
 | **Stop Experiment**          | Allows a client to request the stop of an existing running experiment for the title based on the experiment ID. The default client code (control variant) gets orchestrated for the change in experience for the entire audience. |
 | **Delete Experiment**        | Allows a client to request a delete of an experiment in completed/stopped status for the title based on the experiment ID. |
-| **Get Experiment**           | Lists all the experiments and its details of drafted, running and completed an experiment for the title. |
+| **Get Experiments**           | Lists all the experiments and its details of drafted, running and completed an experiment for the title. |
 | **Get Treatment Assignment** | List the treatment assignments for a player for every running experiment in the title. |
 | **Get Experiment Scorecard** | Gives the latest scorecard result for an experiment of the title. |
-| **Get Title Scorecards**     | Gives the latest scorecard results for all the experiments of the title. |
 
 ## Integrating Experiments with other PlayFab services 
 Experiments is compatible with Player Profile, PlayStream events, CloudScript and Insights Explorer. For example, you can:
