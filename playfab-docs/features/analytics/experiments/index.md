@@ -18,9 +18,9 @@ PlayFab **Experiments** feature helps you identify the best strategies for your 
 
 You can elevate the player experience by comparing different versions of game configurations, pricing models, and outreach mechanisms, determining the best variation for your titles goals (engagement, monetization, retention, etc.) via experiments. 
 
-### Capabilities of PlayFab’s Experiments
+### Capabilities of PlayFab's Experiments
 
-PlayFab Experiments is a tailored solution for running experiments in your games. It is powered by Microsoft’s internal experimentation platform which unlocks the best-in-class capabilities which are used by Azure, Office, Bing, Minecraft, and many other Microsoft products. 
+PlayFab Experiments is a tailored solution for running experiments in your games. It is powered by Microsoft's internal experimentation platform which unlocks the best-in-class capabilities which are used by Azure, Office, Bing, Minecraft, and many other Microsoft products. 
 
 PlayFab Experiments empowers you by providing the following capabilities:
 
@@ -28,7 +28,7 @@ PlayFab Experiments empowers you by providing the following capabilities:
 - Configurations comparison in an experiment. Each configuration is easily mappable to variants where each variant is supported by variables. These variables allow you to bundle a different set of game experiences via parameterization.
 - Targeting of desired audience at random but in a controlled manner by making use of existing traffic. You can experiment over a segment, and define the percentage of the target audience in each variant.
 - Scheduling of experiments or to run immediately.
-- Analysis of experiments’ scorecard results. The scorecards are computed reliably and possess enriched statistical details. This gives you an indication of statistical significance and alerts if a Sample Ratio Mismatch is observed.
+- Analysis of experiments' scorecard results. The scorecards are computed reliably and possess enriched statistical details. This gives you an indication of statistical significance and alerts if a Sample Ratio Mismatch is observed.
 - Integrability with other PlayFab services such as Player Profile, PlayStream events, CloudScript and Insights Explorer, etc.
 
 
@@ -38,10 +38,10 @@ PlayFab Experiments empowers you by providing the following capabilities:
 
 PlayFab Experiments enables you to run multiple concurrent randomized experiments in a managed and controlled manner. In the process, 
 
-- A unique identifier for each running experiment’s variant groups called a variant ID is tagged to each player profile. These variant IDs are assigned to different treatments via client or server-side code. Thus, instrumenting different treatment behaviour.
+- A unique identifier for each running experiment's variant groups called a variant ID is tagged to each player profile. These variant IDs are assigned to different treatments via client or server-side code. Thus, instrumenting different treatment behaviour.
 - Each variant group is supported and defined by variables. These variables are attributes on variant groups that allow you to bundle a different set of game experience via parameterization.
--	Reliable computation of results of an experiment with statistical significance calculation is provided.
--	Detection of issues when the targeted audience traffic is way off. This is often caused by a treatment causing crashes or affecting logging. PlayFab’s experimentation feature flags such issues enabling you to run a reliable experiment.   
+-    Reliable computation of results of an experiment with statistical significance calculation is provided.
+-    Detection of issues when the targeted audience traffic is way off. This is often caused by a treatment causing crashes or affecting logging. PlayFab's experimentation feature flags such issues enabling you to run a reliable experiment.   
 
 ![Screenshot of Experimentation at a Glance](media/tutorials/onboard-to-experiments.png "Onboard ro Experiments")
 
@@ -52,7 +52,7 @@ PlayFab Experiments enables you to run multiple concurrent randomized experiment
 
 An experiment is created to compare a control variant against one or more treatment variants (up to 9). The experiment is managed through a target audience controlled by the user.
 
-From the Game Manager: 	
+From the Game Manager:     
 - Navigate to your **Title** 
 - Select **Experiments** from the menu on the left 
 - Select **New Experiment**, experiment configuration page is opened 
@@ -116,13 +116,13 @@ The identified metrics are calculated for the time the experiment has ran so far
 |:---------------------------------- |:-----------------------------------|:-----------------------------------| 
 | **Acquisition**        | Average Login Per User | Average of all user logins |
 | **Activation**         | Payer Conversion Rate | Percentage of active users who purchased |
-| **Revenue**            | Average Revenue Per User | Average of revenue generated from users including those that didn’t make any purchase |
+| **Revenue**            | Average Revenue Per User | Average of revenue generated from users including those that didn't make any purchase |
 | **Retention**          | Day N Retention (N = 1, 2, 3, 5, 7, 14, 21 day) |Percentage of users who logged in N days after seeing the experiment |
 
 
 ## Experimentation APIs
 
-PlayFab has scalable and integrable [APIs](../../../../rest/api/playfab/experimentation/experimentationxref:titleid.playfabapi.com.client.experimentation) for experimentation. The APIs and associated operation details are as below:  
+PlayFab has scalable and integrable [APIs](https://docs.microsoft.com/rest/api/playfab/experimentation/experimentation) for experimentation. The APIs and associated operation details are as below:  
 
 | **API Name**                    | **Operation**                              | 
 |:---------------------------------- |:-----------------------------------| 
@@ -139,6 +139,6 @@ PlayFab has scalable and integrable [APIs](../../../../rest/api/playfab/experime
 ## Integrating Experiments with other PlayFab services 
 Experiments is compatible with Player Profile, PlayStream events, CloudScript and Insights Explorer. For example, you can:
 
-- **Make configuration changes using CloudScript:** Virtually any configuration-related game code variation can be enabled using a combination of CloudScript and Experiment’s getTreatmentAssignment API.
+- **Make configuration changes using CloudScript:** Virtually any configuration-related game code variation can be enabled using a combination of CloudScript and Experiment's getTreatmentAssignment API.
 - **Do a drill-down analysis using Insights Explorer:** A unique identifier of each variant (VariantID) is stamped on all PlayStream v2 events and two specific PlayStream v1 events (player_logged_in and player_realmoney_purchase). This can be used to do further analysis on specific metrics. (The metrics can be based on the PlayStream events or your own game telemetry.) To query, use the Insights Explorer service or connect your own analytics platform.
 

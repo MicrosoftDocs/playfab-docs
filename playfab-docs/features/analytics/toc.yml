@@ -2,6 +2,8 @@
   href: /gaming/playfab/?#pivot=documentation&panel=analytics
   expanded: true
   items:
+  - name: Experiments
+    href: experiments/toc.yml
   - name: Xbox Data Add On
     href: xbox-data/toc.yml
   - name: Metrics
