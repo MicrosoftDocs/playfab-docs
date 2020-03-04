@@ -43,7 +43,7 @@ PlayFab Experiments enables you to run multiple concurrent randomized experiment
 -    Reliable computation of results of an experiment with statistical significance calculation is provided.
 -    Detection of issues when the targeted audience traffic is way off. This is often caused by a treatment causing crashes or affecting logging. PlayFab's experimentation feature flags such issues enabling you to run a reliable experiment.   
 
-![Screenshot of Experimentation at a Glance](media/tutorials/onboard-to-experiments.png "Onboard ro Experiments")
+![Screenshot of Experimentation at a Glance](media/tutorials/onboarding-experiments-page.PNG "Onboard ro Experiments")
 
 
 ## Quick Start
@@ -85,7 +85,7 @@ The Experiments page can also be used for managing experiments. Here,
 - A scheduled experiment's fields are completely modifiable and vice-versa for a stopped/ completed experiment. Although, for any experiment in running state, only Experiment description and duration modifications are possible
 - A running experiment status is turned **Stopped/ completed**, once the duration of the experiment is reached or a user explicitly stops the experiment
 
-![Screenshot of Experimentation at a Glance](media/tutorials/manage-an-experiment.png "Manage an Experiment")
+![Screenshot of Experimentation at a Glance](media/tutorials/manage-experiments-page.PNG "Manage an Experiment")
 
 ### Analyze Experiment  
 
@@ -103,7 +103,7 @@ At the experiment run:
 > [!Note]
 > To learn more about SRM and how to resolve it, see the **Sample Ratio Mismatch** section in [Experimentation Best Practices and Recommendations](experimentation-keys.md)) 
 
-![Screenshot of Experimentation at a Glance](media/tutorials/scorecard-latest-for-experiments.png "Analyze an Experiment")
+![Screenshot of Experimentation at a Glance](media/tutorials/scorecard-of-the-experiment-page.PNG "Analyze an Experiment")
 
 ## Scorecard Metrics
 
