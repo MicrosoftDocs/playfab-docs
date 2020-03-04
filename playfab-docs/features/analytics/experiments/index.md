@@ -67,7 +67,7 @@ From the Game Manager:
   * With Schedule the experiment will be in **Scheduled** status in the manage experiment page
   * With Run Now the experiment will be in **Running** status in the manage experiment page 
 
-![Screenshot of Experimentation at a Glance](media/tutorials/create-an-experiment.png "Create an Experiment")
+![Screenshot of Experimentation at a Glance](media/tutorials/create-experiments-page.PNG "Create an Experiment")
 
 ### Manage Experiments
 
