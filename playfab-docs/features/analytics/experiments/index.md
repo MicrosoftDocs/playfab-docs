@@ -104,7 +104,7 @@ At the experiment run:
 > [!Note]
 > To learn more about SRM and how to resolve it, see the **Sample Ratio Mismatch** section in [Experimentation Best Practices and Recommendations](experimentation-keys.md)) 
 
-![Screenshot of Experimentation at a Glance](media/tutorials/scorecard-of-the-experiment-page.PNG "Analyze an Experiment")
+![Screenshot of Experimentation at a Glance](media/tutorials/scorecard-of-the-experiment.PNG "Analyze an Experiment")
 
 ## Scorecard Metrics
 
