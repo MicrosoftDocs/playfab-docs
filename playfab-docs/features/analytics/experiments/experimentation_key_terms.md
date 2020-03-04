@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 To get comfortable with experiment as a practice and develop an understanding of the key-terms, read below:
 
 ### Experiments
-A/B testing is a method of comparing two or more configurations of game experience (variants), whereas multivariate testing allows you to configure several game elements and determine which combinations (variants) perform best at achieving your conversion goals. 
+A/B experiments is a method of comparing two or more configurations of game experience (variants), whereas multivariate experiments allows you to configure several game elements and determine which combinations (variants) perform best at achieving your conversion goals. 
 
 This is done by splitting users randomly into two or more groups and providing different experiences to each group over a period of time, and statistical analysis is done on the collected telemetry to determine which variation performs better based on the goals you decide for the experiment
 
@@ -23,28 +23,24 @@ With PlayFab Experiments support both A/B testing (also known as split testing) 
 ### Conversion Rate
 A conversion refers to any desired action that you want the player to take. Conversions do not have to be tied to monetary goals. This can include anything from a click on a button to making a purchase and becoming a player. 
 
-Conversion is the goal of A/B experiments.
-
-Conversions are an absolute number, whereas a conversion rate is the number of conversions divided by the total player traffic. 
+Conversion is the goal of experiments. Conversions are an absolute number, whereas a conversion rate is the number of conversions divided by the total player traffic. 
 
 ### Hypothesis
 A hypothesis presents a claim about how a given intervention will affect player behavior. The hypothesis is a combination of an idea about what scenarios to experiment and why, and what changes might appear after the changes.
 
 ### Segment
 Segments organizes individual players into group(s) which shares common characteristic(s) as per the user-defined qualifying condition(s)/criteria(s). 
+
 You can flight an experiment with a customized experience for a Segment to verify the hypothesis that an audience will respond more positively.
 
-### % of Flight (Flight Allocation)
-A percentage of the total player base (audience) that are considered for the A/B experiment and will receive the control or treatment variant.
+### % of target audience
+A percentage of the total player base that are considered for the experiment and is associated with the control or treatment variant.
 
 ### Control Variant
 A control variant is an existing experience that is used in an experiment as a measure of comparison to ensure that the experiment works. It provides a baseline measurement for the experiment. It makes sure that the treatment you are giving is causing the experimental results, and not something outside the experiment.
 
 ### Treatment Variant
 A treatment variant receives the experimental treatment(s) or difference in experience(s) in an experiment. It is the treatment variant(s) that are studied in an A/B experiment and contains the experience changes.
-
-### Weight %
-A percentage of target player base (audience) that are to be considered for the associated variant group.
 
 ### Variables
 Variables are defined to set the feature or experience configuration. Defining feature variables allows you to iterate on your feature without redeploying the code.
