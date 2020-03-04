@@ -872,8 +872,6 @@ featureFlags:
                                     </div>
                                 </div>
                             </li>
-                        </ul>
-                    </li>
                             <li>
                                 <div class="cardSize">
                                     <div class="cardPadding">
