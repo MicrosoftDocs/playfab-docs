@@ -12,6 +12,18 @@ ms.localizationpriority: medium
 
 # PlayFab Release Notes 2020
 
+## 200303
+
+### API Changes:
+
+* server.UnlinkXboxAccountRequest no longer requires the XboxToken to be unlinked
+* The Experimentation feature and API have been relased
+    * See our [Blog Post](https://api.playfab.com/blog/announcing-playfabs-experimentation-all-new-for-trustworthy-experiments) for more details
+* New Methods
+    * client.LoginWithApple
+    * client.LinkApple
+    * client.UnlinkApple
+
 ## 200220
 
 Date: 2020-02-20
