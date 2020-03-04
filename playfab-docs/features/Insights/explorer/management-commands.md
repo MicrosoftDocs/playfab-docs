@@ -60,7 +60,7 @@ Example: `.show table ['events.all'] policy retention`<br>
 This shows the current retention policy for the "events.all" table.
 
 
-**.alter table policy retention** (restricted to performance level 2 and above)<br>
+**.alter table policy retention** (restricted to accounts on consumption pricing model)<br>
 Change the current retention policy on table(s) to <retention_policy><br>
 Usage: `.alter tables (<table_name> [, ...]) policy retention <retention_policy>`<br>
 Example: `.alter table ['events.all'] policy retention softdelete = 90d`<br>
