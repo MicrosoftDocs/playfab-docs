@@ -83,3 +83,4 @@ Follow the steps in the [Connecting Insights to Azure Data Factory (ADF)](connec
 Follow the steps in the [Connecting Insights to Grafana](connecting-insights-to-grafana.md) guide.
 
 ## Connect with Python
+

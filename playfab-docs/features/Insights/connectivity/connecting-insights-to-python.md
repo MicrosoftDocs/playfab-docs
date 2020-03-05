@@ -10,7 +10,7 @@ keywords: playfab, insights
 ms.localizationpriority: medium
 ---
 
-# Connecting Insights to Grafana
+# Connecting Insights to Python
 
 [comment]: < Replace links with relative links once placement of article is determined. >
 This guide helps you get started using Insights along with Grafana To learn more about other tools you can connect Insights with, go [here](insights-connectivity.md).
@@ -21,11 +21,6 @@ This guide helps you get started using Insights along with Grafana To learn more
     *  Admin status.
     *  Access to the Explorer tab and associated data.
     *  Read and write access to Analytics data.
-
-## Get set up with Grafana
-1. If you don't have a free Grafana account, create one [here](https://grafana.com/login). You can either download Grafana to run on your computer or use the online hosted instance. 
-
-2. Install the Azure Data Explorer [plugin](https://grafana.com/grafana/plugins/grafana-azure-data-explorer-datasource) for Grafana.
 
 ## Create an Azure Active Directory (AAD) application
 
@@ -54,10 +49,18 @@ Now we will connect the Azure app to your title database.
 
    ![Explorer Add Database](media/explorer-add-database.png)
 
-## Create a new data source in Grafana
+   You can verify that this command was successful by going to the **Users* page in [GameManager](https://developer.playfab.com/login). There should be an entry that matche the Client/Tenant ID.
 
-1. On the **Welcome to Grafana** page, select **Add data source**. 
+   Note that this will make the Azure app an Admin on your game in PlayFab. If you would like the Azure app to have lesser permissions, assign the Azure app a [custom role](https://docs.microsoft.com/gaming/playfab/features/config/gamemanager/playfab-user-roles#assigning-roles) in PlayFab that only has permissions for the Kusto database. The necessary permissions are:
+   * Explorer data & tab.
+   * Analytics data read access.
+   * Analytics data write access.
 
-## Create a new Dashboard
+   ![Connectivity Custom Role](media/connectivity-cutom-role.png)
 
-## Run Kusto queries and commands
+## Install Python packages
+
+1. Install the following python packages using [pip](https://pypi.org/project/pip/):
+   * azure-kusto-data
+   * azure-kusto-ingest
+   * adal
