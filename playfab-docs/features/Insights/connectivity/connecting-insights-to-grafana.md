@@ -58,6 +58,8 @@ You are going to create a new AAD application to link to your title database.
 
 Now we will connect the Azure app to your title database. 
 
+1. Now we will connect the Azure app to your title database. 
+
 1. From the **Explorer** page in GameManager or in Kusto.Explorer, run the following command, replacing with your own Title ID and client/tenant ID:
    > `.add database <titleID> Admin ('aadapp=<app/client ID>;<tenant ID>') `
 
@@ -65,6 +67,14 @@ Now we will connect the Azure app to your title database.
 
    ![Explorer Add Database](media/explorer-add-database.png)
 
+   You can verify that this command was successful by going to the **Users** page in [GameManager](https://developer.playfab.com/login). There should be an entry that matches the Client/Tenant ID.
+
+   Note that this will make the Azure app an Admin on your game in PlayFab. If you would like the Azure app to have lesser permissions, assign the Azure app a [custom role](https://docs.microsoft.com/gaming/playfab/features/config/gamemanager/playfab-user-roles#assigning-roles) in PlayFab that only has permissions for the Kusto database. The necessary permissions are:
+   * Explorer data & tab.
+   * Analytics data read access.
+   * Analytics data write access.
+
+   ![Connectivity Custom Role](media/connectivity-cutom-role.png)
 ## Create a new data source in Grafana
 Now that your title database is linked to an Azure app, you can use the app to connect with Grafana.
 

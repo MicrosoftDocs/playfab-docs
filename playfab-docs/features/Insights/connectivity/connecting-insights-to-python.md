@@ -13,7 +13,8 @@ ms.localizationpriority: medium
 # Connecting Insights to Python
 
 [comment]: < Replace links with relative links once placement of article is determined. >
-This guide helps you get started using Insights along with Grafana To learn more about other tools you can connect Insights with, go [here](insights-connectivity.md).
+
+This guide helps you get started using Insights with Python. It uses the Azure Kusto Python SDK. To learn more about other tools you can connect Insights with, go [here](insights-connectivity.md).
 
 ## Prerequisites
 * A PlayFab user account authenticated with [AAD (Azure Active Directory)](https://docs.microsoft.com/gaming/playfab/features/authentication/aad-authentication/).
@@ -28,7 +29,7 @@ You are going to create a new AAD application to link to your title database.
 
 ## Create a new Azure app
 
-1. Log into the [Azure portal](https://portal.azure.com) and create a new Azure App. If you don't have an Azure subscription, [create a free trial account](https://azure.microsoft.com).
+1. Log into the [Azure portal](https://portal.azure.com). If you don't have an Azure subscription, [create a free account](https://azure.microsoft.com).
 
 2. After logging into the portal, use the search bar to find and select **App Registrations**. Then, select **New registration** in the upper left-hand corner.  
 
@@ -38,18 +39,30 @@ You are going to create a new AAD application to link to your title database.
 
    ![ADF Register App](media/adf-register-app.png)  
 
+4. Select **Register**. You will be directed to a page with an overview of your newly-registered applcation. Save the **Application (client) ID** and **Directory (tenant) ID** somewhere (you will need these later).
+
+5. In the navigation panel on the left-hand side select **Certificates & secrets** -> **New client secret**. 
+
+   ![ADF Certificates & Secrets](media/adf-certificates-secrets.png)
+
+6. Enter a description for the secret and select how long you would like it to be valid. 
+
+   ![ADF Add Secret](media/adf-add-secret.png)
+
+7. Select **Add**, and the new secret will appear below **Client secrets**. Now make sure to copy the secret key and save it somewhere secure. *It's essential that you do this now, since you won't be able to access the secret key once you leave this page.*
+
 ## Connect the AAD app to your title database
 
 Now we will connect the Azure app to your title database. 
 
-1. From the Explorer page in GameManager or in Kusto.Explorer, run the command:
+1. From the **Explorer** page in GameManager or in Kusto.Explorer, run the following command, replacing with your own Title ID and client/tenant ID:
    > `.add database <titleID> Admin ('aadapp=<app/client ID>;<tenant ID>') `
 
    `titleID` is case sensitive, so make sure it is in all caps.
 
    ![Explorer Add Database](media/explorer-add-database.png)
 
-   You can verify that this command was successful by going to the **Users* page in [GameManager](https://developer.playfab.com/login). There should be an entry that matche the Client/Tenant ID.
+   You can verify that this command was successful by going to the **Users** page in [GameManager](https://developer.playfab.com/login). There should be an entry that matches the Client/Tenant ID.
 
    Note that this will make the Azure app an Admin on your game in PlayFab. If you would like the Azure app to have lesser permissions, assign the Azure app a [custom role](https://docs.microsoft.com/gaming/playfab/features/config/gamemanager/playfab-user-roles#assigning-roles) in PlayFab that only has permissions for the Kusto database. The necessary permissions are:
    * Explorer data & tab.
@@ -64,3 +77,4 @@ Now we will connect the Azure app to your title database.
    * azure-kusto-data
    * azure-kusto-ingest
    * adal
+
