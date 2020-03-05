@@ -67,7 +67,7 @@ From the Game Manager:
 - Select **Schedule** or **Run Now** 
   * With Schedule the experiment will be in **Scheduled** status in the manage experiment page
   * With Run Now the experiment will be in **Running** status in the manage experiment page 
-
+  
 ![Screenshot of Experimentation at a Glance](media/tutorials/create-experiments-page.PNG "Create an Experiment")
 
 ### Manage Experiments
@@ -145,4 +145,8 @@ Experiments is compatible with Player Profile, PlayStream events, CloudScript an
 
 - **Make configuration changes using CloudScript:** Virtually any configuration-related game code variation can be enabled using a combination of CloudScript and Experiment's getTreatmentAssignment API.
 - **Do a drill-down analysis using Insights Explorer:** A unique identifier of each variant (VariantID) is stamped on all PlayStream v2 events and two specific PlayStream v1 events (player_logged_in and player_realmoney_purchase). This can be used to do further analysis on specific metrics. (The metrics can be based on the PlayStream events or your own game telemetry.) To query, use the Insights Explorer service or connect your own analytics platform.
+- **Make configuration changes using PlayStream events:** Game configurations changes can be driven or triggered based on the PlayStream events. This can be enabled using the getTreatmentAssignment API service. 
+
+> [!WARNING]
+> Given a new player login only has attributes associated with the player_logged_in PlayStream event, any experiment to traget these new players with PlayStream event based configuration variations can only involve attributes from the player_logged_in PlayStream event. 
 
