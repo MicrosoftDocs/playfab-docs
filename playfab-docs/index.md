@@ -827,7 +827,7 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/gaming/playfab/features/media/feature-explorer.svg" alt="PlayFab Insights Features: Explorer card image" />
+                                                    <img src="/gaming/playfab/features/media/feature-insights.png" alt="PlayFab Insights Features: Explorer card image" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
