@@ -125,6 +125,9 @@ The identified metrics are calculated for the time the experiment has ran so far
 
 PlayFab has scalable and integrable [APIs](https://docs.microsoft.com/rest/api/playfab/experimentation/experimentation) for experimentation. The APIs and associated operation details are as below:  
 
+> [!Note]
+> To learn more details on the Experiments APIs, refer [here] (https://docs.microsoft.com/rest/api/playfab/experimentation/experimentation)
+
 | **API Name**                    | **Operation**                              | 
 |:---------------------------------- |:-----------------------------------| 
 | **Create Experiment**        | Allows a client to request the creation of an experiment for the title. The experiment configuration gets defined as part of it, containing the experiment details, like target audience, start date, variant groups, and associated variables for orchestrating the change in experience (or treatment assignment). The treatment assignment can include virtually anything on the client or PlayFab services. |
