@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 [comment]: < Replace links with relative links once placement of article is determined. >
 
-placeholder [PlayFab Insights offers an unprecedented look into your game's data and the trends of your users. Part of Insights' power is the flexibility to sync with many other data and analytics tools. This guide will help you connect your Insights to other tools.]
+PlayFab Insights offers an unprecedented look into your game's data and the trends created by your users. Part of Insights' power is the flexibility to be paired with many other data and analytics tools. This guide will show you how to connect Insights to other tools.
 
 ## Prerequisites
 * A PlayFab user account authenticated with [AAD (Azure Active Directory)](https://docs.microsoft.com/gaming/playfab/features/authentication/aad-authentication/).
@@ -35,9 +35,9 @@ Once you have completed all the prerequisites, proceed to the section on the too
 Open [Power BI](https://powerbi.microsoft.com/desktop/) for desktop. 
 
 ### 
-1. Select **Get Data** -> **Azure Data Explorer (Kusto)**.
+1. In the **Power BI Desktop** window, select **Get Data** -> **Azure Data Explorer (Kusto)**.
 2. In the **Azure Data Explorer (Kusto)** dialog box take the following steps:
-   * Under **Cluster** enter your API endpoint, which will follow the format `https://<titleid>.playfabapi.com`. 
+   * Under **Cluster** enter your API endpoint, which follows the format `https://<titleid>.playfabapi.com`. 
    * Under **Database** enter your title ID in all uppercase. 
    * Scroll down, and under **Data Connectivity mode** select **DirectQuery**.
 
@@ -56,7 +56,7 @@ Open [Kusto.Explorer](https://docs.microsoft.com/azure/kusto/tools/kusto-explore
    * Right-click on the **Connections** folder in the left navigation panel, then select **Add connection**.
 
 2. In the **Add connection** dialog box take the following steps:
-   * Under **Cluster connection** enter your API endpoint, which will follow the format `https://<titleid>.playfabapi.com`. 
+   * Under **Cluster connection** enter your API endpoint, which follows the format `https://<titleid>.playfabapi.com`. 
    * Under **Security**, make sure **AAD Federated** is selected. 
    * Expand the **Advanced: Connection String** box and change the value of **Initial Catalog** from `NetDefaultDB` to `<titleID>`. In the example below, this change is highlighted in the string. 
   
@@ -65,9 +65,8 @@ Open [Kusto.Explorer](https://docs.microsoft.com/azure/kusto/tools/kusto-explore
 3. Select **OK**, and you should now be able to execute queries and commands on the database.
 
 ## Connect with Azure Data Explorer (ADX)
-
-Open [Azure Data Explorer](https://dataexplorer.azure.com/). 
-1. Select **Add Cluster**. 
+ 
+1. Open [Azure Data Explorer](https://dataexplorer.azure.com/). Select **Add Cluster**. 
 
    ![ADX Add connection](media/adx-add-cluster-button.png)
 
@@ -84,3 +83,4 @@ Follow the steps in the [Connecting Insights to Grafana](connecting-insights-to-
 
 ## Connect with Python
 
+Follow the steps in the [Connecting Insights to Python](connecting-insights-to-python.md) guide.
