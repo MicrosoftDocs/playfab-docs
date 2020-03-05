@@ -125,8 +125,6 @@ The identified metrics are calculated for the time the experiment has ran so far
 
 PlayFab has scalable and integrable [APIs](https://docs.microsoft.com/rest/api/playfab/experimentation/experimentation) for experimentation. The APIs and associated operation details are as below:  
 
-> [!Note]
-> To learn more details on the Experiments APIs, refer [here] (https://docs.microsoft.com/rest/api/playfab/experimentation/experimentation)
 
 | **API Name**                    | **Operation**                              | 
 |:---------------------------------- |:-----------------------------------| 
@@ -138,6 +136,9 @@ PlayFab has scalable and integrable [APIs](https://docs.microsoft.com/rest/api/p
 | **Get Experiments**           | Lists all the experiments and its details, no matter which state (drafted, running and completed/ stopped) for the title. |
 | **Get Treatment Assignment** | List the treatment assignments for a player for every running experiment in the title. |
 | **Get Latest Scorecard** | Gives the latest scorecard result for an experiment of the title. |
+
+> [!Note]
+> For details on the Experiments APIs, refer [here] (https://docs.microsoft.com/rest/api/playfab/experimentation/experimentation)
 
 ## Integrating Experiments with other PlayFab services 
 Experiments is compatible with Player Profile, PlayStream events, CloudScript and Insights Explorer. For example, you can:
