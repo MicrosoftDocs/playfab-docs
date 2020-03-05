@@ -3,7 +3,7 @@ title: Connecting Insights to Grafana
 author: natashaorie
 description: Guide to connecting Inisghts to Grafana.
 ms.author: norie
-ms.date: 02/27/2020    
+ms.date: 03/5/2020    
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, insights
@@ -58,7 +58,7 @@ You are going to create a new AAD application to link to your title database.
 
 Now we will connect the Azure app to your title database. 
 
-1. From the Explorer page in GameManager or in Kusto.Explorer, run the following command, replacing with your own Title ID and client/tenant ID:
+1. From the **Explorer** page in GameManager or in Kusto.Explorer, run the following command, replacing with your own Title ID and client/tenant ID:
    > `.add database <titleID> Admin ('aadapp=<app/client ID>;<tenant ID>') `
 
    `titleID` is case sensitive, so make sure it is in all caps.
@@ -125,3 +125,4 @@ Now you are going to use your newly-created Dashboard to run Kusto queries and c
 ## Additional resources
 
 * Grafana [documentation](https://grafana.com/docs/grafana/latest/).
+* Connect Insights with [more tools](insights-connectivity.md).

@@ -1,9 +1,9 @@
 ---
-title: Connecting Insights with Azure Data Factory (ADF)
+title: Connecting Insights to Azure Data Factory (ADF)
 author: natashaorie
 description: Guide to connecting Inisghts with Azure Data Factory (ADF).
 ms.author: norie
-ms.date: 02/27/2020    
+ms.date: 03/5/2020    
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, insights
@@ -22,9 +22,11 @@ This guide helps you get started using Insights along with Azure Data Factory. T
     *  Access to the Explorer tab and associated data.
     *  Read and write access to Analytics data.
 
-## Create a new Azure app
+## Create an Azure Active Directory (AAD) application
 
-1. Log into the [Azure portal](https://portal.azure.com) and create a new Azure App. If you don't have an Azure subscription, [create a free trial account](https://azure.microsoft.com).
+You are going to create a new AAD application to link to your title database.
+
+1. Log into the [Azure portal](https://portal.azure.com). If you don't have an Azure subscription, [create a free trial account](https://azure.microsoft.com).
 
 2. After logging into the portal, use the search bar to find and select **App Registrations**. Then, select **New registration** in the upper left-hand corner.  
 
@@ -44,12 +46,12 @@ This guide helps you get started using Insights along with Azure Data Factory. T
 
    ![ADF Add Secret](media/adf-add-secret.png)
 
-7. Select **Add**, and the new secret will appear below **Client secrets**. Now make sure to copy the secret key and save it somewhere secure. **It's essential that you do this now, since you won't be able to access the secret key once you leave this page.**   
+7. Select **Add**, and the new secret will appear below **Client secrets**. Now make sure to copy the secret key and save it somewhere secure. *It's essential that you do this now, since you won't be able to access the secret key once you leave this page.*  
 
 ## Connect the Azure app to Kusto Explorer
 Now we will connect the Azure app to Kusto Explorer. 
 
-1. From the Explorer page in GameManager or in Kusto.Explorer, run the command:
+1. From the **Explorer** page in GameManager or in Kusto.Explorer, run the following command, replacing with your own Title ID and client/tenant ID:
    > `.add database <titleID> Admin ('aadapp=<app/client ID>;<tenant ID>') `
 
    `titleID` is case sensitive, so make sure it is in all caps.
@@ -62,7 +64,7 @@ Now we will connect the Azure app to Kusto Explorer.
    ![ADF Create Resource](media/adf-create-resource.png)
 
 2. Fill out the required fields:
-   * **Name** your data factory.
+   * Give your data factory a **Name**.
    * Select the **Azure subscription** that you would like to create it in.
    * Create a new **resource group** or select an existing one to use.
    * You do not need to enable GIT right now, so uncheck the box below.
@@ -85,27 +87,30 @@ We are now going to create a new pipeline.
  
     ![ADF Explorer Command](media/adf-explorer-command.png)
 
- 3. Under **Connection**, select **New**. 
+ 3. Switch to the **Connection** tab and select **New**. 
  
     ![ADF Explorer Command Connection](media/adf-explorer-command-connection.png)
  
  4. In the **New linked service (Azure Data Explorer (Kusto))** window, fill out the fields:
-    * Use the Title ID as the name.
+    * For **Name**, use the Title ID.
     * For **Account selection method**, select **Enter manually**.
-    * Use the title's API URL as the endpoint. It will follow the format `https://<titleid>.playfabapi.com`.
+    * For the **Endpoint**, use the title's API URL. It will follow the format `https://<titleid>.playfabapi.com`.
     * For **Service Principal ID**, enter your Client ID from your Azure app.
-    * For **Service Principal Key**, enter your secret from your Azure app.
+    * For **Service Principal Key**, enter your Client secret from your Azure app.
     * In the **Database** box, type the Title ID in all upper case.
    
     ![ADF New Linked Service](media/adf-new-linked-service.png)
 
-5. Select **Create**. Select **Test connection** to verify that all of the information is correct. If everything is set up correctly, it will return a **Connection successful** response. 
+   Select **Create**.
+
+2.  Select **Test connection** to verify that all of the information is correct. If everything is set up correctly, it will return a **Connection successful** response. 
 
    ![ADF Test Connection](media/adf-test-connection.png)
 
-6. Finally, **Validate** and **Debug** the pipeline using the buttons in the toolbar above the workspace. 
+3. Finally, **Validate** and **Debug** the pipeline using the buttons in the toolbar above the workspace. 
 
 
-## Next steps
+## Additional resources
 
-You are now ready to use Insights with Azure Data Explorer (ADX). To connect Insights with other tools, go [here](insights-connectivity.md).
+* Azure Data Factory (ADF) [documentation](https://docs.microsoft.com/azure/data-factory/).
+* Connect Insights with [more tools](insights-connectivity.md).
