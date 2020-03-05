@@ -138,7 +138,7 @@ PlayFab has scalable and integrable [APIs](https://docs.microsoft.com/rest/api/p
 | **Get Latest Scorecard** | Gives the latest scorecard result for an experiment of the title. |
 
 > [!Note]
-> For details on the Experiments APIs, refer [here] (https://docs.microsoft.com/rest/api/playfab/experimentation/experimentation)
+> For more information about the Experiments APIs, see [Experimentation] (https://docs.microsoft.com/rest/api/playfab/experimentation/experimentation) APIs.
 
 ## Integrating Experiments with other PlayFab services 
 Experiments is compatible with Player Profile, PlayStream events, CloudScript and Insights Explorer. For example, you can:
@@ -148,5 +148,5 @@ Experiments is compatible with Player Profile, PlayStream events, CloudScript an
 - **Do a drill-down analysis using Insights Explorer:** A unique identifier of each variant (VariantID) is stamped on all PlayStream v2 events and two specific PlayStream v1 events (player_logged_in and player_realmoney_purchase). This can be used to do further analysis on specific metrics. (The metrics can be based on the PlayStream events or your own game telemetry.) To query, use the Insights Explorer service or connect your own analytics platform.
 
 > [!WARNING]
-> Given a new player login only has attributes associated with the player_logged_in PlayStream event, any experiment to target these new players with event-based configuration variations can only involve attributes from the player_logged_in PlayStream event. This ensures treatment assignment to the new players who have no PlayStream events associated yet.
+> A new player login only has attributes associated with the player_logged_in PlayStream event. An experiment that targets a new player with PlayStream event-based configuration variations can only use attributes that are part of the player_logged_in PlayStream event. This ensures treatment assignment to the new players who have no PlayStream events associated yet.
 
