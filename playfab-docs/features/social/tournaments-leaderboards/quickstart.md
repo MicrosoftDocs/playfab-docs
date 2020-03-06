@@ -80,8 +80,6 @@ public void RequestLeaderboard() {
             StatisticName = "HighScore",
             StartPosition = 0,
             MaxResultsCount = 10
-            }
-        }
     }, result=> DisplayLeaderboard(result), FailureCallback);
 }
 
