@@ -31,7 +31,7 @@ When you make decisions based on the results of experiments that you are running
 
 Trustworthiness is the focus of PlayFab's experiment results. All metrics are checked for statistical significance.
 
-For example, if you run an A/B experiment that measures a 2% lift in retention and it is shown as statistically significant with a p-value of 0.04 that means there is a 96% chance the true difference between treatment and control is greater than zero and 2% is the most likely value. The true difference is not directly measurable, and statistics are used to get as close to it as we can. The 4% chance that natural noise or randomness of the system misleads us. 
+For example, if you run an experiment that measures a 2% lift in retention and it is shown as statistically significant with a p-value of 0.04, that means there is 4% chance that a result of 2% or greater would have been observed assuming there was no difference between A and B (i.e., assuming the null hypothesis is true).  The true difference is not directly measurable, and statistics are used to get a reasonable estimate.  There is a chance that noise (randomness) misleads us. 
 
 Statistical significance is important because it reflects your risk tolerance and confidence level. The metrics can fluctuate from day to day, and statistical analysis provides the sound mathematical foundation for making business decisions in a noisy environment. 
 
