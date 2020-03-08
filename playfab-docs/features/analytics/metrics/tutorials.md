@@ -25,4 +25,3 @@ These tutorials teach you how to use metrics.
 - [Real-Time Analytics - Events Timeline Panel](real-time-analytics-events-timeline-panel.md)
 - [S3 Event Archiving](s3-event-archiving.md)
 - [Sessions](sessions.md)
-- [Webhooks](constructing-an-event-history-search.md)
