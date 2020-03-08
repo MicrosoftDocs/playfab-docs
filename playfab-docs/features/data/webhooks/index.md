@@ -47,6 +47,7 @@ The image shown below describes the options for configuring a Webhook.
 1. You may set the **Webhook** as **Enabled** - **true** or **false**. This allows you to temporarily suspend a Webhook without completely removing (deleting) it from the system.
 1. You may set the option to **Post multiple events in JSON array** if you want to have multiple events posted to your service in an array.  If you select this option your service must be able to handle both multiple and single events.
 1. You can add up to three request headers and the value of those headers.  This allows you to post headers in a secure way to services such as Azure Event Hubs, Azure Functions, Google Functions and Amazon Lambda. 
+> [!NOTE] The request header keys can be up to 64 characters and the values can be up to 256 characters for each header.
 1. Set up the **Filters** to only process the **Events** you need. You can filter by **Event Name**, **Event Source**, and **PlayerID**.
 
 > [!NOTE]
