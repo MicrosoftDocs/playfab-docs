@@ -895,12 +895,12 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/gaming/playfab/features/media/feature-ab-testing.svg" alt="PlayFab Analytics Features: A/B Testing card image" />
+                                                    <img src="/gaming/playfab/features/media/feature-segmentation.svg" alt="PlayFab Analytics Features: Segmentation card image" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3>A/B Testing</h3>
-                                                <p style='color: #7f7f7f'>A/B testing is a technique for running experiments to determine the optimal setting for a particular variable.</p><p><a href='/gaming/playfab/features/analytics/ab-testing/'>Overview</a></p><p><a href='/gaming/playfab/features/analytics/ab-testing/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/analytics/ab-testing/tutorials'>Tutorials</a></p>
+                                                <h3>Segmentation</h3>
+                                                <p style='color: #7f7f7f'>Player segmentation allows you to define automated groupings of players. Perform actions when segment membership changes for a player or for all the players in a segment.</p><p><a href='/gaming/playfab/features/analytics/segmentation/'>Overview</a></p><p><a href='/gaming/playfab/features/analytics/segmentation/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/analytics/segmentation/tutorials'>Tutorials</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -912,12 +912,12 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/gaming/playfab/features/media/feature-segmentation.svg" alt="PlayFab Analytics Features: Segmentation card image" />
+                                                    <img src="/gaming/playfab/features/media/feature-ab-testing.svg" alt="PlayFab Analytics Features: A/B Testing card image" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3>Segmentation</h3>
-                                                <p style='color: #7f7f7f'>Player segmentation allows you to define automated groupings of players. Perform actions when segment membership changes for a player or for all the players in a segment.</p><p><a href='/gaming/playfab/features/analytics/segmentation/'>Overview</a></p><p><a href='/gaming/playfab/features/analytics/segmentation/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/analytics/segmentation/tutorials'>Tutorials</a></p>
+                                                <h3>A/B Testing (Replaced by Experiments)</h3>
+                                                <p style='color: #7f7f7f'>A/B testing is a technique for running experiments to determine the optimal setting for a particular variable.</p><p><a href='/gaming/playfab/features/analytics/ab-testing/'>Overview</a></p><p><a href='/gaming/playfab/features/analytics/ab-testing/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/analytics/ab-testing/tutorials'>Tutorials</a></p>
                                             </div>
                                         </div>
                                     </div>
