@@ -97,4 +97,4 @@ Zone | Regions | $/GB of Network Egress
 |-|-|-|
 Zone 1| Australia Central, Australia Central 2, West US, West US 2, West Central US, East US, North Central US, South Central US, East US 2, Central US, West Europe, North Europe, Canada East, Canada Central, France Central, UK South, UK West | $0.05
 Zone 2| East Asia, Southeast Asia, Japan East, Japan West, Australia East, Australia Southeast, Central India, West India, South India, Korea Central, Korea South|  $0.08
-Zone 3 |Brazil South | $0.16
+Zone 3 |Brazil South | $0.20

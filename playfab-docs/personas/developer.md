@@ -21,11 +21,11 @@ In this topic we show you how to retrieve the **TitleId** for your Title. You ca
 > [!NOTE]
 > The quickstart guides use a test **TitleId**. When you follow a guide, use a **TitleId** for a Title that you have created in your PlayFab Developer account.
 
-Before you can make your first API call to log a player in, you must create a [PlayFab Developer account](pfab-account.md).
+Before you can make your first API call to log a player in, you must create a [PlayFab Developer account](../features/config/gamemanager/pfab-account.md).
 
 ## Retrieving your TitleId
 
-When you create a Title in Game Manager, PlayFab generates a **TitleId** that identifies your Title. When following the guides, use a **TitleId** for a Titled that you have created.
+When you create a Title in Game Manager, PlayFab generates a **TitleId** that identifies your Title. When following the guides, use a **TitleId** for a Title that you have created.
 
 For information about using Game Manager and creating a Title, see [Game Manager quickstart](../features/config/gamemanager/quickstart.md).
 
@@ -52,7 +52,7 @@ Here are some resources to help you with the initial authentication of your play
 
 To allow you to integrate PlayFab into your Title, we provide SDKs, libraries, and extensions for the most popular game engines, frameworks, and platforms.
 
-Visit [PlayFab SDKs, tools, and extensions](~/index?#pivot=documentation&panel=sdks) and choose the appropriate quickstart guide for your preferred environment. The quickstarts walk you through installing your environment, creating a new test project, and making your first API call.
+Visit [PlayFab SDKs, tools, and extensions](../index?#pivot=documentation&panel=sdks) and choose the appropriate quickstart guide for your preferred environment. The quickstarts walk you through installing your environment, creating a new test project, and making your first API call.
 
 ## Using PlayFab services to instrument your Title
 

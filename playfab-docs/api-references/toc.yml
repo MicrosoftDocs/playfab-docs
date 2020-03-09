@@ -1,5 +1,9 @@
+
 - name: API References
   href: index.md
+- name: Global API Method Error Codes
+  href: global-api-method-error-codes.md
+- name: PlayStream Events
   items:
   - name: PlayStream Event Model reference
     href: events/index.md

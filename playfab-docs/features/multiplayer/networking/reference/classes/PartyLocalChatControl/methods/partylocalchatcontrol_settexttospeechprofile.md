@@ -5,7 +5,7 @@ description: Configures the profile to use for a specified type of text-to-speec
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 11/08/2019
+ms.date: 02/10/2020
 ---
 
 # PartyLocalChatControl::SetTextToSpeechProfile  
@@ -45,7 +45,7 @@ PartyError
   
 ## Remarks  
   
-The profile provided will be used for all subsequent calls to [SynthesizeTextToSpeech()](partylocalchatcontrol_synthesizetexttospeech.md) that specify the same value for `type`. No profile will be configured until SetTextToSpeechProfile() is called at least once. Thus, this method must be called at least once before any calls to SynthesizeTextToSpeech() can succeed. <br /><br /> This method accepts a profile identifier to indicate the profile selection so that titles may either pass in the result of [PartyTextToSpeechProfile::GetIdentifier()](../../PartyTextToSpeechProfile/methods/partytexttospeechprofile_getidentifier.md) or provide a profile identifer cached from a previous Party library session.   <br /><br /> Multiple SetTextToSpeechProfile() operations can be initiated, and they will be asynchronously queued. Each operation will be processed and completed in order.   <br /><br /> This is an asynchronous operation; a [PartySetTextToSpeechProfileCompletedStateChange](../../../structs/partysettexttospeechprofilecompletedstatechange.md) will be provided via [PartyManager::StartProcessingStateChanges()](../../PartyManager/methods/partymanager_startprocessingstatechanges.md) on completion.
+The profile provided will be used for all subsequent calls to [SynthesizeTextToSpeech()](partylocalchatcontrol_synthesizetexttospeech.md) that specify the same value for `type`. No profile will be configured until SetTextToSpeechProfile() is called at least once. Thus, this method must be called at least once before any calls to SynthesizeTextToSpeech() can succeed. <br /><br /> This method accepts a profile identifier to indicate the profile selection so that titles may either pass in the result of [PartyTextToSpeechProfile::GetIdentifier()](../../PartyTextToSpeechProfile/methods/partytexttospeechprofile_getidentifier.md) or provide a profile identifier cached from a previous Party library session.   <br /><br /> Multiple SetTextToSpeechProfile() operations can be initiated, and they will be asynchronously queued. Each operation will be processed and completed in order.   <br /><br /> This is an asynchronous operation; a [PartySetTextToSpeechProfileCompletedStateChange](../../../structs/partysettexttospeechprofilecompletedstatechange.md) will be provided via [PartyManager::StartProcessingStateChanges()](../../PartyManager/methods/partymanager_startprocessingstatechanges.md) on completion.
   
 ## Requirements  
   

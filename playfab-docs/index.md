@@ -47,7 +47,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/gaming/playfab/personas/liveops/liveops">
+                                <a href="https://aka.ms/LiveOpsGuide">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -58,7 +58,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Getting Started: LiveOps</h3>
-                                                    <p>Everything you need to know about doing LiveOps on the PlayFab Platform. We have everything you need to manage and optimize player engagement and monetization.</p>
+                                                    <p>A comprehensive book that provides everything you need to know about doing LiveOps on the PlayFab Platform. This book takes you from the basics of LiveOps all the way though implementing your LiveOps strategy with PlayFab.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -77,7 +77,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Getting Started: Business Intelligence</h3>
-                                                    <p>Everything you need to know about your game’s analytics in PlayFab. Here you can get started with PlayFab Analytics and gain intelligent insight into your game and players.</p>
+                                                    <p>Everything you need to know about your game's analytics in PlayFab. Here you can get started with PlayFab Analytics and gain intelligent insight into your game and players.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -201,7 +201,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="https://s3-us-west-2.amazonaws.com/api-playfab-com-craft-files/FileAssets/playfabtechnicalwhitepaper_2016.06.18.pdf">
+                                <a href="https://aka.ms/PlayFabTechnicalWhitePaper">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -831,8 +831,8 @@ featureFlags:
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3>Insights</h3>
-                                                <p style='color: #7f7f7f'>Insights is a completely managed, cloud-scalable data system for your games.</p><p><a href='/gaming/playfab/features/insights/insights/'>Overview</a></p><p><a href='/gaming/playfab/features/insights/insights/performance-retention'>Performance and Retention</a></p><p><a href='/gaming/playfab/features/insights/insights/scheduled-scaling'>Scheduled Scaling</a></p><p><a href='/gaming/playfab/features/insights/insights/export'>Exporting Data</a></p><p><a href='/gaming/playfab/features/insights/insights/connectivity'>Connectivity</a></p><p><a href='/gaming/playfab/features/insights/insights/best-practices'>Best Practices and FAQ</a></p>
+                                                <h3>Metrics</h3>
+                                                <p style='color: #7f7f7f'>Evaluate your game's performance through the lens of the top metrics used across the industry, pre-calculated for you daily. Compare your performance against benchmarks for other titles in your genre.</p><p><a href='/gaming/playfab/features/analytics/metrics/'>Overview</a></p><p><a href='/gaming/playfab/features/analytics/metrics/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/analytics/metrics/tutorials'>Tutorials</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -848,8 +848,8 @@ featureFlags:
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3>Explorer</h3>
-                                                <p style='color: #7f7f7f'>Discover insights in your data from Game Manager using the Explorer feature. Whether you're an expert or brand new to authoring queries, Explorer is for you.</p><p><a href='/gaming/playfab/features/insights/explorer/'>Overview</a></p><p><a href='/gaming/playfab/features/insights/explorer/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/insights/explorer/management-commands'>Management commands</a></p><p><a href='/gaming/playfab/features/insights/explorer/tutorials'>Tutorials</a></p>
+                                                <h3>Reports</h3>
+                                                <p style='color: #7f7f7f'>Review summaries of your game's daily and monthly performance through auto-generated reports that can be viewed in Game Manager and downloaded or delivered to your inbox daily.</p><p><a href='/gaming/playfab/features/analytics/reports/'>Overview</a></p><p><a href='/gaming/playfab/features/analytics/reports/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/analytics/reports/tutorials'>Tutorials</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -895,16 +895,24 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/gaming/playfab/features/media/feature-reports.svg" alt="PlayFab Analytics Features: Reports card image" />
+                                                    <img src="/gaming/playfab/features/media/feature-ab-testing.svg" alt="PlayFab Experiments Features: A/B Testing card image" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3>Reports</h3>
-                                                <p style='color: #7f7f7f'>Review summaries of your game’s daily and monthly performance through auto-generated reports that can be viewed in Game Manager and downloaded or delivered to your inbox daily.</p><p><a href='/gaming/playfab/features/analytics/reports/'>Overview</a></p><p><a href='/gaming/playfab/features/analytics/reports/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/analytics/reports/tutorials'>Tutorials</a></p>
+                                                <h3>Experiments</h3>
+                                                <p style='color: #7f7f7f'>Experiments helps you determine the best strategies for your game's growth. Run multiple concurrent experiments in a controlled manner to get the data you need to perform meaningful statistical analysis.</p><p><a href='/gaming/playfab/features/analytics/experiments/'>Overview</a></p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#insights">Insights</a>
+                        <ul id="insights" class="cardsF">
+                            <li class="fullSpan">
+                                <h2>PlayFab Insights Features</h2>
                             </li>
                             <li>
                                 <div class="cardSize">
@@ -1362,7 +1370,7 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>Postman</h3>
-                                                <p><a href='/gaming/playfab/sdks/postman'>SDK</a></p><p><a href='/gaming/playfab/sdks/postman/quickstart'>Quickstart</a></p>
+                                                <p><a href='/gaming/playfab/sdks/postman'>SDK</a></p><p><a href='/gaming/playfab/sdks/postman/postman-quickstart'>Quickstart</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -1373,5 +1381,5 @@ featureFlags:
                 </ul>
             </li>
         </ul>
-	</div>
+    </div>
 </div>

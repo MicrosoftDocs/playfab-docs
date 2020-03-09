@@ -48,7 +48,8 @@ We will use a Direct3D sample for the guide. This will help you understand how t
 
 4. Modify the **Xbox Live Manifest** by editing the `package.appxmanifest` file to explicitly call out port numbers. When using ports internally, make the following change to allow the application to talk to the network:
 
-- Refer to the manifest template code example in this documentation [Xbox One exclusive resource application network manifest templates](https://docs.microsoft.com/windows/uwp/xbox-live/multiplayer/xbox-integrated-multiplayer/xim-manifest#xbox-one-exclusive-resource-application-network-manifest-templates).
+      For more information about using ports internally, see the manifest template code example in the [Xbox One exclusive resource application network manifest templates](https://docs.microsoft.com/gaming/xbox-live/features/multiplayer/xim/concepts/live-xim-manifest#xbox-one-exclusive-resource-application-network-manifest-templates) section of 
+Configuring a XIM project in a manifest.
 
 5. Modify the section for the **XML** header `<mx:Extension Category="windows.xbox.networking">` so that it looks like what is shown below.
 
