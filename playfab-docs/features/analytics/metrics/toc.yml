@@ -33,6 +33,3 @@
         href: configure-s3-bucket.md
     - name: Sessions
       href: sessions.md
-    - name: Webhooks
-      href: webhooks.md
-
