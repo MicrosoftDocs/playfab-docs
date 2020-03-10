@@ -1,2 +1,4 @@
 - name: Overview
   href: index.md
+- name: PlayStream with entity events
+  href: playstream-with-entity-events.md

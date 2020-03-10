@@ -12,11 +12,6 @@ ms.localizationpriority: medium
 
 # Dynamic Standby
 
-> [!IMPORTANT]
-> This feature is currently in **Private Preview**.  
->
-> It is provided to give you an early look at an upcoming feature, and to allow you to provide feedback while it is still in development. We will be making it broadly available to developers as soon as we can.
-
 Dynamic Standby is an auto scaling enhancement that monitors standby server threshold levels and dynamically activates increased provisioning of game servers to meet demand at scale.
 
 PlayFab’s Multiplayer Servers provides a bank of standby servers to support immediate fulfillment of requests for additional game servers in response to player demand. If the demand for additional servers grows faster than the time necessary to acquire and provision servers from the reserves, the pool of standby servers becomes depleted. The pool of available servers enter a “starvation” state and requests for game servers fail until additional servers can be provisioned. Dynamic Standby automatically activates increased provisioning of game servers to meet demand.
@@ -77,7 +72,32 @@ Revisiting figure \#1 above, the following table illustrates the target standby 
 
 When Dynamic Standby is deactivated, there is a gradual ramp down of standby servers until the original standby floor is reached.
 
-## Dynamic Standby Programmers Interface
+## Dynamic Standby Game Manager Interface
+
+The Dynamic Standby feature can be enabled from the Game Manager developer portal by navigating to the **Multiplayer | Servers | Edit Builds** page.  Dynamic Standby settings are uniquely applied to each region of a build.  The last column of the region row of the Edit Builds page presents a link labeled "Manage" which opens a modal dialog titled **Manage Dynamic Standby Settings**.  When enabled, the text *Enabled* is displayed beneath the "Manage" link.  When disabled, the text *Disabled* is displayed.
+
+ The Dynamic Settings is an advanced game server feature and editing the settings from its default values must be done with caution.
+
+  ![Dynamic Standby Settings UI](media/multiplayer-servers-dynamic-standby-enable-settings-ui.png)
+
+### Dynamic Standby Settings Dialog ###
+
+The Dynamic Standby feature can be enabled or disabled from the settings dialog.  By default, the feature is disabled.  The settings dialog provides options that control how Dynamic Standby behaves when it ramps up to support player demand or when it ramps down when players disconnect from active servers.  Each dialog input is described below:
+
+| Dialog Input  | Description  |
+|---|---|
+| Standby servers | The target number of servers to have waiting for an allocation before applying dynamic standby |
+| Maximum servers | The maximum number of servers that will be started including servers in all states |
+| Ramp down time | The amount of time after a threshold is no longer triggered before the target standby will be reduced to the normal level |
+| Dynamic Activation Thresholds | The thresholds at which to trigger dynamic standby |
+| Percent Standby | The threshold triggered when current standby drops to this percentage of the base target standby |
+|Multiplayer | The target standby will be multiplied by this amount while the threshold is reached |
+
+![Dynamic Standby Settings UI](media/multiplayer-servers-dynamic-standby-settings-ui.png)
+
+After making changes to the Dynamic Settings of a region, select [UPDATE] to return to the Edit Builds page to save the changes made.  The Edit Builds page will report the quantity of 'Unsaved Regions'.  Select [SAVE] to save all outstanding 'unsaved regions'.
+
+## Dynamic Standby API Interface
 
 The Dynamic Standby feature introduces a new object to the Multiplayer programming interface called `DynamicStandby`. The Dynamic Standby object is an optional property of the [BuildRegionParams](https://docs.microsoft.com/rest/api/playfab/multiplayer/multiplayerserver/updatebuildregions?view=playfab-rest#buildregionparams) object.
 
@@ -102,7 +122,7 @@ The default settings of the objects’ properties are described in the following
 
 ### Enable Dynamic Standby programmatically
 
-You can programmatically enable Dynamic Standby by calling any of the following Multiplayer Server methods:  
+You can programmatically enable Dynamic Standby by calling any of the following Multiplayer Server APIs:
 
 1. Override [Update Build Regions](https://docs.microsoft.com/rest/api/playfab/multiplayer/multiplayerserver/updatebuildregions?view=playfab-rest)  
    *UPSERT: An operation that inserts rows into a database table (if they do not already exist) or updates them (if they do).*
@@ -113,6 +133,6 @@ To enable Dynamic Standby programmatically, toggle the `Mode` property to ON. Th
 
 ### Modify Dynamic Standby Programmatically
 
-The Dynamic Standby can be programmatically edited by calling the Override [Update Build Regions](https://docs.microsoft.com/rest/api/playfab/multiplayer/multiplayerserver/updatebuildregions?view=playfab-rest) method.
+The Dynamic Standby can be programmatically edited by calling the [Update Build Regions](https://docs.microsoft.com/rest/api/playfab/multiplayer/multiplayerserver/updatebuildregions?view=playfab-rest) API.
 
-The Dynamic Settings is an advance game server feature and editing the settings from its default values must be done with caution. Configuring Dynamic Standby requires editing properties of the Dynamic Standby object.
+Configuring Dynamic Standby requires editing the settings properties of the Dynamic Standby object. Modifying the default values of the properties is an an advanced game server feature and must be done with caution.

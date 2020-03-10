@@ -5,7 +5,7 @@ description: Sets the chat permissions between the local chat control and a targ
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/25/2019
+ms.date: 02/10/2020
 ---
 
 # PartyLocalChatControl::SetPermissions  
@@ -39,7 +39,7 @@ PartyError
   
 ## Remarks  
   
-The target chat control can be either remote or local. The default permission set is [PartyChatPermissionOptions::None](../../../enums/partychatpermissionoptions.md). This setting is local only; if I use this to send voice chat to a remote chat control, they must also have configured themselves to allow voice chat from this chat control. <br /><br /> There is no explicit permission for sending chat text; that should be considered when constructing the list of target chat controls when calling [SendText()](partylocalchatcontrol_sendtext.md).   <br /><br /> The Party library does no enforcement of platform restrictions. Platform restrictions must be considered when setting the chat permissions between two chat controls.
+Chat permissions allow you to control incoming and outgoing voice communication, as well as incoming text communication, between any pair of chat controls. The chat permissions should be configured to reflect your target scenario. For example, if the target chat control is a member of the same team, you'd likely allow audio in both directions. If the target chat control is a member of an opposing team, you likely wouldn't allow audio in either direction. Regardless of team, you might allow receiving text. <br /><br /> The target chat control must be remote. The default permission is [PartyChatPermissionOptions::None](../../../enums/partychatpermissionoptions.md).   <br /><br /> This setting is local only. If a local chat control is configured to send audio to a remote chat control, no audio will be sent to the remote chat control unless the remote chat control has also been configured to receive audio from the local chat control in their instance of the library. Similarly, if a local chat control is configured to receive audio from a remote chat control, no audio will be received from the remote chat control unless the remote chat control has also been configured to send audio to the local chat control in their instance of the library. Therefore, both chat controls must agree that the communication is allowed; one chat control can't force another to accept or transmit undesired chat.   <br /><br /> There is no permission associated with sending chat text because each call to [SendText()](partylocalchatcontrol_sendtext.md) requires an explicit list of target chat controls. Including or omitting a target is equivalent to granting or denying send permission for that text message. The target still must have set [PartyChatPermissionOptions::ReceiveText](../../../enums/partychatpermissionoptions.md) in their instance of the library for it to actually be delivered.   <br /><br /> The Party library does not enforce platform restrictions tied to the user's identity, such as a platform setting that restricts chat to "friends only". Platform restrictions should be considered when configuring the chat permissions between two chat controls.
   
 ## Requirements  
   

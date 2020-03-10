@@ -17,7 +17,7 @@ Getting to know your players and their behavioral patterns in your game is criti
 The goal of this document is to help you get up to speed on how PlayFab empowers your business intelligence, and to quickly immerse you in the tool sets that we provide.
 
 > [!NOTE]
-> Before you can use Game Manager for your title, you need to create a [PlayFab Developer Account](pfab-account.md). 
+> Before you can use Game Manager for your title, you need to create a [PlayFab Developer Account](../features/config/gamemanager/pfab-account.md). 
 
 In general, you can analyze what players are doing in your game by following their event patterns. In PlayFab, these come from PlayStream events.
 

@@ -5,7 +5,7 @@ description: "The types of state changes that can occur."
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 10/30/2019
+ms.date: 02/10/2020
 ---
 
 # PartyStateChangeType  
@@ -62,6 +62,9 @@ enum class PartyStateChangeType  : uint32_t
     ConnectChatControlCompleted,  
     DisconnectChatControlCompleted,  
     PopulateAvailableTextToSpeechProfilesCompleted,  
+    ConfigureAudioManipulationVoiceStreamCompleted,  
+    ConfigureAudioManipulationCaptureStreamCompleted,  
+    ConfigureAudioManipulationRenderStreamCompleted,  
 }  
 ```  
   
@@ -114,6 +117,9 @@ enum class PartyStateChangeType  : uint32_t
 | ConnectChatControlCompleted | The operation started by a previous call to [PartyNetwork::ConnectChatControl()](../classes/PartyNetwork/methods/partynetwork_connectchatcontrol.md) completed.<br/><br/> The PartyStateChange object should be cast to a [PartyConnectChatControlCompletedStateChange](../structs/partyconnectchatcontrolcompletedstatechange.md) object for more information. |  
 | DisconnectChatControlCompleted | The operation started by a previous call to [PartyNetwork::DisconnectChatControl()](../classes/PartyNetwork/methods/partynetwork_disconnectchatcontrol.md) completed.<br/><br/> The PartyStateChange object should be cast to a [PartyDisconnectChatControlCompletedStateChange](../structs/partydisconnectchatcontrolcompletedstatechange.md) object for more information. |  
 | PopulateAvailableTextToSpeechProfilesCompleted | The operation started by a previous call to [PartyLocalChatControl::PopulateAvailableTextToSpeechProfiles()](../classes/PartyLocalChatControl/methods/partylocalchatcontrol_populateavailabletexttospeechprofiles.md) completed.<br/><br/> The PartyStateChange object should be cast to a [PartyPopulateAvailableTextToSpeechProfilesCompletedStateChange](../structs/partypopulateavailabletexttospeechprofilescompletedstatechange.md) object for more information. |  
+| ConfigureAudioManipulationVoiceStreamCompleted | The operation started by a previous call to [PartyChatControl::ConfigureAudioManipulationVoiceStream()](../classes/PartyChatControl/methods/partychatcontrol_configureaudiomanipulationvoicestream.md) completed.<br/><br/> The PartyStateChange object should be cast to a [PartyConfigureAudioManipulationVoiceStreamCompletedStateChange](../structs/partyconfigureaudiomanipulationvoicestreamcompletedstatechange.md) object for more information. |  
+| ConfigureAudioManipulationCaptureStreamCompleted | The operation started by a previous call to [PartyLocalChatControl::ConfigureAudioManipulationCaptureStream()](../classes/PartyLocalChatControl/methods/partylocalchatcontrol_configureaudiomanipulationcapturestream.md) completed.<br/><br/> The PartyStateChange object should be cast to a [PartyConfigureAudioManipulationCaptureStreamCompletedStateChange](../structs/partyconfigureaudiomanipulationcapturestreamcompletedstatechange.md) object for more information. |  
+| ConfigureAudioManipulationRenderStreamCompleted | The operation started by a previous call to [PartyLocalChatControl::ConfigureAudioManipulationRenderStream()](../classes/PartyLocalChatControl/methods/partylocalchatcontrol_configureaudiomanipulationrenderstream.md) completed.<br/><br/> The PartyStateChange object should be cast to a [PartyConfigureAudioManipulationRenderStreamCompletedStateChange](../structs/partyconfigureaudiomanipulationrenderstreamcompletedstatechange.md) object for more information. |  
   
   
 ## Requirements  

@@ -15,9 +15,8 @@ ms.localizationpriority: medium
 This event is triggered when any of the game build settings are modified.
 
 ## Properties
-
-| :--------------------|:-------------------|:----------------------|
 |Name|Type|Description|
+| :--------------------|:-------------------|:----------------------|
 |BuildId|String|Unique identifier of the build that was modified.|
 |DeveloperId|String||
 |MaxGamesPerHost|int32|The maximum number of game sessions that can be run on a single server.|

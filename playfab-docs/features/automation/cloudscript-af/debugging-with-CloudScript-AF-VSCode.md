@@ -3,16 +3,13 @@ title: Debugging CloudScript using Azure Functions with Visual Studio Code
 author: williacj
 description: Debugging CloudScript using Azure Functions with Visual Studio Code
 ms.author: cjwill
-ms.date: 11/26/2019
-ms.topic: article
+ms.date: 02/10/2020
+ms.topic: tutorial
 ms.prod: playfab
 keywords: playfab, automation, cloudscript, azure functions, Visual Studio Code, debugging
 ms.localizationpriority: medium
 ---
-> [!NOTE]
-> This feature is in private preview and intended for use by customers participating in the preview program.  We anticipate ongoing changes to it as we continue gathering feedback and optimizing for customer use.
-
-# Debugging CloudScript using Azure Functions with Visual Studio Code  
+# Tutorial: Debugging CloudScript using Azure Functions with Visual Studio Code  
 
 If you are using Visual Studio Code, you can use the Azure Functions extension to list your Azure Functions applications and there is a Start Streaming Logs option:
 

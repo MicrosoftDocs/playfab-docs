@@ -18,6 +18,16 @@ Release notes for the Xbox Live Helper library can be found [here](party-xboxliv
 
 PlayFab Party for Android and iOS are available on [GitHub.com](https://github.com/PlayFab/PlayFabParty/releases)
 
+## 1.3.0
+
+### Chat API Changes
+
+* The real-time audio manipulation functions, which can be used to modify outgoing or incoming voice chat audio, are implemented for Windows and Xbox. For more information, see [Using real-time audio manipulation to apply custom voice effects](concepts-realtime-audio-manipulation.md).
+* The chat permission options have more options for optionally configuring text-to-speech and microphone audio permissions independently. For more information, see [`PartyChatPermissionOptions`](reference/enums/partychatpermissionoptions.md).
+  * This breaks compatibility with previous releases of the Xbox Live Helper library. This release is compatible with version 1.2.0 of the Xbox Live Helper library. For more information, see the [Xbox Live Helper Library release notes](party-xboxlive-relnotes.md).
+* Each transcription state change now indicates whether it represents text-to-speech or microphone audio. For more information, see [`PartyVoiceChatTranscriptionReceivedStateChange`](reference/structs/partyvoicechattranscriptionreceivedstatechange.md).
+
+
 ## 1.2.2
 
 ### iOS Changes
@@ -30,6 +40,10 @@ PlayFab Party for Android and iOS are available on [GitHub.com](https://github.c
 
 - Adds support for the volume control API.
 - Removes audio focus handling from the library.  Host applications are now expected to implement their own focus handling logic.
+
+## 1.0.2
+
+- Fixed crash in background telemetry
 
 ## 1.0.1
 

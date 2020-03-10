@@ -26,6 +26,8 @@
     href: concepts-chat.md
   - name: Chat permissions and muting
     href: concepts-chat-permissions-and-muting.md
+  - name: Custom voice effects via real-time audio manipulation
+    href: concepts-realtime-audio-manipulation.md
   - name: Troubleshooting voice chat
     href: concepts-audio-troubleshooting.md
 - name: Accessibility
@@ -48,6 +50,40 @@
     href: reference/party_members.md
   - name: Classes
     items:
+    - name: PartyAudioManipulationSinkStream
+      href: reference/classes/PartyAudioManipulationSinkStream/partyaudiomanipulationsinkstream.md
+      items:
+      - name: Methods
+        items:
+        - name: GetConfiguration
+          href: reference/classes/PartyAudioManipulationSinkStream/methods/partyaudiomanipulationsinkstream_getconfiguration.md
+        - name: GetFormat
+          href: reference/classes/PartyAudioManipulationSinkStream/methods/partyaudiomanipulationsinkstream_getformat.md
+        - name: SubmitBuffer
+          href: reference/classes/PartyAudioManipulationSinkStream/methods/partyaudiomanipulationsinkstream_submitbuffer.md
+        - name: GetCustomContext
+          href: reference/classes/PartyAudioManipulationSinkStream/methods/partyaudiomanipulationsinkstream_getcustomcontext.md
+        - name: SetCustomContext
+          href: reference/classes/PartyAudioManipulationSinkStream/methods/partyaudiomanipulationsinkstream_setcustomcontext.md
+    - name: PartyAudioManipulationSourceStream
+      href: reference/classes/PartyAudioManipulationSourceStream/partyaudiomanipulationsourcestream.md
+      items:
+      - name: Methods
+        items:
+        - name: GetConfiguration
+          href: reference/classes/PartyAudioManipulationSourceStream/methods/partyaudiomanipulationsourcestream_getconfiguration.md
+        - name: GetFormat
+          href: reference/classes/PartyAudioManipulationSourceStream/methods/partyaudiomanipulationsourcestream_getformat.md
+        - name: GetAvailableBufferCount
+          href: reference/classes/PartyAudioManipulationSourceStream/methods/partyaudiomanipulationsourcestream_getavailablebuffercount.md
+        - name: GetNextBuffer
+          href: reference/classes/PartyAudioManipulationSourceStream/methods/partyaudiomanipulationsourcestream_getnextbuffer.md
+        - name: ReturnBuffer
+          href: reference/classes/PartyAudioManipulationSourceStream/methods/partyaudiomanipulationsourcestream_returnbuffer.md
+        - name: GetCustomContext
+          href: reference/classes/PartyAudioManipulationSourceStream/methods/partyaudiomanipulationsourcestream_getcustomcontext.md
+        - name: SetCustomContext
+          href: reference/classes/PartyAudioManipulationSourceStream/methods/partyaudiomanipulationsourcestream_setcustomcontext.md
     - name: PartyChatControl
       href: reference/classes/PartyChatControl/partychatcontrol.md
       items:
@@ -65,6 +101,10 @@
           href: reference/classes/PartyChatControl/methods/partychatcontrol_getcustomcontext.md
         - name: SetCustomContext
           href: reference/classes/PartyChatControl/methods/partychatcontrol_setcustomcontext.md
+        - name: ConfigureAudioManipulationVoiceStream
+          href: reference/classes/PartyChatControl/methods/partychatcontrol_configureaudiomanipulationvoicestream.md
+        - name: GetAudioManipulationVoiceStream
+          href: reference/classes/PartyChatControl/methods/partychatcontrol_getaudiomanipulationvoicestream.md
     - name: PartyDevice
       href: reference/classes/PartyDevice/partydevice.md
       items:
@@ -173,6 +213,14 @@
           href: reference/classes/PartyLocalChatControl/methods/partylocalchatcontrol_getlocalchatindicator.md
         - name: GetChatIndicator
           href: reference/classes/PartyLocalChatControl/methods/partylocalchatcontrol_getchatindicator.md
+        - name: ConfigureAudioManipulationCaptureStream
+          href: reference/classes/PartyLocalChatControl/methods/partylocalchatcontrol_configureaudiomanipulationcapturestream.md
+        - name: GetAudioManipulationCaptureStream
+          href: reference/classes/PartyLocalChatControl/methods/partylocalchatcontrol_getaudiomanipulationcapturestream.md
+        - name: ConfigureAudioManipulationRenderStream
+          href: reference/classes/PartyLocalChatControl/methods/partylocalchatcontrol_configureaudiomanipulationrenderstream.md
+        - name: GetAudioManipulationRenderStream
+          href: reference/classes/PartyLocalChatControl/methods/partylocalchatcontrol_getaudiomanipulationrenderstream.md
     - name: PartyLocalDevice
       href: reference/classes/PartyLocalDevice/partylocaldevice.md
       items:
@@ -329,12 +377,20 @@
       href: reference/callbacks/partyfreememorycallback.md
   - name: Structures
     items:
+    - name: PartyAudioFormat
+      href: reference/structs/partyaudioformat.md
+    - name: PartyAudioManipulationSinkStreamConfiguration
+      href: reference/structs/partyaudiomanipulationsinkstreamconfiguration.md
+    - name: PartyAudioManipulationSourceStreamConfiguration
+      href: reference/structs/partyaudiomanipulationsourcestreamconfiguration.md
     - name: PartyDataBuffer
       href: reference/structs/partydatabuffer.md
     - name: PartyInvitationConfiguration
       href: reference/structs/partyinvitationconfiguration.md
     - name: PartyLocalUdpSocketBindAddressConfiguration
       href: reference/structs/partylocaludpsocketbindaddressconfiguration.md
+    - name: PartyMutableDataBuffer
+      href: reference/structs/partymutabledatabuffer.md
     - name: PartyNetworkConfiguration
       href: reference/structs/partynetworkconfiguration.md
     - name: PartyNetworkDescriptor
@@ -359,6 +415,12 @@
       href: reference/structs/partychatcontrolleftnetworkstatechange.md
     - name: PartyChatTextReceivedStateChange
       href: reference/structs/partychattextreceivedstatechange.md
+    - name: PartyConfigureAudioManipulationCaptureStreamCompletedStateChange
+      href: reference/structs/partyconfigureaudiomanipulationcapturestreamcompletedstatechange.md
+    - name: PartyConfigureAudioManipulationRenderStreamCompletedStateChange
+      href: reference/structs/partyconfigureaudiomanipulationrenderstreamcompletedstatechange.md
+    - name: PartyConfigureAudioManipulationVoiceStreamCompletedStateChange
+      href: reference/structs/partyconfigureaudiomanipulationvoicestreamcompletedstatechange.md
     - name: PartyConnectChatControlCompletedStateChange
       href: reference/structs/partyconnectchatcontrolcompletedstatechange.md
     - name: PartyConnectToNetworkCompletedStateChange
@@ -447,6 +509,10 @@
       href: reference/enums/partyaudioinputstate.md
     - name: PartyAudioOutputState
       href: reference/enums/partyaudiooutputstate.md
+    - name: PartyAudioSampleType
+      href: reference/enums/partyaudiosampletype.md
+    - name: PartyAudioSourceType
+      href: reference/enums/partyaudiosourcetype.md
     - name: PartyChatControlChatIndicator
       href: reference/enums/partychatcontrolchatindicator.md
     - name: PartyChatPermissionOptions
@@ -564,6 +630,8 @@
             href: xblreference/classes/PartyXblManager/methods/partyxblmanager_getchatusers.md
           - name: LoginToPlayFab
             href: xblreference/classes/PartyXblManager/methods/partyxblmanager_logintoplayfab.md
+          - name: GetEntityIdsFromXboxLiveUserIds
+            href: xblreference/classes/PartyXblManager/methods/partyxblmanager_getentityidsfromxboxliveuserids.md
     - name: Structures
       items:
       - name: PartyXblAccessibilitySettings
@@ -572,10 +640,14 @@
         href: xblreference/structs/partyxblchatpermissioninfo.md
       - name: PartyXblHttpHeader
         href: xblreference/structs/partyxblhttpheader.md
+      - name: PartyXblXboxUserIdToPlayFabEntityIdMapping
+        href: xblreference/structs/partyxblxboxuseridtoplayfabentityidmapping.md
     - name: State changes
       items:
       - name: PartyXblCreateLocalChatUserCompletedStateChange
         href: xblreference/structs/partyxblcreatelocalchatusercompletedstatechange.md
+      - name: PartyXblGetEntityIdsFromXboxLiveUserIdsCompletedStateChange
+        href: xblreference/structs/partyxblgetentityidsfromxboxliveuseridscompletedstatechange.md
       - name: PartyXblLocalChatUserDestroyedStateChange
         href: xblreference/structs/partyxbllocalchatuserdestroyedstatechange.md
       - name: PartyXblLoginToPlayFabCompletedStateChange

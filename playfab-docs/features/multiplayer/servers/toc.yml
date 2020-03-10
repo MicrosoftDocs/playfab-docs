@@ -30,6 +30,8 @@
     href: multiplayer-build-lifecycle.md
   - name: Lifecycle of a multiplayer server build region
     href: multiplayer-build-region-lifecycle.md
+  - name: Dynamic Standby
+    href: dynamic-standby.md
 - name: Connecting clients and requesting servers
   items:
   - name: Using quality-of-service (QoS) beacons to measure player latency to Azure
