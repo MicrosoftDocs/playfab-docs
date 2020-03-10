@@ -67,5 +67,5 @@ Now we will connect the Azure app to your title database.
 
    Now that you have created an Azure app and linked it to your title database, follow the steps to connect Insights with your tool of choice:
    *  [Connect with Azure Data Factory (ADF)](connecting-insights-to-azure-data-factory.md)
-   * [Connect with Grafana](connecting-insights-with-grafana.md)
-   * [Connect with Python](connecting-insights-with-python.md)
+   * [Connect with Grafana](connecting-insights-to-grafana.md)
+   * [Connect with Python](connecting-insights-to-python.md)
