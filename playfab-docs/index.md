@@ -47,7 +47,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/gaming/playfab/personas/liveops/liveops">
+                                <a href="https://aka.ms/LiveOpsGuide">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -58,7 +58,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Getting Started: LiveOps</h3>
-                                                    <p>Everything you need to know about doing LiveOps on the PlayFab Platform. We have everything you need to manage and optimize player engagement and monetization.</p>
+                                                    <p>A comprehensive book that provides everything you need to know about doing LiveOps on the PlayFab Platform. This book takes you from the basics of LiveOps all the way though implementing your LiveOps strategy with PlayFab.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -77,7 +77,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Getting Started: Business Intelligence</h3>
-                                                    <p>Everything you need to know about your game’s analytics in PlayFab. Here you can get started with PlayFab Analytics and gain intelligent insight into your game and players.</p>
+                                                    <p>Everything you need to know about your game's analytics in PlayFab. Here you can get started with PlayFab Analytics and gain intelligent insight into your game and players.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -201,7 +201,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="https://s3-us-west-2.amazonaws.com/api-playfab-com-craft-files/FileAssets/playfabtechnicalwhitepaper_2016.06.18.pdf">
+                                <a href="https://aka.ms/PlayFabTechnicalWhitePaper">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -831,7 +831,7 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>Metrics</h3>
-                                                <p style='color: #7f7f7f'>Evaluate your game’s performance through the lens of the top metrics used across the industry, pre-calculated for you daily. Compare your performance against benchmarks for other titles in your genre.</p><p><a href='/gaming/playfab/features/analytics/metrics/'>Overview</a></p><p><a href='/gaming/playfab/features/analytics/metrics/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/analytics/metrics/tutorials'>Tutorials</a></p>
+                                                <p style='color: #7f7f7f'>Evaluate your game's performance through the lens of the top metrics used across the industry, pre-calculated for you daily. Compare your performance against benchmarks for other titles in your genre.</p><p><a href='/gaming/playfab/features/analytics/metrics/'>Overview</a></p><p><a href='/gaming/playfab/features/analytics/metrics/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/analytics/metrics/tutorials'>Tutorials</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -848,7 +848,7 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>Reports</h3>
-                                                <p style='color: #7f7f7f'>Review summaries of your game’s daily and monthly performance through auto-generated reports that can be viewed in Game Manager and downloaded or delivered to your inbox daily.</p><p><a href='/gaming/playfab/features/analytics/reports/'>Overview</a></p><p><a href='/gaming/playfab/features/analytics/reports/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/analytics/reports/tutorials'>Tutorials</a></p>
+                                                <p style='color: #7f7f7f'>Review summaries of your game's daily and monthly performance through auto-generated reports that can be viewed in Game Manager and downloaded or delivered to your inbox daily.</p><p><a href='/gaming/playfab/features/analytics/reports/'>Overview</a></p><p><a href='/gaming/playfab/features/analytics/reports/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/analytics/reports/tutorials'>Tutorials</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -883,6 +883,23 @@ featureFlags:
                                             <div class="cardText">
                                                 <h3>Segmentation</h3>
                                                 <p style='color: #7f7f7f'>Player segmentation allows you to define automated groupings of players. Perform actions when segment membership changes for a player or for all the players in a segment.</p><p><a href='/gaming/playfab/features/analytics/segmentation/'>Overview</a></p><p><a href='/gaming/playfab/features/analytics/segmentation/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/analytics/segmentation/tutorials'>Tutorials</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardImageOuter">
+                                                <div class="cardImage">
+                                                    <img src="/gaming/playfab/features/media/feature-ab-testing.svg" alt="PlayFab Experiments Features: A/B Testing card image" />
+                                                </div>
+                                            </div>
+                                            <div class="cardText">
+                                                <h3>Experiments</h3>
+                                                <p style='color: #7f7f7f'>Experiments helps you determine the best strategies for your game's growth. Run multiple concurrent experiments in a controlled manner to get the data you need to perform meaningful statistical analysis.</p><p><a href='/gaming/playfab/features/analytics/experiments/'>Overview</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -1352,7 +1369,7 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>Postman</h3>
-                                                <p><a href='/gaming/playfab/sdks/postman'>SDK</a></p><p><a href='/gaming/playfab/sdks/postman/quickstart'>Quickstart</a></p>
+                                                <p><a href='/gaming/playfab/sdks/postman'>SDK</a></p><p><a href='/gaming/playfab/sdks/postman/postman-quickstart'>Quickstart</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -1363,5 +1380,5 @@ featureFlags:
                 </ul>
             </li>
         </ul>
-	</div>
+    </div>
 </div>

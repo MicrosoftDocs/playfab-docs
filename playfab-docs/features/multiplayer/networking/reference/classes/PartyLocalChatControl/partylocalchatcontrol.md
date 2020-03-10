@@ -5,7 +5,7 @@ description: TBD
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/27/2019
+ms.date: 02/10/2020
 ---
 
 # PartyLocalChatControl  
@@ -51,6 +51,10 @@ class PartyLocalChatControl : public PartyChatControl
 | [GetIncomingTextMuted](methods/partylocalchatcontrol_getincomingtextmuted.md) | Provides whether the incoming text messages from the target chat control, in relation to the local chat control, has previously been muted. |  
 | [GetLocalChatIndicator](methods/partylocalchatcontrol_getlocalchatindicator.md) | Provides a chat indicator specifying the audio state of the local chat control. |  
 | [GetChatIndicator](methods/partylocalchatcontrol_getchatindicator.md) | Provides a chat indicator specifying the audio state of a target chat control in relation to the local chat control. |  
+| [ConfigureAudioManipulationCaptureStream](methods/partylocalchatcontrol_configureaudiomanipulationcapturestream.md) | Queues an asynchronous operation to configure the audio manipulation capture stream. |  
+| [GetAudioManipulationCaptureStream](methods/partylocalchatcontrol_getaudiomanipulationcapturestream.md) | Retrieves the audio manipulation capture stream associated with this chat control. |  
+| [ConfigureAudioManipulationRenderStream](methods/partylocalchatcontrol_configureaudiomanipulationrenderstream.md) | Queues an asynchronous operation to configure the audio manipulation render stream. |  
+| [GetAudioManipulationRenderStream](methods/partylocalchatcontrol_getaudiomanipulationrenderstream.md) | Retrieves the manipulation render stream associated with this chat control. |  
 
   
   

@@ -5,7 +5,7 @@ description: TBD
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 11/08/2019
+ms.date: 02/10/2020
 ---
 
 # Party members  
@@ -15,6 +15,8 @@ ms.date: 11/08/2019
 
 | Class | Description |  
 | --- | --- |  
+| [PartyAudioManipulationSinkStream](classes/PartyAudioManipulationSinkStream/partyaudiomanipulationsinkstream.md) | The management class for submitting audio to an audio sink stream. |  
+| [PartyAudioManipulationSourceStream](classes/PartyAudioManipulationSourceStream/partyaudiomanipulationsourcestream.md) | The management class for obtaining audio from an audio source stream. |  
 | [PartyChatControl](classes/PartyChatControl/partychatcontrol.md) | The management class for chat operations. |  
 | [PartyDevice](classes/PartyDevice/partydevice.md) | Represents a device across networks. |  
 | [PartyEndpoint](classes/PartyEndpoint/partyendpoint.md) | Represents an endpoint in a network. |  
@@ -38,9 +40,13 @@ ms.date: 11/08/2019
 
 | Structure | Description |  
 | --- | --- |  
+| [PartyAudioFormat](structs/partyaudioformat.md) | The format information needed to interpret Party audio data. |  
+| [PartyAudioManipulationSinkStreamConfiguration](structs/partyaudiomanipulationsinkstreamconfiguration.md) | The configuration information needed to set up an audio sink stream. |  
+| [PartyAudioManipulationSourceStreamConfiguration](structs/partyaudiomanipulationsourcestreamconfiguration.md) | The configuration information needed to set up an audio source stream. |  
 | [PartyDataBuffer](structs/partydatabuffer.md) | A data buffer. |  
 | [PartyInvitationConfiguration](structs/partyinvitationconfiguration.md) | Invitation configuration data. |  
 | [PartyLocalUdpSocketBindAddressConfiguration](structs/partylocaludpsocketbindaddressconfiguration.md) | The configuration used by the Party library to bind to a UDP socket. |  
+| [PartyMutableDataBuffer](structs/partymutabledatabuffer.md) | A data buffer that can be modified by the app. |  
 | [PartyNetworkConfiguration](structs/partynetworkconfiguration.md) | Network configuration data. |  
 | [PartyNetworkDescriptor](structs/partynetworkdescriptor.md) | A descriptor containing the data required for a device to connect to a network. |  
 | [PartyRegion](structs/partyregion.md) | Represents a Party library region. |  
@@ -57,6 +63,9 @@ ms.date: 11/08/2019
 | [PartyChatControlJoinedNetworkStateChange](structs/partychatcontroljoinednetworkstatechange.md) | Information specific to the *ChatControlJoinedNetwork* type of state change. |  
 | [PartyChatControlLeftNetworkStateChange](structs/partychatcontrolleftnetworkstatechange.md) | Information specific to the *ChatControlLeftNetwork* type of state change. |  
 | [PartyChatTextReceivedStateChange](structs/partychattextreceivedstatechange.md) | Information specific to the *ChatTextReceived* type of state change. |  
+| [PartyConfigureAudioManipulationCaptureStreamCompletedStateChange](structs/partyconfigureaudiomanipulationcapturestreamcompletedstatechange.md) | Information specific to the *ConfigureAudioManipulationCaptureStreamCompleted* type of state change. |  
+| [PartyConfigureAudioManipulationRenderStreamCompletedStateChange](structs/partyconfigureaudiomanipulationrenderstreamcompletedstatechange.md) | Information specific to the *ConfigureAudioManipulationRenderStreamCompleted* type of state change. |  
+| [PartyConfigureAudioManipulationVoiceStreamCompletedStateChange](structs/partyconfigureaudiomanipulationvoicestreamcompletedstatechange.md) | Information specific to the *ConfigureAudioManipulationVoiceStreamCompleted* type of state change. |  
 | [PartyConnectChatControlCompletedStateChange](structs/partyconnectchatcontrolcompletedstatechange.md) | Information specific to the *ConnectChatControlCompleted* type of state change. |  
 | [PartyConnectToNetworkCompletedStateChange](structs/partyconnecttonetworkcompletedstatechange.md) | Information specific to the *ConnectToNetworkCompleted* type of state change. |  
 | [PartyCreateChatControlCompletedStateChange](structs/partycreatechatcontrolcompletedstatechange.md) | Information specific to the *CreateChatControlCompleted* type of state change. |  
@@ -105,6 +114,8 @@ ms.date: 11/08/2019
 | [PartyAudioDeviceSelectionType](enums/partyaudiodeviceselectiontype.md) | Options for selecting audio devices|  
 | [PartyAudioInputState](enums/partyaudioinputstate.md) | States of an audio input associated with a local chat control.|  
 | [PartyAudioOutputState](enums/partyaudiooutputstate.md) | States of an audio output associated with a local chat control.|  
+| [PartyAudioSampleType](enums/partyaudiosampletype.md) | Types of Party audio samples.|  
+| [PartyAudioSourceType](enums/partyaudiosourcetype.md) | Types of Party audio sources.|  
 | [PartyChatControlChatIndicator](enums/partychatcontrolchatindicator.md) | Audio states for a target chat control in relation to a local chat control.|  
 | [PartyChatPermissionOptions](enums/partychatpermissionoptions.md) | Options for defining the communication relationship between two chat controls.|  
 | [PartyDestroyedReason](enums/partydestroyedreason.md) | Reasons an object might be destroyed.|  

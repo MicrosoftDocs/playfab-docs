@@ -104,8 +104,8 @@ There are two ways to add log files from your game:
 ### C++
 
 ```cpp
-// This will add your log line the GSDK log file, alongside other information logged by the GSDK
-GameserverSDK.LogMessage("Here is a sample log");
+// This will add your log line to the GSDK log file, alongside other information logged by the GSDK
+Microsoft::Azure::Gaming::GSDK::logMessage("Here is a sample log");
 
 // Alternatively, you can log your own files to the log directory
 std::string logFolder = Microsoft::Azure::Gaming::GSDK::getLogsDirectory();
@@ -114,7 +114,7 @@ std::string logFolder = Microsoft::Azure::Gaming::GSDK::getLogsDirectory();
 ### CSharp
 
 ```csharp
-// This will add your log line the GSDK log file, alongside other information logged by the GSDK
+// This will add your log line to the GSDK log file, alongside other information logged by the GSDK
 GameserverSDK.LogMessage("Here is a sample log");
 
 // Alternatively, you can log your own files to the log directory
@@ -124,7 +124,7 @@ string logFolder = GameserverSDK.GetLogsDirectory();
 ### Java
 
 ```java
-// This will add your log line the GSDK log file, alongside other information logged by the GSDK
+// This will add your log line to the GSDK log file, alongside other information logged by the GSDK
 GameserverSDK.log("Here is a sample log");
 
 // Alternatively, you can log your own files to the log directory

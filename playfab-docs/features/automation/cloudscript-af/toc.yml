@@ -3,8 +3,9 @@
 - name: Quickstart
   href: quickstart.md
 - name: Tutorials
-  href: tutorials.md
   items:
+  - name: Using CloudScript context models
+    href: CloudScript-af-context.md
   - name: Debugging CloudScript using Azure Functions with Visual Studio Code
     href: debugging-with-CloudScript-AF-VSCode.md
   - name: Debugging CloudScript using Azure Functions with Visual Studio
