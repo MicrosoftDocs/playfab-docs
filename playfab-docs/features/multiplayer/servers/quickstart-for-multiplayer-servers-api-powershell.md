@@ -77,7 +77,7 @@ $Asset = New-object PlayFab.MultiplayerModels.AssetReferenceParams
 $Asset.FileName = "windowsSample.zip"
 $Asset.MountPath = "C:\Assets"
 
-New-PFMultiplayerBuild -BuildName "PSTest_built"  -StartMultiplayerServerCommand "C:\Assets\WindowsRunnerCSharp.exe" -Ports $Ports -VMSize $VMSelection -AssetReferences $Asset -MultiplayerServerCountPerVm 1 -RegionConfiguration $Regions
+New-PFMultiplayerBuild -BuildName "PSTest_build"  -StartMultiplayerServerCommand "C:\Assets\WindowsRunnerCSharp.exe" -Ports $Ports -VMSize $VMSelection -AssetReferences $Asset -MultiplayerServerCountPerVm 1 -RegionConfiguration $Regions
 ```
 
 In a few seconds we should see the build through the **PowerShell** or [ListBuildSummaries API](xref:titleid.playfabapi.com.multiplayer.multiplayerserver.listbuildsummaries), as shown below.
@@ -100,9 +100,7 @@ Once we see some standing by servers, let's request one for gameplay...
 $Regions = new-object 'System.Collections.Generic.List[PlayFab.MultiplayerModels.AzureRegion]'
 $Regions.Add("EastUS");
 
-$svr = New-PFMultiplayerServer -BuildName "PSTest_built" -SessionId "00000000-0000-0000-0000-000000000001" -SessionCookie "test cookie" -PreferredRegions $regions
-$svr
-$svr.Ports
+$svr = New-PFMultiplayerServer -BuildName "PSTest_build" -SessionId "3bb5351f-363c-48f4-ba37-d14c12872fbc" -SessionCookie "test cookie" -PreferredRegions $Regions
 ```
 
 This is the core of PlayFab multiplayer servers: within 3 seconds of your matchmaking service calling [RequestMultiplayerServer](xref:titleid.playfabapi.com.multiplayer.multiplayerserver.requestmultiplayerserver), PlayFab will allocate a new server.
