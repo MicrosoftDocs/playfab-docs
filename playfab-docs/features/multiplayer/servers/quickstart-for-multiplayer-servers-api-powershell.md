@@ -53,7 +53,7 @@ Enable-PFMultiplayerServer
 We're going to use the *managed containers* option to create a build. With managed containers, your game server build is created by uploading assets that are combined with a Windows container image. For this tutorial, upload the `winrunnerSample.zip` folder from the sample servers package you downloaded earlier
 
 ```powershell
-Add-PFMultiplayerAsset -FilePath "C:\winrunnerSample.zip"
+Add-PFMultiplayerAsset -FilePath "C:\windowsSample.zip"
 ```
 
 ### Create a build
@@ -67,6 +67,15 @@ $Ports = New-object PlayFab.MultiplayerModels.Port
 $Ports.Name = "game_port"
 $Ports.Num = 3600
 $Ports.Protocol = [PlayFab.MultiplayerModels.ProtocolType]::TCP
+
+$Regions = New-object PlayFab.MultiplayerModels.BuildRegionParams
+$Regions.MaxServers = 1
+$Regions.Region = "EastUS"
+$Regions.StandbyServers = 1
+
+$Asset = New-object PlayFab.MultiplayerModels.AssetReferenceParams
+$Asset.FileName = "windowsSample.zip"
+$Asset.MountPath = "C:\Assets"
 
 New-PFMultiplayerBuild -BuildName "PSTest_built"  -StartMultiplayerServerCommand "C:\Assets\WindowsRunnerCSharp.exe" -Ports $Ports -VMSize $VMSelection -AssetReferences $Asset -MultiplayerServerCountPerVm 1 -RegionConfiguration $Regions
 ```
@@ -91,7 +100,7 @@ Once we see some standing by servers, let's request one for gameplay...
 $Regions = new-object 'System.Collections.Generic.List[PlayFab.MultiplayerModels.AzureRegion]'
 $Regions.Add("EastUS");
 
-$svr = New-PFMultiplayerServer -BuildName "MyBuild" -SessionId "00000000-0000-0000-0000-000000000001" -SessionCookie "test cookie" -PreferredRegions $regions
+$svr = New-PFMultiplayerServer -BuildName "PSTest_built" -SessionId "00000000-0000-0000-0000-000000000001" -SessionCookie "test cookie" -PreferredRegions $regions
 $svr
 $svr.Ports
 ```
