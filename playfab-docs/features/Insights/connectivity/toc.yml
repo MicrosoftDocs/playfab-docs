@@ -1,5 +1,7 @@
 - name: Overview
   href: insights-connectivity.md
+- name: Creating an Azure Application for Insights
+  href: create-AAD-app-for-insights.md
 - name: Connecting Insights to Azure Data Factory
   href: connecting-insights-to-azure-data-factory.md
 - name: Connecting Insights to Grafana

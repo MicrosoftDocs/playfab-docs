@@ -38,7 +38,7 @@ Open [Power BI](https://powerbi.microsoft.com/desktop/) for desktop.
 1. In the **Power BI Desktop** window, select **Get Data** -> **Azure Data Explorer (Kusto)**.
 2. In the **Azure Data Explorer (Kusto)** dialog box take the following steps:
    * Under **Cluster** enter your API endpoint, which follows the format `https://<titleid>.playfabapi.com`. 
-   * Under **Database** enter your title ID in all uppercase. 
+   * Under **Database** enter your title ID in all uppercase, as Database names are case sensitive. 
    * Scroll down, and under **Data Connectivity mode** select **DirectQuery**.
 
    Optionally, enter a table or query. You can also set limits for max records or max size. Note that if your query exceeds these limits, it will fail as `PartialQueryFailure` and return a message saying you exceeded limits. 
@@ -46,6 +46,7 @@ Open [Power BI](https://powerbi.microsoft.com/desktop/) for desktop.
    You can see in our example that we entered a query on the table `events.all` that returns events occuring in the last seven days. 
 
    ![Power BI Setup](media/powerBI.png)
+   ![Power BI Setup Extended](media/powerBI-2.png)
 
 3. Select **OK**, and you should now be able to execute queries and commands on the database. 
 
@@ -58,11 +59,11 @@ Open [Kusto.Explorer](https://docs.microsoft.com/azure/kusto/tools/kusto-explore
 2. In the **Add connection** dialog box take the following steps:
    * Under **Cluster connection** enter your API endpoint, which follows the format `https://<titleid>.playfabapi.com`. 
    * Under **Security**, make sure **AAD Federated** is selected. 
-   * Expand the **Advanced: Connection String** box and change the value of **Initial Catalog** from `NetDefaultDB` to `<titleID>`. In the example below, this change is highlighted in the string. 
+   * Expand the **Advanced: Connection String** box and change the value of **Initial Catalog** from `NetDefaultDB` to `<titleID>`. Note that `<titleID>` must be all uppercase here. In the example below, this change is highlighted in the string. 
   
    ![Kusto.Explorer add connection](media/kusto-explorer.png)
 
-3. Select **OK**, and you should now be able to execute queries and commands on the database.
+3. Select **OK**, and you should now be able to visualize the results of the query.
 
 ## Connect with Azure Data Explorer (ADX)
  
@@ -82,5 +83,6 @@ Follow the steps in the [Connecting Insights to Azure Data Factory (ADF)](connec
 Follow the steps in the [Connecting Insights to Grafana](connecting-insights-to-grafana.md) guide.
 
 ## Connect with Python
+
 
 Follow the steps in the [Connecting Insights to Python](connecting-insights-to-python.md) guide.
