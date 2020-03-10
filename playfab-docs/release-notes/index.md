@@ -12,6 +12,10 @@ ms.localizationpriority: medium
 
 # PlayFab Release Notes 2020
 
+## 200310
+
+A documentation update has been published to the QoS SDK to limit the number of concurrent requests for more reliable results and create a sample to show usage of that API in C#.  The update is referenced in the [PlayFab Multiplayer Servers](../features/multiplayer/servers/using-qos-beacons-to-measure-player-latency-to-azure.md) online documentation. A sample of the C# QoS SDK is published in [github](https://github.com/PlayFab/gsdkSamples/tree/master/WindowsRunnerCSharp)
+
 ## 200303
 
 ### API Changes:
@@ -70,7 +74,7 @@ Date: 2020-02-20
 
 ## 200213
 
-PlayFab’s Multiplayer Servers introduces an auto scaling enhancement named Dynamic Standby that monitors standby server threshold levels and dynamically activates increased provisioning of game servers so that demand can be met at scale.  This feature feature adds a new object to the Multiplayer programming interface called “DynamicStandby” object. The Dynamic Standby object is an optional property of the [BuildRegionParams](https://docs.microsoft.com/rest/api/playfab/multiplayer/multiplayerserver/updatebuildregions?view=playfab-rest#buildregionparams) object.
+PlayFab's Multiplayer Servers introduces an auto scaling enhancement named Dynamic Standby that monitors standby server threshold levels and dynamically activates increased provisioning of game servers so that demand can be met at scale.  This feature feature adds a new object to the Multiplayer programming interface called "DynamicStandby" object. The Dynamic Standby object is an optional property of the [BuildRegionParams](https://docs.microsoft.com/rest/api/playfab/multiplayer/multiplayerserver/updatebuildregions?view=playfab-rest#buildregionparams) object.
 
 Dynamic Standby is an advanced game server feature and editing the settings from its default values should be done with caution. Configuring Dynamic Standby can be accomplished in the Game Manager Developers' portal or programmatically editing properties of the Dynamic Standby object. To learn more about Dynamic Standby, visit its user guide in the [PlayFab Multiplayer Servers](../features/multiplayer/servers/dynamic-standby.md) online documentation.
 
@@ -130,7 +134,7 @@ PlayFab currently supports two event schemas.
 |PlayStream V1|Designed around player events|com.playfab.events.multiplayer|
 |PlayStream V2|Designed around entity events|playfab.servers|
 
-Generally, PlayFab API’s generate events in either PlayStream V1 format or PlayStream V2 format.  For example, APIs that grant player items generated a PlayStream V1 event.  Whereas APIs that grant entity items generated a PlayStream V2 event.  
+Generally, PlayFab API's generate events in either PlayStream V1 format or PlayStream V2 format.  For example, APIs that grant player items generated a PlayStream V1 event.  Whereas APIs that grant entity items generated a PlayStream V2 event.  
 
 Because the Multiplayer Servers launched in public preview at or near the same time PlayStream V2 was introduced, the Multiplayer Server feature supported both PlayStream V1 and V2 formats.  Meaning, every Multiplayer Server API call generated two events; one in V1 and V2 format.  
 
