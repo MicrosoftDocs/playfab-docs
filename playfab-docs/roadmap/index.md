@@ -65,7 +65,7 @@ These services will begin to move from private to public preview in the first ha
 
 **_The PlayFab Guide to LiveOps_**
 
-The third edition of our LiveOps guidebook is now available! [Download](http://aka.ms/LiveOpsGuide) your copy today and read about how LiveOps can help you build games with healthy communities.
+The third edition of our LiveOps guidebook is now available! [Download](https://aka.ms/LiveOpsGuide) your copy today and read about how LiveOps can help you build games with healthy communities.
 
 **_PlayFab Experiments_**
 
