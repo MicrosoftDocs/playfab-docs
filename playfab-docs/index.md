@@ -926,14 +926,6 @@ featureFlags:
                         </ul>
                     </li>
                     <li>
-                        <a href="#insights">Insights</a>
-                        <ul id="insights" class="cardsF">
-                            <li class="fullSpan">
-                                <h2>PlayFab Insights Features</h2>
-                            </li>
-                                                    </ul>
-                    </li>
-                    <li>
                         <a href="#engagement">Engagement</a>
                         <ul id="engagement" class="cardsF">
                             <li class="fullSpan">
