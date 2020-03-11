@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 ---
 
 # PlayFab Roadmap
-_Last Update: 2/20/2020_
+_Last Update: 3/10/2020_
 
 PlayFab is gearing up for an exciting decade! With 2020 comes a modern vision of our services that we’re working hard to deliver. 
 
@@ -51,10 +51,6 @@ We’re working on management experiences for Linux builds and additional graphs
 
 This service is available today in previews. As we further incorporate your feedback, we will make this generally available to all PlayFab users. 
 
-**_PlayFab Experiments_**
-
-This will provide a more advanced framework for A/B tests and other experiments.
-
 **_Insights_**
 
 The initial release of a new stand-alone PlayFab Insights service will give you significantly more control over your data, analytics system and environment. Our goal is to provide petabyte-scale publisher-level analytics out-of-the-box. Insights will not only allow you to choose how long you retain data and how much power you want behind your queries; it will also open up multiple new ways to access data including connecting popular visualization platforms or your favorite SQL IDE. 
@@ -67,6 +63,16 @@ These services will begin to move from private to public preview in the first ha
 
 ## **Available Now:**
 
+**_The PlayFab Guide to LiveOps_**
+
+The third edition of our LiveOps guidebook is now available! [Download](https://aka.ms/LiveOpsGuide) your copy today and read about how LiveOps can help you build games with healthy communities.
+
+**_PlayFab Experiments_**
+
+Our new and more adavnced framework for A/B tests and other experiments is now available!
+
+We posted a detailed overview on our [blog](https://blog.playfab.com/blog/announcing-playfabs-experimentation-all-new-for-trustworthy-experiments).
+
 **_CloudScript with Azure Functions_**
 
 [CloudScript using Azure Functions](https://docs.microsoft.com/gaming/playfab/features/automation/cloudscript-af/) brings support for [new languages](https://docs.microsoft.com/azure/azure-functions/supported-languages) (including C#) as well as local debugging in Visual Studio and Visual Studio Code. 
@@ -74,7 +80,9 @@ PlayFab asynchronously waits for these functions to complete, allowing them to r
 
 **_PlayFab Visual Studio Extension_**
 
-The [PlayFab Visual Studio Code Extension](https://marketplace.visualstudio.com/items?itemName=PlayFab.playfab-explorer) will roll out soon with a [GitHub open source repository](https://github.com/PlayFab/vscode-playfab-explorer) for community involvement.
+The PlayFab Extension is now available in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=PlayFab.playfab-explorer). In addition, the extension is open source with code available in [GitHub](https://github.com/PlayFab/vscode-playfab-explorer). We continue to iterate on the PlayFab Extension and you are welcome to add features and improvements along with us.
+
+More information is available on on our [blog](https://blog.playfab.com/blog/announcing-the-open-source-playfab-visual-studio-code-extension).
 
 **_Insights Management Commands_**
 
