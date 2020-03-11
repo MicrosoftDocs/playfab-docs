@@ -23,7 +23,7 @@ This guide helps you get started using Insights along with Grafana. To learn mor
     *  Access to the Explorer tab and associated data.
     *  Read and write access to Analytics data.
 
-## Create and Azure Active Directory (AAD) application and connect it to your title database
+## Create an Azure Active Directory (AAD) application and connect it to your title database
 
 1. Follow the steps in this [guide](create-AAD-app-for-insights.md) to create an Azure Active Directory (AAD) application and connect it to your title database.
 
@@ -65,7 +65,7 @@ Now that your title database is linked to an Azure app, you can use the app to c
 
    ![Grafana New Panel](media/grafana-new-panel.png)
 
-3. In the **Query** panel, select your own database from the drop-down menu. In this example our database is name **Unicorn Battle**.
+3. In the **Query** panel next to **Database** select your own database from the drop-down menu. In this example our database is named **Unicorn Battle**.
    
    ![Grafana New Query](media/grafana-new-query.png)
 

@@ -22,7 +22,7 @@ This guide helps you get started using Insights along with Azure Data Factory. T
     *  Access to the Explorer tab and associated data.
     *  Read and write access to Analytics data.
 
-## Create and Azure Active Directory (AAD) application and connect it to your title database
+## Create an Azure Active Directory (AAD) application and connect it to your title database
 
 1. Follow the steps in this [guide](create-AAD-app-for-insights.md) to create an Azure Active Directory (AAD) application and connect it to your title database.
 
