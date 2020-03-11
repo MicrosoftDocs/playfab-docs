@@ -29,3 +29,6 @@ If the same studio started with no data and added 1 TB of data per day each day 
 This makes the studios total monthly cost to be 1,974 credits for Insights performance and data retention.
 
 Pricing details for credits can be found at [Pricing Details](http://playfab.com/pricing).
+
+## Row Write Overages   
+Each Insights Performance level has an allotted number of writes per second to the data cluster. For customers not in developer mode, going beyond the number of row writes for your performance level triggers row write overages instead of event throttling. Row write overages are charged at 1 credit per 2.7 million (2,700,000) rows written. This pricing is designed to allow for specific ingestion scenarios where it may be more cost effective to have row write overages instead of raising the Insights performance level.  
