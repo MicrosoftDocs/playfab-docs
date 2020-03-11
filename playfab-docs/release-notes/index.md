@@ -17,13 +17,13 @@ ms.localizationpriority: medium
 Date: 2020-03-10
 
 ### New
-* Experiments - We launched the public preview of PlayFab Experiments. Read more on the [blog](https://blog.playfab.com/blog/announcing-playfabs-experimentation-all-new-for-trustworthy-experiments) and visit the [documentation](../features/analytics/experiments/) site to learn more and get started!
+* Experiments - We launched the public preview of PlayFab Experiments. Read more on the [blog](https://blog.playfab.com/blog/announcing-playfabs-experimentation-all-new-for-trustworthy-experiments) and visit the [documentation](../features/analytics/experiments/index.md) site to learn more and get started!
 * Data - PlayStream v2 events are now supported in the Game Manager Event History.
 * Groups - We have added PlayStream v2 events for `MembersAdded`, `MembersRemoves`, `MembersRoleUpdated`, `EntityCreated`, and `EntityDeleted`.
 * Multiplayer Servers - UX in game manager for setting the dynamic standing by configuration.
 
 ### Improvements
-* Authentication - Updated [documentation](../features/authentication/platform-specific-authentication/apple-open-id) for how to use apple with PlayFab's OpenID integration.
+* Authentication - Updated [documentation](../features/authentication/platform-specific-authentication/apple-open-id.md) for how to use apple with PlayFab's OpenID integration.
 * Multiplayer Servers - Dynamic Standby included in the build usage chart.
 * Multiplayer Servers - A documentation update has been published to the QoS SDK to limit the number of concurrent requests for more reliable results and create a sample to show usage of that API in C#. The update is referenced in the [PlayFab Multiplayer Servers](../features/multiplayer/servers/using-qos-beacons-to-measure-player-latency-to-azure.md) online documentation. A sample of the C# QoS SDK is published in [Github](https://github.com/PlayFab/gsdkSamples/tree/master/WindowsRunnerCSharp).
 * PlayStream - Contact email events now send PlayStream events in the v2 event schema.
@@ -40,8 +40,7 @@ Date: 2020-03-10
 * Config - Previously email notifications were not being sent when the `UserDataIndividualValueSize` limit is hit. Now an email will be sent when there are multiple players exceeding this limit in a two hour window.
 * Game Manager - After linearizing the page within the PlayStream Monitor options, all links and buttons are properly accessible on the Title Overview page.
 * Game Manager - Previously there was a bug preventing the user from updating their contact email. This is now fixed.
-* Multiplayer Servers - Added detailed steps to
-“Overriding the UE4” methods section. Read more [here](../features/multiplayer/servers/playfabgsdk_guide).
+* Multiplayer Servers - Added detailed steps to “Overriding the UE4” methods section. Read more [here](../features/multiplayer/servers/playfabgsdk_guide.md).
 * Multiplayer Servers - Previously Game Manger overwrote dynamic floor settings when updated through the API. Now Game Manager will not overwrite the dynamic floor settings.
 * Multiplayer Servers - Renamed the "Stand By Cores Efficiency" chart to the more appropriately named "Stand By Cores Overhead" chart.
 * PlayStream - The PlayStream v2 event name limit was 40 characters. It has been updated to 64 characters to match the limit of the `WriteEvents` API.
