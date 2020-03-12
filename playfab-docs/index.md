@@ -844,6 +844,23 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
+                                                   <img src="/gaming/playfab/features/media/feature-explorer.svg" alt="PlayFab Insights Features: Explorer card image" />	    
+                                                </div>
+                                            </div>
+                                            <div class="cardText">
+                                                <h3>Explorer</h3>
+                                                <p style='color: #7f7f7f'>Discover insights in your data from Game Manager using the Explorer feature. Whether you're an expert or brand new to authoring queries, Explorer is for you.</p><p><a href='/gaming/playfab/features/insights/explorer/'>Overview</a></p><p><a href='/gaming/playfab/features/insights/explorer/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/insights/explorer/management-commands'>Management commands</a></p><p><a href='/gaming/playfab/features/insights/explorer/tutorials'>Tutorials</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardImageOuter">
+                                                <div class="cardImage">
                                                     <img src="/gaming/playfab/features/media/feature-explorer.svg" alt="PlayFab Insights Features: Explorer card image" />
                                                 </div>
                                             </div>

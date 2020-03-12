@@ -11,12 +11,12 @@ ms.localizationpriority: medium
 ---
 
 # Exporting Data
-Event Archive is the primary mechanism for exporting data from your Insights data cluster without querying. Event Archive can be reached under the data section of PlayFab Game Manager. The amount of distinct archive commands you can run is tied to your performance level. 
+Event Export is the primary mechanism for exporting data from your Insights data cluster without querying. Event Export can be reached under the data section of PlayFab Game Manager. The amount of distinct export commands you can run is tied to your performance level. 
 
 ![Insights Schedule](media/export-modified.png)<br>
-To create a new archive:
-1. Navigate to the Event Archive page.
-2. Click "New Event Archive".
+To create a new export:
+1. Navigate to the Event Export page.
+2. Click "New Event Export".
 3. Fill out the required fields with your external storage account information.
 4. There are several options for which data to export to choose from
    1. You may select the checkbox for all events, this will export all data.
