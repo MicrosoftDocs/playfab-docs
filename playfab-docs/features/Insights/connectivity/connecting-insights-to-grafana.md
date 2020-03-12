@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 [comment]: < Replace links with relative links once placement of article is determined. >
 
-This guide helps you get started using Insights along with Grafana. To learn more about other tools you can connect Insights with, go [here](insights-connectivity.md).
+This guide helps you get started using Insights along with Grafana. To learn more about other tools you can connect Insights with, go to the [connectivity guide](insights-connectivity.md).
 
 ## Prerequisites
 * A PlayFab user account authenticated with [AAD (Azure Active Directory)](https://docs.microsoft.com/gaming/playfab/features/authentication/aad-authentication/).
@@ -28,7 +28,7 @@ This guide helps you get started using Insights along with Grafana. To learn mor
 1. Follow the steps in this [guide](create-AAD-app-for-insights.md) to create an Azure Active Directory (AAD) application and connect it to your title database.
 
 ## Get set up with Grafana
-1. If you don't have a free Grafana account, create one [here](https://grafana.com/login). You can either download Grafana to run on your computer or use the online hosted instance. 
+1. If you don't have a free Grafana account, [create one](https://grafana.com/login). You can either download Grafana to run on your computer or use the online hosted instance. 
 
 2. Install the Azure Data Explorer [plugin](https://grafana.com/grafana/plugins/grafana-azure-data-explorer-datasource) for Grafana.
 

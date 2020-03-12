@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 # Tutorial: Connecting Insights to Azure Data Factory (ADF)
 
 [comment]: < Replace links with relative links once placement of article is determined. >
-This guide helps you get started using Insights along with Azure Data Factory. To learn more about other tools you can connect Insights with, go [here](insights-connectivity.md).
+This guide helps you get started using Insights along with Azure Data Factory. To learn more about other tools you can connect Insights with, go to the [connectivity guide](insights-connectivity.md).
 
 ## Prerequisites
 * A PlayFab user account authenticated with [AAD (Azure Active Directory)](https://docs.microsoft.com/gaming/playfab/features/authentication/aad-authentication/).
