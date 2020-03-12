@@ -5,7 +5,7 @@
 - name: Insights Scheduled Scaling
   href: scheduled-scaling.md
 - name: Connecting External Tools
-  href: connectivity.md
+  href: ../connectivity/toc.yml
 - name: Exporting Data
   href: export.md
 - name: Best Practices and FAQ
