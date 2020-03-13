@@ -17,7 +17,7 @@ This event is triggered when a player makes a real money purchase, and generates
 ## Properties
 
 |Name|Type|Description|
-
+| :--------------------|:-------------------|:----------------------|
 |OrderId|String|Unique identifier of the order.|
 |OrderTotal|uint32|Total value of the purchase in the system currency (defaults to USD).|
 |PaymentProvider|String|Payment provider used to make the purchase.|

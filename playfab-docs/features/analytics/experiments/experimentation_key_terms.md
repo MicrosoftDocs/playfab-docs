@@ -48,7 +48,7 @@ Variables are defined to set the feature or experience configuration. Defining f
 ### P-value
 The p-value in an A/B experiment is the probability that there is no difference between variant groups.
 
-When the p-value is high it implies that any difference between the A and B groups is due to sampling noise.  When the p-value is low (below our threshold) it implies that the there is a real difference between variants and the show delta is the most likely actual difference.
+When the p-value is high it implies that any difference between the A and B groups is due to sampling noise.  When the p-value is low (below our threshold) it implies that the there is a real difference between variants and the shown delta is the most likely actual difference.
 
 ### Confidence Interval
 In A/B testing, confidence intervals mitigate the risk of sampling errors, in a sense manages the risk associated with implementing a new variant. If the tool indicates, “We are 95% confident that the conversion rate is X% +/- Y%,” then you need to account for the +/- Y% as the margin of error. How confident you are in your results depends largely on how large the margin of error is. If the two conversion ranges overlap, you need to keep testing to get a valid result.
