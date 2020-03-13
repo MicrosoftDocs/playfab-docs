@@ -15,7 +15,7 @@ In order to properly run your game server, all dependent DLLs must be present in
 
 ## Determine required DLLs
 1. Download [ListDlls](https://docs.microsoft.com/en-us/sysinternals/downloads/listdlls) from sysinternals.
-1. Run the game server exe that you wish to containerize on your local machine. This can be done using the [local debug steps](.\locally-debugging-game-servers-and-integration-with-playfab.md) in process mode or manually.
+1. Run the game server exe that you wish to containerize on your local machine. This can be done using the [local debug steps](.\locally-debugging-game-servers-and-integration-with-playfab.md) in **process mode** or as a standalone process without using the mock agent.
 1. Run listdlls exe pointing at your running game server. Example: `listdlls ServerLoadSimulator.exe`
 1. The list of DLLs that are not in your exe folder are the system DLLs required by your game server. The next step is to determine which are included in the container.
 
