@@ -60,7 +60,7 @@ Access to the SDKs for Nintendo Switch, Sony PlayStation 4, and Google Stadia re
 |-|-|-|
 |Nintendo Switch | [C++ SDK](https://github.com/PlayFab/PlayFabPartySwitch)| [Chat App](https://github.com/PlayFab/PlayFabPartySwitch/tree/master/Switch/PartySample) |
 |Sony PlayStation 4 | [C++ SDK](https://github.com/PlayFab/PlayFabPartyPS4)| [Chat App](https://github.com/PlayFab/PlayFabPartyPS4/tree/master/PS4/PartySample) |
-|Google Stadia | [C++ SDK](https://github.com/PlayFab/PlayFabPartyStadia| [Chat App](https://github.com/PlayFab/PlayFabPartyStadia/tree/master/Stadia/PartySample) |
+|Google Stadia | [C++ SDK](https://github.com/PlayFab/PlayFabPartyStadia)| [Chat App](https://github.com/PlayFab/PlayFabPartyStadia/tree/master/Stadia/PartySample) |
 
 ## Relationship to the game and other components
 
