@@ -1,5 +1,5 @@
 ---
-title: Determining required DLLs
+title: Determining required DLLs for Windows game servers
 author: andhesky
 description: Describes how to determine the list of dlls required for your game servers and how to compare that list to the set of dlls in PlayFab MPS.  
 ms.author: andhesky
@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 ---
 
 # Determining required DLLs that need to be included in the asset package
-In order to properly run your game server, all dependent DLLs must be present in the container. When using Linux containers, you can build dependent DLLs into your container image or include them in the asset zip file. When using Windows, PlayFab includes many commonly used DLLs in the container image. Any additional DLLs must be included in your asset zip file. This article walks through the steps to determine the list of DLLs required on Windows then allows you to compare that list against the DLLs that are included in the managed container image.
+In order to properly run your game server, all dependent DLLs must be present in the container. When using Windows, PlayFab includes many commonly used DLLs in the container image. Any additional DLLs must be included in your asset zip file. This article walks through the steps to determine the list of DLLs required on Windows then allows you to compare that list against the DLLs that are included in the managed container image.
 
 ## Determine required DLLs
 1. Download [ListDlls](https://docs.microsoft.com/sysinternals/downloads/listdlls) from sysinternals.
