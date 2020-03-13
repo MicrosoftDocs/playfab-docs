@@ -1,18 +1,16 @@
 ---
-title: Connecting Insights
+title: Connecting external tools with Insights
 author: natashaorie
-description: Guide to connecting Inisghts with other tools. 
+description: Guide to connecting external tools with Insights. 
 ms.author: norie
-ms.date: 02/27/2020    
+ms.date: 03/20/2020    
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, insights
 ms.localizationpriority: medium
 ---
 
-# Connecting Insights to other tools
-
-[comment]: < Replace links with relative links once placement of article is determined. >
+# Connecting external tools with Insights
 
 PlayFab Insights offers an unprecedented look into your game's data and the trends created by your users. Part of Insights' power is the flexibility to be paired with many other data and analytics tools. This guide will show you how to connect Insights to other tools.
 
@@ -76,13 +74,13 @@ Open [Kusto.Explorer](https://docs.microsoft.com/azure/kusto/tools/kusto-explore
 
 ## Connect with Azure Data Factory (ADF)
 
-Follow the steps in the [Connecting Insights to Azure Data Factory (ADF)](connecting-insights-to-azure-data-factory.md) guide.
+Follow the steps in the [Connecting Azure Data Factory (ADF) to Insights](connecting-azure-data-factory-to-insights.md) guide.
 
 ## Connect with Grafana
 
-Follow the steps in the [Connecting Insights to Grafana](connecting-insights-to-grafana.md) guide.
+Follow the steps in the [Connecting Grafana to Insights](connecting-grafana-to-insights.md) guide.
 
 ## Connect with Python
 
 
-Follow the steps in the [Connecting Insights to Python](connecting-insights-to-python.md) guide.
+Follow the steps in the [Connecting Python to Insights](connecting-python-to-insights.md) guide.

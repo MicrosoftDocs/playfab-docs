@@ -3,7 +3,7 @@ title: Creating an AAD app and connecting it to title database
 author: natashaorie
 description: Creating an AAD app and connecting it to title database
 ms.author: norie
-ms.date: 02/27/2020    
+ms.date: 03/20/2020    
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, insights
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Tutorial: Create an Azure Active Directory (AAD) Application to use with Insights
 
-This tutorial covers a prerequisite for connecting Insights with following tools:
+This tutorial covers one of the prerequisites for connecting the following tools with Insights:
 * Azure Data Factory (ADF)
 * Grafana
 * Python
@@ -65,7 +65,7 @@ Now we will connect the Azure app to your title database.
 
    ## Next steps
 
-   Now that you have created an Azure app and linked it to your title database, follow the steps to connect Insights with your tool of choice:
-   *  [Connect with Azure Data Factory (ADF)](connecting-insights-to-azure-data-factory.md)
-   * [Connect with Grafana](connecting-insights-to-grafana.md)
-   * [Connect with Python](connecting-insights-to-python.md)
+   Now that you have created an Azure app and linked it to your title database, follow the steps to connect your tool of choice with Insights:
+   *  [Connect with Azure Data Factory (ADF)](connecting-azure-data-factory-to-insights.md)
+   * [Connect with Grafana](connecting-grafana-to-insights.md)
+   * [Connect with Python](connecting-python-to-insights.md)

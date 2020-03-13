@@ -1,10 +1,10 @@
 - name: Overview
-  href: insights-connectivity.md
+  href: index.md
 - name: Creating an Azure Application for Insights
-  href: create-AAD-app-for-insights.md
-- name: Connecting Insights to Azure Data Factory
-  href: connecting-insights-to-azure-data-factory.md
-- name: Connecting Insights to Grafana
-  href: connecting-insights-to-grafana.md
-- name: Connecting Insights to Python
-  href: connecting-insights-to-python.md
+  href: creating-AAD-app-for-insights.md
+- name: Connecting Azure Data Factory to Insights
+  href: connecting-azure-data-factory-to-insights.md
+- name: Connecting Grafana to Insights
+  href: connecting-grafana-to-insights.md
+- name: Connecting Python to Insights
+  href: connecting-python-to-insights.md

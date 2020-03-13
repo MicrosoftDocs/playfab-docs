@@ -1,19 +1,18 @@
 ---
-title: Connecting Insights to Azure Data Factory (ADF)
+title: Connecting Azure Data Factory (ADF) to Insights
 author: natashaorie
-description: Guide to connecting Inisghts with Azure Data Factory (ADF).
+description: Guide to connecting Azure Data Factory (ADF) to Insights.
 ms.author: norie
-ms.date: 03/5/2020    
+ms.date: 03/20/2020    
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, insights
 ms.localizationpriority: medium
 ---
 
-# Tutorial: Connecting Insights to Azure Data Factory (ADF)
+# Tutorial: Connecting Azure Data Factory (ADF) to Insights
 
-[comment]: < Replace links with relative links once placement of article is determined. >
-This guide helps you get started using Insights along with Azure Data Factory. To learn more about other tools you can connect Insights with, go to the [connectivity guide](insights-connectivity.md).
+This guide helps you get started using Azure Data Factory (ADF) along with Insights. To learn more about other tools you can connect Insights with, go to the [connectivity guide](index.md).
 
 ## Prerequisites
 * A PlayFab user account authenticated with [AAD (Azure Active Directory)](https://docs.microsoft.com/gaming/playfab/features/authentication/aad-authentication/).
@@ -24,7 +23,7 @@ This guide helps you get started using Insights along with Azure Data Factory. T
 
 ## Create an Azure Active Directory (AAD) application and connect it to your title database
 
-1. Follow the steps in this [guide](create-AAD-app-for-insights.md) to create an Azure Active Directory (AAD) application and connect it to your title database.
+1. Follow the steps in this [guide](creating-AAD-app-for-insights.md) to create an Azure Active Directory (AAD) application and connect it to your title database.
 
 ## Create a new Data Factory
 1. Login to the [Azure portal](https://portal.azure.com). From the homepage, select **Create a resource**. Search for and select **Data Factory**. Select **Create**.
@@ -81,4 +80,4 @@ We are now going to create a new pipeline.
 ## Additional resources
 
 * Azure Data Factory (ADF) [documentation](https://docs.microsoft.com/azure/data-factory/).
-* Connect Insights with [more tools](insights-connectivity.md).
+* Connect [more tools](insights-connectivity.md) with Insights.
