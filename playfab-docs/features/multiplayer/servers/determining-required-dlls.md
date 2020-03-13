@@ -23,7 +23,7 @@ In order to properly run your game server, all dependent DLLs must be present in
 
 ## Compare required DLLs with those included in container
 1. Download the PlayFab multiplayer container image (setup.ps1 script referenced in [local debug steps](locally-debugging-game-servers-and-integration-with-playfab.md) with do this for you). Alternatively, allocate a new thunderhead instance and RDP.
-1. Start a command line session in a new docker container by running the command `docker run -it mcr.microsoft.com/playfab/multiplayer:wsc-10.0.17134.950 cmd` in an administrator command window. Replace "wsc-10.0.17134.285" with the tag of the docker image you downloaded in step 1. If you are not sure of the correct tag to use, the list of downloaded images can be queried by running `docker images`.
+1. Start a command line session in a new docker container by running the command `docker run -it mcr.microsoft.com/playfab/multiplayer:wsc-10.0.17134.950 cmd` in an administrator command window. Replace "wsc-10.0.17134.950" with the tag of the docker image you downloaded in step 1. If you are not sure of the correct tag to use, the list of downloaded images can be queried by running `docker images`.
 
 ![docker images output](media/docker-images.png)
 
