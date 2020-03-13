@@ -8,5 +8,7 @@
   href: ../connectivity/toc.yml
 - name: Exporting Data
   href: export.md
+- name: Insights Management Commands
+  href: management-commands.md
 - name: Best Practices and FAQ
   href: best-practices.md
