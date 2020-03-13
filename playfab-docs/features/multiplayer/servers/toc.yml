@@ -13,7 +13,7 @@
   - name: Integrating game servers with the PlayFab game server SDK (GSDK)
     href: integrating-game-servers-with-gsdk.md
   - name: Determining required DLLs
-    href: determining-required.dlls.md
+    href: determining-required-dlls.md
   - name: Locally debugging game servers and integration with PlayFab
     href: locally-debugging-game-servers-and-integration-with-playfab.md
   - name: Case study of Unreal Engine integration (UE4)
