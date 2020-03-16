@@ -28,6 +28,18 @@ When you change your performance down, data is loaded from hot cache into storag
 ### *Compute Power*
 Compute power represents the max quantity of vCPUs allocated for each query. Based on the parallelization of a given query plan, some queries cannot take full advantage of all vCPUs at once (order, distinct). Additionally, to improve interactivity of the querying experience, priority is given to queries by start time, meaning subsequent concurrent queries may see decreased vCPU allocation.
 
+Compute power also increases maximum query length before timeout. the following table represents current numbers:
+| Compute Power           | Maximum Compute Time (Seconds) |
+|-------------------------|--------------------------------|
+| 2 (Free Tier)           | 30s                            |
+| 2 (Performance Level 2) | 60s                            |
+| 4                       | 120s                           |
+| 8                       | 180s                           |
+| 16                      | 210s                           |
+| 32                      | 240s                           |
+| 48                      | 270s                           |
+| 64                      | 300s                           |
+
 ### *Max Memory Per Query*
 This represents the total memory allocated to the query. Note this is different than the memory for storing data. Query memory is specifically for storing query data for computation and processing, this is an important resource for more complex queries. 
 

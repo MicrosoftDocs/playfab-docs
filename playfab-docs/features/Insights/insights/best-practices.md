@@ -65,3 +65,5 @@ ms.localizationpriority: medium
    3. The custom query output includes details from the ETL process. Some extra columns will be included. Those columns are generally hidden as they do not serve a purpose.
 ### What happens if I reduce my retention setting to a quantity of days that is less than the total number of days I have data for?
    1. You'll be prompoted when you reduce retention warning you that if you reduce your retention you may delete data. For example, if you have been operating for 1 year and reduce retention to 6 months, only the most recent 6 months of data will be saved, the rest will be discarded.
+### How do I increase the timeout time on my queries?
+   1. The time out limits on queries is relative to your compute power which is defined in your performance level. Refer to the table in [Performance and Retention](https://docs.microsoft.com/en-us/gaming/playfab/features/insights/insights/performance-retention) under compute power.
