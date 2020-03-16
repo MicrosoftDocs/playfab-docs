@@ -1,20 +1,20 @@
 ---
-title: Connecting Insights to Grafana
+title: Connecting Python to Insights
 author: natashaorie
-description: Guide to connecting Inisghts to Grafana.
+description: Guide to connecting Python to Insights.
 ms.author: norie
 ms.date: 02/27/2020    
 ms.topic: article
 ms.prod: playfab
-keywords: playfab, insights
+keywords: playfab, insights, python
 ms.localizationpriority: medium
 ---
 
-# Tutorial: Connecting Insights to Python
+# Tutorial: Connecting Python to Insights
 
 [comment]: < Replace links with relative links once placement of article is determined. >
 
-This guide helps you get started using Insights with Python. It uses the Azure Kusto Python SDK. To learn more about other tools you can connect Insights with, go to the [connectivity guide](insights-connectivity.md).
+This guide helps you get started using Python with Insights. It uses the Azure Kusto Python SDK. To learn more about other tools you can connect with Insights, go to the [connectivity guide](index.md).
 
 ## Prerequisites
 * A PlayFab user account authenticated with [AAD (Azure Active Directory)](https://docs.microsoft.com/gaming/playfab/features/authentication/aad-authentication/).
@@ -25,7 +25,7 @@ This guide helps you get started using Insights with Python. It uses the Azure K
 
 ## Create an Azure Active Directory (AAD) application and connect it to your title database
 
-1. Follow the steps in this [guide](create-AAD-app-for-insights.md) to create an Azure Active Directory (AAD) application and connect it to your title database.
+1. Follow the steps in this [guide](creating-AAD-app-for-insights.md) to create an Azure Active Directory (AAD) application and connect it to your title database.
 
 ## Install Python packages
 
@@ -75,3 +75,8 @@ response = client.execute(db, query)
 # Response processing
 print(response)
 ```
+
+## Additional resources
+
+* Azure Kusto Python SDK [documentation](https://docs.microsoft.com/azure/kusto/api/python/kusto-python-client-library).
+* Connect [more tools](insights-connectivity.md) with Insights.

@@ -1,20 +1,18 @@
 ---
-title: Connecting Insights to Grafana
+title: Connecting Grafana to Insights
 author: natashaorie
-description: Guide to connecting Inisghts to Grafana.
+description: Guide to connecting Grafana to Insights.
 ms.author: norie
-ms.date: 03/5/2020    
+ms.date: 03/20/2020    
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, insights
 ms.localizationpriority: medium
 ---
 
-# Tutorial: Connecting Insights to Grafana
+# Tutorial: Connecting Grafana to Insights
 
-[comment]: < Replace links with relative links once placement of article is determined. >
-
-This guide helps you get started using Insights along with Grafana. To learn more about other tools you can connect Insights with, go to the [connectivity guide](insights-connectivity.md).
+This guide helps you get started using Grafana along with Insights. To learn more about other tools you can connect Insights with, go to the [connectivity guide](index.md).
 
 ## Prerequisites
 * A PlayFab user account authenticated with [AAD (Azure Active Directory)](https://docs.microsoft.com/gaming/playfab/features/authentication/aad-authentication/).
@@ -25,7 +23,7 @@ This guide helps you get started using Insights along with Grafana. To learn mor
 
 ## Create an Azure Active Directory (AAD) application and connect it to your title database
 
-1. Follow the steps in this [guide](create-AAD-app-for-insights.md) to create an Azure Active Directory (AAD) application and connect it to your title database.
+1. Follow the steps in this [guide](creating-AAD-app-for-insights.md) to create an Azure Active Directory (AAD) application and connect it to your title database.
 
 ## Get set up with Grafana
 1. If you don't have a free Grafana account, [create one](https://grafana.com/login). You can either download Grafana to run on your computer or use the online hosted instance. 
@@ -92,4 +90,4 @@ Now you are going to use your newly-created Dashboard to run Kusto queries and c
 ## Additional resources
 
 * Grafana [documentation](https://grafana.com/docs/grafana/latest/).
-* Connect Insights with [more tools](insights-connectivity.md).
+* Connect [more tools](index.md) with Insights.
