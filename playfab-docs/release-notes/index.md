@@ -9,8 +9,24 @@ ms.prod: playfab
 keywords: playfab, development, release, apis, features
 ms.localizationpriority: medium
 ---
-
 # PlayFab Release Notes 2020
+
+## 200318
+
+Date: 2020-03-18
+
+### Improvements
+
+#### Multiplayer
+* Multiplayer Servers - A C# Sample is now available on GitHub: [WindowsRunnerCSharp](https://github.com/PlayFab/gsdkSamples/tree/master/WindowsRunnerCSharp). For more details about the code in the sample, see the "Using the quality-of-service SDK" section in [Using Quality-of-Service (QoS) beacons to measure player latency to Azure](https://docs.microsoft.com/gaming/playfab/features/multiplayer/servers/using-qos-beacons-to-measure-player-latency-to-azure).
+
+### Bug Fixes
+
+* Authentication - Previously the UnlinkXboxAccount API required the XBL Token, now the UnlinkXboxAccount API does not require the XBL Token.
+* Data - Previously the SharedGroupDataUpdateRequestSize limit was less than SharedGroupDataIndividualValueSize limit, now they have the same limit of 300,000 bytes.
+* Economy (Private Preview):
+    * Multiple currency modifications in quick succession no longer have the possibility of losing data.
+    * Item references returned as part of the response for a Create/UpdateStore call now include the PayoutAmount.
 
 ## 200310
 
