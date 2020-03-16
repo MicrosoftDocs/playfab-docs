@@ -18,7 +18,7 @@ Date: 2020-03-18
 ### Improvements
 
 #### Multiplayer
-* Multiplayer Servers - C# Sample is now available. For more details refer to the online documentation: https://docs.microsoft.com/gaming/playfab/features/multiplayer/servers/using-qos-beacons-to-measure-player-latency-to-azure The sample itself can be found on GitHub: https://github.com/PlayFab/gsdkSamples/tree/master/WindowsRunnerCSharp#running-the-client 
+* Multiplayer Servers - C# Sample is now available. For more details refer to the online [documentation](https://docs.microsoft.com/gaming/playfab/features/multiplayer/servers/using-qos-beacons-to-measure-player-latency-to-azure). The sample itself can be found on [GitHub](https://github.com/PlayFab/gsdkSamples/tree/master/WindowsRunnerCSharp#running-the-client).
 
 ### Bug Fixes
 
