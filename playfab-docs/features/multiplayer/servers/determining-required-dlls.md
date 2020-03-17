@@ -20,16 +20,13 @@ Use the [ListDlls](https://docs.microsoft.com/sysinternals/downloads/listdlls) u
 1. Download [ListDlls](https://docs.microsoft.com/sysinternals/downloads/listdlls) from sysinternals.
 1. Run your game server executable on your local machine by using the instructions found in [local debug steps](locally-debugging-game-servers-and-integration-with-playfab.md) in **process mode** or as a standalone process without using the mock agent.
 1. Run listdlls and specify your running game server as a parameter. Example: `listdlls ServerLoadSimulator.exe`
-1. Compare the list that is output against the list of DLLs included in your asset zip file (typically everything in the same folder as your executable). The delta between the lists are the system DLLs that are required by your game server.
+1. Compare the list that is output against the list of DLLs included in your asset zip file (typically everything in the same folder as your executable). The delta between the lists are the system DLLs that are required by your game server. 
 
 ![listdlls-output](media/listdlls-output.png)
 
 ## Compare required DLLs with those included in container
 With the list of system DLLs determined, the next step is to determine which of these system DLLs are already included in the container.
 1. Download the PlayFab multiplayer container image. To download the container image, run the setup.ps1 script referenced in [local debug steps](locally-debugging-game-servers-and-integration-with-playfab.md). Alternatively, allocate a new MPS instance and connect via Remote Desktop. All Windows MPS instances will have the container image downloaded.
-1. Start a command line session in a new docker container by running the command `docker run -it mcr.microsoft.com/playfab/multiplayer:wsc-10.0.17134.950 cmd` in an administrator command window. Replace "wsc-10.0.17134.950" with the tag of the docker image you downloaded in step 1. If you are not sure of the correct tag, run `docker images` to list the downloaded images.
-
-![docker images output](media/docker-images.png)
-
-1. While running within the container, you can navigate via the command line to find which DLLs are present. Look for the required system DLLs discovered in the previous section. Any that are missing need to be included in the asset zip.
+1. Start a command line session in a new docker container by running the command `docker run -it mcr.microsoft.com/playfab/multiplayer:wsc-10.0.17134.950 cmd` in an administrator command window. Replace "wsc-10.0.17134.950" with the tag of the docker image you downloaded in step 1. If you are not sure of the correct tag, run `docker images` to list the downloaded images. ![docker images output](media/docker-images.png)
+1. While running within the container, you can navigate via the command line to find which DLLs are present. Look for the required system DLLs discovered in the previous section. Any DLLs that are missing must be included in the asset zip.
 1. To end the cmd process and cause the container to stop, type `exit`.

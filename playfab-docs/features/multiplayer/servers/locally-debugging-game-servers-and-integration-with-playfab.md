@@ -24,8 +24,8 @@ You can configure the agent to run the game server as a containerized applicatio
 
 ## Basic Setup
 
-- Integrate your game server with the GSDK and build it. More information is available in our tutorial [Integrating game servers with the PlayFab Game Server SDK (GSDK)](integrating-game-servers-with-gsdk.md).
-- Compress your game server and its dependencies to a zip archive, in the same way that it's uploaded to PlayFab Multiplayer platform. To run properly in container mode, this zip archive must also contain any system DLLs missing from the container image. If you are unsure of how to do so, we have instructions about how to [determine required system DLLs](determining-required-dlls.md).
+- Integrate your game server with the GSDK and build it. For more information, see [Integrating game servers with the PlayFab Game Server SDK (GSDK)](integrating-game-servers-with-gsdk.md).
+- Compress your game server and its dependencies to a zip archive. To run properly in container mode, the zip archive must contain any system DLLs that are not included in the container image. For more information, see [determine required system DLLs](determining-required-dlls.md)..
 
   > [!NOTE]
   > Avoid this common mistake - do not accidentally zip a folder *within* a folder in the zip. After zipping, browse the zip folder and double-check that your compression software did not add an extra layer of file hierarchy.
