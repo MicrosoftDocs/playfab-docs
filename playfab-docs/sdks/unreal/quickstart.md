@@ -1,145 +1,111 @@
 ---
 title: Unreal Engine quickstart
-author: v-thopra
-description: This guide will help you set up the Unreal Engine, install the PlayFab Marketplace Plugin, and make your first API call in Unreal, using the PlayFab Marketplace Plugin.
-ms.author: v-thopra
-ms.date: 06/11/2018
+author: danbehrendt
+description: This guide helps you to install the PlayFab Marketplace Plugin and use it to make your first API call in Unreal.
+ms.author: dabe
+ms.date: 03/10/2020
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, unreal, playfab marketplace plugin, c++, blueprint
 ms.localizationpriority: medium
 ---
 
-# Unreal Engine quickstart
+# Quickstart: PlayFab client library for Unreal Engine
 
-This quickstart helps you set up Unreal Engine, install the PlayFab Marketplace Plugin, and make your first API call in Unreal, using the PlayFab Marketplace Plugin. You can make your first API call using Blueprints, or C++, or both.
+Get started with the PlayFab plugin for the Unreal Engine. Follow this quickstart to install the PlayFab Unreal Engine plugin and create example apps that use the C++ client library and the Blueprint interface.
 
-Before you can call any PlayFab API, you must have a [PlayFab developer account](https://developer.playfab.com/en-us/sign-up). 
+You can use the PlayFab plugin for the Unreal Engine to manage LiveOps for your Title and perform admin, client, and server operations such as:
 
-## Table of contents
+* Player authentication.
+* Managing virtual items and currency.
+* Creating social features such as friends lists.
 
-- [Unreal project setup](#unreal-project-setup)  
-- [Set up your first Blueprint call](#set-up-your-first-blueprint-call)  
-  - [Finish and execute with Blueprint](#finish-and-execute-with-blueprint)
-- [Set up your first C++ call](#set-up-your-first-c-call)
-  - [Finish and Execute with C++](#finish-and-execute-with-c)
-- [Deconstruct the Blueprint example](#deconstruct-the-blueprint-example)
-- [Deconstruct the C++ code example](#deconstruct-the-c-code-example)
-- [Upgrading to the Unreal Marketplace plugin](#upgrading-to-the-unreal-marketplace-plugin)
+  [API reference documentation](https://docs.microsoft.com/gaming/playfab/api-references/) | [Library source code](https://github.com/PlayFab/UnrealMarketplacePlugin) | [Unreal Marketplace](https://www.unrealengine.com/marketplace/playfab-sdk)
 
-## Unreal project setup
+## Prerequisites
 
-OS: This guide is written for Windows 10, however, steps should be similar for Macintosh. This guide is created for using Visual Studio 2017, and Unreal Engine 4.x (Usually latest).
+* A [PlayFab developer account](https://developer.playfab.com/en-us/sign-up).
+* An installation of [Visual Studio](https://visualstudio.microsoft.com/downloads/) that is configured for Unreal Engine. For information about configuring Visual Studio, see [Setting Up Visual Studio for Unreal Engine](https://docs.unrealengine.com/en-US/Programming/Development/VisualStudioSetup/index.html).
+* An installation of the [Unreal Engine](https://www.unrealengine.com/download). For information about installing the Ureal Engine, see the [Unreal Engine installation guide](https://docs.unrealengine.com/GettingStarted/Installation/index.html).
+* An installation of the PlayFab Unreal plugin. You can install the Unreal plugin from the [Unreal Engine marketplace](https://www.unrealengine.com/marketplace/playfab-sdk).
 
-### Install Unreal
+## Create an Unreal project
 
-1. Download Unreal Engine.
-  
-2. Register and log in on the Unreal website: [https://accounts.unrealengine.com/login/index](https://accounts.unrealengine.com/login/index)
-  
-3. Download the Epic Games Launcher: [https://www.unrealengine.com/dashboard](https://www.unrealengine.com/dashboard)
+In Unreal Engine, create a new Unreal Project. For detailed instructions, follow the [Create a New Project guide](https://docs.unrealengine.com/Engine/Basics/Projects/Browser/index.html).
 
-4. Open the Epic Games Launcher.
+1. For **Project Category** select **Games**.
+2. In **Select Template**, select **Blank**.
+3. In **Project Settings**, select either **C++** or **Blueprint**.
+4. Choose **No Starter Content**.
+5. Choose a name for your project such as **MyProject**.
 
-5. Select the **Unreal Engine** tab, and **Library** from the left-hand navigation bar.
+## Enable the PlayFab Plugin in your Unreal project
 
-6. Select **+Add Versions**.
+To enable the PlayFab Plugin:
 
-7. Select the most recent version of the [SDK](https://www.unrealengine.com/marketplace/en-US/playfab-sdk).
+1. From the **Settings** menu, under **Game Specific Settings** click **Plugins**.
+2. Enable the **PlayFab** plugin and restart Unreal Engine as required.
 
-### Install the PlayFab Plugin into your engine
+### Add PlayFab as a Module dependency in C++
 
-Use the following steps to ensure you've properly installed the PlayFab Plugin.
+In Visual Studio, add PlayFab as a module dependency in your C++ project:
 
-1. In the Epic Games launcher, go to the **Marketplace** and Search for the **PlayFab SDK**.
+1. From the **View** menu open **Solution Explorer** which displays your C++ project files.
+2. In Solution Explorer, navigate to **Solution\Games\YourProjectName\Source** and open **YourProjectName.Build.cs**.
+3. Add the following line:
 
-  ![Unreal Engine Marketplace](media/uemk-001.jpg)
+    ```cpp
+    PrivateDependencyModuleNames.AddRange(new string[] { "PlayFab", "PlayFabCpp", "PlayFabCommon" });
+    ```
 
-2. Select the **PlayFab SDK**, then **Free**, and **Install to Engine**.
+4. Save your changes.
 
-  ![Install to engine](media/uemk-install-to-engine.png)
+## Generate the necessary Visual Studio project files
 
-3. Confirm your version and select **Install**.
+To update and generate the Visual Studio project files necessary to use the PlayFab plugin:
 
-    ![Pick version again](media/uemk-version-again.png)
+1. Open a file explorer window and navigate to folder where your project files are located.
+2. In the root folder of the project, right-click the YouProjectName.uproject file.
+3. From the context menu, select **Generate Visual Studio project files**.
 
-4. Select the **Launch** button, and run Unreal Engine.
+## Calling PlayFab with C++
 
-5. Select all the options as seen here:  **New Project** tab, **C++** sub-tab, **No Starter Content**.
+The following steps walk you through creating a Tile that logs into PlayFab using a custom ID. For information about logging in from a Blueprints project, see "Calling PlayFab from Unreal Blueprints" later in this article.
 
-      ![Create project settings](media/uemk-create-project-settings.jpg)
+### Create a new Actor
 
-6. Now select **Create Project** with these options.
+To create a new Actor:
 
-7. Enable the PlayFab Plugin.
+1. From the **File** menu, click **New C++ Class**.
+2. For **Parent Class** select **Actor**.
+3. Name your actor **LoginActor**. After you create the Actor, Unreal Engine automatically opens your C++ development environment and loads LoginActor.cpp and LoginActor.h.
+    > [!IMPORTANT]
+    > For the purposes of this quickstart, you must name the Actor **LoginActor**. If you give the Actor a different name, you must update the sample code provided in this quickstart to match the new name.
 
-  ![Enable plugin](media/uemk-enable-plugin.jpg)
+4. Drag-and-drop your new Actor **LoginActor** from the Content Browser into the Viewport panel. It will appear in the World Outliner pane.
+    If you don't see your **LoginActor**, select the **Show or hide the source panel** icon. Then select the name of your project under the C++ classes.
 
-The PlayFab Installation is complete!
+    ![Content browser showing the source panel icon.](media/show-login-actor.png)
 
-## Set up your first Blueprint call
+![Login Actor in World](media/login-actor-world.png)
 
-This section provides the minimum steps to make your first PlayFab Blueprint call. Confirmation is done via an on-screen debug print.
+### Add PlayFab API calls to your C++ LoginActor
 
-1. Select **Open level Blueprint**.
+In this quickstart you use [LoginWithCustomID](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid) to perform the log in. Log in using `LoginWithCustomID` is easy to implement but is of limited usefulness in the scenario of a published Title. Before you launch your Title, see the [Login basics and best practices](../../features/authentication/login/login-basics-best-practices.md) for information about implementing robust log in functionality.
 
-  ![Open level Blueprint](media/uemk-open-lv-bp.jpg)
+The `LoginWithCustomID` call is made in your **LoginActor**. To add the PlayFab specific code to your **LoginActor**:
 
-2. Use the existing "Event BeginPlay" node, and build the  structure shown below.
-
-  ![Event Begin Play](media/uemk-login-bp.png)
-
-> [!NOTE]
-> **Title ID** is the default, and should be unique to your game, which we call a title. You can apply any ID you want, but you must use that ID when you make PlayFab API calls.
-
-3. **Save** the Blueprint, and close the Blueprint Editor window.
-
-4. **Save** the level.
-
-## Finish and execute with Blueprint
-
-1. Push the **Play** button.
-
-2. When you execute this program, you should get the output shown below.
-
-  ![Blueprint log success](media/uemk-log-success.png)
-
-3. Congratulations, you made your first successful API call!
-
-4. Select any key to close.
-
-## Set up your first C++ call
-
-This section will provide the minimum steps to make your first PlayFab API call. Confirmation happens through a debug print in the Output Log.
-
-1. Open your new project
-
-2. Create a new actor called **LoginActor**, and place it in the scene. Creating the new LoginActor should automatically open Visual Studio, with `LoginActor.cpp` and `LoginActor.h` available to edit.
-
-  ![New Actor C++](media/new-actor-cpp.png)
-
-3. Under **Solution Explorer** -> **Games/YourProjectName/Source**, find and open **YourProjectName.Build.cs**.
-
-4. Add the following line:
-
-`PrivateDependencyModuleNames.AddRange(new string[] { "PlayFab", "PlayFabCpp", "PlayFabCommon" });`
-
-5. Replace the contents of `LoginActor.h` with the code shown below.
+1. Replace the contents of LoginActor.h with the code shown below.
 
 ```cpp
 #pragma once
 
-#include "GameFramework/Actor.h"
-
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
-
 #include "PlayFab.h"
 #include "Core/PlayFabError.h"
 #include "Core/PlayFabClientDataModels.h"
-
 #include "LoginActor.generated.h"
-
 
 UCLASS()
 class ALoginActor : public AActor
@@ -157,12 +123,10 @@ private:
 };
 ```
 
-6. Replace the contents of `LoginActor.cpp` with the following code.
+2. Replace the contents of LoginActor.cpp with the following code.
 
 ```cpp
-
 #include "LoginActor.h"
-
 #include "Core/PlayFabClientAPI.h"
 
 ALoginActor::ALoginActor()
@@ -203,176 +167,87 @@ void ALoginActor::Tick(float DeltaTime)
 }
 ```
 
-6. Run the Unreal Editor (**Debug** -> **Start Debugging**).
+> [!TIP]
+> Intellisense in Visual Studio will indicate that it cannot locate the include files and the PlayFab namespace. You can safely disregard these warnings.
+> When you run your project it will build and execute correctly.
+>
 
-## Finish and execute with C++
+### Finish and execute with C++
 
-Earlier, you created a level with a `LoginActor` entity already placed in the world.
+Now you're ready to test a call to PlayFab from Unreal Engine in C++.  The results of your test call will be displayed in the **Output Log** of Unreal Engine.
 
-1. Load this level.
+In Unreal Engine:
 
-2. Press **Play**. You will immediately see the following in the output log:
+1. Display the Output Log from the **Windows** menu, select **Developer Tools** and enable **Output Log**.
+2. In the toolbar, select **Compile** and wait for Unreal Engine to finish compiling. While your code is compiling, Unreal displays a "Compiling C++ Code".  
+3. Select **Play**.  When the code runs, Unreal displays the following in the **Output Log** window:
 
 `LogTemp: Congratulations, you made your first successful API call!`
 
-  ![C++ log verify](media/ue-log-verify.png)
+![Output Log successful call](media/call-works.png)
 
-3. Select any key to close.
+## Calling PlayFab from Unreal Blueprints
 
-## Deconstruct the Blueprint example
+This section guides you through creating a Blueprint structure, which uses the PlayFab API to call [LoginWithCustomID](https://docs.microsoft.com/rest/api/playfab/client/authentication/loginwithcustomid?view=playfab-rest). Log in using `LoginWithCustomID` is easy to implement but is of limited usefulness in the scenario of a published Title. Before you launch your Title, see the [Login basics and best practices](../../features/authentication/login/login-basics-best-practices.md) for information about implementing robust log in functionality.
 
-This optional last section describes each part of the blueprints above, in detail.
+> [!TIP]
+> If you start from a Blueprint project, you must convert it to a C++ project for the PlayFab Blueprint Actions to function.
 
-### Event BeginPlay
+### Create a Blueprint structure
 
-This is an Unreal node that exists by default for a level blueprint. It triggers the nodes following it immediately, when the level is loaded.
+In Unreal Engine, from the toolbar, select **Open Level Blueprint**.
 
-### Set PlayFab Settings
+  ![Open level Blueprint](media/uemk-open-lv-bp.jpg)
 
-Use this to set the `titleId`. Other keys can be set here too, but for this guide, you only need to set `titleId`.
+The EventGraph opens and is prepopulated with two Actions. `Event BeginPlay` and `Event Tick`. 
 
-Every PlayFab developer creates a title in Game Manager. When you publish your game, you must code that `titleId` into your game. This lets the client know how to access the correct data within PlayFab. For most users, just consider it a mandatory step that makes PlayFab work.
+Actions used in this quickstart:
 
-### Make the LoginWithCustomID request
+* `Set Play Fab Settings`
+* `Login with Custom ID`
+* `Make ClientLoginWithCustomIDRequest`
+* `AddCustomEvent` x 2
+* `Break PlayFabError`
+* `Print String` x 2
 
-Most PlayFab API methods require input parameters, and those input parameters are packed into a request object.
+Create your Blueprint as follows:
 
-Every API method requires a unique request object, with a mix of optional and mandatory parameters.  
+* Select the output pin on `Event BeginPlay` and drag it to an open location in the **Event Graph**. In the **Executable Actions** dialog, search for `Set Play Fab Settings` and select it to add it to your Blueprint. In `Set Play Fab Settings`, if **Game Title id** is blank, set it to the **Title ID** of your game.
+    * For information on retrieving your Title id, see "Retrieving your TitleId" in [Getting started for developers](../../personas/developer.md#retrieving-your-titleid).
+* Select the output pin on `Set Play Fab Settings` and drag it to an open location. In the **Executable Actions** dialog, search for `Login with Custom ID` and select it to add it to your Blueprint.
+* Select the **Request** pin on `Login with Custom ID` and drag it to an empty location. From the **Actions providing a(n) Client Login With Custom IDRequest Structure** select `Make ClientLoginWithCustomIDRequest`. 
+* On `Make ClientLoginWithCustomIDRequest`:
 
-- For the `LoginWithCustomIDRequest` object, there is a mandatory parameter of `CustomId` - which uniquely identifies a player - and `CreateAccount`, which allows the creation of a new account with this call.
-  
-### Login with Custom ID
+  * Select **Create Account**.
+  * Set the **Custom Id** to GettingStartedGuide.
 
-This begins the async request to `LoginWithCustomID`.
+* On `Login with Custom ID` select the **On Success** pin and drag it to an empty location. in the **Actions providing a(n) Delegate** search for `Add Custom Event` and select it to add it to your Blueprint.
+  * Name it `OnLogin`.
+* Select the **On Failure** pin and drag it to an empty location. in the **Actions providing a(n) Delegate** search for `Add Custom Event` and select it to add it to your Blueprint.
+  * Name it `OnFailure`.
+* Select the output pin on `OnLogin` and drag it to an empty location. In the **Executable Actions** dialog search for `Print String` and select it to add it to the Blueprint.
+  * On `Print String` set the **In String** value to "Congratulations, you made your first successful PlayFab API call using Blueprint!".
+* Select the output pin of `OnFailure` nd drag it to an empty location. In the **Executable Actions** dialog search for `Print String` and select it to add it to the Blueprint.
+* Select the **Error** pin on `OnFailure` and drag it to an empty location. In the **Actions providing a(n) string** dialog search for **Break PlayFabError** and select it to add it to the Blueprint. In the **Actions taking a(n) Play Fab error structure** dialog search for **Break PlayFabError** and select it to add it to the Blueprint.
+* Connect the **Error Message** pin of `Break PlayFabError` to the **In String** pin of on failure `Print String` Action.
 
-- For login, most developers will want to use a more appropriate login method. See the [PlayFab Login documentation](xref:titleid.playfabapi.com.client.authentication) for a list of all login methods, and input parameters. Common choices are:
-  - [LoginWithAndroidDeviceID](xref:titleid.playfabapi.com.client.authentication.loginwithandroiddeviceid)
-    - [LoginWithIOSDeviceID](xref:titleid.playfabapi.com.client.authentication.loginwithiosdeviceid)
-    - [LoginWithEmailAddress](xref:titleid.playfabapi.com.client.authentication.loginwithemailaddress)
+When you are finished your Blueprint will look similar to the following:
 
-### The left-side blueprint pins  
+  ![Open level Blueprint](media/blueprint-structure.png)
 
-- **Blue: Request** - For every PlayFab API blueprint, this must always receive from a paired Make Request blueprint node.
+**Save** the Blueprint, and close the Blueprint Editor window.
 
-- **Red: "On Success" and "On Failure"** - You can drag an un-bound red marker to empty space, to create a new custom event for this action. One of those events, according to circumstances, is then invoked when the async-call returns.
+### Execute a PlayFab call with Blueprint
 
-- **Cyan: Custom Data** - Custom Data is just a relay. That object is passed un-touched into the red custom events. This isn't terribly useful for blueprints, but it's very useful when invoking API calls directly from C++ (Advanced topic: won't be covered in this guide).
+1. On the toolbar, select the **Play** button.
 
-### The right-side blueprint pins
+2. When the Blueprint runs, the following  output is shown in the Viewport window.
 
-- **White** - The unlabeled first exec pin is executed immediately as the API call is queued (response does not exist yet) - Do not use this pin!
+    ![Blueprint log success](media/uemk-log-success.png)
 
-- **White** - The second exec pin is labeled **On PlayFab Response**, and is executed after the async remote call has returned. Use this to trigger logic that needs to wait or use the Response.
+Congratulations, you made your first successful PlayFab API call using Blueprint!
 
-- **Blue: Response**  
-  - This is a JSON representation of the result.  
-- The `OnSuccess` pin provides a properly typed object with the correct fields pre-built into the blueprint.
-  - This JSON field is an older pin which is only maintained for legacy.
+## Additional Resources
 
-- **Cyan: Custom Data** - Same as **Custom Data** above.
-
-- **Maroon: Successful**
-  - Legacy boolean which indicates how to safely unpack the legacy Response pin.
-  - Again, it's better to use the red `OnSuccess` and `OnFailure` pins.
-  
-### OnLoginSuccess and OnLoginFail
-
-The names of these modules are optional, and should be different for every API call.
-
-Described above, they attach to the red pins of PlayFab API calls, and allow you to process success and failure for those calls.
-
-### The OnSuccess/Result pin
-
-The result pin will contain the requested information, according to the API called.
-
-### Break PlayFab Result
-
-(Not displayed, the only valid connection for the `OnSuccess`/`Result` pin).
-
-If you drag the `Result` pin from `OnSuccess`, it'll create a `Break-Result` blueprint. This blueprint is used to examine the response from any API call.
-
-### The OnFailure/Error pin
-
-- Always connects to a Break PlayFabError blueprint.
-- Contains some information about why your API call failed.
-
-### Why API calls fail (In order of likelihood)
-
-- `PlayFabSettings.TitleId` is not set. If you forget to set `titleId` to your title, then nothing will work.  
-
-- Request parameters. If you have not provided the correct or required information for a particular API call, then it will fail.
-
-- See `error.errorMessage`, `error.errorDetails`, or `error.GenerateErrorReport()` for more info.  
-
-- Device connectivity issue. Cell-phones lose/regain connectivity constantly, and so any API call at any time can fail randomly, and then work immediately after. Going into a tunnel can disconnect you completely.  
-
-- PlayFab server issue. As with all software, there can be issues. See our [release notes](../../release-notes/index.md) for updates.
-
-- The internet is not 100% reliable. Sometimes the message is corrupted or fails to reach the PlayFab server.
-
-- If you are having difficulty debugging an issue, and the information within the error information is not sufficient, please visit us on our [forums](https://community.playfab.com/index.html)
-  
-### Prints and Append nodes
-
-- Just part of the example, giving you some on-screen feedback about what's happening.
-
-- Most examples will extract and utilize the data, rather than just printing.
-
-## Deconstruct the C++ code example
-
-This optional last section describes the code in this project line by line.
-
-### GettingStartedUeCpp.Build.cs
-
-- To reference code from a plugin in your project, you have to add the plugin to your code dependencies. The Unreal build tools do all the work, if you add the "PlayFab" string to your plugins.
-  
-### LoginActor.h
-
-- includes
-  - The `LoginActor` includes are default includes that exist for the template file before we modified it.
-  - The PlayFab includes are necessary to make PlayFab API calls.
-  - UCLASS `ALoginActor`
-  - Most of this file is the default template for a new actor; the only exceptions to this are:
-- `OnSuccess` and `OnError`
-  - These are the asynchronous callbacks that will be invoked after PlayFab `LoginWithCustomID` completes.
-- `PlayFabClientPtr` clientAPI
-  - This is an object that lets you access the PlayFab client API.
-
-### LoginActor.cpp
-
-- Most of this file is the default template for a new actor; the only exceptions to this are:
-- `clientAPI = IPlayFabModuleInterface::Get().GetClientAPI();`
-  - This fetches the clientAPI object from the PlayFab plugin, so you can make API calls with it.
-  - `clientAPI->SetTitleId(TEXT("xxxx"));`
-    - Every PlayFab developer creates a title in Game Manager. When you publish your game, you must code that titleId into your game. This lets the client know how to access the correct data within PlayFab. For most users, just consider it a mandatory step that makes PlayFab work.
-  - `PlayFab::ClientModels::FLoginWithCustomIDRequest request;`
-    - Most PlayFab API methods require input parameters, and those input parameters are packed into a request object.
-    - Every API method requires a unique request object, with a mix of optional and mandatory parameters.
-    - For LoginWithCustomIDRequest, there is a mandatory parameter of CustomId, which uniquely identifies a player and CreateAccount, which allows the creation of a new account with this call.
-  - `clientAPI->LoginWithCustomID(request, {OnSuccess delegate}, {OnFail delegate});`
-    - This begins the async request to `LoginWithCustomID`, which will call `LoginCallback` when the API call is complete.
-    - For login, most developers will want to use a more appropriate login method.
-    - See the [PlayFab Login documentation](xref:titleid.playfabapi.com.client.authentication) for a list of all login methods, and input parameters. Common choices are:
-      - [LoginWithAndroidDeviceID](xref:titleid.playfabapi.com.client.authentication.loginwithandroiddeviceid)
-      - [LoginWithIOSDeviceID](xref:titleid.playfabapi.com.client.authentication.loginwithiosdeviceid)
-      - [LoginWithEmailAddress](xref:titleid.playfabapi.com.client.authentication.loginwithemailaddress)
-  - {OnSuccess delegate}: `PlayFab::UPlayFabClientAPI::FLoginWithCustomIDDelegate::CreateUObject(this, &ALoginActor::OnSuccess)`
-    - combined with: `void ALoginActor::OnSuccess(const PlayFab::ClientModels::FLoginResult& Result) const`
-    - These create a UObject callback/delegate which is called if your API call is successful.
-    - An API Result object will contain the requested information, according to the API called.
-      - `FLoginResult` contains some basic information about the player, but for most users, login is simply a mandatory step before calling other APIs.
-  - {OnFail delegate} `PlayFab::FPlayFabErrorDelegate::CreateUObject(this, &ALoginActor::OnError)`
-    - combined with: `void ALoginActor::OnError(const PlayFab::FPlayFabError& ErrorResult) const`
-    - API calls can fail for many reasons, and you should always attempt to handle failure.
-    - Why API calls fail (In order of likelihood)
-      - `PlayFabSettings.TitleId` is not set. If you forget to set `titleId` to your title, then nothing will work.
-      - Request parameters. If you have not provided the correct or required information for a particular API call, then it will fail. See `error.errorMessage`, `error.errorDetails`, or `error.GenerateErrorReport()` for more info.
-      - Device connectivity issue. Cell-phones lose/regain connectivity constantly, and so any API call at any time can fail randomly, and then work immediately after. Going into a tunnel can disconnect you completely.
-      - PlayFab server issue. As with all software, there can be issues. See our [release notes](../../release-notes/index.md) for updates.
-      - The internet is not 100% reliable. Sometimes the message is corrupted or fails to reach the PlayFab server.
-    - At this time, the PlayFab Unreal C++ SDK maintains state with static variables which are non atomic and are not guarded by synchronization techniques. For this reason, we recommend limiting PlayFab calls to within the main Unreal thread.
-    - If you are having difficulty debugging an issue, and the information within the error information is not sufficient, please visit us on our [forums](https://community.playfab.com/index.html).
-
-## Upgrading to the Unreal Marketplace Plugin
-
-The [Unreal Marketplace Plugin - Upgrade Tutorial](unreal-marketplace-plugin-upgrade-tutorial.md) will step you through upgrading your project from either the PlayFab Unreal C++ SDK or the PlayFab Unreal Blueprint SDK, to the new PlayFab Unreal Marketplace Plugin.
+* Unreal Engine documentation for [Blueprints Visual Scripting](https://docs.unrealengine.com/en-US/Engine/Blueprints/index.html).
+* Unreal Engine [Programming Guide](https://docs.unrealengine.com/en-US/Programming/index.html).
