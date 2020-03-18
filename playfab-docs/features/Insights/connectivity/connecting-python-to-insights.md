@@ -79,4 +79,4 @@ print(response)
 ## Additional resources
 
 * Azure Kusto Python SDK [documentation](https://docs.microsoft.com/azure/kusto/api/python/kusto-python-client-library).
-* Connect [more tools](insights-connectivity.md) with Insights.
+* Connect [more tools](index.md) with Insights.

@@ -80,4 +80,4 @@ We are now going to create a new pipeline.
 ## Additional resources
 
 * Azure Data Factory (ADF) [documentation](https://docs.microsoft.com/azure/data-factory/).
-* Connect [more tools](insights-connectivity.md) with Insights.
+* Connect [more tools](index.md) with Insights.
