@@ -69,7 +69,7 @@ The third edition of our LiveOps guidebook is now available! [Download](https://
 
 **_PlayFab Experiments_**
 
-Our new and more adavnced framework for A/B tests and other experiments is now available!
+Our new and more advanced framework for A/B tests and other experiments is now available!
 
 We posted a detailed overview on our [blog](https://blog.playfab.com/blog/announcing-playfabs-experimentation-all-new-for-trustworthy-experiments).
 

@@ -79,8 +79,6 @@
     items:
     - name: Quickstart
       href: ./unreal/quickstart.md
-    - name: Upgrade Tutorial
-      href: ./unreal/unreal-marketplace-plugin-upgrade-tutorial.md
   - name: Xamarin (C#)
     href: ./xamarin/index.md
     items:
