@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Creating a PlayFab account
 
-Before you can call any PlayFab API, you must have a [PlayFab developer account](https://developer.playfab.com/sign-up). If you already have a PlayFab account, you can skip this step.
+Before you can call any PlayFab API, you must have a [PlayFab developer account](https://developer.playfab.com/en-us/sign-up). If you already have a PlayFab account, you can skip this step.
 
 ![PlayFab - Create your account](media/quickstart/playfab-create-account.png)
 
@@ -34,4 +34,3 @@ Before installing any SDK, select a game title, and the Game Manager will open. 
 For a more detailed overview, visit the [Game Manager quickstart](quickstart.md).
 
 The PlayFab Game Manager allows you to do whatever you need to with your game title. Once you have a grasp on the aspects of the Game Manager, install the SDK so you can start using APIs. for more information on how to do this, see [Getting Started for Developers](../../../personas/developer.md).
-
