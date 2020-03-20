@@ -10,77 +10,49 @@ keywords: playfab, insights
 ms.localizationpriority: medium
 ---
 
-# Connecting external tools with Insights
+# Connecting external tools to Insights
 
-PlayFab Insights offers an unprecedented look into your game's data and the trends created by your users. Part of Insights' power is the flexibility to be paired with many other data and analytics tools. This guide will show you how to connect Insights to other tools.
+PlayFab Insights offers an unprecedented look into your game's data and the trends created by your users. Part of Insights' power is the flexibility to be paired with many other data and analytics tools. This section contains tutorials that will show you how to connect Insights to other tools.
 
-## Prerequisites
-* A PlayFab user account authenticated with [AAD (Azure Active Directory)](https://docs.microsoft.com/gaming/playfab/features/authentication/aad-authentication/).
-* The following [Game Manager permissions](https://docs.microsoft.com/gaming/playfab/features/config/gamemanager/playfab-user-roles#assigning-roles) enabled for your user:
-    *  Admin status.
-    *  Access to the Explorer tab and associated data.
-    *  Read and write access to Analytics data.
-
-Once you have completed all the prerequisites, proceed to the section on the tool that you would like to connect with: 
-  - [Connect with Power BI](#connect-with-power-bi)
-  - [Connect with Kusto Explorer](#connect-with-kusto-explorer)
-  - [Connect with Azure Data Explorer (ADX)](#connect-with-azure-data-explorer-adx)
-  - [Connect with Azure Data Factory (ADF)](#connect-with-azure-data-factory-adf)
-  - [Connect with Grafana](#connect-with-grafana)
-  - [Connect with Python](#connect-with-python)
+Currently, you can connect the following external tools to Insights: 
+  - [Connect to Power BI](#power-bi)
+  - [Connect to Kusto Explorer](#kusto-explorer)
+  - [Connect to Azure Data Explorer (ADX)](#azure-data-explorer-adx)
+  - [Connect to Azure Data Factory (ADF)](#azure-data-factory-adf)
+  - [Connect to Grafana](#grafana)
+  - [Connect to Python](#python)
   
-## Connect with Power BI
-Open [Power BI](https://powerbi.microsoft.com/desktop/) for desktop. 
+## Power BI
+Pairing Power BI with Insights allows you to easily create visualizations of your game data. 
 
-### 
-1. In the **Power BI Desktop** window, select **Get Data** -> **Azure Data Explorer (Kusto)**.
-2. In the **Azure Data Explorer (Kusto)** dialog box take the following steps:
-   * Under **Cluster** enter your API endpoint, which follows the format `https://<titleid>.playfabapi.com`. 
-   * Under **Database** enter your title ID in all uppercase, as Database names are case sensitive. 
-   * Scroll down, and under **Data Connectivity mode** select **DirectQuery**.
+To get started, go to the tutorial [Connecting Power BI to Insights](connecting-power-bi-to-insights.md).
 
-   Optionally, enter a table or query. You can also set limits for max records or max size. Note that if your query exceeds these limits, it will fail as `PartialQueryFailure` and return a message saying you exceeded limits. 
+## Kusto Explorer
 
-   You can see in our example that we entered a query on the table `events.all` that returns events occuring in the last seven days. 
+Kusto Explorer is a rich desktop application that allows you to explore your game data using Kusto query language.
 
-   ![Power BI Setup](media/powerBI.png)
-   ![Power BI Setup Extended](media/powerBI-2.png)
+To get started, go to the tutorial [Connecting Kusto Explorer to Insights](connecting-kusto-explorer-to-insights.md).
 
-3. Select **OK**, and you should now be able to execute queries and commands on the database. 
+## Azure Data Explorer (ADX)
 
-## Connect with Kusto Explorer
-Open [Kusto.Explorer](https://docs.microsoft.com/azure/kusto/tools/kusto-explorer). 
-1. First, add a connection. You can do this in two different ways:
-   * Select the **Connections** tab, then select **Add connection**.
-   * Right-click on the **Connections** folder in the left navigation panel, then select **Add connection**.
+Azure Data Explorer is a scalable data exploration service that allows you to discover relevant insights into your game data using a SQL-like query language. 
 
-2. In the **Add connection** dialog box take the following steps:
-   * Under **Cluster connection** enter your API endpoint, which follows the format `https://<titleid>.playfabapi.com`. 
-   * Under **Security**, make sure **AAD Federated** is selected. 
-   * Expand the **Advanced: Connection String** box and change the value of **Initial Catalog** from `NetDefaultDB` to `<titleID>`. Note that `<titleID>` must be all uppercase here. In the example below, this change is highlighted in the string. 
-  
-   ![Kusto.Explorer add connection](media/kusto-explorer.png)
+To get started, go to the tutorial [Connecting Azure Data Explorer to Insights](connecting-azure-data-explorer-to-insights.md).
 
-3. Select **OK**, and you should now be able to visualize the results of the query.
+## Azure Data Factory (ADF)
 
-## Connect with Azure Data Explorer (ADX)
- 
-1. Open [Azure Data Explorer](https://dataexplorer.azure.com/). Select **Add Cluster**. 
+Azure Data Factory is a managed cloud service and data integration service that allows you to create workflows for orchestrating data movement and transforming data at scale. You can supplement your game data with the proper context to extract meaningful insights. 
 
-   ![ADX Add connection](media/adx-add-cluster-button.png)
+To get started, go to the tutorial [Connecting Azure Data Factory to Insights](connecting-azure-data-factory-to-insights.md).
 
-2. Enter your title API endpoint, which follows the format `https://<titleID>.playfabapi.com`. 
-3. Select **Add**, and you should now be able to execute queries or commands on the database. 
+## Grafana
 
-## Connect with Azure Data Factory (ADF)
+Grafana is an open-source tool for running analytics and monitoring systems. It pulls data from Insights to maintain dashboards with a wide variety of visualization options.
 
-Follow the steps in the [Connecting Azure Data Factory (ADF) to Insights](connecting-azure-data-factory-to-insights.md) guide.
+To get started, go to the tutorial [Connecting Grafana to Insights](connecting-grafana-to-insights.md).
 
-## Connect with Grafana
+## Python
 
-Follow the steps in the [Connecting Grafana to Insights](connecting-grafana-to-insights.md) guide.
+You have the option to connect Python to Insights and query your game data with it, including using the library from Jupyter Notebooks.
 
-## Connect with Python
-
-
-Follow the steps in the [Connecting Python to Insights](connecting-python-to-insights.md) guide.
+To get started, go to the tutorial [Connecting Python to Insights](connecting-python-to-insights.md).

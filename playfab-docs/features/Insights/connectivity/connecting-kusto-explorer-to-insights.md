@@ -10,6 +10,10 @@ keywords: playfab, insights
 ms.localizationpriority: medium
 ---
 
+# Tutorial: Connecting Kusto Explorer to Insights
+
+This guide helps you get started using Kusto Explorer along with Insights. To learn more about other tools you can connect Insights with, go to the [connectivity guide](index.md).
+
 ## Prerequisites
 * A PlayFab user account authenticated with [AAD (Azure Active Directory)](https://docs.microsoft.com/gaming/playfab/features/authentication/aad-authentication/).
 * The following [Game Manager permissions](https://docs.microsoft.com/gaming/playfab/features/config/gamemanager/playfab-user-roles#assigning-roles) enabled for your user:
