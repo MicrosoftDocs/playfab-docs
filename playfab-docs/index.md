@@ -358,7 +358,9 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>Analytics</h3>
-                                                <p><a href='/gaming/playfab/features/analytics/metrics/quickstart'>Metrics</a></p><p><a href='/gaming/playfab/features/analytics/reports/quickstart'>Reports</a></p><p><a href='/gaming/playfab/features/analytics/ab-testing/quickstart'>A/B Testing</a></p><p><a href='/gaming/playfab/features/analytics/segmentation/quickstart'>Segmentation</a></p><p><a href='/gaming/playfab/features/analytics/xbox-data/quickstart'>Xbox Data Add On</a></p>
+                                                <p><a href='/gaming/playfab/features/insights/explorer/quickstart'>Insights</a></p>
+                                                <p><a href='/gaming/playfab/features/insights/explorer/quickstart'>Explorer</a></p><p><a href='/gaming/playfab/features/insights/schemas/quickstart'>Schemas</a></p>
+                                                <p><a href='/gaming/playfab/features/analytics/metrics/quickstart'>Metrics</a></p><p><a href='/gaming/playfab/features/analytics/reports/quickstart'>Reports</a></p><p><a href='/gaming/playfab/features/analytics/ab-testing/quickstart'>A/B Testing</a></p><p><a href='/gaming/playfab/features/analytics/segmentation/quickstart'>Segmentation</a></p>
                                             </div>
                                         </div>
                                     </div>
