@@ -372,24 +372,6 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/gaming/playfab/media/quickstart-insights.svg" alt="PlayFab Quickstarts: Insights card image" />
-                                                </div>
-                                            </div>
-                                            <div class="cardText">
-                                                <h3>Insights</h3>
-                                                <p><a href='/gaming/playfab/features/insights/explorer/quickstart'>Insights</a></p>
-                                                <p><a href='/gaming/playfab/features/insights/explorer/quickstart'>Explorer</a></p><p><a href='/gaming/playfab/features/insights/schemas/quickstart'>Schemas</a></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="cardSize">
-                                    <div class="cardPadding">
-                                        <div class="card">
-                                            <div class="cardImageOuter">
-                                                <div class="cardImage">
                                                     <img src="/gaming/playfab/media/quickstart-engagement.svg" alt="PlayFab Quickstarts: Engagement card image" />
                                                 </div>
                                             </div>
