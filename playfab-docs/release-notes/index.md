@@ -24,8 +24,8 @@ Date: 2020-03-25
 ### Bug Fixes
 
 * Authentication:
-    * Previously when not passing an encryption key into the [Login with Xbox API](https://docs.microsoft.com/rest/api/playfab/client/authentication/loginwithxbox?view=playfab-rest) a generic error code was returned. Now the EncryptionKeyMissing error code is returned.
-    * Previously when the player secret was already configured the [Login with GameCenter API](https://docs.microsoft.com/rest/api/playfab/client/authentication/loginwithgamecenter?view=playfab-rest) returned a generic error code. Now the PlayerSecretAlreadyConfigured error code is returned.
+    * Previously when not passing an encryption key into the [Login with Xbox API](https://docs.microsoft.com/rest/api/playfab/client/authentication/loginwithxbox?view=playfab-rest) a generic error code was returned. Now the `EncryptionKeyMissing` error code is returned.
+    * Previously when the player secret was already configured the [Login with GameCenter API](https://docs.microsoft.com/rest/api/playfab/client/authentication/loginwithgamecenter?view=playfab-rest) returned a generic error code. Now the `PlayerSecretAlreadyConfigured` error code is returned.
 * Automation - Previously if you were bulk deleting PlayStream rules or Player Segments occasionally rules or segments would not be completely deleted. Now they will.
 * Config - Previously when you uploaded a custom image for your title in Game Manager and then added a new user the Game Title icon would not load. Now it loads as expected.
 * Social - Previously when pressing the delete button on the delete blocks dialog in the Groups feature the dialog would not go away. Now it will.
