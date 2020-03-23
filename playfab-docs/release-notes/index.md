@@ -1,8 +1,8 @@
 ---
 title: PlayFab Release Notes 2020
-author: v-thopra
+author: sebgrink
 description: PlayFab Release Notes for 2020.
-ms.author: v-thopra
+ms.author: sebgrink
 ms.date: 01/01/2020
 ms.topic: article
 ms.prod: playfab
