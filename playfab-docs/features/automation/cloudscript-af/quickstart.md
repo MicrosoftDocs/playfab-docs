@@ -26,7 +26,7 @@ There are a couple of steps needed to get started with PlayFab C# CloudScript.
     - **Security Note:** From a security perspective you should make sure to only use a given function secret with PlayFab and not use it for calling the same function from any other source.
     - **Security Note:** For queued functions you should setup a distinct storage account for the queues used for the queue trigger.
 - You must have a [PlayFab account](https://developer.playfab.com/signup). 
-- PlayFab Azure Functions can only use the Azure Functions V2 runtime.
+- PlayFab Azure Functions can use the Azure Functions V2 runtime or greater.
 
 ## Enable the Feature
 
@@ -98,7 +98,7 @@ There are a couple of steps that you need to do if you are coding Functions with
 
 1. You will need to install the PlayFab SDK via Package Manager. To do this open Terminal or CMD Console in Visual Studio Code and type: `dotnet add package PlayFabAllSDK`
 2. We have created some helpers that will ship with the cSharpSDK.  
-3. You need to edit your .csproj file and include `<DefineConstants>NETCOREAPP2_0</DefineConstants>` in your default PropertyGroup.
+3. You need to edit your .csproj file and include `<DefineConstants>NETCOREAPP2_0</DefineConstants>` in your default PropertyGroup or NETCOREAPP3_1 if you are using the latest.
 ![Define Constants](media/define_constants.jpg)
 4. Execution of a script can occur through several methods (APIs, Scheduled Tasks, PlayStream Event, Segment Entering and Exit method).  The context of the execution is important to implement your CloudScript. See the [Using CloudScript context models tutorial](CloudScript-af-context.md) for details on how to use the context of the script.
 
