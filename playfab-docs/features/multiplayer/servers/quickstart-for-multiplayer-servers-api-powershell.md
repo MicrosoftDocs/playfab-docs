@@ -85,6 +85,19 @@ In a few seconds we should see the build through the **PowerShell** or [ListBuil
 ```powershell
 Get-PFMultiplayerBuild -All
 ```
+### Formatting the game start command
+
+The StartMultiplayerServerCommand property is a required input to the Multiplayer Server [Create Build](xref:titleid.playfabapi.com.multiplayer.multiplayerserver.createbuildwithmanagedcontainer) API's. PlayFab Multiplayer Server leverages Azure Docker to secure and manage enterprise container apps in the cloud. Multiplayer Servers docker containers use PowerShell as the entry point for starting game server builds but has strict formatting rules to function correctly. For example:
+
+``PS D:\> Write-Host -arg1=alpha.beta -arg2=alpha.beta``
+
+Due to way that PowerShell processes the command line, the preceding command fails when run. The arguments are separated into '-arg1=alpha.' and 'beta'. To format the command correctly, wrap the game start command into quotes as follows:
+
+``PS D:\> Write-Host "-arg1=alpha.beta -arg2=alpha.beta"``
+
+An alternative solution is to use double dashes (--) instead of a single dash to specify the arguments. For example:
+
+``PS D:\> Write-Host --arg1=alpha.beta --arg2=alpha.beta``
 
 ### Request a multiplayer server
 
