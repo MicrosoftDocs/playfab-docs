@@ -12,14 +12,17 @@ ms.localizationpriority: medium
 
 # Tutorial: Create an Azure Active Directory (AAD) Application to use with Insights
 
-This tutorial covers one of the prerequisites for connecting the following tools with Insights:
+This tutorial covers creating an Azure Active Directory (AAD) application to use with Insights, which is one of the prerequisites for connecting the following tools with Insights:
 * Azure Data Factory (ADF)
 * Grafana
 * Python
 
+## Prerequisites
+* An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/free)  
+
 ## Create an Azure Active Directory (AAD) application
 
-You are going to create a new AAD application to link to your title database. 
+To create an AAD application to link to your title database:
 
 1. Log into the [Azure portal](https://portal.azure.com). If you don't have an Azure subscription, [create a free account](https://azure.microsoft.com).
 

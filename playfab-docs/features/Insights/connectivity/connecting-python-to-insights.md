@@ -12,20 +12,22 @@ ms.localizationpriority: medium
 
 # Tutorial: Connecting Python to Insights
 
-[comment]: < Replace links with relative links once placement of article is determined. >
-
-This guide helps you get started using Python with Insights. It uses the Azure Kusto Python SDK. To learn more about other tools you can connect with Insights, go to the [connectivity guide](index.md).
+This guide helps you get started using Python with Insights. It uses the Azure Kusto Python SDK. After connecting, you can query your game data with Python and use the library from Jupyter Notebooks. To learn more about other tools you can connect with Insights, see [Connecting external tools to Insights](index.md).
 
 ## Prerequisites
-* A PlayFab user account authenticated with [AAD (Azure Active Directory)](https://docs.microsoft.com/gaming/playfab/features/authentication/aad-authentication/).
-* The following [Game Manager permissions](https://docs.microsoft.com/gaming/playfab/features/config/gamemanager/playfab-user-roles#assigning-roles) enabled for your user:
+* A PlayFab account or user for which the authentication provider is set to Microsoft. The Microsoft authentication provider uses Azure Active Directory (AAD) for authentication which is required to use the Azure services. See [Azure Active Directory Authentication for Game Manager](../../authentication/aad-authentication/index.md) for instructions on creating an AAD-authenticated account or user. 
+  
+> [!NOTE]
+> To verify that the account, or user, is set to use the Microsoft authentication provider:
+>    * Visit the PlayFab [log in page](https://developer.playfab.com/login).
+>    * Use the the Sign in with Microsoft link to access your PlayFab account.
+> 
+> If you can sign in, then the account is set to use the Microsoft authentication provider.
+* The following [Game Manager permissions](../../config/gamemanager/playfab-user-roles#permissions-and-roles) enabled for your user:
     *  Admin status.
     *  Access to the Explorer tab and associated data.
     *  Read and write access to Analytics data.
-
-## Create an Azure Active Directory (AAD) application and connect it to your title database
-
-1. Follow the steps in this [guide](creating-AAD-app-for-insights.md) to create an Azure Active Directory (AAD) application and connect it to your title database.
+*  [Create an Azure Active Directory (AAD) application and connect it to your title database](creating-AAD-app-for-insights.md)
 
 ## Install Python packages
 
@@ -78,5 +80,5 @@ print(response)
 
 ## Additional resources
 
-* Azure Kusto Python SDK [documentation](https://docs.microsoft.com/azure/kusto/api/python/kusto-python-client-library).
-* Connect [more tools](index.md) with Insights.
+* [Azure Kusto Python SDK documentation](https://docs.microsoft.com/azure/kusto/api/python/kusto-python-client-library)
+* Connect more tools to Insights at [Connecting external tools to Insights](index.md)

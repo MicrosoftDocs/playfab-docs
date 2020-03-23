@@ -12,21 +12,33 @@ ms.localizationpriority: medium
 
 # Tutorial: Connecting Azure Data Factory (ADF) to Insights
 
-This guide helps you get started using Azure Data Factory (ADF) along with Insights. To learn more about other tools you can connect Insights with, go to the [connectivity guide](index.md).
+This guide helps you get started using Azure Data Factory (ADF) along with Insights. After connecting, you can use Azure Data Factory to create workflows for orchestrating data movement and transforming game data at scale. To learn more about other tools you can connect Insights with, see [Connecting external tools to Insights](index.md).
+
+In this tutorial you learn how to:
+
+> [!div class="checklist"]
+> * Create a data factory in Azure
+> * Create a pipeline
 
 ## Prerequisites
-* A PlayFab user account authenticated with [AAD (Azure Active Directory)](https://docs.microsoft.com/gaming/playfab/features/authentication/aad-authentication/).
-* The following [Game Manager permissions](https://docs.microsoft.com/gaming/playfab/features/config/gamemanager/playfab-user-roles#assigning-roles) enabled for your user:
+* A PlayFab account or user for which the authentication provider is set to Microsoft. The Microsoft authentication provider uses Azure Active Directory (AAD) for authentication which is required to use the Azure services. See [Azure Active Directory Authentication for Game Manager](../../authentication/aad-authentication/index.md) for instructions on creating an AAD-authenticated account or user. 
+  
+> [!NOTE]
+> To verify that the account, or user, is set to use the Microsoft authentication provider:
+>    * Visit the PlayFab [log in page](https://developer.playfab.com/login).
+>    * Use the the Sign in with Microsoft link to access your PlayFab account.
+> 
+> If you can sign in, then the account is set to use the Microsoft authentication provider.
+* The following [Game Manager permissions](https://docs.microsoft.com/gaming/playfab/features/config/gamemanager/playfab-user-roles#permissions-and-roles) enabled for your user:
     *  Admin status.
     *  Access to the Explorer tab and associated data.
     *  Read and write access to Analytics data.
+*  [Create an Azure Active Directory (AAD) application and connect it to your title database](creating-AAD-app-for-insights.md)
 
-## Create an Azure Active Directory (AAD) application and connect it to your title database
 
-1. Follow the steps in this [guide](creating-AAD-app-for-insights.md) to create an Azure Active Directory (AAD) application and connect it to your title database.
-
-## Create a new Data Factory
-1. Login to the [Azure portal](https://portal.azure.com). From the homepage, select **Create a resource**. Search for and select **Data Factory**. Select **Create**.
+## Create a new data factory
+To create a new data factory:
+1. Sign in to the [Azure portal](https://portal.azure.com). From the homepage, select **Create a resource**. Search for **Data Factory**, select it and then select **Create**.
 
    ![ADF Create Resource](media/adf-create-resource.png)
 
@@ -38,13 +50,13 @@ This guide helps you get started using Azure Data Factory (ADF) along with Insig
 
    ![ADF New Data Factory](media/adf-new-data-factory.png)
 
-3. Once the deployment has completed, under **Next steps** select **Go to resource**. 
+3. When the deployment completes, under Next steps select Go to resource.
    
-4. Select **Author & Monitor** to open the Data Factory UI in a separate tab. 
+4. To open the Data Factory UI in a separate tab, select **Author & Monitor**.
 
 ## Create a pipeline
 
-We are now going to create a new pipeline. 
+We are now going to create a new pipeline to get data from Insights. To create a pipeline:
 
 1. On the **Let's get started** page, select **Create pipeline**.
 
@@ -54,14 +66,14 @@ We are now going to create a new pipeline.
  
     ![ADF Explorer Command](media/adf-explorer-command.png)
 
- 3. Switch to the **Connection** tab and select **New**. 
+ 3. Select the **Connection** tab and select **New**. 
  
     ![ADF Explorer Command Connection](media/adf-explorer-command-connection.png)
  
  4. In the **New linked service (Azure Data Explorer (Kusto))** window, fill out the fields:
     * For **Name**, use the Title ID.
     * For **Account selection method**, select **Enter manually**.
-    * For the **Endpoint**, use the title's API URL. It will follow the format `https://<titleid>.playfabapi.com`.
+    * For the **Endpoint**, use the title's API URL. Use the following format format for the URL: `https://<titleid>.playfabapi.com`.
     * For **Service Principal ID**, enter your Client ID from your Azure app.
     * For **Service Principal Key**, enter your Client secret from your Azure app.
     * In the **Database** box, type the Title ID in all upper case.
@@ -70,14 +82,14 @@ We are now going to create a new pipeline.
 
    Select **Create**.
 
-2.  Select **Test connection** to verify that all of the information is correct. If everything is set up correctly, it will return a **Connection successful** response. 
+2.  To verify that all of the information is correct, select **Test connection**. If everything is set up correctly, it returns a Connection successful response. If everything is set up correctly, it will return a **Connection successful** response. 
 
    ![ADF Test Connection](media/adf-test-connection.png)
 
-3. Finally, **Validate** and **Debug** the pipeline using the buttons in the toolbar above the workspace. 
+3. To validate and debug the pipeline, in the toolbar above the workspace, select **Validate** and then select **Debug**.
 
 
 ## Additional resources
 
-* Azure Data Factory (ADF) [documentation](https://docs.microsoft.com/azure/data-factory/).
-* Connect [more tools](index.md) with Insights.
+* [Azure Data Factory (ADF) documentation](https://docs.microsoft.com/azure/data-factory/)
+* Connect more tools to Insights at [Connecting external tools to Insights](index.md)
