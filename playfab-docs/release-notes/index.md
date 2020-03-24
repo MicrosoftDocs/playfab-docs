@@ -1,8 +1,8 @@
 ---
 title: PlayFab Release Notes 2020
-author: v-thopra
+author: sebgrink
 description: PlayFab Release Notes for 2020.
-ms.author: v-thopra
+ms.author: sebgrink
 ms.date: 01/01/2020
 ms.topic: article
 ms.prod: playfab
@@ -10,6 +10,25 @@ keywords: playfab, development, release, apis, features
 ms.localizationpriority: medium
 ---
 # PlayFab Release Notes 2020
+
+## 200325
+
+Date: 2020-03-25
+
+### Improvements
+
+* Multiplayer Servers:
+    * A new section on [Formatting the game start command](https://docs.microsoft.com/gaming/playfab/features/multiplayer/servers/quickstart-for-multiplayer-servers-api-powershell) was added to the documentation.
+    * A title's core server quota for a region is now based on actual consumption across a sum of activated servers for the region.
+
+### Bug Fixes
+
+* Authentication:
+    * Previously when not passing an encryption key into the [Login with Xbox API](https://docs.microsoft.com/rest/api/playfab/client/authentication/loginwithxbox?view=playfab-rest) a generic error code was returned. Now the `EncryptionKeyMissing` error code is returned.
+    * Previously when the player secret was already configured the [Login with GameCenter API](https://docs.microsoft.com/rest/api/playfab/client/authentication/loginwithgamecenter?view=playfab-rest) returned a generic error code. Now the `PlayerSecretAlreadyConfigured` error code is returned.
+* Automation - Previously if you were bulk deleting PlayStream rules or Player Segments occasionally rules or segments would not be completely deleted. Now they will.
+* Config - Previously when you uploaded a custom image for your title in Game Manager and then added a new user the Game Title icon would not load. Now it loads as expected.
+* Social - Previously when pressing the delete button on the delete blocks dialog in the Groups feature the dialog would not go away. Now it will.
 
 ## 200318
 
