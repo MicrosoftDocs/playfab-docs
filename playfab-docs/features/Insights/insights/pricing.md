@@ -2,7 +2,7 @@
 title: Insights Export
 author: john-smith-microsoft
 description: Overview for PlayFab Insights Export
-ms.author: john-smith-microsoft
+ms.author: johsmi
 ms.date: 02/28/2020
 ms.topic: article
 ms.prod: playfab
@@ -15,7 +15,8 @@ All Insights features are billed in a virtual currency called "Insights Credits"
 
 ## Insights Performance
 Each performance level for insights is billed to the minute (Credits Per Hour / 60). Pricing for each performance level is located at the bottom of the table on the Insights Management page:
-![Insights Slider](media/performance-level2.png)<br>
+![Insights Slider](media/performance-level2.png)
+
 
 
 ### Retention

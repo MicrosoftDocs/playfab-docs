@@ -2,7 +2,7 @@
 title: Performance and retention
 author: john-smith-microsoft
 description: Performance and retention for playfab insights
-ms.author: john-smith-microsoft
+ms.author: johsmi
 ms.date: 02/28/2020
 ms.topic: article
 ms.prod: playfab
@@ -52,11 +52,11 @@ This is the total maximum events per second that can be ingested into the data s
 **What happens if I exceed my row write limit?**<br>
 Paid titles will be charged an overage fee of 1 Credit for every 2.7m (2,700,000) extra events ingested. This overage cost is designed to allow customers with predictable ingestion loads to sit at a smaller performance levels during off hours for cost savings.
 
-### *Event Archives*
-Event Archives allow customers to export all or some of their data on a regular schedule to Azure Blob or AWS S3. See [Exporting Data]('https://docs.microsoft.com/gaming/playfab/features/insights/insights/export') for details.
+### *Event Exports*
+Event Archives allow customers to export all or some of their data on a regular schedule to Azure Blob or AWS S3. See [Exporting Data]('https://docs.microsoft.com/gaming/playfab/features/insights/insights/export').
 
 ### *Credits Per Hour*
-Insights is billed per minute at the credits per hour rate (Credits Per Hour / 60). Insights Credit Pricing can be found [here]('https://playfab.com/pricing/').
+Insights is billed per minute at the credits per hour rate (Credits Per Hour / 60). For more information about Insights Credit Pricing see [PlayFab Pricing]('https://playfab.com/pricing/').
 
 ## Retention
 ![Insights Retention](media/insights-retention.png)<br>
