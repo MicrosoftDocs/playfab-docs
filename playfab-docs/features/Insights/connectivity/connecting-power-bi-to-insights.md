@@ -34,7 +34,7 @@ On your local machine, open Power BI.
 
 1. In the **Power BI Desktop** window, select **Get Data** > **Azure Data Explorer (Kusto)**.
 2. In the **Azure Data Explorer (Kusto)** dialog box take the following steps:
-   * Under **Cluster** enter your API endpoint, which follows the format `https://<titleid>.playfabapi.com`. 
+   * Under **Cluster** enter the PlayFab API endpoint, which is `https://insights.playfab.com`. 
    * Under **Database** enter your title ID in all uppercase, as Database names are case sensitive. 
    * Scroll down, and under **Data Connectivity mode** select **DirectQuery**.
 

@@ -72,6 +72,8 @@ query = "['events.all'] | count"
 # Force Kusto to use the v1 query endpoint
 client._query_endpoint = cluster + "/v1/rest/query"
 
+crp = ClientRequestProperties()
+crp.application = "KustoPythonSDK"
 response = client.execute(db, query)
 
 # Response processing

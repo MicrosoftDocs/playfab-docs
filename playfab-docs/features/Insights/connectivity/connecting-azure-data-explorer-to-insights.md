@@ -36,7 +36,7 @@ To connect with Azure Data Explorer:
 
    ![ADX Add connection](media/adx-add-cluster-button.png)
 
-2. Enter your title API endpoint, which follows the format `https://<titleID>.playfabapi.com`. 
+2. Enter the PlayFab API endpoint, which is `https://insights.playfab.com`. 
 3. Select **Add**, and you should now be able to execute queries or commands on the database. 
 
 ## Additional resources
