@@ -21,7 +21,7 @@ To create a new export:
 4. There are several options for which data to export to choose from
    1. You may select the checkbox for all events, this will export all data.
    2. You may select one more more tables to export
-   3. You may select to use a custom query to define the output of the export. **NOTE** Using a custom query for exporting all data will result in a slight addition of columns from the ETL process.
+   3. You may select to use a custom query to define the output of the export. **NOTE** Using a custom query for exporting all data will result in a slight addition of columns from the ETL process. **NOTE** When using custom query, the output must have a timestamp column named timestamp.
 5. You can choose between once an hour and once a day for export frequency
 6. You can choose to have your data partitioned into individual files for more efficient storage and loading
 

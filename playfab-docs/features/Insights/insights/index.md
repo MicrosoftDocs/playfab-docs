@@ -2,7 +2,7 @@
 title: Insights
 author: john-smith-microsoft
 description: Overview for PlayFab Insights
-ms.author: john-smith-microsoft
+ms.author: johsmi
 ms.date: 02/28/2020
 ms.topic: article
 ms.prod: playfab
