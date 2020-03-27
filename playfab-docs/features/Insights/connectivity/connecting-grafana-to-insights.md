@@ -23,22 +23,28 @@ In this tutorial you learn how to:
 > * Run Kusto queries and commands using the dashboard
 
 ## Prerequisites
-* A PlayFab account or user for which the authentication provider is set to Microsoft. The Microsoft authentication provider uses Azure Active Directory (AAD) for authentication which is required to use the Azure services. See [Azure Active Directory Authentication for Game Manager](../../authentication/aad-authentication/index.md) for instructions on creating an AAD-authenticated account or user. 
+### PlayFab account authenticated with AAD
+You need a PlayFab account or user for which the authentication provider is set to Microsoft. The Microsoft authentication provider uses Azure Active Directory (AAD) for authentication which is required to use the Azure services. See [Azure Active Directory Authentication for Game Manager](../../authentication/aad-authentication/index.md) for instructions on creating an AAD-authenticated account or user. 
   
-> [!NOTE]
-> To verify that the account, or user, is set to use the Microsoft authentication provider:
->    * Visit the PlayFab [log in page](https://developer.playfab.com/login).
->    * Use the the Sign in with Microsoft link to access your PlayFab account.
-> 
-> If you can sign in, then the account is set to use the Microsoft authentication provider.
-* The following [Game Manager permissions](https://docs.microsoft.com/gaming/playfab/features/config/gamemanager/playfab-user-roles#permissions-and-roles) enabled for your user:
-    *  Admin status.
-    *  Access to the Explorer tab and associated data.
-    *  Read and write access to Analytics data.
+To verify that the account, or user, is set to use the Microsoft authentication provider:
+* Visit the PlayFab [log in page](https://developer.playfab.com/login).
+* Use the the Sign in with Microsoft link to access your PlayFab account.
+ 
+If you can sign in, then the account is set to use the Microsoft authentication provider.
+
+### Game Manager permissions for Insights
+You need to assign your account a [user role](https://docs.microsoft.com/gaming/playfab/features/config/gamemanager/playfab-user-roles) with the following Game Manager permissions enabled:
+* Admin status.
+* Access to the Explorer tab and associated data.
+* Read and write access to Analytics data.
+
+You can either create a new user role or add these permissions to an existing role.
+
+### Other prerequisites
 *  [Create an Azure Active Directory (AAD) application and connect it to your title database](creating-AAD-app-for-insights.md)
 
 ## Get set up with Grafana
-1. If you don't have a free Grafana account, [create one](https://grafana.com/login). You can either download Grafana to run on your computer or use the online hosted instance. 
+1. There are two ways to get Grafana. You can [create a free account](https://grafana.com/login) and download Grafana to run on your computer. Or, if you have a paid Grafana Cloud subscription, you can use your online hosted instance. 
 
 2. Install the [Azure Data Explorer](https://grafana.com/grafana/plugins/grafana-azure-data-explorer-datasource) plugin for Grafana.
 
@@ -49,21 +55,19 @@ Now that your title database is linked to an Azure app, you can use the app to c
 
 2. On the **Welcome to Grafana** page, select **Add data source**. 
 
-   ![Grafana Welcome](media/grafana-welcome.png)
-
 3. On the **Add Datasource** page, select the **Azure Data Explorer Datasource**. You can search for it with the searchbar or find it listed under the section **Others**. If you don't see the **Azure Data Explorer Datasource** option, you need to install the Azure Data Explorer Datasource For Grafana plugin.
 
    ![Grafana Add Datasource](media/grafana-add-datasource.png)
 
 4. On the **Azure Data Explorer Datasource** configuration page:
-   *  For **Cluster URL**, enter your API endpoint. Use the following format format for the URL: `https://<titleID>.playfabapi.com`.
+   *  For **Cluster URL**, enter the PlayFab API endpoint, which is `https://insights.playfab.com`.
    *  Enter your **Tenant Id**, **Client Id**, and **Client secret** from your Azure Active Directory (AAD) application into their respective fields. 
    *  Select **Save & Test**. You should see a **Connection Successful** return message.
    *  From **Default Database**, select your Title ID or database name. This automatically populates after you successfully save and test the datasource. If it doesn't show up after a successful connection, try exiting and re-opening the configuration page.
 
    ![Grafana Datasource Configuration](media/grafana-datasource-configuration.png)
 
-## Create a new dashboard
+## Create a dashboard
 
 From the Grafana homepage we will create a new dashboard. To create a dashboard:
 

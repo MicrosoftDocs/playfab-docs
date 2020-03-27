@@ -21,36 +21,44 @@ In this tutorial you learn how to:
 > * Create a pipeline
 
 ## Prerequisites
-* A PlayFab account or user for which the authentication provider is set to Microsoft. The Microsoft authentication provider uses Azure Active Directory (AAD) for authentication which is required to use the Azure services. See [Azure Active Directory Authentication for Game Manager](../../authentication/aad-authentication/index.md) for instructions on creating an AAD-authenticated account or user. 
+### PlayFab account authenticated with AAD
+You need a PlayFab account or user for which the authentication provider is set to Microsoft. The Microsoft authentication provider uses Azure Active Directory (AAD) for authentication which is required to use the Azure services. See [Azure Active Directory Authentication for Game Manager](../../authentication/aad-authentication/index.md) for instructions on creating an AAD-authenticated account or user. 
   
-> [!NOTE]
-> To verify that the account, or user, is set to use the Microsoft authentication provider:
->    * Visit the PlayFab [log in page](https://developer.playfab.com/login).
->    * Use the the Sign in with Microsoft link to access your PlayFab account.
-> 
-> If you can sign in, then the account is set to use the Microsoft authentication provider.
-* The following [Game Manager permissions](https://docs.microsoft.com/gaming/playfab/features/config/gamemanager/playfab-user-roles#permissions-and-roles) enabled for your user:
-    *  Admin status.
-    *  Access to the Explorer tab and associated data.
-    *  Read and write access to Analytics data.
+To verify that the account, or user, is set to use the Microsoft authentication provider:
+* Visit the PlayFab [log in page](https://developer.playfab.com/login).
+* Use the the Sign in with Microsoft link to access your PlayFab account.
+ 
+If you can sign in, then the account is set to use the Microsoft authentication provider.
+
+### Game Manager permissions for Insights
+You need to assign your account a [user role](https://docs.microsoft.com/gaming/playfab/features/config/gamemanager/playfab-user-roles) with the following Game Manager permissions enabled:
+* Admin status.
+* Access to the Explorer tab and associated data.
+* Read and write access to Analytics data.
+
+You can either create a new user role or add these permissions to an existing role.
+
+### Other prerequisites
 *  [Create an Azure Active Directory (AAD) application and connect it to your title database](creating-AAD-app-for-insights.md)
 
 
 ## Create a new data factory
 To create a new data factory:
-1. Sign in to the [Azure portal](https://portal.azure.com). From the homepage, select **Create a resource**. Search for **Data Factory**, select it and then select **Create**.
+1. Sign in to the [Azure portal](https://portal.azure.com). From the homepage under **Azure Services**, select **Create a resource**. Search for **Data Factory**, select it and then select **Create**.
 
    ![ADF Create Resource](media/adf-create-resource.png)
 
 2. Fill out the required fields:
-   * Give your data factory a **Name**.
-   * Select the **Azure subscription** that you would like to create it in.
-   * Create a new **resource group** or select an existing one to use.
+   * For **Name**, choose a name for your data factory. The name must be *globally unique*.
+   * For **Subscription**, select your Azure subscription in which you want to create the data factory.
+   * For **Resource Group**, use one of the following steps:
+     * Select **Use existing**, and select an existing resource group from the list.
+     * Select **Create new**, and enter the name of a resource group.
    * You do not need to enable GIT right now, so uncheck the box below.
 
    ![ADF New Data Factory](media/adf-new-data-factory.png)
 
-3. When the deployment completes, under Next steps select Go to resource.
+3. Select **Create**. After the deployment completes, under **Next steps** select **Go to resource**.
    
 4. To open the Data Factory UI in a separate tab, select **Author & Monitor**.
 
@@ -58,9 +66,7 @@ To create a new data factory:
 
 We are now going to create a new pipeline to get data from Insights. To create a pipeline:
 
-1. On the **Let's get started** page, select **Create pipeline**.
-
-   ![ADF Let's Get Started](media/adf-lets-get-started.png)
+ 1. On the **Let's get started** page, select **Create pipeline**.
 
  2. In the **Activities** panel under **Azure Data Explorer**, drag and drop an **Azure Data Explorer Command** into the blank workspace. In the bottom panel under **General**, fill out the name and description.
  
@@ -80,9 +86,9 @@ We are now going to create a new pipeline to get data from Insights. To create a
    
     ![ADF New Linked Service](media/adf-new-linked-service.png)
 
-   Select **Create**.
+    Select **Create**. Now the pipeline is ready. You can go back to the main pipeline view by clicking the pipeline name.
 
-2.  To verify that all of the information is correct, select **Test connection**. If everything is set up correctly, it returns a Connection successful response. 
+1.  To verify that all of the information is correct, select **Test connection**. If everything is set up correctly, it returns a Connection successful response. 
 
    ![ADF Test Connection](media/adf-test-connection.png)
 

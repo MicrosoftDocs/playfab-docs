@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Connecting external tools to Insights
 
-PlayFab Insights offers an unprecedented look into your game's data and the trends created by your users. Part of Insights' power is the flexibility to be paired with many other data and analytics tools. This section contains tutorials that will show you how to connect Insights to other tools.
+PlayFab Insights offers an unprecedented look into your game's data and the trends created by your users. Part of Insights' power is the flexibility to be paired with many other data and analytics tools. This section contains tutorials that show you how to connect Insights to other tools.
 
 Currently, you can connect the following external tools to Insights: 
   - [Connect to Power BI](#power-bi)
