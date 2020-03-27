@@ -15,24 +15,24 @@ ms.localizationpriority: medium
 ## Best Practices 
 - Each performance level comes with a certain quantity of cache. It is a good idea to calculate a daily data footprint and decide how many days of data you would like in cache. A small buffer or very well known data footprint will allow anyone performing queries to know when to expect optimal performance. Running visualizations against that expected performance is also recommended for quick results.
   - For example, a studio has a 5 GB / day data footprint. Selecting a cache size of 450+ GB will allow 90 days of data in cache. Running all visualizations in 90 day running windows will be very efficienct. Joins, unions, and advanced queries will be very efficient. Another option would be to focus live visualizations primarily on 30 day windows and set cache size up to 90 days during working hours and 30 days during off hours, this will create large efficiencies in cost savings.
- <br>
-  <br>
+
+
  - Data visualization platforms like PowerBI often run multiple queries for a single visualization. It's recommended that the visualizations be updated serially. If under heavy load it may make sense to increase performance level to the next concurrency to free up simultaneous queries for external tools and analysts. 
-   <br>
-  <br>
+
+
 - The most common use case for scheduled scaling is scaling down after hours and weekends and scaling up during standard working hours. If making large changes in performance level (e.g. level 3 to 8) it's recommended that you intend to stay at the higher performance level for several hours. Loading terrabytes of data in and out of cache quickly is an inefficient use of resources. All other limits are raised instantly, so you may choose to make the scaling changes if needed.
-   <br>
-  <br>
+
+
 - Scheduled scaling is not mutually exclusive with manual scaling. If you find that you need more recources in middle of the day, you can make a manual change, the scheduled scaling will continue as expected. 
- <br>
-  <br>
+
+
 - Reducing data storage can result in data loss. You will be warned when attempting to reduce storage. Due to the low cost of storage, long term retention is recommended. 
- <br>
-  <br>
+
+
 - Insights management commands allow the creation of updating of custom tables. For core reporting and often used tables it's helpful to build custom aggregation tables. Aggregation tables generally have a much smaller data footprint than the source data. This increases query performance and reduces the need for a higher performance level. 
   - For automating aggregation we recommend using Azure Data Factory, a low-cost and scalable automation option. For more information on using Azure Data Factory see the [connectivity]('https://docs.microsoft.com/gaming/playfab/features/insights/insights/connectivity') section.
- <br>
-  <br>
+
+
 - Limit queries by timestamp, don't pull all data to explore the last several days (this is generally good advice in any data system).
 
 

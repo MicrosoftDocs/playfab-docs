@@ -22,15 +22,18 @@ PlayFab Insights is a completely managed data environment, giving you instant ac
 PlayFab services automatically fire Playstream events. Any events fired by PlayFab services or created through our SDK are automatically routed to your Insights cluster. There is no need to worry about defining schema or DDL from automatic events. However, the option for sending your own custom events [is available]('https://docs.microsoft.com/en-us/gaming/playfab/features/analytics/metrics/playstream-events#custom-event-overview').
 
 ### Change Your Performance Level To Meet Your Needs
-![Insights Slider](media/insights-slider.png)<br>
+![Insights Slider](media/insights-slider.png)
+
 Match your cluster performance to your needs minute by minute. Slide your performance level up or down or alternatively schedule your cluster to have different performance levels automatically using scheduled tasks. See [Performance Level & Retention]('https://docs.microsoft.com/en-us/gaming/playfab/features/insights/insights/performance-retention') for details.
 
 ### Schedule Your Performance Level
-![Insights Slider](media/insights-schedule.png)<br>
+![Insights Slider](media/insights-schedule.png)
+
 Use standard cron expressions to automically scale your cluster up and down during known times. See [Scheduled Scaling]('https://docs.microsoft.com/en-us/gaming/playfab/features/insights/insights/scheduled-scaling') for details.
 
 ### Keep Your Data as Long as You Need
-![Insights Slider](media/insights-retention.png)<br>
+![Insights Slider](media/insights-retention.png)
+
 Never delete your data or clear your data out every 30 days, whatever is needed for your studio. See [Performance Level & Retention]('https://docs.microsoft.com/en-us/gaming/playfab/features/insights/insights/performance-retention') for details.
 
 ### Connect Outside Tools
