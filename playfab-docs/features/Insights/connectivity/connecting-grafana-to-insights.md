@@ -47,17 +47,15 @@ Now that your title database is linked to an Azure app, you can use the app to c
 
 1. Log in to Grafana.
 
-   ![Grafana Login](media/grafana-login.png)
-
 2. On the **Welcome to Grafana** page, select **Add data source**. 
 
    ![Grafana Welcome](media/grafana-welcome.png)
 
-2. On the **Add Datasource** page, select the **Azure Data Explorer Datasource**. You can search for it with the searchbar or find it listed under the section **Others**. If you don't see the **Azure Data Explorer Datasource** option, you need to install the Azure Data Explorer Datasource For Grafana plugin.
+3. On the **Add Datasource** page, select the **Azure Data Explorer Datasource**. You can search for it with the searchbar or find it listed under the section **Others**. If you don't see the **Azure Data Explorer Datasource** option, you need to install the Azure Data Explorer Datasource For Grafana plugin.
 
    ![Grafana Add Datasource](media/grafana-add-datasource.png)
 
-3. On the **Azure Data Explorer Datasource** configuration page:
+4. On the **Azure Data Explorer Datasource** configuration page:
    *  For **Cluster URL**, enter your API endpoint. Use the following format format for the URL: `https://<titleID>.playfabapi.com`.
    *  Enter your **Tenant Id**, **Client Id**, and **Client secret** from your Azure Active Directory (AAD) application into their respective fields. 
    *  Select **Save & Test**. You should see a **Connection Successful** return message.

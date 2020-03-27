@@ -36,7 +36,7 @@ On your local machine, open Kusto.Explorer.
    * Right-click on the **Connections** folder in the left navigation panel, then select **Add connection**.
 
 2. In the **Add connection** dialog box:
-   * Under **Cluster connection** enter your API endpoint, which follows the format `https://<titleid>.playfabapi.com`. 
+   * Under **Cluster connection** enter the PlayFab API endpoint, which is `https://insights.playfab.com`. 
    * Under **Security**, make sure **AAD Federated** is selected. 
    * Expand the **Advanced: Connection String** box and change the value of **Initial Catalog** from `NetDefaultDB` to `<titleID>`. Note that `<titleID>` must be all uppercase here. In the example below, this change is highlighted in the string. 
   

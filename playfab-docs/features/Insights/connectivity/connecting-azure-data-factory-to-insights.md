@@ -73,7 +73,7 @@ We are now going to create a new pipeline to get data from Insights. To create a
  4. In the **New linked service (Azure Data Explorer (Kusto))** window, fill out the fields:
     * For **Name**, use the Title ID.
     * For **Account selection method**, select **Enter manually**.
-    * For the **Endpoint**, use the title's API URL. Use the following format format for the URL: `https://<titleid>.playfabapi.com`.
+    * For the **Endpoint**, use the PlayFab API endpoint, which is `https://insights.playfab.com`.
     * For **Service Principal ID**, enter your Client ID from your Azure app.
     * For **Service Principal Key**, enter your Client secret from your Azure app.
     * In the **Database** box, type the Title ID in all upper case.
@@ -82,7 +82,7 @@ We are now going to create a new pipeline to get data from Insights. To create a
 
    Select **Create**.
 
-2.  To verify that all of the information is correct, select **Test connection**. If everything is set up correctly, it returns a Connection successful response. If everything is set up correctly, it will return a **Connection successful** response. 
+2.  To verify that all of the information is correct, select **Test connection**. If everything is set up correctly, it returns a Connection successful response. 
 
    ![ADF Test Connection](media/adf-test-connection.png)
 
