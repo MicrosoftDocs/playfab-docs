@@ -23,7 +23,7 @@ Example:<br>
 A studio has selected performance level 3 and therefor has 100GB of cache. They have also select 1200 days of retention, so there is just over 3 years of data stored in their cluster. If the studio has a daily data footprint of 1 GB a day, then 100 Days of data is stored in the hot cache. A user may run a query over 90 days and query only hot cache, they may run that same query over all 3 years and query from both sources, no change is needed in query structure. 
 
 **How is cache affected when I change my performance level?**<br>
-When you change your performance down, data is loaded from hot cache into storage as the hardware resources are reduced. Similarly, when increasing your performance level, hardware is instantly allocated to you and data is transfered into your cache. This process is generally very fast, but terabyte level shifts in cache size can take a short time to complete. See [Best Practices]('https://docs.microsoft.com/en-us/gaming/playfab/features/insights/insights/best-practices') for more information. 
+When you change your performance down, data is loaded from hot cache into storage as the hardware resources are reduced. Similarly, when increasing your performance level, hardware is instantly allocated to you and data is transfered into your cache. This process is generally very fast, but terabyte level shifts in cache size can take a short time to complete. See [Best Practices]('https://docs.microsoft.com/gaming/playfab/features/insights/insights/best-practices') for more information. 
 
 ### *Compute Power*
 Compute power represents the max quantity of vCPUs allocated for each query. Based on the parallelization of a given query plan, some queries cannot take full advantage of all vCPUs at once (order, distinct). Additionally, to improve interactivity of the querying experience, priority is given to queries by start time, meaning subsequent concurrent queries may see decreased vCPU allocation.
@@ -53,15 +53,15 @@ This is the total maximum events per second that can be ingested into the data s
 Paid titles will be charged an overage fee of 1 Credit for every 2.7m (2,700,000) extra events ingested. This overage cost is designed to allow customers with predictable ingestion loads to sit at a smaller performance levels during off hours for cost savings.
 
 ### *Event Archives*
-Event Archives allow customers to export all or some of their data on a regular schedule to Azure Blob or AWS S3. See [Exporting Data]('https://docs.microsoft.com/en-us/gaming/playfab/features/insights/insights/export') for details.
+Event Archives allow customers to export all or some of their data on a regular schedule to Azure Blob or AWS S3. See [Exporting Data]('https://docs.microsoft.com/gaming/playfab/features/insights/insights/export') for details.
 
 ### *Credits Per Hour*
-Insights is billed per minute at the credits per hour rate (Credits Per Hour / 60). Insights Credit Pricing can be found [here]('https://Insights_pricing_site').
+Insights is billed per minute at the credits per hour rate (Credits Per Hour / 60). Insights Credit Pricing can be found [here]('https://playfab.com/pricing/').
 
 ## Retention
 ![Insights Retention](media/insights-retention.png)<br>
 
-The retention setting allows a studio to set the total quantity of days data is kept. The default setting is 30 days, this guarantees GDPR compliance. Retention can be set globally or by table using [Management Commands]('https://review.docs.microsoft.com/en-us/gaming/playfab/features/insights/explorer/management-commands?branch=managementcommands'). Retention is charged at a rate of 50 credits per terabyte month, studios are only charged for what is in use by day. Insights Credit Pricing can be found [here]('https://Insights_pricing_site').
+The retention setting allows a studio to set the total quantity of days data is kept. The default setting is 30 days, this guarantees GDPR compliance. Retention can be set globally or by table using [Management Commands]('https://review.docs.microsoft.com/gaming/playfab/features/insights/explorer/management-commands?branch=managementcommands'). Retention is charged at a rate of 50 credits per terabyte month, studios are only charged for what is in use by day. Insights Credit Pricing can be found [here]('https://playfab.com/pricing/').
 
 **Example**
 A studio has 10 terabytes of data stored at the beginning of the month and does not increase that storage. The total cost would b 500 (10 TB * 50 credits/TB) Credits. 
