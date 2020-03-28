@@ -13,11 +13,9 @@ keywords: playfab, multiplayer, networking
 # PlayFab Party Availability and Pricing
 
 > [!IMPORTANT]
-> This feature is currently in **Private Preview**.
+> This feature is currently in **Preview**. It is provided to give you an early look at an upcoming feature and to allow you to provide feedback while it is still in development.
 >
-> It is provided to give you an early look at an upcoming feature and to allow you to provide feedback while it is still in development.
->
-> Access to this feature is restricted to select titles, with SDKs available for Windows 10 PCs and Xbox One. Interoperable SDKs for iOS and Android are available now. If you are interested in this feature, you can request access by submitting a ticket on [support.playfab.com](https://support.playfab.com/hc/en-us/requests/new).
+> PlayFab customers in the Indie, Pro, and Enterprise tiers can access the Matchmaking and Party previews automatically through Game Manager. Xbox managed partners are also invited for the preview in the free tier and can get a preview access code from your Microsoft developer partner manager.
 
 **TBD**
 
@@ -37,5 +35,5 @@ keywords: playfab, multiplayer, networking
 * Availability
   * Instructions for acquiring the C/C++ NuGet package.
   * Release notes
-    * In the current **Private Preview** release, the maximum number of players supported per network is 32.
+    * In the current **Preview** release, the maximum number of players supported per network is 32.
   * Contact Microsoft for libraries integrated with popular game engines and languages other than C/C++.

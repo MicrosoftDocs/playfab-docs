@@ -12,9 +12,6 @@ ms.localizationpriority: medium
 
 # Using server backfill tickets
 
-> [!NOTE] 
-> The APIs listed below are in **Beta**. These are not final and may change in the future.
-
 Games hosted on a server sometimes find they need to search for additional
 players. Most often this occurs when one or more players disconnect while the
 game is in progress. Server backfill tickets allow a game server to search for

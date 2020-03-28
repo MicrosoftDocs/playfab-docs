@@ -5,7 +5,7 @@ description: TBD
 ms.author: alstonge
 ms.topic: reference
 ms.prod: playfab
-ms.date: 11/01/2019
+ms.date: 01/17/2020
 ---
 
 # PartyXblManager  
@@ -37,7 +37,8 @@ class PartyXblManager
 | [CreateRemoteChatUser](methods/partyxblmanager_createremotechatuser.md) | Creates a remote chat user. A remote chat user is an Xbox Live user currently communicating with at least one local user. Creating a remote chat user will cause the library to start tracking privacy information related to this user in relation to every local chat user. |  
 | [DestroyChatUser](methods/partyxblmanager_destroychatuser.md) | Destroys a chat user. |  
 | [GetChatUsers](methods/partyxblmanager_getchatusers.md) | Gets an array containing all chat users created by [CreateLocalChatUser()](methods/partyxblmanager_createlocalchatuser.md) and [CreateRemoteChatUser()](methods/partyxblmanager_createremotechatuser.md). |  
-| [LoginToPlayFab](methods/partyxblmanager_logintoplayfab.md) | Signs the user in to PlayFab using an Xbox Live token, asynchronously returning an Entity ID and Entity Token that can subsequently be used for PlayFab API calls which require an authenticated PlayFab user or to create a PartyLocalUser. There is no difference between calling this method or using the LoginWithXbox method provided by the PlayFab SDK. |  
+| [LoginToPlayFab](methods/partyxblmanager_logintoplayfab.md) | Signs the user in to PlayFab using an Xbox Live token, asynchronously returning an Entity Id and Entity Token that can subsequently be used for PlayFab API calls which require an authenticated PlayFab user or to create a PartyLocalUser. There is no difference between calling this method or using the LoginWithXbox method provided by the PlayFab SDK. |  
+| [GetEntityIdsFromXboxLiveUserIds](methods/partyxblmanager_getentityidsfromxboxliveuserids.md) | Queues an asynchronous operation to retrieve a list of mappings between PlayFab Entity Ids and known Xbox Live User Ids. |  
 
   
 ## Remarks  

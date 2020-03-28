@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 ---
 
 # PlayFab Roadmap
-_Last Update: 1/16/2020_
+_Last Update: 3/10/2020_
 
 PlayFab is gearing up for an exciting decade! With 2020 comes a modern vision of our services that we’re working hard to deliver. 
 
@@ -19,16 +19,9 @@ As always, we want your feedback. The [Feature Requests](https://community.playf
 
 Please note that while this roadmap reflects our aspirations, features and timelines are subject to change without notice.
 
-**Coming Soon:**
+***
 
-**_CloudScript with Azure Functions_**
-
-[CloudScript using Azure Functions](https://docs.microsoft.com/gaming/playfab/features/automation/cloudscript-af/) brings support for [new languages](https://docs.microsoft.com/azure/azure-functions/supported-languages) (including C#) as well as local debugging in Visual Studio and Visual Studio Code. 
-PlayFab asynchronously waits for these functions to complete, allowing them to run for extended periods of time.  You can watch a demo [here](https://youtu.be/apQbkDn1lNo).
-
-**_PlayFab Visual Studio Extension_**
-
-The PlayFab Visual Studio Code Extension will roll out soon with a GitHub open source repository for community involvement.
+## **Coming Soon:**
 
 **_PlayFab in China_**
 
@@ -50,15 +43,13 @@ These pages will allow you to view costs for each day.
 
 We’re working on management experiences for Linux builds and additional graphs for smarter administration. 
 
-**Coming Later:**
+***
+
+## **Coming Later:**
 
 **_General availability of improved Leaderboards_**
 
 This service is available today in previews. As we further incorporate your feedback, we will make this generally available to all PlayFab users. 
-
-**_PlayFab Experimentation_**
-
-This will provide a more advanced framework for A/B tests and other experiments.
 
 **_Insights_**
 
@@ -68,11 +59,30 @@ The initial release of a new stand-alone PlayFab Insights service will give you 
 
 These services will begin to move from private to public preview in the first half of 2020. Monetization provides redemption, wallet and inventory capabilities while UGC provides a highly scalable catalog plus content moderation, ratings and reviews. These services are used to power the Minecraft Marketplace and the Mixer Sparks system supporting millions of transactions and the consumption of user generated content at scale. 
 
-**_AWS to Azure Migration_**
+***
 
-We continue to work on migrating completely from AWS to Azure.
+## **Available Now:**
 
-**Available Now:**
+**_The PlayFab Guide to LiveOps_**
+
+The third edition of our LiveOps guidebook is now available! [Download](https://aka.ms/LiveOpsGuide) your copy today and read about how LiveOps can help you build games with healthy communities.
+
+**_PlayFab Experiments_**
+
+Our new and more advanced framework for A/B tests and other experiments is now available!
+
+We posted a detailed overview on our [blog](https://blog.playfab.com/blog/announcing-playfabs-experimentation-all-new-for-trustworthy-experiments).
+
+**_CloudScript with Azure Functions_**
+
+[CloudScript using Azure Functions](https://docs.microsoft.com/gaming/playfab/features/automation/cloudscript-af/) brings support for [new languages](https://docs.microsoft.com/azure/azure-functions/supported-languages) (including C#) as well as local debugging in Visual Studio and Visual Studio Code. 
+PlayFab asynchronously waits for these functions to complete, allowing them to run for extended periods of time.  You can watch a demo [here](https://youtu.be/apQbkDn1lNo).
+
+**_PlayFab Visual Studio Extension_**
+
+The PlayFab Extension is now available in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=PlayFab.playfab-explorer). In addition, the extension is open source with code available in [GitHub](https://github.com/PlayFab/vscode-playfab-explorer). We continue to iterate on the PlayFab Extension and you are welcome to add features and improvements along with us.
+
+More information is available on on our [blog](https://blog.playfab.com/blog/announcing-the-open-source-playfab-visual-studio-code-extension).
 
 **_Insights Management Commands_**
 
@@ -80,7 +90,7 @@ Insights now has a series of [management commands](https://docs.microsoft.com/ga
 
 **_Azure Active Directory Authentication_**
 
-Now you can “Sign in with Microsoft” at the bottom of the PlayFab developer login page thanks to Azure Active Directory authentication. This enables one-click access to PlayFab from Partner Center, Azure Portal and other Microsoft portals. 
+Now you can “Sign in with Microsoft” at the bottom of the PlayFab developer login page thanks to Azure Active Directory authentication. This enables one-click access to PlayFab from Partner Center, Azure Portal and other Microsoft portals. When adding users to an existing account, be sure to set the correct authentication provider as specified in the [documentation](https://docs.microsoft.com/gaming/playfab/features/authentication/aad-authentication/).
 
 **_Multiplayer Servers in South Africa_**
 

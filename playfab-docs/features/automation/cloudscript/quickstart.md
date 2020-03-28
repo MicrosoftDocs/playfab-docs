@@ -1,17 +1,14 @@
 ---
 title: CloudScript quickstart
-author: v-thopra
+author: williacj
 description: Describes uploading and managing your CloudScript files in the PlayFab Game Manager.
-ms.author: v-thopra
-ms.date: 06/11/2018
+ms.author: cjwill
+ms.date: 02/10/2020
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, automation, game manager, cloudscript
 ms.localizationpriority: medium
 ---
-
-> [!NOTE]
-> This feature is in private preview and intended for use by customers participating in the preview program.  We anticipate ongoing changes to it as we continue gathering feedback and optimizing for customer use.
 
 # CloudScript quickstart
 

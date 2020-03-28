@@ -5,7 +5,7 @@ description: TBD
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/25/2019
+ms.date: 02/10/2020
 ---
 
 # PartyChatControl  
@@ -28,6 +28,8 @@ class PartyChatControl
 | [GetNetworks](methods/partychatcontrol_getnetworks.md) | Gets the networks to which this chat control is connected. |  
 | [GetCustomContext](methods/partychatcontrol_getcustomcontext.md) | Retrieves the app's private, custom pointer-sized context value previously associated with this chat control object. |  
 | [SetCustomContext](methods/partychatcontrol_setcustomcontext.md) | Configures an optional, custom pointer-sized context value with this chat control object. |  
+| [ConfigureAudioManipulationVoiceStream](methods/partychatcontrol_configureaudiomanipulationvoicestream.md) | Queues an asynchronous operation to configure the audio manipulation voice stream associated with this chat control. |  
+| [GetAudioManipulationVoiceStream](methods/partychatcontrol_getaudiomanipulationvoicestream.md) | Retrieves the audio manipulation voice stream associated with this chat control. |  
 
   
   

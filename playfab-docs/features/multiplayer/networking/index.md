@@ -48,19 +48,19 @@ To read best practices for user experiences and Microsoft's recommendations arou
 
 |Platform|SDKs|Samples|
 |-|-|-|
-|Windows 10, Windows 8.1 |[C++ SDK](https://www.nuget.org/packages/Microsoft.PlayFab.PlayFabParty.Cpp.Windows/), [Xbox Live Helper Library](https://www.nuget.org/packages/Microsoft.PlayFab.PlayFabPartyXboxLive.Cpp.Win10)|[BumbleRumble](https://github.com/PlayFab/PlayFab-Samples/tree/master/Samples/All/BumbleRumble)|
+|Windows 10, Windows 8.1 |[C++ SDK](https://www.nuget.org/packages/Microsoft.PlayFab.PlayFabParty.Cpp.Windows/), [Xbox Live Helper Library](https://www.nuget.org/packages/Microsoft.PlayFab.PlayFabPartyXboxLive.Cpp.Windows)|[BumbleRumble](https://github.com/PlayFab/PlayFab-Samples/tree/master/Samples/All/BumbleRumble)|
 |Xbox One (XDK) |[C++ SDK](https://www.nuget.org/packages/Microsoft.PlayFab.PlayFabParty.Cpp.XboxOneXDK), [Xbox Live Helper Library](https://www.nuget.org/packages/Microsoft.PlayFab.PlayFabPartyXboxLive.Cpp.XboxOneXDK)|[BumbleRumble](https://github.com/PlayFab/PlayFab-Samples/tree/master/Samples/All/BumbleRumble)|
-|Windows 7 |[C++ SDK](https://www.nuget.org/packages/Microsoft.PlayFab.PlayFabParty.Cpp.Windows/), [Xbox Live Helper Library](https://www.nuget.org/packages/Microsoft.PlayFab.PlayFabPartyXboxLive.Cpp.Win7)|Pending|
+|Windows 7 |[C++ SDK](https://www.nuget.org/packages/Microsoft.PlayFab.PlayFabParty.Cpp.Windows/), [Xbox Live Helper Library](https://www.nuget.org/packages/Microsoft.PlayFab.PlayFabPartyXboxLive.Cpp.Windows)|Pending|
 |iOS | [C++ SDK](https://github.com/PlayFab/PlayFabParty/releases)| [Chat App](https://github.com/PlayFab/PlayFabParty/tree/master/iOS/PartySample) |
 |Android | [C++ SDK](https://github.com/PlayFab/PlayFabParty/releases)| [Chat App](https://github.com/PlayFab/PlayFabParty/tree/master/android/PartySample) |
 
-Access to the SDKs for Nintendo Switch and Sony PlayStation 4 requires special approval and adherence to platform policies, please contact us via [email](mailto:helloplayfab@microsoft.com) or [Game Manager](https://blog.playfab.com/blog/playfab-support-overview) for access.
+Access to the SDKs for Nintendo Switch, Sony PlayStation 4, and Google Stadia requires special approval and adherence to platform policies, please contact us via [email](mailto:helloplayfab@microsoft.com) or [Game Manager](https://blog.playfab.com/blog/playfab-support-overview) for access.
 
 |Platform|SDKs|Samples|
 |-|-|-|
 |Nintendo Switch | [C++ SDK](https://github.com/PlayFab/PlayFabPartySwitch)| [Chat App](https://github.com/PlayFab/PlayFabPartySwitch/tree/master/Switch/PartySample) |
 |Sony PlayStation 4 | [C++ SDK](https://github.com/PlayFab/PlayFabPartyPS4)| [Chat App](https://github.com/PlayFab/PlayFabPartyPS4/tree/master/PS4/PartySample) |
-
+|Google Stadia | [C++ SDK](https://github.com/PlayFab/PlayFabPartyStadia)| [Chat App](https://github.com/PlayFab/PlayFabPartyStadia/tree/master/Stadia/PartySample) |
 
 ## Relationship to the game and other components
 

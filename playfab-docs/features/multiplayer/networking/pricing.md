@@ -12,8 +12,9 @@ ms.localizationpriority: medium
 
 # Billing for PlayFab Party
 > [!IMPORTANT]
-> This feature is currently in **Preview**  and this page describes preview pricing, which is subject to change upon launch of service.
+> This feature is currently in **Preview** and this page describes preview pricing, which is subject to change upon launch of service.
 >
+> PlayFab customers in the Indie, Pro, and Enterprise tiers can access the Matchmaking and Party previews automatically through Game Manager. Xbox managed partners are also invited for the preview in the free tier and can get a preview access code from your Microsoft developer partner manager.
 
 Most PlayFab services, such as PlayStream or Matchmaking, are included with every paid PlayFab tier as part of our core offering. However, PlayFab Party is billed on a consumption basis. This document describes the billing plan for Party.
 
