@@ -200,6 +200,7 @@ featureFlags:
                                     </div>
                                 </a>
                             </li>
+                            <!--
                             <li>
                                 <a href="https://aka.ms/PlayFabTechnicalWhitePaper">
                                     <div class="cardSize">
@@ -219,6 +220,7 @@ featureFlags:
                                     </div>
                                 </a>
                             </li>
+                            -->
                         </ul>
                     </li>
                     <li>
