@@ -25,9 +25,9 @@ Date: 2020-03-30
     * Added new [Mac build helper scripts](https://github.com/PlayFab/UnrealMarketplacePlugin/blob/master/4.24/ExampleProject/BuildMac.sh)
     
 ### [Plat SDK](https://github.com/PlayFab/XPlatCppSdk) specific changes
-    * Fixed some threading issues for the PlayFabEventPipeline
+ * Fixed some threading issues for the PlayFabEventPipeline
 ### [UnrealMarketPlacePlugin](https://github.com/PlayFab/UnrealMarketplacePlugin) specific changes
-    * Security bug fixes
+ * Security bug fixes
 
 ## 200325
 
