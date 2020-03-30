@@ -27,8 +27,10 @@ Date: 2020-03-30
 
 ### Bug Fixes
 
-* [Plat](https://github.com/PlayFab/XPlatCppSdk) - Fixed some threading issues for the PlayFabEventPipeline
-* [Unreal](https://github.com/PlayFab/UnrealMarketplacePlugin) - Security bug fixes
+* [Plat SDK](https://github.com/PlayFab/XPlatCppSdk) specific changes
+      * Fixed some threading issues for the PlayFabEventPipeline
+* [UnrealMarketPlacePlugin](https://github.com/PlayFab/UnrealMarketplacePlugin) specific changes
+      * Security bug fixes
 
 ## 200325
 
