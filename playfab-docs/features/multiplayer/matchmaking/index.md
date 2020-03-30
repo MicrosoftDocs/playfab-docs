@@ -84,7 +84,7 @@ For more information on specific flows from either your game client or service, 
 + [Handling common error cases](error-cases.md)
 + [Workaround for peer-to-peer connection](peer-to-peer.md)
 + [Using server backfill tickets](backfill-tickets.md)
-+ [Matchmaking Usage Graphs](usage.md)
++ [Analyzing Your Matchmaking Queue Usage](usage.md)
 
 ### SDKs and Tools
 
