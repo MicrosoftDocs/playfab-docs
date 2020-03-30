@@ -17,20 +17,18 @@ Date: 2020-03-30
 
 ### Improvements
 
-* Authentication:
-    * Added new LoginIdentityProviders for Apple and Nintendo
-* Multiplayer:
-    * Added new BuildRegion management functions
+* [Authentication](https://docs.microsoft.com/en-us/gaming/playfab/#pivot=documentation&panel=authentication):
+    * Added new [LoginIdentityProviders](https://docs.microsoft.com/en-us/gaming/playfab/api-references/events/data-types/loginidentityprovider) for Apple and Nintendo
+* [Multiplayer Server](https://docs.microsoft.com/en-us/gaming/playfab/#pivot=documentation&panel=multiplayer):
+    * Added new BuildRegion management functions [DeleteBuildRegion](https://docs.microsoft.com/en-us/rest/api/playfab/multiplayer/multiplayerserver/deletebuildregion?view=playfab-rest) and [UpdateBuildRegion](https://docs.microsoft.com/en-us/rest/api/playfab/multiplayer/multiplayerserver/updatebuildregion?view=playfab-rest)
 * Unreal:
-    * Added new Mac build helper scripts
+    * Added new [Mac build helper scripts](https://github.com/PlayFab/UnrealMarketplacePlugin/blob/master/4.24/ExampleProject/BuildMac.sh)
     
 
 ### Bug Fixes
 
-* XPlat:
-    * Fixed some threading issues for the PlayFabEventPipeline
-* Unreal:
-    * Security bug fixes
+* [Plat](https://github.com/PlayFab/XPlatCppSdk) - Fixed some threading issues for the PlayFabEventPipeline
+* [Unreal](https://github.com/PlayFab/UnrealMarketplacePlugin) - Security bug fixes
 
 ## 200325
 
