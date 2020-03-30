@@ -35,8 +35,9 @@ render using the same time window.
 This chart shows how long it takes for a match to be found in this matchmaking
 queue.  If the time seems to take longer than expected, it's worth re-examining
 the rules for this queue to see if those rules are overly restrictive resulting
-in longer matchmaking times.  It also is worth looking at the other charts to see
-how active this queue is and if other issues may be preventing timely matches.
+in longer matchmaking times.  It also is worth looking at the other charts to
+see how active this queue is and if other issues may be preventing timely
+matches.
 
 > Y-Axis: seconds
 
@@ -55,20 +56,18 @@ many of each cancellation type is happening.
 This chart shows how frequently matches are found for players in that
 matchmaking queue.  If the rate is lower than expected or bouncing off of zero,
 that may indicate either an issue with the matchmaking service, or how the
-matchmaking queue rules are configured.  This graph can be used in
-conjunction with the "Average Matchmaking Time" graph to acertain how
-successfully matches in this queue are occuring (or not).  
+matchmaking queue rules are configured.  This graph can be used in conjunction
+with the "Average Matchmaking Time" graph to acertain how successfully matches
+in this queue are occuring (or not).  
 
 > Y-Axis: # of completed matches /sec
 
 ### Canceled Ticket Rate
 
-The Canceled Ticket Rate chart shows the rate of ticket cancellations within
-this matchmaking queue, and also shows what cancellation types are occuring by
-kind. If matches are not happening as quickly or frequently as expected, this
-graph may indicate a higher than expected rate of ticket cancellations by
-reason, and may assist understanding what is hindering succesful matchmaking
-efforts.
+This chart shows the rate of ticket cancellations within this matchmaking queue,
+and also shows what cancellation types are occuring by kind. If matches are not
+happening as quickly or frequently as expected, this graph may indicate a higher
+than expected rate of ticket cancellations by reason that is hindering the matchmaking process.
 
 #### Cancellation Types
 
@@ -83,11 +82,11 @@ and  what entity initiated it.
 | ServerAllocationFailed | A match was successfully created, but for some reason could not be allocated to a PlayFab server. | Server |
 | Internal | An unknown internal error occurred. If these errors occur often, please contact support. | Server |
 
-> Y-Axis: Cancellations /sec
+> Y-Axis: ticket cancellations /sec
 
 ### Tickets Waiting for a Match
 
-This queue shows how many tickets are still waiting to be matched with other
+This chart shows how many tickets are still waiting to be matched with other
 tickets in that queue.  If this number is low, it may indicate that the
 matchmaking queue is not popular with users, but alternatively could indicate
 that new matches are occuring very quickly in this queue.  If this number is
@@ -95,4 +94,14 @@ high, it is worth looking at the "Average Matchmaking Time" graph to see if the
 high number is related to a slow matchmaking process in this queue, or if this
 queue is merely popular with players.
 
-> Y-Axis: # of Tickets Waiting
+> Y-Axis: # of waiting tickets
+
+## Common Issues Identified with Matchmaking Usage Data
+
+As mentioned is some of the chart descriptions above, charts can be used and even cross-referenced to  pinpoint issues with matchmaking queues.  The following table suggests how to use 1 or more charts to quickly diagnose common problems.
+
+| Issue   | Probable Meaning |
+|---------------------|-------------|----------------|
+| Zero or erratic match completion rate | Queue configured incorrectly, queue doesn't match with title |
+| Low match completion rate, long matchmaking times | Queue rules are too restrictive |
+| High match completion rate, high ticket cancellation rate | Quitters, unsatisfactory matches |
