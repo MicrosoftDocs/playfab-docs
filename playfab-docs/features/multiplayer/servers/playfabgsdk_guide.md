@@ -96,28 +96,139 @@ The way we chose to integrate the PlayFab GSDK’s core functions was to overrid
 
     ![](media/1c9daa35536ccf8d3aef3a854d2e8e7a.png)
 
-2. In this header file, we’ve defined our public overrides of the UE4: `StartupModule()`, `ShutdownModule()` and `IsGameModule()` as well as added a couple of private methods that made it easier to call PlayFab GSDK functions.
+2. In this header file, we’ve defined our public overrides of the UE4: `StartupModule()`, `ShutdownModule()` and `IsGameModule()` and also defined a few private methods that made it easier for us to implement the PlayFab GSDK functions.
 
-    ![header file](media/huli-overriding-ue4-startup-shutdown-02.png)
+```c_cpp
+// Copyright 2017-2019 HICON Games, LLC. All Rights Reserved.
 
-3.  Next, we implemented the methods we’ve defined in our header file, in our `Huli.cpp` file as well as include the `gsdk.h` file.
+#pragma once
 
-    ![huli.ccp additions](media/huli-overriding-ue4-startup-shutdown-03.png)
+#include "CoreMinimal.h"
+//#include "Engine/GameEngine.h"
 
-4. Override the default game modules in `Huli.cpp`.
+class FHuliGameModuleImpl : public IModuleInterface
+{
+public:
+	// IModuleInterface Methods
+	virtual void StartupModule() override;
+	virtual void ShutdownModule() override;
+	virtual bool IsGameModule() const override
+	{
+		return true;
+	}
+#if UE_SERVER
+private:
+	// Methods added to support GSDK
+	void ConnectToPlayFabAgent();
+	void LogInfo(FString message);
+	void LogError(FString message);
+#endif
+};
+```
 
-    ![](media/huli-overriding-ue4-startup-shutdown-04.png)
+3.  Implement the override of OnShutDown, HealthCheck and StartServer methods, as well as custom logging methods for debugging, in `Huli.cpp`.
 
-5. Implement OnShutDown, HealthCheck and StartServer methods in `Huli.cpp`.
+```c_cpp
+// Copyright 2017-2019 HICON Games, LLC. All Rights Reserved.
 
-    ![](media/huli-overriding-ue4-startup-shutdown-06.png)
+#include "Huli.h"
+#include "Modules/ModuleManager.h"
+#if UE_SERVER
+#include "gsdk.h"
+#include "string.h"
+#endif
 
-6. Use custom logging methods for debugging in `Huli.cpp`.
+// Replace default game module with custom game module
+// Found technique at https://forums.unrealengine.com/community/community-content-tools-and-tutorials/1547205-quick-c-tip-overriding-your-game-s-startupmodule-shutdownmodule-functions
+//IMPLEMENT_PRIMARY_GAME_MODULE(FDefaultGameModuleImpl, Huli, "Huli" );
+IMPLEMENT_PRIMARY_GAME_MODULE(FHuliGameModuleImpl, Huli, "Huli");
 
-    ![](media/huli-overriding-ue4-startup-shutdown-07.png)
+void FHuliGameModuleImpl::StartupModule()
+{
+#if UE_SERVER
+	//UE_LOG(LogTemp, Display, TEXT("UE_SERVER StartupModule()"));
+	bool _playFab = true;
+	if (FParse::Param(FCommandLine::Get(), TEXT("NoPlayFab"))) 
+	{
+		_playFab = false;
+	}
+	if (_playFab) {
+		ConnectToPlayFabAgent();
+	}
+#else
+	//UE_LOG(LogTemp, Display, TEXT("Not UE_SERVER StartupModule()"))
+#endif
+}
 
-7. Add All Runtime Dependencies, .lib’s, .dll’s and include paths to `Huli.Build.cs`.
+void FHuliGameModuleImpl::ShutdownModule()
+{
+}
 
+#if UE_SERVER
+
+// Callback function for GSDK
+void OnShutdown()
+{
+	/* Perform any necessary cleanup and end the program */
+	// Ask UE4 server to shutdown without force
+	FGenericPlatformMisc::RequestExit(false);
+}
+
+// Callback function for GSDK
+bool HealthCheck()
+{
+	return true;
+}
+
+void FHuliGameModuleImpl::ConnectToPlayFabAgent()
+{
+
+	try {
+
+		LogInfo("Connecting to PlayFab Agent.");
+
+		// Call this while your game is initializing, it will start heartbeating to our agent and put the game server in an Initializing state
+		Microsoft::Azure::Gaming::GSDK::start();
+		Microsoft::Azure::Gaming::GSDK::registerHealthCallback(&HealthCheck);
+		Microsoft::Azure::Gaming::GSDK::registerShutdownCallback(&OnShutdown);
+
+		// Call this when your game is done initializing and players can connect
+		// Note: This is a blocking call, and will return when this game server is either allocated or terminated
+		if (Microsoft::Azure::Gaming::GSDK::readyForPlayers())
+		{
+			// readyForPlayers returns true when an allocation call has been done, a player is about to connect!
+			LogInfo("Server is ready for players.");
+		}
+		else
+		{
+			// readyForPlayers returns false when the server is being terminated
+			LogError("Server is getting terminated. Not ready for players.");
+		}
+
+	}
+	catch (Microsoft::Azure::Gaming::GSDKInitializationException& e)
+	{
+		LogError("GSDK Initialization failed: " + FString(UTF8_TO_TCHAR(e.what())));
+	}
+
+}
+
+void FHuliGameModuleImpl::LogInfo(FString message)
+{
+	UE_LOG(LogTemp, Display, TEXT("%s"), *message);
+	Microsoft::Azure::Gaming::GSDK::logMessage(std::string(TCHAR_TO_UTF8(*message)));
+}
+
+void FHuliGameModuleImpl::LogError(FString message)
+{
+	UE_LOG(LogTemp, Error, TEXT("%s"), *message);
+	Microsoft::Azure::Gaming::GSDK::logMessage(std::string(TCHAR_TO_UTF8(*message)));
+}
+
+#endif
+```
+
+4. Add All Runtime Dependencies, .lib’s, .dll’s and include paths to `Huli.Build.cs`
 > [!NOTE]
 > Because they don’t get included automatically, we had to add all of our runtime dependencies modules that, for whatever reason, don’t get included when packaging our Huli dedicated server. Some of these are Windows-specific binaries that are required to run on the PlayFab Windows servers, but the others are required GSDK files.
 
@@ -126,8 +237,52 @@ The way we chose to integrate the PlayFab GSDK’s core functions was to overrid
 ![](media/e8169a2d8608ea1b5c459decc5e2eff7.png)
 
 We’ve added the following dedicated server build rules to our `Huli.Build.cs` file when we package our HuliServer.exe. This file may have other, platform specific rules, we’ve only included the dedicated server rules.
+> [!IMPORTANT]
+> The location and name of these files is specific to the Unreal Engine and GSDK versions you are using. Be sure to check what versions you are using and update the following accordingly.
 
-Figure 6 Huli.Build.cs
+```c_cpp
+// Copyright 2016-2019 HICON Games, LLC. All Rights Reserved.
+using UnrealBuildTool;
+
+public class Huli : ModuleRules
+{
+    public Huli(ReadOnlyTargetRules Target) : base(Target)
+    {
+        bUseRTTI = false;
+        PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
+
+        PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "Networking", "Sockets", "HTTP", "PlayFab", "PlayFabCpp" });
+
+        DynamicallyLoadedModuleNames.Add("OnlineSubsystemNull");
+
+        if (Target.Type == global::UnrealBuildTool.TargetType.Server)
+        {
+            bEnableExceptions = true;
+
+            // Add dynamic dlls required by all dedicated servers
+            RuntimeDependencies.Add("$(TargetOutputDir)/xinput1_3.dll", "$(EngineDir)/Binaries/ThirdParty/AppLocalDependencies/Win64/DirectX/xinput1_3.dll", StagedFileType.SystemNonUFS);
+            RuntimeDependencies.Add("$(TargetOutputDir)/concrt140.dll", "$(EngineDir)/Binaries/ThirdParty/AppLocalDependencies/Win64/Microsoft.VC.CRT/concrt140.dll", StagedFileType.SystemNonUFS);
+            RuntimeDependencies.Add("$(TargetOutputDir)/msvcp140.dll", "$(EngineDir)/Binaries/ThirdParty/AppLocalDependencies/Win64/Microsoft.VC.CRT/msvcp140.dll", StagedFileType.SystemNonUFS);
+            RuntimeDependencies.Add("$(TargetOutputDir)/msvcp140_1.dll", "$(EngineDir)/Binaries/ThirdParty/AppLocalDependencies/Win64/Microsoft.VC.CRT/msvcp140_1.dll", StagedFileType.SystemNonUFS);
+            RuntimeDependencies.Add("$(TargetOutputDir)/msvcp140_2.dll", "$(EngineDir)/Binaries/ThirdParty/AppLocalDependencies/Win64/Microsoft.VC.CRT/msvcp140_2.dll", StagedFileType.SystemNonUFS);
+            RuntimeDependencies.Add("$(TargetOutputDir)/vccorlib140.dll", "$(EngineDir)/Binaries/ThirdParty/AppLocalDependencies/Win64/Microsoft.VC.CRT/vccorlib140.dll", StagedFileType.SystemNonUFS);
+            RuntimeDependencies.Add("$(TargetOutputDir)/vcruntime140.dll", "$(EngineDir)/Binaries/ThirdParty/AppLocalDependencies/Win64/Microsoft.VC.CRT/vcruntime140.dll", StagedFileType.SystemNonUFS);
+
+            // Add dynamic dlls required by GSDK
+            RuntimeDependencies.Add("$(TargetOutputDir)/GSDK_CPP_Windows.lib", "$(ProjectDir)/packages/com.playfab.cppgsdk.v140.0.7.190715/build/native/lib/Windows/x64/Release/dynamic/GSDK_CPP_Windows.lib", StagedFileType.SystemNonUFS);
+            RuntimeDependencies.Add("$(TargetOutputDir)/libcurl.lib", "$(ProjectDir)/packages/com.playfab.cppgsdk.v140.0.7.190715/build/native/lib/Windows/x64/Release/dynamic/libcurl.lib", StagedFileType.SystemNonUFS);
+            RuntimeDependencies.Add("$(TargetOutputDir)/libcurl.dll", "$(ProjectDir)/packages/com.playfab.cppgsdk.v140.0.7.190715/build/native/lib/Windows/x64/Release/dynamic/libcurl.dll", StagedFileType.SystemNonUFS);
+            RuntimeDependencies.Add("$(TargetOutputDir)/libssl-1_1-x64.dll", "$(ProjectDir)/packages/com.playfab.cppgsdk.v140.0.7.190715/build/native/lib/Windows/x64/Release/dynamic/libssl-1_1-x64.dll", StagedFileType.SystemNonUFS);
+            RuntimeDependencies.Add("$(TargetOutputDir)/libcrypto-1_1-x64.dll", "$(ProjectDir)/packages/com.playfab.cppgsdk.v140.0.7.190715/build/native/lib/Windows/x64/Release/dynamic/libcrypto-1_1-x64.dll", StagedFileType.SystemNonUFS);
+
+            // Add libraries required by GSDK
+            PublicAdditionalLibraries.Add("$(ProjectDir)/packages/com.playfab.cppgsdk.v140.0.7.190715/build/native/lib/Windows/x64/Release/dynamic/GSDK_CPP_Windows.lib");
+            PublicAdditionalLibraries.Add("$(ProjectDir)/packages/com.playfab.cppgsdk.v140.0.7.190715/build/native/lib/Windows/x64/Release/dynamic/libcurl.lib");
+            PublicIncludePaths.Add("../packages/com.playfab.cppgsdk.v140.0.7.190715/build/native/include");
+        }
+    }
+}
+```
 
 ### Pre-packaging Tip: Blacklisting or Removing UE4 Plugins
 
