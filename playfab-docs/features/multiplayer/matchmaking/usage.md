@@ -1,5 +1,5 @@
 ---
-title: Matchmaking Queue Usage 
+title: Analyzing Your Matchmaking Queue Usage 
 author: joelwi 
 description: Describes how developers can use the Matchmaking Usage Charts 
 ms.author: multiplayer 
