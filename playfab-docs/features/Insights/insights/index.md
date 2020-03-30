@@ -9,17 +9,15 @@ ms.prod: playfab
 keywords: playfab, insights
 ms.localizationpriority: medium
 ---
-# PlayFab Insights
 
-> <br>
-> **NOTE** The PlayFab Insights feature is in public preview. We anticipate ongoing changes to it as we continue gathering feedback and optimizing for customer use.
+[!NOTE] The PlayFab Insights feature is in public preview. We anticipate ongoing changes to it as we continue gathering feedback and optimizing for customer use.
 
-## What is PlayFab Insights?
-PlayFab Insights is a completely managed data environment, giving you instant access to your game's data without the need for additional engineering. Unlike other hosted data solutions Insights requires no setup, no GDPR work, no extra engineering, simply use PlayFab services and your data is available. Automatically ingest and scale, connect external visualization tools and query freely. 
+# What is PlayFab Insights?
+PlayFab Insights is a completely managed data environment, giving you instant access to your game's data without the need for additional engineering. Unlike other hosted data solutions Insights requires no setup, no GDPR work, and no extra engineering. Simply use PlayFab services and your data is available. Automatically ingest and scale, connect external visualization tools, and query freely. 
 
 ## Key Features
 ### Automatic Ingestion
-PlayFab services automatically fire Playstream events. Any events fired by PlayFab services or created through our SDK are automatically routed to your Insights cluster. There is no need to worry about defining schema or DDL from automatic events. However, the option for sending your own custom events [is available]('https://docs.microsoft.com/en-us/gaming/playfab/features/analytics/metrics/playstream-events#custom-event-overview').
+PlayFab services automatically fire Playstream events. Any events fired by PlayFab services or created through our SDK are automatically routed to your Insights cluster. There is no need to worry about defining schema or DDL from automatic events. However, the option for sending your own custom events is available. For more information about sending custom events, see the [Custom event overview]('https://docs.microsoft.com/en-us/gaming/playfab/features/analytics/metrics/playstream-events#custom-event-overview') of Generating PlayStream events.
 
 ### Change Your Performance Level To Meet Your Needs
 ![Insights Slider](media/insights-slider.png)
@@ -49,4 +47,4 @@ Ingest your own custom datasets with [Management Commands]('https://review.docs.
 Standard reporting is tracked and GDPR compliant. Simply call the playfab GDPR delete request and we'll do the rest. Have custom data you need to delete? No problem, use the [Management Commands]('https://review.docs.microsoft.com/en-us/gaming/playfab/features/insights/explorer/management-commands?branch=managementcommands') to maintain your custom data.
 
 ## Insights
-Overall PlayFab Insights provides a flexible and extensible data environment with all elements needed to operate your game in a live environment. 
+PlayFab Insights provides a flexible and extensible data environment with all elements needed to operate your game in a live environment. 

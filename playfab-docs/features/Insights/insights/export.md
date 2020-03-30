@@ -17,7 +17,7 @@ Event Export is the primary mechanism for exporting data from your Insights data
 
 To create a new export:
 1. Navigate to the Event Export page.
-2. Click "New Event Export".
+2. Select "New Event Export".
 3. Fill out the required fields with your external storage account information.
 4. There are several options for which data to export to choose from
    1. You may select the checkbox for all events, this will export all data.

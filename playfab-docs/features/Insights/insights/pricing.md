@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 ---
 
 # Insights Pricing
-All Insights features are billed in a virtual currency called "Insights Credits". Pricing details of Insights Credits are located here: [Pricing Details](http://playfab.com/pricing).
+All Insights features are billed in a virtual currency called "Insights Credits". For more information about pricing details for Insights Credits, see [PlayFab Pricing](http://playfab.com/pricing). 
 
 ## Insights Performance
 Each performance level for insights is billed to the minute (Credits Per Hour / 60). Pricing for each performance level is located at the bottom of the table on the Insights Management page:
