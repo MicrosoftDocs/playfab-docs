@@ -17,10 +17,10 @@ Date: 2020-03-30
 
 ### API Changes
 
- * [Authentication](https://docs.microsoft.com/en-us/gaming/playfab/#pivot=documentation&panel=authentication):
-    * Added new [LoginIdentityProviders](https://docs.microsoft.com/en-us/gaming/playfab/api-references/events/data-types/loginidentityprovider) for Apple and Nintendo
- * [Multiplayer Server](https://docs.microsoft.com/en-us/gaming/playfab/#pivot=documentation&panel=multiplayer):
-    * Added new BuildRegion management functions [DeleteBuildRegion](https://docs.microsoft.com/en-us/rest/api/playfab/multiplayer/multiplayerserver/deletebuildregion?view=playfab-rest) and [UpdateBuildRegion](https://docs.microsoft.com/en-us/rest/api/playfab/multiplayer/multiplayerserver/updatebuildregion?view=playfab-rest)
+ * [Authentication](https://docs.microsoft.com/gaming/playfab/#pivot=documentation&panel=authentication):
+    * Added new [LoginIdentityProviders](https://docs.microsoft.com/gaming/playfab/api-references/events/data-types/loginidentityprovider) for Apple and Nintendo
+ * [Multiplayer Server](https://docs.microsoft.com/gaming/playfab/#pivot=documentation&panel=multiplayer):
+    * Added new BuildRegion management functions [DeleteBuildRegion](https://docs.microsoft.com/rest/api/playfab/multiplayer/multiplayerserver/deletebuildregion?view=playfab-rest) and [UpdateBuildRegion](https://docs.microsoft.com/rest/api/playfab/multiplayer/multiplayerserver/updatebuildregion?view=playfab-rest)
  * [UnrealMarketplacePlugin](https://github.com/PlayFab/UnrealMarketplacePlugin):
     * Added new [Mac build helper scripts](https://github.com/PlayFab/UnrealMarketplacePlugin/blob/master/4.24/ExampleProject/BuildMac.sh)
     
