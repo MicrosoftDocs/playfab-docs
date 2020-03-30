@@ -27,6 +27,27 @@ Date: 2020-04-01
    * Searching for draft items no longer fails unexpectedly.
    * Expired Xbox tokens now send a `400 Bad Request` with the appropriate [error code](https://docs.microsoft.com/rest/api/playfab/client/platform-specific-methods/consumexboxentitlements?view=playfab-rest#error-codes), instead of a `500 Internal Server Error`.
    * Item prices are now displayed properly when editing an item in Game Manager.
+=======
+## 200330
+
+Date: 2020-03-30
+
+### Improvements
+
+* Authentication:
+    * Added new LoginIdentityProviders for Apple and Nintendo
+* Multiplayer:
+    * Added new BuildRegion management functions
+* Unreal:
+    * Added new Mac build helper scripts
+    
+
+### Bug Fixes
+
+* XPlat:
+    * Fixed some threading issues for the PlayFabEventPipeline
+* Unreal:
+    * Security bug fixes
 
 ## 200325
 
