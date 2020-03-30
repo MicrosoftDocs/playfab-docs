@@ -99,10 +99,9 @@ queue is merely popular with players.
 
 ## Common Issues Identified with Matchmaking Usage Data
 
-As mentioned is some of the chart descriptions above, charts can be used and
-even cross-referenced to  pinpoint issues with matchmaking queues.  The
-following table suggests how to use 1 or more charts to quickly diagnose common
-problems.
+As mentioned in some of the chart descriptions above, charts can be used and
+cross-referenced to pinpoint issues with matchmaking queues.  The following
+table suggests how to use one or more charts to quickly diagnose common problems.
 
 | Issue   | Probable Meaning |
 |---------------------|-------------|----------------|
