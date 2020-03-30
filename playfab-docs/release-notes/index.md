@@ -11,6 +11,27 @@ ms.localizationpriority: medium
 ---
 # PlayFab Release Notes 2020
 
+## 200330
+
+Date: 2020-03-30
+
+### Improvements
+
+* Authentication:
+    * Added new LoginIdentityProviders for Apple and Nintendo
+* Multiplayer:
+    * Added new BuildRegion management functions
+* Unreal:
+    * Added new Mac build helper scripts
+    
+
+### Bug Fixes
+
+* XPlat:
+    * Fixed some threading issues for the PlayFabEventPipeline
+* Unreal:
+    * Security bug fixes
+
 ## 200325
 
 Date: 2020-03-25
