@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 # Matchmaking Queue Usage
 
 PlayFab matchmaking provides charts that help developers understand their
-customer's matchmaking usage patterns.  The Machmaking Usage view can be
+customer's matchmaking usage patterns.  The Matchmaking Usage view can be
 accessed within the GameManager portal under the Muliplayer->Matchmaking tab.
 Once a specific queue is selected, there will appear a "Usage" sub tab adjacent
 to the "Edit Queue" sub tab.  As long as matchmaking activity is occuring in
