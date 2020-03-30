@@ -34,22 +34,22 @@ The typical on-boarding steps for Xbox Live managed partners are:
 2. Create PlayFab titles for your project. These do not need to be linked in any way to your Partner Center titles. Unless you're already paying for PlayFab, new titles should be in *Development* mode which does not require a payment instrument. 
 3. Enable Matchmaking and Party in their respective pages in Game Manager.
 4. Download and integrate the [Party SDK](https://docs.microsoft.com/gaming/playfab/features/multiplayer/networking/) or [PlayFab REST SDKs](https://docs.microsoft.com/gaming/playfab/index#pivot=documentation&panel=sdks).
-5. When you're ready to launch your game into production, upgrade your title into *Production* or *Xbox Essentials* to lift the 10,000 player account cap.
+5. When you're ready to launch your game into production, upgrade your title into *Production* or *Essentials* to lift the 10,000 player account cap. The information below and your developer partner manager are available to help you take advantage of this program.
 
 There are three pricing tiers:
 
 1. *Development.* This is PlayFab's default developer environment enabling access to most PlayFab services for free. There is a limit of 10,000 unique player accounts per title.
 1. *Production.* This is PlayFab's standard production environment that enables access to all PlayFab services. This mode requires a payment instrument or an enterprise agreement. Xbox Live associated usage of PlayFab Party is zero-rated. You can upgrade to this tier self-service within Game Manager.
-1. *Xbox Essentials.* This is a special production environment that allows unlimited free usage of PlayFab Party and Matchmaking, but limited to Xbox Live associated players. This mode does not require a payment instrument, and can be enabled by engaging your Microsoft developer partner manager. Activity sourced outside of the Xbox Live ecosystem (e.g. OpenID) is limited to 10,000 unique player accounts, similar to the Development cap.
+1. *Essentials.* This is a special production environment that allows unlimited free usage of PlayFab Party and Matchmaking, but limited to Xbox Live associated players. This mode does not require a payment instrument, and can be enabled by engaging your Microsoft developer partner manager. Activity sourced outside of the Xbox Live ecosystem (e.g. OpenID) is limited to 10,000 unique player accounts, similar to the Development cap.
 
 Production lets you use PlayFab cross-platform and access premium services like Multiplayer Servers, while still enjoying zero-rating of Xbox Live Party & Matchmaking activity. 
 
-Xbox Essentials lets you get the most of Party and Matchmaking within the Xbox ecosystem, assured that you won't be billed for any activity. 
+Essentials lets you get the most of Party and Matchmaking within the Xbox ecosystem, assured that you won't be billed for any activity. 
 
 ## Frequently asked questions (FAQ)
 
 ### What limits are there to Xbox Live free usage of PlayFab Party or Matchmaking?
-In Development, overall usage of PlayFab including Party and Matchmaking is restricted to 10,000 unique player accounts. In Production and Xbox Essentials, there is no limit on the number of match tickets, concurrent Party networks, total Party networks, or any other scale limitation. 
+In Development, overall usage of PlayFab including Party and Matchmaking is restricted to 10,000 unique player accounts. In both Production and Essentials, there is no limit on the number of match tickets, concurrent Party networks, total Party networks, or any other scale limitation. 
 
 ### Does this program apply only to Xbox consoles?
 No. This free program applies to any platform where you can sign in with Xbox Live, including PC, iOS, and Android.
