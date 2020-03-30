@@ -11,12 +11,6 @@ ms.localizationpriority: medium
 ---
 
 # PlayFab Party speech-to-text and text display UX guidelines
-
-> [!IMPORTANT]
-> This feature is currently in **Preview**. It is provided to give you an early look at an upcoming feature and to allow you to provide feedback while it is still in development.
->
-> PlayFab customers in the Indie, Pro, and Enterprise tiers can access the Matchmaking and Party previews automatically through Game Manager. Xbox managed partners are also invited for the preview in the free tier and can get a preview access code from your Microsoft developer partner manager.
-
 The PlayFab Party library gives game creators the power to engage more players through accessible game chat options. It provides a means for voice chat to be transcribed to text and for text input to be converted to synthesized voice. You can implement a custom UI solution for these features in your title. On Xbox and Windows, you can use platform APIs to implement the relevant UI.
 
 This document is part two of a two-part series covering UX solutions for speech-to-text and text-to-speech implementation. [Part one](party-text-to-speech-ux-guidelines.md) focuses on text-to-speech implementation, requirements, and console and PC UI solutions, while this topic focuses on speech-to-text implementation, requirements, and console and PC UI solutions.
