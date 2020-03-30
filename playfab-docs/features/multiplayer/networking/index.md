@@ -12,14 +12,9 @@ ms.localizationpriority: medium
 
 # PlayFab Party Overview
 
-> [!IMPORTANT]
-> This feature is currently in **Preview**. It is provided to give you an early look at an upcoming feature and to allow you to provide feedback while it is still in development.
->
-> PlayFab customers in the Indie, Pro, and Enterprise tiers can access the Matchmaking and Party previews automatically through Game Manager. Xbox managed partners are also invited for the preview in the free tier and can get a preview access code from your Microsoft developer partner manager.
-
 PlayFab Party simplifies adding low-latency chat and data communication to your game in a way that's flexible, inclusive, and secured. Party is ideal for multiplayer implementations where a cloud-hosted dedicated server is not desired (sometimes called "peer to peer or P2P games"). Party is also well-suited to power voice and text communication for social experiences your app may provide (e.g. in-game squads, or post-game lobbies), even if you're using a cloud server as the game host.
 
-Party uses Azure Cognitive Services to transcribe player voice chat and synthesize text as speech. This functionality has several uses but was primarily designed as an accessibility aide. Typical usage of Party voice chat is billed on a per-minute basis, and up to 10% of those voice minutes can leverage transcription and synthesis for free. We recommend tying activation of this capability to an ease-of-access player setting.
+Party uses Azure Cognitive Services to transcribe player voice chat and synthesize text as speech. This functionality has several uses but was primarily designed as an accessibility aide. Typical usage of Party voice chat is billed on a per-minute basis, and up to 10% of those voice minutes can leverage transcription and synthesis for free. We recommend tying activation of this capability to an ease-of-access player setting. Party usage associated with the Xbox Live ecosystem is discounted. To learn more about this discount and how Party is priced [please read the Party billing page](pricing.md).
 
 Party can not only transcribe player chat, but also translate chat in real time. In anonymous matchmaking and international competitive games, these transcription and translation capabilities can make for a more engaging multiplayer experience.
 

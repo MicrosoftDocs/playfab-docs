@@ -10,12 +10,6 @@ keywords: playfab, multiplayer, networking
 ---
 
 # Using real-time audio manipulation to apply custom voice effects
-
-> [!IMPORTANT]
-> This feature is currently in **Preview**. It is provided to give you an early look at an upcoming feature and to allow you to provide feedback while it is still in development.
->
-> PlayFab customers in the Indie, Pro, and Enterprise tiers can access the Matchmaking and Party previews automatically through Game Manager. Xbox managed partners are also invited for the preview in the free tier and can get a preview access code from your Microsoft developer partner manager.
-
 PlayFab Party is a real-time networking and voice chat solution. When configured for voice chat, PlayFab Party transmits microphone audio and plays it back unmodified. Some games need access to the voice chat audio buffers to implement custom audio effects, such as spatial audio or voice filters. This document provides a walkthrough of how to use the real-time audio manipulation feature to intercept and modify voice chat audio in PlayFab Party.
 
 ## Prerequisites
