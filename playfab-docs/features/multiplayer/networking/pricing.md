@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 ---
 
 # Billing for PlayFab Party
-This document describes how Party is metered and billed. In PlayFab's free *Development* mode, titles can use Party without a fee as long the aggregate number of player accounts is less than 10,000 (attempts to create additional player accounts will fail). In Production and other pay-as-you-go modes, Party is billed by the minute and by the gigabyte without consumption limits.
+This document describes how Party is metered and billed. In PlayFab's free *Development* mode, titles can use Party without a fee as long the aggregate number of player accounts is less than 10,000 (attempts to create additional player accounts will fail). In *Production( and other pay-as-you-go modes, Party is billed by the minute and by the gigabyte without consumption limits.
 
 Party can be used for free when powering Xbox Live activity. An example of how this discount impacts billing is below and more information tailored for Xbox Live managed partners is available at the [Xbox Live discount and FAQ](./xbl-discount.md) topic.
 
