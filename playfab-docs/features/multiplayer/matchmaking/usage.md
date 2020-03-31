@@ -67,13 +67,13 @@ in this queue are occuring (or not).
 This chart shows the rate of ticket cancellations within this matchmaking queue,
 and also shows what cancellation types are occuring by kind. If matches are not
 happening as quickly or frequently as expected, this graph may indicate a higher
-than expected rate of ticket cancellations by reason that is hindering the
+than expected rate of ticket cancellations that is hindering the
 matchmaking process.
 
 #### Cancellation Types
 
 Each of the ticket cancellation types is listed below, along with its purpose
-and  what entity initiated it.
+and what entity initiated it.
 
 | Cancellation Type   | Description | Origin |
 |---------------------|-------------|----------------|
@@ -97,7 +97,7 @@ queue is merely popular with players.
 
 > Y-Axis: # of waiting tickets
 
-## Common Issues Identified with Matchmaking Usage Data
+## Other Common Issues Identified with Matchmaking Usage Data
 
 As mentioned in some of the chart descriptions above, charts can be used and
 cross-referenced to pinpoint issues with matchmaking queues.  The following
