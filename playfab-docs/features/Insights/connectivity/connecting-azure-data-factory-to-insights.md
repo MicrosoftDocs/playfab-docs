@@ -21,25 +21,25 @@ In this tutorial you learn how to:
 > * Create a pipeline
 
 ## Prerequisites
-### PlayFab account authenticated with AAD
-You need a PlayFab account or user for which the authentication provider is set to Microsoft. The Microsoft authentication provider uses Azure Active Directory (AAD) for authentication which is required to use the Azure services. See [Azure Active Directory Authentication for Game Manager](../../authentication/aad-authentication/index.md) for instructions on creating an AAD-authenticated account or user. 
-  
-To verify that the account, or user, is set to use the Microsoft authentication provider:
-* Visit the PlayFab [log in page](https://developer.playfab.com/login).
-* Use the the Sign in with Microsoft link to access your PlayFab account.
- 
-If you can sign in, then the account is set to use the Microsoft authentication provider.
+* ### PlayFab account authenticated with AAD
+   You need a PlayFab account or user for which the authentication provider is set to Microsoft. The Microsoft authentication provider uses Azure Active Directory (AAD) for authentication which is required to use the Azure services. See [Azure Active Directory Authentication for Game Manager](../../authentication/aad-authentication/index.md) for instructions on creating an AAD-authenticated account or user. 
+   
+   To verify that the account, or user, is set to use the Microsoft authentication provider:
+   * Visit the PlayFab [log in page](https://developer.playfab.com/login).
+   * Use the the Sign in with Microsoft link to access your PlayFab account.
+   
+   If you can sign in, then the account is set to use the Microsoft authentication provider.
 
-### Game Manager permissions for Insights
-You need to assign your account a [user role](https://docs.microsoft.com/gaming/playfab/features/config/gamemanager/playfab-user-roles) with the following Game Manager permissions enabled:
-* Admin status.
-* Access to the Explorer tab and associated data.
-* Read and write access to Analytics data.
+* ### Game Manager permissions for Insights
+   You need to assign your account a [user role](https://docs.microsoft.com/gaming/playfab/features/config/gamemanager/playfab-user-roles) with the following Game Manager permissions enabled:
+   * Admin status.
+   * Access to the Explorer tab and associated data.
+   * Read and write access to Analytics data.
 
-You can either create a new user role or add these permissions to an existing role.
+   You can either create a new user role or add these permissions to an existing role.
 
-### Other prerequisites
-*  [Create an Azure Active Directory (AAD) application and connect it to your title database](creating-AAD-app-for-insights.md)
+* ### Other prerequisites
+  *  [Create an Azure Active Directory (AAD) application and connect it to your title database](creating-AAD-app-for-insights.md)
 
 
 ## Create a new data factory
@@ -98,4 +98,4 @@ We are now going to create a new pipeline to get data from Insights. To create a
 ## Additional resources
 
 * [Azure Data Factory (ADF) documentation](https://docs.microsoft.com/azure/data-factory/)
-* Connect more tools to Insights at [Connecting external tools to Insights](index.md)
+* To learn about other tools to connect to Insights, see  [Connecting external tools to Insights](index.md)
