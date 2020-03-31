@@ -11,6 +11,27 @@ ms.localizationpriority: medium
 ---
 # PlayFab Release Notes 2020
 
+## 200330
+
+Date: 2020-03-30
+
+### API Changes
+
+ * [Authentication](https://docs.microsoft.com/gaming/playfab/#pivot=documentation&panel=authentication):
+    * Added new [LoginIdentityProviders](https://docs.microsoft.com/gaming/playfab/api-references/events/data-types/loginidentityprovider) for Apple and Nintendo
+ * [Multiplayer Server](https://docs.microsoft.com/gaming/playfab/#pivot=documentation&panel=multiplayer):
+    * Added new BuildRegion management functions [DeleteBuildRegion](https://docs.microsoft.com/rest/api/playfab/multiplayer/multiplayerserver/deletebuildregion?view=playfab-rest) and [UpdateBuildRegion](https://docs.microsoft.com/rest/api/playfab/multiplayer/multiplayerserver/updatebuildregion?view=playfab-rest)
+ * [UnrealMarketplacePlugin](https://github.com/PlayFab/UnrealMarketplacePlugin):
+    * Added new [Mac build helper scripts](https://github.com/PlayFab/UnrealMarketplacePlugin/blob/master/4.24/ExampleProject/BuildMac.sh)
+    
+### [Plat SDK](https://github.com/PlayFab/XPlatCppSdk) specific changes
+
+ * Fixed some threading issues for the PlayFabEventPipeline
+
+### [UnrealMarketPlacePlugin](https://github.com/PlayFab/UnrealMarketplacePlugin) specific changes
+
+ * Security bug fixes
+
 ## 200325
 
 Date: 2020-03-25

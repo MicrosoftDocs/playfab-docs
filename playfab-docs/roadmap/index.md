@@ -31,19 +31,10 @@ PlayFab is on track to launch in China in early 2020 in partnership with a local
 
 These services are available today as previews. As we further incorporate your feedback, we will make these generally available to all PlayFab users. 
 
-**_Server Tags_**
-
-This addition to [Multiplayer Servers](https://docs.microsoft.com/gaming/playfab/features/multiplayer/servers/) will simplify the management of server allocation. It’s especially geared towards build-to-build upgrades and reducing the chance of any player interruption as you update your multiplayer servers.
-
 **_Billing details page for Multiplayer Servers and Party_**
 
 These pages will allow you to view costs for each day.
 
-**_Updated Multiplayer Server UX_**
-
-We’re working on management experiences for Linux builds and additional graphs for smarter administration. 
-
-***
 
 ## **Coming Later:**
 

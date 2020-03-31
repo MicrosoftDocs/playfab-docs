@@ -10,12 +10,6 @@ keywords: playfab, multiplayer, networking
 ---
 
 # PlayFab Party objects and their relationships
-
-> [!IMPORTANT]
-> This feature is currently in **Preview**. It is provided to give you an early look at an upcoming feature and to allow you to provide feedback while it is still in development.
->
-> PlayFab customers in the Indie, Pro, and Enterprise tiers can access the Matchmaking and Party previews automatically through Game Manager. Xbox managed partners are also invited for the preview in the free tier and can get a preview access code from your Microsoft developer partner manager.
-
 Successfully using the power and flexibility of the PlayFab Party API begins with understanding the following crucial objects defined in its scope:
 
 * [**Device**](#device) - A distinct instance of the game executing on a physical device. A local device exists whenever the API is being used.
