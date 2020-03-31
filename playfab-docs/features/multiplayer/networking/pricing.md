@@ -11,9 +11,9 @@ ms.localizationpriority: medium
 ---
 
 # Billing for PlayFab Party
-This document describes how Party is metered and billed. In PlayFab's free *Development* mode, titles can use Party without a fee as long the aggregate number of player accounts is less than 10,000. In Production and other pay-as-you-go modes, Party is billed by the minute and by the gigabyte.
+This document describes how Party is metered and billed. In PlayFab's free *Development* mode, titles can use Party without a fee as long the aggregate number of player accounts is less than 10,000 (attempts to create additional player accounts will fail). In Production and other pay-as-you-go modes, Party is billed by the minute and by the gigabyte without consumption limits.
 
-Party can be used for free when powering Xbox Live activity. For more information on this free program. An example of how this discount impacts billing is below, and more information tailored for Xbox Live managed partners is available at [Xbox Live discount and FAQ](./xbl-discount.md) topic.
+Party can be used for free when powering Xbox Live activity. An example of how this discount impacts billing is below and more information tailored for Xbox Live managed partners is available at the [Xbox Live discount and FAQ](./xbl-discount.md) topic.
 
 ## What meters are used for consumption billing?
 
@@ -55,16 +55,15 @@ At run-time you can specify which Azure region should host your network. This im
 ## Simplified billed
 A simplified billing summary showing Party activity and the impact of the Xbox Live discount is below.
 
-| SKU | Meter | Consumption | Unit | Rate (USD)| Sub-total | 
+| SKU | Meter | Consumption | Unit | Rate (USD)| Sub-total |
 | --- | --- | ----| ---- |---- |---- |
-| Connectivity | General Usage | 10,000 | Minutes | $0.0001 | $1| 
-| Connectivity | Xbox Live | 10,000 | Minutes | Free | $0| 
-| Voice | General Usage | 5,000 | Minutes | $0.001 | $5| 
-| Voice | Xbox Live | 5,000 | Minutes | Free | $0| 
-| Voice + Speech Services | General Usage | 10,000 | Minutes | $0.0001 | $1| 
-| Voice + Speech Services | Accessibility Quota | 500 | Minutes | Free | $0| 
-| Voice + Speech Services | General Usage | 100 | Minutes | $0.015 | $1.5| 
-| Voice + Speech Services | Xbox Live | 100 | Minutes | Free | $0| 
-| Zone 1 Network Egress | General Usage | 100 | Gigabytes(GB) | $0.05 | $5 
-| Zone 1 Network Egress | Xbox Live | 100 | Gigabytes(GB) | Free | $0| 
-
+| Connectivity | General Usage | 10,000 | Minutes | $0.0001 | $1|
+| Connectivity | Xbox Live | 10,000 | Minutes | Free | $0|
+| Voice | General Usage | 5,000 | Minutes | $0.001 | $5|
+| Voice | Xbox Live | 5,000 | Minutes | Free | $0|
+| Voice + Speech Services | General Usage | 10,000 | Minutes | $0.0001 | $1|
+| Voice + Speech Services | Accessibility Quota | 500 | Minutes | Free | $0|
+| Voice + Speech Services | General Usage | 100 | Minutes | $0.015 | $1.5|
+| Voice + Speech Services | Xbox Live | 100 | Minutes | Free | $0|
+| Zone 1 Network Egress | General Usage | 100 | Gigabytes(GB) | $0.05 | $5
+| Zone 1 Network Egress | Xbox Live | 100 | Gigabytes(GB) | Free | $0|
