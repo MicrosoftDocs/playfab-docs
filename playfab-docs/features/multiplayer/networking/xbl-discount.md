@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Xbox Live discount and FAQ
 
-This page summarizes key usage and billing information for [Xbox Live managed partners](https://docs.microsoft.com/gaming/xbox-live/get-started/setup-partner-center/setup-partner-center-id-partners) interested in using PlayFab services to power multiplayer scenarios. [PlayFab Party](../../multiplayer/networking/index.md) can be used for free to connect Xbox Live players together.  Additionally, you can use [PlayFab Matchmaking](../../multiplayer/matchmaking/index.md) to bring players together across platforms.
+This page summarizes key usage and billing information for [Xbox Live managed partners](https://docs.microsoft.com/gaming/xbox-live/get-started/setup-partner-center/setup-partner-center-id-partners) interested in using PlayFab services to power multiplayer scenarios. [PlayFab Party](../../multiplayer/networking/index.md) can be used for **free** to connect Xbox Live players together.  Additionally, you can use [PlayFab Matchmaking](../../multiplayer/matchmaking/index.md) to bring players together across platforms. If you would like to take advantage of this program we recommend the following multiplayer design:
 
 1. Use the [Xbox Live SDK](https://docs.microsoft.com/gaming/xbox-live) to interface with Xbox Live social capabilities like
 Activity, Profile Cards, and game invites. If you are building a cross-network game, you may want to use the equivalent social APIs from Steam, Nintendo, Sony, etc. for those platforms, and will need to comply with any applicable policies governing multiplayer and cross-network activity.
