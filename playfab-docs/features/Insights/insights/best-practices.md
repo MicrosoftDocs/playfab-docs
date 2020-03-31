@@ -9,8 +9,10 @@ ms.prod: playfab
 keywords: playfab, insights
 ms.localizationpriority: medium
 ---
+# Best Practices & FAQ
+Here we examine some best practices for using PlayFab insights as well as address the most frequently asked questions. 
 
-# Best Practices 
+## Best Practices 
 - Each performance level comes with a certain quantity of cache. It is a good idea to calculate a daily data footprint and decide how many days of data you would like in cache. A small buffer or very well known data footprint will allow anyone performing queries to know when to expect optimal performance. Running visualizations against that expected performance is also recommended for quick results.
   - For example, a studio has a 5 GB / day data footprint. Selecting a cache size of 450+ GB will allow 90 days of data in cache. Running all visualizations in 90 day running windows will be very efficienct. Joins, unions, and advanced queries will be very efficient. Another option would be to focus live visualizations primarily on 30 day windows and set cache size up to 90 days during working hours and 30 days during off hours, this will create large efficiencies in cost savings. Also keep in mind that data is compressed in cache.
 
@@ -34,7 +36,7 @@ ms.localizationpriority: medium
 - Limit queries by timestamp, don't pull all data to explore the last several days (this is generally good advice in any data system).
 
 
-# FAQ
+## FAQ
 ### How can I query data?
    1. The simplest way is to use our built in [data explorer]('https://docs.microsoft.com/gaming/playfab/features/insights/explorer/')
    2. The [connectivity]('https://docs.microsoft.com/gaming/playfab/features/insights/insights/connectivity') section has details on additional ways to access data.
