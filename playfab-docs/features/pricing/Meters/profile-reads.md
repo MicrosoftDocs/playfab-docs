@@ -16,7 +16,7 @@ Profile includes any data stored related to the player profile, entity profile, 
 
 The following APIs cause the Profile read meter to increment.
 
-## General
+## Admin APIs
 
 - [CheckLimitedEditionItemAvailability](https://docs.microsoft.com/rest/api/playfab/admin/player-item-management/checklimitededitionitemavailability?view=playfab-rest)
     Checks the global count for the limited edition item.
@@ -95,6 +95,8 @@ The following APIs cause the Profile read meter to increment.
 
 - [GetPlayersInSegment](https://docs.microsoft.com/rest/api/playfab/admin/playstream/getplayersinsegment?view=playfab-rest)
     Allows for paging through all players in a given segment. This API creates a snapshot of all player profiles that match the segment definition at the time of its creation and lives through the Total Seconds to Live, refreshing its life span on each subsequent use of the Continuation Token. Profiles that change during the course of paging will not be reflected in the results. AB Test segments are currently not supported by this operation.
+
+## Client APIs
 
 - [ConsumeItem](https://docs.microsoft.com/rest/api/playfab/client/player-item-management/consumeitem?view=playfab-rest)
     Consume uses of a consumable item. When all uses are consumed, it will be removed from the player's inventory.
@@ -205,7 +207,7 @@ The following APIs cause the Profile read meter to increment.
     Retrieves a purchase along with its current PlayFab status. Returns inventory items from the purchase that are still active.
 
 - [GetSharedGroupData](https://docs.microsoft.com/rest/api/playfab/client/shared-group-data/getsharedgroupdata?view=playfab-rest)
-    Retrieves data stored in a shared group object, as well as the list of members in the group. Non-members of the group may use this to retrieve group data, including membership, but they will not receive data for keys marked as private. Shared Groups are designed for sharing data between a very small number of players, see [Using Shared Group Data](../social/groups/using-shared-group-data.md).
+    Retrieves data stored in a shared group object, as well as the list of members in the group. Non-members of the group may use this to retrieve group data, including membership, but they will not receive data for keys marked as private. Shared Groups are designed for sharing data between a very small number of players, see [Using Shared Group Data](https://docs.microsoft.com/gaming/playfab/features/social/groups/using-shared-group-data).
 
 - [GetStoreItems](https://docs.microsoft.com/rest/api/playfab/client/title-wide-data-management/getstoreitems?view=playfab-rest)
     Retrieves the set of items defined for the specified store, including all prices defined.
@@ -275,8 +277,12 @@ The following APIs cause the Profile read meter to increment.
 - [SetPlayerSecret](https://docs.microsoft.com/rest/api/playfab/client/authentication/setplayersecret?view=playfab-rest)
     Sets the player's secret if it is not already set. Player secrets are used to sign API requests. To reset a player's secret use the Admin or Server API method SetPlayerSecret.
 
+## Data APIs
+
 - [GetObjects](https://docs.microsoft.com/rest/api/playfab/data/object/getobjects?view=playfab-rest)
     Retrieves objects from an entity's profile.
+
+## Groups APIs
 
 - [GetGroup](https://docs.microsoft.com/rest/api/playfab/groups/groups/getgroup?view=playfab-rest)
     Gets information about a group and its roles.
@@ -302,6 +308,9 @@ The following APIs cause the Profile read meter to increment.
 - [ListMembershipOpportunities](https://docs.microsoft.com/rest/api/playfab/groups/groups/listmembershipopportunities?view=playfab-rest)
     Lists all outstanding invitations and group applications for an entity.
 
+
+## Profile APIs
+
 - [GetGlobalPolicy](https://docs.microsoft.com/rest/api/playfab/profiles/account-management/getglobalpolicy?view=playfab-rest)
     Gets the global title access policy.
 
@@ -313,6 +322,8 @@ The following APIs cause the Profile read meter to increment.
 
 - [GetTitlePlayersFromMasterPlayerAccountIds](https://docs.microsoft.com/rest/api/playfab/profiles/account-management/gettitleplayersfrommasterplayeraccountids?view=playfab-rest)
     Retrieves the title player accounts associated with the given master player account.
+
+## Server APIs
 
 - [GetAllSegments](https://docs.microsoft.com/rest/api/playfab/server/playstream/getallsegments?view=playfab-rest)
     Retrieves an array of player segment definitions. Results from this can be used in subsequent API calls such as GetPlayersInSegment which requires a Segment ID. While segment names can change the ID for that segment will not change.
@@ -407,7 +418,7 @@ The following APIs cause the Profile read meter to increment.
     Retrieves the associated PlayFab account identifiers for the given set of server custom identifiers.
 
 - [GetSharedGroupData](https://docs.microsoft.com/rest/api/playfab/server/shared-group-data/getsharedgroupdata?view=playfab-rest)
-    Retrieves data stored in a shared group object, as well as the list of members in the group. The server can access all public and private group data. Shared Groups are designed for sharing data between a very small number of players,  see [Using Shared Group Data](../social/groups/using-shared-group-data.md).
+    Retrieves data stored in a shared group object, as well as the list of members in the group. The server can access all public and private group data. Shared Groups are designed for sharing data between a very small number of players,  see [Using Shared Group Data](https://docs.microsoft.com/gaming/playfab/features/social/groups/using-shared-group-data).
 
 - [GetStoreItems](https://docs.microsoft.com/rest/api/playfab/server/title-wide-data-management/getstoreitems?view=playfab-rest)
     Retrieves the set of items defined for the specified store, including all prices defined, for the specified player.

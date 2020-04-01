@@ -1,5 +1,5 @@
 ---
-title: File Reads Meter API Description
+title: Content & Configuration Reads Meter API Description
 author: vDonGlover
 description: This file details the APIs that cause file reads meter to increment.
 ms.author: v-doglo
@@ -10,13 +10,13 @@ keywords: playfab, pricing
 ms.localizationpriority: medium
 ---
 
-# File Reads
+# Content & Configuration Reads
 
-Files include the following items: entity files, actions, rules, scheduled tasks, matchmaking, push notifications, emails, and title news. Files are a set of key/value pairs that are primarily used to manage configuration for your game remotely.
+Content & Configuration files include the following items: entity files, actions, rules, scheduled tasks, matchmaking, push notifications, emails, and title news. Content & Configuration files are a set of key/value pairs that are primarily used to manage configuration for your game remotely.
 
-The following APIs cause the File reads meter to increment.
+The following APIs cause the Content & Configuration reads meter to increment.
 
-## General
+## Admin APIs
 
 - [ExportMasterPlayerData](https://docs.microsoft.com/rest/api/playfab/admin/account-management/exportmasterplayerdata?view=playfab-rest)
     Exports all associated data of a master player account.
@@ -26,6 +26,8 @@ The following APIs cause the File reads meter to increment.
 
 - [GetActionsOnPlayersInSegmentTaskInstance](https://docs.microsoft.com/rest/api/playfab/admin/scheduledtask/getactionsonplayersinsegmenttaskinstance?view=playfab-rest)
     Get information about a ActionsOnPlayersInSegment task instance.
+
+## Client APIs
 
 - [GetTitleNews](https://docs.microsoft.com/rest/api/playfab/client/title-wide-data-management/gettitlenews?view=playfab-rest)
     Retrieves the title news feed, as configured in the developer portal.
@@ -45,8 +47,12 @@ The following APIs cause the File reads meter to increment.
 - [GetWindowsHelloChallenge](https://docs.microsoft.com/rest/api/playfab/client/authentication/getwindowshellochallenge?view=playfab-rest)
     Requests a challenge from the server to be signed by Windows Hello Passport service to authenticate.
 
+## Data APIs
+
 - [GetFiles](https://docs.microsoft.com/rest/api/playfab/data/file/getfiles?view=playfab-rest)
     Retrieves file metadata from an entity's profile.
+
+## Server APIs
 
 - [GetContentDownloadUrl](https://docs.microsoft.com/rest/api/playfab/server/content/getcontentdownloadurl?view=playfab-rest)
     This API retrieves a pre-signed URL for accessing a content file for the title. A subsequent HTTP GET to the returned URL will attempt to download the content. A HEAD query to the returned URL will attempt to retrieve the metadata of the content. Note that a successful result does not guarantee the existence of this content - if it has not been uploaded, the query to retrieve the data will fail. See this post for more information: https://community.playfab.com/hc/community/posts/205469488-How-to-upload-files-to-PlayFab-s-Content-Service. Also, please be aware that the Content service is specifically PlayFab's CDN offering, for which standard CDN rates apply.

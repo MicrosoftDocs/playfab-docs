@@ -12,9 +12,6 @@ ms.localizationpriority: medium
 
 # PlayFab Explorer
 
-> [!NOTE]
-> The PlayFab Explorer feature is in public preview. We anticipate ongoing changes to it as we continue gathering feedback and optimizing for customer use.
-
 ## Overview
 
 The PlayFab Explorer is the primary window into event data collected by your title and services. The data is stored in PlayFab Insights, an in-development offering designed to provide a complete back-end solution for data and analytics. For more information on the PlayFab Insights vision and strategy, see our [webinar](https://www.youtube.com/channel/UCaCZHrQg_-qPrYIVsTFuUHg). 
