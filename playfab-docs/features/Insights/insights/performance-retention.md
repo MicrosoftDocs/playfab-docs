@@ -16,8 +16,6 @@ PlayFab Insights provides studios the ability to change the performance characte
 Use the **Performance Level** slider to select a new performance level. The Performance Level Settings table shows a comparison of your currently settings versus the new settings you selected:
 ![Insights Slider](media/performance-level2.png)
 
-The most significant resource changes are listed undernearth the slider:
-
 ### *Cache Size*
 PlayFab Insights uses a specialized variation of Azure Data Explorer (Kusto). Insights separates storage into two categories: Hot Cache and Storage. Hot Cache is memory and SSD storage and is extremely fast to query. Complex queries and data functions are executed quickly when all data is readily accessible in the hot cache. Data stored outside the hot cache in storage is still easily accessible and can be queried, but query times may slow down with large datasets in storage. Data is separated by ingestion time, the most recent data stored first in hot storage. Data storage is an entirely internal process to Insights and data is accessed in the same manner no matter where it's stored. 
 
@@ -33,6 +31,7 @@ When you change your performance down, data is loaded from hot cache into storag
 Compute power represents the maximum quantity of vCPUs allocated for each query. Based on the parallelization of a given query plan, some queries cannot take full advantage of all vCPUs at once (order, distinct). Additionally, to improve interactivity of the querying experience, priority is given to queries by start time, meaning subsequent concurrent queries may see decreased vCPU allocation.
 
 Compute power also increases the maximum query length before timeout. the following table represents current numbers:
+
 | Compute Power           | Maximum Compute Time (Seconds) |
 |-------------------------|--------------------------------|
 | 2 (Free Tier)           | 30s                            |
