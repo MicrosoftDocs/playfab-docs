@@ -46,7 +46,7 @@ Any account that is on a free plan is eligible to upgrade to a Standard plan. Us
 
 Upgrading an account will upgrade all studios owned by the account.
 
-1. Log in to [PlayFab.com](www.PlayFab.com).
+1. Log in to [PlayFab.com](https://playfab.com/).
 
 2. On the My Studio page, locate the header of a Studio that is linked to the account to be upgraded. Select Upgrade Account.
 ![Image: My Studios View](pricingV2-media/upgrade-myStudios.png)
@@ -77,7 +77,7 @@ Titles may only be launched within Studios owned by paid accounts.Follow the ste
 ### Launching a Title within a Paid Account Plan
 To launch a title within a paid account plan:
 
-1. Log in to [PlayFab.com](www.PlayFab.com)
+1. Log in to [PlayFab.com](https://playfab.com/)
 
 2. Navigate to the **My Studios** page and select the title to launch.
 
