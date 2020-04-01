@@ -360,24 +360,9 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>Analytics</h3>
-                                                <p><a href='/gaming/playfab/features/analytics/metrics/quickstart'>Metrics</a></p><p><a href='/gaming/playfab/features/analytics/reports/quickstart'>Reports</a></p><p><a href='/gaming/playfab/features/analytics/ab-testing/quickstart'>A/B Testing</a></p><p><a href='/gaming/playfab/features/analytics/segmentation/quickstart'>Segmentation</a></p><p><a href='/gaming/playfab/features/analytics/xbox-data/quickstart'>Xbox Data Add On</a></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="cardSize">
-                                    <div class="cardPadding">
-                                        <div class="card">
-                                            <div class="cardImageOuter">
-                                                <div class="cardImage">
-                                                    <img src="/gaming/playfab/media/quickstart-insights.svg" alt="PlayFab Quickstarts: Insights card image" />
-                                                </div>
-                                            </div>
-                                            <div class="cardText">
-                                                <h3>Insights</h3>
+                                                <p><a href='/gaming/playfab/features/insights/insights/quickstart'>Insights</a></p>
                                                 <p><a href='/gaming/playfab/features/insights/explorer/quickstart'>Explorer</a></p><p><a href='/gaming/playfab/features/insights/schemas/quickstart'>Schemas</a></p>
+                                                <p><a href='/gaming/playfab/features/analytics/metrics/quickstart'>Metrics</a></p><p><a href='/gaming/playfab/features/analytics/reports/quickstart'>Reports</a></p><p><a href='/gaming/playfab/features/analytics/ab-testing/quickstart'>A/B Testing</a></p><p><a href='/gaming/playfab/features/analytics/segmentation/quickstart'>Segmentation</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -828,12 +813,12 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/gaming/playfab/features/media/feature-metrics.svg" alt="PlayFab Analytics Features: Metrics card image" />
+                                                    <img src="/gaming/playfab/features/media/Insights_Icon.svg" alt="PlayFab Insights Features: Explorer card image" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3>Metrics</h3>
-                                                <p style='color: #7f7f7f'>Evaluate your game's performance through the lens of the top metrics used across the industry, pre-calculated for you daily. Compare your performance against benchmarks for other titles in your genre.</p><p><a href='/gaming/playfab/features/analytics/metrics/'>Overview</a></p><p><a href='/gaming/playfab/features/analytics/metrics/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/analytics/metrics/tutorials'>Tutorials</a></p>
+                                                <h3>Insights</h3>
+                                                <p style='color: #7f7f7f'>Insights is a completely managed, cloud-scalable data system for your games.</p><p><a href='/gaming/playfab/features/insights/insights/'>Overview</a></p><p><a href='/gaming/playfab/features/insights/insights/pricing'>Pricing</a></p><p><a href='/gaming/playfab/features/insights/insights/pricing'>Performance and Retention</a></p><p><a href='/gaming/playfab/features/insights/insights/scheduled-scaling'>Scheduled Scaling</a></p><p><a href='/gaming/playfab/features/insights/insights/export'>Exporting Data</a></p><p><a href='/gaming/playfab/features/insights/connectivity'>Connectivity</a></p><p><a href='/gaming/playfab/features/insights/insights/management-commands'>Management Commands</a></p><p><a href='/gaming/playfab/features/insights/insights/best-practices'>Best Practices and FAQ</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -845,7 +830,24 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/gaming/playfab/features/media/feature-reports.svg" alt="PlayFab Analytics Features: Reports card image" />
+                                                   <img src="/gaming/playfab/features/media/feature-explorer.svg" alt="PlayFab Insights Features: Explorer card image" />	    
+                                                </div>
+                                            </div>
+                                            <div class="cardText">
+                                                <h3>Explorer</h3>
+                                                <p style='color: #7f7f7f'>Discover insights in your data from Game Manager using the Explorer feature. Whether you're an expert or brand new to authoring queries, Explorer is for you.</p><p><a href='/gaming/playfab/features/insights/explorer/'>Overview</a></p><p><a href='/gaming/playfab/features/insights/explorer/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/insights/explorer/tutorials'>Tutorials</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardImageOuter">
+                                                <div class="cardImage">
+                                                    <img src="/gaming/playfab/features/media/feature-explorer.svg" alt="PlayFab Insights Features: Explorer card image" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -862,12 +864,29 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/gaming/playfab/features/media/feature-ab-testing.svg" alt="PlayFab Analytics Features: A/B Testing card image" />
+                                                    <img src="/gaming/playfab/features/media/feature-schemas.svg" alt="PlayFab Insights Features: Schemas card image" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3>A/B Testing</h3>
-                                                <p style='color: #7f7f7f'>A/B testing is a technique for running experiments to determine the optimal setting for a particular variable.</p><p><a href='/gaming/playfab/features/analytics/ab-testing/'>Overview</a></p><p><a href='/gaming/playfab/features/analytics/ab-testing/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/analytics/ab-testing/tutorials'>Tutorials</a></p>
+                                                <h3>Schemas</h3>
+                                                <p style='color: #7f7f7f'>Familiarize yourself with the data and data products available out-of-the-box in Insights for use in your analysis.</p><p><a href='/gaming/playfab/features/insights/schemas/'>Overview</a></p><p><a href='/gaming/playfab/features/insights/schemas/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/insights/schemas/tutorials'>Tutorials</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardImageOuter">
+                                                <div class="cardImage">
+                                                    <img src="/gaming/playfab/features/media/feature-ab-testing.svg" alt="PlayFab Experiments Features: A/B Testing card image" />
+                                                </div>
+                                            </div>
+                                            <div class="cardText">
+                                                <h3>Experiments</h3>
+                                                <p style='color: #7f7f7f'>Experiments helps you determine the best strategies for your game's growth. Run multiple concurrent experiments in a controlled manner to get the data you need to perform meaningful statistical analysis.</p><p><a href='/gaming/playfab/features/analytics/experiments/'>Overview</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -896,54 +915,12 @@ featureFlags:
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/gaming/playfab/features/media/feature-ab-testing.svg" alt="PlayFab Experiments Features: A/B Testing card image" />
+                                                    <img src="/gaming/playfab/features/media/feature-ab-testing.svg" alt="PlayFab Analytics Features: A/B Testing card image" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3>Experiments</h3>
-                                                <p style='color: #7f7f7f'>Experiments helps you determine the best strategies for your game's growth. Run multiple concurrent experiments in a controlled manner to get the data you need to perform meaningful statistical analysis.</p><p><a href='/gaming/playfab/features/analytics/experiments/'>Overview</a></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#insights">Insights</a>
-                        <ul id="insights" class="cardsF">
-                            <li class="fullSpan">
-                                <h2>PlayFab Insights Features</h2>
-                            </li>
-                            <li>
-                                <div class="cardSize">
-                                    <div class="cardPadding">
-                                        <div class="card">
-                                            <div class="cardImageOuter">
-                                                <div class="cardImage">
-                                                    <img src="/gaming/playfab/features/media/feature-explorer.svg" alt="PlayFab Insights Features: Explorer card image" />
-                                                </div>
-                                            </div>
-                                            <div class="cardText">
-                                                <h3>Explorer</h3>
-                                                <p style='color: #7f7f7f'>Discover insights in your data from Game Manager using the Explorer feature. Whether you're an expert or brand new to authoring queries, Explorer is for you.</p><p><a href='/gaming/playfab/features/insights/explorer/'>Overview</a></p><p><a href='/gaming/playfab/features/insights/explorer/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/insights/explorer/management-commands'>Management commands</a></p><p><a href='/gaming/playfab/features/insights/explorer/tutorials'>Tutorials</a></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="cardSize">
-                                    <div class="cardPadding">
-                                        <div class="card">
-                                            <div class="cardImageOuter">
-                                                <div class="cardImage">
-                                                    <img src="/gaming/playfab/features/media/feature-schemas.svg" alt="PlayFab Insights Features: Schemas card image" />
-                                                </div>
-                                            </div>
-                                            <div class="cardText">
-                                                <h3>Schemas</h3>
-                                                <p style='color: #7f7f7f'>Familiarize yourself with the data and data products available out-of-the-box in Insights for use in your analysis.</p><p><a href='/gaming/playfab/features/insights/schemas/'>Overview</a></p><p><a href='/gaming/playfab/features/insights/schemas/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/insights/schemas/tutorials'>Tutorials</a></p>
+                                                <h3>A/B Testing (Replaced by Experiments)</h3>
+                                                <p style='color: #7f7f7f'>A/B testing is a technique for running experiments to determine the optimal setting for a particular variable.</p><p><a href='/gaming/playfab/features/analytics/ab-testing/'>Overview</a></p><p><a href='/gaming/playfab/features/analytics/ab-testing/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/analytics/ab-testing/tutorials'>Tutorials</a></p>
                                             </div>
                                         </div>
                                     </div>

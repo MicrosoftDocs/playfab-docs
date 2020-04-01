@@ -1,5 +1,5 @@
 ---
-title: File Writes Meter API Description
+title: Content & Configuration Writes Meter API Description
 author: vDonGlover
 description: This file details the APIs that cause file writes meter to increment.
 ms.author: v-doglo
@@ -10,13 +10,13 @@ keywords: playfab, pricing
 ms.localizationpriority: medium
 ---
 
-# File Writes
+# Content & Configuration Writes
 
-Files include the following items: entity files, actions, rules, scheduled tasks, matchmaking, push notifications, emails, and title news. Files are a set of key/value pairs that are primarily used to manage configuration for your game remotely.
+Content & Configuration files include the following items: entity files, actions, rules, scheduled tasks, matchmaking, push notifications, emails, and title news. Content & Configuration files are a set of key/value pairs that are primarily used to manage configuration for your game remotely.
 
-The following APIs cause the File write to increment.
+The following APIs cause the Content & Configuration writes meter to increment.
 
-## General
+## Admin APIs
 
 - [AddLocalizedNews](https://docs.microsoft.com/rest/api/playfab/admin/title-wide-data-management/addlocalizednews?view=playfab-rest)
   Update news item to include localized version
@@ -30,6 +30,8 @@ The following APIs cause the File write to increment.
 - [SetupPushNotification](https://docs.microsoft.com/rest/api/playfab/admin/title-wide-data-management/setuppushnotification?view=playfab-rest)
   Sets the Amazon Resource Name (ARN) for iOS and Android push notifications. Documentation on the exact restrictions can be found at: http://docs.aws.amazon.com/sns/latest/api/API_CreatePlatformApplication.html. Currently, Amazon device Messaging is not supported.
 
+## Data APIs
+
 - [FinalizeFileUploads](https://docs.microsoft.com/rest/api/playfab/data/file/finalizefileuploads?view=playfab-rest)
   Finalize file uploads to an entity's profile.
 
@@ -38,6 +40,8 @@ The following APIs cause the File write to increment.
 
 - [InitiateFileUploads](https://docs.microsoft.com/rest/api/playfab/data/file/initiatefileuploads?view=playfab-rest)
   Initiates file uploads to an entity's profile.
+
+## Server APIs
 
 - [DeletePushNotificationTemplate](https://docs.microsoft.com/rest/api/playfab/server/account-management/deletepushnotificationtemplate?view=playfab-rest)
    Deletes push notification template for title

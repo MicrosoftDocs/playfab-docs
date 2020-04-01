@@ -11,6 +11,23 @@ ms.localizationpriority: medium
 ---
 # PlayFab Release Notes 2020
 
+## 200401
+
+Date: 2020-04-01
+
+### Improvements
+
+* Party - Game Manager now displays telemetry on the Multiplayer Party page. You can monitor the number of parties created, unique users, and network connection results over the past 30 days. For more information, please refer to the [Billing for PlayFab Party documentation](https://docs.microsoft.com/gaming/playfab/features/multiplayer/networking/pricing).
+
+### Bug Fixes
+
+* Economy (Private Preview):
+   * Adding display properties no longer causes the Store and UGC pages to break.
+   * The Stores tab now includes a Last Modified column.
+   * Searching for draft items no longer fails unexpectedly.
+   * Expired Xbox tokens now send a `400 Bad Request` with the appropriate [error code](https://docs.microsoft.com/rest/api/playfab/client/platform-specific-methods/consumexboxentitlements?view=playfab-rest#error-codes), instead of a `500 Internal Server Error`.
+   * Item prices are now displayed properly when editing an item in Game Manager.
+
 ## 200330
 
 Date: 2020-03-30
