@@ -1,6 +1,6 @@
 ---
 title: Billing for PlayFab Multiplayer Servers 2.0
-author: v-thopra
+author: lejackso
 description: Describes how billing is done for PlayFab's multiplayer server hosting service (Thunderhead), which allows you to operate a dynamically scaling pool of custom game servers in Azure.
 ms.author: v-thopra
 ms.date: 01/15/2019
@@ -12,34 +12,44 @@ ms.localizationpriority: medium
 
 # Billing for PlayFab Multiplayer Servers 2.0
 
-Most PlayFab services, including PlayFab Multiplayer Matchmaking, are included with every paid PlayFab tier, as part of our core offering. However, PlayFab Multiplayer Servers is billed on a consumption basis. This document describes that billing plan.
+Most PlayFab services, including PlayFab Multiplayer Matchmaking, are included with every paid PlayFab pricing mode, as part of our core offering. However, PlayFab Multiplayer Servers is billed on a consumption basis. This document describes that billing plan.
 
 ## What comes with your basic PlayFab Core Services package?
 
-A basic allocation of multiplayer server capacity is included with every paid PlayFab tier:
+When MPS is enabled, you can use Multiplayer Servers for free in a limited capacity to evaluate the building of multiplayer server games.
 
-- 100 Av2 virtual machine hours
-- 100 Dv2 virtual machine hours
+| Service |Included Free| Region |
+|-|-|-|
+|Av2 VM Hours | 100 Av2 Hours | East US |
+|Av2 VM Hours | 100 Av2 Hours | North Europe |
+|Fv2 VM Hours | 750 Fv2 Hours | East US |
+|Fv2 VM Hours | 750 Fv2 Hours | North Europe |
+| Network Egress | 10 GB | Zone 1 |
+| Network Egress | 10 GB | Zone 2 |
+
+The free evaluation mode also includes limit imposed on simultaneous cores activated in game servers.  The paid modes, however, allow game developers to request additional server cores for their title.
+
+The maximum server cores included in the free evaluation modes are:
+
+| Service | Included Free | Region |
+|-|-|-|
+| Maximum Av2 Cores | 24 Av2 Cores | East US |
+| Maximum Av2 Cores | 24 Av2 Cores | North Europe |
+| Maximum Dv2 Cores | 24 Dv2 Cores | East US |
+| Maximum Dv2 Cores | 24 Dv2 Cores | North Europe |
+| Maximum Fv2 Cores | 24 Fv2 Cores | East US |
+| Maximum Fv2 Cores | 24 Fv2 Cores | North Europe |
 
 This is typically *not* enough to launch a live game, but it can help you evaluate the service and get started.
 
 To learn more about these different virtual machine please see [Azure VM Sizes](https://docs.microsoft.com/azure/virtual-machines/windows/sizes).
 
 > [!NOTE]
-> Free evaluation capacity is provided per month by the PlayFab tier.  
-
-| *Feature*|Essentials |Indie Studio |Professional | Enterprise
-|-|-|-|-|-|
-| **Av2 VM Hours** |Not included | 100 Av2 hours | 100 Av2 hours | 100 Av2 hours |
-| **Dv2 VM Hours** |Not included | 100 Dv2 hours | 100 Dv2 hours | 100 Dv2 hours |
-| **Maximum Av2 Cores** |Not included | 16 Av2 Cores | 16 Av2 Cores | 16 Av2 Cores |
-| **Maximum Dv2 Cores** |Not included | 8 Dv2 Cores | 8 Dv2 Cores  | 8 Dv2 Cores |
-| **Network Egress** |Not included | 100 GB | 100 GB | 100 GB |
-| **Storage** |Not included | 50 GB | 50 GB | 50 GB |
+> The amount of free evaluation capacity that is provided per month is based on your PlayFab billing mode.
 
 ## <a name="consumption-pricing"> Consumption pricing for PlayFab Multiplayer Servers</a>
 
-Games that require Multiplayer Servers will need to purchase additional capacity through PlayFab’s consumption pricing plan. Below are the PlayFab resources used to bill for server utilization:
+Games that require Multiplayer Servers must purchase additional capacity through PlayFab's consumption pricing plan. Below are the PlayFab resources that are used to bill for server utilization:
 
 - **Virtual machine instance hours** - The hours of virtual machine time that your game servers are utilizing. Different virtual machine and container selections are priced at different rates. See [Multiplayer Servers detailed price sheet](multiplayer-servers-detailed-price-sheet.md) for more information.
 - **Network egress** - The volume of data transmitted by your game servers to the Internet (in gigabytes). Network egress is billed at different rates depending on the originating data center.
@@ -106,13 +116,13 @@ It is common for games to have higher levels of concurrency during the weekends 
 
 ![Multiplayer demand](media/tutorials/multiplayer-demand.png)
 
-PlayFab Multiplayer Server builds will naturally scale with your player base. Servers are transitioned to the active state by calling [RequestMultiplayerServer](xref:titleid.playfabapi.com.multiplayer.multiplayerserver.requestmultiplayerserver), and are later recycled when your game server terminates (typically the end of a “multiplayer round”).
+PlayFab Multiplayer Server builds automatically scale with your player base. Servers are transitioned to the active state by calling [RequestMultiplayerServer](xref:titleid.playfabapi.com.multiplayer.multiplayerserver.requestmultiplayerserver), and are later recycled when your game server terminates (typically the end of a "multiplayer round").
 
 However, delivering this dynamic scaling with minimal allocation latency requires some overhead, which originates from 2 key sources:
 
 1. **Standing-by servers** - Players do not want to wait for servers, and PlayFab targets a 3 second response time for fulfilling a server request. PlayFab will maintain a set of standing-by servers to ensure that servers are immediately available. As this standing-by pool is consumed by new allocations, PlayFab initializes new standing-by sessions. The amount of standing-by sessions required is dependent on how fast new sessions are requested during peak utilization, and how quickly they can be created and initialized.
 
-2. **Virtual machine fragmentation** - If you configure multiple sessions to be hosted on a single virtual machine, sometimes there may be extra standing-by capacity due to fragmentation. In our example of 3 sessions per virtual machine, a virtual machine at times may have only 1 active session, and the remaining two “spaces” will be added to the standing-by pool. Until the active session is terminated, the virtual machine *must stay online* - even if the additional standing-by capacity is not needed.
+2. **Virtual machine fragmentation** - If you host multiple sessions on a single virtual machine, there can sometimes be extra stand-by capacity due to fragmentation. In our example of 3 sessions per virtual machine, a virtual machine might have only 1 active session, and the remaining two "spaces" are added to the stand-by pool. Until the active session is terminated, the virtual machine must stay online - even if the additional stand-by capacity is not needed.
 
 > [!NOTE]
 > Typically, these sources of overhead increase the required compute-hours by *20%*.

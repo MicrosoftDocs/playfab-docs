@@ -53,7 +53,7 @@ Enable-PFMultiplayerServer
 We're going to use the *managed containers* option to create a build. With managed containers, your game server build is created by uploading assets that are combined with a Windows container image. For this tutorial, upload the `winrunnerSample.zip` folder from the sample servers package you downloaded earlier
 
 ```powershell
-Add-PFMultiplayerAsset -FilePath "C:\winrunnerSample.zip"
+Add-PFMultiplayerAsset -FilePath "C:\windowsSample.zip"
 ```
 
 ### Create a build
@@ -68,7 +68,16 @@ $Ports.Name = "game_port"
 $Ports.Num = 3600
 $Ports.Protocol = [PlayFab.MultiplayerModels.ProtocolType]::TCP
 
-New-PFMultiplayerBuild -BuildName "PSTest_built"  -StartMultiplayerServerCommand "C:\Assets\WindowsRunnerCSharp.exe" -Ports $Ports -VMSize $VMSelection -AssetReferences $Asset -MultiplayerServerCountPerVm 1 -RegionConfiguration $Regions
+$Regions = New-object PlayFab.MultiplayerModels.BuildRegionParams
+$Regions.MaxServers = 1
+$Regions.Region = "EastUS"
+$Regions.StandbyServers = 1
+
+$Asset = New-object PlayFab.MultiplayerModels.AssetReferenceParams
+$Asset.FileName = "windowsSample.zip"
+$Asset.MountPath = "C:\Assets"
+
+New-PFMultiplayerBuild -BuildName "PSTest_build"  -StartMultiplayerServerCommand "C:\Assets\WindowsRunnerCSharp.exe" -Ports $Ports -VMSize $VMSelection -AssetReferences $Asset -MultiplayerServerCountPerVm 1 -RegionConfiguration $Regions
 ```
 
 In a few seconds we should see the build through the **PowerShell** or [ListBuildSummaries API](xref:titleid.playfabapi.com.multiplayer.multiplayerserver.listbuildsummaries), as shown below.
@@ -76,6 +85,19 @@ In a few seconds we should see the build through the **PowerShell** or [ListBuil
 ```powershell
 Get-PFMultiplayerBuild -All
 ```
+### Formatting the game start command
+
+The StartMultiplayerServerCommand property is a required input to the Multiplayer Server [Create Build](xref:titleid.playfabapi.com.multiplayer.multiplayerserver.createbuildwithmanagedcontainer) API's. PlayFab Multiplayer Server leverages Azure Docker to secure and manage enterprise container apps in the cloud. Multiplayer Servers docker containers use PowerShell as the entry point for starting game server builds but has strict formatting rules to function correctly. For example:
+
+``PS D:\> Write-Host -arg1=alpha.beta -arg2=alpha.beta``
+
+Due to way that PowerShell processes the command line, the preceding command fails when run. The arguments are separated into '-arg1=alpha.' and 'beta'. To format the command correctly, wrap the game start command into quotes as follows:
+
+``PS D:\> Write-Host "-arg1=alpha.beta -arg2=alpha.beta"``
+
+An alternative solution is to use double dashes (--) instead of a single dash to specify the arguments. For example:
+
+``PS D:\> Write-Host --arg1=alpha.beta --arg2=alpha.beta``
 
 ### Request a multiplayer server
 
@@ -91,9 +113,7 @@ Once we see some standing by servers, let's request one for gameplay...
 $Regions = new-object 'System.Collections.Generic.List[PlayFab.MultiplayerModels.AzureRegion]'
 $Regions.Add("EastUS");
 
-$svr = New-PFMultiplayerServer -BuildName "MyBuild" -SessionId "00000000-0000-0000-0000-000000000001" -SessionCookie "test cookie" -PreferredRegions $regions
-$svr
-$svr.Ports
+$svr = New-PFMultiplayerServer -BuildName "PSTest_build" -SessionId "3bb5351f-363c-48f4-ba37-d14c12872fbc" -SessionCookie "test cookie" -PreferredRegions $Regions
 ```
 
 This is the core of PlayFab multiplayer servers: within 3 seconds of your matchmaking service calling [RequestMultiplayerServer](xref:titleid.playfabapi.com.multiplayer.multiplayerserver.requestmultiplayerserver), PlayFab will allocate a new server.

@@ -59,7 +59,7 @@ This new stand-alone service includes its own pricing currency and an improved d
 
 Insights allows you to choose how long you retain data and how much power you want behind your queries; as well as opening up multiple new ways to access data including connecting popular visualization platforms.
 
-You can see a video overview [here](https://www.youtube.com/watch?v=4akVBx2gmU0), and reference documentation is available [here](https://docs.microsoft.com/en-us/gaming/playfab/features/insights/insights/).
+You can see a video overview [here](https://www.youtube.com/watch?v=4akVBx2gmU0), and reference documentation is available [here](https://docs.microsoft.com/gaming/playfab/features/insights/insights/).
 
 **_The PlayFab Guide to LiveOps_**
 

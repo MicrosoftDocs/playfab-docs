@@ -10,14 +10,6 @@ keywords: playfab, multiplayer, networking
 ---
 
 # PlayFab Party invitations and the security model
-
-> [!IMPORTANT]
-> This feature is currently in **Preview**. It is provided to give you an early look at an upcoming feature and to allow you to provide feedback while it is still in development.
->
-> PlayFab customers in the Indie, Pro, and Enterprise tiers can access the Matchmaking and Party previews automatically through Game Manager. Xbox managed partners are also invited for the preview in the free tier and can get a preview access code from your Microsoft developer partner manager.
-
-## Overview
-
 PlayFab Party is designed to provide a secure communication environment by default. This helps protect games and players, but security restrictions can raise API usage questions for developers. This page introduces the security features of PlayFab Party, primarily focusing on invitations and effective patterns for using them.
 
 PlayFab Party uses industry-standard encryption and authentication for all communication (management data, game data, and real-time communication). This includes all peer-to-peer transmissions and all transactions to Azure services, whether they're web services (which use HTTPS) or the transparent cloud relay service (which uses DTLS).

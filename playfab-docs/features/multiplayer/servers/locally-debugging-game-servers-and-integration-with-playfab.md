@@ -24,8 +24,8 @@ You can configure the agent to run the game server as a containerized applicatio
 
 ## Basic Setup
 
-- Integrate your game server with the GSDK and build it. More information is available in our tutorial [Integrating game servers with the PlayFab Game Server SDK (GSDK)](integrating-game-servers-with-gsdk.md).  
-- Compress your game server and its dependencies to a zip archive, in the same way that it's uploaded to PlayFab Multiplayer platform.  
+- Integrate your game server with the GSDK and build it. For more information, see [Integrating game servers with the PlayFab Game Server SDK (GSDK)](integrating-game-servers-with-gsdk.md).
+- Compress your game server and its dependencies to a zip archive. To run properly in container mode, the zip archive must contain any system DLLs that are not included in the container image. For more information, see [determine required system DLLs](determining-required-dlls.md)..
 
   > [!NOTE]
   > Avoid this common mistake - do not accidentally zip a folder *within* a folder in the zip. After zipping, browse the zip folder and double-check that your compression software did not add an extra layer of file hierarchy.
@@ -94,6 +94,7 @@ After `NumHeartBeatsForActivateResponse` heartbeats, **MockVmAgent** requests th
 
 ### Troubleshooting
 
+- In container mode, if your game server exits immediately with an error similar to "Container ... exited with exit code 1", but it works fine in process mode, make sure that you have included all required [system DLLs](determining-required-dlls.md) in your asset package.
 - All logs are located under `OutputFolder` that is specified in the *MultiplayerSettings.json* file. **MockVmAgent** creates a new folder each time it is started, with the timestamp as folder name. All game server logs emitted via GSDK are located within the GameLogs folder.  
 If the game server is running in a container, there might be an additional level of directory hierarchy to sift through.
 - The GSDK writes debug logs to the GameLogs folder. These logs are located within the GameLogs folder along with the logs output by the game server.
