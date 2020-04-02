@@ -26,5 +26,5 @@ To create a task for scaling your cluster:
 The scheduled scale will appear in the scheduled tasks section as well as in the Insights Management Page. The task can be deactivated without deleting if you do not want it to run, but also do not want to delete it.
 
 ### **Recommendation**
-Changing your performance level allocates hardware resources to your data system immediately. However, transferring data into your new resources can take several minutes. It is not recommended that you schedule large changes in performance level quickly after previous changes. See [Best Practices]('https://docs.microsoft.com/en-us/gaming/playfab/features/insights/insights/best-practices') for recommendations. 
+Changing your performance level allocates hardware resources to your data system immediately. However, transferring data into your new resources can take several minutes. It is not recommended that you schedule large changes in performance level quickly after previous changes. See [Best Practices](https://docs.microsoft.com/en-us/gaming/playfab/features/insights/insights/best-practices) for recommendations. 
 
