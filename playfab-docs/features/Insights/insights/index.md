@@ -38,16 +38,16 @@ Use standard cron expressions to automically scale your cluster up and down duri
 Never delete your data or clear your data out every 30 days, whatever is needed for your studio. See [Performance Level & Retention](https://docs.microsoft.com/gaming/playfab/features/insights/insights/performance-retention) for details.
 
 ### Connect Outside Tools
-Connect PowerBI or Grafana for visualization, automate data jobs with Python or Azure Data Factory, explore your data with Azure Data Explorer.  See [Connectivity](https://docs.microsoft.com/en-us/gaming/playfab/features/insights/insights/connectivity) for details.
+Connect PowerBI or Grafana for visualization, automate data jobs with Python or Azure Data Factory, explore your data with Azure Data Explorer.  See [Connectivity](https://docs.microsoft.com/en-us/gaming/playfab/features/insights/connectivity) for details.
 
 ### Export Original or Cleaned Data
 Use the automated export service to export all your data to Azure Blob or AWS S3. See [Exporting Data](https://docs.microsoft.com/en-us/gaming/playfab/features/insights/insights/export) for details.
 
 ### Bring Your Own Datasets
-Ingest your own custom datasets with [Management Commands](https://docs.microsoft.com/gaming/playfab/features/insights/explorer/management-commands). Merge your custom Playstream events, standard Playstream events, and custom uploaded data to create more robust datasets.
+Ingest your own custom datasets with [Management Commands](https://docs.microsoft.com/gaming/playfab/features/insights/insights/management-commands). Merge your custom Playstream events, standard Playstream events, and custom uploaded data to create more robust datasets.
 
 ### GDPR Compliant
-Standard reporting is tracked and GDPR compliant. Simply call the playfab GDPR delete request and well do the rest. Have custom data you need to delete? No problem, use the [Management Commands](https://docs.microsoft.com/gaming/playfab/features/insights/explorer/management-commands) to maintain your custom data.
+Standard reporting is tracked and GDPR compliant. Simply call the playfab GDPR delete request and well do the rest. Have custom data you need to delete? No problem, use the [Management Commands](https://docs.microsoft.com/gaming/playfab/features/insights/insights/management-commands) to maintain your custom data.
 
 ## Insights
 PlayFab Insights provides a flexible and extensible data environment with all elements needed to operate your game in a live environment. 
