@@ -39,7 +39,7 @@ Here we examine some best practices for using PlayFab insights as well as addres
 ## FAQ
 ### How can I query data?
    1. The simplest way is to use our built in [data explorer](https://docs.microsoft.com/gaming/playfab/features/insights/explorer/)
-   2. The [connectivity](https://docs.microsoft.com/gaming/playfab/features/insights/insights/connectivity) section has details on additional ways to access data.
+   2. The [connectivity](https://docs.microsoft.com/gaming/playfab/features/insights/connectivity) section has details on additional ways to access data.
 ### I sent a Microsoft authentication link (AAD) and it didn't work, what happened?
   - If you already have a PlayFab account, you need to sign out before accepting an invite with a different authentication method. 
 ###  Why am I getting an error when trying to change my performance level or data retention?
