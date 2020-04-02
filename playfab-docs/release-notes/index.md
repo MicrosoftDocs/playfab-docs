@@ -11,9 +11,9 @@ ms.localizationpriority: medium
 ---
 # PlayFab Release Notes 2020
 
-## 200330
+## 200402
 
-Date: 2020-03-30
+Date: 2020-04-02
 
 ### API Changes
 
