@@ -30,7 +30,7 @@ Here we examine some best practices for using PlayFab insights as well as addres
 
 
 - Insights management commands allow the creation and updating of custom tables. For core reporting and often used tables it's helpful to build custom aggregation tables. Aggregation tables generally have a much smaller data footprint than the source data. This increases query performance and reduces the need for a higher performance level. 
-  - For automating data aggregation we recommend using Azure Data Factory, a low-cost and scalable automation option. For more information on using Azure Data Factory see the [connectivity]('https://docs.microsoft.com/gaming/playfab/features/insights/insights/connectivity') section.
+  - For automating data aggregation we recommend using Azure Data Factory, a low-cost and scalable automation option. For more information on using Azure Data Factory see the [connectivity](https://docs.microsoft.com/gaming/playfab/features/insights/connectivity) section.
 
 
 - Limit queries by timestamp, don't pull all data to explore the last several days (this is generally good advice in any data system).
@@ -38,8 +38,8 @@ Here we examine some best practices for using PlayFab insights as well as addres
 
 ## FAQ
 ### How can I query data?
-   1. The simplest way is to use our built in [data explorer]('https://docs.microsoft.com/gaming/playfab/features/insights/explorer/')
-   2. The [connectivity]('https://docs.microsoft.com/gaming/playfab/features/insights/insights/connectivity') section has details on additional ways to access data.
+   1. The simplest way is to use our built in [data explorer](https://docs.microsoft.com/gaming/playfab/features/insights/explorer/)
+   2. The [connectivity](https://docs.microsoft.com/gaming/playfab/features/insights/connectivity) section has details on additional ways to access data.
 ### I sent a Microsoft authentication link (AAD) and it didn't work, what happened?
   - If you already have a PlayFab account, you need to sign out before accepting an invite with a different authentication method. 
 ###  Why am I getting an error when trying to change my performance level or data retention?
@@ -49,16 +49,16 @@ Here we examine some best practices for using PlayFab insights as well as addres
    - Sure! You can revert back to the free tier if you don't currently need any of the paid features.
 ###  How do I get data into my Insights cluster?
    1. Most PlayFab services automatically generate data for you. 
-   2. You can also implement your own telemetry [through PlayStream, or our Telemetry system,]('https://docs.microsoft.com/rest/api/playfab/events/playstream-events'). 
-   3. You can use [Management Commands]('https://docs.microsoft.com/gaming/playfab/features/insights/insights/management-commands') to ingest custom datasets.
+   2. You can also implement your own telemetry [through PlayStream, or our Telemetry system,](https://docs.microsoft.com/rest/api/playfab/events/playstream-events). 
+   3. You can use [Management Commands](https://docs.microsoft.com/gaming/playfab/features/insights/insights/management-commands) to ingest custom datasets.
 ###  What is the standard data schema for PlayFab events?
-   - In PlayFab Insights we load all the data from all events into a single table. This table is named ['events.all]. Inside that table you will see a column called "EventData" that contains the payload of JSON information for each event. For complete information about the events.all table, see [About the events.all table]('https://docs.microsoft.com/gaming/playfab/features/insights/schemas/events-all') for more complete information. 
+   - In PlayFab Insights we load all the data from all events into a single table. This table is named ['events.all]. Inside that table you will see a column called "EventData" that contains the payload of JSON information for each event. For complete information about the events.all table, see [About the events.all table](https://docs.microsoft.com/gaming/playfab/features/insights/schemas/events-all) for more complete information. 
 ###  Why can't I write SQL?
    - As of now, we only support KQL (Kusto Query Language) queries in most scenarios. We're actively exploring adding SQL support. While KQL takes some getting used to, we think you'll like it once you do. For information on converting SQL to Kusto queries, see [SQL to Kusto query translation](https://docs.microsoft.com/azure/kusto/query/sqlcheatsheet).
 ###  What's the difference between Events Per Second in my Insights performance level and the costs of sending PlayStream events?
    - Events per second in your Insights performance level represents data ingestion to your cluster through any means. PlayStream write events and write telemetry events are billed independently and represent the cost of writing to the cloud. 
 ###  Can I have a higher performance level than what I see on my management page?
-   -. File a [support ticket]('https://support.playfab.com/hc/en-us/requests/new') with us and we'll contact you to talk arrange something that meets your needs.
+   -. File a [support ticket](https://support.playfab.com/hc/requests/new) with us and we'll contact you to talk arrange something that meets your needs.
 ###   What is the underlying technology behind PlayFab Insights?
    - PlayFab Insights uses a specialized variant of Azure Data Explorer (Kusto).
 ###  Why is my data schema different when exporting using custom queries?

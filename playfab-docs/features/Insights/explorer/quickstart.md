@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 
 To query the data created by PlayFab API calls:
 
-1. Log in to the [PlayFab Game Manager](https://developer.playfab.com/en-us/login). 
+1. Log in to the [PlayFab Game Manager](https://developer.playfab.com/login). 
 2. Select your Title.
 3. In the left navigation column, select **Data**.
 4. Select the **Explorer** tab at the top of the page. 

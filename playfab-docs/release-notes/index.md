@@ -11,6 +11,15 @@ ms.localizationpriority: medium
 ---
 # PlayFab Release Notes 2020
 
+## 200402
+
+Date: 2020-04-02
+
+### API Changes
+
+ * [Insights](https://docs.microsoft.com/gaming/playfab/#pivot=documentation&panel=insights):
+    * Please see our new [Insights](https://docs.microsoft.com/gaming/playfab/features/insights/insights/) feature!
+
 ## 200401
 
 Date: 2020-04-01
