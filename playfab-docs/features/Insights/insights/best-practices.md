@@ -58,7 +58,7 @@ Here we examine some best practices for using PlayFab insights as well as addres
 ###  What's the difference between Events Per Second in my Insights performance level and the costs of sending PlayStream events?
    - Events per second in your Insights performance level represents data ingestion to your cluster through any means. PlayStream write events and write telemetry events are billed independently and represent the cost of writing to the cloud. 
 ###  Can I have a higher performance level than what I see on my management page?
-   -. File a [support ticket](https://support.playfab.com/hc/en-us/requests/new) with us and we'll contact you to talk arrange something that meets your needs.
+   -. File a [support ticket](https://support.playfab.com/hc/requests/new) with us and we'll contact you to talk arrange something that meets your needs.
 ###   What is the underlying technology behind PlayFab Insights?
    - PlayFab Insights uses a specialized variant of Azure Data Explorer (Kusto).
 ###  Why is my data schema different when exporting using custom queries?

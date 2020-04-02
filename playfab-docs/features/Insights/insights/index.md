@@ -25,12 +25,12 @@ PlayFab services automatically fire Playstream events. Any events fired by PlayF
 ### Change Your Performance Level To Meet Your Needs
 ![Insights Slider](media/insights-slider.png)
 
-Match your cluster performance to your needs minute by minute. Slide your performance level up or down or alternatively schedule your cluster to have different performance levels automatically using scheduled tasks. See [Performance Level & Retention](https://docs.microsoft.com/en-us/gaming/playfab/features/insights/insights/performance-retention) for details.
+Match your cluster performance to your needs minute by minute. Slide your performance level up or down or alternatively schedule your cluster to have different performance levels automatically using scheduled tasks. See [Performance Level & Retention](https://docs.microsoft.com/gaming/playfab/features/insights/insights/performance-retention) for details.
 
 ### Schedule Your Performance Level
 ![Insights Slider](media/insights-schedule.png)
 
-Use standard cron expressions to automically scale your cluster up and down during known times. See [Scheduled Scaling](https://docs.microsoft.com/en-us/gaming/playfab/features/insights/insights/scheduled-scaling) for details.
+Use standard cron expressions to automically scale your cluster up and down during known times. See [Scheduled Scaling](https://docs.microsoft.com/gaming/playfab/features/insights/insights/scheduled-scaling) for details.
 
 ### Keep Your Data as Long as You Need
 ![Insights Slider](media/insights-retention.png)
@@ -38,10 +38,10 @@ Use standard cron expressions to automically scale your cluster up and down duri
 Never delete your data or clear your data out every 30 days, whatever is needed for your studio. See [Performance Level & Retention](https://docs.microsoft.com/gaming/playfab/features/insights/insights/performance-retention) for details.
 
 ### Connect Outside Tools
-Connect PowerBI or Grafana for visualization, automate data jobs with Python or Azure Data Factory, explore your data with Azure Data Explorer.  See [Connectivity](https://docs.microsoft.com/en-us/gaming/playfab/features/insights/connectivity) for details.
+Connect PowerBI or Grafana for visualization, automate data jobs with Python or Azure Data Factory, explore your data with Azure Data Explorer.  See [Connectivity](https://docs.microsoft.com/gaming/playfab/features/insights/connectivity) for details.
 
 ### Export Original or Cleaned Data
-Use the automated export service to export all your data to Azure Blob or AWS S3. See [Exporting Data](https://docs.microsoft.com/en-us/gaming/playfab/features/insights/insights/export) for details.
+Use the automated export service to export all your data to Azure Blob or AWS S3. See [Exporting Data](https://docs.microsoft.com/gaming/playfab/features/insights/insights/export) for details.
 
 ### Bring Your Own Datasets
 Ingest your own custom datasets with [Management Commands](https://docs.microsoft.com/gaming/playfab/features/insights/insights/management-commands). Merge your custom Playstream events, standard Playstream events, and custom uploaded data to create more robust datasets.
