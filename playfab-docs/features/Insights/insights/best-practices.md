@@ -30,7 +30,7 @@ Here we examine some best practices for using PlayFab insights as well as addres
 
 
 - Insights management commands allow the creation and updating of custom tables. For core reporting and often used tables it's helpful to build custom aggregation tables. Aggregation tables generally have a much smaller data footprint than the source data. This increases query performance and reduces the need for a higher performance level. 
-  - For automating data aggregation we recommend using Azure Data Factory, a low-cost and scalable automation option. For more information on using Azure Data Factory see the [connectivity](https://docs.microsoft.com/gaming/playfab/features/insights/insights/connectivity) section.
+  - For automating data aggregation we recommend using Azure Data Factory, a low-cost and scalable automation option. For more information on using Azure Data Factory see the [connectivity](https://docs.microsoft.com/gaming/playfab/features/insights/connectivity) section.
 
 
 - Limit queries by timestamp, don't pull all data to explore the last several days (this is generally good advice in any data system).
