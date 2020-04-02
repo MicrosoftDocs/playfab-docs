@@ -10,7 +10,9 @@ keywords: playfab, insights
 ms.localizationpriority: medium
 ---
 # What is PlayFab Insights?
-[!NOTE] The PlayFab Insights feature is in public preview. We anticipate ongoing changes to it as we continue gathering feedback and optimizing for customer use.
+
+> [!NOTE] 
+> The PlayFab Insights feature is in public preview. We anticipate ongoing changes to it as we continue gathering feedback and optimizing for customer use.
 
 PlayFab Insights is a completely managed data environment, giving you instant access to your game's data without the need for additional engineering. Unlike other hosted data solutions Insights requires no setup, no GDPR work, and no extra engineering. Simply use PlayFab services and your data is available. Automatically ingest and scale, connect external visualization tools, and query freely. 
 
