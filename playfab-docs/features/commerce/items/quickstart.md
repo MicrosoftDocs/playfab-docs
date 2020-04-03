@@ -51,7 +51,7 @@ You can give players virtual currency directly. As an example, let's add money t
 ![Modify Currency](media/tutorials/game-manager-players-modify-virtual-currency.png)
 
 > [!TIP]  
-> It can be dangerous to give clients the ability to call the [AddUserVirtualCurrency](xref:titleid.playfabapi.com.client.playeritemmanagement.adduservirtualcurrency) API. To set restrictions on specific APIs, use the [API access policy](../../config/gamemanager/api-access-policy.md).
+> It can be dangerous to give clients the ability to call the [AddUserVirtualCurrency](xref:titleid.playfabapi.com.client.playeritemmanagement.adduservirtualcurrency) API. For information about setting restrictions on specific APIs, see [API access policy](../../../api-references/api-access-policy.md).
 
 Now the player has 100 gold. What can they do with it? Buy an item!
 

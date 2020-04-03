@@ -1,8 +1,8 @@
 ---
 title: Encrypted Logins
-author: v-thopra
+author: williacj
 description: Shows you how to enable encryption for your client.
-ms.author: v-thopra
+ms.author: cjwill
 ms.date: 02/11/2018
 ms.topic: article
 ms.prod: playfab
@@ -55,7 +55,7 @@ else
 }
 ```
 
-To run this code, you will need a developer key. Please consult the [Getting PlayFab Developer Keys](getting-playfab-developer-keys.md) tutorial to see how to obtain one. You can pick any key name you would like.
+To run this code, you need a developer secret key. For more information about secret keys, see [Secret key management](secret-key-management.md).
 
 This application should print a newly created player-shared secret. *Make sure to save it*. If it is lost, you will have to generate a new secret by running the application again.
 
