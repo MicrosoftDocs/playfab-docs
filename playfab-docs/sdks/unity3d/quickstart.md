@@ -59,7 +59,7 @@ Before you can make an API call, you must specify the Title to receive the call 
 2. Select the **Studio** entry to open the studio drop-down menu. Select the studio that contains the Title to which you would like to connect.
 3. Select the **Title ID** entry to open a drop-down menu of Titles associated with the selected studio.
 
-The **Developer Secret Key** is automatically set to the default secret key for the Title. For more information about secret keys, see [Getting PlayFab developer keys](../../features/config/gamemanager/getting-playfab-developer-keys.md).
+The **Developer Secret Key** is automatically set to the default secret key for the Title. For more information about secret keys, see [Secret key management](../../features/config/gamemanager/secret-key-management.md).
 
 ![PlayFab Title Settings](media/save-title-settings-uedex.png)
 

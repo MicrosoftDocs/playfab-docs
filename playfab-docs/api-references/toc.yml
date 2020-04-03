@@ -1,6 +1,8 @@
 
 - name: API References
   href: index.md
+- name: API Access Policy
+  href: api-access-policy.md  
 - name: Global API Method Error Codes
   href: global-api-method-error-codes.md
 - name: PlayStream Events
