@@ -18,4 +18,3 @@ If you are using Visual Studio Code, you can use the Azure Functions extension t
 The logs then show up in the Terminal Window in VS Code as your function runs. You can also get the same under Logs using the Connect to Log Stream… option:
 
 ![Step 2 of debugging CloudScript Using Azure Functions with Visual Studio Code](media/CloudScript-AF-VSCode-Debug-02.jpg)
- 

@@ -1,8 +1,8 @@
 ---
 title: Allocating game servers and connecting Visual Studio debugging tools
-author: v-thopra
+author: lejackso
 description: Describes how to allocate multiplayer game servers and connect Visual Studio debugging tools.
-ms.author: v-thopra
+ms.author: lejackso
 ms.date: 11/08/2018
 ms.topic: article
 ms.prod: playfab
@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 With PlayFab multiplayer servers 2.0, you can allocate instances of your multiplayer server application using the [RequestMultiplayerServer](xref:titleid.playfabapi.com.multiplayer.multiplayerserver.requestmultiplayerserver) API.
 
-Typically this API is called from your own services (perhaps a matchmaking service or lobby service), using a [PlayFab Developer Key configured for the specific title](../../config/gamemanager/getting-playfab-developer-keys.md).
+Typically this API is called from your own services (perhaps a matchmaking service or lobby service), using a PlayFab Developer Secret Key configured for the specific title. For more information about secret keys, see [Secret key management](../../config/gamemanager/secret-key-management.md).
 
 A typical pattern for bringing players together and allocating servers:
 
@@ -85,7 +85,7 @@ https://aka.ms/vs/15/release/RemoteTools.amd64ret.enu.exe
 ```
 
 > [!NOTE]
-> We recommend *specifically listing* the port so your program can handle the process exit code if the port is already in use, rather than binding to a random port which isn’t open.
+> We recommend *specifically listing* the port so your program can handle the process exit code if the port is already in use, rather than binding to a random port which isn't open.
 
 7. Allocate your game server.
 8. Attempt to debug via VS, using the external debug port returned from the allocate call.

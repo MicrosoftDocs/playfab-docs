@@ -6,6 +6,8 @@
   items:
   - name: Using CloudScript context models
     href: CloudScript-af-context.md
+  - name: Local Debugging for Cloudscript using Azure Functions
+    href: local-debugging-for-cloudscript-using-azure-functions.md
   - name: Debugging CloudScript using Azure Functions with Visual Studio Code
     href: debugging-with-CloudScript-AF-VSCode.md
   - name: Debugging CloudScript using Azure Functions with Visual Studio
