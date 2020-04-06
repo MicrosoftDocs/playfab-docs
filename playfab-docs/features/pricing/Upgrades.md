@@ -41,6 +41,9 @@ An account is linked to one Studio and a Studio may be linked to many titles. Up
 
 Upgrading an account is a permanent action. The account cannot return to a free account plan after the plan upgrade is completed.
 
+![Image: My Studios View](pricingV2-media/MyStudiosNotated.png)
+*Image 1: My Studios and Titles*
+
 ### Upgrading from Free to Standard
 Any account that is on a free plan is eligible to upgrade to a Standard plan. Use the following steps to upgrade an account. The following steps will allow a customer to upgrade an account.
 
@@ -48,11 +51,9 @@ Upgrading an account will upgrade all studios owned by the account.
 
 1. Log in to [PlayFab.com](https://playfab.com/).
 
-2. On the My Studio page, locate the header of a Studio that is linked to the account to be upgraded. Select Upgrade Account.
-![Image: My Studios View](pricingV2-media/upgrade-myStudios.png)
+2. On the **My Studio** page, locate the header of a Studio whose linked account should be upgraded. Select **Upgrade Account** (1).
 
-3. On the "Upgrade Account" page, the customer has the option to launch titles in conjunction with the account upgrade. Any titles to launch should be selected. The "Next" button will move to the "Contact Information" tab.
-![Image: Add Pricing Plan View](pricingV2-media/upgrade-addpricingplan-accountTitle.png)
+3. Through the **Upgrade Account** page, titles can be launched in conjunction with the account upgrade. Select any titles to launch. The **Next** button will open the next tab.
 
 4. Enter Contact Information and Payment Information to move to the **Review** page. Select **Confirm this Plan** to complete the account upgrade.
 
@@ -79,34 +80,28 @@ To launch a title within a paid account plan:
 
 1. Log in to [PlayFab.com](https://playfab.com/)
 
-2. Navigate to the **My Studios** page and select the title to launch.
+2. Navigate to the **My Studios** page and identify the **Development Mode** title to be launched (2).
 
-3. On the title page, select the down arrow on the top left title bar to open the drop-down menu.
+3. Select the down arrow on the title to open the drop-down menu (2).
 
-![Image: Title Bar Drop Down](pricingV2-media/launch-menu.png)
+4. From the drop down, select **Launch Title**. 
 
-4. From the drop down menu, select **Launch Title**. If the title is linked to a free account plan, **Launch Title** takes you to the account upgrade flow described in the **Upgrading from Free to Standard** section.
+5. If the title is linked to a free account plan, **Launch Title** takes you to the account upgrade flow described in the **Upgrading from Free to Standard** section. If the title is linked to a paid account, continue to the next step.
 
-5. A pop-up will prompt the customer to confirm the title launch. Once selected, the launch is complete and the title is no longer bound by [Development Mode](../pricing/Development-Mode.md) limits.
-![Image: Launch Screen](pricingV2-media/launch-popup.png)
+6. A pop-up will prompt you to confirm the title launch. Once **Launch Title** is selected, the launch is complete and the title is no longer bound by [Development Mode](../pricing/Development-Mode.md) limits.
 
 ## FAQ
 
 **How do I know which subscription plan my account and its associated studios are currently on?**
 There are two ways to know which plan your account is currently on.
 
-**1. Presence of Upgrade Account Button:**  Navigate to the "My Studios" page. If a Studio displays the "Upgrade Account" button, the Studio and its associated account are currently free and have no account plan.
-![Image: Free Account](pricingV2-media/FreeAccount.png)
+**1. Presence of Upgrade Account Button:**  Navigate to the "My Studios" page. If a Studio displays the **Upgrade Account** button, the Studio and its associated account are currently free and have no account plan (1).
 
-**2. Base Rate Amount:** While on the "My Studios" page, if no "Upgrade Account" button is present, navigate to the Billing Summary page. A lack of the "Upgrade Account" button means that the Studio and its associated account are on a paid subscription plan.
-
-![Image: Billing Summary Link](pricingV2-media/billingsummarylink.png)
+**2. Base Rate Amount:** While on the "My Studios" page, if no "Upgrade Account" button is present, navigate to the **Billing Summary** page (3). A lack of the **Upgrade Account** button means that the Studio and its associated account are on a paid subscription plan.
 
 The amount of the base rate will represent the paid subscription plan of an account. A Base Rate of **$99** indicates that the Studio and its associated account are on the **Standard plan**. A base rate of **$1999** indicates that the Studio and its associated account are on the **Premium plan**. The Premium plan can only be acquired through contacting PlayFab.
 
-
 **How do I know which subscription plan I am upgrading my account to?**
-All accounts upgraded through Game Manager are automatically upgraded to the Standard plan, as indicated by the agreed-to base rate within the Upgrade flow.
-![Image: Base Rate in Upgrade Flow](pricingV2-media/baseRateUpgrade.png)
+All accounts upgraded through Game Manager are automatically upgraded to the Standard plan, as indicated by the agreed-to base rate listed within the **Upgrade Account**(1) flow.
 
 To upgrade to a Premium plan, please [contact PlayFab](https://docs.microsoft.com/gaming/playfab/features/pricing/paidtechnicalsupport).
