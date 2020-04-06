@@ -38,15 +38,11 @@ To make integration with PlayFab as seamless and efficient as possible, PlayFab 
 
 **Minimum Required Account Plan:** Standard Account Plan.
 
-**How to access:** To access the "Contact Us" page in Game Manager:
-> 1. Log in to PlayFab.com.
-> 2. Navigate to the **Title Overview** page of the title needing support.
-> 3. To access the help menu, select the '?' in the top right navigation bar.
-> 4. Select **Contact Us**.
-
-![Image: Help View](pricingV2-media/ContactUsPage.png)
-
-
+**How to access:** To access the **Contact Us** page in Game Manager:
+1. Log in to [PlayFab.com](https://playfab.com).
+2. Navigate to the **Title Overview** page of the title needing support.
+3. To access the help menu, select the **?** in the top right navigation bar.
+4. Select **Contact Us**.
 
 ### EMERGENCY ESCALATIONS
 **Purpose:** To provide PlayFab's fastest incident response time to customers on an [Enterprise Plan](../pricing/upgrades.md) during emergencies by notifying on-call PlayFab engineers.
@@ -56,15 +52,11 @@ To make integration with PlayFab as seamless and efficient as possible, PlayFab 
 
 **Minimum Required Account Plan:** Enterprise Account Plan.
 
-**How to access:** The "Contact Us" page with emergency escalation options can be accessed through Game Manager by Enterprise accounts using the following steps:
-> 1. Log in to PlayFab.com.
-> 2. Navigate to the Title Overview page of the title needing support.
-> 3. Select the '?' in the top right navigation bar to access the drop-down menu.
-> 4. Select the 'Help' option to navigate to the Help page.
-> 5. Select the 'Contact Us' tab to access the form. For Enterprise customers, the Emergency On-Call Alert option displays fter filling out the Problem Type and Sub-Type fields.
-> 6. To submit the ticket, select **Yes**.
+**How to access:** The **Contact Us** page with emergency escalation options can be accessed through Game Manager by Enterprise accounts using the following steps:
+1. Log in to [PlayFab.com](https://playfab.com).
+2. Navigate to the **Title Overview** page of the title needing support.
+3. Select the **?** in the top right navigation bar to access the drop-down menu.
+4. Select **Contact Us** to access the form. For Enterprise customers, the **Emergency On-Call Alert** option displays after completing the **Problem Type** and **Sub-Type** fields.
+6. To submit the ticket, select **Yes**.
 
-![Image: Emergency On-Call Alert](pricingV2-media/EmergencyEscalation.png)
-
-> [!NOTE]
-> To learn more about upgrading to a paid account plan, see [Account Upgrades and Title Launches](../pricing/upgrades.md) page.
+To learn more about upgrading to a paid account plan, see [Account Upgrades and Title Launches](../pricing/upgrades.md).
