@@ -19,15 +19,15 @@ By default, every title created starts in development mode. The **My Studios and
 
 **My Studios view of development mode title tag**
 
-> ![My Studios view of development mode title tag](pricingV2-media/development-mode-title-tag.png "My Studios view of development mode title tag")
+![My Studios view of development mode title tag](pricingV2-media/development-mode-title-tag.png "My Studios view of development mode title tag")
 
 **Title page view of development mode title tag**
 
-> ![Title page view of development mode title tag](pricingV2-media/dev-mode-title-tag-titlePage.png "Title page view of development mode title tag")
+![Title page view of development mode title tag](pricingV2-media/dev-mode-title-tag-titlePage.png "Title page view of development mode title tag")
 
 **Live title with blank tag**
 
-> ![Live title with blank tag](pricingV2-media/live-mode-title.png "Live title with blank tag")
+![Live title with blank tag](pricingV2-media/live-mode-title.png "Live title with blank tag")
 
 > [!NOTE]
 > As long as your title is in development mode, consumption is not counted towards any of your billable meters.
@@ -45,9 +45,9 @@ When Fun Studios visits their Billing Summary page, they only see the consumptio
 
 
 **For more information on these topics, check out these pages:**
-> - [Meters](../pricing/Meters/meters.md)
-> - [Upgrades](../pricing/Upgrades.md)
-> - [Billing Summary](../pricing/billingDetails.md)
+ - [Meters](../pricing/Meters/meters.md)
+ - [Upgrades](../pricing/Upgrades.md)
+ - [Billing Summary](../pricing/billingDetails.md)
 
 ## Limits
 There are some studio and title limits associated with development mode:
@@ -74,7 +74,7 @@ There are some studio and title limits associated with development mode:
 | Insights Credits | 1 Credit |
 
 **Definition of Unique Users:**
-> Unique Users are simply the total amount of player profiles you have in your title, which is different from MAU - you can delete player profiles through the Players page in Game Manager to reduce the total number of Unique Users if you are approaching the limit but aren't ready to launch your title
+Unique Users are simply the total amount of player profiles you have in your title, which is different from MAU - you can delete player profiles through the Players page in Game Manager to reduce the total number of Unique Users if you are approaching the limit but aren't ready to launch your title
 
 > [!NOTE]
 > You can learn more about title limits at [PlayFab.com/Pricing](https://www.PlayFab.com/pricing) page.

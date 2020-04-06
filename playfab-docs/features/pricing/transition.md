@@ -28,32 +28,23 @@ Customers can understand changes to monthly costs and initiate their account's p
 
 ## Self-Serve Account Transition to Modern Pricing
 
-> 1. Log in to PlayFab.com.
+1. Log in to PlayFab.com.
 
-> 2. From the "My Studios and Titles" page, select the button to "Update Pricing".
+2. From the "My Studios and Titles" page, select **Update Account** on the navigation bar of the Studio whose billing account will move to usage-based pricing.
 
-![Image: Update pricing button](pricingV2-media/updatePricingButton.png)
+3. If the Studio's billing account is on the Essentials tier and all titles fall below the [development mode](../pricing/development-mode.md) limits, a pop-up will appear prompting you to complete the update to usage-based pricing. This completes the flow, otherwise move on to step 4.
 
-> 3. If the account is on the Essentials tier and all titles fall below the [development mode](../pricing/development-mode.md) limits, a pop-up will appear prompting the customer to complete the update to modern pricing.
+4. If the Studio's billing account is on the Indie or Pro tier or if a title exceeds the modern pricing [development mode](../pricing/development-mode.md) limits, the **Update Account** page will appear. The **Update Account** page is where customers can see which Studios are connected to the billing account that is moving to usage-based pricing. When a billing account is updated to usage-based pricing, all linked Studios and corresponding titles will move automatically update.
 
-![Image: Update pricing pop-up](pricingV2-media/updatePricingPopUp.png)
+5. Select "Next" to move through the contact information and payment information tabs. If the billing account is on an **Indie or Pro** MAU-based pricing plan, contact information and payment information will be pre-populated.
+If the billing account is on an **Essentials** pricing plan, entering contact information and payment information is optional as long as no corresponding titles exceed the designated player limit for usage-based pricing. See[development mode](../pricing/development-mode.md) titles to learn more.
 
-> If the account is on the Indie or Pro tier or if a title exceeds the modern pricing [development mode](../pricing/development-mode.md) limits, the "Update Pricing" page will appear. Here is where customers can see which Studios are connected to the transitioning account. When an account is transitioned to modern pricing, all linked Studios and corresponding titles will move to modern pricing.
-
-![Image: Update pricing page](pricingV2-media/updatePricingPage.png)
-
-> 4. Select "Next" to move through the contact information and payment information tabs.
-
-> [!NOTE]
-> If the account is on an **Indie or Pro** pricing plan, contact information and payment information will be pre-populated.
->If the account is on an **Essentials** pricing plan, contact information and payment information is optional as long as no corresponding titles exceed the designated player limit for modern, [development mode](../pricing/development-mode.md) titles.
-
-> 5. Finally, selecting "Confirm this Plan" from the review stage will complete the pricing plan transition to modern pricing.
+6. Select **Confirm this Plan** from the review stage to complete the billing account update to usage-based pricing.
 
 ## FAQ
 
 **How do I know if my title is eligible for Development mode in the modern pricing plan?**
-> From the "Update Pricing" page, within the tab "Update Studios and Titles on this Plan", customers can view the number of players within each title. If a title is over the [development mode](../pricing/development-mode.md) limit, the right-hand side of the title bar will say "Launch" to indicate that the title must be launched when moving to Modern Pricing. When a title is launched, title meter usage will begin to accrue to what is included in the account plan's base rate. Any title usage over the included amount will be charged to the account.
+From the "Update Pricing" page, within the tab "Update Studios and Titles on this Plan", customers can view the number of players within each title. If a title is over the [development mode](../pricing/development-mode.md) limit, the right-hand side of the title bar will say "Launch" to indicate that the title must be launched when moving to Modern Pricing. When a title is launched, title meter usage will begin to accrue to what is included in the account plan's base rate. Any title usage over the included amount will be charged to the account.
 
 **What do I do if my title has too many players to qualify for Development mode?**
-> From the Title page, customers can select the "Players" tab on the left-hand side of the page. Within the "Players" page, customers can delete players within a title until they are under the [development mode](../pricing/development-mode.md) limit.
+From the Title page, customers can select the "Players" tab on the left-hand side of the page. Within the "Players" page, customers can delete players within a title until they are under the [development mode](../pricing/development-mode.md) limit.
