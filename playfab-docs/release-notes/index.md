@@ -25,7 +25,7 @@ Date 2020-04-08
 
 ### Bug Fixes
 
-* Analytics - Optimized player search to eliminate potential for timeouts when titles have a large player count. 
+* Analytics - Optimized player search to reduce potential for timeouts when querying titles with large player counts.
 * Authentication - Previously when there was a timeout exception in the PSN `ValidateAccessToken` call it was handled with a generic exception. Now the error returned specifies the type of timeout.
 
 ## 200401
