@@ -11,6 +11,23 @@ ms.localizationpriority: medium
 ---
 # PlayFab Release Notes 2020
 
+## 200408
+
+Date 2020-04-08
+
+### New
+
+* Multiplayer Servers - A new Billing Summary page showing estimated daily costs has been added to Game Manager.
+
+### Improvements
+
+* Experiments - You can now create an experiment in 'draft' state using Game Manger or the `CreateExperiment` API.
+
+### Bug Fixes
+
+* Analytics - Optimized player search to reduce potential for timeouts when querying titles with large player counts.
+* Authentication - Previously when there was a timeout exception in the PSN `ValidateAccessToken` call it was handled with a generic exception. Now the error returned specifies the type of timeout.
+
 ## 200402
 
 Date: 2020-04-02

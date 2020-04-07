@@ -7,7 +7,6 @@ ms.date: 07/15/2019
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, pricing, billing, bill, invoice, meter, meters
-ROBOTS: NOINDEX, NOFOLLOW
 ms.localizationpriority: medium
 ---
 # Billing Summary and Base Rate
