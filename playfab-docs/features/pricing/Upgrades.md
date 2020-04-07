@@ -7,7 +7,6 @@ ms.date: 01/24/2020
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, pricing, upgrade, upgrades, launch, live
-ROBOTS: NOINDEX, NOFOLLOW
 ms.localizationpriority: medium
 ---
 

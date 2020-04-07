@@ -7,7 +7,6 @@ ms.date: 2/29/2020
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, pricing, meters
-ROBOTS: NOINDEX, NOFOLLOW
 ms.localizationpriority: medium
 ---
 

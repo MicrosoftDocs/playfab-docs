@@ -7,7 +7,6 @@ ms.date: 02/6/2020
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, pricing, upgrade, upgrades, support, help, assistance, directions, support ticket, forum, slack
-ROBOTS: NOINDEX, NOFOLLOW
 ms.localizationpriority: medium
 ---
 # Accessing PlayFab Technical Support

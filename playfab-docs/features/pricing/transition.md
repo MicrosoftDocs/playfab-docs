@@ -8,7 +8,6 @@ ms.date: 01/29/2020
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, pricing, transition, modern pricing, legacy pricing, move, change
-ROBOTS: NOINDEX, NOFOLLOW
 ms.localizationpriority: medium
 ---
 # Updating an Account to Modern Pricing

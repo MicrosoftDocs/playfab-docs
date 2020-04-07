@@ -7,7 +7,6 @@ ms.date: 01/29/2020
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, pricing, dev mode, development mode, title, meter, meters
-ROBOTS: NOINDEX, NOFOLLOW
 ms.localizationpriority: medium
 ---
 
