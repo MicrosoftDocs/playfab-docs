@@ -1,7 +1,7 @@
 ---
-title: Insights Export
+title: Insights Pricing
 author: john-smith-microsoft
-description: Overview for PlayFab Insights Export
+description: Overview for PlayFab Insights Pricing
 ms.author: johsmi
 ms.date: 02/28/2020
 ms.topic: article
