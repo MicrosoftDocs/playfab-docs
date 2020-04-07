@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 ---
 
 # PlayFab Roadmap
-_Last Update: 3/10/2020_
+_Last Update: 4/2/2020_
 
 PlayFab is gearing up for an exciting decade! With 2020 comes a modern vision of our services that we’re working hard to deliver. 
 
@@ -27,24 +27,13 @@ Please note that while this roadmap reflects our aspirations, features and timel
 
 PlayFab is on track to launch in China in early 2020 in partnership with a local operator. The initial roll out is focused on dedicated multiplayer servers.
 
-**_General availability of Multiplayer Servers and Party_**
-
-These services are available today as previews. As we further incorporate your feedback, we will make these generally available to all PlayFab users. 
-
-**_Billing details page for Multiplayer Servers and Party_**
-
-These pages will allow you to view costs for each day.
-
+***
 
 ## **Coming Later:**
 
 **_General availability of improved Leaderboards_**
 
 This service is available today in previews. As we further incorporate your feedback, we will make this generally available to all PlayFab users. 
-
-**_Insights_**
-
-The initial release of a new stand-alone PlayFab Insights service will give you significantly more control over your data, analytics system and environment. Our goal is to provide petabyte-scale publisher-level analytics out-of-the-box. Insights will not only allow you to choose how long you retain data and how much power you want behind your queries; it will also open up multiple new ways to access data including connecting popular visualization platforms or your favorite SQL IDE. 
 
 **_Monetization and User Generated Content_**
 
@@ -53,6 +42,24 @@ These services will begin to move from private to public preview in the first ha
 ***
 
 ## **Available Now:**
+
+**_General availability of Multiplayer Servers and Party_**
+
+These services are now generally available to all PlayFab users. 
+
+**_Billing details page for Multiplayer Servers and Party_**
+
+These pages let you view costs for each day.
+
+**_Insights (Public Preview)_**
+
+We’re proud to announce that our new completely managed data solution PlayFab Insights is now available in Public Preview. 
+
+This new stand-alone service includes its own pricing currency and an improved data environment with advanced ingestion, export, customization and data retention features. Our goal is to provide petabyte-scale-analytics out-of-the-box. All together this creates a story of ingestion, access, control and reporting that is far beyond what we have offered in the past.
+
+Insights allows you to choose how long you retain data and how much power you want behind your queries; as well as opening up multiple new ways to access data including connecting popular visualization platforms.
+
+You can see a video overview [here](https://www.youtube.com/watch?v=4akVBx2gmU0), and reference documentation is available [here](https://docs.microsoft.com/gaming/playfab/features/insights/insights/).
 
 **_The PlayFab Guide to LiveOps_**
 

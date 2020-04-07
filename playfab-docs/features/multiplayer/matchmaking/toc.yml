@@ -19,5 +19,7 @@
     href: ticket-attributes.md
   - name: Using server backfill tickets
     href: backfill-tickets.md
+  - name: Analyzing Your Matchmaking Queue Usage
+    href: usage.md
   - name: Workaround for peer-to-peer connection
     href: peer-to-peer.md

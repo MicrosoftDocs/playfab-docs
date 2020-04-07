@@ -28,6 +28,15 @@ Date 2020-04-08
 * Analytics - Optimized player search to reduce potential for timeouts when querying titles with large player counts.
 * Authentication - Previously when there was a timeout exception in the PSN `ValidateAccessToken` call it was handled with a generic exception. Now the error returned specifies the type of timeout.
 
+## 200402
+
+Date: 2020-04-02
+
+### API Changes
+
+ * [Insights](https://docs.microsoft.com/gaming/playfab/#pivot=documentation&panel=insights):
+    * Please see our new [Insights](https://docs.microsoft.com/gaming/playfab/features/insights/insights/) feature!
+
 ## 200401
 
 Date: 2020-04-01
