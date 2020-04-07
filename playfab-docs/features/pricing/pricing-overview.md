@@ -7,7 +7,6 @@ ms.date: 03/05/2020
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, pricing, transition, modern pricing, legacy pricing, base rate
-ROBOTS: NOINDEX, NOFOLLOW
 ms.localizationpriority: medium
 ---
 # PlayFab Pricing Overview
