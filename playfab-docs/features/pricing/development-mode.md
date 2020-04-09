@@ -60,17 +60,17 @@ There are some studio and title limits associated with development mode:
 | Limit | Amount |
 | --- | --- |
 | Unique Users | 10,000 Users |
-| PlayStream Events | 500K Events |
-| Telemetry Events | 500K Events |
-| Profile Reads | 3M Reads |
-| Profile Writes | 500K Writes |
-| Profile Storage | 1 GB |
-| Content and Configuration Reads | 10K Reads |
+| PlayStream Events | 1M Events |
+| Telemetry Events | 1M Events |
+| Profile Reads | 5M Reads |
+| Profile Writes | 1M Writes |
+| Profile Storage | 2 GB |
+| Content and Configuration Reads | 20K Reads |
 | Content and Configuration Writes | 15K Writes |
-| Content and Configuration Storage | 1 GB |
-| CloudScript Execution Time | 10K GB-s |
-| CloudScript Total Executions | 100K Executions |
-| Insights Credits | 1 Credit |
+| Content and Configuration Storage | 2 GB |
+| CloudScript Execution Time | 20K GB-s |
+| CloudScript Total Executions | 200K Executions |
+| Insights Credits | Insights Performance Level 1 |
 
 **Definition of Unique Users:**
 Unique Users are simply the total amount of player profiles you have in your title, which is different from MAU - you can delete player profiles through the Players page in Game Manager to reduce the total number of Unique Users if you are approaching the limit but aren't ready to launch your title
