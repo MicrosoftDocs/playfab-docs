@@ -34,6 +34,8 @@ To view the billing details page for your studio navigate to the My Studios and 
     * Only use the **Billing Summary** page as an estimate for your month-to-date charges. Some meters have a 48+ hour delay and the **Billing Summary** page does not include all chargeable items (For example, Add-ons). On the first of the current month, you can view the final estimate for the previous month's charges (excluding taxes and delayed meter charges), and on the second of the current month, you can view the first estimate for the current month's usage and costs.
 5. **.csv Download**
    * You can download the **Billing Summary** view to .csv for further analysis. The "Download Summary" provides the same granularity as the **Billing Summary** page. The "Download daily" provides the the daily breakdown of usage.
+   > [!NOTE]
+   > As the storage meters are billed based off average consumption instead of total consumption, the data is represented differently. The first day of data contains the MTD average, and the remainder of the days are purposefully left blank.
 6. **Contact Information**
    * This is the contact information we use to send you an invoice. This can be changed by navigating to the **Billing Information** page.
 7. **Title Filter**
