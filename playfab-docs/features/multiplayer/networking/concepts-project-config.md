@@ -11,11 +11,6 @@ keywords: playfab, multiplayer, networking
 
 # PlayFab Party project configuration for Xbox One
 
-> [!IMPORTANT]
-> This feature is currently in **Preview**. It is provided to give you an early look at an upcoming feature and to allow you to provide feedback while it is still in development.
->
-> PlayFab customers in the Indie, Pro, and Enterprise tiers can access the Matchmaking and Party previews automatically through Game Manager. Xbox managed partners are also invited for the preview in the free tier and can get a preview access code from your Microsoft developer partner manager.
-
 ## Xbox One exclusive resource application network manifest templates
 
 In its app package manifest, the app should declare the <em>internetClientServer</em> and <em>privateNetworkClientServer</em> capabilities, because an application using Party requires connecting to and accepting connections from network resources, both over the Internet and the local network. The app should also declare the <em>microphone</em> device capability, as Party requires access to microphone devices to support voice chat. For more detail about these capability settings, see the platform documentation.

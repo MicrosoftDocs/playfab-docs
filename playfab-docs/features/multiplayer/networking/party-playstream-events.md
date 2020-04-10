@@ -11,9 +11,4 @@ keywords: playfab, multiplayer, networking
 ---
 # PlayFab Party PlayStream Events
 
-> [!IMPORTANT]
-> This feature is currently in **Preview**. It is provided to give you an early look at an upcoming feature and to allow you to provide feedback while it is still in development.
->
-> PlayFab customers in the Indie, Pro, and Enterprise tiers can access the Matchmaking and Party previews automatically through Game Manager. Xbox managed partners are also invited for the preview in the free tier and can get a preview access code from your Microsoft developer partner manager.
-
-In the current **Preview** release, **PlayFab Party** does not generate any **PlayStream** events.
+**TBD**
