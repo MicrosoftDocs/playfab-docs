@@ -19,7 +19,10 @@ PlayFab Insights is available to all studios right out of the box. The only thin
 
 You can send telemetry directly using the Playfab API call, [WriteTelemetryEvents](https://docs.microsoft.com/rest/api/playfab/events/playstream-events/writetelemetryevents?view=playfab-rest). The following limits exist for the API call:
 
-* **200 events per request** to the WriteTelemetryEvents API. This is a hard limit and cannot be raised further.
-* Title entities are restricted to **500,000 events per minute** and **900,000 events per 3 minutes**. If these limits are exceeded, you will see a PerEntityEventRateLimitExceeded error.
-* The max payload size is **10204 bytes**.
-* The limit on the number of API calls you can make to WriteTelemetryEvents is **8k per second**. It is very unlikely that you will exceed this limit. 
+
+| Limit Name | Limit Value |
+|--|--|
+| Events per request | 200 events per request <br> *Exceeding this limit will result in a BadRequest error.* |
+| Number of calls per entity | 8,000 per second |
+| Events per title entity | 500,000 events per minute <br> 900,000 events per 3 minutes <br> *Exceeding these limits will result in a PerEntityEventRateLimitExceeded error.* | 
+| Max payload size  | 10240 bytes (10KB) |
