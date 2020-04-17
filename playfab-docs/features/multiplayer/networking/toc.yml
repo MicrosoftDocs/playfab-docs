@@ -16,6 +16,8 @@
     href: concepts-project-config.md
 - name: Regions and QoS
   items:
+  - name: QoS
+    href: concepts-regions.md
   - name: Supported Azure regions
     href: supported-azure-regions.md
 - name: Networking and security
