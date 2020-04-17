@@ -14,6 +14,10 @@
     href: ios-specific-requirements.md
   - name: AppX manifest for Xbox One
     href: concepts-project-config.md
+- name: Regions and QoS
+  items:
+  - name: Supported Azure regions
+    href: supported-azure-regions.md
 - name: Networking and security
   items:
   - name: Invitations and the security model
