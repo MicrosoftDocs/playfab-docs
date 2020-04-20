@@ -49,7 +49,7 @@ Here we examine some best practices for using PlayFab insights as well as addres
    - Sure! You can revert back to the free tier if you don't currently need any of the paid features.
 ###  How do I get data into my Insights cluster?
    1. Most PlayFab services automatically generate data for you. 
-   2. You can also implement your own telemetry [through PlayStream, or our Telemetry system,](https://docs.microsoft.com/rest/api/playfab/events/playstream-events). 
+   2. You can also implement your own telemetry [through PlayStream, or our Telemetry system](https://docs.microsoft.com/rest/api/playfab/events/playstream-events). For limits on Telemetry events see [Getting started with Insights](quickstart.md).
    3. You can use [Management Commands](https://docs.microsoft.com/gaming/playfab/features/insights/insights/management-commands) to ingest custom datasets.
 ###  What is the standard data schema for PlayFab events?
    - In PlayFab Insights we load all the data from all events into a single table. This table is named ['events.all]. Inside that table you will see a column called "EventData" that contains the payload of JSON information for each event. For complete information about the events.all table, see [About the events.all table](https://docs.microsoft.com/gaming/playfab/features/insights/schemas/events-all) for more complete information. 
