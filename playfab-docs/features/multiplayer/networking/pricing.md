@@ -44,15 +44,17 @@ In-game chat text messages, even when text-to-text translation or text-to-speech
 
 ## Network egress
 
-At run-time you can specify which Azure region should host your network. This impacts network egress charges.
+Network egress charges depend on the regions in which your Party networks are hosted.
 
 | Zone | Regions | $/GB of Network Egress |
 | --- | --- | --- |
-| Zone 1 | Australia Central, Australia Central 2, West US, West US 2, West Central US, East US, North Central US, South Central US, East US 2, Central US, West Europe, North Europe, Canada East, Canada Central, France Central, UK South, UK West | $0.05 |
-| Zone 2 | East Asia, Southeast Asia, Japan East, Japan West, Australia East, Australia Southeast, Central India, West India, South India, Korea Central, Korea South |  $0.08 |
+| Zone 1 | West US, East US, North Central US, South Central US, East US 2, Central US, West Europe, North Europe | $0.05 |
+| Zone 2 | East Asia, Southeast Asia, Japan East, Japan West, Australia East, Australia Southeast |  $0.08 |
 | Zone 3 | Brazil South | $0.20 |
 
-## Simplified billed
+For more information about region selection, see [Selecting regions for Party networks](concepts-regions.md#selecting-regions-for-party-networks).
+
+## Simplified billing
 A simplified billing summary showing Party activity and the impact of the Xbox Live discount is below.
 
 | SKU | Meter | Consumption | Unit | Rate (USD)| Sub-total |
