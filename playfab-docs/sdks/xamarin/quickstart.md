@@ -150,7 +150,7 @@ namespace GettingStartedXamarin
 
         private void LogIntoPlayFab()
         {
-            PlayFabSettings.TitleId = "144";
+            PlayFabSettings.staticSettings.TitleId = "144";
             var request = new LoginWithCustomIDRequest { CustomId = "GettingStartedGuide", CreateAccount = true };
             var loginTask = PlayFabClientAPI.LoginWithCustomIDAsync(request);
             loginTask.ContinueWith(OnLoginComplete);
