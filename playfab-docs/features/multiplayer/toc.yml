@@ -12,5 +12,3 @@
     href: networking/toc.yml
   - name: Photon
     href: photon/toc.yml
-  - name: PubSub
-    href: pubsub/toc.yml

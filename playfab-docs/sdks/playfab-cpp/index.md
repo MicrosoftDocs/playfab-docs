@@ -16,6 +16,20 @@ ms.localizationpriority: medium
 
 Our PlayFab CPP SDK provides everything you need to access the PlayFab API. This includes models, methods, an HTTP wrapper for sending and receiving web requests, and JSON serialization.
 
+A native C++ project can be used a few ways:
+
+- As a stand-alone console Admin tools for maintaining your game.
+  - The PlayFab Cross-Platform C++ SDK works great for a stand-alone C++ program.
+- Integrated into an existing Visual Studio based C++ game.
+  - Follow the instructions below to integrate the NuGet Package into your Visual Studio Solution, and you're ready to go.
+- Integrated into an existing C++ based game engine.
+  - The PlayFab Cross-Platform C++ SDK should not be used if we provide a more specific SDK.
+    - [Cocos2d-x](https://github.com/PlayFab/Cocos2d-xSDK)
+    - [Unreal](https://www.unrealengine.com/marketplace/en-US/product/playfab-sdk)
+  - Many C++ based engines also integrate Lua.
+    - [LuaSDK](https://github.com/PlayFab/LuaSdk)
+  - Finally, if none of these options work for you, follow the instructions below to integrate the NuGet Package into your Visual Studio Solution. If you have any issues, let us know on the [Forums](https://community.playfab.com/index.html).
+
 It currently supports the following platforms:
 
 - [Windows (Win32) x64](quickstart-windows.md)
