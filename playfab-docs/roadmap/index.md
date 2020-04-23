@@ -11,9 +11,9 @@ ms.localizationpriority: medium
 ---
 
 # PlayFab Roadmap
-_Last Update: 4/2/2020_
+_Last Update: 4/23/2020_
 
-PlayFab is gearing up for an exciting decade! With 2020 comes a modern vision of our services that we’re working hard to deliver. 
+We hope you're all staying safe! With 2020 comes a modern vision of our services that we’re working hard to deliver. 
 
 As always, we want your feedback. The [Feature Requests](https://community.playfab.com/spaces/24/index.html?sort=votes) section of our forum allows you to post, comment, and vote on ideas from our community. Addressing issues also remains a high priority so please continue to share your findings in the [Bugs](https://community.playfab.com/spaces/23/index.html) section of our forums.
 
@@ -21,15 +21,7 @@ Please note that while this roadmap reflects our aspirations, features and timel
 
 ***
 
-## **Coming Soon:**
-
-**_PlayFab in China_**
-
-PlayFab is on track to launch in China in early 2020 in partnership with a local operator. The initial roll out is focused on dedicated multiplayer servers.
-
-***
-
-## **Coming Later:**
+## **Coming Next:**
 
 **_General availability of improved Leaderboards_**
 
@@ -37,11 +29,45 @@ This service is available today in previews. As we further incorporate your feed
 
 **_Monetization and User Generated Content_**
 
-These services will begin to move from private to public preview in the first half of 2020. Monetization provides redemption, wallet and inventory capabilities while UGC provides a highly scalable catalog plus content moderation, ratings and reviews. These services are used to power the Minecraft Marketplace and the Mixer Sparks system supporting millions of transactions and the consumption of user generated content at scale. 
+These services will begin to move from private to public preview in the first half of 2020. Monetization provides redemption, wallet and inventory capabilities while UGC provides a highly scalable catalog plus content moderation, ratings and reviews. These services are used to power the Minecraft Marketplace and the Mixer Sparks system supporting millions of transactions and the consumption of user generated content at scale. You can watch a video presentation on Minecraft use [here](https://www.youtube.com/watch?v=L7VoxGb1oYw).
 
 ***
 
 ## **Available Now:**
+
+**_Release notes on PlayFab GitHib Repo_**
+
+We have created a new public [GitHub repository](https://github.com/PlayFab/PlayFab) for PlayFab where we communicate service [releases notes](https://github.com/PlayFab/PlayFab/releases) and product updates. You can read more about this on our [blog](https://blog.playfab.com/blog/release-notes-on-playfab-github-repo).
+
+**_Rewarded Ads_**
+
+Announcing our newest LiveOps feature: Rewarded Ads. Now you can grant rewards to your players for watching in-game video ads from any third-party ad provider. Read the full announcement on our [blog](https://blog.playfab.com/blog/announcing-rewarded-ads).
+
+**_Insights (Public Preview)_**
+
+We’re proud to announce that our new completely managed data solution PlayFab Insights is now available in Public Preview. 
+
+This new stand-alone service includes its own pricing currency and an improved data environment with advanced ingestion, export, customization and data retention features. Our goal is to provide petabyte-scale-analytics out-of-the-box. All together this creates a story of ingestion, access, control and reporting that is far beyond what we have offered in the past.
+
+Insights allows you to choose how long you retain data and how much power you want behind your queries; as well as opening up multiple new ways to access data including connecting popular visualization platforms.
+
+You can watch a video overview [here](https://www.youtube.com/watch?v=4akVBx2gmU0), and reference documentation is available [here](https://docs.microsoft.com/gaming/playfab/features/insights/insights/).
+
+**_General availability of Multiplayer Servers and Party_**
+
+These services are now available to all PlayFab users! Read more about this announcment on our [blog](https://blog.playfab.com/blog/level-up-with-azure-playfab).
+
+**_Billing details page for Multiplayer Servers and Party_**
+
+These pages let you view costs for each day.
+
+**_PlayFab in China_**
+
+PlayFab is licensed to a local operator in China to provide PlayFab Multiplayer Servers in the China region. Customers can onboard by contacting business@playfab.cn.
+
+**_PlayFab at Game Stack Live_**
+
+We posted a number of technical talks as part of [Game Stack Live](https://developer.microsoft.com/en-us/games/blog/playfab-at-game-stack-live/). 
 
 **_General availability of Multiplayer Servers and Party_**
 
