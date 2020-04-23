@@ -29,7 +29,7 @@ This service is available today in previews. As we further incorporate your feed
 
 **_Monetization and User Generated Content_**
 
-These services will begin to move from private to public preview in the first half of 2020. Monetization provides redemption, wallet and inventory capabilities while UGC provides a highly scalable catalog plus content moderation, ratings and reviews. These services are used to power the Minecraft Marketplace and the Mixer Sparks system supporting millions of transactions and the consumption of user generated content at scale. You can watch a video presentation on Minecraft use [here](https://www.youtube.com/watch?v=L7VoxGb1oYw).
+These services will begin to move from private to public preview in the first half of 2020. Monetization provides redemption, wallet and inventory capabilities while UGC provides a highly scalable catalog plus content moderation, ratings and reviews. These services are used to power the Minecraft Marketplace and the Mixer Sparks system supporting millions of transactions and the consumption of user generated content at scale. The LiveOps Masterclass with Minecraft [video](https://www.youtube.com/watch?v=L7VoxGb1oYw) gives a good overview.
 
 ***
 
@@ -51,7 +51,7 @@ This new stand-alone service includes its own pricing currency and an improved d
 
 Insights allows you to choose how long you retain data and how much power you want behind your queries; as well as opening up multiple new ways to access data including connecting popular visualization platforms.
 
-You can watch a video overview [here](https://www.youtube.com/watch?v=4akVBx2gmU0), and reference documentation is available [here](https://docs.microsoft.com/gaming/playfab/features/insights/insights/).
+A [video overview](https://www.youtube.com/watch?v=4akVBx2gmU0) and full [reference documentation](https://docs.microsoft.com/gaming/playfab/features/insights/insights/) are available.
 
 **_Insights Management Commands_**
 
@@ -94,7 +94,7 @@ We posted a detailed overview on our [blog](https://blog.playfab.com/blog/announ
 **_CloudScript with Azure Functions_**
 
 [CloudScript using Azure Functions](https://docs.microsoft.com/gaming/playfab/features/automation/cloudscript-af/) brings support for [new languages](https://docs.microsoft.com/azure/azure-functions/supported-languages) (including C#) as well as local debugging in Visual Studio and Visual Studio Code. 
-PlayFab asynchronously waits for these functions to complete, allowing them to run for extended periods of time.  You can watch a demo [here](https://youtu.be/apQbkDn1lNo).
+PlayFab asynchronously waits for these functions to complete, allowing them to run for extended periods of time. Find out more in this [video](https://youtu.be/apQbkDn1lNo).
 
 **_PlayFab Visual Studio Extension_**
 
