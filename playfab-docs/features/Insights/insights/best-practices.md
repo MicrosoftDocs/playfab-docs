@@ -10,7 +10,7 @@ keywords: playfab, insights
 ms.localizationpriority: medium
 ---
 # Best Practices & FAQ
-Here we examine some best practices for using PlayFab insights as well as address the most frequently asked questions. 
+Here we examine some best practices for using PlayFab Insights as well as address the most frequently asked questions. 
 
 ## Best Practices 
 - Each performance level comes with a certain quantity of cache. It is a good idea to calculate a daily data footprint and decide how many days of data you would like in cache. A small buffer or very well known data footprint will allow anyone performing queries to know when to expect optimal performance. Running visualizations against that expected performance is also recommended for quick results.
@@ -38,7 +38,7 @@ Here we examine some best practices for using PlayFab insights as well as addres
 
 ## FAQ
 ### How can I query data?
-   1. The simplest way is to use our built in [data explorer](https://docs.microsoft.com/gaming/playfab/features/insights/explorer/)
+   1. The simplest way is to use our built in [data explorer](https://docs.microsoft.com/gaming/playfab/features/insights/explorer/).
    2. The [connectivity](https://docs.microsoft.com/gaming/playfab/features/insights/connectivity) section has details on additional ways to access data.
 ### I sent a Microsoft authentication link (AAD) and it didn't work, what happened?
   - If you already have a PlayFab account, you need to sign out before accepting an invite with a different authentication method. 
@@ -49,7 +49,7 @@ Here we examine some best practices for using PlayFab insights as well as addres
    - Sure! You can revert back to the free tier if you don't currently need any of the paid features.
 ###  How do I get data into my Insights cluster?
    1. Most PlayFab services automatically generate data for you. 
-   2. You can also implement your own telemetry [through PlayStream, or our Telemetry system](https://docs.microsoft.com/rest/api/playfab/events/playstream-events). For limits on Telemetry events see [Getting started with Insights](quickstart.md).
+   2. You can also implement your own telemetry [through PlayStream, or our Telemetry system](https://docs.microsoft.com/rest/api/playfab/events/playstream-events). 
    3. You can use [Management Commands](https://docs.microsoft.com/gaming/playfab/features/insights/insights/management-commands) to ingest custom datasets.
 ###  What is the standard data schema for PlayFab events?
    - In PlayFab Insights we load all the data from all events into a single table. This table is named ['events.all]. Inside that table you will see a column called "EventData" that contains the payload of JSON information for each event. For complete information about the events.all table, see [About the events.all table](https://docs.microsoft.com/gaming/playfab/features/insights/schemas/events-all) for more complete information. 
@@ -58,7 +58,7 @@ Here we examine some best practices for using PlayFab insights as well as addres
 ###  What's the difference between Events Per Second in my Insights performance level and the costs of sending PlayStream events?
    - Events per second in your Insights performance level represents data ingestion to your cluster through any means. PlayStream write events and write telemetry events are billed independently and represent the cost of writing to the cloud. 
 ###  Can I have a higher performance level than what I see on my management page?
-   -. File a [support ticket](https://support.playfab.com/hc/requests/new) with us and we'll contact you to talk arrange something that meets your needs.
+   - File a [support ticket](https://support.playfab.com/hc/requests/new) with us and we'll contact you to arrange something that meets your needs.
 ###   What is the underlying technology behind PlayFab Insights?
    - PlayFab Insights uses a specialized variant of Azure Data Explorer (Kusto).
 ###  Why is my data schema different when exporting using custom queries?
@@ -67,3 +67,12 @@ Here we examine some best practices for using PlayFab insights as well as addres
    - You're warned that if you reduce your retention you might delete data. For example, if you have been operating for 1 year and reduce the retention to 6 months, only the most recent 6 months of data is saved, the rest is discarded.
 ### How do I increase the timeout time on my queries?
    - The time out limits on queries is relative to your compute power which is defined in your performance level. Refer to the compute power table in [Performance and Retention](https://docs.microsoft.com/gaming/playfab/features/insights/insights/performance-retention) under compute power.
+### Is there a limit to how much telemetry I can send?
+   - The following limits exist for the [WriteTelemetryEvents]() API call:
+     | Limit Name | Limit Value |
+     |--|--|
+     | Events per request | 200 events per request <br> Exceeding this limit will result in a BadRequest error. |
+     | Events per entity | 8,000 per second <br> Exceeding this limit will result in a PerEntityEventRateLimitExceeded error. <br> An entity most often represents an individual player, but can also be a player group or title. | 
+     | Max payload size  | 10240 bytes (10KB) |
+
+     If you run into any of these limits, please contact the Playfab Support team for assistance. In the upper right-hand corner of Game Manager select the question mark icon, then select **Contact Us**.

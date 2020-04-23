@@ -23,8 +23,8 @@ You can send telemetry directly using the Playfab API call, [WriteTelemetryEvent
 | Limit Name | Limit Value |
 |--|--|
 | Events per request | 200 events per request <br> *Exceeding this limit will result in a BadRequest error.* |
-| Number of calls per entity | 8,000 per second |
-| Events per title entity | 500,000 events per minute <br> 900,000 events per 3 minutes <br> *Exceeding these limits will result in a PerEntityEventRateLimitExceeded error.* | 
+| Number of calls per entity |  |
+| Events per entity | 8,000 per second <br> *Exceeding this limit will result in a PerEntityEventRateLimitExceeded error.* | 
 | Max payload size  | 10240 bytes (10KB) |
 
 If you run into any of these limits, please contact the Playfab Support team for assistance. In the upper right-hand corner of Game Manager select the question mark icon, then select **Contact Us**.
