@@ -14,6 +14,16 @@ ms.localizationpriority: medium
 > [!Note]
 > For release notes about service releases and product updates, see the [release notes](https://github.com/PlayFab/PlayFab/releases) section on [PlayFab's public GitHub repository](https://github.com/PlayFab/PlayFab)
 
+## 200422
+
+Date: 2020-04-22
+
+### [NodeSDK](https://github.com/PlayFab/NodeSDK) Update:
+
+* Hotfix
+    * Fixed an issue where recent NPM packages were missing a critical file, and could not be imported
+    * Fixed an issue where some type definitions were incorrectly set to "Number" rather than proper types
+
 ## 200421
 
 Date: 2020-04-21
@@ -42,7 +52,7 @@ Date: 2020-03-30
  * [UnrealMarketplacePlugin](https://github.com/PlayFab/UnrealMarketplacePlugin):
     * Added new [Mac build helper scripts](https://github.com/PlayFab/UnrealMarketplacePlugin/blob/master/4.24/ExampleProject/BuildMac.sh)
     
-### [Plat SDK](https://github.com/PlayFab/XPlatCppSdk) specific changes
+### [XPlat C++ SDK](https://github.com/PlayFab/XPlatCppSdk) specific changes
 
  * Fixed some threading issues for the PlayFabEventPipeline
 
