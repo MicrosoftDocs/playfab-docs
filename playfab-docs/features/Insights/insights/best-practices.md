@@ -73,6 +73,6 @@ Here we examine some best practices for using PlayFab Insights as well as addres
      |--|--|--|
      | Events per request | 200 events per request | Exceeding this limit will result in a BadRequest error. |
      | Events per entity | 8,000 per second | Exceeding this limit will result in a PerEntityEventRateLimitExceeded error. <br> An entity most often represents an individual player, but can also be a player group or title. | 
-     | Max payload size  | 10240 bytes (10KB) |
+     | Max payload size  | 10240 bytes (10KB) | |
 
      If you run into any of these limits, please contact the Playfab Support team for assistance. In the upper right-hand corner of Game Manager select the question mark icon, then select **Contact Us**.
