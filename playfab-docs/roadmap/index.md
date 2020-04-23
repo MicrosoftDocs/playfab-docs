@@ -53,6 +53,10 @@ Insights allows you to choose how long you retain data and how much power you wa
 
 You can watch a video overview [here](https://www.youtube.com/watch?v=4akVBx2gmU0), and reference documentation is available [here](https://docs.microsoft.com/gaming/playfab/features/insights/insights/).
 
+**_Insights Management Commands_**
+
+Insights now has a series of [management commands](https://docs.microsoft.com/gaming/playfab/features/insights/explorer/management-commands) that allow you to gain a better understanding of your data environment.
+
 **_General availability of Multiplayer Servers and Party_**
 
 These services are now available to all PlayFab users! Read more about this announcment on our [blog](https://blog.playfab.com/blog/level-up-with-azure-playfab).
@@ -77,16 +81,6 @@ These services are now generally available to all PlayFab users.
 
 These pages let you view costs for each day.
 
-**_Insights (Public Preview)_**
-
-We’re proud to announce that our new completely managed data solution PlayFab Insights is now available in Public Preview. 
-
-This new stand-alone service includes its own pricing currency and an improved data environment with advanced ingestion, export, customization and data retention features. Our goal is to provide petabyte-scale-analytics out-of-the-box. All together this creates a story of ingestion, access, control and reporting that is far beyond what we have offered in the past.
-
-Insights allows you to choose how long you retain data and how much power you want behind your queries; as well as opening up multiple new ways to access data including connecting popular visualization platforms.
-
-You can see a video overview [here](https://www.youtube.com/watch?v=4akVBx2gmU0), and reference documentation is available [here](https://docs.microsoft.com/gaming/playfab/features/insights/insights/).
-
 **_The PlayFab Guide to LiveOps_**
 
 The third edition of our LiveOps guidebook is now available! [Download](https://aka.ms/LiveOpsGuide) your copy today and read about how LiveOps can help you build games with healthy communities.
@@ -107,10 +101,6 @@ PlayFab asynchronously waits for these functions to complete, allowing them to r
 The PlayFab Extension is now available in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=PlayFab.playfab-explorer). In addition, the extension is open source with code available in [GitHub](https://github.com/PlayFab/vscode-playfab-explorer). We continue to iterate on the PlayFab Extension and you are welcome to add features and improvements along with us.
 
 More information is available on on our [blog](https://blog.playfab.com/blog/announcing-the-open-source-playfab-visual-studio-code-extension).
-
-**_Insights Management Commands_**
-
-Insights now has a series of [management commands](https://docs.microsoft.com/gaming/playfab/features/insights/explorer/management-commands) that allow you to gain a better understanding of your data environment.
 
 **_Azure Active Directory Authentication_**
 
