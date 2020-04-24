@@ -30,14 +30,6 @@ There are a couple of steps needed to get started with PlayFab C# CloudScript.
 > [!NOTE] 
 > PlayFab Azure Functions can use the Azure Functions V2 runtime or greater, and .NET Core 2 or greater. Ideally you should use the latest version (currently Azure Functions V3 and .NET Core 3).
 
-## Enable the Feature
-
-To begin using this feature you need to enable it.  In Game Manager, go to **Automation** > **CloudScript** > **Functions (Preview)**.
-
-* Select the **Enable** button to turn on Game Manager pages that  allow you to register functions, hook them up to rules, tasks etc.
-
-![Enable PlayFab C# CloudScript](media/enable_azure_functions.jpg)
-
 ## Create an Azure Function
 
 1. Create a basic "HelloWorld" example function. You can see how to do this by following the [Create your first function using Visual Studio Code guide](https://docs.microsoft.com/azure/azure-functions/functions-create-first-function-vs-code).  For a code example using PlayFab variables, see the section below [PlayFab Function Context, Variables and using the Server SDKs](#playfabfunctioncontext).
