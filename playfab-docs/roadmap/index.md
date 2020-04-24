@@ -19,6 +19,7 @@ As always, we want your feedback. The [Feature Requests](https://community.playf
 
 Please note that while this roadmap reflects our aspirations, features and timelines are subject to change without notice.
 
+
 ***
 
 ## **Coming Next:**
@@ -30,6 +31,7 @@ This service is available today in previews. As we further incorporate your feed
 **_Monetization and User Generated Content_**
 
 These services will begin to move from private to public preview in the first half of 2020. Monetization provides redemption, wallet and inventory capabilities while UGC provides a highly scalable catalog plus content moderation, ratings and reviews. These services are used to power the Minecraft Marketplace and the Mixer Sparks system supporting millions of transactions and the consumption of user generated content at scale. The LiveOps Masterclass with Minecraft [video](https://www.youtube.com/watch?v=L7VoxGb1oYw) gives a good overview.
+
 
 ***
 
@@ -55,7 +57,7 @@ A [video overview](https://www.youtube.com/watch?v=4akVBx2gmU0) and full [refere
 
 **_Insights Management Commands_**
 
-Insights now has a series of [management commands](https://docs.microsoft.com/gaming/playfab/features/insights/explorer/management-commands) that allow you to gain a better understanding of your data environment.
+Insights now has a series of [management commands](https://docs.microsoft.com/gaming/playfab/features/insights/insights/management-commands) that allow you to gain a better understanding of your data environment.
 
 **_General availability of Multiplayer Servers and Party_**
 
