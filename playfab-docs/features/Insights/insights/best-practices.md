@@ -69,6 +69,7 @@ Here we examine some best practices for using PlayFab Insights as well as addres
    - The time out limits on queries is relative to your compute power which is defined in your performance level. Refer to the compute power table in [Performance and Retention](https://docs.microsoft.com/gaming/playfab/features/insights/insights/performance-retention) under compute power.
 ### Is there a limit to how much telemetry I can send?
    - The following limits exist for the [WriteTelemetryEvents](xref:titleid.playfabapi.com.events.playstreamevents.writetelemetryevents) API call:
+
      | Limit Name | Limit Value | Notes |
      |--|--|--|
      | Events per request | 200 events per request | Exceeding this limit will result in a `BadRequest` error. |
