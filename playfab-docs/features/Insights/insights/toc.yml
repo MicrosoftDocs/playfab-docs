@@ -1,6 +1,6 @@
 - name: Overview
   href: index.md
-- name: Performance Levels and Rentention
+- name: Performance Levels and Retention
   href: performance-retention.md
 - name: Insights Scheduled Scaling
   href: scheduled-scaling.md
