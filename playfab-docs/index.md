@@ -343,7 +343,7 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>Multiplayer</h3>
-                                                <p><a href='/gaming/playfab/features/multiplayer/servers/quickstart'>Servers</a></p><p><a href='/gaming/playfab/features/multiplayer/matchmaking/quickstart'>Matchmaking</a></p><p><a href='/gaming/playfab/features/multiplayer/networking/quickstart-non-windows'>PlayFab Party</a></p><p><a href='/gaming/playfab/features/multiplayer/photon/quickstart'>Photon</a></p><p><a href='/gaming/playfab/features/multiplayer/pubsub/quickstart-unity'>PubSub Unity</a></p>
+                                                <p><a href='/gaming/playfab/features/multiplayer/servers/quickstart'>Servers</a></p><p><a href='/gaming/playfab/features/multiplayer/matchmaking/quickstart'>Matchmaking</a></p><p><a href='/gaming/playfab/features/multiplayer/networking/quickstart-non-windows'>PlayFab Party</a></p><p><a href='/gaming/playfab/features/multiplayer/photon/quickstart'>Photon</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -506,7 +506,7 @@ featureFlags:
                                             </div>
                                             <div class="cardText">
                                                 <h3>Game Manager</h3>
-                                                <p style='color: #7f7f7f'>The PlayFab developer portal and primary interface for inviting or managing teammates' access to your studios and titles.</p><p><a href='/gaming/playfab/features/config/gamemanager/'>Overview</a></p><p><a href='/gaming/playfab/features/config/gamemanager/quickstart'>Quickstart</a></p><p><a href='/gaming/playfab/features/config/gamemanager/tutorials'>Tutorials</a></p>
+                                                <p style='color: #7f7f7f'>The PlayFab developer portal and primary interface for inviting or managing teammates' access to your studios and titles.</p><p><a href='/gaming/playfab/features/config/gamemanager/'>Overview</a></p><p><a href='/gaming/playfab/features/config/gamemanager/quickstart'>Quickstart</a></p>
                                             </div>
                                         </div>
                                     </div>

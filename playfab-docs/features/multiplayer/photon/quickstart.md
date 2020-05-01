@@ -17,7 +17,7 @@ This quickstart shows how to set up Photon Multiplayer to work with PlayFab. Cur
 - Authenticate Photon players with PlayFab.
 - Listen for room events using PlayFab CloudScript callbacks.
 
-In this quickstart, we will illustrate how both features work using the latest [Photon Unity example project](https://www.assetstore.unity3d.com/en/#!/content/1786).
+In this quickstart, we will illustrate how both features work using the latest [Photon Unity example project](https://assetstore.unity.com/packages/tools/network/photon-unity-networking-classic-free-1786).
 
 ## Prerequisites
 
@@ -135,7 +135,7 @@ Make sure to replace the `PhotonSecretKey` token with the Secret Key you generat
 The guide assumes you already have PlayFab SDK imported, set up, and the title setting configured.
 
 - Start by navigating to the **Asset Store**.
-- Locate [Photon Unity Networking Free package](https://www.assetstore.unity3d.com/en/#!/content/1786).
+- Locate [Photon Unity Networking Free package](https://assetstore.unity.com/packages/tools/network/photon-unity-networking-classic-free-1786).
 - Select **Import (1)**.
 - You may inspect the imported files.
 - Then select **Import (2)**.
