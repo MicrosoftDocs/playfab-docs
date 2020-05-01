@@ -16,7 +16,7 @@ ms.localizationpriority: low
 > This feature is currently in **Private Preview**.
 > It is provided to give you an early look at an upcoming feature, and to allow you to provide feedback while it is still in development.
 >
-> Access to this feature is restricted to select titles. Customers in our Indie, Pro, and Enterprise tiers can request access by opening a ticket with our support team via the Contact Us tab in the PlayFab Game Manager.
+> Access to this feature is restricted to select titles and the preview program is currently closed to more customers.
 
 The Xbox Data Add-On provides transaction-level usage and purchase data from Microsoft's Xbox and Store to your PlayFab Insights database/cluster. From here, you can run direct queries against the data. It is designed to benefit any Xbox developer, whether or not they use the PlayFab SDK.
 
@@ -30,11 +30,7 @@ To onboard to the Xbox Data Add-On:
 - Sign up for a PlayFab account and create a title at [https://playfab.com](https://playfab.com).
 - Follow the account creation flow to create a studio and at least *one* title you'd like to receive data for.
 
-## Step 2 - Request to the PlayFab Insights Private Preview
-
-- Email [pfgaminginsights@microsoft.com](mailto:pfgaminginsights@microsoft.com) to request access to both the Insights program and the Xbox Data Add-On.
-
-## Step 3 - Map your Product IDs
+## Step 2 - Map your Product IDs
 
 - With the credentials used to publish your Xbox title, log into your [Microsoft Partner Center](https://partner.microsoft.com) account.
 - Navigate to the dashboard, as shown below.
@@ -49,7 +45,7 @@ To onboard to the Xbox Data Add-On:
 - Now copy the 12 digit Product ID and share the request in an email to [pfgaminginsights@microsoft.com](mailto:pfgaminginsights@microsoft.com).
 - The mapping step is handled by a PlayFab team member.
 
-## Step 4 - Access the Data
+## Step 3 - Access the Data
 
 Once a PlayFab team member has mapped your product IDs, processing your new title's data takes will take approximately eight hours. When the data is ready:
 
