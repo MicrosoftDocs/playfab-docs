@@ -21,7 +21,7 @@ Currently, you can connect the following external tools to Insights:
   - [Connect to Azure Data Factory (ADF)](#azure-data-factory-adf)
   - [Connect to Grafana](#grafana)
   - [Connect to Python](#python)
-  - [Connect to Kusto C# SDK](#kusto-c#-sdk)
+  - [Connect to Kusto C# SDK](#kusto-c-sdk)
   
 ## Power BI
 Pairing Power BI with Insights allows you to easily create visualizations of your game data. 
