@@ -15,4 +15,4 @@
 - name: Connecting Python to Insights
   href: connecting-python-to-insights.md
 - name: Connecting Kusto C# SDK to Insights
-  href: connecting-kusto-csharp-sdk-to-insights.md
+  href: connecting-kusto-csharp-to-insights.md
