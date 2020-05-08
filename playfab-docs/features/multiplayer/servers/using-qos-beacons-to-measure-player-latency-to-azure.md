@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 You can deploy PlayFab multiplayer servers to more than a dozen Azure regions. There are two reasons to do this:
 
 1. Additional regions provide redundancy. If a single Azure region fails, players can access servers in other regions.
-2. Additional regions allow players to access servers that are “nearby” and deliver low-latency connectivity.
+2. Additional regions allow players to access servers that are "nearby" and deliver low-latency connectivity.
 
 When you call [RequestMultiplayerServer](xref:titleid.playfabapi.com.multiplayer.multiplayerserver.requestmultiplayerserver), you specify a ranked list of Azure regions that PlayFab uses to fulfill the request. PlayFab will attempt to fulfill the request using the #1 ranked region, but if there aren't servers standing by in that region, or the region has some other fault, a sub-optimal region further down the list will be attempted.
 
@@ -30,7 +30,7 @@ The usage of UDP is important, because most multiplayer games use UDP transport 
 This is the typical flow for using these beacons in the context of a player device:
 
 1. Login the player to PlayFab. This is typically done with a [LoginWithCustomID](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid) or another login API.
-2. Call [ListQoSServers](xref:titleid.playfabapi.com.multiplayer.multiplayerserver.listqosservers). This provides hostnames to PlayFab’s QoS beacons. A typical implementation might have this procedure occur on the **Multiplayer Menu** page for the game.
+2. Call [ListQoSServersForTitle](xref:titleid.playfabapi.com.multiplayer.multiplayerserver.listqosserversfortitle). This provides hostnames to PlayFab's QoS beacons. A typical implementation might have this procedure occur on the **Multiplayer Menu** page for the game.
 3. Create a UDP socket.
 4. Send a single UDP datagram to port 3075 on the QoS server. The message content must start with 0xFFFF (1111 1111 1111 1111).  
 5. The server will reply with a single datagram, with the message contents having the first 2 bytes "flipped" to **0x0000** (0000 0000 0000 0000). The rest of the datagram contents will be copied from the initial ping.
