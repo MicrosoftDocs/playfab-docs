@@ -77,7 +77,7 @@ Get started with the PlayFab REST API collection for Postman. Follow steps to in
   > [!div class="mx-imgBorder"]
   > ![Postman Create Environment](./media/tutorials/postman-new-create-environment.png "Postman Create Environment")
 
-- Select **Update** to save your new environment
+- When finished, select **Add** _(or Update)_ to save your new environment
 - Exit out of the **Manage Environment** window and select the environment dropdown to switch to your new environment *(top right of the window)*
 
   > [!div class="mx-imgBorder"]
