@@ -41,7 +41,7 @@ Content & Configuration files are used to remotely manage configuration for your
 
 
 ## CloudScript
-CloudScript enables you to use client code to request execution of any custom server-side functionality you can implement. It enables you to build server-side logic and functionality that scales to meet your demand, without worrying about servers or infrastructure. Both total number of CloudScript executions, and corresponding execution time, are billed as party of this metered service.
+CloudScript enables you to use client code to request execution of any custom server-side functionality you can implement. It enables you to build server-side logic and functionality that scales to meet your demand, without worrying about servers or infrastructure. Both total number of CloudScript executions, and corresponding execution time, are billed as part of this metered service.
 * **Execution Time** - CloudScript execution time is metered based on the per-second resource consumption across all CloudScript executions, measured in GB-s (average memory size in GBs x total execution time in milliseconds).
 > [!NOTE]
 > The minimum billable memory size and execution time per execution is 128MB and 1ms, respectively
