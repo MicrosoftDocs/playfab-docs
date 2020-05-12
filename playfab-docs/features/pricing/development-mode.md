@@ -59,7 +59,7 @@ There are some studio and title limits associated with development mode:
 ### Title Limits
 | Limit | Amount |
 | --- | --- |
-| Unique Users | 10,000 Users |
+| Unique Users | 100,000 Users |
 | PlayStream Events | 1M Events |
 | Telemetry Events | 1M Events |
 | Profile Reads | 5M Reads |
