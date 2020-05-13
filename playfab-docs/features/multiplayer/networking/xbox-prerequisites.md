@@ -1,6 +1,6 @@
 ---
-title: PlayFab Party project configuration for Xbox One
-description: Requirement for the network manifest on Xbox One
+title: Xbox XDK Prerequisites
+description: Xbox XDK supplement for PlayFab Party quickstart
 author: AlexAtXbox
 ms.author: alstonge
 ms.date: 11/5/2019
@@ -9,7 +9,7 @@ ms.prod: playfab
 keywords: playfab, multiplayer, networking
 ---
 
-# PlayFab Party project configuration for Xbox One
+# Xbox XDK Prerequisites
 
 ## Xbox One exclusive resource application network manifest templates
 
@@ -65,3 +65,8 @@ The following snippet shows the nodes that must exist under the Package/Capabili
   </Applications>
 </Package>
 ```
+
+## Next steps
+- [Quickstart for PlayFab Party](quickstart.md)
+- [Xbox Requirements](xbox-requirements.md)
+- [Using MPSD](using-mpsd.md)

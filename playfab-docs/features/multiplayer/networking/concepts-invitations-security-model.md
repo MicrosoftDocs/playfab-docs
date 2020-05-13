@@ -83,7 +83,7 @@ Invitations (other than the initial invitation) are hidden from other devices fo
 An invitation contains 0 or more users specified as `title_player_account` [entity IDs](/../../data/entities/index.md). If an invitation contains users, that invitation only grants access to join the network to those users. However, if an invitation contains no users, this is an open invitation. Any user may join the network with the identifier of an open invitation.
 
 > [!NOTE]
-> On a multi-user device, such as a game console, be sure to use the correct invitation with with correct user. Depending on which users are specified in each invitation, it may be possible that different users on the device may need to use different invitations when authenticating a user to the network via `PartyNetwork::AuthenticateLocalUser()`.
+> On a multi-user device, such as a game console, be sure to use the correct invitation with the correct user. Depending on which users are specified in each invitation, it is possible that different users on the device might need to use different invitations when authenticating a user into the network via PartyNetwork::AuthenticateLocalUser().
 
 ### Immutability
 
