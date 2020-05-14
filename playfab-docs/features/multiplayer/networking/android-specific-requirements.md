@@ -1,7 +1,7 @@
 ---
 title: Android getting started
 author: debhaldarMS
-description: Supplement to quickstart for non-Windows platforms.
+description: Android supplement for PlayFab Party quickstart
 ms.author: debh
 ms.date: 08/05/2019
 ms.topic: article
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Android getting started
 
-This document lists the basic prerequisites and requirements necessary to integrate PlayFab Party into your Android applications. Once you've set up your system according to this document, please have a look at the [Quickstart for Bumblelion (non-windows) Platforms](quickstart-non-windows.md) to get set up with the building blocks of PlayFab Party.
+This document lists the basic prerequisites and requirements necessary to integrate PlayFab Party into your Android applications. Once you've set up your system according to this document, please have a look at the [Quickstart for PlayFab Party](quickstart.md) for getting set up with the building blocks of PlayFab Party.
 
 ## Prerequisites
 
@@ -295,4 +295,4 @@ In a similar way, each method in the NetworkManager JNI interface is mapped to P
 
 ## Next steps
 
-In this article we saw how to get started integrating the Party library into your Android application. Please refer to [Quickstart For Bumblelion (non-Windows) Platforms](quickstart-non-windows.md) for getting set up with the rest of the building blocks of PlayFab Party.
+In this article we saw how to get started integrating the Party library into your Android application. Please refer to [Quickstart For PlayFab Party](quickstart.md) for getting set up with the rest of the building blocks of PlayFab Party.

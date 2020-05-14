@@ -1,5 +1,5 @@
 ---
-title: Quickstart for PlayFab Party on Android, iOS, and Switch
+title: Quickstart for PlayFab Party
 author: debhaldarMS
 description: Guide to help you integrate PlayFab Party in your Game.
 ms.author: debh
@@ -12,23 +12,23 @@ ms.localizationpriority: medium
 
 # Getting started with the Party SDK
 
-This quickstart is intended to be a high-level overview of the facets of PlayFab Party. PlayFab Party was designed to be cross-platform from the ground up. We've structured these quickstarts in the same way, where most of the information applies to all platforms, and platform-specific prerequisites and steps are described in the linked documents.
+This quickstart is intended to be a high-level overview of PlayFab Party's core features. PlayFab Party was designed to be cross-platform from the ground up. We've structured these quickstarts in the same way, where most of the information applies to all platforms, and platform-specific prerequisites and steps are described in the linked documents.
 
-In this quickstart, critical pieces of functionality are highlighted via explanatory text and code snippets. However, please note that this is not a step-by-step walk-through. Please consult the linked reference and conceptual documentation, as well as refer to the source code of the demo sample for different platforms that comes with the Party libraries, for a deeper understanding.
+In this quickstart, critical pieces of functionality are highlighted via explanatory text and code snippets. However, please note that this is not a step-by-step walk-through. For a deeper understanding, please consult the linked reference documentation, conceptual documentation, and per-platform sample applications.
 
-## Requirements for Nintendo Switch, iOS and Android
+## Platform Prerequisites
 
-This document lists the basic prerequisites necessary to integrate PlayFab Party into your specific platform applications. 
+Before you start this quickstart, perform any necessary platform-specific setup as specified in the following topics:
 
-Before you start this tutorial, ensure that the following prerequisites have been met by consulting the following platform specific documents:
+1. [Android prerequisites](android-specific-requirements.md)
 
-1. [Android-specific requirements](android-specific-requirements.md)
+2. [iOS prerequisites](ios-specific-requirements.md)
 
-2. [iOS-specific requirements](ios-specific-requirements.md)
+3. [Nintendo Switch prerequisites](https://github.com/PlayFab/PlayFabPartySwitch/releases)
 
-3. [Nintendo Switch specific Requirements](https://github.com/PlayFab/PlayFabPartySwitch/releases)
+4. [Xbox XDK prerequisites](xbox-prerequisites.md)
 
-Once you've finished the platform-specific steps, please continue with the rest of the steps in this document to set up PlayFab Party.
+When you finish the platform-specific steps, continue with the rest of the steps in this topic to set up PlayFab Party.
 
 > [!IMPORTANT]
 > Follow these steps to [Enable PlayFab Party](enable-party.md).
@@ -43,26 +43,26 @@ These two key pieces of information are later utilized to initialize a Local use
 
 ```cpp
 PlayFabClientAPI::LoginWithCustomID(
-        loginRequest,
-        [this, callback, userId](const LoginResult& loginResult, void*)
-        {
-            // Sign in was successful.
-            DEBUGLOG("PlayFab::signin -- Login with custom id callback\n");
+    loginRequest,
+    [this, callback, userId](const LoginResult& loginResult, void*)
+    {
+        // Sign in was successful.
+        DEBUGLOG("PlayFab::signin -- Login with custom id callback\n");
 
-            // Save the PlayFab id and entity data for Party authentication.
-            m_playfabId = loginResult.PlayFabId;
-            if (loginResult.EntityToken.notNull() && loginResult.EntityToken->Entity.notNull())
-            {
-                m_entityKey = loginResult.EntityToken->Entity;
-                m_entityToken = loginResult.EntityToken->EntityToken;
-            }
+        // Save the PlayFab id and entity data for Party authentication.
+        m_playfabId = loginResult.PlayFabId;
+        if (loginResult.EntityToken.notNull() && loginResult.EntityToken->Entity.notNull())
+        {
+            m_entityKey = loginResult.EntityToken->Entity;
+            m_entityToken = loginResult.EntityToken->EntityToken;
+        }
 ```
 
 Once you've successfully obtained the entity ID and entity token from PlayFab, you're all set to proceed with enabling and then initializing Party.
 
 ## Initialize PlayFab Party
 
-Before proceeding with this section, it is recommended that you read through [Understanding Party conceptual documentation.](concepts-objects.md) and the code comments in the public Party.h header.
+Before proceeding with this section, it is recommended that you read through the [PlayFab Party objects and their relationships](concepts-objects.md) document and the code comments in the public Party.h header.
 
 Initializing Party is done via the NetworkManager.cpp code that's provided as part of the Party Demo Apps, and is common to all platforms. 
 
@@ -89,7 +89,7 @@ At a high level, initializing Party involves the following steps:
     }
 ```
 
-2. Create a local User object. The local user object that is used to represent a local user on the device (phone or console) when performing networking and chat operations. The local user object is initialized with the PlayFab Entity ID.
+2. Create a local user object. The local user object that is used to represent a local user on the device (phone or console) when performing networking and chat operations. The local user object is initialized with the PlayFab Entity ID.
 
 ```cpp
     //Only create a local user object if it doesn't exist.
@@ -213,7 +213,7 @@ At this point, you have the PlayFab Party initialized in your application or gam
 
 ## Create a Party Network
 
-A Party Network is a  secured collection of one or more devices and their authorized users that the game creates for the purpose of exchanging chat or data communication. This typically aligns with a game's multiplayer session or chat "lobby" concept. You can
+A Party Network is a secured collection of one or more devices and their authorized users that the game creates for the purpose of exchanging chat or data communication. This typically aligns with a game's multiplayer session or chat "lobby" concept. You can
 only send messages to players inside your own network.
 
 The following code snippet shows how we can create a Party Network.
@@ -468,3 +468,10 @@ A complete description of all the state changes is beyond the scope of this docu
 ## Conclusion
 
 In this quickstart, we walked through the key pieces of PlayFab Party and saw examples of how to interact with them. We encourage you to take a look at the complete Reference and Conceptual documentation for a deeper understanding of the systems. 
+
+## Next steps
+
+For additional platform-specific guidance for application, see:
+- Xbox and Xbox Live
+    - [Xbox Requirements](xbox-requirements.md)
+    - [Using MPSD](using-mpsd.md)

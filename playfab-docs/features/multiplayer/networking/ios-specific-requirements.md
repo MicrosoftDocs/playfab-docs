@@ -1,7 +1,7 @@
 ---
 title: iOS getting started
 author: debhaldarMS
-description: Supplement to PlayFab Party quickstart for iOS
+description: iOS supplement for PlayFab Party quickstart
 ms.author: debh
 ms.date: 08/05/2019
 ms.topic: article
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # iOS getting started
 
-This document lists the basic prerequisites and requirements necessary to integrate PlyFab Party into your iOS Applications. Once you've set up your system according to this document, please have a look at the [Bumblelion platforms quickstart](quickstart-non-windows.md) for getting set up with the building blocks of PlayFab Party.
+This document lists the basic prerequisites and requirements necessary to integrate PlayFab Party into your iOS applications. Once you've set up your system according to this document, please have a look at the [Quickstart for PlayFab Party](quickstart.md) for getting set up with the building blocks of PlayFab Party.
 
 ## Prerequisites
 Before you start this tutorial, please ensure that the following prerequisites have been met:
@@ -226,4 +226,4 @@ NetworkManager::CreateAndConnectToNetwork(
 In a similar way, each method in the SimpleClient objective-C interface is mapped to Party API via the `SimpleClientImpl` and `NetworkManager`.
 
 ## Next steps
-In this article we saw how to get started integrating the Party library into your iOS application. Please refer to [Quickstart](quickstart-non-windows.md) for getting set up with the rest of the building blocks of PlayFab Party.
+In this article we saw how to get started integrating the Party library into your iOS application. Please refer to [Quickstart for PlayFab Party](quickstart.md) for getting set up with the rest of the building blocks of PlayFab Party.

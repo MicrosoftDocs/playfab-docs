@@ -1,8 +1,8 @@
 ---
 title: Insights Pricing
-author: john-smith-microsoft
+author: mckmoffatt
 description: Overview for PlayFab Insights Pricing
-ms.author: johsmi
+ms.author: mcelliot
 ms.date: 02/28/2020
 ms.topic: article
 ms.prod: playfab
@@ -11,10 +11,10 @@ ms.localizationpriority: medium
 ---
 
 # Insights Pricing
-All Insights features are billed in a virtual currency called "Insights Credits". For more information about pricing details for Insights Credits, see [PlayFab Pricing](http://playfab.com/pricing). 
+All Insights features are billed in a virtual currency called "Insights Credits". For more information about the cost of Insights Credits, see [PlayFab Pricing](http://playfab.com/pricing). 
 
 ## Insights Performance
-Each performance level for insights is billed to the minute (Credits Per Hour / 60). Pricing for each performance level is located at the bottom of the table on the Insights Management page:
+Each performance level for insights is billed to the minute (Insights Credits Per Hour / 60). The cost in credits for each performance level is located at the bottom of the table on the Insights Management page:
 ![Insights Slider](media/performance-level2.png)
 
 
