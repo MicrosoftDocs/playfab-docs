@@ -14,6 +14,21 @@ ms.localizationpriority: medium
 > [!Note]
 > For release notes about service releases and product updates, see the [release notes](https://github.com/PlayFab/PlayFab/releases) section on [PlayFab's public GitHub repository](https://github.com/PlayFab/PlayFab)
 
+## 200518
+
+Date: 2020-05-18
+
+### [UnitySDK](https://github.com/PlayFab/UnitySDK) specific changes:
+
+* PlayFab SDK no longer sets Application.runInBackground = true
+    * Game Developers will be responsible for verifying API calls during app focus change, or before shutdown are successful
+
+### [XPlat C++ SDK](https://github.com/PlayFab/XPlatCppSdk) specific changes
+
+ * Added some extra error handling in the CURL HTTP implementation
+ * Event pipeline now supports using a background thread
+ * When TitleId is not set, API methods now throw immediate synchronous exceptions, rather than reporting the issue in async or threaded callbacks.
+
 ## 200422
 
 Date: 2020-04-22
