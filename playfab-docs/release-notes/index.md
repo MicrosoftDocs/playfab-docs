@@ -29,7 +29,7 @@ Supports the [May 13 PlayFab service release](https://github.com/PlayFab/PlayFab
 
  * In the CURL HTTP implementation, more CURL error states are monitored and processed
  * The Event Pipeline feature now uses and supports the background thread feature
- * When TitleId is not set, API methods now throw real-time exceptions synchronously, rather than reporting the issue in an synchronous or threaded callbacks
+ * When TitleId is not set, API methods now throw real-time exceptions synchronously, rather than reporting the issue in synchronous or threaded callbacks
 
 ## 200422
 
