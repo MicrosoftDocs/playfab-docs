@@ -23,7 +23,7 @@ Supports the [May 13 PlayFab service release](https://github.com/PlayFab/PlayFab
 ### [UnitySDK](https://github.com/PlayFab/UnitySDK) specific changes:
 
 * PlayFab SDK no longer sets Application.runInBackground = true
-    * Game Developers will be responsible for verifying API calls during app focus change, or before shutdown are successful
+    * Game Developers will be responsible for verifying API calls during app focus change or before shutdown, are successful
 
 ### [XPlat C++ SDK](https://github.com/PlayFab/XPlatCppSdk) specific changes
 
