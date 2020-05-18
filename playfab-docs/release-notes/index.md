@@ -27,8 +27,8 @@ Supports the [May 13 PlayFab service release](https://github.com/PlayFab/PlayFab
 
 ### [XPlat C++ SDK](https://github.com/PlayFab/XPlatCppSdk) specific changes
 
- * Added some extra error handling in the CURL HTTP implementation
- * Event pipeline now supports using a background thread
+ * In the CURL HTTP implementation, more CURL error states are monitored and processed
+ * The Event Pipeline feature now uses and supports the background thread feature
  * When TitleId is not set, API methods now throw immediate synchronous exceptions, rather than reporting the issue in async or threaded callbacks.
 
 ## 200422
