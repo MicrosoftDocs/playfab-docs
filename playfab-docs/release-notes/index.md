@@ -18,6 +18,8 @@ ms.localizationpriority: medium
 
 Date: 2020-05-18
 
+Supports the [May 13 PlayFab service release](https://github.com/PlayFab/PlayFab/releases/tag/2.2.4)
+
 ### [UnitySDK](https://github.com/PlayFab/UnitySDK) specific changes:
 
 * PlayFab SDK no longer sets Application.runInBackground = true
