@@ -21,7 +21,7 @@ To set up an active PlayFab payment account, a Studio admistrator must log in to
 On the **Studio billing** page enter your payment information.
 
 To locate the cost of CDN, navigate to the **Title Overview** page, select **Content** from the left navigation menu, and then select **File Management** from the list of tabs. 
-The cost is located at the top of the **File Management** page. CDN costs are calculated based on the number of uploaded gigabytes per title during the billing period.
+The cost is located at the top of the **File Management** page. CDN costs are calculated based on the number of downloaded gigabytes per title during the billing period.
 
 > [!NOTE]
 > Please use the **Content**->**File Management** tab for more information on this subject, or contact our [developer forum](https://community.playfab.com/) with any questions that you may have.
