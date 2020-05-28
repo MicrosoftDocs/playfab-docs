@@ -16,7 +16,7 @@ The Content Delivery Network (CDN) is an infrastructure used to deliver assets -
 
 CDN costs are independent of your pricing tier (Essentials, Professional, etc.), and require that you have an active PlayFab payment account:
 
-To set up an active PlayFab payment account, a Studio admistrator must log in to Game Manager and navigate to the **Title Overview** page, select the **profile icon** in the top right corner, and then select **Studio billing**.
+To set up an active PlayFab payment account, a Studio administrator must log in to Game Manager and navigate to the **Title Overview** page, select the **profile icon** in the top right corner, and then select **Studio billing**.
 
 On the **Studio billing** page enter your payment information.
 
