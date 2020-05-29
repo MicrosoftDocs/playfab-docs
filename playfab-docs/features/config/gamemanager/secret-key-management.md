@@ -16,6 +16,9 @@ PlayFab developer secret keys allow your Title to make PlayFab Admin and Server 
 
 Using the **Secret Keys** page in **Game Manager**, you can create, delete, disable, and set your keys to expire. This enables you to rotate the secret keys for your titles (which was difficult to do in the past.) It also allows you to grant temporary access to your titles.
 
+> [!Note]
+> Never include your developer Secret Key in a client build that you send to your customers. Doing so exposes your title to abuse.
+
 To manage the secret keys for your Title:
 
 1. Sign in to **Game Manager**.
