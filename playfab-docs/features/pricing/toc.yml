@@ -13,4 +13,6 @@
   - name: Updating Account Pricing
     href: transition.md
   - name: Account Upgrades and Title Launches
-    href: upgrades.md 
+    href: upgrades.md
+  - name: Consumption Best Practices
+    href: consumption-best-practices.md
