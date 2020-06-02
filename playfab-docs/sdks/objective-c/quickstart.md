@@ -2,7 +2,7 @@
 title: Objective-C quickstart
 author: v-thopra
 description: This guide will help you make your first PlayFab API call using Objective-C.
-ms.author: v-thopra
+ms.author: jeffshi
 ms.date: 06/11/2018
 ms.topic: article
 ms.prod: playfab
@@ -44,7 +44,7 @@ The following code example shows you how to make a PlayFab API request, and rece
 //EXAMPLE: Login with custom id request:
 
 //Build the Request object:
-  LoginWithCustomIDRequest* login_request = [LoginWithCustomIDRequest new];
+  ClientLoginWithCustomIDRequest* login_request = [ClientLoginWithCustomIDRequest new];
   login_request.CustomId = [[[UIDevice currentDevice] identifierForVendor] UUIDString]; //use the identifier for vendor as our custom ID.
   login_request.CreateAccount = true; //creates a new account if no existing one
 
