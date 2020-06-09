@@ -329,7 +329,7 @@ handlers.RoomCreated = function (args) {
 > [!NOTE]
 > You may acquire additional data about the event using the "args" argument. The example of args payload is given below.
 
-```javascript
+```json
 {
   "ActorNr": 1,
   "AppVersion": "1.2_1.85",
@@ -375,7 +375,7 @@ This callback is not invoked for the very first user entering the room. Use `Roo
 
 The example of args payload is shown below.
 
-```javascript
+```json
 {
   "ActorNr": 2,
   "AppVersion": "1.2_1.85",
@@ -403,7 +403,7 @@ handlers.RoomLeft = function (args) {
 
 You may acquire additional data about the event using "args" argument. The example of args payload is shown below.
 
-```javascript
+```json
 {
   "ActorNr": 2,
   "AppVersion": "1.2_1.85",
@@ -434,7 +434,7 @@ handlers.RoomClosed = function (args) {
 
 You may acquire additional data about the event using "args" argument. The example of args payload is shown below.
 
-```javascript
+```json
   "ActorCount": 0,
   "ActorNr": 1,
   "AppVersion": "1.2_1.85",
@@ -468,7 +468,7 @@ handlers.RoomPropertyUpdated = function (args) {
 
 You may acquire additional data about the event using "args" argument. The example of args payload is shown below.
 
-```javascript
+```json
 {
   "ActorNr": 1,
   "AppVersion": "1.2_1.85",
@@ -569,7 +569,7 @@ handlers.RoomEventRaised= function (args) {
 
 You may acquire additional data about the event using "args" argument. The example of args payload is shown below.
 
-```javascript
+```json
 {
   "ActorNr": 1,
   "AppVersion": "1.2_1.85",
