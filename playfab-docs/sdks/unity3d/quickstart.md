@@ -30,7 +30,7 @@ This quickstart helps you make your first PlayFab API call in the Unity3d engine
 
 ## Download and install PlayFab SDK
 
-Use the PlayFab Editor Extensions package to install the SDK. The PlayFab Editor Extensions are a stand-alone Unity plug-in that streamlines the installation of the SDK and configuring the PlayFab settings for your Title. For information about installing the SDK without using the PlayFab Editor Extensions, see [Installing the PlayFab SDK for Unity](installing-unity3d-sdk.md#download-and-install-the-sdk-only).
+Use the PlayFab Editor Extensions package to install the SDK. The PlayFab Editor Extensions are a stand-alone Unity plug-in that streamlines installing the SDK and configuring the PlayFab settings for your Title. For information about installing the SDK without using the PlayFab Editor Extensions, see [Installing the PlayFab SDK for Unity](installing-unity3d-sdk.md#download-and-install-the-sdk-only).
 
 1. Download the [PlayFab Unity Editor Extensions Asset Package](https://github.com/PlayFab/UnityEditorExtensions/raw/master/Packages/PlayFabEditorExtensions.unitypackage).
 2. Open your Unity Project.
