@@ -98,7 +98,7 @@ But the primary things you’ll need for the next step are the `OrderId` (which 
 > [!NOTE]
 > Only Payment Providers you have enabled for your title will appear in the **`PaymentOptions`**.
 
-```JSON
+```json
 {
   "code": 200,
   "status": "OK",
