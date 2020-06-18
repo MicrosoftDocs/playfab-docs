@@ -44,7 +44,7 @@ Content & Configuration files are used to remotely manage configuration for your
 CloudScript enables you to use client code to request execution of any custom server-side functionality you can implement. It enables you to build server-side logic and functionality that scales to meet your demand, without worrying about servers or infrastructure. Both total number of CloudScript executions, and corresponding execution time, are billed as part of this metered service.
 * **Execution Time** - CloudScript execution time is metered based on the per-second resource consumption across all CloudScript executions, measured in GB-s (average memory size in GBs x total execution time in milliseconds).
 > [!NOTE]
-> The minimum billable memory size and execution time per execution is 128MB and 1ms, respectively
+> The minimum billable memory size and execution time per execution is 128MB and 100ms, respectively
 * **Total Executions** - CloudScript executions include `ExecuteFunction` API calls, actions & rules, and scheduled tasks. Total executions are metered based on the total number of these CloudScript executions that are processed by PlayFab. For more information about these executions, see [Server-Side Cloud Script - Execution Function](xref:titleid.playfabapi.com.cloudscript.server-sidecloudscript.executefunction), [Actions & Rules](../../automation/actions-rules/index.md), and [Scheduled Tasks](../../automation/scheduled-tasks/index.md).
 
 
