@@ -6,6 +6,10 @@
   href: available-built-in-entity-types.md
 - name: Migration information
   href: migration-information.md
+- name: Entity files
+  href: entity-files.md
+- name: Use entity objects to store player data  
+  href: entity-objects.md
 - name: Tutorials
   href: tutorials.md
   items:

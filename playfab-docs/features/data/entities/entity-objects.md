@@ -1,5 +1,5 @@
 ---
-title: Entity objects
+title: Use entity objects to store player data
 author: v-thopra
 description: Describes how to set and read an entity object.
 ms.author: v-thopra
@@ -10,7 +10,7 @@ keywords: playfab, data, entities, accounts
 ms.localizationpriority: medium
 ---
 
-# Entity objects
+# Use entity objects to store player data
 
 Entity objects allow you to read and write small JSON-serializable objects attached to an entity. All entity types support the same `GetObjects` and `SetObjects` methods.
 
