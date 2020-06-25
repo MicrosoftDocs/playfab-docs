@@ -12,19 +12,19 @@ ms.localizationpriority: medium
 
 # Quickstart: Game Manager
 
-This quickstart guides you through creating your PlayFab account, creating your Studio, and creating your first Title.
+Get started with PlayFab by using Game Manager to create your PlayFab account, create your Studio, and create your first Title.
 
 ## Create a PlayFab account
 
 On the [PlayFab sign up](https://developer.playfab.com/en-us/sign-up) screen, you can create a PlayFab specific account or use your Microsoft account to sign in.
 
-When you have signed in, you are asked to tell us about yourself and to enter the name of your game studio. If you have not finalized the game studion name, you can change it later.
+When you have signed in, PlayFab prompts you enter your contact information and studio information. If you have not finalized the game studio name, you can change it later.
 
 ![Account creation screen.](media/quickstart/create-account.png)
 
 ## Create your first game
 
-To create a game, you must, at a minimum, enter a name for the game. You have the option of specifying additional details about your Title; such as the Title genre,monetization mode, the target marketplaces, and the player mode. These properties are used by the Benchmark comparisons feature and are used to a finer grained view of the benchmark data. You can choose to set these at a later time.
+To create a game, you must, at a minimum, enter a name for the game. You can also specify additional details about your Title, such as the Title genre, monetization mode, target marketplaces, and player mode. The Benchmark comparisons feature uses these properties to display a finer grained view of benchmark data. You can set these options at a later time.
 
 ![Create your first game.](media/quickstart/create-first-game.png)
 
@@ -32,7 +32,9 @@ To create a game, you must, at a minimum, enter a name for the game. You have th
 
 When you have successfully created your account, studio, and first game, Game Manger opens in the dashboard for your Title.
 
-The next time you log in, Game Manager will open the **My Studios and Titles** page. From there you can select a Title to open its dashboard. For a detailed introduction to the features of Game Manager, see [Game Manger reference](reference.md)
+The next time you log in, Game Manager opens the **My Studios and Titles** page. From there, you can select a Title to open its dashboard. For a detailed introduction to the features of Game Manager, see [Game Manger reference](reference.md).
+
+Many API calls require a TitleId, which is the string ID found beneath the title of your game. In the following dashboard, the title is "My Game" and TitleId is "1DB79."
 
 ![Studios and Titles screen.](media/quickstart/my-studios-titles.png)
 
