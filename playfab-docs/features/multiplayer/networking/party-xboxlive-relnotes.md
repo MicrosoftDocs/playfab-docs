@@ -14,6 +14,14 @@ ms.localizationpriority: medium
 
 The Xbox Live Helper library is available on [Nuget.org](https://www.nuget.org/profiles/PlayFab)!
 
+## 1.2.5
+
+This release of the Party Xbox Live Helper library includes the following changes:
+
+- A small memory leak is fixed.
+- A bug which prevented some heap allocations from flowing through the memory callbacks set in `PartyXblManager::SetMemoryCallbacks()` is fixed.
+- `PartyXblManager::CreateLocalChatUser()` will no longer asynchronously fail if Xbox Live services cannot be queried. In the event of service failures, `PartyXblLocalChatUser::GetAccessibilitySettings()` will return an empty `PartyXblAccessibilitySettings` struct and `PartyXblLocalChatUser::GetCrossNetworkCommunicationPrivacySetting()` will return `PartyXblCrossNetworkCommunicationPrivacySetting::Disallowed`.
+
 ## 1.2.0
 
 This release of the Party Xbox Live Helper library includes support for the updated chat permission options in version 1.3.0 of PlayFab Party. For a full list of Party and Party Xbox Live Helper library version compatibility, see the [Party Xbox Live Helper Library overview](party-xbox-live-guide.md).

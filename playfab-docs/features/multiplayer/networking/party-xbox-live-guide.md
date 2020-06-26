@@ -21,6 +21,7 @@ While we strive to minimize breaking changes in our APIs, some changes made to t
 | **1.0.1**                             | ✔                               |                                  |
 | **1.1.0**                             | ✔                               |                                  |
 | **1.2.0**                             |                                 | ✔                                |
+| **1.2.5**                             |                                 | ✔                                |
 
 ## Keeping Track of Xbox Live Users
 
