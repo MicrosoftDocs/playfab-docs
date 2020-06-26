@@ -16,8 +16,8 @@ These tutorials teach you how to use groups functionality for your games, and ho
 
 To store data for your groups, guilds or clans:
 
-- [Objects](../../data/playerdata/entity-objects.md)
-- [Files](../../data/playerdata/entity-files.md)
+- [Objects](../../data/entities/entity-objects.md)
+- [Files](../../data/entities/entity-files.md)
 
 For turn based games:
 

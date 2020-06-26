@@ -12,7 +12,7 @@ ms.localizationpriority: medium
  
 # Quickstart: Writing a PlayFab CloudScript using Azure Functions
 
-In this quickstart, you will write a CloudScript using Azure Functions with Visual Studio Code, Azure Functions C# and Unity C#. After finishing this guide you will be able to link your new CloudScript to rules, scheduled tasks or even call it from your client code.
+In this quickstart, you write a CloudScript using Azure Functions with Visual Studio Code, Azure Functions C# and Unity C#. After finishing this guide you will be able to link your new CloudScript to rules, scheduled tasks or even call it from your client code.
 
 ## Prerequisites
 
@@ -22,36 +22,43 @@ There are a couple of steps needed to get started with PlayFab C# CloudScript.
   - An [Azure account](https://azure.microsoft.com/free).  Signing up for an Azure Account is free
   - An [Azure Subscription](https://docs.microsoft.com/azure/billing/billing-create-subscription)
   - A Functions App resource configured in the Azure Portal
-    - To minimize latency of your CloudScript using Azure Functions place them in either *US-West* or *US-West 2* Azure regions.   
+    - To minimize latency of your CloudScript using Azure Functions place them in either *US-West* or *US-West 2* Azure regions.
     - **Security Note:** From a security perspective you should make sure to only use a given function secret with PlayFab and not use it for calling the same function from any other source.
     - **Security Note:** For queued functions you should set up a distinct storage account for the queues used for the queue trigger.
 - A [PlayFab account](https://developer.playfab.com/signup)
 
-> [!NOTE] 
-> PlayFab Azure Functions can use the Azure Functions V2 runtime or greater, and .NET Core 2 or greater. Ideally you should use the latest version (currently Azure Functions V3 and .NET Core 3).
+> [!NOTE]
+> PlayFab Azure Functions can use the Azure Functions V2 runtime or greater, and .NET Core 2 or greater. We recommend that you use the latest version (currently Azure Functions V3 and .NET Core 3).
 
 ## Create an Azure Function
 
 1. Create a basic "HelloWorld" example function. You can see how to do this by following the [Create your first function using Visual Studio Code guide](https://docs.microsoft.com/azure/azure-functions/functions-create-first-function-vs-code).  For a code example using PlayFab variables, see the section below [PlayFab Function Context, Variables and using the Server SDKs](#playfabfunctioncontext).
-2. Once your function has been created and deployed, select the **Register Function** button in the top right hand corner of the **Functions (Preview)** page.
+
+    > [!IMPORTANT]
+    > The "Create your first function using Visual Studio Code" guide instructs you to set the Authorization Level of your Azure Function to `Anonymous`. This is done to simplify testing.
+    >
+    > In a production environment, in most cases, you shouldn't use Anonymous authorization since it enables anyone to call your function endpoint. To properly secure your function in the PlayFab environment, we recommend that you use `Function` level authorization.
+    >
+
+2. After you create and deploy your function, select the **Register Function** button in the top right hand corner of the **Functions (Preview)** page.
 
    ![Register CloudScript Function](media/register_cs_function.jpg)
-1. For **Name**, enter a human-friendly name for your function. For **Function URL**, enter the HTTP Trigger URL of the function. The URL can be found in the output of your deployment.
+
+    > [!NOTE]
+    > If your Azure Function uses `Function` level authorization, you must register the URL that passes the Authorization key. For information on retrieving the URL with Authorization keys, see "Run the function in Azure" in [Quickstart: Create a function in Azure using Visual Studio Code](https://docs.microsoft.com/azure/azure-functions/functions-create-first-function-vs-code?pivots=programming-language-csharp#run-the-function-in-azure).
+3. For **Name**, enter a human-friendly name for your function. For **Function URL**, enter the HTTP Trigger URL of the function. The URL can be found in the output of your deployment.
 
    ![Deployment Output](media/azure_func_deployment.jpg)
 
-> [!TIP] 
-> To learn more about deploying Azure functions, see [Deploy Azure Functions from Visual Studio Code](https://code.visualstudio.com/tutorials/functions-extension/deploy-app).
-
+For more information about deploying Azure functions, see [Deploy Azure Functions from Visual Studio Code](https://code.visualstudio.com/tutorials/functions-extension/deploy-app).
 
 ## Using and Calling CloudScript using Azure Functions from your PlayFab Title
 
-> [!NOTE]
->  The example code in this guide are written in Unity C# & Azure Function C# code.
+The example code in this guide is written in Unity C# & Azure Function C# code.
 
 Now that your function is registered, you can call that function from within your client.
 
-```C#
+```c#
 //This snippet assumes that your game client is already logged into PlayFab.
 
 using PlayFab;
@@ -102,7 +109,7 @@ There are a couple of steps that you need to do if you are coding Functions with
 
 A Hello World example is always nice, see the HelloWorld Sample below that you can use as your first Azure Function. To compile and run the sample, you need to include the [CS2AFHelperClasses.cs](https://github.com/PlayFab/PlayFab-Samples/blob/master/Samples/CSharp/AzureFunctions/CS2AFHelperClasses.cs) file which contains the implementation of `PlayFab.Samples` namespace.
 
-```C#
+```c#
 using System.Threading.Tasks;
 using Microsoft.Azure.WebJobs;
 using Microsoft.Azure.WebJobs.Extensions.Http;
@@ -141,20 +148,19 @@ namespace PlayFabCS2AFSample.HelloWorld
 }
 ```
 
-As you can see in the above example, the `CurrentPlayerId` of the caller is available like in our traditional CloudScript implementation.  Parameters you have passed in the `FunctionParameters` field will be available in the *args*. But unlike the Hello World example in [Create your first function using Visual Studio Code guide](https://docs.microsoft.com/azure/azure-functions/functions-create-first-function-vs-code), parameters are passed in the POST body instead of the query string. 
+In the example, the `CurrentPlayerId` of the caller is available as it is in our traditional CloudScript implementation. Parameters that you pass in the `FunctionParameters` field are available in the *args*. But, unlike the Hello World example in [Create your first function using Visual Studio Code guide](https://docs.microsoft.com/azure/azure-functions/functions-create-first-function-vs-code), parameters are passed in the POST body instead of the query string.
 
-> [!NOTE]
-> You will need to call this HelloWorld Azure Function via ExecuteFunction from an SDK.
+To call the HelloWorld Azure Function from a PlayFab SDK use `ExecuteFunction`.
 
 ## Azure Function Rules
 
 Azure Functions can also be called by creating rules and scheduled tasks.  This works in the same way as our standard CloudScript.  To create a rule or scheduled task, go to **Automation** > **Rules**  or **Automation** > **Scheduled Tasks**. 
 
-* Click **New Rule**
-* Enter a name for your rule
-* Select the event type that this rule will trigger on
-* Add an action
-* From the action dropdown select **Execute Azure Function**
+- Click **New Rule**
+- Enter a name for your rule
+- Select the event type that this rule will trigger on
+- Add an action
+- From the action dropdown select **Execute Azure Function**
 
 A list of available Azure Functions that you've registered will be available in the drop-down list.
 

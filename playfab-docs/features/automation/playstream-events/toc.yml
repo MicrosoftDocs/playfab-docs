@@ -1,4 +1,6 @@
 - name: Overview
   href: index.md
+- name: Custom Tags
+  href: custom-tags.md
 - name: PlayStream with entity events
   href: playstream-with-entity-events.md

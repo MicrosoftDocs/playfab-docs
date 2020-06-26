@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 
 ## Overview
 
-The new PlayFab Matchmaking feature provides a great way to build matchmaking into your game and offers a simple, yet powerful system to help your users find each other. This feature is an upgrade to PlayFab’s existing matchmaker and uses the proven capabilities of Xbox Live’s SmartMatch.
+The new PlayFab Matchmaking feature provides a great way to build matchmaking into your game and offers a simple, yet powerful system to help your users find each other. This feature is an upgrade to PlayFab's existing matchmaker and uses the proven capabilities of Xbox Live's SmartMatch.
 
 This marks the first time the firmly established technology of Xbox Live matchmaking has been available outside of the Xbox Live ecosystem, and it will be available to you
 *everywhere* via PlayFab.
@@ -29,12 +29,12 @@ matches that contain players who are most compatible.
 
 ## Terminology
 
-There are a few common terms used throughout the matchmaking system that we’ll need to define. They are:
+There are a few common terms used throughout the matchmaking system that we'll need to define. They are:
 
 + **Ticket** - A ticket is the resource at the core of the matchmaking process. A ticket consists of a player or a list of players that want to play together, along with their attributes (such as in-game levels, favorite maps, or skill).
 + **Queue** - A queue is a collection of tickets to be matched together and a set of rules that controls how tickets are matched.
 + **Rule** - A rule is a constraint on which tickets are eligible to match. The matchmaking algorithm searches for a set of tickets that satisfy all the rules defined by a queue to create a match.
-+ **Attribute** - An attribute is a value associated with a player that can have Rules applied to it. Attributes can be specified in either the ticket or the player’s [Entity Objects](../../data/playerdata/entity-objects.md).
++ **Attribute** - An attribute is a value associated with a player that can have Rules applied to it. Attributes can be specified in either the ticket or the player's [Entity Objects](../../data/entities/entity-objects.md).
 
 + **Match** - A match is the output of the matchmaking process. It is a collection of tickets that satisfy all the rules for the queue the tickets were submitted to.
 
