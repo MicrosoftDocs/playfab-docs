@@ -1,26 +1,46 @@
 ---
-title: Getting player profiles
-author: v-thopra
+title: Tutorial Get a player profile
+author: DanBehrendt
 description: Describes how to use the GetPlayerProfile and PlayerProfileViewConstraints APIs to retrieve player profile data.
-ms.author: v-thopra
+ms.author: dabe
 ms.date: 06/11/2018
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, playfab api, player data, player profiles
 ms.localizationpriority: medium
+#Customer intent: As a < type of user >, I want < what? > so that < why? >
 ---
 
-# Getting player profiles
+# Tutorial: Get a player profile
 
-This tutorial walks you through how to use the [GetPlayerProfile](xref:titleid.playfabapi.com.server.accountmanagement.getplayerprofile) call to get a player’s profile with [PlayerProfileViewConstraints](xref:titleid.playfabapi.com.server.accountmanagement.getplayerprofile#playerprofileviewconstraints) properties that are enabled from your title’s setting. In the following example, we will be getting a player’s profile, their created date, and last login time.
+In this tutorial you learn how to:
+
+> [!div class="checklist"]
+> * Create a user with a display name
+> * Make a player profile call
+> * Get Player Created time and Last Login time
+> * Configure the player profile view constraints for the title
+> * Get the player profile via login operation
 
 ## Requirements
+
+* A [PlayFab developer account](https://developer.playfab.com/en-us/sign-up).
+* An installed copy of the Unity Editor. To install Unity for personal use via Unity Hub, or Unity+ for professional use, see [Download Unity](https://unity3d.com/get-unity/download).
+  > [!NOTE]
+  > The PlayFab Unity3D SDK supports Unity Editor version 5.3 (released December 2015) and higher.
+* A Unity Project * this can be any of the following:
+  * A brand new project. For more information, see [Starting Unity for the first time](https://docs.unity3d.com/Manual/GettingStarted.html).
+  * A guided tutorial project. For more information, see [Getting Started with Unity](https://learn.unity.com/).
+  * An existing project.
+* The PlayFab [Unity3D SDK](../../../sdks/unity3d/index.md).
 
 For this tutorial, basic knowledge of how to create a player for your title is needed, so that you can perform a `GetPlayerProfile` on the player.
 
 It is also worthwhile to read the [Game Manager quickstart](../../config/gamemanager/quickstart.md) if you are unfamiliar with the Game Manager, as it is the place where we configure profile constraints.
 
-## Step 1 - Create a user with a display name
+The C# Samples in this topic are written for the Unity SDK. The Unity SDK uses an event driven model to handle non-synchronous tasks. To run the sample code using the standard C# or Xamarin C# SDKs you must modify the code to use an async Task model. Methods that must be modified have Async append to the method name in the signature. For example, SetObject in the Unity SDK becomes SetObjectAsync in the standard C# SDK. For more information, see [Asynchronous programming with async and await](https://docs.microsoft.com/dotnet/csharp/programming-guide/concepts/async/).
+
+## Create a user with a display name
 
 The first step is to create a player and add a display name to the user. This example will create a new user with the display name `UnicornTossMaster`.
 
@@ -46,16 +66,16 @@ void UpdateDisplayName() {
 
 The console output should show:
 
-```output
+```
 Successfully logged in a player with PlayFabId: SOME_PLAYFAB_ID
 The player's display name is now: UnicornTossMaster
 ```
 
-## Step 2 - Making a player profile call
+## Make a player profile call
 
-Now that there is a player that we can call and get a player profile for, the next step is to make a very basic profile for the player.
+The next step is to make a very basic profile for the player usin
 
-In the following player example is a basic [GetPlayerProfile](xref:titleid.playfabapi.com.server.accountmanagement.getplayerprofile) call.
+The following example uses a basic [GetPlayerProfile](xref:titleid.playfabapi.com.server.accountmanagement.getplayerprofile) call.
 
 ```csharp
 void GetPlayerProfile(string playFabId) {
@@ -70,13 +90,13 @@ void GetPlayerProfile(string playFabId) {
 }
 ```
 
-In the response there will be a [PlayerProfileModel](xref:titleid.playfabapi.com.server.accountmanagement.getplayerprofile#playerprofilemodel) object which will contain the display name `UnicornTossMaster` for the player.
+The response includes a [PlayerProfileModel](xref:titleid.playfabapi.com.server.accountmanagement.getplayerprofile#playerprofilemodel) object that contains the display name `UnicornTossMaster` for the player.
 
-## Step 3 - Attempting to get Player Created time and Last Login time
+## Get Player Created time and Last Login time
 
 In the [PlayerProfileModel](xref:titleid.playfabapi.com.server.accountmanagement.getplayerprofile#playerprofilemodel) object there is a fair amount of data about the player. In the previous step, a `GetPlayerProfile` was issued, and the response that was received only contained display name information.
 
-The next step is to get even *more* profile data for the player. To do so, we will call `GetPlayerProfile` with additional fields in the [PlayerProfileViewConstraints](xref:titleid.playfabapi.com.server.accountmanagement.getplayerprofile#playerprofileviewconstraints) request parameter.
+The next step is to get even *more* profile data for the player. To do so, call `GetPlayerProfile` with additional fields in the [PlayerProfileViewConstraints](xref:titleid.playfabapi.com.server.accountmanagement.getplayerprofile#playerprofileviewconstraints) request parameter.
 
 The following **C#** example modifies the `GetPlayerProfile` method from step 2 and calls `GetPlayerProfile` to request the `Created` and `LastLogin` fields by setting their flags in the [ProfileConstraints](xref:titleid.playfabapi.com.server.accountmanagement.getplayerprofile#playerprofileviewconstraints).
 
@@ -98,34 +118,30 @@ void CreatePlayerAndUpdateDisplayName(string playFabId) {
 }
 ```
 
-This call should result in an error with an `Error Code 1303`. `RequestViewConstraintParamsNotAllowed`, and an error message stating that there are `Invalid view constraints` with a JSON output of constraints that the title currently has set.
+If you run this sample code at this point, it returns an error with an `Error Code 1303`. `RequestViewConstraintParamsNotAllowed`, and an error message stating that there are `Invalid view constraints` with a JSON output of constraints that the title currently has set.
 
-The error message has occurred because we have not yet configured the ability to show `Created` and `LastLogin` in our title’s profile constraint settings.
+The error occurs because you have not yet configured the ability to show `Created` and `LastLogin` in your title's profile constraint settings.
 
-## Step 4 - Configuring player profile view constraints for the title
+## Configure the player profile view constraints for the title
 
-In order to get more data when we call the [GetPlayerProfile](xref:titleid.playfabapi.com.server.accountmanagement.getplayerprofile) API, we will need to configure the constraints on the data to be available. These settings are in the title’s settings in Game Manager.
+To get more data when you call the [GetPlayerProfile](xref:titleid.playfabapi.com.server.accountmanagement.getplayerprofile) API, you need to configure the constraints on the data to be available. These settings are in the title's settings in Game Manager.
 
-To configure constraints for the title:
+By default, the **ALLOW CLIENT ACCESS TO PROFILE PROPERTIES:** had only **Display name** enable which allowed you to retrieve **Display Name** value.
 
-- Go to **Game Manager**.
-- Go to **Settings**.
-- Select the **Client Profile Options** tab.
-- Notice that under **ALLOW CLIENT ACCESS TO PROFILE PROPERTIES:**, only **Display name** is checked. This is what allowed us to get the **Display Name** in step 1.
+To configure additional constraints for the title:
 
-- Now to enable both **Created** and **LastLogin** in the [ProfileConstraints](xref:titleid.playfabapi.com.server.accountmanagement.getplayerprofile#playerprofileviewconstraints), check **Creation date** and **Last login time**, then select the **SAVE CLIENT PROFILE OPTIONS** button.
+* In [Game Manager](https://developer.playfab.com/en-US/login), select your title.
+* Select the gear icon in the upper left-hand corner, then select **Title settings**.
+* Select the **Client Profile Options** tab.
+* To enable both **Created** and **LastLogin** in the [ProfileConstraints](xref:titleid.playfabapi.com.server.accountmanagement.getplayerprofile#playerprofileviewconstraints), check **Creation date** and **Last login time**, then select **SAVE CLIENT PROFILE OPTIONS**.
 
-![PlayFab Settings - Client Profile Options - Allow client access to profile properties](media/tutorials/playfab-allow-client-access-to-profile-properties.png)  
+![PlayFab Settings * Client Profile Options * Allow client access to profile properties](media/tutorials/playfab-allow-client-access-to-profile-properties.png)  
 
-## Step 5 - Getting player created time and last login time
+Now when you call 1`CreatePlayerAndUpdateDisplayName` it returns the [PlayerProfileModel](xref:titleid.playfabapi.com.server.accountmanagement.getplayerprofile#playerprofilemodel) object with data on the user's creation time, last login, and the display name of `UnicornTossMaster`.
 
-Now we can go back to the `GetPlayerProfile` call in step 3.
+## Get the player profile via login operation
 
-Executing the same code again will now return a successful [PlayerProfileModel](xref:titleid.playfabapi.com.server.accountmanagement.getplayerprofile#playerprofilemodel) with data on the user’s creation time, last login, and the display name of `UnicornTossMaster`.
-
-## Step 6 - Getting player profile via login operation
-
-In most cases you will want to get certain player profile data as soon as a player is logged in. The PlayFab API allows you to combine those 2 calls into one.
+In most cases you want to retrieve player profile data as soon as a player logs in. The PlayFab API allows you to combine the log in call and the call to retrieve the player profile into a single call.
 
 The following example shows how to gain profile information through a login request, and uses `LoginWithCustomId` as an example.
 

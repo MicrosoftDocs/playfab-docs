@@ -8,6 +8,8 @@
     href: cloudscript-af/toc.yml
   - name: Actions and rules
     href: actions-rules/toc.yml
+  - name: Playstream Events
+    href: playstream-events/toc.yml
   - name: Scheduled tasks
     href: scheduled-tasks/toc.yml
   - name: Playstream

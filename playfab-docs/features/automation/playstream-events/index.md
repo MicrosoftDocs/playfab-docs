@@ -84,11 +84,18 @@ You can select the arrow to the left of a particular event to see details only f
 
 ![Event History Details](media/playstream-eventHistoryDetails.png)
 
+## Custom Tags 
+
+The [Custom Tags](custom-tags.md) feature allows game developers to further enrich their standard PlayStream events with business specific metadata.
+
+This is a quality of life feature designed to make building on top of PlayFab easier and more extensible. 
+
 ## Getting Started With PlayStream
 
 - [PlayStream with entity events](playstream-with-entity-events.md)
 - [Actions and Rules](../actions-rules/index.md)
 - [Segmentation](../../analytics/segmentation/index.md)
-- [PlayStream Events](../../analytics/metrics/playstream-events.md)
+- [Generating PlayStream Events](../../analytics/metrics/playstream-events.md)
 - [Event History](../../analytics/metrics/event-history.md)
+- [Custom Tags](custom-tags.md)
 - [PlayStream Event Reference](../../../api-references/events/index.md)

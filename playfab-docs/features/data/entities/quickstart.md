@@ -405,11 +405,11 @@ public class EntityFileExample : MonoBehaviour
 
 The Game Manager allows you to manipulate objects and files for players. The player overview shows both the title player and master player account information.
 
-![Game Manager - Entities - Player overview](../playerdata/media/tutorials/game-manager-entities-player-overview.png)  
+![Game Manager - Entities - Player overview](../entities/media/tutorials/game-manager-entities-player-overview.png)  
 
 In addition, files and objects now have their own sections in the **Players** tab.
 
-![Game Manager - Entities - Player Files and Objects](../playerdata/media/tutorials/game-manager-entities-player-files.png) 
+![Game Manager - Entities - Player Files and Objects](../entities/media/tutorials/game-manager-entities-player-files.png) 
 
 ## See also
 
