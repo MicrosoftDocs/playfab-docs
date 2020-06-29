@@ -47,7 +47,7 @@ While you can use an existing using Unity Project, the procedures in this quicks
 
 You can always get and set player data through Game Manager by performing the following steps.
 
-- Open **Game Manager**. If you are unfamiliar with it, see the [Game Manager quickstart](../../config/gamemanager/quickstart.md).
+- Open **Game Manager**. If you are unfamiliar with it, see the [Game Manager quickstart](../../../gamemanager/quickstart.md).
 - Select the **Players** tab.
 - Select the name of the **Player**. This will put you into the **Players Account** tab.
 - Select the **Player Data** tab to see their data.
@@ -120,6 +120,6 @@ In the Unity Editor, select the play button. On success, the results of the of c
 - [How to set read-only player data](how-to-set-read-only-player-data.md)
 - [How to get read-only player data](how-to-get-read-only-player-data.md)
 - [How to modify read-only or internal player data from CloudScript](how-to-modify-read-only-internal-player-data.md)
-- [Title Data quickstart](../../config/titledata/quickstart.md)  
-- [Using Publisher Data](../../config/titledata/using-publisher-data.md)  
+- [Title Data quickstart](../../data/titledata/quickstart.md)  
+- [Using Publisher Data](../../data/titledata/using-publisher-data.md)  
 - [CloudScript quickstart](../../automation/cloudscript/quickstart.md)

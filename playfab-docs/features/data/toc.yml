@@ -1,12 +1,14 @@
 - name: PlayFab Data
-  href: /gaming/playfab/?#pivot=documentation&panel=data
-  expanded: true
-  items:
-  - name: Entities
-    href: entities/toc.yml
-  - name: Player Data
-    href: playerdata/toc.yml
-  - name: Content Delivery Network
-    href: content-delivery-network/toc.yml
-  - name: Webhooks
-    href: webhooks/index.md
+  href: index.yml
+- name: What is PlayFab Data
+  href: overview.md
+- name: Player Data
+  href: playerdata/toc.yml
+- name: Title Data
+  href: titledata/toc.yml
+- name: Entities
+  href: entities/toc.yml
+- name: Content Delivery Network
+  href: content-delivery-network/toc.yml
+- name: Webhooks
+  href: webhooks/index.md

@@ -1,8 +1,8 @@
 ---
 title: PlayFab GDPR - Deleting and Exporting Player Data
-author: v-thopra
+author: Shikha-tarware
 description: How to use PlayFab Admin APIs to export or delete a player’s data so that you can be General Data Protection Regulation (GDPR) compliant.
-ms.author: v-thopra
+ms.author: shtarwar
 ms.date: 06/11/2018
 ms.topic: article
 ms.prod: playfab
@@ -136,7 +136,7 @@ Once the delete is complete, an email will be sent to the notification email add
 
 Using our Webhook feature, you can register to receive these events on an endpoint of your choosing, and process them as needed. The event will contain a JSON blob that has the `JobReceiptId`.
 
-The following example shows how to use the Admin API with the [C# SDK](../../../sdks/c-sharp/index.md). If you would like to use a different SDK, select one from the list of [PlayFab SDKs](../../../index.md).
+The following example shows how to use the Admin API with the [C# SDK](../../../sdks/c-sharp/index.md). If you would like to use a different SDK, select one from the list of [PlayFab SDKs](../../../sdks/index.yml).
 
 ```csharp
 public static async void StartDeleteMasterPlayerExample(Action<PlayFabError> callback)
@@ -224,7 +224,7 @@ This API immediately returns a `JobReceiptId`, which you should store in your re
 
 The completion of the task will also trigger a PlayStream event. Using our Webhook feature, you can register to receive these events on an endpoint of your choosing and process as needed. The event will contain a JSON blob that has information such as the **JobReceiptId** and the download URL for the exported data.
 
-The following example is how to use the Admin API with the [C# SDK](../../../sdks/c-sharp/index.md). If you would like to use a different SDK, select one from the list of [PlayFab SDKs](../../../index.md).
+The following example is how to use the Admin API with the [C# SDK](../../../sdks/c-sharp/index.md). If you would like to use a different SDK, select one from the list of [PlayFab SDKs](../../../sdks/index.yml).
 
 ```csharp
 public static async void ExportMasterPlayerExample(Action<PlayFabError> callback)

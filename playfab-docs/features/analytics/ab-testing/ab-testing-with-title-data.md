@@ -19,7 +19,7 @@ A/B Testing title data is a planned feature. However, It is possible to build yo
 ## Requirements
 
 - [Writing Custom CloudScript](../../automation/cloudscript/writing-custom-cloudscript.md), and [CloudScript quickstart](../../automation/cloudscript/quickstart.md)
-- [Title Data](../../config/titledata/quickstart.md)
+- [Title Data](../../data/titledata/quickstart.md)
 - [A/B Testing quickstart](../../analytics/ab-testing/quickstart.md)
 
 ## Optional Requirements

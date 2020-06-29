@@ -1,0 +1,73 @@
+### YamlMime:Landing
+
+title: Azure PlayFab Automation documentation # < 60 chars
+summary: PlayFab automation features including actions, rules, CloudScript, and scheduled tasks. 
+
+metadata:
+  title: PlayFab Automation documentation
+  description: Guide on automating with CloudScript and more # Required; article description that is displayed in search results. < 160 chars.
+  ms.service: playfab #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.topic: landing-page
+  author: xmcai2016
+  ms.author: carocai
+  ms.date: 04/27/2020 
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+  - title: Understand PlayFab Automation
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is Automation?
+            url: intro.md
+          - text: What is CloudScript?
+            url: cloudscript/index.md
+          - text: What are actions and rules?
+            url: actions-rules/index.md
+          - text: What are scheduled tasks?
+            url: scheduled-tasks/index.md
+          - text: What is a PlayStream event?
+            url: playstream-events/index.md
+          
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+  - title: Get started
+    linkLists:
+      - linkListType: quickstart
+        links:
+          - text: PlayStream events;
+            url: playstream-events/playstream-with-entity-events.md
+          - text: Scheduled tasks
+            url: scheduled-tasks/quickstart.md                                                        
+          - text: CloudScript
+            url: cloudscript/quickstart.md 
+          - text: Actions and rules
+            url: actions-rules/quickstart.md     
+
+  - title: Automate with CloudScript
+    linkLists:
+      - linkListType: tutorial
+        links:
+          - text: Writing custom CloudScript
+            url: cloudscript/writing-custom-cloudscript.md 
+          - text: ES6 features in CloudScript
+            url: cloudscript/es6-features-in-cloudscript.md
+          - text: Handling errors in CloudScript
+            url: cloudscript/handling-errors-in-cloudscript.md
+
+  - title: Master CloudScript
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: What is CloudScript using Azure Functions?
+            url: cloudscript-af/index.md        
+      - linkListType: tutorial
+        links:
+          - text: Using CloudScript context models
+            url: cloudscript-af/cloudscript-af-context.md
+          - text: Bulk Actions for an entire player segment
+            url: actions-rules/bulk-actions-for-an-entire-player-segment.md
+          - text: Using CloudScript actions with PlayStream
+            url: actions-rules/using-cloudscript-actions-with-playstream.md
+
+

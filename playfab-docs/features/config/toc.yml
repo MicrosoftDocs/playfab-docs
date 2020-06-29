@@ -1,8 +1,0 @@
-- name: PlayFab Config
-  href: /gaming/playfab/?#pivot=documentation&panel=config
-  expanded: true
-  items:
-  - name: Game Manager
-    href: gamemanager/toc.yml
-  - name: Title Data
-    href: titledata/toc.yml

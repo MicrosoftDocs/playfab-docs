@@ -1,18 +1,16 @@
 - name: PlayFab Automation
-  href: /gaming/playfab/?#pivot=documentation&panel=automation
-  expanded: true
-  items:
-  - name: CloudScript
-    href: cloudscript/toc.yml
-  - name: CloudScript using Azure Functions
-    href: cloudscript-af/toc.yml
-  - name: Actions and rules
-    href: actions-rules/toc.yml
-  - name: Playstream Events
-    href: playstream-events/toc.yml
-  - name: Scheduled tasks
-    href: scheduled-tasks/toc.yml
-  - name: Playstream
-    href: playstream-events/toc.yml
-  - name: Rewarded Ads
-    href: rewarded-ads/toc.yml
+  href: index.yml
+- name: What is Automation
+  href: intro.md  
+- name: CloudScript
+  href: cloudscript/toc.yml
+- name: CloudScript using Azure Functions
+  href: cloudscript-af/toc.yml
+- name: Actions and rules
+  href: actions-rules/toc.yml
+- name: Scheduled tasks
+  href: scheduled-tasks/toc.yml
+- name: Playstream
+  href: playstream-events/toc.yml
+- name: Rewarded Ads
+  href: rewarded-ads/toc.yml

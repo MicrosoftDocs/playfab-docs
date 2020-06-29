@@ -1,0 +1,93 @@
+### YamlMime:Landing
+
+title: PlayFab SDKs, tools, and extensions # < 60 chars
+summary: Tools for PlayFab
+
+metadata:
+  title: PlayFab SDKs, tools, and extensions # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: description # Required; article description that is displayed in search results. < 160 chars.
+  ms.service: service #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.subservice: playfab # Optional; Remove if no subservice is used.
+  ms.topic: landing-page # Required
+  author: Jeffrey-Shi #Required; your GitHub user alias, with correct capitalization.
+  ms.author: jeffshi #Required; microsoft alias of author; optional team alias.
+  ms.date: 05/21/2020 #Required; mm/dd/yyyy format.
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: About PlayFab SDKs
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What are the PlayFab SDKs?
+            url: sdk-overview.md
+
+  # Card (optional)
+  - title: Languages
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Android Studio Project (Java)
+            url: androidstudio/index.md
+          - text: C#
+            url: c-sharp/index.md
+          - text: Java
+            url: java/index.md
+          - text: Objective-C
+            url: objective-C/index.md
+          - text: PlayFab CPP
+            url: playfab-cpp/index.md
+          - text: Multiplayer Servers CPP
+            url: languages/index.yml
+          - text: Party CPP
+            url: languages/index.yml          
+
+  # Card
+  - title: Frameworks
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Cocos2D-x
+            url: cocos2d-x/index.md
+          - text: Phaser.io (Javascript)
+            url: phaser/index.md
+
+  # Card
+  - title: Game Engines
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Lua
+            url: lua/index.md
+          - text: Unity3D
+            url: unity3d/index.md
+          - text: Unreal Engine
+            url: unreal/index.md          
+
+  # Card
+  - title: Scripting
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: ActionScript
+            url: actionscript/index.md
+          - text: JavaScript
+            url: javascript/index.md
+          - text: NodeJS
+            url: nodejs/index.md
+          - text: Python
+            url: python/index.md
+
+  # Card
+  - title: Tools and utilities
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: SDK Generator
+            url: sdkgenerator/index.md
+          - text: Postman
+            url: postman/index.md
