@@ -1,0 +1,28 @@
+- name: Android Studio Project (Java)
+  href: ../androidstudio/index.md
+- name:  C#
+  href: ../c-sharp/index.md  
+  items:
+  - name: Quickstart C#
+    href: ../c-sharp/quickstart.md
+  - name: Quckstart C# with Xamarin
+    href: ../c-sharp/xamarin-quickstart.md
+- name:  Java
+  href: ../java/index.md
+  items:
+  - name: Quickstart
+    href: ../java/quickstart.md
+- name:  Objective-C
+  href: ../objective-c/index.md
+  items:
+  - name: Quickstart
+    href: ../objective-c/quickstart.md
+- name: PlayFab CPP
+  href: ../playfab-cpp/index.md
+  items:
+  - name: Quickstart - Linux
+    href: ../playfab-cpp/quickstart-linux.md
+  - name: Quickstart - Windows
+    href: ../playfab-cpp/quickstart-windows.md
+  - name: Quickstart - Xbox One
+    href: ../playfab-cpp/quickstart-xbox.md

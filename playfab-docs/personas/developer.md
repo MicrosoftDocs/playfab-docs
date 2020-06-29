@@ -21,13 +21,13 @@ In this topic we show you how to retrieve the **TitleId** for your Title. You ca
 > [!NOTE]
 > The quickstart guides use a test **TitleId**. When you follow a guide, use a **TitleId** for a Title that you have created in your PlayFab Developer account.
 
-Before you can make your first API call to log a player in, you must create a [PlayFab Developer account](../features/config/gamemanager/pfab-account.md).
+Before you can make your first API call to log a player in, you must create a [PlayFab Developer account](../gamemanager/pfab-account.md).
 
 ## Retrieving your TitleId
 
 When you create a Title in Game Manager, PlayFab generates a **TitleId** that identifies your Title. When following the guides, use a **TitleId** for a Title that you have created.
 
-For information about using Game Manager and creating a Title, see [Game Manager quickstart](../features/config/gamemanager/quickstart.md).
+For information about using Game Manager and creating a Title, see [Game Manager quickstart](../gamemanager/quickstart.md).
 
 To retrieve the **TitleId** for your Title, log in to the [Game Manager](https://developer.playfab.com/en-us/login).
 
@@ -52,7 +52,7 @@ Here are some resources to help you with the initial authentication of your play
 
 To allow you to integrate PlayFab into your Title, we provide SDKs, libraries, and extensions for the most popular game engines, frameworks, and platforms.
 
-Visit [PlayFab SDKs, tools, and extensions](../index?#pivot=documentation&panel=sdks) and choose the appropriate quickstart guide for your preferred environment. The quickstarts walk you through installing your environment, creating a new test project, and making your first API call.
+Visit [PlayFab SDKs, tools, and extensions](../sdks/index.yml) and choose the appropriate quickstart guide for your preferred environment. The quickstarts walk you through installing your environment, creating a new test project, and making your first API call.
 
 ## Using PlayFab services to instrument your Title
 
@@ -64,7 +64,7 @@ Actions might result in a CloudScript being run. Our CloudScript is JavaScript c
 
 For more information, check out these resources to get you started with Cloud Scripting and Automation on PlayFab:
 
-- [Automation](../index?#pivot=documentation&panel=automation) – A hub for information on CloudScript, Scheduled Tasks, PlayStream and Action & Rules.
+- [Automation](../features/automation/index.yml) – A hub for information on CloudScript, Scheduled Tasks, PlayStream and Action & Rules.
 - [CloudScript quickstart](../features/automation/cloudscript/quickstart.md) – Get up and running quickly with your first CloudScript call.
 
 > [!TIP]
@@ -78,19 +78,18 @@ This generally starts with the configuration of your Title. You will want to sto
 
 Some of the different ways that you can map PlayFab onto a Title are shown below; use these to find the combination of tools that is just right for your Title:
 
-- [Title Data](../features/config/titledata/quickstart.md) – Map variables containing data on PlayFab to data structures in your game clients.
+- [Title Data](../features/data/titledata/quickstart.md) – Map variables containing data on PlayFab to data structures in your game clients.
 - [Entity Objects](../features/data/entities/quickstart.md) (aka: Player Data) – Store and retrieve data on a per player basis.
 - [Catalogs](../features/commerce/items/catalogs.md) (Items) - Very useful for storing configuration data about your Items and potentially being able to sell them as virtual goods.
 - [Groups](../features/social/groups/using-shared-group-data.md) – Groups are generally used for things like guilds or clans. Groups are arbitrary and have members, roles and other guild-like features.
 
 Finally, check out each of our feature areas in the links provided below to find the right feature set for your Title:
 
-- [Authentication](../index?#pivot=documentation&panel=authentication)
-- [Data](../index?#pivot=documentation&panel=data)
-- [Config](../index?#pivot=documentation&panel=config)
-- [Automation](../index?#pivot=documentation&panel=automation)
-- [Social](../index?#pivot=documentation&panel=social)
-- [Commerce](../index?#pivot=documentation&panel=commerce)
-- [Multiplayer](../index?#pivot=documentation&panel=multiplayer)
-- [Analytics](../index?#pivot=documentation&panel=analytics)
-- [Engagement](../index?#pivot=documentation&panel=engagement)
+- [Authentication](../features/authentication/index.yml)
+- [Data](../features/data/index.yml)
+- [Automation](../features/automation/index.yml)
+- [Social](../features/social/index.yml)
+- [Commerce](../features/commerce/index.yml)
+- [Multiplayer](../features/multiplayer/index.yml)
+- [Analytics](../features/analytics/index.yml)
+- [Engagement](../features/engagement/index.yml)

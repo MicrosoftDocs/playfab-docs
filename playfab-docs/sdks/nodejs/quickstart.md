@@ -18,7 +18,7 @@ Get started with the PlayFab client library for NodeJS to make your first PlayFa
 
 ## Prerequisites
 
-- A [PlayFab developer account](https://developer.playfab.com/en-us/sign-up). For information about creating a Title and finding TitleId, see [Game Manager QuickStart](../../features/config/gamemanager/quickstart.md).
+- A [PlayFab developer account](https://developer.playfab.com/en-us/sign-up). For information about creating a Title and finding TitleId, see [Game Manager QuickStart](../../gamemanager/quickstart.md).
 - [Node.js](https://nodejs.org/en/download/)
 - Node must be in your PATH environment variable. If you used the installer, it's probably set for you to the default location: C:/Program Files (x86)/nodejs/
 
@@ -129,7 +129,7 @@ For the Node SDK, the functions in `PlayFabClientSDK` are named after the HTTP r
     - Most PlayFab API methods require input parameters, and those input parameters are packed into a request object.
     - Every API method requires a unique request object, with a mix of optional and mandatory parameters.
       - For `LoginWithCustomIDRequest`, there is a mandatory parameter of `CustomId`, which uniquely identifies a player and `CreateAccount`, which allows the creation of a new account with this call. `TitleId` is another mandatory parameter in JavaScript, and it must match `PlayFab.settings.titleId`.
-      - For information about where to find `TitleId`, see [Game Manager QuickStart](../../features/config/gamemanager/quickstart.md).
+      - For information about where to find `TitleId`, see [Game Manager QuickStart](../../gamemanager/quickstart.md).
 - In this case, `TitleId`,  `customId`, and `CreateAccount` are from the Request Body of `LoginWithCustomID`.
   - `PlayFabClientSDK.LoginWithCustomID(loginRequest, LoginCallback);`
     - This begins the async request to `LoginWithCustomID`, which will call LoginCallback when the API call is complete.

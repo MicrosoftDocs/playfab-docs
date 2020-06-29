@@ -25,7 +25,7 @@ This tutorial walks you through how to use the email template feature of PlayFab
 > You can use Gmail for testing, but Gmail limits you to 2,000 emails per day.
 
 - Basic knowledge of how to create a player will be necessary, since there will need to be players with a usernames and passwords before calling account recovery logic.
-- Read the [Game Manager quickstart](../../config/gamemanager/quickstart.md) if you are unfamiliar with the Game Manager, as it is the place where email templates are created.
+- Read the [Game Manager quickstart](../../../gamemanager/quickstart.md) if you are unfamiliar with the Game Manager, as it is the place where email templates are created.
 - Knowledge of how to work with player profiles will be required to confirm that emails will be necessary for checking that a contact email has been added to a player's profile. Please read up on how to get a player profile in the [Getting Player Profiles](../../data/playerdata/getting-player-profiles.md) tutorial, and make sure that under the **Client Profile Options** on your **Title** you allow **Contact email addresses**.
 
 ## Step 1 - Create an email template
@@ -138,9 +138,9 @@ void FailureCallback(PlayFabError error)
 }
 ```
 
-## Step 3 - Confirm that the contact email was added to the player’s profile
+## Step 3 - Confirm that the contact email was added to the player's profile
 
-Next, confirm that the contact email was added to the player’s profile. Log into the **Game Manager**, and visit the **Player's Profile** page. You should see a **Contact email** listed for that player.
+Next, confirm that the contact email was added to the player's profile. Log into the **Game Manager**, and visit the **Player's Profile** page. You should see a **Contact email** listed for that player.
 
 ![Game Manager - Player Profile - Contact email](media/tutorials/game-manager-player-profile-contact-email-verification-pending.png)  
 
@@ -296,3 +296,4 @@ void FailureCallback(PlayFabError error)
 That's it for this tutorial! You've seen how to set up your SMTP server, create an email template, send an account recovery email, and reset a player's password.
 
 If you have any questions or feedback on this tutorial, please let us know in our [community forums](https://community.playfab.com/).
+ 

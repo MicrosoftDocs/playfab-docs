@@ -27,7 +27,7 @@ Title News is a mechanism for communicating with your players for patch notes or
 
 This quickstart builds on information presented in other topics. Please refer to the topic links that follow if you have questions.
 
-- You should be familiar with the PlayFab [Game Manager](../../config/gamemanager/quickstart.md).
+- You should be familiar with the PlayFab [Game Manager](../../../gamemanager/quickstart.md).
 
 > [!NOTE]
 > You must already have a **title default language** set to continue with localized title news.
@@ -53,7 +53,7 @@ Navigate to your title -> **Content** -> **Title News** -> **New Title News** as
 
 ![Title News](../media/tutorials/game-manager-content-title-news-new-title-news.png)
 
-For the purposes of this tutorial, we will assume your title’s default language is English. This means that you must add strings for your default language before you can save the title news.
+For the purposes of this tutorial, we will assume your title's default language is English. This means that you must add strings for your default language before you can save the title news.
 
 Adding more languages is as simple as clicking on **ADD LANGUAGE**, choosing the language you want to add, and then typing in the localized strings. Select the **Save Title News** button, and your entry is created.
 
@@ -138,3 +138,4 @@ Find the entry you wish to modify, then:
 - Go to **Title News**.
 - Put a check in the checkbox for the **Existing Entry**.
 - Select the **Title News** entries you wish to delete and choose **X Delete Title News**.
+ 

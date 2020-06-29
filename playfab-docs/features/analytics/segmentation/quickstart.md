@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Player segmentation quickstart
 
-Player segmentation is defined in [Game Manager](../../config/gamemanager/quickstart.md). Segments allow you to define useful or interesting groups of players, and perform exclusive actions on that group.
+Player segmentation is defined in [Game Manager](../../../gamemanager/quickstart.md). Segments allow you to define useful or interesting groups of players, and perform exclusive actions on that group.
 
 ## Requirements
 

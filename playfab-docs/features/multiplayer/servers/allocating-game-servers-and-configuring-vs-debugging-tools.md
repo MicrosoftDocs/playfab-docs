@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 With PlayFab multiplayer servers 2.0, you can allocate instances of your multiplayer server application using the [RequestMultiplayerServer](xref:titleid.playfabapi.com.multiplayer.multiplayerserver.requestmultiplayerserver) API.
 
-Typically this API is called from your own services (perhaps a matchmaking service or lobby service), using a PlayFab Developer Secret Key configured for the specific title. For more information about secret keys, see [Secret key management](../../config/gamemanager/secret-key-management.md).
+Typically this API is called from your own services (perhaps a matchmaking service or lobby service), using a PlayFab Developer Secret Key configured for the specific title. For more information about secret keys, see [Secret key management](../../../gamemanager/secret-key-management.md).
 
 A typical pattern for bringing players together and allocating servers:
 

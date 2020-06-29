@@ -1,0 +1,90 @@
+### YamlMime:Landing
+
+title: Azure PlayFab Multiplayer documentation
+summary: summary # < 160 chars
+
+metadata:
+  title: PlayFab Multiplayer documentation
+  description: Guide on Multiplayer servers, matchmaking and Party # Required; article description that is displayed in search results. < 160 chars.
+  ms.service: playfab multiplayer #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.topic: landing-page
+  author: xmcai2016
+  ms.author: carocai
+  ms.date: 04/27/2020 
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: Understand Multiplayer
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is Multiplayer?
+            url: mpintro.md
+      - linkListType: concept
+        links:
+          - text: What are Multiplayer servers?
+            url: servers/index.md
+          - text: What is Matchmaking?
+            url: matchmaking/index.md
+          - text: What is Party?
+            url: networking/index.md
+
+  # Card (optional)
+  - title: Get started with Multiplayer
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Understand PlayFab game server
+            url: servers/basics-of-a-playfab-game-server.md
+          - text: Use Photon with PlayFab
+            url: photon/index.md     
+      - linkListType: quickstart
+        links:
+          - text: Getting started with Matchmaking 
+            url: matchmaking/quickstart.md          
+          - text: Getting started with the Party SDK
+            url: networking/quickstart.md
+      - linkListType: tutorial
+        links:
+          - text: Integrating game servers with the PlayFab Game Server SDK (GSDK)
+            url: servers/integrating-game-servers-with-gsdk.md 
+          - text: Enabling PlayFab Party
+            url: networking/enable-party.md
+          - text: Matchmaking scenario and configuration examples
+            url: matchmaking/config-examples.md
+          - text: Locally debugging game servers and integration with PlayFab
+            url: servers/locally-debugging-game-servers-and-integration-with-playfab.md 
+          - text: Deploying PlayFab multiplayer server builds
+            url: servers/deploying-playfab-multiplayer-server-builds.md
+
+  # Card (optional)
+  - title: Manage customer relationship
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Using Quality-of-Service (QoS) beacons to measure player latency to Azure
+            url: servers/using-qos-beacons-to-measure-player-latency-to-azure.md
+          - text: Azure Enterprise Agreement (EA) billing for PlayFab services
+            url: servers/ea-billing.md
+          - text: Billing for PlayFab Multiplayer Servers 2.0
+            url: servers/billing-for-thunderhead.md
+          - text: Multiplayer servers - detailed price sheet
+            url: servers/multiplayer-servers-detailed-price-sheet.md
+          - text: PlayFab incident response procedures
+            url: servers/comm-sla.md
+          - text: Tracking title consumption of multiplayer servers
+            url: servers/tracking-consumption.md
+
+  # Card (optional)
+  - title: Refer to APIs 
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Party Members
+            url: networking/reference/party_members.md
+          - text: Server API/PowerShell
+            url: servers/quickstart-for-multiplayer-servers-api-powershell.md   

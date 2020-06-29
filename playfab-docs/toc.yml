@@ -1,31 +1,43 @@
 - name: PlayFab
-  href: index.md
-- name: Quickstarts
-  href: index.md?#pivot=documentation&panel=quickstarts
-- name: Features
+  href: index.yml
+- name: What is PlayFab?
+  href: what-is-playfab.md  
+- name: Game Manger
+  href: gamemanager/toc.yml
+- name: Build
   expanded: true
   items:
-  - name: Analytics
-    href: index.md?#pivot=documentation&panel=analytics
   - name: Authentication
-    href: index.md?#pivot=documentation&panel=authentication
+    href: features/authentication/toc.yml
   - name: Automation
-    href: index.md?#pivot=documentation&panel=automation
-  - name: Commerce
-    href: index.md?#pivot=documentation&panel=commerce
-  - name: Config
-    href: index.md?#pivot=documentation&panel=config
-  - name: Data
-    href: index.md?#pivot=documentation&panel=data
-  - name: Engagement
-    href: index.md?#pivot=documentation&panel=engagement
-  - name: Insights
-    href: index.md?#pivot=documentation&panel=insights
+    href: features/automation/toc.yml
   - name: Multiplayer
-    href: index.md?#pivot=documentation&panel=multiplayer
-  - name: Pricing
-    href: index.md?#pivot=documentation&panel=pricing
-  - name: SDKs
-    href: index.md?#pivot=documentation&panel=sdks
+    href: features/multiplayer/toc.yml
+  - name: Insights
+    href: features/insights/toc.yml
   - name: Social
-    href: index.md?#pivot=documentation&panel=social
+    href: features/social/toc.yml
+- name: Engagement
+  expanded: true
+  items:
+  - name: Economy
+    href: features/commerce/toc.yml
+  - name: Engagement (Player retention)
+    href: features/engagement/toc.yml
+- name: Analyze
+  expanded: true
+  items:
+  - name: Data
+    href: features/data/toc.yml
+  - name: Analytics
+    href: features/analytics/toc.yml
+- name: Personas
+  href: personas/toc.yml
+- name: Pricing
+  href: features/pricing/toc.yml
+- name: Release Notes
+  href: release-notes/toc.yml
+- name: API References
+  href: api-references/toc.yml
+- name: SDKs
+  href: sdks/toc.yml

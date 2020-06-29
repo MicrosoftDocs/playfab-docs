@@ -1,16 +1,16 @@
 - name: PlayFab Analytics
-  href: /gaming/playfab/?#pivot=documentation&panel=analytics
-  expanded: true
-  items:
-  - name: Experiments
-    href: experiments/toc.yml
-  - name: Xbox Data Add On
-    href: xbox-data/toc.yml
-  - name: Metrics
-    href: metrics/toc.yml
-  - name: Reports
-    href: reports/toc.yml
-  - name: Segmentation
-    href: segmentation/toc.yml
-  - name: A/B testing
-    href: ab-testing/toc.yml
+  href: index.yml
+- name: What is PlayFab Analytics
+  href: overview.md
+- name: Experiments
+  href: experiments/toc.yml
+- name: Xbox Data Add On
+  href: xbox-data/toc.yml
+- name: Metrics
+  href: metrics/toc.yml
+- name: Reports
+  href: reports/toc.yml
+- name: Segmentation
+  href: segmentation/toc.yml
+- name: A/B testing
+  href: ab-testing/toc.yml

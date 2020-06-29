@@ -51,7 +51,7 @@ PlayFab offers a wide set of pages for fine tuning and analyzing your player. Th
 - [Logins](player-logins.md) for inspecting a player's login attempts.
 - [Segments](player-segments.md) for inspecting the segments that a player belongs to.
 - [Statistics](using-player-statistics.md) for inspecting and manipulating a player's statistical values.
-- [Player Data (Title)](../../config/titledata/quickstart.md) for managing account data within the current scope.
+- [Player Data (Title)](../../data/titledata/quickstart.md) for managing account data within the current scope.
 - [Player Data (Publisher)](using-player-publisher-data.md) for managing account data across several titles.
 - Virtual currency
 - [Inventory](player-inventory.md) for managing the items that a player owns.

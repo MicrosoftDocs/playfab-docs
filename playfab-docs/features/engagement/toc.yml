@@ -1,10 +1,10 @@
 - name: PlayFab Engagement
-  href: /gaming/playfab/?#pivot=documentation&panel=engagement
-  expanded: true
-  items:
-  - name: Push Notifications
-    href: push-notifications/toc.yml
-  - name: Emails
-    href: emails/toc.yml
-  - name: News
-    href: news/toc.yml
+  href: index.yml
+- name: What is Engagement
+  href: overview.md
+- name: Title News
+  href: news/toc.yml
+- name: Push Notifications Templates
+  href: push-notifications/toc.yml
+- name: Email Templates
+  href: emails/toc.yml

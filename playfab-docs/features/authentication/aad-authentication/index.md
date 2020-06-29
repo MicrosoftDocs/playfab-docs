@@ -25,4 +25,4 @@ You can start a new PlayFab studio with AAD.
 2. Select **Sign in with Microsoft**.
 
 ### PlayFab AAD Limitations
-AAD authentication is functional for individual users, including AAD token exchange for programmtic authentication. It does not support groups or graph.
+AAD authentication is functional for individual users, including AAD token exchange for programmatic authentication. It does not support groups or graph.

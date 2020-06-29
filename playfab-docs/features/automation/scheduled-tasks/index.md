@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 Scheduled tasks are a way to automate common game operation routines. Some examples are:
 
-- Updating [Title Data](../../config/titledata/index.md) to reflect changes for a current event.
+- Updating [Title Data](../../data/titledata/index.md) to reflect changes for a current event.
 - Injecting virtual currencies into the game economy daily.
 - Modifying prices in a store according to the time of day.
 - Reaching out to lapsed players and encouraging them to re-engage.
