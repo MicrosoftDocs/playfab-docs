@@ -284,3 +284,6 @@
       href: events/title-store-updated.md
     - name: title_updated_task  
       href: events/title-updated-task.md
+- name: Rest API References
+  href: https://docs.microsoft.com/rest/api/playfab/admin
+  
