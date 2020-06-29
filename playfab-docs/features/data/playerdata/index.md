@@ -42,7 +42,7 @@ All titles within a studio in PlayFab share a Publisher ID by default, and that 
 If you need to have titles in a studio that have different Publisher IDs, or titles in different studios that share the same Publisher ID, you can open a ticket in the [PlayFab community forums](https://community.playfab.com/) and our **Developer Success** team will help you out.
 
 > [!NOTE]
-> Please don't confuse *player* Publisher data with [Publisher data](../../config/titledata/using-publisher-data.md) which is Key/Value Pair data shared by all titles (it is *not* per-player).
+> Please don't confuse *player* Publisher data with [Publisher data](../../data/titledata/using-publisher-data.md) which is Key/Value Pair data shared by all titles (it is *not* per-player).
 
 Player Publisher data usage is nearly identical to player data usage. They are *both* dictionaries mapping a string to a JSON blob (or other arbitrary string value).
 

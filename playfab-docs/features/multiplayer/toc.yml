@@ -1,14 +1,12 @@
 - name: PlayFab Multiplayer
-  href: /gaming/playfab/?#pivot=documentation&panel=multiplayer
-  expanded: true
-  items:
-  - name: Introduction to Multiplayer
-    href: mpintro.md
-  - name: Servers
-    href: servers/toc.yml
-  - name: Matchmaking
-    href: matchmaking/toc.yml
-  - name: Party
-    href: networking/toc.yml
-  - name: Photon
-    href: photon/toc.yml
+  href: index.yml
+- name: Introduction to Multiplayer
+  href: mpintro.md
+- name: Servers
+  href: servers/toc.yml
+- name: Matchmaking
+  href: matchmaking/toc.yml
+- name: Party
+  href: networking/toc.yml
+- name: Photon
+  href: photon/toc.yml

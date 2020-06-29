@@ -16,13 +16,13 @@ Get started with the PlayFab client library for JavaScript to authenticate a pla
 
 ## Prerequisites
 
-* A [PlayFab developer account](https://developer.playfab.com/en-us/sign-up). For information about creating a Title and finding TitleId, see [Game Manager QuickStart](../../features/config/gamemanager/quickstart.md).
+* A [PlayFab developer account](https://developer.playfab.com/en-us/sign-up). For information about creating a Title and finding TitleId, see [Game Manager QuickStart](../../gamemanager/quickstart.md).
 
 The QuickStart guide works in any operating system capable of running a web browser.
 
 ## JavaScript project setup
 
-Before you can call any PlayFab API, you must have a [PlayFab developer account](https://developer.playfab.com/en-us/sign-up). For information about creating a Title and finding TitleId, see [Game Manager QuickStart](../../features/config/gamemanager/quickstart.md).
+Before you can call any PlayFab API, you must have a [PlayFab developer account](https://developer.playfab.com/en-us/sign-up). For information about creating a Title and finding TitleId, see [Game Manager QuickStart](../../gamemanager/quickstart.md).
 
 OS: This guide works in any OS capable of running a web browser.
 
@@ -137,7 +137,7 @@ The functions in `PlayFabClientSDK` are named after the corresponding HTTP reque
     - Most PlayFab API methods require input parameters, and those input parameters are packed into a request object
     - Every API method requires a unique request object, with a mix of optional and mandatory parameters
       - For `LoginWithCustomID`, there is a mandatory parameter of `CustomId`, which uniquely identifies a player and `CreateAccount`, which allows the creation of a new account with this call. `TitleId` is another mandatory parameter in JavaScript, and it must match `PlayFab.settings.titleId`.
-      - For information about where to find `TitleId`, see [Game Manager QuickStart](../../features/config/gamemanager/quickstart.md).
+      - For information about where to find `TitleId`, see [Game Manager QuickStart](../../gamemanager/quickstart.md).
   - In this case, `TitleId`,  `customId`, and `CreateAccount` are from the Request Body of `LoginWithCustomID`. The Request Body fields are included as keys and values in the request object. The Session Ticket in the Request Header will be saved from login, so the SessionTicket is not included in the request object.
     
   - `PlayFabClientSDK.LoginWithCustomID(loginRequest, LoginCallback);`

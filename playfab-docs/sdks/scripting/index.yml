@@ -1,0 +1,66 @@
+### YamlMime:Landing
+
+title: PlayFab supported scripting languages # < 60 chars
+summary: PlayFab support for popular scripting languages. # < 160 chars
+
+metadata:
+  title: PlayFab supported scripting languages # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: description # Required; article description that is displayed in search results. < 160 chars.
+  ms.service: service #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.subservice: playfab # Optional; Remove if no subservice is used.
+  ms.topic: landing-page # Required
+  author: Jeffrey-Shi #Required; your GitHub user alias, with correct capitalization.
+  ms.author: jeffshi #Required; microsoft alias of author; optional team alias.
+  ms.date: 05/21/2020 #Required; mm/dd/yyyy format.
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: ActionScript
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: ActionScript 
+            url: ../actionscript/index.md
+      - linkListType: quickstart
+        links:
+          - text: ActionScript quickstart
+            url: ../ActionScript/quickstart.md
+
+  # Card
+  - title: JavaScript
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: JavaScript
+            url: ../javascript/index.md
+      - linkListType: quickstart
+        links:
+          - text: JavaScript quickstart
+            url: ../javascript/quickstart.md
+
+  # Card
+  - title: NodeJS
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: NodeJS
+            url: ../nodejs/index.md
+      - linkListType: quickstart
+        links:
+          - text: NodeJS quickstart
+            url: ../nodejs/quickstart.md
+  # Card
+  - title: Python
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Python
+            url: ../python/index.md
+      - linkListType: quickstart
+        links:
+          - text: Python quickstart
+            url: ../python/quickstart.md

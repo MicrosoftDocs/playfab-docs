@@ -26,7 +26,7 @@ In this example, we show you how to create prize table end tournament prizes, wh
 - Basic knowledge of how to create a player will be necessary, as there will need to be players in a leaderboard before it can perform any actions on those players.
 
 - Basic knowledge of how to create a player will be necessary, as there will need to be players in a leaderboard before it can perform any actions on those players.
-- It is also worthwhile to read the [Game Manager quickstart](../../config/gamemanager/quickstart.md) if you are unfamiliar with the Game Manager, as it is the place where prize tables are created.
+- It is also worthwhile to read the [Game Manager quickstart](../../../gamemanager/quickstart.md) if you are unfamiliar with the Game Manager, as it is the place where prize tables are created.
 - In order to use Prize Tables, you must have general knowledge of how resettable leaderboards work. Please read about leaderboards in our tutorial [Using Resettable Statistics and Leaderboards](using-resettable-statistics-and-leaderboards.md).
 - Additionally, virtual currencies must be set up. Please read our tutorial about [Currencies](../../commerce/economy/currencies.md) and set up two currencies with the following parameters:
   - **Currency code**: GO
@@ -79,7 +79,7 @@ In the **Rank** form:
 
 ![Game Manager - Leaderboards - Prize Table - Add Rank](media/tutorials/game-manager-prize-table-add-rank.png)  
 
-Now, we’ll add a second rank range:
+Now, we'll add a second rank range:
 
 - Select **+ADD RANK** under the **TABLE CONTENTS** section (there is also a *second* one at the bottom, that also works).
 - In the **Rank** form that appears, make sure that the **Rank from** field has a value of **3** and the **To (inclusive)** field has a value of **5**.
@@ -153,7 +153,7 @@ To check that there are 5 players populated in the leaderboard with the correct 
 
 ![Game Manager - Leaderboards - View Leaderboard - Check values](media/tutorials/game-manager-leaderboards-view-leaderboard-check-values.png)  
 
-## Step 4 - Check player’s initial currencies
+## Step 4 - Check player's initial currencies
 
 Before checking anything:
 
@@ -224,3 +224,4 @@ Another way of checking that the **Virtual Currency** was granted correctly is:
 - This will show a **player_virtual_currency_balance_changed** event with specific details on amounts that changed for the **Virtual Currency** granted.
 
 ![Game Manager - Players - Event History Chart - Check Virtual Currency Change](media/tutorials/game-manager-players-event-history-chart-check-vc-changed.png)
+ 

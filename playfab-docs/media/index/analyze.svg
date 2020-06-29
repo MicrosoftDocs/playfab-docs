@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="125px" height="125px" viewBox="0 0 125 125" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Analyze</title>
+    <g id="Analyze" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(7.000000, 16.000000)" fill-rule="nonzero">
+            <polygon id="Path" fill="#FF781F" points="95 34 102 34 102 95 95 95"></polygon>
+            <polygon id="Path" fill="#000000" points="27 57.7692308 35 51 35 95 27 95"></polygon>
+            <polygon id="Path" fill="#000000" points="14 71.6666667 21 65 21 95 14 95"></polygon>
+            <polygon id="Path" fill="#000000" points="41 43.8235294 47 37 47 95 41 95"></polygon>
+            <polygon id="Path" fill="#000000" points="55 37 61 43.8298068 61 95 55 95"></polygon>
+            <polygon id="Path" fill="#000000" points="71 54.3846154 75 51 75 95 67 95 67 51"></polygon>
+            <polygon id="Path" fill="#FF781F" points="81 43.8235294 88 37 88 95 81 95"></polygon>
+            <polygon id="Path" fill="#000000" points="0 85.4 7 79 7 95 0 95"></polygon>
+            <polygon id="Path" fill="#000000" points="108 0 108 26.8884026 101.25 26.8884026 101.25 11.5010941 70.875 41.6980306 50.625 21.5317287 0 72 0 62.4420131 50.625 12.0787746 70.875 32.2450766 96.4511719 6.72210066 81 6.72210066 81 0"></polygon>
+        </g>
+    </g>
+</svg>

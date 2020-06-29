@@ -62,7 +62,7 @@ To create a catalog with an item:
 
 ## Adding an item to a player inventory
 
-PlayFab’s [Player Item Management (Server)](xref:titleid.playfabapi.com.server.playeritemmanagement) and [Player Item Management (Client)](xref:titleid.playfabapi.com.client.playeritemmanagement) APIs support many strategies for item purchasing, such as simple real money or virtual currency purchases of items, triggered item grants based on buying another item, locked (with a potentially purchasable key) and unlocked boxes, random result tables, and non-purchasable items that are granted based on events within a game.
+PlayFab's [Player Item Management (Server)](xref:titleid.playfabapi.com.server.playeritemmanagement) and [Player Item Management (Client)](xref:titleid.playfabapi.com.client.playeritemmanagement) APIs support many strategies for item purchasing, such as simple real money or virtual currency purchases of items, triggered item grants based on buying another item, locked (with a potentially purchasable key) and unlocked boxes, random result tables, and non-purchasable items that are granted based on events within a game.
 
 Let's use the PlayFab APIs to add an item to a player's inventory by purchasing it with virtual currency.
 
@@ -90,3 +90,4 @@ Once you have a Catalog with Items supported by Virtual Currencies, you can ligh
 - **Creating some player Segments and use Stores**: To drive different item and bundle offers to your players regardless of where they are in your game lifecycle. For an example, see our [Custom stores for player segments](../stores/custom-stores-for-player-segments.md) tutorial.
 - **Verifying your assumptions**: Using [A/B testing](../../analytics/ab-testing/index.md).
 - **Gathering economic data**: Enabling you to improve and iterate your game using PlayFab [Reports](../../analytics/reports/index.md).
+ 

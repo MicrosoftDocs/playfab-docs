@@ -1,10 +1,10 @@
 - name: PlayFab Authentication
-  href: /gaming/playfab/?#pivot=documentation&panel=authentication
-  expanded: true
-  items:
-  - name: Player login
-    href: login/toc.yml
-  - name: Platform specific authentication
-    href: platform-specific-authentication/toc.yml
-  - name: Azure Active Directory Authentication for Game Manager
-    href: aad-authentication/toc.yml
+  href: index.yml
+- name: What is Authentication
+  href: authentication/index.md
+- name: Player login
+  href: login/toc.yml
+- name: Platform specific authentication
+  href: platform-specific-authentication/toc.yml
+- name: Azure Active Directory Authentication for Game Manager
+  href: aad-authentication/toc.yml

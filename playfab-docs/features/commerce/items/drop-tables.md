@@ -18,7 +18,7 @@ Drop tables allow you to randomly generate [inventory items](../../data/playerda
 
 ## Requirements
 
-- We assume that you are already  familiar with [Catalogs](catalogs.md), [Inventory](../../data/playerdata/player-inventory.md), and the PlayFab [Game Manager](../../config/gamemanager/quickstart.md).
+- We assume that you are already  familiar with [Catalogs](catalogs.md), [Inventory](../../data/playerdata/player-inventory.md), and the PlayFab [Game Manager](../../../gamemanager/quickstart.md).
 - You must have a *primary catalog* - which contains standard, non-bundle/non-container items.
 - You must have defined at least *one* virtual currency which you will use as a "free" in-game currency.
 

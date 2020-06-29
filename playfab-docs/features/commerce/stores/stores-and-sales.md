@@ -22,7 +22,7 @@ This tutorial illustrates the best practices for defining stores based on virtua
 
 ## Requirements
 
-- Familiarity with the PlayFab [Game Manager](../../config/gamemanager/quickstart.md).
+- Familiarity with the PlayFab [Game Manager](../../../gamemanager/quickstart.md).
 - You must have defined one or more [Virtual Currencies](../economy/currencies.md). The latter example in this tutorial uses:
   - **SS** (**Silver Shekels**)
   - **GS** (**Gold Shekels**).

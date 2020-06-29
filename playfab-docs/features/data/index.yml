@@ -1,0 +1,118 @@
+### YamlMime:Landing
+
+title: Azure PlayFab Data documentation # < 60 chars
+summary: Documentation pertaining to PlayFab Data. Contains overviews of features, quickstart guides, and tutorials. # < 160 chars
+
+metadata:
+  title: PlayFab Data documentation
+  description: Hub page for the PlayFab Data documentation. Here you can find featrue overviews, quickstart guides, and tutorials. # Required; article description that is displayed in search results. # Required; article description that is displayed in search results. < 160 chars.
+  ms.service: playfab #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.topic: landing-page
+  author: Shikha-tarware
+  ms.author: shtarwar
+  ms.date: 05/04/2020 
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: About PlayFab Data
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is PlayFab Data?
+            url: overview.md
+
+  # Card (optional)
+  - title: Players, Characters, and Group Data
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is Player data? 
+            url: playerdata/index.md
+          - text: Search query to look up players
+            url: playerdata/using-the-players-page.md
+      - linkListType: quickstart
+        links:
+          - text:  Store data across Players, Characters, and Groups
+            url: playerdata/quickstart.md            
+      - linkListType: tutorial
+        links:
+          - text: Get player profiles based on PlayerProfileViewConstraints properties 
+            url: playerdata/getting-player-profiles.md
+          - text: Manager player inventory
+            url: playerdata/player-inventory.md
+          - text: Report or ban a player
+            url: playerdata/player-bans.md
+          - text: View player login details
+            url: playerdata/player-logins.md
+          - text: Define a player segment
+            url: playerdata/player-segment-configuration.md
+          - text: Run custom actions on player segments automatically 
+            url: playerdata/player-segments.md
+          - text: Ensure GDPR compliance on Player data
+            url: playerdata/playfab-gdpr-deleting-and-exporting-player-data.md
+          - text: Manage player account and run cloudscript for a player
+            url: playerdata/player-details.md
+          - text: Manage player publisher data
+            url: playerdata/using-player-publisher-data.md
+          - text: Manage player statistics
+            url: playerdata/using-player-statistics.md                  
+
+  - title: Title Data
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Manage game configuration remotely with Title data
+            url: ../data/titledata/index.md
+      - linkListType: quickstart
+        links:
+          - text: Get started with Title Data
+            url: ../data/titledata/index.md
+      - linkListType: tutorial
+        links:
+          - text: Store static Publisher data for a set of Titles
+            url: ../data/titledata/using-publisher-data.md
+
+  - title: Entities
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is Entity programming model
+            url: entities/index.md
+      - linkListType: quickstart
+        links:
+          - text: Get started with Entities, and its objects and files
+            url: entities/quickstart.md     
+      - linkListType: tutorial
+        links:
+          - text: Create entity groups for guilds and clans
+            url: ../social/groups/quickstart.md
+          - text: Update entity API restructure for upgrade 
+            url: entities/entity-api-restructure-upgrade-tutorial.md
+      - linkListType: concept
+        links:
+          - text: What are available built-in constructs of an Entity Key
+            url: entities/available-built-in-entity-types.md
+          - text: Entities Key terms and migration information
+            url: entities/migration-information.md 
+
+  - title: Content Delivery Network
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Manage remote updates to game assets with CDN
+            url: content-delivery-network/index.md
+      - linkListType: quickstart
+        links:
+          - text:  Get started with Content Delivery Network
+            url: content-delivery-network/quickstart.md 
+            
+  - title: Webhooks
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Explore Webhooks to manage events on custom servers 
+            url: webhooks/index.md
