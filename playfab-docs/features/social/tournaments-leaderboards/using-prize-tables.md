@@ -24,8 +24,6 @@ In this example, we show you how to create prize table end tournament prizes, wh
 > This is an *advanced* tutorial. Please make sure that all requirements shown below have been met, or you will *not* be able to complete this tutorial.
 
 - Basic knowledge of how to create a player will be necessary, as there will need to be players in a leaderboard before it can perform any actions on those players.
-
-- Basic knowledge of how to create a player will be necessary, as there will need to be players in a leaderboard before it can perform any actions on those players.
 - It is also worthwhile to read the [Game Manager quickstart](../../../gamemanager/quickstart.md) if you are unfamiliar with the Game Manager, as it is the place where prize tables are created.
 - In order to use Prize Tables, you must have general knowledge of how resettable leaderboards work. Please read about leaderboards in our tutorial [Using Resettable Statistics and Leaderboards](using-resettable-statistics-and-leaderboards.md).
 - Additionally, virtual currencies must be set up. Please read our tutorial about [Currencies](../../commerce/economy/currencies.md) and set up two currencies with the following parameters:
