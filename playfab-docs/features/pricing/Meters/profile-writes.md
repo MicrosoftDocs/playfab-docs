@@ -31,6 +31,15 @@ The following APIs cause the Profile writes meter to increment.
 - [BanUsers](https://docs.microsoft.com/rest/api/playfab/admin/account-management/banusers?view=playfab-rest)
     Bans users by PlayFab ID with optional IP address, or MAC address for the provided game.
 
+-[CreateActionsOnPlayersInSegmentTask](https://docs.microsoft.com/en-us/rest/api/playfab/admin/scheduledtask/createactionsonplayersinsegmenttask?view=playfab-rest)
+    Create an ActionsOnPlayersInSegment task, which iterates through all players in a segment to execute action.
+
+-[CreatePlayerSharedSecret](https://docs.microsoft.com/en-us/rest/api/playfab/admin/authentication/createplayersharedsecret?view=playfab-rest)
+    Creates a new Player Shared Secret Key. It may take up to 5 minutes for this key to become generally available after this API returns.
+
+-[CreatePlayerStatisticDefinition](https://docs.microsoft.com/en-us/rest/api/playfab/admin/player-data-management/createplayerstatisticdefinition?view=playfab-rest)
+    Adds a new player statistic configuration to the title, optionally allowing the developer to specify a reset interval and an aggregation method.
+
 - [DeleteMasterPlayerAccount](https://docs.microsoft.com/rest/api/playfab/admin/account-management/deletemasterplayeraccount?view=playfab-rest)
     Removes a master player account entirely from all titles and deletes all associated data.
 
@@ -49,6 +58,12 @@ The following APIs cause the Profile writes meter to increment.
 - [GrantItemsToUsers](https://docs.microsoft.com/rest/api/playfab/admin/player-item-management/grantitemstousers?view=playfab-rest)
     Adds the specified items to the specified user inventories
 
+-[IncrementLimitedEditionItemAvailability](https://docs.microsoft.com/en-us/rest/api/playfab/admin/player-item-management/incrementlimitededitionitemavailability?view=playfab-rest)
+    Increases the global count for the given scarce resource.
+
+-[IncrementPlayerStatisticVersion](https://docs.microsoft.com/en-us/rest/api/playfab/admin/player-data-management/incrementplayerstatisticversion?view=playfab-rest)
+    Resets the indicated statistic, removing all player entries for it and backing up the old values.
+
 - [RefundPurchase](https://docs.microsoft.com/rest/api/playfab/admin/player-data-management/refundpurchase?view=playfab-rest)
     Attempts to process an order refund through the origin'l real money payment provider.""
 
@@ -64,6 +79,9 @@ The following APIs cause the Profile writes meter to increment.
 - [ResetUserStatistics](https://docs.microsoft.com/rest/api/playfab/admin/player-data-management/resetuserstatistics?view=playfab-rest)
     Completely removes all statistics for the specified user, for the current game.
 
+-[ResolvePurchaseDispute](https://docs.microsoft.com/en-us/rest/api/playfab/admin/player-data-management/resolvepurchasedispute?view=playfab-rest)
+    Attempts to resolve a dispute with the original order's payment provider.
+    
 - [RevokeAllBansForUser](https://docs.microsoft.com/rest/api/playfab/admin/account-management/revokeallbansforuser?view=playfab-rest)
     Revoke all active bans for a user.
 

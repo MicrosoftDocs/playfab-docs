@@ -24,6 +24,9 @@ The following APIs cause the Profile read meter to increment.
 - [GetAllSegments](https://docs.microsoft.com/rest/api/playfab/admin/playstream/getallsegments?view=playfab-rest)
     Retrieves an array of player segment definitions. Results from this can be used in subsequent API calls such as GetPlayersInSegment which requires a Segment ID. While segment names can change the ID for that segment will not change.
 
+- [ExportMasterPlayerData](https://docs.microsoft.com/rest/api/playfab/admin/account-management/exportmasterplayerdata?view=playfab-rest)
+    Exports all associated data of a master player account.
+
 - [GetCatalogItems](https://docs.microsoft.com/rest/api/playfab/admin/title-wide-data-management/getcatalogitems?view=playfab-rest)
     Retrieves the specified version of the title's catalog of virtual goods, including all defined properties.
 
