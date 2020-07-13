@@ -16,7 +16,9 @@ PlayFab Party is available on [Nuget.org](https://www.nuget.org/profiles/PlayFab
 
 Release notes for the Xbox Live Helper library can be found [here](party-xboxlive-relnotes.md).
 
-PlayFab Party for Android and iOS are available on [GitHub.com](https://github.com/PlayFab/PlayFabParty/releases)
+PlayFab Party for Android and iOS are available on [GitHub.com](https://github.com/PlayFab/PlayFabParty/releases).
+
+Party Unity Plugin for GDK is available [here](https://github.com/playfab/PlayFabPartyUnity).
 
 ## 1.3.0
 

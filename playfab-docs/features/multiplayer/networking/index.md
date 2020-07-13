@@ -43,6 +43,7 @@ To read best practices for user experiences and Microsoft's recommendations arou
 
 |Platform|SDKs|Samples|
 |-|-|-|
+|Game Core|[Unity](https://github.com/playfab/PlayFabPartyUnity)||
 |Windows 10, Windows 8.1 |[C++ SDK](https://www.nuget.org/packages/Microsoft.PlayFab.PlayFabParty.Cpp.Windows/), [Xbox Live Helper Library](https://www.nuget.org/packages/Microsoft.PlayFab.PlayFabPartyXboxLive.Cpp.Windows)|[BumbleRumble](https://github.com/PlayFab/PlayFab-Samples/tree/master/Samples/All/BumbleRumble)|
 |Xbox One (XDK) |[C++ SDK](https://www.nuget.org/packages/Microsoft.PlayFab.PlayFabParty.Cpp.XboxOneXDK), [Xbox Live Helper Library](https://www.nuget.org/packages/Microsoft.PlayFab.PlayFabPartyXboxLive.Cpp.XboxOneXDK)|[BumbleRumble](https://github.com/PlayFab/PlayFab-Samples/tree/master/Samples/All/BumbleRumble)|
 |Windows 7 |[C++ SDK](https://www.nuget.org/packages/Microsoft.PlayFab.PlayFabParty.Cpp.Windows/), [Xbox Live Helper Library](https://www.nuget.org/packages/Microsoft.PlayFab.PlayFabPartyXboxLive.Cpp.Windows)|Pending|
