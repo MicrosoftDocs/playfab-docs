@@ -64,16 +64,14 @@ landingContent:
             url: ../objective-c/quickstart.md
 
   # Card
-  - title: PlayFab CPP
+  - title: PlayFab C++
     linkLists:
       - linkListType: overview
         links:
-          - text: PyPlayFab CPPthon
-            url: ../python/index.md
+          - text: PlayFab XPlat C++
+            url: ../playfab-cpp/index.md
       - linkListType: quickstart
         links:
-          - text: PlayFab CPP quickstart
-            url: ../python/quickstart.md
           - text: Quickstart - Linux quickstart
             url: ../playfab-cpp/quickstart-linux.md
           - text: Quickstart - Windows quickstart
