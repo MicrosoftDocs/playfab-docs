@@ -64,11 +64,11 @@ landingContent:
             url: ../objective-c/quickstart.md
 
   # Card
-  - title: PlayFab CPP
+  - title: PlayFab C++
     linkLists:
       - linkListType: overview
         links:
-          - text: PlayFab XPlat CPP
+          - text: PlayFab XPlat C++
             url: ../playfab-cpp/index.md
       - linkListType: quickstart
         links:
