@@ -101,7 +101,7 @@ Multiplayer allows you to configure server hosting and matchmaking.
 **Servers** - Whether you are looking to hosting multi-player matches or just need a secure environment that can reduce many common forms of hacking and abuse, the PlayFab Thunderhead servers work with many architectures and game types. These servers provide an excellent alternative when compared with the overhead of dedicated game servers.
 **Matchmaking** - Set up your matchmaking queues by configuring match sizes, servers and statistics.
 
-    ![Matchmaking](media/tutorials/game-manager-multiplayer-matchmaking.png)
+![Matchmaking](media/tutorials/game-manager-multiplayer-matchmaking.png)
 
 **Party** - Create and configure the Parties for your title.
 
