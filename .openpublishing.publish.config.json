@@ -70,7 +70,7 @@
   "need_generate_pdf_url_template": true,
   "targets": {
     "pdf": {
-    "template_folder": "_themes.pdf"
+      "template_folder": "_themes.pdf"
     }
   },
   "dependent_packages": [
@@ -81,5 +81,8 @@
       "target_framework": "net45",
       "version": "latest"
     }
-  ]
+  ],
+  "docs_build_engine": {
+    "name": "docfx_v3"
+  }
 }
