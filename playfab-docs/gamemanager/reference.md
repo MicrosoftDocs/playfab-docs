@@ -105,8 +105,8 @@ Multiplayer allows you to configure server hosting and matchmaking.
 
 **Party** - Create and configure the Parties for your title.
 
-    > [!NOTE]
-    > You must be an Indie, Pro, or Enterprise subscriber in order to enable Parties.
+> [!NOTE]
+> You must be an Indie, Pro, or Enterprise subscriber in order to enable Parties.
 
 **Legacy Multiplayer** - Here you can see your active and archived games, as well as server activity, game builds, and game modes.
 
