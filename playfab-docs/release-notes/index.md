@@ -3,7 +3,7 @@ title: PlayFab Release Notes 2020
 author: sebgrink
 description: PlayFab Release Notes for 2020.
 ms.author: sebgrink
-ms.date: 06/15/2020
+ms.date: 07/13/2020
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, development, release, apis, features
@@ -14,9 +14,9 @@ ms.localizationpriority: medium
 > [!Note]
 > For release notes about service releases and product updates, see the [release notes](https://github.com/PlayFab/PlayFab/releases) section on [PlayFab's public GitHub repository](https://github.com/PlayFab/PlayFab)
 
-## 200615
+## 200713
 
-Date: 2020-06-15
+Date: 2020-07-13
 
 Supports the [July 1 PlayFab service release](https://github.com/PlayFab/PlayFab/releases/tag/2.4.3)
 
