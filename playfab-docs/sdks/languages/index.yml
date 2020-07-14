@@ -64,16 +64,14 @@ landingContent:
             url: ../objective-c/quickstart.md
 
   # Card
-  - title: PlayFab CPP
+  - title: PlayFab C++
     linkLists:
       - linkListType: overview
         links:
-          - text: PyPlayFab CPPthon
-            url: ../python/index.md
+          - text: PlayFab XPlat C++
+            url: ../playfab-cpp/index.md
       - linkListType: quickstart
         links:
-          - text: PlayFab CPP quickstart
-            url: ../python/quickstart.md
           - text: Quickstart - Linux quickstart
             url: ../playfab-cpp/quickstart-linux.md
           - text: Quickstart - Windows quickstart
@@ -99,7 +97,8 @@ landingContent:
       - linkListType: download
         links:
           - text: Python
-            url: ../python/index.md
+            url: ../
+            
           - text: GSDK for C++ Windows servers
             url: https://www.nuget.org/packages/com.playfab.cppgsdk.v140
           - text: GSDK for C# Windows servers
@@ -112,3 +111,15 @@ landingContent:
             url: ../../features/multiplayer/servers/quickstart-for-multiplayer-servers-api-powershell.md
           - text: Quickstart (Game Manager)
             url: ../../features/multiplayer/servers/quickstart-for-multiplayer-servers-game-manager.md    
+
+# Card
+  - title: PyPlayFab (python)
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: PyPlayFab Python
+            url: ../python/index.md
+      - linkListType: quickstart
+        links:
+          - text: PlayFab CPP quickstart
+            url: ../python/quickstart.md
