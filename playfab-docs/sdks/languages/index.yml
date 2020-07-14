@@ -64,11 +64,11 @@ landingContent:
             url: ../objective-c/quickstart.md
 
   # Card
-  - title: PlayFab C++
+  - title: PlayFab CPP
     linkLists:
       - linkListType: overview
         links:
-          - text: PlayFab XPlat C++
+          - text: PlayFab XPlat CPP
             url: ../playfab-cpp/index.md
       - linkListType: quickstart
         links:
@@ -97,8 +97,7 @@ landingContent:
       - linkListType: download
         links:
           - text: Python
-            url: ../
-            
+            url: ../python/index.md
           - text: GSDK for C++ Windows servers
             url: https://www.nuget.org/packages/com.playfab.cppgsdk.v140
           - text: GSDK for C# Windows servers
