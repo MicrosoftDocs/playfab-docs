@@ -109,16 +109,4 @@ landingContent:
           - text: Quickstart (API/PowerShell)
             url: ../../features/multiplayer/servers/quickstart-for-multiplayer-servers-api-powershell.md
           - text: Quickstart (Game Manager)
-            url: ../../features/multiplayer/servers/quickstart-for-multiplayer-servers-game-manager.md    
-
-# Card
-  - title: PyPlayFab (python)
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: PyPlayFab Python
-            url: ../python/index.md
-      - linkListType: quickstart
-        links:
-          - text: PlayFab CPP quickstart
-            url: ../python/quickstart.md
+            url: ../../features/multiplayer/servers/quickstart-for-multiplayer-servers-game-manager.md
