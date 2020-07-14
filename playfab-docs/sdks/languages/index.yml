@@ -109,4 +109,4 @@ landingContent:
           - text: Quickstart (API/PowerShell)
             url: ../../features/multiplayer/servers/quickstart-for-multiplayer-servers-api-powershell.md
           - text: Quickstart (Game Manager)
-            url: ../../features/multiplayer/servers/quickstart-for-multiplayer-servers-game-manager.md  
+            url: ../../features/multiplayer/servers/quickstart-for-multiplayer-servers-game-manager.md    
