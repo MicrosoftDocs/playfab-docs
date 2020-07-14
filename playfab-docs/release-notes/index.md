@@ -18,6 +18,12 @@ ms.localizationpriority: medium
 
 Date: 2020-06-15
 
+Supports the [July 1 PlayFab service release](https://github.com/PlayFab/PlayFab/releases/tag/2.4.3)
+
+## 200615
+
+Date: 2020-06-15
+
 Supports the [June 10 PlayFab service release](https://github.com/PlayFab/PlayFab/releases/tag/2.3.3)
 
 ## 200602
