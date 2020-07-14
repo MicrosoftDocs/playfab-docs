@@ -3,7 +3,6 @@ title: PlayFab Release Notes 2020
 author: sebgrink
 description: PlayFab Release Notes for 2020.
 ms.author: sebgrink
-ms.date: 07/13/2020
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, development, release, apis, features
