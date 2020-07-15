@@ -28,7 +28,7 @@ Please note that while this roadmap reflects our aspirations, features and timel
 
 This service is available today in previews. As we further incorporate your feedback, we will make this generally available to all PlayFab users. 
 
-**_Economy and User Generated Content_**
+**_Improved Economy and User Generated Content_**
 
 These services will begin to move from private to public preview in the first half of 2021. Our Economy services include redemption, wallet, and inventory capabilities while UGC provides a highly scalable catalog plus content moderation, ratings, and reviews. These services are used to power the Minecraft Marketplace, supporting millions of transactions and the consumption of user generated content at scale. The LiveOps Masterclass with Minecraft [video](https://www.youtube.com/watch?v=L7VoxGb1oYw) gives a good overview.
 
