@@ -34,6 +34,7 @@ Before we can use [UpdatePlayerStatistics](xref:titleid.playfabapi.com.client.pl
 1. Select **Title settings** off the Settings menu for your title.
 2. Select the **API Features** tab.
 3. Check the box for **Allow client to post player statistics**.
+    NOTE: In general, this option should not be used in a live game, as it gives the client authority over values submitted. This is only valid for cases where there is no concern that players may cheat their statistics. If statistics need to be secure, they should only be updated via a server authoritative operation, such as a Cloud Script or custom game server.
 4. Click the **SAVE** button at the bottom of the screen.
 
 ![Game Manager - Settings - API Features - Allow client to post player statistics](media/tutorials/api-features-allow-client-to-post-player-statistics.png)  
