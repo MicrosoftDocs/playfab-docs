@@ -18,7 +18,7 @@ Release notes for the Xbox Live Helper library can be found [here](party-xboxliv
 
 PlayFab Party for Android and iOS are available on [GitHub.com](https://github.com/PlayFab/PlayFabParty/releases).
 
-Party Unity Plugin for GDK is available [here](https://github.com/playfab/PlayFabPartyUnity).
+Party Unity Plugin for GDK, Android, and iOS is available [here](https://github.com/playfab/PlayFabPartyUnity).
 
 ## 1.4.8
 
