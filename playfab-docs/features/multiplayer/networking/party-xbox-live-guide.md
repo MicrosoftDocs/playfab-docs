@@ -3,7 +3,7 @@ title: Xbox Live helper library for PlayFab Party
 description: Xbox Live helper library for PlayFab Party
 author: AlexAtXbox
 ms.author: alstonge
-ms.date: 9/11/2019
+ms.date: 07/14/2020
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, multiplayer, networking, xbox live
@@ -16,7 +16,7 @@ The Xbox Live Helper library for PlayFab Party is designed to help games using P
 
 While we strive to minimize breaking changes in our APIs, some changes made to the PlayFab Party API might cause the Xbox Live Helper library to return erroneous values. Refer to the below table to ensure that your libraries' version are compatible.
 
-| Xbox Live Helper Library <br> version | PlayFab Party Version <br> 1.0.1 | PlayFab Party Version <br> 1.3.0 |
+| Xbox Live Helper Library <br> version | PlayFab Party Version <br> 1.0.1 | PlayFab Party Version <br> 1.3.0+ |
 |---------------------------------------|:--------------------------------:|:--------------------------------:|
 | **1.0.1**                             | ✔                               |                                  |
 | **1.1.0**                             | ✔                               |                                  |

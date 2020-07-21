@@ -1,9 +1,9 @@
 ---
 title: PlayFab Party Release Notes
-author: v-kciril
+author: ScottMunroMS
 description: Release notes for PlayFab Party
-ms.author: v-kciril
-ms.date: 08/15/2019
+ms.author: scmunro
+ms.date: 07/14/2020
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, party, release notes, multiplayer, networking
@@ -12,11 +12,36 @@ ms.localizationpriority: medium
 
 # PlayFab Party release notes
 
-PlayFab Party is available on [Nuget.org](https://www.nuget.org/profiles/PlayFab)!
+PlayFab Party for Windows and Xbox is available on [Nuget.org](https://www.nuget.org/profiles/PlayFab)!
 
 Release notes for the Xbox Live Helper library can be found [here](party-xboxlive-relnotes.md).
 
-PlayFab Party for Android and iOS are available on [GitHub.com](https://github.com/PlayFab/PlayFabParty/releases)
+PlayFab Party for Android and iOS are available on [GitHub.com](https://github.com/PlayFab/PlayFabParty/releases).
+
+Party Unity Plugin for GDK, Android, and iOS is available [here](https://github.com/playfab/PlayFabPartyUnity).
+
+## 1.4.8
+
+### TLS1.2
+
+- The transcription stack has been updated to use TLS1.2 on Windows 7, Android, and iOS. Please upgrade if you make use of any of these platforms as TLS1.1 support will be deprecated by [Azure Speech Services](https://azure.microsoft.com/updates/azuretls12/) beginning in September 2020. All other platforms already support TLS1.2 and no upgrade is necessary.
+
+### Bug fixes
+- Fixed a bug where the `languageCode` field in the `PartyCreateChatControlCompletedStateChange` struct was not being populated.
+- Fixed a bug which was artificially inflating the latency measurements reported by `PartyManager::GetRegions()`.
+- Fixed a bug which allowed `PartyManager::SetMemoryCallbacks()` to be called at unsafe times.
+- Fixed a bug where calling `PartyManager::DestroyLocalUser()` with a `PartyLocalUser` in a `PartyNetwork` would generate a `PartyLocalUserRemovedStateChange` with an incorrect value in the removedReason field, `PartyLocalUserRemovedReason::RemoveLocalUser`, instead of the correct value, `PartyLocalUserRemovedReason::DestroyLocalUser`.
+
+### Misc changes
+- The bandwidth used by chat data has been reduced.
+- More descriptive error codes and error messages are now provided when sandbox issues are encountered on Xbox.
+- `PartyManager::Initialize()` will now fail if an empty PlayFab Title ID is provided.
+- Passing invalid PlayFab Entity Tokens to `PartyManager::CreateLocalUser()` will now result in more descriptive error messages in the state change results for operations which rely on a valid token.
+- Typos in the header documentation have been fixed.
+- A more descriptive error code and error message is now provided when an invalid region is passed to `PartyManager::CreateNewNetwork()`.
+- The documentation for the lifetimes of `PartyString` values has been clarified for the structures and interfaces in Party.h.
+- The documentation for `PartyManager::Cleanup()` was clarified to explain it is not a thread-safe call.
+- A more descriptive error code and error message are provided when `PartyManager::ConnectToNetwork()` asynchronously fails with internet connectivity errors.
 
 ## 1.3.0
 
@@ -51,7 +76,7 @@ PlayFab Party for Android and iOS are available on [GitHub.com](https://github.c
 
 #### PartyManager::SetMemoryCallbacks Changes
 
-This release of Party adds fixes for `SetMemoryCallbacks()` and also restrictions about when this API is safe to call. Check the reference documentation of the API in Party.h for details.
+This release of Party adds fixes for `PartyManager::SetMemoryCallbacks()` and also restrictions about when this API is safe to call. Check the reference documentation of the API in Party.h for details.
 
 #### Removal of PartyStateChangeResult::TitleCreateNetworkThrottled
 
@@ -77,18 +102,18 @@ The iOS flavor of Party now has the framework package included for dynamically l
 
 #### UpdateEntityToken API
 
-This release of Party makes a change related to the handling of PlayFab entity tokens. In the previous version, the game provided Party with a user’s entity token in the `CreateLocalUser()` API. Thereafter, Party internally refreshed the entity token and kept it up to date.
+This release of Party makes a change related to the handling of PlayFab entity tokens. In the previous version, the game provided Party with a user’s entity token in the `PartyManager::CreateLocalUser()` API. Thereafter, Party internally refreshed the entity token and kept it up to date.
 
-In this version, the internal token refreshing behavior has been removed and is replaced by a new API, `PartyLocalUser::UpdateEntityToken()`. The caller is now responsible for monitoring the expiration of the entity token provided to `PartyManager::CreateLocalUser()` and `PartyLocalUser::UpdateEntityToken()`. When the token is nearing or past the expiration time a new token should be obtained by performing a PlayFab login operation and provided to the Party library by calling `UpdateEntityToken()`. It is recommended to acquire a new token when the previously supplied token is halfway through its validity period. On platforms that may enter a low power state or otherwise cause the application to pause execution for a long time, preventing the token from being refreshed before it expires, the token should be checked for expiration once execution resumes.
+In this version, the internal token refreshing behavior has been removed and is replaced by a new API, `PartyLocalUser::UpdateEntityToken()`. The caller is now responsible for monitoring the expiration of the entity token provided to `PartyManager::CreateLocalUser()` and `PartyLocalUser::UpdateEntityToken()`. When the token is nearing or past the expiration time a new token should be obtained by performing a PlayFab login operation and provided to the Party library by calling `PartyLocalUser::UpdateEntityToken()`. It is recommended to acquire a new token when the previously supplied token is halfway through its validity period. On platforms that may enter a low power state or otherwise cause the application to pause execution for a long time, preventing the token from being refreshed before it expires, the token should be checked for expiration once execution resumes.
 
 The rough flow is as follows:
 
 1. The game calls a `LoginWith*` PlayFab API
 1. The response from PlayFab contains the entity token and also the expiration time
-1. Provide the token information to Party with the `CreateLocalUser()` API, as before
+1. Provide the token information to Party with the `PartyManager::CreateLocalUser()` API, as before
 1. [New] Make note of the expiration time in order to know when to refresh it
 1. [New] At halfway through the token’s expiration time (or soonest opportunity after that time), acquire a fresh token by calling `LoginWith*` again and track the new token’s expiration time
-1. [New] Call `UpdateEntityToken()` to pass in the new token to Party
+1. [New] Call `PartyLocalUser::UpdateEntityToken()` to pass in the new token to Party
 
 Additional notes:
 - The act of acquiring an entity token does not invalidate any previously obtained entity tokens. They remain valid until they expire.

@@ -2,7 +2,7 @@
   href: index.yml
 - name: What is PlayFab?
   href: what-is-playfab.md  
-- name: Game Manger
+- name: Game Manager
   href: gamemanager/toc.yml
 - name: Build
   expanded: true
