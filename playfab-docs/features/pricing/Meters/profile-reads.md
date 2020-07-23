@@ -101,9 +101,6 @@ The following APIs cause the Profile read meter to increment.
 
 ## Client APIs
 
-- [ConsumeItem](https://docs.microsoft.com/rest/api/playfab/client/player-item-management/consumeitem?view=playfab-rest)
-    Consume uses of a consumable item. When all uses are consumed, it will be removed from the player's inventory.
-
 - [GetAllUsersCharacters](https://docs.microsoft.com/rest/api/playfab/client/characters/getalluserscharacters?view=playfab-rest)
     Lists all of the characters that belong to a specific user. CharacterIds are not globally unique; characterId must be evaluated with the parent PlayFabId to guarantee uniqueness.
 

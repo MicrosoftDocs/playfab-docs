@@ -36,6 +36,9 @@ The following APIs cause the Content & Configuration writes meter to increment.
 - [SetupPushNotification](https://docs.microsoft.com/rest/api/playfab/admin/title-wide-data-management/setuppushnotification?view=playfab-rest)
   Sets the Amazon Resource Name (ARN) for iOS and Android push notifications. Documentation on the exact restrictions can be found at: http://docs.aws.amazon.com/sns/latest/api/API_CreatePlatformApplication.html. Currently, Amazon device Messaging is not supported.
 
+- [UpdatePolicy](https://docs.microsoft.com/en-us/rest/api/playfab/admin/authentication/updatepolicy?view=playfab-rest)
+    Changes a policy for a title
+
 ## Data APIs
 
 - [FinalizeFileUploads](https://docs.microsoft.com/rest/api/playfab/data/file/finalizefileuploads?view=playfab-rest)
