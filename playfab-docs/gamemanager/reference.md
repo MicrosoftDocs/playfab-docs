@@ -99,14 +99,15 @@ Some specific tools your team can use to remedy defrauded players and identify p
 Multiplayer allows you to configure server hosting and matchmaking.  
 
 **Servers** - Whether you are looking to hosting multi-player matches or just need a secure environment that can reduce many common forms of hacking and abuse, the PlayFab Thunderhead servers work with many architectures and game types. These servers provide an excellent alternative when compared with the overhead of dedicated game servers.
+
 **Matchmaking** - Set up your matchmaking queues by configuring match sizes, servers and statistics.
 
-    ![Matchmaking](media/tutorials/game-manager-multiplayer-matchmaking.png)
+![Matchmaking](media/tutorials/game-manager-multiplayer-matchmaking.png)
 
 **Party** - Create and configure the Parties for your title.
 
-    > [!NOTE]
-    > You must be an Indie, Pro, or Enterprise subscriber in order to enable Parties.
+> [!NOTE]
+> You must be an Indie, Pro, or Enterprise subscriber in order to enable Parties.
 
 **Legacy Multiplayer** - Here you can see your active and archived games, as well as server activity, game builds, and game modes.
 
@@ -149,19 +150,20 @@ This section provides all the tools needed to manage the virtual economy of your
 
 **Catalogs** - At the center of PlayFab economies is the concept of catalogs. Catalogs are a collection of items, stores, and drop tables.
 
-    As an example, the following image shows the primary catalogs for **Unicorn Battle**.
+As an example, the following image shows the primary catalogs for **Unicorn Battle**.
 
-    ![Game Manager - Economy - Catalogs](media/tutorials/game-manager-economy-catalogs.png)
+![Game Manager - Economy - Catalogs](media/tutorials/game-manager-economy-catalogs.png)
 
 **Items** - An item within the catalog. Items can be of several different types.
+
 **Drop Tables** - Control the item distribution when players open containers and bundles.
 
-- **Stores**- A subset of catalog items that can be set to prices that are different than those specified by the catalog.
+**Stores**- A subset of catalog items that can be set to prices that are different than those specified by the catalog.
 
-  ![Game Manager - Economy - Catalogs - Edit Container](media/tutorials/game-manager-economy-catalogs-edit-container.png)
+![Game Manager - Economy - Catalogs - Edit Container](media/tutorials/game-manager-economy-catalogs-edit-container.png)
 
-  > [!NOTE]
-  > Select any catalog item to open a detailed editor for the properties of the item.
+> [!NOTE]
+> Select any catalog item to open a detailed editor for the properties of the item.
 
 **Currency** - Trackers for each currency that can be exchanged for catalog items.
 
