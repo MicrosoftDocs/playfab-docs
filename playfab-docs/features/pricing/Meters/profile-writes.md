@@ -186,21 +186,6 @@ The following APIs cause the Profile writes meter to increment.
 - [CreateSharedGroup](https://docs.microsoft.com/rest/api/playfab/client/shared-group-data/createsharedgroup?view=playfab-rest)
     Requests the creation of a shared group object, containing key/value pairs which may be updated by all members of the group. Upon creation, the current user will be the only member of the group. Shared Groups are designed for sharing data between a very small number of players, please see our guide: https://docs.microsoft.com/gaming/playfab/features/social/groups/using-shared-group-data
 
-- [GetUserData](https://docs.microsoft.com/rest/api/playfab/client/player-data-management/getuserdata?view=playfab-rest)
-    Retrieves the title-specific custom data for the user which is readable and writable by the client.
-
-- [GetUserInventory](https://docs.microsoft.com/rest/api/playfab/client/player-item-management/getuserinventory?view=playfab-rest)
-    Retrieves the user's current inventory of virtual goods.
-
-- [GetUserPublisherData](https://docs.microsoft.com/rest/api/playfab/client/player-data-management/getuserpublisherdata?view=playfab-rest)
-    Retrieves the publisher-specific custom data for the user which is readable and writable by the client.
-
-- [GetUserPublisherReadOnlyData](https://docs.microsoft.com/rest/api/playfab/client/player-data-management/getuserpublisherreadonlydata?view=playfab-rest)
-    Retrieves the publisher-specific custom data for the user which can only be read by the client.
-
-- [GetUserReadOnlyData](https://docs.microsoft.com/rest/api/playfab/client/player-data-management/getuserreadonlydata?view=playfab-rest)
-    Retrieves the title-specific custom data for the user which can only be read by the client.
-
 - [GrantCharacterToUser](https://docs.microsoft.com/rest/api/playfab/client/characters/grantcharactertouser?view=playfab-rest)
     Grants the specified character type to the user. CharacterIds are not globally unique; characterId must be evaluated with the parent PlayFabId to guarantee uniqueness.
 
@@ -248,6 +233,12 @@ The following APIs cause the Profile writes meter to increment.
 
 - [LinkXboxAccount](https://docs.microsoft.com/rest/api/playfab/client/account-management/linkxboxaccount?view=playfab-rest)
     Links the Xbox Live account associated with the provided access code to the user's PlayFab account.
+
+- [OpenTrade](https://docs.microsoft.com/en-us/rest/api/playfab/client/trading/opentrade?view=playfab-rest)
+    Opens a new outstanding trade. Note that a given item instance may only be in one open trade at a time.
+
+- [PayForPurchase](https://docs.microsoft.com/en-us/rest/api/playfab/client/player-item-management/payforpurchase?view=playfab-rest)
+    Selects a payment option for purchase order created via StartPurchase
 
 - [RemoveContactEmail](https://docs.microsoft.com/rest/api/playfab/client/account-management/removecontactemail?view=playfab-rest)
     Removes a contact email from the player's profile.
