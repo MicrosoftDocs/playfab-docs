@@ -38,7 +38,7 @@ public class TitleAuthenticationContext
 When you use the the [ExecuteFunction API](https://docs.microsoft.com/rest/api/playfab/cloudscript/server-side-cloud-script/executefunction?view=playfab-rest) to execute a script, the context that is provided includes the following information:
 * The Entity Profile of the caller
 * The Title Authentication Context
-* A boolean that indicates whether a Playsteam event is sent as part of the function being executed
+* A boolean that indicates whether a PlayStream event is sent as part of the function being executed
 * The functions arguments used when calling the script
 
 ```C#
@@ -61,7 +61,7 @@ When you [Scheduled Tasks](https://docs.microsoft.com/gaming/playfab/features/au
 * The Scheduled Task Name Id
 * The event history which includes a stack of PlayStream Events
 * The title Authentication Context
-* A boolean that indicates whether a Playsteam event is sent as part of the function being executed
+* A boolean that indicates whether a PlayStream event is sent as part of the function being executed
 * The functions argument used when calling the script
 
 ```C#
@@ -93,7 +93,7 @@ When executing a script through Player PlayStream Events, entering or leaving an
 * Boolean indicating if the player profile is trunctated.  
    * The Player Profile will be truncated if it is over 2048 bytes.  If this occurs you will need to use the profile APIs (either server, client or entity APIs) to retrieve the full profile.
 * The PlayStream event which triggered the script.
-* A boolean that indicates whether a Playsteam event is sent as part of the function being executed
+* A boolean that indicates whether a PlayStream event is sent as part of the function being executed
 * The functions arguments used when calling the script
 
 ```C#
@@ -118,7 +118,7 @@ public class PlayerPlayStreamFunctionExecutionContext : PlayerPlayStreamFunction
 When executing script through Entity PlayStream Events, entering or leaving an entity segment or as part of a entity segment based scheduled task the context that is provided includes the following information:
 * The Entity Profile
 * The PlayStream event which triggered the script.
-* A boolean that indicates whether a Playsteam event is sent as part of the function being executed
+* A boolean that indicates whether a PlayStream event is sent as part of the function being executed
 
 ```C#
 // Models via Entity PlayStream event, entering or leaving an 
