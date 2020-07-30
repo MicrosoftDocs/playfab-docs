@@ -18,9 +18,6 @@ The following APIs cause the Content & Configuration reads meter to increment.
 
 ## Admin APIs
 
-- [ExportMasterPlayerData](https://docs.microsoft.com/rest/api/playfab/admin/account-management/exportmasterplayerdata?view=playfab-rest)
-    Exports all associated data of a master player account.
-
 - [GetContentUploadUrl](https://docs.microsoft.com/rest/api/playfab/admin/content/getcontentuploadurl?view=playfab-rest)
     Retrieves the pre-signed URL for uploading a content file. A subsequent HTTP PUT to the returned URL uploads the content. Also, please be aware that the Content service is specifically PlayFab's CDN offering, for which standard CDN rates apply
 
