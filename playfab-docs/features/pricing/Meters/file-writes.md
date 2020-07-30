@@ -27,8 +27,17 @@ The following APIs cause the Content & Configuration writes meter to increment.
 - [DeleteContent](https://docs.microsoft.com/rest/api/playfab/admin/content/deletecontent?view=playfab-rest)
   Delete a content file from the title. When deleting a file that does not exist, it returns success.
 
+-[ModifyMatchmakerGameModes](https://docs.microsoft.com/en-us/rest/api/playfab/admin/matchmaking/modifymatchmakergamemodes?view=playfab-rest)
+    Updates the game server mode details for the specified game server executable
+
+-[ResetPassword](https://docs.microsoft.com/en-us/rest/api/playfab/admin/account-management/resetpassword?view=playfab-rest)
+    Reset a player's password for a given title.
+
 - [SetupPushNotification](https://docs.microsoft.com/rest/api/playfab/admin/title-wide-data-management/setuppushnotification?view=playfab-rest)
   Sets the Amazon Resource Name (ARN) for iOS and Android push notifications. Documentation on the exact restrictions can be found at: http://docs.aws.amazon.com/sns/latest/api/API_CreatePlatformApplication.html. Currently, Amazon device Messaging is not supported.
+
+- [UpdatePolicy](https://docs.microsoft.com/en-us/rest/api/playfab/admin/authentication/updatepolicy?view=playfab-rest)
+    Changes a policy for a title
 
 ## Data APIs
 

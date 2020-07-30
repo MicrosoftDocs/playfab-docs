@@ -31,6 +31,15 @@ The following APIs cause the Profile writes meter to increment.
 - [BanUsers](https://docs.microsoft.com/rest/api/playfab/admin/account-management/banusers?view=playfab-rest)
     Bans users by PlayFab ID with optional IP address, or MAC address for the provided game.
 
+-[CreateActionsOnPlayersInSegmentTask](https://docs.microsoft.com/en-us/rest/api/playfab/admin/scheduledtask/createactionsonplayersinsegmenttask?view=playfab-rest)
+    Create an ActionsOnPlayersInSegment task, which iterates through all players in a segment to execute action.
+
+-[CreatePlayerSharedSecret](https://docs.microsoft.com/en-us/rest/api/playfab/admin/authentication/createplayersharedsecret?view=playfab-rest)
+    Creates a new Player Shared Secret Key. It may take up to 5 minutes for this key to become generally available after this API returns.
+
+-[CreatePlayerStatisticDefinition](https://docs.microsoft.com/en-us/rest/api/playfab/admin/player-data-management/createplayerstatisticdefinition?view=playfab-rest)
+    Adds a new player statistic configuration to the title, optionally allowing the developer to specify a reset interval and an aggregation method.
+
 - [DeleteMasterPlayerAccount](https://docs.microsoft.com/rest/api/playfab/admin/account-management/deletemasterplayeraccount?view=playfab-rest)
     Removes a master player account entirely from all titles and deletes all associated data.
 
@@ -49,6 +58,12 @@ The following APIs cause the Profile writes meter to increment.
 - [GrantItemsToUsers](https://docs.microsoft.com/rest/api/playfab/admin/player-item-management/grantitemstousers?view=playfab-rest)
     Adds the specified items to the specified user inventories
 
+-[IncrementLimitedEditionItemAvailability](https://docs.microsoft.com/en-us/rest/api/playfab/admin/player-item-management/incrementlimitededitionitemavailability?view=playfab-rest)
+    Increases the global count for the given scarce resource.
+
+-[IncrementPlayerStatisticVersion](https://docs.microsoft.com/en-us/rest/api/playfab/admin/player-data-management/incrementplayerstatisticversion?view=playfab-rest)
+    Resets the indicated statistic, removing all player entries for it and backing up the old values.
+
 - [RefundPurchase](https://docs.microsoft.com/rest/api/playfab/admin/player-data-management/refundpurchase?view=playfab-rest)
     Attempts to process an order refund through the origin'l real money payment provider.""
 
@@ -64,6 +79,9 @@ The following APIs cause the Profile writes meter to increment.
 - [ResetUserStatistics](https://docs.microsoft.com/rest/api/playfab/admin/player-data-management/resetuserstatistics?view=playfab-rest)
     Completely removes all statistics for the specified user, for the current game.
 
+-[ResolvePurchaseDispute](https://docs.microsoft.com/en-us/rest/api/playfab/admin/player-data-management/resolvepurchasedispute?view=playfab-rest)
+    Attempts to resolve a dispute with the original order's payment provider.
+    
 - [RevokeAllBansForUser](https://docs.microsoft.com/rest/api/playfab/admin/account-management/revokeallbansforuser?view=playfab-rest)
     Revoke all active bans for a user.
 
@@ -106,6 +124,15 @@ The following APIs cause the Profile writes meter to increment.
 - [UpdateCatalogItems](https://docs.microsoft.com/rest/api/playfab/admin/title-wide-data-management/updatecatalogitems?view=playfab-rest)
     Updates the catalog configuration for virtual goods in the specified catalog version.
 
+- [UpdatePlayerSharedSecret](https://docs.microsoft.com/en-us/rest/api/playfab/admin/authentication/updateplayersharedsecret?view=playfab-rest)
+    Updates a existing Player Shared Secret Key. It may take up to 5 minutes for this update to become generally available after this API returns.
+
+- [UpdatePlayerStatisticDefinition](https://docs.microsoft.com/en-us/rest/api/playfab/admin/player-data-management/updateplayerstatisticdefinition?view=playfab-rest)
+    Updates a player statistic configuration for the title, optionally allowing the developer to specify a reset interval.
+
+- [UpdateRandomResultTables](https://docs.microsoft.com/en-us/rest/api/playfab/admin/title-wide-data-management/updaterandomresulttables?view=playfab-rest)
+    Updates the random drop table configuration for the title
+
 - [UpdateStoreItems](https://docs.microsoft.com/rest/api/playfab/admin/title-wide-data-management/updatestoreitems?view=playfab-rest)
     Updates an existing virtual item store with new or modified items.
 
@@ -132,6 +159,24 @@ The following APIs cause the Profile writes meter to increment.
 
 ## Client APIs
 
+- [AcceptTrade](https://docs.microsoft.com/en-us/rest/api/playfab/client/trading/accepttrade?view=playfab-rest)
+    Accepts an open trade (one that has not yet been accepted or cancelled), if the locally signed-in player is in the allowed player list for the trade, or it is open to all players. If the call is successful, the offered and accepted items will be swapped between the two players' inventories.
+
+- [AddFriend](https://docs.microsoft.com/en-us/rest/api/playfab/client/friend-list-management/addfriend?view=playfab-rest)
+    Adds the PlayFab user, based upon a match against a supplied unique identifier, to the friend list of the local user. At least one of FriendPlayFabId,FriendUsername,FriendEmail, or FriendTitleDisplayName should be initialized.
+
+- [AddGenericID](https://docs.microsoft.com/rest/api/playfab/server/account-management/addgenericid?view=playfab-rest)
+    Adds the specified generic service identifier to the player's PlayFab account. This is designed to allow for a PlayFab ID lookup of any arbitrary service identifier a title wants to add. This identifier should never be used as authentication credentials, as the intent is that it is easily accessible by other players.
+
+- [AddOrUpdateContactEmail](https://docs.microsoft.com/en-us/rest/api/playfab/client/account-management/addorupdatecontactemail?view=playfab-rest)
+    Adds or updates a contact email to the player's profile.
+
+- [AddSharedGroupMembers](https://docs.microsoft.com/rest/api/playfab/server/shared-group-data/addsharedgroupmembers?view=playfab-rest)
+    Adds users to the set of those able to update both the shared data, as well as the set of users in the group. Only users in the group (and the server) can add new members. Shared Groups are designed for sharing data between a very small number of players, see [Using Shared Group Data](https://docs.microsoft.com/gaming/playfab/features/social/groups/using-shared-group-data).
+
+- [AddUsernamePassword](https://docs.microsoft.com/en-us/rest/api/playfab/client/account-management/addusernamepassword?view=playfab-rest)
+    Adds playfab username/password auth to an existing account created via an anonymous auth method, e.g. automatic device ID login.
+
 - [ConsumePSNEntitlements](https://docs.microsoft.com/rest/api/playfab/client/platform-specific-methods/consumepsnentitlements?view=playfab-rest)
     Checks for any new consumable entitlements. If any are found, they are consumed and added as PlayFab items.
 
@@ -140,21 +185,6 @@ The following APIs cause the Profile writes meter to increment.
 
 - [CreateSharedGroup](https://docs.microsoft.com/rest/api/playfab/client/shared-group-data/createsharedgroup?view=playfab-rest)
     Requests the creation of a shared group object, containing key/value pairs which may be updated by all members of the group. Upon creation, the current user will be the only member of the group. Shared Groups are designed for sharing data between a very small number of players, please see our guide: https://docs.microsoft.com/gaming/playfab/features/social/groups/using-shared-group-data
-
-- [GetUserData](https://docs.microsoft.com/rest/api/playfab/client/player-data-management/getuserdata?view=playfab-rest)
-    Retrieves the title-specific custom data for the user which is readable and writable by the client.
-
-- [GetUserInventory](https://docs.microsoft.com/rest/api/playfab/client/player-item-management/getuserinventory?view=playfab-rest)
-    Retrieves the user's current inventory of virtual goods.
-
-- [GetUserPublisherData](https://docs.microsoft.com/rest/api/playfab/client/player-data-management/getuserpublisherdata?view=playfab-rest)
-    Retrieves the publisher-specific custom data for the user which is readable and writable by the client.
-
-- [GetUserPublisherReadOnlyData](https://docs.microsoft.com/rest/api/playfab/client/player-data-management/getuserpublisherreadonlydata?view=playfab-rest)
-    Retrieves the publisher-specific custom data for the user which can only be read by the client.
-
-- [GetUserReadOnlyData](https://docs.microsoft.com/rest/api/playfab/client/player-data-management/getuserreadonlydata?view=playfab-rest)
-    Retrieves the title-specific custom data for the user which can only be read by the client.
 
 - [GrantCharacterToUser](https://docs.microsoft.com/rest/api/playfab/client/characters/grantcharactertouser?view=playfab-rest)
     Grants the specified character type to the user. CharacterIds are not globally unique; characterId must be evaluated with the parent PlayFabId to guarantee uniqueness.
@@ -204,6 +234,24 @@ The following APIs cause the Profile writes meter to increment.
 - [LinkXboxAccount](https://docs.microsoft.com/rest/api/playfab/client/account-management/linkxboxaccount?view=playfab-rest)
     Links the Xbox Live account associated with the provided access code to the user's PlayFab account.
 
+- [OpenTrade](https://docs.microsoft.com/en-us/rest/api/playfab/client/trading/opentrade?view=playfab-rest)
+    Opens a new outstanding trade. Note that a given item instance may only be in one open trade at a time.
+
+- [PurchaseItem](https://docs.microsoft.com/en-us/rest/api/playfab/client/player-item-management/purchaseitem?view=playfab-rest)
+    Buys a single item with virtual currency. You must specify both the virtual currency to use to purchase, as well as what the client believes the price to be. This lets the server fail the purchase if the price has changed.
+
+- [PayForPurchase](https://docs.microsoft.com/en-us/rest/api/playfab/client/player-item-management/payforpurchase?view=playfab-rest)
+    Selects a payment option for purchase order created via StartPurchase
+
+- [RegisterForIOSPushNotification](https://docs.microsoft.com/en-us/rest/api/playfab/client/platform-specific-methods/registerforiospushnotification?view=playfab-rest)
+    Registers the iOS device to receive push notifications
+
+- [RegisterPlayFabUser](https://docs.microsoft.com/en-us/rest/api/playfab/client/authentication/registerplayfabuser?view=playfab-rest)
+    Registers a new Playfab user account, returning a session identifier that can subsequently be used for API calls which require an authenticated user. You must supply either a username or an email address.
+
+- [RegisterWithWindowsHello](https://docs.microsoft.com/en-us/rest/api/playfab/client/authentication/registerwithwindowshello?view=playfab-rest)
+    Registers a new PlayFab user account using Windows Hello authentication, returning a session ticket that can subsequently be used for API calls which require an authenticated user
+
 - [RemoveContactEmail](https://docs.microsoft.com/rest/api/playfab/client/account-management/removecontactemail?view=playfab-rest)
     Removes a contact email from the player's profile.
 
@@ -215,6 +263,18 @@ The following APIs cause the Profile writes meter to increment.
 
 - [RemoveSharedGroupMembers](https://docs.microsoft.com/rest/api/playfab/client/shared-group-data/removesharedgroupmembers?view=playfab-rest)
     Removes users from the set of those able to update the shared data and the set of users in the group. Only users in the group can remove members. If as a result of the call, zero users remain with access, the group and its associated data will be deleted. Shared Groups are designed for sharing data between a very small number of players, see [Using Shared Group Data](https://docs.microsoft.com/gaming/playfab/features/social/groups/using-shared-group-data).
+
+- [ReportAdActivity](https://docs.microsoft.com/en-us/rest/api/playfab/client/advertising/reportadactivity?view=playfab-rest)
+    Report player's ad activity
+
+- [ReportDeviceInfo](https://docs.microsoft.com/en-us/rest/api/playfab/client/analytics/reportdeviceinfo?view=playfab-rest)
+    Write a PlayStream event to describe the provided player device information. This API method is not designed to be called directly by developers. Each PlayFab client SDK will eventually report this information automatically.
+
+- [ReportPlayer](https://docs.microsoft.com/rest/api/playfab/client/account-management/reportplayer?view=playfab-rest)
+    Submit a report for another player (due to bad bahavior, etc.), so that customer service representatives for the title can take action concerning potentially toxic players.
+
+- [RestoreIOSPurchases](https://docs.microsoft.com/en-us/rest/api/playfab/client/platform-specific-methods/restoreiospurchases?view=playfab-rest)
+    Restores all in-app purchases based on the given restore receipt
 
 - [SetFriendTags](https://docs.microsoft.com/rest/api/playfab/client/friend-list-management/setfriendtags?view=playfab-rest)
     Updates the tag list for a specified user in the friend list of the local user.
@@ -296,9 +356,6 @@ Creates and updates the title-specific custom data for the user which is readabl
 
 - [UpdateUserTitleDisplayName](https://docs.microsoft.com/rest/api/playfab/client/account-management/updateusertitledisplayname?view=playfab-rest)
     Updates the title specific display name for the user
-
-- [ReportPlayer](https://docs.microsoft.com/rest/api/playfab/client/account-management/reportplayer?view=playfab-rest)
-    Submit a report for another player (due to bad bahavior, etc.), so that customer service representatives for the title can take action concerning potentially toxic players.
 
 ## Data APIs
 
