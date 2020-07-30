@@ -1,8 +1,8 @@
 ---
 title: Xbox Live helper library for PlayFab Party
 description: Xbox Live helper library for PlayFab Party
-author: AlexAtXbox
-ms.author: alstonge
+author: ScottMunroMS
+ms.author: scmunro
 ms.date: 07/14/2020
 ms.topic: article
 ms.prod: playfab

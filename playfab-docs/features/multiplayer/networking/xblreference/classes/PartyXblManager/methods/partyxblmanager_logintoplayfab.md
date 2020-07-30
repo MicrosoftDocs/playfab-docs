@@ -1,8 +1,8 @@
 ---
-author: alexatxbox
+author: ScottMunroMS
 title: "PartyXblManager::LoginToPlayFab"
 description: Signs the user in to PlayFab using an Xbox Live token, asynchronously returning an Entity ID and Entity Token that can subsequently be used for PlayFab API calls which require an authenticated PlayFab user or to create a PartyLocalUser. There is no difference between calling this method or using the LoginWithXbox method provided by the PlayFab SDK.
-ms.author: alstonge
+ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
 ms.date: 11/01/2019

@@ -1,8 +1,8 @@
 ---
-author: alexatxbox
+author: ScottMunroMS
 title: "PartyXblGetEntityIdsFromXboxLiveUserIdsCompletedStateChange"
 description: "Information specific to the *GetEntityIdsFromXboxLiveUserIdsCompleted* type of state change."
-ms.author: alstonge
+ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
 ms.date: 01/17/2020

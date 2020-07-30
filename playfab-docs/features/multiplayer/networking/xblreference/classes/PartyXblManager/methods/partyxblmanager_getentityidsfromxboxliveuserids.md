@@ -1,8 +1,8 @@
 ---
-author: alexatxbox
+author: ScottMunroMS
 title: "PartyXblManager::GetEntityIdsFromXboxLiveUserIds"
 description: Queues an asynchronous operation to retrieve a list of mappings between PlayFab Entity Ids and known Xbox Live User Ids.
-ms.author: alstonge
+ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
 ms.date: 01/17/2020

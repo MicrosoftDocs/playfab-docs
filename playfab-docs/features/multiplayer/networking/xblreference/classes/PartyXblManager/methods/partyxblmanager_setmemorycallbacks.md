@@ -1,8 +1,8 @@
 ---
-author: alexatxbox
+author: ScottMunroMS
 title: "PartyXblManager::SetMemoryCallbacks"
 description: Optionally configures the memory allocation and freeing callbacks the Party Xbox Live Helper library should use.
-ms.author: alstonge
+ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
 ms.date: 11/01/2019

@@ -1,8 +1,8 @@
 ---
-author: alexatxbox
+author: ScottMunroMS
 title: "PartyXblManager::CreateLocalChatUser"
 description: Queues an asynchronous attempt to create a local chat user. Privacy and privilege information related to this user will be tracked by the helper library.
-ms.author: alstonge
+ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
 ms.date: 11/01/2019

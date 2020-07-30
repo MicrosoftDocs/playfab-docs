@@ -1,8 +1,8 @@
 ---
-author: alexatxbox
+author: ScottMunroMS
 title: "PartyXblManager::GetChatUsers"
 description: Gets an array containing all chat users created by [CreateLocalChatUser()](partyxblmanager_createlocalchatuser.md) and [CreateRemoteChatUser()](partyxblmanager_createremotechatuser.md).
-ms.author: alstonge
+ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
 ms.date: 11/08/2019

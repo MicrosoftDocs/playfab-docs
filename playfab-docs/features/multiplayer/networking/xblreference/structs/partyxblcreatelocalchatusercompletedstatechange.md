@@ -1,8 +1,8 @@
 ---
-author: alexatxbox
+author: ScottMunroMS
 title: "PartyXblCreateLocalChatUserCompletedStateChange"
 description: "Information specific to the *CreateLocalChatUserCompleted* type of state change."
-ms.author: alstonge
+ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
 ms.date: 11/01/2019
