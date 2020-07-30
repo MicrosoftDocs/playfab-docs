@@ -3,7 +3,7 @@ title: PlayFab Party Release Notes
 author: ScottMunroMS
 description: Release notes for PlayFab Party
 ms.author: scmunro
-ms.date: 07/14/2020
+ms.date: 07/30/2020
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, party, release notes, multiplayer, networking
@@ -19,6 +19,12 @@ Release notes for the Xbox Live Helper library can be found [here](party-xboxliv
 PlayFab Party for Android and iOS are available on [GitHub.com](https://github.com/PlayFab/PlayFabParty/releases).
 
 Party Unity Plugin for GDK, Android, and iOS is available [here](https://github.com/playfab/PlayFabPartyUnity).
+
+## 1.4.13
+
+### Windows 8.1 dependency issue
+
+This release removes an unnecessary dependency on api-ms-win-core-version-l1-1-1.dll which prevented previous versions from working on Windows 8.1
 
 ## 1.4.8
 
