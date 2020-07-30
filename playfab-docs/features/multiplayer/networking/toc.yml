@@ -32,6 +32,8 @@
     href: concepts-invitations-security-model.md
   - name: Integrating discovery with Party
     href: concepts-discovery.md
+  - name: Transport options
+    href: transport-options.md
 - name: Chat
   items:
   - name: Understanding chat
