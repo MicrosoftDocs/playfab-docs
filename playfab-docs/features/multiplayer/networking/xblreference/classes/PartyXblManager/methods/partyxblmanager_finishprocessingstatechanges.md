@@ -1,8 +1,8 @@
 ---
-author: alexatxbox
+author: ScottMunroMS
 title: "PartyXblManager::FinishProcessingStateChanges"
 description: Returns an array of Party Xbox Live state changes that were being processed.
-ms.author: alstonge
+ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
 ms.date: 11/08/2019

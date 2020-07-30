@@ -1,8 +1,8 @@
 ---
 title: Troubleshooting Voice Chat
 description: Tips for troubleshooting PlayFab Party real-time chat and data communication.
-author: AlexAtXbox
-ms.author: alstonge
+author: ScottMunroMS
+ms.author: scmunro
 ms.date: 8/21/2019
 ms.topic: article
 ms.prod: playfab

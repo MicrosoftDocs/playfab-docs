@@ -1,8 +1,8 @@
 ---
 title: PlayFab Party Chat Permissions and Muting
 description: How to configure PlayFab Party real-time chat communication permissions and muting.
-author: AlexAtXbox
-ms.author: alstonge
+author: ScottMunroMS
+ms.author: scmunro
 ms.date: 07/11/2019
 ms.topic: article
 ms.prod: playfab

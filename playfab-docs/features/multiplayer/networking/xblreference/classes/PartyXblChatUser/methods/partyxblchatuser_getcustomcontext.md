@@ -1,8 +1,8 @@
 ---
-author: alexatxbox
+author: ScottMunroMS
 title: "PartyXblChatUser::GetCustomContext"
 description: Retrieves the app's private, custom pointer-sized context value previously associated with this local chat user object.
-ms.author: alstonge
+ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
 ms.date: 11/01/2019

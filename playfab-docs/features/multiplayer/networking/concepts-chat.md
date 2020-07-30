@@ -1,8 +1,8 @@
 ---
 title: Understanding How PlayFab Party chat works
 description: Information on how PlayFab Party real-time chat communication behaves and can be used.
-author: AlexAtXbox
-ms.author: alstonge
+author: ScottMunroMS
+ms.author: scmunro
 ms.date: 7/22/2019
 ms.topic: article
 ms.prod: playfab
