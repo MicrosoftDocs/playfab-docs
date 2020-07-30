@@ -1,8 +1,8 @@
 ---
-author: alexatxbox
+author: ScottMunroMS
 title: "PartyXblChatUser::GetXboxUserId"
 description: Gets the Xbox Live User Id associated with this user.
-ms.author: alstonge
+ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
 ms.date: 01/17/2020

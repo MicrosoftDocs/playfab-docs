@@ -1,8 +1,8 @@
 ---
-author: alexatxbox
+author: ScottMunroMS
 title: "PartyXblThreadId"
 description: "Threads that Party Xbox Live Helper library uses for internal purposes."
-ms.author: alstonge
+ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
 ms.date: 11/01/2019

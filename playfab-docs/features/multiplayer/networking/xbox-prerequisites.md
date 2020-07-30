@@ -1,8 +1,8 @@
 ---
 title: Xbox XDK Prerequisites
 description: Xbox XDK supplement for PlayFab Party quickstart
-author: AlexAtXbox
-ms.author: alstonge
+author: ScottMunroMS
+ms.author: scmunro
 ms.date: 11/5/2019
 ms.topic: article
 ms.prod: playfab

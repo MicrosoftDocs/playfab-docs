@@ -1,8 +1,8 @@
 ---
-author: alexatxbox
+author: ScottMunroMS
 title: "PartyXboxLive"
 description: TBD
-ms.author: alstonge
+ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
 ms.date: 01/17/2020

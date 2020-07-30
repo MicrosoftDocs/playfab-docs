@@ -1,8 +1,8 @@
 ---
-author: alexatxbox
+author: ScottMunroMS
 title: "PartyXblLocalChatUser::GetRequiredChatPermissionInfo"
 description: Gets the cached required chat permission information related to a target chat user.
-ms.author: alstonge
+ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
 ms.date: 11/08/2019

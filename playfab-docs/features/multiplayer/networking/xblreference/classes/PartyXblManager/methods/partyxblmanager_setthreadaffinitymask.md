@@ -1,8 +1,8 @@
 ---
-author: alexatxbox
+author: ScottMunroMS
 title: "PartyXblManager::SetThreadAffinityMask"
 description: Optionally configures the processor on which internal Party Xbox Live Helper library threads will run.
-ms.author: alstonge
+ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
 ms.date: 11/01/2019

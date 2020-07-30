@@ -1,8 +1,8 @@
 ---
-author: alexatxbox
+author: ScottMunroMS
 title: "PartyXblChatUser::SetCustomContext"
 description: Configures an optional, custom pointer-sized context value with this local chat user object.
-ms.author: alstonge
+ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
 ms.date: 11/01/2019

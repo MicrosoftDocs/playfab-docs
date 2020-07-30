@@ -1,8 +1,8 @@
 ---
-author: alexatxbox
+author: ScottMunroMS
 title: "PartyXblManager::StartProcessingStateChanges"
 description: Retrieves an array of all Party Xbox Live state changes to process since the last such call.
-ms.author: alstonge
+ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
 ms.date: 11/08/2019

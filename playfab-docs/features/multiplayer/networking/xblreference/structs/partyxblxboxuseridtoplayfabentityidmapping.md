@@ -1,8 +1,8 @@
 ---
-author: alexatxbox
+author: ScottMunroMS
 title: "PartyXblXboxUserIdToPlayFabEntityIdMapping"
 description: "Mapping between an Xbox Live User Id and a PlayFab Entity Id."
-ms.author: alstonge
+ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
 ms.date: 01/17/2020

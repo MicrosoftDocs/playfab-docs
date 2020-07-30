@@ -1,8 +1,8 @@
 ---
 title: PlayFab Party Xbox Live Helper Release Notes
-author: alexatxbox
+author: ScottMunroMS
 description: Release notes for PlayFab Party Xbox Live Helper
-ms.author: alstonge
+ms.author: scmunro
 ms.date: 08/15/2019
 ms.topic: article
 ms.prod: playfab
