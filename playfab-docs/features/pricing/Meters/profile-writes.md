@@ -237,8 +237,20 @@ The following APIs cause the Profile writes meter to increment.
 - [OpenTrade](https://docs.microsoft.com/en-us/rest/api/playfab/client/trading/opentrade?view=playfab-rest)
     Opens a new outstanding trade. Note that a given item instance may only be in one open trade at a time.
 
+- [PurchaseItem](https://docs.microsoft.com/en-us/rest/api/playfab/client/player-item-management/purchaseitem?view=playfab-rest)
+    Buys a single item with virtual currency. You must specify both the virtual currency to use to purchase, as well as what the client believes the price to be. This lets the server fail the purchase if the price has changed.
+
 - [PayForPurchase](https://docs.microsoft.com/en-us/rest/api/playfab/client/player-item-management/payforpurchase?view=playfab-rest)
     Selects a payment option for purchase order created via StartPurchase
+
+- [RegisterForIOSPushNotification](https://docs.microsoft.com/en-us/rest/api/playfab/client/platform-specific-methods/registerforiospushnotification?view=playfab-rest)
+    Registers the iOS device to receive push notifications
+
+- [RegisterPlayFabUser](https://docs.microsoft.com/en-us/rest/api/playfab/client/authentication/registerplayfabuser?view=playfab-rest)
+    Registers a new Playfab user account, returning a session identifier that can subsequently be used for API calls which require an authenticated user. You must supply either a username or an email address.
+
+- [RegisterWithWindowsHello](https://docs.microsoft.com/en-us/rest/api/playfab/client/authentication/registerwithwindowshello?view=playfab-rest)
+    Registers a new PlayFab user account using Windows Hello authentication, returning a session ticket that can subsequently be used for API calls which require an authenticated user
 
 - [RemoveContactEmail](https://docs.microsoft.com/rest/api/playfab/client/account-management/removecontactemail?view=playfab-rest)
     Removes a contact email from the player's profile.
@@ -251,6 +263,18 @@ The following APIs cause the Profile writes meter to increment.
 
 - [RemoveSharedGroupMembers](https://docs.microsoft.com/rest/api/playfab/client/shared-group-data/removesharedgroupmembers?view=playfab-rest)
     Removes users from the set of those able to update the shared data and the set of users in the group. Only users in the group can remove members. If as a result of the call, zero users remain with access, the group and its associated data will be deleted. Shared Groups are designed for sharing data between a very small number of players, see [Using Shared Group Data](https://docs.microsoft.com/gaming/playfab/features/social/groups/using-shared-group-data).
+
+- [ReportAdActivity](https://docs.microsoft.com/en-us/rest/api/playfab/client/advertising/reportadactivity?view=playfab-rest)
+    Report player's ad activity
+
+- [ReportDeviceInfo](https://docs.microsoft.com/en-us/rest/api/playfab/client/analytics/reportdeviceinfo?view=playfab-rest)
+    Write a PlayStream event to describe the provided player device information. This API method is not designed to be called directly by developers. Each PlayFab client SDK will eventually report this information automatically.
+
+- [ReportPlayer](https://docs.microsoft.com/rest/api/playfab/client/account-management/reportplayer?view=playfab-rest)
+    Submit a report for another player (due to bad bahavior, etc.), so that customer service representatives for the title can take action concerning potentially toxic players.
+
+- [RestoreIOSPurchases](https://docs.microsoft.com/en-us/rest/api/playfab/client/platform-specific-methods/restoreiospurchases?view=playfab-rest)
+    Restores all in-app purchases based on the given restore receipt
 
 - [SetFriendTags](https://docs.microsoft.com/rest/api/playfab/client/friend-list-management/setfriendtags?view=playfab-rest)
     Updates the tag list for a specified user in the friend list of the local user.
@@ -332,9 +356,6 @@ Creates and updates the title-specific custom data for the user which is readabl
 
 - [UpdateUserTitleDisplayName](https://docs.microsoft.com/rest/api/playfab/client/account-management/updateusertitledisplayname?view=playfab-rest)
     Updates the title specific display name for the user
-
-- [ReportPlayer](https://docs.microsoft.com/rest/api/playfab/client/account-management/reportplayer?view=playfab-rest)
-    Submit a report for another player (due to bad bahavior, etc.), so that customer service representatives for the title can take action concerning potentially toxic players.
 
 ## Data APIs
 

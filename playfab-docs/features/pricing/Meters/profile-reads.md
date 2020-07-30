@@ -274,9 +274,6 @@ The following APIs cause the Profile read meter to increment.
 - [GetPlayerCombinedInfo](https://docs.microsoft.com/rest/api/playfab/client/account-management/getplayercombinedinfo?view=playfab-rest)
     Retrieves all of the user's different kinds of info.
 
-- [SetPlayerSecret](https://docs.microsoft.com/rest/api/playfab/client/authentication/setplayersecret?view=playfab-rest)
-    Sets the player's secret if it is not already set. Player secrets are used to sign API requests. To reset a player's secret use the Admin or Server API method SetPlayerSecret.
-
 ## Data APIs
 
 - [GetObjects](https://docs.microsoft.com/rest/api/playfab/data/object/getobjects?view=playfab-rest)
@@ -324,6 +321,9 @@ The following APIs cause the Profile read meter to increment.
     Retrieves the title player accounts associated with the given master player account.
 
 ## Server APIs
+
+- [EvaluateRandomResultTable](https://docs.microsoft.com/en-us/rest/api/playfab/server/player-item-management/evaluaterandomresulttable?view=playfab-rest)
+    Returns the result of an evaluation of a Random Result Table - the ItemId from the game Catalog which would have been added to the player inventory, if the Random Result Table were added via a Bundle or a call to UnlockContainer.
 
 - [GetAllSegments](https://docs.microsoft.com/rest/api/playfab/server/playstream/getallsegments?view=playfab-rest)
     Retrieves an array of player segment definitions. Results from this can be used in subsequent API calls such as GetPlayersInSegment which requires a Segment ID. While segment names can change the ID for that segment will not change.
