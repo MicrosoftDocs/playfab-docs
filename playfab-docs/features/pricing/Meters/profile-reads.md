@@ -331,6 +331,7 @@ The following APIs cause the Profile read meter to increment.
 
 ## Server APIs
 
+
 - [EvaluateRandomResultTable](https://docs.microsoft.com/rest/api/playfab/server/player-item-management/evaluaterandomresulttable?view=playfab-rest)
     Returns the result of an evaluation of a Random Result Table - the ItemId from the game Catalog which would have been added to the player inventory, if the Random Result Table were added via a Bundle or a call to UnlockContainer.
 
