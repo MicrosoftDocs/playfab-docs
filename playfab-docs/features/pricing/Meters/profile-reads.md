@@ -98,7 +98,16 @@ The following APIs cause the Profile read meter to increment.
 
 - [GetPlayersInSegment](https://docs.microsoft.com/rest/api/playfab/admin/playstream/getplayersinsegment?view=playfab-rest)
     Allows for paging through all players in a given segment. This API creates a snapshot of all player profiles that match the segment definition at the time of its creation and lives through the Total Seconds to Live, refreshing its life span on each subsequent use of the Continuation Token. Profiles that change during the course of paging will not be reflected in the results. AB Test segments are currently not supported by this operation.
-
+    
+- [GetExperiments](https://docs.microsoft.com/rest/api/playfab/experimentation/experimentation/getexperiments?view=playfab-rest)
+    Gets the details of all experiments for a title.
+    
+- [GetLatestScorecard](https://docs.microsoft.com/rest/api/playfab/experimentation/experimentation/getlatestscorecard?view=playfab-rest)
+    Gets the latest scorecard of the experiment for the title.
+    
+- [GetTreatmentAssignment](https://docs.microsoft.com/rest/api/playfab/experimentation/experimentation/gettreatmentassignment?view=playfab-rest)
+    Gets the treatment assignments for a player for every running experiment in the title
+    
 ## Client APIs
 
 - [GetAllUsersCharacters](https://docs.microsoft.com/rest/api/playfab/client/characters/getalluserscharacters?view=playfab-rest)
@@ -322,7 +331,8 @@ The following APIs cause the Profile read meter to increment.
 
 ## Server APIs
 
-- [EvaluateRandomResultTable](https://docs.microsoft.com/en-us/rest/api/playfab/server/player-item-management/evaluaterandomresulttable?view=playfab-rest)
+
+- [EvaluateRandomResultTable](https://docs.microsoft.com/rest/api/playfab/server/player-item-management/evaluaterandomresulttable?view=playfab-rest)
     Returns the result of an evaluation of a Random Result Table - the ItemId from the game Catalog which would have been added to the player inventory, if the Random Result Table were added via a Bundle or a call to UnlockContainer.
 
 - [GetAllSegments](https://docs.microsoft.com/rest/api/playfab/server/playstream/getallsegments?view=playfab-rest)
