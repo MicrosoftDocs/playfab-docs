@@ -1,7 +1,7 @@
 - name: Overview
   href: index.md
 - name: Quickstart
-  href: index.md
+  href: quickstart.md
 - name: Recommendations
   href: experimentation-keys.md
 - name: Key-terms
