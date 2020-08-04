@@ -20,12 +20,14 @@ ms.localizationpriority: medium
 
 2. **[Development Mode](../pricing/development-mode.md):** Understand technical limits applied to titles in development mode.
 
-3. **[Multiplayer Server Pricing](https://docs.microsoft.com/gaming/playfab/features/multiplayer/servers/billing-for-thunderhead):** Learn about multiplayer server (MPS) pricing when MPS is enabled.
+3. **[Pricing Meters](../pricing/meters/meters.md):** Learn about meter pricing and related APIs.
 
-4. **[Party Pricing](https://docs.microsoft.com/gaming/playfab/features/multiplayer/networking/pricing):** Learn about Party pricing when Party is enabled.
+4. **[Multiplayer Server Pricing](https://docs.microsoft.com/gaming/playfab/features/multiplayer/servers/billing-for-thunderhead):** Learn about multiplayer server (MPS) pricing when MPS is enabled.
 
-5. **[Pricing Meters](../pricing/meters/meters.md):** Learn about meter pricing and related APIs.
+5. **[Party Pricing](https://docs.microsoft.com/gaming/playfab/features/multiplayer/networking/pricing):** Learn about Party pricing when Party is enabled.
 
-6. **[Technical Support](../pricing/paidtechnicalsupport.md):** Access support included in paid account plans.
+6. **[Experiments Pricing](https://docs.microsoft.com/gaming/playfab/features/analytics/experiments/pricing):** Learn about Experiments pricing when used.
 
-7. **[Upgrading Accounts and Launching Titles](../pricing/upgrades.md):** Expand your player base by upgrading your account launching titles.
+7. **[Technical Support](../pricing/paidtechnicalsupport.md):** Access support included in paid account plans.
+
+8. **[Upgrading Accounts and Launching Titles](../pricing/upgrades.md):** Expand your player base by upgrading your account launching titles.

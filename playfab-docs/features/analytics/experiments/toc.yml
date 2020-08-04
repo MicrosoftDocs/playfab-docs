@@ -1,6 +1,10 @@
 - name: Overview
   href: index.md
+- name: Quickstart
+  href: index.md
 - name: Recommendations
   href: experimentation-keys.md
 - name: Key-terms
   href: experimentation_key_terms.md
+- name: Billing for Experiments
+  href: pricing.md
