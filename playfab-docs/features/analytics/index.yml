@@ -35,7 +35,15 @@ landingContent:
           - text: Best practices for running Experiments
             url: experiments/experimentation-keys.md
           - text: Experiments key terms
-            url: experiments/experimentation_key_terms.md            
+            url: experiments/experimentation_key_terms.md  
+      - linkListType: quickstart
+        links:
+          - text: Explore Experiments from Game Manager
+            url: experiments/quickstart.md
+      - linkListType: concept
+        links:
+          - text: Billing for Experiments
+            url: experiments/pricing.md
 
   # Card
   - title: Xbox Data Add-On

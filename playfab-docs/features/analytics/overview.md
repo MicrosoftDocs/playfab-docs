@@ -16,7 +16,7 @@ PlayFab Analytics is a set of tools for data analytics, storage, processing, and
 
 Segmentation lets you create groups of players based on their player properties. Players will move in and out of segments in real-time, as Playstream events occur. Segmentation can be integrated with many other services across PlayFab. To get started, see the [Segmentation Quickstart](segmentation/quickstart.md). 
 
-Experiments allows you to create and manage multiple concurrent experiments through Game Manager. Experiments can be scheduled to run at certain times, and run across targeted player segments. To get started, see the [Experiments Quickstart](experiments/index.md#quick-start).
+Experiments allows you to create and manage multiple concurrent experiments through Game Manager. Experiments can be scheduled to run at certain times, and run across targeted player segments. To get started, see the [Experiments Quickstart](experiments/quickstart.md).
 
 Metrics automatically calculates a daily report of industry-standard metrics on engagement and revenue. Explore your metrics in the Reports and Trends tabs of the Dashboards section in Game Manager. To get started, see the [Metrics Quickstart](metrics/quickstart.md).
 
