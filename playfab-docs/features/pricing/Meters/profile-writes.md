@@ -177,6 +177,9 @@ The following APIs cause the Profile writes meter to increment.
 - [AddUsernamePassword](https://docs.microsoft.com/en-us/rest/api/playfab/client/account-management/addusernamepassword?view=playfab-rest)
     Adds playfab username/password auth to an existing account created via an anonymous auth method, e.g. automatic device ID login.
 
+- [AndroidDevicePushNotificationRegistration](https://docs.microsoft.com/en-us/rest/api/playfab/client/platform-specific-methods/androiddevicepushnotificationregistration?view=playfab-rest)
+    Registers the Android device to receive push notifications
+
 - [ConsumePSNEntitlements](https://docs.microsoft.com/rest/api/playfab/client/platform-specific-methods/consumepsnentitlements?view=playfab-rest)
     Checks for any new consumable entitlements. If any are found, they are consumed and added as PlayFab items.
 
