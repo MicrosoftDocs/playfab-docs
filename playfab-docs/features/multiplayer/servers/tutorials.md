@@ -1,8 +1,8 @@
 ---
 title: Servers Tutorials
-author: v-thopra
+author: joannaleecy
 description: Overview page for tutorials about multiplayer topics.
-ms.author: v-thopra
+ms.author: joanlee
 ms.date: 11/19/2018
 ms.topic: article
 ms.prod: playfab
@@ -30,7 +30,6 @@ The tutorials in this section walk you through multiplayer server topics.
 - [Multiplayer Servers - detailed price sheet](multiplayer-servers-detailed-price-sheet.md)
 - [PlayFab Multiplayer PowerShell Update - December 4, 2018](playfab-multiplayer-powershell-update-12042018.md)
 - [PlayFab Multiplayer Server 2.0 - Managed Container Update](thunderhead-managed-container-update.md)
-- [PlayFab Multiplayer Servers 2.0 (Thunderhead)](thunderhead.md)
 - [Using Externally-hosted game servers](using-externally-hosted-games-servers-with-playfab.md)
 - [Using quality-of-service (QoS) beacons to measure player latency to Azure](using-qos-beacons-to-measure-player-latency-to-azure.md)
 - [Deploying linux based builds](deploying-linux-based-builds.md)

@@ -18,8 +18,6 @@ Instead, game servers using `GetAdaptersInfo` (Windows) or `GetIfAddrs` (Linux) 
 
 This usage of network virtualization and NAT allows game servers to maintain connections even as underlying Azure infrastructure may be changing. All game servers have IPv4 connectivity, but IPv6 connectivity will be added in the future.
 
-This usage of network virtualization and NAT allows Game Servers to maintain connections even as underlying Azure infrastructure may be changing.
-
 > [!NOTE]
 > All Game Servers have IPv4 connectivity - IPv6 connectivity will be added in the future.
 
