@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Multiplayer with PlayFab
 
-Multiplayer is be a great addition to many titles, and PlayFab provides several services focused on multiplayer scenarios:
+Multiplayer is a great addition to many titles, and PlayFab provides several services focused on multiplayer scenarios:
 
 |Service|Description|
 |--|--|
