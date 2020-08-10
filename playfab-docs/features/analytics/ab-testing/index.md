@@ -1,8 +1,8 @@
 ---
 title: What is A/B testing?
-author: v-thopra
+author: joannaleecy
 description: Overview of A/B testing.
-ms.author: v-thopra
+ms.author: joanlee
 ms.date: 01/31/2019
 ms.topic: article
 ms.prod: playfab
@@ -18,7 +18,7 @@ With A/B testing, you create a series of player “buckets” into which you par
 
 The following table of values gives you an example of what this might look like.
 
-|                      |A                   |B                      |C                      |
+| Variable             |A                   |B                      |C                      |
 | :--------------------|:-------------------|:----------------------|:----------------------|
 |Weight                |50%                 |25%                    |25%                    |
 |Price per item        |$1.99               |$2.99                  |$4.99                  |
