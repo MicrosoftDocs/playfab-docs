@@ -77,3 +77,25 @@ Here we examine some best practices for using PlayFab Insights as well as addres
      | Max payload size  | 10240 bytes (10KB) | |
 
      If you run into any of these limits, please contact the Playfab Support team for assistance. In the upper right-hand corner of Game Manager select the question mark icon, then select **Contact Us**.
+
+### I get an error “Query execution has exceeded the allowed limits” when I try to make a query.
+- This error occurs when the size of the result set or the number of rows in the result set exceeds the allowed limit. Try limiting the amount of data returned by scoping the query to relevant data using the *where*, *limit*, or *summarize* operators 
+- Navigate to the **Event Export Tab** under **Data** on the **Title Overview** page in PlayFab Game Manager. Here you can partition the data by time or unique id and run multiple smaller queries. For example:
+        
+        starttime = datetime(2020-01-01 00:00:00);
+
+        endtime = datetime(2020-01-02 00:00:00);
+
+        ['events.all'] | where FullName_Name == 'player_logged_in' and Timestamp >= starttime and Timestamp < endtime 
+  
+### I set truncationmaxsize and truncationmaxrecords variables to a larger value, but I am still getting an error.
+- PlayFab insights does not currently support setting these variables. See above for query formulation tips.
+
+### Will querying Insights data prevent events from being ingested? 
+- No. PlayFab events will flow into your title’s database with no performance penalty.
+
+### My queries return a “Partial query failure: Low memory condition” error 
+- This means the query is too complex and is unable to fit within the memory limits of your IPU Level. Try simplifying your query. For example, a summarize call may have too many groups, or you may be trying to operate on too many rows at once.
+You can also upgrade your IPU level to allow more memory to be allocated to each query.
+
+ 
