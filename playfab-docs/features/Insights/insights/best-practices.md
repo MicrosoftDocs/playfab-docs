@@ -87,7 +87,8 @@ Here we examine some best practices for using PlayFab Insights as well as addres
         endtime = datetime(2020-01-02 00:00:00);
 
         ['events.all'] | where FullName_Name == 'player_logged_in' and Timestamp >= starttime and Timestamp < endtime 
-  
+- View [Kusto documentation](https://docs.microsoft.com/en-us/azure/data-explorer/kusto/concepts/querylimits) for more information.
+
 ### I set truncationmaxsize and truncationmaxrecords variables to a larger value, but I am still getting an error.
 - PlayFab insights does not currently support setting these variables. See above for query formulation tips.
 
@@ -95,7 +96,5 @@ Here we examine some best practices for using PlayFab Insights as well as addres
 - No. PlayFab events will flow into your title’s database with no performance penalty.
 
 ### My queries return a “Partial query failure: Low memory condition” error 
-- This means the query is too complex and is unable to fit within the memory limits of your IPU Level. Try simplifying your query. For example, a summarize call may have too many groups, or you may be trying to operate on too many rows at once.
-You can also upgrade your IPU level to allow more memory to be allocated to each query.
-
- 
+- This means the query is too complex and is unable to fit within the memory limits of your Performance Level. Try simplifying your query. For example, a summarize call may have too many groups, or you may be trying to operate on too many rows at once.You can also upgrade your Performance level to allow more memory to be allocated to each query.
+- View [Kusto documentation]( https://docs.microsoft.com/en-us/azure/data-explorer/kusto/concepts/partialqueryfailures) for more information.
