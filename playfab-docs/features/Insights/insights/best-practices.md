@@ -78,15 +78,28 @@ Here we examine some best practices for using PlayFab Insights as well as addres
 
      If you run into any of these limits, please contact the Playfab Support team for assistance. In the upper right-hand corner of Game Manager select the question mark icon, then select **Contact Us**.
 
-### I get an error “Query execution has exceeded the allowed limits” when I try to make a query.
+### I get an error “Query execution has exceeded the allowed limits” when I try to run a query.
 - This error occurs when the size of the result set or the number of rows in the result set exceeds the allowed limit. Try limiting the amount of data returned by scoping the query to relevant data using the *where*, *limit*, or *summarize* operators 
-- Navigate to the **Event Export Tab** under **Data** on the **Title Overview** page in PlayFab Game Manager. Here you can partition the data by time or unique id and run multiple smaller queries. For example:
-        
-        starttime = datetime(2020-01-01 00:00:00);
+- To export all of your data, navigate to the **Event Export Tab** under **Data** on the **Title Overview** page in PlayFab Game Manager.
+- If you want to pull only segments of data or if you are still hitting the query limit, you can partition the data by time or unique id (ex. Player ID, Title ID) and run multiple, smaller queries. The follow is an example of how to partition based on time:
 
-        endtime = datetime(2020-01-02 00:00:00);
+Where
+```sql
+let start = datetime(2020-08-03);
+let end = datetime(2020-08-07);
+['events.all'] | where Timestamp between(start .. end)
+```
 
-        ['events.all'] | where FullName_Name == 'player_logged_in' and Timestamp >= starttime and Timestamp < endtime 
+Limit
+```sql
+['events.all'] | limit 1000
+```
+
+Summarize
+```sql
+['events.all'] | summarize count() by FullName_Name, bin(Timestamp, 1d)
+```
+
 - View [Kusto documentation](https://docs.microsoft.com/en-us/azure/data-explorer/kusto/concepts/querylimits) for more information.
 
 ### I set truncationmaxsize and truncationmaxrecords variables to a larger value, but I am still getting an error.
