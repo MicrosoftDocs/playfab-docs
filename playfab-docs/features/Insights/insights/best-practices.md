@@ -103,7 +103,7 @@ Summarize
 - View [Kusto documentation](https://docs.microsoft.com/en-us/azure/data-explorer/kusto/concepts/querylimits) for more information.
 
 ### I set truncationmaxsize and truncationmaxrecords variables to a larger value, but I am still getting an error.
-- PlayFab insights does not currently support setting these variables. See above for query formulation tips.
+- PlayFab Insights does not currently support setting these variables. See above for query formulation tips.
 
 ### Will querying Insights data prevent events from being ingested? 
 - No. PlayFab events will flow into your title’s database with no performance penalty.
@@ -111,3 +111,10 @@ Summarize
 ### My queries return a “Partial query failure: Low memory condition” error 
 - This means the query is too complex and is unable to fit within the memory limits of your Performance Level. Try simplifying your query. For example, a summarize call may have too many groups, or you may be trying to operate on too many rows at once.You can also upgrade your Performance level to allow more memory to be allocated to each query.
 - View [Kusto documentation]( https://docs.microsoft.com/en-us/azure/data-explorer/kusto/concepts/partialqueryfailures) for more information.
+
+### Will I lose data if my volume of events is higher than what is allowed by my performance level?
+- No, but you will be charged for overrages. Overages are measured in the number of Insights Credits consumed. Insights Credit prices can be found on [PlayFab.com/Pricing](PlayFab.com/pricing).
+
+### How do I decide by performance level?
+
+- The right performance level for you is best determined by your title's usage. By raising performance level, you'll gain access to more data in cache and other query resources resulting in faster running queries. View [Insights documentation](https://docs.microsoft.com/en-us/gaming/playfab/features/insights/insights/performance-retention) to learn more about performance levels.
