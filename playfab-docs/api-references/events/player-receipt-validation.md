@@ -18,7 +18,7 @@ This event is triggered when a player attempts to make a real money purchase and
 
 |Name|Type|Description|
 | :--------------------|:-------------------|:----------------------|
-|Error|String|The error that occured during a receipt validation.|
+|Error|String|The error that occurred during a receipt validation.|
 |PaymentProvider|String|Payment provider used to make the purchase attempt.|
 |PaymentType|[PaymentType](data-types/paymenttype.md)|Type of payment used to make the purchase attempt.|
 |ReceiptContent|String|The receipt data during a real money purchase event attempt.|
