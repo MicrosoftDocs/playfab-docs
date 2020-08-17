@@ -37,7 +37,7 @@ These services will begin to move from private to public preview in the first ha
 
 ## **Available Now:**
 
-**_Release notes on PlayFab GitHib Repo_**
+**_Release notes on PlayFab GitHub Repo_**
 
 We have created a new public [GitHub repository](https://github.com/PlayFab/PlayFab) for PlayFab where we communicate service [releases notes](https://github.com/PlayFab/PlayFab/releases) and product updates. You can read more about this on our [blog](https://blog.playfab.com/blog/release-notes-on-playfab-github-repo).
 
