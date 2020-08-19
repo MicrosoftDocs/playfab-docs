@@ -36,8 +36,41 @@ Insights for XBOX (IFX) is a replacement for Central Analytics and has a primary
 
 Certain individuals during the onboarding experience might be impacted with product permissions authentication issues with Partner Center. Please email the team at pfgaminginsights@microsoft.com if you are being impacted by this issue.
 
-
-
 ## Pricing
 
 IFX will be billed as part of the Insights meter through the row writes and storage components of the Insights meter. In general the costs for IFX will be lower then the current cross charge for Central Analytics so this should be long term cost savings for your studio.
+
+## IFX Data Sets and Tables
+
+### Logic Tables
+
+Pipeline | Table Name | Description
+--- | --- | ---
+Dim User | dim.usage.xbox_user | Presence usage and client usage data from users across all the platforms. Does not not contain anonymous users or external users.
+Dim Live Title User | dim.usage.xbox_live_title_user | Title usage report by user based on client usage.
+Dim User Platform | dim.usage.xbox_user_platform | Date a user is first seen on different platforms. Includes users from client usage and presence usage.
+Dim Live Title | dim.store.xbox_live_title | **LIVE TITLE DATA?**
+Dim Product | dim.store.xbox_product | Retail and non-retail products related to the on-boarded *XboxTitleID*.
+Dim Achievement | dim.usage.xbox_achievement | Achievement data for *XboxTitleID*.
+Dim Friends List | dim.social.xbox_friends_list | Due to the size of Friends data, this data set is opt-in only. Contains Modern Active Friends. Updated weekly. [Contact PlayFab](https://playfab.com/contact/) to enable.
+Dim Transaction Type | dim.store.xbox_transaction_type | **Transaction data related to IFX-enabled titles?**
+Dim Platform | dim.core.xbox_platform | **Which platforms a title has been accessed on?**
+Dim Geography | dim.core.xbox_geography | **I HAVE NO IDEA** :)
+Dim Payment Type | dim.store.xbox_payment_type | **Payment types per transaction by user??**
+
+### Fact Tables
+Pipeline | Table Name | Description
+--- | --- | ---
+Daily Presence Usage | metrics.usage.xbox_usage_presence
+Daily Client Usage | metrics.usage.xbox_daily_usage | Client usage based on TTSO telemetry with AAD users removed. Dataset does not include Steam usage.
+Daily Purchase | metrics.store.xbox_daily_purchase | Daily purchases with AAD users removed.
+Daily Cancellation | metrics.store.xbox_order_cancellations | metrics.store.xbox_order_cancellations | Daily cancellation data.
+Daily Refund | metrics.store.xbox_order_refunds | Daily refund data.
+Daily GamePass Title Rank | metrics.usage.xbox_gamepass_title_rank | Ranks based on usage against all titles in the Game Pass Vault.
+Daily GamePass Usage Acquisition | metrics.usage.xbox_gamepass_usage_acquisition | Tracks the first time a user plays a GamePass title on each device platform.
+Daily GamePass Usage | metrics.usage.xbox_gamepass_usage | Game Pass usage based on *AppInterActivity* telemetry.
+Daily GamePass Purchase | metrics.store.xbox_gamepass_purchase | Daily purchases of products in the Game Pass Vault.
+Daily Achievement | metrics.usage.xbox_achievement |Daily achievement data. If an event is sent to IFX multiple times on different days, the events will show up multiple times in this table with different *DateId*s but with all other fields identical. Additionally, platform values will differ due to showing all platforms the *XboxTitleId* is available on rather than the platform the achievement is achieved on. These are known issues due to Kusto (ADX) limitations.
+Daily Broadcast User | metrics.usage.xbox_broadcaster_activity_user | Daily broadcast user activity data.
+Daily Concurrency | metrics.usage.xbox_currency | Daily max currency for *XboxTitleId* on each platform.
+Daily Retention Cohort | metrics.usage.xbox_retention_cohort | Cohort stats for *XboxTitleId*s on each platform.
