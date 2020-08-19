@@ -1,8 +1,8 @@
 ---
 title: Insights Best Practices
-author: john-smith-microsoft
+author: mckmoffatt
 description: PlayFab Insights best practices and FAQs
-ms.author: johsmi
+ms.author: mcelliot
 ms.date: 02/28/2020
 ms.topic: article
 ms.prod: playfab
@@ -100,7 +100,7 @@ Summarize
 ['events.all'] | summarize count() by FullName_Name, bin(Timestamp, 1d)
 ```
 
-- View [Kusto documentation](https://docs.microsoft.com/en-us/azure/data-explorer/kusto/concepts/querylimits) for more information.
+- View [Kusto documentation](https://docs.microsoft.com/azure/data-explorer/kusto/concepts/querylimits) for more information.
 
 ### I set truncationmaxsize and truncationmaxrecords variables to a larger value, but I am still getting an error.
 - PlayFab Insights does not currently support setting these variables. See above for query formulation tips.
@@ -111,11 +111,19 @@ Summarize
 
 ### My queries return a “Partial query failure: Low memory condition” error 
 - This means the query is too complex and is unable to fit within the memory limits of your Performance Level. Try simplifying your query. For example, a summarize call may have too many groups, or you may be trying to operate on too many rows at once.You can also upgrade your Performance level to allow more memory to be allocated to each query.
-- View [Kusto documentation]( https://docs.microsoft.com/en-us/azure/data-explorer/kusto/concepts/partialqueryfailures) for more information.
+- View [Kusto documentation](https://docs.microsoft.com/azure/data-explorer/kusto/concepts/partialqueryfailures) for more information.
 
 ### Will I lose data if my volume of events is higher than what is allowed by my performance level?
-- No, but you will be charged for overrages. Overages are measured in the number of Insights Credits consumed. Insights Credit prices can be found on [PlayFab.com/Pricing](PlayFab.com/pricing).
+- No, but you will be charged for overrages. Overages are measured in the number of Insights Credits consumed. Insights Credit prices can be found on [PlayFab.com/Pricing](https://playfab.com/pricing/).
 
 ### How do I decide by performance level?
 
-- The right performance level for you is best determined by your title's usage. By raising performance level, you'll gain access to more data in cache and other query resources resulting in faster running queries. View [Insights documentation](https://docs.microsoft.com/en-us/gaming/playfab/features/insights/insights/performance-retention) to learn more about performance levels.
+- The right performance level for you is best determined by your title's usage. By raising performance level, you'll gain access to more data in cache and other query resources resulting in faster running queries. View [Insights documentation](https://docs.microsoft.com/gaming/playfab/features/insights/insights/performance-retention) to learn more about performance levels.
+
+## How do I grant a user permissions to the Data > Explorer page for a particular title?
+
+- Follow the [PlayFab User Roles](https://docs.microsoft.com/en-us/gaming/playfab/gamemanager/playfab-user-roles) guide to access, create, and grant user permissions. 
+- A user needs the following 3 permissions to access the Data Explorer: 
+    - Explorer data & tab 
+    - Analytics data read access
+    - Analytics data write access
