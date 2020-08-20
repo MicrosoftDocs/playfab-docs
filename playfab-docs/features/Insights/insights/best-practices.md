@@ -124,6 +124,6 @@ Summarize
 
 - Follow the [PlayFab User Roles](https://docs.microsoft.com/en-us/gaming/playfab/gamemanager/playfab-user-roles) guide to access, create, and grant user permissions. 
 - A user needs the following 3 permissions to access the Data Explorer: 
-    - Explorer data & tab 
-    - Analytics data read access
-    - Analytics data write access
+    - Explorer data & tab (Read and Write permissions)
+    - Analytics data read access (Read permissions)
+    - Analytics data write access (Write permissions)
