@@ -74,3 +74,13 @@ Daily Achievement | metrics.usage.xbox_achievement |Daily achievement data. If a
 Daily Broadcast User | metrics.usage.xbox_broadcaster_activity_user | Daily broadcast user activity data.
 Daily Concurrency | metrics.usage.xbox_currency | Daily max currency for *XboxTitleId* on each platform.
 Daily Retention Cohort | metrics.usage.xbox_retention_cohort | Cohort stats for *XboxTitleId*s on each platform.
+
+### Latency Logic
+
+Pipeline | Latency | Explanation
+--- | --- | ---
+Hourly Purchase Data | 1-2 Hours | IFX ingests hourly purchase order events from Xbox Live. Latency is no more than 2 hours from the time when the event was emitted. For example, purchase order events happening on 03/11 between 13:00 and 14:00 will be ingested on 03/11 by 15:00
+Daily Purchase Data | 1 Day | IFX ingests daily purchase data from various cosmos ConsumerModules. For purchase orders, we overwrite the hourly data ingested during the prior day. For example, on 03/11, we will overwrite the hourly purchase order data we ingested for 03/10 and replace with it with daily purchase data for 03/10. When hourly event data is not available due to failures, cancellations, chargebacks, or refunds, daily data is the deepest granularity available.
+7 Day Purchase Reprocess | 1 Day | Reprocessed purchase data undergoes constant updates. For example, if a customer buys a product and then cancels their order, the purchase data is updated. Every day IFX will back process purchase day on a rolling 7 days basis to ensure any late arriving events and updates are captured. For example, on 03/11, we will populate 03/10 data for all purchase scenarios, as well as reprocess data for 03/04~03/09.
+Hourly Usage Data | 1-2 Hours | When tracking presence via title usage, *Microsoft.Xbox.Presence.BackEnd.Service.Logging.TitleEnd* events signify a session has ended. This event is ingested near real time and batch processed every hour but no more than 2 hours after the event is emitted. For example, if presence usage occurs on 03/11 between 13:00 and 14:00, usage data will be ingested by 03/11 15:00.
+Daily Usage Data | 1 Day | Daily usage data is only used for backfills or reprocessing. IFX ingests one day's worth of usage data all at once rather than ingesting the data hourly. The entire day will display as YYYY-MM-dd 00:00 in the *metrics.usage.xbox_usage_intervals* table. The exact usage start and end time is recorded in the *UsageStartTime* and *UsageEndTime* columns.
