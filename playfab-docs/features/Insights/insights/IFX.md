@@ -10,6 +10,10 @@ keywords: playfab, insights
 ms.localizationpriority: medium
 ---
 
+> [!WARNING]
+This page is a WIP
+
+
 # Insights for Xbox
 
 > [!Note]
@@ -17,7 +21,7 @@ Insights for XBOX is in Private Preview only and is not currently available to T
 
 Insights for Xbox pulls data from COSMOS and adds it to PlayFab’s Insights offering built on top of Azure Data Explorer (Kusto). Access to XBOX title data through PlayFab Insights allows you to query, segment, and analyze data through the PlayFab Game Manger.
 
-Insights for XBOX (IFX) is a replacement for Central Analytics and has a primary goal of minimizing transition costs by matching the Central Analytics data schema is closely as possible.
+[ Does this even matter to the public?] Insights for XBOX (IFX) is a replacement for Central Analytics and has a primary goal of minimizing transition costs by matching the Central Analytics data schema is closely as possible.
 
 ## Onboarding to IFX
 
@@ -34,7 +38,7 @@ Insights for XBOX (IFX) is a replacement for Central Analytics and has a primary
 1. To add more products, repeat steps 7 & 8.
 1. To delete products, select the **Remove** option next to the product ID that you would like to delete from IFX. When a product is deleted, past product data remains in IFX while future product data will no longer populate to IFX.
 
-Certain individuals during the onboarding experience might be impacted with product permissions authentication issues with Partner Center. Please email the team at pfgaminginsights@microsoft.com if you are being impacted by this issue.
+Certain individuals during the onboarding experience might be impacted with product permission authentication issues with Partner Center. Please email the team at pfgaminginsights@microsoft.com if you are impacted by this issue.
 
 ## Pricing
 
@@ -75,7 +79,7 @@ Daily Broadcast User | metrics.usage.xbox_broadcaster_activity_user | Daily broa
 Daily Concurrency | metrics.usage.xbox_currency | Daily max currency for *XboxTitleId* on each platform.
 Daily Retention Cohort | metrics.usage.xbox_retention_cohort | Cohort stats for *XboxTitleId*s on each platform.
 
-### Latency Logic
+## Latency by Data Type
 
 Pipeline | Latency | Explanation
 --- | --- | ---
@@ -83,4 +87,27 @@ Hourly Purchase Data | 1-2 Hours | IFX ingests hourly purchase order events from
 Daily Purchase Data | 1 Day | IFX ingests daily purchase data from various cosmos ConsumerModules. For purchase orders, we overwrite the hourly data ingested during the prior day. For example, on 03/11, we will overwrite the hourly purchase order data we ingested for 03/10 and replace with it with daily purchase data for 03/10. When hourly event data is not available due to failures, cancellations, chargebacks, or refunds, daily data is the deepest granularity available.
 7 Day Purchase Reprocess | 1 Day | Reprocessed purchase data undergoes constant updates. For example, if a customer buys a product and then cancels their order, the purchase data is updated. Every day IFX will back process purchase day on a rolling 7 days basis to ensure any late arriving events and updates are captured. For example, on 03/11, we will populate 03/10 data for all purchase scenarios, as well as reprocess data for 03/04~03/09.
 Hourly Usage Data | 1-2 Hours | When tracking presence via title usage, *Microsoft.Xbox.Presence.BackEnd.Service.Logging.TitleEnd* events signify a session has ended. This event is ingested near real time and batch processed every hour but no more than 2 hours after the event is emitted. For example, if presence usage occurs on 03/11 between 13:00 and 14:00, usage data will be ingested by 03/11 15:00.
-Daily Usage Data | 1 Day | Daily usage data is only used for backfills or reprocessing. IFX ingests one day's worth of usage data all at once rather than ingesting the data hourly. The entire day will display as YYYY-MM-dd 00:00 in the *metrics.usage.xbox_usage_intervals* table. The exact usage start and end time is recorded in the *UsageStartTime* and *UsageEndTime* columns.
+Daily Usage Data | 1 Day | Daily usage data is only used for backfills or reprocessing. IFX ingests one day's worth of usage data all at once rather than ingesting the data hourly. The entire day will display as YYYY-MM-dd 00:00 in the *metrics.usage.xbox_usage_intervals* table. The exact usage start and end time is recorded in the *UsageStartTime* and *UsageEndTime* columns. 
+Daily Subscription Status (*metrics.subscription.xbox_subscription_status*) | 2 Days | Represents users' subscription status from the reported day. Includes all major game subscription products (Gold, Game Pass, and EA). Only users with purchase or usage data for the title on the reported day will be present in the title database. This means that only the status of daily "active" users are shown for that day.
+Daily Subscription Status (*metrics.store.xbox_subscription_status*) | **INFO NEEDED** | Operates similarly to  the Daily Subscription Status but shows the subscription status of all users that have ever had usage activity.
+
+> [!WARNING] 
+> Should the below be public data?! My guess is no... not going to clean up the text until confirmed it should be here.
+
+### Subscription Status functions
+In the tenant title databases, the following functions can be deployed to let users query Subscription status for each Xuid and DateId combination. The functions populate the subscription state of each Gold, GamePass, EAAccess, PCGamePass, and Ultimate subscription, and displays if the Xuid is entitled for that subscription.
+
+- Xbox_Get_Subscription_Purchase_Orders
+- Xbox_Get_Subscription_Purchase_Chargeback
+- Xbox_Get_Subscription_Purchase_Failed
+- Xbox_Get_Subscription_Purchase_Cancellations
+- Xbox_Get_Subscription_Purchase_Refunds
+- Xbox_Get_Subscription_Usage
+
+The results can be obtained by running the function with *startDate* and *endDate* inputs as shown below. The example will fetch complete transaction details at Xuid level and which subscriptions it was entitled for.
+
+Xbox_Get_Subscription_Purchase_Orders('2020-02-01', '2020-03-01')​​​​​​​
+
+
+​​Run for shorter date range in case the function execution taking longer time, especially in the case of usage.
+- If the results are not shown, there might not be any transactions for the given date range.
