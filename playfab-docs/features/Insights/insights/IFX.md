@@ -19,7 +19,7 @@ This page is a WIP
 > [!Note]
 Insights for XBOX is in Private Preview only and is not currently available to Third Party Partners of Microsoft. The date for Public Preview and General Availability have not yet been announced. Please contact [PlayFab support](https://playfab.com/contact/) if you have any questions.
 
-Insights for Xbox pulls data from COSMOS and adds it to PlayFab’s Insights offering built on top of Azure Data Explorer (Kusto). Access to XBOX title data through PlayFab Insights allows you to query, segment, and analyze data through the PlayFab Game Manger.
+Insights for Xbox pulls Xbox title data into PlayFab’s Insights offering which is built on top of Azure Data Explorer (Kusto). Access to XBOX title data through PlayFab Insights allows you to query, segment, and analyze data through the PlayFab Game Manger.
 
 [ Does this even matter to the public?] Insights for XBOX (IFX) is a replacement for Central Analytics and has a primary goal of minimizing transition costs by matching the Central Analytics data schema is closely as possible.
 
@@ -42,7 +42,7 @@ Certain individuals during the onboarding experience might be impacted with prod
 
 ## Pricing
 
-IFX will be billed as part of the Insights meter through the row writes and storage components of the Insights meter. In general the costs for IFX will be lower then the current cross charge for Central Analytics so this should be long term cost savings for your studio.
+IFX will be billed as part of the exisiting [Insights meter](https://docs.microsoft.com/en-us/gaming/playfab/features/insights/insights/pricing) through row writes (ingestion) and storage components of the Insights meter. A new line for IFX Ingestion will appear on the **Billing Summary** to display accumulated IFX charges. Charges will be calculated based on the size of the data ingested into IFX by counting the number of row writes. The latest ingestion prices can be found on the **Insights for XBOX Add-On** page in **Game Manager**.
 
 ## IFX Data Sets and Tables
 
