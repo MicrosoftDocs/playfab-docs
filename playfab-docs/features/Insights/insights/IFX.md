@@ -19,9 +19,7 @@ This page is a WIP
 > [!Note]
 Insights for XBOX is in Private Preview only and is not currently available to Third Party Partners of Microsoft. The date for Public Preview and General Availability have not yet been announced. Please contact [PlayFab support](https://playfab.com/contact/) if you have any questions.
 
-Insights for Xbox pulls Xbox title data into PlayFab’s Insights offering which is built on top of Azure Data Explorer (Kusto). Access to XBOX title data through PlayFab Insights allows you to query, segment, and analyze data through the PlayFab Game Manger.
-
-[ Does this even matter to the public?] Insights for XBOX (IFX) is a replacement for Central Analytics and has a primary goal of minimizing transition costs by matching the Central Analytics data schema is closely as possible.
+Insights for Xbox (IFX) pulls Xbox title data into PlayFab’s Insights offering which is built on top of Azure Data Explorer (Kusto). Access to XBOX title data through PlayFab Insights allows you to query and analyze data through the PlayFab Game Manger.
 
 ## Onboarding to IFX
 
@@ -38,11 +36,11 @@ Insights for Xbox pulls Xbox title data into PlayFab’s Insights offering which
 1. To add more products, repeat steps 7 & 8.
 1. To delete products, select the **Remove** option next to the product ID that you would like to delete from IFX. When a product is deleted, past product data remains in IFX while future product data will no longer populate to IFX.
 
-Certain individuals during the onboarding experience might be impacted with product permission authentication issues with Partner Center. Please email the team at pfgaminginsights@microsoft.com if you are impacted by this issue.
+Certain individuals during the onboarding experience might be impacted with product permission authentication issues with Partner Center. Please email the team at [pfgaminginsights@microsoft.com] if you are impacted by this issue.
 
 ## Pricing
 
-IFX will be billed as part of the exisiting [Insights meter](https://docs.microsoft.com/en-us/gaming/playfab/features/insights/insights/pricing) through row writes (ingestion) and storage components of the Insights meter. A new line for IFX Ingestion will appear on the **Billing Summary** to display accumulated IFX charges. Charges will be calculated based on the size of the data ingested into IFX by counting the number of row writes. The latest ingestion prices can be found on the **Insights for XBOX Add-On** page in **Game Manager**.
+IFX will be billed as part of the exisiting [Insights meter](https://docs.microsoft.com/gaming/playfab/features/insights/insights/pricing) through row writes (ingestion) and storage components of the Insights meter. A new line for IFX Ingestion will appear on the **Billing Summary** to display accumulated IFX charges. Charges will be calculated based on the size of the data ingested into IFX by counting the number of row writes. The latest ingestion prices can be found on the **Insights for XBOX Add-On** page in **Game Manager**.
 
 ## IFX Data Sets and Tables
 
@@ -64,7 +62,7 @@ Dim Payment Type | dim.store.xbox_payment_type | Payment type details when a pur
 ### Fact Tables
 Pipeline | Table Name | Description
 --- | --- | ---
-Daily Presence Usage | metrics.usage.xbox_usage_presence
+Daily Presence Usage | metrics.usage.xbox_usage_presence | Presence usage by title. Filter on ClientDeviceType == "Win32" for Steam usage and on ClientDeviceType == "WindowsOneCore" for cumulative PC usage. Presence events fire twice when GameBar is enabled when playing on Steam. One event is fired for Win32 and one is fired for WindowsOneCore.
 Daily Client Usage | metrics.usage.xbox_daily_usage | Client usage based on TTSO telemetry with AAD users removed. Dataset does not include Steam usage.
 Daily Purchase | metrics.store.xbox_daily_purchase | Daily purchases with AAD users removed.
 Daily Cancellation | metrics.store.xbox_order_cancellations | metrics.store.xbox_order_cancellations | Daily cancellation data.
