@@ -17,7 +17,7 @@ This page is a WIP
 # Insights for Xbox
 
 > [!Note]
-Insights for XBOX is in Private Preview only and is not currently available to Third Party Partners of Microsoft. The date for Public Preview and General Availability have not yet been announced. Please contact [PlayFab support](https://playfab.com/contact/) if you have any questions.
+Insights for XBOX is in Private Preview only and is not currently available to Second or Third Party Partners of Microsoft. The date for Public Preview and General Availability have not yet been announced. Please contact [PlayFab support](https://playfab.com/contact/) if you have any questions.
 
 Insights for Xbox (IFX) pulls Xbox title data into PlayFab’s Insights offering which is built on top of Azure Data Explorer (Kusto). Access to XBOX title data through PlayFab Insights allows you to query and analyze data through the PlayFab Game Manger.
 
@@ -31,7 +31,7 @@ Insights for Xbox (IFX) pulls Xbox title data into PlayFab’s Insights offering
 1. From the **Title Overview** page, select the **Add-ons** option from the left navigation panel.
 1. The **Insights for XBOX** add-on is now visible in the **Analytics** section of the **Add-ons** page.
 1. If this is the first time you are adding products to the given title, select the checkbox to accept “GDPR compliance” and select **Install Xbox and Windows data** to complete acceptance of the terms. If this is not your first time adding products to the given title, skip this step.
-1. In the **Product id** field, enter the product ids that you would like to add, separated by a comma. For example: *12abc*,*1234bcd*,*1355sjk*
+1. In the **PRODUCT ID** field, enter the product ids that you would like to add, separated by a comma. For example: *12abc*,*1234bcd*,*1355sjk*
 1. Select **Add**. It may take a few minutes for permissions to validate before you see product details appear in the **Xbox title ids** and **Xbox product ids** tables. This action will generate usage data that may be charged by PlayFab Insights. See below for pricing details.
 1. To add more products, repeat steps 7 & 8.
 1. To delete products, select the **Remove** option next to the product ID that you would like to delete from IFX. When a product is deleted, past product data remains in IFX while future product data will no longer populate to IFX.
@@ -46,7 +46,7 @@ IFX will be billed as part of the exisiting [Insights meter](https://docs.micros
 
 ### Logic Tables
 
-Pipeline | Table Name | Description
+Data | Table Name | Description
 --- | --- | ---
 Dim User | dim.usage.xbox_user | Presence usage and client usage data from users across all the platforms. Does not not contain anonymous users or external users.
 Dim Live Title User | dim.usage.xbox_live_title_user | Title usage report by user based on client usage.
@@ -60,7 +60,7 @@ Dim Geography | dim.core.xbox_geography | Geography-related usage data for a tit
 Dim Payment Type | dim.store.xbox_payment_type | Payment type details when a purchase transaction is made.
 
 ### Fact Tables
-Pipeline | Table Name | Description
+Data | Table Name | Description
 --- | --- | ---
 Daily Presence Usage | metrics.usage.xbox_usage_presence | Presence usage by title. Filter on ClientDeviceType == "Win32" for Steam usage and on ClientDeviceType == "WindowsOneCore" for cumulative PC usage. Presence events fire twice when GameBar is enabled when playing on Steam. One event is fired for Win32 and one is fired for WindowsOneCore.
 Daily Client Usage | metrics.usage.xbox_daily_usage | Client usage based on TTSO telemetry with AAD users removed. Dataset does not include Steam usage.
