@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Integrating with PlayFab Multiplayer Servers
 
-Matchmaking includes an option that can automatically create a game server for the resulting match. The allocated server will run a build, which is configured in the queue's config. On startup, the server is passed in the @outlook.com members of the match as the list of initial players.
+Matchmaking includes an option that can automatically create a game server for the resulting match. The allocated server will run a build, which is configured in the queue's config. On startup, the server is passed in the members of the match as the list of initial players.
 
 A matchmaking queue is tied to a single multiplayer server build.
 

@@ -122,7 +122,7 @@ Summarize
 
 ## How do I grant a user permissions to the Data > Explorer page for a particular title?
 
-- Follow the [PlayFab User Roles](https://docs.microsoft.com/en-us/gaming/playfab/gamemanager/playfab-user-roles) guide to access, create, and grant user permissions. 
+- Follow the [PlayFab User Roles](../../../gamemanager/playfab-user-roles.md) guide to access, create, and grant user permissions. 
 - A user needs the following 3 permissions to access the Data Explorer: 
     - Explorer data & tab (Read and Write permissions)
     - Analytics data read access (Read permissions)
