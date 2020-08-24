@@ -53,14 +53,13 @@ Pipeline | Table Name | Description
 Dim User | dim.usage.xbox_user | Presence usage and client usage data from users across all the platforms. Does not not contain anonymous users or external users.
 Dim Live Title User | dim.usage.xbox_live_title_user | Title usage report by user based on client usage.
 Dim User Platform | dim.usage.xbox_user_platform | Date a user is first seen on different platforms. Includes users from client usage and presence usage.
-Dim Live Title | dim.store.xbox_live_title | **LIVE TITLE DATA?**
+Dim Live Title | dim.store.xbox_live_title | *XboxTitleId* meta data related to IFX onboarded titles. Data may include retail, demo or test data.
 Dim Product | dim.store.xbox_product | Retail and non-retail products related to the on-boarded *XboxTitleID*.
 Dim Achievement | dim.usage.xbox_achievement | Achievement data for *XboxTitleID*.
-Dim Friends List | dim.social.xbox_friends_list | Due to the size of Friends data, this data set is opt-in only. Contains Modern Active Friends. Updated weekly. [Contact PlayFab](https://playfab.com/contact/) to enable.
-Dim Transaction Type | dim.store.xbox_transaction_type | **Transaction data related to IFX-enabled titles?**
-Dim Platform | dim.core.xbox_platform | **Which platforms a title has been accessed on?**
-Dim Geography | dim.core.xbox_geography | **I HAVE NO IDEA** :)
-Dim Payment Type | dim.store.xbox_payment_type | **Payment types per transaction by user??**
+Dim Transaction Type | dim.store.xbox_transaction_type | Description of the different transaction types when a purchase traction is made.
+Dim Platform | dim.core.xbox_platform | Device platform data.
+Dim Geography | dim.core.xbox_geography | Geography-related usage data for a title
+Dim Payment Type | dim.store.xbox_payment_type | Payment type details when a purchase transaction is made.
 
 ### Fact Tables
 Pipeline | Table Name | Description
