@@ -5,7 +5,7 @@ description: TBD
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 11/08/2019
+ms.date: 08/05/2020
 ---
 
 # PartyManager  
@@ -33,10 +33,10 @@ class PartyManager
 | [SetThreadAffinityMask](methods/partymanager_setthreadaffinitymask.md) | Optionally configures the processor on which internal Party library threads will run. |  
 | [GetThreadAffinityMask](methods/partymanager_getthreadaffinitymask.md) | Retrieves the current set of processors on which internal Party library threads will run or are running as an affinity mask. |  
 | [Initialize](methods/partymanager_initialize.md) | Initializes the PartyManager object instance. |  
-| [Cleanup](methods/partymanager_cleanup.md) | Immediately reclaims all resources associated with the PartyManager object. |  
+| [Cleanup](methods/partymanager_cleanup.md) | Immediately reclaims all resources associated with all Party library objects. |  
 | [StartProcessingStateChanges](methods/partymanager_startprocessingstatechanges.md) | Retrieves an array of all PartyStateChanges to process since the last such call. |  
 | [FinishProcessingStateChanges](methods/partymanager_finishprocessingstatechanges.md) | Returns an array of PartyStateChanges that were being processed. |  
-| [GetRegions](methods/partymanager_getregions.md) | Gets an array containing the set of regions for which your title is configured, along with roundtrip latency information. |  
+| [GetRegions](methods/partymanager_getregions.md) | Gets an array containing the set of regions for which your title is configured, along with round trip latency information. |  
 | [CreateNewNetwork](methods/partymanager_createnewnetwork.md) | Queues an asynchronous attempt to create a new network. |  
 | [ConnectToNetwork](methods/partymanager_connecttonetwork.md) | Queues an asynchronous attempt to connect to a network. |  
 | [GetLocalDevice](methods/partymanager_getlocaldevice.md) | Gets the local device. |  

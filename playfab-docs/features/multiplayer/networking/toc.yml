@@ -34,6 +34,8 @@
     href: concepts-discovery.md
   - name: Transport options
     href: transport-options.md
+  - name: Using direct peer-to-peer connections
+    href: concepts-direct-peer-connectivity.md
 - name: Chat
   items:
   - name: Understanding chat
@@ -473,6 +475,8 @@
           href: reference/classes/PartyNetwork/methods/partynetwork_getcustomcontext.md
         - name: SetCustomContext
           href: reference/classes/PartyNetwork/methods/partynetwork_setcustomcontext.md
+        - name: GetDeviceConnectionType
+          href: reference/classes/PartyNetwork/methods/partynetwork_getdeviceconnectiontype.md
     - name: PartyTextToSpeechProfile
       href: reference/classes/PartyTextToSpeechProfile/partytexttospeechprofile.md
       items:
@@ -640,6 +644,10 @@
       href: reference/enums/partychatpermissionoptions.md
     - name: PartyDestroyedReason
       href: reference/enums/partydestroyedreason.md
+    - name: PartyDeviceConnectionType
+      href: reference/enums/partydeviceconnectiontype.md
+    - name: PartyDirectPeerConnectivityOptions
+      href: reference/enums/partydirectpeerconnectivityoptions.md
     - name: PartyEndpointStatistic
       href: reference/enums/partyendpointstatistic.md
     - name: PartyGender

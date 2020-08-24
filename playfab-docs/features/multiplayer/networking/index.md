@@ -100,3 +100,7 @@ Multiple local users on a single device, as well as connecting to more than one 
 While PlayFab Party is flexible regarding topology for exchanging data among inter-connected devices, its conceptually peer-to-peer orientation implies that the authoritative game state will be managed on one or more of the users' devices cooperatively.
 
 Some multiplayer games have designs or modes that are not well-suited to this requirement, perhaps due to supporting device form factors with insufficient resources, or due to competitive cheating concerns, for example. If this applies to your game, you may wish to consider using [PlayFab multiplayer servers](../servers/index.md) to host custom dedicated game logic in a dynamically-scaling cloud environment in addition to using PlayFab Party for chat communication.
+
+### Direct peer-to-peer connectivity
+
+For some platforms, PlayFab Party can be configured to use direct peer-to-peer connections for voice and game data transmission. For more information, see [Using direct peer-to-peer connections](concepts-direct-peer-connectivity.md).

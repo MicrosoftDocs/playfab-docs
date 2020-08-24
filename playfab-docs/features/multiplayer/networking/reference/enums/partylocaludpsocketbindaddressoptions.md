@@ -5,7 +5,7 @@ description: "Additional options to control how the Party library binds to the U
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 11/08/2019
+ms.date: 08/05/2020
 ---
 
 # PartyLocalUdpSocketBindAddressOptions  
@@ -26,8 +26,8 @@ enum class PartyLocalUdpSocketBindAddressOptions
   
 | Constant | Description |
 | --- | --- |
-| None | No flags are specified. |  
-| ExcludeGameCorePreferredUdpMultiplayerPort | In the Microsoft Game Core version of the Party library, when the *port* field of the [PartyLocalUdpSocketBindAddressConfiguration](../structs/partylocaludpsocketbindaddressconfiguration.md) structure is 0, this flag informs the Party library to not use the Game Core preferred UDP multiplayer port. In other versions of the Party library or if the *port* port is non-zero, this flag must not be set. |  
+| None | No flags are specified.<br/><br/> This value is the default if a [PartyLocalUdpSocketBindAddressConfiguration](../structs/partylocaludpsocketbindaddressconfiguration.md) structure has not been explicitly set. |  
+| ExcludeGameCorePreferredUdpMultiplayerPort | Don't default to using the Microsoft Game Core preferred UDP multiplayer port when the port is unspecified.<br/><br/> In the Microsoft Game Core version of the Party library, when the *port* field of the [PartyLocalUdpSocketBindAddressConfiguration](../structs/partylocaludpsocketbindaddressconfiguration.md) structure is 0, this flag informs the Party library to not use the Game Core preferred UDP multiplayer port. In other versions of the Party library or if the *port* port is non-zero, this flag must not be set. |  
   
   
 ## Requirements  

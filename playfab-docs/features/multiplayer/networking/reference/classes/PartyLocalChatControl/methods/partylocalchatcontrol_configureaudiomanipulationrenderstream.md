@@ -5,7 +5,7 @@ description: Queues an asynchronous operation to configure the audio manipulatio
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 02/10/2020
+ms.date: 08/21/2020
 ---
 
 # PartyLocalChatControl::ConfigureAudioManipulationRenderStream  
@@ -41,7 +41,7 @@ PartyError
   
 ## Remarks  
   
-If the configuration is non-null, an audio manipulation render stream will be created for this chat control. Such a stream acts as the render pipeline for audio that will be rendered to this chat control. If the configuration is null, and a stream has previously been configured, the stream will be destroyed. <br /><br /> Upon completion of the asynchronous operation, when a non-null configuration was specified, a render stream for this chat control can be queried via [PartyLocalChatControl::GetAudioManipulationRenderStream()](partylocalchatcontrol_getaudiomanipulationrenderstream.md). Completion is indicated by a [PartyConfigureAudioManipulationRenderStreamCompletedStateChange](../../../structs/partyconfigureaudiomanipulationrenderstreamcompletedstatechange.md).   
+If the configuration is non-null, an audio manipulation render stream will be created for this chat control. This render stream acts as the render pipeline for audio that will be rendered to this chat control. If the configuration is null, and a stream has previously been configured, the render stream will be destroyed. <br /><br /> Upon completion of the asynchronous operation, when a non-null configuration was specified, a render stream for this chat control can be queried via [PartyLocalChatControl::GetAudioManipulationRenderStream()](partylocalchatcontrol_getaudiomanipulationrenderstream.md). Completion is indicated by a [PartyConfigureAudioManipulationRenderStreamCompletedStateChange](../../../structs/partyconfigureaudiomanipulationrenderstreamcompletedstatechange.md).   
 
 ### Platform support and supported formats
 

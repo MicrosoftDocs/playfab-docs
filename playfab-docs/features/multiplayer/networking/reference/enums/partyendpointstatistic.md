@@ -5,7 +5,7 @@ description: "Types of statistics that can be retrieved for an endpoint."
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 11/08/2019
+ms.date: 08/05/2020
 ---
 
 # PartyEndpointStatistic  
@@ -25,6 +25,7 @@ enum class PartyEndpointStatistic
     TimedOutSendMessageBytes,  
     CanceledSendMessages,  
     CanceledSendMessageBytes,  
+    AverageDeviceRoundTripLatencyInMilliseconds,  
 }  
 ```  
   
@@ -40,6 +41,7 @@ enum class PartyEndpointStatistic
 | TimedOutSendMessageBytes | The total number of bytes of data in [PartyLocalEndpoint::SendMessage()](../classes/PartyLocalEndpoint/methods/partylocalendpoint_sendmessage.md) messages from the local endpoint to the specified target endpoints that were ever discarded for exceeding their send queue timeouts without being transmitted.<br/><br/> A message's send queue timeout is specified using [PartySendMessageQueuingConfiguration::timeoutInMillseconds](../structs/partysendmessagequeuingconfiguration.md) when calling PartyLocalEndpoint::SendMessage(). <br /><br /> For efficiency, only a single message is queued by PartyLocalEndpoint::SendMessage() when sending to multiple target endpoints at once via the transparent cloud relay server. If two or more of those endpoints are specified to [PartyLocalEndpoint::GetEndpointStatistics()](../classes/PartyLocalEndpoint/methods/partylocalendpoint_getendpointstatistics.md) when querying for this statistic, the message bytes will only be counted a single time rather than multiplied per target endpoint.   <br /><br /> When querying this statistic for all target endpoints by providing a zero-entry array to PartyLocalEndpoint::GetEndpointStatistics(), note that only endpoints that currently exist will be included. If an endpoint that had timed out messages gets destroyed between queries, this count might be perceived as "going backward". |  
 | CanceledSendMessages | The total number of [PartyLocalEndpoint::SendMessage()](../classes/PartyLocalEndpoint/methods/partylocalendpoint_sendmessage.md) messages from the local endpoint to the specified target endpoints that were ever canceled.<br/><br/> Messages are canceled before being transmitted by the application calling PartyLocalEndpoint::CancelMessages() with a matching filter expression. <br /><br /> For efficiency, only a single message is queued by PartyLocalEndpoint::SendMessage() when sending to multiple target endpoints at once via the PartyNetwork transparent cloud relay server. If two or more of those endpoints are specified to [PartyLocalEndpoint::GetEndpointStatistics()](../classes/PartyLocalEndpoint/methods/partylocalendpoint_getendpointstatistics.md) when querying for this statistic, the message will only be counted a single time rather than multiplied per target endpoint.   <br /><br /> When querying this statistic for all target endpoints by providing a zero-entry array to PartyLocalEndpoint::GetEndpointStatistics(), note that only endpoints that currently exist will be included. If an endpoint that had canceled messages gets destroyed between queries, this count might be perceived as "going backward". |  
 | CanceledSendMessageBytes | The total number of bytes of data in [PartyLocalEndpoint::SendMessage()](../classes/PartyLocalEndpoint/methods/partylocalendpoint_sendmessage.md) messages from the local endpoint to the specified target endpoints that were ever canceled.<br/><br/> Messages are canceled before being transmitted by the application calling PartyLocalEndpoint::CancelMessages() with a matching filter expression. <br /><br /> For efficiency, only a single message is queued by PartyLocalEndpoint::SendMessage() when sending to multiple target endpoints at once via the PartyNetwork transparent cloud relay server. If two or more of those endpoints are specified to [PartyLocalEndpoint::GetEndpointStatistics()](../classes/PartyLocalEndpoint/methods/partylocalendpoint_getendpointstatistics.md) when querying for this statistic, the message bytes will only be counted a single time rather than multiplied per target endpoint.   <br /><br /> When querying this statistic for all target endpoints by providing a zero-entry array to PartyLocalEndpoint::GetEndpointStatistics(), note that only endpoints that currently exist will be included. If an endpoint that had canceled messages gets destroyed between queries, this count might be perceived as "going backward". |  
+| AverageDeviceRoundTripLatencyInMilliseconds | The current moving average round trip latency ("ping time") in milliseconds to the endpoint's owning device.<br/><br/> This latency represents a moving average of the time it currently takes for this local device to send a message and receive a response from the target endpoint's device. <br /><br /> This statistic can only be queried for exactly one target endpoint at a time. The [PartyLocalEndpoint::GetEndpointStatistics()](../classes/PartyLocalEndpoint/methods/partylocalendpoint_getendpointstatistics.md) method will fail if multiple targets are provided, or if a zero-entry array is provided to attempt to query all current endpoints.   <br /><br /> You can also determine the local device's average round trip latency to the network's transparent cloud relay server by using [PartyNetwork::GetNetworkStatistics()](../classes/PartyNetwork/methods/partynetwork_getnetworkstatistics.md) to retrieve the [PartyNetworkStatistic::AverageRelayServerRoundTripLatencyInMilliseconds](partynetworkstatistic.md) statistic. |  
   
   
 ## Requirements  
@@ -51,6 +53,7 @@ enum class PartyEndpointStatistic
 [PartyNetworkStatistic](partynetworkstatistic.md)  
 [PartySendMessageQueuingConfiguration](../structs/partysendmessagequeuingconfiguration.md)  
 [PartyLocalEndpoint::SendMessage](../classes/PartyLocalEndpoint/methods/partylocalendpoint_sendmessage.md)  
-[PartyLocalEndpoint::GetEndpointStatistics](../classes/PartyLocalEndpoint/methods/partylocalendpoint_getendpointstatistics.md)
+[PartyLocalEndpoint::GetEndpointStatistics](../classes/PartyLocalEndpoint/methods/partylocalendpoint_getendpointstatistics.md)  
+[PartyNetwork::GetNetworkStatistics](../classes/PartyNetwork/methods/partynetwork_getnetworkstatistics.md)
   
   

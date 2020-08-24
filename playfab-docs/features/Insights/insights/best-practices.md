@@ -1,8 +1,8 @@
 ---
 title: Insights Best Practices
-author: john-smith-microsoft
+author: mckmoffatt
 description: PlayFab Insights best practices and FAQs
-ms.author: johsmi
+ms.author: mcelliot
 ms.date: 02/28/2020
 ms.topic: article
 ms.prod: playfab
@@ -77,3 +77,53 @@ Here we examine some best practices for using PlayFab Insights as well as addres
      | Max payload size  | 10240 bytes (10KB) | |
 
      If you run into any of these limits, please contact the Playfab Support team for assistance. In the upper right-hand corner of Game Manager select the question mark icon, then select **Contact Us**.
+
+### I get an error “Query execution has exceeded the allowed limits” when I try to run a query.
+- This error occurs when the size of the result set or the number of rows in the result set exceeds the allowed limit. Try limiting the amount of data returned by scoping the query to relevant data using the *where*, *limit*, or *summarize* operators 
+- To export all of your data, navigate to the **Event Export Tab** under **Data** on the **Title Overview** page in PlayFab Game Manager.
+- If you want to pull only segments of data or if you are still hitting the query limit, you can partition the data by time or unique id (ex. Player ID, Title ID) and run multiple, smaller queries. The follow is an example of how to partition based on time:
+
+Where
+```sql
+let start = datetime(2020-08-03);
+let end = datetime(2020-08-07);
+['events.all'] | where Timestamp between(start .. end)
+```
+
+Limit
+```sql
+['events.all'] | limit 1000
+```
+
+Summarize
+```sql
+['events.all'] | summarize count() by FullName_Name, bin(Timestamp, 1d)
+```
+
+- View [Kusto documentation](https://docs.microsoft.com/azure/data-explorer/kusto/concepts/querylimits) for more information.
+
+### I set truncationmaxsize and truncationmaxrecords variables to a larger value, but I am still getting an error.
+- PlayFab Insights does not currently support setting these variables. See above for query formulation tips.
+
+### Will querying Insights data prevent events from being ingested? 
+- No. PlayFab events will flow into your title’s database with no performance 
+- penalty.
+
+### My queries return a “Partial query failure: Low memory condition” error 
+- This means the query is too complex and is unable to fit within the memory limits of your Performance Level. Try simplifying your query. For example, a summarize call may have too many groups, or you may be trying to operate on too many rows at once.You can also upgrade your Performance level to allow more memory to be allocated to each query.
+- View [Kusto documentation](https://docs.microsoft.com/azure/data-explorer/kusto/concepts/partialqueryfailures) for more information.
+
+### Will I lose data if my volume of events is higher than what is allowed by my performance level?
+- No, but you will be charged for overrages. Overages are measured in the number of Insights Credits consumed. Insights Credit prices can be found on [PlayFab.com/Pricing](https://playfab.com/pricing/).
+
+### How do I decide by performance level?
+
+- The right performance level for you is best determined by your title's usage. By raising performance level, you'll gain access to more data in cache and other query resources resulting in faster running queries. View [Insights documentation](https://docs.microsoft.com/gaming/playfab/features/insights/insights/performance-retention) to learn more about performance levels.
+
+## How do I grant a user permissions to the Data > Explorer page for a particular title?
+
+- Follow the [PlayFab User Roles](https://docs.microsoft.com/en-us/gaming/playfab/gamemanager/playfab-user-roles) guide to access, create, and grant user permissions. 
+- A user needs the following 3 permissions to access the Data Explorer: 
+    - Explorer data & tab (Read and Write permissions)
+    - Analytics data read access (Read permissions)
+    - Analytics data write access (Write permissions)

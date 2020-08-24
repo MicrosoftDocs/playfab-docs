@@ -5,7 +5,7 @@ description: Gets the language code associated with this profile.
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 11/08/2019
+ms.date: 08/05/2020
 ---
 
 # PartyTextToSpeechProfile::GetLanguageCode  
@@ -25,7 +25,7 @@ PartyError GetLanguageCode(
 **`languageCode`** &nbsp; [PartyString*](../../../typedefs.md)  
 *library-allocated output*  
   
-The output profile language.  
+The output profile language. The memory for the string remains valid for the lifetime of the profile.  
   
   
 ### Return value  
