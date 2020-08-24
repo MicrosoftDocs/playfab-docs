@@ -11,14 +11,12 @@ keywords: playfab, multiplayer, networking, unreal, unreal engine, unreal engine
 
 # QuickStart: PlayFab Party Online Subsystem (OSS)
 
-## Download and install Online Subsystem
-Go to [Xbox Developer Downloads page](https://www.aka.ms/gdkdl) under Add-ins and download PlayFab Party Online SubSystem. If you do not have access to the site, reach out to your Microsoft representative.
-
-## Download and install PlayFab Party Online Subsystem (OSS)
-
 This quickstart guide helps you set up and use Party (authentication, networking, text chat with translation and transcription, voice chat with transcription, and more) for Xbox and PC games built using Unreal Engine 4 game engine. For the full list of supported platforms and versions in UE4, see [Supported platforms](party-unreal-engine-oss-overview.md).
 
 After following the relevant steps below for your target platforms, you will be ready to start using the OSS and authentication, networking and VOIP will be handled on your behalf with no other changes required.
+
+## Download and install PlayFab Party Online Subsystem (OSS)
+Go to [Xbox Developer Downloads page](https://www.aka.ms/gdkdl) under Add-ins and download PlayFab Party Online SubSystem. If you do not have access to the site, reach out to your Microsoft representative.
 
 ## What you need
 * **PlayFab Title ID:** If you do not have a Title ID configured for PlayFab Party, see [Enabling PlayFab Party](enable-party.md).
