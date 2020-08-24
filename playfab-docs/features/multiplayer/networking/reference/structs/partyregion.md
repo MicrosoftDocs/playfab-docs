@@ -5,7 +5,7 @@ description: "Represents a Party library region."
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/25/2019
+ms.date: 08/05/2020
 ---
 
 # PartyRegion  
@@ -26,6 +26,8 @@ typedef struct PartyRegion {
 **`regionName`** &nbsp; char[c_maxRegionNameStringLength + 1]  
   
 The name of the Azure region, such as "eastus2".
+  
+This name is not localized to the current user's language, and showing the string directly in UI is not recommended outside of troubleshooting.
   
 **`roundTripLatencyInMilliseconds`** &nbsp; uint32_t  
   

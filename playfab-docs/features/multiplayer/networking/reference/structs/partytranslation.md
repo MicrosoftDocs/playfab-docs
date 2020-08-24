@@ -5,7 +5,7 @@ description: "A translation."
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 11/01/2019
+ms.date: 08/05/2020
 ---
 
 # PartyTranslation  
@@ -52,7 +52,7 @@ Additional options describing the translation.
   
 The translation string.
   
-The translation string may be up to ```c_maxChatTextMessageLength``` characters long, not including the null terminator. Truncation occurs if the translated string length would exceed that limit, which can happen due to language differences even though the original string length is less than or equal to ```c_maxChatTextMessageLength```. In such a case, ```options``` will contain [PartyTranslationReceivedOptions::Truncated](../enums/partytranslationreceivedoptions.md). Truncation may occur at an arbitrary point in the UTF-8 byte sequence and may not result in a complete, valid character or word. Strings are always null terminated, even when truncated.
+By default, profanity masking is enabled and replaces each character of a profane word with an asterisk. Profanity masking is applied after translating the unmasked source transcription. Depending on context, it's possible for the transcription to contain masked profanity but not the translation. Similarly, it's possible for the translation to contain masked profanity but not the original transcription. Profanity masking can be disabled via <seealso cref="PartyVoiceChatTranscriptionOptions::DisableProfanityMasking" />. <br /><br /> The translation string may be up to ```c_maxChatTextMessageLength``` characters long, not including the null terminator. Truncation occurs if the translated string length would exceed that limit, which can happen due to language differences even though the original string length is less than or equal to ```c_maxChatTextMessageLength```. In such a case, ```options``` will contain [PartyTranslationReceivedOptions::Truncated](../enums/partytranslationreceivedoptions.md). Truncation may occur at an arbitrary point in the UTF-8 byte sequence and may not result in a complete, valid character or word. Strings are always null terminated, even when truncated.
   
   
 ## Requirements  

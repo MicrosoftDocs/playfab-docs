@@ -5,7 +5,7 @@ description: Provides the preferred microphone or recording device that the chat
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 11/08/2019
+ms.date: 08/05/2020
 ---
 
 # PartyLocalChatControl::GetAudioInput  
@@ -32,12 +32,12 @@ An output value indicating the selection type that was used to select the provid
 **`audioDeviceSelectionContext`** &nbsp; [PartyString*](../../../typedefs.md)  
 *library-allocated output*  
   
-When using [PartyAudioDeviceSelectionType::None](../../../enums/partyaudiodeviceselectiontype.md), `audioDeviceSelectionContext` will be empty. When using [PartyAudioDeviceSelectionType::SystemDefault](../../../enums/partyaudiodeviceselectiontype.md), `audioDeviceSelectionContext` will be empty. When using [PartyAudioDeviceSelectionType::PlatformUserDefault](../../../enums/partyaudiodeviceselectiontype.md), `audioDeviceSelectionContext` will be the value provided in a previous call to [SetAudioInput()](partylocalchatcontrol_setaudioinput.md). When using [PartyAudioDeviceSelectionType::Manual](../../../enums/partyaudiodeviceselectiontype.md), `audioDeviceSelectionContext` will be empty.  
+When using [PartyAudioDeviceSelectionType::None](../../../enums/partyaudiodeviceselectiontype.md) or [PartyAudioDeviceSelectionType::SystemDefault](../../../enums/partyaudiodeviceselectiontype.md), `audioDeviceSelectionContext` will be empty. When using [PartyAudioDeviceSelectionType::PlatformUserDefault](../../../enums/partyaudiodeviceselectiontype.md) or [PartyAudioDeviceSelectionType::Manual](../../../enums/partyaudiodeviceselectiontype.md), `audioDeviceSelectionContext` will be the value provided in a previous call to [SetAudioInput()](partylocalchatcontrol_setaudioinput.md). The memory for the string remains valid until the next [PartyLocalChatAudioInputChangedStateChange](../../../structs/partylocalchataudioinputchangedstatechange.md) is provided via [PartyManager::StartProcessingStateChanges()](../../PartyManager/methods/partymanager_startprocessingstatechanges.md) or the chat control is destroyed.  
   
 **`deviceId`** &nbsp; [PartyString*](../../../typedefs.md)  
 *library-allocated output*  
   
-An output value indicating the selected audio input device's identifier.  
+An output value indicating the selected audio input device's identifier. The memory for the string remains valid until the next [PartyLocalChatAudioInputChangedStateChange](../../../structs/partylocalchataudioinputchangedstatechange.md) is provided via [PartyManager::StartProcessingStateChanges()](../../PartyManager/methods/partymanager_startprocessingstatechanges.md) or the chat control is destroyed.  
   
   
 ### Return value  

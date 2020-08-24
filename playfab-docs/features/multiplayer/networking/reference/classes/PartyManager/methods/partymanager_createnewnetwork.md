@@ -5,7 +5,7 @@ description: Queues an asynchronous attempt to create a new network.
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 02/14/2020
+ms.date: 08/21/2020
 ---
 
 # PartyManager::CreateNewNetwork  
@@ -84,8 +84,9 @@ A PartyNetwork is a set of devices, such as Xbox One consoles and PCs, that are 
 | InternetConnectivityError | Retry with a small delay of no less than 10 seconds. For your app, it may be more appropriate to display the error to the user immediately, rather than retrying automatically. |
 | PartyServiceError | Retry with an exponential backoff. Start with a minimum delay of no less than 10 seconds, doubling the delay with each retry. |
 | NoServersAvailable | Retry with an exponential backoff. Start with a minimum delay of no less than 30 seconds, doubling the delay with each retry. For your app, it may be more appropriate to display the error to the user immediately, rather than retrying automatically. |
-| UserNotAuthorized | This result can mean that the user's entity token was invalid, expired, or that the user was not authorized for other reasons. Retry no more than one time, and only after getting a new entity token for the user and calling [PartyLocalUser::UpdateEntityToken()](../../PartyLocalUser/methods/partylocaluser_updateentitytoken.md).|
+| UserNotAuthorized | This can mean that the user's entity token was invalid, expired, or that the user was not authorized for other reasons. Retry no more than one time, and only after getting a new entity token for the user and calling [PartyLocalUser::UpdateEntityToken()](../../PartyLocalUser/methods/partylocaluser_updateentitytoken.md).|
 | UserCreateNetworkThrottled | Do not retry automatically. Instead, display a message to the user and wait for the user to initiate another attempt. |
+| FailedToBindToLocalUdpSocket | This means that the library couldn't bind to the local UDP socket specified in the [PartyOption::LocalUdpSocketBindAddress](../../../enums/partyoption.md) option. The title must clean up its instance of the library, update the [PartyOption::LocalUdpSocketBindAddress](../../../enums/partyoption.md) option to a valid, available bind address, and re-initialize the library.
   
 ## Requirements  
   

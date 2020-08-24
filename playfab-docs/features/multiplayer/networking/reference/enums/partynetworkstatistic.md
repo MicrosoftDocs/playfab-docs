@@ -5,7 +5,7 @@ description: "Types of statistics that can be retrieved for a network."
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 02/10/2020
+ms.date: 08/05/2020
 ---
 
 # PartyNetworkStatistic  
@@ -40,7 +40,7 @@ enum class PartyNetworkStatistic
   
 | Constant | Description |
 | --- | --- |
-| AverageRelayServerRoundTripLatencyInMilliseconds | The current moving average round trip latency ("ping time") in milliseconds to the network's cloud relay server.<br/><br/> This latency represents a moving average of the time it currently takes for this local device to send a message and receive a response from the transparent cloud relay server. |  
+| AverageRelayServerRoundTripLatencyInMilliseconds | The current moving average round trip latency ("ping time") in milliseconds to the network's cloud relay server.<br/><br/> This latency represents a moving average of the time it currently takes for this local device to send a message and receive a response from the transparent cloud relay server. <br /><br /> You can also determine a particular local endpoint's average round trip latency to another endpoint in the network by using [PartyLocalEndpoint::GetEndpointStatistics()](../classes/PartyLocalEndpoint/methods/partylocalendpoint_getendpointstatistics.md) to retrieve the [PartyEndpointStatistic::AverageDeviceRoundTripLatencyInMilliseconds](partyendpointstatistic.md) statistic. |  
 | SentProtocolPackets | The total number of internal protocol packets ever transmitted to remote devices as part of this network.<br/><br/> This statistic represents the total number of internal protocol packets transmitted by the local device for any network reason. It includes packets generated as a result of [PartyLocalEndpoint::SendMessage()](../classes/PartyLocalEndpoint/methods/partylocalendpoint_sendmessage.md) calls but doesn't necessarily have a one-to-one correspondence with them because multiple small messages may be coalesced together into a single packet, or a large message may be fragmented into multiple packets depending on configuration and environmental factors. Further, packets may be used to carry chat or other internal library functionality (e.g., API operation support messages, protocol acknowledgements or retries) on behalf of the application without an explicit PartyLocalEndpoint::SendMessage() call. <br /><br /> This statistic does not include any packets generated for HTTP web client operations that are used internally by the Party library for some aspects of authentication, management transactions, speech-to-text transcription, and text-to-speech synthesis. |  
 | SentProtocolBytes | The total number of internal protocol bytes ever transmitted to remote devices as part of this network.<br/><br/> This statistic represents the total number of bytes in internal protocol packets transmitted by the local device for any network reason. This size includes [PartyLocalEndpoint::SendMessage()](../classes/PartyLocalEndpoint/methods/partylocalendpoint_sendmessage.md) payloads but also their internal protocol overhead, as well as any chat or other internal library functionality needed (e.g., API operation support messages, protocol acknowledgements or retries) on behalf of the application without an explicit PartyLocalEndpoint::SendMessage() call. <br /><br /> The reported value does not include the packet overhead for Internet protocols (e.g., UDP, IP) or that of lower level media over which the Party library internal protocol operates.   <br /><br /> This statistic does not include the sizes of any packets generated for HTTP web client operations that are used internally by the Party library for some aspects of authentication, management transactions, speech-to-text transcription, and text-to-speech synthesis. |  
 | RetriedProtocolPackets | The total number of internal protocol packets ever re-transmitted to remote devices as part of this network.<br/><br/> This statistic represents the total number of internal protocol packet retransmissions by the local device due to apparent environmental loss of an earlier attempt. The Party library will only retry lost packets that contain application messages sent with [PartySendMessageOptions::GuaranteedDelivery](partysendmessageoptions.md) or internal library messages with similar delivery requirements. <br /><br /> This statistic does not include any retries of packets generated for HTTP web client operations that are used internally by the Party library for some aspects of authentication, management transactions, speech-to-text transcription, and text-to-speech synthesis. |  
@@ -67,6 +67,7 @@ enum class PartyNetworkStatistic
 [PartyEndpointStatistic](partyendpointstatistic.md)  
 [PartySendMessageOptions](partysendmessageoptions.md)  
 [PartyNetwork::GetNetworkStatistics](../classes/PartyNetwork/methods/partynetwork_getnetworkstatistics.md)  
-[PartyLocalEndpoint::SendMessage](../classes/PartyLocalEndpoint/methods/partylocalendpoint_sendmessage.md)
+[PartyLocalEndpoint::SendMessage](../classes/PartyLocalEndpoint/methods/partylocalendpoint_sendmessage.md)  
+[PartyLocalEndpoint::GetEndpointStatistics](../classes/PartyLocalEndpoint/methods/partylocalendpoint_getendpointstatistics.md)
   
   
