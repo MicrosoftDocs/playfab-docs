@@ -5,7 +5,7 @@ description: Gets the language associated with this chat control.
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 11/08/2019
+ms.date: 08/05/2020
 ---
 
 # PartyLocalChatControl::GetLanguage  
@@ -25,7 +25,7 @@ PartyError GetLanguage(
 **`languageCode`** &nbsp; [PartyString*](../../../typedefs.md)  
 *library-allocated output*  
   
-The output BCP 47 language code used by the chat control future communication. The string remains valid until the next [PartySetLanguageCompletedStateChange](../../../structs/partysetlanguagecompletedstatechange.md) is provided via [PartyManager::StartProcessingStateChanges()](../../PartyManager/methods/partymanager_startprocessingstatechanges.md) or the chat control is destroyed.  
+The output BCP 47 language code used by the chat control future communication. The memory for the string remains valid until the next [PartySetLanguageCompletedStateChange](../../../structs/partysetlanguagecompletedstatechange.md) is provided via [PartyManager::StartProcessingStateChanges()](../../PartyManager/methods/partymanager_startprocessingstatechanges.md) or the chat control is destroyed.  
   
   
 ### Return value  

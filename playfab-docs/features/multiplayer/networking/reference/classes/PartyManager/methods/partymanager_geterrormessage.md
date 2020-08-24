@@ -5,7 +5,7 @@ description: Get the human-readable form of an error.
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 11/08/2019
+ms.date: 08/05/2020
 ---
 
 # PartyManager::GetErrorMessage  
@@ -30,7 +30,7 @@ An error code.
 **`errorMessage`** &nbsp; [PartyString*](../../../typedefs.md)  
 *library-allocated output*  
   
-The output, human-readable error message.  
+The output, human-readable error message. The memory for the returned string remains valid for the lifetime of the process.  
   
   
 ### Return value  

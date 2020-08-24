@@ -5,7 +5,7 @@ description: TBD
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 11/08/2019
+ms.date: 08/05/2020
 ---
 
 # PartyNetwork  
@@ -42,6 +42,7 @@ class PartyNetwork
 | [GetNetworkStatistics](methods/partynetwork_getnetworkstatistics.md) | Gets one or more statistic counter values for the network. |  
 | [GetCustomContext](methods/partynetwork_getcustomcontext.md) | Retrieves the app's private, custom pointer-sized context value previously associated with this network object. |  
 | [SetCustomContext](methods/partynetwork_setcustomcontext.md) | Configures an optional, custom pointer-sized context value with this network object. |  
+| [GetDeviceConnectionType](methods/partynetwork_getdeviceconnectiontype.md) | Retrieves the type of connection used by the local device for transmitting messages or chat data to the specified target device in this network. |  
 
   
   

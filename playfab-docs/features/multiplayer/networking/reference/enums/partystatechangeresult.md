@@ -5,7 +5,7 @@ description: "Results for operations that generate state changes."
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 10/30/2019
+ms.date: 08/05/2020
 ---
 
 # PartyStateChangeResult  
@@ -31,6 +31,7 @@ enum class PartyStateChangeResult
     NetworkNotJoinable,  
     VersionMismatch,  
     LeaveNetworkCalled,  
+    FailedToBindToLocalUdpSocket,  
 }  
 ```  
   
@@ -42,7 +43,7 @@ enum class PartyStateChangeResult
 | UnknownError | An unknown error occurred. |  
 | CanceledByTitle | Another title operation canceled this operation. |  
 | InternetConnectivityError | The local device has internet connectivity issues which caused the operation to fail. |  
-| PartyServiceError | The operation failed because of an unexpected error in the Party Service. |  
+| PartyServiceError | The operation failed because of an unexpected error in the Party service. |  
 | NoServersAvailable | There are no available transparent cloud relay servers in the regions specified by the call to [PartyManager::CreateNewNetwork()](../classes/PartyManager/methods/partymanager_createnewnetwork.md). |  
 | UserNotAuthorized | The PartyLocalUser specified in the call to [PartyManager::CreateNewNetwork()](../classes/PartyManager/methods/partymanager_createnewnetwork.md) or [PartyNetwork::AuthenticateLocalUser()](../classes/PartyNetwork/methods/partynetwork_authenticatelocaluser.md) is not authorized to complete the operation. |  
 | UserCreateNetworkThrottled | The PartyLocalUser specified in the call to [PartyManager::CreateNewNetwork()](../classes/PartyManager/methods/partymanager_createnewnetwork.md) has created too many networks and cannot create new networks at this time. |  
@@ -52,6 +53,7 @@ enum class PartyStateChangeResult
 | NetworkNotJoinable | The network is not currently allowing new devices or users to join. |  
 | VersionMismatch | The operation failed because this version of the Party library was incompatible with either the Party service or the Party network. |  
 | LeaveNetworkCalled | The network was gracefully exited by the local device. |  
+| FailedToBindToLocalUdpSocket | The operation failed because the Party library was unable to bind to the socket specified in the [PartyOption::LocalUdpSocketBindAddress](partyoption.md) option. |  
   
   
 ## Requirements  

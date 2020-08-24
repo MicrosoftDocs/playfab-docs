@@ -5,7 +5,7 @@ description: Gets the human-readable name of this profile.
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 11/08/2019
+ms.date: 08/05/2020
 ---
 
 # PartyTextToSpeechProfile::GetName  
@@ -25,7 +25,7 @@ PartyError GetName(
 **`name`** &nbsp; [PartyString*](../../../typedefs.md)  
 *library-allocated output*  
   
-The output profile name.  
+The output profile name. The memory for the string remains valid for the lifetime of the profile.  
   
   
 ### Return value  

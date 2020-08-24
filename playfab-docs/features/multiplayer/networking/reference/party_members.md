@@ -5,7 +5,7 @@ description: TBD
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 02/10/2020
+ms.date: 08/05/2020
 ---
 
 # Party members  
@@ -119,6 +119,8 @@ ms.date: 02/10/2020
 | [PartyChatControlChatIndicator](enums/partychatcontrolchatindicator.md) | Audio states for a target chat control in relation to a local chat control.|  
 | [PartyChatPermissionOptions](enums/partychatpermissionoptions.md) | Options for defining the communication relationship between two chat controls.|  
 | [PartyDestroyedReason](enums/partydestroyedreason.md) | Reasons an object might be destroyed.|  
+| [PartyDeviceConnectionType](enums/partydeviceconnectiontype.md) | The type of connection used for transmitting endpoint message or chat data to a device.|  
+| [PartyDirectPeerConnectivityOptions](enums/partydirectpeerconnectivityoptions.md) | Flags controlling the attempted use of direct peer-to-peer connectivity among devices in a network.|  
 | [PartyEndpointStatistic](enums/partyendpointstatistic.md) | Types of statistics that can be retrieved for an endpoint.|  
 | [PartyGender](enums/partygender.md) | Genders for text to speech profiles.|  
 | [PartyInvitationRevocability](enums/partyinvitationrevocability.md) | Options for who may revoke an invitation.|  

@@ -3,7 +3,7 @@ title: PlayFab Party Release Notes
 author: ScottMunroMS
 description: Release notes for PlayFab Party
 ms.author: scmunro
-ms.date: 07/30/2020
+ms.date: 08/07/2020
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, party, release notes, multiplayer, networking
@@ -19,6 +19,19 @@ Release notes for the Xbox Live Helper library can be found [here](party-xboxliv
 PlayFab Party for Android and iOS are available on [GitHub.com](https://github.com/PlayFab/PlayFabParty/releases).
 
 Party Unity Plugin for GDK, Android, and iOS is available [here](https://github.com/playfab/PlayFabPartyUnity).
+
+## 1.5.0
+
+### New direct peer-to-peer connectivity, latency, and speech-to-text features
+
+- Direct peer-to-peer connectivity is now supported in the Windows 10 and Microsoft Game Core versions of the library. For more information, see [Using direct peer-to-peer connectivity](concepts-direct-peer-connectivity.md).
+- The round trip latency between the local device and a remote device can now be queried through the library. For more information, see [`PartyEndpointStatistic::AverageDeviceRoundTripLatencyInMilliseconds`](reference/enums/partyendpointstatistic.md)
+- Speech-to-text profanity masking can now be disabled. For more information, see [`PartyVoiceChatTranscriptionOptions::DisableProfanityMasking`](reference/enums/partyvoicechattranscriptionoptions.md).
+
+### Android and iOS audio bug fixes
+
+- Android: Bluetooth manager will be initialized the first time `PartyLocalDevice::CreateChatControl()` is called, rather than when `PartyManager::Initialize()` is called.
+-	iOS: Fixed a minor sound artifact when `PartyManager::Initialize()` is called.
 
 ## 1.4.13
 
