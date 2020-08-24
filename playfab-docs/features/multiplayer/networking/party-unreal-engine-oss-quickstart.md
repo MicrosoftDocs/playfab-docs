@@ -110,4 +110,4 @@ InitialConnectTimeout=30.0
 The default game implementation in Unreal Engine 4 validates that an incoming remote Net ID is of the same subsystem type as the local instance, as such cross-play between XDK and GDK will have different types and requires you to make one of the following changes:
 - Override the function within your GameMode and implement a PreLogin function which doesn’t require this check or pass a nullptr to the base function for NetID, skipping the check.
     - You may have already this class overridden
- - Edit the base function AGameMode::PreLogin to remove the OSS type check (**bUniqueIdCheckOk**) 
+    - Edit the base function AGameMode::PreLogin to remove the OSS type check (**bUniqueIdCheckOk**)
