@@ -20,6 +20,18 @@
     href: party-unity-plugin-quickstart.md  
   - name: Party Unity plugin API references
     href: reference/unity-party-api/index.md
+- name: Unreal Engine 4
+  items:
+  - name: PlayFab Party Online Subsystem (OSS)
+    href: party-unreal-engine-oss-overview.md
+  - name: Quickstart
+    href: party-unreal-engine-oss-quickstart.md
+  - name: Obtaining PlayFab Party Libraries
+    href: party-unreal-engine-oss-obtaining-playfab-party-libraries.md
+  - name: Using Cognitive Services
+    href: party-unreal-engine-oss-cognitive-services-interface.md
+  - name: Using older versions of Unreal Engine 4
+    href: party-unreal-engine-using-older-versions.md
 - name: Regions and QoS
   items:
   - name: QoS
