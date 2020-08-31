@@ -69,7 +69,7 @@ Insights is billed per minute at the credits per hour rate (Credits Per Hour / 6
 The retention setting allows a studio to set the total number of days data is kept. The default setting is 30 days, this guarantees GDPR compliance. Retention can be set globally or by table using [Management Commands](https://review.docs.microsoft.com/gaming/playfab/features/insights/explorer/management-commands?branch=managementcommands). Retention is charged at a rate of 50 credits per terabyte month, studios are only charged for what is in use by day. For more information about Insights Credit Pricing, see [Insights Credit Pricing](https://playfab.com/pricing/).
 
 **Example**
-A studio has 10 terabytes of data stored at the beginning of the month and does not increase that storage. The total cost would b 500 (10 TB * 50 credits/TB) Credits. 
+A studio has 10 terabytes of data stored at the beginning of the month and does not increase that storage. The total cost would be 500 (10 TB * 50 credits/TB) Credits. 
 
 **Example**
 A studio begins the month at 250 GB of data and increases to 750 GB of data throughout the month linearly. The total charge would be 25 (average of each day of the month 0.5 TB * 50 credits/TB) Credits.
