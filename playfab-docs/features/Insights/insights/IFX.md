@@ -48,15 +48,15 @@ IFX will be billed as part of the exisiting [Insights meter](https://docs.micros
 
 Data | Table Name | Description
 --- | --- | ---
-Dim User | dim.usage.xbox_user | Presence usage and client usage data from users across all the platforms. Does not not contain anonymous users or external users.
-Dim Live Title User | dim.usage.xbox_live_title_user | Title usage report by user based on client usage.
+Dim User | dim.usage.xbox_user | User meta data as it relates to presence usage and client usage data from users across all the platforms. Does not not contain anonymous users or external users.
+Dim Live Title User | dim.usage.xbox_live_title_user | Title usage report by user and their stats based on client usage.
 Dim User Platform | dim.usage.xbox_user_platform | Date a user is first seen on different platforms. Includes users from client usage and presence usage.
-Dim Live Title | dim.store.xbox_live_title | *XboxTitleId* meta data related to IFX onboarded titles. Data may include retail, demo or test data.
+Dim Live Title | dim.store.xbox_live_title | *XboxTitleId* meta data related to retail and non-retail products that have been on-boarded to IFX. Data may include demo or test data.
 Dim Product | dim.store.xbox_product | Retail and non-retail products related to the on-boarded *XboxTitleID*.
-Dim Achievement | dim.usage.xbox_achievement | Achievement data for *XboxTitleID*.
+Dim Achievement | dim.usage.xbox_achievement | Achievement meta data for *XboxTitleID*.
 Dim Transaction Type | dim.store.xbox_transaction_type | Description of the different transaction types when a purchase traction is made.
-Dim Platform | dim.core.xbox_platform | Device platform data.
-Dim Geography | dim.core.xbox_geography | Geography-related usage data for a title
+Dim Platform | dim.core.xbox_platform | Descriptive data on different usage platforms.
+Dim Geography | dim.core.xbox_geography | Geography meta data.
 Dim Payment Type | dim.store.xbox_payment_type | Payment type details when a purchase transaction is made.
 
 ### Fact Tables
@@ -69,24 +69,45 @@ Daily Cancellation | metrics.store.xbox_order_cancellations | metrics.store.xbox
 Daily Refund | metrics.store.xbox_order_refunds | Daily refund data.
 Daily GamePass Title Rank | metrics.usage.xbox_gamepass_title_rank | Ranks based on usage against all titles in the Game Pass Vault.
 Daily GamePass Usage Acquisition | metrics.usage.xbox_gamepass_usage_acquisition | Tracks the first time a user plays a GamePass title on each device platform.
-Daily GamePass Usage | metrics.usage.xbox_gamepass_usage | Game Pass usage based on *AppInterActivity* telemetry.
+Daily GamePass Usage | metrics.usage.xbox_gamepass_usage | Game Pass usage based on *AppInterActivitySummary* telemetry.
 Daily GamePass Purchase | metrics.store.xbox_gamepass_purchase | Daily purchases of products in the Game Pass Vault.
-Daily Achievement | metrics.usage.xbox_achievement |Daily achievement data. If an event is sent to IFX multiple times on different days, the events will show up multiple times in this table with different *DateId*s but with all other fields identical. Additionally, platform values will differ due to showing all platforms the *XboxTitleId* is available on rather than the platform the achievement is achieved on. These are known issues due to Kusto (ADX) limitations.
+Daily Achievement | metrics.usage.xbox_achievement | Daily achievement data. At a very low occurrence rate, an achievement event can be sent to IFX system more than once. This will look like an achievement is achieved more than once on different days, which shouldn't be the reality. In this case, use the later occurrence as the real achieved date. Platform value will indicate all platforms the *XboxTitleId* is available on, rather than the platform the achievement is achieved on.
 Daily Broadcast User | metrics.usage.xbox_broadcaster_activity_user | Daily broadcast user activity data.
 Daily Concurrency | metrics.usage.xbox_currency | Daily max currency for *XboxTitleId* on each platform.
 Daily Retention Cohort | metrics.usage.xbox_retention_cohort | Cohort stats for *XboxTitleId*s on each platform.
 
+
+## Table Types
+
+Type 1 and type 2 tables may have the same table name and may contain similar data fields. Differing table fields will optimize for either GDPR requirements or SQL integration depending on the table type. Table type may influence data type SLA.
+
+**Type 1:** Type 1 tables are modeled to be more generic and to fit GDPR requirements
+
+**Type 2:**  Type 2 tables are modeled to optimize for SQL integration
+
+### Type 1 Table Equivalents
+
+Type 1 Table Name | Equivalent Type 2 Table Name | Table Differences
+--- | --- | ---
+metrics.subscription.xbox_subscription_status | metrics.store.xbox_subscription_status | No difference, Identical schemas
+metrics.usage.xbox_usage_intervals | metrics.usage.xbox_usage_presence | Different schema, Type 1 table has higher SLA
+metrics.store.xbox_purchase_chargebacks | No Type 2 Equivalent | N/A
+metrics.store.xbox_purchase_failures | No Type 2 Equivalent |  N/A
+metrics.store.xbox_purchase_orders | metrics.store.xbox_daily_purchase | Different schema, Type 1 table has higher SLA
+metrics.store.xbox_purchase_refunds | metrics.store.xbox_order_refunds | Different schema, Both track daily data
+metrics.store.xbox_purchase_cancellations | metrics.store.xbox_order_cancellations | Different schema, Both track daily data
+
 ## Latency by Data Type
 
-Pipeline | Latency | Explanation
---- | --- | ---
-Hourly Purchase Data | 1-2 Hours | IFX ingests hourly purchase order events from Xbox Live. Latency is no more than 2 hours from the time when the event was emitted. For example, purchase order events happening on 03/11 between 13:00 and 14:00 will be ingested on 03/11 by 15:00
-Daily Purchase Data | 1 Day | IFX ingests daily purchase data from various cosmos ConsumerModules. For purchase orders, we overwrite the hourly data ingested during the prior day. For example, on 03/11, we will overwrite the hourly purchase order data we ingested for 03/10 and replace with it with daily purchase data for 03/10. When hourly event data is not available due to failures, cancellations, chargebacks, or refunds, daily data is the deepest granularity available.
-7 Day Purchase Reprocess | 1 Day | Reprocessed purchase data undergoes constant updates. For example, if a customer buys a product and then cancels their order, the purchase data is updated. Every day IFX will back process purchase day on a rolling 7 days basis to ensure any late arriving events and updates are captured. For example, on 03/11, we will populate 03/10 data for all purchase scenarios, as well as reprocess data for 03/04~03/09.
-Hourly Usage Data | 1-2 Hours | When tracking presence via title usage, *Microsoft.Xbox.Presence.BackEnd.Service.Logging.TitleEnd* events signify a session has ended. This event is ingested near real time and batch processed every hour but no more than 2 hours after the event is emitted. For example, if presence usage occurs on 03/11 between 13:00 and 14:00, usage data will be ingested by 03/11 15:00.
-Daily Usage Data | 1 Day | Daily usage data is only used for backfills or reprocessing. IFX ingests one day's worth of usage data all at once rather than ingesting the data hourly. The entire day will display as YYYY-MM-dd 00:00 in the *metrics.usage.xbox_usage_intervals* table. The exact usage start and end time is recorded in the *UsageStartTime* and *UsageEndTime* columns. 
-Daily Subscription Status (*metrics.subscription.xbox_subscription_status*) | 2 Days | Represents users' subscription status from the reported day. Includes all major game subscription products (Gold, Game Pass, and EA). Only users with purchase or usage data for the title on the reported day will be present in the title database. This means that only the status of daily "active" users are shown for that day.
-Daily Subscription Status (*metrics.store.xbox_subscription_status*) | **INFO NEEDED** | Operates similarly to  the Daily Subscription Status but shows the subscription status of all users that have ever had usage activity.
+Data Type | Table Type | Latency | Explanation
+--- | --- | --- | ---
+Hourly Purchase Data | Type 1 | 1-2 Hours | IFX ingests hourly purchase order events from Xbox Live. Latency is no more than 2 hours from the time when the event was emitted. For example, purchase order events happening on 03/11 between 13:00 and 14:00 will be ingested on 03/11 by 15:00
+Daily Purchase Data | Type 1 | 1 Day | IFX ingests daily purchase data from various cosmos ConsumerModules. For purchase orders, we overwrite the hourly data ingested during the prior day. For example, on 03/11, we will overwrite the hourly purchase order data we ingested for 03/10 and replace with it with daily purchase data for 03/10. When hourly event data is not available due to failures, cancellations, chargebacks, or refunds, daily data is the deepest granularity available.
+7 Day Purchase Reprocess | Type 1 | 1 Day | Reprocessed purchase data undergoes constant updates. For example, if a customer buys a product and then cancels their order, the purchase data is updated. Every day IFX will back process purchase day on a rolling 7 days basis to ensure any late arriving events and updates are captured. For example, on 03/11, we will populate 03/10 data for all purchase scenarios, as well as reprocess data for 03/04~03/09.
+Hourly Usage Data |  Type 1 | 1-2 Hours | When tracking presence via title usage, *Microsoft.Xbox.Presence.BackEnd.Service.Logging.TitleEnd* events signify a session has ended. This event is ingested near real time and batch processed every hour but no more than 2 hours after the event is emitted. For example, if presence usage occurs on 03/11 between 13:00 and 14:00, usage data will be ingested by 03/11 15:00.
+Daily Usage Data | Type 1 |  1 Day | Daily usage data is only used for backfills or reprocessing. IFX ingests one day's worth of usage data all at once rather than ingesting the data hourly. The entire day will display as YYYY-MM-dd 00:00 in the *metrics.usage.xbox_usage_intervals* table. The exact usage start and end time is recorded in the *UsageStartTime* and *UsageEndTime* columns. 
+Daily Subscription Status (*metrics.subscription.xbox_subscription_status*) |  Type 1 | 2 Days | Includes all major game subscription products (Gold, Game Pass, and EA). Only users with purchase or usage data for the title on a single, reported day will be present in the title database. This means that only the status of daily "active" users are shown for that day.
+Daily Subscription Status (*metrics.store.xbox_subscription_status*) |  Type 2 | 2 Days |  Operates similarly to the Type 1 Daily Subscription Status table but shows the subscription status of all users that have ever had usage activity from the past 2 years.
 
 > [!WARNING] 
 > Should the below be public data?! My guess is no... not going to clean up the text until confirmed it should be here.
