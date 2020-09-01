@@ -1,18 +1,18 @@
 ---
 title: Transitioning to Modern Pricing
-author: mckmoffatt
+author: mckmoffatt & nakong
 
-description: Describes how to transition from the legacy pricing  plan to the modern pricing plan.
-ms.author: mcelliot
-ms.date: 01/29/2020
+description: Describes how to transition from the legacy pricing plan to the modern pricing plan.
+ms.author: nakong
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, pricing, transition, modern pricing, legacy pricing, move, change
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ---
 # Updating an Account to Modern Pricing
 
- PlayFab customers on the legacy pricing model (MAU based pricing) will need to update their account plans to the modern pricing model prior to 09/30/2020 at which time MAU based pricing will no longer be supported.
+ PlayFab customers on the legacy pricing model (MAU-based pricing) must update their account plans to the modern pricing model (Usage-based pricing) prior to 11/01/2020 at which time MAU-based pricing will no longer be supported.
 
 Customers can understand changes to monthly costs and initiate their account's pricing update through the self-serve experience in Game Manager (detailed below) or through contacting the PlayFab team.
 
