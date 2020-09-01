@@ -36,7 +36,7 @@ Customers can understand changes to monthly costs and initiate their account's p
 4. If the Studio's billing account is on the Indie or Pro tier or if a title exceeds the modern pricing [development mode](../pricing/development-mode.md) limits, the **Update Account** page will appear. The **Update Account** page is where customers can see which Studios are connected to the billing account that is moving to usage-based pricing. When a billing account is updated to usage-based pricing, all linked Studios and corresponding titles will move automatically update.
 
 5. Select "Next" to move through the contact information and payment information tabs. If the billing account is on an **Indie or Pro** MAU-based pricing plan, contact information and payment information will be pre-populated.
-If the billing account is on an **Essentials** pricing plan, entering contact information and payment information is optional as long as no corresponding titles exceed the designated player limit for usage-based pricing. See[development mode](../pricing/development-mode.md) titles to learn more.
+If the billing account is on an **Essentials** pricing plan, entering contact information and payment information is optional as long as no corresponding titles exceed the designated player limit for usage-based pricing. See [development mode](../pricing/development-mode.md) titles to learn more.
 
 6. Select **Confirm this Plan** from the review stage to complete the billing account update to usage-based pricing.
 
