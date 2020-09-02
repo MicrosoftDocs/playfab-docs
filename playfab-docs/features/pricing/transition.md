@@ -1,7 +1,6 @@
 ---
 title: Transitioning to Modern Pricing
-author: mckmoffatt & nakong
-
+author: nathankong-microsoft
 description: Describes how to transition from the legacy pricing plan to the modern pricing plan.
 ms.author: nakong
 ms.date: 09/01/2020
@@ -64,7 +63,7 @@ Those customers who need Platinum Support with emergency escalations or estimate
 
 Customers that estimate low title usage or who do not need ticketed support, can select the Pay-as-you-Go plan with no monthly minimum (available in October).  You will still have access to the Public Forums and can upgrade your plan as you grow.
 
-For more information about technical support offerings, go to https://docs.microsoft.com/en-us/gaming/playfab/features/pricing/paidtechnicalsupport. 
+For more information, go to [Accessing PlayFab technical support](https://docs.microsoft.com/gaming/playfab/features/pricing/paidtechnicalsupport).
 
 ### Q. I have not selected a plan, will my account be shut off? ###
 No. Based on your current tier, your titles will either be transitioned to Dev Mode or the Standard Plan.  However, If you are an Essentials customers with titles with over 100k users, you will need to select a plan in order for new users to play your game. We recommend understanding which of your titles are currently exceeding 100k users so that you can select that plan that works best for you prior to the transition date of November 1, 2020.
