@@ -1,9 +1,9 @@
 ---
 title: Pricing Meters
-author: tcrawf23
+author: nathankong-microsoft
 description: Describes each of the pricing meters in the new pricing model.
-ms.author: tcrawf23
-ms.date: 2/29/2020
+ms.author: nakong
+ms.date: 9/10/2020
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, pricing, meters
@@ -28,14 +28,14 @@ View and take action on your game's real-time data. Events are generated in two 
 
 ## Profile
 There is nothing more important to the success of your games than players. Profiles help you understand and engage with players. The profile is the place that helps you understand and engage with your players. Profile includes any data stored related to the player profile, entity profile, character profile, groups, and inventory. Profile data is information that applies to an individual player, group of players, or items, and is stored as Key/Value Pairs (KVPs) by PlayFab. Profile data reads, profile data writes, and storage are billed as part of this metered service.
-* **Reads** - Metered based on the total number of reads to profile data which are processed by PlayFab.* For a list of read APIs, see [Profile read APIs](profile-reads.md).
-* **Writes** - Metered based on the total number of writes (and deletes)  which are processed by PlayFab.* For a list of write APIs, see [Profile write APIs](profile-writes.md).
+* **Reads** - Metered based on the total number of reads to profile data which are processed by PlayFab.* For a list of read APIs, see [Profile read APIs](profile-reads.md). This meter is weighted to 1KB.
+* **Writes** - Metered based on the total number of writes (and deletes)  which are processed by PlayFab.* For a list of write APIs, see [Profile write APIs](profile-writes.md). This meter is weighted to 1KB.
 * **Storage** - Metered based on the average total volume of profile data hosted by PlayFab across daily snapshots.
 
 
 ## Content & Configuration
 Content & Configuration files are used to remotely manage configuration for your game. You can update game content remotely in real-time (or on a schedule), and deliver personalized news and events that keep players coming back for more. Content & Configuration files include the following items: entity files, actions, rules, scheduled tasks, matchmaking, push notifications, emails, and title news. Content & Configuration files are a set of key/value pairs that are primarily used to manage configuration for your game remotely. Content & Configuration files data reads, data writes, and storage are billed as part of this metered service.
-* **Reads** - Metered based on the total number of files data reads which are processed by PlayFab.* For a list of read APIs, see [Content & Configuration read APIs](file-reads.md).
+* **Reads** - Metered based on the total number of files data reads which are processed by PlayFab.* For a list of read APIs, see [Content & Configuration read APIs](file-reads.md). This meter is weighted to 10KB.
 * **Writes** - Metered based on the total number of files data writes (and deletes) which are processed by PlayFab.* For a list of write APIs, see [Content & Configuration write APIs](file-writes.md).
 * **Storage** - Metered based on the average total volume of files data hosted by PlayFab across daily snapshots.
 
