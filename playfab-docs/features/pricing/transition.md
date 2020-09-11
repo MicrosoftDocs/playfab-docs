@@ -7,7 +7,7 @@ ms.date: 09/01/2020
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, pricing, transition, modern pricing, legacy pricing, move, change
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ---
 # Updating an Account to Modern Pricing
 
@@ -41,7 +41,7 @@ If the billing account is on an **Essentials** pricing plan, entering contact in
 
 ## FAQ
 
-### Q. What will happen to my account on November 1st, 2020? ###
+#### Q. What will happen to my account on November 1st, 2020?
 **Customers already on usage-based pricing plans (Standard Plan, Premium Plan)**\
 Nothing! You have already transitioned to our new pricing and you should experience business-as-usual.
 
@@ -59,26 +59,25 @@ We recommend selecting a plan prior to the transition date of November 1st, 2020
 **Indie & Pro Tier customers**\
 Indie and Pro customers will be automatically transitioned to the Standard plan, which has a monthly minimum of $99, and includes monthly meters valued at $400 USD along with Gold Level Support, which is the same support level as you received in the Indie and Pro Tiers.  Therefore, you will continue to have Public Forum access as well as, be able to submit support tickets as needed.
 
-Those customers who need Platinum Support with emergency escalations or estimate heavier usage will be able to self-upgrade (available in October) to the Premium Plan which includes monthly meters valued at $8000 USD for only $1999 USD per month.
+Those customers who need Platinum Support with emergency escalations or estimate heavier usage will be able to self-upgrade (available in October) to the Premium Plan which includes monthly meters valued at $8,000 USD for only $1,999 USD per month.
 
 Customers that estimate low title usage or who do not need ticketed support, can select the Pay-as-you-Go plan with no monthly minimum (available in October).  You will still have access to the Public Forums and can upgrade your plan as you grow.
 
 For more information, go to [Accessing PlayFab technical support](https://docs.microsoft.com/gaming/playfab/features/pricing/paidtechnicalsupport).
 
-### Q. I have not selected a plan, will my account be shut off? ###
+#### Q. I have not selected a plan, will my account be shut off?
 No. Based on your current tier, your titles will either be transitioned to Dev Mode or the Standard Plan.  However, If you are an Essentials customers with titles with over 100k users, you will need to select a plan in order for new users to play your game. We recommend understanding which of your titles are currently exceeding 100k users so that you can select that plan that works best for you prior to the transition date of November 1, 2020.
 
 
-### Q. I am an Enterprise customer. What will happen to my account? ###
-Enterprise accounts will be migrated to the new pricing plans according to their contract renewal date and will not automatically transition on November 1. If you have questions about your Enterprise contract please contact: sales@playfab.com 
+#### Q. I am an Enterprise customer. What will happen to my account?
+Enterprise accounts will be migrated to the new pricing plans according to their contract renewal date and will not automatically transition on November 1. If you have questions about your Enterprise contract, email us at: sales@playfab.com 
 
-### Q. How can I understand the costs for my studio prior to the transition? ###
-To preview the impact of moving your titles to consumption-based pricing, you can reference your Billing Summary page from the “My Studios and Titles” homepage by clicking on the studio settings button. 
+#### Q. How can I understand the costs for my studio prior to the transition?
+To preview the impact of moving your titles to consumption-based pricing, go to the **Billing Summary** page by selecting **Studio settings** from the **My Studios and Titles** homepage.
 
-### Q. It looks like I might save money with the new pricing. Do I have to wait until Nov. 1 before I make the transition? ###
-No, you can upgrade your account to a new pricing plan at any time by clicking the "Update Pricing" button on the "My Studios and Titles homepage" or your Title's Dashboard
+#### Q. It looks like I might save money with the new pricing. Do I have to wait until Nov. 1 before I make the transition?
+No, you can upgrade your account to a new pricing plan at any time. To do so, select **Update Pricing** from your **My Studios and Titles** homepage or Title's Dashboard.
 
-### Q: I can see my total meter usage in the billing summary, and I’ve read the best practices doc, but I’m still not sure how to figure out where the costs are coming from in my title. What tools are available to figure out which specific API calls are the ones costing me the most? ###
+#### Q: I can see my total meter usage in the billing summary, and I’ve read the best practices doc, but I’m still not sure how to figure out where the costs are coming from in my title. What tools are available to figure out which specific API calls are the ones costing me the most?
 
-Yes, in addition to the API graph on the main dashboard of your game, which shows the overall traffic and can be filtered to show each individual call and response, there’s also the Daily API Usage Details Report in the Dashboards->Reports section of the Game Manager for your title. That report breaks down, on a per-hour basis, the API calls made in the title, as well as the average and total bytes sent/returned on each. So, for example, the total calls to UpdateUserData will be shown for each hour, along with the total bytes sent, which allows you to quickly calculate the expected meter usage (given that a Profile Write ticks the meter at a per KB rate for data written).
-
+In addition to the API graph on the main dashboard of your game, which shows the overall traffic and can be filtered to show each individual call and response, there’s also the Daily API Usage Details Report in the **Dashboards > Reports** section of the Game Manager for your title. That report breaks down, on a per-hour basis, the API calls made in the title, as well as the average and total bytes sent/returned hourly. So, for example, the total calls to **UpdateUserData** will be shown for each hour, along with the total bytes sent, which allows you to quickly calculate the expected meter usage (given that a Profile Write ticks the meter at a per KB rate for data written).
