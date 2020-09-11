@@ -2,8 +2,8 @@
 title: Development Mode
 author: tcrawf23
 description: Describes the features and limits of Development Mode titles.
-ms.author: timcra
-ms.date: 01/29/2020
+ms.author: nakong
+ms.date: 09/09/2020
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, pricing, dev mode, development mode, title, meter, meters
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Titles in Development Mode
 
-All PlayFab titles are in one of two possible states - development mode and live. Development Mode is, as the name suggests, meant for titles currently in development. This mode provides developers with the flexibility to connect a title to PlayFab without running up the bill. However, there are functional limitations for titles in development mode (detailed below). A title in development mode can be [launched](../pricing/upgrades.md) through Game Manager and is then considered live. Launching a title removes all development mode limitations and allows the title to expand outside of test markets.
+All PlayFab titles are in one of two possible states - development mode and live. Development Mode is, as the name suggests, meant for titles currently in development. This mode provides developers with the flexibility to connect a title to PlayFab without running up the bill. However, there are functional limitations for titles in development mode (detailed below). A title in development mode can only have up to 100k users. These titles can be [launched](../pricing/upgrades.md) through Game Manager and is then considered live. Launching a title removes all development mode limitations and allows the title to expand outside of test markets.
 
 By default, every title created starts in development mode. The **My Studios and Titles** main page will indicate which state a title is in through a mark on the bottom, left corner of the title block. This indicator can also be viewed at the top of the left nav within a title. Titles in development mode are labeled **Development**. Live titles are blank.
 
