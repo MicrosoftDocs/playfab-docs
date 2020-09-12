@@ -1,8 +1,8 @@
 ---
 title: Tracking title consumption of multiplayer servers
-author: v-thopra
+author: joannaleecy
 description: Describes the tracking data that is available on the Analytics page of the Multiplayer > Multiplayer Servers section in Game Manager.
-ms.author: v-thopra
+ms.author: joanlee
 ms.date: 05/08/2019
 ms.topic: article
 ms.prod: playfab

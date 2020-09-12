@@ -1,8 +1,8 @@
 ---
 title: entity_files_set
-author: v-thopra
+author: joannaleecy
 description: entity_files_set event.
-ms.author: v-thopra
+ms.author: joanlee
 ms.date: 02/19/2019
 ms.topic: article
 ms.prod: playfab

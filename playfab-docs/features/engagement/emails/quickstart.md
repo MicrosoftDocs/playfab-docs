@@ -1,8 +1,8 @@
 ---
 title: Email messaging quickstart
-author: v-thopra
+author: joannaleecy
 description: Quickstart for email messaging.
-ms.author: v-thopra
+ms.author: joanlee
 ms.date: 06/12/2018
 ms.topic: article
 ms.prod: playfab

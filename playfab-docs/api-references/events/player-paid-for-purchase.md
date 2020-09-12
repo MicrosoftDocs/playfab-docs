@@ -1,8 +1,8 @@
 ---
 title: player_paid_for_purchase
-author: v-thopra
+author: joannaleecy
 description: player_paid_for_purchase event.
-ms.author: v-thopra
+ms.author: joanlee
 ms.date: 02/19/2019
 ms.topic: article
 ms.prod: playfab

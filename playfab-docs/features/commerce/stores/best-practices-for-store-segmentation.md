@@ -1,8 +1,8 @@
 ---
 title: Best Practices for Store Segmentation
-author: thomasgu
+author: joannaleecy
 description: Lists the Best Practices for configuring and using Store Segmentation.
-ms.author: tomg
+ms.author: joanlee
 ms.date: 10/29/2018
 ms.topic: article
 ms.prod: playfab

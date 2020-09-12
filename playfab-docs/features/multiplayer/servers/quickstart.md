@@ -1,8 +1,8 @@
 ---
 title: Servers quickstarts
-author: v-thopra
+author: joannaleecy
 description: Servers quickstart topics.
-ms.author: v-thopra
+ms.author: joanlee
 ms.date: 01/18/2019
 ms.topic: article
 ms.prod: playfab

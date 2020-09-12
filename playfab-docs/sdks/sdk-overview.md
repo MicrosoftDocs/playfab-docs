@@ -1,6 +1,6 @@
 ---
 title: PlayFab SDK overview
-author: v-thopra
+author: joannaleecy
 description: Overview of the PlayFab SDKs.
 ms.author: jeffshi
 ms.date: 06/02/2020

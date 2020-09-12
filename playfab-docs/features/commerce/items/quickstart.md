@@ -1,8 +1,8 @@
 ---
 title: Items quickstart
-author: thomasgu
+author: joannaleecy
 description: Quickstart for Items.
-ms.author: tomg
+ms.author: joanlee
 ms.date: 05/02/2019
 ms.topic: article
 ms.prod: playfab

@@ -1,8 +1,8 @@
 ---
 title: Integrating the PlayFab GSDK into Unreal Engine 4
-author: vDonGlover
+author: joannaleecy
 description: How to quickly upload a sample multiplayer server, configure a server build, and create server instances.
-ms.author: v-doglo
+ms.author: joanlee
 ms.date: 09/12/2019
 ms.topic: article
 ms.prod: playfab

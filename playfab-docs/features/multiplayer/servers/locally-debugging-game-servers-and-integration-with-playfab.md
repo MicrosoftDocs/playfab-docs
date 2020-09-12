@@ -1,8 +1,8 @@
 ---
 title: Locally debugging game servers and integration with PlayFab
-author: v-thopra
+author: joannaleecy
 description: Describes how to integrate PlayFab multiplayer game servers with the PlayFab Game Server SDK (GSDK) and verify and debug the integration.  
-ms.author: v-thopra
+ms.author: joanlee
 ms.date: 01/15/2019
 ms.topic: article
 ms.prod: playfab

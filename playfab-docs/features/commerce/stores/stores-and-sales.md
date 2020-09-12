@@ -1,8 +1,8 @@
 ---
 title: Stores and sales
-author: v-thopra
+author: joannaleecy
 description: Describes how to configure a Store with a selection of items available in real money or virtual currency.
-ms.author: v-thopra
+ms.author: joanlee
 ms.date: 10/26/2018
 ms.topic: article
 ms.prod: playfab

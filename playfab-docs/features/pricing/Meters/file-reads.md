@@ -1,8 +1,8 @@
 ---
 title: Content & Configuration Reads Meter API Description
-author: vDonGlover
+author: joannaleecy
 description: This file details the APIs that cause file reads meter to increment.
-ms.author: v-doglo
+ms.author: joanlee
 ms.date: 11/04/2019
 ms.topic: article
 ms.prod: playfab

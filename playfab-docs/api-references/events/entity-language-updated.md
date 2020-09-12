@@ -1,8 +1,8 @@
 ---
 title: entity_language_updated
-author: v-thopra
+author: joannaleecy
 description: entity_language_updated event.
-ms.author: v-thopra
+ms.author: joanlee
 ms.date: 02/19/2019
 ms.topic: article
 ms.prod: playfab

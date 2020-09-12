@@ -1,8 +1,8 @@
 ---
 title: Deploying Linux based builds
-author: v-thopra
+author: joannaleecy
 description: How to create and manage linux based multiplayer server builds.
-ms.author: v-thopra
+ms.author: joanlee
 ms.date: 05/03/2019
 ms.topic: article
 ms.prod: playfab

@@ -1,8 +1,8 @@
 ---
 title: Bulk Actions for an entire Player Segment
-author: v-thopra
+author: joannaleecy
 description: Describes the steps needed to create a task to perform one or more actions on every player in a segment.
-ms.author: v-thopra
+ms.author: joanlee
 ms.date: 01/11/2018
 ms.topic: article
 ms.prod: playfab

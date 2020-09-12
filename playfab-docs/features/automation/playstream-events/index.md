@@ -1,8 +1,8 @@
 ---
 title: PlayStream
-author: v-kciril
+author: joannaleecy
 description: Landing page for PlayStream.
-ms.author: v-kciril
+ms.author: joanlee
 ms.date: 06/12/2018
 ms.topic: article
 ms.prod: playfab

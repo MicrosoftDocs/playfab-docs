@@ -1,8 +1,8 @@
 ---
 title: multiplayer_server_create_build_initiated
-author: v-thopra
+author: joannaleecy
 description: multiplayer_server_create_build_initiated event.
-ms.author: v-thopra
+ms.author: joanlee
 ms.date: 02/19/2019
 ms.topic: article
 ms.prod: playfab

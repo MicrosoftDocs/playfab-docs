@@ -1,8 +1,8 @@
 ---
 title: Real-time Analytics Core Concepts
-author: v-thopra
+author: joannaleecy
 description: Describes the core concepts of the PlayFab analytics system.
-ms.author: v-thopra
+ms.author: joanlee
 ms.date: 10/26/2018
 ms.topic: article
 ms.prod: playfab

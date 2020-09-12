@@ -1,6 +1,6 @@
 ---
 title: Managing standing by servers
-author: tophpalmer
+author: xmcai2016
 description: Managing standing by servers
 ms.author: chpalm
 ms.date: 10/18/2019

@@ -1,8 +1,8 @@
 ---
 title: Explorer quickstart
-author: belmer831
+author: mckmoffatt
 description: This quickstart guide shows how to query data created by PlayFab API calls.
-ms.author: belmer831
+ms.author: mcelliot
 ms.date: 07/23/2019    
 ms.topic: article
 ms.prod: playfab

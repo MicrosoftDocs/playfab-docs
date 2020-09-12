@@ -2,7 +2,7 @@
 title: Title Data quickstart
 author: shikha-tarware
 description: Describes how to programmatically create and use title data
-ms.author: shikha-tarware
+ms.author: shtarwar
 ms.date: 08/04/2020
 ms.topic: article
 ms.prod: playfab

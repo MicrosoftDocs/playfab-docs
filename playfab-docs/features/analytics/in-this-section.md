@@ -1,8 +1,8 @@
 ---
 title: Analytics topic areas
-author: v-thopra
+author: joannaleecy
 description: Contents to the PlayFab Analytics feature documentation
-ms.author: v-thopra
+ms.author: joanlee
 ms.date: 06/05/2020
 ms.topic: article
 ms.prod: playfab

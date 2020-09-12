@@ -1,8 +1,8 @@
 ---
 title: Java licenses
-author: v-kciril
+author: joannaleecy
 description: Java licenses page
-ms.author: v-kciril
+ms.author: joanlee
 ms.date: 01/22/2019
 ms.topic: article
 ms.prod: playfab

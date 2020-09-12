@@ -1,8 +1,8 @@
 ---
 title: Quickstart for multiplayer servers (Game Manager)
-author: v-thopra
+author: joannaleecy
 description: How to you upload a sample multiplayer server and configure a server build.
-ms.author: v-thopra
+ms.author: joanlee
 ms.date: 01/15/2019
 ms.topic: article
 ms.prod: playfab

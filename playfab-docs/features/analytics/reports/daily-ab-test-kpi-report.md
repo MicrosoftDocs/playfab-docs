@@ -1,8 +1,8 @@
 ---
 title: Daily A/B Test KPI Report
-author: v-thopra
+author: joannaleecy
 description: Describes the report that is used to evaluate the effectiveness of your A/B Test experiments.
-ms.author: v-thopra
+ms.author: joanlee
 ms.date: 10/30/2018
 ms.topic: article
 ms.prod: playfab

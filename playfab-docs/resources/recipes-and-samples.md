@@ -1,8 +1,8 @@
 ---
 title: Recipes and samples
-author: v-thopra
+author: joannaleecy
 description: Code samples for PlayFab features and technologies.
-ms.author: v-thopra
+ms.author: joanlee
 ms.date: 02/25/2019
 ms.topic: article
 ms.prod: playfab

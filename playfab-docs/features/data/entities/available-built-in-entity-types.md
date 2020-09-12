@@ -1,8 +1,8 @@
 ---
 title: Available Built-In Entity Types
-author: vDonGlover
+author: joannaleecy
 description: Lists all of the available built in Entity types.
-ms.author: v-doglo
+ms.author: joanlee
 ms.date: 11/08/2018
 ms.topic: article
 ms.prod: playfab

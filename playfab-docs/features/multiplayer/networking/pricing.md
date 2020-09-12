@@ -1,8 +1,8 @@
 ---
 title: Billing for PlayFab Party
-author: v-thopra
+author: joannaleecy
 description: Describes the Billing plan for PlayFab Party.
-ms.author: v-thopra
+ms.author: joanlee
 ms.date: 8/12/2019
 ms.topic: article
 ms.prod: playfab

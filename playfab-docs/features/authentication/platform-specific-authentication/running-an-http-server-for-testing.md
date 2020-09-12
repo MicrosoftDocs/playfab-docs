@@ -1,8 +1,8 @@
 ---
 title: Running an HTTP server for testing
-author: v-thopra
+author: joannaleecy
 description: Describes how to install and run an HTTP server for testing.
-ms.author: v-thopra
+ms.author: joanlee
 ms.date: 11/08/2018
 ms.topic: article
 ms.prod: playfab

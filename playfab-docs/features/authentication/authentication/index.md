@@ -1,6 +1,6 @@
 ---
 title: Authentication
-author: thomasgu
+author: joannaleecy
 description: Overview for PlayFab Authentication
 ms.author: thomg
 ms.date: 06/10/2020

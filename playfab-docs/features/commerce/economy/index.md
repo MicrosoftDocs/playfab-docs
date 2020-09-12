@@ -1,8 +1,8 @@
 ---
 title: Economy
-author: v-thopra
+author: joannaleecy
 description: Landing page for Economy.
-ms.author: v-thopra
+ms.author: joanlee
 ms.date: 01/25/2019
 ms.topic: article
 ms.prod: playfab

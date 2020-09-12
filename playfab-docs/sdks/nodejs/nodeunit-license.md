@@ -1,8 +1,8 @@
 ---
 title: Node Unit
-author: v-kciril
+author: joannaleecy
 description: The Node Unit license. 
-ms.author: v-kciril
+ms.author: joanlee
 ms.date: 02/21/2019
 ms.topic: article
 ms.prod: playfab

@@ -1,8 +1,8 @@
 ---
 title: Deploying PlayFab multiplayer server builds
-author: v-thopra
+author: joannaleecy
 description: Describes how to deploy a PlayFab multiplayer server.
-ms.author: v-thopra
+ms.author: joanlee
 ms.date: 01/15/2019
 ms.topic: article
 ms.prod: playfab

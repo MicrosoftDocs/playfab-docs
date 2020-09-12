@@ -2,7 +2,7 @@
 title: Title Data
 author: shikha-tarware
 description: Landing page for Title Data.
-ms.author: shikha-tarware
+ms.author: shtarwar
 ms.date: 08/04/2020
 ms.topic: article
 ms.prod: playfab

@@ -1,8 +1,8 @@
 ---
 title: Subscriptions
-author: v-thopra
+author: joannaleecy
 description: Subscriptions data type.
-ms.author: v-thopra
+ms.author: joanlee
 ms.date: 03/27/2019
 ms.topic: article
 ms.prod: playfab

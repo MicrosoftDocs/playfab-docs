@@ -1,8 +1,8 @@
 ---
 title: Building Blocks
-author: v-thopra
+author: joannaleecy
 description: Describes the fundamental concepts on which PlayFab is based.
-ms.author: v-thopra
+ms.author: joanlee
 ms.date: 02/11/2018
 ms.topic: article
 ms.prod: playfab

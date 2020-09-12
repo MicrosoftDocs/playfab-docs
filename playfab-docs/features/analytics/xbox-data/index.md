@@ -1,8 +1,8 @@
 ---
 title: Xbox Data Add On
-author: belmer831
+author: mckmoffatt
 description: Xbox Data Add On overview.
-ms.author: Brent.Elmer
+ms.author: joanlee
 ms.date: 04/24/2019
 ms.topic: article
 ms.prod: playfab

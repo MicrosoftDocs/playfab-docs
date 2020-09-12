@@ -1,8 +1,8 @@
 ---
 title: Custom Game Servers
-author: v-thopra
+author: joannaleecy
 description: Tutorial about the self-management of custom game servers.
-ms.author: v-thopra
+ms.author: joanlee
 ms.date: 10/25/2018
 ms.topic: article
 ms.prod: playfab

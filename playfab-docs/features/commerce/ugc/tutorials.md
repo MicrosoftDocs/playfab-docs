@@ -1,6 +1,6 @@
 ---
 title: User Generated Content (UGC) tutorials
-author: thomasgu
+author: joannaleecy
 description: Overview page for tutorials about user generated content.
 ms.author: thomg
 ms.date: 01/17/2019

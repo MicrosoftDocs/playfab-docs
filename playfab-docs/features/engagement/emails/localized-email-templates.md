@@ -1,8 +1,8 @@
 ---
 title: Localized email templates
-author: v-thopra
+author: joannaleecy
 description: Describes how to set up localized email templates in PlayFab.
-ms.author: v-thopra
+ms.author: joanlee
 ms.date: 03/01/2019
 ms.topic: article
 ms.prod: playfab

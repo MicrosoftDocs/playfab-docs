@@ -2,7 +2,7 @@
 title: Introduction to Leaderboards v2
 author: xmcai2016
 description: Introduction to Leaderboards v2.
-ms.author: xmcai2016
+ms.author: carocai
 ms.date: 10/14/2019
 ms.topic: article
 ms.prod: playfab

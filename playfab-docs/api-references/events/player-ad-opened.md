@@ -1,8 +1,8 @@
 ---
 title: player_ad_opened
-author: v-thopra
+author: joannaleecy
 description: player_ad_opened event.
-ms.author: v-thopra
+ms.author: joanlee
 ms.date: 02/19/2019
 ms.topic: article
 ms.prod: playfab

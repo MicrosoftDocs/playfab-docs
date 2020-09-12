@@ -1,8 +1,8 @@
 ---
 title: Explorer tutorials
-author: belmer831
+author: mckmoffatt
 description: The Explorer tutorials.
-ms.author: belmer831
+ms.author: mcelliot
 ms.date: 07/23/2019    
 ms.topic: article
 ms.prod: playfab

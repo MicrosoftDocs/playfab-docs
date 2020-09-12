@@ -1,8 +1,8 @@
 ---
 title: studio_user_removed
-author: v-thopra
+author: joannaleecy
 description: studio_user_removed event.
-ms.author: v-thopra
+ms.author: joanlee
 ms.date: 02/19/2019
 ms.topic: article
 ms.prod: playfab

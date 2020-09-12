@@ -1,8 +1,8 @@
 ---
 title: Schemas tutorials
-author: belmer831
+author: mckmoffatt
 description: Introduces schemas for PlayFab Insights.
-ms.author: belmer831
+ms.author: mcelliot
 ms.date: 07/23/2019    
 ms.topic: article
 ms.prod: playfab

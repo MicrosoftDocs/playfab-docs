@@ -1,8 +1,8 @@
 ---
 title: SDK Generator
-author: v-thopra
+author: joannaleecy
 description: Landing page for the PlayFab SDK Generator.
-ms.author: v-thopra
+ms.author: joanlee
 ms.date: 01/22/2019
 ms.topic: article
 ms.prod: playfab

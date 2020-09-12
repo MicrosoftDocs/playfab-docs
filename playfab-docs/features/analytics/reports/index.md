@@ -1,8 +1,8 @@
 ---
 title: Reports
-author: v-thopra
+author: joannaleecy
 description: Landing page for Reports.
-ms.author: v-kciril
+ms.author: joanlee
 ms.date: 02/12/2019
 ms.topic: article
 ms.prod: playfab

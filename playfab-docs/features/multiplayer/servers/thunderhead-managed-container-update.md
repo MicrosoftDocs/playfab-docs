@@ -1,8 +1,8 @@
 ---
 title: PlayFab Multiplayer Server 2.0 - Managed Container Update
-author: v-thopra
+author: joannaleecy
 description: Describes the PlayFab Multiplayer Server 2.0 (Thunderhead) Managed Container Update in October 2018.
-ms.author: v-thopra
+ms.author: joanlee
 ms.date: 01/17/2019
 ms.topic: article
 ms.prod: playfab

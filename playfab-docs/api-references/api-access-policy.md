@@ -1,8 +1,8 @@
 ---
 title: API Access Policy
-author: thomasgu
+author: joannaleecy
 description: Describes how to use the API access policies in PlayFab.
-ms.author: tomg
+ms.author: joanlee
 ms.date: 03/25/2020
 ms.topic: article
 ms.prod: playfab

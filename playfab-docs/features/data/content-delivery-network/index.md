@@ -1,8 +1,8 @@
 ---
 title: Content Delivery Network
-author: v-thopra
+author: joannaleecy
 description: Landing page for Content Delivery Network.
-ms.author: v-thopra
+ms.author: joanlee
 ms.date: 02/05/2019
 ms.topic: article
 ms.prod: playfab

@@ -1,8 +1,8 @@
 ---
 title: Getting Started with PlayFab Explorer
-author: belmer831
+author: mckmoffatt
 description: Illustrates how to use the Explorer feature.
-ms.author: belmer831
+ms.author: mcelliot
 ms.date: 07/24/2019
 ms.topic: article
 ms.prod: playfab

@@ -1,8 +1,8 @@
 ---
 title: Accessing increased core limits and additional Azure regions
-author: v-thopra
+author: joannaleecy
 description: Describes how to view and increase core limits.
-ms.author: v-thopra
+ms.author: joanlee
 ms.date: 01/17/2019
 ms.topic: article
 ms.prod: playfab
