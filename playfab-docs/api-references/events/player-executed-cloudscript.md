@@ -1,8 +1,8 @@
 ---
 title: player_executed_cloudscript
-author: v-thopra
+author: joannaleecy
 description: player_executed_cloudscript event.
-ms.author: v-thopra
+ms.author: joanlee
 ms.date: 02/19/2019
 ms.topic: article
 ms.prod: playfab

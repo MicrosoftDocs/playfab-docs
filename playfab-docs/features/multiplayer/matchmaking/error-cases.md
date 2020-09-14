@@ -2,7 +2,7 @@
 title: Handling common error cases
 author: keithrkline
 description: Describes how titles should respond to various error cases
-ms.author: multiplayer
+ms.author: kkline
 ms.date: 03/15/2019
 ms.topic: article
 ms.prod: playfab

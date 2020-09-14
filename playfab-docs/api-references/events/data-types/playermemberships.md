@@ -1,8 +1,8 @@
 ---
 title: PlayerMemberships
-author: v-thopra
+author: joannaleecy
 description: Player Memberships data type.
-ms.author: v-thopra
+ms.author: joanlee
 ms.date: 03/27/2019
 ms.topic: article
 ms.prod: playfab

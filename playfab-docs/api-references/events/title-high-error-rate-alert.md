@@ -1,8 +1,8 @@
 ---
 title: title_high_error_rate_alert
-author: v-thopra
+author: joannaleecy
 description: title_high_error_rate_alert event.
-ms.author: v-thopra
+ms.author: joanlee
 ms.date: 02/19/2019
 ms.topic: article
 ms.prod: playfab

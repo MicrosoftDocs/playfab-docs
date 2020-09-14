@@ -1,8 +1,8 @@
 ---
 title: player_data_exported
-author: v-thopra
+author: joannaleecy
 description: player_data_exported event.
-ms.author: v-thopra
+ms.author: joanlee
 ms.date: 02/19/2019
 ms.topic: article
 ms.prod: playfab

@@ -1,8 +1,8 @@
 ---
 title: Using Player inventory
-author: v-thopra
+author: joannaleecy
 description: Describes how to view and work with the player inventory using the PlayFab API.
-ms.author: v-thopra
+ms.author: joanlee
 ms.date: 06/11/2018
 ms.topic: article
 ms.prod: playfab

@@ -1,8 +1,8 @@
 ---
 title: Archived Release Notes- PlayFab Multiplayer Servers (Thunderhead)
-author: v-thopra
+author: joannaleecy
 description: PlayFab Multiplayer Servers (Thunderhead) release notes.
-ms.author: v-thopra
+ms.author: joanlee
 ms.date: 01/17/2019
 ms.topic: article
 ms.prod: playfab

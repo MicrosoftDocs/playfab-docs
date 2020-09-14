@@ -1,8 +1,8 @@
 ---
 title: Thirty-day New User Conversion Report
-author: v-thopra
+author: joannaleecy
 description: Describes the report that tracks the percentages of new players who spend money within the first 30 days.
-ms.author: v-thopra
+ms.author: joanlee
 ms.date: 10/30/2018
 ms.topic: article
 ms.prod: playfab

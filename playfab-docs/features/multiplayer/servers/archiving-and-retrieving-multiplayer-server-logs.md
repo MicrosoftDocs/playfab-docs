@@ -1,8 +1,8 @@
 ---
 title: Archiving and retrieving multiplayer server logs
-author: v-thopra
+author: joannaleecy
 description: Describes how to archive and retrieve multiplayer server logs.
-ms.author: v-thopra
+ms.author: joanlee
 ms.date: 01/17/2019
 ms.topic: article
 ms.prod: playfab

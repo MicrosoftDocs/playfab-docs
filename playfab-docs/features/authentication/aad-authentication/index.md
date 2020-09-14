@@ -1,8 +1,8 @@
 ---
 title: AAD
-author: john-smith-microsoft
+author: mckmoffatt
 description: Provides an introduction to AAD authentication and steps for how to create a user with this auth method
-ms.author: johsmi
+ms.author: mcelliot
 ms.date: 11/11/2019
 ms.topic: article
 ms.prod: playfab

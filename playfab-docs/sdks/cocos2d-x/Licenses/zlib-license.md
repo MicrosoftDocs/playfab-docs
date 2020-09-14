@@ -1,8 +1,8 @@
 ---
 title: zlib license
-author: v-kciril
+author: joannaleecy
 description: License for zlib
-ms.author: v-kciril
+ms.author: joanlee
 ms.date: 02/19/2018
 ms.topic: article
 ms.prod: playfab

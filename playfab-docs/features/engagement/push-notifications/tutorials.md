@@ -1,8 +1,8 @@
 ---
 title: Push Notifications Tutorials
-author: v-thopra
+author: joannaleecy
 description: Overview page for tutorials about using Push Notifications in PlayFab.
-ms.author: v-thopra
+ms.author: joanlee
 ms.date: 06/12/2018
 ms.topic: article
 ms.prod: playfab

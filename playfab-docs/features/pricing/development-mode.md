@@ -1,6 +1,6 @@
 ---
 title: Development Mode
-author: tcrawf23
+author: nathankong-microsoft
 description: Describes the features and limits of Development Mode titles.
 ms.author: nakong
 ms.date: 09/09/2020

@@ -1,8 +1,8 @@
 ---
 title: ES6 features in CloudScript
-author: v-thopra
+author: joannaleecy
 description: Describes how to use ECMAScript 6 (ES6) features when writing CloudScript.
-ms.author: v-thopra
+ms.author: joanlee
 ms.date: 06/11/2018
 ms.topic: article
 ms.prod: playfab

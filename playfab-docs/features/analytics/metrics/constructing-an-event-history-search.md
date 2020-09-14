@@ -1,8 +1,8 @@
 ---
 title: Constructing an Event History Search
-author: v-thopra
+author: joannaleecy
 description: Illustrates how to construct an Event History Search.
-ms.author: v-thopra
+ms.author: joanlee
 ms.date: 01/11/2018
 ms.topic: article
 ms.prod: playfab

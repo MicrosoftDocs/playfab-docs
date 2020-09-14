@@ -1,8 +1,8 @@
 ---
 title: PlayFab CPP SDK
-author: v-thopra
+author: joannaleecy
 description: landing page for PlayFab cross-platform (CPP) SDK.
-ms.author: v-thopra
+ms.author: joanlee
 ms.date: 01/22/2019
 ms.topic: article
 ms.prod: playfab

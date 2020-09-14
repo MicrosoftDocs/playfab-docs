@@ -1,8 +1,8 @@
 ---
 title: group_updated
-author: v-thopra
+author: joannaleecy
 description: group_updated event.
-ms.author: v-thopra
+ms.author: joanlee
 ms.date: 02/19/2019
 ms.topic: article
 ms.prod: playfab

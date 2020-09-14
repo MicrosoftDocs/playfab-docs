@@ -1,8 +1,8 @@
 ---
 title: Actions & Rules quickstart
-author: v-thopra
+author: joannaleecy
 description:  Quickstart for Actions & Rules.
-ms.author: v-thopra
+ms.author: joanlee
 ms.date: 01/30/2019
 ms.topic: article
 ms.prod: playfab

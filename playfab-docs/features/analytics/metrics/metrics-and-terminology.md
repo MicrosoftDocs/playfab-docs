@@ -1,8 +1,8 @@
 ---
 title: Metrics and Terminology
-author: v-thopra
+author: joannaleecy
 description: Contains tables with definitions for analytics terminology, engagement metrics, and revenue metrics.
-ms.author: v-thopra
+ms.author: joanlee
 ms.date: 10/29/2018
 ms.topic: article
 ms.prod: playfab

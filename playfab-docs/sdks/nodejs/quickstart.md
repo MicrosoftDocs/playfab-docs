@@ -1,8 +1,8 @@
 ---
 title: NodeJS quickstart
-author: v-thopra
+author: joannaleecy
 description: This guide will help you make your first API call in NodeJS.
-ms.author: v-thopra
+ms.author: joanlee
 ms.date: 06/11/2018
 ms.topic: article
 ms.prod: playfab

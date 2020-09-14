@@ -1,8 +1,8 @@
 ---
 title: Trading
-author: thomasgu
+author: joannaleecy
 description: Landing page for Trading.
-ms.author: tomg
+ms.author: joanlee
 ms.date: 01/30/2019
 ms.topic: article
 ms.prod: playfab

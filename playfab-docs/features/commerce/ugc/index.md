@@ -1,6 +1,6 @@
 ---
 title: User Generated Content (UGC)
-author: thomasgu
+author: joannaleecy
 description: Overview of the PlayFab User Generated Content feature.
 ms.author: thomg
 ms.date: 01/17/2019

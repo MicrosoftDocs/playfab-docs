@@ -1,8 +1,8 @@
 ---
 title: character_vc_item_purchased
-author: v-thopra
+author: joannaleecy
 description: character_vc_item_purchased event.
-ms.author: v-thopra
+ms.author: joanlee
 ms.date: 02/19/2019
 ms.topic: article
 ms.prod: playfab

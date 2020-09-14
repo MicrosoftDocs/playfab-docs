@@ -1,8 +1,8 @@
 ---
 title: API Feature Settings in the PlayFab Game Manager
-author: v-thopra
+author: joannaleecy
 description: Describes the options in the PlayFab Game Manager for managing the behavior of PlayFab APIs.
-ms.author: v-thopra
+ms.author: joanlee
 ms.date: 06/11/2018
 ms.topic: article
 ms.prod: playfab

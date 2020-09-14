@@ -1,6 +1,6 @@
 ---
 title: Quickstart PlayFab REST API collection for Postman
-author: tcrawf23
+author: nathankong-microsoft
 description: This guide helps you make your first PlayFab API call using Postman.
 ms.author: timcra
 ms.date: 06/11/2018

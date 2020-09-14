@@ -1,8 +1,8 @@
 ---
 title: Sessions
-author: v-thopra
+author: joannaleecy
 description: Describes how to enable and manage logging events to calculate Focus Time and Session Duration.
-ms.author: v-thopra
+ms.author: joanlee
 ms.date: 10/29/2018
 ms.topic: article
 ms.prod: playfab

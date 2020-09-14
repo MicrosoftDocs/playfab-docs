@@ -1,6 +1,6 @@
 ---
 title: Objective-C quickstart
-author: v-thopra
+author: joannaleecy
 description: This guide will help you make your first PlayFab API call using Objective-C.
 ms.author: jeffshi
 ms.date: 06/11/2018

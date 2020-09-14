@@ -1,8 +1,8 @@
 ---
 title: Photon Tutorials
-author: v-thopra
+author: joannaleecy
 description: Overview page for tutorials about how to work with PlayFab and Photon.
-ms.author: v-thopra
+ms.author: joanlee
 ms.date: 11/19/2018
 ms.topic: article
 ms.prod: playfab

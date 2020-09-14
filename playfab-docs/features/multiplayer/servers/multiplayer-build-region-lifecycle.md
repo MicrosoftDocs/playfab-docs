@@ -1,8 +1,8 @@
 ---
 title: Lifecycle of a multiplayer server build region
-author: v-thopra
+author: joannaleecy
 description: Describes the lifecycle of a multiplayer server build region.
-ms.author: v-thopra
+ms.author: joanlee
 ms.date: 01/17/2019
 ms.topic: article
 ms.prod: playfab

@@ -1,8 +1,8 @@
 ---
 title: entity_created
-author: v-thopra
+author: joannaleecy
 description: entity_created event.
-ms.author: v-thopra
+ms.author: joanlee
 ms.date: 02/19/2019
 ms.topic: article
 ms.prod: playfab

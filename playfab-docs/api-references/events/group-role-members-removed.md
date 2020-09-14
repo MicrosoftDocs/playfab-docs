@@ -1,8 +1,8 @@
 ---
 title: group_role_members_removed
-author: v-thopra
+author: joannaleecy
 description: group_role_members_removed event.
-ms.author: v-thopra
+ms.author: joanlee
 ms.date: 02/19/2019
 ms.topic: article
 ms.prod: playfab

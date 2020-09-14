@@ -1,8 +1,8 @@
 ---
 title: player_verified_contact_email
-author: v-thopra
+author: joannaleecy
 description: player_verified_contact_email event.
-ms.author: v-thopra
+ms.author: joanlee
 ms.date: 02/19/2019
 ms.topic: article
 ms.prod: playfab

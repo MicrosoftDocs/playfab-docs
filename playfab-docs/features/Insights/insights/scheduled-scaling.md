@@ -1,8 +1,8 @@
 ---
 title: Scheduled Scaling
-author: john-smith-microsoft
+author: mckmoffatt
 description: Scheduled Scaling for playfab insights
-ms.author: johsmi
+ms.author: mcelliot
 ms.date: 02/28/2020
 ms.topic: article
 ms.prod: playfab

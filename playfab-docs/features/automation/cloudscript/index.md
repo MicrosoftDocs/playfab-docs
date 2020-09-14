@@ -1,8 +1,8 @@
 ---
 title: CloudScript
-author: v-thopra
+author: joannaleecy
 description: Landing page for CloudScript.
-ms.author: v-thopra
+ms.author: joanlee
 ms.date: 06/12/2018
 ms.topic: article
 ms.prod: playfab

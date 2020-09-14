@@ -1,8 +1,8 @@
 ---
 title: Title News quickstart
-author: v-rayro
+author: joannaleecy
 description: What Title News is and how to create it.
-ms.author: v-rayro
+ms.author: joanlee
 ms.date: 11/01/2018
 ms.topic: article
 ms.prod: gaming

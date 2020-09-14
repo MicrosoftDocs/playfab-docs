@@ -1,8 +1,8 @@
 ---
 title: Ingestion tutorials
-author: v-kciril
+author: joannaleecy
 description: TBD
-ms.author: v-kciril
+ms.author: joanlee
 ms.date: 07/23/2019 
 ms.topic: article
 ms.prod: playfab

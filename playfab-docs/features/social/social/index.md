@@ -1,6 +1,6 @@
 ---
 title: Social
-author: thomasgu
+author: joannaleecy
 description: Overview for PlayFab Social Features
 ms.author: thomg
 ms.date: 06/10/2020

@@ -1,8 +1,8 @@
 ---
 title: Daily and Monthly Top Spender Report
-author: v-thopra
+author: joannaleecy
 description: Describes the report that tracks the top 100 spenders in your game.
-ms.author: v-thopra
+ms.author: joanlee
 ms.date: 10/31/2018
 ms.topic: article
 ms.prod: playfab

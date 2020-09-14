@@ -1,8 +1,8 @@
 ---
 title: Multiplayer experiences in Xbox Live games
-author: v-thopra
+author: joannaleecy
 description: Xbox Live discount and FAQ
-ms.author: v-thopra
+ms.author: joanlee
 ms.date: 02/27/2019
 ms.topic: article
 ms.prod: playfab

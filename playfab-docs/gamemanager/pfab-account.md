@@ -1,8 +1,8 @@
 ---
 title: Creating a PlayFab Account
-author: v-kciril
+author: joannaleecy
 description: Describes how to create a PlayFab account.
-ms.author: v-kciril
+ms.author: joanlee
 ms.date: 06/03/2019
 ms.topic: article
 ms.prod: playfab

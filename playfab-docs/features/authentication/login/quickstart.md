@@ -1,8 +1,8 @@
 ---
 title: Account linking quickstart
-author: v-thopra
+author: joannaleecy
 description: Demonstrates how to bind an account to multiple devices and login mechanisms.
-ms.author: v-thopra
+ms.author: joanlee
 ms.date: 06/11/2018
 ms.topic: article
 ms.prod: playfab

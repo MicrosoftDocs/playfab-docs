@@ -1,8 +1,8 @@
 ---
 title: Content Delivery Network quickstart
-author: v-thopra
+author: joannaleecy
 description: Describes the PlayFab Content Delivery Network in detail.
-ms.author: v-thopra
+ms.author: joanlee
 ms.date: 01/11/2018
 ms.topic: article
 ms.prod: playfab

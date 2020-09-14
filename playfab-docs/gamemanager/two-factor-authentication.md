@@ -1,8 +1,8 @@
 ---
 title: Two-Factor Authentication
-author: v-thopra
+author: joannaleecy
 description: Describes how to configure two-factor authentication between a device with an authenticator app and PlayFab.
-ms.author: v-thopra
+ms.author: joanlee
 ms.date: 02/11/2018
 ms.topic: article
 ms.prod: playfab

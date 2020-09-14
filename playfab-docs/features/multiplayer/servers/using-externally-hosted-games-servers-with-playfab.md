@@ -1,8 +1,8 @@
 ---
 title: Using Externally Hosted Game Servers with PlayFab
-author: v-thopra
+author: joannaleecy
 description: Tutorial about using externally hosted game servers with PlayFab.
-ms.author: v-thopra
+ms.author: joanlee
 ms.date: 10/26/2018
 ms.topic: article
 ms.prod: playfab

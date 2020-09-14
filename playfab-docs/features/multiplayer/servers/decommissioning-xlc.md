@@ -1,8 +1,8 @@
 ---
 title: Decommissioning Xbox Live Compute
-author: tophpalmer
+author: xmcai2016
 description: Announces the decommissioning of Xbox Live Compute (XLC) and describes how to migrate from it.
-ms.author: tophpalmer
+ms.author: carocai
 ms.date: 06/13/2019
 ms.topic: article
 ms.prod: playfab

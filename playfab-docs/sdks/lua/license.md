@@ -1,8 +1,8 @@
 ---
 title: Lua licenses
-author: v-kciril
+author: joannaleecy
 description: Landing page for the PlayFab Lua SDK.
-ms.author: v-kciril
+ms.author: joanlee
 ms.date: 01/22/2019
 ms.topic: article
 ms.prod: playfab

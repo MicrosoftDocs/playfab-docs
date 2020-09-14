@@ -1,8 +1,8 @@
 ---
 title: entity_virtual_currency_balances_changed
-author: v-thopra
+author: joannaleecy
 description: entity_virtual_currency_balances_changed event.
-ms.author: v-thopra
+ms.author: joanlee
 ms.date: 02/19/2019
 ms.topic: article
 ms.prod: playfab
