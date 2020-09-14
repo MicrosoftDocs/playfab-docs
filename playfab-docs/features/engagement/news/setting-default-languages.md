@@ -1,8 +1,8 @@
 ---
 title: Setting default languages
-author: v-rayro
+author: joannaleecy
 description: Describes how to set the default language for a title and for players.
-ms.author: v-thopra
+ms.author: joanlee
 ms.date: 02/28/2019
 ms.topic: article
 ms.prod: gaming

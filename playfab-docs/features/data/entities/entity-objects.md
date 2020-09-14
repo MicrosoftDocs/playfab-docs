@@ -1,8 +1,8 @@
 ---
 title: Use entity objects to store player data
-author: v-thopra
+author: joannaleecy
 description: Describes how to set and read an entity object.
-ms.author: v-thopra
+ms.author: joanlee
 ms.date: 10/26/2018
 ms.topic: article
 ms.prod: playfab

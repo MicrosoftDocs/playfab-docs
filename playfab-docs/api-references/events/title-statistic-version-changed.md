@@ -1,8 +1,8 @@
 ---
 title: title_statistic_version_changed
-author: v-thopra
+author: joannaleecy
 description: title_statistic_version_changed event.
-ms.author: v-thopra
+ms.author: joanlee
 ms.date: 02/19/2019
 ms.topic: article
 ms.prod: playfab

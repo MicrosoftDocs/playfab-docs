@@ -1,8 +1,8 @@
 ---
 title: Push Notifications quickstart
-author: v-thopra
+author: joannaleecy
 description: Describes the Push Notification system in PlayFab.
-ms.author: v-thopra
+ms.author: joanlee
 ms.date: 10/26/2018
 ms.topic: article
 ms.prod: playfab

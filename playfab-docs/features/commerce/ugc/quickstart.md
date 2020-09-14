@@ -1,6 +1,6 @@
 ---
 title: User Generated Content (UGC) quickstart
-author: thomasgu
+author: joannaleecy
 description: Quickstart to using User Generated Content in PlayFab.
 ms.author: thomg
 ms.date: 01/17/2019

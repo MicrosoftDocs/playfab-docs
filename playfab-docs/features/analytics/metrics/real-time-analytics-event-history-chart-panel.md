@@ -1,8 +1,8 @@
 ---
 title: Real-time analytics - Event History Chart panel
-author: v-thopra
+author: joannaleecy
 description: Illustrates how to use the Event History Chart panel.
-ms.author: v-thopra
+ms.author: joanlee
 ms.date: 11/08/2018
 ms.topic: article
 ms.prod: playfab

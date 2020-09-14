@@ -1,8 +1,8 @@
 ---
 title: Multiplayer with PlayFab
-author: v-thopra
+author: joannaleecy
 description: Learn how PlayFab services can be used for multiplayer.
-ms.author: v-thopra
+ms.author: joanlee
 ms.date: 03/04/2019
 ms.topic: article
 ms.prod: playfab

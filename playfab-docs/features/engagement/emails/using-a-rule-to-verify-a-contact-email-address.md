@@ -1,8 +1,8 @@
 ---
 title: Using a Rule to Verify a Contact Email Address
-author: v-thopra
+author: joannaleecy
 description: Tutorial that describes how to create a rule that sends an verification email when a player changes their contact email address.
-ms.author: v-thopra
+ms.author: joanlee
 ms.date: 10/26/2018
 ms.topic: article
 ms.prod: playfab

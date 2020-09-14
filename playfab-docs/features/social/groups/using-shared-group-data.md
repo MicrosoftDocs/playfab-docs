@@ -1,6 +1,6 @@
 ---
 title: Using Shared Group Data
-author: tophpalmer
+author: xmcai2016
 description: Tutorial about how to use Shared Group Data.
 ms.author: chpalm
 ms.date: 10/25/2018

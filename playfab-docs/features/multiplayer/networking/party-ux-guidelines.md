@@ -1,8 +1,8 @@
 ---
 title: PlayFab Party UX Guidelines
 description: Instructions for downloading the PlayFab Party API reference documentation.
-author: v-kciril
-ms.author: v-kciril
+author: joannaleecy
+ms.author: joanlee
 ms.date: 08/16/2019
 ms.topic: article
 ROBOTS: NOINDEX,NOFOLLOW

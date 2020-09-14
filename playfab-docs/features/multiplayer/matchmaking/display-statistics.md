@@ -2,7 +2,7 @@
 title: Displaying queue statistics in your title
 author: keithrkline
 description: Tutorial on how to use queue statistics
-ms.author: multiplayer
+ms.author: kkline
 ms.date: 03/15/2019
 ms.topic: article
 ms.prod: playfab

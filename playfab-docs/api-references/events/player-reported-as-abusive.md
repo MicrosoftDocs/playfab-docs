@@ -1,8 +1,8 @@
 ---
 title: player_reported_as_abusive
-author: v-thopra
+author: joannaleecy
 description: player_reported_as_abusive event.
-ms.author: v-thopra
+ms.author: joanlee
 ms.date: 02/19/2019
 ms.topic: article
 ms.prod: playfab

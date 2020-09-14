@@ -1,8 +1,8 @@
 ---
 title: Using resettable statistics and leaderboards
-author: v-thopra
+author: joannaleecy
 description: Describes how to configure and manage statistics with versioning, which enables “resetting” of statistics and leaderboards.
-ms.author: v-thopra
+ms.author: joanlee
 ms.date: 10/29/2018
 ms.topic: article
 ms.prod: playfab

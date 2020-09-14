@@ -1,8 +1,8 @@
 ---
 title: title_secret_key_changed
-author: v-thopra
+author: joannaleecy
 description: title_secret_key_changed event.
-ms.author: v-thopra
+ms.author: joanlee
 ms.date: 02/19/2019
 ms.topic: article
 ms.prod: playfab

@@ -1,8 +1,8 @@
 ---
 title: ActionScript quickstart for Flash
-author: v-thopra
+author: joannaleecy
 description: This guide will help you make your first PlayFab API call using ActionScript.
-ms.author: v-thopra
+ms.author: joanlee
 ms.date: 07/12/2018
 ms.topic: article
 ms.prod: playfab

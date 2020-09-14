@@ -1,8 +1,8 @@
 ---
 title: RapidJSON License
-author: v-kciril
+author: joannaleecy
 description: License for RapidJSON
-ms.author: v-kciril
+ms.author: joanlee
 ms.date: 02/19/2018
 ms.topic: article
 ms.prod: playfab

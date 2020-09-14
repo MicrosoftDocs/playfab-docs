@@ -1,8 +1,8 @@
 ---
 title: Insights Management Commands
-author: john-smith-microsoft
+author: mckmoffatt
 description: management commands for title adx
-ms.author: johsmi
+ms.author: mcelliot
 ms.date: 1/9/2020    
 ms.topic: article
 ms.prod: playfab

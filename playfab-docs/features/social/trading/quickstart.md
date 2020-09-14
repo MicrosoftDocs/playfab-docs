@@ -1,8 +1,8 @@
 ---
 title: Trading quickstart
-author: thomasgu
+author: joannaleecy
 description: Describes how to perform player-to-player trading.
-ms.author: tomg
+ms.author: joanlee
 ms.date: 01/30/2019
 ms.topic: article
 ms.prod: playfab

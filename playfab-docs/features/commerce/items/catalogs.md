@@ -1,8 +1,8 @@
 ---
 title: Catalogs
-author: v-thopra
+author: joannaleecy
 description: Describes the Catalogs tab in the Economy section in Game Manager and the Catalog item type.
-ms.author: v-thopra
+ms.author: joanlee
 ms.date: 10/26/2018
 ms.topic: article
 ms.prod: playfab

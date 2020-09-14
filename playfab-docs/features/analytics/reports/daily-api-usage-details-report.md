@@ -1,8 +1,8 @@
 ---
 title: Daily API Usage Details Report
-author: v-thopra
+author: joannaleecy
 description: Describes the report that tracks the PlayFab API calls used by your title.
-ms.author: v-thopra
+ms.author: joanlee
 ms.date: 10/30/2018
 ms.topic: article
 ms.prod: playfab

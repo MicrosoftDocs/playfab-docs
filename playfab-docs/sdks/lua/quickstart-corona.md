@@ -1,8 +1,8 @@
 ---
 title: Lua quickstart for Corona
-author: v-kciril
+author: joannaleecy
 description: This guide helps you make your first PlayFab API call in the Corona engine.
-ms.author: v-kciril
+ms.author: joanlee
 ms.date: 04/30/2019
 ms.topic: article
 ms.prod: playfab

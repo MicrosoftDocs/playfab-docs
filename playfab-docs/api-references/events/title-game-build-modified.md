@@ -1,8 +1,8 @@
 ---
 title: title_game_build_modified
-author: v-thopra
+author: joannaleecy
 description: title_game_build_modified event.
-ms.author: v-thopra
+ms.author: joanlee
 ms.date: 02/19/2019
 ms.topic: article
 ms.prod: playfab

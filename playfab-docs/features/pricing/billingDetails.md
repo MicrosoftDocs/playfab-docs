@@ -1,8 +1,8 @@
 ---
 title: Billing Summary + Base Rate
-author: mcelliot
+author: mckmoffatt
 description: Describes the billing summary page.
-ms.author: mckmoffatt
+ms.author: mcelliot
 ms.date: 07/15/2019
 ms.topic: article
 ms.prod: playfab

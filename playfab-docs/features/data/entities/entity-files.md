@@ -1,8 +1,8 @@
 ---
 title: Entity files
-author: v-thopra
+author: joannaleecy
 description: Describes the terminology, concepts, and design of Entities in the PlayFab APIs.
-ms.author: v-thopra
+ms.author: joanlee
 ms.date: 10/26/2018
 ms.topic: article
 ms.prod: playfab

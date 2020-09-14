@@ -1,8 +1,8 @@
 ---
 title: Friends & Groups Tutorials
-author: v-thopra
+author: joannaleecy
 description: Overview page for tutorials about how to use Friends and Groups.
-ms.author: v-thopra
+ms.author: joanlee
 ms.date: 11/19/2018
 ms.topic: article
 ms.prod: playfab

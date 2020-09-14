@@ -1,8 +1,8 @@
 ---
 title: Push Notification for iOS
-author: v-thopra
+author: joannaleecy
 description: Describes how to setup and configure PlayFab Push Notifications for iOS.
-ms.author: v-thopra
+ms.author: joanlee
 ms.date: 10/26/2018
 ms.topic: article
 ms.prod: playfab

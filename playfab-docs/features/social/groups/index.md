@@ -1,8 +1,8 @@
 ---
 title: Groups, Guilds and Clans
-author: v-thopra
+author: joannaleecy
 description: Landing page for Friends and Groups.
-ms.author: v-thopra
+ms.author: joanlee
 ms.date: 07/12/2018
 ms.topic: article
 ms.prod: playfab

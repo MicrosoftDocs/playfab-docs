@@ -1,8 +1,8 @@
 ---
 title: Understanding PlayFab Party endpoint data transmission
 description: How PlayFab Party real-time data communication works and the endpoint-to-endpoint transmission pipeline.
-author: v-kciril
-ms.author: v-kciril
+author: joannaleecy
+ms.author: joanlee
 ms.date: 08/16/2019
 ms.topic: article
 ms.prod: playfab

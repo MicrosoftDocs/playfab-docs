@@ -1,8 +1,8 @@
 ---
 title: PlayFab Multiplayer PowerShell Update - December 4, 2018
-author: v-thopra
+author: joannaleecy
 description: Describes the changes made in the 12/04/2018 PlayFab Multiplayer PowerShell Update.
-ms.author: v-thopra
+ms.author: joanlee
 ms.date: 01/17/2019
 ms.topic: article
 ms.prod: playfab

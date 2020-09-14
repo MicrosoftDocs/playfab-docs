@@ -1,8 +1,8 @@
 ---
 title: Cocos2D-x (C++) SDK
-author: v-thopra
+author: joannaleecy
 description: Landing page for the PlayFab Cocos2D-x (C++) SDK.
-ms.author: v-thopra
+ms.author: joanlee
 ms.date: 07/12/2018
 ms.topic: article
 ms.prod: playfab

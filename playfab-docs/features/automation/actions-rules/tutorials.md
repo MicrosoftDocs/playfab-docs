@@ -1,8 +1,8 @@
 ---
 title: Actions & Rules Tutorials
-author: v-thopra
+author: joannaleecy
 description: Overview page for tutorials about actions and rules.
-ms.author: v-thopra
+ms.author: joanlee
 ms.date: 11/19/2018
 ms.topic: article
 ms.prod: playfab

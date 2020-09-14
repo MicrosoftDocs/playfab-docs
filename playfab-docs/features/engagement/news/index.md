@@ -1,8 +1,8 @@
 ---
 title: News
-author: v-rayro
+author: joannaleecy
 description: Landing page for News.
-ms.author: v-rayro
+ms.author: joanlee
 ms.date: 11/01/2018
 ms.topic: article
 ms.prod: playfab

@@ -1,8 +1,8 @@
 ---
 title: Java quickstart for Native and Android Studio
-author: v-kciril
+author: joannaleecy
 description: This guide helps you get up and running with the PlayFab JavaSDK and a simple Java program.
-ms.author: v-kciril
+ms.author: joanlee
 ms.date: 04/20/2019
 ms.topic: article
 ms.prod: playfab

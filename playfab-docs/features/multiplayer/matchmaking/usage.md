@@ -2,7 +2,7 @@
 title: Analyzing Your Matchmaking Queue Usage 
 author: joelwi 
 description: Describes how developers can use the Matchmaking Usage Charts 
-ms.author: multiplayer 
+ms.author: kkline 
 ms.date: 03/30/2020
 ms.topic: article 
 ms.prod: playfab 

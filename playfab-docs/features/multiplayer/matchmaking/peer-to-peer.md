@@ -2,7 +2,7 @@
 title: Workaround for peer-to-peer connection
 author: keithrkline
 description: Describes how to share IP addresses through matchmaking
-ms.author: multiplayer
+ms.author: kkline
 ms.date: 03/21/2019
 ms.topic: article
 ms.prod: playfab

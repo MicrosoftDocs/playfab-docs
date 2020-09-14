@@ -1,8 +1,8 @@
 ---
 title: Push notification templates
-author: v-thopra
+author: joannaleecy
 description: Describes how to create a localized push notification template.
-ms.author: v-thopra
+ms.author: joanlee
 ms.date: 03/01/2019
 ms.topic: article
 ms.prod: playfab

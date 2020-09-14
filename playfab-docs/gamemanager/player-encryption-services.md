@@ -1,8 +1,8 @@
 ---
 title: Player Encryption Services
-author: v-kciril
+author: joannaleecy
 description: Describes the various types of encryption that are available.
-ms.author: v-kciril
+ms.author: joanlee
 ms.date: 01/11/2018
 ms.topic: article
 ms.prod: gaming

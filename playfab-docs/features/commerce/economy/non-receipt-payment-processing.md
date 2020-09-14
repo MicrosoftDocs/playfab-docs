@@ -1,8 +1,8 @@
 ---
 title: Non-Receipt Payment Processing
-author: v-thopra
+author: joannaleecy
 description: Describes the PlayFab mechanism for enabling purchases via payment providers that don’t use a receipt or entitlement based system.
-ms.author: v-thopra
+ms.author: joanlee
 ms.date: 10/26/2018
 ms.topic: article
 ms.prod: playfab

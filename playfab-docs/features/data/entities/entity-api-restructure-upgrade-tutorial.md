@@ -1,8 +1,8 @@
 ---
 title: Entity API Restructure Upgrade Tutorial
-author: VDonGlover
+author: joannaleecy
 description: Explains the restructuring of the Entity API Group and how to change your code accordingly.
-ms.author: doglo
+ms.author: joanlee
 ms.date: 06/12/2018
 ms.topic: article
 ms.prod: playfab

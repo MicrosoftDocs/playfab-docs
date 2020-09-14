@@ -1,8 +1,8 @@
 ---
 title: Schemas
-author: belmer831
+author: mckmoffatt
 description: Overview of schemas.
-ms.author: belmer831
+ms.author: mcelliot
 ms.date: 07/23/2019    
 ms.topic: article
 ms.prod: playfab

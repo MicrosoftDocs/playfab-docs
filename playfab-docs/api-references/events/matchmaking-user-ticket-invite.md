@@ -1,8 +1,8 @@
 ---
 title: matchmaking_user_ticket_invite  
-author: v-thopra
+author: joannaleecy
 description: matchmaking_user_ticket_invite event.
-ms.author: v-thopra
+ms.author: joanlee
 ms.date: 02/19/2019
 ms.topic: article
 ms.prod: playfab

@@ -1,8 +1,8 @@
 ---
 title: StatisticAggregationMethod
-author: v-thopra
+author: joannaleecy
 description: StatisticAggregationMethod data type.
-ms.author: v-thopra
+ms.author: joanlee
 ms.date: 02/19/2019
 ms.topic: article
 ms.prod: playfab

@@ -1,8 +1,8 @@
 ---
 title: PHP SDK
-author: v-thopra
+author: joannaleecy
 description: Landing page for the PlayFab PHP SDK.
-ms.author: v-thopra
+ms.author: joanlee
 ms.date: 06/11/2018
 ms.topic: article
 ms.prod: playfab

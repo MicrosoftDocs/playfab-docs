@@ -1,8 +1,8 @@
 ---
 title: A/B testing with TitleData, A/B Test Buckets, and CloudScript
-author: v-thopra
+author: joannaleecy
 description: Describes how to build a solution for A/B testing using Title Data in PlayFab.
-ms.author: v-thopra
+ms.author: joanlee
 ms.date: 10/30/2018
 ms.topic: article
 ms.prod: playfab
