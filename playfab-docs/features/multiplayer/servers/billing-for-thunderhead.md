@@ -20,8 +20,8 @@ When MPS is enabled, you can use Multiplayer Servers for free in a limited capac
 
 | Service |Included Free| Region |
 |-|-|-|
-|Av2 VM Hours | 100 Av2 Hours | East US |
-|Av2 VM Hours | 100 Av2 Hours | North Europe |
+|Av2 VM Hours | 750 Av2 Hours | East US |
+|Av2 VM Hours | 750 Av2 Hours | North Europe |
 |Fv2 VM Hours | 750 Fv2 Hours | East US |
 |Fv2 VM Hours | 750 Fv2 Hours | North Europe |
 | Network Egress | 10 GB | Zone 1 |
@@ -29,20 +29,18 @@ When MPS is enabled, you can use Multiplayer Servers for free in a limited capac
 
 The free evaluation mode also includes limit imposed on simultaneous cores activated in game servers.  The paid modes, however, allow game developers to request additional server cores for their title.
 
-The maximum server cores included in the free evaluation modes are:
+The maximum simultaneous core quota in the free evaluation modes are:
 
 | Service | Included Free | Region |
 |-|-|-|
 | Maximum Av2 Cores | 24 Av2 Cores | East US |
 | Maximum Av2 Cores | 24 Av2 Cores | North Europe |
-| Maximum Dv2 Cores | 24 Dv2 Cores | East US |
-| Maximum Dv2 Cores | 24 Dv2 Cores | North Europe |
 | Maximum Fv2 Cores | 24 Fv2 Cores | East US |
 | Maximum Fv2 Cores | 24 Fv2 Cores | North Europe |
 
 This is typically *not* enough to launch a live game, but it can help you evaluate the service and get started.
 
-To learn more about these different virtual machine please see [Azure VM Sizes](https://docs.microsoft.com/azure/virtual-machines/windows/sizes).
+To learn more about these different virtual machine please see [Azure VM Sizes](https://docs.microsoft.com/azure/virtual-machines/sizes).
 
 > [!NOTE]
 > The amount of free evaluation capacity that is provided per month is based on your PlayFab billing mode.
