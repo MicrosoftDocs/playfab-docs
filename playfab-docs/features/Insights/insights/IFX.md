@@ -1,6 +1,6 @@
 ---
 title: Insights for XBOX
-author: McKenzie Elliott
+author: mckmoffatt
 description: Insights for Xbox information
 ms.author: mcelliot
 ms.date: 08/01/2020
@@ -10,12 +10,7 @@ keywords: playfab, insights
 ms.localizationpriority: medium
 ---
 
-> [!WARNING]
-This page is a WIP
-
-
 # Insights for Xbox
-
 > [!Note]
 Insights for XBOX is in Private Preview only and is not currently available to Second or Third Party Partners of Microsoft. The date for Public Preview and General Availability have not yet been announced. Please contact [PlayFab support](https://playfab.com/contact/) if you have any questions.
 
@@ -24,9 +19,9 @@ Insights for Xbox (IFX) pulls Xbox title data into PlayFab’s Insights offering
 ## Onboarding to IFX
 
 1. Identify the product ids you want to move to Xbox insights. You must have Partner Center permissions to these product ids in order to complete the add.
-    - You can validate these permissions by logging into [Partner Center](https://partner.microsoft.com/en-US/), selecting the **Dashboard** option, and by selecting **Windows and XBOX** after logging in. Enter the product ID into the search bar. If you have permissions to the product ID, the product will appear in search results.
+    - You can validate these permissions by logging into [Partner Center](https://partner.microsoft.com/), selecting the **Dashboard** option, and by selecting **Windows and XBOX** after logging in. Enter the product ID into the search bar. If you have permissions to the product ID, the product will appear in search results.
 
-1. After determining the product ids you want to add, go to the Playfab Game Manager by logging in to [PlayFab.com](PlayFab.com).
+1. After determining the product ids you want to add, go to the Playfab Game Manager by logging in to [PlayFab.com](https://playfab.com/).
 1. From the **My Studios** page, select the title that you want to add products to.
 1. From the **Title Overview** page, select the **Add-ons** option from the left navigation panel.
 1. The **Insights for XBOX** add-on is now visible in the **Analytics** section of the **Add-ons** page.
