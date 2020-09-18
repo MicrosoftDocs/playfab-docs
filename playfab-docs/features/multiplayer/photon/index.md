@@ -19,7 +19,7 @@ Multiplayer games are typically one of two designs:
 
 Authoritative games have a central authority for game state, this may be a player device or a cloud-hosted dedicated server. Non-authoritative designs require player devices to synchronize game state cooperatively, over a peer-to-peer network.
 
-Photon is 3rd party partner integrated with PlayFab, that provides peer-to-peer networking. Currently, PlayFab offers the following Photon integrations:
+Photon is a 3rd party partner integrated with PlayFab, that provides peer-to-peer networking. Currently, PlayFab offers the following Photon integrations:
 
 - Authenticate Photon players with PlayFab.
 - Listen for room events using PlayFab CloudScript callbacks.
