@@ -29,7 +29,7 @@ Insights for Xbox (IFX) pulls Xbox title data into PlayFab’s Insights offering
 1. In the **PRODUCT ID** field, enter the product ids that you would like to add, separated by a comma. For example: *12abc*,*1234bcd*,*1355sjk*
 1. Select **Add**. It may take a few minutes for permissions to validate before you see product details appear in the **Xbox title ids** and **Xbox product ids** tables. This action will generate usage data that may be charged by PlayFab Insights. See below for pricing details.
 1. To add more products, repeat steps 7 & 8.
-1. To delete products, select the **Remove** option next to the product ID that you would like to delete from IFX. When a product is deleted, past product data remains in IFX while future product data will no longer populate to IFX.
+1. To delete products, select the **Remove** option next to the product ID that you would like to delete from IFX. When a product is deleted, past product data is removed.
 
 Certain individuals during the onboarding experience might be impacted with product permission authentication issues with Partner Center. Please email the team at [pfgaminginsights@microsoft.com] if you are impacted by this issue.
 
@@ -45,6 +45,9 @@ Adding and deleting product IDs will trigger data processing which will cause an
 In order to maintain the highest level of data accuracy, some tables will reprocess the last 7 days of data on a daily basis. This prevents missing data that can be caused by late arriving events or delayed big data pipelines. Tables with 7 day reprocessing are noted in the description column.
 
 ### Dimension Tables
+
+> [!NOTE]
+> Slow-changing dimension data is refreshed daily and static dimension data is refreshed weekly.
 
 Data | Table Name | Description
 --- | --- | ---
@@ -62,23 +65,23 @@ Dim Payment Type | dim.store.xbox_payment_type | Payment type details when a pur
 ### Metric Tables & Data Latency
 Data | Table Name | Latency | Description
 --- | --- | --- | ---
-Daily Presence Usage | metrics.usage.xbox_usage_intervals | 1-2 Hours | Same data as "metrics.usage.xbox_usage_presence" below but has a flatter schema and shorter latency.
+Daily Presence Usage | metrics.usage.xbox_usage_intervals | 1-2 Hours | Usage based on service and telemetry. Same data as "metrics.usage.xbox_usage_presence" below but has a flatter schema and shorter latency.
 Daily Presence Usage | metrics.usage.xbox_usage_presence | 1 Day | Presence usage by title. The source of presence data is xbox live and the data contains information about users on different platforms. Filter on ClientDeviceType == "Win32" for Steam usage and on ClientDeviceType == "WindowsOneCore" for cumulative PC usage. Presence events fire twice when GameBar is enabled when playing on Steam. One event is fired for Win32 and one is fired for WindowsOneCore.
-Daily Client Usage | metrics.usage.xbox_daily_usage | 1 Day | Client usage based on TTSO telemetry with AAD users removed. Dataset does not include Steam usage. Daily usage data is only used for backfills or reprocessing. IFX ingests one day's worth of usage data all at once rather than ingesting the data hourly. The entire day will display as YYYY-MM-dd 00:00 in the *metrics.usage.xbox_usage_intervals* table. The exact usage start and end time is recorded in the *UsageStartTime* and *UsageEndTime* columns. 
+Daily Client Usage | metrics.usage.xbox_daily_usage | 1 Day | Usage based on client end telemetry with AAD users removed. Dataset does not include Steam usage. Daily usage data is only used for backfills or reprocessing. IFX ingests one day's worth of usage data all at once rather than ingesting the data hourly. The entire day will display as YYYY-MM-dd 00:00 in the *metrics.usage.xbox_usage_intervals* table. The exact usage start and end time is recorded in the *UsageStartTime* and *UsageEndTime* columns. 
 Daily Purchase Orders | metrics.store.xbox_purchase_orders | 1-2 Hours | Same data as "metrics.store.xbox_daily_purchase" below but has a flatter schema and shorter latency. Last 7 days of data is reprocessed on a daily basis.
 Daily Purchase | metrics.store.xbox_daily_purchase | 1 Day | Daily purchases with AAD users removed. Last 7 days of data is reprocessed on a daily basis.
-Daily Refund | metrics.store.xbox_purchase_refunds | 3 Days | Same data as "metrics.store.xbox_order_refunds" below but has a flatter schema and a potentially shorter latency. Last 7 days of data is reprocessed on a daily basis.
+Daily Refund | metrics.store.xbox_purchase_refunds | 3 Days | Same data as "metrics.store.xbox_order_refunds" below but has a flatter schema. Last 7 days of data is reprocessed on a daily basis.
 Daily Refund | metrics.store.xbox_order_refunds | 3 Days | Daily refund data. Last 7 days of data is reprocessed on a daily basis.
-Daily Cancellation | metrics.store.xbox_purchase_cancellations | 3 Days | Same data as "metrics.store.xbox_order_cancellations" below but has a flatter schema and a potentially shorter latency. Last 7 days of data is reprocessed on a daily basis.
+Daily Cancellation | metrics.store.xbox_purchase_cancellations | 3 Days | Same data as "metrics.store.xbox_order_cancellations" below but has a flatter schema. Last 7 days of data is reprocessed on a daily basis.
 Daily Cancellation | metrics.store.xbox_order_cancellations | 3 Days | Daily cancellation data. Last 7 days of data is reprocessed on a daily basis.
 Daily Purchase Failures | metrics.store.xbox_purchase_failures | 3 Days | Purchase order metadata on daily failed purchases. Last 7 days of data is reprocessed on a daily basis.
 Daily Purchase Chargebacks | metrics.store.xbox_purchase_chargebacks | 3 Days | Purchase order metadata on daily chargebacks. Last 7 days of data is reprocessed on a daily basis.
 Daily GamePass Purchase | metrics.store.xbox_gamepass_purchase | 3 Days | Daily purchases of products in the Game Pass Vault. Last 7 days of data is reprocessed on a daily basis.
-Daily GamePass Usage | metrics.usage.xbox_gamepass_usage | 3 Days | Game Pass usage based on *AppInterActivitySummary* telemetry.
+Daily GamePass Usage | metrics.usage.xbox_gamepass_usage | 3 Days | Game Pass usage based on client telemetry.
 Daily GamePass Usage Acquisition | metrics.usage.xbox_gamepass_usage_acquisition | 3 Days | Tracks the first time a user plays a GamePass title on each device platform.
 Daily GamePass Title Rank | metrics.usage.xbox_gamepass_title_rank | 1 Day | Ranks based on usage against all titles in the Game Pass Vault.
 Xbox Subscription Status | metrics.subscription.xbox_subscription_status | 2 Days | Same data as "metrics.store.xbox_subscription_status" below with an identical schema. Includes all major game subscription products (Gold, Game Pass, and EA). Only users with purchase or usage data for the title on a single, reported day will be present in the title database. This means that only the status of daily "active" users are shown for that day.
-Xbox Subscription Status | metrics.store.xbox_subscription_status | 2 Days | Tracks the status of a user's Xbox subscription. Operates similarly to the "metrics.subscription..." Daily Subscription Status table but shows the subscription status of all users that have ever had usage activity from the past 2 years.
+Xbox Subscription Status | metrics.store.xbox_subscription_status | 2 Days | Tracks the status of a user's Xbox subscription. Operates similarly to the "metrics.subscription.xbox_subscription_status" Daily Subscription Status table but shows the subscription status of all users that have ever had usage activity from any point in the past.
 Daily Retention Cohort | metrics.usage.xbox_retention_cohort | 1 Day | Cohort stats for *XboxTitleId*s on each platform.
 Daily Broadcast User | metrics.usage.xbox_broadcaster_activity_user | 1 Day | Daily broadcast user activity data.
 Daily Achievement | metrics.usage.xbox_achievement | 1 Day | Daily achievement data. At a very low occurrence rate, an achievement event can be sent to IFX system more than once. This will look like an achievement is achieved more than once on different days, which shouldn't be the reality. In this case, use the later occurrence as the real achieved date. Platform value will indicate all platforms the *XboxTitleId* is available on, rather than the platform the achievement is achieved on.
