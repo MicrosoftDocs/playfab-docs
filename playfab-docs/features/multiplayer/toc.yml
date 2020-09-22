@@ -1,6 +1,6 @@
 - name: PlayFab Multiplayer
   href: index.yml
-- name: Introduction to Multiplayer
+- name: Intro to Multiplayer
   href: mpintro.md
 - name: Servers
   href: servers/toc.yml

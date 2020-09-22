@@ -3,8 +3,8 @@ title: Photon
 author: joannaleecy
 description: Landing page for Photon.
 ms.author: joanlee
-ms.date: 09/21/2020
-ms.topic: article
+ms.date: 09/22/2020
+ms.topic: conceptual
 ms.prod: playfab
 keywords: playfab, multiplayer, photon
 ms.localizationpriority: medium

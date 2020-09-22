@@ -4,7 +4,7 @@ author: joannaleecy
 description: Describes how to set up Photon Multiplayer to work with PlayFab.
 ms.author: joanlee
 ms.date: 10/29/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: playfab
 keywords: playfab, multiplayer, photon
 ms.localizationpriority: medium
