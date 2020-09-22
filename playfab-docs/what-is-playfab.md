@@ -1,9 +1,9 @@
 ---
 title: What is PlayFab?
-author:  joannaleecy
-description: An overview about PlayFab
-ms.author: joanlee
-ms.date: 09/21/2020
+author:  sebgrink
+description: TBD
+ms.author: sebgrink
+ms.date: 03/23/2020
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, analytics, multiplayer, authentication, leaderboards, liveops
@@ -160,7 +160,6 @@ SDKs are available for most popular engines and platforms.
 
 * [Cocos2D](sdks/cocos2d-x/index.md)
 * [Phaser.io (JavaScript)](sdks/phaser/index.md)
-* [Photon](sdks/photon/index.md)
 
 ### Game Engines
 

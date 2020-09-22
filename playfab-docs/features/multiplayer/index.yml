@@ -39,7 +39,9 @@ landingContent:
       - linkListType: concept
         links:
           - text: Understand PlayFab game server
-            url: servers/basics-of-a-playfab-game-server.md 
+            url: servers/basics-of-a-playfab-game-server.md
+          - text: Use Photon with PlayFab
+            url: photon/index.md     
       - linkListType: quickstart
         links:
           - text: Getting started with Matchmaking 
