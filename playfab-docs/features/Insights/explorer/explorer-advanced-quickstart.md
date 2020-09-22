@@ -1,16 +1,16 @@
 ---
-title: Explorer quickstart
-author: mckmoffatt
+title: Explorer Advanced quickstart
+author: nathankong-microsoft
 description: This quickstart guide shows how to query data created by PlayFab API calls.
-ms.author: mcelliot
-ms.date: 07/23/2019    
+ms.author: nakong
+ms.date: 09/22/2020    
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, insights, explorer
 ms.localizationpriority: medium
 ---
 
-# Explorer quickstart
+# Explorer Advanced Quickstart
 
 > [!NOTE]
 > The Explorer Feature is in public preview. We anticipate ongoing changes to it as we continue gathering feedback and optimizing for customer use.
