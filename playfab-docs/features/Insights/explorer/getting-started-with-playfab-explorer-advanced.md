@@ -1,27 +1,27 @@
 ---
-title: Using the PlayFab Explorer
-author: mckmoffatt
-description: Illustrates how to use the Explorer feature.
-ms.author: mcelliot
-ms.date: 07/24/2019
+title: Getting started with Explorer Advanced
+author: nathankong-microsoft
+description: Illustrates how to use Explorer Advanced to write queries.
+ms.author: nakong
+ms.date: 09/22/2020
 ms.topic: article
 ms.prod: playfab
-keywords: playfab, insights, explorer
+keywords: playfab, insights, explorer, advanced
 ms.localizationpriority: medium
 ---
 
-# Getting started with PlayFab Explorer
+# Getting started with Explorer Advanced
 
 >[!IMPORTANT] 
 >The Explorer Feature is in public preview. We anticipate ongoing changes to it as we continue gathering feedback 
 and optimizing for customer use.
 
-Explorer is designed to let you discover insights in your event data the [Azure Data Explorer query language]
+Explorer Advanced is designed for more complex queries and deeper insights using the [Azure Data Explorer query language]
 (https://docs.microsoft.com/azure/data-explorer/write-queries) – a SQL-like language optimized for ad hoc data exploration. 
 
 ## Authoring custom queries
 
-To begin authoring your own queries in Explorer, it's important to first understand the shape of the data you're accessing.
+To begin authoring your own queries in Advanced mode, it's important to first understand the shape of the data you're accessing.
 
 ### The events.all table
 
