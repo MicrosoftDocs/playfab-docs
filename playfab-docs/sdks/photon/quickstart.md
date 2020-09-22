@@ -21,7 +21,7 @@ In this quickstart, we will illustrate how both features work using the latest [
 
 ## Prerequisites
 
-1. A [Unity](../../../sdks/unity3d/quickstart.md) project with the PlayFab SDK imported, and a configured title.
+1. A [Unity](../unity3d/quickstart.md) project with the PlayFab SDK imported, and a configured title.
 2. The PlayFab title registered.
 
 > [!NOTE]  
