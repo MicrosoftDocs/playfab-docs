@@ -7,5 +7,7 @@
 - name: Tutorials
   href: tutorials.md
   items:
-  - name: Getting started with PlayFab Explorer
-    href: getting-started-with-playfab-explorer.md
+  - name: Getting started with Explorer Basic
+    href: getting-started-with-playfab-explorer-basic.md
+  - name: Getting started with Explorer Advanced
+    href: getting-started-with-playfab-explorer-advanced.md
