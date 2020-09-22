@@ -8,7 +8,7 @@ ms.prod: playfab
 ms.date: 06/22/2020
 ---
 
-# EntityKey
+# PlayFabPlayer.EntityKey
 
 Gets the EntityKey of the player.
 
