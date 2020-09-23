@@ -31,8 +31,6 @@ In this quickstart, we will illustrate how both features work using the latest [
 
 1. Once you have registered and logged into the Photon dashboard, select **Create a new App**, as shown in the example provided below.
 
-![Create a new Photon application](media/tutorials/photon-create-app.png)  
-
 In the example shown below:
 
 1. Select **Photon Type**.
@@ -40,24 +38,17 @@ In the example shown below:
 3. Create a **Description**.
 4. Submit by selecting **Create**.
 
-![New application form](media/tutorials/photon-new-app-form.png)  
-
 ## Setting up authentication
 
 1. Find the newly created Application in the list, and select **Manage**, as shown in the example below.
-
-![Manage the Test application](media/tutorials/photon-manage-app.png)  
 
 The **Application** dashboard will open.
 
 1. Find and save the **App ID** located under the page **Title**, as shown below.
 
-![Save the App ID](media/tutorials/photon-save-app-id.png)  
 
 1. Locate the **Authentication** section.
 2. Select the **Custom Server**, as shown in the selection provided below.
-
-![Custom server authentication](media/tutorials/photon-custom-server-authentication.png)  
 
 The next page will let you configure the Authentication URL for Photon.
 The format is shown below.
@@ -76,7 +67,6 @@ Replace the `Title Id` place holder with your own Title Id.
 1. Enter the **URL**.
 2. Submit by selecting the **Create** button, as shown below.
 
-![Enter authentication URL](media/tutorials/photon-enter-authentication-url.png)  
 
 ## Setting up a PlayFab title for Photon
 
@@ -85,7 +75,6 @@ Navigate to your title's **Game Manager** page, then:
 1. Navigate to **Add-ons** tab.
 2. In the list of **Add-ons**, find and select **Photon**.
 
-![Game Manager Add-ons tab](media/tutorials/photon-game-manager-addons-tab.png)  
 
 1. The **Photon Add-on** page will allow you to install Photon by specifying your **Photon Realtime Application ID**.
     - Optionally, you may specify **Chat App ID**.
@@ -95,8 +84,6 @@ Navigate to your title's **Game Manager** page, then:
 > [!NOTE]
 > Remember to save your Photon secret key in a safe and easily accessible place. It will come in handy when configuring Webhooks.
   
-![Copy Realtime App ID](media/tutorials/photon-copy-realtime-app-id.png)  
-
 ## Setting Photon webhooks
 
 As an optional integration, Photon may transmit certain events to your PlayFab CloudScript. This is done by means of webhooks:
@@ -128,7 +115,6 @@ Make sure to replace the `PhotonSecretKey` token with the Secret Key you generat
 3. Remove any **CustomHttpHeaders**.
 4. Submit this by selecting the **Save** button.
 
-![Assign CloudScript event handlers](media/tutorials/photon-assign-cloud-script-event-handlers.png)  
 
 ## Setting up a Unity project
 
@@ -140,15 +126,11 @@ The guide assumes you already have PlayFab SDK imported, set up, and the title s
 - You may inspect the imported files.
 - Then select **Import (2)**.
 
-![Import Photon Unity](media/tutorials/photon-import-photon-unity.png)  
-
 Right after import process finishes, the **PUN Setup** window will open.
 
 - Enter your **Realtime Application ID (1)** found in the **Photon Application Dashboard** for the **Photon App** you created.
 - Select **Setup Project (2)**.
 - Once the setup finishes, select **Close (3)**.
-
-![PUN setup](media/tutorials/photon-pun-setup.png)  
 
 If **AppId** was accepted, the **Photon Server Settings** object will be selected and viewable in the **Unity Inspector** window. To manually access the **Server Settings** object:
 
@@ -158,8 +140,6 @@ If **AppId** was accepted, the **Photon Server Settings** object will be selecte
 - Finally select **Highlight Server Settings (2)**.
 - The **Standard Unity** project window will reveal the **PhotonServerSettings (3)** object.
 - Select the object to reveal its settings in the **Unity Inspector** window.
-
-![Photon server settings](media/tutorials/photon-server-settings.png)  
 
 > [!NOTE]
 > As part of **PhotonServerSettings**, you have the option to assign the **Chat Application ID**.
@@ -177,8 +157,6 @@ This means you may completely avoid implementing any user management for Photon.
     - As it is the *first* scene to load, let's add a small script to enable authenticating PlayFab with Photon.
 2. Create an empty **GameObject** called **PlayFabAuthenticator**.
 3. Then in the **Unity Inspector** window, add a component with the same name to this **GameObject**.
-
-![Add authentication component](media/tutorials/photon-add-authentication-component.png)
 
 Select the gear icon, then choose to edit the script from the drop-down menu. Copy and paste the code for the `PlayFabAuthenticator` component as illustrated below (please, read the comments for the explanation), and save and close the file.
 
@@ -277,8 +255,6 @@ Control that:
 
 The following picture illustrates the correct flow.
 
-![Start the scene](media/tutorials/photon-start-the-scene.png)  
-
 Once the Photon token has been acquired, and authentication is complete, we are okay to check out the Photon demos.
 
 For example, start a demo called **Demo Boxes**.
@@ -286,11 +262,7 @@ For example, start a demo called **Demo Boxes**.
 1. To ensure that the PlayFab authentication is complete, select **Demo Boxes**.
 2. Then select **Load Demo**, as shown on the following picture.
 
-![Load demo](media/tutorials/photon-load-demo.png)  
-
 Photon will start outputting debug messages. By simply monitoring your console, you can easily spot if you have any authentication issues.
-
-![Photon debug console](media/tutorials/photon-debug-console.png)  
 
 Ensure that no **Authentication Denied** errors are present in the console. At this point, you have set up minimal PlayFab and Photon integration.
 
@@ -830,14 +802,10 @@ public class PlayFabAuthenticator : MonoBehaviour {
 - Run the hub scene and wait for PlayFab authentication to complete **(1)**.
 - Then load the **Boxes Demo** scene **(2)**.
 
-![Load Demo Boxes scene](media/tutorials/photon-load-demo-boxes-scene.png)  
-
 - Once the scene loads, wait for the peer to connect newly created room **(1)**.
 - Then select **Execute Example** in the top left corner **(2)**.
 - Observe the console output **(3)**.
 - Make sure no errors have occurred.
-
-![Execute Example](media/tutorials/photon-execute-example.png)
 
 Don't forget to stop Unity from playing. This is done to ensure that we also receive **RoomLeft** and **RoomClosed** events.
 
@@ -851,7 +819,5 @@ Navigate to the title Game Manager page, and observe the **PlayStream** panel. Y
  3. Since our disconnected client was the last one, there are no more clients and Photon closes the room.
 
 All the events should be logged into the PlayStream event flow, as shown on the following picture.
-
-![PlayStream event flow](media/tutorials/photon-playstream-event-flow.png)
 
 At this point, you have fully integrated Photon event support into your PlayFab title.
