@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 and optimizing for customer use.
 
 Explorer Advanced is designed for more complex queries and deeper insights using the [Azure Data Explorer query language]
-(https://docs.microsoft.com/azure/data-explorer/write-queries) – a SQL-like language optimized for ad hoc data exploration. 
+(https://docs.microsoft.com/azure/data-explorer/write-queries) – a SQL-like language optimized for ad hoc data exploration. To learn how to write non-technical queries, see the [Getting Started with Explorer Basic](getting-started-with-playfab-explorer-basic.md) tutorial.
 
 ## Authoring custom queries
 
@@ -153,4 +153,4 @@ There are two limits which govern Explorer query usage:
 
 ## Data Retention
 
-By default, PlayFab Insights stores 30 days of title data. Note that only 14 days are held in the cache, meaning queries limited to 14 days will be most performant. In the future, these limits will also be configurable through a self-service experience.  
+By default, Explorer queries run on hot storage, which can be configured in the Management tool. Queries that search beyond the data stored in hot storage will have significantly longer run times and may time out.
