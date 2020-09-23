@@ -37,6 +37,11 @@
         href: cocos2d-x/quickstart.md
     - name: Phaser.io
       href: phaser/index.md
+    - name: Photon
+      href: photon/index.md
+      items:
+      - name: Quickstart
+        href: photon/quickstart.md
 - name: Game Engines
   href: game-engines/index.yml
   items:
