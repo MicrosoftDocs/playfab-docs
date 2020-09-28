@@ -39,19 +39,19 @@ D2 v2|2|7.00 GiB|100 GiB|$0.252 |$0.146 |
 D3 v2|4|14.00 GiB|200 GiB|$0.504 |$0.293 |
 D4 v2|8|28.00 GiB|400 GiB|$1.008 |$0.585 |
 
-Fv2 Series|Cores|RAM|Storage|Windows|Linux|
+Fsv2 Series|Cores|RAM|Storage|Windows|Linux|
 |-|-|-|-|-|-|
-F2 v2|2|4.00 GiB|16 GiB|$0.163 |$0.085 |
-F4 v2|4|8.00 GiB|32 GiB|$0.326 |$0.169 |
-F8 v2|8|16.00 GiB|64 GiB|$0.651 |$0.338 |
-F16 v2|16|32.00 GiB|128 GiB|$1.302 |$0.677 |
+F2s v2|2|4.00 GiB|16 GiB|$0.163 |$0.085 |
+F4s v2|4|8.00 GiB|32 GiB|$0.326 |$0.169 |
+F8s v2|8|16.00 GiB|64 GiB|$0.651 |$0.338 |
+F16s v2|16|32.00 GiB|128 GiB|$1.302 |$0.677 |
 
 
 ## Windows price by region for 2-core virtual machines
 
 **Note, Dv3 and Fv1 series virtual machines are not currently available for new customers.**
 
-Region|A2v2|D2v3 |D2v2|F2v1|F2v2|
+Region|A2v2|D2v3 |D2v2|F2v1|F2sv2|
 |-|-|-|-|-|-|
 East Asia|$0.150|$0.207|$0.277|$0.211|$0.179|
 Southeast Asia|$0.150|$0.207|$0.277|$0.211|$0.179|
@@ -72,7 +72,7 @@ US West|$0.136|$0.188|$0.252|$0.192|$0.163|
 
 ## Linux price by region for 2-core virtual machines
 
-Region|A2v2|D2v3 |D2v2|F2v1|F2v2|
+Region|A2v2|D2v3 |D2v2|F2v1|F2sv2|
 |-|-|-|-|-|-|
 East Asia|$0.100|$0.106|$0.161|$0.109|$0.094|
 Southeast Asia|$0.100|$0.106|$0.161|$0.109|$0.094|
