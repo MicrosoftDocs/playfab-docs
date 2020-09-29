@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Explorer Basic Quickstart
 
-> [!NOTE]
+> [NOTE]
 > The Explorer Feature is in public preview. We anticipate ongoing changes to it as we continue gathering feedback and optimizing for customer use.
 
 To query the data created by PlayFab API calls:
@@ -20,8 +20,6 @@ To query the data created by PlayFab API calls:
 1. Log in to the [PlayFab Game Manager](https://developer.playfab.com/en-us/login).
 2. Select your Title.
 3. In the left navigation column, select **Data**.
-4. Select the **Explorer Basic ** tab at the top of the page. 
-
-![Explorer tab](media/insights-explorer-tab.png)
+4. Select the **Explorer Basic** tab at the top of the page. 
 
 To learn how to author custom Basic queries, see the [Getting Started with Explorer Basic](getting-started-with-playfab-explorer-basic.md) tutorial.
