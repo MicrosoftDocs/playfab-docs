@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Explorer Advanced Quickstart
 
-> [!NOTE]
+> [NOTE]
 > The Explorer Feature is in public preview. We anticipate ongoing changes to it as we continue gathering feedback and optimizing for customer use.
 
 To query the data created by PlayFab API calls:
