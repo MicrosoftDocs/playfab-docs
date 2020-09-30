@@ -10,11 +10,12 @@ keywords: playfab, insights
 ms.localizationpriority: medium
 ---
 
-# Insights for xbox
-> [!Note]
-Insights for XBOX is in Private Preview only and is not currently available to Second or Third Party Partners of Microsoft. The date for Public Preview and General Availability have not yet been announced. Please contact [PlayFab support](https://playfab.com/contact/) if you have any questions.
+# Insights for Xbox
 
-Insights for Xbox (IFX) pulls Xbox title data into PlayFab’s Insights offering which is built on top of Azure Data Explorer (Kusto). Access to Xbox title data through PlayFab Insights allows you to query and analyze data through the PlayFab Game Manager.
+> [!Note]
+>Insights for XBOX is in Private Preview only and is not currently available to Second or Third Party Partners of Microsoft. The date for Public Preview and General Availability have not yet been announced. Please contact [PlayFab support](https://playfab.com/contact/) if you have any questions.
+
+Insights for Xbox (IFX) pulls Xbox title data into PlayFab’s Insights offering which is built on top of Azure Data Explorer (Kusto). Access to XBOX title data through PlayFab Insights allows you to query and analyze data through the PlayFab Game Manager.
 
 ## Onboarding to IFX
 
@@ -38,7 +39,6 @@ Certain individuals during the onboarding experience might be impacted with prod
 IFX will be billed as part of the existing [Insights meter](https://docs.microsoft.com/gaming/playfab/features/insights/insights/pricing) through row writes (ingestion) and storage components of the Insights meter. A new line for IFX Ingestion will appear on the **Billing Summary** to display accumulated IFX charges and storage charges will be included in the existing PlayFab Insights meter. Charges will be calculated based on the size of the data ingested into IFX by counting the number of row writes. The latest ingestion prices can be found on the **Insights for XBOX Add-On** page in **Game Manager**.
 
 Adding and deleting product IDs will trigger data processing which will cause an increase in that month's (and possibly future month's) bill. To keep your monthly bill from increasing, PlayFab recommends adding and deleting Product IDs as infrequently as possible.
-
 
 ## IFX data sets and tables
 
@@ -87,7 +87,9 @@ Daily Broadcast User | metrics.usage.xbox_broadcaster_activity_user | 1 Day | Da
 Daily Achievement | metrics.usage.xbox_achievement | 1 Day | Daily achievement data. At a very low occurrence rate, an achievement event can be sent to IFX system more than once. This will look like an achievement is achieved more than once on different days, which shouldn't be the reality. In this case, use the later occurrence as the real achieved date. Platform value will indicate all platforms the *XboxTitleId* is available on, rather than the platform the achievement is achieved on.
 Daily Concurrency | metrics.usage.xbox_currency | 1 Day | Daily max currency for *XboxTitleId* on each platform.
 
+
 ## Subscription status functions
+
 In the tenant title databases, the following functions can be deployed to let users query Subscription status for each Xuid and DateId combination. The functions populate the subscription state of each Gold, GamePass, EAAccess, PCGamePass, and Ultimate subscription, and displays if the Xuid is entitled for that subscription.
 
 - Xbox_Get_Subscription_Purchase_Orders
@@ -103,7 +105,8 @@ The results can be obtained by running the function with *startDate* and *endDat
 Xbox_Get_Subscription_Purchase_Orders('2020-02-01', '2020-03-01')​​​​​​​
 ```
 
+
 ### Additional notes
 
 - If the results are not shown, there might not be any transactions for the given date range.
-- ​​If the function execution takes longer than expected, run the function on shorter date ranges, especially in the case of querying usage.
+- If the function execution takes longer than expected, run the function on shorter date ranges, especially in the case of querying usage.
