@@ -1,5 +1,5 @@
 ---
-title: Explorer Advanced quickstart
+title: Explorer quickstart
 author: nathankong-microsoft
 description: This quickstart guide shows how to query data created by PlayFab API calls.
 ms.author: nakong
@@ -10,12 +10,23 @@ keywords: playfab, insights, explorer
 ms.localizationpriority: medium
 ---
 
-# Explorer Advanced Quickstart
+# Explorer Quickstart
 
 > [NOTE]
 > The Explorer Feature is in public preview. We anticipate ongoing changes to it as we continue gathering feedback and optimizing for customer use.
 
-To query the data created by PlayFab API calls:
+## Explorer Basic
+To query the data in basic mode:
+
+1. Log in to the [PlayFab Game Manager](https://developer.playfab.com/en-us/login).
+2. Select your Title.
+3. In the left navigation column, select **Data**.
+4. Select the **Explorer Basic** tab at the top of the page. 
+
+To learn how to author custom Basic queries, see the [Getting Started with Explorer Basic](getting-started-with-playfab-explorer-basic.md) tutorial.
+
+## Explorer Advanced
+To query the data in Advanced mode
 
 1. Log in to the [PlayFab Game Manager](https://developer.playfab.com/en-us/login).
 2. Select your Title.
