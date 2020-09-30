@@ -1,9 +1,7 @@
 - name: Overview
   href: index.md
-- name: Explorer Basic Quickstart
-  href: explorer-basic-quickstart.md  
-- name: Explorer Advanced Quickstart
-  href: explorer-advanced-quickstart.md
+- name: Explorer Quickstart
+  href: explorer-quickstart.md
 - name: Tutorials
   href: tutorials.md
   items:
