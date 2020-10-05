@@ -22,7 +22,7 @@ Using the **Secret Keys** page in **Game Manager**, you can create, delete, disa
 To manage the secret keys for your Title:
 
 1. Sign in to **Game Manager**.
-2. Select you Title.
+2. Select your Title.
 3. In the upper-right corner, select the gear icon.
 4. Select **Title settings**, then select the **Secret Keys** tab.
 
