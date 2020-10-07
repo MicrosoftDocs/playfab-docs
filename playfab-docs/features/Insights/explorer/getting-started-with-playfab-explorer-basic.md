@@ -26,7 +26,7 @@ To begin authoring your own queries in Basic mode, it's important to first under
 
 The `events.all` table is the default destination for all incoming events. It is a single semi-structured table with columns for common values such as time & event name. You will quickly become familiar with the EventData column, which contains the full original JSON payload and is useful in almost all queries. You can read the following documentation on the [events.all table](../schemas/events-all.md).
 
-### The anatomy of a query
+### Query
 
 A query is composed of one or more **Conditions** that are combined via the 'AND' logical operator. A condition is composed of an **Event** from the event.all table.
 
@@ -34,10 +34,17 @@ Conditions can be specified by adding one or more **Clauses**, which is a logica
 
 The timeframe of the query can be adjusted by modifying **Start date** and **End date**.
 
-The output of the query can be modified further by adding **Group By**, **Sum by**, and **Unique By** options.
+The output of the query can be modified further by adding **Group By** and **Aggregate Type**. Group By modifies how the output rows are grouped, whereas Aggregate Type modifies how the rows are counted, summed, or distinct by.
 
-## Sample Queries
+You can create queries in the Query panel.
 
+## Query Output
+
+After running a query, you can see the output below in the Query Output panel. The output is in the format of a bar graph as well as a table.
+
+The graph shows the results for the largest 5 groups. You can see the other groups by clicking the dropdown at the bottom of the graph.
+
+The table shows the Event Name, Timestamp (UTC), Player ID, and Event Data (via JSON) for reach row.
 
 
 ## Limits
