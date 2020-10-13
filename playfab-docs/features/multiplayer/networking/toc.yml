@@ -64,12 +64,6 @@
     href: party-text-to-speech-ux-guidelines.md
   - name: Speech-to-text and text display UX guidelines
     href: party-speech-to-text-ux-guidelines.md
-- name: Limits and Billing
-  items:
-  - name: Pricing
-    href: pricing.md
-  - name: Xbox Live Free Program
-    href: xbl-discount.md
 - name: Platform Guidance
   items:
   - name: Xbox and Xbox Live Platform Guidance
@@ -78,8 +72,12 @@
       href: xbox-requirements.md
     - name: Using PlayFab Party with MPSD
       href: using-mpsd.md
+    - name: Xbox Live Free Program FAQ
+      href: xbl-discount.md
 - name: Release notes
   href: release-notes.md
+- name: Pricing
+  href: pricing.md
 - name: Reference
   items:
   - name: Party Unity API
