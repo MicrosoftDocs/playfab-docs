@@ -12,13 +12,7 @@ ms.localizationpriority: medium
 
 # PlayFab Party release notes
 
-PlayFab Party for Windows and Xbox is available on [Nuget.org](https://www.nuget.org/profiles/PlayFab)!
-
-Release notes for the Xbox Live Helper library can be found [here](party-xboxlive-relnotes.md).
-
-PlayFab Party for Android and iOS are available on [GitHub.com](https://github.com/PlayFab/PlayFabParty/releases).
-
-PlayFab Party had a significant price drop on 10/13/2020. You can view the updated Party rates on the [Pricing page](https://playfab.com/pricing). See more information about the price drop on our [blog post](https://blog.playfab.com/blog/starting-today-save-up-to-90-using-playfab-party).
+PlayFab Party had a significant (up to 90%) price drop on 10/13/2020. You can view the updated Party rates on the [Pricing page](https://playfab.com/pricing). For more information about the price drop, see our [blog post](https://blog.playfab.com/blog/starting-today-save-up-to-90-using-playfab-party).
 
 ## 1.5.0
 
