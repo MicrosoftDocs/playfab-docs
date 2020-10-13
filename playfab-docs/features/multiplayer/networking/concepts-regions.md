@@ -97,7 +97,7 @@ if (m_qosResultsReady)
 
 ### Regional price differences
 
-Keep in mind that all Party regions are not charged equally. For information about regional price differences, see [Billing for PlayFab Party](pricing.md#network-egress).
+Keep in mind that all Party regions are not charged equally. For information about regional price differences, see [our pricing page](https://playfab.com/pricing/).
 
 ## Using optimal regions for accessible chat features
 
