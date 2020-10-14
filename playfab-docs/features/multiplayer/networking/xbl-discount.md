@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 # Xbox Live Free Program FAQ
 
 ### What limits are there to Xbox Live free usage of PlayFab Party or Matchmaking?
-In Development, overall usage of PlayFab including Party and Matchmaking is restricted to 100,000 unique player accounts. In both Production and Essentials, there is no limit on the number of match tickets, concurrent Party networks, total Party networks, or any other consumption limitation.
+In Development Mode, overall usage of PlayFab including Party and Matchmaking is restricted to 100,000 unique player accounts and 10 unique titles. For all paid tiers, there is no limit on the number of match tickets, concurrent Party networks, total Party networks, or any other consumption limitation.
 
 ### Does this program apply only to Xbox consoles?
 No. This free program applies to any platform where players sign in with Xbox Live, including PC, iOS, and Android.
@@ -29,4 +29,4 @@ There is an Xbox Live plug-in for Party that simplifies Xbox Live sign-in and au
 ### What if a Party has a mix of Xbox Live and non-Xbox Live players? What do I pay for?
 The consumption meters used to bill Party are player-oriented: player network-minutes, player voice-minutes, network egress etc. Xbox Live players will not increment these meters and effectively be zero rated. PlayFab tracks this using the `LoginWithXbox` API so please use this API to enjoy the Xbox Live program.
 
-Usage from other identity providers or custom ids will be billed normally; check out the [PlayFab Party pricing topic](../../multiplayer/networking/pricing.md) to see how standard Party activity is metered and zero-rating applied.
+Usage from other identity providers or custom ids will be billed normally; check out the [PlayFab pricing page](https://playfab.com/pricing) and [PlayFab Party pricing topic](../../multiplayer/networking/pricing.md) to see how standard Party activity is metered and zero-rating applied.
