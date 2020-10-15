@@ -30,4 +30,6 @@ ms.localizationpriority: medium
 
 7. **[Technical Support](../pricing/paidtechnicalsupport.md):** Access support included in paid account plans.
 
-8. **[Upgrading Accounts and Launching Titles](../pricing/upgrades.md):** Expand your player base by upgrading your account launching titles.
+8. **[Upgrading Accounts](../pricing/account-upgrades.md):** Upgrade your account plan using the self-serve plans experience in Game Manager.
+
+9. **[Launching Titles](../pricing/title-launches.md):** Launch your titles in Game Manager.
