@@ -11,8 +11,7 @@ ms.localizationpriority: medium
 ---
 
 # Account Upgrades
-
-Customers can upgrade their account plan and launch titles using the self-service upgrade and launch experiences found in Game Manager.
+Customers can upgrade their account plan using the self-serve plans experience found in Game Manager.
 
 ## Account Plans 
 A PlayFab account has five plan options:
