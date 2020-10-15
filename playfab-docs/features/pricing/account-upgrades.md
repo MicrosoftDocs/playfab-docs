@@ -1,8 +1,8 @@
 ---
 title: Account Upgrades
-author: nakong
+author: nathankong-microsoft
 description: Describes how to upgrade an account in the new Game Manager experience.
-ms.author: nathankong-microsoft
+ms.author: nakong
 ms.date: 10/15/2020
 ms.topic: article
 ms.prod: playfab
