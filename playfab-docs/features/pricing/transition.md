@@ -28,16 +28,17 @@ Customers can understand changes to monthly costs and initiate their account's p
 
 1. Log in to PlayFab.com.
 
-2. From the "My Studios and Titles" page, select **Update Pricing** on the navigation bar of the Studio whose billing account will move to usage-based pricing.
+2. From the **My Studios and Titles** page, select **Update Pricing** on the navigation bar of the Studio whose billing account will move to usage-based pricing.
 
-3. You will be directed to the "Plan Recommendation" page. On this page, you can see your rolling-thirty-day usage. Based upon your historic usage, we will calculate your estimate bill for your current plan and recommend the most cost-savings plan. 
+3. You will be directed to the **Plan Recommendation** page. On this page, you can see your rolling-thirty-day usage. Based upon your historic usage, we will calculate your estimate bill for your current plan and recommend the most cost-savings plan. 
 
-4. Select **Proceed with plan** to move to the "Plan Selection" page to pick a plan.  The recommended plan will be automatically selected, but you can select any plan you are elligble for. 
+4. Select **Proceed with plan** to move to the **Plan Selection** page to pick a plan.  The recommended plan will be automatically selected, but you can select any plan you are elligble for. 
 
-5. Select **Next** to move through the contact information and payment information tabs. If the billing account is on an **Indie or Pro** MAU-based pricing plan, contact information and payment information will be pre-populated.
-If the billing account is on an **Essentials** pricing plan, entering contact information and payment information is optional as long as no corresponding titles exceed the designated player limit for usage-based pricing. See [development mode](../pricing/development-mode.md) titles to learn more.
+5. Select **Next** to move through the contact information and payment information tabs.
 
 6. Select **Confirm this Plan** from the review stage to complete the billing account update to usage-based pricing.
+
+To learn more about plans, see [Account Upgrades](../pricing/account-upgrades.md)
 
 ## FAQ
 
