@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Titles in Development Mode
 
-All PlayFab titles are in one of two possible states - development mode and live. Development Mode is, as the name suggests, meant for titles currently in development. This mode provides developers with the flexibility to connect a title to PlayFab without running up the bill. However, there are functional limitations for titles in development mode (detailed below). A title in development mode can only have up to 100k users. These titles can be [launched](../pricing/upgrades.md) through Game Manager and is then considered live. Launching a title removes all development mode limitations and allows the title to expand outside of test markets.
+All PlayFab titles are in one of two possible states - development mode and live. Development Mode is, as the name suggests, meant for titles currently in development. This mode provides developers with the flexibility to connect a title to PlayFab without running up the bill. However, there are functional limitations for titles in development mode (detailed below). A title in development mode can only have up to 100k users. These titles can be [launched](../pricing/account-upgrades.md) through Game Manager and is then considered live. Launching a title removes all development mode limitations and allows the title to expand outside of test markets.
 
 By default, every title created starts in development mode. The **My Studios and Titles** main page will indicate which state a title is in through a mark on the bottom, left corner of the title block. This indicator can also be viewed at the top of the left nav within a title. Titles in development mode are labeled **Development**. Live titles are blank.
 
@@ -45,7 +45,7 @@ When Fun Studios visits their Billing Summary page, they only see the consumptio
 
 **For more information on these topics, check out these pages:**
  - [Meters](../pricing/Meters/meters.md)
- - [Upgrades](../pricing/Upgrades.md)
+ - [Upgrades](../pricing/account-upgrades.md)
  - [Billing Summary](../pricing/billingDetails.md)
 
 ## Limits
