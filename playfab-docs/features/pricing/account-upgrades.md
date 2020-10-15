@@ -21,11 +21,11 @@ A PlayFab account has five plan options:
 4. **PREMIUM :** This paid plan has a monthly base rate and private support options ([Paid Technical Support](../pricing/PaidTechnicalSupport.md)). This plan comes with more included meter usage than the Standard plan. Once the included meter amounts have been used, the account will be charged for additional consumption.
 5. **ENTERPRISE :** An Enterprise account has a monthly base rate and private support channels that offer 24/7 assistance. This plan comes with more included meter usage than the Premium plan. Once the included meter amounts have been used, the account will be charged for additional consumption. An account can upgrade to an Enterprise plan through contacting the [PlayFab Team](https://playfab.com/contact/) .
 
->[!Note]
+The base rate's included consumption is cumulative across titles linked to an account.
+
+>[! NOTE]
 > All PlayFab account plans adhere to the [PlayFab Terms of Service](https://playfab.com/terms/).
 
-> [!NOTE]
-> The base rate's included consumption is cumulative across titles linked to an account.
 
 ## Understanding the Account-Studio-Title Relationship
 An account is linked to one Studio and a Studio may be linked to many titles. Upgrades are executed at the account level and launches are executed at the Title level.
