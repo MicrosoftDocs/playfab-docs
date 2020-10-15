@@ -3,7 +3,7 @@ title: Transitioning to Modern Pricing
 author: nathankong-microsoft
 description: Describes how to transition from the legacy pricing plan to the modern pricing plan.
 ms.author: nakong
-ms.date: 09/01/2020
+ms.date: 10/15/2020
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, pricing, transition, modern pricing, legacy pricing, move, change
@@ -28,13 +28,13 @@ Customers can understand changes to monthly costs and initiate their account's p
 
 1. Log in to PlayFab.com.
 
-2. From the "My Studios and Titles" page, select **Update Account** on the navigation bar of the Studio whose billing account will move to usage-based pricing.
+2. From the "My Studios and Titles" page, select **Update Pricing** on the navigation bar of the Studio whose billing account will move to usage-based pricing.
 
-3. If the Studio's billing account is on the Essentials tier and all titles fall below the [development mode](../pricing/development-mode.md) limits, a pop-up will appear prompting you to complete the update to usage-based pricing. This completes the flow, otherwise move on to step 4.
+3. You will be directed to the "Plan Recommendation" page. On this page, you can see your rolling-thirty-day usage. Based upon your historic usage, we will calculate your estimate bill for your current plan and recommend the most cost-savings plan. 
 
-4. If the Studio's billing account is on the Indie or Pro tier or if a title exceeds the modern pricing [development mode](../pricing/development-mode.md) limits, the **Update Account** page will appear. The **Update Account** page is where customers can see which Studios are connected to the billing account that is moving to usage-based pricing. When a billing account is updated to usage-based pricing, all linked Studios and corresponding titles will move automatically update.
+4. Select **Proceed with plan** to move to the "Plan Selection" page to pick a plan.  The recommended plan will be automatically selected, but you can select any plan you are elligble for. 
 
-5. Select "Next" to move through the contact information and payment information tabs. If the billing account is on an **Indie or Pro** MAU-based pricing plan, contact information and payment information will be pre-populated.
+5. Select **Next** to move through the contact information and payment information tabs. If the billing account is on an **Indie or Pro** MAU-based pricing plan, contact information and payment information will be pre-populated.
 If the billing account is on an **Essentials** pricing plan, entering contact information and payment information is optional as long as no corresponding titles exceed the designated player limit for usage-based pricing. See [development mode](../pricing/development-mode.md) titles to learn more.
 
 6. Select **Confirm this Plan** from the review stage to complete the billing account update to usage-based pricing.
