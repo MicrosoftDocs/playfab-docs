@@ -14,6 +14,14 @@ ms.localizationpriority: medium
 > [!Note]
 > For release notes about service releases and product updates, see the [release notes](https://github.com/PlayFab/PlayFab/releases) section on [PlayFab's public GitHub repository](https://github.com/PlayFab/PlayFab)
 
+## 201014
+
+Date: 2020-10-14
+
+Supports the [September 2nd PlayFab service release](https://github.com/PlayFab/PlayFab/releases/tag/2.5.6)
+
+(Also supports new methods in the [Experimentation](https://docs.microsoft.com/rest/api/playfab/experimentation/experimentation) API which will appear in a near-future Service release)
+
 ## 200914
 
 Date: 2020-09-14
@@ -115,7 +123,7 @@ Date: 2020-03-30
  * [Authentication](https://docs.microsoft.com/gaming/playfab/#pivot=documentation&panel=authentication):
     * Added new [LoginIdentityProviders](https://docs.microsoft.com/gaming/playfab/api-references/events/data-types/loginidentityprovider) for Apple and Nintendo
  * [Multiplayer Server](https://docs.microsoft.com/gaming/playfab/#pivot=documentation&panel=multiplayer):
-    * Added new BuildRegion management functions [DeleteBuildRegion](https://docs.microsoft.com/rest/api/playfab/multiplayer/multiplayerserver/deletebuildregion?view=playfab-rest) and [UpdateBuildRegion](https://docs.microsoft.com/rest/api/playfab/multiplayer/multiplayerserver/updatebuildregion?view=playfab-rest)
+    * Added new BuildRegion management functions [DeleteBuildRegion](https://docs.microsoft.com/rest/api/playfab/multiplayer/multiplayerserver/deletebuildregion) and [UpdateBuildRegion](https://docs.microsoft.com/rest/api/playfab/multiplayer/multiplayerserver/updatebuildregion)
  * [UnrealMarketplacePlugin](https://github.com/PlayFab/UnrealMarketplacePlugin):
     * Added new [Mac build helper scripts](https://github.com/PlayFab/UnrealMarketplacePlugin/blob/master/4.24/ExampleProject/BuildMac.sh)
     
@@ -194,7 +202,7 @@ Date: 2020-02-18
 
 Date: 2020-02-13
 
-PlayFab's Multiplayer Servers introduces an auto scaling enhancement named Dynamic Standby that monitors standby server threshold levels and dynamically activates increased provisioning of game servers so that demand can be met at scale.  This feature feature adds a new object to the Multiplayer programming interface called "DynamicStandby" object. The Dynamic Standby object is an optional property of the [BuildRegionParams](https://docs.microsoft.com/rest/api/playfab/multiplayer/multiplayerserver/updatebuildregions?view=playfab-rest#buildregionparams) object.
+PlayFab's Multiplayer Servers introduces an auto scaling enhancement named Dynamic Standby that monitors standby server threshold levels and dynamically activates increased provisioning of game servers so that demand can be met at scale.  This feature feature adds a new object to the Multiplayer programming interface called "DynamicStandby" object. The Dynamic Standby object is an optional property of the [BuildRegionParams](https://docs.microsoft.com/rest/api/playfab/multiplayer/multiplayerserver/updatebuildregions#buildregionparams) object.
 
 Dynamic Standby is an advanced game server feature and editing the settings from its default values should be done with caution. Configuring Dynamic Standby can be accomplished in the Game Manager Developers' portal or programmatically editing properties of the Dynamic Standby object. To learn more about Dynamic Standby, visit its user guide in the [PlayFab Multiplayer Servers](../features/multiplayer/servers/dynamic-standby.md) online documentation.
 
