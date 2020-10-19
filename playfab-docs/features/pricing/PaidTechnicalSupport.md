@@ -33,7 +33,7 @@ To make integration with PlayFab as seamless and efficient as possible, PlayFab 
 
 
 ### SUPPORT TICKET SUBMISSION
-**Purpose:** Use support tickets to report a bug, to understand how to use a particular PlayFab feature, or to request help with a technical problem. Customers with paid accounts may submit support tickets directly to the PlayFab team through the "Contact Us" Page in Game Manager. Accounts on the [Standard Plan](../pricing/upgrades.md) and on the [Enterprise Plan](../pricing/upgrades.md) will receive a response within 1 business day.
+**Purpose:** Use support tickets to report a bug, to understand how to use a particular PlayFab feature, or to request help with a technical problem. Customers with paid accounts may submit support tickets directly to the PlayFab team through the "Contact Us" Page in Game Manager. Accounts on the [Standard Plan](../pricing/account-upgrades.md) and on the [Enterprise Plan](../pricing/account-upgrades.md) will receive a response within 1 business day.
 
 **Minimum Required Account Plan:** Standard Account Plan.
 
@@ -44,7 +44,7 @@ To make integration with PlayFab as seamless and efficient as possible, PlayFab 
 4. Select **Contact Us**.
 
 ### EMERGENCY ESCALATIONS
-**Purpose:** To provide PlayFab's fastest incident response time to customers on an [Enterprise Plan](../pricing/upgrades.md) during emergencies by notifying on-call PlayFab engineers.
+**Purpose:** To provide PlayFab's fastest incident response time to customers on an [Enterprise Plan](../pricing/account-upgrades.md) during emergencies by notifying on-call PlayFab engineers.
 
 > [!NOTE]
 > Emergency escalations should be used sparingly and only in the case of high-impact service errors or outtages.
@@ -58,4 +58,4 @@ To make integration with PlayFab as seamless and efficient as possible, PlayFab 
 4. Select **Contact Us** to access the form. For Enterprise customers, the **Emergency On-Call Alert** option displays after completing the **Problem Type** and **Sub-Type** fields.
 6. To submit the ticket, select **Yes**.
 
-To learn more about upgrading to a paid account plan, see [Account Upgrades and Title Launches](../pricing/upgrades.md).
+To learn more about upgrading to a paid account plan, see [Account Upgrades and Title Launches](../pricing/account-upgrades.md).

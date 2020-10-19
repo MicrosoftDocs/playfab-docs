@@ -1,9 +1,9 @@
 ---
 title: Explorer tutorials
-author: mckmoffatt
+author: nathankong-microsoft
 description: The Explorer tutorials.
-ms.author: mcelliot
-ms.date: 07/23/2019    
+ms.author: nakong
+ms.date: 09/23/2020    
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, insights, explorer
@@ -14,4 +14,5 @@ ms.localizationpriority: medium
 
 These tutorials teach you how to use Explorer.
 
-- [Getting started with PlayFab Explorer](getting-started-with-playfab-explorer.md)
+- [Getting started with Explorer Basic](getting-started-with-playfab-explorer-basic.md)
+- [Getting started with Explorer Advanced](getting-started-with-playfab-explorer-advanced.md)
