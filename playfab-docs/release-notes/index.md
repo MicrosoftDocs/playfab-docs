@@ -22,6 +22,13 @@ Supports the [September 2nd PlayFab service release](https://github.com/PlayFab/
 
 (Also supports new methods in the [Experimentation](https://docs.microsoft.com/rest/api/playfab/experimentation/experimentation) API which will appear in a near-future Service release)
 
+PlayFab is committed to enable you to use our services for developing cross-platform and cross-device games using various game engines and frameworks. To help us better focus on creating new features that you need, we are opening the following SDKs for community contributions. If you have more questions or need support, go to [PlayFab community forum](https://community.playfab.com/index.html). This will be our last official update to the following SDKs:
+
+* https://github.com/PlayFab/Cocos2d-xSDK
+* https://github.com/PlayFab/Objective_C_SDK
+* https://github.com/PlayFab/PhpSdk
+* https://github.com/PlayFab/PythonSdk
+
 ## 200914
 
 Date: 2020-09-14
