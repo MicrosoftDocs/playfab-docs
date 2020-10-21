@@ -29,9 +29,8 @@ Installation:
 
 1. Download and install the [PlayFab Cross-Platform (CPP) SDK](https://github.com/PlayFab/XPlatCppSdk).
 2. Create a new C++ Console project.
-3. Right-click on the project in **Solution Explorer**, select **Manage NuGet packages**, and search for "playfab." You should see a small number of matches, and you're looking for `com.playfab.xplatcppsdk.vXXX`. 
-    = Install the `json cpp` packages.
-4. Verify that your project complies.
+3. Right-click on the project in **Solution Explorer**, select **Manage NuGet packages**, and search for "playfab." You should see a small number of matches, and you're looking for `com.playfab.xplatcppsdk.vXXX`
+4. Verify that your project complies in x64 Release
 
 ## Set up your first API call
 
