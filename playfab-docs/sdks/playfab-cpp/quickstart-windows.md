@@ -49,6 +49,7 @@ This guide provides the minimum steps to make your first PlayFab API call, witho
 #include "playfab/PlayFabClientDataModels.h"
 #include "playfab/PlayFabClientApi.h"
 #include "playfab/PlayFabSettings.h"
+#include "playfab/PlayFabApiSettings.h"
 #include <windows.h>
 
 using namespace PlayFab;
