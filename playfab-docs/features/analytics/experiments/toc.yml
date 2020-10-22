@@ -2,9 +2,12 @@
   href: index.md
 - name: Quickstart
   href: quickstart.md
+- name: Exclusion Groups
+  href: exclusion-groups.md
 - name: Recommendations
   href: experimentation-keys.md
 - name: Key-terms
-  href: experimentation_key_terms.md
+  href: experimentation-key-terms.md
 - name: Billing for Experiments
   href: pricing.md
+  

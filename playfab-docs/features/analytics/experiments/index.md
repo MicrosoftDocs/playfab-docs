@@ -1,7 +1,7 @@
 ---
 title: Experimentation
 author: shikha-tarware
-description: Demonstrates how to use experimentation.
+description: PlayFab Experimentation Service Overview
 ms.author: shtarwar
 ms.date: 08/03/2020
 ms.topic: article
@@ -56,4 +56,4 @@ PlayFab Experiments enables you to run multiple concurrent randomized experiment
 -    Reliable computation of results of an experiment with statistical significance calculation is provided.
 -    Detection of issues when the targeted audience traffic is way off. This is often caused by a treatment causing crashes or affecting logging. PlayFab's experimentation feature flags such issues enabling you to run a reliable experiment.   
 
-![Screenshot of Experimentation at a Glance](media/tutorials/onboarding-experiments-page.PNG "Onboard to Experiments")
+![Screenshot of Onboard to Experiments](media/tutorials/onboarding-experiments-page.PNG "Onboard to Experiments")
