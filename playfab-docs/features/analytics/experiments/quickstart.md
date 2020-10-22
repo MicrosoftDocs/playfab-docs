@@ -20,9 +20,10 @@ From the Game Manager:
 -	Navigate to your **Title**
 -	Select **Experiments** from the menu on the left
 -	Select **New Experiment**, experiment configuration page is opened
--	Enter **Experiment Name**, **Description**, **Start Date & Time**, **Duration** (up to 21 days)
+-	Enter **Experiment Name**, **Description**, **Start Date & Time**, **Duration** (up to 90 days)
 -	Select your target **Audience** for the experiment. By default, the experiment's audience is **“Run across all title players”**
   *	Configure to run the experiment on a Segment by selecting the radio button **“Select player segment”** and select on the drop-down 
+- (Optional) Under **Exclusion Group**, select exclusion group from the drop-down list of the existing **Exclusion group name** and enter **% traffic allocationto**, to run a mutually exclusive experiment
 -	Under **Variants**, define the **Control Variant** and **Treatment Variant(s)**
     *	Enter **Variant name** and **Description** 
     * Each variant is supported and defined by **Variables** (up to 10) and **Overrides**
@@ -37,7 +38,7 @@ From the Game Manager:
   *	With Save as Draft, the experiment will be in the **Draft** status in the experiments overview and timeline page  
   *	With Run Now, the experiment will be in **Running** status in the experiments overview and timeline page  
 
-![Screenshot of Experimentation at a Glance](media/tutorials/create-experiments-page.PNG "Create an Experiment")
+![Screenshot of Create an Experiment](media/tutorials/create-experiment-with-exclsuion-group-and-overrides.PNG "Create an Experiment")
 
 ## Manage Experiments
 
@@ -62,7 +63,7 @@ Note: One can also **Clone** an existing experiment from the experiment's edit c
 - A scheduled and drafted experiment's fields are completely modifiable and vice-versa for a stopped/ completed experiment. Select on the ellipsis to make **Edit**. Although, for any experiment in running state, only Experiment description and duration modifications are possible
 - A running experiment status is turns **Completed**, once the duration of the experiment is reached or a user explicitly stops the experiment
 
-![Screenshot of Experimentation at a Glance](media/tutorials/manage-experiments-page.PNG "Manage an Experiment")
+![Screenshot of Manage an Experiment](media/tutorials/manage-experiments-page.PNG "Manage an Experiment")
 
 ## Analyze Experiment  
 
@@ -75,7 +76,7 @@ The Experiment details and scorecard page lists the experiment name, description
 > [!Note]
 > To learn more about SRM and how to resolve it, see the **Sample Ratio Mismatch** section in [Experimentation Best Practices and Recommendations](experimentation-keys.md)) 
 
-![Screenshot of Experimentation at a Glance](media/tutorials/analysis-of-the-experiment.PNG "Analyze an Experiment")
+![Screenshot of Analyze an Experiment](media/tutorials/analysis-of-the-experiment.PNG "Analyze an Experiment")
 
 For details on the variant, its associated variables, and overrides, select **Configuration** and **Experiment configuration page** will be displayed with details. 
 
@@ -86,7 +87,7 @@ At the experiment run:
 -	If an issue of Sample Ratio Mismatch (SRM) is identified, then it is flagged to the user for investigation.
 -	SRM indicates sampling bias in the randomization which leads to the options of resolving bugs (if any), immediately stop the experiment based on the estimated impact or take the risk and let the experiment to continue.
 
-![Screenshot of Experimentation at a Glance](media/tutorials/scorecard-of-the-experiment.PNG "Experiment Scorecard and Details")
+![Screenshot of Experiment Scorecard and Details](media/tutorials/scorecard-of-the-experiment.PNG "Experiment Scorecard and Details")
 
 
 ### Scorecard Metrics
