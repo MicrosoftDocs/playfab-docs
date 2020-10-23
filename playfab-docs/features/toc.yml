@@ -13,8 +13,6 @@
     href: automation/toc.yml
   - name: Multiplayer
     href: multiplayer/toc.yml
-  - name: Insights
-    href: insights/toc.yml
   - name: Social
     href: social/toc.yml
 - name: Engagement
@@ -31,6 +29,8 @@
     href: data/toc.yml
   - name: Analytics
     href: analytics/toc.yml
+  - name: Insights
+    href: insights/toc.yml
 - name: Personas
   href: ../personas/toc.yml
 - name: Pricing
