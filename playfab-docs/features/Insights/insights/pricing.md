@@ -17,7 +17,8 @@ All Insights features are billed in a virtual currency called "Insights Credits"
 Each performance level for insights is billed to the minute (Insights Credits Per Hour / 60). The cost in credits for each performance level is located at the bottom of the table on the Insights Management page:
 ![Insights Slider](media/performance-level2.png)
 
-
+> [!NOTE] 
+> All MAU-based pricing plans will be converted to a usage-based pricing plan on 11/1/2020. As part of the transition, each title will be placed on an Insights performance level based on their current usage rates. Playfab has calculated the optimal performance level for a title in order to maintain its current functioning. However, if a title would like to reduce the performance level (and thus cost) while also accepting a decrease in performance, the performance level can be adjusted on the Insights Management page in Game Manager. 
 
 ### Retention
 Retention is billed in Terabyte months. Each day max data size is recorded and averaged over the month. Each terabyte is billed at 50 credits per terabyte month. For example, if a studio stored 1 terabyte of data every day for a month, the total would be 1 TB/Month * 50 Credits = 50 Credits.
