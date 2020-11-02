@@ -46,7 +46,7 @@ Starting the month with no stored data, the studio added 1 TB of data every othe
 
 15 TB * 50 Credits per TB/month = 750 Credits for the month.
 
-Thus, the studio's total monthly cost for Insights performance and data retention is 1,974 credits .
+Thus, the studio's total monthly cost for Insights performance and data retention is 1,974 credits.
 
 ## Row Write Overages   
 Each Insights Performance level has an allotted number of writes per second to the data cluster. For customers not in development mode, going beyond the number of row writes for your performance level triggers row write overages instead of event throttling. Row write overages are charged at 1 credit per 2.7 million (2,700,000) rows written. This pricing is designed to allow for specific ingestion scenarios where it may be more cost effective to have row write overages instead of raising the Insights performance level.  
