@@ -47,7 +47,6 @@ The **Player Overview** (or *details* page), is a starting point for controlling
 
 PlayFab offers a wide set of pages for fine tuning and analyzing your player. These pages are available from the **Player** toolbar panel, and consist of the following items:
 
-- [Event History](../../analytics/metrics/event-history.md) for a general overview of events.
 - [Logins](player-logins.md) for inspecting a player's login attempts.
 - [Segments](player-segments.md) for inspecting the segments that a player belongs to.
 - [Statistics](using-player-statistics.md) for inspecting and manipulating a player's statistical values.
