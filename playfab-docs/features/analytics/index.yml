@@ -34,8 +34,11 @@ landingContent:
             url: experiments/index.md
           - text: Best practices for running Experiments
             url: experiments/experimentation-keys.md
+<<<<<<< HEAD
           - text: Experiments key terms
             url: experiments/experimentation-key-terms.md  
+=======
+>>>>>>> e10cda9139195452c235bfa6f0d2035e86344c5c
       - linkListType: quickstart
         links:
           - text: Explore Experiments from Game Manager
@@ -62,20 +65,8 @@ landingContent:
             url: metrics/quickstart.md   
       - linkListType: tutorial
         links:
-          - text: Get started with Event history
-            url: metrics/event-history.md
           - text: Generate custom PlayStream events
             url: metrics/playstream-events.md
-          - text: Construct an Event History search
-            url: metrics/constructing-an-event-history-search.md
-          - text: What is the Event History Chart panel?
-            url: metrics/real-time-analytics-event-history-chart-panel.md
-          - text: Query for specific events
-            url: metrics/real-time-analytics-event-queries.md
-          - text: Query for specific events with the Event Search Query Panel
-            url: metrics/real-time-analytics-event-search-query-panel.md
-          - text: View event info with the Events Timeline panel
-            url: metrics/real-time-analytics-events-timeline-panel.md
           - text: Set up an Amazon S3 bucket for events
             url: metrics/configure-s3-bucket.md
 

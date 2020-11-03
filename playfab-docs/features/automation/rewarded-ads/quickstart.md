@@ -19,7 +19,7 @@ Rewarded ads are a way of incentivizing your players to watch video ads in excha
 * An Application ID and Advertising Unit type from your ad provider. 
 
 ## Set up an Ad placement 
-In the **Rewarded Ads** tab, the first thing you'll see is the main dashboard for your ads. Here you'll find basic KPIs for your ads, along with a graph showing your recent ad events (they also show up in the [PlayStream Debugger](../playstream-events/index.md) and [Event History](../../analytics/metrics/event-history.md) pages). At the top, select **Placements**.
+In the **Rewarded Ads** tab, the first thing you'll see is the main dashboard for your ads. Here you'll find basic KPIs for your ads, along with a graph showing your recent ad events (they also show up in the [PlayStream Debugger](../playstream-events/index.md). At the top, select **Placements**.
 
 Ad placements are the most fundamental part of the system. Think of a single placement as an "ad position": the type of ad that will be displayed (banner, video, etc.) and at what point in the game the player will see it (level interstitial, as a result of clicking on a "show me an ad", etc).
 
