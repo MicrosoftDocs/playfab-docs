@@ -20,7 +20,7 @@ Each title is set to a chosen performance level that is billed to the minute (In
 ![Insights Slider](media/performance-level2.png)
 
 > [!IMPORTANT] 
-> All MAU-based pricing plans will be converted to a usage-based pricing plan on 11/01/2020. As part of the transition, each title will be placed on an Insights performance level based on their current usage rates. Playfab has calculated the optimal performance level for a title in order to maintain its current functioning. However, if a title would like to reduce the performance level (and thus cost) while also accepting a decrease in performance, the performance level can be adjusted on the Insights Management page in Game Manager using the above table. 
+> All MAU-based pricing plans will be converted to a usage-based pricing plan on 11/01/2020. As part of the transition, each title will be placed on an Insights performance level based on their current usage rates. Playfab has calculated the optimal performance level for a title in order to maintain its current functionality. However, if a title would like to reduce the performance level (and thus cost) while also accepting a decrease in performance, the performance level can be adjusted on the Insights Management page in Game Manager using the above table. 
 
 ## Retention
 Data retention is billed in Terabyte months. Each day, max data size is recorded and averaged over the month. Each terabyte is billed at 50 credits per terabyte month. For example, if a studio stored 1 terabyte of data every day for a month, the total would be 1 TB/Month * 50 Credits = 50 Credits.
