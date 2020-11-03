@@ -38,6 +38,7 @@ In Game Manager, you can search for events, view reports, and look at specific d
 Here are some resources to get you started with the Event Viewer:
 
 - [Real-Time Analytics: Core Concepts](../features/analytics/metrics/real-time-analytics-core-concepts.md) - Gives you precise insights into what is going on inside your game.
+- [Constructing Event History Searches](../features/analytics/metrics/constructing-an-event-history-search.md) - Illustrates how to construct an event history search, the components of a search, and how to use elastic search syntax in your queries.
 - [Built in Analytic Reports](../features/analytics/reports/quickstart.md) - Gets reports on daily, monthly and rolling overviews, track retention and conversion reports, and view reports on your top spenders and purchases.
 
 <img alt="Analytic Reporting" src="images/analytics-reports.png" width="500" />

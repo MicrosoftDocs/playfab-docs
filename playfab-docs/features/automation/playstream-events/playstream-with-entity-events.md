@@ -31,5 +31,6 @@ Entity events support the following PlayFab features:
 
 
 Entity events are also supported for data and analytics features that allow you to discover pertinent information about your game:
+* **Event History** - Filter and search through an [archive of events](../../analytics/metrics/event-history.md). Classic events and entity events will appear together here, and can be filtered by event name. 
 * **PlayFab Insights** - Have the tools to examine all of your event data together, both classic and entity events.
 

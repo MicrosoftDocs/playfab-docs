@@ -10,8 +10,20 @@
   - name: Tutorials
     href: tutorials.md
     items:
+    - name: Getting starting with Event History
+      href: event-history.md
     - name: Generating PlayStream events
       href: playstream-events.md
+    - name: Constructing an Event History search
+      href: constructing-an-event-history-search.md
+    - name: Real-Time Analytics - Event History Chart Panel
+      href: real-time-analytics-event-history-chart-panel.md
+    - name: Real-Time Analytics - Event Queries
+      href: real-time-analytics-event-queries.md
+    - name: Real-Time Analytics - Event Search Query Panel
+      href: real-time-analytics-event-search-query-panel.md
+    - name: Real-Time Analytics - Event Timeline Panel
+      href: real-time-analytics-events-timeline-panel.md
       items:
       - name: Set up an Amazon S3 bucket
         href: configure-s3-bucket.md
