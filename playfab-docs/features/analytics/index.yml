@@ -34,11 +34,6 @@ landingContent:
             url: experiments/index.md
           - text: Best practices for running Experiments
             url: experiments/experimentation-keys.md
-<<<<<<< HEAD
-          - text: Experiments key terms
-            url: experiments/experimentation-key-terms.md  
-=======
->>>>>>> e10cda9139195452c235bfa6f0d2035e86344c5c
       - linkListType: quickstart
         links:
           - text: Explore Experiments from Game Manager
