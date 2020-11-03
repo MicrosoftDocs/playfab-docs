@@ -47,5 +47,6 @@ A solid analytics system allows you to group, sort, filter, count, transform, an
 
 ## Guides
 
+- [Event History](../../analytics/metrics/event-history.md): **Game Manager** page for inspecting the event flow inside your title.
 - [Webhooks](../../data/webhooks/index.md): **Game Manager** page for automatically triggering non-PlayFab servers on specific game events.
 - [S3 Event Archiving](../../analytics/metrics/s3-event-archiving.md): **Game Manager** page for accessing recent PlayStream events.

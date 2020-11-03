@@ -35,7 +35,9 @@ result=> Debug.Log(result.PlayFabId),
 error=> Debug.LogError(error.GenerateErrorReport()));
 ```
 
-As a side effect, PlayFab will record a **player_logged_in** event. 
+As a side effect, PlayFab will record a `player_logged_in` event. Consider using the [Event History](event-history.md) to test the described behavior.
+
+![Game Manager - Event History Chart](media/tutorials/game-manager-event-history-chart.png)  
 
 ## Custom event overview
 
@@ -88,3 +90,13 @@ private void OnChestOpened(string chestType, int levelId) {
 2. Use the [WritePlayerEvent](xref:titleid.playfabapi.com.client.analytics.writeplayerevent) API call for posting a custom event bound to a player.
 3. Provide a body, specific for your events and your needs. In this case we provide the `ChestType` and `LevelId` fields.
 4. Provide an event name identifying your custom event. In this case we use the `player_chest_opened` event type name.
+
+### Testing
+
+Once the solution code is executed, consider using the [Event History](event-history.md) to check that your event has been successfully registered.
+
+1. Filter using the event name.
+2. Ensure the `player_chest_opened` events are in the list.
+3. Ensure that your custom body fields are recorded: `ChestType` and `LevelId`.
+
+![Game Manager - Event History Detail](media/tutorials/game-manager-event-history-detail.png)  
