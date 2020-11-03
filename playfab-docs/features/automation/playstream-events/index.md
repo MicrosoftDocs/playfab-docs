@@ -96,6 +96,5 @@ This is a quality of life feature designed to make building on top of PlayFab ea
 - [Actions and Rules](../actions-rules/index.md)
 - [Segmentation](../../analytics/segmentation/index.md)
 - [Generating PlayStream Events](../../analytics/metrics/playstream-events.md)
-- [Event History](../../analytics/metrics/event-history.md)
 - [Custom Tags](custom-tags.md)
 - [PlayStream Event Reference](../../../api-references/events/index.md)

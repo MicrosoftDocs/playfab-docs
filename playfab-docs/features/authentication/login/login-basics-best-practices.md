@@ -56,6 +56,10 @@ For iOS devices, the player ID changes if they uninstall your game, and then *re
 
 You must determine how to generate unique custom IDs for any other device or platform. Custom IDs are an effective alternative for other platforms or devices, but you must generate your custom IDs with care. If they are too simple, you risk hackers stealing the accounts of others.
 
+### android devices
+
+For latest best practices, see [Google's guidelines on user data ids](https://developer.android.com/training/articles/user-data-ids).
+
 > [!NOTE]
 > Binding a recoverable login is only required *once* per device. Once bound, the game can continue to use the anonymous login with no drawbacks. See the next section.
 
