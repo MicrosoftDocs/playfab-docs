@@ -35,7 +35,7 @@ result=> Debug.Log(result.PlayFabId),
 error=> Debug.LogError(error.GenerateErrorReport()));
 ```
 
-As a side effect, PlayFab will record a `player_logged_in` event. 
+As a side effect, PlayFab will record a **player_logged_in** event. 
 
 ## Custom event overview
 
