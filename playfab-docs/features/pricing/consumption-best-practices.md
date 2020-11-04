@@ -125,9 +125,9 @@ This meter is associated with all the analytics capabilities of the PlayFab serv
 
 Ultimately, this means that the costs on Insights are driven by how much event data you get from players and how much analytics processing you do on that data. In terms of best practices, the advice on events above applies to the former, while for the latter you can control your costs in two ways. First, and simplest, is that you can set the total storage in the Insights Management tab of the Game Manager for your title to control how much total event data you retain in PlayFab. Next, and in that same tab, you can set the performance level for your title. This determines the total amount of CPU resources allocated to your title, as well as how much data is stored "hot" for queries in the Event History. How much you need for each depends upon the needs of your data analytics team members, so it's best to review this with them to understand what your settings should be.
 
-For information about Insights and how to use it, see [What is PlayFab Insights](../insights/insights/index.md).
+For information about Insights and how to use it, see [What is PlayFab Insights](../insights/overview.md).
 
-For information about Insight best practices, see [Best Practices & FAQ](../insights/insights/best-practices.md).
+For information about Insight best practices, see [Best Practices & FAQ](../insights/best-practices.md).
 
 ## Multiplayer Services
 

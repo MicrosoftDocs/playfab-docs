@@ -18,8 +18,6 @@ Experiments
 
 Metrics
 
-Xbox Data Add On
-
 Reports
 
 Segmentation

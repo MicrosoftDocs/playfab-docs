@@ -14,7 +14,7 @@ Here we examine some best practices for using PlayFab Insights as well as addres
 
 ## Best Practices 
 - Each performance level comes with a certain quantity of cache. It is a good idea to calculate a daily data footprint and decide how many days of data you would like in cache. A small buffer or very well known data footprint will allow anyone performing queries to know when to expect optimal performance. Running visualizations against that expected performance is also recommended for quick results.
-  - For example, a studio has a 5 GB / day data footprint. Selecting a cache size of 450+ GB will allow 90 days of data in cache. Running all visualizations in 90 day running windows will be very efficienct. Joins, unions, and advanced queries will be very efficient. Another option would be to focus live visualizations primarily on 30 day windows and set cache size up to 90 days during working hours and 30 days during off hours, this will create large efficiencies in cost savings. Also keep in mind that data is compressed in cache.
+  - For example, a studio has a 5 GB / day data footprint. Selecting a cache size of 450+ GB will allow 90 days of data in cache. Running all visualizations in 90 day running windows will be very efficient. Joins, unions, and advanced queries will be very efficient. Another option would be to focus live visualizations primarily on 30 day windows and set cache size up to 90 days during working hours and 30 days during off hours, this will create large efficiencies in cost savings. Also keep in mind that data is compressed in cache.
 
 
  - Data visualization platforms like PowerBI often run multiple queries for a single visualization. It's recommended that the visualizations be updated serially. If under heavy load, or being used by many users, it may make sense to increase performance level to a level that has higher concurrent queries allowed to free up simultaneous queries for external tools and analysts. 
@@ -23,7 +23,7 @@ Here we examine some best practices for using PlayFab Insights as well as addres
 - The most common use case for scheduled scaling is to scale up during standard working hours and to scale down after hours and weekends. If making large changes in performance level (e.g. level 3 to 8) it's recommended that you intend to stay at the higher performance level for several hours. Loading terrabytes of data in and out of cache quickly is an inefficient use of resources. All other limits are raised instantly, so you may choose to make the scaling changes if needed.
 
 
-- Scheduled scaling is not mutually exclusive with manual scaling. If you find that you need more recources in middle of the day, you can make a manual change, the scheduled scaling will continue as expected. 
+- Scheduled scaling is not mutually exclusive with manual scaling. If you find that you need more resources in middle of the day, you can make a manual change, the scheduled scaling will continue as expected. 
 
 
 - Reducing data storage can result in data loss. You will be warned with the message "Selected retention setting is lower than current setting. Doing so may result in a loss of data." when attempting to reduce storage. Due to the low cost of storage, long term retention is recommended. 
@@ -122,7 +122,7 @@ Summarize
 
 ## How do I grant a user permissions to the Data > Explorer page for a particular title?
 
-- Follow the [PlayFab User Roles](../../../gamemanager/playfab-user-roles.md) guide to access, create, and grant user permissions. 
+- Follow the [PlayFab User Roles](../../gamemanager/playfab-user-roles.md) guide to access, create, and grant user permissions. 
 - A user needs the following 3 permissions to access the Data Explorer: 
     - Explorer data & tab (Read and Write permissions)
     - Analytics data read access (Read permissions)
