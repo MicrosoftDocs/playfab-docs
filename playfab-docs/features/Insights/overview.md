@@ -62,10 +62,8 @@ PlayFab Insights powers a variety of features and functionality across Game Mana
 * Dashboards
   * Trends (Preview)
   * Reports
-* Experiments
 * Players
   * Player Logins
   * Player Event History
-  * Segments
 * Multiplayer
   * Party Usage Charts
