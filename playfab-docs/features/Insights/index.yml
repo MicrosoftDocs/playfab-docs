@@ -22,19 +22,19 @@ landingContent:
       - linkListType: overview
         links:
           - text: What is Insights?
-            url: Insights/index.md  
+            url: overview.md  
       - linkListType: reference
         links:
           - text: Learn how PlayFab Insights Pricing Works
-            url: Insights/pricing.md     
+            url: pricing.md     
       - linkListType: get-started
         links:
           - text: Set Your Performance and Retention
-            url: Insights/performance-retention.md     
+            url: performance-retention.md     
       - linkListType: learn
         links:
           - text: Explore Best Practices and Frequently Asked Questions
-            url: Insights/best-practices.md      
+            url: best-practices.md      
           
 
   - title: Insights Guides
@@ -42,19 +42,19 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Learn How To Schedule Your Insights Performance Changes
-            url: Insights/scheduled-scaling.md    
+            url: scheduled-scaling.md    
       - linkListType: how-to-guide
         links:
           - text: Learn How To Export Data From Insights
-            url: Insights/export.md    
+            url: export.md    
       - linkListType: how-to-guide
         links:
           - text: Connect Outside Tools To Insights
             url: connectivity/index.md    
       - linkListType: reference
         links:
-          - text: Manage Your Insights Environemnt With Insights Management Commands
-            url: Insights/management-commands.md  
+          - text: Manage Your Insights Environment With Insights Management Commands
+            url: management-commands.md  
 
   - title: Explorer
     linkLists:
@@ -64,12 +64,12 @@ landingContent:
             url: explorer/index.md
       - linkListType: quickstart
         links:
-          - text: Quickstart&#58;Explorer 
+          - text: Explorer Quickstart 
             url: explorer/quickstart.md               
       - linkListType: tutorial
         links:
           - text: Getting started with PlayFab Explorer
-            url: explorer/getting-started-with-playfab-explorer.md
+            url: explorer/getting-started-with-playfab-explorer-basic.md
 
   # Card
   - title: Schemas
@@ -80,7 +80,7 @@ landingContent:
             url: schemas/index.md
       - linkListType: quickstart
         links:
-          - text: Quickstart&#58;Explorer 
+          - text: Schemas Quickstart 
             url: schemas/quickstart.md
       - linkListType: tutorial
         links:

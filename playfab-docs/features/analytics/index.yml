@@ -41,19 +41,7 @@ landingContent:
       - linkListType: concept
         links:
           - text: Billing for Experiments
-            url: experiments/pricing.md
-
-  # Card
-  - title: Xbox Data Add-On
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: What is the Xbox Data Add-On?
-            url: xbox-data/index.md
-      - linkListType: quickstart
-        links:
-          - text:  Get data from the Xbox store 
-            url: xbox-data/quickstart.md   
+            url: experiments/pricing.md 
 
   # Card
   - title: Metrics
