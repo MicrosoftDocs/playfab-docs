@@ -85,11 +85,11 @@ landingContent:
       - linkListType: download
         links:
           - text: Party SDKs
-            url: ../../features/multiplayer/networking/index.md#resources
+            url: ../../features/multiplayer/networking/party-sdks.md
       - linkListType: quickstart
         links:
           - text: Party quickstart
-            url: ../../features/multiplayer/networking/quickstart.md
+            url: ../../features/multiplayer/networking/party-getting-started.md
 
   # Card
   - title: Multiplayer Servers

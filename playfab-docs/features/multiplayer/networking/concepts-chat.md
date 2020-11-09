@@ -38,7 +38,7 @@ for every other chat control already in the network and will immediately be able
 
 ## Audio Inputs and Outputs
 
-PlayFab Party allows you to choose which audio device(s) will get used by your chat control with the `PartyLocalChatControl::SetAudioInput()`
+Party allows you to choose which audio device(s) will get used by your chat control with the `PartyLocalChatControl::SetAudioInput()`
 and `PartyLocalChatControl::SetAudioOutput()` methods. Use the `PartyAudioDeviceSelectionType` enum to change the behavior
 of these methods:
 
@@ -77,28 +77,28 @@ matching that identifier. Refer to the following table to see what kind of ident
 
 ## Chat permissions and muting
 
-PlayFab Party gives you fine-grained control over how your players can communicate with each other. Rather than
-specifying teams or channels, PlayFab Party requires explicitly defining the permissions between each pair of chat controls.
+Party gives you fine-grained control over how your players can communicate with each other. Rather than
+specifying teams or channels, Party requires explicitly defining the permissions between each pair of chat controls.
 To learn more about chat permissions, muting and how to build common chat scenario, please refer to the
 [chat permission overview](concepts-chat-permissions-and-muting.md) page.
 
 ## Text chat and translation
 
-PlayFab Party also allows you to send and receive text chat from other chat controls. While the `PartyLocalChatControl::SendText()`
+Party also allows you to send and receive text chat from other chat controls. While the `PartyLocalChatControl::SendText()`
 method will allow you to send text messages to an arbitrary number of chat controls, you can rest assured that only the
 chat controls with the appropriate `PartyChatPermissionOptions::ReceiveText` chat permission receive the messages.
 
 Text chat translation can also be enabled by calling `PartyLocalChatControl::SetTextChatOptions()`. By setting the
-`PartyTextChatOptions::TranslateToLocalLanguage` option PlayFab Party will translate incoming text message to the local
+`PartyTextChatOptions::TranslateToLocalLanguage` option Party will translate incoming text message to the local
 chat control's language. The chat control's language can optionally be configured during chat control creation and can be
 accessed by calling `PartyLocalChatControl::GetLanguage()`. Translation will also be applied to incoming speech-to-text transcription.
 
-## Accessible Chat
+## Accessible chat
 
-Powered by Azure Speech Services, PlayFab Party can transcribe player voice chat and synthesize speech from text.
+Powered by Azure Speech Services, Party can transcribe player voice chat and synthesize speech from text.
 This functionality has several uses but was primarily designed as an accessibility aide. We recommend tying activation
 of this capability to an ease-of-access player setting. For more guidance on how to use the accessibility features provided
-by PlayFab Party, please refer to the [text-to-speech guideline](party-text-to-speech-ux-guidelines.md) and the [speech-to-text guideline](party-speech-to-text-ux-guidelines.md).
+by Party, see [text-to-speech guidelines](party-text-to-speech-ux-guidelines.md) and the [speech-to-text guidelines](party-speech-to-text-ux-guidelines.md).
 
 ## Next steps
 - [Find out more about PlayFab Party chat permissions and muting](concepts-chat-permissions-and-muting.md)
