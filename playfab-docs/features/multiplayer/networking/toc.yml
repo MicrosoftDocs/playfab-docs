@@ -331,7 +331,6 @@
             href: reference/classes/PartyAudioManipulationSinkStream/methods/partyaudiomanipulationsinkstream_setcustomcontext.md
       - name: PartyAudioManipulationSourceStream
         href: reference/classes/PartyAudioManipulationSourceStream/partyaudiomanipulationsourcestream.md
-      items:
       - name: Methods
         items:
         - name: GetConfiguration
