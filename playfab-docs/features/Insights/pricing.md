@@ -22,6 +22,7 @@ Each title is set to a chosen performance level that is billed to the minute (In
 > [!IMPORTANT] 
 > All MAU-based pricing plans will be converted to a usage-based pricing plan on 11/01/2020. As part of the transition, a small number of titles will be placed on a paid Insights Performance level to maintain their current functionality. However, if a title would like to reduce the performance level (and thus cost) while also accepting a decrease in performance, the performance level can be adjusted on the Insights Management page in Game Manager using the above table. 
 
+
 ## Retention
 Data retention is billed in Terabyte months. Every day the end of day storage size is recorded and averaged over the month. Each terabyte is billed at 50 credits per terabyte month. For example, if a studio stored 1 terabyte of data every day for a month, the total would be 1 TB/Month * 50 Credits = 50 Credits.
 
