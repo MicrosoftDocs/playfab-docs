@@ -1,5 +1,5 @@
 ---
-title: Multiplayer experiences in Xbox Live games
+title: Xbox Live Free Program FAQ
 author: joannaleecy
 description: Xbox Live Free Program FAQ
 ms.author: joanlee

@@ -1,7 +1,7 @@
 ---
-title: Quickstart for PlayFab Party
+title: Party SDK quickstart
 author: debhaldarMS
-description: Guide to help you integrate PlayFab Party in your Game.
+description: Guide to help you integrate PlayFab Party SDK in your Game.
 ms.author: debh
 ms.date: 08/05/2019
 ms.topic: article
@@ -10,7 +10,7 @@ keywords: playfab, multiplayer, party, networking, communication
 ms.localizationpriority: medium
 ---
 
-# Getting started with the Party SDK
+# Party SDK quickstart
 
 This quickstart is intended to be a high-level overview of PlayFab Party's core features. PlayFab Party was designed to be cross-platform from the ground up. We've structured these quickstarts in the same way, where most of the information applies to all platforms, and platform-specific prerequisites and steps are described in the linked documents.
 

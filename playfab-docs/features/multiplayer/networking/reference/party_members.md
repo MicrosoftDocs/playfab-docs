@@ -8,7 +8,7 @@ ms.prod: playfab
 ms.date: 08/05/2020
 ---
 
-# Party members  
+# Party C/C++ API overview  
 
   
 ## Classes  
