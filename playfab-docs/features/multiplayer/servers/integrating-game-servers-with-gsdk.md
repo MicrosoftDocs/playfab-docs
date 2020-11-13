@@ -18,7 +18,7 @@ The PlayFab Game Server SDK (GSDK) is provided in C++, C#, and Java versions. Th
 
 ## Basic integration
 
-For your game server to be able to communicate with the PlayFab multiplayer platform, you need to integrate with the GSDK. At a minimum, you should implement the `Start` and `ReadyForPlayers` methods in your game server.
+For your game server to be able to communicate with the PlayFab multiplayer platform, you need to integrate with the GSDK. At a minimum, you must implement the `Start` and `ReadyForPlayers` methods in your game server.
 
 ### C++
 
