@@ -72,7 +72,7 @@ Get started with the PlayFab REST API collection for Postman. Follow steps to in
   | EntityToken |                |               |
 
 > [!NOTE]
-> You can learn more about title secret keys and where to find them in the [Secret Key Management](https://docs.microsoft.com/gaming/playfab/features/config/gamemanager/secret-key-management) documentation.
+> You can learn more about title secret keys and where to find them in the [Secret Key Management](https://docs.microsoft.com/gaming/playfab/gamemanager/secret-key-management) documentation.
 
   > [!div class="mx-imgBorder"]
   > ![Postman Create Environment](./media/tutorials/postman-new-create-environment.png "Postman Create Environment")
