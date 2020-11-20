@@ -14,6 +14,25 @@ ms.localizationpriority: medium
 > [!Note]
 > For release notes about service releases and product updates, see the [release notes](https://github.com/PlayFab/PlayFab/releases) section on [PlayFab's public GitHub repository](https://github.com/PlayFab/PlayFab)
 
+
+## 201119
+
+Date: 2020-11-19
+
+### [PostmanCollection](https://github.com/PlayFab/PostmanCollection) specific changes
+
+ * Added an auto-login for Title Entity, when appropriate
+
+### [UnitySDK](https://github.com/PlayFab/UnitySDK) specific changes
+
+ * Fixed a spammy log for Unity 2020
+ * Unity 2020 fully supported now
+
+### [XPlat C++ SDK](https://github.com/PlayFab/XPlatCppSdk) specific changes
+
+ * Fixed QoS search response when all servers time-out.
+
+
 ## 201027
 
 Date: 2020-10-27
