@@ -22,7 +22,7 @@ Enable the feature by selecting the **Multiplayer** tab in **Game Manager**:
 
 ![Game Manager - Multiplayer - Thunderhead Enable](media/tutorials/game-manager-thunderhead-enable.png)
 
-## Download and build the GDSK sample
+## Download and build the GSDK sample
 
 Multiplayer servers work through a special state machine, by integrating with the PlayFab Game Server SDK (GSDK) (see [Basics of a PlayFab game server](basics-of-a-playfab-game-server.md)).
 
