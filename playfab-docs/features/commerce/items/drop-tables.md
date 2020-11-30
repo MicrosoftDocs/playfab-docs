@@ -197,7 +197,7 @@ The **Bundle** that we've created for this example uses several features:
 - A **Bundle** counts as its own Item, and its contents are delivered at the same time it is granted. For this reason, we're making the **Bundle** itself consumable, and it expires 15 seconds after delivery.
 - We add different **Drop tables** in different quantities to ensure that **11 Items** are delivered, but different items roll on different tables.
   - First, we guarantee at least **1 legendary item**, so the first slot will roll on **Legendary Equipment**.
-  - The next 3 slots roll on **Anything**, which can roll additional **Legendaries**, or roll crappy common equipment. These rolls will define a *good* roll vs. a *bad* one, as these 3 items can vary widely.
+  - The next 3 slots roll on **Anything**, which can roll additional **Legendaries**, or roll less desirable, common equipment. These rolls will define a *good* roll vs. a *bad* one, as these 3 items can vary widely.
   - Finally, we fill in the remaining slots with guaranteed **Rares** and **Uncommons**, ensuring that an **11 Item** roll is not *too* good or bad.
 
 ## Conclusion
