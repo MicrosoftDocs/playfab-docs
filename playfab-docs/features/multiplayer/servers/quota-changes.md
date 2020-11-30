@@ -23,7 +23,7 @@ To request additional quota, access the **Change Quota** button on the **Multipl
 
 ![Quota Summary](media/quota-summary-header.png)
 
-### How to reqeust quota changes
+### How to request quota changes
 
 1. Briefly describe the change requests.  Examples include the name of your launch, event name or title game mode.
 2. Select the **+ Add change** button to request a quota change as shown in the screenshot below.  Quota changes may include 1 or more changes to a VM family and region combination.  Only VM family SKUs and regions permitted in your pricing plan will surface in the options to choose from.
