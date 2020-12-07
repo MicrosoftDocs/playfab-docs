@@ -51,4 +51,4 @@ The port requirements provided through Game Manager or the Entity API CreateBuil
 
 ## Public Internet-facing ports and IP addresses used by multiplayer servers
 
-The IP addresses used by the multiplayer VMs are drawn from the general pool of IP addresses used by Azure VMs. For information on Azure IP address ranges, see [Azure IP Ranges and Service Tags – Public Cloud]( https://www.microsoft.com/download/details.aspx?id=56519). All VMs use a port range of 30000-31000.
+The IP addresses used by the multiplayer VMs are drawn from the general pool of IP addresses used by Azure VMs. These IPs are specified as the AzureCloud service tag. See [service tags on-premises](https://docs.microsoft.com/en-us/azure/virtual-network/service-tags-overview#service-tags-on-premises) for more information. All VMs use a port range of 30000-31000 for game traffic and 50000-55000 for remote access (SSH/RDP) traffic.
