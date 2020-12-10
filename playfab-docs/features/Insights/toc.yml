@@ -4,8 +4,8 @@
   href: overview.md
 - name: Connectivity
   href: connectivity/toc.yml
-- name: Explorer
-  href: explorer/toc.yml
+- name: Data Explorer
+  href: data-explorer/toc.yml
 - name: Schemas
   href: schemas/toc.yml
 - name: Performance Levels and Retention
