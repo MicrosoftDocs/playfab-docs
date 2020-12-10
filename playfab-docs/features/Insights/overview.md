@@ -55,8 +55,7 @@ PlayFab Insights is available to all studios right out of the box. The only thin
 ## What Services are Powered by Insights?
 PlayFab Insights powers a variety of features and functionality across Game Manager. Adjusting the performance level will affect the following across your title:
 * Data
-  * Event History
-  * Explorer (Preview)
+  * Data Explorer (Preview)
   * Event Export
   * Management (Preview)
 * Dashboards

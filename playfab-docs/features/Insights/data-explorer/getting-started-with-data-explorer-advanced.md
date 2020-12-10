@@ -1,7 +1,7 @@
 ---
-title: Getting started with Explorer Advanced
+title: Getting started with Data Explorer advanced mode
 author: nathankong-microsoft
-description: Illustrates how to use Explorer Advanced to write queries.
+description: Illustrates how to use Data Explorer advanced mode to write queries.
 ms.author: nakong
 ms.date: 09/22/2020
 ms.topic: article
@@ -10,18 +10,18 @@ keywords: playfab, insights, explorer, advanced
 ms.localizationpriority: medium
 ---
 
-# Getting started with Explorer Advanced
+# Getting started with Data Explorer advanced mode
 
 >[!IMPORTANT] 
->The Explorer Feature is in public preview. We anticipate ongoing changes to it as we continue gathering feedback 
+>The Data Explorer feature is in public preview. We anticipate ongoing changes to it as we continue gathering feedback 
 and optimizing for customer use.
 
-Explorer Advanced is designed for more complex queries and deeper insights using the [Azure Data Explorer query language]
-(https://docs.microsoft.com/azure/data-explorer/write-queries) – a SQL-like language optimized for ad hoc data exploration. To learn how to write non-technical queries, see the [Getting Started with Explorer Basic](getting-started-with-playfab-explorer-basic.md) tutorial.
+Data Explorer advanced mode is designed for more complex queries and deeper insights using the [Azure Data Explorer query language]
+(https://docs.microsoft.com/azure/data-explorer/write-queries) – a SQL-like language optimized for ad hoc data exploration. To learn how to write non-technical queries, see the [Getting Started with Data Explorer basic mode](getting-started-with-data-explorer-basic.md) tutorial.
 
 ## Authoring custom queries
 
-To begin authoring your own queries in Advanced mode, it's important to first understand the shape of the data you're accessing.
+To begin authoring your own queries in advanced mode, it's important to first understand the shape of the data you're accessing.
 
 ### The events.all table
 
@@ -153,4 +153,4 @@ There are two limits which govern Explorer query usage:
 
 ## Data Retention
 
-By default, Explorer queries run on hot storage, which can be configured in the Management tool. Queries that search beyond the data stored in hot storage will have significantly longer run times and may time out.
+By default, Data Explorer queries run on hot storage, which can be configured in the Management tool. Queries that search beyond the data stored in hot storage will have significantly longer run times and may time out.
