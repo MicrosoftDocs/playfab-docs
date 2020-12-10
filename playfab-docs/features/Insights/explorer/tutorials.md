@@ -1,18 +1,18 @@
 ---
 title: Explorer tutorials
 author: nathankong-microsoft
-description: The Explorer tutorials.
+description: The Data Explorer tutorials.
 ms.author: nakong
 ms.date: 09/23/2020    
 ms.topic: article
 ms.prod: playfab
-keywords: playfab, insights, explorer
+keywords: playfab, insights, data explorer
 ms.localizationpriority: medium
 ---
 
-# Explorer Tutorials
+# Data Explorer Tutorials
 
-These tutorials teach you how to use Explorer.
+These tutorials teach you how to use Data Explorer.
 
-- [Getting started with Explorer Basic](getting-started-with-playfab-explorer-basic.md)
-- [Getting started with Explorer Advanced](getting-started-with-playfab-explorer-advanced.md)
+- [Getting started with Data Explorer basic mode](getting-started-with-data-explorer-basic.md)
+- [Getting started with Data Explorer advanced mode](getting-started-with-data-explorer-advanced.md)
