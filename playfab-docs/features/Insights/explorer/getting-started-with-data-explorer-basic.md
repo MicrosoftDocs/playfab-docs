@@ -47,10 +47,10 @@ The graph shows the results for the largest 5 groups. You can see the other grou
 The table shows the Event Name, Timestamp (UTC), Player ID, and Event Data (via JSON) for reach row.
 
 ## Sample Queries
-Example queries can be loaded from the Explorer page by selecting “What’s This”.
+Example queries can be loaded from the Data Explorer page by selecting “What’s This”.
 
 ## Limits
-There are two limits which govern Explorer query usage:
+There are two limits which govern Data Explorer query usage:
  
 1. Max query runtime: An individual query is not permitted to run longer than 30 seconds. If this limit is exceeded, the query will be terminated and you will receive an error message.
 
