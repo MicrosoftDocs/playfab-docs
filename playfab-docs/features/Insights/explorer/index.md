@@ -1,24 +1,24 @@
 ---
-title: Explorer
+title: Data Explorer
 author: nathankong-microsoft
-description: Overview for PlayFab Explorer
+description: Overview for Data Explorer
 ms.author: nakong
 ms.date: 09/22/2020    
 ms.topic: article
 ms.prod: playfab
-keywords: playfab, insights, explorer
+keywords: playfab, insights, data explorer
 ms.localizationpriority: medium
 ---
 
-# PlayFab Explorer
+# Data Explorer
 
 ## Overview
 
-The PlayFab Explorer is the primary window into event data collected by your title and services. The data is stored in PlayFab Insights, an in-development offering designed to provide a complete back-end solution for data and analytics. For more information on the PlayFab Insights vision and strategy, see our [webinar](https://www.youtube.com/channel/UCaCZHrQg_-qPrYIVsTFuUHg). 
+Data Explorer is the primary window into event data collected by your title and services. The data is stored in PlayFab Insights, an in-development offering designed to provide a complete back-end solution for data and analytics. For more information on the PlayFab Insights vision and strategy, see our [webinar](https://www.youtube.com/channel/UCaCZHrQg_-qPrYIVsTFuUHg). 
 
-Explorer provides fast indexing and querying on large, diverse data sets. For optimized queries, the engine can query millions of records in a few seconds - a critical capability for games producing high throughput or large volumes of gaming events.
+This feature provides fast indexing and querying on large, diverse data sets. For optimized queries, the engine can query millions of records in a few seconds - a critical capability for games producing high throughput or large volumes of gaming events.
 
-Explorer has two different querying modes - Basic and Advanced. Explorer Basic is designed to let you quickly discover insights in your event data without requiring query language knowledge. Explorer Advanced is designed for more complex queries and deeper insights using the [Kusto query language](https://docs.microsoft.com/azure/data-explorer/kusto/query) – a SQL-like language optimized for ad hoc data exploration. 
+Data Explorer has two different querying modes - basic and advanced. Basic mode is designed to let you quickly discover insights in your event data without requiring query language knowledge. Advanced mode is designed for more complex queries and deeper insights using the [Kusto query language](https://docs.microsoft.com/azure/data-explorer/kusto/query) – a SQL-like language optimized for ad hoc data exploration. 
 
 Explorer Advanced uses a simplified SQL-like language that's easy to pick up and learn. The [intellisense](https://docs.microsoft.com/azure/data-explorer/write-queries) capabilities make it possible for users of all skill levels to author complex queries and [render](https://docs.microsoft.com/azure/kusto/query/renderoperator) the results in-line.
 
