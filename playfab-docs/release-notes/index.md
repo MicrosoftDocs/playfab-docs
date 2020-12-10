@@ -14,6 +14,16 @@ ms.localizationpriority: medium
 > [!Note]
 > For release notes about service releases and product updates, see the [release notes](https://github.com/PlayFab/PlayFab/releases) section on [PlayFab's public GitHub repository](https://github.com/PlayFab/PlayFab)
 
+## 201207
+
+Date: 2020-12-07
+
+Supports the [December 2nd PlayFab service release](https://github.com/PlayFab/PlayFab/releases/tag/2.5.7)
+
+
+### [UnrealMarketplacePlugin](https://www.unrealengine.com/marketplace/en-US/product/playfab-sdk) specific changes
+
+ * Fixed static settings issues. Please follow the [new upgrade guide](https://github.com/PlayFab/UnrealMarketplacePlugin/blob/master/UpgradeGuide_201207.md).
 
 ## 201119
 
