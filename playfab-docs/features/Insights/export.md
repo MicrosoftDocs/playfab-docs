@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 # Exporting Data
 Event Export is the primary mechanism for exporting data from your Insights data cluster without querying. Event Export can be reached under the data section of PlayFab Game Manager. The amount of distinct export commands you can run is tied to your performance level. 
 
-![Insights Schedule](media/export-modified.png)
+![Insights Schedule](data-explorer/media/export-modified.png)
 
 To create a new export:
 1. Navigate to the Event Export page.

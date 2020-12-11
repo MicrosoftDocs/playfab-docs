@@ -16,8 +16,7 @@ ms.localizationpriority: medium
 >The Data Explorer feature is in public preview. We anticipate ongoing changes to it as we continue gathering feedback 
 and optimizing for customer use.
 
-Data Explorer advanced mode is designed for more complex queries and deeper insights using the [Azure Data Explorer query language]
-(https://docs.microsoft.com/azure/data-explorer/write-queries) – a SQL-like language optimized for ad hoc data exploration. To learn how to write non-technical queries, see the [Getting Started with Data Explorer basic mode](getting-started-with-data-explorer-basic.md) tutorial.
+Data Explorer advanced mode is designed for more complex queries and deeper insights using the [Azure Data Explorer query language](https://docs.microsoft.com/azure/data-explorer/write-queries) – a SQL-like language optimized for ad hoc data exploration. To learn how to write non-technical queries, see the [Getting Started with Data Explorer basic mode](getting-started-with-data-explorer-basic.md) tutorial.
 
 ## Authoring custom queries
 
