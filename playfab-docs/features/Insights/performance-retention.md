@@ -14,7 +14,7 @@ PlayFab Insights provides studios the ability to change the performance characte
 
 ## Performance Levels
 Use the **Performance Level** slider to select a new performance level. The Performance Level Settings table shows a comparison of your currently settings versus the new settings you selected:
-![Insights Slider](media/performance-level2.png)
+![Insights Slider](data-explorer/media/performance-level2.png)
 
 ### *Cache Size*
 PlayFab Insights uses a specialized variation of Azure Data Explorer (Kusto). Insights separates storage into two categories: Hot Cache and Storage. Hot Cache is memory and SSD storage and is extremely fast to query. Complex queries and data functions are executed quickly when all data is readily accessible in the hot cache. Data stored outside the hot cache in storage is still easily accessible and can be queried, but query times may slow down with large datasets in storage. Data is separated by ingestion time, the most recent data stored first in hot storage. Data storage is an entirely internal process to Insights and data is accessed in the same manner no matter where its stored. 
