@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 # Insights Scheduled Scaling
 The Insights Performance Level can be set to scale up and down at specific times of the day. This allows a studio to match their analytics resources demand to their supply and optimize costs. Scheduled Tasks can be found under automation in Game Manager. It can also be reached by clicking the *Add Insights scaling scheduled task* button in Insights Management. 
 <br>
-![Insights Schedule](media/insights-schedule.png)
+![Insights Schedule](data-explorer/media/insights-schedule.png)
 
 
 To create a task for scaling your cluster:
