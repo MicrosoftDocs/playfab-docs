@@ -63,7 +63,7 @@ Event Archives allow customers to export all or some of their data on a regular 
 Insights is billed per minute at the credits per hour rate (Credits Per Hour / 60). For more information about Insights Credit Pricing, see [PlayFab Pricing](https://playfab.com/pricing/).
 
 ## Retention
-![Insights Retention](media/insights-retention.png)
+![Insights Retention](data-explorer/media/insights-retention.png)
 
 
 The retention setting allows a studio to set the total number of days data is kept. The default setting is 30 days, this guarantees GDPR compliance. Retention can be set globally or by table using [Management Commands](https://review.docs.microsoft.com/gaming/playfab/features/insights/data-explorer/management-commands?branch=managementcommands). Retention is charged at a rate of 50 credits per terabyte month, studios are only charged for what is in use by day. For more information about Insights Credit Pricing, see [Insights Credit Pricing](https://playfab.com/pricing/).
