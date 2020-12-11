@@ -56,20 +56,20 @@ landingContent:
           - text: Manage Your Insights Environment With Insights Management Commands
             url: management-commands.md  
 
-  - title: Explorer
+  - title: Data Explorer
     linkLists:
       - linkListType: overview
         links:
           - text: Overview
-            url: explorer/index.md
+            url: data-explorer/index.md
       - linkListType: quickstart
         links:
-          - text: Explorer Quickstart 
-            url: explorer/quickstart.md               
+          - text: Data Explorer Quickstart 
+            url: data-explorer/quickstart.md               
       - linkListType: tutorial
         links:
-          - text: Getting started with PlayFab Explorer
-            url: explorer/getting-started-with-playfab-explorer-basic.md
+          - text: Getting started with Data Explorer
+            url: data-explorer/getting-started-with-data-explorer-basic.md
 
   # Card
   - title: Schemas

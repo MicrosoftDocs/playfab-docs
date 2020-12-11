@@ -14,7 +14,7 @@ PlayFab Insights provides studios the ability to change the performance characte
 
 ## Performance Levels
 Use the **Performance Level** slider to select a new performance level. The Performance Level Settings table shows a comparison of your currently settings versus the new settings you selected:
-![Insights Slider](media/performance-level2.png)
+![Insights Slider](data-explorer/media/performance-level2.png)
 
 ### *Cache Size*
 PlayFab Insights uses a specialized variation of Azure Data Explorer (Kusto). Insights separates storage into two categories: Hot Cache and Storage. Hot Cache is memory and SSD storage and is extremely fast to query. Complex queries and data functions are executed quickly when all data is readily accessible in the hot cache. Data stored outside the hot cache in storage is still easily accessible and can be queried, but query times may slow down with large datasets in storage. Data is separated by ingestion time, the most recent data stored first in hot storage. Data storage is an entirely internal process to Insights and data is accessed in the same manner no matter where its stored. 
@@ -63,10 +63,10 @@ Event Archives allow customers to export all or some of their data on a regular 
 Insights is billed per minute at the credits per hour rate (Credits Per Hour / 60). For more information about Insights Credit Pricing, see [PlayFab Pricing](https://playfab.com/pricing/).
 
 ## Retention
-![Insights Retention](media/insights-retention.png)
+![Insights Retention](data-explorer/media/insights-retention.png)
 
 
-The retention setting allows a studio to set the total number of days data is kept. The default setting is 30 days, this guarantees GDPR compliance. Retention can be set globally or by table using [Management Commands](https://review.docs.microsoft.com/gaming/playfab/features/insights/explorer/management-commands?branch=managementcommands). Retention is charged at a rate of 50 credits per terabyte month, studios are only charged for what is in use by day. For more information about Insights Credit Pricing, see [Insights Credit Pricing](https://playfab.com/pricing/).
+The retention setting allows a studio to set the total number of days data is kept. The default setting is 30 days, this guarantees GDPR compliance. Retention can be set globally or by table using [Management Commands](https://review.docs.microsoft.com/gaming/playfab/features/insights/data-explorer/management-commands?branch=managementcommands). Retention is charged at a rate of 50 credits per terabyte month, studios are only charged for what is in use by day. For more information about Insights Credit Pricing, see [Insights Credit Pricing](https://playfab.com/pricing/).
 
 **Example**
 A studio has 10 terabytes of data stored at the beginning of the month and does not increase that storage. The total cost would be 500 (10 TB * 50 credits/TB) Credits. 

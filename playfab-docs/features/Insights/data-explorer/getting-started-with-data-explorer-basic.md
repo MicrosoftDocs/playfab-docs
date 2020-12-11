@@ -1,26 +1,26 @@
 ---
-title: Getting started with Explorer Basic
+title: Getting started with Data Explorer basic mode
 author: nathankong-microsoft
-description: Illustrates how to use Explorer Basic to create queries.
+description: Illustrates how to use Data Explorer basic mode to create queries.
 ms.author: nakong
 ms.date: 09/22/2020
 ms.topic: article
 ms.prod: playfab
-keywords: playfab, insights, explorer, basic
+keywords: playfab, insights, data explorer, basic
 ms.localizationpriority: medium
 ---
 
-# Getting started with Explorer Basic
+# Getting started with Data Explorer basic mode
 
 >[! IMPORTANT] 
->The Explorer Feature is in public preview. We anticipate ongoing changes to it as we continue gathering feedback 
+>The Data Explorer feature is in public preview. We anticipate ongoing changes to it as we continue gathering feedback 
 and optimizing for customer use.
 
-Explorer Basic is designed to let you quickly discover insights in your event data without requiring query language knowledge. This non-technical query building experience enables users to explore their data quickly. To learn how to write more complex queries, see the [Getting Started with Explorer Advanced](getting-started-with-playfab-explorer-advanced.md) tutorial.
+Data Explorer basic mode is designed to let you quickly discover insights in your event data without requiring query language knowledge. This non-technical query building experience enables users to explore their data quickly. To learn how to write more complex queries, see the [Getting Started with Data Explorer Advanced](getting-started-with-data-explorer-advanced.md) tutorial.
 
 ## Authoring custom queries
 
-To begin authoring your own queries in Basic mode, it's important to first understand the shape of the data you're accessing.
+To begin authoring your own queries in basic mode, it's important to first understand the shape of the data you're accessing.
 
 ### The events.all table
 
@@ -47,10 +47,10 @@ The graph shows the results for the largest 5 groups. You can see the other grou
 The table shows the Event Name, Timestamp (UTC), Player ID, and Event Data (via JSON) for reach row.
 
 ## Sample Queries
-Example queries can be loaded from the Explorer page by selecting “What’s This”.
+Example queries can be loaded from the Data Explorer page by selecting “What’s This”.
 
 ## Limits
-There are two limits which govern Explorer query usage:
+There are two limits which govern Data Explorer query usage:
  
 1. Max query runtime: An individual query is not permitted to run longer than 30 seconds. If this limit is exceeded, the query will be terminated and you will receive an error message.
 
