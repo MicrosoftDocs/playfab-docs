@@ -21,7 +21,7 @@ Below are the limits per PlayFab resource. All tiers share the same limits, thou
 ### Economy
 
 | Resource | Unit | Limit |
-| --- | --- | --- | --- |
+| --- | --- | --- |
 | CatalogItemCount | items | 3,000 |
 | VirtualCurrencyCount | virtual currencies | 10 |
 | PlayerInventoryItemCount | items | 1,500 |
@@ -31,28 +31,28 @@ Below are the limits per PlayFab resource. All tiers share the same limits, thou
 
 ### Statistics
 | Resource | Unit | Limit |
-| --- | --- | --- | --- |
+| --- | --- | --- |
 | PlayerStatisticDefinitionsCount | statistic names | 300 |
 
 ### Leaderboards
 | Resource | Unit | Limit |
-| --- | --- | --- | --- |
+| --- | --- | --- |
 | LeaderboardVersionHistoryRetentionLength | previous leaderboard versions | 1 |
 | LeaderboardVersionChangeTopRankEventsSent | prize table ranks | 1,000 |
 
 ### Promotions
 | Resource | Unit | Limit |
-| --- | --- | --- | --- |
+| --- | --- | --- |
 | NewsItemCount | items | 10 |
 
 ### Email Templates
 | Resource | Unit | Limit |
-| --- | --- | --- | --- |
+| --- | --- | --- |
 | EmailTemplateCount | templates | 100 |
 
 ### Cloud Script
 | Resource | Unit | Limit |
-| --- | --- | --- | --- |
+| --- | --- | --- |
 | ScriptExecutionTime | Seconds | 10 |
 | ScriptExecutionAPIRequestsIssued | Count | 25 |
 | ScriptFileSize | Bytes | 1,000,000 |
@@ -60,7 +60,7 @@ Below are the limits per PlayFab resource. All tiers share the same limits, thou
 
 ### Game Servers
 | Resource | Unit | Limit |
-| --- | --- | --- | --- |
+| --- | --- | --- |
 | BuildCount | Count | 100 |
 | BuildSize | Bytes | 5,000,000,000 |
 | RunningHostedServerCount | server hosts | 100 |
@@ -68,7 +68,7 @@ Below are the limits per PlayFab resource. All tiers share the same limits, thou
 
 ### PlayStream
 | Resource | Unit | Limit |
-| --- | --- | --- | --- |
+| --- | --- | --- |
 | PlayerSegmentCount | player segments | 100 |
 | ActionTriggerCount | action triggers | 100 |
 | JobCount | tasks | 25 |
@@ -86,7 +86,7 @@ Below are the limits per PlayFab resource. All tiers share the same limits, thou
 
 ### Data Storage
 | Resource | Unit | Limit |
-| --- | --- | --- | --- |
+| --- | --- | --- |
 | UserDataUpdateKeysCount | items | 10 |
 | UserDataIndividualValueSize | Bytes | 300,000 |
 | UserDataValueUpdatesPer15Seconds | update operations | 10 |
@@ -133,23 +133,23 @@ Below are the limits per PlayFab resource. All tiers share the same limits, thou
 
 ### Add-Ons
 | Resource | Unit | Limit |
-| --- | --- | --- | --- |
+| --- | --- | --- |
 | CommunitySiftDisplayNameUsage | profanity checks | 500 |
 
 ### Title Services
 | Resource | Unit | Limit |
-| --- | --- | --- | --- |
+| --- | --- | --- |
 | SecretKeyCount | secret keys | 5 |
 
 ### Groups
 | Resource | Unit | Limit |
-| --- | --- | --- | --- |
+| --- | --- | --- |
 | GroupMemberCount | members | 1,000 |
 | GroupRoleCount | roles | 10 |
 
 ### Matchmaking
 | Resource | Unit | Limit |
-| --- | --- | --- | --- |
+| --- | --- | --- |
 | TicketMembershipsPerMinute | requests | 5 |
 | TicketGetsPerMinute | requests | 6 |
 | ListTicketsForPlayerPerMinute | requests | 3 |
