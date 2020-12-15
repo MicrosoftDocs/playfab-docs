@@ -32,11 +32,12 @@ By default, the Client API may only fetch the display name from another player p
 
 Navigate to your title Game Manager:
 
-1. Select **Settings** in the menu to the left.
-2. Then select the **Client Profile Options** tab.
-3. Verify that the **DisplayName** is selected.
-4. Make sure that the **Avatar URL** is selected.
-5. Submit your changes by selecting the **Save Client Profile Options** button.
+1. Select the **Settings** icon in the menu to the left.
+2. Select **Title settings**
+3. Then select the **Client Profile Options** tab.
+4. Verify that the **DisplayName** is selected.
+5. Make sure that the **Avatar URL** is selected.
+6. Submit your changes by selecting the **Save Client Profile Options** button.
 
 ![Game Manager - Settings - Client Profile Options](media/tutorials/game-manager-settings-client-profile-options.png)  
 
