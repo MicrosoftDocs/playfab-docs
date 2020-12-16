@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 PlayFab's multiplayer server hosting service allows you to operate a dynamically scaling pool of custom game servers in Azure.
 
-All PlayFab indie, pro, and enterprise tier customers can access the service and use a limited, free quota of multiplayer servers for product evaluation and testing. 
+All PlayFab customers can access the service and use a limited, free quota of multiplayer servers for product evaluation and testing. 
 
 There are three key concepts to PlayFab multiplayer servers:
 
