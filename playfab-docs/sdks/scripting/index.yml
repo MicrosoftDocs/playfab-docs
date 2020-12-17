@@ -43,6 +43,20 @@ landingContent:
             url: ../javascript/quickstart.md
 
   # Card
+  - title: Lua
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Lua
+            url: ../lua/index.md
+      - linkListType: quickstart
+        links:
+          - text: Quickstart - Corona
+            url: ../lua/quickstart-corona.md
+          - text: Quickstart - Defold
+            url: ../lua/quickstart-corona.md
+
+  # Card
   - title: NodeJS
     linkLists:
       - linkListType: overview

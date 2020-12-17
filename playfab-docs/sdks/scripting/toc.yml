@@ -8,6 +8,13 @@
   items:
   - name: Quickstart
     href: ../javascript/quickstart.md
+- name:  Lua
+  href: ../lua/index.md
+  items:
+  - name: Quickstart - Corona
+    href: ../lua/quickstart-corona.md
+  - name: Quickstart - Defold
+    href: ../lua/quickstart-defold.md
 - name: NodeJS
   href: ../nodejs/index.md
   items:
