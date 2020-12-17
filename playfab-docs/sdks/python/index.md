@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 >[!Important]
 >This is a community supported SDK. Information on this page is no longer maintained and updated.
 
-To learn how you can contribute and provide support for this SDK, refer to the ReadMe at [PlayFab ActionScript SDK repo](https://github.com/PlayFab/ActionScriptSDK).
+To learn how you can contribute and provide support for this SDK, refer to the ReadMe at [PlayFab Python SDK repo](https://github.com/PlayFab/PythonSdk).
 
 The team at Microsoft would no longer be providing official support for those using this SDK. You can continue to get community support and updates at [PlayFab forums](https://community.playfab.com/index.html).
 

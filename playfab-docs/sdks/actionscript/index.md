@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 >[!Important]
 >The PlayFab ActionScript SDK has been deprecated. Information on this page is no longer maintained and updated. 
 
-Adobe has ended support for Adobe Flash and has been completely removed from common browsers. For more information, see [Adobe Flash Player End of Life General Info (external site)](https://www.adobe.com/products/flashplayer/end-of-life.html).
+Adobe ended support for Adobe Flash Player and has been completely removed from common browsers. For more information, see [Adobe Flash Player End of Life General Info (external site)](https://www.adobe.com/products/flashplayer/end-of-life.html).
 
 Our ActionScript SDK provides everything you need to access the PlayFab API. This includes models, methods, and an HTTP wrapper for sending and receiving web requests and JSON serialization.
 
