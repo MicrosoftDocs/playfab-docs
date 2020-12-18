@@ -18,20 +18,6 @@ metadata:
 landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
-  # Card (optional)
-  - title: Lua
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Lua
-            url: ../lua/index.md
-      - linkListType: quickstart
-        links:
-          - text: Quickstart - Corona
-            url: ../lua/quickstart-corona.md
-          - text: Quickstart - Defold
-            url: ../lua/quickstart-corona.md
-
   # Card
   - title: Unity3D
     linkLists:
