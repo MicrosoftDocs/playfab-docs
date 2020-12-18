@@ -1,10 +1,3 @@
-- name:  Lua
-  href: ../lua/index.md
-  items:
-  - name: Quickstart - Corona
-    href: ../lua/quickstart-corona.md
-  - name: Quickstart - Defold
-    href: ../lua/quickstart-defold.md
 - name:  Unity3D
   href: ../unity3d/index.md
   items:

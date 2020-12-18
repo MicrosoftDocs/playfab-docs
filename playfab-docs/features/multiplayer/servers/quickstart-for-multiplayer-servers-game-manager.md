@@ -16,7 +16,7 @@ This tutorial shows you how to upload a sample multiplayer server and configure 
 
 ## Enable Multiplayer Servers 2.0
 
-**Multiplayer Servers 2.0** is available to PlayFab indie, pro, and enterprise-tier customers. If your title does not have access but you are interested in evaluating the service, please email [sales@PlayFab.com](mailto:sales@playfab.com).
+**Multiplayer Servers 2.0** is available to all PlayFab customers. Make sure to review the [information on server hosting](https://docs.microsoft.com/gaming/playfab/features/multiplayer/servers/billing-for-thunderhead) before enabling this feature, as all usage of servers beyond the limited free hours will be charged at the normal rates. Free usage hours are for specific server models and regions.
 
 Enable the feature by selecting the **Multiplayer** tab in **Game Manager**:
 
