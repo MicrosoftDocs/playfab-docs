@@ -14,6 +14,12 @@ ms.localizationpriority: medium
 > [!Note]
 > For release notes about service releases and product updates, see the [release notes](https://github.com/PlayFab/PlayFab/releases) section on [PlayFab's public GitHub repository](https://github.com/PlayFab/PlayFab)
 
+## 201218
+
+Date: 2020-12-18
+
+ * Minor bug fixes
+
 ## 201207
 
 Date: 2020-12-07
