@@ -50,27 +50,27 @@ The table shows the Event Name, Timestamp (UTC), Player ID, and Event Data (via 
 
 ### Single Condition Queries
 #### What regions are players logging in from this week?
-![Player logins by region this week](data-explorer/media/ExplorerBasic_Query_1.png)
+![Player logins by region this week](media/ExplorerBasic_Query_1.png)
 
 #### What devices are players logging in from this week?
-![Player logins by device this week](data-explorer/media/ExplorerBasic_Query_2.png)
+![Player logins by device this week](media/ExplorerBasic_Query_2.png)
 
 #### What's the sum of order totals this week?
-![Order totals sum this week](data-explorer/media/ExplorerBasic_Query_3.png)
+![Order totals sum this week](media/ExplorerBasic_Query_3.png)
 
 #### Are Playfab limits being exceeded?
-![Title limits exceeded this week](data-explorer/media/ExplorerBasic_Query_4.png)
+![Title limits exceeded this week](media/ExplorerBasic_Query_4.png)
 
 ### Multi Condition Queries
 #### What players and entities are logging in this week?
-![Player or entity logins this week](data-explorer/media/ExplorerBasic_Query_5.png)
+![Player or entity logins this week](media/ExplorerBasic_Query_5.png)
 
 #### What items are being purchased or added to inventory this week?
-![Item purchased or added this week](data-explorer/media/ExplorerBasic_Query_6.png)
+![Item purchased or added this week](media/ExplorerBasic_Query_6.png)
 
 ### Complex Condition Queries with Clauses
 #### How many "sword" items were purchased this week?
-![Sword item purchased this week](data-explorer/media/ExplorerBasic_Query_7.png)
+![Sword item purchased this week](media/ExplorerBasic_Query_7.png)
 
 #### How many items worth between $1 and $5 were purchased this week?
 ![Item value range purchased this week](data-explorer/media/ExplorerBasic_Query_8.png)
