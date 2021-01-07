@@ -73,7 +73,7 @@ The table shows the Event Name, Timestamp (UTC), Player ID, and Event Data (via 
 ![Sword item purchased this week](media/ExplorerBasic_Query_7.png)
 
 #### How many items worth between $1 and $5 were purchased this week?
-![Item value range purchased this week](data-explorer/media/ExplorerBasic_Query_8.png)
+![Item value range purchased this week](media/ExplorerBasic_Query_8.png)
 
 Example queries can be loaded into the Data Explorer basic by selecting “What’s This” and selecting a sample query.
 
