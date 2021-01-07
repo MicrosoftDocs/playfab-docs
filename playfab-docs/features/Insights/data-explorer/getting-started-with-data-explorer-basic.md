@@ -48,12 +48,22 @@ The table shows the Event Name, Timestamp (UTC), Player ID, and Event Data (via 
 
 ## Sample Queries
 
+### Single Condition Queries
 #### What regions are players logging in from this week?
+![Player logins by region this week](data-explorer/media/ExplorerBasic_Query_1.png)
 
 #### What devices are players logging in from this week?
-#### What's the sum of order totals this week?
-#### Are Playfab limits being exceeded?
+![Player logins by device this week](data-explorer/media/ExplorerBasic_Query_2.png)
 
+#### What's the sum of order totals this week?
+![Order totals sum this week](data-explorer/media/ExplorerBasic_Query_3.png)
+
+#### Are Playfab limits being exceeded?
+![Title limits exceeded this week](data-explorer/media/ExplorerBasic_Query_4.png)
+
+### Multi Condition Queries
+
+### Condition Queries with Clauses
 
 Example queries can be loaded from the Data Explorer page by selecting “What’s This”.
 
