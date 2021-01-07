@@ -28,9 +28,9 @@ The `events.all` table is the default destination for all incoming events. It is
 
 ### Query
 
-A query is composed of one or more **Conditions** that are combined via the 'AND' logical operator. A condition is composed of an **Event** from the event.all table.
+A query is composed of one or more **Conditions** that are combined via the 'OR' logical operator. A condition is composed of an **Event** from the event.all table.
 
-Conditions can be specified by adding one or more **Clauses**, which is a logical statement composed of a **Variable**, **Operator**, and **Value**. Clauses are combined via the 'AND' logical operator. The Variables listed in the dropdown are populated based upon the Event selected when creating the Condition.
+Complex conditions can be created by adding one or more **Clauses**, which is a logical statement composed of a **Variable**, **Operator**, and **Value**, to a condition. Clauses are combined via the 'AND' logical operator. The Variables listed in the dropdown are populated based upon the Event selected when creating the Condition.
 
 The timeframe of the query can be adjusted by modifying **Start date** and **End date**.
 
@@ -62,10 +62,20 @@ The table shows the Event Name, Timestamp (UTC), Player ID, and Event Data (via 
 ![Title limits exceeded this week](data-explorer/media/ExplorerBasic_Query_4.png)
 
 ### Multi Condition Queries
+#### What players and entities are logging in this week?
+![Player or entity logins this week](data-explorer/media/ExplorerBasic_Query_5.png)
 
-### Condition Queries with Clauses
+#### What items are being purchased or added to inventory this week?
+![Item purchased or added this week](data-explorer/media/ExplorerBasic_Query_6.png)
 
-Example queries can be loaded from the Data Explorer page by selecting “What’s This”.
+### Complex Condition Queries with Clauses
+#### How many "sword" items were purchased this week?
+![Sword item purchased this week](data-explorer/media/ExplorerBasic_Query_7.png)
+
+#### How many items worth between $1 and $5 were purchased this week?
+![Item value range purchased this week](data-explorer/media/ExplorerBasic_Query_8.png)
+
+Example queries can be loaded into the Data Explorer basic by selecting “What’s This” and selecting a sample query.
 
 ## Limits
 There are two limits which govern Data Explorer query usage:
