@@ -47,6 +47,14 @@ The graph shows the results for the largest 5 groups. You can see the other grou
 The table shows the Event Name, Timestamp (UTC), Player ID, and Event Data (via JSON) for reach row.
 
 ## Sample Queries
+
+#### What regions are players logging in from this week?
+
+#### What devices are players logging in from this week?
+#### What's the sum of order totals this week?
+#### Are Playfab limits being exceeded?
+
+
 Example queries can be loaded from the Data Explorer page by selecting “What’s This”.
 
 ## Limits
