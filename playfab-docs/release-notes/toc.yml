@@ -1,5 +1,7 @@
-- name: 2020 SDK Release Notes
+- name: 2021 SDK Release Notes
   href: ./index.md
+- name: 2020 SDK Release Notes
+  href: ./2020.md
 - name: 2019 SDK Release Notes
   href: ./2019.md
 - name: 2018 SDK Release Notes
