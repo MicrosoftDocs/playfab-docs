@@ -14,6 +14,21 @@ ms.localizationpriority: medium
 
 PlayFab Party had a significant (up to 90%) price drop on 10/13/2020. You can view the updated Party rates on the [Pricing page](https://playfab.com/pricing). For more information about the price drop, see our [blog post](https://blog.playfab.com/blog/starting-today-save-up-to-90-using-playfab-party).
 
+## 1.5.10
+
+### Bug fixes
+
+- Fixed a bug where the library may fail to initialize on some Windows devices due to a mismatch between the processor affinity of the process and the library's default thread affinity.
+- Fixed a bug where the library may not provide errors when an operation fails due to an internal web request failure.
+- Fixed a bug where a crash may occur when direct peer connectivity is enabled and the library attempts to establish direct peer connectivity to another device.
+- Fixed a bug that may result in crackly or distorted audio.
+
+## 1.5.1
+
+### Bug fix
+
+- Fixed a bug where the library may fail to activate the microphone on iOS.
+
 ## 1.5.0
 
 ### New direct peer-to-peer connectivity, latency, and speech-to-text features
