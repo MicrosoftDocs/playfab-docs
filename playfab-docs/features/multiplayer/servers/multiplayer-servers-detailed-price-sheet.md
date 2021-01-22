@@ -1,9 +1,9 @@
 ---
 title: Multiplayer Servers - detailed price sheet
-author: joannaleecy
+author: lejackso
 description: Detailed pricing information for PlayFab Multiplayer Server 2.0 (Thunderhead).
-ms.author: joanlee
-ms.date: 01/17/2019
+ms.author: lejackso
+ms.date: 01/17/2021
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, multiplayer servers, thunderhead, pricing
@@ -476,221 +476,221 @@ The Dsv2-series virtual machines run on the Intel® Xeon® Platinum 8272CL proce
 #### US East
 | Instance | vCPU | RAM | Storage |  Linux |  Windows |
 |----------|------|-----|---------|--------|----------|
- | D1sv2 | 1 | 3.5 GiB | 50 GiB | $0.0803/hour | $0.1386/hour | 
- | D2sv2 | 2 | 7 GiB | 100 GiB | $0.1606/hour | $0.2772/hour | 
- | D4sv2 | 4 | 14 GiB | 200 GiB | $0.3223/hour | $0.5544/hour | 
- | D8sv2 | 8 | 28 GiB | 400 GiB | $0.6435/hour | $1.1088/hour | 
- | D16sv2 | 16 | 56 GiB | 800 GiB | $1.287/hour | $2.2176/hour | 
+ | D1sv2 | 1 | 3.5 GiB | 7 GiB | $0.0803/hour | $0.1386/hour | 
+ | D2sv2 | 2 | 7 GiB | 14 GiB | $0.1606/hour | $0.2772/hour | 
+ | D4sv2 | 4 | 14 GiB | 28 GiB | $0.3223/hour | $0.5544/hour | 
+ | D8sv2 | 8 | 28 GiB | 56 GiB | $0.6435/hour | $1.1088/hour | 
+ | D16sv2 | 16 | 56 GiB | 112 GiB | $1.287/hour | $2.2176/hour | 
  
 [back to top](#vmhourlyrates)
 #### US East 2
 | Instance | vCPU | RAM | Storage |  Linux |  Windows |
 |----------|------|-----|---------|--------|----------|
- | D1sv2 | 1 | 3.5 GiB | 50 GiB | $0.0627/hour | $0.1287/hour | 
- | D2sv2 | 2 | 7 GiB | 100 GiB | $0.1254/hour | $0.2574/hour | 
- | D4sv2 | 4 | 14 GiB | 200 GiB | $0.2519/hour | $0.5148/hour | 
- | D8sv2 | 8 | 28 GiB | 400 GiB | $0.5038/hour | $1.0296/hour | 
- | D16sv2 | 16 | 56 GiB | 800 GiB | $1.0076/hour | $2.0592/hour | 
+ | D1sv2 | 1 | 3.5 GiB | 7 GiB | $0.0627/hour | $0.1287/hour | 
+ | D2sv2 | 2 | 7 GiB | 14 GiB | $0.1254/hour | $0.2574/hour | 
+ | D4sv2 | 4 | 14 GiB | 28 GiB | $0.2519/hour | $0.5148/hour | 
+ | D8sv2 | 8 | 28 GiB | 56 GiB | $0.5038/hour | $1.0296/hour | 
+ | D16sv2 | 16 | 56 GiB | 112 GiB | $1.0076/hour | $2.0592/hour | 
  
 [back to top](#vmhourlyrates)
 #### US West
 | Instance | vCPU | RAM | Storage |  Linux |  Windows |
 |----------|------|-----|---------|--------|----------|
- | D1sv2 | 1 | 3.5 GiB | 50 GiB | $0.077/hour | $0.1386/hour | 
- | D2sv2 | 2 | 7 GiB | 100 GiB | $0.154/hour | $0.2772/hour | 
- | D4sv2 | 4 | 14 GiB | 200 GiB | $0.3069/hour | $0.5544/hour | 
- | D8sv2 | 8 | 28 GiB | 400 GiB | $0.6149/hour | $1.1088/hour | 
- | D16sv2 | 16 | 56 GiB | 800 GiB | $1.2287/hour | $2.2176/hour | 
+ | D1sv2 | 1 | 3.5 GiB | 7 GiB | $0.077/hour | $0.1386/hour | 
+ | D2sv2 | 2 | 7 GiB | 14 GiB | $0.154/hour | $0.2772/hour | 
+ | D4sv2 | 4 | 14 GiB | 28 GiB | $0.3069/hour | $0.5544/hour | 
+ | D8sv2 | 8 | 28 GiB | 56 GiB | $0.6149/hour | $1.1088/hour | 
+ | D16sv2 | 16 | 56 GiB | 112 GiB | $1.2287/hour | $2.2176/hour | 
  
 [back to top](#vmhourlyrates)
 #### US West 2
 | Instance | vCPU | RAM | Storage |  Linux |  Windows |
 |----------|------|-----|---------|--------|----------|
- | D1sv2 | 1 | 3.5 GiB | 50 GiB | $0.0627/hour | $0.1287/hour | 
- | D2sv2 | 2 | 7 GiB | 100 GiB | $0.1254/hour | $0.2574/hour | 
- | D4sv2 | 4 | 14 GiB | 200 GiB | $0.2519/hour | $0.5148/hour | 
- | D8sv2 | 8 | 28 GiB | 400 GiB | $0.5038/hour | $1.0296/hour | 
- | D16sv2 | 16 | 56 GiB | 800 GiB | $1.0076/hour | $2.0592/hour | 
+ | D1sv2 | 1 | 3.5 GiB | 7 GiB | $0.0627/hour | $0.1287/hour | 
+ | D2sv2 | 2 | 7 GiB | 14 GiB | $0.1254/hour | $0.2574/hour | 
+ | D4sv2 | 4 | 14 GiB | 28 GiB | $0.2519/hour | $0.5148/hour | 
+ | D8sv2 | 8 | 28 GiB | 56 GiB | $0.5038/hour | $1.0296/hour | 
+ | D16sv2 | 16 | 56 GiB | 112 GiB | $1.0076/hour | $2.0592/hour | 
  
 [back to top](#vmhourlyrates)
 #### US Central
 | Instance | vCPU | RAM | Storage |  Linux |  Windows |
 |----------|------|-----|---------|--------|----------|
- | D1sv2 | 1 | 3.5 GiB | 50 GiB | $0.0803/hour | $0.1386/hour | 
- | D2sv2 | 2 | 7 GiB | 100 GiB | $0.1606/hour | $0.2772/hour | 
- | D4sv2 | 4 | 14 GiB | 200 GiB | $0.3223/hour | $0.5544/hour | 
- | D8sv2 | 8 | 28 GiB | 400 GiB | $0.6435/hour | $1.1088/hour | 
- | D16sv2 | 16 | 56 GiB | 800 GiB | $1.287/hour | $2.2176/hour | 
+ | D1sv2 | 1 | 3.5 GiB | 7 GiB | $0.0803/hour | $0.1386/hour | 
+ | D2sv2 | 2 | 7 GiB | 14 GiB | $0.1606/hour | $0.2772/hour | 
+ | D4sv2 | 4 | 14 GiB | 28 GiB | $0.3223/hour | $0.5544/hour | 
+ | D8sv2 | 8 | 28 GiB | 56 GiB | $0.6435/hour | $1.1088/hour | 
+ | D16sv2 | 16 | 56 GiB | 112 GiB | $1.287/hour | $2.2176/hour | 
  
 [back to top](#vmhourlyrates)
 #### US North Central
 | Instance | vCPU | RAM | Storage |  Linux |  Windows |
 |----------|------|-----|---------|--------|----------|
- | D1sv2 | 1 | 3.5 GiB | 50 GiB | $0.0803/hour | $0.1386/hour | 
- | D2sv2 | 2 | 7 GiB | 100 GiB | $0.1606/hour | $0.2772/hour | 
- | D4sv2 | 4 | 14 GiB | 200 GiB | $0.3223/hour | $0.5544/hour | 
- | D8sv2 | 8 | 28 GiB | 400 GiB | $0.6435/hour | $1.1088/hour | 
- | D16sv2 | 16 | 56 GiB | 800 GiB | $1.287/hour | $2.2176/hour | 
+ | D1sv2 | 1 | 3.5 GiB | 7 GiB | $0.0803/hour | $0.1386/hour | 
+ | D2sv2 | 2 | 7 GiB | 14 GiB | $0.1606/hour | $0.2772/hour | 
+ | D4sv2 | 4 | 14 GiB | 28 GiB | $0.3223/hour | $0.5544/hour | 
+ | D8sv2 | 8 | 28 GiB | 56 GiB | $0.6435/hour | $1.1088/hour | 
+ | D16sv2 | 16 | 56 GiB | 112 GiB | $1.287/hour | $2.2176/hour | 
  
 [back to top](#vmhourlyrates)
 #### US South Central
 | Instance | vCPU | RAM | Storage |  Linux |  Windows |
 |----------|------|-----|---------|--------|----------|
- | D1sv2 | 1 | 3.5 GiB | 50 GiB | $0.07/hour | $0.1287/hour | 
- | D2sv2 | 2 | 7 GiB | 100 GiB | $0.1397/hour | $0.2574/hour | 
- | D4sv2 | 4 | 14 GiB | 200 GiB | $0.2794/hour | $0.5148/hour | 
- | D8sv2 | 8 | 28 GiB | 400 GiB | $0.5599/hour | $1.0296/hour | 
- | D16sv2 | 16 | 56 GiB | 800 GiB | $1.1187/hour | $2.0592/hour | 
+ | D1sv2 | 1 | 3.5 GiB | 7 GiB | $0.07/hour | $0.1287/hour | 
+ | D2sv2 | 2 | 7 GiB | 14 GiB | $0.1397/hour | $0.2574/hour | 
+ | D4sv2 | 4 | 14 GiB | 28 GiB | $0.2794/hour | $0.5148/hour | 
+ | D8sv2 | 8 | 28 GiB | 56 GiB | $0.5599/hour | $1.0296/hour | 
+ | D16sv2 | 16 | 56 GiB | 112 GiB | $1.1187/hour | $2.0592/hour | 
  
 [back to top](#vmhourlyrates)
 #### US West Central
 | Instance | vCPU | RAM | Storage |  Linux |  Windows |
 |----------|------|-----|---------|--------|----------|
- | D1sv2 | 1 | 3.5 GiB | 50 GiB | $0.07/hour | $0.1287/hour | 
- | D2sv2 | 2 | 7 GiB | 100 GiB | $0.1397/hour | $0.2574/hour | 
- | D4sv2 | 4 | 14 GiB | 200 GiB | $0.2794/hour | $0.5148/hour | 
- | D8sv2 | 8 | 28 GiB | 400 GiB | $0.5599/hour | $1.0296/hour | 
- | D16sv2 | 16 | 56 GiB | 800 GiB | $1.1187/hour | $2.0592/hour | 
+ | D1sv2 | 1 | 3.5 GiB | 7 GiB | $0.07/hour | $0.1287/hour | 
+ | D2sv2 | 2 | 7 GiB | 14 GiB | $0.1397/hour | $0.2574/hour | 
+ | D4sv2 | 4 | 14 GiB | 28 GiB | $0.2794/hour | $0.5148/hour | 
+ | D8sv2 | 8 | 28 GiB | 56 GiB | $0.5599/hour | $1.0296/hour | 
+ | D16sv2 | 16 | 56 GiB | 112 GiB | $1.1187/hour | $2.0592/hour | 
  
 [back to top](#vmhourlyrates)
 #### North Europe
 | Instance | vCPU | RAM | Storage |  Linux |  Windows |
 |----------|------|-----|---------|--------|----------|
- | D1sv2 | 1 | 3.5 GiB | 50 GiB | $0.0724/hour | $0.1276/hour | 
- | D2sv2 | 2 | 7 GiB | 100 GiB | $0.1452/hour | $0.2552/hour | 
- | D4sv2 | 4 | 14 GiB | 200 GiB | $0.2893/hour | $0.5115/hour | 
- | D8sv2 | 8 | 28 GiB | 400 GiB | $0.5797/hour | $1.0219/hour | 
- | D16sv2 | 16 | 56 GiB | 800 GiB | $1.1583/hour | $2.0438/hour | 
+ | D1sv2 | 1 | 3.5 GiB | 7 GiB | $0.0724/hour | $0.1276/hour | 
+ | D2sv2 | 2 | 7 GiB | 14 GiB | $0.1452/hour | $0.2552/hour | 
+ | D4sv2 | 4 | 14 GiB | 28 GiB | $0.2893/hour | $0.5115/hour | 
+ | D8sv2 | 8 | 28 GiB | 56 GiB | $0.5797/hour | $1.0219/hour | 
+ | D16sv2 | 16 | 56 GiB | 112 GiB | $1.1583/hour | $2.0438/hour | 
  
 [back to top](#vmhourlyrates)
 #### West Europe
 | Instance | vCPU | RAM | Storage |  Linux |  Windows |
 |----------|------|-----|---------|--------|----------|
- | D1sv2 | 1 | 3.5 GiB | 50 GiB | $0.0747/hour | $0.1463/hour | 
- | D2sv2 | 2 | 7 GiB | 100 GiB | $0.1496/hour | $0.2926/hour | 
- | D4sv2 | 4 | 14 GiB | 200 GiB | $0.2992/hour | $0.5863/hour | 
- | D8sv2 | 8 | 28 GiB | 400 GiB | $0.5984/hour | $1.1726/hour | 
- | D16sv2 | 16 | 56 GiB | 800 GiB | $1.1957/hour | $2.3441/hour | 
+ | D1sv2 | 1 | 3.5 GiB | 7 GiB | $0.0747/hour | $0.1463/hour | 
+ | D2sv2 | 2 | 7 GiB | 14 GiB | $0.1496/hour | $0.2926/hour | 
+ | D4sv2 | 4 | 14 GiB | 28 GiB | $0.2992/hour | $0.5863/hour | 
+ | D8sv2 | 8 | 28 GiB | 56 GiB | $0.5984/hour | $1.1726/hour | 
+ | D16sv2 | 16 | 56 GiB | 112 GiB | $1.1957/hour | $2.3441/hour | 
  
 [back to top](#vmhourlyrates)
 #### France Central
 | Instance | vCPU | RAM | Storage |  Linux |  Windows |
 |----------|------|-----|---------|--------|----------|
- | D1sv2 | 1 | 3.5 GiB | 50 GiB | $0.0965/hour | $0.1617/hour | 
- | D2sv2 | 2 | 7 GiB | 100 GiB | $0.1925/hour | $0.3234/hour | 
- | D4sv2 | 4 | 14 GiB | 200 GiB | $0.3861/hour | $0.6468/hour | 
- | D8sv2 | 8 | 28 GiB | 400 GiB | $0.7722/hour | $1.2936/hour | 
- | D16sv2 | 16 | 56 GiB | 800 GiB | $1.5444/hour | $2.5861/hour | 
+ | D1sv2 | 1 | 3.5 GiB | 7 GiB | $0.0965/hour | $0.1617/hour | 
+ | D2sv2 | 2 | 7 GiB | 14 GiB | $0.1925/hour | $0.3234/hour | 
+ | D4sv2 | 4 | 14 GiB | 28 GiB | $0.3861/hour | $0.6468/hour | 
+ | D8sv2 | 8 | 28 GiB | 56 GiB | $0.7722/hour | $1.2936/hour | 
+ | D16sv2 | 16 | 56 GiB | 112 GiB | $1.5444/hour | $2.5861/hour | 
  
 [back to top](#vmhourlyrates)
 #### India Central
 | Instance | vCPU | RAM | Storage |  Linux |  Windows |
 |----------|------|-----|---------|--------|----------|
- | D1sv2 | 1 | 3.5 GiB | 50 GiB | $0.0924/hour | $0.143/hour | 
- | D2sv2 | 2 | 7 GiB | 100 GiB | $0.1859/hour | $0.2871/hour | 
- | D4sv2 | 4 | 14 GiB | 200 GiB | $0.3707/hour | $0.5731/hour | 
- | D8sv2 | 8 | 28 GiB | 400 GiB | $0.7425/hour | $1.1473/hour | 
- | D16sv2 | 16 | 56 GiB | 800 GiB | $1.485/hour | $2.2946/hour | 
+ | D1sv2 | 1 | 3.5 GiB | 7 GiB | $0.0924/hour | $0.143/hour | 
+ | D2sv2 | 2 | 7 GiB | 14 GiB | $0.1859/hour | $0.2871/hour | 
+ | D4sv2 | 4 | 14 GiB | 28 GiB | $0.3707/hour | $0.5731/hour | 
+ | D8sv2 | 8 | 28 GiB | 56 GiB | $0.7425/hour | $1.1473/hour | 
+ | D16sv2 | 16 | 56 GiB | 112 GiB | $1.485/hour | $2.2946/hour | 
  
 [back to top](#vmhourlyrates)
 #### UAE North
 | Instance | vCPU | RAM | Storage |  Linux |  Windows |
 |----------|------|-----|---------|--------|----------|
- | D1sv2 | 1 | 3.5 GiB | 50 GiB | $0.0756/hour | $0.1265/hour | 
- | D2sv2 | 2 | 7 GiB | 100 GiB | $0.1507/hour | $0.2519/hour | 
- | D4sv2 | 4 | 14 GiB | 200 GiB | $0.3025/hour | $0.5049/hour | 
- | D8sv2 | 8 | 28 GiB | 400 GiB | $0.605/hour | $1.0098/hour | 
- | D16sv2 | 16 | 56 GiB | 800 GiB | $1.2089/hour | $2.0185/hour | 
+ | D1sv2 | 1 | 3.5 GiB | 7 GiB | $0.0756/hour | $0.1265/hour | 
+ | D2sv2 | 2 | 7 GiB | 14 GiB | $0.1507/hour | $0.2519/hour | 
+ | D4sv2 | 4 | 14 GiB | 28 GiB | $0.3025/hour | $0.5049/hour | 
+ | D8sv2 | 8 | 28 GiB | 56 GiB | $0.605/hour | $1.0098/hour | 
+ | D16sv2 | 16 | 56 GiB | 112 GiB | $1.2089/hour | $2.0185/hour | 
  
 [back to top](#vmhourlyrates)
 #### Brazil South
 | Instance | vCPU | RAM | Storage |  Linux |  Windows |
 |----------|------|-----|---------|--------|----------|
- | D1sv2 | 1 | 3.5 GiB | 50 GiB | $0.0942/hour | $0.1452/hour | 
- | D2sv2 | 2 | 7 GiB | 100 GiB | $0.1881/hour | $0.2893/hour | 
- | D4sv2 | 4 | 14 GiB | 200 GiB | $0.3773/hour | $0.5797/hour | 
- | D8sv2 | 8 | 28 GiB | 400 GiB | $0.7535/hour | $1.1583/hour | 
- | D16sv2 | 16 | 56 GiB | 800 GiB | $1.507/hour | $2.3166/hour | 
+ | D1sv2 | 1 | 3.5 GiB | 7 GiB | $0.0942/hour | $0.1452/hour | 
+ | D2sv2 | 2 | 7 GiB | 14 GiB | $0.1881/hour | $0.2893/hour | 
+ | D4sv2 | 4 | 14 GiB | 28 GiB | $0.3773/hour | $0.5797/hour | 
+ | D8sv2 | 8 | 28 GiB | 56 GiB | $0.7535/hour | $1.1583/hour | 
+ | D16sv2 | 16 | 56 GiB | 112 GiB | $1.507/hour | $2.3166/hour | 
  
 [back to top](#vmhourlyrates)
 #### South Africa North
 | Instance | vCPU | RAM | Storage |  Linux |  Windows |
 |----------|------|-----|---------|--------|----------|
- | D1sv2 | 1 | 3.5 GiB | 50 GiB | $0.0844/hour | $0.1353/hour | 
- | D2sv2 | 2 | 7 GiB | 100 GiB | $0.1683/hour | $0.2695/hour | 
- | D4sv2 | 4 | 14 GiB | 200 GiB | $0.3377/hour | $0.5401/hour | 
- | D8sv2 | 8 | 28 GiB | 400 GiB | $0.6754/hour | $1.0802/hour | 
- | D16sv2 | 16 | 56 GiB | 800 GiB | $1.3497/hour | $2.1593/hour | 
+ | D1sv2 | 1 | 3.5 GiB | 7 GiB | $0.0844/hour | $0.1353/hour | 
+ | D2sv2 | 2 | 7 GiB | 14 GiB | $0.1683/hour | $0.2695/hour | 
+ | D4sv2 | 4 | 14 GiB | 28 GiB | $0.3377/hour | $0.5401/hour | 
+ | D8sv2 | 8 | 28 GiB | 56 GiB | $0.6754/hour | $1.0802/hour | 
+ | D16sv2 | 16 | 56 GiB | 112 GiB | $1.3497/hour | $2.1593/hour | 
  
 [back to top](#vmhourlyrates)
 #### Australia East
 | Instance | vCPU | RAM | Storage |  Linux |  Windows |
 |----------|------|-----|---------|--------|----------|
- | D1sv2 | 1 | 3.5 GiB | 50 GiB | $0.0924/hour | $0.154/hour | 
- | D2sv2 | 2 | 7 GiB | 100 GiB | $0.1848/hour | $0.3091/hour | 
- | D4sv2 | 4 | 14 GiB | 200 GiB | $0.3696/hour | $0.6182/hour | 
- | D8sv2 | 8 | 28 GiB | 400 GiB | $0.7403/hour | $1.2353/hour | 
- | D16sv2 | 16 | 56 GiB | 800 GiB | $1.4795/hour | $2.4695/hour | 
+ | D1sv2 | 1 | 3.5 GiB | 7 GiB | $0.0924/hour | $0.154/hour | 
+ | D2sv2 | 2 | 7 GiB | 14 GiB | $0.1848/hour | $0.3091/hour | 
+ | D4sv2 | 4 | 14 GiB | 28 GiB | $0.3696/hour | $0.6182/hour | 
+ | D8sv2 | 8 | 28 GiB | 56 GiB | $0.7403/hour | $1.2353/hour | 
+ | D16sv2 | 16 | 56 GiB | 112 GiB | $1.4795/hour | $2.4695/hour | 
  
 [back to top](#vmhourlyrates)
 #### Australia South East
 | Instance | vCPU | RAM | Storage |  Linux |  Windows |
 |----------|------|-----|---------|--------|----------|
- | D1sv2 | 1 | 3.5 GiB | 50 GiB | $0.0856/hour | $0.154/hour | 
- | D2sv2 | 2 | 7 GiB | 100 GiB | $0.1714/hour | $0.3091/hour | 
- | D4sv2 | 4 | 14 GiB | 200 GiB | $0.3421/hour | $0.6182/hour | 
- | D8sv2 | 8 | 28 GiB | 400 GiB | $0.6853/hour | $1.2353/hour | 
- | D16sv2 | 16 | 56 GiB | 800 GiB | $1.3706/hour | $2.4695/hour | 
+ | D1sv2 | 1 | 3.5 GiB | 7 GiB | $0.0856/hour | $0.154/hour | 
+ | D2sv2 | 2 | 7 GiB | 14 GiB | $0.1714/hour | $0.3091/hour | 
+ | D4sv2 | 4 | 14 GiB | 28 GiB | $0.3421/hour | $0.6182/hour | 
+ | D8sv2 | 8 | 28 GiB | 56 GiB | $0.6853/hour | $1.2353/hour | 
+ | D16sv2 | 16 | 56 GiB | 112 GiB | $1.3706/hour | $2.4695/hour | 
  
 [back to top](#vmhourlyrates)
 #### Korea Central
 | Instance | vCPU | RAM | Storage |  Linux |  Windows |
 |----------|------|-----|---------|--------|----------|
- | D1sv2 | 1 | 3.5 GiB | 50 GiB | $0.0907/hour | $0.1419/hour | 
- | D2sv2 | 2 | 7 GiB | 100 GiB | $0.1815/hour | $0.2827/hour | 
- | D4sv2 | 4 | 14 GiB | 200 GiB | $0.363/hour | $0.5654/hour | 
- | D8sv2 | 8 | 28 GiB | 400 GiB | $0.726/hour | $1.1308/hour | 
- | D16sv2 | 16 | 56 GiB | 800 GiB | $1.4531/hour | $2.2627/hour | 
+ | D1sv2 | 1 | 3.5 GiB | 7 GiB | $0.0907/hour | $0.1419/hour | 
+ | D2sv2 | 2 | 7 GiB | 14 GiB | $0.1815/hour | $0.2827/hour | 
+ | D4sv2 | 4 | 14 GiB | 28 GiB | $0.363/hour | $0.5654/hour | 
+ | D8sv2 | 8 | 28 GiB | 56 GiB | $0.726/hour | $1.1308/hour | 
+ | D16sv2 | 16 | 56 GiB | 112 GiB | $1.4531/hour | $2.2627/hour | 
  
 [back to top](#vmhourlyrates)
 #### Japan East
 | Instance | vCPU | RAM | Storage |  Linux |  Windows |
 |----------|------|-----|---------|--------|----------|
- | D1sv2 | 1 | 3.5 GiB | 50 GiB | $0.1122/hour | $0.1496/hour | 
- | D2sv2 | 2 | 7 GiB | 100 GiB | $0.2255/hour | $0.3003/hour | 
- | D4sv2 | 4 | 14 GiB | 200 GiB | $0.4499/hour | $0.6006/hour | 
- | D8sv2 | 8 | 28 GiB | 400 GiB | $0.8998/hour | $1.2001/hour | 
- | D16sv2 | 16 | 56 GiB | 800 GiB | $1.7996/hour | $2.4013/hour | 
+ | D1sv2 | 1 | 3.5 GiB | 7 GiB | $0.1122/hour | $0.1496/hour | 
+ | D2sv2 | 2 | 7 GiB | 14 GiB | $0.2255/hour | $0.3003/hour | 
+ | D4sv2 | 4 | 14 GiB | 28 GiB | $0.4499/hour | $0.6006/hour | 
+ | D8sv2 | 8 | 28 GiB | 56 GiB | $0.8998/hour | $1.2001/hour | 
+ | D16sv2 | 16 | 56 GiB | 112 GiB | $1.7996/hour | $2.4013/hour | 
  
 [back to top](#vmhourlyrates)
 #### Japan West
 | Instance | vCPU | RAM | Storage |  Linux |  Windows |
 |----------|------|-----|---------|--------|----------|
- | D1sv2 | 1 | 3.5 GiB | 50 GiB | $0/hour | $0.1441/hour | 
- | D2sv2 | 2 | 7 GiB | 100 GiB | $0/hour | $0.2893/hour | 
- | D4sv2 | 4 | 14 GiB | 200 GiB | $0/hour | $0.5786/hour | 
- | D8sv2 | 8 | 28 GiB | 400 GiB | $0/hour | $1.1561/hour | 
- | D16sv2 | 16 | 56 GiB | 800 GiB | $0/hour | $2.3122/hour | 
+ | D1sv2 | 1 | 3.5 GiB | 7 GiB | $0/hour | $0.1441/hour | 
+ | D2sv2 | 2 | 7 GiB | 14 GiB | $0/hour | $0.2893/hour | 
+ | D4sv2 | 4 | 14 GiB | 28 GiB | $0/hour | $0.5786/hour | 
+ | D8sv2 | 8 | 28 GiB | 56 GiB | $0/hour | $1.1561/hour | 
+ | D16sv2 | 16 | 56 GiB | 112 GiB | $0/hour | $2.3122/hour | 
  
 [back to top](#vmhourlyrates)
 #### East Asia
 | Instance | vCPU | RAM | Storage |  Linux |  Windows |
 |----------|------|-----|---------|--------|----------|
- | D1sv2 | 1 | 3.5 GiB | 50 GiB | $0.1177/hour | $0.1837/hour | 
- | D2sv2 | 2 | 7 GiB | 100 GiB | $0.2354/hour | $0.3663/hour | 
- | D4sv2 | 4 | 14 GiB | 200 GiB | $0.4708/hour | $0.7337/hour | 
- | D8sv2 | 8 | 28 GiB | 400 GiB | $0.9427/hour | $1.4663/hour | 
- | D16sv2 | 16 | 56 GiB | 800 GiB | $1.8854/hour | $2.9326/hour | 
+ | D1sv2 | 1 | 3.5 GiB | 7 GiB | $0.1177/hour | $0.1837/hour | 
+ | D2sv2 | 2 | 7 GiB | 14 GiB | $0.2354/hour | $0.3663/hour | 
+ | D4sv2 | 4 | 14 GiB | 28 GiB | $0.4708/hour | $0.7337/hour | 
+ | D8sv2 | 8 | 28 GiB | 56 GiB | $0.9427/hour | $1.4663/hour | 
+ | D16sv2 | 16 | 56 GiB | 112 GiB | $1.8854/hour | $2.9326/hour | 
  
 [back to top](#vmhourlyrates)
 #### South East Asia
 | Instance | vCPU | RAM | Storage |  Linux |  Windows |
 |----------|------|-----|---------|--------|----------|
- | D1sv2 | 1 | 3.5 GiB | 50 GiB | $0.0868/hour | $0.1595/hour | 
- | D2sv2 | 2 | 7 GiB | 100 GiB | $0.1738/hour | $0.319/hour | 
- | D4sv2 | 4 | 14 GiB | 200 GiB | $0.3476/hour | $0.638/hour | 
- | D8sv2 | 8 | 28 GiB | 400 GiB | $0.6941/hour | $1.2749/hour | 
- | D16sv2 | 16 | 56 GiB | 800 GiB | $1.3893/hour | $2.5498/hour | 
+ | D1sv2 | 1 | 3.5 GiB | 7 GiB | $0.0868/hour | $0.1595/hour | 
+ | D2sv2 | 2 | 7 GiB | 14 GiB | $0.1738/hour | $0.319/hour | 
+ | D4sv2 | 4 | 14 GiB | 28 GiB | $0.3476/hour | $0.638/hour | 
+ | D8sv2 | 8 | 28 GiB | 56 GiB | $0.6941/hour | $1.2749/hour | 
+ | D16sv2 | 16 | 56 GiB | 112 GiB | $1.3893/hour | $2.5498/hour | 
 ### <a id="dv3"></a>Dv3
 The Dv3-series virtual machines run on the Intel® Xeon® Platinum 8272CL processor (second generation Intel® Xeon® Scalable processors), Intel® Xeon® 8171M 2.1GHz (Skylake), Intel® Xeon® E5-2673 v4 2.3 GHz (Broadwell), or the Intel® Xeon® E5-2673 v3 2.4 GHz (Haswell) processors in a hyper-threaded configuration. The Dv3-series sizes offer a combination of vCPU(s), memory, and local disk well suited for most production workloads.
  
@@ -869,10 +869,10 @@ The Dv3-series virtual machines run on the Intel® Xeon® Platinum 8272CL proces
 #### Japan West
 | Instance | vCPU | RAM | Storage |  Linux |  Windows |
 |----------|------|-----|---------|--------|----------|
- | D2v3 | 2 | 7 GiB | 100 GiB | $0.2002/hour | $0.2431/hour | 
- | D4v3 | 4 | 14 GiB | 200 GiB | $0.4015/hour | $0.4862/hour | 
- | D8v3 | 8 | 28 GiB | 400 GiB | $0.8019/hour | $0.9724/hour | 
- | D16v3 | 16 | 56 GiB | 800 GiB | $1.6049/hour | $1.9448/hour | 
+ | D2v3 | 2 | 8 GiB | 50 GiB | $0.2002/hour | $0.2431/hour | 
+ | D4v3 | 4 | 16 GiB | 100 GiB | $0.4015/hour | $0.4862/hour | 
+ | D8v3 | 8 | 32 GiB | 200 GiB | $0.8019/hour | $0.9724/hour | 
+ | D16v3 | 16 | 64 GiB | 400 GiB | $1.6049/hour | $1.9448/hour | 
  
 [back to top](#vmhourlyrates)
 #### East Asia
@@ -898,199 +898,199 @@ The Dsv3-series support premium storage and run on the Intel® Xeon® Platinum 8
 #### US East
 | Instance | vCPU | RAM | Storage |  Linux |  Windows |
 |----------|------|-----|---------|--------|----------|
- | D2sv3 | 2 | 8 GiB | 50 GiB | $0.1056/hour | $0.2068/hour | 
- | D4sv3 | 4 | 16 GiB | 100 GiB | $0.2112/hour | $0.4136/hour | 
- | D8sv3 | 8 | 32 GiB | 200 GiB | $0.4224/hour | $0.8272/hour | 
- | D16sv3 | 16 | 64 GiB | 400 GiB | $0.8448/hour | $1.6544/hour | 
+ | D2sv3 | 2 | 8 GiB | 16 GiB | $0.1056/hour | $0.2068/hour | 
+ | D4sv3 | 4 | 16 GiB | 32 GiB | $0.2112/hour | $0.4136/hour | 
+ | D8sv3 | 8 | 32 GiB | 64 GiB | $0.4224/hour | $0.8272/hour | 
+ | D16sv3 | 16 | 64 GiB | 128 GiB | $0.8448/hour | $1.6544/hour | 
  
 [back to top](#vmhourlyrates)
 #### US East 2
 | Instance | vCPU | RAM | Storage |  Linux |  Windows |
 |----------|------|-----|---------|--------|----------|
- | D2sv3 | 2 | 8 GiB | 50 GiB | $0.1056/hour | $0.2068/hour | 
- | D4sv3 | 4 | 16 GiB | 100 GiB | $0.2112/hour | $0.4136/hour | 
- | D8sv3 | 8 | 32 GiB | 200 GiB | $0.4224/hour | $0.8272/hour | 
- | D16sv3 | 16 | 64 GiB | 400 GiB | $0.8448/hour | $1.6544/hour | 
+ | D2sv3 | 2 | 8 GiB | 16 GiB | $0.1056/hour | $0.2068/hour | 
+ | D4sv3 | 4 | 16 GiB | 32 GiB | $0.2112/hour | $0.4136/hour | 
+ | D8sv3 | 8 | 32 GiB | 64 GiB | $0.4224/hour | $0.8272/hour | 
+ | D16sv3 | 16 | 64 GiB | 128 GiB | $0.8448/hour | $1.6544/hour | 
  
 [back to top](#vmhourlyrates)
 #### US West
 | Instance | vCPU | RAM | Storage |  Linux |  Windows |
 |----------|------|-----|---------|--------|----------|
- | D2sv3 | 2 | 8 GiB | 50 GiB | $0.1287/hour | $0.2299/hour | 
- | D4sv3 | 4 | 16 GiB | 100 GiB | $0.2574/hour | $0.4598/hour | 
- | D8sv3 | 8 | 32 GiB | 200 GiB | $0.5148/hour | $0.9196/hour | 
- | D16sv3 | 16 | 64 GiB | 400 GiB | $1.0296/hour | $1.8392/hour | 
+ | D2sv3 | 2 | 8 GiB | 16 GiB | $0.1287/hour | $0.2299/hour | 
+ | D4sv3 | 4 | 16 GiB | 32 GiB | $0.2574/hour | $0.4598/hour | 
+ | D8sv3 | 8 | 32 GiB | 64 GiB | $0.5148/hour | $0.9196/hour | 
+ | D16sv3 | 16 | 64 GiB | 128 GiB | $1.0296/hour | $1.8392/hour | 
  
 [back to top](#vmhourlyrates)
 #### US West 2
 | Instance | vCPU | RAM | Storage |  Linux |  Windows |
 |----------|------|-----|---------|--------|----------|
- | D2sv3 | 2 | 8 GiB | 50 GiB | $0.1056/hour | $0.2068/hour | 
- | D4sv3 | 4 | 16 GiB | 100 GiB | $0.2112/hour | $0.4136/hour | 
- | D8sv3 | 8 | 32 GiB | 200 GiB | $0.4224/hour | $0.8272/hour | 
- | D16sv3 | 16 | 64 GiB | 400 GiB | $0.8448/hour | $1.6544/hour | 
+ | D2sv3 | 2 | 8 GiB | 16 GiB | $0.1056/hour | $0.2068/hour | 
+ | D4sv3 | 4 | 16 GiB | 32 GiB | $0.2112/hour | $0.4136/hour | 
+ | D8sv3 | 8 | 32 GiB | 64 GiB | $0.4224/hour | $0.8272/hour | 
+ | D16sv3 | 16 | 64 GiB | 128 GiB | $0.8448/hour | $1.6544/hour | 
  
 [back to top](#vmhourlyrates)
 #### US Central
 | Instance | vCPU | RAM | Storage |  Linux |  Windows |
 |----------|------|-----|---------|--------|----------|
- | D2sv3 | 2 | 8 GiB | 50 GiB | $0.121/hour | $0.2321/hour | 
- | D4sv3 | 4 | 16 GiB | 100 GiB | $0.242/hour | $0.4642/hour | 
- | D8sv3 | 8 | 32 GiB | 200 GiB | $0.484/hour | $0.9295/hour | 
- | D16sv3 | 16 | 64 GiB | 400 GiB | $0.968/hour | $1.859/hour | 
+ | D2sv3 | 2 | 8 GiB | 16 GiB | $0.121/hour | $0.2321/hour | 
+ | D4sv3 | 4 | 16 GiB | 32 GiB | $0.242/hour | $0.4642/hour | 
+ | D8sv3 | 8 | 32 GiB | 64 GiB | $0.484/hour | $0.9295/hour | 
+ | D16sv3 | 16 | 64 GiB | 128 GiB | $0.968/hour | $1.859/hour | 
  
 [back to top](#vmhourlyrates)
 #### US North Central
 | Instance | vCPU | RAM | Storage |  Linux |  Windows |
 |----------|------|-----|---------|--------|----------|
- | D2sv3 | 2 | 8 GiB | 50 GiB | $0.11/hour | $0.2112/hour | 
- | D4sv3 | 4 | 16 GiB | 100 GiB | $0.22/hour | $0.4224/hour | 
- | D8sv3 | 8 | 32 GiB | 200 GiB | $0.44/hour | $0.8448/hour | 
- | D16sv3 | 16 | 64 GiB | 400 GiB | $0.88/hour | $1.6896/hour | 
+ | D2sv3 | 2 | 8 GiB | 16 GiB | $0.11/hour | $0.2112/hour | 
+ | D4sv3 | 4 | 16 GiB | 32 GiB | $0.22/hour | $0.4224/hour | 
+ | D8sv3 | 8 | 32 GiB | 64 GiB | $0.44/hour | $0.8448/hour | 
+ | D16sv3 | 16 | 64 GiB | 128 GiB | $0.88/hour | $1.6896/hour | 
  
 [back to top](#vmhourlyrates)
 #### US South Central
 | Instance | vCPU | RAM | Storage |  Linux |  Windows |
 |----------|------|-----|---------|--------|----------|
- | D2sv3 | 2 | 8 GiB | 50 GiB | $0.121/hour | $0.2321/hour | 
- | D4sv3 | 4 | 16 GiB | 100 GiB | $0.242/hour | $0.4642/hour | 
- | D8sv3 | 8 | 32 GiB | 200 GiB | $0.484/hour | $0.9295/hour | 
- | D16sv3 | 16 | 64 GiB | 400 GiB | $0.968/hour | $1.859/hour | 
+ | D2sv3 | 2 | 8 GiB | 16 GiB | $0.121/hour | $0.2321/hour | 
+ | D4sv3 | 4 | 16 GiB | 32 GiB | $0.242/hour | $0.4642/hour | 
+ | D8sv3 | 8 | 32 GiB | 64 GiB | $0.484/hour | $0.9295/hour | 
+ | D16sv3 | 16 | 64 GiB | 128 GiB | $0.968/hour | $1.859/hour | 
  
 [back to top](#vmhourlyrates)
 #### US West Central
 | Instance | vCPU | RAM | Storage |  Linux |  Windows |
 |----------|------|-----|---------|--------|----------|
- | D2sv3 | 2 | 8 GiB | 50 GiB | $0.121/hour | $0.2321/hour | 
- | D4sv3 | 4 | 16 GiB | 100 GiB | $0.242/hour | $0.4642/hour | 
- | D8sv3 | 8 | 32 GiB | 200 GiB | $0.484/hour | $0.9295/hour | 
- | D16sv3 | 16 | 64 GiB | 400 GiB | $0.968/hour | $1.859/hour | 
+ | D2sv3 | 2 | 8 GiB | 16 GiB | $0.121/hour | $0.2321/hour | 
+ | D4sv3 | 4 | 16 GiB | 32 GiB | $0.242/hour | $0.4642/hour | 
+ | D8sv3 | 8 | 32 GiB | 64 GiB | $0.484/hour | $0.9295/hour | 
+ | D16sv3 | 16 | 64 GiB | 128 GiB | $0.968/hour | $1.859/hour | 
  
 [back to top](#vmhourlyrates)
 #### North Europe
 | Instance | vCPU | RAM | Storage |  Linux |  Windows |
 |----------|------|-----|---------|--------|----------|
- | D2sv3 | 2 | 8 GiB | 50 GiB | $0.1177/hour | $0.2189/hour | 
- | D4sv3 | 4 | 16 GiB | 100 GiB | $0.2354/hour | $0.4378/hour | 
- | D8sv3 | 8 | 32 GiB | 200 GiB | $0.4708/hour | $0.8756/hour | 
- | D16sv3 | 16 | 64 GiB | 400 GiB | $0.9416/hour | $1.7512/hour | 
+ | D2sv3 | 2 | 8 GiB | 16 GiB | $0.1177/hour | $0.2189/hour | 
+ | D4sv3 | 4 | 16 GiB | 32 GiB | $0.2354/hour | $0.4378/hour | 
+ | D8sv3 | 8 | 32 GiB | 64 GiB | $0.4708/hour | $0.8756/hour | 
+ | D16sv3 | 16 | 64 GiB | 128 GiB | $0.9416/hour | $1.7512/hour | 
  
 [back to top](#vmhourlyrates)
 #### West Europe
 | Instance | vCPU | RAM | Storage |  Linux |  Windows |
 |----------|------|-----|---------|--------|----------|
- | D2sv3 | 2 | 8 GiB | 50 GiB | $0.132/hour | $0.2332/hour | 
- | D4sv3 | 4 | 16 GiB | 100 GiB | $0.264/hour | $0.4664/hour | 
- | D8sv3 | 8 | 32 GiB | 200 GiB | $0.528/hour | $0.9328/hour | 
- | D16sv3 | 16 | 64 GiB | 400 GiB | $1.056/hour | $1.8656/hour | 
+ | D2sv3 | 2 | 8 GiB | 16 GiB | $0.132/hour | $0.2332/hour | 
+ | D4sv3 | 4 | 16 GiB | 32 GiB | $0.264/hour | $0.4664/hour | 
+ | D8sv3 | 8 | 32 GiB | 64 GiB | $0.528/hour | $0.9328/hour | 
+ | D16sv3 | 16 | 64 GiB | 128 GiB | $1.056/hour | $1.8656/hour | 
  
 [back to top](#vmhourlyrates)
 #### France Central
 | Instance | vCPU | RAM | Storage |  Linux |  Windows |
 |----------|------|-----|---------|--------|----------|
- | D2sv3 | 2 | 8 GiB | 50 GiB | $0.1232/hour | $0.2244/hour | 
- | D4sv3 | 4 | 16 GiB | 100 GiB | $0.2464/hour | $0.4488/hour | 
- | D8sv3 | 8 | 32 GiB | 200 GiB | $0.4928/hour | $0.8976/hour | 
- | D16sv3 | 16 | 64 GiB | 400 GiB | $0.9856/hour | $1.7952/hour | 
+ | D2sv3 | 2 | 8 GiB | 16 GiB | $0.1232/hour | $0.2244/hour | 
+ | D4sv3 | 4 | 16 GiB | 32 GiB | $0.2464/hour | $0.4488/hour | 
+ | D8sv3 | 8 | 32 GiB | 64 GiB | $0.4928/hour | $0.8976/hour | 
+ | D16sv3 | 16 | 64 GiB | 128 GiB | $0.9856/hour | $1.7952/hour | 
  
 [back to top](#vmhourlyrates)
 #### India Central
 | Instance | vCPU | RAM | Storage |  Linux |  Windows |
 |----------|------|-----|---------|--------|----------|
- | D2sv3 | 2 | 8 GiB | 50 GiB | $0.1155/hour | $0.2167/hour | 
- | D4sv3 | 4 | 16 GiB | 100 GiB | $0.231/hour | $0.4334/hour | 
- | D8sv3 | 8 | 32 GiB | 200 GiB | $0.462/hour | $0.8668/hour | 
- | D16sv3 | 16 | 64 GiB | 400 GiB | $0.924/hour | $1.7336/hour | 
+ | D2sv3 | 2 | 8 GiB | 16 GiB | $0.1155/hour | $0.2167/hour | 
+ | D4sv3 | 4 | 16 GiB | 32 GiB | $0.231/hour | $0.4334/hour | 
+ | D8sv3 | 8 | 32 GiB | 64 GiB | $0.462/hour | $0.8668/hour | 
+ | D16sv3 | 16 | 64 GiB | 128 GiB | $0.924/hour | $1.7336/hour | 
  
 [back to top](#vmhourlyrates)
 #### UAE North
 | Instance | vCPU | RAM | Storage |  Linux |  Windows |
 |----------|------|-----|---------|--------|----------|
- | D2sv3 | 2 | 8 GiB | 50 GiB | $0.132/hour | $0.2332/hour | 
- | D4sv3 | 4 | 16 GiB | 100 GiB | $0.264/hour | $0.4664/hour | 
- | D8sv3 | 8 | 32 GiB | 200 GiB | $0.528/hour | $0.9328/hour | 
- | D16sv3 | 16 | 64 GiB | 400 GiB | $1.056/hour | $1.8656/hour | 
+ | D2sv3 | 2 | 8 GiB | 16 GiB | $0.132/hour | $0.2332/hour | 
+ | D4sv3 | 4 | 16 GiB | 32 GiB | $0.264/hour | $0.4664/hour | 
+ | D8sv3 | 8 | 32 GiB | 64 GiB | $0.528/hour | $0.9328/hour | 
+ | D16sv3 | 16 | 64 GiB | 128 GiB | $1.056/hour | $1.8656/hour | 
  
 [back to top](#vmhourlyrates)
 #### Brazil South
 | Instance | vCPU | RAM | Storage |  Linux |  Windows |
 |----------|------|-----|---------|--------|----------|
- | D2sv3 | 2 | 8 GiB | 50 GiB | $0.1749/hour | $0.2761/hour | 
- | D4sv3 | 4 | 16 GiB | 100 GiB | $0.3498/hour | $0.5522/hour | 
- | D8sv3 | 8 | 32 GiB | 200 GiB | $0.6996/hour | $1.1044/hour | 
- | D16sv3 | 16 | 64 GiB | 400 GiB | $1.3992/hour | $2.2088/hour | 
+ | D2sv3 | 2 | 8 GiB | 16 GiB | $0.1749/hour | $0.2761/hour | 
+ | D4sv3 | 4 | 16 GiB | 32 GiB | $0.3498/hour | $0.5522/hour | 
+ | D8sv3 | 8 | 32 GiB | 64 GiB | $0.6996/hour | $1.1044/hour | 
+ | D16sv3 | 16 | 64 GiB | 128 GiB | $1.3992/hour | $2.2088/hour | 
  
 [back to top](#vmhourlyrates)
 #### South Africa North
 | Instance | vCPU | RAM | Storage |  Linux |  Windows |
 |----------|------|-----|---------|--------|----------|
- | D2sv3 | 2 | 8 GiB | 50 GiB | $0.1397/hour | $0.2409/hour | 
- | D4sv3 | 4 | 16 GiB | 100 GiB | $0.2794/hour | $0.4818/hour | 
- | D8sv3 | 8 | 32 GiB | 200 GiB | $0.5588/hour | $0.9636/hour | 
- | D16sv3 | 16 | 64 GiB | 400 GiB | $1.1176/hour | $1.9272/hour | 
+ | D2sv3 | 2 | 8 GiB | 16 GiB | $0.1397/hour | $0.2409/hour | 
+ | D4sv3 | 4 | 16 GiB | 32 GiB | $0.2794/hour | $0.4818/hour | 
+ | D8sv3 | 8 | 32 GiB | 64 GiB | $0.5588/hour | $0.9636/hour | 
+ | D16sv3 | 16 | 64 GiB | 128 GiB | $1.1176/hour | $1.9272/hour | 
  
 [back to top](#vmhourlyrates)
 #### Australia East
 | Instance | vCPU | RAM | Storage |  Linux |  Windows |
 |----------|------|-----|---------|--------|----------|
- | D2sv3 | 2 | 8 GiB | 50 GiB | $0.1375/hour | $0.2387/hour | 
- | D4sv3 | 4 | 16 GiB | 100 GiB | $0.275/hour | $0.4774/hour | 
- | D8sv3 | 8 | 32 GiB | 200 GiB | $0.55/hour | $0.9548/hour | 
- | D16sv3 | 16 | 64 GiB | 400 GiB | $1.1/hour | $1.9096/hour | 
+ | D2sv3 | 2 | 8 GiB | 16 GiB | $0.1375/hour | $0.2387/hour | 
+ | D4sv3 | 4 | 16 GiB | 32 GiB | $0.275/hour | $0.4774/hour | 
+ | D8sv3 | 8 | 32 GiB | 64 GiB | $0.55/hour | $0.9548/hour | 
+ | D16sv3 | 16 | 64 GiB | 128 GiB | $1.1/hour | $1.9096/hour | 
  
 [back to top](#vmhourlyrates)
 #### Australia South East
 | Instance | vCPU | RAM | Storage |  Linux |  Windows |
 |----------|------|-----|---------|--------|----------|
- | D2sv3 | 2 | 8 GiB | 50 GiB | $0.1375/hour | $0.2387/hour | 
- | D4sv3 | 4 | 16 GiB | 100 GiB | $0.275/hour | $0.4774/hour | 
- | D8sv3 | 8 | 32 GiB | 200 GiB | $0.55/hour | $0.9548/hour | 
- | D16sv3 | 16 | 64 GiB | 400 GiB | $1.1/hour | $1.9096/hour | 
+ | D2sv3 | 2 | 8 GiB | 16 GiB | $0.1375/hour | $0.2387/hour | 
+ | D4sv3 | 4 | 16 GiB | 32 GiB | $0.275/hour | $0.4774/hour | 
+ | D8sv3 | 8 | 32 GiB | 64 GiB | $0.55/hour | $0.9548/hour | 
+ | D16sv3 | 16 | 64 GiB | 128 GiB | $1.1/hour | $1.9096/hour | 
  
 [back to top](#vmhourlyrates)
 #### Korea Central
 | Instance | vCPU | RAM | Storage |  Linux |  Windows |
 |----------|------|-----|---------|--------|----------|
- | D2sv3 | 2 | 8 GiB | 50 GiB | $0.1353/hour | $0.2365/hour | 
- | D4sv3 | 4 | 16 GiB | 100 GiB | $0.2706/hour | $0.473/hour | 
- | D8sv3 | 8 | 32 GiB | 200 GiB | $0.5412/hour | $0.946/hour | 
- | D16sv3 | 16 | 64 GiB | 400 GiB | $1.0824/hour | $1.892/hour | 
+ | D2sv3 | 2 | 8 GiB | 16 GiB | $0.1353/hour | $0.2365/hour | 
+ | D4sv3 | 4 | 16 GiB | 32 GiB | $0.2706/hour | $0.473/hour | 
+ | D8sv3 | 8 | 32 GiB | 64 GiB | $0.5412/hour | $0.946/hour | 
+ | D16sv3 | 16 | 64 GiB | 128 GiB | $1.0824/hour | $1.892/hour | 
  
 [back to top](#vmhourlyrates)
 #### Japan East
 | Instance | vCPU | RAM | Storage |  Linux |  Windows |
 |----------|------|-----|---------|--------|----------|
- | D2sv3 | 2 | 8 GiB | 50 GiB | $0.1419/hour | $0.2431/hour | 
- | D4sv3 | 4 | 16 GiB | 100 GiB | $0.2838/hour | $0.4862/hour | 
- | D8sv3 | 8 | 32 GiB | 200 GiB | $0.5676/hour | $0.9724/hour | 
- | D16sv3 | 16 | 64 GiB | 400 GiB | $1.1352/hour | $1.9448/hour | 
+ | D2sv3 | 2 | 8 GiB | 16 GiB | $0.1419/hour | $0.2431/hour | 
+ | D4sv3 | 4 | 16 GiB | 32 GiB | $0.2838/hour | $0.4862/hour | 
+ | D8sv3 | 8 | 32 GiB | 64 GiB | $0.5676/hour | $0.9724/hour | 
+ | D16sv3 | 16 | 64 GiB | 128 GiB | $1.1352/hour | $1.9448/hour | 
  
 [back to top](#vmhourlyrates)
 #### Japan West
 | Instance | vCPU | RAM | Storage |  Linux |  Windows |
 |----------|------|-----|---------|--------|----------|
- | D2sv3 | 2 | 7 GiB | 100 GiB | $0.2002/hour | $0.2431/hour | 
- | D4sv3 | 4 | 14 GiB | 200 GiB | $0.4015/hour | $0.4862/hour | 
- | D8sv3 | 8 | 28 GiB | 400 GiB | $0.8019/hour | $0.9724/hour | 
- | D16sv3 | 16 | 56 GiB | 800 GiB | $1.6049/hour | $1.9448/hour | 
+ | D2sv3 | 2 | 8 GiB | 16 GiB | $0.2002/hour | $0.2431/hour | 
+ | D4sv3 | 4 | 16 GiB | 32 GiB | $0.4015/hour | $0.4862/hour | 
+ | D8sv3 | 8 | 32 GiB | 64 GiB | $0.8019/hour | $0.9724/hour | 
+ | D16sv3 | 16 | 64 GiB | 128 GiB | $1.6049/hour | $1.9448/hour | 
  
 [back to top](#vmhourlyrates)
 #### East Asia
 | Instance | vCPU | RAM | Storage |  Linux |  Windows |
 |----------|------|-----|---------|--------|----------|
- | D2sv3 | 2 | 8 GiB | 50 GiB | $0.1452/hour | $0.2464/hour | 
- | D4sv3 | 4 | 16 GiB | 100 GiB | $0.2904/hour | $0.4928/hour | 
- | D8sv3 | 8 | 32 GiB | 200 GiB | $0.5808/hour | $0.9856/hour | 
- | D16sv3 | 16 | 64 GiB | 400 GiB | $1.1616/hour | $1.9712/hour | 
+ | D2sv3 | 2 | 8 GiB | 16 GiB | $0.1452/hour | $0.2464/hour | 
+ | D4sv3 | 4 | 16 GiB | 32 GiB | $0.2904/hour | $0.4928/hour | 
+ | D8sv3 | 8 | 32 GiB | 64 GiB | $0.5808/hour | $0.9856/hour | 
+ | D16sv3 | 16 | 64 GiB | 128 GiB | $1.1616/hour | $1.9712/hour | 
  
 [back to top](#vmhourlyrates)
 #### South East Asia
 | Instance | vCPU | RAM | Storage |  Linux |  Windows |
 |----------|------|-----|---------|--------|----------|
- | D2sv3 | 2 | 8 GiB | 50 GiB | $0.1375/hour | $0.2387/hour | 
- | D4sv3 | 4 | 16 GiB | 100 GiB | $0.275/hour | $0.4774/hour | 
- | D8sv3 | 8 | 32 GiB | 200 GiB | $0.55/hour | $0.9548/hour | 
- | D16sv3 | 16 | 64 GiB | 400 GiB | $1.1/hour | $1.9096/hour | 
+ | D2sv3 | 2 | 8 GiB | 16 GiB | $0.1375/hour | $0.2387/hour | 
+ | D4sv3 | 4 | 16 GiB | 32 GiB | $0.275/hour | $0.4774/hour | 
+ | D8sv3 | 8 | 32 GiB | 64 GiB | $0.55/hour | $0.9548/hour | 
+ | D16sv3 | 16 | 64 GiB | 128 GiB | $1.1/hour | $1.9096/hour | 
 ### <a id="fv1"></a>Fv1
 The F-series virtual machines feature 2-GiB RAM and 16 GiB of local SSD temporary storage per CPU core and are optimized for compute intensive workloads. The F-series sizes are based Intel® Xeon® Platinum 8272CL processor (second generation Intel® Xeon® Scalable processors), Intel® Xeon® 8171M 2.1GHz (Skylake), Intel® Xeon® E5-2673 v4 2.3 GHz (Broadwell), or the Intel® Xeon® E5-2673 v3 2.4 GHz (Haswell) processor. These virtual machines are suitable for scenarios like batch processing, web servers, analytics, and gaming.
  
@@ -1584,10 +1584,6 @@ The Das v4-series VMs support Premium SSD disk storage and are based on the 2.35
 #### France Central
 | Instance | vCPU | RAM | Storage |  Linux |  Windows |
 |----------|------|-----|---------|--------|----------|
- | D2av4 | 2 | 8 GiB | 50 GiB | $0.1232/hour | $0.2244/hour | 
- | D4av4 | 4 | 16 GiB | 100 GiB | $0.2464/hour | $0.4488/hour | 
- | D8av4 | 8 | 32 GiB | 200 GiB | $0.4928/hour | $0.8976/hour | 
- | D16av4 | 16 | 64 GiB | 400 GiB | $0.9856/hour | $1.7952/hour | 
  
 [back to top](#vmhourlyrates)
 #### India Central
@@ -1653,10 +1649,6 @@ The Das v4-series VMs support Premium SSD disk storage and are based on the 2.35
 #### Japan West
 | Instance | vCPU | RAM | Storage |  Linux |  Windows |
 |----------|------|-----|---------|--------|----------|
- | D2av4 | 2 | 8 GiB | 50 GiB | $0.1419/hour | $0/hour | 
- | D4av4 | 4 | 16 GiB | 100 GiB | $0.2838/hour | $0/hour | 
- | D8av4 | 8 | 32 GiB | 200 GiB | $0.5676/hour | $0/hour | 
- | D16av4 | 16 | 64 GiB | 400 GiB | $1.1352/hour | $0/hour | 
  
 [back to top](#vmhourlyrates)
 #### East Asia
@@ -1682,64 +1674,64 @@ The Da v4-series VMs are based on the 2.35Ghz AMD EPYCTM 7452 processor, which c
 #### US East
 | Instance | vCPU | RAM | Storage |  Linux |  Windows |
 |----------|------|-----|---------|--------|----------|
- | D2asv4 | 2 | 8 GiB | 50 GiB | $0.1056/hour | $0.2068/hour | 
- | D4asv4 | 4 | 16 GiB | 100 GiB | $0.2112/hour | $0.4136/hour | 
- | D8asv4 | 8 | 32 GiB | 200 GiB | $0.4224/hour | $0.8272/hour | 
- | D16asv4 | 16 | 64 GiB | 400 GiB | $0.8448/hour | $1.6544/hour | 
+ | D2asv4 | 2 | 8 GiB | 16 GiB | $0.1056/hour | $0.2068/hour | 
+ | D4asv4 | 4 | 16 GiB | 32 GiB | $0.2112/hour | $0.4136/hour | 
+ | D8asv4 | 8 | 32 GiB | 64 GiB | $0.4224/hour | $0.8272/hour | 
+ | D16asv4 | 16 | 64 GiB | 128 GiB | $0.8448/hour | $1.6544/hour | 
  
 [back to top](#vmhourlyrates)
 #### US East 2
 | Instance | vCPU | RAM | Storage |  Linux |  Windows |
 |----------|------|-----|---------|--------|----------|
- | D2asv4 | 2 | 8 GiB | 50 GiB | $0.1056/hour | $0.2068/hour | 
- | D4asv4 | 4 | 16 GiB | 100 GiB | $0.2112/hour | $0.4136/hour | 
- | D8asv4 | 8 | 32 GiB | 200 GiB | $0.4224/hour | $0.8272/hour | 
- | D16asv4 | 16 | 64 GiB | 400 GiB | $0.8448/hour | $1.6544/hour | 
+ | D2asv4 | 2 | 8 GiB | 16 GiB | $0.1056/hour | $0.2068/hour | 
+ | D4asv4 | 4 | 16 GiB | 32 GiB | $0.2112/hour | $0.4136/hour | 
+ | D8asv4 | 8 | 32 GiB | 64 GiB | $0.4224/hour | $0.8272/hour | 
+ | D16asv4 | 16 | 64 GiB | 128 GiB | $0.8448/hour | $1.6544/hour | 
  
 [back to top](#vmhourlyrates)
 #### US West
 | Instance | vCPU | RAM | Storage |  Linux |  Windows |
 |----------|------|-----|---------|--------|----------|
- | D2asv4 | 2 | 8 GiB | 50 GiB | $0.1232/hour | $0.2244/hour | 
- | D4asv4 | 4 | 16 GiB | 100 GiB | $0.2464/hour | $0.4488/hour | 
- | D8asv4 | 8 | 32 GiB | 200 GiB | $0.4928/hour | $0.8976/hour | 
- | D16asv4 | 16 | 64 GiB | 400 GiB | $0.9856/hour | $1.7952/hour | 
+ | D2asv4 | 2 | 8 GiB | 16 GiB | $0.1232/hour | $0.2244/hour | 
+ | D4asv4 | 4 | 16 GiB | 32 GiB | $0.2464/hour | $0.4488/hour | 
+ | D8asv4 | 8 | 32 GiB | 64 GiB | $0.4928/hour | $0.8976/hour | 
+ | D16asv4 | 16 | 64 GiB | 128 GiB | $0.9856/hour | $1.7952/hour | 
  
 [back to top](#vmhourlyrates)
 #### US West 2
 | Instance | vCPU | RAM | Storage |  Linux |  Windows |
 |----------|------|-----|---------|--------|----------|
- | D2asv4 | 2 | 8 GiB | 50 GiB | $0.1056/hour | $0.2068/hour | 
- | D4asv4 | 4 | 16 GiB | 100 GiB | $0.2112/hour | $0.4136/hour | 
- | D8asv4 | 8 | 32 GiB | 200 GiB | $0.4224/hour | $0.8272/hour | 
- | D16asv4 | 16 | 64 GiB | 400 GiB | $0.8448/hour | $1.6544/hour | 
+ | D2asv4 | 2 | 8 GiB | 16 GiB | $0.1056/hour | $0.2068/hour | 
+ | D4asv4 | 4 | 16 GiB | 32 GiB | $0.2112/hour | $0.4136/hour | 
+ | D8asv4 | 8 | 32 GiB | 64 GiB | $0.4224/hour | $0.8272/hour | 
+ | D16asv4 | 16 | 64 GiB | 128 GiB | $0.8448/hour | $1.6544/hour | 
  
 [back to top](#vmhourlyrates)
 #### US Central
 | Instance | vCPU | RAM | Storage |  Linux |  Windows |
 |----------|------|-----|---------|--------|----------|
- | D2asv4 | 2 | 8 GiB | 50 GiB | $0.1188/hour | $0.22/hour | 
- | D4asv4 | 4 | 16 GiB | 100 GiB | $0.2387/hour | $0.4411/hour | 
- | D8asv4 | 8 | 32 GiB | 200 GiB | $0.4774/hour | $0.8822/hour | 
- | D16asv4 | 16 | 64 GiB | 400 GiB | $0.9548/hour | $1.7644/hour | 
+ | D2asv4 | 2 | 8 GiB | 16 GiB | $0.1188/hour | $0.22/hour | 
+ | D4asv4 | 4 | 16 GiB | 32 GiB | $0.2387/hour | $0.4411/hour | 
+ | D8asv4 | 8 | 32 GiB | 64 GiB | $0.4774/hour | $0.8822/hour | 
+ | D16asv4 | 16 | 64 GiB | 128 GiB | $0.9548/hour | $1.7644/hour | 
  
 [back to top](#vmhourlyrates)
 #### US North Central
 | Instance | vCPU | RAM | Storage |  Linux |  Windows |
 |----------|------|-----|---------|--------|----------|
- | D2asv4 | 2 | 8 GiB | 50 GiB | $0.1265/hour | $0.2277/hour | 
- | D4asv4 | 4 | 16 GiB | 100 GiB | $0.253/hour | $0.4554/hour | 
- | D8asv4 | 8 | 32 GiB | 200 GiB | $0.5071/hour | $0.9119/hour | 
- | D16asv4 | 16 | 64 GiB | 400 GiB | $1.0142/hour | $1.8238/hour | 
+ | D2asv4 | 2 | 8 GiB | 16 GiB | $0.1265/hour | $0.2277/hour | 
+ | D4asv4 | 4 | 16 GiB | 32 GiB | $0.253/hour | $0.4554/hour | 
+ | D8asv4 | 8 | 32 GiB | 64 GiB | $0.5071/hour | $0.9119/hour | 
+ | D16asv4 | 16 | 64 GiB | 128 GiB | $1.0142/hour | $1.8238/hour | 
  
 [back to top](#vmhourlyrates)
 #### US South Central
 | Instance | vCPU | RAM | Storage |  Linux |  Windows |
 |----------|------|-----|---------|--------|----------|
- | D2asv4 | 2 | 8 GiB | 50 GiB | $0.1265/hour | $0.2277/hour | 
- | D4asv4 | 4 | 16 GiB | 100 GiB | $0.253/hour | $0.4554/hour | 
- | D8asv4 | 8 | 32 GiB | 200 GiB | $0.5071/hour | $0.9119/hour | 
- | D16asv4 | 16 | 64 GiB | 400 GiB | $1.0142/hour | $1.8238/hour | 
+ | D2asv4 | 2 | 8 GiB | 16 GiB | $0.1265/hour | $0.2277/hour | 
+ | D4asv4 | 4 | 16 GiB | 32 GiB | $0.253/hour | $0.4554/hour | 
+ | D8asv4 | 8 | 32 GiB | 64 GiB | $0.5071/hour | $0.9119/hour | 
+ | D16asv4 | 16 | 64 GiB | 128 GiB | $1.0142/hour | $1.8238/hour | 
  
 [back to top](#vmhourlyrates)
 #### US West Central
@@ -1750,37 +1742,33 @@ The Da v4-series VMs are based on the 2.35Ghz AMD EPYCTM 7452 processor, which c
 #### North Europe
 | Instance | vCPU | RAM | Storage |  Linux |  Windows |
 |----------|------|-----|---------|--------|----------|
- | D2asv4 | 2 | 8 GiB | 50 GiB | $0.1177/hour | $0.2189/hour | 
- | D4asv4 | 4 | 16 GiB | 100 GiB | $0.2354/hour | $0.4378/hour | 
- | D8asv4 | 8 | 32 GiB | 200 GiB | $0.4708/hour | $0.8756/hour | 
- | D16asv4 | 16 | 64 GiB | 400 GiB | $0.9416/hour | $1.7512/hour | 
+ | D2asv4 | 2 | 8 GiB | 16 GiB | $0.1177/hour | $0.2189/hour | 
+ | D4asv4 | 4 | 16 GiB | 32 GiB | $0.2354/hour | $0.4378/hour | 
+ | D8asv4 | 8 | 32 GiB | 64 GiB | $0.4708/hour | $0.8756/hour | 
+ | D16asv4 | 16 | 64 GiB | 128 GiB | $0.9416/hour | $1.7512/hour | 
  
 [back to top](#vmhourlyrates)
 #### West Europe
 | Instance | vCPU | RAM | Storage |  Linux |  Windows |
 |----------|------|-----|---------|--------|----------|
- | D2asv4 | 2 | 8 GiB | 50 GiB | $0.1265/hour | $0.2277/hour | 
- | D4asv4 | 4 | 16 GiB | 100 GiB | $0.253/hour | $0.4554/hour | 
- | D8asv4 | 8 | 32 GiB | 200 GiB | $0.506/hour | $0.9108/hour | 
- | D16asv4 | 16 | 64 GiB | 400 GiB | $1.012/hour | $1.8216/hour | 
+ | D2asv4 | 2 | 8 GiB | 16 GiB | $0.1265/hour | $0.2277/hour | 
+ | D4asv4 | 4 | 16 GiB | 32 GiB | $0.253/hour | $0.4554/hour | 
+ | D8asv4 | 8 | 32 GiB | 64 GiB | $0.506/hour | $0.9108/hour | 
+ | D16asv4 | 16 | 64 GiB | 128 GiB | $1.012/hour | $1.8216/hour | 
  
 [back to top](#vmhourlyrates)
 #### France Central
 | Instance | vCPU | RAM | Storage |  Linux |  Windows |
 |----------|------|-----|---------|--------|----------|
- | D2asv4 | 2 | 8 GiB | 50 GiB | $0.1232/hour | $0.2244/hour | 
- | D4asv4 | 4 | 16 GiB | 100 GiB | $0.2464/hour | $0.4488/hour | 
- | D8asv4 | 8 | 32 GiB | 200 GiB | $0.4928/hour | $0.8976/hour | 
- | D16asv4 | 16 | 64 GiB | 400 GiB | $0.9856/hour | $1.7952/hour | 
  
 [back to top](#vmhourlyrates)
 #### India Central
 | Instance | vCPU | RAM | Storage |  Linux |  Windows |
 |----------|------|-----|---------|--------|----------|
- | D2asv4 | 2 | 8 GiB | 50 GiB | $0.0684/hour | $0.1808/hour | 
- | D4asv4 | 4 | 16 GiB | 100 GiB | $0.1356/hour | $0.3606/hour | 
- | D8asv4 | 8 | 32 GiB | 200 GiB | $0.2714/hour | $0.7212/hour | 
- | D16asv4 | 16 | 64 GiB | 400 GiB | $0.5426/hour | $1.4422/hour | 
+ | D2asv4 | 2 | 8 GiB | 16 GiB | $0.0684/hour | $0.1808/hour | 
+ | D4asv4 | 4 | 16 GiB | 32 GiB | $0.1356/hour | $0.3606/hour | 
+ | D8asv4 | 8 | 32 GiB | 64 GiB | $0.2714/hour | $0.7212/hour | 
+ | D16asv4 | 16 | 64 GiB | 128 GiB | $0.5426/hour | $1.4422/hour | 
  
 [back to top](#vmhourlyrates)
 #### UAE North
@@ -1791,10 +1779,10 @@ The Da v4-series VMs are based on the 2.35Ghz AMD EPYCTM 7452 processor, which c
 #### Brazil South
 | Instance | vCPU | RAM | Storage |  Linux |  Windows |
 |----------|------|-----|---------|--------|----------|
- | D2asv4 | 2 | 8 GiB | 50 GiB | $0.1683/hour | $0.2695/hour | 
- | D4asv4 | 4 | 16 GiB | 100 GiB | $0.3366/hour | $0.539/hour | 
- | D8asv4 | 8 | 32 GiB | 200 GiB | $0.6732/hour | $1.078/hour | 
- | D16asv4 | 16 | 64 GiB | 400 GiB | $1.3464/hour | $2.156/hour | 
+ | D2asv4 | 2 | 8 GiB | 16 GiB | $0.1683/hour | $0.2695/hour | 
+ | D4asv4 | 4 | 16 GiB | 32 GiB | $0.3366/hour | $0.539/hour | 
+ | D8asv4 | 8 | 32 GiB | 64 GiB | $0.6732/hour | $1.078/hour | 
+ | D16asv4 | 16 | 64 GiB | 128 GiB | $1.3464/hour | $2.156/hour | 
  
 [back to top](#vmhourlyrates)
 #### South Africa North
@@ -1805,10 +1793,10 @@ The Da v4-series VMs are based on the 2.35Ghz AMD EPYCTM 7452 processor, which c
 #### Australia East
 | Instance | vCPU | RAM | Storage |  Linux |  Windows |
 |----------|------|-----|---------|--------|----------|
- | D2asv4 | 2 | 8 GiB | 50 GiB | $0.132/hour | $0.2332/hour | 
- | D4asv4 | 4 | 16 GiB | 100 GiB | $0.264/hour | $0.4664/hour | 
- | D8asv4 | 8 | 32 GiB | 200 GiB | $0.528/hour | $0.9328/hour | 
- | D16asv4 | 16 | 64 GiB | 400 GiB | $1.056/hour | $1.8656/hour | 
+ | D2asv4 | 2 | 8 GiB | 16 GiB | $0.132/hour | $0.2332/hour | 
+ | D4asv4 | 4 | 16 GiB | 32 GiB | $0.264/hour | $0.4664/hour | 
+ | D8asv4 | 8 | 32 GiB | 64 GiB | $0.528/hour | $0.9328/hour | 
+ | D16asv4 | 16 | 64 GiB | 128 GiB | $1.056/hour | $1.8656/hour | 
  
 [back to top](#vmhourlyrates)
 #### Australia South East
@@ -1819,46 +1807,42 @@ The Da v4-series VMs are based on the 2.35Ghz AMD EPYCTM 7452 processor, which c
 #### Korea Central
 | Instance | vCPU | RAM | Storage |  Linux |  Windows |
 |----------|------|-----|---------|--------|----------|
- | D2asv4 | 2 | 8 GiB | 50 GiB | $0.1298/hour | $0.231/hour | 
- | D4asv4 | 4 | 16 GiB | 100 GiB | $0.2596/hour | $0.462/hour | 
- | D8asv4 | 8 | 32 GiB | 200 GiB | $0.5192/hour | $0.924/hour | 
- | D16asv4 | 16 | 64 GiB | 400 GiB | $1.0384/hour | $1.848/hour | 
+ | D2asv4 | 2 | 8 GiB | 16 GiB | $0.1298/hour | $0.231/hour | 
+ | D4asv4 | 4 | 16 GiB | 32 GiB | $0.2596/hour | $0.462/hour | 
+ | D8asv4 | 8 | 32 GiB | 64 GiB | $0.5192/hour | $0.924/hour | 
+ | D16asv4 | 16 | 64 GiB | 128 GiB | $1.0384/hour | $1.848/hour | 
  
 [back to top](#vmhourlyrates)
 #### Japan East
 | Instance | vCPU | RAM | Storage |  Linux |  Windows |
 |----------|------|-----|---------|--------|----------|
- | D2asv4 | 2 | 8 GiB | 50 GiB | $0.1364/hour | $0.2376/hour | 
- | D4asv4 | 4 | 16 GiB | 100 GiB | $0.2728/hour | $0.4752/hour | 
- | D8asv4 | 8 | 32 GiB | 200 GiB | $0.5456/hour | $0.9504/hour | 
- | D16asv4 | 16 | 64 GiB | 400 GiB | $1.0912/hour | $1.9008/hour | 
+ | D2asv4 | 2 | 8 GiB | 16 GiB | $0.1364/hour | $0.2376/hour | 
+ | D4asv4 | 4 | 16 GiB | 32 GiB | $0.2728/hour | $0.4752/hour | 
+ | D8asv4 | 8 | 32 GiB | 64 GiB | $0.5456/hour | $0.9504/hour | 
+ | D16asv4 | 16 | 64 GiB | 128 GiB | $1.0912/hour | $1.9008/hour | 
  
 [back to top](#vmhourlyrates)
 #### Japan West
 | Instance | vCPU | RAM | Storage |  Linux |  Windows |
 |----------|------|-----|---------|--------|----------|
- | D2asv4 | 2 | 8 GiB | 50 GiB | $0.1419/hour | $0/hour | 
- | D4asv4 | 4 | 16 GiB | 100 GiB | $0.2838/hour | $0/hour | 
- | D8asv4 | 8 | 32 GiB | 200 GiB | $0.5676/hour | $0/hour | 
- | D16asv4 | 16 | 64 GiB | 400 GiB | $1.1352/hour | $0/hour | 
  
 [back to top](#vmhourlyrates)
 #### East Asia
 | Instance | vCPU | RAM | Storage |  Linux |  Windows |
 |----------|------|-----|---------|--------|----------|
- | D2asv4 | 2 | 8 GiB | 50 GiB | $0.1452/hour | $0.2464/hour | 
- | D4asv4 | 4 | 16 GiB | 100 GiB | $0.2904/hour | $0.4928/hour | 
- | D8asv4 | 8 | 32 GiB | 200 GiB | $0.5808/hour | $0.9856/hour | 
- | D16asv4 | 16 | 64 GiB | 400 GiB | $1.1616/hour | $1.9712/hour | 
+ | D2asv4 | 2 | 8 GiB | 16 GiB | $0.1452/hour | $0.2464/hour | 
+ | D4asv4 | 4 | 16 GiB | 32 GiB | $0.2904/hour | $0.4928/hour | 
+ | D8asv4 | 8 | 32 GiB | 64 GiB | $0.5808/hour | $0.9856/hour | 
+ | D16asv4 | 16 | 64 GiB | 128 GiB | $1.1616/hour | $1.9712/hour | 
  
 [back to top](#vmhourlyrates)
 #### South East Asia
 | Instance | vCPU | RAM | Storage |  Linux |  Windows |
 |----------|------|-----|---------|--------|----------|
- | D2asv4 | 2 | 8 GiB | 50 GiB | $0.132/hour | $0.2332/hour | 
- | D4asv4 | 4 | 16 GiB | 100 GiB | $0.264/hour | $0.4664/hour | 
- | D8asv4 | 8 | 32 GiB | 200 GiB | $0.528/hour | $0.9328/hour | 
- | D16asv4 | 16 | 64 GiB | 400 GiB | $1.056/hour | $1.8656/hour | 
+ | D2asv4 | 2 | 8 GiB | 16 GiB | $0.132/hour | $0.2332/hour | 
+ | D4asv4 | 4 | 16 GiB | 32 GiB | $0.264/hour | $0.4664/hour | 
+ | D8asv4 | 8 | 32 GiB | 64 GiB | $0.528/hour | $0.9328/hour | 
+ | D16asv4 | 16 | 64 GiB | 128 GiB | $1.056/hour | $1.8656/hour | 
 ### <a id="eav4"></a>Eav4
 The Ea v4-series VMs are based on the 2.35Ghz AMD EPYCTM 7452 processor, which can achieve up to 3.35GHz. The Ea v4-series VMs are ideal for memory-intensive enterprise applications. Data disk storage is billed separately from virtual machines. 
  
@@ -1952,10 +1936,6 @@ The Ea v4-series VMs are based on the 2.35Ghz AMD EPYCTM 7452 processor, which c
 #### France Central
 | Instance | vCPU | RAM | Storage |  Linux |  Windows |
 |----------|------|-----|---------|--------|----------|
- | E2av4 | 2 | 16 GiB | 50 GiB | $0.1628/hour | $0.264/hour | 
- | E4av4 | 4 | 32 GiB | 100 GiB | $0.3256/hour | $0.528/hour | 
- | E8av4 | 8 | 64 GiB | 200 GiB | $0.6512/hour | $1.056/hour | 
- | E16av4 | 16 | 128 GiB | 400 GiB | $1.3024/hour | $2.112/hour | 
  
 [back to top](#vmhourlyrates)
 #### India Central
@@ -2046,64 +2026,64 @@ The Eas v4-series VMs support Premium SSD disk storage and are based on the 2.35
 #### US East
 | Instance | vCPU | RAM | Storage |  Linux |  Windows |
 |----------|------|-----|---------|--------|----------|
- | E2asv4 | 2 | 16 GiB | 50 GiB | $0.1386/hour | $0.2398/hour | 
- | E4asv4 | 4 | 32 GiB | 100 GiB | $0.2772/hour | $0.4796/hour | 
- | E8asv4 | 8 | 64 GiB | 200 GiB | $0.5544/hour | $0.9592/hour | 
- | E16asv4 | 16 | 128 GiB | 400 GiB | $1.1088/hour | $1.9184/hour | 
+ | E2asv4 | 2 | 16 GiB | 32 GiB | $0.1386/hour | $0.2398/hour | 
+ | E4asv4 | 4 | 32 GiB | 64 GiB | $0.2772/hour | $0.4796/hour | 
+ | E8asv4 | 8 | 64 GiB | 128 GiB | $0.5544/hour | $0.9592/hour | 
+ | E16asv4 | 16 | 128 GiB | 256 GiB | $1.1088/hour | $1.9184/hour | 
  
 [back to top](#vmhourlyrates)
 #### US East 2
 | Instance | vCPU | RAM | Storage |  Linux |  Windows |
 |----------|------|-----|---------|--------|----------|
- | E2asv4 | 2 | 16 GiB | 50 GiB | $0.1386/hour | $0.2398/hour | 
- | E4asv4 | 4 | 32 GiB | 100 GiB | $0.2772/hour | $0.4796/hour | 
- | E8asv4 | 8 | 64 GiB | 200 GiB | $0.5544/hour | $0.9592/hour | 
- | E16asv4 | 16 | 128 GiB | 400 GiB | $1.1088/hour | $1.9184/hour | 
+ | E2asv4 | 2 | 16 GiB | 32 GiB | $0.1386/hour | $0.2398/hour | 
+ | E4asv4 | 4 | 32 GiB | 64 GiB | $0.2772/hour | $0.4796/hour | 
+ | E8asv4 | 8 | 64 GiB | 128 GiB | $0.5544/hour | $0.9592/hour | 
+ | E16asv4 | 16 | 128 GiB | 256 GiB | $1.1088/hour | $1.9184/hour | 
  
 [back to top](#vmhourlyrates)
 #### US West
 | Instance | vCPU | RAM | Storage |  Linux |  Windows |
 |----------|------|-----|---------|--------|----------|
- | E2asv4 | 2 | 16 GiB | 50 GiB | $0.154/hour | $0.2552/hour | 
- | E4asv4 | 4 | 32 GiB | 100 GiB | $0.308/hour | $0.5104/hour | 
- | E8asv4 | 8 | 64 GiB | 200 GiB | $0.616/hour | $1.0208/hour | 
- | E16asv4 | 16 | 128 GiB | 400 GiB | $1.232/hour | $2.0416/hour | 
+ | E2asv4 | 2 | 16 GiB | 32 GiB | $0.154/hour | $0.2552/hour | 
+ | E4asv4 | 4 | 32 GiB | 64 GiB | $0.308/hour | $0.5104/hour | 
+ | E8asv4 | 8 | 64 GiB | 128 GiB | $0.616/hour | $1.0208/hour | 
+ | E16asv4 | 16 | 128 GiB | 256 GiB | $1.232/hour | $2.0416/hour | 
  
 [back to top](#vmhourlyrates)
 #### US West 2
 | Instance | vCPU | RAM | Storage |  Linux |  Windows |
 |----------|------|-----|---------|--------|----------|
- | E2asv4 | 2 | 16 GiB | 50 GiB | $0.1386/hour | $0.2398/hour | 
- | E4asv4 | 4 | 32 GiB | 100 GiB | $0.2772/hour | $0.4796/hour | 
- | E8asv4 | 8 | 64 GiB | 200 GiB | $0.5544/hour | $0.9592/hour | 
- | E16asv4 | 16 | 128 GiB | 400 GiB | $1.1088/hour | $1.9184/hour | 
+ | E2asv4 | 2 | 16 GiB | 32 GiB | $0.1386/hour | $0.2398/hour | 
+ | E4asv4 | 4 | 32 GiB | 64 GiB | $0.2772/hour | $0.4796/hour | 
+ | E8asv4 | 8 | 64 GiB | 128 GiB | $0.5544/hour | $0.9592/hour | 
+ | E16asv4 | 16 | 128 GiB | 256 GiB | $1.1088/hour | $1.9184/hour | 
  
 [back to top](#vmhourlyrates)
 #### US Central
 | Instance | vCPU | RAM | Storage |  Linux |  Windows |
 |----------|------|-----|---------|--------|----------|
- | E2asv4 | 2 | 16 GiB | 50 GiB | $0.1562/hour | $0.2574/hour | 
- | E4asv4 | 4 | 32 GiB | 100 GiB | $0.3135/hour | $0.5159/hour | 
- | E8asv4 | 8 | 64 GiB | 200 GiB | $0.627/hour | $1.0318/hour | 
- | E16asv4 | 16 | 128 GiB | 400 GiB | $1.2529/hour | $2.0625/hour | 
+ | E2asv4 | 2 | 16 GiB | 32 GiB | $0.1562/hour | $0.2574/hour | 
+ | E4asv4 | 4 | 32 GiB | 64 GiB | $0.3135/hour | $0.5159/hour | 
+ | E8asv4 | 8 | 64 GiB | 128 GiB | $0.627/hour | $1.0318/hour | 
+ | E16asv4 | 16 | 128 GiB | 256 GiB | $1.2529/hour | $2.0625/hour | 
  
 [back to top](#vmhourlyrates)
 #### US North Central
 | Instance | vCPU | RAM | Storage |  Linux |  Windows |
 |----------|------|-----|---------|--------|----------|
- | E2asv4 | 2 | 16 GiB | 50 GiB | $0.1661/hour | $0.2673/hour | 
- | E4asv4 | 4 | 32 GiB | 100 GiB | $0.3322/hour | $0.5346/hour | 
- | E8asv4 | 8 | 64 GiB | 200 GiB | $0.6655/hour | $1.0703/hour | 
- | E16asv4 | 16 | 128 GiB | 400 GiB | $1.331/hour | $2.1406/hour | 
+ | E2asv4 | 2 | 16 GiB | 32 GiB | $0.1661/hour | $0.2673/hour | 
+ | E4asv4 | 4 | 32 GiB | 64 GiB | $0.3322/hour | $0.5346/hour | 
+ | E8asv4 | 8 | 64 GiB | 128 GiB | $0.6655/hour | $1.0703/hour | 
+ | E16asv4 | 16 | 128 GiB | 256 GiB | $1.331/hour | $2.1406/hour | 
  
 [back to top](#vmhourlyrates)
 #### US South Central
 | Instance | vCPU | RAM | Storage |  Linux |  Windows |
 |----------|------|-----|---------|--------|----------|
- | E2asv4 | 2 | 16 GiB | 50 GiB | $0.1661/hour | $0.2673/hour | 
- | E4asv4 | 4 | 32 GiB | 100 GiB | $0.3322/hour | $0.5346/hour | 
- | E8asv4 | 8 | 64 GiB | 200 GiB | $0.6655/hour | $1.0703/hour | 
- | E16asv4 | 16 | 128 GiB | 400 GiB | $1.331/hour | $2.1406/hour | 
+ | E2asv4 | 2 | 16 GiB | 32 GiB | $0.1661/hour | $0.2673/hour | 
+ | E4asv4 | 4 | 32 GiB | 64 GiB | $0.3322/hour | $0.5346/hour | 
+ | E8asv4 | 8 | 64 GiB | 128 GiB | $0.6655/hour | $1.0703/hour | 
+ | E16asv4 | 16 | 128 GiB | 256 GiB | $1.331/hour | $2.1406/hour | 
  
 [back to top](#vmhourlyrates)
 #### US West Central
@@ -2114,37 +2094,33 @@ The Eas v4-series VMs support Premium SSD disk storage and are based on the 2.35
 #### North Europe
 | Instance | vCPU | RAM | Storage |  Linux |  Windows |
 |----------|------|-----|---------|--------|----------|
- | E2asv4 | 2 | 16 GiB | 50 GiB | $0.1551/hour | $0.2563/hour | 
- | E4asv4 | 4 | 32 GiB | 100 GiB | $0.3102/hour | $0.5126/hour | 
- | E8asv4 | 8 | 64 GiB | 200 GiB | $0.6204/hour | $1.0252/hour | 
- | E16asv4 | 16 | 128 GiB | 400 GiB | $1.2408/hour | $2.0504/hour | 
+ | E2asv4 | 2 | 16 GiB | 32 GiB | $0.1551/hour | $0.2563/hour | 
+ | E4asv4 | 4 | 32 GiB | 64 GiB | $0.3102/hour | $0.5126/hour | 
+ | E8asv4 | 8 | 64 GiB | 128 GiB | $0.6204/hour | $1.0252/hour | 
+ | E16asv4 | 16 | 128 GiB | 256 GiB | $1.2408/hour | $2.0504/hour | 
  
 [back to top](#vmhourlyrates)
 #### West Europe
 | Instance | vCPU | RAM | Storage |  Linux |  Windows |
 |----------|------|-----|---------|--------|----------|
- | E2asv4 | 2 | 16 GiB | 50 GiB | $0.1672/hour | $0.2684/hour | 
- | E4asv4 | 4 | 32 GiB | 100 GiB | $0.3344/hour | $0.5368/hour | 
- | E8asv4 | 8 | 64 GiB | 200 GiB | $0.6688/hour | $1.0736/hour | 
- | E16asv4 | 16 | 128 GiB | 400 GiB | $1.3376/hour | $2.1472/hour | 
+ | E2asv4 | 2 | 16 GiB | 32 GiB | $0.1672/hour | $0.2684/hour | 
+ | E4asv4 | 4 | 32 GiB | 64 GiB | $0.3344/hour | $0.5368/hour | 
+ | E8asv4 | 8 | 64 GiB | 128 GiB | $0.6688/hour | $1.0736/hour | 
+ | E16asv4 | 16 | 128 GiB | 256 GiB | $1.3376/hour | $2.1472/hour | 
  
 [back to top](#vmhourlyrates)
 #### France Central
 | Instance | vCPU | RAM | Storage |  Linux |  Windows |
 |----------|------|-----|---------|--------|----------|
- | E2asv4 | 2 | 16 GiB | 50 GiB | $0.1628/hour | $0.264/hour | 
- | E4asv4 | 4 | 32 GiB | 100 GiB | $0.3256/hour | $0.528/hour | 
- | E8asv4 | 8 | 64 GiB | 200 GiB | $0.6512/hour | $1.056/hour | 
- | E16asv4 | 16 | 128 GiB | 400 GiB | $1.3024/hour | $2.112/hour | 
  
 [back to top](#vmhourlyrates)
 #### India Central
 | Instance | vCPU | RAM | Storage |  Linux |  Windows |
 |----------|------|-----|---------|--------|----------|
- | E2asv4 | 2 | 16 GiB | 50 GiB | $0.088/hour | $0.2004/hour | 
- | E4asv4 | 4 | 32 GiB | 100 GiB | $0.1748/hour | $0.3996/hour | 
- | E8asv4 | 8 | 64 GiB | 200 GiB | $0.3496/hour | $0.7994/hour | 
- | E16asv4 | 16 | 128 GiB | 400 GiB | $0.6992/hour | $1.5986/hour | 
+ | E2asv4 | 2 | 16 GiB | 32 GiB | $0.088/hour | $0.2004/hour | 
+ | E4asv4 | 4 | 32 GiB | 64 GiB | $0.1748/hour | $0.3996/hour | 
+ | E8asv4 | 8 | 64 GiB | 128 GiB | $0.3496/hour | $0.7994/hour | 
+ | E16asv4 | 16 | 128 GiB | 256 GiB | $0.6992/hour | $1.5986/hour | 
  
 [back to top](#vmhourlyrates)
 #### UAE North
@@ -2155,10 +2131,10 @@ The Eas v4-series VMs support Premium SSD disk storage and are based on the 2.35
 #### Brazil South
 | Instance | vCPU | RAM | Storage |  Linux |  Windows |
 |----------|------|-----|---------|--------|----------|
- | E2asv4 | 2 | 16 GiB | 50 GiB | $0.2211/hour | $0.3223/hour | 
- | E4asv4 | 4 | 32 GiB | 100 GiB | $0.4422/hour | $0.6446/hour | 
- | E8asv4 | 8 | 64 GiB | 200 GiB | $0.8844/hour | $1.2892/hour | 
- | E16asv4 | 16 | 128 GiB | 400 GiB | $1.7688/hour | $2.5784/hour | 
+ | E2asv4 | 2 | 16 GiB | 32 GiB | $0.2211/hour | $0.3223/hour | 
+ | E4asv4 | 4 | 32 GiB | 64 GiB | $0.4422/hour | $0.6446/hour | 
+ | E8asv4 | 8 | 64 GiB | 128 GiB | $0.8844/hour | $1.2892/hour | 
+ | E16asv4 | 16 | 128 GiB | 256 GiB | $1.7688/hour | $2.5784/hour | 
  
 [back to top](#vmhourlyrates)
 #### South Africa North
@@ -2169,10 +2145,10 @@ The Eas v4-series VMs support Premium SSD disk storage and are based on the 2.35
 #### Australia East
 | Instance | vCPU | RAM | Storage |  Linux |  Windows |
 |----------|------|-----|---------|--------|----------|
- | E2asv4 | 2 | 16 GiB | 50 GiB | $0.1661/hour | $0.2673/hour | 
- | E4asv4 | 4 | 32 GiB | 100 GiB | $0.3322/hour | $0.5346/hour | 
- | E8asv4 | 8 | 64 GiB | 200 GiB | $0.6644/hour | $1.0692/hour | 
- | E16asv4 | 16 | 128 GiB | 400 GiB | $1.3288/hour | $2.1384/hour | 
+ | E2asv4 | 2 | 16 GiB | 32 GiB | $0.1661/hour | $0.2673/hour | 
+ | E4asv4 | 4 | 32 GiB | 64 GiB | $0.3322/hour | $0.5346/hour | 
+ | E8asv4 | 8 | 64 GiB | 128 GiB | $0.6644/hour | $1.0692/hour | 
+ | E16asv4 | 16 | 128 GiB | 256 GiB | $1.3288/hour | $2.1384/hour | 
  
 [back to top](#vmhourlyrates)
 #### Australia South East
@@ -2183,19 +2159,19 @@ The Eas v4-series VMs support Premium SSD disk storage and are based on the 2.35
 #### Korea Central
 | Instance | vCPU | RAM | Storage |  Linux |  Windows |
 |----------|------|-----|---------|--------|----------|
- | E2asv4 | 2 | 16 GiB | 50 GiB | $0.1672/hour | $0.2684/hour | 
- | E4asv4 | 4 | 32 GiB | 100 GiB | $0.3344/hour | $0.5368/hour | 
- | E8asv4 | 8 | 64 GiB | 200 GiB | $0.6688/hour | $1.0736/hour | 
- | E16asv4 | 16 | 128 GiB | 400 GiB | $1.3376/hour | $2.1472/hour | 
+ | E2asv4 | 2 | 16 GiB | 32 GiB | $0.1672/hour | $0.2684/hour | 
+ | E4asv4 | 4 | 32 GiB | 64 GiB | $0.3344/hour | $0.5368/hour | 
+ | E8asv4 | 8 | 64 GiB | 128 GiB | $0.6688/hour | $1.0736/hour | 
+ | E16asv4 | 16 | 128 GiB | 256 GiB | $1.3376/hour | $2.1472/hour | 
  
 [back to top](#vmhourlyrates)
 #### Japan East
 | Instance | vCPU | RAM | Storage |  Linux |  Windows |
 |----------|------|-----|---------|--------|----------|
- | E2asv4 | 2 | 16 GiB | 50 GiB | $0.1672/hour | $0.2684/hour | 
- | E4asv4 | 4 | 32 GiB | 100 GiB | $0.3344/hour | $0.5368/hour | 
- | E8asv4 | 8 | 64 GiB | 200 GiB | $0.6688/hour | $1.0736/hour | 
- | E16asv4 | 16 | 128 GiB | 400 GiB | $1.3376/hour | $2.1472/hour | 
+ | E2asv4 | 2 | 16 GiB | 32 GiB | $0.1672/hour | $0.2684/hour | 
+ | E4asv4 | 4 | 32 GiB | 64 GiB | $0.3344/hour | $0.5368/hour | 
+ | E8asv4 | 8 | 64 GiB | 128 GiB | $0.6688/hour | $1.0736/hour | 
+ | E16asv4 | 16 | 128 GiB | 256 GiB | $1.3376/hour | $2.1472/hour | 
  
 [back to top](#vmhourlyrates)
 #### Japan West
@@ -2206,19 +2182,19 @@ The Eas v4-series VMs support Premium SSD disk storage and are based on the 2.35
 #### East Asia
 | Instance | vCPU | RAM | Storage |  Linux |  Windows |
 |----------|------|-----|---------|--------|----------|
- | E2asv4 | 2 | 16 GiB | 50 GiB | $0.1837/hour | $0.2849/hour | 
- | E4asv4 | 4 | 32 GiB | 100 GiB | $0.3674/hour | $0.5698/hour | 
- | E8asv4 | 8 | 64 GiB | 200 GiB | $0.7348/hour | $1.1396/hour | 
- | E16asv4 | 16 | 128 GiB | 400 GiB | $1.4696/hour | $2.2792/hour | 
+ | E2asv4 | 2 | 16 GiB | 32 GiB | $0.1837/hour | $0.2849/hour | 
+ | E4asv4 | 4 | 32 GiB | 64 GiB | $0.3674/hour | $0.5698/hour | 
+ | E8asv4 | 8 | 64 GiB | 128 GiB | $0.7348/hour | $1.1396/hour | 
+ | E16asv4 | 16 | 128 GiB | 256 GiB | $1.4696/hour | $2.2792/hour | 
  
 [back to top](#vmhourlyrates)
 #### South East Asia
 | Instance | vCPU | RAM | Storage |  Linux |  Windows |
 |----------|------|-----|---------|--------|----------|
- | E2asv4 | 2 | 16 GiB | 50 GiB | $0.1672/hour | $0.2684/hour | 
- | E4asv4 | 4 | 32 GiB | 100 GiB | $0.3344/hour | $0.5368/hour | 
- | E8asv4 | 8 | 64 GiB | 200 GiB | $0.6688/hour | $1.0736/hour | 
- | E16asv4 | 16 | 128 GiB | 400 GiB | $1.3376/hour | $2.1472/hour | 
+ | E2asv4 | 2 | 16 GiB | 32 GiB | $0.1672/hour | $0.2684/hour | 
+ | E4asv4 | 4 | 32 GiB | 64 GiB | $0.3344/hour | $0.5368/hour | 
+ | E8asv4 | 8 | 64 GiB | 128 GiB | $0.6688/hour | $1.0736/hour | 
+ | E16asv4 | 16 | 128 GiB | 256 GiB | $1.3376/hour | $2.1472/hour | 
 
 ## Network egress price by zone
 
