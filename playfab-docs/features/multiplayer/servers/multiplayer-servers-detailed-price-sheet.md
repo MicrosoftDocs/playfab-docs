@@ -691,6 +691,7 @@ The Dsv2-series virtual machines run on the Intel® Xeon® Platinum 8272CL proce
  | D4sv2 | 4 | 14 GiB | 28 GiB | $0.3476/hour | $0.638/hour | 
  | D8sv2 | 8 | 28 GiB | 56 GiB | $0.6941/hour | $1.2749/hour | 
  | D16sv2 | 16 | 56 GiB | 112 GiB | $1.3893/hour | $2.5498/hour | 
+
 ### <a id="dv3"></a>Dv3
 The Dv3-series virtual machines run on the Intel® Xeon® Platinum 8272CL processor (second generation Intel® Xeon® Scalable processors), Intel® Xeon® 8171M 2.1GHz (Skylake), Intel® Xeon® E5-2673 v4 2.3 GHz (Broadwell), or the Intel® Xeon® E5-2673 v3 2.4 GHz (Haswell) processors in a hyper-threaded configuration. The Dv3-series sizes offer a combination of vCPU(s), memory, and local disk well suited for most production workloads.
  
@@ -1091,6 +1092,7 @@ The Dsv3-series support premium storage and run on the Intel® Xeon® Platinum 8
  | D4sv3 | 4 | 16 GiB | 32 GiB | $0.275/hour | $0.4774/hour | 
  | D8sv3 | 8 | 32 GiB | 64 GiB | $0.55/hour | $0.9548/hour | 
  | D16sv3 | 16 | 64 GiB | 128 GiB | $1.1/hour | $1.9096/hour | 
+ 
 ### <a id="fv1"></a>Fv1
 The F-series virtual machines feature 2-GiB RAM and 16 GiB of local SSD temporary storage per CPU core and are optimized for compute intensive workloads. The F-series sizes are based Intel® Xeon® Platinum 8272CL processor (second generation Intel® Xeon® Scalable processors), Intel® Xeon® 8171M 2.1GHz (Skylake), Intel® Xeon® E5-2673 v4 2.3 GHz (Broadwell), or the Intel® Xeon® E5-2673 v3 2.4 GHz (Haswell) processor. These virtual machines are suitable for scenarios like batch processing, web servers, analytics, and gaming.
  
@@ -1843,6 +1845,7 @@ The Da v4-series VMs are based on the 2.35Ghz AMD EPYCTM 7452 processor, which c
  | D4asv4 | 4 | 16 GiB | 32 GiB | $0.264/hour | $0.4664/hour | 
  | D8asv4 | 8 | 32 GiB | 64 GiB | $0.528/hour | $0.9328/hour | 
  | D16asv4 | 16 | 64 GiB | 128 GiB | $1.056/hour | $1.8656/hour | 
+
 ### <a id="eav4"></a>Eav4
 The Ea v4-series VMs are based on the 2.35Ghz AMD EPYCTM 7452 processor, which can achieve up to 3.35GHz. The Ea v4-series VMs are ideal for memory-intensive enterprise applications. Data disk storage is billed separately from virtual machines. 
  
