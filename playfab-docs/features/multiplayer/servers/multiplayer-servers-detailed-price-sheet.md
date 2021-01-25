@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Multiplayer servers - detailed price sheet
 
-PlayFab multiplayer servers operate on most generally available Azure virtual machine sizes and regions. These are the most popular series for game developers providing progressively faster processors:
+PlayFab multiplayer servers operate on most generally available Azure virtual machine sizes and regions. These are the most popular series for game developers providing progressively faster processors.
 
 ## Recommended VMs
 
@@ -469,6 +469,7 @@ The Dv2-series virtual machines run on the Intel® Xeon® Platinum 8272CL proces
  | D4v2 | 4 | 14 GiB | 200 GiB | $0.3476/hour | $0.638/hour | 
  | D8v2 | 8 | 28 GiB | 400 GiB | $0.6941/hour | $1.2749/hour | 
  | D16v2 | 16 | 56 GiB | 800 GiB | $1.3893/hour | $2.5498/hour | 
+
 ### <a id="dsv2"></a>Dsv2
 The Dsv2-series virtual machines run on the Intel® Xeon® Platinum 8272CL processor (second generation Intel® Xeon® Scalable processors), Intel® Xeon® 8171M 2.1GHz (Skylake), Intel® Xeon® E5-2673 v4 2.3 GHz (Broadwell), or the Intel® Xeon® E5-2673 v3 2.4 GHz (Haswell) processors with the Intel Turbo Boost Technology 2.0 and support Premium SSDs disk storage. The Dsv2-series sizes offer a balanced combination of vCPU(s), memory, and local disk for most production workloads.
  
@@ -691,6 +692,7 @@ The Dsv2-series virtual machines run on the Intel® Xeon® Platinum 8272CL proce
  | D4sv2 | 4 | 14 GiB | 28 GiB | $0.3302/hour | $0.6061/hour | 
  | D8sv2 | 8 | 28 GiB | 56 GiB | $0.6594/hour | $1.2112/hour | 
  | D16sv2 | 16 | 56 GiB | 112 GiB | $1.3198/hour | $2.4223/hour | 
+
 ### <a id="dv3"></a>Dv3
 The Dv3-series virtual machines run on the Intel® Xeon® Platinum 8272CL processor (second generation Intel® Xeon® Scalable processors), Intel® Xeon® 8171M 2.1GHz (Skylake), Intel® Xeon® E5-2673 v4 2.3 GHz (Broadwell), or the Intel® Xeon® E5-2673 v3 2.4 GHz (Haswell) processors in a hyper-threaded configuration. The Dv3-series sizes offer a combination of vCPU(s), memory, and local disk well suited for most production workloads.
  
@@ -1091,6 +1093,7 @@ The Dsv3-series support premium storage and run on the Intel® Xeon® Platinum 8
  | D4sv3 | 4 | 16 GiB | 32 GiB | $0.2613/hour | $0.4535/hour | 
  | D8sv3 | 8 | 32 GiB | 64 GiB | $0.5225/hour | $0.9071/hour | 
  | D16sv3 | 16 | 64 GiB | 128 GiB | $1.045/hour | $1.8141/hour | 
+
 ### <a id="fv1"></a>Fv1
 The F-series virtual machines feature 2-GiB RAM and 16 GiB of local SSD temporary storage per CPU core and are optimized for compute intensive workloads. The F-series sizes are based Intel® Xeon® Platinum 8272CL processor (second generation Intel® Xeon® Scalable processors), Intel® Xeon® 8171M 2.1GHz (Skylake), Intel® Xeon® E5-2673 v4 2.3 GHz (Broadwell), or the Intel® Xeon® E5-2673 v3 2.4 GHz (Haswell) processor. These virtual machines are suitable for scenarios like batch processing, web servers, analytics, and gaming.
  
@@ -1291,6 +1294,7 @@ The F-series virtual machines feature 2-GiB RAM and 16 GiB of local SSD temporar
  | F4v1 | 4 | 8 GiB | 64 GiB | $0.2541/hour | $0.4565/hour | 
  | F8v1 | 8 | 16 GiB | 128 GiB | $0.5082/hour | $0.913/hour | 
  | F16v1 | 16 | 32 GiB | 256 GiB | $1.0164/hour | $1.826/hour | 
+
 ### <a id="fsv2"></a>Fsv2
 The Fsv2-series virtual machines provide 2-GiB of RAM and 8 GB of local temporary storage (SSD) per vCPU(s) and are optimized for compute intensive workloads. The Fsv2-series VMs are hyper-threaded and based on the Intel® Xeon® Platinum 8272CL (second generation Intel® Xeon® Scalable processors), or the Intel Xeon® Platinum 8168 (Skylake) processor. These virtual machines are ideal for scenarios like batch processing, web servers, analytics, and gaming.
  
@@ -1491,6 +1495,7 @@ The Fsv2-series virtual machines provide 2-GiB of RAM and 8 GB of local temporar
  | F4sv2 | 4 | 8 GiB | 32 GiB | $0.2048/hour | $0.3689/hour | 
  | F8sv2 | 8 | 16 GiB | 64 GiB | $0.4096/hour | $0.7378/hour | 
  | F16sv2 | 16 | 32 GiB | 128 GiB | $0.8193/hour | $1.4745/hour | 
+
 ### <a id="dav4"></a>Dav4
 The Das v4-series VMs support Premium SSD disk storage and are based on the 2.35Ghz AMD EPYCTM 7452 processor, which can achieve up to 3.35GHz. The Das v4 VM sizes offer a combination of vCPUs, memory and temporary storage able to meet the requirements associated with most production workloads.
  
@@ -1667,6 +1672,7 @@ The Das v4-series VMs support Premium SSD disk storage and are based on the 2.35
  | D4av4 | 4 | 16 GiB | 100 GiB | $0.264/hour | $0.4664/hour | 
  | D8av4 | 8 | 32 GiB | 200 GiB | $0.528/hour | $0.9328/hour | 
  | D16av4 | 16 | 64 GiB | 400 GiB | $1.056/hour | $1.8656/hour | 
+
 ### <a id="dasv4"></a>Dasv4
 The Da v4-series VMs are based on the 2.35Ghz AMD EPYCTM 7452 processor, which can achieve up to 3.35GHz. The Dav4 VM sizes offer a combination of vCPU(s), memory and temporary storage able to meet the requirements associated with most production workloads. Data disk storage is billed separately from virtual machines. To use Premium SSD disk storage, select the Das v4 VMs.
  
@@ -1843,6 +1849,7 @@ The Da v4-series VMs are based on the 2.35Ghz AMD EPYCTM 7452 processor, which c
  | D4asv4 | 4 | 16 GiB | 32 GiB | $0.2508/hour | $0.4431/hour | 
  | D8asv4 | 8 | 32 GiB | 64 GiB | $0.5016/hour | $0.8862/hour | 
  | D16asv4 | 16 | 64 GiB | 128 GiB | $1.0032/hour | $1.7723/hour | 
+
 ### <a id="eav4"></a>Eav4
 The Ea v4-series VMs are based on the 2.35Ghz AMD EPYCTM 7452 processor, which can achieve up to 3.35GHz. The Ea v4-series VMs are ideal for memory-intensive enterprise applications. Data disk storage is billed separately from virtual machines. 
  
@@ -2019,6 +2026,7 @@ The Ea v4-series VMs are based on the 2.35Ghz AMD EPYCTM 7452 processor, which c
  | E4av4 | 4 | 32 GiB | 100 GiB | $0.3344/hour | $0.5368/hour | 
  | E8av4 | 8 | 64 GiB | 200 GiB | $0.6688/hour | $1.0736/hour | 
  | E16av4 | 16 | 128 GiB | 400 GiB | $1.3376/hour | $2.1472/hour | 
+
 ### <a id="easv4"></a>Easv4
 The Eas v4-series VMs support Premium SSD disk storage and are based on the 2.35Ghz AMD EPYCTM 7452 processor, which can achieve up to 3.35GHz. The Eas v4-series VMs are ideal for memory-intensive enterprise applications.
  
@@ -2149,6 +2157,7 @@ The Eas v4-series VMs support Premium SSD disk storage and are based on the 2.35
  | E4asv4 | 4 | 32 GiB | 64 GiB | $0.3156/hour | $0.5079/hour | 
  | E8asv4 | 8 | 64 GiB | 128 GiB | $0.6312/hour | $1.0157/hour | 
  | E16asv4 | 16 | 128 GiB | 256 GiB | $1.2624/hour | $2.0315/hour | 
+
  
 [back to top](#vmhourlyrates)
 #### Australia South East
