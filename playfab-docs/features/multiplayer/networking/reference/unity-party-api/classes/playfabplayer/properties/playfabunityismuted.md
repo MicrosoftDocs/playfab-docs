@@ -10,10 +10,10 @@ ms.date: 06/22/2020
 
 # IsMuted
 
-Returns true if the player is muted.
+Gets or sets whether the player is muted.
 
 ```csharp
-public bool PlayFabPlayer.IsMuted { get; }
+public bool PlayFabPlayer.IsMuted { get; set; }
 ```
 
 ## Property Value

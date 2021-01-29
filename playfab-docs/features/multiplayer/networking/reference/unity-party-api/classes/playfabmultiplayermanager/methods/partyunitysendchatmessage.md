@@ -1,7 +1,7 @@
 ---
 author: vicodex
 title: PlayFabMultiplayerManager.Get().SendChatMessage
-description: Sends a chat message to a specific list of recipients.
+description: Sends a chat message to a specific list of players.
 ms.author: victorku
 ms.topic: reference
 ms.prod: playfab
@@ -10,7 +10,7 @@ ms.date: 06/22/2020
 
 # SendChatMessage
 
-Sends a chat message to a specific list of recipients.
+Sends a chat message to a specific list of players (recipients).
 
 ## Syntax
 

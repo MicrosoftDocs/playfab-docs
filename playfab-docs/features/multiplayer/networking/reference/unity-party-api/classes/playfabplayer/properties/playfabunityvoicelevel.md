@@ -10,7 +10,7 @@ ms.date: 06/22/2020
 
 # VoiceLevel
 
-Gets and sets the volume of the player. The value is a float between 0 and 1.
+Gets or sets the volume of the player. The value is a float between 0 and 1.
 
 ```csharp
 public float PlayFabPlayer.VoiceLevel { get; set; }
