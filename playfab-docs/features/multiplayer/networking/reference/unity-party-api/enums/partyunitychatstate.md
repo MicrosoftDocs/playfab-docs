@@ -8,7 +8,7 @@ ms.prod: playfab
 ms.date: 06/22/2020
 ---
 
-# ChatState
+# ChatMessageState
 
 The visual state of the player for rendering in the game's UI.
 

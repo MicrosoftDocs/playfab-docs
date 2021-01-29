@@ -26,10 +26,14 @@
     href: ios-specific-requirements.md
 - name: Unity
   items:
+  - name: Party Unity plugin overview
+    href: party-unity-overview.md
   - name: Party Unity plugin quickstart
     href: party-unity-plugin-quickstart.md  
   - name: Party Unity plugin API reference
     href: reference/unity-party-api/index.md
+  - name: Party Unity plugin release notes
+    href: party-unity-release-notes.md
 - name: Unreal Engine 4
   items:
   - name: Party Unreal Online Subsystem (OSS)
@@ -109,14 +113,12 @@
             items:
               - name: Properties
                 items:
+                 - name: IsChatControlAvailable
+                   href: reference/unity-party-api/classes/playfablocalplayer/properties/playfabunityischatcontrolavailable.md
                  - name: LanguageCode
                    href: reference/unity-party-api/classes/playfablocalplayer/properties/playfabunitylanguagecode.md
                  - name: PlatformSpecificUserId
                    href: reference/unity-party-api/classes/playfablocalplayer/properties/playfabunityplatformspecificuserid.md
-                 - name: SpeechToTextMode
-                   href: reference/unity-party-api/classes/playfablocalplayer/properties/playfabunityspeechtotextmode.md
-                 - name: TextToSpeechMode
-                   href: reference/unity-party-api/classes/playfablocalplayer/properties/playfabunitytexttospeechmode.md
           - name: PlayFabPlayer
             href: reference/unity-party-api/classes/playfabplayer/index.md
             items:
@@ -133,7 +135,7 @@
                  - name: VoiceLevel
                    href: reference/unity-party-api/classes/playfabplayer/properties/playfabunityvoicelevel.md
           - name: PlayFabMultiplayerManager
-            href: reference/unity-party-api/classes/playfabmultiplayermanager/index.md          
+            href: reference/unity-party-api/classes/playfabmultiplayermanager/index.md
             items:
               - name: Properties
                 items:
@@ -144,9 +146,15 @@
                   - name: NetworkId
                     href: reference/unity-party-api/classes/playfabmultiplayermanager/properties/playfabunitynetworkid.md
                   - name: RemotePlayers
-                    href: reference/unity-party-api/classes/playfabmultiplayermanager//properties/playfabunityremoteplayers.md
+                    href: reference/unity-party-api/classes/playfabmultiplayermanager/properties/playfabunityremoteplayers.md
+                  - name: SpeechToTextMode
+                    href: reference/unity-party-api/classes/playfabmultiplayermanager/properties/playfabunityspeechtotextmode.md
                   - name: State
                     href: reference/unity-party-api/classes/playfabmultiplayermanager/properties/playfabunitystate.md
+                  - name: TextToSpeechMode
+                    href: reference/unity-party-api/classes/playfabmultiplayermanager/properties/playfabunitytexttospeechmode.md
+                  - name: TranslateChat
+                    href: reference/unity-party-api/classes/playfabmultiplayermanager/properties/playfabunitytranslatechat.md
               - name: Methods
                 items:
                   - name: SendChatMessage
@@ -163,6 +171,8 @@
                     href: reference/unity-party-api/classes/playfabmultiplayermanager/methods/playfabunitysenddatamessage.md
                   - name: SendDataMessageToAllPlayers
                     href: reference/unity-party-api/classes/playfabmultiplayermanager/methods/playfabunitysenddatamessagetoallplayers.md
+                  - name: UpdateEntityToken
+                    href: reference/unity-party-api/classes/playfabmultiplayermanager/methods/playfabunityupdateentitytoken.md
               - name: Events
                 items:
                   - name: partyunityonchatmessagereceived 

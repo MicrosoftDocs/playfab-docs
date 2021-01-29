@@ -1,5 +1,5 @@
 ---
-title: Quickstart Party Unity plugin quickstart
+title: Party Unity plugin quickstart
 description: Guidance on how to use PlayFab party in your Unity Project.
 author: xmcai2016
 ms.author: carocai
@@ -11,43 +11,41 @@ keywords: playfab, multiplayer, networking, unity, middleware
 
 # Quickstart: PlayFab Party Unity Plugin
 
-Get started with the Unity PlayFab Party Plugin. Follow steps to install the package and try out example code for a basic task.
+Get started with the PlayFab Party Unity plugin. Follow steps below to install the package and try out example code for a basic task.
 
 This quickstart helps you make your first API calls using the Party SDK for Unity. Before continuing, make sure you have completed [Getting started for developers](../../../personas/developer.md) and [Quickstart: PlayFab Client library for C# in Unity](../../../sdks/unity3d/quickstart.md), which ensures you have a PlayFab account and are familiar with logging into PlayFab from your game and the PlayFab Game Manager.
 
 > [!NOTE]
 >
-> This plugin only supports titles created using the Microsoft Game Development Kit (GDK). If you intend to use this plug-in to develop games based on the GDK you need to acquire and install the GDK separately. Android and iOS versions of the plugin are in private preview.
+> If you intend to use this plugin to develop games based on the Microsoft Game Development Kit (GDK) you need to acquire and install the GDK separately. Please also see details about Unity add-on for Game Core on Xbox consoles.
 >
 
 ## Requirements
 
 - A [PlayFab developer account](https://developer.playfab.com/en-us/sign-up).
-- An installed copy of the Unity Editor. To install Unity for personal use via Unity Hub, or Unity+ for professional use, see [Download Unity](https://unity3d.com/get-unity/download). The minimum supported Unity version is Unity 2017 LTS.
+- An installed copy of the Unity Editor. To install Unity for personal use via Unity Hub, or Unity+ for professional use, see [Download Unity](https://unity3d.com/get-unity/download). Check on Unity support in documentation of your specific platform if needed. The minimum supported Unity version is Unity 2017 LTS.
 - A Unity Project – this can be any of the following:
 
   - A brand new project: For more information, see [Starting Unity for the first time](https://docs.unity3d.com/Manual/GettingStarted.html).
   - A guided tutorial project. For more information, see [Getting Started with Unity](https://learn.unity.com/).
   - An existing project.
 
-- The PlayFab Unity3D SDK. For information about installing the Unity3D SDK, see the "Download and install PlayFab SDK" section of [Quickstart: PlayFab Client library for C# in Unity](../../../sdks/unity3d/quickstart.md#download-and-install-playfab-sdk).
+- The PlayFab "core" Unity3D SDK. For information about installing the Unity3D SDK, see the "Download and install PlayFab SDK" section of [Quickstart: PlayFab Client library for C# in Unity](../../../sdks/unity3d/quickstart.md#download-and-install-playfab-sdk).
 
-## Download and install the PlayFab Party Unity Plugin
+## Download and install the PlayFab Party Unity plugin
 
-Following the steps to download and install the PlayFab Party Unity Plugin.
+Following the steps to download and install the PlayFab Party Unity plugin.
 
-1. Download the PlayFab [Party Unity Plugin](https://github.com/playfab/PlayFabPartyUnity) Asset Package.
+1. Download the PlayFab [Party Unity Plugin](https://github.com/playfab/PlayFabPartyUnity) Asset Package (use a distribution point depending on your platform).
+1. **Important!** Please see information in [README file](https://github.com/PlayFab/PlayFabPartyUnity/blob/master/README.md) published with plugin. It is tailored to each particular version and may include important instructions specific to your platform.
 1. Open your Unity Project.
 1. Navigate to the location where you saved the .unitypackage and double-click it to open the import dialog.
 1. To import the PlayFab Party Unity Plugin into your project, select  **Import**.
 
-Now you are ready to make your first API calls.
-
 ## Set up your scene
+This part of the guide shows you how to add the `PlayFabMultiplayerManager` to your scene to enable you to call PlayFab Party APIs from Unity.
 
-This part of the guide shows you how to add the PlayFabMultiplayerManager to your scene to enable you to call PlayFab Party APIs from Unity.
-
-Before you can create a network, you must have a PlayFab player logged in. For information about logging in a player, see [Making your first API call in Quickstart: PlayFab Client library for C# in Unity](../../../sdks/unity3d/quickstart.md#making-your-first-api-call).
+Before you can create a network, you **must have a PlayFab player logged in**. For information about logging in a player, see [Making your first API call in Quickstart: PlayFab Client library for C# in Unity](../../../sdks/unity3d/quickstart.md#making-your-first-api-call).
 
 1. In the Unity editor, in the Project window, navigate to  **Assets > PlayFabPartySDK > Prefabs**.
 1. From the Prefabs folder, drag and drop the  **PlayFabMultiplayerManager**  into your scene in the **Hierachy** window.
@@ -95,7 +93,7 @@ Before you can create a network, you must have a PlayFab player logged in. For i
 >  Mismatch between the processor architecture of the project being built "MSIL" and the processor architecture of the reference "XGamingRuntime", "AMD64".
 >  ```
 
-The Microsoft GDK only supports x64.
+The Microsoft GDK and Windows only support x64.
 
 To resolve these issues:
 
@@ -222,7 +220,7 @@ This part of the guide shows you how to send and receive data messages. Before y
     }
     ```
 
-Save NetworkLogic.cs and select Play in the Unity Editor.
+Save HelloPartyLogic.cs and select Play in the Unity Editor.
 
 1. In a second client, use the code shown above in Connect to a network to create and join a network.
 1. Copy the Network ID returned to your first client and connect to the network.
@@ -249,7 +247,7 @@ Before you can start sending and receiving chat messages, you must join a networ
     }
     ```
 
-Save NetworkLogic.cs and press Play in the Unity Editor.
+Save HelloPartyLogic.cs and press Play in the Unity Editor.
 
 1. In a second client, use the code shown above in Connect to a network to create and join a network.
 1. Copy the Network ID returned to your first client and connect to the network.

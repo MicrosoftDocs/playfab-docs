@@ -10,7 +10,7 @@ ms.date: 06/22/2020
 
 # IsLocal
 
-Returns true if this player is the local player. Returns false if it is a remote player.
+Returns true if this player is the local player, and false if this player is a remote player.
 
 ```csharp
 public bool PlayFabPlayer.IsLocal { get; }

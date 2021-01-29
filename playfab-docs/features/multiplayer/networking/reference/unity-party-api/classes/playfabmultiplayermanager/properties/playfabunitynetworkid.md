@@ -1,7 +1,7 @@
 ---
 author: vicodex
 title: PlayFabMultiplayerManager.NetworkId
-description: Gets the connection string of the current network to which the client is connected.
+description: Returns NetworkID of the current network to which the player is connected.
 ms.author: victorku
 ms.topic: reference
 ms.prod: playfab
@@ -10,14 +10,14 @@ ms.date: 06/22/2020
 
 # NetworkId
 
-Gets the connection string of the current network to which the client is connected. This connection string can be passed to other clients to connect to the network. The NetworkId is populated after the OnNetworkJoined event fires.
+Returns NetworkID of the current network to which the player is connected. The other players can use this string to join the network. The NetworkId is populated when the `OnNetworkJoined` event fires. The NetworkId is cleared when the `OnNetworkLeft` event fires.
 
 ```csharp
-public string PlayFabMultiplayerManager.NetworkId {get; }
+public string PlayFabMultiplayerManager.NetworkId { get; }
 ```
 
 ## Property Value
 
 NetworkId
 
-[string](https://docs.microsoft.com/dotnet/api/system.string?view=netcore-3.1)
+[string](https://docs.microsoft.com/dotnet/api/system.string?view=netcore-3.1&preserve-view=true)

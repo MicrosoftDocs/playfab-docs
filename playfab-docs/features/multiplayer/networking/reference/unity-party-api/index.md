@@ -16,7 +16,7 @@ ms.date: 06/22/2020
 | --- | --- |
 | [PlayFabLocalPlayer](classes/playfabLocalplayer/index.md) |  |
 | [PlayFabMultiplayerManager](classes/playfabmultiplayermanager/index.md) |   |
-| [PlayFabLocalPlayer](classes/playfablocalplayer/index.md) |   |
+| [PlayFabPlayer](classes/playfabplayer/index.md) |   |
 
 ## Enums
 
@@ -26,6 +26,6 @@ ms.date: 06/22/2020
 | [ChatMessageType](enums/partyunitychatmessagetype.md) |  The type of delivery guarantee for a message. |
 | [ChatState](enums/partyunitychatstate.md) | The visual state of the player for rendering in the game's UI.  |
 | [DeliveryOption](enums/partyunitydeliveryoption.md) | The type of delivery guarantee for a message.  |
-| [LogLevelType](enums/partyunitydeliveryoption.md) | The amount of logging that is enabled.  |
-| [PlayFabMultiplayerManagerErrorType](enums/partyunityplayfabmultiplayermanagererrortype.md) | The types of errors the PlayFabMultiplayerManager can raise.  |
-| [PlayFabMultiplayerManagerState](enums/partyunityplayfabmultiplayermanagerstate.md) | The possible states that the PlayFabMultiplayerManager can be in.  |
+| [LogLevelType](enums/partyunitylogleveltype.md) | The amount of logging that is enabled.  |
+| [PlayFabMultiplayerManagerErrorType](enums/partyunityplayfabmultiplayermanagererrortype.md) | The types of errors PlayFabMultiplayerManager can raise.  |
+| [PlayFabMultiplayerManagerState](enums/partyunityplayfabmultiplayermanagerstate.md) | The possible states that PlayFabMultiplayerManager can be in.  |

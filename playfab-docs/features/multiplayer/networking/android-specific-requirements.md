@@ -20,7 +20,7 @@ Before you start this tutorial, please ensure that the following prerequisites h
 
 1. You created a [PlayFab developer account](https://developer.playfab.com/en-us/sign-up).
 
-1. You created a PlayFab Title and your title has been whitelisted for PlayFab Party.
+1. You created a PlayFab Title and your title has been allow-listed for PlayFab Party.
 
 1. You have Android Studio version 3.2 or higher installed.
 

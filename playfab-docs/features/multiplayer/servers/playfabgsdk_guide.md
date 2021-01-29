@@ -284,16 +284,16 @@ public class Huli : ModuleRules
 }
 ```
 
-### Pre-packaging Tip: Blacklisting or Removing UE4 Plugins
+### Pre-packaging Tip: denylisting or Removing UE4 Plugins
 
 > [!IMPORTANT]
 > Before packaging the Huli Server, it’s important to understand that since we are using Windows Server and docker containers from PlayFab, some UE4 plugins are not compatible with it. 
 
 ![](media/f3612a461c9f4715ef94bfbbd5c9c95b.png)
 
-So far, the only one we found that prevents our PlayFab dedicated 2.0 server build from spinning up after deployment is the **Windows MoviePlayer** plugin. We simply *disabled/removed* it from our game outright, instead of blacklisting; however, UE4 does give you options to blacklist a plugin from running on a specific target if you’d like. For example, if your game client needs the **Windows MoviePlayer** plugin, but the server has no need to run it, you can set up blacklisting (or whitelisting if you prefer) within the `\*.uplugin` file itself.
+So far, the only one we found that prevents our PlayFab dedicated 2.0 server build from spinning up after deployment is the **Windows MoviePlayer** plugin. We simply *disabled/removed* it from our game outright, instead of denylisting; however, UE4 does give you options to denylist a plugin from running on a specific target if you’d like. For example, if your game client needs the **Windows MoviePlayer** plugin, but the server has no need to run it, you can set up denylisting (or allowlisting if you prefer) within the `\*.uplugin` file itself.
 
-More on whitelist/blacklisting:  
+More on allowlist/denylisting:  
 <https://answers.unrealengine.com/questions/345335/conditionally-compile-plugins-based-on-platform.html>
 
 ### Packaging `HuliServer.exe`
