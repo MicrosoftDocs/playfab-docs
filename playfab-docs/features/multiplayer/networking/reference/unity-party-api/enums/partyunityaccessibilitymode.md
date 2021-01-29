@@ -1,7 +1,7 @@
 ---
 author: vicodex
 title: AccessibilityMode
-description: 
+description: Options that specify which accessibility settings are enabled.
 ms.author: victorku
 ms.topic: reference
 ms.prod: playfab
@@ -18,7 +18,8 @@ Options that specify which accessibility settings are enabled.
 public enum AccessibilityMode
 {
     None,
-    PlatformDefault
+    PlatformDefault,
+    Enabled
 }
 ```
 
@@ -28,3 +29,4 @@ public enum AccessibilityMode
 | --- | --- |
 | **None** | No accessibility settings are enabled. |
 | **PlatformDefault** | The accessibility settings are enabled based on the user and/or platform's settings. |
+| **Enabled** | The accessibility settings are always enabled. |

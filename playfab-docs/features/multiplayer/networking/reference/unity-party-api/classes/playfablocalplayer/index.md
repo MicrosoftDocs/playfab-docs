@@ -10,9 +10,11 @@ ms.date: 06/22/2020
 
 # Class PlayFabLocalPlayer
 
+## Properties
+
 | Name | Description |
 | --- | --- |
-| [LanguageCode](properties/playfabunitylanguagecode.md) | Gets the language code for the player. |
+| [IsChatControlAvailable](properties/playfabunityischatcontrolavailable.md) | Gets the indication whether any public API that relies on a chat control associated with this player can be safely used. Player's chat control becomes available after the user creates or joins a party. |
+| [LanguageCode](properties/playfabunitylanguagecode.md) | Gets or sets the language code for the player. |
 | [PlatformSpecificUserId](properties/playfabunityplatformspecificuserid.md) | Gets an additional identifier that represents the platform's user-specific identifier. |
-| [SpeechToTextMode](properties/playfabunityspeechtotextmode.md) | Gets or sets whether speech to text is enabled. Note: Speech to text is only enabled if this property is true and the player's speech to text preferences are enabled. |
-| [TextToSpeechMode](properties/playfabunitytexttospeechmode.md) | The PlayFabMultiplayerManager is initialized and connected to a network. At this point messages can be sent and received. |
+
