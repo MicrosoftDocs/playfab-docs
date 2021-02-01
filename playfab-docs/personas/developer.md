@@ -52,7 +52,7 @@ Here are some resources to help you with the initial authentication of your play
 
 To allow you to integrate PlayFab into your Title, we provide SDKs, libraries, and extensions for the most popular game engines, frameworks, and platforms.
 
-Visit [PlayFab SDKs, tools, and extensions](../sdks/index.yml) and choose the appropriate quickstart guide for your preferred environment. The quickstarts walk you through installing your environment, creating a new test project, and making your first API call.
+Select the SDK and appropriate quickstart guide for your preferred environment. The quickstart guide walks through installing the SDK into your environment, creating a new test project, and making your first API call. To get started, see [SDK overview](../sdks/playfab-sdk-intro.md).
 
 ## Using PlayFab services to instrument your Title
 

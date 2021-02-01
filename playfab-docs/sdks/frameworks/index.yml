@@ -37,3 +37,15 @@ landingContent:
         links:
           - text: Phaser.io (Javascript)
             url: ../phaser/index.md
+
+  # Card (optional)
+  - title: Photon
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Photon 
+            url: ../photon/index.md
+      - linkListType: quickstart
+        links:
+          - text: Photon quickstart
+            url: ../photon/quickstart.md

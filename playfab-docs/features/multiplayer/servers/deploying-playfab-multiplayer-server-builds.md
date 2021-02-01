@@ -55,7 +55,7 @@ After your game has launched, you will probably want to update your game server 
 
 ## Managing builds using the multiplayer server API and PowerShell
 
-You may want to manage PlayFab server builds programmatically. You can do this using the [Multiplayer Server APIs](xref:titleid.playfabapi.com.multiplayer.multiplayerserver) directly our by using any of our [PlayFab SDKs](../../../sdks/index.yml).
+You may want to manage PlayFab server builds programmatically. You can do this using the [Multiplayer Server APIs](xref:titleid.playfabapi.com.multiplayer.multiplayerserver) directly our by using any of our [PlayFab SDKs](../../../sdks/playfab-sdk-intro.md).
 
 PlayFab multiplayer servers has a simple PowerShell module enabling build management. This module uses PlayFab's C# SDK to interact with the entity API, and can be a useful resource for navigating the entity API.
 
