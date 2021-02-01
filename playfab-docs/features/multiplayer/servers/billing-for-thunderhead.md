@@ -51,7 +51,6 @@ Games that require Multiplayer Servers must purchase additional capacity through
 
 - **Virtual machine instance hours** - The hours of virtual machine time that your game servers are utilizing. Different virtual machine and container selections are priced at different rates. See [Multiplayer Servers detailed price sheet](multiplayer-servers-detailed-price-sheet.md) for more information.
 - **Network egress** - The volume of data transmitted by your game servers to the Internet (in gigabytes). Network egress is billed at different rates depending on the originating data center.
-- **Storage** - The storage used by PlayFab (in gigabytes) to host and replicate you game server assets and containers.
 
 A typical monthly bill might be:
 
@@ -63,7 +62,6 @@ A typical monthly bill might be:
 | Multiplayer Servers - D2v2 - West Europe | 1000 | VM Hours | $0.252 | $252.00 |
 | Multiplayer Servers - D2v2 - Australia  East | 100 | VM Hours | $0.302 | $30.20 |
 | Multiplayer Servers - D2v2 - East Asia |100 | VM Hours | $0.277 | $27.70 |
-| Multiplayer Servers - Cloud Storage |10 | GB | $0.10 | $1.00 |
 | Multiplayer - Data Egress - Zone 1 |1000 | GB | $0.05 | $50.00 |
 | Multiplayer - Data Egress - Zone 2 |100 | GB | $0.08 | $8.00 |
 | *Total* | |  |  | $1,124.90 |
@@ -140,12 +138,6 @@ Network egress can be a substantial expense, especially for large multiplayer se
 In this example, assume that testing shows that a multiplayer session sends 1 MB of data per second of active play.
 
 Since we earlier calculated 300,000 server minutes used in a month, we can estimate that 300,000 users x 60 MB per minute equals 18,000,000 MB of data sent per month.
-
-### Storage costs
-
-Cloud storage for your uploaded assets and containers is the last billed resources for PlayFab multiplayer servers, and generally the cheapest element. The peak total file size of what you've uploaded over a month is summed and charged at $.10 per GB per month.
-
-At 100,000 users, each averaging 12 user minutes per month, this comes out to 1.2 million user minutes. Dividing this number by the average users per session (4) results in 300,000 total session minutes used.
 
 ## How to pay
 
