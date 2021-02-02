@@ -80,7 +80,7 @@ $Asset.MountPath = "C:\Assets"
 New-PFMultiplayerBuild -BuildName "PSTest_build"  -StartMultiplayerServerCommand "C:\Assets\WindowsRunnerCSharp.exe" -Ports $Ports -VMSize $VMSelection -AssetReferences $Asset -MultiplayerServerCountPerVm 1 -RegionConfiguration $Regions
 ```
 
-In a few seconds we should see the build through the **PowerShell** or [ListBuildSummaries API](xref:titleid.playfabapi.com.multiplayer.multiplayerserver.listbuildsummaries), as shown below.
+In a few seconds we should see the build through the **PowerShell** or [ListBuildSummaries API](xref:titleid.playfabapi.com.multiplayer.multiplayerserver.listbuildsummariesv2), as shown below.
 
 ```powershell
 Get-PFMultiplayerBuild -All

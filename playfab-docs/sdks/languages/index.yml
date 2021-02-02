@@ -9,9 +9,9 @@ metadata:
   ms.service: service #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.subservice: playfab # Optional; Remove if no subservice is used.
   ms.topic: landing-page # Required
-  author: Jeffrey-Shi #Required; your GitHub user alias, with correct capitalization.
-  ms.author: jeffshi #Required; microsoft alias of author; optional team alias.
-  ms.date: 05/21/2020 #Required; mm/dd/yyyy format.
+  author: joannaleecy #Required; your GitHub user alias, with correct capitalization.
+  ms.author: joanlee #Required; microsoft alias of author; optional team alias.
+  ms.date: 01/21/2021 #Required; mm/dd/yyyy format.
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
 
@@ -64,11 +64,11 @@ landingContent:
             url: ../objective-c/quickstart.md
 
   # Card
-  - title: PlayFab C++
+  - title: C++
     linkLists:
       - linkListType: overview
         links:
-          - text: PlayFab XPlat C++
+          - text: C++
             url: ../playfab-cpp/index.md
       - linkListType: quickstart
         links:
@@ -78,35 +78,3 @@ landingContent:
             url: ../playfab-cpp/quickstart-windows.md
           - text: Quickstart - Xbox One quickstart
             url: ../playfab-cpp/quickstart-xbox.md          
-            
-  # Card
-  - title: Party
-    linkLists:
-      - linkListType: download
-        links:
-          - text: Party SDKs
-            url: ../../features/multiplayer/networking/party-sdks.md
-      - linkListType: quickstart
-        links:
-          - text: Party quickstart
-            url: ../../features/multiplayer/networking/party-getting-started.md
-
-  # Card
-  - title: Multiplayer Servers
-    linkLists:
-      - linkListType: download
-        links:
-          - text: Python
-            url: ../python/index.md
-          - text: GSDK for C++ Windows servers
-            url: https://www.nuget.org/packages/com.playfab.cppgsdk.v140
-          - text: GSDK for C# Windows servers
-            url: https://www.nuget.org/packages/com.playfab.csharpgsdk
-          - text: GSDK for Java Windows & Linux servers
-            url: https://mvnrepository.com/artifact/com.playfab/gameserverSDK            
-      - linkListType: quickstart
-        links:
-          - text: Quickstart (API/PowerShell)
-            url: ../../features/multiplayer/servers/quickstart-for-multiplayer-servers-api-powershell.md
-          - text: Quickstart (Game Manager)
-            url: ../../features/multiplayer/servers/quickstart-for-multiplayer-servers-game-manager.md    

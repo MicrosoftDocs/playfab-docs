@@ -35,9 +35,24 @@
   href: personas/toc.yml
 - name: Pricing
   href: features/pricing/toc.yml
-- name: Release Notes
+- name: Release notes
   href: release-notes/toc.yml
-- name: API References
+- name: API references
   href: api-references/toc.yml
 - name: SDKs
   href: sdks/toc.yml
+- name: Recipes and samples
+  href: resources/toc.yml
+- name: Tools and utilities
+  href: sdks/tools/index.yml
+  items:
+    - name: SDK Generator
+      href: sdks/sdkgenerator/index.md
+      items:
+      - name: Quickstart
+        href: sdks/sdkgenerator/quickstart.md
+    - name:  Postman
+      href: sdks/postman/index.md
+      items:
+      - name: Quickstart
+        href: sdks/postman/postman-quickstart.md
