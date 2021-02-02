@@ -1,3 +1,7 @@
+- name: SDK overview
+  href: sdk-overview.md
+- name: PlayFab SDK
+  href: playfab-sdk-intro.md
 - name: Languages
   href: languages/index.yml
   items:
@@ -18,7 +22,7 @@
     items:
     - name: Quickstart
       href: objective-c/quickstart.md
-  - name: PlayFab CPP
+  - name: C++
     href: playfab-cpp/index.md
     items:
     - name: Quickstart - Linux
@@ -42,7 +46,7 @@
       items:
       - name: Quickstart
         href: photon/quickstart.md
-- name: Game Engines
+- name: Game engines
   href: game-engines/index.yml
   items:
     - name:  Unity3D
@@ -87,18 +91,3 @@
       items:
       - name: Quickstart
         href: python/quickstart.md
-- name: Tools and utilities
-  href: tools/index.yml
-  items:
-    - name: SDK Generator
-      href: sdkgenerator/index.md
-      items:
-      - name: Quickstart
-        href: sdkgenerator/quickstart.md
-    - name:  Postman
-      href: postman/index.md
-      items:
-      - name: Quickstart
-        href: postman/postman-quickstart.md
-- name: Recipes and Samples
-  href: ../resources/toc.yml

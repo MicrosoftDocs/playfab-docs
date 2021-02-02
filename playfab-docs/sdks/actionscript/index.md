@@ -21,7 +21,7 @@ Adobe ended support for Adobe Flash Player and has been completely removed from 
 
 Our ActionScript SDK provides everything you need to access the PlayFab API. This includes models, methods, and an HTTP wrapper for sending and receiving web requests and JSON serialization.
 
-Download Links:
+## Download links
 - [Final SDK release](https://github.com/PlayFab/ActionScriptSDK/releases/tag/0.108.200629)
-- [Download Source Code](https://github.com/PlayFab/ActionScriptSDK)
-- [Download PlayFab SDK](https://aka.ms/playfabactionscriptsdkdownload)
+- [ActionScript PlayFab SDK GitHub repo](https://github.com/PlayFab/ActionScriptSDK)
+- [Quick download link for ActionScript PlayFab SDK](https://aka.ms/playfabactionscriptsdkdownload)
