@@ -63,7 +63,7 @@ A *defining characteristic* of a player might be a:
 - Real money purchases, etc.
 
 > [!Note]
-> Player country is only one of your *many* possible options, and is only required for this example. Feel free to replace the country requirement with another filter of your choice.
+> Player's location is only one of your *many* possible options, and is only required for this example. Feel free to replace the country/region requirement with another filter of your choice.
 
 When a segment is defined, you have a variety of action options to run when a player enters or leaves the segment.
 
@@ -75,7 +75,7 @@ In our example shown here, the segment configuration requires 4 simple steps.
 
 1. Assign an appropriate **Segment name (1)** (in our example, that's **Canadian Players**).
 
-1. In the **Player (2)** area, assign any conditions that the **Player** must meet to enter the segment. (In our example, we want a **Location: country** filter with a strict value: **Canada**.
+1. In the **Player (2)** area, assign any conditions that the **Player** must meet to enter the segment. (In our example, we want a **Location (country/region)** filter with a strict value: **Canada**.
 1. In the **Type** area, add an **Execute CloudScript (3)** action for the entered segment trigger.
 1. Configure the action to run the function we want (**helloWorld (3)**).
 1. Use the **Save Segment** button **(4)** to commit your activities.
@@ -121,7 +121,7 @@ Each filter has a unique configuration and purpose. As of 4/30/2017 the followin
 - **Last login (date)** filter - Allows you to filter based on the last login datetime (example - players that have not signed in since 1/1/2017).
 - **Last login (timespan)** filter - Allows you to filter based on the last login timespan relative to the current datetime  (example, players that have not signed in for a week [from now]).
 - **Linked user account to** filter  - Allows you to filter based on the users' linked accounts (example - players that have a Steam account linked with email).
-- **Location (country)** filter - Allows you to filter based on a player's country (example - players from Canada).
+- **Location (country/region)** filter - Allows you to filter based on player's country/region (example - players from Canada).
 - **Push notifications enabled with** filter - Allows you to filter based on player push notification settings and capabilities (example - players that have Google push notifications enabled.
 - **Statistics value** filter - Allows you to filter based on your own custom statistic attribute (example - players that inflicted 20000 damage in total).
 - **Tag** filter - Allows you to filter based on whether a player has or doesn't have a certain tag (example - players that have a *cheater* tag).
