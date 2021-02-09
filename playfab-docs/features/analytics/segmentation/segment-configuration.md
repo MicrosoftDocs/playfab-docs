@@ -54,7 +54,7 @@ The *defining characteristic* of a player can be:
 - Virtual currency values
 - Real money purchases, and more.
 
-**Player Country** is one of many possible options, and only specifically required for this example. Feel free to replace the country requirement with another filter of your choice.
+Player's location is one of many possible options, and only specifically required for this example. Feel free to replace the country/region requirement with another filter of your choice.
 
 When a segment is defined, you have a variety of action options to run when a player enters or leaves the segment.
 
@@ -65,7 +65,7 @@ Utilize the second parameter, *Context* in your CloudScript handler to identify 
 In this particular case, segment configuration requires 4 simple steps:
 
 1. Assign an appropriate name for the segment. It's a good idea to use a name that incorporates your *Defining Characteristic* - **Canada Players**.
-2. Assign conditions that a player has to meet to enter the segment. In this case we want a *country* filter with the strict value: *Canada*.
+2. Assign conditions that a player has to meet to enter the segment. In this case we want a *Location (country/region)* filter with the strict value: *Canada*.
 3. Add a CloudScript action for the entered segment trigger. Configure the action to run the function you want. In this example, we want **helloWorld**.
 4. Commit by selecting the **Save Segment** button.
 
@@ -76,7 +76,7 @@ Utilize the second parameter, *Context* in your CloudScript handler to identify 
 In this particular case, segment configuration requires 4 simple steps:
 
 1. Assign an appropriate name for the segment (it's a good idea to use a name that incorporates your *defining characteristic* - **Canada Players**).
-2. Assign conditions that a player has to meet to enter the segment. In this case we want a *Country* filter with the strict value: *Canada*.
+2. Assign conditions that a player has to meet to enter the segment. In this case we want a *Location (country/region)* filter with the strict value: *Canada*.
 3. Add a **CloudScript** action for the entered segment trigger. Configure the action to run the function you want. In this example, we want: **helloWorld**.
 4. Commit by selecting the **Save Segment** button.
 
@@ -106,7 +106,7 @@ Each filter has a unique configuration and purpose. As of 4/30/2017, the followi
 - The **Last login (date) filter** - Allows you to filter based on last login datetime. For example, players that have not signed since 1/1/2017.
 - The **Last login (timespan) filter** - Allows you to filter based on last login timespan relative to the current datetime. For example, players that have not signed in for a week (from now).
 - The **Linked user account to filter** - Allows you to filter based on users linked accounts. For example, players that have a Steam account linked with an email account.
-- The **Location (country) Filter** - Allows you to filter based on a player country. For example, players from Canada.
+- The **Location (country/region) filter** - Allows you to filter based on player's country/region. For example, players from Canada.
 - The **Push notifications enabled with filter** - Allows you to filter based on player push settings and capabilities. For example, players that have Google push notifications enabled.
 - The **Statistics value filter** - Allows you to filter based on your own custom statistic attribute. For example, players that inflicted 20000 damage in total.
 - The **Tag filter** - Allows you to filter based on whether a player has or doesn't have a certain tag. For example, players that have a *cheater* tag.

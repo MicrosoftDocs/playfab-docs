@@ -26,7 +26,7 @@ ms.localizationpriority: medium
 |LinkedAccounts|[PlayerLinkedAccount](playerlinkedaccount.md)|Array of third party accounts linked to this player|
 |Locations_LastLogin_City|String|City of the player's geographic location on last login|
 |Locations_LastLogin_ContinentCode|[ContinentCode](continentcode.md)|The two-character continent code for this location|
-|Locations_LastLogin_CountryCode|[CountryCode](countrycode.md)|The two-character ISO 3166-1 country code for the country associated with the location|
+|Locations_LastLogin_CountryCode|[CountryCode](countrycode.md)|The two-character ISO 3166-1 country code for the country/region associated with the location|
 |Locations_LastLogin_Latitude|Real|Latitude coordinate of the player's geographic location on last login|
 |Locations_LastLogin_Longitude|Real|Longitude coordinate of the player's geographic location on last login|
 |Origination|[LoginIdentityProvider](loginidentityprovider.md)|Player account origination|
