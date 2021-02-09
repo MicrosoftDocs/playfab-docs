@@ -356,7 +356,7 @@ We will grab **Data Item** data exclusively from the PlayFab service, and only r
 
 ![PlayMarket add product price](media/tutorials/playmarket-add-product-price.png)  
 
-1. Enter a valid price (notice how price is converted for each country independently).
+1. Enter a valid price (notice how price is converted for each country/region independently).
 2. Select the **Apply** button.
 
 ![PlayMarket add product apply local prices](media/tutorials/playmarket-add-product-apply-local-prices.png)
