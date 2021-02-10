@@ -85,6 +85,7 @@ These require separate API calls to another service, but do not require addition
 - [LoginWithKongregate](xref:titleid.playfabapi.com.client.authentication.loginwithkongregate)
 - [LoginWithSteam](xref:titleid.playfabapi.com.client.authentication.loginwithsteam)
 - [LoginWithTwitch](xref:titleid.playfabapi.com.client.authentication.loginwithtwitch).
+- [LoginWithGameCenter](xref:titleid.playfabapi.com.client.authentication.loginwithgamecenter) (iOS only)
 
 Secure authentication happens between your user, and the 3rd party service API call.
 
@@ -104,24 +105,6 @@ Use an appropriate anonymous login for a basic login, and encourage your player 
 
 > [!TIP]
 > Account recovery only requires *one* recoverable login, so don't pressure your player to use all of them.
-
-## Insecure recoverable login mechanisms
-
-It is possible to set up an insecure recoverable login for a legitimate (if limited) purpose.
-
-Specifically, [LoginWithGameCenter](xref:titleid.playfabapi.com.client.authentication.loginwithgamecenter) is considered an *insecure login mechanism*, and you should use it with *extreme* care (or not at all).
-
-GameCenter is a secure login specifically between an iOS device and the GameCenter service, but unlike Apple's Identity Verification service, there is *no* secure authentication option for a 3rd party service like PlayFab. Even so, some developers are very familiar with GameCenter, and wish to use it as their recoverable login mechanism.
-
-### Safe usage
-
-The only *safe* usage of this mechanism is for client-authoritative games with *no multiplayer capability*.
-
-PlayFab can be a useful Cloud-save option for this type of game, using this mechanism. All other uses of `LoginWithGameCenter` should be considered *unsafe*. Do *not* use this login for *any* kind of game with *any* kind of multiplayer interaction.
-
-### Best practice
-
-*Don't use it!* Instead - use a secure recoverable mechanism described in the previous section. Even if your game is safe *today*, you may add a feature tomorrow (like Chat or Trading), which *seems* innocuous but opens up your players to theft, cheating, and malicious user activity.
 
 ## Conclusion
 
