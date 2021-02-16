@@ -20,10 +20,10 @@ When MPS is enabled, you can use Multiplayer Servers for free in a limited capac
 
 | Service |Included Free| Region |
 |-|-|-|
-|Av2 VM Hours | 750 Av2 Hours | East US |
-|Av2 VM Hours | 750 Av2 Hours | North Europe |
-|Fv2 VM Hours | 750 Fv2 Hours | East US |
-|Fv2 VM Hours | 750 Fv2 Hours | North Europe |
+|Av2 VM core hours | 750 Av2 core hours | East US |
+|Av2 VM core hours | 750 Av2 core hours | North Europe |
+|Fv2 VM core hours | 750 Fv2 core hours | East US |
+|Fv2 VM core hours | 750 Fv2 core hours | North Europe |
 | Network Egress | 10 GB | Zone 1 |
 | Network Egress | 10 GB | Zone 2 |
 
@@ -32,18 +32,18 @@ The free evaluation mode also includes limit imposed on simultaneous cores activ
 The maximum simultaneous core quota in the free evaluation modes are:
 
 | Service | Included Free | Region |
-|-|-|-|
-| Maximum Av2 Cores | 24 Av2 Cores | East US |
-| Maximum Av2 Cores | 24 Av2 Cores | North Europe |
-| Maximum Fv2 Cores | 24 Fv2 Cores | East US |
-| Maximum Fv2 Cores | 24 Fv2 Cores | North Europe |
+|-|-|-
+| Maximum Av2 cores | 24 Av2 cores | East US |
+| Maximum Av2 cores | 24 Av2 cores | North Europe |
+| Maximum Fv2 cores | 24 Fv2 cores | East US |
+| Maximum Fv2 cores | 24 Fv2 cores | North Europe |
 
 This is typically *not* enough to launch a live game, but it can help you evaluate the service and get started.
 
 To learn more about these different virtual machine please see [Azure VM Sizes](https://docs.microsoft.com/azure/virtual-machines/sizes).
 
 > [!NOTE]
-> The amount of free evaluation capacity that is provided per month is based on your PlayFab billing mode.
+> The amount of free evaluation capacity provided per month is based on your PlayFab billing mode and is also calculated based on core hours. This means that if you use a **single core ** Av2 series VM (like A1v2), you have 750 free hours. But if you use a **dual core ** Av2 series VM (like A2v2), you have 375 free hours instead &mdash; 750 divided by 2 equals 375.
 
 ## <a name="consumption-pricing"> Consumption pricing for PlayFab Multiplayer Servers</a>
 
