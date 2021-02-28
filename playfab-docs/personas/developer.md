@@ -89,7 +89,7 @@ Finally, check out each of our feature areas in the links provided below to find
 - [Data](../features/data/index.yml)
 - [Automation](../features/automation/index.yml)
 - [Social](../features/social/index.yml)
-- [Commerce](../features/commerce/index.yml)
+- [Economy](../features/commerce/index.yml)
 - [Multiplayer](../features/multiplayer/index.yml)
 - [Analytics](../features/analytics/index.yml)
 - [Engagement](../features/engagement/index.yml)

@@ -6,7 +6,7 @@ ms.author: joanlee
 ms.date: 10/26/2018
 ms.topic: article
 ms.prod: playfab
-keywords: playfab, commerce, stores, segmentation
+keywords: playfab, commerce, economy, stores, segmentation
 ms.localizationpriority: medium
 ---
 

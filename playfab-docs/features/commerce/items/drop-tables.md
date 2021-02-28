@@ -6,7 +6,7 @@ ms.author: joanlee
 ms.date: 10/26/2018
 ms.topic: article
 ms.prod: playfab
-keywords: playfab, commerce, items, catalogs, drop tables
+keywords: playfab, commerce, economy, items, catalogs, drop tables
 ms.localizationpriority: medium
 ---
 
