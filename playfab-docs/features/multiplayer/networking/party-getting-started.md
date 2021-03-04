@@ -51,7 +51,7 @@ Running a sample is a helpful way to learn how Party works. To download a sample
 
 ### Install the PlayFab SDK
 
-You can use the PlayFab SDK to get the PlayFab Entity Token. The PlayFab SDK is needed when you want to use other PlayFab functionalities such as commerce and leaderboards.
+You can use the PlayFab SDK to get the PlayFab Entity Token. The PlayFab SDK is needed when you want to use other PlayFab functionalities such as economy and leaderboards.
 
 1. Install the version of the PlayFab SDK that you need&mdash;select by [languages](https://docs.microsoft.com/gaming/playfab/sdks/languages/), [game engines](https://docs.microsoft.com/gaming/playfab/sdks/game-engines/), or [frameworks](https://docs.microsoft.com/gaming/playfab/sdks/frameworks/).
 1. Associate your game's PlayFab title ID with the PlayFab SDK. If you need to find out what title IDs are or where to find them, see [Your studios and titles](../../../gamemanager/quickstart.md#your-studios-and-titles).

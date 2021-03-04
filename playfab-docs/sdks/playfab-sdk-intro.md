@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 This topic lists the different flavors of Azure PlayFab SDKs we currently have today.
 
-PlayFab SDK enables you to implement a majority of our features, including LiveOps, commerce, matchmaking, and data analytics.
+PlayFab SDK enables you to implement a majority of our features, including LiveOps, economy, matchmaking, and data analytics.
 
 For broad API categories in this SDK, see [API REST operation groups](https://docs.microsoft.com/rest/api/playfab/admin/).
 

@@ -6,7 +6,7 @@ ms.author: joanlee
 ms.date: 10/26/2018
 ms.topic: article
 ms.prod: playfab
-keywords: playfab, commerce, stores, catalogs, currencies
+keywords: playfab, commerce, economy, stores, catalogs, currencies
 ms.localizationpriority: medium
 ---
 

@@ -18,7 +18,7 @@ There are three types of SDKs to facilitate the use of PlayFab features and serv
 
 ## PlayFab SDK
 
-PlayFab SDK enables you to use a majority of our features, including LiveOps, commerce, matchmaking, and data analytics. For more information, see [PlayFab SDKs](playfab-sdk-intro.md).
+PlayFab SDK enables you to use a majority of our features, including LiveOps, economy, matchmaking, and data analytics. For more information, see [PlayFab SDKs](playfab-sdk-intro.md).
 
 ## PlayFab Party SDK
 
