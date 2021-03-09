@@ -3,7 +3,7 @@ title: Azure PlayFab SDKs
 author: joannaleecy
 description: Azure PlayFab SDKs
 ms.author: joanlee
-ms.date: 01/12/2021
+ms.date: 02/22/2021
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, playfab sdk
@@ -16,38 +16,44 @@ This topic lists the different flavors of Azure PlayFab SDKs we currently have t
 
 PlayFab SDK enables you to implement a majority of our features, including LiveOps, economy, matchmaking, and data analytics.
 
+Access to SDKs for Nintendo Switch, PlayStation 4, PlayStation 5, and Google Stadia requires special approval and adherence to platform policies. For more information, see [Request access for SDKs and samples](../features/multiplayer/networking/request-access-for-sdks-samples.md). 
+
 For broad API categories in this SDK, see [API REST operation groups](https://docs.microsoft.com/rest/api/playfab/admin/).
 
 > [!Tip]
 > Unsure if this is the SDK you need? See [SDK overview - PlayFab SDK, Party SDK, Multiplayer Server SDK](sdk-overview.md).
 
-Select the SDK based on the language, engine, or framework you are using for development.
+## By content
 
-For documentation and SDK download links, see the list below.
+| SDK/library                       | Platform/environments                     |
+|-----------------------------------|-------------------------------------------|
+| C++                               | [Android, iOS, Linux, Windows (Win32) x64, Xbox One, Xbox Series X&#124;S](playfab-cpp/index.md), [Switch](https://dev.azure.com/PlayFabPrivate/Switch/_git/XPlatCppSdk-Private-Switch), [PlayStation 4](https://dev.azure.com/PlayFabPrivate/PS4/_git/XPlatCppSdk-Private-Ps4), [PlayStation 5](https://dev.azure.com/PlayFabPrivate/PS5/_git/XPlatCppSdk-Private-PS5), [Cocos2D](cocos2d-x/index.md) (community supported)|
+| C#                                | [Xamarin](c-sharp/index.md) and other C#/.NET environments besides Unity |
+| Java                              | [Android Studio](androidstudio/index.md) |
+| JavaScript                        | [Phaser.io](phaser/index.md)|
+| Lua                               | [Corona (now Solar2D), Defold](lua/index.md) |
+| NodeJS                            | [Node.js applications](nodejs/index.md)|
+| Objective-C (community supported) | [iOS](objective-c/index.md)|
+| Photon                            | [Facilitates PlayFab integration only](photon/index.md)|
+| PHP (community supported)         | [PHP](php/index.md)|
+| Python (community supported)      | [Python](python/index.md)|
+| Unity                             | [Titles developed using Unity](unity3d/index.md)|
+| Unreal Engine                     | [Titles developed using Unreal Engine](unreal/index.md)|
 
-* [Supported languages](https://docs.microsoft.com/gaming/playfab/sdks/languages/):
-    * [Android Studio (Java)](androidstudio/index.md)
-    * [C\#](c-sharp/index.md)
-    * [Java](java/index.md)
-    * [Objective-C (iOS)](objective-c/index.md)
-    * [PlayFab CPP (C++)](playfab-cpp/index.md)
+## By platform/operating system
 
-* [Frameworks](https://docs.microsoft.com/gaming/playfab/sdks/frameworks/):
-    * [Cocos2D](cocos2d-x/index.md)
-    * [Phaser.io (JavaScript)](phaser/index.md)
-    * [Photon](photon/index.md) - facilitates PlayFab integration only
+| Platform/operating system | SDK/library                       |
+|---------------------------|-----------------------------------|
+| Android                   | [C# (using Xamarin)](c-sharp/index.md), [Java/Android Studio](java/index.md), [Lua](lua/index.md), [Unity](unity3d/index.md), [Unreal Engine](unreal/index.md) |
+| iOS                       | [C# (using Xamarin)](c-sharp/index.md), [Lua](lua/index.md), [Objective-C](objective-c/index.md) (community supported), [Unity](unity3d/index.md), [Unreal Engine](unreal/index.md) |
+| Linux                     | [C++](playfab-cpp/index.md), [Lua](lua/index.md) |
+| PlayStation 4             | [C++](https://dev.azure.com/PlayFabPrivate/PS4/_git/XPlatCppSdk-Private-Ps4), [Unity](unity3d/index.md), [Unreal Engine](unreal/index.md) |
+| PlayStation 5             | [C++](https://dev.azure.com/PlayFabPrivate/PS5/_git/XPlatCppSdk-Private-PS5), [Unity](unity3d/index.md), [Unreal Engine](unreal/index.md) |
+| Switch                    | [C++](https://dev.azure.com/PlayFabPrivate/Switch/_git/XPlatCppSdk-Private-Switch), [Unity](unity3d/index.md), [Unreal Engine](unreal/index.md)               |
+| Windows (Win32) x64       | [C++](playfab-cpp/index.md), [Lua](lua/index.md), [Unity](unity3d/index.md), [Unreal Engine](unreal/index.md) |
+| Xbox One, Xbox Series X&#124;S| [C++](playfab-cpp/index.md), [Unity](unity3d/index.md), [Unreal Engine](unreal/index.md) |
 
-* [Game engines](https://docs.microsoft.com/gaming/playfab/sdks/game-engines/):
-    * [Lua](lua/index.md)
-    * [Unity3D](unity3d/index.md)
-    * [Unreal Engine (Blueprints & C++)](unreal/index.md)
-
-* [Scripting](https://docs.microsoft.com/gaming/playfab/sdks/scripting/):
-    * [ActionScript](actionscript/index.md)
-    * [JavaScript](javascript/index.md)
-    * [NodeJS](nodejs/index.md)
-    * [PHP](php/index.md)
-    * [Python](python/index.md)
+Alternatively, you can also view the available SDKs based on [languages](https://docs.microsoft.com/gaming/playfab/sdks/languages/), [frameworks](https://docs.microsoft.com/gaming/playfab/sdks/frameworks/), [game engines](https://docs.microsoft.com/gaming/playfab/sdks/game-engines/), and [scripting languages](https://docs.microsoft.com/gaming/playfab/sdks/scripting/).
 
 ## See also
 
