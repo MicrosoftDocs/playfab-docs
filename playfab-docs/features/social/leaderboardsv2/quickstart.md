@@ -23,12 +23,12 @@ ms.localizationpriority: medium
 
 ### In the Game Manager:
 
- ![](media/quickstart1.png)
+ ![Shows how to get to New Leaderboard in Game Manager](media/quickstart1.png)
 
 * Go to **Leaderboards** in the menu to the left.
 * Select **NEW LEADERBOARD**.
   
- ![](media/quickstart2.png)
+ ![List of configurations available when creating a new leaderboard](media/quickstart2.png)
   
   
 * Configure your new leaderboard the way you want.

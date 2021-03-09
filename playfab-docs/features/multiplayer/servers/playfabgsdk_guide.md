@@ -1,7 +1,7 @@
 ---
 title: Integrating the PlayFab GSDK into Unreal Engine 4
 author: joannaleecy
-description: How to quickly upload a sample multiplayer server, configure a server build, and create server instances.
+description: Integrating the PlayFab GSDK into Unreal Engine 4.
 ms.author: joanlee
 ms.date: 09/12/2019
 ms.topic: article
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Integrating the PlayFab GSDK into Unreal Engine 4
 
-![](media/9d68e5424e82ba691c46b1bdc63d1b20.png)
+![HICON games brand logo](media/9d68e5424e82ba691c46b1bdc63d1b20.png)
 
 **Released 8/22/2019**  
 **Copyright © 2019 HICON Games, LLC. All Rights Reserved.**
@@ -55,38 +55,37 @@ Our programmers use Visual Studio 2017.
 
 -------------
 
-- Unreal Engine 4 Documentation:
+- Unreal Engine 4 documentation:
 https://docs.unrealengine.com/index.html
 
-- PlayFab Documentation (NEW): https://docs.microsoft.com/gaming/playfab/
+- PlayFab documentation: https://docs.microsoft.com/gaming/playfab/
 
-- PlayFab API Reference: <https://docs.microsoft.com/gaming/playfab/api-references/>
+- PlayFab API reference: <https://docs.microsoft.com/gaming/playfab/api-references/>
 
-- PlayFab Local Debugging (MockVM):
+- PlayFab local debugging (MockVM):
 <https://docs.microsoft.com/gaming/playfab/features/multiplayer/servers/locally-debugging-game-servers-and-integration-with-playfab>
 
 ## Integrating the PlayFab GSDK into Huli
 
 The easiest way to download the PlayFab GSDK is to use the Visual Studio NuGet Package Manager.
 
-1. Open up the Huli project solution `Huli.sln` file in Visual Studio. 
+1. Open the Huli project solution file `Huli.sln` in Visual Studio. 
 
-2. Navigate to **Tools** and select **NuGet Package Manager** then choose **Manage NuGet Packages for
-    Solution**.  
+2. Navigate to **Tools** > **NuGet Package Manager** > **Manage NuGet Packages for Solution**.  
     
-    ![](media/290f62fa7bffcfd4c12ed90d34ab8616.png)
+    ![Select Nuget Package Manager from Tools UI](media/290f62fa7bffcfd4c12ed90d34ab8616.png)
 
-3. Click on the Browse tab and search for “*playfab*.” 
+3. Select the Browse tab and search for “*playfab*.” 
 
-    ![](media/1b7186f065b369c7a20bfe475558e494.png)
+    ![Search using the PlayFab term from the Browse tab](media/1b7186f065b369c7a20bfe475558e494.png)
 
-4. Find `com.playfab.cppgsdk.v140` and then select Games\Huli project from the list and make sure to pick the latest stable version, then click the **Install** button.  
+4. Find `com.playfab.cppgsdk.v140` and then select Games\Huli project from the list. Make sure to pick the latest stable version, then select the **Install** button.  
 
-    ![](media/fa1b6091f3c1f3883f75a467bd1c8722.png)
+    ![Select the latest stable version of PlayFab Multiplayer SDK (GSDK) from the list and select the Games\Huli folder](media/fa1b6091f3c1f3883f75a467bd1c8722.png)
 
 5. This will create a “packages” folder within the Huli project root folder and will contain the entire PlayFab C++ GSDK. We will link to this later.
 
-    ![](media/3b86e24dba61aa15c0910671cd89c429.png)
+    ![Shows the GSDK (com.playfab.cppgsdk) installed as a package within Huli root folder](media/3b86e24dba61aa15c0910671cd89c429.png)
 
 ### Overriding the UE4 Startup/Shutdown Modules
 
@@ -94,7 +93,7 @@ The way we chose to integrate the PlayFab GSDK’s core functions was to overrid
 
 1. Open the Huli game module header file `Huli.h`, located under Games\Huli\Source\Huli.   
 
-    ![](media/1c9daa35536ccf8d3aef3a854d2e8e7a.png)
+    ![Shows the location of the file Huli.h using Visual Studio solution explorer](media/1c9daa35536ccf8d3aef3a854d2e8e7a.png)
 
 2. In this header file, we’ve defined our public overrides of the UE4: `StartupModule()`, `ShutdownModule()` and `IsGameModule()` and also defined a few private methods that made it easier for us to implement the PlayFab GSDK functions.
 
@@ -228,13 +227,13 @@ void FHuliGameModuleImpl::LogError(FString message)
 #endif
 ```
 
-4. Add All Runtime Dependencies, .lib’s, .dll’s and include paths to `Huli.Build.cs`
+4. Add All Runtime Dependencies, .libs, .dlls, and include paths to `Huli.Build.cs`
 > [!NOTE]
 > Because they don’t get included automatically, we had to add all of our runtime dependencies modules that, for whatever reason, don’t get included when packaging our Huli dedicated server. Some of these are Windows-specific binaries that are required to run on the PlayFab Windows servers, but the others are required GSDK files.
 
 1. Open the `Huli.Build.cs` file.  
 
-![](media/e8169a2d8608ea1b5c459decc5e2eff7.png)
+![Shows Huli.Build.cs file in Visual Studio solution explorer](media/e8169a2d8608ea1b5c459decc5e2eff7.png)
 
 We’ve added the following dedicated server build rules to our `Huli.Build.cs` file when we package our HuliServer.exe. This file may have other, platform specific rules, we’ve only included the dedicated server rules.
 > [!IMPORTANT]
@@ -289,12 +288,11 @@ public class Huli : ModuleRules
 > [!IMPORTANT]
 > Before packaging the Huli Server, it’s important to understand that since we are using Windows Server and docker containers from PlayFab, some UE4 plugins are not compatible with it. 
 
-![](media/f3612a461c9f4715ef94bfbbd5c9c95b.png)
+![Screenshot of Windows Movie Player UE4 plugin in Unreal Editor](media/f3612a461c9f4715ef94bfbbd5c9c95b.png)
 
 So far, the only one we found that prevents our PlayFab dedicated 2.0 server build from spinning up after deployment is the **Windows MoviePlayer** plugin. We simply *disabled/removed* it from our game outright, instead of denylisting; however, UE4 does give you options to denylist a plugin from running on a specific target if you’d like. For example, if your game client needs the **Windows MoviePlayer** plugin, but the server has no need to run it, you can set up denylisting (or allowlisting if you prefer) within the `\*.uplugin` file itself.
 
-More on allowlist/denylisting:  
-<https://answers.unrealengine.com/questions/345335/conditionally-compile-plugins-based-on-platform.html>
+For more information about allowlisting/denylisting, see the UE4 forums page about conditionally compiling plugins based on platform [here](https://answers.unrealengine.com/questions/345335/conditionally-compile-plugins-based-on-platform.html).   
 
 ### Packaging `HuliServer.exe`
 
@@ -302,31 +300,29 @@ With these code changes, before you can package HuliServer, you need to compile 
 
 1. For a development server build, make sure to select **Development Server**, then **Win64** and finally make sure that the **Huli** project is selected from within Visual Studio.  
 
-    ![](media/364cc9fc28933473cf29f000d7f827de.png)
+    ![Screenshot shows Development Server, Win64, and Huli project selected for the development server build configuration setting](media/364cc9fc28933473cf29f000d7f827de.png)
 
-2. Then right-click on the Huli project in Solution Explorer and click **Build** from the context menu. 
+2. Then right-click on the Huli project in Solution Explorer and select **Build** from the context menu. 
 
-    ![](media/f1f98ade12ac3c2664a44abbac914ab0.png)
+    ![Right-click on the Huli project from Visual Studio solution explorer and select Build](media/f1f98ade12ac3c2664a44abbac914ab0.png)
 
 3. From here, the standard way we package our Server build is to use the Project Launcher.  
 
-    ![](media/9934a03cd106f32d8ba9a968dfe51853.png)
+    ![Package the Server Build using Project Launcher in Unreal Editor](media/9934a03cd106f32d8ba9a968dfe51853.png)
 
 4. Add a new custom launch profile  
 
-    ![](media/56e23d53f36dfc78d09c85faa0e347a1.png)
+    ![Shows the Project Launcher tab with the Custom Launch Profiles option showing Huli Dedicated Server Development added](media/56e23d53f36dfc78d09c85faa0e347a1.png)
 
-5. Then click on the
+5. Click on the Settings icon, shown below, to edit the profile. This opens up a new dialog for you to start customizing.
 
-!    [](media/04071f9366793fb0da435c26763da952.png)
+    ![Settings icon](media/04071f9366793fb0da435c26763da952.png)
 
-icon to edit the profile, which opens up a new dialog for you to customize it.
+6. Give it a name such as “Huli Dedicated Server (Development)” or something similar. Make sure to target the Huli project (navigate to the `Huli.uproject` file within the project drop-down on this editor).
 
-6. Give it a name such as “Huli Dedicated Server (Development)” or something similar, and make sure that you target the Huli project (navigate to the `Huli.uproject` file within the project drop-down on this editor).
+7. Cook the content “By the book” and select **WindowsServer** from the platform options.  
 
-7. Make sure to cook the content “By the book” and select **WindowsServer** from the platform options.  
-
-    ![](media/d52d7d82f610076b5aa1ca4496a1590f.png)
+    ![Screenshot showing By the book and Windows Server selected in the Cook section](media/d52d7d82f610076b5aa1ca4496a1590f.png)
 
 8. Target “en” for cooked cultures.
 
@@ -334,27 +330,29 @@ icon to edit the profile, which opens up a new dialog for you to customize it.
 
 10. Under Package, select “Package & store locally," and then specify the directory you want to output to.
 
-11. Click the
+11. Select the __Back__ icon. Then select __Run__ to run your new launch profile. Refer to the images below to help identify these icons.
 
-    ![](media/711d7c42bfd74e239f2d83b5ac8e9172.png)
+    Image below shows the Back icon.
 
-icon and then run your new launch profile by clicking the
+    ![Back icon](media/711d7c42bfd74e239f2d83b5ac8e9172.png)
 
-    ![](media/7e60798c7e68de5d34c7aa29f5637646.png)
+    Image below shows the Run icon
 
-icon.  
+    ![Run icon](media/7e60798c7e68de5d34c7aa29f5637646.png)
 
-    ![](media/9a373e5fcffa7f215bb246ebf3e98318.png)
+    Image below shows the profile running.
 
-12. If everything worked correctly, you should see all green check marks across the board.  
+    ![Run icon in green indicates that the Profile running](media/9a373e5fcffa7f215bb246ebf3e98318.png)
 
-    ![](media/006e6ceb4f32535c209e654f97789170.png)
+12. If everything worked correctly, it would be all green check marks across the board.  
+
+    ![Green check marks for all tasks](media/006e6ceb4f32535c209e654f97789170.png)
 
 13. Navigate to the directory you set in your custom launch profile.
 
-14. Delete the three manifest files.  
+14. Delete the three manifest files&mdash;Manifest_DebugFiles_Win64.txt, Manifest_NonUFSFiles_Win64.txt, and Manifest_UFSFiles_Win64.txt.  
 
-    ![](media/6bdc8b4e3769b285c0b23bf9cb20d7ee.png)
+    ![Shows the three manifest files to delete](media/6bdc8b4e3769b285c0b23bf9cb20d7ee.png)
 
 15. Now you can zip up your folder. If you’re on Windows 10, simply select all files at the root, right-click on `HuliServer.exe` and then select **Send to** > *Compressed (zipped) folder*. This is the folder you will upload to PlayFab.
 
@@ -362,17 +360,17 @@ icon.
 
 How you package your server executable is up to you, but these optional steps may be required by the PlayFab Thunderhead 2.0 Windows servers.
 
-1. Navigate to the Win64 sub-folder of your packaged server.  
+1. Navigate to the Win64 sub-folder of your packaged server by selecting __Huli__ > __Binaries__ > __Win64__.
 
-    ![](media/e62f2ddb72dc317daabc041a84df8af3.png)
+    ![Shows the navigation path to the Win64 sub-folder](media/e62f2ddb72dc317daabc041a84df8af3.png)
 
 2. Copy all files, except for the HuliServer.exe file in this folder.  
 
-    ![](media/3c579b0d2cb667f30665e7128aa6acd9.png)
+    ![Shows all the files in the Win64 sub-folder](media/3c579b0d2cb667f30665e7128aa6acd9.png)
 
 2. Then finally navigate back to the root of your packaged folder and paste these files in here. It should look like the following:  
 
-    ![](media/29fef087588d577c54bff735f6523152.png)
+    ![Shows the files that are in the root of the packaged folder](media/29fef087588d577c54bff735f6523152.png)
 
 3. We do this as an added measure so that when PlayFab VM creates your docker
     container and runs the root HuliServer.exe, the proper files are linked
@@ -386,70 +384,50 @@ Once you’re at this point, you’re at the homestretch. If everything compiles
 
 1. Log into PlayFab with your developer account.
 
-2. Click on the Huli project.
+2. Select the Huli project.
 
-3. Click on the
+3. Select __Multiplayer__ from the menu on the left, as shown below.
 
-    ![](media/a64d39fac095bd4aee45b5b9ac410ade.png)
+    ![Multiplayer icon](media/a64d39fac095bd4aee45b5b9ac410ade.png)
 
-menu option.
+4. This would automatically display the __Servers__ tab for you. If not, select the tab.
 
-4. It should default you to the
+5. On the __Builds__ page, select the __New build__ button, as shown below.
 
-    ![](media/6bca442e3f3e0025b8bc5547f3bdd36d.png)
+    ![New build icon](media/dd7c75987e0c8574fad2855c7959d727.png)
 
-tab; if not, click it.
+6. Provide a __Build name__, __Virtual machine selection__, and __Servers per machine__. Screenshow below shows an example selection using Standard_D1_v2 virtual machine (VM) and 1 server per machine.
 
-5. Click on
+    ![Create a build using Standard_D1_v2 VMs and 1 server per machine](media/d7bbed8dedd7e1774fc19e6afb5ac414.png)
 
-    ![](media/dd7c75987e0c8574fad2855c7959d727.png)
+7. Select __Windows__ platform and __Windows Server Core__ container image.
 
-6. Provide a Build name, Virtual machine selection, and Servers per machine. 
+8. Under __ASSETS__, select __Upload__. Navigate to the HuliServer.zip file, and select to upload. Wait for the file to finish uploading. Asset package should now say “HuliServer.zip”. Leave **Mount path** as the default C:\\Assets as shown below. 
 
-    ![](media/d7bbed8dedd7e1774fc19e6afb5ac414.png)
+    ![Screenshot shows HuliServer.zip uploaded and C:\\Assets as the Mount path](media/922ca72f3d4e749b7a3a6d5dcf26bd44.png)
 
-7. For the Network Section, all UE4 server builds run on **UDP** port **7777**.  
+9. Set your start game command to `C:\\Assets\\HuliServer.exe` 
 
-    ![](media/279a76f6cfe1f6d23263f57318128cde.png)
+    ![Shows the Start game command field with C:\\Assets\\HuliServer.exe](media/2b450620e7f7af30133262d510ecd90d.png)
 
-8. Set your start game command to `C:\\Assets\\HuliServer.exe` 
+10. For network, set port to **7777** and use **UDP**. All UE4 server builds run on **UDP** port **7777**.  
 
-    ![](media/2b450620e7f7af30133262d510ecd90d.png)
+    ![Network port settings using port 7777 with UDP protocol](media/279a76f6cfe1f6d23263f57318128cde.png)
 
-9. Click
+11. Select regions, how many standby servers, and maximum servers. Screenshot below shows an example set up. 
 
-    ![](media/2c948c5e3837aece2016b7aac3ef61e9.png)
+    ![Configuration shows WestUS region, 1 standby server, and 2 maximum servers](media/f0241888d862f74de0fe0eaf52012931.png)
 
-and navigate to your HuliServer.zip file and click
+12. Once you’re all done, select __Save__ to start deployment.
 
-    ![](media/9a57a525be830e8b57f83909ed37d7a4.png)
+13. The Huli Dedicated Server will now start deploying to PlayFab. This screen will auto-refresh.   
 
-and wait for it to finish uploading to PlayFab.
+    ![Screenshow showing server deployment refreshing](media/700ae93a20146ace554809b73f947656.png)
 
-10. Asset package should now say “HuliServer.zip.” Leave **Mount path** as the default.  
+14. After about 20 minutes or so, the new server build should be up and running. If there are no issues, you would get a successful deploy status, as shown below.  
 
-    ![](media/922ca72f3d4e749b7a3a6d5dcf26bd44.png)
+    ![Successful deploy status](media/530f3634dc07a609b9ea88eec5787525.png)
 
-11. Click
+15. The number under the build name, is the Build ID. This is a custom build ID that you can use within the PlayFabSDK blueprints to make a new multiplayer server request to start up a new server and connect your players to this new dedicated server.  
 
-    ![](media/82a8aba1c2a8a9d40784586652fa934b.png)  .
-
-12. You’ll need to set up the Regions, how many standby servers, and maximum servers.  
-
-    ![](media/f0241888d862f74de0fe0eaf52012931.png)
-
-13. Once you’re all done, click
-
-    ![](media/4157c387ba2521b8ce8318167d0e88a6.png)
-
-14. The Huli Dedicated Server will now start deploying to PlayFab. This screen will auto-refresh.  
-
-    ![](media/700ae93a20146ace554809b73f947656.png)
-
-15. After about 20 minutes or so, the new server build should be up and running, and if there were no issues, you should get a successful deploy status.  
-
-    ![](media/530f3634dc07a609b9ea88eec5787525.png)
-
-16. The number under the build name, is the build ID. This is a custom build ID that we can use within the PlayFabSDK blueprints to make a new multiplayer server request to start up a new server and connect our players to this new dedicated server.  
-
-    ![](media/b9118fb57b60a478343489be356a6667.png)
+    ![Screenshot showing the custom Build ID](media/b9118fb57b60a478343489be356a6667.png)
