@@ -49,12 +49,12 @@ At the top, there are three page-level filters that can be applied. Choosing any
 
 - **Platform:** See only data for individual device types such as Android, iPhone, or Windows.
 
-- **Region:** See only data from a specific geographic region. For a complete list of which countries are grouped under each region, see Regions.
+- **Region:** See only data from a specific geographic region.
 
 > [!NOTE]
 > Platform and Region filters are not currently supported for Revenue. This will be resolved in a future release.
 
-![Filters](media/tutorials/filters.png)
+![Screenshot of the dashboard when filters are used](media/tutorials/filters.png)
 
 ## Spark Cards
 
@@ -66,7 +66,7 @@ The Spark Cards are designed to offer an at-a-glance view of what happened that 
 
 Definitions for each are obtained by hovering over the metric or by tapping, if using a mobile phone.
 
-![Spark Card](media/tutorials/spark-card.png)  
+![Example summary view using Spark Card](media/tutorials/spark-card.png)  
 
 ## Graphs
 
@@ -76,7 +76,7 @@ In the upper right-hand corner of each graph, individual lines can be toggled on
 
 Hover over any data point to display the actual value for the selected day. To the right of each graph, supporting metrics offer additional insights such as the average and/or total for the period.
 
-![Graphs](media/tutorials/graph.png)
+![Screenshot of the trends interface for Graphs](media/tutorials/graph.png)
 
 ## Data Collection
 

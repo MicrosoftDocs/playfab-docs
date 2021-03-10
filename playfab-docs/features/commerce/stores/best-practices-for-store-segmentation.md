@@ -6,7 +6,7 @@ ms.author: joanlee
 ms.date: 10/29/2018
 ms.topic: article
 ms.prod: playfab
-keywords: playfab, commerce, stores
+keywords: playfab, commerce, economy, stores
 ms.localizationpriority: medium
 ---
 

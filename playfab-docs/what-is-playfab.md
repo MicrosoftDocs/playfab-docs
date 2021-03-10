@@ -22,7 +22,7 @@ Using PlayFab you can:
 * Instantly scale dedicated multiplayer servers that deliver low latency and high reliability for real-time gameplay.
 * Use multiple forms of built-in authentication to track players across devices. 
 * Quickly create leaderboards to more deeply engage players.
-* Accelerate growth with commerce services that let you create and track virtual currencies, manage stores of items, and process payments.
+* Accelerate growth with economy services that let you create and track virtual currencies, manage stores of items, and process payments.
 
 To use PlayFab features, you must sign up for a [PlayFab account](https://developer.playfab.com/en-us/sign-up).
 

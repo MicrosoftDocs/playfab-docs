@@ -13,7 +13,7 @@ keywords: playfab, multiplayer, networking, unreal, unreal engine, unreal engine
 
 The PlayFab Party Online Subsystem (PFP OSS) enables you to make use of Party and Azure Cognitive services in your Unreal Engine 4 (UE4) game. This includes cross-talk, cross-play, accessibility features like real-time text chat translation and voice transcription services. It is currently designed for use when developing PC and Xbox games. This subsystem layer works seamlessly on top of the existing Epic provided base Online Subsystem (OSS) GDK / Live for Xbox Live. PlayFab Party OSS compliments the base OSS by adding support for PlayFab Party networking and Voice over Internet Protocol (VOIP).
 
-Party OSS works alongside the PlayFab SDK marketplace plugin which provides other PlayFab functionalities such as commerce, leaderboards, and more. For more information, see [PlayFab SDK on the UE4 Marketplace (external site)](https://www.unrealengine.com/marketplace/product/playfab-sdk).
+Party OSS works alongside the PlayFab SDK marketplace plugin which provides other PlayFab functionalities such as economy, leaderboards, and more. For more information, see [PlayFab SDK on the UE4 Marketplace (external site)](https://www.unrealengine.com/marketplace/product/playfab-sdk).
 
 ## What is included in the Online Subsystem?
 - Game networking
