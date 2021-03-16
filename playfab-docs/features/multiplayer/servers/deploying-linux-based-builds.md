@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 PlayFab Multiplayer Servers can deploy Linux-based game servers. While Windows managed container configuration are a simple and default choice for many game developers, Linux servers are deployed on virtual machines running Ubuntu and enjoy a cheaper hourly rate. 
 
 Linux-based multiplayer server builds are deployed and managed very similarly to Windows builds. But there are a few important differences between PlayFab's Windows and Linux options:
-1.  Linux multiplayer servers integrate with the same Game Server SDK, but currently we do not have a mock agent for local debugging as we do for Windows.
+1.  Linux multiplayer servers integrate with the same Game Server SDK, [you can use LocalMultiplayerAgent to test this integration](https://github.com/PlayFab/MpsAgent/blob/main/lcow.md).
 2.  Linux servers are uploaded as containers which PlayFab deploys without modification, unlike Windows servers which are uploaded as zip files and deployed using a PlayFab managed container image. You can still upload zip/tar/tar.gz files and associate them with server builds if you do not want to bundle everything in to a container.
 
 

@@ -62,7 +62,7 @@ https://docs.unrealengine.com/index.html
 
 - PlayFab API reference: <https://docs.microsoft.com/gaming/playfab/api-references/>
 
-- PlayFab local debugging (MockVM):
+- PlayFab local debugging (LocalMultiplayerAgent):
 <https://docs.microsoft.com/gaming/playfab/features/multiplayer/servers/locally-debugging-game-servers-and-integration-with-playfab>
 
 ## Integrating the PlayFab GSDK into Huli
