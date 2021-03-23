@@ -22,7 +22,7 @@ Use the [ListDlls](https://docs.microsoft.com/sysinternals/downloads/listdlls) u
 1. Run listdlls and specify your running game server as a parameter. Example: `listdlls ServerLoadSimulator.exe`
 1. Compare the list that is output against the list of DLLs included in your asset zip file (typically everything in the same folder as your executable). The delta between the lists are the system DLLs that are required by your game server. 
 
-![listdlls-output](media/listdlls-output.png)
+![Output from listdlls](media/listdlls-output.png)
 
 ## Compare required DLLs with those included in container
 With the list of system DLLs determined, the next step is to determine which of these system DLLs are already included in the container.
