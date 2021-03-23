@@ -426,7 +426,7 @@ This example also contains multiplayer server setup information for dedicated se
 
 ## Cross-Device / Cross Platform
 
-To limit games of a particular device or platform to match with each other, specify the device with a String Equality Rule. With the AttributeNotSpecifiedBehavior of `MatchAny`, tickets that do not specify such a device can opt to match with any device/platform.
+To limit games of a particular device or platform to match with each other, specify the device with a String Equality Rule. With the AttributeNotSpecifiedBehavior of `MatchAny`, tickets that do not specify such a device can opt to match with any device/platform. If matchmaking times are longer than expected, consider creating a separate queue per platform, with a cross-platform queue as needed to support cross-play.
 
 ```json
 "MatchmakingQueue": {
@@ -455,6 +455,9 @@ To limit games of a particular device or platform to match with each other, spec
 PlayFab Match uses a ticket-based matching system, where a game host is not selected ahead of time. However, it can emulate a host-searcher system by using a `MatchTotalRule` to limit the number of hosts allowed in a match.
 
 Tickets can then specify ahead of time if it is a host by specifying 1. Each match must contain exactly one host.
+
+> [!NOTE]
+> If the number of hosts vastly outnumbers the searchers or vice-versa, this may cause slow matchmaking times for all players. Consider the implications of your matchmaking design to ensure there are enough players in any given subpopulation to satisfy your matchmaking rules and the desired average time to match.
 
 ```json
 "MatchmakingQueue": {
