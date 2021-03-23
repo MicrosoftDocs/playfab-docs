@@ -67,6 +67,10 @@ When creating a multi-user ticket, one of the invited players may fail or refuse
 
 After that timeout, the title should cancel the ticket and check that all players have still agreed to play a game together.
 
+## GetMatch returns not found
+
+Once a match is created, the match will live for a period of time and eventually age out. If the match is not retrieved in time, those users will need to resubmit tickets to get matched again. This can be avoided by ensuring matches are retrieved in a timely manner (i.e., within a few minutes).
+
 ## The ticket is canceled
 
 Tickets may be canceled for multiple reasons. The most common cases are user cancellations and tickets expiring, but the ticket can also be canceled by the server. If you call `GetMatchmakingTicket`, and discover your ticket is canceled, the reason will be listed in the `CancellationReason` field. Requested, Timeout, and Internal correspond to user cancellation, ticket expiration, and server cancellation respectively.
