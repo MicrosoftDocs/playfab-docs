@@ -90,7 +90,12 @@ For more information on specific flows from either your game client or service, 
 
 + [Matchmaking API Reference (Public Preview)](xref:titleid.playfabapi.com.multiplayer.matchmaking)
 <!-- + [Matchmaking Admin API Reference (Public Preview)](xref:titleid.playfabapi.com.multiplayer.matchmakingadmin) -->
++ [PlayStream Events](../../../api-references/events/index.md)
+    + [matchmaking_match_found](../../../api-references/events/matchmaking-match-found)
+    + [matchmaking_ticket_completed](../../../api-references/events/matchmaking-ticket-completed)
+    + [matchmaking_user_ticket_completed](../../../api-references/events/matchmaking-user-ticket-completed)
+    + [matchmaking_user_ticket_invite](../../../api-references/events/matchmaking-user-ticket-invite)
 
-### March 2019 - Public preview release notes
+### Public preview release notes
 
-We have temporarily removed the matchmaking PlayStream events while we adjust the schema. This will be re-enabled in a future update. As a result, polling is still the only method for checking the status of matchmaking a ticket.
+While PlayStream events are enabled, there is no currently integrated push notification system. As such, polling is still the preferred method for checking the status of matchmaking a ticket.
