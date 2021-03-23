@@ -24,7 +24,7 @@ There are three key concepts to PlayFab multiplayer servers:
 
 These are the typical steps for using the service:
 
-1. **Author game server**. Scaling your server requires integration with the PlayFab game server SDK (GSDK) and testing the server executable in a container. You can download a mock agent and the Windows container image PlayFab uses for local development.
+1. **Author game server**. Scaling your server requires integration with the PlayFab game server SDK (GSDK) and testing the server executable in a container. You can download our developer tool called [LocalMultiplayerAgent](https://github.com/PlayFab/MpsAgent) and the Windows container image PlayFab uses for local development.
 2. **Upload game server executable and assets**. Upload the server and manage builds through Game Manager or PlayFab APIs and SDKs.
 3. **Scale game server build**. Once you've uploaded server assets you can create *builds*. PlayFab dynamically creates and recycles virtual machines to fulfill player demand and maintain standing-by levels you specify.
 4. **Measure player latency**. When players initiate a multiplayer experience, send UDP messages to PlayFab quality-of-service (QoS) beacons to measure network latency to Azure.

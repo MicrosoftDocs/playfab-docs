@@ -18,11 +18,11 @@ By default, the managed container image includes many commonly used DLLs. To det
 Use the [ListDlls](https://docs.microsoft.com/sysinternals/downloads/listdlls) utility to list all of the DLLs that are loaded when you run your game server locally. To generate the list:
 
 1. Download [ListDlls](https://docs.microsoft.com/sysinternals/downloads/listdlls) from sysinternals.
-1. Run your game server executable on your local machine by using the instructions found in [local debug steps](locally-debugging-game-servers-and-integration-with-playfab.md) in **process mode** or as a standalone process without using the mock agent.
+1. Run your game server executable on your local machine by using the instructions found in [local debug steps](locally-debugging-game-servers-and-integration-with-playfab.md) in **process mode** or as a standalone process without using the [LocalMultiplayerAgent](https://github.com/PlayFab/MpsAgent).
 1. Run listdlls and specify your running game server as a parameter. Example: `listdlls ServerLoadSimulator.exe`
 1. Compare the list that is output against the list of DLLs included in your asset zip file (typically everything in the same folder as your executable). The delta between the lists are the system DLLs that are required by your game server. 
 
-![listdlls-output](media/listdlls-output.png)
+![Output from listdlls](media/listdlls-output.png)
 
 ## Compare required DLLs with those included in container
 With the list of system DLLs determined, the next step is to determine which of these system DLLs are already included in the container.
