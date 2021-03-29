@@ -84,7 +84,8 @@ These require separate API calls to another service, but do not require addition
 
 - [LoginWithKongregate](xref:titleid.playfabapi.com.client.authentication.loginwithkongregate)
 - [LoginWithSteam](xref:titleid.playfabapi.com.client.authentication.loginwithsteam)
-- [LoginWithTwitch](xref:titleid.playfabapi.com.client.authentication.loginwithtwitch).
+- [LoginWithTwitch](xref:titleid.playfabapi.com.client.authentication.loginwithtwitch)
+- [LoginWithGameCenter](xref:titleid.playfabapi.com.client.authentication.loginwithgamecenter) (iOS only, and provided you require secure authentication.)
 
 Secure authentication happens between your user, and the 3rd party service API call.
 
@@ -105,23 +106,11 @@ Use an appropriate anonymous login for a basic login, and encourage your player 
 > [!TIP]
 > Account recovery only requires *one* recoverable login, so don't pressure your player to use all of them.
 
-## Insecure recoverable login mechanisms
+## Insecure login mechanisms
 
-It is possible to set up an insecure recoverable login for a legitimate (if limited) purpose.
+One benefit of recoverable login mechanisms is they are more secure than logging in with a custom ID, as they require verified authentication with a third party rather than relying on a user's custom ID remaining a shared secret.
 
-Specifically, [LoginWithGameCenter](xref:titleid.playfabapi.com.client.authentication.loginwithgamecenter) is considered an *insecure login mechanism*, and you should use it with *extreme* care (or not at all).
-
-GameCenter is a secure login specifically between an iOS device and the GameCenter service, but unlike Apple's Identity Verification service, there is *no* secure authentication option for a 3rd party service like PlayFab. Even so, some developers are very familiar with GameCenter, and wish to use it as their recoverable login mechanism.
-
-### Safe usage
-
-The only *safe* usage of this mechanism is for client-authoritative games with *no multiplayer capability*.
-
-PlayFab can be a useful Cloud-save option for this type of game, using this mechanism. All other uses of `LoginWithGameCenter` should be considered *unsafe*. Do *not* use this login for *any* kind of game with *any* kind of multiplayer interaction.
-
-### Best practice
-
-*Don't use it!* Instead - use a secure recoverable mechanism described in the previous section. Even if your game is safe *today*, you may add a feature tomorrow (like Chat or Trading), which *seems* innocuous but opens up your players to theft, cheating, and malicious user activity.
+However, it is worth noting that [LoginWithGameCenter](xref:titleid.playfabapi.com.client.authentication.loginwithgamecenter) specifically can be similarly insecure if you do not require secure authentication with Apple. If you plan to use Game Center as a recoverable login mechanism for a game with *any* multiplayer interaction, it is *strongly* recommended you implement and require secure authentication as described in the [LoginWithGameCenter](xref:titleid.playfabapi.com.client.authentication.loginwithgamecenter) documentation.
 
 ## Conclusion
 
