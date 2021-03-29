@@ -14,6 +14,22 @@ ms.localizationpriority: medium
 
 PlayFab Party had a significant (up to 90%) price drop on 10/13/2020. You can view the updated Party rates on the [Pricing page](https://playfab.com/pricing). For more information about the price drop, see our [blog post](https://blog.playfab.com/blog/starting-today-save-up-to-90-using-playfab-party).
 
+## 1.5.13
+
+### Bug fixes
+
+- Fixed a bug where audio is cutting out on iOS devices using bluetooth headsets.
+- Fixed a bug where an incorrect error code is generated when the app doesn't have permission to activate a microphone on windows.
+- Fixed a bug where an unhealthy device is never refreshed unless something else forces a refresh.
+- Fixed a bug where a crash may occur when dereferencing a send channel's user data after the source endpoint associated with that channel has become invalid.
+- Fixed a bug where clients experience silent failures if a remote chat control doesn't have a language code.
+
+### Misc changes
+- Added the ability for Party clients of certain titles to use a max device count limit of 40 per network, up from the officially supports limit of 32.
+- Added counter for text messages received by the relay and a chat text counter to periodic stats.
+- Updated logging to include average round trip time for each device as it joins a network.
+- Updated certificates for DTLS, AAD, and Geneva.
+
 ## 1.5.10
 
 ### Bug fixes
