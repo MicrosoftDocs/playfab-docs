@@ -21,7 +21,7 @@ PlayFab Party had a significant (up to 90%) price drop on 10/13/2020. You can vi
 - Fixed a bug where audio is cutting out on iOS devices using bluetooth headsets.
 - Fixed a bug where an incorrect error code is generated when the app doesn't have permission to activate a microphone on windows.
 - Fixed a bug where an unhealthy device is never refreshed unless something else forces a refresh.
-- Fixed a bug where a crash may occur when a receipt is received.
+- Fixed a bug where a crash may occur when dereferencing a send channel's user data after the source endpoint associated with that channel has become invalid.
 - Fixed a bug where clients experience silent failures if a remote chat control doesn't have a language code.
 
 ### Misc changes
