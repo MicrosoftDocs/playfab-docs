@@ -26,7 +26,8 @@ Go to [Xbox Developer Downloads page](https://www.aka.ms/gdkdl) under Add-ins an
 - Copy the **OnlineSubsystemPlayFabParty** folder and its contents from to your UE4 directory under **Engine\Plugins\Online**
 - Apply the following changes to the Plugins section of your .uproject file, this will add the OnlineSubsystemPlayFabParty to your plugin list.
     - You may remove any platforms which you are not shipping on
-<pre><code>{
+```
+{
 	"Name": "OnlineSubsystemPlayFabParty",
 	"Enabled": true,
 	"WhitelistPlatforms": [
@@ -41,7 +42,8 @@ Go to [Xbox Developer Downloads page](https://www.aka.ms/gdkdl) under Add-ins an
 		"XSX",
 		"XboxOne"
 	]
-}</code></pre>
+}
+```
 
 Now you have successfully completed the initial setup. If you are developing games using GDK, see [Next steps for GDK](#next-steps-for-gdk). If you developing games using XDK, see [Next steps for XDK](#next-steps-for-xdk).
 
@@ -52,7 +54,8 @@ Now you have successfully completed the initial setup. If you are developing gam
     - **Xbox One GDK:** XboxOneGDKEngine.ini
 - Replace the INI sections if they already exist (e.g. Engine.GameEngine)
 - Ensure you replace all the *<REPLACE ME>* fields with your data.
-<pre><code>[OnlineSubsystem]
+```
+[OnlineSubsystem]
 DefaultPlatformService=PlayFabParty
 NativePlatformService=GDK
 
@@ -73,7 +76,8 @@ InitialConnectTimeout=30.0
 
 [/Script/Engine.GameEngine]
 !NetDriverDefinitions=ClearArray
-+NetDriverDefinitions=(DefName="GameNetDriver",DriverClassName="OnlineSubsystemPlayFabParty.PlayFabPartyNetDriver",DriverClassNameFallback="OnlineSubsystemUtils.IpNetDriver")</code></pre>
++NetDriverDefinitions=(DefName="GameNetDriver",DriverClassName="OnlineSubsystemPlayFabParty.PlayFabPartyNetDriver",DriverClassNameFallback="OnlineSubsystemUtils.IpNetDriver")
+```
 
 If your title is not targetting the XDK, setup is complete. To complete the Party OSS setup for games targeting XDK, see the next section.
 
@@ -82,7 +86,8 @@ If your title is not targetting the XDK, setup is complete. To complete the Part
 - Apply the changes below to the Game (not Engine) INI file 'XboxOneEngine.ini'
 - Replace the INI sections if they already exist (e.g. Engine.GameEngine)
 - Ensure you replace all the *<REPLACE ME>* fields with your data.
-<pre><code>[OnlineSubsystem]
+```
+[OnlineSubsystem]
 DefaultPlatformService=PlayFabParty
 NativePlatformService=Live
 
@@ -103,7 +108,8 @@ InitialConnectTimeout=30.0
 
 [/Script/Engine.GameEngine]
 !NetDriverDefinitions=ClearArray
-+NetDriverDefinitions=(DefName="GameNetDriver",DriverClassName="OnlineSubsystemPlayFabParty.PlayFabPartyNetDriver",DriverClassNameFallback="OnlineSubsystemUtils.IpNetDriver")</code></pre>
++NetDriverDefinitions=(DefName="GameNetDriver",DriverClassName="OnlineSubsystemPlayFabParty.PlayFabPartyNetDriver",DriverClassNameFallback="OnlineSubsystemUtils.IpNetDriver")
+```
 
 ## Enabling cross-generational play between XDK and GDK
 
