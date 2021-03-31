@@ -16,14 +16,11 @@ PlayFab is committed to being General Data Protection Regulation (GDPR) complian
 
 While we can’t provide you with legal advice — *and we do encourage you to seek legal counsel to ensure your compliance with the GDPR* — we are here to help you fulfill your obligations under GDPR.
 
-PlayFab is introducing three new APIs to help you respond to Player data requests:
+PlayFab has three available APIs to help you respond to Player data requests:
 
 - [GetPlayedTitleList](xref:titleid.playfabapi.com.admin.accountmanagement.getplayedtitlelist) - Call this API to get a list of TitleIds which have data associated with the given player. This list is scoped by PublisherID and represents the set of titles which would be impacted were you to delete or export this player's data.
 - [DeleteMasterPlayerAccount](xref:titleid.playfabapi.com.admin.accountmanagement.deletemasterplayeraccount) - Call this API to delete the records of a given player.
 - [ExportMasterPlayerData](xref:titleid.playfabapi.com.admin.accountmanagement.exportmasterplayerdata) - Call this API to export all of the associated data and records of a given player.
-
-> [!NOTE]
-> This tutorial focuses on how to use these Admin APIs to export or delete player data. We plan to expose comparable functionality through Game Manager by May 25, 2018.
 
 ## Make sure you find all the data
 
@@ -161,7 +158,7 @@ public static async void StartDeleteMasterPlayerExample(Action<PlayFabError> cal
 }
 ```
 
-> [!REMINDER]
+> [!NOTE]
 > Because this deletion *cannot be undone*, we suggest confirming with your player that they are comfortable with the scope and impact of their deletion request.
 
 So, once the action has been confirmed… Back to pseudo code.
