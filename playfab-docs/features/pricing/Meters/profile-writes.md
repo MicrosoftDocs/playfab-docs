@@ -19,7 +19,7 @@ The following APIs cause the Profile writes meter to increment.
 
 ## Admin APIs
 
-- [AddPlayerTag](https://docs.mic'osoft.com/rest/api/playfab/admin/playstream/addplayertag?view=playfab-rest)
+- [AddPlayerTag](https://docs.microsoft.com/rest/api/playfab/admin/playstream/addplayertag?view=playfab-rest)
     Adds a given tag to a player profile. The tag's namespace is automatically generated based on the source of the tag.
 
 - [AddUserVirtualCurrency](https://docs.microsoft.com/rest/api/playfab/admin/player-item-management/adduservirtualcurrency?view=playfab-rest)

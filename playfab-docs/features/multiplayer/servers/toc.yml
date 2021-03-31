@@ -32,6 +32,8 @@
     href: multiplayer-build-lifecycle.md
   - name: Lifecycle of a multiplayer server build region
     href: multiplayer-build-region-lifecycle.md
+  - name: OS patch level updates
+    href: os-patch-updates.md
 - name: Scaling game servers
   items:
   - name: Scaling Standby
