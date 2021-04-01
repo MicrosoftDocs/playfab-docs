@@ -20,10 +20,8 @@ When MPS is enabled, you can use Multiplayer Servers for free in a limited capac
 
 | Service |Included Free| Region |
 |-|-|-|
-|Av2 VM core hours | 750 Av2 core hours | East US |
-|Av2 VM core hours | 750 Av2 core hours | North Europe |
-|Fv2 VM core hours | 750 Fv2 core hours | East US |
-|Fv2 VM core hours | 750 Fv2 core hours | North Europe |
+|Dasv4 VM core hours | 750 Dasv4 core hours | East US |
+|Dasv4 VM core hours | 750 Dasv4 core hours | North Europe |
 | Network Egress | 10 GB | Zone 1 |
 | Network Egress | 10 GB | Zone 2 |
 
@@ -33,10 +31,8 @@ The maximum simultaneous core quota in the free evaluation modes are:
 
 | Service | Included Free | Region |
 |-|-|-
-| Maximum Av2 cores | 24 Av2 cores | East US |
-| Maximum Av2 cores | 24 Av2 cores | North Europe |
-| Maximum Fv2 cores | 24 Fv2 cores | East US |
-| Maximum Fv2 cores | 24 Fv2 cores | North Europe |
+| Maximum Dasv4 cores | 24 Dasv4 cores | East US |
+| Maximum Dasv4 cores | 24 Dasv4 cores | North Europe |
 
 This is typically *not* enough to launch a live game, but it can help you evaluate the service and get started.
 
