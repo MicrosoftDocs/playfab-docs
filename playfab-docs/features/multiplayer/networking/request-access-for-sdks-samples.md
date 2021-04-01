@@ -23,15 +23,10 @@ If you're not yet a registered developer for the previously mentioned platforms 
 
 ## Switch and PlayStation
 
-### Switch and PS4
+### Switch, PS4, and PS5
 
 1. Go to the Nintendo/Sony developer portal, and then find our page (categorized under Middleware).
 1. Follow the instructions there. Use their site to send us a notification to let us know that you're a registered developer.
-
-### PS5
-
-1. Go to the Sony developer portal. Open a ticket with their support team.
-1. In the ticket, state that you would like to use PlayFab services. Ask them to let us know that you’re a registered PS5 developer.
 
 ## Stadia
 
