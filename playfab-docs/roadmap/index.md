@@ -10,7 +10,9 @@ keywords: playfab, roadmap, features, development
 ms.localizationpriority: medium
 ---
 
+
 # Azure PlayFab roadmap
+
 _Last Update: 4/08/2021_
 
 Hello everyone! It's been a while since our last roadmap update. Like many of you, our team has been busy adapting to the reality of distributed development. That said, we want to let you know what’s coming and when for Azure PlayFab to help you plan more effectively. Going forward, we plan to release roadmap details on a quarterly basis. Our next update will be in July 2021.
@@ -75,4 +77,3 @@ Today we have 4 major services in preview:
 PlayFab provides updates and new features in the form of preview programs to give you the opportunity to evaluate them before they become part of our standard service or offering. If you're interested to join our preview programs, contact your account manager or email us at myplayfabam@microsoft.com. Our preview terms of use is modelled after [Azure Preview Terms of Use](https://azure.microsoft.com/support/legal/preview-supplemental-terms/).
 
 Thank you to all our amazing game creators building with PlayFab today. None of this would be possible without you. Please keep the feedback coming! 
-
