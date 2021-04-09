@@ -19,10 +19,7 @@ PlayFab Party had a significant (up to 90%) price drop on 10/13/2020. You can vi
 ### New thread control and text moderation features
 
 - The library's work can now be run manually on game-controlled threads. For more information, see [`PartyManager::SetWorkMode`](reference/classes/PartyManager/methods/partymanager_setworkmode.md).
-- Offensive text chat can now optionally be filtered. For more information, see [`PartyTextChatOptions::FilterOffensiveText`](reference/enums/partytextchatoptions.md).
-
-> [!NOTE]
-> Text moderation is not automatically enabled and is currently only available for Xbox Live partners. If you're interested in using text moderation, submit a request to your Microsoft Representative. Text moderation will fail if enabled in the client API without being enabled for your title by a Microsoft Representative.
+- Offensive text chat can now optionally be filtered. For more information, see [Using text moderation](concepts-text-moderation.md).
 
 ### Explicit enum numbering in the header
 

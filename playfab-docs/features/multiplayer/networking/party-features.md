@@ -76,6 +76,8 @@ Party chat offers the following communication functionalities.
    - Incoming speech can be translated into more than 60 languages. Your input source is voice. The output target is audio or text in a different language. For the latest information, see [Azure Cognitive Speech Translation](https://azure.microsoft.com/services/cognitive-services/speech-translation/).
    - Incoming text can be translated into more than 70 languages. Your input source is text. The output target is text or audio in a different language. For the latest information, see [Azure Cognitive Translator](https://azure.microsoft.com/services/cognitive-services/translator/).
 
+- **Text moderation:** Text chat can be moderated in real-time to filter out offensive language. For more information, see [Using text moderation](concepts-text-moderation.md).
+
 Speech-to-text, text-to-speech, and real-time translation use Azure Cognitive Services to power these functionalities. We recommend associating the activation of these capabilities under the Ease of Access player settings. For information about rates and pricing, see [PlayFab pricing](https://playfab.com/pricing/) and [Party pricing](pricing.md).
 
 To learn more, see [Understanding how Party chat works](concepts-chat.md). For more guidance on how to use the accessibility features that are provided by Party, see [Text-to-speech guidelines](party-text-to-speech-ux-guidelines.md) and [Speech-to-text guidelines](party-speech-to-text-ux-guidelines.md).
