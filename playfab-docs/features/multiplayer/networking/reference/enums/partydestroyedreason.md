@@ -5,7 +5,7 @@ description: "Reasons an object might be destroyed."
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/25/2019
+ms.date: 04/07/2021
 ---
 
 # PartyDestroyedReason  
@@ -17,11 +17,11 @@ Reasons an object might be destroyed.
 ```cpp
 enum class PartyDestroyedReason    
 {  
-    Requested,  
-    Disconnected,  
-    Kicked,  
-    DeviceLostAuthentication,  
-    CreationFailed,  
+    Requested = 0,  
+    Disconnected = 1,  
+    Kicked = 2,  
+    DeviceLostAuthentication = 3,  
+    CreationFailed = 4,  
 }  
 ```  
   

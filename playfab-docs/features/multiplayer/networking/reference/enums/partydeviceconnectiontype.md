@@ -5,7 +5,7 @@ description: "The type of connection used for transmitting endpoint message or c
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 08/05/2020
+ms.date: 04/07/2021
 ---
 
 # PartyDeviceConnectionType  
@@ -17,8 +17,8 @@ The type of connection used for transmitting endpoint message or chat data to a 
 ```cpp
 enum class PartyDeviceConnectionType    
 {  
-    RelayServer,  
-    DirectPeerConnection,  
+    RelayServer = 0,  
+    DirectPeerConnection = 1,  
 }  
 ```  
   

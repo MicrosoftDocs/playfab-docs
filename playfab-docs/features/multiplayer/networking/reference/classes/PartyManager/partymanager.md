@@ -5,7 +5,7 @@ description: TBD
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 08/05/2020
+ms.date: 04/07/2021
 ---
 
 # PartyManager  
@@ -32,10 +32,13 @@ class PartyManager
 | [GetMemoryCallbacks](methods/partymanager_getmemorycallbacks.md) | Retrieves the memory allocation and freeing callbacks the Party library is using. |  
 | [SetThreadAffinityMask](methods/partymanager_setthreadaffinitymask.md) | Optionally configures the processor on which internal Party library threads will run. |  
 | [GetThreadAffinityMask](methods/partymanager_getthreadaffinitymask.md) | Retrieves the current set of processors on which internal Party library threads will run or are running as an affinity mask. |  
+| [SetWorkMode](methods/partymanager_setworkmode.md) | Configures the work mode of the Party library processing task associated with `threadId`. |  
+| [GetWorkMode](methods/partymanager_getworkmode.md) | Retrieves the current work mode of the Party library's internal processing task associated with `threadId`. |  
 | [Initialize](methods/partymanager_initialize.md) | Initializes the PartyManager object instance. |  
 | [Cleanup](methods/partymanager_cleanup.md) | Immediately reclaims all resources associated with all Party library objects. |  
 | [StartProcessingStateChanges](methods/partymanager_startprocessingstatechanges.md) | Retrieves an array of all PartyStateChanges to process since the last such call. |  
 | [FinishProcessingStateChanges](methods/partymanager_finishprocessingstatechanges.md) | Returns an array of PartyStateChanges that were being processed. |  
+| [DoWork](methods/partymanager_dowork.md) | Synchronously performs the processing task associated with `threadId`. |  
 | [GetRegions](methods/partymanager_getregions.md) | Gets an array containing the set of regions for which your title is configured, along with round trip latency information. |  
 | [CreateNewNetwork](methods/partymanager_createnewnetwork.md) | Queues an asynchronous attempt to create a new network. |  
 | [ConnectToNetwork](methods/partymanager_connecttonetwork.md) | Queues an asynchronous attempt to connect to a network. |  

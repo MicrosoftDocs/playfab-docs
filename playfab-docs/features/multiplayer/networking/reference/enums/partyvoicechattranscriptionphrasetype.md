@@ -5,7 +5,7 @@ description: "Types of transcription phrases."
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 02/10/2020
+ms.date: 04/07/2021
 ---
 
 # PartyVoiceChatTranscriptionPhraseType  
@@ -17,8 +17,8 @@ Types of transcription phrases.
 ```cpp
 enum class PartyVoiceChatTranscriptionPhraseType    
 {  
-    Hypothesis,  
-    Final,  
+    Hypothesis = 0,  
+    Final = 1,  
 }  
 ```  
   

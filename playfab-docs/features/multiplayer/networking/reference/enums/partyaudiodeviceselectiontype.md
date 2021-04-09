@@ -5,7 +5,7 @@ description: "Options for selecting audio devices"
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/25/2019
+ms.date: 04/07/2021
 ---
 
 # PartyAudioDeviceSelectionType  
@@ -17,10 +17,10 @@ Options for selecting audio devices
 ```cpp
 enum class PartyAudioDeviceSelectionType    
 {  
-    None,  
-    SystemDefault,  
-    PlatformUserDefault,  
-    Manual,  
+    None = 0,  
+    SystemDefault = 1,  
+    PlatformUserDefault = 2,  
+    Manual = 3,  
 }  
 ```  
   

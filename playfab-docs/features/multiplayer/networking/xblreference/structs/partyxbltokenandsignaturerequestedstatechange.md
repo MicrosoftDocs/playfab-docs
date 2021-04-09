@@ -5,7 +5,7 @@ description: "Information specific to the *TokenAndSignatureRequested* type of s
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 11/01/2019
+ms.date: 04/07/2021
 ---
 
 # PartyXblTokenAndSignatureRequestedStateChange  
@@ -78,7 +78,7 @@ This field is only valid when ```allUsers``` is set to ```false```.
   
 ## Remarks  
   
-The title can use the Xbox Authentication Library (XAL) to fulfil these requests by calling the XalUserGetTokenAndSignatureSilentlyAsync() function. <br /><br /> Use [PartyXblManager::CompleteGetTokenAndSignatureRequest()](../classes/PartyXblManager/methods/partyxblmanager_completegettokenandsignaturerequest.md) to provide the token and signature and complete the operation.
+The title can use the Xbox Authentication Library (XAL) to fulfill these requests by calling the XalUserGetTokenAndSignatureSilentlyAsync() function. <br /><br /> Use [PartyXblManager::CompleteGetTokenAndSignatureRequest()](../classes/PartyXblManager/methods/partyxblmanager_completegettokenandsignaturerequest.md) to provide the token and signature and complete the operation.
   
 ## Requirements  
   

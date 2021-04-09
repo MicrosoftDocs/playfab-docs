@@ -5,7 +5,7 @@ description: "States of an audio output associated with a local chat control."
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/25/2019
+ms.date: 04/07/2021
 ---
 
 # PartyAudioOutputState  
@@ -17,12 +17,12 @@ States of an audio output associated with a local chat control.
 ```cpp
 enum class PartyAudioOutputState    
 {  
-    NoOutput,  
-    Initialized,  
-    NotFound,  
-    UnsupportedFormat,  
-    AlreadyInUse,  
-    UnknownError,  
+    NoOutput = 0,  
+    Initialized = 1,  
+    NotFound = 2,  
+    UnsupportedFormat = 3,  
+    AlreadyInUse = 4,  
+    UnknownError = 5,  
 }  
 ```  
   

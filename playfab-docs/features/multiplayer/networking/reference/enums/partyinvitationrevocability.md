@@ -5,7 +5,7 @@ description: "Options for who may revoke an invitation."
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/25/2019
+ms.date: 04/07/2021
 ---
 
 # PartyInvitationRevocability  
@@ -17,8 +17,8 @@ Options for who may revoke an invitation.
 ```cpp
 enum class PartyInvitationRevocability    
 {  
-    Creator,  
-    Anyone,  
+    Creator = 0,  
+    Anyone = 1,  
 }  
 ```  
   
