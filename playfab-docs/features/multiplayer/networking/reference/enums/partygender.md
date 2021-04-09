@@ -5,7 +5,7 @@ description: "Genders for text to speech profiles."
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/25/2019
+ms.date: 04/07/2021
 ---
 
 # PartyGender  
@@ -17,9 +17,9 @@ Genders for text to speech profiles.
 ```cpp
 enum class PartyGender    
 {  
-    Neutral,  
-    Female,  
-    Male,  
+    Neutral = 0,  
+    Female = 1,  
+    Male = 2,  
 }  
 ```  
   

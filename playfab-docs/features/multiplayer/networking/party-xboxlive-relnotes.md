@@ -14,6 +14,12 @@ ms.localizationpriority: medium
 
 The Xbox Live Helper library is available on [Nuget.org](https://www.nuget.org/profiles/PlayFab)!
 
+## 1.2.9
+
+### Bug fix for GetEntityIdsFromXboxLiveUserIds crash
+
+- Fixed a bug where the async operation started by `PartyManager::GetEntityIdsFromXboxLiveUserIds()` may crash on failure.
+
 ## 1.2.5
 
 This release of the Party Xbox Live Helper library includes the following changes:

@@ -5,7 +5,7 @@ description: "Types of Party audio samples."
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 02/10/2020
+ms.date: 04/07/2021
 ---
 
 # PartyAudioSampleType  
@@ -17,8 +17,8 @@ Types of Party audio samples.
 ```cpp
 enum class PartyAudioSampleType    
 {  
-    Integer,  
-    Float,  
+    Integer = 0,  
+    Float = 1,  
 }  
 ```  
   

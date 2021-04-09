@@ -5,7 +5,7 @@ description: "Reasons for removing a local user from a network."
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/25/2019
+ms.date: 04/07/2021
 ---
 
 # PartyLocalUserRemovedReason  
@@ -17,10 +17,10 @@ Reasons for removing a local user from a network.
 ```cpp
 enum class PartyLocalUserRemovedReason    
 {  
-    AuthenticationFailed,  
-    RemoveLocalUser,  
-    DestroyLocalUser,  
-    DestroyNetwork,  
+    AuthenticationFailed = 0,  
+    RemoveLocalUser = 1,  
+    DestroyLocalUser = 2,  
+    DestroyNetwork = 3,  
 }  
 ```  
   

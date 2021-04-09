@@ -5,7 +5,7 @@ description: "Types of statistics that can be retrieved for a network."
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 08/05/2020
+ms.date: 04/07/2021
 ---
 
 # PartyNetworkStatistic  
@@ -17,22 +17,22 @@ Types of statistics that can be retrieved for a network.
 ```cpp
 enum class PartyNetworkStatistic    
 {  
-    AverageRelayServerRoundTripLatencyInMilliseconds,  
-    SentProtocolPackets,  
-    SentProtocolBytes,  
-    RetriedProtocolPackets,  
-    RetriedProtocolBytes,  
-    DroppedProtocolPackets,  
-    ReceivedProtocolPackets,  
-    ReceivedProtocolBytes,  
-    CurrentlyQueuedSendMessages,  
-    CurrentlyQueuedSendMessageBytes,  
-    CurrentlyActiveSendMessages,  
-    CurrentlyActiveSendMessageBytes,  
-    TimedOutSendMessages,  
-    TimedOutSendMessageBytes,  
-    CanceledSendMessages,  
-    CanceledSendMessageBytes,  
+    AverageRelayServerRoundTripLatencyInMilliseconds = 0,  
+    SentProtocolPackets = 1,  
+    SentProtocolBytes = 2,  
+    RetriedProtocolPackets = 3,  
+    RetriedProtocolBytes = 4,  
+    DroppedProtocolPackets = 5,  
+    ReceivedProtocolPackets = 6,  
+    ReceivedProtocolBytes = 7,  
+    CurrentlyQueuedSendMessages = 8,  
+    CurrentlyQueuedSendMessageBytes = 9,  
+    CurrentlyActiveSendMessages = 10,  
+    CurrentlyActiveSendMessageBytes = 11,  
+    TimedOutSendMessages = 12,  
+    TimedOutSendMessageBytes = 13,  
+    CanceledSendMessages = 14,  
+    CanceledSendMessageBytes = 15,  
 }  
 ```  
   

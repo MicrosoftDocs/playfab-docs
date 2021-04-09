@@ -5,7 +5,7 @@ description: "Audio states for a target chat control in relation to a local chat
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/25/2019
+ms.date: 04/07/2021
 ---
 
 # PartyChatControlChatIndicator  
@@ -17,10 +17,10 @@ Audio states for a target chat control in relation to a local chat control.
 ```cpp
 enum class PartyChatControlChatIndicator    
 {  
-    Silent,  
-    Talking,  
-    IncomingVoiceDisabled,  
-    IncomingCommunicationsMuted,  
+    Silent = 0,  
+    Talking = 1,  
+    IncomingVoiceDisabled = 2,  
+    IncomingCommunicationsMuted = 3,  
 }  
 ```  
   

@@ -5,7 +5,7 @@ description: Queues an asynchronous attempt to create a local chat user. Privacy
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 11/01/2019
+ms.date: 04/07/2021
 ---
 
 # PartyXblManager::CreateLocalChatUser  
@@ -26,7 +26,7 @@ PartyError CreateLocalChatUser(
   
 **`xboxUserId`** &nbsp; uint64_t  
   
-The Xbox Live user id associated with the local chat user.  
+The Xbox Live User Id associated with the local chat user.  
   
 **`asyncIdentifier`** &nbsp; void*  
 *optional*  
@@ -36,7 +36,7 @@ An optional, app-defined, pointer-sized context value that can be used to associ
 **`localChatUser`** &nbsp; [PartyXblLocalChatUser**](../../PartyXblLocalChatUser/partyxbllocalchatuser.md)  
 *optional, library-allocated output*  
   
-The ouput local chat user object.  
+The output local chat user object.  
   
   
 ### Return value  

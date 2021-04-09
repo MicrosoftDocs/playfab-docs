@@ -5,7 +5,7 @@ description: "Types of Party audio sources."
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 02/13/2020
+ms.date: 04/07/2021
 ---
 
 # PartyAudioSourceType  
@@ -17,8 +17,8 @@ Types of Party audio sources.
 ```cpp
 enum class PartyAudioSourceType    
 {  
-    Microphone,  
-    TextToSpeech,  
+    Microphone = 0,  
+    TextToSpeech = 1,  
 }  
 ```  
   

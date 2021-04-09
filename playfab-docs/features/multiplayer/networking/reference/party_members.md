@@ -5,7 +5,7 @@ description: "Party C/C++ API overview"
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 08/05/2020
+ms.date: 04/07/2021
 ---
 
 # Party C/C++ API overview  
@@ -99,7 +99,6 @@ ms.date: 08/05/2020
 | [PartyRevokeInvitationCompletedStateChange](structs/partyrevokeinvitationcompletedstatechange.md) | Information specific to the *RevokeInvitationCompleted* type of state change. |  
 | [PartySetChatAudioInputCompletedStateChange](structs/partysetchataudioinputcompletedstatechange.md) | Information specific to the *SetChatAudioInputCompleted* type of state change. |  
 | [PartySetChatAudioOutputCompletedStateChange](structs/partysetchataudiooutputcompletedstatechange.md) | Information specific to the *SetChatAudioOutputCompleted* type of state change. |  
-| [PartySetLanguageCompletedStateChange](structs/partysetlanguagecompletedstatechange.md) | Information specific to the *SetLanguageCompleted* type of state change. |  
 | [PartySetTextChatOptionsCompletedStateChange](structs/partysettextchatoptionscompletedstatechange.md) | Information specific to the *PartySetTextChatOptionsCompleted* type of state change. |  
 | [PartySetTextToSpeechProfileCompletedStateChange](structs/partysettexttospeechprofilecompletedstatechange.md) | Information specific to the *SetTextToSpeechProfileCompleted* type of state change. |  
 | [PartySetTranscriptionOptionsCompletedStateChange](structs/partysettranscriptionoptionscompletedstatechange.md) | Information specific to the *SetTranscriptionOptionsCompleted* type of state change. |  
@@ -118,6 +117,7 @@ ms.date: 08/05/2020
 | [PartyAudioSourceType](enums/partyaudiosourcetype.md) | Types of Party audio sources.|  
 | [PartyChatControlChatIndicator](enums/partychatcontrolchatindicator.md) | Audio states for a target chat control in relation to a local chat control.|  
 | [PartyChatPermissionOptions](enums/partychatpermissionoptions.md) | Options for defining the communication relationship between two chat controls.|  
+| [PartyChatTextReceivedOptions](enums/partychattextreceivedoptions.md) | Flags describing the received text message in PartyChatTextReceivedStateChange.|  
 | [PartyDestroyedReason](enums/partydestroyedreason.md) | Reasons an object might be destroyed.|  
 | [PartyDeviceConnectionType](enums/partydeviceconnectiontype.md) | The type of connection used for transmitting endpoint message or chat data to a device.|  
 | [PartyDirectPeerConnectivityOptions](enums/partydirectpeerconnectivityoptions.md) | Flags controlling the attempted use of direct peer-to-peer connectivity among devices in a network.|  
@@ -134,8 +134,10 @@ ms.date: 08/05/2020
 | [PartyStateChangeResult](enums/partystatechangeresult.md) | Results for operations that generate state changes.|  
 | [PartyStateChangeType](enums/partystatechangetype.md) | The types of state changes that can occur.|  
 | [PartySynthesizeTextToSpeechType](enums/partysynthesizetexttospeechtype.md) | Types of text-to-speech operations.|  
+| [PartyTextChatFilterLevel](enums/partytextchatfilterlevel.md) | The level of filtering that will apply to incoming text chat when text moderation is enabled with [PartyLocalChatControl::SetTextChatOptions](classes/PartyLocalChatControl/methods/partylocalchatcontrol_settextchatoptions.md).|  
 | [PartyTextChatOptions](enums/partytextchatoptions.md) | Text chat options.|  
-| [PartyThreadId](enums/partythreadid.md) | Types of threads that Party library uses for internal purposes.|  
+| [PartyThreadId](enums/partythreadid.md) | High-level categorization of internal processing tasks.|  
 | [PartyTranslationReceivedOptions](enums/partytranslationreceivedoptions.md) | Flags describing how a translation was received.|  
 | [PartyVoiceChatTranscriptionOptions](enums/partyvoicechattranscriptionoptions.md) | Voice chat transcription options.|  
 | [PartyVoiceChatTranscriptionPhraseType](enums/partyvoicechattranscriptionphrasetype.md) | Types of transcription phrases.|  
+| [PartyWorkMode](enums/partyworkmode.md) | Configuration modes representing how the Party library will manage an internal processing task.|  
