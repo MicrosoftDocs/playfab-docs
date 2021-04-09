@@ -80,6 +80,8 @@
     href: concepts-realtime-audio-manipulation.md
   - name: Troubleshooting voice chat
     href: concepts-audio-troubleshooting.md
+  - name: Using text moderation
+    href: concepts-text-moderation.md
 - name: Networking and security
   items:
   - name: Invitations and the security model
