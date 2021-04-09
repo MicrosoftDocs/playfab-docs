@@ -5,7 +5,7 @@ description: "Types of text-to-speech operations."
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/25/2019
+ms.date: 04/07/2021
 ---
 
 # PartySynthesizeTextToSpeechType  
@@ -17,8 +17,8 @@ Types of text-to-speech operations.
 ```cpp
 enum class PartySynthesizeTextToSpeechType    
 {  
-    Narration,  
-    VoiceChat,  
+    Narration = 0,  
+    VoiceChat = 1,  
 }  
 ```  
   

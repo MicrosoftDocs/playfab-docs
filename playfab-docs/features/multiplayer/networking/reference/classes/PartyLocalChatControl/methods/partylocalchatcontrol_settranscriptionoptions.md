@@ -5,7 +5,7 @@ description: Configures the transcription options associated with voice chat aud
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/25/2019
+ms.date: 04/07/2021
 ---
 
 # PartyLocalChatControl::SetTranscriptionOptions  
@@ -40,7 +40,7 @@ PartyError
   
 ## Remarks  
   
-Transcription is the process of generating strings representing spoken phrases in voice chat. The options specified via `options` specify the chat controls that should generate these transcription strings, which are subsequently provided to the local chat control via [PartyVoiceChatTranscriptionReceivedStateChange](../../../structs/partyvoicechattranscriptionreceivedstatechange.md)s. <br /><br /> Only chat controls configured to use a language that supports transcription, via [PartyLocalDevice::CreateChatControl()](../../PartyLocalDevice/methods/partylocaldevice_createchatcontrol.md) or [SetLanguage()](partylocalchatcontrol_setlanguage.md), will provide transcriptions.
+Transcription is the process of generating strings representing spoken phrases in voice chat. The options specified via `options` specify the chat controls that should generate these transcription strings, which are subsequently provided to the local chat control via [PartyVoiceChatTranscriptionReceivedStateChange](../../../structs/partyvoicechattranscriptionreceivedstatechange.md)s. <br /><br /> Only chat controls configured to use a language that supports transcription, via [PartyLocalDevice::CreateChatControl()](../../PartyLocalDevice/methods/partylocaldevice_createchatcontrol.md), will provide transcriptions.
   
 ## Requirements  
   

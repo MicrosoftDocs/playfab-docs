@@ -5,7 +5,7 @@ description: Queues an asynchronous operation to configure the audio manipulatio
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 08/21/2020
+ms.date: 04/07/2021
 ---
 
 # PartyLocalChatControl::ConfigureAudioManipulationCaptureStream  
@@ -41,7 +41,7 @@ PartyError
   
 ## Remarks  
   
-If the configuration is non-null, a capture stream will be created for this chat control. This capture stream acts as the voice input for this chat control and is sent to all chat controls that this chat control is configured to communicate with. If the configuration is null, and a capture stream has previously been configured, the capture stream will be destroyed. <br /><br /> Upon completion of the asynchronous operation, when a non-null configuration was specified, a capture stream for this chat control can be queried via [PartyLocalChatControl::GetAudioManipulationCaptureStream()](partylocalchatcontrol_getaudiomanipulationcapturestream.md). Completion is indicated by a [PartyConfigureAudioManipulationCaptureStreamCompletedStateChange](../../../structs/partyconfigureaudiomanipulationcapturestreamcompletedstatechange.md).   
+If the configuration is non-null, a capture stream will be created for this chat control. Such a stream acts as the voice input for this chat control that is sent to all other chat controls to which this chat control is configured to communicate. If the configuration is null, and a capture stream has previously been configured, the capture will be destroyed. <br /><br /> Upon completion of the asynchronous operation, when a non-null configuration was specified, a capture stream for this chat control can be queried via [PartyLocalChatControl::GetAudioManipulationCaptureStream()](partylocalchatcontrol_getaudiomanipulationcapturestream.md). Completion is indicated by a [PartyConfigureAudioManipulationCaptureStreamCompletedStateChange](../../../structs/partyconfigureaudiomanipulationcapturestreamcompletedstatechange.md).   
 
 ### Platform support and supported formats
 

@@ -5,7 +5,7 @@ description: "Types of statistics that can be retrieved for an endpoint."
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 08/05/2020
+ms.date: 04/07/2021
 ---
 
 # PartyEndpointStatistic  
@@ -17,15 +17,15 @@ Types of statistics that can be retrieved for an endpoint.
 ```cpp
 enum class PartyEndpointStatistic    
 {  
-    CurrentlyQueuedSendMessages,  
-    CurrentlyQueuedSendMessageBytes,  
-    CurrentlyActiveSendMessages,  
-    CurrentlyActiveSendMessageBytes,  
-    TimedOutSendMessages,  
-    TimedOutSendMessageBytes,  
-    CanceledSendMessages,  
-    CanceledSendMessageBytes,  
-    AverageDeviceRoundTripLatencyInMilliseconds,  
+    CurrentlyQueuedSendMessages = 0,  
+    CurrentlyQueuedSendMessageBytes = 1,  
+    CurrentlyActiveSendMessages = 2,  
+    CurrentlyActiveSendMessageBytes = 3,  
+    TimedOutSendMessages = 4,  
+    TimedOutSendMessageBytes = 5,  
+    CanceledSendMessages = 6,  
+    CanceledSendMessageBytes = 7,  
+    AverageDeviceRoundTripLatencyInMilliseconds = 8,  
 }  
 ```  
   

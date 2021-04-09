@@ -5,7 +5,7 @@ description: Starts an asynchronous operation to destroy a local user.
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 11/08/2019
+ms.date: 04/07/2021
 ---
 
 # PartyManager::DestroyLocalUser  
@@ -40,7 +40,7 @@ PartyError
   
 ## Remarks  
   
-This method queues an asynchronous operation to destroy a local user. A [PartyDestroyLocalUserCompletedStateChange](../../../structs/partydestroylocalusercompletedstatechange.md) will be provided upon completion of the operation, indicating success or failure. Before successful completion of the operation, the local user will no longer authenticated into any networks (each indicated by a [PartyLocalUserRemovedStateChange](../../../structs/partylocaluserremovedstatechange.md)) and any local chat control associated with the user will be destroyed (indicated by a [PartyChatControlDestroyedStateChange](../../../structs/partychatcontroldestroyedstatechange.md)). Memory for the local user will remain valid until all state changes referencing the local user have been returned to [PartyManager::FinishProcessingStateChanges()](partymanager_finishprocessingstatechanges.md).
+This method queues an asynchronous operation to destroy a local user. A [PartyDestroyLocalUserCompletedStateChange](../../../structs/partydestroylocalusercompletedstatechange.md) will be provided upon completion of the operation, indicating success or failure. Before successful completion of the operation, the local user will be removed from all networks it has authenticated into (each indicated by a [PartyLocalUserRemovedStateChange](../../../structs/partylocaluserremovedstatechange.md)) and any local chat control associated with the user will be destroyed (indicated by a [PartyChatControlDestroyedStateChange](../../../structs/partychatcontroldestroyedstatechange.md)). Memory for the local user will remain valid until all state changes referencing the local user have been returned to [PartyManager::FinishProcessingStateChanges()](partymanager_finishprocessingstatechanges.md).
   
 ## Requirements  
   

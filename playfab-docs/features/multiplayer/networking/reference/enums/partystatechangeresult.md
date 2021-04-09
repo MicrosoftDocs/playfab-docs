@@ -5,7 +5,7 @@ description: "Results for operations that generate state changes."
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 08/05/2020
+ms.date: 04/07/2021
 ---
 
 # PartyStateChangeResult  
@@ -17,21 +17,21 @@ Results for operations that generate state changes.
 ```cpp
 enum class PartyStateChangeResult    
 {  
-    Succeeded,  
-    UnknownError,  
-    CanceledByTitle,  
-    InternetConnectivityError,  
-    PartyServiceError,  
-    NoServersAvailable,  
-    UserNotAuthorized,  
-    UserCreateNetworkThrottled,  
-    TitleNotEnabledForParty,  
-    NetworkLimitReached,  
-    NetworkNoLongerExists,  
-    NetworkNotJoinable,  
-    VersionMismatch,  
-    LeaveNetworkCalled,  
-    FailedToBindToLocalUdpSocket,  
+    Succeeded = 0,  
+    UnknownError = 1,  
+    CanceledByTitle = 2,  
+    InternetConnectivityError = 3,  
+    PartyServiceError = 4,  
+    NoServersAvailable = 5,  
+    UserNotAuthorized = 6,  
+    UserCreateNetworkThrottled = 7,  
+    TitleNotEnabledForParty = 8,  
+    NetworkLimitReached = 10,  
+    NetworkNoLongerExists = 11,  
+    NetworkNotJoinable = 12,  
+    VersionMismatch = 13,  
+    LeaveNetworkCalled = 14,  
+    FailedToBindToLocalUdpSocket = 15,  
 }  
 ```  
   

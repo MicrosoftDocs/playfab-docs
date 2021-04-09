@@ -5,7 +5,7 @@ description: Completes a GetTokenAndSignature operation.
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 11/01/2019
+ms.date: 04/07/2021
 ---
 
 # PartyXblManager::CompleteGetTokenAndSignatureRequest  
@@ -51,7 +51,7 @@ PartyError
   
 ## Remarks  
   
-The title can use the Xbox Authentication Library (XAL) to fulfil these request by calling the ```XalUserGetTokenAndSignatureSilentlyAsync``` function.  
+The title can use the Xbox Authentication Library (XAL) to fulfill these request by calling the ```XalUserGetTokenAndSignatureSilentlyAsync``` function.  
 This should only be called in response to a [PartyXblTokenAndSignatureRequestedStateChange](../../../structs/partyxbltokenandsignaturerequestedstatechange.md).
   
 ## Requirements  

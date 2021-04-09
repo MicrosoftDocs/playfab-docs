@@ -14,6 +14,20 @@ ms.localizationpriority: medium
 
 PlayFab Party had a significant (up to 90%) price drop on 10/13/2020. You can view the updated Party rates on the [Pricing page](https://playfab.com/pricing). For more information about the price drop, see our [blog post](https://blog.playfab.com/blog/starting-today-save-up-to-90-using-playfab-party).
 
+## 1.6.0
+
+### New thread control and text moderation features
+
+- The library's work can now be run manually on game-controlled threads. For more information, see [`PartyManager::SetWorkMode`](reference/classes/PartyManager/methods/partymanager_setworkmode.md).
+- Offensive text chat can now optionally be filtered. For more information, see [`PartyTextChatOptions::FilterOffensiveText`](reference/enums/partytextchatoptions.md).
+
+> [!NOTE]
+> Text moderation is not automatically enabled and is currently only available for Xbox Live partners. If you're interested in using text moderation, submit a request to your Microsoft Representative. Text moderation will fail if enabled in the client API without being enabled for your title by a Microsoft Representative.
+
+### Explicit enum numbering in the header
+
+- Enum values in the header now have explicit numbering.
+
 ## 1.5.13
 
 ### Bug fixes

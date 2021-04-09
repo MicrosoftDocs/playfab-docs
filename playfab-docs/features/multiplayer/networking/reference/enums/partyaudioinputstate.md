@@ -5,7 +5,7 @@ description: "States of an audio input associated with a local chat control."
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/25/2019
+ms.date: 04/07/2021
 ---
 
 # PartyAudioInputState  
@@ -17,13 +17,13 @@ States of an audio input associated with a local chat control.
 ```cpp
 enum class PartyAudioInputState    
 {  
-    NoInput,  
-    Initialized,  
-    NotFound,  
-    UserConsentDenied,  
-    UnsupportedFormat,  
-    AlreadyInUse,  
-    UnknownError,  
+    NoInput = 0,  
+    Initialized = 1,  
+    NotFound = 2,  
+    UserConsentDenied = 3,  
+    UnsupportedFormat = 4,  
+    AlreadyInUse = 5,  
+    UnknownError = 6,  
 }  
 ```  
   
