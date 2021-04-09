@@ -35,6 +35,8 @@
   href: personas/toc.yml
 - name: Pricing
   href: features/pricing/toc.yml
+- name: Roadmap
+  href: roadmap/toc.yml
 - name: Release notes
   href: release-notes/toc.yml
 - name: API references
