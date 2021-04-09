@@ -82,7 +82,7 @@ specifying teams or channels, Party requires explicitly defining the permissions
 To learn more about chat permissions, muting and how to build common chat scenario, please refer to the
 [chat permission overview](concepts-chat-permissions-and-muting.md) page.
 
-## Text chat and translation
+## Text chat, translation, and moderation
 
 Party also allows you to send and receive text chat from other chat controls. While the `PartyLocalChatControl::SendText()`
 method will allow you to send text messages to an arbitrary number of chat controls, you can rest assured that only the
@@ -92,6 +92,8 @@ Text chat translation can also be enabled by calling `PartyLocalChatControl::Set
 `PartyTextChatOptions::TranslateToLocalLanguage` option Party will translate incoming text message to the local
 chat control's language. The chat control's language can optionally be configured during chat control creation and can be
 accessed by calling `PartyLocalChatControl::GetLanguage()`. Translation will also be applied to incoming speech-to-text transcription.
+
+Text moderation is also available for text chat. To learn more about this feature, please refer to the [Using text moderation](concepts-text-moderation.md) page.
 
 ## Accessible chat
 
