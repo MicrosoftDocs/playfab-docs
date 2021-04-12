@@ -14,7 +14,11 @@ PlayFab Insights provides studios the ability to change the performance characte
 
 ## Performance Levels
 ### Why are performance levels important?
-Performance levels determine the cache size, compute power, and memory used when running queries as well as they determine the max number of queries that can occur at one time. Performance levels can also be used to increase the max number of events per second and the number of allowed active event exports for a title.
+Performance levels determine
+-  the resources (cache size, compute power, memory) given to each query
+- the limits of concurrent queries, max number of concurrent queries, events per second, and active event exports
+
+Performance levels can also be used to increase the max number of events per second and the number of allowed active event exports for a title.
 
 ### How can I change my performance level?
 The **Performance Level** slider is used to select a new performance level. The Performance Level Settings table shows a comparison of your current settings versus new settings you've selected:
@@ -23,7 +27,7 @@ The **Performance Level** slider is used to select a new performance level. The 
 ### Is performance level access limited?
 Yes. Every titles begins at Performance Level 1, a free tier of service that is included in all PlayFab offerings. Live titles can change their performance level at will, however, titles in Development Mode must either enable paid insights features or launch to access performance levels greater than 1.
 
-To enable paid insights features while a title is in development mode:
+To enable paid Insights features while a title is in development mode:
 1.	Log in to PlayFab.com
 2.	Select a title in Development Mode to enter the Title Overview page
 3.	Navigate to the "Data" tab on the left-hand side of the page
