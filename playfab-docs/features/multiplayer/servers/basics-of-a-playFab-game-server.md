@@ -77,3 +77,8 @@ As a convenience, PlayFab configures some build information as the following env
 - **PF_TITLE_ID** - Title Id for the session host
 - **PF_BUILD_ID** - Build Id for the session host
 - **PF_REGION** - Azure Region for the session host
+- **PUBLIC_IPV4_ADDRESS** - Public IP Address for the VM
+- **PF_VM_ID** - Unique identifier for the VM (like 'xcloudeau4u4yyxj4xymu:AustraliaEast:1E03_6f27ad88-9bc3-4ea3-8d16-75480aba4637:tvmps_0e05c37e0bbdca298a09fb0d597bd666eb7c5fd0ebcf1fed4c52e608a39a7c9c_d')
+- **PF_SHARED_CONTENT_FOLDER** - Folder accessible by every game server on the VM
+- **CERTIFICATE_FOLDER** - Folder containing game certificates
+- **PF_SERVER_LOG_DIRECTORY** - Folder containing game logs
