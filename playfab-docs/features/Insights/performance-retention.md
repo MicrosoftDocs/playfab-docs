@@ -9,12 +9,35 @@ ms.prod: playfab
 keywords: playfab, insights
 ms.localizationpriority: medium
 ---
-# Performance Levels & Retention
-PlayFab Insights provides studios the ability to change the performance characteristics of their data system. Controls are located in **Insights Management** under the data section in Game Manager. 
+# Insights Management: Performance Levels & Retention
+PlayFab Insights provides studios the ability to change the performance characteristics of their data system. Controls are located in **Management** under the data section in Game Manager.
 
 ## Performance Levels
-Use the **Performance Level** slider to select a new performance level. The Performance Level Settings table shows a comparison of your currently settings versus the new settings you selected:
+### Why are performance levels important?
+Performance levels determine
+-  the resources (cache size, compute power, memory) given to each query
+- the limits of concurrent queries, max number of concurrent queries, events per second, and active event exports
+
+Performance levels can also be used to increase the max number of events per second and the number of allowed active event exports for a title.
+
+### How can I change my performance level?
+The **Performance Level** slider is used to select a new performance level. The Performance Level Settings table shows a comparison of your current settings versus new settings you've selected:
 ![Insights Slider](data-explorer/media/performance-level2.png)
+
+### Is performance level access limited?
+Yes. Every titles begins at Performance Level 1, a free tier of service that is included in all PlayFab offerings. Live titles can change their performance level at will, however, titles in Development Mode must either enable paid insights features or launch to access performance levels greater than 1.
+
+To enable paid Insights features while a title is in development mode:
+1.	Log in to PlayFab.com
+2.	Select a title in Development Mode to enter the Title Overview page
+3.	Navigate to the "Data" tab on the left-hand side of the page
+4.	Navigate to the "Management (Preview)" tab on the top of the page
+5.	In the banner, select "Enable" to enable paid Insights features
+
+If a payment method is missing from your account, you will need to add one in order to access paid Insights tiers. To do this, select "Add credit card" on the page's banner which will take you to the billing information page. Once a payment instrument is added, the Insights Management page will allow you to enable paid Insights features as described.
+
+> [!NOTE]
+Once paid insights features are enabled for a title, that title will also have access to customized data retention values.
 
 ### *Cache Size*
 PlayFab Insights uses a specialized variation of Azure Data Explorer (Kusto). Insights separates storage into two categories: Hot Cache and Storage. Hot Cache is memory and SSD storage and is extremely fast to query. Complex queries and data functions are executed quickly when all data is readily accessible in the hot cache. Data stored outside the hot cache in storage is still easily accessible and can be queried, but query times may slow down with large datasets in storage. Data is separated by ingestion time, the most recent data stored first in hot storage. Data storage is an entirely internal process to Insights and data is accessed in the same manner no matter where its stored. 

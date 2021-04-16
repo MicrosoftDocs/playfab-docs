@@ -37,6 +37,9 @@ A successful allocation will return the following information:
 - The **TCP/UDP** port mappings (see [Connecting Clients to game servers](connecting-clients-to-game-servers.md)).
 - The **Region** of the server.
 
+> [!Note]
+> You can use the MpsAllocatorSample (found [here](https://github.com/PlayFab/MpsSamples/tree/master/MpsAllocatorSample)) for an easy way to allocate game servers during development of your game
+
 ## Client allocation
 
 Multiplayer servers are expensive and powerful. By default, you can only request a multiplayer server from your *own* trusted service using a PlayFab developer secret key.

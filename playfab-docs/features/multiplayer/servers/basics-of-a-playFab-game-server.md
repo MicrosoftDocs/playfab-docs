@@ -44,7 +44,7 @@ The following image shows the key flows for uploading a game server and combinin
 
 Managed containers are the easiest integration option for Windows projects, and a good place to start if you are unfamiliar with containers.
 
-A key feature of managed containers is that PlayFab will automatically update the base image with critical security fixes to ensure reliable play. Generally, security updates happen every month, and should not cause service interruption.
+A key feature of managed containers is that PlayFab will automatically update the base image with critical security fixes to ensure reliable play. Generally, security updates happen every month, and should not cause service interruption. To learn more, see [OS patch updates](os-patch-updates.md).
 
 During an upgrade, standing-by sessions that are naturally being recycled will be replaced with an updated container image and the same game server package.
 
@@ -77,3 +77,7 @@ As a convenience, PlayFab configures some build information as the following env
 - **PF_TITLE_ID** - Title Id for the session host
 - **PF_BUILD_ID** - Build Id for the session host
 - **PF_REGION** - Azure Region for the session host
+- **PUBLIC_IPV4_ADDRESS** - Public IP Address for the VM
+- **PF_VM_ID** - Unique identifier for the VM (like 'xcloudeau4u4yyxj4xymu:AustraliaEast:1E03_6f27ad88-9bc3-4ea3-8d16-75480aba4637:tvmps_0e05c37e0bbdca298a09fb0d597bd666eb7c5fd0ebcf1fed4c52e608a39a7c9c_d')
+- **CERTIFICATE_FOLDER** - Folder containing game certificates
+- **PF_SERVER_LOG_DIRECTORY** - Folder containing game logs

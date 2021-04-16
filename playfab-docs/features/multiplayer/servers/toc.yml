@@ -1,39 +1,57 @@
 - name: Overview
   href: index.md
-- name: Quickstarts
+- name: Host multiplayer games
+  href: using-playfab-servers-to-host-games.md
+- name: Get started
   items:
-  - name: Quickstart for multiplayer servers (API/PowerShell)
-    href: quickstart-for-multiplayer-servers-api-powershell.md
-  - name: Quickstart for multiplayer servers (Game Manager)
-    href: quickstart-for-multiplayer-servers-game-manager.md
-- name: Authoring a game server
-  items:
-  - name: Basics of a PlayFab game server
+  - name: Enable feature for game title
+    href: enable-playfab-multiplayer-servers.md
+  - name: Create VMs
+    href: deploying-playfab-multiplayer-server-builds.md
+  - name: Create your first server
+    href: create-your-first-server.md
+  - name: Build definition
+    href: build-definition.md
+  - name: Game server and container basics
     href: basics-of-a-playfab-game-server.md
-  - name: Integrating game servers with the PlayFab game server SDK (GSDK)
+  - name: Terminology
+    href: server-terms.md
+- name: Author a game server
+  items:
+  - name: Author a game server build
+    href: author-a-game-server-build.md
+  - name: Integrate game server build with GSDK
     href: integrating-game-servers-with-gsdk.md
   - name: Determining required DLLs
     href: determining-required-dlls.md
-  - name: Locally debugging game servers and integration with PlayFab
-    href: locally-debugging-game-servers-and-integration-with-playfab.md
-  - name: Case study of Unreal Engine integration (UE4)
-    href:  playfabgsdk_guide.md   
-- name: Managing server builds
+  - name: Integrate Unity with GSDK
+    href: mps-unity.md
+  - name: Integrate UE4 with GSDK case study
+    href: playfabgsdk_guide.md   
+- name: Manage VMs
   items:
-  - name: Deploying PlayFab multiplayer server builds
-    href: deploying-playfab-multiplayer-server-builds.md
-  - name: Deploying Linux builds
+  - name: Deploy builds using Game Manager
+    href: deploy-using-game-manager.md
+  - name: Deploy builds using PowerShell/API
+    href: deploy-using-powershell-api.md
+  - name: Create Linux container images
     href: deploying-linux-based-builds.md
-  - name: Using aliases to aggregate and manage multiple builds
-    href: allocating-with-build-alias.md     
-  - name: Archiving and retrieving multiplayer server logs
-    href: archiving-and-retrieving-multiplayer-server-logs.md
-  - name: Lifecycle of multiplayer server builds
+  - name: Server build lifecycle
     href: multiplayer-build-lifecycle.md
-  - name: Lifecycle of a multiplayer server build region
+  - name: Build region lifecycle
     href: multiplayer-build-region-lifecycle.md
   - name: OS patch level updates
     href: os-patch-updates.md
+  - name: Use aliases to aggregate and manage multiple VM builds
+    href: allocating-with-build-alias.md     
+  - name: Archive and retrieve server logs
+    href: archiving-and-retrieving-multiplayer-server-logs.md
+- name: Debugging game servers
+  items:
+  - name: Connect directly to debug game servers
+    href: directly-debugging-game-servers.md
+  - name: Locally debugging game servers and integration
+    href: locally-debugging-game-servers-and-integration-with-playfab.md
 - name: Scaling game servers
   items:
   - name: Scaling Standby
@@ -42,33 +60,47 @@
     href: dynamic-standby.md
   - name: Scheduled Standby
     href: scheduled-standby.md
-  - name:  Scaling Programmatically
+  - name: Scaling Programmatically
     href: scaling-programmatically.md    
 - name: Connecting clients and requesting servers
   items:
-  - name: Using quality-of-service (QoS) beacons to measure player latency to Azure
+  - name: Use QoS beacons to measure player latency to Azure
     href: using-qos-beacons-to-measure-player-latency-to-azure.md
-  - name: Allocating game servers and connecting Visual Studio debugging tools
+  - name: Allocate game servers and connect VS debugging tools
     href: allocating-game-servers-and-configuring-vs-debugging-tools.md
   - name: Connecting clients to game servers
     href: connecting-clients-to-game-servers.md
 - name: Limits and billing
   items:
-  - name: Accessing increased core limits and additional Azure regions
-    href: identifying-and-increasing-core-limits.md
-  - name: Azure Enterprise Agreement (EA) billing for PlayFab services
-    href: ea-billing.md
-  - name: Billing for PlayFab Multiplayer Servers
-    href: billing-for-thunderhead.md
-  - name: Detailed price sheet for multiplayer servers
-    href: multiplayer-servers-detailed-price-sheet.md
-  - name: PlayFab incident response procedures
-    href: comm-sla.md
-  - name: Tracking title consumption of multiplayer servers
-    href: tracking-consumption.md
-  - name: Requesting and reviewing quota changes
+  - name: Request and review quota changes
     href: quota-changes.md
-  - name: Monitoring server capacity
+  - name: Get increased core limits and additional Azure regions
+    href: identifying-and-increasing-core-limits.md
+  - name: Enterprise Agreement (EA) billing
+    href: ea-billing.md
+  - name: PlayFab services billing
+    href: billing-for-thunderhead.md
+  - name: Detailed price sheet
+    href: multiplayer-servers-detailed-price-sheet.md
+  - name: Incident response commitment
+    href: comm-sla.md
+  - name: Monitor server capacity
     href: quota-summary.md
+  - name: Track server consumption
+    href: tracking-consumption.md
+- name: Samples and resources
+  items:
+  - name: Samples and resources
+    href: server-samples-resources.md
+  - name: Windows Runner C#
+    href: windows-runner-sample.md
+  - name: Deploy Windows builds using Game Manager
+    href: quickstart-for-multiplayer-servers-game-manager.md
+  - name: Deploy Windows builds using PowerShell/API
+    href: quickstart-for-multiplayer-servers-api-powershell.md
+  - name: Wrapper
+    href: wrapper-sample.md
+  - name: MpsAllocator 
+    href: mps-allocator-sample.md
 - name: SDKs
   href: server-sdks.md
