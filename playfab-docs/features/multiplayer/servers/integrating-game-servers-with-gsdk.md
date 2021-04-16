@@ -44,7 +44,7 @@ int main()
 }
 ```
 
-### CSharp
+### C#
 
 ```csharp
 static void Main(string[] args)
@@ -111,7 +111,7 @@ Microsoft::Azure::Gaming::GSDK::logMessage("Here is a sample log");
 std::string logFolder = Microsoft::Azure::Gaming::GSDK::getLogsDirectory();
 ```
 
-### CSharp
+### C#
 
 ```csharp
 // This will add your log line to the GSDK log file, alongside other information logged by the GSDK
@@ -195,7 +195,7 @@ int main()
 }
 ```
 
-### CSharp
+### C#
 
 ```csharp
 // This method will be called in case #2, when PlayFab terminates the game server
@@ -284,7 +284,7 @@ int main()
 }
 ```
 
-### CSharp
+### C#
 
 ```csharp
 static private List<ConnectedPlayer> players = new List<ConnectedPlayer>();

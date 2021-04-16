@@ -3,111 +3,55 @@ title: Deploying PlayFab multiplayer server builds
 author: joannaleecy
 description: Describes how to deploy a PlayFab multiplayer server.
 ms.author: joanlee
-ms.date: 01/15/2019
+ms.date: 04/01/2021
 ms.topic: article
 ms.prod: playfab
-keywords: playfab, multiplayer servers, deploy, thunderhead, powershell
+keywords: playfab, multiplayer servers, deploy, powershell
 ms.localizationpriority: medium
 ---
 
-# Deploying PlayFab multiplayer server builds
+# Create VMs
 
-A PlayFab multiplayer server build is a combination of your game server executable, assets, certificates, and associated configuration that determines how your game scales across Azure.
+This topic outlines the process to start deploying virtual machines (VMs) for your game servers.
 
-Some aspects of a build cannot be modified once a build is created, this is the build's *definition*:
+Using our service, you configure VMs to be automatically spun up globally as game servers according to your budget and demand. In order to do so, you do not explicitly create VMs but define parameters that determine how they get created on your behalf. This process is called deploying or creating a build for the VMs. 
 
-- **Assets** - Assets are zip files. At least one asset containing your game server executable is required. (See [Basics of a PlayFab game server](basics-of-a-playfab-game-server.md)). Each asset has an asset mount path that specifies where it is mounted in the container file system. Assets should be less than 10GB in size and be of *zip*, *tar.gz* or *tar* file type. A typical mount path might be `C:\Assets`.
-- **Machine selection** - Required. The virtual machine size you want to use. PlayFab currently supports four Azure compute families (See [Multiplayer Servers detailed price sheet](multiplayer-servers-detailed-price-sheet.md)).  
-- **Servers per machine** - Required. The maximum number of game servers that should be operated on a single virtual machine. A typical configuration may have four servers on a Standard_D2s_v3, providing each server effectively 50% of a core.
-- **Certificate** - Optional. A *pfx* file (Windows) or *pem* file (Linux) containing a certificate to be installed within the container. Typically a certificate for service-to-service authentication is installed through this configuration.
-- **Network** - Required. A 3-tuple array of Ports, Names, and Protocols (TCP or UDP) that your game server is listening upon for incoming traffic. Outgoing (or solicited) network flows do not need to be configured. (See [Connecting clients to game servers](connecting-clients-to-game-servers.md)).
-- **Container** - Required. The container that will host your game server. Currently only Windows Server Core containers can be chosen through the Game Manager UX ([although the API does support the usage of custom Linux containers](xref:titleid.playfabapi.com.multiplayer.multiplayerserver.createbuildwithcustomcontainer)). 
+For general steps to deploy a build, see the section below. If you already have a build and want to update it, see [Safe deployment using alias](allocating-with-build-alias.md#safe-deployment-that-is-backwards-compatible).
 
-> [!NOTE] 
-> Asset filenames can only contain alphanumeric characters, underscores, hyphens, and periods.
->
-> Certificate names can only contain letters and numbers. No spaces or special characters (dashes, underscores, etc.)
+> [!Note]
+> The builds that you deploy for VMs are not game server builds. This build defines when and how VMs are deployed. Game server builds run on servers, just like client builds run on clients. You upload the game server build as an asset or include it as part of a container image, so it runs on the VMs when it gets created.
 
-You provide the build definition when you create a build through the PlayFab **Multiplayer Servers** tab:
+## Steps
 
-![Game Manager - Multiplayer - Thunderhead - New Build](media/tutorials/game-manager-thunderhead-new-build-navAUG2019.png)
+Details about each available option are provided in [Build definition and configuration](build-definition.md).
 
-Build configuration can be modified at any time in a build's life. The build configuration is a 3-tuple array containing:
+1. Select from a broad range of VMs distributed globally based on number of cores, storage space, and RAM. For more information about the VMs, see [Multiplayer Servers details and price](multiplayer-servers-detailed-price-sheet.md)
+2. Select the OS for the VM&mdash;Windows or Linux. The way builds are deployed for Linux servers are similar to Windows servers with a few important differences. To learn more, see [Using Windows and Linux servers](deploying-linux-based-builds.md).
+3. Upload your assets like the PlayFab Multiplayer Game Server Build. For more information on how to create this, see [Author a game server build](author-a-game-server-build.md).
+4. Determine network settings&mdash;port number and protocol
+5. Set other parameters such as maximum number of servers and number of standby servers for the regions
 
-- **Region** - The Azure region where game servers should be deployed.
-- **Standby servers** - How many game servers should be maintained in a "standby state" to handle incoming allocations in the specified region. This should be determined by the maximum allocation rate (allocations per second) for the build, and tuned over time as player behavior changes.
-- **Maximum servers** - The maximum number of game servers to operate in the specified region
+Once you've provided a valid build definition, the build starts deploying. You will be automatically directed to the **Server** page. In 5-10 minutes, you will see standby machines for your build, as shown below.
 
-![Game Manager - Multiplayer - Thunderhead - New Build - Regions](media/tutorials/game-manager-thunderhead-new-build-regions-navAUG2019.png)
+![Successful deployment of build with standby machines](media/create-your-first-server/server-deployed.png)
 
-When selecting the virtual machine size and regional configuration, keep in mind the overall usage limits configured for your PlayFab title. See [Accessing increased core limits and additional Azure regions](identifying-and-increasing-core-limits.md).
+## Ways to deploy
 
-Once you've provided a valid build definition, you will be able to deploy the build in Game Manager. In 5-10 minutes you should see standing by machines on the **Servers** page for your build, as shown below.
+There are two ways to deploy or create a build for the VMs.
 
-![Game Manager - Thunderhead - View Sessions](media/tutorials/game-manager-thunderhead-view-servers-navAUG2019.png)
+1. [PlayFab portal&mdash;Game Manager](deploy-using-game-manager.md)
+2. [Using PowerShell/API](deploy-using-powershell-api.md)
 
-After your game has launched, you will probably want to update your game server without interrupting service to players. This is a typical workflow for updating a game server:
+To help you evaluate and develop using our servers, certain servers have limited free usage and capacity limits. For more information, see [What comes with your basic PlayFab Core Services package?](billing-for-thunderhead.md?what-comes-with-your-basic-playfab-core-services-package).
 
-1. Create a new build: **Server v2.** Deploy this build with the build package containing your updated game server, assets and certificates as appropriate. From the build page you can use an existing build as a template, this can be helpful if most of the configuration is preserved.
-2. On the service performing allocations (through `RequestMultiplayerServer`) - begin allocating and sending players to the new Server v2 build.
-3. To reduce server consumption, at this point you may want to reduce the standby sessions configuration on the older *Server v1* build, because the build is no longer taking on new allocations.
-4. Eventually gameplay on Server v1 will end, and there will be no more active servers in that deployment. At this point you can delete the build.  You will have successfully migrated your player base to Server v2.
+To start deploying a build using our samples, see [Create your first server](create-your-first-server.md).
 
-## Managing builds using the multiplayer server API and PowerShell
+> [!Tip]
+> When you're not using the servers during development, remember to turn them off. Servers in all states, including standby, are counted against your free allotment. You can set standby servers to zero using Game Manager under Region settings. Alternatively, use the PowerShell/APImethod to set **Regions.StandbyServer=0**. You can also delete the build to ensure all servers are turned off in Game Manager.
 
-You may want to manage PlayFab server builds programmatically. You can do this using the [Multiplayer Server APIs](xref:titleid.playfabapi.com.multiplayer.multiplayerserver) directly our by using any of our [PlayFab SDKs](../../../sdks/playfab-sdk-intro.md).
+## See also
 
-PlayFab multiplayer servers has a simple PowerShell module enabling build management. This module uses PlayFab's C# SDK to interact with the entity API, and can be a useful resource for navigating the entity API.
+* [Create your first server](create-your-first-server.md)
+* [Deploy a build using Game Manager](deploy-using-game-manager.md)
+* [Deploy a build using PowerShell/API](deploy-using-powershell-api.md)
 
-This module is published on [PowerShell Gallery](https://www.powershellgallery.com/packages/PlayFabMultiplayer/). Install it by running the following in a PowerShell prompt, as shown below.
-
-```powershell
-Install-Module PlayFabMultiplayer
-```
-
-You may need to run `Set-ExecutionPolicy -ExecutionPolicy Unrestricted` to run the module. If you only want to browse it's code and usage of the entity API, run `Save-Module PlayFabMultiplayer` or view the code on [PowerShell Gallery](https://www.powershellgallery.com/packages/PlayFabMultiplayer/) in the browser.
-
-View help for the module by running:
-
-```powershell
-Get-Command -Module PlayFabMultiplayer| Get-Help
-```
-
-The PowerShell module, like all of the SDKs, requires you to specify the PlayFab `TitleID` you want to manage, and to provide a developer secret key to authenticate.
-
-You can get this information through **Game Manager** -> **Settings** -> **Secret Key**. Some examples of using the PowerShell module are shown below.
-
-```powershell
-## Specify your PlayFab Title ID for the specific title and use a developer secret key for authorization.
-Set-PFTitle -TitleID "mytitleID" -secretkey "mysecretkey"
-
-## Add an asset and get the list of assets
-Add-PFMultiplayerAsset -FilePath "C:\example.zip"
-Get-PFMultiplayerAsset
-
-## Add a certificate and get the list of certificates
-Add-PFMultiplayerCertificate -Name "CertName" -FilePath "C:\examplecert.pfx"
-Get-PFMultiplayerCertificate
-
-## Create a build
-
-$VMSelection = [PlayFab.MultiplayerModels.AzureVMSize]::Standard_D2_v2
-
-$Ports = New-object PlayFab.MultiplayerModels.Port
-$Ports.Name = "Test Port"
-$Ports.Num = 3600
-$Ports.Protocol = [PlayFab.MultiplayerModels.ProtocolType]::TCP
-
-$BuildCert = New-Object System.Collections.Generic.List[PlayFab.MultiplayerModels.GameCertificateReferenceParams]
-$BuildCertParams = New-Object PlayFab.MultiplayerModels.GameCertificateReferenceParams
-$BuildCertParams.Name = "FakeCert"
-$BuildCertParams.GsdkAlias = "FakeCert"
-
-$BuildCert.Add($BuildCertParams)
-
-New-PFMultiplayerBuild -BuildName "PowerShellTest902" -AssetFileName "winrunnerasset_notimeout.zip" -AssetMountPath "C:\Assets\" -StartMultiplayerServerCommand "C:\Assets\WinTestRunnerGame.exe" -MappedPorts $Ports -VMSize $VMSelection -BuildCerts $BuildCert
-
-
-## View servers for a build
-Get-PFMultiplayerServer -BuildName "PowerShellTest"
-```
