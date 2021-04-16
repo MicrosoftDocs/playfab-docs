@@ -20,7 +20,7 @@ Running them as containerized applications enables running and debugging the ser
 
 The PlayFab local debugging toolset includes [LocalMultiplayerAgent](https://github.com/PlayFab/MpsAgent) that provides mock responses to the GSDK and verifies whether your game server is integrated with the GSDK correctly. With the mock responses, the VmAgent cycles the game server through various states in its lifecycle on the PlayFab Multiplayer platform.
 
-You can configure the agent to run the game server as a containerized application and verify that your game server is packaged with all the required dependencies and will run without issues on the PlayFab Multiplayer platform. LocalMultiplayerAgent can work with either Windows or Linux game servers
+You can configure the agent to run the game server as a containerized application and verify that your game server is packaged with all the required dependencies and will run without issues on the PlayFab Multiplayer platform. LocalMultiplayerAgent can work with either Windows or Linux game servers.
 
 ## Basic Setup - Windows
 

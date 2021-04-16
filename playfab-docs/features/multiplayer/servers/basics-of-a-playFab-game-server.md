@@ -44,7 +44,7 @@ The following image shows the key flows for uploading a game server and combinin
 
 Managed containers are the easiest integration option for Windows projects, and a good place to start if you are unfamiliar with containers.
 
-A key feature of managed containers is that PlayFab will automatically update the base image with critical security fixes to ensure reliable play. Generally, security updates happen every month, and should not cause service interruption.
+A key feature of managed containers is that PlayFab will automatically update the base image with critical security fixes to ensure reliable play. Generally, security updates happen every month, and should not cause service interruption. To learn more, see [OS patch updates](os-patch-updates.md).
 
 During an upgrade, standing-by sessions that are naturally being recycled will be replaced with an updated container image and the same game server package.
 
