@@ -18,18 +18,17 @@ This topic lists samples and resources for PlayFab Multiplayer Game Servers.
 
 [Main repo for all the samples](https://github.com/PlayFab/MpsSamples)
 
-* [Windows Runner C#](https://github.com/PlayFab/MpsSamples/tree/master/WindowsRunnerCSharp)&mdash;[Using the sample](windows-runner-sample.md)
 * [Wrapper (Windows and Linux)](https://github.com/PlayFab/MpsSamples/tree/master/wrappingGsdk)&mdash;[Using the sample](wrapper-sample.md)
+* [MpsAllocator](https://github.com/PlayFab/MpsSamples/tree/master/MpsAllocatorSample)&mdash;[Learn to call frequently used APIs](mps-allocator-sample.md)
+* [Windows Runner C#](https://github.com/PlayFab/MpsSamples/tree/master/WindowsRunnerCSharp)&mdash;[Using the sample](windows-runner-sample.md)
 * [OpenArena (Linux)](https://github.com/PlayFab/MpsSamples/tree/master/openarena)
 * [Matchmaking with Server](https://github.com/PlayFab/MpsSamples/tree/master/MatchmakeSample)  (Using a C# game title)
-* [MpsAllocator](https://github.com/PlayFab/MpsSamples/tree/master/MpsAllocatorSample)&mdash;[Learn to call frequently used APIs](mps-allocator-sample.md)
 * [UnityMirror](https://github.com/PlayFab/MpsSamples/tree/master/UnityMirror)&mdash;[Use Unity game engine with PlayFab Multiplayer Servers](mps-unity.md)
 
 ## Resources
 
-* [PlayFabMultiplayerAPI module](https://github.com/PlayFab/MpsPowershell)&mdash;Use this module instead of the older one below
-* [PlayFab Multiplayer PowerShell Module (deprecated)](https://github.com/PlayFab/MultiplayerPowershell)
-* [PlayFab LocalMultiplayerAgent](https://github.com/PlayFab/MpsAgent/releases)
+* [PlayFabMultiplayerAPI module](https://github.com/PlayFab/MpsPowershell)
+* [PlayFab LocalMultiplayerAgent](https://github.com/PlayFab/MpsAgent)
 
 ## See also
 

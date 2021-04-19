@@ -39,7 +39,7 @@ For sample values you can use to deploy a simple server, see [Walk-through of de
 | Start command | The command to run when the game server starts, make sure to include any arguments that you need. |    |
 | Network | Define the port name, number, and protocol (TCP or UDP) to be used for incoming network traffic. Outgoing (or solicited) network flows do not need to be configured. For more networking information, see [Connecting clients to game servers](connecting-clients-to-game-servers.md).| |
 | Certificate (optional) | Upload certificates for the game server. This is a .pfx (Windows) or .pem (Linux) file containing the certificate to be installed within the container. Certificate names can only contain letters and numbers. No spaces or special characters such as dashes and underscores. | Typically, the certificate for service-to-service authentication is installed through this configuration. |
-| Metadata (optional)   | A list of property-value set | |
+| Metadata (optional)   | A set of property-values that can be retrieved using GSDK | |
 
 ### Build configuration
 

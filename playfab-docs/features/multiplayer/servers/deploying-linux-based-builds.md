@@ -39,9 +39,9 @@ This step is needed only if you want to use Windows development device to create
 * Open PowerShell
 * Run __wsl -l -v__ to check that both docker-desktop and ubuntu applications are running WSL 2 (version 2)
 
-**Verify Ubuntu Docker set up**
+**Verify Docker set up properly for WSL**
 
-* Open Ubuntu terminal
+* Open WSL terminal
 * Run __docker version__ to confirm that Docker is installed and OS used is Linux
 
 > [!Tip]
@@ -59,9 +59,9 @@ The Azure container registry account is associated with your PlayFab account. On
 
 If you wish to use PowerShell/API, call the [GetContainerRegistryCredentials](https://docs.microsoft.com/rest/api/playfab/multiplayer/multiplayerserver/getcontainerregistrycredentials) API to retrieve a container registry address, user name, and password.
 
-## Create and upload Linux container images
+## Create and push Linux container images to Azure Container Registry
 
-These steps help you create and upload your custom Linux container image.
+These steps help you create and push your custom Linux container image.
 
 #### Integrate your game server application with GSDK
 
@@ -75,7 +75,7 @@ A Dockerfile is a text file with no extension and contains all commands needed t
 
 1. Open __Notepad__ or any suitable editor
 2. Add specific commands needed to run and build a container. For an example of this file, see the [DockerFile](https://github.com/PlayFab/MpsSamples/blob/master/wrappingGsdk/Dockerfile) provided in [Wrapper sample](wrapper-sample.md). For more information on how to create this file, see [Dockerfile format (external)](https://docs.docker.com/engine/reference/builder/#format) and [Best practices when creating Dockerfile (external)](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/)
-3. Save file as a Dockerfile, ideally in an empty folder/directory. You can add other files that are needed to build this file into this folder.
+3. Save file as a Dockerfile, ideally in an empty folder/directory. You should add other files that are needed to build the container image into this folder.
 
   Saving instructions when using __Notepad__:
   * Select __File__> __Save as...__ to open up the save options
@@ -87,7 +87,7 @@ A Dockerfile is a text file with no extension and contains all commands needed t
 
 #### Build and upload Linux container image
 
-1. Open your Linux terminal with Docker installed like Ubuntu 20.04 LTS.
+1. Open your Linux terminal, making sure that you have installed Docker.
 2. Run the following Docker commands using the login credentials obtained from the earlier step. Then follow the instructions on screen to enter your username and password.
 
 ```docker
@@ -99,17 +99,16 @@ docker login customer5555555.azurecr.io
 username: customer5555555
 password: HRDFOdIebJkvBAS+usa55555555
 ```
-3. Build the container
+3. Build the container image
 
-Run the command below to build the Dockerfile in the folder/directory you are in. Note that there is a "." at the end of __docker build__ command.
+Run the command below to build the container image using the Dockerfile in the folder/directory you are in. Note that there is a "." at the end of __docker build__ command.
 
-The __-t__ flag specifies the repository to save the new image and the tag to use if the build succeeds. If there are build errors, you have to fix it before moving on to the next step.
+The __-t__ flag specifies the name:tag information for your new container image. They will be used if the build succeeds. If there are build errors, you have to fix them before moving on to the next step.
 
 In the example below, the repository name is __customer5555555.azurecr.io/pvp_gameserver__ and tag is __v1__. For more information, see [docker build command reference (external link)](https://docs.docker.com/engine/reference/commandline/build/) and [Building Dockerfile (external link)](https://docs.docker.com/engine/reference/builder/).
 
-When using WSL, the Windows C: drive is mounted at \mnt\c.
-* Use __wslpath -w "C:\Users\MyName\Documents\GitHub"__ to convert the Windows path to a WSL path
-* Then run __cd \mnt\c\Users\MyName\Documents\GitHub__ to change the path
+When using WSL, the Windows C: drive is mounted at /mnt/c.
+* Then run __cd /mnt/c/path/to/your/Dockerfile__ to switch to the path where your Dockerfile is.
 For more information, see [Accessing C drive](https://docs.microsoft.com/windows/wsl/faq#how-do-i-access-my-c--drive-).
 
 ```docker
@@ -117,11 +116,11 @@ docker build -t customer5555555.azurecr.io/pvp_gameserver:v1 .
 ```
 
 >[!TIP]
-> When using Ubuntu, run __pwd__ to find out which directory you are currently at.
+> When using Linux, run __pwd__ to find out which directory you are currently at.
 
 4. Upload the container image
 
-Run these commands below to upload the image into your Azure PlayFab registry account. Select a meaningful and helpful tag for your uploaded container image. Then use [docker push](https://docs.docker.com/engine/reference/commandline/push/) or another container registry client, to upload your container to the Azure PlayFab operated registry.
+Run the below commands to push the image to your Azure PlayFab Container registry. Select a meaningful and helpful name:tag combination for your uploaded container image. Then use [docker push](https://docs.docker.com/engine/reference/commandline/push/) or another container registry client, to upload your container to the Azure PlayFab operated registry.
 
 ```docker
 docker tag hello-world customer5555555.azurecr.io/pvp_gameserver:v1
@@ -130,8 +129,8 @@ docker push customer5555555.azurecr.io/pvp_gameserver:v1
 
 ## Check that your container is uploaded
 
-After the container is uploaded, go back to the __New Build__ page in Game Manager and select __Refresh Images__. You would be able to see the image in the list and select it. 
-
+After the container is uploaded, go back to the __New Build__ page in Game Manager and select __Refresh Images__. You would be able to see the image in the list and select it. Alternatively, you can use the [ListContainerImages](https://docs.microsoft.com/rest/api/playfab/multiplayer/multiplayerserver/listcontainerimages) API call to list your uploaded container images.
+ 
 Now you're ready to deploy servers. For instructions, see [PlayFab portal&mdash;Game Manager](deploy-using-game-manager.md) and [Using PowerShell/API](deploy-using-powershell-api.md).
 
 ## Windows and Linux container image differences
