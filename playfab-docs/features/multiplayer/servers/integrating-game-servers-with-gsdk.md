@@ -20,8 +20,6 @@ The PlayFab Game Server SDK (GSDK) is provided in C++, C#, and Java versions. Th
 
 For your game server to be able to communicate with the PlayFab multiplayer platform, you need to integrate with the GSDK. At a minimum, you must implement the `Start` and `ReadyForPlayers` methods in your game server.
 
-### C++
-
 ```cpp
 int main()
 {
@@ -43,9 +41,6 @@ int main()
 
 }
 ```
-
-### C#
-
 ```csharp
 static void Main(string[] args)
 {
@@ -67,9 +62,6 @@ static void Main(string[] args)
 
 }
 ```
-
-### Java
-
 ```java
 public static void main(String[] args)
 {
@@ -101,7 +93,7 @@ There are two ways to add log files from your game:
 1. Use the GSDK's `Log` method - It will add your own log lines to the GSDK log file.
 2. Write your own log file in the appropriate log directory that the PlayFab VM agent will zip up and upload.
 
-### C++
+
 
 ```cpp
 // This will add your log line to the GSDK log file, alongside other information logged by the GSDK
@@ -110,9 +102,6 @@ Microsoft::Azure::Gaming::GSDK::logMessage("Here is a sample log");
 // Alternatively, you can log your own files to the log directory
 std::string logFolder = Microsoft::Azure::Gaming::GSDK::getLogsDirectory();
 ```
-
-### C#
-
 ```csharp
 // This will add your log line to the GSDK log file, alongside other information logged by the GSDK
 GameserverSDK.LogMessage("Here is a sample log");
@@ -120,9 +109,6 @@ GameserverSDK.LogMessage("Here is a sample log");
 // Alternatively, you can log your own files to the log directory
 string logFolder = GameserverSDK.GetLogsDirectory();
 ```
-
-### Java
-
 ```java
 // This will add your log line to the GSDK log file, alongside other information logged by the GSDK
 GameserverSDK.log("Here is a sample log");
@@ -147,8 +133,6 @@ There are three scenarios in which your game server will end:
 For **(1)** above: You control when it happens, and can perform any necessary cleanup before your application exits.
 
 For **(2)** and **(3)** above: The GSDK provides a way for you to know when they will occur, by specifying a callback method.
-
-### C++
 
 ```cpp
 // This method will be called in case #2, when PlayFab terminates the game server
@@ -194,9 +178,6 @@ int main()
         // Continue initializing your game
 }
 ```
-
-### C#
-
 ```csharp
 // This method will be called in case #2, when PlayFab terminates the game server
 static void OnShutdown()
@@ -220,9 +201,6 @@ static void Main(string[] args)
     // Continue initializing your game
 }
 ```
-
-### Java
-
 ```java
 // This method will be called in case #2, when PlayFab terminates the game server
 private static void onShutdown()
@@ -256,8 +234,6 @@ Currently there are two things you can communicate to PlayFab using the GSDK:
 
 These two pieces of information will be transmitted to PlayFab in the next heartbeat, and can currently be used for reporting.
 
-### C++
-
 ```cpp
 static std::vector<Microsoft::Azure::Gaming::ConnectedPlayer> players;
 
@@ -283,9 +259,6 @@ int main()
         // Continue initializing your game
 }
 ```
-
-### C#
-
 ```csharp
 static private List<ConnectedPlayer> players = new List<ConnectedPlayer>();
 
@@ -311,9 +284,6 @@ static void Main(string[] args)
     // Continue initializing your game
 }
 ```
-
-### Java
-
 ```java
 private static ArrayList<ConnectedPlayer> players = new ArrayList<ConnectedPlayer>();
 
@@ -347,8 +317,6 @@ There are several PlayFab settings related to your game server that you can retr
 > [!NOTE]
 > Two of these settings are *actually* passed in to PlayFab by your clients, as part of the call to request a multiplayer server. So those settings will *not* be available to your game server until it is allocated.
 
-### C++
-
 ```cpp
 // Get all the configuration values
 std::unordered_map<std::string, std::string> config = Microsoft::Azure::Gaming::GSDK::getConfigSettings();
@@ -373,9 +341,6 @@ static constexpr const char* REGION_KEY; // Azure Region this server is running 
 static constexpr const char* SESSION_COOKIE_KEY; // The Session Cookie you passed into the allocation call when you requested a server
 static constexpr const char* SESSION_ID_KEY; // The Session ID you specified in the allocation call when you requested a server
 ```
-
-### CSharp
-
 ```csharp
 // Get all the configuration values
 IDictionary<string, string> config = GameserverSDK.getConfigSettings();
@@ -398,9 +363,6 @@ public static string RegionKey; // Azure Region this server is running in
 public static string SessionCookieKey; // The Session Cookie you passed into the allocation call when you requested a server
 public static string SessionIdKey; // The Session ID you specified in the allocation call when you requested a server
 ```
-
-### Java
-
 ```java
 // Get all the configuration values
 Map<String, String> config = GameserverSDK.getConfigSettings();

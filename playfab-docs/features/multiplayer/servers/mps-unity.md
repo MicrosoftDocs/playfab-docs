@@ -57,4 +57,5 @@ Moreover, you can implement the following callbacks on your game server:
 - `PlayFabMultiplayerAgentAPI.OnShutDownCallback` triggered when a termination notification is received
 - `PlayFabMultiplayerAgentAPI.OnAgentErrorCallback` triggered if there's any error between game server and PlayFab VM Agent communication
 
+> [!Note]
 > For more GSDK samples, you can take a look at our MPS Samples repository [here](https://github.com/PlayFab/MpsSamples)
