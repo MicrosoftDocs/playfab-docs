@@ -40,7 +40,7 @@
     href: multiplayer-build-lifecycle.md
   - name: Build region lifecycle
     href: multiplayer-build-region-lifecycle.md
-  - name: OS patch level updates
+  - name: OS patch level updates for Windows
     href: os-patch-updates.md
   - name: Use aliases to aggregate and manage multiple VM builds
     href: allocating-with-build-alias.md     
@@ -92,15 +92,15 @@
   items:
   - name: Samples and resources
     href: server-samples-resources.md
+  - name: Wrapper
+    href: wrapper-sample.md
+  - name: MpsAllocator 
+    href: mps-allocator-sample.md
   - name: Windows Runner C#
     href: windows-runner-sample.md
   - name: Deploy Windows builds using Game Manager
     href: quickstart-for-multiplayer-servers-game-manager.md
   - name: Deploy Windows builds using PowerShell/API
     href: quickstart-for-multiplayer-servers-api-powershell.md
-  - name: Wrapper
-    href: wrapper-sample.md
-  - name: MpsAllocator 
-    href: mps-allocator-sample.md
 - name: SDKs
   href: server-sdks.md

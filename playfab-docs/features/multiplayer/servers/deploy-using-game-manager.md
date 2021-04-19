@@ -56,7 +56,7 @@ If you are uploading assets:
 9. Under Regions, select the region you want to deploy the servers. Then specify the number of standby and maximum servers.
 10. Select **Save** to start the deployment process. You will be taken to the build home page. The build will display the **Deploying** status as show in the image below. 
 
-In a couple minutes, your build should be in the **Deployed** state. This means that servers are deployed and clients can be connected to the servers.
+In a couple minutes, your build should be in the **Deployed** state. This means that servers are deployed and can be allocated. For more information on allocating game servers you can check [here](allocating-game-servers-and-configuring-vs-debugging-tools.md) whereas you can use the [MpsAllocatorSample](mps-allocator-sample.md) to experiment with server allocation.
 
 ### Configure region information
 
@@ -78,5 +78,6 @@ To configure regional settings:
 * [Walkthrough: Deploy builds using Game Manager](quickstart-for-multiplayer-servers-game-manager.md)
 * [Deploy a build using PowerShell/API](deploy-using-powershell-api.md)
 * [Create your first server](create-your-first-server.md)
-* [Windows Runner C# sample](windows-runner-sample.md)
+* [Wrapper C# sample](wrapper-sample.md)
+* [MPS Allocator Sample](mps-allocator-sample.md)
 * [Samples and resources](server-samples-resources.md)
