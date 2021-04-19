@@ -36,7 +36,7 @@ These are key features we shipped since our last update in April 2020.
 
 - Greatly expanded our PlayFab Multiplayer Servers (MPS) regional footprint in the [US and Asia](https://blog.playfab.com/blog/azure-playfab-multiplayer-servers-adds-new-regions-in-asia-and-us-to-reduce-player-latency-and-give-multiplayer-games-even-more-choice)
 - Added support for [AMD SKUs](https://blog.playfab.com/blog/azure-playfab-multiplayer-servers-includes-free-monthly-amd-vms-usage-evaluation) to provide a better price/performance ratio for multiplayer optimized virtual machines
-- New API endpoints for self-servicing quota requests and updating service build names. For details, see the [API documentation](https://docs.microsoft.com/rest/api/playfab/multiplayer/multiplayerserver?view=playfab-rest) 
+- New API endpoints for self-servicing quota requests and updating service build names. For details, see the [API documentation](https://docs.microsoft.com/rest/api/playfab/multiplayer/multiplayerserver) 
 
 #### PlayFab Party
 
@@ -44,14 +44,14 @@ These features were launched in Fall 2020.
 
 - Shipped Unity plugin for Party in multiple platforms. It is Generally Available on Xbox (GDK), Windows, Nintendo Switch, PlayStation 4/5, iOS, and Android
 - Shipped Unreal plugin for Party in Xbox (GDK) and Windows
-- [Lowered the price of PlayFab Party](https://blog.playfab.com/blog/starting-today-save-up-to-90-using-playfab-party), helping teams save up to 90% on game voice chat and data data communications. Note that the service is [free when using the Xbox network](https://docs.microsoft.com/gaming/playfab/features/multiplayer/networking/xbl-discount)
+- [Lowered the price of PlayFab Party](https://blog.playfab.com/blog/starting-today-save-up-to-90-using-playfab-party), helping teams save up to 90% on game voice chat and data data communications. Note that the service is [free when using the Xbox network](../features/multiplayer/networking/xbl-discount.md)
 
 #### PlayFab Experiments
 
 Launched [PlayFab Experiments](https://blog.playfab.com/blog/announcing-playfabs-experimentation-all-new-for-trustworthy-experiments) as replacement to the existing A/B Tests preview feature.
 
 We’ve continued to iterate on this feature adding:
-- [Exclusion groups](https://docs.microsoft.com/gaming/playfab/features/analytics/experiments/exclusion-groups) to prevent interaction effects on your experiments
+- [Exclusion groups](../features/analytics/experiments/exclusion-groups.md) to prevent interaction effects on your experiments
 - Ability to run [multiple concurrent](https://blog.playfab.com/blog/prevent-interaction-effects-with-exclusion-groups-and-run-multiple-concurrent-experiments) experiments
 - Title data now has a primary configuration and [title data overrides](https://blog.playfab.com/blog/experiment-on-title-data-with-overrides-and-reimagined-design) to help you quickly manage your game experiments
 - Released the [Segmentation CRUD APIs](https://blog.playfab.com/blog/introducing-segmentation-apis-build-games-that-target-with-playfab-segment) for titles integrating their own solutions for creating targeted player groups 
@@ -62,16 +62,16 @@ We added the following functionalities for [PlayFab Insights](https://www.youtub
 
 - Enabled Insight features in Free Accounts and in Development Mode
 - Implemented Event Sampling and [custom data retention](https://blog.playfab.com/blog/custom-data-retention-with-playfab-insights) 
-- Launched [Data Explorer](https://docs.microsoft.com/gaming/playfab/features/insights/data-explorer/quickstart) into Public Preview  
+- Launched [Data Explorer](../features/insights/data-explorer/quickstart.md) into Public Preview  
 
 ## In-progress features and active development areas
 
 The following list is a peek into our PlayFab roadmap, identifying the most significant features we are currently working on. While not comprehensive, this list is intended to provide visibility into our key investments. Note that while these features and dates are plan of record at time of posting, availability is subject to change.
 
 Today we have 4 major services in preview:
-1. **Azure Functions Integration** – This is a replacement to our current cloudscript solution. [CloudScript using Azure Functions](https://docs.microsoft.com/gaming/playfab/features/automation/cloudscript-af/) brings support for [new languages](https://docs.microsoft.com/azure/azure-functions/supported-languages) (including C#) as well as local debugging in Visual Studio and Visual Studio Code. Azure Functions is in Public Preview.
+1. **Azure Functions Integration** – This is a replacement to our current cloudscript solution. [CloudScript using Azure Functions](../features/automation/cloudscript-af/index.md) brings support for [new languages](https://docs.microsoft.com/azure/azure-functions/supported-languages) (including C#) as well as local debugging in Visual Studio and Visual Studio Code. Azure Functions is in Public Preview.
 1. **User Generated Content (UGC) and Economy v2** – After receiving feedback from private preview customers, we are cleaning up and preparing our Economy v2 APIs for Public Preview. Public Preview for UGC is expected to start in July. The rest of the Economy v2 APIs are targeted to release into Public Preview by early 2022.
-1. **PlayFab Matchmaking** - This is available in [Public Preview](https://docs.microsoft.com/gaming/playfab/features/multiplayer/matchmaking/) right now. It is designed to help you match players together based on stats and player attributes. Check this out today! 
+1.	**PlayFab Matchmaking** – This is available in [Public Preview](../features/multiplayer/matchmaking/index.md) right now.  While you can check it out today, note that we are actively developing supporting services including a real-time notification solution to avoid polling as well as a lobby/session service to better manage your multiplayer state. Check out PlayFab Matchmaking today and reach out if you are interested in learning more about our upcoming multiplayer services which are targeting private preview later this year.
 1. **Leaderboards v2** - This is in private preview with select customers. While this service remains an integral part of our roadmap, we have chosen to prioritize other more critical feature areas based on feedback and plan to re-engage the development of Leaderboards v2 in Fall 2021.
 
 PlayFab provides updates and new features in the form of preview programs to give you the opportunity to evaluate them before they become part of our standard service or offering. If you're interested to join our preview programs, contact your account manager or email us at myplayfabam@microsoft.com. Our preview terms of use is modelled after [Azure Preview Terms of Use](https://azure.microsoft.com/support/legal/preview-supplemental-terms/).
