@@ -1,5 +1,5 @@
 ---
-title: OS Patch level updates
+title: OS Patch level updates for Windows 
 author: lejackso
 description: Describes OS patch level cycle
 ms.author: lejackso
@@ -10,9 +10,9 @@ keywords: playfab, multiplayer servers, thunderhead, OS Patch, Windows, azure
 ms.localizationpriority: medium
 ---
 
-# OS patch updates
+# OS patch updates for Windows
 
-Playfab Multiplayers Servers managed containers undergo a methodical OS patch update process to ensure game servers are operating with the latest security updates.  Each month, Azure Compute certifies a Windows OS image that is integrated into Multiplayer Servers for developers to choose from the "Windows Server Core Preview" toggle during the build creation process.  Developers are encouraged to test their non-production game servers built with the "Windows Server Core Preview" option.  
+Playfab Multiplayers Servers managed Windows containers undergo a methodical OS patch update process to ensure game servers are operating with the latest security updates.  Each month, Azure Compute certifies a Windows OS image that is integrated into Multiplayer Servers for developers to choose from the "Windows Server Core Preview" toggle during the build creation process.  Developers are encouraged to test their non-production game servers built with the "Windows Server Core Preview" option.  
 
 ![Multiplayer - OS Patch Update UX](media/ospatchupdate_ux.png)
 
