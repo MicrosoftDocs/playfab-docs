@@ -38,6 +38,7 @@ These are key features we shipped since our last update in April 2020.
 - Added support for [AMD SKUs](https://blog.playfab.com/blog/azure-playfab-multiplayer-servers-includes-free-monthly-amd-vms-usage-evaluation) to provide a better price/performance ratio for multiplayer optimized virtual machines
 - New API endpoints for self-servicing quota requests and updating service build names. For details, see the [API documentation](https://docs.microsoft.com/rest/api/playfab/multiplayer/multiplayerserver) 
 
+
 #### PlayFab Party
 
 These features were launched in Fall 2020.
@@ -46,11 +47,13 @@ These features were launched in Fall 2020.
 - Shipped Unreal plugin for Party in Xbox (GDK) and Windows
 - [Lowered the price of PlayFab Party](https://blog.playfab.com/blog/starting-today-save-up-to-90-using-playfab-party), helping teams save up to 90% on game voice chat and data data communications. Note that the service is [free when using the Xbox network](../features/multiplayer/networking/xbl-discount.md)
 
+
 #### PlayFab Experiments
 
 Launched [PlayFab Experiments](https://blog.playfab.com/blog/announcing-playfabs-experimentation-all-new-for-trustworthy-experiments) as replacement to the existing A/B Tests preview feature.
 
 We’ve continued to iterate on this feature adding:
+
 - [Exclusion groups](../features/analytics/experiments/exclusion-groups.md) to prevent interaction effects on your experiments
 - Ability to run [multiple concurrent](https://blog.playfab.com/blog/prevent-interaction-effects-with-exclusion-groups-and-run-multiple-concurrent-experiments) experiments
 - Title data now has a primary configuration and [title data overrides](https://blog.playfab.com/blog/experiment-on-title-data-with-overrides-and-reimagined-design) to help you quickly manage your game experiments
