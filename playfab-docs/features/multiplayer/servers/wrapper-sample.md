@@ -44,6 +44,10 @@ If you don't have a game server portion for your game, you can use Fakegame.
     * To deploy Linux game servers, see [Create and upload Linux container image](#create-and-upload-linux-container-image)
 4. [Deploy a build using Game Manager or API](#deploy-a-build-using-game-manager-or-api) to start creating game servers
 
+For a live walkthrough of building this sample, check out our presentation from GameStackLive 2021 (starts at about 2.52):
+
+> [!VIDEO https://www.youtube.com/embed/kj2TcMlvWgk]
+
 ## Wrapper with your existing game server build
 
 1. Get the [GSDK wrapper sample](https://github.com/PlayFab/MpsSamples/tree/master/wrappingGsdk) using standard Git methods or downloading this as a zip file
