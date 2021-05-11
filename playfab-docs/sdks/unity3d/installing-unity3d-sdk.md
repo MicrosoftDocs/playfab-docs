@@ -71,4 +71,8 @@ To set the title:
 3. Select the PlayFabSettings Asset.
 4. In the **Inspector** window, set the **Title ID** and the **Developer Secret Key**.
 
+
     ![PlayFab Inspector window](media/playfab-settings-inspector-window.png)
+
+ > [!NOTE]
+ > Refer to [Secret key Management](https://docs.microsoft.com/gaming/playfab/gamemanager/secret-key-management) to find your secret key, also called a developer key to your PlayFab Title.
