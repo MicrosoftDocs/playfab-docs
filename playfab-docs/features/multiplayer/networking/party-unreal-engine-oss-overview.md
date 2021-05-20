@@ -32,7 +32,7 @@ PlayFab OSS works alongside the PlayFab SDK marketplace plugin which provides ot
     - Text-to-speech synthesis 
 
 ## Which versions of Unreal Engine are supported?
-We recommend using Unreal Engine 4.25plus – the first approved version of UE4 for shipping on the Microsoft GDK. If you are on an earlier version of Unreal Engine 4, the OSS can be backported with minimal work. Refer to the [Using older versions of Unreal Engine 4](party-unreal-engine-using-older-versions.md) page for more details.
+We officially support 4.25plus and 4.26, however 4.26 is the recommended version. If you are on an earlier version of Unreal Engine 4, the OSS can be backported with minimal work. Refer to the [Using older versions of Unreal Engine 4](party-unreal-engine-using-older-versions.md) page for more details.
 
 **NOTE:** If you are using a version of UE4 earlier than 4.25plus, you will have to rename all references to GDK to Anvil using find & replace all.
 

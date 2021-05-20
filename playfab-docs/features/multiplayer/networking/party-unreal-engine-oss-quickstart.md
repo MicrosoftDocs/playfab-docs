@@ -69,7 +69,7 @@ MaxUserCount=<REPLACE ME with your max player count (note: split screen is still
 MaxUsersPerDeviceCount=<REPLACE ME with your max player count per box (note: split screen is still 1 device)  In the example of an 8 player game, this would be 1.>
 
 [/Script/OnlineSubsystemPlayFab.PlayFabPartyNetDriver]
-NetConnectionClassName="OnlineSubsystemPlayFab.PlayFabPartyNetConnection"
+NetConnectionClassName="OnlineSubsystemPlayFab.PlayFabNetConnection"
 ReplicationDriverClassName="<REPLACE ME with your existing replication driver class name>"
 ConnectionTimeout=15.0
 InitialConnectTimeout=30.0
@@ -101,7 +101,7 @@ MaxUserCount=<REPLACE ME with your max player count (note: split screen is still
 MaxUsersPerDeviceCount=<REPLACE ME with your max player count per box (note: split screen is still 1 device)  In the example of an 8 player game, this would be 1.>
 
 [/Script/OnlineSubsystemPlayFab.PlayFabPartyNetDriver]
-NetConnectionClassName="OnlineSubsystemPlayFab.PlayFabPartyNetConnection"
+NetConnectionClassName="OnlineSubsystemPlayFab.PlayFabNetConnection"
 ReplicationDriverClassName="<REPLACE ME with your existing replication driver class name>"
 ConnectionTimeout=15.0
 InitialConnectTimeout=30.0
