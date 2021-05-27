@@ -28,18 +28,18 @@ Cognitive Services and other services beyond core VOIP and game networking funct
 To use the Cognitive Services Interface in your game, add the following block of code to your game's Build.cs file.
 <pre><code>if (Target.bGenerateProjectFiles || (Target.Type != TargetType.Game && Target.Type != TargetType.Client))
 {
-	PublicDefinitions.Add("WITH_PFP_OSS_COGNITIVESERVICES=0");
+	PublicDefinitions.Add("WITH_OSS_PLAYFAB_COGNITIVESERVICES=0");
 }
 else
 {
-	PublicDefinitions.Add("WITH_PFP_OSS_COGNITIVESERVICES=1");
+	PublicDefinitions.Add("WITH_OSS_PLAYFAB_COGNITIVESERVICES=1");
 
-	PublicDependencyModuleNames.Add("OnlineSubsystemPlayFabParty");
+	PublicDependencyModuleNames.Add("OnlineSubsystemPlayFab");
 	PrivateDependencyModuleNames.Add("HTTP");
 }
 </code></pre>
 
-Additionally, you can wrap any game code with **#if WITH_PFP_OSS_COGNITIVESERVICES** to prevent compilation errors on platforms that do not use Cognitive Services.
+Additionally, you can wrap any game code with **#if WITH_OSS_PLAYFAB_COGNITIVESERVICES** to prevent compilation errors on platforms that do not use Cognitive Services.
 
 ## SetTextChatTranslationOptions
 SetTextChatTranslationOptions allows chat translation to be toggled on or off.

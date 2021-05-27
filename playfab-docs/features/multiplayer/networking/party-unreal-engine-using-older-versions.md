@@ -11,4 +11,4 @@ keywords: playfab, multiplayer, networking, unreal, unreal engine, unreal engine
 
 # Using older versions of Unreal Engine 4
 
-While not officially supported by the PlayFab Party Online Subsystem (OSS), it is entirely possible to use it on older versions of Unreal Engine 4. Core networking functionality will migrate back to earlier versions of Unreal Engine 4 with minor tweaks to interface function names & signatures, with certain instances renamed or removed to match older versions of the Unreal Engine 4 OSS interface.
+While not officially supported by the PlayFab Online Subsystem (OSS), it is entirely possible to use it on older versions of Unreal Engine 4. Core networking functionality will migrate back to earlier versions of Unreal Engine 4 with minor tweaks to interface function names & signatures, with certain instances renamed or removed to match older versions of the Unreal Engine 4 OSS interface.
