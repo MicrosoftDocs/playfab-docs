@@ -9,3 +9,5 @@
     href: catalogs.md
   - name: Drop Tables
     href: drop-tables.md
+  - name: Timed Consumables
+    href: timed-consumables.md
