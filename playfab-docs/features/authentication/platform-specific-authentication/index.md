@@ -12,42 +12,51 @@ ms.localizationpriority: medium
 
 # Platform-Specific Authentication
 
-PlayFab supports a wide variety of authentication providers, that allow you to permit your players to authenticate in the way that would be most natural to them. Depending on the platforms and distribution methods that you are targeting, you will want to utilize the authentication provider that will be most meaningful for your games.
+PlayFab supports a wide variety of authentication providers. This allows your title to support different authentication methods and give your players options.
 
-## Links
+What this means is that your players can choose how they prefer to verify their identity and sign in using a method that's most natural to them.
 
-![Apple](media/apple.png)
+Select authentication providers based on what is most meaningful for the players on your target platforms and distribution methods. For example, if your title is released on Xbox, it will make sense to offer Xbox Live sign-in as a way to authenticate their identity.
 
-- [Setup Sign In with Apple for PlayFab](apple-open-id.md)
+### Apple
 
- ![Facebook](media/facebook.png)
+- [Set up Apple sign-in for PlayFab](apple-open-id.md)
+
+### Facebook
 
 - [Setting up PlayFab authentication using Facebook and HTML5](facebook-html5.md)
 - [Setting up PlayFab authentication using Facebook and Unity](facebook-unity.md)
 
-![Google](media/google.png)
+### Google
 
 - [Setting up PlayFab authentication using Google and HTML5](google-html5.md)
 - [Setting up PlayFab authentication using Google Play Games Sign-In in Unity](google-sign-in-unity.md)
 
-![Kongregate](media/kongregate.png)
+### Kongregate
 
 - [Setting up PlayFab authentication using Kongregate and HTML5](kongregate-html5.md)
 - [Setting up PlayFab authentication using Kongregate and Unity](kongregate-unity.md)
 
-![Phaser](media/phaser.png)
+### Phaser
 
 - [Setting up PlayFab authentication in Phaser.io](phaser-io.md)
 
-![Steam](media/steam.png)
+### PlayStation
+
+- [Setting up PlayFab authentication using PlayStation (secure link)](https://dev.azure.com/PlayFabPrivate/PS5/_git/XPlatCppSdk-Private-PS5?path=%2FGuideToLoginWithPSN.md&_a=preview)
+
+If you're unable to access the above secure link, see [Request access](https://aka.ms/pf-partner-request-access).
+
+### Steam
 
 - [Setting up PlayFab authentication using Steam and Unity](steam-unity.md)
 
-![Twitch](media/twitch.png)
+### Twitch
 
 - [Setting up PlayFab authentication using Twitch and HTML5](twitch-html5.md)
 
-![Windows](media/windows10.png)
+### Windows and Xbox
 
+- [Authenticate Xbox Live users using PlayFab's Xbox Live Helper Library (recommended)](https://docs.microsoft.com/gaming/playfab/features/multiplayer/networking/party-xbox-live-guide#mapping-between-xbox-live-user-ids-and-playfab-entity-ids)
 - [Setting up PlayFab authentication using Universal Windows Platform](uwp.md)
 - [Integrating the Universal Windows Platform with PlayFab](uwp-integration.md)
