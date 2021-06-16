@@ -5,6 +5,8 @@
   href: api-access-policy.md  
 - name: Global API Method Error Codes
   href: global-api-method-error-codes.md
+- name: HTTP Response Status Codes
+  href: http-response-status-codes.md
 - name: PlayStream Events
   items:
   - name: PlayStream Event Model reference
