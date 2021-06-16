@@ -14,11 +14,11 @@ ms.localizationpriority: medium
 
 ## Introduction
 
-There is a need for game developers to get access to system level metrics (CPU/RAM/etc.) for the Virtual Machines that are created as part of their Builds. These metrics can provide unique insights to the game developer during the development of the game server. 
+Game developers sometimes need access to system level metrics (CPU/RAM/etc.) for the Virtual Machines that are created as part of their Builds. These metrics can provide unique insights to the game developer during the development of their multiplayer game server. Given these metrics, a game developer can make informed decision about utilizing VM resources.
 
 Performance metrics can support various development scenarios:
 
-1. Using CPU and memory utilization data to measure the resource needs of multiplayer servers
+1. Using CPU and memory utilization data to measure the resource needs of multiplayer servers, so game developer can properly calculate the optimal number of game servers on a specific Virtual Machine SKU (type)
 2. Using network counters to detect an irregular network environment, such as attempted DDoS attacks or other network congestion
 
 PlayFab Multiplayer Servers service supports a limited number of system metrics via the *VM Metrics (preview)* feature.
@@ -28,7 +28,7 @@ PlayFab Multiplayer Servers service supports a limited number of system metrics 
 
 ## Usage
 
-You can enable VM metrics for your Build in two ways, depending on how you create your Build:
+VM metrics for a Build can be enabled in two ways, depending on how a Build is created:
 
 1. Using Game Manager, you can enable the "Enable VM Metrics (preview)" checkbox on the "New Build" page.
 2. Using the [PlayFab Multiplayer Servers API](https://docs.microsoft.com/rest/api/playfab/multiplayer), you can set the property "IsEnabled" to true in the following API objects:
@@ -125,6 +125,16 @@ We are also using an internal utility called `telegraf-geneva-processor` that em
     "-configFile=/etc/telegraf/telegraf.geneva.processor.conf"
   ]
 ```
+
+The previous *telegraf.conf* results in telegraf agent collecting the below metrics:
+
+1. cpu_usage_system
+2. cpu_usage_user
+3. memory_available_percent
+4. net_bytes_recv_diff (network bytes received for eth0)
+5. net_bytes_sent_diff (network bytes sent for eth0)
+6. diskio_reads_diff (number of reads for sdb)
+7. diskio_writes_diff (number of writes for sdb)
 
 Similar to Windows, telegraf sends the collected counter values to our internal metrics collector. The collector aggregates and sends these values to our internal backend so they can be presented to the user on Game Manager.
 
