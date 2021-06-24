@@ -8,7 +8,7 @@
   href: titledata/toc.yml
 - name: Entities
   href: entities/toc.yml
-- name: Content Delivery Network
+- name: Content Delivery Network (Legacy)
   href: content-delivery-network/toc.yml
 - name: Webhooks
   href: webhooks/index.md
