@@ -5,7 +5,7 @@ description: "Audio states for a target chat control in relation to a local chat
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 04/07/2021
+ms.date: 06/22/2021
 ---
 
 # PartyChatControlChatIndicator  
@@ -21,6 +21,8 @@ enum class PartyChatControlChatIndicator
     Talking = 1,  
     IncomingVoiceDisabled = 2,  
     IncomingCommunicationsMuted = 3,  
+    NoRemoteInput = 4,  
+    RemoteAudioInputMuted = 5,  
 }  
 ```  
   
@@ -32,6 +34,8 @@ enum class PartyChatControlChatIndicator
 | Talking | The target chat control is generating voice audio. |  
 | IncomingVoiceDisabled | The local chat control is not configured to receive audio from the target chat control. |  
 | IncomingCommunicationsMuted | The target chat control has been muted by the local chat control. |  
+| NoRemoteInput | The target chat control does not have an audio input. |  
+| RemoteAudioInputMuted | The target chat control has an audio input but has muted it. |  
   
   
 ## Requirements  

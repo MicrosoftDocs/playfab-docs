@@ -5,7 +5,7 @@ description: TBD
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 04/07/2021
+ms.date: 06/22/2021
 ---
 
 # PartyManager  
@@ -30,6 +30,8 @@ class PartyManager
 | [DeserializeNetworkDescriptor](methods/partymanager_deserializenetworkdescriptor.md) | Deserializes a network descriptor structure from an opaque string serialized via a prior call to [SerializeNetworkDescriptor()](methods/partymanager_serializenetworkdescriptor.md). |  
 | [SetMemoryCallbacks](methods/partymanager_setmemorycallbacks.md) | Optionally configures the memory allocation and freeing callbacks the Party library should use. |  
 | [GetMemoryCallbacks](methods/partymanager_getmemorycallbacks.md) | Retrieves the memory allocation and freeing callbacks the Party library is using. |  
+| [SetProfilingCallbacksForMethodEntryExit](methods/partymanager_setprofilingcallbacksformethodentryexit.md) | Optionally configures the profiling event callbacks the Party library will make when entering or exiting instrumented methods. |  
+| [GetProfilingCallbacksForMethodEntryExit](methods/partymanager_getprofilingcallbacksformethodentryexit.md) | Retrieves the profiling event callbacks the Party library is configured to use when entering or exiting instrumented methods. |  
 | [SetThreadAffinityMask](methods/partymanager_setthreadaffinitymask.md) | Optionally configures the processor on which internal Party library threads will run. |  
 | [GetThreadAffinityMask](methods/partymanager_getthreadaffinitymask.md) | Retrieves the current set of processors on which internal Party library threads will run or are running as an affinity mask. |  
 | [SetWorkMode](methods/partymanager_setworkmode.md) | Configures the work mode of the Party library processing task associated with `threadId`. |  

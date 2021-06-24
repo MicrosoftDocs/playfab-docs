@@ -5,7 +5,7 @@ description: Optionally configures the memory allocation and freeing callbacks t
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 11/08/2019
+ms.date: 06/22/2021
 ---
 
 # PartyManager::SetMemoryCallbacks  

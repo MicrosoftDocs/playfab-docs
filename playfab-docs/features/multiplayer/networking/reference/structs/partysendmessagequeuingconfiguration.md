@@ -5,7 +5,7 @@ description: "Optional configuration parameters for modifying local queuing beha
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/25/2019
+ms.date: 06/22/2021
 ---
 
 # PartySendMessageQueuingConfiguration  
@@ -38,9 +38,9 @@ This message identity value can have any caller-specific meaning and is not inte
   
 **`timeoutInMilliseconds`** &nbsp; uint32_t  
   
-The maximum time, in milliseconds, that the message is permitted to remain in the local send queue awaiting a transmission opportunity.
+The maximum time, in milliseconds, that the message is permitted to remain in a Party-managed send queue awaiting a transmission opportunity.
   
-If the message has not started transmitting when this timeout elapses due to connection quality or receiver responsiveness, the message will be aborted and removed from the queue without being sent. <br /><br /> A ```timeoutInMilliseconds``` value of zero indicates that there should be no timeout and that the message should remain queued until it is either successfully transmitted, is explicitly canceled, or encounters some transmission failure such as remote disconnection. Zero is the default when no PartySendMessageQueuingConfiguration structure is provided to [PartyLocalEndpoint::SendMessage()](../classes/PartyLocalEndpoint/methods/partylocalendpoint_sendmessage.md).   <br /><br /> Message send queue timeouts can help prevent the local send queue from growing excessively when experiencing poor network conditions. They work well with messages that contain time-sensitive, periodic data where it would be a waste of bandwidth to transmit ones that are stale because a newer complete replacement message is sent regularly, and the loss of any individual one is not fatal.   <br /><br /> This timeout value only affects local send queuing. It does not affect the time it takes to actually transmit a message nor alter how long to wait for the receiver to acknowledge the transmission if necessary.
+If the message has not started transmitting when this timeout elapses due to connection quality or receiver responsiveness, the message will be aborted and removed from the queue without being sent. <br /><br /> A ```timeoutInMilliseconds``` value of zero indicates that there should be no timeout and that the message should remain queued until it is either successfully transmitted, is explicitly canceled, or encounters some transmission failure such as remote disconnection. Zero is the default when no PartySendMessageQueuingConfiguration structure is provided to [PartyLocalEndpoint::SendMessage()](../classes/PartyLocalEndpoint/methods/partylocalendpoint_sendmessage.md).   <br /><br /> Message send queue timeouts can help prevent send queues from growing excessively when experiencing poor network conditions. They work well with messages that contain time-sensitive, periodic data where it would be a waste of bandwidth to transmit ones that are stale because a newer complete replacement message is sent regularly, and the loss of any individual one is not fatal.   <br /><br /> This timeout value only affects Party-managed send queuing. It does not affect the time it takes to actually transmit a message (environmental latency) nor alter how long to wait for the receiver to acknowledge the transmission if applicable.   <br /><br /> This timeout value is evaluated twice when sending to targets without direct peer connections: once for the sending client's local send queues to the transparent cloud relay, affected by local environmental conditions and transmission rates to the relay, and a second time on the relay itself, which may be forced to queue messages before forwarding based on differing network conditions, transmission rates, or responsiveness of the remote targets.
   
   
 ## Requirements  

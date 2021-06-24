@@ -3,7 +3,7 @@ title: PlayFab Party Release Notes
 author: ScottMunroMS
 description: Release notes for PlayFab Party
 ms.author: scmunro
-ms.date: 08/07/2020
+ms.date: 06/22/2021
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, party, release notes, multiplayer, networking
@@ -13,6 +13,18 @@ ms.localizationpriority: medium
 # PlayFab Party release notes
 
 PlayFab Party had a significant (up to 90%) price drop on 10/13/2020. You can view the updated Party rates on the [Pricing page](https://playfab.com/pricing). For more information about the price drop, see our [blog post](https://blog.playfab.com/blog/starting-today-save-up-to-90-using-playfab-party).
+
+## 1.7.0
+
+### New profiling hooks and chat control indicators
+
+- Developers interested in where time is spent in internal library functions can now install optional method entrance and exit callbacks to hook into their preferred high-performance instrumentation method. For more information, see [`PartyManager::SetProfilingCallbacksForMethodEntryExit`](reference/classes/PartyManager/methods/partymanager_setprofilingcallbacksformethodentryexit.md). In this release the callbacks are only supported for Windows, Xbox One XDK, and Microsoft Game Core platforms.
+- New NoRemoteInput and RemoteAudioInputMuted chat control indicators provide more granularity on currently silent audio state. For more information, see [`PartyChatControlChatIndicator`](reference/enums/partychatcontrolchatindicator.md).
+
+### Endpoint message behavior improvements
+
+- The ['PartySendMessageQueuingConfiguration'](reference/structs/partysendmessagequeuingconfiguration.md) `timeoutInMilliseconds` field is now also evaluated by the transparent cloud relay if forced to queue messages before forwarding because of differing network conditions or responsiveness of the remote targets.
+- When fully authenticated into a network, sending to a 0-entry array will correctly target the exact set of all remote endpoints the library currently reports in the network at that time. Endpoints being created while the message is in the process of transmitting are no longer potentially included.
 
 ## 1.6.1
 
@@ -35,17 +47,11 @@ PlayFab Party had a significant (up to 90%) price drop on 10/13/2020. You can vi
 
 ### Bug fixes
 
-- Fixed a bug where audio is cutting out on iOS devices using bluetooth headsets.
-- Fixed a bug where an incorrect error code is generated when the app doesn't have permission to activate a microphone on windows.
+- Fixed a bug where audio is cutting out on iOS devices using Bluetooth headsets.
+- Fixed a bug where an incorrect error code is generated when the app doesn't have permission to activate a microphone on Windows platforms.
 - Fixed a bug where an unhealthy device is never refreshed unless something else forces a refresh.
 - Fixed a bug where a crash may occur when dereferencing a send channel's user data after the source endpoint associated with that channel has become invalid.
 - Fixed a bug where clients experience silent failures if a remote chat control doesn't have a language code.
-
-### Misc changes
-- Added the ability for Party clients of certain titles to use a max device count limit of 40 per network, up from the officially supports limit of 32.
-- Added counter for text messages received by the relay and a chat text counter to periodic stats.
-- Updated logging to include average round trip time for each device as it joins a network.
-- Updated certificates for DTLS, AAD, and Geneva.
 
 ## 1.5.10
 
@@ -73,7 +79,7 @@ PlayFab Party had a significant (up to 90%) price drop on 10/13/2020. You can vi
 ### Android and iOS audio bug fixes
 
 - Android: Bluetooth manager will be initialized the first time `PartyLocalDevice::CreateChatControl()` is called, rather than when `PartyManager::Initialize()` is called.
--	iOS: Fixed a minor sound artifact when `PartyManager::Initialize()` is called.
+- iOS: Fixed a minor sound artifact when `PartyManager::Initialize()` is called.
 
 ## 1.4.13
 
@@ -110,7 +116,7 @@ This release removes an unnecessary dependency on api-ms-win-core-version-l1-1-1
 
 * The real-time audio manipulation functions, which can be used to modify outgoing or incoming voice chat audio, are implemented for Windows and Xbox. For more information, see [Using real-time audio manipulation to apply custom voice effects](concepts-realtime-audio-manipulation.md).
 * The chat permission options have more options for optionally configuring text-to-speech and microphone audio permissions independently. For more information, see [`PartyChatPermissionOptions`](reference/enums/partychatpermissionoptions.md).
-  * This breaks compatibility with previous releases of the Xbox Live Helper library. This release is compatible with version 1.2.0 of the Xbox Live Helper library. For more information, see the [Xbox Live Helper Library release notes](party-xboxlive-relnotes.md).
+* This breaks compatibility with previous releases of the Xbox Live Helper library. This release is compatible with version 1.2.0 of the Xbox Live Helper library. For more information, see the [Xbox Live Helper Library release notes](party-xboxlive-relnotes.md).
 * Each transcription state change now indicates whether it represents text-to-speech or microphone audio. For more information, see [`PartyVoiceChatTranscriptionReceivedStateChange`](reference/structs/partyvoicechattranscriptionreceivedstatechange.md).
 
 
@@ -163,7 +169,7 @@ The iOS flavor of Party now has the framework package included for dynamically l
 
 #### UpdateEntityToken API
 
-This release of Party makes a change related to the handling of PlayFab entity tokens. In the previous version, the game provided Party with a user’s entity token in the `PartyManager::CreateLocalUser()` API. Thereafter, Party internally refreshed the entity token and kept it up to date.
+This release of Party makes a change related to the handling of PlayFab entity tokens. In the previous version, the game provided Party with a user's entity token in the `PartyManager::CreateLocalUser()` API. Thereafter, Party internally refreshed the entity token and kept it up to date.
 
 In this version, the internal token refreshing behavior has been removed and is replaced by a new API, `PartyLocalUser::UpdateEntityToken()`. The caller is now responsible for monitoring the expiration of the entity token provided to `PartyManager::CreateLocalUser()` and `PartyLocalUser::UpdateEntityToken()`. When the token is nearing or past the expiration time a new token should be obtained by performing a PlayFab login operation and provided to the Party library by calling `PartyLocalUser::UpdateEntityToken()`. It is recommended to acquire a new token when the previously supplied token is halfway through its validity period. On platforms that may enter a low power state or otherwise cause the application to pause execution for a long time, preventing the token from being refreshed before it expires, the token should be checked for expiration once execution resumes.
 
@@ -173,7 +179,7 @@ The rough flow is as follows:
 1. The response from PlayFab contains the entity token and also the expiration time
 1. Provide the token information to Party with the `PartyManager::CreateLocalUser()` API, as before
 1. [New] Make note of the expiration time in order to know when to refresh it
-1. [New] At halfway through the token’s expiration time (or soonest opportunity after that time), acquire a fresh token by calling `LoginWith*` again and track the new token’s expiration time
+1. [New] At halfway through the token's expiration time (or soonest opportunity after that time), acquire a fresh token by calling `LoginWith*` again and track the new token's expiration time
 1. [New] Call `PartyLocalUser::UpdateEntityToken()` to pass in the new token to Party
 
 Additional notes:
@@ -199,8 +205,6 @@ For more information, see the following links:
 
 ## 0.5.0-prerelease
 
-*Released July 18, 2019*
-
 ### API Changes
 
 #### Accessible Chat
@@ -221,8 +225,6 @@ Added new public API `PartyLocalUser::UpdateEntityToken()`.
 
 
 ## 0.2.0-prerelease
-
-*Released April 08, 2019*
 
 ### API Changes
 
