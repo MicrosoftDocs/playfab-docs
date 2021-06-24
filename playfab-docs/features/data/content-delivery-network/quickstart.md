@@ -12,6 +12,9 @@ ms.localizationpriority: medium
 
 # Content Delivery Network quickstart
 
+> [!IMPORTANT]
+> PlayFab CDN is a legacy feature supported for accounts with at least one title that has previously configured CDN. For new PlayFab developers interested in a content management solution, we recommend using Azure CDN. To get started, see the [Azure CDN documentation](https://docs.microsoft.com/azure/cdn/).
+
 The PlayFab Content Delivery Network (CDN) stores individual assets as files uniquely identified by the file name (also referred to as a *key*). This implies that you add, update, remove, and retrieve assets by key.
 
 PlayFab CDN allows segregating assets by folders. The folder path to the asset becomes part of the *asset key*.
