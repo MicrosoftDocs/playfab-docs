@@ -12,19 +12,19 @@ ms.localizationpriority: medium
 
 # Content Delivery Network (CDN)
 
+> [!IMPORTANT]
+> PlayFab CDN is a legacy feature supported for accounts with at least one title that has previously configured CDN. For new PlayFab developers interested in a content management solution, we recommend using Azure CDN. To get started, see the [Azure CDN documentation](https://docs.microsoft.com/azure/cdn/).
+
 The Content Delivery Network (CDN) is an infrastructure used to deliver assets - such as images, audio, binary content, etc. - to the end user that focuses on speed and availability.
 
-CDN costs are independent of your pricing tier (Essentials, Professional, etc.), and require that you have an active PlayFab payment account:
+## Pricing
+CDN costs are independent of your pricing tier (Essentials, Professional, etc.), and require that you have an active PlayFab payment account. CDN has one key meter, **Egress**, which is billed at $0.10 per GB.
 
-To set up an active PlayFab payment account, a Studio administrator must log in to Game Manager and navigate to the **Title Overview** page, select the **profile icon** in the top right corner, and then select **Studio billing**.
+## View cost and usage report
 
-On the **Studio billing** page enter your payment information.
+To locate the cost of CDN, navigate to the **Title Overview** page, select **Content** from the left navigation menu, and then select **File Management** from the list of tabs. The cost is located at the top of the **File Management** page. CDN costs are calculated based on the number of downloaded gigabytes per title during the billing period.
 
-To locate the cost of CDN, navigate to the **Title Overview** page, select **Content** from the left navigation menu, and then select **File Management** from the list of tabs. 
-The cost is located at the top of the **File Management** page. CDN costs are calculated based on the number of downloaded gigabytes per title during the billing period.
-
-> [!NOTE]
-> Please use the **Content**->**File Management** tab for more information on this subject, or contact our [developer forum](https://community.playfab.com/) with any questions that you may have.
+To view daily content usage, select the **Usage Report** button in the upper right, which will navigate to the Reports page. Select a specific report to see visualizations of the data or download a CSV.
 
 ## Links
 
