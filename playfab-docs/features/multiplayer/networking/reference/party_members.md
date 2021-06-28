@@ -5,7 +5,7 @@ description: "Party C/C++ API overview"
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 04/07/2021
+ms.date: 06/22/2021
 ---
 
 # Party C/C++ API overview  
@@ -35,6 +35,8 @@ ms.date: 04/07/2021
 | --- | --- |  
 | [PartyAllocateMemoryCallback](callbacks/partyallocatememorycallback.md) | A callback invoked every time a new memory buffer must be dynamically allocated by the Party library. |  
 | [PartyFreeMemoryCallback](callbacks/partyfreememorycallback.md) | A callback invoked every time a previously allocated memory buffer is no longer needed by the Party library and can be freed. |  
+| [PartyProfilingMethodEntranceCallback](callbacks/partyprofilingmethodentrancecallback.md) | A callback invoked every time the Party library enters an instrumented method. |  
+| [PartyProfilingMethodExitCallback](callbacks/partyprofilingmethodexitcallback.md) | A callback invoked every time the Party library is about to exit an instrumented method. |  
   
 ## Structures  
 
@@ -49,6 +51,8 @@ ms.date: 04/07/2021
 | [PartyMutableDataBuffer](structs/partymutabledatabuffer.md) | A data buffer that can be modified by the app. |  
 | [PartyNetworkConfiguration](structs/partynetworkconfiguration.md) | Network configuration data. |  
 | [PartyNetworkDescriptor](structs/partynetworkdescriptor.md) | A descriptor containing the data required for a device to connect to a network. |  
+| [PartyProfilingMethodEntranceEventData](structs/partyprofilingmethodentranceeventdata.md) | Information specific to the *MethodEntrance* type of profiling event. |  
+| [PartyProfilingMethodExitEventData](structs/partyprofilingmethodexiteventdata.md) | Information specific to the *MethodExit* type of profiling event. |  
 | [PartyRegion](structs/partyregion.md) | Represents a Party library region. |  
 | [PartySendMessageQueuingConfiguration](structs/partysendmessagequeuingconfiguration.md) | Optional configuration parameters for modifying local queuing behavior when sending a message. |  
 | [PartyTranslation](structs/partytranslation.md) | A translation. |  

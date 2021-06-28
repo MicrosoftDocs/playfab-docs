@@ -5,7 +5,7 @@ description: "A callback invoked every time a previously allocated memory buffer
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/25/2019
+ms.date: 06/22/2021
 ---
 
 # PartyFreeMemoryCallback  
@@ -37,7 +37,7 @@ An opaque identifier representing the Party library internal category of memory 
 ### Return value
 Type: void
   
-TBD  
+The callback does not return a value.  
   
 ## Remarks  
   

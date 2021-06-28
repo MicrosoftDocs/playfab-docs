@@ -5,7 +5,7 @@ description: "Results for operations that generate state changes."
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 04/07/2021
+ms.date: 06/22/2021
 ---
 
 # PartyStateChangeResult  
@@ -28,7 +28,6 @@ enum class PartyStateChangeResult
     TitleNotEnabledForParty = 8,  
     NetworkLimitReached = 10,  
     NetworkNoLongerExists = 11,  
-    NetworkNotJoinable = 12,  
     VersionMismatch = 13,  
     LeaveNetworkCalled = 14,  
     FailedToBindToLocalUdpSocket = 15,  
@@ -50,7 +49,6 @@ enum class PartyStateChangeResult
 | TitleNotEnabledForParty | The title has not been enabled to use PlayFab Party. PlayFab Party must be enabled in the PlayFab Game Manager. |  
 | NetworkLimitReached | The network rejected this operation because it would violate a limit in the network's configuration. See [PartyNetworkConfiguration](../structs/partynetworkconfiguration.md). |  
 | NetworkNoLongerExists | The network no longer exists. |  
-| NetworkNotJoinable | The network is not currently allowing new devices or users to join. |  
 | VersionMismatch | The operation failed because this version of the Party library was incompatible with either the Party service or the Party network. |  
 | LeaveNetworkCalled | The network was gracefully exited by the local device. |  
 | FailedToBindToLocalUdpSocket | The operation failed because the Party library was unable to bind to the socket specified in the [PartyOption::LocalUdpSocketBindAddress](partyoption.md) option. |  
