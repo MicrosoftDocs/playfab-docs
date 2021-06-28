@@ -553,6 +553,10 @@
             href: reference/classes/PartyManager/methods/partymanager_setmemorycallbacks.md
           - name: GetMemoryCallbacks
             href: reference/classes/PartyManager/methods/partymanager_getmemorycallbacks.md
+          - name: SetProfilingCallbacksForMethodEntryExit
+            href: reference/classes/PartyManager/methods/partymanager_setprofilingcallbacksformethodentryexit.md
+          - name: GetProfilingCallbacksForMethodEntryExit
+            href: reference/classes/PartyManager/methods/partymanager_getprofilingcallbacksformethodentryexit.md
           - name: SetThreadAffinityMask
             href: reference/classes/PartyManager/methods/partymanager_setthreadaffinitymask.md
           - name: GetThreadAffinityMask
@@ -659,6 +663,10 @@
         href: reference/callbacks/partyallocatememorycallback.md
       - name: PartyFreeMemoryCallback
         href: reference/callbacks/partyfreememorycallback.md
+      - name: PartyProfilingMethodEntranceCallback
+        href: reference/callbacks/partyprofilingmethodentrancecallback.md
+      - name: PartyProfilingMethodExitCallback
+        href: reference/callbacks/partyprofilingmethodexitcallback.md
     - name: Structures
       items:
       - name: PartyAudioFormat
@@ -679,6 +687,10 @@
         href: reference/structs/partynetworkconfiguration.md
       - name: PartyNetworkDescriptor
         href: reference/structs/partynetworkdescriptor.md
+      - name: PartyProfilingMethodEntranceEventData
+        href: reference/structs/partyprofilingmethodentranceeventdata.md
+      - name: PartyProfilingMethodExitEventData
+        href: reference/structs/partyprofilingmethodexiteventdata.md
       - name: PartyRegion
         href: reference/structs/partyregion.md
       - name: PartySendMessageQueuingConfiguration
