@@ -30,7 +30,7 @@ PlayFab Multiplayer Servers service supports a limited number of system metrics 
 
 VM metrics for a Build can be enabled in two ways, depending on how a Build is created:
 
-1. Using Game Manager, you can enable the "Enable VM Metrics (preview)" checkbox on the "New Build" page.
+1. Using Game Manager, you can enable the "Virtual machine metrics preview" checkbox on the "New Build" Game Manager page.
 2. Using the [PlayFab Multiplayer Servers API](https://docs.microsoft.com/rest/api/playfab/multiplayer), you can set the property "IsEnabled" to true in the following API objects:
   - [InstrumentationConfiguration in the CreateBuildWithManagedContainer API call](https://docs.microsoft.com/rest/api/playfab/multiplayer/multiplayer-server/create-build-with-managed-container#instrumentationconfiguration) for a Windows Build with containers
   - [InstrumentationConfiguration in the CreateBuildWithProcessBasedServer API call](https://docs.microsoft.com/rest/api/playfab/multiplayer/multiplayer-server/create-build-with-process-based-server#instrumentationconfiguration) for a process-based Windows Build
@@ -50,7 +50,7 @@ On Windows, VM metrics collection is a feature of the existing PlayFab container
 6. Bytes Received/sec
 7. Bytes Sent/sec
 
-Collected counter values are sent to our internal metrics collector. The collector aggregates and sends them to our internal backend so they can be presented to the user on Game Manager.
+Collected counter values are sent to our internal metrics collector running on the VM. The collector aggregates and sends them to our internal backend so they can be presented to the user on [Game Manager](https://developer.playfab.com).
 
 ### Linux
 
@@ -126,7 +126,7 @@ We are also using an internal utility called `telegraf-geneva-processor` that em
   ]
 ```
 
-The previous *telegraf.conf* results in telegraf agent collecting the below metrics:
+This *telegraf.conf* configuration enables the telegraf agent to collect the below metrics:
 
 1. cpu_usage_system
 2. cpu_usage_user
@@ -136,7 +136,7 @@ The previous *telegraf.conf* results in telegraf agent collecting the below metr
 6. diskio_reads_diff (number of reads for sdb)
 7. diskio_writes_diff (number of writes for sdb)
 
-Similar to Windows, telegraf sends the collected counter values to our internal metrics collector. The collector aggregates and sends these values to our internal backend so they can be presented to the user on Game Manager.
+Similar to Windows, telegraf sends the collected counter values to our internal metrics collector. The collector aggregates and sends these values to our internal backend so they can be presented to the user on [Game Manager](https://developer.playfab.com).
 
 ### Allocation Percentage
 
@@ -144,8 +144,10 @@ In both Windows and Linux VMs, we are emitting a metric called *Allocation Perce
 
 ## Viewing VM metrics
 
-When you enable the VM metrics feature for a new Build, metrics will be start emitting as soon as the Build is successfully deployed. You can use the "Virtual Machines" page on Game Manager to get a link to display VM metrics for a specified VM.
+When you enable the VM metrics feature for a new Build, metrics will be emitted as soon as the Build is successfully deployed. You can use the "Virtual Machines"  (https://developer.playfab.com/en-US/<YOUR_TITLE_ID>/multiplayer/server/virtual-machines) page on Game Manager to get a link to display VM metrics for a specified VM.
+
+![View VM Metrics](media/view-vm-metrics.png)
 
 ## How can I submit feedback for this preview feature?
 
-Join us on [Discord](https://discord.gg/gamestack) on the #multiplayer-servers channel, we would love to get in touch and hear your thoughts abut this feature!
+Join us on [Discord](https://discord.gg/gamestack) on the #multiplayer-servers channel, we would love to get in touch and hear your thoughts about this feature!

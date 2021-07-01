@@ -46,6 +46,8 @@
     href: allocating-with-build-alias.md     
   - name: Archive and retrieve server logs
     href: archiving-and-retrieving-multiplayer-server-logs.md
+  - name: VM performance metrics (preview)
+    href: vm-metrics.md
 - name: Debugging game servers
   items:
   - name: Connect directly to debug game servers
