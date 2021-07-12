@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 >The Data Explorer feature is in public preview. We anticipate ongoing changes to it as we continue gathering feedback 
 and optimizing for customer use.
 
-Data Explorer basic mode is designed to let you quickly discover insights in your event data without requiring query language knowledge. This non-technical query building experience enables users to explore their data quickly. To learn how to write more complex queries, see the [Getting Started with Data Explorer Advanced](getting-started-with-data-explorer-advanced.md) tutorial.
+Data Explorer basic mode is designed to let you quickly discover insights in your event data without requiring query language knowledge. This non-technical query building experience enables users to explore their data quickly. To learn how to write more complex queries, see the [Getting Started with Data Explorer (advanced)](getting-started-with-data-explorer-advanced.md) tutorial.
 
 ## Authoring custom queries
 
@@ -36,7 +36,7 @@ The timeframe of the query can be adjusted by modifying **Start date** and **End
 
 The output of the query can be modified further by adding **Group By** and **Aggregate Type**. Group By modifies how the output rows are grouped, whereas Aggregate Type modifies how the rows are counted, summed, or distinct by.
 
-You can create queries in the Query panel.
+You can create queries in the Query panel. Please note that Data Explorer (basic) queries will only reference the top 100 events. To view all events, run the query in [Data Explorer (advanced)](media/getting-started-with-data-explorer-advanced.md).
 
 ## Query Output
 
