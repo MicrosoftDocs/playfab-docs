@@ -30,3 +30,7 @@ To create a new export:
 1. Export all data to be ingested into a separate data system. Exporting all data allows for an efficient way to create files to save for cold storage or for ingestion into another data processesing system. While this is functional it is not the intended use case for Insights and Export. PlayFab Insights is excellent at data modification and tranformation, the second case is recommended over this case.
 2. Export custom query data. Using a custom query allows you to select custom datasets for export. This is ideal for loading cleaned data models into machine learning systems like Spark and pandas (python), or into other data systems and visualization platforms that provide specialized use cases.
 
+### Continuous Export
+
+Continuous data export will begin exporting data only from the point of the export's creation.
+
