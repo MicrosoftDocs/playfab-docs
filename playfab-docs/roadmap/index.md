@@ -17,9 +17,8 @@ _Last Update: 07/30/2021_
 
 Below are the latest roadmap updates for PlayFab. As always, we welcome your feedback. The [Feature Requests](https://community.playfab.com/spaces/24/index.html?sort=votes) section of our forum allows you to post, comment, and vote on ideas from our community. Addressing issues also remains a high priority so please continue to share your findings in the [Bugs](https://community.playfab.com/spaces/23/index.html) section of our forums. And as always, thank you for your continued support!
 
->[!Note]
-> We’re committed to being more open about our roadmap so that you can count on PlayFab to support your games in development and operation, but the realities of software development may shift or change the features and/or the timing that are in this roadmap update. While this roadmap reflects our aspirations, future facing features and timelines are subject to change.
-> We love hearing from game creators that are using PlayFab for their current or in development titles, so if you see something on this roadmap that is critical to your success or that you want more information on please let us know!.
+We’re committed to being more open about our roadmap so that you can count on PlayFab to support your games in development and operation, but the realities of software development may shift or change the features and/or the timing that are in this roadmap update. While this roadmap reflects our aspirations, future facing features and timelines are subject to change.
+We love hearing from game creators that are using PlayFab for their current or in development titles, so if you see something on this roadmap that is critical to your success or that you want more information on please let us know!
 
 ## What’s New (since our last update in April):
 
@@ -50,13 +49,14 @@ We’ve been working on a few community events;  [Game Stack Live](https://devel
 Our newest addition to the suite of PlayFab Party inclusiveness features is [Party Text Moderation](https://docs.microsoft.com/gaming/playfab/features/multiplayer/networking/concepts-text-moderation)! With moderation, you can significantly reduce bullying and toxicity in your gaming community and increase average playtime and player retention. Turning on Party Text Moderation only requires one line of code! 
 
 ## What's In-Progress
+
 Here are some of our active areas of development. The following list is a peek into our PlayFab roadmap, identifying the most significant features we are currently working on. While not comprehensive, this list is intended to provide visibility into our key investments. Note that while these features and dates are plan of record at time of posting, availability is subject to change.
 
 Today we have a few major services in preview:
 1. **Azure Functions Integration** – This is a replacement to our current cloudscript solution. [CloudScript using Azure Functions](../features/automation/cloudscript-af/index.md) brings support for [new languages](/azure/azure-functions/supported-languages) (including C#) as well as local debugging in Visual Studio and Visual Studio Code. Azure Functions is in Public Preview.
 1. **User Generated Content (UGC)** – After feedback with private preview customers, we are working on cleaning up and preparing our Economy v2 APIs for Public Preview, starting with UGC. UGC is slated for Public Preview very soon (September).
-1.	**PlayFab Matchmaking** – This is available in [Public Preview](../features/multiplayer/matchmaking/index.md) right now, and is designed to help you better match players together based on stats and player attributes. Check it out today!
-1.	**Event Sampling** - Is now available in private preview, allowing you to finely control PlayStream and telemetry ingestion for more granular control and cost savings. If you are interested in looking more closely at Event Sampling, please reach out to your account manager, or contact us at myplayfabam@microsoft.com 
+1. **PlayFab Matchmaking** – This is available in [Public Preview](../features/multiplayer/matchmaking/index.md) right now, and is designed to help you better match players together based on stats and player attributes. Check it out today!
+1. **Event Sampling** - Is now available in private preview, allowing you to finely control PlayStream and telemetry ingestion for more granular control and cost savings. If you are interested in looking more closely at Event Sampling, please reach out to your account manager, or contact us at myplayfabam@microsoft.com 
 
 PlayFab provides updates and new features in the form of preview programs to give you the opportunity to evaluate them before they become part of our standard service or offering. If you're interested to join our preview programs, contact your account manager or email us at myplayfabam@microsoft.com. Our preview terms of use is modelled after [Azure Preview Terms of Use](https://azure.microsoft.com/support/legal/preview-supplemental-terms/).
 
