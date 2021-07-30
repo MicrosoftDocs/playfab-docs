@@ -17,22 +17,19 @@ _Last Update: 07/30/2021_
 
 Below are the latest roadmap updates for PlayFab. As always, we welcome your feedback. The [Feature Requests](https://community.playfab.com/spaces/24/index.html?sort=votes) section of our forum allows you to post, comment, and vote on ideas from our community. Addressing issues also remains a high priority so please continue to share your findings in the [Bugs](https://community.playfab.com/spaces/23/index.html) section of our forums. And as always, thank you for your continued support!
 
-We’re committed to being more open about our roadmap so that you can count on PlayFab to support your games in development and operation, but the realities of software development may shift or change the features and/or the timing that are in this roadmap update. While this roadmap reflects our aspirations, future facing features and timelines are subject to change.
-We love hearing from game creators that are using PlayFab for their current or in development titles, so if you see something on this roadmap that is critical to your success or that you want more information on please let us know!
+We’re committed to being more open about our roadmap so that you can count on PlayFab to support your games in development and operation, but the realities of software development may shift or change the features and/or the timing that are in this roadmap update. While this update reflects our current planning, features and timelines may change. 
+
+We also love hearing from game creators that are using PlayFab for their current or in development titles, so if you see something on this roadmap that is critical to your success or that you want more information on please let us know!
 
 ## What’s New (since our last update in April):
 
 We’ve made several updates in PlayFab Multiplayer Services and in GameManager over the last quarter that we want to call out:
 
 - To help you estimate your PlayFab Multiplayer Services usage and costs, we now have an [MPS calculator](https://playfab.com/mps-calculator/) available to help you estimate your monthly charges. This works much like the [Party cost estimator](https://playfab.com/party-calculator/) and is available from our [main pricing page](https://playfab.com/pricing/).
-- Multiplayer Servers new build page has a number of new features, including UI for enabling process based servers, adding or deleting existing game server assets, enabling read-only assets and enabling streaming asset downloads.
-- The Game Manager experience for PlayFab Multiplayer Servers (MPS) was updated to clarify free usage scenarios in evaluation mode. If you want to know more about the free usage tier please refer to our [Billing for PlayFab Multiplayer Servers 2.0](https://docs.microsoft.com/gaming/playfab/features/multiplayer/servers/billing-for-thunderhead) documentation.
+- Late in March the Multiplayer Servers new build page added a number of new features, including UI for enabling process based servers, adding or deleting existing game server assets, enabling read-only assets and enabling streaming asset downloads. 
+- Also in March the Game Manager experience for PlayFab Multiplayer Servers (MPS) was updated to clarify free usage scenarios in evaluation mode, as well as the projected costs for running servers outside the free usage. If you want to know more about the free usage tier please refer to our [Billing for PlayFab Multiplayer Servers 2.0](https://docs.microsoft.com/gaming/playfab/features/multiplayer/servers/billing-for-thunderhead) documentation.
 - We revamped and updated our quick-start documentation for MPS in Game Manager. Check out the [getting started documentation](https://docs.microsoft.com/gaming/playfab/features/multiplayer/mpintro) under PlayFab Multiplayer. 
-
-- Greatly expanded our PlayFab Multiplayer Servers (MPS) regional footprint in the [US and Asia](https://blog.playfab.com/blog/azure-playfab-multiplayer-servers-adds-new-regions-in-asia-and-us-to-reduce-player-latency-and-give-multiplayer-games-even-more-choice)
-- Added support for [AMD SKUs](https://blog.playfab.com/blog/azure-playfab-multiplayer-servers-includes-free-monthly-amd-vms-usage-evaluation) to provide a better price/performance ratio for multiplayer optimized virtual machines
-- New API endpoints for self-servicing quota requests and updating service build names. For details, see the [API documentation](/rest/api/playfab/multiplayer/multiplayerserver) 
-
+- 
 Over the last year we migrated PlayStream (our gaming event pipeline) to a modernized cloud native architecture with fully managed Azure Services. Now, PlayStream is powered by [Azure Kubernetes Service](https://azure.microsoft.com/services/kubernetes-service/), [Event Hubs](https://azure.microsoft.com/services/event-hubs/) and [Cosmos DB](https://azure.microsoft.com/services/cosmos-db/). Modernizing our architecture isn’t the usual thing we hype on our roadmap, but in this case, it’s allowing us to bring key savings and increased reliability to you, our customers. You can read more about our journey in this article: [PlayFab’s PlayStream now powered by Azure](https://blog.playfab.com/blog/playfabs-playstream-bids-farewell-to-aws-now-powered-by-azure).
 
 We added a few new tutorials to Game Manager:
