@@ -3,7 +3,7 @@ title: PlayFab Roadmap
 author: thomasgu
 description: PlayFab Roadmap
 ms.author: thomg
-ms.date: 04/09/2021
+ms.date: 07/30/2021
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, roadmap, features, development
@@ -29,7 +29,7 @@ We’ve made several updates in PlayFab Multiplayer Services and in GameManager 
 - Late in March the Multiplayer Servers new build page added a number of new features, including UI for enabling process based servers, adding or deleting existing game server assets, enabling read-only assets and enabling streaming asset downloads. 
 - Also in March the Game Manager experience for PlayFab Multiplayer Servers (MPS) was updated to clarify free usage scenarios in evaluation mode, as well as the projected costs for running servers outside the free usage. If you want to know more about the free usage tier please refer to our [Billing for PlayFab Multiplayer Servers 2.0](https://docs.microsoft.com/gaming/playfab/features/multiplayer/servers/billing-for-thunderhead) documentation.
 - We revamped and updated our quick-start documentation for MPS in Game Manager. Check out the [getting started documentation](https://docs.microsoft.com/gaming/playfab/features/multiplayer/mpintro) under PlayFab Multiplayer. 
-- 
+
 Over the last year we migrated PlayStream (our gaming event pipeline) to a modernized cloud native architecture with fully managed Azure Services. Now, PlayStream is powered by [Azure Kubernetes Service](https://azure.microsoft.com/services/kubernetes-service/), [Event Hubs](https://azure.microsoft.com/services/event-hubs/) and [Cosmos DB](https://azure.microsoft.com/services/cosmos-db/). Modernizing our architecture isn’t the usual thing we hype on our roadmap, but in this case, it’s allowing us to bring key savings and increased reliability to you, our customers. You can read more about our journey in this article: [PlayFab’s PlayStream now powered by Azure](https://blog.playfab.com/blog/playfabs-playstream-bids-farewell-to-aws-now-powered-by-azure).
 
 We added a few new tutorials to Game Manager:
