@@ -25,7 +25,7 @@ PlayFab Party seamlessly integrate multiplayer networking and voice/text chat in
 ## Download links
 
 - [Unity PlayFab SDK GitHub repo](https://github.com/PlayFab/UnitySDK)
-- [Quick download link: Unity Editor Extensions for PlayFab SDK](https://aka.ms/playfabunityextension)
+- [Quick download link: Unity Editor Extensions for PlayFab SDK](https://aka.ms/PlayFabUnityEdEx)
 - [Quick download link: Unity PlayFab SDK](https://aka.ms/playfabunitysdkdownload)
 
 ## Licenses

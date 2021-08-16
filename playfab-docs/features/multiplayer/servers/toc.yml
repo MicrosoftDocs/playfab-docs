@@ -27,7 +27,7 @@
   - name: Integrate Unity with GSDK
     href: mps-unity.md
   - name: Integrate UE4 with GSDK case study
-    href: playfabgsdk_guide.md   
+    href: unreal_playfabgsdk_guide.md   
 - name: Manage VMs
   items:
   - name: Deploy builds using Game Manager

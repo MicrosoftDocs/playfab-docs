@@ -25,7 +25,7 @@ This content assumes you that you have a [PlayFab developer account](https://dev
 
 ## Install the PlayFab Unity Editor Extensions and the PlayFab SDK
 
-1. Download the [PlayFab Unity Editor Extensions Asset Package](https://github.com/PlayFab/UnityEditorExtensions/raw/master/Packages/PlayFabEditorExtensions.unitypackage).
+1. Download the [PlayFab Unity Editor Extensions Asset Package](https://aka.ms/PlayFabUnityEdEx).
 2. Open your Unity Project.
 3. Navigate to where you downloaded the file and double-click on the `PlayFabEditorExtensions.UnityPackage` file to open the **Import Unity Package** dialog in the Unity Editor.
 
@@ -75,4 +75,4 @@ To set the title:
     ![PlayFab Inspector window](media/playfab-settings-inspector-window.png)
 
  > [!NOTE]
- > Refer to [Secret key Management](https://docs.microsoft.com/gaming/playfab/gamemanager/secret-key-management) to find your secret key, also called a developer key to your PlayFab Title.
+ > Refer to [Secret key Management](../../gamemanager/secret-key-management.md) to find your secret key, also called a developer key to your PlayFab Title.
