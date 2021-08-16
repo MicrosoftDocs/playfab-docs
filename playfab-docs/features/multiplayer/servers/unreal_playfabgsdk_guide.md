@@ -12,6 +12,14 @@ ms.localizationpriority: medium
 
 # Integrating the PlayFab GSDK into Unreal Engine 4
 
+## PlayFab Multiplayer Servers Unreal Plugin (preview)
+
+We offer a preview of a plugin you can add into your Unreal project so you can easily integrate with the PlayFab Multiplayer Servers Game Server SDK (GSDK). This plugin was created by our wonderful community and can be found [here](https://github.com/PlayFab/gsdk/tree/master/UnrealPlugin). If you have any issues in using it, please open an issue on the GSDK GitHub repository [here](https://github.com/PlayFab/gsdk/issues).
+
+Feel free to check out the Unreal Multiplayer sample [here](https://github.com/PlayFab/MpsSamples/tree/master/UnrealThirdPersonMP).
+
+Following text describes the legacy method of integrating GSDK into Unreal, feel free to use it if the plugin does not work for you.
+
 ![HICON games brand logo](media/9d68e5424e82ba691c46b1bdc63d1b20.png)
 
 **Released 8/22/2019**  
