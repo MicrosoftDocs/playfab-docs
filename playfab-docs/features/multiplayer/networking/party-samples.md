@@ -10,7 +10,7 @@ keywords: playfab, multiplayer, networking, party, sample
 ms.localizationpriority: medium
 ---
 
-# Azure PlayFab Party samples
+# Party samples
 
 This topic lists all the Azure PlayFab Party samples that are currently available. 
 
