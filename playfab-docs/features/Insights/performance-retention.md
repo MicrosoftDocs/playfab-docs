@@ -48,7 +48,7 @@ A studio has selected performance level 3 and therefor has 100GB of cache. They 
 
 **How is cache affected when I change my performance level?**
 
-When you change your performance down, data is loaded from hot cache into storage as the hardware resources are reduced. Similarly, when increasing your performance level, hardware is instantly allocated to you and data is transfered into your cache. This process is generally very fast, but terabyte level shifts in cache size can take a short time to complete. For more information see [Best Practices](https://docs.microsoft.com/gaming/playfab/features/insights/insights/best-practices). 
+When you change your performance down, data is loaded from hot cache into storage as the hardware resources are reduced. Similarly, when increasing your performance level, hardware is instantly allocated to you and data is transfered into your cache. This process is generally very fast, but terabyte level shifts in cache size can take a short time to complete. For more information see [Best Practices](best-practices.md). 
 
 ### *Compute Power*
 Compute power represents the maximum quantity of vCPUs allocated for each query. Based on the parallelization of a given query plan, some queries cannot take full advantage of all vCPUs at once (order, distinct). Additionally, to improve interactivity of the querying experience, priority is given to queries by start time, meaning subsequent concurrent queries may see decreased vCPU allocation.
@@ -80,7 +80,7 @@ The total maximum events per second that the data system can ingest. This number
 Paid titles are charged an overage fee of 1 Credit for every 2.7m (2,700,000) extra events ingested. This overage cost is designed to allow customers with predictable ingestion loads to sit at a smaller performance levels during off hours for cost savings.
 
 ### *Event Exports*
-Event Archives allow customers to export all or some of their data on a regular schedule to Azure Blob or AWS S3. For more information, see [Exporting Data](https://docs.microsoft.com/gaming/playfab/features/insights/insights/export).
+Event Archives allow customers to export all or some of their data on a regular schedule to Azure Blob or AWS S3. For more information, see [Exporting Data](export.md).
 
 ### *Credits Per Hour*
 Insights is billed per minute at the credits per hour rate (Credits Per Hour / 60). For more information about Insights Credit Pricing, see [PlayFab Pricing](https://playfab.com/pricing/).
@@ -89,7 +89,7 @@ Insights is billed per minute at the credits per hour rate (Credits Per Hour / 6
 ![Insights Retention](data-explorer/media/insights-retention.png)
 
 
-The retention setting allows a studio to set the total number of days data is kept. The default setting is 30 days, which fulfills most GDPR compliance regulations. Retention can be set globally or by table using [Management Commands](https://review.docs.microsoft.com/gaming/playfab/features/insights/data-explorer/management-commands?branch=managementcommands). Retention is charged at a rate of 50 credits per terabyte month, studios are only charged for what is in use by day. For more information about Insights Credit Pricing, see [Insights Credit Pricing](https://playfab.com/pricing/).
+The retention setting allows a studio to set the total number of days data is kept. The default setting is 30 days, which fulfills most GDPR compliance regulations. Retention can be set globally or by table using [Management Commands](management-commands.md). Retention is charged at a rate of 50 credits per terabyte month, studios are only charged for what is in use by day. For more information about Insights Credit Pricing, see [Insights Credit Pricing](https://playfab.com/pricing/).
 
 **Example**
 A studio has 10 terabytes of data stored at the beginning of the month and does not increase that storage. The total cost would be 500 (10 TB * 50 credits/TB) Credits. 
