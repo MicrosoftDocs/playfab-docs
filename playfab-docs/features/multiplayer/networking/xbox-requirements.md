@@ -12,24 +12,24 @@ ms.localizationpriority: medium
 
 # Xbox Requirements
 
-If your game is targeting Xbox consoles, it must adhere to a set of requirements to ensure consistent functionality and behavior when interacting with Xbox Live. This set of requirements is listed in the [Xbox Requirements](https://developer.microsoft.com/games/xbox/partner/certification-requirements) (XRs for short). XRs interact and overlap with [the policies](https://docs.microsoft.com/gaming/xbox-live/policies/pc/live-policies-pc) that are required to make use of Xbox Live in your game on PC and other platforms. Here we describe best practices for PlayFab Party that will help you comply with these requirements.
+If your game is targeting Xbox consoles, it must adhere to a set of requirements to ensure consistent functionality and behavior when interacting with Xbox Live. This set of requirements is listed in the [Xbox Requirements](https://aka.ms/xrs) (XRs for short). XRs interact and overlap with [the policies](https://docs.microsoft.com/gaming/xbox-live/policies/pc/live-policies-pc) that are required to make use of Xbox Live in your game on PC and other platforms. Here we describe best practices for PlayFab Party that will help you comply with these requirements.
 
 For quick reference, refer to the following table which matches PlayFab Party scenarios to the XRs they address:
 
 | Scenario | XR |
 |----------|----|
-| [Secure Data Transmission](#secure-data-transmission) | [XR-012](https://developer.microsoft.com/games/xbox/partner/xr012) |
-| [Aligning PlayFab Party with an Xbox Live user's chat settings and privileges](#aligning-playfab-party-with-an-xbox-live-users-chat-settings-and-privileges) | [XR-015](https://developer.microsoft.com/games/xbox/partner/xr015), [XR-045](https://developer.microsoft.com/games/xbox/partner/xr045) |
-| [Maintaining a multiplayer session document](#maintaining-a-multiplayer-session-document) | [XR-067](https://developer.microsoft.com/games/xbox/partner/xr067) |
-| [Identifying players in a cross-network game session](#identifying-players-in-a-cross-network-game-session) | [XR-007](https://developer.microsoft.com/games/xbox/partner/xr007) |
-| [Respecting cross-network communication permissions for Xbox Live users](#respecting-cross-network-communication-permissions-for-xbox-live-users) | [XR-007](https://developer.microsoft.com/games/xbox/partner/xr007) |
-| [Guarding against direct connections between Xbox consoles and other devices](#guarding-against-direct-connections-between-xbox-consoles-and-other-devices) | [XR-007](https://developer.microsoft.com/games/xbox/partner/xr007) |
-| [Use PlayFab Party invitations to restrict access to networks when cross-play is not allowed](#use-playfab-party-invitations-to-restrict-access-to-networks-when-cross-play-is-not-allowed) | [XR-007](https://developer.microsoft.com/games/xbox/partner/xr007) |
-| [Keeping in sync with Xbox Live profile settings](#keeping-in-sync-with-xbox-live-profile-settings) | [XR-048](https://developer.microsoft.com/games/xbox/partner/xr048) |
-| [Supporting platform multiplayer join flows](#supporting-platform-multiplayer-join-flows) | [XR-064](https://developer.microsoft.com/games/xbox/partner/xr064), [XR-124](https://developer.microsoft.com/games/xbox/partner/console-certification-requirements-and-tests) |
-| [Friends lists](#friends-lists) | [XR-007](https://developer.microsoft.com/games/xbox/partner/xr007), [XR-070](https://developer.microsoft.com/games/xbox/partner/console-certification-requirements-and-tests) |
-| [Supporting voice chat](#supporting-voice-chat) | [XR-072](https://developer.microsoft.com/games/xbox/partner/console-certification-requirements-and-tests) |
-| [Honoring Xbox Live service retry policy and service access limitations](#honoring-xbox-live-service-retry-policy-and-service-access-limitations) | [XR-074](https://developer.microsoft.com/games/xbox/partner/xr074), [XR-132](https://developer.microsoft.com/games/xbox/partner/xr132) |
+| [Secure Data Transmission](#secure-data-transmission) | [XR-012](https://developer.microsoft.com/games/xbox/docs/gdk/game-security-overview) |
+| [Aligning PlayFab Party with an Xbox Live user's chat settings and privileges](#aligning-playfab-party-with-an-xbox-live-users-chat-settings-and-privileges) | [XR-015](https://developer.microsoft.com/games/xbox/docs/gdk/xr015), [XR-045](https://developer.microsoft.com/games/xbox/docs/gdk/xr045) |
+| [Maintaining a multiplayer session document](#maintaining-a-multiplayer-session-document) | [XR-067](https://developer.microsoft.com/games/xbox/docs/gdk/xr067) |
+| [Identifying players in a cross-network game session](#identifying-players-in-a-cross-network-game-session) | [XR-007](https://developer.microsoft.com/games/xbox/docs/gdk/xr007) |
+| [Respecting cross-network communication permissions for Xbox Live users](#respecting-cross-network-communication-permissions-for-xbox-live-users) | [XR-007](https://developer.microsoft.com/games/xbox/docs/gdk/xr007) |
+| [Guarding against direct connections between Xbox consoles and other devices](#guarding-against-direct-connections-between-xbox-consoles-and-other-devices) | [XR-007](https://developer.microsoft.com/games/xbox/docs/gdk/xr007) |
+| [Use PlayFab Party invitations to restrict access to networks when cross-play is not allowed](#use-playfab-party-invitations-to-restrict-access-to-networks-when-cross-play-is-not-allowed) | [XR-007](https://developer.microsoft.com/games/xbox/docs/gdk/xr007) |
+| [Keeping in sync with Xbox Live profile settings](#keeping-in-sync-with-xbox-live-profile-settings) | [XR-048](https://developer.microsoft.com/games/xbox/docs/gdk/xr048) |
+| [Supporting platform multiplayer join flows](#supporting-platform-multiplayer-join-flows) | [XR-064](https://developer.microsoft.com/games/xbox/docs/gdk/xr064), [XR-124](https://developer.microsoft.com/games/xbox/docs/gdk/console-certification-requirements-and-tests) |
+| [Friends lists](#friends-lists) | [XR-007](https://developer.microsoft.com/games/xbox/docs/gdk/xr007), [XR-070](https://developer.microsoft.com/games/xbox/docs/gdk/console-certification-requirements-and-tests) |
+| [Supporting voice chat](#supporting-voice-chat) | [XR-072](https://developer.microsoft.com/games/xbox/docs/gdk/console-certification-requirements-and-tests) |
+| [Honoring Xbox Live service retry policy and service access limitations](#honoring-xbox-live-service-retry-policy-and-service-access-limitations) | [XR-074](https://developer.microsoft.com/games/xbox/docs/gdk/xr074), [XR-132](https://developer.microsoft.com/games/xbox/docs/gdk/xr132) |
 
 ## PlayFab Party Xbox Live Helper library
 
@@ -39,7 +39,7 @@ Alongside the core PlayFab Party library, we offer an [Xbox Live Helper library]
 
 PlayFab Party's [endpoints](concepts-objects.md#endpoint) and [chat controls](concepts-objects.md#chat-control) enable your game to securely transmit game and chat data to remote clients. By default, all game and chat data is routed through the PlayFab Party relay service which protects clients from denial-of-service attacks.
 
-Therefore, using PlayFab Party satisfies the game and chat data transmission requirements of [XR-012](https://developer.microsoft.com/games/xbox/partner/xr012). Refer to the [XR-012](https://developer.microsoft.com/games/xbox/partner/xr012) technical documentation for further requirements outside the scope of PlayFab Party.
+Therefore, using PlayFab Party satisfies the game and chat data transmission requirements of [XR-012](https://developer.microsoft.com/games/xbox/docs/gdk/game-security-overview). Refer to the [XR-012](https://developer.microsoft.com/games/xbox/docs/gdk/game-security-overview) technical documentation for further requirements outside the scope of PlayFab Party.
 
 ## Aligning PlayFab Party with an Xbox Live user's chat settings and privileges
 
@@ -47,7 +47,7 @@ PlayFab Party uses an opt-in model of chat communication and, by default, restri
 
 PlayFab Party's [Xbox Live Helper library](party-xbox-live-guide.md) indicates which set of chat permissions should be enabled to match the preferences and privileges of the Xbox Live users currently communicating in the Party session. For more information, see the documentation about [respecting an Xbox Live user's privacy settings and permissions](party-xbox-live-guide.md#respecting-an-xbox-live-users-privacy-settings-and-permissions).
 
-By properly making use of PlayFab Party and the [Xbox Live Helper library](party-xbox-live-guide.md), your game can entirely meet the requirements specified by [XR-015](https://developer.microsoft.com/games/xbox/partner/xr015) and can meet the relevant communication requirements specified by [XR-045](https://developer.microsoft.com/games/xbox/partner/xr045). Refer to the [XR-045](https://developer.microsoft.com/games/xbox/partner/xr045) technical documentation for further requirements outside the scope of PlayFab Party.
+By properly making use of PlayFab Party and the [Xbox Live Helper library](party-xbox-live-guide.md), your game can entirely meet the requirements specified by [XR-015](https://developer.microsoft.com/games/xbox/docs/gdk/xr015) and can meet the relevant communication requirements specified by [XR-045](https://developer.microsoft.com/games/xbox/docs/gdk/xr045). Refer to the [XR-045](https://developer.microsoft.com/games/xbox/docs/gdk/xr045) technical documentation for further requirements outside the scope of PlayFab Party.
 
 ## Maintaining a multiplayer session document
 
@@ -60,40 +60,40 @@ In addition to providing the Party network's roster, MPSD documents also drive m
 For more information on MPSD features, see [its overview documentation](https://docs.microsoft.com/gaming/xbox-live/features/multiplayer/mpsd/live-mpsd-overview).
 
 > [!IMPORTANT]
-> This section provides best practices when using PlayFab Party together with MPSD, but PlayFab Party itself does not implicitly satisfy the MPSD requirements of [XR-067](https://developer.microsoft.com/games/xbox/partner/xr067). Refer to the [XR-067](https://developer.microsoft.com/games/xbox/partner/xr067) technical documentation for information on satisfying these requirements.
+> This section provides best practices when using PlayFab Party together with MPSD, but PlayFab Party itself does not implicitly satisfy the MPSD requirements of [XR-067](https://developer.microsoft.com/games/xbox/docs/gdk/xr067). Refer to the [XR-067](https://developer.microsoft.com/games/xbox/docs/gdk/xr067) technical documentation for information on satisfying these requirements.
 
 ## Using Xbox clients in cross-play Party networks
 
 For cross-play scenarios, please keep in mind the following best practices when interacting with the Xbox Live ecosystem.
 
 > [!IMPORTANT]
-> This section provides best practices for using PlayFab Party in cross-play scenarios with Xbox Live, but use of PlayFab Party does not implicitly satisfy the cross-play requirements of [XR-007](https://developer.microsoft.com/games/xbox/partner/xr007). Refer to the [XR-007](https://developer.microsoft.com/games/xbox/partner/xr007) technical documentation for information on satisfying these requirements.
+> This section provides best practices for using PlayFab Party in cross-play scenarios with Xbox Live, but use of PlayFab Party does not implicitly satisfy the cross-play requirements of [XR-007](https://developer.microsoft.com/games/xbox/docs/gdk/xr007). Refer to the [XR-007](https://developer.microsoft.com/games/xbox/docs/gdk/xr007) technical documentation for information on satisfying these requirements.
 
 ### Identifying players in a cross-network game session
 
 Unique players should be identifiable and distinguishable across multiplayer ecosystems. For this purpose, PlayFab Party provides PlayFab Entity IDs on the various objects which might be associated with users in your session: `PartyLocalUser`, `PartyEndpoint`, `PartyChatControl`.
 
-Cross-network display names are not provided by the PlayFab Party API. When displaying Xbox users in UI, you should use their gamertag and the gamertag should be resolved from the Xbox User ID in the MPSD document. Non-Xbox users should be presented in UI based on the guidelines in [XR-007](https://developer.microsoft.com/games/xbox/partner/xr007). In the absence of a platform-provided display name, PlayFab provides support for display names via [GetPlayerProfile](xref:titleid.playfabapi.com.client.accountmanagement.getplayerprofile). When joining a network, a player should post their display name in a shared session document for other players to see.
+Cross-network display names are not provided by the PlayFab Party API. When displaying Xbox users in UI, you should use their gamertag and the gamertag should be resolved from the Xbox User ID in the MPSD document. Non-Xbox users should be presented in UI based on the guidelines in [XR-007](https://developer.microsoft.com/games/xbox/docs/gdk/xr007). In the absence of a platform-provided display name, PlayFab provides support for display names via [GetPlayerProfile](xref:titleid.playfabapi.com.client.accountmanagement.getplayerprofile). When joining a network, a player should post their display name in a shared session document for other players to see.
 
 Though the PlayFab Party library associates some of its objects with PlayFab users (via PlayFab Entity IDs), the library does not provide functionality to identify which multiplayer ecosystems a PlayFab user might be associated with. To distinguish Xbox Live PlayFab users from users in other multiplayer ecosystems, it is recommended to cross-reference the PlayFab Entity IDs in a Party network with MPSD. For more information on distinguishing Xbox Live players from non-Xbox Live players via MPSD, see the section on [Maintaining a multiplayer session document](#maintaining-a-multiplayer-session-document).
 
-For more information on requirements around identifying users in cross-play networks with Xbox Live, refer to [XR-007](https://developer.microsoft.com/games/xbox/partner/xr007).
+For more information on requirements around identifying users in cross-play networks with Xbox Live, refer to [XR-007](https://developer.microsoft.com/games/xbox/docs/gdk/xr007).
 
 ### Respecting cross-network communication permissions for Xbox Live users
 
-PlayFab Party does not implicitly comply with Xbox Live's cross-network communication restrictions. Therefore, the PlayFab Party Xbox Live Helper library provides functionality for querying an Xbox Live user's cross-network communication permissions. You must use this information to conform to the cross-network communication requirements specified in [XR-007](https://developer.microsoft.com/games/xbox/partner/xr007).
+PlayFab Party does not implicitly comply with Xbox Live's cross-network communication restrictions. Therefore, the PlayFab Party Xbox Live Helper library provides functionality for querying an Xbox Live user's cross-network communication permissions. You must use this information to conform to the cross-network communication requirements specified in [XR-007](https://developer.microsoft.com/games/xbox/docs/gdk/xr007).
 
 See [Respecting cross-network communications](party-xbox-live-guide.md#respecting-cross-network-communication-permissions) for more information.
 
 ### Guarding against direct connections between Xbox consoles and other devices.
 
-PlayFab Party's use of secure relays for data transmission keeps clients protected from direct connections between Xbox consoles and other devices. Therefore, use of PlayFab Party implicitly provides compliance with the direct connection requirements of [XR-007](https://developer.microsoft.com/games/xbox/partner/xr007) and [XR-012](https://developer.microsoft.com/games/xbox/partner/xr012).
+PlayFab Party's use of secure relays for data transmission keeps clients protected from direct connections between Xbox consoles and other devices. Therefore, use of PlayFab Party implicitly provides compliance with the direct connection requirements of [XR-007](https://developer.microsoft.com/games/xbox/docs/gdk/xr007) and [XR-012](https://developer.microsoft.com/games/xbox/docs/gdk/game-security-overview).
 
 See [Secure Data Transmission](#secure-data-transmission) for more information.
 
 ### Use PlayFab Party invitations to restrict access to networks when cross-play is not allowed.
 
-Xbox Live users require cross-network privileges to interact with non-Xbox Live users in cross-network game sessions. PlayFab Party does not implicitly comply with these cross-network restrictions (outlined in [XR-007](https://developer.microsoft.com/games/xbox/partner/xr007)), therefore this privilege must be queried outside of the PlayFab Party library. When these privileges are not given, you should restrict the Party network to only allow the Xbox Live users known in the game session's MPSD document. You can accomplish this by augmenting our sample [join-in-progress flow](using-mpsd.md#join-in-progress) to use Party invitations that only allow known Xbox users to join the network.
+Xbox Live users require cross-network privileges to interact with non-Xbox Live users in cross-network game sessions. PlayFab Party does not implicitly comply with these cross-network restrictions (outlined in [XR-007](https://developer.microsoft.com/games/xbox/docs/gdk/xr007)), therefore this privilege must be queried outside of the PlayFab Party library. When these privileges are not given, you should restrict the Party network to only allow the Xbox Live users known in the game session's MPSD document. You can accomplish this by augmenting our sample [join-in-progress flow](using-mpsd.md#join-in-progress) to use Party invitations that only allow known Xbox users to join the network.
 
 First, ensure that the Party network is created with a restricted invitation.
 
@@ -202,36 +202,36 @@ OnSessionDocumentUpdated(
 
 ## Keeping in sync with Xbox Live profile settings
 
-PlayFab Party, by default, conforms to the profile settings requirements in [XR-048](https://developer.microsoft.com/games/xbox/partner/xr048). The library does not keep a persistent cache of any Xbox Live profile settings. When profile settings are needed for PlayFab Party's use, the settings are queried from Xbox Live and remain valid for the lifetime of the PlayFab Party API object associated with the setting, but will not persist across multiple instances of the object.
+PlayFab Party, by default, conforms to the profile settings requirements in [XR-048](https://developer.microsoft.com/games/xbox/docs/gdk/xr048). The library does not keep a persistent cache of any Xbox Live profile settings. When profile settings are needed for PlayFab Party's use, the settings are queried from Xbox Live and remain valid for the lifetime of the PlayFab Party API object associated with the setting, but will not persist across multiple instances of the object.
 
-For information on using Xbox Live profile settings data outside of PlayFab Party, see the [XR-048](https://developer.microsoft.com/games/xbox/partner/xr048) technical documentation.
+For information on using Xbox Live profile settings data outside of PlayFab Party, see the [XR-048](https://developer.microsoft.com/games/xbox/docs/gdk/xr048) technical documentation.
 
 ## Supporting platform multiplayer join flows
 
 On Xbox, players can join multiplayer games via the join-in-progress and platform invitation features. PlayFab Party does not integrate with these platform features directly, but supports their use via `PartyNetworkDescriptor` and `PartyInvitation` objects. `PartyNetworkDescriptor` objects provide the connection information necessary for a remote user to find and connect to the Party network and can be serialized via `PartyManager::SerializeNetworkDescriptor`. `PartyInvitation` objects provide remote users with an ID which is used to authenticate into and join a Party network. To enable remote users to join multiplayer games via join-in-progress and platform invites, integrate the serialized network descriptor and Party invitation identifier into your pre-existing flows. Example flows can also be found in the [Using PlayFab Party with MPSD](using-mpsd.md) document.
 
-For more information on platform multiplayer join flow requirements, see the [XR-064](https://developer.microsoft.com/games/xbox/partner/xr064) and [XR-124](https://developer.microsoft.com/games/xbox/partner/console-certification-requirements-and-tests) technical documentation.
+For more information on platform multiplayer join flow requirements, see the [XR-064](https://developer.microsoft.com/games/xbox/docs/gdk/xr064) and [XR-124](https://developer.microsoft.com/games/xbox/docs/gdk/console-certification-requirements-and-tests) technical documentation.
 
 ## Friends lists
 
 Even though PlayFab Party does not interact natively with friends lists on any platform, multiplayer games may still need to consider friends lists for different scenarios. For information on requirements and guidance when interacting with Xbox Live and cross-network friends lists, see the following documentation:
 
-- [Xbox Live friends list requirements (XR-070)](https://developer.microsoft.com/games/xbox/partner/console-certification-requirements-and-tests)
-- [Cross-network friends list requirements (XR-007)](https://developer.microsoft.com/games/xbox/partner/xr007)
+- [Xbox Live friends list requirements (XR-070)](https://developer.microsoft.com/games/xbox/docs/gdk/console-certification-requirements-and-tests)
+- [Cross-network friends list requirements (XR-007)](https://developer.microsoft.com/games/xbox/docs/gdk/xr007)
 - [Xbox Social Manager](https://docs.microsoft.com/gaming/xbox-live/features/social/social-manager/live-social-manager-overview)
 - [Xbox Live Services API (XSAPI)](https://docs.microsoft.com/gaming/xbox-live/api-ref/xsapi/live-introduction-to-xbox-live-apis)
 
 ## Supporting voice chat
 
-All multiplayer games on Xbox must support voice chat. By using PlayFab Party for voice chat, your game implicitly complies with the requirements specified by [XR-072](https://developer.microsoft.com/games/xbox/partner/console-certification-requirements-and-tests). For information on how PlayFab Party supports voice chat for Xbox Live see the following documentation:
+All multiplayer games on Xbox must support voice chat. By using PlayFab Party for voice chat, your game implicitly complies with the requirements specified by [XR-072](https://developer.microsoft.com/games/xbox/docs/gdk/console-certification-requirements-and-tests). For information on how PlayFab Party supports voice chat for Xbox Live see the following documentation:
 
 - [Understanding chat](concepts-chat.md)
 - [Respecting an Xbox Live user's privacy settings and permissions](party-xbox-live-guide.md#respecting-an-xbox-live-users-privacy-settings-and-permissions)
 - [Respecting cross-network communication preferences for Xbox Live](party-xbox-live-guide.md#respecting-cross-network-communication-permissions)
-- [XR-072](https://developer.microsoft.com/games/xbox/partner/console-certification-requirements-and-tests)
+- [XR-072](https://developer.microsoft.com/games/xbox/docs/gdk/console-certification-requirements-and-tests)
 
 ## Honoring Xbox Live service retry policy and service access limitations.
 
-PlayFab Party does not directly interact with Xbox Live services outside of the [Xbox Live Helper library](party-xbox-live-guide.md). The Xbox Live Helper library, internally, conforms to the retry policies and access limitations for its relevant Xbox Live services as outlined in [XR-074](https://developer.microsoft.com/games/xbox/partner/xr074) and [XR-132](https://developer.microsoft.com/games/xbox/partner/xr132). As well, you can recognize API failures as a result of complying with these service policies through the following error codes reported by the Xbox Live Helper library: [PartyXblChatPermissionMaskReason::XboxLiveServiceError](xblreference/enums/partyxblchatpermissionmaskreason.md) and [PartyXblStateChangeResult::PartyServiceError](xblreference/enums/partyxblstatechangeresult.md).
+PlayFab Party does not directly interact with Xbox Live services outside of the [Xbox Live Helper library](party-xbox-live-guide.md). The Xbox Live Helper library, internally, conforms to the retry policies and access limitations for its relevant Xbox Live services as outlined in [XR-074](https://developer.microsoft.com/games/xbox/docs/gdk/xr074) and [XR-132](https://developer.microsoft.com/games/xbox/docs/gdk/xr132). As well, you can recognize API failures as a result of complying with these service policies through the following error codes reported by the Xbox Live Helper library: [PartyXblChatPermissionMaskReason::XboxLiveServiceError](xblreference/enums/partyxblchatpermissionmaskreason.md) and [PartyXblStateChangeResult::PartyServiceError](xblreference/enums/partyxblstatechangeresult.md).
 
-For more information on complying with these service policies outside of the Xbox Live Helper library, see the [XR-074](https://developer.microsoft.com/games/xbox/partner/xr074) and [XR-132](https://developer.microsoft.com/games/xbox/partner/xr132) technical documentation.
+For more information on complying with these service policies outside of the Xbox Live Helper library, see the [XR-074](https://developer.microsoft.com/games/xbox/docs/gdk/xr074) and [XR-132](https://developer.microsoft.com/games/xbox/docs/gdk/xr132) technical documentation.
