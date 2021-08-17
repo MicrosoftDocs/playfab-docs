@@ -17,7 +17,7 @@ The Standard and Premium pricing plans include a number of free monthly Insights
 
 ## Insights Performance
 Each title is set to a chosen performance level that is billed to the minute (Insights Credits Per Hour / 60). The cost in credits for each performance level is located at the bottom of the table on the Insights Management page:
-![Insights Slider](/data-explorer/media/performance-level2.png)
+![Insights Slider](data-explorer/media/performance-level2.png)
 
 > [!IMPORTANT] 
 > All MAU-based pricing plans will be converted to a usage-based pricing plan on 11/01/2020. As part of the transition, a small number of titles will be placed on a paid Insights Performance level to maintain their current functionality. However, if a title would like to reduce the performance level (and thus cost) while also accepting a decrease in performance, the performance level can be adjusted on the Insights Management page in Game Manager using the above table. 
