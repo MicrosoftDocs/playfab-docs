@@ -14,6 +14,14 @@ ms.localizationpriority: medium
 > [!Note]
 > For release notes about service releases and product updates, see the [release notes](https://github.com/PlayFab/PlayFab/releases) section on [PlayFab's public GitHub repository](https://github.com/PlayFab/PlayFab)
 
+## 210816
+
+Date: 2021-08-16
+
+Supports the [July 21 2021 PlayFab service release](https://github.com/PlayFab/PlayFab/releases/tag/2.8.2)
+
+Adds bug fixes to UnitySDK
+
 ## 210802
 
 Date: 2021-08-02
