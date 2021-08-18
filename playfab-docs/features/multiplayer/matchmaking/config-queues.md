@@ -91,7 +91,7 @@ Team rules can only be set if teams are present in the queue configuration. They
 
 | Rule type       | Description | Common Uses | Rule-specific fields |
 |-----------------|-------------|-------------|----------------------|
-| Team Difference | Ensures that teams included in a match are within a configured difference for a specific attribute (such as skills). This is very similar to a standard Difference Rule, except that the values compared are each team's summed value. | Balancing skills across teams | none |
+| Team Difference | Ensures that teams included in a match are within a configured difference for a specific attribute (such as skills). This is very similar to a standard Difference Rule, except that the values compared are each team's average value. | Balancing skills across teams | none |
 | Team Size Balance | Ensures the difference in player count between the largest and smallest team does not exceed a threshold. For instance, this rule could be used to create a queue where 3v3 and 4v4 matches are allowed, but a 3v4 is not. | Player count balance across teams | Allowed Team Size Difference - How uneven the teams can be, as measured by the difference in the number of players assigned to each one. |
 | Team Ticket Size Similarity | Ensures that all teams either have a large party, or do not have a large party. A large party is defined as at least half of the maximum team's size. | Prevents parties (pre-made teams) from matching with a group of solo players. | none |
 
