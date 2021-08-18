@@ -1,5 +1,5 @@
 ---
-title: PlayFab recipes and samples
+title: General PlayFab samples
 author: joannaleecy
 description: Code samples for PlayFab features and technologies.
 ms.author: joanlee
@@ -10,7 +10,7 @@ keywords: playfab, recipes, samples, how-to, development
 ms.localizationpriority: medium
 ---
 
-# General samples
+# General PlayFab samples
 
 These samples demonstrate how to use various PlayFab features.
 
