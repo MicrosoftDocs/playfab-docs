@@ -32,7 +32,7 @@ A pointer to the buffer containing the data to send.
 
 **recipients** IEnumerable<PlayFabPlayer>
 
-The players to send the data message to.
+The players to send the data message to. If the collection of players is empty, the data message will be broadcast to all players.
 
 **deliveryOption** DeliveryOption
 
@@ -64,7 +64,7 @@ The size of the buffer.
 
 **recipients** IEnumerable<PlayFabPlayer>
 
-The players to send the data message to.
+The players to send the data message to. If the collection of players is empty, the data message will be broadcast to all players.
 
 **deliveryOption** DeliveryOption
 
