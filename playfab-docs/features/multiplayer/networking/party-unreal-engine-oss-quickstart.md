@@ -68,7 +68,7 @@ MaxEndpointsPerDeviceCount=<REPLACE ME with your max player count per box (note:
 MaxUserCount=<REPLACE ME with your max player count (note: split screen is still 1 device)  In the example of an 8 player game, this would be 8.>		
 MaxUsersPerDeviceCount=<REPLACE ME with your max player count per box (note: split screen is still 1 device)  In the example of an 8 player game, this would be 1.>
 
-[/Script/OnlineSubsystemPlayFab.PlayFabPartyNetDriver]
+[/Script/OnlineSubsystemPlayFab.PlayFabNetDriver]
 NetConnectionClassName="OnlineSubsystemPlayFab.PlayFabNetConnection"
 ReplicationDriverClassName="<REPLACE ME with your existing replication driver class name>"
 ConnectionTimeout=15.0
@@ -76,7 +76,7 @@ InitialConnectTimeout=30.0
 
 [/Script/Engine.GameEngine]
 !NetDriverDefinitions=ClearArray
-+NetDriverDefinitions=(DefName="GameNetDriver",DriverClassName="OnlineSubsystemPlayFab.PlayFabPartyNetDriver",DriverClassNameFallback="OnlineSubsystemUtils.IpNetDriver")
++NetDriverDefinitions=(DefName="GameNetDriver",DriverClassName="OnlineSubsystemPlayFab.PlayFabNetDriver",DriverClassNameFallback="OnlineSubsystemUtils.IpNetDriver")
 ```
 
 If your title is not targetting the XDK, setup is complete. To complete the PlayFab OSS setup for games targeting XDK, see the next section.
@@ -100,7 +100,7 @@ MaxEndpointsPerDeviceCount=<REPLACE ME with your max player count per box (note:
 MaxUserCount=<REPLACE ME with your max player count (note: split screen is still 1 device)  In the example of an 8 player game, this would be 8.>		
 MaxUsersPerDeviceCount=<REPLACE ME with your max player count per box (note: split screen is still 1 device)  In the example of an 8 player game, this would be 1.>
 
-[/Script/OnlineSubsystemPlayFab.PlayFabPartyNetDriver]
+[/Script/OnlineSubsystemPlayFab.PlayFabNetDriver]
 NetConnectionClassName="OnlineSubsystemPlayFab.PlayFabNetConnection"
 ReplicationDriverClassName="<REPLACE ME with your existing replication driver class name>"
 ConnectionTimeout=15.0
@@ -108,7 +108,7 @@ InitialConnectTimeout=30.0
 
 [/Script/Engine.GameEngine]
 !NetDriverDefinitions=ClearArray
-+NetDriverDefinitions=(DefName="GameNetDriver",DriverClassName="OnlineSubsystemPlayFab.PlayFabPartyNetDriver",DriverClassNameFallback="OnlineSubsystemUtils.IpNetDriver")
++NetDriverDefinitions=(DefName="GameNetDriver",DriverClassName="OnlineSubsystemPlayFab.PlayFabNetDriver",DriverClassNameFallback="OnlineSubsystemUtils.IpNetDriver")
 ```
 
 ## Enabling cross-generational play between XDK and GDK
