@@ -2,3 +2,9 @@
   href: index.md
 - name: Quickstart
   href: quickstart.md
+- name: Moderation
+  href: moderation.md
+- name: Ratings and Reviews
+  href: ratings.md
+- name: Search
+  href: search.md
