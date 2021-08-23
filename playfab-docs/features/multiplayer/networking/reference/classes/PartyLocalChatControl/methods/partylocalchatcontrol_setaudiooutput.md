@@ -47,6 +47,8 @@ PartyError
 ## Remarks  
   
 This method queues an asynchronous operation to configure the preferred speakers or headset device associated with this local chat control. If the method succeeds, a [PartyLocalChatAudioOutputChangedStateChange](../../../structs/partylocalchataudiooutputchangedstatechange.md) will be provided by [PartyManager::StartProcessingStateChanges()](../../PartyManager/methods/partymanager_startprocessingstatechanges.md) with details about the output device status and a [PartySetChatAudioOutputCompletedStateChange](../../../structs/partysetchataudiooutputcompletedstatechange.md) will be provided upon completion of the operation, indicating success or failure. After completion, an additional [PartyLocalChatAudioOutputChangedStateChange](../../../structs/partylocalchataudiooutputchangedstatechange.md) will be provided each time the audio device status changes, such as due to device removal. <br /><br /> If the specified device isn't present, the chat control will subscribe to audio device changes and use the device when it does appear.
+
+When using the ```PlatformUserDefault``` option on the Xbox platform, the Xbox User Identifier (XUID) must be passed as the ```audioDeviceSelectionContext``` value.
   
 ## Requirements  
   
