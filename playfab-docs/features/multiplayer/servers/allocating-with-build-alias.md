@@ -1,8 +1,8 @@
 ---
 title: Managing a build alias and allocating to it
-author: gufabre
+author: joannaleecy
 description: Describes how to allocate multiplayer game servers using the build alias feature.
-ms.author: gufabre
+ms.author: raakisad
 ms.date: 10/16/2019
 ms.topic: article
 ms.prod: playfab
@@ -80,7 +80,8 @@ Especially as you gradually upgrade from one build to another, this fallback beh
 
 
 ## Manage a build alias with PlayFab REST APIs
-
+> [!Note]
+> You can now manage build aliases in Game Manager. To get started, see [Builds overview page](build-overview.md)
 
 1. Create a build alias by using the API.
 
