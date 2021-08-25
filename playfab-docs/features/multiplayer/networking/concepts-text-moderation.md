@@ -13,10 +13,6 @@ keywords: playfab, multiplayer, networking, text, moderation, filtering
 
 PlayFab Party offers a text moderation solution that is integrated with text chat. Text chat can be moderated in real-time to filter out offensive language. This feature is backed by Azure's Content Moderator. For more information, see [Azure Content Moderator](https://azure.microsoft.com/services/cognitive-services/content-moderator/).
 
-## Prerequisites
-
-Text moderation is not automatically enabled and is currently only available for Xbox Live partners. If you're interested in using text moderation, submit a request to your Microsoft Representative. Text moderation will fail if enabled in the client API without being enabled for your title by a Microsoft Representative.
-
 ## Language support
 
 Text moderation is supported for more than 30 languages. However, you don't need to do anything to configure a language selection for text moderation; the language of each text message is automatically detected by Azure. For a complete list of supported languages which support auto-detection and profanity filtering, refer to Azure Content Moderator's [list of supported languages](https://docs.microsoft.com/azure/cognitive-services/content-moderator/language-support).
