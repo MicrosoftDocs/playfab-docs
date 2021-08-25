@@ -69,3 +69,7 @@ if (PARTY_SUCCEEDED(error))
     }
 }
 ```
+
+## Check default device vs. default communication device in Windows
+
+A frequent point of confusion for audio on Windows is around the concepts of default device and default communications device. Windows supports both concepts, and they can be different devices. PlayFab Party, by design, uses the default communications device in the Windows version of the library when ``AudioDeviceSelectionType::SystemDefault`` is passed to ``PartyLocalChatControl::SetAudioInput`` or ``PartyLocalChatControl::SetAudioOutput``. Troubleshooting and testing should always be performed in relation to the default communications device.

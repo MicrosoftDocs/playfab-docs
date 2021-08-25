@@ -21,6 +21,8 @@ Limiting access to a network is a core part of protecting the integrity of the n
 - Knowledge of an invitation [identifier](#identifiers)
 - Presence of the PlayFab [entity ID](/../../data/entities/index.md) for the above token in the specified invitation, or the specified invitation being an [open invitation](#users-and-open-invitations)
 
+Note that a given PlayFab Party network can have a maximum of 32 players. 
+
 ## Invitations
 
 An invitation (`PartyInvitation`) is an object within a network that grants user access to the network. Invitations can be [created](#creation) and [revoked](#revocation) throughout the lifetime of a network. An invitation has a [creator](#creation), a unique [identifier](#identifiers), a [revocability setting](#initial-invitation-and-other-invitations), and an optional [set of users](#users-and-open-invitations) specified as entity IDs. A network can have any number of active invitations, including none. A network is always created with an initial invitation.
