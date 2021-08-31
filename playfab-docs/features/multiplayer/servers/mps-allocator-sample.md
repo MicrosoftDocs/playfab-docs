@@ -24,7 +24,7 @@ In order to authenticate to PlayFab APIs, the app needs your PlayFab TitleID and
 
 Once you run the application, you can choose which API to call. Each API will ask you to provide necessary parameters. Here is the list of the available options:
 
-- [RequestMultiplayerServer](https://docs.microsoft.com/rest/api/playfab/multiplayer/multiplayerserver/requestmultiplayerserver"): This option will allocate a game server and return its details (IP, FQDN, Port). Successful invocation of this API call will result in a game server's transition from "StandingBy" state to "Active" (more [here](https://docs.microsoft.com/gaming/playfab/features/multiplayer/servers/allocating-game-servers-and-configuring-vs-debugging-tools))
+- [RequestMultiplayerServer](https://docs.microsoft.com/rest/api/playfab/multiplayer/multiplayerserver/requestmultiplayerserver): This option will allocate a game server and return its details (IP, FQDN, Port). Successful invocation of this API call will result in a game server's transition from "StandingBy" state to "Active" (more [here](https://docs.microsoft.com/gaming/playfab/features/multiplayer/servers/allocating-game-servers-and-configuring-vs-debugging-tools))
 - [ListBuildSummaries](https://docs.microsoft.com/rest/api/playfab/multiplayer/multiplayerserver/listbuildsummariesv2): This option will return summaries about your title's Builds
 - [GetBuild](https://docs.microsoft.com/rest/api/playfab/multiplayer/multiplayerserver/getbuild): This option will return details about the specified Build
 - [ListMultiplayerServers](https://docs.microsoft.com/rest/api/playfab/multiplayer/multiplayerserver/listmultiplayerservers): This option will return summaries about game servers in a specified Build
