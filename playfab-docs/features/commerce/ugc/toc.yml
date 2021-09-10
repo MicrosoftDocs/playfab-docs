@@ -8,3 +8,8 @@
   href: ratings.md
 - name: Search
   href: search.md
+- name: Tutorials
+  href: tutorials.md
+  items:
+  - name: Publish UGC
+    href: publish-ugc.md
