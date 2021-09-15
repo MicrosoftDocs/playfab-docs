@@ -94,6 +94,8 @@
     href: transport-options.md
   - name: Direct peer-to-peer connections
     href: concepts-direct-peer-connectivity.md
+  - name: Port Usage and Firewall Requirements
+    href: concepts-port-usage.md
 - name: Pricing
   href: pricing.md
 - name: Regions and QoS
