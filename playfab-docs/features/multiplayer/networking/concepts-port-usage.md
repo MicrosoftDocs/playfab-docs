@@ -16,7 +16,7 @@ This topic provides details about Azure PlayFab Party port usage and firewall re
 
 ## Communication Patterns
 
-Azure PlayFab Party has two communication patterns that must be permitted by the local device and environmental infrastructure in order for API operation to succeed: 
+Azure PlayFab Party has two communication patterns that must be permitted by the local device and environmental infrastructure in order for API operation to succeed:
 
  1. HTTPS communication, which is initiated from the API caller to multiple cloud web services, including *playfabapi.com*.
 
@@ -27,6 +27,14 @@ If either pattern is blocked, early PlayFab Party API operations or automatic no
 For web service request issues, other necessary PlayFab and platform operations outside of Party such as the user login functions would also likely fail. These failures are often caused by local firewall restrictions or proxy requirements for HTTPS connections. Most issues can be resolved by enabling direct, outbound HTTPS communication to cloud web services from the local device or network.
 
 The rest of this topic focuses on the PlayFab Party-specific UDP socket communication requirements.
+
+## MTU and packet sizes
+
+Azure PlayFab Party automatically attempts to adjust to different MTU and UDP packet payload sizes through transparent protocol-level message fragmentation and reassembly. However, specific configurations can cause communication failures despite this functionality where such fragmentation is not possible by PlayFab Party or at the IP protocol layer.
+
+The expected MTU size for PlayFab Party UDP packets is 1500, which is supported on most platforms. This MTU size can be reduced by external factors like VPN tunnelling using IPsec, IPv4/6 tunnelling, or direct MTU device configuration. A minimal MTU size of 1384 needs to be supported for PlayFab Party to function correctly.
+
+If the MTU size is insufficient, early PlayFab Party API operations will report [`PartyStateChangeResult::InternetConnectivityError`](reference/enums/partystatechangeresult.md) or applicable errors.
 
 ## Local device UDP port usage
 
@@ -46,7 +54,18 @@ Microsoft provides weekly updates of an IP address range list for Azure that is 
 
 The supported remote port range that may be in use by Azure PlayFab Party can be any ports other than the Internet Assigned Numbers Authority (IANA) reserved range of 0-1023. Currently transparent cloud relays will only be assigned port numbers from 30000 and above, but Microsoft reserves the right to change this behavior in the future and policies constraining connectivity to this range are not recommended. As a best practice, the port range of 1024-65535 should be used instead. This is particularly important for titles that are using direct peer-to-peer connections for a Party network, since NAT implementations will typically assign ports from this range. Blocking remote ports other than the full recommended range may also prevent direct communication.
 
-Given these relatively large remote IP address and port constraints, and as an alternative to restricting remote destinations, network administrators may wish to instead implement their desired strict communication constraints based on the local source device (e.g., permitting broader access for specific, known devices or applications).
+Given these relatively large remote IP address and port constraints, and as an alternative to restricting remote destinations, network administrators may wish to instead implement their desired strict communication constraints based on the local source device (e.g., permitting broader access for specific, known devices or applications) or the domain name list below.
+
+## Domain Names
+
+Microsoft Azure PlayFab Party performs HTTPS connections to multiple cloud services. To ensure correct functionality, the following domains need to be accessible through HTTPS connections:
+
+* *\*.playfabapi.com*
+* *\*.speech.microsoft.com*
+* *api.cognitive.microsofttranslator.com*
+* *\*.cloudapp.net*
+
+This list of domain names can change without notice. Developers should ensure to check this list regularly and expect changes.
 
 ## See also
 
