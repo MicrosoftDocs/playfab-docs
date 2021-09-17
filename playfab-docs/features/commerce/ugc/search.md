@@ -56,7 +56,7 @@ A sample response:
 
 ## Display Properties
 
-Searches, filters, and orderings can be also done on specific `DisplayProperties` fields that are configured for custom search.  Titles can configure their custom search and filter properties in the "Display properties mappings" section in Game Manager.
+Searches, filters, and orderings can be also done on specific `DisplayProperties` fields that are configured for custom search.  Titles can configure their custom search and filter properties in the *Display Properties Mappings* setting in Game Manager.
 
 ![Display Properties screenshot in Game Manager](media/displayproperties.png)
 
@@ -64,7 +64,9 @@ Once you add a field to `DisplayProperties`, you need to republish all of the pu
 
 `DateTime`, `Double`, and `Queryable String` display properties are **queryable**, these properties can be used in Filter and OrderBy statements.
 
-`Searchable String` display properties are **searchable**, these properties will be queried with fuzzy search against the `Search` field. Searchable properties cannot be used in Filter and OrderBy statements
+`Searchable String` display properties are **searchable**, these properties will be queried with fuzzy search against the `Search` field. Searchable properties cannot be used in Filter and OrderBy statements.
+
+Titles are limited to 5 display properties of each type.
 
 ## Filter
 
