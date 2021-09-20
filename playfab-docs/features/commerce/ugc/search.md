@@ -175,6 +175,7 @@ By Default, Search returns a rich set of item metadata:
 - `description` **(NEUTRAL)**
 - `keywords` **(NEUTRAL)**
 - `contentType`
+- `images` **(Thumnbnail only)**
 - `platforms`
 - `tags`
 - `creationDate`
@@ -183,7 +184,7 @@ By Default, Search returns a rich set of item metadata:
 - `CreatorEntityKey` (`creatorId` in earlier API versions)
 - `displayProperties`
 
-Only the neutral strings used in title and description are returned by default.  
+Only the neutral strings used in title and description are returned by default. If a Thumbnail image exists, it is returned by default. Each item is limited to only one image of a "Thumbnail" type.
 
 Note: If you are on Xbox Live, two additional metadata items are included by default: `creatorGamertag` and `sourceId`   
 
