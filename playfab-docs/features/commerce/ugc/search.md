@@ -56,7 +56,7 @@ A sample response:
 
 ## Display Properties
 
-Searches, filters, and orderings can be also done on specific `DisplayProperties` fields that are configured for custom search.  Titles can configure their custom search and filter properties in the *Display Properties Mappings* setting in Game Manager.
+Searches, filters, and orderings can be also done on specific `DisplayProperties` fields that are configured for custom search.  Titles can configure their custom search and filter properties in the [*Display Properties Mappings* setting](/gaming/playfab/features/commerce/ugc/settings#display-properties) in Game Manager.
 
 ![Display Properties screenshot in Game Manager](media/displayproperties.png)
 
@@ -115,6 +115,12 @@ To filter by a specific creator, you should use the syntax `title_player_account
 Filter also supports `any()` for filtering against arrays. For example: `alternateIds/any(a: a/value eq ‘StoreOfferId’)`
 ```json
   "Filter": "tags/any(t: t eq 'featured')"
+```
+
+#### Filtering with Arrays and null checks
+The filter below will check for any items that have a contents field with non-null values 
+```json
+  "Filter": "contents/any(content: content ne null)"
 ```
 
 #### Filtering by Display Properties

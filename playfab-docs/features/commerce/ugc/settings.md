@@ -52,7 +52,7 @@ Once you add a field to `DisplayProperties`, you need to republish all of the pu
 Titles are limited to 5 display properties of each type.
 
 > [!WARNING]
-> Display property mappings are stored as an indexed list of key-value pairs. Deleting Existing display property mappings can shift indexes and break the behavior of all remaining properties. It is suggested to add an additional property rather than deleting or editing an existing one and you should avoid deleting property mappings unless absolutely necessary
+> Display property mappings are stored as an indexed list of key-value pairs. Deleting existing display property mappings can shift indexes and break the behavior of all remaining properties. It is suggested to add an additional property rather than deleting or editing an existing one and you should avoid deleting property mappings unless absolutely necessary
 
 ## Content Types
 

@@ -105,7 +105,7 @@ In this section, we will leverage the [Postman Collections](/sdks/postman/postma
     }
     ```
 > [!NOTE]
-  > When uploading images to items, every image must be classified with a `Type` parameter. This can either be a "Thumnbnail" or a "Screenshot". Each item is limited to only one image of a "Thumbnail" type and by default, Searches will return the "Thumbnail" image (if it exists) by default.
+  > When uploading images to items, every image must be classified with a `Type` parameter. This can either be a "Thumnbnail" or a "Screenshot". Each item is limited to only one image of a "Thumbnail" type and by default, [Searches](/gaming/playfab/features/commerce/ugc/search#select) will return the "Thumbnail" image (if it exists) by default.
 
 * The response will return the metadata you passed in, along with an item ID:
     ```json
