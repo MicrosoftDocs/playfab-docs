@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Matchmaking quickstart
 
-This quickstart guide walks you through the entire process for integrating the matchmaking feature. All code examples within this quickstart are for Unity - however, the concepts and flow apply (in general), to other platforms as well.
+This quickstart guide walks you through the entire process for integrating the matchmaking feature. All code examples within this quickstart are for Unity - however, the concepts and flow apply (in general) to other platforms as well.
 
 Depending on your game design, consider the [single user](#single-user-ticket-matchmaking) and [multiple
 user](#multiple-user-ticket-matchmaking) matchmaking section.
