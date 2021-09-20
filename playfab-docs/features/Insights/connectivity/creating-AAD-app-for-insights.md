@@ -59,7 +59,7 @@ Now we will connect the Azure app to your title database.
 
    You can verify that this command was successful by going to the **Users** page in [GameManager](https://developer.playfab.com/login). There should be an entry that matches the Client/Tenant ID.
 
-   Note that this will make the Azure app an Admin on your game in PlayFab. If you would like the Azure app to have lesser permissions, assign the Azure app a [custom role](https://docs.microsoft.com/gaming/playfab/features/config/gamemanager/playfab-user-roles#assigning-roles) in PlayFab that only has permissions for the Kusto database. The necessary permissions are:
+   Note that this will make the Azure app an Admin on your game in PlayFab. If you would like the Azure app to have lesser permissions, assign the Azure app a [custom role](https://docs.microsoft.com/gaming/playfab/gamemanager/playfab-user-roles) in PlayFab that only has permissions for the Kusto database. The necessary permissions are:
    * **Explorer data & tab**.
    * **Analytics data read access**, to run queries and simple management commands.
    * **Analytics data write access**, to create/drop tables, alter retention policy, ingest data, purge.
