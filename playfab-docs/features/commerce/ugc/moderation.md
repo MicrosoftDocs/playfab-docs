@@ -66,10 +66,10 @@ The following query returns **All submitted reports against a specific ItemId in
 
 ```kusto
 ['events.all']
-| where Timestamp > ago (60d)
+| where Timestamp > ago (3d)
 | where FullName_Name == "item_reported"
+| where EventData.Payload.ItemId == "3f5dd8d4-4ee1-4748-8855-56a8a0277bf9"
 | project Timestamp, ItemId = tostring(EventData.Payload.ItemId), ConcernCategory = tostring(EventData.Payload.ConcernCategory), Reason = tostring(EventData.Payload.Reason), ReportingPlayer = Entity_Id
-| where ItemId == "3f5dd8d4-4ee1-4748-8855-56a8a0277bf9"
 | sort by Timestamp
 ```
 
