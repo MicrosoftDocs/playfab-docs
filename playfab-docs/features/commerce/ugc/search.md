@@ -56,7 +56,7 @@ A sample response:
 
 ## Display Properties
 
-Searches, filters, and orderings can be also done on specific `DisplayProperties` fields that are configured for custom search.  Titles can configure their custom search and filter properties in the "Display properties mappings" section in Game Manager.
+Searches, filters, and orderings can be also done on specific `DisplayProperties` fields that are configured for custom search.  Titles can configure their custom search and filter properties in the [*Display Properties Mappings* setting](/gaming/playfab/features/commerce/ugc/settings#display-properties) in Game Manager.
 
 ![Display Properties screenshot in Game Manager](media/displayproperties.png)
 
@@ -64,7 +64,9 @@ Once you add a field to `DisplayProperties`, you need to republish all of the pu
 
 `DateTime`, `Double`, and `Queryable String` display properties are **queryable**, these properties can be used in Filter and OrderBy statements.
 
-`Searchable String` display properties are **searchable**, these properties will be queried with fuzzy search against the `Search` field. Searchable properties cannot be used in Filter and OrderBy statements
+`Searchable String` display properties are **searchable**, these properties will be queried with fuzzy search against the `Search` field. Searchable properties cannot be used in Filter and OrderBy statements.
+
+Titles are limited to 5 display properties of each type.
 
 ## Filter
 
@@ -113,6 +115,12 @@ To filter by a specific creator, you should use the syntax `title_player_account
 Filter also supports `any()` for filtering against arrays. For example: `alternateIds/any(a: a/value eq ‘StoreOfferId’)`
 ```json
   "Filter": "tags/any(t: t eq 'featured')"
+```
+
+#### Filtering with Arrays and null checks
+The filter below will check for any items that have a contents field with non-null values 
+```json
+  "Filter": "contents/any(content: content ne null)"
 ```
 
 #### Filtering by Display Properties
@@ -173,6 +181,7 @@ By Default, Search returns a rich set of item metadata:
 - `description` **(NEUTRAL)**
 - `keywords` **(NEUTRAL)**
 - `contentType`
+- `images` **(Thumnbnail only)**
 - `platforms`
 - `tags`
 - `creationDate`
@@ -181,7 +190,7 @@ By Default, Search returns a rich set of item metadata:
 - `CreatorEntityKey` (`creatorId` in earlier API versions)
 - `displayProperties`
 
-Only the neutral strings used in title and description are returned by default.  
+Only the neutral strings used in title and description are returned by default. If a Thumbnail image exists, it is returned by default. Each item is limited to only one image of a "Thumbnail" type.
 
 Note: If you are on Xbox Live, two additional metadata items are included by default: `creatorGamertag` and `sourceId`   
 

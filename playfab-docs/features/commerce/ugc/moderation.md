@@ -67,11 +67,10 @@ The following query returns **All submitted reports against a specific ItemId in
 ```kusto
 ['events.all']
 | where Timestamp > ago (3d)
-| where ItemId == "3f5dd8d4-4ee1-4748-8855-56a8a0277bf9"
 | where FullName_Name == "item_reported"
+| where EventData.Payload.ItemId == "3f5dd8d4-4ee1-4748-8855-56a8a0277bf9"
 | project Timestamp, ItemId = tostring(EventData.Payload.ItemId), ConcernCategory = tostring(EventData.Payload.ConcernCategory), Reason = tostring(EventData.Payload.Reason), ReportingPlayer = Entity_Id
 | sort by Timestamp
-`
 ```
 
 ## Change the moderation status of an item
@@ -98,7 +97,6 @@ An item that is any state other than `Approved` will not be accessible on the pu
 The following query returns **All items currently in the `AwaitingModeration` status in the last 3 days**
 
 ```kusto
-['events.all']
 let TimeRange = ago(3d);
 ['events.all']
 | where Timestamp > TimeRange

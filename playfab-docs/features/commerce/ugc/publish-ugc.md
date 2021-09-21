@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 > [!IMPORTANT]
 > This feature is currently in public preview. It is provided to give you an early look at an upcoming feature, and to allow you to provide feedback while it is still in development.  
 
-This tutorial walks you through publishing UGC with content through both APIs and the Game Manager UX, diving into more detail than the quickstart. 
+This tutorial walks you through publishing UGC with content through both APIs and the Game Manager UX, diving into more detail than the quickstart.
 
 ## Requirements
 * A [PlayFab developer account](https://developer.playfab.com/sign-up)
@@ -75,7 +75,7 @@ In this section, we will leverage the [Postman Collections](/sdks/postman/postma
 * You can test that the upload was successful by copying the base Url (before the '?') and navigating to it in your browser.
 
 ### Create the Draft Item
-* Now that the files and images have been successfully uploaded, you can call `CreateDraftItem`, passing in the URLs of the content, to create your first item in the draft catalog:
+* Now that the files and images have been successfully uploaded, you can call `CreateDraftItem`, passing in the URLs of the content and images, to create your first item in the draft catalog:
     ```json
     {
       "Item": {
@@ -104,6 +104,8 @@ In this section, we will leverage the [Postman Collections](/sdks/postman/postma
       "AllowOverwrite": false
     }
     ```
+> [!NOTE]
+  > When uploading images to items, every image must be classified with a `Type` parameter. This can either be a "Thumnbnail" or a "Screenshot". Each item is limited to only one image of a "Thumbnail" type and by default, [Searches](/gaming/playfab/features/commerce/ugc/search#select) will return the "Thumbnail" image (if it exists) by default.
 
 * The response will return the metadata you passed in, along with an item ID:
     ```json
@@ -120,17 +122,17 @@ In this section, we will leverage the [Postman Collections](/sdks/postman/postma
     }
     ```
 * The draft UGC item now exists in the draft catalog! As long as the UGC item is not yet published, it will not be searchable via the public catalog. You can find this UGC item by calling either of the following APIs:
-  
+
   * `GetDraftItem`, passing in the item ID obtained from the `CreateDraftItem` response
-  
+
   * `GetDraftItems`, passing in the item ID if you know it, or passing in the ContinuationToken from each previous response to page through the list of draft items
 > [!NOTE]
 > If you wanted to publish immediately, you could change the `Publish` field to true
 * When you are ready to publish the UGC item, call `PublishDraftItem`, passing in the item ID (obtained from the `CreateDraftItem` response).
 * All items with any content attached will be scanned for viruses to ensure they are safe for consumption by other players. If your UGC item contains multiple particularly large files, this content scanning can take some time, and when there are many other players concurrently uploading content, this process can take even more time. You can check on the status of the publish by calling `GetItemPublishStatus`, passing in the item ID (obtained from the `CreateDraftItem` response). There are a few possible statuses:
-  
+
   * `Succeeded` - the UGC item has successfully published
-  
+
   * `Pending` - the UGC item is still in the process of getting published
   * `Failed` - the UGC item failed the content scanning and will not get published until the offending content has been modified
   * `Unknown` - this is the default status, and will be returned before calling `PublishDraftItem` on the UGC item
@@ -138,9 +140,9 @@ In this section, we will leverage the [Postman Collections](/sdks/postman/postma
 
 * Once the UGC item has been successfully published, you can search for it via `SearchItems` or grab it directly via `GetItem` if you have the item ID.
 * You can make changes to the UGC item before or after publishing by doing the following:
-  
+
   * Call `GetDraftItem`, passing in the item ID (obtained from the `CreateDraftItem` response)
-  
+
   * Copy the UGC item's data (everything in the `data` field)
   * Call `UpdateDraftItem`, passing in the modified UGC item's data
   * If you want to update any of the files or images, you would need to create another blob by calling `CreateUploadUrls` again
@@ -172,9 +174,9 @@ In this section, we will create a UGC item completely within the Game Manager ex
 > [!NOTE]
 > There is currently no way to check the draft item or publishing status within Game Manager - this can only be done via the APIs
 * If you want to make any changes to the published UGC item, you can do so by doing the following:
-  
+
   * Select the published UGC item from the table
-  
+
   * Make the appropriate edits
   * Select **Save and publish**
 
