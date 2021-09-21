@@ -16,14 +16,14 @@ ms.localizationpriority: medium
 > [!IMPORTANT]
 > This feature is currently in public preview. It is provided to give you an early look at an upcoming feature, and to allow you to provide feedback while it is still in development.  
 
-The Economy Settings page contains various options to configure UGC and Economy features for your game. These settings can be found under the *Economy* tab under *Title Settings*. These settings can also be set and accessed via APIs using the `UpdateCatalogConfig` and `GetCatalogConfig` calls respectively. Note that these APIs can only be called by title entities.
+The Economy Settings page contains various options to configure UGC and Economy features for your game. These settings can be found under the *Economy* tab under *Title Settings*. These settings can also be set and accessed via APIs using the `UpdateCatalogConfig` and `GetCatalogConfig` calls respectively. Note that these APIs can only be called by [title entities](/gaming/playfab/features/data/entities/#title).
 
 ## Catalog Admins and Reviewers
 
 Both admins and reviewers are a comma-separated list of user IDs.
 
 #### Catalog Admins
-Catalog Admins are players that are given full title-level access to the published and draft catalog. When accessing items through the `SearchItems` or `GetItem` APIs, these players will have access to all published items including:
+Catalog Admins are players that are given full title-level access to the published and draft catalog. When accessing items through the `SearchItems` or `GetItem` APIs, these players will have read and write access to all published items including:
 
 - Items with a Non-Approved Moderation State
 - Expired Items (ie. Items with past End-Dates)
@@ -43,7 +43,7 @@ Reviewers are **not** able to edit or delete items (except their own content).
 
 Display Properties are custom item properties that can be added to all items in your catalog. Certain properties can be set in the *Display Property Mappings* section to be used searches, filters, and orderings when using the [`SearchItems` API](/gaming/playfab/features/commerce/ugc/search)
 
-Once you add a field to `DisplayProperties`, you need to republish all of the public catalog items in order to add that field to the indexed values in each item document. Additionally, only the top-level Display Properties are indexed, so anything nested will **NOT** be indexed. Display Property names must be unique for all properties.
+Once you add a field to `DisplayPropertyIndexInfos` in your catalog config (or modify *Display Property Mappings* in settings), you need to republish all of the public catalog items in order for that field to be properly indexed. Additionally, only the top-level Display Properties are indexed, so anything nested will **NOT** be indexed. Display Property names must be unique for all properties.
 
 `DateTime`, `Double`, and `Queryable String` display properties are **queryable**, these properties can be used in Filter and OrderBy statements.
 
