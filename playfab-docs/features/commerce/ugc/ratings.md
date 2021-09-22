@@ -52,7 +52,7 @@ A `Submitted` timestamp is automatically populated and updated when a review is 
 
 ## Get a player's review for an item
 
-You can get a player's review for an item by calling the `GetEntityItemReview` API from a client. An item `Id` or `AlernateId` must be provided. A specific `ReviewId` associated with review will be returned.
+You can get a player's review for an item by calling the `GetEntityItemReview` API from a client. An item `Id` or `AlternateId` must be provided. A specific `ReviewId` associated with review will be returned.
 
 ```csharp
 {
@@ -100,7 +100,7 @@ Calling `GetEntityItemReview` from a player who hasn't made a review returns a R
 
 ## Get reviews for an item
 
-You can access all the reviews for an item by calling the `GetItemReviews` API. An item `Id` or `AlernateId` must be provided. Additional **optional** parameters can be added:
+You can access all the reviews **contatining text** for an item by calling the `GetItemReviews` API. An item `Id` or `AlternateId` must be provided. Additional **optional** parameters can be added:
 
 - `ContinuationToken`: An opaque token used to retrieve the next page of items, if any are available.
 - `Count`: Number of items to retrieve. Maximum page size is 200\. If not specified, defaults to 10.
@@ -170,9 +170,6 @@ The following query returns **The total number of reports by ConcernCategory per
 
 ## Takedown a review
 
-> [!IMPORTANT]
-> This API currently has a bug and a fix is currently in progress
-
 You can submit a request to takedown one or more reviews using the `TakedownItemReviews` API. This API can only be called by the **title entity**. The call takes in a set of reviews that is to be taken down.
 
 ```csharp
@@ -186,4 +183,5 @@ You can submit a request to takedown one or more reviews using the `TakedownItem
 }
 ```
 
-> Note: There can be a delay of up to [UNKNOWN TIME] until a review is taken down due to the request processing
+> [!NOTE]
+>There can be a delay of up to 24 hours until a review is taken down due to the request processing
