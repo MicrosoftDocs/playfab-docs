@@ -10,9 +10,9 @@ ROBOTS: NOINDEX,NOFOLLOW
 keywords: playfab, multiplayer, networking
 ---
 
-# PlayFab Party port usage and firewall requirements
+# PlayFab Party port usage, firewall and packet size requirements
 
-This topic provides details about Azure PlayFab Party port usage and firewall requirements that are needed to enable chat and data communication.
+This topic provides details about Azure PlayFab Party port usage, firewall and packet size requirements that are needed to enable chat and data communication.
 
 ## Communication Patterns
 
@@ -26,15 +26,29 @@ If either pattern is blocked, early PlayFab Party API operations or automatic no
 
 For web service request issues, other necessary PlayFab and platform operations outside of Party such as the user login functions would also likely fail. These failures are often caused by local firewall restrictions or proxy requirements for HTTPS connections. Most issues can be resolved by enabling direct, outbound HTTPS communication to cloud web services from the local device or network.
 
-The rest of this topic focuses on the PlayFab Party-specific UDP socket communication requirements.
+## Domain Names
+
+Microsoft Azure PlayFab Party performs UDP and HTTPS connections to multiple cloud services. To ensure correct functionality, the following domains need to be accessible:
+
+HTTPS connectivity:
+* *\*.playfabapi.com*
+* *\*.speech.microsoft.com*
+* *api.cognitive.microsofttranslator.com*
+
+UDP connectivity:
+* *\*.cloudapp.net*
+
+This list of domain names can change without notice. Please ensure to check this list regularly and expect changes.
 
 ## MTU and packet sizes
 
-Azure PlayFab Party automatically adjusts to different MTU and UDP packet payload sizes through transparent protocol-level message fragmentation and reassembly. However, specific configurations can cause communication failures despite this functionality where such fragmentation is not possible by PlayFab Party or at the IP protocol layer.
+Azure PlayFab Party automatically performs fragmentation and reassembly to fit large application messages within environmental packet size limits. Some network environments can still cause communication failures despite this functionality.
 
-The expected MTU size for PlayFab Party UDP packets is 1500, which is supported in most environments. This MTU size can be reduced by external factors like VPN tunnelling using IPsec, IPv4/6 tunnelling, or direct MTU device configuration. A minimal MTU size of 1384 needs to be supported for PlayFab Party to function correctly.
+PlayFab Party currently expects environments to support a Maximum Transmission Unit (MTU) size of at least 1419 bytes to avoid poor performance or potential connectivity failures. This MTU size is supported in typical environments. Virtual Private Networks (VPNs), IPv4 or IPv6 tunneling, or explicit administrative configuration might reduce the MTU size in one or both directions of the network path between the Party client, service, or other clients and impact connectivity.
 
-If the MTU size is insufficient, early PlayFab Party API operations will report [`PartyStateChangeResult::InternetConnectivityError`](reference/enums/partystatechangeresult.md) or applicable errors.
+If the MTU supported end-to-end in a given environment is insufficient, the [`PartyManager::ConnectToNetwork`](reference/classes/partymanager/methods/partymanager_connecttonetwork.md) operation may fail with [`PartyStateChangeResult::InternetConnectivityError`](reference/enums/partystatechangeresult.md). Alternatively, connectivity may succeed but the device may encounter additional unnecessary latency, packet loss, or unexpected disconnections.
+
+Some platforms provide tools for end users, developers, or Internet Service Providers to help troubleshoot MTU configuration in their environments and should be used if possible.
 
 ## Local device UDP port usage
 
@@ -55,17 +69,6 @@ Microsoft provides weekly updates of an IP address range list for Azure that is 
 The supported remote port range that may be in use by Azure PlayFab Party can be any ports other than the Internet Assigned Numbers Authority (IANA) reserved range of 0-1023. Currently transparent cloud relays will only be assigned port numbers from 30000 and above, but Microsoft reserves the right to change this behavior in the future and policies constraining connectivity to this range are not recommended. As a best practice, the port range of 1024-65535 should be used instead. This is particularly important for titles that are using direct peer-to-peer connections for a Party network, since NAT implementations will typically assign ports from this range. Blocking remote ports other than the full recommended range may also prevent direct communication.
 
 Given these relatively large remote IP address and port constraints, and as an alternative to restricting remote destinations, network administrators may wish to instead implement their desired strict communication constraints based on the local source device (e.g., permitting broader access for specific, known devices or applications) or the domain name list below.
-
-## Domain Names
-
-Microsoft Azure PlayFab Party performs HTTPS connections to multiple cloud services. To ensure correct functionality, the following domains need to be accessible through HTTPS connections:
-
-* *\*.playfabapi.com*
-* *\*.speech.microsoft.com*
-* *api.cognitive.microsofttranslator.com*
-* *\*.cloudapp.net*
-
-This list of domain names can change without notice. Developers should ensure to check this list regularly and expect changes.
 
 ## See also
 
