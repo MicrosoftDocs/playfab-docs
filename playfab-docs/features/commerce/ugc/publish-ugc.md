@@ -190,4 +190,4 @@ In this section, we will create a UGC item completely within the Game Manager ex
 You now have published UGC items in your catalog! You can leverage `SearchItems` to create content discovery experiences for your players.
 
 > [!div class="nextstepaction"]
-> [Search Tutorial >](/search.md)
+> [Search Tutorial >](./search.md)

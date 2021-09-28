@@ -2,14 +2,18 @@
   href: index.md
 - name: Quickstart
   href: quickstart.md
+- name: Search
+  href: search.md
 - name: Moderation
   href: moderation.md
 - name: Ratings and Reviews
   href: ratings.md
-- name: Search
-  href: search.md
 - name: Settings
   href: settings.md
+- name: Item Visibility
+  href: item-visibility.md
+- name: Pricing
+  href: billable-meters.md
 - name: Tutorials
   href: tutorials.md
   items:
