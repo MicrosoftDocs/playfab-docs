@@ -12,8 +12,10 @@
     href: create-your-first-server.md
   - name: Build definition
     href: build-definition.md
-  - name: Builds overview page
+  - name: Builds overview
     href: build-overview.md
+  - name: Servers overview
+    href: build-server-overview.md
   - name: Game server and container basics
     href: basics-of-a-playfab-game-server.md
   - name: Terminology
