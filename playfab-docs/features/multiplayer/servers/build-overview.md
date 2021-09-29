@@ -43,3 +43,7 @@ Both assets associated and unassociated with a build may be downloaded to a loca
 ## Services summary
 ![PlayFab Multiplayer Server services summary](media/services-summary.png)
 Under the **Services summary** you can view your current cost, amount of free compute hour remaining, and free network egress you have left for the month. For more information on billing, select the “View billing summary” on the page. For an expanded view, select "More details".  
+
+## See also
+* [Servers Overview](build-server-overview.md)
+* [VM performance metrics](vm-metrics.md)

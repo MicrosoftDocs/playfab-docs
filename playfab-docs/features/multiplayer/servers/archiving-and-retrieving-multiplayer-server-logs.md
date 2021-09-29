@@ -12,20 +12,24 @@ ms.localizationpriority: medium
 
 # Archiving and retrieving multiplayer server logs
 
-In several scenarios, you may want to retain logs or other arbitrary file content from your game servers for later analysis. The Game Server SDK provides an API that allows you to write to a log file or access a logging directory.
+In several scenarios, you may want to keep logs or other arbitrary file content from your game servers for later analysis. 
 
-See [Integrating game servers with the PlayFab game server SDK (GSDK)](integrating-game-servers-with-gsdk.md) to learn more about these logging mechanisms.
+There are two ways you can gather your logs either through the Game Server SDK or Game Manager. The SDK provides an API that allows you to write to a log file or access a logging directory.
+
+See [Integrating game servers with the PlayFab game server SDK (GSDK)](integrating-game-servers-with-gsdk.md) to learn more about these logging mechanisms. To programmatically gather your logs, use the [ListArchivedMultiplayerServers](xref:titleid.playfabapi.com.multiplayer.multiplayerserver.listarchivedmultiplayerservers) method. The result will give you the information for the servers, next you'll need to call [GetMultiplayerServerLogs](xref:titleid.playfabapi.com.multiplayer.multiplayerserver.getmultiplayerserverlogs) method with the Server ID as the input. 
+
 
 **Archived Servers** is the vehicle for retrieving these logs after the game server has terminated. These logs are kept for 28 days after the termination of your game server.
 
-First, go to the **Servers** page in the **Multiplayer Servers 2.0 tab**, and select **View Archive** on the top right, as shown below.
 
-![Multiplayer - Servers - View Archive](media/tutorials/multiplayer-servers-view-archive.png)
+To do this using Game Manager first, go to the **Builds** page in the **Multiplayer tab**, and select the build that is associated to the server you're looking for. 
 
-To do this programmatically, use the [ListArchivedMultiplayerServers](xref:titleid.playfabapi.com.multiplayer.multiplayerserver.listarchivedmultiplayerservers) method.
+![PlayFab Multiplayer Server build overview](media/build-overview.png)
 
-![Multiplayer - Servers - Archived Servers list](media/tutorials/multiplayer-archived-servers-list.png)
+Next, select the **Servers tab** located at the top and you'll see a list of VM's and servers, select the **Archived servers** link at the bottom 
 
-Use the **Search Logs** button to download logs for a specific server by **Server ID**. <!--The programmatic equivalent is the [GetMultiplayerServerLogs](xref:titleid.playfabapi.com.multiplayer.multiplayerserver.getmultiplayerserverlogs) method. -->
+![PlayFab Multiplayer Servers View Archive](media/build-server-archivedlink.png)
 
-![Multiplayer - Servers - Search logs](media/tutorials/multiplayer-servers-search-logs.png)
+Use the **Search bar** at the top of the page and use either the **Host ID or VM ID** to download logs for a specific server. 
+
+![Multiplayer - Servers - Search logs](media/build-server-archived.png)

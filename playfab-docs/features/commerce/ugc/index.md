@@ -28,12 +28,11 @@ UGC provides the following key features:
 ## Key concepts
 There are a few common terms used throughout the UGC service:
 * **Catalog** - Catalogs are a place for you to store and manage your content. There are two main catalogs, the draft catalog and the public catalog which store draft and published items, respectively
-* **Items** - PlayFab Items are data blobs containing information about a specific item. For UGC Public Preview, only the `ugc` item type is able to be created
+* **(Published) Items** - PlayFab UGC Items are data blobs containing information about a specific item. Published Items are accessible to other players through the `GetItems` and `Search` APIs
 * **Draft Items** - Draft Items are accessible to only the item creater and the `Title` Entity. Draft Items can become Published Items by calling the `PublishDraftItem` API
-* **Published Items** - Published Items are accessible to other players through the `GetItems` and `Search` APIs
+* **Content** - Content are the images and files that are uploaded to Items
 
 ## Limitations and important considerations
 Before playing around with the UGC features and APIs, there are a few limitations and important considerations you should know about the service:
 * UGC *only* supports PlayFab Entities - you will need to use entity-based authentication to utilize UGC.
-* UGC does not work with the PlayFab Economy APIs - it is a separate service built on top of the new Economy v2 (still in private preview).
-* Although UGC Search and Item Details are part of the Game Manger preview, UX flows do not exist for all of the V2 Monetization features. These are in development and will be coming online in the near future.
+* UGC does not work with the existing PlayFab Economy APIs - it is a separate service built on top of a new Economy system (still in private preview).

@@ -116,7 +116,7 @@ You can access all the reviews **contatining text** for an item by calling the `
 }
 ```
 
-## Submit a helpfulness votes for a review
+## Submit a helpfulness vote for a review
 
 > [!IMPORTANT]
 > This API currently has a bug and a fix is currently in progress
