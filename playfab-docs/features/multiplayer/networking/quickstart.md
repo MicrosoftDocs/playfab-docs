@@ -14,9 +14,9 @@ ms.localizationpriority: medium
 
 This quickstart is intended to be a high-level overview of PlayFab Party's core features. PlayFab Party was designed to be cross-platform from the ground up. We've structured these quickstarts in the same way, where most of the information applies to all platforms, and platform-specific prerequisites and steps are described in the linked documents.
 
-In this quickstart, critical pieces of functionality are highlighted via explanatory text and code snippets. However, please note that this is not a step-by-step walk-through.
+In this quickstart, critical pieces of functionality are highlighted via explanatory text and code snippets. However, note that this is not a step-by-step walk-through.
 
-For a deeper understanding, please consult the linked reference and conceptual documentation, and per-platform sample applications.
+For a deeper understanding, consult the linked reference and conceptual documentation, and per-platform sample applications.
 
 ## Platform Prerequisites
 
@@ -213,7 +213,7 @@ At a high level, initializing Party involves the following steps:
 
 At this point, you have the PlayFab Party initialized in your application or game.
 
-Please refer to the `NetworkManager::Initialize()` code in [NetworkManager.cpp](https://github.com/PlayFab/PlayFabParty/blob/docs/android/PartySampleNetworkCommon/lib/NetworkManager.cpp) in the demo app for a complete sample.
+Refer to the `NetworkManager::Initialize()` code in [NetworkManager.cpp](https://github.com/PlayFab/PlayFabParty/blob/docs/android/PartySampleNetworkCommon/lib/NetworkManager.cpp) in the demo app for a complete sample.
 
  The next step is to Create and Connect to a Party Network.
 
@@ -244,13 +244,13 @@ The following code snippet shows how we can create a Party Network.
 Once the function call to `CreateNewNetwork()` succeeds, a network descriptor [PartyNetworkDescriptor](concepts-objects.md#network
 ) object will be returned/populated. The descriptor contains the data required by other players to connect to a network.
 
-Please refer to the [API Reference Documentation](party_members.md) for information about the other function parameters.
+Refer to the [API Reference Documentation](party_members.md) for information about the other function parameters.
 
 ## Connect to a Party network
 
 Once a Party network has been created, Invitations are used to control which users can join the network. Invitation information therefore needs to be shared with other users. For this, PlayFab Matchmaking, another matchmaking service, in-game invite services, or platform invite services can be used.
 
-The simplest Invitation type is an open invitation that consists of a network descriptor and is used here. For detailed information of all Invitation types and the security model, please refer to [Invitations and the security model](concepts-invitations-security-model.md).
+The simplest Invitation type is an open invitation that consists of a network descriptor and is used here. For detailed information of all Invitation types and the security model, refer to [Invitations and the security model](concepts-invitations-security-model.md).
 
 We implemented simple matchmaking using [PlayFab CloudScripts](../../automation/cloudscript/quickstart.md) in the demo samples, which works as follows:
 
@@ -471,11 +471,11 @@ Once you've connected to the Party Network, you can send a message using the loc
 The final step is receiving messages sent by remote Party members and rendering (playing) them on your device. 
 
 > [!IMPORTANT]
-> While creating the chat control in one of the previous steps, you've already set up the audio input and output devices which will be used by Party to send, receive and render audio data. To receive the audio messages, you'll also need to set the appropriate chat permission between each chat control if you want audio to flow. By default, the chat permissions are set to NONE. For more information, please refer to the [Chat Permissions](concepts-chat-permissions-and-muting.md) article.
+> While creating the chat control in one of the previous steps, you've already set up the audio input and output devices which will be used by Party to send, receive and render audio data. To receive the audio messages, you'll also need to set the appropriate chat permission between each chat control if you want audio to flow. By default, the chat permissions are set to NONE. For more information, refer to the [Chat Permissions](concepts-chat-permissions-and-muting.md) article.
 
 The processing of other messages from the Party layer is best accomplished in a dedicated update thread or a high-frequency game loop. The game loop should be set up to run every frame and receive messages from the Party Manager via the StartProcessingStateChanges() function.
 
-For a complete description of all the state changes please refer to the [Party Reference Documentation](party-reference.md). Alternatively, you can refer to the [NetworkManager.cpp](https://github.com/PlayFab/PlayFabParty/blob/docs/android/PartySampleNetworkCommon/lib/NetworkManager.cpp) for an example of how to process each state change.
+For a complete description of all the state changes refer to the [Party Reference Documentation](party-reference.md). Alternatively, you can refer to the [NetworkManager.cpp](https://github.com/PlayFab/PlayFabParty/blob/docs/android/PartySampleNetworkCommon/lib/NetworkManager.cpp) for an example of how to process each state change.
 
 ## Conclusion
 
