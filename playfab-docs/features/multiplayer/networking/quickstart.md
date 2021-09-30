@@ -14,7 +14,9 @@ ms.localizationpriority: medium
 
 This quickstart is intended to be a high-level overview of PlayFab Party's core features. PlayFab Party was designed to be cross-platform from the ground up. We've structured these quickstarts in the same way, where most of the information applies to all platforms, and platform-specific prerequisites and steps are described in the linked documents.
 
-In this quickstart, critical pieces of functionality are highlighted via explanatory text and code snippets. However, please note that this is not a step-by-step walk-through. For a deeper understanding, please consult the linked reference documentation, conceptual documentation, and per-platform sample applications.
+In this quickstart, critical pieces of functionality are highlighted via explanatory text and code snippets. However, note that this is not a step-by-step walk-through.
+
+For a deeper understanding, consult the linked reference and conceptual documentation, and per-platform sample applications.
 
 ## Platform Prerequisites
 
@@ -36,10 +38,11 @@ When you finish the platform-specific steps, continue with the rest of the steps
 ## Log into your PlayFab title and obtain an entity token and entity ID
 
 To initialize and use Party, you must log in to PlayFab. You can use [PlayFabClientAPI::LoginWithCustomID](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid)
- or any other login method to do this. 
-Once you execute login, PlayFab returns an entity ID and entity token as part of the [LoginResult](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid#loginresult).
+ or a platform-specific login method to do this.
 
-These two key pieces of information are later utilized to initialize a Local user instance for PlayFab Party. The relevant code snippet is below and as always, please refer to the demo sample code in PlayFabManager.cpp
+Once you execute login, PlayFab returns an entity ID and entity token as part of the [LoginResult](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid#loginresult). These two key pieces of information are used to initialize a Local user instance for PlayFab Party.
+
+An example code snippet for logging in with a custom ID as implemented in `PlayFabManager.cpp` is shown below:
 
 ```cpp
 PlayFabClientAPI::LoginWithCustomID(
@@ -58,17 +61,16 @@ PlayFabClientAPI::LoginWithCustomID(
         }
 ```
 
-After you've successfully obtained the entity ID and entity token from PlayFab, you're all set to proceed with enabling and then initializing Party.
+After successfully obtaining the entity ID and entity token from PlayFab, you can proceed with enabling and then initializing Party.
 
 ## Initialize PlayFab Party
 
-Before proceeding with this section, it is recommended that you read through the [PlayFab Party objects and their relationships](concepts-objects.md) document and the code comments in the public Party.h header.
-
-Initializing Party is done via the NetworkManager.cpp code that's provided as part of the Party Demo Apps, and is common to all platforms. 
+Before continuing with this section, it is recommended to read the [PlayFab Party objects and their relationships](concepts-objects.md) document and code comments in the public [Party.h](https://github.com/PlayFab/PlayFabParty/blob/docs/include/Party.h) header. This provides a deeper understanding of the following operations.
 
 At a high level, initializing Party involves the following steps:
 
-1. Get a singleton reference to the PartyManager, the primary management class for interacting with the Party library, and initialize it.
+1. Get a singleton reference to the `PartyManager`and initialize it.  
+ This is the primary management class for interacting with the Party library.
 
 ```cpp
     auto& partyManager = PartyManager::GetSingleton();
@@ -89,7 +91,8 @@ At a high level, initializing Party involves the following steps:
     }
 ```
 
-2. Create a local user object. The local user object that is used to represent a local user on the device (phone or console) when performing networking and chat operations. The local user object is initialized with the PlayFab Entity ID.
+2. Create a local user object.  
+ This local user object is used to represent a local user on the device (PC, console, phone, ...) when performing networking and chat operations. The local user object is initialized with the PlayFab Entity ID.
 
 ```cpp
     //Only create a local user object if it doesn't exist.
@@ -113,7 +116,8 @@ At a high level, initializing Party involves the following steps:
     }
 ```
 
-3. Create a chat control. The chat control object manages the chat operations for the user on the specific device. You also set the audio input and output channel where Party will receive or forward data.
+3. Create a chat control and set the audio input and output channel where Party will receive or forward data.  
+ The chat control object manages the chat operations for the user on the specific device.
 
 ```cpp
     // Only create local chat controls if they don't exist.
@@ -170,7 +174,8 @@ At a high level, initializing Party involves the following steps:
         }
 ```
 
-4. Finally, set the transcription and translation options.
+4. Set the transcription and translation options.  
+ Transcription and translation are optional chat features that can significantly increase accessibility of your game. You can find more information about these features in the [Chat Overview](concepts-chat.md).
 
 ```cpp
         // Get the available list of text to speech profiles
@@ -206,10 +211,11 @@ At a high level, initializing Party involves the following steps:
         );
 ```
 
-Please refer to the NetworkManager::Initialize() code in [NetworkManager.cpp](https://github.com/PlayFab/PlayFabParty/blob/docs/android/PartySampleNetworkCommon/lib/NetworkManager.cpp) in the demo app for a complete sample.
+At this point, you have the PlayFab Party initialized in your application or game.
 
+Refer to the `NetworkManager::Initialize()` code in [NetworkManager.cpp](https://github.com/PlayFab/PlayFabParty/blob/docs/android/PartySampleNetworkCommon/lib/NetworkManager.cpp) in the demo app for a complete sample.
 
-At this point, you have the PlayFab Party initialized in your application or game. The next step is to Create and Connect to a Party Network. Before proceeding further, you should have a basic understanding of the various [PlayFab Party objects and their relationships](concepts-objects.md#network).
+ The next step is to Create and Connect to a Party Network.
 
 ## Create a Party Network
 
@@ -235,19 +241,23 @@ The following code snippet shows how we can create a Party Network.
     );
 ```
 
-Once the function call to CreateNewNetwork() succeeds, a network descriptor [PartyNetworkDescriptor](concepts-objects.md#network
-) object will be returned/populated. The descriptor contains the data required by other players to connect to a network. Please refer to the [API Reference Documentation] for a detailed discussion of the other function parameters.
+Once the function call to `CreateNewNetwork()` succeeds, a network descriptor [PartyNetworkDescriptor](concepts-objects.md#network
+) object will be returned/populated. The descriptor contains the data required by other players to connect to a network.
+
+Refer to the [API Reference Documentation](party_members.md) for information about the other function parameters.
 
 ## Connect to a Party network
 
-Once a Party network has been created and you have a network descriptor, the next step is to somehow broadcast this network descriptor to other users such that they can join. This is where PlayFab Matchmaking or any matchmaking service can come into play. 
+Once a Party network has been created, Invitations are used to control which users can join the network. Invitation information therefore needs to be shared with other users. For this, PlayFab Matchmaking, another matchmaking service, in-game invite services, or platform invite services can be used.
 
-We implemented simple matchmaking using [PlayFab CloudScripts](../../automation/cloudscript/quickstart.md) in the demo samples, which work as follows:
-   
-1. The user creating the network creates a json key value pair with a room number as key and the network descriptor as value. 
-   
-2. They store this json object in playfab backend via a CloudScript function `save_network_descriptor`. 
-   
+The simplest Invitation type is an open invitation that consists of a network descriptor and is used here. For detailed information of all Invitation types and the security model, refer to [Invitations and the security model](concepts-invitations-security-model.md).
+
+We implemented simple matchmaking using [PlayFab CloudScripts](../../automation/cloudscript/quickstart.md) in the demo samples, which works as follows:
+
+1. The user creating the network creates a json key value pair with a room number as key and the network descriptor as value.
+
+2. They store this json object in playfab backend via a CloudScript function `save_network_descriptor`.
+
 3. Any player that wishes to join the same network (abstracted away through the concept of a chat room), queries for the network descriptor associated with the room they seek to join. This is accomplished via calling the CloudScript function `get_network_descriptor`.
 
 The full code of the CloudScript functions are given below for reference:
@@ -324,7 +334,7 @@ handlers.get_network_descriptor = function (args, context)
 };
 ```
 
-Once each player has a way to retrieve the network descriptors by selecting a room and calling the CloudScript functions, they can use the network descriptor thus retrieved to join the Party Network. 
+Once each player has a way to retrieve the network descriptors by selecting a room and calling the CloudScript functions, they can use the network descriptor thus retrieved to join the Party Network.
 
 The following steps are required to successfully join a PlayFab Party Network:
 
@@ -416,7 +426,7 @@ The following steps are required to successfully join a PlayFab Party Network:
 
 ## Send a message to another network device or endpoint
 
-Once you've connected your device to the Party Network, you can send a message using the local endpoint object. The full code is available in NetworkManager.cpp
+Once you've connected to the Party Network, you can send a message using the local endpoint object.
 
 ```cpp
     if (m_localEndpoint && m_state == NetworkManagerState::NetworkConnected)
@@ -454,20 +464,24 @@ Once you've connected your device to the Party Network, you can send a message u
     }
 ```
 
+ The full code is available in [NetworkManager.cpp](https://github.com/PlayFab/PlayFabParty/blob/docs/android/PartySampleNetworkCommon/lib/NetworkManager.cpp).
+
 ## Receive a message and render it on the local device
 
 The final step is receiving messages sent by remote Party members and rendering (playing) them on your device. 
 
 > [!IMPORTANT]
-> While creating the chat control in one of the previous steps, you've already set up the audio input and output devices which will be used by Party to send, receive and render audio data. To receive the audio messages, in addition to setting the chat control with right audio input/output setup, you'll need to set the appropriate chat permission between each chat control if you want audio to flow. By default, the chat permissions are set to NONE. For more information, please refer to the [Chat Permissions](concepts-chat-permissions-and-muting.md) article.
+> While creating the chat control in one of the previous steps, you've already set up the audio input and output devices which will be used by Party to send, receive and render audio data. To receive the audio messages, you'll also need to set the appropriate chat permission between each chat control if you want audio to flow. By default, the chat permissions are set to NONE. For more information, refer to the [Chat Permissions](concepts-chat-permissions-and-muting.md) article.
 
-The processing of other messages from the Party layer is best accomplished in an update or game loop. The game loop should be set up to run every frame and receive messages from the Party Manager via the StartProcessingStateChanges() function. 
+The processing of other messages from the Party layer is best accomplished in a dedicated update thread or a high-frequency game loop. The game loop should be set up to run every frame and receive messages from the Party Manager via the StartProcessingStateChanges() function.
 
-A complete description of all the state changes is beyond the scope of this document and you should refer to the [Party Reference Documentation](party-reference.md) for details of each state. Alternatively, you can refer to the NetworkManager.cpp in the demo sample for an example of how to process each state change.
+For a complete description of all the state changes refer to the [Party Reference Documentation](party-reference.md). Alternatively, you can refer to the [NetworkManager.cpp](https://github.com/PlayFab/PlayFabParty/blob/docs/android/PartySampleNetworkCommon/lib/NetworkManager.cpp) for an example of how to process each state change.
 
 ## Conclusion
 
-In this quickstart, we walked through the key pieces of PlayFab Party and saw examples of how to interact with them. We encourage you to take a look at the complete Reference and Conceptual documentation for a deeper understanding of the systems. 
+In this quickstart, we walked through the key pieces of PlayFab Party and saw how to interact with them.
+
+We encourage you to take a look at the complete Reference and Conceptual documentation as well as samples for a deeper understanding of the systems.
 
 ## Next steps
 
