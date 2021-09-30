@@ -16,9 +16,6 @@ ms.localizationpriority: medium
 > [!IMPORTANT]
 > This feature is currently in public preview. It is provided to give you an early look at an upcoming feature, and to allow you to provide feedback while it is still in development.
 
-> [!NOTE]
-> While this feature is in public preview, rates will be discounted by 50%. The rates displayed in this document are the full (100%) rates.
-
 PlayFab User Generated Content has two categories of consumption-based meters - Requests and Storage. This page outlines and defines those meters, including how it is measured and calculated. For more information on PlayFab's pricing model, see [PlayFab Pricing Overview](../../pricing/pricing-overview.md).
 
 > [!NOTE]
