@@ -16,9 +16,6 @@ ms.localizationpriority: medium
 > [!IMPORTANT]
 > This feature is currently in public preview. It is provided to give you an early look at an upcoming feature, and to allow you to provide feedback while it is still in development.
 
-> [!NOTE]
-> While this feature is in public preview, rates will be discounted by 50%. The rates displayed in this document are the full (100%) rates.
-
 PlayFab User Generated Content has two categories of consumption-based meters - Requests and Storage. This page outlines and defines those meters, including how it is measured and calculated. For more information on PlayFab's pricing model, see [PlayFab Pricing Overview](../../pricing/pricing-overview.md).
 
 > [!NOTE]
@@ -30,11 +27,11 @@ The request meters are determined by the response size of any UGC API calls or C
 
 Meter | Size | Rate *(per million requests)*
 --- | --- | :---:
-Up to 1 MB | [0, 1 MB) | $8.00
-Up to 5 MBs | [1 MB, 5 MBs) | $10.00
-Up to 25 MBs | [5 MBs, 25 MBs) | $20.00
-Up to 50 MBs | [25 MBs, 50 MBs) | $30.00
-Up to 100 MBs | [50 MBs, 100 MBs) | $50.00
+Up to 1 MB | [0, 1 MB) | $7.00
+Up to 5 MBs | [1 MB, 5 MBs) | $25.00
+Up to 25 MBs | [5 MBs, 25 MBs) | $110.00
+Up to 50 MBs | [25 MBs, 50 MBs) | $210.00
+Up to 100 MBs | [50 MBs, 100 MBs) | $420.00
 
 > [!NOTE]
 > Please contact us if you are planning on storing content larger than 100 MBs.
