@@ -90,7 +90,7 @@ Up to 100 MBs | 0
 
 Let's also pretend this is the only title leveraging UGC in the studio, and the title has 4 GB of UGC stored (which is fully covered by the 5 GB included, so no charges are incurred on the **Storage** meter). If this were the total consumption at the end of the month, here is what the final UGC bill would look like:
 
-![Sample Bill](media/ugc-sample-bill.png)
+![Sample Bill](media/ugc-sample-monthly-bill.png)
 
 
 ## Additional resources
