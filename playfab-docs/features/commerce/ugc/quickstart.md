@@ -32,7 +32,7 @@ UGC is designed to work with PlayFab entities, so the first step is to get an en
 
 ## Create a draft UGC item
 
-You create "draft" UGC items by calling the `CreateDraftItem` API with the ``"type":"ugc"`` parameter. Draft items are designed to be reviewed and accessed by their creators before being moved to a published state. To create a draft item you need:
+You create "draft" UGC items by calling the `CreateDraftItem` API with the ``"Type":"ugc"`` parameter. Draft items are designed to be reviewed and accessed by their creators before being moved to a published state. To create a draft item you need:
 
 - The `EntityToken` from the previous call in the X-EntityToken header.
 - The `Entity.Id` from the previous call in the item's `CreatorEntityKey.Id`.
@@ -42,30 +42,24 @@ This call looks something like the following.
 
 ```csharp
 {
-  "item": {
-   "type": "ugc",
-    "title": {
-      "Neutral": "Neutral Title Test",
-      "en-gb": "en-gb Title",
-      "en-us": "en-us Title"
+  "Item": {
+   "Type": "ugc",
+    "Title": {
+      "NEUTRAL": "Neutral Title Test",
+      "en-GB": "en-gb Title",
+      "en-US": "en-us Title"
     },
-    "description": {
-      "Neutral": "Neutral Description Test",
-      "en-gb": "en-gb Description",
-      "en-us": "en-us Description"
+    "Description": {
+      "NEUTRAL": "Neutral Description Test",
+      "en-GB": "en-gb Description",
+      "en-US": "en-us Description"
     },
-    "creatorEntityKey": {
-       "id": "C88F55C6A734B1DC",
-       "type": "title_player_account"
+    "CreatorEntity": {
+       "Id": "C88F55C6A734B1DC",
+       "Type": "title_player_account",
+       "TypeString": "title_player_account"
     },
-    "contentType": "pack",
-    "sourceId": " YOURTITLEID ",
-    "sourceType": "pf",
-    "platforms": [
-      "android",
-      "appletv",
-      "oculus"
-    ],
+    "ContentType": "pack",
     "tags": [
       "featured",
       "GeneratedContent"
@@ -74,6 +68,42 @@ This call looks something like the following.
   }
 }
 ```
+
+This will return the created Draft Item with an Id. We'll want to keep track of this Id for later.
+
+```csharp
+       "Item": {
+            "SourceEntity": {
+                "Id": "1184A",
+                "Type": "title",
+                "TypeString": "title"
+            },
+            "SourceEntityKey": {
+                "Id": "1184A",
+                "Type": "title",
+                "TypeString": "title"
+            },
+            "Id": "44857e2b-c93b-4054-80be-7890028201ff",
+            "Type": "ugc",
+          ...
+        }
+```
+
+## Get draft item IDs for a player
+
+To get draft item IDs for a particular player, the `GetEntityDraftItems` API can be used. Title entities can call this API with player ID in the `Entity` parameter, and the API will return a list of Draft Items for that particular player. Note that only Title Entities can pass in an `Entity` parameter. Player entities can call the API without an `Entity` parameter and the API will return a list of draft items created by the calling player.
+
+```csharp
+{
+  "Count": 2,
+  "Entity": {
+    "Id": "C88F55C6A734B1DC",
+    "Type": "title_player_account",
+    "TypeString": "title_player_account"
+  }
+}
+```
+
 
 ## Publish a UGC item
 
@@ -103,16 +133,15 @@ The possible publish `Result` values are as follows:
 - `Failed`
 - `Canceled`
 
+Re-publishing an item will update the Published Item to match the current Draft Item.
 
 ## Do a simple search
 
-Once the publish call succeeds, it can be searched for using the previously published item `Id`. The `SearchItems` API executes a search against published catalog (including UGC items) using the provided parameters and returns a set of paginated results. Note that the `Filter`, `OrderBy` and `Select` fields use OData as the query standard.
+Once the publish call succeeds, the item can be accessed by all players via the Public Catalog. The `SearchItems` API executes a search against published catalog (including UGC items) using the provided parameters and returns a set of paginated results. Note that the `Filter`, `OrderBy` and `Select` fields use OData as the query standard.
 
 ```csharp
 {
-  "Search": "",
-  "Filter": "",
-  "OrderBy": "",
+  "Search": "Test",
   "Count": 2
 }
 ```

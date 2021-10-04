@@ -75,7 +75,9 @@ The following query returns **All submitted reports against a specific ItemId in
 
 ## Change the moderation status of an item
 
-You can change the moderation status of a **published** item using the `SetItemModerationState` API. This API can only be called by the **title entity**. An item `Id` or `AlernateId` and a `Status` must be provided. An **optional** `Reason` free text parameter can also be added. As a service call, that looks something like this:
+You can change the moderation status of a **published** item using the `SetItemModerationState` API. An item that is any state other than `Approved` will not be accessible on the public catalog for all players. The item creator can still access the item using the `GetItem` and `GetDraftItems` API. **Title entities** and **Admins** will be able to see Non-Approved items through `SearchItems`, `GetDraftItems`, and `GetItem`.
+
+ This API can only be called by the **title entity**. An item `Id` or `AlernateId` and a `Status` must be provided. An **optional** `Reason` free text parameter can also be added. As a service call, that looks something like this:
 
 ```csharp
 {
@@ -91,8 +93,6 @@ By default, a published item will not have a moderation status. Republishing the
 - `AwaitingModeration`
 - `Approved`
 - `Rejected`
-
-An item that is any state other than `Approved` will not be accessible on the public catalog for all players. The item creator can still access the item using the `GetItem` and `GetDraftItems` API. **Title entities** and **Admins** will be able to see Non-Approved items through `SearchItems`, `GetDraftItems`, and `GetItem`.
 
 The following query returns **All items currently in the `AwaitingModeration` status in the last 3 days**
 

@@ -87,7 +87,7 @@ In this section, we will leverage the [Postman Collections](/sdks/postman/postma
           "neutral": "My first UGC item (with content!)"
         },
         "ContentType": "Game Item",
-        "CreatorEntityKey": {
+        "CreatorEntity": {
           "Id": "[Player ID]",
           "Type": "title_player_account",
           "TypeString": "title_player_account"
@@ -105,7 +105,7 @@ In this section, we will leverage the [Postman Collections](/sdks/postman/postma
     }
     ```
 > [!NOTE]
-  > When uploading images to items, every image must be classified with a `Type` parameter. This can either be a "Thumnbnail" or a "Screenshot". Each item is limited to only one image of a "Thumbnail" type and by default, [Searches](/gaming/playfab/features/commerce/ugc/search#select) will return the "Thumbnail" image (if it exists) by default.
+  > When uploading images to items, every image must be classified with a `Type` parameter. This can either be a "Thumbnail" or a "Screenshot". Each item is limited to only one image of a "Thumbnail" type and by default, [Searches](/gaming/playfab/features/commerce/ugc/search#select) will return the "Thumbnail" image (if it exists) by default.
 
 * The response will return the metadata you passed in, along with an item ID:
     ```json
@@ -125,7 +125,9 @@ In this section, we will leverage the [Postman Collections](/sdks/postman/postma
 
   * `GetDraftItem`, passing in the item ID obtained from the `CreateDraftItem` response
 
-  * `GetDraftItems`, passing in the item ID if you know it, or passing in the ContinuationToken from each previous response to page through the list of draft items
+  * `GetDraftItems`, passing in a list of known item IDs
+
+  * `GetEntityDraftItems`, passing in an Entity ID and/or passing in the ContinuationToken from each previous response to page through the list of draft items
 > [!NOTE]
 > If you wanted to publish immediately, you could change the `Publish` field to true
 * When you are ready to publish the UGC item, call `PublishDraftItem`, passing in the item ID (obtained from the `CreateDraftItem` response).

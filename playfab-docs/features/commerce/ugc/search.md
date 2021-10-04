@@ -26,7 +26,7 @@ An example `SearchItems` request:
 ```csharp
 {
   "Search": "Pirates",
-  "Filter": "tags/any(t:t eq 'desert') and contentType eq 'map'",
+  "Filter": "Tags/any(t:t eq 'desert') and ContentType eq 'map'",
   "OrderBy": "lastModifiedDate asc",
   "ContinuationToken": "abc=",
   "Count": 2,
@@ -46,7 +46,6 @@ A sample response:
                <item metadata> 
             }
         ],
-        "ConfigurationName": "DEFAULT",
         "PartialExpandedResults": false,
         "TotalCount": 10,
         "ContinuationToken": "MTA="
@@ -60,13 +59,16 @@ Searches, filters, and orderings can be also done on specific `DisplayProperties
 
 ![Display Properties screenshot in Game Manager](media/displayproperties.png)
 
-Once you add a field to `DisplayProperties`, you need to republish all of the public catalog items in order to add that field to the indexed values in each item document. Additionally, only the top-level Display Properties are indexed, so anything nested will **NOT** be indexed. Display Property names must be unique for all properties.
+When you add a field to `DisplayProperties`, it will create a new index for you in the database. Only documents added or updated after index creation will be included. If you need the Display Property to apply to all items you will need to republish the entire catalog.
 
 `DateTime`, `Double`, and `Queryable String` display properties are **queryable**, these properties can be used in Filter and OrderBy statements.
 
 `Searchable String` display properties are **searchable**, these properties will be queried with fuzzy search against the `Search` field. Searchable properties cannot be used in Filter and OrderBy statements.
 
 Titles are limited to 5 display properties of each type.
+
+> [!WARNING]
+> Display property mappings are stored as an indexed list of key-value pairs. Deleting existing display property mappings can shift indexes and break the behavior of all remaining properties. It is suggested to add an additional property rather than deleting or editing an existing one and you should avoid deleting property mappings unless absolutely necessary
 
 ## Filter
 
@@ -118,10 +120,13 @@ Filter also supports `any()` for filtering against arrays. For example: `alterna
 ```
 
 #### Filtering with Arrays and null checks
-The filter below will check for any items that have a contents field with non-null values 
+The filter below will check for any items that have a contents field with non-null values
 ```json
   "Filter": "contents/any(content: content ne null)"
 ```
+
+> [!NOTE]
+> By default, Search will **NOT** return contents for items unless specified with a [Select](/#select) statement. If the above query is run without a `"Select": "contents"`` statement, it will correctly apply the filter but all returned Search results will have empty content fields
 
 #### Filtering by Display Properties
 Filtering can only be done with **queryable** Display Properties
@@ -145,8 +150,6 @@ When using order sorting you can pass a secondary property to break sorting ‘t
 If you don’t pass in a secondary value, catalog items do have an internal ‘score’ attribute that used for breaking ties, however that scoring is arbitrary and inconsistent (it’s based on the storage order in the underlying database and is constantly changing as items are added and removed).  
 
 `OrderBy` supports a handful of OData properties for ordering:
-- top
-- skip
 - asc
 - desc
 
@@ -174,25 +177,22 @@ Sorting can only be done with **queryable** Display Properties
 
 By Default, Search returns a rich set of item metadata:
 
-- `id`
-- `type`
-- `alternateIds`
-- `title` **(NEUTRAL)**
-- `description` **(NEUTRAL)**
-- `keywords` **(NEUTRAL)**
-- `contentType`
-- `images` **(Thumnbnail only)**
-- `platforms`
-- `tags`
-- `creationDate`
-- `lastModifiedDate`
-- `boostFactor`
-- `CreatorEntityKey` (`creatorId` in earlier API versions)
-- `displayProperties`
+- `Id`
+- `Type`
+- `AlternateIds`
+- `Title` **(NEUTRAL or `Accept-Language` locale)**
+- `Description` **(NEUTRAL or `Accept-Language` locale)**
+- `Keywords` **(NEUTRAL or `Accept-Language` locale)**
+- `ContentType`
+- `Images` **(Thumbnail only)**
+- `Platforms`
+- `Tags`
+- `CreationDate`
+- `LastModifiedDate`
+- `CreatorEntityKey` (`CreatorId` in earlier API versions)
+- `DisplayProperties`
 
 Only the neutral strings used in title and description are returned by default. If a Thumbnail image exists, it is returned by default. Each item is limited to only one image of a "Thumbnail" type.
-
-Note: If you are on Xbox Live, two additional metadata items are included by default: `creatorGamertag` and `sourceId`   
 
 Using `Select `additional fields can optionally be returned within the paged search results, including content metadata (contents), images, StartDate, EndDate and the full set of localized strings in title and description. Note that if the select field is left empty, the search results will be a subset of the full document metadata, to facilitate faster load times.
 
@@ -205,3 +205,14 @@ Selecting `title`, `description`, and/or `keywords` will return the full set of 
 ```json
 "Select": "title,description,keywords"
 ```
+
+## Localization
+
+A locale can be passed into the `Accept-Language` header. This will cause all `Title`, `Description`, `Keywords` fields to return the locale by default or NEUTRAL if the item doesn't have that localization.
+
+## Limits
+
+We are limiting the complexity of search filter queries that can run in any given request. Expensive queries can be rejected and titles should ensure that they are not attempting overly complicated queries. The following are examples of queries close to maximum complexity:
+
+* `contentType eq 'testType' and tags/any(t: t eq 'blue') or tags/any(t: t eq 'green') or tags/any(t: t eq 'violet')`
+* `contents/any(c: c/minClientVersion gt '1.2.3' and c/maxClientVersion lt '4.5.6')`

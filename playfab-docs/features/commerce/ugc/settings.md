@@ -43,7 +43,8 @@ Reviewers are **not** able to edit or delete items (except their own content).
 
 Display Properties are custom item properties that can be added to all items in your catalog. Certain properties can be set in the *Display Property Mappings* section to be used searches, filters, and orderings when using the [`SearchItems` API](/gaming/playfab/features/commerce/ugc/search)
 
-Once you add a field to `DisplayPropertyIndexInfos` in your catalog config (or modify *Display Property Mappings* in settings), you need to republish all of the public catalog items in order for that field to be properly indexed. Additionally, only the top-level Display Properties are indexed, so anything nested will **NOT** be indexed. Display Property names must be unique for all properties.
+When you add a field to `DisplayProperties`, it will create a new index for you in the database. Only documents added or updated after index creation will be included. If you need the Display Property to apply to all items you will need to republish the entire catalog.
+
 
 `DateTime`, `Double`, and `Queryable String` display properties are **queryable**, these properties can be used in Filter and OrderBy statements.
 
@@ -56,19 +57,19 @@ Titles are limited to 5 display properties of each type.
 
 ## Content Types
 
-A pre-set list of content types for UGC can be set by providing a list of valid string types. If none are provided, `ContentType` becomes a free-text, **optional** property when creating and updating items. Otherwise, an item must contain one of the pre-listed types.
+A pre-set list of content types for UGC can be set by providing a list of valid string types. `ContentType` is an optional property, but if it is desired to be set, it must be one of the pre-listed values.
 
 ## Tags
 
-A pre-set list of tags for UGC can be set by providing a list of valid strings. If none are provided, any number of free-text tags can be added to an item. Otherwise, an item can contain any number of the pre-listed tags.
+A pre-set list of tags for UGC can be set by providing a list of valid strings. `Tags` are optional for any item and an item can contain any number of the pre-listed tags.
 
 ## Policies
 
 The Policies pages allows you to control the client access to the Economy APIs.
 
-These policies work by adding hidden modifiers to the *Entity Global Title Policy* JSON. Please note that if you have or will make any changes to the JSON, it may break or cause unintentional behavior with the Economy API policies.
+Playfab UGC uses the [Admin API Policies](/rest/api/playfab/admin/authentication/update-policy) to control API Access. Please note that if you have or will make any changes to the JSON, it may break or cause unintentional behavior with the Economy API policies.
 
 Even if it the APIs are enabled, Players are only able to publish, edit, and delete content they have created. Title Entities are always able to access, delete, and edit any content.
 
 > [!NOTE]
-> Although Admin Players are given title-level edit, delete, and access privledges, they are still considered players for the purposes of Policies. For example, if the `DeleteItem` API was disabled for all players, Admins will not be able to delete content (but titles will continue to be able to)
+> Although Admin Players are given title-level edit, delete, and access privileges, they are still considered players for the purposes of Policies. For example, if the `DeleteItem` API was disabled for all players, Admins will not be able to delete content (but titles will continue to be able to)
