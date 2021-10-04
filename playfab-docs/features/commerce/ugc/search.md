@@ -126,7 +126,7 @@ The filter below will check for any items that have a contents field with non-nu
 ```
 
 > [!NOTE]
-> By default, Search will **NOT** return contents for items unless specified with a [Select](/#select) statement. If the above query is run without a `"Select": "contents"`` statement, it will correctly apply the filter but all returned Search results will have empty content fields
+> By default, Search will **NOT** return contents for items unless specified with a [Select](/gaming/playfab/features/commerce/ugc/search#select) statement. If the above query is run without a `"Select": "contents"`` statement, it will correctly apply the filter but all returned Search results will have empty content fields
 
 #### Filtering by Display Properties
 Filtering can only be done with **queryable** Display Properties

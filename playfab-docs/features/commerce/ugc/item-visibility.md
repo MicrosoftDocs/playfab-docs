@@ -18,8 +18,8 @@ ms.localizationpriority: medium
 
 Catalog Items can be given different parameters and values that change whether the item is visible to different players through the public catalog or other APIs. This document will go over the different states an item can be in and how it can affect who can see or modify them.
 
-## Draft Items
-Draft items are items created using the `CreateDraftItem` and have not been published. These items are available to only the Item Creator, [Catalog Admins](/gaming/playfab/features/commerce/ugc/settings/#catalog-admins), and [Title Entities](/gaming/playfab/features/data/entities/#title). Both `GetDraftItem` and `UpdateDraftItem` can be called on these items.
+## Unpublished Draft Items
+These are Draft items that are created using the `CreateDraftItem` and have not been published. These items are available to only the Item Creator, [Catalog Admins](/gaming/playfab/features/commerce/ugc/settings/#catalog-admins), and [Title Entities](/gaming/playfab/features/data/entities/#title). Both `GetDraftItem` and `UpdateDraftItem` can be called on these items.
 
 ## Published Items
 Published Items that have a valid start and end date pair (ie. StartDate < CurrentDate < EndDate), are visible to all players via the Public Catalog. Players can access published items using the `SearchItems` and `GetItem` APIs.
