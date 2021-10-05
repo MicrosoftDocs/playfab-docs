@@ -89,7 +89,6 @@ You can change the moderation status of a **published** item using the `SetItemM
 
 By default, a published item will not have a moderation status. Republishing the draft item will **not** change the moderation status. The valid `Status` values are as follows:
 
-- `Unknown`
 - `AwaitingModeration`
 - `Approved`
 - `Rejected`
