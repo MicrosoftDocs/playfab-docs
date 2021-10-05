@@ -100,13 +100,11 @@ Calling `GetEntityItemReview` from a player who hasn't made a review returns a R
 
 ## Get reviews for an item
 
-You can access all the reviews **contatining text** for an item by calling the `GetItemReviews` API. An item `Id` or `AlternateId` must be provided. Additional **optional** parameters can be added:
+You can access all the reviews **containing text** for an item by calling the `GetItemReviews` API. An item `Id` or `AlternateId` must be provided. Additional **optional** parameters can be added:
 
 - `ContinuationToken`: An opaque token used to retrieve the next page of items, if any are available.
 - `Count`: Number of items to retrieve. Maximum page size is 200\. If not specified, defaults to 10.
-- `CustomTags`: The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
 - `OrderBy`: An OData orderBy used to order the results of the query. Possible values are `Helpfulness`, `Rating`, and `Submitted`.
-- `SourceEntity`: The title or namespace the item is in. If null, then calling entity will be used.
 
 ```csharp
 {
