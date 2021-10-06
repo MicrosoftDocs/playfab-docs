@@ -185,7 +185,6 @@ By Default, Search returns a rich set of item metadata:
 - `Keywords` **(NEUTRAL or `Accept-Language` locale)**
 - `ContentType`
 - `Images` **(Thumbnail only)**
-- `Platforms`
 - `Tags`
 - `CreationDate`
 - `LastModifiedDate`
