@@ -178,6 +178,29 @@ Additional Information:
 
 [Back to About the Game Manager](#about-game-manager)
 
+### User Generated Content
+
+The User Generated Content tab displays all published content for your title. When enabled, all users can create, discover, and consume content. 
+
+![UGC Landing Page](media/tutorials/game-manager-ugc.png)
+
+**UGC Items** - An item within the public catalog. UGC Items can be created by a player, by a title, or on behalf of a player (by a title). UGC Items can contain Files and Images that can be downloaded by another player.
+
+![UGC Item Page](media/tutorials/game-manager-ugc-item.png)
+
+**Settings** - You can configure supported metadata values here (like Content Types and Tags), and specify specific player IDs to receive elevated permissions (to assist with moderation scenarios).
+
+![UGC Settings Page](media/tutorials/game-manager-ugc-settings.png)
+
+**Policies** - 
+
+![UGC Policies Page](media/tutorials/game-manager-ugc-policies.png)
+
+Additional Information:
+
+- []
+- []
+
 ### Leaderboards  
 
 The Leaderboards tab displays all the active leaderboards for your title. PlayFab leaderboards are driven by the statistics you choose to use for your players. You can also configure the reset frequency and aggregation method.
