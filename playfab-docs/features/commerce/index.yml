@@ -70,13 +70,13 @@ landingContent:
             url: https://github.com/PlayFab/PlayFab-Samples/tree/master/Samples/Android/PlayFabCommerce
 
   # Card
-  - title: Manage user generated content
+  - title: Manage user generated content (UGC)
     linkLists:
       - linkListType: overview
         links:
           - text: What is PlayFab UGC?
             url: ugc/index.md
-          - text: Getting started with UGC
+          - text: UGC quickstart guide
             url: ugc/quickstart.md
       - linkListType: tutorial
         links:

@@ -180,7 +180,7 @@ Additional Information:
 
 ### User Generated Content
 
-The User Generated Content tab displays all published content for your title. When enabled, all users can create, discover, and consume content. 
+The User Generated Content tab displays all published content for your title. When enabled, all users can create, discover, and consume content.
 
 ![UGC Landing Page](media/tutorials/game-manager-ugc.png)
 
@@ -192,14 +192,16 @@ The User Generated Content tab displays all published content for your title. Wh
 
 ![UGC Settings Page](media/tutorials/game-manager-ugc-settings.png)
 
-**Policies** - 
+**Policies** - Policies allow you to control the client access to the Economy APIs.
 
 ![UGC Policies Page](media/tutorials/game-manager-ugc-policies.png)
 
 Additional Information:
 
-- []
-- []
+- [UGC Overview](../features/commerce/ugc/index.md)
+- [UGC Quickstart](../features/commerce/ugc/quickstart.md)
+
+[Back to About the Game Manager](#about-game-manager)
 
 ### Leaderboards  
 

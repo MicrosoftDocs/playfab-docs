@@ -14,12 +14,15 @@ ms.localizationpriority: medium
 
 Making your economy work is one of the biggest challenges in games. You need to balance between what can be earned in game and what can be purchased, while supporting both highly engaged players and those with light engagements. You want to support different store placements and sales events based on player segments.
 
-## Key concepts  
+> [!NOTE]
+> You can leran more about the preview User Generated Content (UGC) service in the [User Generated Content](../ugc/index.md) documentation
+
+## Key concepts 
 
 * **Catalog** - Catalogs offer an easy way to manage your game's virtual items. They are listings of every item that is available in your game.
 * **Catalog Items** – PlayFab Items can represent just about any type of virtual good that you might use, from Durables, to Bundles to Locked containers.
 * **Inventory** - All accounts (player accounts and character accounts) have an inventory. The inventory contains all owned Item Instances as well as item history.
-* **Segments** - Provides subsets of players grouped by their event history. For example, the "Frequent Players" segment is comprised of players that have logged in more than 100 times.  
+* **Segments** - Provides subsets of players grouped by their event history. For example, the "Frequent Players" segment is comprised of players that have logged in more than 100 times. 
 * **Stores** - Stores serve a subset of Catalog Items; these items can be offered at alternative prices when compared to those set on the corresponding Catalog Items.  
 * **Virtual Currency** - PlayFab offers up to 10 virtual currencies per title. Currencies can be used to purchase Items from the Catalog or a Store, can represent soft currency converted from In App Purchases, or can be used as a mechanic to drive gameplay.
 
@@ -40,3 +43,5 @@ PlayFab helps you build out your economy by providing a suite of tools to suppor
 * **A/B Testing**: Stores are also great opportunities for A/B testing. Try mixing up the order of items in the store - the same item will sell differently depending on where it is and how it is displayed. See our tutorial on [A/B testing with Stores and Test Buckets.](../../analytics/ab-testing/ab-testing-with-stores-and-test-buckets.md)
 
 * **Coupons**: Special coupons that players can give to friends or share via social media can drive sales and encourage viral growth. PlayFab supports coupons specifically for this sort of scenario:  [Coupons and Promotions](coupons-and-promotions.md).
+
+* **User Generated Content**: Empower players to create, upload and search for moderated content. See our [UGC Quickstart](../ugc/quickstart.md) for more information on how to begin using PlayFab UGC.
