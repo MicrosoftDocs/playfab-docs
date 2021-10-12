@@ -46,9 +46,8 @@ A sample response:
                <item metadata> 
             }
         ],
-        "PartialExpandedResults": false,
-        "TotalCount": 10,
-        "ContinuationToken": "MTA="
+      "PartialExpandedResults": false,
+      "ContinuationToken": "MTA="
     }
 }
 ```
