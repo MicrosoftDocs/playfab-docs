@@ -10,7 +10,7 @@ metadata:
   ms.topic: landing-page
   author: TimCrawford
   ms.author: timcra
-  ms.date: 06/09/2020 
+  ms.date: 06/09/2020
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
 
@@ -35,7 +35,7 @@ landingContent:
       - linkListType: quickstart
         links:
           - text: Create your first item
-            url: items/quickstart.md  
+            url: items/quickstart.md
           - text: Set up your first store
             url: stores/quickstart.md
 
@@ -68,3 +68,17 @@ landingContent:
         links:
           - text: Android in-app purchase sample
             url: https://github.com/PlayFab/PlayFab-Samples/tree/master/Samples/Android/PlayFabCommerce
+
+  # Card
+  - title: Manage user generated content
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is PlayFab UGC?
+            url: ugc/index.md
+          - text: Getting started with UGC
+            url: ugc/quickstart.md
+      - linkListType: tutorial
+        links:
+          - text: Publish your first user generated content
+            url: ugc/publish-ugc.md
