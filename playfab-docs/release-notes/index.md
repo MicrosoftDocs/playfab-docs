@@ -14,6 +14,12 @@ ms.localizationpriority: medium
 > [!Note]
 > For release notes about service releases and product updates, see the [release notes](https://github.com/PlayFab/PlayFab/releases) section on [PlayFab's public GitHub repository](https://github.com/PlayFab/PlayFab)
 
+## 211012
+
+Date: 2021-10-12
+
+Supports the [August 24 2021 PlayFab service release](https://github.com/PlayFab/PlayFab/releases/tag/2.8.3)
+
 ## 210927
 
 Date: 2021-09-27
