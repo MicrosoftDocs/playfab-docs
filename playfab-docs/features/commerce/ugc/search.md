@@ -7,7 +7,6 @@ ms.date: 06/13/2021
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, commerce, economy, monetization, ugc
-ROBOTS: NOINDEX, NOFOLLOW
 ms.localizationpriority: medium
 ---
 
@@ -118,7 +117,7 @@ Filter also supports `any()` for filtering against arrays. For example: `alterna
 ```
 
 #### Filtering with Arrays and null checks
-The filter below will check for any items that have a contents field with non-null values 
+The filter below will check for any items that have a contents field with non-null values
 ```json
   "Filter": "contents/any(content: content ne null)"
 ```

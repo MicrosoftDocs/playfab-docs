@@ -7,7 +7,6 @@ ms.date: 09/16/2021
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, commerce, economy, monetization, ugc
-ROBOTS: NOINDEX, NOFOLLOW
 ms.localizationpriority: medium
 ---
 
