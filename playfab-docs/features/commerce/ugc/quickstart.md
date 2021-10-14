@@ -54,16 +54,6 @@ This call looks something like the following.
       "en-GB": "en-gb Description",
       "en-US": "en-us Description"
     },
-    "CreatorEntity": {
-       "Id": "C88F55C6A734B1DC",
-       "Type": "title_player_account",
-       "TypeString": "title_player_account"
-    },
-    "ContentType": "pack",
-    "tags": [
-      "featured",
-      "GeneratedContent"
-    ],
     "startDate": "2018-10-18T20:01:26.1520582Z"
   }
 }
@@ -85,6 +75,11 @@ This will return the created Draft Item with an `Id`. We'll want to keep track o
             },
             "Id": "44857e2b-c93b-4054-80be-7890028201ff",
             "Type": "ugc",
+            "Title": {
+              "NEUTRAL": "Neutral Title Test",
+              "en-GB": "en-gb Title",
+              "en-US": "en-us Title"
+            },
           ...
         }
 ```

@@ -20,7 +20,7 @@ The Economy Settings page contains various options to configure UGC and Economy 
 
 ## Catalog Admins and Reviewers
 
-Both admins and reviewers are a comma-separated list of user IDs.
+Both admins and reviewers are a collection of player entities.
 
 #### Catalog Admins
 Catalog Admins are players that are given full title-level access to the published and draft catalog. When accessing items through the `SearchItems` or `GetItem` APIs, these players will have read and write access to all published items including:
@@ -65,7 +65,7 @@ A pre-set list of tags for UGC can be set by providing a list of valid strings. 
 
 ## Policies
 
-The Policies pages allows you to control the client access to the Economy APIs.
+The Policies page allows you to control the client access to the Economy APIs.
 
 Playfab UGC uses the [Admin API Policies](/rest/api/playfab/admin/authentication/update-policy) to control API Access. Please note that if you have or will make any changes to the JSON, it may break or cause unintentional behavior with the Economy API policies.
 

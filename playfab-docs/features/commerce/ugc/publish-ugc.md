@@ -23,11 +23,11 @@ This tutorial walks you through publishing UGC with content through both APIs an
 * A UGC-enabled title
 
 ## Via APIs
-In this section, we will leverage the [Postman Collections](/sdks/postman/postman-quickstart) to interact with the PlayFab UGC APIs, but you can leverage any of our [SDKs](/sdks/playfab-sdk-intro).
+In this section, we will leverage the [Postman Collections](/gaming/playfab/sdks/postman/postman-quickstart) to interact with the PlayFab UGC APIs, but you can leverage any of our [SDKs](](/gaming/playfab/sdks/playfab-sdk-intro).
 
-### Upload Content to Blobs
-* The UGC system works with the PlayFab Entity Model, so we need to use entity tokens instead of session tickets to call these APIs. You can learn how to get a title entity token in the [Postman Collections Quickstart](/sdks/postman/postman-quickstart).
-* The UGC system leverages [Azure Blob Storage](/azure/storage/blobs/storage-blobs-introduction) to store all content (files and images) associated with your title's UGC. To upload the content, we first need to call `CreateUploadUrls`, passing in the file names and sizes (in bytes) to create the new blobs. For example, if I wanted to upload a text file and PNG image, I would pass in the following to the request body:
+### Create Blob URLs
+* The UGC system works with the PlayFab Entity Model, so we need to use entity tokens instead of session tickets to call these APIs. You can learn how to get a title entity token in the [Postman Collections Quickstart](](/gaming/playfab/sdks/postman/postman-quickstart).
+* The UGC system leverages [Azure Blob Storage](/azure/storage/blobs/storage-blobs-introduction) to store all content (files and images) associated with your title's UGC. To upload the content, we first need to call the  `CreateUploadUrls` API, passing in the file names and sizes (in bytes) to create the new blobs. For example, if I wanted to upload a text file and PNG image, I would pass in the following to the request body:
     ```json
     {
       "Files": [
@@ -65,14 +65,21 @@ In this section, we will leverage the [Postman Collections](/sdks/postman/postma
     ```
   > [!NOTE]
   > Each create token (returned in the "Url" field of the response) is valid for 6 hours, after which you will not be able to upload content to the blob. If you did not upload any content to the blob, it will get cleaned up by our service and you will need to create a new blob by calling `CreateUploadUrls` again.
-* There are a few different ways to [upload your content to these URLs](https://cloud.netapp.com/blog/azure-cvo-blg-how-to-upload-files-to-azure-blob-storage), but in this tutorial we will leverage the AzCopy tool. You can download the tool and [get started with AzCopy](/azure/storage/common/storage-use-azcopy-v10) here.
+
+### Upload Content to Blobs
+
+There are a few different ways to [upload your content to these URLs](https://cloud.netapp.com/blog/azure-cvo-blg-how-to-upload-files-to-azure-blob-storage)
+
+#### Via Postman
+
+#### Via AzCopy
+* Another option is using the AzCopy tool. You can download the tool and [get started with AzCopy](/azure/storage/common/storage-use-azcopy-v10) here.
 * In your terminal of choice, call azcopy with the following parameters:
     ```powershell
     [relative path to azcopy.exe] copy [relative path to local content] [Url + '?' + Token]
     ```
 
-
-* You can test that the upload was successful by copying the base Url (before the '?') and navigating to it in your browser.
+Regardless of how you choose to upload content, you can test that the upload was successful by copying the base Url (before the '?') and navigating to it in your browser.
 
 ### Create the Draft Item
 * Now that the files and images have been successfully uploaded, you can call `CreateDraftItem`, passing in the URLs of the content and images, to create your first item in the draft catalog:
