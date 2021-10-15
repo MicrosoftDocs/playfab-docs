@@ -23,15 +23,9 @@ PlayFab User Generated Content has two categories of consumption-based meters - 
 
 
 ## Requests
-The request meters are determined by the response size of any UGC API calls or CDN requests. There are five different rates, depending on the size:
+The request meters are determined by the response size of any UGC API calls or CDN requests. For each of the three PlayFab plans, there are five different rates, depending on the size:
 
-Meter | Size | Rate *(per million requests)*
---- | --- | :---:
-Up to 1 MB | [0, 1 MB) | $7.00
-Up to 5 MBs | [1 MB, 5 MBs) | $25.00
-Up to 25 MBs | [5 MBs, 25 MBs) | $110.00
-Up to 50 MBs | [25 MBs, 50 MBs) | $210.00
-Up to 100 MBs | [50 MBs, 100 MBs) | $420.00
+![UGC Requests Pricing](media/ugc-pricing-requests.png)
 
 > [!NOTE]
 > Please contact us if you are planning on storing content larger than 100 MBs.
