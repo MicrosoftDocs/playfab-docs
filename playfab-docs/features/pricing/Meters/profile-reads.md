@@ -271,9 +271,6 @@ The following APIs cause the Profile read meter to increment.
 - [LoginWithTwitch](https://docs.microsoft.com/rest/api/playfab/client/authentication/loginwithtwitch?view=playfab-rest)
     Signs the user in using a Twitch access token.
 
-- [LoginWithWindowsHello](https://docs.microsoft.com/rest/api/playfab/client/authentication/loginwithwindowshello?view=playfab-rest)
-    Completes the Windows Hello login flow by returning the signed value of the challenge from GetWindowsHelloChallenge. Windows Hello has a 2 step client to server authentication scheme. Step one is to request from the server a challenge string. Step two is to request the user sign the string via Windows Hello and then send the signed value back to the server.
-
 - [LoginWithXbox](https://docs.microsoft.com/rest/api/playfab/client/authentication/loginwithxbox?view=playfab-rest)
     Signs the user in using a Xbox Live Token, returning a session identifier that can subsequently be used for API calls which require an authenticated user.
 
