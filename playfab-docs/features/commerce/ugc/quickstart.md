@@ -22,7 +22,7 @@ The purpose of this guide is to explain how to quickly get started with UGC, usi
 
 UGC is designed to work with PlayFab entities, so the first step is to get an entity token using `LoginWithCustomID`. As a service call, that looks something like this:
 
-```csharp
+```json
 {
   "CustomId": "exampleUser",
   "CreateAccount": true,
@@ -40,7 +40,7 @@ You create "draft" UGC items by calling the `CreateDraftItem` API with the ``"Ty
 
 This call looks something like the following.
 
-```csharp
+```json
 {
   "Item": {
    "Type": "ugc",
@@ -54,16 +54,6 @@ This call looks something like the following.
       "en-GB": "en-gb Description",
       "en-US": "en-us Description"
     },
-    "CreatorEntity": {
-       "Id": "C88F55C6A734B1DC",
-       "Type": "title_player_account",
-       "TypeString": "title_player_account"
-    },
-    "ContentType": "pack",
-    "tags": [
-      "featured",
-      "GeneratedContent"
-    ],
     "startDate": "2018-10-18T20:01:26.1520582Z"
   }
 }
@@ -71,7 +61,7 @@ This call looks something like the following.
 
 This will return the created Draft Item with an `Id`. We'll want to keep track of this `Id` for later.
 
-```csharp
+```json
        "Item": {
             "SourceEntity": {
                 "Id": "1184A",
@@ -85,6 +75,11 @@ This will return the created Draft Item with an `Id`. We'll want to keep track o
             },
             "Id": "44857e2b-c93b-4054-80be-7890028201ff",
             "Type": "ugc",
+            "Title": {
+              "NEUTRAL": "Neutral Title Test",
+              "en-GB": "en-gb Title",
+              "en-US": "en-us Title"
+            },
           ...
         }
 ```
@@ -93,7 +88,7 @@ This will return the created Draft Item with an `Id`. We'll want to keep track o
 
 To get draft item IDs for a particular player, the `GetEntityDraftItems` API can be used. Title entities can call this API with player ID in the `Entity` parameter, and the API will return a list of Draft Items for that particular player. Only Title Entities can pass in an `Entity` parameter. Player entities can call the API without an `Entity` parameter and the API will return a list of draft items created by the calling player.
 
-```csharp
+```json
 {
   "Count": 2,
   "Entity": {
@@ -109,7 +104,7 @@ To get draft item IDs for a particular player, the `GetEntityDraftItems` API can
 
 Once an item is in draft, you can then push it to a published state using `PublishDraftItem`. Once a UGC item is published, it's generally searchable and available publicly. You need to use the item `Id` returned from the `CreateDraftItem` response.
 
-```csharp
+```json
 {
 "Id": "44857e2b-c93b-4054-80be-7890028201ff"
 }
@@ -119,7 +114,7 @@ Once an item is in draft, you can then push it to a published state using `Publi
 
 Using the item `Id`, you can get the status of a publish for an item in your UGC catalog using the `GetItemPublishStatus` API.
 
-```csharp
+```json
 {
 "Id": "44857e2b-c93b-4054-80be-7890028201ff"
 }
@@ -139,7 +134,7 @@ Republishing an item will update the Published Item to match the current Draft I
 
 Once the publish call succeeds, the item can be accessed by all players via the Public Catalog. The  [`SearchItems` API](/gaming/playfab/features/commerce/ugc/search) executes a search against published catalog (including UGC items) using the provided parameters and returns a set of paginated results. The `Filter`, `OrderBy`, and `Select` fields use OData as the query standard.
 
-```csharp
+```json
 {
   "Search": "Test",
   "Count": 2

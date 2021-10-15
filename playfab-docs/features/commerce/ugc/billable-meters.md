@@ -23,28 +23,24 @@ PlayFab User Generated Content has two categories of consumption-based meters - 
 
 
 ## Requests
-The request meters are determined by the response size of any UGC API calls or CDN requests. There are five different rates, depending on the size:
+The request meters are determined by the response size of any UGC API calls or CDN requests. For each of the three PlayFab plans, there are five different rates, depending on the size:
 
-Meter | Size | Rate *(per million requests)*
---- | --- | :---:
-Up to 1 MB | [0, 1 MB) | $7.00
-Up to 5 MBs | [1 MB, 5 MBs) | $25.00
-Up to 25 MBs | [5 MBs, 25 MBs) | $110.00
-Up to 50 MBs | [25 MBs, 50 MBs) | $210.00
-Up to 100 MBs | [50 MBs, 100 MBs) | $420.00
+![UGC Requests Pricing](media/ugc-pricing-requests.png)
 
 > [!NOTE]
 > Please contact us if you are planning on storing content larger than 100 MBs.
 
 
 ## Storage
-The storage meter is determined by the total size of all content (both files and images). There is a single rate for this meter - **$0.11 per GB**.
+The storage meter is determined by the total size of all content (both files and images). 5GB is included in all pricing plans. For additional storage, there is a three different rates for this meter depending on the  plan.
+
+![UGC Storage Pricing](media/ugc-pricing-storage.png)
 
 This includes content associated with items that haven't been published, and items that aren't visible via the public catalog. For more information on how items can be hidden from the public catalog, see [Item Visibility](./item-visibility.md).
 
 
 ## Included Meters
-There are a set of included meters for all PlayFab customers, regardless of the selected plan:
+There is a set of included meters for all PlayFab customers, regardless of the selected plan:
 
 Meter | Included Amount
 --- | :---:
@@ -57,16 +53,16 @@ Storage | 5 GB
 
 
 ## Example Bill
-Let's walk through an example customer's UGC consumption and look at their monthly bill. Let's start with a single user. This user goes to the content discovery page and searches for 'dinosaurs'. 10 results are displayed to the user, each with a title and thumbnail image. The user selects a piece of content, which displays the full metadata, including the description, ratings, and 4 more images. The user decides the content looks interesting enough, so they select the download button.
+Let's walk through an example customer's UGC consumption and look at their monthly bill. This example title is on the *Pay-as-you-go* plan. Let's start with a single user. This user goes to the content discovery page and searches for 'dinosaurs'. 10 results are displayed to the user, each with a title and thumbnail image. The user selects a piece of content, which displays the full metadata, including the description, ratings, and 4 more images. The user decides the content looks interesting enough, so they select the download button.
 
 Now let's see what meter consumption this scenario just drove:
 * This user goes to the content discovery page and searches for 'dinosaurs'. 10 results are displayed to the user, each with a title and thumbnail image.
   * The `SearchItems` call returned 10 items with the base metadata, resulting in a single **Up to 1 MB Request**.
-  * Each of the 10 thumbnails are requested from the CDN. Let's pretend 5 of these are just under 1 MB, and 5 are just over 1 MB. This results in 5 **Up to 1 MB Requests** and 5 **Up to 5 MBs Requests**.
+  * Each of the 10 thumbnails is requested from the CDN. Let's pretend 5 of these are just under 1 MB, and 5 are just over 1 MB. This results in 5 **Up to 1 MB Requests** and 5 **Up to 5 MBs Requests**.
 * The user selects a piece of content, which displays the full metadata, including the description, ratings, and 4 more images.
   * The `GetItem` call returned a single item with the full metadata, resulting in a single **Up to 1 MB Request**
   * The `GetRatings` call returned a single item's ratings, resulting in a single **Up to 1 MB Request**
-  * Each of the 4 images are requested from the CDN. These are higher quality images, so let's pretend 2 of these are just under 5 MBs, and 2 are just over 5 MBs. This results in 2 **Up to 5 MBs Requests** and 2 **Up to 25 MBs Requests**.
+  * Each of the 4 images is requested from the CDN. These are higher quality images, so let's pretend 2 of these are just under 5 MBs, and 2 are just over 5 MBs. This results in 2 **Up to 5 MBs Requests** and 2 **Up to 25 MBs Requests**.
 * The user decides the content looks interesting enough, so they select the download button.
   * This content is requested from the CDN. This is a large piece of content, so let's pretend it is 20 MBs. This results in a single **Up to 25 MBs Requests**.
 
@@ -78,7 +74,7 @@ Up to 25 MBs | 3
 Up to 50 MBs | 0
 Up to 100 MBs | 0
 
-Now let's pretend this title has 10 thousand users that perform this exact same scenario once a day in a 30-day month (300 thousand times) - this is roughly the same as a single user performing this exact same scenario on average once every 9 seconds. The would result in the following meter consumption:
+Now let's pretend this title has 10 thousand users that perform this exact same scenario once a day in a 30-day month (300 thousand times) - this is roughly the same as a single user performing this exact same scenario on average once every 9 seconds. This would result in the following meter consumption:
 
 Meter | Request Count
 --- | ---
