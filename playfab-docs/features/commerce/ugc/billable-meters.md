@@ -44,8 +44,7 @@ There is a set of included meters for all PlayFab customers, regardless of the s
 
 Meter | Included Amount
 --- | :---:
-Up to 1 MB Requests | 1 Million requests
-Up to 5 MB Requests | 1 Million requests
+Up to 1 MB Requests | 150k requests
 Storage | 5 GB
 
 > [!NOTE]
