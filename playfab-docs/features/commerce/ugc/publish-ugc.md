@@ -116,7 +116,7 @@ There are a few different ways to [upload your content to these URLs](https://cl
     }
     ```
 > [!NOTE]
-  > When uploading images to items, every image must be classified with a `Type` parameter. This can either be a "Thumbnail" or a "Screenshot". Each item is limited to only one image of a "Thumbnail" type and by default, [Searches](/gaming/playfab/features/commerce/ugc/search#select) will return the "Thumbnail" image for an item (if it exists) by default.
+> When uploading images to items, every image must be classified with a `Type` parameter. This can either be a "Thumbnail" or a "Screenshot". Each item is limited to only one image of a "Thumbnail" type and by default, [Searches](/gaming/playfab/features/commerce/ugc/search#select) will return the "Thumbnail" image (if it exists) by default.
 
 * The response will return the metadata you passed in, along with an item ID:
     ```json
