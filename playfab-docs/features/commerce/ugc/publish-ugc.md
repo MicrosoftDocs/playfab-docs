@@ -23,11 +23,11 @@ This tutorial walks you through publishing UGC with content through both APIs an
 * A UGC-enabled title
 
 ## Via APIs
-In this section, we will leverage the [Postman Collections](/sdks/postman/postman-quickstart) to interact with the PlayFab UGC APIs, but you can leverage any of our [SDKs](/sdks/playfab-sdk-intro).
+In this section, we will leverage the [Postman Collections](/gaming/playfab/sdks/postman/postman-quickstart) to interact with the PlayFab UGC APIs, but you can leverage any of our [SDKs](](/gaming/playfab/sdks/playfab-sdk-intro).
 
-### Upload Content to Blobs
-* The UGC system works with the PlayFab Entity Model, so we need to use entity tokens instead of session tickets to call these APIs. You can learn how to get a title entity token in the [Postman Collections Quickstart](/sdks/postman/postman-quickstart).
-* The UGC system leverages [Azure Blob Storage](/azure/storage/blobs/storage-blobs-introduction) to store all content (files and images) associated with your title's UGC. To upload the content, we first need to call `CreateUploadUrls`, passing in the file names and sizes (in bytes) to create the new blobs. For example, if I wanted to upload a text file and PNG image, I would pass in the following to the request body:
+### Create Blob URLs
+* The UGC system works with the PlayFab Entity Model, so we need to use entity tokens instead of session tickets to call these APIs. You can learn how to get a title entity token in the [Postman Collections Quickstart](](/gaming/playfab/sdks/postman/postman-quickstart).
+* The UGC system leverages [Azure Blob Storage](/azure/storage/blobs/storage-blobs-introduction) to store all content (files and images) associated with your title's UGC. To upload the content, we first need to call the  `CreateUploadUrls` API, passing in the file names and sizes (in bytes) to create the new blobs. For example, if I wanted to upload a text file and PNG image, I would pass in the following to the request body:
     ```json
     {
       "Files": [
@@ -42,7 +42,7 @@ In this section, we will leverage the [Postman Collections](/sdks/postman/postma
       ]
     }
     ```
-* The response will include an Id and Url for each piece of content:
+* The response will include an `Id` and `Url` for each piece of content:
     ```json
     {
         "code": 200,
@@ -64,16 +64,25 @@ In this section, we will leverage the [Postman Collections](/sdks/postman/postma
     }
     ```
   > [!NOTE]
-  > Each create token (returned in the "Url" field of the response) is valid for 6 hours, after which you will not be able to upload content to the blob. If you did not upload any content to the blob, it will get cleaned up by our service and you will need to create a new blob by calling `CreateUploadUrls` again.
-* There are a few different ways to [upload your content to these URLs](https://cloud.netapp.com/blog/azure-cvo-blg-how-to-upload-files-to-azure-blob-storage), but in this tutorial we will leverage the AzCopy tool. You can download the tool and [get started with AzCopy](/azure/storage/common/storage-use-azcopy-v10) here.
+  > Each create token (returned in the "Url" field of the response) is valid for 6 hours, after which you will not be able to upload content to the blob. If you did not upload any content to the blob, it will get cleaned up by our service and you will need to create a new blob by calling `CreateUploadUrls` again. This URL will also not allow access to content until is has been uploaded to a draft item where it will receive a different (now publicly accessible) URL
+
+### Upload Content to Blobs
+
+There are a few different ways to [upload your content to these URLs](https://cloud.netapp.com/blog/azure-cvo-blg-how-to-upload-files-to-azure-blob-storage)
+
+#### Via Postman
+* Create a `PUT` request with the URL generated from calling `CreateUploadUrls` and by adding the `comp: blob` and `x-ms-blob-type: blockblob` as headers:
+![Postman Publish Example](media/postman-public-ugc-example.png)
+
+* Then you can upload the file by selecting *binary* as the Body type:
+![Postman Upload Binary](media/postman-upload-binary.png)
+
+#### Via AzCopy
+* Another option is using the AzCopy tool. You can download the tool and [get started with AzCopy](/azure/storage/common/storage-use-azcopy-v10) here.
 * In your terminal of choice, call azcopy with the following parameters:
     ```powershell
     [relative path to azcopy.exe] copy [relative path to local content] [Url + '?' + Token]
     ```
-
-
-* You can test that the upload was successful by copying the base Url (before the '?') and navigating to it in your browser.
-
 ### Create the Draft Item
 * Now that the files and images have been successfully uploaded, you can call `CreateDraftItem`, passing in the URLs of the content and images, to create your first item in the draft catalog:
     ```json
@@ -87,16 +96,18 @@ In this section, we will leverage the [Postman Collections](/sdks/postman/postma
           "neutral": "My first UGC item (with content!)"
         },
         "ContentType": "Game Item",
-        "CreatorEntity": {
-          "Id": "[Player ID]",
-          "Type": "title_player_account",
-          "TypeString": "title_player_account"
-        },
         "IsHidden": false,
         "Contents": [
           {
             "Id": "[Content ID]",
             "Url": "[Content Url]"
+          }
+        ],
+        "Images": [
+          {
+            "Id": "[Image ID]",
+            "Type": "Thumbnail",
+            "Url": "[Image Url]"
           }
         ]
       },
@@ -105,7 +116,7 @@ In this section, we will leverage the [Postman Collections](/sdks/postman/postma
     }
     ```
 > [!NOTE]
-  > When uploading images to items, every image must be classified with a `Type` parameter. This can either be a "Thumbnail" or a "Screenshot". Each item is limited to only one image of a "Thumbnail" type and by default, [Searches](/gaming/playfab/features/commerce/ugc/search#select) will return the "Thumbnail" image (if it exists) by default.
+> When uploading images to items, every image must be classified with a `Type` parameter. This can either be a "Thumbnail" or a "Screenshot". Each item is limited to only one image of a "Thumbnail" type and by default, [Searches](/gaming/playfab/features/commerce/ugc/search#select) will return the "Thumbnail" image (if it exists) by default.
 
 * The response will return the metadata you passed in, along with an item ID:
     ```json
@@ -121,6 +132,9 @@ In this section, we will leverage the [Postman Collections](/sdks/postman/postma
       }
     }
     ```
+> [!NOTE]
+> The content/image URLs returned by the created draft item and the original `CreateUploadUrls` call will be different. Regardless of how you chose to upload content, you can test that the upload was successful by copying the base Url (before the '?') and navigating to it in your browser. This will only return the image **after** it has been uploaded to a draft item, not by using the URL from `CreateUploadUrls`.
+
 * The draft UGC item now exists in the draft catalog! As long as the UGC item is not yet published, it will not be searchable via the public catalog. You can find this UGC item by calling either of the following APIs:
 
   * `GetDraftItem`, passing in the item ID obtained from the `CreateDraftItem` response

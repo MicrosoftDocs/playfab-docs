@@ -34,7 +34,7 @@ In addition, a number of **optional** parameters can be added also be added:
 
 As a service call, that looks something like this:
 
-```csharp
+```json
 
 {
   "Review": {
@@ -54,7 +54,7 @@ A `Submitted` timestamp is automatically populated and updated when a review is 
 
 You can get a player's review for an item by calling the `GetEntityItemReview` API from a client. An item `Id` or `AlternateId` must be provided. A specific `ReviewId` associated with review will be returned.
 
-```csharp
+```json
 {
     "code": 200,
     "status": "OK",
@@ -80,7 +80,7 @@ You can get a player's review for an item by calling the `GetEntityItemReview` A
 
 Calling `GetEntityItemReview` from a player who hasn't made a review returns a Review object with zeroed values:
 
-```csharp
+```json
 {
     "code": 200,
     "status": "OK",
@@ -106,7 +106,7 @@ You can access all the reviews **containing text** for an item by calling the `G
 - `Count`: Number of items to retrieve. Maximum page size is 200\. If not specified, defaults to 10.
 - `OrderBy`: An OData orderBy used to order the results of the query. Possible values are `Helpfulness`, `Rating`, and `Submitted`.
 
-```csharp
+```json
 {
   "Count": 2,
   "Id": "3f5dd8d4-4ee1-4748-8855-56a8a0277bf9",
@@ -121,7 +121,7 @@ You can access all the reviews **containing text** for an item by calling the `G
 
 Players can submit a helpfulness vote for a review by calling the `SubmitItemReviewVote` API. Submitting a new helpfulness vote will increment the `HelpfulnessVotes` counter on the review and also increment `HelpfulPositive` or `HelpfulNegative` depending on the boolean value for the `IsHelpful` parameter.
 
-```csharp
+```json
 {
   "ReviewId": "730de69c-d6af-f313-4653-09fb14bedeef",
   "IsHelpful": true
@@ -132,7 +132,7 @@ Players can submit a helpfulness vote for a review by calling the `SubmitItemRev
 
 Players can report a review by calling the `ReportItemReview` API from a client. A `ReviewId` must be provided. An additional **optional** `ConcernCategory` parameter can be added.
 
-```csharp
+```json
 {
   "ReviewId": "730de69c-d6af-f313-4653-09fb14bedeef",
   "ConcernCategory": "OffensiveContent"
@@ -170,7 +170,7 @@ The following query returns **The total number of reports by ConcernCategory per
 
 You can submit a request to takedown one or more reviews using the `TakedownItemReviews` API. This API can only be called by the **title entity**. The call takes in a set of reviews that is to be taken down.
 
-```csharp
+```json
 {
   "Reviews": [
     {

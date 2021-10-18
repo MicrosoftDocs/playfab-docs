@@ -27,7 +27,7 @@ Players can report an item by calling the `ReportItem` API from a client. An ite
 
 Here is a sample request body:
 
-```csharp
+```json
 {
   "Id": "3f5dd8d4-4ee1-4748-8855-56a8a0277bf9"
   "ConcernCategory": "Profanity",
@@ -79,7 +79,7 @@ You can change the moderation status of a **published** item using the `SetItemM
 
  This API can only be called by the **title entity**. An item `Id` or `AlernateId` and a `Status` must be provided. An **optional** `Reason` free text parameter can also be added. As a service call, that looks something like this:
 
-```csharp
+```json
 {
   "Status": "AwaitingModeration",
   "Reason": "User reports over threshold",
@@ -117,7 +117,7 @@ let TimeRange = ago(3d);
 
 An item can be deleted by calling the `DeleteItem` API. This call will remove an item from the draft catalog and corresponding item from the public catalog (if it has been published). An item `Id` or `AlernateId` must be provided.
 
-```csharp
+```json
 {
   "Id": "852a2d2b-7754-427e-9ad4-fce2b24a4cef"
 }

@@ -46,9 +46,8 @@ A sample response:
                <item metadata> 
             }
         ],
-        "PartialExpandedResults": false,
-        "TotalCount": 10,
-        "ContinuationToken": "MTA="
+      "PartialExpandedResults": false,
+      "ContinuationToken": "MTA="
     }
 }
 ```
@@ -185,7 +184,6 @@ By Default, Search returns a rich set of item metadata:
 - `Keywords` **(NEUTRAL or `Accept-Language` locale)**
 - `ContentType`
 - `Images` **(Thumbnail only)**
-- `Platforms`
 - `Tags`
 - `CreationDate`
 - `LastModifiedDate`
