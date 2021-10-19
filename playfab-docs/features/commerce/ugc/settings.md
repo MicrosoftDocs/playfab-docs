@@ -1,5 +1,5 @@
 ---
-title: SearchItems
+title: UGC Settings
 author: wesjong
 description: Tutorial outlining the settings options for Catalog/UGC
 ms.author: wesjong

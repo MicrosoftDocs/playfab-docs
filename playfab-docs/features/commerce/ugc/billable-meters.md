@@ -1,8 +1,8 @@
 ---
-title: Pricing Meters
-author: tcrawf23
+title: UGC Pricing Meters
+author: wesjong
 description: Describes UGC's billable meters.
-ms.author: timcra
+ms.author: wesjong
 ms.date: 9/13/2021
 ms.topic: article
 ms.prod: playfab
