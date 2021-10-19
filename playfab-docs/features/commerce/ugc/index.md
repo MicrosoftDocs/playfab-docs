@@ -7,7 +7,6 @@ ms.date: 06/17/2021
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, commerce, economy, monetization, ugc
-ROBOTS: NOINDEX, NOFOLLOW
 ms.localizationpriority: medium
 ---
 
@@ -36,3 +35,8 @@ There are a few common terms used throughout the UGC service:
 Before playing around with the UGC features and APIs, there are a few limitations and important considerations you should know about the service:
 * UGC *only* supports PlayFab Entities - you will need to use entity-based authentication to utilize UGC.
 * UGC does not work with the existing PlayFab Economy APIs - it is a separate service built on top of a new Economy system (still in private preview).
+
+## Getting Started
+* The [UGC Quickstart](quickstart.md) guide walks you through the steps of publishing an item
+* The [Publish your first user generated content](publish-ugc.md) tutorial goes over the details of uploading content and populating URL blobs.
+* The [Search Guide](search.md) goes over the different ways you can query your public UGC catalog

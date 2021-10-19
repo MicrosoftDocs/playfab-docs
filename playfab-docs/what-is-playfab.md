@@ -20,7 +20,7 @@ Using PlayFab you can:
 
 * Remove the challenges of building, managing, and running servers at scale with a complete back-end solution.
 * Instantly scale dedicated multiplayer servers that deliver low latency and high reliability for real-time gameplay.
-* Use multiple forms of built-in authentication to track players across devices. 
+* Use multiple forms of built-in authentication to track players across devices.
 * Quickly create leaderboards to more deeply engage players.
 * Accelerate growth with economy services that let you create and track virtual currencies, manage stores of items, and process payments.
 
@@ -106,7 +106,7 @@ PlayFab provides the following services:
 
 **Virtual Economy**: Mint promotional coupons and virtual currencies with support for setting initial balances and optional auto-recharge.
 
-**User-Generated Content**: Empower players to create, upload and search for moderated content.
+**User Generated Content**: Empower players to create, upload and search for moderated content.
 
 **Drop Tables**: Craft attractive bundles for first-time or regular users and stimulate demand with item scarcity.
 

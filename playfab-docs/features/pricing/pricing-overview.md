@@ -26,10 +26,12 @@ ms.localizationpriority: medium
 
 5. **[Party Pricing](https://docs.microsoft.com/gaming/playfab/features/multiplayer/networking/pricing):** Learn about Party pricing when Party is enabled.
 
-6. **[Experiments Pricing](https://docs.microsoft.com/gaming/playfab/features/analytics/experiments/pricing):** Learn about Experiments pricing when used.
+6. **[User Generated Content Pricing](https://docs.microsoft.com/gaming/playfab/features/commerce/ugc/billable-meters):** Learn about User Generated Content (UGC) pricing when UGC is enabled.
 
-7. **[Technical Support](../pricing/paidtechnicalsupport.md):** Access support included in paid account plans.
+7. **[Experiments Pricing](https://docs.microsoft.com/gaming/playfab/features/analytics/experiments/pricing):** Learn about Experiments pricing when used.
 
-8. **[Upgrading Accounts](../pricing/account-upgrades.md):** Upgrade your account plan using the self-serve plans experience in Game Manager.
+8. **[Technical Support](../pricing/paidtechnicalsupport.md):** Access support included in paid account plans.
 
-9. **[Launching Titles](../pricing/title-launches.md):** Launch your titles in Game Manager.
+9. **[Upgrading Accounts](../pricing/account-upgrades.md):** Upgrade your account plan using the self-serve plans experience in Game Manager.
+
+10.  **[Launching Titles](../pricing/title-launches.md):** Launch your titles in Game Manager.

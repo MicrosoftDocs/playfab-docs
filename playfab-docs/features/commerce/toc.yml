@@ -6,3 +6,5 @@
   href: items/toc.yml
 - name: Stores
   href: stores/toc.yml
+- name: User Generated Content
+  href: ugc/toc.yml
