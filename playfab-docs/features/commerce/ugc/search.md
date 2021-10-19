@@ -1,6 +1,6 @@
 ---
-title: SearchItems
-author: tcrawf23
+title: Search
+author: wesjong
 description: Tutorial outlining using the Search API to query published content
 ms.author: thomg
 ms.date: 06/13/2021
