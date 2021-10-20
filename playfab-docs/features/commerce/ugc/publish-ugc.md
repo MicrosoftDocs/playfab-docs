@@ -22,10 +22,12 @@ This tutorial walks you through publishing UGC with content through both APIs an
 * A UGC-enabled title
 
 ## Via APIs
+
 In this section, we will leverage the [Postman Collections](/gaming/playfab/sdks/postman/postman-quickstart) to interact with the PlayFab UGC APIs, but you can leverage any of our [SDKs](/gaming/playfab/sdks/playfab-sdk-intro).
 
 ### Create Blob URLs
 * The UGC system works with the PlayFab Entity Model, so we need to use entity tokens instead of session tickets to call these APIs. You can learn how to get a title entity token in the [Postman Collections Quickstart](/gaming/playfab/sdks/postman/postman-quickstart).
+
 * The UGC system leverages [Azure Blob Storage](/azure/storage/blobs/storage-blobs-introduction) to store all content (files and images) associated with your title's UGC. To upload the content, we first need to call the  `CreateUploadUrls` API, passing in the file names and sizes (in bytes) to create the new blobs. For example, if I wanted to upload a text file and PNG image, I would pass in the following to the request body:
     ```json
     {
