@@ -14,6 +14,15 @@ ms.localizationpriority: medium
 
 PlayFab Party had a significant (up to 90%) price drop on 10/13/2020. You can view the updated Party rates on the [Pricing page](https://playfab.com/pricing). For more information about the price drop, see our [blog post](https://blog.playfab.com/blog/starting-today-save-up-to-90-using-playfab-party).
 
+## 1.7.5
+
+### Bug fixes
+
+- Fixed an issue where some 16kHz microphones were not working.
+- Fixed an issue where microphone permission changes were not handled on Windows.
+- Fixed a memory leak in some `PartyManager::CreateNewNetwork()` failure conditions.
+- Fixed an occasional crash in `PartyLocalEndpoint::GetEndpointStatistics()`.
+
 ## 1.7.0
 
 ### New profiling hooks and chat control indicators
