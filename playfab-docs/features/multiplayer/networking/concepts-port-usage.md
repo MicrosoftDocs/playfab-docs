@@ -26,17 +26,14 @@ If either pattern is blocked, early PlayFab Party API operations or automatic no
 
 For web service request issues, other necessary PlayFab and platform operations outside of Party such as the user login functions would also likely fail. These failures are often caused by local firewall restrictions or proxy requirements for HTTPS connections. Most issues can be resolved by enabling direct, outbound HTTPS communication to cloud web services from the local device or network.
 
-## Domain Names
+## HTTPS Domain Names
 
-Microsoft Azure PlayFab Party performs UDP and HTTPS connections to multiple cloud services. To ensure correct functionality, the following domains need to be accessible:
+Microsoft Azure PlayFab Party performs UDP and HTTPS connections to multiple cloud services. To ensure correct functionality, environments that filter HTTPS traffic based on domain name need to ensure the following names or name patterns are accessible:
 
 HTTPS connectivity:
 * *\*.playfabapi.com*
 * *\*.speech.microsoft.com*
 * *api.cognitive.microsofttranslator.com*
-
-UDP connectivity:
-* *\*.cloudapp.net*
 
 This list of domain names can change without notice. Please ensure to check this list regularly and expect changes.
 
@@ -44,7 +41,7 @@ This list of domain names can change without notice. Please ensure to check this
 
 Azure PlayFab Party automatically performs fragmentation and reassembly to fit large application messages within environmental packet size limits. Some network environments can still cause communication failures despite this functionality.
 
-PlayFab Party currently expects environments to support a Maximum Transmission Unit (MTU) size of at least 1419 bytes to avoid poor performance or potential connectivity failures. This MTU size is supported in typical environments. Virtual Private Networks (VPNs), IPv4 or IPv6 tunneling, or explicit administrative configuration might reduce the MTU size in one or both directions of the network path between the Party client, service, or other clients and impact connectivity.
+PlayFab Party currently expects environments to support a Maximum Transmission Unit (MTU) size of at least 1419 bytes to avoid poor performance or potential connectivity failures. This MTU size is supported in typical environments. Virtual Private Networks (VPNs), IPv4/IPv6 tunneling, or explicit administrative configuration might reduce the MTU size in one or both directions of the network path between the Party client, service, or other clients.
 
 If the MTU supported end-to-end in a given environment is insufficient, the [`PartyManager::ConnectToNetwork`](reference/classes/partymanager/methods/partymanager_connecttonetwork.md) operation may fail with [`PartyStateChangeResult::InternetConnectivityError`](reference/enums/partystatechangeresult.md). Alternatively, connectivity may succeed but the device may encounter additional unnecessary latency, packet loss, or unexpected disconnections.
 
@@ -68,7 +65,11 @@ Microsoft provides weekly updates of an IP address range list for Azure that is 
 
 The supported remote port range that may be in use by Azure PlayFab Party can be any ports other than the Internet Assigned Numbers Authority (IANA) reserved range of 0-1023. Currently transparent cloud relays will only be assigned port numbers from 30000 and above, but Microsoft reserves the right to change this behavior in the future and policies constraining connectivity to this range are not recommended. As a best practice, the port range of 1024-65535 should be used instead. This is particularly important for titles that are using direct peer-to-peer connections for a Party network, since NAT implementations will typically assign ports from this range. Blocking remote ports other than the full recommended range may also prevent direct communication.
 
-Given these relatively large remote IP address and port constraints, and as an alternative to restricting remote destinations, network administrators may wish to instead implement their desired strict communication constraints based on the local source device (e.g., permitting broader access for specific, known devices or applications) or the domain name list below.
+To enable UDP connectivity, environments that filter UDP traffic based on domain name need to ensure the following names or name patterns are accessible:
+
+* *\*.cloudapp.net*
+
+Filtering remote IP addresses for UDP connectivity via domain name resolution is possible but strongly discouraged. Currently all connections to transparent cloud relay servers will resolve names of the form *\*.cloudapp.net*, but this pattern is subject to change without notice. Restricting UDP connectivity to only IP addresses resolved by names will also prevent direct peer-to-peer connection.
 
 ## See also
 
