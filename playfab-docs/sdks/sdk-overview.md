@@ -28,6 +28,9 @@ PlayFab Party SDKs provides networking and voice/text chat communication for gam
 
 PlayFab Multiplayer Game Server SDKs (GSDKs) provide native C++, C#, and Java libraries to help you manage your PlayFab Multiplayer Servers (MPS). For more information, see [Multiplayer Game Server SDKs](../features/multiplayer/servers/server-sdks.md).
 
+> [!Tip]
+> We strongly recommend that you use the latest versions of the SDKs. All SDK versions released in the past 6 months are fully supported unless specified otherwise. For Unreal Engine and Unity plugins, we generally support the latest 2 versions. With each release of the SDKs, we support compatibility with newest partner platform versions. Please reach out to developer support if you have any questions.
+
 ## See also
 
 * [PlayFab Party SDKs](../features/multiplayer/networking/party-sdks.md)
