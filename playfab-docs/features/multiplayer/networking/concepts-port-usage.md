@@ -45,7 +45,7 @@ PlayFab Party currently expects environments to support a Maximum Transmission U
 
 If the MTU supported end-to-end in a given environment is insufficient, the [`PartyManager::ConnectToNetwork`](reference/classes/partymanager/methods/partymanager_connecttonetwork.md) operation may fail with [`PartyStateChangeResult::InternetConnectivityError`](reference/enums/partystatechangeresult.md). Alternatively, connectivity may succeed but the device may encounter additional unnecessary latency, packet loss, or unexpected disconnections.
 
-Some platforms provide tools for end users, developers, or Internet Service Providers to help troubleshoot MTU configuration in their environments and should be used if possible.
+Some platforms provide tools for end users, developers, or Internet Service Providers to help troubleshoot MTU configuration in their environments that should be used if possible.
 
 ## Local device UDP port usage
 
