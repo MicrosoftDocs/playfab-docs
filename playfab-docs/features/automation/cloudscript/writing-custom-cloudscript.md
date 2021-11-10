@@ -1,7 +1,7 @@
 ---
-title: Writing custom CloudScript
+title: Writing custom CloudScript (Legacy)
 author: williacj
-description: Describes how to write CloudScript functions.
+description: Describes how to write CloudScript (Legacy) code.
 ms.author: cjwill
 ms.date: 01/28/2020
 ms.topic: article
@@ -14,10 +14,13 @@ ms.localizationpriority: medium
 
 CloudScript is one of PlayFab's most versatile features. It allows client code to request execution of any kind of custom server-side functionality you can implement, and it can be used in conjunction with virtually *anything*.
 
-This tutorial covers writing your CloudScript functions. Please see the [CloudScript quickstart](quickstart.md) for help in uploading your CloudScript files to your title.
+> [!NOTE]
+> [CloudScript using Azure Functions](../cloudscript-af/quickstart.md) improves on what made CloudScript (Legacy) great with more supported languages and better debugging workflows.
+
+This tutorial covers writing your CloudScript (Legacy) code. Please see the [CloudScript (Legacy) quickstart](quickstart.md) for help in uploading your CloudScript (Legacy) files to your title.
 
 > [!NOTE]
-> This tutorial demonstrates Unity code samples, but CloudScript works similarly for all SDKs.
+> This tutorial demonstrates Unity code samples, but CloudScript (Legacy) works similarly for all SDKs.
 
 Prerequisites for this tutorial:
 
@@ -27,7 +30,7 @@ Prerequisites for this tutorial:
 
 ## Getting started: helloWorld
 
-Our `helloWorld` example works on a brand new title, with no modifications in Game Manager. The default CloudScript file for a new title includes a handler called `helloWorld`. It utilizes a few basic features, input parameters, logging, currentPlayerId, and return parameters.
+Our `helloWorld` example works on a brand new title, with no modifications in Game Manager. The default CloudScript (Legacy) file for a new title includes a handler called `helloWorld`. It utilizes a few basic features, input parameters, logging, currentPlayerId, and return parameters.
 
 The following sample shows the default `helloWorld` function code (minus comments).
 
@@ -46,7 +49,7 @@ handlers.helloWorld = function (args, context) {
 
 ### Deconstruct the code
 
-The handler object is pre-defined in the PlayFab CloudScript environment. You should add any of your CloudScript functions to this object.
+The handler object is pre-defined in the PlayFab CloudScript (Legacy) environment. You should add any of your CloudScript (Legacy) functions to this object.
 
 - `helloWorld` is a function made available to your title and SDKs, because it is defined in the handler object.
 
@@ -55,27 +58,27 @@ The handler object is pre-defined in the PlayFab CloudScript environment. You sh
 See **FunctionParameter** in the next section.
 
 > [!WARNING]
-> You should treat this object as *highly* suspicious. A hacked client or malicious user can provide *any* information here in *any* format.
+> You should treat this object with zero trust. A hacked client or malicious user can provide *any* information here in *any* format.
 
 - `Context` is an advanced parameter. In this example, it is *null*. This parameter is server-controlled and safe.
 
 - `currentPlayerId` is a global variable, which is set to the PlayFabId of the player requesting this call. This parameter is server-controlled and safe. **Note:** When using ExecuteEntityCloudScript API this parameter is null unless the entity has a MasterPlayerID in its entity chain.
 
-- `log.info`: `log` is a global object. It is primarily used for debugging your CloudScript. The `log` object exposes the following methods: `info`, `debug`, and `error`. There are more details later in this tutorial.
+- `log.info`: `log` is a global object. It is primarily used for debugging your CloudScript (Legacy). The `log` object exposes the following methods: `info`, `debug`, and `error`. There are more details later in this tutorial.
 
 - `return`: any object you return is serialized as JSON, and returned to the caller. You may return any JSON serialize-able object with any data you wish.
 
 > [!WARNING]
-> It is your responsibility if your CloudScript returns secret data to your clients. A hacked client or malicious user can examine the returned data, *even* if you don't display it to the user in regular game play.
+> It is your responsibility if your CloudScript (Legacy) returns secret data to your clients. A hacked client or malicious user can examine the returned data, *even* if you don't display it to the user in regular game play.
 
-## Executing CloudScript functions from a Unity game client
+## Executing CloudScript (Legacy) functions from a Unity game client
 
-Calling a CloudScript function from within a client is straightforward. You first have to create an `ExecuteCloudScriptRequest`, and set the `ActionId` property to the name of the CloudScript function you wish to execute (in this case it would be `helloWorld`), then send the object to PlayFab via our API.
+Calling a CloudScript (Legacy) function from within a client is straightforward. You first have to create an `ExecuteCloudScriptRequest`, and set the `ActionId` property to the name of the CloudScript (Legacy) function you wish to execute (in this case it would be `helloWorld`), then send the object to PlayFab via our API.
 
 > [!NOTE]
-> You can only call CloudScript methods attached to the handlers JavaScript object.
+> You can only call CloudScript (Legacy) methods attached to the handlers JavaScript object.
 
-To execute CloudScript methods, you will need the following lines of code in your client.
+To execute CloudScript (Legacy) methods, you will need the following lines of code in your client.
 
 ```csharp
 // Build the request object and access the API
@@ -95,13 +98,13 @@ private static void StartCloudHelloWorld()
 
 [ExecuteCloudScriptRequest](xref:titleid.playfabapi.com.client.server-sidecloudscript.executecloudscript#executecloudscriptrequest) is the request type for any call to [PlayFabClientAPI.ExecuteCloudScript](xref:titleid.playfabapi.com.client.server-sidecloudscript.executecloudscript).
 
-- `ExecuteCloudScriptRequest.FunctionName` is a string. The value should match the name of the function defined in CloudScript. In this case, `helloWorld`.
+- `ExecuteCloudScriptRequest.FunctionName` is a string. The value should match the name of the function defined in CloudScript (Legacy). In this case, `helloWorld`.
 
 - `ExecuteCloudScriptRequest.FunctionParameter` can be any object, able to be serialized to JSON. It becomes the first args parameter in the `helloWorld` function (refer to the args in the previous section).
 
 - `ExecuteCloudScriptRequest.GeneratePlayStreamEvent` is optional. If true, an event will be posted to PlayStream, which you can view in Game Manager, or utilize for other PlayStream triggers.
 
-Depending on the language, the final part of the `ExecuteCloudScript` line involves making the request to the PlayFab CloudScript server, as well as the *Result* and *Error* handling part, specific for the language.
+Depending on the language, the final part of the `ExecuteCloudScript` line involves making the request to the PlayFab CloudScript (Legacy) server, as well as the *Result* and *Error* handling part, specific for the language.
 
 For example, in Unity, JavaScript, or AS3, Error and Result handling is provided using callback functions.
 
@@ -109,11 +112,11 @@ In pure **C#**, however, the SDK allows more succinct code by means of the `asyn
 
 ```csharp
 private static void OnCloudHelloWorld(ExecuteCloudScriptResult result) {
-    // CloudScript returns arbitrary results, so you have to evaluate them one step and one parameter at a time
+    // CloudScript (Legacy) returns arbitrary results, so you have to evaluate them one step and one parameter at a time
     Debug.Log(JsonWrapper.SerializeObject(result.FunctionResult));
     JsonObject jsonResult = (JsonObject)result.FunctionResult;
     object messageValue;
-    jsonResult.TryGetValue("messageValue", out messageValue); // note how "messageValue" directly corresponds to the JSON values set in CloudScript
+    jsonResult.TryGetValue("messageValue", out messageValue); // note how "messageValue" directly corresponds to the JSON values set in CloudScript (Legacy)
     Debug.Log((string)messageValue);
 }
 
@@ -125,35 +128,35 @@ private static void OnErrorShared(PlayFabError error)
 
 ## Intermediate Overview: Globals and advanced arguments
 
-CloudScript is a set of JavaScript functions compiled with V8 and hosted on PlayFab's servers. It has access to any server API listed in the [PlayFab API reference documentation](../../../api-references/index.md), along with a *logger*, the PlayFab ID of the player making the CloudScript request, and any information included with the request, all in the form of preset objects.
+CloudScript (Legacy) is a set of JavaScript functions compiled with V8 and hosted on PlayFab's servers. It has access to any server API listed in the [PlayFab API reference documentation](../../../api-references/index.md), along with a *logger*, the PlayFab ID of the player making the CloudScript (Legacy) request, and any information included with the request, all in the form of preset objects.
 
-CloudScript functions themselves are properties of a global handlers object. The following table shows a complete list of these predefined variables.
+CloudScript (Legacy) functions themselves are properties of a global handlers object. The following table shows a complete list of these predefined variables.
 
-| Name                 | Use                                                                                                  |
-| :------------------- | :----------------------------------------------------------------------------------------------------|
-| **server**               | Has access to all server-side API calls listed in the [PlayFab API reference documentation](../../../api-references/index.md). They can be called (synchronously) like so: `var result = server.AuthenticateUserTicket(request);`                                                                          |
-| **http**                 |Performs synchronous HTTP requests, like so: `http.request(url, method, content, contentType, headers, logRequestAndResponse)`. The `headers` object contains properties corresponding to various headers and their values. `logRequestAndResponse` is a boolean that determines whether the title should log any errors in the request as part of the response.                                                                        |
-| **log**                  | Creates log statements and adds them to the response. Logs have three levels: `log.info()`, `log.debug()`, and `log.error()`. All three levels take a message string, along with an optional object containing extra data to include with the log. For example, `log.info('hello!', { time: new Date() });`   |
-| **currentPlayerId**      | PlayFab ID of the player who triggered the CloudScript call.                                       |
-| **handlers**             | Global object that contains all CloudScript functions for your title. Functions can be added or called through this object. For example, `handlers.pop = function() {};`, `handlers.pop();`.                                                                               |
-| **script**               | Global object that contains `Revision` and `titleId`. `Revision` represents the **Revision Number** for the currently executing CloudScript, and `titleId` represents the ID for the current title.                                                             |
+| Name                | Use                                                                                                                                                                                                                                                                                                                                                              |
+| :------------------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **server**          | Has access to all server-side API calls listed in the [PlayFab API reference documentation](../../../api-references/index.md). They can be called (synchronously) like so: `var result = server.AuthenticateUserTicket(request);`                                                                                                                                |
+| **http**            | Performs synchronous HTTP requests, like so: `http.request(url, method, content, contentType, headers, logRequestAndResponse)`. The `headers` object contains properties corresponding to various headers and their values. `logRequestAndResponse` is a boolean that determines whether the title should log any errors in the request as part of the response. |
+| **log**             | Creates log statements and adds them to the response. Logs have three levels: `log.info()`, `log.debug()`, and `log.error()`. All three levels take a message string, along with an optional object containing extra data to include with the log. For example, `log.info('hello!', { time: new Date() });`                                                      |
+| **currentPlayerId** | PlayFab ID of the player who triggered the CloudScript (Legacy) call.                                                                                                                                                                                                                                                                                            |
+| **handlers**        | Global object that contains all CloudScript (Legacy) functions for your title. Functions can be added or called through this object. For example, `handlers.pop = function() {};`, `handlers.pop();`.                                                                                                                                                            |
+| **script**          | Global object that contains `Revision` and `titleId`. `Revision` represents the **Revision Number** for the currently executing CloudScript (Legacy), and `titleId` represents the ID for the current title.                                                                                                                                                     |
 
 In addition, all handler functions are passed two parameters, detailed below.
 
-| Name                 | Use                                                                                                  |
-| :------------------- | :----------------------------------------------------------------------------------------------------|
-| **args**                 | First parameter to a handler function. An object representation of the `FunctionParameter` field of an `ExecuteCloudscript` request. |
-| **context**              | Second parameter to a handler function. Additional information about the request when it is triggered by a PlayStream event action, including the [data from the event](../../../api-references/events/index.md) that triggered the action (context.playStreamEvent) and the [profile data](xref:titleid.playfabapi.com.client.accountmanagement.getplayerprofile#playerprofilemodel) for the player associated with it. (context.playerProfile)                                     |
+| Name        | Use                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| :---------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **args**    | First parameter to a handler function. An object representation of the `FunctionParameter` field of an `ExecuteCloudscript` request.                                                                                                                                                                                                                                                                                                             |
+| **context** | Second parameter to a handler function. Additional information about the request when it is triggered by a PlayStream event action, including the [data from the event](../../../api-references/events/index.md) that triggered the action (context.playStreamEvent) and the [profile data](xref:titleid.playfabapi.com.client.accountmanagement.getplayerprofile#playerprofilemodel) for the player associated with it. (context.playerProfile) |
 
-CloudScript functions can be called through the `ExecuteCloudScript` API, or by a preset PlayStream event action.
+CloudScript (Legacy) functions can be called through the `ExecuteCloudScript` API, or by a preset PlayStream event action.
 
 Full details about the response to `ExecuteCloudScript` can be found in the [ExecuteCloudScriptResult](xref:titleid.playfabapi.com.client.server-sidecloudscript.executecloudscript#executecloudscriptresult).
 
 ## Intermediate: FunctionParameter and args
 
-In the previous section, we described how to populate the `request.FunctionParameter`, and view that info in the `args` parameter. The [CloudScript quickstart](quickstart.md) demonstrates how to upload new CloudScript.
+In the previous section, we described how to populate the `request.FunctionParameter`, and view that info in the `args` parameter. The [CloudScript quickstart](quickstart.md) demonstrates how to upload new CloudScript (Legacy).
 
- Putting both together, we can provide another example of how to pass arguments from client to CloudScript. Take the previous example, and modify the CloudScript code and your client code as shown below.
+ Putting both together, we can provide another example of how to pass arguments from client to CloudScript (Legacy). Take the previous example, and modify the CloudScript (Legacy) code and your client code as shown below.
 
 ```javascript
 handlers.helloWorld = function (args) {
@@ -177,11 +180,11 @@ private static void StartCloudHelloWorld()
 }
 
 private static void OnCloudHelloWorld(ExecuteCloudScriptResult result) {
-    // CloudScript returns arbitrary results, so you have to evaluate them one step and one parameter at a time
+    // CloudScript (Legacy) returns arbitrary results, so you have to evaluate them one step and one parameter at a time
     Debug.Log(JsonWrapper.SerializeObject(result.FunctionResult));
     JsonObject jsonResult = (JsonObject)result.FunctionResult;
     object messageValue;
-    jsonResult.TryGetValue("messageValue", out messageValue); // note how "messageValue" directly corresponds to the JSON values set in CloudScript
+    jsonResult.TryGetValue("messageValue", out messageValue); // note how "messageValue" directly corresponds to the JSON values set in CloudScript (Legacy)
     Debug.Log((string)messageValue);
 }
 
@@ -191,7 +194,7 @@ private static void OnErrorShared(PlayFabError error)
 }
 ```
 
-After making these changes, you can now easily send and receive data between CloudScript and your clients.
+After making these changes, you can now easily send and receive data between CloudScript (Legacy) and your clients.
 
 > [!NOTE]
 > It is important to point out that any data coming from your clients is susceptible to hacking and exploitation.
@@ -200,7 +203,7 @@ You will always want to validate input parameters *prior* to updating your back 
 
 ## Intermediate: Calling the server APIs
 
-As mentioned before, within CloudScript methods, you have access to the full set of Server API calls. This enables your cloud code to act as a dedicated server.
+As mentioned before, within CloudScript (Legacy) methods, you have access to the full set of Server API calls. This enables your cloud code to act as a dedicated server.
 
 Common server tasks:
 
@@ -211,10 +214,10 @@ Common server tasks:
 
 See the Server APIs listed in our [PlayFab API Reference documentation](../../../api-references/index.md) for required parameters and object structures.
 
-The following example is from within a potential CloudScript handler.
+The following example is from within a potential CloudScript (Legacy) handler.
 
 ```javascript
-// CloudScript (JavaScript)
+// CloudScript (Legacy) (JavaScript)
 //See: JSON.parse, JSON.stringify, parseInt and other built-in javascript helper functions for manipulating data
 var currentState; // here we are calculating the current player's game state
 
@@ -244,7 +247,7 @@ else
 
 ## Advanced: PlayStream event action
 
-The other way to call a CloudScript function is as a PlayStream event action.
+The other way to call a CloudScript (Legacy) function is as a PlayStream event action.
 
 1. In any browser:
    - Visit the **PlayFab Game Manager**.
@@ -258,7 +261,7 @@ The page will look like the example provided below.
 
 2. Use the **New Action** button to create a new action.
    - Give the new **Action** a name.
-   - To make the **Action** trigger a CloudScript function, add an **Action** with the button in that section.
+   - To make the **Action** trigger a CloudScript (Legacy) function, add an **Action** with the button in that section.
    - Then select the option in the **Type** drop-down menu.
    - Select the **helloWorld** function in the **CloudScript function** drop-down menu.
    - Select the **Save Action** button.
@@ -269,23 +272,26 @@ The page will look like the example provided below.
    - Check the **Publish results as PlayStream Event** box.
    - Save the **Action**.
    - Then trigger an event.
-   - In the **PlayStream Debugger**, a new event that corresponds to the CloudScript execution should be present which contains the appropriate information.
+   - In the **PlayStream Debugger**, a new event that corresponds to the CloudScript (Legacy) execution should be present which contains the appropriate information.
    - For more information on checking a PlayStream event in the debugger, see the following section [Advanced: Debugging CloudScript](#advanced-debugging-cloudscript).
 
    > [!NOTE]
-   > Event actions can only use the live revision when calling CloudScript functions. If you cannot find the **helloWorld** function in the drop-down, this is the most likely reason.
+   > Event actions can only use the live revision when calling CloudScript (Legacy) functions. If you cannot find the **helloWorld** function in the drop-down, this is the most likely reason.
 
-## Advanced: Debugging CloudScript
+## Advanced: Debugging CloudScript (Legacy)
+
+> [!NOTE]
+> Debugging is much easier with [CloudScript using Azure Functions](../cloudscript-af/index.md). We recommend migrating for access to great features like [local debugging for CloudScript](../cloudscript-af/local-debugging-for-cloudscript-using-azure-functions.md)
 
 ### Logging
 
-One of the most important tools for debugging code is *logging*. Our CloudScript provides a utility for performing the function.
+One of the most important tools for debugging code is *logging*. Our CloudScript (Legacy) provides a utility for performing the function.
 
 This takes the form of the `log` object, which can log any message desired using the `Info`, `Debug`, and `Error` methods.
 
 Additionally, the HTTP object will log any errors it comes across while making requests by setting the `logRequestAndResponse` parameter. While setting these logs up is simple, accessing them takes *a bit* of finesse.
 
-Here is an example of a CloudScript function that uses all 4 types of logs.
+Here is an example of a CloudScript (Legacy) function that uses all 4 types of logs.
 
 ```javascript
 handlers.logTest = function(args, context) {
@@ -320,7 +326,7 @@ void RunLogTest() {
 // Logs evaluated in next code block
 ```
 
-Setting `GeneratePlayStreamEvent` makes the CloudScript function call generate a PlayStream event, which includes the contents of the response. To find the contents of a PlayStream event:
+Setting `GeneratePlayStreamEvent` makes the CloudScript (Legacy) function call generate a PlayStream event, which includes the contents of the response. To find the contents of a PlayStream event:
 
 - Go to either the **Game Manager** home page for your **Title** or its **PlayStream** tab.
 - The **PlayStream Debugger** will display events as they come in.
@@ -334,7 +340,7 @@ Selecting this will display the raw JSON of the event, which is detailed for eac
 
    ![Game Manager - PlayStream - JSON event log](media/tutorials/game-manager-playstream-json-event-log.png)  
 
-The result of an `ExecuteCloudScript` call includes a field called `Logs`, which is a list of log objects generated by the CloudScript function.
+The result of an `ExecuteCloudScript` call includes a field called `Logs`, which is a list of log objects generated by the CloudScript (Legacy) function.
 
 You can see the three log calls, as well as the log from the invalid HTTP request. The HTTP request log also makes use of the `Data` field, unlike the log calls.
 
@@ -386,7 +392,7 @@ If this code is run, the output should indicate the presence of the error. Reali
 
 ## Advanced: Errors
 
-In development, CloudScript Errors will often not be manually triggered - as in the case of `log.error`.
+In development, CloudScript (Legacy) errors will often not be manually triggered - as in the case of `log.error`.
 
 Fortunately, the response to [ExecuteCloudScript](xref:titleid.playfabapi.com.client.server-sidecloudscript.executecloudscript) contains an [ExecuteCloudScriptResult](xref:titleid.playfabapi.com.client.server-sidecloudscript.executecloudscript#executecloudscriptresult) which includes a [ScriptExecutionError](xref:titleid.playfabapi.com.client.server-sidecloudscript.executecloudscript#scriptexecutionerror) field. Adapting the last example from the logging section, we might use it as shown below.
 
