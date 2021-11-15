@@ -3,7 +3,7 @@ title: PlayFab Roadmap
 author: thomasgu
 description: PlayFab Roadmap
 ms.author: thomg
-ms.date: 07/30/2021
+ms.date: 11/15/2021
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, roadmap, features, development
@@ -13,44 +13,40 @@ ms.localizationpriority: medium
 
 # Azure PlayFab roadmap
 
-_Last Update: 07/30/2021_
+_Last Update: 11/15/2021_
 
-Below are the latest roadmap updates for PlayFab. As always, we welcome your feedback. The [Feature Requests](https://community.playfab.com/spaces/24/index.html?sort=votes) section of our forum allows you to post, comment, and vote on ideas from our community. Addressing issues also remains a high priority so please continue to share your findings in the [Bugs](https://community.playfab.com/spaces/23/index.html) section of our forums. And as always, thank you for your continued support!
+Happy November! Below are the latest roadmap updates for PlayFab. As always, we welcome your feedback. The [Feature Requests](https://community.playfab.com/spaces/24/index.html?sort=votes) section of our forum allows you to post, comment, and vote on ideas from our community. Addressing issues also remains a high priority so please continue to share your findings in the [Bugs](https://community.playfab.com/spaces/23/index.html) section of our forums. And as always, thank you for your continued support!
 
 We’re committed to being more open about our roadmap so that you can count on PlayFab to support your games in development and operation, but the realities of software development may shift or change the features and/or the timing that are in this roadmap update. While this update reflects our current planning, features and timelines may change. 
 
 We also love hearing from game creators that are using PlayFab for their current or in development titles, so if you see something on this roadmap that is critical to your success or that you want more information on please let us know!
 
-## What’s New (since our last update in April):
+## What’s New (since our last update in August):
 
-We’ve made several updates in PlayFab Multiplayer Services and in GameManager over the last quarter that we want to call out:
+We shipped our User Generated Content Service (UGC for short) into [Public Preview](https://developer.microsoft.com/games/blog/announcing-azure-playfab-user-generated-content/). Long in Beta, UGC is designed to help you jumpstart a creator community within your game, empowering your player base to create, share, and discover content. As the tech powering titles like Minecraft and Microsoft Flight Simulator, Azure PlayFab UGC has been one of our most highly anticipated services. We want to thank the incredible feedback from all our extremely patient private preview partners, and we’re thrilled to finally open this solution to the entire PlayFab community.   
 
-- To help you estimate your PlayFab Multiplayer Services usage and costs, we now have an [MPS calculator](https://playfab.com/mps-calculator/) available to help you estimate your monthly charges. This works much like the [Party cost estimator](https://playfab.com/party-calculator/) and is available from our [main pricing page](https://playfab.com/pricing/).
-- Late in March the Multiplayer Servers new build page added a number of new features, including UI for enabling process based servers, adding or deleting existing game server assets, enabling read-only assets and enabling streaming asset downloads. 
-- Also in March the Game Manager experience for PlayFab Multiplayer Servers (MPS) was updated to clarify free usage scenarios in evaluation mode, as well as the projected costs for running servers outside the free usage. If you want to know more about the free usage tier please refer to our [Billing for PlayFab Multiplayer Servers 2.0](https://docs.microsoft.com/gaming/playfab/features/multiplayer/servers/billing-for-thunderhead) documentation.
-- We revamped and updated our quick-start documentation for MPS in Game Manager. Check out the [getting started documentation](https://docs.microsoft.com/gaming/playfab/features/multiplayer/mpintro) under PlayFab Multiplayer. 
+You can read more about UGC here: [https://docs.microsoft.com/gaming/playfab/features/commerce/ugc/](https://docs.microsoft.com/gaming/playfab/features/commerce/ugc/) and if you have any feedback please make sure to share your thoughts and issues with us on the PlayFab channel of our [Game Stack Discord](https://discord.com/invite/gamestack). 
 
-Over the last year we migrated PlayStream (our gaming event pipeline) to a modernized cloud native architecture with fully managed Azure Services. Now, PlayStream is powered by [Azure Kubernetes Service](https://azure.microsoft.com/services/kubernetes-service/), [Event Hubs](https://azure.microsoft.com/services/event-hubs/) and [Cosmos DB](https://azure.microsoft.com/services/cosmos-db/). Modernizing our architecture isn’t the usual thing we hype on our roadmap, but in this case, it’s allowing us to bring key savings and increased reliability to you, our customers. You can read more about our journey in this article: [PlayFab’s PlayStream now powered by Azure](https://blog.playfab.com/blog/playfabs-playstream-bids-farewell-to-aws-now-powered-by-azure).
+There have also been several updates to Multi-Player Services, including:   
 
-We added a few new tutorials to Game Manager:
-- Wrapping GSDK support for Linux (see [documentation](https://docs.microsoft.com/gaming/playfab/features/multiplayer/servers/create-your-first-server) and [GitHub repo](https://github.com/PlayFab/MpsSamples/tree/master/MpsAllocatorSample)
-- Test runner utility for easy calls to MPS APIs (see [documentation](https://docs.microsoft.com/gaming/playfab/features/multiplayer/servers/mps-allocator-sample) and [GitHub repo](https://github.com/PlayFab/MpsSamples/tree/master/MpsAllocatorSample))
+- Updates to our [Unreal Plugin](https://github.com/PlayFab/gsdk/tree/master/UnrealPlugin)  
+- There is a new Unreal sample and a tutorial on utilizing the GSDK: [https://github.com/PlayFab/MpsSamples/tree/master/UnrealThirdPersonMP](https://github.com/PlayFab/MpsSamples/tree/master/UnrealThirdPersonMP)
+- We have updated our documentation around MPS builds overview: [https://docs.microsoft.com/gaming/playfab/features/multiplayer/servers/build-overview](https://docs.microsoft.com/gaming/playfab/features/multiplayer/servers/build-overview)
+- We published a preview of a developer tool kit that enables you to run Linux game servers that use the [PlayFab Game Server SDK (GSDK)](https://github.com/PlayFab/gsdk) on a Kubernetes cluster.  Visit https://github.com/playfab/thundernetes for more information. 
+- A redesigned server page supports a server lookup facility to query active game servers by server ID, session ID or connected players.  Returned servers allow easy access to VM level metrics, remote connections, archived logs and server allocations or shutdowns.  To access the updated server pages, select the servers tab from any game server build. 
 
-We’ve been working on a few community events;  [Game Stack Live](https://developer.microsoft.com/games/events/game-stack-live/) was in April and we recorded and made available on demand all of our PlayFab specific talks:
-- Using PlayFab Party to Integrate Networking and Voice Into Your Game: https://www.youtube.com/watch?v=z40-nBJsc74
-- Case Study: How Minecraft Ported Realms to Azure: https://www.youtube.com/watch?v=BnQUfat6x1Q
-- PlayFab Multiplayer Hosted Servers part 1: Multiplayer Servers Quick Start: https://www.youtube.com/watch?v=kj2TcMlvWgk 
-- PlayFab Multiplayer Hosted Servers part 2: Foundations for Scaling Game Server Resources: https://www.youtube.com/watch?v=Jj5kVCUmvlY 
-- Case Study: How Flight Sim Built a Cloud-native Living World Thanks to Azure: https://www.youtube.com/watch?v=da_7LGxWKMM
+We specifically want to call out thanks to Stefan Krismann (stkrwork) who helped contribute to putting the unreal plugin into preview: https://github.com/PlayFab/gsdk/tree/master/UnrealPlugin  
 
-Our newest addition to the suite of PlayFab Party inclusiveness features is [Party Text Moderation](https://docs.microsoft.com/gaming/playfab/features/multiplayer/networking/concepts-text-moderation)! With moderation, you can significantly reduce bullying and toxicity in your gaming community and increase average playtime and player retention. Turning on Party Text Moderation only requires one line of code! 
+The latest version of our Multiplayer Servers has been in production for some time, and so we are in the process of sunsetting our older legacy Servers – you can read more about the process and transition here: https://blog.playfab.com/blog/playfab-sunsetting-legacy-multiplayer-servers   
+
+Finally - if you are using Perforce and Azure you should take a close look at the tools that have been released for Game Creators: https://blog.playfab.com/blog/perforce-development-tools-and-services-available-on-azure   
 
 ## What's In-Progress
 
-Here are some of our active areas of development. The following list is a peek into our PlayFab roadmap, identifying the most significant features we are currently working on. While not comprehensive, this list is intended to provide visibility into our key investments. Note that while these features and dates are plan of record at time of posting, availability is subject to change.
+Here are some of our active areas of development. The following list is a peek into our PlayFab roadmap, identifying the most significant features we are currently working on. While not comprehensive, this list is intended to provide visibility into our key investments. Note that while these features and dates are plan of record at time of posting, availability is subject to change. 
 
 Today we have a few major services in preview:
-1. **Azure Functions Integration** – This is a replacement to our current cloudscript solution. [CloudScript using Azure Functions](../features/automation/cloudscript-af/index.md) brings support for [new languages](/azure/azure-functions/supported-languages) (including C#) as well as local debugging in Visual Studio and Visual Studio Code. Azure Functions is in Public Preview.
+1. **CloudScript using Azure Functions releasing out of preview** – [CloudScript Functions](https://docs.microsoft.com/gaming/playfab/features/automation/cloudscript-af/) brings support for [new languages](https://docs.microsoft.com/azure/azure-functions/supported-languages) (including C#) as well as local debugging in Visual Studio and Visual Studio Code. CloudScript Functions is exiting preview for a full release soon.
 1. **User Generated Content (UGC)** – After feedback with private preview customers, we are working on cleaning up and preparing our Economy v2 APIs for Public Preview, starting with UGC. UGC is slated for Public Preview very soon (September).
 1. **PlayFab Matchmaking** – This is available in [Public Preview](../features/multiplayer/matchmaking/index.md) right now, and is designed to help you better match players together based on stats and player attributes. Check it out today!
 1. **Event Sampling** - Is now available in private preview, allowing you to finely control PlayStream and telemetry ingestion for more granular control and cost savings. If you are interested in looking more closely at Event Sampling, please reach out to your account manager, or contact us at myplayfabam@microsoft.com 
@@ -59,12 +55,13 @@ PlayFab provides updates and new features in the form of preview programs to giv
 
 ## What's On-Deck
 
-- PlayFab Matchmaking - We are working on adding real time notifications to avoid polling the ticket status as well as integration with a new Lobby feature, targeting private preview later this year.
-- Lobby – A new feature that allows for temporary grouping of players for the purpose of orchestrating multiplayer experiences, including searching for available lobbies to join. It includes member properties, as well as lobby and search properties to use for gameplay coordination. Targeting private preview later this year.
-- Leaderboards v2 – We mentioned last update that, although Leaderboards v2 is in private preview with select customers, we chose to prioritize other more critical feature areas based on feedback near term. We still plan to re-engage in the development of Stats & Leaderboards v2 in early 2022.
-- Economy V2 - The rest of the Economy v2 - including player inventories and wallets, receipt validation on the most popular marketplaces, bundles, stores, and more - are targeted to release into public preview Spring 2022.
+- BYO Data Storage – We will be introducing the ability to write PlayStream and telemetry events to your own storage account. 
+- PlayFab Matchmaking - We are working on adding real time notifications to avoid polling the ticket status as well as integration with a new Lobby feature, targeting private preview later this year. 
+- Lobby – A new feature that allows for temporary grouping of players for the purpose of orchestrating multiplayer experiences, including searching for available lobbies to join. It includes member properties, as well as lobby and search properties to use for gameplay coordination. Targeting private preview later this year. 
+- Leaderboards v2 – We mentioned last update that, although Leaderboards v2 is in private preview with select customers, we chose to prioritize other more critical feature areas based on feedback near term. We still plan to re-engage in the development of Stats & Leaderboards v2 in early 2022. 
+- Economy V2 - The rest of the Economy v2 - including player inventories and wallets, receipt validation on the most popular marketplaces, bundles, stores, and more - are targeted to release into public preview Spring 2022. 
 - Segmentation – As we continue to support segments, we will be making it easier to define segments comprising fixed list of players. 
-- Experimentation – As we continue to establish Experiments as the service to validate and roll-out your game experiences, we will be working to introduce flexibility on scorecard generation using your compute account and preferred cadence, along with giving the control of raw scorecard data in your choice of data store.
-- BYO Data Storage –  We will be introducing the ability to write Playstream and telemetry events to your own storage account.
+
+Finally, PlayFab Leadership is hosting a series of ‘Outside-In’ sessions where we have customers come meet with our team to help us understand your needs and goals. If you are interested in participating, please reach out to us at :PFOutsideInRequest@microsoft.com  
 
 Thank you to all our amazing game creators building with PlayFab today. None of this would be possible without you. Please keep the feedback coming! 
