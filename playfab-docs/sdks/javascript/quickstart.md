@@ -61,7 +61,7 @@ In your favorite text-editor, update the contents of `PlayFabGettingStarted.html
 </html>
 ```
 
-In your favorite text-editor, update the contents of `PlayFabGettingStarted.html` as follows:
+In your favorite text-editor, update the contents of `PlayFabGettingStarted.js` as follows:
 
 ```javascript
 function DoExampleLoginWithCustomID(){
