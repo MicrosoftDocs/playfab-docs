@@ -58,6 +58,8 @@
     href: directly-debugging-game-servers.md
   - name: Locally debugging game servers and integration
     href: locally-debugging-game-servers-and-integration-with-playfab.md
+  - name: Attaching a profiler
+    href: attaching-a-profiler.md
 - name: Scaling game servers
   items:
   - name: Scaling Standby
