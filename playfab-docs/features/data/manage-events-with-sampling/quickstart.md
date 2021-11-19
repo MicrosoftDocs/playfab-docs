@@ -46,4 +46,5 @@ The overview (landing) page displays the sampled events pane. You can **manage e
 
 To **remove the sampling** for any sampled event(s), modify the Sample Rate box with a 100% entry and select the persist button.
 
+
 ![Screenshot of Modify Sampling of Events](media/modify-event-sampling.png "Modify Events' Sampling Rate")
