@@ -25,8 +25,8 @@ Sampling leads to a reduction of the volume of the total event, particularly ben
 - Uncompromised validation of the data format, statistical calculations, and other analysis without any loss of data fidelity 
 
 ### Sampling Ratio
-The sampling ratio is the probability percentage of any event being included in the sample result set. It ranges from 0% to 100%. By default, event sampling is not active, meaning the sampling rate is set to 0%, and every event of the title is ingested and stored into the title tenant database.
 
+The sampling ratio is the probability percentage of any event being included in the sample result set. It ranges from 0% to 100%. By default, event sampling is not active, meaning the sampling rate is set to 100%, and every event of the title is ingested and stored into the title tenant database.
 
 ![Screenshot of Manage Events Overview](media/sampling-overview.png "Manage Events with Samomg") 
 
@@ -36,4 +36,4 @@ For statistical true data analysis, examined the data by ensuring a correlated s
 When you calculate statistics using a sample set of events, the statistical values will not be accurate. To get the most accurate statistical value approximation, you must scale the values to the corelated sampling ratio. Because when you use sampling, the returned set is not the complete set of all of the events. 
 
 > [!Note]
-> Commands for statistical calculations that might be difficult to interpret when event sampling is used, like, count, summarize, max, min, etc. 
+> Commands for statistical calculations that might be difficult to interpret when event sampling is used, like count, summarize, max, min, and more. 
