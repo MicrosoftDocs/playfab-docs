@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 To take advantage of sampling using our Manage Events page, configure a sampling percentage on individual event levels. When you specify a sampling percentage on a certain event, sampling comes into effect by overriding the default or existing value and remains in effect until you change it. The percentage specified in the sample ratio field is the percentage of events that will be filtered out.  
 
-The sampling rate can be as high as 100% and as low as 0%. 
+The sampling rate can be as high as 100% and as low as 0%. By default, the sampling rate for all events is 100%, thus, leading to 100% event retention in the sample set. 
 
 > [!Note]
 > Sampling comes into play after all the events are processed by the PlayStream rules engine. So, all events will support actions/ rules, if specified and independent of sampling.
@@ -30,7 +30,7 @@ You can configure the sampling ratio on both PlayStream and Custom events from t
     *	Select the **Event Namespace** from the drop-down of the **Add Sample Rate** windowpane
     *	Then, select the **Event Name** from the drop-down
          * The Event Name dropdown contains the comprehensive list of events that are applicable for event sampling and are yet to have any sampling configuration
-- Enter a whole number as the desired **Sample Rate** which ranges between 1% to 100% 
+- Enter a whole number as the desired **Sample Rate** which ranges between 0% to 100% 
 - Select **Save**, the event sampling is configured
     *	The configured event will show up in a new pane known as **Sampled Events**, just above the **Add Sample Rate** pane
          * The Sampled Events overview pane shows all the configured **Event Name** with a categorization of **Event Namespace**, **Category** stating if it’s a standard PlayStream event or custom event, along with the configured **Sample Rate**
@@ -44,6 +44,6 @@ You can configure the sampling ratio on both PlayStream and Custom events from t
 
 The overview (landing) page displays the sampled events pane. You can **manage events** by **selecting the Sample Rate box and modifying it as desired**. The options to modify appear on hover over any event. To persist the change, select __save__ button, and to revert the change, select the __cancel__ button. 
 
-To **remove the sampling** for any sampled event(s), modify the Sample Rate box with a 0% entry and select the persist button.
+To **remove the sampling** for any sampled event(s), modify the Sample Rate box with a 100% entry and select the persist button.
 
 ![Screenshot of Modify Sampling of Events](media/modify-event-sampling.png "Modify Events' Sampling Rate")
