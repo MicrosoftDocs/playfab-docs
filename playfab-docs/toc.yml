@@ -39,10 +39,22 @@
   href: roadmap/toc.yml
 - name: Release notes
   href: release-notes/toc.yml
-- name: API references
+- name: Reference
   href: api-references/toc.yml
 - name: SDKs
-  href: sdks/toc.yml
+  items:
+  - name: Overview
+    href: sdks/sdk-overview.md
+  - name: Request access
+    href: features/multiplayer/networking/request-access-for-sdks-samples.md
+  - name: Lobby and Matchmaking SDKs
+    href: features/multiplayer/lobby/lobby-sdks/toc.yml
+  - name: Multiplayer Server SDKs
+    href: features/multiplayer/servers/server-sdks.md
+  - name: Party SDKs
+    href: features/multiplayer/networking/party-sdks/toc.yml
+  - name: PlayFab SDKs
+    href: sdks/toc.yml
 - name: Recipes and samples
   href: resources/toc.yml
 - name: Tools and utilities

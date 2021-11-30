@@ -6,5 +6,7 @@
   href: servers/toc.yml
 - name: Matchmaking
   href: matchmaking/toc.yml
+- name: Lobby
+  href: lobby/toc.yml
 - name: Party
   href: networking/toc.yml

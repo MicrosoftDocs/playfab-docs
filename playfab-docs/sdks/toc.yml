@@ -1,6 +1,4 @@
-- name: SDK overview
-  href: sdk-overview.md
-- name: PlayFab SDK
+- name: Overview
   href: playfab-sdk-intro.md
 - name: Languages
   href: languages/index.yml

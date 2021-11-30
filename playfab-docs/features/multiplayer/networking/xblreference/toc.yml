@@ -1,0 +1,109 @@
+- name: Overview
+  href: partyxboxlive_members.md
+- name: Classes
+  items:
+  - name: PartyXblChatUser
+    href: classes/PartyXblChatUser/partyxblchatuser.md
+    items:
+    - name: Methods
+      items:
+      - name: GetLocal
+        href: classes/PartyXblChatUser/methods/partyxblchatuser_getlocal.md
+      - name: GetXboxUserId
+        href: classes/PartyXblChatUser/methods/partyxblchatuser_getxboxuserid.md
+      - name: GetCustomContext
+        href: classes/PartyXblChatUser/methods/partyxblchatuser_getcustomcontext.md
+      - name: SetCustomContext
+        href: classes/PartyXblChatUser/methods/partyxblchatuser_setcustomcontext.md
+  - name: PartyXblLocalChatUser
+    href: classes/PartyXblLocalChatUser/partyxbllocalchatuser.md
+    items:
+    - name: Methods
+      items:
+      - name: GetAccessibilitySettings
+        href: classes/PartyXblLocalChatUser/methods/partyxbllocalchatuser_getaccessibilitysettings.md
+      - name: GetRequiredChatPermissionInfo
+        href: classes/PartyXblLocalChatUser/methods/partyxbllocalchatuser_getrequiredchatpermissioninfo.md
+      - name: GetCrossNetworkCommunicationPrivacySetting
+        href: classes/PartyXblLocalChatUser/methods/partyxbllocalchatuser_getcrossnetworkcommunicationprivacysetting.md
+  - name: PartyXblManager
+    href: classes/PartyXblManager/partyxblmanager.md
+    items:
+    - name: Methods
+      items:
+      - name: GetSingleton
+        href: classes/PartyXblManager/methods/partyxblmanager_getsingleton.md
+      - name: GetErrorMessage
+        href: classes/PartyXblManager/methods/partyxblmanager_geterrormessage.md
+      - name: SetMemoryCallbacks
+        href: classes/PartyXblManager/methods/partyxblmanager_setmemorycallbacks.md
+      - name: GetMemoryCallbacks
+        href: classes/PartyXblManager/methods/partyxblmanager_getmemorycallbacks.md
+      - name: SetThreadAffinityMask
+        href: classes/PartyXblManager/methods/partyxblmanager_setthreadaffinitymask.md
+      - name: GetThreadAffinityMask
+        href: classes/PartyXblManager/methods/partyxblmanager_getthreadaffinitymask.md
+      - name: Initialize
+        href: classes/PartyXblManager/methods/partyxblmanager_initialize.md
+      - name: Cleanup
+        href: classes/PartyXblManager/methods/partyxblmanager_cleanup.md
+      - name: StartProcessingStateChanges
+        href: classes/PartyXblManager/methods/partyxblmanager_startprocessingstatechanges.md
+      - name: FinishProcessingStateChanges
+        href: classes/PartyXblManager/methods/partyxblmanager_finishprocessingstatechanges.md
+      - name: CompleteGetTokenAndSignatureRequest
+        href: classes/PartyXblManager/methods/partyxblmanager_completegettokenandsignaturerequest.md
+      - name: CreateLocalChatUser
+        href: classes/PartyXblManager/methods/partyxblmanager_createlocalchatuser.md
+      - name: CreateRemoteChatUser
+        href: classes/PartyXblManager/methods/partyxblmanager_createremotechatuser.md
+      - name: DestroyChatUser
+        href: classes/PartyXblManager/methods/partyxblmanager_destroychatuser.md
+      - name: GetChatUsers
+        href: classes/PartyXblManager/methods/partyxblmanager_getchatusers.md
+      - name: LoginToPlayFab
+        href: classes/PartyXblManager/methods/partyxblmanager_logintoplayfab.md
+      - name: GetEntityIdsFromXboxLiveUserIds
+        href: classes/PartyXblManager/methods/partyxblmanager_getentityidsfromxboxliveuserids.md
+- name: Structures
+  items:
+  - name: PartyXblAccessibilitySettings
+    href: structs/partyxblaccessibilitysettings.md
+  - name: PartyXblChatPermissionInfo
+    href: structs/partyxblchatpermissioninfo.md
+  - name: PartyXblHttpHeader
+    href: structs/partyxblhttpheader.md
+  - name: PartyXblXboxUserIdToPlayFabEntityIdMapping
+    href: structs/partyxblxboxuseridtoplayfabentityidmapping.md
+- name: State changes
+  items:
+  - name: PartyXblCreateLocalChatUserCompletedStateChange
+    href: structs/partyxblcreatelocalchatusercompletedstatechange.md
+  - name: PartyXblGetEntityIdsFromXboxLiveUserIdsCompletedStateChange
+    href: structs/partyxblgetentityidsfromxboxliveuseridscompletedstatechange.md
+  - name: PartyXblLocalChatUserDestroyedStateChange
+    href: structs/partyxbllocalchatuserdestroyedstatechange.md
+  - name: PartyXblLoginToPlayFabCompletedStateChange
+    href: structs/partyxbllogintoplayfabcompletedstatechange.md
+  - name: PartyXblRequiredChatPermissionInfoChangedStateChange
+    href: structs/partyxblrequiredchatpermissioninfochangedstatechange.md
+  - name: PartyXblStateChange
+    href: structs/partyxblstatechange.md
+  - name: PartyXblTokenAndSignatureRequestedStateChange
+    href: structs/partyxbltokenandsignaturerequestedstatechange.md
+- name: Enumerations
+  items:
+  - name: PartyXblChatPermissionMaskReason
+    href: enums/partyxblchatpermissionmaskreason.md
+  - name: PartyXblCrossNetworkCommunicationPrivacySetting
+    href: enums/partyxblcrossnetworkcommunicationprivacysetting.md
+  - name: PartyXblLocalChatUserDestroyedReason
+    href: enums/partyxbllocalchatuserdestroyedreason.md
+  - name: PartyXblStateChangeResult
+    href: enums/partyxblstatechangeresult.md
+  - name: PartyXblStateChangeType
+    href: enums/partyxblstatechangetype.md
+  - name: PartyXblThreadId
+    href: enums/partyxblthreadid.md
+- name: Typedefs
+  href: xbltypedefs.md
