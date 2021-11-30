@@ -15,17 +15,23 @@ ms.localizationpriority: medium
 > [!IMPORTANT]
 > This feature is in **private preview** for limited, Microsoft managed partners.
 
-This topic describes how to set up the development environment for Azure PlayFab Lobby and start using it.
+This article describes how to set up the development environment for Azure PlayFab Lobby and start using it.
 
 ## Prerequisites
 
-You need a PlayFab account to access Lobby and Matchmaking features. 
+You need a PlayFab account to access Lobby and Matchmaking features.
 
-1. Create/sign in to your [PlayFab account](https://playfab.com). For instructions, see [Quickstart: Game Manager](../../../gamemanager/quickstart.md).
+Create/sign in to your [PlayFab account](https://playfab.com). For instructions, see [Quickstart: Game Manager](../../../gamemanager/quickstart.md).
 
 ## Download and set up the PlayFab Multiplayer Client SDK
 
-Like the PlayFab Core SDKs, we have Multiplayer SDKs for different platforms and game engines. Select and download the one that you need. For download links, see [Lobby SDKs](lobby-sdks\lobby-sdks.md).
+Like the PlayFab Core SDKs, we have Multiplayer SDKs for different platforms and game engines. Select and download the one that you need. 
+
+For download links, see [Lobby SDKs](lobby-matchmaking-sdks\lobby-matchmaking-sdks.md).
+
+For Unity and Unreal set up instructions, see the following articles.
+* [Quickstart for Unity](lobby-matchmaking-sdks/multiplayer-unity-sdk-getting-started.md)
+* [Quickstart for Unreal](../networking/party-unreal-engine-oss-quickstart.md)
 
 ## Initialize PlayFab Multiplayer Client SDK
 
@@ -54,7 +60,9 @@ Initialize the PlayFab Multiplayer Client SDK by following these basic steps.
 
     return S_OK;
 ```
+
 ## Next steps
+
 * [Create a Lobby](create-a-lobby.md)
 * [Find and join a lobby](join-lobbies.md)
 * [Invite another player to a lobby](lobby-invites.md)
@@ -65,5 +73,5 @@ Initialize the PlayFab Multiplayer Client SDK by following these basic steps.
 * [Create searchable lobbies](define-search-keywords.md)
 * [Lobby properties](lobby-properties.md)
 * [Lobby Client SDK reference](playfabmultiplayerreference-cpp\pflobby\pflobby_members.md)
-* [Lobby SDKs](lobby-sdks/lobby-sdks.md)
+* [Lobby SDKs](lobby-matchmaking-sdks/lobby-matchmaking-sdks.md)
 

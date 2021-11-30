@@ -244,7 +244,7 @@ The following code snippet shows how we can create a Party Network.
 Once the function call to `CreateNewNetwork()` succeeds, a network descriptor [PartyNetworkDescriptor](concepts-objects.md#network
 ) object will be returned/populated. The descriptor contains the data required by other players to connect to a network.
 
-Refer to the [API Reference Documentation](party_members.md) for information about the other function parameters.
+Refer to the [API Reference Documentation](reference/party_members.md) for information about the other function parameters.
 
 ## Connect to a Party network
 
