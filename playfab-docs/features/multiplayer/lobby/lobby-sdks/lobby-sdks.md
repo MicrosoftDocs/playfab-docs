@@ -1,9 +1,9 @@
 ---
 title: Azure PlayFab Lobby SDKs
-author: joannaleecy
+author: PushpadantK
 description: Learn about the SDKs for Azure PlayFab Lobby.
-ms.author: joanlee
-ms.date: 02/22/2021
+ms.author: pkacha
+ms.date: 11/30/2021
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, multiplayer, matchmaking, lobby, sdk, sample
@@ -30,14 +30,14 @@ If you're looking for the core PlayFab SDK that helps you implement a majority o
 
 | SDK/library| Platform/operating system|
 |------------|--------------------------|
-| C/C++ SDK  | [PC(Win32)](#), [Nintendo Switch](https://dev.azure.com/PlayFabPrivate/Switch/_packaging?_a=feed&feed=SwitchGeneral), [PlayStation 4](https://dev.azure.com/PlayFabPrivate/PS4/_packaging?_a=feed&feed=PS4General), [PlayStation 5](https://dev.azure.com/PlayFabPrivate/PS5/_packaging?_a=feed&feed=PS5General), [PC (GDK) and Xbox (GDK)](https://aka.ms/gdkdl)|
+| C/C++ SDK  | [PC(Win32)](https://dev.azure.com/PlayFabPrivate/GDK/_packaging?_a=feed&feed=GDKGeneral), [Nintendo Switch](https://dev.azure.com/PlayFabPrivate/Switch/_packaging?_a=feed&feed=SwitchGeneral), [PlayStation 4](https://dev.azure.com/PlayFabPrivate/PS4/_packaging?_a=feed&feed=PS4General), [PlayStation 5](https://dev.azure.com/PlayFabPrivate/PS5/_packaging?_a=feed&feed=PS5General), [PC (GDK) and Xbox (GDK)](https://dev.azure.com/PlayFabPrivate/GDK/_packaging?_a=feed&feed=GDKGeneral)|
 | Unity SDK  | [PC (GDK) and Xbox (GDK)](https://dev.azure.com/PlayFabPrivate/GDK/_git/PlayFabMultiplayerUnityGDK)|
 | Unity Editor Extensions | [Unity game engine](https://github.com/PlayFab/UnityEditorExtensions/releases)|
 | Unreal SDK |[PC (GDK) and Xbox (GDK)](https://dev.azure.com/PlayFabPrivate/GDK/_git/PlayFabOSSUnrealGDK)|
 
 ## See also
 
-* [Quickstart for Unity](#)
-* [Quickstart for Unreal](#)
+* [Quickstart for Unity](../../networking/party-unity-plugin-quickstart.md)
+* [Quickstart for Unreal](../../networking/party-unreal-engine-oss-quickstart.md)
 * [Lobby overview](../index.md)
 * [Getting started with Lobby](../lobby-getting-started.md)
