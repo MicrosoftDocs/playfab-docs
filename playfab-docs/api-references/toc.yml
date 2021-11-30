@@ -1,15 +1,22 @@
-
-- name: API References
-  href: index.md
-- name: API Access Policy
-  href: api-access-policy.md  
-- name: Global API Method Error Codes
-  href: global-api-method-error-codes.md
-- name: HTTP Response Status Codes
-  href: http-response-status-codes.md
+- name: REST API
+  items:
+  - name: Overview
+    href: index.md
+  - name: Reference
+    href: https://docs.microsoft.com/rest/api/playfab/admin
+- name: Party C/C++ API
+  href: ../features/multiplayer/networking/reference/toc.yml
+- name: Party Unity API
+  href: ../features/multiplayer/networking/unity-party-api-reference/toc.yml
+- name: Party Xbox Live Helper
+  href: ../features/multiplayer/networking/xblreference/toc.yml
+- name: Lobby and Matchmaking C/C++ API
+  href: ../features/multiplayer/lobby/playfabmultiplayerreference-cpp/toc.yml
+- name: Lobby and Matchmaking Unity API
+  href: ../features/multiplayer/lobby/unity-multiplayer-api-reference/toc.yml
 - name: PlayStream Events
   items:
-  - name: PlayStream Event Model reference
+  - name: Model reference
     href: events/index.md
     items:
     - name: auth_token_validated
@@ -286,6 +293,9 @@
       href: events/title-store-updated.md
     - name: title_updated_task  
       href: events/title-updated-task.md
-- name: Rest API References
-  href: https://docs.microsoft.com/rest/api/playfab/admin
-  
+- name: API access policy
+  href: api-access-policy.md
+- name: Global API method error codes
+  href: global-api-method-error-codes.md
+- name: HTTP response status codes
+  href: http-response-status-codes.md  

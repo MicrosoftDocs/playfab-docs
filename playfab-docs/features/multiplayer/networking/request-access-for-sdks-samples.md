@@ -1,7 +1,7 @@
 ---
-title: Request access
+title: Request access for secured SDKs and samples
 author: joannaleecy
-description: Learn how to request access for Azure PlayFab Party SDKs and samples.
+description: Learn how to request access for secured SDKs and samples.
 ms.author: joanlee
 ms.date: 10/28/2020
 ms.topic: article
@@ -10,9 +10,9 @@ keywords: playfab, sdk, sample, access
 ms.localizationpriority: medium
 ---
 
-# Request access for Azure PlayFab Party SDKs and samples
+# Request access for secured SDKs and samples
 
-This topic provides information about how you can access Azure PlayFab Party SDKs and samples for **Nintendo Switch**, **PlayStation 4**, **PlayStation 5**, **Google Stadia**, **PC (GDK)**, and **Xbox (GDK)**.
+This topic provides information about how you can access SDKs and samples for **Nintendo Switch**, **PlayStation 4**, **PlayStation 5**, **Google Stadia**, **PC (GDK)**, and **Xbox (GDK)**.
 
 Adhering to platform policies, we need to ensure that you're a registered developer before granting access, so a few extra steps are required from you. For example, you need to be a registered Switch developer to get access to Party SDKs and samples for Switch.
 
@@ -36,6 +36,9 @@ If you're not yet a registered developer for the previously mentioned platforms 
 ## PC (GDK) and Xbox (GDK)
 
 If you're a registered developer but don't yet have access, email your Microsoft representative.
+In addition, to get access to Lobby and Matchmaking SDKs for GDK, please follow these instructions:
+1. Email PlayFabSdkAccess@microsoft.com with your developer information.
+1. After we've verified that you're a registered developer for PC/Xbox GDK, we'll grant you access.
 
 ## Need help?
 

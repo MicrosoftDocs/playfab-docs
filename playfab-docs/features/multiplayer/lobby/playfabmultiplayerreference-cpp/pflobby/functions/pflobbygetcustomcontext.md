@@ -1,0 +1,53 @@
+---
+author: tomcoMSFT
+title: "PFLobbyGetCustomContext"
+description: "Retrieves the app's private, custom pointer-sized context value previously associated with this lobby object."
+ms.author: tomco
+ms.topic: reference
+ms.prod: playfab
+ms.date: 11/23/2021
+---
+
+# PFLobbyGetCustomContext  
+
+Retrieves the app's private, custom pointer-sized context value previously associated with this lobby object.  
+
+## Syntax  
+  
+```cpp
+HRESULT PFLobbyGetCustomContext(  
+    PFLobbyHandle lobby,  
+    void** customContext  
+)  
+```  
+  
+### Parameters  
+  
+**`lobby`** &nbsp; PFLobbyHandle  
+  
+The handle of the lobby.  
+  
+**`customContext`** &nbsp; void**  
+*output, may return nullptr*  
+  
+The output custom context.  
+  
+  
+### Return value
+Type: HRESULT
+  
+```S_OK``` if retrieving the custom context succeeded or an error code otherwise. The human-readable form of the error code can be retrieved via [PFMultiplayerGetErrorMessage()](../../pfmultiplayer/functions/pfmultiplayergeterrormessage.md).
+  
+## Remarks  
+  
+If no custom context has been set yet, the value pointed to by `customContext` is set to nullptr.
+  
+## Requirements  
+  
+**Header:** PFLobby.h
+  
+## See also  
+[PFLobby members](../pflobby_members.md)  
+[PFLobbySetCustomContext](pflobbysetcustomcontext.md)
+  
+  
