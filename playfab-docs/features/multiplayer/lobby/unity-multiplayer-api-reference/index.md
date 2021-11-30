@@ -10,6 +10,9 @@ ms.date: 11/23/2021
 
 # PlayFab Multiplayer Unity SDK
 
+> [!IMPORTANT]
+> This feature is in **private preview** for limited, Microsoft managed partners.
+
 ## Classes
 
 | Name |  Description  |

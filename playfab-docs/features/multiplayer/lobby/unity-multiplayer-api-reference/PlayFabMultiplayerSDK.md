@@ -10,6 +10,9 @@ ms.date: 11/23/2021
 
 # PlayFabMultiplayerSDK assembly
 
+> [!IMPORTANT]
+> This feature is in **private preview** for limited, Microsoft managed partners.
+
 ## PlayFab.Multiplayer namespace
 
 | public type | description |

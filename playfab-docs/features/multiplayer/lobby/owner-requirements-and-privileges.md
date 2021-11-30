@@ -12,6 +12,9 @@ ms.localizationpriority: medium
 
 # Owner requirements and privileges
 
+> [!IMPORTANT]
+> This feature is in **private preview** for limited, Microsoft managed partners.
+
 This article explains about Lobby owner requirements and privileges. 
 
 ## Owner requirements

@@ -11,6 +11,9 @@ keywords: playfab, multiplayer, lobby, matchmaking, unity, middleware
 
 # Quickstart: PlayFab Multiplayer Unity plugin
 
+> [!IMPORTANT]
+> This feature is in **private preview** for limited, Microsoft managed partners.
+
 Get started with the PlayFab Multiplayer Unity plugin. Follow steps below to install the package and try out example code for a basic task.
 
 This quickstart helps you make your first API calls using the PlayFab Multiplayer SDK for Unity. Before continuing, make sure you have completed [Getting started for developers](../../../../personas/developer.md) and [Quickstart: PlayFab Client library for C# in Unity](../../../../sdks/unity3d/quickstart.md), which ensures you have a PlayFab account and are familiar with logging into PlayFab from your game and the PlayFab Game Manager.

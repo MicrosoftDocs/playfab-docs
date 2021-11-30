@@ -13,6 +13,9 @@ ms.localizationpriority: medium
 # Lobby API overview
 
 > [!IMPORTANT]
+> This feature is in **private preview** for limited, Microsoft managed partners.
+
+> [!IMPORTANT]
 > This doc page is currently unlinked. It describes service APIs not yet intended to be called by customers.
 
 This article provides an overview of the PlayFab Lobby API. Here, servers mean game server hosts for your title and clients are players.

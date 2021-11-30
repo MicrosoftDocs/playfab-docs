@@ -12,6 +12,9 @@ ms.localizationpriority: medium
 
 # Use Lobby and Matchmaking Together
 
+> [!IMPORTANT]
+> This feature is in **private preview** for limited, Microsoft managed partners.
+
 When designing multiplayer games, matchmaking and lobbies are often used together to help people form groups to play together. 
 
 PlayFab Lobby and PlayFab Matchmaking helps you implement a wide variety of multiplayer scenarios.

@@ -10,6 +10,9 @@ ms.date: 11/23/2021
 
 # PFMatchmaking members  
 
+> [!IMPORTANT]
+> This feature is in **private preview** for limited, Microsoft managed partners.
+
   
 ## Functions  
 

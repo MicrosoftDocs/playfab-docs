@@ -12,6 +12,9 @@ ms.localizationpriority: medium
 
 # Joining lobbies and connection strings
 
+> [!IMPORTANT]
+> This feature is in **private preview** for limited, Microsoft managed partners.
+
 Players join lobbies by providing the lobby service with a lobby's "connection string", an opaque identifier which grants membership to the lobby.
 
 Players can discover connection strings and join lobbies in the following ways.

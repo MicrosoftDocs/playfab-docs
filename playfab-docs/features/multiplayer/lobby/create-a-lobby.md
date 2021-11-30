@@ -12,6 +12,9 @@ ms.localizationpriority: medium
 
 # Create a lobby
 
+> [!IMPORTANT]
+> This feature is in **private preview** for limited, Microsoft managed partners.
+
 This article explains how to create a lobby. 
 
 ## How are lobbies created?

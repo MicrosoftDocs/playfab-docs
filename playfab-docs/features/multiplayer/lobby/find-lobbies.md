@@ -12,6 +12,9 @@ ms.localizationpriority: medium
 
 # Find lobbies
 
+> [!IMPORTANT]
+> This feature is in **private preview** for limited, Microsoft managed partners.
+
 It's often useful for titles to let players find lobbies that meet a particular set of criteria like map and difficulty level among other in-game qualities. This enables players to find the game sessions they want with the people they want.
 
 This article explains how to use __FindLobbies__ to enable players to find lobbies. To see how to find lobbies can be used in game titles, see [Common Scenarios](#common-scenarios).

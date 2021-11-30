@@ -12,6 +12,9 @@ ms.localizationpriority: medium
 
 # Azure Playfab Lobby and Matchmaking SDKs
 
+> [!IMPORTANT]
+> This feature is in **private preview** for limited, Microsoft managed partners.
+
 This topic describes all the Azure PlayFab Lobby and Matchmaking SDKs that are currently available.
 
 If you don't find what you need, let us know by writing a post on our [forums](https://community.playfab.com/index.html).

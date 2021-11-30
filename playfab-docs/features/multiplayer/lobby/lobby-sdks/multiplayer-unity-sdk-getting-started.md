@@ -12,6 +12,9 @@ ms.localizationpriority: medium
 
 # Getting started for Multiplayer Unity SDK
 
+> [!IMPORTANT]
+> This feature is in **private preview** for limited, Microsoft managed partners.
+
 Overview and specific set up instructions.
 
 ## See also

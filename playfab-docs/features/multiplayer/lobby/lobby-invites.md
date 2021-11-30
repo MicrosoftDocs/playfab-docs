@@ -12,6 +12,9 @@ ms.localizationpriority: medium
 
 # Lobby invites
 
+> [!IMPORTANT]
+> This feature is in **private preview** for limited, Microsoft managed partners.
+
 This article provides an overview about Lobby invites and explains how to manage state changes for lobbies that allow invites.
 
 ## Invite types

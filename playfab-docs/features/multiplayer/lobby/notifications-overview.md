@@ -13,6 +13,9 @@ ms.localizationpriority: medium
 # Lobby notifications
 
 > [!IMPORTANT]
+> This feature is in **private preview** for limited, Microsoft managed partners.
+
+> [!IMPORTANT]
 > This doc page is currently unlinked. It describes service APIs not yet intended to be called by customers.
 
 Lobby notifications allow players to subscribe and receive real-time push notifications. It's part of the Lobby service and you can use Lobby subscribe APIs implement this for your title.

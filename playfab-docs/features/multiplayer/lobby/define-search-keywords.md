@@ -12,6 +12,9 @@ ms.localizationpriority: medium
 
 # Create searchable lobbies
 
+> [!IMPORTANT]
+> This feature is in **private preview** for limited, Microsoft managed partners.
+
 This article explains how to create lobbies that are searchable. 
 
 To make a lobby searchable, its access policy must either be __Public__ or __Friends__. Lobbies with a __Private__ access policy will not be joinable from search queries and must be joined via [invites](#). It's common to configure this access policy when initially creating the lobby.

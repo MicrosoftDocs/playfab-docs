@@ -12,6 +12,9 @@ ms.localizationpriority: medium
 
 # Getting started with Azure PlayFab Lobby
 
+> [!IMPORTANT]
+> This feature is in **private preview** for limited, Microsoft managed partners.
+
 This topic describes how to set up the development environment for Azure PlayFab Lobby and start using it.
 
 ## Prerequisites

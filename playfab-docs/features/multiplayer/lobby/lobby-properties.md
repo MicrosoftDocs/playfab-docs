@@ -12,6 +12,9 @@ ms.localizationpriority: medium
 
 # Lobby properties
 
+> [!IMPORTANT]
+> This feature is in **private preview** for limited, Microsoft managed partners.
+
 This article describes custom properties stored on the lobby. Use this functionality to store metadata about the game sessions that your lobby's represent.
 
 ## Pre-defined properties

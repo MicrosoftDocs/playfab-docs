@@ -10,6 +10,9 @@ ms.date: 11/09/2021
 
 # PFMultiplayer members  
 
+> [!IMPORTANT]
+> This feature is in **private preview** for limited, Microsoft managed partners.
+
   
 ## Functions  
 
