@@ -48,7 +48,7 @@
   - name: Request access
     href: features/multiplayer/networking/request-access-for-sdks-samples.md
   - name: Lobby and Matchmaking SDKs
-    href: features/multiplayer/lobby/lobby-sdks/toc.yml
+    href: features/multiplayer/lobby/lobby-matchmaking-sdks/toc.yml
   - name: Multiplayer Server SDKs
     href: features/multiplayer/servers/server-sdks.md
   - name: Party SDKs

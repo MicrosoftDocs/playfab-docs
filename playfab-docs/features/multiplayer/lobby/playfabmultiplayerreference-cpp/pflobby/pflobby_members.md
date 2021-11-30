@@ -13,7 +13,6 @@ ms.date: 11/23/2021
 > [!IMPORTANT]
 > This feature is in **private preview** for limited, Microsoft managed partners.
 
-  
 ## Functions  
 
 | Function | Description |  
