@@ -1,0 +1,537 @@
+- name: Overview
+  href: party_members.md
+- name: Classes
+  items:
+  - name: PartyAudioManipulationSinkStream
+    href: classes/PartyAudioManipulationSinkStream/partyaudiomanipulationsinkstream.md
+    items:
+    - name: Methods
+      items:
+      - name: GetConfiguration
+        href: classes/PartyAudioManipulationSinkStream/methods/partyaudiomanipulationsinkstream_getconfiguration.md
+      - name: GetFormat
+        href: classes/PartyAudioManipulationSinkStream/methods/partyaudiomanipulationsinkstream_getformat.md
+      - name: SubmitBuffer
+        href: classes/PartyAudioManipulationSinkStream/methods/partyaudiomanipulationsinkstream_submitbuffer.md
+      - name: GetCustomContext
+        href: classes/PartyAudioManipulationSinkStream/methods/partyaudiomanipulationsinkstream_getcustomcontext.md
+      - name: SetCustomContext
+        href: classes/PartyAudioManipulationSinkStream/methods/partyaudiomanipulationsinkstream_setcustomcontext.md
+  - name: PartyAudioManipulationSourceStream
+    href: classes/PartyAudioManipulationSourceStream/partyaudiomanipulationsourcestream.md
+    items:
+    - name: Methods
+      items:
+      - name: GetConfiguration
+        href: classes/PartyAudioManipulationSourceStream/methods/partyaudiomanipulationsourcestream_getconfiguration.md
+      - name: GetFormat
+        href: classes/PartyAudioManipulationSourceStream/methods/partyaudiomanipulationsourcestream_getformat.md
+      - name: GetAvailableBufferCount
+        href: classes/PartyAudioManipulationSourceStream/methods/partyaudiomanipulationsourcestream_getavailablebuffercount.md
+      - name: GetNextBuffer
+        href: classes/PartyAudioManipulationSourceStream/methods/partyaudiomanipulationsourcestream_getnextbuffer.md
+      - name: ReturnBuffer
+        href: classes/PartyAudioManipulationSourceStream/methods/partyaudiomanipulationsourcestream_returnbuffer.md
+      - name: GetCustomContext
+        href: classes/PartyAudioManipulationSourceStream/methods/partyaudiomanipulationsourcestream_getcustomcontext.md
+      - name: SetCustomContext
+        href: classes/PartyAudioManipulationSourceStream/methods/partyaudiomanipulationsourcestream_setcustomcontext.md
+  - name: PartyChatControl
+    href: classes/PartyChatControl/partychatcontrol.md
+    items:
+    - name: Methods
+      items:
+      - name: GetLocal
+        href: classes/PartyChatControl/methods/partychatcontrol_getlocal.md
+      - name: GetDevice
+        href: classes/PartyChatControl/methods/partychatcontrol_getdevice.md
+      - name: GetEntityId
+        href: classes/PartyChatControl/methods/partychatcontrol_getentityid.md
+      - name: GetNetworks
+        href: classes/PartyChatControl/methods/partychatcontrol_getnetworks.md
+      - name: GetCustomContext
+        href: classes/PartyChatControl/methods/partychatcontrol_getcustomcontext.md
+      - name: SetCustomContext
+        href: classes/PartyChatControl/methods/partychatcontrol_setcustomcontext.md
+      - name: ConfigureAudioManipulationVoiceStream
+        href: classes/PartyChatControl/methods/partychatcontrol_configureaudiomanipulationvoicestream.md
+      - name: GetAudioManipulationVoiceStream
+        href: classes/PartyChatControl/methods/partychatcontrol_getaudiomanipulationvoicestream.md
+  - name: PartyDevice
+    href: classes/PartyDevice/partydevice.md
+    items:
+    - name: Methods
+      items:
+      - name: GetLocal
+        href: classes/PartyDevice/methods/partydevice_getlocal.md
+      - name: GetChatControls
+        href: classes/PartyDevice/methods/partydevice_getchatcontrols.md
+      - name: GetCustomContext
+        href: classes/PartyDevice/methods/partydevice_getcustomcontext.md
+      - name: SetCustomContext
+        href: classes/PartyDevice/methods/partydevice_setcustomcontext.md
+  - name: PartyEndpoint
+    href: classes/PartyEndpoint/partyendpoint.md
+    items:
+    - name: Methods
+      items:
+      - name: GetLocal
+        href: classes/PartyEndpoint/methods/partyendpoint_getlocal.md
+      - name: GetEntityId
+        href: classes/PartyEndpoint/methods/partyendpoint_getentityid.md
+      - name: GetNetwork
+        href: classes/PartyEndpoint/methods/partyendpoint_getnetwork.md
+      - name: GetDevice
+        href: classes/PartyEndpoint/methods/partyendpoint_getdevice.md
+      - name: GetUniqueIdentifier
+        href: classes/PartyEndpoint/methods/partyendpoint_getuniqueidentifier.md
+      - name: GetCustomContext
+        href: classes/PartyEndpoint/methods/partyendpoint_getcustomcontext.md
+      - name: SetCustomContext
+        href: classes/PartyEndpoint/methods/partyendpoint_setcustomcontext.md
+  - name: PartyInvitation
+    href: classes/PartyInvitation/partyinvitation.md
+    items:
+    - name: Methods
+      items:
+      - name: GetCreatorEntityId
+        href: classes/PartyInvitation/methods/partyinvitation_getcreatorentityid.md
+      - name: GetInvitationConfiguration
+        href: classes/PartyInvitation/methods/partyinvitation_getinvitationconfiguration.md
+      - name: GetCustomContext
+        href: classes/PartyInvitation/methods/partyinvitation_getcustomcontext.md
+      - name: SetCustomContext
+        href: classes/PartyInvitation/methods/partyinvitation_setcustomcontext.md
+  - name: PartyLocalChatControl
+    href: classes/PartyLocalChatControl/partylocalchatcontrol.md
+    items:
+    - name: Methods
+      items:
+      - name: GetLocalUser
+        href: classes/PartyLocalChatControl/methods/partylocalchatcontrol_getlocaluser.md
+      - name: SetPermissions
+        href: classes/PartyLocalChatControl/methods/partylocalchatcontrol_setpermissions.md
+      - name: GetPermissions
+        href: classes/PartyLocalChatControl/methods/partylocalchatcontrol_getpermissions.md
+      - name: SendText
+        href: classes/PartyLocalChatControl/methods/partylocalchatcontrol_sendtext.md
+      - name: SetAudioInput
+        href: classes/PartyLocalChatControl/methods/partylocalchatcontrol_setaudioinput.md
+      - name: GetAudioInput
+        href: classes/PartyLocalChatControl/methods/partylocalchatcontrol_getaudioinput.md
+      - name: SetAudioOutput
+        href: classes/PartyLocalChatControl/methods/partylocalchatcontrol_setaudiooutput.md
+      - name: GetAudioOutput
+        href: classes/PartyLocalChatControl/methods/partylocalchatcontrol_getaudiooutput.md
+      - name: PopulateAvailableTextToSpeechProfiles
+        href: classes/PartyLocalChatControl/methods/partylocalchatcontrol_populateavailabletexttospeechprofiles.md
+      - name: GetAvailableTextToSpeechProfiles
+        href: classes/PartyLocalChatControl/methods/partylocalchatcontrol_getavailabletexttospeechprofiles.md
+      - name: SetTextToSpeechProfile
+        href: classes/PartyLocalChatControl/methods/partylocalchatcontrol_settexttospeechprofile.md
+      - name: GetTextToSpeechProfile
+        href: classes/PartyLocalChatControl/methods/partylocalchatcontrol_gettexttospeechprofile.md
+      - name: SynthesizeTextToSpeech
+        href: classes/PartyLocalChatControl/methods/partylocalchatcontrol_synthesizetexttospeech.md
+      - name: GetLanguage
+        href: classes/PartyLocalChatControl/methods/partylocalchatcontrol_getlanguage.md
+      - name: SetTranscriptionOptions
+        href: classes/PartyLocalChatControl/methods/partylocalchatcontrol_settranscriptionoptions.md
+      - name: GetTranscriptionOptions
+        href: classes/PartyLocalChatControl/methods/partylocalchatcontrol_gettranscriptionoptions.md
+      - name: SetTextChatOptions
+        href: classes/PartyLocalChatControl/methods/partylocalchatcontrol_settextchatoptions.md
+      - name: GetTextChatOptions
+        href: classes/PartyLocalChatControl/methods/partylocalchatcontrol_gettextchatoptions.md
+      - name: SetAudioRenderVolume
+        href: classes/PartyLocalChatControl/methods/partylocalchatcontrol_setaudiorendervolume.md
+      - name: GetAudioRenderVolume
+        href: classes/PartyLocalChatControl/methods/partylocalchatcontrol_getaudiorendervolume.md
+      - name: SetAudioInputMuted
+        href: classes/PartyLocalChatControl/methods/partylocalchatcontrol_setaudioinputmuted.md
+      - name: GetAudioInputMuted
+        href: classes/PartyLocalChatControl/methods/partylocalchatcontrol_getaudioinputmuted.md
+      - name: SetIncomingAudioMuted
+        href: classes/PartyLocalChatControl/methods/partylocalchatcontrol_setincomingaudiomuted.md
+      - name: GetIncomingAudioMuted
+        href: classes/PartyLocalChatControl/methods/partylocalchatcontrol_getincomingaudiomuted.md
+      - name: SetIncomingTextMuted
+        href: classes/PartyLocalChatControl/methods/partylocalchatcontrol_setincomingtextmuted.md
+      - name: GetIncomingTextMuted
+        href: classes/PartyLocalChatControl/methods/partylocalchatcontrol_getincomingtextmuted.md
+      - name: GetLocalChatIndicator
+        href: classes/PartyLocalChatControl/methods/partylocalchatcontrol_getlocalchatindicator.md
+      - name: GetChatIndicator
+        href: classes/PartyLocalChatControl/methods/partylocalchatcontrol_getchatindicator.md
+      - name: ConfigureAudioManipulationCaptureStream
+        href: classes/PartyLocalChatControl/methods/partylocalchatcontrol_configureaudiomanipulationcapturestream.md
+      - name: GetAudioManipulationCaptureStream
+        href: classes/PartyLocalChatControl/methods/partylocalchatcontrol_getaudiomanipulationcapturestream.md
+      - name: ConfigureAudioManipulationRenderStream
+        href: classes/PartyLocalChatControl/methods/partylocalchatcontrol_configureaudiomanipulationrenderstream.md
+      - name: GetAudioManipulationRenderStream
+        href: classes/PartyLocalChatControl/methods/partylocalchatcontrol_getaudiomanipulationrenderstream.md
+  - name: PartyLocalDevice
+    href: classes/PartyLocalDevice/partylocaldevice.md
+    items:
+    - name: Methods
+      items:
+      - name: CreateChatControl
+        href: classes/PartyLocalDevice/methods/partylocaldevice_createchatcontrol.md
+      - name: DestroyChatControl
+        href: classes/PartyLocalDevice/methods/partylocaldevice_destroychatcontrol.md
+  - name: PartyLocalEndpoint
+    href: classes/PartyLocalEndpoint/partylocalendpoint.md
+    items:
+    - name: Methods
+      items:
+      - name: GetLocalUser
+        href: classes/PartyLocalEndpoint/methods/partylocalendpoint_getlocaluser.md
+      - name: SendMessage
+        href: classes/PartyLocalEndpoint/methods/partylocalendpoint_sendmessage.md
+      - name: FlushMessages
+        href: classes/PartyLocalEndpoint/methods/partylocalendpoint_flushmessages.md
+      - name: GetEndpointStatistics
+        href: classes/PartyLocalEndpoint/methods/partylocalendpoint_getendpointstatistics.md
+  - name: PartyLocalUser
+    href: classes/PartyLocalUser/partylocaluser.md
+    items:
+    - name: Methods
+      items:
+      - name: GetEntityId
+        href: classes/PartyLocalUser/methods/partylocaluser_getentityid.md
+      - name: UpdateEntityToken
+        href: classes/PartyLocalUser/methods/partylocaluser_updateentitytoken.md
+      - name: GetCustomContext
+        href: classes/PartyLocalUser/methods/partylocaluser_getcustomcontext.md
+      - name: SetCustomContext
+        href: classes/PartyLocalUser/methods/partylocaluser_setcustomcontext.md
+  - name: PartyManager
+    href: classes/PartyManager/partymanager.md
+    items:
+    - name: Methods
+      items:
+      - name: GetSingleton
+        href: classes/PartyManager/methods/partymanager_getsingleton.md
+      - name: SetOption
+        href: classes/PartyManager/methods/partymanager_setoption.md
+      - name: GetOption
+        href: classes/PartyManager/methods/partymanager_getoption.md
+      - name: GetErrorMessage
+        href: classes/PartyManager/methods/partymanager_geterrormessage.md
+      - name: SerializeNetworkDescriptor
+        href: classes/PartyManager/methods/partymanager_serializenetworkdescriptor.md
+      - name: DeserializeNetworkDescriptor
+        href: classes/PartyManager/methods/partymanager_deserializenetworkdescriptor.md
+      - name: SetMemoryCallbacks
+        href: classes/PartyManager/methods/partymanager_setmemorycallbacks.md
+      - name: GetMemoryCallbacks
+        href: classes/PartyManager/methods/partymanager_getmemorycallbacks.md
+      - name: SetProfilingCallbacksForMethodEntryExit
+        href: classes/PartyManager/methods/partymanager_setprofilingcallbacksformethodentryexit.md
+      - name: GetProfilingCallbacksForMethodEntryExit
+        href: classes/PartyManager/methods/partymanager_getprofilingcallbacksformethodentryexit.md
+      - name: SetThreadAffinityMask
+        href: classes/PartyManager/methods/partymanager_setthreadaffinitymask.md
+      - name: GetThreadAffinityMask
+        href: classes/PartyManager/methods/partymanager_getthreadaffinitymask.md
+      - name: SetWorkMode
+        href: classes/PartyManager/methods/partymanager_setworkmode.md
+      - name: GetWorkMode
+        href: classes/PartyManager/methods/partymanager_getworkmode.md
+      - name: Initialize
+        href: classes/PartyManager/methods/partymanager_initialize.md
+      - name: Cleanup
+        href: classes/PartyManager/methods/partymanager_cleanup.md
+      - name: StartProcessingStateChanges
+        href: classes/PartyManager/methods/partymanager_startprocessingstatechanges.md
+      - name: FinishProcessingStateChanges
+        href: classes/PartyManager/methods/partymanager_finishprocessingstatechanges.md
+      - name: DoWork
+        href: classes/PartyManager/methods/partymanager_dowork.md
+      - name: GetRegions
+        href: classes/PartyManager/methods/partymanager_getregions.md
+      - name: CreateNewNetwork
+        href: classes/PartyManager/methods/partymanager_createnewnetwork.md
+      - name: ConnectToNetwork
+        href: classes/PartyManager/methods/partymanager_connecttonetwork.md
+      - name: GetLocalDevice
+        href: classes/PartyManager/methods/partymanager_getlocaldevice.md
+      - name: CreateLocalUser
+        href: classes/PartyManager/methods/partymanager_createlocaluser.md
+      - name: DestroyLocalUser
+        href: classes/PartyManager/methods/partymanager_destroylocaluser.md
+      - name: GetLocalUsers
+        href: classes/PartyManager/methods/partymanager_getlocalusers.md
+      - name: GetNetworks
+        href: classes/PartyManager/methods/partymanager_getnetworks.md
+      - name: GetChatControls
+        href: classes/PartyManager/methods/partymanager_getchatcontrols.md
+  - name: PartyNetwork
+    href: classes/PartyNetwork/partynetwork.md
+    items:
+    - name: Methods
+      items:
+      - name: AuthenticateLocalUser
+        href: classes/PartyNetwork/methods/partynetwork_authenticatelocaluser.md
+      - name: RemoveLocalUser
+        href: classes/PartyNetwork/methods/partynetwork_removelocaluser.md
+      - name: CreateInvitation
+        href: classes/PartyNetwork/methods/partynetwork_createinvitation.md
+      - name: RevokeInvitation
+        href: classes/PartyNetwork/methods/partynetwork_revokeinvitation.md
+      - name: GetInvitations
+        href: classes/PartyNetwork/methods/partynetwork_getinvitations.md
+      - name: CreateEndpoint
+        href: classes/PartyNetwork/methods/partynetwork_createendpoint.md
+      - name: DestroyEndpoint
+        href: classes/PartyNetwork/methods/partynetwork_destroyendpoint.md
+      - name: LeaveNetwork
+        href: classes/PartyNetwork/methods/partynetwork_leavenetwork.md
+      - name: GetEndpoints
+        href: classes/PartyNetwork/methods/partynetwork_getendpoints.md
+      - name: FindEndpointByUniqueIdentifier
+        href: classes/PartyNetwork/methods/partynetwork_findendpointbyuniqueidentifier.md
+      - name: GetDevices
+        href: classes/PartyNetwork/methods/partynetwork_getdevices.md
+      - name: GetLocalUsers
+        href: classes/PartyNetwork/methods/partynetwork_getlocalusers.md
+      - name: GetNetworkDescriptor
+        href: classes/PartyNetwork/methods/partynetwork_getnetworkdescriptor.md
+      - name: GetNetworkConfiguration
+        href: classes/PartyNetwork/methods/partynetwork_getnetworkconfiguration.md
+      - name: ConnectChatControl
+        href: classes/PartyNetwork/methods/partynetwork_connectchatcontrol.md
+      - name: DisconnectChatControl
+        href: classes/PartyNetwork/methods/partynetwork_disconnectchatcontrol.md
+      - name: GetChatControls
+        href: classes/PartyNetwork/methods/partynetwork_getchatcontrols.md
+      - name: GetNetworkStatistics
+        href: classes/PartyNetwork/methods/partynetwork_getnetworkstatistics.md
+      - name: GetCustomContext
+        href: classes/PartyNetwork/methods/partynetwork_getcustomcontext.md
+      - name: SetCustomContext
+        href: classes/PartyNetwork/methods/partynetwork_setcustomcontext.md
+      - name: GetDeviceConnectionType
+        href: classes/PartyNetwork/methods/partynetwork_getdeviceconnectiontype.md
+  - name: PartyTextToSpeechProfile
+    href: classes/PartyTextToSpeechProfile/partytexttospeechprofile.md
+    items:
+    - name: Methods
+      items:
+      - name: GetIdentifier
+        href: classes/PartyTextToSpeechProfile/methods/partytexttospeechprofile_getidentifier.md
+      - name: GetName
+        href: classes/PartyTextToSpeechProfile/methods/partytexttospeechprofile_getname.md
+      - name: GetLanguageCode
+        href: classes/PartyTextToSpeechProfile/methods/partytexttospeechprofile_getlanguagecode.md
+      - name: GetGender
+        href: classes/PartyTextToSpeechProfile/methods/partytexttospeechprofile_getgender.md
+      - name: GetCustomContext
+        href: classes/PartyTextToSpeechProfile/methods/partytexttospeechprofile_getcustomcontext.md
+      - name: SetCustomContext
+        href: classes/PartyTextToSpeechProfile/methods/partytexttospeechprofile_setcustomcontext.md
+- name: Callbacks
+  items:
+  - name: PartyAllocateMemoryCallback
+    href: callbacks/partyallocatememorycallback.md
+  - name: PartyFreeMemoryCallback
+    href: callbacks/partyfreememorycallback.md
+  - name: PartyProfilingMethodEntranceCallback
+    href: callbacks/partyprofilingmethodentrancecallback.md
+  - name: PartyProfilingMethodExitCallback
+    href: callbacks/partyprofilingmethodexitcallback.md
+- name: Structures
+  items:
+  - name: PartyAudioFormat
+    href: structs/partyaudioformat.md
+  - name: PartyAudioManipulationSinkStreamConfiguration
+    href: structs/partyaudiomanipulationsinkstreamconfiguration.md
+  - name: PartyAudioManipulationSourceStreamConfiguration
+    href: structs/partyaudiomanipulationsourcestreamconfiguration.md
+  - name: PartyDataBuffer
+    href: structs/partydatabuffer.md
+  - name: PartyInvitationConfiguration
+    href: structs/partyinvitationconfiguration.md
+  - name: PartyLocalUdpSocketBindAddressConfiguration
+    href: structs/partylocaludpsocketbindaddressconfiguration.md
+  - name: PartyMutableDataBuffer
+    href: structs/partymutabledatabuffer.md
+  - name: PartyNetworkConfiguration
+    href: structs/partynetworkconfiguration.md
+  - name: PartyNetworkDescriptor
+    href: structs/partynetworkdescriptor.md
+  - name: PartyProfilingMethodEntranceEventData
+    href: structs/partyprofilingmethodentranceeventdata.md
+  - name: PartyProfilingMethodExitEventData
+    href: structs/partyprofilingmethodexiteventdata.md
+  - name: PartyRegion
+    href: structs/partyregion.md
+  - name: PartySendMessageQueuingConfiguration
+    href: structs/partysendmessagequeuingconfiguration.md
+  - name: PartyTranslation
+    href: structs/partytranslation.md
+- name: State changes
+  items:
+  - name: PartyAuthenticateLocalUserCompletedStateChange
+    href: structs/partyauthenticatelocalusercompletedstatechange.md
+  - name: PartyChatControlCreatedStateChange
+    href: structs/partychatcontrolcreatedstatechange.md
+  - name: PartyChatControlDestroyedStateChange
+    href: structs/partychatcontroldestroyedstatechange.md
+  - name: PartyChatControlJoinedNetworkStateChange
+    href: structs/partychatcontroljoinednetworkstatechange.md
+  - name: PartyChatControlLeftNetworkStateChange
+    href: structs/partychatcontrolleftnetworkstatechange.md
+  - name: PartyChatTextReceivedStateChange
+    href: structs/partychattextreceivedstatechange.md
+  - name: PartyConfigureAudioManipulationCaptureStreamCompletedStateChange
+    href: structs/partyconfigureaudiomanipulationcapturestreamcompletedstatechange.md
+  - name: PartyConfigureAudioManipulationRenderStreamCompletedStateChange
+    href: structs/partyconfigureaudiomanipulationrenderstreamcompletedstatechange.md
+  - name: PartyConfigureAudioManipulationVoiceStreamCompletedStateChange
+    href: structs/partyconfigureaudiomanipulationvoicestreamcompletedstatechange.md
+  - name: PartyConnectChatControlCompletedStateChange
+    href: structs/partyconnectchatcontrolcompletedstatechange.md
+  - name: PartyConnectToNetworkCompletedStateChange
+    href: structs/partyconnecttonetworkcompletedstatechange.md
+  - name: PartyCreateChatControlCompletedStateChange
+    href: structs/partycreatechatcontrolcompletedstatechange.md
+  - name: PartyCreateEndpointCompletedStateChange
+    href: structs/partycreateendpointcompletedstatechange.md
+  - name: PartyCreateInvitationCompletedStateChange
+    href: structs/partycreateinvitationcompletedstatechange.md
+  - name: PartyCreateNewNetworkCompletedStateChange
+    href: structs/partycreatenewnetworkcompletedstatechange.md
+  - name: PartyDataBuffersReturnedStateChange
+    href: structs/partydatabuffersreturnedstatechange.md
+  - name: PartyDestroyChatControlCompletedStateChange
+    href: structs/partydestroychatcontrolcompletedstatechange.md
+  - name: PartyDestroyEndpointCompletedStateChange
+    href: structs/partydestroyendpointcompletedstatechange.md
+  - name: PartyDestroyLocalUserCompletedStateChange
+    href: structs/partydestroylocalusercompletedstatechange.md
+  - name: PartyDisconnectChatControlCompletedStateChange
+    href: structs/partydisconnectchatcontrolcompletedstatechange.md
+  - name: PartyEndpointCreatedStateChange
+    href: structs/partyendpointcreatedstatechange.md
+  - name: PartyEndpointDestroyedStateChange
+    href: structs/partyendpointdestroyedstatechange.md
+  - name: PartyEndpointMessageReceivedStateChange
+    href: structs/partyendpointmessagereceivedstatechange.md
+  - name: PartyInvitationCreatedStateChange
+    href: structs/partyinvitationcreatedstatechange.md
+  - name: PartyInvitationDestroyedStateChange
+    href: structs/partyinvitationdestroyedstatechange.md
+  - name: PartyLeaveNetworkCompletedStateChange
+    href: structs/partyleavenetworkcompletedstatechange.md
+  - name: PartyLocalChatAudioInputChangedStateChange
+    href: structs/partylocalchataudioinputchangedstatechange.md
+  - name: PartyLocalChatAudioOutputChangedStateChange
+    href: structs/partylocalchataudiooutputchangedstatechange.md
+  - name: PartyLocalUserRemovedStateChange
+    href: structs/partylocaluserremovedstatechange.md
+  - name: PartyNetworkConfigurationMadeAvailableStateChange
+    href: structs/partynetworkconfigurationmadeavailablestatechange.md
+  - name: PartyNetworkDescriptorChangedStateChange
+    href: structs/partynetworkdescriptorchangedstatechange.md
+  - name: PartyNetworkDestroyedStateChange
+    href: structs/partynetworkdestroyedstatechange.md
+  - name: PartyPopulateAvailableTextToSpeechProfilesCompletedStateChange
+    href: structs/partypopulateavailabletexttospeechprofilescompletedstatechange.md
+  - name: PartyRegionsChangedStateChange
+    href: structs/partyregionschangedstatechange.md
+  - name: PartyRemoteDeviceCreatedStateChange
+    href: structs/partyremotedevicecreatedstatechange.md
+  - name: PartyRemoteDeviceDestroyedStateChange
+    href: structs/partyremotedevicedestroyedstatechange.md
+  - name: PartyRemoteDeviceJoinedNetworkStateChange
+    href: structs/partyremotedevicejoinednetworkstatechange.md
+  - name: PartyRemoteDeviceLeftNetworkStateChange
+    href: structs/partyremotedeviceleftnetworkstatechange.md
+  - name: PartyRemoveLocalUserCompletedStateChange
+    href: structs/partyremovelocalusercompletedstatechange.md
+  - name: PartyRevokeInvitationCompletedStateChange
+    href: structs/partyrevokeinvitationcompletedstatechange.md
+  - name: PartySetChatAudioInputCompletedStateChange
+    href: structs/partysetchataudioinputcompletedstatechange.md
+  - name: PartySetChatAudioOutputCompletedStateChange
+    href: structs/partysetchataudiooutputcompletedstatechange.md
+  - name: PartySetTextChatOptionsCompletedStateChange
+    href: structs/partysettextchatoptionscompletedstatechange.md
+  - name: PartySetTextToSpeechProfileCompletedStateChange
+    href: structs/partysettexttospeechprofilecompletedstatechange.md
+  - name: PartySetTranscriptionOptionsCompletedStateChange
+    href: structs/partysettranscriptionoptionscompletedstatechange.md
+  - name: PartyStateChange
+    href: structs/partystatechange.md
+  - name: PartySynthesizeTextToSpeechCompletedStateChange
+    href: structs/partysynthesizetexttospeechcompletedstatechange.md
+  - name: PartyVoiceChatTranscriptionReceivedStateChange
+    href: structs/partyvoicechattranscriptionreceivedstatechange.md
+- name: Enumerations
+  items:
+  - name: PartyAudioDeviceSelectionType
+    href: enums/partyaudiodeviceselectiontype.md
+  - name: PartyAudioInputState
+    href: enums/partyaudioinputstate.md
+  - name: PartyAudioOutputState
+    href: enums/partyaudiooutputstate.md
+  - name: PartyAudioSampleType
+    href: enums/partyaudiosampletype.md
+  - name: PartyAudioSourceType
+    href: enums/partyaudiosourcetype.md
+  - name: PartyChatControlChatIndicator
+    href: enums/partychatcontrolchatindicator.md
+  - name: PartyChatPermissionOptions
+    href: enums/partychatpermissionoptions.md
+  - name: PartyChatTextReceivedOptions
+    href: enums/partychattextreceivedoptions.md
+  - name: PartyDestroyedReason
+    href: enums/partydestroyedreason.md
+  - name: PartyDeviceConnectionType
+    href: enums/partydeviceconnectiontype.md
+  - name: PartyDirectPeerConnectivityOptions
+    href: enums/partydirectpeerconnectivityoptions.md
+  - name: PartyEndpointStatistic
+    href: enums/partyendpointstatistic.md
+  - name: PartyGender
+    href: enums/partygender.md
+  - name: PartyInvitationRevocability
+    href: enums/partyinvitationrevocability.md
+  - name: PartyLocalChatControlChatIndicator
+    href: enums/partylocalchatcontrolchatindicator.md
+  - name: PartyLocalUdpSocketBindAddressOptions
+    href: enums/partylocaludpsocketbindaddressoptions.md
+  - name: PartyLocalUserRemovedReason
+    href: enums/partylocaluserremovedreason.md
+  - name: PartyMessageReceivedOptions
+    href: enums/partymessagereceivedoptions.md
+  - name: PartyNetworkStatistic
+    href: enums/partynetworkstatistic.md
+  - name: PartyOption
+    href: enums/partyoption.md
+  - name: PartySendMessageOptions
+    href: enums/partysendmessageoptions.md
+  - name: PartyStateChangeResult
+    href: enums/partystatechangeresult.md
+  - name: PartyStateChangeType
+    href: enums/partystatechangetype.md
+  - name: PartySynthesizeTextToSpeechType
+    href: enums/partysynthesizetexttospeechtype.md
+  - name: PartyTextChatFilterLevel
+    href: enums/partytextchatfilterlevel.md
+  - name: PartyTextChatOptions
+    href: enums/partytextchatoptions.md
+  - name: PartyThreadId
+    href: enums/partythreadid.md
+  - name: PartyTranslationReceivedOptions
+    href: enums/partytranslationreceivedoptions.md
+  - name: PartyVoiceChatTranscriptionOptions
+    href: enums/partyvoicechattranscriptionoptions.md
+  - name: PartyVoiceChatTranscriptionPhraseType
+    href: enums/partyvoicechattranscriptionphrasetype.md
+  - name: PartyWorkMode
+    href: enums/partyworkmode.md
+- name: Typedefs
+  href: typedefs.md

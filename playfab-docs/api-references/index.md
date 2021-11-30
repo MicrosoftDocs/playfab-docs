@@ -1,7 +1,7 @@
 ---
-title: API References
+title: REST API Reference
 author: joannaleecy
-description: Overview page for PlayFab API reference documentation.
+description: Overview page for PlayFab REST API reference documentation.
 ms.author: joanlee
 ms.date: 11/19/2018
 ms.topic: article
@@ -10,9 +10,9 @@ keywords: playfab, api
 ms.localizationpriority: medium
 ---
 
-# API References
+# REST API overview
 
-Welcome to the PlayFab API reference. Here you will find reference material and gain insight into how our APIs work. Each API reference is broken down into several different sections.
+Welcome to the PlayFab REST API reference. Here you will find reference material and gain insight into how our APIs work. Each API reference is broken down into several different sections.
 
 ## Endpoint
 
@@ -32,7 +32,7 @@ The request body is the object model that is sent as (JSON) to our API service. 
 
 The API service will either return a 200 OK with a JSON payload that can be deserialized as a model. In the below example, Login API calls deserialize into a type of LoginResult.
 
-![Responses](images/responses.png)
+![Example 200 OK response with a LoginResult](images/responses.png)
 
 If the response fails for any reason, a 400 Bad Request is received. This could mean the API service is returning information about a bad request. Often, this could be missing parameters in your API call or a number of other reasons. The ApiErrorWrapper object contains valuable information about the error including error codes, error details and error messages from the server.
 
