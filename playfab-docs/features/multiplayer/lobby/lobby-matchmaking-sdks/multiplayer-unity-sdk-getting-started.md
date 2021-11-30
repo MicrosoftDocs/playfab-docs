@@ -15,9 +15,13 @@ ms.localizationpriority: medium
 > [!IMPORTANT]
 > This feature is in **private preview** for limited, Microsoft managed partners.
 
-Overview and specific set up instructions.
+To get started, see the following topics.
+
+* [Multiplayer Unity plugin overview](multiplayer-unity-overview.md)
+* [Specific Unity set up instructions](multiplayer-unity-plugin-quickstart.md).
 
 ## See also
 
-* [Overview of Multiplayer Unity plugin](multiplayer-unity-overview.md)
-* [Quickstart for Multiplayer Unity plugin](multiplayer-unity-plugin-quickstart.md)
+* [Getting started with Lobby](../lobby-getting-started.md)
+* [Lobby Client SDK reference](../playfabmultiplayerreference-cpp/pflobby/pflobby_members.md)
+* [Lobby SDKs](../lobby-matchmaking-sdks/lobby-matchmaking-sdks.md)

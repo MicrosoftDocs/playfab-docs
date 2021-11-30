@@ -19,9 +19,9 @@ This topic describes all the Azure PlayFab Lobby and Matchmaking SDKs that are c
 
 If you don't find what you need, let us know by writing a post on our [forums](https://community.playfab.com/index.html).
 
-Access to SDKs for PC(Win32), Nintendo Switch, PlayStation 4, PlayStation 5, PC (GDK), and Xbox (GDK) requires special approval and adherence to platform policies. For more information, see [Request access for SDKs and samples](../../networking/request-access-for-sdks-samples.md). 
+Access to SDKs for PC(Win32), Nintendo Switch, PlayStation 4, PlayStation 5, PC (GDK), and Xbox (GDK) requires special approval and adherence to platform policies.
 
-If you're looking for the core PlayFab SDK that helps you implement a majority of our features, including LiveOps, economy, matchmaking, and data analytics, see [PlayFab SDKs](../../../../sdks/playfab-sdk-intro.md).
+If you're looking for the core PlayFab SDK that helps you implement most of our features, including LiveOps, economy, matchmaking, and data analytics, see [PlayFab SDKs](../../../../sdks/playfab-sdk-intro.md).
 
 > [!Tip]
 > Unsure if this is the SDK you need? See [SDK overview - PlayFab SDK, Party SDK, Multiplayer Server SDK](../../../../sdks/sdk-overview.md).
@@ -37,7 +37,7 @@ If you're looking for the core PlayFab SDK that helps you implement a majority o
 
 ## See also
 
-* [Quickstart for Unity](../../networking/party-unity-plugin-quickstart.md)
+* [Quickstart for Unity](multiplayer-unity-sdk-getting-started.md)
 * [Quickstart for Unreal](../../networking/party-unreal-engine-oss-quickstart.md)
 * [Lobby overview](../index.md)
 * [Getting started with Lobby](../lobby-getting-started.md)
