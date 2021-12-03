@@ -83,8 +83,8 @@ var method = "post";
 var contentBody = "grant_type=client_credentials";
 var contentType = "application/x-www-form-urlencoded";
 var headers = {};
-Headers["client_id"] = clientId;
-Headers["client_secret"] = clientSecret;
+headers["client_id"] = clientId;
+headers["client_secret"] = clientSecret;
 
 var tokenResponse =  http.request(url,method,contentBody,contentType,headers);
 ```
@@ -106,7 +106,7 @@ var method = "post";
 var contentBody = customActionBody;
 var contentType = "application/json";
 var headers = {};
-Headers["authorization"] = "Bearer " + bearer_access_token;
+headers["authorization"] = "Bearer " + bearer_access_token;
 ```
 
 So the basic pattern in this case is that you use your application’s client ID and secret, in order to obtain the unique Bearer Access token for the call - and then use it to secure that call.
