@@ -50,7 +50,7 @@
   - name: Lobby and Matchmaking SDKs
     href: features/multiplayer/lobby/lobby-matchmaking-sdks/toc.yml
   - name: Multiplayer Server SDKs
-    href: features/multiplayer/servers/server-sdks.md
+    href: features/multiplayer/servers/server-sdks/toc.yml
   - name: Party SDKs
     href: features/multiplayer/networking/party-sdks/toc.yml
   - name: PlayFab SDKs
