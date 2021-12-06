@@ -1,6 +1,0 @@
-- name: Overview
-  href: ../servers-sdks.md
-- name: Unreal Engine 5
-  items:
-  - name: Unreal GSDK plugin
-    href: unreal-gsdk-plugin-overview
