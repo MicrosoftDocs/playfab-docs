@@ -10,7 +10,7 @@ keywords: playfab, multiplayer, servers
 ms.localizationpriority: medium
 ---
 
-# Matchmaking quickstart
+# Matchmaking REST API quickstart
 
 This quickstart guide walks you through the entire process for integrating the matchmaking feature. All code examples within this quickstart are for Unity - however, the concepts and flow apply (in general) to other platforms as well.
 

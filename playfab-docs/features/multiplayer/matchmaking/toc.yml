@@ -1,6 +1,8 @@
 - name: Overview
   href: index.md
-- name: Quickstart
+- name: Quickstart - Client SDK
+  href: quickstart-client-sdk.md
+- name: Quickstart - REST API
   href: quickstart.md
 - name: Tutorials
   href: tutorials.md

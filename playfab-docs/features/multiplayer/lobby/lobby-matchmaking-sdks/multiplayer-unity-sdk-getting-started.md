@@ -24,4 +24,6 @@ To get started, see the following topics.
 
 * [Getting started with Lobby](../lobby-getting-started.md)
 * [Lobby Client SDK reference](../playfabmultiplayerreference-cpp/pflobby/pflobby_members.md)
-* [Lobby SDKs](../lobby-matchmaking-sdks/lobby-matchmaking-sdks.md)
+* [Getting started with Matchmaking](../../matchmaking/quickstart-client-sdk.md)
+* [Matchmaking Client SDK reference](../playfabmultiplayerreference-cpp/pfmatchmaking/pfmatchmaking_members.md)
+* [Multiplayer SDKs](../lobby-matchmaking-sdks/lobby-matchmaking-sdks.md)
