@@ -58,6 +58,8 @@
     href: directly-debugging-game-servers.md
   - name: Locally debugging game servers and integration
     href: locally-debugging-game-servers-and-integration-with-playfab.md
+  - name: Enabling automatic collection of crash dump
+    href: crash-dump-collection.md
   - name: Attaching a profiler
     href: attaching-a-profiler.md
 - name: Scaling game servers
