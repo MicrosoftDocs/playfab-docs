@@ -38,9 +38,9 @@ Get started with the PlayFab REST API collection for Postman. Follow steps to in
   > ![Postman Import From Link](./media/tutorials/postman-new-import-from-link.png "Postman Import From Link")
 - Paste the following link into the URL text box and select **Import**
 
-    https://raw.githubusercontent.com/PlayFab/PostmanCollection/master/playfab.json
+    https://raw.githubusercontent.com/PlayFab/PostmanCollection/master/playfabV2.json
 
-  - If you are trying to download the beta SDK, go to the playfab.json file in the [Postman Beta GitHub repository](https://github.com/PlayFab/PostmanBeta/blob/master/playfab.json)
+  - If you are trying to download the beta SDK, go to the playfabV2.json file in the [Postman Beta GitHub repository](https://github.com/PlayFab/PostmanBeta/blob/master/playfabV2.json)
   - Select **View Raw**
 
     > [!div class="mx-imgBorder"]
