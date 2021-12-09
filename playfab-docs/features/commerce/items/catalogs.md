@@ -209,7 +209,7 @@ To create a **Catalog**:
 
 ## Uploading a catalog
 
-To upload a a JSON file to create a catalog in Game Manager, perform the following steps:
+To upload a JSON file to create a catalog in Game Manager, perform the following steps:
 
 - Select your **Game** in **Game Manager**.
 - Select **Economy**.

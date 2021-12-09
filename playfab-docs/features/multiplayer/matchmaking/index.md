@@ -69,7 +69,8 @@ For more information on specific flows from either your game client or service, 
 
 ### Quickstart guide
 
-+ [Quickstart](quickstart.md)
++ [Quickstart - Client SDK](quickstart-client-sdk.md)
++ [Quickstart - REST API](quickstart.md)
 
 ### Configuration
 
@@ -91,10 +92,10 @@ For more information on specific flows from either your game client or service, 
 + [Matchmaking API Reference (Public Preview)](xref:titleid.playfabapi.com.multiplayer.matchmaking)
 <!-- + [Matchmaking Admin API Reference (Public Preview)](xref:titleid.playfabapi.com.multiplayer.matchmakingadmin) -->
 + [PlayStream Events](../../../api-references/events/index.md)
-    + [matchmaking_match_found](../../../api-references/events/matchmaking-match-found)
-    + [matchmaking_ticket_completed](../../../api-references/events/matchmaking-ticket-completed)
-    + [matchmaking_user_ticket_completed](../../../api-references/events/matchmaking-user-ticket-completed)
-    + [matchmaking_user_ticket_invite](../../../api-references/events/matchmaking-user-ticket-invite)
+    + [matchmaking_match_found](../../../api-references/events/matchmaking-match-found.md)
+    + [matchmaking_ticket_completed](../../../api-references/events/matchmaking-ticket-completed.md)
+    + [matchmaking_user_ticket_completed](../../../api-references/events/matchmaking-user-ticket-completed.md)
+    + [matchmaking_user_ticket_invite](../../../api-references/events/matchmaking-user-ticket-invite.md)
 
 ### Public preview release notes
 
