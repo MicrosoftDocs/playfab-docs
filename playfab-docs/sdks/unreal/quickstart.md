@@ -46,6 +46,12 @@ To enable the PlayFab Plugin:
 1. From the **Settings** menu, under **Game Specific Settings** click **Plugins**.
 2. Enable the **PlayFab** plugin and restart Unreal Engine as required.
 
+## Update PlayFab Plugins Settings
+
+1. From the **Project Settings** menu, under **Plugins** click **PlayFab*.
+2. Update the **Title ID** and **Developer Secret Key** with your PlayFab Title ID and Developer Secret Key.
+
+
 ### Add PlayFab as a Module dependency in C++
 
 In Visual Studio, add PlayFab as a module dependency in your C++ project:
@@ -139,7 +145,6 @@ void ALoginActor::BeginPlay()
     Super::BeginPlay();
 
     clientAPI = IPlayFabModuleInterface::Get().GetClientAPI();
-    clientAPI->SetTitleId(TEXT("144"));
 
     PlayFab::ClientModels::FLoginWithCustomIDRequest request;
     request.CustomId = TEXT("GettingStartedGuide");
