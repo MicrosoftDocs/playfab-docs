@@ -23,4 +23,4 @@ This SDK can alternatively be obtained via our CDN. Additional details can be fo
 Download Links:
 
 - [Download Source Code](https://github.com/PlayFab/JavaScriptSDK)
-- [Download PlayFab SDK](https://api.playfab.com/downloads/javascript)
+- [Download PlayFab SDK](https://aka.ms/playfabjavascriptsdkdownload)

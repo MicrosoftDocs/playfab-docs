@@ -61,7 +61,7 @@ That means PlayFab is capable of supporting additional features, even if they’
 
 - **For sophisticated multiplayer games, build your own custom game server**, then let PlayFab host it for you with **automatic scaling** in data centers around the world to ensure you never run out of room for new players. Use PlayFab’s built-in *matchmaking* algorithm to find the best match between players in real-time, based on logic you configure, or plug in your own matchmaking server.
 
-- **Monetization** is one of the most important elements of your game’s strategy.. Here too PlayFab has powerful tools and services to maximize your upside while protecting you from the many pitfalls.
+- **Monetization** is one of the most important elements of your game’s strategy. Here too PlayFab has powerful tools and services to maximize your upside while protecting you from the many pitfalls.
 
 - Don’t let fraudsters ruin your game - and empty your pockets - with fake purchases. Server-side **receipt validation** ensures your Apple or Google receipts are genuine before a player completes a purchase transaction. PlayFab also supports **third-party payment processing** from Xsolla, PayPal, Steam, Xbox, and more.
 

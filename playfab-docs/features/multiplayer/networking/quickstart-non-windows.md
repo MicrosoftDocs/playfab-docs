@@ -6,16 +6,13 @@ ms.author: debh
 ms.date: 08/05/2019
 ms.topic: article
 ms.prod: playfab
-ROBOTS: NOINDEX,NOFOLLOW
 keywords: playfab, multiplayer, party, networking, communication
 ms.localizationpriority: medium
 ---
 
-# Quickstart for PlayFab Party on Android, iOS and Switch
+# Getting started with the Party SDK
 
-This quickstart is intended to be a high-level overview of the facets of PlayFab Party on Platforms other than Windows and Xbox (iOS, Android, and Nintendo Switch). PlayFab Party was designed to be cross-platform from the ground up. 
-
-Similarly, we've structured these quickstarts in the same way, where most of the information applies to all platforms, and platform-specific prerequisites and steps are described in the linked documents.
+This quickstart is intended to be a high-level overview of the facets of PlayFab Party. PlayFab Party was designed to be cross-platform from the ground up. We've structured these quickstarts in the same way, where most of the information applies to all platforms, and platform-specific prerequisites and steps are described in the linked documents.
 
 In this quickstart, critical pieces of functionality are highlighted via explanatory text and code snippets. However, please note that this is not a step-by-step walk-through. Please consult the linked reference and conceptual documentation, as well as refer to the source code of the demo sample for different platforms that comes with the Party libraries, for a deeper understanding.
 
@@ -38,8 +35,9 @@ Once you've finished the platform-specific steps, please continue with the rest 
 
 ## Log into your PlayFab title and obtain an entity token and entity ID
 
-In order to initialize and use Party, it is a requirement to log in to PlayFab. You can use [PlayFabClientAPI::LoginWithCustomID](https://api.playfab.com/documentation/client/method/LoginWithCustomID) or any other login method to do this. 
-Once you execute login, you'll be returned an entity ID and entity token as part of the [LoginResult](https://api.playfab.com/documentation/client/datatype/playfab.client.models/PlayFab.Client.Models.LoginResult).
+In order to initialize and use Party, it is a requirement to log in to PlayFab. You can use [PlayFabClientAPI::LoginWithCustomID](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid)
+ or any other login method to do this. 
+Once you execute login, you'll be returned an entity ID and entity token as part of the [LoginResult](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid#loginresult).
 
 These two key pieces of information are later utilized to initialize a Local user instance for PlayFab Party. The relevant code snippet is below and as always, please refer to the demo sample code in PlayFabManager.cpp
 
@@ -49,7 +47,7 @@ PlayFabClientAPI::LoginWithCustomID(
         [this, callback, userId](const LoginResult& loginResult, void*)
         {
             // Sign in was successful.
-            DEBUGLOG("Playfab::signin -- Login with custom id callback\n");
+            DEBUGLOG("PlayFab::signin -- Login with custom id callback\n");
 
             // Save the PlayFab id and entity data for Party authentication.
             m_playfabId = loginResult.PlayFabId;
@@ -64,7 +62,7 @@ Once you've successfully obtained the entity ID and entity token from PlayFab, y
 
 ## Initialize PlayFab Party
 
-Before proceeding with this section, it is recommended that you read through [Understanding Party conceptual documentation.](concepts-overview.md) and the code comments in the public Party.h header.
+Before proceeding with this section, it is recommended that you read through [Understanding Party conceptual documentation.](concepts-objects.md) and the code comments in the public Party.h header.
 
 Initializing Party is done via the NetworkManager.cpp code that's provided as part of the Party Demo Apps, and is common to all platforms. 
 
@@ -244,7 +242,7 @@ Once the function call to CreateNewNetwork() succeeds, a network descriptor [Par
 
 Once a Party network has been created and you have a network descriptor, the next step is to somehow broadcast this network descriptor to other users such that they can join. This is where PlayFab Matchmaking or any matchmaking service can come into play. 
 
-We implemented simple matchmaking using [PlayFab CloudScripts](https://api.playfab.com/docs/tutorials/landing-automation/using-cloud-script) in the demo samples, which work as follows:
+We implemented simple matchmaking using [PlayFab CloudScripts](../../automation/cloudscript/quickstart.md) in the demo samples, which work as follows:
    
 1. The user creating the network creates a json key value pair with a room number as key and the network descriptor as value. 
    

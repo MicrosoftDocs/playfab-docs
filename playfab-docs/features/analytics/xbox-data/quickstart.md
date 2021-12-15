@@ -14,14 +14,14 @@ ms.localizationpriority: low
 
 > [!IMPORTANT]
 > This feature is currently in **Private Preview**.
-> It is provided to give you an early look at an upcoming feature, and to allow you to provide feedback while it is still in development.  
+> It is provided to give you an early look at an upcoming feature, and to allow you to provide feedback while it is still in development.
 >
-> Access to this feature is restricted to select titles. If you are interested in trying it, please contact us at [helloplayfab@microsoft.com](mailto:helloplayfab@microsoft.com).
+> Access to this feature is restricted to select titles. Customers in our Indie, Pro, and Enterprise tiers can request access by opening a ticket with our support team via the Contact Us tab in the PlayFab Game Manager.
 
 The Xbox Data Add-On provides transaction-level usage and purchase data from Microsoft's Xbox and Store to your PlayFab Insights database/cluster. From here, you can run direct queries against the data. It is designed to benefit any Xbox developer, whether or not they use the PlayFab SDK.
 
 > [!NOTE]
-> This feature is currently only available to customers participating in the PlayFab Insights private preview. For information on the PlayFab Insights Private Preview, visit [PlayFab Insights quickstart](../data-warehouse/quickstart.md).
+> Data will be accessible from the PlayFab Explorer feature. For information, visit the [PlayFab Explorer quickstart](../../Insights/explorer/quickstart.md).
 
 ## Step 1 - Create a PlayFab Account
 
@@ -33,7 +33,6 @@ To onboard to the Xbox Data Add-On:
 ## Step 2 - Request to the PlayFab Insights Private Preview
 
 - Email [pfgaminginsights@microsoft.com](mailto:pfgaminginsights@microsoft.com) to request access to both the Insights program and the Xbox Data Add-On.
-- Once onboarded, follow the instructions on the [Insights quickstart](../data-warehouse/quickstart.md) tutorial to set up your database and cluster, from which you'll access the data.
 
 ## Step 3 - Map your Product IDs
 

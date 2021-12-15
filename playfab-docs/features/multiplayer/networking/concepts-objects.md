@@ -6,7 +6,6 @@ ms.author: jdewey
 ms.date: 08/16/2019
 ms.topic: article
 ms.prod: playfab
-ROBOTS: NOINDEX,NOFOLLOW
 keywords: playfab, multiplayer, networking
 ---
 
@@ -151,7 +150,7 @@ For platforms and games that support multiple local players logged in, additiona
 `PartyLocalUser` objects are also important because they're the basis of all authentication.
 A valid local *user* must exist in order to create a new [network](#network) or to authentication into one.
 
-Authorizing users is described in more detail in the the topic covering [Invitations and the security model](concepts-invitations-security-model.md).
+Authorizing users is described in more detail in the topic covering [Invitations and the security model](concepts-invitations-security-model.md).
 
 Almost every operation requires a `PartyLocalUser` to be provided or present, even though very few operations are performed on `PartyLocalUser` objects themselves.
 

@@ -2,11 +2,13 @@
   href: index.md
 - name: Quickstart
   href: quickstart.md
+- name: Available built-in Entity types
+  href: available-built-in-entity-types.md
+- name: Migration information
+  href: migration-information.md
 - name: Tutorials
   href: tutorials.md
   items:
-  - name: Available built-in Entity types
-    href: available-built-in-entity-types.md
   - name: Entity Groups
     href: ..\..\social\groups\quickstart.md
   - name: Entity API Restructure Upgrade Tutorial

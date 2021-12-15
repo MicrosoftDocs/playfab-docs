@@ -1,8 +1,8 @@
 ---
 title: Available Built-In Entity Types
-author: v-thopra
+author: vDonGlover
 description: Lists all of the available built in Entity types.
-ms.author: v-thopra
+ms.author: v-doglo
 ms.date: 11/08/2018
 ms.topic: article
 ms.prod: playfab
@@ -12,65 +12,72 @@ ms.localizationpriority: medium
 
 # Available built-in entity types
 
-The following list describes the available entity types, which can be used to construct an `EntityKey`.
+This topic describes the available entity types that you can use to construct an [EntityKey](../../../api-references/events/data-types/entitykey.md).
 
-Entity keys are used to identify entities in most newer API methods.
+Entity keys identify entities in most of the newer API methods.
 
-These values are meant to be used in the `EntityKey.Type` field.
-
-> [!NOTE]
-> These are *case sensitive*. Other or custom values *will not* currently work.
-
-## Namespace
-
-Namespace is the singular entity that refers to *all* global information for every title within a studio. This information should be static.
+You use the value of the `EntityKey.Type` field to determine the type of value to set in the `ID` field.
 
 > [!NOTE]
-> Changes to this entity will *not* be reflected in real time.
+> Entity keys are *case sensitive*.
 
-The `ID` field should be set to your game's **Publisher ID**, found in **Game Manager**:
+## namespace
 
-- Go to **Settings**.
+The `namespace` entity refers to *all* global information for all titles within your studio.
+
+> [!NOTE]
+> Changes to this entity are *not* reflected in real time.
+
+Set the `ID` field to your game's **Publisher ID**. To retrieve your **Publisher ID**:
+
+- Sign in to [Game Manager](https://playfab.com/).
+- In the upper left-hand corner of **Game Manger**, select the gear icon.
+- Select **Title Settings**.
 - Select **API Features**.
-- Then select the **Publisher ID**.
+- The **Publisher ID** is displayed in the **API ACCESS** section.
 
-## Title
+## title
 
-Title is the singular entity that refers to all global information for that title. This information should be static.
+The `title` entity refers to all global information for that title.
 
 > [!NOTE]
-> Changes to this entity will *not* be reflected in real time.
+> Changes to this entity are *not* reflected in real time.
 
-The `ID` field should be set to your game's **Title ID**, found in **Game Manager**:
+Set the `ID` field to your game's **Title ID**. To retrieve the **Title ID**:
 
-- Go to **Settings**.
+- Sign in to [Game Manager](https://playfab.com/).
+- In the upper left-hand corner of **Game Manger**, select the gear icon.
+- Select **Title Settings**.
 - Select **API Features**.
-- Then select the **Title ID**.
+- The **Title ID** is displayed in the **API ACCESS** section.
 
 ## master_player_account
 
-The `master_player_account` is a player entity that is shared among all titles within a studio.
+The `master_player_account` is a player entity that is shared by all titles within your studio.
 
-The `ID` field should be set to `PlayFabId` from the classic API, returned by any `LoginResult.PlayFabId`.
+Set the `ID` field to the `LoginResult.PlayFabId` from the classic API. To retrieve the `LoginResult`, call one of the login methods in [Client Authentication](xref:titleid.playfabapi.com.client.authentication).
 
 ## title_player_account
 
-`title_player_account`, for most developers, represents the player in the most traditional way.
+For most developers, `title_player_account` represents the player in the most traditional way.
 
-The `ID` field should be set to `LoginResult.EntityToken.Id` in the client API, or `GetEntityTokenResponse.Entity.Id` in the authentication API.
+Set the `ID` field to `LoginResult.EntityToken.Entity.Id` in the client API, or `GetEntityTokenResponse.Entity.Id` in the authentication API.
 
-## Character
+To retrieve the `LoginResult`, call one of the login methods in [Client Authentication](xref:titleid.playfabapi.com.client.authentication).
+To retrieve the `GetEntityTokenResponse`, call [Get Entity Token](xref:titleid.playfabapi.com.authentication.authentication.getentitytoken).
 
-Character is a sub-entity of `title_player_account`, and is a direct mirror of [Characters in the Classic APIs](xref:titleid.playfabapi.com.client.characters.getalluserscharacters).
+## character
 
-The `ID` field should be set to any `characterId` from `result.Characters[i].CharacterId`.
+The `character` entity is a sub-entity of `title_player_account`, and is a direct mirror of [Characters in the Classic APIs](xref:titleid.playfabapi.com.client.characters.getalluserscharacters).
 
-## Group
+Set the `ID` field to any `characterId` from `result.Characters[i].CharacterId`.
 
-Group is an entity that contains other entities. It is currently limited to players and characters.
+## group
 
-The `ID` field should be set to the `result.Group.Id` if you are creating a group, or the `result.Groups[i].Group.Id` when [listing your memberships](xref:titleid.playfabapi.com.groups.groups.listmembership).
+The `group` entity is a container  for other entities. It is currently limited to players and characters.
 
-## Service
+Set the `ID` field to the `result.Group.Id` if you are creating a group, or the `result.Groups[i].Group.Id` when [listing your memberships](xref:titleid.playfabapi.com.groups.groups.listmembership).
 
-Service is reserved for internal use only.
+## service
+
+The `service` entity is reserved for internal use.

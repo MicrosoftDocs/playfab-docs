@@ -21,17 +21,6 @@ Your player is already logged into PlayFab.
 ## Step 1 - Create a statistic and associated leaderboard
 
 In the Game Manager:
-
-
-## How to Implement Leaderboards?
-In the Game Manager:
-
-- 	Go to Leaderboards in the menu to the left.
-- 	Select NEW LEADERBOARD.
-- 	Configure your new leaderboard the way you want.
-- 	Click SAVE.
-  
-  -----------------------
 - Go to **Leaderboards** in the menu to the left.
 - Select **NEW LEADERBOARD**.
 - Add a **Leaderboard** called **HighScore** in the **Statistic name** field.

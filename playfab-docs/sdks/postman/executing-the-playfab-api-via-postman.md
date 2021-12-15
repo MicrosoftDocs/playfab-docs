@@ -34,7 +34,7 @@ Postman is an HTTP Request tool, useful to both intermediate and advanced users.
 
    ![Postman - Blank screen](media/tutorials/postman-blank-screen.png)  
 
-3. Download our Postman [JSON collection](https://api.playfab.com/downloads/postman) (right-click, **Save link as...**).
+3. Download our Postman [JSON collection](https://aka.ms/playfabpostmanjsondownload) (right-click, **Save link as...**).
     - Select **Import** (on the top, black bar), and drag the saved JSON file into Postman.
 
    ![Postman - Import file](media/tutorials/postman-import-file.png)  

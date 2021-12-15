@@ -22,4 +22,3 @@ For example, you can have a client request a “daily reward” from your game, 
 
 - [CloudScript quickstart](quickstart.md)
 - [CloudScript tutorials](tutorials.md)
-- Coming soon: [CloudScript integration with Azure Functions](cloudscript-and-azure-functions.md)

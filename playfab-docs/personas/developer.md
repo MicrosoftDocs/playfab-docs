@@ -21,7 +21,39 @@ PlayFab offers you a wide range of services, and has over 280 different APIs tha
 Let's start with the first steps of making your game - and then move into the more advanced features as we go.
 
 > [!NOTE]
-> Before you can make your first API call, you need to create a [PlayFab Developer account](pfab-account.md). 
+> Before you can make your first API call, you need to create a [PlayFab Developer account](pfab-account.md).
+
+## Player login
+
+The first step in adding PlayFab to any game is adding code to login the player. Logging in the player returns a security token that is needed for all other API calls.
+
+Your game is identified by its **TitleId**. The quickstart guides listed later on this topic use a test **TitleId**. When following the guides, use a **TitleId** for a game that you have created.
+
+### Retrieving your TitleId
+
+If you haven't already, [register for a free PlayFab developer account](https://developer.playfab.com/en-us/sign-up).
+
+When you create a **Title** in Game Manager PlayFab generates a **TitleId**.
+
+To retrieve the **TitleId** for your game, log into the [Game Manager](https://developer.playfab.com/en-us/login).
+
+On the **My Studios and Titles** screen, locate your game. The **TitleId** is located just below the name of your game.
+
+> [!div class="mx-imgBorder"]
+> ![Game Manager - My Studios and Titles - Title ID](images/my-titlles-titleid.png)  
+
+## Login and account basics
+
+Now that you have created a game and retrieved your **TitleId**, you're set up to make API calls.
+
+The starting point for any PlayFab integration is *authentication*. You must authenticate your player to make further API calls. PlayFab offers a number of methods to authenticate and link your players.
+
+Here are some resources that will help you with the initial authentication of your player:
+
+- [Login basics and Best Practices](../features/authentication/login/login-basics-best-practices.md) – Check this tutorial first to learn about the best practices to use various authentication methods in your game.
+- **Authentication Service Helper** – Learn how this service can save you valuable time by leveraging building best practices in this authentication service for each SDK.
+- [Authentication quickstart](../features/authentication/platform-specific-authentication/index.md) – Use this guide to understand the basics of authentication calls into PlayFab.
+- [Account Linking tutorial](../features/authentication/login/quickstart.md) - Learn about linking and unlinking different types of accounts to a single player profile.
 
 ## Making your first API call with PlayFab
 
@@ -45,37 +77,6 @@ Pick your SDK:
 - [Windows - C++](../sdks/playfab-cpp/quickstart-windows.md)
 - [Linux - C++](../sdks/playfab-cpp/quickstart-linux.md)  
 - [Xbox - C++](../sdks/playfab-cpp/quickstart-xbox.md)
-
-## Updating your login mechanism
-
-The first step in adding PlayFab to any game is *always* logging in the player. Logging in the player returns a security token that is needed for all other API calls.
-
-The quickstart guides utilize a test **TitleId** - but from *now on*, you should be using your *own*.
-
-Create a **Title** in Game Manager, and update your environment with your own **TitleId**.
-
-### Obtaining your TitleId
-
-A **TitleId** is obtained from the Game Manager. If you haven't already, [register for a free PlayFab developer account](https://developer.playfab.com/en-us/sign-up), then [log into the Game Manager](https://developer.playfab.com/en-us/login).
-
-Once you have logged in, select **Settings**. The **TitleId** for your game should already be present in the field below the **Name** column.
-
-![Game Manager - Settings - Secret Keys - Title ID](images/game-manager-settings-secret-keys.png)  
-
-The SDK guide that you followed in the first step should have included instructions on how to enter your **Title ID**.
-
-## Login and account basics
-
-Now that you're set up to make API calls, the starting point for any PlayFab integration is *authentication*.
-
-You have to authenticate your player to make further API calls. PlayFab offers a number of methods to authenticate and link your players.
-
-Here are some resources that will help you with the initial authentication of your player:
-
-- [Login basics and Best Practices](../features/authentication/login/login-basics-best-practices.md) – Check this tutorial first to learn about the best practices to use various authentication methods in your game.
-- **Authentication Service Helper** – Learn how this service can save you valuable time by leveraging building best practices in this authentication service for each SDK.
-- [Authentication quickstart](../features/authentication/platform-specific-authentication/index.md) – Use this guide to understand the basics of authentication calls into PlayFab.
-- [Account Linking tutorial](../features/authentication/login/quickstart.md) - Learn about linking and unlinking different types of accounts to a single player profile.
 
 ## Next steps
 
@@ -102,7 +103,7 @@ Actions might result in a CloudScript being run. Our CloudScript is JavaScript c
 
 For more information, check out these resources to get you started with Cloud Scripting and Automation on PlayFab:
 
-- [Automation](../index.md?#pivot=documentation&panel=automation) – A hub for information on CloudScript, Scheduled Tasks, PlayStream and Action & Rules.
+- [Automation](../index?#pivot=documentation&panel=automation) – A hub for information on CloudScript, Scheduled Tasks, PlayStream and Action & Rules.
 - [CloudScript quickstart](../features/automation/cloudscript/quickstart.md) – Get up and running quickly with your first CloudScript call.
 
 > [!TIP]
@@ -112,12 +113,12 @@ For more information, check out these resources to get you started with Cloud Sc
 
 There is much more you can do with PlayFab. Check out each of our feature areas in the links provided below to find the right feature set for your game:
 
-- [Authentication](../index.md?#pivot=documentation&panel=authentication)
-- [Data](../index.md?#pivot=documentation&panel=data)
-- [Config](../index.md?#pivot=documentation&panel=config)
-- [Automation](../index.md?#pivot=documentation&panel=automation)
-- [Social](../index.md?#pivot=documentation&panel=social)
-- [Commerce](../index.md?#pivot=documentation&panel=commerce)
-- [Multiplayer](../index.md?#pivot=documentation&panel=multiplayer)
-- [Analytics](../index.md?#pivot=documentation&panel=analytics)
-- [Engagement](../index.md?#pivot=documentation&panel=engagement)
+- [Authentication](../index?#pivot=documentation&panel=authentication)
+- [Data](../index?#pivot=documentation&panel=data)
+- [Config](../index?#pivot=documentation&panel=config)
+- [Automation](../index?#pivot=documentation&panel=automation)
+- [Social](../index?#pivot=documentation&panel=social)
+- [Commerce](../index?#pivot=documentation&panel=commerce)
+- [Multiplayer](../index?#pivot=documentation&panel=multiplayer)
+- [Analytics](../index?#pivot=documentation&panel=analytics)
+- [Engagement](../index?#pivot=documentation&panel=engagement)

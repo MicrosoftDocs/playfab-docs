@@ -24,9 +24,9 @@ Some aspects of a build cannot be modified once a build is created, this is the 
 - **Container** - Required. The container that will host your game server. Currently only Windows Server Core containers can be chosen through the Game Manager UX ([although the API does support the usage of custom Linux containers](xref:titleid.playfabapi.com.multiplayer.multiplayerserver.createbuildwithcustomcontainer)). 
 
 > [!NOTE] 
-> Asset filenames cannot only contain alphanumeric characters, underscores, hyphens, and periods.
+> Asset filenames can only contain alphanumeric characters, underscores, hyphens, and periods.
 >
-> Certificate names can *only contain letters and numbers*. No spaces or special characters (dashes, underscores, etc.)
+> Certificate names can only contain letters and numbers. No spaces or special characters (dashes, underscores, etc.)
 
 You provide the build definition when you create a build through the PlayFab **Multiplayer Servers** tab:
 

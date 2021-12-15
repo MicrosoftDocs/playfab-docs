@@ -16,6 +16,8 @@ keywords: playfab, multiplayer, networking
 >
 > Access to this feature is restricted to select titles, with SDKs available for Windows 10 PCs and Xbox One. Interoperable SDKs for iOS and Android are available now. If you are interested in this feature, you can request access by submitting a ticket on [support.playfab.com](https://support.playfab.com/hc/en-us/requests/new).
 
+# PlayFab Party API Usage Guides
+
 There are two main ways Party can help you: full chat + data transport and as chat sidecar. The following are walk-throughs of code for common scenarios for each usage.
 
 * Leveraging PlayFab Party for data transport and chat

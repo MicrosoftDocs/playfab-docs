@@ -14,12 +14,16 @@
     href: integrating-game-servers-with-gsdk.md
   - name: Locally debugging game servers and integration with PlayFab
     href: locally-debugging-game-servers-and-integration-with-playfab.md
+  - name: Case study of Unreal Engine integration (UE4)
+    href:  playfabgsdk_guide.md   
 - name: Managing server builds
   items:
   - name: Deploying PlayFab multiplayer server builds
     href: deploying-playfab-multiplayer-server-builds.md
-  - name: Deploying Linux based builds via API
+  - name: Deploying Linux builds
     href: deploying-linux-based-builds.md
+  - name: Using aliases to aggregate and manage multiple builds
+    href: allocating-with-build-alias.md     
   - name: Archiving and retrieving multiplayer server logs
     href: archiving-and-retrieving-multiplayer-server-logs.md
   - name: Lifecycle of multiplayer server builds
@@ -38,9 +42,13 @@
   items:
   - name: Accessing increased core limits and additional Azure regions
     href: identifying-and-increasing-core-limits.md
-  - name: Billing for PlayFab Multiplayer Servers 
+  - name: Azure Enterprise Agreement (EA) billing for PlayFab services
+    href: ea-billing.md
+  - name: Billing for PlayFab Multiplayer Servers
     href: billing-for-thunderhead.md
   - name: Detailed price sheet for multiplayer servers
     href: multiplayer-servers-detailed-price-sheet.md
   - name: PlayFab incident response procedures
     href: comm-sla.md
+  - name: Tracking title consumption of multiplayer servers
+    href: tracking-consumption.md
