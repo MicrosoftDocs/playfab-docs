@@ -30,9 +30,9 @@ To create a game, you must, at a minimum, enter a name for the game. You can als
 
 ## Your studios and Titles
 
-When you have successfully created your account, studio, and first game, Game Manger opens in the dashboard for your Title.
+When you have successfully created your account, studio, and first game, Game Manager opens in the dashboard for your Title.
 
-The next time you log in, Game Manager opens the **My Studios and Titles** page. From there, you can select a Title to open its dashboard. For a detailed introduction to the features of Game Manager, see [Game Manger reference](reference.md).
+The next time you log in, Game Manager opens the **My Studios and Titles** page. From there, you can select a Title to open its dashboard. For a detailed introduction to the features of Game Manager, see [Game Manager reference](reference.md).
 
 Many API calls require a TitleId, which is the string ID found beneath the title of your game. In the following dashboard, the title is "My Game" and TitleId is "F71AC."
 
