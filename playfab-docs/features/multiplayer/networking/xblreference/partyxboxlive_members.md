@@ -1,14 +1,14 @@
 ---
 author: ScottMunroMS
-title: "PartyXboxLive"
-description: TBD
+title: "PartyXboxLive C/C++ API overview"
+description: "PartyXboxLive C/C++ API overview"
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 01/17/2020
+ms.date: 12/09/2021
 ---
 
-# PartyXboxLive members  
+# PartyXboxLive C/C++ API overview
 
   
 ## Classes  

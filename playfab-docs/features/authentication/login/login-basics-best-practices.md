@@ -95,7 +95,6 @@ These require a separate SDK installed into your game. Secure authentication hap
 
 - [LoginWithFacebook](xref:titleid.playfabapi.com.client.authentication.loginwithfacebook)
 - [LoginWithGoogleAccount](xref:titleid.playfabapi.com.client.authentication.loginwithgoogleaccount)
-- [LoginWithWindowsHello](xref:titleid.playfabapi.com.client.authentication.loginwithwindowshello).
 
 In all 3rd party options, those services process the login credentials, and you pass a secure token to the appropriate PlayFab login method. PlayFab remains unaware of the login credentials for those services.
 

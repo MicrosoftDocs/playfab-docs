@@ -1,14 +1,14 @@
 ---
 author: tomcoMSFT
-title: "PFMultiplayer"
-description: TBD
+title: "PFMultiplayer C/C++ API overview - PFMultiplayer.h"
+description: "PFMultiplayer C/C++ API overview - PFMultiplayer.h"
 ms.author: tomco
 ms.topic: reference
 ms.prod: playfab
-ms.date: 11/09/2021
+ms.date: 12/10/2021
 ---
 
-# PFMultiplayer members  
+# PFMultiplayer C/C++ API overview - PFMultiplayer.h
 
 > [!IMPORTANT]
 > This feature is in **private preview** for limited, Microsoft managed partners.
@@ -24,6 +24,13 @@ ms.date: 11/09/2021
 | [PFMultiplayerSetMemoryCallbacks](functions/pfmultiplayersetmemorycallbacks.md) | Optionally configures the memory allocation and freeing callbacks the Multiplayer library should use. |  
 | [PFMultiplayerSetThreadAffinityMask](functions/pfmultiplayersetthreadaffinitymask.md) | Optionally configures the processor on which internal Multiplayer library threads will run. |  
 | [PFMultiplayerUninitialize](functions/pfmultiplayeruninitialize.md) | Immediately reclaims all resources associated with all Multiplayer library objects. |  
+  
+## Callbacks  
+
+| Callback | Description |  
+| --- | --- |  
+| [PFMultiplayerAllocateMemoryCallback](callbacks/pfmultiplayerallocatememorycallback.md) | A callback invoked every time a new memory buffer must be dynamically allocated by the PlayFab Multiplayer library. |  
+| [PartyFreeMemoryCallback](callbacks/pfmultiplayerfreememorycallback.md) | A callback invoked every time a previously allocated memory buffer is no longer needed by the PlayFab Multiplayer library and can be freed. |  
   
 ## Enumerations  
 

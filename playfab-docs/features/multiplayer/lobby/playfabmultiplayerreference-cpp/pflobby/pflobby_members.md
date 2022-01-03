@@ -1,18 +1,19 @@
 ---
 author: tomcoMSFT
-title: "PFLobby"
-description: TBD
+title: "PFMultiplayer C/C++ API overview - PFLobby.h"
+description: "PFMultiplayer C/C++ API overview - PFLobby.h"
 ms.author: tomco
 ms.topic: reference
 ms.prod: playfab
-ms.date: 11/23/2021
+ms.date: 12/10/2021
 ---
 
-# PFLobby members  
+# PFMultiplayer C/C++ API overview - PFLobby.h
 
 > [!IMPORTANT]
 > This feature is in **private preview** for limited, Microsoft managed partners.
 
+  
 ## Functions  
 
 | Function | Description |  
@@ -52,11 +53,22 @@ ms.date: 11/23/2021
 
 | Structure | Description |  
 | --- | --- |  
-| [PFLobbyAddMemberCompletedStateChange](structs/pflobbyaddmembercompletedstatechange.md) | Information specific to the *AddMemberCompleted* type of state change. |  
 | [PFLobbyArrangedJoinConfiguration](structs/pflobbyarrangedjoinconfiguration.md) | The initial configuration data used when joining an arranged lobby. |  
-| [PFLobbyCreateAndJoinLobbyCompletedStateChange](structs/pflobbycreateandjoinlobbycompletedstatechange.md) | Information specific to the *CreateAndJoinLobbyCompleted* type of state change. |  
 | [PFLobbyCreateConfiguration](structs/pflobbycreateconfiguration.md) | The initial configuration data used when creating a lobby. |  
 | [PFLobbyDataUpdate](structs/pflobbydataupdate.md) | A request to make an update to the shared portion of the lobby on behalf of a member. |  
+| [PFLobbyJoinConfiguration](structs/pflobbyjoinconfiguration.md) | The initial configuration data used when joining a lobby. |  
+| [PFLobbyMemberDataUpdate](structs/pflobbymemberdataupdate.md) | A request to make an update to the member-owned portion of the lobby document. |  
+| [PFLobbyMemberUpdateSummary](structs/pflobbymemberupdatesummary.md) | A collection of hints about an update which has been successfully applied to the lobby on behalf of a member. |  
+| [PFLobbySearchConfiguration](structs/pflobbysearchconfiguration.md) | The configuration structure used to specify how a [PFMultiplayerFindLobbies](functions/pfmultiplayerfindlobbies.md) operation should be performed. |  
+| [PFLobbySearchFriendsFilter](structs/pflobbysearchfriendsfilter.md) | The filter structure used to limit lobby search results to only those lobbies owned by the player's friends. |  
+| [PFLobbySearchResult](structs/pflobbysearchresult.md) | An entry in the collection of lobby search results received upon successful completion of a [PFMultiplayerFindLobbies](functions/pfmultiplayerfindlobbies.md) operation. |  
+  
+## State changes  
+  
+| State change | Description |  
+| --- | --- |  
+| [PFLobbyAddMemberCompletedStateChange](structs/pflobbyaddmembercompletedstatechange.md) | Information specific to the *AddMemberCompleted* type of state change. |  
+| [PFLobbyCreateAndJoinLobbyCompletedStateChange](structs/pflobbycreateandjoinlobbycompletedstatechange.md) | Information specific to the *CreateAndJoinLobbyCompleted* type of state change. |  
 | [PFLobbyDisconnectedStateChange](structs/pflobbydisconnectedstatechange.md) | Information specific to the *Disconnected* type of state change. |  
 | [PFLobbyDisconnectingStateChange](structs/pflobbydisconnectingstatechange.md) | Information specific to the *Disconnecting* type of state change. |  
 | [PFLobbyFindLobbiesCompletedStateChange](structs/pflobbyfindlobbiescompletedstatechange.md) | Information specific to the *FindLobbiesCompleted* type of state change. |  
@@ -64,17 +76,11 @@ ms.date: 11/23/2021
 | [PFLobbyInviteListenerStatusChangedStateChange](structs/pflobbyinvitelistenerstatuschangedstatechange.md) | Information specific to the *InviteListenerStatusChanged* type of state change. |  
 | [PFLobbyInviteReceivedStateChange](structs/pflobbyinvitereceivedstatechange.md) | Information specific to the *InviteReceived* type of state change. |  
 | [PFLobbyJoinArrangedLobbyCompletedStateChange](structs/pflobbyjoinarrangedlobbycompletedstatechange.md) | Information specific to the *JoinArrangedLobbyCompleted* type of state change. |  
-| [PFLobbyJoinConfiguration](structs/pflobbyjoinconfiguration.md) | The initial configuration data used when joining a lobby. |  
 | [PFLobbyJoinLobbyCompletedStateChange](structs/pflobbyjoinlobbycompletedstatechange.md) | Information specific to the *JoinLobbyCompleted* type of state change. |  
 | [PFLobbyLeaveLobbyCompletedStateChange](structs/pflobbyleavelobbycompletedstatechange.md) | Information specific to the *LeaveLobbyCompleted* type of state change. |  
 | [PFLobbyMemberAddedStateChange](structs/pflobbymemberaddedstatechange.md) | Information specific to the *MemberAdded* type of state change. |  
-| [PFLobbyMemberDataUpdate](structs/pflobbymemberdataupdate.md) | A request to make an update to the member-owned portion of the lobby document. |  
 | [PFLobbyMemberRemovedStateChange](structs/pflobbymemberremovedstatechange.md) | Information specific to the *MemberRemoved* type of state change. |  
-| [PFLobbyMemberUpdateSummary](structs/pflobbymemberupdatesummary.md) | A collection of hints about an update which has been successfully applied to the lobby on behalf of a member. |  
 | [PFLobbyPostUpdateCompletedStateChange](structs/pflobbypostupdatecompletedstatechange.md) | Information specific to the *PostUpdateCompleted* type of state change. |  
-| [PFLobbySearchConfiguration](structs/pflobbysearchconfiguration.md) | The configuration structure used to specify how a [PFMultiplayerFindLobbies](functions/pfmultiplayerfindlobbies.md) operation should be performed. |  
-| [PFLobbySearchFriendsFilter](structs/pflobbysearchfriendsfilter.md) | The filter structure used to limit lobby search results to only those lobbies owned by the player's friends. |  
-| [PFLobbySearchResult](structs/pflobbysearchresult.md) | An entry in the collection of lobby search results received upon successful completion of a [PFMultiplayerFindLobbies](functions/pfmultiplayerfindlobbies.md) operation. |  
 | [PFLobbySendInviteCompletedStateChange](structs/pflobbysendinvitecompletedstatechange.md) | Information specific to the *SendInviteCompleted* type of state change. |  
 | [PFLobbyStateChange](structs/pflobbystatechange.md) | A generic, base structure representation of an event or change in state. |  
 | [PFLobbyUpdatedStateChange](structs/pflobbyupdatedstatechange.md) | Information specific to the *Updated* type of state change. |  

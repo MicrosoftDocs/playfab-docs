@@ -122,16 +122,36 @@
     href: pfmatchmaking/enums/pfmatchmakingticketstatus.md
 - name: Structures
   items:
-  - name: PFLobbyAddMemberCompletedStateChange
-    href: pflobby/structs/pflobbyaddmembercompletedstatechange.md
   - name: PFLobbyArrangedJoinConfiguration
     href: pflobby/structs/pflobbyarrangedjoinconfiguration.md
-  - name: PFLobbyCreateAndJoinLobbyCompletedStateChange
-    href: pflobby/structs/pflobbycreateandjoinlobbycompletedstatechange.md
   - name: PFLobbyCreateConfiguration
     href: pflobby/structs/pflobbycreateconfiguration.md
   - name: PFLobbyDataUpdate
     href: pflobby/structs/pflobbydataupdate.md
+  - name: PFLobbyJoinConfiguration
+    href: pflobby/structs/pflobbyjoinconfiguration.md
+  - name: PFLobbyMemberDataUpdate
+    href: pflobby/structs/pflobbymemberdataupdate.md
+  - name: PFLobbyMemberUpdateSummary
+    href: pflobby/structs/pflobbymemberupdatesummary.md
+  - name: PFLobbySearchConfiguration
+    href: pflobby/structs/pflobbysearchconfiguration.md
+  - name: PFLobbySearchFriendsFilter
+    href: pflobby/structs/pflobbysearchfriendsfilter.md
+  - name: PFLobbySearchResult
+    href: pflobby/structs/pflobbysearchresult.md
+  - name: PFMatchmakingMatchDetails
+    href: pfmatchmaking/structs/pfmatchmakingmatchdetails.md
+  - name: PFMatchmakingMatchMember
+    href: pfmatchmaking/structs/pfmatchmakingmatchmember.md
+  - name: PFMatchmakingTicketConfiguration
+    href: pfmatchmaking/structs/pfmatchmakingticketconfiguration.md
+- name: State changes
+  items:
+  - name: PFLobbyAddMemberCompletedStateChange
+    href: pflobby/structs/pflobbyaddmembercompletedstatechange.md
+  - name: PFLobbyCreateAndJoinLobbyCompletedStateChange
+    href: pflobby/structs/pflobbycreateandjoinlobbycompletedstatechange.md
   - name: PFLobbyDisconnectedStateChange
     href: pflobby/structs/pflobbydisconnectedstatechange.md
   - name: PFLobbyDisconnectingStateChange
@@ -146,44 +166,26 @@
     href: pflobby/structs/pflobbyinvitereceivedstatechange.md
   - name: PFLobbyJoinArrangedLobbyCompletedStateChange
     href: pflobby/structs/pflobbyjoinarrangedlobbycompletedstatechange.md
-  - name: PFLobbyJoinConfiguration
-    href: pflobby/structs/pflobbyjoinconfiguration.md
   - name: PFLobbyJoinLobbyCompletedStateChange
     href: pflobby/structs/pflobbyjoinlobbycompletedstatechange.md
   - name: PFLobbyLeaveLobbyCompletedStateChange
     href: pflobby/structs/pflobbyleavelobbycompletedstatechange.md
   - name: PFLobbyMemberAddedStateChange
     href: pflobby/structs/pflobbymemberaddedstatechange.md
-  - name: PFLobbyMemberDataUpdate
-    href: pflobby/structs/pflobbymemberdataupdate.md
   - name: PFLobbyMemberRemovedStateChange
     href: pflobby/structs/pflobbymemberremovedstatechange.md
-  - name: PFLobbyMemberUpdateSummary
-    href: pflobby/structs/pflobbymemberupdatesummary.md
   - name: PFLobbyPostUpdateCompletedStateChange
     href: pflobby/structs/pflobbypostupdatecompletedstatechange.md
-  - name: PFLobbySearchConfiguration
-    href: pflobby/structs/pflobbysearchconfiguration.md
-  - name: PFLobbySearchFriendsFilter
-    href: pflobby/structs/pflobbysearchfriendsfilter.md
-  - name: PFLobbySearchResult
-    href: pflobby/structs/pflobbysearchresult.md
   - name: PFLobbySendInviteCompletedStateChange
     href: pflobby/structs/pflobbysendinvitecompletedstatechange.md
   - name: PFLobbyStateChange
     href: pflobby/structs/pflobbystatechange.md
   - name: PFLobbyUpdatedStateChange
     href: pflobby/structs/pflobbyupdatedstatechange.md
-  - name: PFMatchmakingMatchDetails
-    href: pfmatchmaking/structs/pfmatchmakingmatchdetails.md
-  - name: PFMatchmakingMatchMember
-    href: pfmatchmaking/structs/pfmatchmakingmatchmember.md
   - name: PFMatchmakingStateChange
     href: pfmatchmaking/structs/pfmatchmakingstatechange.md
   - name: PFMatchmakingTicketCompletedStateChange
     href: pfmatchmaking/structs/pfmatchmakingticketcompletedstatechange.md
-  - name: PFMatchmakingTicketConfiguration
-    href: pfmatchmaking/structs/pfmatchmakingticketconfiguration.md
   - name: PFMatchmakingTicketStatusChangedStateChange
     href: pfmatchmaking/structs/pfmatchmakingticketstatuschangedstatechange.md
 - name: Callbacks
