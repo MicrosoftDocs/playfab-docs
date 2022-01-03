@@ -1,14 +1,14 @@
 ---
 author: tomcoMSFT
-title: "PFMatchmaking"
-description: TBD
+title: "PFMultiplayer C/C++ API overview - PFMatchmaking.h"
+description: "PFMultiplayer C/C++ API overview - PFMatchmaking.h"
 ms.author: tomco
 ms.topic: reference
 ms.prod: playfab
-ms.date: 11/23/2021
+ms.date: 12/10/2021
 ---
 
-# PFMatchmaking members  
+# PFMultiplayer C/C++ API overview - PFMatchmaking.h
 
 > [!IMPORTANT]
 > This feature is in **private preview** for limited, Microsoft managed partners.
@@ -34,9 +34,14 @@ ms.date: 11/23/2021
 | --- | --- |  
 | [PFMatchmakingMatchDetails](structs/pfmatchmakingmatchdetails.md) | The resulting match information found by a completed ticket. |  
 | [PFMatchmakingMatchMember](structs/pfmatchmakingmatchmember.md) | A member of a match result. |  
+| [PFMatchmakingTicketConfiguration](structs/pfmatchmakingticketconfiguration.md) | Defines the configuration for a matchmaking ticket. |  
+  
+## State changes  
+  
+| State change | Description |  
+| --- | --- |  
 | [PFMatchmakingStateChange](structs/pfmatchmakingstatechange.md) | A generic, base structure representation of an event or change in state. |  
 | [PFMatchmakingTicketCompletedStateChange](structs/pfmatchmakingticketcompletedstatechange.md) | Information specific to the *TicketCompleted* type of state change. |  
-| [PFMatchmakingTicketConfiguration](structs/pfmatchmakingticketconfiguration.md) | Defines the configuration for a matchmaking ticket. |  
 | [PFMatchmakingTicketStatusChangedStateChange](structs/pfmatchmakingticketstatuschangedstatechange.md) | Information specific to the *TicketStatusChanged* type of state change. |  
   
 ## Enumerations  
