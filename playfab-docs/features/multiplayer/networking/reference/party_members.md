@@ -5,10 +5,10 @@ description: "Party C/C++ API overview"
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 06/22/2021
+ms.date: 12/09/2021
 ---
 
-# Party C/C++ API overview  
+# Party C/C++ API overview
 
   
 ## Classes  
