@@ -61,7 +61,6 @@ These OData operators can be used to compose query strings
 | ge         | greater than or equal to | number_key3 ge 100                                    |
 | and        | AND                      | string_key1 eq 'CaptureTheFlag' AND number_key2 lt 10 |
 | not        | NOT                      | not string_key1 eq 'CaptureTheFlag'                   |
-| or         | OR                       | string_key1 eq 'CaptureTheFlag' OR number_key2 lt 10  |
 
 **NOTE**: When comparing string properties, be sure to wrap the compared value in single quotes. e.g. "string_key1 eq **'SOME STRING VALUE'**". Numeric properties do not require this.
 
