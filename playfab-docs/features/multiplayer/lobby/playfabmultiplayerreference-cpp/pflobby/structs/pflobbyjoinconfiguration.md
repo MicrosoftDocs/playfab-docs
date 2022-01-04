@@ -1,11 +1,11 @@
 ---
-author: tomcoMSFT
+author: ScottMunroMS
 title: "PFLobbyJoinConfiguration"
 description: "The initial configuration data used when joining a lobby."
-ms.author: tomco
+ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 10/27/2021
+ms.date: 01/03/2022
 ---
 
 # PFLobbyJoinConfiguration  

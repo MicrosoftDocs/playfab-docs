@@ -1,11 +1,11 @@
 ---
-author: tomcoMSFT
+author: ScottMunroMS
 title: "PFLobbyDataUpdate"
 description: "A request to make an update to the shared portion of the lobby on behalf of a member."
-ms.author: tomco
+ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 10/27/2021
+ms.date: 01/03/2022
 ---
 
 # PFLobbyDataUpdate  

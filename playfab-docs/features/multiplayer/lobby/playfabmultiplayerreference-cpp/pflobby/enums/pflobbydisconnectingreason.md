@@ -1,11 +1,11 @@
 ---
-author: tomcoMSFT
+author: ScottMunroMS
 title: "PFLobbyDisconnectingReason"
 description: "Reasons the client no longer has access to the Lobby."
-ms.author: tomco
+ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 10/27/2021
+ms.date: 01/03/2022
 ---
 
 # PFLobbyDisconnectingReason  

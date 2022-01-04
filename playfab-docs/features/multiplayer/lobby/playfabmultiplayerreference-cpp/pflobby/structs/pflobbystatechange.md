@@ -1,11 +1,11 @@
 ---
-author: tomcoMSFT
+author: ScottMunroMS
 title: "PFLobbyStateChange"
 description: "A generic, base structure representation of an event or change in state."
-ms.author: tomco
+ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 11/09/2021
+ms.date: 01/03/2022
 ---
 
 # PFLobbyStateChange  

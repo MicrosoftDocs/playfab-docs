@@ -1,11 +1,11 @@
 ---
-author: tomcoMSFT
+author: ScottMunroMS
 title: "PFMultiplayer C/C++ API overview - PFMatchmaking.h"
 description: "PFMultiplayer C/C++ API overview - PFMatchmaking.h"
-ms.author: tomco
+ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 12/10/2021
+ms.date: 01/03/2022
 ---
 
 # PFMultiplayer C/C++ API overview - PFMatchmaking.h
