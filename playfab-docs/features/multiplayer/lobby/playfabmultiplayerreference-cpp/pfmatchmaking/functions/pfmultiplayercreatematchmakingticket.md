@@ -1,11 +1,11 @@
 ---
-author: tomcoMSFT
+author: ScottMunroMS
 title: "PFMultiplayerCreateMatchmakingTicket"
 description: "Creates a matchmaking ticket for one or more local users."
-ms.author: tomco
+ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 11/23/2021
+ms.date: 01/03/2022
 ---
 
 # PFMultiplayerCreateMatchmakingTicket  

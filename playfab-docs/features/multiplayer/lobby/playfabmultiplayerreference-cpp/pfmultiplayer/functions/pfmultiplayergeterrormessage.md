@@ -1,11 +1,11 @@
 ---
-author: tomcoMSFT
+author: ScottMunroMS
 title: "PFMultiplayerGetErrorMessage"
 description: "Get the human-readable form of an error."
-ms.author: tomco
+ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 10/28/2021
+ms.date: 01/03/2022
 ---
 
 # PFMultiplayerGetErrorMessage  

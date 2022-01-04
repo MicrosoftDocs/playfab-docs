@@ -1,11 +1,11 @@
 ---
-author: tomcoMSFT
+author: ScottMunroMS
 title: "PFLobbyMemberRemovedStateChange"
 description: "Information specific to the *MemberRemoved* type of state change."
-ms.author: tomco
+ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 11/09/2021
+ms.date: 01/03/2022
 ---
 
 # PFLobbyMemberRemovedStateChange  

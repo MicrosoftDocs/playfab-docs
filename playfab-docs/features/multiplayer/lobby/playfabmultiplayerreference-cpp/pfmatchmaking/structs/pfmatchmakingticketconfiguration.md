@@ -1,11 +1,11 @@
 ---
-author: tomcoMSFT
+author: ScottMunroMS
 title: "PFMatchmakingTicketConfiguration"
 description: "Defines the configuration for a matchmaking ticket."
-ms.author: tomco
+ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 11/09/2021
+ms.date: 01/03/2022
 ---
 
 # PFMatchmakingTicketConfiguration  

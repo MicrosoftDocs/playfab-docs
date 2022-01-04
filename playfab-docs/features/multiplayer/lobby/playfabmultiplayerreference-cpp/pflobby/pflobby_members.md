@@ -1,11 +1,11 @@
 ---
-author: tomcoMSFT
+author: ScottMunroMS
 title: "PFMultiplayer C/C++ API overview - PFLobby.h"
 description: "PFMultiplayer C/C++ API overview - PFLobby.h"
-ms.author: tomco
+ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 12/10/2021
+ms.date: 01/03/2022
 ---
 
 # PFMultiplayer C/C++ API overview - PFLobby.h
