@@ -1,11 +1,11 @@
 ---
-author: tomcoMSFT
+author: ScottMunroMS
 title: "PFLobbySearchConfiguration"
 description: "The configuration structure used to specify how a [PFMultiplayerFindLobbies](../functions/pfmultiplayerfindlobbies.md) operation should be performed."
-ms.author: tomco
+ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 11/23/2021
+ms.date: 01/03/2022
 ---
 
 # PFLobbySearchConfiguration  

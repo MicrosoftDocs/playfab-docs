@@ -1,11 +1,11 @@
 ---
-author: tomcoMSFT
+author: ScottMunroMS
 title: "PFMultiplayerJoinArrangedLobby"
 description: "Joins a lobby using an arrangement string provided by another service, such as matchmaking. If no one has joined the lobby yet, the lobby is initialized using the configuration parameters."
-ms.author: tomco
+ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 11/23/2021
+ms.date: 01/03/2022
 ---
 
 # PFMultiplayerJoinArrangedLobby  

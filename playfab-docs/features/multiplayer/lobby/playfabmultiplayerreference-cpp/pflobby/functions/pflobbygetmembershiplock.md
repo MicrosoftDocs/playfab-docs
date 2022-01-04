@@ -1,11 +1,11 @@
 ---
-author: tomcoMSFT
+author: ScottMunroMS
 title: "PFLobbyGetMembershipLock"
 description: "Gets the lobby's current membership lock state."
-ms.author: tomco
+ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 11/23/2021
+ms.date: 01/03/2022
 ---
 
 # PFLobbyGetMembershipLock  

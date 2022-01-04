@@ -1,11 +1,11 @@
 ---
-author: tomcoMSFT
+author: ScottMunroMS
 title: "PFLobbySearchFriendsFilter"
 description: "The filter structure used to limit lobby search results to only those lobbies owned by the player's friends."
-ms.author: tomco
+ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 10/27/2021
+ms.date: 01/03/2022
 ---
 
 # PFLobbySearchFriendsFilter  

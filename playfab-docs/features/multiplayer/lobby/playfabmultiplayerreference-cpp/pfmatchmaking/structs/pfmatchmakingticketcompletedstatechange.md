@@ -1,11 +1,11 @@
 ---
-author: tomcoMSFT
+author: ScottMunroMS
 title: "PFMatchmakingTicketCompletedStateChange"
 description: "Information specific to the *TicketCompleted* type of state change."
-ms.author: tomco
+ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 11/23/2021
+ms.date: 01/03/2022
 ---
 
 # PFMatchmakingTicketCompletedStateChange  
