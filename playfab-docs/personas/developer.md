@@ -34,7 +34,7 @@ To retrieve the **TitleId** for your Title, log in to the [Game Manager](https:/
 On the **My Studios and Titles** screen, locate your Title. The **TitleId** is located just below the name of your Title.
 
 > [!div class="mx-imgBorder"]
-> ![Game Manager - My Studios and Titles - Title ID](images/my-titlles-titleid.png)  
+> ![Game Manager - My Studios and Titles - Title ID](images/my-title-id.png)  
 
 ### Login and account basics
 
