@@ -4,6 +4,11 @@
             "source_path": "playfab-docs-pr/playfab-docs/resources/recipes-and-samples.md",
             "redirect_url": "playfab-docs-pr/playfab-docs/resources/playfab-samples",
             "redirect_document_id": true
+        },
+        {
+            "source_path": "playfab-docs-pr/features/multiplayer/servers/unreal_playfabgsdk_guide.md",
+            "redirect_url": "playfab-docs-pr/features/multiplayer/servers/server-sdks/unreal-gsdk/",
+            "redirect_document_id": true
         }
      ]
 }
