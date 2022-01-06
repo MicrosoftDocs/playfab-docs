@@ -30,8 +30,6 @@
     href: determining-required-dlls.md
   - name: Integrate Unity with GSDK
     href: mps-unity.md
-  - name: Integrate UE4 with GSDK case study
-    href: unreal_playfabgsdk_guide.md   
 - name: Manage VMs
   items:
   - name: Deploy builds using Game Manager
@@ -113,4 +111,8 @@
   - name: Deploy Windows builds using PowerShell/API
     href: quickstart-for-multiplayer-servers-api-powershell.md
 - name: SDKs
-  href: server-sdks.md
+  items:
+  - name: GSDKs
+    href: server-sdks.md
+  - name: Unreal GSDK
+    href: server-sdks/unreal-gsdk/toc.yml
