@@ -6,8 +6,8 @@
             "redirect_document_id": true
         },
         {
-            "source_path": "playfab-docs-pr/features/multiplayer/servers/unreal_playfabgsdk_guide.md",
-            "redirect_url": "playfab-docs-pr/features/multiplayer/servers/server-sdks/unreal-gsdk/",
+            "source_path": "playfab-docs-pr/playfab-docs/features/multiplayer/servers/unreal_playfabgsdk_guide.md",
+            "redirect_url": "playfab-docs-pr/playfab-docs/features/multiplayer/servers/server-sdks/unreal-gsdk/",
             "redirect_document_id": true
         }
      ]
