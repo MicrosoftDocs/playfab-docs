@@ -1,7 +1,7 @@
 ---
-title: Making Webhook calls from CloudScript
+title: Making Webhook calls from CloudScript (Legacy)
 author: joannaleecy
-description: Describes how to make Webhook calls from CloudScript, for both non-secure and secure scenarios.
+description: Describes how to make Webhook calls from CloudScript (Legacy), for both non-secure and secure scenarios.
 ms.author: joanlee
 ms.date: 02/11/2018
 ms.topic: article
@@ -10,15 +10,19 @@ keywords: playfab, automation, cloudscript
 ms.localizationpriority: medium
 ---
 
-# Making Webhook calls from CloudScript
+# Making Webhook calls from CloudScript (Legacy)
 
-One of the less well-known features of PlayFab’s CloudScript is that you can make Webhook calls from it to any web API endpoint, using standard Representational State Transfer (REST) calls.
+One of the less well-known features of CloudScript (Legacy) is that you can make Webhook calls from it to any web API endpoint, using standard Representational State Transfer (REST) calls.
+
+> [!NOTE]
+> We recommend you make webhook calls using the newer [CloudScript Functions](../cloudscript-af/index.md) when possible.
+
 
 This allows titles to make calls to basic informational services, but it *also* enables more complex scenarios (such as using OAuth), to secure a communication to an endpoint you own.
 
-This tutorial discusses making Webhook calls from CloudScript, for both *non-secure* and *secure* scenarios.
+This tutorial discusses making Webhook calls from CloudScript (Legacy), for both *non-secure* and *secure* scenarios.
 
-As a REST call, the structure of a Webhook call from CloudScript is simple. The elements to be specified are:
+As a REST call, the structure of a Webhook call from CloudScript (Legacy) is simple. The elements to be specified are:
 
 - The URL endpoint.
 - The REST method (post, get, put, or delete).
@@ -29,7 +33,7 @@ As a REST call, the structure of a Webhook call from CloudScript is simple. The 
 For example, a basic web API call to get the version number of your server-side logic might look something like the example provided below.
 
 ```javascript
-// CloudScript
+// CloudScript (Legacy)
 var url = "http://api.yoursite.com/playfab_call/GetVersion";
 var method = "post";
 var contentBody = "";
@@ -43,7 +47,7 @@ The body of the response is returned in stringified form, so that you can subseq
 In this case, since we were querying version, you might write the response out to the `log` like the one provided here.
 
 ```javascript
-// CloudScript
+// CloudScript (Legacy)
 log.info(responseString);
 ```
 
@@ -77,7 +81,7 @@ If, however, you have a *secure* service you need to communicate with, you will 
 For an OAuth solution, that means requesting a Bearer Access token, using your client ID and secret. This will vary based upon your specific OAuth implementation, but your call could look something like the following example.
 
 ```javascript
-//CloudScript
+//CloudScript (Legacy)
 var url = "https://api.yoursite.com/playfab_call/request_token";
 var method = "post";
 var contentBody = "grant_type=client_credentials";
@@ -92,7 +96,7 @@ var tokenResponse =  http.request(url,method,contentBody,contentType,headers);
 Given a good response, you would *then* be able to parse the `bearer_access_token` from the response like this (again, this *does depend* upon the specifics of your OAuth implementation, but this is a fairly common pattern for this form of authentication).
 
 ```javascript
-//CloudScript
+//CloudScript (Legacy)
 var parsedData = JSON.parse(tokenResponse);
 var bearer_access_token = parsedData["access_token"];
 ```
@@ -100,7 +104,7 @@ var bearer_access_token = parsedData["access_token"];
 This would then allow you to call into your OAuth-secured functionality by providing the `bearer_access_token`.
 
 ```javascript
-//CloudScript
+//CloudScript (Legacy)
 var url = "https://api.yoursite.com/playfab_call/do_action";
 var method = "post";
 var contentBody = customActionBody;
@@ -113,6 +117,6 @@ So the basic pattern in this case is that you use your application’s client ID
 
 As you can see, these calls would all be made using SSL, in order to help prevent man-in-the-middle attacks.
 
-Using HTTP calls from CloudScript, you can make calls into any other web API you need to for your title. This allows you to extend your title functionality beyond even what PlayFab offers directly, giving you the option to make and use your own custom services - or access others.
+Using HTTP calls from CloudScript (Legacy), you can make calls into any other web API you need to for your title. This allows you to extend your title functionality beyond even what PlayFab offers directly, giving you the option to make and use your own custom services - or access others.
 
-Because this all takes place within CloudScript, it provides a server-authoritative context in which to make those calls. This means that they will have the necessary protections in your CloudScript to help prevent players from cheating, or accessing features and data they shouldn’t.
+Because this all takes place within CloudScript (Legacy), it provides a server-authoritative context in which to make those calls. This means that they will have the necessary protections in your CloudScript (Legacy) to help prevent players from cheating, or accessing features and data they shouldn’t.

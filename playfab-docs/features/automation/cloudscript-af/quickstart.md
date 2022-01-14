@@ -169,3 +169,15 @@ A list of available Azure Functions that you've registered will be available in 
 ## Debugging your Azure Function
 
 With Azure functions, you now have the option to debug your CloudScript locally or in the Azure portal. To learn more about portal debugging, see [Debugging CloudScript using Azure Functions with the Azure portal](debugging-with-CloudScript-AF-Azure.md). To learn how to set up local debugging, see [Local debugging for Cloudscript using Azure Functions](local-debugging-for-cloudscript-using-azure-functions.md).
+
+## Execution limits
+
+CloudScript calls to Azure Functions have timeout limits. If your webhook takes too long to execute, the request will time out in PlayFab. Make sure your code can execute fast enough to stay under the timeout limits.
+
+| Source         | Action type   | Limit (seconds) |
+| -------------- | ------------- | --------------: |
+| PlayFab API    | HTTP request  |              10 |
+| PlayStream V2  | HTTP request  |              10 |
+| Scheduled task | HTTP request  |             4.5 |
+| PlayStream V1  | HTTP request  |               1 |
+| Queue function | Queue payload |               1 |

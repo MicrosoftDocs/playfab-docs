@@ -1,7 +1,7 @@
 ---
 title: CloudScript
 author: joannaleecy
-description: Landing page for CloudScript.
+description: Landing page for CloudScript (Legacy).
 ms.author: joanlee
 ms.date: 06/12/2018
 ms.topic: article
@@ -20,5 +20,8 @@ For example, you can have a client request a “daily reward” from your game, 
 
 ## Links
 
-- [CloudScript quickstart](quickstart.md)
-- [CloudScript tutorials](tutorials.md)
+To get started with latest CloudScript release, [CloudScript using Azure Functions](../cloudscript-af/index.md), check out our [CloudScript Functions quickstart guide](../cloudscript-af/quickstart.md).
+
+If you're still using the CloudScript (Legacy) offering and haven't migrated to [CloudScript using Azure Functions](../cloudscript-af/index.md) yet, you can find the old documentation here:
+- [CloudScript (Legacy) quickstart](quickstart.md)
+- [CloudScript (Legacy) tutorials](tutorials.md)

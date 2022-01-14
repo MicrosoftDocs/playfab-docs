@@ -1,7 +1,7 @@
 ---
-title: Handling Errors in CloudScript
+title: Handling Errors in CloudScript (Legacy)
 author: williacj
-description: Describes how to recognize and handle errors within your CloudScript handlers.
+description: Describes how to recognize and handle errors within your CloudScript (Legacy) handlers.
 ms.author: cjwill
 ms.date: 06/11/2018
 ms.topic: article
@@ -10,15 +10,15 @@ keywords: playfab, automation, cloudscript, error handling
 ms.localizationpriority: medium
 ---
 
-# Handling errors in CloudScript
+# Handling errors in CloudScript (Legacy)
 
-This tutorial describes how to recognize and handle errors within your CloudScript handlers.
+This tutorial describes how to recognize and handle errors within your CloudScript (Legacy) handlers.
 
 ## Identifying
 
 The first step is identifying the error. While every uncaught error is logged and available from the response to the caller (client), you can catch the error early by using a `try/catch` block.
 
-Consider the following CloudScript snippet that produces and catches the error.
+Consider the following CloudScript (Legacy) snippet that produces and catches the error.
 
 ```javascript
 "use strict";
@@ -35,7 +35,7 @@ handlers.GenerateError = () => {
 }
 ```
 
-Notice how the error codes were extracted within the catch block? Consult our [Global API Method Error Codes](../../../api-references/global-api-method-error-codes.md), for a complete list of errors and their identifying codes.
+Notice how the error codes were extracted within the catch block? Consult our [Global API method error codes documentation](../../../api-references/global-api-method-error-codes.md) for a complete list of errors.
 
 > [!NOTE]
 > The error code on its own is sufficient to identify the error.
@@ -44,9 +44,9 @@ Notice how the error codes were extracted within the catch block? Consult our [G
 
 Any unhandled error is added to the response, allowing the client to process the problem.
 
-At the same time, it creates a CloudScript error entry and adds it to the total statistics available on your CloudScript dashboard.
+At the same time, it creates a CloudScript (Legacy) error entry and adds it to the total statistics available on your CloudScript (Legacy) dashboard.
 
-![Game Manager - Automation - CloudScript Dashboard](media/tutorials/game-manager-cloudscript-dashboard.png)  
+![Game Manager - CloudScript (Legacy) Dashboard showing a graph of API errors](media/tutorials/game-manager-cloudscript-dashboard.png)  
 
 To force-log the exception in the form of a JSON string, use error logging via the `log` object.
 
@@ -97,7 +97,7 @@ We ask that you *make sure* you meet the following requirements when applying a 
 
 ## CloudScript timeout error
 
-CloudScript limits the execution time of CloudScript API calls to 4 seconds.
+The execution time of CloudScript (Legacy) API calls is limited to 4 seconds.
 
 If the execution time exceeds 4 seconds, an `InternalServerError` is raised and the PlayStream Event writes a Logs object similar to the following:
 
@@ -117,4 +117,6 @@ If the execution time exceeds 4 seconds, an `InternalServerError` is raised and 
     ]
 ```
 
- If you encounter this error, break your CloudScript into smaller segments of code which will run in under 4 seconds.
+ If you encounter this error, you can:
+ - break your CloudScript (Legacy) into smaller code segments which will run in under 4 seconds.
+ - Switch to [CloudScript using Azure Functions](../cloudscript-af/quickstart.md), which has longer timeout limits in some cases. You can view the limits in the [quickstart guide](../cloudscript-af/quickstart.md#execution-limits).
