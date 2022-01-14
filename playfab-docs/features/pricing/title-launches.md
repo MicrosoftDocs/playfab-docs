@@ -15,18 +15,18 @@ Customers can upgrade their account plan and launch titles using the self-servic
 
 ## Title Modes
 A PlayFab title has two possible modes:
-1. **DEVELOPMENT MODE :** A Development title has no cost to the customer. Use Development mode to experiment with most PlayFab offerings. A title in development mode is subject to the specific player count and meter usage limits determined by PlayFab. For more information about included limits, see [development mode](../pricing/Development-Mode.md).
-2. **LIVE MODE :** A live title is charged to the customer on a Pay-as-you-Go basis. Any meter usage over what is included in the account plan's base rate results in charges per meter consumed. For more information, see [Meters](../pricing/Meters/meters.md).
+1. **DEVELOPMENT MODE :** A Development Mode title has no cost to the customer for the core services ([multiplayer server hosting](../multiplayer/servers/billing-for-thunderhead.md), [Party](../multiplayer/networking/pricing.md), and [Insights](../insights/pricing.md) are not core services, though they do have limited free usage available in Development Mode - please see the individual feature pages for more information). Use Development mode to experiment with most PlayFab offerings. A title in development mode is subject to the specific player count and meter usage limits determined by PlayFab. For more information about included limits, see [development mode](../pricing/Development-Mode.md).
+2. **LIVE MODE :** A Live Mode title is charged to the customer based on its tier of service. Any meter usage over what is included in the account plan's base rate results in charges per meter consumed. For more information, see [Meters](../pricing/Meters/meters.md). Note that Live Mode should not be confused with a title being "live". A title may have players using it even in Development Mode, though the title will be limited to the player account maximum for Development Mode. Moving to Live Mode removes that limit.
 
 ## Launching a title
 
 > [!WARNING]
 > Launching a title is a permanent action. The title cannot return to Development mode after the launch is completed.
 
-To be eligible for launch, a title must be linked to a Studio with a paid account plan.
+To be able to move a title from Development Mode to Live Mode, a title must be in a Studio with a paid account plan.
 
 ### Launching a Title within a Free Account Plan
-Titles may only be launched within Studios owned by paid accounts.Follow the steps listed under Upgrading from Free to Standard to launch a title in conjunction with upgrading an account.
+Titles may only be changed to Live Mode in Studios owned by paid accounts. Follow the steps listed under Upgrading from Free to a paid account to launch a title in conjunction with upgrading an account.
 
 ### Launching a Title within a Paid Account Plan
 To launch a title within a paid account plan:
