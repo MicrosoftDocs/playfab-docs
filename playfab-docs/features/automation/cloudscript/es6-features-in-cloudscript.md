@@ -1,7 +1,7 @@
 ---
-title: ES6 features in CloudScript
+title: ES6 features in CloudScript (Legacy)
 author: joannaleecy
-description: Describes how to use ECMAScript 6 (ES6) features when writing CloudScript.
+description: Describes how to use ECMAScript 6 (ES6) features when writing CloudScript (Legacy).
 ms.author: joanlee
 ms.date: 06/11/2018
 ms.topic: article
@@ -10,9 +10,9 @@ keywords: playfab, automation, cloudscript, ecmascript6
 ms.localizationpriority: medium
 ---
 
-# ES6 features in CloudScript
+# ES6 features in CloudScript (Legacy)
 
-The CloudScript runtime environment supports most of the modern ECMAScript 6 features. While a majority of these features are syntactical tricks, you can use them to improve and clean the CloudScript code base.
+The CloudScript (Legacy) runtime environment supports most of the modern ECMAScript 6 features. While a majority of these features are syntactical tricks, you can use them to improve and clean your CloudScript (Legacy) code.
 
 A complete overview of ES6 features is available in this [Cheat Sheet](https://devhints.io/es6).
 
@@ -26,7 +26,7 @@ This tutorial shows several tricks you may use in your CloudScript.
 
 When composing messages for your players, you may want to use multi-line interpolated strings. Use the *back-tick symbol* to create an interpolated string. You may then insert data right into the string using `${ variable }` syntax.
 
-This allows you to avoid string concatenation, and improve code readability significantly.
+This allows you to avoid string concatenation and improves code readability.
 
 > [!NOTE]
 > Back-tick strings are verbatim and may be multi-line. This means you have to keep an eye on *all indention*, as any extra space/tab will be captured into the string.
@@ -47,9 +47,9 @@ ES6 brings *new* syntax for defining functions using the arrow operator `=>`. Th
 
 ```javascript
 // The following snippets:
-let add = (a,b) => a+b;
+const add = (a,b) => a+b;
 
-let add = (a,b) => {
+const add = (a,b) => {
     return a+b;
 }
 
@@ -62,10 +62,10 @@ function add(a, b) {
 This operator, combined with the new `Array.findIndex` method, allows searching by predicate with the following well-looking, succinct code.
 
 ```javascript
-let players = [...]; // Suppose this is an array of Player Profiles
+const players = [...]; // Suppose this is an array of Player Profiles
 
 // Search by predicate: find item in 'players' that has 'DisplayName' set to 'Bob':
-let bobIndex = players.findIndex(p => p.DisplayName === 'Bob');
+const bobIndex = players.findIndex(p => p.DisplayName === 'Bob');
 ```
 
 ## Object assignment
@@ -110,7 +110,7 @@ The following code extends the previous snippet with automatic exception logging
 ```javascript
 // Handlers installer wraps the handler to catch error
 function installHandlers(handlersObject) {
-    for (var property in handlersObject) {
+    for (let property in handlersObject) {
         handlersObject[property] = wrapHandler(handlersObject,property)
     }
     Object.assign(handlers, handlersObject);
@@ -119,7 +119,7 @@ function installHandlers(handlersObject) {
 // Utility
 function wrapHandler(obj, key) {
     if (obj.hasOwnProperty(key) && typeof obj[key] === 'function') {
-        var original = obj[key]; // Take the original function
+        let original = obj[key]; // Take the original function
         return function() { // return a new function that
             try { // Wraps the original invocation with try
                 return original.apply(null,arguments); // Do not forget to pass arguments

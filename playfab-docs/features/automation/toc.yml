@@ -2,7 +2,7 @@
   href: index.yml
 - name: What is Automation
   href: intro.md  
-- name: CloudScript
+- name: CloudScript (Legacy)
   href: cloudscript/toc.yml
 - name: CloudScript using Azure Functions
   href: cloudscript-af/toc.yml
