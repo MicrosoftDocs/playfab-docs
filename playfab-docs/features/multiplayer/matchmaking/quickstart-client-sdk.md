@@ -64,15 +64,42 @@ RETURN_IF_FAILED(hr);
 
 ## Create a matchmaking ticket
 
-A user creates a matchmaking ticket using [PFMultiplayerCreateMatchmakingTicket](../lobby/playfabmultiplayerreference-cpp/pfmatchmaking/functions/pfmultiplayercreatematchmakingticket.md) where you will pass in the local user and any attributes you want associated with that user.
+You create a matchmaking ticket using [PFMultiplayerCreateMatchmakingTicket](../lobby/playfabmultiplayerreference-cpp/pfmatchmaking/functions/pfmultiplayercreatematchmakingticket.md), in which you specify all local users that should be part of the match and any attributes you want associated with those users.
 
 This function also takes a [PFMatchmakingTicketConfiguration](../lobby/playfabmultiplayerreference-cpp/pfmatchmaking/structs/pfmatchmakingticketconfiguration.md) where you specify which queue the ticket is for, a timeout for the ticket, and any remote users that you want to match into this ticket.
 
-### Example using the Matchmaking client SDK
+### Matchmaking with a single local user
 
-This example creates a matchmaking ticket for a single existing local user and two remote users.
+You can start matchmaking for a single local user with a call to **PFMultiplayerCreateMatchmakingTicket**.
 
 ```cpp
+const char* yourQueueName = ...; // This is the name of the queue you configured in Game Manager.
+
+PFMatchmakingTicketConfiguration configuration{};
+configuration.timeoutInSeconds = 120;
+configuration.queueName = yourQueueName;
+
+const char* attributes = "\"{\"color\":\"blue\", \"role\":\"tank\"}\"";
+
+const PFMatchmakingTicket* ticket;
+HRESULT hr = PFMultiplayerCreateMatchmakingTicket(
+    g_pfmHandle,
+    1, // number of local users
+    localUserEntity,
+    &attributes,
+    &configuration,
+    nullptr, // optional asyncContext
+    &ticket);
+RETURN_IF_FAILED(hr);
+```
+
+### Matchmaking with a group of remote users
+
+To start group matchmaking with remote users, it is helpful to think of one client as the leader. Have the leader create the ticket using **PFMultiplayerCreateMatchmakingTicket**, specifying the other users in the group through the **configuration** parameter. Once the ticket is created, call **GetTicketId** to get the ticket id. Transmit this id to each other user through an external mechanism, such as a networking mesh or a shared PlayFab Lobby, and have each client call **PFMultiplayerJoinMatchmakingTicketFromId** with the ticket id to join the matchmaking ticket. The ticket status will be **PFMatchmakingTicketStatus::WaitingForPlayers** while waiting for the specified players to join and will change to **PFMatchmakingTicketStatus::WaitingForMatch** once all players have joined the ticket.
+
+```cpp
+// Creating the ticket on the leader's client
+
 const char* remoteMemberEntityId1 = ...;
 const char* remoteMemberEntityId2 = ...;
 
@@ -84,17 +111,68 @@ const char* yourQueueName = ...; // This is the name of the queue you configured
 
 PFMatchmakingTicketConfiguration configuration{};
 configuration.timeoutInSeconds = 120;
-configuration.queueName = queueName;
-configuration.membersToMatchWithCount = 2;
+configuration.queueName = yourQueueName;
+configuration.membersToMatchWithCount = 2; // number of remote members to match with
 configuration.membersToMatchWith = remoteMatchMemberEntityKeys.data();
 
-const PFMatchmakingTicket* ticket;
 const char* attributes = "\"{\"color\":\"blue\", \"role\":\"tank\"}\"";
+
+const PFMatchmakingTicket* ticket;
 HRESULT hr = PFMultiplayerCreateMatchmakingTicket(
     g_pfmHandle,
     1, // number of local users
     localUserEntity,
     &attributes,
+    &configuration,
+    nullptr, // optional asyncContext
+    &ticket);
+RETURN_IF_FAILED(hr);
+
+// Getting the ticket id
+
+PCSTR ticketId;
+hr = PFMatchmakingTicketGetTicketId(ticket, &ticketId);
+RETURN_IF_FAILED(hr);
+```
+
+```cpp
+// Joining the ticket on the other players' clients
+
+const char* attributes = "\"{\"color\":\"blue\", \"role\":\"healer\"}\"";
+const char* yourQueueName = ...; // This is the name of the queue you configured in Game Manager.
+
+const PFMatchmakingTicket* ticket;
+HRESULT hr = PFMultiplayerJoinMatchmakingTicketFromId(
+    g_pfmHandle,
+    1, // number of local users
+    localUserEntity,
+    &attributes,
+    ticketId,
+    yourQueueName,
+    nullptr, // optional asyncContext
+    &ticket);
+```
+
+### Matchmaking with multiple local users
+
+When matchmaking with multiple local users, instead of passing in one **PFEntityKey** to either the **PFMultiplayerCreateMatchmakingTicket** or the **PFMultiplayerJoinMatchmakingTicketFromId** functions, you need to pass in a list of keys. Similarly, you will need to pass in a list of attributes for each user. Each list entry position should correspond with each other. Meaning that the first entry in attributes list should be the attributes for the first player in the **PFEntityKey** list.
+
+```cpp
+const char* yourQueueName = ...; // This is the name of the queue you configured in Game Manager.
+
+PFMatchmakingTicketConfiguration configuration{};
+configuration.timeoutInSeconds = 120;
+configuration.queueName = queueName;
+
+std::vector<PFEntityKey> localMatchMemberEntityKeys{ ... };
+std::vector<PCSTR> localMatchMemberAttributes{ ... };
+
+const PFMatchmakingTicket* ticket;
+HRESULT hr = PFMultiplayerCreateMatchmakingTicket(
+    g_pfmHandle,
+    static_cast<uint32_t>(localMatchMemberEntityKeys.size())
+    localMatchMemberEntityKeys.data(),
+    localMatchMemberAttributes.data(),
     &configuration,
     nullptr, // optional asyncContext
     &ticket);
