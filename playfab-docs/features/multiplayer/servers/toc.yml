@@ -42,6 +42,8 @@
     href: multiplayer-build-lifecycle.md
   - name: Build region lifecycle
     href: multiplayer-build-region-lifecycle.md
+  - name: Game server lifecycle
+    href: multiplayer-game-server-lifecycle.md
   - name: OS patch level updates for Windows
     href: os-patch-updates.md
   - name: Use aliases to aggregate and manage multiple VM builds
