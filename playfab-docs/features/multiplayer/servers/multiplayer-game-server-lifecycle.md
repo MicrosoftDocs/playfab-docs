@@ -25,9 +25,9 @@ At a minimum, your game server can integrate GSDK and run great on MPS just by c
 
 These are the main states of a game server in MPS:
 
-- **Initializing**: Game server transitions to this state when it calls the **Start()** GSDK method. In this state, the game server is starting to load the necessary assets.
-- **StandingBy**: Game server transitions to this state when it calls the **ReadyForPlayers()** GSDK method. This state implies that the GameServer has loaded all the necessary assets and it is ready for allocation.
-- **Active**: Game server transitions to this state when it is [allocated](allocating-game-servers-and-configuring-vs-debugging-tools.md) by the [RequestMultiplayerServer](xref:titleid.playfabapi.com.multiplayer.multiplayerserver.requestmultiplayerserver) API call. This state implies that players can connect to the game server and enjoy the game.
+- **Initializing**: Game server transitions to this state when it calls the **Start()** GSDK method. In this state, the game server is starting to load the necessary assets. In this state, the GSDK starts sending heartbeats to MPS.
+- **StandingBy**: Game server transitions to this state when it calls the **ReadyForPlayers()** GSDK method. This method should be called when all the necessary game assets have been loaded. Essentially, this state signals to MPS that the game server is ready to be allocated, so players can connect to it.
+- **Active**: Game server transitions to this state when it is [allocated](allocating-game-servers-and-configuring-vs-debugging-tools.md) by using the [RequestMultiplayerServer](xref:titleid.playfabapi.com.multiplayer.multiplayerserver.requestmultiplayerserver) API call. This state implies that players can connect to the game server and enjoy the game. The fact that the game server is active means that it will not be taken down during potential Build scale downs (i.e. if the standingBy number is decreased).
 - **Terminating**: This is the state that the game server transitions when the [ShutDownMultiplayerServer](xref:titleid.playfabapi.com.multiplayer.multiplayerserver.shutdownmultiplayerserver) API is called. This state implies that the game server is shutting down and will not be available for players to connect to.
 
 Game server process can terminate either gracefully or via a crash. This can happen at any state. MPS will:
