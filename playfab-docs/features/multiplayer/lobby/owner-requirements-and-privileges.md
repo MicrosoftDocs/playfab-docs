@@ -23,7 +23,7 @@ The owner of a lobby can be either a client or a server. Both must have access t
 
 In other words, there are two main types of lobbies available&mdash;Server-owned and client-owned.
 
-Server-owned lobbies can be lobbies owned by your title and waits for players to join. These lobbies have your title game server listed as the owner. Client-owned lobbies are those that are created on behalf on players. These lobbies have a client listed as the owner. It's important to note that PlayFab Lobby is a service so all lobbies are created on PlayFab servers. (Is this correct?)
+Server-owned lobbies can be lobbies owned by your title and waits for players to join. These lobbies have your title game server listed as the owner. Client-owned lobbies are those that are created on behalf on players. These lobbies have a client listed as the owner. It's important to note that PlayFab Lobby is a service so all lobbies are created on PlayFab servers.
 
 To learn how to create lobbies, see [Create a lobby](create-a-lobby.md) and [Lobby and matchmaking walkthrough](lobby-and-matchmaking.md).
 
