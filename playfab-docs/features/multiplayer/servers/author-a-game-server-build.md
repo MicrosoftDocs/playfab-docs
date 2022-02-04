@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Author a game server build
 
-This topic explains how to create a game server build for PlayFab Multiplayer Servers. A game server build typically contains game assets and an executable that runs on the server.
+This topic explains how to create a game server build for PlayFab Multiplayer Servers (MPS). A game server build typically contains game assets and an executable that runs on the server.
 
 When using PlayFab Multiplayer Servers, you need to make modifications to your regular game server build so that it can work on them. This modified server build is called a PlayFab Multiplayer Game Server Build.
 
@@ -28,6 +28,9 @@ You can convert your regular game server build into a PlayFab Multiplayer Game S
 4. Build and compile the game server executable to create the PlayFab Multiplayer Game Server Build
 
 This new build now helps manage game servers that are created using PlayFab Multiplayer Servers. Adding more methods provide greater control and gives you information about the servers. For more instructions, see the [Program.cs](https://github.com/PlayFab/MpsSamples/blob/master/wrappingGsdk/wrapper/Program.cs) in the [Wrapper](wrapper-sample.md) sample.
+
+> [!Note]
+> Consider using our open source debugging utility LocalMultiplayerAgent to test your game server before uploading it into MPS. This will help prevent unnecessary costs in case your game server fails to start or is not properly integrated with GSDK. You can download LocalMultiplayerAgent [here](https://github.com/PlayFab/MpsAgent) and check the instructions [here](locally-debugging-game-servers-and-integration-with-playfab.md). LocalMultiplayerAgent can also be used for iterative testing/debugging during the development of your game server.
 
 ## Next step
 
