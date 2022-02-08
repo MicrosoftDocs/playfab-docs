@@ -14,6 +14,17 @@ ms.localizationpriority: medium
 
 PlayFab Party had a significant (up to 90%) price drop on 10/13/2020. You can view the updated Party rates on the [Pricing page](https://playfab.com/pricing). For more information about the price drop, see our [blog post](https://blog.playfab.com/blog/starting-today-save-up-to-90-using-playfab-party).
 
+## 1.7.6
+
+### Performance improvements
+
+- Windows, XDK, Nintendo Switch, Playstation4, Playstation5: Removed two worker threads and perform relevant work on a preexisting, lower frequency work thread. The Microsoft Game Development Kit (GDK) version of the library already had this coalesced work behavior.
+
+### Bug fixes
+
+- iOS, Android, Switch, Playstation4, Playstation5, and Stadia: Fixed a small amount of memory allocated during initialization not being properly freed during cleanup.
+- Avoid reporting PartyChatTextReceivedOptions::FilteredDueToError flag in PartyChatTextReceivedStateChange when text moderation is not enabled.
+
 ## 1.7.5
 
 ### Bug fixes
