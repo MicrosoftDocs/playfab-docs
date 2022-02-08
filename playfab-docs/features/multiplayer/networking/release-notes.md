@@ -26,7 +26,7 @@ PlayFab Party had a significant (up to 90%) price drop on 10/13/2020. You can vi
 
 ### Behavior improvements
 
-- Avoid reporting PartyChatTextReceivedOptions::FilteredDueToError flag in PartyChatTextReceivedStateChange when text moderation is simply not enabled
+- Avoid reporting PartyChatTextReceivedOptions::FilteredDueToError flag in PartyChatTextReceivedStateChange when text moderation is not enabled.
 
 ## 1.7.5
 
