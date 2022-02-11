@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 # Matchmaking
 
 > [!IMPORTANT]
-> This feature is currently in public preview. It is provided to give you an early look at an upcoming feature, and to allow you to provide feedback while it is still in development.  
+> This feature is currently in preview. The REST API is in public preview and the Client SDK is in private preview.  
 
 ## Overview
 
