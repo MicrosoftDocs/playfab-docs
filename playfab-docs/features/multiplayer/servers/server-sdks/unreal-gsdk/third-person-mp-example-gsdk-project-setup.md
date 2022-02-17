@@ -231,19 +231,19 @@ If you already **had** an Init() function, go to check in ```[YourGameInstanceCl
 ```cpp
     if (IsDedicatedServerInstance() == true)
     {
-	FOnGSDKShutdown_Dyn OnGsdkShutdown;
-	OnGsdkShutdown.BindDynamic(this, &UShooterGameInstance::OnGSDKShutdown);
-	FOnGSDKHealthCheck_Dyn OnGsdkHealthCheck;
-	OnGsdkHealthCheck.BindDynamic(this, &UShooterGameInstance::OnGSDKHealthCheck);
-	FOnGSDKServerActive_Dyn OnGSDKServerActive;
-	OnGSDKServerActive.BindDynamic(this, &UShooterGameInstance::OnGSDKServerActive);
-	FOnGSDKReadyForPlayers_Dyn OnGSDKReadyForPlayers;
-	OnGSDKReadyForPlayers.BindDynamic(this, &UShooterGameInstance::OnGSDKReadyForPlayers);
+        FOnGSDKShutdown_Dyn OnGsdkShutdown;
+        OnGsdkShutdown.BindDynamic(this, &UShooterGameInstance::OnGSDKShutdown);
+        FOnGSDKHealthCheck_Dyn OnGsdkHealthCheck;
+        OnGsdkHealthCheck.BindDynamic(this, &UShooterGameInstance::OnGSDKHealthCheck);
+        FOnGSDKServerActive_Dyn OnGSDKServerActive;
+        OnGSDKServerActive.BindDynamic(this, &UShooterGameInstance::OnGSDKServerActive);
+        FOnGSDKReadyForPlayers_Dyn OnGSDKReadyForPlayers;
+        OnGSDKReadyForPlayers.BindDynamic(this, &UShooterGameInstance::OnGSDKReadyForPlayers);
 
         UGSDKUtils::RegisterGSDKShutdownDelegate(OnGsdkShutdown);
         UGSDKUtils::RegisterGSDKHealthCheckDelegate(OnGsdkHealthCheck);
-	UGSDKUtils::RegisterGSDKServerActiveDelegate(OnGSDKServerActive);
-	UGSDKUtils::RegisterGSDKReadyForPlayers(OnGSDKReadyForPlayers);
+        UGSDKUtils::RegisterGSDKServerActiveDelegate(OnGSDKServerActive);
+        UGSDKUtils::RegisterGSDKReadyForPlayers(OnGSDKReadyForPlayers);
     }
 ```
 
@@ -288,7 +288,7 @@ void UThirdPersonGameInstance::OnGSDKServerActive()
     UE_LOG(LogPlayFabGSDK, Warning, TEXT("Active!"));
 }
 
-void UThirdPersonGameInstance::OnGSDKSetServerInitializationComplete()
+void UThirdPersonGameInstance::OnGSDKReadyForPlayers()
 {
     /**
      * Server is transitioning to a StandBy state. Game initialization is complete and the game
