@@ -28,5 +28,4 @@ Note that these SDKs are for the servers.
 
 ## See also
 
-* [Servers quickstarts](quickstart.md)
 * [SDKs overview](../../../sdks/sdk-overview.md)

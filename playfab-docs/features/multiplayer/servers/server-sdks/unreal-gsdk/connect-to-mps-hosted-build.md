@@ -19,7 +19,7 @@ This article describes how you can connect clients to PlayFab Multiplayer Server
 * Clone or download the [MpsSamples repo](https://github.com/PlayFab/MpsSamples)
 * A fully deployed ThirdPersonMP server in "Deployed" status, with at least 1 server fully propped and in "Standby" mode
     * ThirdPersonMP is the sample project [built](building-the-third-person-mp-example-project.md) and [deployed](third-person-mp-example-project-cloud-deployment.md) in earlier pages of this guide.
-    * A build's status becomes "Deployed" when it contains servers are ready for connections. These servers are considered in "Standby"
+    * A build's status becomes "Deployed" when it contains servers that are ready for connections. These servers are considered in "Standby"
 * A [built game-client](building-the-third-person-mp-example-project.md), ready to connect
 * Visual Studio with .Net Core 3.1 (available as an optional checkbox in the Visual Studio Installer)
 
