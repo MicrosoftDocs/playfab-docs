@@ -204,7 +204,7 @@ The **Bundle** that we've created for this example uses several features:
 
 A drop table generates a single item randomly from a list of potential items and weights. Bundles and containers can be one of the simplest ways to deliver one or more items to a player using drop tables.
 
-You can manually use a drop table from a [Custom Game Server](../../multiplayer/servers/custom-game-servers.md) or [CloudScript](../../automation/cloudscript/writing-custom-cloudscript.md), using one of these Server API methods:
+You can manually use a drop table from [CloudScript](../../automation/cloudscript/writing-custom-cloudscript.md), using one of these Server API methods:
 
 1. [GetRandomResultTables](xref:titleid.playfabapi.com.server.playeritemmanagement.getrandomresulttables)
 2. [EvaluateRandomResultTable](xref:titleid.playfabapi.com.server.playeritemmanagement.evaluaterandomresulttable)

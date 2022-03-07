@@ -114,7 +114,6 @@ Multiplayer allows you to configure server hosting and matchmaking.
 Additional information:
 
 - [CloudScript Quickstart](../features/automation/cloudscript/quickstart.md)
-- [Building Custom Game Servers Tutorial](../features/multiplayer/servers/custom-game-servers.md)
 
 [Back to About the Game Manager](#about-game-manager)
 
