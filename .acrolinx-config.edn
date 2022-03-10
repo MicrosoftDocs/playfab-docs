@@ -1,4 +1,4 @@
-{:allowed-branchname-matches ["master"]
+{:allowed-branchname-matches ["main"]
  :allowed-filename-matches ["playfab-docs/features" "playfab-docs/gamemanager" "playfab-docs/miscellaneous" "playfab-docs/personas" "playfab-docs/release-notes" "playfab-docs/resources" "playfab-docs/roadmap" "playfab-docs/sdks"]
  
  :template-header ;; This displays in the pull request results pane.  Can be overriden in repo-specific edn file. Ensure you match the indentations at the line starts exactly.
