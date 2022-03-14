@@ -5,7 +5,7 @@ description: "A generic, base structure representation of an event or change in 
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/25/2019
+ms.date: 03/11/2022
 ---
 
 # PartyStateChange  
@@ -15,9 +15,9 @@ A generic, base structure representation of an event or change in state.
 ## Syntax  
   
 ```cpp
-typedef struct PartyStateChange {  
+struct PartyStateChange {  
     PartyStateChangeType stateChangeType;  
-} PartyStateChange  
+}  
 ```
   
 ### Members  

@@ -5,7 +5,7 @@ description: "Information specific to the *SynthesizeTextToSpeechCompleted* type
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/26/2019
+ms.date: 03/11/2022
 ---
 
 # PartySynthesizeTextToSpeechCompletedStateChange  
@@ -15,14 +15,14 @@ Information specific to the *SynthesizeTextToSpeechCompleted* type of state chan
 ## Syntax  
   
 ```cpp
-typedef struct PartySynthesizeTextToSpeechCompletedStateChange {  
+struct PartySynthesizeTextToSpeechCompletedStateChange {  
     PartyStateChangeResult result;  
     PartyError errorDetail;  
     PartyLocalChatControl* localChatControl;  
     PartySynthesizeTextToSpeechType type;  
     PartyString textToSynthesize;  
     void* asyncIdentifier;  
-} PartySynthesizeTextToSpeechCompletedStateChange  
+}  
 ```
   
 ### Members  

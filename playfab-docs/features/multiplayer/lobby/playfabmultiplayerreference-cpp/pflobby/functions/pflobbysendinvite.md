@@ -5,7 +5,7 @@ description: "Send an invite to this lobby from the local user to the invited en
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 01/03/2022
+ms.date: 03/14/2022
 ---
 
 # PFLobbySendInvite  
@@ -29,11 +29,11 @@ HRESULT PFLobbySendInvite(
   
 The handle of the lobby.  
   
-**`sender`** &nbsp; PFEntityKey*  
+**`sender`** &nbsp; [PFEntityKey*](../../pfmultiplayer/pfentitykey_clientsdk.md)  
   
 The local user sending the invite.  
   
-**`invitee`** &nbsp; PFEntityKey*  
+**`invitee`** &nbsp; [PFEntityKey*](../../pfmultiplayer/pfentitykey_clientsdk.md)  
   
 The invited entity.  
   

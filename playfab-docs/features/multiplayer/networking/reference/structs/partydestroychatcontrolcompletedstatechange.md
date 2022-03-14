@@ -5,7 +5,7 @@ description: "Information specific to the *DestroyChatControlCompleted* type of 
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/26/2019
+ms.date: 03/11/2022
 ---
 
 # PartyDestroyChatControlCompletedStateChange  
@@ -15,13 +15,13 @@ Information specific to the *DestroyChatControlCompleted* type of state change.
 ## Syntax  
   
 ```cpp
-typedef struct PartyDestroyChatControlCompletedStateChange {  
+struct PartyDestroyChatControlCompletedStateChange {  
     PartyStateChangeResult result;  
     PartyError errorDetail;  
     PartyLocalDevice* localDevice;  
     PartyLocalChatControl* localChatControl;  
     void* asyncIdentifier;  
-} PartyDestroyChatControlCompletedStateChange  
+}  
 ```
   
 ### Members  

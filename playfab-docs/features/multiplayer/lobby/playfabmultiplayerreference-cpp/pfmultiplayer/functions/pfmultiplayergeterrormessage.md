@@ -5,7 +5,7 @@ description: "Get the human-readable form of an error."
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 01/03/2022
+ms.date: 03/11/2022
 ---
 
 # PFMultiplayerGetErrorMessage  
@@ -15,9 +15,8 @@ Get the human-readable form of an error.
 ## Syntax  
   
 ```cpp
-HRESULT PFMultiplayerGetErrorMessage(  
-    HRESULT error,  
-    const char** errorMessage  
+const char * PFMultiplayerGetErrorMessage(  
+    HRESULT error  
 )  
 ```  
   
@@ -27,16 +26,11 @@ HRESULT PFMultiplayerGetErrorMessage(
   
 An error code.  
   
-**`errorMessage`** &nbsp; char**  
-*library-allocated output*  
-  
-The output, human-readable error message. The memory for the returned string remains valid for the lifetime of the process.  
-  
   
 ### Return value
-Type: HRESULT
+Type: const char *
   
-```S_OK``` if the call succeeded or an error code otherwise.
+The human-readable error message. The memory for the returned string remains valid for the lifetime of the process.
   
 ## Remarks  
   

@@ -5,7 +5,7 @@ description: "Information specific to the *PopulateAvailableTextToSpeechProfiles
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/26/2019
+ms.date: 03/11/2022
 ---
 
 # PartyPopulateAvailableTextToSpeechProfilesCompletedStateChange  
@@ -15,12 +15,12 @@ Information specific to the *PopulateAvailableTextToSpeechProfilesCompleted* typ
 ## Syntax  
   
 ```cpp
-typedef struct PartyPopulateAvailableTextToSpeechProfilesCompletedStateChange {  
+struct PartyPopulateAvailableTextToSpeechProfilesCompletedStateChange {  
     PartyStateChangeResult result;  
     PartyError errorDetail;  
     PartyLocalChatControl* localChatControl;  
     void* asyncIdentifier;  
-} PartyPopulateAvailableTextToSpeechProfilesCompletedStateChange  
+}  
 ```
   
 ### Members  

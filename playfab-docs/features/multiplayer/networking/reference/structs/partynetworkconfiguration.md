@@ -5,7 +5,7 @@ description: "Network configuration data."
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 08/05/2020
+ms.date: 03/11/2022
 ---
 
 # PartyNetworkConfiguration  
@@ -15,14 +15,14 @@ Network configuration data.
 ## Syntax  
   
 ```cpp
-typedef struct PartyNetworkConfiguration {  
+struct PartyNetworkConfiguration {  
     uint32_t maxUserCount;  
     uint32_t maxDeviceCount;  
     uint32_t maxUsersPerDeviceCount;  
     uint32_t maxDevicesPerUserCount;  
     uint32_t maxEndpointsPerDeviceCount;  
     PartyDirectPeerConnectivityOptions directPeerConnectivityOptions;  
-} PartyNetworkConfiguration  
+}  
 ```
   
 ### Members  

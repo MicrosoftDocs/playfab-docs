@@ -5,7 +5,7 @@ description: "Reasons the client no longer has access to the Lobby."
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 01/03/2022
+ms.date: 03/11/2022
 ---
 
 # PFLobbyDisconnectingReason  
@@ -19,6 +19,7 @@ enum class PFLobbyDisconnectingReason  : uint32_t
 {  
     NoLocalMembers = 0,  
     LobbyDeleted = 1,  
+    ConnectionInterruption = 2,  
 }  
 ```  
   
@@ -28,6 +29,7 @@ enum class PFLobbyDisconnectingReason  : uint32_t
 | --- | --- |
 | NoLocalMembers | The client is no longer connected to the lobby because none of the client's local entities are members. |  
 | LobbyDeleted | The client is being disconnected from the lobby because the lobby's server owner has deleted the lobby. |  
+| ConnectionInterruption | The client is being disconnected from the lobby because the client has lost connection. |  
   
   
 ## Requirements  

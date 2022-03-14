@@ -5,7 +5,7 @@ description: "Information specific to the *FindLobbiesCompleted* type of state c
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 01/03/2022
+ms.date: 03/14/2022
 ---
 
 # PFLobbyFindLobbiesCompletedStateChange  
@@ -15,24 +15,24 @@ Information specific to the *FindLobbiesCompleted* type of state change.
 ## Syntax  
   
 ```cpp
-typedef struct PFLobbyFindLobbiesCompletedStateChange {  
-    result ;  
+struct PFLobbyFindLobbiesCompletedStateChange {  
+    HRESULT result;  
     PFEntityKey searchingEntity;  
     void* asyncContext;  
     uint32_t searchResultCount;  
     const PFLobbySearchResult* searchResults;  
-} PFLobbyFindLobbiesCompletedStateChange  
+}  
 ```
   
 ### Members  
   
-**``** &nbsp; result  
+**`result`** &nbsp; HRESULT  
   
 Indicates the result of the search lobbies operation.
   
 The human-readable form of this result can be retrieved via [PFMultiplayerGetErrorMessage()](../../pfmultiplayer/functions/pfmultiplayergeterrormessage.md).
   
-**`searchingEntity`** &nbsp; PFEntityKey  
+**`searchingEntity`** &nbsp; [PFEntityKey](../../pfmultiplayer/pfentitykey_clientsdk.md)  
   
 The entity provided to the call associated with this state change.
   

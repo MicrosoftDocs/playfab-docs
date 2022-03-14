@@ -5,7 +5,7 @@ description: "The format information needed to interpret Party audio data."
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 02/10/2020
+ms.date: 03/11/2022
 ---
 
 # PartyAudioFormat  
@@ -15,14 +15,14 @@ The format information needed to interpret Party audio data.
 ## Syntax  
   
 ```cpp
-typedef struct PartyAudioFormat {  
+struct PartyAudioFormat {  
     uint32_t samplesPerSecond;  
     uint32_t channelMask;  
     uint16_t channelCount;  
     uint16_t bitsPerSample;  
     PartyAudioSampleType sampleType;  
     PartyBool interleaved;  
-} PartyAudioFormat  
+}  
 ```
   
 ### Members  

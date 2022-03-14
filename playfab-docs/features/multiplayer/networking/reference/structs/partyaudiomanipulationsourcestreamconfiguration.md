@@ -5,7 +5,7 @@ description: "The configuration information needed to set up an audio source str
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 02/10/2020
+ms.date: 03/11/2022
 ---
 
 # PartyAudioManipulationSourceStreamConfiguration  
@@ -15,10 +15,10 @@ The configuration information needed to set up an audio source stream.
 ## Syntax  
   
 ```cpp
-typedef struct PartyAudioManipulationSourceStreamConfiguration {  
+struct PartyAudioManipulationSourceStreamConfiguration {  
     PartyAudioFormat* format;  
     uint32_t maxTotalAudioBufferSizeInMilliseconds;  
-} PartyAudioManipulationSourceStreamConfiguration  
+}  
 ```
   
 ### Members  

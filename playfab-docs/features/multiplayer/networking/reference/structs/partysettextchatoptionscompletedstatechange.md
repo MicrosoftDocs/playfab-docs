@@ -5,7 +5,7 @@ description: "Information specific to the *PartySetTextChatOptionsCompleted* typ
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/26/2019
+ms.date: 03/11/2022
 ---
 
 # PartySetTextChatOptionsCompletedStateChange  
@@ -15,13 +15,13 @@ Information specific to the *PartySetTextChatOptionsCompleted* type of state cha
 ## Syntax  
   
 ```cpp
-typedef struct PartySetTextChatOptionsCompletedStateChange {  
+struct PartySetTextChatOptionsCompletedStateChange {  
     PartyStateChangeResult result;  
     PartyError errorDetail;  
     PartyLocalChatControl* localChatControl;  
     PartyTextChatOptions options;  
     void* asyncIdentifier;  
-} PartySetTextChatOptionsCompletedStateChange  
+}  
 ```
   
 ### Members  

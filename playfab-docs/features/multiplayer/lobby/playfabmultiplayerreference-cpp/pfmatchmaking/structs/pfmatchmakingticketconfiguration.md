@@ -5,7 +5,7 @@ description: "Defines the configuration for a matchmaking ticket."
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 01/03/2022
+ms.date: 03/14/2022
 ---
 
 # PFMatchmakingTicketConfiguration  
@@ -15,12 +15,12 @@ Defines the configuration for a matchmaking ticket.
 ## Syntax  
   
 ```cpp
-typedef struct PFMatchmakingTicketConfiguration {  
+struct PFMatchmakingTicketConfiguration {  
     uint32_t timeoutInSeconds;  
     const char* queueName;  
     uint32_t membersToMatchWithCount;  
     const PFEntityKey* membersToMatchWith;  
-} PFMatchmakingTicketConfiguration  
+}  
 ```
   
 ### Members  
@@ -38,7 +38,7 @@ The ID of a match queue.
   
 The number of other specific users expected to join the ticket.
   
-**`membersToMatchWith`** &nbsp; const PFEntityKey*  
+**`membersToMatchWith`** &nbsp; const [PFEntityKey](../../pfmultiplayer/pfentitykey_clientsdk.md)*  
 *array of size `membersToMatchWithCount`*  
   
 The PlayFab Entity Keys of other specific users expected to join the ticket.

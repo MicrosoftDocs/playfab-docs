@@ -5,7 +5,7 @@ description: "The configuration structure used to specify how a [PFMultiplayerFi
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 01/03/2022
+ms.date: 03/11/2022
 ---
 
 # PFLobbySearchConfiguration  
@@ -15,12 +15,12 @@ The configuration structure used to specify how a [PFMultiplayerFindLobbies](../
 ## Syntax  
   
 ```cpp
-typedef struct PFLobbySearchConfiguration {  
+struct PFLobbySearchConfiguration {  
     const PFLobbySearchFriendsFilter* friendsFilter;  
     const char* filterString;  
     const char* sortString;  
     const uint32_t* clientSearchResultCount;  
-} PFLobbySearchConfiguration  
+}  
 ```
   
 ### Members  

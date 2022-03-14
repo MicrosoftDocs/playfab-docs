@@ -5,7 +5,7 @@ description: "Sets the token that should be used for authentication when perform
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 01/03/2022
+ms.date: 03/14/2022
 ---
 
 # PFMultiplayerSetEntityToken  
@@ -28,7 +28,7 @@ HRESULT PFMultiplayerSetEntityToken(
   
 The handle of the PFMultiplayer API instance.  
   
-**`entity`** &nbsp; PFEntityKey*  
+**`entity`** &nbsp; [PFEntityKey*](../pfentitykey_clientsdk.md)  
   
 The PlayFab Entity Key to associate with a token.  
   

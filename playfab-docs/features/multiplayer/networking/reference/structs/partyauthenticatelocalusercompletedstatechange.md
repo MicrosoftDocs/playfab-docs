@@ -5,7 +5,7 @@ description: "Information specific to the *AuthenticateLocalUserCompleted* type 
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/26/2019
+ms.date: 03/11/2022
 ---
 
 # PartyAuthenticateLocalUserCompletedStateChange  
@@ -15,14 +15,14 @@ Information specific to the *AuthenticateLocalUserCompleted* type of state chang
 ## Syntax  
   
 ```cpp
-typedef struct PartyAuthenticateLocalUserCompletedStateChange {  
+struct PartyAuthenticateLocalUserCompletedStateChange {  
     PartyStateChangeResult result;  
     PartyError errorDetail;  
     PartyNetwork* network;  
     PartyLocalUser* localUser;  
     PartyString invitationIdentifier;  
     void* asyncIdentifier;  
-} PartyAuthenticateLocalUserCompletedStateChange  
+}  
 ```
   
 ### Members  

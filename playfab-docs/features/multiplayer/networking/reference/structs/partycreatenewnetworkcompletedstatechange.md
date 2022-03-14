@@ -5,7 +5,7 @@ description: "Information specific to the *CreateNewNetworkCompleted* type of st
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/26/2019
+ms.date: 03/11/2022
 ---
 
 # PartyCreateNewNetworkCompletedStateChange  
@@ -15,7 +15,7 @@ Information specific to the *CreateNewNetworkCompleted* type of state change.
 ## Syntax  
   
 ```cpp
-typedef struct PartyCreateNewNetworkCompletedStateChange {  
+struct PartyCreateNewNetworkCompletedStateChange {  
     PartyStateChangeResult result;  
     PartyError errorDetail;  
     PartyLocalUser* localUser;  
@@ -25,7 +25,7 @@ typedef struct PartyCreateNewNetworkCompletedStateChange {
     void* asyncIdentifier;  
     PartyNetworkDescriptor networkDescriptor;  
     PartyString appliedInitialInvitationIdentifier;  
-} PartyCreateNewNetworkCompletedStateChange  
+}  
 ```
   
 ### Members  

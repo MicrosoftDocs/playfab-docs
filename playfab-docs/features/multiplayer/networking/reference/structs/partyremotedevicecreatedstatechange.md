@@ -5,7 +5,7 @@ description: "Information specific to the *RemoteDeviceCreated* type of state ch
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/26/2019
+ms.date: 03/11/2022
 ---
 
 # PartyRemoteDeviceCreatedStateChange  
@@ -15,9 +15,9 @@ Information specific to the *RemoteDeviceCreated* type of state change.
 ## Syntax  
   
 ```cpp
-typedef struct PartyRemoteDeviceCreatedStateChange {  
+struct PartyRemoteDeviceCreatedStateChange {  
     PartyDevice* device;  
-} PartyRemoteDeviceCreatedStateChange  
+}  
 ```
   
 ### Members  

@@ -194,3 +194,7 @@
     href: pfmultiplayer/callbacks/pfmultiplayerallocatememorycallback.md
   - name: PFMultiplayerFreeMemoryCallback
     href: pfmultiplayer/callbacks/pfmultiplayerfreememorycallback.md
+- name: Typedef
+  items:
+  - name: PFEntityKey - Client SDK
+    href: pfmultiplayer\pfentitykey_clientsdk.md

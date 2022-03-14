@@ -5,7 +5,7 @@ description: "Information specific to the *ChatTextReceived* type of state chang
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 04/07/2021
+ms.date: 03/11/2022
 ---
 
 # PartyChatTextReceivedStateChange  
@@ -15,7 +15,7 @@ Information specific to the *ChatTextReceived* type of state change.
 ## Syntax  
   
 ```cpp
-typedef struct PartyChatTextReceivedStateChange {  
+struct PartyChatTextReceivedStateChange {  
     PartyChatControl* senderChatControl;  
     uint32_t receiverChatControlCount;  
     PartyLocalChatControlArray receiverChatControls;  
@@ -28,7 +28,7 @@ typedef struct PartyChatTextReceivedStateChange {
     PartyChatTextReceivedOptions options;  
     PartyString originalChatText;  
     PartyError errorDetail;  
-} PartyChatTextReceivedStateChange  
+}  
 ```
   
 ### Members  

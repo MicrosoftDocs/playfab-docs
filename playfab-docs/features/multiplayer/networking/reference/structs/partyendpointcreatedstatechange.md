@@ -5,7 +5,7 @@ description: "Information specific to the *EndpointCreated* type of state change
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/26/2019
+ms.date: 03/11/2022
 ---
 
 # PartyEndpointCreatedStateChange  
@@ -15,10 +15,10 @@ Information specific to the *EndpointCreated* type of state change.
 ## Syntax  
   
 ```cpp
-typedef struct PartyEndpointCreatedStateChange {  
+struct PartyEndpointCreatedStateChange {  
     PartyNetwork* network;  
     PartyEndpoint* endpoint;  
-} PartyEndpointCreatedStateChange  
+}  
 ```
   
 ### Members  

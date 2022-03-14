@@ -5,7 +5,7 @@ description: "Optionally configures the memory allocation and freeing callbacks 
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 01/03/2022
+ms.date: 03/11/2022
 ---
 
 # PFMultiplayerSetMemoryCallbacks  
@@ -51,4 +51,3 @@ This method allows the title to install custom memory allocation functions in or
 [PFMultiplayerFreeMemoryCallback](../callbacks/pfmultiplayerfreememorycallback.md)
   
   
-

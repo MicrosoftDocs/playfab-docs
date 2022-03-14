@@ -5,7 +5,7 @@ description: "Information specific to the *Updated* type of state change."
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 01/03/2022
+ms.date: 03/11/2022
 ---
 
 # PFLobbyUpdatedStateChange  
@@ -15,8 +15,8 @@ Information specific to the *Updated* type of state change.
 ## Syntax  
   
 ```cpp
-typedef struct PFLobbyUpdatedStateChange {  
-    _Notnull_ lobby;  
+struct PFLobbyUpdatedStateChange {  
+    PFLobbyHandle lobby;  
     bool ownerUpdated;  
     bool maxMembersUpdated;  
     bool accessPolicyUpdated;  
@@ -27,12 +27,13 @@ typedef struct PFLobbyUpdatedStateChange {
     const char* updatedLobbyPropertyKeys;  
     uint32_t memberUpdateCount;  
     const PFLobbyMemberUpdateSummary* memberUpdates;  
-} PFLobbyUpdatedStateChange  
+}  
 ```
   
 ### Members  
   
-**`lobby`** &nbsp; _Notnull_  
+**`lobby`** &nbsp; PFLobbyHandle  
+*_Notnull_*  
   
 The lobby which was updated.
   

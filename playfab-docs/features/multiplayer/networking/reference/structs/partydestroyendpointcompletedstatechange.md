@@ -5,7 +5,7 @@ description: "Information specific to the *DestroyEndpointCompleted* type of sta
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/26/2019
+ms.date: 03/11/2022
 ---
 
 # PartyDestroyEndpointCompletedStateChange  
@@ -15,13 +15,13 @@ Information specific to the *DestroyEndpointCompleted* type of state change.
 ## Syntax  
   
 ```cpp
-typedef struct PartyDestroyEndpointCompletedStateChange {  
+struct PartyDestroyEndpointCompletedStateChange {  
     PartyStateChangeResult result;  
     PartyError errorDetail;  
     PartyNetwork* network;  
     PartyLocalEndpoint* localEndpoint;  
     void* asyncIdentifier;  
-} PartyDestroyEndpointCompletedStateChange  
+}  
 ```
   
 ### Members  

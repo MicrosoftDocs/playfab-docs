@@ -5,7 +5,7 @@ description: "A descriptor containing the data required for a device to connect 
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/25/2019
+ms.date: 03/11/2022
 ---
 
 # PartyNetworkDescriptor  
@@ -15,11 +15,11 @@ A descriptor containing the data required for a device to connect to a network.
 ## Syntax  
   
 ```cpp
-typedef struct PartyNetworkDescriptor {  
+struct PartyNetworkDescriptor {  
     char networkIdentifier[c_networkIdentifierStringLength + 1];  
     char regionName[c_maxRegionNameStringLength + 1];  
     uint8_t opaqueConnectionInformation[c_opaqueConnectionInformationByteCount];  
-} PartyNetworkDescriptor  
+}  
 ```
   
 ### Members  

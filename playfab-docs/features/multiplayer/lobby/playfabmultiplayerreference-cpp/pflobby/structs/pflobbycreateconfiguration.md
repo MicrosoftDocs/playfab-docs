@@ -5,7 +5,7 @@ description: "The initial configuration data used when creating a lobby."
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 01/03/2022
+ms.date: 03/11/2022
 ---
 
 # PFLobbyCreateConfiguration  
@@ -15,7 +15,7 @@ The initial configuration data used when creating a lobby.
 ## Syntax  
   
 ```cpp
-typedef struct PFLobbyCreateConfiguration {  
+struct PFLobbyCreateConfiguration {  
     uint32_t maxMemberCount;  
     PFLobbyOwnerMigrationPolicy ownerMigrationPolicy;  
     PFLobbyAccessPolicy accessPolicy;  
@@ -25,7 +25,7 @@ typedef struct PFLobbyCreateConfiguration {
     uint32_t lobbyPropertyCount;  
     const char* lobbyPropertyKeys;  
     const char* lobbyPropertyValues;  
-} PFLobbyCreateConfiguration  
+}  
 ```
   
 ### Members  

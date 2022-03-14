@@ -5,7 +5,7 @@ description: "Information specific to the *InviteListenerStatusChanged* type of 
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 01/03/2022
+ms.date: 03/14/2022
 ---
 
 # PFLobbyInviteListenerStatusChangedStateChange  
@@ -15,14 +15,14 @@ Information specific to the *InviteListenerStatusChanged* type of state change.
 ## Syntax  
   
 ```cpp
-typedef struct PFLobbyInviteListenerStatusChangedStateChange {  
+struct PFLobbyInviteListenerStatusChangedStateChange {  
     PFEntityKey listeningEntity;  
-} PFLobbyInviteListenerStatusChangedStateChange  
+}  
 ```
   
 ### Members  
   
-**`listeningEntity`** &nbsp; PFEntityKey  
+**`listeningEntity`** &nbsp; [PFEntityKey](../../pfmultiplayer/pfentitykey_clientsdk.md)  
   
 The entity associated with the invite listener.
   

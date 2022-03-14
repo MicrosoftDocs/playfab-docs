@@ -5,7 +5,7 @@ description: "A data buffer that can be modified by the app."
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 02/10/2020
+ms.date: 03/11/2022
 ---
 
 # PartyMutableDataBuffer  
@@ -15,10 +15,10 @@ A data buffer that can be modified by the app.
 ## Syntax  
   
 ```cpp
-typedef struct PartyMutableDataBuffer {  
+struct PartyMutableDataBuffer {  
     void* buffer;  
     uint32_t bufferByteCount;  
-} PartyMutableDataBuffer  
+}  
 ```
   
 ### Members  
