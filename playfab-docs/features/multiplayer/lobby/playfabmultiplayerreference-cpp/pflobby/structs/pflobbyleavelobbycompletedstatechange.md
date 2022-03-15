@@ -5,7 +5,7 @@ description: "Information specific to the *LeaveLobbyCompleted* type of state ch
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 01/03/2022
+ms.date: 03/14/2022
 ---
 
 # PFLobbyLeaveLobbyCompletedStateChange  
@@ -15,20 +15,21 @@ Information specific to the *LeaveLobbyCompleted* type of state change.
 ## Syntax  
   
 ```cpp
-typedef struct PFLobbyLeaveLobbyCompletedStateChange {  
-    _Notnull_ lobby;  
+struct PFLobbyLeaveLobbyCompletedStateChange {  
+    PFLobbyHandle lobby;  
     const PFEntityKey* localUser;  
     void* asyncContext;  
-} PFLobbyLeaveLobbyCompletedStateChange  
+}  
 ```
   
 ### Members  
   
-**`lobby`** &nbsp; _Notnull_  
+**`lobby`** &nbsp; PFLobbyHandle  
+*_Notnull_*  
   
 The lobby provided to the call associated with this state change.
   
-**`localUser`** &nbsp; const PFEntityKey*  
+**`localUser`** &nbsp; const [PFEntityKey](../../pfmultiplayer/pfentitykey_clientsdk.md)*  
 *may be nullptr*  
   
 The local user provided to the call associated with this state change. May be null.

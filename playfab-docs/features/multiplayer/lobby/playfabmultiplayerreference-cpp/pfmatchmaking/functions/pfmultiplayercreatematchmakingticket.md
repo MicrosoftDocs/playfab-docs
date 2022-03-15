@@ -5,7 +5,7 @@ description: "Creates a matchmaking ticket for one or more local users."
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 01/03/2022
+ms.date: 03/14/2022
 ---
 
 # PFMultiplayerCreateMatchmakingTicket  
@@ -36,7 +36,7 @@ The handle of the PFMultiplayer API instance.
   
 The count of local users to include in the ticket.  
   
-**`localUsers`** &nbsp; PFEntityKey*  
+**`localUsers`** &nbsp; [PFEntityKey*](../../pfmultiplayer/pfentitykey_clientsdk.md)  
 *input array of size `localUserCount`*  
   
 The array of local users to include in the ticket.  

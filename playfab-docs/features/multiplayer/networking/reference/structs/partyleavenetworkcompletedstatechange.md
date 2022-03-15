@@ -5,7 +5,7 @@ description: "Information specific to the *LeaveNetworkCompleted* type of state 
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/26/2019
+ms.date: 03/11/2022
 ---
 
 # PartyLeaveNetworkCompletedStateChange  
@@ -15,12 +15,12 @@ Information specific to the *LeaveNetworkCompleted* type of state change.
 ## Syntax  
   
 ```cpp
-typedef struct PartyLeaveNetworkCompletedStateChange {  
+struct PartyLeaveNetworkCompletedStateChange {  
     PartyStateChangeResult result;  
     PartyError errorDetail;  
     PartyNetwork* network;  
     void* asyncIdentifier;  
-} PartyLeaveNetworkCompletedStateChange  
+}  
 ```
   
 ### Members  

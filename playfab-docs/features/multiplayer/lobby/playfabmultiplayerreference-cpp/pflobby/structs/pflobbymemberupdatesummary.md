@@ -5,7 +5,7 @@ description: "A collection of hints about an update which has been successfully 
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 01/03/2022
+ms.date: 03/14/2022
 ---
 
 # PFLobbyMemberUpdateSummary  
@@ -15,17 +15,17 @@ A collection of hints about an update which has been successfully applied to the
 ## Syntax  
   
 ```cpp
-typedef struct PFLobbyMemberUpdateSummary {  
+struct PFLobbyMemberUpdateSummary {  
     PFEntityKey member;  
     bool connectionStatusUpdated;  
     uint32_t updatedMemberPropertyCount;  
     const char* updatedMemberPropertyKeys;  
-} PFLobbyMemberUpdateSummary  
+}  
 ```
   
 ### Members  
   
-**`member`** &nbsp; PFEntityKey  
+**`member`** &nbsp; [PFEntityKey](../../pfmultiplayer/pfentitykey_clientsdk.md)  
   
 The member which performed the update
   

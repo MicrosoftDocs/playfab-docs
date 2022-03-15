@@ -5,7 +5,7 @@ description: "The configuration information needed to set up an audio sink strea
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 02/10/2020
+ms.date: 03/11/2022
 ---
 
 # PartyAudioManipulationSinkStreamConfiguration  
@@ -15,10 +15,10 @@ The configuration information needed to set up an audio sink stream.
 ## Syntax  
   
 ```cpp
-typedef struct PartyAudioManipulationSinkStreamConfiguration {  
+struct PartyAudioManipulationSinkStreamConfiguration {  
     PartyAudioFormat* format;  
     uint32_t maxTotalAudioBufferSizeInMilliseconds;  
-} PartyAudioManipulationSinkStreamConfiguration  
+}  
 ```
   
 ### Members  

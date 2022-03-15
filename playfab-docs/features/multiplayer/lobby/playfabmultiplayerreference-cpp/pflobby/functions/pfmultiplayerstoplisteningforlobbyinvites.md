@@ -5,7 +5,7 @@ description: "Disables the Lobby invite listener for a given entity."
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 01/03/2022
+ms.date: 03/14/2022
 ---
 
 # PFMultiplayerStopListeningForLobbyInvites  
@@ -27,7 +27,7 @@ HRESULT PFMultiplayerStopListeningForLobbyInvites(
   
 The handle of the PFMultiplayer API instance.  
   
-**`listeningEntity`** &nbsp; PFEntityKey*  
+**`listeningEntity`** &nbsp; [PFEntityKey*](../../pfmultiplayer/pfentitykey_clientsdk.md)  
   
 The entity which is listening for invites.  
   

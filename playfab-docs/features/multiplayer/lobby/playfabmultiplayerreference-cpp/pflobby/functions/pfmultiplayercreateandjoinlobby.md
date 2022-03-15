@@ -5,7 +5,7 @@ description: "Create a new lobby and add the creating PlayFab entity to it."
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 01/03/2022
+ms.date: 03/14/2022
 ---
 
 # PFMultiplayerCreateAndJoinLobby  
@@ -31,7 +31,7 @@ HRESULT PFMultiplayerCreateAndJoinLobby(
   
 The handle of the PFMultiplayer API instance.  
   
-**`creator`** &nbsp; PFEntityKey*  
+**`creator`** &nbsp; [PFEntityKey*](../../pfmultiplayer/pfentitykey_clientsdk.md)  
   
 The local PlayFab entity creating the lobby.  
   

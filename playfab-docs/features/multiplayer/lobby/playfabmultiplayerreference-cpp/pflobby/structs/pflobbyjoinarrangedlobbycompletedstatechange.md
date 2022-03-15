@@ -5,7 +5,7 @@ description: "Information specific to the *JoinArrangedLobbyCompleted* type of s
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 01/03/2022
+ms.date: 03/14/2022
 ---
 
 # PFLobbyJoinArrangedLobbyCompletedStateChange  
@@ -15,23 +15,23 @@ Information specific to the *JoinArrangedLobbyCompleted* type of state change.
 ## Syntax  
   
 ```cpp
-typedef struct PFLobbyJoinArrangedLobbyCompletedStateChange {  
-    result ;  
+struct PFLobbyJoinArrangedLobbyCompletedStateChange {  
+    HRESULT result;  
     PFEntityKey newMember;  
     void* asyncContext;  
-    _Notnull_ lobby;  
-} PFLobbyJoinArrangedLobbyCompletedStateChange  
+    PFLobbyHandle lobby;  
+}  
 ```
   
 ### Members  
   
-**``** &nbsp; result  
+**`result`** &nbsp; HRESULT  
   
 Indicates the result of the JoinArrangedLobby operation.
   
 The human-readable form of this result can be retrieved via [PFMultiplayerGetErrorMessage()](../../pfmultiplayer/functions/pfmultiplayergeterrormessage.md).
   
-**`newMember`** &nbsp; PFEntityKey  
+**`newMember`** &nbsp; [PFEntityKey](../../pfmultiplayer/pfentitykey_clientsdk.md)  
   
 The local member entity provided to the call associated with this state change which is joining this lobby.
   
@@ -39,7 +39,8 @@ The local member entity provided to the call associated with this state change w
   
 The async context provided to the call associated with this state change.
   
-**`lobby`** &nbsp; _Notnull_  
+**`lobby`** &nbsp; PFLobbyHandle  
+*_Notnull_*  
   
 The lobby that was created and joined.
   

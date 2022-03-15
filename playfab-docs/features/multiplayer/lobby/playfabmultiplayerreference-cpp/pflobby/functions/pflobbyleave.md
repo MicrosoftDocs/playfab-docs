@@ -5,7 +5,7 @@ description: "Request one or all local users to leave the lobby."
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 01/03/2022
+ms.date: 03/14/2022
 ---
 
 # PFLobbyLeave  
@@ -28,7 +28,7 @@ HRESULT PFLobbyLeave(
   
 The handle of the lobby.  
   
-**`localUser`** &nbsp; PFEntityKey*  
+**`localUser`** &nbsp; [PFEntityKey*](../../pfmultiplayer/pfentitykey_clientsdk.md)  
 *optional*  
   
 An optional value to indicate if a specific local user should leave the lobby. If this value is nullptr, all local users will leave the lobby.  

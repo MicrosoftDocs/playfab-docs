@@ -5,7 +5,7 @@ description: "Information specific to the *SetTranscriptionOptionsCompleted* typ
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/26/2019
+ms.date: 03/11/2022
 ---
 
 # PartySetTranscriptionOptionsCompletedStateChange  
@@ -15,13 +15,13 @@ Information specific to the *SetTranscriptionOptionsCompleted* type of state cha
 ## Syntax  
   
 ```cpp
-typedef struct PartySetTranscriptionOptionsCompletedStateChange {  
+struct PartySetTranscriptionOptionsCompletedStateChange {  
     PartyStateChangeResult result;  
     PartyError errorDetail;  
     PartyLocalChatControl* localChatControl;  
     PartyVoiceChatTranscriptionOptions options;  
     void* asyncIdentifier;  
-} PartySetTranscriptionOptionsCompletedStateChange  
+}  
 ```
   
 ### Members  

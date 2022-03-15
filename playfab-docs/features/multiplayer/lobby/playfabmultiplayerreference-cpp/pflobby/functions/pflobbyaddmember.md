@@ -5,7 +5,7 @@ description: "Add a local user as a member to the lobby."
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 01/03/2022
+ms.date: 03/14/2022
 ---
 
 # PFLobbyAddMember  
@@ -31,7 +31,7 @@ HRESULT PFLobbyAddMember(
   
 The handle of the lobby.  
   
-**`localUser`** &nbsp; PFEntityKey*  
+**`localUser`** &nbsp; [PFEntityKey*](../../pfmultiplayer/pfentitykey_clientsdk.md)  
   
 The PlayFab Entity Key of the local user to add to the lobby as a member.  
   
@@ -63,7 +63,7 @@ Type: HRESULT
   
 ## Remarks  
   
-This is an asynchronous operation. Upon successful completion, the title will be provided a [PFLobbyMemberAddedStateChange](../structs/pflobbymemberaddedstatechange.md) followed by a [PFLobbyAddMemberCompletedStateChange](../structs/pflobbyaddmembercompletedstatechange.md) with the [PFLobbyAddMemberCompletedStateChange::result](../structs/pflobbyaddmembercompletedstatechange.md) field set to ```S_OK```. Upon a failed completion, the title will be provided a [PFLobbyAddMemberCompletedStateChange](../structs/pflobbyaddmembercompletedstatechange.md) with the [PFLobbyAddMemberCompletedStateChange::result](../structs/pflobbyaddmembercompletedstatechange.md) field set to a failure hresult. <br /><br /> This method is used to add an additional local PlayFab entity to a pre-existing lobby object. Because the lobby object, must have already been created either via a call to [PFMultiplayerCreateAndJoinLobby](pfmultiplayercreateandjoinlobby.md) or [PFMultiplayerJoinLobby](pfmultiplayerjoinlobby.md), this method is primarily useful for multiple local user scenarios.   <br /><br /> This is an asynchronous operation. The member added via this method will not be reflected in the lists returned by [PFLobbyGetMembers](pflobbygetmembers.md) until the asynchronous operation successfully completes and a ```PFLobbyMemberAddedStateChange``` struct is provided by [PFMultiplayerStartProcessingLobbyStateChanges](pfmultiplayerstartprocessinglobbystatechanges.md).
+This is an asynchronous operation. Upon successful completion, the title will be provided a [PFLobbyMemberAddedStateChange](../structs/pflobbymemberaddedstatechange.md) followed by a [PFLobbyAddMemberCompletedStateChange](../structs/pflobbyaddmembercompletedstatechange.md) with the [PFLobbyAddMemberCompletedStateChange::result](../structs/pflobbyaddmembercompletedstatechange.md) field set to ```S_OK```. Upon a failed completion, the title will be provided a [PFLobbyAddMemberCompletedStateChange](../structs/pflobbyaddmembercompletedstatechange.md) with the [PFLobbyAddMemberCompletedStateChange::result](../structs/pflobbyaddmembercompletedstatechange.md) field set to a failure hresult. <br /><br /> This method is used to add another local PlayFab entity to a pre-existing lobby object. Because the lobby object must have already been created either via a call to [PFMultiplayerCreateAndJoinLobby](pfmultiplayercreateandjoinlobby.md) or [PFMultiplayerJoinLobby](pfmultiplayerjoinlobby.md), this method is primarily useful for multiple local user scenarios.   <br /><br /> This is an asynchronous operation. The member added via this method will not be reflected in the lists returned by [PFLobbyGetMembers](pflobbygetmembers.md) until the asynchronous operation successfully completes and a ```PFLobbyMemberAddedStateChange``` struct is provided by [PFMultiplayerStartProcessingLobbyStateChanges](pfmultiplayerstartprocessinglobbystatechanges.md).
   
 ## Requirements  
   

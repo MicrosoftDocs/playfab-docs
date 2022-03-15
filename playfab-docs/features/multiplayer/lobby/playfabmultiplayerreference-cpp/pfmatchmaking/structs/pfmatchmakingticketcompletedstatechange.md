@@ -5,7 +5,7 @@ description: "Information specific to the *TicketCompleted* type of state change
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 01/03/2022
+ms.date: 03/11/2022
 ---
 
 # PFMatchmakingTicketCompletedStateChange  
@@ -15,20 +15,21 @@ Information specific to the *TicketCompleted* type of state change.
 ## Syntax  
   
 ```cpp
-typedef struct PFMatchmakingTicketCompletedStateChange {  
-    result ;  
-    _Notnull_ ticket;  
+struct PFMatchmakingTicketCompletedStateChange {  
+    HRESULT result;  
+    PFMatchmakingTicketHandle ticket;  
     void* asyncContext;  
-} PFMatchmakingTicketCompletedStateChange  
+}  
 ```
   
 ### Members  
   
-**``** &nbsp; result  
+**`result`** &nbsp; HRESULT  
   
 An error code indicating whether the ticket succeeded or, if it failed, why it failed.
   
-**`ticket`** &nbsp; _Notnull_  
+**`ticket`** &nbsp; PFMatchmakingTicketHandle  
+*_Notnull_*  
   
 The matchmaking ticket that completed.
   

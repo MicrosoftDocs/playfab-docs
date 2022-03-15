@@ -5,7 +5,7 @@ description: "Information specific to the *RegionsChanged* type of state change.
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 08/05/2020
+ms.date: 03/11/2022
 ---
 
 # PartyRegionsChangedStateChange  
@@ -15,10 +15,10 @@ Information specific to the *RegionsChanged* type of state change.
 ## Syntax  
   
 ```cpp
-typedef struct PartyRegionsChangedStateChange {  
+struct PartyRegionsChangedStateChange {  
     PartyStateChangeResult result;  
     PartyError errorDetail;  
-} PartyRegionsChangedStateChange  
+}  
 ```
   
 ### Members  

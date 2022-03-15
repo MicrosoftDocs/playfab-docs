@@ -5,7 +5,7 @@ description: "Information specific to the *VoiceChatTranscriptionReceived* type 
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 04/07/2021
+ms.date: 03/11/2022
 ---
 
 # PartyVoiceChatTranscriptionReceivedStateChange  
@@ -15,7 +15,7 @@ Information specific to the *VoiceChatTranscriptionReceived* type of state chang
 ## Syntax  
   
 ```cpp
-typedef struct PartyVoiceChatTranscriptionReceivedStateChange {  
+struct PartyVoiceChatTranscriptionReceivedStateChange {  
     PartyStateChangeResult result;  
     PartyError errorDetail;  
     PartyChatControl* senderChatControl;  
@@ -27,7 +27,7 @@ typedef struct PartyVoiceChatTranscriptionReceivedStateChange {
     PartyVoiceChatTranscriptionPhraseType type;  
     uint32_t translationCount;  
     PartyTranslation* translations;  
-} PartyVoiceChatTranscriptionReceivedStateChange  
+}  
 ```
   
 ### Members  

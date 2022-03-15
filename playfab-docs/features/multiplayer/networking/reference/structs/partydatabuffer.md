@@ -5,7 +5,7 @@ description: "A data buffer."
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/25/2019
+ms.date: 03/11/2022
 ---
 
 # PartyDataBuffer  
@@ -15,10 +15,10 @@ A data buffer.
 ## Syntax  
   
 ```cpp
-typedef struct PartyDataBuffer {  
+struct PartyDataBuffer {  
     const void* buffer;  
     uint32_t bufferByteCount;  
-} PartyDataBuffer  
+}  
 ```
   
 ### Members  

@@ -5,7 +5,7 @@ description: "Invitation configuration data."
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/26/2019
+ms.date: 03/11/2022
 ---
 
 # PartyInvitationConfiguration  
@@ -15,12 +15,12 @@ Invitation configuration data.
 ## Syntax  
   
 ```cpp
-typedef struct PartyInvitationConfiguration {  
+struct PartyInvitationConfiguration {  
     PartyString identifier;  
     PartyInvitationRevocability revocability;  
     uint32_t entityIdCount;  
     const PartyString* entityIds;  
-} PartyInvitationConfiguration  
+}  
 ```
   
 ### Members  

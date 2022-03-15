@@ -5,7 +5,7 @@ description: "The filter structure used to limit lobby search results to only th
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 01/03/2022
+ms.date: 03/11/2022
 ---
 
 # PFLobbySearchFriendsFilter  
@@ -15,11 +15,11 @@ The filter structure used to limit lobby search results to only those lobbies ow
 ## Syntax  
   
 ```cpp
-typedef struct PFLobbySearchFriendsFilter {  
+struct PFLobbySearchFriendsFilter {  
     bool includeSteamFriends;  
     bool includeFacebookFriends;  
     const char* includeXboxFriendsToken;  
-} PFLobbySearchFriendsFilter  
+}  
 ```
   
 ### Members  

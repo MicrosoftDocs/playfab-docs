@@ -5,7 +5,7 @@ description: "Join a lobby as the local PlayFab entity."
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 01/03/2022
+ms.date: 03/14/2022
 ---
 
 # PFMultiplayerJoinLobby  
@@ -31,7 +31,7 @@ HRESULT PFMultiplayerJoinLobby(
   
 The handle of the PFMultiplayer API instance.  
   
-**`newMember`** &nbsp; PFEntityKey*  
+**`newMember`** &nbsp; [PFEntityKey*](../../pfmultiplayer/pfentitykey_clientsdk.md)  
   
 The local entity joining the lobby.  
   

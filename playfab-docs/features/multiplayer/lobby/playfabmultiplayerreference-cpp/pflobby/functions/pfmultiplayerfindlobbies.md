@@ -5,7 +5,7 @@ description: "Search for lobbies on behalf of the local user."
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 01/03/2022
+ms.date: 03/14/2022
 ---
 
 # PFMultiplayerFindLobbies  
@@ -29,7 +29,7 @@ HRESULT PFMultiplayerFindLobbies(
   
 The handle of the PFMultiplayer API instance.  
   
-**`searchingEntity`** &nbsp; PFEntityKey*  
+**`searchingEntity`** &nbsp; [PFEntityKey*](../../pfmultiplayer/pfentitykey_clientsdk.md)  
   
 The playfab entity performing the search.  
   

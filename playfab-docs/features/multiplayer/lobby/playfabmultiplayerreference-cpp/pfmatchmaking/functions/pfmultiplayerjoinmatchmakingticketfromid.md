@@ -5,7 +5,7 @@ description: "Joins one or more multiple local users to a matchmaking ticket usi
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 01/03/2022
+ms.date: 03/14/2022
 ---
 
 # PFMultiplayerJoinMatchmakingTicketFromId  
@@ -37,7 +37,7 @@ The handle of the PFMultiplayer API instance.
   
 The count of local users to join the ticket.  
   
-**`localUsers`** &nbsp; PFEntityKey*  
+**`localUsers`** &nbsp; [PFEntityKey*](../../pfmultiplayer/pfentitykey_clientsdk.md)  
 *input array of size `localUserCount`*  
   
 The array of local users to join to the ticket.  

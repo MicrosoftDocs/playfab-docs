@@ -5,7 +5,7 @@ description: "Retrieve the status of the entity's invite listener."
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 01/03/2022
+ms.date: 03/14/2022
 ---
 
 # PFMultiplayerGetLobbyInviteListenerStatus  
@@ -28,7 +28,7 @@ HRESULT PFMultiplayerGetLobbyInviteListenerStatus(
   
 The handle of the PFMultiplayer API instance.  
   
-**`listeningEntity`** &nbsp; PFEntityKey*  
+**`listeningEntity`** &nbsp; [PFEntityKey*](../../pfmultiplayer/pfentitykey_clientsdk.md)  
   
 The entity which is listening for invites.  
   

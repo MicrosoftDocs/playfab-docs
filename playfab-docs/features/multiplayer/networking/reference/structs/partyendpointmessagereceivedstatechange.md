@@ -5,7 +5,7 @@ description: "Information specific to the *EndpointMessageReceived* type of stat
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/26/2019
+ms.date: 03/11/2022
 ---
 
 # PartyEndpointMessageReceivedStateChange  
@@ -15,7 +15,7 @@ Information specific to the *EndpointMessageReceived* type of state change.
 ## Syntax  
   
 ```cpp
-typedef struct PartyEndpointMessageReceivedStateChange {  
+struct PartyEndpointMessageReceivedStateChange {  
     PartyNetwork* network;  
     PartyEndpoint* senderEndpoint;  
     uint32_t receiverEndpointCount;  
@@ -23,7 +23,7 @@ typedef struct PartyEndpointMessageReceivedStateChange {
     PartyMessageReceivedOptions options;  
     uint32_t messageSize;  
     const void* messageBuffer;  
-} PartyEndpointMessageReceivedStateChange  
+}  
 ```
   
 ### Members  

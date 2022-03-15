@@ -5,7 +5,7 @@ description: "Optional configuration parameters for modifying local queuing beha
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 06/22/2021
+ms.date: 03/11/2022
 ---
 
 # PartySendMessageQueuingConfiguration  
@@ -15,11 +15,11 @@ Optional configuration parameters for modifying local queuing behavior when send
 ## Syntax  
   
 ```cpp
-typedef struct PartySendMessageQueuingConfiguration {  
+struct PartySendMessageQueuingConfiguration {  
     int8_t priority;  
     uint32_t identityForCancelFilters;  
     uint32_t timeoutInMilliseconds;  
-} PartySendMessageQueuingConfiguration  
+}  
 ```
   
 ### Members  

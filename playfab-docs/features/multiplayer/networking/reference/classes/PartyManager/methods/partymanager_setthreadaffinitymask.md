@@ -5,7 +5,7 @@ description: Optionally configures the processor on which internal Party library
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/25/2019
+ms.date: 03/11/2022
 ---
 
 # PartyManager::SetThreadAffinityMask  
@@ -39,8 +39,7 @@ PartyError
   
 ## Remarks  
   
-This method enables the title to configure the processor affinity for internal Party library threads of a given type. On Windows and Xbox consoles, the ``Audio`` type controls both the internal audio thread and the XAudio2 thread. Refer to [PartyThreadId](../../../enums/partythreadid.md) for more information.<br /><br /> This method may be called at any time before or after [Initialize()](partymanager_initialize.md) and will take effect immediately. Thread processor settings are persisted across calls to [Cleanup()](partymanager_cleanup.md) and Initialize(). When there are more than 64 cores present, this method always applies to processor group 0.   <br /><br /> In order to specify any processor, pass ```c_anyProcessor``` as the `threadAffinityMask` parameter. This is also the default value the Party library will use if this method is never called.
-
+This method enables the title to configure the processor affinity for internal Party library threads of a given type. On Windows, the ```Audio``` type affects both library's directly-owned threads and threads owned by XAudio2. For more information, see [PartyThreadId](../../../enums/partythreadid.md). <br /><br /> This method may be called at any time before or after [Initialize()](partymanager_initialize.md) and will take effect immediately. Thread processor settings are persisted across calls to [Cleanup()](partymanager_cleanup.md) and Initialize(). When there are more than 64 cores present, this method always applies to processor group 0.   <br /><br /> In order to specify any processor, pass ```c_anyProcessor``` as the `threadAffinityMask` parameter. This is also the default value the Party library will use if this method is never called.
   
 ## Requirements  
   

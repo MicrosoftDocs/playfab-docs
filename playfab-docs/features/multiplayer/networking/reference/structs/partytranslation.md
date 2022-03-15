@@ -5,7 +5,7 @@ description: "A translation."
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 08/05/2020
+ms.date: 03/11/2022
 ---
 
 # PartyTranslation  
@@ -15,13 +15,13 @@ A translation.
 ## Syntax  
   
 ```cpp
-typedef struct PartyTranslation {  
+struct PartyTranslation {  
     PartyStateChangeResult result;  
     PartyError errorDetail;  
     PartyString languageCode;  
     PartyTranslationReceivedOptions options;  
     PartyString translation;  
-} PartyTranslation  
+}  
 ```
   
 ### Members  

@@ -5,7 +5,7 @@ description: "Information specific to the *SendInviteCompleted* type of state ch
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 01/03/2022
+ms.date: 03/14/2022
 ---
 
 # PFLobbySendInviteCompletedStateChange  
@@ -15,32 +15,33 @@ Information specific to the *SendInviteCompleted* type of state change.
 ## Syntax  
   
 ```cpp
-typedef struct PFLobbySendInviteCompletedStateChange {  
-    result ;  
-    _Notnull_ lobby;  
+struct PFLobbySendInviteCompletedStateChange {  
+    HRESULT result;  
+    PFLobbyHandle lobby;  
     PFEntityKey sender;  
     PFEntityKey invitee;  
     void* asyncContext;  
-} PFLobbySendInviteCompletedStateChange  
+}  
 ```
   
 ### Members  
   
-**``** &nbsp; result  
+**`result`** &nbsp; HRESULT  
   
 Indicates the result of the SendInvite operation.
   
 The human-readable form of this result can be retrieved via [PFMultiplayerGetErrorMessage()](../../pfmultiplayer/functions/pfmultiplayergeterrormessage.md).
   
-**`lobby`** &nbsp; _Notnull_  
+**`lobby`** &nbsp; PFLobbyHandle  
+*_Notnull_*  
   
 The lobby that the invite was sent for.
   
-**`sender`** &nbsp; PFEntityKey  
+**`sender`** &nbsp; [PFEntityKey](../../pfmultiplayer/pfentitykey_clientsdk.md)  
   
 The local user which attempted to send the invite.
   
-**`invitee`** &nbsp; PFEntityKey  
+**`invitee`** &nbsp; [PFEntityKey](../../pfmultiplayer/pfentitykey_clientsdk.md)  
   
 The entity which was invited.
   

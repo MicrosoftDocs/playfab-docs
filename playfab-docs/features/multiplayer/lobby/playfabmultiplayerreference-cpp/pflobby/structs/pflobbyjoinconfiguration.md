@@ -5,7 +5,7 @@ description: "The initial configuration data used when joining a lobby."
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 01/03/2022
+ms.date: 03/11/2022
 ---
 
 # PFLobbyJoinConfiguration  
@@ -15,11 +15,11 @@ The initial configuration data used when joining a lobby.
 ## Syntax  
   
 ```cpp
-typedef struct PFLobbyJoinConfiguration {  
+struct PFLobbyJoinConfiguration {  
     uint32_t memberPropertyCount;  
     const char* memberPropertyKeys;  
     const char* memberPropertyValues;  
-} PFLobbyJoinConfiguration  
+}  
 ```
   
 ### Members  

@@ -5,7 +5,7 @@ description: Optionally configures the memory allocation and freeing callbacks t
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 06/22/2021
+ms.date: 03/11/2022
 ---
 
 # PartyManager::SetMemoryCallbacks  
@@ -52,4 +52,3 @@ This method allows the title to install custom memory allocation functions in or
 [PartyManager::GetMemoryCallbacks](partymanager_getmemorycallbacks.md)
   
   
-

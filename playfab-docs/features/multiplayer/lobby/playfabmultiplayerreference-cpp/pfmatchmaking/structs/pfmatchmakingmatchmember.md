@@ -5,7 +5,7 @@ description: "A member of a match result."
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 01/03/2022
+ms.date: 03/14/2022
 ---
 
 # PFMatchmakingMatchMember  
@@ -15,16 +15,16 @@ A member of a match result.
 ## Syntax  
   
 ```cpp
-typedef struct PFMatchmakingMatchMember {  
+struct PFMatchmakingMatchMember {  
     PFEntityKey entityKey;  
     const char* teamId;  
     const char* attributes;  
-} PFMatchmakingMatchMember  
+}  
 ```
   
 ### Members  
   
-**`entityKey`** &nbsp; PFEntityKey  
+**`entityKey`** &nbsp; [PFEntityKey](../../pfmultiplayer/pfentitykey_clientsdk.md)  
   
 The Entity Key for this match member.
   

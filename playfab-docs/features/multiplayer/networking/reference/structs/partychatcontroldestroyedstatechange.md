@@ -5,7 +5,7 @@ description: "Information specific to the *ChatControlDestroyed* type of state c
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/26/2019
+ms.date: 03/11/2022
 ---
 
 # PartyChatControlDestroyedStateChange  
@@ -15,11 +15,11 @@ Information specific to the *ChatControlDestroyed* type of state change.
 ## Syntax  
   
 ```cpp
-typedef struct PartyChatControlDestroyedStateChange {  
+struct PartyChatControlDestroyedStateChange {  
     PartyChatControl* chatControl;  
     PartyDestroyedReason reason;  
     PartyError errorDetail;  
-} PartyChatControlDestroyedStateChange  
+}  
 ```
   
 ### Members  

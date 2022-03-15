@@ -5,7 +5,7 @@ description: Retrieves the memory allocation and freeing callbacks the Party lib
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 06/22/2021
+ms.date: 03/11/2022
 ---
 
 # PartyManager::GetMemoryCallbacks  
@@ -54,4 +54,3 @@ This retrieves the memory allocation functions servicing requests by the Party l
 [PartyManager::SetMemoryCallbacks](partymanager_setmemorycallbacks.md)
   
   
-

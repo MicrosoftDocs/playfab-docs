@@ -5,7 +5,7 @@ description: "Gets the current owner of the lobby."
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 01/03/2022
+ms.date: 03/14/2022
 ---
 
 # PFLobbyGetOwner  
@@ -27,7 +27,7 @@ HRESULT PFLobbyGetOwner(
   
 The handle of the lobby.  
   
-**`owner`** &nbsp; PFEntityKey**  
+**`owner`** &nbsp; [PFEntityKey**](../../pfmultiplayer/pfentitykey_clientsdk.md)  
 *library-allocated output, may return nullptr*  
   
 The output owner. This value may be null if the owner has left or disconnected from the lobby while the owner migration policy is [PFLobbyOwnerMigrationPolicy::Manual](../enums/pflobbyownermigrationpolicy.md) or [PFLobbyOwnerMigrationPolicy::None](../enums/pflobbyownermigrationpolicy.md).  

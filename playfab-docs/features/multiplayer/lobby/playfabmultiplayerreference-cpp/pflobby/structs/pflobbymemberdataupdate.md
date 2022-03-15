@@ -5,7 +5,7 @@ description: "A request to make an update to the member-owned portion of the lob
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 01/03/2022
+ms.date: 03/11/2022
 ---
 
 # PFLobbyMemberDataUpdate  
@@ -15,11 +15,11 @@ A request to make an update to the member-owned portion of the lobby document.
 ## Syntax  
   
 ```cpp
-typedef struct PFLobbyMemberDataUpdate {  
+struct PFLobbyMemberDataUpdate {  
     uint32_t memberPropertyCount;  
     const char* memberPropertyKeys;  
     const char* memberPropertyValues;  
-} PFLobbyMemberDataUpdate  
+}  
 ```
   
 ### Members  
@@ -35,7 +35,7 @@ There may only be ```PFLobbyMaxMemberPropertyCount``` concurrent properties at a
   
 The keys of the member properties to update for the updating member.
   
-Per-member properties are only visible to members of the lobby.
+Per-member properties are only visible to members of the lobby. <br /><br /> Only the properties specified in this list of keys will be updated. If the key doesn't exist yet, the property will be created. If the new property value is nullptr, the property will be deleted. Any existing properties omitted from this list will be left unmodified.
   
 **`memberPropertyValues`** &nbsp; const char*  
 *array of size `memberPropertyCount`*  

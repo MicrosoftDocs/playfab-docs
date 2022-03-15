@@ -5,7 +5,7 @@ description: "Information specific to the *LocalUserRemoved* type of state chang
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/26/2019
+ms.date: 03/11/2022
 ---
 
 # PartyLocalUserRemovedStateChange  
@@ -15,11 +15,11 @@ Information specific to the *LocalUserRemoved* type of state change.
 ## Syntax  
   
 ```cpp
-typedef struct PartyLocalUserRemovedStateChange {  
+struct PartyLocalUserRemovedStateChange {  
     PartyNetwork* network;  
     PartyLocalUser* localUser;  
     PartyLocalUserRemovedReason removedReason;  
-} PartyLocalUserRemovedStateChange  
+}  
 ```
   
 ### Members  
