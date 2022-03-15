@@ -5,7 +5,7 @@ description: "Information specific to the *ChatControlLeftNetwork* type of state
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/26/2019
+ms.date: 03/11/2022
 ---
 
 # PartyChatControlLeftNetworkStateChange  
@@ -15,12 +15,12 @@ Information specific to the *ChatControlLeftNetwork* type of state change.
 ## Syntax  
   
 ```cpp
-typedef struct PartyChatControlLeftNetworkStateChange {  
+struct PartyChatControlLeftNetworkStateChange {  
     PartyDestroyedReason reason;  
     PartyError errorDetail;  
     PartyNetwork* network;  
     PartyChatControl* chatControl;  
-} PartyChatControlLeftNetworkStateChange  
+}  
 ```
   
 ### Members  

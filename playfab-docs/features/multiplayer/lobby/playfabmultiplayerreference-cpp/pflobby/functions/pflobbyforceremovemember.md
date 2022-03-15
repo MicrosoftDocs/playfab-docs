@@ -5,7 +5,7 @@ description: "Forcibly remove an entity from the lobby."
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 01/03/2022
+ms.date: 03/14/2022
 ---
 
 # PFLobbyForceRemoveMember  
@@ -29,7 +29,7 @@ HRESULT PFLobbyForceRemoveMember(
   
 The handle of the lobby.  
   
-**`targetMember`** &nbsp; PFEntityKey*  
+**`targetMember`** &nbsp; [PFEntityKey*](../../pfmultiplayer/pfentitykey_clientsdk.md)  
   
 The member to forcibly remove.  
   

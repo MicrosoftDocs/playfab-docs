@@ -5,7 +5,7 @@ description: "Information specific to the *PostUpdateCompleted* type of state ch
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 01/03/2022
+ms.date: 03/14/2022
 ---
 
 # PFLobbyPostUpdateCompletedStateChange  
@@ -15,27 +15,28 @@ Information specific to the *PostUpdateCompleted* type of state change.
 ## Syntax  
   
 ```cpp
-typedef struct PFLobbyPostUpdateCompletedStateChange {  
-    result ;  
-    _Notnull_ lobby;  
+struct PFLobbyPostUpdateCompletedStateChange {  
+    HRESULT result;  
+    PFLobbyHandle lobby;  
     PFEntityKey localUser;  
     void* asyncContext;  
-} PFLobbyPostUpdateCompletedStateChange  
+}  
 ```
   
 ### Members  
   
-**``** &nbsp; result  
+**`result`** &nbsp; HRESULT  
   
 Indicates the result of the update operation.
   
 The human-readable form of this result can be retrieved via [PFMultiplayerGetErrorMessage()](../../pfmultiplayer/functions/pfmultiplayergeterrormessage.md).
   
-**`lobby`** &nbsp; _Notnull_  
+**`lobby`** &nbsp; PFLobbyHandle  
+*_Notnull_*  
   
 The lobby provided to the call associated with this state change.
   
-**`localUser`** &nbsp; PFEntityKey  
+**`localUser`** &nbsp; [PFEntityKey](../../pfmultiplayer/pfentitykey_clientsdk.md)  
   
 The local user provided to the call associated with this state change.
   

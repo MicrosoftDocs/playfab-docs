@@ -5,7 +5,7 @@ description: "Gets the list of PlayFab entities currently joined to the lobby as
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 01/03/2022
+ms.date: 03/14/2022
 ---
 
 # PFLobbyGetMembers  
@@ -33,7 +33,7 @@ The handle of the lobby.
   
 The output member count.  
   
-**`members`** &nbsp; PFEntityKey**  
+**`members`** &nbsp; [PFEntityKey**](../../pfmultiplayer/pfentitykey_clientsdk.md)  
 *library-allocated output array of size `*memberCount`*  
   
 The output member array.  

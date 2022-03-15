@@ -5,7 +5,7 @@ description: "Get a list of the specified member's property keys."
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 01/03/2022
+ms.date: 03/14/2022
 ---
 
 # PFLobbyGetMemberPropertyKeys  
@@ -29,7 +29,7 @@ HRESULT PFLobbyGetMemberPropertyKeys(
   
 The handle of the lobby.  
   
-**`member`** &nbsp; PFEntityKey*  
+**`member`** &nbsp; [PFEntityKey*](../../pfmultiplayer/pfentitykey_clientsdk.md)  
   
 The member being queried.  
   

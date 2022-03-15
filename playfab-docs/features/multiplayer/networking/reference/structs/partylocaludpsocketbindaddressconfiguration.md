@@ -5,7 +5,7 @@ description: "The configuration used by the Party library to bind to a UDP socke
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 08/05/2020
+ms.date: 03/11/2022
 ---
 
 # PartyLocalUdpSocketBindAddressConfiguration  
@@ -15,10 +15,10 @@ The configuration used by the Party library to bind to a UDP socket.
 ## Syntax  
   
 ```cpp
-typedef struct PartyLocalUdpSocketBindAddressConfiguration {  
+struct PartyLocalUdpSocketBindAddressConfiguration {  
     PartyLocalUdpSocketBindAddressOptions options;  
     uint16_t port;  
-} PartyLocalUdpSocketBindAddressConfiguration  
+}  
 ```
   
 ### Members  

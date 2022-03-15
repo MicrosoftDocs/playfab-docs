@@ -5,7 +5,7 @@ description: "Information specific to the *EndpointDestroyed* type of state chan
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/26/2019
+ms.date: 03/11/2022
 ---
 
 # PartyEndpointDestroyedStateChange  
@@ -15,12 +15,12 @@ Information specific to the *EndpointDestroyed* type of state change.
 ## Syntax  
   
 ```cpp
-typedef struct PartyEndpointDestroyedStateChange {  
+struct PartyEndpointDestroyedStateChange {  
     PartyNetwork* network;  
     PartyEndpoint* endpoint;  
     PartyDestroyedReason reason;  
     PartyError errorDetail;  
-} PartyEndpointDestroyedStateChange  
+}  
 ```
   
 ### Members  

@@ -5,7 +5,7 @@ description: "Information specific to the *CreateChatControlCompleted* type of s
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/26/2019
+ms.date: 03/11/2022
 ---
 
 # PartyCreateChatControlCompletedStateChange  
@@ -15,7 +15,7 @@ Information specific to the *CreateChatControlCompleted* type of state change.
 ## Syntax  
   
 ```cpp
-typedef struct PartyCreateChatControlCompletedStateChange {  
+struct PartyCreateChatControlCompletedStateChange {  
     PartyStateChangeResult result;  
     PartyError errorDetail;  
     PartyLocalDevice* localDevice;  
@@ -23,7 +23,7 @@ typedef struct PartyCreateChatControlCompletedStateChange {
     PartyString languageCode;  
     void* asyncIdentifier;  
     PartyLocalChatControl* localChatControl;  
-} PartyCreateChatControlCompletedStateChange  
+}  
 ```
   
 ### Members  

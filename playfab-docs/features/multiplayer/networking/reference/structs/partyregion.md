@@ -5,7 +5,7 @@ description: "Represents a Party library region."
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 08/05/2020
+ms.date: 03/11/2022
 ---
 
 # PartyRegion  
@@ -15,10 +15,10 @@ Represents a Party library region.
 ## Syntax  
   
 ```cpp
-typedef struct PartyRegion {  
+struct PartyRegion {  
     char regionName[c_maxRegionNameStringLength + 1];  
     uint32_t roundTripLatencyInMilliseconds;  
-} PartyRegion  
+}  
 ```
   
 ### Members  

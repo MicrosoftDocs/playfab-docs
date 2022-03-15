@@ -5,7 +5,7 @@ description: "Information specific to the *ConfigureAudioManipulationRenderStrea
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 02/10/2020
+ms.date: 03/11/2022
 ---
 
 # PartyConfigureAudioManipulationRenderStreamCompletedStateChange  
@@ -15,13 +15,13 @@ Information specific to the *ConfigureAudioManipulationRenderStreamCompleted* ty
 ## Syntax  
   
 ```cpp
-typedef struct PartyConfigureAudioManipulationRenderStreamCompletedStateChange {  
+struct PartyConfigureAudioManipulationRenderStreamCompletedStateChange {  
     PartyStateChangeResult result;  
     PartyError errorDetail;  
     PartyLocalChatControl* localChatControl;  
     PartyAudioManipulationSinkStreamConfiguration* configuration;  
     void* asyncIdentifier;  
-} PartyConfigureAudioManipulationRenderStreamCompletedStateChange  
+}  
 ```
   
 ### Members  

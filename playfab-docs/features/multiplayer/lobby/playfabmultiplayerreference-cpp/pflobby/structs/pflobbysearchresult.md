@@ -5,7 +5,7 @@ description: "An entry in the collection of lobby search results received upon s
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 01/03/2022
+ms.date: 03/14/2022
 ---
 
 # PFLobbySearchResult  
@@ -15,7 +15,7 @@ An entry in the collection of lobby search results received upon successful comp
 ## Syntax  
   
 ```cpp
-typedef struct PFLobbySearchResult {  
+struct PFLobbySearchResult {  
     const char* lobbyId;  
     const char* connectionString;  
     const PFEntityKey* ownerEntity;  
@@ -26,7 +26,7 @@ typedef struct PFLobbySearchResult {
     const char* searchPropertyValues;  
     uint32_t friendCount;  
     const PFEntityKey* friends;  
-} PFLobbySearchResult  
+}  
 ```
   
 ### Members  
@@ -43,7 +43,7 @@ The connection string of the found lobby.
   
 ```connectionString``` can be null. In this case, an invite is required to join.
   
-**`ownerEntity`** &nbsp; const PFEntityKey*  
+**`ownerEntity`** &nbsp; const [PFEntityKey](../../pfmultiplayer/pfentitykey_clientsdk.md)*  
 *may be nullptr*  
   
 The current owner of the lobby.
@@ -78,7 +78,7 @@ The number of friends in the found lobby, if the lobby search was performed with
   
 If the lobby search which generated this search result was not performed with a ```PFLobbySearchFriendsFilter```, this value will always be 0. <br /><br /> In some multiplayer social networks, friendship is a unidirectional relationship. One user may "follow" another or be their friend, but the same is not necessarily true in the reverse direction. Friends will only be returned in this search result when a bidirectional friendship exists. That is, the user querying for the lobby and the user in the lobby must both be friends with each other.
   
-**`friends`** &nbsp; const PFEntityKey*  
+**`friends`** &nbsp; const [PFEntityKey](../../pfmultiplayer/pfentitykey_clientsdk.md)*  
 *array of size `friendCount`*  
   
 The list of friends in the found lobby, if the lobby search was performed with a ```PFLobbySearchFriendsFilter```.

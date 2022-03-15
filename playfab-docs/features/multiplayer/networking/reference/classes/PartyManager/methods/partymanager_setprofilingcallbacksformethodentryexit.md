@@ -5,7 +5,7 @@ description: Optionally configures the profiling event callbacks the Party libra
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 06/22/2021
+ms.date: 03/11/2022
 ---
 
 # PartyManager::SetProfilingCallbacksForMethodEntryExit  
@@ -54,4 +54,3 @@ This method allows the title to install custom profiling callback functions in o
 [PartyManager::GetProfilingCallbacksForMethodEntryExit](partymanager_getprofilingcallbacksformethodentryexit.md)
   
   
-

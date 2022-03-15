@@ -5,7 +5,7 @@ description: "Information specific to the *RemoteDeviceLeftNetwork* type of stat
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/26/2019
+ms.date: 03/11/2022
 ---
 
 # PartyRemoteDeviceLeftNetworkStateChange  
@@ -15,12 +15,12 @@ Information specific to the *RemoteDeviceLeftNetwork* type of state change.
 ## Syntax  
   
 ```cpp
-typedef struct PartyRemoteDeviceLeftNetworkStateChange {  
+struct PartyRemoteDeviceLeftNetworkStateChange {  
     PartyDestroyedReason reason;  
     PartyError errorDetail;  
     PartyDevice* device;  
     PartyNetwork* network;  
-} PartyRemoteDeviceLeftNetworkStateChange  
+}  
 ```
   
 ### Members  

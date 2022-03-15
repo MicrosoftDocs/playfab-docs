@@ -5,7 +5,7 @@ description: "Information specific to the *RevokeInvitationCompleted* type of st
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/26/2019
+ms.date: 03/11/2022
 ---
 
 # PartyRevokeInvitationCompletedStateChange  
@@ -15,14 +15,14 @@ Information specific to the *RevokeInvitationCompleted* type of state change.
 ## Syntax  
   
 ```cpp
-typedef struct PartyRevokeInvitationCompletedStateChange {  
+struct PartyRevokeInvitationCompletedStateChange {  
     PartyStateChangeResult result;  
     PartyError errorDetail;  
     PartyNetwork* network;  
     PartyLocalUser* localUser;  
     PartyInvitation* invitation;  
     void* asyncIdentifier;  
-} PartyRevokeInvitationCompletedStateChange  
+}  
 ```
   
 ### Members  

@@ -5,7 +5,7 @@ description: "Information specific to the *SetChatAudioOutputCompleted* type of 
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/26/2019
+ms.date: 03/11/2022
 ---
 
 # PartySetChatAudioOutputCompletedStateChange  
@@ -15,14 +15,14 @@ Information specific to the *SetChatAudioOutputCompleted* type of state change.
 ## Syntax  
   
 ```cpp
-typedef struct PartySetChatAudioOutputCompletedStateChange {  
+struct PartySetChatAudioOutputCompletedStateChange {  
     PartyStateChangeResult result;  
     PartyError errorDetail;  
     PartyLocalChatControl* localChatControl;  
     PartyAudioDeviceSelectionType audioDeviceSelectionType;  
     PartyString audioDeviceSelectionContext;  
     void* asyncIdentifier;  
-} PartySetChatAudioOutputCompletedStateChange  
+}  
 ```
   
 ### Members  

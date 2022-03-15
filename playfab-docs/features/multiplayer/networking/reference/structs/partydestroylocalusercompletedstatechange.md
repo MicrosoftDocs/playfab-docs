@@ -5,7 +5,7 @@ description: "Information specific to the *DestroyLocalUserCompleted* type of st
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/26/2019
+ms.date: 03/11/2022
 ---
 
 # PartyDestroyLocalUserCompletedStateChange  
@@ -15,12 +15,12 @@ Information specific to the *DestroyLocalUserCompleted* type of state change.
 ## Syntax  
   
 ```cpp
-typedef struct PartyDestroyLocalUserCompletedStateChange {  
+struct PartyDestroyLocalUserCompletedStateChange {  
     PartyStateChangeResult result;  
     PartyError errorDetail;  
     PartyLocalUser* localUser;  
     void* asyncIdentifier;  
-} PartyDestroyLocalUserCompletedStateChange  
+}  
 ```
   
 ### Members  

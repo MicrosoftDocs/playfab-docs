@@ -5,7 +5,7 @@ description: "Information specific to the *InvitationDestroyed* type of state ch
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/26/2019
+ms.date: 03/11/2022
 ---
 
 # PartyInvitationDestroyedStateChange  
@@ -15,12 +15,12 @@ Information specific to the *InvitationDestroyed* type of state change.
 ## Syntax  
   
 ```cpp
-typedef struct PartyInvitationDestroyedStateChange {  
+struct PartyInvitationDestroyedStateChange {  
     PartyNetwork* network;  
     PartyInvitation* invitation;  
     PartyDestroyedReason reason;  
     PartyError errorDetail;  
-} PartyInvitationDestroyedStateChange  
+}  
 ```
   
 ### Members  

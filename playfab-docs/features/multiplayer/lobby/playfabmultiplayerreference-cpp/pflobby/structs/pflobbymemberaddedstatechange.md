@@ -5,7 +5,7 @@ description: "Information specific to the *MemberAdded* type of state change."
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 01/03/2022
+ms.date: 03/14/2022
 ---
 
 # PFLobbyMemberAddedStateChange  
@@ -15,19 +15,20 @@ Information specific to the *MemberAdded* type of state change.
 ## Syntax  
   
 ```cpp
-typedef struct PFLobbyMemberAddedStateChange {  
-    _Notnull_ lobby;  
+struct PFLobbyMemberAddedStateChange {  
+    PFLobbyHandle lobby;  
     PFEntityKey member;  
-} PFLobbyMemberAddedStateChange  
+}  
 ```
   
 ### Members  
   
-**`lobby`** &nbsp; _Notnull_  
+**`lobby`** &nbsp; PFLobbyHandle  
+*_Notnull_*  
   
 The lobby the new member was added to.
   
-**`member`** &nbsp; PFEntityKey  
+**`member`** &nbsp; [PFEntityKey](../../pfmultiplayer/pfentitykey_clientsdk.md)  
   
 The PlayFab entity which is now a member of the lobby.
   

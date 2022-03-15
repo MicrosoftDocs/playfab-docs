@@ -5,7 +5,7 @@ description: "Information specific to the *MemberRemoved* type of state change."
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 01/03/2022
+ms.date: 03/14/2022
 ---
 
 # PFLobbyMemberRemovedStateChange  
@@ -15,20 +15,21 @@ Information specific to the *MemberRemoved* type of state change.
 ## Syntax  
   
 ```cpp
-typedef struct PFLobbyMemberRemovedStateChange {  
-    _Notnull_ lobby;  
+struct PFLobbyMemberRemovedStateChange {  
+    PFLobbyHandle lobby;  
     PFEntityKey member;  
     PFLobbyMemberRemovedReason reason;  
-} PFLobbyMemberRemovedStateChange  
+}  
 ```
   
 ### Members  
   
-**`lobby`** &nbsp; _Notnull_  
+**`lobby`** &nbsp; PFLobbyHandle  
+*_Notnull_*  
   
 The lobby the new member was removed from.
   
-**`member`** &nbsp; PFEntityKey  
+**`member`** &nbsp; [PFEntityKey](../../pfmultiplayer/pfentitykey_clientsdk.md)  
   
 The member entity which has been removed from the lobby.
   

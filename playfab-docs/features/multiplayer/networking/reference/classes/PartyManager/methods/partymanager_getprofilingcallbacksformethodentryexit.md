@@ -5,7 +5,7 @@ description: Retrieves the profiling event callbacks the Party library is config
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 06/22/2021
+ms.date: 03/11/2022
 ---
 
 # PartyManager::GetProfilingCallbacksForMethodEntryExit  
@@ -54,4 +54,3 @@ This method retrieves the profiling callback functions the Party library is call
 [PartyManager::SetProfilingCallbacksForMethodEntryExit](partymanager_setprofilingcallbacksformethodentryexit.md)
   
   
-

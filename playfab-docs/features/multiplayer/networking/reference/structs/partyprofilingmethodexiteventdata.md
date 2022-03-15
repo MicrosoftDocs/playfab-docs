@@ -5,7 +5,7 @@ description: "Information specific to the *MethodExit* type of profiling event."
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 06/23/2021
+ms.date: 03/11/2022
 ---
 
 # PartyProfilingMethodExitEventData  
@@ -15,9 +15,9 @@ Information specific to the *MethodExit* type of profiling event.
 ## Syntax  
   
 ```cpp
-typedef struct PartyProfilingMethodExitEventData {  
+struct PartyProfilingMethodExitEventData {  
     PartyString methodName;  
-} PartyProfilingMethodExitEventData  
+}  
 ```
   
 ### Members  
@@ -36,4 +36,3 @@ A string containing the fully qualified name of the method responsible for the c
 [PartyProfilingMethodExitCallback](../callbacks/partyprofilingmethodexitcallback.md)
   
   
-

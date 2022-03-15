@@ -5,7 +5,7 @@ description: "The resulting match information found by a completed ticket."
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 01/03/2022
+ms.date: 03/11/2022
 ---
 
 # PFMatchmakingMatchDetails  
@@ -15,14 +15,14 @@ The resulting match information found by a completed ticket.
 ## Syntax  
   
 ```cpp
-typedef struct PFMatchmakingMatchDetails {  
+struct PFMatchmakingMatchDetails {  
     const char* matchId;  
     const PFMatchmakingMatchMember* members;  
     uint32_t memberCount;  
     const char* regionPreferences;  
     uint32_t regionPreferenceCount;  
     const char* lobbyArrangementString;  
-} PFMatchmakingMatchDetails  
+}  
 ```
   
 ### Members  

@@ -5,7 +5,7 @@ description: "A generic, base structure representation of an event or change in 
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 01/03/2022
+ms.date: 03/11/2022
 ---
 
 # PFMatchmakingStateChange  
@@ -15,9 +15,9 @@ A generic, base structure representation of an event or change in state.
 ## Syntax  
   
 ```cpp
-typedef struct PFMatchmakingStateChange {  
+struct PFMatchmakingStateChange {  
     PFMatchmakingStateChangeType stateChangeType;  
-} PFMatchmakingStateChange  
+}  
 ```
   
 ### Members  
