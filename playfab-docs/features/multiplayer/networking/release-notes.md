@@ -14,8 +14,14 @@ ms.localizationpriority: medium
 
 PlayFab Party had a significant (up to 90%) price drop on 10/13/2020. You can view the updated Party rates on the [Pricing page](https://playfab.com/pricing). For more information about the price drop, see our [blog post](https://blog.playfab.com/blog/starting-today-save-up-to-90-using-playfab-party).
 
-## 1.7.6
+## 1.7.7
 
+### Bug fixes
+
+- Playstation4, Playstation5: Fixed a crash that occurred when there was no audio device after the audio devices were removed.
+
+## 1.7.6
+Feb 8, 2022
 ### Performance improvements
 
 - Windows, XDK, Nintendo Switch, Playstation4, Playstation5: Removed two worker threads and perform relevant work on a preexisting, lower frequency work thread. The Microsoft Game Development Kit (GDK) version of the library already had this coalesced work behavior.
@@ -26,7 +32,7 @@ PlayFab Party had a significant (up to 90%) price drop on 10/13/2020. You can vi
 - Avoid reporting PartyChatTextReceivedOptions::FilteredDueToError flag in PartyChatTextReceivedStateChange when text moderation is not enabled.
 
 ## 1.7.5
-
+Sep 30, 2021
 ### Bug fixes
 
 - Fixed an issue where some 16kHz microphones were not working.
@@ -35,7 +41,7 @@ PlayFab Party had a significant (up to 90%) price drop on 10/13/2020. You can vi
 - Fixed an occasional crash in `PartyLocalEndpoint::GetEndpointStatistics()`.
 
 ## 1.7.0
-
+Jun 29, 2021
 ### New profiling hooks and chat control indicators
 
 - Developers interested in where time is spent in internal library functions can now install optional method entrance and exit callbacks to hook into their preferred high-performance instrumentation method. For more information, see [`PartyManager::SetProfilingCallbacksForMethodEntryExit`](reference/classes/PartyManager/methods/partymanager_setprofilingcallbacksformethodentryexit.md). In this release the callbacks are only supported for Windows, Xbox One XDK, and Microsoft Game Core platforms.
@@ -53,7 +59,7 @@ PlayFab Party had a significant (up to 90%) price drop on 10/13/2020. You can vi
 - Fixed a bug where a crash may occur when a chat control is connected to a network while that same chat control is disconnecting from another network.
 
 ## 1.6.0
-
+Apr 12, 2021
 ### New thread control and text moderation features
 
 - The library's work can now be run manually on game-controlled threads. For more information, see [`PartyManager::SetWorkMode`](reference/classes/PartyManager/methods/partymanager_setworkmode.md).
@@ -64,7 +70,7 @@ PlayFab Party had a significant (up to 90%) price drop on 10/13/2020. You can vi
 - Enum values in the header now have explicit numbering.
 
 ## 1.5.13
-
+Mar 26, 2021
 ### Bug fixes
 
 - Fixed a bug where audio is cutting out on iOS devices using Bluetooth headsets.
@@ -83,7 +89,7 @@ PlayFab Party had a significant (up to 90%) price drop on 10/13/2020. You can vi
 - Fixed a bug that may result in crackly or distorted audio.
 
 ## 1.5.1
-
+Sep 05, 2020
 ### Bug fix
 
 - Fixed a bug where the library may fail to activate the microphone on iOS.
@@ -108,7 +114,7 @@ PlayFab Party had a significant (up to 90%) price drop on 10/13/2020. You can vi
 This release removes an unnecessary dependency on api-ms-win-core-version-l1-1-1.dll which prevented previous versions from working on Windows 8.1
 
 ## 1.4.8
-
+Apr 30, 2020
 ### TLS1.2
 
 - The transcription stack has been updated to use TLS1.2 on Windows 7, Android, and iOS. Please upgrade if you make use of any of these platforms as TLS1.1 support will be deprecated by [Azure Speech Services](https://azure.microsoft.com/updates/azuretls12/) beginning in September 2020. All other platforms already support TLS1.2 and no upgrade is necessary.
