@@ -5,7 +5,7 @@ description: "Information specific to the *Disconnecting* type of state change."
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 03/11/2022
+ms.date: 03/15/2022
 ---
 
 # PFLobbyDisconnectingStateChange  
@@ -15,7 +15,11 @@ Information specific to the *Disconnecting* type of state change.
 ## Syntax  
   
 ```cpp
+<<<<<<< HEAD
 struct PFLobbyDisconnectingStateChange {  
+=======
+struct PFLobbyDisconnectingStateChange : PFLobbyStateChange {  
+>>>>>>> main
     PFLobbyHandle lobby;  
     PFLobbyDisconnectingReason reason;  
 }  
@@ -24,7 +28,11 @@ struct PFLobbyDisconnectingStateChange {
 ### Members  
   
 **`lobby`** &nbsp; PFLobbyHandle  
+<<<<<<< HEAD
 *_Notnull_*  
+=======
+*must not be null*  
+>>>>>>> main
   
 The lobby that has started disconnecting.
   

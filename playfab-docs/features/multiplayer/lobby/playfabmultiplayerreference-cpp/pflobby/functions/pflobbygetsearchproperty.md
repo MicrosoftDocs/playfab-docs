@@ -5,7 +5,7 @@ description: "Get the search property value from its key."
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 01/03/2022
+ms.date: 03/15/2022
 ---
 
 # PFLobbyGetSearchProperty  
@@ -29,7 +29,7 @@ HRESULT PFLobbyGetSearchProperty(
 The handle of the lobby.  
   
 **`key`** &nbsp; char*  
-*_Null_terminated_*  
+*is null-terminated*  
   
 The key of the property.  
   

@@ -5,7 +5,7 @@ description: "Retrieves an array of all PFLobbyStateChanges to process since the
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 01/03/2022
+ms.date: 03/16/2022
 ---
 
 # PFMultiplayerStartProcessingLobbyStateChanges  
@@ -18,7 +18,7 @@ Retrieves an array of all PFLobbyStateChanges to process since the last such cal
 HRESULT PFMultiplayerStartProcessingLobbyStateChanges(  
     PFMultiplayerHandle handle,  
     uint32_t* stateChangeCount,  
-    const PFLobbyStateChange*** stateChanges  
+    const PFLobbyStateChange* const** stateChanges  
 )  
 ```  
   
@@ -33,7 +33,7 @@ The handle of the PFMultiplayer API instance.
   
 The output number of PFLobbyStateChange entries for the title to handle in the `stateChanges` array.  
   
-**`stateChanges`** &nbsp; [PFLobbyStateChange***](../structs/pflobbystatechange.md)  
+**`stateChanges`** &nbsp; PFLobbyStateChange* const**  
 *library-allocated output array of size `*stateChangeCount`*  
   
 A library-allocated output array of all PFLobbyStateChange entries for the title to handle and then pass to [PFMultiplayerFinishProcessingLobbyStateChanges()](pfmultiplayerfinishprocessinglobbystatechanges.md).  

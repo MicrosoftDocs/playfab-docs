@@ -5,7 +5,7 @@ description: "Get a list of the specified member's property keys."
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 03/14/2022
+ms.date: 03/16/2022
 ---
 
 # PFLobbyGetMemberPropertyKeys  
@@ -19,7 +19,7 @@ HRESULT PFLobbyGetMemberPropertyKeys(
     PFLobbyHandle lobby,  
     const PFEntityKey* member,  
     uint32_t* propertyCount,  
-    const char*** keys  
+    const char* const** keys  
 )  
 ```  
   
@@ -38,7 +38,7 @@ The member being queried.
   
 The output count of member properties.  
   
-**`keys`** &nbsp; char***  
+**`keys`** &nbsp; char* const**  
 *library-allocated output array of size `*propertyCount`*  
   
 The output array of member property keys.  

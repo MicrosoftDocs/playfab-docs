@@ -5,7 +5,7 @@ description: "The resulting match information found by a completed ticket."
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 03/11/2022
+ms.date: 03/15/2022
 ---
 
 # PFMatchmakingMatchDetails  
@@ -19,7 +19,7 @@ struct PFMatchmakingMatchDetails {
     const char* matchId;  
     const PFMatchmakingMatchMember* members;  
     uint32_t memberCount;  
-    const char* regionPreferences;  
+    const char* const* regionPreferences;  
     uint32_t regionPreferenceCount;  
     const char* lobbyArrangementString;  
 }  
@@ -28,7 +28,7 @@ struct PFMatchmakingMatchDetails {
 ### Members  
   
 **`matchId`** &nbsp; const char*  
-*_Null_terminated_*  
+*is null-terminated*  
   
 The ID of the match.
   
@@ -40,7 +40,7 @@ The users that have been matched together.
   
 The count of members that have been matched together.
   
-**`regionPreferences`** &nbsp; const char*  
+**`regionPreferences`** &nbsp; const char* const*  
   
 Preferred regions for the match, sorted from most to least preferred.
   
@@ -49,7 +49,7 @@ Preferred regions for the match, sorted from most to least preferred.
 The count of preferred regions for the match.
   
 **`lobbyArrangementString`** &nbsp; const char*  
-*_Null_terminated_*  
+*is null-terminated*  
   
 The lobby arrangement string associated with the match.
   

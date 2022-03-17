@@ -5,7 +5,7 @@ description: "Retrieves an array of all matchmaking state changes to process sin
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 01/03/2022
+ms.date: 03/16/2022
 ---
 
 # PFMultiplayerStartProcessingMatchmakingStateChanges  
@@ -18,7 +18,7 @@ Retrieves an array of all matchmaking state changes to process since the last su
 HRESULT PFMultiplayerStartProcessingMatchmakingStateChanges(  
     PFMultiplayerHandle handle,  
     uint32_t* stateChangeCount,  
-    const PFMatchmakingStateChange*const** stateChanges  
+    const PFMatchmakingStateChange* const** stateChanges  
 )  
 ```  
   
@@ -33,7 +33,7 @@ The handle of the PFMultiplayer API instance.
   
 The output number of PFMatchmakingStateChange entries for the title to handle in the `stateChanges` array.  
   
-**`stateChanges`** &nbsp; PFMatchmakingStateChange*const**  
+**`stateChanges`** &nbsp; PFMatchmakingStateChange* const**  
 *library-allocated output array of size `*stateChangeCount`*  
   
 A library-allocated output array of all PFMatchmakingStateChange entries for the title to handle and then pass to [PFMultiplayerFinishProcessingMatchmakingStateChanges()](pfmultiplayerfinishprocessingmatchmakingstatechanges.md).  

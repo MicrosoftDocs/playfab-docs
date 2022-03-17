@@ -5,7 +5,7 @@ description: "Add a local user as a member to the lobby."
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 03/14/2022
+ms.date: 03/16/2022
 ---
 
 # PFLobbyAddMember  
@@ -19,8 +19,8 @@ HRESULT PFLobbyAddMember(
     PFLobbyHandle lobby,  
     const PFEntityKey* localUser,  
     uint32_t memberPropertyCount,  
-    const char** memberPropertyKeys,  
-    const char** memberPropertyValues,  
+    const char* const* memberPropertyKeys,  
+    const char* const* memberPropertyValues,  
     void* asyncContext  
 )  
 ```  
@@ -36,16 +36,16 @@ The handle of the lobby.
 The PlayFab Entity Key of the local user to add to the lobby as a member.  
   
 **`memberPropertyCount`** &nbsp; uint32_t  
-*_In_range_(0,PFLobbyMaxMemberPropertyCount)*  
+*input in range `0,PFLobbyMaxMemberPropertyCount`*  
   
 The number of initial member properties to set for this user when they join the lobby.  
   
-**`memberPropertyKeys`** &nbsp; char**  
+**`memberPropertyKeys`** &nbsp; char* const*  
 *input array of size `memberPropertyCount`*  
   
 The keys of the initial member properties to set for this user when they join the lobby.  
   
-**`memberPropertyValues`** &nbsp; char**  
+**`memberPropertyValues`** &nbsp; char* const*  
 *input array of size `memberPropertyCount`*  
   
 The values of the initial member properties to set for this user when they join the lobby.  

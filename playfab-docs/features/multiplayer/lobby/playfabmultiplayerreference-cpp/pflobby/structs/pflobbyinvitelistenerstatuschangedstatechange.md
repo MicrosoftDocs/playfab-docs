@@ -5,7 +5,7 @@ description: "Information specific to the *InviteListenerStatusChanged* type of 
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 03/14/2022
+ms.date: 03/15/2022
 ---
 
 # PFLobbyInviteListenerStatusChangedStateChange  
@@ -15,7 +15,11 @@ Information specific to the *InviteListenerStatusChanged* type of state change.
 ## Syntax  
   
 ```cpp
+<<<<<<< HEAD
 struct PFLobbyInviteListenerStatusChangedStateChange {  
+=======
+struct PFLobbyInviteListenerStatusChangedStateChange : PFLobbyStateChange {  
+>>>>>>> main
     PFEntityKey listeningEntity;  
 }  
 ```

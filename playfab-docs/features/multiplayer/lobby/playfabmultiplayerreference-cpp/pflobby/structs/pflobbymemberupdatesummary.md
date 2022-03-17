@@ -5,7 +5,7 @@ description: "A collection of hints about an update which has been successfully 
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 03/14/2022
+ms.date: 03/15/2022
 ---
 
 # PFLobbyMemberUpdateSummary  
@@ -19,7 +19,11 @@ struct PFLobbyMemberUpdateSummary {
     PFEntityKey member;  
     bool connectionStatusUpdated;  
     uint32_t updatedMemberPropertyCount;  
+<<<<<<< HEAD
     const char* updatedMemberPropertyKeys;  
+=======
+    const char* const* updatedMemberPropertyKeys;  
+>>>>>>> main
 }  
 ```
   
@@ -37,7 +41,7 @@ A flag indicating whether the member's connection status has updated.
   
 The number of member properties which have been updated for ```member```.
   
-**`updatedMemberPropertyKeys`** &nbsp; const char*  
+**`updatedMemberPropertyKeys`** &nbsp; const char* const*  
 *array of size `updatedMemberPropertyCount`*  
   
 The keys of the member properties which have been updated for ```member```.

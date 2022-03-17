@@ -5,7 +5,7 @@ description: "A request to make an update to the shared portion of the lobby on 
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 03/14/2022
+ms.date: 03/15/2022
 ---
 
 # PFLobbyDataUpdate  
@@ -21,11 +21,16 @@ struct PFLobbyDataUpdate {
     const PFLobbyAccessPolicy* accessPolicy;  
     const PFLobbyMembershipLock* membershipLock;  
     uint32_t searchPropertyCount;  
-    const char* searchPropertyKeys;  
-    const char* searchPropertyValues;  
+    const char* const* searchPropertyKeys;  
+    const char* const* searchPropertyValues;  
     uint32_t lobbyPropertyCount;  
+<<<<<<< HEAD
     const char* lobbyPropertyKeys;  
     const char* lobbyPropertyValues;  
+=======
+    const char* const* lobbyPropertyKeys;  
+    const char* const* lobbyPropertyValues;  
+>>>>>>> main
 }  
 ```
   
@@ -68,14 +73,14 @@ The number of search properties to update.
   
 Only the current lobby owner can update the search properties. <br /><br /> There may only be ```PFLobbyMaxSearchPropertyCount``` concurrent search properties at any given time. Therefore, at most, twice that many unique properties can be specified in this update if half of those properties are being deleted.   <br /><br /> If the property limits are violated, the entire update operation will fail.
   
-**`searchPropertyKeys`** &nbsp; const char*  
+**`searchPropertyKeys`** &nbsp; const char* const*  
 *array of size `searchPropertyCount`*  
   
 The keys of the search properties to update.
   
 Only the current lobby owner can update the lobby properties. <br /><br /> Search properties are visible to non-members of the lobby as metadata which can be used to filter and sort lobby search results.   <br /><br /> Only the properties specified in this list of keys will be updated. If the key doesn't exist yet, the property will be created. If the new property value is nullptr, the property will be deleted. Any existing properties omitted from this list will be left unmodified.   <br /><br /> Search properties must be of the form string_keyN or number_keyN where "N" is a number between 1 and ```PFLobbyMaxSearchPropertyCount```. e.g. string_key1, number_key14, etc. <br /><br />
   
-**`searchPropertyValues`** &nbsp; const char*  
+**`searchPropertyValues`** &nbsp; const char* const*  
 *array of size `searchPropertyCount`*  
   
 The values of the search properties to update.
@@ -88,14 +93,14 @@ The number of lobby properties to update.
   
 Only the current lobby owner can update the lobby properties. <br /><br /> There may only be ```PFLobbyMaxLobbyPropertyCount``` concurrent lobby properties at any given time. Therefore, at most, twice that many unique properties can be specified in this update if half of those properties are being deleted.   <br /><br /> If the property limits are violated, the entire update operation will fail.
   
-**`lobbyPropertyKeys`** &nbsp; const char*  
+**`lobbyPropertyKeys`** &nbsp; const char* const*  
 *array of size `lobbyPropertyCount`*  
   
 The keys of the lobby properties to update.
   
 Only the current lobby owner can update the lobby properties. <br /><br /> Lobby properties are only visible to members of the lobby.   <br /><br /> Only the properties specified in this list of keys will be updated. If the key doesn't exist yet, the property will be created. If the new property value is nullptr, the property will be deleted. Any existing properties omitted from this list will be left unmodified.
   
-**`lobbyPropertyValues`** &nbsp; const char*  
+**`lobbyPropertyValues`** &nbsp; const char* const*  
 *array of size `lobbyPropertyCount`*  
   
 The values of the lobby properties to update.

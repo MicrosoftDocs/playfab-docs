@@ -5,7 +5,7 @@ description: "The initial configuration data used when joining an arranged lobby
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 03/11/2022
+ms.date: 03/15/2022
 ---
 
 # PFLobbyArrangedJoinConfiguration  
@@ -20,8 +20,13 @@ struct PFLobbyArrangedJoinConfiguration {
     PFLobbyOwnerMigrationPolicy ownerMigrationPolicy;  
     PFLobbyAccessPolicy accessPolicy;  
     uint32_t memberPropertyCount;  
+<<<<<<< HEAD
     const char* memberPropertyKeys;  
     const char* memberPropertyValues;  
+=======
+    const char* const* memberPropertyKeys;  
+    const char* const* memberPropertyValues;  
+>>>>>>> main
 }  
 ```
   
@@ -47,14 +52,14 @@ The access policy for the lobby, if the joiner is the first member in the lobby.
   
 The number of initial member properties for the joiner of the lobby.
   
-**`memberPropertyKeys`** &nbsp; const char*  
+**`memberPropertyKeys`** &nbsp; const char* const*  
 *array of size `memberPropertyCount`*  
   
 The keys of the initial member properties for the joiner of the lobby.
   
 Per-member properties are only visible to members of the lobby.
   
-**`memberPropertyValues`** &nbsp; const char*  
+**`memberPropertyValues`** &nbsp; const char* const*  
 *array of size `memberPropertyCount`*  
   
 The values of the initial member properties for the joiner of the lobby.

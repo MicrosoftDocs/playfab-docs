@@ -5,7 +5,7 @@ description: "Information specific to the *ForceRemoveMemberCompleted* type of s
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 03/14/2022
+ms.date: 03/15/2022
 ---
 
 # PFLobbyForceRemoveMemberCompletedStateChange  
@@ -15,7 +15,11 @@ Information specific to the *ForceRemoveMemberCompleted* type of state change.
 ## Syntax  
   
 ```cpp
+<<<<<<< HEAD
 struct PFLobbyForceRemoveMemberCompletedStateChange {  
+=======
+struct PFLobbyForceRemoveMemberCompletedStateChange : PFLobbyStateChange {  
+>>>>>>> main
     HRESULT result;  
     PFLobbyHandle lobby;  
     PFEntityKey targetMember;  
@@ -32,7 +36,11 @@ Indicates the result of the ForceRemoveMember operation.
 The human-readable form of this result can be retrieved via [PFMultiplayerGetErrorMessage()](../../pfmultiplayer/functions/pfmultiplayergeterrormessage.md).
   
 **`lobby`** &nbsp; PFLobbyHandle  
+<<<<<<< HEAD
 *_Notnull_*  
+=======
+*must not be null*  
+>>>>>>> main
   
 The lobby provided to the call associated with this state change.
   
