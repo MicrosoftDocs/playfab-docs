@@ -54,6 +54,8 @@
     href: vm-metrics.md
 - name: Debugging game servers
   items:
+  - name: LocalMultiplayerAgent
+    href: LocalMultiplayerAgent/toc.yml
   - name: Connect directly to debug game servers
     href: directly-debugging-game-servers.md
   - name: Locally debugging game servers and integration
