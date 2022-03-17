@@ -35,6 +35,7 @@ This guide helps you get started using Power BI along with Insights. After conne
 
 * ### Other prerequisites
   *  [Power BI for desktop](https://powerbi.microsoft.com/desktop/)
+  *  Note that running Power BI for Desktop is required, this scenario is not supported in the PowerBI Web Portal. 
 
 ## Connect with Power BI
 On your local machine, open Power BI.
