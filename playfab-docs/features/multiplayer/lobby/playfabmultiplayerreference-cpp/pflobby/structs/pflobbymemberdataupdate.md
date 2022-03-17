@@ -5,7 +5,7 @@ description: "A request to make an update to the member-owned portion of the lob
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 03/11/2022
+ms.date: 03/15/2022
 ---
 
 # PFLobbyMemberDataUpdate  
@@ -17,8 +17,8 @@ A request to make an update to the member-owned portion of the lobby document.
 ```cpp
 struct PFLobbyMemberDataUpdate {  
     uint32_t memberPropertyCount;  
-    const char* memberPropertyKeys;  
-    const char* memberPropertyValues;  
+    const char* const* memberPropertyKeys;  
+    const char* const* memberPropertyValues;  
 }  
 ```
   
@@ -30,14 +30,14 @@ The number of member properties to update for the updating member.
   
 There may only be ```PFLobbyMaxMemberPropertyCount``` concurrent properties at any given time per-member. Therefore, at most, twice that many unique properties can be specified in this update if half of those properties are being deleted. <br /><br /> If the property limits are violated, the entire update operation will fail.
   
-**`memberPropertyKeys`** &nbsp; const char*  
+**`memberPropertyKeys`** &nbsp; const char* const*  
 *array of size `memberPropertyCount`*  
   
 The keys of the member properties to update for the updating member.
   
 Per-member properties are only visible to members of the lobby. <br /><br /> Only the properties specified in this list of keys will be updated. If the key doesn't exist yet, the property will be created. If the new property value is nullptr, the property will be deleted. Any existing properties omitted from this list will be left unmodified.
   
-**`memberPropertyValues`** &nbsp; const char*  
+**`memberPropertyValues`** &nbsp; const char* const*  
 *array of size `memberPropertyCount`*  
   
 The values of the member properties to update for the updating member.

@@ -5,7 +5,7 @@ description: "Information specific to the *Updated* type of state change."
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 03/11/2022
+ms.date: 03/15/2022
 ---
 
 # PFLobbyUpdatedStateChange  
@@ -15,16 +15,16 @@ Information specific to the *Updated* type of state change.
 ## Syntax  
   
 ```cpp
-struct PFLobbyUpdatedStateChange {  
+struct PFLobbyUpdatedStateChange : PFLobbyStateChange {  
     PFLobbyHandle lobby;  
     bool ownerUpdated;  
     bool maxMembersUpdated;  
     bool accessPolicyUpdated;  
     bool membershipLockUpdated;  
     uint32_t updatedSearchPropertyCount;  
-    const char* updatedSearchPropertyKeys;  
+    const char* const* updatedSearchPropertyKeys;  
     uint32_t updatedLobbyPropertyCount;  
-    const char* updatedLobbyPropertyKeys;  
+    const char* const* updatedLobbyPropertyKeys;  
     uint32_t memberUpdateCount;  
     const PFLobbyMemberUpdateSummary* memberUpdates;  
 }  
@@ -33,7 +33,7 @@ struct PFLobbyUpdatedStateChange {
 ### Members  
   
 **`lobby`** &nbsp; PFLobbyHandle  
-*_Notnull_*  
+*must not be null*  
   
 The lobby which was updated.
   
@@ -57,7 +57,7 @@ A flag indicating if the lobby's membership lock has updated.
   
 The number of search properties which have been updated.
   
-**`updatedSearchPropertyKeys`** &nbsp; const char*  
+**`updatedSearchPropertyKeys`** &nbsp; const char* const*  
 *array of size `updatedSearchPropertyCount`*  
   
 The keys of the search properties which have been updated.
@@ -66,7 +66,7 @@ The keys of the search properties which have been updated.
   
 The number of lobby properties which have been updated.
   
-**`updatedLobbyPropertyKeys`** &nbsp; const char*  
+**`updatedLobbyPropertyKeys`** &nbsp; const char* const*  
 *array of size `updatedLobbyPropertyCount`*  
   
 The keys of the lobby properties which have been updated.

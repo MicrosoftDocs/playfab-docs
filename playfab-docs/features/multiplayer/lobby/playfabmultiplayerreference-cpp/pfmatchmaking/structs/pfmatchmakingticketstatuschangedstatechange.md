@@ -5,7 +5,7 @@ description: "Information specific to the *TicketStatusChanged* type of state ch
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 03/11/2022
+ms.date: 03/15/2022
 ---
 
 # PFMatchmakingTicketStatusChangedStateChange  
@@ -15,7 +15,7 @@ Information specific to the *TicketStatusChanged* type of state change.
 ## Syntax  
   
 ```cpp
-struct PFMatchmakingTicketStatusChangedStateChange {  
+struct PFMatchmakingTicketStatusChangedStateChange : PFMatchmakingStateChange {  
     PFMatchmakingTicketHandle ticket;  
 }  
 ```
@@ -23,7 +23,7 @@ struct PFMatchmakingTicketStatusChangedStateChange {
 ### Members  
   
 **`ticket`** &nbsp; PFMatchmakingTicketHandle  
-*_Notnull_*  
+*must not be null*  
   
 The matchmaking ticket whose status changed.
   

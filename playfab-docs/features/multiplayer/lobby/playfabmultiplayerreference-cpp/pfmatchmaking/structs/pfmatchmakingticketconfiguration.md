@@ -5,7 +5,7 @@ description: "Defines the configuration for a matchmaking ticket."
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 03/14/2022
+ms.date: 03/15/2022
 ---
 
 # PFMatchmakingTicketConfiguration  
@@ -30,7 +30,7 @@ struct PFMatchmakingTicketConfiguration {
 How long to attempt matchmaking the ticket, in seconds.
   
 **`queueName`** &nbsp; const char*  
-*_Null_terminated_*  
+*is null-terminated*  
   
 The ID of a match queue.
   

@@ -5,7 +5,7 @@ description: "Joins one or more multiple local users to a matchmaking ticket usi
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 03/14/2022
+ms.date: 03/15/2022
 ---
 
 # PFMultiplayerJoinMatchmakingTicketFromId  
@@ -48,12 +48,12 @@ The array of local users to join to the ticket.
 The array of local user attribute strings. There should be one attribute string for each local user. Each attribute string should either be an empty string or a serialized JSON object. For example, ```{"player_color":"blue","player_role":"tank"}```.  
   
 **`ticketId`** &nbsp; char*  
-*_Null_terminated_*  
+*is null-terminated*  
   
 The ID of the ticket to join.  
   
 **`queueName`** &nbsp; char*  
-*_Null_terminated_*  
+*is null-terminated*  
   
 The queue to which the ticket belongs.  
   

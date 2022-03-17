@@ -5,7 +5,7 @@ description: "Initializes an instance of the PlayFab Multiplayer library."
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 01/03/2022
+ms.date: 03/15/2022
 ---
 
 # PFMultiplayerInitialize  
@@ -24,7 +24,7 @@ HRESULT PFMultiplayerInitialize(
 ### Parameters  
   
 **`playFabTitleId`** &nbsp; char*  
-*_Null_terminated_*  
+*is null-terminated*  
   
 The app's PlayFab Title ID.  
   

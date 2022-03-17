@@ -5,7 +5,7 @@ description: "Information specific to the *JoinLobbyCompleted* type of state cha
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 03/14/2022
+ms.date: 03/15/2022
 ---
 
 # PFLobbyJoinLobbyCompletedStateChange  
@@ -15,7 +15,7 @@ Information specific to the *JoinLobbyCompleted* type of state change.
 ## Syntax  
   
 ```cpp
-struct PFLobbyJoinLobbyCompletedStateChange {  
+struct PFLobbyJoinLobbyCompletedStateChange : PFLobbyStateChange {  
     HRESULT result;  
     PFEntityKey newMember;  
     void* asyncContext;  
@@ -40,7 +40,7 @@ The entity provided to the call associated with this state change which is joini
 The async context provided to the call associated with this state change.
   
 **`lobby`** &nbsp; PFLobbyHandle  
-*_Notnull_*  
+*must not be null*  
   
 The lobby that was joined.
   

@@ -5,7 +5,7 @@ description: "Information specific to the *CreateAndJoinLobbyCompleted* type of 
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 03/11/2022
+ms.date: 03/15/2022
 ---
 
 # PFLobbyCreateAndJoinLobbyCompletedStateChange  
@@ -15,7 +15,7 @@ Information specific to the *CreateAndJoinLobbyCompleted* type of state change.
 ## Syntax  
   
 ```cpp
-struct PFLobbyCreateAndJoinLobbyCompletedStateChange {  
+struct PFLobbyCreateAndJoinLobbyCompletedStateChange : PFLobbyStateChange {  
     HRESULT result;  
     void* asyncContext;  
     PFLobbyHandle lobby;  
@@ -35,7 +35,7 @@ The human-readable form of this result can be retrieved via [PFMultiplayerGetErr
 The async context provided to the call associated with this state change.
   
 **`lobby`** &nbsp; PFLobbyHandle  
-*_Notnull_*  
+*must not be null*  
   
 The lobby that was created and joined.
   

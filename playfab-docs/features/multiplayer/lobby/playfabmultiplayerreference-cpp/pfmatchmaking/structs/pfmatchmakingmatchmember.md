@@ -5,7 +5,7 @@ description: "A member of a match result."
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 03/14/2022
+ms.date: 03/15/2022
 ---
 
 # PFMatchmakingMatchMember  
@@ -29,14 +29,14 @@ struct PFMatchmakingMatchMember {
 The Entity Key for this match member.
   
 **`teamId`** &nbsp; const char*  
-*_Null_terminated_*  
+*is null-terminated*  
   
 The team ID assigned to this match member.
   
 May be empty if the matchmaking queue doesn't use team rules.
   
 **`attributes`** &nbsp; const char*  
-*_Null_terminated_*  
+*is null-terminated*  
   
 The attributes for this user in serialized JSON format.
   

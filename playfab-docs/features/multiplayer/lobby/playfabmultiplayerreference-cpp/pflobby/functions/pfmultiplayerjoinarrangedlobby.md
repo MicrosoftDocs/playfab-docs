@@ -5,7 +5,7 @@ description: "Joins a lobby using an arrangement string provided by another serv
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 03/14/2022
+ms.date: 03/15/2022
 ---
 
 # PFMultiplayerJoinArrangedLobby  
@@ -36,7 +36,7 @@ The handle of the PFMultiplayer API instance.
 The local PlayFab entity joining the lobby.  
   
 **`arrangementString`** &nbsp; char*  
-*_Null_terminated_*  
+*is null-terminated*  
   
 The arrangement string used by the entity to join the lobby.  
   

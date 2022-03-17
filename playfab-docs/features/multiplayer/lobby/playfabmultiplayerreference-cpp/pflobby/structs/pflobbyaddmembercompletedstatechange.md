@@ -5,7 +5,7 @@ description: "Information specific to the *AddMemberCompleted* type of state cha
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 03/14/2022
+ms.date: 03/15/2022
 ---
 
 # PFLobbyAddMemberCompletedStateChange  
@@ -15,7 +15,7 @@ Information specific to the *AddMemberCompleted* type of state change.
 ## Syntax  
   
 ```cpp
-struct PFLobbyAddMemberCompletedStateChange {  
+struct PFLobbyAddMemberCompletedStateChange : PFLobbyStateChange {  
     HRESULT result;  
     PFLobbyHandle lobby;  
     PFEntityKey localUser;  
@@ -32,7 +32,7 @@ Indicates the result of the AddMember operation.
 The human-readable form of this result can be retrieved via [PFMultiplayerGetErrorMessage()](../../pfmultiplayer/functions/pfmultiplayergeterrormessage.md).
   
 **`lobby`** &nbsp; PFLobbyHandle  
-*_Notnull_*  
+*must not be null*  
   
 The lobby used in the call associated with this state change.
   

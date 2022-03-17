@@ -5,7 +5,7 @@ description: "Get the member property's value from its key."
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 03/14/2022
+ms.date: 03/15/2022
 ---
 
 # PFLobbyGetMemberProperty  
@@ -34,7 +34,7 @@ The handle of the lobby.
 The member whose property bag we want to query.  
   
 **`key`** &nbsp; char*  
-*_Null_terminated_*  
+*is null-terminated*  
   
 The key of the property.  
   

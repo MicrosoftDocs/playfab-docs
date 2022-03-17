@@ -5,7 +5,7 @@ description: "Information specific to the *InviteReceived* type of state change.
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 03/14/2022
+ms.date: 03/15/2022
 ---
 
 # PFLobbyInviteReceivedStateChange  
@@ -15,7 +15,7 @@ Information specific to the *InviteReceived* type of state change.
 ## Syntax  
   
 ```cpp
-struct PFLobbyInviteReceivedStateChange {  
+struct PFLobbyInviteReceivedStateChange : PFLobbyStateChange {  
     PFEntityKey listeningEntity;  
     PFEntityKey invitingEntity;  
     const char* connectionString;  
@@ -33,7 +33,7 @@ The entity which is listening for invites and which has been invited.
 The entity which has invited the ```listeningEntity``` to a lobby.
   
 **`connectionString`** &nbsp; const char*  
-*_Null_terminated_*  
+*is null-terminated*  
   
 The connection string of the lobby to which the ```listeningEntity``` has been invited.
   
