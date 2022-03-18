@@ -24,8 +24,13 @@ struct PFLobbyDataUpdate {
     const char* const* searchPropertyKeys;  
     const char* const* searchPropertyValues;  
     uint32_t lobbyPropertyCount;  
+<<<<<<< HEAD
+    const char* lobbyPropertyKeys;  
+    const char* lobbyPropertyValues;  
+=======
     const char* const* lobbyPropertyKeys;  
     const char* const* lobbyPropertyValues;  
+>>>>>>> main
 }  
 ```
   

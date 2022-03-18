@@ -15,7 +15,11 @@ Information specific to the *InviteListenerStatusChanged* type of state change.
 ## Syntax  
   
 ```cpp
+<<<<<<< HEAD
+struct PFLobbyInviteListenerStatusChangedStateChange {  
+=======
 struct PFLobbyInviteListenerStatusChangedStateChange : PFLobbyStateChange {  
+>>>>>>> main
     PFEntityKey listeningEntity;  
 }  
 ```

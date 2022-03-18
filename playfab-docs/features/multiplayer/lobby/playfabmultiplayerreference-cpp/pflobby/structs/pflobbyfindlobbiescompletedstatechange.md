@@ -15,7 +15,11 @@ Information specific to the *FindLobbiesCompleted* type of state change.
 ## Syntax  
   
 ```cpp
+<<<<<<< HEAD
+struct PFLobbyFindLobbiesCompletedStateChange {  
+=======
 struct PFLobbyFindLobbiesCompletedStateChange : PFLobbyStateChange {  
+>>>>>>> main
     HRESULT result;  
     PFEntityKey searchingEntity;  
     void* asyncContext;  

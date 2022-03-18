@@ -15,7 +15,11 @@ Information specific to the *InviteReceived* type of state change.
 ## Syntax  
   
 ```cpp
+<<<<<<< HEAD
+struct PFLobbyInviteReceivedStateChange {  
+=======
 struct PFLobbyInviteReceivedStateChange : PFLobbyStateChange {  
+>>>>>>> main
     PFEntityKey listeningEntity;  
     PFEntityKey invitingEntity;  
     const char* connectionString;  

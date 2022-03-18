@@ -19,7 +19,11 @@ struct PFLobbyMemberUpdateSummary {
     PFEntityKey member;  
     bool connectionStatusUpdated;  
     uint32_t updatedMemberPropertyCount;  
+<<<<<<< HEAD
+    const char* updatedMemberPropertyKeys;  
+=======
     const char* const* updatedMemberPropertyKeys;  
+>>>>>>> main
 }  
 ```
   
