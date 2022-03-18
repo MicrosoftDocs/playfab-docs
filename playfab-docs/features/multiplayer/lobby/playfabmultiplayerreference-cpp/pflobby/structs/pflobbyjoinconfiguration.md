@@ -17,13 +17,8 @@ The initial configuration data used when joining a lobby.
 ```cpp
 struct PFLobbyJoinConfiguration {  
     uint32_t memberPropertyCount;  
-<<<<<<< HEAD
-    const char* memberPropertyKeys;  
-    const char* memberPropertyValues;  
-=======
     const char* const* memberPropertyKeys;  
     const char* const* memberPropertyValues;  
->>>>>>> main
 }  
 ```
   
