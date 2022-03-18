@@ -22,6 +22,8 @@
     href: ownership-changes.md
   - name: Use lobby and matchmaking together
     href: lobby-and-matchmaking.md
+- name: Lobby and Matchmaking real-time notifications
+  href: lobby-and-matchmaking-real-time-notifications.md
 - name: Reference
   items:
   - name: Client SDK reference
