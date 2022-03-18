@@ -115,15 +115,12 @@ You can access all the reviews **containing text** for an item by calling the `G
 
 ## Submit a helpfulness vote for a review
 
-> [!IMPORTANT]
-> This API currently has a bug and a fix is currently in progress
-
-Players can submit a helpfulness vote for a review by calling the `SubmitItemReviewVote` API. Submitting a new helpfulness vote will increment the `HelpfulnessVotes` counter on the review and also increment `HelpfulPositive` or `HelpfulNegative` depending on the boolean value for the `IsHelpful` parameter.
+Players can submit a helpfulness vote for a review by calling the `SubmitItemReviewVote` API. Submitting a new helpfulness vote will increment `HelpfulPositive` or `HelpfulNegative` depending on the boolean value for the `Vote` parameter.
 
 ```json
 {
   "ReviewId": "730de69c-d6af-f313-4653-09fb14bedeef",
-  "IsHelpful": true
+  "Vote": "Helpful/UnHelpful"
 }
 ```
 
@@ -182,3 +179,27 @@ You can submit a request to takedown one or more reviews using the `TakedownItem
 
 > [!NOTE]
 >There can be a delay of up to 24 hours until a review is taken down due to the request processing
+
+## Ratings design and caching
+We have two methods for getting ratings. The difference between the two paths is whether you are interacting with the review directly or the catalog item.
+
+1.	We provide ratings directly (via `GetItemReviews`, etc.)
+2.	We provide ratings aggregates in the catalog items (via `SearchItems`, etc.)
+
+Both routes are asynchronous and have timing delays that it is important to understand.
+
+### Direct Ratings (GetItemReviews, etc.)
+All these ratings and reviews are served directly. There are two categories of latency here.
+
+1.	Individual Reviews - *Near Real Time*  
+Individual reviews will not available immediately, but should show up within a few seconds. We expect that retrying with a backoff will be sufficient for reading a brand-new review.
+
+
+2.	Aggregate Ratings - *Under 15 minutes*    
+There's a cache for aggregates
+
+### Catalog Item Ratings (SearchItems, etc.)
+All these ratings are served as part of the catalog item from our published catalog.
+
+1.	Aggregate Ratings - *Under 8 hours*  
+The system aggregates the ratings and pushes updates into the catalog which can take anywhere from 4-8 hours.
