@@ -15,11 +15,7 @@ Information specific to the *TicketCompleted* type of state change.
 ## Syntax  
   
 ```cpp
-<<<<<<< HEAD
-struct PFMatchmakingTicketCompletedStateChange {  
-=======
 struct PFMatchmakingTicketCompletedStateChange : PFMatchmakingStateChange {  
->>>>>>> main
     HRESULT result;  
     PFMatchmakingTicketHandle ticket;  
     void* asyncContext;  
@@ -33,11 +29,7 @@ struct PFMatchmakingTicketCompletedStateChange : PFMatchmakingStateChange {
 An error code indicating whether the ticket succeeded or, if it failed, why it failed.
   
 **`ticket`** &nbsp; PFMatchmakingTicketHandle  
-<<<<<<< HEAD
-*_Notnull_*  
-=======
 *must not be null*  
->>>>>>> main
   
 The matchmaking ticket that completed.
   

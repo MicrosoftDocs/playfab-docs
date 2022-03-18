@@ -15,11 +15,7 @@ Information specific to the *Updated* type of state change.
 ## Syntax  
   
 ```cpp
-<<<<<<< HEAD
-struct PFLobbyUpdatedStateChange {  
-=======
 struct PFLobbyUpdatedStateChange : PFLobbyStateChange {  
->>>>>>> main
     PFLobbyHandle lobby;  
     bool ownerUpdated;  
     bool maxMembersUpdated;  
@@ -37,11 +33,7 @@ struct PFLobbyUpdatedStateChange : PFLobbyStateChange {
 ### Members  
   
 **`lobby`** &nbsp; PFLobbyHandle  
-<<<<<<< HEAD
-*_Notnull_*  
-=======
 *must not be null*  
->>>>>>> main
   
 The lobby which was updated.
   
