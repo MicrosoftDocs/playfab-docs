@@ -5,7 +5,7 @@ description: "Information specific to the *MemberRemoved* type of state change."
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 03/14/2022
+ms.date: 03/15/2022
 ---
 
 # PFLobbyMemberRemovedStateChange  
@@ -15,7 +15,11 @@ Information specific to the *MemberRemoved* type of state change.
 ## Syntax  
   
 ```cpp
+<<<<<<< HEAD
 struct PFLobbyMemberRemovedStateChange {  
+=======
+struct PFLobbyMemberRemovedStateChange : PFLobbyStateChange {  
+>>>>>>> main
     PFLobbyHandle lobby;  
     PFEntityKey member;  
     PFLobbyMemberRemovedReason reason;  
@@ -25,7 +29,11 @@ struct PFLobbyMemberRemovedStateChange {
 ### Members  
   
 **`lobby`** &nbsp; PFLobbyHandle  
+<<<<<<< HEAD
 *_Notnull_*  
+=======
+*must not be null*  
+>>>>>>> main
   
 The lobby the new member was removed from.
   

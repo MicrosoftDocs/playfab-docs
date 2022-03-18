@@ -5,7 +5,7 @@ description: "The filter structure used to limit lobby search results to only th
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 03/11/2022
+ms.date: 03/15/2022
 ---
 
 # PFLobbySearchFriendsFilter  
@@ -33,7 +33,7 @@ A flag which includes the player's Steam friends list if their PlayFab account i
 A flag which includes the player's Facebook friends list if their PlayFab account is linked to their Facebook account.
   
 **`includeXboxFriendsToken`** &nbsp; const char*  
-*_Null_terminated_*  
+*is null-terminated*  
   
 An Xbox Live token that, when provided, includes the player's Xbox Live friends list if their PlayFab account is linked to their Xbox Live account.
   

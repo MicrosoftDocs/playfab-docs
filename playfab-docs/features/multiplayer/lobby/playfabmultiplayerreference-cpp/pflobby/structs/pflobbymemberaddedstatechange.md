@@ -5,7 +5,7 @@ description: "Information specific to the *MemberAdded* type of state change."
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 03/14/2022
+ms.date: 03/15/2022
 ---
 
 # PFLobbyMemberAddedStateChange  
@@ -15,7 +15,11 @@ Information specific to the *MemberAdded* type of state change.
 ## Syntax  
   
 ```cpp
+<<<<<<< HEAD
 struct PFLobbyMemberAddedStateChange {  
+=======
+struct PFLobbyMemberAddedStateChange : PFLobbyStateChange {  
+>>>>>>> main
     PFLobbyHandle lobby;  
     PFEntityKey member;  
 }  
@@ -24,7 +28,11 @@ struct PFLobbyMemberAddedStateChange {
 ### Members  
   
 **`lobby`** &nbsp; PFLobbyHandle  
+<<<<<<< HEAD
 *_Notnull_*  
+=======
+*must not be null*  
+>>>>>>> main
   
 The lobby the new member was added to.
   

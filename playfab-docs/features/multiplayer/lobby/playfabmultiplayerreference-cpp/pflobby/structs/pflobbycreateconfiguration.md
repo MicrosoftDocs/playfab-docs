@@ -5,7 +5,7 @@ description: "The initial configuration data used when creating a lobby."
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 03/11/2022
+ms.date: 03/15/2022
 ---
 
 # PFLobbyCreateConfiguration  
@@ -20,11 +20,16 @@ struct PFLobbyCreateConfiguration {
     PFLobbyOwnerMigrationPolicy ownerMigrationPolicy;  
     PFLobbyAccessPolicy accessPolicy;  
     uint32_t searchPropertyCount;  
-    const char* searchPropertyKeys;  
-    const char* searchPropertyValues;  
+    const char* const* searchPropertyKeys;  
+    const char* const* searchPropertyValues;  
     uint32_t lobbyPropertyCount;  
+<<<<<<< HEAD
     const char* lobbyPropertyKeys;  
     const char* lobbyPropertyValues;  
+=======
+    const char* const* lobbyPropertyKeys;  
+    const char* const* lobbyPropertyValues;  
+>>>>>>> main
 }  
 ```
   
@@ -50,14 +55,14 @@ The access policy for the new lobby.
   
 The number of initial search properties for the new lobby.
   
-**`searchPropertyKeys`** &nbsp; const char*  
+**`searchPropertyKeys`** &nbsp; const char* const*  
 *array of size `searchPropertyCount`*  
   
 The keys of the initial search properties for the new lobby.
   
 Search properties are visible to non-members of the lobby as metadata which can be used to filter and sort lobby search results. <br /><br /> Search properties must be of the form string_keyN or number_keyN where "N" is a number between 1 and ```PFLobbyMaxSearchPropertyCount```. e.g. string_key1, number_key14, etc. <br /><br />
   
-**`searchPropertyValues`** &nbsp; const char*  
+**`searchPropertyValues`** &nbsp; const char* const*  
 *array of size `searchPropertyCount`*  
   
 The values of the initial search properties for the new lobby.
@@ -68,14 +73,14 @@ Search properties are visible to non-members of the lobby as metadata which can 
   
 The number of initial lobby properties for the new lobby.
   
-**`lobbyPropertyKeys`** &nbsp; const char*  
+**`lobbyPropertyKeys`** &nbsp; const char* const*  
 *array of size `lobbyPropertyCount`*  
   
 The keys of the initial lobby properties for the new lobby.
   
 Lobby properties are only visible to members of the lobby.
   
-**`lobbyPropertyValues`** &nbsp; const char*  
+**`lobbyPropertyValues`** &nbsp; const char* const*  
 *array of size `lobbyPropertyCount`*  
   
 The values of the initial lobby properties for the new lobby.

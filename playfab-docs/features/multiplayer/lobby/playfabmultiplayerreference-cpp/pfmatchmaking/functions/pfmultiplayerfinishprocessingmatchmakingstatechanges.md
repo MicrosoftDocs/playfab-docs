@@ -5,7 +5,7 @@ description: "Returns an array of matchmaking state changes that were being proc
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 01/03/2022
+ms.date: 03/16/2022
 ---
 
 # PFMultiplayerFinishProcessingMatchmakingStateChanges  
@@ -18,7 +18,7 @@ Returns an array of matchmaking state changes that were being processed.
 HRESULT PFMultiplayerFinishProcessingMatchmakingStateChanges(  
     PFMultiplayerHandle handle,  
     uint32_t stateChangeCount,  
-    const PFMatchmakingStateChange*const* stateChanges  
+    const PFMatchmakingStateChange* const* stateChanges  
 )  
 ```  
   
@@ -32,7 +32,7 @@ The handle of the PFMultiplayer API instance.
   
 The number of changes, provided in the list specified by `stateChanges`, previously returned by [PFMultiplayerStartProcessingMatchmakingStateChanges()](pfmultiplayerstartprocessingmatchmakingstatechanges.md) that have now been handled by the title.  
   
-**`stateChanges`** &nbsp; PFMatchmakingStateChange*const*  
+**`stateChanges`** &nbsp; PFMatchmakingStateChange* const*  
 *input array of size `stateChangeCount`*  
   
 The array of changes previously returned by [PFMultiplayerStartProcessingMatchmakingStateChanges()](pfmultiplayerstartprocessingmatchmakingstatechanges.md) that have now been handled by the title.  

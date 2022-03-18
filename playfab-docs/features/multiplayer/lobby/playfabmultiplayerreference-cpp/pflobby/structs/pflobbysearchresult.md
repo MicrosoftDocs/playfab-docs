@@ -5,7 +5,7 @@ description: "An entry in the collection of lobby search results received upon s
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 03/14/2022
+ms.date: 03/15/2022
 ---
 
 # PFLobbySearchResult  
@@ -22,8 +22,8 @@ struct PFLobbySearchResult {
     uint32_t maxMemberCount;  
     uint32_t currentMemberCount;  
     uint32_t searchPropertyCount;  
-    const char* searchPropertyKeys;  
-    const char* searchPropertyValues;  
+    const char* const* searchPropertyKeys;  
+    const char* const* searchPropertyValues;  
     uint32_t friendCount;  
     const PFEntityKey* friends;  
 }  
@@ -32,12 +32,12 @@ struct PFLobbySearchResult {
 ### Members  
   
 **`lobbyId`** &nbsp; const char*  
-*_Null_terminated_*  
+*is null-terminated*  
   
 The ID of the found lobby.
   
 **`connectionString`** &nbsp; const char*  
-*_Null_terminated_*  
+*is null-terminated*  
   
 The connection string of the found lobby.
   
@@ -62,12 +62,12 @@ The current number of members that are present in this lobby.
   
 The number of search properties associated with this lobby.
   
-**`searchPropertyKeys`** &nbsp; const char*  
+**`searchPropertyKeys`** &nbsp; const char* const*  
 *array of size `searchPropertyCount`*  
   
 The keys of the search properties associated with this lobby.
   
-**`searchPropertyValues`** &nbsp; const char*  
+**`searchPropertyValues`** &nbsp; const char* const*  
 *array of size `searchPropertyCount`*  
   
 The values of the search properties associated with this lobby.

@@ -5,7 +5,7 @@ description: "Immediately reclaims all resources associated with all Multiplayer
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 01/03/2022
+ms.date: 03/15/2022
 ---
 
 # PFMultiplayerUninitialize  
@@ -23,7 +23,7 @@ HRESULT PFMultiplayerUninitialize(
 ### Parameters  
   
 **`handle`** &nbsp; PFMultiplayerHandle  
-*_Post_invalid_*  
+*input not valid afterwards*  
   
 The handle of the PFMultiplayer API instance.  
   

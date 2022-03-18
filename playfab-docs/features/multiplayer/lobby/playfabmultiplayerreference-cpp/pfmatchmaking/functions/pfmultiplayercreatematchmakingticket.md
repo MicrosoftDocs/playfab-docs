@@ -5,7 +5,7 @@ description: "Creates a matchmaking ticket for one or more local users."
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 03/14/2022
+ms.date: 03/16/2022
 ---
 
 # PFMultiplayerCreateMatchmakingTicket  
@@ -19,7 +19,7 @@ HRESULT PFMultiplayerCreateMatchmakingTicket(
     PFMultiplayerHandle handle,  
     uint32_t localUserCount,  
     const PFEntityKey* localUsers,  
-    const char** localUserAttributes,  
+    const char* const* localUserAttributes,  
     const PFMatchmakingTicketConfiguration* configuration,  
     void* asyncContext,  
     PFMatchmakingTicketHandle* ticket  
@@ -41,7 +41,7 @@ The count of local users to include in the ticket.
   
 The array of local users to include in the ticket.  
   
-**`localUserAttributes`** &nbsp; char**  
+**`localUserAttributes`** &nbsp; char* const*  
 *input array of size `localUserCount`*  
   
 The array of local user attribute strings. There should be one attribute string for each local user. Each attribute string should either be an empty string or a serialized JSON object. For example, ```{"player_color":"blue","player_role":"tank"}```.  

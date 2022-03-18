@@ -5,7 +5,7 @@ description: "Get the list of lobby property keys."
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 01/03/2022
+ms.date: 03/16/2022
 ---
 
 # PFLobbyGetLobbyPropertyKeys  
@@ -18,7 +18,7 @@ Get the list of lobby property keys.
 HRESULT PFLobbyGetLobbyPropertyKeys(  
     PFLobbyHandle lobby,  
     uint32_t* propertyCount,  
-    const char*** keys  
+    const char* const** keys  
 )  
 ```  
   
@@ -33,7 +33,7 @@ The handle of the lobby.
   
 The output count of lobby properties.  
   
-**`keys`** &nbsp; char***  
+**`keys`** &nbsp; char* const**  
 *library-allocated output array of size `*propertyCount`*  
   
 The output array of lobby property keys.  

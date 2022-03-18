@@ -5,7 +5,7 @@ description: "Information specific to the *FindLobbiesCompleted* type of state c
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 03/14/2022
+ms.date: 03/15/2022
 ---
 
 # PFLobbyFindLobbiesCompletedStateChange  
@@ -15,7 +15,11 @@ Information specific to the *FindLobbiesCompleted* type of state change.
 ## Syntax  
   
 ```cpp
+<<<<<<< HEAD
 struct PFLobbyFindLobbiesCompletedStateChange {  
+=======
+struct PFLobbyFindLobbiesCompletedStateChange : PFLobbyStateChange {  
+>>>>>>> main
     HRESULT result;  
     PFEntityKey searchingEntity;  
     void* asyncContext;  
