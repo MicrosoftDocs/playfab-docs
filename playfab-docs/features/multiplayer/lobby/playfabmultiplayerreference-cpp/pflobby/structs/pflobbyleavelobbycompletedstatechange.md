@@ -15,11 +15,7 @@ Information specific to the *LeaveLobbyCompleted* type of state change.
 ## Syntax  
   
 ```cpp
-<<<<<<< HEAD
-struct PFLobbyLeaveLobbyCompletedStateChange {  
-=======
 struct PFLobbyLeaveLobbyCompletedStateChange : PFLobbyStateChange {  
->>>>>>> main
     PFLobbyHandle lobby;  
     const PFEntityKey* localUser;  
     void* asyncContext;  
@@ -29,11 +25,7 @@ struct PFLobbyLeaveLobbyCompletedStateChange : PFLobbyStateChange {
 ### Members  
   
 **`lobby`** &nbsp; PFLobbyHandle  
-<<<<<<< HEAD
-*_Notnull_*  
-=======
 *must not be null*  
->>>>>>> main
   
 The lobby provided to the call associated with this state change.
   

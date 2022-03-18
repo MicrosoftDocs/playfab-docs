@@ -15,11 +15,7 @@ Information specific to the *MemberAdded* type of state change.
 ## Syntax  
   
 ```cpp
-<<<<<<< HEAD
-struct PFLobbyMemberAddedStateChange {  
-=======
 struct PFLobbyMemberAddedStateChange : PFLobbyStateChange {  
->>>>>>> main
     PFLobbyHandle lobby;  
     PFEntityKey member;  
 }  
@@ -28,11 +24,7 @@ struct PFLobbyMemberAddedStateChange : PFLobbyStateChange {
 ### Members  
   
 **`lobby`** &nbsp; PFLobbyHandle  
-<<<<<<< HEAD
-*_Notnull_*  
-=======
 *must not be null*  
->>>>>>> main
   
 The lobby the new member was added to.
   

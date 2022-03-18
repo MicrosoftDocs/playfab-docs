@@ -15,11 +15,7 @@ Information specific to the *MemberRemoved* type of state change.
 ## Syntax  
   
 ```cpp
-<<<<<<< HEAD
-struct PFLobbyMemberRemovedStateChange {  
-=======
 struct PFLobbyMemberRemovedStateChange : PFLobbyStateChange {  
->>>>>>> main
     PFLobbyHandle lobby;  
     PFEntityKey member;  
     PFLobbyMemberRemovedReason reason;  
@@ -29,11 +25,7 @@ struct PFLobbyMemberRemovedStateChange : PFLobbyStateChange {
 ### Members  
   
 **`lobby`** &nbsp; PFLobbyHandle  
-<<<<<<< HEAD
-*_Notnull_*  
-=======
 *must not be null*  
->>>>>>> main
   
 The lobby the new member was removed from.
   

@@ -15,11 +15,7 @@ Information specific to the *Disconnected* type of state change.
 ## Syntax  
   
 ```cpp
-<<<<<<< HEAD
-struct PFLobbyDisconnectedStateChange {  
-=======
 struct PFLobbyDisconnectedStateChange : PFLobbyStateChange {  
->>>>>>> main
     PFLobbyHandle lobby;  
 }  
 ```
@@ -27,11 +23,7 @@ struct PFLobbyDisconnectedStateChange : PFLobbyStateChange {
 ### Members  
   
 **`lobby`** &nbsp; PFLobbyHandle  
-<<<<<<< HEAD
-*_Notnull_*  
-=======
 *must not be null*  
->>>>>>> main
   
 The lobby that has disconnected.
   

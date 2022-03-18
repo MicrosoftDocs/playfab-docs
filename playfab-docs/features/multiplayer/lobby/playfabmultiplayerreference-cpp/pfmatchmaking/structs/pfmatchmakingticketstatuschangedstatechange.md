@@ -15,11 +15,7 @@ Information specific to the *TicketStatusChanged* type of state change.
 ## Syntax  
   
 ```cpp
-<<<<<<< HEAD
-struct PFMatchmakingTicketStatusChangedStateChange {  
-=======
 struct PFMatchmakingTicketStatusChangedStateChange : PFMatchmakingStateChange {  
->>>>>>> main
     PFMatchmakingTicketHandle ticket;  
 }  
 ```
@@ -27,11 +23,7 @@ struct PFMatchmakingTicketStatusChangedStateChange : PFMatchmakingStateChange {
 ### Members  
   
 **`ticket`** &nbsp; PFMatchmakingTicketHandle  
-<<<<<<< HEAD
-*_Notnull_*  
-=======
 *must not be null*  
->>>>>>> main
   
 The matchmaking ticket whose status changed.
   

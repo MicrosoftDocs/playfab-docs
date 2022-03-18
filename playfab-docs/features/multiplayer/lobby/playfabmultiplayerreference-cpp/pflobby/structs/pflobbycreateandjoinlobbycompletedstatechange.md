@@ -15,11 +15,7 @@ Information specific to the *CreateAndJoinLobbyCompleted* type of state change.
 ## Syntax  
   
 ```cpp
-<<<<<<< HEAD
-struct PFLobbyCreateAndJoinLobbyCompletedStateChange {  
-=======
 struct PFLobbyCreateAndJoinLobbyCompletedStateChange : PFLobbyStateChange {  
->>>>>>> main
     HRESULT result;  
     void* asyncContext;  
     PFLobbyHandle lobby;  
@@ -39,11 +35,7 @@ The human-readable form of this result can be retrieved via [PFMultiplayerGetErr
 The async context provided to the call associated with this state change.
   
 **`lobby`** &nbsp; PFLobbyHandle  
-<<<<<<< HEAD
-*_Notnull_*  
-=======
 *must not be null*  
->>>>>>> main
   
 The lobby that was created and joined.
   
