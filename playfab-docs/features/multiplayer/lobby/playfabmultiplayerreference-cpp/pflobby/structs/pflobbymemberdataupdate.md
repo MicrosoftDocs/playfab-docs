@@ -17,13 +17,8 @@ A request to make an update to the member-owned portion of the lobby document.
 ```cpp
 struct PFLobbyMemberDataUpdate {  
     uint32_t memberPropertyCount;  
-<<<<<<< HEAD
-    const char* memberPropertyKeys;  
-    const char* memberPropertyValues;  
-=======
     const char* const* memberPropertyKeys;  
     const char* const* memberPropertyValues;  
->>>>>>> main
 }  
 ```
   
