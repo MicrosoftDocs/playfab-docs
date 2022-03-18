@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Using a rule to verify a contact email address
 
-This tutorial walks you through the steps for creating a rule that sends an verification email when a player changes their contact email address.
+This tutorial walks you through the steps for creating a rule that sends a verification email when a player changes their contact email address.
 
 ## Requirements
 

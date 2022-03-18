@@ -12,8 +12,12 @@
   href: settings.md
 - name: Item Visibility
   href: item-visibility.md
+- name: ETags
+  href: etags.md
 - name: Pricing
   href: billable-meters.md
+- name: Limits
+  href: limits.md
 - name: Tutorials
   href: tutorials.md
   items:

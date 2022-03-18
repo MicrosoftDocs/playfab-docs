@@ -51,6 +51,9 @@ A sample response:
 }
 ```
 
+## Continuation Tokens
+The `ContinuationToken` field that is returned from a search response can be passed into a search request to paginate through multiple counts of results.
+
 ## Display Properties
 
 Searches, filters, and orderings can be also done on specific `DisplayProperties` fields that are configured for custom search.  Titles can configure their custom search and filter properties in the [*Display Properties Mappings* setting](/gaming/playfab/features/commerce/ugc/settings#display-properties) in Game Manager.
@@ -151,7 +154,7 @@ If you don’t pass in a secondary value, catalog items do have an internal ‘s
 - asc
 - desc
 
-If you don't specify a direction, the default is ascending. If there are null values in the field, null values appear first if the sort is `asc` and last if the sort is `desc`.
+If you don't specify a direction, the default is ascending. If there are null values in the field, null values appear first if the sort is `asc` and last if the sort is `desc`. If no `OrderBy` value is passed, a default `id asc` value is used.
 
 The following are a number of OrderBy examples:
 
@@ -213,3 +216,11 @@ We are limiting the complexity of search filter queries that can run in any give
 
 * `contentType eq 'testType' and tags/any(t: t eq 'blue') or tags/any(t: t eq 'green') or tags/any(t: t eq 'violet')`
 * `contents/any(c: c/minClientVersion gt '1.2.3' and c/maxClientVersion lt '4.5.6')`
+
+High complexity filter queries will throw a 400 error with a message that "*The filter provided in the request does not meet the complexity requirements for source*"
+
+## Escaping special characters
+In order to use any of the special characters as part of the search text, escape the character by prefixing it with a double backslash (`\\`). For example, for a wildcard search on `https://`, where `://` is part of the query string, you would specify `"Search":"https\\:\\/\\/*"`. Similarly, an escaped phone number pattern might look like this `\\+1 \\(800\\) 642\\-7676`.
+
+Special characters that require escaping include the following:
+\+ -  | ! ( ) { } [ ] ^ " ~ ? : \ /
