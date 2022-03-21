@@ -38,7 +38,7 @@ client](https://docs.microsoft.com/aspnet/core/signalr/client-features). The
 client can create a connection to the SignalR Hub by [instantiating a
 HubConnection](https://docs.microsoft.com/aspnet/core/signalr/dotnet-client#connect-to-a-hub)
 with the following API: [SignalR Negotiate REST
-API](https://docs.microsoft.com/rest/api/playfab/multiplayer/pubsub/negotiate).
+API](https://docs.microsoft.com/rest/api/playfab/multiplayer/pub-sub/negotiate).
 This API implements the Negotiate API described [in the SignalR
 documentation](https://github.com/dotnet/aspnetcore/blob/main/src/SignalR/docs/specs/TransportProtocols.md#post-endpoint-basenegotiate-request).
 

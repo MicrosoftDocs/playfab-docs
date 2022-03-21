@@ -38,8 +38,8 @@ see:
 
 | Service | Subscription API | Unsubscription API |
 | --- | --- | --- |
-| Lobby service | [SubscribeToLobbyResource](https://docs.microsoft.com/rest/api/playfab/multiplayer/lobby/subscribetolobbyresource) | [UnsubscribeFromLobbyResource](https://docs.microsoft.com/rest/api/playfab/multiplayer/lobby/unsubscribefromlobbyresource) |
-| Matchmaking service | [SubscribeToMatchmakingResource](https://docs.microsoft.com/rest/api/playfab/multiplayer/matchmaking/subscribetomatchmakingresource) | [UnsubscribeFromMatchmakingResource](https://docs.microsoft.com/rest/api/playfab/multiplayer/matchmaking/unsubscribefrommatchmakingresource) |
+| Lobby service | [SubscribeToLobbyResource](https://docs.microsoft.com/rest/api/playfab/multiplayer/lobby/subscribe-to-lobby-resource) | [UnsubscribeFromLobbyResource](https://docs.microsoft.com/rest/api/playfab/multiplayer/lobby/unsubscribe-from-lobby-resource) |
+| Matchmaking service | [SubscribeToMatchmakingResource](https://docs.microsoft.com/rest/api/playfab/multiplayer/matchmaking/subscribe-to-matchmaking-resource) | [UnsubscribeFromMatchmakingResource](https://docs.microsoft.com/rest/api/playfab/multiplayer/matchmaking/unsubscribe-from-matchmaking-resource) |
 
 ## See also
 
