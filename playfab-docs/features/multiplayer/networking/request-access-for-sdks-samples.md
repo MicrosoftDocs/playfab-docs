@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Request access for secured SDKs and samples
 
-This topic provides information about how you can access SDKs and samples for **Nintendo Switch**, **PlayStation 4**, **PlayStation 5**, **Google Stadia**, **PC (GDK)**, and **Xbox (GDK)**.
+This topic provides information about how you can access SDKs and samples for **Nintendo Switch**, **PlayStation 4**, **PlayStation 5**, and **Google Stadia**.
 
 Adhering to platform policies, we need to ensure that you're a registered developer before granting access, so a few extra steps are required from you. For example, you need to be a registered Switch developer to get access to Party SDKs and samples for Switch.
 
@@ -32,13 +32,6 @@ If you're not yet a registered developer for the previously mentioned platforms 
 
 1. Email PlayFabSdkAccess@microsoft.com with your developer information.
 1. After we've verified that you're a registered developer for Stadia, we'll grant you access.
-
-## PC (GDK) and Xbox (GDK)
-
-If you're a registered developer but don't yet have access, email your Microsoft representative.
-In addition, to get access to Lobby and Matchmaking SDKs for GDK, please follow these instructions:
-1. Email PlayFabSdkAccess@microsoft.com with your developer information.
-1. After we've verified that you're a registered developer for PC/Xbox GDK, we'll grant you access.
 
 ## Need help?
 
