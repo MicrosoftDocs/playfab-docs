@@ -12,9 +12,6 @@ ms.localizationpriority: medium
 
 # Publish your first user generated content
 
-> [!IMPORTANT]
-> This feature is currently in public preview. It is provided to give you an early look at an upcoming feature, and to allow you to provide feedback while it is still in development.  
-
 This tutorial walks you through publishing UGC with content through both APIs and the Game Manager UX, diving into more detail than the quickstart.
 
 ## Requirements

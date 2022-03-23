@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 # Ownership changes
 
 > [!IMPORTANT]
-> This feature is in **private preview** for limited, Microsoft managed partners.
+> This feature is currently in public preview. It is provided to give you an early look at an upcoming feature, and to allow you to provide feedback while it is still in development. 
 
 Most game scenarios benefit from having a specially selected "owner" of the lobby. So it's important to define policies to determine how ownership of the lobby migrates when the owner of the lobby leaves or is disconnected.
 

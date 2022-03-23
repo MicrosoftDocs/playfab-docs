@@ -8,8 +8,10 @@
   href: titledata/toc.yml
 - name: Entities
   href: entities/toc.yml
-- name: Manage Events - Sampling
-  href: manage-events-with-sampling/index.md
+- name: Data Connections
+  href: dataconnections/toc.yml
+- name: Manage Events with sampling
+  href: manage-events-with-sampling/toc.yml
 - name: Content Delivery Network (Legacy)
   href: content-delivery-network/toc.yml
 - name: Webhooks

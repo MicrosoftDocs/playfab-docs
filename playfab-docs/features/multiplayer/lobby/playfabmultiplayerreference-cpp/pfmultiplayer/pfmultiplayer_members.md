@@ -11,7 +11,7 @@ ms.date: 01/03/2022
 # PFMultiplayer C/C++ API overview - PFMultiplayer.h
 
 > [!IMPORTANT]
-> This feature is in **private preview** for limited, Microsoft managed partners.
+> This feature is currently in public preview. It is provided to give you an early look at an upcoming feature, and to allow you to provide feedback while it is still in development. 
 
   
 ## Functions  

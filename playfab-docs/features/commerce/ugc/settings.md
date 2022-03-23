@@ -12,9 +12,6 @@ ms.localizationpriority: medium
 
 # Settings and Policy Page
 
-> [!IMPORTANT]
-> This feature is currently in public preview. It is provided to give you an early look at an upcoming feature, and to allow you to provide feedback while it is still in development.  
-
 The Economy Settings page contains various options to configure UGC and Economy features for your game. These settings can be found under the *Economy* tab under *Title Settings*. These settings can also be set and accessed via APIs using the `UpdateCatalogConfig` and `GetCatalogConfig` calls respectively. Note that these APIs can only be called by [title entities](/gaming/playfab/features/data/entities/#title).
 
 ## Catalog Admins and Reviewers
