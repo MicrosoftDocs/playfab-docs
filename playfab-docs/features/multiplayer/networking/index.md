@@ -43,7 +43,7 @@ Party is designed for use on many platforms like Android, iOS, Nintendo Switch, 
 
 Party is a managed game service. Discounts are available when you use Party with Xbox Live. For pricing information, see [PlayFab pricing](https://playfab.com/pricing/). To learn about the meters that drive billing, see [Party pricing](pricing.md).
 
-If you are interested, here is a video of our presentation at Game Stack Live 2021. The presentation explains the above Party features in greater detail with demos and includes a quickstart tutorial. 
+If you are interested, here is a video of our presentation at Microsoft Game Dev 2021. The presentation explains the above Party features in greater detail with demos and includes a quickstart tutorial. 
 
 > [!VIDEO https://www.youtube.com/embed/z40-nBJsc74]
 

@@ -25,3 +25,5 @@
     href: usage.md
   - name: Workaround for peer-to-peer connection
     href: peer-to-peer.md
+- name: Lobby and Matchmaking real-time notifications
+  href: ../lobby/lobby-and-matchmaking-real-time-notifications.md
