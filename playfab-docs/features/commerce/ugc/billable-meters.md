@@ -12,9 +12,6 @@ ms.localizationpriority: medium
 
 # UGC Pricing Meters
 
-> [!IMPORTANT]
-> This feature is currently in public preview. It is provided to give you an early look at an upcoming feature, and to allow you to provide feedback while it is still in development.
-
 PlayFab User Generated Content has two categories of consumption-based meters - Requests and Storage. This page outlines and defines those meters, including how it is measured and calculated. For more information on PlayFab's pricing model, see [PlayFab Pricing Overview](../../pricing/pricing-overview.md).
 
 > [!NOTE]

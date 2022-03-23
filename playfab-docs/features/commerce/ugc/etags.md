@@ -12,9 +12,6 @@ ms.localizationpriority: medium
 
 # ETags
 
-> [!IMPORTANT]
-> This feature is currently in public preview. It is provided to give you an early look at an upcoming feature, and to allow you to provide feedback while it is still in development.  
-
 This guide will go through using ETags to manage item updates.
 
 ## What are ETags?

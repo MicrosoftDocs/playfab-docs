@@ -12,9 +12,6 @@ ms.localizationpriority: medium
 
 # Limits
 
-> [!IMPORTANT]
-> This feature is currently in public preview. It is provided to give you an early look at an upcoming feature, and to allow you to provide feedback while it is still in development.  
-
 The purpose of this guide is to detail the limits that are enforced when creating, updating, and reading from your catalog of items.
 
 ## Item Creation/Updates

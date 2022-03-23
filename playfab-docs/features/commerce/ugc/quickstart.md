@@ -12,9 +12,6 @@ ms.localizationpriority: medium
 
 # User-Generated Content (UGC) quickstart
 
-> [!IMPORTANT]
-> This feature is currently in **Public Preview**. It is provided to give you an early look at an upcoming feature, and to allow you to provide feedback while it is still in development.
-
 The purpose of this guide is to explain how to quickly get started with UGC, using direct service-to-service calls. We will show you step by step how to connect to the draft UGC content items, publish those items, and then search and find them.
 
 ## Get an Entity Token
