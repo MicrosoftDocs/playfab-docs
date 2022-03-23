@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 # Azure Playfab Lobby and Matchmaking SDKs
 
 > [!IMPORTANT]
-> This feature is in **private preview** for limited, Microsoft managed partners.
+> This feature is currently in public preview. It is provided to give you an early look at an upcoming feature, and to allow you to provide feedback while it is still in development. 
 
 This topic describes all the Azure PlayFab Lobby and Matchmaking SDKs that are currently available.
 
@@ -30,10 +30,11 @@ If you're looking for the core PlayFab SDK that helps you implement most of our 
 
 | SDK/library| Platform/operating system|
 |------------|--------------------------|
-| C/C++ SDK  | [PC(Win32)](https://dev.azure.com/PlayFabPrivate/GDK/_packaging?_a=feed&feed=GDKGeneral), [Nintendo Switch](https://dev.azure.com/PlayFabPrivate/Switch/_packaging?_a=feed&feed=SwitchGeneral), [PlayStation 4](https://dev.azure.com/PlayFabPrivate/PS4/_packaging?_a=feed&feed=PS4General), [PlayStation 5](https://dev.azure.com/PlayFabPrivate/PS5/_packaging?_a=feed&feed=PS5General), [PC (GDK) and Xbox (GDK)](https://dev.azure.com/PlayFabPrivate/GDK/_packaging?_a=feed&feed=GDKGeneral)|
-| Unity SDK  | [PC (GDK) and Xbox (GDK)](https://dev.azure.com/PlayFabPrivate/GDK/_git/PlayFabMultiplayerUnityGDK)|
+| C/C++ SDK  | [PC(Win32)](https://github.com/PlayFab/PlayFabMultiplayer/releases), [Nintendo Switch](https://dev.azure.com/PlayFabPrivate/Switch/_artifacts/feed/SwitchGeneral), [PlayStation 4](https://dev.azure.com/PlayFabPrivate/PS4/_artifacts/feed/PS4General), [PlayStation 5](https://dev.azure.com/PlayFabPrivate/PS5/_artifacts/feed/PS5General), [PC (GDK) and Xbox (GDK)](https://github.com/PlayFab/PlayFabMultiplayer/releases)|
+| Unity SDK  | [PC (GDK) and Xbox (GDK)](https://github.com/PlayFab/PlayFabMultiplayerUnity)|
+| Unity SDK  | [Nintendo Switch](https://dev.azure.com/PlayFabPrivate/Switch/_git/PlayFabMultiplayerUnitySwitch)|
 | Unity Editor Extensions | [Unity game engine](https://github.com/PlayFab/UnityEditorExtensions/releases)|
-| Unreal SDK |[PC (GDK) and Xbox (GDK)](https://dev.azure.com/PlayFabPrivate/GDK/_git/PlayFabOSSUnrealGDK)|
+| Unreal SDK |[PC (GDK) and Xbox (GDK)](https://github.com/PlayFab/PlayFabMultiplayerUnreal)|
 
 ## See also
 

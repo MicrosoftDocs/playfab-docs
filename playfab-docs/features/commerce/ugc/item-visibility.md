@@ -12,9 +12,6 @@ ms.localizationpriority: medium
 
 # Item Permissions and Visibility
 
-> [!IMPORTANT]
-> This feature is currently in public preview. It is provided to give you an early look at an upcoming feature, and to allow you to provide feedback while it is still in development.
-
 Catalog Items can be given different parameters and values that change whether the item is visible to different players through the public catalog or other APIs. This document will go over the different states an item can be in and how it can affect who can see or modify them.
 
 ## Unpublished Draft Items

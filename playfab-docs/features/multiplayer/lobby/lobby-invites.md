@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 # Lobby invites
 
 > [!IMPORTANT]
-> This feature is in **private preview** for limited, Microsoft managed partners.
+> This feature is currently in public preview. It is provided to give you an early look at an upcoming feature, and to allow you to provide feedback while it is still in development. 
 
 This article provides an overview about Lobby invites and explains how to manage state changes for lobbies that allow invites.
 

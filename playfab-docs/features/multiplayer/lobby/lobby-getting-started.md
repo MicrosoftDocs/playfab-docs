@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 # Getting started with Azure PlayFab Lobby
 
 > [!IMPORTANT]
-> This feature is in **private preview** for limited, Microsoft managed partners.
+> This feature is currently in public preview. It is provided to give you an early look at an upcoming feature, and to allow you to provide feedback while it is still in development. 
 
 This article describes how to set up the development environment for Azure PlayFab Lobby and start using it.
 

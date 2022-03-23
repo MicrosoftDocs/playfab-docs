@@ -12,9 +12,6 @@ ms.localizationpriority: medium
 
 # SearchItems
 
-> [!IMPORTANT]
-> This feature is currently in public preview. It is provided to give you an early look at an upcoming feature, and to allow you to provide feedback while it is still in development.  
-
 The `SearchItems` API executes a search against the public Catalog using the provided search parameters and returns a paged list of items.
 
 At its most basic, the `Search` parameter is a plain-text fuzzy search against the **Title**, **Description**, **Keywords**, and **Searchable String Display Properties** fields. However `Filter`, `OrderBy`, and `Select` are OData Query additions that can be used to alter the search parameters. Search results can be filtered and ordered by any field in the search document (barring Title and Description).

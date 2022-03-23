@@ -12,9 +12,6 @@ ms.localizationpriority: medium
 
 # Adding ratings to your user generated content
 
-> [!IMPORTANT]
-> This feature is currently in **Public Preview**. It is provided to give you an early look at an upcoming feature, and to allow you to provide feedback while it is still in development.
-
 This guide will go through the API calls that can be used to add a ratings and review system to your game.
 
 ## Review an item
