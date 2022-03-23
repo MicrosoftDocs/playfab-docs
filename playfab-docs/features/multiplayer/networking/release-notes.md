@@ -19,6 +19,7 @@ PlayFab Party had a significant (up to 90%) price drop on 10/13/2020. You can vi
 ### Bug fixes
 
 - Playstation4, Playstation5: Fixed a crash that occurred when there was no audio device after the audio devices were removed.
+- Switch: Fixed an issue that caused web requests to fail when multiple PlayFab transactions were triggered.
 
 ## 1.7.6
 Feb 8, 2022

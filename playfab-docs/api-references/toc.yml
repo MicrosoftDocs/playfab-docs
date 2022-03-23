@@ -4,6 +4,8 @@
     href: index.md
   - name: Reference
     href: https://docs.microsoft.com/rest/api/playfab/admin
+  - name: Real-time notifications for Lobby and Matchmaking
+    href: ../features/real-time-notifications/toc.yml
 - name: Party C/C++ API
   href: ../features/multiplayer/networking/reference/toc.yml
 - name: Party Unity API
