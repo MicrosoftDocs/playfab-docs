@@ -1,7 +1,7 @@
 ---
-title: Manage Events - Quickstart 
+title: Event Sampling quickstart 
 author: shikha-tarware
-description: Quickstart - Manage Events with Sampling 
+description: Quickstart guide to manage events with Sampling 
 ms.author: shtarwar
 ms.date: 11/17/2021
 ms.topic: article
@@ -10,7 +10,7 @@ keywords: playfab, data, sampling, manage events, playstream
 ms.localizationpriority: medium
 ---
 
-# Quickstart
+# Event Sampling quickstart
 
 To take advantage of sampling using our Manage Events page, configure a sampling percentage on individual event levels. When you specify a sampling percentage on a certain event, sampling comes into effect by overriding the default or existing value and remains in effect until you change it. The percentage specified in the sample ratio field is the percentage of events that will be filtered out.  
 

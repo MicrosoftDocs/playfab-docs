@@ -97,8 +97,37 @@ landingContent:
           - text: What are available built-in constructs of an Entity Key
             url: entities/available-built-in-entity-types.md
           - text: Entities Key terms and migration information
-            url: entities/migration-information.md 
-
+            url: entities/migration-information.md
+                                   
+  - title: Data Connections
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Take control of your data in your storage account with Data Connections
+            url: dataconnections/index.md
+      - linkListType: quickstart
+        links:
+          - text:  Get started with Data Connections
+            url: dataconnections/quickstart.md 
+            
+  - title: Webhooks
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Explore Webhooks to manage events on custom servers 
+            url: webhooks/index.md
+            
+  - title: Manage Events 
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Manage Events with sampling
+            url: manage-events-with-sampling/index.md
+      - linkListType: quickstart
+        links:
+          - text:  Get started with Manage Events
+            url: manage-events-with-sampling/quickstart.md 
+   
   - title: Content Delivery Network
     linkLists:
       - linkListType: overview
@@ -109,10 +138,4 @@ landingContent:
         links:
           - text:  Get started with Content Delivery Network
             url: content-delivery-network/quickstart.md 
-            
-  - title: Webhooks
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Explore Webhooks to manage events on custom servers 
-            url: webhooks/index.md
+           
