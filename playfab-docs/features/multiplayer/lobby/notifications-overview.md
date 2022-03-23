@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 # Lobby notifications
 
 > [!IMPORTANT]
-> This feature is in **private preview** for limited, Microsoft managed partners.
+> This feature is currently in public preview. It is provided to give you an early look at an upcoming feature, and to allow you to provide feedback while it is still in development. 
 
 > [!IMPORTANT]
 > This doc page is currently unlinked. It describes service APIs not yet intended to be called by customers.

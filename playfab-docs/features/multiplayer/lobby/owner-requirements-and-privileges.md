@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 # Owner requirements and privileges
 
 > [!IMPORTANT]
-> This feature is in **private preview** for limited, Microsoft managed partners.
+> This feature is currently in public preview. It is provided to give you an early look at an upcoming feature, and to allow you to provide feedback while it is still in development. 
 
 This article explains about Lobby owner requirements and privileges. 
 

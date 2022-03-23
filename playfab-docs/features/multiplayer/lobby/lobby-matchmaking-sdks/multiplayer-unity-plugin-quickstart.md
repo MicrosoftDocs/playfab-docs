@@ -12,7 +12,7 @@ keywords: playfab, multiplayer, lobby, matchmaking, unity, middleware
 # Quickstart: PlayFab Multiplayer Unity plugin
 
 > [!IMPORTANT]
-> This feature is in **private preview** for limited, Microsoft managed partners.
+> This feature is currently in public preview. It is provided to give you an early look at an upcoming feature, and to allow you to provide feedback while it is still in development. 
 
 Get started with the PlayFab Multiplayer Unity plugin. Follow steps below to install the package and try out example code for a basic task.
 

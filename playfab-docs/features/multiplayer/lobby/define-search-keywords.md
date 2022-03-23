@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 # Create searchable lobbies
 
 > [!IMPORTANT]
-> This feature is in **private preview** for limited, Microsoft managed partners.
+> This feature is currently in public preview. It is provided to give you an early look at an upcoming feature, and to allow you to provide feedback while it is still in development. 
 
 This article explains how to create lobbies that are searchable. 
 
