@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 # Azure PlayFab roadmap
 
-_Last Update: 28 October 2021_
+_Last Update: 23 March 2022_
 
 While Microsoft has a digital-only presence at GDC this year, our commitment to serving the game development community is as strong as ever. The PlayFab team has put together some exciting updates to share around our Multiplayer Services, Party, Experiments, Data Platform, and User Generated Content (UGC) services. We have new demos, technical talks and documentation that will help you dive deep into each update. 
 
