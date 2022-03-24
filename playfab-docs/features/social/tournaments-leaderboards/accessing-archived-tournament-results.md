@@ -19,7 +19,7 @@ Each leaderboard can be reset manually or automatically - meaning statistic valu
 Before that happens, however, PlayFab creates a snapshot of all the leaderboard statistic values for each player. This allows you to access this *archived* version of the leaderboard.
 
 > [!NOTE]
-> A PlayFab-free tier only allows access to the most recently archived version of a leaderboard, effectively giving you the current and the most previous versions. For example, with a free tier, if your current leaderboard version is **3**, you may only access version **3** and archived version **2**.
+> All titles allow you to access the most recently archived version of a leaderboard, and this gives you the current and most previous versions. For example, if your current leaderboard version is **3**, you may access only version **3** and archived version **2**.
 
 ## Initial setup
 
@@ -149,7 +149,7 @@ You will end up with several **Leaderboard** versions **(1)**:
 
 - **Current version data** will be displayed in the table to the left **(3)**.
 - **Archived data** will be available for previous versions **(2)**.
-- With a free tier, only the very previous version will be available.
+- Only the latest version will be available. This applies to all titles.
 
 ![Game Manager - Leaderboards - Leaderboard Versions](media/tutorials/game-manager-leaderboards-leaderboard-versions.png)  
 
@@ -210,7 +210,7 @@ The result will look like the example provided below.
 
 ![Debug output - Display Leaderboard Version 1](media/tutorials/debug-output-display-leaderboard-version-1.png)  
 
-Free tier only allows you to access the *very latest* archived version of the leaderboard. Trying to pull an *older* version will result in an error (see below).
+All titles allow you to access the *latest* archived version of the leaderboard. Trying to pull an older version will result in an error (see below).
 
 ![Error - Leaderboard Version not available](media/tutorials/error-leaderboard-version-not-available.png)  
 
