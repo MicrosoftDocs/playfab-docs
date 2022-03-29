@@ -30,7 +30,7 @@ The data is readily available in Parquet blob format. Parquet is a column-orient
 
 For more optimized cost and data control, you can make use of Data Connections with [Event Sampling](../manage-events-with-sampling/index.md) - Sampling enables you to configure the percentage of events data that you want to receive.
 
-### Grant PlayFab access to your stoarge containter
+### Grant PlayFab access to your storage containter
 For Data Connections, you need an Azure subscription and a storage account. 
 
 For existing PlayFab and Azure customers, you can create a storage container on [Azure portal](https://ms.portal.azure.com/#allservices) and get started with Data Connections on [Azure PlayFab](https://developer.playfab.com/sign-up/). 
@@ -42,7 +42,7 @@ For existing PlayFab who are new to Azure, you can sign up for an [Azure subscri
 
 For PlayFab to ingest data in your storage account, container details along with authorization using a SAS token are required. To create a SAS token using Microsoft Azure portal, follow the steps below.
 
-Option 1: Create the SAS token on the container level. 
+#### Option 1: Create the SAS token on the container level. 
 > [!Important]
 > Generate and retrieve the shared access signature for your container, not for the storage account itself.
 
@@ -62,7 +62,7 @@ Option 1: Create the SAS token on the container level.
 - The **Blob SAS token** query string appears in the lower area of the window.
 - Copy and paste the **Blob SAS token** values and **secure location it for the Azure PlayFab Data Connections**. It's displayed only once and can't be retrieved after the window is closed.
 
-Option 2: Create the SAS token on the account level.
+#### Option 2: Create the SAS token on the account level.
 > [!Important]
 > Generate and retrieve the shared access signature for your storage account itself.
 
