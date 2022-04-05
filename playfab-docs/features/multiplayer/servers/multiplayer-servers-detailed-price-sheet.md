@@ -1,6 +1,6 @@
 ---
 title: Multiplayer Servers - detailed price sheet
-author: lejackso
+author: lesterjackson
 description: Detailed pricing information for PlayFab Multiplayer Server 2.0 (Thunderhead).
 ms.author: lejackso
 ms.date: 01/17/2021

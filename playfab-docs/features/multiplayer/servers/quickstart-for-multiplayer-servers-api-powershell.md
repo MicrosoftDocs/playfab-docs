@@ -1,6 +1,6 @@
 ---
 title: "Walkthrough: Deploy builds using PowerShell/API"
-author: lejackso
+author: lesterjackson
 description: "Walkthrough: Deploy builds using PowerShell/API"
 ms.author: lejackso
 ms.date: 04/01/2021
