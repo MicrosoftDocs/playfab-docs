@@ -2,7 +2,7 @@
 title: PlayFab Tier Limits
 author: nathankong-microsoft
 description: Describes the limits for each PlayFab resource by tier.
-ms.author: nakong
+ms.author: joanlee
 ms.date: 04/29/2019
 ms.topic: article
 ms.prod: playfab

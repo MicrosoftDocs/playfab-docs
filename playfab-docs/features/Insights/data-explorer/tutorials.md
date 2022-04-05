@@ -2,7 +2,7 @@
 title: Explorer tutorials
 author: nathankong-microsoft
 description: The Data Explorer tutorials.
-ms.author: nakong
+ms.author: joanlee
 ms.date: 09/23/2020    
 ms.topic: article
 ms.prod: playfab

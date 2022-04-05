@@ -2,7 +2,7 @@
 title: Title Launches
 author: nathankong-microsoft
 description: Describes how to launch titles in Game Manager.
-ms.author: nakong
+ms.author: joanlee
 ms.date: 10/15/2020
 ms.topic: article
 ms.prod: playfab

@@ -2,7 +2,7 @@
 title: How to use player publisher data to grant a reward for playing multiple titles
 author: DanBehrendt
 description: Tutorial that describes how to create and use player publisher data.
-ms.author: dabe
+ms.author: joanlee
 ms.date: 10/26/2018
 ms.topic: article
 ms.prod: playfab

@@ -2,7 +2,7 @@
 title: Getting started for developers
 author: mawillia
 description: Understanding how to use PlayFab as a Developer
-ms.author: mawillia
+ms.author: joanlee
 ms.date: 11/16/2018
 ms.topic: article
 ms.prod: playfab
