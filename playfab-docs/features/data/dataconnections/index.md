@@ -31,6 +31,7 @@ The data is readily available in Parquet blob format. Parquet is a column-orient
 For more optimized cost and data control, you can make use of Data Connections with [Event Sampling](../manage-events-with-sampling/index.md) - Sampling enables you to configure the percentage of events data that you want to receive.
 
 ### Grant PlayFab access to your storage container
+
 For Data Connections, you need an Azure subscription and a storage account. 
 
 For existing PlayFab and Azure customers, you can create a storage container on the [Azure portal](https://ms.portal.azure.com/#allservices) and get started with Data Connections on [Azure PlayFab](https://developer.playfab.com/sign-up/). 
