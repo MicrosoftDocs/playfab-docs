@@ -28,8 +28,8 @@ The Dasv4 is now the recommended SKU for running game servers in Azure. For cust
 |D2av4|AMD EPYCTM 7452| 8 |50 |230-260|-38%|
 |E2av4|AMD EPYCTM 7452| 16 |50 |230-260|-19%|
 |F2sv2|Intel Xeon® Platinum 8168 (SkyLake)| 4 |16 |195-210|-37%|
-|D2v3|Intel Xeon® E5-2673 v3 (Haswell) processor or<pr> E5-2673 v4 (Broadwell)| 8 |50 |160-190|-14%|
-|D2v2|Intel Xeon® E5-2673 v3 (Haswell) processor or<pr> E5-2673 v4 (Broadwell)| 8 |100 |210-150|0%|
+|D2v3|Intel Xeon® E5-2673 v3 (Haswell) processor or\<pr> E5-2673 v4 (Broadwell)| 8 |50 |160-190|-14%|
+|D2v2|Intel Xeon® E5-2673 v3 (Haswell) processor or\<pr> E5-2673 v4 (Broadwell)| 8 |100 |210-150|0%|
 |A2v2|Various| 4 |20 |100|+51%|
 
 ## Alternative VMs

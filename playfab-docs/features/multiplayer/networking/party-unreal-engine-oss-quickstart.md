@@ -53,7 +53,7 @@ Now you have successfully completed the initial setup. If you are developing gam
     - **PC GDK:** WinGDKEngine.ini
     - **Xbox One GDK:** XboxOneGDKEngine.ini
 - Replace the INI sections if they already exist (e.g. Engine.GameEngine)
-- Ensure you replace all the *<REPLACE ME>* fields with your data.
+- Ensure you replace all the *\<REPLACE ME>* fields with your data.
 ```
 [OnlineSubsystem]
 DefaultPlatformService=PlayFab
