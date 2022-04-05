@@ -39,7 +39,7 @@ This quickstart helps you make your first API calls using the PlayFab Multiplaye
 
 Following the steps to download and install the PlayFab Multiplayer Unity plugin.
 
-1. Download the PlayFab [Multiplayer Unity Plugin](https://dev.azure.com/PlayFabPrivate/GDK/_git/PlayFabMultiplayerUnityGDK) Asset Package (use a distribution point depending on your platform).
+1. Download the PlayFab [Multiplayer Unity Plugin](https://github.com/PlayFab/PlayFabMultiplayerUnity) Asset Package (use a distribution point depending on your platform).
 1. **Important!** Please see information in README file published with plugin. It is tailored to each particular version and may include important instructions specific to your platform.
 1. Open your Unity Project.
 1. Navigate to the location where you saved the .unitypackage and double-click it to open the import dialog.
