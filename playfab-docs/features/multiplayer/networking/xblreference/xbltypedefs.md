@@ -1,14 +1,14 @@
 ---
 author: jdeweyMSFT
-title: "Typedefs"
-description: TBD
+title: "Xbox Live Helper Typedefs"
+description: Party Xbox Live Helper library uses several typedefs for convenient declarations of arrays of core types
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
 ms.date: 09/25/2019
 ---
 
-# Typedefs
+# Xbox Live Helper Typedefs
 
 Party Xbox Live Helper library uses several typedefs for convenient declarations of arrays of core types. Additional [typedefs](../reference/typedefs.md) provided by PlayFab Party are used within the Party Xbox Live Helper API.
 
