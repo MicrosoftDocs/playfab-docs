@@ -1,6 +1,6 @@
 ---
 title: OS Patch level updates for Windows 
-author: lejackso
+author: lesterjackson
 description: Describes OS patch level cycle
 ms.author: lejackso
 ms.date: 03/30/2021

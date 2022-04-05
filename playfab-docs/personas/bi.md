@@ -2,7 +2,7 @@
 title: Getting Started for Business Intelligence
 author: mawillia
 description: Understanding how to use PlayFab for a Business Intelligence Persona
-ms.author: mawillia
+ms.author: joanlee
 ms.date: 11/16/2018
 ms.topic: article
 ms.prod: playfab

@@ -31,7 +31,7 @@ enum class PartyChatTextReceivedOptions
 | None | No flags are specified. |  
 | FilteredOffensiveTerms | Offensive terms were found and replaced with asterisks.<br/><br/> This value is exclusive to FilteredEntireMessage and FilteredDueToError. |  
 | FilteredEntireMessage | The incoming text chat was unable to filter specific terms, and the entire text has been replaced by asterisks.<br/><br/> This option occurs when the moderation service was not able to identify specific terms to filter, but has still identified the text as being offensive. <br /><br /> This value is exclusive to FilteredOffensiveTerms and FilteredDueToError. |  
-| FilteredDueToError | The incoming text was unable to be filtered, and the entire text has been replaced by asterisks. <remarks> This value is exclusive to FilteredOffensiveTerms and FilteredEntireMessage. </remarks><br/><br/> This value is exclusive to FilteredOffensiveTerms and FilteredEntireMessage. |  
+| FilteredDueToError | The incoming text was unable to be filtered, and the entire text has been replaced by asterisks. \<remarks> This value is exclusive to FilteredOffensiveTerms and FilteredEntireMessage. </remarks><br/><br/> This value is exclusive to FilteredOffensiveTerms and FilteredEntireMessage. |  
   
   
 ## Requirements  

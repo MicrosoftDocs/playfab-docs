@@ -2,7 +2,7 @@
 title: Pricing Meters
 author: nathankong-microsoft
 description: Describes each of the pricing meters in the new pricing model.
-ms.author: nakong
+ms.author: joanlee
 ms.date: 9/10/2020
 ms.topic: article
 ms.prod: playfab

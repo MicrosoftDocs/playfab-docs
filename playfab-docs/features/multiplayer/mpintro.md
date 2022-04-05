@@ -16,10 +16,10 @@ Multiplayer is a great addition to many titles, and PlayFab provides several ser
 
 |Service|Description|
 |--|--|
-|[Leaderboards](../social/tournaments-leaderboards/using-resettable-statistics-and-leaderboards.md)| Track and respond to player activity with statistics and leaderboards | 
+|[Leaderboards](../social/tournaments-leaderboards/using-resettable-statistics-and-leaderboards.md)| Track and respond to player activity with statistics and leaderboards.|
 |[Entity Groups](../data/playerdata/index.md)|Create permanent or temporary groups of players and signal activity. |
-|[Matchmaking](./matchmaking/index.md)| Deploy custom matchmaking rules to group players quickly 
-|[Party](./networking/index.md)|Connect players with networking and accessible in-game chat||
+|[Matchmaking](./matchmaking/index.md)| Deploy custom matchmaking rules to group players quickly|
+|[Party](./networking/index.md)|Connect players with networking and accessible in-game chat|
 |[Servers](./servers/index.md)|Dynamically scale custom multiplayer servers in Azure |
 
 While titles can use all of these services in combination, they can be used independently as well, and this is quite common. For example titles might use PlayFab matchmaking but allocate servers from an alternative multiplayer server hosting solution. Or games might use PlayFab multiplayer servers for hosting, but use their own matchmaking system to bring players together.

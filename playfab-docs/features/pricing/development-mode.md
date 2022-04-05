@@ -2,7 +2,7 @@
 title: Development Mode
 author: nathankong-microsoft
 description: Describes the features and limits of Development Mode titles.
-ms.author: nakong
+ms.author: joanlee
 ms.date: 09/09/2020
 ms.topic: article
 ms.prod: playfab

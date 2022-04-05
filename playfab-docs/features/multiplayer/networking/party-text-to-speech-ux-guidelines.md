@@ -19,7 +19,7 @@ This topic is part one of a two-part series covering UX solutions for speech-to-
 
 The following chart guides you through scenarios that players will experience when you enable speech-to-text and text-to-speech features. It outlines user impact for three stages of the gaming experience: initial setup, playing a game, and engaging in game chat.
 
-|**Experience Stage**|**Set up**                |**Play**                           |**Chat**                 |                           |
+|**Experience Stage**|**Set up**                |**Play**                           |**Chat**                 |**Message**                           |
 | :------------------|:-------------------------|:----------------------------------|:------------------------|:--------------------------|
 |**Goal**            |**User enables setting**  |**User enters a multiplayer game** |**User sends communication** |**User receives communication**
 |**Action**          |Speech-to-Text <br/><br/> Alternative for hearing voice replies |Launches game <br/><br/> Enters MP lobby <br/><br/> Overlay opens when game chat is initiated  |User speaks |User reads team's voice replies converted to text in a speech-to-text chat overlay

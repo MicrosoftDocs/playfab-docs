@@ -1,6 +1,6 @@
 ---
 title: Managing Summary
-author: lejackso
+author: lesterjackson
 description: Managing Summary
 ms.author: lejackso
 ms.date: 11/30/2020

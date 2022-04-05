@@ -21,6 +21,8 @@
               href: PlayFab.Multiplayer/Lobby/OwnerMigrationPolicy.md
         - name: Methods
           items:
+            - name: AddMember
+              href: PlayFab.Multiplayer/Lobby/AddMember.md
             - name: ForceRemoveMember
               href: PlayFab.Multiplayer/Lobby/ForceRemoveMember.md
             - name: GetLobbyProperties

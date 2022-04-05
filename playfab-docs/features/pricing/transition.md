@@ -2,7 +2,7 @@
 title: Transitioning to Modern Pricing
 author: nathankong-microsoft
 description: Describes how to transition from the legacy pricing plan to the modern pricing plan.
-ms.author: nakong
+ms.author: joanlee
 ms.date: 10/15/2020
 ms.topic: article
 ms.prod: playfab

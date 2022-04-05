@@ -2,7 +2,7 @@
 title: "Setup Sign In with Apple for PlayFab"
 description: "How to setup Sign In with Apple in PlayFab."
 author: DanBehrendt
-ms.author: dabe
+ms.author: joanlee
 ms.date: 02/25/2020
 ms.topic: article
 ms.prod: playfab
