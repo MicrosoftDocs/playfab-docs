@@ -93,7 +93,7 @@ From here, you enter your **API Endpoint** which can be found in PlayFab:
 
 ![Google Play Developer Console enter API endpoint](media/tutorials/google-unity/gdpc-set-api-endpoint.png)  
 
-- Enter this endpoint <https://[titleid].playfabapi.com> in the **Launch URL** field.
+- Enter this endpoint `https://<titleid>.playfabapi.com` in the **Launch URL** field.
 - Select the **Save** button.
 - This will provide you with the proper **Client ID**.
 

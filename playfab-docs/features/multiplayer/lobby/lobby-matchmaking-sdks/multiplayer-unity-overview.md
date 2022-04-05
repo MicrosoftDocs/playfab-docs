@@ -20,9 +20,7 @@ It enables you to make use of PlayFab Multiplayer services in your Unity game. C
 
 PlayFab Multiplayer Unity plugin works alongside the PlayFab "core" Unity SDK. The PlayFab "core" Unity SDK provides other PlayFab functionalities such as economy, leaderboards, and more. For more information, see [PlayFab Unity SDK](https://github.com/PlayFab/UnitySDK) and [PlayFab Unity SDK documentation](https://docs.microsoft.com/gaming/playfab/sdks/unity3d/).
 
-PlayFab Multiplayer Unity plugin is available for download as a Unity Asset package. It is currently supported for developing games on the following platforms:
-
-- Microsoft Game Core (GDK) and Windows: <https://dev.azure.com/PlayFabPrivate/GDK/_git/PlayFabMultiplayerUnityGDK> (restricted access by request to Microsoft Representative and PlayFabSdkAccess team)
+PlayFab Multiplayer Unity plugin is available for download as a Unity Asset package.
 
 ## What API features are provided by PlayFab Multiplayer Unity plugin?
 

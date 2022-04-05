@@ -48,19 +48,19 @@ In this case, port 30000 on the VM is mapped onto 3600 on the container for TCP 
 
 #### How can I see runtime details for a container?
 
-Once you do docker ps you can grab the container name or hash and do __docker inspect <nameOrHash>__. You will see lots of information, like the state of the container, the volume binding on the host VM, port bindings, environment variables passed into the container and more.
+Once you do docker ps you can grab the container name or hash and do __docker inspect \<nameOrHash>__. You will see lots of information, like the state of the container, the volume binding on the host VM, port bindings, environment variables passed into the container and more.
 
 #### How can I get the logs of my game server?
 
-You can use the command docker logs <nameOrHash>. These logs contain everything your app sends to standard output/standard error streams. Bear in mind that these logs exist only for existing containers. If your game server crashes, our monitoring process in the VM will delete this container and create a new one.
+You can use the command docker logs \<nameOrHash>. These logs contain everything your app sends to standard output/standard error streams. Bear in mind that these logs exist only for existing containers. If your game server crashes, our monitoring process in the VM will delete this container and create a new one.
 
 Consequently, it's a better practice to use GSDK to log from inside your game server. To learn more, see [Logging with GSDK](integrating-game-servers-with-gsdk.md#logging-with-the-gsdk) and [Archiving and retrieving multiplayer server logs](archiving-and-retrieving-multiplayer-server-logs.md) to access the logs from terminated game servers.
 
 ### Can I connect "inside" a running container to see what's going on?
 
-Yup! You can do docker exec -it <nameOrHash> powershell on Windows and docker exec -it <nameOrHash> bash on Linux. There, you get access to a command line process in the container where you can issue native commands to debug/diagnose issues.
+Yup! You can do docker exec -it \<nameOrHash> powershell on Windows and docker exec -it \<nameOrHash> bash on Linux. There, you get access to a command line process in the container where you can issue native commands to debug/diagnose issues.
 
-For this command to work on Linux, Bash shell must be installed in your base container. If it isn't, you can use Bourne shell by running __docker exec -it <nameOrHash> sh__.
+For this command to work on Linux, Bash shell must be installed in your base container. If it isn't, you can use Bourne shell by running __docker exec -it \<nameOrHash> sh__.
 
 #### How can I see the ports that are open on my container?
 
@@ -115,7 +115,7 @@ info: PlayfabMultiplayerAgent[0]
 
 #### On LocalMultiplayerAgent, I am not getting any heartbeats
 
-There might be some leftover containers from previous attempts. You can use __docker ps -a__ to see all containers and __docker rm -f <containerNameOrTag>__ to delete them.
+There might be some leftover containers from previous attempts. You can use __docker ps -a__ to see all containers and __docker rm -f \<containerNameOrTag>__ to delete them.
 
 #### On Windows, how can I monitor TCP and UDP packets?
 

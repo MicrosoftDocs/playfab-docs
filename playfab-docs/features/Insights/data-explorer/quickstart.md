@@ -2,7 +2,7 @@
 title: Data Explorer quickstart
 author: nathankong-microsoft
 description: This quickstart guide shows how to query data created by PlayFab API calls.
-ms.author: nakong
+ms.author: joanlee
 ms.date: 09/22/2020    
 ms.topic: article
 ms.prod: playfab

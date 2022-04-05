@@ -2,7 +2,7 @@
 title: Unity3D quickstart
 author: DanBehrendt
 description: This guide will help you make your first PlayFab API call in the Unity3d engine.
-ms.author: dabe
+ms.author: joanlee
 ms.date: 1/25/2020
 ms.topic: article
 ms.prod: playfab

@@ -2,7 +2,7 @@
 title: Adding PlayFab to Endless Runner
 author: mawillia
 description: A simple but powerful example of how to add PlayFab to a game (Endless Runner) from the Unity Asset Store.
-ms.author: mawillia
+ms.author: joanlee
 ms.date: 02/25/2019
 ms.topic: article
 ms.prod: playfab

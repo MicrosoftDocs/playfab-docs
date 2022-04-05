@@ -2,7 +2,7 @@
 title: Data Explorer
 author: nathankong-microsoft
 description: Overview for Data Explorer
-ms.author: nakong
+ms.author: joanlee
 ms.date: 09/22/2020    
 ms.topic: article
 ms.prod: playfab

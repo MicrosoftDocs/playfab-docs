@@ -2,7 +2,7 @@
 title: Quickstart C++ for Xbox
 author: DanBehrendt
 description: This guide helps you make your first PlayFab API call in C++ on an Xbox.
-ms.author: dabe
+ms.author: joanlee
 ms.date: 04/16/2020
 ms.topic: article
 ms.prod: playfab

@@ -2,7 +2,7 @@
 title: Porting to PlayFab Party from Sockets
 description: Tips and considerations when porting your game from sockets to the PlayFab Party real-time chat and data communication API.
 author: TBD
-ms.author: TBD
+ms.author: joanlee
 ms.date: 08/15/2019
 ms.topic: article
 ms.prod: playfab

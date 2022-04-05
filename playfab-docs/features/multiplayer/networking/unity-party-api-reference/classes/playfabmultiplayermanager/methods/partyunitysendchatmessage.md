@@ -24,7 +24,7 @@ public void PlayFabMultiplayerManager.Get().SendChatMessage(string message, IEnu
 
 The contents of the chat message.
 
-**recipients** IEnumerable<PlayFabPlayer>
+**recipients** IEnumerable\<PlayFabPlayer>
 
 The recipients of the chat message.
 

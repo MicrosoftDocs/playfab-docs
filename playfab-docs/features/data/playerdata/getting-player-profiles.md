@@ -2,7 +2,7 @@
 title: Tutorial Get a player profile
 author: DanBehrendt
 description: Describes how to use the GetPlayerProfile and PlayerProfileViewConstraints APIs to retrieve player profile data.
-ms.author: dabe
+ms.author: joanlee
 ms.date: 06/11/2018
 ms.topic: article
 ms.prod: playfab

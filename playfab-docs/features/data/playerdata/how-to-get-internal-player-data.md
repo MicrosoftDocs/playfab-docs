@@ -1,8 +1,8 @@
 ---
 title: How to get internal player data 
 author: DanBehrendt
-description: 
-ms.author: dabe
+description: "How to get internal player data." 
+ms.author: joanlee
 ms.date: 06/16/2020
 ms.topic: article
 ms.prod: playfab

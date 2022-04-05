@@ -22,7 +22,7 @@ There are a couple of steps needed to get started with PlayFab C# CloudScript.
   - An [Azure account](https://azure.microsoft.com/free).  Signing up for an Azure Account is free
   - An [Azure Subscription](https://docs.microsoft.com/azure/billing/billing-create-subscription)
   - A Functions App resource configured in the Azure Portal
-    - To minimize latency of your CloudScript using Azure Functions place them in either *US-West* or *US-West 2* Azure regions.
+    - To minimize latency of your CloudScript using Azure Functions place them in the *US-West*, *US-West 2*, or *US-West 3* Azure regions.
     - **Security Note:** From a security perspective you should make sure to only use a given function secret with PlayFab and not use it for calling the same function from any other source.
     - **Security Note:** For queued functions you should set up a distinct storage account for the queues used for the queue trigger.
 - A [PlayFab account](https://developer.playfab.com/signup)

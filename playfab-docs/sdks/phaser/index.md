@@ -2,7 +2,7 @@
 title: Phaser (Javascript) SDK
 author: mawillia
 description: Landing page for the PlayFab Phaser Javascript SDK.
-ms.author: mawillia
+ms.author: joanlee
 ms.date: 01/22/2019
 ms.topic: article
 ms.prod: playfab
