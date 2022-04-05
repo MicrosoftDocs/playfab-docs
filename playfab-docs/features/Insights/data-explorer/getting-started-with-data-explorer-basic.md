@@ -36,7 +36,7 @@ The timeframe of the query can be adjusted by modifying **Start date** and **End
 
 The output of the query can be modified further by adding **Group By** and **Aggregate Type**. Group By modifies how the output rows are grouped, whereas Aggregate Type modifies how the rows are counted, summed, or distinct by.
 
-You can create queries in the Query panel. Please note that Data Explorer (basic) queries will only reference the top 100 events. To view all events, run the query in [Data Explorer (advanced)](media/getting-started-with-data-explorer-advanced.md).
+You can create queries in the Query panel. Please note that Data Explorer (basic) queries will only reference the top 100 events. To view all events, run the query in [Data Explorer (advanced)](getting-started-with-data-explorer-advanced.md).
 
 ## Query Output
 
