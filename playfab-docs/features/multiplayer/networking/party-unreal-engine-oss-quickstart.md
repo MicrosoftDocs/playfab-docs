@@ -16,7 +16,7 @@ This quickstart guide helps you set up and use Multiplayer features (Lobby, Matc
 After following the relevant steps below for your target platforms, you will be ready to start using the OSS. Authentication, networking, VOIP, grouping into lobbies, and matchmaking will be handled on your behalf with no other changes required.
 
 ## Download and install PlayFab Online Subsystem
-Go to [UE OSS PlayFab](https://dev.azure.com/PlayFabPrivate/GDK/_git/PlayFabOSSUnrealGDK) to download or clone PlayFab Online SubSystem source. If you do not have access to the site, see [Request Access page](request-access-for-sdks-samples.md).
+Go to [UE OSS PlayFab](https://github.com/PlayFab/PlayFabMultiplayerUnreal) to download or clone PlayFab Online SubSystem source.
 
 ## What you need
 * **PlayFab Title ID:** If you do not have a Title ID configured for PlayFab Party, see [Enabling PlayFab Party](enable-party.md).
@@ -34,31 +34,26 @@ Go to [UE OSS PlayFab](https://dev.azure.com/PlayFabPrivate/GDK/_git/PlayFabOSSU
 		"XboxOneGDK",
 		"WinGDK",
 		"XSX",
-		"XboxOne"
+		"Win64"
 	],
 	"SupportedTargetPlatforms": [
 		"XboxOneGDK",
 		"WinGDK",
 		"XSX",
-		"XboxOne"
+		"Win64"
 	]
 }
 ```
 
-Now you have successfully completed the initial setup. If you are developing games using GDK, see [Next steps for GDK](#next-steps-for-gdk).
-
-## Next steps for GDK
-- Apply the changes below to the Game (not Engine) INI files for each platform you are targeting.
+## Game Configuration
+- No matter which platform you are targetting, your game will need to configure certain PlayFab specific values in your intended platform target's INI file.  
     - **Xbox Series X GDK:** XSXEngine.ini
     - **PC GDK:** WinGDKEngine.ini
     - **Xbox One GDK:** XboxOneGDKEngine.ini
+    - **PC Steam:** WindowsEngine.ini
 - Replace the INI sections if they already exist (e.g. Engine.GameEngine)
 - Ensure you replace all the *<REPLACE ME>* fields with your data.
 ```
-[OnlineSubsystem]
-DefaultPlatformService=PlayFab
-NativePlatformService=GDK
-
 [OnlineSubsystemPlayFab]
 bEnabled=true
 PlayFabTitleID=<REPLACE ME with your PlayFab title ID>
@@ -67,8 +62,6 @@ MaxDevicesPerUserCount=<REPLACE ME with your max player count per box (note: spl
 MaxEndpointsPerDeviceCount=<REPLACE ME with your max player count per box (note: split screen is still 1 device)  In the example of an 8 player game, this would be 1.>
 MaxUserCount=<REPLACE ME with your max player count (note: split screen is still 1 device)  In the example of an 8 player game, this would be 8.>		
 MaxUsersPerDeviceCount=<REPLACE ME with your max player count per box (note: split screen is still 1 device)  In the example of an 8 player game, this would be 1.>
-
-Sandbox=<Optional, REPLACE ME with the sandbox Id used for the title under development >
 
 [/Script/OnlineSubsystemPlayFab.PlayFabNetDriver]
 NetConnectionClassName="OnlineSubsystemPlayFab.PlayFabNetConnection"
@@ -81,6 +74,32 @@ InitialConnectTimeout=30.0
 +NetDriverDefinitions=(DefName="GameNetDriver",DriverClassName="OnlineSubsystemPlayFab.PlayFabNetDriver",DriverClassNameFallback="OnlineSubsystemUtils.IpNetDriver")
 ```
 
-This completes the setup of OSS required to be used in your game.
+## Platform Specific Considerations
+With all that done, we are nearly finished. There are only a few key platform-specific parameters left that must be set.  
 
+If you are developing games using GDK, define the platform services and, optionally, set your GDK sandbox:
+```
+[OnlineSubsystem]
+DefaultPlatformService=PlayFab
+NativePlatformService=GDK
 
+[OnlineSubsystemPlayFab]
+Sandbox=<Optional, REPLACE ME with the sandbox Id used for the title under development >
+```
+
+If you are developing games for Win64 with Steam, simply define your platform services:
+```
+[OnlineSubsystem]
+DefaultPlatformService=PlayFab
+NativePlatformService=Steam
+```
+	
+Finally, if your game makes use PlayFab's cross-platform networking support, define which platforms you'll permit to connect:
+```
+[/Script/OnlineSubsystemUtils.OnlineEngineInterfaceImpl]
+!CompatibleUniqueNetIdTypes=ClearArray
++CompatibleUniqueNetIdTypes=STEAM
++CompatibleUniqueNetIdTypes=GDK
+```
+
+This completes the setup of OSS required to be used in your game.  Good luck!
