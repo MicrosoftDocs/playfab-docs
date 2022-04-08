@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Getting started with Data Explorer basic mode
 
->[! IMPORTANT] 
+>[!IMPORTANT] 
 >The Data Explorer feature is in public preview. We anticipate ongoing changes to it as we continue gathering feedback 
 and optimizing for customer use.
 

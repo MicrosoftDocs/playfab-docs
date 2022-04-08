@@ -76,10 +76,10 @@ landingContent:
       - linkListType: tutorial
         links:
           - text: Set up for push notifications on Android Studio via PlayFab
-            url: /push-notifications/getting-started-android-studio-push-notifications.md
+            url: push-notifications/getting-started-android-studio-push-notifications.md
           - text: Send push notifications in players' preferred languages
-            url: /push-notifications/push-notification-templates.md
+            url: push-notifications/push-notification-templates.md
           - text: Send push notifications on Android games
-            url: /push-notifications/push-notifications-for-android.md
+            url: push-notifications/push-notifications-for-android.md
           - text: Send push notifications on iOS games
-            url: /push-notifications/push-notifications-for-ios.md
+            url: push-notifications/push-notifications-for-ios.md

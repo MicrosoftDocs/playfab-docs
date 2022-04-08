@@ -25,7 +25,7 @@ This guide helps you get started using Kusto Explorer along with Insights. After
    If you can sign in, then the account is set to use the Microsoft authentication provider.
 
 * ### Game Manager permissions for Insights
-   You need to assign your account a [user role](https://docs.microsoft.com/gaming/playfab/features/config/gamemanager/playfab-user-roles) with the following Game Manager permissions enabled:
+   You need to assign your account a [user role](/gaming/playfab/gamemanager/playfab-user-roles) with the following Game Manager permissions enabled:
    * Admin status.
    * Access to the Explorer tab and associated data.
    * Read and write access to Analytics data.
@@ -33,7 +33,7 @@ This guide helps you get started using Kusto Explorer along with Insights. After
    You can either create a new user role or add these permissions to an existing role.
 
 * ### Other prerequisites
-  * [Kusto.Explorer](https://docs.microsoft.com/azure/kusto/tools/kusto-explore)
+  * [Kusto.Explorer](/azure/data-explorer/kusto/tools/kusto-explorer)
 
 ## Connect with Kusto Explorer
 On your local machine, open Kusto.Explorer.
@@ -52,5 +52,5 @@ On your local machine, open Kusto.Explorer.
 
 ## Additional resources
 
-* [Kusto Explorer documentation](https://docs.microsoft.com/azure/kusto/tools/kusto-explorer)
+* [Kusto Explorer documentation](/azure/kusto/tools/kusto-explorer)
 * To learn about other tools to connect to Insights, see [Connecting external tools to Insights](index.md)

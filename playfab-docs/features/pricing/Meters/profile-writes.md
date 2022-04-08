@@ -19,588 +19,588 @@ The following APIs cause the Profile writes meter to increment.
 
 ## Admin APIs
 
-- [AddPlayerTag](https://docs.microsoft.com/rest/api/playfab/admin/playstream/addplayertag?view=playfab-rest)
+- [AddPlayerTag](/rest/api/playfab/admin/playstream/addplayertag?)
     Adds a given tag to a player profile. The tag's namespace is automatically generated based on the source of the tag.
 
-- [AddUserVirtualCurrency](https://docs.microsoft.com/rest/api/playfab/admin/player-item-management/adduservirtualcurrency?view=playfab-rest)
+- [AddUserVirtualCurrency](/rest/api/playfab/admin/player-item-management/adduservirtualcurrency?)
     Increments the specified virtual currency by the stated amount
 
-- [AddVirtualCurrencyTypes](https://docs.microsoft.com/rest/api/playfab/admin/title-wide-data-management/addvirtualcurrencytypes?view=playfab-rest)
+- [AddVirtualCurrencyTypes](/rest/api/playfab/admin/title-wide-data-management/addvirtualcurrencytypes?)
     Adds one or more virtual currencies to the set defined for the title. Virtual Currencies have a maximum value of 2,147,483,647 when granted to a player. Any value over that will be discarded.
 
-- [BanUsers](https://docs.microsoft.com/rest/api/playfab/admin/account-management/banusers?view=playfab-rest)
+- [BanUsers](/rest/api/playfab/admin/account-management/banusers?)
     Bans users by PlayFab ID with optional IP address, or MAC address for the provided game.
 
-- [CreateActionsOnPlayersInSegmentTask](https://docs.microsoft.com/rest/api/playfab/admin/scheduledtask/createactionsonplayersinsegmenttask?view=playfab-rest)
+- [CreateActionsOnPlayersInSegmentTask](/rest/api/playfab/admin/scheduledtask/createactionsonplayersinsegmenttask?)
     Create an ActionsOnPlayersInSegment task, which iterates through all players in a segment to execute action.
 
-- [CreatePlayerSharedSecret](https://docs.microsoft.com/rest/api/playfab/admin/authentication/createplayersharedsecret?view=playfab-rest)
+- [CreatePlayerSharedSecret](/rest/api/playfab/admin/authentication/createplayersharedsecret?)
     Creates a new Player Shared Secret Key. It may take up to 5 minutes for this key to become generally available after this API returns.
 
-- [CreatePlayerStatisticDefinition](https://docs.microsoft.com/rest/api/playfab/admin/player-data-management/createplayerstatisticdefinition?view=playfab-rest)
+- [CreatePlayerStatisticDefinition](/rest/api/playfab/admin/player-data-management/createplayerstatisticdefinition?)
     Adds a new player statistic configuration to the title, optionally allowing the developer to specify a reset interval and an aggregation method.
 
-- [DeleteMasterPlayerAccount](https://docs.microsoft.com/rest/api/playfab/admin/account-management/deletemasterplayeraccount?view=playfab-rest)
+- [DeleteMasterPlayerAccount](/rest/api/playfab/admin/account-management/deletemasterplayeraccount?)
     Removes a master player account entirely from all titles and deletes all associated data.
 
-- [DeletePlayer](https://docs.microsoft.com/rest/api/playfab/admin/account-management/deleteplayer?view=playfab-rest)
+- [DeletePlayer](/rest/api/playfab/admin/account-management/deleteplayer?)
     Removes a user's player account from a title and deletes all associated data
 
-- [DeletePlayerSharedSecret](https://docs.microsoft.com/rest/api/playfab/admin/authentication/deleteplayersharedsecret?view=playfab-rest)
+- [DeletePlayerSharedSecret](/rest/api/playfab/admin/authentication/deleteplayersharedsecret?)
     Deletes an existing Player Shared Secret Key. It may take up to 5 minutes for this delete to be reflected after this API returns.
 
-- [DeleteStore](https://docs.microsoft.com/rest/api/playfab/admin/title-wide-data-management/deletestore?view=playfab-rest)
+- [DeleteStore](/rest/api/playfab/admin/title-wide-data-management/deletestore?)
     Deletes an existing virtual item store.
 
-- [DeleteTitle](https://docs.microsoft.com/rest/api/playfab/admin/account-management/deletetitle?view=playfab-rest)
+- [DeleteTitle](/rest/api/playfab/admin/account-management/deletetitle?)
     Permanently deletes a title and all associated configuration.
 
-- [GrantItemsToUsers](https://docs.microsoft.com/rest/api/playfab/admin/player-item-management/grantitemstousers?view=playfab-rest)
+- [GrantItemsToUsers](/rest/api/playfab/admin/player-item-management/grantitemstousers?)
     Adds the specified items to the specified user inventories
 
-- [IncrementLimitedEditionItemAvailability](https://docs.microsoft.com/rest/api/playfab/admin/player-item-management/incrementlimitededitionitemavailability?view=playfab-rest)
+- [IncrementLimitedEditionItemAvailability](/rest/api/playfab/admin/player-item-management/incrementlimitededitionitemavailability?)
     Increases the global count for the given scarce resource.
 
-- [IncrementPlayerStatisticVersion](https://docs.microsoft.com/rest/api/playfab/admin/player-data-management/incrementplayerstatisticversion?view=playfab-rest)
+- [IncrementPlayerStatisticVersion](/rest/api/playfab/admin/player-data-management/incrementplayerstatisticversion?)
     Resets the indicated statistic, removing all player entries for it and backing up the old values.
 
-- [RefundPurchase](https://docs.microsoft.com/rest/api/playfab/admin/player-data-management/refundpurchase?view=playfab-rest)
+- [RefundPurchase](/rest/api/playfab/admin/player-data-management/refundpurchase?)
     Attempts to process an order refund through the origin'l real money payment provider.""
 
-- [RemovePlayerTag](https://docs.microsoft.com/rest/api/playfab/admin/playstream/removeplayertag?view=playfab-rest)
+- [RemovePlayerTag](/rest/api/playfab/admin/playstream/removeplayertag?)
     Remove a given tag from a player profile. The tag's namespace is automatically generated based on the source of the tag.
 
-- [RemoveVirtualCurrencyTypes](https://docs.microsoft.com/rest/api/playfab/admin/title-wide-data-management/removevirtualcurrencytypes?view=playfab-rest)
+- [RemoveVirtualCurrencyTypes](/rest/api/playfab/admin/title-wide-data-management/removevirtualcurrencytypes?)
     Removes one or more virtual currencies from the set defined for the title.
 
-- [ResetCharacterStatistics](https://docs.microsoft.com/rest/api/playfab/admin/characters/resetcharacterstatistics?view=playfab-rest)
+- [ResetCharacterStatistics](/rest/api/playfab/admin/characters/resetcharacterstatistics?)
     Completely removes all statistics for the specified character, for the current game.
 
-- [ResetUserStatistics](https://docs.microsoft.com/rest/api/playfab/admin/player-data-management/resetuserstatistics?view=playfab-rest)
+- [ResetUserStatistics](/rest/api/playfab/admin/player-data-management/resetuserstatistics?)
     Completely removes all statistics for the specified user, for the current game.
 
-- [ResolvePurchaseDispute](https://docs.microsoft.com/rest/api/playfab/admin/player-data-management/resolvepurchasedispute?view=playfab-rest)
+- [ResolvePurchaseDispute](/rest/api/playfab/admin/player-data-management/resolvepurchasedispute?)
     Attempts to resolve a dispute with the original order's payment provider.
     
-- [RevokeAllBansForUser](https://docs.microsoft.com/rest/api/playfab/admin/account-management/revokeallbansforuser?view=playfab-rest)
+- [RevokeAllBansForUser](/rest/api/playfab/admin/account-management/revokeallbansforuser?)
     Revoke all active bans for a user.
 
-- [RevokeBans](https://docs.microsoft.com/rest/api/playfab/admin/account-management/revokebans?view=playfab-rest)
+- [RevokeBans](/rest/api/playfab/admin/account-management/revokebans?)
     Revoke all active bans specified with BanId.
 
-- [RevokeInventoryItem](https://docs.microsoft.com/rest/api/playfab/admin/player-item-management/revokeinventoryitem?view=playfab-rest)
+- [RevokeInventoryItem](/rest/api/playfab/admin/player-item-management/revokeinventoryitem?)
     Revokes access to an item in a user's inventory
 
-- [RevokeInventoryItems](https://docs.microsoft.com/rest/api/playfab/admin/player-item-management/revokeinventoryitems?view=playfab-rest)
+- [RevokeInventoryItems](/rest/api/playfab/admin/player-item-management/revokeinventoryitems?)
     Revokes access for up to 25 items across multiple users and characters.
 
-- [SetCatalogItems](https://docs.microsoft.com/rest/api/playfab/admin/title-wide-data-management/setcatalogitems?view=playfab-rest)
+- [SetCatalogItems](/rest/api/playfab/admin/title-wide-data-management/setcatalogitems?)
     Creates the catalog configuration of all virtual goods for the specified catalog version.
 
-- [SetPlayerSecret](https://docs.microsoft.com/rest/api/playfab/admin/authentication/setplayersecret?view=playfab-rest)
+- [SetPlayerSecret](/rest/api/playfab/admin/authentication/setplayersecret?)
     Sets or resets the player's secret. Player secrets are used to sign API requests.
 
-- [SetPublishedRevision](https://docs.microsoft.com/rest/api/playfab/admin/server-side-cloud-script/setpublishedrevision?view=playfab-rest)
+- [SetPublishedRevision](/rest/api/playfab/admin/server-side-cloud-script/setpublishedrevision?)
     Sets the currently published revision of a title Cloud Script.
     
-- [SetPublisherData](https://docs.microsoft.com/rest/api/playfab/admin/shared-group-data/setpublisherdata?view=playfab-rest)
+- [SetPublisherData](/rest/api/playfab/admin/shared-group-data/setpublisherdata?)
     Updates the key-value store of custom publisher settings
 
-- [SetStoreItems](https://docs.microsoft.com/rest/api/playfab/admin/title-wide-data-management/setstoreitems?view=playfab-rest)
+- [SetStoreItems](/rest/api/playfab/admin/title-wide-data-management/setstoreitems?)
     Sets all the items in one virtual store.
 
-- [SetTitleData](https://docs.microsoft.com/rest/api/playfab/admin/title-wide-data-management/settitledata?view=playfab-rest)
+- [SetTitleData](/rest/api/playfab/admin/title-wide-data-management/settitledata?)
     Creates and updates the key-value store of custom title settings which can be read by the client.
 
-- [SetTitleInternalData](https://docs.microsoft.com/rest/api/playfab/admin/title-wide-data-management/settitleinternaldata?view=playfab-rest)
+- [SetTitleInternalData](/rest/api/playfab/admin/title-wide-data-management/settitleinternaldata?)
     Updates the key-value store of custom title settings which cannot be read by the client.
 
-- [SubtractUserVirtualCurrency](https://docs.microsoft.com/rest/api/playfab/admin/player-item-management/subtractuservirtualcurrency?view=playfab-rest)
+- [SubtractUserVirtualCurrency](/rest/api/playfab/admin/player-item-management/subtractuservirtualcurrency?)
     Decrements the specified virtual currency by the stated amount.
 
-- [UpdateBans](https://docs.microsoft.com/rest/api/playfab/admin/account-management/updatebans?view=playfab-rest)
+- [UpdateBans](/rest/api/playfab/admin/account-management/updatebans?)
     Updates information of a list of existing bans specified with Ban Ids.
 
-- [UpdateCatalogItems](https://docs.microsoft.com/rest/api/playfab/admin/title-wide-data-management/updatecatalogitems?view=playfab-rest)
+- [UpdateCatalogItems](/rest/api/playfab/admin/title-wide-data-management/updatecatalogitems?)
     Updates the catalog configuration for virtual goods in the specified catalog version.
 
-- [UpdatePlayerSharedSecret](https://docs.microsoft.com/rest/api/playfab/admin/authentication/updateplayersharedsecret?view=playfab-rest)
+- [UpdatePlayerSharedSecret](/rest/api/playfab/admin/authentication/updateplayersharedsecret?)
     Updates a existing Player Shared Secret Key. It may take up to 5 minutes for this update to become generally available after this API returns.
 
-- [UpdatePlayerStatisticDefinition](https://docs.microsoft.com/rest/api/playfab/admin/player-data-management/updateplayerstatisticdefinition?view=playfab-rest)
+- [UpdatePlayerStatisticDefinition](/rest/api/playfab/admin/player-data-management/updateplayerstatisticdefinition?)
     Updates a player statistic configuration for the title, optionally allowing the developer to specify a reset interval.
 
-- [UpdateRandomResultTables](https://docs.microsoft.com/rest/api/playfab/admin/title-wide-data-management/updaterandomresulttables?view=playfab-rest)
+- [UpdateRandomResultTables](/rest/api/playfab/admin/title-wide-data-management/updaterandomresulttables?)
     Updates the random drop table configuration for the title
 
-- [UpdateStoreItems](https://docs.microsoft.com/rest/api/playfab/admin/title-wide-data-management/updatestoreitems?view=playfab-rest)
+- [UpdateStoreItems](/rest/api/playfab/admin/title-wide-data-management/updatestoreitems?)
     Updates an existing virtual item store with new or modified items.
 
-- [UpdateUserData](https://docs.microsoft.com/rest/api/playfab/admin/player-data-management/updateuserdata?view=playfab-rest)
+- [UpdateUserData](/rest/api/playfab/admin/player-data-management/updateuserdata?)
     Updates the title-specific custom data for the user which is readable and writable by the client.
 
-- [UpdateUserInternalData](https://docs.microsoft.com/rest/api/playfab/admin/player-data-management/updateuserinternaldata?view=playfab-rest)
+- [UpdateUserInternalData](/rest/api/playfab/admin/player-data-management/updateuserinternaldata?)
     Updates the title-specific custom data for the user which cannot be accessed by the client.
 
-- [UpdateUserPublisherData](https://docs.microsoft.com/rest/api/playfab/admin/player-data-management/updateuserpublisherdata?view=playfab-rest)
+- [UpdateUserPublisherData](/rest/api/playfab/admin/player-data-management/updateuserpublisherdata?)
     Updates the publisher-specific custom data for the user which is readable and writable by the client.
 
-- [UpdateUserPublisherInternalData](https://docs.microsoft.com/rest/api/playfab/admin/player-data-management/updateuserpublisherinternaldata?view=playfab-rest)
+- [UpdateUserPublisherInternalData](/rest/api/playfab/admin/player-data-management/updateuserpublisherinternaldata?)
     Updates the publisher-specific custom data for the user which cannot be accessed by the client.
 
-- [UpdateUserPublisherReadOnlyData](https://docs.microsoft.com/rest/api/playfab/admin/player-data-management/updateuserpublisherreadonlydata?view=playfab-rest)
+- [UpdateUserPublisherReadOnlyData](/rest/api/playfab/admin/player-data-management/updateuserpublisherreadonlydata?)
     Updates the publisher-specific custom data for the user which can only be read by the client.
 
-- [UpdateUserReadOnlyData](https://docs.microsoft.com/rest/api/playfab/admin/player-data-management/updateuserreadonlydata?view=playfab-rest)
+- [UpdateUserReadOnlyData](/rest/api/playfab/admin/player-data-management/updateuserreadonlydata?)
     Updates the title-specific custom data for the user which can only be read by the client.
 
-- [UpdateUserTitleDisplayName](https://docs.microsoft.com/rest/api/playfab/admin/account-management/updateusertitledisplayname?view=playfab-rest)
+- [UpdateUserTitleDisplayName](/rest/api/playfab/admin/account-management/updateusertitledisplayname?)
     Updates the title specific display name for a user.
 
 ## Client APIs
 
-- [AcceptTrade](https://docs.microsoft.com/rest/api/playfab/client/trading/accepttrade?view=playfab-rest)
+- [AcceptTrade](/rest/api/playfab/client/trading/accepttrade?)
     Accepts an open trade (one that has not yet been accepted or cancelled), if the locally signed-in player is in the allowed player list for the trade, or it is open to all players. If the call is successful, the offered and accepted items will be swapped between the two players' inventories.
 
-- [AddFriend](https://docs.microsoft.com/rest/api/playfab/client/friend-list-management/addfriend?view=playfab-rest)
+- [AddFriend](/rest/api/playfab/client/friend-list-management/addfriend?)
     Adds the PlayFab user, based upon a match against a supplied unique identifier, to the friend list of the local user. At least one of FriendPlayFabId,FriendUsername,FriendEmail, or FriendTitleDisplayName should be initialized.
 
-- [AddGenericID](https://docs.microsoft.com/rest/api/playfab/server/account-management/addgenericid?view=playfab-rest)
+- [AddGenericID](/rest/api/playfab/server/account-management/addgenericid?)
     Adds the specified generic service identifier to the player's PlayFab account. This is designed to allow for a PlayFab ID lookup of any arbitrary service identifier a title wants to add. This identifier should never be used as authentication credentials, as the intent is that it is easily accessible by other players.
 
-- [AddOrUpdateContactEmail](https://docs.microsoft.com/rest/api/playfab/client/account-management/addorupdatecontactemail?view=playfab-rest)
+- [AddOrUpdateContactEmail](/rest/api/playfab/client/account-management/addorupdatecontactemail?)
     Adds or updates a contact email to the player's profile.
 
-- [AddSharedGroupMembers](https://docs.microsoft.com/rest/api/playfab/server/shared-group-data/addsharedgroupmembers?view=playfab-rest)
-    Adds users to the set of those able to update both the shared data, as well as the set of users in the group. Only users in the group (and the server) can add new members. Shared Groups are designed for sharing data between a very small number of players, see [Using Shared Group Data](https://docs.microsoft.com/gaming/playfab/features/social/groups/using-shared-group-data).
+- [AddSharedGroupMembers](/rest/api/playfab/server/shared-group-data/addsharedgroupmembers?)
+    Adds users to the set of those able to update both the shared data, as well as the set of users in the group. Only users in the group (and the server) can add new members. Shared Groups are designed for sharing data between a very small number of players, see [Using Shared Group Data](/gaming/playfab/features/social/groups/using-shared-group-data).
 
-- [AddUsernamePassword](https://docs.microsoft.com/rest/api/playfab/client/account-management/addusernamepassword?view=playfab-rest)
+- [AddUsernamePassword](/rest/api/playfab/client/account-management/addusernamepassword?)
     Adds playfab username/password auth to an existing account created via an anonymous auth method, e.g. automatic device ID login.
 
-- [AndroidDevicePushNotificationRegistration](https://docs.microsoft.com/rest/api/playfab/client/platform-specific-methods/androiddevicepushnotificationregistration?view=playfab-rest)
+- [AndroidDevicePushNotificationRegistration](/rest/api/playfab/client/platform-specific-methods/androiddevicepushnotificationregistration?)
     Registers the Android device to receive push notifications
 
-- [ConsumePSNEntitlements](https://docs.microsoft.com/rest/api/playfab/client/platform-specific-methods/consumepsnentitlements?view=playfab-rest)
+- [ConsumePSNEntitlements](/rest/api/playfab/client/platform-specific-methods/consumepsnentitlements?)
     Checks for any new consumable entitlements. If any are found, they are consumed and added as PlayFab items.
 
-- [ConsumeXboxEntitlements](https://docs.microsoft.com/rest/api/playfab/client/platform-specific-methods/consumexboxentitlements?view=playfab-rest)
+- [ConsumeXboxEntitlements](/rest/api/playfab/client/platform-specific-methods/consumexboxentitlements?)
     Grants the player's current entitlements from Xbox Live, consuming all availble items in Xbox and granting them to the player's PlayFab inventory. This call is idempotent and will not grant previously granted items to the player.
 
-- [CreateSharedGroup](https://docs.microsoft.com/rest/api/playfab/client/shared-group-data/createsharedgroup?view=playfab-rest)
-    Requests the creation of a shared group object, containing key/value pairs which may be updated by all members of the group. Upon creation, the current user will be the only member of the group. Shared Groups are designed for sharing data between a very small number of players. For more info, see [Using Shared Group Data](https://docs.microsoft.com/gaming/playfab/features/social/groups/using-shared-group-data).
+- [CreateSharedGroup](/rest/api/playfab/client/shared-group-data/createsharedgroup?)
+    Requests the creation of a shared group object, containing key/value pairs which may be updated by all members of the group. Upon creation, the current user will be the only member of the group. Shared Groups are designed for sharing data between a very small number of players. For more info, see [Using Shared Group Data](/gaming/playfab/features/social/groups/using-shared-group-data).
 
-- [GrantCharacterToUser](https://docs.microsoft.com/rest/api/playfab/client/characters/grantcharactertouser?view=playfab-rest)
+- [GrantCharacterToUser](/rest/api/playfab/client/characters/grantcharactertouser?)
     Grants the specified character type to the user. CharacterIds are not globally unique; characterId must be evaluated with the parent PlayFabId to guarantee uniqueness.
 
-- [LinkAndroidDeviceID](https://docs.microsoft.com/rest/api/playfab/client/account-management/linkandroiddeviceid?view=playfab-rest)
+- [LinkAndroidDeviceID](/rest/api/playfab/client/account-management/linkandroiddeviceid?)
     Links the Android device identifier to the user's PlayFab account
 
-- [LinkCustomID](https://docs.microsoft.com/rest/api/playfab/client/account-management/linkcustomid?view=playfab-rest)
+- [LinkCustomID](/rest/api/playfab/client/account-management/linkcustomid?)
     Links the custom identifier, generated by the title, to the user's PlayFab account.
 
-- [LinkFacebookAccount](https://docs.microsoft.com/rest/api/playfab/client/account-management/linkfacebookaccount?view=playfab-rest)
+- [LinkFacebookAccount](/rest/api/playfab/client/account-management/linkfacebookaccount?)
     Links the Facebook account associated with the provided Facebook access token to the user's PlayFab account.
 
-- [LinkFacebookInstantGamesId](https://docs.microsoft.com/rest/api/playfab/client/account-management/linkfacebookinstantgamesid?view=playfab-rest)
+- [LinkFacebookInstantGamesId](/rest/api/playfab/client/account-management/linkfacebookinstantgamesid?)
     Links the Facebook Instant Games Id to the user's PlayFab account.
 
-- [LinkGameCenterAccount](https://docs.microsoft.com/rest/api/playfab/client/account-management/linkgamecenteraccount?view=playfab-rest)
+- [LinkGameCenterAccount](/rest/api/playfab/client/account-management/linkgamecenteraccount?)
     Links the Game Center account associated with the provided Game Center ID to the user's PlayFab account.
 
-- [LinkGoogleAccount](https://docs.microsoft.com/rest/api/playfab/client/account-management/linkgoogleaccount?view=playfab-rest)
+- [LinkGoogleAccount](/rest/api/playfab/client/account-management/linkgoogleaccount?)
     Links the currently signed-in user account to their Google account, using their Google account credentials.
 
-- [LinkIOSDeviceID](https://docs.microsoft.com/rest/api/playfab/client/account-management/linkiosdeviceid?view=playfab-rest)
+- [LinkIOSDeviceID](/rest/api/playfab/client/account-management/linkiosdeviceid?)
     Links the vendor-specific iOS device identifier to the user's PlayFab account.
 
-- [LinkKongregate](https://docs.microsoft.com/rest/api/playfab/client/account-management/linkkongregate?view=playfab-rest)
+- [LinkKongregate](/rest/api/playfab/client/account-management/linkkongregate?)
     Links the Kongregate identifier to the user's PlayFab account.
 
-- [LinkNintendoSwitchDeviceId](https://docs.microsoft.com/rest/api/playfab/client/account-management/linknintendoswitchdeviceid?view=playfab-rest)
+- [LinkNintendoSwitchDeviceId](/rest/api/playfab/client/account-management/linknintendoswitchdeviceid?)
     Links the NintendoSwitchDeviceId to the user's PlayFab account.
 
-- [LinkOpenIdConnect](https://docs.microsoft.com/rest/api/playfab/client/account-management/linkopenidconnect?view=playfab-rest)
+- [LinkOpenIdConnect](/rest/api/playfab/client/account-management/linkopenidconnect?)
     Links an OpenID Connect account to a user's PlayFab account, based on an existing relationship between a title and an Open ID Connect provider and the OpenId Connect JWT from that provider.
 
-- [LinkPSNAccount](https://docs.microsoft.com/rest/api/playfab/client/account-management/linkpsnaccount?view=playfab-rest)
+- [LinkPSNAccount](/rest/api/playfab/client/account-management/linkpsnaccount?)
     Links the PlayStation Network account associated with the provided access code to the user's PlayFab account.
 
-- [LinkSteamAccount](https://docs.microsoft.com/rest/api/playfab/client/account-management/linksteamaccount?view=playfab-rest)
+- [LinkSteamAccount](/rest/api/playfab/client/account-management/linksteamaccount?)
     Links the Steam account associated with the provided Steam authentication ticket to the user's PlayFab account.
 
-- [LinkTwitch](https://docs.microsoft.com/rest/api/playfab/client/account-management/linktwitch?view=playfab-rest)
+- [LinkTwitch](/rest/api/playfab/client/account-management/linktwitch?)
     Links the Twitch account associated with the token to the user's PlayFab account.
 
-- [LinkWindowsHello](https://docs.microsoft.com/rest/api/playfab/client/account-management/linkwindowshello?view=playfab-rest)
+- [LinkWindowsHello](/rest/api/playfab/client/account-management/linkwindowshello?)
     Link Windows Hello authentication to the current PlayFab Account.
 
-- [LinkXboxAccount](https://docs.microsoft.com/rest/api/playfab/client/account-management/linkxboxaccount?view=playfab-rest)
+- [LinkXboxAccount](/rest/api/playfab/client/account-management/linkxboxaccount?)
     Links the Xbox Live account associated with the provided access code to the user's PlayFab account.
 
-- [OpenTrade](https://docs.microsoft.com/rest/api/playfab/client/trading/opentrade?view=playfab-rest)
+- [OpenTrade](/rest/api/playfab/client/trading/opentrade?)
     Opens a new outstanding trade. Note that a given item instance may only be in one open trade at a time.
 
-- [PurchaseItem](https://docs.microsoft.com/rest/api/playfab/client/player-item-management/purchaseitem?view=playfab-rest)
+- [PurchaseItem](/rest/api/playfab/client/player-item-management/purchaseitem?)
     Buys a single item with virtual currency. You must specify both the virtual currency to use to purchase, as well as what the client believes the price to be. This lets the server fail the purchase if the price has changed.
 
-- [PayForPurchase](https://docs.microsoft.com/rest/api/playfab/client/player-item-management/payforpurchase?view=playfab-rest)
+- [PayForPurchase](/rest/api/playfab/client/player-item-management/payforpurchase?)
     Selects a payment option for purchase order created via StartPurchase
 
-- [RegisterForIOSPushNotification](https://docs.microsoft.com/rest/api/playfab/client/platform-specific-methods/registerforiospushnotification?view=playfab-rest)
+- [RegisterForIOSPushNotification](/rest/api/playfab/client/platform-specific-methods/registerforiospushnotification?)
     Registers the iOS device to receive push notifications
 
-- [RegisterPlayFabUser](https://docs.microsoft.com/rest/api/playfab/client/authentication/registerplayfabuser?view=playfab-rest)
+- [RegisterPlayFabUser](/rest/api/playfab/client/authentication/registerplayfabuser?)
     Registers a new Playfab user account, returning a session identifier that can subsequently be used for API calls which require an authenticated user. You must supply either a username or an email address.
 
-- [RegisterWithWindowsHello](https://docs.microsoft.com/rest/api/playfab/client/authentication/registerwithwindowshello?view=playfab-rest)
+- [RegisterWithWindowsHello](/rest/api/playfab/client/authentication/registerwithwindowshello?)
     Registers a new PlayFab user account using Windows Hello authentication, returning a session ticket that can subsequently be used for API calls which require an authenticated user
 
-- [RemoveContactEmail](https://docs.microsoft.com/rest/api/playfab/client/account-management/removecontactemail?view=playfab-rest)
+- [RemoveContactEmail](/rest/api/playfab/client/account-management/removecontactemail?)
     Removes a contact email from the player's profile.
 
-- [RemoveFriend](https://docs.microsoft.com/rest/api/playfab/client/friend-list-management/removefriend?view=playfab-rest)
+- [RemoveFriend](/rest/api/playfab/client/friend-list-management/removefriend?)
     Removes a specified user from the friend list of the local user.
 
-- [RemoveGenericID](https://docs.microsoft.com/rest/api/playfab/client/account-management/removegenericid?view=playfab-rest)
+- [RemoveGenericID](/rest/api/playfab/client/account-management/removegenericid?)
     Removes the specified generic service identifier from the player's PlayFab account.
 
-- [RemoveSharedGroupMembers](https://docs.microsoft.com/rest/api/playfab/client/shared-group-data/removesharedgroupmembers?view=playfab-rest)
-    Removes users from the set of those able to update the shared data and the set of users in the group. Only users in the group can remove members. If as a result of the call, zero users remain with access, the group and its associated data will be deleted. Shared Groups are designed for sharing data between a very small number of players, see [Using Shared Group Data](https://docs.microsoft.com/gaming/playfab/features/social/groups/using-shared-group-data).
+- [RemoveSharedGroupMembers](/rest/api/playfab/client/shared-group-data/removesharedgroupmembers?)
+    Removes users from the set of those able to update the shared data and the set of users in the group. Only users in the group can remove members. If as a result of the call, zero users remain with access, the group and its associated data will be deleted. Shared Groups are designed for sharing data between a very small number of players, see [Using Shared Group Data](/gaming/playfab/features/social/groups/using-shared-group-data).
 
-- [ReportAdActivity](https://docs.microsoft.com/rest/api/playfab/client/advertising/reportadactivity?view=playfab-rest)
+- [ReportAdActivity](/rest/api/playfab/client/advertising/reportadactivity?)
     Report player's ad activity
 
-- [ReportDeviceInfo](https://docs.microsoft.com/rest/api/playfab/client/analytics/reportdeviceinfo?view=playfab-rest)
+- [ReportDeviceInfo](/rest/api/playfab/client/analytics/reportdeviceinfo?)
     Write a PlayStream event to describe the provided player device information. This API method is not designed to be called directly by developers. Each PlayFab client SDK will eventually report this information automatically.
 
-- [ReportPlayer](https://docs.microsoft.com/rest/api/playfab/client/account-management/reportplayer?view=playfab-rest)
+- [ReportPlayer](/rest/api/playfab/client/account-management/reportplayer?)
     Submit a report for another player (due to bad bahavior, etc.), so that customer service representatives for the title can take action concerning potentially toxic players.
 
-- [RestoreIOSPurchases](https://docs.microsoft.com/rest/api/playfab/client/platform-specific-methods/restoreiospurchases?view=playfab-rest)
+- [RestoreIOSPurchases](/rest/api/playfab/client/platform-specific-methods/restoreiospurchases?)
     Restores all in-app purchases based on the given restore receipt
 
-- [SetFriendTags](https://docs.microsoft.com/rest/api/playfab/client/friend-list-management/setfriendtags?view=playfab-rest)
+- [SetFriendTags](/rest/api/playfab/client/friend-list-management/setfriendtags?)
     Updates the tag list for a specified user in the friend list of the local user.
 
-- [SubtractUserVirtualCurrency](https://docs.microsoft.com/rest/api/playfab/client/player-item-management/subtractuservirtualcurrency?view=playfab-rest)
+- [SubtractUserVirtualCurrency](/rest/api/playfab/client/player-item-management/subtractuservirtualcurrency?)
     Decrements the user's balance of the specified virtual currency by the stated amount. It is possible to make a VC balance negative with this API.
 
-- [UnlinkAndroidDeviceID](https://docs.microsoft.com/rest/api/playfab/client/account-management/unlinkandroiddeviceid?view=playfab-rest)
+- [UnlinkAndroidDeviceID](/rest/api/playfab/client/account-management/unlinkandroiddeviceid?)
     Unlinks the related Android device identifier from the user's PlayFab account.
 
-- [UnlinkCustomID](https://docs.microsoft.com/rest/api/playfab/client/account-management/unlinkcustomid?view=playfab-rest)
+- [UnlinkCustomID](/rest/api/playfab/client/account-management/unlinkcustomid?)
     Unlinks the related custom identifier from the user's PlayFab account.
 
-- [UnlinkFacebookAccount](https://docs.microsoft.com/rest/api/playfab/client/account-management/unlinkfacebookaccount?view=playfab-rest)
+- [UnlinkFacebookAccount](/rest/api/playfab/client/account-management/unlinkfacebookaccount?)
     Unlinks the related Facebook account from the user's PlayFab account.
 
-- [UnlinkFacebookInstantGamesId](https://docs.microsoft.com/rest/api/playfab/client/account-management/unlinkfacebookinstantgamesid?view=playfab-rest)
+- [UnlinkFacebookInstantGamesId](/rest/api/playfab/client/account-management/unlinkfacebookinstantgamesid?)
     Unlinks the related Facebook Instant Game Ids from the user's PlayFab account.
 
-- [UnlinkGameCenterAccount](https://docs.microsoft.com/rest/api/playfab/client/account-management/unlinkgoogleaccount?view=playfab-rest)
+- [UnlinkGameCenterAccount](/rest/api/playfab/client/account-management/unlinkgoogleaccount?)
     Unlinks the related Game Center account from the user's PlayFab account.
 
-- [UnlinkGoogleAccount](https://docs.microsoft.com/rest/api/playfab/client/account-management/unlinkiosdeviceid?view=playfab-rest)
+- [UnlinkGoogleAccount](/rest/api/playfab/client/account-management/unlinkiosdeviceid?)
     Unlinks the related Google account from the user's PlayFab account (https://developers.google.com/android/reference/com/google/android/gms/auth/GoogleAuthUtil#public-methods).    
 
-- [UnlinkIOSDeviceID](https://docs.microsoft.com/rest/api/playfab/client/account-management/unlinkiosdeviceid?view=playfab-rest)
+- [UnlinkIOSDeviceID](/rest/api/playfab/client/account-management/unlinkiosdeviceid?)
     Unlinks the related iOS device identifier from the user's PlayFab account.
 
-- [UnlinkKongregate](https://docs.microsoft.com/rest/api/playfab/client/account-management/unlinkkongregate?view=playfab-rest)
+- [UnlinkKongregate](/rest/api/playfab/client/account-management/unlinkkongregate?)
     Unlinks the related Kongregate identifier from the user's PlayFab account.
 
-- [UnlinkNintendoSwitchDeviceId](https://docs.microsoft.com/rest/api/playfab/client/account-management/unlinknintendoswitchdeviceid?view=playfab-rest)
+- [UnlinkNintendoSwitchDeviceId](/rest/api/playfab/client/account-management/unlinknintendoswitchdeviceid?)
     Unlinks the related NintendoSwitchDeviceId from the user's PlayFab account.
 
-- [UnlinkOpenIdConnect](https://docs.microsoft.com/rest/api/playfab/client/account-management/unlinkopenidconnect?view=playfab-rest)
+- [UnlinkOpenIdConnect](/rest/api/playfab/client/account-management/unlinkopenidconnect?)
     Unlinks an OpenID Connect account from a user's PlayFab account, based on the connection ID of an existing relationship between a title and an Open ID Connect provider.
 
-- [UnlinkPSNAccount](https://docs.microsoft.com/rest/api/playfab/client/account-management/unlinkpsnaccount?view=playfab-rest)
+- [UnlinkPSNAccount](/rest/api/playfab/client/account-management/unlinkpsnaccount?)
     Unlinks the related PSN account from the user's PlayFab account.
 
-- [UnlinkSteamAccount](https://docs.microsoft.com/rest/api/playfab/client/account-management/unlinksteamaccount?view=playfab-rest)
+- [UnlinkSteamAccount](/rest/api/playfab/client/account-management/unlinksteamaccount?)
     Unlinks the related Steam account from the user's PlayFab account.
 
-- [UnlinkTwitch](https://docs.microsoft.com/rest/api/playfab/client/account-management/unlinktwitch?view=playfab-rest)
+- [UnlinkTwitch](/rest/api/playfab/client/account-management/unlinktwitch?)
     Unlinks the related Twitch account from the user's PlayFab account.
 
-- [UnlinkWindowsHello](https://docs.microsoft.com/rest/api/playfab/client/account-management/unlinkwindowshello?view=playfab-rest)
+- [UnlinkWindowsHello](/rest/api/playfab/client/account-management/unlinkwindowshello?)
     Unlink Windows Hello authentication from the current PlayFab Account.
 
-- [UnlinkXboxAccount](https://docs.microsoft.com/rest/api/playfab/client/account-management/unlinkxboxaccount?view=playfab-rest)
+- [UnlinkXboxAccount](/rest/api/playfab/client/account-management/unlinkxboxaccount?)
     Unlinks the related Xbox Live account from the user's PlayFab account.
 
-- [UnlockContainerInstance](https://docs.microsoft.com/rest/api/playfab/client/player-item-management/unlockcontainerinstance?view=playfab-rest)
+- [UnlockContainerInstance](/rest/api/playfab/client/player-item-management/unlockcontainerinstance?)
     Opens the specified container, with the specified key (when required), and returns the contents of the opened container. If the container (and key when relevant) are consumable (RemainingUses > 0), their RemainingUses will be decremented, consistent with the operation of ConsumeItem.
 
-- [UnlockContainerItem](https://docs.microsoft.com/rest/api/playfab/client/player-item-management/unlockcontaineritem?view=playfab-rest)
+- [UnlockContainerItem](/rest/api/playfab/client/player-item-management/unlockcontaineritem?)
     Searches target inventory for an ItemInstance matching the given CatalogItemId, if necessary unlocks it using an appropriate key, and returns the contents of the opened container. If the container (and key when relevant) are consumable (RemainingUses > 0), their RemainingUses will be decremented, consistent with the operation of ConsumeItem.
 
-- [UpdateAvatarUrl](https://docs.microsoft.com/rest/api/playfab/client/account-management/updateavatarurl?view=playfab-rest)
+- [UpdateAvatarUrl](/rest/api/playfab/client/account-management/updateavatarurl?)
     Update the avatar URL of the player.
 
-- [UpdateCharacterData](https://docs.microsoft.com/rest/api/playfab/client/character-data/updatecharacterdata?view=playfab-rest)
+- [UpdateCharacterData](/rest/api/playfab/client/character-data/updatecharacterdata?)
     Creates and updates the title-specific custom data for the user's character which is readable and writable by the client
 
-- [UpdateCharacterStatistics](https://docs.microsoft.com/rest/api/playfab/client/characters/updatecharacterstatistics?view=playfab-rest)
+- [UpdateCharacterStatistics](/rest/api/playfab/client/characters/updatecharacterstatistics?)
     Updates the values of the specified title-specific statistics for the specific character. By default, clients are not permitted to update statistics. Developers may override this setting in the Game Manager > Settings > API Features.
 
-- [UpdatePlayerStatistics](https://docs.microsoft.com/rest/api/playfab/client/player-data-management/updateplayerstatistics?view=playfab-rest)
+- [UpdatePlayerStatistics](/rest/api/playfab/client/player-data-management/updateplayerstatistics?)
     Updates the values of the specified title-specific statistics for the user. By default, clients are not permitted to update statistics. Developers may override this setting in the Game Manager > Settings > API Features.
 
-- [UpdateSharedGroupData](https://docs.microsoft.com/rest/api/playfab/client/shared-group-data/updatesharedgroupdata?view=playfab-rest)
-    Adds, updates, and removes data keys for a shared group object. If the permission is set to Public, all fields updated or added in this call will be readable by users not in the group. By default, data permissions are set to Private. Regardless of the permission setting, only members of the group can update the data. Shared Groups are designed for sharing data between a very small number of players, see [Using Shared Group Data](https://docs.microsoft.com/gaming/playfab/features/social/groups/using-shared-group-data).
+- [UpdateSharedGroupData](/rest/api/playfab/client/shared-group-data/updatesharedgroupdata?)
+    Adds, updates, and removes data keys for a shared group object. If the permission is set to Public, all fields updated or added in this call will be readable by users not in the group. By default, data permissions are set to Private. Regardless of the permission setting, only members of the group can update the data. Shared Groups are designed for sharing data between a very small number of players, see [Using Shared Group Data](/gaming/playfab/features/social/groups/using-shared-group-data).
 
-- [UpdateUserData](https://docs.microsoft.com/rest/api/playfab/client/player-data-management/updateuserdata?view=playfab-rest)
+- [UpdateUserData](/rest/api/playfab/client/player-data-management/updateuserdata?)
 Creates and updates the title-specific custom data for the user which is readable and writable by the client.
 
-- [UpdateUserPublisherData](https://docs.microsoft.com/rest/api/playfab/client/player-data-management/updateuserpublisherdata?view=playfab-rest)
+- [UpdateUserPublisherData](/rest/api/playfab/client/player-data-management/updateuserpublisherdata?)
     Creates and updates the publisher-specific custom data for the user which is readable and writable by the client.
 
-- [UpdateUserTitleDisplayName](https://docs.microsoft.com/rest/api/playfab/client/account-management/updateusertitledisplayname?view=playfab-rest)
+- [UpdateUserTitleDisplayName](/rest/api/playfab/client/account-management/updateusertitledisplayname?)
     Updates the title specific display name for the user
 
 ## Data APIs
 
-- [SetObjects](https://docs.microsoft.com/rest/api/playfab/data/object/setobjects?view=playfab-rest)
+- [SetObjects](/rest/api/playfab/data/object/setobjects?)
     Sets objects on an entity's profile.
 
 ## Groups APIs
 
-- [AcceptGroupApplication](https://docs.microsoft.com/rest/api/playfab/groups/groups/acceptgroupapplication?view=playfab-rest)
+- [AcceptGroupApplication](/rest/api/playfab/groups/groups/acceptgroupapplication?)
     Accepts an outstanding invitation to to join a group
 
-- [AcceptGroupInvitation](https://docs.microsoft.com/rest/api/playfab/groups/groups/acceptgroupinvitation?view=playfab-rest)
+- [AcceptGroupInvitation](/rest/api/playfab/groups/groups/acceptgroupinvitation?)
     Accepts an invitation to join a group.
 
-- [AddMembers](https://docs.microsoft.com/rest/api/playfab/groups/groups/addmembers?view=playfab-rest)
+- [AddMembers](/rest/api/playfab/groups/groups/addmembers?)
     Adds members to a group or role.
 
-- [ApplyToGroup](https://docs.microsoft.com/rest/api/playfab/groups/groups/applytogroup?view=playfab-rest)
+- [ApplyToGroup](/rest/api/playfab/groups/groups/applytogroup?)
     Applies to join a group.
 
-- [BlockEntity](https://docs.microsoft.com/rest/api/playfab/groups/groups/blockentity?view=playfab-rest)
+- [BlockEntity](/rest/api/playfab/groups/groups/blockentity?)
     Blocks a list of entities from joining a group.
 
-- [ChangeMemberRole](https://docs.microsoft.com/rest/api/playfab/groups/groups/changememberrole?view=playfab-rest)
+- [ChangeMemberRole](/rest/api/playfab/groups/groups/changememberrole?)
     Changes the role membership of a list of entities from one role to another.
 
-- [CreateGroup](https://docs.microsoft.com/rest/api/playfab/groups/groups/creategroup?view=playfab-rest)
+- [CreateGroup](/rest/api/playfab/groups/groups/creategroup?)
     Creates a new group.
 
-- [CreateRole](https://docs.microsoft.com/rest/api/playfab/groups/groups/createrole?view=playfab-rest)
+- [CreateRole](/rest/api/playfab/groups/groups/createrole?)
     Creates a new group role.
 
-- [DeleteGroup](https://docs.microsoft.com/rest/api/playfab/groups/groups/deletegroup?view=playfab-rest)
+- [DeleteGroup](/rest/api/playfab/groups/groups/deletegroup?)
     Deletes a group and all roles, invitations, join requests, and blocks associated with it.
 
-- [DeleteRole](https://docs.microsoft.com/rest/api/playfab/groups/groups/deleterole?view=playfab-rest)
+- [DeleteRole](/rest/api/playfab/groups/groups/deleterole?)
     Deletes an existing role in a group.
 
-- [InviteToGroup](https://docs.microsoft.com/rest/api/playfab/groups/groups/invitetogroup?view=playfab-rest)
+- [InviteToGroup](/rest/api/playfab/groups/groups/invitetogroup?)
     Invites a player to join a group,
 
-- [RemoveGroupApplication](https://docs.microsoft.com/rest/api/playfab/groups/groups/removegroupapplication?view=playfab-rest)
+- [RemoveGroupApplication](/rest/api/playfab/groups/groups/removegroupapplication?)
     Removes an application to join a group.
 
-- [RemoveGroupInvitation](https://docs.microsoft.com/rest/api/playfab/groups/groups/removegroupinvitation?view=playfab-rest)
+- [RemoveGroupInvitation](/rest/api/playfab/groups/groups/removegroupinvitation?)
     Removes an invitation join a group.
 
-- [RemoveMembers](https://docs.microsoft.com/rest/api/playfab/groups/groups/removemembers?view=playfab-rest)
+- [RemoveMembers](/rest/api/playfab/groups/groups/removemembers?)
     Removes members from a group.
 
-- [UnblockEntity](https://docs.microsoft.com/rest/api/playfab/groups/groups/unblockentity?view=playfab-rest)
+- [UnblockEntity](/rest/api/playfab/groups/groups/unblockentity?)
     Unblocks a list of entities from joining a group.
 
-- [UpdateGroup](https://docs.microsoft.com/rest/api/playfab/groups/groups/updategroup?view=playfab-rest)
+- [UpdateGroup](/rest/api/playfab/groups/groups/updategroup?)
     Updates non-membership data about a group.
 
-- [UpdateRole](https://docs.microsoft.com/rest/api/playfab/groups/groups/updaterole?view=playfab-rest)
+- [UpdateRole](/rest/api/playfab/groups/groups/updaterole?)
     Updates metadata about a role.
 
 ## Profile APIs
 
-- [SetGlobalPolicy](https://docs.microsoft.com/rest/api/playfab/profiles/account-management/setglobalpolicy?view=playfab-rest)
+- [SetGlobalPolicy](/rest/api/playfab/profiles/account-management/setglobalpolicy?)
     Sets the global title access policy.
 
-- [SetProfileLanguage](Uhttps://docs.microsoft.com/rest/api/playfab/profiles/account-management/setprofilelanguage?view=playfab-rest)
+- [SetProfileLanguage](/rest/api/playfab/profiles/account-management/setprofilelanguage?)
     Updates the entity's language. The precedence hierarchy for communication to the player is Title Player Account language, Master Player Account language, and then title default language if the first two aren't set or supported.
 
-- [SetProfilePolicy](https://docs.microsoft.com/rest/api/playfab/profiles/account-management/setprofilepolicy?view=playfab-rest)
+- [SetProfilePolicy](/rest/api/playfab/profiles/account-management/setprofilepolicy?)
     Sets the profiles access policy.
 
 ## Server APIs
 
-- [AddCharacterVirtualCurrency](https://docs.microsoft.com/rest/api/playfab/server/player-item-management/addcharactervirtualcurrency?view=playfab-rest)
+- [AddCharacterVirtualCurrency](/rest/api/playfab/server/player-item-management/addcharactervirtualcurrency?)
     Increments the character's balance of the specified virtual currency by the stated amount.
 
-- [AddFriend](https://docs.microsoft.com/rest/api/playfab/server/friend-list-management/addfriend?view=playfab-rest)
+- [AddFriend](/rest/api/playfab/server/friend-list-management/addfriend?)
     Adds the Friend user to the friendlist of the user with PlayFabId. At least one of FriendPlayFabId,FriendUsername,FriendEmail, or FriendTitleDisplayName should be initialized.
 
-- [AddGenericID](https://docs.microsoft.com/rest/api/playfab/server/account-management/addgenericid?view=playfab-rest)
+- [AddGenericID](/rest/api/playfab/server/account-management/addgenericid?)
     Adds the specified generic service identifier to the player's PlayFab account. This is designed to allow for a PlayFab ID lookup of any arbitrary service identifier a title wants to add. This identifier should never be used as authentication credentials, as the intent is that it is easily accessible by other players.
 
-- [AddPlayerTag](https://docs.microsoft.com/rest/api/playfab/server/playstream/addplayertag?view=playfab-rest)
+- [AddPlayerTag](/rest/api/playfab/server/playstream/addplayertag?)
     Adds a given tag to a player profile. The tag's namespace is automatically generated based on the source of the tag.
 
-- [AddSharedGroupMembers](https://docs.microsoft.com/rest/api/playfab/server/shared-group-data/addsharedgroupmembers?view=playfab-rest)
-    Adds users to the set of those able to update both the shared data, as well as the set of users in the group. Only users in the group (and the server) can add new members. Shared Groups are designed for sharing data between a very small number of players, see [Using Shared Group Data](https://docs.microsoft.com/gaming/playfab/features/social/groups/using-shared-group-data).
+- [AddSharedGroupMembers](/rest/api/playfab/server/shared-group-data/addsharedgroupmembers?)
+    Adds users to the set of those able to update both the shared data, as well as the set of users in the group. Only users in the group (and the server) can add new members. Shared Groups are designed for sharing data between a very small number of players, see [Using Shared Group Data](/gaming/playfab/features/social/groups/using-shared-group-data).
 
-- [AddUserVirtualCurrency](https://docs.microsoft.com/rest/api/playfab/server/player-item-management/adduservirtualcurrency?view=playfab-rest)
+- [AddUserVirtualCurrency](/rest/api/playfab/server/player-item-management/adduservirtualcurrency?)
     Increments the user's balance of the specified virtual currency by the stated amount.
 
-- [AwardSteamAchievement](https://docs.microsoft.com/rest/api/playfab/server/platform-specific-methods/awardsteamachievement?view=playfab-rest)
+- [AwardSteamAchievement](/rest/api/playfab/server/platform-specific-methods/awardsteamachievement?)
     Awards the specified users the specified Steam achievements.
 
-- [BanUsers](https://docs.microsoft.com/rest/api/playfab/server/account-management/banusers?view=playfab-rest)
+- [BanUsers](/rest/api/playfab/server/account-management/banusers?)
     Bans users by PlayFab ID with optional IP address, or MAC address for the provided game.
 
-- [ConsumeItem](https://docs.microsoft.com/rest/api/playfab/server/player-item-management/consumeitem?view=playfab-rest)
+- [ConsumeItem](/rest/api/playfab/server/player-item-management/consumeitem?)
     Consume uses of a consumable item. When all uses are consumed, it will be removed from the player's inventory.
 
-- [CreateSharedGroup](https://docs.microsoft.com/rest/api/playfab/server/shared-group-data/createsharedgroup?view=playfab-rest)
-    Requests the creation of a shared group object, containing key/value pairs which may be updated by all members of the group. When created by a server, the group will initially have no members. Shared Groups are designed for sharing data between a very small number of players, see [Using Shared Group Data](https://docs.microsoft.com/gaming/playfab/features/social/groups/using-shared-group-data).
+- [CreateSharedGroup](/rest/api/playfab/server/shared-group-data/createsharedgroup?)
+    Requests the creation of a shared group object, containing key/value pairs which may be updated by all members of the group. When created by a server, the group will initially have no members. Shared Groups are designed for sharing data between a very small number of players, see [Using Shared Group Data](/gaming/playfab/features/social/groups/using-shared-group-data).
 
-- [DeleteCharacterFromUser](https://docs.microsoft.com/rest/api/playfab/server/characters/deletecharacterfromuser?view=playfab-rest)
+- [DeleteCharacterFromUser](/rest/api/playfab/server/characters/deletecharacterfromuser?)
     Deletes the specific character ID from the specified user.
 
-- [DeleteSharedGroup](https://docs.microsoft.com/rest/api/playfab/server/shared-group-data/deletesharedgroup?view=playfab-rest)
-    Deletes a shared group, freeing up the shared group ID to be reused for a new group. Shared Groups are designed for sharing data between a very small number of players, see [Using Shared Group Data](https://docs.microsoft.com/gaming/playfab/features/social/groups/using-shared-group-data).
+- [DeleteSharedGroup](/rest/api/playfab/server/shared-group-data/deletesharedgroup?)
+    Deletes a shared group, freeing up the shared group ID to be reused for a new group. Shared Groups are designed for sharing data between a very small number of players, see [Using Shared Group Data](/gaming/playfab/features/social/groups/using-shared-group-data).
 
-- [GrantCharacterToUser](https://docs.microsoft.com/rest/api/playfab/server/characters/grantcharactertouser?view=playfab-rest)
+- [GrantCharacterToUser](/rest/api/playfab/server/characters/grantcharactertouser?)
     Grants the specified character type to the user. CharacterIds are not globally unique; characterId must be evaluated with the parent PlayFabId to guarantee uniqueness.
 
-- [GrantItemsToCharacter](https://docs.microsoft.com/rest/api/playfab/server/player-item-management/grantitemstocharacter?view=playfab-rest)
+- [GrantItemsToCharacter](/rest/api/playfab/server/player-item-management/grantitemstocharacter?)
     Adds the specified items to the specified character's inventory.
 
-- [GrantItemsToUser](https://docs.microsoft.com/rest/api/playfab/server/player-item-management/grantitemstouser?view=playfab-rest)
+- [GrantItemsToUser](/rest/api/playfab/server/player-item-management/grantitemstouser?)
     Adds the specified items to the specified user's inventory.
 
-- [GrantItemsToUsers](https://docs.microsoft.com/rest/api/playfab/server/player-item-management/grantitemstousers?view=playfab-rest)
+- [GrantItemsToUsers](/rest/api/playfab/server/player-item-management/grantitemstousers?)
     Adds the specified items to the specified user inventories,
 
-- [LinkServerCustomId](https://docs.microsoft.com/rest/api/playfab/server/account-management/linkservercustomid?view=playfab-rest)
+- [LinkServerCustomId](/rest/api/playfab/server/account-management/linkservercustomid?)
     Links the custom server identifier, generated by the title, to the user's PlayFab account.
 
-- [LinkXboxAccount](https://docs.microsoft.com/rest/api/playfab/server/account-management/linkxboxaccount?view=playfab-rest)
+- [LinkXboxAccount](/rest/api/playfab/server/account-management/linkxboxaccount?)
     Links the Xbox Live account associated with the provided access code to the user's PlayFab account.
 
-- [ModifyItemUses](https://docs.microsoft.com/rest/api/playfab/server/player-item-management/modifyitemuses?view=playfab-rest)
+- [ModifyItemUses](/rest/api/playfab/server/player-item-management/modifyitemuses?)
     Modifies the number of remaining uses of a player's inventory item.
 
-- [MoveItemToCharacterFromCharacter](https://docs.microsoft.com/rest/api/playfab/server/player-item-management/moveitemtocharacterfromcharacter?view=playfab-rest)
+- [MoveItemToCharacterFromCharacter](/rest/api/playfab/server/player-item-management/moveitemtocharacterfromcharacter?)
     Moves an item from a character's inventory into another of the users's character's inventory.
 
-- [MoveItemToCharacterFromUser](https://docs.microsoft.com/rest/api/playfab/server/player-item-management/moveitemtocharacterfromuser?view=playfab-rest)
+- [MoveItemToCharacterFromUser](/rest/api/playfab/server/player-item-management/moveitemtocharacterfromuser?)
     Moves an item from a user's inventory into their character's inventory.
 
-- [MoveItemToUserFromCharacter](https://docs.microsoft.com/rest/api/playfab/server/player-item-management/moveitemtouserfromcharacter?view=playfab-rest)
+- [MoveItemToUserFromCharacter](/rest/api/playfab/server/player-item-management/moveitemtouserfromcharacter?)
     Moves an item from a character's inventory into the owning user's inventory.
 
-- [NotifyMatchmakerPlayerLeft](https://docs.microsoft.com/rest/api/playfab/server/matchmaking/notifymatchmakerplayerleft?view=playfab-rest)
+- [NotifyMatchmakerPlayerLeft](/rest/api/playfab/server/matchmaking/notifymatchmakerplayerleft?)
     Informs the PlayFab match-making service that the user specified has left the Game Server Instance.
 
-- [RedeemCoupon](https://docs.microsoft.com/rest/api/playfab/server/player-item-management/redeemcoupon?view=playfab-rest)
+- [RedeemCoupon](/rest/api/playfab/server/player-item-management/redeemcoupon?)
     Adds the virtual goods associated with the coupon to the user's inventory. Coupons can be generated via the Economy->Catalogs tab in the PlayFab Game Manager.
 
-- [RedeemMatchmakerTicket](https://docs.microsoft.com/rest/api/playfab/server/matchmaking/redeemmatchmakerticket?view=playfab-rest)
+- [RedeemMatchmakerTicket](/rest/api/playfab/server/matchmaking/redeemmatchmakerticket?)
     Validates a Game Server session ticket and returns details about the user.
 
-- [RemoveFriend](https://docs.microsoft.com/rest/api/playfab/server/friend-list-management/removefriend?view=playfab-rest)
+- [RemoveFriend](/rest/api/playfab/server/friend-list-management/removefriend?)
     Removes the specified friend from the user's friend list.
 
-- [RemoveGenericID](https://docs.microsoft.com/rest/api/playfab/server/account-management/removegenericid?view=playfab-rest)
+- [RemoveGenericID](/rest/api/playfab/server/account-management/removegenericid?)
     Removes the specified generic service identifier from the player's PlayFab account.
 
-- [RemovePlayerTag](https://docs.microsoft.com/rest/api/playfab/server/playstream/removeplayertag?view=playfab-rest)
+- [RemovePlayerTag](/rest/api/playfab/server/playstream/removeplayertag?)
     Remove a given tag from a player profile. The tag's namespace is automatically generated based on the source of the tag.
 
-- [RemoveSharedGroupMembers](https://docs.microsoft.com/rest/api/playfab/server/shared-group-data/removesharedgroupmembers?view=playfab-rest)
-    Removes users from the set of those able to update the shared data and the set of users in the group. Only users in the group can remove members. If as a result of the call, zero users remain with access, the group and its associated data will be deleted. Shared Groups are designed for sharing data between a very small number of players, see [Using Shared Group Data](https://docs.microsoft.com/gaming/playfab/features/social/groups/using-shared-group-data).
+- [RemoveSharedGroupMembers](/rest/api/playfab/server/shared-group-data/removesharedgroupmembers?)
+    Removes users from the set of those able to update the shared data and the set of users in the group. Only users in the group can remove members. If as a result of the call, zero users remain with access, the group and its associated data will be deleted. Shared Groups are designed for sharing data between a very small number of players, see [Using Shared Group Data](/gaming/playfab/features/social/groups/using-shared-group-data).
 
-- [RevokeAllBansForUser](https://docs.microsoft.com/rest/api/playfab/server/account-management/revokeallbansforuser?view=playfab-rest)
+- [RevokeAllBansForUser](/rest/api/playfab/server/account-management/revokeallbansforuser?)
     Revoke all active bans for a user.
 
-- [RevokeBans](https://docs.microsoft.com/rest/api/playfab/server/account-management/revokebans?view=playfab-rest)
+- [RevokeBans](/rest/api/playfab/server/account-management/revokebans?)
     Revoke all active bans specified with BanId.
 
-- [RevokeInventoryItem](https://docs.microsoft.com/rest/api/playfab/server/player-item-management/revokeinventoryitem?view=playfab-rest)
+- [RevokeInventoryItem](/rest/api/playfab/server/player-item-management/revokeinventoryitem?)
     Revokes access to an item in a user's inventory.    
 
-- [RevokeInventoryItems](https://docs.microsoft.com/rest/api/playfab/server/player-item-management/revokeinventoryitems?view=playfab-rest)
+- [RevokeInventoryItems](/rest/api/playfab/server/player-item-management/revokeinventoryitems?)
     Revokes access for up to 25 items across multiple users and characters.
 
-- [SetFriendTags](https://docs.microsoft.com/rest/api/playfab/server/friend-list-management/setfriendtags?view=playfab-rest)
+- [SetFriendTags](/rest/api/playfab/server/friend-list-management/setfriendtags?)
     Updates the tag list for a specified user in the friend list of another user.
 
-- [SetPlayerSecret](https://docs.microsoft.com/rest/api/playfab/server/authentication/setplayersecret?view=playfab-rest)
+- [SetPlayerSecret](/rest/api/playfab/server/authentication/setplayersecret?)
     Sets the player's secret if it is not already set. Player secrets are used to sign API requests. To reset a player's secret use the Admin or Server API method SetPlayerSecret.
 
-- [SetPublisherData](https://docs.microsoft.com/rest/api/playfab/server/title-wide-data-management/setpublisherdata?view=playfab-rest)
+- [SetPublisherData](/rest/api/playfab/server/title-wide-data-management/setpublisherdata?)
     Updates the key-value store of custom publisher settings.
 
-- [SetTitleData](https://docs.microsoft.com/rest/api/playfab/server/title-wide-data-management/settitledata?view=playfab-rest)
-    https://docs.microsoft.com/rest/api/playfab/server/title-wide-data-management/setpublisherdata?view=playfab-rest
+- [SetTitleData](/rest/api/playfab/server/title-wide-data-management/settitledata?)
+    /rest/api/playfab/server/title-wide-data-management/setpublisherdata?
 
-- [SetTitleInternalData](https://docs.microsoft.com/rest/api/playfab/server/title-wide-data-management/settitleinternaldata?view=playfab-rest)
+- [SetTitleInternalData](/rest/api/playfab/server/title-wide-data-management/settitleinternaldata?)
     Updates the key-value store of custom title settings
 
-- [SubtractCharacterVirtualCurrency](https://docs.microsoft.com/rest/api/playfab/server/player-item-management/subtractcharactervirtualcurrency?view=playfab-rest)
+- [SubtractCharacterVirtualCurrency](/rest/api/playfab/server/player-item-management/subtractcharactervirtualcurrency?)
     Decrements the character's balance of the specified virtual currency by the stated amount. It is possible to make a VC balance negative with this API.
 
-- [SubtractUserVirtualCurrency](https://docs.microsoft.com/rest/api/playfab/server/player-item-management/subtractuservirtualcurrency?view=playfab-rest)
+- [SubtractUserVirtualCurrency](/rest/api/playfab/server/player-item-management/subtractuservirtualcurrency?)
     Decrements the user's balance of the specified virtual currency by the stated amount. It is possible to make a VC balance negative with this API.
 
-- [UnlinkServerCustomId](https://docs.microsoft.com/rest/api/playfab/server/account-management/unlinkservercustomid?view=playfab-rest)
+- [UnlinkServerCustomId](/rest/api/playfab/server/account-management/unlinkservercustomid?)
     Unlinks the custom server identifier from the user's PlayFab account.
 
-- [UnlinkXboxAccount](https://docs.microsoft.com/rest/api/playfab/server/account-management/unlinkxboxaccount?view=playfab-rest)
+- [UnlinkXboxAccount](/rest/api/playfab/server/account-management/unlinkxboxaccount?)
     Unlinks the related Xbox Live account from the user's PlayFab account.
 
-- [UnlockContainerInstance](https://docs.microsoft.com/rest/api/playfab/server/player-item-management/unlockcontainerinstance?view=playfab-rest)
+- [UnlockContainerInstance](/rest/api/playfab/server/player-item-management/unlockcontainerinstance?)
     Opens a specific container (ContainerItemInstanceId), with a specific key (KeyItemInstanceId, when required), and returns the contents of the opened container. If the container (and key when relevant) are consumable (RemainingUses > 0), their RemainingUses will be decremented, consistent with the operation of ConsumeItem.
 
-- [UnlockContainerItem](https://docs.microsoft.com/rest/api/playfab/server/player-item-management/unlockcontaineritem?view=playfab-rest)
+- [UnlockContainerItem](/rest/api/playfab/server/player-item-management/unlockcontaineritem?)
     Searches Player or Character inventory for any ItemInstance matching the given CatalogItemId, if necessary unlocks it using any appropriate key, and returns the contents of the opened container. If the container (and key when relevant) are consumable (RemainingUses > 0), their RemainingUses will be decremented, consistent with the operation of ConsumeItem.
 
-- [UpdateAvatarUrl](https://docs.microsoft.com/rest/api/playfab/server/account-management/updateavatarurl?view=playfab-rest)
+- [UpdateAvatarUrl](/rest/api/playfab/server/account-management/updateavatarurl?)
     Update the avatar URL of the specified player.
 
-- [UpdateBans](https://docs.microsoft.com/rest/api/playfab/server/account-management/updatebans?view=playfab-rest)
+- [UpdateBans](/rest/api/playfab/server/account-management/updatebans?)
     Updates information of a list of existing bans specified with Ban Ids.
 
-- [UpdateCharacterData](https://docs.microsoft.com/rest/api/playfab/server/character-data/updatecharacterdata?view=playfab-rest)
+- [UpdateCharacterData](/rest/api/playfab/server/character-data/updatecharacterdata?)
     Updates the title-specific custom data for the user's character which is readable and writable by the client.
 
-- [UpdateCharacterInternalData](https://docs.microsoft.com/rest/api/playfab/server/character-data/updatecharacterinternaldata?view=playfab-rest)
+- [UpdateCharacterInternalData](/rest/api/playfab/server/character-data/updatecharacterinternaldata?)
     Updates the title-specific custom data for the user's character which cannot be accessed by the client.
 
-- [UpdateCharacterReadOnlyData](https://docs.microsoft.com/rest/api/playfab/server/character-data/updatecharacterreadonlydata?view=playfab-rest)
+- [UpdateCharacterReadOnlyData](/rest/api/playfab/server/character-data/updatecharacterreadonlydata?)
     Updates the title-specific custom data for the user's character which can only be read by the client.
 
-- [UpdateCharacterStatistics](https://docs.microsoft.com/rest/api/playfab/server/characters/updatecharacterstatistics?view=playfab-rest)
+- [UpdateCharacterStatistics](/rest/api/playfab/server/characters/updatecharacterstatistics?)
     Updates the values of the specified title-specific statistics for the specific character.
 
-- [UpdatePlayerStatistics](https://docs.microsoft.com/rest/api/playfab/server/player-data-management/updateplayerstatistics?view=playfab-rest)
+- [UpdatePlayerStatistics](/rest/api/playfab/server/player-data-management/updateplayerstatistics?)
     Updates the values of the specified title-specific statistics for the user.
 
-- [UpdateUserData](https://docs.microsoft.com/rest/api/playfab/server/player-data-management/updateuserdata?view=playfab-rest)
+- [UpdateUserData](/rest/api/playfab/server/player-data-management/updateuserdata?)
     Updates the title-specific custom data for the user which is readable and writable by the client.
 
-- [UpdateUserInternalData](https://docs.microsoft.com/rest/api/playfab/server/player-data-management/updateuserinternaldata?view=playfab-rest)
+- [UpdateUserInternalData](/rest/api/playfab/server/player-data-management/updateuserinternaldata?)
     Updates the title-specific custom data for the user which cannot be accessed by the client.
 
-- [UpdateUserInventoryItemCustomData](https://docs.microsoft.com/rest/api/playfab/server/player-item-management/updateuserinventoryitemcustomdata?view=playfab-rest)
+- [UpdateUserInventoryItemCustomData](/rest/api/playfab/server/player-item-management/updateuserinventoryitemcustomdata?)
     Updates the key-value pair data tagged to the specified item, which is read-only from the client.
 
-- [UpdateUserPublisherData](https://docs.microsoft.com/rest/api/playfab/server/player-data-management/updateuserpublisherdata?view=playfab-rest)
+- [UpdateUserPublisherData](/rest/api/playfab/server/player-data-management/updateuserpublisherdata?)
     Updates the publisher-specific custom data for the user which is readable and writable by the client.
 
-- [UpdateUserPublisherInternalData](https://docs.microsoft.com/rest/api/playfab/server/player-data-management/updateuserpublisherinternaldata?view=playfab-rest)
+- [UpdateUserPublisherInternalData](/rest/api/playfab/server/player-data-management/updateuserpublisherinternaldata?)
     Updates the publisher-specific custom data for the user which cannot be accessed by the client.
 
-- [UpdateUserPublisherReadOnlyData](https://docs.microsoft.com/rest/api/playfab/server/player-data-management/updateuserpublisherreadonlydata?view=playfab-rest)
+- [UpdateUserPublisherReadOnlyData](/rest/api/playfab/server/player-data-management/updateuserpublisherreadonlydata?)
     Updates the publisher-specific custom data for the user which can only be read by the client.
 
-- [UpdateUserReadOnlyData](https://docs.microsoft.com/rest/api/playfab/server/player-data-management/updateuserreadonlydata?view=playfab-rest)
+- [UpdateUserReadOnlyData](/rest/api/playfab/server/player-data-management/updateuserreadonlydata?)
     Updates the title-specific custom data for the user which can only be read by the client.
