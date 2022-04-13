@@ -62,6 +62,9 @@ MaxDevicesPerUserCount=<REPLACE ME with your max player count per box (note: spl
 MaxEndpointsPerDeviceCount=<REPLACE ME with your max player count per box (note: split screen is still 1 device)  In the example of an 8 player game, this would be 1.>
 MaxUserCount=<REPLACE ME with your max player count (note: split screen is still 1 device)  In the example of an 8 player game, this would be 8.>		
 MaxUsersPerDeviceCount=<REPLACE ME with your max player count per box (note: split screen is still 1 device)  In the example of an 8 player game, this would be 1.>
+DirectPeerConnectivityOptions=<REPLACE ME with your connectivity options, in the form of an array of strings. The default case corresponds to the following:
++DirectPeerConnectivityOptions=AnyPlatformType
++DirectPeerConnectivityOptions=AnyEntityLoginProvider>
 
 [/Script/OnlineSubsystemPlayFab.PlayFabNetDriver]
 NetConnectionClassName="OnlineSubsystemPlayFab.PlayFabNetConnection"
