@@ -150,4 +150,4 @@ When you enable the VM metrics feature for a new Build, metrics will be emitted 
 
 ## How can I submit feedback for this preview feature?
 
-Join us on [Discord](https://discord.gg/gamestack) on the #multiplayer-servers channel, we would love to get in touch and hear your thoughts about this feature!
+Join us on [Discord](https://aka.ms/msftgamedevdiscord) on the #multiplayer-servers channel, we would love to get in touch and hear your thoughts about this feature!
