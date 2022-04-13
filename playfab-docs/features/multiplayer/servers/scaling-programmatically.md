@@ -1,6 +1,6 @@
 ---
 title: Scaling Programmatically
-author: lejackso
+author: lesterjackson
 description: Scaling Programmatically with the Multiplayer Servers API
 ms.author: lejackso
 ms.date: 03/22/2021

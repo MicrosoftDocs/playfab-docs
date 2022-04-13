@@ -17,7 +17,7 @@ While not officially supported by the PlayFab Online Subsystem (OSS), it is enti
 
 - Apply the changes below to the Game (not Engine) INI file 'XboxOneEngine.ini'
 - Replace the INI sections if they already exist (e.g. Engine.GameEngine)
-- Ensure you replace all the *<REPLACE ME>* fields with your data.
+- Ensure you replace all the *\<REPLACE ME>* fields with your data.
 ```
 [OnlineSubsystem]
 DefaultPlatformService=PlayFab

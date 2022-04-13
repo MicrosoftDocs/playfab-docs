@@ -2,7 +2,7 @@
 title: Getting started with Data Explorer basic mode
 author: nathankong-microsoft
 description: Illustrates how to use Data Explorer basic mode to create queries.
-ms.author: nakong
+ms.author: joanlee
 ms.date: 09/22/2020
 ms.topic: article
 ms.prod: playfab
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Getting started with Data Explorer basic mode
 
->[! IMPORTANT] 
+>[!IMPORTANT] 
 >The Data Explorer feature is in public preview. We anticipate ongoing changes to it as we continue gathering feedback 
 and optimizing for customer use.
 
@@ -36,7 +36,7 @@ The timeframe of the query can be adjusted by modifying **Start date** and **End
 
 The output of the query can be modified further by adding **Group By** and **Aggregate Type**. Group By modifies how the output rows are grouped, whereas Aggregate Type modifies how the rows are counted, summed, or distinct by.
 
-You can create queries in the Query panel. Please note that Data Explorer (basic) queries will only reference the top 100 events. To view all events, run the query in [Data Explorer (advanced)](media/getting-started-with-data-explorer-advanced.md).
+You can create queries in the Query panel. Please note that Data Explorer (basic) queries will only reference the top 100 events. To view all events, run the query in [Data Explorer (advanced)](getting-started-with-data-explorer-advanced.md).
 
 ## Query Output
 

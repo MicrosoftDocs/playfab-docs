@@ -38,4 +38,4 @@ All PlayStream events are formatted as JSON objects and share the following comm
 |Reserved|object|Reserved exclusively for PlayFab internal use.|
 |Source|String|The name of the source of this PlayStream event; will be PlayFab if the event originated from us.|
 |SourceType|[SourceType](data-types/sourcetype.md)|The type of source of this event (PlayFab partner, other backend, or from the PlayFab API).|
-|Timestamp|DateTime|The time (in UTC) associated with this event.|1
+|Timestamp|DateTime|The time (in UTC) associated with this event.|

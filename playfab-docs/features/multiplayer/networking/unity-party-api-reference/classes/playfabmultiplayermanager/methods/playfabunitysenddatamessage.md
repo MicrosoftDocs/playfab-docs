@@ -30,7 +30,7 @@ public void PlayFabMultiplayerManager.Get().SendDataMessage(byte[] buffer, IEnum
 
 A pointer to the buffer containing the data to send.
 
-**recipients** IEnumerable<PlayFabPlayer>
+**recipients** IEnumerable\<PlayFabPlayer>
 
 The players to send the data message to. If the collection of players is empty, the data message will be broadcast to all players.
 
@@ -62,7 +62,7 @@ A pointer to the buffer containing the data to send.
 
 The size of the buffer.
 
-**recipients** IEnumerable<PlayFabPlayer>
+**recipients** IEnumerable\<PlayFabPlayer>
 
 The players to send the data message to. If the collection of players is empty, the data message will be broadcast to all players.
 

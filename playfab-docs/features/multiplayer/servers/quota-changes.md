@@ -1,6 +1,6 @@
 ---
 title: Managing quota changes
-author: lejackso
+author: lesterjackson
 description: Managing quota changes
 ms.author: lejackso
 ms.date: 11/15/2020

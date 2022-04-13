@@ -88,7 +88,7 @@ Describes how to get the Windows Runner client application to connect to the gam
 * Open the project using Visual Studio 2017 or later. This should automatically trigger dependencies like the latest [Game Server SDK nuget package](https://www.nuget.org/packages/com.playfab.csharpgsdk) to be downloaded.
 * Compile and build the __WindowsRunnerCSharpClient.csproj__ in release x64 configuration
 * Open Command Prompt and navigate to the output folder of this project
-* Run the WindowsRunnerCSharpClient using this command line, replacing <TitleId> and <BuildID> with the values above: __dotnet WindowsRunnerCSharpClient.dll --titleId <TitleId> --buildId <BuildId>__
+* Run the WindowsRunnerCSharpClient using this command line, replacing \<TitleId> and \<BuildID> with the values above: __dotnet WindowsRunnerCSharpClient.dll --titleId \<TitleId> --buildId \<BuildId>__
 
 Example:
 ```sample code

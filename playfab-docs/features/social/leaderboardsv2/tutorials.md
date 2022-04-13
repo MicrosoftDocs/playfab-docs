@@ -1,5 +1,5 @@
 ---
-title: Leaderboards v2 tutorials
+title: Tutorials for Leaderboards v2
 author: xmcai2016
 description: Tutorials for Leaderboards v2.
 ms.author: carocai

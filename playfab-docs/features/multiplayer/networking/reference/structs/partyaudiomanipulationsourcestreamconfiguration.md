@@ -34,7 +34,7 @@ If this value is nullptr, the source stream will produce audio in the format mos
   
 The maximum total size of audio buffers that can concurrently exist for this queue, in milliseconds.
   
-This defines the limit for the total amount of audio internally queued by the source stream, but not yet retrieved via <seealso cref="PartyAudioManipulationSourceStream::GetNextBuffer" />, plus the total amount of audio retrieved by the app, but not yet returned to the library via <seealso cref="PartyAudioManipulationSourceStream::ReturnBuffer" />. When this total is reached, the source stream will stop producing additional buffers. <br /><br /> Because the library processes audio in 40 millisecond intervals, the effective maximum is the nearest multiple of 40 less than the specified maximum. The minimum is 40 milliseconds.
+This defines the limit for the total amount of audio internally queued by the source stream, but not yet retrieved via \<seealso cref="PartyAudioManipulationSourceStream::GetNextBuffer" />, plus the total amount of audio retrieved by the app, but not yet returned to the library via \<seealso cref="PartyAudioManipulationSourceStream::ReturnBuffer" />. When this total is reached, the source stream will stop producing additional buffers. <br /><br /> Because the library processes audio in 40 millisecond intervals, the effective maximum is the nearest multiple of 40 less than the specified maximum. The minimum is 40 milliseconds.
   
   
 ## Requirements  

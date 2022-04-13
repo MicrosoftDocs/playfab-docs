@@ -2,7 +2,7 @@
 title: Getting started with Data Explorer advanced mode
 author: nathankong-microsoft
 description: Illustrates how to use Data Explorer advanced mode to write queries.
-ms.author: nakong
+ms.author: joanlee
 ms.date: 09/22/2020
 ms.topic: article
 ms.prod: playfab

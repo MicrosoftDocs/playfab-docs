@@ -1,5 +1,5 @@
 ---
-title: Data Overview
+title: PlayFab Data Overview
 author: shikha-tarware
 description: An overview of PlayFab Data offerings and features.
 ms.author: shtarwar
