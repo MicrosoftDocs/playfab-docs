@@ -13,7 +13,7 @@ keywords: playfab, multiplayer, networking
 Successfully using the power and flexibility of the PlayFab Party API begins with understanding the following crucial objects defined in its scope:
 
 * [**Device**](#device) - A distinct instance of the game executing on a physical device. A local device exists whenever the API is being used.
-* [**User**](#user) - An individual logged-on player, or more precisely, a PlayFab `title_player_account` [Entity](/../../data/entities/index.md) that the game has actively provided to PlayFab Party for authentication and identification purposes. One or more users are associated with a given device.
+* [**User**](#user) - An individual logged-on player, or more precisely, a PlayFab `title_player_account` [Entity](/gaming/playfab/features/data/entities/) that the game has actively provided to PlayFab Party for authentication and identification purposes. One or more users are associated with a given device.
 * [**Network**](#network) - A secured collection of one or more devices and their authorized users that the game creates for the purpose of exchanging chat or data communication. This typically aligns with a game's multiplayer session or chat "lobby" concept.
 * [**Endpoint**](#endpoint) - An abstraction for sending and receiving data within a network. An endpoint may represent a device, a user, or any desired game-specific concept.
 * [**Chat control**](#chat-control) - A representation of a user specifically for configuring, originating, and targeting voice and text chat in one or more networks.
@@ -124,7 +124,7 @@ It is never explicitly created or destroyed.
 
 ### User
 
-A PlayFab Party *user* is a unique human player for whom the game has performed [PlayFab Player Login](../../authentication/login/index.md) in order to acquire a `title_player_account` [Entity ID](/../../data/entities/index.md) and token.
+A PlayFab Party *user* is a unique human player for whom the game has performed [PlayFab Player Login](../../authentication/login/index.md) in order to acquire a `title_player_account` [Entity ID](/gaming/playfab/features/data/entities/) and token.
 
 Remote users are identified within the PlayFab Party API solely by their Entity ID string associated with [chat controls](#chat-control) and optionally with [endpoints](#endpoint).
 They are not represented using a dedicated object. This is because PlayFab Party doesn't have functionality that meaningfully interacts with arbitrary users, other than for raw identification and as a label associated with those other objects.
@@ -156,7 +156,7 @@ It provides various options for selecting how best to handle Internet packet los
 You can learn more about transmitting game data using *endpoints* in a [later topic](concepts-endpoint-transmission.md).
 
 In addition to being a source or destination for data messages itself, each `PartyEndpoint` object is also assigned a 16-bit *endpoint unique identifier* by PlayFab Party that allows you to reference the specific *endpoint* in message payloads sent to or from separate `PartyEndpoint` objects within the network.
-This provides a convenient way to avoid the overhead of sending a full, larger user [Entity ID](/../../data/entities/index.md) string or other identifier it might represent, for example, without having to build your own peer-to-peer identity agreement negotiation.
+This provides a convenient way to avoid the overhead of sending a full, larger user [Entity ID](/gaming/playfab/features/data/entities/) string or other identifier it might represent, for example, without having to build your own peer-to-peer identity agreement negotiation.
 
 `PartyLocalEndpoint` objects are created using their containing `PartyNetwork` object.
 Doing so results in corresponding `PartyEndpoint` objects being created on remote devices.
