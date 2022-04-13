@@ -63,7 +63,6 @@ MaxEndpointsPerDeviceCount=<REPLACE ME with your max player count per box (note:
 MaxUserCount=<REPLACE ME with your max player count (note: split screen is still 1 device)  In the example of an 8 player game, this would be 8.>		
 MaxUsersPerDeviceCount=<REPLACE ME with your max player count per box (note: split screen is still 1 device)  In the example of an 8 player game, this would be 1.>
 DirectPeerConnectivityOptions=<REPLACE ME with your connectivity options, in the form of an array of strings. All options provided will be utilized, forming a bit mask, executing a bitwise OR among them. The default case corresponds to the following:>
-!DirectPeerConnectivityOptions=ClearArray
 +DirectPeerConnectivityOptions=AnyPlatformType
 +DirectPeerConnectivityOptions=AnyEntityLoginProvider
 
