@@ -17,9 +17,9 @@ PlayFab Party uses industry-standard encryption and authentication for all commu
 Limiting access to a network is a core part of protecting the integrity of the network. The ability to join a network is gated by four things:
 
 - Knowledge of the [network descriptor](concepts-objects.md#network)
-- Possession of a valid PlayFab `title_player_account` [entity token](/../../data/entities/index.md)
+- Possession of a valid PlayFab `title_player_account` [entity token](/gaming/playfab/features/data/entities/)
 - Knowledge of an invitation [identifier](#identifiers)
-- Presence of the PlayFab [entity ID](/../../data/entities/index.md) for the above token in the specified invitation, or the specified invitation being an [open invitation](#users-and-open-invitations)
+- Presence of the PlayFab [entity ID](/gaming/playfab/features/data/entities/) for the above token in the specified invitation, or the specified invitation being an [open invitation](#users-and-open-invitations)
 
 Note that a given PlayFab Party network can have a maximum of 32 players. 
 
@@ -82,7 +82,7 @@ Invitations (other than the initial invitation) are hidden from other devices fo
 
 ### Users and open invitations
 
-An invitation contains 0 or more users specified as `title_player_account` [entity IDs](/../../data/entities/index.md). If an invitation contains users, that invitation only grants access to join the network to those users. However, if an invitation contains no users, this is an open invitation. Any user may join the network with the identifier of an open invitation.
+An invitation contains 0 or more users specified as `title_player_account` [entity IDs](/gaming/playfab/features/data/entities/). If an invitation contains users, that invitation only grants access to join the network to those users. However, if an invitation contains no users, this is an open invitation. Any user may join the network with the identifier of an open invitation.
 
 > [!NOTE]
 > On a multi-user device, such as a game console, be sure to use the correct invitation with the correct user. Depending on which users are specified in each invitation, it is possible that different users on the device might need to use different invitations when authenticating a user into the network via PartyNetwork::AuthenticateLocalUser().
