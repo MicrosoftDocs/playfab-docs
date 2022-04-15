@@ -36,7 +36,7 @@ VM metrics for a Build can be enabled in two ways, depending on how a Build is c
   - [InstrumentationConfiguration in the CreateBuildWithProcessBasedServer API call](https://docs.microsoft.com/rest/api/playfab/multiplayer/multiplayer-server/create-build-with-process-based-server#instrumentationconfiguration) for a process-based Windows Build
   - [LinuxInstrumentationConfiguration in the CreateBuildWithCustomContainer API call](https://docs.microsoft.com/rest/api/playfab/multiplayer/multiplayer-server/create-build-with-custom-container#linuxinstrumentationconfiguration) for a Linux Build
 
-When VM metrics feature is enabled for a Build, it will remain enabled for the entire lifetime of the Build. You cannot enable/disable VM metrics for a Build after it has been created.
+When VM metrics feature is enabled for a Build, it will remain enabled for the entire lifetime of the Build. You can't enable/disable VM metrics for a Build after it has been created.
 
 ### Windows
 
@@ -54,9 +54,9 @@ Collected counter values are sent to our internal metrics collector running on t
 
 ### Linux
 
-On Linux, we are using the open-source [telegraf](https://github.com/influxdata/telegraf) agent for collecting and processing metrics. Telegraf collects metrics every 10 seconds and emits them to our internal collector agent every 60 seconds. For reference, below you can see the contents of the [telegraf.conf](https://docs.influxdata.com/telegraf/v1.15/administration/configuration/#agent-configuration) configuration file we are using, feel free to consult the [official telegraf docs](https://docs.influxdata.com/telegraf/v1.15) for further details.
+On Linux, we're using the open-source [telegraf](https://github.com/influxdata/telegraf) agent for collecting and processing metrics. Telegraf collects metrics every 10 seconds and emits them to our internal collector agent every 60 seconds. For reference, below you can see the contents of the [telegraf.conf](https://docs.influxdata.com/telegraf/v1.15/administration/configuration/#agent-configuration) configuration file we're using, feel free to consult the [official telegraf docs](https://docs.influxdata.com/telegraf/v1.15) for further details.
 
-We are also using an internal utility called `telegraf-geneva-processor` that emits the diff value for counter level metrics (like [net_bytes_recv](https://github.com/influxdata/telegraf/blob/master/plugins/inputs/net/NET_README.md#measurements--fields)) metric. Emitting the diff value instead of the actual counter value results in better visualization in the provided Game Manager graphs.
+We're also using an internal utility called `telegraf-geneva-processor` that emits the diff value for counter level metrics (like [net_bytes_recv](https://github.com/influxdata/telegraf/blob/master/plugins/inputs/net/NET_README.md#measurements--fields)) metric. Emitting the diff value instead of the actual counter value results in better visualization in the provided Game Manager graphs.
 
 ```
 [agent]
@@ -140,13 +140,15 @@ Similar to Windows, telegraf sends the collected counter values to our internal 
 
 ### Allocation Percentage
 
-In both Windows and Linux VMs, we are emitting a metric called *Allocation Percentage*. The value of this metric is calculated by dividing the number of *Active* servers with the *Total* number of servers on the VM. This metric is meant to be used when evaluating and interpreting the reported system metric values. This is because the value of the system metrics will probably be different on a VM with lots of Active servers compared to a VM with lots of StandingBy servers. 
+In both Windows and Linux VMs, we're emitting a metric called *Allocation Percentage*. The value of this metric is calculated by dividing the number of *Active* servers with the *Total* number of servers on the VM. This metric is meant to be used when evaluating and interpreting the reported system metric values. This is because the value of the system metrics will probably be different on a VM with lots of Active servers compared to a VM with lots of StandingBy servers. 
 
 ## Viewing VM metrics
 
 When you enable the VM metrics feature for a new Build, metrics will be emitted as soon as the Build is successfully deployed. You can use the "Virtual Machines"  (https://developer.playfab.com/en-US/<YOUR_TITLE_ID>/multiplayer/server/virtual-machines) page on Game Manager to get a link to display VM metrics for a specified VM.
 
-![View VM Metrics](media/view-vm-metrics.png)
+You can also access the VM metrics by selecting your build, going to the servers tab, and hitting the menu inline with the VM you would like to see the metrics on, and select "View Metrics"
+
+![View VM Metrics](media/viewMetricsUpdate.png)
 
 ## How can I submit feedback for this preview feature?
 
