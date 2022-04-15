@@ -152,4 +152,4 @@ You can also access the VM metrics by selecting your build, going to the servers
 
 ## How can I submit feedback for this preview feature?
 
-Join us on [Discord](https://discord.gg/gamestack) on the #multiplayer-servers channel, we would love to get in touch and hear your thoughts about this feature!
+Join us on [Discord](https://aka.ms/msftgamedevdiscord) on the #multiplayer-servers channel, we would love to get in touch and hear your thoughts about this feature!
