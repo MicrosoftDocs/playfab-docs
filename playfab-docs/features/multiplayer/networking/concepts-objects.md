@@ -14,7 +14,7 @@ Successfully using the power and flexibility of the PlayFab Party API begins wit
 
 * [**Device**](#device) - A distinct instance of the game executing on a physical device. A local device exists whenever the API is being used.
 * [**User**](#user) - An individual logged-on player, or more precisely, a PlayFab `title_player_account` [Entity](/gaming/playfab/features/data/entities/) that the game has actively provided to PlayFab Party for authentication and identification purposes. One or more users are associated with a given device.
-* [**Network**](#network) - A secured collection of one or more devices and their authorized users that the game creates for the purpose of exchanging chat or data communication. This typically aligns with a game's multiplayer session or chat "lobby" concept.
+* [**Network**](#network) - A secured collection of one or more devices and their authorized users that the game creates for the purpose of exchanging chat or data communication. This typically aligns with a game's multiplayer session or chat party concept.
 * [**Endpoint**](#endpoint) - An abstraction for sending and receiving data within a network. An endpoint may represent a device, a user, or any desired game-specific concept.
 * [**Chat control**](#chat-control) - A representation of a user specifically for configuring, originating, and targeting voice and text chat in one or more networks.
 
@@ -25,9 +25,9 @@ For example:
 
 ![Simplified PlayFab Party object hierarchy](media/simplified-party-object-hierarchy.png)
 
-While simple enough to understand, the preceding relationship diagram is actually an incomplete depiction of PlayFab Party's capabilities and can be misleading if taken on it's own. In reality, the Party API supports devices connecting to _multiple_ networks at once. For example, one might desire to maintain communication with a group of friends over time as that same group also joins and leaves separate larger game sessions with strangers.  Considering this broader scenario allows us to better grasp the relationships between these objects.
+While simple enough to understand, the preceding relationship diagram is actually an incomplete depiction of PlayFab Party's capabilities and can be misleading if taken on its own. In reality, the Party API supports devices connecting to _multiple_ networks at once. For example, one might desire to maintain communication with a group of friends over time as that same group also joins and leaves separate larger game sessions with strangers. Considering this broader scenario allows us to better grasp the relationships between these objects.
 
-It might feel intuitive to conceptualize a device as _belonging_ to networks, but this is not the case.  It is more correct to realize that devices _participate_ in networks.  As such, only a single device API object, whether remote or local, is ever created by the Party library when a particular instance is encountered, regardless of the number of networks it shares with your local device.
+It might feel intuitive to conceptualize a device as _belonging_ to networks, but this is not the case. It is more correct to realize that devices _participate_ in networks. As such, only a single device API object, whether remote or local, is ever created by the Party library when a particular instance is encountered, regardless of the number of networks it shares with your local device.
 
 As an example, the following diagram shows two networks and three devices with users, chat controls and endpoints.
 *Device A* and its two chat controls (with associated users) are participating in *Network 1*, while *Devices B* and *C* have connected both to that network _and_ to *Network 2* with a single chat control (and associated user) each.
@@ -35,7 +35,7 @@ All devices have created one or two endpoints in each network where they're conn
 
 ![PlayFab Party objects in multiple networks](media/party-objects-in-multiple-networks.png)
 
-In the above diagram, every device sees a single instance of all three devices and their[chat controls, since they have at least one network in common with each other.
+In the above diagram, every device sees a single instance of all three devices and their chat controls, since they have at least one network in common with each other.
 *Device A* only knows about *Endpoints 1-4* in *Network 1*, but *Devices B* and *C* can see the *Endpoints 5-7* they created in *Network 2* as well.
 
 If *Device C* were instead only participating in *Network 2* in the above diagram and not both networks, then:
@@ -183,7 +183,7 @@ A *chat control* can be destroyed explicitly by its creator, or will be destroye
 `PartyStateChange` structures are used to inform the game of all asynchronous operation completions, incoming messages, update notifications, and other API-related events.
 
 To simplify how you work with complex multi-machine interactions over the Internet with unpredictable timing, PlayFab Party guarantees it won't modify any state it reports from the API except as a result of an explicit call by the game.
-But since you do still need a way to learn about remotely initiated operations or unplanned occurrences that modify local state,  PlayFab Party and the game cooperate through a special pair of methods, `PartyManager::StartProcessingStateChanges()` and `PartyManager::FinishProcessingStateChanges()`.
+But since you do still need a way to learn about remotely initiated operations or unplanned occurrences that modify local state, PlayFab Party and the game cooperate through a special pair of methods, `PartyManager::StartProcessingStateChanges()` and `PartyManager::FinishProcessingStateChanges()`.
 These are called at a point in the game's work loop where it's convenient to handle such updates.
 The new events are reported from `PartyManager::StartProcessingStateChanges()` as an array of zero or more `PartyStateChange` structures.
 Once the game has handled the *state changes*, the array is returned using `PartyManager::FinishProcessingStateChanges()`.

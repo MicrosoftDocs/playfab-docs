@@ -62,7 +62,7 @@ should be the Xbox User ID associated with the user currently tied to the chat c
 
 ### `PartyAudioDeviceSelectionType::Manual`
 
-When this audio device selection type is chosen, `PartyLocalChatControl::SetAudioInput()` and `PartyLocalChatControl::SetAudioOutpu()t`
+When this audio device selection type is chosen, `PartyLocalChatControl::SetAudioInput()` and `PartyLocalChatControl::SetAudioOutput()`
 will use the `audioDeviceSelectionContext` parameter as a valid audio device identifier and will attempt to use any device
 matching that identifier. Refer to the following table to see what kind of identifier is supported by PlayFab Party:
 

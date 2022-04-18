@@ -44,6 +44,8 @@
     href: concepts-direct-peer-connectivity.md
   - name: Port Usage and Firewall Requirements
     href: concepts-port-usage.md
+  - name: Multiple network usage
+    href: concepts-multiple-networks.md
 - name: Pricing
   href: pricing.md
 - name: Regions and QoS
