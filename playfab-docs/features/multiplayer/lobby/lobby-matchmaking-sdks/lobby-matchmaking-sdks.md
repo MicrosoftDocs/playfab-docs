@@ -31,7 +31,7 @@ If you're looking for the core PlayFab SDK that helps you implement most of our 
 | SDK/library| Platform/operating system|
 |------------|--------------------------|
 | C/C++ SDK  | [PC(Win32)](https://github.com/PlayFab/PlayFabMultiplayer/releases), [Nintendo Switch](https://dev.azure.com/PlayFabPrivate/Switch/_artifacts/feed/SwitchGeneral), [PlayStation 4](https://dev.azure.com/PlayFabPrivate/PS4/_artifacts/feed/PS4General), [PlayStation 5](https://dev.azure.com/PlayFabPrivate/PS5/_artifacts/feed/PS5General), [PC (GDK) and Xbox (GDK)](https://github.com/PlayFab/PlayFabMultiplayer/releases)|
-| Unity SDK  | [PC (Win32), PC (GDK) and Xbox (GDK)](https://github.com/PlayFab/PlayFabMultiplayerUnity), [Nintendo Switch](https://dev.azure.com/PlayFabPrivate/Switch/_git/PlayFabMultiplayerUnitySwitch)|
+| Unity SDK  | [PC (Win32), PC (GDK) and Xbox (GDK)](https://github.com/PlayFab/PlayFabMultiplayerUnity), [Nintendo Switch](https://dev.azure.com/PlayFabPrivate/Switch/_git/PlayFabMultiplayerUnitySwitch),[PlayStation 4](https://dev.azure.com/PlayFabPrivate/PS4/_git/PlayFabMultiplayerUnityPS4), [PlayStation 5](https://dev.azure.com/PlayFabPrivate/PS5/_git/PlayFabMultiplayerUnityPS5)|
 | Unity Editor Extensions | [Unity game engine](https://github.com/PlayFab/UnityEditorExtensions/releases)|
 | Unreal SDK |[PC (GDK) and Xbox (GDK)](https://github.com/PlayFab/PlayFabMultiplayerUnreal)|
 
