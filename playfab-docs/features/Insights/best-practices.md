@@ -110,7 +110,7 @@ Summarize
 - penalty.
 
 ### My queries return a “Partial query failure: Low memory condition” error 
-- This means the query is too complex and is unable to fit within the memory limits of your Performance Level. Try simplifying your query. For example, a summarize call may have too many groups, or you may be trying to operate on too many rows at once.You can also upgrade your Performance level to allow more memory to be allocated to each query.
+- This means the query is too complex and is unable to fit within the memory limits of your Performance Level. Try simplifying your query. For example, a summarize call may have too many groups, or you may be trying to operate on too many rows at once.You can also upgrade your Performance level to allow more memory to be allocated to each query. 
 - View [Kusto documentation](https://docs.microsoft.com/azure/data-explorer/kusto/concepts/partialqueryfailures) for more information.
 
 ### Will I lose data if my volume of events is higher than what is allowed by my performance level?
