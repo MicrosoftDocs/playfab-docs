@@ -16,10 +16,7 @@ This article describes how to integrate PlayFab Multiplayer Server SDK (GSDK) Un
 
 This plugin offers both a Blueprint API and a C++ API. The Blueprint API still requires your Unreal Project to be a C++ project, and will not work on a Blueprint only project. If it is currently a Blueprint only project, then you need to convert to a C++ project beforehand, before adding the plugin.
 
-The following nodes are supported:
-![PlayFab GSDK Blueprint Nodes](media/GSDKBlueprintNodes.png)
-
-It was originally tested with Unreal Engine 4.26, 4.27, and 5.0 early access. This plugin will be actively maintained to work with the latest 3 versions of Unreal.
+It has been originally tested with Unreal Engine 4.26, 4.27, 5.0 early access, and **5.0 official release**. This plugin will be actively maintained to work with the latest 3 - 4 versions of Unreal. If something fails using these versions, please open an issue here: [Unreal Engine GSDK Repo](https://github.com/PlayFab/gsdk/issues).
 
 To use these guides, replace all instances of __ThirdPersonMP__ with your project name, if different.
 

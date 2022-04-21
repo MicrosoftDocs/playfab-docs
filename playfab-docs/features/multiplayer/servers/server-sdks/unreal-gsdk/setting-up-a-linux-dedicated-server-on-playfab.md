@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Set up a Linux Dedicated Server on PlayFab
 
-The purpose of this guide is to describe all the steps needed to build and verify a Linux dedicated server. The following steps will be specific to Unreal Engine 5, early access. The same set of steps have been tested and apply also to UE 4.26 and UE 4.27, with some minor differences related to the location of the packaging option on the Unreal Engine UI, which is different in UE 4.27 and UE5 early access.
+The purpose of this guide is to describe all the steps needed to build and verify a Linux dedicated server. The following steps are specific to Unreal Engine 5 (both early access and official release). The same set of steps have been tested and apply also to UE 4.26 and UE 4.27, with some minor differences related to the location of the packaging option on the Unreal Engine UI, which is different in UE 4.27 and UE5 early access.
 
 More Linux deployment information can be found [here](https://github.com/PlayFab/MpsAgent/blob/main/LocalMultiplayerAgent/MultiplayerSettingsLinuxContainersOnWindowsSample.json)
 
