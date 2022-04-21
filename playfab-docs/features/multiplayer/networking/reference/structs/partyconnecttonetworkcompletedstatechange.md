@@ -5,7 +5,7 @@ description: "Information specific to the *ConnectToNetworkCompleted* type of st
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 03/11/2022
+ms.date: 04/21/2022
 ---
 
 # PartyConnectToNetworkCompletedStateChange  
@@ -15,7 +15,7 @@ Information specific to the *ConnectToNetworkCompleted* type of state change.
 ## Syntax  
   
 ```cpp
-struct PartyConnectToNetworkCompletedStateChange {  
+struct PartyConnectToNetworkCompletedStateChange : PartyStateChange {  
     PartyStateChangeResult result;  
     PartyError errorDetail;  
     PartyNetworkDescriptor networkDescriptor;  

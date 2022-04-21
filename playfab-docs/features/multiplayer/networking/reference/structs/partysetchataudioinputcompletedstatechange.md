@@ -5,7 +5,7 @@ description: "Information specific to the *SetChatAudioInputCompleted* type of s
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 03/11/2022
+ms.date: 04/21/2022
 ---
 
 # PartySetChatAudioInputCompletedStateChange  
@@ -15,7 +15,7 @@ Information specific to the *SetChatAudioInputCompleted* type of state change.
 ## Syntax  
   
 ```cpp
-struct PartySetChatAudioInputCompletedStateChange {  
+struct PartySetChatAudioInputCompletedStateChange : PartyStateChange {  
     PartyStateChangeResult result;  
     PartyError errorDetail;  
     PartyLocalChatControl* localChatControl;  

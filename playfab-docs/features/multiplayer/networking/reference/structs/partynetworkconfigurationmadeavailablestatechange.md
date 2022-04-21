@@ -5,7 +5,7 @@ description: "Information specific to the *NetworkConfigurationMadeAvailable* ty
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 03/11/2022
+ms.date: 04/21/2022
 ---
 
 # PartyNetworkConfigurationMadeAvailableStateChange  
@@ -15,7 +15,7 @@ Information specific to the *NetworkConfigurationMadeAvailable* type of state ch
 ## Syntax  
   
 ```cpp
-struct PartyNetworkConfigurationMadeAvailableStateChange {  
+struct PartyNetworkConfigurationMadeAvailableStateChange : PartyStateChange {  
     PartyNetwork* network;  
     PartyNetworkConfiguration* networkConfiguration;  
 }  

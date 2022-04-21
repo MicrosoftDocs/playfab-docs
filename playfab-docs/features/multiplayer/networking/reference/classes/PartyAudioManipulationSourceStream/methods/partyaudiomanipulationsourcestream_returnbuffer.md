@@ -5,7 +5,7 @@ description: Tells the library it can reclaim memory associated with this buffer
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 02/13/2020
+ms.date: 04/21/2022
 ---
 
 # PartyAudioManipulationSourceStream::ReturnBuffer  
@@ -23,7 +23,7 @@ PartyError ReturnBuffer(
 ### Parameters  
   
 **`buffer`** &nbsp; void*  
-*_Post_invalid_*  
+*input not valid afterwards*  
   
 The buffer to return, which is the *buffer* field of a PartyDataBuffer previously retrieved from this source stream [PartyAudioManipulationSourceStream::GetNextBuffer()](partyaudiomanipulationsourcestream_getnextbuffer.md).  
   
