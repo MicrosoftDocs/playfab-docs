@@ -14,8 +14,15 @@ ms.localizationpriority: medium
 
 PlayFab Party had a significant (up to 90%) price drop on 10/13/2020. You can view the updated Party rates on the [Pricing page](https://playfab.com/pricing). For more information about the price drop, see our [blog post](https://blog.playfab.com/blog/starting-today-save-up-to-90-using-playfab-party).
 
-## 1.7.7
+## 1.7.8
+April 21, 2022
+### Bug fixes
 
+- Fixed an issue where memory wasn't fully cleaned up when `PartyManager::Cleanup()` was called.
+- Fixed an issue where calling `PartyLocalChatControl::SetAudioInput()` or `PartyLocalChatControl::SetAudioOutput()` with the same audio device selection would unnecessarily result in the library reinitializing the audio device. 
+
+## 1.7.7
+Mar 16, 2022
 ### Bug fixes
 
 - Playstation4, Playstation5: Fixed a crash that occurred when there was no audio device after the audio devices were removed.

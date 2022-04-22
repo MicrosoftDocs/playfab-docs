@@ -5,7 +5,7 @@ description: "Information specific to the *RemoteDeviceJoinedNetwork* type of st
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 03/11/2022
+ms.date: 04/21/2022
 ---
 
 # PartyRemoteDeviceJoinedNetworkStateChange  
@@ -15,7 +15,7 @@ Information specific to the *RemoteDeviceJoinedNetwork* type of state change.
 ## Syntax  
   
 ```cpp
-struct PartyRemoteDeviceJoinedNetworkStateChange {  
+struct PartyRemoteDeviceJoinedNetworkStateChange : PartyStateChange {  
     PartyDevice* device;  
     PartyNetwork* network;  
 }  
