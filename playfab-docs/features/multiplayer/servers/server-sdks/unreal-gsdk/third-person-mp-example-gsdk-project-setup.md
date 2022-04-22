@@ -51,7 +51,7 @@ See the example below:
 ```json
 {
     "FileVersion": 3,
-    "EngineAssociation": "4.26",
+    "EngineAssociation": "{YourEngineVersion}",
     "Category": "",
     "Description": "",
     "Modules": [
@@ -75,19 +75,19 @@ See the example below:
 
 ### Include the plugin in your modules
 
-Update {ProjectName}.Build.cs file to add "PlayFabGSDK" into the PublicDependencyModuleNames.AddRange(); list as follows:
+* Update {ProjectName}.Build.cs file to add "PlayFabGSDK" into the PublicDependencyModuleNames.AddRange(); list as follows:
 
 ```csharp
 PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "HeadMountedDisplay", "PlayFabGSDK" });
 ```
 
-Right-click on the ```{ProjectName}.uproject``` file and select the option to __Switch Unreal Engine version__, which is how you can quickly check which Unreal Engine version you are currently using. The popup seen below should appear. If you already see that the Unreal Engine version is source build, you don’t need to change anything, so click Cancel. If the Unreal version is not currently the source build, select it from the dropdown list and then click OK.
+* Right-click on the ```{ProjectName}.uproject``` file and select the option to __Switch Unreal Engine version__, which is how you can quickly check which Unreal Engine version you are currently using. The popup seen below should appear. If you already see that the Unreal Engine version is source build, you don’t need to change anything, so click Cancel. If the Unreal version is not currently the source build, select it from the dropdown list and then click OK.
 
 ![image depicting a window that says "Select Unreal Engine Version"](media/SelectUnrealEngineVersion.png)
 
-Right-click on the ```{ProjectName}.uproject``` file again and select "Generate Visual Studio Project Files".
+* Right-click on the ```{ProjectName}.uproject``` file again and select "Generate Visual Studio Project Files".
 
-Then, build the project in Visual Studio and start the Editor by selecting the Development Editor configuration.
+* Finally, build the project in Visual Studio and start the Editor by selecting the Development Editor configuration.
 
 ![image depicting Visual Studio with the option to build in Development Editor Mode](media/DevelopmentEditor.png)
 
@@ -309,6 +309,8 @@ void UThirdPersonGameInstance::OnGSDKReadyForPlayers()
 ```
 
 ## Blueprint implementation
+
+This part is only needed if you have decided to proceed with the Blueprint implementation and not with the pure C++ implementation. Some of the nodes presented below are outdated. We advise users who prefer the Blueprint implementation to consult the C++ implementation for the nodes that will be required.
 
 * Observe the Content Browser window in the Unreal Editor
 * Pick or create a folder to contain new Blueprints

@@ -5,7 +5,7 @@ description: "Information specific to the *DataBuffersReturned* type of state ch
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 03/11/2022
+ms.date: 04/21/2022
 ---
 
 # PartyDataBuffersReturnedStateChange  
@@ -15,7 +15,7 @@ Information specific to the *DataBuffersReturned* type of state change.
 ## Syntax  
   
 ```cpp
-struct PartyDataBuffersReturnedStateChange {  
+struct PartyDataBuffersReturnedStateChange : PartyStateChange {  
     PartyNetwork* network;  
     PartyLocalEndpoint* localSenderEndpoint;  
     uint32_t dataBufferCount;  

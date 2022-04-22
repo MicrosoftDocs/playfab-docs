@@ -5,7 +5,7 @@ description: "Information specific to the *InvitationCreated* type of state chan
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 03/11/2022
+ms.date: 04/21/2022
 ---
 
 # PartyInvitationCreatedStateChange  
@@ -15,7 +15,7 @@ Information specific to the *InvitationCreated* type of state change.
 ## Syntax  
   
 ```cpp
-struct PartyInvitationCreatedStateChange {  
+struct PartyInvitationCreatedStateChange : PartyStateChange {  
     PartyNetwork* network;  
     PartyInvitation* invitation;  
 }  
