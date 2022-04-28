@@ -223,7 +223,7 @@ The following APIs cause the Profile writes meter to increment.
     Links an OpenID Connect account to a user's PlayFab account, based on an existing relationship between a title and an Open ID Connect provider and the OpenId Connect JWT from that provider.
 
 - [LinkPSNAccount](/rest/api/playfab/client/account-management/linkpsnaccount?)
-    Links the PlayStation Network account associated with the provided access code to the user's PlayFab account.
+    Links the PlayStation&#8482;Network account associated with the provided access code to the user's PlayFab account.
 
 - [LinkSteamAccount](/rest/api/playfab/client/account-management/linksteamaccount?)
     Links the Steam account associated with the provided Steam authentication ticket to the user's PlayFab account.
@@ -359,6 +359,8 @@ Creates and updates the title-specific custom data for the user which is readabl
 
 - [UpdateUserTitleDisplayName](/rest/api/playfab/client/account-management/updateusertitledisplayname?)
     Updates the title specific display name for the user
+
+“PlayStation” is a registered trademark or trademark of Sony Interactive Entertainment Inc.
 
 ## Data APIs
 
