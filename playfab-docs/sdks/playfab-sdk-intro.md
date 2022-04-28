@@ -16,12 +16,14 @@ This topic lists the different flavors of Azure PlayFab SDKs we currently have t
 
 PlayFab SDK enables you to implement a majority of our features, including LiveOps, economy, matchmaking, and data analytics.
 
-Access to SDKs for Nintendo Switch, PlayStation 4, PlayStation 5, and Google Stadia requires special approval and adherence to platform policies. For more information, see [Request access for SDKs and samples](../features/multiplayer/networking/request-access-for-sdks-samples.md). 
+Access to SDKs for Nintendo Switch, PlayStation&#174;4, PlayStation&#174;5, and Google Stadia requires special approval and adherence to platform policies. For more information, see [Request access for SDKs and samples](../features/multiplayer/networking/request-access-for-sdks-samples.md). 
 
 For broad API categories in this SDK, see [API REST operation groups](https://docs.microsoft.com/rest/api/playfab/admin/).
 
 > [!Tip]
 > Unsure if this is the SDK you need? See [SDK overview - PlayFab SDK, Party SDK, Multiplayer Server SDK](sdk-overview.md).
+
+“PlayStation” is a registered trademark or trademark of Sony Interactive Entertainment Inc.
 
 ## By content
 
