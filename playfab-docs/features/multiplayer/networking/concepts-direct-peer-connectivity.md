@@ -19,7 +19,7 @@ PlayFab Party supports a wide variety of communication topologies. Conceptually,
 
 ### Platform support
 
-Direct peer connectivity is supported in the Windows 10, Microsoft Game Core, Nintendo Switch, PlayStation 4, and PlayStation 5 versions of the Party library. Other versions of the library will always use the cloud relay for data transmission, regardless of the direct peer connectivity options specified through the client API.
+Direct peer connectivity is supported in the Windows 10, Microsoft Game Core, Nintendo Switch, PlayStation&#174;4, and PlayStation&#174;5 versions of the Party library. Other versions of the library will always use the cloud relay for data transmission, regardless of the direct peer connectivity options specified through the client API.
 
 ### Security considerations 
 
