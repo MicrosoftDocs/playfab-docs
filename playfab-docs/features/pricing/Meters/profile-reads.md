@@ -198,7 +198,7 @@ The following APIs cause the Profile read meter to increment.
     Retrieves the unique PlayFab identifiers for the given set of Nintendo Switch identifiers.
 
 - [GetPlayFabIDsFromPSNAccountIDs](https://docs.microsoft.com/rest/api/playfab/client/account-management/getplayfabidsfrompsnaccountids?view=playfab-rest)
-    Retrieves the unique PlayFab identifiers for the given set of PlayStation Network identifiers.
+    Retrieves the unique PlayFab identifiers for the given set of PlayStation&#8482;Network identifiers.
 
 - [GetPlayFabIDsFromSteamIDs](https://docs.microsoft.com/rest/api/playfab/client/account-management/getplayfabidsfromsteamids?view=playfab-rest)
     Retrieves the unique PlayFab identifiers for the given set of Steam identifiers. The Steam identifiers are the profile IDs for the user accounts, available as SteamId in the Steamworks Community API calls.
@@ -279,6 +279,8 @@ The following APIs cause the Profile read meter to increment.
 
 - [GetPlayerCombinedInfo](https://docs.microsoft.com/rest/api/playfab/client/account-management/getplayercombinedinfo?view=playfab-rest)
     Retrieves all of the user's different kinds of info.
+    
+“PlayStation” is a registered trademark or trademark of Sony Interactive Entertainment Inc.
 
 ## Data APIs
 
