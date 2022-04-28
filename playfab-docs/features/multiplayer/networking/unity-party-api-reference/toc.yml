@@ -97,6 +97,8 @@
       href: enums/partyunitychatstate.md
     - name: DeliveryOption
       href: enums/partyunitydeliveryoption.md
+    - name: DirectPeerConnectivityOptions
+      href: enums/partyunitydirectpeerconnectivityoptions.md
     - name: LogLevelType
       href: enums/partyunitylogleveltype.md
     - name: PlayFabMultiplayerManagerErrorType 
