@@ -12,6 +12,10 @@ ms.localizationpriority: medium
 
 # PlayFab Party Unity plugin release notes
 
+## 1.7.0.1
+
+* Enabled peer-to-peer connection on supported platforms, except from mobile ones, by default.
+
 ## 1.5.0.3
 
 Party Unity SDK plugin becomes generally available (GA) to developers on platforms:
