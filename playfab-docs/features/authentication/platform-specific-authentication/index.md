@@ -41,11 +41,13 @@ Select authentication providers based on what is most meaningful for the players
 
 - [Setting up PlayFab authentication in Phaser.io](phaser-io.md)
 
-### PlayStation
+### PlayStation&#174;
 
 - [Setting up PlayFab authentication using PlayStation (secure link)](https://dev.azure.com/PlayFabPrivate/PS5/_git/XPlatCppSdk-Private-PS5?path=%2FGuideToLoginWithPSN.md&_a=preview)
 
 If you're unable to access the above secure link, see [Request access](https://aka.ms/pf-partner-request-access).
+
+“PlayStation” is a registered trademark or trademark of Sony Interactive Entertainment Inc.
 
 ### Steam
 
