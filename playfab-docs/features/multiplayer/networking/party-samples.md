@@ -16,7 +16,7 @@ This topic lists all the Azure PlayFab Party samples that are currently availabl
 
 If there's a specific sample that you'd like to have, let us know by writing a post on our [forums](https://community.playfab.com/index.html).
 
-Access to samples for Nintendo Switch, PlayStation 4, PlayStation 5, Google Stadia, PC (GDK), and Xbox (GDK) requires special approval and adherence to platform policies. For more information, see [Request access for SDKs and samples](request-access-for-sdks-samples.md).
+Access to samples for Nintendo Switch, PlayStation&#174;4, PlayStation&#174;5, Google Stadia, PC (GDK), and Xbox (GDK) requires special approval and adherence to platform policies. For more information, see [Request access for SDKs and samples](request-access-for-sdks-samples.md).
 
 ## List of samples
 
