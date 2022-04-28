@@ -20,10 +20,16 @@ PlayFab Party Unity plugin works alongside the PlayFab "core" Unity SDK plugin w
 Party Unity plugin is available for download as a Unity Asset package. It is currently supported for developing games on the following platforms:
 - Microsoft Game Core (GDK)*, Windows, iOS, Android:
 https://github.com/playfab/PlayFabPartyUnity (public access)
-- Sony PlayStation&reg;:
-  - PS4: https://dev.azure.com/PlayFabPrivate/PS4/_git/PlayFabPartyUnityPS4 (restricted access by request to Microsoft Representative)
-  - PS5: https://dev.azure.com/PlayFabPrivate/PS5/_git/PlayFabPartyUnityPS5 (restricted access by request to Microsoft Representative)
+- Sony PlayStation&#174;:
+  - PS4&#8482;: https://dev.azure.com/PlayFabPrivate/PS4/_git/PlayFabPartyUnityPS4 (restricted access by request to Microsoft Representative)
+  - PS5&#8482;: https://dev.azure.com/PlayFabPrivate/PS5/_git/PlayFabPartyUnityPS5 (restricted access by request to Microsoft Representative)
 - Nintendo Switch&trade;: https://dev.azure.com/PlayFabPrivate/Switch/_git/PlayFabPartyUnitySwitch (restricted access by request to Microsoft Representative)
+
+“PlayStation” is a registered trademark or trademark of Sony Interactive Entertainment Inc.
+
+"PS4" is a registered trademark or trademark of Sony Interactive Entertainment Inc.
+
+"PS5" is a registered trademark or trademark of Sony Interactive Entertainment Inc.
 
 *- The underlying Party libraries for GDK are not included in plugin (see below).
 
