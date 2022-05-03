@@ -23,7 +23,7 @@ For information on migrating from the legacy account and data systems to PlayFab
   > [!NOTE]
   > The PlayFab Unity3D SDK supports Unity Editor version 5.3 and higher.
   >
-- A Unity Project. For information on creating a Unity Project, see [Starting Unity for the first time](https://docs.unity3d.com/Manual/GettingStarted.html).
+- A Unity Project. For information on creating a Unity Project, see [the Quickstart guide](https://docs.unity3d.com/Manual/Quickstart3D.html).
   > [!NOTE]
   > If you are unfamiliar with Unity, recent installation packages give you the option of installing game creation walkthroughs. You can use one of the walkthroughs to create a sample game to use in the following quickstart.
   >

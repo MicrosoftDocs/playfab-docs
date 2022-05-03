@@ -5,7 +5,7 @@ description: "Information specific to the *RequiredChatPermissionInfoChanged* ty
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 11/01/2019
+ms.date: 04/22/2022
 ---
 
 # PartyXblRequiredChatPermissionInfoChangedStateChange  
@@ -15,10 +15,10 @@ Information specific to the *RequiredChatPermissionInfoChanged* type of state ch
 ## Syntax  
   
 ```cpp
-typedef struct PartyXblRequiredChatPermissionInfoChangedStateChange {  
+struct PartyXblRequiredChatPermissionInfoChangedStateChange : PartyXblStateChange {  
     PartyXblLocalChatUser* localChatUser;  
     PartyXblChatUser* targetChatUser;  
-} PartyXblRequiredChatPermissionInfoChangedStateChange  
+}  
 ```
   
 ### Members  

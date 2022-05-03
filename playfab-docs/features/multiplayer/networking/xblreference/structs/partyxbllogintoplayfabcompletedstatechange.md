@@ -5,7 +5,7 @@ description: "Information specific to the *LoginToPlayFabCompleted* type of stat
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 11/01/2019
+ms.date: 04/22/2022
 ---
 
 # PartyXblLoginToPlayFabCompletedStateChange  
@@ -15,7 +15,7 @@ Information specific to the *LoginToPlayFabCompleted* type of state change.
 ## Syntax  
   
 ```cpp
-typedef struct PartyXblLoginToPlayFabCompletedStateChange {  
+struct PartyXblLoginToPlayFabCompletedStateChange : PartyXblStateChange {  
     PartyXblStateChangeResult result;  
     PartyError errorDetail;  
     PartyXblLocalChatUser* localChatUser;  
@@ -23,7 +23,7 @@ typedef struct PartyXblLoginToPlayFabCompletedStateChange {
     PartyString entityId;  
     PartyString titlePlayerEntityToken;  
     time_t expirationTime;  
-} PartyXblLoginToPlayFabCompletedStateChange  
+}  
 ```
   
 ### Members  
@@ -46,7 +46,7 @@ The async identifier provided to the call associated with this state change.
   
 **`entityId`** &nbsp; [PartyString](../../../networking/reference/typedefs.md)  
   
-The PlayFab Entity ID associated with the local chat user's Xbox Live identity.
+The PlayFab Entity Id associated with the local chat user's Xbox Live identity.
   
 **`titlePlayerEntityToken`** &nbsp; [PartyString](../../../networking/reference/typedefs.md)  
   

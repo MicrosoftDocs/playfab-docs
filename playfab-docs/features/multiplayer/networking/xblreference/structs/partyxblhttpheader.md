@@ -5,7 +5,7 @@ description: "Information about an HTTP header."
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 11/01/2019
+ms.date: 04/22/2022
 ---
 
 # PartyXblHttpHeader  
@@ -15,10 +15,10 @@ Information about an HTTP header.
 ## Syntax  
   
 ```cpp
-typedef struct PartyXblHttpHeader {  
+struct PartyXblHttpHeader {  
     PartyString name;  
     PartyString value;  
-} PartyXblHttpHeader  
+}  
 ```
   
 ### Members  
