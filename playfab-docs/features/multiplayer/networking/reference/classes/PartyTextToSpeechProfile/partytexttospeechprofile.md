@@ -1,11 +1,11 @@
 ---
 author: jdeweyMSFT
 title: "PartyTextToSpeechProfile"
-description: TBD
+description: Represents the voice profile used to synthesize speech.
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/25/2019
+ms.date: 04/22/2022
 ---
 
 # PartyTextToSpeechProfile  

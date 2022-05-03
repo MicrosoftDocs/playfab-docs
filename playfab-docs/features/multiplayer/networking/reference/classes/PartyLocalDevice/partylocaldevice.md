@@ -1,11 +1,11 @@
 ---
 author: jdeweyMSFT
 title: "PartyLocalDevice"
-description: TBD
+description: Represents the local device.
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 11/08/2019
+ms.date: 04/22/2022
 ---
 
 # PartyLocalDevice  

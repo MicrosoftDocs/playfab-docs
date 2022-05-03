@@ -15,12 +15,12 @@ Accessibility settings associated with an Xbox Live account.
 ## Syntax  
   
 ```cpp
-typedef struct PartyXblAccessibilitySettings {  
+struct PartyXblAccessibilitySettings {  
     PartyBool speechToTextEnabled;  
     PartyBool textToSpeechEnabled;  
     char languageCode[c_maxLanguageCodeStringLength + 1];  
     PartyGender gender;  
-} PartyXblAccessibilitySettings  
+}  
 ```
   
 ### Members  
