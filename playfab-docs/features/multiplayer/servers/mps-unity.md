@@ -17,7 +17,7 @@ Multiplayer Servers platform provides a GSDK library that you can integrate into
 ## Installation
 
 You can copy the [Assets/PlayFabSdk](https://github.com/PlayFab/gsdk/tree/master/UnityGsdk/Assets/PlayFabSdk) folder into your Unity project. After that, you need to enable the scripring directive `ENABLE_PLAYFABSERVER_API` on your Unity Build settings ([example](https://user-images.githubusercontent.com/8256138/81462605-a6d7ac80-9168-11ea-9748-110ed01095c2.png)).
-Alternatively, you can use the provided [Unity package file](https://github.com/PlayFab/gsdk/blob/master/UnityGsdk/PlayFabMultiplayerSDK.unitypackage). 
+Alternatively, you can use the provided [Unity package file](https://github.com/PlayFab/gsdk/blob/main/UnityGsdk/MpsGsdk.unitypackage). 
 You can find sample code in the [MultiplayerServerSample](https://github.com/PlayFab/gsdk/tree/master/UnityGsdk/Assets/MultiplayerServerSample) project.
 
 ## Usage
