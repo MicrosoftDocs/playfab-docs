@@ -32,11 +32,11 @@ PlayFab provides the following services:
 
 ### Cross-Network Identity and Data
 
-**Player Authentication**: Start with frictionless authentication and let players link accounts to roam across Windows, Xbox, Steam, PSN, Nintendo, Facebook, iOS, Android and more.
+**Player Authentication**: Start with frictionless authentication and let players link accounts to roam across Windows, Xbox, Steam, PSN, Nintendo, Facebook, iOS, Android, and more.
 
 **Player Data Management**: Share player information and game state across devices.
 
-**Matchmaking** - Use the proven capabilities of Xbox Live's SmartMatch on any platform to help players find opponents.
+**Matchmaking**: Use the proven capabilities of SmartMatch on any platform to help players find opponents.
 
 ### Multiplayer Servers
 
@@ -126,7 +126,7 @@ PlayFab provides the following services:
 
 **Real-Time Rules Engine**: Set up powerful actions and triggers that respond to PlayStream events.
 
-**Real-Time Segmentation**: Use data properties to bucket players into segments and trigger actions as they enter or exit.
+**Real-Time Segmentation**: Use data properties to bucket players into segments and trigger actions as players enter or exit those segments.
 
 **Event Filter and Search**: Zoom in on a time slice to analyze players, events and error conditions in detail.
 
@@ -140,7 +140,7 @@ PlayFab provides the following services:
 
 ### Compliance
 
-**GDPR**: PlayFab is committed to being General Data Protection Regulation (GDPR) compliant and as your service provider, ensuring that we provide you with the hooks you need to allow players to view or delete their data.
+**GDPR**: PlayFab is committed to providing features that help you to be GDPR compliant and providing you with the hooks you need to allow players to review and delete their data.
 
 **COPPA**: PlayFab is in use today by COPPA compliant games.
 
