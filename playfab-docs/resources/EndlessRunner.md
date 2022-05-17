@@ -53,6 +53,8 @@ public GetPlayerCombinedInfoRequestParams InfoRequestParams;
 
 ### Modify or add the `Awake()` method
 
+The following code sample uses class [PlayFabAuthService](https://github.com/PlayFab/PlayFab-Samples/blob/master/VideoTutorialSamples/PlayFabAuthentication/Assets/PlayFabUI/Demo/Scripts/PlayFabAuthService.cs).
+
 ```C#
 private void Awake()
 {
