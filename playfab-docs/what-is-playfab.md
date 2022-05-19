@@ -12,17 +12,13 @@ ms.localizationpriority: medium
 
 # What is PlayFab?
 
-PlayFab is a complete backend platform for live games with managed game services, real-time analytics, and LiveOps. Boost your revenue and increase player engagement while cutting costs. This topic provides a high-level overview of the PlayFab features.
+PlayFab is a complete backend platform for live games with managed game services, real-time analytics, and LiveOps. PlayFab enables you to boost your revenue and increase player engagement while cutting costs. This topic provides a high-level overview of the PlayFab features.
 
-PlayFab's backend services reduce the barriers to launch for game developers, offering both large and small studios cost-effective development solutions that scale with their games and help them engage, retain and monetize players. PlayFab enables developers to use the intelligent cloud to build and operate games, analyze gaming data and improve overall gaming experiences. The PlayFab platform is a natural complement to Azure for gaming (Visit azure.com/gaming for more info). Azure, with locations in 42 regions worldwide, provides world-class server infrastructure, allowing creators to focus on building great games with best-available global reach. For gamers, this leads to a higher, faster degree of innovation and better experiences.
+PlayFab's backend services reduce the barriers to launching games. To studios large and small, the services offer cost-effective development solutions that scale with the games and help the studios engage, retain, and monetize players. The services also enable developers to use the intelligent cloud to build and operate games, analyze gaming data, and improve overall gaming experiences. 
 
-Using PlayFab you can:
+The PlayFab platform is a natural complement to [Azure for game development](https://azure.microsoft.com/en-us/solutions/gaming/#overview). With locations in 42 regions worldwide, Azure provides world-class server infrastructure and allows creators to focus on building great games with best-available global reach<!--Please clarify "best-available global reach"-->. For gamers, this leads to better experiences and to a higher degree of innovation achieved faster.
 
-* Remove the challenges of building, managing, and running servers at scale with a complete back-end solution.
-* Instantly scale dedicated multiplayer servers that deliver low latency and high reliability for real-time gameplay.
-* Use multiple forms of built-in authentication to track players across devices.
-* Quickly create leaderboards to more deeply engage players.
-* Accelerate growth with economy services that let you create and track virtual currencies, manage stores of items, and process payments.
+With PlayFab, you can instantly scale dedicated multiplayer servers that deliver low latency and high reliability for real-time gameplay<!--This is all that's left of the original list. Can we move this sentence to a paragraph above?-->.
 
 To use PlayFab features, you must sign up for a [PlayFab account](https://developer.playfab.com/en-us/sign-up).
 
@@ -32,69 +28,65 @@ PlayFab provides the following services:
 
 ### Cross-Network Identity and Data
 
-**Player Authentication**: Start with frictionless authentication and let players link accounts to roam across Windows, Xbox, Steam, PSN, Nintendo, Facebook, iOS, Android, and more.
+**Player Authentication**: Start with frictionless authentication, and let players link accounts to roam across Windows, Xbox, Steam, PSN, Nintendo, Facebook, iOS, Android, and other platforms.
 
 **Player Data Management**: Share player information and game state across devices.
 
-**Matchmaking**: Use the proven capabilities of SmartMatch on any platform to help players find opponents.
+**Matchmaking**: To help players find opponents, use the proven capabilities of Smart Match on any platform.
 
 ### Multiplayer Servers
 
-**Dedicated Servers**: Deliver low-latency real-time gameplay for any platform.
+**Dedicated Servers**: Deliver low-latency, real-time gameplay for any platform.
 
-**24/7 Monitoring and DDoS Protection** - Protect against DDoS attacks and other incidents.
+**24/7 Monitoring and DDoS Protection**: Protect <!--games, gamers, both?-->against DDoS attacks and other incidents.
 
-**Global Reach with Microsoft Azure**: Get closer to players on a cloud with more global regions than any other provider.
+**Global Reach with Microsoft Azure**: Get closer to players on a cloud, with more global regions than offered by any other provider.
 
 **Control Costs**: Dynamically scale server cores in response to demand.
 
 ### Chat
 
-**Party**: Connect players with low-latency peer-to-peer communication.
+**Party**: Connect players through low-latency peer-to-peer communication.
 
-**Text and Voice Chat**: Facilitate accessible voice chat, transcription and translation.
+**Text and Voice Chat**: Facilitate accessible voice chat, transcription, and translation.
 
 **Accessibility**: Use automated speech-to-text transcription and voice synthesis to make communication simple for everyone.
 
-**Real-Time Translation**: Break down global barriers and grow player concurrency by translating voice and text chat between more than 30 different languages.
+**Real-Time Translation**: Break down global barriers, and grow player concurrency by translating voice and text chat between more than 30 different languages.
 
-**Encryption**: Ensure secure player communications.
+**Encryption**: Ensure that communications between players are secure.
 
 ### Leaderboards and Statistics
 
 **Tournaments and Leaderboards**: Facilitate permanent or time-limited competitions amongst friends or strangers.
 
-**Scheduling**: Reset leaderboards on a schedule and archive standings so players can view past results.
+**Scheduling**: Reset leaderboards on a schedule, and archive standings so players can view past results.
 
-**Prizes**: Reward players based on their actions and leaderboard ranks.
-
-**Cheat Prevention**: Defend against unwanted behavior and remove fraudulent players and accounts.
+**Prizes**: Reward players according to their actions and leaderboard ranks.
 
 ## LiveOps
 
 ### Engagement and Retention
 
-**Game Manager Web Portal**: A shared space (with roles and access permissions) where studio members can build, configure and operate your game.
+**Game Manager Web Portal**: Provide<!--added this  verb for consistency with the other items on this list--> a shared space (with roles and access permissions) where studio members can build, configure, and operate your game.
 
-**Daily Reports**: Evaluate your game's performance through the lens of the top metrics used across the industry, pre-calculated for you daily.
+**Daily Reports**: Evaluate your game's performance through the lens of the top metrics used across the industry and pre-calculated for you daily.
 
 **Player Profiles**: Track players across authentication services and platforms.
 
 **Customization**: Use server-hosted player data and logic to build custom game mechanics.
 
-**Achievement Systems**: Use the rule engine and custom player events to build a powerful achievements system.
+**Achievement Systems**: Use the rule engine and custom player events to build a powerful system of achievements.
 
 **Real-Time Segmentation**: Act immediately on targeted groups of players.
 
-**Player Communication**: Talk to your community with push notifications, emails, and message-of-the-day pop-ups.
+**Player Communication**: Talk to your community through push notifications, emails, and message-of-the-day pop-ups.
 
 ### Content Management
 
-**Title Data**: - Manage your game configuration remotely.
+**Title Data**: Manage your game configuration remotely.
 
-**Item Catalog**: Configure your catalog of items available for in-app granting or purchase, and update at any time.
-
-**Content Delivery Network**: Upload, host and deliver game assets via Game Manager.
+**Item Catalog**: Configure your catalog of items available for in-app granting or purchase, and update it at any time.
 
 ### A/B Testing
 
@@ -102,15 +94,15 @@ PlayFab provides the following services:
 
 ### Monetization
 
-**Stores and Sales**: Target player segments with personalized store offers and support payments with Xbox, Steam, Google, PayPal and more.
+**Stores and Sales**: Target player segments with personalized store offers, and support payments with Xbox, Steam, Google, PayPal, and more.
 
-**Virtual Economy**: Mint promotional coupons and virtual currencies with support for setting initial balances and optional auto-recharge.
+**Virtual Economy**: Mint promotional coupons and virtual currencies with support for <!--"mint... with support for" is not completely clear-->setting initial balances and optional auto-recharge.
 
-**User Generated Content**: Empower players to create, upload and search for moderated content.
+**User Generated Content**: Empower players to create, upload, and search for moderated content.
 
-**Drop Tables**: Craft attractive bundles for first-time or regular users and stimulate demand with item scarcity.
+**Drop Tables**: Craft attractive bundles for first-time or regular users, and stimulate demand with item scarcity.
 
-**Fraud Prevention**: Use server-side receipt validation to make sure purchases are genuine before completion.
+**Fraud Prevention**: Use server-side validation of receipts to make sure purchases are genuine, before they are completed.
 
 ### Automation
 
@@ -126,11 +118,11 @@ PlayFab provides the following services:
 
 **Real-Time Rules Engine**: Set up powerful actions and triggers that respond to PlayStream events.
 
-**Real-Time Segmentation**: Use data properties to bucket players into segments and trigger actions as players enter or exit those segments.
+**Real-Time Segmentation**: Use data properties to bucket players into segments and to trigger actions as the players enter or exit those segments.
 
-**Event Filter and Search**: Zoom in on a time slice to analyze players, events and error conditions in detail.
+**Event Filter and Search**: Zoom in on a time slice to analyze players, events, and error conditions in detail.
 
-**Reports**: Review summaries of your game's daily and monthly performance with automatic reports available by daily email and on-demand.
+**Reports**: Review summaries of your game's daily and monthly performance, with automatic reports emailed daily and on-demand.
 
 ### Data Management
 
@@ -140,9 +132,9 @@ PlayFab provides the following services:
 
 ### Compliance
 
-**GDPR**: PlayFab is committed to providing features that help you to be GDPR compliant and providing you with the hooks you need to allow players to review and delete their data.
+**GDPR**: PlayFab is committed to providing (1) features that help you be GDPR compliant and (2) the hooks you need to allow players to review and delete their data.
 
-**COPPA**: PlayFab is in use today by COPPA compliant games.
+**COPPA**: As with GDPR, PlayFab features are designed to give developers a clear path to COPPA compliance.
 
 ## SDKs
 
@@ -177,13 +169,13 @@ SDKs are available for most popular engines and platforms.
 
 ## Support
 
-**Documentation**: Get started quickly with tutorials, samples, and comprehensive reference documentation.
+**Documentation**: Get started quickly, with tutorials, samples, and comprehensive reference documentation.
 
-**Forums**: Learn from experts and share your knowledge in the community forums.
+**Forums**: Learn from experts, and share your knowledge in the community forums.
 
-**Slack**: Join channels for ongoing conversations with other developers and direct communication with PlayFab Developer Success.
+**Slack**: Join channels for ongoing conversations with other developers and for direct communication with PlayFab Developer Success.
 
-**Real-Time Service Health**: Visit status.playfab.com for current and historical service health information.
+**Real-Time Service Health**: Visit status.playfab.com for current and historical information on service health.
 
 **Tickets**: Get enterprise-level ticketed support.
 
