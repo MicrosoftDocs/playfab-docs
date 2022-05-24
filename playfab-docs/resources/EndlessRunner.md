@@ -51,6 +51,8 @@ public GetPlayerCombinedInfoRequestParams InfoRequestParams;
 
 ![Game Manager Settings](./images/GameManagerSettings.png)
 
+The following code sample uses class [PlayFabAuthService](https://github.com/PlayFab/PlayFab-Samples/blob/master/VideoTutorialSamples/PlayFabAuthentication/Assets/PlayFabUI/Demo/Scripts/PlayFabAuthService.cs).
+
 ### Modify or add the `Awake()` method
 
 ```C#
