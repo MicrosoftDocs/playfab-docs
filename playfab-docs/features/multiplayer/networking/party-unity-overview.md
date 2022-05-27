@@ -21,11 +21,13 @@ Party Unity plugin is available for download as a Unity Asset package. It is cur
 - Microsoft Game Core (GDK)*, Windows, iOS, Android:
 https://github.com/playfab/PlayFabPartyUnity (public access)
 - Sony PlayStation&reg;:
-  - PS4: https://dev.azure.com/PlayFabPrivate/PS4/_git/PlayFabPartyUnityPS4 (restricted access by request to Microsoft Representative)
-  - PS5: https://dev.azure.com/PlayFabPrivate/PS5/_git/PlayFabPartyUnityPS5 (restricted access by request to Microsoft Representative)
+  - PlayStation&#174;4: https://dev.azure.com/PlayFabPrivate/PS4/_git/PlayFabPartyUnityPS4 (restricted access by request to Microsoft Representative)
+  - PlayStation&#174;5: https://dev.azure.com/PlayFabPrivate/PS5/_git/PlayFabPartyUnityPS5 (restricted access by request to Microsoft Representative)
 - Nintendo Switch&trade;: https://dev.azure.com/PlayFabPrivate/Switch/_git/PlayFabPartyUnitySwitch (restricted access by request to Microsoft Representative)
 
 *- The underlying Party libraries for GDK are not included in plugin (see below).
+
+"PlayStation" is a registered trademark or trademark of Sony Interactive Entertainment Inc.
 
 ## What API features are provided by Party Unity plugin?
 - Game networking
@@ -38,8 +40,8 @@ https://github.com/playfab/PlayFabPartyUnity (public access)
     - Windows
     - iOS
     - Android
-    - PS4
-    - PS5
+    - PS4&#8482;
+    - PS5&#8482;
     - Switch
 - Support for cross-play & cross-talk across the above platforms
 - Party Cognitive Services
@@ -47,6 +49,10 @@ https://github.com/playfab/PlayFabPartyUnity (public access)
     - Real-time voice chat transcription
     - Real-time voice chat translation
     - Text-to-speech synthesis
+
+"PS4" is a registered trademark or trademark of Sony Interactive Entertainment Inc.
+
+"PS5" is a registered trademark or trademark of Sony Interactive Entertainment Inc.
 
 ## What is included in Party Unity plugin?
 - Simplified top-level Party API written in Unity C# provided by `PlayFabMultiplayerManager` class and prefab for easier integration of user's Unity game with the core features of Party library
