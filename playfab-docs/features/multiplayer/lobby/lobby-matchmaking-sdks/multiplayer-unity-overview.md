@@ -55,7 +55,7 @@ In order to provide a better guidance on compatibility between versions download
 X.X.X.Y-(distribution-point-indicator).Z
 ```
 
-For example, `1.2.0.3-gdk.0` (a version downloaded from the GDK repo with restricted access) or `1.2.0.3-ps5.0` (a version with Multiplayer binaries only for PS5, downloaded from the PS5 repo with restricted access).
+For example, `1.2.0.3-gdk.0` (a version downloaded from the GDK repo with restricted access) or `1.2.0.3-ps5.0` (a version with Multiplayer binaries only for PlayStation&#174;5, downloaded from the PS5&#8482; repo with restricted access).
 
 Version components:
 
@@ -65,6 +65,10 @@ Version components:
 - `Z` - an incremental index of any modifications unique to the distribution point (for example, Multiplayer binaries updated/patched for a specific platform only).
 
 A higher number in any version component means a newer version, by significance from left to right.
+
+“PlayStation” is a registered trademark or trademark of Sony Interactive Entertainment Inc.
+
+"PS5" is a registered trademark or trademark of Sony Interactive Entertainment Inc.
 
 ### Compatibility between versions from different distribution points
 

@@ -5,7 +5,7 @@ description: "Information specific to the *CreateLocalChatUserCompleted* type of
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 11/01/2019
+ms.date: 04/22/2022
 ---
 
 # PartyXblCreateLocalChatUserCompletedStateChange  
@@ -15,12 +15,12 @@ Information specific to the *CreateLocalChatUserCompleted* type of state change.
 ## Syntax  
   
 ```cpp
-typedef struct PartyXblCreateLocalChatUserCompletedStateChange {  
+struct PartyXblCreateLocalChatUserCompletedStateChange : PartyXblStateChange {  
     PartyXblStateChangeResult result;  
     PartyError errorDetail;  
     void* asyncIdentifier;  
     PartyXblLocalChatUser* localChatUser;  
-} PartyXblCreateLocalChatUserCompletedStateChange  
+}  
 ```
   
 ### Members  

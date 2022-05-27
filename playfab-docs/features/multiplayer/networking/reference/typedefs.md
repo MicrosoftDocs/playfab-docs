@@ -1,16 +1,16 @@
 ---
 author: jdeweyMSFT
-title: "Party Typedefs"
-description: TBD
+title: "PlayFab Party Typedefs"
+description: Convenience typedefs defined for PlayFab Party
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
 ms.date: 09/25/2019
 ---
 
-# Party Typedefs
+# PlayFab Party Typedefs
 
-Party uses several typedefs for convenient declarations of arrays of core types. It also provides typedefs for a few basic types to add semantic meaning and aid in static analysis. Macros are  provided for dealing with `PartyError` return codes.
+The PlayFab Party library uses several typedefs for convenient declarations of arrays of core types. It also provides typedefs for a few basic types to add semantic meaning and aid in static analysis. Macros are  provided for dealing with `PartyError` return codes.
 
 ## Basic types
 

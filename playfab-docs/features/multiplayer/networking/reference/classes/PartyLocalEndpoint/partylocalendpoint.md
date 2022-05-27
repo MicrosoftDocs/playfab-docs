@@ -1,11 +1,11 @@
 ---
 author: jdeweyMSFT
 title: "PartyLocalEndpoint"
-description: TBD
+description: Represents a local endpoint.
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 09/25/2019
+ms.date: 04/22/2022
 ---
 
 # PartyLocalEndpoint  

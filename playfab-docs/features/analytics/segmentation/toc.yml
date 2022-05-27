@@ -7,3 +7,5 @@
   items:
   - name: Segment Configuration
     href: segment-configuration.md
+  - name: Export Players of a Segment
+    href: export-players-in-a-segment.md

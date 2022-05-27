@@ -1,11 +1,11 @@
 ---
 author: jdeweyMSFT
 title: "PartyLocalChatControl"
-description: TBD
+description: The management class for chat operations related to the local device.
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 04/07/2021
+ms.date: 04/22/2022
 ---
 
 # PartyLocalChatControl  
