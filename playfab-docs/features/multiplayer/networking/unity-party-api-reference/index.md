@@ -26,6 +26,7 @@ ms.date: 06/22/2020
 | [ChatMessageType](enums/partyunitychatmessagetype.md) |  The type of delivery guarantee for a message. |
 | [ChatState](enums/partyunitychatstate.md) | The visual state of the player for rendering in the game's UI.  |
 | [DeliveryOption](enums/partyunitydeliveryoption.md) | The type of delivery guarantee for a message.  |
+| [DirectPeerConnectivityOptions](enums/partyunitydirectpeerconnectivityoptions.md) | Flags controlling the attempted use of direct peer-to-peer connectivity among devices in a network.  |
 | [LogLevelType](enums/partyunitylogleveltype.md) | The amount of logging that is enabled.  |
 | [PlayFabMultiplayerManagerErrorType](enums/partyunityplayfabmultiplayermanagererrortype.md) | The types of errors PlayFabMultiplayerManager can raise.  |
 | [PlayFabMultiplayerManagerState](enums/partyunityplayfabmultiplayermanagerstate.md) | The possible states that PlayFabMultiplayerManager can be in.  |

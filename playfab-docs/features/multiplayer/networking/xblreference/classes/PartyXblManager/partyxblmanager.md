@@ -1,11 +1,11 @@
 ---
 author: ScottMunroMS
 title: "PartyXblManager"
-description: TBD
+description: The primary management class for interacting with the Party Xbox Live Helper library.
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 01/17/2020
+ms.date: 04/22/2022
 ---
 
 # PartyXblManager  

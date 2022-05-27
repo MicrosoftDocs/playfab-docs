@@ -33,7 +33,7 @@ method](../signalr-hub.md#server-methods) responses.
 | --- | --- |
 | **`Success`** |  |
 | **`InternalServerError`** | An error occurred in the service. The request can be retried a few times with exponential backoff. |
-| **`SharedConnectionEntityLimitExceeded`** | An [AddEntityToSession](../server-methods/add-entity-to-session.md) request attempted to add more than `8` entities to the connection. |
+| **`SharedSessionEntityLimitExceeded`** | An [AddEntityToSession](../server-methods/add-entity-to-session.md) request attempted to add more than `8` entities to the connection. |
 | **`UnsupportedEntityType`** | An [AddEntityToSession](../server-methods/add-entity-to-session.md) request attempted to add an entity type other than [title_player_account](../../data/entities/available-built-in-entity-types.md#title_player_account) to the session. |
 | **`InvalidRequest`** | Fields in the request were invalid. |
 | **`Unavailable`** | The service is temporarily unavailable. The request can be retried a few times with exponential backoff. |

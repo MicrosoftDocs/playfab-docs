@@ -1,11 +1,11 @@
 ---
 author: jdeweyMSFT
 title: "PartyChatControl"
-description: TBD
+description: The management class for chat operations.
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 02/10/2020
+ms.date: 04/22/2022
 ---
 
 # PartyChatControl  

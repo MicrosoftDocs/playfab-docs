@@ -5,7 +5,7 @@ description: "Information specific to the *LocalChatUserDestroyed* type of state
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 11/01/2019
+ms.date: 04/22/2022
 ---
 
 # PartyXblLocalChatUserDestroyedStateChange  
@@ -15,11 +15,11 @@ Information specific to the *LocalChatUserDestroyed* type of state change.
 ## Syntax  
   
 ```cpp
-typedef struct PartyXblLocalChatUserDestroyedStateChange {  
+struct PartyXblLocalChatUserDestroyedStateChange : PartyXblStateChange {  
     PartyXblLocalChatUser* localChatUser;  
     PartyXblLocalChatUserDestroyedReason reason;  
     PartyError errorDetail;  
-} PartyXblLocalChatUserDestroyedStateChange  
+}  
 ```
   
 ### Members  

@@ -262,3 +262,17 @@ Save HelloPartyLogic.cs and press Play in the Unity Editor.
         player.IsMuted = true;
     }
     ```
+## Connecting to a network with custom peer connectivity configuration options
+
+This part of the guide shows you how to Create and Join a network with custom peer connectity configuration options. The default
+option is P2P, however, using any combination of the flags presented here: [DirectPeerConnectivityOptions](unity-party-api-reference/enums/partyunitydirectpeerconnectivityoptions.md), the user can modify this option. The example below shows how P2P is set.
+
+1. Open the HelloPartyLogic.cs  script. In the `OnLoginSuccess` method, add the following code to create and join a network:
+
+    ```csharp
+    PlayfabNetworkConfiguration networkConfiguration = new PlayfabNetworkConfiguration();
+    networkConfiguration.DirectPeerConnectivityOptions = PARTY_DIRECT_PEER_CONNECTIVITY_OPTIONS_ANY_PLATFORM_TYPE |
+                                                         PARTY_DIRECT_PEER_CONNECTIVITY_OPTIONS_ANY_ENTITY_LOGIN_PROVIDER;
+    PlayFabMultiplayerManager.Get().CreateAndJoinNetwork(networkConfiguration);
+    PlayFabMultiplayerManager.Get().OnNetworkJoined += OnNetworkJoined;
+    ```

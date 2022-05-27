@@ -1,5 +1,7 @@
 - name: Overview
   href: lobby-matchmaking-sdks.md
+- name: C++ SDK Release notes
+  href: lobby-and-matchmaking-release-notes.md
 - name: Unreal Engine 4
   items:
   - name: Multiplayer Unreal Online Subsystem (OSS)

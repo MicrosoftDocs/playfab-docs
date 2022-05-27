@@ -5,7 +5,7 @@ description: "Information specific to the *GetEntityIdsFromXboxLiveUserIdsComple
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 01/17/2020
+ms.date: 04/22/2022
 ---
 
 # PartyXblGetEntityIdsFromXboxLiveUserIdsCompletedStateChange  
@@ -15,7 +15,7 @@ Information specific to the *GetEntityIdsFromXboxLiveUserIdsCompleted* type of s
 ## Syntax  
   
 ```cpp
-typedef struct PartyXblGetEntityIdsFromXboxLiveUserIdsCompletedStateChange {  
+struct PartyXblGetEntityIdsFromXboxLiveUserIdsCompletedStateChange : PartyXblStateChange {  
     PartyXblStateChangeResult result;  
     PartyError errorDetail;  
     PartyString xboxLiveSandbox;  
@@ -23,7 +23,7 @@ typedef struct PartyXblGetEntityIdsFromXboxLiveUserIdsCompletedStateChange {
     void* asyncIdentifier;  
     uint32_t entityIdMappingCount;  
     const PartyXblXboxUserIdToPlayFabEntityIdMapping* entityIdMappings;  
-} PartyXblGetEntityIdsFromXboxLiveUserIdsCompletedStateChange  
+}  
 ```
   
 ### Members  

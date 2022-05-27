@@ -1,11 +1,11 @@
 ---
 author: jdeweyMSFT
 title: "PartyManager"
-description: TBD
+description: The primary management class for interacting with the Party library.
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 06/22/2021
+ms.date: 04/22/2022
 ---
 
 # PartyManager  

@@ -28,3 +28,7 @@
   items:
   - name: Client SDK reference
     href: playfabmultiplayerreference-cpp\pflobby\pflobby_members.md
+- name: Release notes
+  items:
+  - name: C++ SDK Release notes
+    href: lobby-matchmaking-sdks/lobby-and-matchmaking-release-notes.md

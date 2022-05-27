@@ -5,7 +5,7 @@ description: "Mapping between an Xbox Live User Id and a PlayFab Entity Id."
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 01/17/2020
+ms.date: 04/22/2022
 ---
 
 # PartyXblXboxUserIdToPlayFabEntityIdMapping  
@@ -15,10 +15,10 @@ Mapping between an Xbox Live User Id and a PlayFab Entity Id.
 ## Syntax  
   
 ```cpp
-typedef struct PartyXblXboxUserIdToPlayFabEntityIdMapping {  
+struct PartyXblXboxUserIdToPlayFabEntityIdMapping {  
     uint64_t xboxLiveUserId;  
     PartyString playfabEntityId;  
-} PartyXblXboxUserIdToPlayFabEntityIdMapping  
+}  
 ```
   
 ### Members  
