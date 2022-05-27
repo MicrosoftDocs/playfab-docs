@@ -20,7 +20,7 @@ This topic provides a high-level overview of Party features. For details, see [P
 
 ## Features
 
-Party is designed for use on many platforms like Android, iOS, Nintendo Switch, Google Stadia, PlayStation, PC, and Xbox. Party also provides C/C++ SDKs and SDKs for use with game engines like Unity and Unreal. For a complete list, see [Party SDKs](party-sdks.md).
+Party is designed for use on many platforms like Android, iOS, Nintendo Switch, Google Stadia, PlayStation&#174;, PC, and Xbox. Party also provides C/C++ SDKs and SDKs for use with game engines like Unity and Unreal. For a complete list, see [Party SDKs](party-sdks.md).
 
 * [Interoperable multiplayer infrastructure](party-features.md#interoperable-multiplayer-infrastructure)
     * Cross-network/cross-platform multiplayer game experiences.
@@ -46,6 +46,8 @@ Party is a managed game service. Discounts are available when you use Party with
 If you are interested, here is a video of our presentation at Microsoft Game Dev 2021. The presentation explains the above Party features in greater detail with demos and includes a quickstart tutorial. 
 
 > [!VIDEO https://www.youtube.com/embed/z40-nBJsc74]
+
+“PlayStation” is a registered trademark or trademark of Sony Interactive Entertainment Inc.
 
 ## See also
 

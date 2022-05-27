@@ -50,4 +50,3 @@ ms.date: 12/09/2021
 | [PartyXblStateChangeResult](enums/partyxblstatechangeresult.md) | Results for operations that generate state changes.|  
 | [PartyXblStateChangeType](enums/partyxblstatechangetype.md) | The types of state changes that can occur.|  
 | [PartyXblThreadId](enums/partyxblthreadid.md) | Threads that Party Xbox Live Helper library uses for internal purposes.|  
-

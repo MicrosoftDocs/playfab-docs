@@ -1,11 +1,11 @@
 ---
 author: jdeweyMSFT
 title: "PartyAudioManipulationSinkStream"
-description: TBD
+description: The management class for submitting audio to an audio sink stream.
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 02/13/2020
+ms.date: 04/22/2022
 ---
 
 # PartyAudioManipulationSinkStream  
