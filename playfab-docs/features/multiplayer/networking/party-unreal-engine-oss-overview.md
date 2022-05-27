@@ -30,10 +30,10 @@ PlayFab OSS works alongside the PlayFab SDK marketplace plugin, which provides o
   - Nintendo Switch
 - Support for cross-play & cross-talk across the above platforms
 - Azure Cognitive Services
-  - Real-time text chat translation
-  - Real-time voice chat transcription
-  - Real-time voice chat transcription translation
-  - Text-to-speech synthesis
+    - Real-time text chat translation
+    - Real-time voice chat transcription
+    - Real-time voice chat transcription translation
+    - Text-to-speech synthesis 
 
 ## Which versions of Unreal Engine are supported?
 
