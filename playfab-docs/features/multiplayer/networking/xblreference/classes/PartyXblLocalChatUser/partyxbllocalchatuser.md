@@ -1,11 +1,11 @@
 ---
 author: ScottMunroMS
 title: "PartyXblLocalChatUser"
-description: TBD
+description: The management class for Xbox Live operations related to a local chat user. Inherits from [PartyXblChatUser](../PartyXblChatUser/partyxblchatuser.md).
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 11/01/2019
+ms.date: 04/22/2022
 ---
 
 # PartyXblLocalChatUser  

@@ -47,7 +47,7 @@ Select authentication providers based on what is most meaningful for the players
 
 If you're unable to access the above secure link, see [Request access](https://aka.ms/pf-partner-request-access).
 
-“PlayStation” is a registered trademark or trademark of Sony Interactive Entertainment Inc.
+"PlayStation" is a registered trademark or trademark of Sony Interactive Entertainment Inc.
 
 ### Steam
 

@@ -5,7 +5,7 @@ description: "Information specific to the *TokenAndSignatureRequested* type of s
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 04/07/2021
+ms.date: 04/22/2022
 ---
 
 # PartyXblTokenAndSignatureRequestedStateChange  
@@ -15,7 +15,7 @@ Information specific to the *TokenAndSignatureRequested* type of state change.
 ## Syntax  
   
 ```cpp
-typedef struct PartyXblTokenAndSignatureRequestedStateChange {  
+struct PartyXblTokenAndSignatureRequestedStateChange : PartyXblStateChange {  
     uint32_t correlationId;  
     PartyString method;  
     PartyString url;  
@@ -26,7 +26,7 @@ typedef struct PartyXblTokenAndSignatureRequestedStateChange {
     PartyBool forceRefresh;  
     PartyBool allUsers;  
     PartyXblLocalChatUser* localChatUser;  
-} PartyXblTokenAndSignatureRequestedStateChange  
+}  
 ```
   
 ### Members  

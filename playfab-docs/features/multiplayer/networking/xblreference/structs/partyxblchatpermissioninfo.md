@@ -5,7 +5,7 @@ description: "Information regarding a required chat permission."
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 11/01/2019
+ms.date: 04/22/2022
 ---
 
 # PartyXblChatPermissionInfo  
@@ -15,10 +15,10 @@ Information regarding a required chat permission.
 ## Syntax  
   
 ```cpp
-typedef struct PartyXblChatPermissionInfo {  
+struct PartyXblChatPermissionInfo {  
     PartyChatPermissionOptions chatPermissionMask;  
     PartyXblChatPermissionMaskReason reason;  
-} PartyXblChatPermissionInfo  
+}  
 ```
   
 ### Members  
