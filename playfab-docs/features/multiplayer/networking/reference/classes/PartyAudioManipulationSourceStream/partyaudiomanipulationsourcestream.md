@@ -1,11 +1,11 @@
 ---
 author: jdeweyMSFT
 title: "PartyAudioManipulationSourceStream"
-description: TBD
+description: The management class for obtaining audio from an audio source stream.
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 02/13/2020
+ms.date: 04/22/2022
 ---
 
 # PartyAudioManipulationSourceStream  

@@ -1,11 +1,11 @@
 ---
 author: jdeweyMSFT
 title: "PartyNetwork"
-description: TBD
+description: Represents a network.
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab
-ms.date: 08/05/2020
+ms.date: 04/22/2022
 ---
 
 # PartyNetwork  
