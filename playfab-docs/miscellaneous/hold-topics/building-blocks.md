@@ -16,9 +16,11 @@ Below is a list of fundamental concepts on which PlayFab is based. We have terme
 
 ## Accounts
 
-The PlayFab Account system is responsible for verifying client details, and issuing authorization tickets. We support most common 3rd party providers, such as Facebook, Steam, iOS devices, Android devices, Xbox, and PSN.
+The PlayFab Account system is responsible for verifying client details, and issuing authorization tickets. We support most common 3rd party providers, such as Facebook, Steam, iOS devices, Android devices, Xbox, and PlayStation&#8482;Network.
 
 PlayFab clients must authenticate before accessing our APIs. Additionally, our data models revolve around the player account, making it easy to save and retrieve data specific to the current player.
+
+“PlayStation” is a registered trademark or trademark of Sony Interactive Entertainment Inc.
 
 ## Actions (PlayStream)
 
