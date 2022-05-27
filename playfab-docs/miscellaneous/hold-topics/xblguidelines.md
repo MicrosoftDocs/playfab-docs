@@ -20,9 +20,11 @@ PlayFab and Xbox Live have collaborated to allow Xbox Live managed partners to p
 2. Use [PlayFab Matchmaking](../../features/multiplayer/matchmaking/index.md) to match players.
 3. Use [PlayFab Party](../../features/multiplayer/networking/index.md) to connect players for device-to-device networking or chat.
 
-If you are building a cross-network game, you will need to use the equivalent social APIs from Steam, PlayStation, etc. for those platforms, and comply with any platform policies governing multiplayer and cross-network activity.
+If you are building a cross-network game, you will need to use the equivalent social APIs from Steam, PlayStation&#174;, etc. for those platforms, and comply with any platform policies governing multiplayer and cross-network activity.
 
 PlayFab's desire is for game studios to be able to use interoperable matchmaking, networking, and chat infrastructure on all platforms. Usage associated with Xbox Live logged-in players and complying with [Xbox Live Integration Policies](https://aka.ms/XboxLivePolicy) will be discounted (see `LoginWithXbox()`).
+
+“PlayStation” is a registered trademark or trademark of Sony Interactive Entertainment Inc.
 
 ## What if a PlayFab Party has a mix of Xbox Live and non-Xbox Live players?
 
