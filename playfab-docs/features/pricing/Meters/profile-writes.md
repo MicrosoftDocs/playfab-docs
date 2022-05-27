@@ -316,7 +316,7 @@ The following APIs cause the Profile writes meter to increment.
     Unlinks an OpenID Connect account from a user's PlayFab account, based on the connection ID of an existing relationship between a title and an Open ID Connect provider.
 
 - [UnlinkPSNAccount](/rest/api/playfab/client/account-management/unlinkpsnaccount?)
-    Unlinks the related PSN account from the user's PlayFab account.
+    Unlinks the related PSN&#8482; account from the user's PlayFab account.
 
 - [UnlinkSteamAccount](/rest/api/playfab/client/account-management/unlinksteamaccount?)
     Unlinks the related Steam account from the user's PlayFab account.
@@ -360,7 +360,9 @@ Creates and updates the title-specific custom data for the user which is readabl
 - [UpdateUserTitleDisplayName](/rest/api/playfab/client/account-management/updateusertitledisplayname?)
     Updates the title specific display name for the user
 
-“PlayStation” is a registered trademark or trademark of Sony Interactive Entertainment Inc.
+"PlayStation" is a registered trademark or trademark of Sony Interactive Entertainment Inc.
+
+"PSN" is a registered trademark or trademark of Sony Interactive Entertainment Inc.
 
 ## Data APIs
 
