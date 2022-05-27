@@ -24,7 +24,9 @@ This is the most common login mechanism to use initially (especially for mobile 
 
 ## Recoverable login mechanisms
 
-Recoverable login mechanisms require some identity information from the player. The player must either authenticate with an external provider (e.g. Facebook, iOS, Google, Kongregate, PlayStation, Steam, Xbox Live, etc.), or manage the login directly with PlayFab, by using either a user name or email address and password.
+Recoverable login mechanisms require some identity information from the player. The player must either authenticate with an external provider (e.g. Facebook, iOS, Google, Kongregate, PlayStation&#174;, Steam, Xbox Live, etc.), or manage the login directly with PlayFab, by using either a user name or email address and password.
+
+“PlayStation” is a registered trademark or trademark of Sony Interactive Entertainment Inc.
 
 ## Best practices
   
