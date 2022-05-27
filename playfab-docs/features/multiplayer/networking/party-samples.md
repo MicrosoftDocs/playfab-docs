@@ -18,6 +18,8 @@ If there's a specific sample that you'd like to have, let us know by writing a p
 
 Access to samples for Nintendo Switch, PlayStation&#174;4, PlayStation&#174;5, Google Stadia, PC (GDK), and Xbox (GDK) requires special approval and adherence to platform policies. For more information, see [Request access for SDKs and samples](request-access-for-sdks-samples.md).
 
+"PlayStation" is a registered trademark or trademark of Sony Interactive Entertainment Inc.
+
 ## List of samples
 
 | Sample | Description | Platform/operating system |
