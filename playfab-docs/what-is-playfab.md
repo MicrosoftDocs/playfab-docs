@@ -32,11 +32,13 @@ PlayFab provides the following services:
 
 ### Cross-Network Identity and Data
 
-**Player Authentication**: Start with frictionless authentication and let players link accounts to roam across Windows, Xbox, Steam, PSN, Nintendo, Facebook, iOS, Android and more.
+**Player Authentication**: Start with frictionless authentication and let players link accounts to roam across Windows, Xbox, Steam, PlayStation&#8482;Network, Nintendo, Facebook, iOS, Android and more.
 
 **Player Data Management**: Share player information and game state across devices.
 
 **Matchmaking** - Use the proven capabilities of Xbox Live's SmartMatch on any platform to help players find opponents.
+
+"PlayStation" is a registered trademark or trademark of Sony Interactive Entertainment Inc.
 
 ### Multiplayer Servers
 
