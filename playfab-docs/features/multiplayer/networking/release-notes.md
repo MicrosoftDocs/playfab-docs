@@ -25,18 +25,20 @@ April 21, 2022
 Mar 16, 2022
 ### Bug fixes
 
-- Playstation4, Playstation5: Fixed a crash that occurred when there was no audio device after the audio devices were removed.
+- PlayStation&#174;4, PlayStation&#174;5: Fixed a crash that occurred when there was no audio device after the audio devices were removed.
 - Switch: Fixed an issue that caused web requests to fail when multiple PlayFab transactions were triggered.
+
+“PlayStation” is a registered trademark or trademark of Sony Interactive Entertainment Inc.
 
 ## 1.7.6
 Feb 8, 2022
 ### Performance improvements
 
-- Windows, XDK, Nintendo Switch, Playstation4, Playstation5: Removed two worker threads and perform relevant work on a preexisting, lower frequency work thread. The Microsoft Game Development Kit (GDK) version of the library already had this coalesced work behavior.
+- Windows, XDK, Nintendo Switch, PlayStation 4, PlayStation 5: Removed two worker threads and perform relevant work on a preexisting, lower frequency work thread. The Microsoft Game Development Kit (GDK) version of the library already had this coalesced work behavior.
 
 ### Bug fixes
 
-- iOS, Android, Switch, Playstation4, Playstation5, and Stadia: Fixed a small amount of memory allocated during initialization not being properly freed during cleanup.
+- iOS, Android, Switch, PlayStation 4, PlayStation 5, and Stadia: Fixed a small amount of memory allocated during initialization not being properly freed during cleanup.
 - Avoid reporting PartyChatTextReceivedOptions::FilteredDueToError flag in PartyChatTextReceivedStateChange when text moderation is not enabled.
 
 ## 1.7.5
