@@ -24,7 +24,7 @@ From the Servers page, you can see details of your Virtual Machines (VMs). This 
 * Number of players connected
 * Latest Activity
 
-To find more servers you can change the **Region** filter at the top of the page, search for a server, or sort based on the filters next to **Display**. 
+To find more servers you can change the **Region** filter at the top of the page, search for a server, or sort based on the filters next to **Display**. If you would like to request a server, you can select the **Request server** button located on the top right portion of the page.
 
 ![PlayFab Multiplayer Servers build servers overview page](media/build-server-overview.png)
 
