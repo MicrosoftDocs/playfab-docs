@@ -21,7 +21,7 @@ Adhering to platform policies, we need to ensure that you're a registered develo
 
 If you're not yet a registered developer for the previously mentioned platforms and want to become one, go to their developer page to learn more. To become a registered developer for Xbox and PC, go to [ID@Xbox](https://www.xbox.com/Developers/id).
 
-"PlayStation" is a registered trademark or trademark of Sony Interactive Entertainment Inc.
+“PlayStation” is a registered trademark or trademark of Sony Interactive Entertainment Inc.
 
 ## Switch and PlayStation
 
