@@ -28,6 +28,8 @@ If you're looking for the core PlayFab SDK that helps you implement most of our 
 
 "PlayStation" is a registered trademark or trademark of Sony Interactive Entertainment Inc.
 
+“PlayStation” is a registered trademark or trademark of Sony Interactive Entertainment Inc.
+
 ## By content type
 
 | SDK/library| Platform/operating system|
