@@ -11,6 +11,7 @@ ms.localizationpriority: medium
 ---
 
 # What is PlayFab?
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4YxiP]
 
 PlayFab is a complete backend platform for live games with managed game services, real-time analytics, and LiveOps. Boost your revenue and increase player engagement while cutting costs. This topic provides a high-level overview of the PlayFab features.
 
