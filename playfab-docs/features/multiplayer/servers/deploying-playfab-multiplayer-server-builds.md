@@ -12,9 +12,9 @@ ms.localizationpriority: medium
 
 # Create VMs
 
-This topic outlines the process to start deploying virtual machines (VMs) for your game servers.
+This article outlines the process to start deploying virtual machines (VMs) for your game servers.
 
-Using our service, you configure VMs to be automatically spun up globally as game servers according to your budget and demand. In order to do so, you do not explicitly create VMs but define parameters that determine how they get created on your behalf. This process is called deploying or creating a build for the VMs. 
+Using our service, you configure VMs to be automatically spun up globally as game servers according to your budget and demand. In order to do so, you don't explicitly create VMs but define parameters that determine how they get created on your behalf. This process is called deploying or creating a build for the VMs. 
 
 For general steps to deploy a build, see the section below. If you already have a build and want to update it, see [Safe deployment using alias](allocating-with-build-alias.md#safe-deployment-that-is-backwards-compatible).
 
@@ -31,9 +31,16 @@ Details about each available option are provided in [Build definition and config
 4. Determine network settings&mdash;port number and protocol
 5. Set other parameters such as maximum number of servers and number of standby servers for the regions
 
-Once you've provided a valid build definition, the build starts deploying. You will be automatically directed to the **Server** page. In 5-10 minutes, you will see standby machines for your build, as shown below.
+Once you've provided a valid build definition, the build starts deploying. You'll be automatically directed to the **Server** page. In 5-10 minutes, you'll see standby machines for your build, as shown below. 
 
 ![Successful deployment of build with standby machines](media/create-your-first-server/server-deployed.png)
+
+To see more information about your build select the name of your build you would like to drill into. On the build page you can see your build status, ID, creation date, region with number of servers, and more information, as seen below. 
+
+![Basic build information along with region configuration for servers](VMBuildPage.png)
+
+In order to see your servers, their status, and to easily request a server select the **Servers** tab at the top. To learn more read our documentation on [servers overview](build-server-overview.md)
+![Servers overview page](media/build-server-overview.PNG)
 
 ## Ways to deploy
 
@@ -47,7 +54,14 @@ To help you evaluate and develop using our servers, certain servers have limited
 To start deploying a build using our samples, see [Create your first server](create-your-first-server.md).
 
 > [!Tip]
-> When you're not using the servers during development, remember to turn them off. Servers in all states, including standby, are counted against your free allotment. You can set standby servers to zero using Game Manager under Region settings. Alternatively, use the PowerShell/APImethod to set **Regions.StandbyServer=0**. You can also delete the build to ensure all servers are turned off in Game Manager.
+> During development, shut off any unused or unhealthy regions to avoid VM core hour usage. Core hour usage begins during VM startup and continues until the VM is shut off. VMs in a region will not automatically be shut off unless the region's target standby servers reach 0, or a region is deleted. 
+
+### Shutting down VMs
+There are three ways to shut down VMs 
+1. Set a region's **target standby** to 0, this will shut down VMs for this region only.
+2. Delete a specific region from a build.
+3. Delete the whole build, this will shut down VMs across **all regions** for this build.
+
 
 ## See also
 
