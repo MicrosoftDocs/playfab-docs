@@ -40,7 +40,7 @@ The cross-platform C++ PlayFab SDK should not be used if there is a more specifi
 
 Specific PlayFab SDK is available for:
 * [Cocos2d-x PlayFab SDK](https://github.com/PlayFab/Cocos2d-xSDK)
-* [Unreal Engine PlayFab SDK at Unreal marketplace (external link)](https://www.unrealengine.com/marketplace/en-US/product/playfab-sdk)
+* [Unreal Engine PlayFab SDK at Unreal marketplace (external link)](https://www.unrealengine.com/marketplace/product/playfab-sdk)
 * [LuaSDK PlayFab SDK](https://github.com/PlayFab/LuaSdk)
 
 For a full list of the different PlayFab SDKs, see [Azure PlayFab SDK](../playfab-sdk-intro.md).

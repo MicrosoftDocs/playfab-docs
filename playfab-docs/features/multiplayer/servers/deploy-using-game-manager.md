@@ -36,19 +36,19 @@ Image below shows values used in the info section.
 > [!Note]
 > For Linux platform, you need to create your own container image. For more instructions, see [Create and deploy Linux container images](deploying-linux-based-builds.md). If you've already uploaded a container image, it will appear in the __Image__ dropdown. To use it, select the image.
 
-Once you have selected your OS type, you can then choose the server type. Based on the OS/Server type you'll have the following features you can enable.
+Once you've selected your OS type, you can then choose the server type. Based on the OS/Server type you'll have the following features you can enable.
 
-- Virtual Machine Metrics Preview: By enabling this it allows you to see system level metrics such as CPU, memory, network, etc. To learn more, read our [VM performance metrics (preview) article](vm-metrics.md)
+- Virtual Machine Metrics Preview: By enabling the metrics it allows you to see system level metrics such as CPU, memory, network, etc. To learn more, read our [VM performance metrics (preview) article](vm-metrics.md)
 - Windows Core Preview: Allows you to test the newest versions of Windows operating system on test builds to see how your game will run with the newer operation system. To learn more, read [OS patch level updates for Windows](os-patch-updates.md)
 - Automatic Crash Dump Collection: Allows you to enable automatic crash dump collection on your **Windows Container** server types. You can choose between doing a full, mini, or custom dump. To learn more, read [Enabling automatic collection of crash dumps](crash-dump-collection.md)
 
 ### Server details for Process mode
-Image below shows values used in the OS section when you select Windows as the platform but use Process based server type. There is also the option of using Linux process based servers as well. 
+Image below shows values used in the OS section when you select Windows as the platform but use Process based server type. There's also the option of using Linux process based servers as well. 
 ![Server details with Windows Process selected as OS and server type](media/WindowsProcess.PNG)
 
 
 ### Server details for Container mode
-Image below shows values used in the OS section when you select Linux as the platform but use Container based server type. There is also the option of using Windows container based servers as well. 
+Image below shows values used in the OS section when you select Linux as the platform but use Container based server type. There's also the option of using Windows container based servers as well. 
 ![Server details with Linux Container selected as OS and server type](media/LinuxContainer.PNG)
 
 ## Assets for builds
@@ -86,7 +86,7 @@ For example, in Game Manager for a container server type, you could specify:
 
 ![Network settings in Game Manager for container server type](media/create-your-first-server/server-network-settings-2.png)
 
-Then in your code you would do something like this
+Then in your code you would do something like the following
 ```C#
 int port = 7777; // since you already know the port
 GameServer gs = new GameServer(port);
@@ -135,10 +135,20 @@ After deploying builds, you can still modify the following parameters.
 To configure regional settings:
 * Go to the __Servers__ > __Builds__ page
 * Select the build you want to modify
-* On the __Regions__ tab and go to the **Servers by region** section
+* On the __Regions__ tab, go to the **Servers by region** section
 * Add/remove region and modify the server numbers
 
 ![Deployed builds in Game Manager](media/create-your-first-server/server-region-settings.png)
+
+> [!Tip]
+> During development, shut off any unused or unhealthy regions to avoid VM core hour usage. Core hour usage begins during VM startup and continues until the VM is shut off. VMs in a region will not automatically be shut off unless the region's target standby servers reach 0, or a region is deleted. 
+
+### Shutting down VMs
+There are three ways to shut down VMs 
+1. Set a region's **target standby** to 0, this will shut down VMs for this region only.
+2. Delete a specific region from a build.
+3. Delete the whole build, this will shut down VMs across **all regions** for this build.
+
 
 ## See also
 
