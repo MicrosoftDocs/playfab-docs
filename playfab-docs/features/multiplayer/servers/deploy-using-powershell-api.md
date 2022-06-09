@@ -12,9 +12,9 @@ ms.localizationpriority: medium
 
 # Deploy builds using PowerShell/API
 
-This topic provides an overview on how to deploy/create builds for VMs using Windows OS in PowerShell on a Windows 10 development device.
+This article provides an overview on how to deploy/create builds for VMs using Windows OS in PowerShell on a Windows 10 development device.
 
-When deploying a build using PowerShell/API, you are likely to be using a combination of using Game Manager and the APIs. Hence, the PowerShell/API commands are listed by functionality below.
+When deploying a build using PowerShell/API, you're likely to be using a combination of using Game Manager and the APIs. Hence, the PowerShell/API commands are listed by functionality below.
 
 If this is your first time deploying a build, we recommend deploying a build using the [Wrapper sample](wrapper-sample.md) because it comes with all the assets you need to actually deploy servers.
 
@@ -35,14 +35,14 @@ For more information about secret keys, see [Secret key management](../../../gam
 
 ## Install the PlayFab MultiplayerAPI PowerShell module
 
-1. Open Windows Powershell as an Administrator
+1. Open Windows PowerShell as an Administrator
 
-2. If you have previously installed [PlayFab Multiplayer Powershell](https://github.com/PlayFab/MultiplayerPowershell) module, uninstall it with following command. This module is now deprecated.
+2. If you have previously installed [PlayFab Multiplayer PowerShell](https://github.com/PlayFab/MultiplayerPowershell) module, uninstall it with following command. This module is now deprecated.
 
 ```powershell
 Uninstall-Package PlayFabMultiplayer
 ``` 
-To help you transition to the new module, see [Mapping commands](#mapping-commands) to find the new equivalent commands. Note that both the commands and arguments could be different.
+To help you transition to the new module, see [Mapping commands](#mapping-commands) to find the new equivalent commands. Be aware that both the commands and arguments could be different.
 
 3. Install the new [PlayFabMultiplayer API module](https://github.com/PlayFab/MpsPowershell)
 
@@ -82,9 +82,9 @@ If you receive an error that says `Title must have a valid payment instrument as
 
 ## Upload an asset
 
-Uploading an asset is mandatory when you are deploying a build for Windows servers. This is because your assets customizes the managed Windows container image.
+Uploading an asset is mandatory when you're deploying a build for Windows servers. This is because your assets customize the managed Windows container image.
 
-However, it is optional when deploying a build for Linux servers since you are able to customize the Linux container image. To learn more, see [Create Linux container images](deploying-linux-based-builds.md).
+However, it's optional when deploying a build for Linux servers since you're able to customize the Linux container image. To learn more, see [Create Linux container images](deploying-linux-based-builds.md).
 
 Run this command to upload an asset.
 
@@ -134,6 +134,15 @@ $buildResponse = New-PfBuild -BuildName ExampleBuild -ContainerFlavor CustomLinu
 $buildResponse | ConvertTo-Json -depth 5
 ```
 
+> [!Tip]
+> During development, shut off any unused or unhealthy regions to avoid VM core hour usage. Core hour usage begins during VM startup and continues until the VM is shut off. VMs in a region will not automatically be shut off unless the region's target standby servers reach 0, or a region is deleted. 
+
+### Shutting down VMs
+There are three ways to shut down VMs 
+1. Set a region's **target standby** to 0, this will shut down VMs for this region only.
+2. Delete a specific region from a build.
+3. Delete the whole build, this will shut down VMs across **all regions** for this build.
+
 ## List deployed builds
 
 To see a list of builds for your title, run the commands below.
@@ -144,7 +153,7 @@ Get-PfBuild | ConvertTo-Json -depth 5
 
 ### Request a multiplayer server
 
-After creating a build, one or more servers will be created after running your .exe file. These servers are now "standing by".
+Once you've created a build, one or more servers will be created after running your .exe file. These servers are now "standing by".
 
 You can see them when you list all the servers running our build using this command.
 
@@ -159,7 +168,7 @@ $sessionId = New-Guid
 $serverResponse = Request-PfMultiplayerServer -BuildId $buildResponse.data.BuildId -PreferredRegions @('EastUS') -SessionId $sessionId
 ```
 
-The response to that call includes an IPv4 address and port number that clients can connect to. In the case of WindowsRunnerCSharp.exe, it hosts a simple webserver so you can browse to the IPv4 address and port number to get a response:
+The response to that call includes an IPv4 address and port number that clients can connect to. For WindowsRunnerCSharp.exe, it hosts a simple webserver so you can browse to the IPv4 address and port number to get a response:
 
 ```powershell
 curl "http://$($serverResponse.data.Ipv4Address):$($serverResponse.data.Ports[0].Num)"
@@ -171,7 +180,7 @@ These servers come from continuously refilled, standing-by server pools you conf
 
 ## Mapping commands
 
-Table belows shows the new equivalent of the old commands. This is a quick mapping to help those who have used the previous version of the PowerShell module and need to convert their existing commands.
+Table below shows the new equivalent of the old commands. This is a quick mapping to help those who have used the previous version of the PowerShell module and need to convert their existing commands.
 
 Make sure to read the definition of each command to get full details of the change since some of the arguments have also changed.
 
