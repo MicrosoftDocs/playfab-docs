@@ -296,7 +296,7 @@ Ensure that no **Authentication Denied** errors are present in the console. At t
 
 ## Photon room event + CloudScript
 
-The Photon matchmaking system has the concept of a *Room*. If you are not familiar with this concept, please consult with the [Photon Matchmaking Guide](https://doc.photonengine.com/en-us/realtime/current/reference/matchmaking-and-lobby).
+The Photon matchmaking system has the concept of a *Room*. If you are not familiar with this concept, please consult with the [Photon Matchmaking Guide](https://doc.photonengine.com/realtime/current/lobby-and-matchmaking/matchmaking-and-lobby).
 
 PlayFab allows you to intercept various room events. The following room events require only CloudScript to be intercepted:
 

@@ -37,7 +37,7 @@ addressed when the Modified BSD license was created, which does not have the ann
 
    (May be used for SSL/TLS support) Uses the GPL[1] license or a proprietary license. If this is a problem for you, consider using another TLS library.
 
-[NSS](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS)
+[NSS](https://developer.mozilla.org/docs/Mozilla/Projects/NSS)
 
    (May be used for SSL/TLS support) Is covered by the MPL[4] license, the GPL[1] license and the LGPL[3] license. You may choose to license the code under MPL terms, GPL terms, or LGPL terms. These licenses grant you different permissions and impose different obligations. You should select the license that best meets your needs.
 
