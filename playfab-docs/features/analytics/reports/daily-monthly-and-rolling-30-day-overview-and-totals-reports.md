@@ -76,12 +76,12 @@ The following API calls will introduce new data for total logins and total uniqu
 - [LoginWithPlayFab](xref:titleid.playfabapi.com.client.authentication.loginwithplayfab)
 - [LoginWithSteam](xref:titleid.playfabapi.com.client.authentication.loginwithsteam)
 - [LoginWithTwitch](xref:titleid.playfabapi.com.client.authentication.loginwithtwitch)
-- [LoginWithWindowsHello](xref:titleid.playfabapi.com.client.authentication.loginwithwindowshello)
+- `LoginWithWindowsHello`<!-- [LoginWithWindowsHello](xref:titleid.playfabapi.com.client.authentication.loginwithwindowshello) -->
 
 The API calls shown below will introduce new data for total new users.
 
 - [RegisterPlayFabUser](xref:titleid.playfabapi.com.client.authentication.registerplayfabuser)
-- [RegisterWithWindowsHello](xref:titleid.playfabapi.com.client.authentication.registerwithwindowshello)
+- `RegisterWithWindowsHello`<!-- [RegisterWithWindowsHello](xref:titleid.playfabapi.com.client.authentication.registerwithwindowshello) -->
 
 The API calls shown below will introduce new data for total new users if the **CreateAccount** flag is set.
 
