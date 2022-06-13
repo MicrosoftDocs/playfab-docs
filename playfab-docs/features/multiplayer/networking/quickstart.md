@@ -477,6 +477,96 @@ The processing of other messages from the Party layer is best accomplished in a 
 
 For a complete description of all the state changes refer to the [Party Reference Documentation](party-reference.md). Alternatively, you can refer to the [NetworkManager.cpp](https://github.com/PlayFab/PlayFabParty/blob/docs/android/PartySampleNetworkCommon/lib/NetworkManager.cpp) for an example of how to process each state change.
 
+
+## Handling title suspension
+Some platforms support temporarily suspending execution of your title: iOS, Switch, and GDK.
+When your title is suspended, the network stack becomes invalidated and PlayFab Party will be unable to maintain a connection to the PlayFab Party network.
+Special consideration is required to handle suspending and resuming execution of your title when using PlayFab Party.
+
+### iOS
+On iOS, you must leave and re-connect to the PlayFab Party network
+
+To leave Party network, call [LeaveNetwork()](https://github.com/PlayFab/PlayFabParty/blob/docs/android/PartySampleNetworkCommon/lib/NetworkManager.cpp#L505). After the network is reactivated, call [ConnectToNetwork()](#connect-to-a-party-network) with previous Party network descriptor.
+
+### Switch and GDK
+On Nintendo Switch and Microsoft GDK, you must cleanup PlayFab Party and wait until the title execution resumes before re-initializing PlayFab Party and reconnecting to your network.
+
+To shutdown the Party, call [Cleanup()](https://github.com/PlayFab/PlayFabParty/blob/docs/android/PartySampleNetworkCommon/lib/NetworkManager.cpp#L198). 
+> [!IMPORTANT]
+> Calling Cleanup() reclaims all library resources and destroys all library objects. After re-initializing Party, you'll need to recreate any library objects such as local users and chat controls as well as re-establish any previous network state by re-authenticating local users, re-connecting chat controls, and recreating endpoints.
+
+After the network is reactivated, call [Initialize()](#initialize-playfab-party). Once the Party is successfully initialized, the following steps are required to successfully join a previous PlayFab Party Network again:
+
+1. Connect to the Party Network with previous Party network descriptor.
+
+2. Re-create any local user objects and re-authenticate those local users into the network.
+
+3. Re-create any local chat controls and re-connect those chat controls to the network to enable VOIP
+
+4. Re-create any [Party Network endpoints](concepts-objects.md#endpoint) for game message traffic.
+
+```cpp
+    PartyError err = PartyManager::GetSingleton().ConnectToNetwork(
+        &descriptor,                                // Network descriptor
+        nullptr,                                    // Async identifier
+        &m_network                                  // OUT network
+    );
+
+    if (PARTY_FAILED(err))
+    {
+        DEBUGLOG("ConnectToNetwork failed: %s\n", GetErrorMessage(err));
+        errorCallback(err);
+        return false;
+    }
+
+    // Authenticate the local user on the network so we can participate in it
+    err = m_network->AuthenticateLocalUser(
+        m_localUser,                                // Local user
+        networkId,                                  // Invitation Id
+        nullptr                                     // Async identifier
+    );
+
+    if (PARTY_FAILED(err))
+    {
+        DEBUGLOG("AuthenticateLocalUser failed: %s\n", GetErrorMessage(err));
+        errorCallback(err);
+        return false;
+    }
+
+    // Connect the local user chat control to the network so we can use VOIP
+    err = m_network->ConnectChatControl(
+        m_localChatControl,                         // Local chat control
+        nullptr                                     // Async identifier
+    );
+
+    if (PARTY_FAILED(err))
+    {
+        DEBUGLOG("ConnectChatControl failed: %s\n", GetErrorMessage(err));
+        errorCallback(err);
+        return false;
+    }
+
+    // Establish a network endoint for game message traffic
+    err = m_network->CreateEndpoint(
+        m_localUser,                                // Local user
+        0,                                          // Property Count
+        nullptr,                                    // Property name keys
+        nullptr,                                    // Property Values
+        nullptr,                                    // Async identifier
+        &m_localEndpoint                            // OUT local endpoint
+    );
+
+    if (PARTY_FAILED(err))
+    {
+        DEBUGLOG("Failed to CreateEndpoint: %s\n", GetErrorMessage(err));
+        errorCallback(err);
+        return false;
+    }
+```
+
+> [!IMPORTANT]
+> If the reconnection is successfully completed, the party will now be able to communicate to others peers, but if the previous network no longer exists, the reconnecting will be failed. In this case, you should handle the appropriate connection error.
+
 ## Conclusion
 
 In this quickstart, we walked through the key pieces of PlayFab Party and saw how to interact with them.
