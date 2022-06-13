@@ -18,15 +18,15 @@ June 10, 2022
 
 ### New features
 
-- The SDK is now more responsive to unexpected disconnects (detected 2-3x faster than previously).
-- Unexpected Lobby disconnects will now result in automatic reconnect attempts - the disconnect is communicated to the client only after these reconnect attempts have failed.
+- The SDK is now more responsive to unexpected disconnections (detected 2-3x faster than previously).
+- Unexpected Lobby disconnections will now result in automatic reconnect attempts - the disconnect is communicated to the client only after these reconnect attempts have failed.
 - GDK/Win32: Web service failure responses (429s, 503s, etc.) will now result in automatic retries - a failure is communicated to the client only after these retries have failed.
 
 ### Bug fixes
 
 - Fixed a bug where matchmaking failed after 10 consecutive matches.
-- Fixed a bug where GetErrorMessage(...) functionality did not provide error messages related to matchmaking.
-- Fixed a bug where two fields in the LobbySearchResult struct were not correctly populated (maxMemberCount and currentMemberCount).
+- Fixed a bug where GetErrorMessage(...) functionality didn't provide error messages related to matchmaking.
+- Fixed a bug where two fields in the LobbySearchResult struct weren't correctly populated (maxMemberCount and currentMemberCount).
 - Fixed various bugs related to behavior/reliability following suspend/resume.
 
 ## 1.1.1
@@ -43,7 +43,7 @@ March 4, 2022
 
 ### API changes
 
-- PFMultiplayerGetErrorMessage's API signature has changed. Previously this function returned an `HRESULT` and used an output paramter to return the error message string. Now the function returns the string directly.
+- PFMultiplayerGetErrorMessage's API signature has changed. Previously this function returned an `HRESULT` and used an output parameter to return the error message string. Now the function returns the string directly.
 
 ### New features
 
