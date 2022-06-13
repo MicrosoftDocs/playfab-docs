@@ -40,7 +40,7 @@ This, however, will produce trivial results, (with user conversion at **100%** f
 The following API calls may be used to create new user accounts:
 
 - [RegisterPlayFabUser](xref:titleid.playfabapi.com.client.authentication.registerplayfabuser)
-- [RegisterWithWindowsHello](xref:titleid.playfabapi.com.client.authentication.registerwithwindowshello)
+- `RegisterWithWindowsHello`<!-- [RegisterWithWindowsHello](xref:titleid.playfabapi.com.client.authentication.registerwithwindowshello) -->
 
 The following API calls will also create a new user account and log you in automatically, if the `CreateAccount` flag is present:
 
@@ -67,4 +67,4 @@ Finally, you may use following API calls to log in:
 - [LoginWithPlayFab](xref:titleid.playfabapi.com.client.authentication.loginwithplayfab)
 - [LoginWithSteam](xref:titleid.playfabapi.com.client.authentication.loginwithsteam)
 - [LoginWithTwitch](xref:titleid.playfabapi.com.client.authentication.loginwithtwitch)
-- [LoginWithWindowsHello](xref:titleid.playfabapi.com.client.authentication.loginwithwindowshello)
+- `LoginWithWindowsHello`<!-- [LoginWithWindowsHello](xref:titleid.playfabapi.com.client.authentication.loginwithwindowshello) -->
