@@ -12,7 +12,25 @@ ms.localizationpriority: medium
 
 # PlayFab Multiplayer C++ SDK release notes
 
+## 1.1.3
+
+June 10, 2022
+
+### New features
+
+- The SDK is now more responsive to unexpected disconnects (detected 2-3x faster than previously).
+- Unexpected Lobby disconnects will now result in automatic reconnect attempts - the disconnect is communicated to the client only after these reconnect attempts have failed.
+- GDK/Win32: Web service failure responses (429s, 503s, etc.) will now result in automatic retries - a failure is communicated to the client only after these retries have failed.
+
+### Bug fixes
+
+- Fixed a bug where matchmaking failed after 10 consecutive matches.
+- Fixed a bug where GetErrorMessage(...) functionality did not provide error messages related to matchmaking.
+- Fixed a bug where two fields in the LobbySearchResult struct were not correctly populated (maxMemberCount and currentMemberCount).
+- Fixed various bugs related to behavior/reliability following suspend/resume.
+
 ## 1.1.1
+
 April 13, 2022
 
 ### Bug fixes
@@ -20,6 +38,7 @@ April 13, 2022
 - Switch: Provides a new PAL header required to build against PlayFab Multiplayer.
 
 ## 1.1.0
+
 March 4, 2022
 
 ### API changes
