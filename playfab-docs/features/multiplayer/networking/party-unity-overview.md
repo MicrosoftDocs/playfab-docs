@@ -15,7 +15,7 @@ The PlayFab Party Unity SDK plugin is a Unity C# wrapper on top of a native Part
 
 It enables you to make use of Party and Party Cognitive Services in your Unity game. This includes multiplayer networking, chat messages and data exchange, cross-talk, cross-play, accessibility features like real-time text chat translation and voice transcription services. It is designed for developing games on multiple platforms.
 
-PlayFab Party Unity plugin works alongside the PlayFab "core" Unity SDK plugin which provides other PlayFab functionalities such as economy, leaderboards, and more. For more information, see [PlayFab Unity SDK](https://github.com/PlayFab/UnitySDK) and [PlayFab Unity SDK documentation](https://docs.microsoft.com/gaming/playfab/sdks/unity3d/).
+PlayFab Party Unity plugin works alongside the PlayFab "core" Unity SDK plugin which provides other PlayFab functionalities such as economy, leaderboards, and more. For more information, see [PlayFab Unity SDK](https://github.com/PlayFab/UnitySDK) and [PlayFab Unity SDK documentation](../../../sdks/unity3d/index.md).
 
 Party Unity plugin is available for download as a Unity Asset package. It is currently supported for developing games on the following platforms:
 - Microsoft Game Core (GDK)*, Windows, iOS, Android:

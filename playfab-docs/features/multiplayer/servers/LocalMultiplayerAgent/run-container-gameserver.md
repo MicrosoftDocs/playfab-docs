@@ -21,7 +21,7 @@ This tutorial describes how to:
 
 ## Create a [Linux/Windows] Container Build
 
-If you're unfamiliar with container, see [Introduction to Container and Docker](https://docs.microsoft.com/dotnet/architecture/microservices/container-docker-introduction/).
+If you're unfamiliar with container, see [Introduction to Container and Docker](/dotnet/architecture/microservices/container-docker-introduction/).
 
 We'll learn how to package an existing sample as a Windows or Linux container. You'll need to configure different settings for different platforms (Windows/Linux based Container). Here we'll use the Wrapper sample and go over the details.
 

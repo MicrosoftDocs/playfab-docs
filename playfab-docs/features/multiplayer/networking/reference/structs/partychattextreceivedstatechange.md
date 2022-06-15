@@ -50,7 +50,7 @@ The local receiver chat controls to which the text message is addressed.
   
 The language of the chat text.
   
-The language will only be provided when translation to the local language is enabled. If translation isn't enabled, or failure is encountered during translation, the language code will be an empty string. <br /><br /> The language code will be in BCP 47 format, such as en-US for English (United States). Supported language codes are enumerated at [https://docs.microsoft.com/azure/cognitive-services/speech-service/language-support](https://docs.microsoft.com/azure/cognitive-services/speech-service/language-support).
+The language will only be provided when translation to the local language is enabled. If translation isn't enabled, or failure is encountered during translation, the language code will be an empty string. <br /><br /> The language code will be in BCP 47 format, such as en-US for English (United States). Supported language codes are enumerated at [https://docs.microsoft.com/azure/cognitive-services/speech-service/language-support](/azure/cognitive-services/speech-service/language-support).
   
 **`chatText`** &nbsp; [PartyString](../typedefs.md)  
   

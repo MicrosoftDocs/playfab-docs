@@ -15,7 +15,7 @@ PlayFab Party offers a text moderation solution that is integrated with text cha
 
 ## Language support
 
-Text moderation is supported for more than 30 languages. However, you don't need to do anything to configure a language selection for text moderation; the language of each text message is automatically detected by Azure. For a complete list of supported languages which support auto-detection and profanity filtering, refer to Azure Content Moderator's [list of supported languages](https://docs.microsoft.com/azure/cognitive-services/content-moderator/language-support).
+Text moderation is supported for more than 30 languages. However, you don't need to do anything to configure a language selection for text moderation; the language of each text message is automatically detected by Azure. For a complete list of supported languages which support auto-detection and profanity filtering, refer to Azure Content Moderator's [list of supported languages](/azure/cognitive-services/content-moderator/language-support).
 
 ## Enabling text moderation
 

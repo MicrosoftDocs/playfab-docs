@@ -16,7 +16,7 @@ Xbox multiplayer scenarios rely on the use of the Multiplayer Session Directory 
 
 In this document we will describe how you can incorporate PlayFab Party into common multiplayer flows that require MPSD.
 
-This document does not provide an in-depth discussion of MPSD and all of it's capabilities. For more information, refer to the [MPSD documentation](https://docs.microsoft.com/gaming/xbox-live/features/multiplayer/mpsd/live-mpsd-overview).
+This document does not provide an in-depth discussion of MPSD and all of it's capabilities. For more information, refer to the [MPSD documentation](/gaming/xbox-live/features/multiplayer/mpsd/live-mpsd-overview).
 
 ## Matchmaking
 
@@ -156,7 +156,7 @@ Here's a simplified flow for how to use matchmaking and MPSD together with PlayF
     ```
 
 > [!NOTE]
-> Here we've presented one flow for incorporating matchmaking and MPSD with PlayFab Party. The core ideas of this flow can be extended to other flows you might be interested in with MPSD, but presenting all possible flows is outside the scope of this documentation. For more information, see the [full MPSD documentation](https://docs.microsoft.com/gaming/xbox-live/features/multiplayer/mpsd/live-mpsd-overview).
+> Here we've presented one flow for incorporating matchmaking and MPSD with PlayFab Party. The core ideas of this flow can be extended to other flows you might be interested in with MPSD, but presenting all possible flows is outside the scope of this documentation. For more information, see the [full MPSD documentation](/gaming/gdk/_content/gc/live/get-started/live-xbl-overview).
 
 ## Platform invites
 

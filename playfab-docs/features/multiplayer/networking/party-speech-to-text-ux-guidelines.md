@@ -41,7 +41,7 @@ When audio is sent to a chat control associated with a local user that has enabl
 
 #### Displaying transcriptions
 
-When transcription text is received, it should be displayed according to the following UX design guidelines. The [Windows::Gaming::UI::GameChatOverlay](https://docs.microsoft.com/uwp/api/windows.gaming.ui.gamechatoverlay) or `Windows::Xbox::UI::Accessibility` API can be used on Windows or Xbox, respectively, to use the default system text chat UI that has been designed to comply with these guidelines.
+When transcription text is received, it should be displayed according to the following UX design guidelines. The [Windows::Gaming::UI::GameChatOverlay](/uwp/api/windows.gaming.ui.gamechatoverlay) or `Windows::Xbox::UI::Accessibility` API can be used on Windows or Xbox, respectively, to use the default system text chat UI that has been designed to comply with these guidelines.
 
 ## Discovery
 
@@ -278,8 +278,8 @@ PlayFab Party text-to-speech and speech-to-text APIs are highly effective featur
 
 ### Text-to-speech narration menu guidelines
 
-- [Speech interactions](https://docs.microsoft.com/windows/uwp/design/input/speech-interactions)
-- [Speech synthesis API (Windows)](https://docs.microsoft.com/uwp/api/Windows.Media.SpeechSynthesis)
+- [Speech interactions](/windows/apps/design/input/speech-interactions)
+- [Speech synthesis API (Windows)](/uwp/api/Windows.Media.SpeechSynthesis)
 
 ### PlayFab Party text-to-speech and speech-to-text UX series
 
