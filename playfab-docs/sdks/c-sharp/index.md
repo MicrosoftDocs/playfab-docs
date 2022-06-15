@@ -53,10 +53,10 @@ This native C# project can be used in these two ways.
   - See the comment about `loginTask.Wait()` in the example code below. This is how you'll usually make API calls.
 
 - An actual game coded in native C#
-  - You need to take advantage of the async nature of API calls, and the C# async/await feature keywords. For more information about asynchronous programming, see [Asynchronous Programming with async and await (C#)](https://docs.microsoft.com/dotnet/csharp/async).
+  - You need to take advantage of the async nature of API calls, and the C# async/await feature keywords. For more information about asynchronous programming, see [Asynchronous Programming with async and await (C#)](/dotnet/csharp/async).
 
 ## Add SDK to your project
 
 - [Quickstart to add C# client SDK](quickstart.md)
 
-Alternatively, you can install the NuGet package into your Visual Studio project using the NuGet Package Manager. For instructions, see [Install and use a package in Visual Studio](https://docs.microsoft.com/nuget/quickstart/install-and-use-a-package-in-visual-studio). For more information, see [Getting started with NuGet](https://docs.microsoft.com/nuget/what-is-nuget).
+Alternatively, you can install the NuGet package into your Visual Studio project using the NuGet Package Manager. For instructions, see [Install and use a package in Visual Studio](/nuget/quickstart/install-and-use-a-package-in-visual-studio). For more information, see [Getting started with NuGet](/nuget/what-is-nuget).

@@ -18,7 +18,7 @@ PlayFab SDK enables you to implement a majority of our features, including LiveO
 
 Access to SDKs for Nintendo Switch, PlayStation&#174;4, PlayStation&#174;5, and Google Stadia requires special approval and adherence to platform policies. For more information, see [Request access for SDKs and samples](../features/multiplayer/networking/request-access-for-sdks-samples.md).
 
-For broad API categories in this SDK, see [API REST operation groups](https://docs.microsoft.com/rest/api/playfab/admin/).
+For broad API categories in this SDK, see [API REST operation groups](/rest/api/playfab/admin/).
 
 > [!TIP]
 > Unsure if this is the SDK you need? See [SDK overview - PlayFab SDK, Party SDK, Multiplayer Server SDK](sdk-overview.md).
@@ -55,7 +55,7 @@ For broad API categories in this SDK, see [API REST operation groups](https://do
 | Windows (Win32) x64       | [C++](playfab-cpp/index.md), [Lua](lua/index.md), [Unity](unity3d/index.md), [Unreal Engine](unreal/index.md) |
 | Xbox One, Xbox Series X&#124;S| [C++](playfab-cpp/index.md), [Unity](unity3d/index.md), [Unreal Engine](unreal/index.md) |
 
-Alternatively, you can also view the available SDKs based on [languages](https://docs.microsoft.com/gaming/playfab/sdks/languages/), [frameworks](https://docs.microsoft.com/gaming/playfab/sdks/frameworks/), [game engines](https://docs.microsoft.com/gaming/playfab/sdks/game-engines/), and [scripting languages](https://docs.microsoft.com/gaming/playfab/sdks/scripting/).
+Alternatively, you can also view the available SDKs based on [languages](./languages/index.yml), [frameworks](./frameworks/index.yml), [game engines](./game-engines/index.yml), and [scripting languages](./scripting/index.yml).
 
 ## See also
 
