@@ -53,7 +53,7 @@ Install-Module -Name PlayFabMultiplayerApi
 ```
 
 >[!Tip]
-> Before installing the module, you may need to set your execution policy using ```Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope CurrentUser``` first. To learn more, see [PowerShell execution policies](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_execution_policies).
+> Before installing the module, you may need to set your execution policy using ```Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope CurrentUser``` first. To learn more, see [PowerShell execution policies](/powershell/module/microsoft.powershell.core/about/about_execution_policies).
 
 ## 3. Obtain an EntityToken for your title
 

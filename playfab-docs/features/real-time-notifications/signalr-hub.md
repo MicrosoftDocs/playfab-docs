@@ -26,19 +26,19 @@ ms.date: 03/10/2022
 
 The real-time notifications feature for [Lobby and Matchmaking
 services](../multiplayer/lobby/lobby-and-matchmaking.md) works through a
-[SignalR service](https://docs.microsoft.com/aspnet/core/signalr), which exposes
-a [SignalR Hub](https://docs.microsoft.com/aspnet/core/signalr#hubs). This
+[SignalR service](/aspnet/core/signalr), which exposes
+a [SignalR Hub](/aspnet/core/signalr/introduction#hubs). This
 SignalR Hub can be used by game clients to receive messages about [resources
 they subscribed to](subscribing-to-resources.md).
 
 ## Connecting to the SignalR Hub
 
 The first step in receiving real-time notifications is to create a [SignalR
-client](https://docs.microsoft.com/aspnet/core/signalr/client-features). The
+client](/aspnet/core/signalr/client-features). The
 client can create a connection to the SignalR Hub by [instantiating a
-HubConnection](https://docs.microsoft.com/aspnet/core/signalr/dotnet-client#connect-to-a-hub)
+HubConnection](/aspnet/core/signalr/dotnet-client#connect-to-a-hub)
 with the following API: [SignalR Negotiate REST
-API](https://docs.microsoft.com/rest/api/playfab/multiplayer/pub-sub/negotiate).
+API](/rest/api/playfab/multiplayer/pub-sub/negotiate).
 This API implements the Negotiate API described [in the SignalR
 documentation](https://github.com/dotnet/aspnetcore/blob/main/src/SignalR/docs/specs/TransportProtocols.md#post-endpoint-basenegotiate-request).
 
@@ -55,14 +55,14 @@ documentation](https://github.com/dotnet/aspnetcore/blob/main/src/SignalR/docs/s
 ## Implementing client methods to receive messages
 
 See the SignalR Client [documentation about implementing client
-methods](https://docs.microsoft.com/aspnet/core/signalr/dotnet-client#call-client-methods-from-hub)
+methods](/aspnet/core/signalr/dotnet-client#call-client-methods-from-hub)
 that will be invoked to receive messages. Clients should implement all of the
 methods listed in [Client methods](#client-methods) below.
 
 ## Starting and ending a session by calling server methods
 
 See the SignalR Client [documentation about calling server
-methods](https://docs.microsoft.com/aspnet/core/signalr/dotnet-client#call-hub-methods-from-client)
+methods](/aspnet/core/signalr/dotnet-client#call-hub-methods-from-client)
 to manage your session. For example, once connected to the hub, you must call
 [StartOrRecoverSession](server-methods/start-or-recover-session.md) to receive a
 `connection handle` that you can use to [subscribe to

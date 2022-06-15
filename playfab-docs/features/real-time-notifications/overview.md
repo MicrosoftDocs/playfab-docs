@@ -29,7 +29,7 @@ services](../multiplayer/lobby/lobby-and-matchmaking.md) offer a real-time
 notifications feature, which enables individual game clients to subscribe to
 receive notifications from these services. Game clients subscribe for
 notifications over a persistent [SignalR WebSocket
-connection](https://docs.microsoft.com/aspnet/core/signalr). To learn more about
+connection](/aspnet/core/signalr/introduction). To learn more about
 the scenario as a whole, see the [conceptual documentation for Lobby and
 Matchmaking real-time
 notifications](../multiplayer/lobby/lobby-and-matchmaking-real-time-notifications.md).

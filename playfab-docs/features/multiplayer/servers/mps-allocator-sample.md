@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 This sample is a simple .NET Core application that allows you to easily call some frequently used MPS APIs, like the ones that list VMs/servers and allocate game servers (RequestMultiplayerServer). To easily and quickly request a multiplayer server from Game Manager, select the button located at the top of our servers page that can help you do that. To learn more check out our [Servers overview](build-server-overview.md). In order to use it, you need to have installed .NET Core 3.1 (download [here](https://dotnet.microsoft.com/download)). You can then use either `dotnet build` command to build an executable for your platform or just run `dotnet run` to run the application.
 
-> You can find more information about `dotnet build` command [here](https://docs.microsoft.com/dotnet/core/tools/dotnet-build)
+> You can find more information about `dotnet build` command [here](/dotnet/core/tools/dotnet-build)
 
 In order to authenticate with PlayFab APIs, the app needs your PlayFab TitleID and a developer secret key. To create a secret key for your title, visit the Settings/Secret-Keys page on the PlayFab developer portal here: https://developer.playfab.com/en-US/r/t/<Your_TitleID>/settings/secret-keys. You can provide these keys via environment variables `PF_TITLEID` and `PF_SECRET`, or as command line arguments.
 
@@ -24,12 +24,12 @@ In order to authenticate with PlayFab APIs, the app needs your PlayFab TitleID a
 
 Once you run the application, you can choose which API to call. Each API will ask you to provide necessary parameters. Here's the list of the available options:
 
-- [RequestMultiplayerServer](https://docs.microsoft.com/rest/api/playfab/multiplayer/multiplayerserver/requestmultiplayerserver): This option will allocate a game server and return its details (IP, FQDN, Port). Successful invocation of this API call will result in a game server's transition from "StandingBy" state to "Active" (more [here](allocating-game-servers-and-configuring-vs-debugging-tools.md))
-- [ListBuildSummaries](https://docs.microsoft.com/rest/api/playfab/multiplayer/multiplayerserver/listbuildsummariesv2): This option will return summaries about your title's Builds
-- [GetBuild](https://docs.microsoft.com/rest/api/playfab/multiplayer/multiplayerserver/getbuild): This option will return details about the specified Build
-- [ListMultiplayerServers](https://docs.microsoft.com/rest/api/playfab/multiplayer/multiplayerserver/listmultiplayerservers): This option will return summaries about game servers in a specified Build
-- [ListVirtualMachineSummaries](https://docs.microsoft.com/rest/api/playfab/multiplayer/multiplayerserver/listvirtualmachinesummaries): This option will return summaries about virtual machines in a specified Build
-- [GetMultiplayerServerDetails](https://docs.microsoft.com/rest/api/playfab/multiplayer/multiplayerserver/getmultiplayerserverdetails): This option will return details about a specified game server
+- [RequestMultiplayerServer](/rest/api/playfab/multiplayer/multiplayer-server/request-multiplayer-server): This option will allocate a game server and return its details (IP, FQDN, Port). Successful invocation of this API call will result in a game server's transition from "StandingBy" state to "Active" (more [here](allocating-game-servers-and-configuring-vs-debugging-tools.md))
+- [ListBuildSummaries](/rest/api/playfab/multiplayer/multiplayer-server/list-build-summaries-v2): This option will return summaries about your title's Builds
+- [GetBuild](/rest/api/playfab/multiplayer/multiplayer-server/get-build): This option will return details about the specified Build
+- [ListMultiplayerServers](/rest/api/playfab/multiplayer/multiplayer-server/list-multiplayer-servers): This option will return summaries about game servers in a specified Build
+- [ListVirtualMachineSummaries](/rest/api/playfab/multiplayer/multiplayer-server/list-virtual-machine-summaries): This option will return summaries about virtual machines in a specified Build
+- [GetMultiplayerServerDetails](/rest/api/playfab/multiplayer/multiplayer-server/get-multiplayer-server-details): This option will return details about a specified game server
 
 ## See also
 

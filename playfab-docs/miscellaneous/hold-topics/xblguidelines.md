@@ -16,7 +16,7 @@ This page provides pricing information and guidance for Xbox Live managed partne
 
 PlayFab and Xbox Live have collaborated to allow Xbox Live managed partners to power Xbox Live multiplayer activity with several services at zero cost. This includes [PlayFab Matchmaking](../../features/multiplayer/matchmaking/index.md) and [PlayFab Party](../../features/multiplayer/networking/index.md). If you would like to take advantage of this program we recommend the following multiplayer design:
 
-1. Use the [Xbox Live SDK](https://docs.microsoft.com/gaming/xbox-live) to interface with Xbox Live social capabilities like Presence, Profile Cards, and game invites.
+1. Use the [Xbox Live SDK](/gaming/gdk/_content/gc/live/get-started/live-xbl-overview) to interface with Xbox Live social capabilities like Presence, Profile Cards, and game invites.
 2. Use [PlayFab Matchmaking](../../features/multiplayer/matchmaking/index.md) to match players.
 3. Use [PlayFab Party](../../features/multiplayer/networking/index.md) to connect players for device-to-device networking or chat.
 
