@@ -45,5 +45,4 @@ If you're getting a status code that is not listed here, let us know on [PlayFab
 
 ## See also
 
-* [PlayFab API reference documentation](https://docs.microsoft.com/rest/api/playfab/admin/account-management/banusers)
-
+* [PlayFab API reference documentation](/rest/api/playfab/admin/account-management/ban-users)

@@ -74,11 +74,11 @@ When you would like to stop local redirects and make ExecuteFunction call the Pl
 
 ## Additional resources
 
-Azure Functions has a great guide on how to [test and debug your Functions](https://docs.microsoft.com/azure/azure-functions/functions-develop-local) locally.
+Azure Functions has a great guide on how to [test and debug your Functions](/azure/azure-functions/functions-develop-local) locally.
 
 Here are some highlights from the above document.
 
 * Make sure that your Azure Functions Core Tools are installed
-* Configure your local settings file. For more information, [Develop Azure Functions by using Visual Studio Code](https://docs.microsoft.com/azure/azure-functions/functions-develop-vs-code?tabs=nodejs#local-settings-file)
+* Configure your local settings file. For more information, [Develop Azure Functions by using Visual Studio Code](/azure/azure-functions/functions-develop-vs-code?tabs=nodejs#local-settings-file)
 * Set a break point in your code
 * Select **F5** to start debugging

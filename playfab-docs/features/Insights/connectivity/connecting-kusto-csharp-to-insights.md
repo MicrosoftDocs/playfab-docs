@@ -40,7 +40,7 @@ This guide helps you get started using the Kusto C# SDK along with Insights. Aft
 1. Install the following NuGet packages:
    * Required: [Microsoft.Azure.Kusto.Data](https://www.nuget.org/packages/Microsoft.Azure.Kusto.Data/)
    * Optional: [Microsoft.Azure.Kusto.Ingest](https://www.nuget.org/packages/Microsoft.Azure.Kusto.Ingest/)
-   * For more optional packages, see the [Kusto .NET SDK documentation](https://docs.microsoft.com/azure/data-explorer/kusto/api/netfx/about-the-sdk)
+   * For more optional packages, see the [Kusto .NET SDK documentation](/azure/data-explorer/kusto/api/netfx/about-the-sdk)
 
 2. Below is some sample code to get started with.
 
@@ -131,4 +131,4 @@ namespace HelloPlayFabInsights
 
 ## Additional resources
 * [Azure Kusto .NET Samples](https://github.com/Azure/azure-kusto-samples-dotnet)
-* [Kusto client library documentation](https://docs.microsoft.com/azure/data-explorer/kusto/api/netfx/about-kusto-data )
+* [Kusto client library documentation](/azure/data-explorer/kusto/api/netfx/about-kusto-data)

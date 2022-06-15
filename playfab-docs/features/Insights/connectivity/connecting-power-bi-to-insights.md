@@ -57,5 +57,5 @@ On your local machine, open Power BI.
 
 ## Additional resources
 
-* [Power BI documentation](https://docs.microsoft.com/power-bi/)
+* [Power BI documentation](/power-bi/)
 * To learn about other tools to connect to Insights, see [Connecting external tools to Insights](index.md)

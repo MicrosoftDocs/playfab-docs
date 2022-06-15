@@ -25,7 +25,7 @@ For unrelated experiments, it does not matter if your players become a part of m
 
 Please note, use of exclusion group reduces the statistical power of your experiments as each one competes with others for traffic. So, use exclsuion group when experiments are related and interaction effects are anticipated. 
 
-You can create experiment(s) with exclusion group(s) through Game Manager and [APIs](https://docs.microsoft.com/rest/api/playfab/experimentation/experimentation). 
+You can create experiment(s) with exclusion group(s) through Game Manager and [APIs](/rest/api/playfab/experimentation/experimentation). 
 
 ## Create Exclusion Group
 

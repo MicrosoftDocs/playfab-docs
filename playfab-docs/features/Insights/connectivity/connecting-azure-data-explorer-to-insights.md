@@ -45,5 +45,5 @@ To connect with Azure Data Explorer:
 
 ## Additional resources
 
-* [Azure Data Explorer documentation](https://docs.microsoft.com/azure/data-explorer/)
+* [Azure Data Explorer documentation](/azure/data-explorer/)
 * To learn about other tools to connect to Insights, see [Connecting external tools to Insights](index.md)

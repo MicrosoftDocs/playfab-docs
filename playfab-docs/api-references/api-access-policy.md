@@ -21,7 +21,7 @@ This topic discusses the use API permission policies to create the appropriate r
 
 ## Policy control and structure
 
-Titles use the PlayFab Admin API calls to retrieve and update the access policies. The two specific calls that you use to set the API access policy are [GetPolicy](xref:titleid.playfabapi.com.admin.authentication.getpolicy) and [UpdatePolicy](xref:titleid.playfabapi.com.admin.authentication.updatepolicy). For more information about the Admin API calls, see [PlayFab API Reference](https://docs.microsoft.com/rest/api/playfab/admin/).
+Titles use the PlayFab Admin API calls to retrieve and update the access policies. The two specific calls that you use to set the API access policy are [GetPolicy](xref:titleid.playfabapi.com.admin.authentication.getpolicy) and [UpdatePolicy](xref:titleid.playfabapi.com.admin.authentication.updatepolicy). For more information about the Admin API calls, see [PlayFab API Reference](/rest/api/playfab/admin/).
 
 To use the Admin API you must provide the developer secret key associated with your title. The Developer key is used to authorize your Title to make Admin API calls. For information about retrieving your secret key, see [Secret key management](../gamemanager/secret-key-management.md).
 
