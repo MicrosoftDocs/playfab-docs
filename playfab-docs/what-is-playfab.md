@@ -1,7 +1,7 @@
 ---
 title: What is PlayFab?
 author:  sebgrink
-description: PlayFab is a complete backend platform for live games with managed game services, real-time analytics, and LiveOps.
+description: PlayFab is a complete back-end platform for live games with managed game services, real-time analytics, and LiveOps.
 ms.author: sebgrink
 ms.date: 03/23/2020
 ms.topic: article
@@ -12,9 +12,9 @@ ms.localizationpriority: medium
 
 # What is PlayFab?
 
-PlayFab is a complete backend platform for live games with managed game services, real-time analytics, and LiveOps. These features can help you boost your revenue and increase player engagement while cutting costs. This topic provides a high-level overview of the PlayFab features.
+PlayFab is a complete back-end platform for live games with managed game services, real-time analytics, and LiveOps. These features can help you boost your revenue and increase player engagement while cutting costs. This topic provides a high-level overview of the PlayFab features.
 
-PlayFab's backend services reduce the barriers to launch for game developers, offering both large and small studios cost-effective development solutions that scale with their games and help them engage, retain, and monetize players. PlayFab enables developers to use the intelligent cloud to build and operate games, analyze gaming data and improve overall gaming experiences. The PlayFab platform is a natural complement to Azure for gaming (Visit azure.com/gaming for more info). Azure, with locations in 42 regions worldwide, provides world-class server infrastructure, allowing creators to focus on building great games with best-available global reach. For gamers, this leads to a higher, faster degree of innovation and better experiences.
+PlayFab's back-end services reduce the barriers to launch for game developers, offering both large and small studios cost-effective development solutions that scale with their games and help them engage, retain, and monetize players. PlayFab enables developers to use the intelligent cloud to build and operate games, analyze gaming data and improve overall gaming experiences. The PlayFab platform is a natural complement to Azure for gaming (Visit azure.com/gaming for more info). Azure, with locations in 42 regions worldwide, provides world-class server infrastructure, allowing creators to focus on building great games with best-available global reach. For gamers, this leads to a higher, faster degree of innovation and better experiences.
 <br/><br/>
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4YxiP]
 > 
