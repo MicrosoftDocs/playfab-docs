@@ -77,6 +77,6 @@ The base rate charge includes:
 **Additional Charges:** Additional charges include any charges not directly tied to the meter-usage pricing plan. For example, charges for MPS and Add-Ons may appear in the additional charges section.
 
 **Learn More**
-> [Multiplayer Server Pricing](https://docs.microsoft.com/gaming/playfab/features/multiplayer/servers/billing-for-thunderhead)
+> [Multiplayer Server Pricing](../multiplayer/servers/billing-for-thunderhead.md)
 >
-> [Party Pricing](https://docs.microsoft.com/gaming/playfab/features/multiplayer/networking/pricing)
+> [Party Pricing](../multiplayer/networking/pricing.md)

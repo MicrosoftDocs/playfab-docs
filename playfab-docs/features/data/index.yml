@@ -109,6 +109,10 @@ landingContent:
         links:
           - text:  Get started with Data Connections
             url: dataconnections/quickstart.md 
+          - text:  Azure Blob Data Connection
+            url: dataconnections/data-connection-azure-blob.md 
+          - text:  ADX Data Connection
+            url: dataconnections/data-connection-adx.md 
             
   - title: Webhooks
     linkLists:

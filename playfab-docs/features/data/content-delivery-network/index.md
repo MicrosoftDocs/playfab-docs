@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 # Content Delivery Network (CDN)
 
 > [!IMPORTANT]
-> PlayFab CDN is a legacy feature supported for accounts with at least one title that has previously configured CDN. For new PlayFab developers interested in a content management solution, we recommend using Azure CDN. To get started, see the [Azure CDN documentation](https://docs.microsoft.com/azure/cdn/).
+> PlayFab CDN is a legacy feature supported for accounts with at least one title that has previously configured CDN. For new PlayFab developers interested in a content management solution, we recommend using Azure CDN. To get started, see the [Azure CDN documentation](/azure/cdn/).
 
 The Content Delivery Network (CDN) is an infrastructure used to deliver assets - such as images, audio, binary content, etc. - to the end user that focuses on speed and availability.
 

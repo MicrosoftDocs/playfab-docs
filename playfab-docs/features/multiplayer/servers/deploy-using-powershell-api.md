@@ -52,7 +52,7 @@ For detailed documentation about each command, see [Cmdlet documentation](https:
 Install-Module -Name PlayFabMultiplayerApi
 ```
 >[!Tip]
-> Before installing the module, you may need to set your execution policy by running ```Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope CurrentUser``` in PowerShell first. To learn more, see [PowerShell execution policies](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_execution_policies).
+> Before installing the module, you may need to set your execution policy by running ```Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope CurrentUser``` in PowerShell first. To learn more, see [PowerShell execution policies](/powershell/module/microsoft.powershell.core/about/about_execution_policies).
 
 4. Learn more about the cmdlets in the PlayFab Multiplayer PowerShell module by running the following command. Or you can refer to the [PlayFabMultiplayerApi cmdlet reference documentation](https://github.com/PlayFab/MpsPowershell/tree/main/MpsPowershell/docs).
 

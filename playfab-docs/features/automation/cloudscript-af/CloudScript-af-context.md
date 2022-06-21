@@ -23,7 +23,7 @@ In this tutorial, you learn how to:
 > * Use the context model when executing in the context of an Entity.
 
 ## Use the shared Title Authentication context model
-No matter the method for executing a script the Title Authentication context is always provided.  This includes the Title ID and Entity Token (see [GetEntityToken](https://docs.microsoft.com/rest/api/playfab/authentication/authentication/getentitytoken?view=playfab-rest) for more details) used to execute the script.  Knowing this context allows you to make additional API calls in your script into PlayFab using the Server APIs.
+No matter the method for executing a script the Title Authentication context is always provided.  This includes the Title ID and Entity Token (see [GetEntityToken](/rest/api/playfab/authentication/authentication/get-entity-token?view=playfab-rest) for more details) used to execute the script.  Knowing this context allows you to make additional API calls in your script into PlayFab using the Server APIs.
 
 ```C#
 // Shared models
@@ -35,7 +35,7 @@ public class TitleAuthenticationContext
 ```
 
 ## Use the context model when executing via the ExecuteFunction API
-When you use the the [ExecuteFunction API](https://docs.microsoft.com/rest/api/playfab/cloudscript/server-side-cloud-script/executefunction?view=playfab-rest) to execute a script, the context that is provided includes the following information:
+When you use the the [ExecuteFunction API](/rest/api/playfab/cloudscript/server-side-cloud-script/execute-function?view=playfab-rest) to execute a script, the context that is provided includes the following information:
 * The Entity Profile of the caller
 * The Title Authentication Context
 * A boolean that indicates whether a PlayStream event is sent as part of the function being executed
@@ -57,7 +57,7 @@ public class FunctionExecutionContext : FunctionExecutionContext<object>
 ```
 
 ## Use the context model when executing via Scheduled Task
-When you [Scheduled Tasks](https://docs.microsoft.com/gaming/playfab/features/automation/scheduled-tasks/) to execute a script, the context that is provided includes the following information:
+When you [Scheduled Tasks](../scheduled-tasks/index.md) to execute a script, the context that is provided includes the following information:
 * The Scheduled Task Name Id
 * The event history which includes a stack of PlayStream Events
 * The title Authentication Context

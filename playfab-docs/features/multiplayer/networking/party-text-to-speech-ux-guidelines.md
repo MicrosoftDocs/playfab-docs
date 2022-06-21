@@ -37,7 +37,7 @@ Party supports two types of text-to-speech - **Voice Chat** and **Narration**. T
 
 #### Text-to-speech voice profiles
 
-A text-to-speech voice profile defines the audio characteristics used to generate text-to-speech audio. Profiles vary by language, locale, and gender. There may be multiple options for each combination. Party supports all profiles supported by Azure Cognitive Services. Refer to the [Language support reference](https://docs.microsoft.com/azure/cognitive-services/speech-service/language-support) for a complete list of supported languages and voice options.
+A text-to-speech voice profile defines the audio characteristics used to generate text-to-speech audio. Profiles vary by language, locale, and gender. There may be multiple options for each combination. Party supports all profiles supported by Azure Cognitive Services. Refer to the [Language support reference](/azure/cognitive-services/speech-service/language-support) for a complete list of supported languages and voice options.
   
 The profile options can also be enumerated by the Party library. The first step is to start an asynchronous operation that will populate the text-to-speech profiles via [`PartyLocalChatControl::PopulateAvailableTextToSpeechProfiles()`](reference/classes/PartyLocalChatControl/methods/partylocalchatcontrol_populateavailabletexttospeechprofiles.md). Once the operation completes, indicated by [`PartyManager::StartProcessingStateChanges()`](reference/classes/PartyManager/methods/partymanager_startprocessingstatechanges.md) providing a [`PartyPopulateAvailableTextToSpeechProfilesCompletedStateChange`](reference/structs/partypopulateavailabletexttospeechprofilescompletedstatechange.md), the profiles can be queried via [`PartyLocalChatControl::GetAvailableTextToSpeechProfiles()`](reference/classes/PartyLocalChatControl/methods/partylocalchatcontrol_getavailabletexttospeechprofiles.md).
 
@@ -198,8 +198,8 @@ PlayFab Party text-to-speech and speech-to-text APIs are highly effective featur
 
 ### Text-to-speech narration menu guidelines
 
-- [Speech interactions](https://docs.microsoft.com/windows/uwp/design/input/speech-interactions)
-- [Speech synthesis API (Windows)](https://docs.microsoft.com/uwp/api/Windows.Media.SpeechSynthesis)
+- [Speech interactions](/windows/uwp/design/input/speech-interactions)
+- [Speech synthesis API (Windows)](/uwp/api/Windows.Media.SpeechSynthesis)
 
 ### PlayFab Party text-to-speech and speech-to-text UX series
 

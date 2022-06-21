@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 Many debugging tasks of PlayFab Multiplayer Servers can be done locally using [LocalMultiplayerAgent](https://github.com/PlayFab/LocalMultiplayerAgent). However, sometimes the behavior of the game server can differ between the local environment and the actual service so you would like to connect directly to debug a running server because it is marked as unhealthy or not performing as expected.
 
-In order to connect to the VM hosting your game server (either Windows or Linux), you can get Remote Desktop (RDP)/SSH credentials using the "Connect" button on playfab.com web application. You can see this button on the "Virtual Machines" page on your Multiplayer Build) or using [CreateRemoteUser](https://docs.microsoft.com/rest/api/playfab/multiplayer/multiplayerserver/createremoteuser) API call.
+In order to connect to the VM hosting your game server (either Windows or Linux), you can get Remote Desktop (RDP)/SSH credentials using the "Connect" button on playfab.com web application. You can see this button on the "Virtual Machines" page on your Multiplayer Build) or using [CreateRemoteUser](/rest/api/playfab/multiplayer/multiplayer-server/create-remote-user) API call.
 
 As soon as you connect to the VM, you can use the console of the operating system to monitor your game servers. MPS service uses Docker containers to spin up game server processes. To run Docker CLI commands, you'll need an admin powershell on Windows and __sudo su -__ on Linux.
 
@@ -29,7 +29,7 @@ As soon as you connect to the VM, you can use the console of the operating syste
 #### How can I get started with Docker containers?
 Regardless if you're developing on Linux or Windows, you should get acquainted with the basics of Docker containers. 
 
-You can watch the official "Get Started" video [here (external link)](https://docs.docker.com/get-started/) and experiment in an [interactive playground on Katacoda (external link)](https://www.katacoda.com/courses/docker). To learn more about Windows Containers, see [Windows and containers](https://docs.microsoft.com/virtualization/windowscontainers/about/).
+You can watch the official "Get Started" video [here (external link)](https://docs.docker.com/get-started/) and experiment in an [interactive playground on Katacoda (external link)](https://www.katacoda.com/courses/docker). To learn more about Windows Containers, see [Windows and containers](/virtualization/windowscontainers/about/).
 
 #### Once I RDP/SSH into the VM, how can I see a list of my running game servers running in Docker containers?
 Use __docker ps__. You will see container name and hashes as well as port mapping from the VM port(s) to the Docker container port(s).

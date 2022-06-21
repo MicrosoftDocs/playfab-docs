@@ -10,7 +10,7 @@ keywords: playfab, multiplayer, networking, xbox live
 ---
 
 # Xbox Live Helper library overview
-The Xbox Live Helper library for PlayFab Party is designed to help games using PlayFab Party meet [Xbox Live policies](https://docs.microsoft.com/gaming/xbox-live/xboxlive-policies) related to communication (XR-015 and XR-045). The Xbox Live Helper library is available on [Nuget.org](https://www.nuget.org/profiles/PlayFab).
+The Xbox Live Helper library for PlayFab Party is designed to help games using PlayFab Party meet [Xbox Live policies](/gaming/gdk/_content/gc/live/get-started/live-xbl-overview) related to communication (XR-015 and XR-045). The Xbox Live Helper library is available on [Nuget.org](https://www.nuget.org/profiles/PlayFab).
 
 ## Compatibility with the PlayFab Party library
 
@@ -25,7 +25,7 @@ While we strive to minimize breaking changes in our APIs, some changes made to t
 
 ## Keeping Track of Xbox Live Users
 
-The PlayFab Party Xbox Live helper must be explicitly informed of the Xbox Live users currently participating in the Party session. It is recommended that titles achieve this by listening for changes to their [multiplayer session document](https://docs.microsoft.com/gaming/xbox-live/features/multiplayer/mpsd/live-xbox-multiplayer-session-directory) and reflecting that roster in the Xbox Live Helper library via `PartyXblManager::CreateLocalChatUser` and `PartyXblManager::CreateRemoteChatUser`.
+The PlayFab Party Xbox Live helper must be explicitly informed of the Xbox Live users currently participating in the Party session. It is recommended that titles achieve this by listening for changes to their [multiplayer session document](/gaming/gdk/_content/gc/live/get-started/live-xbl-overview) and reflecting that roster in the Xbox Live Helper library via `PartyXblManager::CreateLocalChatUser` and `PartyXblManager::CreateRemoteChatUser`.
 
 For local users:
 ```cpp
@@ -81,7 +81,7 @@ For both, local and remote chat users, it's important to keep in mind that the c
 
 ## Creating PartyLocalChatControls from PartyXblLocalChatUsers
 
-`PartyXblLocalChatUser` objects are often only useful when associated with `PartyLocalUser` and `PartyLocalChatControl` objects in the Party library. Generating `PartyLocalUser` and `PartyLocalChatControl` objects, requires titles to log in their users to PlayFab and retrieve their user's `entityId` and `titlePlayerEntityToken`. Login can be performed via the [PlayFab CPP SDK](https://docs.microsoft.com/gaming/playfab/sdks/playfab-cpp/), but if a title intends to use Xbox Live credentials to log into PlayFab, they may use `PartyXblManager::LoginToPlayFab` to avoid pulling in an extra dependency.
+`PartyXblLocalChatUser` objects are often only useful when associated with `PartyLocalUser` and `PartyLocalChatControl` objects in the Party library. Generating `PartyLocalUser` and `PartyLocalChatControl` objects, requires titles to log in their users to PlayFab and retrieve their user's `entityId` and `titlePlayerEntityToken`. Login can be performed via the [PlayFab CPP SDK](../../../sdks/playfab-cpp/index.md), but if a title intends to use Xbox Live credentials to log into PlayFab, they may use `PartyXblManager::LoginToPlayFab` to avoid pulling in an extra dependency.
 
 The following sample shows how the Xbox Live Helper library can help you create `PartyLocalUser` and `PartyLocalChatControl` objects, from `PartyXblLocalChatUser` objects. For more information on creating `PartyXblLocalChatUser` objects, see [Keeping Track of Xbox Live Users](#keeping-track-of-xbox-live-users).
 
@@ -253,14 +253,14 @@ Titles that support cross-network play and communication between Xbox Live and n
     }
 ```
 
-More information on XR-015 and how it pertains to cross-network play and communication can be found [here](https://docs.microsoft.com/gaming/xbox-live/policies/xr015)
+More information on XR-015 and how it pertains to cross-network play and communication can be found [here](/gaming/gdk/_content/gc/live/get-started/live-xbl-overview)
 
 ## Mapping between Xbox Live User IDs and PlayFab Entity IDs
 
-Xbox Live titles using PlayFab Party will often need to translate between Xbox Live Users IDs (used throughout the Xbox Live ecosystem) and PlayFab Entity IDs (used by PlayFab Party). Using `PartyXblManager::GetEntityIdsFromXboxLiveUserIds`, titles can retrieve a list of PlayFab Entity IDs corresponding to a given list of Xbox Live User IDs. Titles are expected to already have a list of Xbox Live User IDs through the use of an external roster service, like the [Multiplayer Session Directory](https://docs.microsoft.com/gaming/xbox-live/features/multiplayer/mpsd/live-mpsd-nav). By associating the Xbox Live User IDs from the roster with their PlayFab Entity IDs, we can construct a mapping of all PlayFab Entity IDs corresponding to your game session's roster. This mapping can then be used to associate `PartyEndpoint` and `PartyChatControl` objects with their corresponding Xbox Live users.
+Xbox Live titles using PlayFab Party will often need to translate between Xbox Live Users IDs (used throughout the Xbox Live ecosystem) and PlayFab Entity IDs (used by PlayFab Party). Using `PartyXblManager::GetEntityIdsFromXboxLiveUserIds`, titles can retrieve a list of PlayFab Entity IDs corresponding to a given list of Xbox Live User IDs. Titles are expected to already have a list of Xbox Live User IDs through the use of an external roster service, like the [Multiplayer Session Directory](/gaming/gdk/_content/gc/live/get-started/live-xbl-overview). By associating the Xbox Live User IDs from the roster with their PlayFab Entity IDs, we can construct a mapping of all PlayFab Entity IDs corresponding to your game session's roster. This mapping can then be used to associate `PartyEndpoint` and `PartyChatControl` objects with their corresponding Xbox Live users.
 
 > [!NOTE]
-> Each Xbox Live User ID will only map to a PlayFab Entity ID if this Xbox Live user has already been linked to a PlayFab account. A PlayFab account is automatically created and linked the first time `PartyXblManager::LoginToPlayFab` is called for a given Xbox user. Alternatively, consumers of the PlayFab SDK can use the [LoginWithXbox](https://docs.microsoft.com/rest/api/playfab/client/authentication/loginwithxbox?view=playfab-rest) API to achieve the same results.
+> Each Xbox Live User ID will only map to a PlayFab Entity ID if this Xbox Live user has already been linked to a PlayFab account. A PlayFab account is automatically created and linked the first time `PartyXblManager::LoginToPlayFab` is called for a given Xbox user. Alternatively, consumers of the PlayFab SDK can use the [LoginWithXbox](/rest/api/playfab/client/authentication/login-with-xbox?view=playfab-rest) API to achieve the same results.
 
 The local `PartyXblLocalChatUser` will be used to authenticate with PlayFab. If the user was not previously logged in to PlayFab with a call to `PartyXblManager::LoginToPlayFab`, the Xbox Live Helper library will need to authenticate the user in the background.
 
@@ -372,7 +372,7 @@ GetXboxUserIdFromPlayFabEntityId(
 
 ## Special considerations for Windows 10 and Windows 7
 
-On Windows, the Xbox Live Helper library needs helps from the title to obtain Xbox Live tokens. The library will request tokens by generating `PartyXblTokenAndSignatureRequestedStateChange`. The title can use the [Xbox Authentication Library](https://docs.microsoft.com/gaming/xbox-live/using-xbox-live/auth/xal-overview) (XAL) to fulfill these requests. Offloading this work to the title ensures that it remains in full control of any UI handling and consent prompt that is normally associated with user authentication.
+On Windows, the Xbox Live Helper library needs helps from the title to obtain Xbox Live tokens. The library will request tokens by generating `PartyXblTokenAndSignatureRequestedStateChange`. The title can use the [Xbox Authentication Library](/gaming/gdk/_content/gc/live/get-started/live-xbl-overview) (XAL) to fulfill these requests. Offloading this work to the title ensures that it remains in full control of any UI handling and consent prompt that is normally associated with user authentication.
 
 ```cpp
     if (stateChange->stateChangeType == PartyXblStateChangeType::TokenAndSignatureRequested)
@@ -402,6 +402,6 @@ On Windows, the Xbox Live Helper library needs helps from the title to obtain Xb
     }
 ```
 
-For more guidance on how to retrieve token and signature using XAL, see the [Xbox Authentication Library documentation.](https://docs.microsoft.com/gaming/xbox-live/using-xbox-live/auth/xal-partner-token)
+For more guidance on how to retrieve token and signature using XAL, see the [Xbox Authentication Library documentation.](/gaming/gdk/_content/gc/live/get-started/live-xbl-overview)
 
 Once you have the token and signature, they can be provided to the Xbox Live Helper library by calling `PartyXblManager::CompleteGetTokenAndSignatureRequest()` with the same `correlationId` that was provided to the title through the state change.

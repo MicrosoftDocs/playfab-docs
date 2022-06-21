@@ -88,5 +88,5 @@ print(response)
 
 ## Additional resources
 
-* [Azure Kusto Python SDK documentation](https://docs.microsoft.com/azure/kusto/api/python/kusto-python-client-library)
+* [Azure Kusto Python SDK documentation](/azure/data-explorer/kusto/api/python/kusto-python-client-library)
 * To learn about other tools to connect to Insights, see  [Connecting external tools to Insights](index.md)

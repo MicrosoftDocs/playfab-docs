@@ -20,5 +20,4 @@ public IList<PlayFabPlayer> PlayFabMultiplayerManager.RemotePlayers { get; }
 
 RemotePlayers
 
-[IList\<T>](https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1?view=netcore-3.1)
-
+[IList\<T>](/dotnet/api/system.collections.generic.ilist-1?view=netcore-3.1)

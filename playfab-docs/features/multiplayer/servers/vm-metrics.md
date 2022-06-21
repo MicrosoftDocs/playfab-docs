@@ -31,10 +31,10 @@ PlayFab Multiplayer Servers service supports a limited number of system metrics 
 VM metrics for a Build can be enabled in two ways, depending on how a Build is created:
 
 1. Using Game Manager, you can enable the "Virtual machine metrics preview" checkbox on the "New Build" Game Manager page.
-2. Using the [PlayFab Multiplayer Servers API](https://docs.microsoft.com/rest/api/playfab/multiplayer), you can set the property "IsEnabled" to true in the following API objects:
-  - [InstrumentationConfiguration in the CreateBuildWithManagedContainer API call](https://docs.microsoft.com/rest/api/playfab/multiplayer/multiplayer-server/create-build-with-managed-container#instrumentationconfiguration) for a Windows Build with containers
-  - [InstrumentationConfiguration in the CreateBuildWithProcessBasedServer API call](https://docs.microsoft.com/rest/api/playfab/multiplayer/multiplayer-server/create-build-with-process-based-server#instrumentationconfiguration) for a process-based Windows Build
-  - [LinuxInstrumentationConfiguration in the CreateBuildWithCustomContainer API call](https://docs.microsoft.com/rest/api/playfab/multiplayer/multiplayer-server/create-build-with-custom-container#linuxinstrumentationconfiguration) for a Linux Build
+2. Using the [PlayFab Multiplayer Servers API](/rest/api/playfab/multiplayer/), you can set the property "IsEnabled" to true in the following API objects:
+  - [InstrumentationConfiguration in the CreateBuildWithManagedContainer API call](/rest/api/playfab/multiplayer/multiplayer-server/create-build-with-managed-container#instrumentationconfiguration) for a Windows Build with containers
+  - [InstrumentationConfiguration in the CreateBuildWithProcessBasedServer API call](/rest/api/playfab/multiplayer/multiplayer-server/create-build-with-process-based-server#instrumentationconfiguration) for a process-based Windows Build
+  - [LinuxInstrumentationConfiguration in the CreateBuildWithCustomContainer API call](/rest/api/playfab/multiplayer/multiplayer-server/create-build-with-custom-container#linuxinstrumentationconfiguration) for a Linux Build
 
 When VM metrics feature is enabled for a Build, it will remain enabled for the entire lifetime of the Build. You can't enable/disable VM metrics for a Build after it has been created.
 

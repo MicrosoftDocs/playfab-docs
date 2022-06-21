@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Xbox Requirements
 
-If your game is targeting Xbox consoles, it must adhere to a set of requirements to ensure consistent functionality and behavior when interacting with Xbox Live. This set of requirements is listed in the [Xbox Requirements](https://aka.ms/xrs) (XRs for short). XRs interact and overlap with [the policies](https://docs.microsoft.com/gaming/xbox-live/policies/pc/live-policies-pc) that are required to make use of Xbox Live in your game on PC and other platforms. Here we describe best practices for PlayFab Party that will help you comply with these requirements.
+If your game is targeting Xbox consoles, it must adhere to a set of requirements to ensure consistent functionality and behavior when interacting with Xbox Live. This set of requirements is listed in the [Xbox Requirements](https://aka.ms/xrs) (XRs for short). XRs interact and overlap with [the policies](/gaming/gdk/_content/gc/live/get-started/live-xbl-overview) that are required to make use of Xbox Live in your game on PC and other platforms. Here we describe best practices for PlayFab Party that will help you comply with these requirements.
 
 For quick reference, refer to the following table which matches PlayFab Party scenarios to the XRs they address:
 
@@ -57,7 +57,7 @@ To recognize Xbox users, you should build mappings between PlayFab Entity IDs an
 
 In addition to providing the Party network's roster, MPSD documents also drive many multiplayer experiences in the Xbox multiplayer ecosystem such as matchmaking, platform invites, recent player lists, and join-in-progress. For more information on how to incorporate Party networks into these MPSD flows, see [Using PlayFab Party with MPSD](using-mpsd.md).
 
-For more information on MPSD features, see [its overview documentation](https://docs.microsoft.com/gaming/xbox-live/features/multiplayer/mpsd/live-mpsd-overview).
+For more information on MPSD features, see [its overview documentation](/gaming/xbox-live/features/multiplayer/mpsd/live-mpsd-overview).
 
 > [!IMPORTANT]
 > This section provides best practices when using PlayFab Party together with MPSD, but PlayFab Party itself does not implicitly satisfy the MPSD requirements of [XR-067](https://developer.microsoft.com/games/xbox/docs/gdk/xr067). Refer to the [XR-067](https://developer.microsoft.com/games/xbox/docs/gdk/xr067) technical documentation for information on satisfying these requirements.
@@ -218,8 +218,8 @@ Even though PlayFab Party does not interact natively with friends lists on any p
 
 - [Xbox Live friends list requirements (XR-070)](https://developer.microsoft.com/games/xbox/docs/gdk/console-certification-requirements-and-tests)
 - [Cross-network friends list requirements (XR-007)](https://developer.microsoft.com/games/xbox/docs/gdk/xr007)
-- [Xbox Social Manager](https://docs.microsoft.com/gaming/xbox-live/features/social/social-manager/live-social-manager-overview)
-- [Xbox Live Services API (XSAPI)](https://docs.microsoft.com/gaming/xbox-live/api-ref/xsapi/live-introduction-to-xbox-live-apis)
+- [Xbox Social Manager](/gaming/gdk/_content/gc/live/get-started/live-xbl-overview)
+- [Xbox Live Services API (XSAPI)](/gaming/gdk/_content/gc/live/get-started/live-xbl-overview)
 
 ## Supporting voice chat
 

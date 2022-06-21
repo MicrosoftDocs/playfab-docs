@@ -18,457 +18,457 @@ The following APIs cause the Profile read meter to increment.
 
 ## Admin APIs
 
-- [CheckLimitedEditionItemAvailability](https://docs.microsoft.com/rest/api/playfab/admin/player-item-management/checklimitededitionitemavailability?view=playfab-rest)
+- [CheckLimitedEditionItemAvailability](/rest/api/playfab/admin/player-item-management/check-limited-edition-item-availability?view=playfab-rest)
     Checks the global count for the limited edition item.
 
-- [GetAllSegments](https://docs.microsoft.com/rest/api/playfab/admin/playstream/getallsegments?view=playfab-rest)
+- [GetAllSegments](/rest/api/playfab/admin/play-stream/get-all-segments?view=playfab-rest)
     Retrieves an array of player segment definitions. Results from this can be used in subsequent API calls such as GetPlayersInSegment which requires a Segment ID. While segment names can change the ID for that segment will not change.
 
-- [ExportMasterPlayerData](https://docs.microsoft.com/rest/api/playfab/admin/account-management/exportmasterplayerdata?view=playfab-rest)
+- [ExportMasterPlayerData](/rest/api/playfab/admin/account-management/export-master-player-data?view=playfab-rest)
     Exports all associated data of a master player account.
 
-- [GetCatalogItems](https://docs.microsoft.com/rest/api/playfab/admin/title-wide-data-management/getcatalogitems?view=playfab-rest)
+- [GetCatalogItems](/rest/api/playfab/admin/title-wide-data-management/get-catalog-items?view=playfab-rest)
     Retrieves the specified version of the title's catalog of virtual goods, including all defined properties.
 
-- [GetContentList](https://docs.microsoft.com/rest/api/playfab/admin/content/getcontentlist?view=playfab-rest)
+- [GetContentList](/rest/api/playfab/admin/content/get-content-list?view=playfab-rest)
     List all contents of the title and get statistics such as size.
 
-- [GetDataReport](https://docs.microsoft.com/rest/api/playfab/admin/player-data-management/getdatareport?view=playfab-rest)
+- [GetDataReport](/rest/api/playfab/admin/player-data-management/get-data-report?view=playfab-rest)
     Retrieves a download URL for the requested report.
 
-- [GetPlayerSegments](https://docs.microsoft.com/rest/api/playfab/admin/playstream/getplayersegments?view=playfab-rest)
+- [GetPlayerSegments](/rest/api/playfab/admin/play-stream/get-player-segments?view=playfab-rest)
     List all segments that a player currently belongs to at this moment in time.
     
-- [GetPlayerTags](https://docs.microsoft.com/rest/api/playfab/admin/playstream/getplayertags?view=playfab-rest)
+- [GetPlayerTags](/rest/api/playfab/admin/play-stream/get-player-tags?view=playfab-rest)
     Get all tags with a given Namespace (optional) from a player profile.
 
-- [GetPolicy](https://docs.microsoft.com/rest/api/playfab/admin/authentication/getpolicy?view=playfab-rest)
+- [GetPolicy](/rest/api/playfab/admin/authentication/get-policy?view=playfab-rest)
     Gets the requested policy.
 
-- [GetPublisherData](https://docs.microsoft.com/rest/api/playfab/admin/title-wide-data-management/getpublisherdata?view=playfab-rest)
+- [GetPublisherData](/rest/api/playfab/admin/title-wide-data-management/get-publisher-data?view=playfab-rest)
     Retrieves the key-value store of custom publisher settings.
 
-- [GetRandomResultTables](https://docs.microsoft.com/rest/api/playfab/admin/title-wide-data-management/getrandomresulttables?view=playfab-rest)
+- [GetRandomResultTables](/rest/api/playfab/admin/title-wide-data-management/get-random-result-tables?view=playfab-rest)
     Retrieves the random drop table configuration for the title.
 
-- [GetStoreItems](https://docs.microsoft.com/rest/api/playfab/admin/title-wide-data-management/getstoreitems?view=playfab-rest)
+- [GetStoreItems](/rest/api/playfab/admin/title-wide-data-management/get-store-items?view=playfab-rest)
     Retrieves the set of items defined for the specified store, including all prices defined.
 
-- [GetTitleData](https://docs.microsoft.com/rest/api/playfab/admin/title-wide-data-management/gettitledata?view=playfab-rest)
+- [GetTitleData](/rest/api/playfab/admin/title-wide-data-management/get-title-data?view=playfab-rest)
     Retrieves the key-value store of custom title settings which can be read by the client.
 
 - [GetUserAccountInfo](Retrieves the relevant details for a specified user, based upon a match against a supplied unique identifier)
     Retrieves the relevant details for a specified user, based upon a match against a supplied unique identifier.
 
-- [GetUserBans](https://docs.microsoft.com/rest/api/playfab/admin/account-management/getuserbans?view=playfab-rest)
+- [GetUserBans](/rest/api/playfab/admin/account-management/get-user-bans?view=playfab-rest)
     Gets all bans for a user.
 
-- [GetUserData](https://docs.microsoft.com/rest/api/playfab/admin/player-data-management/getuserdata?view=playfab-rest)
+- [GetUserData](/rest/api/playfab/admin/player-data-management/get-user-data?view=playfab-rest)
     Retrieves the title-specific custom data for the user which is readable and writable by the client.
 
-- [GetUserInternalData](https://docs.microsoft.com/rest/api/playfab/admin/player-data-management/getuserinternaldata?view=playfab-rest)
+- [GetUserInternalData](/rest/api/playfab/admin/player-data-management/get-user-internal-data?view=playfab-rest)
     Retrieves the title-specific custom data for the user which cannot be accessed by the client.
 
-- [GetUserInventory](https://docs.microsoft.com/rest/api/playfab/admin/player-item-management/getuserinventory?view=playfab-rest)
+- [GetUserInventory](/rest/api/playfab/admin/player-item-management/get-user-inventory?view=playfab-rest)
     Retrieves the specified user's current inventory of virtual goods
 
-- [GetUserPublisherData](https://docs.microsoft.com/rest/api/playfab/admin/player-data-management/getuserpublisherdata?view=playfab-rest)
+- [GetUserPublisherData](/rest/api/playfab/admin/player-data-management/get-user-publisher-data?view=playfab-rest)
     Retrieves the publisher-specific custom data for the user which is readable and writable by the client.
 
-- [GetUserPublisherInternalData](https://docs.microsoft.com/rest/api/playfab/admin/player-data-management/getuserpublisherinternaldata?view=playfab-rest)
+- [GetUserPublisherInternalData](/rest/api/playfab/admin/player-data-management/get-user-publisher-internal-data?view=playfab-rest)
     Retrieves the publisher-specific custom data for the user which cannot be accessed by the client.
 
-- [GetUserPublisherReadOnlyData](https://docs.microsoft.com/rest/api/playfab/admin/player-data-management/getuserpublisherreadonlydata?view=playfab-rest)
+- [GetUserPublisherReadOnlyData](/rest/api/playfab/admin/player-data-management/get-user-publisher-read-only-data?view=playfab-rest)
     Retrieves the publisher-specific custom data for the user which can only be read by the client.
 
-- [GetUserReadOnlyData](https://docs.microsoft.com/rest/api/playfab/admin/player-data-management/getuserreadonlydata?view=playfab-rest)
+- [GetUserReadOnlyData](/rest/api/playfab/admin/player-data-management/get-user-read-only-data?view=playfab-rest)
     Retrieves the title-specific custom data for the user which can only be read by the client.
 
-- [ListVirtualCurrencyTypes](https://docs.microsoft.com/rest/api/playfab/admin/title-wide-data-management/listvirtualcurrencytypes?view=playfab-rest)
+- [ListVirtualCurrencyTypes](/rest/api/playfab/admin/title-wide-data-management/list-virtual-currency-types?view=playfab-rest)
     Retuns the list of all defined virtual currencies for the title
 
-- [GetMatchmakerGameInfo](https://docs.microsoft.com/rest/api/playfab/admin/matchmaking/getmatchmakergameinfo?view=playfab-rest)
+- [GetMatchmakerGameInfo](/rest/api/playfab/admin/matchmaking/get-matchmaker-game-info?view=playfab-rest)
     Retrieves the details for a specific completed session, including links to standard out and standard error logs.
 
-- [GetMatchmakerGameModes](https://docs.microsoft.com/rest/api/playfab/admin/matchmaking/getmatchmakergamemodes?view=playfab-rest)
+- [GetMatchmakerGameModes](/rest/api/playfab/admin/matchmaking/get-matchmaker-game-modes?view=playfab-rest)
     Retrieves the details of defined game modes for the specified game server executable.
 
-- [GetPlayerIdFromAuthToken](https://docs.microsoft.com/rest/api/playfab/admin/account-management/getplayeridfromauthtoken?view=playfab-rest)
+- [GetPlayerIdFromAuthToken](/rest/api/playfab/admin/account-management/get-player-id-from-auth-token?view=playfab-rest)
     Gets a player's ID from an auth token.
 
-- [GetPlayersInSegment](https://docs.microsoft.com/rest/api/playfab/admin/playstream/getplayersinsegment?view=playfab-rest)
+- [GetPlayersInSegment](/rest/api/playfab/admin/play-stream/get-players-in-segment?view=playfab-rest)
     Allows for paging through all players in a given segment. This API creates a snapshot of all player profiles that match the segment definition at the time of its creation and lives through the Total Seconds to Live, refreshing its life span on each subsequent use of the Continuation Token. Profiles that change during the course of paging will not be reflected in the results. AB Test segments are currently not supported by this operation.
     
-- [GetExperiments](https://docs.microsoft.com/rest/api/playfab/experimentation/experimentation/getexperiments?view=playfab-rest)
+- [GetExperiments](/rest/api/playfab/experimentation/experimentation/get-experiments?view=playfab-rest)
     Gets the details of all experiments for a title.
     
-- [GetLatestScorecard](https://docs.microsoft.com/rest/api/playfab/experimentation/experimentation/getlatestscorecard?view=playfab-rest)
+- [GetLatestScorecard](/rest/api/playfab/experimentation/experimentation/get-latest-scorecard?view=playfab-rest)
     Gets the latest scorecard of the experiment for the title.
     
-- [GetTreatmentAssignment](https://docs.microsoft.com/rest/api/playfab/experimentation/experimentation/gettreatmentassignment?view=playfab-rest)
+- [GetTreatmentAssignment](/rest/api/playfab/experimentation/experimentation/get-treatment-assignment?view=playfab-rest)
     Gets the treatment assignments for a player for every running experiment in the title
     
 ## Client APIs
 
-- [GetAllUsersCharacters](https://docs.microsoft.com/rest/api/playfab/client/characters/getalluserscharacters?view=playfab-rest)
+- [GetAllUsersCharacters](/rest/api/playfab/client/characters/get-all-users-characters?view=playfab-rest)
     Lists all of the characters that belong to a specific user. CharacterIds are not globally unique; characterId must be evaluated with the parent PlayFabId to guarantee uniqueness.
 
-- [GetCatalogItems](https://docs.microsoft.com/rest/api/playfab/client/title-wide-data-management/getcatalogitems?view=playfab-rest)
+- [GetCatalogItems](/rest/api/playfab/client/title-wide-data-management/get-catalog-items?view=playfab-rest)
     Retrieves the specified version of the title's catalog of virtual goods, including all defined properties.
 
-- [GetCharacterData](https://docs.microsoft.com/rest/api/playfab/client/character-data/getcharacterdata?view=playfab-rest)
+- [GetCharacterData](/rest/api/playfab/client/character-data/get-character-data?view=playfab-rest)
     Retrieves the title-specific custom data for the character which is readable and writable by the client.
 
-- [GetCharacterInventory](https://docs.microsoft.com/rest/api/playfab/client/player-item-management/getcharacterinventory?view=playfab-rest)
+- [GetCharacterInventory](/rest/api/playfab/client/player-item-management/get-character-inventory?view=playfab-rest)
     Retrieves the specified character's current inventory of virtual goods.
 
-- [GetCharacterLeaderboard](https://docs.microsoft.com/rest/api/playfab/client/characters/getcharacterleaderboard?view=playfab-rest)
+- [GetCharacterLeaderboard](/rest/api/playfab/client/characters/get-character-leaderboard?view=playfab-rest)
     Retrieves a list of ranked characters for the given statistic, starting from the indicated point in the leaderboard.
 
-- [GetCharacterReadOnlyData](https://docs.microsoft.com/rest/api/playfab/client/character-data/getcharacterreadonlydata?view=playfab-rest)
+- [GetCharacterReadOnlyData](/rest/api/playfab/client/character-data/get-character-read-only-data?view=playfab-rest)
     Retrieves the title-specific custom data for the character which can only be read by the client.
 
-- [GetCharacterStatistics](https://docs.microsoft.com/rest/api/playfab/client/characters/getcharacterstatistics?view=playfab-rest)
+- [GetCharacterStatistics](/rest/api/playfab/client/characters/get-character-statistics?view=playfab-rest)
     Retrieves the details of all title-specific statistics for the user.
 
-- [GetFriendLeaderboard](https://docs.microsoft.com/rest/api/playfab/client/player-data-management/getfriendleaderboard?view=playfab-rest)
+- [GetFriendLeaderboard](/rest/api/playfab/client/player-data-management/get-friend-leaderboard?view=playfab-rest)
     Retrieves a list of ranked friends of the current player for the given statistic, starting from the indicated point in the leaderboard.
 
-- [GetFriendLeaderboardAroundPlayer](https://docs.microsoft.com/rest/api/playfab/client/player-data-management/getfriendleaderboardaroundplayer?view=playfab-rest)
+- [GetFriendLeaderboardAroundPlayer](/rest/api/playfab/client/player-data-management/get-friend-leaderboard-around-player?view=playfab-rest)
     Retrieves a list of ranked friends of the current player for the given statistic, centered on the requested PlayFab user. If PlayFabId is empty or null will return currently logged in user.
 
-- [GetFriendsList](https://docs.microsoft.com/rest/api/playfab/client/friend-list-management/getfriendslist?view=playfab-rest)
+- [GetFriendsList](/rest/api/playfab/client/friend-list-management/get-friends-list?view=playfab-rest)
     Retrieves the current friend list for the local user, constrained to users who have PlayFab accounts. Friends from linked accounts (Facebook, Steam) are also included. You may optionally exclude some linked services' friends.
 
-- [GetGameServerRegions](https://docs.microsoft.com/rest/api/playfab/client/matchmaking/getgameserverregions?view=playfab-rest)
+- [GetGameServerRegions](/rest/api/playfab/client/matchmaking/get-game-server-regions?view=playfab-rest)
     Get details about the regions hosting game servers matching the given parameters.
 
-- [GetLeaderboard](https://docs.microsoft.com/rest/api/playfab/client/player-data-management/getleaderboard?view=playfab-rest)
+- [GetLeaderboard](/rest/api/playfab/client/player-data-management/get-leaderboard?view=playfab-rest)
     Retrieves a list of ranked users for the given statistic, starting from the indicated point in the leaderboard.
 
-- [GetLeaderboardAroundCharacter](https://docs.microsoft.com/rest/api/playfab/client/characters/getleaderboardaroundcharacter?view=playfab-rest)
+- [GetLeaderboardAroundCharacter](/rest/api/playfab/client/characters/get-leaderboard-around-character?view=playfab-rest)
     Retrieves a list of ranked characters for the given statistic, centered on the requested Character ID.
 
-- [GetLeaderboardAroundPlayer](https://docs.microsoft.com/rest/api/playfab/client/player-data-management/getleaderboardaroundplayer?view=playfab-rest)
+- [GetLeaderboardAroundPlayer](/rest/api/playfab/client/player-data-management/get-leaderboard-around-player?view=playfab-rest)
         Retrieves a list of ranked users for the given statistic, centered on the requested player. If PlayFabId is empty or null will return currently logged in user.
 
-- [GetLeaderboardForUserCharacters](https://docs.microsoft.com/rest/api/playfab/client/characters/getleaderboardforusercharacters?view=playfab-rest)
+- [GetLeaderboardForUserCharacters](/rest/api/playfab/client/characters/get-leaderboard-for-user-characters?view=playfab-rest)
     Retrieves a list of all of the user's characters for the given statistic.
 
-- [GetPaymentToken](https://docs.microsoft.com/rest/api/playfab/client/player-item-management/getpaymenttoken?view=playfab-rest)
+- [GetPaymentToken](/rest/api/playfab/client/player-item-management/get-payment-token?view=playfab-rest)
     For payments flows where the provider requires playfab (the fulfiller) to initiate the transaction, but the client completes the rest of the flow. In the Xsolla case, the token returned here will be passed to Xsolla by the client to create a cart. Poll GetPurchase using the returned OrderId once you've completed the payment.
 
-- [GetPlayerProfile](https://docs.microsoft.com/rest/api/playfab/client/account-management/getplayerprofile?view=playfab-rest)
+- [GetPlayerProfile](/rest/api/playfab/client/account-management/get-player-profile?view=playfab-rest)
     Retrieves the player's profile.
 
-- [GetPlayerSegments](https://docs.microsoft.com/rest/api/playfab/client/playstream/getplayersegments?view=playfab-rest)
+- [GetPlayerSegments](/rest/api/playfab/client/play-stream/get-player-segments?view=playfab-rest)
     List all segments that a player currently belongs to at this moment in time.
 
-- [GetPlayerStatistics](https://docs.microsoft.com/rest/api/playfab/client/player-data-management/getplayerstatistics?view=playfab-rest)
+- [GetPlayerStatistics](/rest/api/playfab/client/player-data-management/get-player-statistics?view=playfab-rest)
     Retrieves the indicated statistics (current version and values for all statistics, if none are specified), for the local player.
 
-- [GetPlayerStatisticVersions](https://docs.microsoft.com/rest/api/playfab/client/player-data-management/getplayerstatisticversions?view=playfab-rest)
+- [GetPlayerStatisticVersions](/rest/api/playfab/client/player-data-management/get-player-statistic-versions?view=playfab-rest)
     Retrieves the information on the available versions of the specified statistic.
 
-- [GetPlayerTags](https://docs.microsoft.com/rest/api/playfab/client/playstream/getplayertags?view=playfab-rest)
+- [GetPlayerTags](/rest/api/playfab/client/play-stream/get-player-tags?view=playfab-rest)
     Get all tags with a given Namespace (optional) from a player profile.
 
-- [GetPlayerTrades](https://docs.microsoft.com/rest/api/playfab/client/trading/getplayertrades?view=playfab-rest)
+- [GetPlayerTrades](/rest/api/playfab/client/trading/get-player-trades?view=playfab-rest)
     Gets all trades the player has either opened or accepted, optionally filtered by trade status.
 
-- [GetPlayFabIDsFromFacebookIDs](https://docs.microsoft.com/rest/api/playfab/client/account-management/getplayfabidsfromfacebookids?view=playfab-rest)
+- [GetPlayFabIDsFromFacebookIDs](/rest/api/playfab/client/account-management/get-playfab-ids-from-facebook-ids?view=playfab-rest)
     Retrieves the unique PlayFab identifiers for the given set of Facebook identifiers.
 
-- [GetPlayFabIDsFromFacebookInstantGamesIds](https://docs.microsoft.com/rest/api/playfab/client/account-management/getplayfabidsfromfacebookinstantgamesids?view=playfab-rest)
+- [GetPlayFabIDsFromFacebookInstantGamesIds](/rest/api/playfab/client/account-management/get-playfab-ids-from-facebook-instant-games-ids?view=playfab-rest)
     Retrieves the unique PlayFab identifiers for the given set of Facebook Instant Game identifiers.
 
-- [GetPlayFabIDsFromGameCenterIDs](https://docs.microsoft.com/rest/api/playfab/client/account-management/getplayfabidsfromgamecenterids?view=playfab-rest)
+- [GetPlayFabIDsFromGameCenterIDs](/rest/api/playfab/client/account-management/get-playfab-ids-from-game-center-ids?view=playfab-rest)
     Retrieves the unique PlayFab identifiers for the given set of Game Center identifiers (referenced in the Game Center Programming Guide as the Player Identifier).
 
-- [GetPlayFabIDsFromGenericIDs](https://docs.microsoft.com/rest/api/playfab/client/account-management/getplayfabidsfromgenericids?view=playfab-rest)
+- [GetPlayFabIDsFromGenericIDs](/rest/api/playfab/client/account-management/get-playfab-ids-from-generic-ids?view=playfab-rest)
     Retrieves the unique PlayFab identifiers for the given set of generic service identifiers. A generic identifier is the service name plus the service-specific ID for the player, as specified by the title when the generic identifier was added to the player account.
 
-- [GetPlayFabIDsFromGoogleIDs](https://docs.microsoft.com/rest/api/playfab/client/account-management/getplayfabidsfromgoogleids?view=playfab-rest)
+- [GetPlayFabIDsFromGoogleIDs](/rest/api/playfab/client/account-management/get-playfab-ids-from-google-ids?view=playfab-rest)
     Retrieves the unique PlayFab identifiers for the given set of Google identifiers. The Google identifiers are the IDs for the user accounts, available as "id" in the Google+ People API calls.
 
-- [GetPlayFabIDsFromKongregateIDs](https://docs.microsoft.com/rest/api/playfab/client/account-management/getplayfabidsfromkongregateids?view=playfab-rest)
+- [GetPlayFabIDsFromKongregateIDs](/rest/api/playfab/client/account-management/get-playfab-ids-from-kongregate-ids?view=playfab-rest)
     Retrieves the unique PlayFab identifiers for the given set of Kongregate identifiers. The Kongregate identifiers are the IDs for the user accounts, available as "user_id" from the Kongregate API methods(ex: http://developers.kongregate.com/docs/client/getUserId).
 
-- [GetPlayFabIDsFromNintendoSwitchDeviceIds](https://docs.microsoft.com/rest/api/playfab/client/account-management/getplayfabidsfromnintendoswitchdeviceids?view=playfab-rest)
+- [GetPlayFabIDsFromNintendoSwitchDeviceIds](/rest/api/playfab/client/account-management/get-playfab-ids-from-nintendo-switch-device-ids?view=playfab-rest)
     Retrieves the unique PlayFab identifiers for the given set of Nintendo Switch identifiers.
 
-- [GetPlayFabIDsFromPSNAccountIDs](https://docs.microsoft.com/rest/api/playfab/client/account-management/getplayfabidsfrompsnaccountids?view=playfab-rest)
+- [GetPlayFabIDsFromPSNAccountIDs](/rest/api/playfab/client/account-management/get-playfab-ids-from-psn-account-ids?view=playfab-rest)
     Retrieves the unique PlayFab identifiers for the given set of PlayStation&#8482;Network identifiers.
 
-- [GetPlayFabIDsFromSteamIDs](https://docs.microsoft.com/rest/api/playfab/client/account-management/getplayfabidsfromsteamids?view=playfab-rest)
+- [GetPlayFabIDsFromSteamIDs](/rest/api/playfab/client/account-management/get-playfab-ids-from-steam-ids?view=playfab-rest)
     Retrieves the unique PlayFab identifiers for the given set of Steam identifiers. The Steam identifiers are the profile IDs for the user accounts, available as SteamId in the Steamworks Community API calls.
 
-- [GetPlayFabIDsFromTwitchIDs](https://docs.microsoft.com/rest/api/playfab/client/account-management/getplayfabidsfromtwitchids?view=playfab-rest)
+- [GetPlayFabIDsFromTwitchIDs](/rest/api/playfab/client/account-management/get-playfab-ids-from-twitch-ids?view=playfab-rest)
     Retrieves the unique PlayFab identifiers for the given set of Twitch identifiers. The Twitch identifiers are the IDs for the user accounts, available as "_id" from the Twitch API methods (ex: https://github.com/justintv/Twitch-API/blob/master/v3_resources/users.md#get-usersuser).
 
-- [GetPlayFabIDsFromXboxLiveIDs](https://docs.microsoft.com/rest/api/playfab/client/account-management/getplayfabidsfromxboxliveids?view=playfab-rest)
+- [GetPlayFabIDsFromXboxLiveIDs](/rest/api/playfab/client/account-management/get-playfab-ids-from-xbox-live-ids?view=playfab-rest)
     Retrieves the unique PlayFab identifiers for the given set of XboxLive identifiers.
 
-- [GetPublisherData](https://docs.microsoft.com/rest/api/playfab/client/title-wide-data-management/getpublisherdata?view=playfab-rest)
+- [GetPublisherData](/rest/api/playfab/client/title-wide-data-management/get-publisher-data?view=playfab-rest)
     Retrieves the key-value store of custom publisher settings.
 
-- [GetPurchase](https://docs.microsoft.com/rest/api/playfab/client/player-item-management/getpurchase?view=playfab-rest)
+- [GetPurchase](/rest/api/playfab/client/player-item-management/get-purchase?view=playfab-rest)
     Retrieves a purchase along with its current PlayFab status. Returns inventory items from the purchase that are still active.
 
-- [GetSharedGroupData](https://docs.microsoft.com/rest/api/playfab/client/shared-group-data/getsharedgroupdata?view=playfab-rest)
-    Retrieves data stored in a shared group object, as well as the list of members in the group. Non-members of the group may use this to retrieve group data, including membership, but they will not receive data for keys marked as private. Shared Groups are designed for sharing data between a very small number of players, see [Using Shared Group Data](https://docs.microsoft.com/gaming/playfab/features/social/groups/using-shared-group-data).
+- [GetSharedGroupData](/rest/api/playfab/client/shared-group-data/get-shared-group-data?view=playfab-rest)
+    Retrieves data stored in a shared group object, as well as the list of members in the group. Non-members of the group may use this to retrieve group data, including membership, but they will not receive data for keys marked as private. Shared Groups are designed for sharing data between a very small number of players, see [Using Shared Group Data](../../social/groups/using-shared-group-data.md).
 
-- [GetStoreItems](https://docs.microsoft.com/rest/api/playfab/client/title-wide-data-management/getstoreitems?view=playfab-rest)
+- [GetStoreItems](/rest/api/playfab/client/title-wide-data-management/get-store-items?view=playfab-rest)
     Retrieves the set of items defined for the specified store, including all prices defined.
 
-- [GetTitleData](https://docs.microsoft.com/rest/api/playfab/client/title-wide-data-management/gettitledata?view=playfab-rest)
+- [GetTitleData](/rest/api/playfab/client/title-wide-data-management/get-title-data?view=playfab-rest)
     Retrieves the key-value store of custom title settings
 
-- [GetAccountInfo](https://docs.microsoft.com/rest/api/playfab/client/account-management/getaccountinfo?view=playfab-rest)
+- [GetAccountInfo](/rest/api/playfab/client/account-management/get-account-info?view=playfab-rest)
     Retrieves the user's PlayFab account details.
 
-- [LoginWithAndroidDeviceID](https://docs.microsoft.com/rest/api/playfab/client/authentication/loginwithandroiddeviceid?view=playfab-rest)
+- [LoginWithAndroidDeviceID](/rest/api/playfab/client/authentication/login-with-android-device-id?view=playfab-rest)
     Signs the user in using the Android device identifier, returning a session identifier that can subsequently be used for API calls which require an authenticated user.
 
-- [LoginWithCustomID](https://docs.microsoft.com/rest/api/playfab/client/authentication/loginwithcustomid?view=playfab-rest)
+- [LoginWithCustomID](/rest/api/playfab/client/authentication/loginwithcustomid?view=playfab-rest)
     Signs the user in using a custom unique identifier generated by the title, returning a session identifier that can subsequently be used for API calls which require an authenticated user
 
-- [LoginWithEmailAddress](https://docs.microsoft.com/rest/api/playfab/client/authentication/loginwithemailaddress?view=playfab-rest)
+- [LoginWithEmailAddress](/rest/api/playfab/client/authentication/login-with-email-address?view=playfab-rest)
     Signs the user into the PlayFab account, returning a session identifier that can subsequently be used for API calls which require an authenticated user. Unlike most other login API calls, LoginWithEmailAddress does not permit the creation of new accounts via the CreateAccountFlag. Email addresses may be used to create accounts via RegisterPlayFabUser.
 
-- [LoginWithFacebook](https://docs.microsoft.com/rest/api/playfab/client/authentication/loginwithfacebook?view=playfab-rest)
+- [LoginWithFacebook](/rest/api/playfab/client/authentication/login-with-facebook?view=playfab-rest)
     Signs the user in using a Facebook access token, returning a session identifier that can subsequently be used for API calls which require an authenticated user.
 
-- [LoginWithFacebookInstantGamesId](https://docs.microsoft.com/rest/api/playfab/client/authentication/loginwithfacebookinstantgamesid?view=playfab-rest)
+- [LoginWithFacebookInstantGamesId](/rest/api/playfab/client/authentication/login-with-facebook-instant-games-id?view=playfab-rest)
     Signs the user in using a Facebook Instant Games ID, returning a session identifier that can subsequently be used for API calls which require an authenticated user. Requires Facebook Instant Games to be configured.
 
-- [LoginWithGameCenter](https://docs.microsoft.com/rest/api/playfab/client/authentication/loginwithgamecenter?view=playfab-rest)
+- [LoginWithGameCenter](/rest/api/playfab/client/authentication/loginwithgamecenter?view=playfab-rest)
     Signs the user in using an iOS Game Center player identifier, returning a session identifier that can subsequently be used for API calls which require an authenticated user.
 
-- [LoginWithGoogleAccount](https://docs.microsoft.com/rest/api/playfab/client/authentication/loginwithgamecenter?view=playfab-rest)
+- [LoginWithGoogleAccount](/rest/api/playfab/client/authentication/login-with-game-center?view=playfab-rest)
     Signs the user in using an iOS Game Center player identifier, returning a session identifier that can subsequently be used for API calls which require an authenticated user.
 
-- [LoginWithIOSDeviceID](https://docs.microsoft.com/rest/api/playfab/client/authentication/loginwithgoogleaccount?view=playfab-rest)
+- [LoginWithIOSDeviceID](/rest/api/playfab/client/authentication/login-with-google-account?view=playfab-rest)
     Signs the user in using their Google account credentials.
 
-- [LoginWithKongregate](https://docs.microsoft.com/rest/api/playfab/client/authentication/loginwithkongregate?view=playfab-rest)
+- [LoginWithKongregate](/rest/api/playfab/client/authentication/login-with-kongregate?view=playfab-rest)
     Signs the user in using a Kongregate player account.
 
-- [LoginWithNintendoSwitchDeviceId](https://docs.microsoft.com/rest/api/playfab/client/authentication/loginwithnintendoswitchdeviceid?view=playfab-rest)
+- [LoginWithNintendoSwitchDeviceId](/rest/api/playfab/client/authentication/login-with-nintendo-switch-device-id?view=playfab-rest)
     Signs the user in using a Nintendo Switch Device ID, returning a session identifier that can subsequently be used for API calls which require an authenticated user.
 
-- [LoginWithOpenIdConnect](https://docs.microsoft.com/rest/api/playfab/client/authentication/loginwithopenidconnect?view=playfab-rest)
+- [LoginWithOpenIdConnect](/rest/api/playfab/client/authentication/login-with-openid-connect?view=playfab-rest)
     Logs in a user with an Open ID Connect JWT created by an existing relationship between a title and an Open ID Connect provider.
 
-- [LoginWithPlayFab](https://docs.microsoft.com/rest/api/playfab/client/authentication/loginwithplayfab?view=playfab-rest)
+- [LoginWithPlayFab](/rest/api/playfab/client/authentication/login-with-playfab?view=playfab-rest)
     which require an authenticated user. Unlike most other login API calls, LoginWithPlayFab does not permit the creation of new accounts via the CreateAccountFlag. Username/Password credentials may be used to create accounts via RegisterPlayFabUser, or added to existing accounts using AddUsernamePassword.
 
-- [LoginWithPSN](https://docs.microsoft.com/rest/api/playfab/client/authentication/loginwithpsn?view=playfab-rest)    Signs the user into the PlayFab account, returning a session identifier that can subsequently be used for API calls which require an authenticated user. Unlike most other login API calls, LoginWithPlayFab does not permit the creation of new accounts via the CreateAccountFlag. Username/Password credentials may be used to create accounts via RegisterPlayFabUser, or added to existing accounts using AddUsernamePassword.
+- [LoginWithPSN](/rest/api/playfab/client/authentication/login-with-psn?view=playfab-rest)    Signs the user into the PlayFab account, returning a session identifier that can subsequently be used for API calls which require an authenticated user. Unlike most other login API calls, LoginWithPlayFab does not permit the creation of new accounts via the CreateAccountFlag. Username/Password credentials may be used to create accounts via RegisterPlayFabUser, or added to existing accounts using AddUsernamePassword.
 
-- [LoginWithSteam](https://docs.microsoft.com/rest/api/playfab/client/authentication/loginwithsteam?view=playfab-rest)
+- [LoginWithSteam](/rest/api/playfab/client/authentication/login-with-steam?view=playfab-rest)
     Signs the user in using a Steam authentication ticket, returning a session identifier that can subsequently be used for API calls which require an authenticated user.
 
-- [LoginWithTwitch](https://docs.microsoft.com/rest/api/playfab/client/authentication/loginwithtwitch?view=playfab-rest)
+- [LoginWithTwitch](/rest/api/playfab/client/authentication/login-with-twitch?view=playfab-rest)
     Signs the user in using a Twitch access token.
 
-- [LoginWithXbox](https://docs.microsoft.com/rest/api/playfab/client/authentication/loginwithxbox?view=playfab-rest)
+- [LoginWithXbox](/rest/api/playfab/client/authentication/loginwithxbox?view=playfab-rest)
     Signs the user in using a Xbox Live Token, returning a session identifier that can subsequently be used for API calls which require an authenticated user.
 
-- [GetCurrentGames](https://docs.microsoft.com/rest/api/playfab/client/matchmaking/getcurrentgames?view=playfab-rest)
+- [GetCurrentGames](/rest/api/playfab/client/matchmaking/get-current-games?view=playfab-rest)
     Get details about all current running game servers matching the given parameters.
 
-- [GetPlayerCombinedInfo](https://docs.microsoft.com/rest/api/playfab/client/account-management/getplayercombinedinfo?view=playfab-rest)
+- [GetPlayerCombinedInfo](/rest/api/playfab/client/account-management/get-player-combined-info?view=playfab-rest)
     Retrieves all of the user's different kinds of info.
     
 “PlayStation” is a registered trademark or trademark of Sony Interactive Entertainment Inc.
 
 ## Data APIs
 
-- [GetObjects](https://docs.microsoft.com/rest/api/playfab/data/object/getobjects?view=playfab-rest)
+- [GetObjects](/rest/api/playfab/data/object/get-objects?view=playfab-rest)
     Retrieves objects from an entity's profile.
 
 ## Groups APIs
 
-- [GetGroup](https://docs.microsoft.com/rest/api/playfab/groups/groups/getgroup?view=playfab-rest)
+- [GetGroup](/rest/api/playfab/groups/groups/get-group?view=playfab-rest)
     Gets information about a group and its roles.
 
-- [IsMember](https://docs.microsoft.com/rest/api/playfab/groups/groups/ismember?view=playfab-rest)
+- [IsMember](/rest/api/playfab/groups/groups/is-member?view=playfab-rest)
     Checks to see if an entity is a member of a group or role within the group.
 
-- [ListGroupApplications](https://docs.microsoft.com/rest/api/playfab/groups/groups/listgroupapplications?view=playfab-rest)
+- [ListGroupApplications](/rest/api/playfab/groups/groups/list-group-applications?view=playfab-rest)
     Lists all outstanding requests to join a group.
 
-- [ListGroupBlocks](https://docs.microsoft.com/rest/api/playfab/groups/groups/listgroupblocks?view=playfab-rest)
+- [ListGroupBlocks](/rest/api/playfab/groups/groups/list-group-blocks?view=playfab-rest)
     Lists all entities blocked from joining a group.
 
-- [ListGroupInvitations](https://docs.microsoft.com/rest/api/playfab/groups/groups/listgroupinvitations?view=playfab-rest)
+- [ListGroupInvitations](/rest/api/playfab/groups/groups/list-group-invitations?view=playfab-rest)
     Lists all outstanding invitations for a group.
 
-- [ListGroupMembers](https://docs.microsoft.com/rest/api/playfab/groups/groups/listgroupmembers?view=playfab-rest)
+- [ListGroupMembers](/rest/api/playfab/groups/groups/list-group-members?view=playfab-rest)
     Lists all members for a group.
 
-- [ListMembership](https://docs.microsoft.com/rest/api/playfab/groups/groups/listmembership?view=playfab-rest)
+- [ListMembership](/rest/api/playfab/groups/groups/list-membership?view=playfab-rest)
     Lists all groups and roles for an entity.
 
-- [ListMembershipOpportunities](https://docs.microsoft.com/rest/api/playfab/groups/groups/listmembershipopportunities?view=playfab-rest)
+- [ListMembershipOpportunities](/rest/api/playfab/groups/groups/list-membership-opportunities?view=playfab-rest)
     Lists all outstanding invitations and group applications for an entity.
 
 
 ## Profile APIs
 
-- [GetGlobalPolicy](https://docs.microsoft.com/rest/api/playfab/profiles/account-management/getglobalpolicy?view=playfab-rest)
+- [GetGlobalPolicy](/rest/api/playfab/profiles/account-management/get-global-policy?view=playfab-rest)
     Gets the global title access policy.
 
-- [GetProfile](https://docs.microsoft.com/rest/api/playfab/profiles/account-management/getprofile?view=playfab-rest)
+- [GetProfile](/rest/api/playfab/profiles/account-management/get-profile?view=playfab-rest)
     Retrieves the entity's profile.
 
-- [GetProfiles](https://docs.microsoft.com/rest/api/playfab/profiles/account-management/getprofiles?view=playfab-rest)
+- [GetProfiles](/rest/api/playfab/profiles/account-management/get-profiles?view=playfab-rest)
     Retrieves the entity's profile.
 
-- [GetTitlePlayersFromMasterPlayerAccountIds](https://docs.microsoft.com/rest/api/playfab/profiles/account-management/gettitleplayersfrommasterplayeraccountids?view=playfab-rest)
+- [GetTitlePlayersFromMasterPlayerAccountIds](/rest/api/playfab/profiles/account-management/get-title-players-from-master-player-account-ids?view=playfab-rest)
     Retrieves the title player accounts associated with the given master player account.
 
 ## Server APIs
 
 
-- [EvaluateRandomResultTable](https://docs.microsoft.com/rest/api/playfab/server/player-item-management/evaluaterandomresulttable?view=playfab-rest)
+- [EvaluateRandomResultTable](/rest/api/playfab/server/player-item-management/evaluate-random-result-table?view=playfab-rest)
     Returns the result of an evaluation of a Random Result Table - the ItemId from the game Catalog which would have been added to the player inventory, if the Random Result Table were added via a Bundle or a call to UnlockContainer.
 
-- [GetAllSegments](https://docs.microsoft.com/rest/api/playfab/server/playstream/getallsegments?view=playfab-rest)
+- [GetAllSegments](/rest/api/playfab/server/play-stream/get-all-segments?view=playfab-rest)
     Retrieves an array of player segment definitions. Results from this can be used in subsequent API calls such as GetPlayersInSegment which requires a Segment ID. While segment names can change the ID for that segment will not change.
 
-- [GetAllUsersCharacters](https://docs.microsoft.com/rest/api/playfab/server/characters/getalluserscharacters?view=playfab-rest)
+- [GetAllUsersCharacters](/rest/api/playfab/server/characters/get-all-users-characters?view=playfab-rest)
     Lists all of the characters that belong to a specific user. CharacterIds are not globally unique; characterId must be evaluated with the parent PlayFabId to guarantee uniqueness.
 
-- [GetCatalogItems](https://docs.microsoft.com/rest/api/playfab/server/title-wide-data-management/getcatalogitems?view=playfab-rest)
+- [GetCatalogItems](/rest/api/playfab/server/title-wide-data-management/get-catalog-items?view=playfab-rest)
     Retrieves the specified version of the title's catalog of virtual goods, including all defined properties.
 
-- [GetCharacterData](https://docs.microsoft.com/rest/api/playfab/server/character-data/getcharacterdata?view=playfab-rest)
+- [GetCharacterData](/rest/api/playfab/server/character-data/get-character-data?view=playfab-rest)
     Retrieves the title-specific custom data for the user which is readable and writable by the client.
 
-- [GetCharacterInternalData](https://docs.microsoft.com/rest/api/playfab/server/character-data/getcharacterinternaldata?view=playfab-rest)
+- [GetCharacterInternalData](/rest/api/playfab/server/character-data/get-character-internal-data?view=playfab-rest)
     Retrieves the title-specific custom data for the user's character which cannot be accessed by the client.
 
-- [GetCharacterInventory](https://docs.microsoft.com/rest/api/playfab/server/player-item-management/getcharacterinventory?view=playfab-rest)
+- [GetCharacterInventory](/rest/api/playfab/server/player-item-management/get-character-inventory?view=playfab-rest)
     Retrieves the specified character's current inventory of virtual goods.
 
-- [GetCharacterReadOnlyData](https://docs.microsoft.com/rest/api/playfab/server/characters/getcharacterleaderboard?view=playfab-rest)
+- [GetCharacterReadOnlyData](/rest/api/playfab/server/characters/get-character-leaderboard?view=playfab-rest)
 
-- [GetCharacterStatistics](https://docs.microsoft.com/rest/api/playfab/server/characters/getcharacterstatistics?view=playfab-rest)
+- [GetCharacterStatistics](/rest/api/playfab/server/characters/get-character-statistics?view=playfab-rest)
     Retrieves the details of all title-specific statistics for the specific character.
 
-- [GetFriendLeaderboard](https://docs.microsoft.com/rest/api/playfab/server/player-data-management/getfriendleaderboard?view=playfab-rest)
+- [GetFriendLeaderboard](/rest/api/playfab/server/player-data-management/get-friend-leaderboard?view=playfab-rest)
     Retrieves a list of ranked friends of the given player for the given statistic, starting from the indicated point in the leaderboard.
 
-- [GetFriendsList](https://docs.microsoft.com/rest/api/playfab/server/friend-list-management/getfriendslist?view=playfab-rest)
+- [GetFriendsList](/rest/api/playfab/server/friend-list-management/get-friends-list?view=playfab-rest)
     Retrieves the current friends for the user with PlayFabId, constrained to users who have PlayFab accounts. Friends from linked accounts (Facebook, Steam) are also included. You may optionally exclude some linked services' friends.
 
-- [GetLeaderboard](https://docs.microsoft.com/rest/api/playfab/server/player-data-management/getleaderboard?view=playfab-rest)
+- [GetLeaderboard](/rest/api/playfab/server/player-data-management/get-leaderboard?view=playfab-rest)
     Retrieves a list of ranked users for the given statistic, starting from the indicated point in the leaderboard.
 
-- [GetLeaderboardAroundCharacter](https://docs.microsoft.com/rest/api/playfab/server/characters/getleaderboardaroundcharacter?view=playfab-rest)
+- [GetLeaderboardAroundCharacter](/rest/api/playfab/server/characters/getleaderboardaroundcharacter?view=playfab-rest)
     Retrieves a list of ranked characters for the given statistic, centered on the requested user.
 
-- [GetLeaderboardAroundUser](https://docs.microsoft.com/rest/api/playfab/server/characters/getleaderboardaroundcharacter?view=playfab-rest)
+- [GetLeaderboardAroundUser](/rest/api/playfab/server/characters/get-leaderboard-around-character?view=playfab-rest)
     Retrieves a list of ranked characters for the given statistic, centered on the requested user.
 
-- [GetLeaderboardForUserCharacters](https://docs.microsoft.com/rest/api/playfab/server/characters/getleaderboardforusercharacters?view=playfab-rest)
+- [GetLeaderboardForUserCharacters](/rest/api/playfab/server/characters/get-leaderboard-for-user-characters?view=playfab-rest)
     Retrieves a list of all of the user's characters for the given statistic.
 
-- [GetPlayerCombinedInfo](https://docs.microsoft.com/rest/api/playfab/server/player-data-management/getplayercombinedinfo?view=playfab-rest)
+- [GetPlayerCombinedInfo](/rest/api/playfab/server/player-data-management/get-player-combined-info?view=playfab-rest)
     Returns whatever info is requested in the response for the user. Note that PII (like email address, facebook id) may be returned. All parameters default to false.
 
-- [GetPlayerProfile](https://docs.microsoft.com/rest/api/playfab/server/account-management/getplayerprofile?view=playfab-rest)
+- [GetPlayerProfile](/rest/api/playfab/server/account-management/get-player-profile?view=playfab-rest)
     Retrieves the player's profile.
 
-- [GetPlayerSegments](https://docs.microsoft.com/rest/api/playfab/server/playstream/getplayersegments?view=playfab-rest)
+- [GetPlayerSegments](/rest/api/playfab/server/play-stream/get-player-segments?view=playfab-rest)
     List all segments that a player currently belongs to at this moment in time.
 
-- [GetPlayersInSegment](https://docs.microsoft.com/rest/api/playfab/server/playstream/getplayersinsegment?view=playfab-rest)
+- [GetPlayersInSegment](/rest/api/playfab/server/play-stream/get-players-in-segment?view=playfab-rest)
     Allows for paging through all players in a given segment. This API creates a snapshot of all player profiles that match the segment definition at the time of its creation and lives through the Total Seconds to Live, refreshing its life span on each subsequent use of the Continuation Token. Profiles that change during the course of paging will not be reflected in the results. AB Test segments are currently not supported by this operation.
 
-- [GetPlayerStatistics](https://docs.microsoft.com/rest/api/playfab/server/player-data-management/getplayerstatistics?view=playfab-rest)
+- [GetPlayerStatistics](/rest/api/playfab/server/player-data-management/get-player-statistics?view=playfab-rest)
     Retrieves the current version and values for the indicated statistics, for the local player.
 
-- [GetPlayerStatisticVersions](https://docs.microsoft.com/rest/api/playfab/server/player-data-management/getplayerstatisticversions?view=playfab-rest)
+- [GetPlayerStatisticVersions](/rest/api/playfab/server/player-data-management/get-player-statistic-versions?view=playfab-rest)
     Retrieves the information on the available versions of the specified statistic.
 
-- [GetPlayerTags](https://docs.microsoft.com/rest/api/playfab/server/playstream/getplayertags?view=playfab-rest)
+- [GetPlayerTags](/rest/api/playfab/server/play-stream/get-player-tags?view=playfab-rest)
     Get all tags with a given Namespace (optional) from a player profile.
 
-- [GetPlayFabIDsFromFacebookIDs](https://docs.microsoft.com/rest/api/playfab/server/account-management/getplayfabidsfromfacebookids?view=playfab-rest)
+- [GetPlayFabIDsFromFacebookIDs](/rest/api/playfab/server/account-management/getplayfabidsfromfacebookids?view=playfab-rest)
     Retrieves the unique PlayFab identifiers for the given set of Facebook identifiers.
 
-- [GetPlayFabIDsFromFacebookInstantGamesIds](https://docs.microsoft.com/rest/api/playfab/server/account-management/getplayfabidsfromfacebookids?view=playfab-rest)
+- [GetPlayFabIDsFromFacebookInstantGamesIds](/rest/api/playfab/server/account-management/get-playfab-ids-from-facebook-ids?view=playfab-rest)
     Retrieves the unique PlayFab identifiers for the given set of Facebook identifiers.
 
-- [GetPlayFabIDsFromGenericIDs](https://docs.microsoft.com/rest/api/playfab/server/account-management/getplayfabidsfromgenericids?view=playfab-rest)
+- [GetPlayFabIDsFromGenericIDs](/rest/api/playfab/server/account-management/get-playfab-ids-from-generic-ids?view=playfab-rest)
     Retrieves the unique PlayFab identifiers for the given set of generic service identifiers. A generic identifier is the service name plus the service-specific ID for the player, as specified by the title when the generic identifier was added to the player account.
 
-- [GetPlayFabIDsFromNintendoSwitchDeviceIds](https://docs.microsoft.com/rest/api/playfab/server/account-management/getplayfabidsfromnintendoswitchdeviceids?view=playfab-rest)
+- [GetPlayFabIDsFromNintendoSwitchDeviceIds](/rest/api/playfab/server/account-management/get-playfab-ids-from-nintendo-switch-device-ids?view=playfab-rest)
     Retrieves the unique PlayFab identifiers for the given set of Nintendo Switch Device identifiers.
 
-- [GetPlayFabIDsFromPSNAccountIDs](https://docs.microsoft.com/rest/api/playfab/server/account-management/getplayfabidsfrompsnaccountids?view=playfab-rest)
+- [GetPlayFabIDsFromPSNAccountIDs](/rest/api/playfab/server/account-management/get-playfab-ids-from-psn-account-ids?view=playfab-rest)
     Retrieves the unique PlayFab identifiers for the given set of PlayStation Network identifiers.
 
-- [GetPlayFabIDsFromSteamIDs](https://docs.microsoft.com/rest/api/playfab/server/account-management/getplayfabidsfromsteamids?view=playfab-rest)
+- [GetPlayFabIDsFromSteamIDs](/rest/api/playfab/server/account-management/get-playfab-ids-from-steam-ids?view=playfab-rest)
     Retrieves the unique PlayFab identifiers for the given set of Steam identifiers. The Steam identifiers are the profile IDs for the user accounts, available as SteamId in the Steamworks Community API calls.
 
-- [GetPlayFabIDsFromXboxLiveIDs](https://docs.microsoft.com/rest/api/playfab/server/account-management/getplayfabidsfromxboxliveids?view=playfab-rest)
+- [GetPlayFabIDsFromXboxLiveIDs](/rest/api/playfab/server/account-management/get-playfab-ids-from-xbox-live-ids?view=playfab-rest)
     Retrieves the unique PlayFab identifiers for the given set of XboxLive identifiers.
 
-- [GetPublisherData](https://docs.microsoft.com/rest/api/playfab/server/title-wide-data-management/getpublisherdata?view=playfab-rest)
+- [GetPublisherData](/rest/api/playfab/server/title-wide-data-management/get-publisher-data?view=playfab-rest)
     Retrieves the key-value store of custom publisher settings.
 
-- [GetRandomResultTables](https://docs.microsoft.com/rest/api/playfab/server/player-item-management/getrandomresulttables?view=playfab-rest)
+- [GetRandomResultTables](/rest/api/playfab/server/player-item-management/get-random-result-tables?view=playfab-rest)
     Retrieves the configuration information for the specified random results tables for the title, including all ItemId values and weights.
 
-- [GetServerCustomIDsFromPlayFabIDs](https://docs.microsoft.com/rest/api/playfab/server/account-management/getservercustomidsfromplayfabids?view=playfab-rest)
+- [GetServerCustomIDsFromPlayFabIDs](/rest/api/playfab/server/account-management/get-server-custom-ids-from-playfab-ids?view=playfab-rest)
     Retrieves the associated PlayFab account identifiers for the given set of server custom identifiers.
 
-- [GetSharedGroupData](https://docs.microsoft.com/rest/api/playfab/server/shared-group-data/getsharedgroupdata?view=playfab-rest)
-    Retrieves data stored in a shared group object, as well as the list of members in the group. The server can access all public and private group data. Shared Groups are designed for sharing data between a very small number of players,  see [Using Shared Group Data](https://docs.microsoft.com/gaming/playfab/features/social/groups/using-shared-group-data).
+- [GetSharedGroupData](/rest/api/playfab/server/shared-group-data/get-shared-group-data?view=playfab-rest)
+    Retrieves data stored in a shared group object, as well as the list of members in the group. The server can access all public and private group data. Shared Groups are designed for sharing data between a very small number of players,  see [Using Shared Group Data](../../social/groups/using-shared-group-data.md).
 
-- [GetStoreItems](https://docs.microsoft.com/rest/api/playfab/server/title-wide-data-management/getstoreitems?view=playfab-rest)
+- [GetStoreItems](/rest/api/playfab/server/title-wide-data-management/get-store-items?view=playfab-rest)
     Retrieves the set of items defined for the specified store, including all prices defined, for the specified player.
 
-- [GetTitleData](https://docs.microsoft.com/rest/api/playfab/server/title-wide-data-management/gettitledata?view=playfab-rest)
+- [GetTitleData](/rest/api/playfab/server/title-wide-data-management/get-title-data?view=playfab-rest)
     Retrieves the key-value store of custom title settings.
 
-- [GetTitleInternalData](https://docs.microsoft.com/rest/api/playfab/server/title-wide-data-management/gettitleinternaldata?view=playfab-rest)
+- [GetTitleInternalData](/rest/api/playfab/server/title-wide-data-management/get-title-internal-data?view=playfab-rest)
     Retrieves the key-value store of custom internal title settings.
 
-- [GetUserAccountInfo](https://docs.microsoft.com/rest/api/playfab/server/account-management/getuseraccountinfo?view=playfab-rest)
+- [GetUserAccountInfo](/rest/api/playfab/server/account-management/get-user-account-info?view=playfab-rest)
     Retrieves the relevant details for a specified user.
 
-- [GetUserBans](https://docs.microsoft.com/rest/api/playfab/server/account-management/getuserbans?view=playfab-rest)
+- [GetUserBans](/rest/api/playfab/server/account-management/get-user-bans?view=playfab-rest)
     Gets all bans for a user.
 
-- [GetUserData](https://docs.microsoft.com/rest/api/playfab/server/player-data-management/getuserdata?view=playfab-rest)
+- [GetUserData](/rest/api/playfab/server/player-data-management/get-user-data?view=playfab-rest)
     Retrieves the title-specific custom data for the user which is readable and writable by the client.
 
-- [GetUserInternalData](https://docs.microsoft.com/rest/api/playfab/server/player-data-management/getuserinternaldata?view=playfab-rest)
+- [GetUserInternalData](/rest/api/playfab/server/player-data-management/get-user-internal-data?view=playfab-rest)
     Retrieves the title-specific custom data for the user which cannot be accessed by the client.
 
-- [GetUserInventory](https://docs.microsoft.com/rest/api/playfab/server/player-item-management/getuserinventory?view=playfab-rest)
+- [GetUserInventory](/rest/api/playfab/server/player-item-management/get-user-inventory?view=playfab-rest)
     Retrieves the specified user's current inventory of virtual goods.
 
-- [GetUserPublisherData](https://docs.microsoft.com/rest/api/playfab/server/player-data-management/getuserpublisherdata?view=playfab-rest)
+- [GetUserPublisherData](/rest/api/playfab/server/player-data-management/get-user-publisher-data?view=playfab-rest)
     Retrieves the publisher-specific custom data for the user which is readable and writable by the client.
 
-- [GetUserPublisherInternalData](https://docs.microsoft.com/rest/api/playfab/server/player-data-management/getuserpublisherinternaldata?view=playfab-rest)
+- [GetUserPublisherInternalData](/rest/api/playfab/server/player-data-management/getuserpublisherinternaldata?view=playfab-rest)
     Retrieves the publisher-specific custom data for the user which cannot be accessed by the client.
 
-- [GetUserPublisherReadOnlyData](https://docs.microsoft.com/rest/api/playfab/server/player-data-management/getuserpublisherinternaldata?view=playfab-rest)
+- [GetUserPublisherReadOnlyData](/rest/api/playfab/server/player-data-management/get-user-publisher-internal-data?view=playfab-rest)
 
-- [GetUserReadOnlyData](https://docs.microsoft.com/rest/api/playfab/server/player-data-management/updateuserreadonlydata?view=playfab-rest)
+- [GetUserReadOnlyData](/rest/api/playfab/server/player-data-management/update-user-read-only-data?view=playfab-rest)
     Updates the title-specific custom data for the user which can only be read by the client.
 
-- [LoginWithServerCustomId](https://docs.microsoft.com/rest/api/playfab/server/authentication/loginwithservercustomid?view=playfab-rest)
+- [LoginWithServerCustomId](/rest/api/playfab/server/authentication/login-with-server-custom-id?view=playfab-rest)
     Securely login a game client from an external server backend using a custom identifier for that player. Server Custom ID and Client Custom ID are mutually exclusive and cannot be used to retrieve the same player account.
 
-- [LoginWithXbox](https://docs.microsoft.com/rest/api/playfab/server/authentication/loginwithxbox?view=playfab-rest)
+- [LoginWithXbox](/rest/api/playfab/server/authentication/login-with-xbox?view=playfab-rest)
     Signs the user in using a Xbox Live Token from an external server backend, returning a session identifier that can subsequently be used for API calls which require an authenticated user.
 
-- [LoginWithXboxId](https://docs.microsoft.com/rest/api/playfab/server/authentication/loginwithxboxid?view=playfab-rest)
+- [LoginWithXboxId](/rest/api/playfab/server/authentication/login-with-xbox-id?view=playfab-rest)
     Signs the user in using an Xbox ID and Sandbox ID, returning a session identifier that can subsequently be used for API calls which require an authenticated user.

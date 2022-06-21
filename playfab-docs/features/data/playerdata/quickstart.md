@@ -19,7 +19,7 @@ Get started using PlayFab Player Data. This quickstart shows you how to set and 
 
 Player data is information that applies to an individual player or player group (shared data) and is stored as Key/Value Pairs (KVPs) by PlayFab. This topic covers client API calls, which are safe to call from any process or context. It also covers server API calls, which should *only* be made from a dedicated server process you control, or a carefully secured CloudScript call. Server APIs require your dev secret key, which you should never provide-to or publish-with your client.
 
-The C# Samples in this topic are written for the Unity SDK. The Unity SDK uses an event driven model to handle non-synchronous tasks. To run the sample code using the standard C# or Xamarin C# SDKs you must modify the code to use an async Task model. Methods that must be modified have Async append to the method name in the signature. For example, SetObject in the Unity SDK becomes SetObjectAsync in the standard C# SDK. For more information, see [Asynchronous programming with async and await](https://docs.microsoft.com/dotnet/csharp/programming-guide/concepts/async/).
+The C# Samples in this topic are written for the Unity SDK. The Unity SDK uses an event driven model to handle non-synchronous tasks. To run the sample code using the standard C# or Xamarin C# SDKs you must modify the code to use an async Task model. Methods that must be modified have Async append to the method name in the signature. For example, SetObject in the Unity SDK becomes SetObjectAsync in the standard C# SDK. For more information, see [Asynchronous programming with async and await](/dotnet/csharp/programming-guide/concepts/async/).
 
 ## Requirements
 
@@ -39,7 +39,7 @@ For information about setting up the PlayFab Unity3D SDK, see [Quickstart: PlayF
 
 ## About the code examples
 
-The C# Samples in this topic are written for the Unity SDK. The Unity SDK uses an event driven model to handle non-synchronous tasks. To run the sample code using the standard C# or Xamarin C# SDKs you must modify the code to use an async Task model. Methods that must be modified have Async append to the method name in the signature. For example, SetObject in the Unity SDK becomes SetObjectAsync in the standard C# SDK. For more information, see [Asynchronous programming with async and await](https://docs.microsoft.com/dotnet/csharp/programming-guide/concepts/async/).
+The C# Samples in this topic are written for the Unity SDK. The Unity SDK uses an event driven model to handle non-synchronous tasks. To run the sample code using the standard C# or Xamarin C# SDKs you must modify the code to use an async Task model. Methods that must be modified have Async append to the method name in the signature. For example, SetObject in the Unity SDK becomes SetObjectAsync in the standard C# SDK. For more information, see [Asynchronous programming with async and await](/dotnet/csharp/programming-guide/concepts/async/).
 
 While you can use an existing using Unity Project, the procedures in this quickstart assume that you are using the sample that you create when you complete the [Quickstart: PlayFab Client library for C# in Unity](../../../sdks/unity3d/quickstart.md).
 

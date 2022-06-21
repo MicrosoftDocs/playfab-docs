@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Title Data
 
-Title Data is a set of key/value pairs that you can use to manage configuration for your game remotely. You can set this data in Game Manager, or via [APIs](https://docs.microsoft.com/rest/api/playfab/admin/title-wide-data-management?view=playfab-rest). This is commonly referred to as Primary Title Data. 
+Title Data is a set of key/value pairs that you can use to manage configuration for your game remotely. You can set this data in Game Manager, or via [APIs](/rest/api/playfab/admin/title-wide-data-management?view=playfab-rest). This is commonly referred to as Primary Title Data. 
 
 *Internal* Title Data is a special set of Title Data that cannot be accessed by clients directly, and can be used for storing configuration that is _only_ available to services you control.
 
@@ -32,7 +32,7 @@ When viewing the Override, each of these key-value pairs is represented as a +, 
 Override Title Data could be called a subset of Primary Title Data, allowing to update the remote configuration of the game without the need to deploy a new build.
 
 > [!NOTE]
-> This override set of key/value pairs comes in-effect only using [Experiments](https://docs.microsoft.com/gaming/playfab/features/analytics/experiments) for now. 
+> This override set of key/value pairs comes in-effect only using [Experiments](../../analytics/experiments/index.md) for now. 
 If the player belongs to an experiment variant which contain title data overrides, the overrides are applied automatically on server side and returned with the title data on client side.
 > Title Data Override values may take up to one minute to refresh and persist. 
 

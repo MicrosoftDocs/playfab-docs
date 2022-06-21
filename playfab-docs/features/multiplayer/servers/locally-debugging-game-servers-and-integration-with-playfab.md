@@ -68,7 +68,7 @@ After `NumHeartBeatsForActivateResponse` heartbeats, **LocalMultiplayerAgent** r
 
 ## Verifying containerization
 
-If you are new to the container world, you can check an intro [here](https://docs.microsoft.com/dotnet/architecture/microservices/container-docker-introduction/).
+If you are new to the container world, you can check an intro [here](/dotnet/architecture/microservices/container-docker-introduction/).
 
 ### Prerequisites
 
@@ -97,7 +97,7 @@ After `NumHeartBeatsForActivateResponse` heartbeats, **LocalMultiplayerAgent** r
 
 ### Using LocalMultiplayerAgent with Linux Containers
 
-You can use LocalMultiplayerAgent to debug your Linux game server by running it on a container in Windows using [Docker for Windows](https://docs.docker.com/docker-for-windows/). You can see more information about running Linux containers on Windows [here](https://docs.microsoft.com/virtualization/windowscontainers/deploy-containers/linux-containers). In essense, all you need to is run the agent with the *-lcow* parameter as well as properly configure your *LocalMultiplayerSettings.json* file.
+You can use LocalMultiplayerAgent to debug your Linux game server by running it on a container in Windows using [Docker for Windows](https://docs.docker.com/docker-for-windows/). You can see more information about running Linux containers on Windows [here](/virtualization/windowscontainers/deploy-containers/linux-containers). In essense, all you need to is run the agent with the *-lcow* parameter as well as properly configure your *LocalMultiplayerSettings.json* file.
 
 To run your containerized Linux game servers on Windows, you'll need to perform the following steps:
 
