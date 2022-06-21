@@ -22,17 +22,17 @@ When using Linux-based game servers, instead of using a managed container image,
 
 ## Required knowledge
 
-* [Docker containers](https://docs.microsoft.com/learn/modules/intro-to-docker-containers/)
+* [Docker containers](/learn/modules/intro-to-docker-containers/)
 
 ## Set up your Windows development device
 
 This step is needed only if you want to use Windows development device to create Linux container images. Alternatively, you can use Linux OS devices, VMs, or dual-OS systems with Docker installed.
 
-[Windows Subsystem for Linux (WSL)](https://docs.microsoft.com/windows/wsl/) enables you to use your development device in the familiar Windows environment to author and manage Linux container images. Using WSL means that you wouldn't need an overhead of a traditional Linux virtual machine or dual-boot setup.
+[Windows Subsystem for Linux (WSL)](/windows/wsl/) enables you to use your development device in the familiar Windows environment to author and manage Linux container images. Using WSL means that you wouldn't need an overhead of a traditional Linux virtual machine or dual-boot setup.
 
-1. [Install WSL 2](https://docs.microsoft.com/windows/wsl/). Make sure that you've restarted your machine and are using WSL 2. You also need to have successfully installed the Linux kernel update package.
-2. [Install a Linux distribution that uses WSL](https://docs.microsoft.com/windows/wsl/install-win10#step-6---install-your-linux-distribution-of-choice). Although our VMs use Ubuntu, you can select any distribution you want for your container image. Consider using [Ubuntu 20.04 LTS](https://www.microsoft.com/store/apps/9n6svws3rx71) or later versions.
-3. [Install Docker Desktop for Windows with WSL 2](https://docs.microsoft.com/windows/wsl/tutorials/wsl-containers). For direct download link, go to [Docker Desktop for Windows (external)](https://hub.docker.com/editions/community/docker-ce-desktop-windows/).
+1. [Install WSL 2](/windows/wsl/). Make sure that you've restarted your machine and are using WSL 2. You also need to have successfully installed the Linux kernel update package.
+2. [Install a Linux distribution that uses WSL](/windows/wsl/install#step-6---install-your-linux-distribution-of-choice). Although our VMs use Ubuntu, you can select any distribution you want for your container image. Consider using [Ubuntu 20.04 LTS](https://www.microsoft.com/store/apps/9n6svws3rx71) or later versions.
+3. [Install Docker Desktop for Windows with WSL 2](/windows/wsl/tutorials/wsl-containers). For direct download link, go to [Docker Desktop for Windows (external)](https://hub.docker.com/editions/community/docker-ce-desktop-windows/).
 
 **Verify WSL 2 set up**
 
@@ -45,7 +45,7 @@ This step is needed only if you want to use Windows development device to create
 * Run __docker version__ to confirm that Docker is installed and OS used is Linux
 
 > [!Tip]
-> For developing and debugging Linux C++ applications, use [WSL in Visual Studio 2019](https://docs.microsoft.com/cpp/linux/).
+> For developing and debugging Linux C++ applications, use [WSL in Visual Studio 2019](/cpp/linux/).
 
 ## Get your PlayFab container registry sign-in credentials
 
@@ -57,7 +57,7 @@ The Azure container registry account is associated with your PlayFab account. On
 
 ![New build with Linux platform selected](media/create-your-first-server/server-new-build-container-linux.png)
 
-If you wish to use PowerShell/API, call the [GetContainerRegistryCredentials](https://docs.microsoft.com/rest/api/playfab/multiplayer/multiplayerserver/getcontainerregistrycredentials) API to retrieve a container registry address, user name, and password.
+If you wish to use PowerShell/API, call the [GetContainerRegistryCredentials](/rest/api/playfab/multiplayer/multiplayerserver/getcontainerregistrycredentials) API to retrieve a container registry address, user name, and password.
 
 ## Create and push Linux container images to Azure Container Registry
 
@@ -109,7 +109,7 @@ In the example below, the repository name is __customer5555555.azurecr.io/pvp_ga
 
 When using WSL, the Windows C: drive is mounted at /mnt/c.
 * Then run __cd /mnt/c/path/to/your/Dockerfile__ to switch to the path where your Dockerfile is.
-For more information, see [Accessing C drive](https://docs.microsoft.com/windows/wsl/faq#how-do-i-access-my-c--drive-).
+For more information, see [Accessing C drive](/windows/wsl/faq#how-do-i-access-my-c--drive-).
 
 ```docker
 docker build -t customer5555555.azurecr.io/pvp_gameserver:v1 .
@@ -129,7 +129,7 @@ docker push customer5555555.azurecr.io/pvp_gameserver:v1
 
 ## Check that your container is uploaded
 
-After the container is uploaded, go back to the __New Build__ page in Game Manager and select __Refresh Images__. You would be able to see the image in the list and select it. Alternatively, you can use the [ListContainerImages](https://docs.microsoft.com/rest/api/playfab/multiplayer/multiplayerserver/listcontainerimages) API call to list your uploaded container images.
+After the container is uploaded, go back to the __New Build__ page in Game Manager and select __Refresh Images__. You would be able to see the image in the list and select it. Alternatively, you can use the [ListContainerImages](/rest/api/playfab/multiplayer/multiplayerserver/listcontainerimages) API call to list your uploaded container images.
  
 Now you're ready to deploy servers. For instructions, see [PlayFab portal&mdash;Game Manager](deploy-using-game-manager.md) and [Using PowerShell/API](deploy-using-powershell-api.md).
 
@@ -151,16 +151,16 @@ The table below lists some differences when creating and using them.
 
 You can use APIs to manage Linux container images. For the rest of build lifecycle (viewing usage, updating regions and standingBy configurations, deletion), manage them using Game Manager.
 
-* [GetContainerRegistryCredentials](https://docs.microsoft.com/rest/api/playfab/multiplayer/multiplayerserver/getcontainerregistrycredentials): Retrieve a container registry address, user name, and password
-* [ListContainerImages](https://docs.microsoft.com/rest/api/playfab/multiplayer/multiplayerserver/listcontainerimages) and [ListContainerImageTags](https://docs.microsoft.com/rest/api/playfab/multiplayer/multiplayerserver/listcontainerimagetags): Ensure your new image and tag are listed (sometimes it might take a couple of minutes for image to be fully registered in the system)
-* [CreateBuildWithCustomContainer](https://docs.microsoft.com/rest/api/playfab/multiplayer/multiplayerserver/createbuildwithcustomcontainer): Create a build with a custom container. Specify the tagged image you uploaded earlier. Ensure the following properties are set on the request:
+* [GetContainerRegistryCredentials](/rest/api/playfab/multiplayer/multiplayer-server/get-container-registry-credentials): Retrieve a container registry address, user name, and password
+* [ListContainerImages](/rest/api/playfab/multiplayer/multiplayer-server/list-container-images) and [ListContainerImageTags](/rest/api/playfab/multiplayer/multiplayer-server/list-container-image-tags): Ensure your new image and tag are listed (sometimes it might take a couple of minutes for image to be fully registered in the system)
+* [CreateBuildWithCustomContainer](/rest/api/playfab/multiplayer/multiplayer-server/create-build-with-custom-container): Create a build with a custom container. Specify the tagged image you uploaded earlier. Ensure the following properties are set on the request:
   * **ContainerImageReference** - The image name and tag that was uploaded earlier (and is visible in ListContainerImages and ListContainerImageTags above).
   * **ContainerFlavor** - "CustomLinux"
   * **ContainerRunCommand** (Optional) - In case your container doesn't have a default command that it runs, this can be used to provide the command to run, along with any arguments.
 
 ## See also
 
-* [Intro to docker containers](https://docs.microsoft.com/learn/modules/intro-to-docker-containers/)
+* [Intro to docker containers](/learn/modules/intro-to-docker-containers/)
 * [Create your first server](create-your-first-server.md)
 * [Resources and samples](server-samples-resources.md)
 * [PlayFab Multiplayer Server SDKs](server-sdks.md)

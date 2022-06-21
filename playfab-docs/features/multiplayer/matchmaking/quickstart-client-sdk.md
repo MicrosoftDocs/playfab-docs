@@ -45,7 +45,7 @@ For Unity and Unreal set up instructions, see the following articles.
 
 Now that you've finished the setup, you're ready to make your first API call and use more Multiplayer features, such as Matchmaking.
 
-To start making Multiplayer API calls, you also need the PlayFab Entity Token. Get it via REST calls ([GetEntityToken](https://docs.microsoft.com/rest/api/playfab/authentication/authentication/getentitytoken)) or by using the PlayFab Core SDK.
+To start making Multiplayer API calls, you also need the PlayFab Entity Token. Get it via REST calls ([GetEntityToken](/rest/api/playfab/authentication/authentication/getentitytoken)) or by using the PlayFab Core SDK.
 
 Once you have the entity token, initialize the Multiplayer library using [PFMultiplayerInitialize](../lobby/playfabmultiplayerreference-cpp/pfmultiplayer/functions/pfmultiplayerinitialize.md) and call [PFMultiplayerSetEntityToken](../lobby/playfabmultiplayerreference-cpp/pfmultiplayer/functions/pfmultiplayersetentitytoken.md) to set the entity token for your local users.
 

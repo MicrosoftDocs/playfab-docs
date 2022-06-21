@@ -16,7 +16,7 @@ PlayFab is committed to the reliable operation of our services 24/7. However, in
 
 ## Alerting PlayFab
 
-If you are a PlayFab Premium or Enterprise tier customer, you have the ability to create Emergency tickets in the [Game Manager support ticket creation page](https://docs.microsoft.com/gaming/playfab/features/pricing/paidtechnicalsupport). Please note that Emergency tickets must only be used for cases that are live-title impacting issues, and where you have reviewed the issue sufficiently to determine that there is valid reason to believe that the cause is an error in the PlayFab backend. Emergency tickets must not be used for general technical support.
+If you are a PlayFab Premium or Enterprise tier customer, you have the ability to create Emergency tickets in the [Game Manager support ticket creation page](../../pricing/paidtechnicalsupport.md). Please note that Emergency tickets must only be used for cases that are live-title impacting issues, and where you have reviewed the issue sufficiently to determine that there is valid reason to believe that the cause is an error in the PlayFab backend. Emergency tickets must not be used for general technical support.
 
 ## Ongoing management of incidents
 

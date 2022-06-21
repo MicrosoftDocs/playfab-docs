@@ -26,7 +26,7 @@ This quickstart helps you make your first PlayFab API call in the using the Clie
 
 ## Xbox project setup
 
-Follow the Xbox setup guide for Universal Windows Platform (UWP) applications: [UWP on Xbox One](https://docs.microsoft.com/windows/uwp/xbox-apps). This guide walks you through setting up your Xbox, the XDK, and Visual Studio to build Xbox applications.
+Follow the Xbox setup guide for Universal Windows Platform (UWP) applications: [UWP on Xbox One](/windows/uwp/xbox-apps/). This guide walks you through setting up your Xbox, the XDK, and Visual Studio to build Xbox applications.
 
 ## Using the PlayFab CPP SDK
 
@@ -57,7 +57,7 @@ To help you understand how to set up the project, we use a Direct3D sample for t
 3. Select **Direct3D 11 Game**. Name the project as PlayFabXboxGuide and select enter the location in which to store the project. To create the project, select **OK**.
 4. To explicitly call out port numbers, edit the package.appxmanifest file. When using ports internally, make the following change to allow the application to talk to the network:
 
-    For more information about using ports internally, see the manifest template code example in the "Xbox One exclusive resource application network manifest templates" section of [Configuring a XIM project in a manifest](https://docs.microsoft.com/gaming/xbox-live/features/multiplayer/xim/concepts/live-xim-manifest#xbox-one-exclusive-resource-application-network-manifest-templates).
+    For more information about using ports internally, see the manifest template code example in the "Xbox One exclusive resource application network manifest templates" section of [Configuring a XIM project in a manifest](/gaming/gdk/_content/gc/live/get-started/live-xbl-overview#xbox-one-exclusive-resource-application-network-manifest-templates).
 
 5. Modify the section for the **XML** header `<mx:Extension Category="windows.xbox.networking">` so that it looks like what is shown below.
 

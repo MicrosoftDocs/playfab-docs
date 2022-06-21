@@ -30,7 +30,7 @@ Here we examine some best practices for using PlayFab Insights as well as addres
 
 
 - Insights management commands allow the creation and updating of custom tables. For core reporting and often used tables it's helpful to build custom aggregation tables. Aggregation tables generally have a much smaller data footprint than the source data. This increases query performance and reduces the need for a higher performance level. 
-  - For automating data aggregation we recommend using Azure Data Factory, a low-cost and scalable automation option. For more information on using Azure Data Factory see the [connectivity](https://docs.microsoft.com/gaming/playfab/features/insights/connectivity) section.
+  - For automating data aggregation we recommend using Azure Data Factory, a low-cost and scalable automation option. For more information on using Azure Data Factory see the [connectivity](./connectivity/index.md) section.
 
 
 - Limit queries by timestamp, don't pull all data to explore the last several days (this is generally good advice in any data system).
@@ -39,7 +39,7 @@ Here we examine some best practices for using PlayFab Insights as well as addres
 ## FAQ
 ### How can I query data?
    1. The simplest way is to use our built in [data explorer](https://docs.microsoft.com/gaming/playfab/features/insights/explorer/).
-   2. The [connectivity](https://docs.microsoft.com/gaming/playfab/features/insights/connectivity) section has details on additional ways to access data.
+   2. The [connectivity](./connectivity/index.md) section has details on additional ways to access data.
 ### I sent a Microsoft authentication link (AAD) and it didn't work, what happened?
   - If you already have a PlayFab account, you need to sign out before accepting an invite with a different authentication method. 
 ###  Why am I getting an error when trying to change my performance level or data retention?
@@ -52,9 +52,9 @@ Here we examine some best practices for using PlayFab Insights as well as addres
    2. You can also implement your own telemetry [through PlayStream, or our Telemetry system](https://docs.microsoft.com/rest/api/playfab/events/playstream-events). 
    3. You can use [Management Commands](https://docs.microsoft.com/gaming/playfab/features/insights/insights/management-commands) to ingest custom datasets.
 ###  What is the standard data schema for PlayFab events?
-   - In PlayFab Insights we load all the data from all events into a single table. This table is named ['events.all]. Inside that table you will see a column called "EventData" that contains the payload of JSON information for each event. For complete information about the events.all table, see [About the events.all table](https://docs.microsoft.com/gaming/playfab/features/insights/schemas/events-all) for more complete information. 
+   - In PlayFab Insights we load all the data from all events into a single table. This table is named ['events.all]. Inside that table you will see a column called "EventData" that contains the payload of JSON information for each event. For complete information about the events.all table, see [About the events.all table](./schemas/events-all.md) for more complete information. 
 ###  Why can't I write SQL?
-   - As of now, we only support KQL (Kusto Query Language) queries in most scenarios. We're actively exploring adding SQL support. While KQL takes some getting used to, we think you'll like it once you do. For information on converting SQL to Kusto queries, see [SQL to Kusto query translation](https://docs.microsoft.com/azure/kusto/query/sqlcheatsheet).
+   - As of now, we only support KQL (Kusto Query Language) queries in most scenarios. We're actively exploring adding SQL support. While KQL takes some getting used to, we think you'll like it once you do. For information on converting SQL to Kusto queries, see [SQL to Kusto query translation](/azure/data-explorer/kusto/query/sqlcheatsheet).
 ###  What's the difference between Events Per Second in my Insights performance level and the costs of sending PlayStream events?
    - Events per second in your Insights performance level represents data ingestion to your cluster through any means. PlayStream write events and write telemetry events are billed independently and represent the cost of writing to the cloud. 
 ###  Can I have a higher performance level than what I see on my management page?
@@ -100,7 +100,7 @@ Summarize
 ['events.all'] | summarize count() by FullName_Name, bin(Timestamp, 1d)
 ```
 
-- View [Kusto documentation](https://docs.microsoft.com/azure/data-explorer/kusto/concepts/querylimits) for more information.
+- View [Kusto documentation](/azure/data-explorer/kusto/concepts/querylimits) for more information.
 
 ### I set truncationmaxsize and truncationmaxrecords variables to a larger value, but I am still getting an error.
 - PlayFab Insights does not currently support setting these variables. See above for query formulation tips.
@@ -111,7 +111,7 @@ Summarize
 
 ### My queries return a “Partial query failure: Low memory condition” error 
 - This means the query is too complex and is unable to fit within the memory limits of your Performance Level. Try simplifying your query. For example, a summarize call may have too many groups, or you may be trying to operate on too many rows at once.You can also upgrade your Performance level to allow more memory to be allocated to each query.
-- View [Kusto documentation](https://docs.microsoft.com/azure/data-explorer/kusto/concepts/partialqueryfailures) for more information.
+- View [Kusto documentation](/azure/data-explorer/kusto/concepts/partialqueryfailures) for more information.
 
 ### Will I lose data if my volume of events is higher than what is allowed by my performance level?
 - No, but you will be charged for overrages. Overages are measured in the number of Insights Credits consumed. Insights Credit prices can be found on [PlayFab.com/Pricing](https://playfab.com/pricing/).

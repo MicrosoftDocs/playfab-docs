@@ -22,6 +22,6 @@ public string PlayFabLocalPlayer.LanguageCode { get; set; }
 
 LanguageCode
 
-[string](https://docs.microsoft.com/dotnet/api/system.string?view=netcore-3.1&preserve-view=true)
+[string](/dotnet/api/system.string?view=netcore-3.1&preserve-view=true)
 
 The BCP 47 language code associated with the player.

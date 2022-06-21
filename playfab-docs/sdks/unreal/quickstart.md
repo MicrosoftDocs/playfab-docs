@@ -20,7 +20,7 @@ You can use the PlayFab plugin for the Unreal Engine to manage LiveOps for your 
 * Managing virtual items and currency.
 * Creating social features such as friends lists.
 
-  [API reference documentation](https://docs.microsoft.com/gaming/playfab/api-references/) | [Library source code](https://github.com/PlayFab/UnrealMarketplacePlugin) | [Unreal Marketplace](https://www.unrealengine.com/marketplace/playfab-sdk)
+  [API reference documentation](../../api-references/index.md) | [Library source code](https://github.com/PlayFab/UnrealMarketplacePlugin) | [Unreal Marketplace](https://www.unrealengine.com/marketplace/playfab-sdk)
 
 ## Prerequisites
 
@@ -188,7 +188,7 @@ In Unreal Engine:
 
 ## Calling PlayFab from Unreal Blueprints
 
-This section guides you through creating a Blueprint structure, which uses the PlayFab API to call [LoginWithCustomID](https://docs.microsoft.com/rest/api/playfab/client/authentication/loginwithcustomid?view=playfab-rest). Log in using `LoginWithCustomID` is easy to implement but is of limited usefulness in the scenario of a published Title. Before you launch your Title, see the [Login basics and best practices](../../features/authentication/login/login-basics-best-practices.md) for information about implementing robust log in functionality.
+This section guides you through creating a Blueprint structure, which uses the PlayFab API to call [LoginWithCustomID](/rest/api/playfab/client/authentication/login-with-custom-id?view=playfab-rest). Log in using `LoginWithCustomID` is easy to implement but is of limited usefulness in the scenario of a published Title. Before you launch your Title, see the [Login basics and best practices](../../features/authentication/login/login-basics-best-practices.md) for information about implementing robust log in functionality.
 
 > [!TIP]
 > If you start from a Blueprint project, you must convert it to a C++ project for the PlayFab Blueprint Actions to function.

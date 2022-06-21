@@ -18,13 +18,13 @@ Get started with the PlayFab REST API collection for Postman. Follow steps to in
 - Add/modify/delete entities in a title
 - Configure title content
 
-[API reference documentation](https://docs.microsoft.com/gaming/playfab/api-references/) | [PlayFab Postman Collection GitHub repository](https://github.com/PlayFab/PostmanCollection)
+[API reference documentation](../../api-references/index.md) | [PlayFab Postman Collection GitHub repository](https://github.com/PlayFab/PostmanCollection)
 
 ## Prerequisites
 
 - A [PlayFab developer account](https://developer.playfab.com/sign-up)
 - The [Postman native app](https://www.getpostman.com/)
-- An OS running running [TLS](https://docs.microsoft.com/windows/win32/secauthn/transport-layer-security-protocol) 1.2 or higher ([Windows support for TLS 1.2](https://docs.microsoft.com/dotnet/framework/network-programming/tls#support-for-tls-12))
+- An OS running running [TLS](/windows/win32/secauthn/transport-layer-security-protocol) 1.2 or higher ([Windows support for TLS 1.2](/dotnet/framework/network-programming/tls#support-for-tls-12))
 
 ### Adding PlayFab Collections
 
@@ -72,7 +72,7 @@ Get started with the PlayFab REST API collection for Postman. Follow steps to in
   | EntityToken |                |               |
 
 > [!NOTE]
-> You can learn more about title secret keys and where to find them in the [Secret Key Management](https://docs.microsoft.com/gaming/playfab/gamemanager/secret-key-management) documentation.
+> You can learn more about title secret keys and where to find them in the [Secret Key Management](../../gamemanager/secret-key-management.md) documentation.
 
   > [!div class="mx-imgBorder"]
   > ![Postman Create Environment](./media/tutorials/postman-new-create-environment.png "Postman Create Environment")
@@ -85,7 +85,7 @@ Get started with the PlayFab REST API collection for Postman. Follow steps to in
 
 ### Getting a Title Entity Token
 
-One way to interact with PlayFab's [Entity Programming Model](https://docs.microsoft.com/gaming/playfab/features/data/entities/) is to get a Title Entity Token. This can be useful if you want to make changes to title config data, or if you want to make adjustments to a large amount of players:
+One way to interact with PlayFab's [Entity Programming Model](../../features/data/entities/index.md) is to get a Title Entity Token. This can be useful if you want to make changes to title config data, or if you want to make adjustments to a large amount of players:
 
 - Under the **PlayFab Collections** folder, expand the **Authentication** namespace and select `GetEntityToken`
 - Under **Headers**, uncheck `X-Authorization`
@@ -106,7 +106,7 @@ One way to interact with PlayFab's [Entity Programming Model](https://docs.micro
 
 ### Getting a Title_Player_Account Entity Token
 
-Another way to interact with PlayFab's [Entity Programming Model](https://docs.microsoft.com/gaming/playfab/features/data/entities/) is to get a Title_Player_Account Entity Token. This is useful if you want to make changes to a single player:
+Another way to interact with PlayFab's [Entity Programming Model](../../features/data/entities/index.md) is to get a Title_Player_Account Entity Token. This is useful if you want to make changes to a single player:
 
 - Under the **PlayFab Collections** folder, expand the **Client** namespace and select `LoginWithCustomID`
 - Under **Body**, change the `CreateAccount` value from `false` to `true`
@@ -123,7 +123,7 @@ Another way to interact with PlayFab's [Entity Programming Model](https://docs.m
 - Expired entity token
   - If you previously obtained an entity token and are unsuccessfully attempting to call other APIs, your entity token might be expired. Get another entity token, save it into the `EntityToken` environment variable, and attempt to call the previous API again
 - Incorrect entity token type
-  - There are different types of entities (see [Available built-in entity types](https://docs.microsoft.com/gaming/playfab/features/data/entities/available-built-in-entity-types)). Different APIs allow different entity types - for example, you might be attempting to call `GetLanguageList` with a title_player_account entity token instead of a title entity token 
+  - There are different types of entities (see [Available built-in entity types](../../features/data/entities/available-built-in-entity-types.md)). Different APIs allow different entity types - for example, you might be attempting to call `GetLanguageList` with a title_player_account entity token instead of a title entity token 
 - Incorrect environment:
   - Make sure you are using the proper environment by checking the environment dropdown *(top right of the window)*
 
@@ -132,8 +132,8 @@ Another way to interact with PlayFab's [Entity Programming Model](https://docs.m
 You now have an entity token to pass into other API calls to start setting up your PlayFab title.
 
 > [!div class="nextstepaction"]
-> [Getting Started: Developers >](https://docs.microsoft.com/gaming/playfab/personas/developer)
+> [Getting Started: Developers >](../../personas/developer.md)
 > [!div class="nextstepaction"]
-> [PlayFab Quickstarts >](https://docs.microsoft.com/gaming/playfab/index#pivot=documentation&panel=quickstarts)
+> [PlayFab Quickstarts >](../../index.yml#pivot=documentation&panel=quickstarts)
 > [!div class="nextstepaction"]
-> [API References >](https://docs.microsoft.com/gaming/playfab/api-references/)
+> [API References >](../../api-references/index.md)

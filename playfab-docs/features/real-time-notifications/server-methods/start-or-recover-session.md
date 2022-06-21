@@ -36,7 +36,7 @@ StartOrRecoverSessionResponse StartOrRecoverSession(StartOrRecoverSessionRequest
 
 > [!TIP]
 > This is a SignalR server method. See [documentation on calling server
-> methods](https://docs.microsoft.com/aspnet/core/signalr/dotnet-client#call-hub-methods-from-client)
+> methods](/aspnet/core/signalr/dotnet-client#call-hub-methods-from-client)
 > from a SignalR client.
 
 ## Parameters

@@ -16,7 +16,7 @@ Player data is accessible from CloudScript if you require it for your title.
 
 For more information about using CloudScript, see [CloudScript quickstart](../../automation/cloudscript/quickstart.md).
 
-The C# Sample in this topic are written for the Unity SDK. The Unity SDK uses an event driven model to handle non-synchronous tasks. To run the sample code using the standard C# or Xamarin C# SDKs you must modify the code to use an async Task model. Methods that must be modified have Async append to the method name in the signature. For example, SetObject in the Unity SDK becomes SetObjectAsync in the standard C# SDK. For more information, see [Asynchronous programming with async and await](https://docs.microsoft.com/dotnet/csharp/programming-guide/concepts/async/).
+The C# Sample in this topic are written for the Unity SDK. The Unity SDK uses an event driven model to handle non-synchronous tasks. To run the sample code using the standard C# or Xamarin C# SDKs you must modify the code to use an async Task model. Methods that must be modified have Async append to the method name in the signature. For example, SetObject in the Unity SDK becomes SetObjectAsync in the standard C# SDK. For more information, see [Asynchronous programming with async and await](/dotnet/csharp/programming-guide/concepts/async/).
 
 ## CloudScript code example
 

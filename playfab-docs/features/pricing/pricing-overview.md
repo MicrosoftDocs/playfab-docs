@@ -22,13 +22,13 @@ ms.localizationpriority: medium
 
 3. **[Pricing Meters](../pricing/meters/meters.md):** Learn about meter pricing and related APIs.
 
-4. **[Multiplayer Server Pricing](https://docs.microsoft.com/gaming/playfab/features/multiplayer/servers/billing-for-thunderhead):** Learn about multiplayer server (MPS) pricing when MPS is enabled.
+4. **[Multiplayer Server Pricing](../multiplayer/servers/billing-for-thunderhead.md):** Learn about multiplayer server (MPS) pricing when MPS is enabled.
 
-5. **[Party Pricing](https://docs.microsoft.com/gaming/playfab/features/multiplayer/networking/pricing):** Learn about Party pricing when Party is enabled.
+5. **[Party Pricing](../multiplayer/networking/pricing.md):** Learn about Party pricing when Party is enabled.
 
-6. **[User Generated Content Pricing](https://docs.microsoft.com/gaming/playfab/features/commerce/ugc/billable-meters):** Learn about User Generated Content (UGC) pricing when UGC is enabled.
+6. **[User Generated Content Pricing](../commerce/ugc/billable-meters.md):** Learn about User Generated Content (UGC) pricing when UGC is enabled.
 
-7. **[Experiments Pricing](https://docs.microsoft.com/gaming/playfab/features/analytics/experiments/pricing):** Learn about Experiments pricing when used.
+7. **[Experiments Pricing](../analytics/experiments/pricing.md):** Learn about Experiments pricing when used.
 
 8. **[Technical Support](../pricing/paidtechnicalsupport.md):** Access support included in paid account plans.
 

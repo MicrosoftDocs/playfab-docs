@@ -85,4 +85,4 @@ The amount of the base rate will represent the paid subscription plan of an acco
 **How do I know which subscription plan I am upgrading my account to?**
 All accounts upgraded through Game Manager are automatically upgraded to the Standard plan, as indicated by the agreed-to base rate listed within the **Upgrade Account**(1) flow.
 
-To upgrade to a Premium plan, please [contact PlayFab](https://docs.microsoft.com/gaming/playfab/features/pricing/paidtechnicalsupport).
+To upgrade to a Premium plan, please [contact PlayFab](./paidtechnicalsupport.md).

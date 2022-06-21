@@ -59,6 +59,6 @@ If you're unable to access the above secure link, see [Request access](https://a
 
 ### Windows and Xbox
 
-- [Authenticate Xbox Live users using PlayFab's Xbox Live Helper Library (recommended)](https://docs.microsoft.com/gaming/playfab/features/multiplayer/networking/party-xbox-live-guide#mapping-between-xbox-live-user-ids-and-playfab-entity-ids)
+- [Authenticate Xbox Live users using PlayFab's Xbox Live Helper Library (recommended)](../../multiplayer/networking/party-xbox-live-guide.md#mapping-between-xbox-live-user-ids-and-playfab-entity-ids)
 - [Setting up PlayFab authentication using Universal Windows Platform](uwp.md)
 - [Integrating the Universal Windows Platform with PlayFab](uwp-integration.md)

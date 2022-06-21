@@ -33,7 +33,7 @@ If you're using Party in Xbox and PC titles, we recommend that you use the [Part
 
 Now that you've finished the setup, you're ready to make your first API call and use more Party features.
 
-To start making Party API calls, you also need the PlayFab Entity Token. Get it via REST calls ([GetEntityToken](https://docs.microsoft.com/rest/api/playfab/authentication/authentication/getentitytoken)) or by using the PlayFab SDK. For instructions about how to install the PlayFab SDK, see the [Install PlayFab SDK](#install-the-playfab-sdk) section. If you're using Xbox Live, you can also get this token from the [Party Xbox Live Helper Library](party-xbox-live-guide.md).
+To start making Party API calls, you also need the PlayFab Entity Token. Get it via REST calls ([GetEntityToken](/rest/api/playfab/authentication/authentication/getentitytoken)) or by using the PlayFab SDK. For instructions about how to install the PlayFab SDK, see the [Install PlayFab SDK](#install-the-playfab-sdk) section. If you're using Xbox Live, you can also get this token from the [Party Xbox Live Helper Library](party-xbox-live-guide.md).
 
 Here are some quickstart guides to help you make your first API call.
 * [Quickstart for Android](android-specific-requirements.md)
@@ -53,7 +53,7 @@ Running a sample is a helpful way to learn how Party works. To download a sample
 
 You can use the PlayFab SDK to get the PlayFab Entity Token. The PlayFab SDK is needed when you want to use other PlayFab functionalities such as economy and leaderboards.
 
-1. Install the version of the PlayFab SDK that you need&mdash;select by [languages](https://docs.microsoft.com/gaming/playfab/sdks/languages/), [game engines](https://docs.microsoft.com/gaming/playfab/sdks/game-engines/), or [frameworks](https://docs.microsoft.com/gaming/playfab/sdks/frameworks/).
+1. Install the version of the PlayFab SDK that you need&mdash;select by [languages](../../../sdks/languages/index.yml), [game engines](../../../sdks/game-engines/index.yml), or [frameworks](../../../sdks/frameworks/index.yml).
 1. Associate your game's PlayFab title ID with the PlayFab SDK. If you need to find out what title IDs are or where to find them, see [Your studios and titles](../../../gamemanager/quickstart.md#your-studios-and-titles).
 
 ## Key concepts

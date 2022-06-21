@@ -33,7 +33,7 @@ ReceiveMessage(Message message)
 
 > [!TIP]
 > This is a SignalR client method. See [documentation on exposing client
-> methods](https://docs.microsoft.com/aspnet/core/signalr/dotnet-client#call-client-methods-from-hub)
+> methods](/aspnet/core/signalr/dotnet-client#call-client-methods-from-hub)
 > in a SignalR client, which will be invoked by the server.
 
 ## Parameters

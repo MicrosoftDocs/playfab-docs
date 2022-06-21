@@ -15,9 +15,9 @@ This article helps you generate a list of DLLs required to run your Windows game
 By default, the managed container image includes many commonly used DLLs. To determine which additional DLLs are needed, compare the list of DLLs for your game server with the list of DLLs included in the manged container image. Any additional DLLs must be included in your asset zip file.
 
 ## Determine required DLLs
-Use the [ListDlls](https://docs.microsoft.com/sysinternals/downloads/listdlls) utility to list all of the DLLs that are loaded when you run your game server locally. To generate the list:
+Use the [ListDlls](/sysinternals/downloads/listdlls) utility to list all of the DLLs that are loaded when you run your game server locally. To generate the list:
 
-1. Download [ListDlls](https://docs.microsoft.com/sysinternals/downloads/listdlls) from sysinternals.
+1. Download [ListDlls](/sysinternals/downloads/listdlls) from sysinternals.
 1. Run your game server executable on your local machine by using the instructions found in [local debug steps](locally-debugging-game-servers-and-integration-with-playfab.md) in **process mode** or as a standalone process without using the [LocalMultiplayerAgent](https://github.com/PlayFab/MpsAgent).
 1. Run listdlls and specify your running game server as a parameter. Example: `listdlls ServerLoadSimulator.exe`
 1. Compare the list that is output against the list of DLLs included in your asset zip file (typically everything in the same folder as your executable). The delta between the lists are the system DLLs that are required by your game server. 

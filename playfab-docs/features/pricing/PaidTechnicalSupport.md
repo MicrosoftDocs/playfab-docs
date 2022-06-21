@@ -19,7 +19,7 @@ To make integration with PlayFab as seamless and efficient as possible, PlayFab 
 
 **Minimum Required Account Plan:** No account needed, open to the public.
 
-**How to access:** To view PlayFab documentation, see [PlayFab Documentation](https://docs.microsoft.com/gaming/playfab/).
+**How to access:** To view PlayFab documentation, see [PlayFab Documentation](../../index.yml).
 
 
 

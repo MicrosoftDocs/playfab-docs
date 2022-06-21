@@ -18,4 +18,4 @@ public EntityKey PlayFabPlayer.EntityKey { get; }
 
 Property Value
 
-[EntityKey](https://docs.microsoft.com/gaming/playfab/api-references/events/data-types/entitykey)
+[EntityKey](../../../../../../../api-references/events/data-types/entitykey.md)

@@ -97,5 +97,5 @@ We are now going to create a new pipeline to get data from Insights. To create a
 
 ## Additional resources
 
-* [Azure Data Factory (ADF) documentation](https://docs.microsoft.com/azure/data-factory/)
+* [Azure Data Factory (ADF) documentation](/azure/data-factory/)
 * To learn about other tools to connect to Insights, see  [Connecting external tools to Insights](index.md)

@@ -19,7 +19,7 @@ This tutorial guides you through the procedure for PlayFab authentication using 
 
 ## Requirements
 
-- Follow the [MSDN "Get Set Up" Guide](https://docs.microsoft.com/windows/uwp/get-started/get-set-up) to prepare Windows and Visual Studio for UWP development.
+- Follow the [MSDN "Get Set Up" Guide](/windows/apps/windows-app-sdk/set-up-your-development-environment) to prepare Windows and Visual Studio for UWP development.
 - Have a registered [PlayFab](https://playfab.com/) title.
 - Be familiar with [Login basics and Best Practices](../../authentication/login/login-basics-best-practices.md).
 

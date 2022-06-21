@@ -2,3 +2,7 @@
   href: index.md
 - name: Quickstart
   href: quickstart.md
+- name: Azure Data Explorer Export
+  href: data-connection-adx.md
+- name: Azure Blob Export
+  href: data-connection-azure-blob.md

@@ -63,4 +63,4 @@ This native C++ project can be used in the following ways.
 - [Quickstart for Windows (Win32) x64](quickstart-windows.md)
 - [Quickstart for Xbox consoles](quickstart-xbox.md)
 
-If none of the above options work for you, you can install the NuGet package into your Visual Studio project using the NuGet Package Manager. For instructions, see [Install and use a package in Visual Studio](https://docs.microsoft.com/nuget/quickstart/install-and-use-a-package-in-visual-studio). For more information, see [Getting started with NuGet](https://docs.microsoft.com/nuget/what-is-nuget).
+If none of the above options work for you, you can install the NuGet package into your Visual Studio project using the NuGet Package Manager. For instructions, see [Install and use a package in Visual Studio](/nuget/quickstart/install-and-use-a-package-in-visual-studio). For more information, see [Getting started with NuGet](/nuget/what-is-nuget).

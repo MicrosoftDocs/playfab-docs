@@ -37,7 +37,7 @@ For Unity and Unreal set up instructions, see the following articles.
 
 Now that you've finished the setup, you're ready to make your first API call and use more Lobby features.
 
-To start making Lobby API calls, you also need the PlayFab Entity Token. Get it via REST calls ([GetEntityToken](https://docs.microsoft.com/rest/api/playfab/authentication/authentication/getentitytoken)) or by using the PlayFab Core SDK.
+To start making Lobby API calls, you also need the PlayFab Entity Token. Get it via REST calls ([GetEntityToken](/rest/api/playfab/authentication/authentication/get-entity-token)) or by using the PlayFab Core SDK.
 
 ## Initialize Lobby
 
@@ -74,4 +74,3 @@ Initialize the PlayFab Multiplayer Client SDK by following these basic steps.
 * [Lobby properties](lobby-properties.md)
 * [Lobby Client SDK reference](playfabmultiplayerreference-cpp\pflobby\pflobby_members.md)
 * [Lobby SDKs](lobby-matchmaking-sdks/lobby-matchmaking-sdks.md)
-
