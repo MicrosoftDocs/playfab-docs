@@ -82,9 +82,9 @@ You can always get and set player data through Game Manager by performing the fo
 5. To get player data, add a `GetUserData` method to the `PlayFabLogin` class. `SetUserData` uses the [GetUserData](xref:titleid.playfabapi.com.client.playerdatamanagement.getuserdata) method to retrieved the player data for the specified player.
 
     ```csharp
-    void GetUserData(string myPlayFabeId) {
+    void GetUserData(string myPlayFabId) {
         PlayFabClientAPI.GetUserData(new GetUserDataRequest() {
-            PlayFabId = myPlayFabeId,
+            PlayFabId = myPlayFabId,
             Keys = null
         }, result => {
             Debug.Log("Got user data:");
