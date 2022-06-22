@@ -110,7 +110,7 @@ To obtain your secret key, follow the link to your **API Console**.
 
 ## PlayFab Google Sign-In setup
 
-PlayFab has its own process for setting up a Google sign-in. You can do this in your PlayFab developer account. If you don't have one, you can [sign-up here](https://developer.playfab.com/en-us/sign-up).
+PlayFab has its own process for setting up a Google sign-in. You can do this in your PlayFab developer account. If you don't have one, you can [sign up for a free developer account](https://developer.playfab.com).
 
 To set up Google in PlayFab:
 

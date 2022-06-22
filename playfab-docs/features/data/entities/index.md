@@ -75,7 +75,7 @@ Namespace is the singular Entity that refers to *all* global information for eve
 
 Set the `ID` field to your `GamePublisherId`. To retrieve your `GamePublisherId`:
 
-- Log in to [Game Manager](https://developer.playfab.com/en-US/login).
+- Sign in to [Game Manager](https://developer.playfab.com).
 - From the **My Studios and Titles** page, select the appropriate Title.
 - Select the gear icon in the left corner of the Title page and then select **Title Settings**.
 - Select the **API Features** tab.
@@ -88,7 +88,7 @@ Title is the singular Entity that refers to all global information for that Titl
 
 Set the `ID` field to your game's `TitleId`. To retrieve your `TitleId`:
 
-- Log in to [Game Manager](https://developer.playfab.com/en-US/login).
+- Sign in to [Game Manager](https://developer.playfab.com).
 - On the **My Studios and Titles** page locate your Title.
 
 The Title ID is located just below the name of your Title.

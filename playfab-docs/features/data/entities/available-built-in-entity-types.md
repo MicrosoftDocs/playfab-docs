@@ -30,8 +30,8 @@ The `namespace` entity refers to *all* global information for all titles within 
 
 Set the `ID` field to your game's **Publisher ID**. To retrieve your **Publisher ID**:
 
-- Sign in to [Game Manager](https://playfab.com/).
-- In the upper left-hand corner of **Game Manger**, select the gear icon.
+- Sign in to [Game Manager](https://developer.playfab.com/).
+- In the upper left-hand corner of **Game Manager**, select the gear icon.
 - Select **Title Settings**.
 - Select **API Features**.
 - The **Publisher ID** is displayed in the **API ACCESS** section.
@@ -45,8 +45,8 @@ The `title` entity refers to all global information for that title.
 
 Set the `ID` field to your game's **Title ID**. To retrieve the **Title ID**:
 
-- Sign in to [Game Manager](https://playfab.com/).
-- In the upper left-hand corner of **Game Manger**, select the gear icon.
+- Sign in to [Game Manager](https://developer.playfab.com/).
+- In the upper left-hand corner of **Game Manager**, select the gear icon.
 - Select **Title Settings**.
 - Select **API Features**.
 - The **Title ID** is displayed in the **API ACCESS** section.

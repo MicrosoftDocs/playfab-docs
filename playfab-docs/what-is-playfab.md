@@ -29,7 +29,7 @@ Using PlayFab you can:
 * Quickly create leaderboards and run content experimentation to deepen player engagement.
 * Accelerate growth with economy services that let you create and track virtual currencies, manage stores of items, and process payments.
 
-To use PlayFab features, you must sign up for a [PlayFab account](https://developer.playfab.com/en-us/sign-up).
+To use PlayFab features, you must sign up for a [PlayFab developer account](https://developer.playfab.com/en-us/sign-up).
 
 PlayFab provides the following services:
 

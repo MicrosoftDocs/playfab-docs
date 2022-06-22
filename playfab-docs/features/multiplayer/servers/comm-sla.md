@@ -24,9 +24,9 @@ PlayFab’s incident management procedures vary depending on the severity of the
 
 |Severity|PlayFab Status Label|Description| Response Expectation |
 |-|-|-|-|
-|1|Critical |Critial outage across multiple systems. These are exceptionally rare outages that impact multiple PlayFab systems and a wide swatch of player activity. For example, an inability to log-in or create entity tokens. | Worked 24x7 until resolved. Initial review in 15 minutes or less. For issues raised by external developers, communications will be within an hour, if the issue is confirmed as a valid service issue.|
-|2| Major |	These outages impact a limited set of PlayFab sub-systems but are causing player-facing impact for a wide swatch of customers. |	Worked 24x7 until resolved. Initial review  in 15 minutess or less. For issues raised by external developers, communications will be within an hour, if the issue is confirmed as a valid service issue.|
-|3|	Degradation |	These incidents are impacting players but are limited to a specific region or not typically fatal to the gameplay experience.	| Worked 24x7 until resolved. Initial review in 30 minutes or less. For issues raised by external developers, communications will be during normal business hours, if the issue is confirmed as a valid service issue.
+|1|Critical |Critical outage across multiple systems. These are exceptionally rare outages that impact multiple PlayFab systems and a wide swatch of player activity. For example, an inability to sign-in or create entity tokens. | Worked 24x7 until resolved. Initial review in 15 minutes or less. For issues raised by external developers, communications will be within an hour, if the issue is confirmed as a valid service issue.|
+|2| Major | These outages impact a limited set of PlayFab sub-systems but are causing player-facing impact for a wide swatch of customers. | Worked 24x7 until resolved. Initial review  in 15 minutes or less. For issues raised by external developers, communications will be within an hour, if the issue is confirmed as a valid service issue.|
+|3| Degradation | These incidents are impacting players but are limited to a specific region or not typically fatal to the gameplay experience. | Worked 24x7 until resolved. Initial review in 30 minutes or less. For issues raised by external developers, communications will be during normal business hours, if the issue is confirmed as a valid service issue.
 
 > [!NOTE]
 > The **Status Labels** listed in the table are the ones used on our System Status site [status.playfab.com](https://status.playfab.com/).

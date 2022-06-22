@@ -38,7 +38,7 @@ Here we examine some best practices for using PlayFab Insights as well as addres
 
 ## FAQ
 ### How can I query data?
-   1. The simplest way is to use our built in [data explorer](https://docs.microsoft.com/gaming/playfab/features/insights/explorer/).
+   1. The simplest way is to use our built in [data explorer](/gaming/playfab/features/insights/data-explorer/).
    2. The [connectivity](./connectivity/index.md) section has details on additional ways to access data.
 ### I sent a Microsoft authentication link (AAD) and it didn't work, what happened?
   - If you already have a PlayFab account, you need to sign out before accepting an invite with a different authentication method. 
@@ -49,8 +49,8 @@ Here we examine some best practices for using PlayFab Insights as well as addres
    - Sure! You can revert back to the free tier if you don't currently need any of the paid features.
 ###  How do I get data into my Insights cluster?
    1. Most PlayFab services automatically generate data for you. 
-   2. You can also implement your own telemetry [through PlayStream, or our Telemetry system](https://docs.microsoft.com/rest/api/playfab/events/playstream-events). 
-   3. You can use [Management Commands](https://docs.microsoft.com/gaming/playfab/features/insights/insights/management-commands) to ingest custom datasets.
+   2. You can also implement your own telemetry [through PlayStream, or our Telemetry system](/gaming/playfab/features/automation/playstream-events/).
+   3. You can use [Management Commands](/gaming/playfab/features/insights/management-commands) to ingest custom datasets.
 ###  What is the standard data schema for PlayFab events?
    - In PlayFab Insights we load all the data from all events into a single table. This table is named ['events.all]. Inside that table you will see a column called "EventData" that contains the payload of JSON information for each event. For complete information about the events.all table, see [About the events.all table](./schemas/events-all.md) for more complete information. 
 ###  Why can't I write SQL?
@@ -66,7 +66,7 @@ Here we examine some best practices for using PlayFab Insights as well as addres
 ### What happens if I reduce my retention setting to a quantity of days that is less than the total number of days I have data for?
    - You're warned that if you reduce your retention you might delete data. For example, if you have been operating for 1 year and reduce the retention to 6 months, only the most recent 6 months of data is saved, the rest is discarded.
 ### How do I increase the timeout time on my queries?
-   - The time out limits on queries is relative to your compute power which is defined in your performance level. Refer to the compute power table in [Performance and Retention](https://docs.microsoft.com/gaming/playfab/features/insights/insights/performance-retention) under compute power.
+   - The time out limits on queries is relative to your compute power which is defined in your performance level. Refer to the compute power table in [Performance and Retention](/gaming/playfab/features/insights/performance-retention) under compute power.
 ### Is there a limit to how much telemetry I can send?
    - The following limits exist for the [WriteTelemetryEvents](xref:titleid.playfabapi.com.events.playstreamevents.writetelemetryevents) API call:
 
@@ -118,12 +118,13 @@ Summarize
 
 ### How do I decide by performance level?
 
-- The right performance level for you is best determined by your title's usage. By raising performance level, you'll gain access to more data in cache and other query resources resulting in faster running queries. View [Insights documentation](https://docs.microsoft.com/gaming/playfab/features/insights/insights/performance-retention) to learn more about performance levels.
+- The right performance level for you is best determined by your title's usage. By raising performance level, you'll gain access to more data in cache and other query resources resulting in faster running queries. For more information, see [Performance levels and retention](/gaming/playfab/features/insights/performance-retention) to learn more about performance levels.
 
 ## How do I grant a user permissions to the Data > Explorer page for a particular title?
 
-- Follow the [PlayFab User Roles](../../gamemanager/playfab-user-roles.md) guide to access, create, and grant user permissions. 
-- A user needs the following 3 permissions to access the Data Explorer: 
-    - Explorer data & tab (Read and Write permissions)
-    - Analytics data read access (Read permissions)
-    - Analytics data write access (Write permissions)
+- Follow the [PlayFab User Roles](../../gamemanager/playfab-user-roles.md) guide to access, create, and grant user permissions.
+- A user needs the following 3 permissions to access the Data Explorer:
+
+  - Explorer data & tab (Read and Write permissions)
+  - Analytics data read access (Read permissions)
+  - Analytics data write access (Write permissions)

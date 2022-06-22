@@ -23,16 +23,15 @@ Customers can understand changes to monthly costs and initiate their account's p
 
 **The Pricing page** will allow customers to view the cost of meter usage.
 
-
 ## Self-Serve Account Transition to Modern Pricing
 
-1. Log in to PlayFab.com.
+1. Sign in to [Game Manager](https://developer.playfab.com).
 
 2. From the **My Studios and Titles** page, select **Update Pricing** on the navigation bar of the Studio whose billing account will move to usage-based pricing.
 
-3. You will be directed to the **Plan Recommendation** page. On this page, you can see your rolling-thirty-day usage. Based upon your historic usage, we will calculate your estimate bill for your current plan and recommend the most cost-savings plan. 
+3. You will be directed to the **Plan Recommendation** page. On this page, you can see your rolling-thirty-day usage. Based upon your historic usage, we will calculate your estimate bill for your current plan and recommend the most cost-savings plan.
 
-4. Select **Proceed with plan** to move to the **Plan Selection** page to pick a plan.  The recommended plan will be automatically selected, but you can select any plan you are elligble for. 
+4. Select **Proceed with plan** to move to the **Plan Selection** page to pick a plan.  The recommended plan will be automatically selected, but you can select any plan you are eligible for.
 
 5. Select **Next** to move through the contact information and payment information tabs.
 
@@ -69,14 +68,16 @@ For more information, go to [Accessing PlayFab technical support](./paidtechnica
 #### Q. I have not selected a plan, will my account be shut off?
 No. Based on your current tier, your titles will either be transitioned to Dev Mode or the Standard Plan.  However, If you are an Essentials customers with titles with over 100k users, you will need to select a plan in order for new users to play your game. We recommend understanding which of your titles are currently exceeding 100k users so that you can select that plan that works best for you prior to the transition date of November 1, 2020.
 
-
 #### Q. I am an Enterprise customer. What will happen to my account?
-Enterprise accounts will be migrated to the new pricing plans according to their contract renewal date and will not automatically transition on November 1. If you have questions about your Enterprise contract, email us at: sales@playfab.com 
+
+Enterprise accounts will be migrated to the new pricing plans according to their contract renewal date and will not automatically transition on November 1. If you have questions about your Enterprise contract, email us at: [sales@playfab.com](mailto:sales@playfab.com)
 
 #### Q. How can I understand the costs for my studio prior to the transition?
+
 To preview the impact of moving your titles to consumption-based pricing, go to the **Billing Summary** page by selecting **Studio settings** from the **My Studios and Titles** homepage.
 
 #### Q. It looks like I might save money with the new pricing. Do I have to wait until Nov. 1 before I make the transition?
+
 No, you can upgrade your account to a new pricing plan at any time. To do so, select **Update Pricing** from your **My Studios and Titles** homepage or Title's Dashboard.
 
 #### Q: I can see my total meter usage in the billing summary, and I’ve read the best practices doc, but I’m still not sure how to figure out where the costs are coming from in my title. What tools are available to figure out which specific API calls are the ones costing me the most?
