@@ -38,6 +38,7 @@ Here we examine some best practices for using PlayFab Insights as well as addres
 
 ## FAQ
 ### How can I query data?
+
    1. The simplest way is to use our built in [data explorer](/gaming/playfab/features/insights/data-explorer/).
    2. The [connectivity](./connectivity/index.md) section has details on additional ways to access data.
 ### I sent a Microsoft authentication link (AAD) and it didn't work, what happened?
