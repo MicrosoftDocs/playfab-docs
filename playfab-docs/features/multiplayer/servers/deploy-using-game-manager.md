@@ -22,16 +22,18 @@ If this is your first time deploying a build, we recommend deploying a build usi
 For details about the values you can use for each parameter, see [Build definition](build-definition.md).
 
 ## Steps to deploy through Game Manager
-1. Log into your developer account on [PlayFab.com](https://playfab.com). Go to **My Studios and Titles** page and select your game title to display the dashboard
-2. Go to **Multiplayer** > **Servers** page, select **New Build** at the top right to create a new build
-3. Starting with the Build details, use a descriptive string as the Build Name
-4. Select a server with limited-free usage, such as **Dasv4** during development. To learn more about pricing, see [Billing for PlayFab Multiplayer Servers](billing-for-thunderhead.md)
-5. Set a value you want for Servers per machine
 
-Image below shows values used in the info section.
-![Build details including, Build name, Virtual machine selection of Dasv4, and 2 servers per machine](media/newBuild01.PNG)
+1. Sign in to [Game Manager](https://developer.playfab.com)
+1. Go to **My Studios and Titles** page and select your game title to display the dashboard
+1. Go to **Multiplayer** > **Servers** page, select **New Build** at the top right to create a new build
+1. Starting with the Build details, use a descriptive string as the Build Name
+1. Select a server with limited-free usage, such as **Dasv4** during development. To learn more about pricing, see [Billing for PlayFab Multiplayer Servers](billing-for-thunderhead.md)
+1. Set a value you want for Servers per machine
 
-6. Next we have the server details portion where you'll need to select an OS type either **Windows** or **Linux**. Then you'll select your server type, either process or container based on the OS you choose. 
+    Image below shows values used in the info section.
+    ![Build details including, Build name, Virtual machine selection of Dasv4, and 2 servers per machine](media/newBuild01.PNG)
+
+1. Next we have the server details portion where you'll need to select an OS type either **Windows** or **Linux**. Then you'll select your server type, either process or container based on the OS you choose.
 
 > [!Note]
 > For Linux platform, you need to create your own container image. For more instructions, see [Create and deploy Linux container images](deploying-linux-based-builds.md). If you've already uploaded a container image, it will appear in the __Image__ dropdown. To use it, select the image.

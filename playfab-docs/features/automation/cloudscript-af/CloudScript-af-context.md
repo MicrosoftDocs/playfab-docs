@@ -9,7 +9,7 @@ ms.prod: playfab
 keywords: playfab, automation, cloudscript, azure functions
 ms.localizationpriority: medium
 ---
-  
+
 # Tutorial: Using CloudScript context models
 PlayFab executes scripts through several mechanisms including execution through APIs, through scheduled tasks, through PlayStream events, and when a player enters and exits segments. In many cases, the context in which the script executes is important to how it runs. An example of this is knowing the Player ID of the player on whose behalf the script is being run. The context in which your script is run determines the available data model and provides context specific data that is used in your script.
 
@@ -23,7 +23,8 @@ In this tutorial, you learn how to:
 > * Use the context model when executing in the context of an Entity.
 
 ## Use the shared Title Authentication context model
-No matter the method for executing a script the Title Authentication context is always provided.  This includes the Title ID and Entity Token (see [GetEntityToken](/rest/api/playfab/authentication/authentication/get-entity-token?view=playfab-rest) for more details) used to execute the script.  Knowing this context allows you to make additional API calls in your script into PlayFab using the Server APIs.
+
+No matter the method for executing a script the Title Authentication context is always provided.  This includes the Title ID and Entity Token (see [GetEntityToken](/rest/api/playfab/authentication/authentication/get-entity-token) for more details) used to execute the script.  Knowing this context allows you to make additional API calls in your script into PlayFab using the Server APIs.
 
 ```C#
 // Shared models
@@ -35,7 +36,9 @@ public class TitleAuthenticationContext
 ```
 
 ## Use the context model when executing via the ExecuteFunction API
-When you use the the [ExecuteFunction API](/rest/api/playfab/cloudscript/server-side-cloud-script/execute-function?view=playfab-rest) to execute a script, the context that is provided includes the following information:
+
+When you use the [ExecuteFunction API](/rest/api/playfab/cloudscript/server-side-cloud-script/execute-function) to execute a script, the context that is provided includes the following information:
+
 * The Entity Profile of the caller
 * The Title Authentication Context
 * A boolean that indicates whether a PlayStream event is sent as part of the function being executed

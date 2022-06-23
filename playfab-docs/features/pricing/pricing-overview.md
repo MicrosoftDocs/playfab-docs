@@ -9,12 +9,12 @@ ms.prod: playfab
 keywords: playfab, pricing, transition, modern pricing, legacy pricing, base rate
 ms.localizationpriority: medium
 ---
-# PlayFab Pricing Overview
+# PlayFab pricing overview
 
 > [!WARNING]
 > PlayFab customers on the legacy pricing model (MAU based pricing) will need to update their account plans to the modern pricing model prior to **10/31/2020** at which time MAU based pricing will no longer be supported. **[Learn how to update your account](../pricing/transition.md)**.
 
-**Want to learn more about PlayFab pricing?** The following articles can help you understand PlayFab's pricing model, how to view your estimated bill, and how to manage account upgrades and titles launches through Game Manager. View the most up-to-date offers and prices at [PlayFab.com/Pricing](https://www.PlayFab.com/pricing).
+**Want to learn more about PlayFab pricing?** The following articles can help you understand PlayFab's pricing model, how to view your estimated bill, and how to manage account upgrades and titles launches through Game Manager. View the most up-to-date offers and prices at [PlayFab pricing](https://www.playfab.com/pricing).
 
 1. **[Billing Summary](../pricing/billingdetails.md):** View past and present estimated costs.
 

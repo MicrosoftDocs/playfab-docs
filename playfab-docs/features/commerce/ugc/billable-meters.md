@@ -12,13 +12,13 @@ ms.localizationpriority: medium
 
 # UGC Pricing Meters
 
-PlayFab User Generated Content has two categories of consumption-based meters - Requests and Storage. This page outlines and defines those meters, including how it is measured and calculated. For more information on PlayFab's pricing model, see [PlayFab Pricing Overview](../../pricing/pricing-overview.md).
+PlayFab User Generated Content has two categories of consumption-based meters - Requests and Storage. This page outlines and defines those meters, including how it is measured and calculated. For more information on PlayFab's pricing model, see the [PlayFab pricing overview](../../pricing/pricing-overview.md).
 
 > [!NOTE]
 > General usage of PlayFab UGC may contribute toward other PlayFab meters, like PlayStream Events.
 
-
 ## Requests
+
 The request meters are determined by the response size of any UGC API calls or CDN requests. For each of the three PlayFab plans, there are five different rates, depending on the size:
 
 ![UGC Requests Pricing](media/ugc-pricing-requests.png)
@@ -83,7 +83,7 @@ Let's also pretend this is the only title leveraging UGC in the studio, and the 
 
 ![Sample Bill](media/ugc-sample-monthly-bill.png)
 
-
 ## Additional resources
-* For the most up-to-date view of prices per meter, see [PlayFab.com/Pricing](https://playfab.com/pricing/)
+
+* For the most up-to-date view of prices per meter, see [PlayFab pricing](https://playfab.com/pricing/)
 * See [Consumption Best Practices](../../pricing/consumption-best-practices.md) to learn how to maintain the lowest rate of meter usage and cost for your game
