@@ -76,4 +76,4 @@ There are some studio and title limits associated with development mode:
 Unique Users are simply the total amount of player profiles you have in your title, which is different from MAU - you can delete player profiles through the Players page in Game Manager to reduce the total number of Unique Users if you are approaching the limit but aren't ready to launch your title
 
 > [!NOTE]
-> You can learn more about title limits at [PlayFab.com/Pricing](https://www.PlayFab.com/pricing) page.
+> You can learn more about title limits at [PlayFab pricing](https://www.playfab.com/pricing).

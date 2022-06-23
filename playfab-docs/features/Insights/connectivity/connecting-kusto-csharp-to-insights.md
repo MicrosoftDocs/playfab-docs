@@ -15,29 +15,36 @@ ms.localizationpriority: medium
 This guide helps you get started using the Kusto C# SDK along with Insights. After connecting, you can query your Insights from Azure functions. To learn more about other tools you can connect Insights with, see [Connecting external tools to Insights](index.md).
 
 ## Prerequisites
-* ### PlayFab account authenticated with AAD
-   You need a PlayFab account or user for which the authentication provider is set to Microsoft. The Microsoft authentication provider uses Azure Active Directory (AAD) for authentication which is required to use the Azure services. See [Azure Active Directory Authentication for Game Manager](../../authentication/aad-authentication/index.md) for instructions on creating an AAD-authenticated account or user. 
-   
-   To verify that the account, or user, is set to use the Microsoft authentication provider:
-   * Visit the PlayFab [log in page](https://developer.playfab.com/login).
-   * Use the the Sign in with Microsoft link to access your PlayFab account.
-   
-   If you can sign in, then the account is set to use the Microsoft authentication provider.
 
-* ### Game Manager permissions for Insights
-   You need to assign your account a [user role](https://docs.microsoft.com/gaming/playfab/features/config/gamemanager/playfab-user-roles) with the following Game Manager permissions enabled:
-   * Admin status.
-   * Access to the Explorer tab and associated data.
-   * Read and write access to Analytics data.
+### PlayFab account authenticated with AAD
 
-   You can either create a new user role or add these permissions to an existing role.
+You need a PlayFab account or user for which the authentication provider is set to Microsoft. The Microsoft authentication provider uses Azure Active Directory (AAD) for authentication which is required to use the Azure services. See [Azure Active Directory Authentication for Game Manager](../../authentication/aad-authentication/index.md) for instructions on creating an AAD-authenticated account or user.
 
-* ### Other prerequisites
-  *  [Create an Azure Active Directory (AAD) application and connect it to your title database](creating-AAD-app-for-insights.md)
+To verify that the account, or user, is set to use the Microsoft authentication provider:
+
+* Visit [developer.playfab.com](https://developer.playfab.com).
+* Select **Sign in with Microsoft** to access your PlayFab account.
+
+If you can sign in, then the account is set to use the Microsoft authentication provider.
+
+### Game Manager permissions for Insights
+
+You need to assign your account a [user role](../../../gamemanager/playfab-user-roles.md) with the following Game Manager permissions enabled:
+
+* Admin status.
+* Access to the Explorer tab and associated data.
+* Read and write access to Analytics data.
+
+You can either create a new user role or add these permissions to an existing role.
+
+### Other prerequisites
+
+* [Create an Azure Active Directory (AAD) application and connect it to your title database](creating-AAD-app-for-insights.md)
 
 ## Install packages
 
 1. Install the following NuGet packages:
+
    * Required: [Microsoft.Azure.Kusto.Data](https://www.nuget.org/packages/Microsoft.Azure.Kusto.Data/)
    * Optional: [Microsoft.Azure.Kusto.Ingest](https://www.nuget.org/packages/Microsoft.Azure.Kusto.Ingest/)
    * For more optional packages, see the [Kusto .NET SDK documentation](/azure/data-explorer/kusto/api/netfx/about-the-sdk)
@@ -130,5 +137,6 @@ namespace HelloPlayFabInsights
 ```
 
 ## Additional resources
+
 * [Azure Kusto .NET Samples](https://github.com/Azure/azure-kusto-samples-dotnet)
 * [Kusto client library documentation](/azure/data-explorer/kusto/api/netfx/about-kusto-data)

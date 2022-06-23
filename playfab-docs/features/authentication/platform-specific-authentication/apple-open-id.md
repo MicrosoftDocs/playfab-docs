@@ -37,21 +37,21 @@ Save the identifier where you can access it easily. You will use in the next set
 
 To setup the Apple Add-on in PlayFab:
 
-1. Log in to the [PlayFab Game Manager](https://developer.playfab.com/en-US/login).
+1. Sign in to [Game Manager](https://developer.playfab.com/en-US/login).
 2. Select your title from the My Studios and Titles page.
 3. In the **Add-ons** pane, select the **Apple** platform.
 4. To install the Apple add-on, select **Install Apple**.
 5. Set the **iOS App Bundle ID** to the App ID that your retrieved in the previous section.
 
-> [!NOTE]
-> At this point you need to choose whether you want to ignore the expiration date for identity tokens.  
+   > [!NOTE]
+   > At this point, you need to choose whether to ignore the expiration date for identity tokens.
 
-Your options are:
+   Your options are:
 
-- Ignore expiration dates: This provides a less secure, but better user experience.
-- Honor expiration dates: This provides a more secure experience at the expense of potentially causing the user sign in multiple times. Apple identity tokens currently expire after 10 minutes after which your Title must require the user to sign in again to obtain a new one.
+   - Ignore expiration dates: This provides a less secure, but better user experience.
+   - Honor expiration dates: This provides a more secure experience at the expense of potentially causing the user sign in multiple times. Apple identity tokens currently expire after 10 minutes after which your Title must require the user to sign in again to obtain a new one.
 
 6. Set the **Ignore expiration date for identity tokens** as appropriate for your chosen user experience.
 
-> [!TIP]
-> If you choose to ignore the expiration date for identity tokens, your Title should store the identity token that it obtains from Apple locally. The identity token will be reused to log in each time.
+   > [!TIP]
+   > If you choose to ignore the expiration date for identity tokens, your Title should store the identity token that it obtains from Apple locally. The identity token will be reused to log in each time.

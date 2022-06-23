@@ -28,11 +28,12 @@ The **Performance Level** slider is used to select a new performance level. The 
 Yes. Every titles begins at Performance Level 1, a free tier of service that is included in all PlayFab offerings. Live titles can change their performance level at will, however, titles in Development Mode must either enable paid insights features or launch to access performance levels greater than 1.
 
 To enable paid Insights features while a title is in development mode:
-1.	Log in to PlayFab.com
-2.	Select a title in Development Mode to enter the Title Overview page
-3.	Navigate to the "Data" tab on the left-hand side of the page
-4.	Navigate to the "Management (Preview)" tab on the top of the page
-5.	In the banner, select "Enable" to enable paid Insights features
+
+1. Sign in to [developer.playfab.com](https://developer.playfab.com)
+2. Select a title in Development Mode to enter the Title Overview page
+3. Navigate to the "Data" tab on the left-hand side of the page
+4. Navigate to the "Management (Preview)" tab on the top of the page
+5. In the banner, select "Enable" to enable paid Insights features
 
 If a payment method is missing from your account, you will need to add one in order to access paid Insights tiers. To do this, select "Add credit card" on the page's banner which will take you to the billing information page. Once a payment instrument is added, the Insights Management page will allow you to enable paid Insights features as described.
 
@@ -83,11 +84,10 @@ Paid titles are charged an overage fee of 1 Credit for every 2.7m (2,700,000) ex
 Event Archives allow customers to export all or some of their data on a regular schedule to Azure Blob or AWS S3. For more information, see [Exporting Data](export.md).
 
 ### *Credits Per Hour*
-Insights is billed per minute at the credits per hour rate (Credits Per Hour / 60). For more information about Insights Credit Pricing, see [PlayFab Pricing](https://playfab.com/pricing/).
+Insights is billed per minute at the credits per hour rate (Credits Per Hour / 60). For more information about Insights Credit Pricing, see [PlayFab pricing](https://playfab.com/pricing/).
 
 ## Retention
 ![Insights Retention](data-explorer/media/insights-retention.png)
-
 
 The retention setting allows a studio to set the total number of days data is kept. The default setting is 30 days, which fulfills most GDPR compliance regulations. Retention can be set globally or by table using [Management Commands](management-commands.md). Retention is charged at a rate of 50 credits per terabyte month, studios are only charged for what is in use by day. For more information about Insights Credit Pricing, see [Insights Credit Pricing](https://playfab.com/pricing/).
 

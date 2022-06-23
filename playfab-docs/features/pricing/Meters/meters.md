@@ -11,7 +11,9 @@ ms.localizationpriority: medium
 ---
 
 # Pricing Meters
-PlayFab's pricing is calculated from a set of consumption-based meters. This page outlines and defines the full set of PlayFab's pricing meters and how they are measured and calculated. For more information on PlayFab's pricing model, see [PlayFab Pricing Overview](../../pricing/pricing-overview.md).
+
+PlayFab's pricing is calculated from a set of consumption-based meters. This page outlines and defines the full set of PlayFab's pricing meters and how they are measured and calculated. For more information on PlayFab's pricing model, see the [PlayFab pricing overview](../../pricing/pricing-overview.md).
+
 > [!NOTE]
 > This page does not include Add-ons like Community Sift, Snowflake, or Photon, and is subject to change as new services and capabilities are added to PlayFab.
 
@@ -89,10 +91,9 @@ PlayFab Party is a low-latency chat and data communication solution for cross-pl
 * **Network Egress** This is data sent from PlayFab's relay and voice servers. This is congruent to the aggregate amount of data that players receive from the network.
 
 > [!NOTE]
-> Party Network Egress is metered and priced separately from Multiplayer Servers Network Egress. 
+> Party Network Egress is metered and priced separately from Multiplayer Servers Network Egress.
 
 ## Additional resources
-* For the most up-to-date view of prices per meter, see [PlayFab.com/Pricing](https://playfab.com/pricing/)
+
+* For the most up-to-date view of prices per meter, see [PlayFab pricing](https://playfab.com/pricing/)
 * See [Consumption Best Practices](../consumption-best-practices.md) to learn how to maintain the lowest rate of meter usage and cost for your game
-
-

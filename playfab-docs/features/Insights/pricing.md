@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 # Insights Pricing
 The total combined usage of Insights features are billed in a virtual currency called "Insights Credits". Insight Credits are derived from conversion rates for usage of each Insight services. 
 
-The Standard and Premium pricing plans include a number of free monthly Insights credits. If usage exceeds the number of free credits, any additional credits are billed at the rate specified on your plan. The Pay-as-you-go pricing plan does not include free credits, so each credit is billed at the rate specified in the plan. For more information on the number of free credits and additional credit rates included in each plan, see [PlayFab Pricing](http://playfab.com/pricing). 
+The Standard and Premium pricing plans include a number of free monthly Insights credits. If usage exceeds the number of free credits, any additional credits are billed at the rate specified on your plan. The Pay-as-you-go pricing plan does not include free credits, so each credit is billed at the rate specified in the plan. For more information on the number of free credits and additional credit rates included in each plan, see [PlayFab pricing](http://playfab.com/pricing).
 
 ## Insights Performance
 Each title is set to a chosen performance level that is billed to the minute (Insights Credits Per Hour / 60). The cost in credits for each performance level is located at the bottom of the table on the Insights Management page:

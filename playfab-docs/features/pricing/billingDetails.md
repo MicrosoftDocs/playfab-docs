@@ -33,7 +33,7 @@ To view the billing details page for your studio navigate to the My Studios and 
 4. **The Fine Print**
     * Only use the **Billing Summary** page as an estimate for your month-to-date charges. Some meters have a 48+ hour delay and the **Billing Summary** page does not include all chargeable items (For example, Add-ons). On the first of the current month, you can view the final estimate for the previous month's charges (excluding taxes and delayed meter charges), and on the second of the current month, you can view the first estimate for the current month's usage and costs.
 5. **.csv Download**
-   * You can download the **Billing Summary** view to .csv for further analysis. The "Download Summary" provides the same granularity as the **Billing Summary** page. The "Download daily" provides the the daily breakdown of usage.
+   * You can download the **Billing Summary** view to .csv for further analysis. The "Download Summary" provides the same granularity as the **Billing Summary** page. The "Download daily" provides the daily breakdown of usage.
    > [!NOTE]
    > As the storage meters are billed based off average consumption instead of total consumption, the data is represented differently. The first day of data contains the MTD average, and the remainder of the days are purposefully left blank.
 6. **Contact Information**
@@ -55,28 +55,27 @@ To view the billing details page for your studio navigate to the My Studios and 
 14. **Description**
     * Each meter provides a brief description in the billing summary page. You can find a  more detailed explanation of the meters in [meter documentation](../pricing/Meters/meters.md).
 
-
 ## Understanding the Base Rate
 
 **Base Rate:** The base rate is the standard, monthly rate for paid accounts.
 
 The base rate charge includes:
 
-1. **Meter usage** amounts that are specified at [Playfab.com/Pricing](https://www.PlayFab.com/pricing). Once meter usage across live titles associated to an account has surpassed the included amounts (above), an account's live title usage will be charged based on the meter rates found at [PlayFab.com/Pricing](https://www.PlayFab.com/pricing) (also listed under the "Rate" column on the Billing Summary page). These costs are referred to as "Pay-As-You-Go" charges.
+1. **Meter usage** amounts that are specified at [PlayFab pricing](https://www.playfab.com/pricing). Once meter usage across live titles associated to an account has surpassed the included amounts (above), an account's live title usage will be charged based on the meter rates found at [PlayFab pricing](https://www.playfab.com/pricing) (also listed under the "Rate" column on the Billing Summary page). These costs are referred to as "Pay-As-You-Go" charges.
 
-> [!NOTE]
-> Titles in [Development Mode](../pricing/development-mode.md) are not counted against included base rate usage.
+    > [!NOTE]
+    > Titles in [Development Mode](../pricing/development-mode.md) are not counted against included base rate usage.
 
 2. **[Technical support](../pricing/PaidTechnicalSupport.md)** that is determined by the [account level](../pricing/account-upgrades.md).
 
-
 ## Additional Section Definitions
 
-**Pay-As-You-Go Charges:** Pay-As-You-Go charges are the cost of individual meter usage per title in an account that exceed usage amounts that are part of the plan. The per-meter prices can be found at [Playfab.com/Pricing](https://www.PlayFab.com/pricing) or under the "Rate" column on the billing summary page.
+**Pay-As-You-Go Charges:** Pay-As-You-Go charges are the cost of individual meter usage per title in an account that exceed usage amounts that are part of the plan. The per-meter prices can be found at [PlayFab pricing](https://www.playfab.com/pricing) or under the "Rate" column on the billing summary page.
 
 **Additional Charges:** Additional charges include any charges not directly tied to the meter-usage pricing plan. For example, charges for MPS and Add-Ons may appear in the additional charges section.
 
-**Learn More**
+## Learn More
+
 > [Multiplayer Server Pricing](../multiplayer/servers/billing-for-thunderhead.md)
 >
 > [Party Pricing](../multiplayer/networking/pricing.md)
