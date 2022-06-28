@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Economy
 
-Making your economy work is one of the biggest challenges in games. You need to balance between what can be earned in game and what can be purchased, while supporting both highly engaged players and those with light engagements. You want to support different store placements and sales events based on player segments.
+Building a virtual economy is one of the biggest challenges in games. You need to balance between what can be earned in game and what can be purchased, while supporting both highly engaged players and those with light engagements. You want to support different store placements and sales events based on player segments.
 
 > [!NOTE]
 > You can learn more about the preview User Generated Content (UGC) service in the [User Generated Content](../ugc/index.md) documentation
