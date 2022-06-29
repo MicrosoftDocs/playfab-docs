@@ -28,15 +28,28 @@ Get started with the PlayFab REST API collection for Postman. Follow steps to in
 
 ### Adding PlayFab Collections
 
+- Create Workspace
+
+  > [!div class="mx-imgBorder"]
+  > ![Postman Select Create Workspace](./media/tutorials/postman-new-create-workspace.png "Postman Select Create Workspace")
+
+  > [!div class="mx-imgBorder"]
+  > ![Postman Create Workspace](./media/tutorials/postman-new-create-workspace2.png "Postman Create Workspace")
+
 - Select **Import** *(top left of the window)*
 
   > [!div class="mx-imgBorder"]
   > ![Postman Import](./media/tutorials/postman-new-import.png "Postman Import")
-- Select **Import From Link**
+
+- Select **Link**
 
   > [!div class="mx-imgBorder"]
-  > ![Postman Import From Link](./media/tutorials/postman-new-import-from-link.png "Postman Import From Link")
-- Paste the following link into the URL text box and select **Import**
+  > ![Postman Select Import From Link](./media/tutorials/postman-new-import-from-link.png "Postman Select Import From Link")
+
+  > [!div class="mx-imgBorder"]
+  > ![Postman Import From Link](./media/tutorials/postman-new-import-from-link2.png "Postman Import From Link")
+
+- Paste the following link into the URL text box and select **Continue** and **Import**
 
     https://raw.githubusercontent.com/PlayFab/PostmanCollection/master/playfabV2.json
 
@@ -45,7 +58,8 @@ Get started with the PlayFab REST API collection for Postman. Follow steps to in
 
     > [!div class="mx-imgBorder"]
     > ![Postman View Raw Beta JSON](./media/tutorials/postman-new-view-raw-beta.png "Postman View Raw Beta JSON")
-  - Copy the URL from the browser, paste the link into the URL text box and select **Import**
+  - Copy the URL from the browser, paste the link into the URL text box and select **Continue** and **Import**
+
 - You should now see the PlayFab Postman SDK under the Collections tab *(top left of the window)*
 
   > [!div class="mx-imgBorder"]
@@ -53,11 +67,11 @@ Get started with the PlayFab REST API collection for Postman. Follow steps to in
 
 ### Adding Environment Variables
 
-- Select **Manage Environments** *(cog icon at the top right of the window)*
+- Select **Environments** and **Create Environment** to create a new environment
 
   > [!div class="mx-imgBorder"]
   > ![Postman Manage Environments](./media/tutorials/postman-new-manage-environments.png "Postman Manage Environments")
-- Select **Add** to create a new environment
+
 - Name your environment - we recommend "[titleId] - Test Environment"
 
 > [!NOTE]
@@ -77,8 +91,8 @@ Get started with the PlayFab REST API collection for Postman. Follow steps to in
   > [!div class="mx-imgBorder"]
   > ![Postman Create Environment](./media/tutorials/postman-new-create-environment.png "Postman Create Environment")
 
-- When finished, select **Add** _(or Update)_ to save your new environment
-- Exit out of the **Manage Environment** window and select the environment dropdown to switch to your new environment *(top right of the window)*
+- When finished, select **Save** to save your new environment
+- Select the environment dropdown to switch to your new environment *(top right of the window)*
 
   > [!div class="mx-imgBorder"]
   > ![Postman Select Environment](./media/tutorials/postman-new-select-environment.png "Postman Select Environment")
@@ -94,7 +108,7 @@ One way to interact with PlayFab's [Entity Programming Model](../../features/dat
   > ![Postman Get Entity Token Header](./media/tutorials/postman-new-get-entity-token-header.png "Postman Get Entity Token Header")
 - Select **Send**
 - Set the returned entity token to your `EntityToken` environment variable
-  - In the response, highlight the `EntityToken` string (don't forget the '==')
+  - In the response, highlight the `EntityToken` string
   - Right-click and select **Set: [Environment]** for your new environment
   - Select **EntityToken**
   
@@ -115,6 +129,9 @@ Another way to interact with PlayFab's [Entity Programming Model](../../features
   - In the response, highlight the `EntityToken` string
   - Right-click and select **Set: [Environment]** for your new environment
   - Select **EntityToken**
+
+    > [!div class="mx-imgBorder"]
+    > ![Postman Get Title_Player_Account Entity Token](./media/tutorials/postman-new-get-title_player_account-entity-token.png "Postman Get Title_Player_Account Entity Token")
 
 ## Troubleshooting
 

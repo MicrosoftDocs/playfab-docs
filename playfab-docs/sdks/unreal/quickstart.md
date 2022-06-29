@@ -137,9 +137,10 @@ ALoginActor::ALoginActor()
 void ALoginActor::BeginPlay()
 {
     Super::BeginPlay();
-
+    
+    GetMutableDefault<UPlayFabRuntimeSettings>()->TitleId = TEXT("144");
+    
     clientAPI = IPlayFabModuleInterface::Get().GetClientAPI();
-    clientAPI->SetTitleId(TEXT("144"));
 
     PlayFab::ClientModels::FLoginWithCustomIDRequest request;
     request.CustomId = TEXT("GettingStartedGuide");
@@ -188,7 +189,7 @@ In Unreal Engine:
 
 ## Calling PlayFab from Unreal Blueprints
 
-This section guides you through creating a Blueprint structure, which uses the PlayFab API to call [LoginWithCustomID](/rest/api/playfab/client/authentication/login-with-custom-id?view=playfab-rest). Log in using `LoginWithCustomID` is easy to implement but is of limited usefulness in the scenario of a published Title. Before you launch your Title, see the [Login basics and best practices](../../features/authentication/login/login-basics-best-practices.md) for information about implementing robust log in functionality.
+This section guides you through creating a Blueprint structure, which uses the PlayFab API to call [LoginWithCustomID](/rest/api/playfab/client/authentication/login-with-custom-id?view=playfab-rest&preserve-view=true). Log in using `LoginWithCustomID` is easy to implement but is of limited usefulness in the scenario of a published Title. Before you launch your Title, see the [Login basics and best practices](../../features/authentication/login/login-basics-best-practices.md) for information about implementing robust log in functionality.
 
 > [!TIP]
 > If you start from a Blueprint project, you must convert it to a C++ project for the PlayFab Blueprint Actions to function.
@@ -197,7 +198,7 @@ This section guides you through creating a Blueprint structure, which uses the P
 
 In Unreal Engine, from the toolbar, select **Open Level Blueprint**.
 
-  ![Open level Blueprint](media/uemk-open-lv-bp.jpg)
+  ![example open blueprint level image](media/uemk-open-lv-bp.jpg)
 
 The EventGraph opens and is prepopulated with two Actions. `Event BeginPlay` and `Event Tick`. 
 
@@ -233,7 +234,7 @@ Create your Blueprint as follows:
 
 When you are finished your Blueprint will look similar to the following:
 
-  ![Open level Blueprint](media/blueprint-structure.png)
+  ![Opened Blueprint UI](media/blueprint-structure.png)
 
 **Save** the Blueprint, and close the Blueprint Editor window.
 
