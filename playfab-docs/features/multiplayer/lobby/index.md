@@ -11,9 +11,7 @@ ms.localizationpriority: medium
 ---
 
 # Azure PlayFab Lobby overview
-
-> [!IMPORTANT]
-> This feature is currently in public preview. It is provided to give you an early look at an upcoming feature, and to allow you to provide feedback while it is still in development. 
+ 
 
 Azure PlayFab Lobby is a service to create a temporary grouping mechanism for players to play games together. It's frequently used with matchmaking after finding people to play with.
 

@@ -12,9 +12,6 @@ ms.localizationpriority: medium
 
 # Create a lobby
 
-> [!IMPORTANT]
-> This feature is currently in public preview. It is provided to give you an early look at an upcoming feature, and to allow you to provide feedback while it is still in development. 
-
 This article explains how to create a lobby. 
 
 ## How are lobbies created?
