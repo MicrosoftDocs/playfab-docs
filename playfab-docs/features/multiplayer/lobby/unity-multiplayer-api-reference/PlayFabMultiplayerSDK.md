@@ -9,9 +9,7 @@ ms.date: 11/23/2021
 ---
 
 # PlayFabMultiplayerSDK assembly
-
-> [!IMPORTANT]
-> This feature is currently in public preview. It is provided to give you an early look at an upcoming feature, and to allow you to provide feedback while it is still in development. 
+ 
 
 ## PlayFab.Multiplayer namespace
 

@@ -11,9 +11,7 @@ ms.localizationpriority: medium
 ---
 
 # Joining lobbies and connection strings
-
-> [!IMPORTANT]
-> This feature is currently in public preview. It is provided to give you an early look at an upcoming feature, and to allow you to provide feedback while it is still in development. 
+ 
 
 Players join lobbies by providing the lobby service with a lobby's "connection string", an opaque identifier which grants membership to the lobby.
 

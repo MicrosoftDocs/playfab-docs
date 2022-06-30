@@ -11,9 +11,7 @@ ms.localizationpriority: medium
 ---
 
 # Use Lobby and Matchmaking Together
-
-> [!IMPORTANT]
-> This feature is currently in public preview. It is provided to give you an early look at an upcoming feature, and to allow you to provide feedback while it is still in development. 
+ 
 
 When designing multiplayer games, matchmaking and lobbies are often used together to help people form groups to play together. 
 

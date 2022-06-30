@@ -11,9 +11,7 @@ ms.localizationpriority: medium
 ---
 
 # Lobby properties
-
-> [!IMPORTANT]
-> This feature is currently in public preview. It is provided to give you an early look at an upcoming feature, and to allow you to provide feedback while it is still in development. 
+ 
 
 This article describes custom properties stored on the lobby. Use this functionality to store metadata about the game sessions that your lobby's represent.
 
