@@ -11,9 +11,7 @@ ms.localizationpriority: medium
 ---
 
 # Lobby API overview
-
-> [!IMPORTANT]
-> This feature is currently in public preview. It is provided to give you an early look at an upcoming feature, and to allow you to provide feedback while it is still in development. 
+ 
 
 > [!IMPORTANT]
 > This doc page is currently unlinked. It describes service APIs not yet intended to be called by customers.

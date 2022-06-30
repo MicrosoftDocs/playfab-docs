@@ -10,11 +10,6 @@ ms.date: 03/10/2022
 
 # StartOrRecoverSession
 
-> [!IMPORTANT]
-> This feature is currently in public preview. It is provided to give you an
-> early look at an upcoming feature, and to allow you to provide feedback while
-> it is still in development.
-
 > [!NOTE]
 > Using Lobby, Matchmaking, and real-time notifications directly with REST and
 > SignalR APIs is significantly more complex than using client SDKs such as the

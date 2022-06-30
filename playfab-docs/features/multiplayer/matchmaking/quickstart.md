@@ -10,10 +10,7 @@ keywords: playfab, multiplayer, servers
 ms.localizationpriority: medium
 ---
 
-# Matchmaking REST API quickstart
-
-> [!IMPORTANT]
-> This feature is currently in public preview. It is provided to give you an early look at an upcoming feature, and to allow you to provide feedback while it is still in development.  
+# Matchmaking REST API quickstart 
 
 This quickstart guide walks you through the entire process for integrating the matchmaking feature. All code examples within this quickstart are for Unity - however, the concepts and flow apply (in general) to other platforms as well.
 
