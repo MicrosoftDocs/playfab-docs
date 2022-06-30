@@ -11,9 +11,7 @@ ms.localizationpriority: medium
 ---
 
 # Find lobbies
-
-> [!IMPORTANT]
-> This feature is currently in public preview. It is provided to give you an early look at an upcoming feature, and to allow you to provide feedback while it is still in development. 
+ 
 
 It's often useful for titles to let players find lobbies that meet a particular set of criteria like map and difficulty level among other in-game qualities. This enables players to find the game sessions they want with the people they want.
 

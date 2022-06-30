@@ -10,9 +10,7 @@ keywords: playfab, multiplayer, lobby, matchmaking, unity, middleware
 ---
 
 # PlayFab Multiplayer Unity plugin overview
-
-> [!IMPORTANT]
-> This feature is currently in public preview. It is provided to give you an early look at an upcoming feature, and to allow you to provide feedback while it is still in development. 
+ 
 
 The PlayFab Multiplayer Unity SDK plugin is a Unity C# wrapper on top of a native PlayFabMultiplayer C++ library created for the convenience of Unity game developers.
 
