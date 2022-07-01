@@ -29,7 +29,7 @@ In this tutorial you learn how to:
   > [!NOTE]
   > The PlayFab Unity3D SDK supports Unity Editor version 5.3 (released December 2015) and higher.
 * A Unity Project * this can be any of the following:
-  * A brand new project. For more information, see [Starting Unity for the first time](https://docs.unity3d.com/Manual/GettingStarted.html).
+  * A brand new project. For more information, see [Starting Unity for the first time](https://docs.unity3d.com/550/Documentation/Manual/GettingStarted.html).
   * A guided tutorial project. For more information, see [Getting Started with Unity](https://learn.unity.com/).
   * An existing project.
 * The PlayFab [Unity3D SDK](../../../sdks/unity3d/index.md).

@@ -2,7 +2,7 @@
 title: GSDK Project Setup
 author: pgilmorepf
 description: Adding the GSDK to an Unreal Project
-ms.author: pagilmor
+ms.author: joanlee
 ms.date: 12/08/2021
 ms.topic: article
 ms.prod: playfab
@@ -33,7 +33,7 @@ We will add and configure the PlayFab Unreal GSDK to your project, and test it l
 * Download Unreal Engine Source Code. For instructions, see [Downloading Unreal Engine Source code (external)](https://docs.unrealengine.com/ProgrammingAndScripting/ProgrammingWithCPP/DownloadingSourceCode/).
 * A completed [ThirdPersonMP Example Project](third-person-mp-example-project-setup.md), or a project with similar capabilities
 * [PlayFab Unreal GSDK plugin](https://github.com/PlayFab/gsdk/tree/master/UnrealPlugin)
-* [Optional] [PlayFab Marketplace plugin](https://www.unrealengine.com/marketplace/product/playfab-sdk) or the [source version on GitHub](https://github.com/PlayFab/UnrealMarketplacePlugin/tree/master/PlayFabPlugin/PlayFab). This plugin is not required for GSDK but is required for many PlayFab services, including login.
+* [Optional] [PlayFab Marketplace plugin](https://www.unrealengine.com/marketplace/product/playfab-sdk) or the [source version on GitHub](https://github.com/PlayFab/UnrealMarketplacePlugin). This plugin is not required for GSDK but is required for many PlayFab services, including login.
 
 ## C++ Implementation
 

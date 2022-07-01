@@ -293,7 +293,7 @@ PlayFabClientAPI.PayForPurchase(new PayForPurchaseRequest() {
 
 However, in this case there is *no* convenient client application that sends the payment request to the player.
 
-With PayPal, you need to present the player with the PayPal interface, asking them to verify that they agree to the purchase. Behind the scenes, this process uses [PayPal Express Checkouts](https://developer.paypal.com/docs/classic/express-checkout/overview-ec/), though, because we’re taking care of all the details.
+With PayPal, you need to present the player with the PayPal interface, asking them to verify that they agree to the purchase. Behind the scenes, this process uses [PayPal Express Checkouts](https://developer.paypal.com/api/nvp-soap/set-express-checkout-nvp/), though, because we’re taking care of all the details.
 
 All you need to do is present the user with the Payment Confirmation page, which is returned to you as the `PurchaseConfirmationPageURL`.
 

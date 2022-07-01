@@ -39,4 +39,4 @@ To query the data in advanced mode
 
 To learn how to author custom queries, see the [Getting Started with Data Explorer advanced mode](getting-started-with-data-explorer-advanced.md) tutorial.
 
-To learn about how to assign roles for read and write data access, see [PlayFab User Roles](https://docs.microsoft.com/gaming/playfab/features/config/gamemanager/playfab-user-roles).
+To learn about how to assign roles for read and write data access, see [PlayFab User Roles](/gaming/playfab/gamemanager/playfab-user-roles).

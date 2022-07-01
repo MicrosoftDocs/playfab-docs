@@ -2,7 +2,7 @@
 title: GSDK Project Cloud Deployment
 author: pgilmorepf
 description: Deploying an Unreal GSDK Project to the Cloud
-ms.author: pagilmor
+ms.author: joanlee
 ms.date: 12/08/2021
 ms.topic: article
 ms.prod: playfab
@@ -49,7 +49,7 @@ This guide explains how to deploy your Windows server build to PlayFab Multiplay
 * Select and remember an output location {ShippingServerFolder}
 * You can now use this packaged version of your game-server to [test with LocalMultiplayerAgent](../../locally-debugging-game-servers-and-integration-with-playfab.md)
 * Once verified with LocalMultiplayerAgent, see [creating a build guide](../../deploying-playfab-multiplayer-server-builds.md)
-    * Testing on MPS at this point will require an intermediate tool from [PlayFab MpsAllocatorSample](https://github.com/PlayFab/MpsSamples/blob/master/MpsAllocatorSample/index.md)
+    * Testing on MPS at this point will require an intermediate tool from [PlayFab MpsAllocatorSample](https://github.com/PlayFab/MpsSamples/tree/main/MpsAllocatorSample)
     * This tool bypasses some client work for now, and allows us to allocate a server without a direct request from the game-client
     * The proper way to do this on a client is a separate topic covered in the [allocation guide](../../allocating-game-servers-and-configuring-vs-debugging-tools.md).
 * Zip your Shipping Server build from {ShippingServerFolder} above

@@ -37,7 +37,7 @@ Before you can call any PlayFab API, you must have a [PlayFab developer account]
 
 ## Finish and execute
 
-If you set up everything correctly, this page should work: <https://localhost/ExampleProject/gui.php>.
+If you set up everything correctly, this page should work: `<https://localhost/ExampleProject/gui.php>`.
 
 * Set your PlayFab **TitleId** at the top.
 * Select **Client**, and **LoginWithCustomID**.

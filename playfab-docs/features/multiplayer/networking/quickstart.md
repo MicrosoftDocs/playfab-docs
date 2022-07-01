@@ -26,9 +26,9 @@ Before you start this quickstart, perform any necessary platform-specific setup 
 
 2. [iOS prerequisites](ios-specific-requirements.md)
 
-3. [Nintendo Switch prerequisites](https://github.com/PlayFab/PlayFabPartySwitch/releases)
+<!--3. [Nintendo Switch prerequisites](https://github.com/PlayFab/PlayFabPartySwitch/releases)-->
 
-4. [Xbox XDK prerequisites](xbox-prerequisites.md)
+3. [Xbox XDK prerequisites](xbox-prerequisites.md)
 
 When you finish the platform-specific steps, continue with the rest of the steps in this topic to set up PlayFab Party.
 
