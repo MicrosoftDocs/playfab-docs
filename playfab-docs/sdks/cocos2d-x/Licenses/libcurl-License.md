@@ -57,9 +57,9 @@ addressed when the Modified BSD license was created, which does not have the ann
 
    (May be used for SSL/TLS support) As an OpenSSL fork, it has the same license as that.
 
-[c-ares](https://daniel.haxx.se/projects/c-ares/license.html)
+<!--[c-ares](https://daniel.haxx.se/projects/c-ares/license.html)
 
-   (Used for asynchronous name resolves) Uses an MIT license that is very liberal and imposes no restrictions on any other library or part you may link with.
+   (Used for asynchronous name resolves) Uses an MIT license that is very liberal and imposes no restrictions on any other library or part you may link with.-->
 
 [zlib](https://www.zlib.net/zlib_license.html)
 

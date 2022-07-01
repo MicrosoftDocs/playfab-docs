@@ -236,7 +236,7 @@ For more information, see the following links:
 
 [iOS/Android](https://github.com/PlayFab/PlayFabParty/releases)
 
-[Nintendo Switch](https://github.com/PlayFab/PlayFabPartySwitch/releases)
+<!--[Nintendo Switch](https://github.com/PlayFab/PlayFabPartySwitch/releases)-->
 
 
 ## 0.5.0-prerelease

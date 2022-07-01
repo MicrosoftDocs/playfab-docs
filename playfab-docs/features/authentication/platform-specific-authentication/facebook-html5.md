@@ -28,7 +28,7 @@ This tutorial is designed to guide you through PlayFab authentication using Face
 
 As part of the requirements to set up your PlayFab authentication,  you must have a server with a valid domain to follow. If you do not have a registered domain and remote web server yet, please follow our [Running an HTTP server for testing](running-an-http-server-for-testing.md) tutorial to run a local web server with a valid domain name.
 
-Throughout this guide, we will assume your domain is ['http://playfab.example'](http://playfab.example).
+Throughout this guide, we will assume your domain is `['http://playfab.example'](http://playfab.example)`.
 
 ## Registering a Facebook application
 

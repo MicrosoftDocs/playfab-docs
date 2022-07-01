@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 This tutorial guides you through the procedure for PlayFab authentication using the Universal Windows Platform (UWP).
 
 > [!IMPORTANT]
-> This procedure serves as a very basic introduction on how you can obtain all entities, and commit authentication via Windows Hello and PlayFab. For a more sophisticated example of Windows Hello and PlayFab authentication, consider our [UWPExample project](https://github.com/PlayFab/UWPExample).
+> This procedure serves as a very basic introduction on how you can obtain all entities, and commit authentication via Windows Hello and PlayFab. For a more sophisticated example of Windows Hello and PlayFab authentication, consider our `[UWPExample project](https://github.com/PlayFab/UWPExample)`.
 
 ## Requirements
 

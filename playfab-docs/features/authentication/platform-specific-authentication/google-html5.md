@@ -19,7 +19,7 @@ This tutorial guides you through the process of PlayFab authentication using Goo
 You will need:
 
 - A [Google account](https://google.com/) for testing.
-- A Registered [PlayFab](https://playfab.com/) title.
+- A Registered `[PlayFab](https://playfab.com/)` title.
 - Familiarity with [Login basics and Best Practices](../../authentication/login/login-basics-best-practices.md).
 - At the minimum, a server with a valid domain name to act as a static HTML file. Consult the [Running an HTTP server for testing](running-an-http-server-for-testing.md) tutorial for information on how to set one up.
 
@@ -27,7 +27,7 @@ You will need:
 
 This guide requires a server with a valid domain to follow. If you do not have a registered domain and remote web server yet, please follow our [Running an HTTP server for testing](running-an-http-server-for-testing.md) tutorial for information on how to set one to run a local web server with a valid domain name.
 
-Throughout this guide, we will assume your domain is [http://playfab.example](http://playfab.example).
+Throughout this guide, we will assume your domain is `[http://playfab.example](http://playfab.example)`.
 
 ## Registering a Google API project
 
@@ -65,7 +65,7 @@ Once the Project is created:
 
 1. Select **Web Application** as your **Application type**.
 2. Give your application a **Name**.
-3. Add your domain to **Authorized JavaScript origins**  - [PlayFab](http://playfab.example) in our case.
+3. Add your domain to **Authorized JavaScript origins**  - `[PlayFab](http://playfab.example)` in our case.
 4. Finally, select the **Create** button to commit your changes.
 
 ![Google API Manager create OAuth credentials](media/tutorials/google-html5/create-oauth-credentials.png)  
@@ -154,7 +154,7 @@ In this example, we show how to test using the classic access token approach. Us
 </html>
 ```
 
-Remember to open this page using your web server, and make sure to access this page using the URL you specified, while configuring Google Project, ([PlayFab](http://playfab.example) in our case).
+Remember to open this page using your web server, and make sure to access this page using the URL you specified, while configuring Google Project, (`[PlayFab](http://playfab.example)` in our case).
 
 1. Once the page opens, select **G Signed In**, and follow the general Google authentication flow.
 2. When this is finished, the script will try to authenticate on the PlayFab side and output the result.

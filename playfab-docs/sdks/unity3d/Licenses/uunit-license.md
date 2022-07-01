@@ -33,7 +33,7 @@ General Public License.
 
 ## UUnit
 
-https://wiki.unity3d.com/index.php?title=UUnit
+https://docs.unity3d.com/Manual/index.html
 
 
 Unity has a custom license and subscription, linked to their editor.
@@ -48,7 +48,7 @@ The PlayFab code can be examined with any text editor, but the project can only 
 
 Uunit Download location:
 
-https://wiki.unity3d.com/index.php?title=UUnit
+https://docs.unity3d.com/Manual/index.html
 
 License:
 
@@ -57,6 +57,6 @@ https://creativecommons.org/licenses/by-sa/3.0/
 > UUnit system from UnityCommunity  
 > Heavily modified  
 > 0.4 release by pboechat  
-> https://wiki.unity3d.com/index.php?title=UUnit  
+> https://docs.unity3d.com/Manual/index.html  
 > https://creativecommons.org/licenses/by-sa/3.0/  
 
