@@ -26,7 +26,7 @@ In this tutorial, based on our **Unicorn Battle Sample App**, we will grant a sp
 
 ## Prerequisites
 
-You will need to install the Unicorn Battle Sample App to run this tutorial. You can read more about it [in our blog](https://playfab.com/check-out-unicorn-battle/), or go directly to the [GitHub repository](https://github.com/PlayFab/UnicornBattle) and follow the instructions there.
+You will need to install the Unicorn Battle Sample App to run this tutorial. You can read more about it [in our blog](https://blog.playfab.com/blog/check-out-unicorn-battle), or go directly to the [GitHub repository](https://github.com/PlayFab/UnicornBattle) and follow the instructions there.
 
 ![Unicorn Battle - Launch Screen](media/tutorials/unicorn-battle-launch-screen.png)  
 

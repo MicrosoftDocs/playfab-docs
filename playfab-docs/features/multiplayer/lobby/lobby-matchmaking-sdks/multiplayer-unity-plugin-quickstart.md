@@ -27,7 +27,7 @@ This quickstart helps you make your first API calls using the PlayFab Multiplaye
 - An installed copy of the Unity Editor. To install Unity for personal use via Unity Hub, or Unity+ for professional use, see [Download Unity](https://unity3d.com/get-unity/download). Check on Unity support in documentation of your specific platform if needed. The minimum supported Unity version is Unity 2017 LTS.
 - A Unity Project – this can be any of the following:
 
-  - A brand new project: For more information, see [Starting Unity for the first time](https://docs.unity3d.com/Manual/GettingStarted.html).
+  - A brand new project: For more information, see [Starting Unity for the first time](/gaming/playfab/sdks/unity3d/quickstart).
   - A guided tutorial project. For more information, see [Getting Started with Unity](https://learn.unity.com/).
   - An existing project.
 

@@ -41,6 +41,7 @@ OnLocalXboxUserAddedToMPSD(
         DEBUGLOG("CreateLocalChatUser failed: %s\n", PartyXblManager::GetErrorMessage(err));
         return;
     }
+}
 ```
 
 At this point, if a PartyLocalChatControl already exists for the corresponding local xbox user, you can associate it with this PartyXblLocalChatUser via the SetCustomContext methods.
@@ -174,7 +175,7 @@ Per Xbox Live policies, titles must not allow communication over Xbox Live when 
     remoteChatUser->SetCustomContext(m_remotePartyChatControl);
 ```
 
-The Xbox Live helper library tracks the privacy and privilege settings for each remote chat user in relation to each local chat user by communicating with Xbox Live privacy services. Additionally, the library will listen for changes to these settings by subscribing to (Real-Time Activity)[https://docs.microsoft.com/gaming/xbox-live/real-time-activity-service/real-time-activity-service_nav] updates. When new remote chat users are added or when the privacy and privilege relationship between a local chat user and an existing remote chat user changes, a `PartyXblRequiredChatPermissionInfoChangedStateChange` will be generated to notify you that an updated `PartyChatPermissionOptions` value is now available.
+The Xbox Live helper library tracks the privacy and privilege settings for each remote chat user in relation to each local chat user by communicating with Xbox Live privacy services. Additionally, the library will listen for changes to these settings by subscribing to (Real-Time Activity)[/gaming/xbox-live/real-time-activity-service/real-time-activity-service_nav] updates. When new remote chat users are added or when the privacy and privilege relationship between a local chat user and an existing remote chat user changes, a `PartyXblRequiredChatPermissionInfoChangedStateChange` will be generated to notify you that an updated `PartyChatPermissionOptions` value is now available.
 
 ```cpp
     // Wait for PartyXblRequiredChatPermissionInfoChangedStateChange

@@ -41,7 +41,7 @@ The following APIs cause the Content & Configuration reads meter to increment.
 - [GetTradeStatus](/rest/api/playfab/client/trading/get-trade-status?view=playfab-rest)
     Gets the current status of an existing trade.
 
-- [GetWindowsHelloChallenge](https://docs.microsoft.com/rest/api/playfab/client/authentication/getwindowshellochallenge?view=playfab-rest)
+- [GetWindowsHelloChallenge](/gaming/playfab/features/authentication/platform-specific-authentication/uwp)
     Requests a challenge from the server to be signed by Windows Hello Passport service to authenticate.
 
 ## Data APIs

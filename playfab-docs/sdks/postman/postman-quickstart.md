@@ -53,7 +53,7 @@ Get started with the PlayFab REST API collection for Postman. Follow steps to in
 
     https://raw.githubusercontent.com/PlayFab/PostmanCollection/master/playfabV2.json
 
-  - If you are trying to download the beta SDK, go to the playfabV2.json file in the [Postman Beta GitHub repository](https://github.com/PlayFab/PostmanBeta/blob/master/playfabV2.json)
+  - If you are trying to download the beta SDK, go to the playfabV2.json file in the [Postman Beta GitHub repository](https://github.com/PlayFab/PostmanCollection/blob/master/playfabV2.json)
   - Select **View Raw**
 
     > [!div class="mx-imgBorder"]

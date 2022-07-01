@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 This tutorial takes you through three key points of integration between PlayFab and the Universal Windows Platform (UWP).
 
 > [!NOTE]
-> We have created a [GitHub repository](https://github.com/PlayFab/UWPExample) with sample code to illustrate how to integrate Universal Windows Platform with PlayFab.
+> We have created a `[GitHub repository](https://github.com/PlayFab/UWPExample)` with sample code to illustrate how to integrate Universal Windows Platform with PlayFab.
 
 Integrating the Universal Windows Platform (UWP) with PlayFab is very straightforward. There are really only three things you need to worry about:
 

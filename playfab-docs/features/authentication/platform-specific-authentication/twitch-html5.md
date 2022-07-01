@@ -31,7 +31,7 @@ Prior to beginning, you should have:
 This tutorial requires a web server, in order to follow the instructions. If you do not have a registered remote web server yet, please follow our [Running an HTTP server for testing](running-an-http-server-for-testing.md) tutorial, for information on how to run a local web server.
 
 >[!NOTE]
-> Throughout this tutorial, we will assume your domain is [http://localhost/](http://localhost/).
+> Throughout this tutorial, we will assume your domain is `[http://localhost/](http://localhost/)`.
 
 ## Registering a Twitch application
 
@@ -60,7 +60,7 @@ A page will open that lets you configure a new app.
 ![Twitch register your application](media/tutorials/twitch-html5/twitch-register-your-application.png)  
 
 > [!IMPORTANT]  
-> When testing using a local web server, Twitch allows you to use **<http://localhost>** as a redirect URL. Make sure to include the leading slash **/**. Without a leading slash, Twitch will fail to recognize the localhost URL.
+> When testing using a local web server, Twitch allows you to use `**<http://localhost>**` as a redirect URL. Make sure to include the leading slash **/**. Without a leading slash, Twitch will fail to recognize the localhost URL.
 
 Once the application is registered, the page will be updated and reveal the Client ID for your application.
 
@@ -162,7 +162,7 @@ Make sure to replace `TWITCH_CLIENT_ID_GOES_HERE` and `PLAYFAB_TITLE_ID_GOES_HER
 </html>
 ```
 
-1. Request the following file from your server, using the domain you set up during the Twitch application configuration <http://localhost> in our case.
+1. Request the following file from your server, using the domain you set up during the Twitch application configuration `<http://localhost>` in our case.
 
 2. Once the page opens, wait for the message indicating that the **Twitch SDK** was initialized.
 3. Then select the **Login with Twitch** button.

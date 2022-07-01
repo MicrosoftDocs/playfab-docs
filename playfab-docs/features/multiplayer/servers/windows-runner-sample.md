@@ -41,7 +41,7 @@ This tutorial lists the steps to get the sample set up ready for use with the Pl
 
 Describes how to get the PlayFab Multiplayer Game Server Build.
 
-* [Download the compiled version](https://github.com/PlayFab/gsdkSamples/releases/download/v1.0/winrunnerSample.zip) of the PlayFab Multiplayer Server Build for the Windows Runner sample. 
+* [PlayFab Game Server SDK](https://github.com/PlayFab/gsdk) of the PlayFab Multiplayer Server Build for the Windows Runner sample. 
 * If you prefer to build this on your own:
     * Get the [Windows Runner C# sample](https://github.com/PlayFab/MpsSamples/tree/master/WindowsRunnerCSharp) using standard Git methods or downloading this as a zip file.
     * Open the project using Visual Studio 2017 or later. This should automatically trigger dependencies like the latest [PlayFab Game Server SDK (GSDK) nuget package](https://www.nuget.org/packages/com.playfab.csharpgsdk) to be downloaded.

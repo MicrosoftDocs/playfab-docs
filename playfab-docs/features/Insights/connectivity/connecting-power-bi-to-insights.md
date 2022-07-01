@@ -17,7 +17,6 @@ This guide helps you get started using Power BI along with Insights. After conne
 ## Prerequisites
 
 ### PlayFab account authenticated with AAD
-
 You need a PlayFab account or user for which the authentication provider is set to Microsoft. The Microsoft authentication provider uses Azure Active Directory (AAD) for authentication which is required to use the Azure services. See [Azure Active Directory Authentication for Game Manager](../../authentication/aad-authentication/index.md) for instructions on creating an AAD-authenticated account or user.
 
 To verify that the account, or user, is set to use the Microsoft authentication provider:
