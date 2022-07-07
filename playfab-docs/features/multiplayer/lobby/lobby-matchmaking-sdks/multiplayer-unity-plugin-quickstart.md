@@ -274,7 +274,6 @@ This part of the guide shows you how to Create a matchmaking ticket. Please run 
     PFEntityKey remoteEntityKey = ...; // another PlayFab user's entity key
     string remoteUserAttributesJson = ...; // JSON string with another PlayFab user's attributes for matchmaking
 
-    PlayFabMultiplayer.OnMatchmakingTicketCompleted += PlayFabMultiplayer_OnMatchmakingTicketCompleted;
     PlayFabMultiplayer.OnMatchmakingTicketStatusChanged += PlayFabMultiplayer_OnMatchmakingTicketStatusChanged;
 
     List<MatchUser> localUsers = new List<MatchUser>();
@@ -297,10 +296,75 @@ This part of the guide shows you how to Create a matchmaking ticket. Please run 
         // Store and print matchmaking ticket
         Debug.Log(ticket.TicketId);
 
+        // Examine matchmaking ticket status
+        Debub.Log(ticket.Status)
+
         // Share matchmaking ticket with other clients taking part in matchmaking
 
         // Examine ticket
     }
+    ```
+
+3. Save and click Play in the Unity Editor.
+
+If membersToMatchWith is specified, one OnMatchmakingTicketStatusChanged event handler will be triggered and the Status will be WaitingForPlayers. In that case, once another client calls JoinMatchmakingTicketFromId a new OnMatchmakingTicketStatusChanged event handler will be triggered and the status this time will be WaitingForMatch.
+
+Alternatively, one OnMatchmakingTicketStatusChanged event handler will be triggered and the status will be WaitingForMatch.
+
+## Join a matchmaking ticket
+
+This part of the guide shows you how to join an existing matchmaking ticket that another client created. Please run it in conjunction with scenario "Create a matchmaking ticket" on another client above.
+
+1. Open the HelloMultiplayerLogic.cs  script. In the OnLoginSuccess method, add the following code to join a matchmaking ticket:
+
+    ```csharp
+    PFEntityKey entityKey = ...; // PlayFab user's entity key
+    string ticketId = ...; // Matchmaking ticket obtained from the client that created the ticket
+
+    PlayFabMultiplayer.OnMatchmakingTicketCompleted += PlayFabMultiplayer_OnMatchmakingTicketStatusChanged;
+
+    // Create JSON string with PlayFab user's attributes for matchmaking. This will need to be shared with other clients taking part in matchmaking
+    string uniqueId = System.Guid.NewGuid().ToString();
+    string userAttributesJson = "{\"MatchIdentifier\": \"" + uniqueId + "\"}";
+
+    PlayFabMultiplayer.JoinMatchmakingTicketFromId(
+        new MatchUser(entityKey, userAttributesJson),
+        ticketId,
+        "QuickMatchQueueName",
+        new List<PFEntityKey>());
+    ```
+
+2. To define the OnMatchmakingTicketStatusChanged event handler, add the following code to the class:
+
+    ```csharp
+    private void PlayFabMultiplayer_OnMatchmakingTicketStatusChanged(MatchmakingTicket ticket)
+    {
+        // Store and print matchmaking ticket
+        Debug.Log(ticket.TicketId);
+
+        // Examine matchmaking ticket status
+        Debub.Log(ticket.Status)
+
+        // Share matchmaking ticket with other clients taking part in matchmaking
+
+        // Examine ticket
+    }
+    ```
+
+3. Save and select Play in the Unity Editor.
+
+One OnMatchmakingTicketStatusChanged will be triggered with the Status being WaitingForMatch.
+
+##  Complete a matchmaking ticket
+
+This part of the guide shows you how matchmaking is completed. Please run it in conjunction with scenario "Create a matchmaking ticket" on another client above. Optionally, you can run it in conjuction with scenario "Join a matchmaking ticket".
+
+1. A match will be found once multiple tickets in the same queue are eligible to be matched. In that case,
+OnMatchmakingTicketCompleted event handler is triggered.
+
+2. Subscribe to OnMatchmakignTicketCompleted handler
+    ```csharp
+    PlayFabMultiplayer.OnMatchmakingTicketCompleted += PlayFabMultiplayer_OnMatchmakingTicketCompleted;
     ```
 
 3. To define the OnMatchmakingTicketCompleted event handler, add the following code to the class:
@@ -323,51 +387,3 @@ This part of the guide shows you how to Create a matchmaking ticket. Please run 
         }
     }
     ```
-
-4. Save and click Play in the Unity Editor. The string "Completed matchmaking ticket" displays in the Console window upon successful matchmaking.
-
-## Join a matchmaking ticket
-
-This part of the guide shows you how to join an existing matchmaking ticket that another client created. Please run it in conjunction with scenario "Create a matchmaking ticket" on another client above.
-
-1. Open the HelloMultiplayerLogic.cs  script. In the OnLoginSuccess method, add the following code to join a matchmaking ticket:
-
-    ```csharp
-    PFEntityKey entityKey = ...; // PlayFab user's entity key
-    string ticketId = ...; // Matchmaking ticket obtained from the client that created the ticket
-
-    PlayFabMultiplayer.OnMatchmakingTicketCompleted += PlayFabMultiplayer_OnMatchmakingTicketCompleted;
-
-    // Create JSON string with PlayFab user's attributes for matchmaking. This will need to be shared with other clients taking part in matchmaking
-    string uniqueId = System.Guid.NewGuid().ToString();
-    string userAttributesJson = "{\"MatchIdentifier\": \"" + uniqueId + "\"}";
-
-    PlayFabMultiplayer.JoinMatchmakingTicketFromId(
-        new MatchUser(entityKey, userAttributesJson),
-        ticketId,
-        "QuickMatchQueueName",
-        new List<PFEntityKey>());
-    ```
-
-2. To define the OnMatchmakingTicketCompleted event handler, add the following code to the class:
-
-    ```csharp
-    private void PlayFabMultiplayer_OnMatchmakingTicketCompleted(MatchmakingTicket ticket, int result)
-    {
-        if (LobbyError.SUCCEEDED(result))
-        {
-            // Successfully completed matchmaking ticket
-            Debug.Log("Completed matchmaking ticket");
-
-            // Examine matchmaking details
-            MatchmakingMatchDetails details = ticket.GetMatchDetails();
-        }
-        else
-        {
-            // Error completing a matchmaking ticket
-            Debug.Log("Error completing a matchmaking ticket");
-        }
-    }
-    ```
-
-3. Save and select Play in the Unity Editor. The string "Completed matchmaking ticket" displays in the Console window upon successful matchmaking.
