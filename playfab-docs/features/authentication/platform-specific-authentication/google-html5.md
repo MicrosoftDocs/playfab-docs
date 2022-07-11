@@ -129,7 +129,7 @@ In this example, we show how to test using the classic access token approach. Us
             // Execute LoginWithGoogleAccount API call using the access token. Please replace TitleID with your own.
             logLine("Attempting PlayFab Sign-in");
             PlayFabClientSDK.LoginWithGoogleAccount({
-                AccessToken: accessToken,
+                ServerAuthCode: accessToken,
                 CreateAccount : true,
                 TitleId: "YOUR_PLAYFAB_TITLE", // TODO: PUT YOUR TITLE ID HERE!
             }, onPlayFabResponse);
