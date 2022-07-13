@@ -12,6 +12,25 @@ ms.localizationpriority: medium
 
 # PlayFab Multiplayer C++ SDK release notes
 
+## 1.1.5
+
+July 13, 2022
+
+### Bug fixes
+
+- Fixed incorrect constant string values for PFLobbyMemberCountSearchKey and PFLobbyAmMemberSearchKey in the PFLobby.h header
+- Fixed bug which could cause `PFMultiplayerUninitialize()` to block indefinitely if a websocket had previously closed unexpectedly
+- Fixed bug which caused PubSub notifications to become unusable and Lobby/Matchmaking API operations to stall out indefinitely after an unexpected websocket disconnect
+
+## 1.1.4
+
+June 24, 2022
+
+### Bug fixes
+
+- GDK: Fixed a bug where operations involving network communication would silently fail if performed too soon following suspend/resume.
+- Fixed a bug where the SDK crashes when resuming execution after being broken into the debugger for 10+ seconds.
+
 ## 1.1.3
 
 June 10, 2022
