@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Title Data
 
-Title Data is a set of key/value pairs that you can use to manage configuration for your game remotely. You can set this data in Game Manager, or via [APIs](/rest/api/playfab/admin/title-wide-data-management?view=playfab-rest). This is commonly referred to as Primary Title Data. 
+Title Data is a set of key/value pairs that you can use to manage configuration for your game remotely. You can set this data in Game Manager, or via [APIs](/rest/api/playfab/admin/title-wide-data-management?view=playfab-rest&preserve-view=true). This is commonly referred to as Primary Title Data. 
 
 *Internal* Title Data is a special set of Title Data that cannot be accessed by clients directly, and can be used for storing configuration that is _only_ available to services you control.
 

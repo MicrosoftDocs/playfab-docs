@@ -1,7 +1,7 @@
 ---
 author: ScottMunroMS
 title: "PartyXblStateChange"
-description: "A generic, base structure representation of an event or change in state."
+description: "The PartyXblStateChange structure is a generic, base structure representation of an event or change in state."
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab

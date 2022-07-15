@@ -1,7 +1,7 @@
 ---
 author: ScottMunroMS
 title: "PartyXblManager::GetErrorMessage"
-description: Get the human-readable form of an error.
+description: The PartyXblManager::GetErrorMessage method gets the human-readable form of an error. These error messages are not localized.
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab

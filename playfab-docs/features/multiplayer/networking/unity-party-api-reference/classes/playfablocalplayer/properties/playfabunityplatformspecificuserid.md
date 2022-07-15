@@ -20,4 +20,4 @@ public string PlayFabLocalPlayer.PlatformSpecificUserId { get; }
 
 PlatformSpecificUserId
 
-[string](/dotnet/api/system.string?view=netcore-3.1)
+[string](/dotnet/api/system.string?view=netcore-3.1&preserve-view=true)

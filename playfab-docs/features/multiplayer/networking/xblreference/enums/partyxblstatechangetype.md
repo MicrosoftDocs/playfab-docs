@@ -1,7 +1,7 @@
 ---
 author: ScottMunroMS
 title: "PartyXblStateChangeType"
-description: "The types of state changes that can occur."
+description: "The PartyXblStateChangeType enumeration contains the types of state changes that can occur."
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab

@@ -37,7 +37,7 @@ Once you've provided a valid build definition, the build starts deploying. You'l
 
 To see more information about your build select the name of your build you would like to drill into. On the build page you can see your build status, ID, creation date, region with number of servers, and more information, as seen below. 
 
-![Basic build information along with region configuration for servers](VMBuildPage.png)
+![Basic build information along with region configuration for servers](../../multiplayer/servers/media/VMBuildPage.png)
 
 In order to see your servers, their status, and to easily request a server select the **Servers** tab at the top. To learn more read our documentation on [servers overview](build-server-overview.md)
 ![Servers overview page](media/build-server-overview.PNG)

@@ -21,15 +21,15 @@ PlayFab requires an Azure Active Directory (AD) app and a Client Secret to authe
 ## Setting up your resource in Azure
 
 ### Step 1: Create a new Azure AD app
-To create a new Azure AD App, follow the initial steps here: [Create an Azure AD application in Azure Data Explorer | Microsoft Docs](https://docs.microsoft.com/azure/data-explorer/provision-azure-ad-app#create-azure-ad-application-registration)
+To create a new Azure AD App, follow the initial steps here: [Create an Azure AD application in Azure Data Explorer | Microsoft Docs](/azure/data-explorer/provision-azure-ad-app#create-azure-ad-application-registration)
 
 ### Step 2: Create an ADX Database
 You also need to create an ADX Cluster and Database. You can follow the initial steps here:
-[Create an Azure Data Explorer cluster and database](https://docs.microsoft.com/azure/data-explorer/create-cluster-database-portal)
+[Create an Azure Data Explorer cluster and database](/azure/data-explorer/create-cluster-database-portal)
 
 ### Step 3: Grant the Azure AD app permission to use the ADX Database
 You can then grant the Azure AD app-admin permissions to the ADX database. Follow the initial steps here and when choosing your principals (users, groups, and apps) to use your Azure AD app (you can search for it by name in the search box).
-[Manage database permissions in Azure Data Explorer](https://docs.microsoft.com/azure/data-explorer/manage-database-permissions)
+[Manage database permissions in Azure Data Explorer](/azure/data-explorer/manage-database-permissions)
 
 Once your Azure AD app is listed as a “Database Admin”, you can move on to creating the data connection in PlayFab.
 
@@ -65,6 +65,6 @@ Once your Azure AD app is listed as a “Database Admin”, you can move on to c
 
 ### Step 3: Create and Share a Client Secret 
 
-Return to your Azure AD App’s “App Registration” to create a client secret. You can follow the steps here to create a new client secret for your app: [How to Create a New Application Secret](https://docs.microsoft.com/azure/active-directory/develop/howto-create-service-principal-portal#option-2-create-a-new-application-secret) 
+Return to your Azure AD App’s “App Registration” to create a client secret. You can follow the steps here to create a new client secret for your app: [How to Create a New Application Secret](/azure/active-directory/develop/howto-create-service-principal-portal#option-2-create-a-new-application-secret) 
 
 Paste the client secret Value into the “Client Secret” box and ensure the “Enabled” checkbox is checked. You can now click “Save”. After the data connection is successfully saved, you should be taken to a page that shows your new data connection with the Status “Enabled”. At this point your data connection is successfully set up. You should start to see events in your ADX cluster 5-10 minutes after the next event in your title occurs.

@@ -1,7 +1,7 @@
 ---
 author: ScottMunroMS
 title: "PartyXblStateChangeResult"
-description: "Results for operations that generate state changes."
+description: "The PartyXblStateChangeResult enumeration contains results for operations that generate state changes."
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab

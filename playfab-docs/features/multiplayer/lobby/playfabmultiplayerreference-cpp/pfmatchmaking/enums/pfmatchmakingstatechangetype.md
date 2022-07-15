@@ -1,7 +1,7 @@
 ---
 author: ScottMunroMS
 title: "PFMatchmakingStateChangeType"
-description: "The types of state changes that can occur."
+description: "PFMatchmakingStateChangeType represents the types of state changes that can occur in PFMatchmaking."
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab

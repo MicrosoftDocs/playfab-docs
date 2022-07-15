@@ -1,8 +1,8 @@
 ---
 title: Using Custom Tag to Customize Your Events
 author: xmcai2016
-description: 
-ms.author: carocai
+description: Learn about using custom tags to customize your events. Custom tags are a collection of key-value-pairs that studios can optionally include with an API request.
+ms.author: kevinasg
 ms.date: 01/11/2020
 ms.topic: article
 ms.prod: playfab
