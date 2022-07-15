@@ -1,7 +1,7 @@
 ---
 author: jdeweyMSFT
 title: "PartyAudioManipulationSinkStream::SetCustomContext"
-description: Configures an optional, custom pointer-sized context value with this stream object.
+description: The PartyAudioManipulationSinkStream::SetCustomContext method configures an optional, custom pointer-sized context value with this stream object.
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab

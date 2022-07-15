@@ -1,7 +1,7 @@
 ---
 author: jdeweyMSFT
 title: "PartyStateChange"
-description: "A generic, base structure representation of an event or change in state."
+description: "The PartyStateChange structure is a generic, base structure representation of an event or change in state."
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab

@@ -1,7 +1,7 @@
 ---
 author: jdeweyMSFT
 title: "PartyAudioManipulationSinkStream::GetCustomContext"
-description: Retrieves the app's private, custom pointer-sized context value previously associated with this stream object.
+description: The PartyAudioManipulationSinkStream::GetCustomContext method retrieves the app's private context value previously associated with this stream object.
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab

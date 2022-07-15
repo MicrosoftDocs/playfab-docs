@@ -1,7 +1,7 @@
 ---
 author: vicodex
 title: PlayFabMultiplayerManager.RemotePlayers
-description: Gets the collection of remote players currently joined to the network.
+description: The PlayFabMultiplayerManager.RemotePlayers method gets the collection of remote players currently joined to the network.
 ms.author: victorku
 ms.topic: reference
 ms.prod: playfab
@@ -20,4 +20,4 @@ public IList<PlayFabPlayer> PlayFabMultiplayerManager.RemotePlayers { get; }
 
 RemotePlayers
 
-[IList\<T>](/dotnet/api/system.collections.generic.ilist-1?view=netcore-3.1)
+[IList\<T>](/dotnet/api/system.collections.generic.ilist-1?view=netcore-3.1&preserve-view=true)
