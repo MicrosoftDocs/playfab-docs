@@ -102,7 +102,7 @@ To create a Linux container image, you would need a Dockerfile. A Dockerfile is 
 If you wish to use your Windows development device, you would need to install Windows Subsystem for Linux (WSL). Instructions are provided below. For more information, see [Windows and Linux container image differences](deploying-linux-based-builds.md#windows-and-linux-container-image-differences).
 
 1. [Set up your Windows development device](deploying-linux-based-builds.md#set-up-your-windows-development-device) (optional)
-2. [Get your PlayFab container registry login credentials](deploying-linux-based-builds.md#get-your-playfab-container-registry-login-credentials)
+2. [Get your PlayFab container registry login credentials](/gaming/playfab/features/multiplayer/servers/deploying-linux-based-builds#get-your-playfab-container-registry-login-credentials)
 3. Use existing/create your own Dockerfile
     This step is different depending if you are using FakeGame or your own game server.
     * If you're using FakeGame, check that you have the [Dockerfile](https://github.com/PlayFab/MpsSamples/blob/master/wrappingGsdk/Dockerfile)
