@@ -2,7 +2,7 @@
 title: Automation with PlayFab
 author: xmcai2016
 description: Learn how automation can be used for PlayFab services.
-ms.author: carocai
+ms.author: kevinasg
 ms.date: 04/27/2020
 ms.topic: article
 ms.prod: playfab

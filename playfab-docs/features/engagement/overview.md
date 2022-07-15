@@ -1,7 +1,7 @@
 ---
 title: PlayFab Engagement Overview
 author: shikha-tarware
-description: An overview of PlayFab Data offerings and features.
+description: Learn about an overview of PlayFab features. PlayFab Engagement is a set of tools to engage your player community and keeping them coming back for more.
 ms.author: shtarwar
 ms.date: 05/04/2020
 ms.topic: overview

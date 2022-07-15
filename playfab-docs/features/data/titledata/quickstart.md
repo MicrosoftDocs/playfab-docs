@@ -72,7 +72,7 @@ To add Primary Title Data using Game Manager to a title, perform the following s
 4.	In the new title data page, enter a value for the **Key** and a value for the **Value**. Both the **Key** and the **Value** are stored as strings.
 5.	Use the **Save** button to save the new data item.
 
-![Title Data](media/tutorials/title-data-new-title-data.PNG "New Title Data")
+![Screenshot shows new title data.](media/tutorials/title-data-new-title-data.PNG "New Title Data")
 
 ![Screenshot of Title data](media/tutorials/title-data-add-primary-title-data.PNG "Set Title Data")
 
@@ -111,11 +111,11 @@ To add overrides to the primary title data, perform the following steps.
 If the player belongs to an experiment variant which contain title data overrides, the overrides are applied automatically on server side and returned with the title data on client side.
 > Title Data Override values may take up to one minute to refresh and persist. 
 
-![Title Data](media/tutorials/new-title-data-override.PNG "New Title Data Override")
+![Screenshot shows new title data override.](media/tutorials/new-title-data-override.PNG "New Title Data Override")
 
-![Title Data](media/tutorials/set-title-data-override.PNG "Set New Title Data Override")
+![Screenshot shows how to set ne title data override.](media/tutorials/set-title-data-override.PNG "Set New Title Data Override")
 
-![Title Data](media/tutorials/title-data-landing.PNG "Title Data and Override")
+![Screenshot shows title data and override.](media/tutorials/title-data-landing.PNG "Title Data and Override")
 
 ## Internal title data
 

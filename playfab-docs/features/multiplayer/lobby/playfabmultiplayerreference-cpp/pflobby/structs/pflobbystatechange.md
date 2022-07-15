@@ -1,7 +1,7 @@
 ---
 author: ScottMunroMS
 title: "PFLobbyStateChange"
-description: "A generic, base structure representation of an event or change in state."
+description: "PFLobbyStateChange represents a generic, base structure representation of an event or change in state in PFLobby."
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab

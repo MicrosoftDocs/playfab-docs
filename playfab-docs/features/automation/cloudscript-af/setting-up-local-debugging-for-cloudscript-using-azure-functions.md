@@ -1,7 +1,7 @@
 ---
 title: Debugging CloudScript using Azure Functions with the Azure portal
 author: williacj
-description: Debugging CloudScript using Azure Functions with the Azure portal
+description: Learn about debugging CloudScript using Azure Functions with the Azure portal in this multi-step process.
 ms.author: cjwill
 ms.date: 02/10/2020
 ms.topic: tutorial

@@ -2,7 +2,7 @@
 title: Matchmaking quickstart - client SDK
 author: sardavi
 description: Quickstart which demonstrates a matchmaking flow using the client SDK
-ms.author: sardavi
+ms.author: kevinasg
 ms.date: 12/06/2021
 ms.topic: article
 ms.prod: playfab
