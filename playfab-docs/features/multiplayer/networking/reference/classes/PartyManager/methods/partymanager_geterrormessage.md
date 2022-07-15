@@ -1,7 +1,7 @@
 ---
 author: jdeweyMSFT
 title: "PartyManager::GetErrorMessage"
-description: Get the human-readable form of an error.
+description: The PartyManager::GetErrorMessage method retrieves the human-readable form of an error. These error messages are not localized.
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab

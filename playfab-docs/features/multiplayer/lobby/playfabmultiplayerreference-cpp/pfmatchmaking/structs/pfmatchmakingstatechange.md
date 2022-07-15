@@ -1,7 +1,7 @@
 ---
 author: ScottMunroMS
 title: "PFMatchmakingStateChange"
-description: "A generic, base structure representation of an event or change in state."
+description: "PFMatchmakingStateChange represents a generic, base structure representation of an event or change in state."
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab

@@ -1,7 +1,7 @@
 ---
 author: jdeweyMSFT
 title: "PartyStateChangeType"
-description: "The types of state changes that can occur."
+description: "The PartyStateChangeType enumeration contains the types of state changes that can occur. (Header: Party.h)"
 ms.author: jdewey
 ms.topic: reference
 ms.prod: playfab

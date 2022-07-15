@@ -2,7 +2,7 @@
 title: Using text moderation
 description: Information on how to use PlayFab Party's text moderation feature
 author: sardavi
-ms.author: sardavi
+ms.author: kevinasg
 ms.date: 2/12/2020
 ms.topic: article
 ms.prod: playfab

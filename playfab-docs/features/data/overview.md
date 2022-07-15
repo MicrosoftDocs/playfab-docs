@@ -1,7 +1,7 @@
 ---
 title: PlayFab Data Overview
 author: shikha-tarware
-description: An overview of PlayFab Data offerings and features.
+description: Learn about an overview of PlayFab Data offerings and features. PlayFab Data is a set of tools for data analytics, storage, processing, and exports.
 ms.author: shtarwar
 ms.date: 05/04/2020
 ms.topic: overview
