@@ -61,7 +61,7 @@ NOTE: Replace ```ThirdPersonMP``` with your project name if necessary.
   "LastStateTransitionTime": "2021-12-06T22:12:46.212Z",
   "Ports": [
     {
-      "Name": "UnrealServerGsdkHostPort",
+      "Name": "gsdkport",
       "Num": 30000,
       "Protocol": "UDP"
     }

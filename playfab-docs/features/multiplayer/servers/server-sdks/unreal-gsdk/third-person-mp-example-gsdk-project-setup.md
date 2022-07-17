@@ -282,7 +282,8 @@ void UMyGameInstance::OnGSDKShutdown()
 
 bool UMyGameInstance::OnGSDKHealthCheck()
 {
-    UE_LOG(LogPlayFabGSDKGameInstance, Warning, TEXT("Healthy!"));
+    // Uncomment the next line if you want your server to log something at every heartbeat for sanity check.
+    /* UE_LOG(LogPlayFabGSDKGameInstance, Warning, TEXT("Healthy!")); */
     return true;
 }
 
