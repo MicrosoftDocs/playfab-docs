@@ -2,7 +2,7 @@
 title: PlayFab Party Pricing
 description: Provides the updated pricing for Party services
 author: xmcai2016
-ms.author: carocai
+ms.author: chpalm
 ms.date: 10/13/2020
 ms.topic: article
 ms.prod: playfab

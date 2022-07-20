@@ -43,7 +43,7 @@ documentation](https://github.com/dotnet/aspnetcore/blob/main/src/SignalR/docs/s
 >    in `...playfabapi.com/pubsub`).
 > 1. The auth headers required to call this API can be passed to the SignalR
 >    client via `HttpConnectionOptions` as [seen on this
->    method](https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.signalr.client.hubconnectionbuilderhttpextensions.withurl#microsoft-aspnetcore-signalr-client-hubconnectionbuilderhttpextensions-withurl(microsoft-aspnetcore-signalr-client-ihubconnectionbuilder-system-string-system-action((microsoft-aspnetcore-http-connections-client-httpconnectionoptions)))).
+>    method](/dotnet/api/microsoft.aspnetcore.signalr.client.hubconnectionbuilderhttpextensions.withurl#microsoft-aspnetcore-signalr-client-hubconnectionbuilderhttpextensions-withurl(microsoft-aspnetcore-signalr-client-ihubconnectionbuilder-system-string-system-action((microsoft-aspnetcore-http-connections-client-httpconnectionoptions)))).
 > 1. The only encoding the hub currently supports is [JSON
 >    encoding](https://github.com/dotnet/aspnetcore/blob/main/src/SignalR/docs/specs/HubProtocol.md#json-encoding).
 
