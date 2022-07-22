@@ -142,6 +142,10 @@ In the Unreal Editor:
 
 #### Modify the GameInstance class
 
+Depending on the setup of your project, you can modify the GameInstance class using C++ or Blueprints. Both ways are presented below, you should select the one that fits your needs.
+
+#### C++ implementation
+
 Locate your GameInstance class, which is most likely called something similar to {ProjectName}GameInstance or MyGameInstance. From now on, your GameInstance class will be denoted with [YourGameInstanceClassName].
 
 ##### Modify the GameInstance header file
@@ -309,9 +313,9 @@ void UThirdPersonGameInstance::OnGSDKReadyForPlayers()
 }
 ```
 
-## Blueprint implementation
+#### Blueprint implementation
 
-This part is only needed if you have decided to proceed with the Blueprint implementation and not with the pure C++ implementation. Some of the nodes presented below are outdated. We advise users who prefer the Blueprint implementation to consult the C++ implementation for the nodes that will be required.
+This part is only needed if you have decided to proceed with the Blueprint implementation and not with the pure C++ implementation.
 
 * Observe the Content Browser window in the Unreal Editor
 * Pick or create a folder to contain new Blueprints
@@ -330,7 +334,10 @@ This part is only needed if you have decided to proceed with the Blueprint imple
 * In the function, make sure the return boolean value is checked.
 * ![PlayFab GSDK Health Check function](media/BlueprintGSDKHealthCheckFunction.png)
 * Don't forget to connect all the nodes to the Event Init node.
-* Add "Ready for Players" to be able to react to the ready signal of PlayFab.
+* In the end add the "ReadyforPlayers" node to be able to react to the ready signal of PlayFab.
+* Also, dont forget to add the "SetDefaultServerHostPort" node to connect to the port that GSDK expects.
+* For every GSDK function / node that you want to add in your Blueprint, you can verify that it exists by typing the first letters of the name of the function in your new node and seeing the expected GSDK function show up in the suggestions.
+* In the end, your Blueprint should be similar to the one presented in the image below.
 * ![PlayFab GSDK Full Graph](media/BlueprintFullGraph.png)
 
 ## Set the GameInstance class
