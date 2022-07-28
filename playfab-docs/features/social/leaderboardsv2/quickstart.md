@@ -2,7 +2,7 @@
 title: Leaderboards v2 quickstart
 author: xmcai2016
 description: Quickstart for Leaderboards v2.
-ms.author: carocai
+ms.author: joanlee
 ms.date: 10/14/2019
 ms.topic: article
 ms.prod: playfab

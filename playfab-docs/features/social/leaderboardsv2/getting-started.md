@@ -1,8 +1,8 @@
 ---
 title: Leaderboards v2 Tutorials
 author: xmcai2016
-description: Tutorials for Leaderboards v2.
-ms.author: carocai
+description: Learn how to use specific private static void methods in Java to view and delete statistics in Leaderboards v2.
+ms.author: joanlee
 ms.date: 10/18/2019
 ms.topic: article
 ms.prod: playfab

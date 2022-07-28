@@ -64,6 +64,9 @@ Now we will connect the Azure app to your title database.
    * **Analytics data read access**, to run queries and simple management commands.
    * **Analytics data write access**, to create/drop tables, alter retention policy, ingest data, purge.
 
+> [!NOTE] 
+> Changing the roles for the application is only possible through **Roles -> Edit Role Members** Menu if you don't want to assign an email address to your application 
+
    ![Connectivity Custom Role](media/connectivity-cutom-role.png)
 
    ## Next steps

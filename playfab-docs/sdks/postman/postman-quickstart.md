@@ -151,6 +151,6 @@ You now have an entity token to pass into other API calls to start setting up yo
 > [!div class="nextstepaction"]
 > [Getting Started: Developers >](../../personas/developer.md)
 > [!div class="nextstepaction"]
-> [PlayFab Quickstarts >](../../index.yml#pivot=documentation&panel=quickstarts)
+> [PlayFab Quickstarts >](/gaming/playfab/gamemanager/quickstart)
 > [!div class="nextstepaction"]
 > [API References >](../../api-references/index.md)
