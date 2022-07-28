@@ -100,10 +100,10 @@ At this point, you are ready to push your docker image in the PlayFab Azure Cont
 * Back on the PlayFab website, under the Server Details on the New Build page, click Refresh next to Container image.
 * Click the arrow button and you should be able to see and select the docker image you uploaded and the respective tag.
 * In the Regions block, select a region close to you, and set both Standby and Max to 1 (just for testing)
-* In the Network block, set the Port Name field to ```UnrealServerGsdkHostPort```
+* In the Network block, set the Port Name field to ```gameport```
     * It's mandatory to define the port that will be used to connect to your game-server
     * Unreal GSDK contains code to read this port automatically, and internally override the Unreal Server host port according to this value
-    * The name of this port is required to be ```UnrealServerGsdkHostPort```
+    * The name of this port is required to be ```gameport```
 * Select **Add Build**, and wait for your build status to become **Deployed**
 
 ## Next steps

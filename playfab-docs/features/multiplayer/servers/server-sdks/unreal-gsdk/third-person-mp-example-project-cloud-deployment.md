@@ -74,10 +74,10 @@ This section will cover creating a build in PlayFab MPS, uploading your game-ser
     * If you're re-launching, you can select __Use existing assets__
 * Wait for the upload to complete
 * Skip __Start Command__ for now (covered in the next step)
-* In the Network block, set the Port Name field to ```UnrealServerGsdkHostPort```
+* In the Network block, set the Port Name field to ```gameport```
     * It's mandatory to define the port that will be used to connect to your game-server
     * Unreal GSDK contains code to read this port automatically, and internally override the Unreal Server host port according to this value
-    * The name of this port is required to be ```UnrealServerGsdkHostPort```
+    * The name of this port is required to be ```gameport```
 * Continue to the next step that matches the "Server Details" that you want to configure
 
 #### Option 1: Windows Process Mode

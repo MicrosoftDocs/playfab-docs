@@ -99,19 +99,19 @@ landingContent:
           - text: Entities Key terms and migration information
             url: entities/migration-information.md
                                    
-  - title: Data Connections
+  - title: Data connections
     linkLists:
       - linkListType: overview
         links:
-          - text: Take control of your data in your storage account with Data Connections
+          - text: Take control of your data in your storage account with Data connections
             url: dataconnections/index.md
       - linkListType: quickstart
         links:
-          - text:  Get started with Data Connections
+          - text:  Get started with Data connections
             url: dataconnections/quickstart.md 
-          - text:  Azure Blob Data Connection
+          - text:  Azure Blob Data connection
             url: dataconnections/data-connection-azure-blob.md 
-          - text:  ADX Data Connection
+          - text:  ADX Data connection
             url: dataconnections/data-connection-adx.md 
             
   - title: Webhooks

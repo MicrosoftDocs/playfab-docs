@@ -1,8 +1,8 @@
 ---
 title: Tutorials for Leaderboards v2
 author: xmcai2016
-description: Tutorials for Leaderboards v2.
-ms.author: carocai
+description: This topic provides a list of tutorials, including getting started and child leaderboard tutorials, for Leaderboards v2.
+ms.author: joanlee
 ms.date: 10/18/2019
 ms.topic: article
 ms.prod: playfab

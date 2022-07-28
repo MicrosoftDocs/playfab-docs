@@ -2,7 +2,7 @@
 title: Android Studio Project (Java) SDK
 author: mawillia
 description: Landing page for the PlayFab Android Studio Project in Java.
-ms.author: mawillia
+ms.author: joanlee
 ms.date: 01/22/2019
 ms.topic: article
 ms.prod: playfab
