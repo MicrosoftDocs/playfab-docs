@@ -48,7 +48,7 @@ To recognize Xbox users, you should build mappings between PlayFab Entity IDs an
 
 In addition to providing the Party network's roster, MPSD documents also drive many multiplayer experiences in the Xbox multiplayer ecosystem such as matchmaking, platform invites, recent player lists, and join-in-progress. For more information on how to incorporate Party networks into these MPSD flows, see [Using PlayFab Party with MPSD](using-mpsd.md).
 
-For more information on MPSD features, see [its overview documentation](/gaming/xbox-live/features/multiplayer/mpsd/live-mpsd-overview).
+For more information, see [MPSD overview](/gaming/gdk/_content/gc/live/features/multiplayer/mpsd/live-mpsd-overview).
 
 > [!IMPORTANT]
 > This section provides best practices when using PlayFab Party together with MPSD, but PlayFab Party itself does not implicitly satisfy the MPSD requirements of [XR-067](https://developer.microsoft.com/games/xbox/docs/gdk/xr067). Refer to the [XR-067](https://developer.microsoft.com/games/xbox/docs/gdk/xr067) technical documentation for information on satisfying these requirements.
