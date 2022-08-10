@@ -1,20 +1,20 @@
 ---
-title: "Setup Sign In with Apple for PlayFab"
-description: "How to setup Sign In with Apple in PlayFab."
-author: DanBehrendt
-ms.author: joanlee
-ms.date: 02/25/2020
+title: "Set up Sign In with Apple for PlayFab"
+description: "How to set up Sign In with Apple in PlayFab."
+author: antnguyen89
+ms.author: antnguyen
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: playfab
 keywords: playfab, OpenID, Apple, Auth 2.0
 ms.localizationpriority: medium
 ---
 
-# Setup Sign In with Apple for PlayFab
+# Set up Sign In with Apple for PlayFab
 
-This guide covers the series of steps needed to setup your PlayFab applications to take advantage of Sign in with Apple.
+This guide covers the series of steps needed to set up your PlayFab applications to take advantage of Sign in with Apple.
 
-## Setup your Application Identifier
+## Set up your Application Identifier
 
 Before you can use Sign in with Apple in your applications, you'll need to address some setup steps in the [Certificates, Identifiers & Profiles](https://developer.apple.com/account/resources/certificates/list) section of Apple's developer portal.
 
@@ -28,27 +28,27 @@ Before you can use Sign in with Apple in your applications, you'll need to addre
 5. Press **Continue** or **Save** on the **Sign in with Apple** setup popup.
 6. Ensure you fully create and update your application identifier.
 
-Save the identifier where you can access it easily. You will use in the next set of steps.
+Save the identifier where you can access it easily. You'll use in the next set of steps.
 
 > [!IMPORTANT]
 > PlayFab only supports Sign in with Apple from IoS or MacOS Titles.
 
-## Setup the Apple Add-on in PlayFab
+## Set up the Apple Add-on in PlayFab
 
-To setup the Apple Add-on in PlayFab:
+To set up the Apple Add-on in PlayFab:
 
 1. Sign in to [Game Manager](https://developer.playfab.com/en-US/login).
 2. Select your title from the My Studios and Titles page.
 3. In the **Add-ons** pane, select the **Apple** platform.
 4. To install the Apple add-on, select **Install Apple**.
-5. Set the **iOS App Bundle ID** to the App ID that your retrieved in the previous section.
+5. Set the **iOS App Bundle ID** to the App ID that you retrieved in the previous section.
 
    > [!NOTE]
    > At this point, you need to choose whether to ignore the expiration date for identity tokens.
 
    Your options are:
 
-   - Ignore expiration dates: This provides a less secure, but better user experience.
+   - Ignore expiration dates: This provides a less secure, but better user experience. However, if Apple rotates the signing key, then expired identity tokens can no longer be validated. In this case, users have to sign in to provide a fresh identity token.
    - Honor expiration dates: This provides a more secure experience at the expense of potentially causing the user sign in multiple times. Apple identity tokens currently expire after 10 minutes after which your Title must require the user to sign in again to obtain a new one.
 
 6. Set the **Ignore expiration date for identity tokens** as appropriate for your chosen user experience.
