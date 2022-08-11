@@ -535,3 +535,5 @@
     href: enums/partyworkmode.md
 - name: Typedefs
   href: typedefs.md
+- name: Error Codes
+  href: errors.md
