@@ -1,6 +1,6 @@
 ---
 author: fschober-atg
-title: "PlayFab Party Errors"
+title: "PlayFab Party Error Codes"
 description: Error codes used by PlayFab Party APIs
 ms.author: fschober
 ms.topic: reference
