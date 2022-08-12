@@ -198,3 +198,5 @@
   items:
   - name: PFEntityKey - Client SDK
     href: pfmultiplayer\pfentitykey_clientsdk.md
+- name: Error Codes
+  href: pfmlerrors.md
