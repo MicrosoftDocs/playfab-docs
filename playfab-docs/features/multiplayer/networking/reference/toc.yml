@@ -536,4 +536,4 @@
 - name: Typedefs
   href: typedefs.md
 - name: Error Codes
-  href: errors.md
+  href: partyerrors.md

@@ -108,4 +108,4 @@
 - name: Typedefs
   href: xbltypedefs.md
 - name: Error Codes
-  href: xblerrors.md
+  href: partyxblerrors.md
