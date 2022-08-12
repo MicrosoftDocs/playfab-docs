@@ -1,15 +1,15 @@
 ---
 author: fschober-atg
-title: "PlayFab Multiplayer, Lobby and Matchmaking Error Codes"
-description: "Error codes used by the PlayFab Multiplayer, Lobby and Matchmaking APIs"
+title: "PlayFab Multiplayer Client SDK HRESULT Error Codes"
+description: "HRESULT Error codes used by the PlayFab Multiplayer, Lobby and Matchmaking APIs"
 ms.author: fschober
 ms.topic: reference
 ms.prod: playfab
 ms.date: 08/11/2022
 ---
 
-# PlayFab Multiplayer, Lobby and Matchmaking Error Codes
-The following error codes are used by the PlayFab Multiplayer, Lobby and Matchmaking APIs:
+# PlayFab Multiplayer Client SDK HRESULT Error Codes
+The following HRESULT error codes are used by the PlayFab Multiplayer, Lobby and Matchmaking APIs:
 
 ## Global
 
