@@ -14,6 +14,12 @@ ms.localizationpriority: medium
 
 PlayFab Party had a significant (up to 90%) price drop on 10/13/2020. You can view the updated Party rates on the [Pricing page](https://playfab.com/pricing). For more information about the price drop, see our [blog post](https://blog.playfab.com/blog/starting-today-save-up-to-90-using-playfab-party).
 
+## 1.7.14
+August 12, 2022
+### New SDKs for Linux and MacOS
+
+- Added native support for PlayFab Party on Linux and MacOS, enabling game developers to create cross-platform or multiplatform real-time multiplayer experiences on even more platforms. For links to these and other SDK releases,see [Azure Playfab Party SDKs](party-sdks.md). 
+
 ## 1.7.11
 June 24, 2022
 ### Bug fixes
