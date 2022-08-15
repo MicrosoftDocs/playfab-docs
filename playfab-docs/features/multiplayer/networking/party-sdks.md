@@ -29,7 +29,7 @@ If you're looking for the core PlayFab SDK that helps you implement a majority o
 
 | SDK/library| Platform/operating system|
 |------------|--------------------------|
-| C/C++ SDK    |[Android, iOS, Windows 10, Windows 8.1, Linux](https://github.com/PlayFab/PlayFabParty/releases), [Stadia](https://dev.azure.com/PlayFabPrivate/Stadia/_git/PlayFabPartyStadia), [Switch](https://dev.azure.com/PlayFabPrivate/Switch/_git/PlayFabPartySwitch), [PlayStation 4](https://dev.azure.com/PlayFabPrivate/PS4/_git/PlayFabPartyPS4), [PlayStation 5](https://dev.azure.com/PlayFabPrivate/PS5/_git/PlayFabPartyPS5), [PC (GDK) and Xbox (GDK)](https://aka.ms/gdkdl) (Use the version that's included in the GDK.)|
+| C/C++ SDK    |[Android, iOS, Windows 10, Windows 8.1, Linux, MacOS](https://github.com/PlayFab/PlayFabParty/releases), [Stadia](https://dev.azure.com/PlayFabPrivate/Stadia/_git/PlayFabPartyStadia), [Switch](https://dev.azure.com/PlayFabPrivate/Switch/_git/PlayFabPartySwitch), [PlayStation 4](https://dev.azure.com/PlayFabPrivate/PS4/_git/PlayFabPartyPS4), [PlayStation 5](https://dev.azure.com/PlayFabPrivate/PS5/_git/PlayFabPartyPS5), [PC (GDK) and Xbox (GDK)](https://aka.ms/gdkdl) (Use the version that's included in the GDK.)|
 | Unity SDK  |[Android, iOS, Windows 10, Windows 8.1](https://github.com/PlayFab/PlayFabPartyUnity/releases), [PlayStation 4](https://dev.azure.com/PlayFabPrivate/PS4/_git/PlayFabPartyUnityPS4), [PlayStation 5](https://dev.azure.com/PlayFabPrivate/PS5/_git/PlayFabPartyUnityPS5), [Switch](https://dev.azure.com/PlayFabPrivate/Switch/_git/PlayFabPartyUnitySwitch), [PC (GDK) and Xbox (GDK)](https://aka.ms/gdkdl) (under **Add-ins**)|
 | Unity Editor Extensions | [Unity game engine](https://github.com/PlayFab/UnityEditorExtensions/releases)|
 | Unreal SDK |[PC (GDK) and Xbox (GDK)](https://aka.ms/gdkdl) (under **Add-ins**)|
@@ -50,6 +50,7 @@ If you're looking for the core PlayFab SDK that helps you implement a majority o
 | Windows 10, Windows 8.1 |[C/C++](https://www.nuget.org/packages/Microsoft.PlayFab.PlayFabParty.Cpp.Windows/), [Xbox Live Helper Library](https://www.nuget.org/packages/Microsoft.PlayFab.PlayFabPartyXboxLive.Cpp.Windows)|
 | Windows 7|[C/C++](https://www.nuget.org/packages/Microsoft.PlayFab.PlayFabParty.Cpp.Windows/), [Xbox Live Helper Library](https://www.nuget.org/packages/Microsoft.PlayFab.PlayFabPartyXboxLive.Cpp.Windows)|
 | Linux | [C/C++]((https://github.com/PlayFab/PlayFabParty/releases))|
+| MacOS | [C/C++]((https://github.com/PlayFab/PlayFabParty/releases))|
 
 ## See also
 
