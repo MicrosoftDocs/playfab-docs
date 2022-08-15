@@ -41,9 +41,9 @@ LIB Files
 
 Header includes
 
-[Party headers](https://github.com/PlayFab/PlayFabParty/tree/docs/include)
+[Party headers](https://github.com/PlayFab/PlayFabParty/tree/master/include)
 
-Note that in addition to the lib files and headers above, you'll also need the libs and headers for PlayFab SDK and any other platform-specific dependencies your app needs. Please take a look at the project file organization for the Swithc Sample for more info.
+Note that in addition to the lib files and headers above, you'll also need the libs and headers for PlayFab SDK and any other platform-specific dependencies your app needs. Please take a look at the project file organization for the iOS Sample for more info.
 
 ## Steps to get PlayFab Party working on iOS or MacOS
 
