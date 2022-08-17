@@ -107,3 +107,5 @@
     href: enums/partyxblthreadid.md
 - name: Typedefs
   href: xbltypedefs.md
+- name: Error Codes
+  href: partyxblerrors.md
