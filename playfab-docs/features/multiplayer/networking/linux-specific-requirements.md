@@ -29,7 +29,7 @@ After downloading the release package for linux, you'll need to link the followi
 Libparty for Linux compiles libssl and libcurl directly into the library to help cope with the OpenSSL and Curl version disparity between distributions.  
 
 > [!NOTE]
-> The SSL libs are built from [Open SSL version XXX](https://github.com/openssl/openssl/tree/OpenSSL_1_1_1-stable). Use an OpenSSL version that is XXX or higher.
+> The SSL libs are built from [Open SSL version 1.1.1b](https://github.com/openssl/openssl/tree/OpenSSL_1_1_1-stable). Use an OpenSSL version that is 1.1.1b or higher.
 
 
 Header includes
