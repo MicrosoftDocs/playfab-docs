@@ -12,12 +12,13 @@ ms.localizationpriority: medium
 
 # PlayFab Party release notes
 
-PlayFab Party had a significant (up to 90%) price drop on 10/13/2020. You can view the updated Party rates on the [Pricing page](https://playfab.com/pricing). For more information about the price drop, see our [blog post](https://blog.playfab.com/blog/starting-today-save-up-to-90-using-playfab-party).
+PlayFab Party had a significant (up to 90%) price drop on October 13, 2020. You can view the updated Party rates on the [Pricing page](https://playfab.com/pricing). For more information about the price drop, see our [blog post](https://blog.playfab.com/blog/starting-today-save-up-to-90-using-playfab-party).
 
 ## 1.7.14
-August 11, 2022
+August 12, 2022
+### New SDKs for Linux and macOS
 
-- Introduces PlayFab Party for Linux
+- Added native support for PlayFab Party on Linux and macOS, enabling game developers to create cross-platform or multiplatform real-time multiplayer experiences on even more platforms. For links to these and other SDK releases,see [Azure Playfab Party SDKs](party-sdks.md). 
 
 ## 1.7.11
 June 24, 2022
@@ -33,7 +34,7 @@ April 21, 2022
 - Fixed an issue where calling `PartyLocalChatControl::SetAudioInput()` or `PartyLocalChatControl::SetAudioOutput()` with the same audio device selection would unnecessarily result in the library reinitializing the audio device. 
 
 ## 1.7.7
-Mar 16, 2022
+March 16, 2022
 ### Bug fixes
 
 - PlayStation&#174;4, PlayStation&#174;5: Fixed a crash that occurred when there was no audio device after the audio devices were removed.
@@ -42,7 +43,7 @@ Mar 16, 2022
 “PlayStation” is a registered trademark or trademark of Sony Interactive Entertainment Inc.
 
 ## 1.7.6
-Feb 8, 2022
+February 8, 2022
 ### Performance improvements
 
 - Windows, XDK, Nintendo Switch, PlayStation 4, PlayStation 5: Removed two worker threads and perform relevant work on a preexisting, lower frequency work thread. The Microsoft Game Development Kit (GDK) version of the library already had this coalesced work behavior.
@@ -50,22 +51,22 @@ Feb 8, 2022
 ### Bug fixes
 
 - iOS, Android, Switch, PlayStation 4, PlayStation 5, and Stadia: Fixed a small amount of memory allocated during initialization not being properly freed during cleanup.
-- Avoid reporting PartyChatTextReceivedOptions::FilteredDueToError flag in PartyChatTextReceivedStateChange when text moderation is not enabled.
+- Avoid reporting PartyChatTextReceivedOptions::FilteredDueToError flag in PartyChatTextReceivedStateChange when text moderation isn't enabled.
 
 ## 1.7.5
-Sep 30, 2021
+September 30, 2021
 ### Bug fixes
 
-- Fixed an issue where some 16kHz microphones were not working.
+- Fixed an issue where some 16kHz microphones weren't working.
 - Fixed an issue where microphone permission changes were not handled on Windows.
 - Fixed a memory leak in some `PartyManager::CreateNewNetwork()` failure conditions.
 - Fixed an occasional crash in `PartyLocalEndpoint::GetEndpointStatistics()`.
 
 ## 1.7.0
-Jun 29, 2021
+June 29, 2021
 ### New profiling hooks and chat control indicators
 
-- Developers interested in where time is spent in internal library functions can now install optional method entrance and exit callbacks to hook into their preferred high-performance instrumentation method. For more information, see [`PartyManager::SetProfilingCallbacksForMethodEntryExit`](reference/classes/PartyManager/methods/partymanager_setprofilingcallbacksformethodentryexit.md). In this release the callbacks are only supported for Windows, Xbox One XDK, and Microsoft Game Core platforms.
+- Developers interested in where time is spent in internal library functions can now install optional method entrance and exit callbacks to hook into their preferred high-performance instrumentation method. For more information, see [`PartyManager::SetProfilingCallbacksForMethodEntryExit`](reference/classes/PartyManager/methods/partymanager_setprofilingcallbacksformethodentryexit.md). In this release, the callbacks are only supported for Windows, Xbox One XDK, and Microsoft Game Core platforms.
 - New NoRemoteInput and RemoteAudioInputMuted chat control indicators provide more granularity on currently silent audio state. For more information, see [`PartyChatControlChatIndicator`](reference/enums/partychatcontrolchatindicator.md).
 
 ### Endpoint message behavior improvements
@@ -80,7 +81,7 @@ Jun 29, 2021
 - Fixed a bug where a crash may occur when a chat control is connected to a network while that same chat control is disconnecting from another network.
 
 ## 1.6.0
-Apr 12, 2021
+April 12, 2021
 ### New thread control and text moderation features
 
 - The library's work can now be run manually on game-controlled threads. For more information, see [`PartyManager::SetWorkMode`](reference/classes/PartyManager/methods/partymanager_setworkmode.md).
@@ -91,7 +92,7 @@ Apr 12, 2021
 - Enum values in the header now have explicit numbering.
 
 ## 1.5.13
-Mar 26, 2021
+March 26, 2021
 ### Bug fixes
 
 - Fixed a bug where audio is cutting out on iOS devices using Bluetooth headsets.
@@ -110,7 +111,7 @@ Mar 26, 2021
 - Fixed a bug that may result in crackly or distorted audio.
 
 ## 1.5.1
-Sep 05, 2020
+September 05, 2020
 ### Bug fix
 
 - Fixed a bug where the library may fail to activate the microphone on iOS.
@@ -132,27 +133,27 @@ Sep 05, 2020
 
 ### Windows 8.1 dependency issue
 
-This release removes an unnecessary dependency on api-ms-win-core-version-l1-1-1.dll which prevented previous versions from working on Windows 8.1
+This release removes an unnecessary dependency on api-ms-win-core-version-l1-1-1.dll that prevented previous versions from working on Windows 8.1
 
 ## 1.4.8
-Apr 30, 2020
+April 30, 2020
 ### TLS1.2
 
-- The transcription stack has been updated to use TLS1.2 on Windows 7, Android, and iOS. Please upgrade if you make use of any of these platforms as TLS1.1 support will be deprecated by [Azure Speech Services](https://azure.microsoft.com/updates/azuretls12/) beginning in September 2020. All other platforms already support TLS1.2 and no upgrade is necessary.
+- The transcription stack has been updated to use TLS1.2 on Windows 7, Android, and iOS. Upgrade if you make use of any of these platforms as TLS1.1 support will be deprecated by [Azure Speech Services](https://azure.microsoft.com/updates/azuretls12/) beginning in September 2020. All other platforms already support TLS1.2 and no upgrade is necessary.
 
 ### Bug fixes
 - Fixed a bug where the `languageCode` field in the `PartyCreateChatControlCompletedStateChange` struct was not being populated.
 - Fixed a bug which was artificially inflating the latency measurements reported by `PartyManager::GetRegions()`.
-- Fixed a bug which allowed `PartyManager::SetMemoryCallbacks()` to be called at unsafe times.
+- Fixed a bug that allowed `PartyManager::SetMemoryCallbacks()` to be called at unsafe times.
 - Fixed a bug where calling `PartyManager::DestroyLocalUser()` with a `PartyLocalUser` in a `PartyNetwork` would generate a `PartyLocalUserRemovedStateChange` with an incorrect value in the removedReason field, `PartyLocalUserRemovedReason::RemoveLocalUser`, instead of the correct value, `PartyLocalUserRemovedReason::DestroyLocalUser`.
 
 ### Misc changes
 - The bandwidth used by chat data has been reduced.
 - More descriptive error codes and error messages are now provided when sandbox issues are encountered on Xbox.
 - `PartyManager::Initialize()` will now fail if an empty PlayFab Title ID is provided.
-- Passing invalid PlayFab Entity Tokens to `PartyManager::CreateLocalUser()` will now result in more descriptive error messages in the state change results for operations which rely on a valid token.
+- Passing invalid PlayFab Entity Tokens to `PartyManager::CreateLocalUser()` will now result in more descriptive error messages in the state change results for operations that rely on a valid token.
 - Typos in the header documentation have been fixed.
-- A more descriptive error code and error message is now provided when an invalid region is passed to `PartyManager::CreateNewNetwork()`.
+- A more descriptive error code and error message are now provided when an invalid region is passed to `PartyManager::CreateNewNetwork()`.
 - The documentation for the lifetimes of `PartyString` values has been clarified for the structures and interfaces in Party.h.
 - The documentation for `PartyManager::Cleanup()` was clarified to explain it is not a thread-safe call.
 - A more descriptive error code and error message are provided when `PartyManager::ConnectToNetwork()` asynchronously fails with internet connectivity errors.
@@ -218,7 +219,7 @@ The iOS flavor of Party now has the framework package included for dynamically l
 
 This release of Party makes a change related to the handling of PlayFab entity tokens. In the previous version, the game provided Party with a user's entity token in the `PartyManager::CreateLocalUser()` API. Thereafter, Party internally refreshed the entity token and kept it up to date.
 
-In this version, the internal token refreshing behavior has been removed and is replaced by a new API, `PartyLocalUser::UpdateEntityToken()`. The caller is now responsible for monitoring the expiration of the entity token provided to `PartyManager::CreateLocalUser()` and `PartyLocalUser::UpdateEntityToken()`. When the token is nearing or past the expiration time a new token should be obtained by performing a PlayFab login operation and provided to the Party library by calling `PartyLocalUser::UpdateEntityToken()`. It is recommended to acquire a new token when the previously supplied token is halfway through its validity period. On platforms that may enter a low power state or otherwise cause the application to pause execution for a long time, preventing the token from being refreshed before it expires, the token should be checked for expiration once execution resumes.
+In this version, the internal token refreshing behavior has been removed and is replaced by a new API, `PartyLocalUser::UpdateEntityToken()`. The caller is now responsible for monitoring the expiration of the entity token provided to `PartyManager::CreateLocalUser()` and `PartyLocalUser::UpdateEntityToken()`. When the token is nearing or past the expiration time, a new token should be obtained by performing a PlayFab login operation and provided to the Party library by calling `PartyLocalUser::UpdateEntityToken()`. It is recommended to acquire a new token when the previously supplied token is halfway through its validity period. On platforms that may enter a low power state or pause application execution for a long time, the token may be prevented from being refreshed before it expires. The token should be checked for expiration once execution resumes.
 
 The rough flow is as follows:
 
@@ -231,7 +232,7 @@ The rough flow is as follows:
 
 Additional notes:
 - The act of acquiring an entity token does not invalidate any previously obtained entity tokens. They remain valid until they expire.
-- The internal refreshing functionality was removed because most games are expected to make their own PlayFab calls and so having both the game and the Party library fetching entity tokens causes unnecessary service load to basically manage two sets of tokens.
+- The internal refreshing functionality was removed because most games are expected to make their own PlayFab calls. Having both the game and the Party library fetch entity tokens causes unnecessary service load to manage two sets of tokens.
 
 #### Chat API Changes
 
@@ -257,7 +258,7 @@ For more information, see the following links:
 #### Accessible Chat
 * Added support for text-to-speech narration. (see `PartyLocalChatControl::SetTextToSpeechProfile()`)
 * Added more options for controlling when speech-to-text occurs. (see `PartyLocalChatControl::SetTranscriptionOptions()`)
-* Added text-to-text translation to the API, although it is not yet supported. ( see `PartyLocalChatControl::SetTextChatOptions()`)
+* Added text-to-text translation to the API, although it is not yet supported. (see `PartyLocalChatControl::SetTextChatOptions()`)
 * Reduced text-to-speech bandwidth and memory usage.
 
 #### Network access control

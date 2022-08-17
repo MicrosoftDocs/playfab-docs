@@ -50,7 +50,7 @@ LIB Files
 
 Header Includes
 
-[Party Headers](https://github.com/PlayFab/PlayFabParty/tree/docs/include)
+[Party Headers](https://github.com/PlayFab/PlayFabParty/tree/master/include)
 
 
 > [!NOTE]
