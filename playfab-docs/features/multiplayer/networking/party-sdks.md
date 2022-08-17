@@ -49,8 +49,8 @@ If you're looking for the core PlayFab SDK that helps you implement a majority o
 | PC (GDK) and Xbox (GDK) | [Unity, Unreal](https://aka.ms/gdkdl) (under **Add-ins**), [C/C++ SDK, Xbox Live Helper Library](https://aka.ms/gdkdl) (Use the version that's included in the GDK.)|
 | Windows 10, Windows 8.1 |[C/C++](https://www.nuget.org/packages/Microsoft.PlayFab.PlayFabParty.Cpp.Windows/), [Xbox Live Helper Library](https://www.nuget.org/packages/Microsoft.PlayFab.PlayFabPartyXboxLive.Cpp.Windows)|
 | Windows 7|[C/C++](https://www.nuget.org/packages/Microsoft.PlayFab.PlayFabParty.Cpp.Windows/), [Xbox Live Helper Library](https://www.nuget.org/packages/Microsoft.PlayFab.PlayFabPartyXboxLive.Cpp.Windows)|
-| Linux | [C/C++]((https://github.com/PlayFab/PlayFabParty/releases))|
-| MacOS | [C/C++]((https://github.com/PlayFab/PlayFabParty/releases))|
+| Linux | [C/C++](https://github.com/PlayFab/PlayFabParty/releases)|
+| MacOS | [C/C++](https://github.com/PlayFab/PlayFabParty/releases)|
 
 ## See also
 
