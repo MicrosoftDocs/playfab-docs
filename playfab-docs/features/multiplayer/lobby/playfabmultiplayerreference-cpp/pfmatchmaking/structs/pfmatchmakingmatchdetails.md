@@ -5,7 +5,7 @@ description: "The resulting match information found by a completed ticket."
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 03/15/2022
+ms.date: 08/16/2022
 ---
 
 # PFMatchmakingMatchDetails  
@@ -22,6 +22,7 @@ struct PFMatchmakingMatchDetails {
     const char* const* regionPreferences;  
     uint32_t regionPreferenceCount;  
     const char* lobbyArrangementString;  
+    const PFMultiplayerServerDetails* serverDetails;  
 }  
 ```
   
@@ -54,6 +55,13 @@ The count of preferred regions for the match.
 The lobby arrangement string associated with the match.
   
 This connection string can optionally be used with [PFMultiplayerJoinArrangedLobby()](../../pflobby/functions/pfmultiplayerjoinarrangedlobby.md) to join a lobby associated with this match result. The lobby is not created until a user attempts to join it.
+  
+**`serverDetails`** &nbsp; const [PFMultiplayerServerDetails](pfmultiplayerserverdetails.md)*  
+*may be nullptr*  
+  
+The details of the server associated with this match.
+  
+This field will be populated if the matchmaking queue associated with the ticket has enabled PlayFab Multiplayer Server allocation.
   
   
 ## Requirements  

@@ -5,11 +5,11 @@ description: "PFMultiplayer C/C++ API overview - PFMatchmaking.h"
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 03/15/2022
+ms.date: 08/16/2022
 ---
 
 # PFMultiplayer C/C++ API overview - PFMatchmaking.h
-  
+
 ## Functions  
 
 | Function | Description |  
@@ -31,6 +31,8 @@ ms.date: 03/15/2022
 | [PFMatchmakingMatchDetails](structs/pfmatchmakingmatchdetails.md) | The resulting match information found by a completed ticket. |  
 | [PFMatchmakingMatchMember](structs/pfmatchmakingmatchmember.md) | A member of a match result. |  
 | [PFMatchmakingTicketConfiguration](structs/pfmatchmakingticketconfiguration.md) | Defines the configuration for a matchmaking ticket. |  
+| [PFMultiplayerPort](structs/pfmultiplayerport.md) | A port used by a Playfab Multiplayer Server. |  
+| [PFMultiplayerServerDetails](structs/pfmultiplayerserverdetails.md) | Details about a Playfab Multiplayer Server. |  
   
 ## State changes  
   
@@ -46,3 +48,4 @@ ms.date: 03/15/2022
 | --- | --- |  
 | [PFMatchmakingStateChangeType](enums/pfmatchmakingstatechangetype.md) | The types of state changes that can occur.|  
 | [PFMatchmakingTicketStatus](enums/pfmatchmakingticketstatus.md) | The possible states for a matchmaking ticket.|  
+| [PFMultiplayerProtocolType](enums/pfmultiplayerprotocoltype.md) | The protocol type used for connecting to a PlayFab Multiplayer Server port.|  
