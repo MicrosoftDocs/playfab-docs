@@ -120,6 +120,8 @@
     href: pfmatchmaking/enums/pfmatchmakingstatechangetype.md
   - name: PFMatchmakingTicketStatus
     href: pfmatchmaking/enums/pfmatchmakingticketstatus.md
+  - name: PFMultiplayerProtocolType
+    href: pfmatchmaking/enums/pfmultiplayerprotocoltype.md
 - name: Structures
   items:
   - name: PFLobbyArrangedJoinConfiguration
@@ -146,6 +148,10 @@
     href: pfmatchmaking/structs/pfmatchmakingmatchmember.md
   - name: PFMatchmakingTicketConfiguration
     href: pfmatchmaking/structs/pfmatchmakingticketconfiguration.md
+  - name: PFMultiplayerPort
+    href: pfmatchmaking/structs/pfmultiplayerport.md
+  - name: PFMultiplayerServerDetails
+    href: pfmatchmaking/structs/pfmultiplayerserverdetails.md
 - name: State changes
   items:
   - name: PFLobbyAddMemberCompletedStateChange

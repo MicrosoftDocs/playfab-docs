@@ -12,6 +12,20 @@ ms.localizationpriority: medium
 
 # PlayFab Multiplayer C++ SDK release notes
 
+## 1.2.0
+
+August 17, 2022
+
+### New features
+
+- The match details now report server details associated with the multiplayer server allocated when a match is found, if the matchmaking queue has been configured to allocate multiplayer servers. For more information, see [PFMatchmakingMatchDetails](..\playfabmultiplayerreference-cpp\pfmatchmaking\structs\pfmatchmakingmatchdetails.md).
+- A new constant, `PFLobbyAmOwnerSearchKey`, is defined for the `lobby/amOwner` search key. For more information on using search keys, see [PFLobbySearchConfiguration](..\playfabmultiplayerreference-cpp\pflobby\structs\pflobbysearchconfiguration.md)
+
+### Bug fixes
+
+- Improved the message reported by [PFMultiplayerGetErrorCode](..\playfabmultiplayerreference-cpp\pfmultiplayer\functions\pfmultiplayergeterrormessage.md) for several error codes.
+- Fixed a bug where entities were not unsubscribed from the notification service under some failure conditions.
+
 ## 1.1.5
 
 July 13, 2022
