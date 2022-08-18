@@ -18,7 +18,7 @@ Here are some best practices during various stages of the game lifecycle, to mak
 
 * Use the [LocalMultiplayerAgent (LMA)](https://github.com/PlayFab/MpsAgent) for iterative testing on your local workstation. This saves both time and money while also simplifying debugging since all artifacts run locally. The tool is open sourced and contributions / enhancements are always welcome. More details around using it are available [here](locally-debugging-game-servers-and-integration-with-playfab.md)
 
-* Use [Schedules](scheduled-standby.md) to set up concrete schedules to save on standingBy server costs. For example, if all testing and validation is performed during business hours, the schedule can be set to have standingBy servers only during business hours. There's no extra cost to set up schedules.
+* Use [Schedules](scheduled-standby.md) to set up concrete schedules to save on standingBy server costs. For example, if all testing and validation is performed during business hours, the schedule can be set to have standingby servers only during business hours. There's no extra cost to set up schedules.
 
 * Use [VmMetrics](vm-metrics.md) or your own [Profilers](attaching-a-profiler.md) to determine how many game servers can be packed within a single virtual machine in the SKU of your choice.
 
@@ -47,3 +47,4 @@ Here are some best practices during various stages of the game lifecycle, to mak
 * Games tend to fall into a demand rhythm that can again be composed into [Schedules](scheduled-standby.md). Use the schedules along with [Dynamic StandingBy](dynamic-standby.md) for a cost effective, post launch game scaling.
 
 * Use [Build Aliases](allocating-with-build-alias.md) for game server updates and shaping traffic gradually over to the new game experience.
+

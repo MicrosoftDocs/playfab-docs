@@ -20,6 +20,11 @@ August 12, 2022
 
 - Added native support for PlayFab Party on Linux and macOS, enabling game developers to create cross-platform or multiplatform real-time multiplayer experiences on even more platforms. For links to these and other SDK releases,see [Azure Playfab Party SDKs](party-sdks.md). 
 
+## 1.7.14
+August 11, 2022
+
+- Introduces PlayFab Party for Linux
+
 ## 1.7.11
 June 24, 2022
 ### Bug fixes

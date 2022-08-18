@@ -52,6 +52,7 @@ If you're looking for the core PlayFab SDK that helps you implement a majority o
 | Linux | [C/C++](https://github.com/PlayFab/PlayFabParty/releases)|
 | MacOS | [C/C++](https://github.com/PlayFab/PlayFabParty/releases)|
 
+
 ## See also
 
 * [Party samples](party-samples.md)
