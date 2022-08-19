@@ -9,7 +9,7 @@ ms.date: 08/19/2022
 ---
 
 # PlayFab Multiplayer Client SDK Error Codes
-The following error codes are used by the PlayFab Multiplayer, Lobby and Matchmaking APIs and can be used for debugging purposes. For diagnostics, the error messages can also be retrieved at runtime via [PFMultiplayerGetErrorCode](./pfmultiplayer/functions/pfmultiplayergeterrormessage.md).
+The following error codes are used by the PlayFab Multiplayer, Lobby and Matchmaking APIs and can be used for debugging purposes. For diagnostics, the error messages can also be retrieved at runtime via [PFMultiplayerGetErrorMessage](./pfmultiplayer/functions/pfmultiplayergeterrormessage.md).
 
 ### Multiplayer
 | Hex | Dec | Description |
