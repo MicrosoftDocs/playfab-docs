@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 ---
 
 # Enable automatic crash dump collection 
-This article will cover how to enable automatic crash dump collection for servers. We currently don't support this feature in the UI or through PowerShell.
+This article will cover how to enable automatic crash dump collection for servers.
 
 > [!Note]
 > This functionality is only available for windows container servers. We do not currently have a way for linux or Windows process based servers.
