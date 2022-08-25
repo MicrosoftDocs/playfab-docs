@@ -21,7 +21,7 @@ A rating or review can be attached to an item by calling the `ReviewItem` API fr
 - `Id`: The unique ID of item that is wished to be reviewed.
 - `Rating`: A numeric rating the form of a `1` to `5` scale.
 
-In addition, a number of **optional** parameters can be added also be added:
+In addition, a number of **optional** parameters can also be added:
 
 - `Title`: The title for the review.
 - `ReviewText`: A free text field for reviews.

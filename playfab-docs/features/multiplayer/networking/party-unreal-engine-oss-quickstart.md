@@ -137,4 +137,14 @@ Finally, if your game makes use PlayFab's cross-platform networking support, def
 +CompatibleUniqueNetIdTypes=SWITCH
 ```
 
+VoIP is allowed on all platforms by default unless explicitly excluded for certain platforms. To disable VoIP for a specific platform, add the platform model name to your UE configuration file as shown below.
+```config
+[OnlineSubsystemPlayFabVoiceChatDisabledPlatforms]
+!Platforms=ClearArray
++Platforms=WIN64
++Platforms=STEAM
++Platforms=SWITCH
++Platforms=PS4
++Platforms=PS5
+```
 This completes the setup of OSS required to be used in your game.  Good luck!
