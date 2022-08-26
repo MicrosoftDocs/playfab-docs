@@ -28,6 +28,8 @@ ms.date: 11/23/2021
 | [MatchmakingMatchDetails](./PlayFab.Multiplayer/MatchmakingMatchDetails.md) |  |
 | [MatchmakingTicket](./PlayFab.Multiplayer/MatchmakingTicket.md) |  |
 | [MatchmakingTicketMatchMember](./PlayFab.Multiplayer/MatchmakingTicketMatchMember.md) |  |
+| [MultiplayerPort](./PlayFab.Multiplayer/MultiplayerPort.md) | A port used by a Playfab Multiplayer Server. |
+| [MultiplayerServerDetails](./PlayFab.Multiplayer/MultiplayerServerDetails.md) | Details about a Playfab Multiplayer Server. |
 | [PFEntityKey](./PlayFab.Multiplayer/PFEntityKey.md) | PFEntityKey data model. Combined entity type and ID structure which uniquely identifies a single entity. |
 | [PlayFabMultiplayer](./PlayFab.Multiplayer/PlayFabMultiplayer.md) |  |
 | [PlayFabMultiplayerErrorArgs](./PlayFab.Multiplayer/PlayFabMultiplayerErrorArgs.md) | An event argument class representing a PFMultiplayer error. |
@@ -51,3 +53,4 @@ ms.date: 11/23/2021
 | [LobbyOwnerMigrationPolicy](./PlayFab.Multiplayer/LobbyOwnerMigrationPolicy.md) | The available policies the lobby service can use to migrate lobby ownership between members. |
 | [LogLevelType](./PlayFab.Multiplayer/LogLevelType.md) | The amount of logging that is enabled. |
 | [MatchmakingTicketStatus](./PlayFab.Multiplayer/MatchmakingTicketStatus.md) | The possible states for a matchmaking ticket. |
+| [MultiplayerProtocolType](./PlayFab.Multiplayer/MultiplayerProtocolType.md) | The protocol type used for connecting to a PlayFab Multiplayer Server port. |
