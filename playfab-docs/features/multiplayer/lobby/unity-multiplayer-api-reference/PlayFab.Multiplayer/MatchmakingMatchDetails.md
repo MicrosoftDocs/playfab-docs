@@ -22,6 +22,7 @@ public class MatchmakingMatchDetails
 | [MatchId](MatchmakingMatchDetails/MatchId.md) | The ID of the match. |
 | [Members](MatchmakingMatchDetails/Members.md) | The members that have been matched together. |
 | [RegionPreferences](MatchmakingMatchDetails/RegionPreferences.md) | Preferred regions for the match, sorted from most to least preferred. |
+| [ServerDetails](MatchmakingMatchDetails/ServerDetails.md) | The details of the server associated with this match. |
 
 ## See Also
 

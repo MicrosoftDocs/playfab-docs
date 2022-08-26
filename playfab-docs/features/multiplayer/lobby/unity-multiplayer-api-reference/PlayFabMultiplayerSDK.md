@@ -37,6 +37,9 @@ ms.date: 11/23/2021
 | class [MatchmakingTicketMatchMember](./PlayFab.Multiplayer/MatchmakingTicketMatchMember.md) |  |
 | enum [MatchmakingTicketStatus](./PlayFab.Multiplayer/MatchmakingTicketStatus.md) | The possible states for a matchmaking ticket. |
 | struct [MatchUser](./PlayFab.Multiplayer/MatchUser.md) |  |
+| class [MultiplayerPort](./PlayFab.Multiplayer/MultiplayerPort.md) | A port used by a Playfab Multiplayer Server. |
+| enum [MultiplayerProtocolType](./PlayFab.Multiplayer/MultiplayerProtocolType.md) | The protocol type used for connecting to a PlayFab Multiplayer Server port. |
+| class [MultiplayerServerDetails](./PlayFab.Multiplayer/MultiplayerServerDetails.md) | Details about a Playfab Multiplayer Server. |
 | class [PFEntityKey](./PlayFab.Multiplayer/PFEntityKey.md) | PFEntityKey data model. Combined entity type and ID structure which uniquely identifies a single entity. |
 | class [PlayFabMultiplayer](./PlayFab.Multiplayer/PlayFabMultiplayer.md) |  |
 | class [PlayFabMultiplayerErrorArgs](./PlayFab.Multiplayer/PlayFabMultiplayerErrorArgs.md) | An event argument class representing a PFMultiplayer error. |
