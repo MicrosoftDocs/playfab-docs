@@ -201,6 +201,8 @@
               href: PlayFab.Multiplayer/MatchmakingMatchDetails/Members.md
             - name: RegionPreferences
               href: PlayFab.Multiplayer/MatchmakingMatchDetails/RegionPreferences.md
+            - name: ServerDetails
+              href: PlayFab.Multiplayer/MatchmakingMatchDetails/ServerDetails.md
     - name: MatchmakingTicket
       href: PlayFab.Multiplayer/MatchmakingTicket.md
       items:
@@ -227,6 +229,30 @@
               href: PlayFab.Multiplayer/MatchmakingTicketMatchMember/EntityKey.md
             - name: TeamId
               href: PlayFab.Multiplayer/MatchmakingTicketMatchMember/TeamId.md
+    - name: MultiplayerPort
+      href: PlayFab.Multiplayer/MultiplayerPort.md
+      items:
+        - name: Properties
+          items:
+            - name: Name
+              href: PlayFab.Multiplayer/MultiplayerPort/Name.md
+            - name: Num
+              href: PlayFab.Multiplayer/MultiplayerPort/Num.md
+            - name: Protocol
+              href: PlayFab.Multiplayer/MultiplayerPort/Protocol.md
+    - name: MultiplayerServerDetails
+      href: PlayFab.Multiplayer/MultiplayerServerDetails.md
+      items:
+        - name: Properties
+          items:
+            - name: Fqdn
+              href: PlayFab.Multiplayer/MultiplayerServerDetails/Fqdn.md
+            - name: Ipv4Address
+              href: PlayFab.Multiplayer/MultiplayerServerDetails/Ipv4Address.md
+            - name: Ports
+              href: PlayFab.Multiplayer/MultiplayerServerDetails/Ports.md
+            - name: Region
+              href: PlayFab.Multiplayer/MultiplayerServerDetails/Region.md
     - name: PFEntityKey
       href: PlayFab.Multiplayer/PFEntityKey.md
       items:
