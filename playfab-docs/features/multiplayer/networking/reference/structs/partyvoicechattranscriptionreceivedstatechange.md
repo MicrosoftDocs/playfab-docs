@@ -67,7 +67,7 @@ The audio source type can optionally be used for game scenarios in which transcr
   
 The language code of the transcription.
   
-The language code will always be provided when the ```result``` field indicates success. Otherwise, the language code will be an empty string. <br /><br /> The language code will be in BCP 47 format, such as en-US for English (United States). Supported language codes are enumerated at [https://docs.microsoft.com/azure/cognitive-services/speech-service/language-support](/azure/cognitive-services/speech-service/language-support).
+The language code will always be provided when the `result` field indicates success. Otherwise, the language code will be an empty string. <br /><br /> The language code will be in BCP 47 format, such as en-US for English (United States). Supported language codes are enumerated in [Language and voice support for the Speech service](/azure/cognitive-services/speech-service/language-support)(.
   
 **`transcription`** &nbsp; [PartyString](../typedefs.md)  
   

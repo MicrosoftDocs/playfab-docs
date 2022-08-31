@@ -42,7 +42,7 @@ The human-readable form of this error detail can be retrieved via [PartyManager:
   
 The language code of the translation.
   
-The language code will be in BCP 47 format, such as en-US for English (United States). Supported language codes are enumerated at [https://docs.microsoft.com/azure/cognitive-services/speech-service/language-support](/azure/cognitive-services/speech-service/language-support).
+The language code will be in BCP 47 format, such as en-US for English (United States). Supported language codes are enumerated in [Language and voice support for the Speech service](/azure/cognitive-services/speech-service/language-support)(.
   
 **`options`** &nbsp; [PartyTranslationReceivedOptions](../enums/partytranslationreceivedoptions.md)  
   
