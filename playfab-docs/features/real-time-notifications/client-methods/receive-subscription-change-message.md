@@ -22,7 +22,13 @@ ms.date: 03/10/2022
 Receives [SubscriptionChangeMessages](../types/subscription-change-message.md),
 so the client will know when its [subscription](../subscribing-to-resources.md)
 status changes. This message indicates that a request to subscribe or
-unsubscribe has finished processing.
+unsubscribe has finished processing. It is possible that the service will fail
+to perform a subscription update in a way where the client will never receive
+this message. Because of this, clients should implement a timer so they can
+retry the subscription call if no
+[SubscriptionChangeMessage](../types/subscription-change-message.md) is received
+by this method after 5 seconds. This timer-based retry can be performed a few
+times with exponential backoff for subsequent attempts.
 
 ```text
 ReceiveSubscriptionChangeMessage(SubscriptionChangeMessage subscriptionChangeMessage)
