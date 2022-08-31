@@ -1,0 +1,85 @@
+### YamlMime:Landing
+
+title: Azure PlayFab Engagement documentation
+summary: An overview of features along with quickstart guides and tutorials on tools that you can use to engage your player community and keeping them coming back. 
+
+metadata:
+  title: PlayFab Engagement documentation
+  description: Hub page for the PlayFab Engagement documentation. Here you can find feature overviews, quickstart guides, and tutorials. 
+  ms.service: playfab #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.topic: landing-page
+  author: Shikha-tarware
+  ms.author: shikha-tarware
+  ms.date: 05/04/2020  
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: About PlayFab Engagement
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is PlayFab Engagement?
+            url: overview.md
+ # Card
+  - title: Title News
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Broadcast information to players in real time
+            url: news/index.md
+      - linkListType: quickstart
+        links:
+          - text: Get started with Title News
+            url: news/quickstart.md            
+      - linkListType: tutorial
+        links:
+          - text: Set your default language for communication and support players preferred languages 
+            url: news/setting-default-languages.md
+            
+ # Card           
+  - title: Email
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Communicate to players with emails
+            url: emails/index.md
+      - linkListType: quickstart
+        links:
+          - text: Get started with Emails
+            url: emails/quickstart.md
+      - linkListType: tutorial
+        links:
+          - text: Send emails in players' preferred languages
+            url: emails/localized-email-templates.md
+          - text: Send custom emails with SMTP server add-on
+            url: emails/setting-up-an-smtp-server-with-add-ons.md
+          - text: Verify player's new contact email
+            url: emails/using-a-rule-to-verify-a-contact-email-address.md
+          - text: Send an account recovery email
+            url: emails/using-email-templates-to-send-an-account-recovery-email.md
+
+  # Card
+  - title: Push Notifications
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Manage push notifications
+            url: push-notifications/index.md
+      - linkListType: quickstart
+        links:
+          - text: Get started with push notifications
+            url: push-notifications/quickstart.md 
+      - linkListType: tutorial
+        links:
+          - text: Set up for push notifications on Android Studio via PlayFab
+            url: push-notifications/getting-started-android-studio-push-notifications.md
+          - text: Send push notifications in players' preferred languages
+            url: push-notifications/push-notification-templates.md
+          - text: Send push notifications on Android games
+            url: push-notifications/push-notifications-for-android.md
+          - text: Send push notifications on iOS games
+            url: push-notifications/push-notifications-for-ios.md

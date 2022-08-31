@@ -1,0 +1,80 @@
+### YamlMime:Landing
+
+title: PlayFab supported languages # < 60 chars
+summary: PlayFab support for popular game development languages. # < 160 chars
+
+metadata:
+  title: PlayFab supported languages # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: description # Required; article description that is displayed in search results. < 160 chars.
+  ms.service: service #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.subservice: playfab # Optional; Remove if no subservice is used.
+  ms.topic: landing-page # Required
+  author: joannaleecy #Required; your GitHub user alias, with correct capitalization.
+  ms.author: joanlee #Required; microsoft alias of author; optional team alias.
+  ms.date: 01/21/2021 #Required; mm/dd/yyyy format.
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: Android Studio Project (Java)
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Android Studio Project (Java) 
+            url: ../androidstudio/index.md
+
+  # Card
+  - title: C#
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: C#
+            url: ../c-sharp/index.md
+      - linkListType: quickstart
+        links:
+          - text: Quickstart C# 
+            url: ../c-sharp/quickstart.md
+          - text: Quickstart C# with Xamarin
+            url: ../c-sharp/xamarin-quickstart.md
+
+  # Card
+  - title: Java
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Java
+            url: ../java/index.md
+      - linkListType: quickstart
+        links:
+          - text: Java quickstart
+            url: ../java/quickstart.md
+  # Card
+  - title: Objective-C
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Objective-C
+            url: ../objective-c/index.md
+      - linkListType: quickstart
+        links:
+          - text: Objective-C quickstart
+            url: ../objective-c/quickstart.md
+
+  # Card
+  - title: C++
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: C++
+            url: ../playfab-cpp/index.md
+      - linkListType: quickstart
+        links:
+          - text: Quickstart - Linux quickstart
+            url: ../playfab-cpp/quickstart-linux.md
+          - text: Quickstart - Windows quickstart
+            url: ../playfab-cpp/quickstart-windows.md
+          - text: Quickstart - Xbox One quickstart
+            url: ../playfab-cpp/quickstart-xbox.md          

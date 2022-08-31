@@ -1,0 +1,107 @@
+- name: Overview
+  href: index.md
+- name: Classes
+  items:
+    - name: PlayFabLocalPlayer
+      href: classes/playfablocalplayer/index.md
+      items:
+        - name: Properties
+          items:
+           - name: IsChatControlAvailable
+             href: classes/playfablocalplayer/properties/playfabunityischatcontrolavailable.md
+           - name: LanguageCode
+             href: classes/playfablocalplayer/properties/playfabunitylanguagecode.md
+           - name: PlatformSpecificUserId
+             href: classes/playfablocalplayer/properties/playfabunityplatformspecificuserid.md
+    - name: PlayFabPlayer
+      href: classes/playfabplayer/index.md
+      items:
+        - name: Properties
+          items: 
+           - name: ChatState
+             href: classes/playfabplayer/properties/playfabunitychatstate.md
+           - name: EntityKey
+             href: classes/playfabplayer/properties/playfabunityentitykey.md
+           - name: IsLocal
+             href: classes/playfabplayer/properties/playfabunityislocal.md
+           - name: IsMuted
+             href: classes/playfabplayer/properties/playfabunityismuted.md
+           - name: VoiceLevel
+             href: classes/playfabplayer/properties/playfabunityvoicelevel.md
+    - name: PlayFabMultiplayerManager
+      href: classes/playfabmultiplayermanager/index.md
+      items:
+        - name: Properties
+          items:
+            - name: LocalPlayer
+              href: classes/playfabmultiplayermanager/properties/playfabunitylocalplayer.md
+            - name: LogLevel
+              href: classes/playfabmultiplayermanager/properties/playfabunityloglevel.md
+            - name: NetworkId
+              href: classes/playfabmultiplayermanager/properties/playfabunitynetworkid.md
+            - name: RemotePlayers
+              href: classes/playfabmultiplayermanager/properties/playfabunityremoteplayers.md
+            - name: SpeechToTextMode
+              href: classes/playfabmultiplayermanager/properties/playfabunityspeechtotextmode.md
+            - name: State
+              href: classes/playfabmultiplayermanager/properties/playfabunitystate.md
+            - name: TextToSpeechMode
+              href: classes/playfabmultiplayermanager/properties/playfabunitytexttospeechmode.md
+            - name: TranslateChat
+              href: classes/playfabmultiplayermanager/properties/playfabunitytranslatechat.md
+        - name: Methods
+          items:
+            - name: SendChatMessage
+              href: classes/playfabmultiplayermanager/methods/partyunitysendchatmessage.md
+            - name: SendChatMessageToAllPlayers
+              href: classes/playfabmultiplayermanager/methods/partyunitysendchatmessagetoallplayers.md
+            - name: CreateAndJoinNetwork
+              href: classes/playfabmultiplayermanager/methods/playfabunitycreateandjoinnetwork.md
+            - name: Get
+              href: classes/playfabmultiplayermanager/methods/playfabunityget.md
+            - name: LeaveNetwork
+              href: classes/playfabmultiplayermanager/methods/playfabunityleavenetwork.md
+            - name: SendDataMessage
+              href: classes/playfabmultiplayermanager/methods/playfabunitysenddatamessage.md
+            - name: SendDataMessageToAllPlayers
+              href: classes/playfabmultiplayermanager/methods/playfabunitysenddatamessagetoallplayers.md
+            - name: UpdateEntityToken
+              href: classes/playfabmultiplayermanager/methods/playfabunityupdateentitytoken.md
+        - name: Events
+          items:
+            - name: partyunityonchatmessagereceived 
+              href: classes/playfabmultiplayermanager/events/partyunityonchatmessagereceived.md
+            - name: partyunityondatamessagereceived 
+              href: classes/playfabmultiplayermanager/events/partyunityondatamessagereceived.md
+            - name: partyunityondatamessagenocopyreceived 
+              href: classes/playfabmultiplayermanager/events/partyunityondatamessagenocopyreceived.md
+            - name: partyunityonerroreventhandler 
+              href: classes/playfabmultiplayermanager/events/partyunityonerroreventhandler.md
+            - name: partyunityonnetworkchanged 
+              href: classes/playfabmultiplayermanager/events/partyunityonnetworkchanged.md
+            - name: partyunityonnetworkjoined 
+              href: classes/playfabmultiplayermanager/events/partyunityonnetworkjoined.md
+            - name: partyunityonnetworkleft 
+              href: classes/playfabmultiplayermanager/events/partyunityonnetworkleft.md
+            - name: partyunityonremoteplayerjoined 
+              href: classes/playfabmultiplayermanager/events/partyunityonremoteplayerjoined.md
+            - name: partyunityonremoteplayerleft 
+              href: classes/playfabmultiplayermanager/events/partyunityonremoteplayerleft.md
+- name: Enums
+  items:
+    - name: AccessibilityMode
+      href: enums/partyunityaccessibilitymode.md
+    - name: ChatMessageType
+      href: enums/partyunitychatmessagetype.md
+    - name: ChatMessageState
+      href: enums/partyunitychatstate.md
+    - name: DeliveryOption
+      href: enums/partyunitydeliveryoption.md
+    - name: DirectPeerConnectivityOptions
+      href: enums/partyunitydirectpeerconnectivityoptions.md
+    - name: LogLevelType
+      href: enums/partyunitylogleveltype.md
+    - name: PlayFabMultiplayerManagerErrorType 
+      href: enums/partyunityplayfabmultiplayermanagererrortype.md
+    - name: PlayFabMultiplayerManagerState
+      href: enums/partyunityplayfabmultiplayermanagerstate.md

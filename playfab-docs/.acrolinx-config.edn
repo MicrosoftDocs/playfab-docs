@@ -1,0 +1,27 @@
+{:allowed-branchname-matches ["main"]
+ :allowed-filename-matches ["playfab-docs/features" "playfab-docs/gamemanager" "playfab-docs/miscellaneous" "playfab-docs/personas" "playfab-docs/release-notes" "playfab-docs/resources" "playfab-docs/roadmap" "playfab-docs/sdks"]
+ 
+ :template-header ;; This displays in the pull request results pane.  Can be overriden in repo-specific edn file. Ensure you match the indentations at the line starts exactly.
+ "
+ ## Acrolinx Scorecards
+ 
+**No minimum score has been set for this repo at this time.**
+
+Click the scorecard links for each article to review the Acrolinx feedback on grammar, spelling, punctuation, writing style, and terminology.
+
+| Article | Acrolinx<br>score | Lowest<br>category<br>score | Spelling<br>issues | Scorecard | Processed |
+|---------|:--------------:|:--------------------:|:------:|:---------:|:---------:|
+"
+
+ :template-change ;; Can be overriden in repo-specific edn file. This displays in the pull request results pane.
+ "| ${s/file} | ${acrolinx/qualityscore} | ${acrolinx/scores/min-score} | ${acrolinx/flags/spelling} | [link](${acrolinx/scorecard}) | ${s/status} |
+"
+
+ :template-footer ;; Can be overriden in repo-specific edn file. This displays in the pull request results pane. 
+ "
+**More information about Acrolinx**
+- [Install Acrolinx locally for VSCode](https://review.docs.microsoft.com/help/contribute/contribute-acrolinx-vscode)
+- [False positives or issues](https://aka.ms/acrolinxbug)
+- [Troubleshooting issues with Acrolinx](https://review.docs.microsoft.com/help/contribute/acrolinx-error-messages)
+"
+}

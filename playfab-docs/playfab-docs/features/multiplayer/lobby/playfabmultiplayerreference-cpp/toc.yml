@@ -1,0 +1,208 @@
+- name: Overview
+  items:
+  - name: PFMultiplayer overview
+    href: pfmultiplayer/pfmultiplayer_members.md
+  - name: PFLobby overview
+    href: pflobby/pflobby_members.md
+  - name: PFMatchmaking overview
+    href: pfmatchmaking/pfmatchmaking_members.md
+- name: Functions
+  items:
+  - name: PFMultiplayerGetErrorMessage
+    href: pfmultiplayer/functions/pfmultiplayergeterrormessage.md
+  - name: PFMultiplayerInitialize
+    href: pfmultiplayer/functions/pfmultiplayerinitialize.md
+  - name: PFMultiplayerSetEntityToken
+    href: pfmultiplayer/functions/pfmultiplayersetentitytoken.md
+  - name: PFMultiplayerSetMemoryCallbacks
+    href: pfmultiplayer/functions/pfmultiplayersetmemorycallbacks.md
+  - name: PFMultiplayerSetThreadAffinityMask
+    href: pfmultiplayer/functions/pfmultiplayersetthreadaffinitymask.md
+  - name: PFMultiplayerUninitialize
+    href: pfmultiplayer/functions/pfmultiplayeruninitialize.md
+  - name: PFLobbyAddMember
+    href: pflobby/functions/pflobbyaddmember.md
+  - name: PFLobbyForceRemoveMember
+    href: pflobby/functions/pflobbyforceremovemember.md
+  - name: PFLobbyGetAccessPolicy
+    href: pflobby/functions/pflobbygetaccesspolicy.md
+  - name: PFLobbyGetConnectionString
+    href: pflobby/functions/pflobbygetconnectionstring.md
+  - name: PFLobbyGetCustomContext
+    href: pflobby/functions/pflobbygetcustomcontext.md
+  - name: PFLobbyGetLobbyId
+    href: pflobby/functions/pflobbygetlobbyid.md
+  - name: PFLobbyGetLobbyProperty
+    href: pflobby/functions/pflobbygetlobbyproperty.md
+  - name: PFLobbyGetLobbyPropertyKeys
+    href: pflobby/functions/pflobbygetlobbypropertykeys.md
+  - name: PFLobbyGetMaxMemberCount
+    href: pflobby/functions/pflobbygetmaxmembercount.md
+  - name: PFLobbyGetMemberProperty
+    href: pflobby/functions/pflobbygetmemberproperty.md
+  - name: PFLobbyGetMemberPropertyKeys
+    href: pflobby/functions/pflobbygetmemberpropertykeys.md
+  - name: PFLobbyGetMembers
+    href: pflobby/functions/pflobbygetmembers.md
+  - name: PFLobbyGetMembershipLock
+    href: pflobby/functions/pflobbygetmembershiplock.md
+  - name: PFLobbyGetOwner
+    href: pflobby/functions/pflobbygetowner.md
+  - name: PFLobbyGetOwnerMigrationPolicy
+    href: pflobby/functions/pflobbygetownermigrationpolicy.md
+  - name: PFLobbyGetSearchProperty
+    href: pflobby/functions/pflobbygetsearchproperty.md
+  - name: PFLobbyGetSearchPropertyKeys
+    href: pflobby/functions/pflobbygetsearchpropertykeys.md
+  - name: PFLobbyLeave
+    href: pflobby/functions/pflobbyleave.md
+  - name: PFLobbyPostUpdate
+    href: pflobby/functions/pflobbypostupdate.md
+  - name: PFLobbySendInvite
+    href: pflobby/functions/pflobbysendinvite.md
+  - name: PFLobbySetCustomContext
+    href: pflobby/functions/pflobbysetcustomcontext.md
+  - name: PFMultiplayerCreateAndJoinLobby
+    href: pflobby/functions/pfmultiplayercreateandjoinlobby.md
+  - name: PFMultiplayerFindLobbies
+    href: pflobby/functions/pfmultiplayerfindlobbies.md
+  - name: PFMultiplayerFinishProcessingLobbyStateChanges
+    href: pflobby/functions/pfmultiplayerfinishprocessinglobbystatechanges.md
+  - name: PFMultiplayerGetLobbyInviteListenerStatus
+    href: pflobby/functions/pfmultiplayergetlobbyinvitelistenerstatus.md
+  - name: PFMultiplayerJoinArrangedLobby
+    href: pflobby/functions/pfmultiplayerjoinarrangedlobby.md
+  - name: PFMultiplayerJoinLobby
+    href: pflobby/functions/pfmultiplayerjoinlobby.md
+  - name: PFMultiplayerStartListeningForLobbyInvites
+    href: pflobby/functions/pfmultiplayerstartlisteningforlobbyinvites.md
+  - name: PFMultiplayerStartProcessingLobbyStateChanges
+    href: pflobby/functions/pfmultiplayerstartprocessinglobbystatechanges.md
+  - name: PFMultiplayerStopListeningForLobbyInvites
+    href: pflobby/functions/pfmultiplayerstoplisteningforlobbyinvites.md
+  - name: PFMatchmakingTicketCancel
+    href: pfmatchmaking/functions/pfmatchmakingticketcancel.md
+  - name: PFMatchmakingTicketGetMatch
+    href: pfmatchmaking/functions/pfmatchmakingticketgetmatch.md
+  - name: PFMatchmakingTicketGetStatus
+    href: pfmatchmaking/functions/pfmatchmakingticketgetstatus.md
+  - name: PFMatchmakingTicketGetTicketId
+    href: pfmatchmaking/functions/pfmatchmakingticketgetticketid.md
+  - name: PFMultiplayerCreateMatchmakingTicket
+    href: pfmatchmaking/functions/pfmultiplayercreatematchmakingticket.md
+  - name: PFMultiplayerDestroyMatchmakingTicket
+    href: pfmatchmaking/functions/pfmultiplayerdestroymatchmakingticket.md
+  - name: PFMultiplayerFinishProcessingMatchmakingStateChanges
+    href: pfmatchmaking/functions/pfmultiplayerfinishprocessingmatchmakingstatechanges.md
+  - name: PFMultiplayerJoinMatchmakingTicketFromId
+    href: pfmatchmaking/functions/pfmultiplayerjoinmatchmakingticketfromid.md
+  - name: PFMultiplayerStartProcessingMatchmakingStateChanges
+    href: pfmatchmaking/functions/pfmultiplayerstartprocessingmatchmakingstatechanges.md
+- name: Enumerations
+  items:
+  - name: PFMultiplayerThreadId
+    href: pfmultiplayer/enums/pfmultiplayerthreadid.md
+  - name: PFLobbyAccessPolicy
+    href: pflobby/enums/pflobbyaccesspolicy.md
+  - name: PFLobbyDisconnectingReason
+    href: pflobby/enums/pflobbydisconnectingreason.md
+  - name: PFLobbyInviteListenerStatus
+    href: pflobby/enums/pflobbyinvitelistenerstatus.md
+  - name: PFLobbyMemberRemovedReason
+    href: pflobby/enums/pflobbymemberremovedreason.md
+  - name: PFLobbyMembershipLock
+    href: pflobby/enums/pflobbymembershiplock.md
+  - name: PFLobbyOwnerMigrationPolicy
+    href: pflobby/enums/pflobbyownermigrationpolicy.md
+  - name: PFLobbyStateChangeType
+    href: pflobby/enums/pflobbystatechangetype.md
+  - name: PFMatchmakingStateChangeType
+    href: pfmatchmaking/enums/pfmatchmakingstatechangetype.md
+  - name: PFMatchmakingTicketStatus
+    href: pfmatchmaking/enums/pfmatchmakingticketstatus.md
+  - name: PFMultiplayerProtocolType
+    href: pfmatchmaking/enums/pfmultiplayerprotocoltype.md
+- name: Structures
+  items:
+  - name: PFLobbyArrangedJoinConfiguration
+    href: pflobby/structs/pflobbyarrangedjoinconfiguration.md
+  - name: PFLobbyCreateConfiguration
+    href: pflobby/structs/pflobbycreateconfiguration.md
+  - name: PFLobbyDataUpdate
+    href: pflobby/structs/pflobbydataupdate.md
+  - name: PFLobbyJoinConfiguration
+    href: pflobby/structs/pflobbyjoinconfiguration.md
+  - name: PFLobbyMemberDataUpdate
+    href: pflobby/structs/pflobbymemberdataupdate.md
+  - name: PFLobbyMemberUpdateSummary
+    href: pflobby/structs/pflobbymemberupdatesummary.md
+  - name: PFLobbySearchConfiguration
+    href: pflobby/structs/pflobbysearchconfiguration.md
+  - name: PFLobbySearchFriendsFilter
+    href: pflobby/structs/pflobbysearchfriendsfilter.md
+  - name: PFLobbySearchResult
+    href: pflobby/structs/pflobbysearchresult.md
+  - name: PFMatchmakingMatchDetails
+    href: pfmatchmaking/structs/pfmatchmakingmatchdetails.md
+  - name: PFMatchmakingMatchMember
+    href: pfmatchmaking/structs/pfmatchmakingmatchmember.md
+  - name: PFMatchmakingTicketConfiguration
+    href: pfmatchmaking/structs/pfmatchmakingticketconfiguration.md
+  - name: PFMultiplayerPort
+    href: pfmatchmaking/structs/pfmultiplayerport.md
+  - name: PFMultiplayerServerDetails
+    href: pfmatchmaking/structs/pfmultiplayerserverdetails.md
+- name: State changes
+  items:
+  - name: PFLobbyAddMemberCompletedStateChange
+    href: pflobby/structs/pflobbyaddmembercompletedstatechange.md
+  - name: PFLobbyCreateAndJoinLobbyCompletedStateChange
+    href: pflobby/structs/pflobbycreateandjoinlobbycompletedstatechange.md
+  - name: PFLobbyDisconnectedStateChange
+    href: pflobby/structs/pflobbydisconnectedstatechange.md
+  - name: PFLobbyDisconnectingStateChange
+    href: pflobby/structs/pflobbydisconnectingstatechange.md
+  - name: PFLobbyFindLobbiesCompletedStateChange
+    href: pflobby/structs/pflobbyfindlobbiescompletedstatechange.md
+  - name: PFLobbyForceRemoveMemberCompletedStateChange
+    href: pflobby/structs/pflobbyforceremovemembercompletedstatechange.md
+  - name: PFLobbyInviteListenerStatusChangedStateChange
+    href: pflobby/structs/pflobbyinvitelistenerstatuschangedstatechange.md
+  - name: PFLobbyInviteReceivedStateChange
+    href: pflobby/structs/pflobbyinvitereceivedstatechange.md
+  - name: PFLobbyJoinArrangedLobbyCompletedStateChange
+    href: pflobby/structs/pflobbyjoinarrangedlobbycompletedstatechange.md
+  - name: PFLobbyJoinLobbyCompletedStateChange
+    href: pflobby/structs/pflobbyjoinlobbycompletedstatechange.md
+  - name: PFLobbyLeaveLobbyCompletedStateChange
+    href: pflobby/structs/pflobbyleavelobbycompletedstatechange.md
+  - name: PFLobbyMemberAddedStateChange
+    href: pflobby/structs/pflobbymemberaddedstatechange.md
+  - name: PFLobbyMemberRemovedStateChange
+    href: pflobby/structs/pflobbymemberremovedstatechange.md
+  - name: PFLobbyPostUpdateCompletedStateChange
+    href: pflobby/structs/pflobbypostupdatecompletedstatechange.md
+  - name: PFLobbySendInviteCompletedStateChange
+    href: pflobby/structs/pflobbysendinvitecompletedstatechange.md
+  - name: PFLobbyStateChange
+    href: pflobby/structs/pflobbystatechange.md
+  - name: PFLobbyUpdatedStateChange
+    href: pflobby/structs/pflobbyupdatedstatechange.md
+  - name: PFMatchmakingStateChange
+    href: pfmatchmaking/structs/pfmatchmakingstatechange.md
+  - name: PFMatchmakingTicketCompletedStateChange
+    href: pfmatchmaking/structs/pfmatchmakingticketcompletedstatechange.md
+  - name: PFMatchmakingTicketStatusChangedStateChange
+    href: pfmatchmaking/structs/pfmatchmakingticketstatuschangedstatechange.md
+- name: Callbacks
+  items:
+  - name: PFMultiplayerAllocateMemoryCallback
+    href: pfmultiplayer/callbacks/pfmultiplayerallocatememorycallback.md
+  - name: PFMultiplayerFreeMemoryCallback
+    href: pfmultiplayer/callbacks/pfmultiplayerfreememorycallback.md
+- name: Typedef
+  items:
+  - name: PFEntityKey - Client SDK
+    href: pfmultiplayer\pfentitykey_clientsdk.md
+- name: Error Codes
+  href: pfmultiplayererrors.md

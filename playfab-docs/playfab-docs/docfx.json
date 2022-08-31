@@ -1,0 +1,50 @@
+{
+    "build": {
+        "content": [{
+            "files": [
+                "**/*.md",
+                "**/*.yml"
+            ],
+            "exclude": [
+                "**/obj/**",
+                "**/includes/**",
+                "_themes/**",
+                "_themes.pdf/**",
+                "README.md",
+                "LICENSE",
+                "LICENSE-CODE",
+                "ThirdPartyNotices"
+            ]
+        }],
+        "resource": [{
+            "files": [
+                "**/*.png",
+                "**/*.jpg",
+                "**/*.svg",
+                "**/*.gif"
+            ],
+            "exclude": [
+                "**/obj/**",
+                "**/includes/**",
+                "_themes/**",
+                "_themes.pdf/**"
+            ]
+        }],
+        "overwrite": [],
+        "externalReference": [],
+        "globalMetadata": {
+            "breadcrumb_path": "/gaming/playfab/breadcrumb/toc.json",
+            "extendBreadcrumb": true,
+            "feedback_system": "GitHub",
+            "feedback_github_repo": "MicrosoftDocs/playfab-docs",
+            "feedback_product_url": "https://community.playfab.com/index.html",
+            "searchScope": ["PlayFab"],
+            "uhfHeaderId": "MSDocsHeader-PlayFab",
+            "titleSuffix": "PlayFab"
+        },
+        "fileMetadata": {},
+        "template": [],
+        "dest": "playfab",
+        "markdownEngineName": "markdig"
+    }
+}

@@ -1,0 +1,23 @@
+- name: PlayFab Insights
+  href: index.yml
+- name: Overview
+  href: overview.md
+- name: Connectivity
+  href: connectivity/toc.yml
+- name: Data Explorer
+  href: data-explorer/toc.yml
+- name: Schemas
+  href: schemas/toc.yml
+- name: Performance Levels and Retention
+  href: performance-retention.md
+- name: Insights Scheduled Scaling
+  href: scheduled-scaling.md
+- name: Exporting Data
+  href: export.md
+- name: Insights Management Commands
+  href: management-commands.md
+- name: Pricing
+  href: pricing.md
+- name: Best Practices and FAQ
+  href: best-practices.md
+ 

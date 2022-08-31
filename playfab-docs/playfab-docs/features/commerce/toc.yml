@@ -1,0 +1,10 @@
+- name: PlayFab Economy
+  href: index.yml
+- name: Economy
+  href: economy/toc.yml
+- name: Items
+  href: items/toc.yml
+- name: Stores
+  href: stores/toc.yml
+- name: User Generated Content
+  href: ugc/toc.yml

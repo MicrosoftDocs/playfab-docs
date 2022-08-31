@@ -1,0 +1,84 @@
+### YamlMime:Landing
+
+title: Azure PlayFab Economy documentation # < 60 chars
+summary: PlayFab Economy provides you with the necessary features to more deeply engage with your community and monetize your game. # < 160 chars
+
+metadata:
+  title: PlayFab Economy documentation
+  description: Hub page for the PlayFab Economy documentation. Here you can find feature overviews, quickstart guides, and tutorials.  # Required; article description that is displayed in search results. < 160 chars.
+  ms.service: playfab #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.topic: landing-page
+  author: TimCrawford
+  ms.author: timcra
+  ms.date: 06/09/2020
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card
+  - title: About PlayFab Economy
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is PlayFab Economy?
+            url: economy/index.md
+          - text: What are items?
+            url: items/index.md
+          - text: What are stores?
+            url: stores/index.md
+
+  # Card
+  - title: Get started
+    linkLists:
+      - linkListType: quickstart
+        links:
+          - text: Create your first item
+            url: items/quickstart.md
+          - text: Set up your first store
+            url: stores/quickstart.md
+
+  # Card
+  - title: Run sales events and promotions
+    linkLists:
+      - linkListType: tutorial
+        links:
+          - text: Create your first sales event
+            url: stores/stores-and-sales.md
+          - text: Create custom stores for player segments
+            url: stores/custom-stores-for-player-segments.md
+          - text: Create coupons
+            url: economy/coupons-and-promotions.md
+      - linkListType: sample
+        links:
+          - text: Add a progressive reward system
+            url: https://github.com/PlayFab/PlayFab-Samples/tree/master/Recipes/ProgressiveRewards
+
+  # Card
+  - title: Manage in-app purchases
+    linkLists:
+      - linkListType: tutorial
+        links:
+          - text: Set up purchases with the Google Play Store
+            url: economy/getting-started-with-unity-iap-android.md
+          - text: Set up purchases with Steam, Facebook, and PayPal
+            url: economy/non-receipt-payment-processing.md
+      - linkListType: sample
+        links:
+          - text: Android in-app purchase sample
+            url: https://github.com/PlayFab/PlayFab-Samples/tree/master/Samples/Android/PlayFabCommerce
+
+  # Card
+  - title: Manage user generated content (UGC)
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is PlayFab UGC?
+            url: ugc/index.md
+          - text: UGC quickstart guide
+            url: ugc/quickstart.md
+      - linkListType: tutorial
+        links:
+          - text: Publish your first user generated content
+            url: ugc/publish-ugc.md

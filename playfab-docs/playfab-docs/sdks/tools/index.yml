@@ -1,0 +1,42 @@
+### YamlMime:Landing
+
+title: PlayFab tools and extensions # < 60 chars
+
+metadata:
+  title: PlayFab tools and extensions # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: description # Required; article description that is displayed in search results. < 160 chars.
+  ms.service: service #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.subservice: playfab # Optional; Remove if no subservice is used.
+  ms.topic: landing-page # Required
+  author: Jeffrey-Shi #Required; your GitHub user alias, with correct capitalization.
+  ms.author: jeffshi #Required; microsoft alias of author; optional team alias.
+  ms.date: 05/21/2020 #Required; mm/dd/yyyy format.
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: SDK Generator
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: SDK Generator 
+            url: ../sdkgenerator/index.md
+      - linkListType: quickstart
+        links:
+          - text: SDK Generator quickstart
+            url: ../sdkgenerator/quickstart.md
+
+  # Card
+  - title: Postman
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Postman
+            url: ../postman/index.md
+      - linkListType: quickstart
+        links:
+          - text: Postman quickstart
+            url: ../postman/postman-quickstart.md

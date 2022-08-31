@@ -1,0 +1,14 @@
+- name: PlayFab Social
+  href: index.yml
+- name: What is Social
+  href: social/index.md
+- name: Friends
+  href: friends/toc.yml
+- name: Groups, Guilds and Clans
+  href: groups/toc.yml
+- name: Tournaments and Leaderboards
+  href: tournaments-leaderboards/toc.yml
+- name: Trading
+  href: trading/toc.yml
+- name: Leaderboards v2 [BETA]
+  href: leaderboardsv2/toc.yml

@@ -1,0 +1,27 @@
+log/
+obj/
+_site/
+.optemp/
+_themes*/
+_repo.*/
+
+# User-specific files
+*.suo
+*.user
+*.sln.docstates
+*.lock.json
+.vscode/
+.vs/
+.idea/
+
+# ignore vim generated files
+*.un~
+*.swp~
+
+.openpublishing.buildcore.ps1
+playfab-docs/features/multiplayer/servers/media/tutorials/game-manager-settings-api-features-allow-client-to-start-games.png
+playfab-docs/features/multiplayer/servers/allocating-game-servers-and-configuring-vs-debugging-tools.md
+playfab-docs/features/multiplayer/servers/using-the-server-map-view.md
+tatus
+.vs/slnx.sqlite
+.vs/slnx.sqlite

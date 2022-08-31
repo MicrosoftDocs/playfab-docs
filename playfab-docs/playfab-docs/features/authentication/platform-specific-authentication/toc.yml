@@ -1,0 +1,31 @@
+- name: Overview
+  href: index.md
+- name: Tutorials
+  href: tutorials.md
+  items:
+  - name: Running an HTTP server for testing
+    href: running-an-http-server-for-testing.md
+  - name: Setting up PlayFab authentication using Facebook and HTML5
+    href: facebook-html5.md
+  - name: Setting up PlayFab authentication using Facebook and Unity
+    href: facebook-unity.md
+  - name: Setting up PlayFab authentication using Google and HTML5
+    href: google-html5.md
+  - name: Setting up PlayFab authentication using Google Play Games Sign-In in Unity
+    href: google-sign-in-unity.md
+  - name: Setting up PlayFab authentication using Kongregate and HTML5
+    href: kongregate-html5.md
+  - name: Setting up PlayFab authentication using Kongregate and Unity
+    href: kongregate-unity.md
+  - name: Setting up PlayFab authentication in Phaser.io
+    href: phaser-io.md
+  - name: Setting up PlayFab authentication using Steam and Unity
+    href: steam-unity.md
+  - name: Setting up PlayFab authentication using Twitch and HTML5
+    href: twitch-html5.md
+  - name: Setting up PlayFab authentication using Universal Windows Platform
+    href: uwp.md
+  - name: Setup Sign In with Apple for PlayFab
+    href: apple-open-id.md
+  - name: Integrating the Universal Windows Platform with PlayFab
+    href: uwp-integration.md

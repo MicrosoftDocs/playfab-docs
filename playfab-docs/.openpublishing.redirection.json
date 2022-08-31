@@ -1,0 +1,14 @@
+{
+    "redirections": [
+        {
+            "source_path": "playfab-docs/resources/recipes-and-samples.md",
+            "redirect_url": "/gaming/playfab/resources/playfab-samples",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "playfab-docs/features/multiplayer/servers/unreal_playfabgsdk_guide.md",
+            "redirect_url": "/gaming/playfab/features/multiplayer/servers/server-sdks/unreal-gsdk/",
+            "redirect_document_id": true
+        }
+    ]
+}
