@@ -1,8 +1,0 @@
-- name: General PlayFab samples
-  href: playfab-samples.md
-- name: Multiplayer Servers samples
-  href: ../features/multiplayer/servers/server-samples-resources.md
-- name: Party samples
-  href: ../features/multiplayer/networking/party-samples.md
-- name: Recipes
-  href: playfab-recipes.md

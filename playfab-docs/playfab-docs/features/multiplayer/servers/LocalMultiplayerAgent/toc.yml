@@ -1,6 +1,0 @@
-- name: LocalMultiplayerAgent Overview
-  href: local-multiplayer-agent-overview.md
-- name: Debug Process-based game server 
-  href: run-process-based-gameserver.md
-- name: Debug Container-based game server
-  href: run-container-gameserver.md

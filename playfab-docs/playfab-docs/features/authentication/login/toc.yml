@@ -1,7 +1,0 @@
-- name: Overview
-  href: index.md
-  items:
-  - name: Login basics and Best Practices
-    href: login-basics-best-practices.md
-- name: Quickstart
-  href: quickstart.md
