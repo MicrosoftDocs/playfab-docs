@@ -12,6 +12,9 @@ ms.localizationpriority: medium
 
 # Game Manager reference
 
+> [!IMPORTANT]
+> As of 8/31/2022, Game Manager is retiring support for browsers using TLS 1.0 or 1.1 and will require any connection to be TLS 1.2 or higher.  If you’re suddenly unable to access Game Manager, please check that you’re using a browser that supports TLS 1.2. Make sure your browser is up to date and has 1.2 protocols enabled. This should allow you to regain access, but if you continue to experience issues, please let us know through the [Bugs](https://community.playfab.com/spaces/23/index.html) section of our forums.
+
 This reference familiarizes you with the high-level aspects of the Game Manager. For more detailed information, you may select your specific topic of interest in the PlayFab documentation that follows.
 
 To get the most value from this topic, you should have created your PlayFab account, logged in, and viewed the Game Manager for your title, even if it's an empty title for now.
