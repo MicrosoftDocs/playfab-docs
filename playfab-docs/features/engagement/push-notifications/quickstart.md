@@ -59,7 +59,7 @@ Consider the following scenario:
 
 - Each player may pay 1 CH currency, and challenge another player who is up to 5 positions away from the current player.
 
-First, consider a virtual currency as shown in the example screenshot below (see the [Currencies](../../commerce/economy/currencies.md) tutorial for information on how to define a virtual currency).
+First, consider a virtual currency as shown in the example screenshot below (see the [Currencies](../../economy/tutorials/currencies.md) tutorial for information on how to define a virtual currency).
 
 ![PlayFab Economy - Currencies - New Currency](../media/tutorials/playfab-new-currency.png)
 

@@ -10,7 +10,7 @@ keywords: playfab, analytics, a/b testing, experiments, experimentation
 ms.localizationpriority: medium
 ---
 
-# Quick Start
+# Quickstart
 
 ## Create an Experiment
 

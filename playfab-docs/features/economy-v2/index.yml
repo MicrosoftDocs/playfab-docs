@@ -1,0 +1,110 @@
+### YamlMime:Landing
+
+title: Azure PlayFab Economy v2 documentation # < 60 chars
+summary: PlayFab Economy v2 provides a platform to build and grow marketplaces, progression, and engagement that scale with your players. # < 160 chars
+
+metadata:
+  title: PlayFab Economy documentation
+  description: Hub page for the PlayFab Economy v2 documentation. Here you can find feature overviews, quickstart guides, and tutorials.  # Required; article description that is displayed in search results. < 160 chars.
+  ms.service: playfab #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.topic: landing-page
+  author: cybtachyon
+  ms.author: derekreese
+  ms.date: 09/07/2022
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card
+  - title: Get started with Economy v2
+    linkLists:
+      - linkListType: whats-new
+        links:
+          - text: Overview
+            url: overview.md
+      - linkListType: quickstart
+        links:
+          - text: PlayFab Quickstart
+            url: ../../gamemanager/quickstart.md
+          - text: Catalog v2 Quickstart
+            url: quickstart.md
+          - text: Inventory v2 Quickstart
+            url: inventory/quickstart.md
+      - linkListType: reference
+        links:
+          - text: Field & API Limits
+            url: catalog/limits.md
+          - text: PlayFab SDKs
+            url: /sdks/playfab-sdk-intro
+          - text: Catalog API Reference
+            url: /rest/api/playfab/economy/catalog
+          - text: Player Inventory API Reference
+            url: /rest/api/playfab/client/player-item-management
+          - text: User-Generated Content API Reference
+            url: /rest/api/playfab/admin/content
+          - text: Pricing
+            url: ../pricing/Meters/meters.md#economy-v2
+
+# Card
+  - title: Manage in-app purchases
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What are content types and item properties?
+            url: catalog/content-types-tags-and-properties.md
+          - text: What are stores?
+            url: stores.md
+      - linkListType: quickstart
+        links:
+          - text: Fraud Prevention, Redemption, Receipt Validation Quickstart
+            url: fraud-prevention/quickstart.md
+      - linkListType: tutorial
+        links:
+          - text: Manage Virtual Currencies
+            url: tutorials/currencies.md
+          - text: Start with Unity & Android In-App-Purchases
+            url: tutorials/getting-started-with-unity-and-android.md
+
+# Card
+  - title: Run sales events and promotions
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What are bundles?
+            url: bundles.md
+      - linkListType: sample
+        links:
+          - text: Add a progressive reward system
+            url: https://github.com/PlayFab/PlayFab-Samples/tree/main/Recipes/ProgressiveRewardsv2
+
+  # Card
+  - title: Manage User Generated Content (UGC)
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is PlayFab UGC?
+            url: ugc/index.md
+      - linkListType: quickstart
+        links:
+          - text: UGC quickstart guide
+            url: ugc/quickstart.md
+      - linkListType: tutorial
+        links:
+          - text: Publish your first user generated content
+            url: tutorials/publish-ugc.md
+
+  # Card
+  - title: Get involved with PlayFab
+    linkLists:
+      - linkListType: learn
+        links:
+          - text: Frequently-Asked Questions
+            url: https://community.playfab.com/questions/index.html?sort=votes
+          - text: Community Forum
+            url: https://community.playfab.com/spaces/31/index.html
+          - text: Feature Requests
+            url: https://community.playfab.com/spaces/24/index.html
+          - text: Docs Feedback
+            url: https://github.com/MicrosoftDocs/playfab-docs/issues

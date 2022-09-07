@@ -20,7 +20,7 @@ Rewards usually involve *other* systems outside of player data, so this example 
 - A player must sign into *both* titles using the same credentials. One approach is to use **Recoverable Credentials**, as described in our [Login Basics and Best Practices](../../authentication/login/login-basics-best-practices.md) tutorial. To add a **Recoverable** login to an anonymous account, see our [Account Linking](../../authentication/login/quickstart.md) tutorial.
 - This example requires a working knowledge of [CloudScript](../../automation/cloudscript/writing-custom-cloudscript.md):
   - Our example demonstrates basic data security to avoid player cheating. One could likewise use the server API on a custom game server, if the title makes use of them.
-- Rewards triggered through PlayFab require usage of the appropriate PlayFab features. PlayFab Rewards can be in the form of [**Virtual Currency**](../../commerce/economy/currencies.md), [**Inventory Items**](player-inventory.md), [**Custom Player Data**](quickstart.md), [**Statistics**](using-player-statistics.md), etc. Distributing rewards outside of PlayFab systems is an advanced topic, and is not covered in this tutorial.
+- Rewards triggered through PlayFab require usage of the appropriate PlayFab features. PlayFab Rewards can be in the form of [**Virtual Currency**](../../economy/tutorials/currencies.md), [**Inventory Items**](player-inventory.md), [**Custom Player Data**](quickstart.md), [**Statistics**](using-player-statistics.md), etc. Distributing rewards outside of PlayFab systems is an advanced topic, and is not covered in this tutorial.
 
 We also recommended that developers use good error handling on all server API calls made from CloudScript.
 
