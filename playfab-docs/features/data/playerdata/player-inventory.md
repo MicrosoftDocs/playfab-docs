@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 ## Requirements
 
-In order to use the player inventory, you must have a catalog defined for your title. Please read our [Catalogs](../../commerce/items/catalogs.md) tutorial for more information.
+In order to use the player inventory, you must have a catalog defined for your title. Please read our [Catalogs](../../economy/items/catalogs.md) tutorial for more information.
 
 > [!NOTE]
 > Optionally, you can also define stores for your catalog.
@@ -49,7 +49,7 @@ The example shown below illustrates the code blocks that call these API methods,
 > [!NOTE]
 > For reference, these examples come from **Unicorn Battle**, a game we built as an example to demonstrate the PlayFab features.
 
-The **AU** virtual currency used below is **Gold**, a free currency earned by fighting monsters (See our [Currencies](../../commerce/economy/currencies.md) tutorial).
+The **AU** virtual currency used below is **Gold**, a free currency earned by fighting monsters (See our [Currencies](../../economy/tutorials/currencies.md) tutorial).
 
 Before we get started, we will be defining a few utility functions that will be used and reused in most of the examples in this guide.
 
@@ -184,7 +184,7 @@ There is no built-in API for buying back inventory items from the player, as the
 - The PlayFab Server API [AddUserVirtualCurrency](xref:titleid.playfabapi.com.server.playeritemmanagement.adduservirtualcurrency)** can return an appropriate amount of virtual currency. It is *not* currently possible to return real money through PlayFab API methods.
 
 > [!NOTE]
-> Items and virtual currencies have a close relationship. For more information, see our [Currencies](../../commerce/economy/currencies.md) tutorial.
+> Items and virtual currencies have a close relationship. For more information, see our [Currencies](../../economy/tutorials/currencies.md) tutorial.
 
 The following CloudScript function combines the two described server calls into a single client-accessible call.
 

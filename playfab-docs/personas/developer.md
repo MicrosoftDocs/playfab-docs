@@ -80,7 +80,7 @@ Some of the different ways that you can map PlayFab onto a Title are shown below
 
 - [Title Data](../features/data/titledata/quickstart.md) – Map variables containing data on PlayFab to data structures in your game clients.
 - [Entity Objects](../features/data/entities/quickstart.md) (aka: Player Data) – Store and retrieve data on a per player basis.
-- [Catalogs](../features/commerce/items/catalogs.md) (Items) - Very useful for storing configuration data about your Items and potentially being able to sell them as virtual goods.
+- [Catalogs](../features/economy/items/catalogs.md) (Items) - Very useful for storing configuration data about your Items and potentially being able to sell them as virtual goods.
 - [Groups](../features/social/groups/using-shared-group-data.md) – Groups are generally used for things like guilds or clans. Groups are arbitrary and have members, roles and other guild-like features.
 
 Finally, check out each of our feature areas in the links provided below to find the right feature set for your Title:
@@ -89,7 +89,7 @@ Finally, check out each of our feature areas in the links provided below to find
 - [Data](../features/data/index.yml)
 - [Automation](../features/automation/index.yml)
 - [Social](../features/social/index.yml)
-- [Economy](../features/commerce/index.yml)
+- [Economy](../features/economy/index.yml)
 - [Multiplayer](../features/multiplayer/index.yml)
 - [Analytics](../features/analytics/index.yml)
 - [Engagement](../features/engagement/index.yml)

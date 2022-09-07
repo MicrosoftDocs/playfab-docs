@@ -1,12 +1,12 @@
 ---
 title: Using Cognitive Services
-description: Guidance on how to use PlayFab Party Cognitive Services in your Unreal Engine 4 Project.
+description: Guidance on how to use PlayFab Party Cognitive Services in your Unreal Engine Project.
 author: PFarqMS
 ms.author: phifarq
 ms.date: 08/17/2020
 ms.topic: article
 ms.prod: playfab
-keywords: playfab, multiplayer, networking, unreal, unreal engine, unreal engine 4, middleware
+keywords: playfab, multiplayer, networking, unreal, unreal engine, unreal engine 4, unreal engine 5, middleware
 ---
 
 # Introduction to Cognitive Services

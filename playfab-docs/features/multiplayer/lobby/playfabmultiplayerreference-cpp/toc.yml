@@ -204,5 +204,9 @@
   items:
   - name: PFEntityKey - Client SDK
     href: pfmultiplayer\pfentitykey_clientsdk.md
+- name: Constants
+  items:
+  - name: Pre-defined Search Keys - Client SDK
+    href: pflobby\constants\pflobbysearchkeys.md
 - name: Error Codes
   href: pfmultiplayererrors.md

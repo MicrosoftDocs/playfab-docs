@@ -97,7 +97,7 @@ The API calls shown below will introduce new data for total new users if the **C
 
 The unique paying users, revenue, purchases, Average Revenue Per User (ARPU), Average Revenue Per Paying User (ARPPU) and average purchase price metrics are used to analyze purchases and payments.
 
-See the [Non-receipt Payment Processing](../../commerce/economy/non-receipt-payment-processing.md) tutorial, for more information on conducting payments.
+See the [Non-receipt Payment Processing](../../economy/tutorials/non-receipt-payment-processing.md) tutorial, for more information on conducting payments.
 
 ## How to work with report charts
 
@@ -113,4 +113,4 @@ Metrics available in the chart timeline include:
 
 - The average number of instances through all the timestamps (AVG).
 - The peak value (MAX).
-- The lowest value (MIN). 
+- The lowest value (MIN).

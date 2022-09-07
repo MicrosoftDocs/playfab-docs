@@ -9,6 +9,171 @@
             "source_path": "playfab-docs/features/multiplayer/servers/unreal_playfabgsdk_guide.md",
             "redirect_url": "/gaming/playfab/features/multiplayer/servers/server-sdks/unreal-gsdk/",
             "redirect_document_id": true
+        },
+        {
+            "source_path": "playfab-docs/features/commerce/index.yml",
+            "redirect_url": "/gaming/playfab/features/economy/",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "playfab-docs/features/commerce/economy/index.md",
+            "redirect_url": "/gaming/playfab/features/economy-what-is",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "playfab-docs/features/commerce/economy/quickstart.md",
+            "redirect_url": "/gaming/playfab/features/economy/quickstart",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "playfab-docs/features/commerce/economy/tutorials.md",
+            "redirect_url": "/gaming/playfab/features/economy/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/commerce/economy/coupons-and-promotions.md",
+            "redirect_url": "/gaming/playfab/features/economy/tutorials/coupons-and-promotions",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "playfab-docs/features/commerce/economy/currencies.md",
+            "redirect_url": "/gaming/playfab/features/economy/tutorials/currencies",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "playfab-docs/features/commerce/economy/getting-a-players-vtd.md",
+            "redirect_url": "/gaming/playfab/features/economy/tutorials/getting-a-players-vtd",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "playfab-docs/features/commerce/economy/getting-started-with-unity-iap-android.md",
+            "redirect_url": "/gaming/playfab/features/economy/tutorials/getting-started-with-unity-iap-android",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "playfab-docs/features/commerce/economy/non-receipt-payment-processing.md",
+            "redirect_url": "/gaming/playfab/features/economy/tutorials/non-receipt-payment-processing",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "playfab-docs/features/commerce/items/index.md",
+            "redirect_url": "/gaming/playfab/features/economy/items/",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "playfab-docs/features/commerce/items/quickstart.md",
+            "redirect_url": "/gaming/playfab/features/economy/items/quickstart",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "playfab-docs/features/commerce/items/tutorials.md",
+            "redirect_url": "/gaming/playfab/features/economy/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/commerce/items/catalogs.md",
+            "redirect_url": "/gaming/playfab/features/economy/items/catalogs",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "playfab-docs/features/commerce/items/drop-tables.md",
+            "redirect_url": "/gaming/playfab/features/economy/tutorials/drop-tables",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "playfab-docs/features/commerce/items/timed-consumables.md",
+            "redirect_url": "/gaming/playfab/features/economy/tutorials/timed-consumables",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "playfab-docs/features/commerce/stores/index.md",
+            "redirect_url": "/gaming/playfab/features/economy/stores/",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "playfab-docs/features/commerce/stores/quickstart.md",
+            "redirect_url": "/gaming/playfab/features/economy/stores/quickstart",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "playfab-docs/features/commerce/stores/tutorials.md",
+            "redirect_url": "/gaming/playfab/features/economy/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/commerce/stores/best-practices-for-store-segmentation.md",
+            "redirect_url": "/gaming/playfab/features/economy/tutorials/best-practices-for-store-segmentation",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "playfab-docs/features/commerce/stores/custom-stores-for-player-segments.md",
+            "redirect_url": "/gaming/playfab/features/economy/tutorials/custom-stores-for-player-segments",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "playfab-docs/features/commerce/stores/stores-and-sales.md",
+            "redirect_url": "/gaming/playfab/features/economy/tutorials/stores-and-sales",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "playfab-docs/features/commerce/ugc/index.md",
+            "redirect_url": "/gaming/playfab/features/economy-v2/ugc/",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "playfab-docs/features/commerce/ugc/quickstart.md",
+            "redirect_url": "/gaming/playfab/features/economy-v2/ugc/quickstart",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "playfab-docs/features/commerce/ugc/search.md",
+            "redirect_url": "/gaming/playfab/features/economy-v2/catalog/search",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "playfab-docs/features/commerce/ugc/moderation.md",
+            "redirect_url": "/gaming/playfab/features/economy-v2/ugc/moderation",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "playfab-docs/features/commerce/ugc/ratings.md",
+            "redirect_url": "/gaming/playfab/features/economy-v2/catalog/ratings",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "playfab-docs/features/commerce/ugc/settings.md",
+            "redirect_url": "/gaming/playfab/features/economy-v2/settings",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "playfab-docs/features/commerce/ugc/item-visibility.md",
+            "redirect_url": "/gaming/playfab/features/economy-v2/catalog/item-status",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "playfab-docs/features/commerce/ugc/etags.md",
+            "redirect_url": "/gaming/playfab/features/economy-v2/catalog/etags",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "playfab-docs/features/commerce/ugc/billable-meters.md",
+            "redirect_url": "/gaming/playfab/features/pricing/Meters/ugc-meters",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "playfab-docs/features/commerce/ugc/limits.md",
+            "redirect_url": "/gaming/playfab/features/economy-v2/catalog/limits",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "playfab-docs/features/commerce/ugc/tutorials.md",
+            "redirect_url": "/gaming/playfab/features/economy-v2/",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "playfab-docs/features/commerce/ugc/publish-ugc.md",
+            "redirect_url": "/gaming/playfab/features/economy-v2/tutorials/publish-ugc",
+            "redirect_document_id": true
         }
     ]
 }

@@ -62,14 +62,14 @@ A *defining characteristic* of a player might be a:
 - Their virtual currency values
 - Real money purchases, etc.
 
-> [!Note]
+> [!NOTE]
 > Player's location is only one of your *many* possible options, and is only required for this example. Feel free to replace the country/region requirement with another filter of your choice.
 
 When a segment is defined, you have a variety of action options to run when a player enters or leaves the segment.
 
  CloudScript is by far the most flexible action, granting you full control of the player and segment information at the time of segment-transition.
 
-Use the second parameter - *context* - in your [CloudScript handler](../../automation/actions-rules/using-cloudscript-actions-with-playstream.md) to identify the player and segment transition. Afterwards, you can perform any action you wish for the player, such as granting [inventory items](../../data/playerdata/player-inventory.md), [virtual currency](../../commerce/economy/currencies.md), [player data](../../data/playerdata/quickstart.md), or [statistics](using-player-statistics.md).
+Use the second parameter - *context* - in your [CloudScript handler](../../automation/actions-rules/using-cloudscript-actions-with-playstream.md) to identify the player and segment transition. Afterwards, you can perform any action you wish for the player, such as granting [inventory items](../../data/playerdata/player-inventory.md), [virtual currency](../../economy/tutorials/currencies.md), [player data](../../data/playerdata/quickstart.md), or [statistics](using-player-statistics.md).
 
 In our example shown here, the segment configuration requires 4 simple steps.
 

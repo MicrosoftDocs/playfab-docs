@@ -175,8 +175,8 @@ The following example shows the **Edit Currency** page for **Great Game**.
 
 Additional Information:
 
-- [Catalogs Tutorial](../features/commerce/items/catalogs.md)
-- [Currencies Tutorial](../features/commerce/economy/currencies.md)
+- [Catalogs](../features/economy/items/catalogs.md)
+- [Currencies Tutorial](../features/economy/tutorials/currencies.md)
 
 [Back to About the Game Manager](#about-game-manager)
 
@@ -200,8 +200,8 @@ The User Generated Content tab displays all published content for your title. Wh
 
 Additional Information:
 
-- [UGC Overview](../features/commerce/ugc/index.md)
-- [UGC Quickstart](../features/commerce/ugc/quickstart.md)
+- [UGC Overview](../features/economy-v2/ugc/index.md)
+- [UGC Quickstart](../features/economy-v2/ugc/quickstart.md)
 
 [Back to About the Game Manager](#about-game-manager)
 
