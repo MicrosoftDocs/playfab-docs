@@ -1,7 +1,10 @@
+items:
 - name: What is Game Manager?  
   href: index.md
 - name: Quickstart
   href: quickstart.md
+- name: Addons
+  href: add-ons.md
 - name: Reference
   href: reference.md  
 - name: Tutorials

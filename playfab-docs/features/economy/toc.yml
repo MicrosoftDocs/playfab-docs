@@ -1,0 +1,11 @@
+items:
+- name: Economy
+  href: index.yml
+- name: Items
+  href: items/toc.yml
+- name: Stores
+  href: stores/toc.yml
+- name: Quickstart
+  href: quickstart.md
+- name: Tutorials
+  href: tutorials/toc.yml

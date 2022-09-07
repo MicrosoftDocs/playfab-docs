@@ -93,6 +93,15 @@ PlayFab Party is a low-latency chat and data communication solution for cross-pl
 > [!NOTE]
 > Party Network Egress is metered and priced separately from Multiplayer Servers Network Egress.
 
+### Economy v2
+
+PlayFab Economy v2 is a massively scalable read-oriented service that can handles hundreds of millions of active players with large inventories and catalogs.
+
+* **[Economy Reads](economy-reads.md)**: Metered by API calls that read from the Catalog, Inventories, and related APIs. Reads are the cheapest calls to make, and with smart caching on your clients and backend can power scalable games for low cost.
+* **[Economy Writes](economy-writes.md)**: Metered by API calls that write to the Catalog, Inventories, and related APIs. Writes are substantially more expensive and so it makes sense to batch and delay them in your game backend where possible.
+* **[Economy Storage](economy-storage.md)**: Metered by storing images, files, and other binary content, storage mostly pertains to User Generated Content and Stores. Other items may support storage instead of an Economy Write as a way of reducing your costs. Cleaning up old store sale data, mods, or outdated/unused UGC will provide the greatest savings here.
+* **[UGC Meters](ugc-meters.md)**: Metered by API Requests and Storage, UGC pricing is based around storing binary content and metadata on PlayFab to serve to game clients. Bandwidth is the primary concern here, so setting up a CDN is paramount to keeping costs low.
+
 ## Additional resources
 
 * For the most up-to-date view of prices per meter, see [PlayFab pricing](https://playfab.com/pricing/)

@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 This tutorial walks you through how to create a prize table that triggers a set of actions on a group of players within a range of ranks, in a [Resettable Leaderboard](using-resettable-statistics-and-leaderboards.md).
 
-In particular, this is a way to trigger emails, send push notifications, grant [Inventory Items](../../data/playerdata/player-inventory.md) and [Virtual Currency](../../commerce/economy/currencies.md), or execute a [CloudScript](../../automation/cloudscript/writing-custom-cloudscript.md) function at the reset of a leaderboard.
+In particular, this is a way to trigger emails, send push notifications, grant [Inventory Items](../../data/playerdata/player-inventory.md) and [Virtual Currency](../../economy/tutorials/currencies.md), or execute a [CloudScript](../../automation/cloudscript/writing-custom-cloudscript.md) function at the reset of a leaderboard.
 
 In this example, we show you how to create prize table end tournament prizes, which grants virtual currency to 5 players based on their rank in a leaderboard after a reset is performed.
 
@@ -26,7 +26,7 @@ In this example, we show you how to create prize table end tournament prizes, wh
 - Basic knowledge of how to create a player will be necessary, as there will need to be players in a leaderboard before it can perform any actions on those players.
 - It is also worthwhile to read the [Game Manager quickstart](../../../gamemanager/quickstart.md) if you are unfamiliar with the Game Manager, as it is the place where prize tables are created.
 - In order to use Prize Tables, you must have general knowledge of how resettable leaderboards work. Please read about leaderboards in our tutorial [Using Resettable Statistics and Leaderboards](using-resettable-statistics-and-leaderboards.md).
-- Additionally, virtual currencies must be set up. Please read our tutorial about [Currencies](../../commerce/economy/currencies.md) and set up two currencies with the following parameters:
+- Additionally, virtual currencies must be set up. Please read our tutorial about [Currencies](../../economy/tutorials/currencies.md) and set up two currencies with the following parameters:
   - **Currency code**: GO
   - **Display name**: Gold
   - **Initial deposit**: 200
@@ -222,4 +222,3 @@ Another way of checking that the **Virtual Currency** was granted correctly is:
 - This will show a **player_virtual_currency_balance_changed** event with specific details on amounts that changed for the **Virtual Currency** granted.
 
 ![Game Manager - Players - Event History Chart - Check Virtual Currency Change](media/tutorials/game-manager-players-event-history-chart-check-vc-changed.png)
- 

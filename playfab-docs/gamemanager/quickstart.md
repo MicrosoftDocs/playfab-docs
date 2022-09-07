@@ -12,6 +12,9 @@ ms.localizationpriority: medium
 
 # Quickstart: Game Manager
 
+> [!IMPORTANT]
+> As of 8/31/2022, Game Manager is retiring support for browsers using TLS 1.0 or 1.1 and will require any connection to be TLS 1.2 or higher.  If you’re suddenly unable to access Game Manager, please check that you’re using a browser that supports TLS 1.2. Make sure your browser is up to date and has 1.2 protocols enabled. This should allow you to regain access, but if you continue to experience issues, please let us know through the [Bugs](https://community.playfab.com/spaces/23/index.html) section of our forums.
+
 Get started with PlayFab by using Game Manager to create your PlayFab account, create your Studio, and create your first Title.
 
 ## Create a PlayFab account

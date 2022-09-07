@@ -1,10 +1,19 @@
-- name: Meters Overview
-  href: meters.md
-- name: Profile Reads
-  href: profile-reads.md
-- name: Profile Writes
-  href: profile-writes.md
-- name: Content & Configuration Reads
-  href: file-reads.md
-- name: Content & Configuration Writes
-  href: file-writes.md
+items:
+  - name: Meters Overview
+    href: meters.md
+  - name: Profile Reads
+    href: profile-reads.md
+  - name: Profile Writes
+    href: profile-writes.md
+  - name: Content & Configuration Reads
+    href: file-reads.md
+  - name: Content & Configuration Writes
+    href: file-writes.md
+  - name: Economy v2 Reads
+    href: economy-reads.md
+  - name: Economy v2 Writes
+    href: economy-writes.md
+  - name: Economy v2 Storage
+    href: economy-storage.md
+  - name: Economy v2 UGC Meters
+    href: ugc-meters.md

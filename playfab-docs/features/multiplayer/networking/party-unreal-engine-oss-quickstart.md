@@ -1,17 +1,17 @@
 ---
 title: PlayFab Online Subsystem (OSS) Quickstart
-description: Guidance on how to use PlayFab Party in your Unreal Engine 4 Project.
+description: Guidance on how to use PlayFab Party in your Unreal Engine Project.
 author: PushpadantK
 ms.author: pkacha
 ms.date: 05/10/2022
 ms.topic: article
 ms.prod: playfab
-keywords: playfab, multiplayer, networking, unreal, unreal engine, unreal engine 4, middleware
+keywords: playfab, multiplayer, networking, unreal, unreal engine, unreal engine 4, unreal engine 5, middleware
 ---
 
 # QuickStart: PlayFab Online Subsystem (OSS)
 
-This quickstart guide helps you set up and use Multiplayer features such as Lobby, Matchmaking and Party for Xbox, PC, and Nintendo Switch games built using Unreal Engine 4. For the full list of supported platforms and versions in UE4, see [Supported platforms](party-unreal-engine-oss-overview.md).
+This quickstart guide helps you set up and use Multiplayer features such as Lobby, Matchmaking and Party for Xbox, PC, and Nintendo Switch games built using Unreal Engine 4 or Unreal Engine 5. For the full list of supported platforms and versions in UE4 or UE5, see [Supported platforms](party-unreal-engine-oss-overview.md).
 
 After following the relevant steps below for your target platforms, you'll be ready to start using the OSS. Authentication, networking, VOIP, grouping into lobbies, and matchmaking will be handled on your behalf with no other changes required.
 
@@ -34,7 +34,7 @@ Go to [UE OSS PlayFab](https://github.com/PlayFab/PlayFabMultiplayerUnreal) to d
 
 ## Initial setup
 
-* Copy the **OnlineSubsystemPlayFab** folder and its contents from to your UE4 directory under **Engine\Plugins\Online**
+* Copy the **OnlineSubsystemPlayFab** folder and its contents from to your UE directory under **Engine\Plugins\Online**
 * Apply the following changes to the Plugins section of your ".uproject" file. This will add the OnlineSubsystemPlayFab to your plugin list.
   * You may remove any platforms that you're not shipping on
 

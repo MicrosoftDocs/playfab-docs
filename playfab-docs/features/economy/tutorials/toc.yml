@@ -1,0 +1,21 @@
+items:
+  - name: Best Practices for Store Segmentation
+    href: best-practices-for-store-segmentation.md
+  - name: Coupons and Promotions
+    href: coupons-and-promotions.md
+  - name: Currencies
+    href: currencies.md
+  - name: Custom Stores for Player Segments
+    href: custom-stores-for-player-segments.md
+  - name: Drop Tables
+    href: drop-tables.md
+  - name: Getting a Player's Value-to-Date (VTD)
+    href: getting-a-players-vtd.md
+  - name: Getting started with PlayFab, Unity IAP, and Android
+    href: getting-started-with-unity-iap-android.md
+  - name: Non-Receipt Payment Processing
+    href: non-receipt-payment-processing.md
+  - name: Stores and Sales
+    href: stores-and-sales.md
+  - name: Timed Consumables
+    href: timed-consumables.md
