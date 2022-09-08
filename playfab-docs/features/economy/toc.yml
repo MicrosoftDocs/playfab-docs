@@ -1,5 +1,5 @@
 items:
-- name: Economy
+- name: PlayFab Economy
   href: index.yml
 - name: Items
   href: items/toc.yml

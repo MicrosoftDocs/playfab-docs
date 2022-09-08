@@ -1,17 +1,17 @@
 items:
-- name: Content Types, Tags, & Properties
+- name: Content types, tags, and properties
   href: content-types-tags-and-properties.md
-- name: Deep Links
+- name: Deep links
   href: deep-links.md
-- name: Etags & Concurrency
+- name: Etags and concurrency
   href: etags.md
-- name: Item Status & Moderation
+- name: Item status and moderation
   href: item-status.md
 - name: Limits
   href: limits.md
 - name: Localization
   href: localization.md
-- name: Ratings & Reviews
+- name: Ratings and reviews
   href: ratings.md
 - name: Search
   href: search.md

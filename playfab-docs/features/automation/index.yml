@@ -55,7 +55,7 @@ landingContent:
           - text: Handling errors in CloudScript
             url: cloudscript/handling-errors-in-cloudscript.md
 
-  - title: Master CloudScript
+  - title: Using CloudScript
     linkLists:
       - linkListType: concept
         links:

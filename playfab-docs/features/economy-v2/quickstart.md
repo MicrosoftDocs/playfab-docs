@@ -10,7 +10,7 @@ keywords: playfab, commerce, economy
 ms.localizationpriority: medium
 ---
 
-# Catalog v2 Quick Start
+# Catalog v2 quickstart
 
 [!INCLUDE [notice](../../includes/_economy-release.md)]
 
@@ -20,9 +20,9 @@ Assuming you've already worked through the [Getting started for developers](../.
 1. Set up Receipt Validation
 1. Walk through purchasing an item
 
-## Part 1: Catalog Overview
+## Part 1: Catalog overview
 
-### Step 1 – Get Permissions
+### Step 1 – Get permissions
 
 To interact with the Catalog you either need to Log into GameManger and use the site tools, or get an Entity Token for using the APIs. The easiest way to get an entity token is with the [GetEntityToken](/rest/api/playfab/authentication/authentication/get-entity-token) API.
 
@@ -322,7 +322,7 @@ Save the Id returned for later in this Quickstart.
 > [!NOTE]
 > Catalog/search filter, orderBy, and select fields use [OData](/odata/concepts/queryoptions-overview) as the query standard.
 
-## Part 2: Inventory and Virtual Currencies Overview
+## Part 2: Inventory and Virtual Currencies overview
 
 Inventory Items and Virtual Currencies are the two in-game ‘buckets’ of virtual goods that PlayFab supports for Player Entities. In order to use them, you:  
 
@@ -491,6 +491,10 @@ curl \
 }
 ```
 
-If you do not set "Publish" to "true", you will need to push it to the published state using [PublishDraftItem](/rest/api/playfab/economy/catalog/publish-draft-item). Once an Item is published, it's searchable and available publicly. You need to use the "itemId" returned from the GetDraftItem response in order to publish.
+If you do not set **Publish** to **TRUE**, you will need to push it to the published state using [PublishDraftItem](/rest/api/playfab/economy/catalog/publish-draft-item). Once an Item is published, it's searchable and available publicly. You need to use the "itemId" returned from the GetDraftItem response in order to publish.
 
-***
+## See also
+
+* [Economy v2 overview](overview.md)
+* [Settings](settings.md)
+* [Stores](stores.md)

@@ -1,7 +1,7 @@
 ---
-title: Economy v2 Settings Overview
+title: Economy v2 settings overview
 author: cybtachyon
-description: Landing page for Settings.
+description: Economy v2 settings.
 ms.author: derekreese
 ms.date: 09/07/2022
 ms.topic: article
@@ -10,11 +10,11 @@ keywords: playfab, economy, settings
 ms.localizationpriority: medium
 ---
 
-# Economy v2 Settings
+# Economy v2 settings
 
 [!INCLUDE [notice](../../includes/_economy-release.md)]
 
-Economy v2 includes the following configuration that can be updated in Game Manager bg selecting `Economy` > `Catalog (v2)` then `⚙️ Settings`.
+Economy v2 includes the following configuration that can be updated in Game Manager bg selecting **Economy** > **Catalog (v2)** then **⚙️ Settings**.
 
 These settings can also be set and accessed via APIs using the [UpdateCatalogConfig](/rest/api/playfab/economy/catalog/update-catalog-config) and [GetCatalogConfig](/rest/api/playfab/economy/catalog/get-catalog-config) calls respectively. Catalog Config APIs can only be called by [title entities](/gaming/playfab/features/data/entities/#title).
 
@@ -22,7 +22,7 @@ These settings can also be set and accessed via APIs using the [UpdateCatalogCon
 
 ### Catalog admins
 
-Players that you add to _Catalog admins_ can administrate your catalog including all read and write operations. Adding these players is useful for providing access to Third Parties who are entering content or localizations for your game.
+Players that you add to **Catalog admins** can administrate your catalog including all read and write operations. Adding these players is useful for providing access to Third Parties who are entering content or localizations for your game.
 
 Catalog Admins are players that are given full title-level access to the published and draft catalog. Players accessing `SearchItems` or `GetItem` APIs have read and write access to all published items including:
 
@@ -37,7 +37,7 @@ Admins also have the ability to edit or delete any item in the draft or public c
 
 ### Catalog reviewers
 
-Players that you add to _Catalog reviewers_ can administrate and update their reviews and ratings for public (visible and published) items in your catalog. Players with paid accounts or who have been active a certain amount of time are often segments added via [UpdateCatalogConfig](/rest/api/playfab/economy/catalog/update-catalog-config) API call to this list.
+Players that you add to **Catalog reviewers** can administrate and update their reviews and ratings for public (visible and published) items in your catalog. Players with paid accounts or who have been active a certain amount of time are often segments added via [UpdateCatalogConfig](/rest/api/playfab/economy/catalog/update-catalog-config) API call to this list.
 
 * Catalog Admins are players that are given the ability to see unreleased content (any published item with a **future start date**).
 * Reviewers are **not** able to edit or delete items (except their own content).
@@ -81,3 +81,10 @@ Even if APIs are enabled, Players are only able to publish, edit, and delete con
 
 > [!NOTE]
 > Although Admin Players are given title-level edit, delete, and access privileges, they are still considered players for the purposes of Policies. For example, if the `DeleteItem` API was disabled for all players, Admins will not be able to delete content (but titles will continue to be able to)
+
+## See also
+
+* [Economy v2 overview](overview.md)
+* [Quickstart](quickstart.md)
+* [Stores](stores.md)
+* [Bundles](bundles.md)
