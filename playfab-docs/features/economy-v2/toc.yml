@@ -1,11 +1,11 @@
 items:
-  - name: Landing Page
+  - name: PlayFab Economy v2
     href: index.yml
   - name: Overview
     href: overview.md
   - name: Quickstart
     href: quickstart.md
-  - name: Catalog & Item Concepts
+  - name: Catalogs and Items
     href: catalog/toc.yml
   - name: Bundles
     href: bundles.md

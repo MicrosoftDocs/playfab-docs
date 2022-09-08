@@ -1,7 +1,7 @@
 ---
-title: Fraud Prevention Quickstart
+title: Fraud prevention quickstart
 author: cybtachyon
-description: Get started with Receipt Validation for PlayFab Economy v2.
+description: Get started with receipt validation for PlayFab Economy v2.
 ms.author: derekreese
 ms.date: 09/07/2022
 ms.topic: quickstart
@@ -10,17 +10,17 @@ keywords: playfab, economy, catalog, receipts, purchases, fraud, piracy
 ms.localizationpriority: medium
 ---
 
-# Fraud Prevention Quickstart
+# Fraud prevention quickstart
 
 [!INCLUDE [notice](../../../includes/_economy-release.md)]
 
-This Quickstart will get you running with Receipt Validation on the Microsoft Store ([Windows 10/11](/windows/uwp/publish/), [Xbox](/gaming/xbox/), [Android](https://blogs.windows.com/windows-insider/2021/10/20/announcing-android-apps-on-windows-11-preview-for-windows-insiders-in-the-beta-channel/)).
+This quickstart will get you running with receipt validation on the Microsoft Store ([Windows 10/11](/windows/uwp/publish/), [Xbox](/gaming/xbox/), [Android](https://blogs.windows.com/windows-insider/2021/10/20/announcing-android-apps-on-windows-11-preview-for-windows-insiders-in-the-beta-channel/)).
 
 ## Prerequisites
 
-The [PlayFab Economy v2 Quickstart](../quickstart.md) will get you set up and ready to perform receipt validation.
+The [PlayFab Economy v2 quickstart](../quickstart.md) will get you set up and ready to perform receipt validation.
 
-## Microsoft Store Marketplace Receipt Validation
+## Microsoft Store Marketplace receipt validation
 
 * [GetMicrosoftStoreAccessTokens](/rest/api/playfab/economy/inventory/getmicrosoftstoreaccesstokens)
 * [RedeemMicrosoftStoreInventoryItems](/rest/api/playfab/economy/inventory/redeemmicrosoftstoreinventoryitems)
@@ -38,11 +38,11 @@ Each Bundle can be linked to one or more Partner Marketplace Products by adding 
 > [!NOTE]
 > Unlike previous incarnations of Playfab, in the new system you just create one bundle offer, and then you add each market SKU that needs to reference into the AlternateId list. You don’t need to create a new Item for each IAP market.
 
-### Step 1 - Setting up your Marketplace Integration
+### Step 1 - Setting up your marketplace integration
 
 You need to set up each IAP Market integration in GameManager under the Add-ons section, to allow PlayFab to call the Market on the Title’s behalf.
 
-### Step 2 - Creating a Bundle for Receipt Validation
+### Step 2 - Creating a bundle for receipt validation
 
 You can [create a bundle](../bundles.md) either within GameManager or by calling `CreateDraftItem`. Minimally a Bundle requires a Title, Description, and Items. In GameManager, you can link Marketplace entries using the Marketplace Mapping section.
 
