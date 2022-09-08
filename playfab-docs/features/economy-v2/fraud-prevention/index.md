@@ -1,5 +1,5 @@
 ---
-title: Fraud Prevention, Redemption, Receipt Validation
+title: Fraud prevention, redemption, receipt validation
 author: cybtachyon
 description: Learn about fraud prevention, item redemption, receipt validation, and other piracy protection measures.
 ms.author: derekreese
@@ -10,7 +10,7 @@ keywords: playfab, economy, catalog, receipts, purchases, fraud, piracy
 ms.localizationpriority: medium
 ---
 
-# Fraud Prevention, Redemption, Receipt Validation
+# Fraud prevention, redemption, receipt validation
 
 [!INCLUDE [notice](../../../includes/_economy-release.md)]
 
@@ -42,13 +42,13 @@ Piracy is the act of copying and distributing software without the permission of
 
 You can convert a pirate player to a paying customer via [Anti-Piracy techniques](#anti-piracy).
 
-## Idempotent Transactions
+## Idempotent transactions
 
 PlayFab Economy v2 transactions are idempotent, meaning they can be retried any number of times, and if the transaction has already been completed, the transaction will be ignored. When a player attempts to make a purchase and the request is duplicated, the player won't be charged twice.
 
 Learn more about Idempotency in our [Inventory Overview](../inventory/index.md#idempotency).
 
-## Receipt Validation
+## Receipt validation
 
 Economy v2 supports the following add-on API endpoints:
 
@@ -76,7 +76,7 @@ Economy v2 supports the following add-on API endpoints:
 
 You can use [Insights](../../insights/data-explorer/index.md) to detect and prevent this fraud vector.
 
-## Anti-Piracy
+## Anti-piracy
 
 Techniques to combat piracy and convert pirates to paying customers:
 

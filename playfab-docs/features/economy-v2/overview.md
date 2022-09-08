@@ -1,5 +1,5 @@
 ---
-title: Economy v2 Overview
+title: Economy v2 overview
 author: cybtachyon
 description: Learn the differences and changes from PlayFab Economy v1 to v2
 ms.author: derekreese
@@ -10,7 +10,7 @@ keywords: playfab, commerce, economy
 ms.localizationpriority: medium
 ---
 
-# Economy v2.0 Overview
+# Economy v2.0 overview
 
 [!INCLUDE [notice](../../includes/_economy-release.md)]
 
@@ -30,7 +30,7 @@ It's designed with the same flexibility and extensibility that you would expect 
 
 You should use version 2, and if you're on version 1, you should look at upgrading. While we are _not_ deprecating v1 and will maintain and support it for all titles, it is in bugfix-only mode and new Economy features are being developed only for version 2.
 
-## Key Feature Changes
+## Key feature changes
 
 Some Economy features didn't make the cut to v2. These features were ones whose feedback centered around them being too restrictive to be useful. In response, we launched Azure Functions as an enhanced successor to CloudScript and have provided recipe-style documentation as starting points for your own custom implementations. We then focused our efforts on what you told us was most important.
 
@@ -55,3 +55,9 @@ Economy v2 brings new useful features:
 * Support for custom workflow in [authoring with draft states](catalog/item-status.md) and [Policies permissions sets for Catalog admins and reviewers](settings.md)
   * You can pre-publish Catalog Items with a future start date
 * [Bundle items](bundles.md) that can be linked to multiple external marketplace items
+
+## See also
+
+* [Quickstart](quickstart.md)
+* [Settings](settings.md)
+* [Stores](stores.md)
