@@ -37,6 +37,12 @@ API](/rest/api/playfab/multiplayer/pub-sub/negotiate).
 This API implements the Negotiate API described [in the SignalR
 documentation](https://github.com/dotnet/aspnetcore/blob/main/src/SignalR/docs/specs/TransportProtocols.md#post-endpoint-basenegotiate-request).
 
+> [!Warning]
+> Using [MessagePack (MsgPack)
+> encoding](https://github.com/dotnet/aspnetcore/blob/main/src/SignalR/docs/specs/HubProtocol.md#messagepack-msgpack-encoding)
+> when connecting to the SignalR Hub is strongly recommended, and will be
+> enforced as the only supported encoding in the future.
+
 > [!NOTE]
 > 1. SignalR client implementations expect the URL to omit the `/negotiate`
 >    portion of this path (ex: HubConnection should created to a URL that ends
@@ -44,8 +50,6 @@ documentation](https://github.com/dotnet/aspnetcore/blob/main/src/SignalR/docs/s
 > 1. The auth headers required to call this API can be passed to the SignalR
 >    client via `HttpConnectionOptions` as [seen on this
 >    method](/dotnet/api/microsoft.aspnetcore.signalr.client.hubconnectionbuilderhttpextensions.withurl#microsoft-aspnetcore-signalr-client-hubconnectionbuilderhttpextensions-withurl(microsoft-aspnetcore-signalr-client-ihubconnectionbuilder-system-string-system-action((microsoft-aspnetcore-http-connections-client-httpconnectionoptions)))).
-> 1. The only encoding the hub currently supports is [JSON
->    encoding](https://github.com/dotnet/aspnetcore/blob/main/src/SignalR/docs/specs/HubProtocol.md#json-encoding).
 
 ## Implementing client methods to receive messages
 
