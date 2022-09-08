@@ -15,7 +15,7 @@ items:
     href: ugc/toc.yml
   - name: Player Inventory
     href: inventory/toc.yml
-  - name: Fraud Prevention, Redemption, Receipt Validation
+  - name: Fraud prevention, redemption, receipt validation
     href: fraud-prevention/toc.yml
   - name: Settings
     href: settings.md
