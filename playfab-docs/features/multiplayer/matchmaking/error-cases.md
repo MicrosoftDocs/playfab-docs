@@ -71,6 +71,8 @@ After that timeout, the title should cancel the ticket and check that all player
 
 Once a match is created, the match will live for a period of time and eventually age out. If the match is not retrieved in time, those users will need to resubmit tickets to get matched again. This can be avoided by ensuring matches are retrieved in a timely manner (i.e., within a few minutes).
 
+If you are using Matchmaking and Lobby together as described [here](../lobby/lobby-and-matchmaking.md), it's possible that the lobbyArrangementString is valid for a period of time after the match times out here. Make sure you retrieve and use the info from GetMatch before it expires. 
+
 ## The ticket is canceled
 
 Tickets may be canceled for multiple reasons. The most common cases are user cancellations and tickets expiring, but the ticket can also be canceled by the server. If you call `GetMatchmakingTicket`, and discover your ticket is canceled, the reason will be listed in the `CancellationReason` field. Requested, Timeout, and Internal correspond to user cancellation, ticket expiration, and server cancellation respectively.
