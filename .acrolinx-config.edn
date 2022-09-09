@@ -1,11 +1,26 @@
 {:allowed-branchname-matches ["main"]
  :allowed-filename-matches ["playfab-docs/features" "playfab-docs/gamemanager" "playfab-docs/miscellaneous" "playfab-docs/personas" "playfab-docs/release-notes" "playfab-docs/resources" "playfab-docs/roadmap" "playfab-docs/sdks"]
  
+   :targets 
+   {
+     :counts {
+              ;;:spelling 10
+              ;;:grammar 3
+              ;;:total 15
+              ;;:issues 15
+             }
+     :scores {
+              ;;:terminology 100
+              :qualityscore 80
+              ;;:spelling 40
+             }
+   }
+ 
  :template-header ;; This displays in the pull request results pane.  Can be overriden in repo-specific edn file. Ensure you match the indentations at the line starts exactly.
  "
  ## Acrolinx Scorecards
  
-**No minimum score has been set for this repo at this time.**
+**The minimum Acrolinx topic score of 80 is required for all content merged to the default branch.**
 
 Click the scorecard links for each article to review the Acrolinx feedback on grammar, spelling, punctuation, writing style, and terminology.
 
