@@ -33,8 +33,11 @@ ms.date: 06/22/2020
 | [Get](methods/playfabunityget.md) | Returns a reference to the PlayFabMultiplayerManager singleton instance. |
 | [JoinNetwork](methods/playfabunityjoinnetwork.md) | Joins this player to the specified network. |
 | [LeaveNetwork](methods/playfabunityleavenetwork.md) | Causes the local player to leave the network. |
+| [ResetParty](methods/playfabunityresetparty.md) | Leaves Network, cleans up and re-initializes all resources related to Party and the corresponding PlayFabMultiplayerManager object. If the object was connected to a network, attempts to reconnect to the same network. |
+| [Resume](methods/playfabunityresume.md) | When the app is resumed, re-initializes Party and all resources of PlayFabMultiplayerManager object. |
 | [SendDataMessage](methods/playfabunitysenddatamessage.md) |Sends a data message to the specified players using the specified delivery options. The most advanced method for sending data messages, allowing the developer more control over how the message is sent. |
 | [SendDataMessageToAllPlayers](methods/playfabunitysenddatamessagetoallplayers.md) | Broadcasts a data message to all players. |
+| [Suspend](methods/playfabunitysuspend.md) | During app suspension, suspends execution of Party and immediately reclaims all resources associated with the PlayFabMultiplayerManager object. |
 | [UpdateEntityToken](methods/playfabunityupdateentitytoken.md) | Updates the Entity token for the current local user. |
 
 ## Events
