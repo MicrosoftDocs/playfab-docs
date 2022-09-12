@@ -52,6 +52,6 @@ The screen shown below is an example of the **Segment** described above.
 
 The most complex part of this example is the CloudScript. Utilize the second parameter, *Context*, in your [CloudScript handler](../../automation/actions-rules/using-cloudscript-actions-with-playstream.md) to identify the player, and segment transition.
 
-Afterwards, perform any action you wish on the player, such as granting [inventory items](../../data/playerdata/player-inventory.md), [virtual currency](../../commerce/economy/currencies.md), [player data](../../data/playerdata/quickstart.md), or [statistics](../../data/playerdata/using-player-statistics.md).
+Afterwards, perform any action you wish on the player, such as granting [inventory items](../../data/playerdata/player-inventory.md), [virtual currency](../../economy/tutorials/currencies.md), [player data](../../data/playerdata/quickstart.md), or [statistics](../../data/playerdata/using-player-statistics.md).
 
-See also: [Best Practices for store segmentation](../../commerce/stores/best-practices-for-store-segmentation.md)
+See also: [Best Practices for store segmentation](../../economy/tutorials/best-practices-for-store-segmentation.md)

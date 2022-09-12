@@ -1,0 +1,23 @@
+items:
+  - name: PlayFab Economy v2
+    href: index.yml
+  - name: Overview
+    href: overview.md
+  - name: Quickstart
+    href: quickstart.md
+  - name: Catalogs and Items
+    href: catalog/toc.yml
+  - name: Bundles
+    href: bundles.md
+  - name: Stores
+    href: stores.md
+  - name: User Generated Content
+    href: ugc/toc.yml
+  - name: Player Inventory
+    href: inventory/toc.yml
+  - name: Fraud prevention, redemption, receipt validation
+    href: fraud-prevention/toc.yml
+  - name: Settings
+    href: settings.md
+  - name: Tutorials
+    href: tutorials/toc.yml

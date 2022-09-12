@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # A/B testing with stores and test buckets
 
-In our [Stores and Sales](../../commerce/stores/stores-and-sales.md) tutorial, we demonstrate how to set up a store and make a few items available to a player at special or alternate prices.
+In our [Stores and Sales](../../economy/tutorials/stores-and-sales.md) tutorial, we demonstrate how to set up a store and make a few items available to a player at special or alternate prices.
 
 In our [A/B Testing quickstart](quickstart.md), we demonstrate how to create A/B tests and form player
 buckets for random, percentage-based user distribution.
@@ -44,4 +44,4 @@ For each group of players, you assign a different version of the store. You may 
 
 ## Best practices for store segmentation
 
-Please consult the following tutorial: [Best practices for Store Segmentation](../../commerce/stores/best-practices-for-store-segmentation.md).
+Please consult the following tutorial: [Best practices for Store Segmentation](../../economy/tutorials/best-practices-for-store-segmentation.md).

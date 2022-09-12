@@ -27,11 +27,11 @@ public class PFEntityKey
 | name | description |
 | --- | --- |
 | [Id](PFEntityKey/Id.md) | Unique ID of the entity. |
-| [Type](PFEntityKey/Type.md) | Entity type. See [https://docs.microsoft.com/gaming/playfab/features/data/entities/available-built-in-entity-types](/gaming/playfab/features/data/entities/available-built-in-entity-types). |
+| [Type](PFEntityKey/Type.md) | Entity type. See [Available built-in entity types](/gaming/playfab/features/data/entities/available-built-in-entity-types). |
 
 ## Remarks
 
-For more information about entities, see [https://docs.microsoft.com/gaming/playfab/features/data/entities/](/gaming/playfab/features/data/entities/).
+For more information about entities, see [Entity Programming Model](/gaming/playfab/features/data/entities/).
 
 ## See Also
 

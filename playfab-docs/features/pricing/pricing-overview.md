@@ -1,8 +1,8 @@
 ---
 title: PlayFab Pricing Overview
-author: mckmoffatt
+author: cybtachyon
 description: Overview of PlayFab pricing and easy access to pricing documentation.
-ms.author: mcelliot
+ms.author: derekreese
 ms.date: 09/17/2020
 ms.topic: article
 ms.prod: playfab
@@ -26,7 +26,7 @@ ms.localizationpriority: medium
 
 5. **[Party Pricing](../multiplayer/networking/pricing.md):** Learn about Party pricing when Party is enabled.
 
-6. **[User Generated Content Pricing](../commerce/ugc/billable-meters.md):** Learn about User Generated Content (UGC) pricing when UGC is enabled.
+6. **[User Generated Content Pricing](meters/ugc-meters.md):** Learn about User Generated Content (UGC) pricing when UGC is enabled.
 
 7. **[Experiments Pricing](../analytics/experiments/pricing.md):** Learn about Experiments pricing when used.
 
@@ -34,4 +34,4 @@ ms.localizationpriority: medium
 
 9. **[Upgrading Accounts](../pricing/account-upgrades.md):** Upgrade your account plan using the self-serve plans experience in Game Manager.
 
-10.  **[Launching Titles](../pricing/title-launches.md):** Launch your titles in Game Manager.
+10. **[Launching Titles](../pricing/title-launches.md):** Launch your titles in Game Manager.

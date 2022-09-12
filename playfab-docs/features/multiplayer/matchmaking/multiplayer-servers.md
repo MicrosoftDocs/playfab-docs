@@ -14,21 +14,20 @@ ms.localizationpriority: medium
 
 Matchmaking includes an option that can automatically create a game server for the resulting match. The allocated server will run a build, which is configured in the queue's config. On startup, the server is passed in the members of the match as the list of initial players.
 
-A matchmaking queue is tied to a single multiplayer server build.
+A matchmaking queue is tied to a single multiplayer server build or to a build alias. 
 
 ## Requirements to use direct integration of matchmaking and servers
 
-In order to allocate a multiplayer server from matchmaking, you will first need to configure a build and deploy it. Follow the link we have provided here to get more information about that [Multiplayer Server builds](../servers/deploying-playfab-multiplayer-server-builds.md).
+In order to allocate a multiplayer server from matchmaking, you will first need to configure a build and deploy it. You can optionally create a build alias and use that as well. Build aliases are preferred as they allow more flexibility for your title usage. Follow the link we have provided here to get more information about [Multiplayer Server builds](../servers/deploying-playfab-multiplayer-server-builds.md) and [Multiplayer Server build alias](../servers/allocating-with-build-alias.md)
 
 Matchmaking also needs a region selection rule to be added to the queue, so that matches can be allocated in the optimal region for the build. The latency measurements passed into the region selection rule should match the regions where the build is active. For more information on how to pass attributes to a region selection rule see [Region selection rule](ticket-attributes.md#region-selection-rule).
 
 ## Activating server allocation for the queue
 
-In order to enable server allocation for a queue, you will need to enable the checkbox for **Enable server allocation** on the queue config page, and provide the
-`BuildId` (`guid`) to associate with the queue. Once you enable the feature, matchmaking will attempt to allocate a server for all the matches created within the queue.
+In order to enable server allocation for a queue, you will need to enable the checkbox for **Enable server allocation** on the queue config page. Once you've enabled that, choose either **Build alias** or **Build Id**. Choose the correct value from the drop-down to be used by the queue. Once you enable the feature, matchmaking will attempt to allocate a server for all the matches created within the queue.
 
 The following example is what the config for a queue with multiplayer server integration should
-look like.
+look like using a Build Id.
 
 ```json
 "MatchmakingQueue": {
@@ -37,16 +36,31 @@ look like.
     "MaxMatchSize": 2,
     "ServerAllocationEnabled": true,
     "BuildId": "88b3e315-829c-4b6d-9872-74f427ad5331",
-    "Rules": [
-        {
-            "Type": "RegionSelectionRule",
-            "MaxLatency": 1000,
-            "Path": "Latencies",
-            "Weight": 1,
-            "Name": "RegionRule",
-            "SecondsUntilOptional": 60
-        }
-    ]
+	"RegionSelectionRule": {
+		"MaxLatency": 1000,
+		"Path": "Latencies",
+		"Weight": 1.0,
+		"Name": "RegionSelectionRule"
+	}
+}
+```
+Here is the same example with a build alias used.
+
+```json
+"MatchmakingQueue": {
+    "Name": "ServerEnabledQueue",
+    "MinMatchSize": 2,
+    "MaxMatchSize": 2,
+    "ServerAllocationEnabled": true,
+    "BuildAliasParams": {
+        "AliasId": "d14e2ac7-ea51-47aa-a7ba-cc427ab74f9s"
+    },
+	"RegionSelectionRule": {
+		"MaxLatency": 1000,
+		"Path": "Latencies",
+		"Weight": 1.0,
+		"Name": "RegionSelectionRule"
+	}
 }
 ```
 

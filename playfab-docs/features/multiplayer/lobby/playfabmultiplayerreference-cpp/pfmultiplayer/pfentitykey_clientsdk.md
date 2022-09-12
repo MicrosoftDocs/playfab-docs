@@ -31,17 +31,14 @@ Unique ID of the entity.
 **`type`** &nbsp; const char*  
 *_Null_terminated_*  
   
-Entity type. See [https://docs.microsoft.com/gaming/playfab/features/data/entities/available-built-in-entity-types](/gaming/playfab/features/data/entities/available-built-in-entity-types).
+Entity type. See [Available built-in entity types](/gaming/playfab/features/data/entities/available-built-in-entity-types).
   
-Player entities are typically the ```title_player_account``` type. For more information, see See [https://docs.microsoft.com/gaming/playfab/features/data/entities/available-built-in-entity-types](/gaming/playfab/features/data/entities/available-built-in-entity-types).
-  
-## Remarks  
-  
-For more information about entities, see [https://docs.microsoft.com/gaming/playfab/features/data/entities/](/gaming/playfab/features/data/entities/).
+Player entities are typically the `title_player_account` type. For more information, see See [Available built-in entity types](/gaming/playfab/features/data/entities/available-built-in-entity-types).
+
+## Remarks
+
+For more information about entities, see [Entity Programming Model](/gaming/playfab/features/data/entities/).
   
 ## Requirements  
-  
-**Header:** PFEntityKey.h
 
-  
-  
+**Header:** PFEntityKey.h

@@ -12,17 +12,21 @@ ms.localizationpriority: medium
 
 # Matchmaking REST API quickstart 
 
+> [!NOTE]
+> We highly recommend you consider using the Multiplayer SDKs as it includes real-time notification support that reduces the need for polling. This will improve the matchmaking experience and reduce delays. [Quickstart - Client SDK](quickstart-client-sdk.md)
+
 This quickstart guide walks you through the entire process for integrating the matchmaking feature. All code examples within this quickstart are for Unity - however, the concepts and flow apply (in general) to other platforms as well.
 
 Depending on your game design, consider the [single user](#single-user-ticket-matchmaking) and [multiple
 user](#multiple-user-ticket-matchmaking) matchmaking section.
 
-> [!NOTE]
-> This guide assumes that you have *already configured* a matchmaking queue in Game Manager.
-
 This tutorial illustrates how to submit a ticket to a specific queue in order to find a game. A queue likely maps to a game mode or multiple game modes (ex.: a capture the flag mode and a king of the hill mode in the same queue).
 
 The matchmaking service handles finding a match amongst tickets in a queue. When a match is found, your title must handle connecting the players together for gameplay.
+
+## Configure a matchmaking queue in Game Manager
+
+The quickstart assumes that you have configured your queue(s) in Game Manager. For details on how to set one up, see [Configuring matchmaking queues](config-queues.md).
 
 ## Single user ticket matchmaking
 
@@ -75,7 +79,7 @@ PlayFabMultiplayerAPI.CreateMatchmakingTicket(
 
 ### Check the status of the matchmaking ticket
 
-You must poll the service by `TicketId` to access the `Status` of the ticket in matchmaking. In order to do so, have your title call [GetMatchmakingTicket](xref:titleid.playfabapi.com.multiplayer.matchmaking.getmatchmakingticket). You can poll up to 10 times per minute. For instance, poll for the ticket status every 6 seconds.
+You must poll the service by `TicketId` to access the `Status` of the ticket in matchmaking. In order to do so, have your title call [GetMatchmakingTicket](xref:titleid.playfabapi.com.multiplayer.matchmaking.getmatchmakingticket). You can poll up to 10 times per minute. For instance, poll for the ticket status every 6 seconds. Polling can increase delays when retrieving the status of your ticket. It is for this reason we highly recommend you consider using the Multiplayer SDK method described here [Quickstart - Client SDK](quickstart-client-sdk.md). This avoids the need to poll by using the real-time notification functionality. 
 
 When the status of
 the ticket changes to `Matched`, your client can stop polling the ticket. From that point on, the ticket will include the `MatchId`.
@@ -184,9 +188,3 @@ Using this quickstart, you should now have a successful matchmaking flow in your
 * How your title handles group formation.
 * What your title displays while users are waiting for a match.
 * How to handle failures and retries.
-
-### Known issues and limitations
-
-In Public Preview, polling of tickets is required to obtain the match status and match ID. In the near future, we will have a push mechanism for the clients to be updated on state changes.
-
-The multi-user ticket flow will also be improved by the push mechanism. Follow the [PlayFab blog](https://blog.playfab.com/blog) for future updates on improvements to matchmaking.

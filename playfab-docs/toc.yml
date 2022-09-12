@@ -1,3 +1,4 @@
+items:
 - name: PlayFab
   href: index.yml
 - name: What is PlayFab?
@@ -11,17 +12,23 @@
     href: features/authentication/toc.yml
   - name: Automation
     href: features/automation/toc.yml
+  - name: Social
+    href: features/social/toc.yml
   - name: Multiplayer
     href: features/multiplayer/toc.yml
   - name: Insights
     href: features/insights/toc.yml
   - name: Social
     href: features/social/toc.yml
-- name: Engagement
+- name: Engage
   expanded: true
   items:
+  - name: What is Economy?
+    href: features/economy-what-is.md
   - name: Economy
-    href: features/commerce/toc.yml
+    href: features/economy/toc.yml
+  - name: Economy v2
+    href: features/economy-v2/toc.yml
   - name: Engagement (Player retention)
     href: features/engagement/toc.yml
 - name: Analyze
