@@ -38,6 +38,8 @@
     href: pflobby/functions/pflobbygetlobbypropertykeys.md
   - name: PFLobbyGetMaxMemberCount
     href: pflobby/functions/pflobbygetmaxmembercount.md
+  - name: PFLobbyGetMemberConnectionStatus
+    href: pflobby/functions/pflobbygetmemberconnectionstatus.md
   - name: PFLobbyGetMemberProperty
     href: pflobby/functions/pflobbygetmemberproperty.md
   - name: PFLobbyGetMemberPropertyKeys
@@ -108,6 +110,8 @@
     href: pflobby/enums/pflobbydisconnectingreason.md
   - name: PFLobbyInviteListenerStatus
     href: pflobby/enums/pflobbyinvitelistenerstatus.md
+  - name: PFLobbyMemberConnectionStatus
+    href: pflobby/enums/pflobbymemberconnectionstatus.md
   - name: PFLobbyMemberRemovedReason
     href: pflobby/enums/pflobbymemberremovedreason.md
   - name: PFLobbyMembershipLock
