@@ -5,7 +5,7 @@ description: "The available policies the lobby service can use to migrate lobby 
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 01/03/2022
+ms.date: 09/09/2022
 ---
 
 # PFLobbyOwnerMigrationPolicy  
@@ -33,6 +33,9 @@ enum class PFLobbyOwnerMigrationPolicy  : uint32_t
 | None | At any point, any member may elect themselves the owner of the lobby, regardless of the state of the current owner.<br/><br/> If the current owner leaves, [PFLobbyGetOwner](../functions/pflobbygetowner.md) will return a null owner until a new owner elects themselves. |  
 | Server | The server is the owner and owner migration is not possible. |  
   
+## Remarks  
+  
+Some migration policies trigger based on the lobby owner's connection status. A member is considered disconnected when their [PFLobbyMemberConnectionStatus](pflobbymemberconnectionstatus.md) value changes from ```PFLobbyMemberConnectionStatus::Connected``` to ```PFLobbyMemberConnectionStatus::NotConnected```.
   
 ## Requirements  
   
@@ -40,6 +43,6 @@ enum class PFLobbyOwnerMigrationPolicy  : uint32_t
   
 ## See also  
 [PFLobby members](../pflobby_members.md)  
-
+[PFLobbyMemberConnectionStatus](pflobbymemberconnectionstatus.md)
   
   

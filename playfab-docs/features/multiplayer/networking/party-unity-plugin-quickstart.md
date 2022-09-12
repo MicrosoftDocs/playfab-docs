@@ -276,3 +276,18 @@ option is P2P, however, using any combination of the flags presented here: [Dire
     PlayFabMultiplayerManager.Get().CreateAndJoinNetwork(networkConfiguration);
     PlayFabMultiplayerManager.Get().OnNetworkJoined += OnNetworkJoined;
     ```
+
+## Handling title suspsension
+Some platforms support temporarily suspending execution of your title: iOS, Switch, and GDK.
+When your title is suspended, the network stack becomes invalidated and PlayFab Party will be unable to maintain a connection to the PlayFab Party network.
+Special consideration is required to handle suspending and resuming execution of your title when using PlayFab Party.
+
+### iOS
+On iOS, you must leave and re-connect to the PlayFab Party network. That can be achieved by calling [ResetParty()](unity-party-api-reference/classes/playfabmultiplayermanager/methods/playfabunityresetparty.md)
+
+### Switch and GDK
+On Nintendo Switch and Microsoft GDK, you must cleanup PlayFab Party and all resources associated with PlayFabMultiplayerManager and wait until the title execution resumes before re-initializing PlayFab Party and reconnecting to your network.
+
+"To cleanup PlayFab Party during a title suspension call [Suspend()](unity-party-api-reference/classes/playfabmultiplayermanager/methods/playfabunitysuspend.md). Once the title has resumed execution call [Resume()](unity-party-api-reference/classes/playfabmultiplayermanager/methods/playfabunityresume.md) to reinitialize PlayFab Party.
+
+Once PlayFab Party and all resources associated with PlayFabMultiplayerManager are successfully initialized, follow the steps outlined above to join a previous PlayFab Party Network again.

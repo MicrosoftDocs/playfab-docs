@@ -5,7 +5,7 @@ description: "PFMultiplayer C/C++ API overview - PFLobby.h"
 ms.author: scmunro
 ms.topic: reference
 ms.prod: playfab
-ms.date: 03/15/2022
+ms.date: 09/09/2022
 ---
 
 # PFMultiplayer C/C++ API overview - PFLobby.h
@@ -23,6 +23,7 @@ ms.date: 03/15/2022
 | [PFLobbyGetLobbyProperty](functions/pflobbygetlobbyproperty.md) | Get the lobby property value from its key. |  
 | [PFLobbyGetLobbyPropertyKeys](functions/pflobbygetlobbypropertykeys.md) | Get the list of lobby property keys. |  
 | [PFLobbyGetMaxMemberCount](functions/pflobbygetmaxmembercount.md) | Gets the max member count of the lobby. |  
+| [PFLobbyGetMemberConnectionStatus](functions/pflobbygetmemberconnectionstatus.md) | Determines a member's connection status to the notification service. |  
 | [PFLobbyGetMemberProperty](functions/pflobbygetmemberproperty.md) | Get the member property's value from its key. |  
 | [PFLobbyGetMemberPropertyKeys](functions/pflobbygetmemberpropertykeys.md) | Get a list of the specified member's property keys. |  
 | [PFLobbyGetMembers](functions/pflobbygetmembers.md) | Gets the list of PlayFab entities currently joined to the lobby as members. |  
@@ -88,6 +89,7 @@ ms.date: 03/15/2022
 | [PFLobbyAccessPolicy](enums/pflobbyaccesspolicy.md) | Values representing the lobby's access policy.|  
 | [PFLobbyDisconnectingReason](enums/pflobbydisconnectingreason.md) | Reasons the client no longer has access to the Lobby.|  
 | [PFLobbyInviteListenerStatus](enums/pflobbyinvitelistenerstatus.md) | Values representing the current status of an invite listener.|  
+| [PFLobbyMemberConnectionStatus](enums/pflobbymemberconnectionstatus.md) | Values representing the current status of a member's connection status to the notification service.|  
 | [PFLobbyMemberRemovedReason](enums/pflobbymemberremovedreason.md) | Reasons why a member was removed from a lobby.|  
 | [PFLobbyMembershipLock](enums/pflobbymembershiplock.md) | Values representing the state of the lobby's membership lock.|  
 | [PFLobbyOwnerMigrationPolicy](enums/pflobbyownermigrationpolicy.md) | The available policies the lobby service can use to migrate lobby ownership between members.|  
