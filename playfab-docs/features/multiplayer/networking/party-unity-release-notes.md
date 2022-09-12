@@ -12,6 +12,16 @@ ms.localizationpriority: medium
 
 # PlayFab Party Unity plugin release notes
 
+## 1.7.6.0
+
+PlayFab Party Unity SDK plugin is supported on Linux (Ubuntu 20.04 and Ubuntu 22.04).
+
+## New features for all platforms
+
+* Adds support for suspending and later resuming titles on Xbox and Switch.
+* Adds support for leaving and later re-joining a Party for iOS app suspension: [ResetParty()](unity-party-api-reference/classes/playfabmultiplayermanager/methods/playfabunityresetparty.md).
+* Various bug fixes.
+
 ## 1.7.0.1
 
 * Enabled peer-to-peer connection on supported platforms, except from mobile ones, by default.

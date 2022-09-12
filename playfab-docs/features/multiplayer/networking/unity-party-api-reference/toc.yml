@@ -67,6 +67,12 @@
               href: classes/playfabmultiplayermanager/methods/playfabunitysenddatamessagetoallplayers.md
             - name: UpdateEntityToken
               href: classes/playfabmultiplayermanager/methods/playfabunityupdateentitytoken.md
+            - name: Suspend
+              href: classes/playfabmultiplayermanager/methods/playfabunitysuspend.md
+            - name: Resume
+              href: classes/playfabmultiplayermanager/methods/playfabunityresume.md
+            - name: ResetParty
+              href: classes/playfabmultiplayermanager/methods/playfabunityresetparty.md
         - name: Events
           items:
             - name: partyunityonchatmessagereceived 

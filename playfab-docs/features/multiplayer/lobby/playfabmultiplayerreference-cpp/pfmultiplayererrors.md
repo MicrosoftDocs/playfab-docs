@@ -25,7 +25,8 @@ The following error codes are used by the PlayFab Multiplayer, Lobby and Matchma
 |	0x89236409	|	-1994169335	|	An unexpected error code was returned by the PlayFab service with a 4XX response code.	|
 |	0x8923640A	|	-1994169334	|	An unexpected error code was returned by the PlayFab service with a 5XX response code.	|
 |	0x8923640B	|	-1994169333	|	The Entity ID is invalid.	|
-|	0x8923640C	|	-1994169332	|	The Entity Type is invalid or unsupported. |
+|	0x8923640C	|	-1994169332	|	The Entity Type is invalid or unsupported.	|
+|	0x8923640D	|	-1994169331	|	A request rate limit was exceeded. The request was not automatically retried again because retries are disabled or the retry-after period was too long.	|
 
 ### Lobby
 | Hex | Dec | Description |
@@ -47,7 +48,7 @@ The following error codes are used by the PlayFab Multiplayer, Lobby and Matchma
 |	0x89236213	|	-1994169837	|	The PlayFab entity token is malformed or otherwise invalid.	|
 |	0x89236214	|	-1994169836	|	The specified Lobby entity ID is invalid.	|
 |	0x89236215	|	-1994169835	|	The provided property bag contains duplicate property keys.	|
-|	0x89236216	|	-1994169834	|	The Lobby service has enacted rate limiting.	|
+|	0x89236216	|	-1994169834	|	A Lobby request rate limit was exceeded. The request was not automatically retried again because retries are disabled or the retry-after period was too long.	|
 |	0x89236217	|	-1994169833	|	The owner of the lobby is not a member of the lobby.	|
 |	0x8923621A	|	-1994169830	|	The operation could not be completed because the entity provided was not locally authenticated. Please login the entity first and provide the library a token using SetEntityToken.	|
 |	0x8923621B	|	-1994169829	|	The provided Lobby state change type is invalid/unknown.	|
@@ -76,6 +77,7 @@ The following error codes are used by the PlayFab Multiplayer, Lobby and Matchma
 |	0x89236232	|	-1994169806	|	The member cannot rejoin the lobby because they have been banned.	|
 |	0x89236233	|	-1994169805	|	The member cannot join the lobby because they are already concurrently a member of the maximum number of allowed lobbies.	|
 |	0x89236234	|	-1994169804	|	The owner cannot promote disconnected member to owner if owner migration policy is Automatic.	|
+|	0x89236235	|	-1994169803	|	The connection status is invalid.	|
 
 ### Matchmaking
 | Hex | Dec | Description |
@@ -94,7 +96,7 @@ The following error codes are used by the PlayFab Multiplayer, Lobby and Matchma
 |	0x8923630B	|	-1994169589	|	The ticket is already completed.	|
 |	0x8923630C	|	-1994169588	|	An unrecoverable failure was encountered when attempting to cancel the ticket.	|
 |	0x8923630D	|	-1994169587	|	One of the users is a member of too many tickets.	|
-|	0x8923630F	|	-1994169585	|	The matchmaking rate limit was exceeded.	|
+|	0x8923630F	|	-1994169585	|	A matchmaking request rate limit was exceeded. The request was not automatically retried again because retries are disabled or the retry-after period was too long.	|
 |	0x89236310	|	-1994169584	|	The timeout elapsed without the service completing the ticket.	|
 |	0x89236311	|	-1994169583	|	The calling entity is invalid.	|
 |	0x89236312	|	-1994169582	|	One of the users in the ticket has invalid attributes.	|
