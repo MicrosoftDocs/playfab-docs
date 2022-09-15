@@ -48,6 +48,7 @@ ms.date: 11/23/2021
 | [LobbyAccessPolicy](./PlayFab.Multiplayer/LobbyAccessPolicy.md) | The access policy for the lobby |
 | [LobbyDisconnectingReason](./PlayFab.Multiplayer/LobbyDisconnectingReason.md) | Reasons the client no longer has access to the Lobby. |
 | [LobbyInviteListenerStatus](./PlayFab.Multiplayer/LobbyInviteListenerStatus.md) | Values representing the current status of an invite listener. |
+| [LobbyMemberConnectionStatus](./PlayFab.Multiplayer/LobbyMemberConnectionStatus.md) | Values representing the current status of a member's connection status to the notification service. |
 | [LobbyMemberRemovedReason](./PlayFab.Multiplayer/LobbyMemberRemovedReason.md) | Reasons why a member was removed from a lobby. |
 | [LobbyMembershipLock](./PlayFab.Multiplayer/LobbyMembershipLock.md) |  |
 | [LobbyOwnerMigrationPolicy](./PlayFab.Multiplayer/LobbyOwnerMigrationPolicy.md) | The available policies the lobby service can use to migrate lobby ownership between members. |
