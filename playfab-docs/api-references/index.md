@@ -40,6 +40,10 @@ If the response fails for any reason, a 400 Bad Request is received. This could 
 
 Each API has some form of security that needs to be passed in the header of each request. See this section to know what needs to be defined. Sometimes this is a session ticket from a login request or it could be your title secret key if you are making server api requests.
 
+## Concurrency
+
+The API service is designed to handle a very large number of concurrent calls from each title, but there are limits and restrictions on the number of concurrent calls that can access a single player or other single entity such as a character or group. If this concurrency limit is exceeded, the API returns an `APIConcurrentRequestLimitExceeded` or `ConcurrentEditError` error code. In general, it is safe to make more than one read request for a given player concurrently, but it is best to make a single update request at a time.
+
 ## Model Definitions
 
 Each response from the API service can contain one or more Models in the response. These are located below the ApiErrorWrapper and each model is represented in the same document as the API. Each model is also linked in the response parent model. You can also visit the Definitions section in each API page to see a list of Models supported by the API.
