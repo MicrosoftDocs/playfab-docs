@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Multiplayer discounts and guidance for Xbox Live managed partners
 
-This page provides pricing information and guidance for Xbox Live managed partners <!-- NEED NEW LINK HERE: [Xbox Live managed partners](https://docs.microsoft.com/windows/uwp/xbox-live/get-started-with-partner/get-started-with-xbox-live-partner) --> interested in using PlayFab services to accomplish multiplayer scenarios across PC, Mobile, and Xbox One.
+This page provides pricing information and guidance for Xbox Live managed partners <!-- NEED NEW LINK HERE: [Xbox Live managed partners](https://learn.microsoft.com/windows/uwp/xbox-live/get-started-with-partner/get-started-with-xbox-live-partner) --> interested in using PlayFab services to accomplish multiplayer scenarios across PC, Mobile, and Xbox One.
 
 PlayFab and Xbox Live have collaborated to allow Xbox Live managed partners to power Xbox Live multiplayer activity with several services at zero cost. This includes [PlayFab Matchmaking](../../features/multiplayer/matchmaking/index.md) and [PlayFab Party](../../features/multiplayer/networking/index.md). If you would like to take advantage of this program we recommend the following multiplayer design:
 
