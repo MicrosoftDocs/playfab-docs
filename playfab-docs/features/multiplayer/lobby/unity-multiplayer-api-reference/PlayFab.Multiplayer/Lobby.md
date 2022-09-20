@@ -32,13 +32,14 @@ public class Lobby
 | [AddMember](Lobby/AddMember.md) | Add a local user as a member to the lobby. |
 | [ForceRemoveMember](Lobby/ForceRemoveMember.md) | Forcibly remove an entity from the lobby. |
 | [GetLobbyProperties](Lobby/GetLobbyProperties.md) |  |
+| [GetMemberConnectionStatus](Lobby/GetMemberConnectionStatus.md) | Determines a member's connection status to the notification service. |
 | [GetMemberProperties](Lobby/GetMemberProperties.md) |  |
 | [GetMembers](Lobby/GetMembers.md) |  |
 | [GetSearchProperties](Lobby/GetSearchProperties.md) |  |
-| [Leave](Lobby/Leave.md) |  (2 methods) |
+| [Leave](Lobby/Leave.md) |  (two methods) |
 | [LeaveAllLocalUsers](Lobby/LeaveAllLocalUsers.md) |  |
-| [PostUpdate](Lobby/PostUpdate.md) |  (6 methods) |
-| [SendInvite](Lobby/SendInvite.md) | Send an invite to this lobby from the local user to the invited entity. (2 methods) |
+| [PostUpdate](Lobby/PostUpdate.md) |  (six methods) |
+| [SendInvite](Lobby/SendInvite.md) | Send an invite to this lobby from the local user to the invited entity. (two methods) |
 | [TryGetOwner](Lobby/TryGetOwner.md) |  |
 
 ## See Also
