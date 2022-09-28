@@ -11,7 +11,7 @@ keywords: playfab, multiplayer, networking, unreal, unreal engine, unreal engine
 
 # QuickStart: PlayFab Online Subsystem (OSS)
 
-This quickstart guide helps you set up and use Multiplayer features such as Lobby, Matchmaking and Party for Xbox, PC, and Nintendo Switch games built using Unreal Engine 4 or Unreal Engine 5. For the full list of supported platforms and versions in UE4 or UE5, see [Supported platforms](party-unreal-engine-oss-overview.md).
+This quickstart guide helps you set up and use Multiplayer features such as Lobby, Matchmaking and Party for Xbox, PC, Nintendo Switch, PlayStation®5 and PlayStation®4 games built using Unreal Engine 4 or Unreal Engine 5. For the full list of supported platforms and versions in UE4 or UE5, see [Supported platforms](party-unreal-engine-oss-overview.md).
 
 After following the relevant steps below for your target platforms, you'll be ready to start using the OSS. Authentication, networking, VOIP, grouping into lobbies, and matchmaking will be handled on your behalf with no other changes required.
 
@@ -30,7 +30,7 @@ Go to [UE OSS PlayFab](https://github.com/PlayFab/PlayFabMultiplayerUnreal) to d
 ### Private platforms
 
 * **Nuget.exe** Find the location of Nuget.exe on your machine and add it to the PATH environment variable.
-* **Specific platform PlayFab Multiplayer and Party libraries:** run SetUpPrivateOSS.ps1 located in the **OnlineSubsystemPlayFab** folder. This script will pull the binaries and source code for the supported private platforms. You must have [access](request-access-for-sdks-samples.md) to our private repositories.
+* **Specific platform PlayFab Multiplayer and Party libraries:** run **SetUpPrivateOSS.ps1 -Platform <Switch | PlayStation>** located in the **OnlineSubsystemPlayFab** folder. This script will pull the binaries and source code for the supported private platforms. You must have [access](request-access-for-sdks-samples.md) to our private repositories.
 
 ## Initial setup
 
@@ -47,14 +47,18 @@ Go to [UE OSS PlayFab](https://github.com/PlayFab/PlayFabMultiplayerUnreal) to d
   "WinGDK",
   "XSX",
   "Win64",
-  "Switch"
+  "Switch",
+  "PS4",
+  "PS5"
  ],
  "SupportedTargetPlatforms": [
   "XboxOneGDK",
   "WinGDK",
   "XSX",
   "Win64",
-  "Switch"
+  "Switch",
+  "PS4",
+  "PS5"
  ]
 }
 ```
@@ -67,6 +71,8 @@ Go to [UE OSS PlayFab](https://github.com/PlayFab/PlayFabMultiplayerUnreal) to d
   * **Xbox One GDK:** XboxOneGDKEngine.ini
   * **PC Steam:** WindowsEngine.ini
   * **Nintendo Switch** SwitchEngine.ini
+  * **PS4™** PS4Engine.ini
+  * **PS5™** PS5Engine.ini
 * Replace the INI sections in the config if they already exist (for example, Engine.GameEngine) with the ones below.
 * Ensure you replace all the *\<REPLACE ME>* fields with your data:
 
@@ -125,6 +131,10 @@ NativePlatformService=Steam
 
 See the [ReadMe.md](https://dev.azure.com/PlayFabPrivate/Switch/_git/PlayFabMultiplayerUnrealSwitch?path=/README.md) file that comes with the Switch PlayFab OSS for more details.
 
+### PS5™ and PS4™
+
+See the [ReadMe.md](https://dev.azure.com/PlayFabPrivate/PS5/_git/PlayFabMultiplayerUnrealPlayStation?path=/README.md) file that comes with the PS5™ and PS4™ PlayFab OSS for more details.
+
 ### Cross-platform
 
 Finally, if your game makes use PlayFab's cross-platform networking support, define which platforms you'll permit to connect:
@@ -135,6 +145,8 @@ Finally, if your game makes use PlayFab's cross-platform networking support, def
 +CompatibleUniqueNetIdTypes=STEAM
 +CompatibleUniqueNetIdTypes=GDK
 +CompatibleUniqueNetIdTypes=SWITCH
++CompatibleUniqueNetIdTypes=PS4
++CompatibleUniqueNetIdTypes=PS5
 ```
 
 VoIP is allowed on all platforms by default unless explicitly excluded for certain platforms. To disable VoIP for a specific platform, add the platform model name to your UE configuration file as shown below.
@@ -148,3 +160,7 @@ VoIP is allowed on all platforms by default unless explicitly excluded for certa
 +Platforms=PS5
 ```
 This completes the setup of OSS required to be used in your game.  Good luck!
+
+"PlayStation" is a registered trademark or trademark of Sony Interactive Entertainment Inc.
+"PS4" is a registered trademark or trademark of Sony Interactive Entertainment Inc.
+"PS5" is a registered trademark or trademark of Sony Interactive Entertainment Inc.
