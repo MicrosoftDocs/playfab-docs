@@ -12,6 +12,14 @@ ms.localizationpriority: medium
 
 # PlayFab Multiplayer C++ SDK release notes
 
+## 1.3.1
+
+September 20, 2022
+
+### Bug fixes
+
+- Fixed a bug that caused websocket resources to leak memory when [PFMultiplayerUninitialize](..\playfabmultiplayerreference-cpp\pfmultiplayer\functions\pfmultiplayeruninitialize.md) was called or when the library internally handled app suspension on Xbox consoles.
+
 ## 1.3.0
 
 September 9, 2022

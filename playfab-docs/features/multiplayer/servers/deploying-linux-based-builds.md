@@ -22,7 +22,7 @@ When using Linux-based game servers, instead of using a managed container image,
 
 ## Required knowledge
 
-* [Docker containers](/learn/modules/intro-to-docker-containers/)
+* [Docker containers](/training/modules/intro-to-docker-containers/)
 
 ## Set up your Windows development device
 
@@ -160,7 +160,7 @@ You can use APIs to manage Linux container images. For the rest of build lifecyc
 
 ## See also
 
-* [Intro to docker containers](/learn/modules/intro-to-docker-containers/)
+* [Intro to docker containers](/training/modules/intro-to-docker-containers/)
 * [Create your first server](create-your-first-server.md)
 * [Resources and samples](server-samples-resources.md)
 * [PlayFab Multiplayer Server SDKs](server-sdks.md)

@@ -18,7 +18,7 @@ For existing PlayFab and Azure customers, you can create a storage container on 
 For existing PlayFab who are new to Azure, you can sign up for an [Azure subscription](https://ms.portal.azure.com/).
 
 > [!Note]
-> Make sure to create your Storage Account in the West US 2, otherwise, egress cost will be applied to your storage account. You can configure up to three Azure blob storage accounts in the WestUS2 region.
+> Make sure to create your Storage Account in the West US 2, otherwise, egress cost will be applied to your storage account. You can configure up to three Azure Blob Storage accounts in the WestUS2 region.
 
 ## Setting up your Storage in Azure
 
