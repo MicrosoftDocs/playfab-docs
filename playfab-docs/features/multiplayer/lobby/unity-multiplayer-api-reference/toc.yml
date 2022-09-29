@@ -27,6 +27,8 @@
               href: PlayFab.Multiplayer/Lobby/ForceRemoveMember.md
             - name: GetLobbyProperties
               href: PlayFab.Multiplayer/Lobby/GetLobbyProperties.md
+            - name: GetMemberConnectionStatus
+              href: PlayFab.Multiplayer/Lobby/GetMemberConnectionStatus.md
             - name: GetMemberProperties
               href: PlayFab.Multiplayer/Lobby/GetMemberProperties.md
             - name: GetMembers
@@ -438,6 +440,8 @@
       href: PlayFab.Multiplayer/LobbyDisconnectingReason.md
     - name: LobbyInviteListenerStatus
       href: PlayFab.Multiplayer/LobbyInviteListenerStatus.md
+    - name: LobbyMemberConnectionStatus
+      href: PlayFab.Multiplayer/LobbyMemberConnectionStatus.md
     - name: LobbyMemberRemovedReason
       href: PlayFab.Multiplayer/LobbyMemberRemovedReason.md
     - name: LobbyMembershipLock

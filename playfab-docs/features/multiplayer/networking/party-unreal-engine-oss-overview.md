@@ -11,7 +11,7 @@ keywords: playfab, multiplayer, networking, unreal, unreal engine, unreal engine
 
 # Overview
 
-The PlayFab Online Subsystem (PF OSS) enables you to make use of Multiplayer features like Lobby, Matchmaking, Party and Azure Cognitive Services in your Unreal Engine 4 (UE4) or Unreal Engine 5 (UE5) game. These features include cross-talk, cross-play, and accessibility features like real-time text chat translation and voice transcription services. It is currently designed for use when developing PC, Xbox, Steam and Nintendo Switch games. This subsystem layer works seamlessly on top of the existing Epic provided base Online Subsystem (OSS) GDK. PlayFab OSS compliments the base OSS by adding support for PlayFab Lobby, Matchmaking, Party networking and Voice over Internet Protocol (VOIP).
+The PlayFab Online Subsystem (PF OSS) enables you to make use of Multiplayer features like Lobby, Matchmaking, Party and Azure Cognitive Services in your Unreal Engine 4 (UE4) or Unreal Engine 5 (UE5) game. These features include cross-talk, cross-play, and accessibility features like real-time text chat translation and voice transcription services. It is currently designed for use when developing PC, Xbox, Steam, Nintendo Switch, PlayStation®5 and PlayStation®4 games. This subsystem layer works seamlessly on top of the existing Epic provided base Online Subsystem (OSS) GDK. PlayFab OSS compliments the base OSS by adding support for PlayFab Lobby, Matchmaking, Party networking and Voice over Internet Protocol (VOIP).
 
 PlayFab OSS works alongside the PlayFab SDK marketplace plugin, which provides other PlayFab functionalities such as economy, leaderboards, and more. For more information, see [PlayFab SDK on the UE4 Marketplace (external site)](https://www.unrealengine.com/marketplace/product/playfab-sdk).
 
@@ -28,6 +28,7 @@ PlayFab OSS works alongside the PlayFab SDK marketplace plugin, which provides o
   - Xbox One GDK
   - PC Steam
   - Nintendo Switch
+  - PS5™ and PS4™
 - Support for cross-play & cross-talk across the above platforms
 - Azure Cognitive Services
     - Real-time text chat translation
@@ -65,8 +66,16 @@ XDK is supported on older version(1.07 and earlier) of the OSS, refer [Using old
 
 - Recommended: Refer to the UEBuild.cs file in the UnrealBuildTool folder for the Switch.
 
+## Which version of the PS5™ and PS4™ SDKs are supported?
+
+- Recommended: Refer to the UEBuild.cs file in the UnrealBuildTool folder for the PS5™ and PS4™.
+
 ## Pricing
 
 **VOIP and Game Networking functionality is free for users signed in with an Xbox Live account, regardless of platform.**
 
 Cognitive services and other services may have a cost associated with them. For details, see [Billing for PlayFab Party](pricing.md) or reach out to your Microsoft Representative.
+
+"PlayStation" is a registered trademark or trademark of Sony Interactive Entertainment Inc.
+"PS4" is a registered trademark or trademark of Sony Interactive Entertainment Inc.
+"PS5" is a registered trademark or trademark of Sony Interactive Entertainment Inc.

@@ -24,6 +24,7 @@ ms.date: 11/23/2021
 | class [LobbyError](./PlayFab.Multiplayer/LobbyError.md) |  |
 | enum [LobbyInviteListenerStatus](./PlayFab.Multiplayer/LobbyInviteListenerStatus.md) | Values representing the current status of an invite listener. |
 | class [LobbyJoinConfiguration](./PlayFab.Multiplayer/LobbyJoinConfiguration.md) | The initial configuration data for the member creating and joining the lobby. |
+| class [LobbyMemberConnectionStatus](./PlayFab.Multiplayer/LobbyMemberConnectionStatus.md) | Values representing the current status of a member's connection status to the notification service. |
 | enum [LobbyMemberRemovedReason](./PlayFab.Multiplayer/LobbyMemberRemovedReason.md) | Reasons why a member was removed from a lobby. |
 | enum [LobbyMembershipLock](./PlayFab.Multiplayer/LobbyMembershipLock.md) |  |
 | class [LobbyMemberUpdateSummary](./PlayFab.Multiplayer/LobbyMemberUpdateSummary.md) | A collection of hints about an update which has been successfully applied to the lobby on behalf of a member. |
