@@ -34,5 +34,5 @@ SendChatMessage, SendChatMessageToAllPlayers, SendDataMessage, SendDataMessageTo
 It is not recommended to call ResetParty API when the title receives non-fatal errors instead the title should wait for appropriate asynchronous callbacks from the library (such as OnNetworkLeft, OnRemotePlayerLeft) and take appropriate actions.
 
 ResetParty should be used in an event when the title is unable to join an existing network with valid network descriptor or if the title is unable to create a new network.
-In addition to this, the title should prevent patterns where multiple clients call ResetParty simultaneously the title is experiencing errors related to Send* APIs.
+The title should prevent a pattern where multiple clients call ResetParty simultaneously the title is experiencing errors related to Send* APIs.
 
