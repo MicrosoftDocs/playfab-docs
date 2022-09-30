@@ -12,6 +12,15 @@ ms.date: 10/09/2022
 
 If PlayFabMultiplayerManager is connected to a network, then the object leaves the network. Moreover, cleans up and re-initializes all resources related to Party and the corresponding PlayFabMultiplayerManager object. If the object was connected to a network, attempts to reconnect to the same network.
 
+Under certain network conditions where connection can be sporadic, you may receive non-fatal errors while calling API such as:
+SendChatMessage, SendChatMessageToAllPlayers, SendDataMessage, SendDataMessageToAllPlayers.
+
+Its recommended to not call this API when the title receives non-fatal errors instead the title should wait for appropriate asynchronous callbacks from the library (such as OnNetworkLeft, OnRemotePlayerLeft) and take appropriate actions.
+
+ResetParty should be used in an event when the title is unable to join an existing network with valid network descriptor or if you are unable to create a new network.
+In addition to this, the title should prevent patterns where multiple clients call ResetParty simultaneously if are experiencing errors related to Send* APIs.
+
+
 ## Syntax
 
 ```csharp
