@@ -3,7 +3,7 @@ author: xmcai2016
 title: Transport options
 description: Summarizes transport options for Party
 ms.author: chpalm
-ms.topic: party
+ms.topic: conceptual
 ms.prod: playfab
 ms.date: 04/13/2020
 ---
