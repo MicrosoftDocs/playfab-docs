@@ -14,6 +14,26 @@ ms.localizationpriority: medium
 
 PlayFab Party had a significant (up to 90%) price drop on October 13, 2020. You can view the updated Party rates on the [Pricing page](https://playfab.com/pricing). For more information about the price drop, see our [blog post](https://blog.playfab.com/blog/starting-today-save-up-to-90-using-playfab-party).
 
+## 1.7.17
+
+October 7, 2022
+
+### Bug fixes
+
+- Fixed a bug where a crash may occur when a chat control is connect to a network on iOS. 
+- Fixed a bug where a crash may occur when enabling iOS log.
+
+## 1.7.16
+
+September 27, 2022
+
+### New Bundle release for macOS
+
+- Added .bundle for Unity plug-in loading and native macOS development.
+
+### Bug fixes
+- Fixed a bug where a crash may occur when enabling macOS log.
+
 ## 1.7.14
 
 August 12, 2022
