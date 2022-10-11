@@ -12,6 +12,14 @@ ms.localizationpriority: medium
 
 # PlayFab Multiplayer C++ SDK release notes
 
+## 1.4.0
+
+October 11, 2022
+
+### New features
+
+- PlayFab Multiplayer v1.4.0 brings support for Android.
+
 ## 1.3.1
 
 September 20, 2022
