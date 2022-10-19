@@ -42,6 +42,7 @@ The following error codes are used by the PlayFab Party APIs:
 | 0x0032 | 50 | Another invitation with the provided identifier already exists in the network. |
 | 0x0036 | 54 | This operation is already in progress. |
 | 0x003C | 60 | Failed to bind because the local address is already in use. |
+| 0x003D | 61 | Failed to complete the operation because a system limit was reached. |
 | 0x003F | 63 | Failed to establish or maintain a connection to a network or remote peer. |
 | 0x004B | 75 | The remote hostname could not be resolved. |
 | 0x0053 | 83 | A request to a PlayFab service timed out. |
@@ -215,6 +216,7 @@ The following error codes are used by the PlayFab Party APIs:
 | 0x1114 | 4372 | A shared property key exceeded the maximum allowed key length. |
 | 0x1119 | 4377 | The party text chat filter level is invalid. |
 | 0x111A | 4378 | A request provided to the PlayFab service had invalid parameters. An invalid region may have been provided to CreateNewNetwork. |
+| 0x111B | 4379 | A send target endpoint was encountered belonging to a device in an invalid connectivity state. |
 | 0x111E | 4382 | An empty shared property key was provided. |
 
 ## Platform-specific errors
