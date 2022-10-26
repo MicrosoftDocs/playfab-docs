@@ -5,7 +5,7 @@ description: Describes how developers can use the Matchmaking Usage Charts
 ms.author: kkline 
 ms.date: 03/30/2020
 ms.topic: article 
-ms.prod: playfab 
+ms.service: playfab
 keywords: playfab, multiplayer, matchmaking, match, usage, telemetry
 ms.localizationpriority: medium
 ---
