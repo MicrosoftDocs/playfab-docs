@@ -5,7 +5,7 @@ description: Quickstart which demonstrates a matchmaking flow using the client S
 ms.author: kevinasg
 ms.date: 12/06/2021
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, multiplayer, servers, matchmaking
 ms.localizationpriority: medium
 ---
