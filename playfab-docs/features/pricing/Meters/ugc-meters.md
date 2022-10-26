@@ -5,7 +5,7 @@ description: Describes UGC's billable meters.
 ms.author: wesjong
 ms.date: 9/13/2021
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, commerce, economy, monetization, ugc, pricing, meters
 ms.localizationpriority: medium
 ---
