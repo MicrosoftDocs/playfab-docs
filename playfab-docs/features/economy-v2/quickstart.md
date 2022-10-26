@@ -5,7 +5,7 @@ description: Get started with the new Economy v2 features.
 ms.author: derekreese
 ms.date: 09/07/2022
 ms.topic: quickstart
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, commerce, economy
 ms.localizationpriority: medium
 ---

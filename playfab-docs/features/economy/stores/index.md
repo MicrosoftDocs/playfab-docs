@@ -5,7 +5,7 @@ description: Landing page for Stores.
 ms.author: derekreese
 ms.date: 01/25/2019
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, commerce, economy, stores
 ms.localizationpriority: medium
 ---

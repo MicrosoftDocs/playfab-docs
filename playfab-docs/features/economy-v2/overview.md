@@ -5,7 +5,7 @@ description: Learn the differences and changes from PlayFab Economy v1 to v2
 ms.author: derekreese
 ms.date: 05/02/2019
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, commerce, economy
 ms.localizationpriority: medium
 ---

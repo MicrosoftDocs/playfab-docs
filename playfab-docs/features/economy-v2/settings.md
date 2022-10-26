@@ -5,7 +5,7 @@ description: Economy v2 settings.
 ms.author: derekreese
 ms.date: 09/07/2022
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, economy, settings
 ms.localizationpriority: medium
 ---

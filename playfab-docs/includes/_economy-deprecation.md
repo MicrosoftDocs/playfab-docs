@@ -3,7 +3,7 @@ author: cybtachyon
 ms.author: derekreese
 ms.date: 09/07/2022
 ms.topic: include
-ms.prod: playfab
+ms.service: playfab
 ms.localizationpriority: medium
 ---
 > [!IMPORTANT]

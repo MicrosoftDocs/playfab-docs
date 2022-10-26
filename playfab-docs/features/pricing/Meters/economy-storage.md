@@ -5,7 +5,7 @@ description: This file details the APIs that cause Economy v2 storage meter to i
 ms.author: derekreese
 ms.date: 09/07/2022
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, pricing
 ms.localizationpriority: medium
 ---
