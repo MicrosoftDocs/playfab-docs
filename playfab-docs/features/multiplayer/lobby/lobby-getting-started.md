@@ -5,7 +5,7 @@ description: Quickstart guide to create a lobby with notifications.
 ms.author: pkacha
 ms.date: 11/24/2021
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, multiplayer, lobby, matchmaking
 ms.localizationpriority: medium
 ---
