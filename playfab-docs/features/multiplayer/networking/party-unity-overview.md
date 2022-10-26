@@ -5,7 +5,7 @@ author: vicodex
 ms.author: victorku
 ms.date: 01/27/2021
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, multiplayer, networking, unity, middleware
 ---
 

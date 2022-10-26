@@ -4,7 +4,7 @@ title:  PlayFabMultiplayerManager.TextToSpeechMode
 description: Gets or sets whether text-to-speech is enabled. 
 ms.author: victorku
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 06/22/2020
 ---
 

@@ -4,7 +4,7 @@ title: PlayFabMultiplayerManager.NetworkId
 description: Returns NetworkID of the current network to which the player is connected.
 ms.author: victorku
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 06/22/2020
 ---
 
