@@ -4,7 +4,7 @@ title: "PFMultiplayerGetLobbyInviteListenerStatus"
 description: "Retrieve the status of the entity's invite listener."
 ms.author: scmunro
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 03/14/2022
 ---
 

@@ -5,7 +5,7 @@ author: ScottMunroMS
 ms.author: scmunro
 ms.date: 04/11/2022
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, party, multiplayer, networking, async, state change, notification
 ---
 

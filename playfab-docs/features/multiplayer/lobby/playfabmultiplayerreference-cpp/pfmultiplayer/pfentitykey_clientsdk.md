@@ -4,7 +4,7 @@ title: "PFEntityKey - Client SDK"
 description: "PFEntityKey data model. Combined entity type and ID structure which uniquely identifies a single entity."
 ms.author: scmunro
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 03/10/2022
 ---
 

@@ -4,7 +4,7 @@ title: "PartyXblStateChangeType"
 description: "The PartyXblStateChangeType enumeration contains the types of state changes that can occur."
 ms.author: scmunro
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 01/17/2020
 ---
 

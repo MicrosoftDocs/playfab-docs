@@ -4,7 +4,7 @@ title: "PFLobbySendInvite"
 description: "Send an invite to this lobby from the local user to the invited entity."
 ms.author: scmunro
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 03/14/2022
 ---
 

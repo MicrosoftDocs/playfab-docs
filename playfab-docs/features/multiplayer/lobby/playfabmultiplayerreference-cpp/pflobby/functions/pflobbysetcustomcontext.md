@@ -4,7 +4,7 @@ title: "PFLobbySetCustomContext"
 description: "Configures an optional, custom pointer-sized context value with this lobby object."
 ms.author: scmunro
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 01/03/2022
 ---
 

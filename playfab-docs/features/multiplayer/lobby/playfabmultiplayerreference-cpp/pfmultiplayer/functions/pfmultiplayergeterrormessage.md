@@ -4,7 +4,7 @@ title: "PFMultiplayerGetErrorMessage"
 description: PFMultiplayerGetErrorMessage will get the human-readable form of an error. The memory for the returned string remains valid for the lifetime of the process.
 ms.author: scmunro
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 03/11/2022
 ---
 

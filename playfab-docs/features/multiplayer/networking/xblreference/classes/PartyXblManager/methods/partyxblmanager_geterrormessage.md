@@ -4,7 +4,7 @@ title: "PartyXblManager::GetErrorMessage"
 description: The PartyXblManager::GetErrorMessage method gets the human-readable form of an error. These error messages are not localized.
 ms.author: scmunro
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 04/07/2021
 ---
 

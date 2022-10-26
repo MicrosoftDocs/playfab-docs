@@ -4,7 +4,7 @@ title: "PartyXblStateChange"
 description: "The PartyXblStateChange structure is a generic, base structure representation of an event or change in state."
 ms.author: scmunro
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 04/22/2022
 ---
 

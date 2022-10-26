@@ -4,7 +4,7 @@ title: "PFMultiplayerInitialize"
 description: "Initializes an instance of the PlayFab Multiplayer library."
 ms.author: scmunro
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 03/15/2022
 ---
 

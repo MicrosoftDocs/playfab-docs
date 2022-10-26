@@ -4,7 +4,7 @@ title: "PartyXblThreadId"
 description: "Threads that Party Xbox Live Helper library uses for internal purposes."
 ms.author: scmunro
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 11/01/2019
 ---
 

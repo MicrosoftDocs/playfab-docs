@@ -4,7 +4,7 @@ title: "PartyXblChatPermissionInfo"
 description: "Information regarding a required chat permission."
 ms.author: scmunro
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 04/22/2022
 ---
 

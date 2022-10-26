@@ -4,7 +4,7 @@ title: "PFMultiplayerJoinMatchmakingTicketFromId"
 description: "Joins one or more multiple local users to a matchmaking ticket using a ticket ID and queue name."
 ms.author: scmunro
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 03/15/2022
 ---
 

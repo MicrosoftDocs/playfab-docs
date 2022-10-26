@@ -4,7 +4,7 @@ title: "PFLobbyGetCustomContext"
 description: "Retrieves the app's private, custom pointer-sized context value previously associated with this lobby object."
 ms.author: scmunro
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 01/03/2022
 ---
 
