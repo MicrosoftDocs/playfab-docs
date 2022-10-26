@@ -5,7 +5,7 @@ description: Describes how to write CloudScript (Legacy) code.
 ms.author: cjwill
 ms.date: 01/28/2020
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, automation, cloudscript, unity
 ms.localizationpriority: medium
 ---
