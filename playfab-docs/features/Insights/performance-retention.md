@@ -5,7 +5,7 @@ description: Performance and retention for playfab insights
 ms.author: mcelliot
 ms.date: 02/28/2020
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, insights
 ms.localizationpriority: medium
 ---
