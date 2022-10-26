@@ -5,7 +5,7 @@ description: Overview for PlayFab Authentication
 ms.author: thomg
 ms.date: 06/10/2020
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, authentication, aad, leaderboards, azure, login, PFID, PlayFabID
 ms.localizationpriority: medium
 ---
