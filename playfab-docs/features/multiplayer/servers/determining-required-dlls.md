@@ -5,7 +5,7 @@ description: Describes how to determine the list of dlls required for your game 
 ms.author: andhesky
 ms.date: 03/12/2020
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, multiplayer servers, debugging, integration, thunderhead, playfab game server sdk
 ms.localizationpriority: medium
 ---
