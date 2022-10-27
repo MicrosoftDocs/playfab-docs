@@ -5,7 +5,7 @@ description: This guide will help you make your first PlayFab API call using Obj
 ms.author: jeffshi
 ms.date: 06/11/2018
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, objective-c, playfab objective-c sdk, native osx, ios development
 ms.localizationpriority: medium
 ---
