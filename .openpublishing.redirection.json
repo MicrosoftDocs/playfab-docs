@@ -174,6 +174,11 @@
             "source_path": "playfab-docs/features/commerce/ugc/publish-ugc.md",
             "redirect_url": "/gaming/playfab/features/economy-v2/tutorials/publish-ugc",
             "redirect_document_id": true
+        },
+        {
+            "source_path": "playfab-docs/features/multiplayer/servers/tracking-consumption.md",  
+            "redirect_url": "/gaming/playfab/features/multiplayer/servers/billing-for-thunderhead",
+            "redirect_document_id": true
         }
     ]
 }

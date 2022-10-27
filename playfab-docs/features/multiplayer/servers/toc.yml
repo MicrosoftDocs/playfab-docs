@@ -98,8 +98,6 @@
     href: comm-sla.md
   - name: Monitor server capacity
     href: quota-summary.md
-  - name: Track server consumption
-    href: tracking-consumption.md
 - name: Best practices and launch checklist
   href: best-practices.md
 - name: Samples and resources
