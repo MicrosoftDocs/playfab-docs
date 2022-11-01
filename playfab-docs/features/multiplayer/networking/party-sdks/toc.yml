@@ -46,3 +46,5 @@
       href: ../party-xboxlive-relnotes.md
     - name: API reference
       href: ../xblreference/partyxboxlive_members.md
+- name: Logging
+  href: ../party-logging.md
