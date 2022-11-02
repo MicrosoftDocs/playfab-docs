@@ -22,8 +22,8 @@ The [PlayFab Economy v2 quickstart](../quickstart.md) will get you set up and re
 
 ## Microsoft Store Marketplace receipt validation
 
-* [GetMicrosoftStoreAccessTokens](/rest/api/playfab/economy/inventory/getmicrosoftstoreaccesstokens)
-* [RedeemMicrosoftStoreInventoryItems](/rest/api/playfab/economy/inventory/redeemmicrosoftstoreinventoryitems)
+* [GetMicrosoftStoreAccessTokens](/rest/api/playfab/economy/inventory/get-microsoft-store-access-tokens)
+* [RedeemMicrosoftStoreInventoryItems](/rest/api/playfab/economy/inventory/redeem-microsoft-store-inventory-items)
 
 To use the Redeem API, you start by setting up your Product IDs and Prices in whatever Marketplace (Apple Store, Steam, Google Play, etc.) you're using. Initially, all the products are faceless - digital entries your player can purchase - but have no meaning in PlayFab.
 

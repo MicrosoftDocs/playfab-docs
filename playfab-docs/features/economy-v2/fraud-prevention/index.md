@@ -53,18 +53,18 @@ Learn more about Idempotency in our [Inventory Overview](../inventory/index.md#i
 Economy v2 supports the following add-on API endpoints:
 
 * Microsoft Store ([Windows 10/11](/windows/uwp/publish/), [Xbox](/gaming/xbox/), [Android](https://blogs.windows.com/windows-insider/2021/10/20/announcing-android-apps-on-windows-11-preview-for-windows-insiders-in-the-beta-channel/))
-  * [GetMicrosoftStoreAccessTokens](/rest/api/playfab/economy/inventory/getmicrosoftstoreaccesstokens)
-  * [RedeemMicrosoftStoreInventoryItems](/rest/api/playfab/economy/inventory/redeemmicrosoftstoreinventoryitems)
+  * [GetMicrosoftStoreAccessTokens](/rest/api/playfab/economy/inventory/get-microsoft-store-access-tokens)
+  * [RedeemMicrosoftStoreInventoryItems](/rest/api/playfab/economy/inventory/redeem-microsoft-store-inventory-items)
 * Google Play Store (Android)
-  * [RedeemGooglePlayInventoryItems](/rest/api/playfab/economy/inventory/redeemgoogleplayinventoryitems)
+  * [RedeemGooglePlayInventoryItems](/rest/api/playfab/economy/inventory/redeem-google-play-inventory-items)
 * Apple AppStore (iOS)
-  * [RedeemAppleAppStoreInventoryItems](/rest/api/playfab/economy/inventory/redeemappleappstoreinventoryitems)
+  * [RedeemAppleAppStoreInventoryItems](/rest/api/playfab/economy/inventory/redeem-apple-app-store-inventory-items)
 * Nintendo Switch E-Shop (Switch)
-  * [RedeemNintendoEShopInventoryItems](/rest/api/playfab/economy/inventory/redeemnintendoeshopinventoryitems)
+  * [RedeemNintendoEShopInventoryItems](/rest/api/playfab/economy/inventory/redeem-nintendo-e-shop-inventory-items)
 * Sony PlayStation Store Next-gen (PS4/PS5)
-  * [RedeemPlayStationStoreInventoryitems](/rest/api/playfab/economy/inventory/redeemplaystationstoreinventoryitems)
+  * [RedeemPlayStationStoreInventoryitems](/rest/api/playfab/economy/inventory/redeem-play-station-store-inventory-items)
 * Steam (Windows 10/11, OSX, Linux)
-  * [RedeemSteamInventoryItems](/rest/api/playfab/economy/inventory/redeemsteaminventoryitems)
+  * [RedeemSteamInventoryItems](/rest/api/playfab/economy/inventory/redeem-steam-inventory-items)
 
 ## Refunds
 
