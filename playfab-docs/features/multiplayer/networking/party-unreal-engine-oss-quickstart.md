@@ -23,14 +23,9 @@ Go to [UE OSS PlayFab](https://github.com/PlayFab/PlayFabMultiplayerUnreal) to d
 
 * **PlayFab Title ID:** If you don't have a Title ID configured for PlayFab Party, see [Enabling PlayFab Party](enable-party.md).
 
-### GDK and PC
+### GDK, PC, Switch, PlayStation®5 and PlayStation®4
 
 * **Specific platform PlayFab Multiplayer and Party libraries:** These files are provided with the source in [Download and install PlayFab Online Subsystem](#download-and-install-playfab-online-subsystem). If you need updated Party library files, then see [Obtaining PlayFab Party libraries](party-unreal-engine-oss-obtaining-playfab-party-libraries.md).
-
-### Private platforms
-
-* **Nuget.exe** Find the location of Nuget.exe on your machine and add it to the PATH environment variable.
-* **Specific platform PlayFab Multiplayer and Party libraries:** run **SetUpPrivateOSS.ps1 -Platform <Switch | PlayStation>** located in the **OnlineSubsystemPlayFab** folder. This script will pull the binaries and source code for the supported private platforms. You must have [access](request-access-for-sdks-samples.md) to our private repositories.
 
 ## Initial setup
 
