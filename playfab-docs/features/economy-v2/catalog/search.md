@@ -28,9 +28,7 @@ An example `SearchItems` request:
   "Filter": "Tags/any(t:t eq 'desert') and ContentType eq 'map'",
   "OrderBy": "lastModifiedDate asc",
   "ContinuationToken": "abc=",
-  "Count": 2,
-  "ConfigurationName": "SearchConfigurationA",
-  "ExpandReferencedItems": false
+  "Count": 2
 }
 ```
 
@@ -46,7 +44,6 @@ A sample response:
                <item metadata> 
             }
         ],
-      "PartialExpandedResults": false,
       "ContinuationToken": "MTA="
     }
 }

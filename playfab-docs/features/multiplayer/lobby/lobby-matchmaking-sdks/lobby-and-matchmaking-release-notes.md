@@ -12,6 +12,32 @@ ms.localizationpriority: medium
 
 # PlayFab Multiplayer C++ SDK release notes
 
+## 1.4.2
+
+October 26, 2022
+
+### Bug fixes
+
+- Fixed a bug where pubsub reconnects could cause future pubsub unsubscribe requests to fail.
+
+## 1.4.1
+
+October 25, 2022
+
+### Bug fixes
+
+- Fixed a bug where unnecessary, short-lived threads would spawn.
+- On Windows, Xbox, and Android, fixed a bug where the library may attempt web requests before a previously recorded retry-after period had expired.
+- Improve the error message if a web server can’t be reached.
+
+## 1.4.0
+
+October 11, 2022
+
+### New features
+
+- PlayFab Multiplayer v1.4.0 brings support for Android.
+
 ## 1.3.1
 
 September 20, 2022
