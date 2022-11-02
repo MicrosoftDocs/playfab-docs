@@ -5,7 +5,7 @@ author: tomcoMSFT
 ms.author: tomco
 ms.date: 08/05/2020
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, multiplayer, networking, p2p, direct, peer, connectivity
 ---
 
