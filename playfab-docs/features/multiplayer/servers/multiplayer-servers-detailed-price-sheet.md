@@ -5,7 +5,7 @@ description: Detailed pricing information for PlayFab Multiplayer Server 2.0 (Th
 ms.author: lejackso
 ms.date: 01/17/2021
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, multiplayer servers, thunderhead, pricing
 ms.localizationpriority: medium
 ---

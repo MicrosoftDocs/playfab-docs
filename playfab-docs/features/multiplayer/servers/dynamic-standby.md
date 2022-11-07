@@ -5,7 +5,7 @@ description: Dynamic Standby is an auto scaling enhancement that monitors standb
 ms.author: lejackso
 ms.date: 03/22/2021
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, standby, servers, scaling, multiplayer
 ms.localizationpriority: medium
 ---
