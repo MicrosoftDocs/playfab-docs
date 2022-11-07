@@ -5,7 +5,7 @@ author: xmcai2016
 ms.author: chpalm
 ms.date: 10/13/2020
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, multiplayer, party, pricing, networking, regions
 ---
 # PlayFab Party Pricing
