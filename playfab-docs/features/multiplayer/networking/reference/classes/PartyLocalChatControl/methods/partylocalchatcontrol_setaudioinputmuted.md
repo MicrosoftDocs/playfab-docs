@@ -4,7 +4,7 @@ title: "PartyLocalChatControl::SetAudioInputMuted"
 description: Configures whether the user's audio input is in the mute state.
 ms.author: jdewey
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 09/26/2019
 ---
 

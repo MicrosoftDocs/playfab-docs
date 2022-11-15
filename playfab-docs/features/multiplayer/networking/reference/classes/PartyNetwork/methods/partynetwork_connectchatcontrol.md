@@ -4,7 +4,7 @@ title: "PartyNetwork::ConnectChatControl"
 description: Connects the local chat control to the network.
 ms.author: jdewey
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 09/25/2019
 ---
 

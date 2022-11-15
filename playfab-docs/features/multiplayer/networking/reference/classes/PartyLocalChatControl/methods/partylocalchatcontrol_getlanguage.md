@@ -4,7 +4,7 @@ title: "PartyLocalChatControl::GetLanguage"
 description: Gets the language associated with this chat control.
 ms.author: jdewey
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 04/07/2021
 ---
 

@@ -4,7 +4,7 @@ title: "Party C/C++ API overview"
 description: "Party C/C++ API overview"
 ms.author: jdewey
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 12/09/2021
 ---
 

@@ -4,7 +4,7 @@ title: "PartyManager::SetThreadAffinityMask"
 description: Optionally configures the processor on which internal Party library threads will run.
 ms.author: jdewey
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 03/11/2022
 ---
 

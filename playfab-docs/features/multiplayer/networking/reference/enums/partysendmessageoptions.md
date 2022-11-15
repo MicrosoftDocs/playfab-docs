@@ -4,7 +4,7 @@ title: "PartySendMessageOptions"
 description: "Options for controlling how a message is sent."
 ms.author: jdewey
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 09/25/2019
 ---
 

@@ -4,7 +4,7 @@ title: "PartyEndpoint"
 description: Represents an endpoint in a network.
 ms.author: jdewey
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 04/22/2022
 ---
 

@@ -4,7 +4,7 @@ title: "PartyAudioManipulationSinkStream::GetCustomContext"
 description: The PartyAudioManipulationSinkStream::GetCustomContext method retrieves the app's private context value previously associated with this stream object.
 ms.author: jdewey
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 02/10/2020
 ---
 

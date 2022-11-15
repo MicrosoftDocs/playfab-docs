@@ -4,7 +4,7 @@ title: "PartyLocalChatControl::SetAudioInput"
 description: Configures the preferred microphone or recording device that the chat control will use for audio input.
 ms.author: jdewey
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 03/11/2022
 ---
 

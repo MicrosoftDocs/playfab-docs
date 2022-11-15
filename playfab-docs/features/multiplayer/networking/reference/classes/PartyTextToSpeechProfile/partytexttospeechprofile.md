@@ -4,7 +4,7 @@ title: "PartyTextToSpeechProfile"
 description: Represents the voice profile used to synthesize speech.
 ms.author: jdewey
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 04/22/2022
 ---
 

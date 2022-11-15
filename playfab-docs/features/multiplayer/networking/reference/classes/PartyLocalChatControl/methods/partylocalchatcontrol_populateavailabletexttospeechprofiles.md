@@ -4,7 +4,7 @@ title: "PartyLocalChatControl::PopulateAvailableTextToSpeechProfiles"
 description: Populates the local chat control's list of supported text to speech profiles.
 ms.author: jdewey
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 09/25/2019
 ---
 

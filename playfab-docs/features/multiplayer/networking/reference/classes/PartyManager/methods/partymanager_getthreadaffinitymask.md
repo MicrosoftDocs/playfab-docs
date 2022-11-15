@@ -4,7 +4,7 @@ title: "PartyManager::GetThreadAffinityMask"
 description: Retrieves the current set of processors on which internal Party library threads will run or are running as an affinity mask.
 ms.author: jdewey
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 11/08/2019
 ---
 

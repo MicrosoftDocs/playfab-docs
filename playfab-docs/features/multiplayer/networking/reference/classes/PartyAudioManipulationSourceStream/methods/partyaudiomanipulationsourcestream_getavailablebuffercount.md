@@ -4,7 +4,7 @@ title: "PartyAudioManipulationSourceStream::GetAvailableBufferCount"
 description: Retrieves the total number of buffers available to retrieve from this stream via [PartyAudioManipulationSourceStream::GetNextBuffer()](partyaudiomanipulationsourcestream_getnextbuffer.md).
 ms.author: jdewey
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 02/13/2020
 ---
 
