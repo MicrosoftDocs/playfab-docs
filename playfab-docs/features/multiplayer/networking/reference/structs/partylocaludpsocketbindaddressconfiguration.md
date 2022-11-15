@@ -4,7 +4,7 @@ title: "PartyLocalUdpSocketBindAddressConfiguration"
 description: "The configuration used by the Party library to bind to a UDP socket."
 ms.author: jdewey
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 03/11/2022
 ---
 

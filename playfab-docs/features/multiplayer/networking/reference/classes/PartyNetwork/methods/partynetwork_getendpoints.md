@@ -4,7 +4,7 @@ title: "PartyNetwork::GetEndpoints"
 description: Gets the endpoints in this network.
 ms.author: jdewey
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 11/08/2019
 ---
 

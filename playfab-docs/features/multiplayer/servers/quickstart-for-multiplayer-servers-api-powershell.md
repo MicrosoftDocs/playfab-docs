@@ -5,7 +5,7 @@ description: "Walkthrough: Deploy builds using PowerShell/API"
 ms.author: lejackso
 ms.date: 04/01/2021
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, multiplayer servers, thunderhead, api, powershell
 ms.localizationpriority: medium
 ---

@@ -4,7 +4,7 @@ title: "PartyNetwork::GetDeviceConnectionType"
 description: Retrieves the type of connection used by the local device for transmitting messages or chat data to the specified target device in this network.
 ms.author: jdewey
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 08/05/2020
 ---
 

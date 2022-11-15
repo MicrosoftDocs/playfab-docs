@@ -4,7 +4,7 @@ title: "PartyInvitationRevocability"
 description: "Options for who may revoke an invitation."
 ms.author: jdewey
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 04/07/2021
 ---
 

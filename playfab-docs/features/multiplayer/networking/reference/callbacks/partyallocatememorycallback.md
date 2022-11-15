@@ -4,7 +4,7 @@ title: "PartyAllocateMemoryCallback"
 description: "A callback invoked every time a new memory buffer must be dynamically allocated by the Party library."
 ms.author: jdewey
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 09/25/2019
 ---
 

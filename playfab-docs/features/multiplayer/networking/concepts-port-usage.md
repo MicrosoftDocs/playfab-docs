@@ -67,9 +67,9 @@ The supported remote port range that may be in use by Azure PlayFab Party can be
 
 To enable UDP connectivity, environments that filter UDP traffic based on domain name need to ensure the following names or name patterns are accessible:
 
-* *\*.cloudapp.net*
+* *\*.cloudapp.azure.com*
 
-Filtering remote IP addresses for UDP connectivity via domain name resolution is possible but strongly discouraged. Currently all connections to transparent cloud relay servers will resolve names of the form *\*.cloudapp.net*, but this pattern is subject to change without notice. Restricting UDP connectivity to only IP addresses resolved by names will also prevent direct peer-to-peer connection.
+Filtering remote IP addresses for UDP connectivity via domain name resolution is possible but strongly discouraged. Currently all connections to transparent cloud relay servers will resolve names of the form *\*.cloudapp.azure.com*, but this pattern is subject to change without notice. Restricting UDP connectivity to only IP addresses resolved by names will also prevent direct peer-to-peer connection.
 
 ## See also
 

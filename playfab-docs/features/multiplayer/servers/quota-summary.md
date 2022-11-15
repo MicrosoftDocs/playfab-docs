@@ -5,7 +5,7 @@ description: Managing Summary
 ms.author: lejackso
 ms.date: 11/30/2020
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, multiplayer servers, core quotas, quota summary
 ms.localizationpriority: medium
 ---

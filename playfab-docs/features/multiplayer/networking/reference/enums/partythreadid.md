@@ -4,7 +4,7 @@ title: "PartyThreadId"
 description: "High-level categorization of internal processing tasks."
 ms.author: jdewey
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 03/11/2022
 ---
 

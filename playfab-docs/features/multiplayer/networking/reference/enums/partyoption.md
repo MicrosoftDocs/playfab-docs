@@ -4,7 +4,7 @@ title: "PartyOption"
 description: "Additional options that can be set to fine-tune Party library functionality."
 ms.author: jdewey
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 04/07/2021
 ---
 

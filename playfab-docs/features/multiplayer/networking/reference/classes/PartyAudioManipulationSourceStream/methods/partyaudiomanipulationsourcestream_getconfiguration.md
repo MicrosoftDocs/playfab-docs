@@ -4,7 +4,7 @@ title: "PartyAudioManipulationSourceStream::GetConfiguration"
 description: The PartyAudioManipulationSourceStream::GetConfiguration method retrieves the stream configuration.
 ms.author: jdewey
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 02/10/2020
 ---
 

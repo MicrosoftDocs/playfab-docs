@@ -4,7 +4,7 @@ title: "PartyTextToSpeechProfile::GetLanguageCode"
 description: Gets the language code associated with this profile.
 ms.author: jdewey
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 08/05/2020
 ---
 

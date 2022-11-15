@@ -4,7 +4,7 @@ title: "PartyLocalChatControl::SetPermissions"
 description: Sets the chat permissions between the local chat control and a target chat control.
 ms.author: jdewey
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 02/10/2020
 ---
 

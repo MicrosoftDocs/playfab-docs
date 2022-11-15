@@ -4,7 +4,7 @@ title: EndSessionResponse real-time notifications type
 description: EndSessionResponse real-time notifications type
 ms.author: waralp
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 03/10/2022
 ---
 

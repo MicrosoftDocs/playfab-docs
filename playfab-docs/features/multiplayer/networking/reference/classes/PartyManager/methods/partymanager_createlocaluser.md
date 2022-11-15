@@ -4,7 +4,7 @@ title: "PartyManager::CreateLocalUser"
 description: Creates a local user object that is used to represent a local user when performing networking and chat operations.
 ms.author: jdewey
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 11/08/2019
 ---
 

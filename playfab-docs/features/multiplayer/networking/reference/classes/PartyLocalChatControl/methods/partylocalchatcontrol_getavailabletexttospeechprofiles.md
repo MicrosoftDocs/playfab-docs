@@ -4,7 +4,7 @@ title: "PartyLocalChatControl::GetAvailableTextToSpeechProfiles"
 description: Gets the text to speech profiles for this chat control.
 ms.author: jdewey
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 11/08/2019
 ---
 

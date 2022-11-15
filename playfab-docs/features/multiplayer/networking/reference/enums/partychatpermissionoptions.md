@@ -4,7 +4,7 @@ title: "PartyChatPermissionOptions"
 description: "Options for defining the communication relationship between two chat controls."
 ms.author: jdewey
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 02/10/2020
 ---
 

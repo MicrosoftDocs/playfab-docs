@@ -4,7 +4,7 @@ title: "PartyAudioFormat"
 description: "The format information needed to interpret Party audio data."
 ms.author: jdewey
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 03/11/2022
 ---
 
