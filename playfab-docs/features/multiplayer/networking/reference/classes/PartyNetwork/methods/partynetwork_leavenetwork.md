@@ -4,7 +4,7 @@ title: "PartyNetwork::LeaveNetwork"
 description: Queues an asynchronous operation to leave the network gracefully.
 ms.author: jdewey
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 11/08/2019
 ---
 

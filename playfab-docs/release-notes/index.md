@@ -5,7 +5,7 @@ description: PlayFab Release Notes for 2022.
 ms.author: toddbell
 ms.date: 01/18/2022
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, development, release, apis, features
 ms.localizationpriority: medium
 ---

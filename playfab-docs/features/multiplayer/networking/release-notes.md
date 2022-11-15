@@ -14,6 +14,14 @@ ms.localizationpriority: medium
 
 PlayFab Party had a significant (up to 90%) price drop on October 13, 2020. You can view the updated Party rates on the [Pricing page](https://playfab.com/pricing). For more information about the price drop, see our [blog post](https://blog.playfab.com/blog/starting-today-save-up-to-90-using-playfab-party).
 
+## 1.7.19
+
+November 11, 2022
+
+### Bug fixes
+
+- Fixed a bug that failed to open a Web request after a certain point in time on Linux. 
+
 ## 1.7.17
 
 October 7, 2022

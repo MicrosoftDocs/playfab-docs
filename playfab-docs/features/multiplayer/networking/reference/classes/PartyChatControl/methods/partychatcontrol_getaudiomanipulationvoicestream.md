@@ -4,7 +4,7 @@ title: "PartyChatControl::GetAudioManipulationVoiceStream"
 description: Retrieves the audio manipulation voice stream associated with this chat control.
 ms.author: jdewey
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 02/10/2020
 ---
 

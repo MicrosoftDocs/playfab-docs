@@ -4,7 +4,7 @@ title: "PartyConfigureAudioManipulationVoiceStreamCompletedStateChange"
 description: "Information specific to the *ConfigureAudioManipulationVoiceStreamCompleted* type of state change."
 ms.author: jdewey
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 04/21/2022
 ---
 

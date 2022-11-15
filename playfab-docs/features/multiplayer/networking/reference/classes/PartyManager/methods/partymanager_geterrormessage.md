@@ -4,7 +4,7 @@ title: "PartyManager::GetErrorMessage"
 description: The PartyManager::GetErrorMessage method retrieves the human-readable form of an error. These error messages are not localized.
 ms.author: jdewey
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 08/05/2020
 ---
 

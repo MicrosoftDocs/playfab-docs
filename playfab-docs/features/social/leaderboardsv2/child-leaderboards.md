@@ -5,7 +5,7 @@ description: Tutorials for Child Leaderboards.
 ms.author: waralp
 ms.date: 10/18/2019
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, social, leaderboards
 ms.localizationpriority: medium
 ---

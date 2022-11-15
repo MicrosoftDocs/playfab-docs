@@ -4,7 +4,7 @@ title: "PartyManager::GetRegions"
 description: Gets an array containing the set of regions for which your title is configured, along with round trip latency information.
 ms.author: jdewey
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 08/05/2020
 ---
 

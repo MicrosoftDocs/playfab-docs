@@ -4,7 +4,7 @@ title: "PartyAudioManipulationSinkStream"
 description: The management class for submitting audio to an audio sink stream.
 ms.author: jdewey
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 04/22/2022
 ---
 

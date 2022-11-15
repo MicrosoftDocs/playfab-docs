@@ -5,7 +5,7 @@ description: Build and Deploy a Linux server to the MPS Cloud
 ms.author: pagilmor
 ms.date: 12/08/2021
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, multiplayer servers, gsdk, unreal, cloud, linux
 ms.localizationpriority: medium
 ---
