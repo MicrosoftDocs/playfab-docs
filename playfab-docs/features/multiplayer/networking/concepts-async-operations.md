@@ -11,8 +11,8 @@ keywords: playfab, party, multiplayer, networking, async, state change, notifica
 
 # Asynchronous PlayFab Party operations and notifications
 
-For operations that may be slow or computationally expensive, PlayFab Party exposes asynchronous APIs. This gives titles
-the ability to start expensive or slow operations from their main threads and poll for the completion of those
+For operations that may be slow or computationally expensive, PlayFab Party exposes asynchronous APIs. Asynchronous APIs 
+give titles the ability to start expensive or slow operations from their main threads and poll for the completion of those
 operations on a thread of their choice. This same polling mechanism is also used to deliver asynchronous notifications
 of PlayFab Party library updates to the title. This page gives an overview of PlayFab Party's asynchronous API patterns
 and best practices for programming against them.
@@ -26,17 +26,18 @@ There are two types of asynchronous API patterns to be aware of in PlayFab Party
 
 ### Asynchronous operations
 
-It's simple to use PlayFab Party's asynchronous APIs. The general pattern for starting and completing asyncronous operations is as follows:
+It's simple to use PlayFab Party's asynchronous APIs. The general pattern for starting and completing asynchronous 
+operations is as follows:
 
 1. Make a regular method call to the appropriate asynchronous API of your choosing. Common asynchronous Party operations
-you will likely make use of include:
+you'll likely make use of include:
     * [PartyManager::CreateNewNetwork](reference/classes/PartyManager/methods/partymanager_createnewnetwork.md).
     * [PartyManager::ConnectToNetwork](reference/classes/PartyManager/methods/partymanager_connecttonetwork.md).
     * [PartyNetwork::AuthenticateLocalUser](reference/classes/PartyNetwork/methods/partynetwork_authenticatelocaluser.md).
     * [PartyNetwork::CreateEndpoint](reference/classes/PartyNetwork/methods/partynetwork_createendpoint.md).
 
-2. Check the PartyError return value of the asynchronous API with the **PARTY_SUCCEEDED()** or **PARTY_FAILED()**
-macros. This synchronously returned value will tell you whether the operation has successfully started.
+2. Check the **PartyError** return value of the API with the **PARTY_SUCCEEDED()** or **PARTY_FAILED()** macros. This 
+synchronously returned value will tell you whether the operation has successfully started.
 
 > [!WARNING]
 > The synchronous return value from an asynchronous Party API call does **NOT** tell you whether or not the operation
@@ -49,11 +50,14 @@ to be provided by [PartyManager::StartProcessingStateChanges()](reference/classe
 detailed information on what "state changes" are and how they work can be found in the [State Changes](#state-changes)
 section below.
 
+4. Check the completion state change **result** and **errorDetail** value to determine whether the operation succeeded
+or failed. More detailed information on these error values can be found in the [synchronous vs. asynchronous errors](#synchronous-vs-asynchronous-errors) section below.
+
 ### Asynchronous notifications
 
 Some features will send the title asynchronous notifications of changes to the PlayFab Party library.
 
-Common notifications your title will likely handle include:
+Common notifications include:
 
 1. [EndpointCreated](reference/structs/partyendpointcreatedstatechange.md) when new endpoints are created on party networks.
 2. [ChatControlJoinedNetwork](reference/structs/partychatcontroljoinednetworkstatechange.md) when chat controls join party networks.
@@ -72,8 +76,8 @@ PlayFab Party's asynchronous API model is built around the [PartyStateChange str
 These "state changes" are asynchronous notifications of events from the PlayFab Party library. These notifications are
 queued internally and the title processes them by calling
 [PartyManager::StartProcessingStateChanges()](reference/classes/PartyManager/methods/partymanager_startprocessingstatechanges.md).
-**StartProcessingStateChanges()** will return all queued state changes as a list which the title can iterate through and
-process individually. Each state change has a *PartyStateChange::stateChangeType* field which can be inspected to
+**StartProcessingStateChanges()** will return all queued state changes as a list that the title can iterate through and
+process individually. Each state change has a *PartyStateChange::stateChangeType* field that can be inspected to
 determine which specific state change the title is being notified about. Once the title knows which state change they
 have been given, they can cast the generic **PartyStateChange** struct to a more specific type of state change struct
 to inspect that event's specific data.
@@ -146,7 +150,8 @@ written in diagnostics -- such as telemetry or error logs -- for the purposes of
 of why an operation failed. These error details can be converted to a human-readable format by calling
 [PartyManager::GetErrorMessage()](reference/classes/PartyManager/methods/partymanager_geterrormessage.md). These error
 messages are intended to only be looked at by developers. They are not localized or intended for consumption by end
-users.
+users. Additionally a list of the PlayFab Party SDK's error codes with their error messages are available in our 
+[PlayFab Party Error Codes](reference/partyerrors.md) doc.
 
 > [!IMPORTANT]
 > When capturing state change failures (e.g. developer logs, telemetry,
@@ -156,11 +161,11 @@ users.
 
 ## Asynchronous operation identifiers
 
-Each asynchronous API includes a `void* asyncIdentifer` parameter. This is a pass-through parameter which will be set
-on this API call's associated completion state change once it is provided by **StartProcessingStateChanges()**.
+Each asynchronous API includes a `void* asyncIdentifer` parameter. This value is a pass-through parameter that will be 
+set on this API call's associated completion state change once it's provided by **StartProcessingStateChanges()**.
 
 The purpose of this value is to give titles a mechanism to attach arbitrary, pointer-sized contexts to their
-asynchronous API calls. These contexts can be used in a number of scenarios including:
+asynchronous API calls. These contexts can be used in many scenarios including:
 1. associating title-specific data with a PlayFab Party API call
 2. tying together multiple asynchronous operations with a shared identifier
 
@@ -168,8 +173,8 @@ These asynchronous identifiers are not required for use of PlayFab Party but can
 
 ## Operation queuing
 
-When working with asynchronous APIs, often times multiple asynchronous operations need to run one after the other as
-part of a larger asynchronous flow.
+Frequently when working with asynchronous APIs, multiple asynchronous operations need to run one after the other as part
+of a larger asynchronous flow.
 
 In PlayFab Party, one example would be joining a Party network and connecting a chat control to it. Serialized, this
 flow would look like:
@@ -182,15 +187,15 @@ flow would look like:
 6. Wait for the **PartyConnectChatControlCompletedStateChange** to reflect that your chat control connection succeeded.
 
 For more complicated flows and title logic, this serialized pattern may be appropriate. However, for simpler flows, PlayFab
-Party provides an alternative which intends to simplify title code:
+Party provides an alternative that intends to simplify title code:
 
 Many PlayFab Party APIs which are asynchronous support queuing of dependent operations before a previous operation has
-fully completed. In the previous example, this means that you can start authenticating your local user into a party
+fully completed. From the previous example, you can start authenticating your local user into a party
 network before you've successfully completed connecting **and** start connecting your chat control before it's
 associated local user has finished authenticating.
 
-Effectively, this allows you to bundle a collection of asynchronous operations together, kick them off all at once, and
-coalesce error handling to a single failure point.
+Effectively, queuing allows you to bundle a collection of asynchronous operations together, kick them off all at once, 
+and coalesce error handling to a single failure point.
 
 ```cpp
 Party::PartyNetwork* newPartyNetwork;
@@ -323,7 +328,7 @@ at the cost of more complex title logic.
 
 ## Controlling asynchronous work
 
-It is sometimes necessary for titles to control when and where asynchronous work is done to avoid CPU contention between
+It's sometimes necessary for titles to control when and where asynchronous work is done to avoid CPU contention between
 libraries like PlayFab Party and their title's core CPU workloads.
 
 PlayFab Party gives titles two options for controlling how asynchronous PlayFab Party work is run:
