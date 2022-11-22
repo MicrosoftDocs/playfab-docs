@@ -12,6 +12,14 @@ ms.localizationpriority: medium
 
 # PlayFab Multiplayer C++ SDK release notes
 
+## 1.4.3
+
+November 15, 2022
+
+### New features
+
+- PlayFab Multiplayer v1.4.3 brings support for iOS and macOS.
+
 ## 1.4.2
 
 October 26, 2022

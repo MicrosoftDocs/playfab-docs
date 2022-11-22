@@ -7,7 +7,9 @@ ms.prod: playfab
 ms.localizationpriority: medium
 ---
 * Amazon = "Amazon"
-* Apple = "Apple"
+* Apple = "AppleAppStore"
 * Google Play = "GooglePlay"
-* Nintendo = "Nintendo"
-* Microsoft = "Microsoft"
+* Microsoft = "MicrosoftStore"
+* Nintendo = "NintendoEShop"
+* PlayStation = "PlayStationStore"
+* Steam = "Steam"

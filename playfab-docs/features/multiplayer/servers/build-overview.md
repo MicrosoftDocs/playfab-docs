@@ -5,7 +5,7 @@ description: Builds overview page for Multiplayer Servers in Game Manager
 ms.author: raakisad
 ms.date: 08/18/2021
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, multiplayer servers, new build, game manager 
 ms.localizationpriority: medium
 ---
