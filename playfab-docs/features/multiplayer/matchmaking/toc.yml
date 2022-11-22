@@ -25,5 +25,15 @@
     href: usage.md
   - name: Workaround for peer-to-peer connection
     href: peer-to-peer.md
+  - name: Client SDK async model
+    href: ../lobby/lobby-and-matchmaking-client-sdk-async.md
+  - name: Handling Client SDK errors
+    href: ../lobby/lobby-and-matchmaking-client-sdk-errors.md
 - name: Lobby and Matchmaking real-time notifications
   href: ../lobby/lobby-and-matchmaking-real-time-notifications.md
+- name: Reference
+  items:
+  - name: Client SDK reference
+    href: ../lobby/playfabmultiplayerreference-cpp\pfmatchmaking\pfmatchmaking_members.md
+  - name: Client SDK Error Codes
+    href: ../lobby/playfabmultiplayerreference-cpp\pfmultiplayererrors.md
