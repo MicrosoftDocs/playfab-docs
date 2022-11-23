@@ -39,6 +39,10 @@ Game server process can terminate either gracefully or via a crash. This can hap
 > [!NOTE]
 > A Game server can never transition back to StandingBy state when it is in the Active state. Once the game state is set to Active, the only way to get a new game server in StandingBy state is if your game server process exits.
 
+### Maximum Server Lifetime
+
+The virtual machines that host MPS servers have a maximum lifetime of 10 days, so a server's lifetime is constrained by that lifetime. A server's lifetime is guaranteed to be at least 23 hours; MPS will not allocate servers on a VM that has less that 23 hours remaining on it. The GSDK will fire the OnMaintenanceScheduled event 23 hours before the VM is forcibly terminated so that any servers running on the VM can gracefully shut down in time. If a server is still running on the VM when the VM reaches its maximum lifetime of 10 days, the server will be forcibly terminated and no logs will be uploaded. To make sure your server isn't forcibly terminated, either make sure its sessions are always less than 23 hours long or use the GSDK's OnMaintenanceScheduled event to gracefully shut down the server and migrate players to another one before the deadline.
+
 ### Terminating a game server process
 
 When the game session ends, you should gracefully terminate the game server process so you can get a new game server. If the game server process crashes, MPS will create a new game server process to replace the one that crashed. In the event that the game server is stuck or frozen, you can always call the [ShutDownMultiplayerServer](xref:titleid.playfabapi.com.multiplayer.multiplayerserver.shutdownmultiplayerserver) API to manually terminate the game server process. This API should be called only when the game server process cannot terminate by itself. When you call this API, you will see the game server transitioning to "Terminating" and "Terminated" state. Moreover, any servers stuck in the terminating or terminated state will be replaced by the system after a period of time.
