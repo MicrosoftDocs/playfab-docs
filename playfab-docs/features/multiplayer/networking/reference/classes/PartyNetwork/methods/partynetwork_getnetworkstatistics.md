@@ -4,7 +4,7 @@ title: "PartyNetwork::GetNetworkStatistics"
 description: Gets one or more statistic counter values for the network.
 ms.author: jdewey
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 11/08/2019
 ---
 

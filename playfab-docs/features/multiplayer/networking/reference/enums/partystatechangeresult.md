@@ -4,7 +4,7 @@ title: "PartyStateChangeResult"
 description: "The PartyStateChangeResult enumeration contains results for operations that generate state changes."
 ms.author: jdewey
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 06/22/2021
 ---
 

@@ -4,7 +4,7 @@ title: "PartyAudioSampleType"
 description: "Types of Party audio samples."
 ms.author: jdewey
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 04/07/2021
 ---
 

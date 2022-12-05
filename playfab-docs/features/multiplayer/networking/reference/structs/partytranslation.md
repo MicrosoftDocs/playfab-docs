@@ -4,7 +4,7 @@ title: "PartyTranslation"
 description: "A translation."
 ms.author: jdewey
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 04/21/2022
 ---
 

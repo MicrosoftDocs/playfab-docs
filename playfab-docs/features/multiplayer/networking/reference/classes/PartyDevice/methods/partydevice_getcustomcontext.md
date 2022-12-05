@@ -4,7 +4,7 @@ title: "PartyDevice::GetCustomContext"
 description: Retrieves the app's private, custom pointer-sized context value previously associated with this device object.
 ms.author: jdewey
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 09/25/2019
 ---
 

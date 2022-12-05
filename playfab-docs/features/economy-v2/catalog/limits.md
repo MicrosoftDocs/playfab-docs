@@ -65,7 +65,7 @@ The following are the maximum count of items returned for the various APIs. You 
 
 ### Filter Complexity
 
-There are checks enforced to prevent the use of overly complicated `Filter` queries used in `SearchItems` calls. More information can be found [here](/gaming/playfab/features/economy/ugc/search#limits)
+There are checks enforced to prevent the use of overly complicated `Filter` queries used in `SearchItems` calls. More information can be found [here](/gaming/playfab/features/economy-v2/catalog/search#limits)
 
 ## Item Metadata
 

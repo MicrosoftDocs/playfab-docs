@@ -4,7 +4,7 @@ title: "PartyEndpoint::GetUniqueIdentifier"
 description: Gets the network-unique identifier for this endpoint.
 ms.author: jdewey
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 11/08/2019
 ---
 

@@ -4,7 +4,7 @@ title: "PartyManager::SetProfilingCallbacksForMethodEntryExit"
 description: Optionally configures the profiling event callbacks the Party library will make when entering or exiting instrumented methods.
 ms.author: jdewey
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 03/11/2022
 ---
 

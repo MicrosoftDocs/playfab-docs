@@ -24,3 +24,5 @@
     href: multiplayer-unity-overview.md
   - name: Multiplayer Unity plugin quickstart
     href: multiplayer-unity-plugin-quickstart.md
+- name: Logging
+  href: lobby-matchmaking-logging.md

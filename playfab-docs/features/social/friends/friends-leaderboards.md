@@ -5,7 +5,7 @@ description: Tutorial that describes how to create and use friends leaderboards.
 ms.author: billsch
 ms.date: 10/26/2018
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, social, friends lists
 ms.localizationpriority: medium
 ---

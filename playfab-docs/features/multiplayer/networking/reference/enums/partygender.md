@@ -4,7 +4,7 @@ title: "PartyGender"
 description: "Genders for text to speech profiles."
 ms.author: jdewey
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 04/07/2021
 ---
 

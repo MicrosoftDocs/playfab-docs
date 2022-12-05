@@ -4,7 +4,7 @@ title: "PartyLocalChatControl::GetTranscriptionOptions"
 description: Provides the transcription options associated with voice chat audio for this chat control.
 ms.author: jdewey
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 04/07/2021
 ---
 

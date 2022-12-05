@@ -4,7 +4,7 @@ title: "PartyFreeMemoryCallback"
 description: "A callback invoked every time a previously allocated memory buffer is no longer needed by the Party library and can be freed."
 ms.author: jdewey
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 06/22/2021
 ---
 

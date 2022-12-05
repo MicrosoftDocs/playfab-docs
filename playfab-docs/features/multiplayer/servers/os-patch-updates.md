@@ -5,7 +5,7 @@ description: Describes OS patch level cycle
 ms.author: lejackso
 ms.date: 03/30/2021
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, multiplayer servers, thunderhead, OS Patch, Windows, azure
 ms.localizationpriority: medium
 ---

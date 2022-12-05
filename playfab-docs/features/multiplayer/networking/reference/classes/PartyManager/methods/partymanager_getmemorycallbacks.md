@@ -4,7 +4,7 @@ title: "PartyManager::GetMemoryCallbacks"
 description: Retrieves the memory allocation and freeing callbacks the Party library is using.
 ms.author: jdewey
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 03/11/2022
 ---
 

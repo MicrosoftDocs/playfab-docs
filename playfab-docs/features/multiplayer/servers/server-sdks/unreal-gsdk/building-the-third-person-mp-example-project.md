@@ -5,7 +5,7 @@ description: How to build an Unreal Project, specifically the build instructions
 ms.author: pagilmor
 ms.date: 12/08/2021
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, multiplayer servers, gsdk, unreal
 ms.localizationpriority: medium
 ---

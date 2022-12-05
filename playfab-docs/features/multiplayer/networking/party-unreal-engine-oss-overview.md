@@ -64,11 +64,13 @@ XDK is supported on older version(1.07 and earlier) of the OSS, refer [Using old
 
 ## Which version of the Nintendo Switch SDKs are supported?
 
-- Recommended: Refer to the UEBuild.cs file in the UnrealBuildTool folder for the Switch.
+- Recommended: Refer to the UEBuildSwitch.cs(UE4) or SwitchPlatformSDK.cs(UE5) file in the UnrealBuildTool folder for the Switch.
+  - \Engine\Platforms\Switch\Source\Programs\UnrealBuildTool\
 
 ## Which version of the PS5™ and PS4™ SDKs are supported?
 
-- Recommended: Refer to the UEBuild.cs file in the UnrealBuildTool folder for the PS5™ and PS4™.
+- Recommended: Refer to the UEBuild[PS4|PS5].cs(UE4) or [PS4|PS5]PlatformSDK.cs(UE5) file in the UnrealBuildTool folder for the PS5™ and PS4™.
+  - \Engine\Platforms\[PS4|PS5]\Source\Programs\UnrealBuildTool\
 
 ## Pricing
 

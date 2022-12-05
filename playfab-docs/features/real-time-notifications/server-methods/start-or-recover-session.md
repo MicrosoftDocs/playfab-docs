@@ -4,7 +4,7 @@ title: StartOrRecoverSession SignalR server method
 description: StartOrRecoverSession SignalR server method
 ms.author: waralp
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 03/10/2022
 ---
 

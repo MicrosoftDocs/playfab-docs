@@ -4,7 +4,7 @@ title: "PartyAudioManipulationSinkStream::SubmitBuffer"
 description: Submits audio to be processed by this sink. Depending on the type of sink, this audio may be transmitted to other chat controls or rendered to the audio output.
 ms.author: jdewey
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 02/13/2020
 ---
 

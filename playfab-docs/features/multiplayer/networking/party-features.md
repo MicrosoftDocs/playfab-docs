@@ -64,9 +64,9 @@ Party chat offers the following communication functionalities.
 
 - **Voice chat:** Player devices can bind audio devices to Party networks to accomplish real-time voice chat.
 
-- **Text chat:** Players are able to send text chat messages to one another. In-game chat text messages, even when text-to-text translation or text-to-speech synthesis is activated, don't drive metering and aren't billed to your account.
+- **Text chat:** Players are able to send text chat messages to one another. In-game chat text messages don't drive metering and aren't billed to your account.
 
-- **Speech-to-text:** Player voice and synthesized text-to-speech voice can be transcribed into text messages. This functionality was originally designed to enable games to be accessible. It's also useful when gaming in a noisy environment.
+- **Speech-to-text:** Player voice and synthesized text-to-speech voice can be transcribed into text messages. This functionality was originally designed to enable games to be accessible. It's also useful when gaming in a noisy environment. 
 
 - **Text-to-speech/voice synthesis:** Generate audio from text. It can be used to synthesize player voice to read incoming text to the recipient. Like speech-to-text, it can be used for making your game more accessible.
 
