@@ -5,7 +5,7 @@ description: Quickstart guide for Data Connections
 ms.author: shtarwar
 ms.date: 03/18/2022
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, data connections, byos, connections, event ingestion, bring your own stoarge
 ms.localizationpriority: medium
 ---

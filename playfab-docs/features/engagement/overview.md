@@ -5,7 +5,7 @@ description: Learn about an overview of PlayFab features. PlayFab Engagement is 
 ms.author: shtarwar
 ms.date: 05/04/2020
 ms.topic: overview
-ms.prod: playfab
+ms.service: playfab
 keywords: emails, push notifications, news, enagagement
 ms.localizationpriority: medium
 ---

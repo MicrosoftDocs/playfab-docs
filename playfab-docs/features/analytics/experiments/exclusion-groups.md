@@ -5,7 +5,7 @@ description: Demonstrates how to use experimentation with exclusion group.
 ms.author: shtarwar
 ms.date: 10/22/2020
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, analytics, AB experiments, experimentation, exclsuion group, mutually exclsuive experiments
 ms.localizationpriority: medium
 ---
