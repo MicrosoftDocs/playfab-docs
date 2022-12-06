@@ -7,3 +7,5 @@ items:
   href: collections.md
 - name: Stacks
   href: stacks.md
+- name: Transaction History
+  href: transaction-history.md

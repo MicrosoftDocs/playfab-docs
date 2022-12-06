@@ -32,7 +32,7 @@ An example `AddInventoryItems` request with a `StackId`:
 {
     "Entity": {
         "Type": "title_player_account",
-        "Id": "630287F4"
+        "Id": "ABCD12345678"
     },
     "Item": {
         "Id": "0b440353-bdbc-48d8-8873-f0988c1f9d8b",
@@ -56,7 +56,7 @@ An example `SubtractInventoryItems` request with StackId:
 {
     "Entity": {
         "Type": "title_player_account",
-        "Id": "630287F4"
+        "Id": "ABCD12345678"
     },
     "Item": {
         "Id": "0b440353-bdbc-48d8-8873-f0988c1f9d8b",
@@ -79,7 +79,7 @@ An example `UpdateInventoryItems` request:
 {
     "Entity": {
         "Type": "title_player_account",
-        "Id": "630287F4"
+        "Id": "ABCD12345678"
     },
     "Item": {
         "Id": "0b440353-bdbc-48d8-8873-f0988c1f9d8b",
@@ -101,7 +101,7 @@ An example `DeleteInventoryItems` request:
 {
     "Entity": {
         "Type": "title_player_account",
-        "Id": "630287F4"
+        "Id": "ABCD12345678"
     },
     "Item": {
         "Id": "0b440353-bdbc-48d8-8873-f0988c1f9d8b",
@@ -128,7 +128,7 @@ An example `PurchaseInventoryItems` request with stacks:
 {
     "Entity": {
         "Type": "title_player_account",
-        "Id": "630287F4"
+        "Id": "ABCD12345678"
     },
     "Item": {
         "Id": "LaserSword",
@@ -160,11 +160,11 @@ An example `TransferInventoryItems` request with stacks:
 {
     "GivingEntity": {
         "Type": "title_player_account",
-        "Id": "630287F4"
+        "Id": "ABCD12345678"
     },
     "ReceivingEntity": {
         "Type": "title_player_account",
-        "Id": "630287F4"
+        "Id": "ABCD12345678"
     },
     "GivingItem": {
         "Id": "0b440353-bdbc-48d8-8873-f0988c1f9d8b",
@@ -188,7 +188,7 @@ An example `ExecuteInventoryOperations` request with stacks:
 ```json
 "Entity": {
     "Type": "title_player_account",
-    "Id": "630287F4"
+    "Id": "ABCD12345678"
  },
 "Operations": [
     {
@@ -211,3 +211,32 @@ An example `ExecuteInventoryOperations` request with stacks:
     }
 ]
 ```
+
+### Adding Custom Properties with DisplayProperties and NewStackValues
+
+You can set custom item properties to inventory Items with the `DisplayProperties` parameter. Setting properties can be done in the `AddInventoryItems`, `PurchaseInventoryItems` and `TransferInventoryItems` APIs, but **only** when a new stack is created. To set Display Properties for new items, the `NewStackValues` parameter must be set in the API request.
+
+An example `AddInventoryItems` request with `NewStackValues`:
+
+```json
+{
+    "Entity": {
+        "Type": "title_player_account",
+        "Id": "ABCD12345678"
+    },
+    "Item": {
+        "Id": "20a645ce-a3bf-4fcb-8e67-36aa7bf0331d",
+        "StackId": "NewStack"
+    },
+    "Amount": 15,
+    "NewStackValues": {
+        "DisplayProperties": {
+            "DifficultyRating":5,
+            "IsMagic": true,
+            "Rarity": "Legendary"
+        }
+    }
+}
+```
+
+To update Display Properties on existing items, the `UpdateItems` API can be used to directly modify properties.

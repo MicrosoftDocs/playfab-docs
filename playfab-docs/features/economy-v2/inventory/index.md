@@ -18,7 +18,7 @@ The PlayFab Inventory APIs gives you the ability to manage and store your player
 
 ## Managing Player Inventories
 
-The following APIs are used to help add, remove, update and delete items in a player's inventory. The current limit is 3500 items and you'll error if you go above that.
+The following APIs are used to help add, remove, update and delete items in a player's inventory. The current limit is 3500 items and you'll get an error if you go above that.
 
 ### Getting a Player's Inventory
 
@@ -37,7 +37,7 @@ An example `GetInventoryItems` request:
 {
   "Entity": {
     "Type": "title_player_account",
-    "Id": "1234ABCD"
+    "Id": "ABCD12345678"
   },
   "CollectionId": "main_character",
   "Count": 15,
@@ -63,7 +63,7 @@ An example `AddInventoryItems` request:
 {
     "Entity": {
         "Type": "title_player_account",
-        "Id": "630287F4"
+        "Id": "ABCD12345678"
     },
     "Item": {
         "Id": "0b440353-bdbc-48d8-8873-f0988c1f9d8b",
@@ -82,7 +82,7 @@ An example `SubtractInventoryItems` request:
 {
     "Entity": {
         "Type": "title_player_account",
-        "Id": "630287F4"
+        "Id": "ABCD12345678"
     },
     "Item": {
         "Id": "0b440353-bdbc-48d8-8873-f0988c1f9d8b",
@@ -101,7 +101,7 @@ An example `UpdateInventoryItems` request:
 {
     "Entity": {
         "Type": "title_player_account",
-        "Id": "630287F4"
+        "Id": "ABCD12345678"
     },
     "Item": {
         "Id": "0b440353-bdbc-48d8-8873-f0988c1f9d8b",
@@ -120,7 +120,7 @@ An example `DeleteInventoryItems` request:
 {
    "Entity": {
         "Type": "title_player_account",
-        "Id": "630287F4"
+        "Id": "ABCD12345678"
     },
     "Item": {
         "Id": "0b440353-bdbc-48d8-8873-f0988c1f9d8b",
@@ -143,7 +143,7 @@ An example `PurchaseInventoryItems` request:
 {
     "Entity": {
         "Type": "title_player_account",
-        "Id": "630287F4"
+        "Id": "ABCD12345678"
     },
     "Item": {
         "Id": "LaserSword",
@@ -164,7 +164,7 @@ The `TransferInventoryItems` API can be used in three different ways.
 
 1. For transferring items between players (for example, Player A gives three apples to Player B)
 1. For transferring items between a single player's inventory collections (for example, Player A moves their Long sword from their Wizard Characters inventory to their Warrior Character's inventory)
-1. For transferring items within a single player's inventory to create, remove, and manipulate item Stacks (for example, Player A splits their Stack of 10 gold into two stacks of three and seven gold)
+1. For transferring items within a single player's inventory to create, remove, and manipulate item Stacks (for example, Player A splits their Stack of 10 gold coins into two stacks of three and seven gold coins)
 
 The `GivingItem` and `Amount` parameters are used to represent the amount and the item being transferred. The `ReceivingItem` represents the item destination for the receiving player's account. Both the `GivingItem` and `ReceivingItem` parameters are `InventoryItemReference` objects that contain the `Id` of the Item and the `StackId`. Both `GivingItem` and `ReceivingItem` can be empty to handle transfers where one entity isn't transferring items. Unless specified, all items are set to `default` for the `StackId` when added/transferred to a player's inventory.
 
@@ -178,11 +178,11 @@ An example `TransferInventoryItems` request between players:
 {
     "GivingEntity": {
         "Type": "title_player_account",
-        "Id": "630287F4"
+        "Id": "DEFG98765432"
     },
     "ReceivingEntity": {
         "Type": "title_player_account",
-        "Id": "ABCD123"
+        "Id": "ABCD12345678"
     },
     "GivingItem": {
         "Id": "0b440353-bdbc-48d8-8873-f0988c1f9d8b",
@@ -204,11 +204,11 @@ An example `TransferInventoryItems` request between collections:
 {
     "GivingEntity": {
         "Type": "title_player_account",
-        "Id": "630287F4"
+        "Id": "ABCD12345678"
     },
     "ReceivingEntity": {
         "Type": "title_player_account",
-        "Id": "630287F4"
+        "Id": "ABCD12345678"
     },
     "GivingCollectionId": "default",
     "ReceivingCollectionId": "main_character",
@@ -236,11 +236,11 @@ An example `TransferInventoryItems` request between stacks:
 {
     "GivingEntity": {
         "Type": "title_player_account",
-        "Id": "630287F4"
+        "Id": "ABCD12345678"
     },
     "ReceivingEntity": {
         "Type": "title_player_account",
-        "Id": "630287F4"
+        "Id": "ABCD12345678"
     },
     "GivingItem": {
         "Id": "0b440353-bdbc-48d8-8873-f0988c1f9d8b",
@@ -280,7 +280,7 @@ An example `ExecuteInventoryOperations` request:
 {
     "Entity": {
         "Type": "title_player_account",
-        "Id": "630287F4"
+        "Id": "ABCD12345678"
     },
     "Operations": [
         {
@@ -313,7 +313,7 @@ For example, the following `PurchaseItem` API request can be called multiple tim
 {
     "Entity": {
         "Type": "title_player_account",
-        "Id": "630287F4"
+        "Id": "ABCD12345678"
     },
     "Item": {
         "Id": "LaserSword",
@@ -333,3 +333,63 @@ For example, the following `PurchaseItem` API request can be called multiple tim
 
 > [!NOTE]
 > Using the same `IdempotencyId` for different request types will cause a conflict and throw an error.
+
+### Display Properties
+
+Display Properties are custom item properties that can be added to items and item stacks in player inventories.
+
+These properties can be added by `AddInventoryItems`, `PurchaseInventoryItems`, `TransferInventoryItems`, and `UpdateInventoryItems` operations.
+
+#### Adding properties to New Stacks/Items
+
+For the `AddInventoryItems`, `PurchaseInventoryItems` and `TransferInventoryItems` APIs, Display Properties can **only** be added when a new stack is created. To set Display Properties for new items, the `NewStackValues` parameter must be set in the API request.
+
+An example `AddInventoryItems` request with `NewStackValues`:
+
+```json
+{
+    "Entity": {
+        "Type": "title_player_account",
+        "Id": "ABCD12345678"
+    },
+    "Item": {
+        "Id": "20a645ce-a3bf-4fcb-8e67-36aa7bf0331d",
+        "StackId": "NewStack"
+    },
+    "Amount": 15,
+    "NewStackValues": {
+        "DisplayProperties": {
+            "DifficultyRating":5,
+            "IsMagic": true,
+            "Rarity": "Legendary"
+        }
+    }
+}
+```
+
+More information about stacks can be found [here](stacks.md).
+
+#### Updating properties to existing Stacks/Items
+
+To update Display Properties on existing items, the `UpdateInventoryItems` API can be used to directly modify properties.
+
+An example `UpdateInventoryItems` request with `DisplayProperties`:
+
+```json
+{
+    "Entity": {
+        "Type": "title_player_account",
+        "Id": "ABCD12345678"
+    },
+    "Item": {
+        "Id": "20a645ce-a3bf-4fcb-8e67-36aa7bf0331d",
+        "StackId": "NewStack",
+        "Amount": 15,
+        "DisplayProperties": {
+            "DifficultyRating":5,
+            "IsMagic": false,
+            "Rarity": "Epic"
+        }
+    }
+}
+```
