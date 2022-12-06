@@ -30,7 +30,7 @@ An example `GetInventoryCollectionIds` request:
 {
   "Entity": {
     "Type": "title_player_account",
-    "Id": "1234ABCD"
+    "Id": "ABCD12345678"
   },
   "Count": 15,
   "ContinuationToken": "abc="
@@ -64,7 +64,7 @@ For example, the following `AddInventoryItems` request uses the collectionId `ma
 {
     "Entity": {
         "Type": "title_player_account",
-        "Id": "630287F4"
+        "Id": "ABCD12345678"
     },
     "CollectionId": "main_character",
     "Item": {
@@ -76,13 +76,10 @@ For example, the following `AddInventoryItems` request uses the collectionId `ma
 
 The above request would either create a brand new inventory collection of and add 5 of the item to it or add 5 to the existing `main_character` inventory collection if it already existed.
 
-> [!NOTE]
-> Currently, APIs are the only way to  Inventory Collections. Game Manager can currently only be used to view and add items to existing collections and create new collections. Additional functionality will be added in the future.
-
 ### DeleteInventoryCollection
 
 In the `DeleteInventoryCollectionId` API, you can define the `CollectionId`
-you wish to delete. This collection
+you wish to delete. Deleting is an asynchronous operation and may take longer for collections that are large. The collection won't be able to be remade until the delete operation is complete.
 
 An example `DeleteInventoryCollectionIds` request:
 
@@ -90,17 +87,14 @@ An example `DeleteInventoryCollectionIds` request:
 {
   "Entity": {
     "Type": "title_player_account",
-    "Id": "1234ABCD"
+    "Id": "ABCD12345678"
   },
   "CollectionId": "main_character"
 }
 ```
 
-> [!WARNING]
-> As of public preview, deleted `CollectionId`s cannot be used again and thus, a collection of the same `CollectionId` cannot be created again. This will be the behavior until additional delete functionality is implemented scheduled to come sometime in the future. As of now, extreme caution should be used when deleting `CollectionId`s.
-
 > [!NOTE]
-> Currently, APIs are the only way to delete Inventory Collections. Game Manager can currently only be used to view and add items to existing collections. Additional functionality will be added in the future.
+> Currently, APIs are the only way to delete Inventory Collections. Game Manager can currently only be used to view and add items to new and existing collections. Additional functionality will be added in the future.
 
 ### ExecuteInventoryOperations API
 
@@ -112,7 +106,7 @@ An example `ExecuteInventoryOperations` request with stacks:
 {
     "Entity": {
         "Type": "title_player_account",
-        "Id": "630287F4"
+        "Id": "ABCD12345678"
     },
     "CollectionId": "main_character",
     "Operations": [
