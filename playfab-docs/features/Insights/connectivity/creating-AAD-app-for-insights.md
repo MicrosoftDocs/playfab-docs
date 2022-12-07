@@ -5,7 +5,7 @@ description: Creating an AAD app and connecting it to title database
 ms.author: norie
 ms.date: 03/20/2020    
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, insights
 ms.localizationpriority: medium
 ---

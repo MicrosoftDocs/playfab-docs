@@ -5,7 +5,7 @@ description: Describes the Catalogs tab in the Economy section in Game Manager a
 ms.author: derekreese
 ms.date: 10/26/2018
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, commerce, economy, items, catalogs
 ms.localizationpriority: medium
 ---

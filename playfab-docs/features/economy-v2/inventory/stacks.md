@@ -239,4 +239,6 @@ An example `AddInventoryItems` request with `NewStackValues`:
 }
 ```
 
-To update Display Properties on existing items, the `UpdateItems` API can be used to directly modify properties.
+
+To update Display Properties on existing items, the `UpdateInventoryItems` API can be used to directly modify properties.
+

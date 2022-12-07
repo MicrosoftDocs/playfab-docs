@@ -5,7 +5,7 @@ description: Get started with receipt validation for PlayFab Economy v2.
 ms.author: derekreese
 ms.date: 09/07/2022
 ms.topic: quickstart
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, economy, catalog, receipts, purchases, fraud, piracy
 ms.localizationpriority: medium
 ---
