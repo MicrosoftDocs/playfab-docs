@@ -5,7 +5,7 @@ description: Economy v2 Localization Documentation
 ms.author: derekreese
 ms.date: 9/07/2022
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, commerce, economy, localization, internationalization, i8n
 ms.localizationpriority: medium
 ---

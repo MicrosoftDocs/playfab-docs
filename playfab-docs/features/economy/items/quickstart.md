@@ -5,7 +5,7 @@ description: Quickstart for Items.
 ms.author: derekreese
 ms.date: 05/02/2019
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, commerce, economy, items, catalogs
 ms.localizationpriority: medium
 ---

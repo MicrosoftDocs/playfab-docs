@@ -5,7 +5,7 @@ description: Overview of PlayFab pricing and easy access to pricing documentatio
 ms.author: derekreese
 ms.date: 09/17/2020
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, pricing, transition, modern pricing, legacy pricing, base rate
 ms.localizationpriority: medium
 ---
