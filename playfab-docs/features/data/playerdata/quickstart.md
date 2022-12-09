@@ -97,7 +97,7 @@ You can always get and set player data through Game Manager by performing the fo
     }
     ```
 
-6. To call the add calls to the  `SetUserData` and `GetUserData` in the `OnLoginSuccess` medthod:
+6. To call the add calls to the  `SetUserData` and `GetUserData` in the `OnLoginSuccess` method:
 
     ```csharp
     private void OnLoginSuccess(LoginResult result) {
