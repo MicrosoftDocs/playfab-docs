@@ -4,7 +4,7 @@ title: Lobby and Matchmaking real-time Notifications
 description: Conceptual overview for Match and Lobby notifications
 ms.author: thboard
 ms.topic: conceptual
-ms.prod: playfab
+ms.service: playfab
 ms.date: 03/14/2022
 ---
 
