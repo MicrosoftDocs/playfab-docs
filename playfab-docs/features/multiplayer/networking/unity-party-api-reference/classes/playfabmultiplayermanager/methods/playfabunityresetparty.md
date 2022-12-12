@@ -4,7 +4,7 @@ title: PlayFabMultiplayerManager.Get().ResetParty
 description: Resets state of Party.
 ms.author: aterzakis
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 10/09/2022
 ---
 

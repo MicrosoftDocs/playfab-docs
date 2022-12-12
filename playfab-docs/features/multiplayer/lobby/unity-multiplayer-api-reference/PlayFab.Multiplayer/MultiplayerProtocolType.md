@@ -4,7 +4,7 @@ title: MultiplayerProtocolType
 description: MultiplayerProtocolType members
 ms.author: aterzakis
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 08/18/2022
 ---
 
