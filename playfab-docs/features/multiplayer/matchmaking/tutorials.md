@@ -5,7 +5,7 @@ description: Tutorials for matchmaking.
 ms.author: kkline
 ms.date: 03/15/2019
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, multiplayer, matchmaking, tutorials
 ms.localizationpriority: medium
 ---
