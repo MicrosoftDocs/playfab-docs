@@ -5,7 +5,7 @@ description: management commands for title adx
 ms.author: mcelliot
 ms.date: 1/9/2020    
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, insights, explorer
 ms.localizationpriority: medium
 ---

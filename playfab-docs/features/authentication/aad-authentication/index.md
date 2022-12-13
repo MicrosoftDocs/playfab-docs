@@ -5,7 +5,7 @@ description: Provides an introduction to AAD authentication and steps for how to
 ms.author: mcelliot
 ms.date: 11/11/2019
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, analytics, metrics, webhooks, events
 ms.localizationpriority: medium
 ---
