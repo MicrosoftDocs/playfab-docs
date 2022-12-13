@@ -4,7 +4,7 @@ title: "PFLobbyInviteListenerStatus"
 description: "Values representing the current status of an invite listener."
 ms.author: scmunro
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 01/03/2022
 ---
 

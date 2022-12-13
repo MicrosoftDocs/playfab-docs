@@ -4,7 +4,7 @@ title: "PFLobbyFindLobbiesCompletedStateChange"
 description: "Information specific to the *FindLobbiesCompleted* type of state change."
 ms.author: scmunro
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 03/15/2022
 ---
 

@@ -5,7 +5,7 @@ description: Release notes for PlayFab Party
 ms.author: scmunro
 ms.date: 06/22/2021
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, party, release notes, multiplayer, networking
 ms.localizationpriority: medium
 ---

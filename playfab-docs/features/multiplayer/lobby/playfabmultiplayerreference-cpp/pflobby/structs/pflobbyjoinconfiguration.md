@@ -4,7 +4,7 @@ title: "PFLobbyJoinConfiguration"
 description: "The initial configuration data used when joining a lobby."
 ms.author: scmunro
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 03/15/2022
 ---
 

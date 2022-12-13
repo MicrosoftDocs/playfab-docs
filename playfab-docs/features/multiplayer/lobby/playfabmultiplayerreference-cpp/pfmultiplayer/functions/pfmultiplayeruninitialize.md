@@ -4,7 +4,7 @@ title: "PFMultiplayerUninitialize"
 description: "Immediately reclaims all resources associated with all Multiplayer library objects."
 ms.author: scmunro
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 03/15/2022
 ---
 

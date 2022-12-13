@@ -4,7 +4,7 @@ title: "PFLobbyAddMember"
 description: "Add a local user as a member to the lobby."
 ms.author: scmunro
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 03/16/2022
 ---
 

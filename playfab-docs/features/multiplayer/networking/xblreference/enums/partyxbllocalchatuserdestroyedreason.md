@@ -4,7 +4,7 @@ title: "PartyXblLocalChatUserDestroyedReason"
 description: "Reasons a local chat user object might be destroyed."
 ms.author: scmunro
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 11/01/2019
 ---
 

@@ -4,7 +4,7 @@ title: "PartyXblCrossNetworkCommunicationPrivacySetting"
 description: "Possible cross-network communication privacy settings for a local Xbox Live user."
 ms.author: scmunro
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 11/01/2019
 ---
 
