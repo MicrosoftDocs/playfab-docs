@@ -5,7 +5,7 @@ description: Tutorial outlining using the ETags to manage content updates
 ms.author: wesjong
 ms.date: 03/17/2021
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, commerce, economy, monetization, ugc
 ms.localizationpriority: medium
 ---
