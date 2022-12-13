@@ -5,7 +5,7 @@ description: Learn how automation can be used for PlayFab services.
 ms.author: kevinasg
 ms.date: 04/27/2020
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, automation
 ms.localizationpriority: medium
 ---

@@ -5,7 +5,7 @@ author: sardavi
 ms.author: kevinasg
 ms.date: 2/12/2020
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, multiplayer, networking, text, moderation, filtering
 ---
 
