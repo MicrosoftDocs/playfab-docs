@@ -4,7 +4,7 @@ title: OnErrorEventHandler
 description: Occurs when there is an error.
 ms.author: victorku
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 06/22/2020
 ---
 

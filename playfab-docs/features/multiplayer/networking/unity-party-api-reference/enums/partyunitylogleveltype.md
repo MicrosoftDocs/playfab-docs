@@ -4,7 +4,7 @@ title: PlayFabMultiplayerManager.LogLevelType
 description: The amount of logging that is enabled.
 ms.author: victorku
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 06/22/2020
 ---
 

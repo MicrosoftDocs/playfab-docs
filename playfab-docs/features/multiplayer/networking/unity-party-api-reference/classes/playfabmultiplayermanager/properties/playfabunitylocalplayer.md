@@ -4,7 +4,7 @@ title: PlayFabMultiplayerManager.LocalPlayer
 description: Gets the local player for this client.
 ms.author: victorku
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 06/22/2020
 ---
 

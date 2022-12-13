@@ -4,7 +4,7 @@ title: PlayFabLocalPlayer.LanguageCode
 description: Gets or sets the language code for the player.
 ms.author: victorku
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 06/22/2020
 ---
 
