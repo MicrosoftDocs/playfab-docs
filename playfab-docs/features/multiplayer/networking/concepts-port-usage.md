@@ -5,7 +5,7 @@ author: fschober-atg
 ms.author: fschober
 ms.date: 09/03/2021
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 ROBOTS: NOINDEX,NOFOLLOW
 keywords: playfab, multiplayer, networking
 ---

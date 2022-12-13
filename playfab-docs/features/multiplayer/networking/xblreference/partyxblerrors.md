@@ -4,7 +4,7 @@ title: "PlayFab Party Xbox Live Helper Error Codes"
 description: List of error codes used by the PlayFab Party's Xbox Live Helper Library
 ms.author: fschober
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 08/11/2022
 ---
 
