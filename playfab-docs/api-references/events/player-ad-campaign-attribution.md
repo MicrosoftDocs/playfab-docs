@@ -5,7 +5,7 @@ description: player_ad_campaign_attribution event.
 ms.author: joanlee
 ms.date: 02/19/2019
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, playstream events
 ms.localizationpriority: medium
 ---

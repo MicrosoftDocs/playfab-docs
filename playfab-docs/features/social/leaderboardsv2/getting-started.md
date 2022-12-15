@@ -5,7 +5,7 @@ description: Learn how to use specific private static void methods in Java to vi
 ms.author: joanlee
 ms.date: 10/18/2019
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, social, leaderboards
 ms.localizationpriority: medium
 ---

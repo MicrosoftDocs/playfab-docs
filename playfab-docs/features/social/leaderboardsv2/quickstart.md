@@ -5,7 +5,7 @@ description: Quickstart for Leaderboards v2.
 ms.author: joanlee
 ms.date: 10/14/2019
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, social, leaderboards
 ms.localizationpriority: medium
 ---

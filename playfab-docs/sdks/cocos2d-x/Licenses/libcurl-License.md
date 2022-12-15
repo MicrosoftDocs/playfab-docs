@@ -5,7 +5,7 @@ description: License for libcurl
 ms.author: joanlee
 ms.date: 02/19/2018
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, libcurl, sdk, cocos
 ms.localizationpriority: medium
 ---

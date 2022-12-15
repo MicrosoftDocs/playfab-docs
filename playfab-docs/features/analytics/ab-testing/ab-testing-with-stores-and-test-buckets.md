@@ -5,7 +5,7 @@ description: Describes how to create an A/B test that contains several versions 
 ms.author: joanlee
 ms.date: 10/30/2018
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, analytics, a/b testing
 ms.localizationpriority: medium
 ---

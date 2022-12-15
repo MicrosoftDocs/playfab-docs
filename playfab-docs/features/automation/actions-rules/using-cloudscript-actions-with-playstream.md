@@ -5,7 +5,7 @@ description: Shows what is available in the context of a CloudScript handler lau
 ms.author: joanlee
 ms.date: 06/11/2018
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, automation, cloudscript, playstream, events, actions
 ms.localizationpriority: medium
 ---

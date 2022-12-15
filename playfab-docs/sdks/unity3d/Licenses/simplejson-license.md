@@ -5,7 +5,7 @@ description: The Simple JSON license.
 ms.author: joanlee
 ms.date: 02/20/2019
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, unity3d sdk, unity3d, simple json
 ms.localizationpriority: medium
 ---

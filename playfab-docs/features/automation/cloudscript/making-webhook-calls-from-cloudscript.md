@@ -5,7 +5,7 @@ description: Describes how to make Webhook calls from CloudScript (Legacy), for 
 ms.author: joanlee
 ms.date: 02/11/2018
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, automation, cloudscript
 ms.localizationpriority: medium
 ---

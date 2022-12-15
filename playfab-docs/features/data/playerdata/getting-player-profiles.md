@@ -5,7 +5,7 @@ description: Describes how to use the GetPlayerProfile and PlayerProfileViewCons
 ms.author: joanlee
 ms.date: 06/11/2018
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, playfab api, player data, player profiles
 ms.localizationpriority: medium
 #Customer intent: As a < type of user >, I want < what? > so that < why? >

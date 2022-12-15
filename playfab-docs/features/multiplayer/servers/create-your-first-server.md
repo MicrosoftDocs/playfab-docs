@@ -5,7 +5,7 @@ description: Create your first server.
 ms.author: joanlee
 ms.date: 04/01/2021
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab. multiplayer, servers
 ms.localizationpriority: medium
 ---

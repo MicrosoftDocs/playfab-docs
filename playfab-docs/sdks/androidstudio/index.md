@@ -5,7 +5,7 @@ description: Landing page for the PlayFab Android Studio Project in Java.
 ms.author: joanlee
 ms.date: 01/22/2019
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, android studio, playfab java sdk, java, android
 ms.localizationpriority: medium
 ---

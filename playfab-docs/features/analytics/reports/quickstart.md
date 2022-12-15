@@ -5,7 +5,7 @@ description: Describes how to access the Game Manager reports composed from even
 ms.author: joanlee
 ms.date: 10/30/2018
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, analytics, reports
 ms.localizationpriority: medium
 ---

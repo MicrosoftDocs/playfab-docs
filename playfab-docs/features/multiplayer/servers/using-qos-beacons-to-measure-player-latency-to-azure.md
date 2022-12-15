@@ -5,7 +5,7 @@ description: Describes how to use QoS data to inform the ranking of Azure region
 ms.author: joanlee
 ms.date: 01/17/2019
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, multiplayer servers, thunderhead, azure, qos, c++ sdk
 ms.localizationpriority: medium
 ---

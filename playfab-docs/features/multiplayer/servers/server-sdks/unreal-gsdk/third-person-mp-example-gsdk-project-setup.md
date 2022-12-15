@@ -5,7 +5,7 @@ description: Adding the GSDK to an Unreal Project
 ms.author: joanlee
 ms.date: 12/08/2021
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, multiplayer servers, gsdk, unreal
 ms.localizationpriority: medium
 ---

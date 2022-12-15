@@ -5,7 +5,7 @@ description: Describes how to upgrade an account in the new Game Manager experie
 ms.author: joanlee
 ms.date: 10/15/2020
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, pricing, upgrade, upgrades, launch, live
 ms.localizationpriority: medium
 ---

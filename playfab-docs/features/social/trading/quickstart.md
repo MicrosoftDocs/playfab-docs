@@ -5,7 +5,7 @@ description: Describes how to perform player-to-player trading.
 ms.author: joanlee
 ms.date: 01/30/2019
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, social, trading
 ms.localizationpriority: medium
 ---

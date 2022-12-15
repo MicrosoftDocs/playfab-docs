@@ -5,7 +5,7 @@ description: Describes the options in the PlayFab Game Manager for managing the 
 ms.author: joanlee
 ms.date: 06/11/2018
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, config, game manager, api access, privacy
 ms.localizationpriority: medium
 ---

@@ -5,7 +5,7 @@ description: Overview page for tutorials about player segmentation.
 ms.author: joanlee
 ms.date: 11/19/2018
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, analytics, segmentation
 ms.localizationpriority: medium
 ---

@@ -5,7 +5,7 @@ description: Overview page for PlayStream event model reference documentation.
 ms.author: joanlee
 ms.date: 02/19/2019
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, api, events, playstream
 ms.localizationpriority: medium
 ---

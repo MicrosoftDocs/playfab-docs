@@ -5,7 +5,7 @@ description: Describes how to configure and manage statistics with versioning, w
 ms.author: joanlee
 ms.date: 10/29/2018
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, social, tournaments, statistics, leaderboards
 ms.localizationpriority: medium
 ---
