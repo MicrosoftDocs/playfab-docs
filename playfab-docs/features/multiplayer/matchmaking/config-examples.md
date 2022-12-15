@@ -5,7 +5,7 @@ description: Describes examples for common Matchmaking Configuration
 ms.author: kkline
 ms.date: 03/15/2019
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, multiplayer, matchmaking, match, config
 ms.localizationpriority: medium
 ---

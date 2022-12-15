@@ -5,7 +5,7 @@ description: Gets you started with schemas.
 ms.author: mcelliot
 ms.date: 07/23/2019    
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, insights, schemas
 ms.localizationpriority: medium
 ---

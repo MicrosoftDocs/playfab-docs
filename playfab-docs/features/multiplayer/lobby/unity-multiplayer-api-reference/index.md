@@ -4,7 +4,7 @@ title: PlayFab Multiplayer Unity SDK
 description: PlayFab Multiplayer Unity SDK members
 ms.author: victorku
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 11/23/2021
 ---
 

@@ -4,7 +4,7 @@ title: "PartyXboxLive C/C++ API overview"
 description: "PartyXboxLive C/C++ API overview"
 ms.author: scmunro
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 12/09/2021
 ---
 

@@ -5,7 +5,7 @@ description: Describes how to configure a new or existing segment.
 ms.author: joanlee
 ms.date: 10/30/2018
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, segmentation
 ms.localizationpriority: medium
 ---

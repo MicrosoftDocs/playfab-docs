@@ -5,7 +5,7 @@ description: Demonstrates how to get a player's Value to Date (VTD) from their P
 ms.author: joanlee
 ms.date: 10/30/2018
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, commerce, economy
 ms.localizationpriority: medium
 ---

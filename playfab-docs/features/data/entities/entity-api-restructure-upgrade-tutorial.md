@@ -5,7 +5,7 @@ description: Explains the restructuring of the Entity API Group and how to chang
 ms.author: joanlee
 ms.date: 06/12/2018
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, data, entities, sdks
 ms.localizationpriority: medium
 ---

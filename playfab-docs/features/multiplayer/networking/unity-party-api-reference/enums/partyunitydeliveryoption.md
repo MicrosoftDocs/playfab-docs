@@ -4,7 +4,7 @@ title: DeliveryOption
 description: The type of delivery guarantee for a message.
 ms.author: victorku
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 06/22/2020
 ---
 

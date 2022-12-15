@@ -5,7 +5,7 @@ description: Overview page for tutorials about Reports.
 ms.author: joanlee
 ms.date: 11/19/2018
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, analytics, reports
 ms.localizationpriority: medium
 ---

@@ -4,7 +4,7 @@ title: "PFLobby Search Keys"
 description: "Values representing pre-defined search keys."
 ms.author: fschober
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 09/06/2022
 ---
 

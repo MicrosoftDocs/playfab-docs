@@ -4,7 +4,7 @@ title: MultiplayerPort.Protocol
 description: MultiplayerPort.Protocol
 ms.author: aterzakis
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 08/18/2022
 ---
 

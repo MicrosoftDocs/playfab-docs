@@ -5,7 +5,7 @@ description: License for RapidJSON
 ms.author: joanlee
 ms.date: 02/19/2018
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, rapidjson, sdk, cocos
 ms.localizationpriority: medium
 ---

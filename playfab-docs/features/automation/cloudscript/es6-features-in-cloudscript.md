@@ -5,7 +5,7 @@ description: Describes how to use ECMAScript 6 (ES6) features when writing Cloud
 ms.author: joanlee
 ms.date: 06/11/2018
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, automation, cloudscript, ecmascript6
 ms.localizationpriority: medium
 ---

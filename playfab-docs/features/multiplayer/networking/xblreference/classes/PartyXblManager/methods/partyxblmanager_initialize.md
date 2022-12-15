@@ -4,7 +4,7 @@ title: "PartyXblManager::Initialize"
 description: Initializes the object instance.
 ms.author: scmunro
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 01/17/2020
 ---
 

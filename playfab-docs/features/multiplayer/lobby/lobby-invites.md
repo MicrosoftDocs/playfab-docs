@@ -5,7 +5,7 @@ description: Learn about inviting players to lobbies
 ms.author: joanlee
 ms.date: 10/25/2021
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, multiplayer, lobby, matchmaking, invites
 ms.localizationpriority: medium
 ---

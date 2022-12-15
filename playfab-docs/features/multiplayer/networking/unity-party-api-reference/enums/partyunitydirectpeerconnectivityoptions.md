@@ -4,7 +4,7 @@ title: DirectPeerConnectivityOptions
 description: Flags controlling the attempted use of direct peer-to-peer connectivity among devices on a network for Unity.
 ms.author: aterzakis
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 04/15/2022
 ---
 

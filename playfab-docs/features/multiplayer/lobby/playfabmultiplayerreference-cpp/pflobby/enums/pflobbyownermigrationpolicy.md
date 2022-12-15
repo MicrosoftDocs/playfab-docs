@@ -4,7 +4,7 @@ title: "PFLobbyOwnerMigrationPolicy"
 description: "The available policies the lobby service can use to migrate lobby ownership between members."
 ms.author: scmunro
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 09/09/2022
 ---
 

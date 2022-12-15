@@ -4,7 +4,7 @@ title: OnChatMessageReceived
 description: Occurs when a chat message is received.
 ms.author: victorku
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 06/22/2020
 ---
 

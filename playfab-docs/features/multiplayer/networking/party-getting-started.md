@@ -5,7 +5,7 @@ description: Learn how to get started with Azure PlayFab Party.
 ms.author: joanlee
 ms.date: 10/13/2020
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, multiplayer, networking, party, getting started
 ms.localizationpriority: medium
 ---

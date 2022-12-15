@@ -4,7 +4,7 @@ title: LobbyCreateConfiguration.AccessPolicy
 description: LobbyCreateConfiguration.AccessPolicy
 ms.author: victorku
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 11/23/2021
 ---
 

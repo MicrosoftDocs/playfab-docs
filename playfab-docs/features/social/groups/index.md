@@ -5,7 +5,7 @@ description: Landing page for Friends and Groups.
 ms.author: joanlee
 ms.date: 07/12/2018
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, multiplayer, social, friends, groups
 ms.localizationpriority: medium
 ---

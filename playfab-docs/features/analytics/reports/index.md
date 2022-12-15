@@ -5,7 +5,7 @@ description: Landing page for Reports.
 ms.author: joanlee
 ms.date: 02/12/2019
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, analytics, reports
 ms.localizationpriority: medium
 ---

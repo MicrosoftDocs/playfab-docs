@@ -4,7 +4,7 @@ title: "PFMatchmakingTicketConfiguration"
 description: "Defines the configuration for a matchmaking ticket."
 ms.author: scmunro
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 03/15/2022
 ---
 

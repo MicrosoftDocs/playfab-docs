@@ -5,7 +5,7 @@ description: Guides you through an example of PlayFab authentication using Googl
 ms.author: joanlee
 ms.date: 06/11/2018
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, authentication, google, html5, javascript
 ms.localizationpriority: medium
 ---

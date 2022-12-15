@@ -5,7 +5,7 @@ description: Quickstart for Metrics.
 ms.author: joanlee
 ms.date: 02/12/2019
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, analytics, metrics
 ms.localizationpriority: medium
 ---

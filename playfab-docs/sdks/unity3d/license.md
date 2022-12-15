@@ -5,7 +5,7 @@ description: Landing page for the PlayFab Unity3D SDK.
 ms.author: joanlee
 ms.date: 01/22/2019
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, unity3d sdk, unity3d, cpp
 ms.localizationpriority: medium
 ---

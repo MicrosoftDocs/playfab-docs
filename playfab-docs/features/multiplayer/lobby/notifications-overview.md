@@ -5,7 +5,7 @@ description: Learn about Lobby notifications.
 ms.author: joanlee
 ms.date: 10/25/2021
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, multiplayer, lobby, matchmaking, notifications
 ms.localizationpriority: medium
 ---

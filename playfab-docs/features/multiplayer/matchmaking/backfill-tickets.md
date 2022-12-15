@@ -5,7 +5,7 @@ description: Describes how to use backfill tickets
 ms.author: kkline
 ms.date: 05/10/2019
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, multiplayer, backfill
 ms.localizationpriority: medium
 ---

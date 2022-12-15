@@ -5,7 +5,7 @@ description: Describes how to get up and running with Android PlayFab Integratio
 ms.author: joanlee
 ms.date: 10/26/2018
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, engagement, push notification, google, android
 ms.localizationpriority: medium
 ---

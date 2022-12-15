@@ -5,7 +5,7 @@ description: Debugging CloudScript using Azure Functions with Visual Studio Code
 ms.author: antnguyen
 ms.date: 02/10/2020
 ms.topic: tutorial
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, automation, cloudscript, azure functions, Visual Studio Code, debugging
 ms.localizationpriority: medium
 ---

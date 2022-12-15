@@ -5,7 +5,7 @@ description: Understanding how to use PlayFab as a Developer
 ms.author: joanlee
 ms.date: 11/16/2018
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, authentication, developer persona, game developer, catalogs, entities, groups, automation, liveops, player data, cloudscript, playfab features, mobile login, social login
 ms.localizationpriority: medium
 ---

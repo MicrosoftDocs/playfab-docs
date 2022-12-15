@@ -5,7 +5,7 @@ description: Overview of A/B testing.
 ms.author: joanlee
 ms.date: 01/31/2019
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, analytics, a/b testing
 ms.localizationpriority: medium
 ---

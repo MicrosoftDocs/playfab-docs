@@ -5,7 +5,7 @@ description: Guide to managing ratings and reviews for your game's content.
 ms.author: wesjong
 ms.date: 08/09/2021
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, commerce, economy, monetization, ugc, ratings, reviews
 ms.localizationpriority: medium
 ---

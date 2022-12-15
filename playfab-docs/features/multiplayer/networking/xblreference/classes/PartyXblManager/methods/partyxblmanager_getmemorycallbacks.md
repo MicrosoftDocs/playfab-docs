@@ -4,7 +4,7 @@ title: "PartyXblManager::GetMemoryCallbacks"
 description: Retrieves the current memory allocation and freeing callbacks the Party Xbox Live library is using.
 ms.author: scmunro
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 11/08/2019
 ---
 

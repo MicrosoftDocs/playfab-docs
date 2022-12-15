@@ -5,7 +5,7 @@ description: Quickstart which demonstrates a matchmaking flow in Unity
 ms.author: kkline
 ms.date: 03/15/2019
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, multiplayer, servers
 ms.localizationpriority: medium
 ---

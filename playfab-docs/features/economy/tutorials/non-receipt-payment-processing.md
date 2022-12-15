@@ -5,7 +5,7 @@ description: Describes the PlayFab mechanism for enabling purchases via payment 
 ms.author: joanlee
 ms.date: 10/26/2018
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, commerce, economy, media, carts, payments, purchases
 ms.localizationpriority: medium
 ---

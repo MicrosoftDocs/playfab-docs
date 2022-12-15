@@ -5,7 +5,7 @@ description: This topic provides a list of tutorials, including getting started 
 ms.author: joanlee
 ms.date: 10/18/2019
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, social, leaderboards
 ms.localizationpriority: medium
 ---

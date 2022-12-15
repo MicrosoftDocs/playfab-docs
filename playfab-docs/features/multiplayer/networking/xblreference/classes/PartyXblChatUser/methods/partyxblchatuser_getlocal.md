@@ -4,7 +4,7 @@ title: "PartyXblChatUser::GetLocal"
 description: Gets the PartyXblLocalChatUser version of this chat user.
 ms.author: scmunro
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 11/08/2019
 ---
 

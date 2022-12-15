@@ -5,7 +5,7 @@ description: Describes how to deploy a PlayFab multiplayer server.
 ms.author: joanlee
 ms.date: 04/01/2021
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, multiplayer servers, deploy, powershell
 ms.localizationpriority: medium
 ---

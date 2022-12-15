@@ -5,7 +5,7 @@ description: PlayFab Roadmap
 ms.author: thomg
 ms.date: 06/30/2022
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, roadmap, features, development
 ms.localizationpriority: medium
 ---

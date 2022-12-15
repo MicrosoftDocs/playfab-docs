@@ -5,7 +5,7 @@ description: "How to get internal player data."
 ms.author: joanlee
 ms.date: 06/16/2020
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, player data
 ms.localizationpriority: medium
 ---

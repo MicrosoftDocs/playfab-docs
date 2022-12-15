@@ -5,7 +5,7 @@ description: Subscriptions data type.
 ms.author: joanlee
 ms.date: 03/27/2019
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, playstream events
 ms.localizationpriority: medium
 ---

@@ -5,7 +5,7 @@ description: Landing page for CloudScript (Legacy).
 ms.author: joanlee
 ms.date: 06/12/2018
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, automation, cloudscript, error handling
 ms.localizationpriority: medium
 ---

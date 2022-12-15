@@ -4,7 +4,7 @@ title: "PFMultiplayerStopListeningForLobbyInvites"
 description: "Disables the Lobby invite listener for a given entity."
 ms.author: scmunro
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 03/14/2022
 ---
 

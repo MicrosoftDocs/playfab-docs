@@ -5,7 +5,7 @@ description: Describes how to build a solution for A/B testing using Title Data 
 ms.author: joanlee
 ms.date: 10/30/2018
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, analytics, a/b testing, title data, cloudscript
 ms.localizationpriority: medium
 ---

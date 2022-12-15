@@ -5,7 +5,7 @@ description: Landing page for the PlayFab Objective-C SDK.
 ms.author: joanlee
 ms.date: 01/22/2019
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, objective-c, playfab objective-c sdk, native osx, ios development
 ms.localizationpriority: medium
 ---

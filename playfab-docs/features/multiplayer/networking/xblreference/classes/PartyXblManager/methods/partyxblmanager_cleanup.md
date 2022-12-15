@@ -4,7 +4,7 @@ title: "PartyXblManager::Cleanup"
 description: Immediately reclaims all resources associated with the object.
 ms.author: scmunro
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 11/01/2019
 ---
 

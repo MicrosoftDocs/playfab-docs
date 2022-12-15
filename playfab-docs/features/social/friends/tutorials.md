@@ -5,7 +5,7 @@ description: Overview page for tutorials about how to use Friends and Groups.
 ms.author: joanlee
 ms.date: 11/19/2018
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, social, friends, friends lists
 ms.localizationpriority: medium
 ---

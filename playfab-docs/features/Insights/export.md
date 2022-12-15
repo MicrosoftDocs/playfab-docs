@@ -5,7 +5,7 @@ description: Overview for PlayFab Insights Export
 ms.author: mcelliot
 ms.date: 02/28/2020
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, insights, archive
 ms.localizationpriority: medium
 ---

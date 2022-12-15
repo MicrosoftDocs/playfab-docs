@@ -5,7 +5,7 @@ description: Landing page for the PlayFab Lua SDK.
 ms.author: joanlee
 ms.date: 01/22/2019
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, lua sdk, lua, cpp
 ms.localizationpriority: medium
 ---

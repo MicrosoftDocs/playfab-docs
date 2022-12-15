@@ -5,7 +5,7 @@ description: Overview for PlayFab Social Features
 ms.author: thomg
 ms.date: 06/10/2020
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, social, tournaments, leaderboards, azure, trading, groups, friends
 ms.localizationpriority: medium
 ---
