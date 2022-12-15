@@ -5,7 +5,7 @@ description: Tutorial outlining using the Search API to query published content.
 ms.author: wesjong
 ms.date: 06/13/2021
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, commerce, economy, monetization, ugc
 ms.localizationpriority: medium
 ---

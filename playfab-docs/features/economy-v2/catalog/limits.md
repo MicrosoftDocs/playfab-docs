@@ -5,7 +5,7 @@ description: Document detailing the various limits surrounding Catalog and UGC.
 ms.author: wesjong
 ms.date: 03/17/2021
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, commerce, economy, monetization, ugc
 ms.localizationpriority: medium
 ---

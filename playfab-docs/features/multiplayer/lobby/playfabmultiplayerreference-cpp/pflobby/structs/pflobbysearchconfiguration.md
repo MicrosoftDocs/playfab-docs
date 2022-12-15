@@ -4,7 +4,7 @@ title: "PFLobbySearchConfiguration"
 description: "The configuration structure used to specify how a [PFMultiplayerFindLobbies](../functions/pfmultiplayerfindlobbies.md) operation should be performed."
 ms.author: scmunro
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 08/16/2022
 ---
 

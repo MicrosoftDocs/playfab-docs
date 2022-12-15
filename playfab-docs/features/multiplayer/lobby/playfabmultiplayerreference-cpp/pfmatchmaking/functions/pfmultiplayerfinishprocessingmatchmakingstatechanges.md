@@ -4,7 +4,7 @@ title: "PFMultiplayerFinishProcessingMatchmakingStateChanges"
 description: "Returns an array of matchmaking state changes that were being processed."
 ms.author: scmunro
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 03/16/2022
 ---
 

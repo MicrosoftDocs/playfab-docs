@@ -5,7 +5,7 @@ description: Guides you through an example of PlayFab authentication in Phaser.i
 ms.author: joanlee
 ms.date: 06/11/2018
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, authentication, phaser.io, html5
 ms.localizationpriority: medium
 ---

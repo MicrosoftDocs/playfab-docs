@@ -4,7 +4,7 @@ title: "PFMatchmakingMatchMember"
 description: "A member of a match result."
 ms.author: scmunro
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 03/15/2022
 ---
 

@@ -4,7 +4,7 @@ title: "PFLobbyMemberRemovedReason"
 description: "Reasons why a member was removed from a lobby."
 ms.author: scmunro
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 01/03/2022
 ---
 

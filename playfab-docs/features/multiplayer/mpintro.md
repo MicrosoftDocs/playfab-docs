@@ -5,7 +5,7 @@ description: Learn how PlayFab services can be used for multiplayer.
 ms.author: joanlee
 ms.date: 03/04/2019
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, multiplayer
 ms.localizationpriority: medium
 ---

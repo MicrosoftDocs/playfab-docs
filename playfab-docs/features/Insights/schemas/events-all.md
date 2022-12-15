@@ -5,7 +5,7 @@ description: Illustrates how to use the Explorer feature.
 ms.author: mcelliot
 ms.date: 07/24/2019
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, insights, schemas
 ms.localizationpriority: medium
 ---

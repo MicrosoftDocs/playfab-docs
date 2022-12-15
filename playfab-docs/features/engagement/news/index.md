@@ -5,7 +5,7 @@ description: Landing page for News.
 ms.author: joanlee
 ms.date: 11/01/2018
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, title news
 ms.localizationpriority: medium
 ---

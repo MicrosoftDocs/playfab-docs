@@ -4,7 +4,7 @@ title: GetMemberConnectionStatus
 description: Retrieves a member's connection status to the notification service.
 ms.author: aterzakis
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 09/12/2022
 ---
 

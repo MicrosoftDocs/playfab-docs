@@ -4,7 +4,7 @@ title: "PFLobbySearchFriendsFilter"
 description: "The filter structure used to limit lobby search results to only those lobbies owned by the player's friends."
 ms.author: scmunro
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 03/15/2022
 ---
 

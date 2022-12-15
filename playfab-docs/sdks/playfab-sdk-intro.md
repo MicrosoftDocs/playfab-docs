@@ -5,7 +5,7 @@ description: Azure PlayFab SDKs
 ms.author: joanlee
 ms.date: 02/22/2021
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, playfab sdk
 ms.localizationpriority: medium
 ---

@@ -4,7 +4,7 @@ title: "PFLobbyPostUpdate"
 description: "Post an update to the lobby."
 ms.author: scmunro
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 03/14/2022
 ---
 

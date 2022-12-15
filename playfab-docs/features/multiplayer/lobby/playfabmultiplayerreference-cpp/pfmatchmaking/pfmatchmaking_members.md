@@ -4,7 +4,7 @@ title: "PFMultiplayer C/C++ API overview - PFMatchmaking.h"
 description: "PFMultiplayer C/C++ API overview - PFMatchmaking.h"
 ms.author: scmunro
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 08/16/2022
 ---
 

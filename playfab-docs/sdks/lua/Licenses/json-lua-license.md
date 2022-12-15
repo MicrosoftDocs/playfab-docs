@@ -5,7 +5,7 @@ description: The JSON Lua license.
 ms.author: joanlee
 ms.date: 02/20/2019
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, lua sdk, lua, json
 ms.localizationpriority: medium
 ---

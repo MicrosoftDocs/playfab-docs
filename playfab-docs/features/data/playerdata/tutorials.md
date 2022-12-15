@@ -5,7 +5,7 @@ description: Overview page for tutorials about player data.
 ms.author: joanlee
 ms.date: 11/19/2018
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, data, player data
 ms.localizationpriority: medium
 ---

@@ -5,7 +5,7 @@ description: A simple but powerful example of how to add PlayFab to a game (Endl
 ms.author: joanlee
 ms.date: 02/25/2019
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, samples, how-to, development, Demo Talk, GDC2019
 ms.localizationpriority: medium
 ---

@@ -4,7 +4,7 @@ title: "PFMatchmakingTicketCompletedStateChange"
 description: "Information specific to the *TicketCompleted* type of state change."
 ms.author: scmunro
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 03/15/2022
 ---
 

@@ -5,7 +5,7 @@ description: Quickstart for Azure PlayFab Multiplayer Unity plugin.
 ms.author: victorku
 ms.date: 11/23/2021
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, multiplayer, matchmaking, lobby, sdk, sample
 ms.localizationpriority: medium
 ---

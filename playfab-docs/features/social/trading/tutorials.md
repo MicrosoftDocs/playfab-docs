@@ -5,7 +5,7 @@ description: Overview page for tutorials about trading in PlayFab.
 ms.author: joanlee
 ms.date: 11/19/2018
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, social, trading
 ms.localizationpriority: medium
 ---

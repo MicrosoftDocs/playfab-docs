@@ -4,7 +4,7 @@ title: "PFLobbyGetMemberPropertyKeys"
 description: "Get a list of the specified member's property keys."
 ms.author: scmunro
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 03/16/2022
 ---
 

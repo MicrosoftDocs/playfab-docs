@@ -5,7 +5,7 @@ description: Learn about owner requirements and privileges.
 ms.author: joanlee
 ms.date: 10/25/2021
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, multiplayer, lobby, matchmaking, types
 ms.localizationpriority: medium
 ---

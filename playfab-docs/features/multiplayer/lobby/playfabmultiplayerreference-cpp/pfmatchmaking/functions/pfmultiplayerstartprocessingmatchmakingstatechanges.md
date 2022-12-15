@@ -4,7 +4,7 @@ title: "PFMultiplayerStartProcessingMatchmakingStateChanges"
 description: "Retrieves an array of all matchmaking state changes to process since the last such call."
 ms.author: scmunro
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 03/16/2022
 ---
 

@@ -5,7 +5,7 @@ description: Learn how to implement find lobbies.
 ms.author: joanlee
 ms.date: 10/25/2021
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, multiplayer, lobby, find lobbies
 ms.localizationpriority: medium
 ---

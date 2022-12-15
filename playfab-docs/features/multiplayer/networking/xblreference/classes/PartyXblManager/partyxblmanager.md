@@ -4,7 +4,7 @@ title: "PartyXblManager"
 description: The primary management class for interacting with the Party Xbox Live Helper library.
 ms.author: scmunro
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 04/22/2022
 ---
 

@@ -5,7 +5,7 @@ description: Understanding how to use PlayFab for a Business Intelligence Person
 ms.author: joanlee
 ms.date: 11/16/2018
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, real-time analytics, PlayStream, player behaviors, event archiving, data export, player data, webhooks, analytic reporting, reports
 ms.localizationpriority: medium
 ---

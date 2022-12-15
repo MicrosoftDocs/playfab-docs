@@ -5,7 +5,7 @@ description: Release notes for PlayFab Multiplayer's C++ SDK
 ms.author: scmunro
 ms.date: 04/29/2022
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, multiplayer, release notes
 ms.localizationpriority: medium
 ---

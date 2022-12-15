@@ -5,7 +5,7 @@ description: The Data Explorer tutorials.
 ms.author: joanlee
 ms.date: 09/23/2020    
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, insights, data explorer
 ms.localizationpriority: medium
 ---

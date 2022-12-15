@@ -5,7 +5,7 @@ description: Videos for PlayFab features and technologies.
 ms.author: joanlee
 ms.date: 02/25/2019
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 ROBOTS: NOINDEX,NOFOLLOW
 keywords: playfab, videos, how-to, development
 ms.localizationpriority: medium

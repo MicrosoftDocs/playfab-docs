@@ -5,7 +5,7 @@ description: Describes how to access archived leaderboard states.
 ms.author: joanlee
 ms.date: 10/29/2018
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, social, tournaments, leaderboards
 ms.localizationpriority: medium
 ---

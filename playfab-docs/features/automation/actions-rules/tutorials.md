@@ -5,7 +5,7 @@ description: Overview page for tutorials about actions and rules.
 ms.author: joanlee
 ms.date: 11/19/2018
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, automation, actions, rules, cloudscript, webhooks
 ms.localizationpriority: medium
 ---

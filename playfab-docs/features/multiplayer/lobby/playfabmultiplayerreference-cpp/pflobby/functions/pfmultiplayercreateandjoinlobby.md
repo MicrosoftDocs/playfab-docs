@@ -4,7 +4,7 @@ title: "PFMultiplayerCreateAndJoinLobby"
 description: "Create a new lobby and add the creating PlayFab entity to it."
 ms.author: scmunro
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 03/15/2022
 ---
 

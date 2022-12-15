@@ -4,7 +4,7 @@ title: "PFLobbyGetMembers"
 description: "Gets the list of PlayFab entities currently joined to the lobby as members."
 ms.author: scmunro
 ms.topic: reference
-ms.prod: playfab
+ms.service: playfab
 ms.date: 03/14/2022
 ---
 

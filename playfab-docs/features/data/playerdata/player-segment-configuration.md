@@ -5,7 +5,7 @@ description: Describes the basics of Player Segment configuration.
 ms.author: joanlee
 ms.date: 06/12/2018
 ms.topic: article
-ms.prod: playfab
+ms.service: playfab
 keywords: playfab, game manager, player data, segments
 ms.localizationpriority: medium
 ---
