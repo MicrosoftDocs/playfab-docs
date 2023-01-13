@@ -146,7 +146,7 @@ private void CallCSharpExecuteFunction()
 
 ### PlayFab CloudScript Context, Variables and Server SDKs <a name="playfabfunctioncontext"></a>
 
-One advantage of using CloudScript using Azure Functions is that the PlayStream Event and Player Profile context is automatically passed to the Azure Function. On invocation of the CloudScript you receive the context according to the function's invocation scenario. For example, the context will be different depending on whether whether it was triggered by a PlayStream Action or called directly from the client. This includes information such as the entity profile on whose behalf the CloudScripts was invoked, and potentially the PlayStream events used to invoke the CloudScript.
+One advantage of using CloudScript using Azure Functions is that the PlayStream Event and Player Profile context is automatically passed to the Azure Function. On invocation of the CloudScript you receive the context according to the function's invocation scenario. For example, the context will be different depending on whether it was triggered by a PlayStream Action or called directly from the client. This includes information such as the entity profile on whose behalf the CloudScripts was invoked, and potentially the PlayStream events used to invoke the CloudScript.
 
 1. You will need to install the PlayFab SDK via Package Manager. To do this open Terminal or CMD Console in Visual Studio Code and type: `dotnet add package PlayFabAllSDK`
 2. You need to include the [CS2AFHelperClasses.cs](https://github.com/PlayFab/PlayFab-Samples/blob/master/Samples/CSharp/AzureFunctions/CS2AFHelperClasses.cs) file which contains the implementation of `PlayFab.Samples`
