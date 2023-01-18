@@ -19,9 +19,9 @@ ms.localizationpriority: medium
 
 [HowTo: Use Google SignIn (GPG) + PlayFab (Unity)](https://youtu.be/igup53sdmHg)
 
-This tutorial illustrates the steps to successfully add Google Play Games sign-in to your PlayFab games, built with the Unity SDK. Actually, this should be a fairly simple procedure, once you know all the steps.
+This tutorial illustrates the steps to successfully add Google Play Games sign-in to your PlayFab games, built with the Unity SDK.
 
-However, finding all the required information can be tricky. So we will try to centralize all the steps you need to get this feature working.
+However, finding all the required information can be tricky. So we'll try to centralize all the steps you need to get this feature working.
 
 You can also download the sample for this tutorial [here](https://github.com/PlayFab/PlayFab-Samples/tree/master/Recipes/GoogleSignInSample).
 
@@ -36,15 +36,15 @@ You can also download the sample for this tutorial [here](https://github.com/Pla
 
 ## Getting started
 
-First, we will start by setting up some basic things in Google Play. There are a few good guides on how to do this, so we are not going to reinvent the wheel.
+First, we'll start by setting up some basic things in Google Play. There are a few good guides on how to do this, so we aren't going to reinvent the wheel.
 
-1. Create an **Application** - If you have not done so already, you will need to create an application in the [Google Play Developer Console](https://play.google.com/apps/publish).
+1. Create an **Application** - If you haven't done so already, you'll need to create an application in the [Google Play Developer Console](https://play.google.com/apps/publish).
 2. Build your game APK, and upload it as an Alpha Build.
     - Select **Manage Releases**.
     - Select **Manage Alpha**.
     - Select **Upload APK**.
-3. [Setting Up Google Play Games Services](https://developers.google.com/games/services/console/enabling) - Watch the [YouTube video](https://youtu.be/BZRoBbUsfPE), as the link here is dated, and does not reflect the latest UI of Google Play Games services.
-4. Download the [Google Play Games SDK](https://github.com/playgameservices/play-games-plugin-for-unity) (if you have not done so already) and install it.
+3. Set up Google Play Games services following the instructions on this page: [Setting Up Google Play Games Services](https://developers.google.com/games/services/console/enabling).
+4. Download the [Google Play Games SDK](https://github.com/playgameservices/play-games-plugin-for-unity) (if you haven't done so already) and install it.
 5. Install the PlayFab Unity SDK (if you do not know how to do this, follow the [Unity3D quickstart guide](../../../sdks/unity3d/quickstart.md)).
 
 ## Configuring Google Play Games
@@ -121,7 +121,7 @@ To set up Google in PlayFab:
 There are a few things you need to enter into this form:
 
 - The **Google App Package ID** - This is the name of your Android package. For example, our sample uses `com.playfab.gpgexample`.
-- The **Google App License Key** - While this is a required field, it is not related to the Google Sign-In. This field is for setting up a Receipt Validation using our **Receipt Validation APIs**.
+- The **Google App License Key** - While this is a required field, it isn't related to the Google Sign-In. This field is for setting up a Receipt Validation using our **Receipt Validation APIs**.
 
 > [!NOTE]
 > You can get this License Key from the [Google Developer Console](https://play.google.com/apps/publish) under the **Services & APIs** section. Look for a section entitled **YOUR LICENSE KEY FOR THIS APPLICATION**. Copy and paste the Base64-encoded RSA Public Key into this field.
@@ -134,7 +134,7 @@ There are a few things you need to enter into this form:
 
 ## Adding Google sign-in to your Unity Game
 
-The code to get Google sign-in working is fairly minimal. There is the initialization code, which you will put in your Start (or anywhere you are initializing or starting up your app).
+The code to get Google sign-in working is fairly minimal. There's the initialization code, which you'll put in your Start (or anywhere you're initializing or starting up your app).
 
 This can be in different places, depending on the architecture and framework of your game or app. In any case, the code below will initialize Google Play Games.
 
@@ -203,7 +203,7 @@ The next set of code, the `OnSignInButtonClicked()` function shown in the exampl
 
 The `OnSignInButtonClicked()` code can be a bit overwhelming, so let's break down exactly what is happening:
 
-- First, we log in with `Social.localUser.Authenticate` - This will return a boolean if we are able to successfully login. Be aware that if you have not added your test account to your app, this will always return *False* when testing.
+- First, we log in with `Social.localUser.Authenticate` - This will return a boolean if we're able to successfully login. Be aware that if you haven't added your test account to your app, this will always return *False* when testing.
 - When this happens - important step here - [add your test account](https://developers.google.com/games/services/console/testpub).
 - The link will take you to instructions on adding testers to your Google application.
 
