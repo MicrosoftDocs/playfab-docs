@@ -100,11 +100,76 @@ Go to the PlayFab **Game Manager** page for your title.
 
 ## Testing using an access token
 
-In this example, we show how to test using the classic access token approach. Use the HTML file provided below for your testing.
+In this example, we show how to test the LoginWithGoogleAccountAPI using the classic access token approach. Use the HTML file provided below for your testing.
 
 > [!NOTE]
 > Please *make sure* to replace `YOUR_CLIENT_ID` and `YOUR_PLAYFAB_TITLE` with your own values.
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://accounts.google.com/gsi/client" onload="initClient()" async defer></script>
+    <script src="https://download.playfab.com/PlayFabClientApi.js"></script>
+  </head>
+  <body>
+    <script>
+      var client;
+      function initClient() {
+          console.log("Initializing Google token client on page load");
+          client = google.accounts.oauth2.initTokenClient({
+              client_id: "YOUR_CLIENT_ID", // TODO: PUT YOUR GOOGLE CLIENT_ID HERE!
+              callback: "onTokenResponse",
+              scope: "https://www.googleapis.com/auth/userinfo.profile",
+              callback: (tokenResponse) => {
+                  access_token = tokenResponse.access_token;
+                  onSignIn();
+              }
+          });
+      }
 
+      function getToken() {
+        client.requestAccessToken();
+      }
+
+      // Invoked after user has signed in with Google
+      function onSignIn() {
+          // Execute LoginWithGoogleAccount API call using the Google access token. Please replace TitleId.
+          logLine("Attempting PlayFab Sign-in using LoginWithGoogleAccount");
+          PlayFabClientSDK.LoginWithGoogleAccount({
+              AccessToken: access_token, // This access token is generated after a user has signed into Google
+              CreateAccount: true,
+              TitleId: "YOUR_PLAYFAB_TITLE", // TODO: PUT YOUR TITLE ID HERE!
+          }, onPlayFabResponse);
+      }
+
+      // Handles response from PlayFab
+      function onPlayFabResponse(response, error) {
+          if (response)
+              logLine("Response: " + JSON.stringify(response));
+          if (error)
+              logLine("Error: " + JSON.stringify(error));
+      }
+
+      function logLine(message) {
+          var textnode = document.createTextNode(message);
+          document.body.appendChild(textnode);
+          var br = document.createElement("br");
+          document.body.appendChild(br);
+      }
+    </script>
+    <h1>Google Access Token Auth Example</h1>
+    <!-- Clicking this button will prompt the user to sign into Google. Once they have signed into Google, LoginWithGoogleAccount is automatically called. -->
+    <button onclick="getToken();">Sign into Google</button><br><br>
+  </body>
+</html>
+```
+
+
+<details>
+    <summary><b>Click to view Code sample using (deprecated) Google Sign-in Platform library</b></summary>
+> [!NOTE]
+>  The sample below uses the Google Sign-In platform library. **According to the [Google Identity public documentation site](https://developers.google.com/identity/gsi/web/guides/migration), the Google Sign-In JavaScript platform library for Web is set to be deprecated after March 31, 2023**. It will not work for newly created Google clients moving forward - please refer to the prior code sample, which uses the newer Google Identity Services library!
+    
 ```html
 <!DOCTYPE html>
 <html>
@@ -127,7 +192,7 @@ In this example, we show how to test using the classic access token approach. Us
             var accessToken = gapi.auth2.getAuthInstance().currentUser.get().getAuthResponse(true).access_token;
 
             // Execute LoginWithGoogleAccount API call using the access token. Please replace TitleID with your own.
-            logLine("Attempting PlayFab Sign-in");
+            logLine("Attempting PlayFab Sign-in using LoginWithGoogleAccount");
             PlayFabClientSDK.LoginWithGoogleAccount({
                 ServerAuthCode: accessToken,
                 CreateAccount : true,
@@ -135,7 +200,7 @@ In this example, we show how to test using the classic access token approach. Us
             }, onPlayFabResponse);
         }
 
-        // Handles response from playfab.
+        // Handles response from PlayFab
         function onPlayFabResponse(response, error) {
             if (response)
                 logLine("Response: " + JSON.stringify(response));
@@ -153,6 +218,7 @@ In this example, we show how to test using the classic access token approach. Us
 </body>
 </html>
 ```
+</details>
 
 Remember to open this page using your web server, and make sure to access this page using the URL you specified, while configuring Google Project, (`[PlayFab](http://playfab.example)` in our case).
 
