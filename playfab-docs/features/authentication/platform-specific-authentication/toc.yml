@@ -13,6 +13,13 @@
     href: google-html5.md
   - name: Setting up PlayFab authentication using Google Play Games Sign-In in Unity
     href: google-sign-in-unity.md
+  - name: Migrating from Google Sign-in to Google Play Games Sign-In in Unity
+    href: google-play-games-sign-in-migration.md
+    items:
+    - name: Migration Steps
+      href: google-play-games-sign-in-migration-details.md
+    - name: Migration Fallback
+      href: google-play-games-sign-in-migration-fallback.md
   - name: Setting up PlayFab authentication using Kongregate and HTML5
     href: kongregate-html5.md
   - name: Setting up PlayFab authentication using Kongregate and Unity
