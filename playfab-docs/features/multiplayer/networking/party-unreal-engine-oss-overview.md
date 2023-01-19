@@ -31,16 +31,24 @@ PlayFab OSS works alongside the PlayFab SDK marketplace plugin, which provides o
   - PS5™ and PS4™
 - Support for cross-play & cross-talk across the above platforms
 - Azure Cognitive Services
-    - Real-time text chat translation
-    - Real-time voice chat transcription
-    - Real-time voice chat transcription translation
-    - Text-to-speech synthesis 
+  - Real-time text chat translation
+  - Real-time voice chat transcription
+  - Real-time voice chat transcription translation
+  - Text-to-speech synthesis
 
 ## Which versions of Unreal Engine are supported?
 
 We officially support 5.0, 4.27 and 4.26. For UE4, 4.27 is the recommended version since crossplay between different platforms does not work on 4.26, but it does on 4.27. If you are on an earlier version of Unreal Engine 4, the OSS can be backported with minimal work. Refer to the [Using older versions of Unreal Engine 4](party-unreal-engine-using-older-versions.md) page for more details.
 
 **NOTE:** If you are using a version of UE4 earlier than 4.25plus, you will have to rename all references to GDK to Anvil using find & replace all.
+
+Listed below are the versions of Unreal Engine and the corresponding platforms that the PF OSS currently supports.
+
+| UE version   | GDK PC      | GDK Xbox    | Steam       | PS4         | PS5         | Switch      |
+|--------------|-------------|-------------|-------------|-------------|-------------|-------------|
+| 4.27 Plus    | Supported   | Supported   | Supported   | Supported   | Supported   | Supported   |
+| 5.0          | Supported   | Supported   | Supported   | Supported   | Supported   | Supported   |
+| 5.1          | Coming soon | Coming soon | Coming soon | Coming soon | Coming soon | Coming soon |
 
 ## Which versions of the Microsoft Game Development Kit (GDK) are supported?
 
@@ -50,15 +58,15 @@ We officially support 5.0, 4.27 and 4.26. For UE4, 4.27 is the recommended versi
     - Minimum: November 2020 GDK (2020.11)
       - When utilizing a GDK version earlier than 2020.11 on PC, reach out to your Microsoft Representative for further guidance.
   - UE5
-      - Recommended: October 2021 GDK, Update 5 (2021.10.5)
-      - Minimum: October 2021 GDK, Update 1 (2021.10.1)
+    - Recommended: October 2021 GDK, Update 5 (2021.10.5)
+    - Minimum: October 2021 GDK, Update 1 (2021.10.1)
 - **Xbox GDK:**
   - UE4
     - Recommended: June 2021 GDK (2021.06)
     - Minimum: June 2021 GDK (2021.06)
   - UE5
-      - Recommended: October 2021 GDK, Update 5 (2021.10.5)
-      - Minimum: October 2021 GDK, Update 1 (2021.10.1)
+    - Recommended: October 2021 GDK, Update 5 (2021.10.5)
+    - Minimum: October 2021 GDK, Update 1 (2021.10.1)
 
 XDK is supported on older version(1.07 and earlier) of the OSS, refer [Using older version](party-unreal-engine-using-older-versions.md) for further details.
 
