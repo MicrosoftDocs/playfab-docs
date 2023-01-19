@@ -16,19 +16,19 @@ sections:
   - name: Ignored
     questions:
       - question: |
+          How can I sign up for to get free usage of PlayFab services?
+        answer: |
+          By joining [the ID@Azure program](https://developer.microsoft.com/en-us/games/products/idazure/). This program provides developers with a number of great benefits, including free Azure credits as well as free usage of the PlayFab service, as described in the program's documentation.
+          
+      - question: |
           What limits are there to Xbox Live free usage of PlayFab Party or Matchmaking?
         answer: |
-          In Development Mode, overall usage of PlayFab including Party and Matchmaking is restricted to 100,000 unique player accounts and 10 unique titles. For all paid tiers, there is no limit on the number of match tickets, concurrent Party networks, total Party networks, or any other consumption limitation.
+          The PlayFab Free tier is limited to 10 total titles in Development Mode. In Development Mode, overall usage of PlayFab is restricted to 100,000 unique player accounts and 10 unique titles. For all paid tiers, developers can elevate titles out of Development Mode, which removes the 100K player account limit, and in the Standard tier or higher, developers can create thousands of titles with as many of those in Development Mode as needed. 
 
       - question: |
           Does this program apply only to Xbox consoles?
         answer: |
           No. This free program applies to any platform where players sign in with Xbox Live, including PC, iOS, and Android.
-
-      - question: |
-          PlayFab Matchmaking is labeled as a preview service. Can I use matchmaking in production?
-        answer: |
-          Yes. Matchmaking is being used by several games in production and are supported 24/7 by PlayFab. We are using the preview phase to improve usability and act on customer feedback.
 
       - question: |
           How do I ensure my usage of PlayFab Party is compliant with Xbox Live Integration policies?
