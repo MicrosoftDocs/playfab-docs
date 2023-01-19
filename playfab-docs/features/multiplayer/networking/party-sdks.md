@@ -16,7 +16,7 @@ This topic describes all the Azure PlayFab Party SDKs that are currently availab
 
 If you don't find what you need, let us know by writing a post on our [forums](https://community.playfab.com/index.html).
 
-Access to SDKs for Nintendo Switch, PlayStation&#174;4, PlayStation&#174;5, Google Stadia, PC (GDK), and Xbox (GDK) requires special approval and adherence to platform policies. For more information, see [Request access for SDKs and samples](request-access-for-sdks-samples.md).
+Access to SDKs for Nintendo Switch, PlayStation&#174;4, PlayStation&#174;5, PC (GDK), and Xbox (GDK) requires special approval and adherence to platform policies. For more information, see [Request access for SDKs and samples](request-access-for-sdks-samples.md).
 
 If you're looking for the core PlayFab SDK that helps you implement a majority of our features, including LiveOps, economy, and data analytics, see [PlayFab SDKs](../../../sdks/playfab-sdk-intro.md).
 
@@ -29,7 +29,7 @@ If you're looking for the core PlayFab SDK that helps you implement a majority o
 
 | SDK/library| Platform/operating system|
 |------------|--------------------------|
-| C/C++ SDK    |[Android, iOS, Linux, macOs](https://github.com/PlayFab/PlayFabParty/releases),[Windows 10, Windows 8.1](https://www.nuget.org/packages/Microsoft.PlayFab.PlayFabParty.Cpp.Windows), [Stadia](https://dev.azure.com/PlayFabPrivate/Stadia/_git/PlayFabPartyStadia), [Switch](https://dev.azure.com/PlayFabPrivate/Switch/_git/PlayFabPartySwitch), [PlayStation 4](https://dev.azure.com/PlayFabPrivate/PS4/_git/PlayFabPartyPS4), [PlayStation 5](https://dev.azure.com/PlayFabPrivate/PS5/_git/PlayFabPartyPS5), [PC (GDK) and Xbox (GDK)](https://aka.ms/gdkdl) (Use the version that's included in the GDK.)|
+| C/C++ SDK    |[Android, iOS, Linux, macOs](https://github.com/PlayFab/PlayFabParty/releases),[Windows 10, Windows 8.1](https://www.nuget.org/packages/Microsoft.PlayFab.PlayFabParty.Cpp.Windows), [Switch](https://dev.azure.com/PlayFabPrivate/Switch/_git/PlayFabPartySwitch), [PlayStation 4](https://dev.azure.com/PlayFabPrivate/PS4/_git/PlayFabPartyPS4), [PlayStation 5](https://dev.azure.com/PlayFabPrivate/PS5/_git/PlayFabPartyPS5), [PC (GDK) and Xbox (GDK)](https://aka.ms/gdkdl) (Use the version that's included in the GDK.)|
 | Unity SDK  |[Android, iOS, Windows 10, Windows 8.1](https://github.com/PlayFab/PlayFabPartyUnity/releases), [PlayStation 4](https://dev.azure.com/PlayFabPrivate/PS4/_git/PlayFabPartyUnityPS4), [PlayStation 5](https://dev.azure.com/PlayFabPrivate/PS5/_git/PlayFabPartyUnityPS5), [Switch](https://dev.azure.com/PlayFabPrivate/Switch/_git/PlayFabPartyUnitySwitch), [PC (GDK) and Xbox (GDK)](https://aka.ms/gdkdl) (under **Add-ins**)|
 | Unity Editor Extensions | [Unity game engine](https://github.com/PlayFab/UnityEditorExtensions/releases)|
 | Unreal SDK |[PC (GDK) and Xbox (GDK)](https://aka.ms/gdkdl) (under **Add-ins**), [Switch, PlayStation 4, and PlayStation 5](https://github.com/PlayFab/PlayFabMultiplayerUnreal)|
@@ -41,7 +41,6 @@ If you're looking for the core PlayFab SDK that helps you implement a majority o
 |--------------------------|------------|
 | Android | [C/C++](https://github.com/PlayFab/PlayFabParty/releases), [C/C++ NuGet package](https://www.nuget.org/packages/Microsoft.PlayFab.PlayFabParty.Cpp.Windows/), [Unity](https://github.com/PlayFab/PlayFabPartyUnity/releases)|
 | iOS | [C/C++](https://github.com/PlayFab/PlayFabParty/releases), [Unity](https://github.com/PlayFab/PlayFabPartyUnity/releases)|
-| Stadia | [C/C++](https://dev.azure.com/PlayFabPrivate/Stadia/_git/PlayFabPartyStadia), [C/C++ NuGet package](https://dev.azure.com/PlayFabPrivate/Stadia/_packaging)|
 | Switch | [C/C++](https://dev.azure.com/PlayFabPrivate/Switch/_git/PlayFabPartySwitch), [Unity](https://dev.azure.com/PlayFabPrivate/Switch/_git/PlayFabPartyUnitySwitch), [Unreal](https://github.com/PlayFab/PlayFabMultiplayerUnreal), [C/C++ and Unity NuGet packages](https://dev.azure.com/PlayFabPrivate/Switch/_packaging) |
 | PlayStation 4 | [C/C++](https://dev.azure.com/PlayFabPrivate/PS4/_git/PlayFabPartyPS4), [Unity](https://dev.azure.com/PlayFabPrivate/PS4/_git/PlayFabPartyUnityPS4), [Unreal](https://github.com/PlayFab/PlayFabMultiplayerUnreal), [C/C++ and Unity NuGet packages](https://dev.azure.com/PlayFabPrivate/PS4/_packaging) |
 | PlayStation 5 | [C/C++](https://dev.azure.com/PlayFabPrivate/PS5/_git/PlayFabPartyPS5), [Unity](https://dev.azure.com/PlayFabPrivate/PS5/_git/PlayFabPartyUnityPS5), [Unreal](https://github.com/PlayFab/PlayFabMultiplayerUnreal), [C/C++ and Unity NuGet packages](https://dev.azure.com/PlayFabPrivate/PS5/_packaging)|
