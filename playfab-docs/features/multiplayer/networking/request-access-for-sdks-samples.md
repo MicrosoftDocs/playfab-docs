@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Request access for secured SDKs and samples
 
-This topic provides information about how you can access SDKs and samples for **Nintendo Switch**, **PlayStation&#174;4**, **PlayStation&#174;5**, and **Google Stadia**.
+This topic provides information about how you can access SDKs and samples for **Nintendo Switch**, **PlayStation&#174;4**, and **PlayStation&#174;5**.
 
 Adhering to platform policies, we need to ensure that you're a registered developer before granting access, so a few extra steps are required from you. For example, you need to be a registered Switch developer to get access to Party SDKs and samples for Switch.
 
@@ -33,11 +33,6 @@ If you're not yet a registered developer for the previously mentioned platforms 
 "PS4" is a registered trademark or trademark of Sony Interactive Entertainment Inc.
 
 "PS5" is a registered trademark or trademark of Sony Interactive Entertainment Inc.
-
-## Stadia
-
-1. Email PlayFabSdkAccess@microsoft.com with your developer information.
-2. After we've verified that you're a registered developer for Stadia, we'll grant you access.
 
 ## Need help?
 
