@@ -156,6 +156,29 @@ VoIP is allowed on all platforms by default unless explicitly excluded for certa
 ```
 This completes the setup of OSS required to be used in your game.  Good luck!
 
+## Troubleshoot: Unreal Engine Installed Builds
+
+Users may face issues when trying to create an Unreal Engine Installed Build with the OnlineSubsystemPlayFab on GDK build flavors. We provide the following guidance to successfully overcome this issue until there's a more complete solution.
+
+ * Locate the directory where Unreal Engine is installed on the machine.
+ * Navigate to Engine\Platforms\GDK\Plugins\Online\PlayFabParty
+ * Open PlayFabParty.uplugin
+ * Replace the key **WhitelistPlatforms** with **BlacklistPlatforms**
+
+Repeat the process for XboxOneGDK (PlayFabParty_XboxOneGDK.uplugin) and XSX (PlayFabParty_XSX.uplugin) if these platforms are required for the Installed Build. If Win64 is also a required platform for the installed build, add Win64 in the array of **BlacklistPlatforms**.
+
+Example of how the part of interest of PlayFabParty.uplugin looks after following these instructions:
+```config
+	"Modules": [
+		{
+			"Name": "PlayFabParty",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"BlacklistPlatforms": ["WinGDK", "Win64"]
+		}
+	],
+```
+
 "PlayStation" is a registered trademark or trademark of Sony Interactive Entertainment Inc.
 "PS4" is a registered trademark or trademark of Sony Interactive Entertainment Inc.
 "PS5" is a registered trademark or trademark of Sony Interactive Entertainment Inc.
