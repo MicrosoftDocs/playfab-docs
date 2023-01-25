@@ -41,6 +41,18 @@ You can either create a new user role or add these permissions to an existing ro
 
 * [Kusto.Explorer](/azure/data-explorer/kusto/tools/kusto-explorer)
 
+> [!IMPORTANT]
+> Insights only supports the V1 query response schema. You can update the response schema in Kusto Explorer using the steps below.
+>
+
+On your local machine, open Kusto.Explorer.
+
+1. Select the **Tools** tab, then select **Options...**
+1. Under the **Connections** category, change the following two properties:
+   * Set **Query results protocol** to **V1** from the dropdown options.
+   * Set **KQL Parser version** to **V1** from the dropdown options.
+
+   ![Kusto.Explorer use V1 query schema](media/kusto-explorer-settings-v1.png)
 ## Connect with Kusto Explorer
 
 On your local machine, open Kusto.Explorer.
