@@ -22,6 +22,10 @@ Currently, you can connect the following external tools to Insights:
   - [Connect to Grafana](#grafana)
   - [Connect to Python](#python)
   - [Connect to Kusto C# SDK](#kusto-c-sdk)
+
+> [!IMPORTANT]
+> Insights only supports the V1 query response schema. For some tools, you may need to update your tool's settings to use the V1 parser and results protocol.
+>
   
 ## Power BI
 Pairing Power BI with Insights allows you to easily create visualizations of your game data. 
