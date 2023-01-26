@@ -71,6 +71,9 @@ All API requests have been disabled for this title, and it can no longer be used
 - `InvalidContentType (1144)`:
 It should be impossible to get this if you're using one of our SDKs. If you're making your own raw HTTPS calls to PlayFab API methods, your `Content-Type` header must be `application/json`. No other formats are accepted.
 
+- `InvalidEntityType (1373)`:
+The entity type in the token used for authentication is not supported by this API.
+
 - `InvalidParams (1000)`:
 The API request object sent to PlayFab has invalid parameters and cannot be executed.
 
