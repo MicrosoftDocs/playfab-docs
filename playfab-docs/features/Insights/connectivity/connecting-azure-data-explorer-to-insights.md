@@ -27,6 +27,20 @@ To verify that the account, or user, is set to use the Microsoft authentication 
 
 If you can sign in, then the account is set to use the Microsoft authentication provider.
 
+### Other prerequisites
+
+> [!IMPORTANT]
+> Insights only supports the V1 query response schema. You can update the response schema in Azure Data Explorer using the steps below.
+>
+
+Navigate to [Azure Data Explorer](https://dataexplorer.azure.com/).
+
+1. Click on the gear icon next to your user account name in the upper right-hand corner.
+1. Select the **Connection** setting section.
+   * Set **Server parser** to **V1** from the dropdown options.
+
+     ![ADX use V1 query schema](media/adx-settings-v1.png)
+
 ### Game Manager permissions for Insights
 
 You need to assign your account a [user role](../../../gamemanager/playfab-user-roles.md) with the following Game Manager permissions enabled:
