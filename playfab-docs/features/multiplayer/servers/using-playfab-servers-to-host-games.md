@@ -58,7 +58,7 @@ To learn more and see sample code, see [Using QoS beacons to measure Player late
 
 ## 5. Request game servers
 
-When a player needs multiplayer servers, it can allocated from the build's standby pool. This request can come from many sources, including PlayFab Matchmaking, a lobby or matchmaking service you operate, directly from a client calling PlayFab, and more.
+When a player needs multiplayer servers, it can be allocated from the build's standby pool. This request can come from many sources, including PlayFab Matchmaking, a lobby or matchmaking service you operate, directly from a client calling PlayFab, and more.
 
 PlayFab Matchmaking service is a cross-platform matchmaking service that is able to automatically allocate PlayFab Multiplayer Servers. For more information how to activate server allocation, see [Integrating matchmaking with PlayFab Multiplayer Servers](../matchmaking/multiplayer-servers.md).
 
