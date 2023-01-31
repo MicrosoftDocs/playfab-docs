@@ -89,4 +89,4 @@ As a convenience, PlayFab configures some build information as the following env
 - **PF_VM_ID** - Unique identifier for the VM (like 'xcloudeau4u4yyxj4xymu:AustraliaEast:1E03_6f27ad88-9bc3-4ea3-8d16-75480aba4637:tvmps_0e05c37e0bbdca298a09fb0d597bd666eb7c5fd0ebcf1fed4c52e608a39a7c9c_d')
 - **CERTIFICATE_FOLDER** - Folder containing game certificates
 - **PF_SERVER_LOG_DIRECTORY** - Folder containing game logs
-- **PF_SERVER_INSTANCE_NUMBER** - Instance number for the session host. First session on VM is 0, second is 1, third is 2, etc.
+- **PF_SERVER_INSTANCE_NUMBER** - Instance number for the server. First server on VM is 0, second is 1, third is 2, etc.
