@@ -31,7 +31,7 @@ You can use the PlayFab plugin for the Unreal Engine to manage LiveOps for your 
 
 ## Create an Unreal project
 
-In Unreal Engine, create a new Unreal Project. For detailed instructions, follow the [Create a New Project guide]([https://docs.unrealengine.com/Engine/Basics/Projects/Browser/index.html](https://docs.unrealengine.com/4.27/en-US/Basics/Projects/Browser/)).
+In Unreal Engine, create a new Unreal Project. For detailed instructions, follow the [Create a New Project guide](https://docs.unrealengine.com/4.27/en-US/Basics/Projects/Browser/).
 
 1. For **Project Category** select **Games**.
 2. In **Select Template**, select **Blank**.
