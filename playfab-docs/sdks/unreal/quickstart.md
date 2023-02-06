@@ -26,12 +26,12 @@ You can use the PlayFab plugin for the Unreal Engine to manage LiveOps for your 
 
 * A [PlayFab developer account](https://developer.playfab.com/en-us/sign-up).
 * An installation of [Visual Studio](https://visualstudio.microsoft.com/downloads/) that is configured for Unreal Engine. For information about configuring Visual Studio, see [Setting Up Visual Studio for Unreal Engine](https://docs.unrealengine.com/en-US/Programming/Development/VisualStudioSetup/index.html).
-* An installation of the [Unreal Engine](https://www.unrealengine.com/download). For information about installing the Ureal Engine, see the [Unreal Engine installation guide](https://docs.unrealengine.com/GettingStarted/Installation/index.html).
+* An installation of the [Unreal Engine](https://www.unrealengine.com/download). For information about installing the Unreal Engine, see the [Unreal Engine installation guide](https://docs.unrealengine.com/4.27/en-US/Basics/Projects/Browser/).
 * An installation of the PlayFab Unreal plugin. You can install the Unreal plugin from the [Unreal Engine marketplace](https://www.unrealengine.com/marketplace/playfab-sdk).
 
 ## Create an Unreal project
 
-In Unreal Engine, create a new Unreal Project. For detailed instructions, follow the [Create a New Project guide](https://docs.unrealengine.com/Engine/Basics/Projects/Browser/index.html).
+In Unreal Engine, create a new Unreal Project. For detailed instructions, follow the [Create a New Project guide](https://docs.unrealengine.com/4.27/en-US/Basics/Projects/Browser/).
 
 1. For **Project Category** select **Games**.
 2. In **Select Template**, select **Blank**.
