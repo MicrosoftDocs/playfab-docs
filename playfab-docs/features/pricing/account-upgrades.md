@@ -48,7 +48,7 @@ You can upgrade your account plan at any time on the **My Studios and Titles** p
 
 5. Enter Contact Information and Payment Information to move to the **Review** page. Select **Confirm this Plan** to complete the account upgrade.
 
-6. Once you upgrade your account, on the **Studio Settings** page under the Studio Plan section, you will see your current plan as well as the scheduled plan and date of schedyle.
+6. Once you upgrade your account, on the **Studio Settings** page under the Studio Plan section, you will see your current plan as well as the scheduled plan and date of schedule.
 
 After an account is upgraded, the provided payment instrument is charged a monthly base rate per account in addition to usage charges for launched titles.
 
