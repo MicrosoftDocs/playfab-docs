@@ -377,7 +377,7 @@ Behind the scenes, there are a number of state changes the order goes through. T
 
 ## Accepting Payments with Xsolla
 
-For Xsolla, the process is quite different, and does not use the code flow above as you'll be using the Xsolla payment flow, as described here: [https://developers.xsolla.com/](https://developers.xsolla.com/).
+For Xsolla, the process is quite different, and does not use the code flow above as you'll be using the Xsolla payment flow, as described here: [https://developers.xsolla.com/doc/in-game-store/extensions/playfab-integration/](https://developers.xsolla.com/).
 
 First, you'll need to have a merchant ID, project ID, and merchant API key from Xsolla in order to configure your title to use their payment service.
 
