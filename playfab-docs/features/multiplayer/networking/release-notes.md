@@ -14,6 +14,15 @@ ms.localizationpriority: medium
 
 PlayFab Party had a significant (up to 90%) price drop on October 13, 2020. You can view the updated Party rates on the [Pricing page](https://playfab.com/pricing). For more information about the price drop, see our [blog post](https://blog.playfab.com/blog/starting-today-save-up-to-90-using-playfab-party).
 
+## 1.7.20
+
+February 8, 2023
+
+### Bug fixes
+
+- Fixed a bug where audio from 44.1 kHz microphones may sound distorted. 
+- Improved diagnostic error messages for network errors reported by [PartyManager::GetErrorMessage()](reference/classes/PartyManager/methods/partymanager_geterrormessage.md).
+
 ## 1.7.19
 
 November 11, 2022

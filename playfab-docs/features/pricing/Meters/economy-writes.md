@@ -1,5 +1,5 @@
 ---
-title: Economy Writes Meter API Description
+title: Inventory Writes Meter API Description
 author: cybtachyon
 description: This article details the APIs that cause economy writes meter to increment.
 ms.author: derekreese
@@ -10,21 +10,21 @@ keywords: playfab, pricing
 ms.localizationpriority: medium
 ---
 
-# Economy v2 Catalog Writes
+# Economy v2 Inventory Writes
 
-Catalog writes are more expensive operations as they update all of the indexes and searchable metadata.
+Inventory writes are more expensive operations as they update all of the indexes and searchable metadata.
 The following APIs cause the Economy v2 writes meter to increment.
 
-- [CreateDraftItem](/rest/api/playfab/economy/catalog/create-draft-item)
-- [CreateUploadUrls](/rest/api/playfab/economy/catalog/create-upload-urls)
-- [DeleteEntityItemReviews](/rest/api/playfab/economy/catalog/delete-entity-item-reviews)
-- [DeleteItem](/rest/api/playfab/economy/catalog/delete-item)
-- [PublishDraftItem](/rest/api/playfab/economy/catalog/publish-draft-item)
-- [ReportItem](/rest/api/playfab/economy/catalog/report-item)
-- [ReportItemReview](/rest/api/playfab/economy/catalog/report-item-review)
-- [ReviewItem](/rest/api/playfab/economy/catalog/review-item)
-- [SetItemModerationState](/rest/api/playfab/economy/catalog/set-item-moderation-state)
-- [SubmitItemReviewVote](/rest/api/playfab/economy/catalog/submit-item-review-vote)
-- [TakedownItemReviews](/rest/api/playfab/economy/catalog/takedown-item-reviews)
-- [UpdateCatalogConfig](/rest/api/playfab/economy/catalog/update-catalog-config)
-- [UpdateDraftItem](/rest/api/playfab/economy/catalog/update-draft-item)
+* [AddInventoryItems](/rest/api/playfab/economy/inventory/add-inventory-items)
+* [DeleteInventoryCollection](/rest/api/playfab/economy/inventory/delete-inventory-collection)
+* [DeleteInventoryItems](/rest/api/playfab/economy/inventory/delete-inventory-items)
+* [ExecuteInventoryOperations](/rest/api/playfab/economy/inventory/execute-inventory-operations)
+* [PurchaseInventoryItems](/rest/api/playfab/economy/inventory/purchase-inventory-items)
+* [SubtractInventoryItems](/inventory/subtract-inventory-items)
+* [TransferInventoryItems](/rest/api/playfab/economy/inventory/transfer-inventory-items)
+* [UpdateInventoryItems](/rest/api/playfab/economy/inventory/update-inventory-items)
+
+## Resources
+
+* For the most up-to-date view of prices per meter, see [PlayFab pricing](https://playfab.com/pricing/)
+* See [Consumption Best Practices](../consumption-best-practices.md) to learn how to maintain the lowest rate of meter usage and cost for your game
