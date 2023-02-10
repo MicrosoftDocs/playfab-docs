@@ -9,11 +9,9 @@ items:
     href: file-reads.md
   - name: Content & Configuration Writes
     href: file-writes.md
-  - name: Economy v2 Reads
+  - name: Economy v2 Inventory Reads
     href: economy-reads.md
-  - name: Economy v2 Writes
+  - name: Economy v2 Inventory Writes
     href: economy-writes.md
-  - name: Economy v2 Storage
-    href: economy-storage.md
-  - name: Economy v2 UGC Meters
-    href: ugc-meters.md
+  - name: Economy v2 Catalog Meters
+    href: catalog-meters.md
