@@ -26,7 +26,7 @@ ms.localizationpriority: medium
 
 5. **[Party Pricing](../multiplayer/networking/pricing.md):** Learn about Party pricing when Party is enabled.
 
-6. **[User Generated Content Pricing](meters/ugc-meters.md):** Learn about User Generated Content (UGC) pricing when UGC is enabled.
+6. **[Economy V2 Catalog Pricing](meters/ugc-meters.md):** Learn about Economy V2 Catalog pricing.
 
 7. **[Experiments Pricing](../analytics/experiments/pricing.md):** Learn about Experiments pricing when used.
 

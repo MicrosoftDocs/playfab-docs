@@ -1,7 +1,7 @@
 ---
-title: UGC Pricing Meters
+title: Economy Pricing Meters
 author: wesjong
-description: Describes UGC's billable meters.
+description: Describes Economy Catalog's billable meters.
 ms.author: wesjong
 ms.date: 9/13/2021
 ms.topic: article
@@ -10,12 +10,12 @@ keywords: playfab, commerce, economy, monetization, ugc, pricing, meters
 ms.localizationpriority: medium
 ---
 
-# UGC Pricing Meters
+# Catalog Pricing Meters
 
-PlayFab User Generated Content has two categories of consumption-based meters - Requests and Storage. This page outlines and defines those meters, including how it's measured and calculated. For more information on PlayFab's pricing model, see the [PlayFab pricing overview](../pricing-overview.md).
+PlayFab Economy V2 Catalog APIs have two categories of consumption-based meters - Requests and Storage. This page outlines and defines those meters, including how it's measured and calculated. For more information on PlayFab's pricing model, see the [PlayFab pricing overview](../pricing-overview.md).
 
 > [!NOTE]
-> General usage of PlayFab UGC may contribute toward other PlayFab meters, like PlayStream Events.
+> General usage of PlayFab Economy V2 may contribute toward other PlayFab meters, like PlayStream Events.
 
 ## Requests
 
@@ -44,11 +44,11 @@ Up to 1 MB Requests | 150k requests
 Storage | 5 GB
 
 > [!NOTE]
-> Studios in Development Mode are required to enter payment information before enabling UGC, and overages will be charged based on the rates above.
+> Studios in Development Mode are required to enter payment information before enabling UGC, and overages will be charged based on the rates described.
 
 ## Example Bill
 
-Let's walk through an example customer's UGC consumption and look at their monthly bill. This example title is on the *Pay-as-you-go* plan. Let's start with a single user. This user goes to the content discovery page and searches for 'dinosaurs'. 10 results are displayed to the user, each with a title and thumbnail image. The user selects a piece of content, which displays the full metadata, including the description, ratings, and four more images. The user decides the content looks interesting enough, so they select the download button.
+Let's walk through an example customer's Catalog usage and look at their monthly bill. This example title is on the *Pay-as-you-go* plan. Let's start with a single user. This user goes to the content discovery page and searches for 'dinosaurs'. 10 results are displayed to the user, each with a title and thumbnail image. The user selects a piece of content, which displays the full metadata, including the description, ratings, and four more images. The user decides the content looks interesting enough, so they select the download button.
 
 Now let's see what meter consumption this scenario just drove:
 
@@ -58,7 +58,7 @@ Now let's see what meter consumption this scenario just drove:
 * The user selects a piece of content, which displays the full metadata, including the description, ratings, and four more images.
   * The `GetItem` call returned a single item with the full metadata, resulting in a single **Up to 1 MB Request**
   * The `GetRatings` call returned a single item's ratings, resulting in a single **Up to 1 MB Request**
-  * Each of the four images is requested from the CDN. As higher quality images, two images are _under_ 5 MBs and two images are _over_ 5 MBs. This scenario results in two "**Up to 5 MBs Requests**" and two "**Up to 25 MBs Requests**".
+  * Each of the four images is requested from the CDN. As higher quality images, two images are *under* 5 MBs and two images are *over* 5 MBs. This scenario results in two "**Up to 5 MBs Requests**" and two "**Up to 25 MBs Requests**".
 * The user decides the content looks interesting enough, so they select the download button.
   * Content is requested from the CDN. As a large piece of content it's 20 MBs. This scenario results in a single **Up to 25 MBs Requests**.
 
@@ -88,3 +88,35 @@ If a title is the only title using UGC in the studio, and the title has 4 GB of 
 
 * For the most up-to-date view of prices per meter, see [PlayFab pricing](https://playfab.com/pricing/)
 * See [Consumption Best Practices](../consumption-best-practices.md) to learn how to maintain the lowest rate of meter usage and cost for your game
+
+## Relevant APIs
+
+The following APIs cause the Economy Catalog meter to increment:
+
+* [CreateDraftItem](/rest/api/playfab/economy/catalog/create-draft-item)
+* [CreateUploadUrls](/rest/api/playfab/economy/catalog/create-upload-urls)
+* [DeleteEntityItemReviews](/rest/api/playfab/economy/catalog/delete-entity-item-reviews)
+* [DeleteItem](/rest/api/playfab/economy/catalog/delete-item)
+* [GetCatalogConfig](/rest/api/playfab/economy/catalog/get-catalog-config)
+* [GetDraftItem](/rest/api/playfab/economy/catalog/get-draft-item)
+* [GetEntityDraftItems](/rest/api/playfab/economy/catalog/get-entity-draft-items)
+* [GetEntityItemReview](/rest/api/playfab/economy/catalog/get-entity-item-review)
+* [GetItem](/rest/api/playfab/economy/catalog/get-item)
+* [GetItemModerationState](/rest/api/playfab/economy/catalog/get-item-moderation-state)
+* [GetItemPublishStatus](/rest/api/playfab/economy/catalog/get-item-publish-status)
+* [GetItemReviews](/rest/api/playfab/economy/catalog/get-item-reviews)
+* [GetItemReviewSummary](/rest/api/playfab/economy/catalog/get-item-review-summary)
+* [GetItems](/rest/api/playfab/economy/catalog/get-items)
+* [PublishDraftItem](/rest/api/playfab/economy/catalog/publish-draft-item)
+* [ReportItem](/rest/api/playfab/economy/catalog/report-item)
+* [ReportItemReview](/rest/api/playfab/economy/catalog/report-item-review)
+* [ReviewItem](/rest/api/playfab/economy/catalog/review-item)
+* [SearchItems](/rest/api/playfab/economy/catalog/search-items)
+* [SetItemModerationState](/rest/api/playfab/economy/catalog/set-item-moderation-state)
+* [SubmitItemReviewVote](/rest/api/playfab/economy/catalog/submit-item-review-vote)
+* [TakedownItemReviews](/rest/api/playfab/economy/catalog/takedown-item-reviews)
+* [UpdateCatalogConfig](/rest/api/playfab/economy/catalog/update-catalog-config)
+* [UpdateDraftItem](/rest/api/playfab/economy/catalog/update-draft-item)
+
+> [!NOTE]
+> Any calls to the CDN will also cause Economy Catalog meters to increment

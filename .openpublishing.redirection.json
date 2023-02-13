@@ -179,6 +179,16 @@
             "source_path": "playfab-docs/features/multiplayer/servers/tracking-consumption.md",  
             "redirect_url": "/gaming/playfab/features/multiplayer/servers/billing-for-thunderhead",
             "redirect_document_id": true
+        },
+        {
+            "source_path": "playfab-docs/features/pricing/Meters/economy-storage.md",  
+            "redirect_url": "/gaming/playfab/features/pricing/Meters/catalog-meters#storage",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/pricing/Meters/ugc-meters.md",  
+            "redirect_url": "/gaming/playfab/features/pricing/Meters/catalog-meters",
+            "redirect_document_id": true
         }
     ]
 }
