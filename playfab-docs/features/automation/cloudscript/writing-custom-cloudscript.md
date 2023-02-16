@@ -1,9 +1,9 @@
 ---
 title: Writing custom CloudScript (Legacy)
-author: williacj
+author: antnguyen
 description: Describes how to write CloudScript (Legacy) code.
-ms.author: cjwill
-ms.date: 01/28/2020
+ms.author: antnguyen
+ms.date: 01/30/2023
 ms.topic: article
 ms.service: playfab
 keywords: playfab, automation, cloudscript, unity
@@ -12,12 +12,12 @@ ms.localizationpriority: medium
 
 # Writing custom CloudScript
 
-CloudScript is one of PlayFab's most versatile features. It allows client code to request execution of any kind of custom server-side functionality you can implement, and it can be used in conjunction with virtually *anything*.
+CloudScript is one of PlayFab's most versatile features. It allows client code to request execution of any kind of custom server-side functionality you can implement, and it can be used with virtually *anything*. In addition to explicit execution requests from client or server code, CloudScript can be executed in response to PlayStream events (by creating a *rule*) or as part of a scheduled task.
 
 > [!NOTE]
 > [CloudScript using Azure Functions](../cloudscript-af/quickstart.md) improves on what made CloudScript (Legacy) great with more supported languages and better debugging workflows.
 
-This tutorial covers writing your CloudScript (Legacy) code. Please see the [CloudScript (Legacy) quickstart](quickstart.md) for help in uploading your CloudScript (Legacy) files to your title.
+This tutorial covers writing your CloudScript (Legacy) code. See the [CloudScript (Legacy) quickstart](quickstart.md) for help with uploading your CloudScript (Legacy) files to your title.
 
 > [!NOTE]
 > This tutorial demonstrates Unity code samples, but CloudScript (Legacy) works similarly for all SDKs.
@@ -51,20 +51,20 @@ handlers.helloWorld = function (args, context) {
 
 The handler object is pre-defined in the PlayFab CloudScript (Legacy) environment. You should add any of your CloudScript (Legacy) functions to this object.
 
-- `helloWorld` is a function made available to your title and SDKs, because it is defined in the handler object.
+- `helloWorld` is a function made available to your title and SDKs, because it's defined in the handler object.
 
-- `args` is an arbitrary object which comes from the caller. It is parsed from  JSON, and can contain any data formatted in any way.
+- `args` is an arbitrary object which comes from the caller. It's parsed from  JSON, and can contain any data formatted in any way.
 
 See **FunctionParameter** in the next section.
 
 > [!WARNING]
 > You should treat this object with zero trust. A hacked client or malicious user can provide *any* information here in *any* format.
 
-- `Context` is an advanced parameter. In this example, it is *null*. This parameter is server-controlled and safe.
+- `Context` is an advanced parameter. In this example, it's *null*. This parameter is server-controlled and safe.
 
 - `currentPlayerId` is a global variable, which is set to the PlayFabId of the player requesting this call. This parameter is server-controlled and safe. **Note:** When using ExecuteEntityCloudScript API this parameter is null unless the entity has a MasterPlayerID in its entity chain.
 
-- `log.info`: `log` is a global object. It is primarily used for debugging your CloudScript (Legacy). The `log` object exposes the following methods: `info`, `debug`, and `error`. There are more details later in this tutorial.
+- `log.info`: `log` is a global object. It's primarily used for debugging your CloudScript (Legacy). The `log` object exposes the following methods: `info`, `debug`, and `error`. There are more details later in this tutorial.
 
 - `return`: any object you return is serialized as JSON, and returned to the caller. You may return any JSON serialize-able object with any data you wish.
 
@@ -78,7 +78,7 @@ Calling a CloudScript (Legacy) function from within a client is straightforward.
 > [!NOTE]
 > You can only call CloudScript (Legacy) methods attached to the handlers JavaScript object.
 
-To execute CloudScript (Legacy) methods, you will need the following lines of code in your client.
+To execute CloudScript (Legacy) methods, you'll need the following lines of code in your client.
 
 ```csharp
 // Build the request object and access the API
@@ -102,13 +102,13 @@ private static void StartCloudHelloWorld()
 
 - `ExecuteCloudScriptRequest.FunctionParameter` can be any object, able to be serialized to JSON. It becomes the first args parameter in the `helloWorld` function (refer to the args in the previous section).
 
-- `ExecuteCloudScriptRequest.GeneratePlayStreamEvent` is optional. If true, an event will be posted to PlayStream, which you can view in Game Manager, or utilize for other PlayStream triggers.
+- `ExecuteCloudScriptRequest.GeneratePlayStreamEvent` is optional. If true, an event is posted to PlayStream, which you can view in Game Manager, or utilize for other PlayStream triggers.
 
-Depending on the language, the final part of the `ExecuteCloudScript` line involves making the request to the PlayFab CloudScript (Legacy) server, as well as the *Result* and *Error* handling part, specific for the language.
+Depending on the language, the final part of the `ExecuteCloudScript` line involves making the request to the PlayFab CloudScript (Legacy) server, and the *Result* and *Error* handling part, specific for the language.
 
 For example, in Unity, JavaScript, or AS3, Error and Result handling is provided using callback functions.
 
-In pure **C#**, however, the SDK allows more succinct code by means of the `async/await` construct - as seen in the following example.
+The following is an example of error handling methods.
 
 ```csharp
 private static void OnCloudHelloWorld(ExecuteCloudScriptResult result) {
@@ -247,32 +247,33 @@ else
 
 ## Advanced: PlayStream event action
 
-The other way to call a CloudScript (Legacy) function is as a PlayStream event action.
+A CloudScript (Legacy) function can be configured to run in response to a PlayStream event. 
 
 1. In any browser:
    - Visit the **PlayFab Game Manager**.
    - Find your **Title**.
-   - Go to the **PlayStream** tab.
-   - Go to the **Event Actions** tab.
+   - Under **Build** in the sidebar, go to the **Automation** tab.
+   - Go to the **Rules** tab.
 
 The page will look like the example provided below.
 
    ![Game Manager - PlayStream - event actions](media/tutorials/game-manager-playstream-event-actions.png)  
 
-2. Use the **New Action** button to create a new action.
-   - Give the new **Action** a name.
-   - To make the **Action** trigger a CloudScript (Legacy) function, add an **Action** with the button in that section.
+2. Use the **New Rule** button to create a new rule.
+   - Give the new **Rule** a name. 
+   - Select an **Event type** that will be used as a trigger for a condition or an action.
+   - To make the **Rule** trigger a CloudScript (Legacy) function, add an **Action** with the button in that section.
    - Then select the option in the **Type** drop-down menu.
-   - Select the **helloWorld** function in the **CloudScript function** drop-down menu.
-   - Select the **Save Action** button.
+   - Select the **helloWorld** function in the **Cloud Script Function** drop-down menu.
+   - Select the **Save action** button.
 
    ![Game Manager - PlayStream - save action](media/tutorials/game-manager-playstream-save-action.png)  
 
-3. Right now, this **Action** is set to trigger on any PlayStream event. To test it:
+3. This **Rule** is now set to trigger on any event of your selected type. To test it:
    - Check the **Publish results as PlayStream Event** box.
    - Save the **Action**.
    - Then trigger an event.
-   - In the **PlayStream Debugger**, a new event that corresponds to the CloudScript (Legacy) execution should be present which contains the appropriate information.
+   - In the **PlayStream Monitor**, a new event that corresponds to the CloudScript (Legacy) execution should be present which contains the appropriate information.
    - For more information on checking a PlayStream event in the debugger, see the following section [Advanced: Debugging CloudScript (Legacy)](#advanced-debugging-cloudscript-legacy).
 
    > [!NOTE]
