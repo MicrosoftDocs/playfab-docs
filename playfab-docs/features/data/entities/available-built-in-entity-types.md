@@ -77,7 +77,3 @@ Set the `ID` field to any `characterId` from `result.Characters[i].CharacterId`.
 The `group` entity is a container  for other entities. It is currently limited to players and characters.
 
 Set the `ID` field to the `result.Group.Id` if you are creating a group, or the `result.Groups[i].Group.Id` when [listing your memberships](xref:titleid.playfabapi.com.groups.groups.listmembership).
-
-## service
-
-The `service` entity is reserved for internal use.
