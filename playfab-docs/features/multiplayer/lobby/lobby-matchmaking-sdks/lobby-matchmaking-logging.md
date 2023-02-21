@@ -26,10 +26,8 @@ The type of logs and the way logging should be configured/captured depends on a 
 | Platform | Log format | Logging instruction guidance location |
 |------------|------------|------------|
 | Android | Plain text | Coming soon. |
-| Switch | Plain text | See `Logging` section of `README.md` file included in a nuget package for this SDK. |
-| PlayStation 4 | Plain text | See `Logging` section of `README.md` file included in a nuget package for this SDK. |
-| PlayStation 5 | Plain text | See `Logging` section of `README.md` file included in a nuget package for this SDK. |
-| Xbox (XDK) | ETW trace log | See [this `README.md` file](https://github.com/PlayFab/PlayFabMultiplayer/blob/main/TraceScripts/README.md). |
-| PC (GDK) and Xbox (GDK) | ETW trace log | See [this `README.md` file](https://github.com/PlayFab/PlayFabMultiplayer/blob/main/TraceScripts/README.md). |
-| Windows 10, Windows 8.1 | ETW trace log | See [this `README.md` file](https://github.com/PlayFab/PlayFabMultiplayer/blob/main/TraceScripts/README.md). |
-| Windows 7 | ETW trace log | See [this `README.md` file](https://github.com/PlayFab/PlayFabMultiplayer/blob/main/TraceScripts/README.md). |
+| Switch | Plain text | See `Logging` section of `README.md` file included in a NuGet package for this SDK. |
+| PlayStation 4 | Plain text | See `Logging` section of `README.md` file included in a NuGet package for this SDK. |
+| PlayStation 5 | Plain text | See `Logging` section of `README.md` file included in a NuGet package for this SDK. |
+| PC (GDK) and Xbox (GDK) | ETW trace | See [this `README.md` file](https://github.com/PlayFab/PlayFabMultiplayer/blob/main/TraceScripts/README.md). |
+| Windows 10 | ETW trace | See [this `README.md` file](https://github.com/PlayFab/PlayFabMultiplayer/blob/main/TraceScripts/README.md). |
