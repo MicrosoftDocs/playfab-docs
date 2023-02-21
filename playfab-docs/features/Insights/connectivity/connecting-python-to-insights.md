@@ -16,9 +16,9 @@ This guide helps you get started using Python with Insights. It uses the Azure K
 
 ## Prerequisites
 
-### PlayFab account authenticated with AAD
+### PlayFab account authenticated with Azure AD
 
-You need a PlayFab account or user for which the authentication provider is set to Microsoft. The Microsoft authentication provider uses Azure Active Directory (AAD) for authentication which is required to use the Azure services. See [Azure Active Directory Authentication for Game Manager](../../authentication/aad-authentication/index.md) for instructions on creating an AAD-authenticated account or user.
+You need a PlayFab account or user for which the authentication provider is set to Microsoft. The Microsoft authentication provider uses Azure Active Directory (Azure AD) for authentication which is required to use the Azure services. See [Azure Active Directory Authentication for Game Manager](../../authentication/aad-authentication/index.md) for instructions on creating an Azure AD-authenticated account or user.
 
 To verify that the account, or user, is set to use the Microsoft authentication provider:
 
@@ -55,7 +55,7 @@ You can either create a new user role or add these permissions to an existing ro
 from azure.kusto.data.exceptions import KustoServiceError
 from azure.kusto.data.request import KustoClient, KustoConnectionStringBuilder, ClientRequestProperties
 
-from adal import AuthenticationContext
+from msal import ConfidentialClientApplication
 
 cluster = "https://insights.playfab.com"
 
@@ -65,16 +65,21 @@ client_secret = "<Azure app client secret>"
 tenant = "<Azure app tenant id>"
 
 authority_url = "https://login.microsoftonline.com/" + tenant
-context = AuthenticationContext(authority_url)
+
+client_instance = ConfidentialClientApplication(
+  client_id=client_id,
+  client_credential=client_secret,
+  authority=authority_url,
+)
 
 # Acquire a token from AAD to pass to PlayFab
-resource = "https://help.kusto.windows.net"
-token_response = context.acquire_token_with_client_credentials(resource, client_id, client_secret)
+_scopes = ["https://help.kusto.windows.net"]
+token_response = client_instance.acquire_token_for_client(scopes=_scopes)
 
 token = None
 if token_response:
-    if token_response['accessToken']:
-        token = token_response['accessToken']
+    if token_response['access_token']:
+        token = token_response['access_token']
 
 kcsb = KustoConnectionStringBuilder.with_aad_application_token_authentication(cluster, token)
 client = KustoClient(kcsb)
