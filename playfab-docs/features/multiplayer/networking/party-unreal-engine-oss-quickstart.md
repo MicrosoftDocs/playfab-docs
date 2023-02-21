@@ -13,11 +13,11 @@ keywords: playfab, multiplayer, networking, unreal, unreal engine, unreal engine
 
 This quickstart guide helps you set up and use Multiplayer features such as Lobby, Matchmaking and Party for Xbox, PC, Nintendo Switch, PlayStation®5 and PlayStation®4 games built using Unreal Engine 4 or Unreal Engine 5. For the full list of supported platforms and versions in UE4 or UE5, see [Supported platforms](party-unreal-engine-oss-overview.md).
 
-After following the relevant steps below for your target platforms, you'll be ready to start using the OSS. Authentication, networking, VOIP, grouping into lobbies, and matchmaking will be handled on your behalf with no other changes required.
+After following the relevant steps that are outlined in this page for your target platforms, you'll be ready to start using the OSS. Authentication, networking, VOIP, grouping into lobbies, and matchmaking is handled on your behalf with no other changes required.
 
 ## Download and install PlayFab Online Subsystem
 
-Go to [UE OSS PlayFab](https://github.com/PlayFab/PlayFabMultiplayerUnreal) to download or clone PlayFab Online SubSystem source.
+Go to [PlayFab Online SubSystem](https://github.com/PlayFab/PlayFabMultiplayerUnreal) to download or clone PlayFab Online SubSystem source. The downloaded or cloned repository name is PlayFabMultiplayerUnreal. **The repository has to be renamed to OnlineSubsystemPlayFab**. 
 
 ## What you need
 
@@ -30,7 +30,7 @@ Go to [UE OSS PlayFab](https://github.com/PlayFab/PlayFabMultiplayerUnreal) to d
 ## Initial setup
 
 * Copy the **OnlineSubsystemPlayFab** folder and its contents from to your UE directory under **Engine\Plugins\Online**
-* Apply the following changes to the Plugins section of your ".uproject" file. This will add the OnlineSubsystemPlayFab to your plugin list.
+* Apply the following changes to the Plugins section of your ".uproject" file to add the OnlineSubsystemPlayFab to your plugin list.
   * You may remove any platforms that you're not shipping on
 
 ```json
@@ -60,7 +60,7 @@ Go to [UE OSS PlayFab](https://github.com/PlayFab/PlayFabMultiplayerUnreal) to d
 
 ## Game Configuration
 
-* No matter which platform you're targeting, your game will need to configure certain PlayFab specific values in your intended platform target's INI file (located at [yourGameDirectory]/Platforms/[yourPlatform]/Config).
+* No matter which platform you're targeting, your game needs to configure certain PlayFab specific values in your intended platform target's INI file (located at [yourGameDirectory]/Platforms/[yourPlatform]/Config).
   * **Xbox Series X GDK:** XSXEngine.ini
   * **PC GDK:** WinGDKEngine.ini
   * **Xbox One GDK:** XboxOneGDKEngine.ini
@@ -68,7 +68,7 @@ Go to [UE OSS PlayFab](https://github.com/PlayFab/PlayFabMultiplayerUnreal) to d
   * **Nintendo Switch** SwitchEngine.ini
   * **PS4™** PS4Engine.ini
   * **PS5™** PS5Engine.ini
-* Replace the INI sections in the config if they already exist (for example, Engine.GameEngine) with the ones below.
+* Replace the INI sections in the config if they already exist (for example, Engine.GameEngine) with the ones presented in the following sections.
 * Ensure you replace all the *\<REPLACE ME>* fields with your data:
 
 ```config
@@ -124,15 +124,15 @@ NativePlatformService=Steam
 
 ### Switch
 
-See the [ReadMe.md](https://dev.azure.com/PlayFabPrivate/Switch/_git/PlayFabMultiplayerUnrealSwitch?path=/README.md) file that comes with the Switch PlayFab OSS for more details.
+For more information about Switch, see the [ReadMe.md](https://dev.azure.com/PlayFabPrivate/Switch/_git/PlayFabMultiplayerUnrealSwitch?path=/README.md) file that comes with the Switch PlayFab OSS.
 
 ### PS5™ and PS4™
 
-See the [ReadMe.md](https://dev.azure.com/PlayFabPrivate/PS5/_git/PlayFabMultiplayerUnrealPlayStation?path=/README.md) file that comes with the PS5™ and PS4™ PlayFab OSS for more details.
+For more information about PS5™ and PS4™, see the [ReadMe.md](https://dev.azure.com/PlayFabPrivate/PS5/_git/PlayFabMultiplayerUnrealPlayStation?path=/README.md) file that comes with the PS5™ and PS4™ PlayFab OSS.
 
 ### Cross-platform
 
-Finally, if your game makes use PlayFab's cross-platform networking support, define which platforms you'll permit to connect:
+Finally, if your game makes use PlayFab's cross-platform networking support, define which platforms you permit to connect:
 
 ```config
 [/Script/OnlineSubsystemUtils.OnlineEngineInterfaceImpl]
@@ -144,7 +144,7 @@ Finally, if your game makes use PlayFab's cross-platform networking support, def
 +CompatibleUniqueNetIdTypes=PS5
 ```
 
-VoIP is allowed on all platforms by default unless explicitly excluded for certain platforms. To disable VoIP for a specific platform, add the platform model name to your UE configuration file as shown below.
+All platforms allow VoIP by default. To disable VoIP for a specific platform, add the platform model name to your UE configuration file as shown in the following example.
 ```config
 [OnlineSubsystemPlayFabVoiceChatDisabledPlatforms]
 !Platforms=ClearArray
@@ -154,7 +154,7 @@ VoIP is allowed on all platforms by default unless explicitly excluded for certa
 +Platforms=PS4
 +Platforms=PS5
 ```
-This completes the setup of OSS required to be used in your game.  Good luck!
+These steps complete the setup of OSS required to be used in your game.  Good luck!
 
 ## Troubleshoot: Unreal Engine Installed Builds
 
