@@ -52,6 +52,8 @@
     href: archiving-and-retrieving-multiplayer-server-logs.md
   - name: VM performance metrics (preview)
     href: vm-metrics.md
+  - name: VmStartupScript (preview)
+    href: vmstartupscript.md
 - name: Debugging game servers
   items:
   - name: LocalMultiplayerAgent
