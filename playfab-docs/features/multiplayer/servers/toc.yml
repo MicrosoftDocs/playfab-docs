@@ -52,7 +52,7 @@
     href: archiving-and-retrieving-multiplayer-server-logs.md
   - name: VM performance metrics (preview)
     href: vm-metrics.md
-  - name: VmStartupScript (preview)
+  - name: Run custom script during VM creation (preview)
     href: vmstartupscript.md
 - name: Debugging game servers
   items:
