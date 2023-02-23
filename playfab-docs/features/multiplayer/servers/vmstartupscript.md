@@ -53,11 +53,53 @@ For script examples, see [VmStartupScriptGallery](https://github.com/PlayFab/VmS
 After uploading the .zip file, use the MPS API to create a new Build after configuring the **VmStartupScriptAssetReference** property. For instructions, see [How to create Builds using the MPS API](deploy-using-powershell-api.md).
 
 - Add the **VmStartupScriptConfiguration.VmStartupScriptAssetReference** property that includes a reference to the uploaded assets file. This property is part of all the "CreateBuild" related APIs, like [CreateBuildWithCustomContainer](/rest/api/playfab/multiplayer/multiplayer-server/create-build-with-custom-container), [CreateBuildWithManagedContainer](/rest/api/playfab/multiplayer/multiplayer-server/create-build-with-managed-container) and [CreateBuildWithProcessBasedServer](/rest/api/playfab/multiplayer/multiplayer-server/create-build-with-process-based-server).
-- Add a valid value for the **VmStartupScriptAssetReference.FileName** property. This value must be the same as the name of your assets file, for example vmstartupscriptassets.zip.
+- Add a valid value for the **VmStartupScriptAssetReference.FileName** property. This value must be the same as the name of your assets file, for example **vmstartupscriptassets.zip**.
 - The **VmStartupScriptAssetReference.MountPath** property must be empty, since isn't supported for the VmStartupScript feature.
 
 > [!Note]
-> If you set up a value for the **GameAssetReference.MountPath** property, the create build operation will fail.
+> If you set up a value for the **MountPath** property, the create build operation will fail.
+
+The code example below creates a Build with Linux Containers and then uses the script in **vmstartupscriptassets.zip** to customize the VMs:
+
+```csharp
+var request = new CreateBuildWithCustomContainerRequest()
+{ 
+    ContainerImageReference = new ContainerImageReference()
+    {
+         ImageName= "testimagename",
+         Tag= "0.1"
+    },
+    ContainerFlavor = ContainerFlavor.CustomLinux,
+    BuildName = "testbuildwithvmstartupscript",
+    VmSize = AzureVmSize.Standard_D2as_v4,
+    MultiplayerServerCountPerVm = 3,
+    Ports= new List<Port>
+    {
+        new Port()
+        {
+            Name= "port",
+            Num= 123,
+            Protocol = ProtocolType.TCP   
+        }
+    },
+    RegionConfigurations = new List<BuildRegionParams> { new BuildRegionParams()
+    {
+        Region = "EastUs",
+        StandbyServers = 3,
+        MaxServers = 6
+
+    } 
+    },
+    VmStartupScriptConfiguration = new VmStartupScriptParams()
+    {
+        VmStartupScriptAssetReference = new AssetReferenceParams()
+        {
+            FileName = "vmstartupscriptassets.zip"
+        }
+    }
+};
+var result = await PlayFabMultiplayerAPI.CreateBuildWithCustomContainerAsync(request);
+```
 
 The VmStartupScript executes during the "Propping" stage of the VM and must terminate successfully for the game servers to start. If it fails (exit code other than 0), VM won't transition to the "Running" state, and you'll need to RDP/SSH to the VM to debug. To learn more, see [Recommended developer workflow](#recommended-development-workflow). The VM will keep retrying to execute the VmStartupScript.
 
