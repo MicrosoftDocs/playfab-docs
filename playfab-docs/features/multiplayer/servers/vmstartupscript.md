@@ -1,7 +1,7 @@
 ---
-title: VmStartupScript
+title: Run custom script during VM creation (preview)
 author: dgkanatsios
-description: VmStartupScript documentation.
+description: Documentation about the VmStartupScript feature that allows you to run custom script during VM creation.
 ms.author: digkanat
 ms.date: 01/31/2023
 ms.topic: article
