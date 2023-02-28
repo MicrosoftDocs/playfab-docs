@@ -3,59 +3,62 @@ title: Lobby ownership changes
 author: joannaleecy
 description: Learn about lobby owner migration and proactive owner promotion.
 ms.author: joanlee
-ms.date: 10/25/2021
+ms.date: 02/28/2023
 ms.topic: article
 ms.service: playfab
 keywords: playfab, multiplayer, lobby, matchmaking, owner migration
 ms.localizationpriority: medium
 ---
 
-# Ownership changes
+# Lobby ownership changes
  
 
-Most game scenarios benefit from having a specially selected "owner" of the lobby. So it's important to define policies to determine how ownership of the lobby migrates when the owner of the lobby leaves or is disconnected.
+Most game scenarios benefit from having a single "owner" of the lobby, but there are situations where ownership should transfer to a new PlayFab entity. 
+
+This article explains how ownership migrates between entities.
 
 ## Ownership migration policies
 
-The PlayFab Lobby service provides a set of pre-defined ownership migration policies to define who should become the new owner of the lobby if the current owner leaves or is disconnected.
+PlayFab Lobby provides a set of pre-defined policies to allow a title to control how lobby ownership migrates if the current owner leaves or is disconnected.
 
-The table below describes how each __ownerMigrationPolicy__ functions.
+This policy is configured when the lobby is created and can't be changed.
+
+This table describes each __ownerMigrationPolicy__.
 
 | Owner     | ownerMigrationPolicy | Description                         |
 |-----------|----------------------|-------------------------------------|
-| Client    | Automatic            | The Lobby service will automatically assign another connected owner when the current owner leaves or disconnects. Non-owner members cannot re-assign the owner. |
-| Client    | Manual               | The Lobby service will clear the owner field when the current owner leaves. While the owner is connected, non-owner members cannot re-assign the owner. If the owner has disconnected, any member may set themselves as the current owner. |
-| Client    | None                 | The Lobby service will clear the owner field when the current owner leaves. The owner field will be unaffected if the current owner disconnects. Any member, including non-members can re-assign the owner at anytime. |
-| Server    | Server               | Any server can set themselves as owner. Your title must decide which server should become the new owner. If the server-owner disconnects, the lobby is temporarily hidden from search. Lobby does not enforce protection or additional abilities from one server to another. |
+| Client    | Automatic            | The Lobby service automatically assigns another connected member as owner when the current owner leaves or disconnects. If no other members are connected, no new owner is assigned. If a member reconnects while no owner is assigned, they're assigned as the owner. |
+| Client    | Manual               | The Lobby service clears the owner field when the current owner leaves. While the owner is connected, non-owner members can't reassign the owner. If the owner has disconnected, any member may set themselves as the current owner. |
+| Client    | None                 | The Lobby service clears the owner field when the current owner leaves. The owner field is unaffected if the current owner disconnects. Any member, including non-members can reassign the owner at any time. |
+| Server    | Server               | The owner field is unaffected if the current server-owner disconnects. While the owner is disconnected, the lobby is hidden from search. The lobby is restored in search if the disconnected owner reconnects or if a new owner connects and claims ownership. |
 
 ## Proactive ownership changes
 
 Some game scenarios may require ownership to proactively transfer from the current owner to a new owner.
 
-The table below describes how proactive ownership changes are affected by the current __ownerMigrationPolicy__.
+This table describes how proactive ownership changes are affected by the __ownerMigrationPolicy__.
 
 | Owner     | ownerMigrationPolicy | Description                         |
 |-----------|----------------------|-------------------------------------|
-| Client    | Automatic            | The current owner may promote another member as owner in their place. |
-| Client    | Manual               | The current owner may promote another member as owner in their place. If there is no owner or the owner has disconnected, any member can promote themselves to be the new owner. |
-| Client    | None                 | The current owner can promote any other member as owner. Any member can promote themselves to be the new owner even if the current owner is still present and connected. |
-| Server    | Server               | Any server can promote themselves to owner. Proactive server ownership migration may be useful to handle game server migration. |
+| Client    | Automatic            | The current owner may assign another member as owner in their place. Non-owner members can't reassign the owner. |
+| Client    | Manual               | The current owner may assign another member as owner in their place. If there's no owner or the owner has disconnected, any member can assign themselves to be the new owner. |
+| Client    | None                 | The current owner can assign any other member as owner. Any member can assign themselves to be the new owner even if the current owner is still present and connected. |
+| Server    | Server               | The current owner can assign any other server to owner in their place. Any server can take ownership of any server-owned lobby even if the current owner is still present and connected. |
 
 ## Extra guidance for server owners
 
-* Any server authorized for the title may take over the ownership of any lobby authorized for that title. The Lobby service does not protect ownership between game servers for the same title.
+* Any server authorized for the title may take over the ownership of any server-owned lobby authorized for that title. The Lobby service doesn't protect ownership between game servers for the same title.
 * Server-owned lobbies are hidden when the server-owner is disconnected.
-* Game servers can query for lobbies they own.
 
 ## Frequently asked questions
 
-#### When will the owner field be cleared?
+#### When is the owner field cleared?
 
-The owner field will be cleared when the current owner **leaves** the lobby and the owner migration policy is unable to select a new owner. __Automatic__ migration policy is the only policy that will try to automatically select a new owner.
+The owner field is cleared when the current owner **leaves** the lobby and the owner migration policy is unable to select a new owner. __Automatic__ migration policy is the only policy that tries to automatically select a new owner.
 
-**NOTE**: The owner will **not** be cleared when the owner disconnects and a new owner can't be automatically selected. This is intentional to be robust to service outages.
+**NOTE**: The owner field is **not** cleared when the owner disconnects and a new owner can't be automatically selected. This is intentional to be robust to service outages.
 
-### What happens when the last member leaves the lobby?
+#### What happens when the last member leaves the lobby?
 
 * For client-owned lobby, the lobby is always deleted when the last member leaves.
 * For server-owned lobby, no action is taken.

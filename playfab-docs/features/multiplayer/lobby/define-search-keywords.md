@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 This article explains how to create lobbies that are searchable. 
 
-To make a lobby searchable, its access policy must either be __Public__ or __Friends__. Lobbies with a __Private__ access policy will not be joinable from search queries and must be joined via [invites](#). It's common to configure this access policy when initially creating the lobby.
+To make a lobby searchable, its access policy must either be __Public__ or __Friends__. Lobbies with a __Private__ access policy will not be joinable from search queries and must be joined via [invites](lobby-invites.md). It's common to configure this access policy when initially creating the lobby.
 
 Once a lobby's access policy is set correctly, other players can search for it using [Find lobbies](find-lobbies.md).
 
