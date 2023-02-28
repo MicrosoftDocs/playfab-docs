@@ -1,50 +1,49 @@
 ---
-title: Owner requirements and privileges
+title: Lobby ownership
 author: joannaleecy
-description: Learn about owner requirements and privileges.
+description: Learn about lobby ownership and related privileges
 ms.author: joanlee
-ms.date: 10/25/2021
+ms.date: 02/28/2023
 ms.topic: article
 ms.service: playfab
 keywords: playfab, multiplayer, lobby, matchmaking, types
 ms.localizationpriority: medium
 ---
 
-# Owner requirements and privileges
+# Lobby ownership
  
 
-This article explains about Lobby owner requirements and privileges. 
+This article explains Lobby ownership and the privileges it enables.
 
-## Owner requirements
+## Lobby owners vs members
 
-The owner of a lobby can be either a client or a server. Both must have access to the title. Client owners must also be a member of the lobby.
+PlayFab entities interact with lobbies as either owners or members.
 
-In other words, there are two main types of lobbies available&mdash;Server-owned and client-owned.
+The PlayFab entities that PlayFab Lobby currently supports are `title_player_account` for players and `game_server` for game servers. For more information on these entity types, see [Available built-in entity types](/gaming/playfab/features/data/entities/available-built-in-entity-types).
 
-Server-owned lobbies can be lobbies owned by your title and waits for players to join. These lobbies have your title game server listed as the owner. Client-owned lobbies are those that are created on behalf on players. These lobbies have a client listed as the owner. It's important to note that PlayFab Lobby is a service so all lobbies are created on PlayFab servers.
+Lobby members are players who have joined a lobby. Each member has an isolated property bag of member data.
 
-To learn how to create lobbies, see [Create a lobby](create-a-lobby.md) and [Lobby and matchmaking walkthrough](lobby-and-matchmaking.md).
+Lobby owners are players or game servers who can modify the global lobby properties and other [special privileges](#owner-privileges). Lobbies owned by players are referred to as client-owned lobbies. Lobbies owned by game servers are referred to as server-owned lobbies.
 
-## Privileges
+Players may be both the owner and a member of a lobby simultaneously.
 
-The owner of a lobby has special privileges.
+A game server can be the owner of a lobby but can't be a member.
 
-1. The owner can set lobby level items.
-    * Server owners are allowed to modify everything that can be modified,
-      except member data.
-    * Client owners are allowed to modify everything a server owner can and their own member data. They can't modify other members' data.
+## Establishing and changing ownership
+
+Ownership of a lobby is initially granted when the lobby is first created. If a player creates a lobby, that player owns the lobby. If a game server creates a lobby, that game server owns the lobby. For more information on creating lobbies, see [Create a lobby](create-a-lobby.md).
+
+Only one entity may own the lobby at a time, but ownership of the lobby may change throughout the lifetime of the lobby. For more information on ownership changes, see [Lobby ownership changes](ownership-changes.md).
+
+## Owner Privileges
+
+The owner of a lobby has privileges that non-owning members of the lobby don't have.
+
+1. The owner can set pre-defined global lobby properties (for example, the lobby's access policy) and custom global lobby properties. For more information on these properties, see [Lobby properties](lobby-properties.md).
 2. The owner can remove members from the lobby.
-3. The owner may appoint another owner.  This occurs by sending an update with
-   the owner field specified.
-    * The server owner can only specify another server to be the new owner.
-    * The client owner can only specify another client, who is a member of the
-      lobby, to be the new owner.
-
-### Privileges for server owners only
-
-* Server owner can query for lobbies they own.
-* Lobby is hidden during ownership migration. After a lobby owner change, the new server owner needs to re-establish notification subscription and get a new subscribe connection. This turns the lobby visibility back on for search.
-* Server owner can control notifications to its members
+3. The owner may assign another owner in their place.
+    * In server-owned lobbies, the owner can only assign another server as the new owner.
+    * In client-owned lobbies, the owner can only assign another member as the new owner.
 
 ## See also
 

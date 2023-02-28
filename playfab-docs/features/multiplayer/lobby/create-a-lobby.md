@@ -24,7 +24,7 @@ There are several ways a lobby can be created.
 
 From a technical perspective, all lobbies are fall into two main categories based on ownership&mdash;server-owned and client-owned. To learn more, see [Owner requirements and privileges](owner-requirements-and-privileges.md).
 
-The general usage of PlayFab Lobby is to temporarily hold a group of players together. For commonly used applications of Lobby, see [Common lobby scenarios](#).
+The general usage of PlayFab Lobby is to temporarily hold a group of players together. For commonly used applications of Lobby, see the [Azure PlayFab Lobby overview](index.md).
 
 ## How lobbies are configured
 
@@ -37,7 +37,7 @@ Several important settings for a lobby are configured during creation: __maxMemb
 
 Additionally, during creation, the lobby creator can also define custom lobby properties and search properties to append custom data to the lobby session. These custom properties can also be modified over the lifetime of the lobby by the lobby's owner.
 
-For more information, see [Lobby properties](#).
+For more information, see [Lobby properties](lobby-properties.md).
 
 ## Example using the Lobby and Matchmaking Client SDK
 
