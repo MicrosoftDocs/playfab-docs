@@ -1,8 +1,8 @@
 ---
 title: PlayFab Unreal GSDK Plugin Overview
-author: pgilmorepf
+author: joannaleecy
 description: Overview of all the pages covering the PlayFab Unreal GSDK Plugin
-ms.author: pagilmor
+ms.author: joanlee
 ms.date: 12/08/2021
 ms.topic: article
 ms.service: playfab

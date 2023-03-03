@@ -1,8 +1,8 @@
 ---
 title: GSDK Project Testing and Debugging
-author: pgilmorepf
+author: joannaleecy
 description: Deploying an Unreal GSDK Project to the local machine for testing
-ms.author: pagilmor
+ms.author: joanlee
 ms.date: 12/08/2021
 ms.topic: article
 ms.service: playfab
@@ -35,20 +35,20 @@ The purpose of this guide is to demonstrate running your game-server on your loc
 
 ## Notation
 
-{depot} will refer to the full windows path for the location where you download your Git projects. These can be anywhere you like, such as: C:\depot, S:\depot, Z:\gitrepos or whichever drive and path are convenient for you. It is typically recommended (especially for Unreal), that your {depot} path be very short, if possible. For the author, {depot} resolves to: ```M:\depot\GSDK```. For example, with the requirements list above, you will likely have some or all of the following:
+{depot} will refer to the full windows path for the location where you download your Git projects. These can be anywhere you like, such as: C:\depot, S:\depot, Z:\gitrepos or whichever drive and path are convenient for you. It's typically recommended (especially for Unreal), that your {depot} path be as short as possible. For the author, {depot} resolves to: ```M:\depot\GSDK```. For example, with the requirements list above, you'll likely have some or all of the following:
 
 * {depot}/ThirdPersonMP
 * {depot}/MpsAgent
 * [Optional] {depot}/gsdk [This contains the PlayFab Unreal GSDK plugin previously installed into ThirdPersonMP]
-* [Optional] {depot}/UnrealMarketplacePlugin  [This contains the PlayFab Unreal Marketplace plugin, which is not required for this guide, but almost certainly required for other PlayFab features]
+* [Optional] {depot}/UnrealMarketplacePlugin  [This contains the PlayFab Unreal Marketplace plugin, which isn't required for this guide, but is required for most of PlayFab features]
 
-It is not required that you have all of these in the same location, but it is likely useful to do so, and for organization, this guide encourages you to do so.
+It is not required that you have all of these in the same location, but it's likely useful to do so, and for organization, this guide encourages you to do so.
 
 ## Instructions
 
 ### Local execution, no containers
 
-First, you will need to configure your LocalMultiplayerAgent to execute your server project. The first iteration will run the process directly on your local PC without any isolation.
+First, you'll need to configure your LocalMultiplayerAgent to execute your server project. The first iteration runs the process directly on your local PC without any isolation.
 
 In Explorer, find and open the file: ```{depot}\MpsAgent\LocalMultiplayerAgent\MultiplayerSettings.json```. An abbreviated version of this file with the parts important to this guide are as follows [NOTE the escaped \\'s for paths in the json - this is a json file, and thus it's required to escape all \\'s as \\\\]:
 
@@ -109,8 +109,8 @@ For the purposes of this guide, the parts of the json file obscured by ```...```
     * -log is an Unreal command to instruct the game-server to save an execution log
     * {PATH-TO-EXE} can be one of two choices:
         * Any absolute path to an exe for your game server (even development game server), plus any command-line parameters for your server
-            * This choice will ignore the contents of the zip file, and instead execute any arbitrary exe in any location
-            * This is a local debug option that only works on your local machine to debug development builds: It does not help you verify your zip file is ready to upload to MPS
+            * This choice ignores the contents of the zip file, and instead executes any arbitrary exe in any location
+            * This is a local debug option that only works on your local machine to debug development builds: It doesn't help you verify your zip file is ready to upload to MPS
             * This choice should be used when testing a development server, suitable for attaching a VS debugger
             * For this example, this could be: ```{depot}\\ThirdPersonMP\\Binaries\\Win64\\ThirdPersonMPServer.exe -log```
             * For the author, this is: ```M:\\depot\\GSDK\\ThirdPersonMPGSDK\\Binaries\\Win64\\ThirdPersonMPServer.exe -log```
@@ -119,13 +119,13 @@ For the purposes of this guide, the parts of the json file obscured by ```...```
             * This choice should be used when testing a shipping server, and helps verify your zip is ready to upload to MPS
             * For this example, this could be: ```ThirdPersonMPServer.exe -log```
 
-Once you have created your zip file and set all of these lines to appropriate values, you can rebuild your LocalMultiplayerAgent, and prepare to debug your server.
+Once you've created your zip file and set all of these lines to appropriate values, you can rebuild your LocalMultiplayerAgent, and prepare to debug your server.
 
 ### Debug your server
 
 You can run LocalMultiplayerAgent from Visual Studio with the "Start New Instance" command, sometimes bound to F5, or you can navigate to ```{depot}\LocalMultiplayerAgent\bin\{configuration}\netcoreapp3.1``` and double-click "LocalMultiplayerAgent.exe". You can also run this from within a cmd window to observe or capture debug log information.
 
-Running LocalMultiplayerAgent.exe should start your game server. You will usually want to have Task Manager open for this. You can find your game server process ID in the Details tab of Task Manager.
+Running LocalMultiplayerAgent.exe should start your game server. You'll usually want to have Task Manager open for this. You can find your game server process ID in the Details tab of Task Manager.
 
 Once you see your ThirdPersonMPServer process running in Task Manager, you can return to Visual Studio, select the Debug dropdown -> Attach to Process. From the popup window, you can search your process name: ThirdPersonMPServer, and then select the proper process ID, identified from Task Manager.
 
@@ -139,12 +139,12 @@ NOTE: Unreal provides multiple build configurations and multiple ways to build y
 
 If there are multiple instances listed (usually 3 or more), you may need to use Task Manager to force-close instances that are lingering from previous attempts.
 
-### LocalMultiplayerAgent launches 2 instances of ThirdPersonMPServer
+### LocalMultiplayerAgent launches two instances of ThirdPersonMPServer
 
-If your LocalMultiplayerAgent _starts_ multiple instances, look for the process ID with a comparatively high memory use. Some configurations of the game server generate two executables, which run as a pair. You will want to attach to the one with a much higher memory use.
+If your LocalMultiplayerAgent _starts_ multiple instances, look for the process ID with a comparatively high memory use. Some configurations of the game server generate two executables, which run as a pair. You'll want to attach to the one with a higher memory use.
 
 ## Next steps
 
-You are now ready to deploy [your server to the cloud](third-person-mp-example-project-cloud-deployment.md).
+You're now ready to deploy [your server to the cloud](third-person-mp-example-project-cloud-deployment.md).
 
 Alternately, you can return to the main [Unreal GSDK Plugin](index.md#deploy-to-playfab) guide.

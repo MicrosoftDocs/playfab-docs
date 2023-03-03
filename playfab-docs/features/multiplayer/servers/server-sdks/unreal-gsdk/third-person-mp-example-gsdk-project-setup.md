@@ -1,6 +1,6 @@
 ---
 title: GSDK Project Setup
-author: pgilmorepf
+author: joannaleecy
 description: Adding the GSDK to an Unreal Project
 ms.author: joanlee
 ms.date: 12/08/2021

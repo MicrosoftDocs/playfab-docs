@@ -1,8 +1,8 @@
 ---
 title: Schemas tutorials
-author: mckmoffatt
+author: joannaleecy
 description: Introduces schemas for PlayFab Insights.
-ms.author: mcelliot
+ms.author: joanlee
 ms.date: 07/23/2019    
 ms.topic: article
 ms.service: playfab

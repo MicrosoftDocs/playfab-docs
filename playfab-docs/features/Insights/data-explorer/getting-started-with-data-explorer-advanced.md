@@ -1,6 +1,6 @@
 ---
 title: Getting started with Data Explorer advanced mode
-author: nathankong-microsoft
+author: joannaleecy
 description: Illustrates how to use Data Explorer advanced mode to write queries.
 ms.author: joanlee
 ms.date: 09/22/2020
@@ -24,7 +24,7 @@ To begin authoring your own queries in advanced mode, it's important to first un
 
 ### The events.all table
 
-The `events.all` table is the default destination for all incoming events. It is a single semi-structured table with columns for common values such as time & event name. You will quickly become familiar with the EventData column, which contains the full original JSON payload and is useful in almost all queries. You can read the following documentation on the [events.all table](../schemas/events-all.md).
+The `events.all` table is the default destination for all incoming events. It's a single semi-structured table with columns for common values such as time & event name. You'll quickly become familiar with the EventData column, which contains the full original JSON payload and is useful in almost all queries. You can read the following documentation on the [events.all table](../schemas/events-all.md).
 
 ### The anatomy of a query
 
@@ -39,7 +39,7 @@ As a matter of preference, a query can be expressed on a single line or using a 
 
 The Query pane can contain more than one query. This makes it easy to start with a simple expression, validate it runs, and build on it.
 
-A blank line will separate one query from another. Your cursor position determines which query will run when you press the “Run” button. You can also highlight a portion of the query to run only that expression. 
+A blank line separates one query from another. Your cursor position determines which query runs when you press the “Run” button. You can also highlight a portion of the query to run only that expression. 
 
 ![Run](media/Explorer6-02.png)
 
@@ -68,7 +68,7 @@ Note the brackets and single quotes around the name. Whenever the table or colum
 
 Run this query. Note that the Results pane now shows 100 rows of raw data. 
 
-In the Results pane, click the top row. Using the right arrow, navigate over to the FullName_Name column. This is the name of the event. Arrow down until you find a `player_logged_in` event. Once you’ve found one, right arrow over to the EventData column and double click. You should now see this:
+In the Results pane, select the top row. Using the right arrow, navigate over to the FullName_Name column. This is the name of the event. Arrow down until you find a `player_logged_in` event. Once you’ve found one, right arrow over to the EventData column and double click. You should now see this:
 
 ![Event Data Column](media/Explorer8-01.png)
 
@@ -87,7 +87,7 @@ Now update your query as follows and insert the GUID you copied:
 
 Run the query and you’ll see the Results pane show player_logged_in events only for the selected player. You can use dot notation to reference multiple nested layers of JSON hierarchy by simply adding a dot between each layer. 
 
-Now let’s create a second query to group player logins by region. Without deleting what you’ve written, press return twice. Let’s add a comment to our next query by using “//”. Comments will not be executed and are helpful to keep track of the intent behind each query.
+Now let’s create a second query to group player logins by region. Without deleting what you’ve written, press return twice. Let’s add a comment to our next query by using “//”. Comments won't be executed and are helpful to keep track of the intent behind each query.
 
 ```json
 //Player logins by platform
@@ -102,7 +102,7 @@ Once again, double-click the events.all table from the resources pane. This time
 | where FullName_Name == 'player_logged_in'
 ```
 
-Run this query to get a full list of all log-in events over the past three days. However, we want to know how many distinct players have logged in, not the count of events. To do this, we’ll use the distinct operator by Entity ID. 
+Run this query to get a full list of all sign-in events over the past three days. However, we want to know how many distinct players have logged in, not the count of events. To do this, we’ll use the distinct operator by Entity ID. 
 
 ```json
 ['events.all']
@@ -111,11 +111,11 @@ Run this query to get a full list of all log-in events over the past three days.
 | distinct Entity_Id
 ```
 
-This query returns a list of Entity IDs who’ve logged in during the past three days. The Results pane shows the number of records, so we can see the total count. 
+This query returns a list of Entity IDs who have logged in during the past three days. The Results pane shows the number of records, so we can see the total count. 
 
 ![Records](media/Explorer9-03.png)
 
-Now let’s get the count of players who’ve logged in from each platform. To do this, we’ll need the distinct count of Entity IDs grouped by the platform property in the EventData JSON. This requires the `summarize` operator. Because `summarize` does not support dynamic types, we’ll also need to cast platform to a string.  
+Now let’s get the count of players who have logged in from each platform. To do this, we’ll need the distinct count of Entity IDs grouped by the platform property in the EventData JSON. This requires the `summarize` operator. Because `summarize` does not support dynamic types, we’ll also need to cast platform to a string.  
 
 ```json
 ['events.all']
@@ -144,12 +144,12 @@ We’ve only just scratched the surface of the types of queries that can be auth
 > Because the shape of your data might vary from our demo data set, you may need to modify the sample query to run for your scenario.
 
 ## Limits
-There are two limits which govern Explorer query usage:
+There are two limits that govern Explorer query usage:
  
-1. Max query runtime: An individual query is not permitted to run longer than 30 seconds. If this limit is exceeded, the query will be terminated and you will receive an error message.
+1. Max query runtime: An individual query isn't permitted to run longer than 30 seconds. If this limit is exceeded, the query will be terminated and you'll receive an error message.
 
-2. Interval Usage: Each title is permitted a cumulative total runtime of three minutes per any given 10 minute interval. If this limit is exceeded, you will receive an error message and will need to wait before running additional queries. 
+2. Interval Usage: Each title is permitted a cumulative total runtime of three minutes per any given 10 minute interval. If this limit is exceeded, you'll receive an error message and will need to wait before running additional queries. 
 
 ## Data Retention
 
-By default, Data Explorer queries run on hot storage, which can be configured in the Management tool. Queries that search beyond the data stored in hot storage will have significantly longer run times and may time out.
+By default, Data Explorer queries run on hot storage, which can be configured in the Management tool. Queries that search beyond the data stored in hot storage have significantly longer run times and may time out.
