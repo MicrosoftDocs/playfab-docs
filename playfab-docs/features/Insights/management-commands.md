@@ -1,8 +1,8 @@
 ---
 title: Insights Management Commands
-author: mckmoffatt
+author: joannaleecy
 description: management commands for title adx
-ms.author: mcelliot
+ms.author: joanlee
 ms.date: 1/9/2020    
 ms.topic: article
 ms.service: playfab
@@ -11,11 +11,12 @@ ms.localizationpriority: medium
 ---
 
 # Insights Management Commands
+
 Insights management commands allow users express more control over or to gather additional information on their data system. The commands fall into two primary categories:
 1. Management - These commands allow users to view more information about queries, commands and retention as well as alter retention
 2. Data Control - These commands allow users to create and drop custom tables, ingest local and cloud data and purge data from their DB
 
-Some commands are not available in evaluation mode.
+Some commands aren't available in evaluation mode.
 
 | Category     | Commands                                                                                                                              |
 |--------------|---------------------------------------------------------------------------------------------------------------------------------------|
@@ -24,7 +25,7 @@ Some commands are not available in evaluation mode.
 
 ## Management
 **.show queries**<br>
-Returns a list of currently-executing queries by the user, or by another user, or by all users.<br>
+Returns a list of currently executing queries by the user, or by another user, or by all users.<br>
 Usage: `.show  queries`<br>
 Example: `.show queries | where StartedOn > ago(1d)`<br>
 This shows all queries that executed in the last day<br>
@@ -45,10 +46,10 @@ This shows the current caching policy for the specified database.<br>
 Shows the current caching policy on the table<br>
 Usage: `.show database DatabaseName.TableName policy caching`<br>
 Example: `.show database myDatabase.myTable policy caching`<br>
-This shows the current cachingt policy for the specified table.<br>
+This shows the current caching policy for the specified table.<br>
 
 **.show commands-and-queries**<br>
-Returns a table with admin commands and queries which have reached a final state. These commands and queries are available to query for 30 days.<br>
+Returns a table with admin commands and queries that have reached a final state. These commands and queries are available to query for 30 days.<br>
 Usage: `.show commands-and-queries`<br>
 Example: `.show commands-and-queries | where StartedOn > ago(1d) | where State != "Completed"`<br>
 This Shows all commands and queries that failed in the last day<br>
@@ -74,7 +75,7 @@ Example: `.create table ['custom.logs'] (Level:string, Timestamp:datetime, Id:st
 This creates a new table called "custom.logs" with four columns. **IMPORTANT Custom tables must begin with "custom.".**
 
 **.drop table** (restricted to performance level 2 and above)<br>
-Drops the specified table. Note: This cannot be undone.<br>
+Drops the specified table. Note: This can't be undone.<br>
 Usage: `.drop table TableName [ifexists]`<br>
 Example: `.drop table ['custom.logs']`<br>
 This drops the table named "custom.logs".
@@ -95,10 +96,10 @@ This adds to existing table "custom.recentEvents" with the results of the above 
 Create or appends to a table with results of QueryOrCommand<br>
 Usage: `.set-or-append  TableName [with (PropertyName = PropertyValue [, ...])] <| QueryOrCommand`<br>
 Example: `.set-or-append [‘custom.weekEvents’] <| [‘events.all’] | where Timestamp > now() – time(7d)`<br>
-This appends data from the above query to table "custom.weekEvents". If the table does not exist, create it.
+This appends data from the above query to table "custom.weekEvents". If the table doesn't exist, create it.
 
 **.set-or-replace** (restricted to performance level 2 and above)<br>
-Replaces the data of the table if it exists (drops the existing data shards), or creates the target table if doesn't already exist. The table schema will be preserved unless one of extend_schema or recreate_schema ingestion property is set to true. If the schema is modified, this happens before the actual data ingestion in its own transaction, so a failure to ingest the data doesn't mean the schema wasn't modified.<br>
+Replaces the data of the table if it exists (drops the existing data shards), or creates the target table if doesn't already exist. The table schema is preserved unless one of extend_schema or recreate_schema ingestion property is set to true. If the schema is modified, this happens before the actual data ingestion in its own transaction, so a failure to ingest the data doesn't mean the schema wasn't modified.<br>
 Usage: `.set-or-replace  TableName [with (PropertyName = PropertyValue [, ...])] <| QueryOrCommand`<br>
 Example: `.set-or-replace [‘custom.dayEvents’] <| [‘events.all’] | where Timestamp > now() – time(1d)`<br>
 This replaces the data in table "custom.dayEvents" with the above query.
@@ -113,4 +114,4 @@ This pushes data into table "custom.myData" from your cloud storage listed in th
 Permanently deletes data in table from the database<br>
 Usage: `.purge table [TableName] in database [DatabaseName] allrecords with (noregrets='true')`<br>
 Example: `.purge table [‘custom.toPurge’] in database MyDatabase allrecords`<br>
-This purges all data from table "custom.toPurge", permenantly deleting it from your data system.
+This purges all data from table "custom.toPurge", permanently deleting it from your data system.

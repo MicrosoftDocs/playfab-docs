@@ -8,8 +8,8 @@ metadata:
   description: Overview of PlayFab authentication support # Required; article description that is displayed in search results. < 160 chars.
   ms.service: playfab #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: landing-page
-  author: DanBehrendt
-  ms.author: dabe
+  author: joannaleecy
+  ms.author: joanlee
   ms.date: 01/27/2020 #Required; mm/dd/yyyy format.
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new

@@ -12,19 +12,19 @@ ms.localizationpriority: medium
  
 # Quickstart: Writing a PlayFab CloudScript using Azure Functions
 
-In this quickstart, you write a CloudScript using Azure Functions with Visual Studio Code, Azure Functions C# and Unity C#. After finishing this guide you will be able to link your new CloudScript to rules, scheduled tasks or even call it from your client code.
+In this quickstart, you write a CloudScript using Azure Functions with Visual Studio Code, Azure Functions C# and Unity C#. After finishing this guide, you'll be able to link your new CloudScript to rules, scheduled tasks or even call it from your client code.
 
 ## Prerequisites
 
 There are a couple of steps needed to get started with PlayFab C# CloudScript.
 
-- Visit the Visual Studio Code [QuickStart: Create an Azure Functions project using Visual Studio Code](/azure/azure-functions/create-first-function-vs-code-csharp?pivots=programming-language-csharp) and return here once you are completely set up. The following prerequisites are covered in their quickstart guide:
+- Visit the Visual Studio Code [QuickStart: Create an Azure Functions project using Visual Studio Code](/azure/azure-functions/create-first-function-vs-code-csharp?pivots=programming-language-csharp) and return here once you're set up. The following prerequisites are covered in their quickstart guide:
   - An [Azure account](https://azure.microsoft.com/free).  Signing up for an Azure Account is free
   - An [Azure Subscription](/azure/cost-management-billing/manage/create-subscription)
-  - A Functions App resource configured in the Azure Portal
+  - A Functions App resource configured in the Azure portal
     - To minimize latency of your CloudScript using Azure Functions place them in the *US-West*, *US-West 2*, or *US-West 3* Azure regions.
-    - **Security Note:** From a security perspective you should make sure to only use a given function secret with PlayFab and not use it for calling the same function from any other source.
-    - **Security Note:** For queued functions you should set up a distinct storage account for the queues used for the queue trigger.
+    - **Security Note:** From a security perspective, you should make sure to only use a given function secret with PlayFab and not use it for calling the same function from any other source.
+    - **Security Note:** For queued functions, you should set up a distinct storage account for the queues used for the queue trigger.
 - A [PlayFab account](https://developer.playfab.com/signup)
 
 > [!NOTE]
@@ -44,7 +44,7 @@ There are a couple of steps needed to get started with PlayFab C# CloudScript.
 
    ![Register CloudScript Function](media/register_cs_function.jpg)
     
-3. For **Name**, enter a human-friendly name for your function. For **Function URL**, enter the HTTP Trigger URL of the function. The URL can be found in the context menu of the Azure function resource as shown in "Run the function in Azure" section of [Quickstart: Create a function in Azure using Visual Studio Code](/azure/azure-functions/create-first-function-vs-code-csharp?pivots=programming-language-csharp#run-the-function-in-azure). If your Azure Function uses `Function` level authorization, the URL will contain  the Authorization key.
+3. For **Name**, enter a human-friendly name for your function. For **Function URL**, enter the HTTP Trigger URL of the function. The URL can be found in the context menu of the Azure function resource as shown in "Run the function in Azure" section of [Quickstart: Create a function in Azure using Visual Studio Code](/azure/azure-functions/create-first-function-vs-code-csharp?pivots=programming-language-csharp#run-the-function-in-azure). If your Azure Function uses `Function` level authorization, the URL contains  the Authorization key.
 
 For more information about deploying Azure functions, see [Deploy Azure Functions from Visual Studio Code](https://code.visualstudio.com/tutorials/functions-extension/deploy-app).
 
@@ -103,7 +103,7 @@ X-EntityToken: {{entityToken}}
 
 ```
 
-After pasting this code into a file in Visual Studio Code with the .http extension, you should be able to click _Send request_ under the _LoginWithCustomID_ function to get a player's entity token and then under _LoginWithCustomID_ to invoke your function. Invoking _GetObjects_ should show the object that your azure function attached the the player.
+After pasting this code into a file in Visual Studio Code with the .http extension, you should be able to select _Send request_ under the _LoginWithCustomID_ function to get a player's entity token and then under _LoginWithCustomID_ to invoke your function. Invoking _GetObjects_ should show the object that your Azure function attached the player.
 
 ### Calling your function from Unity
 
@@ -146,13 +146,13 @@ private void CallCSharpExecuteFunction()
 
 ### PlayFab CloudScript Context, Variables and Server SDKs <a name="playfabfunctioncontext"></a>
 
-One advantage of using CloudScript using Azure Functions is that the PlayStream Event and Player Profile context is automatically passed to the Azure Function. On invocation of the CloudScript you receive the context according to the function's invocation scenario. For example, the context will be different depending on whether it was triggered by a PlayStream Action or called directly from the client. This includes information such as the entity profile on whose behalf the CloudScripts was invoked, and potentially the PlayStream events used to invoke the CloudScript.
+One advantage of using CloudScript using Azure Functions is that the PlayStream Event and Player Profile context is automatically passed to the Azure Function. On invocation of the CloudScript, you receive the context according to the function's invocation scenario. For example, the context is different depending on whether it was triggered by a PlayStream Action or called directly from the client. This includes information such as the entity profile on whose behalf the CloudScripts was invoked, and potentially the PlayStream events used to invoke the CloudScript.
 
-1. You will need to install the PlayFab SDK via Package Manager. To do this open Terminal or CMD Console in Visual Studio Code and type: `dotnet add package PlayFabAllSDK`
-2. You need to include the [CS2AFHelperClasses.cs](https://github.com/PlayFab/PlayFab-Samples/blob/master/Samples/CSharp/AzureFunctions/CS2AFHelperClasses.cs) file which contains the implementation of `PlayFab.Samples`
+1. You'll need to install the PlayFab SDK via Package Manager. To do this open Terminal or CMD Console in Visual Studio Code and type: `dotnet add package PlayFabAllSDK`
+2. You need to include the [CS2AFHelperClasses.cs](https://github.com/PlayFab/PlayFab-Samples/blob/master/Samples/CSharp/AzureFunctions/CS2AFHelperClasses.cs) file that contains the implementation of `PlayFab.Samples`
 3. Execution of a script can occur through several methods (APIs, Scheduled Tasks, PlayStream Event, Segment Entering and Exit method).  The context of the execution is important to implement your CloudScript. See the [Using CloudScript context models tutorial](CloudScript-af-context.md) for details on how to use the context of the script.
 
-You can use the HelloWorld example below as your first Azure Function. It invokes an entity API and returns a greeting to the authenticated player. Classic server APIs can be invoked in a similar fashion; however, one would need to specify the title secret key in order to make the call. The secret key can be stored in [application settings](https://learn.microsoft.com/en-us/azure/azure-functions/functions-how-to-use-azure-function-app-settings?tabs=portal#settings) and retrieved using `Environment.GetEnvironmentVariable()` method.
+You can use the HelloWorld example below as your first Azure Function. It invokes an entity API and returns a greeting to the authenticated player. Classic server APIs can be invoked in a similar fashion; however, one would need to specify the title secret key in order to make the call. The secret key can be stored in [application settings](/azure/azure-functions/functions-how-to-use-azure-function-app-settings?tabs=portal#settings) and retrieved using `Environment.GetEnvironmentVariable()` method.
 
 ```c#
 using PlayFab;
@@ -235,11 +235,11 @@ To call the HelloWorld Azure Function from a PlayFab SDK use `ExecuteFunction`.
 
 Azure Functions can also be called by creating rules and scheduled tasks.  This works in the same way as our standard CloudScript.  To create a rule or scheduled task, go to **Automation** > **Rules**  or **Automation** > **Scheduled Tasks**. 
 
-- Click **New Rule**
+- Select **New Rule**
 - Enter a name for your rule
-- Select the event type that this rule will trigger on
+- Select the event type that this rule triggers on
 - Add an action
-- From the action dropdown select **Execute Azure Function**
+- From the action dropdown, select **Execute Azure Function**
 
 A list of available Azure Functions that you've registered will be available in the drop-down list.
 

@@ -1,6 +1,6 @@
 ---
 title: Data Explorer
-author: nathankong-microsoft
+author: joannaleecy
 description: Overview for Data Explorer
 ms.author: joanlee
 ms.date: 09/22/2020    

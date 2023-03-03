@@ -1,8 +1,8 @@
 ---
 title: Insights Pricing
-author: mckmoffatt
+author: joannaleecy
 description: Overview for PlayFab Insights Pricing
-ms.author: mcelliot
+ms.author: joanlee
 ms.date: 02/28/2020
 ms.topic: article
 ms.service: playfab
