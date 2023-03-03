@@ -41,4 +41,6 @@ If you're looking for the core PlayFab SDK that helps you implement most of our 
 * [Quickstart for Unity](multiplayer-unity-sdk-getting-started.md)
 * [Quickstart for Unreal](../../networking/party-unreal-engine-oss-quickstart.md)
 * [Lobby overview](../index.md)
-* [Getting started with Lobby](../lobby-getting-started.md)
+* [Lobby SDK quickstart](../lobby-getting-started.md)
+* [Matchmaking overview](../../matchmaking/index.md)
+* [Matchmaking SDK quickstart](../../matchmaking/quickstart-client-sdk.md)

@@ -71,6 +71,8 @@ In this code snippet, Lobby properties are passed in as __lobbyConfiguration__. 
     HRESULT error = PFMultiplayerCreateAndJoinLobby(g_pfmHandle, &m_localUsers[0], &lobbyConfiguration, &creatorMemberConfiguration, nullptr, &lobby);
 ```
 
+When the call to create a lobby completes, a [PFLobbyCreateAndJoinLobbyCompletedStateChange](playfabmultiplayerreference-cpp/pflobby/structs/pflobbycreateandjoinlobbycompletedstatechange.md) will be provided by [PFMultiplayerStartProcessingLobbyStateChanges](playfabmultiplayerreference-cpp/pflobby/functions/pfmultiplayerstartprocessinglobbystatechanges.md).
+
 ## See also
 
 * [Lobby Client SDK reference](playfabmultiplayerreference-cpp\pflobby\pflobby_members.md)
