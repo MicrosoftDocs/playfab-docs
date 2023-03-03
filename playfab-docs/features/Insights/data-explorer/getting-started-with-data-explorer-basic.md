@@ -1,6 +1,6 @@
 ---
 title: Getting started with Data Explorer basic mode
-author: nathankong-microsoft
+author: joannaleecy
 description: Illustrates how to use Data Explorer basic mode to create queries.
 ms.author: joanlee
 ms.date: 09/22/2020
@@ -24,7 +24,7 @@ To begin authoring your own queries in basic mode, it's important to first under
 
 ### The events.all table
 
-The `events.all` table is the default destination for all incoming events. It is a single semi-structured table with columns for common values such as time & event name. You will quickly become familiar with the EventData column, which contains the full original JSON payload and is useful in almost all queries. You can read the following documentation on the [events.all table](../schemas/events-all.md).
+The `events.all` table is the default destination for all incoming events. It's a single semi-structured table with columns for common values such as time & event name. You'll quickly become familiar with the EventData column, which contains the full original JSON payload and is useful in almost all queries. You can read the following documentation on the [events.all table](../schemas/events-all.md).
 
 ### Query
 
@@ -36,13 +36,13 @@ The timeframe of the query can be adjusted by modifying **Start date** and **End
 
 The output of the query can be modified further by adding **Group By** and **Aggregate Type**. Group By modifies how the output rows are grouped, whereas Aggregate Type modifies how the rows are counted, summed, or distinct by.
 
-You can create queries in the Query panel. Please note that Data Explorer (basic) queries will only reference the top 100 events. To view all events, run the query in [Data Explorer (advanced)](getting-started-with-data-explorer-advanced.md).
+You can create queries in the Query panel. Note that Data Explorer (basic) queries will only reference the top 100 events. To view all events, run the query in [Data Explorer (advanced)](getting-started-with-data-explorer-advanced.md).
 
 ## Query Output
 
 After running a query, you can see the output below in the Query Output panel. The output is in the format of a bar graph as well as a table.
 
-The graph shows the results for the largest 5 groups. You can see the other groups by clicking the dropdown at the bottom of the graph.
+The graph shows the results for the largest five groups. You can see the other groups by clicking the dropdown at the bottom of the graph.
 
 The table shows the Event Name, Timestamp (UTC), Player ID, and Event Data (via JSON) for reach row.
 
@@ -78,11 +78,11 @@ The table shows the Event Name, Timestamp (UTC), Player ID, and Event Data (via 
 Example queries can be loaded into the Data Explorer basic by selecting “What’s This” and selecting a sample query.
 
 ## Limits
-There are two limits which govern Data Explorer query usage:
+There are two limits that govern Data Explorer query usage:
  
-1. Max query runtime: An individual query is not permitted to run longer than 30 seconds. If this limit is exceeded, the query will be terminated and you will receive an error message.
+1. Max query runtime: An individual query isn't permitted to run longer than 30 seconds. If this limit is exceeded, the query will be terminated and you'll receive an error message.
 
-2. Interval Usage: Each title is permitted a cumulative total runtime of three minutes per any given 10 minute interval. If this limit is exceeded, you will receive an error message and will need to wait before running additional queries. 
+2. Interval Usage: Each title is permitted a cumulative total runtime of three minutes per any given 10 minute interval. If this limit is exceeded, you'll receive an error message and will need to wait before running additional queries. 
 
 ## Data Retention
 

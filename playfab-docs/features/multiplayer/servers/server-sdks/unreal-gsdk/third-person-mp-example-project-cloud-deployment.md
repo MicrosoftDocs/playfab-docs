@@ -1,6 +1,6 @@
 ---
 title: GSDK Project Cloud Deployment
-author: pgilmorepf
+author: joannaleecy
 description: Deploying an Unreal GSDK Project to the Cloud
 ms.author: joanlee
 ms.date: 12/08/2021

@@ -1,7 +1,7 @@
 ---
-title: Matchmaking quickstart - client SDK
+title: Matchmaking SDK quickstart
 author: sardavi
-description: Quickstart which demonstrates a matchmaking flow using the client SDK
+description: Quickstart which demonstrates a matchmaking flow using the SDK
 ms.author: kevinasg
 ms.date: 12/06/2021
 ms.topic: article
@@ -10,54 +10,73 @@ keywords: playfab, multiplayer, servers, matchmaking
 ms.localizationpriority: medium
 ---
 
-# Matchmaking Client SDK quickstart
+# Matchmaking SDK quickstart
  
 
-This quickstart guide walks you through the entire process for integrating the matchmaking feature in your title code.
+This quickstart guide walks you through the entire process for adding matchmaking to your game using the PlayFab Multiplayer SDK.
 
 This tutorial illustrates how to submit a ticket to a specific queue in order to find a game. A queue likely maps to a game mode or multiple game modes (ex.: a capture the flag mode and a king of the hill mode in the same queue).
 
 The matchmaking service handles finding a match amongst tickets in a queue. When a match is found, your title must handle connecting the players together for gameplay.
 
+> [!NOTE]
+> The PlayFab Multiplayer SDK also provides APIs for PlayFab Lobbies.
+> * For more information on C++ APIs, see the [Lobby SDK quickstart](../lobby/lobby-getting-started.md)
+> * For more information on Unity APIs, see the [Quickstart for Unity](../lobby/lobby-matchmaking-sdks/multiplayer-unity-sdk-getting-started.md)
+> * For more information on Unreal APIs, see the [Quickstart for Unreal](../networking/party-unreal-engine-oss-quickstart.md)
+
+
 ## Prerequisites
 
-You need a PlayFab account to access Lobby and Matchmaking features.
-
-Create/sign in to your [PlayFab account](https://playfab.com). For instructions, see [Quickstart: Game Manager](../../../gamemanager/quickstart.md).
+You need a [PlayFab account](https://playfab.com) to use PlayFab Matchmaking. For instructions to create an account, see [Quickstart: Game Manager](../../../gamemanager/quickstart.md).
 
 ## Configure a matchmaking queue in Game Manager
 
 The library matches users together who create tickets for queues that are configured in Game Manager. For details on how to set one up, see [Configuring matchmaking queues](config-queues.md).
 
-## Download and set up the PlayFab Multiplayer Client SDK
+## Download and set up the PlayFab Multiplayer SDK
 
-Like the PlayFab Core SDKs, we have Multiplayer SDKs for different platforms and game engines. Select and download the one that you need. 
+Download the [C/C++ SDK](../lobby/lobby-matchmaking-sdks/lobby-matchmaking-sdks.md) for your platform and integrate the provider header and library files into your build.
 
-For download links, see [Multiplayer SDKs](../lobby/lobby-matchmaking-sdks/lobby-matchmaking-sdks.md).
+> [!NOTE]
+> This quick start focuses on using the C/C++ SDK. For Unity and Unreal interfaces, see the following articles:
+> * [Quickstart for Unity](../lobby/lobby-matchmaking-sdks/multiplayer-unity-sdk-getting-started.md)
+> * [Quickstart for Unreal](../networking/party-unreal-engine-oss-quickstart.md)
 
-For Unity and Unreal set up instructions, see the following articles.
-* [Quickstart for Unity](../lobby/lobby-matchmaking-sdks/multiplayer-unity-sdk-getting-started.md)
-* [Quickstart for Unreal](../networking/party-unreal-engine-oss-quickstart.md)
+## Log in a PlayFab entity
 
-## Initialize PlayFab Multiplayer Client SDK
+To use the PlayFab Lobby SDK, you need to authenticate your client using PlayFab entity keys and entity tokens. Acquire a PlayFab entity key and token pair by logging in with [LoginWithCustomId](/rest/api/playfab/client/authentication/login-with-custom-id) REST API. This API is also available as a C/C++ projection via the [PlayFab REST SDK](/gaming/playfab/sdks/playfab-sdk-intro).
 
-Now that you've finished the setup, you're ready to make your first API call and use more Multiplayer features, such as Matchmaking.
+> [!NOTE]
+> LoginWithCustomId is a quick way to get started with PlayFab features but is not intended to be the login mechanism you ship with. For login guidance, see [Login basics and best practices](/features/authentication/login/login-basics-best-practices).
 
-To start making Multiplayer API calls, you also need the PlayFab Entity Token. Get it via REST calls ([GetEntityToken](/rest/api/playfab/authentication/authentication/getentitytoken)) or by using the PlayFab Core SDK.
+## Initialize the PlayFab Multiplayer SDK
 
-Once you have the entity token, initialize the Multiplayer library using [PFMultiplayerInitialize](../lobby/playfabmultiplayerreference-cpp/pfmultiplayer/functions/pfmultiplayerinitialize.md) and call [PFMultiplayerSetEntityToken](../lobby/playfabmultiplayerreference-cpp/pfmultiplayer/functions/pfmultiplayersetentitytoken.md) to set the entity token for your local users.
+Initialize the PlayFab Multiplayer SDK by following these basic steps:
 
-### Example using the Matchmaking client SDK
+1. Initialize the SDK by calling [PFMultiplayerInitialize](../lobby/playfabmultiplayerreference-cpp/pfmultiplayer/functions/pfmultiplayerinitialize.md)
+2. Set the entity key and token used by the library on behalf of your players by calling [PFMultiplayerSetEntityToken](../lobby/playfabmultiplayerreference-cpp/pfmultiplayer/functions/pfmultiplayersetentitytoken.md).
 
 ```cpp
 static PFMultiplayerHandle g_pfmHandle = nullptr;
 ...
 ...
-HRESULT hr = PFMultiplayerInitialize(titleId, &g_pfmHandle);
-RETURN_IF_FAILED(hr);
+HRESULT hr = S_OK;
 
+// Initialize the PFMultiplayer library.
+hr = PFMultiplayerInitialize(titleId, &g_pfmHandle);
+if (FAILED(hr))
+{
+    // handle initialize failure
+}
+
+// Set an entity token for a local user. The token is used to authenticate PlayFab operations on behalf of this user. 
+// Tokens can expire, and this API token should be called again when this token is refreshed.
 hr = PFMultiplayerSetEntityToken(g_pfmHandle, localUserEntity, entityToken);
-RETURN_IF_FAILED(hr);
+if (FAILED(hr))
+{
+    // handle set entity token failure
+}
 ```
 
 ## Create a matchmaking ticket
@@ -93,7 +112,7 @@ RETURN_IF_FAILED(hr);
 
 ### Matchmaking with a group of remote users
 
-To start group matchmaking with remote users, it is helpful to think of one client as the leader. Have the leader create the ticket using **PFMultiplayerCreateMatchmakingTicket**, specifying the other users in the group through the **configuration** parameter. Once the ticket is created, call **GetTicketId** to get the ticket id. Transmit this id to each other user through an external mechanism, such as a networking mesh or a shared PlayFab Lobby, and have each client call **PFMultiplayerJoinMatchmakingTicketFromId** with the ticket id to join the matchmaking ticket. The ticket status will be **PFMatchmakingTicketStatus::WaitingForPlayers** while waiting for the specified players to join and will change to **PFMatchmakingTicketStatus::WaitingForMatch** once all players have joined the ticket.
+To start group matchmaking with remote users, it's helpful to think of one client as the leader. Have the leader create the ticket using **PFMultiplayerCreateMatchmakingTicket**, specifying the other users in the group through the **configuration** parameter. Once the ticket is created, call **GetTicketId** to get the ticket ID. Send this ID to each other user through an external mechanism, such as a networking mesh or a shared PlayFab Lobby, and have each client call **PFMultiplayerJoinMatchmakingTicketFromId** with the ticket ID to join the matchmaking ticket. The ticket status will be **PFMatchmakingTicketStatus::WaitingForPlayers** while waiting for the specified players to join and will change to **PFMatchmakingTicketStatus::WaitingForMatch** once all players have joined the ticket.
 
 ```cpp
 // Creating the ticket on the leader's client
@@ -126,7 +145,7 @@ HRESULT hr = PFMultiplayerCreateMatchmakingTicket(
     &ticket);
 RETURN_IF_FAILED(hr);
 
-// Getting the ticket id
+// Getting the ticket ID
 
 PCSTR ticketId;
 hr = PFMatchmakingTicketGetTicketId(ticket, &ticketId);
@@ -153,7 +172,7 @@ HRESULT hr = PFMultiplayerJoinMatchmakingTicketFromId(
 
 ### Matchmaking with multiple local users
 
-When matchmaking with multiple local users, instead of passing in one **PFEntityKey** to either the **PFMultiplayerCreateMatchmakingTicket** or the **PFMultiplayerJoinMatchmakingTicketFromId** functions, you need to pass in a list of keys. Similarly, you will need to pass in a list of attributes for each user. Each list entry position should correspond with each other. Meaning that the first entry in attributes list should be the attributes for the first player in the **PFEntityKey** list.
+When matchmaking with multiple local users, instead of passing in one **PFEntityKey** to either the **PFMultiplayerCreateMatchmakingTicket** or the **PFMultiplayerJoinMatchmakingTicketFromId** functions, you need to pass in a list of keys. Similarly, you'll need to pass in a list of attributes for each user. Each list entry position should correspond with each other. Meaning that the first entry in attributes list should be the attributes for the first player in the **PFEntityKey** list.
 
 ```cpp
 const char* yourQueueName = ...; // This is the name of the queue you configured in Game Manager.
@@ -179,7 +198,7 @@ RETURN_IF_FAILED(hr);
 
 ## Check the status of the matchmaking ticket
 
-You must check for updates to the ticket by calling [PFMultiplayerStartProcessingMatchmakingStateChanges](../lobby/playfabmultiplayerreference-cpp/pfmatchmaking/functions/pfmultiplayerstartprocessingmatchmakingstatechanges.md) to receive state changes and then calling [PFMultiplayerFinishProcessingMatchmakingStateChanges](../lobby/playfabmultiplayerreference-cpp/pfmatchmaking/functions/pfmultiplayerfinishprocessingmatchmakingstatechanges.md) when you are done processing those state changes.
+You must check for updates to the ticket by calling [PFMultiplayerStartProcessingMatchmakingStateChanges](../lobby/playfabmultiplayerreference-cpp/pfmatchmaking/functions/pfmultiplayerstartprocessingmatchmakingstatechanges.md) to receive state changes and then calling [PFMultiplayerFinishProcessingMatchmakingStateChanges](../lobby/playfabmultiplayerreference-cpp/pfmatchmaking/functions/pfmultiplayerfinishprocessingmatchmakingstatechanges.md) when you're done processing those state changes.
 
 The SDK will return a **TicketStatusChanged** state change any time the status of the ticket changes and a **TicketCompleted** state change when matchmaking has completed.
 
@@ -238,9 +257,9 @@ RETURN_IF_FAILED(hrTicketError);
 
 ## Get the match
 
-After receiving the **PFMatchmakingStateChangeType::TicketCompleted** state change, call [PFMatchmakingTicketGetMatch](../lobby/playfabmultiplayerreference-cpp/pfmatchmaking/functions/pfmatchmakingticketgetmatch.md) to get the details of the match. This will contain the match id, the users who have been matched together, and the preferred region for the match, and an arrangement string for lobby associated with the match.
+After receiving the **PFMatchmakingStateChangeType::TicketCompleted** state change, call [PFMatchmakingTicketGetMatch](../lobby/playfabmultiplayerreference-cpp/pfmatchmaking/functions/pfmatchmakingticketgetmatch.md) to get the details of the match. These details will contain the match ID, the users who have been matched together, and the preferred region for the match, and an arrangement string for lobby associated with the match.
 
-Once you have retrieved any information you need out of the **PFMatchmakingMatchDetails** struct, the ticket should be destroyed with [PFMultiplayerDestroyMatchmakingTicket](../lobby/playfabmultiplayerreference-cpp/pfmatchmaking/functions/pfmultiplayerdestroymatchmakingticket.md).
+Once you've retrieved any information you need out of the **PFMatchmakingMatchDetails** struct, the ticket should be destroyed with [PFMultiplayerDestroyMatchmakingTicket](../lobby/playfabmultiplayerreference-cpp/pfmatchmaking/functions/pfmultiplayerdestroymatchmakingticket.md).
 
 ### Example using the Matchmaking client SDK
 
@@ -259,7 +278,7 @@ PFMultiplayerDestroyMatchmakingTicket(g_pfmHandle, ticket);
 
 If for some reason your client wants to cancel the matchmaking process prior to the timeout set in the ```PFMatchmakingTicketConfiguration```, call [PFMatchmakingTicketCancel](../lobby/playfabmultiplayerreference-cpp/pfmatchmaking/functions/pfmatchmakingticketcancel.md) with the ticket handle.
 
-Calling this doesn't guarantee the ticket will be canceled. The ticket could still complete before the cancelation can be processed, or the cancelation request may fail due to networking or service errors. You should still process matchmaking state changes to get the result of the ticket.
+Calling this API doesn't guarantee the ticket will be canceled. The ticket could still complete before the cancelation can be processed, or the cancelation request may fail due to networking or service errors. You should still process matchmaking state changes to get the result of the ticket.
 
 ### Example using the Matchmaking client SDK
 ```cpp
@@ -268,11 +287,11 @@ HRESULT hr = PFMatchmakingTicketCancel(ticket);
 
 ## (Optional) Connecting your players together into a Lobby
 
-Once your players have matched, you will want to have them join each other. The **PFMatchmakingMatchDetails** from the matched ticket contains a **lobbyArrangementString** field which can be used to join the users into the same Lobby.
+After your players have matched, they can join up together in a lobby. The **PFMatchmakingMatchDetails** from the matched ticket contains a **lobbyArrangementString** field, which can be used to join the users into the same Lobby.
 
 For more information about how Lobby and Matchmaking interact together, see [Use lobby and matchmaking together](../lobby/lobby-and-matchmaking.md).
 
-For more information about interacting with lobbies, see [Lobby Documentation](../lobby/index.md).
+For more information about PlayFab Lobbies, see the [PlayFab Lobby Overview](../lobby/index.md).
 
 ### Example using the Matchmaking client SDK
 
@@ -303,3 +322,7 @@ Using this quickstart, you should now have a successful matchmaking flow in your
 * How your title handles group formation.
 * What your title displays while users are waiting for a match.
 * How to handle failures and retries.
+
+## See also
+
+* [Lobby SDK](../lobby/lobby-getting-started.md)

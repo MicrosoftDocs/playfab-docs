@@ -1,8 +1,8 @@
 ---
 title: Building your Unreal Example Project
-author: pgilmorepf
+author: joannaleecy
 description: How to build an Unreal Project, specifically the build instructions relevant to an Unreal project deployed to MPS
-ms.author: pagilmor
+ms.author: joanlee
 ms.date: 12/08/2021
 ms.topic: article
 ms.service: playfab

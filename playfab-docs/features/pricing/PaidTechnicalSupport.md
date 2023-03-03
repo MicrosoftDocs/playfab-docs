@@ -1,20 +1,23 @@
 ---
 title: Paid Technical Support
-author: mckmoffatt
+author: joannaleecy
 description: Describes the different PlayFab support offerings and how to access each.
-ms.author: mcelliot
+ms.author: joanlee
 ms.date: 02/6/2020
 ms.topic: article
 ms.service: playfab
 keywords: playfab, pricing, upgrade, upgrades, support, help, assistance, directions, support ticket, forum, slack
 ms.localizationpriority: medium
 ---
+
 # Accessing PlayFab Technical Support
+
 To make integration with PlayFab as seamless and efficient as possible, PlayFab offers a variety of support options ranging from online documentation to live conversations with PlayFab engineers. Different support options are included in each account plan as determined by the tier of the account. Customers can upgrade their accounts to access higher levels of support.
 
 ## Support Offerings
 
-### PUBLIC DOCUMENTATION 
+### PUBLIC DOCUMENTATION
+
 **Purpose:** Use the PlayFab documentation to view service offerings, API functionality, and how-to guides.
 
 **Minimum Required Account Plan:** No account needed, open to the public.

@@ -1,6 +1,6 @@
 ---
 title: Explorer tutorials
-author: nathankong-microsoft
+author: joannaleecy
 description: The Data Explorer tutorials.
 ms.author: joanlee
 ms.date: 09/23/2020    

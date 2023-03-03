@@ -121,8 +121,6 @@ for (uint32_t i = 0; i < lobbyStateChangeCount; ++i)
         }
         // add other state change handlers here
     }
-
-    m_callbacks.OnProcessStateChange(stateChange);
 }
 
 hr = PFMultiplayerFinishProcessingLobbyStateChanges(m_pfmHandle, lobbyStateChangeCount, lobbyStateChanges);
@@ -155,8 +153,6 @@ for (uint32_t i = 0; i < matchStateChangeCount; ++i)
         }
         // add other state change handlers here
     }
-
-    m_callbacks.OnProcessStateChange(stateChange);
 }
 
 hr = PFMultiplayerFinishProcessingMatchmakingStateChanges(m_pfmHandle, matchStateChangeCount, matchStateChanges);

@@ -1,8 +1,8 @@
 ---
 title: Schemas
-author: mckmoffatt
+author: joannaleecy
 description: Overview of schemas.
-ms.author: mcelliot
+ms.author: joanlee
 ms.date: 07/23/2019    
 ms.topic: article
 ms.service: playfab
