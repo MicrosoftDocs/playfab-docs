@@ -12,8 +12,6 @@ items:
     href: features/authentication/toc.yml
   - name: Automation
     href: features/automation/toc.yml
-  - name: Social
-    href: features/social/toc.yml
   - name: Multiplayer
     href: features/multiplayer/toc.yml
   - name: Insights
