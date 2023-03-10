@@ -12,6 +12,14 @@ ms.localizationpriority: medium
 
 # PlayFab Multiplayer C++ SDK release notes
 
+## 1.4.4
+
+March 10, 2023
+
+### New features
+
+- PlayFab Multiplayer v1.4.4 brings support for Linux and Windows Subsystem for Linux (WSL).
+
 ## 1.4.3
 
 November 15, 2022
