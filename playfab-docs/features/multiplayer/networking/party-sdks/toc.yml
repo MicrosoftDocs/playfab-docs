@@ -14,7 +14,7 @@
     href: ../unity-party-api-reference/index.md
   - name: Party Unity plugin release notes
     href: ../party-unity-release-notes.md
-- name: Unreal Engine 4/5
+- name: Unreal Engine 4 and 5
   items:
   - name: Multiplayer Unreal Online Subsystem (OSS)
     href: ../party-unreal-engine-oss-overview.md
