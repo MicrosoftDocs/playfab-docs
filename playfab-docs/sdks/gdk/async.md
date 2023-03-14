@@ -309,3 +309,7 @@ void BackgroundWorkThreadProc(XTaskQueueHandle queue)
     XTaskQueueCloseHandle(queue);
 }
 ```
+
+## Reference
+
+[API reference documentation](../../api-references/c/pfauthentication/pfauthentication_members)

@@ -37,6 +37,19 @@
       items:
       - name: Quickstart
         href: cocos2d-x/quickstart.md
+    - name: GDK
+      href: gdk/index.md
+      items:
+      - name: Quickstart
+        href: gdk/quickstart.md
+      - name: Making Async Calls
+        href: gdk/async.md
+      - name: Managing Memory
+        href: gdk/memory.md
+      - name: Handling Token Expiration
+        href: gdk/relogin.md
+      - name: Debug Tracing
+        href: gdk/tracing.md
     - name: Phaser.io
       href: phaser/index.md
     - name: Photon
@@ -67,7 +80,7 @@
       items:
       - name: Quickstart
         href: actionscript/quickstart.md
-    - name: Javascript
+    - name: JavaScript
       href: javascript/index.md
       items:
       - name: Quickstart

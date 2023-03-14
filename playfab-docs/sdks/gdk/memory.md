@@ -32,3 +32,7 @@ To manually specify your memory routines, you can take the following steps:
 * When the game exits:
     * Call **PFServicesUninitializeAsync** to reclaim all resources associated with the SDK.
     * Clean up your game's custom memory manager.
+
+## Reference
+
+[API reference documentation](../../api-references/c/pfplatform/pfplatform_members)

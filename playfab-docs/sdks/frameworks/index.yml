@@ -19,6 +19,32 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
+  - title: Microsoft GDK
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: GDK
+            url: ../gdk/index.md
+      - linkListType: quickstart
+        links:
+          - text: GDK quickstart
+            url: ../gdk/quickstart.md
+      - linkListType: tutorial
+        links:
+          - text: Making Async Calls
+            url: ../gdk/async.md
+          - text: Managing Memory
+            url: ../gdk/memory.md
+          - text: Handling Token Expiration
+            url: ../gdk/relogin.md
+          - text: Debug Tracing
+            url: ../gdk/tracing.md
+      - linkListType: reference
+        links:
+          - text: API reference
+            url: ../../api-references/c/pfauthentication/pfauthentication_members
+
+  # Card (optional)
   - title: Cocos2D-x
     linkLists:
       - linkListType: overview
@@ -31,11 +57,11 @@ landingContent:
             url: ../cocos2d-x/quickstart.md
 
   # Card
-  - title: Phaser.io (Javascript)
+  - title: Phaser.io (JavaScript)
     linkLists:
       - linkListType: overview
         links:
-          - text: Phaser.io (Javascript)
+          - text: Phaser.io (JavaScript)
             url: ../phaser/index.md
 
   # Card (optional)

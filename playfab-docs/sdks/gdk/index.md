@@ -47,3 +47,7 @@ There are two scenarios where this SDK may not be appropriate for your GDK game:
 ## Add this SDK to your project
 
 Since this SDK is a component of the GDK, adding it to your project is quick and easy. Follow the instructions here to start making basic calls to PlayFab: [Quickstart for GDK](./quickstart.md).
+
+## Reference
+
+[API reference documentation](../../api-references/c/pfauthentication/pfauthentication_members)
