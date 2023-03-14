@@ -38,10 +38,10 @@ landingContent:
             url: catalog/limits.md
           - text: PlayFab SDKs
             url: /sdks/playfab-sdk-intro
-          - text: Catalog API reference
+          - text: Catalog REST API reference
             url: /rest/api/playfab/economy/catalog
-          - text: Player Inventory API reference
-            url: /rest/api/playfab/client/player-item-management
+          - text: Player REST Inventory API reference
+            url: /rest/api/playfab/economy/inventory
           - text: User Generated Content API reference
             url: /rest/api/playfab/admin/content
           - text: Pricing
