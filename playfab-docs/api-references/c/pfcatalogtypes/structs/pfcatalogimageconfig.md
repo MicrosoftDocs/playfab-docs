@@ -1,0 +1,44 @@
+---
+author: jasonsandlin
+title: "PFCatalogImageConfig"
+description: "PFCatalogImageConfig data model."
+ms.author: jasonsa
+ms.topic: reference
+ms.service: playfab
+ms.date: 03/09/2023
+---
+
+# PFCatalogImageConfig  
+
+PFCatalogImageConfig data model.  
+
+## Syntax  
+  
+```cpp
+typedef struct PFCatalogImageConfig {  
+    const char* const* tags;  
+    uint32_t tagsCount;  
+} PFCatalogImageConfig;  
+```
+  
+### Members  
+  
+**`tags`** &nbsp; const char* const*  
+*array of size `tagsCount`*  
+  
+(Optional) The set of tags that will be used for validation.
+  
+**`tagsCount`** &nbsp; uint32_t  
+  
+Count of tags
+  
+  
+## Requirements  
+  
+**Header:** PFCatalogTypes.h
+  
+## See also  
+[PFCatalogTypes members](../pfcatalogtypes_members.md)  
+
+  
+  
