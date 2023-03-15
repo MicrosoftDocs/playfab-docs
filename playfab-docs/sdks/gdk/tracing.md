@@ -43,3 +43,7 @@ void CALLBACK TraceCallback(
 
 PFHCTraceSetClientCallback(TraceCallback);
 ```
+
+## Reference
+
+[API reference documentation](../../api-references/c/pfhctrace/pfhctrace_members)

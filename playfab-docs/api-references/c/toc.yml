@@ -1,0 +1,1460 @@
+- name: Overview
+  items:
+  - name: PFAccountManagement
+    href: pfaccountmanagement/pfaccountmanagement_members.md
+  - name: PFAccountManagementTypes
+    href: pfaccountmanagementtypes/pfaccountmanagementtypes_members.md
+  - name: PFAuthentication
+    href: pfauthentication/pfauthentication_members.md
+  - name: PFAuthenticationTypes
+    href: pfauthenticationtypes/pfauthenticationtypes_members.md
+  - name: PFCatalog
+    href: pfcatalog/pfcatalog_members.md
+  - name: PFCatalogTypes
+    href: pfcatalogtypes/pfcatalogtypes_members.md
+  - name: PFCloudScript
+    href: pfcloudscript/pfcloudscript_members.md
+  - name: PFCloudScriptTypes
+    href: pfcloudscripttypes/pfcloudscripttypes_members.md
+  - name: PFCore
+    href: pfcore/pfcore_members.md
+  - name: PFData
+    href: pfdata/pfdata_members.md
+  - name: PFDataTypes
+    href: pfdatatypes/pfdatatypes_members.md
+  - name: PFEntity
+    href: pfentity/pfentity_members.md
+  - name: PFEvents
+    href: pfevents/pfevents_members.md
+  - name: PFEventsTypes
+    href: pfeventstypes/pfeventstypes_members.md
+  - name: PFExperimentation
+    href: pfexperimentation/pfexperimentation_members.md
+  - name: PFExperimentationTypes
+    href: pfexperimentationtypes/pfexperimentationtypes_members.md
+  - name: PFFriends
+    href: pffriends/pffriends_members.md
+  - name: PFFriendsTypes
+    href: pffriendstypes/pffriendstypes_members.md
+  - name: PFGroups
+    href: pfgroups/pfgroups_members.md
+  - name: PFGroupsTypes
+    href: pfgroupstypes/pfgroupstypes_members.md
+  - name: PFHCTrace
+    href: pfhctrace/pfhctrace_members.md
+  - name: PFHttpClient
+    href: pfhttpclient/pfhttpclient_members.md
+  - name: PFInventory
+    href: pfinventory/pfinventory_members.md
+  - name: PFInventoryTypes
+    href: pfinventorytypes/pfinventorytypes_members.md
+  - name: PFMultiplayerServer
+    href: pfmultiplayerserver/pfmultiplayerserver_members.md
+  - name: PFMultiplayerServerTypes
+    href: pfmultiplayerservertypes/pfmultiplayerservertypes_members.md
+  - name: PFPlatform
+    href: pfplatform/pfplatform_members.md
+  - name: PFPlayerDataManagement
+    href: pfplayerdatamanagement/pfplayerdatamanagement_members.md
+  - name: PFPlayerDataManagementTypes
+    href: pfplayerdatamanagementtypes/pfplayerdatamanagementtypes_members.md
+  - name: PFProfiles
+    href: pfprofiles/pfprofiles_members.md
+  - name: PFProfilesTypes
+    href: pfprofilestypes/pfprofilestypes_members.md
+  - name: PFSegments
+    href: pfsegments/pfsegments_members.md
+  - name: PFSegmentsTypes
+    href: pfsegmentstypes/pfsegmentstypes_members.md
+  - name: PFServiceConfig
+    href: pfserviceconfig/pfserviceconfig_members.md
+  - name: PFServices
+    href: pfservices/pfservices_members.md
+  - name: PFTitleDataManagement
+    href: pftitledatamanagement/pftitledatamanagement_members.md
+  - name: PFTitleDataManagementTypes
+    href: pftitledatamanagementtypes/pftitledatamanagementtypes_members.md
+  - name: PFTrace
+    href: pftrace/pftrace_members.md
+  - name: PFTypes
+    href: pftypes/pftypes_members.md
+- name: Functions
+  items:
+  - name: PFAccountManagementClientGetAccountInfoAsync
+    href: pfaccountmanagement/functions/pfaccountmanagementclientgetaccountinfoasync.md
+  - name: PFAccountManagementClientGetAccountInfoGetResult
+    href: pfaccountmanagement/functions/pfaccountmanagementclientgetaccountinfogetresult.md
+  - name: PFAccountManagementClientGetAccountInfoGetResultSize
+    href: pfaccountmanagement/functions/pfaccountmanagementclientgetaccountinfogetresultsize.md
+  - name: PFAccountManagementClientGetPlayerCombinedInfoAsync
+    href: pfaccountmanagement/functions/pfaccountmanagementclientgetplayercombinedinfoasync.md
+  - name: PFAccountManagementClientGetPlayerCombinedInfoGetResult
+    href: pfaccountmanagement/functions/pfaccountmanagementclientgetplayercombinedinfogetresult.md
+  - name: PFAccountManagementClientGetPlayerCombinedInfoGetResultSize
+    href: pfaccountmanagement/functions/pfaccountmanagementclientgetplayercombinedinfogetresultsize.md
+  - name: PFAccountManagementClientGetPlayerProfileAsync
+    href: pfaccountmanagement/functions/pfaccountmanagementclientgetplayerprofileasync.md
+  - name: PFAccountManagementClientGetPlayerProfileGetResult
+    href: pfaccountmanagement/functions/pfaccountmanagementclientgetplayerprofilegetresult.md
+  - name: PFAccountManagementClientGetPlayerProfileGetResultSize
+    href: pfaccountmanagement/functions/pfaccountmanagementclientgetplayerprofilegetresultsize.md
+  - name: PFAccountManagementClientGetPlayFabIDsFromXboxLiveIDsAsync
+    href: pfaccountmanagement/functions/pfaccountmanagementclientgetplayfabidsfromxboxliveidsasync.md
+  - name: PFAccountManagementClientGetPlayFabIDsFromXboxLiveIDsGetResult
+    href: pfaccountmanagement/functions/pfaccountmanagementclientgetplayfabidsfromxboxliveidsgetresult.md
+  - name: PFAccountManagementClientGetPlayFabIDsFromXboxLiveIDsGetResultSize
+    href: pfaccountmanagement/functions/pfaccountmanagementclientgetplayfabidsfromxboxliveidsgetresultsize.md
+  - name: PFAccountManagementClientReportPlayerAsync
+    href: pfaccountmanagement/functions/pfaccountmanagementclientreportplayerasync.md
+  - name: PFAccountManagementClientReportPlayerGetResult
+    href: pfaccountmanagement/functions/pfaccountmanagementclientreportplayergetresult.md
+  - name: PFAccountManagementClientUpdateAvatarUrlAsync
+    href: pfaccountmanagement/functions/pfaccountmanagementclientupdateavatarurlasync.md
+  - name: PFAuthenticationLoginWithXUserAsync
+    href: pfauthentication/functions/pfauthenticationloginwithxuserasync.md
+  - name: PFAuthenticationLoginWithXUserGetResult
+    href: pfauthentication/functions/pfauthenticationloginwithxusergetresult.md
+  - name: PFAuthenticationLoginWithXUserGetResultSize
+    href: pfauthentication/functions/pfauthenticationloginwithxusergetresultsize.md
+  - name: PFAuthenticationReLoginWithXUserAsync
+    href: pfauthentication/functions/pfauthenticationreloginwithxuserasync.md
+  - name: PFCatalogCreateDraftItemAsync
+    href: pfcatalog/functions/pfcatalogcreatedraftitemasync.md
+  - name: PFCatalogCreateDraftItemGetResult
+    href: pfcatalog/functions/pfcatalogcreatedraftitemgetresult.md
+  - name: PFCatalogCreateDraftItemGetResultSize
+    href: pfcatalog/functions/pfcatalogcreatedraftitemgetresultsize.md
+  - name: PFCatalogCreateUploadUrlsAsync
+    href: pfcatalog/functions/pfcatalogcreateuploadurlsasync.md
+  - name: PFCatalogCreateUploadUrlsGetResult
+    href: pfcatalog/functions/pfcatalogcreateuploadurlsgetresult.md
+  - name: PFCatalogCreateUploadUrlsGetResultSize
+    href: pfcatalog/functions/pfcatalogcreateuploadurlsgetresultsize.md
+  - name: PFCatalogDeleteItemAsync
+    href: pfcatalog/functions/pfcatalogdeleteitemasync.md
+  - name: PFCatalogGetDraftItemAsync
+    href: pfcatalog/functions/pfcataloggetdraftitemasync.md
+  - name: PFCatalogGetDraftItemGetResult
+    href: pfcatalog/functions/pfcataloggetdraftitemgetresult.md
+  - name: PFCatalogGetDraftItemGetResultSize
+    href: pfcatalog/functions/pfcataloggetdraftitemgetresultsize.md
+  - name: PFCatalogGetDraftItemsAsync
+    href: pfcatalog/functions/pfcataloggetdraftitemsasync.md
+  - name: PFCatalogGetDraftItemsGetResult
+    href: pfcatalog/functions/pfcataloggetdraftitemsgetresult.md
+  - name: PFCatalogGetDraftItemsGetResultSize
+    href: pfcatalog/functions/pfcataloggetdraftitemsgetresultsize.md
+  - name: PFCatalogGetEntityDraftItemsAsync
+    href: pfcatalog/functions/pfcataloggetentitydraftitemsasync.md
+  - name: PFCatalogGetEntityDraftItemsGetResult
+    href: pfcatalog/functions/pfcataloggetentitydraftitemsgetresult.md
+  - name: PFCatalogGetEntityDraftItemsGetResultSize
+    href: pfcatalog/functions/pfcataloggetentitydraftitemsgetresultsize.md
+  - name: PFCatalogGetEntityItemReviewAsync
+    href: pfcatalog/functions/pfcataloggetentityitemreviewasync.md
+  - name: PFCatalogGetEntityItemReviewGetResult
+    href: pfcatalog/functions/pfcataloggetentityitemreviewgetresult.md
+  - name: PFCatalogGetEntityItemReviewGetResultSize
+    href: pfcatalog/functions/pfcataloggetentityitemreviewgetresultsize.md
+  - name: PFCatalogGetItemAsync
+    href: pfcatalog/functions/pfcataloggetitemasync.md
+  - name: PFCatalogGetItemContainersAsync
+    href: pfcatalog/functions/pfcataloggetitemcontainersasync.md
+  - name: PFCatalogGetItemContainersGetResult
+    href: pfcatalog/functions/pfcataloggetitemcontainersgetresult.md
+  - name: PFCatalogGetItemContainersGetResultSize
+    href: pfcatalog/functions/pfcataloggetitemcontainersgetresultsize.md
+  - name: PFCatalogGetItemGetResult
+    href: pfcatalog/functions/pfcataloggetitemgetresult.md
+  - name: PFCatalogGetItemGetResultSize
+    href: pfcatalog/functions/pfcataloggetitemgetresultsize.md
+  - name: PFCatalogGetItemPublishStatusAsync
+    href: pfcatalog/functions/pfcataloggetitempublishstatusasync.md
+  - name: PFCatalogGetItemPublishStatusGetResult
+    href: pfcatalog/functions/pfcataloggetitempublishstatusgetresult.md
+  - name: PFCatalogGetItemPublishStatusGetResultSize
+    href: pfcatalog/functions/pfcataloggetitempublishstatusgetresultsize.md
+  - name: PFCatalogGetItemReviewsAsync
+    href: pfcatalog/functions/pfcataloggetitemreviewsasync.md
+  - name: PFCatalogGetItemReviewsGetResult
+    href: pfcatalog/functions/pfcataloggetitemreviewsgetresult.md
+  - name: PFCatalogGetItemReviewsGetResultSize
+    href: pfcatalog/functions/pfcataloggetitemreviewsgetresultsize.md
+  - name: PFCatalogGetItemReviewSummaryAsync
+    href: pfcatalog/functions/pfcataloggetitemreviewsummaryasync.md
+  - name: PFCatalogGetItemReviewSummaryGetResult
+    href: pfcatalog/functions/pfcataloggetitemreviewsummarygetresult.md
+  - name: PFCatalogGetItemReviewSummaryGetResultSize
+    href: pfcatalog/functions/pfcataloggetitemreviewsummarygetresultsize.md
+  - name: PFCatalogGetItemsAsync
+    href: pfcatalog/functions/pfcataloggetitemsasync.md
+  - name: PFCatalogGetItemsGetResult
+    href: pfcatalog/functions/pfcataloggetitemsgetresult.md
+  - name: PFCatalogGetItemsGetResultSize
+    href: pfcatalog/functions/pfcataloggetitemsgetresultsize.md
+  - name: PFCatalogPublishDraftItemAsync
+    href: pfcatalog/functions/pfcatalogpublishdraftitemasync.md
+  - name: PFCatalogReportItemAsync
+    href: pfcatalog/functions/pfcatalogreportitemasync.md
+  - name: PFCatalogReportItemReviewAsync
+    href: pfcatalog/functions/pfcatalogreportitemreviewasync.md
+  - name: PFCatalogReviewItemAsync
+    href: pfcatalog/functions/pfcatalogreviewitemasync.md
+  - name: PFCatalogSearchItemsAsync
+    href: pfcatalog/functions/pfcatalogsearchitemsasync.md
+  - name: PFCatalogSearchItemsGetResult
+    href: pfcatalog/functions/pfcatalogsearchitemsgetresult.md
+  - name: PFCatalogSearchItemsGetResultSize
+    href: pfcatalog/functions/pfcatalogsearchitemsgetresultsize.md
+  - name: PFCatalogSubmitItemReviewVoteAsync
+    href: pfcatalog/functions/pfcatalogsubmititemreviewvoteasync.md
+  - name: PFCatalogUpdateDraftItemAsync
+    href: pfcatalog/functions/pfcatalogupdatedraftitemasync.md
+  - name: PFCatalogUpdateDraftItemGetResult
+    href: pfcatalog/functions/pfcatalogupdatedraftitemgetresult.md
+  - name: PFCatalogUpdateDraftItemGetResultSize
+    href: pfcatalog/functions/pfcatalogupdatedraftitemgetresultsize.md
+  - name: PFCloudScriptExecuteFunctionAsync
+    href: pfcloudscript/functions/pfcloudscriptexecutefunctionasync.md
+  - name: PFCloudScriptExecuteFunctionGetResult
+    href: pfcloudscript/functions/pfcloudscriptexecutefunctiongetresult.md
+  - name: PFCloudScriptExecuteFunctionGetResultSize
+    href: pfcloudscript/functions/pfcloudscriptexecutefunctiongetresultsize.md
+  - name: PFInitialize
+    href: pfcore/functions/pfinitialize.md
+  - name: PFUninitializeAsync
+    href: pfcore/functions/pfuninitializeasync.md
+  - name: PFDataAbortFileUploadsAsync
+    href: pfdata/functions/pfdataabortfileuploadsasync.md
+  - name: PFDataAbortFileUploadsGetResult
+    href: pfdata/functions/pfdataabortfileuploadsgetresult.md
+  - name: PFDataAbortFileUploadsGetResultSize
+    href: pfdata/functions/pfdataabortfileuploadsgetresultsize.md
+  - name: PFDataDeleteFilesAsync
+    href: pfdata/functions/pfdatadeletefilesasync.md
+  - name: PFDataDeleteFilesGetResult
+    href: pfdata/functions/pfdatadeletefilesgetresult.md
+  - name: PFDataDeleteFilesGetResultSize
+    href: pfdata/functions/pfdatadeletefilesgetresultsize.md
+  - name: PFDataFinalizeFileUploadsAsync
+    href: pfdata/functions/pfdatafinalizefileuploadsasync.md
+  - name: PFDataFinalizeFileUploadsGetResult
+    href: pfdata/functions/pfdatafinalizefileuploadsgetresult.md
+  - name: PFDataFinalizeFileUploadsGetResultSize
+    href: pfdata/functions/pfdatafinalizefileuploadsgetresultsize.md
+  - name: PFDataGetFilesAsync
+    href: pfdata/functions/pfdatagetfilesasync.md
+  - name: PFDataGetFilesGetResult
+    href: pfdata/functions/pfdatagetfilesgetresult.md
+  - name: PFDataGetFilesGetResultSize
+    href: pfdata/functions/pfdatagetfilesgetresultsize.md
+  - name: PFDataGetObjectsAsync
+    href: pfdata/functions/pfdatagetobjectsasync.md
+  - name: PFDataGetObjectsGetResult
+    href: pfdata/functions/pfdatagetobjectsgetresult.md
+  - name: PFDataGetObjectsGetResultSize
+    href: pfdata/functions/pfdatagetobjectsgetresultsize.md
+  - name: PFDataInitiateFileUploadsAsync
+    href: pfdata/functions/pfdatainitiatefileuploadsasync.md
+  - name: PFDataInitiateFileUploadsGetResult
+    href: pfdata/functions/pfdatainitiatefileuploadsgetresult.md
+  - name: PFDataInitiateFileUploadsGetResultSize
+    href: pfdata/functions/pfdatainitiatefileuploadsgetresultsize.md
+  - name: PFDataSetObjectsAsync
+    href: pfdata/functions/pfdatasetobjectsasync.md
+  - name: PFDataSetObjectsGetResult
+    href: pfdata/functions/pfdatasetobjectsgetresult.md
+  - name: PFDataSetObjectsGetResultSize
+    href: pfdata/functions/pfdatasetobjectsgetresultsize.md
+  - name: PFEntityCloseHandle
+    href: pfentity/functions/pfentityclosehandle.md
+  - name: PFEntityDuplicateHandle
+    href: pfentity/functions/pfentityduplicatehandle.md
+  - name: PFEntityGetAPIEndpoint
+    href: pfentity/functions/pfentitygetapiendpoint.md
+  - name: PFEntityGetAPIEndpointSize
+    href: pfentity/functions/pfentitygetapiendpointsize.md
+  - name: PFEntityGetEntityKey
+    href: pfentity/functions/pfentitygetentitykey.md
+  - name: PFEntityGetEntityKeySize
+    href: pfentity/functions/pfentitygetentitykeysize.md
+  - name: PFEntityGetEntityTokenAsync
+    href: pfentity/functions/pfentitygetentitytokenasync.md
+  - name: PFEntityGetEntityTokenResult
+    href: pfentity/functions/pfentitygetentitytokenresult.md
+  - name: PFEntityGetEntityTokenResultSize
+    href: pfentity/functions/pfentitygetentitytokenresultsize.md
+  - name: PFEntityIsTitlePlayer
+    href: pfentity/functions/pfentityistitleplayer.md
+  - name: PFEntityRegisterTokenExpiredEventHandler
+    href: pfentity/functions/pfentityregistertokenexpiredeventhandler.md
+  - name: PFEntityRegisterTokenRefreshedEventHandler
+    href: pfentity/functions/pfentityregistertokenrefreshedeventhandler.md
+  - name: PFEntityTokenExpiredEventHandler
+    href: pfentity/functions/pfentitytokenexpiredeventhandler.md
+  - name: PFEntityTokenRefreshedEventHandler
+    href: pfentity/functions/pfentitytokenrefreshedeventhandler.md
+  - name: PFEntityUnregisterTokenExpiredEventHandler
+    href: pfentity/functions/pfentityunregistertokenexpiredeventhandler.md
+  - name: PFEntityUnregisterTokenRefreshedEventHandler
+    href: pfentity/functions/pfentityunregistertokenrefreshedeventhandler.md
+  - name: PFEventsWriteEventsAsync
+    href: pfevents/functions/pfeventswriteeventsasync.md
+  - name: PFEventsWriteEventsGetResult
+    href: pfevents/functions/pfeventswriteeventsgetresult.md
+  - name: PFEventsWriteEventsGetResultSize
+    href: pfevents/functions/pfeventswriteeventsgetresultsize.md
+  - name: PFEventsWriteTelemetryEventsAsync
+    href: pfevents/functions/pfeventswritetelemetryeventsasync.md
+  - name: PFEventsWriteTelemetryEventsGetResult
+    href: pfevents/functions/pfeventswritetelemetryeventsgetresult.md
+  - name: PFEventsWriteTelemetryEventsGetResultSize
+    href: pfevents/functions/pfeventswritetelemetryeventsgetresultsize.md
+  - name: PFExperimentationGetTreatmentAssignmentAsync
+    href: pfexperimentation/functions/pfexperimentationgettreatmentassignmentasync.md
+  - name: PFExperimentationGetTreatmentAssignmentGetResult
+    href: pfexperimentation/functions/pfexperimentationgettreatmentassignmentgetresult.md
+  - name: PFExperimentationGetTreatmentAssignmentGetResultSize
+    href: pfexperimentation/functions/pfexperimentationgettreatmentassignmentgetresultsize.md
+  - name: PFFriendsClientAddFriendAsync
+    href: pffriends/functions/pffriendsclientaddfriendasync.md
+  - name: PFFriendsClientAddFriendGetResult
+    href: pffriends/functions/pffriendsclientaddfriendgetresult.md
+  - name: PFFriendsClientGetFriendsListAsync
+    href: pffriends/functions/pffriendsclientgetfriendslistasync.md
+  - name: PFFriendsClientGetFriendsListGetResult
+    href: pffriends/functions/pffriendsclientgetfriendslistgetresult.md
+  - name: PFFriendsClientGetFriendsListGetResultSize
+    href: pffriends/functions/pffriendsclientgetfriendslistgetresultsize.md
+  - name: PFFriendsClientRemoveFriendAsync
+    href: pffriends/functions/pffriendsclientremovefriendasync.md
+  - name: PFFriendsClientSetFriendTagsAsync
+    href: pffriends/functions/pffriendsclientsetfriendtagsasync.md
+  - name: PFGroupsAcceptGroupApplicationAsync
+    href: pfgroups/functions/pfgroupsacceptgroupapplicationasync.md
+  - name: PFGroupsAcceptGroupInvitationAsync
+    href: pfgroups/functions/pfgroupsacceptgroupinvitationasync.md
+  - name: PFGroupsAddMembersAsync
+    href: pfgroups/functions/pfgroupsaddmembersasync.md
+  - name: PFGroupsApplyToGroupAsync
+    href: pfgroups/functions/pfgroupsapplytogroupasync.md
+  - name: PFGroupsApplyToGroupGetResult
+    href: pfgroups/functions/pfgroupsapplytogroupgetresult.md
+  - name: PFGroupsApplyToGroupGetResultSize
+    href: pfgroups/functions/pfgroupsapplytogroupgetresultsize.md
+  - name: PFGroupsBlockEntityAsync
+    href: pfgroups/functions/pfgroupsblockentityasync.md
+  - name: PFGroupsChangeMemberRoleAsync
+    href: pfgroups/functions/pfgroupschangememberroleasync.md
+  - name: PFGroupsCreateGroupAsync
+    href: pfgroups/functions/pfgroupscreategroupasync.md
+  - name: PFGroupsCreateGroupGetResult
+    href: pfgroups/functions/pfgroupscreategroupgetresult.md
+  - name: PFGroupsCreateGroupGetResultSize
+    href: pfgroups/functions/pfgroupscreategroupgetresultsize.md
+  - name: PFGroupsCreateRoleAsync
+    href: pfgroups/functions/pfgroupscreateroleasync.md
+  - name: PFGroupsCreateRoleGetResult
+    href: pfgroups/functions/pfgroupscreaterolegetresult.md
+  - name: PFGroupsCreateRoleGetResultSize
+    href: pfgroups/functions/pfgroupscreaterolegetresultsize.md
+  - name: PFGroupsDeleteGroupAsync
+    href: pfgroups/functions/pfgroupsdeletegroupasync.md
+  - name: PFGroupsDeleteRoleAsync
+    href: pfgroups/functions/pfgroupsdeleteroleasync.md
+  - name: PFGroupsGetGroupAsync
+    href: pfgroups/functions/pfgroupsgetgroupasync.md
+  - name: PFGroupsGetGroupGetResult
+    href: pfgroups/functions/pfgroupsgetgroupgetresult.md
+  - name: PFGroupsGetGroupGetResultSize
+    href: pfgroups/functions/pfgroupsgetgroupgetresultsize.md
+  - name: PFGroupsInviteToGroupAsync
+    href: pfgroups/functions/pfgroupsinvitetogroupasync.md
+  - name: PFGroupsInviteToGroupGetResult
+    href: pfgroups/functions/pfgroupsinvitetogroupgetresult.md
+  - name: PFGroupsInviteToGroupGetResultSize
+    href: pfgroups/functions/pfgroupsinvitetogroupgetresultsize.md
+  - name: PFGroupsIsMemberAsync
+    href: pfgroups/functions/pfgroupsismemberasync.md
+  - name: PFGroupsIsMemberGetResult
+    href: pfgroups/functions/pfgroupsismembergetresult.md
+  - name: PFGroupsListGroupApplicationsAsync
+    href: pfgroups/functions/pfgroupslistgroupapplicationsasync.md
+  - name: PFGroupsListGroupApplicationsGetResult
+    href: pfgroups/functions/pfgroupslistgroupapplicationsgetresult.md
+  - name: PFGroupsListGroupApplicationsGetResultSize
+    href: pfgroups/functions/pfgroupslistgroupapplicationsgetresultsize.md
+  - name: PFGroupsListGroupBlocksAsync
+    href: pfgroups/functions/pfgroupslistgroupblocksasync.md
+  - name: PFGroupsListGroupBlocksGetResult
+    href: pfgroups/functions/pfgroupslistgroupblocksgetresult.md
+  - name: PFGroupsListGroupBlocksGetResultSize
+    href: pfgroups/functions/pfgroupslistgroupblocksgetresultsize.md
+  - name: PFGroupsListGroupInvitationsAsync
+    href: pfgroups/functions/pfgroupslistgroupinvitationsasync.md
+  - name: PFGroupsListGroupInvitationsGetResult
+    href: pfgroups/functions/pfgroupslistgroupinvitationsgetresult.md
+  - name: PFGroupsListGroupInvitationsGetResultSize
+    href: pfgroups/functions/pfgroupslistgroupinvitationsgetresultsize.md
+  - name: PFGroupsListGroupMembersAsync
+    href: pfgroups/functions/pfgroupslistgroupmembersasync.md
+  - name: PFGroupsListGroupMembersGetResult
+    href: pfgroups/functions/pfgroupslistgroupmembersgetresult.md
+  - name: PFGroupsListGroupMembersGetResultSize
+    href: pfgroups/functions/pfgroupslistgroupmembersgetresultsize.md
+  - name: PFGroupsListMembershipAsync
+    href: pfgroups/functions/pfgroupslistmembershipasync.md
+  - name: PFGroupsListMembershipGetResult
+    href: pfgroups/functions/pfgroupslistmembershipgetresult.md
+  - name: PFGroupsListMembershipGetResultSize
+    href: pfgroups/functions/pfgroupslistmembershipgetresultsize.md
+  - name: PFGroupsListMembershipOpportunitiesAsync
+    href: pfgroups/functions/pfgroupslistmembershipopportunitiesasync.md
+  - name: PFGroupsListMembershipOpportunitiesGetResult
+    href: pfgroups/functions/pfgroupslistmembershipopportunitiesgetresult.md
+  - name: PFGroupsListMembershipOpportunitiesGetResultSize
+    href: pfgroups/functions/pfgroupslistmembershipopportunitiesgetresultsize.md
+  - name: PFGroupsRemoveGroupApplicationAsync
+    href: pfgroups/functions/pfgroupsremovegroupapplicationasync.md
+  - name: PFGroupsRemoveGroupInvitationAsync
+    href: pfgroups/functions/pfgroupsremovegroupinvitationasync.md
+  - name: PFGroupsRemoveMembersAsync
+    href: pfgroups/functions/pfgroupsremovemembersasync.md
+  - name: PFGroupsUnblockEntityAsync
+    href: pfgroups/functions/pfgroupsunblockentityasync.md
+  - name: PFGroupsUpdateGroupAsync
+    href: pfgroups/functions/pfgroupsupdategroupasync.md
+  - name: PFGroupsUpdateGroupGetResult
+    href: pfgroups/functions/pfgroupsupdategroupgetresult.md
+  - name: PFGroupsUpdateGroupGetResultSize
+    href: pfgroups/functions/pfgroupsupdategroupgetresultsize.md
+  - name: PFGroupsUpdateRoleAsync
+    href: pfgroups/functions/pfgroupsupdateroleasync.md
+  - name: PFGroupsUpdateRoleGetResult
+    href: pfgroups/functions/pfgroupsupdaterolegetresult.md
+  - name: PFGroupsUpdateRoleGetResultSize
+    href: pfgroups/functions/pfgroupsupdaterolegetresultsize.md
+  - name: PFHCSettingsGetTraceLevel
+    href: pfhctrace/functions/pfhcsettingsgettracelevel.md
+  - name: PFHCSettingsSetTraceLevel
+    href: pfhctrace/functions/pfhcsettingssettracelevel.md
+  - name: PFHCTraceImplGetAreaVerbosity
+    href: pfhctrace/functions/pfhctraceimplgetareaverbosity.md
+  - name: PFHCTraceImplMessage
+    href: pfhctrace/functions/pfhctraceimplmessage.md
+  - name: PFHCTraceImplSetAreaVerbosity
+    href: pfhctrace/functions/pfhctraceimplsetareaverbosity.md
+  - name: PFHCTraceSetClientCallback
+    href: pfhctrace/functions/pfhctracesetclientcallback.md
+  - name: PFHCTraceSetPlatformCallbacks
+    href: pfhctrace/functions/pfhctracesetplatformcallbacks.md
+  - name: PFHCTraceSetTraceToDebugger
+    href: pfhctrace/functions/pfhctracesettracetodebugger.md
+  - name: PFHCGetLibVersion
+    href: pfhttpclient/functions/pfhcgetlibversion.md
+  - name: PFHCGetWebSocketConnectResult
+    href: pfhttpclient/functions/pfhcgetwebsocketconnectresult.md
+  - name: PFHCGetWebSocketSendMessageResult
+    href: pfhttpclient/functions/pfhcgetwebsocketsendmessageresult.md
+  - name: PFHCHttpCallCloseHandle
+    href: pfhttpclient/functions/pfhchttpcallclosehandle.md
+  - name: PFHCHttpCallCreate
+    href: pfhttpclient/functions/pfhchttpcallcreate.md
+  - name: PFHCHttpCallGetRequestUrl
+    href: pfhttpclient/functions/pfhchttpcallgetrequesturl.md
+  - name: PFHCHttpCallPerformAsync
+    href: pfhttpclient/functions/pfhchttpcallperformasync.md
+  - name: PFHCHttpCallRequestSetHeader
+    href: pfhttpclient/functions/pfhchttpcallrequestsetheader.md
+  - name: PFHCHttpCallRequestSetRequestBodyBytes
+    href: pfhttpclient/functions/pfhchttpcallrequestsetrequestbodybytes.md
+  - name: PFHCHttpCallRequestSetRequestBodyReadFunction
+    href: pfhttpclient/functions/pfhchttpcallrequestsetrequestbodyreadfunction.md
+  - name: PFHCHttpCallRequestSetRequestBodyString
+    href: pfhttpclient/functions/pfhchttpcallrequestsetrequestbodystring.md
+  - name: PFHCHttpCallRequestSetRetryAllowed
+    href: pfhttpclient/functions/pfhchttpcallrequestsetretryallowed.md
+  - name: PFHCHttpCallRequestSetRetryCacheId
+    href: pfhttpclient/functions/pfhchttpcallrequestsetretrycacheid.md
+  - name: PFHCHttpCallRequestSetRetryDelay
+    href: pfhttpclient/functions/pfhchttpcallrequestsetretrydelay.md
+  - name: PFHCHttpCallRequestSetSSLValidation
+    href: pfhttpclient/functions/pfhchttpcallrequestsetsslvalidation.md
+  - name: PFHCHttpCallRequestSetTimeout
+    href: pfhttpclient/functions/pfhchttpcallrequestsettimeout.md
+  - name: PFHCHttpCallRequestSetTimeoutWindow
+    href: pfhttpclient/functions/pfhchttpcallrequestsettimeoutwindow.md
+  - name: PFHCHttpCallRequestSetUrl
+    href: pfhttpclient/functions/pfhchttpcallrequestseturl.md
+  - name: PFHCHttpCallResponseGetHeader
+    href: pfhttpclient/functions/pfhchttpcallresponsegetheader.md
+  - name: PFHCHttpCallResponseGetHeaderAtIndex
+    href: pfhttpclient/functions/pfhchttpcallresponsegetheaderatindex.md
+  - name: PFHCHttpCallResponseGetNetworkErrorCode
+    href: pfhttpclient/functions/pfhchttpcallresponsegetnetworkerrorcode.md
+  - name: PFHCHttpCallResponseGetNumHeaders
+    href: pfhttpclient/functions/pfhchttpcallresponsegetnumheaders.md
+  - name: PFHCHttpCallResponseGetPlatformNetworkErrorMessage
+    href: pfhttpclient/functions/pfhchttpcallresponsegetplatformnetworkerrormessage.md
+  - name: PFHCHttpCallResponseGetResponseBodyBytes
+    href: pfhttpclient/functions/pfhchttpcallresponsegetresponsebodybytes.md
+  - name: PFHCHttpCallResponseGetResponseBodyBytesSize
+    href: pfhttpclient/functions/pfhchttpcallresponsegetresponsebodybytessize.md
+  - name: PFHCHttpCallResponseGetResponseString
+    href: pfhttpclient/functions/pfhchttpcallresponsegetresponsestring.md
+  - name: PFHCHttpCallResponseGetStatusCode
+    href: pfhttpclient/functions/pfhchttpcallresponsegetstatuscode.md
+  - name: PFHCHttpCallResponseSetResponseBodyWriteFunction
+    href: pfhttpclient/functions/pfhchttpcallresponsesetresponsebodywritefunction.md
+  - name: PFHCHttpCallSetTracing
+    href: pfhttpclient/functions/pfhchttpcallsettracing.md
+  - name: PFHCHttpDisableAssertsForSSLValidationInDevSandboxes
+    href: pfhttpclient/functions/pfhchttpdisableassertsforsslvalidationindevsandboxes.md
+  - name: PFHCMemGetFunctions
+    href: pfhttpclient/functions/pfhcmemgetfunctions.md
+  - name: PFHCMemSetFunctions
+    href: pfhttpclient/functions/pfhcmemsetfunctions.md
+  - name: PFHCRemoveCallRoutedHandler
+    href: pfhttpclient/functions/pfhcremovecallroutedhandler.md
+  - name: PFHCRemoveWebSocketRoutedHandler
+    href: pfhttpclient/functions/pfhcremovewebsocketroutedhandler.md
+  - name: PFHCSetGlobalProxy
+    href: pfhttpclient/functions/pfhcsetglobalproxy.md
+  - name: PFHCWebSocketCloseHandle
+    href: pfhttpclient/functions/pfhcwebsocketclosehandle.md
+  - name: PFHCWebSocketConnectAsync
+    href: pfhttpclient/functions/pfhcwebsocketconnectasync.md
+  - name: PFHCWebSocketCreate
+    href: pfhttpclient/functions/pfhcwebsocketcreate.md
+  - name: PFHCWebSocketDisconnect
+    href: pfhttpclient/functions/pfhcwebsocketdisconnect.md
+  - name: PFHCWebSocketGetBinaryMessageFragmentEventFunction
+    href: pfhttpclient/functions/pfhcwebsocketgetbinarymessagefragmenteventfunction.md
+  - name: PFHCWebSocketGetEventFunctions
+    href: pfhttpclient/functions/pfhcwebsocketgeteventfunctions.md
+  - name: PFHCWebSocketSendBinaryMessageAsync
+    href: pfhttpclient/functions/pfhcwebsocketsendbinarymessageasync.md
+  - name: PFHCWebSocketSendMessageAsync
+    href: pfhttpclient/functions/pfhcwebsocketsendmessageasync.md
+  - name: PFHCWebSocketSetBinaryMessageFragmentEventFunction
+    href: pfhttpclient/functions/pfhcwebsocketsetbinarymessagefragmenteventfunction.md
+  - name: PFHCWebSocketSetHeader
+    href: pfhttpclient/functions/pfhcwebsocketsetheader.md
+  - name: PFHCWebSocketSetMaxReceiveBufferSize
+    href: pfhttpclient/functions/pfhcwebsocketsetmaxreceivebuffersize.md
+  - name: PFHCWebSocketSetProxyDecryptsHttps
+    href: pfhttpclient/functions/pfhcwebsocketsetproxydecryptshttps.md
+  - name: PFHCWebSocketSetProxyUri
+    href: pfhttpclient/functions/pfhcwebsocketsetproxyuri.md
+  - name: PFInventoryAddInventoryItemsAsync
+    href: pfinventory/functions/pfinventoryaddinventoryitemsasync.md
+  - name: PFInventoryAddInventoryItemsGetResult
+    href: pfinventory/functions/pfinventoryaddinventoryitemsgetresult.md
+  - name: PFInventoryAddInventoryItemsGetResultSize
+    href: pfinventory/functions/pfinventoryaddinventoryitemsgetresultsize.md
+  - name: PFInventoryDeleteInventoryCollectionAsync
+    href: pfinventory/functions/pfinventorydeleteinventorycollectionasync.md
+  - name: PFInventoryDeleteInventoryItemsAsync
+    href: pfinventory/functions/pfinventorydeleteinventoryitemsasync.md
+  - name: PFInventoryDeleteInventoryItemsGetResult
+    href: pfinventory/functions/pfinventorydeleteinventoryitemsgetresult.md
+  - name: PFInventoryDeleteInventoryItemsGetResultSize
+    href: pfinventory/functions/pfinventorydeleteinventoryitemsgetresultsize.md
+  - name: PFInventoryExecuteInventoryOperationsAsync
+    href: pfinventory/functions/pfinventoryexecuteinventoryoperationsasync.md
+  - name: PFInventoryExecuteInventoryOperationsGetResult
+    href: pfinventory/functions/pfinventoryexecuteinventoryoperationsgetresult.md
+  - name: PFInventoryExecuteInventoryOperationsGetResultSize
+    href: pfinventory/functions/pfinventoryexecuteinventoryoperationsgetresultsize.md
+  - name: PFInventoryGetInventoryCollectionIdsAsync
+    href: pfinventory/functions/pfinventorygetinventorycollectionidsasync.md
+  - name: PFInventoryGetInventoryCollectionIdsGetResult
+    href: pfinventory/functions/pfinventorygetinventorycollectionidsgetresult.md
+  - name: PFInventoryGetInventoryCollectionIdsGetResultSize
+    href: pfinventory/functions/pfinventorygetinventorycollectionidsgetresultsize.md
+  - name: PFInventoryGetInventoryItemsAsync
+    href: pfinventory/functions/pfinventorygetinventoryitemsasync.md
+  - name: PFInventoryGetInventoryItemsGetResult
+    href: pfinventory/functions/pfinventorygetinventoryitemsgetresult.md
+  - name: PFInventoryGetInventoryItemsGetResultSize
+    href: pfinventory/functions/pfinventorygetinventoryitemsgetresultsize.md
+  - name: PFInventoryGetMicrosoftStoreAccessTokensAsync
+    href: pfinventory/functions/pfinventorygetmicrosoftstoreaccesstokensasync.md
+  - name: PFInventoryGetMicrosoftStoreAccessTokensGetResult
+    href: pfinventory/functions/pfinventorygetmicrosoftstoreaccesstokensgetresult.md
+  - name: PFInventoryGetMicrosoftStoreAccessTokensGetResultSize
+    href: pfinventory/functions/pfinventorygetmicrosoftstoreaccesstokensgetresultsize.md
+  - name: PFInventoryPurchaseInventoryItemsAsync
+    href: pfinventory/functions/pfinventorypurchaseinventoryitemsasync.md
+  - name: PFInventoryPurchaseInventoryItemsGetResult
+    href: pfinventory/functions/pfinventorypurchaseinventoryitemsgetresult.md
+  - name: PFInventoryPurchaseInventoryItemsGetResultSize
+    href: pfinventory/functions/pfinventorypurchaseinventoryitemsgetresultsize.md
+  - name: PFInventoryRedeemMicrosoftStoreInventoryItemsAsync
+    href: pfinventory/functions/pfinventoryredeemmicrosoftstoreinventoryitemsasync.md
+  - name: PFInventoryRedeemMicrosoftStoreInventoryItemsGetResult
+    href: pfinventory/functions/pfinventoryredeemmicrosoftstoreinventoryitemsgetresult.md
+  - name: PFInventoryRedeemMicrosoftStoreInventoryItemsGetResultSize
+    href: pfinventory/functions/pfinventoryredeemmicrosoftstoreinventoryitemsgetresultsize.md
+  - name: PFInventorySubtractInventoryItemsAsync
+    href: pfinventory/functions/pfinventorysubtractinventoryitemsasync.md
+  - name: PFInventorySubtractInventoryItemsGetResult
+    href: pfinventory/functions/pfinventorysubtractinventoryitemsgetresult.md
+  - name: PFInventorySubtractInventoryItemsGetResultSize
+    href: pfinventory/functions/pfinventorysubtractinventoryitemsgetresultsize.md
+  - name: PFInventoryTransferInventoryItemsAsync
+    href: pfinventory/functions/pfinventorytransferinventoryitemsasync.md
+  - name: PFInventoryTransferInventoryItemsGetResult
+    href: pfinventory/functions/pfinventorytransferinventoryitemsgetresult.md
+  - name: PFInventoryTransferInventoryItemsGetResultSize
+    href: pfinventory/functions/pfinventorytransferinventoryitemsgetresultsize.md
+  - name: PFInventoryUpdateInventoryItemsAsync
+    href: pfinventory/functions/pfinventoryupdateinventoryitemsasync.md
+  - name: PFInventoryUpdateInventoryItemsGetResult
+    href: pfinventory/functions/pfinventoryupdateinventoryitemsgetresult.md
+  - name: PFInventoryUpdateInventoryItemsGetResultSize
+    href: pfinventory/functions/pfinventoryupdateinventoryitemsgetresultsize.md
+  - name: PFMultiplayerServerListBuildAliasesAsync
+    href: pfmultiplayerserver/functions/pfmultiplayerserverlistbuildaliasesasync.md
+  - name: PFMultiplayerServerListBuildAliasesGetResult
+    href: pfmultiplayerserver/functions/pfmultiplayerserverlistbuildaliasesgetresult.md
+  - name: PFMultiplayerServerListBuildAliasesGetResultSize
+    href: pfmultiplayerserver/functions/pfmultiplayerserverlistbuildaliasesgetresultsize.md
+  - name: PFMultiplayerServerListBuildSummariesV2Async
+    href: pfmultiplayerserver/functions/pfmultiplayerserverlistbuildsummariesv2async.md
+  - name: PFMultiplayerServerListBuildSummariesV2GetResult
+    href: pfmultiplayerserver/functions/pfmultiplayerserverlistbuildsummariesv2getresult.md
+  - name: PFMultiplayerServerListBuildSummariesV2GetResultSize
+    href: pfmultiplayerserver/functions/pfmultiplayerserverlistbuildsummariesv2getresultsize.md
+  - name: PFMultiplayerServerListQosServersForTitleAsync
+    href: pfmultiplayerserver/functions/pfmultiplayerserverlistqosserversfortitleasync.md
+  - name: PFMultiplayerServerListQosServersForTitleGetResult
+    href: pfmultiplayerserver/functions/pfmultiplayerserverlistqosserversfortitlegetresult.md
+  - name: PFMultiplayerServerListQosServersForTitleGetResultSize
+    href: pfmultiplayerserver/functions/pfmultiplayerserverlistqosserversfortitlegetresultsize.md
+  - name: PFMultiplayerServerRequestMultiplayerServerAsync
+    href: pfmultiplayerserver/functions/pfmultiplayerserverrequestmultiplayerserverasync.md
+  - name: PFMultiplayerServerRequestMultiplayerServerGetResult
+    href: pfmultiplayerserver/functions/pfmultiplayerserverrequestmultiplayerservergetresult.md
+  - name: PFMultiplayerServerRequestMultiplayerServerGetResultSize
+    href: pfmultiplayerserver/functions/pfmultiplayerserverrequestmultiplayerservergetresultsize.md
+  - name: PFMemGetFunctions
+    href: pfplatform/functions/pfmemgetfunctions.md
+  - name: PFMemSetFunctions
+    href: pfplatform/functions/pfmemsetfunctions.md
+  - name: PFPlatformLocalStorageSetHandlers
+    href: pfplatform/functions/pfplatformlocalstoragesethandlers.md
+  - name: PFPlayerDataManagementClientGetUserDataAsync
+    href: pfplayerdatamanagement/functions/pfplayerdatamanagementclientgetuserdataasync.md
+  - name: PFPlayerDataManagementClientGetUserDataGetResult
+    href: pfplayerdatamanagement/functions/pfplayerdatamanagementclientgetuserdatagetresult.md
+  - name: PFPlayerDataManagementClientGetUserDataGetResultSize
+    href: pfplayerdatamanagement/functions/pfplayerdatamanagementclientgetuserdatagetresultsize.md
+  - name: PFPlayerDataManagementClientGetUserPublisherDataAsync
+    href: pfplayerdatamanagement/functions/pfplayerdatamanagementclientgetuserpublisherdataasync.md
+  - name: PFPlayerDataManagementClientGetUserPublisherDataGetResult
+    href: pfplayerdatamanagement/functions/pfplayerdatamanagementclientgetuserpublisherdatagetresult.md
+  - name: PFPlayerDataManagementClientGetUserPublisherDataGetResultSize
+    href: pfplayerdatamanagement/functions/pfplayerdatamanagementclientgetuserpublisherdatagetresultsize.md
+  - name: PFPlayerDataManagementClientGetUserPublisherReadOnlyDataAsync
+    href: pfplayerdatamanagement/functions/pfplayerdatamanagementclientgetuserpublisherreadonlydataasync.md
+  - name: PFPlayerDataManagementClientGetUserPublisherReadOnlyDataGetResult
+    href: pfplayerdatamanagement/functions/pfplayerdatamanagementclientgetuserpublisherreadonlydatagetresult.md
+  - name: PFPlayerDataManagementClientGetUserPublisherReadOnlyDataGetResultSize
+    href: pfplayerdatamanagement/functions/pfplayerdatamanagementclientgetuserpublisherreadonlydatagetresultsize.md
+  - name: PFPlayerDataManagementClientGetUserReadOnlyDataAsync
+    href: pfplayerdatamanagement/functions/pfplayerdatamanagementclientgetuserreadonlydataasync.md
+  - name: PFPlayerDataManagementClientGetUserReadOnlyDataGetResult
+    href: pfplayerdatamanagement/functions/pfplayerdatamanagementclientgetuserreadonlydatagetresult.md
+  - name: PFPlayerDataManagementClientGetUserReadOnlyDataGetResultSize
+    href: pfplayerdatamanagement/functions/pfplayerdatamanagementclientgetuserreadonlydatagetresultsize.md
+  - name: PFPlayerDataManagementClientUpdateUserDataAsync
+    href: pfplayerdatamanagement/functions/pfplayerdatamanagementclientupdateuserdataasync.md
+  - name: PFPlayerDataManagementClientUpdateUserDataGetResult
+    href: pfplayerdatamanagement/functions/pfplayerdatamanagementclientupdateuserdatagetresult.md
+  - name: PFPlayerDataManagementClientUpdateUserPublisherDataAsync
+    href: pfplayerdatamanagement/functions/pfplayerdatamanagementclientupdateuserpublisherdataasync.md
+  - name: PFPlayerDataManagementClientUpdateUserPublisherDataGetResult
+    href: pfplayerdatamanagement/functions/pfplayerdatamanagementclientupdateuserpublisherdatagetresult.md
+  - name: PFProfilesGetProfileAsync
+    href: pfprofiles/functions/pfprofilesgetprofileasync.md
+  - name: PFProfilesGetProfileGetResult
+    href: pfprofiles/functions/pfprofilesgetprofilegetresult.md
+  - name: PFProfilesGetProfileGetResultSize
+    href: pfprofiles/functions/pfprofilesgetprofilegetresultsize.md
+  - name: PFProfilesGetProfilesAsync
+    href: pfprofiles/functions/pfprofilesgetprofilesasync.md
+  - name: PFProfilesGetProfilesGetResult
+    href: pfprofiles/functions/pfprofilesgetprofilesgetresult.md
+  - name: PFProfilesGetProfilesGetResultSize
+    href: pfprofiles/functions/pfprofilesgetprofilesgetresultsize.md
+  - name: PFProfilesGetTitlePlayersFromMasterPlayerAccountIdsAsync
+    href: pfprofiles/functions/pfprofilesgettitleplayersfrommasterplayeraccountidsasync.md
+  - name: PFProfilesGetTitlePlayersFromMasterPlayerAccountIdsGetResult
+    href: pfprofiles/functions/pfprofilesgettitleplayersfrommasterplayeraccountidsgetresult.md
+  - name: PFProfilesGetTitlePlayersFromMasterPlayerAccountIdsGetResultSize
+    href: pfprofiles/functions/pfprofilesgettitleplayersfrommasterplayeraccountidsgetresultsize.md
+  - name: PFProfilesSetProfileLanguageAsync
+    href: pfprofiles/functions/pfprofilessetprofilelanguageasync.md
+  - name: PFProfilesSetProfileLanguageGetResult
+    href: pfprofiles/functions/pfprofilessetprofilelanguagegetresult.md
+  - name: PFProfilesSetProfileLanguageGetResultSize
+    href: pfprofiles/functions/pfprofilessetprofilelanguagegetresultsize.md
+  - name: PFProfilesSetProfilePolicyAsync
+    href: pfprofiles/functions/pfprofilessetprofilepolicyasync.md
+  - name: PFProfilesSetProfilePolicyGetResult
+    href: pfprofiles/functions/pfprofilessetprofilepolicygetresult.md
+  - name: PFProfilesSetProfilePolicyGetResultSize
+    href: pfprofiles/functions/pfprofilessetprofilepolicygetresultsize.md
+  - name: PFSegmentsClientGetPlayerSegmentsAsync
+    href: pfsegments/functions/pfsegmentsclientgetplayersegmentsasync.md
+  - name: PFSegmentsClientGetPlayerSegmentsGetResult
+    href: pfsegments/functions/pfsegmentsclientgetplayersegmentsgetresult.md
+  - name: PFSegmentsClientGetPlayerSegmentsGetResultSize
+    href: pfsegments/functions/pfsegmentsclientgetplayersegmentsgetresultsize.md
+  - name: PFSegmentsClientGetPlayerTagsAsync
+    href: pfsegments/functions/pfsegmentsclientgetplayertagsasync.md
+  - name: PFSegmentsClientGetPlayerTagsGetResult
+    href: pfsegments/functions/pfsegmentsclientgetplayertagsgetresult.md
+  - name: PFSegmentsClientGetPlayerTagsGetResultSize
+    href: pfsegments/functions/pfsegmentsclientgetplayertagsgetresultsize.md
+  - name: PFServiceConfigCloseHandle
+    href: pfserviceconfig/functions/pfserviceconfigclosehandle.md
+  - name: PFServiceConfigCreateHandle
+    href: pfserviceconfig/functions/pfserviceconfigcreatehandle.md
+  - name: PFServiceConfigDuplicateHandle
+    href: pfserviceconfig/functions/pfserviceconfigduplicatehandle.md
+  - name: PFServiceConfigGetAPIEndpoint
+    href: pfserviceconfig/functions/pfserviceconfiggetapiendpoint.md
+  - name: PFServiceConfigGetAPIEndpointSize
+    href: pfserviceconfig/functions/pfserviceconfiggetapiendpointsize.md
+  - name: PFServiceConfigGetSecretKey
+    href: pfserviceconfig/functions/pfserviceconfiggetsecretkey.md
+  - name: PFServiceConfigGetSecretKeySize
+    href: pfserviceconfig/functions/pfserviceconfiggetsecretkeysize.md
+  - name: PFServiceConfigGetTitleId
+    href: pfserviceconfig/functions/pfserviceconfiggettitleid.md
+  - name: PFServiceConfigGetTitleIdSize
+    href: pfserviceconfig/functions/pfserviceconfiggettitleidsize.md
+  - name: PFServicesInitialize
+    href: pfservices/functions/pfservicesinitialize.md
+  - name: PFServicesUninitializeAsync
+    href: pfservices/functions/pfservicesuninitializeasync.md
+  - name: PFTitleDataManagementClientGetPublisherDataAsync
+    href: pftitledatamanagement/functions/pftitledatamanagementclientgetpublisherdataasync.md
+  - name: PFTitleDataManagementClientGetPublisherDataGetResult
+    href: pftitledatamanagement/functions/pftitledatamanagementclientgetpublisherdatagetresult.md
+  - name: PFTitleDataManagementClientGetPublisherDataGetResultSize
+    href: pftitledatamanagement/functions/pftitledatamanagementclientgetpublisherdatagetresultsize.md
+  - name: PFTitleDataManagementClientGetTimeAsync
+    href: pftitledatamanagement/functions/pftitledatamanagementclientgettimeasync.md
+  - name: PFTitleDataManagementClientGetTimeGetResult
+    href: pftitledatamanagement/functions/pftitledatamanagementclientgettimegetresult.md
+  - name: PFTitleDataManagementClientGetTitleDataAsync
+    href: pftitledatamanagement/functions/pftitledatamanagementclientgettitledataasync.md
+  - name: PFTitleDataManagementClientGetTitleDataGetResult
+    href: pftitledatamanagement/functions/pftitledatamanagementclientgettitledatagetresult.md
+  - name: PFTitleDataManagementClientGetTitleDataGetResultSize
+    href: pftitledatamanagement/functions/pftitledatamanagementclientgettitledatagetresultsize.md
+  - name: PFTitleDataManagementClientGetTitleNewsAsync
+    href: pftitledatamanagement/functions/pftitledatamanagementclientgettitlenewsasync.md
+  - name: PFTitleDataManagementClientGetTitleNewsGetResult
+    href: pftitledatamanagement/functions/pftitledatamanagementclientgettitlenewsgetresult.md
+  - name: PFTitleDataManagementClientGetTitleNewsGetResultSize
+    href: pftitledatamanagement/functions/pftitledatamanagementclientgettitlenewsgetresultsize.md
+  - name: PFTraceEnableTraceToFile
+    href: pftrace/functions/pftraceenabletracetofile.md
+- name: Enumerations
+  items:
+  - name: PFAuthenticationIdentifiedDeviceType
+    href: pfauthenticationtypes/enums/pfauthenticationidentifieddevicetype.md
+  - name: PFCatalogConcernCategory
+    href: pfcatalogtypes/enums/pfcatalogconcerncategory.md
+  - name: PFCatalogDisplayPropertyType
+    href: pfcatalogtypes/enums/pfcatalogdisplaypropertytype.md
+  - name: PFCatalogHelpfulnessVote
+    href: pfcatalogtypes/enums/pfcataloghelpfulnessvote.md
+  - name: PFCatalogModerationStatus
+    href: pfcatalogtypes/enums/pfcatalogmoderationstatus.md
+  - name: PFCatalogPublishResult
+    href: pfcatalogtypes/enums/pfcatalogpublishresult.md
+  - name: PFFriendsExternalFriendSources
+    href: pffriendstypes/enums/pffriendsexternalfriendsources.md
+  - name: PFHCTraceLevel
+    href: pfhctrace/enums/pfhctracelevel.md
+  - name: PFHCConfigSetting
+    href: pfhttpclient/enums/pfhcconfigsetting.md
+  - name: PFMultiplayerServerAzureVmSize
+    href: pfmultiplayerservertypes/enums/pfmultiplayerserverazurevmsize.md
+  - name: PFMultiplayerServerProtocolType
+    href: pfmultiplayerservertypes/enums/pfmultiplayerserverprotocoltype.md
+  - name: PFProfilesEffectType
+    href: pfprofilestypes/enums/pfprofileseffecttype.md
+  - name: PFSegmentsChurnRiskLevel
+    href: pfsegmentstypes/enums/pfsegmentschurnrisklevel.md
+  - name: PFContinentCode
+    href: pftypes/enums/pfcontinentcode.md
+  - name: PFCountryCode
+    href: pftypes/enums/pfcountrycode.md
+  - name: PFCurrency
+    href: pftypes/enums/pfcurrency.md
+  - name: PFEmailVerificationStatus
+    href: pftypes/enums/pfemailverificationstatus.md
+  - name: PFLoginIdentityProvider
+    href: pftypes/enums/pfloginidentityprovider.md
+  - name: PFOperationTypes
+    href: pftypes/enums/pfoperationtypes.md
+  - name: PFPushNotificationPlatform
+    href: pftypes/enums/pfpushnotificationplatform.md
+  - name: PFSubscriptionProviderStatus
+    href: pftypes/enums/pfsubscriptionproviderstatus.md
+  - name: PFTitleActivationStatus
+    href: pftypes/enums/pftitleactivationstatus.md
+  - name: PFUserDataPermission
+    href: pftypes/enums/pfuserdatapermission.md
+  - name: PFUserOrigination
+    href: pftypes/enums/pfuserorigination.md
+- name: Structures
+  items:
+  - name: PFAccountManagementClientUpdateAvatarUrlRequest
+    href: pfaccountmanagementtypes/structs/pfaccountmanagementclientupdateavatarurlrequest.md
+  - name: PFAccountManagementGetAccountInfoRequest
+    href: pfaccountmanagementtypes/structs/pfaccountmanagementgetaccountinforequest.md
+  - name: PFAccountManagementGetAccountInfoResult
+    href: pfaccountmanagementtypes/structs/pfaccountmanagementgetaccountinforesult.md
+  - name: PFAccountManagementGetPlayerCombinedInfoRequest
+    href: pfaccountmanagementtypes/structs/pfaccountmanagementgetplayercombinedinforequest.md
+  - name: PFAccountManagementGetPlayerCombinedInfoResult
+    href: pfaccountmanagementtypes/structs/pfaccountmanagementgetplayercombinedinforesult.md
+  - name: PFAccountManagementGetPlayerProfileRequest
+    href: pfaccountmanagementtypes/structs/pfaccountmanagementgetplayerprofilerequest.md
+  - name: PFAccountManagementGetPlayerProfileResult
+    href: pfaccountmanagementtypes/structs/pfaccountmanagementgetplayerprofileresult.md
+  - name: PFAccountManagementGetPlayFabIDsFromXboxLiveIDsRequest
+    href: pfaccountmanagementtypes/structs/pfaccountmanagementgetplayfabidsfromxboxliveidsrequest.md
+  - name: PFAccountManagementGetPlayFabIDsFromXboxLiveIDsResult
+    href: pfaccountmanagementtypes/structs/pfaccountmanagementgetplayfabidsfromxboxliveidsresult.md
+  - name: PFAccountManagementReportPlayerClientRequest
+    href: pfaccountmanagementtypes/structs/pfaccountmanagementreportplayerclientrequest.md
+  - name: PFAccountManagementReportPlayerClientResult
+    href: pfaccountmanagementtypes/structs/pfaccountmanagementreportplayerclientresult.md
+  - name: PFAccountManagementXboxLiveAccountPlayFabIdPair
+    href: pfaccountmanagementtypes/structs/pfaccountmanagementxboxliveaccountplayfabidpair.md
+  - name: PFAuthenticationLoginResult
+    href: pfauthenticationtypes/structs/pfauthenticationloginresult.md
+  - name: PFAuthenticationLoginWithXUserRequest
+    href: pfauthenticationtypes/structs/pfauthenticationloginwithxuserrequest.md
+  - name: PFAuthenticationUserSettings
+    href: pfauthenticationtypes/structs/pfauthenticationusersettings.md
+  - name: PFCatalogCatalogAlternateId
+    href: pfcatalogtypes/structs/pfcatalogcatalogalternateid.md
+  - name: PFCatalogCatalogItem
+    href: pfcatalogtypes/structs/pfcatalogcatalogitem.md
+  - name: PFCatalogCatalogItemReference
+    href: pfcatalogtypes/structs/pfcatalogcatalogitemreference.md
+  - name: PFCatalogCatalogPrice
+    href: pfcatalogtypes/structs/pfcatalogcatalogprice.md
+  - name: PFCatalogCatalogPriceAmount
+    href: pfcatalogtypes/structs/pfcatalogcatalogpriceamount.md
+  - name: PFCatalogCatalogPriceAmountOverride
+    href: pfcatalogtypes/structs/pfcatalogcatalogpriceamountoverride.md
+  - name: PFCatalogCatalogPriceOptions
+    href: pfcatalogtypes/structs/pfcatalogcatalogpriceoptions.md
+  - name: PFCatalogCatalogPriceOptionsOverride
+    href: pfcatalogtypes/structs/pfcatalogcatalogpriceoptionsoverride.md
+  - name: PFCatalogCatalogPriceOverride
+    href: pfcatalogtypes/structs/pfcatalogcatalogpriceoverride.md
+  - name: PFCatalogCatalogSpecificConfig
+    href: pfcatalogtypes/structs/pfcatalogcatalogspecificconfig.md
+  - name: PFCatalogContent
+    href: pfcatalogtypes/structs/pfcatalogcontent.md
+  - name: PFCatalogCreateDraftItemRequest
+    href: pfcatalogtypes/structs/pfcatalogcreatedraftitemrequest.md
+  - name: PFCatalogCreateDraftItemResponse
+    href: pfcatalogtypes/structs/pfcatalogcreatedraftitemresponse.md
+  - name: PFCatalogCreateUploadUrlsRequest
+    href: pfcatalogtypes/structs/pfcatalogcreateuploadurlsrequest.md
+  - name: PFCatalogCreateUploadUrlsResponse
+    href: pfcatalogtypes/structs/pfcatalogcreateuploadurlsresponse.md
+  - name: PFCatalogDeepLink
+    href: pfcatalogtypes/structs/pfcatalogdeeplink.md
+  - name: PFCatalogDeepLinkFormat
+    href: pfcatalogtypes/structs/pfcatalogdeeplinkformat.md
+  - name: PFCatalogDeleteItemRequest
+    href: pfcatalogtypes/structs/pfcatalogdeleteitemrequest.md
+  - name: PFCatalogDisplayPropertyIndexInfo
+    href: pfcatalogtypes/structs/pfcatalogdisplaypropertyindexinfo.md
+  - name: PFCatalogFileConfig
+    href: pfcatalogtypes/structs/pfcatalogfileconfig.md
+  - name: PFCatalogFilterOptions
+    href: pfcatalogtypes/structs/pfcatalogfilteroptions.md
+  - name: PFCatalogGetDraftItemRequest
+    href: pfcatalogtypes/structs/pfcataloggetdraftitemrequest.md
+  - name: PFCatalogGetDraftItemResponse
+    href: pfcatalogtypes/structs/pfcataloggetdraftitemresponse.md
+  - name: PFCatalogGetDraftItemsRequest
+    href: pfcatalogtypes/structs/pfcataloggetdraftitemsrequest.md
+  - name: PFCatalogGetDraftItemsResponse
+    href: pfcatalogtypes/structs/pfcataloggetdraftitemsresponse.md
+  - name: PFCatalogGetEntityDraftItemsRequest
+    href: pfcatalogtypes/structs/pfcataloggetentitydraftitemsrequest.md
+  - name: PFCatalogGetEntityDraftItemsResponse
+    href: pfcatalogtypes/structs/pfcataloggetentitydraftitemsresponse.md
+  - name: PFCatalogGetEntityItemReviewRequest
+    href: pfcatalogtypes/structs/pfcataloggetentityitemreviewrequest.md
+  - name: PFCatalogGetEntityItemReviewResponse
+    href: pfcatalogtypes/structs/pfcataloggetentityitemreviewresponse.md
+  - name: PFCatalogGetItemContainersRequest
+    href: pfcatalogtypes/structs/pfcataloggetitemcontainersrequest.md
+  - name: PFCatalogGetItemContainersResponse
+    href: pfcatalogtypes/structs/pfcataloggetitemcontainersresponse.md
+  - name: PFCatalogGetItemPublishStatusRequest
+    href: pfcatalogtypes/structs/pfcataloggetitempublishstatusrequest.md
+  - name: PFCatalogGetItemPublishStatusResponse
+    href: pfcatalogtypes/structs/pfcataloggetitempublishstatusresponse.md
+  - name: PFCatalogGetItemRequest
+    href: pfcatalogtypes/structs/pfcataloggetitemrequest.md
+  - name: PFCatalogGetItemResponse
+    href: pfcatalogtypes/structs/pfcataloggetitemresponse.md
+  - name: PFCatalogGetItemReviewsRequest
+    href: pfcatalogtypes/structs/pfcataloggetitemreviewsrequest.md
+  - name: PFCatalogGetItemReviewsResponse
+    href: pfcatalogtypes/structs/pfcataloggetitemreviewsresponse.md
+  - name: PFCatalogGetItemReviewSummaryRequest
+    href: pfcatalogtypes/structs/pfcataloggetitemreviewsummaryrequest.md
+  - name: PFCatalogGetItemReviewSummaryResponse
+    href: pfcatalogtypes/structs/pfcataloggetitemreviewsummaryresponse.md
+  - name: PFCatalogGetItemsRequest
+    href: pfcatalogtypes/structs/pfcataloggetitemsrequest.md
+  - name: PFCatalogGetItemsResponse
+    href: pfcatalogtypes/structs/pfcataloggetitemsresponse.md
+  - name: PFCatalogImage
+    href: pfcatalogtypes/structs/pfcatalogimage.md
+  - name: PFCatalogImageConfig
+    href: pfcatalogtypes/structs/pfcatalogimageconfig.md
+  - name: PFCatalogKeywordSet
+    href: pfcatalogtypes/structs/pfcatalogkeywordset.md
+  - name: PFCatalogKeywordSetDictionaryEntry
+    href: pfcatalogtypes/structs/pfcatalogkeywordsetdictionaryentry.md
+  - name: PFCatalogModerationState
+    href: pfcatalogtypes/structs/pfcatalogmoderationstate.md
+  - name: PFCatalogPublishDraftItemRequest
+    href: pfcatalogtypes/structs/pfcatalogpublishdraftitemrequest.md
+  - name: PFCatalogRating
+    href: pfcatalogtypes/structs/pfcatalograting.md
+  - name: PFCatalogReportItemRequest
+    href: pfcatalogtypes/structs/pfcatalogreportitemrequest.md
+  - name: PFCatalogReportItemReviewRequest
+    href: pfcatalogtypes/structs/pfcatalogreportitemreviewrequest.md
+  - name: PFCatalogReview
+    href: pfcatalogtypes/structs/pfcatalogreview.md
+  - name: PFCatalogReviewItemRequest
+    href: pfcatalogtypes/structs/pfcatalogreviewitemrequest.md
+  - name: PFCatalogSearchItemsRequest
+    href: pfcatalogtypes/structs/pfcatalogsearchitemsrequest.md
+  - name: PFCatalogSearchItemsResponse
+    href: pfcatalogtypes/structs/pfcatalogsearchitemsresponse.md
+  - name: PFCatalogStoreDetails
+    href: pfcatalogtypes/structs/pfcatalogstoredetails.md
+  - name: PFCatalogStoreReference
+    href: pfcatalogtypes/structs/pfcatalogstorereference.md
+  - name: PFCatalogSubmitItemReviewVoteRequest
+    href: pfcatalogtypes/structs/pfcatalogsubmititemreviewvoterequest.md
+  - name: PFCatalogUpdateDraftItemRequest
+    href: pfcatalogtypes/structs/pfcatalogupdatedraftitemrequest.md
+  - name: PFCatalogUpdateDraftItemResponse
+    href: pfcatalogtypes/structs/pfcatalogupdatedraftitemresponse.md
+  - name: PFCatalogUploadInfo
+    href: pfcatalogtypes/structs/pfcataloguploadinfo.md
+  - name: PFCatalogUploadUrlMetadata
+    href: pfcatalogtypes/structs/pfcataloguploadurlmetadata.md
+  - name: PFCatalogUserGeneratedContentSpecificConfig
+    href: pfcatalogtypes/structs/pfcatalogusergeneratedcontentspecificconfig.md
+  - name: PFCloudScriptExecuteFunctionRequest
+    href: pfcloudscripttypes/structs/pfcloudscriptexecutefunctionrequest.md
+  - name: PFCloudScriptExecuteFunctionResult
+    href: pfcloudscripttypes/structs/pfcloudscriptexecutefunctionresult.md
+  - name: PFCloudScriptFunctionExecutionError
+    href: pfcloudscripttypes/structs/pfcloudscriptfunctionexecutionerror.md
+  - name: PFDataAbortFileUploadsRequest
+    href: pfdatatypes/structs/pfdataabortfileuploadsrequest.md
+  - name: PFDataAbortFileUploadsResponse
+    href: pfdatatypes/structs/pfdataabortfileuploadsresponse.md
+  - name: PFDataDeleteFilesRequest
+    href: pfdatatypes/structs/pfdatadeletefilesrequest.md
+  - name: PFDataDeleteFilesResponse
+    href: pfdatatypes/structs/pfdatadeletefilesresponse.md
+  - name: PFDataFinalizeFileUploadsRequest
+    href: pfdatatypes/structs/pfdatafinalizefileuploadsrequest.md
+  - name: PFDataFinalizeFileUploadsResponse
+    href: pfdatatypes/structs/pfdatafinalizefileuploadsresponse.md
+  - name: PFDataGetFileMetadata
+    href: pfdatatypes/structs/pfdatagetfilemetadata.md
+  - name: PFDataGetFileMetadataDictionaryEntry
+    href: pfdatatypes/structs/pfdatagetfilemetadatadictionaryentry.md
+  - name: PFDataGetFilesRequest
+    href: pfdatatypes/structs/pfdatagetfilesrequest.md
+  - name: PFDataGetFilesResponse
+    href: pfdatatypes/structs/pfdatagetfilesresponse.md
+  - name: PFDataGetObjectsRequest
+    href: pfdatatypes/structs/pfdatagetobjectsrequest.md
+  - name: PFDataGetObjectsResponse
+    href: pfdatatypes/structs/pfdatagetobjectsresponse.md
+  - name: PFDataInitiateFileUploadMetadata
+    href: pfdatatypes/structs/pfdatainitiatefileuploadmetadata.md
+  - name: PFDataInitiateFileUploadsRequest
+    href: pfdatatypes/structs/pfdatainitiatefileuploadsrequest.md
+  - name: PFDataInitiateFileUploadsResponse
+    href: pfdatatypes/structs/pfdatainitiatefileuploadsresponse.md
+  - name: PFDataObjectResult
+    href: pfdatatypes/structs/pfdataobjectresult.md
+  - name: PFDataObjectResultDictionaryEntry
+    href: pfdatatypes/structs/pfdataobjectresultdictionaryentry.md
+  - name: PFDataSetObject
+    href: pfdatatypes/structs/pfdatasetobject.md
+  - name: PFDataSetObjectInfo
+    href: pfdatatypes/structs/pfdatasetobjectinfo.md
+  - name: PFDataSetObjectsRequest
+    href: pfdatatypes/structs/pfdatasetobjectsrequest.md
+  - name: PFDataSetObjectsResponse
+    href: pfdatatypes/structs/pfdatasetobjectsresponse.md
+  - name: PFEntityToken
+    href: pfentity/structs/pfentitytoken.md
+  - name: PFEventsEventContents
+    href: pfeventstypes/structs/pfeventseventcontents.md
+  - name: PFEventsWriteEventsRequest
+    href: pfeventstypes/structs/pfeventswriteeventsrequest.md
+  - name: PFEventsWriteEventsResponse
+    href: pfeventstypes/structs/pfeventswriteeventsresponse.md
+  - name: PFExperimentationGetTreatmentAssignmentRequest
+    href: pfexperimentationtypes/structs/pfexperimentationgettreatmentassignmentrequest.md
+  - name: PFExperimentationGetTreatmentAssignmentResult
+    href: pfexperimentationtypes/structs/pfexperimentationgettreatmentassignmentresult.md
+  - name: PFFriendsAddFriendResult
+    href: pffriendstypes/structs/pffriendsaddfriendresult.md
+  - name: PFFriendsClientAddFriendRequest
+    href: pffriendstypes/structs/pffriendsclientaddfriendrequest.md
+  - name: PFFriendsClientGetFriendsListRequest
+    href: pffriendstypes/structs/pffriendsclientgetfriendslistrequest.md
+  - name: PFFriendsClientRemoveFriendRequest
+    href: pffriendstypes/structs/pffriendsclientremovefriendrequest.md
+  - name: PFFriendsClientSetFriendTagsRequest
+    href: pffriendstypes/structs/pffriendsclientsetfriendtagsrequest.md
+  - name: PFFriendsFriendInfo
+    href: pffriendstypes/structs/pffriendsfriendinfo.md
+  - name: PFFriendsGetFriendsListResult
+    href: pffriendstypes/structs/pffriendsgetfriendslistresult.md
+  - name: PFGroupsAcceptGroupApplicationRequest
+    href: pfgroupstypes/structs/pfgroupsacceptgroupapplicationrequest.md
+  - name: PFGroupsAcceptGroupInvitationRequest
+    href: pfgroupstypes/structs/pfgroupsacceptgroupinvitationrequest.md
+  - name: PFGroupsAddMembersRequest
+    href: pfgroupstypes/structs/pfgroupsaddmembersrequest.md
+  - name: PFGroupsApplyToGroupRequest
+    href: pfgroupstypes/structs/pfgroupsapplytogrouprequest.md
+  - name: PFGroupsApplyToGroupResponse
+    href: pfgroupstypes/structs/pfgroupsapplytogroupresponse.md
+  - name: PFGroupsBlockEntityRequest
+    href: pfgroupstypes/structs/pfgroupsblockentityrequest.md
+  - name: PFGroupsChangeMemberRoleRequest
+    href: pfgroupstypes/structs/pfgroupschangememberrolerequest.md
+  - name: PFGroupsCreateGroupRequest
+    href: pfgroupstypes/structs/pfgroupscreategrouprequest.md
+  - name: PFGroupsCreateGroupResponse
+    href: pfgroupstypes/structs/pfgroupscreategroupresponse.md
+  - name: PFGroupsCreateGroupRoleRequest
+    href: pfgroupstypes/structs/pfgroupscreategrouprolerequest.md
+  - name: PFGroupsCreateGroupRoleResponse
+    href: pfgroupstypes/structs/pfgroupscreategrouproleresponse.md
+  - name: PFGroupsDeleteGroupRequest
+    href: pfgroupstypes/structs/pfgroupsdeletegrouprequest.md
+  - name: PFGroupsDeleteRoleRequest
+    href: pfgroupstypes/structs/pfgroupsdeleterolerequest.md
+  - name: PFGroupsEntityMemberRole
+    href: pfgroupstypes/structs/pfgroupsentitymemberrole.md
+  - name: PFGroupsEntityWithLineage
+    href: pfgroupstypes/structs/pfgroupsentitywithlineage.md
+  - name: PFGroupsGetGroupRequest
+    href: pfgroupstypes/structs/pfgroupsgetgrouprequest.md
+  - name: PFGroupsGetGroupResponse
+    href: pfgroupstypes/structs/pfgroupsgetgroupresponse.md
+  - name: PFGroupsGroupApplication
+    href: pfgroupstypes/structs/pfgroupsgroupapplication.md
+  - name: PFGroupsGroupBlock
+    href: pfgroupstypes/structs/pfgroupsgroupblock.md
+  - name: PFGroupsGroupInvitation
+    href: pfgroupstypes/structs/pfgroupsgroupinvitation.md
+  - name: PFGroupsGroupRole
+    href: pfgroupstypes/structs/pfgroupsgrouprole.md
+  - name: PFGroupsGroupWithRoles
+    href: pfgroupstypes/structs/pfgroupsgroupwithroles.md
+  - name: PFGroupsInviteToGroupRequest
+    href: pfgroupstypes/structs/pfgroupsinvitetogrouprequest.md
+  - name: PFGroupsInviteToGroupResponse
+    href: pfgroupstypes/structs/pfgroupsinvitetogroupresponse.md
+  - name: PFGroupsIsMemberRequest
+    href: pfgroupstypes/structs/pfgroupsismemberrequest.md
+  - name: PFGroupsIsMemberResponse
+    href: pfgroupstypes/structs/pfgroupsismemberresponse.md
+  - name: PFGroupsListGroupApplicationsRequest
+    href: pfgroupstypes/structs/pfgroupslistgroupapplicationsrequest.md
+  - name: PFGroupsListGroupApplicationsResponse
+    href: pfgroupstypes/structs/pfgroupslistgroupapplicationsresponse.md
+  - name: PFGroupsListGroupBlocksRequest
+    href: pfgroupstypes/structs/pfgroupslistgroupblocksrequest.md
+  - name: PFGroupsListGroupBlocksResponse
+    href: pfgroupstypes/structs/pfgroupslistgroupblocksresponse.md
+  - name: PFGroupsListGroupInvitationsRequest
+    href: pfgroupstypes/structs/pfgroupslistgroupinvitationsrequest.md
+  - name: PFGroupsListGroupInvitationsResponse
+    href: pfgroupstypes/structs/pfgroupslistgroupinvitationsresponse.md
+  - name: PFGroupsListGroupMembersRequest
+    href: pfgroupstypes/structs/pfgroupslistgroupmembersrequest.md
+  - name: PFGroupsListGroupMembersResponse
+    href: pfgroupstypes/structs/pfgroupslistgroupmembersresponse.md
+  - name: PFGroupsListMembershipOpportunitiesRequest
+    href: pfgroupstypes/structs/pfgroupslistmembershipopportunitiesrequest.md
+  - name: PFGroupsListMembershipOpportunitiesResponse
+    href: pfgroupstypes/structs/pfgroupslistmembershipopportunitiesresponse.md
+  - name: PFGroupsListMembershipRequest
+    href: pfgroupstypes/structs/pfgroupslistmembershiprequest.md
+  - name: PFGroupsListMembershipResponse
+    href: pfgroupstypes/structs/pfgroupslistmembershipresponse.md
+  - name: PFGroupsRemoveGroupApplicationRequest
+    href: pfgroupstypes/structs/pfgroupsremovegroupapplicationrequest.md
+  - name: PFGroupsRemoveGroupInvitationRequest
+    href: pfgroupstypes/structs/pfgroupsremovegroupinvitationrequest.md
+  - name: PFGroupsRemoveMembersRequest
+    href: pfgroupstypes/structs/pfgroupsremovemembersrequest.md
+  - name: PFGroupsUnblockEntityRequest
+    href: pfgroupstypes/structs/pfgroupsunblockentityrequest.md
+  - name: PFGroupsUpdateGroupRequest
+    href: pfgroupstypes/structs/pfgroupsupdategrouprequest.md
+  - name: PFGroupsUpdateGroupResponse
+    href: pfgroupstypes/structs/pfgroupsupdategroupresponse.md
+  - name: PFGroupsUpdateGroupRoleRequest
+    href: pfgroupstypes/structs/pfgroupsupdategrouprolerequest.md
+  - name: PFGroupsUpdateGroupRoleResponse
+    href: pfgroupstypes/structs/pfgroupsupdategrouproleresponse.md
+  - name: PFHCInitArgs
+    href: pfhttpclient/structs/pfhcinitargs.md
+  - name: PFWebSocketCompletionResult
+    href: pfhttpclient/structs/pfwebsocketcompletionresult.md
+  - name: PFInventoryAddInventoryItemsOperation
+    href: pfinventorytypes/structs/pfinventoryaddinventoryitemsoperation.md
+  - name: PFInventoryAddInventoryItemsRequest
+    href: pfinventorytypes/structs/pfinventoryaddinventoryitemsrequest.md
+  - name: PFInventoryAddInventoryItemsResponse
+    href: pfinventorytypes/structs/pfinventoryaddinventoryitemsresponse.md
+  - name: PFInventoryAlternateId
+    href: pfinventorytypes/structs/pfinventoryalternateid.md
+  - name: PFInventoryDeleteInventoryCollectionRequest
+    href: pfinventorytypes/structs/pfinventorydeleteinventorycollectionrequest.md
+  - name: PFInventoryDeleteInventoryItemsOperation
+    href: pfinventorytypes/structs/pfinventorydeleteinventoryitemsoperation.md
+  - name: PFInventoryDeleteInventoryItemsRequest
+    href: pfinventorytypes/structs/pfinventorydeleteinventoryitemsrequest.md
+  - name: PFInventoryDeleteInventoryItemsResponse
+    href: pfinventorytypes/structs/pfinventorydeleteinventoryitemsresponse.md
+  - name: PFInventoryExecuteInventoryOperationsRequest
+    href: pfinventorytypes/structs/pfinventoryexecuteinventoryoperationsrequest.md
+  - name: PFInventoryExecuteInventoryOperationsResponse
+    href: pfinventorytypes/structs/pfinventoryexecuteinventoryoperationsresponse.md
+  - name: PFInventoryGetInventoryCollectionIdsRequest
+    href: pfinventorytypes/structs/pfinventorygetinventorycollectionidsrequest.md
+  - name: PFInventoryGetInventoryCollectionIdsResponse
+    href: pfinventorytypes/structs/pfinventorygetinventorycollectionidsresponse.md
+  - name: PFInventoryGetInventoryItemsRequest
+    href: pfinventorytypes/structs/pfinventorygetinventoryitemsrequest.md
+  - name: PFInventoryGetInventoryItemsResponse
+    href: pfinventorytypes/structs/pfinventorygetinventoryitemsresponse.md
+  - name: PFInventoryGetMicrosoftStoreAccessTokensRequest
+    href: pfinventorytypes/structs/pfinventorygetmicrosoftstoreaccesstokensrequest.md
+  - name: PFInventoryGetMicrosoftStoreAccessTokensResponse
+    href: pfinventorytypes/structs/pfinventorygetmicrosoftstoreaccesstokensresponse.md
+  - name: PFInventoryInitialValues
+    href: pfinventorytypes/structs/pfinventoryinitialvalues.md
+  - name: PFInventoryInventoryItem
+    href: pfinventorytypes/structs/pfinventoryinventoryitem.md
+  - name: PFInventoryInventoryItemReference
+    href: pfinventorytypes/structs/pfinventoryinventoryitemreference.md
+  - name: PFInventoryInventoryOperation
+    href: pfinventorytypes/structs/pfinventoryinventoryoperation.md
+  - name: PFInventoryPurchaseInventoryItemsOperation
+    href: pfinventorytypes/structs/pfinventorypurchaseinventoryitemsoperation.md
+  - name: PFInventoryPurchaseInventoryItemsRequest
+    href: pfinventorytypes/structs/pfinventorypurchaseinventoryitemsrequest.md
+  - name: PFInventoryPurchaseInventoryItemsResponse
+    href: pfinventorytypes/structs/pfinventorypurchaseinventoryitemsresponse.md
+  - name: PFInventoryPurchasePriceAmount
+    href: pfinventorytypes/structs/pfinventorypurchasepriceamount.md
+  - name: PFInventoryRedeemMicrosoftStoreInventoryItemsRequest
+    href: pfinventorytypes/structs/pfinventoryredeemmicrosoftstoreinventoryitemsrequest.md
+  - name: PFInventoryRedeemMicrosoftStoreInventoryItemsResponse
+    href: pfinventorytypes/structs/pfinventoryredeemmicrosoftstoreinventoryitemsresponse.md
+  - name: PFInventoryRedemptionFailure
+    href: pfinventorytypes/structs/pfinventoryredemptionfailure.md
+  - name: PFInventoryRedemptionSuccess
+    href: pfinventorytypes/structs/pfinventoryredemptionsuccess.md
+  - name: PFInventorySubtractInventoryItemsOperation
+    href: pfinventorytypes/structs/pfinventorysubtractinventoryitemsoperation.md
+  - name: PFInventorySubtractInventoryItemsRequest
+    href: pfinventorytypes/structs/pfinventorysubtractinventoryitemsrequest.md
+  - name: PFInventorySubtractInventoryItemsResponse
+    href: pfinventorytypes/structs/pfinventorysubtractinventoryitemsresponse.md
+  - name: PFInventoryTransactionOperation
+    href: pfinventorytypes/structs/pfinventorytransactionoperation.md
+  - name: PFInventoryTransactionPurchaseDetails
+    href: pfinventorytypes/structs/pfinventorytransactionpurchasedetails.md
+  - name: PFInventoryTransactionRedeemDetails
+    href: pfinventorytypes/structs/pfinventorytransactionredeemdetails.md
+  - name: PFInventoryTransactionTransferDetails
+    href: pfinventorytypes/structs/pfinventorytransactiontransferdetails.md
+  - name: PFInventoryTransferInventoryItemsOperation
+    href: pfinventorytypes/structs/pfinventorytransferinventoryitemsoperation.md
+  - name: PFInventoryTransferInventoryItemsRequest
+    href: pfinventorytypes/structs/pfinventorytransferinventoryitemsrequest.md
+  - name: PFInventoryTransferInventoryItemsResponse
+    href: pfinventorytypes/structs/pfinventorytransferinventoryitemsresponse.md
+  - name: PFInventoryUpdateInventoryItemsOperation
+    href: pfinventorytypes/structs/pfinventoryupdateinventoryitemsoperation.md
+  - name: PFInventoryUpdateInventoryItemsRequest
+    href: pfinventorytypes/structs/pfinventoryupdateinventoryitemsrequest.md
+  - name: PFInventoryUpdateInventoryItemsResponse
+    href: pfinventorytypes/structs/pfinventoryupdateinventoryitemsresponse.md
+  - name: PFMultiplayerServerBuildAliasDetailsResponse
+    href: pfmultiplayerservertypes/structs/pfmultiplayerserverbuildaliasdetailsresponse.md
+  - name: PFMultiplayerServerBuildAliasParams
+    href: pfmultiplayerservertypes/structs/pfmultiplayerserverbuildaliasparams.md
+  - name: PFMultiplayerServerBuildRegion
+    href: pfmultiplayerservertypes/structs/pfmultiplayerserverbuildregion.md
+  - name: PFMultiplayerServerBuildSelectionCriterion
+    href: pfmultiplayerservertypes/structs/pfmultiplayerserverbuildselectioncriterion.md
+  - name: PFMultiplayerServerBuildSummary
+    href: pfmultiplayerservertypes/structs/pfmultiplayerserverbuildsummary.md
+  - name: PFMultiplayerServerConnectedPlayer
+    href: pfmultiplayerservertypes/structs/pfmultiplayerserverconnectedplayer.md
+  - name: PFMultiplayerServerCurrentServerStats
+    href: pfmultiplayerservertypes/structs/pfmultiplayerservercurrentserverstats.md
+  - name: PFMultiplayerServerDynamicStandbySettings
+    href: pfmultiplayerservertypes/structs/pfmultiplayerserverdynamicstandbysettings.md
+  - name: PFMultiplayerServerDynamicStandbyThreshold
+    href: pfmultiplayerservertypes/structs/pfmultiplayerserverdynamicstandbythreshold.md
+  - name: PFMultiplayerServerListBuildAliasesRequest
+    href: pfmultiplayerservertypes/structs/pfmultiplayerserverlistbuildaliasesrequest.md
+  - name: PFMultiplayerServerListBuildAliasesResponse
+    href: pfmultiplayerservertypes/structs/pfmultiplayerserverlistbuildaliasesresponse.md
+  - name: PFMultiplayerServerListBuildSummariesRequest
+    href: pfmultiplayerservertypes/structs/pfmultiplayerserverlistbuildsummariesrequest.md
+  - name: PFMultiplayerServerListBuildSummariesResponse
+    href: pfmultiplayerservertypes/structs/pfmultiplayerserverlistbuildsummariesresponse.md
+  - name: PFMultiplayerServerListQosServersForTitleRequest
+    href: pfmultiplayerservertypes/structs/pfmultiplayerserverlistqosserversfortitlerequest.md
+  - name: PFMultiplayerServerListQosServersForTitleResponse
+    href: pfmultiplayerservertypes/structs/pfmultiplayerserverlistqosserversfortitleresponse.md
+  - name: PFMultiplayerServerPort
+    href: pfmultiplayerservertypes/structs/pfmultiplayerserverport.md
+  - name: PFMultiplayerServerQosServer
+    href: pfmultiplayerservertypes/structs/pfmultiplayerserverqosserver.md
+  - name: PFMultiplayerServerRequestMultiplayerServerRequest
+    href: pfmultiplayerservertypes/structs/pfmultiplayerserverrequestmultiplayerserverrequest.md
+  - name: PFMultiplayerServerRequestMultiplayerServerResponse
+    href: pfmultiplayerservertypes/structs/pfmultiplayerserverrequestmultiplayerserverresponse.md
+  - name: PFMultiplayerServerSchedule
+    href: pfmultiplayerservertypes/structs/pfmultiplayerserverschedule.md
+  - name: PFMultiplayerServerScheduledStandbySettings
+    href: pfmultiplayerservertypes/structs/pfmultiplayerserverscheduledstandbysettings.md
+  - name: PFLocalStorageHooks
+    href: pfplatform/structs/pflocalstoragehooks.md
+  - name: PFMemoryHooks
+    href: pfplatform/structs/pfmemoryhooks.md
+  - name: PFPlayerDataManagementClientGetUserDataResult
+    href: pfplayerdatamanagementtypes/structs/pfplayerdatamanagementclientgetuserdataresult.md
+  - name: PFPlayerDataManagementClientUpdateUserDataRequest
+    href: pfplayerdatamanagementtypes/structs/pfplayerdatamanagementclientupdateuserdatarequest.md
+  - name: PFPlayerDataManagementGetUserDataRequest
+    href: pfplayerdatamanagementtypes/structs/pfplayerdatamanagementgetuserdatarequest.md
+  - name: PFPlayerDataManagementUpdateUserDataResult
+    href: pfplayerdatamanagementtypes/structs/pfplayerdatamanagementupdateuserdataresult.md
+  - name: PFProfilesEntityDataObject
+    href: pfprofilestypes/structs/pfprofilesentitydataobject.md
+  - name: PFProfilesEntityDataObjectDictionaryEntry
+    href: pfprofilestypes/structs/pfprofilesentitydataobjectdictionaryentry.md
+  - name: PFProfilesEntityPermissionStatement
+    href: pfprofilestypes/structs/pfprofilesentitypermissionstatement.md
+  - name: PFProfilesEntityProfileBody
+    href: pfprofilestypes/structs/pfprofilesentityprofilebody.md
+  - name: PFProfilesEntityProfileFileMetadata
+    href: pfprofilestypes/structs/pfprofilesentityprofilefilemetadata.md
+  - name: PFProfilesEntityProfileFileMetadataDictionaryEntry
+    href: pfprofilestypes/structs/pfprofilesentityprofilefilemetadatadictionaryentry.md
+  - name: PFProfilesEntityStatisticChildValue
+    href: pfprofilestypes/structs/pfprofilesentitystatisticchildvalue.md
+  - name: PFProfilesEntityStatisticChildValueDictionaryEntry
+    href: pfprofilestypes/structs/pfprofilesentitystatisticchildvaluedictionaryentry.md
+  - name: PFProfilesEntityStatisticValue
+    href: pfprofilestypes/structs/pfprofilesentitystatisticvalue.md
+  - name: PFProfilesEntityStatisticValueDictionaryEntry
+    href: pfprofilestypes/structs/pfprofilesentitystatisticvaluedictionaryentry.md
+  - name: PFProfilesGetEntityProfileRequest
+    href: pfprofilestypes/structs/pfprofilesgetentityprofilerequest.md
+  - name: PFProfilesGetEntityProfileResponse
+    href: pfprofilestypes/structs/pfprofilesgetentityprofileresponse.md
+  - name: PFProfilesGetEntityProfilesRequest
+    href: pfprofilestypes/structs/pfprofilesgetentityprofilesrequest.md
+  - name: PFProfilesGetEntityProfilesResponse
+    href: pfprofilestypes/structs/pfprofilesgetentityprofilesresponse.md
+  - name: PFProfilesGetTitlePlayersFromMasterPlayerAccountIdsRequest
+    href: pfprofilestypes/structs/pfprofilesgettitleplayersfrommasterplayeraccountidsrequest.md
+  - name: PFProfilesGetTitlePlayersFromMasterPlayerAccountIdsResponse
+    href: pfprofilestypes/structs/pfprofilesgettitleplayersfrommasterplayeraccountidsresponse.md
+  - name: PFProfilesSetEntityProfilePolicyRequest
+    href: pfprofilestypes/structs/pfprofilessetentityprofilepolicyrequest.md
+  - name: PFProfilesSetEntityProfilePolicyResponse
+    href: pfprofilestypes/structs/pfprofilessetentityprofilepolicyresponse.md
+  - name: PFProfilesSetProfileLanguageRequest
+    href: pfprofilestypes/structs/pfprofilessetprofilelanguagerequest.md
+  - name: PFProfilesSetProfileLanguageResponse
+    href: pfprofilestypes/structs/pfprofilessetprofilelanguageresponse.md
+  - name: PFSegmentsAdCampaignAttribution
+    href: pfsegmentstypes/structs/pfsegmentsadcampaignattribution.md
+  - name: PFSegmentsContactEmailInfo
+    href: pfsegmentstypes/structs/pfsegmentscontactemailinfo.md
+  - name: PFSegmentsGetPlayerSegmentsResult
+    href: pfsegmentstypes/structs/pfsegmentsgetplayersegmentsresult.md
+  - name: PFSegmentsGetPlayerTagsRequest
+    href: pfsegmentstypes/structs/pfsegmentsgetplayertagsrequest.md
+  - name: PFSegmentsGetPlayerTagsResult
+    href: pfsegmentstypes/structs/pfsegmentsgetplayertagsresult.md
+  - name: PFSegmentsGetSegmentResult
+    href: pfsegmentstypes/structs/pfsegmentsgetsegmentresult.md
+  - name: PFSegmentsPlayerLinkedAccount
+    href: pfsegmentstypes/structs/pfsegmentsplayerlinkedaccount.md
+  - name: PFSegmentsPlayerLocation
+    href: pfsegmentstypes/structs/pfsegmentsplayerlocation.md
+  - name: PFSegmentsPlayerLocationDictionaryEntry
+    href: pfsegmentstypes/structs/pfsegmentsplayerlocationdictionaryentry.md
+  - name: PFSegmentsPlayerStatistic
+    href: pfsegmentstypes/structs/pfsegmentsplayerstatistic.md
+  - name: PFSegmentsPushNotificationRegistration
+    href: pfsegmentstypes/structs/pfsegmentspushnotificationregistration.md
+  - name: PFTitleDataManagementGetPublisherDataRequest
+    href: pftitledatamanagementtypes/structs/pftitledatamanagementgetpublisherdatarequest.md
+  - name: PFTitleDataManagementGetPublisherDataResult
+    href: pftitledatamanagementtypes/structs/pftitledatamanagementgetpublisherdataresult.md
+  - name: PFTitleDataManagementGetTimeResult
+    href: pftitledatamanagementtypes/structs/pftitledatamanagementgettimeresult.md
+  - name: PFTitleDataManagementGetTitleDataRequest
+    href: pftitledatamanagementtypes/structs/pftitledatamanagementgettitledatarequest.md
+  - name: PFTitleDataManagementGetTitleDataResult
+    href: pftitledatamanagementtypes/structs/pftitledatamanagementgettitledataresult.md
+  - name: PFTitleDataManagementGetTitleNewsRequest
+    href: pftitledatamanagementtypes/structs/pftitledatamanagementgettitlenewsrequest.md
+  - name: PFTitleDataManagementGetTitleNewsResult
+    href: pftitledatamanagementtypes/structs/pftitledatamanagementgettitlenewsresult.md
+  - name: PFTitleDataManagementTitleNewsItem
+    href: pftitledatamanagementtypes/structs/pftitledatamanagementtitlenewsitem.md
+  - name: PFAdCampaignAttributionModel
+    href: pftypes/structs/pfadcampaignattributionmodel.md
+  - name: PFCharacterInventory
+    href: pftypes/structs/pfcharacterinventory.md
+  - name: PFCharacterResult
+    href: pftypes/structs/pfcharacterresult.md
+  - name: PFContactEmailInfoModel
+    href: pftypes/structs/pfcontactemailinfomodel.md
+  - name: PFDateTimeDictionaryEntry
+    href: pftypes/structs/pfdatetimedictionaryentry.md
+  - name: PFEntityKey
+    href: pftypes/structs/pfentitykey-c.md
+  - name: PFEntityKeyDictionaryEntry
+    href: pftypes/structs/pfentitykeydictionaryentry.md
+  - name: PFEntityLineage
+    href: pftypes/structs/pfentitylineage.md
+  - name: PFGetPlayerCombinedInfoRequestParams
+    href: pftypes/structs/pfgetplayercombinedinforequestparams.md
+  - name: PFGetPlayerCombinedInfoResultPayload
+    href: pftypes/structs/pfgetplayercombinedinforesultpayload.md
+  - name: PFInt32DictionaryEntry
+    href: pftypes/structs/pfint32dictionaryentry.md
+  - name: PFItemInstance
+    href: pftypes/structs/pfiteminstance.md
+  - name: PFJsonObject
+    href: pftypes/structs/pfjsonobject.md
+  - name: PFLinkedPlatformAccountModel
+    href: pftypes/structs/pflinkedplatformaccountmodel.md
+  - name: PFLocationModel
+    href: pftypes/structs/pflocationmodel.md
+  - name: PFMembershipModel
+    href: pftypes/structs/pfmembershipmodel.md
+  - name: PFPlayerProfileModel
+    href: pftypes/structs/pfplayerprofilemodel.md
+  - name: PFPlayerProfileViewConstraints
+    href: pftypes/structs/pfplayerprofileviewconstraints.md
+  - name: PFPushNotificationRegistrationModel
+    href: pftypes/structs/pfpushnotificationregistrationmodel.md
+  - name: PFStatisticModel
+    href: pftypes/structs/pfstatisticmodel.md
+  - name: PFStatisticValue
+    href: pftypes/structs/pfstatisticvalue.md
+  - name: PFStringDictionaryEntry
+    href: pftypes/structs/pfstringdictionaryentry.md
+  - name: PFSubscriptionModel
+    href: pftypes/structs/pfsubscriptionmodel.md
+  - name: PFTagModel
+    href: pftypes/structs/pftagmodel.md
+  - name: PFTreatmentAssignment
+    href: pftypes/structs/pftreatmentassignment.md
+  - name: PFUint32DictionaryEntry
+    href: pftypes/structs/pfuint32dictionaryentry.md
+  - name: PFUserAccountInfo
+    href: pftypes/structs/pfuseraccountinfo.md
+  - name: PFUserAndroidDeviceInfo
+    href: pftypes/structs/pfuserandroiddeviceinfo.md
+  - name: PFUserAppleIdInfo
+    href: pftypes/structs/pfuserappleidinfo.md
+  - name: PFUserCustomIdInfo
+    href: pftypes/structs/pfusercustomidinfo.md
+  - name: PFUserDataRecord
+    href: pftypes/structs/pfuserdatarecord.md
+  - name: PFUserDataRecordDictionaryEntry
+    href: pftypes/structs/pfuserdatarecorddictionaryentry.md
+  - name: PFUserFacebookInfo
+    href: pftypes/structs/pfuserfacebookinfo.md
+  - name: PFUserFacebookInstantGamesIdInfo
+    href: pftypes/structs/pfuserfacebookinstantgamesidinfo.md
+  - name: PFUserGameCenterInfo
+    href: pftypes/structs/pfusergamecenterinfo.md
+  - name: PFUserGoogleInfo
+    href: pftypes/structs/pfusergoogleinfo.md
+  - name: PFUserGooglePlayGamesInfo
+    href: pftypes/structs/pfusergoogleplaygamesinfo.md
+  - name: PFUserIosDeviceInfo
+    href: pftypes/structs/pfuseriosdeviceinfo.md
+  - name: PFUserKongregateInfo
+    href: pftypes/structs/pfuserkongregateinfo.md
+  - name: PFUserNintendoSwitchAccountIdInfo
+    href: pftypes/structs/pfusernintendoswitchaccountidinfo.md
+  - name: PFUserNintendoSwitchDeviceIdInfo
+    href: pftypes/structs/pfusernintendoswitchdeviceidinfo.md
+  - name: PFUserOpenIdInfo
+    href: pftypes/structs/pfuseropenidinfo.md
+  - name: PFUserPrivateAccountInfo
+    href: pftypes/structs/pfuserprivateaccountinfo.md
+  - name: PFUserPsnInfo
+    href: pftypes/structs/pfuserpsninfo.md
+  - name: PFUserSteamInfo
+    href: pftypes/structs/pfusersteaminfo.md
+  - name: PFUserTitleInfo
+    href: pftypes/structs/pfusertitleinfo.md
+  - name: PFUserTwitchInfo
+    href: pftypes/structs/pfusertwitchinfo.md
+  - name: PFUserXboxInfo
+    href: pftypes/structs/pfuserxboxinfo.md
+  - name: PFValueToDateModel
+    href: pftypes/structs/pfvaluetodatemodel.md
+  - name: PFVariable
+    href: pftypes/structs/pfvariable.md
+  - name: PFVirtualCurrencyRechargeTime
+    href: pftypes/structs/pfvirtualcurrencyrechargetime.md
+  - name: PFVirtualCurrencyRechargeTimeDictionaryEntry
+    href: pftypes/structs/pfvirtualcurrencyrechargetimedictionaryentry.md
