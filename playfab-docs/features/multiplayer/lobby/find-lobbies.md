@@ -1,7 +1,7 @@
 ---
 title: Find lobbies
 author: joannaleecy
-description: Learn how to implement find lobbies.
+description: Learn how to search for lobbies.
 ms.author: joanlee
 ms.date: 10/25/2021
 ms.topic: article
@@ -13,21 +13,21 @@ ms.localizationpriority: medium
 # Find lobbies
  
 
-It's often useful for titles to let players find lobbies that meet a particular set of criteria like map and difficulty level among other in-game qualities. This enables players to find the game sessions they want with the people they want.
+It's often useful for titles to let players find lobbies that meet a particular set of criteria like map and difficulty level among other in-game qualities. This search functionality enables players to find the game sessions they want with the people they want.
 
 This article explains how to use __FindLobbies__ to enable players to find lobbies. To see how to find lobbies can be used in game titles, see [Common Scenarios](#common-scenarios).
 
 ## Understanding the relationship between lobby search properties and finding lobbies
 
-Players make their lobbies discoverable by defining search properties. Players find these discoverable lobbies by calling __FindLobbies__ with query strings to filter and sort their search results based on the search properties defined across the currently active lobbies. Lobbies which match these queries will be returned to the calling player.
+Players make their lobbies discoverable by defining search properties. Players find these discoverable lobbies by calling __FindLobbies__ with query strings to filter and sort their search results based on the search properties defined across the currently active lobbies. Lobbies that match these queries are returned to the calling player.
 
 For more information on defining search properties, checkout [Creating searchable lobbies](define-search-keywords.md)
 
 ## How to use FindLobbies
 
-When calling __FindLobbies__ you can use the filter parameter to restrict your search results to only those matching some set of criteria based on the lobby's custom search properties.
+When calling __FindLobbies__, you can use the filter parameter to restrict your query to only return search results matching some set of criteria based on the lobby's custom search properties.
 
-Additionally, you can use the sorting parameter to sort the results you get back from the service based on the search properties. This is useful since the service will only return a limited number of search results. Sorting ensures you see the most relevant search results.
+Additionally, you can use the sorting parameter to sort the results you get back from the service based on the search properties. This is useful since the service only returns a limited number of search results. Sorting ensures you see the most relevant search results.
 
 ### Common Scenarios
 
@@ -36,6 +36,7 @@ Here are a few common ways the __FindLobbies__ functionality is used in titles.
 * Finding lobbies for game sessions for a specific game mode in your title
 * Finding lobbies for game sessions your friends are hosting
 * Finding lobbies for game sessions with enough players for all local players
+* Finding lobbies you're already in to recover a connection after an unexpected game client or game server crash.
 
 ### Supported search keys
 
@@ -60,21 +61,20 @@ These OData operators can be used to compose query strings
 | and        | AND                      | string_key1 eq 'CaptureTheFlag' AND number_key2 lt 10 |
 | not        | NOT                      | not string_key1 eq 'CaptureTheFlag'                   |
 
-**NOTE**: When comparing string properties, be sure to wrap the compared value in single quotes. e.g. "string_key1 eq **'SOME STRING VALUE'**". Numeric properties do not require this.
+**NOTE**: When comparing string properties, be sure to wrap the compared value in single quotes. For example, "string_key1 eq **'SOME STRING VALUE'**". Numeric properties don't need to be wrapped.
 
-## Example Lobby and Matchmaking Client SDK code
+## Example finding lobbies using the Lobby and Matchmaking SDK 
 
-In this example, the player wants to find all lobbies with the following search parameters.
+In this example, the player wants to find all lobbies with the following requirements:
 
-* Game mode == "DeathMatch" 
-* Competition style != "Ranked"
-* Player skill > Min skill
-* Player skill < Max skill
+* The game-mode is "DeathMatch"
+* The competition style is "Ranked"
+* The player's skill level is within the lobby's minimum and maximum skill limits.
 
-Then sort the results using the following parameters.
+Additionally, the player wants the results sorted with the following guidelines:
 
-* Sort by the distance from optimal skill where closer skill levels sort higher.
-* Then sort by number of current members in the lobby where lower member counts sort higher.
+* Lobbies with optimal skill levels closest to the player's skill level should sort higher
+* Then, lobbies with fewer current members should sort higher
 
 ```cpp
 static PFMultiplayerHandle g_pfmHandle = nullptr;

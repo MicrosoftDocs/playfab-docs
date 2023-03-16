@@ -10,13 +10,13 @@ keywords: playfab, multiplayer, lobby, matchmaking, types
 ms.localizationpriority: medium
 ---
 
-# Lobby API overview
+# Lobby REST API overview
  
 
 > [!IMPORTANT]
 > This doc page is currently unlinked. It describes service APIs not yet intended to be called by customers.
 
-This article provides an overview of the PlayFab Lobby API. Here, servers mean game server hosts for your title and clients are players.
+This article provides an overview of the PlayFab Lobby REST API. Here, servers mean game server hosts for your title and clients are players.
 
 ## Lobby creation and management
 

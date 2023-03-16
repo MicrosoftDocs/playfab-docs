@@ -5,7 +5,7 @@ description: "The types of state changes that can occur in PFLobby, including Me
 ms.author: scmunro
 ms.topic: reference
 ms.service: playfab
-ms.date: 01/03/2022
+ms.date: 02/25/2023
 ---
 
 # PFLobbyStateChangeType  
@@ -33,6 +33,10 @@ enum class PFLobbyStateChangeType  : uint32_t
     InviteReceived = 13,  
     InviteListenerStatusChanged = 14,  
     SendInviteCompleted = 15,  
+    CreateAndClaimServerLobbyCompleted = 16,  
+    ClaimServerLobbyCompleted = 17,  
+    ServerPostUpdateCompleted = 18,  
+    ServerDeleteLobbyCompleted = 19,  
 }  
 ```  
   
@@ -56,6 +60,10 @@ enum class PFLobbyStateChangeType  : uint32_t
 | InviteReceived | An entity on this client has received an invite to a lobby.<br/><br/> The PFLobbyStateChange object should be cast to a [PFLobbyInviteReceivedStateChange](../structs/pflobbyinvitereceivedstatechange.md) object for more information. |  
 | InviteListenerStatusChanged | An invite listener's status has changed.<br/><br/> The PFLobbyStateChange object should be cast to a [PFLobbyInviteListenerStatusChangedStateChange](../structs/pflobbyinvitelistenerstatuschangedstatechange.md) object for more information. |  
 | SendInviteCompleted | The operation started by a previous call to [PFLobbySendInvite()](../functions/pflobbysendinvite.md) completed.<br/><br/> The PFLobbyStateChange object should be cast to a [PFLobbySendInviteCompletedStateChange](../structs/pflobbysendinvitecompletedstatechange.md) object for more information. |  
+| CreateAndClaimServerLobbyCompleted | The operation started by a previous call to [PFMultiplayerCreateAndClaimServerLobby()](../functions/pfmultiplayercreateandclaimserverlobby.md) completed.<br/><br/> To use this feature, you must define PFMULTIPLAYER_INCLUDE_SERVER_APIS before including PFLobby.h. <br /><br /> The PFLobbyStateChange object should be cast to a [PFLobbyCreateAndClaimServerLobbyCompletedStateChange](../structs/pflobbycreateandclaimserverlobbycompletedstatechange.md) object for more information. |  
+| ClaimServerLobbyCompleted | The operation started by a previous call to [PFMultiplayerClaimServerLobby()](../functions/pfmultiplayerclaimserverlobby.md) completed.<br/><br/> To use this feature, you must define PFMULTIPLAYER_INCLUDE_SERVER_APIS before including PFLobby.h. <br /><br /> The PFLobbyStateChange object should be cast to a [PFLobbyClaimServerLobbyCompletedStateChange](../structs/pflobbyclaimserverlobbycompletedstatechange.md) object for more information. |  
+| ServerPostUpdateCompleted | The operation started by a previous call to [PFLobbyServerPostUpdate()](../functions/pflobbyserverpostupdate.md) completed.<br/><br/> To use this feature, you must define PFMULTIPLAYER_INCLUDE_SERVER_APIS before including PFLobby.h. <br /><br /> The PFLobbyStateChange object should be cast to a [PFLobbyServerPostUpdateCompletedStateChange](../structs/pflobbyserverpostupdatecompletedstatechange.md) object for more information. |  
+| ServerDeleteLobbyCompleted | The operation started by a previous call to [PFLobbyServerDeleteLobby()](../functions/pflobbyserverdeletelobby.md) completed.<br/><br/> To use this feature, you must define PFMULTIPLAYER_INCLUDE_SERVER_APIS before including PFLobby.h. <br /><br /> The PFLobbyStateChange object should be cast to a [PFLobbyServerDeleteLobbyCompletedStateChange](../structs/pflobbyserverdeletelobbycompletedstatechange.md) object for more information. |  
   
   
 ## Requirements  

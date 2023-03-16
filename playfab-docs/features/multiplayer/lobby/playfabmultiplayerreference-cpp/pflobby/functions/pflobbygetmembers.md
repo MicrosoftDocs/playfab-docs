@@ -5,7 +5,7 @@ description: "Gets the list of PlayFab entities currently joined to the lobby as
 ms.author: scmunro
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/14/2022
+ms.date: 03/07/2023
 ---
 
 # PFLobbyGetMembers  
@@ -46,7 +46,7 @@ Type: HRESULT
   
 ## Remarks  
   
-If this lobby object is still in the process of asynchronously being created or joined, via a call to either [PFMultiplayerCreateAndJoinLobby()](pfmultiplayercreateandjoinlobby.md) or [PFMultiplayerJoinLobby()](pfmultiplayerjoinlobby.md) respectively, this method will return no members.
+If this lobby object is still in the process of asynchronously being created, joined, or claimed, via a call to [PFMultiplayerCreateAndJoinLobby()](pfmultiplayercreateandjoinlobby.md), [PFMultiplayerJoinLobby()](pfmultiplayerjoinlobby.md), [PFMultiplayerCreateAndClaimServerLobby()](pfmultiplayercreateandclaimserverlobby.md), or [PFMultiplayerClaimServerLobby()](pfmultiplayerclaimserverlobby.md), this method will return no members. <br /><br /> If this lobby is server-owned, the owning game_server entity will <b>not</b> be returned in this list of members.
   
 ## Requirements  
   

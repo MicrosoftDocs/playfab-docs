@@ -19,21 +19,21 @@ allow connected clients to subscribe for notifications of Lobby and Matchmaking
 changes. With this addition, you'll no longer need to poll for changes to
 matches or lobbies. 
 
-The client SDK has been designed to simplify your work. The client SDK manages
-calls between clients and Lobby and Matchmaking services. It handles the
-delivery of notifications from those services to connected clients in real time.
-Real-time notifications have cross-platform support, and will work anywhere
-PlayFab supplies a client SDK. Matchmaking and Lobby can be used separately or
+The SDK has been designed to simplify your work. The SDK manages calls between 
+game clients or servers and PlayFab Lobby and Matchmaking services. It handles 
+the delivery of notifications from those services to connected clients in real 
+time. Real-time notifications have cross-platform support, and will work 
+anywhere PlayFab supplies a SDK. Matchmaking and Lobby can be used separately or
 together, and real-time notifications will work in either case. There's no
-support for real-time notifications without the client SDK at this time.
+support for real-time notifications without the SDK at this time.
 Real-time notifications aren't available as a solution for stand-alone or
-general use.   
+general use.
 
 ## How do real-time notifications work 
 
 Each client maintains a single WebSocket to receive real-time notifications.
 When there are updates to Matchmaking or Lobby resources in the cloud, the
-client SDK will forward notifications in real-time to all connected clients
+SDK will forward notifications in real-time to all connected clients
 subscribed to those resources. 
 
 When a client connects to receive real-time notifications, they'll open a new
@@ -60,12 +60,12 @@ players can be added or removed to that shared connection. Multiple users
 sharing the same connection can subscribe to topics to get notifications for
 Matchmaking or Lobby events for those topics. 
 
-## Using the client SDK
+## Using the SDK
 
-The client SDK simplifies your work for cross-network and cross-platform play by
+The SDK simplifies your work for cross-network and cross-platform play by
 handling real-time notifications for you. Notifications are sent to clients on
 receiving invites, joining and updating lobbies, finding matches, and more. The
-client SDK enables cross-platform play and real-time notifications on any
+SDK enables cross-platform play and real-time notifications on any
 platform that PlayFab offers SDK support. Sending notifications to clients is
 automatic, and the developer doesn't have to do any work to enable
 notifications. 

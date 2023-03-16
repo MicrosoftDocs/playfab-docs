@@ -62,8 +62,16 @@
     href: pflobby/functions/pflobbypostupdate.md
   - name: PFLobbySendInvite
     href: pflobby/functions/pflobbysendinvite.md
+  - name: PFLobbyServerDeleteLobby
+    href: pflobby/functions/pflobbyserverdeletelobby.md
+  - name: PFLobbyServerPostUpdate
+    href: pflobby/functions/pflobbyserverpostupdate.md
   - name: PFLobbySetCustomContext
     href: pflobby/functions/pflobbysetcustomcontext.md
+  - name: PFMultiplayerClaimServerLobby
+    href: pflobby/functions/pfmultiplayerclaimserverlobby.md
+  - name: PFMultiplayerCreateAndClaimServerLobby
+    href: pflobby/functions/pfmultiplayercreateandclaimserverlobby.md
   - name: PFMultiplayerCreateAndJoinLobby
     href: pflobby/functions/pfmultiplayercreateandjoinlobby.md
   - name: PFMultiplayerFindLobbies
@@ -92,6 +100,8 @@
     href: pfmatchmaking/functions/pfmatchmakingticketgetticketid.md
   - name: PFMultiplayerCreateMatchmakingTicket
     href: pfmatchmaking/functions/pfmultiplayercreatematchmakingticket.md
+  - name: PFMultiplayerCreateServerBackfillTicket
+    href: pfmatchmaking/functions/pfmultiplayercreateserverbackfillticket.md
   - name: PFMultiplayerDestroyMatchmakingTicket
     href: pfmatchmaking/functions/pfmultiplayerdestroymatchmakingticket.md
   - name: PFMultiplayerFinishProcessingMatchmakingStateChanges
@@ -150,6 +160,8 @@
     href: pfmatchmaking/structs/pfmatchmakingmatchdetails.md
   - name: PFMatchmakingMatchMember
     href: pfmatchmaking/structs/pfmatchmakingmatchmember.md
+  - name: PFMatchmakingServerBackfillTicketConfiguration
+    href: pfmatchmaking/structs/pfmatchmakingserverbackfillticketconfiguration.md
   - name: PFMatchmakingTicketConfiguration
     href: pfmatchmaking/structs/pfmatchmakingticketconfiguration.md
   - name: PFMultiplayerPort
@@ -160,6 +172,10 @@
   items:
   - name: PFLobbyAddMemberCompletedStateChange
     href: pflobby/structs/pflobbyaddmembercompletedstatechange.md
+  - name: PFLobbyClaimServerLobbyCompletedStateChange
+    href: pflobby/structs/pflobbyclaimserverlobbycompletedstatechange.md
+  - name: PFLobbyCreateAndClaimServerLobbyCompletedStateChange
+    href: pflobby/structs/pflobbycreateandclaimserverlobbycompletedstatechange.md
   - name: PFLobbyCreateAndJoinLobbyCompletedStateChange
     href: pflobby/structs/pflobbycreateandjoinlobbycompletedstatechange.md
   - name: PFLobbyDisconnectedStateChange
@@ -188,6 +204,10 @@
     href: pflobby/structs/pflobbypostupdatecompletedstatechange.md
   - name: PFLobbySendInviteCompletedStateChange
     href: pflobby/structs/pflobbysendinvitecompletedstatechange.md
+  - name: PFLobbyServerDeleteLobbyCompletedStateChange
+    href: pflobby/structs/pflobbyserverdeletelobbycompletedstatechange.md
+  - name: PFLobbyServerPostUpdateCompletedStateChange
+    href: pflobby/structs/pflobbyserverpostupdatecompletedstatechange.md
   - name: PFLobbyStateChange
     href: pflobby/structs/pflobbystatechange.md
   - name: PFLobbyUpdatedStateChange
@@ -206,11 +226,11 @@
     href: pfmultiplayer/callbacks/pfmultiplayerfreememorycallback.md
 - name: Typedef
   items:
-  - name: PFEntityKey - Client SDK
-    href: pfmultiplayer\pfentitykey_clientsdk.md
+  - name: PFEntityKey - PlayFab Multiplayer SDK
+    href: pfmultiplayer/pfentitykey_clientsdk.md
 - name: Constants
   items:
-  - name: Pre-defined Search Keys - Client SDK
-    href: pflobby\constants\pflobbysearchkeys.md
+  - name: Pre-defined Search Keys
+    href: pflobby/constants/pflobbysearchkeys.md
 - name: Error Codes
   href: pfmultiplayererrors.md

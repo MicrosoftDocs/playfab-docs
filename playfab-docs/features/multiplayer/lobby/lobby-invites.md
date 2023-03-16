@@ -13,7 +13,9 @@ ms.localizationpriority: medium
 # Lobby invites
  
 
-This article provides an overview about Lobby invites and explains how to manage state changes for lobbies that allow invites.
+This article provides an overview of Lobby invites and how to use them in the Lobby and Matchmaking SDK.
+
+> NOTE: Only players (i.e. title_player_account PlayFab entities) can send or receive invites. Game servers (i.e. game_server PlayFab entities) cannot. For more information on the how game servers interact with lobbies, see [Game Servers and Lobbies](lobby-server-overview.md).
 
 ## Invite types
 
@@ -25,21 +27,21 @@ There are two types of invites your game is likely to make use of.
 ### Joining a lobby by in-game invites
 
 * A member of a lobby may invite another player to that lobby directly via the lobby service.
-* This will share the lobby's connection string with the invited player.
-* The invited player will receive the invitation via __PFLobbyInviteReceivedStateChange__ and can use the attached connection string to join the lobby.
+* This invite shares the lobby's connection string with the invited player.
+* The invited player receives the invitation via __PFLobbyInviteReceivedStateChange__ and can use the attached connection string to join the lobby.
 * These invites work cross-platform but only work in-game.
 
 ### Joining a lobby by platform invites
 
 * Members of the lobby can directly share the lobby's connection string with other players over platform-specific invite mechanisms.
-* These invites will not work cross-platform but can be received without the recipient already running the game. 
+* These invites don't work cross-platform but can be received without the recipient already running the game.
 * Once the invited player receives the connection string via the platform mechanism, they can use the attached connection string to join the lobby.
 
-## Client SDK example
+## Example sending and receiving invites using the Lobby and Matchmaking SDK
 
 Use __PFMultiplayerStartListeningForLobbyInvites__ on the invite recipient to enable receiving in-game invites.
 
-The invitation listener will report its status as __Listening__ once it has been successfully setup.
+The invitation listener will change its status as __Listening__ once it has been successfully set up.
 
 ```cpp
 HRESULT AllowInvitations(

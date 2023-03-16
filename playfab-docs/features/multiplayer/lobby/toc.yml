@@ -22,17 +22,19 @@
     href: ownership-changes.md
   - name: Use lobby and matchmaking together
     href: lobby-and-matchmaking.md
-  - name: Client SDK async model
+  - name: Game servers and Lobbies
+    href: lobby-server-overview.md
+  - name: C++ SDK async model
     href: lobby-and-matchmaking-client-sdk-async.md
-  - name: Handling Client SDK errors
+  - name: Handling C++ SDK errors
     href: lobby-and-matchmaking-client-sdk-errors.md
 - name: Lobby and Matchmaking real-time notifications
   href: lobby-and-matchmaking-real-time-notifications.md
 - name: Reference
   items:
-  - name: Client SDK reference
+  - name: C++ SDK reference
     href: playfabmultiplayerreference-cpp\pflobby\pflobby_members.md
-  - name: Client SDK Error Codes
+  - name: C++ SDK Error Codes
     href: playfabmultiplayerreference-cpp\pfmultiplayererrors.md
 - name: Release notes
   items:

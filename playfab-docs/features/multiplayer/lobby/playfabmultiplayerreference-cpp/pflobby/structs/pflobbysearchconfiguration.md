@@ -5,7 +5,7 @@ description: "The configuration structure used to specify how a [PFMultiplayerFi
 ms.author: scmunro
 ms.topic: reference
 ms.service: playfab
-ms.date: 08/16/2022
+ms.date: 02/25/2023
 ---
 
 # PFLobbySearchConfiguration  
@@ -30,7 +30,7 @@ struct PFLobbySearchConfiguration {
   
 A filter that, when provided, will constrain the lobby search operation to only those owned by the members of that player's various friend lists.
   
-If omitted, the search operation will search all available lobbies.
+If omitted, the search operation will search all available lobbies. <br /><br /> This value may only be specified when [PFMultiplayerFindLobbies](../functions/pfmultiplayerfindlobbies.md) is called with a title_player_account entity.
   
 **`filterString`** &nbsp; const char*  
 *is null-terminated*  
@@ -49,9 +49,9 @@ This string is formatted in an OData-like order-by syntax: a comma-separated lis
 **`clientSearchResultCount`** &nbsp; const uint32_t*  
 *may be nullptr*  
   
-An optional value which, when specified, will limit the number of results provided in the completion response.
+An optional value which, when specified by title_player_account entities, will limit the number of results provided in the completion response.
   
-This value may only be specified when [PFMultiplayerFindLobbies](../functions/pfmultiplayerfindlobbies.md) is called with a client-entity. <br /><br /> This value can be no higher than ```PFLobbyClientRequestedSearchResultCountUpperLimit```.   <br /><br /> When not specified, the limit on the number of search results is service-defined but will be no greater than ```PFLobbyClientRequestedSearchResultCountUpperLimit```.
+This value may only be specified when [PFMultiplayerFindLobbies](../functions/pfmultiplayerfindlobbies.md) is called with a title_player_account entity. <br /><br /> This value can be no higher than ```PFLobbyClientRequestedSearchResultCountUpperLimit```.   <br /><br /> When not specified, the limit on the number of search results is service-defined but will be no greater than ```PFLobbyClientRequestedSearchResultCountUpperLimit```.
   
   
 ## Requirements  

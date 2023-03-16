@@ -12,6 +12,26 @@ ms.localizationpriority: medium
 
 # PlayFab Multiplayer C++ SDK release notes
 
+## 1.5.0
+
+March 16, 2023
+
+### New Features
+
+- Added new APIs and support for server-owned lobbies:
+    - [PFMultiplayerCreateAndClaimServerLobby](..\playfabmultiplayerreference-cpp\pflobby\functions\pfmultiplayercreateandclaimserverlobby.md)
+    - [PFMultiplayerClaimServerLobby](..\playfabmultiplayerreference-cpp\pflobby\functions\pfmultiplayerclaimserverlobby.md)
+    - [PFLobbyServerPostUpdate](..\playfabmultiplayerreference-cpp\pflobby\functions\pflobbyserverpostupdate.md)
+    - [PFLobbyServerDeleteLobby](..\playfabmultiplayerreference-cpp\pflobby\functions\pflobbyserverdeletelobby.md)
+- Added new support for creating matchmaking server backfill tickets with [PFMultiplayerCreateServerBackfillTicket](..\playfabmultiplayerreference-cpp\pfmatchmaking\functions\pfmultiplayercreateserverbackfillticket.md).
+- Added new [PFLobbyMembershipLockSearchKey](..\playfabmultiplayerreference-cpp\pflobby\constants\pflobbysearchkeys.md) constant to make it easier to search for only locked or unlocked lobbies when calling PFMultiplayerFindLobbies().
+
+For more information on using server-owned lobbies, see [Game servers and lobbies](../lobby-server-overview.md).
+
+### Bug fixes
+
+- Mitigation to reduce unexpected PubSub disconnects due to background thread contention
+
 ## 1.4.4
 
 March 10, 2023
@@ -34,7 +54,7 @@ October 26, 2022
 
 ### Bug fixes
 
-- Fixed a bug where pubsub reconnects could cause future pubsub unsubscribe requests to fail.
+- Fixed a bug where PubSub reconnects could cause future PubSub unsubscribe requests to fail.
 
 ## 1.4.1
 
@@ -69,7 +89,7 @@ September 9, 2022
 ### New features
 
 - Implemented a new function, [PFLobbyGetMemberConnectionStatus](..\playfabmultiplayerreference-cpp\pflobby\functions\pflobbygetmemberconnectionstatus.md), which can be used to detect whether a user is connected to the PubSub notification service. When a user's connection status changes, you'll receive a [PFLobbyUpdatedStateChange](..\playfabmultiplayerreference-cpp\pflobby\structs\pflobbyupdatedstatechange.md) with a [PFLobbyMemberUpdateSummary](..\playfabmultiplayerreference-cpp\pflobby\structs\pflobbymemberupdatesummary.md) where the `connectionStatusUpdated` field is `true`.
-- Updated the protocol used to exchange messages with the PubSub notification service from JSON to MessagePack, decreasing the message sizes. This has no impact to the API surface.
+- Updated the protocol used to exchange messages with the PubSub notification service from JSON to MessagePack, decreasing the message sizes. This has no impact on the API surface.
 
 ### Bug fixes
 
@@ -87,7 +107,7 @@ August 17, 2022
 ### Bug fixes
 
 - Improved the message reported by [PFMultiplayerGetErrorCode](..\playfabmultiplayerreference-cpp\pfmultiplayer\functions\pfmultiplayergeterrormessage.md) for several error codes.
-- Fixed a bug where entities were not unsubscribed from the notification service under some failure conditions.
+- Fixed a bug where entities weren't unsubscribed from the notification service under some failure conditions.
 
 ## 1.1.5
 

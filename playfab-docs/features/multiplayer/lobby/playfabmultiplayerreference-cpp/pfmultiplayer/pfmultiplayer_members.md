@@ -5,10 +5,11 @@ description: "PFMultiplayer C/C++ API overview - PFMultiplayer.h"
 ms.author: scmunro
 ms.topic: reference
 ms.service: playfab
-ms.date: 01/03/2022
+ms.date: 02/25/2023
 ---
 
 # PFMultiplayer C/C++ API overview - PFMultiplayer.h
+
   
 ## Functions  
 
