@@ -31,26 +31,34 @@ Churn Prediction is a paid, premium feature that must be explicitly opted into w
 
 ### Pre-Requisites 
 
-1. Ensure to update your billing info prior to opting into Churn Prediction. 
+- Ensure your billing information is up to date prior to opting into the feature. 
 
 ### Opt into Player Churn 
 1.	Navigate to your **Title**
 2.	Select **Players** from the menu on the left
 3.	Move to the **Segments** Tab above
 4.	Opt into Churn Prediction clicking on **Activate Player Churn**
+ ![Activate Player Churn](Media/ActivatePlayerChurnButton.png)
  
 5.	On the official Churn Activation page, select the blue **Activate Player Churn**
-
+ ![Official Player Churn Activation](Media/OfficialPlayerChurnActivationPage.png)
+ 
 ### Opt-Out of Player Churn
-To opt out of Player Churn, all Segments that have been created using the Churn Prediction Filter, have to be modified to remove that filter or delete the segment entirely before you can disable player churn for the title.
+Prior to opting out, please ensure to **Modify** or **Delete** any Segments that use the Churn Prediction Filter.
 
-**Note** - If you would like to opt in again after opting out, we would still require the 48 hour lead time to Ingest data and Generate Churn Scores.
+**Note** - The 48 hours lead time is applicable if a title were to opt in again after opting out.
 
 1.	Navigate to your **Title**
 2.	Select **Players** from the menu on the left
 3.	Move to the **Segments** Tab above
 3.	Opt out of Churn Prediction by selecting **Deactivate Player Churn**
+![Deactivate Player Churn Button](Media/DeactivatePlayerChurnButton.png)
 
+4. Confirm your action by selcting **Confirm Player Churn Deactivation**
+![Confirm Player Churn Deactivation Button](Media/ConfirmDeactivationButton.png)
+
+5. Delete or Modify any existing segments with the Churn Filter prior to Deactivation
+ ![Modify/Delete Segments prior to Deactivation](Media/Modify-DeleteSegments.png)
 
 ## Mitigation Strategies
 Once Churn has been identified, the next step to re-engage and retain your players is to apply Mitigation Strategies. With Segmentation Actions,the requried steps can be configured while creating the Segment. These actions will apply to all players real-time as they jump in and out of Segments. Some of the Actions that are offered directly out of the box are – 
