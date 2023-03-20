@@ -1,7 +1,7 @@
 ---
 title: Churn Prediction
 author: sravya-antharam
-description: PlayFab Churn Prediction Service Overview
+description: PlayFab Churn Prediction Service pricing
 ms.author: sranthar
 ms.date: 03/16/2023
 ms.topic: article
