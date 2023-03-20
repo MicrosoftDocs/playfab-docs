@@ -1,5 +1,5 @@
 ---
-title: Churn Prediction
+title: Churn Prediction Pricing
 author: sranthar
 description: PlayFab Churn Prediction Service pricing
 ms.author: sranthar
