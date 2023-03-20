@@ -1,5 +1,5 @@
 ---
-title: Churn Prediction
+title: Churn Prediction Quickstart
 author: sranthar
 description: PlayFab Churn Prediction Quickstart
 ms.author: sranthar
@@ -10,7 +10,7 @@ keywords: playfab, analytics, churn prediction, AI, ML, predictive service
 ms.localizationpriority: medium
 ---
 
-# Quickstart 
+# Player Churn Prediction Quickstart 
 
 ## Prerequisites
 
