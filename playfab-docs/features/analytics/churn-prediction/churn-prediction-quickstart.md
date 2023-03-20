@@ -10,12 +10,14 @@ keywords: playfab, analytics, churn prediction, AI, ML, predictive service
 ms.localizationpriority: medium
 ---
 
-# Prerequisites
+# Quickstart 
+
+## Prerequisites
 
 1. Sign in to [PlayFab portal](https://playfab.com).
 2. Navigate to your title.
 
-# Create a Churn Prediction segment and apply mitigation strategy
+## Create a Churn Prediction segment and apply mitigation strategy
 
 **Note** - Churn Prediction segments can only be created 48 hours after the feature has been enabled for the title.
 
