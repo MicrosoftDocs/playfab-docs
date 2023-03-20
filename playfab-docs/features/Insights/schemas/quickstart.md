@@ -1,8 +1,8 @@
 ---
 title: Schemas quickstart
-author: mckmoffatt
+author: joannaleecy
 description: Gets you started with schemas.
-ms.author: mcelliot
+ms.author: joanlee
 ms.date: 07/23/2019    
 ms.topic: article
 ms.service: playfab

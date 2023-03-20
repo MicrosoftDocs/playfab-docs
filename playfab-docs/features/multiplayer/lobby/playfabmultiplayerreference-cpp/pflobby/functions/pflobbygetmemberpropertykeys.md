@@ -5,7 +5,7 @@ description: "Get a list of the specified member's property keys."
 ms.author: scmunro
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/16/2022
+ms.date: 02/25/2023
 ---
 
 # PFLobbyGetMemberPropertyKeys  
@@ -51,7 +51,7 @@ Type: HRESULT
   
 ## Remarks  
   
-Per-member properties are only visible to members of the lobby. <br /><br /> If the member is still in the process of asynchronously joining this lobby either via [PFMultiplayerCreateAndJoinLobby()](pfmultiplayercreateandjoinlobby.md), [PFMultiplayerJoinLobby()](pfmultiplayerjoinlobby.md), or [PFLobbyAddMember](pflobbyaddmember.md), this method will return no keys.
+Per-member properties are only visible to members of the lobby and the server if this is a server-owned lobby. <br /><br /> If the member is still in the process of asynchronously joining this lobby either via [PFMultiplayerCreateAndJoinLobby()](pfmultiplayercreateandjoinlobby.md), [PFMultiplayerJoinLobby()](pfmultiplayerjoinlobby.md), or [PFLobbyAddMember](pflobbyaddmember.md), this method will return no keys.
   
 ## Requirements  
   

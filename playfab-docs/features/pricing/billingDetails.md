@@ -1,14 +1,15 @@
 ---
 title: Billing Summary + Base Rate
-author: mckmoffatt
+author: joannaleecy
 description: Describes the billing summary page.
-ms.author: mcelliot
+ms.author: joanlee
 ms.date: 07/15/2019
 ms.topic: article
 ms.service: playfab
 keywords: playfab, pricing, billing, bill, invoice, meter, meters
 ms.localizationpriority: medium
 ---
+
 # Billing Summary and Base Rate
 
 Admin or billing permissions are required to view the **Billing Summary** page.

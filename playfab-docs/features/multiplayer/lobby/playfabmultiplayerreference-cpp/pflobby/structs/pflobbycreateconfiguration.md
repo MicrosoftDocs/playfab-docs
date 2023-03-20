@@ -5,7 +5,7 @@ description: "The initial configuration data used when creating a lobby."
 ms.author: scmunro
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/15/2022
+ms.date: 02/25/2023
 ---
 
 # PFLobbyCreateConfiguration  
@@ -40,7 +40,7 @@ This value must be at least ```PFLobbyMaxMemberCountLowerLimit``` and no more th
   
 The owner migration policy for the new lobby.
   
-This value cannot be set to ```PFLobbyOwnerMigrationPolicy::Server```.
+When passed to [PFMultiplayerCreateAndJoinLobby()](../functions/pfmultiplayercreateandjoinlobby.md), this value cannot be ```PFLobbyOwnerMigrationPolicy::Server```. When passed to [PFMultiplayerCreateAndClaimServerLobby()](../functions/pfmultiplayercreateandclaimserverlobby.md), this value must be ```PFLobbyOwnerMigrationPolicy::Server```.
   
 **`accessPolicy`** &nbsp; [PFLobbyAccessPolicy](../enums/pflobbyaccesspolicy.md)  
   

@@ -1,0 +1,58 @@
+---
+author: jasonsandlin
+title: "PFGroupsCreateGroupAsync"
+description: "Creates a new group."
+ms.author: jasonsa
+ms.topic: reference
+ms.service: playfab
+ms.date: 03/09/2023
+---
+
+# PFGroupsCreateGroupAsync  
+
+Creates a new group.  
+
+## Syntax  
+  
+```cpp
+HRESULT PFGroupsCreateGroupAsync(  
+    PFEntityHandle entityHandle,  
+    const PFGroupsCreateGroupRequest* request,  
+    XAsyncBlock* async  
+)  
+```  
+  
+### Parameters  
+  
+**`entityHandle`** &nbsp; PFEntityHandle  
+  
+PFEntityHandle to use for authentication.  
+  
+**`request`** &nbsp; [PFGroupsCreateGroupRequest*](../../pfgroupstypes/structs/pfgroupscreategrouprequest.md)  
+  
+Populated request object.  
+  
+**`async`** &nbsp; XAsyncBlock*  
+*_Inout_*  
+  
+XAsyncBlock for the async operation.  
+  
+  
+### Return value
+Type: HRESULT
+  
+Result code for this API operation.
+  
+## Remarks  
+  
+Creates a new group, as well as administration and member roles, based off of a title's group template. Returns information about the group that was created. See also GroupAddMembersAsync, GroupApplyToGroupAsync, GroupDeleteGroupAsync, GroupInviteToGroupAsync, GroupListGroupMembersAsync, GroupRemoveMembersAsync. If successful, call [PFGroupsCreateGroupGetResult](pfgroupscreategroupgetresult.md) to get the result.
+  
+## Requirements  
+  
+**Header:** PFGroups.h
+  
+## See also  
+[PFGroups members](../pfgroups_members.md)  
+
+  
+  

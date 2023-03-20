@@ -6,6 +6,8 @@
     href: /rest/api/playfab/admin/
   - name: Real-time notifications for Lobby and Matchmaking
     href: ../features/real-time-notifications/toc.yml
+- name: Services C API
+  href: c/toc.yml
 - name: Party C/C++ API
   href: ../features/multiplayer/networking/reference/toc.yml
 - name: Party Unity API

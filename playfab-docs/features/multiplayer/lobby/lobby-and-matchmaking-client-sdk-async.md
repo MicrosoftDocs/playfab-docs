@@ -1,6 +1,6 @@
 ---
-title: Asynchronous Lobby and Matchmaking Client SDK operations and notifications
-description: How the client SDK performs asynchronous work and notifies callers of state changes.
+title: Asynchronous Lobby and Matchmaking C++ SDK operations and notifications
+description: How the C++ SDK performs asynchronous work and notifies callers of state changes.
 author: ScottMunroMS
 ms.author: scmunro
 ms.date: 11/12/2022
@@ -14,7 +14,7 @@ keywords: playfab, multiplayer, networking, lobby, matchmaking, async, state cha
 For operations that may be slow or computationally expensive, the PlayFab Lobby and Matchmaking SDK exposes asynchronous
 APIs. Asynchronous APIs give you the ability to start expensive or slow operations from your main threads and poll
 for the completion of those operations on a thread of your choice. This same polling mechanism is also used to deliver
-asynchronous notifications of client SDK updates to your title code. This page gives an overview of the PlayFab Lobby and
+asynchronous notifications of SDK updates to your title code. This page gives an overview of the PlayFab Lobby and
 Matchmaking SDK's asynchronous API patterns and best practices for programming against them.
 
 ## Basic API patterns
@@ -26,7 +26,7 @@ There are two types of asynchronous API patterns to be aware of in the PlayFab L
 
 ### Asynchronous operations
 
-It's simple to use the client SDK's asynchronous APIs. The general pattern for starting and completing asynchronous
+It's simple to use the SDK's asynchronous APIs. The general pattern for starting and completing asynchronous
 operations is as follows:
 
 1. Make a regular method call to the appropriate asynchronous API of your choosing. Common asynchronous operations
@@ -41,7 +41,7 @@ returned value will tell you whether the operation has successfully started.
 
 > [!WARNING]
 > The synchronous return value from an asynchronous API call does **NOT** tell you whether or not the operation
-> has completed successfully. For more information on synchronous vs asynchronous errors, check out the client SDK's
+> has completed successfully. For more information on synchronous vs asynchronous errors, check out the SDK's
 > [error handling documentation](lobby-and-matchmaking-client-sdk-errors.md#synchronous-vs-asynchronous-errors).
 
 3. Poll for the asynchronous operation's completion by looking for the associated operation's "completion state change"
@@ -53,11 +53,11 @@ More detailed information on what "state changes" are and how they work can be f
 [State Changes](#state-changes) section.
 
 4. Check the completion state change's **result** value to determine whether the operation succeeded or failed.
-More detailed information on these error values can be found in the client SDK's [error handling documentation](lobby-and-matchmaking-client-sdk-errors.md#synchronous-vs-asynchronous-errors).
+More detailed information on these error values can be found in the SDK's [error handling documentation](lobby-and-matchmaking-client-sdk-errors.md#synchronous-vs-asynchronous-errors).
 
 ### Asynchronous notifications
 
-Some features will generate asynchronous notifications of changes to the Lobby and Matchmaking Client SDK.
+Some features will generate asynchronous notifications of changes to the Lobby and Matchmaking SDK.
 
 Common notifications include:
 
@@ -65,7 +65,7 @@ Common notifications include:
 2. [Lobby disconnect notifications](playfabmultiplayerreference-cpp/pflobby/structs/pflobbydisconnectingstatechange.md).
 3. [Matchmaking ticket status change notifications](playfabmultiplayerreference-cpp/pfmatchmaking/structs/pfmatchmakingticketstatuschangedstatechange.md).
 
-These asynchronous notifications will be provided to you by the client SDK as "state changes" via
+These asynchronous notifications will be provided to you by the SDK as "state changes" via
 [PFMultiplayerStartProcessingLobbyStateChanges()](playfabmultiplayerreference-cpp/pflobby/functions/pfmultiplayerstartprocessinglobbystatechanges.md)
 and [PFMultiplayerStartProcessingMatchmakingStateChanges](playfabmultiplayerreference-cpp/pfmatchmaking/functions/pfmultiplayerstartprocessingmatchmakingstatechanges.md).
 
@@ -74,12 +74,12 @@ section.
 
 ## State changes
 
-The Lobby and Matchmaking Client SDK's asynchronous API model is built around the [PFLobbyStateChange](playfabmultiplayerreference-cpp/pflobby/structs/pflobbystatechange.md)
+The Lobby and Matchmaking SDK's asynchronous API model is built around the [PFLobbyStateChange](playfabmultiplayerreference-cpp/pflobby/structs/pflobbystatechange.md)
 and [PFMatchmakingStateChange](playfabmultiplayerreference-cpp/pfmatchmaking/structs/pfmatchmakingstatechange.md)
 structs. **PFLobbyStateChanges** notify you about changes to the lobby subsystem and **PFMatchmakingStateChanges**
 notify you about changes to the matchmaking subsystem.
 
-These "state changes" are asynchronous notifications of events from the client SDK. These notifications are
+These "state changes" are asynchronous notifications of events from the SDK. These notifications are
 queued internally and you process them by calling [PFMultiplayerStartProcessingLobbyStateChanges()](playfabmultiplayerreference-cpp/pflobby/functions/pfmultiplayerstartprocessinglobbystatechanges.md)
 and [PFMultiplayerStartProcessingMatchmakingStateChanges](playfabmultiplayerreference-cpp/pfmatchmaking/functions/pfmultiplayerstartprocessingmatchmakingstatechanges.md).
 These functions will return all queued state changes (for their respective API subsystem) as lists that you can
@@ -121,8 +121,6 @@ for (uint32_t i = 0; i < lobbyStateChangeCount; ++i)
         }
         // add other state change handlers here
     }
-
-    m_callbacks.OnProcessStateChange(stateChange);
 }
 
 hr = PFMultiplayerFinishProcessingLobbyStateChanges(m_pfmHandle, lobbyStateChangeCount, lobbyStateChanges);
@@ -155,8 +153,6 @@ for (uint32_t i = 0; i < matchStateChangeCount; ++i)
         }
         // add other state change handlers here
     }
-
-    m_callbacks.OnProcessStateChange(stateChange);
 }
 
 hr = PFMultiplayerFinishProcessingMatchmakingStateChanges(m_pfmHandle, matchStateChangeCount, matchStateChanges);
@@ -174,7 +170,7 @@ or **PFMultiplayerStartProcessingMatchmakingStateChanges()**.
 
 This value gives you a mechanism to attach arbitrary, pointer-sized contexts to your asynchronous API calls. These
 contexts can be used in many scenarios including:
-1. associating title-specific data with a Client SDK call
+1. associating title-specific data with an SDK call
 2. tying together multiple asynchronous operations with a shared identifier
 
 These asynchronous contexts are not required for use of the SDK but can make some title logic easier to write.
@@ -184,7 +180,7 @@ These asynchronous contexts are not required for use of the SDK but can make som
 Frequently, when working with asynchronous APIs, multiple asynchronous operations need to run sequentially as part
 of a larger asynchronous flow.
 
-In the Lobby and Matchmaking Client SDK, one example would be creating a lobby and sending invites to your friends for
+In the Lobby and Matchmaking SDK, one example would be creating a lobby and sending invites to your friends for
 that lobby. Serialized, this flow would look like:
 
 1. Call **PFMultiplayerCreateAndJoinLobby()** to create and join a PlayFab lobby.
@@ -193,9 +189,9 @@ that lobby. Serialized, this flow would look like:
 4. Wait for the **PFLobbySendInviteCompletedStateChange** to reflect that the invite was successfully sent.
 
 For more complicated flows and title logic, this serialized pattern may be appropriate. However, for simpler flows,
-the Client SDK provides an alternative that intends to simplify title code:
+the SDK provides an alternative that intends to simplify title code:
 
-Many asynchronous APIs in the client SDK support queuing of dependent operations before a previous operation has
+Many asynchronous APIs in the SDK support queuing of dependent operations before a previous operation has
 fully completed. From the previous example, you can send an invite for a lobby before you've seen that
 lobby successfully created.
 
@@ -231,15 +227,15 @@ if (SUCCEEDED(hr))
 It's sometimes necessary for titles to control where asynchronous work is done to avoid CPU contention between
 libraries and the title's core CPU workloads.
 
-The Lobby and Matchmaking Client SDK lets you control how asynchronous work is run by
+The Lobby and Matchmaking SDK lets you control how asynchronous work is run by
 [Controlling thread affinity](#controlling-thread-affinity)
 
 ### Controlling thread affinity
 
-By default, asynchronous client SDK work is done on carefully controlled background threads. Some titles need
+By default, asynchronous SDK work is done on carefully controlled background threads. Some titles need
 coarse-grain control over *where* these background threads are scheduled in order to avoid CPU contention.
 
-For these titles, the Lobby and Matchmaking Client SDK provides
+For these titles, the Lobby and Matchmaking SDK provides
 [PFMultiplayerSetThreadAffinityMask()](playfabmultiplayerreference-cpp/pfmultiplayer/functions/pfmultiplayersetthreadaffinitymask.md).
 On supported platforms, this allows you to limit which CPU cores will be used for the SDK's background threads.
 This way you can guarantee that certain cores are reserved for your own CPU workloads without any contention.

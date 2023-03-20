@@ -1,0 +1,44 @@
+---
+author: jasonsandlin
+title: "PFCatalogKeywordSet"
+description: "PFCatalogKeywordSet data model."
+ms.author: jasonsa
+ms.topic: reference
+ms.service: playfab
+ms.date: 03/09/2023
+---
+
+# PFCatalogKeywordSet  
+
+PFCatalogKeywordSet data model.  
+
+## Syntax  
+  
+```cpp
+typedef struct PFCatalogKeywordSet {  
+    const char* const* values;  
+    uint32_t valuesCount;  
+} PFCatalogKeywordSet;  
+```
+  
+### Members  
+  
+**`values`** &nbsp; const char* const*  
+*array of size `valuesCount`*  
+  
+(Optional) A list of localized keywords.
+  
+**`valuesCount`** &nbsp; uint32_t  
+  
+Count of values
+  
+  
+## Requirements  
+  
+**Header:** PFCatalogTypes.h
+  
+## See also  
+[PFCatalogTypes members](../pfcatalogtypes_members.md)  
+
+  
+  

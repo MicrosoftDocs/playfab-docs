@@ -12,8 +12,6 @@ items:
     href: features/authentication/toc.yml
   - name: Automation
     href: features/automation/toc.yml
-  - name: Social
-    href: features/social/toc.yml
   - name: Multiplayer
     href: features/multiplayer/toc.yml
   - name: Insights
@@ -60,7 +58,7 @@ items:
     href: features/multiplayer/servers/server-sdks.md
   - name: Party SDKs
     href: features/multiplayer/networking/party-sdks/toc.yml
-  - name: PlayFab SDKs
+  - name: PlayFab Services SDKs
     href: sdks/toc.yml
 - name: Recipes and samples
   href: resources/toc.yml

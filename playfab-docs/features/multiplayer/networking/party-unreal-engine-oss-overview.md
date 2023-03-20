@@ -38,7 +38,7 @@ PlayFab OSS works alongside the PlayFab SDK marketplace plugin, which provides o
 
 ## Which versions of Unreal Engine are supported?
 
-We officially support 5.0, 4.27 and 4.26. For UE4, 4.27 is the recommended version since crossplay between different platforms does not work on 4.26, but it does on 4.27. If you are on an earlier version of Unreal Engine 4, the OSS can be backported with minimal work. Refer to the [Using older versions of Unreal Engine 4](party-unreal-engine-using-older-versions.md) page for more details.
+We officially support 5.1, 5.0, 4.27 and 4.26. For UE4, 4.27 is the recommended version since crossplay between different platforms does not work on 4.26, but it does on 4.27. If you are on an earlier version of Unreal Engine 4, the OSS can be backported with minimal work. Refer to the [Using older versions of Unreal Engine 4](party-unreal-engine-using-older-versions.md) page for more details.
 
 **NOTE:** If you are using a version of UE4 earlier than 4.25plus, you will have to rename all references to GDK to Anvil using find & replace all.
 
@@ -48,7 +48,7 @@ Listed below are the versions of Unreal Engine and the corresponding platforms t
 |--------------|-------------|-------------|-------------|-------------|-------------|-------------|
 | 4.27 Plus    | Supported   | Supported   | Supported   | Supported   | Supported   | Supported   |
 | 5.0          | Supported   | Supported   | Supported   | Supported   | Supported   | Supported   |
-| 5.1          | Coming soon | Coming soon | Coming soon | Coming soon | Coming soon | Coming soon |
+| 5.1          | Supported   | Supported   | Supported   | Supported   | Supported   | Supported   |
 
 ## Which versions of the Microsoft Game Development Kit (GDK) are supported?
 
@@ -60,6 +60,9 @@ Listed below are the versions of Unreal Engine and the corresponding platforms t
   - UE5
     - Recommended: October 2021 GDK, Update 5 (2021.10.5)
     - Minimum: October 2021 GDK, Update 1 (2021.10.1)
+  - UE5.1
+    - Recommended: June 2022 GDK, Update 2 (2022.06)
+    - Minimum: March 2022 GDK, Update 1 (2022.03)
 - **Xbox GDK:**
   - UE4
     - Recommended: June 2021 GDK (2021.06)
@@ -67,6 +70,9 @@ Listed below are the versions of Unreal Engine and the corresponding platforms t
   - UE5
     - Recommended: October 2021 GDK, Update 5 (2021.10.5)
     - Minimum: October 2021 GDK, Update 1 (2021.10.1)
+  - UE5.1
+    - Recommended: June 2022 GDK, Update 2 (2022.06)
+    - Minimum: March 2022 GDK, Update 1 (2022.03)
 
 XDK is supported on older version(1.07 and earlier) of the OSS, refer [Using older version](party-unreal-engine-using-older-versions.md) for further details.
 

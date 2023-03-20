@@ -5,7 +5,7 @@ description: "Joins one or more multiple local users to a matchmaking ticket usi
 ms.author: scmunro
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/15/2022
+ms.date: 02/25/2023
 ---
 
 # PFMultiplayerJoinMatchmakingTicketFromId  
@@ -75,7 +75,7 @@ Type: HRESULT
   
 ## Remarks  
   
-The library automatically, and asynchronously, will submit all local users to join the ticket on the matchmaking service. Each time the ticket status changes, a [PFMatchmakingTicketStatusChangedStateChange](../structs/pfmatchmakingticketstatuschangedstatechange.md) will be provided. The ticket status can be quered at any time via [PFMatchmakingTicketGetStatus()](pfmatchmakingticketgetstatus.md). The ticket immediately starts in the ```PFMatchmakingTicketStatus::Joining``` state. <br /><br /> When the ticket has completed, a [PFMatchmakingTicketStatusChangedStateChange](../structs/pfmatchmakingticketstatuschangedstatechange.md) will be provided. At that point, a match will have been found or the ticket stopped due to failure. On success, the match that was found can be queried via [PFMatchmakingTicketGetMatch()](pfmatchmakingticketgetmatch.md).   <br /><br /> All existing tickets in which a local user is a member will be canceled as part of this operation.
+The library automatically, and asynchronously, will submit all local users to join the ticket on the matchmaking service. Each time the ticket status changes, a [PFMatchmakingTicketStatusChangedStateChange](../structs/pfmatchmakingticketstatuschangedstatechange.md) will be provided. The ticket status can be queried at any time via [PFMatchmakingTicketGetStatus()](pfmatchmakingticketgetstatus.md). The ticket immediately starts in the ```PFMatchmakingTicketStatus::Joining``` state. <br /><br /> When the ticket has completed, a [PFMatchmakingTicketStatusChangedStateChange](../structs/pfmatchmakingticketstatuschangedstatechange.md) will be provided. At that point, a match will have been found or the ticket stopped due to failure. On success, the match that was found can be queried via [PFMatchmakingTicketGetMatch()](pfmatchmakingticketgetmatch.md).   <br /><br /> All existing tickets in which a local user is a member will be canceled as part of this operation.
   
 ## Requirements  
   

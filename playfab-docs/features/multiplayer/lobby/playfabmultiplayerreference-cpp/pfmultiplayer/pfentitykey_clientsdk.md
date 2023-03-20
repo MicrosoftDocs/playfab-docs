@@ -1,6 +1,6 @@
 ---
 author: ScottMunroMS
-title: "PFEntityKey - Client SDK"
+title: "PFEntityKey - PlayFab Multiplayer SDK"
 description: "PFEntityKey data model. Combined entity type and ID structure which uniquely identifies a single entity."
 ms.author: scmunro
 ms.topic: reference
@@ -33,7 +33,7 @@ Unique ID of the entity.
   
 Entity type. See [Available built-in entity types](/gaming/playfab/features/data/entities/available-built-in-entity-types).
   
-Player entities are typically the `title_player_account` type. For more information, see See [Available built-in entity types](/gaming/playfab/features/data/entities/available-built-in-entity-types).
+Player entities are typically the `title_player_account` type. For more information, see [Available built-in entity types](/gaming/playfab/features/data/entities/available-built-in-entity-types).
 
 ## Remarks
 

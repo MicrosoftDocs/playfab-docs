@@ -1,8 +1,8 @@
 ---
 title: Deploy Linux Unreal Server to MPS Cloud
-author: pgilmorepf
+author: joannaleecy
 description: Build and Deploy a Linux server to the MPS Cloud
-ms.author: pagilmor
+ms.author: joanlee
 ms.date: 12/08/2021
 ms.topic: article
 ms.service: playfab
