@@ -1,6 +1,6 @@
 - name: Overview
   href: index.md
 - name: Quickstart
-  href: quickstart.md
+  href: churn-prediction-quickstart.md
 - name: Pricing
   href: pricing.md
