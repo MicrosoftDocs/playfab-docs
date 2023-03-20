@@ -5,11 +5,12 @@ description: "PFMultiplayer C/C++ API overview - PFMatchmaking.h"
 ms.author: scmunro
 ms.topic: reference
 ms.service: playfab
-ms.date: 08/16/2022
+ms.date: 02/25/2023
 ---
 
 # PFMultiplayer C/C++ API overview - PFMatchmaking.h
 
+  
 ## Functions  
 
 | Function | Description |  
@@ -19,6 +20,7 @@ ms.date: 08/16/2022
 | [PFMatchmakingTicketGetStatus](functions/pfmatchmakingticketgetstatus.md) | Provides the matchmaking ticket status. |  
 | [PFMatchmakingTicketGetTicketId](functions/pfmatchmakingticketgetticketid.md) | Provides the ticket ID. |  
 | [PFMultiplayerCreateMatchmakingTicket](functions/pfmultiplayercreatematchmakingticket.md) | Creates a matchmaking ticket for one or more local users. |  
+| [PFMultiplayerCreateServerBackfillTicket](functions/pfmultiplayercreateserverbackfillticket.md) | Creates a server backfill ticket. |  
 | [PFMultiplayerDestroyMatchmakingTicket](functions/pfmultiplayerdestroymatchmakingticket.md) | Destroys the matchmaking ticket. |  
 | [PFMultiplayerFinishProcessingMatchmakingStateChanges](functions/pfmultiplayerfinishprocessingmatchmakingstatechanges.md) | Returns an array of matchmaking state changes that were being processed. |  
 | [PFMultiplayerJoinMatchmakingTicketFromId](functions/pfmultiplayerjoinmatchmakingticketfromid.md) | Joins one or more multiple local users to a matchmaking ticket using a ticket ID and queue name. |  
@@ -30,6 +32,7 @@ ms.date: 08/16/2022
 | --- | --- |  
 | [PFMatchmakingMatchDetails](structs/pfmatchmakingmatchdetails.md) | The resulting match information found by a completed ticket. |  
 | [PFMatchmakingMatchMember](structs/pfmatchmakingmatchmember.md) | A member of a match result. |  
+| [PFMatchmakingServerBackfillTicketConfiguration](structs/pfmatchmakingserverbackfillticketconfiguration.md) | Defines the configuration for a server backfill ticket. |  
 | [PFMatchmakingTicketConfiguration](structs/pfmatchmakingticketconfiguration.md) | Defines the configuration for a matchmaking ticket. |  
 | [PFMultiplayerPort](structs/pfmultiplayerport.md) | A port used by a Playfab Multiplayer Server. |  
 | [PFMultiplayerServerDetails](structs/pfmultiplayerserverdetails.md) | Details about a Playfab Multiplayer Server. |  

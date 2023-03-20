@@ -20,7 +20,7 @@ Azure PlayFab Lobby is a service to create a temporary grouping mechanism for pl
 * Cross-platform scalable lobby service
 * Highly customizable to support a wide variety of gameplay needs
 * Use seamlessly with PlayFab LiveOps and backend services. This includes PlayFab Matchmaking, PlayFab Multiplayer Servers, and PlayFab Party
-* Client SDK support for real-time push notifications with PlayFab Matchmaking and PlayFab Lobby.
+* SDK support for real-time push notifications with PlayFab Matchmaking and PlayFab Lobby.
 
 ## See also
 

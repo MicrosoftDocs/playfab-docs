@@ -35,7 +35,7 @@ Use __InviteToLobby__ when an invite is sent. This allows the player who receive
 
 ## See also
 
-* [Lobby Client SDK reference](playfabmultiplayerreference-cpp\pflobby\pflobby_members.md)
+* [Lobby SDK reference](playfabmultiplayerreference-cpp\pflobby\pflobby_members.md)
 * [Lobby invites](lobby-invites.md)
 * [Create searchable lobbies](define-search-keywords.md)
 * [Lobby properties](lobby-properties.md)

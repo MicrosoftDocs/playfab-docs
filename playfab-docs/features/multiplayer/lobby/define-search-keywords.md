@@ -22,7 +22,7 @@ Additionally, the owner of the lobby may define custom search properties which o
 
 To learn more, see [Find lobbies](find-lobbies.md) and [Join lobbies](join-lobbies.md).
 
-## Example code
+## Example setting search properties using Lobby and Matchmaking SDK
 
 In this example, the lobby created has the following custom search properties defined.
 

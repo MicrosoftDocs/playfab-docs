@@ -5,10 +5,11 @@ description: "PFMultiplayer C/C++ API overview - PFLobby.h"
 ms.author: scmunro
 ms.topic: reference
 ms.service: playfab
-ms.date: 09/09/2022
+ms.date: 02/25/2023
 ---
 
 # PFMultiplayer C/C++ API overview - PFLobby.h
+
   
 ## Functions  
 
@@ -33,9 +34,13 @@ ms.date: 09/09/2022
 | [PFLobbyGetSearchProperty](functions/pflobbygetsearchproperty.md) | Get the search property value from its key. |  
 | [PFLobbyGetSearchPropertyKeys](functions/pflobbygetsearchpropertykeys.md) | Get the list of search property keys. |  
 | [PFLobbyLeave](functions/pflobbyleave.md) | Request one or all local users to leave the lobby. |  
-| [PFLobbyPostUpdate](functions/pflobbypostupdate.md) | Post an update to the lobby. |  
+| [PFLobbyPostUpdate](functions/pflobbypostupdate.md) | Post an update to the lobby as a player. |  
 | [PFLobbySendInvite](functions/pflobbysendinvite.md) | Send an invite to this lobby from the local user to the invited entity. |  
+| [PFLobbyServerDeleteLobby](functions/pflobbyserverdeletelobby.md) | Delete a lobby on behalf of the game_server entity that owns the lobby. |  
+| [PFLobbyServerPostUpdate](functions/pflobbyserverpostupdate.md) | Post an update to the lobby as the server-owner. |  
 | [PFLobbySetCustomContext](functions/pflobbysetcustomcontext.md) | Configures an optional, custom pointer-sized context value with this lobby object. |  
+| [PFMultiplayerClaimServerLobby](functions/pfmultiplayerclaimserverlobby.md) | Claim ownership of a pre-existing server lobby. |  
+| [PFMultiplayerCreateAndClaimServerLobby](functions/pfmultiplayercreateandclaimserverlobby.md) | Create a new lobby as a game_server entity. |  
 | [PFMultiplayerCreateAndJoinLobby](functions/pfmultiplayercreateandjoinlobby.md) | Create a new lobby and add the creating PlayFab entity to it. |  
 | [PFMultiplayerFindLobbies](functions/pfmultiplayerfindlobbies.md) | Search for lobbies on behalf of the local user. |  
 | [PFMultiplayerFinishProcessingLobbyStateChanges](functions/pfmultiplayerfinishprocessinglobbystatechanges.md) | Returns an array of PFLobbyStateChanges that were being processed. |  
@@ -52,7 +57,7 @@ ms.date: 09/09/2022
 | --- | --- |  
 | [PFLobbyArrangedJoinConfiguration](structs/pflobbyarrangedjoinconfiguration.md) | The initial configuration data used when joining an arranged lobby. |  
 | [PFLobbyCreateConfiguration](structs/pflobbycreateconfiguration.md) | The initial configuration data used when creating a lobby. |  
-| [PFLobbyDataUpdate](structs/pflobbydataupdate.md) | A request to make an update to the shared portion of the lobby on behalf of a member. |  
+| [PFLobbyDataUpdate](structs/pflobbydataupdate.md) | A request to make an update to the shared portion of the lobby. |  
 | [PFLobbyJoinConfiguration](structs/pflobbyjoinconfiguration.md) | The initial configuration data used when joining a lobby. |  
 | [PFLobbyMemberDataUpdate](structs/pflobbymemberdataupdate.md) | A request to make an update to the member-owned portion of the lobby document. |  
 | [PFLobbyMemberUpdateSummary](structs/pflobbymemberupdatesummary.md) | A collection of hints about an update which has been successfully applied to the lobby on behalf of a member. |  
@@ -65,6 +70,8 @@ ms.date: 09/09/2022
 | State change | Description |  
 | --- | --- |  
 | [PFLobbyAddMemberCompletedStateChange](structs/pflobbyaddmembercompletedstatechange.md) | Information specific to the *AddMemberCompleted* type of state change. |  
+| [PFLobbyClaimServerLobbyCompletedStateChange](structs/pflobbyclaimserverlobbycompletedstatechange.md) | Information specific to the *ClaimServerLobbyCompleted* type of state change. |  
+| [PFLobbyCreateAndClaimServerLobbyCompletedStateChange](structs/pflobbycreateandclaimserverlobbycompletedstatechange.md) | Information specific to the *CreateAndClaimServerLobbyCompleted* type of state change. |  
 | [PFLobbyCreateAndJoinLobbyCompletedStateChange](structs/pflobbycreateandjoinlobbycompletedstatechange.md) | Information specific to the *CreateAndJoinLobbyCompleted* type of state change. |  
 | [PFLobbyDisconnectedStateChange](structs/pflobbydisconnectedstatechange.md) | Information specific to the *Disconnected* type of state change. |  
 | [PFLobbyDisconnectingStateChange](structs/pflobbydisconnectingstatechange.md) | Information specific to the *Disconnecting* type of state change. |  
@@ -79,6 +86,8 @@ ms.date: 09/09/2022
 | [PFLobbyMemberRemovedStateChange](structs/pflobbymemberremovedstatechange.md) | Information specific to the *MemberRemoved* type of state change. |  
 | [PFLobbyPostUpdateCompletedStateChange](structs/pflobbypostupdatecompletedstatechange.md) | Information specific to the *PostUpdateCompleted* type of state change. |  
 | [PFLobbySendInviteCompletedStateChange](structs/pflobbysendinvitecompletedstatechange.md) | Information specific to the *SendInviteCompleted* type of state change. |  
+| [PFLobbyServerDeleteLobbyCompletedStateChange](structs/pflobbyserverdeletelobbycompletedstatechange.md) | Information specific to the *ServerDeleteLobbyCompleted* type of state change. |  
+| [PFLobbyServerPostUpdateCompletedStateChange](structs/pflobbyserverpostupdatecompletedstatechange.md) | Information specific to the *ServerPostUpdateCompleted* type of state change. |  
 | [PFLobbyStateChange](structs/pflobbystatechange.md) | A generic, base structure representation of an event or change in state. |  
 | [PFLobbyUpdatedStateChange](structs/pflobbyupdatedstatechange.md) | Information specific to the *Updated* type of state change. |  
   

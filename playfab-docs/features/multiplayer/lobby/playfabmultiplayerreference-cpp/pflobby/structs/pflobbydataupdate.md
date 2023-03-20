@@ -1,16 +1,16 @@
 ---
 author: ScottMunroMS
 title: "PFLobbyDataUpdate"
-description: "A request to make an update to the shared portion of the lobby on behalf of a member."
+description: "A request to make an update to the shared portion of the lobby."
 ms.author: scmunro
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/15/2022
+ms.date: 02/25/2023
 ---
 
 # PFLobbyDataUpdate  
 
-A request to make an update to the shared portion of the lobby on behalf of a member.  
+A request to make an update to the shared portion of the lobby.  
 
 ## Syntax  
   
@@ -39,7 +39,7 @@ An optional, new owner of the lobby.
 This value can only be updated under one of the following conditions:
 * The member updating this field is the lobby's current owner
 * The owner migration policy is ```PFLobbyOwnerMigrationPolicy::Manual``` and there is currently no owner
-* The owner migration policy is ```PFLobbyOwnerMigrationPolicy::None```
+* The owner migration policy is ```PFLobbyOwnerMigrationPolicy::None``` <br /><br /> If this lobby is client-owned (the current owner is a title_player_account entity), the new owner must also be a title_player_account entity. If this lobby is server-owned (the current owner is a game_server entity), the new owner must also be a game_server entity.
   
 **`maxMemberCount`** &nbsp; const uint32_t*  
 *may be nullptr*  
@@ -102,6 +102,9 @@ The values of the lobby properties to update.
   
 Only the current lobby owner can update the lobby properties. <br /><br /> Lobby properties are only visible to members of the lobby.   <br /><br /> To delete a value, provide nullptr as its new value.
   
+## Remarks  
+  
+Most data in the shared portion of the lobby can only be updated by the owner. Check the documentation for each field for confirmation.
   
 ## Requirements  
   

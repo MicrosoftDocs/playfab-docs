@@ -5,7 +5,7 @@ description: "Creates a matchmaking ticket for one or more local users."
 ms.author: scmunro
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/16/2022
+ms.date: 02/25/2023
 ---
 
 # PFMultiplayerCreateMatchmakingTicket  
@@ -68,7 +68,7 @@ Type: HRESULT
   
 ## Remarks  
   
-The library automatically, and asynchronously, will submit all local users on a ticket to the matchmaking service. Each time the ticket status changes, a [PFMatchmakingTicketStatusChangedStateChange](../structs/pfmatchmakingticketstatuschangedstatechange.md) will be provided. The ticket status can be quered at any time via [PFMatchmakingTicketGetStatus()](pfmatchmakingticketgetstatus.md). The ticket immediately starts in the ```PFMatchmakingTicketStatus::Creating``` state. <br /><br /> When the ticket has completed, a [PFMatchmakingTicketStatusChangedStateChange](../structs/pfmatchmakingticketstatuschangedstatechange.md) will be provided. At that point, a match will have been found or the ticket stopped due to failure. On success, the match that was found can be queried via [PFMatchmakingTicketGetMatch()](pfmatchmakingticketgetmatch.md).   <br /><br /> All existing tickets in which a local user is a member will be canceled as part of this operation.   <br /><br /> A match can't be found until all remote users specified in the ```membersToMatchWith``` field of the ```configuration``` parameter have joined the ticket via [PFMultiplayerJoinMatchmakingTicketFromId()](pfmultiplayerjoinmatchmakingticketfromid.md).
+The library automatically, and asynchronously, will submit all local users on a ticket to the matchmaking service. Each time the ticket status changes, a [PFMatchmakingTicketStatusChangedStateChange](../structs/pfmatchmakingticketstatuschangedstatechange.md) will be provided. The ticket status can be queried at any time via [PFMatchmakingTicketGetStatus()](pfmatchmakingticketgetstatus.md). The ticket immediately starts in the ```PFMatchmakingTicketStatus::Creating``` state. <br /><br /> When the ticket has completed, a [PFMatchmakingTicketStatusChangedStateChange](../structs/pfmatchmakingticketstatuschangedstatechange.md) will be provided. At that point, a match will have been found or the ticket stopped due to failure. On success, the match that was found can be queried via [PFMatchmakingTicketGetMatch()](pfmatchmakingticketgetmatch.md).   <br /><br /> All existing tickets in which a local user is a member will be canceled as part of this operation.   <br /><br /> A match can't be found until all remote users specified in the ```membersToMatchWith``` field of the ```configuration``` parameter have joined the ticket via [PFMultiplayerJoinMatchmakingTicketFromId()](pfmultiplayerjoinmatchmakingticketfromid.md).
   
 ## Requirements  
   
