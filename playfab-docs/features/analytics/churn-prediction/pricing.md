@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Player Churn Prediction Pricing
 
-The algorithm used in Player Churn Prediction requires the most recent data to predict churn risk propensity accurately. There is one meter used to bill Player Churn Prediction - **Eligible Players.** Eligible Players are those who have logged into your game in the past 21 days. Using only the data for the past 21 days, we ensure that we are not counting any inactive players. 
+The algorithm used in Player Churn Prediction requires the most recent data to predict churn risk propensity accurately. There's one meter used to bill Player Churn Prediction - **Eligible Players.** Eligible Players are those who have logged into your game in the past 21 days. Using only the data for the past 21 days, we ensure that we aren't counting any inactive players. 
 
 PlayFab identifies Eligible Players by ingesting the required Player Data, these players are then processed into the Machine Learning (ML) Pipeline to be scored and categorized into the appropriate risk groups. Once this operation is complete, the player count within the created segments is updated to reflect the current churn risk. These steps occur on a daily basis. This ensures that PlayFab is presenting the latest data to titles at all times.
 
