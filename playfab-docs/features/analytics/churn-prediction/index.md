@@ -10,7 +10,7 @@ keywords: playfab, analytics, churn prediction, AI, ML, predictive service
 ms.localizationpriority: medium
 ---
 
-# Churn Prediction
+# Churn Prediction 
 
 Identifying churn is a key metric to reduce player attrition and increase engagement. Churn has a direct impact on revenue because players leave or stop playing a game at a certain point after playing. To provide the ability to identify and mitigate churn, PlayFab is introducing its very first Azure Artificial Intelligence (AI) and Machine Learning (ML) based Predictive Service. Directly integrated into Segmentation and with no additional integration required from Titles, Churn Prediction can be easily enabled via Game Manager.
 
