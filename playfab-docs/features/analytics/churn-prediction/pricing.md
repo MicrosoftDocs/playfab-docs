@@ -10,7 +10,7 @@ keywords: playfab, analytics, churn prediction, AI, ML, predictive service
 ms.localizationpriority: medium
 ---
 
-# Player Churn Prediction Pricing
+# Pricing for Player Churn Prediction
 
 The algorithm used in Player Churn Prediction requires the most recent data to predict churn risk propensity accurately. There's one meter used to bill Player Churn Prediction - **Eligible Players.** Eligible Players are those who have logged into your game in the past 21 days. Using only the data for the past 21 days, we ensure that we aren't counting any inactive players. 
 
