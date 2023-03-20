@@ -1,6 +1,6 @@
 ---
 title: Churn Prediction
-author: sravya-antharam
+author: sranthar
 description: PlayFab Churn Prediction Service Overview
 ms.author: sranthar
 ms.date: 03/16/2023
