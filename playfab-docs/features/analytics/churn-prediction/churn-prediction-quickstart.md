@@ -10,24 +10,29 @@ keywords: playfab, analytics, churn prediction, AI, ML, predictive service
 ms.localizationpriority: medium
 ---
 
-# Quickstart
+# Prerequisites
 
-## Create a Churn Prediction Segment and Apply Mitigation Strategy
+1. Sign in to [PlayFab portal](https://playfab.com).
+2. Navigate to your title.
 
-1.	Navigate to your **Title**
-2.	Select **Players** from the menu on the left
-3.	Move to the **Segments** Tab above
-4.	Select **New Segment** to create a new Segment. 
-5.	Add a Segment Name and Navigate to **Churn Prediction** in the Filter Dropdown. Select **High Risk** in the Churn Category
+# Create a Churn Prediction segment and apply mitigation strategy
 
+**Note** - Churn Prediction segments can only be created 48 hours after the feature has been enabled for the title.
+
+1. On the **Players** page, select the **Segments** tab at the top.
+2. Select **New Segment.**
+3. Enter a descriptive name as the **Segment name.** For example, "MyChurnPredictionSegment".
+4. Under **Players**, select **Churn Prediction** and then select **High Risk** as the churn category.
 ![Create a Segment Screenshot](Media/CreateChurnSegment.png)
 
-6.	Navigate to **Actions** and Select **Add Action**
-
+5. **Actions**, select **Add Action.**
 ![Create an Action](Media/ActionsPane.png)
 
-7.Select **Grant Virtual Currency** under Type,  select your variant of Currency and the amount you would like to grant to the player. 
+6. For **Type,** select **Grant Virtual Currency.** </br>
+   For **Virtual currency code,** select **GC (Game Coins).** </br>
+   For **Amount,** enter **50** as the amount you would like to grant to the player. </br>
 ![Grant Virtual Currency](Media/GrantCoins.png)
 
+7. Navigate back to **Segments** page to see your newly created Churn segment and the count of players within that segment.
 
-You have now created a segment with High Risk Churn Players and have applied a Mitigation Strategy to reduce your churn rate and retain your players. 
+You've successfully created a player segment for high-risk churn players and applied a mitigation strategy to reduce churn rate and retain your players.
