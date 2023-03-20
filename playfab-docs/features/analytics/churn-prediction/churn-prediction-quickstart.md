@@ -33,6 +33,6 @@ ms.localizationpriority: medium
    For **Amount,** enter **50** as the amount you would like to grant to the player. </br>
 ![Grant Virtual Currency](Media/GrantCoins.png)
 
-7. Navigate back to **Segments** page to see your newly created Churn segment and the count of players within that segment.
+7. Navigate back to **Segments** page to see your newly created churn segment and the count of players within that segment.
 
 You've successfully created a player segment for high-risk churn players and applied a mitigation strategy to reduce churn rate and retain your players.
