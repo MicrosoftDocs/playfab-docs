@@ -5,7 +5,7 @@ description: "Get the list of lobby property keys."
 ms.author: scmunro
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/16/2022
+ms.date: 03/07/2023
 ---
 
 # PFLobbyGetLobbyPropertyKeys  
@@ -46,7 +46,7 @@ Type: HRESULT
   
 ## Remarks  
   
-Lobby properties are only visible to members of the lobby. <br /><br /> If this lobby object is still in the process of asynchronously being created or joined via a call to [PFMultiplayerCreateAndJoinLobby()](pfmultiplayercreateandjoinlobby.md) or [PFMultiplayerJoinLobby()](pfmultiplayerjoinlobby.md), this method will return no keys.
+Lobby properties are only visible to members of the lobby. <br /><br /> If this lobby object is still in the process of asynchronously being created, joined, or claimed via a call to [PFMultiplayerCreateAndJoinLobby()](pfmultiplayercreateandjoinlobby.md), [PFMultiplayerCreateAndClaimServerLobby](pfmultiplayercreateandclaimserverlobby.md), [PFMultiplayerClaimServerLobby()](pfmultiplayerclaimserverlobby.md) or [PFMultiplayerJoinLobby()](pfmultiplayerjoinlobby.md), this method will return no keys.
   
 ## Requirements  
   

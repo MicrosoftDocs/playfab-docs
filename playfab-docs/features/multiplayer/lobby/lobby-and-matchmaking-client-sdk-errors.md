@@ -1,6 +1,6 @@
 ---
-title: Handling Lobby and Matchmaking Client SDK errors
-description: Guidance on how errors are surfaced in the client SDK and how titles should handle them
+title: Handling Lobby and Matchmaking C++ SDK errors
+description: Guidance on how errors are surfaced in the C++ SDK and how titles should handle them
 author: ScottMunroMS
 ms.author: scmunro
 ms.date: 11/12/2022
@@ -9,9 +9,9 @@ ms.service: playfab
 keywords: playfab, multiplayer, networking, lobby, matchmaking, async, state change, notification
 ---
 
-# Handling Lobby and Matchmaking Client SDK errors
+# Handling Lobby and Matchmaking SDK errors
 
-This page intends to serve as a quick reference for guidance on how the PlayFab Lobby and Matchmaking Client SDKs
+This page intends to serve as a quick reference for guidance on how the PlayFab Lobby and Matchmaking SDKs
 surface errors and how you should handle them.
 
 The following topics are discussed:
@@ -21,7 +21,7 @@ The following topics are discussed:
 
 ## Synchronous vs asynchronous errors
 
-Many client SDK APIs are asynchronous. You start an operation by calling an API like
+Many SDK APIs are asynchronous. You start an operation by calling an API like
 [PFMultiplayerCreateAndJoinLobby](playfabmultiplayerreference-cpp/pflobby/functions/pfmultiplayercreateandjoinlobby.md)
 and later that asynchronous operation completes with a "state change" like [PFLobbyCreateAndJoinLobbyCompletedStateChange](playfabmultiplayerreference-cpp/pflobby/structs/pflobbycreateandjoinlobbycompletedstatechange.md).
 
@@ -30,7 +30,7 @@ This means, when using asynchronous Lobby and Matchmaking Client APIs, there are
 1. synchronous errors
 2. asynchronous errors
 
-More information on the client SDK's async model and state changes can be found on the
+More information on the SDK's async model and state changes can be found on the
 [async operations](lobby-and-matchmaking-client-sdk-async.md) doc page.
 
 For synchronous APIs, such as [PFLobbyGetLobbyId](playfabmultiplayerreference-cpp/pflobby/functions/pflobbygetlobbyid.md),
@@ -71,5 +71,5 @@ These error codes can be converted to a human-readable message by calling [PFMul
 These error messages are intended to only be looked at by developers. They are not localized or intended for consumption
 by end users, so are best suited for internal development logs.
 
-Additionally a list of the client SDK's error codes with their error messages are available at
-[PlayFab Multiplayer Client SDK Error Codes](playfabmultiplayerreference-cpp/pfmultiplayererrors.md).
+Additionally a list of the SDK's error codes with their error messages are available at
+[PlayFab Multiplayer SDK Error Codes](playfabmultiplayerreference-cpp/pfmultiplayererrors.md).

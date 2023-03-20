@@ -1,16 +1,16 @@
 ---
 author: ScottMunroMS
 title: "PFLobbyPostUpdate"
-description: "Post an update to the lobby."
+description: "Post an update to the lobby as a player."
 ms.author: scmunro
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/14/2022
+ms.date: 02/25/2023
 ---
 
 # PFLobbyPostUpdate  
 
-Post an update to the lobby.  
+Post an update to the lobby as a player.  
 
 ## Syntax  
   
@@ -42,7 +42,7 @@ An optional update to apply to the shared portion of the lobby on behalf of `loc
 **`memberUpdate`** &nbsp; [PFLobbyMemberDataUpdate*](../structs/pflobbymemberdataupdate.md)  
 *optional*  
   
-An optional update to apply to the portion of the lobby owned by `localUser`. If this is not provided, `lobbyUpdate` must be provided.  
+An optional update to apply to the portion of the lobby owned by `localUser`. If this parameter is not provided, `lobbyUpdate` must be provided.  
   
 **`asyncContext`** &nbsp; void*  
 *optional*  
@@ -65,6 +65,6 @@ This is an asynchronous operation. Upon successful completion, the title will be
   
 ## See also  
 [PFLobby members](../pflobby_members.md)  
-
+[PFLobbyServerPostUpdate](pflobbyserverpostupdate.md)
   
   

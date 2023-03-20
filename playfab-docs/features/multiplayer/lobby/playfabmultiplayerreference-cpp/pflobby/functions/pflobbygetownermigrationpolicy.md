@@ -5,7 +5,7 @@ description: "Gets the owner migration policy of the lobby."
 ms.author: scmunro
 ms.topic: reference
 ms.service: playfab
-ms.date: 01/03/2022
+ms.date: 03/07/2023
 ---
 
 # PFLobbyGetOwnerMigrationPolicy  

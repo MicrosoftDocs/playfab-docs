@@ -1,6 +1,6 @@
 ---
 author: fschober-atg
-title: "PlayFab Multiplayer Client SDK Error Codes"
+title: "PlayFab Multiplayer C++ SDK Error Codes"
 description: "Error codes used by the PlayFab Multiplayer, Lobby and Matchmaking APIs"
 ms.author: fschober
 ms.topic: reference
@@ -8,11 +8,11 @@ ms.service: playfab
 ms.date: 08/19/2022
 ---
 
-# PlayFab Multiplayer Client SDK Error Codes
+# PlayFab Multiplayer C++ SDK Error Codes
 
 The following error codes are used by the PlayFab Multiplayer, Lobby and Matchmaking APIs and can be used for debugging purposes. For diagnostics, the error messages can also be retrieved at runtime via [PFMultiplayerGetErrorMessage](./pfmultiplayer/functions/pfmultiplayergeterrormessage.md).
 
-For additional guidance on handling these errors, check out [Handling Lobby and Matchmaking Client SDK errors](../lobby-and-matchmaking-client-sdk-errors.md)
+For additional guidance on handling these errors, check out [Handling Lobby and Matchmaking C++ SDK errors](../lobby-and-matchmaking-client-sdk-errors.md)
 
 ### Multiplayer
 | Hex | Dec | Description |

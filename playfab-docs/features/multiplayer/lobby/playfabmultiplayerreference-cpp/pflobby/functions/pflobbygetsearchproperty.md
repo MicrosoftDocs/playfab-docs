@@ -5,7 +5,7 @@ description: "Get the search property value from its key."
 ms.author: scmunro
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/15/2022
+ms.date: 03/07/2023
 ---
 
 # PFLobbyGetSearchProperty  
@@ -46,7 +46,7 @@ Type: HRESULT
   
 ## Remarks  
   
-Search properties are visible to non-members of the lobby as metadata which can be used to filter and sort lobby search results. <br /><br /> If this lobby object is still in the process of asynchronously being created or joined via a call to [PFMultiplayerCreateAndJoinLobby()](pfmultiplayercreateandjoinlobby.md) or [PFMultiplayerJoinLobby()](pfmultiplayerjoinlobby.md), this method will return no properties.
+Search properties are visible to non-members of the lobby as metadata which can be used to filter and sort lobby search results. <br /><br /> If this lobby object is still in the process of asynchronously being created, joined, or claimed via a call to [PFMultiplayerCreateAndJoinLobby()](pfmultiplayercreateandjoinlobby.md), [PFMultiplayerCreateAndClaimServerLobby](pfmultiplayercreateandclaimserverlobby.md), [PFMultiplayerClaimServerLobby()](pfmultiplayerclaimserverlobby.md) or [PFMultiplayerJoinLobby()](pfmultiplayerjoinlobby.md), this method will return no properties.
   
 ## Requirements  
   

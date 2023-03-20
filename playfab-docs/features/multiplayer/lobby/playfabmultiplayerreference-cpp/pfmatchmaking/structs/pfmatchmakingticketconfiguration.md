@@ -5,7 +5,7 @@ description: "Defines the configuration for a matchmaking ticket."
 ms.author: scmunro
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/15/2022
+ms.date: 02/25/2023
 ---
 
 # PFMatchmakingTicketConfiguration  
@@ -32,7 +32,7 @@ How long to attempt matchmaking the ticket, in seconds.
 **`queueName`** &nbsp; const char*  
 *is null-terminated*  
   
-The ID of a match queue.
+The name of a match queue.
   
 **`membersToMatchWithCount`** &nbsp; uint32_t  
   
