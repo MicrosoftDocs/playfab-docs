@@ -28,7 +28,7 @@ Economy v2 is designed with the same flexibility and extensibility that you woul
 
 ## Which version of Economy should I use?
 
-You should use version 2, and if you're on version 1, you should look at upgrading. Although we are _not_ deprecating v1 and will maintain and support it for all titles, it's in bugfix-only mode; also, new Economy features are being developed only for version 2.
+You should use version 2, and if you're on version 1, you should look at upgrading. Although we are _not_ deprecating v1 and will maintain and support it for all titles, it's in bugfix-only mode; also, new Economy features are being developed only for version 2. Take a look at our [FAQ](faq.md) for more information on the differences between the two versions.
 
 ## Changes in key features
 
