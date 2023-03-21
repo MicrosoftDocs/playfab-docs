@@ -7,4 +7,4 @@ ms.service: playfab
 ms.localizationpriority: medium
 ---
 > [!IMPORTANT]
-> Economy v2.0 Public Preview has released. Use these features to participate in the active development of our latest code, and provide feedback to the developers via the [PlayFab Forum](https://community.playfab.com).
+> Economy v2 is now Generally Available. For support and feedback, go to the [PlayFab Forum](https://community.playfab.com).
