@@ -12,6 +12,14 @@ ms.localizationpriority: medium
 
 # PlayFab Multiplayer C++ SDK release notes
 
+## 1.5.1
+
+March 20, 2023
+
+### New features
+
+- PlayFab Multiplayer v1.5.1 brings support for Linux and Windows Subsystem for Linux (WSL).
+
 ## 1.5.0
 
 March 16, 2023
@@ -31,14 +39,6 @@ For more information on using server-owned lobbies, see [Game servers and lobbie
 ### Bug fixes
 
 - Mitigation to reduce unexpected PubSub disconnects due to background thread contention
-
-## 1.4.4
-
-March 10, 2023
-
-### New features
-
-- PlayFab Multiplayer v1.4.4 brings support for Linux and Windows Subsystem for Linux (WSL).
 
 ## 1.4.3
 
