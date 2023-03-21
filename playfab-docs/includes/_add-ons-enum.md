@@ -6,10 +6,9 @@ ms.topic: include
 ms.service: playfab
 ms.localizationpriority: medium
 ---
-* Amazon = "Amazon"
 * Apple = "AppleAppStore"
 * Google Play = "GooglePlay"
-* Microsoft = "MicrosoftStore"
 * Nintendo = "NintendoEShop"
+* Microsoft = "MicrosoftStore"
 * PlayStation = "PlayStationStore"
 * Steam = "Steam"
