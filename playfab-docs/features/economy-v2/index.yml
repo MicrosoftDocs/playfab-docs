@@ -24,6 +24,8 @@ landingContent:
         links:
           - text: What is Economy v2?
             url: overview.md
+          - text: Economy v2 FAQ
+            url: faq.md
       - linkListType: quickstart
         links:
           - text: PlayFab quickstart

@@ -18,7 +18,7 @@ This tutorial walks you through publishing UGC with content through both APIs an
 
 ## Requirements
 
-* A [PlayFab developer account](https://developer.playfab.com/sign-up)
+* A [PlayFab developer account](https://developer.playfab.com)
 * A UGC-enabled title
 
 ## Via APIs
@@ -132,7 +132,7 @@ There are a few different ways to [upload your content to these URLs](https://cl
     ```
 
     > [!NOTE]
-    > When uploading images to items, every image must be classified with a `Type` parameter. This can either be a "Thumbnail" or a "Screenshot". Each item is limited to only one image of a "Thumbnail" type and by default, [Searches](/gaming/playfab/features/economy/ugc/search#select) will return the "Thumbnail" image (if it exists) by default.
+    > When uploading images to items, every image must be classified with a `Type` parameter. This can either be a "Thumbnail" or a "Screenshot". Each item is limited to only one image of a "Thumbnail" type and by default, [Searches](../catalog/search.md#select) will return the "Thumbnail" image (if it exists) by default.
 
 * The response will return the metadata you passed in, along with an item ID:
 
@@ -183,7 +183,7 @@ In this section, we will create a UGC item completely within the Game Manager ex
 
 ### Create the Draft Catalog Item
 
-* Navigate to the UGC page by selecting **Economy** > **Catalog (Preview)**.
+* Navigate to the UGC page by selecting **Economy** > **Catalog (v2)**.
 * Select **New item**.
 * Fill out the appropriate metadata for your UGC item:
 

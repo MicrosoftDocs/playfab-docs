@@ -18,7 +18,7 @@ Get familiarized with Player Inventories by using the PlayFab Beta SDK to purcha
 
 ## Prerequisites
 
-* A [PlayFab developer account](https://developer.playfab.com/sign-up)
+* A [PlayFab developer account](https://developer.playfab.com)
 * The PlayFab Beta SDK (You can find more information on the [Postman Quickstart](../../../sdks/postman/postman-quickstart.md#adding-playfab-collections))
 * At least one item in your catalog (You can find more information on the [Economy v2 Quickstart](../quickstart.md))
 * At least one player with sufficient virtual currency to purchase an item
@@ -49,6 +49,9 @@ In the response, grab the following fields:
 * `Items` > `Id` - Catalog ID of the item
 * `Items` > `PriceOptions` > `Prices` > `Amounts` > `ItemId` - ID of the virtual currency used to purchase the item
 * `Items` > `PriceOptions` > `Prices` > `Amounts` > `Amount` - Amount of the virtual currency needed to purchase the item
+
+> [!NOTE]
+> Only Title Entities are able to set prices for Items
 
 ## Purchase the item
 

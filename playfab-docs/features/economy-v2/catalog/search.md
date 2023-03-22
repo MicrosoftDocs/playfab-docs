@@ -55,7 +55,7 @@ The `ContinuationToken` field that is returned from a search response can be pas
 
 ## Display Properties
 
-Searches, filters, and orderings can be also done on specific `DisplayProperties` fields that are configured for custom search.  Titles can configure their custom search and filter properties in the [Display Properties Mappings setting](/gaming/playfab/features/economy/ugc/settings#display-properties) in Game Manager.
+Searches, filters, and orderings can be also done on specific `DisplayProperties` fields that are configured for custom search.  Titles can configure their custom search and filter properties in the [Display Properties Mappings setting](/gaming/playfab/features/economy-v2/settings#display-properties) in Game Manager.
 
 ![Display Properties screenshot in Game Manager](../media/displayproperties.png)
 
@@ -137,7 +137,7 @@ The filter below will check for any items that have a contents field with non-nu
 ```
 
 > [!NOTE]
-> By default, Search will **NOT** return contents for items unless specified with a [Select](/gaming/playfab/features/economy/ugc/search#select) statement. If the above query is run without a `"Select": "contents"`` statement, it will correctly apply the filter but all returned Search results will have empty content fields
+> By default, Search will **NOT** return contents for items unless specified with a [Select](/gaming/playfab/features/economy-v2/catalog/search#select) statement. If the above query is run without a `"Select": "contents"`` statement, it will correctly apply the filter but all returned Search results will have empty content fields
 
 ### Filtering by Display Properties
 
@@ -211,6 +211,7 @@ By Default, Search returns a rich set of item metadata:
 * `LastModifiedDate`
 * `CreatorEntityKey` (`CreatorId` in earlier API versions)
 * `DisplayProperties`
+* `ItemReferences`
 
 Only the neutral strings used in title and description are returned by default. If a Thumbnail image exists, it's returned by default. Each item is limited to only one image of a "Thumbnail" type.
 
@@ -241,9 +242,16 @@ The complexity of search filter queries is limited per request. Expensive querie
 
 High complexity filter queries will throw a 400 error with a message: `"The filter provided in the request does not meet the complexity requirements for source"`.
 
-## Escaping special characters
+## Searching a Store
 
-In order to use any of the special characters as part of the search text, escape the character by prefixing it with a double backslash (`\\`). For example, for a wildcard search on `https://`, where `://` is part of the query string, you would specify `"Search":"https\\:\\/\\/*"`. Similarly, an escaped phone number pattern might look like this `\\+1 \\(800\\) 642\\-7676`.
+One of the properties you can pass in is the `Store` parameter. This allows you to search within the context of a store. In addition to being able to check if an item exists in a particular store, it also can be used to display the overridden prices of the store's items/contents. You can also use the `AlternateId` of the store to search for it. Learn more about using stores [here](../stores.md)
 
-Special characters that require escaping:
-`\+ -  | ! ( ) { } [ ] ^ " ~ ? : \ /`
+```json
+{
+  "Search": "",
+  "Filter": "ContentType eq 'weapons'",
+  "Store": {
+    "Id": "{{StoreID}}"
+  },
+}
+```

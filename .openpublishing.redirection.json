@@ -162,8 +162,8 @@
         },
         {
             "source_path": "playfab-docs/features/commerce/ugc/limits.md",
-            "redirect_url": "/gaming/playfab/features/economy-v2/catalog/limits",
-            "redirect_document_id": true
+            "redirect_url": "/gaming/playfab/features/economy-v2/limits",
+            "redirect_document_id": false
         },
         {
             "source_path": "playfab-docs/features/commerce/ugc/tutorials.md",
@@ -188,6 +188,11 @@
         {
             "source_path": "playfab-docs/features/pricing/Meters/ugc-meters.md",  
             "redirect_url": "/gaming/playfab/features/pricing/Meters/catalog-meters",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "playfab-docs/features/economy-v2/catalog/limits.md",  
+            "redirect_url": "/gaming/playfab/features/economy-v2/limits",
             "redirect_document_id": true
         }
     ]

@@ -262,7 +262,7 @@ More information about stacks can be found [here](stacks.md).
 
 You can use the `ExecuteInventoryOperations` API to batch multiple inventory operations in a single request. Operations will happen in request order specified and if an operation is unable to be performed, the whole set of operations is canceled.
 
-The `ExecuteInventoryOperations` takes in an `Operation` parameter that is a list of operations. There can be at most five operations in the `Operation` list but operation types can repeat (for example, 5 Add operations are valid). The valid operation types are:
+The `ExecuteInventoryOperations` takes in an `Operation` parameter that is a list of operations. There can be at most ten operations in the `Operation` list but operation types can repeat (for example, 10 Add operations are valid). There is also a limit to 250 items that can be modified/added in a single request. For example, adding a bundle with 50 items counts as 50 items modified. The valid operation types are:
 
 * Add
 * Subtract

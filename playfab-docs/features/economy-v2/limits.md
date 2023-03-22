@@ -1,7 +1,7 @@
 ---
 title: Catalog Limits
 author: wesjong
-description: Document detailing the various limits surrounding Catalog and UGC.
+description: Document detailing the various limits surrounding Economy V2.
 ms.author: wesjong
 ms.date: 03/17/2021
 ms.topic: article
@@ -12,9 +12,9 @@ ms.localizationpriority: medium
 
 # Limits
 
-[!INCLUDE [notice](../../../includes/_economy-release.md)]
+[!INCLUDE [notice](../../includes/_economy-release.md)]
 
-The purpose of this guide is to detail the limits that are enforced when creating, updating, and reading from your catalog of items.
+The purpose of this guide is to detail the limits that are enforced when creating, updating, and reading from your catalog of items and adding, updating, and removing them from player inventories.
 
 ## Item Creation/Updates
 
@@ -56,12 +56,12 @@ These limits affect calls to APIs that query items and their properties (such as
 
 ### Maximum Page Size
 
-The following are the maximum count of items returned for the various APIs. You can use [continuation tokens](/gaming/playfab/features/economy/ugc/search#continuation-tokens) to paginate through results that return greater than the limit.
+The following are the maximum count of items returned for the various APIs. You can use [continuation tokens](/gaming/playfab/features/economy-v2/catalog/search#continuation-tokens) to paginate through results that return greater than the limit.
 
 * `SearchItems` - 50 Items
-* `GetDraftItems` - 25 Items
-* `GetItems` - 25 Items
-* `GetItemReviews` - 25 Items
+* `GetDraftItems` - 50 Items
+* `GetItems` - 50 Items
+* `GetItemReviews` - 50 Items
 
 ### Filter Complexity
 
