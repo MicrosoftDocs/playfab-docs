@@ -21,5 +21,7 @@ items:
     href: fraud-prevention/toc.yml
   - name: Settings
     href: settings.md
+  - name: Limits
+    href: limits.md
   - name: Tutorials
     href: tutorials/toc.yml
