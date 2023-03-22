@@ -24,6 +24,8 @@ Assuming you've already worked through the [Getting started for developers](../.
 
 ### Step 1 – Get permissions
 
+First step is to enable the catalog. This can be done in the settings page in the Game Manager UI under ⚙️ `Title Settings` > `Economy (V2)`. You can use the `UpdateCatalogConfig` API and set the `IsCatalogEnabled` flag to true.
+
 To interact with the Catalog you either need to Log into GameManger and use the site tools, or get an Entity Token for using the APIs. The easiest way to get an entity token is with the [GetEntityToken](/rest/api/playfab/authentication/authentication/get-entity-token) API.
 
 > [!NOTE]
@@ -413,7 +415,7 @@ Your entity player will need virtual currency in order to make a Purchase.
 
 #### [API](#tab/grant-currency-api)
 
-You can call [AddInventoryItems](/rest/api/playfab/economy/inventory/addinventoryitems) to add currency to an Entity Wallet. By default, you need to use Title Level Entity Auth to arbitrarily add virtual currencies to a player’s inventory.
+You can call [AddInventoryItems](/rest/api/playfab/economy/inventory/add-inventory-items) to add currency to an Entity Wallet. By default, you need to use Title Level Entity Auth to arbitrarily add virtual currencies to a player’s inventory.
 
 ***
 

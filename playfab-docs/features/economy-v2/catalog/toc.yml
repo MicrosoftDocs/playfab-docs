@@ -7,8 +7,6 @@ items:
   href: etags.md
 - name: Item status and moderation
   href: item-status.md
-- name: Limits
-  href: limits.md
 - name: Localization
   href: localization.md
 - name: Ratings and reviews
