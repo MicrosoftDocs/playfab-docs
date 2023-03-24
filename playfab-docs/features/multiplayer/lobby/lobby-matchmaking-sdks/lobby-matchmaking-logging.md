@@ -26,6 +26,7 @@ The type of logs and the way logging should be configured/captured depends on a 
 | Platform | Log format | Logging instruction guidance location |
 |------------|------------|------------|
 | Android | Plain text | Coming soon. |
+| Linux | Plain text | See `Logging` section of `docs/README.md` file included in SDK package. |
 | Switch | Plain text | See `Logging` section of `README.md` file included in a NuGet package for this SDK. |
 | PlayStation 4 | Plain text | See `Logging` section of `README.md` file included in a NuGet package for this SDK. |
 | PlayStation 5 | Plain text | See `Logging` section of `README.md` file included in a NuGet package for this SDK. |
