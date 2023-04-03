@@ -47,6 +47,7 @@ namespace MyGame {
 
 void CreateLobbyWithSearchProperties()
 {
+    // Initialize the lobby configuration with search properties
     std::string playerSkill = std::to_string(MyGame::GetPlayerSkill());
 
     const char* searchPropertyKeys[] = {
@@ -67,12 +68,17 @@ void CreateLobbyWithSearchProperties()
     lobbyConfiguration.searchPropertyKeys = searchPropertyKeys;
     lobbyConfiguration.searchPropertyValues = searchPropertyValues;
 
+    // Initialize an empty join configuration. This can be optionally initialized with the creator's member properties 
+    PFLobbyJoinConfiguration creatorMemberConfiguration{};
+    creatorMemberConfiguration.memberPropertyCount = 0;
+
+    // Create and join the lobby
     PFLobbyHandle lobby;
     HRESULT hr = PFMultiplayerCreateAndJoinLobby(
         g_pfmHandle,
         &m_localUser,
         &lobbyConfiguration,
-        nullptr,
+        &creatorMemberConfiguration,
         nullptr,
         &lobby);
 }
