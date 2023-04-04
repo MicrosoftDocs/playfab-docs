@@ -14,6 +14,14 @@ ms.localizationpriority: medium
 
 PlayFab Party had a significant (up to 90%) price drop on October 13, 2020. You can view the updated Party rates on the [Pricing page](https://playfab.com/pricing). For more information about the price drop, see our [blog post](https://blog.playfab.com/blog/starting-today-save-up-to-90-using-playfab-party).
 
+## 1.7.22
+
+March 30, 2023
+
+### Bug fixes
+- Fix a bug where an application/game using Party can crash when the process is exiting.
+- Changed behavior for peer-to-peer connection to fallback to a relayed connection if the link is disconnected unexpectedly.
+
 ## 1.7.20
 
 February 8, 2023
