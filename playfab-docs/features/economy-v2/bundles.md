@@ -30,44 +30,45 @@ To create a bundle, you must first make sure you have published Catalog Items, C
 You can use the `CreateDraftItem` to create a bundle.
 
 ```json
+
 {
   "Item": {
-   "Type": "bundle",
+    "Type": "bundle",
     "Title": {
-      "NEUTRAL": "My First bundle",
+      "NEUTRAL": "My First Bundle"
     },
-    "StartDate": "2022-09-07T00:01:00.0000000Z",
-    "ItemReferences":[
-      {
-        "Id":"LaserSword",
-        "Amount": 1,
-        "PriceOptions": {
-          "Prices": [{
-            "Amounts": [{
-              "ItemId": "Diamond",
-              "Amount": 1
-            }]
-          }]
-        }
-      },
-      {
-      "Id":"WeaponBundle",
-      "PriceOptions": {
-        "Prices": [{
-          "Amounts": [{
-            "ItemId": "Gold",
-            "Amount": 10
-          },
-          {
-            "ItemId": "Silver",
-            "Amount": 10
-          }]
+    
+    "StartDate": "2023-03-07T00:01:00.0000000Z",
+    "ItemReferences":
+        [{
+            "Id":"{{LaserSwordID}}",
+            "Amount": 2
+        }, 
+        {
+            "Id":"{{LaserGunID}}", 
+            "Amount": 2
         }],
-      },
-    }]
-  },
+
+    "PriceOptions": {
+        "Prices": [
+        {
+              "Amounts": [
+                {
+                    "ItemId": "{{DiamondID}}",
+                    "Amount": 5
+                },
+                {
+                    "ItemId": "{{GoldID}}",
+                    "Amount": 10
+                }
+                ]
+        }
+         ]
+          }
+        },
   "Publish": true
 }
+
 ```
 
 ***
@@ -76,14 +77,16 @@ Response:
 
 ```json
 {
-  "code": 202,
-  "status": "Accepted",
-  "Item": {
-    "Type": "bundle",
-    "Id": "{ID}", 
-    "Title": {
-      "NEUTRAL": "My First Bundle",
-    },
+    "code": 200,
+    "status": "OK",
+    "data": {
+        "Item": {
+            "Id": "{{BundleID}}",
+            "Type": "bundle",
+            "AlternateIds": [],
+            "Title": {
+                "NEUTRAL": "My First Bundle"
+            },
     ...
 }
 ```
