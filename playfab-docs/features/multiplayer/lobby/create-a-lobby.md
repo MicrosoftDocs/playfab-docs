@@ -59,11 +59,10 @@ In this code snippet, Lobby properties are passed in as __lobbyConfiguration__ a
     // Retrieved elsewhere from one of PlayFab's title_player_account login APIs
     const PFEntityKey* clientOwner = m_localPlayerTitlePlayerAccounts[0];
 
+    // Initialize the lobby configuration
     const char* gameModePropertyKey = "GameMode";
     const char* gameModePropertyValue = "GameMode_Foo";
-    const char* playerColorPropertyKey = "PlayerColor";
-    const char* playerColorPropertyValue = "Red";
-    
+
     PFLobbyCreateConfiguration lobbyConfiguration{};
     lobbyConfiguration.maxMemberCount = 16;
     lobbyConfiguration.ownerMigrationPolicy = PFLobbyOwnerMigrationPolicy::Automatic;
@@ -72,6 +71,10 @@ In this code snippet, Lobby properties are passed in as __lobbyConfiguration__ a
     lobbyConfiguration.lobbyPropertyKeys = &gameModePropertyKey;
     lobbyConfiguration.lobbyPropertyValues = &gameModePropertyValue;
     
+    // Initialize the creator's member properties
+    const char* playerColorPropertyKey = "PlayerColor";
+    const char* playerColorPropertyValue = "Red";
+
     PFLobbyJoinConfiguration creatorMemberConfiguration{};
     creatorMemberConfiguration.memberPropertyCount = 1;
     creatorMemberConfiguration.memberPropertyKeys = &playerColorPropertyKey;
@@ -79,7 +82,13 @@ In this code snippet, Lobby properties are passed in as __lobbyConfiguration__ a
 
     // Create a lobby using our first player
     PFLobbyHandle lobby;
-    HRESULT error = PFMultiplayerCreateAndJoinLobby(apiHandle, clientOwner, &lobbyConfiguration, &creatorMemberConfiguration, nullptr, &lobby);
+    HRESULT error = PFMultiplayerCreateAndJoinLobby(
+        apiHandle,
+        clientOwner,
+        &lobbyConfiguration,
+        &creatorMemberConfiguration,
+        nullptr,
+        &lobby);
 ```
 
 When the call to create a lobby completes, a [PFLobbyCreateAndJoinLobbyCompletedStateChange](playfabmultiplayerreference-cpp/pflobby/structs/pflobbycreateandjoinlobbycompletedstatechange.md) will be provided by [PFMultiplayerStartProcessingLobbyStateChanges](playfabmultiplayerreference-cpp/pflobby/functions/pfmultiplayerstartprocessinglobbystatechanges.md).
@@ -98,6 +107,7 @@ This example is similar to the [client-owned lobby example](#example-creating-a-
     const char* gameModePropertyKey = "GameMode";
     const char* gameModePropertyValue = "GameMode_Foo";
     
+    // Initialize the lobby configuration
     PFLobbyCreateConfiguration lobbyConfiguration{};
     lobbyConfiguration.maxMemberCount = 16;
     lobbyConfiguration.ownerMigrationPolicy = PFLobbyOwnerMigrationPolicy::Automatic;
@@ -108,7 +118,12 @@ This example is similar to the [client-owned lobby example](#example-creating-a-
     
     // Create a lobby using our first player
     PFLobbyHandle lobby;
-    HRESULT error = PFMultiplayerCreateAndClaimServerLobby(apiHandle, serverOwner, &lobbyConfiguration, nullptr, &lobby);
+    HRESULT error = PFMultiplayerCreateAndClaimServerLobby(
+        apiHandle,
+        serverOwner,
+        &lobbyConfiguration,
+        nullptr,
+        &lobby);
 ```
 
 When the call to create a lobby completes, a [PFLobbyCreateAndClaimServerLobbyCompletedStateChange](playfabmultiplayerreference-cpp/pflobby/structs/pflobbycreateandclaimserverlobbycompletedstatechange.md) will be provided by [PFMultiplayerStartProcessingLobbyStateChanges](playfabmultiplayerreference-cpp/pflobby/functions/pfmultiplayerstartprocessinglobbystatechanges.md).
