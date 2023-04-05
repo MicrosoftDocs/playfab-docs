@@ -34,9 +34,7 @@ Here's a brief snippet which demonstrates passing a connection string to the __P
 
 In this snippet, the connection string could be provided by any of the discovery mechanisms mentioned above: in-game invites, platform-specific invites, or filtered lobby searches.
 ```cpp
-//
-// Set some initial member properties for the newly joining member
-//
+// Initialize the member properties for the newly joining member
 const char* playerColorPropertyKey = "PlayerColor";
 const char* playerColorPropertyValue = MyGame::GetPlayerColorString(localUser);
 
@@ -45,9 +43,7 @@ joinConfig.memberPropertyCount = 1;
 joinConfig.memberPropertyKeys = &playerColorPropertyKey;
 joinConfig.memberPropertyValues = &playerColorPropertyValue;
 
-//
 // Join the lobby using the connection string
-//
 HRESULT hr = PFMultiplayerJoinLobby(
     g_pfmHandle,
     &localUser,
