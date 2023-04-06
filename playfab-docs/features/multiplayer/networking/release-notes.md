@@ -19,8 +19,8 @@ PlayFab Party had a significant (up to 90%) price drop on October 13, 2020. You 
 March 30, 2023
 
 ### Bug fixes
-- Fix a bug where an application/game using Party can crash when the process is exiting.
-- Changed behavior for peer-to-peer connection to fallback to a relayed connection if the link is disconnected unexpectedly.
+- Fixed a bug where Party could crash if it was not cleaned up before the host process started exiting.
+- Changed behavior for peer-to-peer connection to fallback to a relayed connection if the link is disconnected unexpectedly, previous behavior would disconnect both the devices from the network.
 
 ## 1.7.20
 
