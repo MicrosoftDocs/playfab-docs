@@ -57,14 +57,6 @@
       href: events/entity-objects-set.md
     - name: entity_virtual_currency_balances_changed
       href: events/entity-virtual-currency-balances-changed.md
-    - name: gamelobby_ended
-      href: events/gamelobby-ended.md
-    - name: gamelobby_started
-      href: events/gamelobby-started.md
-    - name: gameserverhost_started
-      href: events/gameserverhost-started.md
-    - name: gameserverhost_stopped
-      href: events/gameserverhost-stopped.md
     - name: group_created
       href: events/group-created.md
     - name: group_deleted
@@ -161,16 +153,10 @@
       href: events/player-executed-cloudscript.md
     - name: player_inventory_item_added   
       href: events/player-inventory-item-added.md
-    - name: player_joined_lobby 
-      href: events/player-joined-lobby.md
-    - name: player_left_lobby 
-      href: events/player-left-lobby.md
     - name: player_linked_account 
       href: events/player-linked-account.md
     - name: player_logged_in 
       href: events/player-logged-in.md
-    - name: player_matched_with_lobby 
-      href: events/player-matched-with-lobby.md
     - name: player_profile_memberships
       href: events/data-types/playermemberships.md
     - name: player_profile_subscriptions
@@ -223,10 +209,6 @@
       href: events/sent-email.md
     - name: sent_push_notification  
       href: events/sent-push-notification.md
-    - name: session_ended  
-      href: events/session-ended.md
-    - name: session_started 
-      href: events/session-started.md
     - name: studio_created  
       href: events/studio-created.md
     - name: studio_tier_updated  
@@ -261,10 +243,6 @@
       href: events/title-deleted-task.md
     - name: title_exceeded_limit  
       href: events/title-exceeded-limit.md
-    - name: title_game_build_added  
-      href: events/title-game-build-added.md
-    - name: title_game_build_modified 
-      href: events/title-game-build-modified.md
     - name: title_high_error_rate_alert 
       href: events/title-high-error-rate-alert.md
     - name: title_initiated_player_password_reset  
