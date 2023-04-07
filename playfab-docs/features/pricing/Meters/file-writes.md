@@ -27,9 +27,6 @@ The following APIs cause the Content & Configuration writes meter to increment.
 - [DeleteContent](/rest/api/playfab/admin/content/delete-content?view=playfab-rest&preserve-view=true)
   Delete a content file from the title. When deleting a file that does not exist, it returns success.
 
--[ModifyMatchmakerGameModes](/rest/api/playfab/admin/matchmaking/get-matchmaker-game-modes)
-    Updates the game server mode details for the specified game server executable
-
 -[ResetPassword](/rest/api/playfab/admin/account-management/reset-password?view=playfab-rest&preserve-view=true)
     Reset a player's password for a given title.
 

@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 
 ## Overview
 
-The PlayFab Matchmaking feature provides a great way to build matchmaking into your game and offers a simple, yet powerful system to help your users find each other. This feature is an upgrade to PlayFab's existing matchmaker and uses the proven capabilities of Xbox Live's SmartMatch.
+The PlayFab Matchmaking feature provides a great way to build matchmaking into your game and offers a simple, yet powerful system to help your users find each other. This feature is an upgrade to PlayFab's existing matchmaker (deprecated) and uses the proven capabilities of Xbox Live's SmartMatch.
 
 This marks the first time the firmly established technology of Xbox Live matchmaking has been available outside of the Xbox Live ecosystem, and it will be available to you
 *everywhere* via PlayFab.

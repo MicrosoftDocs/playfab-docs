@@ -1,8 +1,8 @@
 ---
 title: Scaling Standby
-author: lesterjackson
+author: joannaleecy
 description: PlayFab’s scaling capabilities enable developers to adjust game server hosting capacity to meet actual player demand.
-ms.author: lejackso
+ms.author: joanlee
 ms.date: 03/22/2021
 ms.topic: article
 ms.service: playfab

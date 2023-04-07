@@ -501,14 +501,8 @@ Creates and updates the title-specific custom data for the user which is readabl
 - [MoveItemToUserFromCharacter](/rest/api/playfab/server/player-item-management/moveitemtouserfromcharacter?)
     Moves an item from a character's inventory into the owning user's inventory.
 
-- [NotifyMatchmakerPlayerLeft](/rest/api/playfab/server/matchmaking/notifymatchmakerplayerleft?)
-    Informs the PlayFab match-making service that the user specified has left the Game Server Instance.
-
 - [RedeemCoupon](/rest/api/playfab/server/player-item-management/redeemcoupon?)
     Adds the virtual goods associated with the coupon to the user's inventory. Coupons can be generated via the Economy->Catalogs tab in the PlayFab Game Manager.
-
-- [RedeemMatchmakerTicket](/rest/api/playfab/server/matchmaking/redeemmatchmakerticket?)
-    Validates a Game Server session ticket and returns details about the user.
 
 - [RemoveFriend](/rest/api/playfab/server/friend-list-management/removefriend?)
     Removes the specified friend from the user's friend list.

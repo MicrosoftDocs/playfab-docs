@@ -194,6 +194,61 @@
             "source_path": "playfab-docs/features/economy-v2/catalog/limits.md",  
             "redirect_url": "/gaming/playfab/features/economy-v2/limits",
             "redirect_document_id": true
+        },
+        {
+            "source_path": "playfab-docs/api-references/events/gamelobby-ended.md",  
+            "redirect_url": "/gaming/playfab/features/multiplayer/lobby/lobby-and-matchmaking-real-time-notifications",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/api-references/events/gamelobby-started.md",  
+            "redirect_url": "/gaming/playfab/features/multiplayer/lobby/lobby-and-matchmaking-real-time-notifications",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/api-references/events/gameserverhost-started.md",  
+            "redirect_url": "/gaming/playfab/features/multiplayer/lobby/lobby-and-matchmaking-real-time-notifications",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/api-references/events/gameserverhost-stopped.md",  
+            "redirect_url": "/gaming/playfab/features/multiplayer/lobby/lobby-and-matchmaking-real-time-notifications",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/api-references/events/player-joined-lobby.md",  
+            "redirect_url": "/gaming/playfab/features/multiplayer/lobby/lobby-and-matchmaking-real-time-notifications",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/api-references/events/player-left-lobby.md",  
+            "redirect_url": "/gaming/playfab/features/multiplayer/lobby/lobby-and-matchmaking-real-time-notifications",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/api-references/events/player-matched-with-lobby.md",  
+            "redirect_url": "/gaming/playfab/features/multiplayer/lobby/lobby-and-matchmaking-real-time-notifications",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/api-references/events/session-ended.md",  
+            "redirect_url": "/gaming/playfab/features/multiplayer/lobby/lobby-and-matchmaking-real-time-notifications",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/api-references/events/session-started.md",  
+            "redirect_url": "/gaming/playfab/features/multiplayer/lobby/lobby-and-matchmaking-real-time-notifications",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/api-references/events/title-game-build-added.md",  
+            "redirect_url": "/gaming/playfab/features/multiplayer/lobby/lobby-and-matchmaking-real-time-notifications",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/api-references/events/title-game-build-modified.md",  
+            "redirect_url": "/gaming/playfab/features/multiplayer/lobby/lobby-and-matchmaking-real-time-notifications",
+            "redirect_document_id": false
         }
     ]
 }

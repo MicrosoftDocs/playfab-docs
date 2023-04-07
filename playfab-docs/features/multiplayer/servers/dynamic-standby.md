@@ -1,8 +1,8 @@
 ---
 title: Dynamic Standby
-author: lesterjackson
+author: joannaleecy
 description: Dynamic Standby is an auto scaling enhancement that monitors standby server threshold levels and dynamically activates increased provisioning of game servers to meet demand at scale.
-ms.author: lejackso
+ms.author: joanlee
 ms.date: 03/22/2021
 ms.topic: article
 ms.service: playfab
