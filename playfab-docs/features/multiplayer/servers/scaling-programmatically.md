@@ -1,8 +1,8 @@
 ---
 title: Scaling Programmatically
-author: lesterjackson
+author: joannaleecy
 description: Scaling Programmatically with the Multiplayer Servers API
-ms.author: lejackso
+ms.author: joanlee
 ms.date: 03/22/2021
 ms.topic: article
 ms.service: playfab

@@ -1,8 +1,8 @@
 ---
 title: Managing Summary
-author: lesterjackson
+author: joannaleecy
 description: Managing Summary
-ms.author: lejackso
+ms.author: joanlee
 ms.date: 11/30/2020
 ms.topic: article
 ms.service: playfab
@@ -18,17 +18,17 @@ To access the quota usage page, navigate to the Multiplayer | Servers | Quota me
 
 ## Monitoring peak core usage per region
 
-At the top of the quota usage page is a chart that visualizes peak core usage across the selected regions.  Each plot  represents the peak usage of the cores quota allocated to a region.  The image below demonstrates the peak percentage of cores quota consumed on November 14th, 2020 at 3:32 UTC.  The South Central US region, for example consumed 27% of its quota at that specific date & time.  This further detail of regional quota usage is surfaced in a tooltip when hovering over the plot lines. Users can select the regions plotted on the graph using the dropdown menu located on the top right corner. By default, the regions with the highest percentage of usage are selected.
+At the top of the quota usage page is a chart that visualizes peak core usage across the selected regions.  Each plot  represents the peak usage of the cores quota allocated to a region.  The image below demonstrates the peak percentage of cores quota consumed on November 14, 2020 at 3:32 UTC.  The South Central US region, for example consumed 27% of its quota at that specific date & time.  This further detail of regional quota usage is surfaced in a tooltip when hovering over the plot lines. Users can select the regions plotted on the graph using the dropdown menu located on the top right corner. By default, the regions with the highest percentage of usage are selected.
 
 ![Quota Summary Region](media/quota-summary-peak_core_usage_region.png)
 
 ## Monitoring peak core usage per build
 
-The quota usage page also tabulates peak core usage for every build within a region.  Like the visualization chart described above, the peak core usage table reports the percentage of peak quota core usage per VM SKU family per region.  This level of detail can enhance the ability to anticipate or diagnose scaling issues quickly, efficiently, and easily.  For example, the image below illustrates core usage across 3 regions: West Europe, South Central US, and West US.  Each table row surfaces the peak core usage and total core quota allocated per region.  West Europe is operating at a higher usage (47%) than South Central US (35%) or West US (28%).  Expanding a VM family using the chevron button next to the family lists the builds of that region/family which includes their peak usage.
+The quota usage page also tabulates peak core usage for every build within a region.  Like the visualization chart described above, the peak core usage table reports the percentage of peak quota core usage per VM SKU family per region.  This level of detail can enhance the ability to anticipate or diagnose scaling issues quickly, efficiently, and easily.  For example, the image below illustrates core usage across three regions: West Europe, South Central US, and West US.  Each table row surfaces the peak core usage and total core quota allocated per region.  West Europe is operating at a higher usage (47%) than South Central US (35%) or West US (28%).  Expanding a VM family using the chevron button next to the family lists the builds of that region/family that includes their peak usage.
 
 ![Quota Summary Build](media/quota-summary-peak_core_usage_build.png)
 
-It is important to note that the peak core usage reported in the table is dependent on the time series selected at the top of the quota summary page.  The peak core usage metrics reported in the image above can change if the time series selection is changed.  For example, while West Europe may experience the highest peak core usage within the last hour, it may experience lower peak core usage than East US or West US if the time series selection is changed to the last 7 days or last 30 days.
+It's important to note that the peak core usage reported in the table is dependent on the time series selected at the top of the quota summary page.  The peak core usage metrics reported in the image above can change if the time series selection is changed.  For example, while West Europe may experience the highest peak core usage within the last hour, it may experience lower peak core usage than East US or West US if the time series selection is changed to the last seven days or last 30 days.
 
 **Interpreting Peak core usage readings**
 
@@ -59,7 +59,7 @@ Total quota | Core quota allocated to region/family pair | 45,000 Dv2 cores
 
 __Detail CSV__
 
-The detail CSV contains the data that also produces the peak core usage table but with additional data sampled at 1 minute intervals.  Therefore a detailed export of a peak core usage table filtered for the last  hour containing a single build deployed in 1 region will produce approximately 60 rows (i.e. 1 build & region row per minute).  The schema of the CSV are:
+The detail CSV contains the data that also produces the peak core usage table but with additional data sampled at 1-minute intervals.  Therefore a detailed export of a peak core usage table filtered for the last hour containing a single build deployed in one region produces approximately 60 rows. For example, one build and region row per minute.  The schema of the CSV is:
 
 CSV Fields | Description | Example
 ------------ | ------------- | -------------
@@ -79,7 +79,7 @@ The Quota Summary page is a powerful resource to help detect core quota problems
 
 **Status indicators**
 
-The build usage table exposes a status indicator adjacent to the region name and the builds within the region.  The indicators include:
+The build usage table exposes a status indicator next to the region name and the builds within the region.  The indicators include:
 
 ![Healthy](media/buildstatus_healthy.svg "Healthy") Healthy: Usage is 80% below quota limits<br>
 ![Deleted](media/buildstatus_deleted.svg "Deleted") Deleted: The build was deleted after its usage was recorded<br>
