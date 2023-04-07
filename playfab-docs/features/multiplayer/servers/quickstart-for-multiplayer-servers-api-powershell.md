@@ -1,8 +1,8 @@
 ---
 title: "Walkthrough: Deploy builds using PowerShell/API"
-author: lesterjackson
+author: joannaleecy
 description: "Walkthrough: Deploy builds using PowerShell/API"
-ms.author: lejackso
+ms.author: joanlee
 ms.date: 04/01/2021
 ms.topic: article
 ms.service: playfab

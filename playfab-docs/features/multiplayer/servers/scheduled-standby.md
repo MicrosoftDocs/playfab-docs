@@ -1,8 +1,8 @@
 ---
 title: Scheduled Standby
-author: lesterjackson
+author: joannaleecy
 description: Scheduled Standby is an auto scaling enhancement that adjusts standby server levels at a single or recurring scheduled date & time.
-ms.author: lejackso
+ms.author: joanlee
 ms.date: 03/22/2021
 ms.topic: article
 ms.service: playfab

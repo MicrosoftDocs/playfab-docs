@@ -1,8 +1,8 @@
 ---
 title: OS Patch level updates for Windows 
-author: lesterjackson
+author: joannaleecy
 description: Describes OS patch level cycle
-ms.author: lejackso
+ms.author: joanlee
 ms.date: 03/30/2021
 ms.topic: article
 ms.service: playfab
