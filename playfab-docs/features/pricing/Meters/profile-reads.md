@@ -87,12 +87,6 @@ The following APIs cause the Profile read meter to increment.
 - [ListVirtualCurrencyTypes](/rest/api/playfab/admin/title-wide-data-management/list-virtual-currency-types?view=playfab-rest&preserve-view=true)
     Retuns the list of all defined virtual currencies for the title
 
-- [GetMatchmakerGameInfo](/rest/api/playfab/admin/matchmaking/get-matchmaker-game-info?view=playfab-rest&preserve-view=true)
-    Retrieves the details for a specific completed session, including links to standard out and standard error logs.
-
-- [GetMatchmakerGameModes](/rest/api/playfab/admin/matchmaking/get-matchmaker-game-modes?view=playfab-rest&preserve-view=true)
-    Retrieves the details of defined game modes for the specified game server executable.
-
 - [GetPlayerIdFromAuthToken](/rest/api/playfab/admin/account-management/get-player-id-from-auth-token?view=playfab-rest&preserve-view=true)
     Gets a player's ID from an auth token.
 
@@ -139,9 +133,6 @@ The following APIs cause the Profile read meter to increment.
 
 - [GetFriendsList](/rest/api/playfab/client/friend-list-management/get-friends-list?view=playfab-rest&preserve-view=true)
     Retrieves the current friend list for the local user, constrained to users who have PlayFab accounts. Friends from linked accounts (Facebook, Steam) are also included. You may optionally exclude some linked services' friends.
-
-- [GetGameServerRegions](/rest/api/playfab/client/matchmaking/get-game-server-regions?view=playfab-rest&preserve-view=true)
-    Get details about the regions hosting game servers matching the given parameters.
 
 - [GetLeaderboard](/rest/api/playfab/client/player-data-management/get-leaderboard?view=playfab-rest&preserve-view=true)
     Retrieves a list of ranked users for the given statistic, starting from the indicated point in the leaderboard.
@@ -273,9 +264,6 @@ The following APIs cause the Profile read meter to increment.
 
 - [LoginWithXbox](/rest/api/playfab/client/authentication/loginwithxbox?view=playfab-rest&preserve-view=true)
     Signs the user in using a Xbox Live Token, returning a session identifier that can subsequently be used for API calls which require an authenticated user.
-
-- [GetCurrentGames](/rest/api/playfab/client/matchmaking/get-current-games?view=playfab-rest&preserve-view=true)
-    Get details about all current running game servers matching the given parameters.
 
 - [GetPlayerCombinedInfo](/rest/api/playfab/client/account-management/get-player-combined-info?view=playfab-rest&preserve-view=true)
     Retrieves all of the user's different kinds of info.

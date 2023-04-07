@@ -240,20 +240,11 @@ Each event type has a set of properties that are included as part of event's dat
 - [player_inventory_item_added](player-inventory-item-added.md)  
   This event is triggered when an item is granted to a player. 
 
-- [player_joined_lobby](player-joined-lobby.md)  
-  This event is triggered when a player joins a multiplayer game session. 
-
-- [player_left_lobby](player-left-lobby.md)  
-  This event is triggered when a player leaves a multiplayer game session. 
-
 - [player_linked_account](player-linked-account.md)  
   This event is triggered when a new authentication method is linked to a player's account. 
 
 - [player_logged_in](player-logged-in.md)  
   This event is triggered when a player logs in. 
-
-- [player_matched_with_lobby](player-matched-with-lobby.md)  
-  This event is triggered when a player is assigned to a game lobby and issued a connection ticket, before the player has connected to the game lobby. 
 
 - [player_password_reset_link_sent](player-password-reset-link-sent.md)  
   This event is triggered when a player is sent a link to reset their password. 
@@ -332,24 +323,6 @@ Each event type has a set of properties that are included as part of event's dat
 - [client_session_start](client-session-start.md)  
   This event is triggered when a new client session starts. 
 
-- [gamelobby_ended](gamelobby-ended.md)  
-  This event is triggered when a multiplayer game lobby ends. 
-
-- [gamelobby_started](gamelobby-started.md)  
-  This event is triggered when a multiplayer game lobby starts. 
-
-- [gameserverhost_started](gameserverhost-started.md)  
-  This event is triggered when a multiplayer game lobby starts. 
-
-- [gameserverhost_stopped](gameserverhost-stopped.md)  
-  This event is triggered when a multiplayer game lobby stops. 
-
-- [session_ended](session-ended.md)  
-  This event is triggered when a session ends 
-
-- [session_started](session-started.md)  
-  This event is triggered when a session starts. 
-
 ## Title
 
 - [title_aborted_task](title-aborted-task.md)  
@@ -357,9 +330,6 @@ Each event type has a set of properties that are included as part of event's dat
 
 - [title_added_cloudscript](title-added-cloudscript.md)  
   This event is triggered when new CloudScript is uploaded to PlayFab. 
-
-- [title_game_build_added](title-game-build-added.md)  
-  This event is triggered when a new game build is uploaded for a game title. 
 
 - [title_api_settings_changed](title-api-settings-changed.md)  
   This event is triggered when an API Features setting is changed for the title. 
@@ -393,9 +363,6 @@ Each event type has a set of properties that are included as part of event's dat
 
 - [title_limit_changed](title-limit-changed.md)  
   This event is triggered when a title changes a service limit. 
-
-- [title_game_build_modified](title-game-build-modified.md)  
-  This event is triggered when any of the game build settings are modified. 
 
 - [title_news_updated](title-news-updated.md)  
   This event is triggered when a title news is created or updated. 
