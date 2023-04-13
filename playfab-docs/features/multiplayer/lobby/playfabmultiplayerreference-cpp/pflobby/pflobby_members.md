@@ -5,7 +5,7 @@ description: "PFMultiplayer C/C++ API overview - PFLobby.h"
 ms.author: scmunro
 ms.topic: reference
 ms.service: playfab
-ms.date: 02/25/2023
+ms.date: 04/11/2023
 ---
 
 # PFMultiplayer C/C++ API overview - PFLobby.h
@@ -88,7 +88,7 @@ ms.date: 02/25/2023
 | [PFLobbySendInviteCompletedStateChange](structs/pflobbysendinvitecompletedstatechange.md) | Information specific to the *SendInviteCompleted* type of state change. |  
 | [PFLobbyServerDeleteLobbyCompletedStateChange](structs/pflobbyserverdeletelobbycompletedstatechange.md) | Information specific to the *ServerDeleteLobbyCompleted* type of state change. |  
 | [PFLobbyServerPostUpdateCompletedStateChange](structs/pflobbyserverpostupdatecompletedstatechange.md) | Information specific to the *ServerPostUpdateCompleted* type of state change. |  
-| [PFLobbyStateChange](structs/pflobbystatechange.md) | A generic, base structure representation of an event or change in state. |  
+| [PFLobbyStateChange](structs/pflobbystatechange.md) | A generic, base structure representation of an event or change in state in the Lobby library. |  
 | [PFLobbyUpdatedStateChange](structs/pflobbyupdatedstatechange.md) | Information specific to the *Updated* type of state change. |  
   
 ## Enumerations  
@@ -102,4 +102,4 @@ ms.date: 02/25/2023
 | [PFLobbyMemberRemovedReason](enums/pflobbymemberremovedreason.md) | Reasons why a member was removed from a lobby.|  
 | [PFLobbyMembershipLock](enums/pflobbymembershiplock.md) | Values representing the state of the lobby's membership lock.|  
 | [PFLobbyOwnerMigrationPolicy](enums/pflobbyownermigrationpolicy.md) | The available policies the lobby service can use to migrate lobby ownership between members.|  
-| [PFLobbyStateChangeType](enums/pflobbystatechangetype.md) | The types of state changes that can occur.|  
+| [PFLobbyStateChangeType](enums/pflobbystatechangetype.md) | The types of state changes that can occur in the Lobby library.|  

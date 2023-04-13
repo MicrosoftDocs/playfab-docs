@@ -1,16 +1,16 @@
 ---
 author: ScottMunroMS
 title: "PartyXblStateChangeResult"
-description: "The PartyXblStateChangeResult enumeration contains results for operations that generate state changes."
+description: "Results for Party Xbox Live Helper library operations that generate state changes."
 ms.author: scmunro
 ms.topic: reference
 ms.service: playfab
-ms.date: 01/17/2020
+ms.date: 04/11/2023
 ---
 
 # PartyXblStateChangeResult  
 
-Results for operations that generate state changes.    
+Results for Party Xbox Live Helper library operations that generate state changes.    
 
 ## Syntax  
   

@@ -1,16 +1,16 @@
 ---
 author: ScottMunroMS
 title: "PartyXblStateChangeType"
-description: "The PartyXblStateChangeType enumeration contains the types of state changes that can occur."
+description: "The types of state changes that can occur in the Party Xbox Live Helper library."
 ms.author: scmunro
 ms.topic: reference
 ms.service: playfab
-ms.date: 01/17/2020
+ms.date: 04/11/2023
 ---
 
 # PartyXblStateChangeType  
 
-The types of state changes that can occur.    
+The types of state changes that can occur in the Party Xbox Live Helper library.    
 
 ## Syntax  
   
