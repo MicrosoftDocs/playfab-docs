@@ -12,21 +12,21 @@ ms.localizationpriority: medium
 
 # PlayFab GDPR - Deleting and exporting player data
 
-PlayFab is committed to being General Data Protection Regulation (GDPR) compliant - and as your service provider, ensuring that we provide you with the hooks you need to allow Players to view or delete the data stored about them.
+PlayFab is committed to being General Data Protection Regulation (GDPR) compliant - and as your service provider, ensuring that we provide you with the hooks you need to allow players to view or delete the data stored about them.
 
-While we can’t provide you with legal advice — *and we do encourage you to seek legal counsel to ensure your compliance with the GDPR* — we are here to help you fulfill your obligations under GDPR.
+While we can’t provide you with legal advice—*and we do encourage you to seek legal counsel to ensure your compliance with the GDPR*—we are here to help you fulfill your obligations under GDPR.
 
 PlayFab has three available APIs to help you respond to Player data requests:
 
-- [GetPlayedTitleList](xref:titleid.playfabapi.com.admin.accountmanagement.getplayedtitlelist) - Call this API to get a list of TitleIds which have data associated with the given player. This list is scoped by PublisherID and represents the set of titles which would be impacted were you to delete or export this player's data.
+- [GetPlayedTitleList](xref:titleid.playfabapi.com.admin.accountmanagement.getplayedtitlelist) - Call this API to get a list of TitleIds, which have data associated with the given player. This list is scoped by PublisherID and represents the set of titles that would be impacted if you were to delete or export this player's data.
 - [DeleteMasterPlayerAccount](xref:titleid.playfabapi.com.admin.accountmanagement.deletemasterplayeraccount) - Call this API to delete the records of a given player.
 - [ExportMasterPlayerData](xref:titleid.playfabapi.com.admin.accountmanagement.exportmasterplayerdata) - Call this API to export all of the associated data and records of a given player.
 
 ## Make sure you find all the data
 
-Before using the `DeleteMasterPlayerAccount` or `ExportMasterPlayerData` APIs, it is important to keep in mind that your players might have created multiple Master Player accounts with your studio.
+Before using the `DeleteMasterPlayerAccount` or `ExportMasterPlayerData` APIs, it's important to keep in mind that your players might have created multiple Master Player accounts with your studio.
 
-This can happen when a player uses different devices or different credentials to play your title(s). Because they are providing different and unrelated credentials (e.g. a different email address or social media account), we interpret them to be a unique player.
+This situation can happen when a player uses different devices or different credentials to play your title(s). Because they're providing different and unrelated credentials (for example, a different email address or social media account), we interpret them to be a unique player.
 
 Another way a player may have multiple Master Player accounts is if you have configured your studio to use multiple Publisher IDs; however, having multiple Publisher IDs is not common.
 
@@ -38,21 +38,21 @@ You know your titles and how they authenticate your players. Before calling `Del
 
 With these credentials, we can identify the PlayFabIds for *each* Master Player account.
 
-The following APIs will help you translate from credential to `PlayFabId`:
+The following APIs help you translate from credentials to `PlayFabId`:
 
-- [GetUserAccountInfo](xref:titleid.playfabapi.com.admin.accountmanagement.getuseraccountinfo) - This API will help you find players by email, `TitleDisplayName`, `PlayFabId`, or a `PlayFabUsername`.
-- [GetPlayerIdFromAuthToken](xref:titleid.playfabapi.com.admin.accountmanagement.getplayeridfromauthtoken) - This API will allow you to find a player from a specific `AuthToken` which is granted to the player when they log in.
+- [GetUserAccountInfo](xref:titleid.playfabapi.com.admin.accountmanagement.getuseraccountinfo) - This API helps you find players by email, `TitleDisplayName`, `PlayFabId`, or a `PlayFabUsername`.
+- [GetPlayerIdFromAuthToken](xref:titleid.playfabapi.com.admin.accountmanagement.getplayeridfromauthtoken) - This API allows you to find a player from a specific `AuthToken` which is granted to the player when they log in.
 - [GetPlayFabIDsFromFacebookIDs](xref:titleid.playfabapi.com.server.accountmanagement.getplayfabidsfromfacebookids) - This API derives the player's `PlayFabId` from one or more `FacebookId`(s).
 - [GetPlayFabIDsFromSteamIDs](xref:titleid.playfabapi.com.server.accountmanagement.getplayfabidsfromsteamids) - This API derives the player's `PlayFabId` from one or more `SteamIds`.
 
 > [!NOTE]
 > All of these APIs are title-specific. The first two are Admin APIs and the last two are Server APIs.
 
-Even if your player only has one PlayFabId, they may have played more than one of your titles with that ID. This means their data request may span multiple titles.
+Even if your player only has one PlayFabId, they may have played more than one of your titles with that ID. Which means their data request may span multiple titles.
 
-To get this list of titles, call `GetPlayedTitleList` for each PlayFabId. You *may* wish to inform the player their request will impact the returned list of titles.
+To get this list of titles, call `GetPlayedTitleList` for each PlayFabId. You *may* wish to inform the player their request will affect the returned list of titles.
 
-Additionally, `GetPlayedTitleList` returns `TitleIds`, *not* `Title Names` - consider converting these to `Title Names` before displaying them in a confirmation page.
+Additionally, `GetPlayedTitleList` returns `TitleIds`, *not* `Title Names` - consider converting these IDs to `Title Names` before displaying them in a confirmation page.
 
 Here's a little pseudo code to paint a better picture of what we mean...
 
@@ -92,7 +92,7 @@ foreach(title in <all my titles>){
 }
 ```
 
-Here is a quick example on how to use **GetPlayedTitleList**.
+Here's a quick example on how to use **GetPlayedTitleList**.
 
 ```csharp
 public static async void StartFindTitlesExample(Action<PlayFabError> callback)
@@ -117,13 +117,13 @@ public static async void StartFindTitlesExample(Action<PlayFabError> callback)
 }
 ```
 
-At this this point you have a list of `PlayFabIds` for this player (based on the credentials they’ve shared) and a list of titles for each `PlayFabId`. Now what?
+At this point you have a list of `PlayFabIds` for this player (based on the credentials they’ve shared) and a list of titles for each `PlayFabId`. Now what?
 
 Now you’re ready to delete or export!
 
 ## Deleting a Master Player account
 
-Deleting a Master Player account can be accomplished by using the new `DeleteMasterPlayerAccount` Admin API which is available in all of our SDKs. Please make sure you read the section above, which details how to make sure you have all of a player's PlayFabIds.
+Deleting a Master Player account can be accomplished by using the new `DeleteMasterPlayerAccount` Admin API, which is available in all of our SDKs. Make sure you read the section above, which details how to make sure you have all of a player's PlayFabIds.
 
 When you make a request to delete a player, PlayFab will quickly remove the player's personal information from our core system before sending the request to a queue processing agent, which works to remove any remaining information about the player from ancillary systems and sub-processors.
 
@@ -200,10 +200,11 @@ When you make a request to export a player's data, the request is sent to a **Qu
 The `ExportMasterPlayerData` API exports all data associated with the given `PlayFabId`, including data across all your titles, such as:
 
 - **Statistics**
-
 - **Custom Data**
 - **Inventory**
 - **Purchases**
+- **Player-Created Items/UGC**
+- **Transaction History**
 - **Virtual Currency Balances**
 - **Characters**
 - **Group Memberships**
@@ -213,7 +214,7 @@ The `ExportMasterPlayerData` API exports all data associated with the given `Pla
 - **Friends List**
 - **PlayStream Event History**.
 
-Please make sure you read the first section above which details how to make sure you have all of a player’s PlayFabIds.
+Make sure you read the first section above which details how to make sure you have all of a player’s PlayFabIds.
 
 This API immediately returns a `JobReceiptId`, which you should store in your records for future reference. It may take some time before the export is available for download.
 
@@ -249,16 +250,16 @@ public static async void ExportMasterPlayerExample(Action<PlayFabError> callback
 
 ## Other considerations
 
-It is easy to do harm with these APIs. Exporting data for or deleting the *wrong* player could be very damaging and it is *permanent*!
+It's easy to do harm with these APIs. Exporting data for or deleting the *wrong* player could be very damaging and it's *permanent*!
 
-It is your responsibility as the game developer to verify that the credentials are owned by the player requesting an export or deletion of their player data. PlayFab does *not* provide any type of verification when using these APIs.
+It is your responsibility as the game developer to verify that the credentials match the player requesting an export or deletion of their player data. PlayFab does *not* provide any type of verification when using these APIs.
 
-However PlayFab *does* offer an [email verification feature](../../engagement/emails/using-a-rule-to-verify-a-contact-email-address.md). But our solution is not the only option for verification. You can create your *own* process too.
+However PlayFab *does* offer an [email verification feature](../../engagement/emails/using-a-rule-to-verify-a-contact-email-address.md). But our solution isn't the only option for verification. You can create your *own* process too.
 
 Regardless of which technology you use, we suggest that you do some sort of verification before performing any of these actions.
 
 ## Are we done yet?
 
-You should receive an email when your request has completed. If, for some reason, it never arrives (because that happens sometimes in our digital world), contact us at [privacy@playfab.com](mailto:privacy@playfab.com) with a request for verification.
+You should receive an email when your request has completed. If for some reason, it never arrives (because that happens sometimes in our digital world), contact us at [privacy@playfab.com](mailto:privacy@playfab.com) with a request for verification.
 
-Please provide the `JobReceiptId` in that email, and we will respond letting you know the status of that job.
+Please provide the `JobReceiptId` in that email, and we'll respond letting you know the status of that job.

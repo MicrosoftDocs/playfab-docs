@@ -10,11 +10,11 @@ keywords: playfab, economy, settings
 ms.localizationpriority: medium
 ---
 
-# Economy v2 settings
+# Economy V2 settings
 
 [!INCLUDE [notice](../../includes/_economy-release.md)]
 
-Economy v2 includes the following configuration that can be updated in Game Manager bg selecting **Economy** > **Catalog (v2)** then **⚙️ Settings**.
+Economy v2 includes the following configuration that can be updated in Game Manager bg selecting **Economy** > **Catalog (V2)** then **⚙️ Settings**.
 
 These settings can also be set and accessed via APIs using the [UpdateCatalogConfig](/rest/api/playfab/economy/catalog/update-catalog-config) and [GetCatalogConfig](/rest/api/playfab/economy/catalog/get-catalog-config) calls respectively. Catalog Config APIs can only be called by [title entities](/gaming/playfab/features/data/entities/#title).
 

@@ -24,12 +24,12 @@ Assuming you've already worked through the [Getting started for developers](../.
 
 ### Step 1 – Get permissions
 
-First step is to enable the catalog. This can be done in the settings page in the Game Manager UI under ⚙️ `Title Settings` > `Economy (V2)`. You can use the `UpdateCatalogConfig` API and set the `IsCatalogEnabled` flag to true.
+First step is to enable the catalog. This can be done in the settings page in the Game Manager UI under ⚙️ **Title Settings** > **Economy (V2)**. You can use the `UpdateCatalogConfig` API and set the `IsCatalogEnabled` flag to true.
 
 To interact with the Catalog you either need to Log into GameManger and use the site tools, or get an Entity Token for using the APIs. The easiest way to get an entity token is with the [GetEntityToken](/rest/api/playfab/authentication/authentication/get-entity-token) API.
 
 > [!NOTE]
-> To call the API as an admin or authoritative service, which you will need to do before you create your first Catalog item, you’ll need to include an X-SecretKey header with a title secret key. You can create title secret keys in the Game Manager UI under ⚙️ `Title Settings` > `Secret Keys`.
+> To call the API as an admin or authoritative service, which you will need to do before you create your first Catalog item, you’ll need to include an X-SecretKey header with a title secret key. You can create title secret keys in the Game Manager UI under ⚙️ **Title Settings** > **Secret Keys**.
 
 #### [API](#tab/secret-key-api)
 
@@ -102,8 +102,8 @@ private static async Task PlayFabEconomyv2QuickStart()
 
 #### [Game Manager](#tab/catalog-settings-game-manager)
 
-1. In [Game Manager](../../gamemanager/index.md), navigate to ⚙️ `Title Settings` > `Economy`.
-1. Under the `Catalog (v2)` tab, go to `Catalog Settings`
+1. In [Game Manager](../../gamemanager/index.md), navigate to ⚙️ **Title Settings** > **Economy**.
+1. Under the **Catalog (V2)** tab, go to **Catalog Settings**
 1. Create a default _Content Type_ (creating a "Game Item" type is a good place to start).
 
 #### [API](#tab/catalog-settings-api)
@@ -172,11 +172,11 @@ Example return payload for a title with some content types for Catalog and UGC:
 
 #### [GameManager](#tab/publish-item-game-manager)
 
-Navigate to `Economy` > `Catalog (v2)`.
+Navigate to **Economy** > **Catalog (V2)**.
 
-Under the `Items` tab, select `New Item`.
+Under the **Items** tab, select **New Item**.
 
-Fill in the required metadata – there are only four required properties (_Creator Type_, _Title_, _Start date_, and _Content type_). Select `Publish`.
+Fill in the required metadata – there are only four required properties (_Creator Type_, _Title_, _Start date_, and _Content type_). Select **Publish**.
 
 > [!TIP]
 > Creator Type defaults to "title" - although there may be instances where Players are creating items for your game. In that case, you would select "title_player_account".
@@ -340,10 +340,10 @@ Items can have a cost in either a virtual currency or real money. Each title can
 
 #### [Game Manager](#tab/virtual-currency-game-manager)
 
-1. Open Game Manager and go to `Title Settings`
-1. Select the `Currency` tab
-1. Choose `New Currency`, setting the _Currency code_ and the _Display/Friendly name_
-1. Select `Save Currency`
+1. Open Game Manager and go to **Title Settings**
+1. Select the **Currency** tab
+1. Choose **New Currency**, setting the _Currency code_ and the _Display/Friendly name_
+1. Select **Save Currency**
 
 #### [API](#tab/virtual-currency-api)
 
@@ -406,9 +406,9 @@ Data:
 Your entity player will need virtual currency in order to make a Purchase.  
 
 1. Open GameManager, navigate to Players, and select the Player ID you wish to grant currency to
-1. Select the `Inventory (V2)` tab.
+1. Select the **Inventory (V2)** tab.
 1. Choose the _Currency_ you created and enter a new amount for the Entity _Player_.
-1. Select `Save`.
+1. Select **Save**.
 
 > [!WARNING]
 > The pages exposing player Currency Grants are not in GameManager today. See the [Roadmap](../../roadmap/index.md).
@@ -428,12 +428,12 @@ An item must have a currency value in order for it to be purchaseable with virtu
 
 #### [GameManager](#tab/create-catalog-item-game-manager)
 
-1. Open Game Manager and navigate to `Economy`.
-1. Select the `Catalog (v2)` tab and sure you are viewing `Published` items.
+1. Open Game Manager and navigate to **Economy**.
+1. Select the **Catalog (V2)** tab and sure you are viewing **Published** items.
 1. Select the title of the item you created earlier.
-1. Select `Edit draft item`.
-1. Select `➕ Add new price` and set an _Amount_ by selecting the Currency item you created. Select `Add` to finish.
-1. Select `Save and Publish`.
+1. Select **Edit draft item**.
+1. Select **➕ Add new price** and set an _Amount_ by selecting the Currency item you created. Select **Add** to finish.
+1. Select **Save and Publish**.
 
 #### [API](#tab/create-catalog-item-api)
 
@@ -493,7 +493,7 @@ curl \
 }
 ```
 
-If you do not set **Publish** to **TRUE**, you will need to push it to the published state using [PublishDraftItem](/rest/api/playfab/economy/catalog/publish-draft-item). Once an Item is published, it's searchable and available publicly. You need to use the "itemId" returned from the GetDraftItem response in order to publish.
+If you do not set `Publish` to `true`, you will need to push it to the published state using [PublishDraftItem](/rest/api/playfab/economy/catalog/publish-draft-item). Once an Item is published, it's searchable and available publicly. You need to use the "itemId" returned from the GetDraftItem response in order to publish.
 
 ## See also
 
