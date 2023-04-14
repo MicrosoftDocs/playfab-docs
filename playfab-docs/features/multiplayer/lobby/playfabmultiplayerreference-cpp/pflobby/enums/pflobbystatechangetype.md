@@ -1,16 +1,16 @@
 ---
 author: ScottMunroMS
 title: "PFLobbyStateChangeType"
-description: "The types of state changes that can occur in PFLobby, including MemberAdded, MemberRemoved, and Updated, among others."
+description: "The types of state changes that can occur in the Lobby library."
 ms.author: scmunro
 ms.topic: reference
 ms.service: playfab
-ms.date: 02/25/2023
+ms.date: 04/11/2023
 ---
 
 # PFLobbyStateChangeType  
 
-The types of state changes that can occur.    
+The types of state changes that can occur in the Lobby library.    
 
 ## Syntax  
   

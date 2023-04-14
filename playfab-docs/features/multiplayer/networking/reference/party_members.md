@@ -5,7 +5,7 @@ description: "Party C/C++ API overview"
 ms.author: jdewey
 ms.topic: reference
 ms.service: playfab
-ms.date: 12/09/2021
+ms.date: 04/11/2023
 ---
 
 # Party C/C++ API overview
@@ -106,7 +106,7 @@ ms.date: 12/09/2021
 | [PartySetTextChatOptionsCompletedStateChange](structs/partysettextchatoptionscompletedstatechange.md) | Information specific to the *PartySetTextChatOptionsCompleted* type of state change. |  
 | [PartySetTextToSpeechProfileCompletedStateChange](structs/partysettexttospeechprofilecompletedstatechange.md) | Information specific to the *SetTextToSpeechProfileCompleted* type of state change. |  
 | [PartySetTranscriptionOptionsCompletedStateChange](structs/partysettranscriptionoptionscompletedstatechange.md) | Information specific to the *SetTranscriptionOptionsCompleted* type of state change. |  
-| [PartyStateChange](structs/partystatechange.md) | A generic, base structure representation of an event or change in state. |  
+| [PartyStateChange](structs/partystatechange.md) | A generic, base structure representation of an event or change in state in the Party library. |  
 | [PartySynthesizeTextToSpeechCompletedStateChange](structs/partysynthesizetexttospeechcompletedstatechange.md) | Information specific to the *SynthesizeTextToSpeechCompleted* type of state change. |  
 | [PartyVoiceChatTranscriptionReceivedStateChange](structs/partyvoicechattranscriptionreceivedstatechange.md) | Information specific to the *VoiceChatTranscriptionReceived* type of state change. |  
   
@@ -135,8 +135,8 @@ ms.date: 12/09/2021
 | [PartyNetworkStatistic](enums/partynetworkstatistic.md) | Types of statistics that can be retrieved for a network.|  
 | [PartyOption](enums/partyoption.md) | Additional options that can be set to fine-tune Party library functionality.|  
 | [PartySendMessageOptions](enums/partysendmessageoptions.md) | Options for controlling how a message is sent.|  
-| [PartyStateChangeResult](enums/partystatechangeresult.md) | Results for operations that generate state changes.|  
-| [PartyStateChangeType](enums/partystatechangetype.md) | The types of state changes that can occur.|  
+| [PartyStateChangeResult](enums/partystatechangeresult.md) | Results for Party library operations that generate state changes.|  
+| [PartyStateChangeType](enums/partystatechangetype.md) | The types of state changes that can occur in the Party library.|  
 | [PartySynthesizeTextToSpeechType](enums/partysynthesizetexttospeechtype.md) | Types of text-to-speech operations.|  
 | [PartyTextChatFilterLevel](enums/partytextchatfilterlevel.md) | The level of filtering that will apply to incoming text chat when text moderation is enabled with [PartyLocalChatControl::SetTextChatOptions](classes/PartyLocalChatControl/methods/partylocalchatcontrol_settextchatoptions.md).|  
 | [PartyTextChatOptions](enums/partytextchatoptions.md) | Text chat options.|  

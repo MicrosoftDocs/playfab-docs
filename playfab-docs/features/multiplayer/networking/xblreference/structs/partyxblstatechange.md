@@ -1,16 +1,16 @@
 ---
 author: ScottMunroMS
 title: "PartyXblStateChange"
-description: "The PartyXblStateChange structure is a generic, base structure representation of an event or change in state."
+description: "A generic, base structure representation of an event or change in state in the Party Xbox Live Helper library."
 ms.author: scmunro
 ms.topic: reference
 ms.service: playfab
-ms.date: 04/22/2022
+ms.date: 04/11/2023
 ---
 
 # PartyXblStateChange  
 
-A generic, base structure representation of an event or change in state.  
+A generic, base structure representation of an event or change in state in the Party Xbox Live Helper library.  
 
 ## Syntax  
   

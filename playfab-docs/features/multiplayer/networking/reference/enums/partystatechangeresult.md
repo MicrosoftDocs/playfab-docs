@@ -1,16 +1,16 @@
 ---
 author: jdeweyMSFT
 title: "PartyStateChangeResult"
-description: "The PartyStateChangeResult enumeration contains results for operations that generate state changes."
+description: "Results for Party library operations that generate state changes."
 ms.author: jdewey
 ms.topic: reference
 ms.service: playfab
-ms.date: 06/22/2021
+ms.date: 04/11/2023
 ---
 
 # PartyStateChangeResult  
 
-Results for operations that generate state changes.    
+Results for Party library operations that generate state changes.    
 
 ## Syntax  
   

@@ -18,9 +18,8 @@ ms.localizationpriority: medium
 
 A pre-set list of content types for can be set by providing a list of valid string types.
 
-* Items _must_ have a Content Type
-  * Content types exist as a default performant filter when searching and make it easier to group items
-  * You can only have one Content Type per item
+* Content types exist as a performant filter when searching and make it easier to group items
+* You can only have one Content Type per item
 
 ## Tags
 

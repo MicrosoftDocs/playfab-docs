@@ -22,8 +22,8 @@ To create a bundle, you must first make sure you have published Catalog Items, C
 
 ### [GameManager](#tab/creating-bundle-game-manager)
 
-1. Navigate to `Economy` > `Catalog (V2)`.
-1. Under the `Bundles` tab, select `New Bundle`.
+1. Navigate to **Economy** > **Catalog (V2)**.
+1. Under the **Bundles** tab, select **New Bundle**.
 
 ### [API](#tab/creating-bundle-api)
 
