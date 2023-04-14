@@ -184,7 +184,7 @@ In this section, we will create a UGC item completely within the Game Manager ex
 ### Create the Draft Catalog Item
 
 * Navigate to the UGC page by selecting **Economy** > **Catalog (v2)**.
-* Select **New item**.
+* Select **New Item**.
 * Fill out the appropriate metadata for your UGC item:
 
     | Field Name    | Value                                                 |

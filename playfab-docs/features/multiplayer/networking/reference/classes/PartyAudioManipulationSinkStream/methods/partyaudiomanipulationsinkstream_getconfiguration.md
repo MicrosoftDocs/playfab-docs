@@ -1,16 +1,16 @@
 ---
 author: jdeweyMSFT
 title: "PartyAudioManipulationSinkStream::GetConfiguration"
-description: The PartyAudioManipulationSinkStream::GetConfiguration method retrieves the stream configuration.
+description: Retrieves the sink stream configuration.
 ms.author: jdewey
 ms.topic: reference
 ms.service: playfab
-ms.date: 02/10/2020
+ms.date: 04/11/2023
 ---
 
 # PartyAudioManipulationSinkStream::GetConfiguration  
 
-Retrieves the stream configuration.  
+Retrieves the sink stream configuration.  
 
 ## Syntax  
   

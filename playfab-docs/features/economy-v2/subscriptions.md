@@ -20,9 +20,9 @@ To create a subscription, you must first make sure you have published [Catalog I
 
 ### [GameManager](#tab/creating-store-game-manager)
 
-1. Navigate to **Economy > Catalog (V2).**
+1. Navigate to **Economy** > **Catalog (V2)**.
 
-2. Under the **Subscriptions** tab, select **New Subscription.**
+2. Under the **Subscriptions** tab, select **New Subscription**.
 
 ### [API](#tab/creating-store-api)
 

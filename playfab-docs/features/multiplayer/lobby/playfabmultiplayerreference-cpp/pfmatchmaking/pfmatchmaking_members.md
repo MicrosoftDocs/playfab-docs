@@ -5,7 +5,7 @@ description: "PFMultiplayer C/C++ API overview - PFMatchmaking.h"
 ms.author: scmunro
 ms.topic: reference
 ms.service: playfab
-ms.date: 02/25/2023
+ms.date: 04/11/2023
 ---
 
 # PFMultiplayer C/C++ API overview - PFMatchmaking.h
@@ -41,7 +41,7 @@ ms.date: 02/25/2023
   
 | State change | Description |  
 | --- | --- |  
-| [PFMatchmakingStateChange](structs/pfmatchmakingstatechange.md) | A generic, base structure representation of an event or change in state. |  
+| [PFMatchmakingStateChange](structs/pfmatchmakingstatechange.md) | A generic, base structure representation of an event or change in state in the Matchmaking library. |  
 | [PFMatchmakingTicketCompletedStateChange](structs/pfmatchmakingticketcompletedstatechange.md) | Information specific to the *TicketCompleted* type of state change. |  
 | [PFMatchmakingTicketStatusChangedStateChange](structs/pfmatchmakingticketstatuschangedstatechange.md) | Information specific to the *TicketStatusChanged* type of state change. |  
   
@@ -49,6 +49,6 @@ ms.date: 02/25/2023
 
 | Enumeration | Description |  
 | --- | --- |  
-| [PFMatchmakingStateChangeType](enums/pfmatchmakingstatechangetype.md) | The types of state changes that can occur.|  
+| [PFMatchmakingStateChangeType](enums/pfmatchmakingstatechangetype.md) | The types of state changes that can occur in the Matchmaking library.|  
 | [PFMatchmakingTicketStatus](enums/pfmatchmakingticketstatus.md) | The possible states for a matchmaking ticket.|  
 | [PFMultiplayerProtocolType](enums/pfmultiplayerprotocoltype.md) | The protocol type used for connecting to a PlayFab Multiplayer Server port.|  

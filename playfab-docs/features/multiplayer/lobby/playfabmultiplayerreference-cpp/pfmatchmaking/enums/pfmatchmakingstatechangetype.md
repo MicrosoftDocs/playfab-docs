@@ -1,16 +1,16 @@
 ---
 author: ScottMunroMS
 title: "PFMatchmakingStateChangeType"
-description: "PFMatchmakingStateChangeType represents the types of state changes that can occur in PFMatchmaking."
+description: "The types of state changes that can occur in the Matchmaking library."
 ms.author: scmunro
 ms.topic: reference
 ms.service: playfab
-ms.date: 01/03/2022
+ms.date: 04/11/2023
 ---
 
 # PFMatchmakingStateChangeType  
 
-The types of state changes that can occur.    
+The types of state changes that can occur in the Matchmaking library.    
 
 ## Syntax  
   
