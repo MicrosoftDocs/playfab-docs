@@ -5,7 +5,7 @@ description: "The types of state changes that can occur in the Party Xbox Live H
 ms.author: scmunro
 ms.topic: reference
 ms.service: playfab
-ms.date: 04/11/2023
+ms.date: 04/14/2023
 ---
 
 # PartyXblStateChangeType  
@@ -17,12 +17,12 @@ The types of state changes that can occur in the Party Xbox Live Helper library.
 ```cpp
 enum class PartyXblStateChangeType  : uint32_t  
 {  
-    CreateLocalChatUserCompleted,  
-    LocalChatUserDestroyed,  
-    RequiredChatPermissionInfoChanged,  
-    TokenAndSignatureRequested,  
-    LoginToPlayFabCompleted,  
-    GetEntityIdsFromXboxLiveUserIdsCompleted,  
+    CreateLocalChatUserCompleted = 0,  
+    LocalChatUserDestroyed = 1,  
+    RequiredChatPermissionInfoChanged = 2,  
+    TokenAndSignatureRequested = 3,  
+    LoginToPlayFabCompleted = 4,  
+    GetEntityIdsFromXboxLiveUserIdsCompleted = 5,  
 }  
 ```  
   

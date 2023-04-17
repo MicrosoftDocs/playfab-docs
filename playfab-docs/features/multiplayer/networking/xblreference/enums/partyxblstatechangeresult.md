@@ -5,7 +5,7 @@ description: "Results for Party Xbox Live Helper library operations that generat
 ms.author: scmunro
 ms.topic: reference
 ms.service: playfab
-ms.date: 04/11/2023
+ms.date: 04/14/2023
 ---
 
 # PartyXblStateChangeResult  
@@ -17,15 +17,15 @@ Results for Party Xbox Live Helper library operations that generate state change
 ```cpp
 enum class PartyXblStateChangeResult    
 {  
-    Succeeded,  
-    UnknownError,  
-    CanceledByTitle,  
-    UserNotAuthorized,  
-    LoginToPlayFabThrottled,  
-    PartyServiceError,  
-    XboxLiveServiceTemporarilyUnavailable,  
-    InternetConnectivityError,  
-    PlayFabRateLimitExceeded,  
+    Succeeded = 0,  
+    UnknownError = 1,  
+    CanceledByTitle = 2,  
+    UserNotAuthorized = 3,  
+    LoginToPlayFabThrottled = 4,  
+    PartyServiceError = 5,  
+    XboxLiveServiceTemporarilyUnavailable = 6,  
+    InternetConnectivityError = 7,  
+    PlayFabRateLimitExceeded = 8,  
 }  
 ```  
   
