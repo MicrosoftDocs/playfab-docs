@@ -14,12 +14,7 @@ ms.localizationpriority: medium
 
 ## Pre-requisite:
 - For Data Connections, you need an Azure subscription and a storage account. 
-- Currently, Data Connections is limited to the West US 2 region. We will be expanding this to other regions soon.
 - For PlayFab to ingest data in your storage account, container details along with authorization using a SAS token are required. To create a SAS token using Microsoft Azure portal, follow the steps below.
-
-> [!Important] 
-> Currently, West US 2 is the only supported Azure region. We're planning to expand support to additional regions soon.
-> 
 
 ## Create a Data Connection
 
