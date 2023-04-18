@@ -39,6 +39,10 @@
         href: classes/PartyXblManager/methods/partyxblmanager_setmemorycallbacks.md
       - name: GetMemoryCallbacks
         href: classes/PartyXblManager/methods/partyxblmanager_getmemorycallbacks.md
+      - name: SetProfilingCallbacksForMethodEntryExit
+        href: classes/PartyXblManager/methods/partyxblmanager_setprofilingcallbacksformethodentryexit.md
+      - name: GetProfilingCallbacksForMethodEntryExit
+        href: classes/PartyXblManager/methods/partyxblmanager_getprofilingcallbacksformethodentryexit.md
       - name: SetThreadAffinityMask
         href: classes/PartyXblManager/methods/partyxblmanager_setthreadaffinitymask.md
       - name: GetThreadAffinityMask

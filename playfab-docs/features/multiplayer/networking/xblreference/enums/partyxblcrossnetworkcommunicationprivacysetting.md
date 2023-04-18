@@ -5,7 +5,7 @@ description: "Possible cross-network communication privacy settings for a local 
 ms.author: scmunro
 ms.topic: reference
 ms.service: playfab
-ms.date: 11/01/2019
+ms.date: 04/14/2023
 ---
 
 # PartyXblCrossNetworkCommunicationPrivacySetting  
@@ -17,9 +17,9 @@ Possible cross-network communication privacy settings for a local Xbox Live user
 ```cpp
 enum class PartyXblCrossNetworkCommunicationPrivacySetting    
 {  
-    Allowed,  
-    FriendsOnly,  
-    Disallowed,  
+    Allowed = 0,  
+    FriendsOnly = 1,  
+    Disallowed = 2,  
 }  
 ```  
   
