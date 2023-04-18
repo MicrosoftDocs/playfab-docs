@@ -5,7 +5,7 @@ description: "Threads that Party Xbox Live Helper library uses for internal purp
 ms.author: scmunro
 ms.topic: reference
 ms.service: playfab
-ms.date: 11/01/2019
+ms.date: 04/14/2023
 ---
 
 # PartyXblThreadId  
@@ -17,7 +17,7 @@ Threads that Party Xbox Live Helper library uses for internal purposes.
 ```cpp
 enum class PartyXblThreadId    
 {  
-    WebRequest,  
+    WebRequest = 0,  
 }  
 ```  
   

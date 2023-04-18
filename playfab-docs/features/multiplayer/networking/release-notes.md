@@ -3,7 +3,7 @@ title: PlayFab Party Release Notes
 author: ScottMunroMS
 description: Release notes for PlayFab Party
 ms.author: scmunro
-ms.date: 06/22/2021
+ms.date: 04/14/2023
 ms.topic: article
 ms.service: playfab
 keywords: playfab, party, release notes, multiplayer, networking
@@ -123,7 +123,7 @@ September 30, 2021
 June 29, 2021
 ### New profiling hooks and chat control indicators
 
-- Developers interested in where time is spent in internal library functions can now install optional method entrance and exit callbacks to hook into their preferred high-performance instrumentation method. For more information, see [`PartyManager::SetProfilingCallbacksForMethodEntryExit`](reference/classes/PartyManager/methods/partymanager_setprofilingcallbacksformethodentryexit.md). In this release, the callbacks are only supported for Windows, Xbox One XDK, and Microsoft Game Core platforms.
+- Developers interested in where time is spent in internal library functions can now configure optional method entrance and exit callbacks to hook into their preferred high-performance instrumentation method. For more information, see [`PartyManager::SetProfilingCallbacksForMethodEntryExit`](reference/classes/PartyManager/methods/partymanager_setprofilingcallbacksformethodentryexit.md). In this release, the callbacks are only supported for Windows, Xbox One XDK, and Microsoft Game Core platforms.
 - New NoRemoteInput and RemoteAudioInputMuted chat control indicators provide more granularity on currently silent audio state. For more information, see [`PartyChatControlChatIndicator`](reference/enums/partychatcontrolchatindicator.md).
 
 ### Endpoint message behavior improvements

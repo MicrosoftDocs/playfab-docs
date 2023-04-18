@@ -5,7 +5,7 @@ description: Configures the preferred microphone or recording device that the ch
 ms.author: jdewey
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/11/2022
+ms.date: 04/14/2023
 ---
 
 # PartyLocalChatControl::SetAudioInput  
@@ -26,7 +26,7 @@ PartyError SetAudioInput(
   
 **`audioDeviceSelectionType`** &nbsp; [PartyAudioDeviceSelectionType](../../../enums/partyaudiodeviceselectiontype.md)  
   
-If [PartyAudioDeviceSelectionType::None](../../../enums/partyaudiodeviceselectiontype.md) is specified, the audio input will be cleared. If [PartyAudioDeviceSelectionType::SystemDefault](../../../enums/partyaudiodeviceselectiontype.md) is specified, the Party library will attempt to use the system's default communication device. If [PartyAudioDeviceSelectionType::PlatformUserDefault](../../../enums/partyaudiodeviceselectiontype.md) is specified, the Party library will attempt to use the default communication device associated with `audioDeviceSelectionContext`. If [PartyAudioDeviceSelectionType::Manual](../../../enums/partyaudiodeviceselectiontype.md) is specified, the Party library will attempt to use the communication device whose device identifier matches. Note that this is not supported on iOS or Android. `audioDeviceSelectionContext`.  
+If [PartyAudioDeviceSelectionType::None](../../../enums/partyaudiodeviceselectiontype.md) is specified, the audio input will be cleared. If [PartyAudioDeviceSelectionType::SystemDefault](../../../enums/partyaudiodeviceselectiontype.md) is specified, the Party library will attempt to use the system's default communication device. If [PartyAudioDeviceSelectionType::PlatformUserDefault](../../../enums/partyaudiodeviceselectiontype.md) is specified, the Party library will attempt to use the default communication device associated with `audioDeviceSelectionContext`. If [PartyAudioDeviceSelectionType::Manual](../../../enums/partyaudiodeviceselectiontype.md) is specified, the Party library will attempt to use the communication device whose device identifier matches. Note that ```PartyAudioDeviceSelectionType::Manual``` is not supported on Android, iOS, or macOS.  
   
 **`audioDeviceSelectionContext`** &nbsp; [PartyString](../../../typedefs.md)  
 *optional*  
