@@ -18,7 +18,7 @@ This walkthrough assumes you have basic familiarity with [voice chat in PlayFab 
 
 ## Platform support
 
-Real-time audio manipulation isn't available on all platforms. While the methods associated with real-time audio manipulation are present in the unified, cross-platform header, they're currently only implemented for Windows and Xbox. The methods will return errors on other platforms.
+Real-time audio manipulation isn't available on all platforms. While the methods associated with real-time audio manipulation are present in the unified, cross-platform header, they're currently only implemented for Windows, Xbox, and PlayStation® 5. The methods will return errors on other platforms.
 
 ## Audio streams
 
