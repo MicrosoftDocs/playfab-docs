@@ -5,7 +5,7 @@ description: Queues an asynchronous operation to configure the audio manipulatio
 ms.author: jdewey
 ms.topic: reference
 ms.service: playfab
-ms.date: 04/07/2021
+ms.date: 04/20/2023
 ---
 
 # PartyLocalChatControl::ConfigureAudioManipulationRenderStream  
@@ -45,7 +45,7 @@ If the configuration is non-null, an audio manipulation render stream will be cr
 
 ### Platform support and supported formats
 
- This function is only supported on Windows and Xbox. Calls on other platforms will fail.   <br /><br /> The following format options are supported.   <br /><br />
+ This function is only supported on Windows, Xbox, and PlayStation® 5. Calls on other platforms will fail.   <br /><br /> The following format options are supported for Windows and Xbox.   <br /><br />
 
 | Format option | Supported value(s) |
 | --- | --- |
@@ -55,6 +55,8 @@ If the configuration is non-null, an audio manipulation render stream will be cr
 | Bits per sample | If sample type is ```PartyAudioSampleType::Float```, 32. If sample type is ```PartyAudioSampleType::Integer```, 16 or 32. |
 | Sample type | ```PartyAudioSampleType::Float``` or ```PartyAudioSampleType::Integer``` |
 | Interleaved | true or false |
+
+<br /><br /> For a list of supported format options for PlayStation® 5, please refer to the README-RealTimeAudioManipulation.md document distributed with the Party library package.
   
 ## Requirements  
   
