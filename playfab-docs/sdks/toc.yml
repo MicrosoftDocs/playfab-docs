@@ -27,8 +27,6 @@
       href: playfab-cpp/quickstart-linux.md
     - name: Quickstart - Windows
       href: playfab-cpp/quickstart-windows.md
-    - name: Quickstart - Xbox One
-      href: playfab-cpp/quickstart-xbox.md
 - name: Frameworks
   href: frameworks/index.yml
   items: 
