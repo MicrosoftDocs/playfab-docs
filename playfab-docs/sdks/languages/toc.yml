@@ -5,7 +5,7 @@
   items:
   - name: Quickstart C#
     href: ../c-sharp/quickstart.md
-  - name: Quckstart C# with Xamarin
+  - name: Quickstart C# with Xamarin
     href: ../c-sharp/xamarin-quickstart.md
 - name:  Java
   href: ../java/index.md
@@ -24,5 +24,3 @@
     href: ../playfab-cpp/quickstart-linux.md
   - name: Quickstart - Windows
     href: ../playfab-cpp/quickstart-windows.md
-  - name: Quickstart - Xbox One
-    href: ../playfab-cpp/quickstart-xbox.md
