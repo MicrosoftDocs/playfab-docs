@@ -76,5 +76,3 @@ landingContent:
             url: ../playfab-cpp/quickstart-linux.md
           - text: Quickstart - Windows quickstart
             url: ../playfab-cpp/quickstart-windows.md
-          - text: Quickstart - Xbox One quickstart
-            url: ../playfab-cpp/quickstart-xbox.md          
