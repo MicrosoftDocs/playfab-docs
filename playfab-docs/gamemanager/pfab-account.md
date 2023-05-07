@@ -25,7 +25,7 @@ Since PlayFab doesn't know the name of your game studio or the title of your gam
 
 ![PlayFab - Create a new game](media/quickstart/playfab-create-new-game.png)
 
-PlayFab created your first title is automatically. To create additional new titles, select **New title** from the Ellipsis menu.
+PlayFab created your first title is automatically. To create another new title, select **New title** from the Ellipsis menu.
 
 ## Open the Game Manager for your title
 
