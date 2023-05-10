@@ -133,17 +133,82 @@ You shouldn't do these actions from your script, as there is a high chance of di
 - You shouldn't use [GSDK](https://github.com/PlayFab/gsdk) from within the VmStartupScript or an app that is launched by it. GSDK should only be used from GameServers.
 - You shouldn't manually reboot the Virtual Machine as this operation will create challenges in the communication with the MPS Control Plane.
 
+## Ports
+
+When you use the VmStartupScript feature, it is possible to request a number of ports to be exposed on each VM. These ports can be used by any programs launched by your script and are different from the ports MPS opens for your game servers.
+
+### Usage
+
+You can request up to five ports for every VM. For each port, you must specify the protocol (TCP or UDP) and a name. Here is an example of how to request two ports:
+
+```csharp
+VmStartupScriptConfiguration = new VmStartupScriptParams()
+{
+    VmStartupScriptAssetReference = new AssetReferenceParams()
+    {
+        FileName = "vmstartupscriptassets.zip"
+    },
+    PortRequests = new List<VmStartupScriptPortRequest>()
+        {
+            new VmStartupScriptPortRequest()
+            {
+                Name = "port0",
+                Protocol = ProtocolType.TCP
+            },
+            new VmStartupScriptPortRequest()
+            {
+                Name = "port1",
+                Protocol = ProtocolType.UDP
+            }
+        }
+}
+```
+
+Provided you ask for any ports, the following environment variables are available to your script to help you get information about the ports:
+
+|         Name         |      Description      |
+|----------------------|-----------------------|
+| PF_STARTUP_SCRIPT_PORT_COUNT | Number of VmStartupScript ports |
+| PF_STARTUP_SCRIPT_PORT_NAME_(index) | The name for the port, as described in the request |
+| PF_STARTUP_SCRIPT_PORT_PROTOCOL_(index) | The protocol for the port, as described in the request |
+| PF_STARTUP_SCRIPT_PORT_INTERNAL_(index) | The port that your program should bind to in the VM |
+| PF_STARTUP_SCRIPT_PORT_EXTERNAL_(index) | The port that opens in the external endpoint. External clients should use this port to connect to the program that binds to the INTERNAL port |
+
+For example, for the two ports requested in the above sample script, you should expect to find these environment variables in your VmStartupScript:
+
+```bash
+PF_STARTUP_SCRIPT_PORT_COUNT
+
+PF_STARTUP_SCRIPT_PORT_INTERNAL_0
+PF_STARTUP_SCRIPT_PORT_EXTERNAL_0
+PF_STARTUP_SCRIPT_PORT_NAME_0
+PF_STARTUP_SCRIPT_PORT_PROTOCOL_0
+
+PF_STARTUP_SCRIPT_PORT_INTERNAL_1
+PF_STARTUP_SCRIPT_PORT_EXTERNAL_1
+PF_STARTUP_SCRIPT_PORT_NAME_1
+PF_STARTUP_SCRIPT_PORT_PROTOCOL_1
+```
+
+> [!IMPORTANT]
+> Similar to the ports we open for game servers, it is up to you to authenticate clients connecting to your ports. MPS doesn't provide any authentication mechanism for these ports.
+
+> [!NOTE]
+> Customers will find that ports that are allocated start from number 20000 and up. However, we recommend that you don't hardcode this value in your scripts as it might change in the future and always use the environment variables to obtain proper port information.
+
 ## Development/Debugging
 
 Before using the VmStartupScript feature, we recommend that you check out these sample scripts on our open-source repository on GitHub ([VmStartupScriptGallery](https://github.com/PlayFab/VmStartupScriptGallery)). Contributions are welcome!
 
-## Recommended development workflow
+### Recommended development workflow
 
-Initially, you should create a test Build with a single VM. This VM should have similar specs as the one you are planning to deploy your production Build on. When this single VM is deployed, you can RDP/SSH, copy the necessary files and try editing/running the script till it's successful. 
+Initially, you should create a test Build with a single VM. This VM should have similar specs as the one you are planning to deploy your production Build on. When this single VM is deployed, you can RDP/SSH, copy the necessary files and try editing/running the script till it's successful.
 
 Once this VM is up and running and you verify that your script behaves as expected, you can place the script and assets in a .zip file. Afterwards, you can upload it and try creating a Build with it. Try to create a single VM Build again to save on costs and scale up once you are certain that your script works.
 
 If you encounter challenges in running your script, you can debug by logging in the VM via RDP/SSH and check the files **PF_StartupScriptStdOut.txt** and **PF_StartupScriptStdErr.txt** for the script's standard output and standard error streams, respectively. These files are located either on D: drive on Windows or on /mnt on Linux.
+
+The script should be idempotent, since there is a chance that it will be executed more than once. For example, if the script tries to download an external resource and it fails because of a network issue, MPS retries the entire script execution.
 
 ## Support
 

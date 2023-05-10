@@ -14,6 +14,16 @@ ms.localizationpriority: medium
 
 PlayFab Party had a significant (up to 90%) price drop on October 13, 2020. You can view the updated Party rates on the [Pricing page](https://playfab.com/pricing). For more information about the price drop, see our [blog post](https://blog.playfab.com/blog/starting-today-save-up-to-90-using-playfab-party).
 
+## 1.8.0
+
+May 8, 2023
+
+- Added an option for configuring the maximum number of direct peer connections the device attempts to establish to other devices. For more information, see [`PartyOption::LocalDeviceMaxDirectPeerConnections`](reference/enums/partyoption.md).
+- iOS, Android: Added support for enabling noise suppression on audio captured from a local chat control. For more information, see [`PartyLocalChatControl::SetVoiceAudioOptions`](reference/classes/PartyLocalChatControl/methods/partylocalchatcontrol_setvoiceaudiooptions.md).
+
+### Bug fixes
+- Fixed a bug where the library may leak memory due to internal diagnostic tracking when the user's entity token had expired.
+
 ## 1.7.23
 
 April 1, 2023

@@ -159,6 +159,10 @@
         href: classes/PartyLocalChatControl/methods/partylocalchatcontrol_setincomingtextmuted.md
       - name: GetIncomingTextMuted
         href: classes/PartyLocalChatControl/methods/partylocalchatcontrol_getincomingtextmuted.md
+      - name: SetVoiceAudioOptions
+        href: classes/PartyLocalChatControl/methods/partylocalchatcontrol_setvoiceaudiooptions.md
+      - name: GetVoiceAudioOptions
+        href: classes/PartyLocalChatControl/methods/partylocalchatcontrol_getvoiceaudiooptions.md
       - name: GetLocalChatIndicator
         href: classes/PartyLocalChatControl/methods/partylocalchatcontrol_getlocalchatindicator.md
       - name: GetChatIndicator
@@ -527,6 +531,8 @@
     href: enums/partythreadid.md
   - name: PartyTranslationReceivedOptions
     href: enums/partytranslationreceivedoptions.md
+  - name: PartyVoiceAudioOptions
+    href: enums/partyvoiceaudiooptions.md
   - name: PartyVoiceChatTranscriptionOptions
     href: enums/partyvoicechattranscriptionoptions.md
   - name: PartyVoiceChatTranscriptionPhraseType

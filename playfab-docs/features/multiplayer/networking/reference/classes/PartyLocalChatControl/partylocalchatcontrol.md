@@ -5,7 +5,7 @@ description: The management class for chat operations related to the local devic
 ms.author: jdewey
 ms.topic: reference
 ms.service: playfab
-ms.date: 04/22/2022
+ms.date: 05/08/2023
 ---
 
 # PartyLocalChatControl  
@@ -48,6 +48,8 @@ class PartyLocalChatControl : public PartyChatControl
 | [GetIncomingAudioMuted](methods/partylocalchatcontrol_getincomingaudiomuted.md) | Provides whether the incoming audio from the target chat control, in relation to the local chat control, has previously been muted. |  
 | [SetIncomingTextMuted](methods/partylocalchatcontrol_setincomingtextmuted.md) | Configures whether the incoming text messages from the target chat control, in relation to the local chat control, is muted. |  
 | [GetIncomingTextMuted](methods/partylocalchatcontrol_getincomingtextmuted.md) | Provides whether the incoming text messages from the target chat control, in relation to the local chat control, has previously been muted. |  
+| [SetVoiceAudioOptions](methods/partylocalchatcontrol_setvoiceaudiooptions.md) | Configures the voice audio options for this chat control. |  
+| [GetVoiceAudioOptions](methods/partylocalchatcontrol_getvoiceaudiooptions.md) | Provides the voice audio options associated with this chat control. |  
 | [GetLocalChatIndicator](methods/partylocalchatcontrol_getlocalchatindicator.md) | Provides a chat indicator specifying the audio state of the local chat control. |  
 | [GetChatIndicator](methods/partylocalchatcontrol_getchatindicator.md) | Provides a chat indicator specifying the audio state of a target chat control in relation to the local chat control. |  
 | [ConfigureAudioManipulationCaptureStream](methods/partylocalchatcontrol_configureaudiomanipulationcapturestream.md) | Queues an asynchronous operation to configure the audio manipulation capture stream. |  
