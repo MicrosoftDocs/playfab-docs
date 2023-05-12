@@ -23,7 +23,7 @@ Using the wrapper application, you would also be able to use your game server bu
 
 This sample consists of two .NET Core console applications.
 
-* Wrapper&mdash;integrates the latest Nuget package for the PlayFab Game Server SDK (GSDK) with your game server. Note that this wrapper application is **not meant for production usage**
+* Wrapper&mdash;integrates the latest NuGet package for the PlayFab Game Server SDK (GSDK) with your game server. This wrapper application is **not meant for production usage**
 * Fakegame&mdash;a basic game server that has no knowledge of GSDK. It is like a typical game server that you would have prior to using PlayFab Multiplayer Servers. It starts the ASP.NET Core Web Server Kestrel that listens to TCP port 80. It's meant to simulate a game server that has absolutely zero knowledge of GSDK. You can use it if you don't have a game server of your own. It has two GET routes we can use, /hello for getting a simple response and /hello/terminate that can terminate the server.
 
 ## Requirements
@@ -40,7 +40,7 @@ If you don't have a game server portion for your game, you can use Fakegame.
 1. Get the [GSDK wrapper sample](https://github.com/PlayFab/MpsSamples/tree/master/wrappingGsdk) using standard Git methods or downloading this as a zip file
 2. [Build Wrapper executable](#build-wrapper-executable)
 3. This step is different depending on the types of servers you want to deploy. 
-    * To deploy Windows game servers, see [Combine Fakegame and the above Wrapper appplication as a zip file](#combine-fakegame-and-wrapper-application).
+    * To deploy Windows game servers, see [Combine Fakegame and the above Wrapper application as a zip file](#combine-fakegame-and-wrapper-application).
     * To deploy Linux game servers, see [Create and upload Linux container image](#create-and-upload-linux-container-image)
 4. [Deploy a build using Game Manager or API](#deploy-a-build-using-game-manager-or-api) to start creating game servers
 
@@ -74,12 +74,12 @@ When the wrapper build is successful, the executable is published in the ..\wrap
 
 ### Combine Fakegame and Wrapper application
 
-Use the build.ps1 to build and package both projects (wrapper and fakegame). This script will create a drop folder with a .zip file containing the required files.
+Use the build.ps1 to build and package both projects (wrapper and fakegame). This script creates a drop folder with a .zip file containing the required files.
 
 * Open PowerShell
 * Use the cd command to change directory path to the build.ps1 script location. Example: cd C:/ReplaceWithYourFilePath/wrappingGsdk/
 * Run __\build.ps1__
-* After the script runs successfully, go to ..\wrappingGsdk\drop\ folder. You will find a __gameassets.zip__ file containing the fake game server build, wrapper executable (built in the earlier step), and other required files is created.
+* After the script runs successfully, go to ..\wrappingGsdk\drop\ folder. You'll find a __gameassets.zip__ file containing the fake game server build, wrapper executable (built in the earlier step), and other required files is created.
 
 ### Add your game server files and combine them with the wrapper
 
@@ -90,7 +90,7 @@ To use your game project in the evaluation, place the wrapper and your game serv
 * In another window, go to your game server build and files needed to run your game server build. If you're unsure what files are needed, see [Determining DLL files needed](determining-required-dlls.md)
 * Copy the gamer server build and all required files into the wrapper publish location
 * Select all the files in the wrapper publish location
-* With all the files selected, right-click and then select __Send to__ > __Compressed (zip) files to zip__. Do not select the wrapper publish folder and add to zip. This would cause incorrect mapping.
+* With all the files selected, right-click and then select __Send to__ > __Compressed (zip) files to zip__. Don't select the wrapper publish folder and add to zip. This would cause incorrect mapping.
 
 > [!Tip]
 > To cross-check, follow the instructions at [Use fakegame project](#wrapper-with-fakegame) to build the gameassets.zip and use it as a reference.
@@ -101,10 +101,10 @@ To create a Linux container image, you would need a Dockerfile. A Dockerfile is 
 
 If you wish to use your Windows development device, you would need to install Windows Subsystem for Linux (WSL). Instructions are provided below. For more information, see [Windows and Linux container image differences](deploying-linux-based-builds.md#windows-and-linux-container-image-differences).
 
-1. [Set up your Windows development device](/gaming/playfab/features/multiplayer/servers/deploying-linux-based-builds.md#set-up-your-windows-development-device) (optional)
-2. [Get your PlayFab container registry login credentials](/gaming/playfab/features/multiplayer/servers/deploying-linux-based-builds#get-your-playfab-container-registry-login-credentials)
+1. [Set up your Windows development device](deploying-linux-based-builds.md#set-up-your-windows-development-device) (optional)
+2. [Get your PlayFab container registry sign-in credentials](deploying-linux-based-builds.md#get-your-playfab-container-registry-sign-in-credentials)
 3. Use existing/create your own Dockerfile
-    This step is different depending if you are using FakeGame or your own game server.
+    This step is different depending if you're using FakeGame or your own game server.
     * If you're using FakeGame, check that you have the [Dockerfile](https://github.com/PlayFab/MpsSamples/blob/master/wrappingGsdk/Dockerfile)
     * If you're using your game or need to create a Dockerfile, see [Create your Dockerfile](deploying-linux-based-builds.md#create-a-dockerfile). You can use the [Dockerfile](https://github.com/PlayFab/MpsSamples/blob/master/wrappingGsdk/Dockerfile) for FakeGame as a starting point.
 4. Open your Linux terminal with Docker installed, like Ubuntu. Replace the values for the TAG and the ACR variables with your values. Then run the commands below.
@@ -120,7 +120,7 @@ docker login ${ACR}
 5. Enter your username and password obtained from the earlier step.
 6. Build and upload the Linux container image. 
 
-Run the commands below to build and upload the Dockerfile. Note that there is a "." at the end of __docker build__ command. You have to be in the same folder/directory as the Dockerfile. For details, see [Build and upload Linux container image](deploying-linux-based-builds.md#build-and-upload-linux-container-image). 
+Run the commands below to build and upload the Dockerfile. There's a "." at the end of __docker build__ command. You have to be in the same folder/directory as the Dockerfile. For details, see [Build and upload Linux container image](deploying-linux-based-builds.md#build-and-upload-linux-container-image). 
 
 ```docker
 docker build -t ${ACR}/wrapper:${TAG} .
@@ -129,7 +129,7 @@ docker push ${ACR}/wrapper:${TAG}
 
 ### Deploy a build using Game Manager or API
 
-The deploy build process is quite similar for both Windows and Linux game servers.
+The deploy build process is similar for both Windows and Linux game servers.
 
 #### Deploy Windows game servers
 
@@ -145,7 +145,7 @@ If you prefer test this locally, see [Locally debugging game servers and integra
 * Start command:
     * Use __C:\Assets\wrapper.exe -g C:\Assets\fakegame.exe arg1 arg2__
     * Replace fakegame.exe with the name of your game server executable, if you're using your game server build
-* Network configuration: Use port __80__, __TCP__
+* Network configuration: Name: **gameport**, Port: **80**, Protocol: **TCP**
 * Assets: When using FakeGame, upload __gameassets.zip__ as an asset.
 
 #### Deploy Linux game servers
@@ -156,8 +156,8 @@ Follow the general steps below to deploy.
 
 **Settings specific to this sample**
 
-* Select the container you just uploaded
-* Network configuration: Use port __80__, __TCP__
+* Select the container you uploaded
+* Network configuration: Name: **gameport**, Port: **80**, Protocol: **TCP**
 * No need to upload assets and set __Start Command__
 
 > [!Note]
@@ -167,7 +167,7 @@ Follow the general steps below to deploy.
 
 Using LocalMultiplayerAgent is highly recommended if you want to test GSDK integration on your custom game servers.
 
-If you are using LocalMultiplayerAgent with Windows Containers you need to properly configure MultiplayerSettings.json file. You can find an example below, pay special attention to the values of LocalFilePath and StartGameCommand. Don't forget to replace fakegame.exe with the name of your game server executable.
+If you're using LocalMultiplayerAgent with Windows Containers, you need to properly configure MultiplayerSettings.json file. You can find an example below, pay special attention to the values of LocalFilePath and StartGameCommand. Don't forget to replace fakegame.exe with the name of your game server executable.
 
 ```json
 "AssetDetails": [
@@ -185,7 +185,7 @@ If you are using LocalMultiplayerAgent with Windows Containers you need to prope
                 {
                     "NodePort": 56100,
                     "GamePort": {
-                        "Name": "game_port",
+                        "Name": "gameport",
                         "Number": 80,
                         "Protocol": "TCP"
                     }
@@ -194,7 +194,7 @@ If you are using LocalMultiplayerAgent with Windows Containers you need to prope
         ]
 ```
 
-You are now ready to test with LocalMultiplayerAgent. If you have configured it correctly, as soon as LocalMultiplayerAgent launches your game server, you can connect to it via curl at **http://localhost:56100/Hello**.
+You're now ready to test with LocalMultiplayerAgent. If you have configured it correctly, as soon as LocalMultiplayerAgent launches your game server, you can connect to it via curl at **http://localhost:56100/Hello**.
 
 ## See also
 
