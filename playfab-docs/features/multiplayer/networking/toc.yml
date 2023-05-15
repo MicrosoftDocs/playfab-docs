@@ -32,6 +32,8 @@
     href: concepts-audio-troubleshooting.md
   - name: Using text moderation
     href: concepts-text-moderation.md
+  - name: Voice audio noise suppression
+    href: concepts-noise-suppression.md
 - name: Networking and security
   items:
   - name: Invitations and the security model
