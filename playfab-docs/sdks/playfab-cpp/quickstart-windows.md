@@ -12,6 +12,9 @@ ms.localizationpriority: medium
 
 # Quickstart: C++ for Windows
 
+> [!NOTE]  
+> This guide is intended for Win32-x64 games running outside the Microsoft GDK. If you are building a game utilizing the GDK, please see [GDK - overview](../gdk/index.md).
+
 Get started with the PlayFab Client library for C++. Follow steps to install the package and try out example code for a basic task.
 
 This quickstart helps you make your first PlayFab API call in the using the Client library for C++. Before continuing, make sure you have completed [Getting started for developers](../../personas/developer.md), which ensures you have a PlayFab account and are familiar with the PlayFab Game Manager.
