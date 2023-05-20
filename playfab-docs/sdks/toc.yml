@@ -23,6 +23,8 @@
   - name: C++
     href: playfab-cpp/index.md
     items:
+    - name: Quickstart - GDK
+      href: playfab-cpp/quickstart-gdk.md
     - name: Quickstart - Linux
       href: playfab-cpp/quickstart-linux.md
     - name: Quickstart - Windows
