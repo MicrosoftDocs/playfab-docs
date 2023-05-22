@@ -32,3 +32,5 @@ The type of logs and the way logging should be configured/captured depends on a 
 | PlayStation 5 | Plain text | See `Logging` section of `README.md` file included in a NuGet package for this SDK. |
 | PC (GDK) and Xbox (GDK) | ETW trace | See [this `README.md` file](https://github.com/PlayFab/PlayFabMultiplayer/blob/main/TraceScripts/README.md). |
 | Windows 10 | ETW trace | See [this `README.md` file](https://github.com/PlayFab/PlayFabMultiplayer/blob/main/TraceScripts/README.md). |
+| iOS | Plain text | See [this `README.md` file](https://github.com/PlayFab/PlayFabMultiplayer/blob/main/TraceScripts/README.md). |
+| macOS | Plain text | See [this `README.md` file](https://github.com/PlayFab/PlayFabMultiplayer/blob/main/TraceScripts/README.md). |
