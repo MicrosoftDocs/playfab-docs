@@ -1,8 +1,8 @@
 ---
 title: PlayFab Release Notes 2022
-author: toddbell
+author: joannaleecy
 description: PlayFab Release Notes for 2022.
-ms.author: toddbell
+ms.author: joanlee
 ms.date: 01/18/2022
 ms.topic: article
 ms.service: playfab

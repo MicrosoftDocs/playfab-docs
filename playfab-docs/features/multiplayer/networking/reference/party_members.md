@@ -5,7 +5,7 @@ description: "Party C/C++ API overview"
 ms.author: jdewey
 ms.topic: reference
 ms.service: playfab
-ms.date: 04/11/2023
+ms.date: 05/08/2023
 ---
 
 # Party C/C++ API overview
@@ -142,6 +142,7 @@ ms.date: 04/11/2023
 | [PartyTextChatOptions](enums/partytextchatoptions.md) | Text chat options.|  
 | [PartyThreadId](enums/partythreadid.md) | High-level categorization of internal processing tasks.|  
 | [PartyTranslationReceivedOptions](enums/partytranslationreceivedoptions.md) | Flags describing how a translation was received.|  
+| [PartyVoiceAudioOptions](enums/partyvoiceaudiooptions.md) | Voice audio options.|  
 | [PartyVoiceChatTranscriptionOptions](enums/partyvoicechattranscriptionoptions.md) | Voice chat transcription options.|  
 | [PartyVoiceChatTranscriptionPhraseType](enums/partyvoicechattranscriptionphrasetype.md) | Types of transcription phrases.|  
 | [PartyWorkMode](enums/partyworkmode.md) | Configuration modes representing how the Party library will manage an internal processing task.|  

@@ -10,7 +10,7 @@ keywords: playfab
 ms.localizationpriority: medium
 ---
 
-# Add-Ons
+# Add-ons
 
 Add-ons are tools and services for extending and operating your game. You can configure them in the `Add-ons` section of Game Manager.
 
@@ -18,6 +18,3 @@ Extend your game, and reduce SDK fatigue, with Add-ons from the PlayFab Marketpl
 
 [!INCLUDE [add-ons-enum](../includes/_add-ons-enum.md)]
 
-> [!TIP]
-> Looking for an add-on?
-> We're working hard to add more! Check out [the add-on section of our forums](https://community.playfab.com/spaces/27) to vote on the integrations you'd like to see next.
