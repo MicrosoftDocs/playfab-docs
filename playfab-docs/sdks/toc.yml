@@ -51,10 +51,10 @@
       - name: Debug Tracing
         href: gdk/tracing.md
       - name: Event Pipeline
-        href: gdk/event-pipeline/eventpipeline.md
+        href: ../event-pipeline/eventpipeline.md
         items:
         - name: Event Pipeline Tutorial
-          href: gdk/event-pipeline/eventpipeline-tutorial.md
+          href: ../event-pipeline/eventpipeline-tutorial.md
     - name: Phaser.io
       href: phaser/index.md
     - name: Photon
