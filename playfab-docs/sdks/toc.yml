@@ -31,7 +31,7 @@
       href: playfab-cpp/quickstart-windows.md
 - name: Frameworks
   href: frameworks/index.yml
-  items: 
+  items:
     - name: Cocos2d-x
       href: cocos2d-x/index.md
       items:
@@ -50,6 +50,11 @@
         href: gdk/relogin.md
       - name: Debug Tracing
         href: gdk/tracing.md
+      - name: Event Pipeline
+        href: ../event-pipeline/eventpipeline.md
+        items:
+        - name: Event Pipeline Tutorial
+          href: ../event-pipeline/eventpipeline-tutorial.md
     - name: Phaser.io
       href: phaser/index.md
     - name: Photon
@@ -91,7 +96,7 @@
       - name: Quickstart - Corona
         href: lua/quickstart-corona.md
       - name: Quickstart - Defold
-        href: lua/quickstart-defold.md        
+        href: lua/quickstart-defold.md
     - name: NodeJS
       href: nodejs/index.md
       items:
