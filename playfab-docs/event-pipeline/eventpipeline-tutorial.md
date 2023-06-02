@@ -10,9 +10,7 @@ keywords: playfab, c++, windows, xbox, gdk, telemetry, insights
 ms.localizationpriority: medium
 ---
 
-# Event Pipeline Tutorial
-
-## Overview
+# Event Pipeline tutorial
 
 This document is a quick step-by-step tutorial on how to use the Event Pipeline feature in the PlayFab Services SDK.
 
@@ -134,7 +132,8 @@ Here, we want to get an Entity that we can use to start linking with our events.
 
 For this tutorial, we're calling **PFAuthenticationReLoginWithXUserAsync** API to get a valid **PFEntityHandle**.
 
-_Note: The userHandle object passed as part of the **PFAuthenticationLoginWithXUserRequest** is of XUserHandle type. The steps on how to get a valid XUserHandle are out of scope for this tutorial. For more information on this topic, see [XUserAddAsync](/gaming/gdk/_content/gc/reference/system/xuser/functions/xuseraddasync) documentation._
+> [!NOTE]
+> The userHandle object passed as part of the **PFAuthenticationLoginWithXUserRequest** is of XUserHandle type. The steps on how to get a valid XUserHandle are out of scope for this tutorial. For more information on this topic, see [XUserAddAsync](/gaming/gdk/_content/gc/reference/system/xuser/functions/xuseraddasync) documentation.
 
 ```cpp
 PFEntityHandle entityHandle;
@@ -210,10 +209,14 @@ if (FAILED(hr))
 }
 ```
 
-## Step 8 - Close Event Pipeline Handle
+## Step 8 - Close Event Pipeline handle
 
 Lastly, when we're done uploading events, the only thing we need to do is to call **PFEventPipelineCloseHandle** passing our pipeline handle.
 
 ```cpp
 PFEventPipelineCloseHandle(handle);
 ```
+
+## See also
+
+- [Event Pipeline overview](eventpipeline.md)
