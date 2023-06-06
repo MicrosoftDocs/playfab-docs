@@ -14,6 +14,19 @@ ms.localizationpriority: medium
 
 PlayFab Party had a significant (up to 90%) price drop on October 13, 2020. You can view the updated Party rates on the [Pricing page](https://playfab.com/pricing). For more information about the price drop, see our [blog post](https://blog.playfab.com/blog/starting-today-save-up-to-90-using-playfab-party).
 
+## 1.8.3
+
+June 2, 2023
+
+- PlayFab Party version 1.8 released for Nintendo Switch with all bug fixes and new features since the last Nintendo Switch release (version 1.7.15).
+
+## 1.8.2
+
+May 30, 2023
+
+### Bug fixes
+- Fixed a bug where the PlayFab Party library would require the macOS version to be at least 13.1. The new release sets the minimum macOS version to 12.3. 
+
 ## 1.8.0
 
 May 8, 2023
