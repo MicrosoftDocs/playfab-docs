@@ -225,6 +225,13 @@ NetworkManager::CreateAndConnectToNetwork(
 
 In a similar way, each method in the SimpleClient Objective-C interface is mapped to Party API via the `SimpleClientImpl` and `NetworkManager`.
 
+## Remarks
+If PlayFab Party is intended to be used for voice chat, the application needs to be granted microphone access. To do this, ensure that the following property is added to the Info.plist file of the application.
+```
+<key>NSMicrophoneUsageDescription</key>
+<string>The application requires access to the microphone for voice chat.</string>
+```
+
 ## Next steps
 
 After completing the platform specific steps to integrate the Party library into your iOS or macOS application, refer to [Quickstart for PlayFab Party](quickstart.md) to finish getting started with PlayFab Party.
