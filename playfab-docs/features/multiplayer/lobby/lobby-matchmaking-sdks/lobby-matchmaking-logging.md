@@ -25,10 +25,12 @@ The type of logs and the way logging should be configured/captured depends on a 
 
 | Platform | Log format | Logging instruction guidance location |
 |------------|------------|------------|
-| Android | Plain text | Coming soon. |
+| Android | Plain text | See [this `README.md` file](https://github.com/PlayFab/PlayFabMultiplayer/blob/main/TraceScripts/README.md). |
 | Linux | Plain text | See `Logging` section of `docs/README.md` file included in SDK package. |
 | Switch | Plain text | See `Logging` section of `README.md` file included in a NuGet package for this SDK. |
 | PlayStation 4 | Plain text | See `Logging` section of `README.md` file included in a NuGet package for this SDK. |
 | PlayStation 5 | Plain text | See `Logging` section of `README.md` file included in a NuGet package for this SDK. |
 | PC (GDK) and Xbox (GDK) | ETW trace | See [this `README.md` file](https://github.com/PlayFab/PlayFabMultiplayer/blob/main/TraceScripts/README.md). |
 | Windows 10 | ETW trace | See [this `README.md` file](https://github.com/PlayFab/PlayFabMultiplayer/blob/main/TraceScripts/README.md). |
+| iOS | Plain text | See [this `README.md` file](https://github.com/PlayFab/PlayFabMultiplayer/blob/main/TraceScripts/README.md). |
+| macOS | Plain text | See [this `README.md` file](https://github.com/PlayFab/PlayFabMultiplayer/blob/main/TraceScripts/README.md). |
