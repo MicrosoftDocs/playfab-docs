@@ -19,12 +19,28 @@ One of the first scenarios we wanted to cover with the Economy V2 Catalog was ma
 ## Setting up your Catalog items using Game Manager
 This first step is relatively simple and can be done using Game Manager. Navigate to your Title Settings in Game Manager, then to the Economy V2 tab.
 
+<div align="center">
+    <img src="../media/tutorials/in-game-vendor-game-manager-title-settings.png">
+</div>
+
 Under Economy V2, we will create a set of Tags for our In-Game Vendors. These can be whatever you want but in our case we are going to have an Item, Sword, and Pistol vendor, so those are also the names of the tags we will use.
+
+<div align="center">
+    <img src="../media/tutorials/in-game-vendor-game-manager-economy-settings.png">
+</div>
 
 Save your configuration, then Navigate to Economy -> Catalog V2 -> Currency, click the New Currency button and use the form to create a new currency. You can name the currency whatever you want (we are calling ours Gold) but take note of your Currency ID because we will be using that later.   
 
+<div align="center">
+    <img src="../media/tutorials/in-game-vendor-game-manager-published-items.png">
+</div>
+
 Now you can create items using both the Currency and the Tags. 
 Navigate to Economy -> Catalog V2 -> Items. 
+
+<div align="center">
+    <img src="../media/tutorials/in-game-vendor-game-manager-view-items.png">
+</div>
 
 From here you can create new items using both the Gold Currency and the various search Tags. We are also adding small, 100x100 pixel Thumbnail images to the item for display in game. You also can specify various metadata here such as type, localized title and description, content type, or customized display properties. You can also upload other images or content for your items. 
 For the purposes of this demo and testing, we created 2 items of each type.
@@ -41,17 +57,41 @@ After you are able to install and set up your first client call into PlayFab mov
 ## Fetching catalog items using a Seach query
 We are going to create a new script to queue up our calls to our Catalog. I’m calling this CatalogCaller.cs. After creating the script I’ll attach it to an empty GameObject (calling this PlayFabManager) in my Unity scene to make it available to the UX when I need it. This is also where I placed the PlayFabLogin script.
 
+<div align="center">
+    <img src="../media/tutorials/in-game-vendor-unity-playfab_manager.png">
+</div>
+
 We need to add some libraries to CatalogCaller so that we can understand PlayFab’s native Economy Models, and leverage Unity’s lists, UI (user interfaces), TextMeshPro and network calling library.
 
 We also want to make some declarations at the top of the class – two unity GameObject arrays for holding images and text, and a placeholder to help us hold onto the Item price. 
 
 In Unity we want to create a vendor store view with Sea of Thieves as the inspiration.
 
+<div align="center">
+    <img src="../media/tutorials/in-game-vendor-game-manager-sot-hero-image-2.png">
+
+</div>
+
 This is a fairly clean interface with a set of thumbnail images and prices. To replicate this, I’ve created a Unity Prefab item called ‘StoreListing’ which is a simple Canvas Panel with a Button/Raw Image component and a Text (TextMeshPro) component.
 
-In the main scene I set up a Unity Canvas with a Panel that holds a set of these StoreListing prefabs. I then populate my custom script arrays (GUI Thumbs and GUI Prices) with each StoreListing’s RawImage and Text objects so that we will have them at runtime to populate.
+<div align="center">
+    <img src="../media/tutorials/in-game-vendor-unity-raw-image-button.png">
+
+</div>
+
+In the scene I set up a Unity Canvas with a Panel that holds a set of these StoreListing prefabs. I then populate my custom script arrays (GUI Thumbs and GUI Prices) with each StoreListing’s RawImage and Text objects so that we will have them at runtime to populate.
+
+<div align="center">
+    <img src="../media/tutorials/in-game-vendor-unity-manager-prefabs.png">
+
+</div>
 
 We will also add some simple buttons to use for calling the catalog functions, one for each type (Items, Swords, and Pistols).
+
+<div align="center">
+    <img src="../media/tutorials/in-game-vendor-unity-vendor-buttons.png">
+
+</div>
 
 With all of this in place we can now do some real coding. We need a public function for calling the catalog, se create a SwordCatalogCaller() function. We set up a new SearchItemsRequest using Filter to look solely for items with the sword Tag inside this function. We will also add ordering this by Last Modified date so that we get the most recent items first and limit the count to 10. 
 We then then a search call items with this request and call with new custom methods for success and failure.
@@ -79,9 +119,24 @@ Then we move to a SendWebRequest and look for failures in the result. If everyth
 
 Now we just need to add the function to one of our buttons. Drag the PlayFabManager onto the the button runtime only field, and choose the ItemCatalogCaller function. 
 
+<div align="center">
+    <img src="../media/tutorials/in-game-vendor-unity-vendor-buttons-2.png">
+
+</div>
+
 We now have a button that will pull the content for our Item vendor into our Canvas for display. 
 
+<div align="center">
+    <img src="../media/tutorials/in-game-vendor-unity-fetch-request-succeeded.png">
+
+</div>
+
 To update this to work for a different vendor we just need change our SearchItemsRequest. I can create a couple new search queries with copy past to look for different tags:
+
+<div align="center">
+    <img src="../media/tutorials/in-game-vendor-unity-fetch-request-succeeded-2.png">
+
+</div>
 
 When its done our CatalogCaller script now looks like this:
 
