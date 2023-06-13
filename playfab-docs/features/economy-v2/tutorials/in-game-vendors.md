@@ -139,6 +139,9 @@ private void OnCatalogFetchRequestSuccess (SearchItemsResponse result)
     }
 }
 ```
+> [!TIP] For more details and examples on search, check out the official documentation [https://learn.microsoft.com/en-us/gaming/playfab/features/economy-v2/catalog/search]
+
+
 ## Parsing the Catalog Search Call
 So now we can call search and get a result. We need to parse that result by making updates to OnCatalogFetchRequestSuccess. First, we will create a list to hold our CatalogItems, explicitly using EconomyModels so that we don’t conflict with Legacy V1:
 ```csharp
