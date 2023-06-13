@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 One of the first scenarios we wanted to cover with the Economy V2 Catalog was managing multiple in-game vendors. The inspiration here was Sea of Thieves, and the way they build engagement with various characters and factions within the game representing different shops and characters you can interact with. In this article, I will show you how to use PlayFab's catalog, Game Manager, the PlayFab SDK, Tags, and the search API to create multiple in-game vendor displays.
 
-<div align="center">
+<div align="center" alt="An in-game vendor in Sea of Thieves">
     <img src="../media/tutorials/in-game-vendor-sot-hero-image.png">
 </div>
 
