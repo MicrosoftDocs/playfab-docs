@@ -12,6 +12,22 @@ ms.localizationpriority: medium
 
 # PlayFab Multiplayer C++ SDK release notes
 
+## 1.5.3
+
+April 25, 2023
+
+### Bug fixes
+
+- Fix a linker error specific to iOS and macOS where HttpClient.framework would not be found during runtime.
+
+## 1.5.2
+
+April 4, 2023
+
+### Bug fixes
+
+- Introduce the PFMultiplayerPal.h header, which provides support for non-MSVC compilers. This header defines SAL and HRESULTs for non-MSVC compiled platforms.
+
 ## 1.5.1
 
 March 20, 2023
