@@ -5,3 +5,5 @@ items:
     href: publish-ugc.md
   - name: Virtual currencies
     href: currencies.md
+  - name: Setting up multiple in-game vendors
+    href: in-game-vendors.md
