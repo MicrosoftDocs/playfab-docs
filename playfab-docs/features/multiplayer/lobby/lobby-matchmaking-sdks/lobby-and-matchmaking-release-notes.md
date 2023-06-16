@@ -12,6 +12,14 @@ ms.localizationpriority: medium
 
 # PlayFab Multiplayer C++ SDK release notes
 
+## 1.6.0
+
+June 14, 2023
+
+### New Features
+
+- Added a `membershipLock` field to the [PFLobbySearchResult](../playfabmultiplayerreference-cpp/pflobby/structs/pflobbysearchresult.md) struct to enable reading the lock state of the lobbies provided in search results from [PFMultiplayerFindLobbies()](../playfabmultiplayerreference-cpp/pflobby/functions/pfmultiplayerfindlobbies.md).
+
 ## 1.5.3
 
 April 25, 2023
