@@ -5,7 +5,7 @@ description: "Retrieves the user's PlayFab account details"
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFAccountManagementClientGetAccountInfoAsync  
@@ -26,7 +26,7 @@ HRESULT PFAccountManagementClientGetAccountInfoAsync(
   
 **`entityHandle`** &nbsp; PFEntityHandle  
   
-PFTitlePlayerHandle to use for authentication.  
+PFEntityHandle to use for authentication.  
   
 **`request`** &nbsp; [PFAccountManagementGetAccountInfoRequest*](../../pfaccountmanagementtypes/structs/pfaccountmanagementgetaccountinforequest.md)  
   
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-If successful, call [PFAccountManagementClientGetAccountInfoGetResult](pfaccountmanagementclientgetaccountinfogetresult.md) to get the result.
+When the asynchronous task is complete, call [PFAccountManagementClientGetAccountInfoGetResultSize](pfaccountmanagementclientgetaccountinfogetresultsize.md) and [PFAccountManagementClientGetAccountInfoGetResult](pfaccountmanagementclientgetaccountinfogetresult.md) to get the result.
   
 ## Requirements  
   

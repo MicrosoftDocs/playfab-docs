@@ -5,7 +5,7 @@ description: "PFTitleDataManagementGetTitleNewsResult data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFTitleDataManagementGetTitleNewsResult  
@@ -24,7 +24,7 @@ typedef struct PFTitleDataManagementGetTitleNewsResult {
 ### Members  
   
 **`news`** &nbsp; [PFTitleDataManagementTitleNewsItem](pftitledatamanagementtitlenewsitem.md) const*  
-*array of size `newsCount`*  
+*may be nullptr*  
   
 (Optional) Array of news items.
   

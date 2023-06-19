@@ -5,7 +5,7 @@ description: "PFCatalogGetDraftItemsResponse data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFCatalogGetDraftItemsResponse  
@@ -30,7 +30,7 @@ typedef struct PFCatalogGetDraftItemsResponse {
 (Optional) An opaque token used to retrieve the next page of items, if any are available.
   
 **`items`** &nbsp; [PFCatalogCatalogItem](pfcatalogcatalogitem.md) const*  
-*array of size `itemsCount`*  
+*may be nullptr*  
   
 (Optional) A set of items created by the entity.
   

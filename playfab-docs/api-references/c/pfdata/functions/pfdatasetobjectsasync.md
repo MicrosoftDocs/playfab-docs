@@ -5,7 +5,7 @@ description: "Sets objects on an entity's profile."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFDataSetObjectsAsync  
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-Sets JSON objects on the requested entity profile. May include a version number to be used to perform optimistic concurrency operations during update. If the current version differs from the version in the request the request will be ignored. If no version is set on the request then the value will always be updated if the values differ. Using the version value does not guarantee a write though, ConcurrentEditError may still occur if multiple clients are attempting to update the same profile. See also ObjectGetObjectsAsync. If successful, call [PFDataSetObjectsGetResult](pfdatasetobjectsgetresult.md) to get the result.
+Sets JSON objects on the requested entity profile. May include a version number to be used to perform optimistic concurrency operations during update. If the current version differs from the version in the request the request will be ignored. If no version is set on the request then the value will always be updated if the values differ. Using the version value does not guarantee a write though, ConcurrentEditError may still occur if multiple clients are attempting to update the same profile. See also ObjectGetObjectsAsync. When the asynchronous task is complete, call [PFDataSetObjectsGetResultSize](pfdatasetobjectsgetresultsize.md) and [PFDataSetObjectsGetResult](pfdatasetobjectsgetresult.md) to get the result.
   
 ## Requirements  
   

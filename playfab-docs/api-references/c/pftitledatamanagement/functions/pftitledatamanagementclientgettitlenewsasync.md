@@ -5,7 +5,7 @@ description: "Retrieves the title news feed, as configured in the developer port
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFTitleDataManagementClientGetTitleNewsAsync  
@@ -26,7 +26,7 @@ HRESULT PFTitleDataManagementClientGetTitleNewsAsync(
   
 **`entityHandle`** &nbsp; PFEntityHandle  
   
-PFTitlePlayerHandle to use for authentication.  
+PFEntityHandle to use for authentication.  
   
 **`request`** &nbsp; [PFTitleDataManagementGetTitleNewsRequest*](../../pftitledatamanagementtypes/structs/pftitledatamanagementgettitlenewsrequest.md)  
   
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-If successful, call [PFTitleDataManagementClientGetTitleNewsGetResult](pftitledatamanagementclientgettitlenewsgetresult.md) to get the result.
+When the asynchronous task is complete, call [PFTitleDataManagementClientGetTitleNewsGetResultSize](pftitledatamanagementclientgettitlenewsgetresultsize.md) and [PFTitleDataManagementClientGetTitleNewsGetResult](pftitledatamanagementclientgettitlenewsgetresult.md) to get the result.
   
 ## Requirements  
   

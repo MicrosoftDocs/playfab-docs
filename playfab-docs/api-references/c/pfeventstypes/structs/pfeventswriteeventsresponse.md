@@ -5,7 +5,7 @@ description: "PFEventsWriteEventsResponse data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFEventsWriteEventsResponse  
@@ -24,7 +24,7 @@ typedef struct PFEventsWriteEventsResponse {
 ### Members  
   
 **`assignedEventIds`** &nbsp; const char* const*  
-*array of size `assignedEventIdsCount`*  
+*may be nullptr*  
   
 (Optional) The unique identifiers assigned by the server to the events, in the same order as the events in the request. Only returned if FlushToPlayStream option is true.
   

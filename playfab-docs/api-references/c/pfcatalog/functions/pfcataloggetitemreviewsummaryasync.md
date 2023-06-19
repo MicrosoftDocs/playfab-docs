@@ -1,16 +1,16 @@
 ---
 author: jasonsandlin
 title: "PFCatalogGetItemReviewSummaryAsync"
-description: "Get a summary of all reviews associated with the specified item."
+description: "Get a summary of all ratings and reviews associated with the specified item. Summary ratings data is cached with update data coming within 15 minutes."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFCatalogGetItemReviewSummaryAsync  
 
-Get a summary of all reviews associated with the specified item.  
+Get a summary of all ratings and reviews associated with the specified item. Summary ratings data is cached with update data coming within 15 minutes.  
 
 ## Syntax  
   
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-If successful, call [PFCatalogGetItemReviewSummaryGetResult](pfcataloggetitemreviewsummarygetresult.md) to get the result.
+When the asynchronous task is complete, call [PFCatalogGetItemReviewSummaryGetResultSize](pfcataloggetitemreviewsummarygetresultsize.md) and [PFCatalogGetItemReviewSummaryGetResult](pfcataloggetitemreviewsummarygetresult.md) to get the result.
   
 ## Requirements  
   

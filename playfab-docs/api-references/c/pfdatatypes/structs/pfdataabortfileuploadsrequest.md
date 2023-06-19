@@ -5,7 +5,7 @@ description: "PFDataAbortFileUploadsRequest data model. Aborts the pending uploa
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFDataAbortFileUploadsRequest  
@@ -16,6 +16,7 @@ PFDataAbortFileUploadsRequest data model. Aborts the pending upload of the reque
   
 ```cpp
 typedef struct PFDataAbortFileUploadsRequest {  
+    PFStringDictionaryEntry const* customTags;  
     uint32_t customTagsCount;  
     PFEntityKey const* entity;  
     const char* const* fileNames;  
@@ -26,17 +27,20 @@ typedef struct PFDataAbortFileUploadsRequest {
   
 ### Members  
   
-**`customTagsCount`** &nbsp; uint32_t  
-*array of size `customTagsCount`*  
+**`customTags`** &nbsp; [PFStringDictionaryEntry](../../pftypes/structs/pfstringdictionaryentry.md) const*  
+*may be nullptr*  
   
 (Optional) The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
+  
+**`customTagsCount`** &nbsp; uint32_t  
+  
+Count of customTags
   
 **`entity`** &nbsp; [PFEntityKey](../../pftypes/structs/pfentitykey-c.md) const*  
   
 The entity to perform this action on.
   
 **`fileNames`** &nbsp; const char* const*  
-*array of size `fileNamesCount`*  
   
 Names of the files to have their pending uploads aborted.
   

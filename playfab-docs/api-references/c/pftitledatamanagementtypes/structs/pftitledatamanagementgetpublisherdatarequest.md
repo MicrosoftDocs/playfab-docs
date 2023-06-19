@@ -5,7 +5,7 @@ description: "PFTitleDataManagementGetPublisherDataRequest data model. This API 
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFTitleDataManagementGetPublisherDataRequest  
@@ -24,7 +24,6 @@ typedef struct PFTitleDataManagementGetPublisherDataRequest {
 ### Members  
   
 **`keys`** &nbsp; const char* const*  
-*array of size `keysCount`*  
   
 array of keys to get back data from the Publisher data blob, set by the admin tools.
   

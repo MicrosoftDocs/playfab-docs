@@ -5,7 +5,7 @@ description: "PFInventoryDeleteInventoryItemsResponse data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFInventoryDeleteInventoryItemsResponse  
@@ -36,7 +36,7 @@ typedef struct PFInventoryDeleteInventoryItemsResponse {
 (Optional) The idempotency id used in the request.
   
 **`transactionIds`** &nbsp; const char* const*  
-*array of size `transactionIdsCount`*  
+*may be nullptr*  
   
 (Optional) The ids of transactions that occurred as a result of the request.
   

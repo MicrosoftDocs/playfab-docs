@@ -5,7 +5,7 @@ description: "PFPlayerDataManagementGetUserDataRequest data model. Data is store
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFPlayerDataManagementGetUserDataRequest  
@@ -31,7 +31,7 @@ typedef struct PFPlayerDataManagementGetUserDataRequest {
 (Optional) The version that currently exists according to the caller. The call will return the data for all of the keys if the version in the system is greater than this.
   
 **`keys`** &nbsp; const char* const*  
-*array of size `keysCount`*  
+*may be nullptr*  
   
 (Optional) List of unique keys to load from.
   

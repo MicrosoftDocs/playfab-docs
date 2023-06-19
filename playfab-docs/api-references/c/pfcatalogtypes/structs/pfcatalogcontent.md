@@ -5,7 +5,7 @@ description: "PFCatalogContent data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFCatalogContent  
@@ -36,17 +36,17 @@ typedef struct PFCatalogContent {
 **`maxClientVersion`** &nbsp; const char*  
 *is null-terminated*  
   
-(Optional) The maximum client version that this content is compatible with.
+(Optional) The maximum client version that this content is compatible with. Client Versions can be up to 3 segments separated by periods(.) and each segment can have a maximum value of 65535.
   
 **`minClientVersion`** &nbsp; const char*  
 *is null-terminated*  
   
-(Optional) The minimum client version that this content is compatible with.
+(Optional) The minimum client version that this content is compatible with. Client Versions can be up to 3 segments separated by periods(.) and each segment can have a maximum value of 65535.
   
 **`tags`** &nbsp; const char* const*  
-*array of size `tagsCount`*  
+*may be nullptr*  
   
-(Optional) The list of tags that are associated with this content.
+(Optional) The list of tags that are associated with this content. Tags must be defined in the Catalog Config before being used in content.
   
 **`tagsCount`** &nbsp; uint32_t  
   
@@ -55,7 +55,7 @@ Count of tags
 **`type`** &nbsp; const char*  
 *is null-terminated*  
   
-(Optional) The client-defined type of the content.
+(Optional) The client-defined type of the content. Content Types must be defined in the Catalog Config before being used.
   
 **`url`** &nbsp; const char*  
 *is null-terminated*  

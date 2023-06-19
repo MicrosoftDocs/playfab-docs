@@ -5,7 +5,7 @@ description: "PFGroupsEntityMemberRole data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFGroupsEntityMemberRole  
@@ -26,7 +26,7 @@ typedef struct PFGroupsEntityMemberRole {
 ### Members  
   
 **`members`** &nbsp; [PFGroupsEntityWithLineage](pfgroupsentitywithlineage.md) const*  
-*array of size `membersCount`*  
+*may be nullptr*  
   
 (Optional) The list of members in the role.
   

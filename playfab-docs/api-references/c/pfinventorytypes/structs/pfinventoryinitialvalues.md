@@ -5,7 +5,7 @@ description: "PFInventoryInitialValues data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFInventoryInitialValues  
@@ -24,7 +24,7 @@ typedef struct PFInventoryInitialValues {
   
 **`displayProperties`** &nbsp; [PFJsonObject](../../pftypes/structs/pfjsonobject.md)  
   
-(Optional) Game specific properties for display purposes.
+(Optional) Game specific properties for display purposes. The Display Properties field has a 1000 byte limit.
   
   
 ## Requirements  

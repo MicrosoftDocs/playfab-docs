@@ -5,7 +5,7 @@ description: "Lists all groups and roles for an entity"
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFGroupsListMembershipAsync  
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-Lists the groups and roles that an entity is a part of, checking to see if group and role metadata and memberships should be visible to the caller. If the entity is not in any roles that are visible to the caller, the group is not returned in the results, even if the caller otherwise has permission to see that the entity is a member of that group. See also GroupListGroupMembersAsync, GroupListMembershipOpportunitiesAsync. If successful, call [PFGroupsListMembershipGetResult](pfgroupslistmembershipgetresult.md) to get the result.
+Lists the groups and roles that an entity is a part of, checking to see if group and role metadata and memberships should be visible to the caller. If the entity is not in any roles that are visible to the caller, the group is not returned in the results, even if the caller otherwise has permission to see that the entity is a member of that group. When the asynchronous task is complete, call [PFGroupsListMembershipGetResultSize](pfgroupslistmembershipgetresultsize.md) and [PFGroupsListMembershipGetResult](pfgroupslistmembershipgetresult.md) to get the result.
   
 ## Requirements  
   

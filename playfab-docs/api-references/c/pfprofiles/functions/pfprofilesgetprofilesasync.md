@@ -5,7 +5,7 @@ description: "Retrieves the entity's profile."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFProfilesGetProfilesAsync  
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-Given a set of entity types and entity identifiers will retrieve all readable profiles properties for the caller. Profiles that the caller is not allowed to read will silently not be included in the results. If successful, call [PFProfilesGetProfilesGetResult](pfprofilesgetprofilesgetresult.md) to get the result.
+Given a set of entity types and entity identifiers will retrieve all readable profiles properties for the caller. Profiles that the caller is not allowed to read will silently not be included in the results. When the asynchronous task is complete, call [PFProfilesGetProfilesGetResultSize](pfprofilesgetprofilesgetresultsize.md) and [PFProfilesGetProfilesGetResult](pfprofilesgetprofilesgetresult.md) to get the result.
   
 ## Requirements  
   

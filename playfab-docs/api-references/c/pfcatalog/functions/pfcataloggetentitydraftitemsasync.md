@@ -1,16 +1,16 @@
 ---
 author: jasonsandlin
 title: "PFCatalogGetEntityDraftItemsAsync"
-description: "Retrieves a paginated list of the items from the draft catalog created by the Entity."
+description: "Retrieves a paginated list of the items from the draft catalog created by the Entity. Up to 50 items can be returned at once. You can use continuation tokens to paginate through results that return greater than the limit. GetEntityDraftItems does not work off a cache of the Catalog and should be used when trying to get recent item updates."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFCatalogGetEntityDraftItemsAsync  
 
-Retrieves a paginated list of the items from the draft catalog created by the Entity.  
+Retrieves a paginated list of the items from the draft catalog created by the Entity. Up to 50 items can be returned at once. You can use continuation tokens to paginate through results that return greater than the limit. GetEntityDraftItems does not work off a cache of the Catalog and should be used when trying to get recent item updates.  
 
 ## Syntax  
   
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-If successful, call [PFCatalogGetEntityDraftItemsGetResult](pfcataloggetentitydraftitemsgetresult.md) to get the result.
+When the asynchronous task is complete, call [PFCatalogGetEntityDraftItemsGetResultSize](pfcataloggetentitydraftitemsgetresultsize.md) and [PFCatalogGetEntityDraftItemsGetResult](pfcataloggetentitydraftitemsgetresult.md) to get the result.
   
 ## Requirements  
   

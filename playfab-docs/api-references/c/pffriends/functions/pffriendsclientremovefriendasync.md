@@ -5,7 +5,7 @@ description: "Removes a specified user from the friend list of the local user"
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFFriendsClientRemoveFriendAsync  
@@ -26,7 +26,7 @@ HRESULT PFFriendsClientRemoveFriendAsync(
   
 **`entityHandle`** &nbsp; PFEntityHandle  
   
-PFTitlePlayerHandle to use for authentication.  
+PFEntityHandle to use for authentication.  
   
 **`request`** &nbsp; [PFFriendsClientRemoveFriendRequest*](../../pffriendstypes/structs/pffriendsclientremovefriendrequest.md)  
   
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-See also ClientAddFriendAsync, ClientSetFriendTagsAsync. Call XAsyncGetStatus to get the status of the operation.
+See also ClientAddFriendAsync, ClientSetFriendTagsAsync. Call XAsyncGetStatus to get the status of the operation. If the service call is unsuccessful, the async result will be one of global PlayFab Service errors. See doc page "Handling PlayFab Errors" for more details on error handling.
   
 ## Requirements  
   

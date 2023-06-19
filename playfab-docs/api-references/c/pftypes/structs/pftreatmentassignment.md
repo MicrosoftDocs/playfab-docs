@@ -5,7 +5,7 @@ description: "PFTreatmentAssignment data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFTreatmentAssignment  
@@ -26,7 +26,7 @@ typedef struct PFTreatmentAssignment {
 ### Members  
   
 **`variables`** &nbsp; [PFVariable](pfvariable.md) const*  
-*array of size `variablesCount`*  
+*may be nullptr*  
   
 (Optional) List of the experiment variables.
   
@@ -35,7 +35,7 @@ typedef struct PFTreatmentAssignment {
 Count of variables
   
 **`variants`** &nbsp; const char* const*  
-*array of size `variantsCount`*  
+*may be nullptr*  
   
 (Optional) List of the experiment variants.
   

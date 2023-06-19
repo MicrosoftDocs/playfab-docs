@@ -1,16 +1,16 @@
 ---
 author: jasonsandlin
 title: "PFCatalogGetDraftItemsAsync"
-description: "Retrieves a paginated list of the items from the draft catalog."
+description: "Retrieves a paginated list of the items from the draft catalog. Up to 50 IDs can be retrieved in a single request. GetDraftItems does not work off a cache of the Catalog and should be used when trying to get recent item updates."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFCatalogGetDraftItemsAsync  
 
-Retrieves a paginated list of the items from the draft catalog.  
+Retrieves a paginated list of the items from the draft catalog. Up to 50 IDs can be retrieved in a single request. GetDraftItems does not work off a cache of the Catalog and should be used when trying to get recent item updates.  
 
 ## Syntax  
   
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-If successful, call [PFCatalogGetDraftItemsGetResult](pfcataloggetdraftitemsgetresult.md) to get the result.
+When the asynchronous task is complete, call [PFCatalogGetDraftItemsGetResultSize](pfcataloggetdraftitemsgetresultsize.md) and [PFCatalogGetDraftItemsGetResult](pfcataloggetdraftitemsgetresult.md) to get the result.
   
 ## Requirements  
   

@@ -5,7 +5,7 @@ description: "PFMultiplayerServerScheduledStandbySettings data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFMultiplayerServerScheduledStandbySettings  
@@ -29,7 +29,7 @@ typedef struct PFMultiplayerServerScheduledStandbySettings {
 When true, scheduled standby will be enabled.
   
 **`scheduleList`** &nbsp; [PFMultiplayerServerSchedule](pfmultiplayerserverschedule.md) const*  
-*array of size `scheduleListCount`*  
+*may be nullptr*  
   
 (Optional) A list of non-overlapping schedules.
   

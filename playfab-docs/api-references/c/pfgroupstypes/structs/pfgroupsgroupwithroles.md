@@ -5,7 +5,7 @@ description: "PFGroupsGroupWithRoles data model. Describes a group and the roles
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFGroupsGroupWithRoles  
@@ -41,7 +41,7 @@ typedef struct PFGroupsGroupWithRoles {
 The current version of the profile, can be used for concurrency control during updates.
   
 **`roles`** &nbsp; [PFGroupsGroupRole](pfgroupsgrouprole.md) const*  
-*array of size `rolesCount`*  
+*may be nullptr*  
   
 (Optional) The list of roles within the group.
   

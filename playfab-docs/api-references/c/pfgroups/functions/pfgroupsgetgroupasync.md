@@ -5,7 +5,7 @@ description: "Gets information about a group and its roles"
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFGroupsGetGroupAsync  
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-Returns the ID, name, role list and other non-membership related information about a group. See also GroupUpdateGroupAsync. If successful, call [PFGroupsGetGroupGetResult](pfgroupsgetgroupgetresult.md) to get the result.
+Returns the ID, name, role list and other non-membership related information about a group. When the asynchronous task is complete, call [PFGroupsGetGroupGetResultSize](pfgroupsgetgroupgetresultsize.md) and [PFGroupsGetGroupGetResult](pfgroupsgetgroupgetresult.md) to get the result.
   
 ## Requirements  
   

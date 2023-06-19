@@ -1,16 +1,16 @@
 ---
 author: jasonsandlin
 title: "PFCatalogGetItemAsync"
-description: "Retrieves an item from the public catalog."
+description: "Retrieves an item from the public catalog. GetItem does not work off a cache of the Catalog and should be used when trying to get recent item updates. However, please note that item references data is cached and may take a few moments for changes to propagate."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFCatalogGetItemAsync  
 
-Retrieves an item from the public catalog.  
+Retrieves an item from the public catalog. GetItem does not work off a cache of the Catalog and should be used when trying to get recent item updates. However, please note that item references data is cached and may take a few moments for changes to propagate.  
 
 ## Syntax  
   
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-If successful, call [PFCatalogGetItemGetResult](pfcataloggetitemgetresult.md) to get the result.
+When the asynchronous task is complete, call [PFCatalogGetItemGetResultSize](pfcataloggetitemgetresultsize.md) and [PFCatalogGetItemGetResult](pfcataloggetitemgetresult.md) to get the result.
   
 ## Requirements  
   

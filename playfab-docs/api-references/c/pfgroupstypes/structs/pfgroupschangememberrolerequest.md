@@ -5,7 +5,7 @@ description: "PFGroupsChangeMemberRoleRequest data model. Changes the role membe
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFGroupsChangeMemberRoleRequest  
@@ -16,6 +16,7 @@ PFGroupsChangeMemberRoleRequest data model. Changes the role membership of a lis
   
 ```cpp
 typedef struct PFGroupsChangeMemberRoleRequest {  
+    PFStringDictionaryEntry const* customTags;  
     uint32_t customTagsCount;  
     const char* destinationRoleId;  
     PFEntityKey const* group;  
@@ -27,10 +28,14 @@ typedef struct PFGroupsChangeMemberRoleRequest {
   
 ### Members  
   
-**`customTagsCount`** &nbsp; uint32_t  
-*array of size `customTagsCount`*  
+**`customTags`** &nbsp; [PFStringDictionaryEntry](../../pftypes/structs/pfstringdictionaryentry.md) const*  
+*may be nullptr*  
   
 (Optional) The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
+  
+**`customTagsCount`** &nbsp; uint32_t  
+  
+Count of customTags
   
 **`destinationRoleId`** &nbsp; const char*  
 *is null-terminated*  
@@ -42,7 +47,6 @@ typedef struct PFGroupsChangeMemberRoleRequest {
 The identifier of the group.
   
 **`members`** &nbsp; [PFEntityKey](../../pftypes/structs/pfentitykey-c.md) const*  
-*array of size `membersCount`*  
   
 List of entities to move between roles in the group. All entities in this list must be members of the group and origin role.
   

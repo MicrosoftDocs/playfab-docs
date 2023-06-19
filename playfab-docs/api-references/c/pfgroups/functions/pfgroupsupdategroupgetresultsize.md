@@ -5,7 +5,7 @@ description: "Get the size in bytes needed to store the result of a UpdateGroup 
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFGroupsUpdateGroupGetResultSize  
@@ -37,7 +37,7 @@ The buffer size in bytes required for the result.
 ### Return value
 Type: HRESULT
   
-Result code for this API operation.
+Result code for this API operation. If the service call is unsuccessful, the result will be E_PF_GROUP_NAME_NOT_AVAILABLE, E_PF_ROLE_DOES_NOT_EXIST or any of the global PlayFab Service errors. See doc page "Handling PlayFab Errors" for more details on error handling.
   
   
 ## Requirements  

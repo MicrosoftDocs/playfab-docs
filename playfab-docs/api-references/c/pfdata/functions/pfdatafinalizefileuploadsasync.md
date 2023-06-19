@@ -5,7 +5,7 @@ description: "Finalize file uploads to an entity's profile."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFDataFinalizeFileUploadsAsync  
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-Finalizes the upload of the requested files. Verifies that the files have been successfully uploaded and moves the file pointers from pending to live. See also FileAbortFileUploadsAsync, FileDeleteFilesAsync, FileGetFilesAsync, FileInitiateFileUploadsAsync. If successful, call [PFDataFinalizeFileUploadsGetResult](pfdatafinalizefileuploadsgetresult.md) to get the result.
+Finalizes the upload of the requested files. Verifies that the files have been successfully uploaded and moves the file pointers from pending to live. See also FileAbortFileUploadsAsync, FileDeleteFilesAsync, FileGetFilesAsync, FileInitiateFileUploadsAsync. When the asynchronous task is complete, call [PFDataFinalizeFileUploadsGetResultSize](pfdatafinalizefileuploadsgetresultsize.md) and [PFDataFinalizeFileUploadsGetResult](pfdatafinalizefileuploadsgetresult.md) to get the result.
   
 ## Requirements  
   

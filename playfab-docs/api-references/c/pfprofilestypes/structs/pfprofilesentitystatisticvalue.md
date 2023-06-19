@@ -5,7 +5,7 @@ description: "PFProfilesEntityStatisticValue data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFProfilesEntityStatisticValue  
@@ -16,6 +16,7 @@ PFProfilesEntityStatisticValue data model.
   
 ```cpp
 typedef struct PFProfilesEntityStatisticValue {  
+    PFProfilesEntityStatisticChildValueDictionaryEntry const* childStatistics;  
     uint32_t childStatisticsCount;  
     const char* metadata;  
     const char* name;  
@@ -26,10 +27,14 @@ typedef struct PFProfilesEntityStatisticValue {
   
 ### Members  
   
-**`childStatisticsCount`** &nbsp; uint32_t  
-*array of size `childStatisticsCount`*  
+**`childStatistics`** &nbsp; PFProfilesEntityStatisticChildValueDictionaryEntry const*  
+*may be nullptr*  
   
 (Optional) Child statistic values.
+  
+**`childStatisticsCount`** &nbsp; uint32_t  
+  
+Count of childStatistics
   
 **`metadata`** &nbsp; const char*  
 *is null-terminated*  

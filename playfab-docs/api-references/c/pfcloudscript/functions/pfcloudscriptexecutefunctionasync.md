@@ -5,7 +5,7 @@ description: "Cloud Script is one of PlayFab's most versatile features. It allow
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFCloudScriptExecuteFunctionAsync  
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-Executes an Azure Function with the profile of the entity that is defined in the request. See also CloudScriptRegisterHttpFunctionAsync, CloudScriptRegisterQueuedFunctionAsync. If successful, call [PFCloudScriptExecuteFunctionGetResult](pfcloudscriptexecutefunctiongetresult.md) to get the result.
+Executes an Azure Function with the profile of the entity that is defined in the request. See also CloudScriptRegisterHttpFunctionAsync, CloudScriptRegisterQueuedFunctionAsync. When the asynchronous task is complete, call [PFCloudScriptExecuteFunctionGetResultSize](pfcloudscriptexecutefunctiongetresultsize.md) and [PFCloudScriptExecuteFunctionGetResult](pfcloudscriptexecutefunctiongetresult.md) to get the result.
   
 ## Requirements  
   

@@ -5,7 +5,7 @@ description: "Creates and updates the title-specific custom data for the user wh
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFPlayerDataManagementClientUpdateUserDataAsync  
@@ -26,7 +26,7 @@ HRESULT PFPlayerDataManagementClientUpdateUserDataAsync(
   
 **`entityHandle`** &nbsp; PFEntityHandle  
   
-PFTitlePlayerHandle to use for authentication.  
+PFEntityHandle to use for authentication.  
   
 **`request`** &nbsp; [PFPlayerDataManagementClientUpdateUserDataRequest*](../../pfplayerdatamanagementtypes/structs/pfplayerdatamanagementclientupdateuserdatarequest.md)  
   
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-This function performs an additive update of the arbitrary strings containing the custom data for the user. In updating the custom data object, keys which already exist in the object will have their values overwritten, while keys with null values will be removed. New keys will be added, with the given values. No other key-value pairs will be changed apart from those specified in the call. See also ClientGetUserDataAsync, ClientGetUserReadOnlyDataAsync. If successful, call [PFPlayerDataManagementClientUpdateUserDataGetResult](pfplayerdatamanagementclientupdateuserdatagetresult.md) to get the result.
+This function performs an additive update of the arbitrary strings containing the custom data for the user. In updating the custom data object, keys which already exist in the object will have their values overwritten, while keys with null values will be removed. New keys will be added, with the given values. No other key-value pairs will be changed apart from those specified in the call. See also ClientGetUserDataAsync, ClientGetUserReadOnlyDataAsync. When the asynchronous task is complete, call [PFPlayerDataManagementClientUpdateUserDataGetResult](pfplayerdatamanagementclientupdateuserdatagetresult.md) to get the result.
   
 ## Requirements  
   
