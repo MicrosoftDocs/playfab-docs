@@ -5,7 +5,7 @@ description: "Services C API overview - PFTypes.h"
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # Services C API overview - PFTypes.h
@@ -23,6 +23,7 @@ ms.date: 03/09/2023
 | [PFEntityKey](structs/pfentitykey-c.md) | PFEntityKey data model. Combined entity type and ID structure which uniquely identifies a single entity. |  
 | [PFEntityKeyDictionaryEntry](structs/pfentitykeydictionaryentry.md) | Dictionary entry for an associative array with PFEntityKey values. |  
 | [PFEntityLineage](structs/pfentitylineage.md) | PFEntityLineage data model. |  
+| [PFEntityLineageDictionaryEntry](structs/pfentitylineagedictionaryentry.md) | Dictionary entry for an associative array with PFEntityLineage values. |  
 | [PFGetPlayerCombinedInfoRequestParams](structs/pfgetplayercombinedinforequestparams.md) | PFGetPlayerCombinedInfoRequestParams data model. |  
 | [PFGetPlayerCombinedInfoResultPayload](structs/pfgetplayercombinedinforesultpayload.md) | PFGetPlayerCombinedInfoResultPayload data model. |  
 | [PFInt32DictionaryEntry](structs/pfint32dictionaryentry.md) | Dictionary entry for an associative array with int32_t values. |  

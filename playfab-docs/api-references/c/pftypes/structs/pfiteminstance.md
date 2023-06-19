@@ -5,7 +5,7 @@ description: "PFItemInstance data model. A unique instance of an item in a user'
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFItemInstance  
@@ -21,6 +21,7 @@ typedef struct PFItemInstance {
     uint32_t bundleContentsCount;  
     const char* bundleParent;  
     const char* catalogVersion;  
+    PFStringDictionaryEntry const* customData;  
     uint32_t customDataCount;  
     const char* displayName;  
     time_t const* expiration;  
@@ -43,7 +44,7 @@ typedef struct PFItemInstance {
 (Optional) Game specific comment associated with this instance when it was added to the user inventory.
   
 **`bundleContents`** &nbsp; const char* const*  
-*array of size `bundleContentsCount`*  
+*may be nullptr*  
   
 (Optional) Array of unique items that were awarded when this catalog item was purchased.
   
@@ -61,10 +62,14 @@ Count of bundleContents
   
 (Optional) Catalog version for the inventory item, when this instance was created.
   
-**`customDataCount`** &nbsp; uint32_t  
-*array of size `customDataCount`*  
+**`customData`** &nbsp; PFStringDictionaryEntry const*  
+*may be nullptr*  
   
 (Optional) A set of custom key-value pairs on the instance of the inventory item, which is not to be confused with the catalog item's custom data.
+  
+**`customDataCount`** &nbsp; uint32_t  
+  
+Count of customData
   
 **`displayName`** &nbsp; const char*  
 *is null-terminated*  

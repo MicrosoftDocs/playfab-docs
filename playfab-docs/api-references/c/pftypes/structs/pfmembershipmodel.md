@@ -5,7 +5,7 @@ description: "PFMembershipModel data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFMembershipModel  
@@ -46,7 +46,7 @@ The time this membership expires.
 (Optional) Membership expirations can be explicitly overridden (via game manager or the admin api). If this membership has been overridden, this will be the new expiration time.
   
 **`subscriptions`** &nbsp; [PFSubscriptionModel](pfsubscriptionmodel.md) const*  
-*array of size `subscriptionsCount`*  
+*may be nullptr*  
   
 (Optional) The list of subscriptions that this player has for this membership.
   

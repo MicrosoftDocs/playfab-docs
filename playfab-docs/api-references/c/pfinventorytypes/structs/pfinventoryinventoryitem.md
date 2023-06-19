@@ -5,7 +5,7 @@ description: "PFInventoryInventoryItem data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFInventoryInventoryItem  
@@ -34,12 +34,12 @@ typedef struct PFInventoryInventoryItem {
   
 **`displayProperties`** &nbsp; [PFJsonObject](../../pftypes/structs/pfjsonobject.md)  
   
-(Optional) Game specific properties for display purposes. This is an arbitrary JSON blob.
+(Optional) Game specific properties for display purposes. This is an arbitrary JSON blob. The Display Properties field has a 1000 byte limit.
   
 **`expirationDate`** &nbsp; time_t const*  
 *may be nullptr*  
   
-(Optional) Only used for subscriptions. The date of when the item will expire in UTC. If not provided then the product will be available indefinitely.
+(Optional) Only used for subscriptions. The date of when the item will expire in UTC.
   
 **`id`** &nbsp; const char*  
 *is null-terminated*  

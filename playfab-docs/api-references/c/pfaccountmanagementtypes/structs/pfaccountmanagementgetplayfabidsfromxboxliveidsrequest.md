@@ -5,7 +5,7 @@ description: "PFAccountManagementGetPlayFabIDsFromXboxLiveIDsRequest data model.
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFAccountManagementGetPlayFabIDsFromXboxLiveIDsRequest  
@@ -30,7 +30,6 @@ typedef struct PFAccountManagementGetPlayFabIDsFromXboxLiveIDsRequest {
 (Optional) The ID of Xbox Live sandbox.
   
 **`xboxLiveAccountIDs`** &nbsp; const char* const*  
-*array of size `xboxLiveAccountIDsCount`*  
   
 Array of unique Xbox Live account identifiers for which the title needs to get PlayFab identifiers. The array cannot exceed 2,000 in length.
   

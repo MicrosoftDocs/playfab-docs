@@ -5,7 +5,7 @@ description: "PFProfilesEntityProfileBody data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFProfilesEntityProfileBody  
@@ -23,13 +23,16 @@ typedef struct PFProfilesEntityProfileBody {
     const char* entityChain;  
     const char* const* experimentVariants;  
     uint32_t experimentVariantsCount;  
+    PFProfilesEntityProfileFileMetadataDictionaryEntry const* files;  
     uint32_t filesCount;  
     const char* language;  
     const char* leaderboardMetadata;  
     PFEntityLineage const* lineage;  
+    PFProfilesEntityDataObjectDictionaryEntry const* objects;  
     uint32_t objectsCount;  
     PFProfilesEntityPermissionStatement const* permissions;  
     uint32_t permissionsCount;  
+    PFProfilesEntityStatisticValueDictionaryEntry const* statistics;  
     uint32_t statisticsCount;  
     int32_t versionNumber;  
 } PFProfilesEntityProfileBody;  
@@ -62,7 +65,7 @@ The creation time of this profile in UTC.
 (Optional) The chain of responsibility for this entity. Use Lineage.
   
 **`experimentVariants`** &nbsp; const char* const*  
-*array of size `experimentVariantsCount`*  
+*may be nullptr*  
   
 (Optional) The experiment variants of this profile.
   
@@ -70,10 +73,14 @@ The creation time of this profile in UTC.
   
 Count of experimentVariants
   
-**`filesCount`** &nbsp; uint32_t  
-*array of size `filesCount`*  
+**`files`** &nbsp; PFProfilesEntityProfileFileMetadataDictionaryEntry const*  
+*may be nullptr*  
   
 (Optional) The files on this profile.
+  
+**`filesCount`** &nbsp; uint32_t  
+  
+Count of files
   
 **`language`** &nbsp; const char*  
 *is null-terminated*  
@@ -90,13 +97,17 @@ Count of experimentVariants
   
 (Optional) The lineage of this profile.
   
-**`objectsCount`** &nbsp; uint32_t  
-*array of size `objectsCount`*  
+**`objects`** &nbsp; PFProfilesEntityDataObjectDictionaryEntry const*  
+*may be nullptr*  
   
 (Optional) The objects on this profile.
   
+**`objectsCount`** &nbsp; uint32_t  
+  
+Count of objects
+  
 **`permissions`** &nbsp; [PFProfilesEntityPermissionStatement](pfprofilesentitypermissionstatement.md) const*  
-*array of size `permissionsCount`*  
+*may be nullptr*  
   
 (Optional) The permissions that govern access to this entity profile and its properties. Only includes permissions set on this profile, not global statements from titles and namespaces.
   
@@ -104,10 +115,14 @@ Count of experimentVariants
   
 Count of permissions
   
-**`statisticsCount`** &nbsp; uint32_t  
-*array of size `statisticsCount`*  
+**`statistics`** &nbsp; PFProfilesEntityStatisticValueDictionaryEntry const*  
+*may be nullptr*  
   
 (Optional) The statistics on this profile.
+  
+**`statisticsCount`** &nbsp; uint32_t  
+  
+Count of statistics
   
 **`versionNumber`** &nbsp; int32_t  
   

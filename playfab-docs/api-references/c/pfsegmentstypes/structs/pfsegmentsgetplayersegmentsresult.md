@@ -5,7 +5,7 @@ description: "PFSegmentsGetPlayerSegmentsResult data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFSegmentsGetPlayerSegmentsResult  
@@ -24,7 +24,7 @@ typedef struct PFSegmentsGetPlayerSegmentsResult {
 ### Members  
   
 **`segments`** &nbsp; [PFSegmentsGetSegmentResult](pfsegmentsgetsegmentresult.md) const*  
-*array of size `segmentsCount`*  
+*may be nullptr*  
   
 (Optional) Array of segments the requested player currently belongs to.
   

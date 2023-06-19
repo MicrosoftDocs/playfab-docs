@@ -5,7 +5,7 @@ description: "PFCatalogCatalogPriceOptionsOverride data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFCatalogCatalogPriceOptionsOverride  
@@ -24,7 +24,7 @@ typedef struct PFCatalogCatalogPriceOptionsOverride {
 ### Members  
   
 **`prices`** &nbsp; [PFCatalogCatalogPriceOverride](pfcatalogcatalogpriceoverride.md) const*  
-*array of size `pricesCount`*  
+*may be nullptr*  
   
 (Optional) The prices utilized in the override.
   

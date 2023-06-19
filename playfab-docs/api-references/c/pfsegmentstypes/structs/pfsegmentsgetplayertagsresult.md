@@ -5,7 +5,7 @@ description: "PFSegmentsGetPlayerTagsResult data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFSegmentsGetPlayerTagsResult  
@@ -30,7 +30,6 @@ typedef struct PFSegmentsGetPlayerTagsResult {
 Unique PlayFab assigned ID of the user on whom the operation will be performed.
   
 **`tags`** &nbsp; const char* const*  
-*array of size `tagsCount`*  
   
 Canonical tags (including namespace and tag's name) for the requested user.
   

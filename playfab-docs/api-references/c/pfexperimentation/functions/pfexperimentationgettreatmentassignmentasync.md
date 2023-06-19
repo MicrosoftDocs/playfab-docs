@@ -5,7 +5,7 @@ description: "Gets the treatment assignments for a player for every running expe
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFExperimentationGetTreatmentAssignmentAsync  
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-If successful, call [PFExperimentationGetTreatmentAssignmentGetResult](pfexperimentationgettreatmentassignmentgetresult.md) to get the result.
+When the asynchronous task is complete, call [PFExperimentationGetTreatmentAssignmentGetResultSize](pfexperimentationgettreatmentassignmentgetresultsize.md) and [PFExperimentationGetTreatmentAssignmentGetResult](pfexperimentationgettreatmentassignmentgetresult.md) to get the result.
   
 ## Requirements  
   

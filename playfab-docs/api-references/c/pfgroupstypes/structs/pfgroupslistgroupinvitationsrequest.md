@@ -5,7 +5,7 @@ description: "PFGroupsListGroupInvitationsRequest data model. Lists all outstand
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFGroupsListGroupInvitationsRequest  
@@ -16,6 +16,7 @@ PFGroupsListGroupInvitationsRequest data model. Lists all outstanding invitation
   
 ```cpp
 typedef struct PFGroupsListGroupInvitationsRequest {  
+    PFStringDictionaryEntry const* customTags;  
     uint32_t customTagsCount;  
     PFEntityKey const* group;  
 } PFGroupsListGroupInvitationsRequest;  
@@ -23,10 +24,14 @@ typedef struct PFGroupsListGroupInvitationsRequest {
   
 ### Members  
   
-**`customTagsCount`** &nbsp; uint32_t  
-*array of size `customTagsCount`*  
+**`customTags`** &nbsp; [PFStringDictionaryEntry](../../pftypes/structs/pfstringdictionaryentry.md) const*  
+*may be nullptr*  
   
 (Optional) The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
+  
+**`customTagsCount`** &nbsp; uint32_t  
+  
+Count of customTags
   
 **`group`** &nbsp; [PFEntityKey](../../pftypes/structs/pfentitykey-c.md) const*  
   

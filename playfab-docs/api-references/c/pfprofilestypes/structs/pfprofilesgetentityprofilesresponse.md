@@ -5,7 +5,7 @@ description: "PFProfilesGetEntityProfilesResponse data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFProfilesGetEntityProfilesResponse  
@@ -24,7 +24,7 @@ typedef struct PFProfilesGetEntityProfilesResponse {
 ### Members  
   
 **`profiles`** &nbsp; [PFProfilesEntityProfileBody](pfprofilesentityprofilebody.md) const*  
-*array of size `profilesCount`*  
+*may be nullptr*  
   
 (Optional) Entity profiles.
   

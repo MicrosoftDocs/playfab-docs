@@ -5,7 +5,7 @@ description: "PFCatalogGetItemReviewsRequest data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFCatalogGetItemReviewsRequest  
@@ -19,6 +19,7 @@ typedef struct PFCatalogGetItemReviewsRequest {
     PFCatalogCatalogAlternateId const* alternateId;  
     const char* continuationToken;  
     int32_t count;  
+    PFStringDictionaryEntry const* customTags;  
     uint32_t customTagsCount;  
     const char* id;  
     const char* orderBy;  
@@ -39,12 +40,16 @@ typedef struct PFCatalogGetItemReviewsRequest {
   
 **`count`** &nbsp; int32_t  
   
-Number of items to retrieve. Maximum page size is 200. If not specified, defaults to 10.
+Number of items to retrieve. This value is optional. Default value is 10.
   
-**`customTagsCount`** &nbsp; uint32_t  
-*array of size `customTagsCount`*  
+**`customTags`** &nbsp; [PFStringDictionaryEntry](../../pftypes/structs/pfstringdictionaryentry.md) const*  
+*may be nullptr*  
   
 (Optional) The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
+  
+**`customTagsCount`** &nbsp; uint32_t  
+  
+Count of customTags
   
 **`id`** &nbsp; const char*  
 *is null-terminated*  
@@ -54,7 +59,7 @@ Number of items to retrieve. Maximum page size is 200. If not specified, default
 **`orderBy`** &nbsp; const char*  
 *is null-terminated*  
   
-(Optional) An OData orderBy used to order the results of the query.
+(Optional) An OData orderBy used to order the results of the query. Possible values are Helpfulness, Rating, and Submitted (For example: "Submitted desc").
   
   
 ## Requirements  

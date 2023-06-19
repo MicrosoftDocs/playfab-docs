@@ -5,7 +5,7 @@ description: "PFEventsWriteEventsRequest data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFEventsWriteEventsRequest  
@@ -16,6 +16,7 @@ PFEventsWriteEventsRequest data model.
   
 ```cpp
 typedef struct PFEventsWriteEventsRequest {  
+    PFStringDictionaryEntry const* customTags;  
     uint32_t customTagsCount;  
     PFEventsEventContents const* events;  
     uint32_t eventsCount;  
@@ -24,15 +25,18 @@ typedef struct PFEventsWriteEventsRequest {
   
 ### Members  
   
-**`customTagsCount`** &nbsp; uint32_t  
-*array of size `customTagsCount`*  
+**`customTags`** &nbsp; PFStringDictionaryEntry const*  
+*may be nullptr*  
   
 (Optional) The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
   
-**`events`** &nbsp; [PFEventsEventContents](pfeventseventcontents.md) const*  
-*array of size `eventsCount`*  
+**`customTagsCount`** &nbsp; uint32_t  
   
-Collection of events to write to PlayStream.
+Count of customTags
+  
+**`events`** &nbsp; [PFEventsEventContents](pfeventseventcontents.md) const*  
+  
+The collection of events to write. Up to 200 events can be written per request.
   
 **`eventsCount`** &nbsp; uint32_t  
   

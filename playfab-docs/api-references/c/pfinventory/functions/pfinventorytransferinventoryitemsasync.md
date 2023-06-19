@@ -1,16 +1,16 @@
 ---
 author: jasonsandlin
 title: "PFInventoryTransferInventoryItemsAsync"
-description: "Transfer inventory items."
+description: "Transfer inventory items. When transferring across collections, a 202 response indicates that the transfer is in progress and will complete soon. More information about item transfer scenarios can be found here: https://learn.microsoft.com/en-us/gaming/playfab/features/economy-v2/inventory/?tabs=inventory-game-manager#transfer-inventory-items"
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFInventoryTransferInventoryItemsAsync  
 
-Transfer inventory items.  
+Transfer inventory items. When transferring across collections, a 202 response indicates that the transfer is in progress and will complete soon. More information about item transfer scenarios can be found here: https://learn.microsoft.com/en-us/gaming/playfab/features/economy-v2/inventory/?tabs=inventory-game-manager#transfer-inventory-items  
 
 ## Syntax  
   
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-Transfer the specified inventory items of an entity's container Id to another entity's container Id. If successful, call [PFInventoryTransferInventoryItemsGetResult](pfinventorytransferinventoryitemsgetresult.md) to get the result.
+Transfer the specified inventory items of an entity's container Id to another entity's container Id. When the asynchronous task is complete, call [PFInventoryTransferInventoryItemsGetResultSize](pfinventorytransferinventoryitemsgetresultsize.md) and [PFInventoryTransferInventoryItemsGetResult](pfinventorytransferinventoryitemsgetresult.md) to get the result.
   
 ## Requirements  
   

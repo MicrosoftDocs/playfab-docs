@@ -5,7 +5,7 @@ description: "PFInventoryAddInventoryItemsOperation data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFInventoryAddInventoryItemsOperation  
@@ -17,6 +17,7 @@ PFInventoryAddInventoryItemsOperation data model.
 ```cpp
 typedef struct PFInventoryAddInventoryItemsOperation {  
     int32_t const* amount;  
+    double const* durationInSeconds;  
     PFInventoryInventoryItemReference const* item;  
     PFInventoryInitialValues const* newStackValues;  
 } PFInventoryAddInventoryItemsOperation;  
@@ -28,6 +29,11 @@ typedef struct PFInventoryAddInventoryItemsOperation {
 *may be nullptr*  
   
 (Optional) The amount to add to the current item amount.
+  
+**`durationInSeconds`** &nbsp; double const*  
+*may be nullptr*  
+  
+(Optional) The duration to add to the current item expiration date.
   
 **`item`** &nbsp; [PFInventoryInventoryItemReference](pfinventoryinventoryitemreference.md) const*  
 *may be nullptr*  

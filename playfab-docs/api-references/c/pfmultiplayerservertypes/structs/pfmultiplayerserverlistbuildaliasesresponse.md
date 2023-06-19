@@ -5,7 +5,7 @@ description: "PFMultiplayerServerListBuildAliasesResponse data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFMultiplayerServerListBuildAliasesResponse  
@@ -26,7 +26,7 @@ typedef struct PFMultiplayerServerListBuildAliasesResponse {
 ### Members  
   
 **`buildAliases`** &nbsp; [PFMultiplayerServerBuildAliasDetailsResponse](pfmultiplayerserverbuildaliasdetailsresponse.md) const*  
-*array of size `buildAliasesCount`*  
+*may be nullptr*  
   
 (Optional) The list of build aliases for the title.
   

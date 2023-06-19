@@ -1,16 +1,16 @@
 ---
 author: jasonsandlin
 title: "PFInventoryAddInventoryItemsAsync"
-description: "Add inventory items."
+description: "Add inventory items. Up to 3500 stacks of items can be added to a single inventory collection. Stack size is uncapped."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFInventoryAddInventoryItemsAsync  
 
-Add inventory items.  
+Add inventory items. Up to 3500 stacks of items can be added to a single inventory collection. Stack size is uncapped.  
 
 ## Syntax  
   
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-Given an entity type, entity identifier and container details, will add the specified inventory items. If successful, call [PFInventoryAddInventoryItemsGetResult](pfinventoryaddinventoryitemsgetresult.md) to get the result.
+Given an entity type, entity identifier and container details, will add the specified inventory items. When the asynchronous task is complete, call [PFInventoryAddInventoryItemsGetResultSize](pfinventoryaddinventoryitemsgetresultsize.md) and [PFInventoryAddInventoryItemsGetResult](pfinventoryaddinventoryitemsgetresult.md) to get the result.
   
 ## Requirements  
   

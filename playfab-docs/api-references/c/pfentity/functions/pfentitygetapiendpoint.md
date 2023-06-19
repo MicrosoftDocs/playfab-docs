@@ -1,16 +1,16 @@
 ---
 author: jasonsandlin
 title: "PFEntityGetAPIEndpoint"
-description: "Gets the API endpoint from an entity handle."
+description: "Gets the API endpoint for the PFServiceConfig associated with an entity handle."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFEntityGetAPIEndpoint  
 
-Gets the API endpoint from an entity handle.  
+Gets the API endpoint for the PFServiceConfig associated with an entity handle.  
 
 ## Syntax  
   

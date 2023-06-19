@@ -5,7 +5,7 @@ description: "PFMultiplayerServerRequestMultiplayerServerRequest data model. Req
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFMultiplayerServerRequestMultiplayerServerRequest  
@@ -18,6 +18,7 @@ PFMultiplayerServerRequestMultiplayerServerRequest data model. Requests a multip
 typedef struct PFMultiplayerServerRequestMultiplayerServerRequest {  
     PFMultiplayerServerBuildAliasParams const* buildAliasParams;  
     const char* buildId;  
+    PFStringDictionaryEntry const* customTags;  
     uint32_t customTagsCount;  
     const char* const* initialPlayers;  
     uint32_t initialPlayersCount;  
@@ -40,13 +41,17 @@ typedef struct PFMultiplayerServerRequestMultiplayerServerRequest {
   
 (Optional) The guid string build ID of the multiplayer server to request.
   
-**`customTagsCount`** &nbsp; uint32_t  
-*array of size `customTagsCount`*  
+**`customTags`** &nbsp; [PFStringDictionaryEntry](../../pftypes/structs/pfstringdictionaryentry.md) const*  
+*may be nullptr*  
   
 (Optional) The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
   
+**`customTagsCount`** &nbsp; uint32_t  
+  
+Count of customTags
+  
 **`initialPlayers`** &nbsp; const char* const*  
-*array of size `initialPlayersCount`*  
+*may be nullptr*  
   
 (Optional) Initial list of players (potentially matchmade) allowed to connect to the game. This list is passed to the game server when requested (via GSDK) and can be used to validate players connecting to it.
   
@@ -55,7 +60,6 @@ typedef struct PFMultiplayerServerRequestMultiplayerServerRequest {
 Count of initialPlayers
   
 **`preferredRegions`** &nbsp; const char* const*  
-*array of size `preferredRegionsCount`*  
   
 The preferred regions to request a multiplayer server from. The Multiplayer Service will iterate through the regions in the specified order and allocate a server from the first one that has servers available.
   

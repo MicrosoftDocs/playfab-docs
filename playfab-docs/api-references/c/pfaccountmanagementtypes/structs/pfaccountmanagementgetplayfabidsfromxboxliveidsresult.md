@@ -5,7 +5,7 @@ description: "PFAccountManagementGetPlayFabIDsFromXboxLiveIDsResult data model. 
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFAccountManagementGetPlayFabIDsFromXboxLiveIDsResult  
@@ -24,7 +24,7 @@ typedef struct PFAccountManagementGetPlayFabIDsFromXboxLiveIDsResult {
 ### Members  
   
 **`data`** &nbsp; [PFAccountManagementXboxLiveAccountPlayFabIdPair](pfaccountmanagementxboxliveaccountplayfabidpair.md) const*  
-*array of size `dataCount`*  
+*may be nullptr*  
   
 (Optional) Mapping of Xbox Live identifiers to PlayFab identifiers.
   

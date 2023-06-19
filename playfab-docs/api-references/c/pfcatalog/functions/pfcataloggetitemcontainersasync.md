@@ -1,16 +1,16 @@
 ---
 author: jasonsandlin
 title: "PFCatalogGetItemContainersAsync"
-description: "Search for a given item and return a set of bundles and stores containing the item"
+description: "Search for a given item and return a set of bundles and stores containing the item. Up to 50 items can be returned at once. You can use continuation tokens to paginate through results that return greater than the limit. This API is intended for tooling/automation scenarios and has a reduced RPS with Player Entities limited to 30 requests in 300 seconds and Title Entities limited to 100 requests in 10 seconds."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFCatalogGetItemContainersAsync  
 
-Search for a given item and return a set of bundles and stores containing the item  
+Search for a given item and return a set of bundles and stores containing the item. Up to 50 items can be returned at once. You can use continuation tokens to paginate through results that return greater than the limit. This API is intended for tooling/automation scenarios and has a reduced RPS with Player Entities limited to 30 requests in 300 seconds and Title Entities limited to 100 requests in 10 seconds.  
 
 ## Syntax  
   
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-Given an item, return a set of bundles and stores containing the item. If successful, call [PFCatalogGetItemContainersGetResult](pfcataloggetitemcontainersgetresult.md) to get the result.
+Given an item, return a set of bundles and stores containing the item. When the asynchronous task is complete, call [PFCatalogGetItemContainersGetResultSize](pfcataloggetitemcontainersgetresultsize.md) and [PFCatalogGetItemContainersGetResult](pfcataloggetitemcontainersgetresult.md) to get the result.
   
 ## Requirements  
   

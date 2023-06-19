@@ -5,7 +5,7 @@ description: "PFGetPlayerCombinedInfoRequestParams data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFGetPlayerCombinedInfoRequestParams  
@@ -81,7 +81,7 @@ Whether to get the player's read only data. Defaults to false.
 Whether to get the player's virtual currency balances. Defaults to false.
   
 **`playerStatisticNames`** &nbsp; const char* const*  
-*array of size `playerStatisticNamesCount`*  
+*may be nullptr*  
   
 (Optional) Specific statistics to retrieve. Leave null to get all keys. Has no effect if GetPlayerStatistics is false.
   
@@ -95,7 +95,7 @@ Count of playerStatisticNames
 (Optional) Specifies the properties to return from the player profile. Defaults to returning the player's display name.
   
 **`titleDataKeys`** &nbsp; const char* const*  
-*array of size `titleDataKeysCount`*  
+*may be nullptr*  
   
 (Optional) Specific keys to search for in the custom data. Leave null to get all keys. Has no effect if GetTitleData is false.
   
@@ -104,7 +104,7 @@ Count of playerStatisticNames
 Count of titleDataKeys
   
 **`userDataKeys`** &nbsp; const char* const*  
-*array of size `userDataKeysCount`*  
+*may be nullptr*  
   
 (Optional) Specific keys to search for in the custom data. Leave null to get all keys. Has no effect if GetUserData is false.
   
@@ -113,7 +113,7 @@ Count of titleDataKeys
 Count of userDataKeys
   
 **`userReadOnlyDataKeys`** &nbsp; const char* const*  
-*array of size `userReadOnlyDataKeysCount`*  
+*may be nullptr*  
   
 (Optional) Specific keys to search for in the custom data. Leave null to get all keys. Has no effect if GetUserReadOnlyData is false.
   

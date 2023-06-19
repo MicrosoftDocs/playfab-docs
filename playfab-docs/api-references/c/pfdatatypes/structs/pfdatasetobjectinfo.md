@@ -5,7 +5,7 @@ description: "PFDataSetObjectInfo data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFDataSetObjectInfo  

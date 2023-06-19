@@ -5,7 +5,7 @@ description: "PFUserAccountInfo data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFUserAccountInfo  
@@ -109,7 +109,7 @@ Timestamp indicating when the user account was created.
 (Optional) Nintendo Switch device information, if a Nintendo Switch device has been linked.
   
 **`openIdInfo`** &nbsp; [PFUserOpenIdInfo](pfuseropenidinfo.md) const*  
-*array of size `openIdInfoCount`*  
+*may be nullptr*  
   
 (Optional) OpenID Connect information, if any OpenID Connect accounts have been linked.
   

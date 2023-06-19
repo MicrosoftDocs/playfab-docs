@@ -5,7 +5,7 @@ description: "PFPlayerProfileModel data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFPlayerProfileModel  
@@ -52,7 +52,7 @@ typedef struct PFPlayerProfileModel {
 ### Members  
   
 **`adCampaignAttributions`** &nbsp; [PFAdCampaignAttributionModel](pfadcampaignattributionmodel.md) const*  
-*array of size `adCampaignAttributionsCount`*  
+*may be nullptr*  
   
 (Optional) List of advertising campaigns the player has been attributed to.
   
@@ -71,7 +71,7 @@ Count of adCampaignAttributions
 (Optional) If the player is currently banned, the UTC Date when the ban expires.
   
 **`contactEmailAddresses`** &nbsp; [PFContactEmailInfoModel](pfcontactemailinfomodel.md) const*  
-*array of size `contactEmailAddressesCount`*  
+*may be nullptr*  
   
 (Optional) List of all contact email info associated with the player account.
   
@@ -90,7 +90,7 @@ Count of contactEmailAddresses
 (Optional) Player display name.
   
 **`experimentVariants`** &nbsp; const char* const*  
-*array of size `experimentVariantsCount`*  
+*may be nullptr*  
   
 (Optional) List of experiment variants for the player. Note that these variants are not guaranteed to be up-to-date when returned during login because the player profile is updated only after login. Instead, use the LoginResult.TreatmentAssignment property during login to get the correct variants and variables.
   
@@ -104,7 +104,7 @@ Count of experimentVariants
 (Optional) UTC time when the player most recently logged in to the title.
   
 **`linkedAccounts`** &nbsp; [PFLinkedPlatformAccountModel](pflinkedplatformaccountmodel.md) const*  
-*array of size `linkedAccountsCount`*  
+*may be nullptr*  
   
 (Optional) List of all authentication systems linked to this player account.
   
@@ -113,7 +113,7 @@ Count of experimentVariants
 Count of linkedAccounts
   
 **`locations`** &nbsp; [PFLocationModel](pflocationmodel.md) const*  
-*array of size `locationsCount`*  
+*may be nullptr*  
   
 (Optional) List of geographic locations from which the player has logged in to the title.
   
@@ -122,7 +122,7 @@ Count of linkedAccounts
 Count of locations
   
 **`memberships`** &nbsp; [PFMembershipModel](pfmembershipmodel.md) const*  
-*array of size `membershipsCount`*  
+*may be nullptr*  
   
 (Optional) List of memberships for the player, along with whether are expired.
   
@@ -146,7 +146,7 @@ Count of memberships
 (Optional) Publisher this player belongs to.
   
 **`pushNotificationRegistrations`** &nbsp; [PFPushNotificationRegistrationModel](pfpushnotificationregistrationmodel.md) const*  
-*array of size `pushNotificationRegistrationsCount`*  
+*may be nullptr*  
   
 (Optional) List of configured end points registered for sending the player push notifications.
   
@@ -155,7 +155,7 @@ Count of memberships
 Count of pushNotificationRegistrations
   
 **`statistics`** &nbsp; [PFStatisticModel](pfstatisticmodel.md) const*  
-*array of size `statisticsCount`*  
+*may be nullptr*  
   
 (Optional) List of leaderboard statistic values for the player.
   
@@ -164,7 +164,7 @@ Count of pushNotificationRegistrations
 Count of statistics
   
 **`tags`** &nbsp; [PFTagModel](pftagmodel.md) const*  
-*array of size `tagsCount`*  
+*may be nullptr*  
   
 (Optional) List of player's tags for segmentation.
   
@@ -183,7 +183,7 @@ Count of tags
 (Optional) Sum of the player's purchases made with real-money currencies, converted to US dollars equivalent and represented as a whole number of cents (1/100 USD). For example, 999 indicates nine dollars and ninety-nine cents.
   
 **`valuesToDate`** &nbsp; [PFValueToDateModel](pfvaluetodatemodel.md) const*  
-*array of size `valuesToDateCount`*  
+*may be nullptr*  
   
 (Optional) List of the player's lifetime purchase totals, summed by real-money currency.
   

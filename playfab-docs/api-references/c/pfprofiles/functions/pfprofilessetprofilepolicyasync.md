@@ -5,7 +5,7 @@ description: "Sets the profiles access policy"
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFProfilesSetProfilePolicyAsync  
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-This will set the access policy statements on the given entity profile. This is not additive, any existing statements will be replaced with the statements in this request. See also ProfileGetProfileAsync. If successful, call [PFProfilesSetProfilePolicyGetResult](pfprofilessetprofilepolicygetresult.md) to get the result.
+This will set the access policy statements on the given entity profile. This is not additive, any existing statements will be replaced with the statements in this request. See also ProfileGetProfileAsync. When the asynchronous task is complete, call [PFProfilesSetProfilePolicyGetResultSize](pfprofilessetprofilepolicygetresultsize.md) and [PFProfilesSetProfilePolicyGetResult](pfprofilessetprofilepolicygetresult.md) to get the result.
   
 ## Requirements  
   

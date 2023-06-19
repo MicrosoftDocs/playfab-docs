@@ -5,7 +5,7 @@ description: "PFCatalogCatalogPriceOptions data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFCatalogCatalogPriceOptions  
@@ -24,9 +24,9 @@ typedef struct PFCatalogCatalogPriceOptions {
 ### Members  
   
 **`prices`** &nbsp; [PFCatalogCatalogPrice](pfcatalogcatalogprice.md) const*  
-*array of size `pricesCount`*  
+*may be nullptr*  
   
-(Optional) Prices of the catalog item.
+(Optional) Prices of the catalog item. An item can have up to 15 prices.
   
 **`pricesCount`** &nbsp; uint32_t  
   

@@ -5,7 +5,7 @@ description: "PFProfilesGetTitlePlayersFromMasterPlayerAccountIdsResponse data m
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFProfilesGetTitlePlayersFromMasterPlayerAccountIdsResponse  
@@ -17,6 +17,7 @@ PFProfilesGetTitlePlayersFromMasterPlayerAccountIdsResponse data model.
 ```cpp
 typedef struct PFProfilesGetTitlePlayersFromMasterPlayerAccountIdsResponse {  
     const char* titleId;  
+    PFEntityKeyDictionaryEntry const* titlePlayerAccounts;  
     uint32_t titlePlayerAccountsCount;  
 } PFProfilesGetTitlePlayersFromMasterPlayerAccountIdsResponse;  
 ```
@@ -28,10 +29,14 @@ typedef struct PFProfilesGetTitlePlayersFromMasterPlayerAccountIdsResponse {
   
 (Optional) Optional id of title to get players from, required if calling using a master_player_account.
   
-**`titlePlayerAccountsCount`** &nbsp; uint32_t  
-*array of size `titlePlayerAccountsCount`*  
+**`titlePlayerAccounts`** &nbsp; [PFEntityKeyDictionaryEntry](../../pftypes/structs/pfentitykeydictionaryentry.md) const*  
+*may be nullptr*  
   
 (Optional) Dictionary of master player ids mapped to title player entity keys and id pairs.
+  
+**`titlePlayerAccountsCount`** &nbsp; uint32_t  
+  
+Count of titlePlayerAccounts
   
   
 ## Requirements  

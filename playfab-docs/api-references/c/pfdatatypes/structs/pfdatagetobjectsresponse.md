@@ -5,7 +5,7 @@ description: "PFDataGetObjectsResponse data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFDataGetObjectsResponse  
@@ -17,6 +17,7 @@ PFDataGetObjectsResponse data model.
 ```cpp
 typedef struct PFDataGetObjectsResponse {  
     PFEntityKey const* entity;  
+    PFDataObjectResultDictionaryEntry const* objects;  
     uint32_t objectsCount;  
     int32_t profileVersion;  
 } PFDataGetObjectsResponse;  
@@ -29,10 +30,14 @@ typedef struct PFDataGetObjectsResponse {
   
 (Optional) The entity id and type.
   
-**`objectsCount`** &nbsp; uint32_t  
-*array of size `objectsCount`*  
+**`objects`** &nbsp; PFDataObjectResultDictionaryEntry const*  
+*may be nullptr*  
   
 (Optional) Requested objects that the calling entity has access to.
+  
+**`objectsCount`** &nbsp; uint32_t  
+  
+Count of objects
   
 **`profileVersion`** &nbsp; int32_t  
   

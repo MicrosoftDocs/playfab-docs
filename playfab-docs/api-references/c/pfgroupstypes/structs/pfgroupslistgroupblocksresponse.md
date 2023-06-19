@@ -5,7 +5,7 @@ description: "PFGroupsListGroupBlocksResponse data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFGroupsListGroupBlocksResponse  
@@ -24,7 +24,7 @@ typedef struct PFGroupsListGroupBlocksResponse {
 ### Members  
   
 **`blockedEntities`** &nbsp; [PFGroupsGroupBlock](pfgroupsgroupblock.md) const*  
-*array of size `blockedEntitiesCount`*  
+*may be nullptr*  
   
 (Optional) The requested list blocked entities.
   

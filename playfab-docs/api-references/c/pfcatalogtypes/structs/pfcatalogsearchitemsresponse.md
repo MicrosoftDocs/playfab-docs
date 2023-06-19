@@ -5,7 +5,7 @@ description: "PFCatalogSearchItemsResponse data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFCatalogSearchItemsResponse  
@@ -30,7 +30,7 @@ typedef struct PFCatalogSearchItemsResponse {
 (Optional) An opaque token used to retrieve the next page of items, if any are available.
   
 **`items`** &nbsp; [PFCatalogCatalogItem](pfcatalogcatalogitem.md) const*  
-*array of size `itemsCount`*  
+*may be nullptr*  
   
 (Optional) The paginated set of results for the search query.
   

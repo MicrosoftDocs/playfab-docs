@@ -5,7 +5,7 @@ description: "PFCatalogCatalogItem data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFCatalogCatalogItem  
@@ -26,6 +26,7 @@ typedef struct PFCatalogCatalogItem {
     PFCatalogDeepLink const* deepLinks;  
     uint32_t deepLinksCount;  
     const char* defaultStackId;  
+    PFStringDictionaryEntry const* description;  
     uint32_t descriptionCount;  
     PFJsonObject displayProperties;  
     const char* displayVersion;  
@@ -37,6 +38,7 @@ typedef struct PFCatalogCatalogItem {
     bool const* isHidden;  
     PFCatalogCatalogItemReference const* itemReferences;  
     uint32_t itemReferencesCount;  
+    PFCatalogKeywordSetDictionaryEntry const* keywords;  
     uint32_t keywordsCount;  
     time_t const* lastModifiedDate;  
     PFCatalogModerationState const* moderation;  
@@ -48,6 +50,7 @@ typedef struct PFCatalogCatalogItem {
     PFCatalogStoreDetails const* storeDetails;  
     const char* const* tags;  
     uint32_t tagsCount;  
+    PFStringDictionaryEntry const* title;  
     uint32_t titleCount;  
     const char* type;  
 } PFCatalogCatalogItem;  
@@ -56,18 +59,18 @@ typedef struct PFCatalogCatalogItem {
 ### Members  
   
 **`alternateIds`** &nbsp; [PFCatalogCatalogAlternateId](pfcatalogcatalogalternateid.md) const*  
-*array of size `alternateIdsCount`*  
+*may be nullptr*  
   
-(Optional) The alternate IDs associated with this item.
+(Optional) The alternate IDs associated with this item. An alternate ID can be set to 'FriendlyId' or any of the supported marketplace names.
   
 **`alternateIdsCount`** &nbsp; uint32_t  
   
 Count of alternateIds
   
 **`contents`** &nbsp; [PFCatalogContent](pfcatalogcontent.md) const*  
-*array of size `contentsCount`*  
+*may be nullptr*  
   
-(Optional) The set of contents associated with this item.
+(Optional) The set of content/files associated with this item. Up to 100 files can be added to an item.
   
 **`contentsCount`** &nbsp; uint32_t  
   
@@ -89,7 +92,7 @@ Count of contents
 (Optional) The ID of the creator of this catalog item.
   
 **`deepLinks`** &nbsp; [PFCatalogDeepLink](pfcatalogdeeplink.md) const*  
-*array of size `deepLinksCount`*  
+*may be nullptr*  
   
 (Optional) The set of platform specific deep links for this item.
   
@@ -102,19 +105,23 @@ Count of deepLinks
   
 (Optional) The Stack Id that will be used as default for this item in Inventory when an explicit one is not provided. This DefaultStackId can be a static stack id or '{guid}', which will generate a unique stack id for the item. If null, Inventory's default stack id will be used.
   
-**`descriptionCount`** &nbsp; uint32_t  
-*array of size `descriptionCount`*  
+**`description`** &nbsp; [PFStringDictionaryEntry](../../pftypes/structs/pfstringdictionaryentry.md) const*  
+*may be nullptr*  
   
-(Optional) A dictionary of localized descriptions. Key is language code and localized string is the value. The neutral locale is required.
+(Optional) A dictionary of localized descriptions. Key is language code and localized string is the value. The NEUTRAL locale is required. Descriptions have a 10000 character limit per country code.
+  
+**`descriptionCount`** &nbsp; uint32_t  
+  
+Count of description
   
 **`displayProperties`** &nbsp; [PFJsonObject](../../pftypes/structs/pfjsonobject.md)  
   
-(Optional) Game specific properties for display purposes. This is an arbitrary JSON blob.
+(Optional) Game specific properties for display purposes. This is an arbitrary JSON blob. The Display Properties field has a 10000 byte limit per item.
   
 **`displayVersion`** &nbsp; const char*  
 *is null-terminated*  
   
-(Optional) The user provided version of the item for display purposes.
+(Optional) The user provided version of the item for display purposes. Maximum character length of 50.
   
 **`endDate`** &nbsp; time_t const*  
 *may be nullptr*  
@@ -132,9 +139,9 @@ Count of deepLinks
 (Optional) The unique ID of the item.
   
 **`images`** &nbsp; [PFCatalogImage](pfcatalogimage.md) const*  
-*array of size `imagesCount`*  
+*may be nullptr*  
   
-(Optional) The images associated with this item. Images can be thumbnails or screenshots.
+(Optional) The images associated with this item. Images can be thumbnails or screenshots. Up to 100 images can be added to an item. Only .png, .jpg, .gif, and .bmp file types can be uploaded.
   
 **`imagesCount`** &nbsp; uint32_t  
   
@@ -146,18 +153,22 @@ Count of images
 (Optional) Indicates if the item is hidden.
   
 **`itemReferences`** &nbsp; [PFCatalogCatalogItemReference](pfcatalogcatalogitemreference.md) const*  
-*array of size `itemReferencesCount`*  
+*may be nullptr*  
   
-(Optional) The item references associated with this item.
+(Optional) The item references associated with this item. For example, the items in a Bundle/Store/Subscription. Every item can have up to 50 item references.
   
 **`itemReferencesCount`** &nbsp; uint32_t  
   
 Count of itemReferences
   
-**`keywordsCount`** &nbsp; uint32_t  
-*array of size `keywordsCount`*  
+**`keywords`** &nbsp; PFCatalogKeywordSetDictionaryEntry const*  
+*may be nullptr*  
   
-(Optional) A dictionary of localized keywords. Key is language code and localized list of keywords is the value.
+(Optional) A dictionary of localized keywords. Key is language code and localized list of keywords is the value. Keywords have a 50 character limit per keyword and up to 32 keywords can be added per country code.
+  
+**`keywordsCount`** &nbsp; uint32_t  
+  
+Count of keywords
   
 **`lastModifiedDate`** &nbsp; time_t const*  
 *may be nullptr*  
@@ -170,7 +181,7 @@ Count of itemReferences
 (Optional) The moderation state for this item.
   
 **`platforms`** &nbsp; const char* const*  
-*array of size `platformsCount`*  
+*may be nullptr*  
   
 (Optional) The platforms supported by this item.
   
@@ -181,7 +192,7 @@ Count of platforms
 **`priceOptions`** &nbsp; [PFCatalogCatalogPriceOptions](pfcatalogcatalogpriceoptions.md) const*  
 *may be nullptr*  
   
-(Optional) The base price of this item.
+(Optional) The prices the item can be purchased for.
   
 **`rating`** &nbsp; [PFCatalogRating](pfcatalograting.md) const*  
 *may be nullptr*  
@@ -199,18 +210,22 @@ Count of platforms
 (Optional) Optional details for stores items.
   
 **`tags`** &nbsp; const char* const*  
-*array of size `tagsCount`*  
+*may be nullptr*  
   
-(Optional) The list of tags that are associated with this item.
+(Optional) The list of tags that are associated with this item. Up to 32 tags can be added to an item.
   
 **`tagsCount`** &nbsp; uint32_t  
   
 Count of tags
   
-**`titleCount`** &nbsp; uint32_t  
-*array of size `titleCount`*  
+**`title`** &nbsp; [PFStringDictionaryEntry](../../pftypes/structs/pfstringdictionaryentry.md) const*  
+*may be nullptr*  
   
-(Optional) A dictionary of localized titles. Key is language code and localized string is the value. The neutral locale is required.
+(Optional) A dictionary of localized titles. Key is language code and localized string is the value. The NEUTRAL locale is required. Titles have a 512 character limit per country code.
+  
+**`titleCount`** &nbsp; uint32_t  
+  
+Count of title
   
 **`type`** &nbsp; const char*  
 *is null-terminated*  

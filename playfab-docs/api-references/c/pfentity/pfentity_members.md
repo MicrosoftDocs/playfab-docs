@@ -5,7 +5,7 @@ description: "Services C API overview - PFEntity.h"
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # Services C API overview - PFEntity.h
@@ -17,7 +17,7 @@ ms.date: 03/09/2023
 | --- | --- |  
 | [PFEntityCloseHandle](functions/pfentityclosehandle.md) | Closes a PFEntityHandle. |  
 | [PFEntityDuplicateHandle](functions/pfentityduplicatehandle.md) | Duplicates a PFEntityHandle. |  
-| [PFEntityGetAPIEndpoint](functions/pfentitygetapiendpoint.md) | Gets the API endpoint from an entity handle. |  
+| [PFEntityGetAPIEndpoint](functions/pfentitygetapiendpoint.md) | Gets the API endpoint for the PFServiceConfig associated with an entity handle. |  
 | [PFEntityGetAPIEndpointSize](functions/pfentitygetapiendpointsize.md) | Gets the size of the buffer needed to hold the API endpoint string from an entity handle. |  
 | [PFEntityGetEntityKey](functions/pfentitygetentitykey.md) | Get the PFEntityKey for an entity. |  
 | [PFEntityGetEntityKeySize](functions/pfentitygetentitykeysize.md) | Get the size in bytes needed to store the PFEntityKey for an Entity. |  
