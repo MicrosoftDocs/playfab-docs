@@ -1,7 +1,7 @@
 ---
 author: jasonsandlin
 title: "PFInventoryTransferInventoryItemsAsync"
-description: "Transfer inventory items. When transferring across collections, a 202 response indicates that the transfer is in progress and will complete soon. More information about item transfer scenarios can be found here: https://learn.microsoft.com/en-us/gaming/playfab/features/economy-v2/inventory/?tabs=inventory-game-manager#transfer-inventory-items"
+description: "Transfer inventory items. When transferring across collections, a 202 response indicates that the transfer is in progress and will complete soon. More information about item transfer scenarios can be found here: https://learn.microsoft.com/gaming/playfab/features/economy-v2/inventory/?tabs=inventory-game-manager#transfer-inventory-items"
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
@@ -10,7 +10,7 @@ ms.date: 05/24/2023
 
 # PFInventoryTransferInventoryItemsAsync  
 
-Transfer inventory items. When transferring across collections, a 202 response indicates that the transfer is in progress and will complete soon. More information about item transfer scenarios can be found here: https://learn.microsoft.com/en-us/gaming/playfab/features/economy-v2/inventory/?tabs=inventory-game-manager#transfer-inventory-items  
+Transfer inventory items. When transferring across collections, a 202 response indicates that the transfer is in progress and will complete soon. More information about item transfer scenarios can be found here: https://learn.microsoft.com/gaming/playfab/features/economy-v2/inventory/?tabs=inventory-game-manager#transfer-inventory-items  
 
 ## Syntax  
   

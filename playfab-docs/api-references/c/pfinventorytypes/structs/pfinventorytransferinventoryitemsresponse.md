@@ -30,7 +30,7 @@ typedef struct PFInventoryTransferInventoryItemsResponse {
 **`givingETag`** &nbsp; const char*  
 *is null-terminated*  
   
-(Optional) ETags are used for concurrency checking when updating resources (after transferring from). More information about using ETags can be found here: https://learn.microsoft.com/en-us/gaming/playfab/features/economy-v2/catalog/etags.
+(Optional) ETags are used for concurrency checking when updating resources (after transferring from). More information about using ETags can be found here: https://learn.microsoft.com/gaming/playfab/features/economy-v2/catalog/etags.
   
 **`givingTransactionIds`** &nbsp; const char* const*  
 *may be nullptr*  

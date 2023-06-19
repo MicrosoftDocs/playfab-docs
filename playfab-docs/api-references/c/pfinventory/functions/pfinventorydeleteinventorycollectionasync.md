@@ -1,7 +1,7 @@
 ---
 author: jasonsandlin
 title: "PFInventoryDeleteInventoryCollectionAsync"
-description: "Delete an Inventory Collection. More information about Inventory Collections can be found here: https://learn.microsoft.com/en-us/gaming/playfab/features/economy-v2/inventory/collections"
+description: "Delete an Inventory Collection. More information about Inventory Collections can be found here: https://learn.microsoft.com/gaming/playfab/features/economy-v2/inventory/collections"
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
@@ -10,7 +10,7 @@ ms.date: 05/24/2023
 
 # PFInventoryDeleteInventoryCollectionAsync  
 
-Delete an Inventory Collection. More information about Inventory Collections can be found here: https://learn.microsoft.com/en-us/gaming/playfab/features/economy-v2/inventory/collections  
+Delete an Inventory Collection. More information about Inventory Collections can be found here: https://learn.microsoft.com/gaming/playfab/features/economy-v2/inventory/collections  
 
 ## Syntax  
   
