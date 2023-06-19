@@ -5,7 +5,7 @@ description: "PFCatalogUserGeneratedContentSpecificConfig data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFCatalogUserGeneratedContentSpecificConfig  
@@ -26,7 +26,7 @@ typedef struct PFCatalogUserGeneratedContentSpecificConfig {
 ### Members  
   
 **`contentTypes`** &nbsp; const char* const*  
-*array of size `contentTypesCount`*  
+*may be nullptr*  
   
 (Optional) The set of content types that will be used for validation.
   
@@ -35,7 +35,7 @@ typedef struct PFCatalogUserGeneratedContentSpecificConfig {
 Count of contentTypes
   
 **`tags`** &nbsp; const char* const*  
-*array of size `tagsCount`*  
+*may be nullptr*  
   
 (Optional) The set of tags that will be used for validation.
   

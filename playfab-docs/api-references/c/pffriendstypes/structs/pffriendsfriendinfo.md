@@ -5,7 +5,7 @@ description: "PFFriendsFriendInfo data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFFriendsFriendInfo  
@@ -63,7 +63,7 @@ typedef struct PFFriendsFriendInfo {
 (Optional) Available Steam information (if the user and PlayFab friend are also connected in Steam).
   
 **`tags`** &nbsp; const char* const*  
-*array of size `tagsCount`*  
+*may be nullptr*  
   
 (Optional) Tags which have been associated with this friend.
   

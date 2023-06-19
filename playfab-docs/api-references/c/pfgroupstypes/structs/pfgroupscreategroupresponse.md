@@ -5,7 +5,7 @@ description: "PFGroupsCreateGroupResponse data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFGroupsCreateGroupResponse  
@@ -22,6 +22,7 @@ typedef struct PFGroupsCreateGroupResponse {
     const char* groupName;  
     const char* memberRoleId;  
     int32_t profileVersion;  
+    PFStringDictionaryEntry const* roles;  
     uint32_t rolesCount;  
 } PFGroupsCreateGroupResponse;  
 ```
@@ -55,10 +56,14 @@ The identifier of the group.
   
 The current version of the profile, can be used for concurrency control during updates.
   
-**`rolesCount`** &nbsp; uint32_t  
-*array of size `rolesCount`*  
+**`roles`** &nbsp; [PFStringDictionaryEntry](../../pftypes/structs/pfstringdictionaryentry.md) const*  
+*may be nullptr*  
   
 (Optional) The list of roles and names that belong to the group.
+  
+**`rolesCount`** &nbsp; uint32_t  
+  
+Count of roles
   
   
 ## Requirements  

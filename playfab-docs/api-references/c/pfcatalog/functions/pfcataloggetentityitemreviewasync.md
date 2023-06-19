@@ -1,16 +1,16 @@
 ---
 author: jasonsandlin
 title: "PFCatalogGetEntityItemReviewAsync"
-description: "Gets the submitted review for the specified item by the authenticated entity."
+description: "Gets the submitted review for the specified item by the authenticated entity. Individual ratings and reviews data update in near real time with delays within a few seconds."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFCatalogGetEntityItemReviewAsync  
 
-Gets the submitted review for the specified item by the authenticated entity.  
+Gets the submitted review for the specified item by the authenticated entity. Individual ratings and reviews data update in near real time with delays within a few seconds.  
 
 ## Syntax  
   
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-If successful, call [PFCatalogGetEntityItemReviewGetResult](pfcataloggetentityitemreviewgetresult.md) to get the result.
+When the asynchronous task is complete, call [PFCatalogGetEntityItemReviewGetResultSize](pfcataloggetentityitemreviewgetresultsize.md) and [PFCatalogGetEntityItemReviewGetResult](pfcataloggetentityitemreviewgetresult.md) to get the result.
   
 ## Requirements  
   

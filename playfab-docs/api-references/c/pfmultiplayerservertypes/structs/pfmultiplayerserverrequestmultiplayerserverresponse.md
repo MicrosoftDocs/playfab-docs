@@ -5,7 +5,7 @@ description: "PFMultiplayerServerRequestMultiplayerServerResponse data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFMultiplayerServerRequestMultiplayerServerResponse  
@@ -40,7 +40,7 @@ typedef struct PFMultiplayerServerRequestMultiplayerServerResponse {
 (Optional) The identity of the build in which the server was allocated.
   
 **`connectedPlayers`** &nbsp; [PFMultiplayerServerConnectedPlayer](pfmultiplayerserverconnectedplayer.md) const*  
-*array of size `connectedPlayersCount`*  
+*may be nullptr*  
   
 (Optional) The connected players in the multiplayer server.
   
@@ -64,7 +64,7 @@ Count of connectedPlayers
 (Optional) The time (UTC) at which a change in the multiplayer server state was observed.
   
 **`ports`** &nbsp; [PFMultiplayerServerPort](pfmultiplayerserverport.md) const*  
-*array of size `portsCount`*  
+*may be nullptr*  
   
 (Optional) The ports the multiplayer server uses.
   

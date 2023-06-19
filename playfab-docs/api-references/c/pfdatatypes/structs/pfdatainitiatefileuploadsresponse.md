@@ -5,7 +5,7 @@ description: "PFDataInitiateFileUploadsResponse data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFDataInitiateFileUploadsResponse  
@@ -35,7 +35,7 @@ typedef struct PFDataInitiateFileUploadsResponse {
 The current version of the profile, can be used for concurrency control during updates.
   
 **`uploadDetails`** &nbsp; [PFDataInitiateFileUploadMetadata](pfdatainitiatefileuploadmetadata.md) const*  
-*array of size `uploadDetailsCount`*  
+*may be nullptr*  
   
 (Optional) Collection of file names and upload urls.
   

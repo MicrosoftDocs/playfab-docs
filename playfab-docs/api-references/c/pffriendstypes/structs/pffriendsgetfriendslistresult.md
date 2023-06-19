@@ -5,7 +5,7 @@ description: "PFFriendsGetFriendsListResult data model. If any additional servic
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFFriendsGetFriendsListResult  
@@ -24,7 +24,7 @@ typedef struct PFFriendsGetFriendsListResult {
 ### Members  
   
 **`friends`** &nbsp; [PFFriendsFriendInfo](pffriendsfriendinfo.md) const*  
-*array of size `friendsCount`*  
+*may be nullptr*  
   
 (Optional) Array of friends found.
   

@@ -5,7 +5,7 @@ description: "PFInventoryPurchaseInventoryItemsRequest data model. Purchase a si
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFInventoryPurchaseInventoryItemsRequest  
@@ -18,6 +18,7 @@ PFInventoryPurchaseInventoryItemsRequest data model. Purchase a single item or b
 typedef struct PFInventoryPurchaseInventoryItemsRequest {  
     int32_t const* amount;  
     const char* collectionId;  
+    PFStringDictionaryEntry const* customTags;  
     uint32_t customTagsCount;  
     bool deleteEmptyStacks;  
     double const* durationInSeconds;  
@@ -42,12 +43,16 @@ typedef struct PFInventoryPurchaseInventoryItemsRequest {
 **`collectionId`** &nbsp; const char*  
 *is null-terminated*  
   
-(Optional) The id of the entity's collection to perform this action on. (Default="default").
+(Optional) The id of the entity's collection to perform this action on. (Default="default"). The number of inventory collections is unlimited.
   
-**`customTagsCount`** &nbsp; uint32_t  
-*array of size `customTagsCount`*  
+**`customTags`** &nbsp; [PFStringDictionaryEntry](../../pftypes/structs/pfstringdictionaryentry.md) const*  
+*may be nullptr*  
   
 (Optional) The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
+  
+**`customTagsCount`** &nbsp; uint32_t  
+  
+Count of customTags
   
 **`deleteEmptyStacks`** &nbsp; bool  
   
@@ -66,12 +71,12 @@ Indicates whether stacks reduced to an amount of 0 during the request should be 
 **`eTag`** &nbsp; const char*  
 *is null-terminated*  
   
-(Optional) ETags are used for concurrency checking when updating resources.
+(Optional) ETags are used for concurrency checking when updating resources. More information about using ETags can be found here: https://learn.microsoft.com/gaming/playfab/features/economy-v2/catalog/etags.
   
 **`idempotencyId`** &nbsp; const char*  
 *is null-terminated*  
   
-(Optional) The Idempotency ID for this request.
+(Optional) The Idempotency ID for this request. Idempotency IDs can be used to prevent operation replay in the medium term but will be garbage collected eventually.
   
 **`item`** &nbsp; [PFInventoryInventoryItemReference](pfinventoryinventoryitemreference.md) const*  
 *may be nullptr*  
@@ -84,7 +89,7 @@ Indicates whether stacks reduced to an amount of 0 during the request should be 
 (Optional) The values to apply to a stack newly created by this request.
   
 **`priceAmounts`** &nbsp; [PFInventoryPurchasePriceAmount](pfinventorypurchasepriceamount.md) const*  
-*array of size `priceAmountsCount`*  
+*may be nullptr*  
   
 (Optional) The per-item price the item is expected to be purchased at. This must match a value configured in the Catalog or specified Store. .
   

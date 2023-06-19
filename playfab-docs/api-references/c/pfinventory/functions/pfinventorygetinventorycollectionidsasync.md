@@ -1,16 +1,16 @@
 ---
 author: jasonsandlin
 title: "PFInventoryGetInventoryCollectionIdsAsync"
-description: "Get Inventory Collection Ids"
+description: "Get Inventory Collection Ids. Up to 50 Ids can be returned at once. You can use continuation tokens to paginate through results that return greater than the limit. It can take a few seconds for new collection Ids to show up."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFInventoryGetInventoryCollectionIdsAsync  
 
-Get Inventory Collection Ids  
+Get Inventory Collection Ids. Up to 50 Ids can be returned at once. You can use continuation tokens to paginate through results that return greater than the limit. It can take a few seconds for new collection Ids to show up.  
 
 ## Syntax  
   
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-Get a list of Inventory Collection Ids for the specified Entity. If successful, call [PFInventoryGetInventoryCollectionIdsGetResult](pfinventorygetinventorycollectionidsgetresult.md) to get the result.
+Get a list of Inventory Collection Ids for the specified Entity. When the asynchronous task is complete, call [PFInventoryGetInventoryCollectionIdsGetResultSize](pfinventorygetinventorycollectionidsgetresultsize.md) and [PFInventoryGetInventoryCollectionIdsGetResult](pfinventorygetinventorycollectionidsgetresult.md) to get the result.
   
 ## Requirements  
   

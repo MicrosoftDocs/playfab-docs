@@ -5,7 +5,7 @@ description: "PFGroupsListGroupMembersResponse data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFGroupsListGroupMembersResponse  
@@ -24,7 +24,7 @@ typedef struct PFGroupsListGroupMembersResponse {
 ### Members  
   
 **`members`** &nbsp; [PFGroupsEntityMemberRole](pfgroupsentitymemberrole.md) const*  
-*array of size `membersCount`*  
+*may be nullptr*  
   
 (Optional) The requested list of roles and member entity IDs.
   

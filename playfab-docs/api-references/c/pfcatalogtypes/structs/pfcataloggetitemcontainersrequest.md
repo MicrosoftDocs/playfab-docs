@@ -5,7 +5,7 @@ description: "PFCatalogGetItemContainersRequest data model. Given an item, retur
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFCatalogGetItemContainersRequest  
@@ -19,6 +19,7 @@ typedef struct PFCatalogGetItemContainersRequest {
     PFCatalogCatalogAlternateId const* alternateId;  
     const char* continuationToken;  
     int32_t count;  
+    PFStringDictionaryEntry const* customTags;  
     uint32_t customTagsCount;  
     PFEntityKey const* entity;  
     const char* id;  
@@ -39,12 +40,16 @@ typedef struct PFCatalogGetItemContainersRequest {
   
 **`count`** &nbsp; int32_t  
   
-Number of items to retrieve. Maximum page size is 25.
+Number of items to retrieve. This value is optional. Default value is 10.
   
-**`customTagsCount`** &nbsp; uint32_t  
-*array of size `customTagsCount`*  
+**`customTags`** &nbsp; [PFStringDictionaryEntry](../../pftypes/structs/pfstringdictionaryentry.md) const*  
+*may be nullptr*  
   
 (Optional) The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
+  
+**`customTagsCount`** &nbsp; uint32_t  
+  
+Count of customTags
   
 **`entity`** &nbsp; [PFEntityKey](../../pftypes/structs/pfentitykey-c.md) const*  
 *may be nullptr*  

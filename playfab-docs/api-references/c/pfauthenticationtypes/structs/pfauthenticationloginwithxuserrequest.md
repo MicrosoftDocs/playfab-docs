@@ -5,7 +5,7 @@ description: "PFAuthenticationLoginWithXUserRequest data model. If this is the f
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFAuthenticationLoginWithXUserRequest  
@@ -17,6 +17,7 @@ PFAuthenticationLoginWithXUserRequest data model. If this is the first time a us
 ```cpp
 typedef struct PFAuthenticationLoginWithXUserRequest {  
     bool createAccount;  
+    PFStringDictionaryEntry const* customTags;  
     uint32_t customTagsCount;  
     PFGetPlayerCombinedInfoRequestParams const* infoRequestParameters;  
     const char* playerSecret;  
@@ -30,10 +31,14 @@ typedef struct PFAuthenticationLoginWithXUserRequest {
   
 Automatically create a PlayFab account if one is not currently linked to this ID.
   
-**`customTagsCount`** &nbsp; uint32_t  
-*array of size `customTagsCount`*  
+**`customTags`** &nbsp; PFStringDictionaryEntry const*  
+*may be nullptr*  
   
 (Optional) The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
+  
+**`customTagsCount`** &nbsp; uint32_t  
+  
+Count of customTags
   
 **`infoRequestParameters`** &nbsp; PFGetPlayerCombinedInfoRequestParams const*  
 *may be nullptr*  

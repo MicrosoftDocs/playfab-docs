@@ -5,7 +5,7 @@ description: "PFInventoryPurchaseInventoryItemsOperation data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFInventoryPurchaseInventoryItemsOperation  
@@ -54,7 +54,7 @@ Indicates whether stacks reduced to an amount of 0 during the operation should b
 (Optional) The values to apply to a stack newly created by this operation.
   
 **`priceAmounts`** &nbsp; [PFInventoryPurchasePriceAmount](pfinventorypurchasepriceamount.md) const*  
-*array of size `priceAmountsCount`*  
+*may be nullptr*  
   
 (Optional) The per-item price the item is expected to be purchased at. This must match a value configured in the Catalog or specified Store.
   

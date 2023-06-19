@@ -5,7 +5,7 @@ description: "PFPlayerDataManagementClientUpdateUserDataRequest data model. This
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFPlayerDataManagementClientUpdateUserDataRequest  
@@ -16,7 +16,9 @@ PFPlayerDataManagementClientUpdateUserDataRequest data model. This function perf
   
 ```cpp
 typedef struct PFPlayerDataManagementClientUpdateUserDataRequest {  
+    PFStringDictionaryEntry const* customTags;  
     uint32_t customTagsCount;  
+    PFStringDictionaryEntry const* data;  
     uint32_t dataCount;  
     const char* const* keysToRemove;  
     uint32_t keysToRemoveCount;  
@@ -26,18 +28,26 @@ typedef struct PFPlayerDataManagementClientUpdateUserDataRequest {
   
 ### Members  
   
-**`customTagsCount`** &nbsp; uint32_t  
-*array of size `customTagsCount`*  
+**`customTags`** &nbsp; [PFStringDictionaryEntry](../../pftypes/structs/pfstringdictionaryentry.md) const*  
+*may be nullptr*  
   
 (Optional) The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
   
-**`dataCount`** &nbsp; uint32_t  
-*array of size `dataCount`*  
+**`customTagsCount`** &nbsp; uint32_t  
+  
+Count of customTags
+  
+**`data`** &nbsp; [PFStringDictionaryEntry](../../pftypes/structs/pfstringdictionaryentry.md) const*  
+*may be nullptr*  
   
 (Optional) Key-value pairs to be written to the custom data. Note that keys are trimmed of whitespace, are limited in size, and may not begin with a '!' character or be null.
   
+**`dataCount`** &nbsp; uint32_t  
+  
+Count of data
+  
 **`keysToRemove`** &nbsp; const char* const*  
-*array of size `keysToRemoveCount`*  
+*may be nullptr*  
   
 (Optional) Optional list of Data-keys to remove from UserData. Some SDKs cannot insert null-values into Data due to language constraints. Use this to delete the keys directly.
   

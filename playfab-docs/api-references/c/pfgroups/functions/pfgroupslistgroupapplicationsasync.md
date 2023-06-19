@@ -5,7 +5,7 @@ description: "Lists all outstanding requests to join a group"
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFGroupsListGroupApplicationsAsync  
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-Lists all outstanding requests to join a group. Returns a list of all requests to join, as well as when the request will expire. To get the group applications for a specific entity, use ListMembershipOpportunities. See also GroupAcceptGroupApplicationAsync, GroupApplyToGroupAsync, GroupRemoveGroupApplicationAsync. If successful, call [PFGroupsListGroupApplicationsGetResult](pfgroupslistgroupapplicationsgetresult.md) to get the result.
+Lists all outstanding requests to join a group. Returns a list of all requests to join, as well as when the request will expire. To get the group applications for a specific entity, use ListMembershipOpportunities. When the asynchronous task is complete, call [PFGroupsListGroupApplicationsGetResultSize](pfgroupslistgroupapplicationsgetresultsize.md) and [PFGroupsListGroupApplicationsGetResult](pfgroupslistgroupapplicationsgetresult.md) to get the result.
   
 ## Requirements  
   

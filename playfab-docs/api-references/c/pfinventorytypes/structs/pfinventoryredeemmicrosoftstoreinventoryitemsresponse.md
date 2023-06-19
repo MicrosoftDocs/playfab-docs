@@ -5,7 +5,7 @@ description: "PFInventoryRedeemMicrosoftStoreInventoryItemsResponse data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFInventoryRedeemMicrosoftStoreInventoryItemsResponse  
@@ -28,7 +28,7 @@ typedef struct PFInventoryRedeemMicrosoftStoreInventoryItemsResponse {
 ### Members  
   
 **`failed`** &nbsp; [PFInventoryRedemptionFailure](pfinventoryredemptionfailure.md) const*  
-*array of size `failedCount`*  
+*may be nullptr*  
   
 (Optional) The list of failed redemptions from the external marketplace.
   
@@ -37,7 +37,7 @@ typedef struct PFInventoryRedeemMicrosoftStoreInventoryItemsResponse {
 Count of failed
   
 **`succeeded`** &nbsp; [PFInventoryRedemptionSuccess](pfinventoryredemptionsuccess.md) const*  
-*array of size `succeededCount`*  
+*may be nullptr*  
   
 (Optional) The list of successful redemptions from the external marketplace.
   
@@ -46,7 +46,7 @@ Count of failed
 Count of succeeded
   
 **`transactionIds`** &nbsp; const char* const*  
-*array of size `transactionIdsCount`*  
+*may be nullptr*  
   
 (Optional) The Transaction IDs associated with the inventory modifications.
   

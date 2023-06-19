@@ -5,7 +5,7 @@ description: "PFGroupsEntityWithLineage data model. Entity wrapper class that co
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFGroupsEntityWithLineage  
@@ -17,6 +17,7 @@ PFGroupsEntityWithLineage data model. Entity wrapper class that contains the ent
 ```cpp
 typedef struct PFGroupsEntityWithLineage {  
     PFEntityKey const* key;  
+    PFEntityKeyDictionaryEntry const* lineage;  
     uint32_t lineageCount;  
 } PFGroupsEntityWithLineage;  
 ```
@@ -28,10 +29,14 @@ typedef struct PFGroupsEntityWithLineage {
   
 (Optional) The entity key for the specified entity.
   
-**`lineageCount`** &nbsp; uint32_t  
-*array of size `lineageCount`*  
+**`lineage`** &nbsp; [PFEntityKeyDictionaryEntry](../../pftypes/structs/pfentitykeydictionaryentry.md) const*  
+*may be nullptr*  
   
 (Optional) Dictionary of entity keys for related entities. Dictionary key is entity type.
+  
+**`lineageCount`** &nbsp; uint32_t  
+  
+Count of lineage
   
   
 ## Requirements  

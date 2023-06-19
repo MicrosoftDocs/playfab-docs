@@ -5,7 +5,7 @@ description: "PFDataSetObjectsResponse data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFDataSetObjectsResponse  
@@ -29,7 +29,7 @@ typedef struct PFDataSetObjectsResponse {
 New version of the entity profile.
   
 **`setResults`** &nbsp; [PFDataSetObjectInfo](pfdatasetobjectinfo.md) const*  
-*array of size `setResultsCount`*  
+*may be nullptr*  
   
 (Optional) New version of the entity profile.
   

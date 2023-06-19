@@ -5,7 +5,7 @@ description: "PFMultiplayerServerListQosServersForTitleResponse data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFMultiplayerServerListQosServersForTitleResponse  
@@ -30,7 +30,7 @@ typedef struct PFMultiplayerServerListQosServersForTitleResponse {
 The page size on the response.
   
 **`qosServers`** &nbsp; [PFMultiplayerServerQosServer](pfmultiplayerserverqosserver.md) const*  
-*array of size `qosServersCount`*  
+*may be nullptr*  
   
 (Optional) The list of QoS servers.
   

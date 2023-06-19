@@ -5,7 +5,7 @@ description: "PFCatalogGetItemContainersResponse data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFCatalogGetItemContainersResponse  
@@ -25,7 +25,7 @@ typedef struct PFCatalogGetItemContainersResponse {
 ### Members  
   
 **`containers`** &nbsp; [PFCatalogCatalogItem](pfcatalogcatalogitem.md) const*  
-*array of size `containersCount`*  
+*may be nullptr*  
   
 (Optional) List of Bundles and Stores containing the requested items.
   

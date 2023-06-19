@@ -5,7 +5,7 @@ description: "PFFriendsClientGetFriendsListRequest data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFFriendsClientGetFriendsListRequest  
@@ -16,41 +16,39 @@ PFFriendsClientGetFriendsListRequest data model.
   
 ```cpp
 typedef struct PFFriendsClientGetFriendsListRequest {  
+    PFStringDictionaryEntry const* customTags;  
     uint32_t customTagsCount;  
     PFFriendsExternalFriendSources const* externalPlatformFriends;  
-    bool const* includeFacebookFriends;  
-    bool const* includeSteamFriends;  
     PFPlayerProfileViewConstraints const* profileConstraints;  
+    HC_PLATFORM user;  
     const char* xboxToken;  
 } PFFriendsClientGetFriendsListRequest;  
 ```
   
 ### Members  
   
-**`customTagsCount`** &nbsp; uint32_t  
-*array of size `customTagsCount`*  
+**`customTags`** &nbsp; [PFStringDictionaryEntry](../../pftypes/structs/pfstringdictionaryentry.md) const*  
+*may be nullptr*  
   
 (Optional) The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
+  
+**`customTagsCount`** &nbsp; uint32_t  
+  
+Count of customTags
   
 **`externalPlatformFriends`** &nbsp; [PFFriendsExternalFriendSources](../enums/pffriendsexternalfriendsources.md) const*  
 *may be nullptr*  
   
 (Optional) Indicates which other platforms' friends should be included in the response. In HTTP, it is represented as a comma-separated list of platforms.
   
-**`includeFacebookFriends`** &nbsp; bool const*  
-*may be nullptr*  
-  
-(Optional) Indicates whether Facebook friends should be included in the response. Default is true.
-  
-**`includeSteamFriends`** &nbsp; bool const*  
-*may be nullptr*  
-  
-(Optional) Indicates whether Steam service friends should be included in the response. Default is true.
-  
 **`profileConstraints`** &nbsp; [PFPlayerProfileViewConstraints](../../pftypes/structs/pfplayerprofileviewconstraints.md) const*  
 *may be nullptr*  
   
 (Optional) If non-null, this determines which properties of the resulting player profiles to return. For API calls from the client, only the allowed client profile properties for the title may be requested. These allowed properties are configured in the Game Manager "Client Profile Options" tab in the "Settings" section.
+  
+**`user`** &nbsp; HC_PLATFORM  
+  
+TBD  
   
 **`xboxToken`** &nbsp; const char*  
 *is null-terminated*  

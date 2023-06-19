@@ -1,16 +1,16 @@
 ---
 author: jasonsandlin
 title: "PFCatalogCreateUploadUrlsAsync"
-description: "Creates one or more upload URLs which can be used by the client to upload raw file data."
+description: "Creates one or more upload URLs which can be used by the client to upload raw file data. Content URls and uploaded content will be garbage collected after 24 hours if not attached to a draft or published item. Detailed pricing info around uploading content can be found here: https://learn.microsoft.com/gaming/playfab/features/pricing/meters/catalog-meters"
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFCatalogCreateUploadUrlsAsync  
 
-Creates one or more upload URLs which can be used by the client to upload raw file data.  
+Creates one or more upload URLs which can be used by the client to upload raw file data. Content URls and uploaded content will be garbage collected after 24 hours if not attached to a draft or published item. Detailed pricing info around uploading content can be found here: https://learn.microsoft.com/gaming/playfab/features/pricing/meters/catalog-meters  
 
 ## Syntax  
   
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-Upload URLs point to Azure Blobs; clients must follow the Microsoft Azure Storage Blob Service REST API pattern for uploading content. The response contains upload URLs and IDs for each file. The IDs and URLs returned must be added to the item metadata and committed using the CreateDraftItem or UpdateDraftItem Item APIs. If successful, call [PFCatalogCreateUploadUrlsGetResult](pfcatalogcreateuploadurlsgetresult.md) to get the result.
+Upload URLs point to Azure Blobs; clients must follow the Microsoft Azure Storage Blob Service REST API pattern for uploading content. The response contains upload URLs and IDs for each file. The IDs and URLs returned must be added to the item metadata and committed using the CreateDraftItem or UpdateDraftItem Item APIs. When the asynchronous task is complete, call [PFCatalogCreateUploadUrlsGetResultSize](pfcatalogcreateuploadurlsgetresultsize.md) and [PFCatalogCreateUploadUrlsGetResult](pfcatalogcreateuploadurlsgetresult.md) to get the result.
   
 ## Requirements  
   

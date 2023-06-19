@@ -5,7 +5,7 @@ description: "PFAccountManagementGetPlayerProfileRequest data model. This API al
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFAccountManagementGetPlayerProfileRequest  
@@ -16,6 +16,7 @@ PFAccountManagementGetPlayerProfileRequest data model. This API allows for acces
   
 ```cpp
 typedef struct PFAccountManagementGetPlayerProfileRequest {  
+    PFStringDictionaryEntry const* customTags;  
     uint32_t customTagsCount;  
     const char* playFabId;  
     PFPlayerProfileViewConstraints const* profileConstraints;  
@@ -24,10 +25,14 @@ typedef struct PFAccountManagementGetPlayerProfileRequest {
   
 ### Members  
   
-**`customTagsCount`** &nbsp; uint32_t  
-*array of size `customTagsCount`*  
+**`customTags`** &nbsp; [PFStringDictionaryEntry](../../pftypes/structs/pfstringdictionaryentry.md) const*  
+*may be nullptr*  
   
 (Optional) The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
+  
+**`customTagsCount`** &nbsp; uint32_t  
+  
+Count of customTags
   
 **`playFabId`** &nbsp; const char*  
 *is null-terminated*  

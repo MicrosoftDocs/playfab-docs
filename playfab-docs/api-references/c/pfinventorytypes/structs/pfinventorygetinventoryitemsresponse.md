@@ -5,7 +5,7 @@ description: "PFInventoryGetInventoryItemsResponse data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFInventoryGetInventoryItemsResponse  
@@ -33,10 +33,10 @@ typedef struct PFInventoryGetInventoryItemsResponse {
 **`eTag`** &nbsp; const char*  
 *is null-terminated*  
   
-(Optional) ETags are used for concurrency checking when updating resources.
+(Optional) ETags are used for concurrency checking when updating resources. More information about using ETags can be found here: https://learn.microsoft.com/gaming/playfab/features/economy-v2/catalog/etags.
   
 **`items`** &nbsp; [PFInventoryInventoryItem](pfinventoryinventoryitem.md) const*  
-*array of size `itemsCount`*  
+*may be nullptr*  
   
 (Optional) The requested inventory items.
   

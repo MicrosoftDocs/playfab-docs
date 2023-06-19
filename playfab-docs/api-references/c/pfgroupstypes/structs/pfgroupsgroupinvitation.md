@@ -5,7 +5,7 @@ description: "PFGroupsGroupInvitation data model. Describes an invitation to a g
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFGroupsGroupInvitation  

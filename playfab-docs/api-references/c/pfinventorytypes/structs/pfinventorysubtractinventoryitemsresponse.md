@@ -5,7 +5,7 @@ description: "PFInventorySubtractInventoryItemsResponse data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFInventorySubtractInventoryItemsResponse  
@@ -28,7 +28,7 @@ typedef struct PFInventorySubtractInventoryItemsResponse {
 **`eTag`** &nbsp; const char*  
 *is null-terminated*  
   
-(Optional) ETags are used for concurrency checking when updating resources.
+(Optional) ETags are used for concurrency checking when updating resources. More information about using ETags can be found here: https://learn.microsoft.com/gaming/playfab/features/economy-v2/catalog/etags.
   
 **`idempotencyId`** &nbsp; const char*  
 *is null-terminated*  
@@ -36,7 +36,7 @@ typedef struct PFInventorySubtractInventoryItemsResponse {
 (Optional) The idempotency id used in the request.
   
 **`transactionIds`** &nbsp; const char* const*  
-*array of size `transactionIdsCount`*  
+*may be nullptr*  
   
 (Optional) The ids of transactions that occurred as a result of the request.
   

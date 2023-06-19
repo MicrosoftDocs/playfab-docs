@@ -1,16 +1,16 @@
 ---
 author: jasonsandlin
 title: "PFInventoryExecuteInventoryOperationsAsync"
-description: "Execute a list of Inventory Operations"
+description: "Execute a list of Inventory Operations. A maximum list of 10 operations can be performed by a single request. There is also a limit to 250 items that can be modified/added in a single request. For example, adding a bundle with 50 items counts as 50 items modified. All operations must be done within a single inventory collection. This API has a reduced RPS compared to an individual inventory operation with Player Entities limited to 15 requests in 90 seconds and Title Entities limited to 500 requests in 10 seconds."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFInventoryExecuteInventoryOperationsAsync  
 
-Execute a list of Inventory Operations  
+Execute a list of Inventory Operations. A maximum list of 10 operations can be performed by a single request. There is also a limit to 250 items that can be modified/added in a single request. For example, adding a bundle with 50 items counts as 50 items modified. All operations must be done within a single inventory collection. This API has a reduced RPS compared to an individual inventory operation with Player Entities limited to 15 requests in 90 seconds and Title Entities limited to 500 requests in 10 seconds.  
 
 ## Syntax  
   
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-Execute a list of Inventory Operations for an Entity. If successful, call [PFInventoryExecuteInventoryOperationsGetResult](pfinventoryexecuteinventoryoperationsgetresult.md) to get the result.
+Execute a list of Inventory Operations for an Entity. When the asynchronous task is complete, call [PFInventoryExecuteInventoryOperationsGetResultSize](pfinventoryexecuteinventoryoperationsgetresultsize.md) and [PFInventoryExecuteInventoryOperationsGetResult](pfinventoryexecuteinventoryoperationsgetresult.md) to get the result.
   
 ## Requirements  
   

@@ -5,7 +5,7 @@ description: "Get current inventory items."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFInventoryGetInventoryItemsAsync  
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-Given an entity type, entity identifier and container details, will get the entity's inventory items. . If successful, call [PFInventoryGetInventoryItemsGetResult](pfinventorygetinventoryitemsgetresult.md) to get the result.
+Given an entity type, entity identifier and container details, will get the entity's inventory items. . When the asynchronous task is complete, call [PFInventoryGetInventoryItemsGetResultSize](pfinventorygetinventoryitemsgetresultsize.md) and [PFInventoryGetInventoryItemsGetResult](pfinventorygetinventoryitemsgetresult.md) to get the result.
   
 ## Requirements  
   

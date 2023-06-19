@@ -5,7 +5,7 @@ description: "Lists details of all build aliases for a title. Accepts tokens for
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFMultiplayerServerListBuildAliasesAsync  
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-Returns a list of summarized details of all multiplayer server builds for a title. See also MultiplayerServerCreateBuildWithManagedContainerAsync, MultiplayerServerDeleteBuildAsync, MultiplayerServerGetBuildAsync. If successful, call [PFMultiplayerServerListBuildAliasesGetResult](pfmultiplayerserverlistbuildaliasesgetresult.md) to get the result.
+Returns a list of summarized details of all multiplayer server builds for a title. See also MultiplayerServerCreateBuildWithManagedContainerAsync, MultiplayerServerDeleteBuildAsync, MultiplayerServerGetBuildAsync. When the asynchronous task is complete, call [PFMultiplayerServerListBuildAliasesGetResultSize](pfmultiplayerserverlistbuildaliasesgetresultsize.md) and [PFMultiplayerServerListBuildAliasesGetResult](pfmultiplayerserverlistbuildaliasesgetresult.md) to get the result.
   
 ## Requirements  
   

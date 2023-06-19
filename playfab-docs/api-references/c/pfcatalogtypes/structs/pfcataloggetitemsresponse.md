@@ -5,7 +5,7 @@ description: "PFCatalogGetItemsResponse data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFCatalogGetItemsResponse  
@@ -24,7 +24,7 @@ typedef struct PFCatalogGetItemsResponse {
 ### Members  
   
 **`items`** &nbsp; [PFCatalogCatalogItem](pfcatalogcatalogitem.md) const*  
-*array of size `itemsCount`*  
+*may be nullptr*  
   
 (Optional) Metadata of set of items.
   

@@ -5,7 +5,7 @@ description: "Gets the result of a successful PFCloudScriptExecuteFunctionAsync 
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFCloudScriptExecuteFunctionGetResult  
@@ -54,7 +54,7 @@ The number of bytes in the provided buffer that were used.
 ### Return value
 Type: HRESULT
   
-Result code for this API operation.
+Result code for this API operation. If the service call is unsuccessful, the result will be E_PF_CLOUD_SCRIPT_AZURE_FUNCTIONS_ARGUMENT_SIZE_EXCEEDED, E_PF_CLOUD_SCRIPT_AZURE_FUNCTIONS_EXECUTION_TIME_LIMIT_EXCEEDED, E_PF_CLOUD_SCRIPT_AZURE_FUNCTIONS_HTTP_REQUEST_ERROR, E_PF_CLOUD_SCRIPT_AZURE_FUNCTIONS_QUEUE_REQUEST_ERROR, E_PF_CLOUD_SCRIPT_AZURE_FUNCTIONS_RETURN_SIZE_EXCEEDED, E_PF_INVALID_ENTITY_TYPE or any of the global PlayFab Service errors. See doc page "Handling PlayFab Errors" for more details on error handling.
   
 ## Remarks  
   

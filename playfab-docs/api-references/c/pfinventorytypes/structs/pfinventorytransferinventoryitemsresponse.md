@@ -5,7 +5,7 @@ description: "PFInventoryTransferInventoryItemsResponse data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFInventoryTransferInventoryItemsResponse  
@@ -30,10 +30,10 @@ typedef struct PFInventoryTransferInventoryItemsResponse {
 **`givingETag`** &nbsp; const char*  
 *is null-terminated*  
   
-(Optional) ETags are used for concurrency checking when updating resources (after transferring from).
+(Optional) ETags are used for concurrency checking when updating resources (after transferring from). More information about using ETags can be found here: https://learn.microsoft.com/gaming/playfab/features/economy-v2/catalog/etags.
   
 **`givingTransactionIds`** &nbsp; const char* const*  
-*array of size `givingTransactionIdsCount`*  
+*may be nullptr*  
   
 (Optional) The ids of transactions that occurred as a result of the request's giving action.
   
@@ -47,7 +47,7 @@ Count of givingTransactionIds
 (Optional) The idempotency id for the request.
   
 **`receivingTransactionIds`** &nbsp; const char* const*  
-*array of size `receivingTransactionIdsCount`*  
+*may be nullptr*  
   
 (Optional) The ids of transactions that occurred as a result of the request's receiving action.
   

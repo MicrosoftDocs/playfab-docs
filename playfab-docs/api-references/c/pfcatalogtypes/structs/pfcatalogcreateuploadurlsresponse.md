@@ -5,7 +5,7 @@ description: "PFCatalogCreateUploadUrlsResponse data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFCatalogCreateUploadUrlsResponse  
@@ -24,7 +24,7 @@ typedef struct PFCatalogCreateUploadUrlsResponse {
 ### Members  
   
 **`uploadUrls`** &nbsp; [PFCatalogUploadUrlMetadata](pfcataloguploadurlmetadata.md) const*  
-*array of size `uploadUrlsCount`*  
+*may be nullptr*  
   
 (Optional) List of URLs metadata for the files to be uploaded by the client.
   

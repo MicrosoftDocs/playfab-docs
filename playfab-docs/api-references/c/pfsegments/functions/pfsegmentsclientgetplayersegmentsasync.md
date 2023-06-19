@@ -5,7 +5,7 @@ description: "List all segments that a player currently belongs to at this momen
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFSegmentsClientGetPlayerSegmentsAsync  
@@ -25,7 +25,7 @@ HRESULT PFSegmentsClientGetPlayerSegmentsAsync(
   
 **`entityHandle`** &nbsp; PFEntityHandle  
   
-PFTitlePlayerHandle to use for authentication.  
+PFEntityHandle to use for authentication.  
   
 **`async`** &nbsp; XAsyncBlock*  
 *_Inout_*  
@@ -40,7 +40,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-If successful, call [PFSegmentsClientGetPlayerSegmentsGetResult](pfsegmentsclientgetplayersegmentsgetresult.md) to get the result.
+When the asynchronous task is complete, call [PFSegmentsClientGetPlayerSegmentsGetResultSize](pfsegmentsclientgetplayersegmentsgetresultsize.md) and [PFSegmentsClientGetPlayerSegmentsGetResult](pfsegmentsclientgetplayersegmentsgetresult.md) to get the result.
   
 ## Requirements  
   

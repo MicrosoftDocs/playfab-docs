@@ -24,6 +24,8 @@
     href: pfdatatypes/pfdatatypes_members.md
   - name: PFEntity
     href: pfentity/pfentity_members.md
+  - name: PFEventPipeline
+    href: pfeventpipeline/pfeventpipeline_members.md
   - name: PFEvents
     href: pfevents/pfevents_members.md
   - name: PFEventsTypes
@@ -104,18 +106,46 @@
     href: pfaccountmanagement/functions/pfaccountmanagementclientgetplayfabidsfromxboxliveidsgetresult.md
   - name: PFAccountManagementClientGetPlayFabIDsFromXboxLiveIDsGetResultSize
     href: pfaccountmanagement/functions/pfaccountmanagementclientgetplayfabidsfromxboxliveidsgetresultsize.md
+  - name: PFAccountManagementClientLinkCustomIDAsync
+    href: pfaccountmanagement/functions/pfaccountmanagementclientlinkcustomidasync.md
+  - name: PFAccountManagementClientLinkOpenIdConnectAsync
+    href: pfaccountmanagement/functions/pfaccountmanagementclientlinkopenidconnectasync.md
+  - name: PFAccountManagementClientLinkXboxAccountAsync
+    href: pfaccountmanagement/functions/pfaccountmanagementclientlinkxboxaccountasync.md
   - name: PFAccountManagementClientReportPlayerAsync
     href: pfaccountmanagement/functions/pfaccountmanagementclientreportplayerasync.md
   - name: PFAccountManagementClientReportPlayerGetResult
     href: pfaccountmanagement/functions/pfaccountmanagementclientreportplayergetresult.md
+  - name: PFAccountManagementClientUnlinkCustomIDAsync
+    href: pfaccountmanagement/functions/pfaccountmanagementclientunlinkcustomidasync.md
+  - name: PFAccountManagementClientUnlinkOpenIdConnectAsync
+    href: pfaccountmanagement/functions/pfaccountmanagementclientunlinkopenidconnectasync.md
+  - name: PFAccountManagementClientUnlinkXboxAccountAsync
+    href: pfaccountmanagement/functions/pfaccountmanagementclientunlinkxboxaccountasync.md
   - name: PFAccountManagementClientUpdateAvatarUrlAsync
     href: pfaccountmanagement/functions/pfaccountmanagementclientupdateavatarurlasync.md
+  - name: PFAuthenticationLoginWithCustomIDAsync
+    href: pfauthentication/functions/pfauthenticationloginwithcustomidasync.md
+  - name: PFAuthenticationLoginWithCustomIDGetResult
+    href: pfauthentication/functions/pfauthenticationloginwithcustomidgetresult.md
+  - name: PFAuthenticationLoginWithCustomIDGetResultSize
+    href: pfauthentication/functions/pfauthenticationloginwithcustomidgetresultsize.md
+  - name: PFAuthenticationLoginWithOpenIdConnectAsync
+    href: pfauthentication/functions/pfauthenticationloginwithopenidconnectasync.md
+  - name: PFAuthenticationLoginWithOpenIdConnectGetResult
+    href: pfauthentication/functions/pfauthenticationloginwithopenidconnectgetresult.md
+  - name: PFAuthenticationLoginWithOpenIdConnectGetResultSize
+    href: pfauthentication/functions/pfauthenticationloginwithopenidconnectgetresultsize.md
   - name: PFAuthenticationLoginWithXUserAsync
     href: pfauthentication/functions/pfauthenticationloginwithxuserasync.md
   - name: PFAuthenticationLoginWithXUserGetResult
     href: pfauthentication/functions/pfauthenticationloginwithxusergetresult.md
   - name: PFAuthenticationLoginWithXUserGetResultSize
     href: pfauthentication/functions/pfauthenticationloginwithxusergetresultsize.md
+  - name: PFAuthenticationReLoginWithCustomIDAsync
+    href: pfauthentication/functions/pfauthenticationreloginwithcustomidasync.md
+  - name: PFAuthenticationReLoginWithOpenIdConnectAsync
+    href: pfauthentication/functions/pfauthenticationreloginwithopenidconnectasync.md
   - name: PFAuthenticationReLoginWithXUserAsync
     href: pfauthentication/functions/pfauthenticationreloginwithxuserasync.md
   - name: PFCatalogCreateDraftItemAsync
@@ -298,6 +328,28 @@
     href: pfentity/functions/pfentityunregistertokenexpiredeventhandler.md
   - name: PFEntityUnregisterTokenRefreshedEventHandler
     href: pfentity/functions/pfentityunregistertokenrefreshedeventhandler.md
+  - name: PFEventPipelineAddUploadingEntity
+    href: pfeventpipeline/functions/pfeventpipelineadduploadingentity.md
+  - name: PFEventPipelineBatchUploadFailedEventHandler
+    href: pfeventpipeline/functions/pfeventpipelinebatchuploadfailedeventhandler.md
+  - name: PFEventPipelineBatchUploadSucceededEventHandler
+    href: pfeventpipeline/functions/pfeventpipelinebatchuploadsucceededeventhandler.md
+  - name: PFEventPipelineCloseHandle
+    href: pfeventpipeline/functions/pfeventpipelineclosehandle.md
+  - name: PFEventPipelineCreatePlayStreamPipelineHandle
+    href: pfeventpipeline/functions/pfeventpipelinecreateplaystreampipelinehandle.md
+  - name: PFEventPipelineCreateTelemetryPipelineHandleWithEntity
+    href: pfeventpipeline/functions/pfeventpipelinecreatetelemetrypipelinehandlewithentity.md
+  - name: PFEventPipelineCreateTelemetryPipelineHandleWithKey
+    href: pfeventpipeline/functions/pfeventpipelinecreatetelemetrypipelinehandlewithkey.md
+  - name: PFEventPipelineDuplicateHandle
+    href: pfeventpipeline/functions/pfeventpipelineduplicatehandle.md
+  - name: PFEventPipelineEmitEvent
+    href: pfeventpipeline/functions/pfeventpipelineemitevent.md
+  - name: PFEventPipelineRemoveUploadingEntity
+    href: pfeventpipeline/functions/pfeventpipelineremoveuploadingentity.md
+  - name: PFEventPipelineUpdateConfiguration
+    href: pfeventpipeline/functions/pfeventpipelineupdateconfiguration.md
   - name: PFEventsWriteEventsAsync
     href: pfevents/functions/pfeventswriteeventsasync.md
   - name: PFEventsWriteEventsGetResult
@@ -444,12 +496,8 @@
     href: pfhctrace/functions/pfhctraceimplmessage.md
   - name: PFHCTraceImplSetAreaVerbosity
     href: pfhctrace/functions/pfhctraceimplsetareaverbosity.md
-  - name: PFHCTraceSetClientCallback
-    href: pfhctrace/functions/pfhctracesetclientcallback.md
   - name: PFHCTraceSetPlatformCallbacks
     href: pfhctrace/functions/pfhctracesetplatformcallbacks.md
-  - name: PFHCTraceSetTraceToDebugger
-    href: pfhctrace/functions/pfhctracesettracetodebugger.md
   - name: PFHCGetLibVersion
     href: pfhttpclient/functions/pfhcgetlibversion.md
   - name: PFHCGetWebSocketConnectResult
@@ -728,10 +776,6 @@
     href: pfserviceconfig/functions/pfserviceconfiggetapiendpoint.md
   - name: PFServiceConfigGetAPIEndpointSize
     href: pfserviceconfig/functions/pfserviceconfiggetapiendpointsize.md
-  - name: PFServiceConfigGetSecretKey
-    href: pfserviceconfig/functions/pfserviceconfiggetsecretkey.md
-  - name: PFServiceConfigGetSecretKeySize
-    href: pfserviceconfig/functions/pfserviceconfiggetsecretkeysize.md
   - name: PFServiceConfigGetTitleId
     href: pfserviceconfig/functions/pfserviceconfiggettitleid.md
   - name: PFServiceConfigGetTitleIdSize
@@ -816,6 +860,10 @@
     href: pftypes/enums/pfuserorigination.md
 - name: Structures
   items:
+  - name: PFAccountManagementClientLinkXboxAccountRequest
+    href: pfaccountmanagementtypes/structs/pfaccountmanagementclientlinkxboxaccountrequest.md
+  - name: PFAccountManagementClientUnlinkXboxAccountRequest
+    href: pfaccountmanagementtypes/structs/pfaccountmanagementclientunlinkxboxaccountrequest.md
   - name: PFAccountManagementClientUpdateAvatarUrlRequest
     href: pfaccountmanagementtypes/structs/pfaccountmanagementclientupdateavatarurlrequest.md
   - name: PFAccountManagementGetAccountInfoRequest
@@ -834,14 +882,26 @@
     href: pfaccountmanagementtypes/structs/pfaccountmanagementgetplayfabidsfromxboxliveidsrequest.md
   - name: PFAccountManagementGetPlayFabIDsFromXboxLiveIDsResult
     href: pfaccountmanagementtypes/structs/pfaccountmanagementgetplayfabidsfromxboxliveidsresult.md
+  - name: PFAccountManagementLinkCustomIDRequest
+    href: pfaccountmanagementtypes/structs/pfaccountmanagementlinkcustomidrequest.md
+  - name: PFAccountManagementLinkOpenIdConnectRequest
+    href: pfaccountmanagementtypes/structs/pfaccountmanagementlinkopenidconnectrequest.md
   - name: PFAccountManagementReportPlayerClientRequest
     href: pfaccountmanagementtypes/structs/pfaccountmanagementreportplayerclientrequest.md
   - name: PFAccountManagementReportPlayerClientResult
     href: pfaccountmanagementtypes/structs/pfaccountmanagementreportplayerclientresult.md
+  - name: PFAccountManagementUnlinkCustomIDRequest
+    href: pfaccountmanagementtypes/structs/pfaccountmanagementunlinkcustomidrequest.md
+  - name: PFAccountManagementUnlinkOpenIdConnectRequest
+    href: pfaccountmanagementtypes/structs/pfaccountmanagementunlinkopenidconnectrequest.md
   - name: PFAccountManagementXboxLiveAccountPlayFabIdPair
     href: pfaccountmanagementtypes/structs/pfaccountmanagementxboxliveaccountplayfabidpair.md
   - name: PFAuthenticationLoginResult
     href: pfauthenticationtypes/structs/pfauthenticationloginresult.md
+  - name: PFAuthenticationLoginWithCustomIDRequest
+    href: pfauthenticationtypes/structs/pfauthenticationloginwithcustomidrequest.md
+  - name: PFAuthenticationLoginWithOpenIdConnectRequest
+    href: pfauthenticationtypes/structs/pfauthenticationloginwithopenidconnectrequest.md
   - name: PFAuthenticationLoginWithXUserRequest
     href: pfauthenticationtypes/structs/pfauthenticationloginwithxuserrequest.md
   - name: PFAuthenticationUserSettings
@@ -1020,6 +1080,14 @@
     href: pfdatatypes/structs/pfdatasetobjectsresponse.md
   - name: PFEntityToken
     href: pfentity/structs/pfentitytoken.md
+  - name: PFEvent
+    href: pfeventpipeline/structs/pfevent.md
+  - name: PFEventPipelineConfig
+    href: pfeventpipeline/structs/pfeventpipelineconfig.md
+  - name: PFEventPipelineTelemetryKeyConfig
+    href: pfeventpipeline/structs/pfeventpipelinetelemetrykeyconfig.md
+  - name: PFUploadedEvent
+    href: pfeventpipeline/structs/pfuploadedevent.md
   - name: PFEventsEventContents
     href: pfeventstypes/structs/pfeventseventcontents.md
   - name: PFEventsWriteEventsRequest
@@ -1370,6 +1438,8 @@
     href: pftypes/structs/pfentitykeydictionaryentry.md
   - name: PFEntityLineage
     href: pftypes/structs/pfentitylineage.md
+  - name: PFEntityLineageDictionaryEntry
+    href: pftypes/structs/pfentitylineagedictionaryentry.md
   - name: PFGetPlayerCombinedInfoRequestParams
     href: pftypes/structs/pfgetplayercombinedinforequestparams.md
   - name: PFGetPlayerCombinedInfoResultPayload

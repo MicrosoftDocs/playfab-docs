@@ -1,16 +1,16 @@
 ---
 author: jasonsandlin
 title: "PFCatalogGetItemReviewsAsync"
-description: "Get a paginated set of reviews associated with the specified item."
+description: "Get a paginated set of reviews associated with the specified item. Individual ratings and reviews data update in near real time with delays within a few seconds."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFCatalogGetItemReviewsAsync  
 
-Get a paginated set of reviews associated with the specified item.  
+Get a paginated set of reviews associated with the specified item. Individual ratings and reviews data update in near real time with delays within a few seconds.  
 
 ## Syntax  
   
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-If successful, call [PFCatalogGetItemReviewsGetResult](pfcataloggetitemreviewsgetresult.md) to get the result.
+When the asynchronous task is complete, call [PFCatalogGetItemReviewsGetResultSize](pfcataloggetitemreviewsgetresultsize.md) and [PFCatalogGetItemReviewsGetResult](pfcataloggetitemreviewsgetresult.md) to get the result.
   
 ## Requirements  
   

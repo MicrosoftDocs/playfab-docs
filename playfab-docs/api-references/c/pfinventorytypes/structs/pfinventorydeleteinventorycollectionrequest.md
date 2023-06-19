@@ -5,7 +5,7 @@ description: "PFInventoryDeleteInventoryCollectionRequest data model. Delete an 
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFInventoryDeleteInventoryCollectionRequest  
@@ -17,6 +17,7 @@ PFInventoryDeleteInventoryCollectionRequest data model. Delete an Inventory Coll
 ```cpp
 typedef struct PFInventoryDeleteInventoryCollectionRequest {  
     const char* collectionId;  
+    PFStringDictionaryEntry const* customTags;  
     uint32_t customTagsCount;  
     PFEntityKey const* entity;  
     const char* eTag;  
@@ -30,10 +31,14 @@ typedef struct PFInventoryDeleteInventoryCollectionRequest {
   
 (Optional) The inventory collection id the request applies to.
   
-**`customTagsCount`** &nbsp; uint32_t  
-*array of size `customTagsCount`*  
+**`customTags`** &nbsp; [PFStringDictionaryEntry](../../pftypes/structs/pfstringdictionaryentry.md) const*  
+*may be nullptr*  
   
 (Optional) The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
+  
+**`customTagsCount`** &nbsp; uint32_t  
+  
+Count of customTags
   
 **`entity`** &nbsp; [PFEntityKey](../../pftypes/structs/pfentitykey-c.md) const*  
 *may be nullptr*  
@@ -43,7 +48,7 @@ typedef struct PFInventoryDeleteInventoryCollectionRequest {
 **`eTag`** &nbsp; const char*  
 *is null-terminated*  
   
-(Optional) ETags are used for concurrency checking when updating resources.
+(Optional) ETags are used for concurrency checking when updating resources. More information about using ETags can be found here: https://learn.microsoft.com/gaming/playfab/features/economy-v2/catalog/etags.
   
   
 ## Requirements  

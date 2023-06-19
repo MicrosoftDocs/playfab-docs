@@ -5,7 +5,7 @@ description: "PFPlayerDataManagementClientGetUserDataResult data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFPlayerDataManagementClientGetUserDataResult  
@@ -16,6 +16,7 @@ PFPlayerDataManagementClientGetUserDataResult data model.
   
 ```cpp
 typedef struct PFPlayerDataManagementClientGetUserDataResult {  
+    PFUserDataRecordDictionaryEntry const* data;  
     uint32_t dataCount;  
     uint32_t dataVersion;  
 } PFPlayerDataManagementClientGetUserDataResult;  
@@ -23,10 +24,14 @@ typedef struct PFPlayerDataManagementClientGetUserDataResult {
   
 ### Members  
   
-**`dataCount`** &nbsp; uint32_t  
-*array of size `dataCount`*  
+**`data`** &nbsp; [PFUserDataRecordDictionaryEntry](../../pftypes/structs/pfuserdatarecorddictionaryentry.md) const*  
+*may be nullptr*  
   
 (Optional) User specific data for this title.
+  
+**`dataCount`** &nbsp; uint32_t  
+  
+Count of data
   
 **`dataVersion`** &nbsp; uint32_t  
   
