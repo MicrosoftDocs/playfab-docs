@@ -5,7 +5,7 @@ description: "PFCatalogGetItemReviewsResponse data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFCatalogGetItemReviewsResponse  
@@ -30,7 +30,7 @@ typedef struct PFCatalogGetItemReviewsResponse {
 (Optional) An opaque token used to retrieve the next page of items, if any are available.
   
 **`reviews`** &nbsp; [PFCatalogReview](pfcatalogreview.md) const*  
-*array of size `reviewsCount`*  
+*may be nullptr*  
   
 (Optional) The paginated set of results.
   

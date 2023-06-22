@@ -1,16 +1,16 @@
 ---
 author: jasonsandlin
 title: "PFCatalogGetDraftItemAsync"
-description: "Retrieves an item from the working catalog. This item represents the current working state of the item."
+description: "Retrieves an item from the working catalog. This item represents the current working state of the item. GetDraftItem does not work off a cache of the Catalog and should be used when trying to get recent item updates. However, please note that item references data is cached and may take a few moments for changes to propagate."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFCatalogGetDraftItemAsync  
 
-Retrieves an item from the working catalog. This item represents the current working state of the item.  
+Retrieves an item from the working catalog. This item represents the current working state of the item. GetDraftItem does not work off a cache of the Catalog and should be used when trying to get recent item updates. However, please note that item references data is cached and may take a few moments for changes to propagate.  
 
 ## Syntax  
   
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-If successful, call [PFCatalogGetDraftItemGetResult](pfcataloggetdraftitemgetresult.md) to get the result.
+When the asynchronous task is complete, call [PFCatalogGetDraftItemGetResultSize](pfcataloggetdraftitemgetresultsize.md) and [PFCatalogGetDraftItemGetResult](pfcataloggetdraftitemgetresult.md) to get the result.
   
 ## Requirements  
   

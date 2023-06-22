@@ -5,7 +5,7 @@ description: "PFMultiplayerServerBuildSelectionCriterion data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFMultiplayerServerBuildSelectionCriterion  
@@ -16,16 +16,21 @@ PFMultiplayerServerBuildSelectionCriterion data model.
   
 ```cpp
 typedef struct PFMultiplayerServerBuildSelectionCriterion {  
+    PFUint32DictionaryEntry const* buildWeightDistribution;  
     uint32_t buildWeightDistributionCount;  
 } PFMultiplayerServerBuildSelectionCriterion;  
 ```
   
 ### Members  
   
-**`buildWeightDistributionCount`** &nbsp; uint32_t  
-*array of size `buildWeightDistributionCount`*  
+**`buildWeightDistribution`** &nbsp; [PFUint32DictionaryEntry](../../pftypes/structs/pfuint32dictionaryentry.md) const*  
+*may be nullptr*  
   
 (Optional) Dictionary of build ids and their respective weights for distribution of allocation requests.
+  
+**`buildWeightDistributionCount`** &nbsp; uint32_t  
+  
+Count of buildWeightDistribution
   
   
 ## Requirements  

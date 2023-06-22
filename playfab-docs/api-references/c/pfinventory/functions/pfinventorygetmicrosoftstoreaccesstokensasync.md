@@ -5,7 +5,7 @@ description: "Gets the access tokens."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFInventoryGetMicrosoftStoreAccessTokensAsync  
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-Gets the access tokens for Microsoft Store authentication. If successful, call [PFInventoryGetMicrosoftStoreAccessTokensGetResult](pfinventorygetmicrosoftstoreaccesstokensgetresult.md) to get the result.
+Gets the access tokens for Microsoft Store authentication. When the asynchronous task is complete, call [PFInventoryGetMicrosoftStoreAccessTokensGetResultSize](pfinventorygetmicrosoftstoreaccesstokensgetresultsize.md) and [PFInventoryGetMicrosoftStoreAccessTokensGetResult](pfinventorygetmicrosoftstoreaccesstokensgetresult.md) to get the result.
   
 ## Requirements  
   

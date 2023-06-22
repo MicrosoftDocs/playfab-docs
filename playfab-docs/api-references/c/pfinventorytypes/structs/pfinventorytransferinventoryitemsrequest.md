@@ -5,7 +5,7 @@ description: "PFInventoryTransferInventoryItemsRequest data model. Transfer the 
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFInventoryTransferInventoryItemsRequest  
@@ -17,6 +17,7 @@ PFInventoryTransferInventoryItemsRequest data model. Transfer the specified inve
 ```cpp
 typedef struct PFInventoryTransferInventoryItemsRequest {  
     int32_t const* amount;  
+    PFStringDictionaryEntry const* customTags;  
     uint32_t customTagsCount;  
     bool deleteEmptyStacks;  
     const char* givingCollectionId;  
@@ -38,10 +39,14 @@ typedef struct PFInventoryTransferInventoryItemsRequest {
   
 (Optional) The amount to transfer .
   
-**`customTagsCount`** &nbsp; uint32_t  
-*array of size `customTagsCount`*  
+**`customTags`** &nbsp; [PFStringDictionaryEntry](../../pftypes/structs/pfstringdictionaryentry.md) const*  
+*may be nullptr*  
   
 (Optional) The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
+  
+**`customTagsCount`** &nbsp; uint32_t  
+  
+Count of customTags
   
 **`deleteEmptyStacks`** &nbsp; bool  
   
@@ -60,7 +65,7 @@ Indicates whether stacks reduced to an amount of 0 during the request should be 
 **`givingETag`** &nbsp; const char*  
 *is null-terminated*  
   
-(Optional) ETags are used for concurrency checking when updating resources (before transferring from).
+(Optional) ETags are used for concurrency checking when updating resources (before transferring from). More information about using ETags can be found here: https://learn.microsoft.com/gaming/playfab/features/economy-v2/catalog/etags.
   
 **`givingItem`** &nbsp; [PFInventoryInventoryItemReference](pfinventoryinventoryitemreference.md) const*  
 *may be nullptr*  

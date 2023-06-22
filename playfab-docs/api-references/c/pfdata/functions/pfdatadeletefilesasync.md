@@ -5,7 +5,7 @@ description: "Delete files on an entity's profile."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFDataDeleteFilesAsync  
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-Deletes the requested files from the entity's profile. See also FileAbortFileUploadsAsync, FileFinalizeFileUploadsAsync, FileGetFilesAsync, FileInitiateFileUploadsAsync. If successful, call [PFDataDeleteFilesGetResult](pfdatadeletefilesgetresult.md) to get the result.
+Deletes the requested files from the entity's profile. See also FileAbortFileUploadsAsync, FileFinalizeFileUploadsAsync, FileGetFilesAsync, FileInitiateFileUploadsAsync. When the asynchronous task is complete, call [PFDataDeleteFilesGetResultSize](pfdatadeletefilesgetresultsize.md) and [PFDataDeleteFilesGetResult](pfdatadeletefilesgetresult.md) to get the result.
   
 ## Requirements  
   

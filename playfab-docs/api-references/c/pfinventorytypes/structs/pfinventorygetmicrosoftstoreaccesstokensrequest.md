@@ -5,7 +5,7 @@ description: "PFInventoryGetMicrosoftStoreAccessTokensRequest data model. Gets t
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFInventoryGetMicrosoftStoreAccessTokensRequest  
@@ -16,16 +16,21 @@ PFInventoryGetMicrosoftStoreAccessTokensRequest data model. Gets the access toke
   
 ```cpp
 typedef struct PFInventoryGetMicrosoftStoreAccessTokensRequest {  
+    PFStringDictionaryEntry const* customTags;  
     uint32_t customTagsCount;  
 } PFInventoryGetMicrosoftStoreAccessTokensRequest;  
 ```
   
 ### Members  
   
-**`customTagsCount`** &nbsp; uint32_t  
-*array of size `customTagsCount`*  
+**`customTags`** &nbsp; [PFStringDictionaryEntry](../../pftypes/structs/pfstringdictionaryentry.md) const*  
+*may be nullptr*  
   
 (Optional) The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
+  
+**`customTagsCount`** &nbsp; uint32_t  
+  
+Count of customTags
   
   
 ## Requirements  

@@ -5,7 +5,7 @@ description: "Adds the PlayFab user, based upon a match against a supplied uniqu
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFFriendsClientAddFriendAsync  
@@ -26,7 +26,7 @@ HRESULT PFFriendsClientAddFriendAsync(
   
 **`entityHandle`** &nbsp; PFEntityHandle  
   
-PFTitlePlayerHandle to use for authentication.  
+PFEntityHandle to use for authentication.  
   
 **`request`** &nbsp; [PFFriendsClientAddFriendRequest*](../../pffriendstypes/structs/pffriendsclientaddfriendrequest.md)  
   
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-See also ClientGetFriendsListAsync, ClientSetFriendTagsAsync. If successful, call [PFFriendsClientAddFriendGetResult](pffriendsclientaddfriendgetresult.md) to get the result.
+See also ClientGetFriendsListAsync, ClientSetFriendTagsAsync. When the asynchronous task is complete, call [PFFriendsClientAddFriendGetResult](pffriendsclientaddfriendgetresult.md) to get the result.
   
 ## Requirements  
   

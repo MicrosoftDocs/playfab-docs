@@ -5,7 +5,7 @@ description: "PFCatalogFilterOptions data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFCatalogFilterOptions  
@@ -26,7 +26,7 @@ typedef struct PFCatalogFilterOptions {
 **`filter`** &nbsp; const char*  
 *is null-terminated*  
   
-(Optional) The OData filter utilized. Mutually exclusive with 'IncludeAllItems'.
+(Optional) The OData filter utilized. Mutually exclusive with 'IncludeAllItems'. More info about Filter Complexity limits can be found here: https://learn.microsoft.com/gaming/playfab/features/economy-v2/catalog/search#limits.
   
 **`includeAllItems`** &nbsp; bool const*  
 *may be nullptr*  

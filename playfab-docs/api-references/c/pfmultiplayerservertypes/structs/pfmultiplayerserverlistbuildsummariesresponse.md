@@ -5,7 +5,7 @@ description: "PFMultiplayerServerListBuildSummariesResponse data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFMultiplayerServerListBuildSummariesResponse  
@@ -26,7 +26,7 @@ typedef struct PFMultiplayerServerListBuildSummariesResponse {
 ### Members  
   
 **`buildSummaries`** &nbsp; [PFMultiplayerServerBuildSummary](pfmultiplayerserverbuildsummary.md) const*  
-*array of size `buildSummariesCount`*  
+*may be nullptr*  
   
 (Optional) The list of build summaries for a title.
   

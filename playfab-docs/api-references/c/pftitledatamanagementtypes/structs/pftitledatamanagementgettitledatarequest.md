@@ -5,7 +5,7 @@ description: "PFTitleDataManagementGetTitleDataRequest data model. This API is d
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFTitleDataManagementGetTitleDataRequest  
@@ -25,7 +25,7 @@ typedef struct PFTitleDataManagementGetTitleDataRequest {
 ### Members  
   
 **`keys`** &nbsp; const char* const*  
-*array of size `keysCount`*  
+*may be nullptr*  
   
 (Optional) Specific keys to search for in the title data (leave null to get all keys).
   

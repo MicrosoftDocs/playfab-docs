@@ -5,7 +5,7 @@ description: "PFGroupsGroupBlock data model. Describes an entity that is blocked
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFGroupsGroupBlock  

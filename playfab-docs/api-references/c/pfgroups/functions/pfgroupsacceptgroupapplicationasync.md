@@ -5,7 +5,7 @@ description: "Accepts an outstanding invitation to to join a group"
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFGroupsAcceptGroupApplicationAsync  
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-Accepts an outstanding invitation to to join a group if the invited entity is not blocked by the group. Nothing is returned in the case of success. See also GroupApplyToGroupAsync, GroupListGroupApplicationsAsync, GroupRemoveGroupApplicationAsync. Call XAsyncGetStatus to get the status of the operation.
+Accepts an outstanding invitation to to join a group if the invited entity is not blocked by the group. Nothing is returned in the case of success. See also GroupApplyToGroupAsync, GroupListGroupApplicationsAsync, GroupRemoveGroupApplicationAsync. Call XAsyncGetStatus to get the status of the operation. If the service call is unsuccessful, the async result will be E_PF_ENTITY_BLOCKED_BY_GROUP, E_PF_ENTITY_IS_ALREADY_MEMBER, E_PF_GROUP_APPLICATION_NOT_FOUND or any of the global PlayFab Service errors. See doc page "Handling PlayFab Errors" for more details on error handling.
   
 ## Requirements  
   

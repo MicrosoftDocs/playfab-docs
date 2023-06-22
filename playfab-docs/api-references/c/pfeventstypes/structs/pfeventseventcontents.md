@@ -5,7 +5,7 @@ description: "PFEventsEventContents data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFEventsEventContents  
@@ -16,6 +16,7 @@ PFEventsEventContents data model.
   
 ```cpp
 typedef struct PFEventsEventContents {  
+    PFStringDictionaryEntry const* customTags;  
     uint32_t customTagsCount;  
     PFEntityKey const* entity;  
     const char* eventNamespace;  
@@ -29,10 +30,14 @@ typedef struct PFEventsEventContents {
   
 ### Members  
   
-**`customTagsCount`** &nbsp; uint32_t  
-*array of size `customTagsCount`*  
+**`customTags`** &nbsp; PFStringDictionaryEntry const*  
+*may be nullptr*  
   
 (Optional) The optional custom tags associated with the event (e.g. build number, external trace identifiers, etc.). Before an event is written, this collection and the base request custom tags will be merged, but not overriden. This enables the caller to specify static tags and per event tags.
+  
+**`customTagsCount`** &nbsp; uint32_t  
+  
+Count of customTags
   
 **`entity`** &nbsp; PFEntityKey const*  
 *may be nullptr*  

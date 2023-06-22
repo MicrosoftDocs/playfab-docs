@@ -5,7 +5,7 @@ description: "PFProfilesSetEntityProfilePolicyResponse data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFProfilesSetEntityProfilePolicyResponse  
@@ -24,7 +24,7 @@ typedef struct PFProfilesSetEntityProfilePolicyResponse {
 ### Members  
   
 **`permissions`** &nbsp; [PFProfilesEntityPermissionStatement](pfprofilesentitypermissionstatement.md) const*  
-*array of size `permissionsCount`*  
+*may be nullptr*  
   
 (Optional) The permissions that govern access to this entity profile and its properties. Only includes permissions set on this profile, not global statements from titles and namespaces.
   

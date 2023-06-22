@@ -5,7 +5,7 @@ description: "PFProfilesGetEntityProfilesRequest data model. Given a set of enti
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFProfilesGetEntityProfilesRequest  
@@ -16,6 +16,7 @@ PFProfilesGetEntityProfilesRequest data model. Given a set of entity types and e
   
 ```cpp
 typedef struct PFProfilesGetEntityProfilesRequest {  
+    PFStringDictionaryEntry const* customTags;  
     uint32_t customTagsCount;  
     bool const* dataAsObject;  
     PFEntityKey const* entities;  
@@ -25,10 +26,14 @@ typedef struct PFProfilesGetEntityProfilesRequest {
   
 ### Members  
   
-**`customTagsCount`** &nbsp; uint32_t  
-*array of size `customTagsCount`*  
+**`customTags`** &nbsp; [PFStringDictionaryEntry](../../pftypes/structs/pfstringdictionaryentry.md) const*  
+*may be nullptr*  
   
 (Optional) The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
+  
+**`customTagsCount`** &nbsp; uint32_t  
+  
+Count of customTags
   
 **`dataAsObject`** &nbsp; bool const*  
 *may be nullptr*  
@@ -36,7 +41,6 @@ typedef struct PFProfilesGetEntityProfilesRequest {
 (Optional) Determines whether the objects will be returned as an escaped JSON string or as a un-escaped JSON object. Default is JSON string.
   
 **`entities`** &nbsp; [PFEntityKey](../../pftypes/structs/pfentitykey-c.md) const*  
-*array of size `entitiesCount`*  
   
 Entity keys of the profiles to load. Must be between 1 and 25.
   

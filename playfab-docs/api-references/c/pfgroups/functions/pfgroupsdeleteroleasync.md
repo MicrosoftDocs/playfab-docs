@@ -5,7 +5,7 @@ description: "Deletes an existing role in a group."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFGroupsDeleteRoleAsync  
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-Returns information about the role See also GroupCreateRoleAsync. Call XAsyncGetStatus to get the status of the operation.
+Returns information about the role. Call XAsyncGetStatus to get the status of the operation. If the service call is unsuccessful, the async result will be E_PF_ROLE_DOES_NOT_EXIST, E_PF_ROLE_IS_GROUP_ADMIN, E_PF_ROLE_IS_GROUP_DEFAULT_MEMBER or any of the global PlayFab Service errors. See doc page "Handling PlayFab Errors" for more details on error handling.
   
 ## Requirements  
   

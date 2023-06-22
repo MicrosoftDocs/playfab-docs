@@ -5,7 +5,7 @@ description: "PFInventoryGetInventoryCollectionIdsResponse data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFInventoryGetInventoryCollectionIdsResponse  
@@ -25,7 +25,7 @@ typedef struct PFInventoryGetInventoryCollectionIdsResponse {
 ### Members  
   
 **`collectionIds`** &nbsp; const char* const*  
-*array of size `collectionIdsCount`*  
+*may be nullptr*  
   
 (Optional) The requested inventory collection ids.
   

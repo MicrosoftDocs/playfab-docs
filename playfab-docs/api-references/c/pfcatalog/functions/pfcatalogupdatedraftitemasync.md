@@ -5,7 +5,7 @@ description: "Update the metadata for an item in the working catalog."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFCatalogUpdateDraftItemAsync  
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-If successful, call [PFCatalogUpdateDraftItemGetResult](pfcatalogupdatedraftitemgetresult.md) to get the result.
+When the asynchronous task is complete, call [PFCatalogUpdateDraftItemGetResultSize](pfcatalogupdatedraftitemgetresultsize.md) and [PFCatalogUpdateDraftItemGetResult](pfcatalogupdatedraftitemgetresult.md) to get the result.
   
 ## Requirements  
   

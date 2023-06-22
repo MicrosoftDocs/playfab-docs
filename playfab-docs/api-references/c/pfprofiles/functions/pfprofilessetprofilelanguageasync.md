@@ -5,7 +5,7 @@ description: "Updates the entity's language. The precedence hierarchy for commun
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFProfilesSetProfileLanguageAsync  
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-Given an entity profile, will update its language to the one passed in if the profile's version is equal to the one passed in. If successful, call [PFProfilesSetProfileLanguageGetResult](pfprofilessetprofilelanguagegetresult.md) to get the result.
+Given an entity profile, will update its language to the one passed in if the profile's version is equal to the one passed in. When the asynchronous task is complete, call [PFProfilesSetProfileLanguageGetResultSize](pfprofilessetprofilelanguagegetresultsize.md) and [PFProfilesSetProfileLanguageGetResult](pfprofilessetprofilelanguagegetresult.md) to get the result.
   
 ## Requirements  
   

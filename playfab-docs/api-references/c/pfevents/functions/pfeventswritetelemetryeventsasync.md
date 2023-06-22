@@ -5,7 +5,7 @@ description: "Write batches of entity based events to as Telemetry events (bypas
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFEventsWriteTelemetryEventsAsync  
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-If successful, call [PFEventsWriteTelemetryEventsGetResult](pfeventswritetelemetryeventsgetresult.md) to get the result.
+When the asynchronous task is complete, call [PFEventsWriteTelemetryEventsGetResultSize](pfeventswritetelemetryeventsgetresultsize.md) and [PFEventsWriteTelemetryEventsGetResult](pfeventswritetelemetryeventsgetresult.md) to get the result.
   
 ## Requirements  
   

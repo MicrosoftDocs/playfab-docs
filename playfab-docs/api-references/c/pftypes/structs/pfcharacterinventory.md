@@ -5,7 +5,7 @@ description: "PFCharacterInventory data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFCharacterInventory  
@@ -30,7 +30,7 @@ typedef struct PFCharacterInventory {
 (Optional) The id of this character.
   
 **`inventory`** &nbsp; [PFItemInstance](pfiteminstance.md) const*  
-*array of size `inventoryCount`*  
+*may be nullptr*  
   
 (Optional) The inventory of this character.
   

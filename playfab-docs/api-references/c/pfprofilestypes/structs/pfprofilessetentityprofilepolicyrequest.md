@@ -5,7 +5,7 @@ description: "PFProfilesSetEntityProfilePolicyRequest data model. This will set 
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFProfilesSetEntityProfilePolicyRequest  
@@ -16,6 +16,7 @@ PFProfilesSetEntityProfilePolicyRequest data model. This will set the access pol
   
 ```cpp
 typedef struct PFProfilesSetEntityProfilePolicyRequest {  
+    PFStringDictionaryEntry const* customTags;  
     uint32_t customTagsCount;  
     PFEntityKey const* entity;  
     PFProfilesEntityPermissionStatement const* statements;  
@@ -25,17 +26,20 @@ typedef struct PFProfilesSetEntityProfilePolicyRequest {
   
 ### Members  
   
-**`customTagsCount`** &nbsp; uint32_t  
-*array of size `customTagsCount`*  
+**`customTags`** &nbsp; [PFStringDictionaryEntry](../../pftypes/structs/pfstringdictionaryentry.md) const*  
+*may be nullptr*  
   
 (Optional) The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
+  
+**`customTagsCount`** &nbsp; uint32_t  
+  
+Count of customTags
   
 **`entity`** &nbsp; [PFEntityKey](../../pftypes/structs/pfentitykey-c.md) const*  
   
 The entity to perform this action on.
   
 **`statements`** &nbsp; [PFProfilesEntityPermissionStatement](pfprofilesentitypermissionstatement.md) const*  
-*array of size `statementsCount`*  
   
 The statements to include in the access policy.
   

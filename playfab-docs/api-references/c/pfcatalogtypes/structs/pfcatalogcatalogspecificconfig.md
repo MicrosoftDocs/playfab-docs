@@ -5,7 +5,7 @@ description: "PFCatalogCatalogSpecificConfig data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFCatalogCatalogSpecificConfig  
@@ -26,18 +26,18 @@ typedef struct PFCatalogCatalogSpecificConfig {
 ### Members  
   
 **`contentTypes`** &nbsp; const char* const*  
-*array of size `contentTypesCount`*  
+*may be nullptr*  
   
-(Optional) The set of content types that will be used for validation.
+(Optional) The set of content types that will be used for validation. Each content type can have a maximum character length of 40 and up to 128 types can be listed.
   
 **`contentTypesCount`** &nbsp; uint32_t  
   
 Count of contentTypes
   
 **`tags`** &nbsp; const char* const*  
-*array of size `tagsCount`*  
+*may be nullptr*  
   
-(Optional) The set of tags that will be used for validation.
+(Optional) The set of tags that will be used for validation. Each tag can have a maximum character length of 32 and up to 1024 tags can be listed.
   
 **`tagsCount`** &nbsp; uint32_t  
   

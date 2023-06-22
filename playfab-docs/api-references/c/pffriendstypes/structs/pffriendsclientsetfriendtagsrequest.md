@@ -5,7 +5,7 @@ description: "PFFriendsClientSetFriendTagsRequest data model. This operation is 
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFFriendsClientSetFriendTagsRequest  
@@ -30,7 +30,6 @@ typedef struct PFFriendsClientSetFriendTagsRequest {
 PlayFab identifier of the friend account to which the tag(s) should be applied.
   
 **`tags`** &nbsp; const char* const*  
-*array of size `tagsCount`*  
   
 Array of tags to set on the friend account.
   

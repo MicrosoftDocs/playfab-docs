@@ -5,7 +5,7 @@ description: "Gets the result of a successful PFGroupsApplyToGroupAsync call."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFGroupsApplyToGroupGetResult  
@@ -54,7 +54,7 @@ The number of bytes in the provided buffer that were used.
 ### Return value
 Type: HRESULT
   
-Result code for this API operation.
+Result code for this API operation. If the service call is unsuccessful, the result will be E_PF_ENTITY_BLOCKED_BY_GROUP, E_PF_ENTITY_IS_ALREADY_MEMBER, E_PF_OUTSTANDING_INVITATION_ACCEPTED_INSTEAD or any of the global PlayFab Service errors. See doc page "Handling PlayFab Errors" for more details on error handling.
   
 ## Remarks  
   

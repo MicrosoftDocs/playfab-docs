@@ -5,7 +5,7 @@ description: "PFGroupsListMembershipResponse data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFGroupsListMembershipResponse  
@@ -24,7 +24,7 @@ typedef struct PFGroupsListMembershipResponse {
 ### Members  
   
 **`groups`** &nbsp; [PFGroupsGroupWithRoles](pfgroupsgroupwithroles.md) const*  
-*array of size `groupsCount`*  
+*may be nullptr*  
   
 (Optional) The list of groups.
   

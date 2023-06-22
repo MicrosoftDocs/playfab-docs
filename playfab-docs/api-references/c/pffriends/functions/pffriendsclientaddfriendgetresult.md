@@ -5,7 +5,7 @@ description: "Gets the result of a successful PFFriendsClientAddFriendAsync call
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFFriendsClientAddFriendGetResult  
@@ -37,7 +37,7 @@ PFFriendsAddFriendResult object that will be populated with the result.
 ### Return value
 Type: HRESULT
   
-Result code for this API operation.
+Result code for this API operation. If the service call is unsuccessful, the result will be E_PF_USERS_ALREADY_FRIENDS or any of the global PlayFab Service errors. See doc page "Handling PlayFab Errors" for more details on error handling.
   
   
 ## Requirements  

@@ -5,7 +5,7 @@ description: "Initializes PlayFab Services global state"
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFServicesInitialize  
@@ -16,16 +16,16 @@ Initializes PlayFab Services global state
   
 ```cpp
 HRESULT PFServicesInitialize(  
-    XTaskQueueHandle backgroundQueue  
+    XTaskQueueHandle reserved  
 )  
 ```  
   
 ### Parameters  
   
-**`backgroundQueue`** &nbsp; XTaskQueueHandle  
+**`reserved`** &nbsp; XTaskQueueHandle  
 *optional*  
   
-An XTaskQueue that should be used for background work. If no queue is provided then a default (thread pool) queue will be used.  
+Reserved for future use.  
   
   
 ### Return value
@@ -35,7 +35,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-This will internally call PFInitialize() if it hasn't been called. If PFInitialize() has already been called, then backgroundQueue is ignored.
+This will internally call PFInitialize(nullptr) if it hasn't been called already by the title. If control of PFCore background work is needed, the title should explicitly call PFInitialize and PFUninitialize.
   
 ## Requirements  
   

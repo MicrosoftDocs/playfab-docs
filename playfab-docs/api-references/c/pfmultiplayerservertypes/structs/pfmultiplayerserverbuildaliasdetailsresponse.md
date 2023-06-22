@@ -5,7 +5,7 @@ description: "PFMultiplayerServerBuildAliasDetailsResponse data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFMultiplayerServerBuildAliasDetailsResponse  
@@ -36,7 +36,7 @@ typedef struct PFMultiplayerServerBuildAliasDetailsResponse {
 (Optional) The alias name.
   
 **`buildSelectionCriteria`** &nbsp; [PFMultiplayerServerBuildSelectionCriterion](pfmultiplayerserverbuildselectioncriterion.md) const*  
-*array of size `buildSelectionCriteriaCount`*  
+*may be nullptr*  
   
 (Optional) Array of build selection criteria.
   

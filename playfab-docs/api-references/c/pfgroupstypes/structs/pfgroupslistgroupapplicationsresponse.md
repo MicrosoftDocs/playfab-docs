@@ -5,7 +5,7 @@ description: "PFGroupsListGroupApplicationsResponse data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFGroupsListGroupApplicationsResponse  
@@ -24,7 +24,7 @@ typedef struct PFGroupsListGroupApplicationsResponse {
 ### Members  
   
 **`applications`** &nbsp; [PFGroupsGroupApplication](pfgroupsgroupapplication.md) const*  
-*array of size `applicationsCount`*  
+*may be nullptr*  
   
 (Optional) The requested list of applications to the group.
   

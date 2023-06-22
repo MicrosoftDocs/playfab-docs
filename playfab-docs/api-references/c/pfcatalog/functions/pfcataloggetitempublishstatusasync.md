@@ -5,7 +5,7 @@ description: "Gets the status of a publish of an item."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 05/24/2023
 ---
 
 # PFCatalogGetItemPublishStatusAsync  
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-If successful, call [PFCatalogGetItemPublishStatusGetResult](pfcataloggetitempublishstatusgetresult.md) to get the result.
+When the asynchronous task is complete, call [PFCatalogGetItemPublishStatusGetResultSize](pfcataloggetitempublishstatusgetresultsize.md) and [PFCatalogGetItemPublishStatusGetResult](pfcataloggetitempublishstatusgetresult.md) to get the result.
   
 ## Requirements  
   
