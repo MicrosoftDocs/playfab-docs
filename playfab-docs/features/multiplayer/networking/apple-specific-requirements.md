@@ -19,7 +19,7 @@ Before you start this tutorial, ensure that the following prerequisites have bee
 
 1. You've created a [PlayFab developer account](https://developer.playfab.com/en-us/sign-up)
 2. You've created a PlayFab Title and your title has been allow-listed for PlayFab Party
-3. You have Xcode version 10.2.1 installed
+3. You have Xcode version 10.2.1 or higher installed
 4. You have access to the [PlayFab Party platforms repository](https://github.com/PlayFab/PlayFabParty)
 5. You've created an apple developer account that can be used to sign your app for deployment.
 
@@ -27,14 +27,15 @@ NOTE: If you're planning to use the XCode simulator for testing, you'll need to 
 
 ## Including the required libraries and header files
 
-You'll need to include the following header files from the [PlayFab Party distribution repository] (https://github.com/PlayFab/PlayFabParty/releases).
+### Headers
 
+* You'll need to include the following header files from the [PlayFab Party distribution repository] (https://github.com/PlayFab/PlayFabParty/releases).
 
-LIB Files
+### Frameworks
 
-1. Party.a
-2. libcrypto.a
-3. libssl.a
+* You'll need to link your application against the following frameworks that are also found inside the PlayFab Party distribution packages.
+    * iOS: PlayFabParty
+    * macOS: PlayFabPartyMac
 
 > [!NOTE]
 > The SSL libs are built from [Open SSL version XXX](https://github.com/openssl/openssl/tree/OpenSSL_1_1_1-stable). Use an OpenSSL version that is XXX or higher
