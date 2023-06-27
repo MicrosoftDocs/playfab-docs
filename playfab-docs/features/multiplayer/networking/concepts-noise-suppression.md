@@ -71,4 +71,4 @@ Based on internal testing, enabling noise suppression on PlayFab Party does not 
 * [Party overview](index.md)
 * [Getting started with Party](party-getting-started.md)
 * [Android specific requirements](android-specific-requirements.md)
-* [iOS specific requirements](ios-specific-requirements.md)
+* [iOS and macOS specific requirements](apple-specific-requirements.md)

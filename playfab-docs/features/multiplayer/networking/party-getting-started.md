@@ -37,7 +37,7 @@ To start making Party API calls, you also need the PlayFab Entity Token. Get it 
 
 Here are some quickstart guides to help you make your first API call.
 * [Quickstart for Android](android-specific-requirements.md)
-* [Quickstart for iOS and MacOS](ios-specific-requirements.md)
+* [Quickstart for iOS and MacOS](apple-specific-requirements.md)
 * [Quickstart for Unity](party-unity-plugin-quickstart.md)
 * [Quickstart for Unreal](party-unreal-engine-oss-quickstart.md)
 

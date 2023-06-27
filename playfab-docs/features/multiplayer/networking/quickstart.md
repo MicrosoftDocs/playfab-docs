@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 This quickstart is intended to be a high-level overview of PlayFab Party's core features. PlayFab Party was designed to be cross-platform from the ground up. We've structured these quickstarts in the same way, where most of the information applies to all platforms, and platform-specific prerequisites and steps are described in the linked documents.
 
-In this quickstart, critical pieces of functionality are highlighted via explanatory text and code snippets. However, note that this is not a step-by-step walk-through.
+In this quickstart, critical pieces of functionality are highlighted via explanatory text and code snippets. However, this isn't a step-by-step walk-through.
 
 For a deeper understanding, consult the linked reference and conceptual documentation, and per-platform sample applications.
 
@@ -24,7 +24,7 @@ Before you start this quickstart, perform any necessary platform-specific setup 
 
 1. [Android prerequisites](android-specific-requirements.md)
 
-2. [iOS and MacOS prerequisites](ios-specific-requirements.md)
+2. [iOS and macOS prerequisites](apple-specific-requirements.md)
 
 <!--3. [Nintendo Switch prerequisites](https://github.com/PlayFab/PlayFabPartySwitch/releases)-->
 
@@ -37,7 +37,7 @@ When you finish the platform-specific steps, continue with the rest of the steps
 > [!IMPORTANT]
 > Follow these steps to [Enable PlayFab Party](enable-party.md).
 
-## Log into your PlayFab title and obtain an entity token and entity ID
+## Log in to your PlayFab title and obtain an entity token and entity ID
 
 To initialize and use Party, you must log in to PlayFab. You can use [PlayFabClientAPI::LoginWithCustomID](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid)
  or a platform-specific login method to do this.
@@ -67,7 +67,7 @@ After successfully obtaining the entity ID and entity token from PlayFab, you ca
 
 ## Initialize PlayFab Party
 
-Before continuing with this section, it is recommended to read the [PlayFab Party objects and their relationships](concepts-objects.md) document and code comments in the public [Party.h](https://github.com/PlayFab/PlayFabParty/blob/docs/include/Party.h) header. This provides a deeper understanding of the following operations.
+Before continuing with this section, it's recommended to read the [PlayFab Party objects and their relationships](concepts-objects.md) document and code comments in the public [Party.h](https://github.com/PlayFab/PlayFabParty/blob/docs/include/Party.h) header. This provides a deeper understanding of the following operations.
 
 At a high level, initializing Party involves the following steps:
 
@@ -254,7 +254,7 @@ Once a Party network has been created, Invitations are used to control which use
 
 The simplest Invitation type is an open invitation that consists of a network descriptor and is used here. For detailed information of all Invitation types and the security model, refer to [Invitations and the security model](concepts-invitations-security-model.md).
 
-We implemented simple matchmaking using [PlayFab CloudScripts](../../automation/cloudscript/quickstart.md) in the demo samples, which works as follows:
+We implemented simple matchmaking using [PlayFab CloudScripts](../../automation/cloudscript/quickstart.md) in the demo samples, which work as follows:
 
 1. The user creating the network creates a json key value pair with a room number as key and the network descriptor as value.
 
@@ -473,11 +473,11 @@ Once you've connected to the Party Network, you can send a message using the loc
 The final step is receiving messages sent by remote Party members and rendering (playing) them on your device. 
 
 > [!IMPORTANT]
-> While creating the chat control in one of the previous steps, you've already set up the audio input and output devices which will be used by Party to send, receive and render audio data. To receive the audio messages, you'll also need to set the appropriate chat permission between each chat control if you want audio to flow. By default, the chat permissions are set to NONE. For more information, refer to the [Chat Permissions](concepts-chat-permissions-and-muting.md) article.
+> While creating the chat control in one of the previous steps, you've already set up the audio input and output devices which will be used by Party to send, receive and render audio data. To receive the audio messages, you'll also need to set the appropriate chat permission between each chat control if you want audio to flow. By default, the chat permissions are set to NONE. For more information, see the [Chat Permissions](concepts-chat-permissions-and-muting.md) article.
 
 The processing of other messages from the Party layer is best accomplished in a dedicated update thread or a high-frequency game loop. The game loop should be set up to run every frame and receive messages from the Party Manager via the StartProcessingStateChanges() function.
 
-For a complete description of all the state changes refer to the [Party Reference Documentation](party-reference.md). Alternatively, you can refer to the [NetworkManager.cpp](https://github.com/PlayFab/PlayFabParty/blob/docs/android/PartySampleNetworkCommon/lib/NetworkManager.cpp) for an example of how to process each state change.
+For a complete description of all the state changes, refer to the [Party Reference Documentation](party-reference.md). Alternatively, you can refer to the [NetworkManager.cpp](https://github.com/PlayFab/PlayFabParty/blob/docs/android/PartySampleNetworkCommon/lib/NetworkManager.cpp) for an example of how to process each state change.
 
 
 ## Handling title suspension
@@ -486,26 +486,26 @@ When your title is suspended, the network stack becomes invalidated and PlayFab 
 Special consideration is required to handle suspending and resuming execution of your title when using PlayFab Party.
 
 ### iOS
-On iOS, you must leave and re-connect to the PlayFab Party network
+On iOS, you must leave and reconnect to the PlayFab Party network
 
 To leave Party network, call [LeaveNetwork()](https://github.com/PlayFab/PlayFabParty/blob/docs/android/PartySampleNetworkCommon/lib/NetworkManager.cpp#L505). After the network is reactivated, call [ConnectToNetwork()](#connect-to-a-party-network) with previous Party network descriptor.
 
 ### Switch and GDK
-On Nintendo Switch and Microsoft GDK, you must cleanup PlayFab Party and wait until the title execution resumes before re-initializing PlayFab Party and reconnecting to your network.
+On Nintendo Switch and Microsoft GDK, you must cleanup PlayFab Party and wait until the title execution resumes before reinitializing PlayFab Party and reconnecting to your network.
 
-To shutdown the Party, call [Cleanup()](https://github.com/PlayFab/PlayFabParty/blob/docs/android/PartySampleNetworkCommon/lib/NetworkManager.cpp#L198). 
+To shut down the Party, call [Cleanup()](https://github.com/PlayFab/PlayFabParty/blob/docs/android/PartySampleNetworkCommon/lib/NetworkManager.cpp#L198). 
 > [!IMPORTANT]
-> Calling Cleanup() reclaims all library resources and destroys all library objects. After re-initializing Party, you'll need to recreate any library objects such as local users and chat controls as well as re-establish any previous network state by re-authenticating local users, re-connecting chat controls, and recreating endpoints.
+> Calling Cleanup() reclaims all library resources and destroys all library objects. After reinitializing Party, you'll need to recreate any library objects such as local users and chat controls as well as reestablish any previous network state by reauthenticating local users, reconnecting chat controls, and recreating endpoints.
 
 After the network is reactivated, call [Initialize()](#initialize-playfab-party). Once the Party is successfully initialized, the following steps are required to successfully join a previous PlayFab Party Network again:
 
 1. Connect to the Party Network with previous Party network descriptor.
 
-2. Re-create any local user objects and re-authenticate those local users into the network.
+2. Recreate any local user objects and reauthenticate those local users into the network.
 
-3. Re-create any local chat controls and re-connect those chat controls to the network to enable VOIP
+3. Recreate any local chat controls and reconnect those chat controls to the network to enable VOIP
 
-4. Re-create any [Party Network endpoints](concepts-objects.md#endpoint) for game message traffic.
+4. Recreate any [Party Network endpoints](concepts-objects.md#endpoint) for game message traffic.
 
 ```cpp
     PartyError err = PartyManager::GetSingleton().ConnectToNetwork(
@@ -577,7 +577,7 @@ We encourage you to take a look at the complete Reference and Conceptual documen
 
 ## Next steps
 
-For additional platform-specific guidance for application, see:
+For more platform-specific guidance for application, see:
 - Xbox and Xbox Live
     - [Xbox Requirements](xbox-requirements.md)
     - [Using MPSD](using-mpsd.md)

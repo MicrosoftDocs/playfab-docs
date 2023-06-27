@@ -57,7 +57,7 @@ If you're looking for the core PlayFab SDK that helps you implement a majority o
 
 * [Party samples](party-samples.md)
 * [Quickstart for Android](android-specific-requirements.md)
-* [Quickstart for iOS and MacOS](ios-specific-requirements.md)
+* [Quickstart for iOS and MacOS](apple-specific-requirements.md)
 * [Quickstart for Linux](linux-specific-requirements.md)
 * [Quickstart for Unity](party-unity-plugin-quickstart.md)
 * [Quickstart for Unreal](party-unreal-engine-oss-quickstart.md)
