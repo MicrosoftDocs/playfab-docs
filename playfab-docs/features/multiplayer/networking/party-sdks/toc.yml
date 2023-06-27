@@ -3,7 +3,7 @@
 - name: Android getting started
   href: ../android-specific-requirements.md
 - name: iOS and macOS getting started
-  href: ../ios-specific-requirements.md
+  href: ../apple-specific-requirements.md
 - name: Unity
   items:
   - name: Party Unity plugin overview

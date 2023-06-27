@@ -12,6 +12,14 @@ ms.localizationpriority: medium
 
 # PlayFab Multiplayer C++ SDK release notes
 
+## 1.6.1
+
+June 14, 2023
+
+- On PlayStation&#174;4 and, PlayStation&#174;5, PlayFab Multiplayer will cleanup all resources associated with it and reinitialize if the title enters and remains in background mode for more than 10 minutes.
+
+“PlayStation” is a registered trademark or trademark of Sony Interactive Entertainment Inc.
+
 ## 1.6.0
 
 June 14, 2023
