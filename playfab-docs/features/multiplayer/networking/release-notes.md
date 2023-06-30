@@ -14,6 +14,16 @@ ms.localizationpriority: medium
 
 PlayFab Party had a significant (up to 90%) price drop on October 13, 2020. You can view the updated Party rates on the [Pricing page](https://playfab.com/pricing). For more information about the price drop, see our [blog post](https://blog.playfab.com/blog/starting-today-save-up-to-90-using-playfab-party).
 
+## 1.8.5
+
+June 28, 2023
+
+### Bug fixes
+
+- Fixed a bug where [`PartyLocalChatControl::SetAudioRenderVolume`](reference/classes/PartyLocalChatControl/methods/partylocalchatcontrol_setaudiorendervolume.md) would not properly work for Nintendo Switch, PlayStation&#174;4 and, PlayStation&#174;5.
+
+“PlayStation” is a registered trademark or trademark of Sony Interactive Entertainment Inc.
+
 ## 1.8.3
 
 June 2, 2023
