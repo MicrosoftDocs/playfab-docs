@@ -34,7 +34,7 @@ typedef struct PFUserSteamInfo {
 **`steamCountry`** &nbsp; const char*  
 *is null-terminated*  
   
-(Optional) The country in which the player resides, from Steam data.
+(Optional) The country/region in which the player resides, from Steam data.
   
 **`steamCurrency`** &nbsp; [PFCurrency](../enums/pfcurrency.md) const*  
 *may be nullptr*  
