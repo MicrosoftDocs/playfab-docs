@@ -45,7 +45,7 @@ Once your Azure AD app is listed as a “Database Admin,” you can move on to c
 
 ### Step 2: Configure a new Data Connection
 
-- Click the “New Connection” button.
+- Select the “New Connection” button.
 - Choose the “Destination Type” to be “Azure Data Explorer”
 - Populate the fields using the following values  
 
@@ -58,13 +58,17 @@ Once your Azure AD app is listed as a “Database Admin,” you can move on to c
 | Application ID | The Azure AD App ID. |
 | Tenant ID | The Azure AD Tenant ID. |
 
-![Screenshot of configuring and ADX data connection](media/configure-new-data-connection.png "ADX data connection configuration") 
+![Screenshot of configuring and ADX data connection](media/Config-ADX-Data-Connections.png "ADX data connection configuration") 
 
 > [!Note]
 > We recommend using a table name that doesn't exist. If you use an existing table and the schema is not what PlayFab is expecting, then the schema will be modified. 
 
-### Step 3: Create and Share a Client Secret 
+### Step 3: Ensure that you have granted the Azure Active Directory app access to your Azure Data Explorer cluster before proceeding. 
+- Return to your Azure AD App and navigate to the App Registration page.
+- Follow the commands as shown in the PlayFab Data Connections setup window. You may copy these commands using the 'copy' icon on the right side of these commands. 
+![Screenshot of granting access to AAD App](media/grant-aad-access.png "Grant AAD App access") 
 
 Return to your Azure AD App’s “App Registration” to create a client secret. You can follow the steps here to create a new client secret for your app: [How to Create a New Application Secret](/azure/active-directory/develop/howto-create-service-principal-portal#option-2-create-a-new-application-secret) 
 
 Paste the client secret Value into the “Client Secret” box and ensure the “Enabled” checkbox is checked. You can now click “Save.” After the data connection is successfully saved, you should be taken to a page that shows your new data connection with the Status “Enabled.” At this point, your data connection is successfully set up. You should start to see events in your ADX cluster 5-10 minutes after the next event in your title occurs.
+
