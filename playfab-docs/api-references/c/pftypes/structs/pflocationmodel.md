@@ -39,7 +39,7 @@ typedef struct PFLocationModel {
 **`countryCode`** &nbsp; [PFCountryCode](../enums/pfcountrycode.md) const*  
 *may be nullptr*  
   
-(Optional) The two-character ISO 3166-1 country code for the country associated with the location.
+(Optional) The two-character ISO 3166-1 country/region code for the country/region associated with the location.
   
 **`latitude`** &nbsp; double const*  
 *may be nullptr*  
