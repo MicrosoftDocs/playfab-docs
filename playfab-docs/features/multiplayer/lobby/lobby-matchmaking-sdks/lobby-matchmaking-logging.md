@@ -26,7 +26,7 @@ The type of logs and the way logging should be configured/captured depends on a 
 | Platform | Log format | Logging instruction guidance location |
 |------------|------------|------------|
 | Android | Plain text | See [this `README.md` file](https://github.com/PlayFab/PlayFabMultiplayer/blob/main/TraceScripts/README.md). |
-| Linux | Plain text | See `Logging` section of `docs/README.md` file included in SDK package. |
+| Linux | Plain text | See [this `README.md` file](https://github.com/PlayFab/PlayFabMultiplayer/blob/main/TraceScripts/README.md). |
 | Switch | Plain text | See `Logging` section of `README.md` file included in a NuGet package for this SDK. |
 | PlayStation 4 | Plain text | See `Logging` section of `README.md` file included in a NuGet package for this SDK. |
 | PlayStation 5 | Plain text | See `Logging` section of `README.md` file included in a NuGet package for this SDK. |

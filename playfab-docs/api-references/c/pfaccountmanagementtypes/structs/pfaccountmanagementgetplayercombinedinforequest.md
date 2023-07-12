@@ -41,7 +41,7 @@ Flags for which pieces of info to return for the user.
 **`playFabId`** &nbsp; const char*  
 *is null-terminated*  
   
-PlayFabId of the user whose data will be returned. If not filled included, we return the data for the calling player. .
+PlayFabId of the user whose data will be returned. If not specified, we return the data for the calling player.
   
   
 ## Requirements  
