@@ -5,7 +5,7 @@ description: "Provides the ticket ID."
 ms.author: scmunro
 ms.topic: reference
 ms.service: playfab
-ms.date: 01/03/2022
+ms.date: 07/14/2023
 ---
 
 # PFMatchmakingTicketGetTicketId  
@@ -40,7 +40,10 @@ Type: HRESULT
   
 ## Remarks  
   
-The ticket ID will be an empty string if the ticket is in the ```PFMatchmakingTicketStatus::Creating``` state or if the ticket is in the ```PFMatchmakingTicketStatus::Failed``` state due to failure to submit a ticket to the matchmaking service. The ticket state can be retrieved via [PFMatchmakingTicketGetStatus](pfmatchmakingticketgetstatus.md).
+The ticket ID will be an empty string if it has not yet been set. This can occur under one of the following conditions:
+* The ticket is in the ```PFMatchmakingTicketStatus::Creating``` state
+* The ticket is in the ```PFMatchmakingTicketStatus::Failed``` state due to failure to submit a ticket to the matchmaking service
+* The ticket was canceled before it could be submitted to the matchmaking service
   
 ## Requirements  
   

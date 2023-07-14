@@ -5,7 +5,7 @@ description: "Search for lobbies on behalf of the local user."
 ms.author: scmunro
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/14/2022
+ms.date: 07/14/2023
 ---
 
 # PFMultiplayerFindLobbies  
@@ -50,7 +50,7 @@ Type: HRESULT
   
 ## Remarks  
   
-This is an asynchronous operation. Upon successful completion, the title will be provided a [PFLobbyFindLobbiesCompletedStateChange](../structs/pflobbyfindlobbiescompletedstatechange.md) with the [PFLobbyFindLobbiesCompletedStateChange::result](../structs/pflobbyfindlobbiescompletedstatechange.md) field set to ```S_OK```. Upon a failed completion, the title will be provided a [PFLobbyFindLobbiesCompletedStateChange](../structs/pflobbyfindlobbiescompletedstatechange.md) with the [PFLobbyFindLobbiesCompletedStateChange::result](../structs/pflobbyfindlobbiescompletedstatechange.md) field set to a failure. <br /><br />
+This is an asynchronous operation. Upon successful completion, the title will be provided a [PFLobbyFindLobbiesCompletedStateChange](../structs/pflobbyfindlobbiescompletedstatechange.md) with the [PFLobbyFindLobbiesCompletedStateChange::result](../structs/pflobbyfindlobbiescompletedstatechange.md) field set to ```S_OK```. Upon a failed completion, the title will be provided a [PFLobbyFindLobbiesCompletedStateChange](../structs/pflobbyfindlobbiescompletedstatechange.md) with the [PFLobbyFindLobbiesCompletedStateChange::result](../structs/pflobbyfindlobbiescompletedstatechange.md) field set to a failure.
   
 ## Requirements  
   
