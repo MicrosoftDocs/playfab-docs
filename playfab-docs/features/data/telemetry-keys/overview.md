@@ -12,8 +12,6 @@ ms.localizationpriority: medium
 
 # Telemetry Keys
 
-## Overview
-
 Telemetry Keys enables you to use PlayFab's powerful analytics capabilities by ingesting custom telemetry events directly from your game client. You can now use the [WriteTelemetryEvents API](/rest/api/playfab/events/play-stream-events/write-telemetry-events) to simplify your client's authentication to PlayFab when sending telemetry.
 
 A Telemetry Key is a credential that can be used instead of the Entity Token normally required to call [PlayFab Entity APIs](../entities/index.md). This means you can utilize PlayFab's telemetry ingestion capabilities even if you don't have a player signed in. What's more, unlike Title Secret keys, Telemetry Keys don't grant access to administrative APIs; they can only be used for sending telemetry. You can safely share Telemetry Keys directly with your game clients.
