@@ -312,4 +312,4 @@ void BackgroundWorkThreadProc(XTaskQueueHandle queue)
 
 ## Reference
 
-[API reference documentation](../../api-references/c/pfauthentication/pfauthentication_members)
+[API reference documentation](../../api-references/c/pfauthentication/pfauthentication_members.md)

@@ -42,7 +42,7 @@ landingContent:
       - linkListType: reference
         links:
           - text: API reference
-            url: ../../api-references/c/pfauthentication/pfauthentication_members
+            url: ../../api-references/c/pfauthentication/pfauthentication_members.md
 
   # Card (optional)
   - title: Cocos2D-x

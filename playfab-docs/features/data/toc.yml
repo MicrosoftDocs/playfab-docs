@@ -16,3 +16,5 @@
   href: content-delivery-network/toc.yml
 - name: Webhooks
   href: webhooks/index.md
+- name: Telemetry Keys
+  href: telemetry-keys/toc.yml

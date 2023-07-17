@@ -5,7 +5,7 @@ description: "An entry in the collection of lobby search results received upon s
 ms.author: scmunro
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/15/2022
+ms.date: 07/14/2023
 ---
 
 # PFLobbySearchResult  
@@ -26,6 +26,7 @@ struct PFLobbySearchResult {
     const char* const* searchPropertyValues;  
     uint32_t friendCount;  
     const PFEntityKey* friends;  
+    PFLobbyMembershipLock membershipLock;  
 }  
 ```
   
@@ -84,6 +85,10 @@ If the lobby search which generated this search result was not performed with a 
 The list of friends in the found lobby, if the lobby search was performed with a ```PFLobbySearchFriendsFilter```.
   
 If the lobby search which generated this search result was not performed with a ```PFLobbySearchFriendsFilter```, this list will always be empty. <br /><br /> In some multiplayer social networks, friendship is a unidirectional relationship. One user may "follow" another or be their friend, but the same is not necessarily true in the reverse direction. Friends will only be returned in this search result when a bidirectional friendship exists. That is, the user querying for the lobby and the user in the lobby must both be friends with each other.
+  
+**`membershipLock`** &nbsp; [PFLobbyMembershipLock](../enums/pflobbymembershiplock.md)  
+  
+The current lock state of the found lobby.
   
   
 ## Requirements  

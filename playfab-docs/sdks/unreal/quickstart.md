@@ -1,6 +1,6 @@
 ---
 title: Unreal Engine quickstart
-author: danbehrendt
+author: joannaleecy
 description: This guide helps you to install the PlayFab Marketplace Plugin and use it to make your first API call in Unreal.
 ms.author: joanlee
 ms.date: 03/10/2020
@@ -251,4 +251,4 @@ Congratulations, you made your first successful PlayFab API call using Blueprint
 ## Additional Resources
 
 * Unreal Engine documentation for [Blueprints Visual Scripting](https://docs.unrealengine.com/en-US/Engine/Blueprints/index.html).
-* Unreal Engine [Programming Guide](https://docs.unrealengine.com/en-US/Programming/index.html).
+* [Unreal Engine documentation](https://docs.unrealengine.com/).

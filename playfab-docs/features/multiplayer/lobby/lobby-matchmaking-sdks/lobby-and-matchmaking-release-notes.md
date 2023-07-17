@@ -12,6 +12,17 @@ ms.localizationpriority: medium
 
 # PlayFab Multiplayer C++ SDK release notes
 
+## 1.6.2
+
+July 14, 2023
+
+### Bug fixes
+
+- Fixed an issue where matchmaking operations started by PFMultiplayerJoinMatchmakingTicketFromId timed out prematurely.
+- Fixed an issue where PFMatchmakingTicketGetTicketId could provide a null value if called shortly after starting a matchmaking operation. Now, an empty string is provided as expected.
+- Fixed an issue where the macOS library was identifying as iOS via web request headers. This is primarily used for diagnostics.
+- Improved internal diagnostics.
+
 ## 1.6.1
 
 June 14, 2023

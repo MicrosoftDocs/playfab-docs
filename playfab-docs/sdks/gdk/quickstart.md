@@ -178,4 +178,4 @@ The easiest way to see the results and debug any calls in the PlayFab Services S
 
 ## Reference
 
-[API reference documentation](../../api-references/c/pfauthentication/pfauthentication_members)
+[API reference documentation](../../api-references/c/pfauthentication/pfauthentication_members.md)

@@ -69,7 +69,7 @@ If the SDK successfully makes the PlayFab service request, the service may still
 - `E_PF_TITLE_DELETED (0x89235570)`
 - `E_PF_UNKNOWN_ERROR (0x89235448)`
 
-For more information on service failure retry guidance, see [PlayFab Service Global API method error codes][../../api-references/global-api-method-error-codes].
+For more information on service failure retry guidance, see [PlayFab Service Global API method error codes](../../api-references/global-api-method-error-codes.md).
 
 #### Throttling failures
 
