@@ -12,13 +12,11 @@ ms.localizationpriority: medium
 
 # Telemetry Keys
 
-## Overview
-
 Telemetry Keys enables you to use PlayFab's powerful analytics capabilities by ingesting custom telemetry events directly from your game client. You can now use the [WriteTelemetryEvents API](/rest/api/playfab/events/play-stream-events/write-telemetry-events) to simplify your client's authentication to PlayFab when sending telemetry.
 
 A Telemetry Key is a credential that can be used instead of the Entity Token normally required to call [PlayFab Entity APIs](../entities/index.md). This means you can utilize PlayFab's telemetry ingestion capabilities even if you don't have a player signed in. What's more, unlike Title Secret keys, Telemetry Keys don't grant access to administrative APIs; they can only be used for sending telemetry. You can safely share Telemetry Keys directly with your game clients.
 
-### Using Telemetry Keys
+## Using Telemetry Keys
 
 You can manage the keys configured for your title from the `Telemetry Keys` tab under the `Data` section in GameManager.
 
@@ -38,7 +36,7 @@ X-TelemetryKey: <Your Telemetry Key>
 > [!NOTE]
 > _The caller should provide either a Telemetry Key, OR an Entity Token. If both are provided, the Telemetry Key will be ignored, and the request will be processed as though one weren't provided._
 
-#### Limitations
+## Limitations
 
 The following restrictions apply when using Telemetry Keys:
 * A title can configure up to five Telemetry Keys.
@@ -46,7 +44,7 @@ The following restrictions apply when using Telemetry Keys:
 * Titles that have set their [Insights Retention](./../../insights/performance-retention.md) to be 
 greater than 30 days can't configure Telemetry Keys at this time.
 
-### Specifying Entities for Events
+## Specifying Entities for Events
 
 PlayFab events indicate the subject of the event via their `Entity` property. When you send telemetry using Entity Token authentication, this field is automatically populated with information about the signed-in entity. However, when you use a Telemetry Key, there's no entity that is signed-in. Telemetry events sent using a Telemetry Key are therefore not allowed to specify [PlayFab Built-In Entities](../entities/available-built-in-entity-types.md) as their subject.
 
