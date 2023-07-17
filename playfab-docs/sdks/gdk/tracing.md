@@ -46,4 +46,4 @@ PFHCTraceSetClientCallback(TraceCallback);
 
 ## Reference
 
-[API reference documentation](../../api-references/c/pfhctrace/pfhctrace_members)
+[API reference documentation](../../api-references/c/pfhctrace/pfhctrace_members.md)

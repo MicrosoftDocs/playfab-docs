@@ -5,7 +5,7 @@ description: "The configuration structure used to specify how a [PFMultiplayerFi
 ms.author: scmunro
 ms.topic: reference
 ms.service: playfab
-ms.date: 02/25/2023
+ms.date: 07/14/2023
 ---
 
 # PFLobbySearchConfiguration  
@@ -37,7 +37,7 @@ If omitted, the search operation will search all available lobbies. <br /><br />
   
 The query string used to filter which lobbies are returned in the search results.
   
-This string is formatted in an OData-like filtering syntax. <br /><br /> Only the following operators are supported: "and" (logical and), "eq" (equal), "ne" (not equals), "ge" (greater than or equal), "gt" (greater than), "le" (less than or equal), and "lt" (less than).   <br /><br /> The left-hand side of each OData logical expression should be either a search property key (e.g. string_key1, number_key3, etc) or one of the pre-defined search keys (```PFLobbyMemberCountSearchKey``` or ```PFLobbyAmMemberSearchKey```).   <br /><br /> The left-hand side of each OData logical expression should be a search property key.   <br /><br /> This string cannot exceed 500 characters.   <br /><br /> Example: "string_key1 eq 'CaptureTheFlag' and number_key10 gt 50 and lobby/memberCount lt 5"
+This string is formatted in an OData-like filtering syntax. <br /><br /> Only the following operators are supported: "and" (logical and), "eq" (equal), "ne" (not equals), "ge" (greater than or equal), "gt" (greater than), "le" (less than or equal), and "lt" (less than).   <br /><br /> The left-hand side of each OData logical expression should be either a search property key (e.g. string_key1, number_key3, etc) or one of the predefined search keys (```PFLobbyMemberCountSearchKey```, ```PFLobbyAmMemberSearchKey```, or ```PFLobbyMembershipLockSearchKey```)   <br /><br /> The left-hand side of each OData logical expression should be a search property key.   <br /><br /> This string cannot exceed 500 characters.   <br /><br /> Example: "lobby/membershipLock eq 'Unlocked' and string_key1 eq 'CaptureTheFlag' and number_key10 gt 50 and lobby/memberCount lt 5"
   
 **`sortString`** &nbsp; const char*  
 *is null-terminated*  

@@ -35,4 +35,4 @@ To manually specify your memory routines, you can take the following steps:
 
 ## Reference
 
-[API reference documentation](../../api-references/c/pfplatform/pfplatform_members)
+[API reference documentation](../../api-references/c/pfplatform/pfplatform_members.md)

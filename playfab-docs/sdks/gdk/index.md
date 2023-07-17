@@ -27,8 +27,8 @@ Here are some notable differences when compared to other, more general use, Play
 
 ## Benefits of this SDK
 
-- Allows titles to control the memory allocations when calling Playfab Services. See [Managing Memory Allocations](./memory.md) to learn more.
-- Allows titles to gain full control of thread handling when calling Playfab Services. See [Making async calls in the PlayFab Services SDK](./async.md) to learn more.
+- Allows titles to control the memory allocations when calling Playfab Services. See [Managing Memory Allocations](memory.md) to learn more.
+- Allows titles to gain full control of thread handling when calling Playfab Services. See [Making async calls in the PlayFab Services SDK](async.md) to learn more.
 
 ## Platforms supported by this SDK
 
@@ -46,8 +46,8 @@ There are two scenarios where this SDK may not be appropriate for your GDK game:
 
 ## Add this SDK to your project
 
-Since this SDK is a component of the GDK, adding it to your project is quick and easy. Follow the instructions here to start making basic calls to PlayFab: [Quickstart for GDK](./quickstart.md).
+Since this SDK is a component of the GDK, adding it to your project is quick and easy. Follow the instructions here to start making basic calls to PlayFab: [Quickstart for GDK](quickstart.md).
 
 ## Reference
 
-[API reference documentation](../../api-references/c/pfauthentication/pfauthentication_members)
+[API reference documentation](../../api-references/c/pfauthentication/pfauthentication_members.md)

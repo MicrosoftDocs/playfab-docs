@@ -64,4 +64,4 @@ When shutting down PlayFab or when you want to stop receiving token expiration a
 
 ## Reference
 
-[API reference documentation](../../api-references/c/pfauthentication/pfauthentication_members)
+[API reference documentation](../../api-references/c/pfauthentication/pfauthentication_members.md)

@@ -141,5 +141,11 @@ landingContent:
       - linkListType: quickstart
         links:
           - text:  Get started with Content Delivery Network
-            url: content-delivery-network/quickstart.md 
-           
+            url: content-delivery-network/quickstart.md
+
+  - title: Telemetry Keys
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Using Telemetry Keys to ingest events
+            url: telemetry-keys/overview.md
