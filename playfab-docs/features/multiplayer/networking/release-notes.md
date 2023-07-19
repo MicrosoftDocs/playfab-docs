@@ -12,6 +12,11 @@ ms.localizationpriority: medium
 
 # PlayFab Party release notes
 
+> [!NOTE]
+> Support for the XDK and Windows 7 platforms will end on August 1, 2023. No new PlayFab Party library updates will be released for those platforms. The PlayFab Party networking and voice services will continue to operate with no impact to any titles currently using Windows 7 or XDK versions of the PlayFab Party library.  
+> 
+>For more information, please see our [forum post](https://community.playfab.com/articles/141546/playfab-party-ending-support-for-the-xdk-and-windo.html).
+
 PlayFab Party had a significant (up to 90%) price drop on October 13, 2020. You can view the updated Party rates on the [Pricing page](https://playfab.com/pricing). For more information about the price drop, see our [blog post](https://blog.playfab.com/blog/starting-today-save-up-to-90-using-playfab-party).
 
 ## 1.8.5
