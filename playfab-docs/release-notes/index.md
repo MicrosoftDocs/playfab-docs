@@ -14,6 +14,12 @@ ms.localizationpriority: medium
 > [!NOTE]
 > For release notes about service releases and product updates, see the [release notes](https://github.com/PlayFab/PlayFab/releases) section on [PlayFab's public GitHub repository](https://github.com/PlayFab/PlayFab)
 
+## 230721
+
+Date: July 21, 2023
+
+- Updated reference documentation for Economy V1 calls
+
 ## 230707
 
 Date: July 7, 2023
