@@ -18,14 +18,35 @@ metadata:
 landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
-  # Card (optional)
-  - title: Android Studio Project (Java)
+  # Card
+  - title: C/C++
     linkLists:
       - linkListType: overview
         links:
-          - text: Android Studio Project (Java) 
-            url: ../androidstudio/index.md
-
+          - text: C/C++
+            url: ../c/index.md
+      - linkListType: quickstart
+        links:
+          - text: Quickstart - Win32
+            url: ../c/quickstart-win32.md
+          - text: Quickstart - GDK
+            url: ../c/quickstart-gdk.md
+      - linkListType: how-to-guide
+        links:
+          - text: Making Async Calls
+            url: ../c/async.md
+          - text: Managing Memory
+            url: ../c/memory.md
+          - text: Handling Token Expiration
+            url: ../c/relogin.md
+          - text: Debug Tracing
+            url: ../c/tracing.md
+      - linkListType: concept
+        links:
+          - text: Event Pipeline Overview
+            url: ../c/event-pipeline/eventpipeline.md
+          - text: Event Pipeline Tutorial
+            url: ../c/event-pipeline/eventpipeline-tutorial.md
   # Card
   - title: C#
     linkLists:
@@ -64,11 +85,11 @@ landingContent:
             url: ../objective-c/quickstart.md
 
   # Card
-  - title: C++
+  - title: Legacy C++
     linkLists:
       - linkListType: overview
         links:
-          - text: C++
+          - text: Legacy C++
             url: ../playfab-cpp/index.md
       - linkListType: quickstart
         links:
@@ -76,3 +97,52 @@ landingContent:
             url: ../playfab-cpp/quickstart-linux.md
           - text: Quickstart - Windows quickstart
             url: ../playfab-cpp/quickstart-windows.md
+
+  # Card
+  - title: JavaScript
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: JavaScript
+            url: ../javascript/index.md
+      - linkListType: quickstart
+        links:
+          - text: JavaScript quickstart
+            url: ../javascript/quickstart.md
+
+  # Card
+  - title: Lua
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Lua
+            url: ../lua/index.md
+      - linkListType: quickstart
+        links:
+          - text: Quickstart - Corona
+            url: ../lua/quickstart-corona.md
+          - text: Quickstart - Defold
+            url: ../lua/quickstart-corona.md
+
+  # Card
+  - title: NodeJS
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: NodeJS
+            url: ../nodejs/index.md
+      - linkListType: quickstart
+        links:
+          - text: NodeJS quickstart
+            url: ../nodejs/quickstart.md
+  # Card
+  - title: Python
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Python
+            url: ../python/index.md
+      - linkListType: quickstart
+        links:
+          - text: Python quickstart
+            url: ../python/quickstart.md

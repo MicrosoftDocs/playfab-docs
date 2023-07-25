@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Debug Tracing
 
-PlayFab in the GDK supports extensible debug tracing. Use debug tracing when you're encountering errors and want a full picture of what calls the game makes and the results the server returns. There are options to control the trace verbosity and integrate with your game's own debug logs. You can also direct output to the Output pane in Visual Studio.
+This PlayFab SDK supports extensible debug tracing. Use debug tracing when you're encountering errors and want a full picture of what calls the game makes and the results the server returns. There are options to control the trace verbosity and integrate with your game's own debug logs. You can also direct output to the Output pane in Visual Studio.
 
 ## Enable and set Verbosity
 

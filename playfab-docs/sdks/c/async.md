@@ -16,7 +16,7 @@ An asynchronous API is an API that returns quickly but starts an asynchronous ta
 
 Traditionally, games have had little control over which thread executes the asynchronous task and which thread returns the results when using a completion callback. Some games are designed so that a section of the heap is only touched by a single thread to avoid any need for thread synchronization. If the completion callback isn't called from a thread the game controls, updating shared state with the result of an asynchronous task requires thread synchronization.
 
-The PlayFab Services SDK exposes an asynchronous C API that gives developers direct thread control when making an asynchronous API call, such as **PFAuthenticationLoginWithXUserAsync**, **PFDataGetFilesAsync**, or **PFProfilesGetProfileAsync**.
+The PlayFab Services SDK exposes an asynchronous C API that gives developers direct thread control when making an asynchronous API call, such as **PFAuthenticationLoginWithCustomIDAsync**, **PFDataGetFilesAsync**, or **PFProfilesGetProfileAsync**.
 
 Here's a basic example calling **PFProfilesGetProfileAsync**:
 

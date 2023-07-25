@@ -12,11 +12,11 @@ ms.localizationpriority: medium
 
 # Handling Token Expiration
 
-The PlayFab Services SDK automatically attempts to handle relogin and token refresh in the GDK. When a PlayFab entity token expires, the SDK detects the failure and attempts to acquire a new entity token using the **XUserHandle** you originally provided. If this relogin succeeds, the SDK retries the original failed call automatically. Additionally, the **PFEntityHandle** returned by the original login call continues to be valid.
+The PlayFab Services SDK automatically attempts to handle relogin and token refresh in this SDK. When a PlayFab entity token expires, the SDK detects the failure and attempts to acquire a new entity token using the handle or token you originally provided to the login request. If this relogin succeeds, the SDK retries the original failed call automatically. Additionally, the **PFEntityHandle** returned by the original login call continues to be valid.
 
 ## Automatic refresh failure
 
-It's possible for automatic token refresh to fail. This failure could be because the **XUserHandle** is no longer valid. To handle this scenario, your game can register for a callback to provide a new **XUserHandle** and retry the login. Use **PFEntityRegisterTokenExpiredEventHandler** to register for a callback and **PFAuthenticationReLoginWithXUserAsync** to provide the new **XUserHandle** and reattempt the login.
+It's possible for automatic token refresh to fail. This failure could be because the handle or token you originally provided to the login request is no longer valid. To handle this scenario, your game can register for a callback to provide a new handle or token and retry the login. Use **PFEntityRegisterTokenExpiredEventHandler** to register for a callback and **PFAuthenticationReLoginWith\*Async** to provide the new handle or token and reattempt the login.
 
 ```cpp
     PFRegistrationToken registrationTokenExpired{};
