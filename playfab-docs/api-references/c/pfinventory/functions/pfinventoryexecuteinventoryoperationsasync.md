@@ -5,7 +5,7 @@ description: "Execute a list of Inventory Operations. A maximum list of 10 opera
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 05/24/2023
+ms.date: 06/20/2023
 ---
 
 # PFInventoryExecuteInventoryOperationsAsync  
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-Execute a list of Inventory Operations for an Entity. When the asynchronous task is complete, call [PFInventoryExecuteInventoryOperationsGetResultSize](pfinventoryexecuteinventoryoperationsgetresultsize.md) and [PFInventoryExecuteInventoryOperationsGetResult](pfinventoryexecuteinventoryoperationsgetresult.md) to get the result.
+This API is available on all platforms. Execute a list of Inventory Operations for an Entity. When the asynchronous task is complete, call [PFInventoryExecuteInventoryOperationsGetResultSize](pfinventoryexecuteinventoryoperationsgetresultsize.md) and [PFInventoryExecuteInventoryOperationsGetResult](pfinventoryexecuteinventoryoperationsgetresult.md) to get the result.
   
 ## Requirements  
   

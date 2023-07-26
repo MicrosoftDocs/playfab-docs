@@ -5,7 +5,7 @@ description: "Services C API overview - PFInventory.h"
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 05/24/2023
+ms.date: 07/25/2023
 ---
 
 # Services C API overview - PFInventory.h
@@ -40,6 +40,15 @@ ms.date: 05/24/2023
 | [PFInventoryRedeemMicrosoftStoreInventoryItemsAsync](functions/pfinventoryredeemmicrosoftstoreinventoryitemsasync.md) | Redeem items. |  
 | [PFInventoryRedeemMicrosoftStoreInventoryItemsGetResult](functions/pfinventoryredeemmicrosoftstoreinventoryitemsgetresult.md) | Gets the result of a successful PFInventoryRedeemMicrosoftStoreInventoryItemsAsync call. |  
 | [PFInventoryRedeemMicrosoftStoreInventoryItemsGetResultSize](functions/pfinventoryredeemmicrosoftstoreinventoryitemsgetresultsize.md) | Get the size in bytes needed to store the result of a RedeemMicrosoftStoreInventoryItems call. |  
+| [PFInventoryRedeemNintendoEShopInventoryItemsAsync](functions/pfinventoryredeemnintendoeshopinventoryitemsasync.md) | Redeem items. |  
+| [PFInventoryRedeemNintendoEShopInventoryItemsGetResult](functions/pfinventoryredeemnintendoeshopinventoryitemsgetresult.md) | Gets the result of a successful PFInventoryRedeemNintendoEShopInventoryItemsAsync call. |  
+| [PFInventoryRedeemNintendoEShopInventoryItemsGetResultSize](functions/pfinventoryredeemnintendoeshopinventoryitemsgetresultsize.md) | Get the size in bytes needed to store the result of a RedeemNintendoEShopInventoryItems call. |  
+| [PFInventoryRedeemPlayStationStoreInventoryItemsAsync](functions/pfinventoryredeemplaystationstoreinventoryitemsasync.md) | Redeem items. |  
+| [PFInventoryRedeemPlayStationStoreInventoryItemsGetResult](functions/pfinventoryredeemplaystationstoreinventoryitemsgetresult.md) | Gets the result of a successful PFInventoryRedeemPlayStationStoreInventoryItemsAsync call. |  
+| [PFInventoryRedeemPlayStationStoreInventoryItemsGetResultSize](functions/pfinventoryredeemplaystationstoreinventoryitemsgetresultsize.md) | Get the size in bytes needed to store the result of a RedeemPlayStationStoreInventoryItems call. |  
+| [PFInventoryRedeemSteamInventoryItemsAsync](functions/pfinventoryredeemsteaminventoryitemsasync.md) | Redeem items. |  
+| [PFInventoryRedeemSteamInventoryItemsGetResult](functions/pfinventoryredeemsteaminventoryitemsgetresult.md) | Gets the result of a successful PFInventoryRedeemSteamInventoryItemsAsync call. |  
+| [PFInventoryRedeemSteamInventoryItemsGetResultSize](functions/pfinventoryredeemsteaminventoryitemsgetresultsize.md) | Get the size in bytes needed to store the result of a RedeemSteamInventoryItems call. |  
 | [PFInventorySubtractInventoryItemsAsync](functions/pfinventorysubtractinventoryitemsasync.md) | Subtract inventory items. |  
 | [PFInventorySubtractInventoryItemsGetResult](functions/pfinventorysubtractinventoryitemsgetresult.md) | Gets the result of a successful PFInventorySubtractInventoryItemsAsync call. |  
 | [PFInventorySubtractInventoryItemsGetResultSize](functions/pfinventorysubtractinventoryitemsgetresultsize.md) | Get the size in bytes needed to store the result of a SubtractInventoryItems call. |  

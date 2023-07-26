@@ -5,7 +5,7 @@ description: "Delete inventory items"
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 05/24/2023
+ms.date: 06/20/2023
 ---
 
 # PFInventoryDeleteInventoryItemsAsync  
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-Given an entity type, entity identifier and container details, will delete the entity's inventory items. When the asynchronous task is complete, call [PFInventoryDeleteInventoryItemsGetResultSize](pfinventorydeleteinventoryitemsgetresultsize.md) and [PFInventoryDeleteInventoryItemsGetResult](pfinventorydeleteinventoryitemsgetresult.md) to get the result.
+This API is available on all platforms. Given an entity type, entity identifier and container details, will delete the entity's inventory items. When the asynchronous task is complete, call [PFInventoryDeleteInventoryItemsGetResultSize](pfinventorydeleteinventoryitemsgetresultsize.md) and [PFInventoryDeleteInventoryItemsGetResult](pfinventorydeleteinventoryitemsgetresult.md) to get the result.
   
 ## Requirements  
   

@@ -5,7 +5,7 @@ description: "Write batches of entity based events to PlayStream. The namespace 
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 05/24/2023
+ms.date: 06/20/2023
 ---
 
 # PFEventsWriteEventsAsync  
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-When the asynchronous task is complete, call [PFEventsWriteEventsGetResultSize](pfeventswriteeventsgetresultsize.md) and [PFEventsWriteEventsGetResult](pfeventswriteeventsgetresult.md) to get the result.
+This API is available on all platforms. When the asynchronous task is complete, call [PFEventsWriteEventsGetResultSize](pfeventswriteeventsgetresultsize.md) and [PFEventsWriteEventsGetResult](pfeventswriteeventsgetresult.md) to get the result.
   
 ## Requirements  
   

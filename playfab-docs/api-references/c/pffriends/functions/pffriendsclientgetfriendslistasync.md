@@ -5,7 +5,7 @@ description: "Retrieves the current friend list for the local user, constrained 
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 05/24/2023
+ms.date: 06/20/2023
 ---
 
 # PFFriendsClientGetFriendsListAsync  
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-See also ClientAddFriendAsync, ClientGetPlayerProfileAsync, ClientRemoveFriendAsync. When the asynchronous task is complete, call [PFFriendsClientGetFriendsListGetResultSize](pffriendsclientgetfriendslistgetresultsize.md) and [PFFriendsClientGetFriendsListGetResult](pffriendsclientgetfriendslistgetresult.md) to get the result.
+This API is available on all platforms. See also ClientAddFriendAsync, ClientGetPlayerProfileAsync, ClientRemoveFriendAsync. When the asynchronous task is complete, call [PFFriendsClientGetFriendsListGetResultSize](pffriendsclientgetfriendslistgetresultsize.md) and [PFFriendsClientGetFriendsListGetResult](pffriendsclientgetfriendslistgetresult.md) to get the result.
   
 ## Requirements  
   

@@ -5,7 +5,7 @@ description: "Retrieves objects from an entity's profile."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 05/24/2023
+ms.date: 06/20/2023
 ---
 
 # PFDataGetObjectsAsync  
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-Gets JSON objects from an entity profile and returns it. See also ObjectSetObjectsAsync. When the asynchronous task is complete, call [PFDataGetObjectsGetResultSize](pfdatagetobjectsgetresultsize.md) and [PFDataGetObjectsGetResult](pfdatagetobjectsgetresult.md) to get the result.
+This API is available on all platforms. Gets JSON objects from an entity profile and returns it. See also ObjectSetObjectsAsync. When the asynchronous task is complete, call [PFDataGetObjectsGetResultSize](pfdatagetobjectsgetresultsize.md) and [PFDataGetObjectsGetResult](pfdatagetobjectsgetresult.md) to get the result.
   
 ## Requirements  
   

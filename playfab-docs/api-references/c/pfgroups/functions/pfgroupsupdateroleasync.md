@@ -5,7 +5,7 @@ description: "Updates metadata about a role."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 05/24/2023
+ms.date: 06/20/2023
 ---
 
 # PFGroupsUpdateRoleAsync  
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-Updates the role name. Returns information about whether the update was successful. When the asynchronous task is complete, call [PFGroupsUpdateRoleGetResultSize](pfgroupsupdaterolegetresultsize.md) and [PFGroupsUpdateRoleGetResult](pfgroupsupdaterolegetresult.md) to get the result.
+This API is available on all platforms. Updates the role name. Returns information about whether the update was successful. See also GroupCreateRoleAsync, GroupDeleteRoleAsync. When the asynchronous task is complete, call [PFGroupsUpdateRoleGetResultSize](pfgroupsupdaterolegetresultsize.md) and [PFGroupsUpdateRoleGetResult](pfgroupsupdaterolegetresult.md) to get the result.
   
 ## Requirements  
   

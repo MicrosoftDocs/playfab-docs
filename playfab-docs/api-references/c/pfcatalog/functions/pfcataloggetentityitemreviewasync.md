@@ -5,7 +5,7 @@ description: "Gets the submitted review for the specified item by the authentica
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 05/24/2023
+ms.date: 06/20/2023
 ---
 
 # PFCatalogGetEntityItemReviewAsync  
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-When the asynchronous task is complete, call [PFCatalogGetEntityItemReviewGetResultSize](pfcataloggetentityitemreviewgetresultsize.md) and [PFCatalogGetEntityItemReviewGetResult](pfcataloggetentityitemreviewgetresult.md) to get the result.
+This API is available on all platforms. When the asynchronous task is complete, call [PFCatalogGetEntityItemReviewGetResultSize](pfcataloggetentityitemreviewgetresultsize.md) and [PFCatalogGetEntityItemReviewGetResult](pfcataloggetentityitemreviewgetresult.md) to get the result.
   
 ## Requirements  
   

@@ -5,7 +5,7 @@ description: "Subtract inventory items."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 05/24/2023
+ms.date: 06/20/2023
 ---
 
 # PFInventorySubtractInventoryItemsAsync  
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-Given an entity type, entity identifier and container details, will subtract the specified inventory items. . When the asynchronous task is complete, call [PFInventorySubtractInventoryItemsGetResultSize](pfinventorysubtractinventoryitemsgetresultsize.md) and [PFInventorySubtractInventoryItemsGetResult](pfinventorysubtractinventoryitemsgetresult.md) to get the result.
+This API is available on all platforms. Given an entity type, entity identifier and container details, will subtract the specified inventory items. . When the asynchronous task is complete, call [PFInventorySubtractInventoryItemsGetResultSize](pfinventorysubtractinventoryitemsgetresultsize.md) and [PFInventorySubtractInventoryItemsGetResult](pfinventorysubtractinventoryitemsgetresult.md) to get the result.
   
 ## Requirements  
   

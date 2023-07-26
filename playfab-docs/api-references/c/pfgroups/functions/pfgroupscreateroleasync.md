@@ -5,7 +5,7 @@ description: "Creates a new group role."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 05/24/2023
+ms.date: 06/20/2023
 ---
 
 # PFGroupsCreateRoleAsync  
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-Creates a new role within an existing group, with no members. Both the role ID and role name must be unique within the group, but the name can be the same as the ID. The role ID is set at creation and cannot be changed. Returns information about the role that was created. See also GroupDeleteRoleAsync. When the asynchronous task is complete, call [PFGroupsCreateRoleGetResultSize](pfgroupscreaterolegetresultsize.md) and [PFGroupsCreateRoleGetResult](pfgroupscreaterolegetresult.md) to get the result.
+This API is available on all platforms. Creates a new role within an existing group, with no members. Both the role ID and role name must be unique within the group, but the name can be the same as the ID. The role ID is set at creation and cannot be changed. Returns information about the role that was created. See also GroupDeleteRoleAsync. When the asynchronous task is complete, call [PFGroupsCreateRoleGetResultSize](pfgroupscreaterolegetresultsize.md) and [PFGroupsCreateRoleGetResult](pfgroupscreaterolegetresult.md) to get the result.
   
 ## Requirements  
   

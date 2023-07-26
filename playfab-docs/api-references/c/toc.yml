@@ -100,6 +100,24 @@
     href: pfaccountmanagement/functions/pfaccountmanagementclientgetplayerprofilegetresult.md
   - name: PFAccountManagementClientGetPlayerProfileGetResultSize
     href: pfaccountmanagement/functions/pfaccountmanagementclientgetplayerprofilegetresultsize.md
+  - name: PFAccountManagementClientGetPlayFabIDsFromNintendoServiceAccountIdsAsync
+    href: pfaccountmanagement/functions/pfaccountmanagementclientgetplayfabidsfromnintendoserviceaccountidsasync.md
+  - name: PFAccountManagementClientGetPlayFabIDsFromNintendoServiceAccountIdsGetResult
+    href: pfaccountmanagement/functions/pfaccountmanagementclientgetplayfabidsfromnintendoserviceaccountidsgetresult.md
+  - name: PFAccountManagementClientGetPlayFabIDsFromNintendoServiceAccountIdsGetResultSize
+    href: pfaccountmanagement/functions/pfaccountmanagementclientgetplayfabidsfromnintendoserviceaccountidsgetresultsize.md
+  - name: PFAccountManagementClientGetPlayFabIDsFromPSNAccountIDsAsync
+    href: pfaccountmanagement/functions/pfaccountmanagementclientgetplayfabidsfrompsnaccountidsasync.md
+  - name: PFAccountManagementClientGetPlayFabIDsFromPSNAccountIDsGetResult
+    href: pfaccountmanagement/functions/pfaccountmanagementclientgetplayfabidsfrompsnaccountidsgetresult.md
+  - name: PFAccountManagementClientGetPlayFabIDsFromPSNAccountIDsGetResultSize
+    href: pfaccountmanagement/functions/pfaccountmanagementclientgetplayfabidsfrompsnaccountidsgetresultsize.md
+  - name: PFAccountManagementClientGetPlayFabIDsFromSteamIDsAsync
+    href: pfaccountmanagement/functions/pfaccountmanagementclientgetplayfabidsfromsteamidsasync.md
+  - name: PFAccountManagementClientGetPlayFabIDsFromSteamIDsGetResult
+    href: pfaccountmanagement/functions/pfaccountmanagementclientgetplayfabidsfromsteamidsgetresult.md
+  - name: PFAccountManagementClientGetPlayFabIDsFromSteamIDsGetResultSize
+    href: pfaccountmanagement/functions/pfaccountmanagementclientgetplayfabidsfromsteamidsgetresultsize.md
   - name: PFAccountManagementClientGetPlayFabIDsFromXboxLiveIDsAsync
     href: pfaccountmanagement/functions/pfaccountmanagementclientgetplayfabidsfromxboxliveidsasync.md
   - name: PFAccountManagementClientGetPlayFabIDsFromXboxLiveIDsGetResult
@@ -108,8 +126,14 @@
     href: pfaccountmanagement/functions/pfaccountmanagementclientgetplayfabidsfromxboxliveidsgetresultsize.md
   - name: PFAccountManagementClientLinkCustomIDAsync
     href: pfaccountmanagement/functions/pfaccountmanagementclientlinkcustomidasync.md
+  - name: PFAccountManagementClientLinkNintendoServiceAccountAsync
+    href: pfaccountmanagement/functions/pfaccountmanagementclientlinknintendoserviceaccountasync.md
   - name: PFAccountManagementClientLinkOpenIdConnectAsync
     href: pfaccountmanagement/functions/pfaccountmanagementclientlinkopenidconnectasync.md
+  - name: PFAccountManagementClientLinkPSNAccountAsync
+    href: pfaccountmanagement/functions/pfaccountmanagementclientlinkpsnaccountasync.md
+  - name: PFAccountManagementClientLinkSteamAccountAsync
+    href: pfaccountmanagement/functions/pfaccountmanagementclientlinksteamaccountasync.md
   - name: PFAccountManagementClientLinkXboxAccountAsync
     href: pfaccountmanagement/functions/pfaccountmanagementclientlinkxboxaccountasync.md
   - name: PFAccountManagementClientReportPlayerAsync
@@ -118,24 +142,58 @@
     href: pfaccountmanagement/functions/pfaccountmanagementclientreportplayergetresult.md
   - name: PFAccountManagementClientUnlinkCustomIDAsync
     href: pfaccountmanagement/functions/pfaccountmanagementclientunlinkcustomidasync.md
+  - name: PFAccountManagementClientUnlinkNintendoServiceAccountAsync
+    href: pfaccountmanagement/functions/pfaccountmanagementclientunlinknintendoserviceaccountasync.md
   - name: PFAccountManagementClientUnlinkOpenIdConnectAsync
     href: pfaccountmanagement/functions/pfaccountmanagementclientunlinkopenidconnectasync.md
+  - name: PFAccountManagementClientUnlinkPSNAccountAsync
+    href: pfaccountmanagement/functions/pfaccountmanagementclientunlinkpsnaccountasync.md
+  - name: PFAccountManagementClientUnlinkSteamAccountAsync
+    href: pfaccountmanagement/functions/pfaccountmanagementclientunlinksteamaccountasync.md
   - name: PFAccountManagementClientUnlinkXboxAccountAsync
     href: pfaccountmanagement/functions/pfaccountmanagementclientunlinkxboxaccountasync.md
   - name: PFAccountManagementClientUpdateAvatarUrlAsync
     href: pfaccountmanagement/functions/pfaccountmanagementclientupdateavatarurlasync.md
+  - name: PFAuthenticationGetEntityWithSecretKeyAsync
+    href: pfauthentication/functions/pfauthenticationgetentitywithsecretkeyasync.md
+  - name: PFAuthenticationGetEntityWithSecretKeyGetResult
+    href: pfauthentication/functions/pfauthenticationgetentitywithsecretkeygetresult.md
   - name: PFAuthenticationLoginWithCustomIDAsync
     href: pfauthentication/functions/pfauthenticationloginwithcustomidasync.md
   - name: PFAuthenticationLoginWithCustomIDGetResult
     href: pfauthentication/functions/pfauthenticationloginwithcustomidgetresult.md
   - name: PFAuthenticationLoginWithCustomIDGetResultSize
     href: pfauthentication/functions/pfauthenticationloginwithcustomidgetresultsize.md
+  - name: PFAuthenticationLoginWithNintendoServiceAccountAsync
+    href: pfauthentication/functions/pfauthenticationloginwithnintendoserviceaccountasync.md
+  - name: PFAuthenticationLoginWithNintendoServiceAccountGetResult
+    href: pfauthentication/functions/pfauthenticationloginwithnintendoserviceaccountgetresult.md
+  - name: PFAuthenticationLoginWithNintendoServiceAccountGetResultSize
+    href: pfauthentication/functions/pfauthenticationloginwithnintendoserviceaccountgetresultsize.md
   - name: PFAuthenticationLoginWithOpenIdConnectAsync
     href: pfauthentication/functions/pfauthenticationloginwithopenidconnectasync.md
   - name: PFAuthenticationLoginWithOpenIdConnectGetResult
     href: pfauthentication/functions/pfauthenticationloginwithopenidconnectgetresult.md
   - name: PFAuthenticationLoginWithOpenIdConnectGetResultSize
     href: pfauthentication/functions/pfauthenticationloginwithopenidconnectgetresultsize.md
+  - name: PFAuthenticationLoginWithPSNAsync
+    href: pfauthentication/functions/pfauthenticationloginwithpsnasync.md
+  - name: PFAuthenticationLoginWithPSNGetResult
+    href: pfauthentication/functions/pfauthenticationloginwithpsngetresult.md
+  - name: PFAuthenticationLoginWithPSNGetResultSize
+    href: pfauthentication/functions/pfauthenticationloginwithpsngetresultsize.md
+  - name: PFAuthenticationLoginWithSteamAsync
+    href: pfauthentication/functions/pfauthenticationloginwithsteamasync.md
+  - name: PFAuthenticationLoginWithSteamGetResult
+    href: pfauthentication/functions/pfauthenticationloginwithsteamgetresult.md
+  - name: PFAuthenticationLoginWithSteamGetResultSize
+    href: pfauthentication/functions/pfauthenticationloginwithsteamgetresultsize.md
+  - name: PFAuthenticationLoginWithXboxAsync
+    href: pfauthentication/functions/pfauthenticationloginwithxboxasync.md
+  - name: PFAuthenticationLoginWithXboxGetResult
+    href: pfauthentication/functions/pfauthenticationloginwithxboxgetresult.md
+  - name: PFAuthenticationLoginWithXboxGetResultSize
+    href: pfauthentication/functions/pfauthenticationloginwithxboxgetresultsize.md
   - name: PFAuthenticationLoginWithXUserAsync
     href: pfauthentication/functions/pfauthenticationloginwithxuserasync.md
   - name: PFAuthenticationLoginWithXUserGetResult
@@ -144,8 +202,16 @@
     href: pfauthentication/functions/pfauthenticationloginwithxusergetresultsize.md
   - name: PFAuthenticationReLoginWithCustomIDAsync
     href: pfauthentication/functions/pfauthenticationreloginwithcustomidasync.md
+  - name: PFAuthenticationReLoginWithNintendoServiceAccountAsync
+    href: pfauthentication/functions/pfauthenticationreloginwithnintendoserviceaccountasync.md
   - name: PFAuthenticationReLoginWithOpenIdConnectAsync
     href: pfauthentication/functions/pfauthenticationreloginwithopenidconnectasync.md
+  - name: PFAuthenticationReLoginWithPSNAsync
+    href: pfauthentication/functions/pfauthenticationreloginwithpsnasync.md
+  - name: PFAuthenticationReLoginWithSteamAsync
+    href: pfauthentication/functions/pfauthenticationreloginwithsteamasync.md
+  - name: PFAuthenticationReLoginWithXboxAsync
+    href: pfauthentication/functions/pfauthenticationreloginwithxboxasync.md
   - name: PFAuthenticationReLoginWithXUserAsync
     href: pfauthentication/functions/pfauthenticationreloginwithxuserasync.md
   - name: PFCatalogCreateDraftItemAsync
@@ -314,6 +380,10 @@
     href: pfentity/functions/pfentitygetentitytokenresult.md
   - name: PFEntityGetEntityTokenResultSize
     href: pfentity/functions/pfentitygetentitytokenresultsize.md
+  - name: PFEntityGetSecretKey
+    href: pfentity/functions/pfentitygetsecretkey.md
+  - name: PFEntityGetSecretKeySize
+    href: pfentity/functions/pfentitygetsecretkeysize.md
   - name: PFEntityIsTitlePlayer
     href: pfentity/functions/pfentityistitleplayer.md
   - name: PFEntityRegisterTokenExpiredEventHandler
@@ -350,6 +420,34 @@
     href: pfeventpipeline/functions/pfeventpipelineremoveuploadingentity.md
   - name: PFEventPipelineUpdateConfiguration
     href: pfeventpipeline/functions/pfeventpipelineupdateconfiguration.md
+  - name: PFEventsCreateTelemetryKeyAsync
+    href: pfevents/functions/pfeventscreatetelemetrykeyasync.md
+  - name: PFEventsCreateTelemetryKeyGetResult
+    href: pfevents/functions/pfeventscreatetelemetrykeygetresult.md
+  - name: PFEventsCreateTelemetryKeyGetResultSize
+    href: pfevents/functions/pfeventscreatetelemetrykeygetresultsize.md
+  - name: PFEventsDeleteTelemetryKeyAsync
+    href: pfevents/functions/pfeventsdeletetelemetrykeyasync.md
+  - name: PFEventsDeleteTelemetryKeyGetResult
+    href: pfevents/functions/pfeventsdeletetelemetrykeygetresult.md
+  - name: PFEventsGetTelemetryKeyAsync
+    href: pfevents/functions/pfeventsgettelemetrykeyasync.md
+  - name: PFEventsGetTelemetryKeyGetResult
+    href: pfevents/functions/pfeventsgettelemetrykeygetresult.md
+  - name: PFEventsGetTelemetryKeyGetResultSize
+    href: pfevents/functions/pfeventsgettelemetrykeygetresultsize.md
+  - name: PFEventsListTelemetryKeysAsync
+    href: pfevents/functions/pfeventslisttelemetrykeysasync.md
+  - name: PFEventsListTelemetryKeysGetResult
+    href: pfevents/functions/pfeventslisttelemetrykeysgetresult.md
+  - name: PFEventsListTelemetryKeysGetResultSize
+    href: pfevents/functions/pfeventslisttelemetrykeysgetresultsize.md
+  - name: PFEventsSetTelemetryKeyActiveAsync
+    href: pfevents/functions/pfeventssettelemetrykeyactiveasync.md
+  - name: PFEventsSetTelemetryKeyActiveGetResult
+    href: pfevents/functions/pfeventssettelemetrykeyactivegetresult.md
+  - name: PFEventsSetTelemetryKeyActiveGetResultSize
+    href: pfevents/functions/pfeventssettelemetrykeyactivegetresultsize.md
   - name: PFEventsWriteEventsAsync
     href: pfevents/functions/pfeventswriteeventsasync.md
   - name: PFEventsWriteEventsGetResult
@@ -496,8 +594,12 @@
     href: pfhctrace/functions/pfhctraceimplmessage.md
   - name: PFHCTraceImplSetAreaVerbosity
     href: pfhctrace/functions/pfhctraceimplsetareaverbosity.md
+  - name: PFHCTraceSetClientCallback
+    href: pfhctrace/functions/pfhctracesetclientcallback.md
   - name: PFHCTraceSetPlatformCallbacks
     href: pfhctrace/functions/pfhctracesetplatformcallbacks.md
+  - name: PFHCTraceSetTraceToDebugger
+    href: pfhctrace/functions/pfhctracesettracetodebugger.md
   - name: PFHCGetLibVersion
     href: pfhttpclient/functions/pfhcgetlibversion.md
   - name: PFHCGetWebSocketConnectResult
@@ -558,6 +660,8 @@
     href: pfhttpclient/functions/pfhchttpcallsettracing.md
   - name: PFHCHttpDisableAssertsForSSLValidationInDevSandboxes
     href: pfhttpclient/functions/pfhchttpdisableassertsforsslvalidationindevsandboxes.md
+  - name: PFHCIsInitialized
+    href: pfhttpclient/functions/pfhcisinitialized.md
   - name: PFHCMemGetFunctions
     href: pfhttpclient/functions/pfhcmemgetfunctions.md
   - name: PFHCMemSetFunctions
@@ -644,6 +748,24 @@
     href: pfinventory/functions/pfinventoryredeemmicrosoftstoreinventoryitemsgetresult.md
   - name: PFInventoryRedeemMicrosoftStoreInventoryItemsGetResultSize
     href: pfinventory/functions/pfinventoryredeemmicrosoftstoreinventoryitemsgetresultsize.md
+  - name: PFInventoryRedeemNintendoEShopInventoryItemsAsync
+    href: pfinventory/functions/pfinventoryredeemnintendoeshopinventoryitemsasync.md
+  - name: PFInventoryRedeemNintendoEShopInventoryItemsGetResult
+    href: pfinventory/functions/pfinventoryredeemnintendoeshopinventoryitemsgetresult.md
+  - name: PFInventoryRedeemNintendoEShopInventoryItemsGetResultSize
+    href: pfinventory/functions/pfinventoryredeemnintendoeshopinventoryitemsgetresultsize.md
+  - name: PFInventoryRedeemPlayStationStoreInventoryItemsAsync
+    href: pfinventory/functions/pfinventoryredeemplaystationstoreinventoryitemsasync.md
+  - name: PFInventoryRedeemPlayStationStoreInventoryItemsGetResult
+    href: pfinventory/functions/pfinventoryredeemplaystationstoreinventoryitemsgetresult.md
+  - name: PFInventoryRedeemPlayStationStoreInventoryItemsGetResultSize
+    href: pfinventory/functions/pfinventoryredeemplaystationstoreinventoryitemsgetresultsize.md
+  - name: PFInventoryRedeemSteamInventoryItemsAsync
+    href: pfinventory/functions/pfinventoryredeemsteaminventoryitemsasync.md
+  - name: PFInventoryRedeemSteamInventoryItemsGetResult
+    href: pfinventory/functions/pfinventoryredeemsteaminventoryitemsgetresult.md
+  - name: PFInventoryRedeemSteamInventoryItemsGetResultSize
+    href: pfinventory/functions/pfinventoryredeemsteaminventoryitemsgetresultsize.md
   - name: PFInventorySubtractInventoryItemsAsync
     href: pfinventory/functions/pfinventorysubtractinventoryitemsasync.md
   - name: PFInventorySubtractInventoryItemsGetResult
@@ -860,12 +982,30 @@
     href: pftypes/enums/pfuserorigination.md
 - name: Structures
   items:
+  - name: PFAccountManagementBanInfo
+    href: pfaccountmanagementtypes/structs/pfaccountmanagementbaninfo.md
+  - name: PFAccountManagementBanRequest
+    href: pfaccountmanagementtypes/structs/pfaccountmanagementbanrequest.md
+  - name: PFAccountManagementClientLinkNintendoServiceAccountRequest
+    href: pfaccountmanagementtypes/structs/pfaccountmanagementclientlinknintendoserviceaccountrequest.md
+  - name: PFAccountManagementClientLinkPSNAccountRequest
+    href: pfaccountmanagementtypes/structs/pfaccountmanagementclientlinkpsnaccountrequest.md
   - name: PFAccountManagementClientLinkXboxAccountRequest
     href: pfaccountmanagementtypes/structs/pfaccountmanagementclientlinkxboxaccountrequest.md
+  - name: PFAccountManagementClientUnlinkNintendoServiceAccountRequest
+    href: pfaccountmanagementtypes/structs/pfaccountmanagementclientunlinknintendoserviceaccountrequest.md
+  - name: PFAccountManagementClientUnlinkPSNAccountRequest
+    href: pfaccountmanagementtypes/structs/pfaccountmanagementclientunlinkpsnaccountrequest.md
   - name: PFAccountManagementClientUnlinkXboxAccountRequest
     href: pfaccountmanagementtypes/structs/pfaccountmanagementclientunlinkxboxaccountrequest.md
   - name: PFAccountManagementClientUpdateAvatarUrlRequest
     href: pfaccountmanagementtypes/structs/pfaccountmanagementclientupdateavatarurlrequest.md
+  - name: PFAccountManagementFacebookInstantGamesPlayFabIdPair
+    href: pfaccountmanagementtypes/structs/pfaccountmanagementfacebookinstantgamesplayfabidpair.md
+  - name: PFAccountManagementFacebookPlayFabIdPair
+    href: pfaccountmanagementtypes/structs/pfaccountmanagementfacebookplayfabidpair.md
+  - name: PFAccountManagementGameCenterPlayFabIdPair
+    href: pfaccountmanagementtypes/structs/pfaccountmanagementgamecenterplayfabidpair.md
   - name: PFAccountManagementGetAccountInfoRequest
     href: pfaccountmanagementtypes/structs/pfaccountmanagementgetaccountinforequest.md
   - name: PFAccountManagementGetAccountInfoResult
@@ -878,36 +1018,98 @@
     href: pfaccountmanagementtypes/structs/pfaccountmanagementgetplayerprofilerequest.md
   - name: PFAccountManagementGetPlayerProfileResult
     href: pfaccountmanagementtypes/structs/pfaccountmanagementgetplayerprofileresult.md
+  - name: PFAccountManagementGetPlayFabIDsFromNintendoServiceAccountIdsRequest
+    href: pfaccountmanagementtypes/structs/pfaccountmanagementgetplayfabidsfromnintendoserviceaccountidsrequest.md
+  - name: PFAccountManagementGetPlayFabIDsFromNintendoServiceAccountIdsResult
+    href: pfaccountmanagementtypes/structs/pfaccountmanagementgetplayfabidsfromnintendoserviceaccountidsresult.md
+  - name: PFAccountManagementGetPlayFabIDsFromPSNAccountIDsRequest
+    href: pfaccountmanagementtypes/structs/pfaccountmanagementgetplayfabidsfrompsnaccountidsrequest.md
+  - name: PFAccountManagementGetPlayFabIDsFromPSNAccountIDsResult
+    href: pfaccountmanagementtypes/structs/pfaccountmanagementgetplayfabidsfrompsnaccountidsresult.md
+  - name: PFAccountManagementGetPlayFabIDsFromSteamIDsRequest
+    href: pfaccountmanagementtypes/structs/pfaccountmanagementgetplayfabidsfromsteamidsrequest.md
+  - name: PFAccountManagementGetPlayFabIDsFromSteamIDsResult
+    href: pfaccountmanagementtypes/structs/pfaccountmanagementgetplayfabidsfromsteamidsresult.md
   - name: PFAccountManagementGetPlayFabIDsFromXboxLiveIDsRequest
     href: pfaccountmanagementtypes/structs/pfaccountmanagementgetplayfabidsfromxboxliveidsrequest.md
   - name: PFAccountManagementGetPlayFabIDsFromXboxLiveIDsResult
     href: pfaccountmanagementtypes/structs/pfaccountmanagementgetplayfabidsfromxboxliveidsresult.md
+  - name: PFAccountManagementGetTitlePlayersFromProviderIDsResponse
+    href: pfaccountmanagementtypes/structs/pfaccountmanagementgettitleplayersfromprovideridsresponse.md
+  - name: PFAccountManagementGooglePlayFabIdPair
+    href: pfaccountmanagementtypes/structs/pfaccountmanagementgoogleplayfabidpair.md
+  - name: PFAccountManagementGooglePlayGamesPlayFabIdPair
+    href: pfaccountmanagementtypes/structs/pfaccountmanagementgoogleplaygamesplayfabidpair.md
+  - name: PFAccountManagementKongregatePlayFabIdPair
+    href: pfaccountmanagementtypes/structs/pfaccountmanagementkongregateplayfabidpair.md
   - name: PFAccountManagementLinkCustomIDRequest
     href: pfaccountmanagementtypes/structs/pfaccountmanagementlinkcustomidrequest.md
+  - name: PFAccountManagementLinkKongregateAccountRequest
+    href: pfaccountmanagementtypes/structs/pfaccountmanagementlinkkongregateaccountrequest.md
   - name: PFAccountManagementLinkOpenIdConnectRequest
     href: pfaccountmanagementtypes/structs/pfaccountmanagementlinkopenidconnectrequest.md
+  - name: PFAccountManagementLinkSteamAccountRequest
+    href: pfaccountmanagementtypes/structs/pfaccountmanagementlinksteamaccountrequest.md
+  - name: PFAccountManagementLinkTwitchAccountRequest
+    href: pfaccountmanagementtypes/structs/pfaccountmanagementlinktwitchaccountrequest.md
+  - name: PFAccountManagementNintendoServiceAccountPlayFabIdPair
+    href: pfaccountmanagementtypes/structs/pfaccountmanagementnintendoserviceaccountplayfabidpair.md
+  - name: PFAccountManagementNintendoSwitchPlayFabIdPair
+    href: pfaccountmanagementtypes/structs/pfaccountmanagementnintendoswitchplayfabidpair.md
+  - name: PFAccountManagementPSNAccountPlayFabIdPair
+    href: pfaccountmanagementtypes/structs/pfaccountmanagementpsnaccountplayfabidpair.md
   - name: PFAccountManagementReportPlayerClientRequest
     href: pfaccountmanagementtypes/structs/pfaccountmanagementreportplayerclientrequest.md
   - name: PFAccountManagementReportPlayerClientResult
     href: pfaccountmanagementtypes/structs/pfaccountmanagementreportplayerclientresult.md
+  - name: PFAccountManagementServerCustomIDPlayFabIDPair
+    href: pfaccountmanagementtypes/structs/pfaccountmanagementservercustomidplayfabidpair.md
+  - name: PFAccountManagementSteamPlayFabIdPair
+    href: pfaccountmanagementtypes/structs/pfaccountmanagementsteamplayfabidpair.md
+  - name: PFAccountManagementTwitchPlayFabIdPair
+    href: pfaccountmanagementtypes/structs/pfaccountmanagementtwitchplayfabidpair.md
   - name: PFAccountManagementUnlinkCustomIDRequest
     href: pfaccountmanagementtypes/structs/pfaccountmanagementunlinkcustomidrequest.md
+  - name: PFAccountManagementUnlinkKongregateAccountRequest
+    href: pfaccountmanagementtypes/structs/pfaccountmanagementunlinkkongregateaccountrequest.md
   - name: PFAccountManagementUnlinkOpenIdConnectRequest
     href: pfaccountmanagementtypes/structs/pfaccountmanagementunlinkopenidconnectrequest.md
+  - name: PFAccountManagementUnlinkSteamAccountRequest
+    href: pfaccountmanagementtypes/structs/pfaccountmanagementunlinksteamaccountrequest.md
+  - name: PFAccountManagementUnlinkTwitchAccountRequest
+    href: pfaccountmanagementtypes/structs/pfaccountmanagementunlinktwitchaccountrequest.md
+  - name: PFAccountManagementUpdateBanRequest
+    href: pfaccountmanagementtypes/structs/pfaccountmanagementupdatebanrequest.md
   - name: PFAccountManagementXboxLiveAccountPlayFabIdPair
     href: pfaccountmanagementtypes/structs/pfaccountmanagementxboxliveaccountplayfabidpair.md
+  - name: PFAuthenticationAuthenticateCustomIdRequest
+    href: pfauthenticationtypes/structs/pfauthenticationauthenticatecustomidrequest.md
+  - name: PFAuthenticationAuthenticateCustomIdResult
+    href: pfauthenticationtypes/structs/pfauthenticationauthenticatecustomidresult.md
+  - name: PFAuthenticationEntityTokenResponse
+    href: pfauthenticationtypes/structs/pfauthenticationentitytokenresponse.md
   - name: PFAuthenticationLoginResult
     href: pfauthenticationtypes/structs/pfauthenticationloginresult.md
   - name: PFAuthenticationLoginWithCustomIDRequest
     href: pfauthenticationtypes/structs/pfauthenticationloginwithcustomidrequest.md
+  - name: PFAuthenticationLoginWithNintendoServiceAccountRequest
+    href: pfauthenticationtypes/structs/pfauthenticationloginwithnintendoserviceaccountrequest.md
   - name: PFAuthenticationLoginWithOpenIdConnectRequest
     href: pfauthenticationtypes/structs/pfauthenticationloginwithopenidconnectrequest.md
+  - name: PFAuthenticationLoginWithPSNRequest
+    href: pfauthenticationtypes/structs/pfauthenticationloginwithpsnrequest.md
+  - name: PFAuthenticationLoginWithSteamRequest
+    href: pfauthenticationtypes/structs/pfauthenticationloginwithsteamrequest.md
+  - name: PFAuthenticationLoginWithXboxRequest
+    href: pfauthenticationtypes/structs/pfauthenticationloginwithxboxrequest.md
   - name: PFAuthenticationLoginWithXUserRequest
     href: pfauthenticationtypes/structs/pfauthenticationloginwithxuserrequest.md
   - name: PFAuthenticationUserSettings
     href: pfauthenticationtypes/structs/pfauthenticationusersettings.md
   - name: PFCatalogCatalogAlternateId
     href: pfcatalogtypes/structs/pfcatalogcatalogalternateid.md
+  - name: PFCatalogCatalogConfig
+    href: pfcatalogtypes/structs/pfcatalogcatalogconfig.md
   - name: PFCatalogCatalogItem
     href: pfcatalogtypes/structs/pfcatalogcatalogitem.md
   - name: PFCatalogCatalogItemReference
@@ -1010,6 +1212,8 @@
     href: pfcatalogtypes/structs/pfcatalogreview.md
   - name: PFCatalogReviewItemRequest
     href: pfcatalogtypes/structs/pfcatalogreviewitemrequest.md
+  - name: PFCatalogReviewTakedown
+    href: pfcatalogtypes/structs/pfcatalogreviewtakedown.md
   - name: PFCatalogSearchItemsRequest
     href: pfcatalogtypes/structs/pfcatalogsearchitemsrequest.md
   - name: PFCatalogSearchItemsResponse
@@ -1088,8 +1292,30 @@
     href: pfeventpipeline/structs/pfeventpipelinetelemetrykeyconfig.md
   - name: PFUploadedEvent
     href: pfeventpipeline/structs/pfuploadedevent.md
+  - name: PFEventsCreateTelemetryKeyRequest
+    href: pfeventstypes/structs/pfeventscreatetelemetrykeyrequest.md
+  - name: PFEventsCreateTelemetryKeyResponse
+    href: pfeventstypes/structs/pfeventscreatetelemetrykeyresponse.md
+  - name: PFEventsDeleteTelemetryKeyRequest
+    href: pfeventstypes/structs/pfeventsdeletetelemetrykeyrequest.md
+  - name: PFEventsDeleteTelemetryKeyResponse
+    href: pfeventstypes/structs/pfeventsdeletetelemetrykeyresponse.md
   - name: PFEventsEventContents
     href: pfeventstypes/structs/pfeventseventcontents.md
+  - name: PFEventsGetTelemetryKeyRequest
+    href: pfeventstypes/structs/pfeventsgettelemetrykeyrequest.md
+  - name: PFEventsGetTelemetryKeyResponse
+    href: pfeventstypes/structs/pfeventsgettelemetrykeyresponse.md
+  - name: PFEventsListTelemetryKeysRequest
+    href: pfeventstypes/structs/pfeventslisttelemetrykeysrequest.md
+  - name: PFEventsListTelemetryKeysResponse
+    href: pfeventstypes/structs/pfeventslisttelemetrykeysresponse.md
+  - name: PFEventsSetTelemetryKeyActiveRequest
+    href: pfeventstypes/structs/pfeventssettelemetrykeyactiverequest.md
+  - name: PFEventsSetTelemetryKeyActiveResponse
+    href: pfeventstypes/structs/pfeventssettelemetrykeyactiveresponse.md
+  - name: PFEventsTelemetryKeyDetails
+    href: pfeventstypes/structs/pfeventstelemetrykeydetails.md
   - name: PFEventsWriteEventsRequest
     href: pfeventstypes/structs/pfeventswriteeventsrequest.md
   - name: PFEventsWriteEventsResponse
@@ -1240,6 +1466,8 @@
     href: pfinventorytypes/structs/pfinventorygetmicrosoftstoreaccesstokensrequest.md
   - name: PFInventoryGetMicrosoftStoreAccessTokensResponse
     href: pfinventorytypes/structs/pfinventorygetmicrosoftstoreaccesstokensresponse.md
+  - name: PFInventoryGooglePlayProductPurchase
+    href: pfinventorytypes/structs/pfinventorygoogleplayproductpurchase.md
   - name: PFInventoryInitialValues
     href: pfinventorytypes/structs/pfinventoryinitialvalues.md
   - name: PFInventoryInventoryItem
@@ -1260,6 +1488,18 @@
     href: pfinventorytypes/structs/pfinventoryredeemmicrosoftstoreinventoryitemsrequest.md
   - name: PFInventoryRedeemMicrosoftStoreInventoryItemsResponse
     href: pfinventorytypes/structs/pfinventoryredeemmicrosoftstoreinventoryitemsresponse.md
+  - name: PFInventoryRedeemNintendoEShopInventoryItemsRequest
+    href: pfinventorytypes/structs/pfinventoryredeemnintendoeshopinventoryitemsrequest.md
+  - name: PFInventoryRedeemNintendoEShopInventoryItemsResponse
+    href: pfinventorytypes/structs/pfinventoryredeemnintendoeshopinventoryitemsresponse.md
+  - name: PFInventoryRedeemPlayStationStoreInventoryItemsRequest
+    href: pfinventorytypes/structs/pfinventoryredeemplaystationstoreinventoryitemsrequest.md
+  - name: PFInventoryRedeemPlayStationStoreInventoryItemsResponse
+    href: pfinventorytypes/structs/pfinventoryredeemplaystationstoreinventoryitemsresponse.md
+  - name: PFInventoryRedeemSteamInventoryItemsRequest
+    href: pfinventorytypes/structs/pfinventoryredeemsteaminventoryitemsrequest.md
+  - name: PFInventoryRedeemSteamInventoryItemsResponse
+    href: pfinventorytypes/structs/pfinventoryredeemsteaminventoryitemsresponse.md
   - name: PFInventoryRedemptionFailure
     href: pfinventorytypes/structs/pfinventoryredemptionfailure.md
   - name: PFInventoryRedemptionSuccess
@@ -1270,6 +1510,8 @@
     href: pfinventorytypes/structs/pfinventorysubtractinventoryitemsrequest.md
   - name: PFInventorySubtractInventoryItemsResponse
     href: pfinventorytypes/structs/pfinventorysubtractinventoryitemsresponse.md
+  - name: PFInventoryTransaction
+    href: pfinventorytypes/structs/pfinventorytransaction.md
   - name: PFInventoryTransactionOperation
     href: pfinventorytypes/structs/pfinventorytransactionoperation.md
   - name: PFInventoryTransactionPurchaseDetails
@@ -1322,6 +1564,8 @@
     href: pfmultiplayerservertypes/structs/pfmultiplayerserverlistqosserversfortitleresponse.md
   - name: PFMultiplayerServerPort
     href: pfmultiplayerservertypes/structs/pfmultiplayerserverport.md
+  - name: PFMultiplayerServerPublicIpAddress
+    href: pfmultiplayerservertypes/structs/pfmultiplayerserverpublicipaddress.md
   - name: PFMultiplayerServerQosServer
     href: pfmultiplayerservertypes/structs/pfmultiplayerserverqosserver.md
   - name: PFMultiplayerServerRequestMultiplayerServerRequest
@@ -1356,10 +1600,6 @@
     href: pfprofilestypes/structs/pfprofilesentityprofilefilemetadata.md
   - name: PFProfilesEntityProfileFileMetadataDictionaryEntry
     href: pfprofilestypes/structs/pfprofilesentityprofilefilemetadatadictionaryentry.md
-  - name: PFProfilesEntityStatisticChildValue
-    href: pfprofilestypes/structs/pfprofilesentitystatisticchildvalue.md
-  - name: PFProfilesEntityStatisticChildValueDictionaryEntry
-    href: pfprofilestypes/structs/pfprofilesentitystatisticchildvaluedictionaryentry.md
   - name: PFProfilesEntityStatisticValue
     href: pfprofilestypes/structs/pfprofilesentitystatisticvalue.md
   - name: PFProfilesEntityStatisticValueDictionaryEntry
@@ -1390,6 +1630,8 @@
     href: pfsegmentstypes/structs/pfsegmentscontactemailinfo.md
   - name: PFSegmentsGetPlayerSegmentsResult
     href: pfsegmentstypes/structs/pfsegmentsgetplayersegmentsresult.md
+  - name: PFSegmentsGetPlayersSegmentsRequest
+    href: pfsegmentstypes/structs/pfsegmentsgetplayerssegmentsrequest.md
   - name: PFSegmentsGetPlayerTagsRequest
     href: pfsegmentstypes/structs/pfsegmentsgetplayertagsrequest.md
   - name: PFSegmentsGetPlayerTagsResult
@@ -1402,6 +1644,8 @@
     href: pfsegmentstypes/structs/pfsegmentsplayerlocation.md
   - name: PFSegmentsPlayerLocationDictionaryEntry
     href: pfsegmentstypes/structs/pfsegmentsplayerlocationdictionaryentry.md
+  - name: PFSegmentsPlayerProfile
+    href: pfsegmentstypes/structs/pfsegmentsplayerprofile.md
   - name: PFSegmentsPlayerStatistic
     href: pfsegmentstypes/structs/pfsegmentsplayerstatistic.md
   - name: PFSegmentsPushNotificationRegistration

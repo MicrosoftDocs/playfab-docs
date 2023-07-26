@@ -5,7 +5,7 @@ description: "Services C API overview - PFMultiplayerServerTypes.h"
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 06/20/2023
 ---
 
 # Services C API overview - PFMultiplayerServerTypes.h
@@ -31,6 +31,7 @@ ms.date: 03/09/2023
 | [PFMultiplayerServerListQosServersForTitleRequest](structs/pfmultiplayerserverlistqosserversfortitlerequest.md) | PFMultiplayerServerListQosServersForTitleRequest data model. Returns a list of quality of service servers for a title. |  
 | [PFMultiplayerServerListQosServersForTitleResponse](structs/pfmultiplayerserverlistqosserversfortitleresponse.md) | PFMultiplayerServerListQosServersForTitleResponse data model. |  
 | [PFMultiplayerServerPort](structs/pfmultiplayerserverport.md) | PFMultiplayerServerPort data model. |  
+| [PFMultiplayerServerPublicIpAddress](structs/pfmultiplayerserverpublicipaddress.md) | PFMultiplayerServerPublicIpAddress data model. |  
 | [PFMultiplayerServerQosServer](structs/pfmultiplayerserverqosserver.md) | PFMultiplayerServerQosServer data model. |  
 | [PFMultiplayerServerRequestMultiplayerServerRequest](structs/pfmultiplayerserverrequestmultiplayerserverrequest.md) | PFMultiplayerServerRequestMultiplayerServerRequest data model. Requests a multiplayer server session from a particular build in any of the given preferred regions. |  
 | [PFMultiplayerServerRequestMultiplayerServerResponse](structs/pfmultiplayerserverrequestmultiplayerserverresponse.md) | PFMultiplayerServerRequestMultiplayerServerResponse data model. |  

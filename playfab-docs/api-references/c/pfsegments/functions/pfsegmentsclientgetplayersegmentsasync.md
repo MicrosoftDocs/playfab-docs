@@ -5,7 +5,7 @@ description: "List all segments that a player currently belongs to at this momen
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 05/24/2023
+ms.date: 06/20/2023
 ---
 
 # PFSegmentsClientGetPlayerSegmentsAsync  
@@ -40,7 +40,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-When the asynchronous task is complete, call [PFSegmentsClientGetPlayerSegmentsGetResultSize](pfsegmentsclientgetplayersegmentsgetresultsize.md) and [PFSegmentsClientGetPlayerSegmentsGetResult](pfsegmentsclientgetplayersegmentsgetresult.md) to get the result.
+This API is available on all platforms. When the asynchronous task is complete, call [PFSegmentsClientGetPlayerSegmentsGetResultSize](pfsegmentsclientgetplayersegmentsgetresultsize.md) and [PFSegmentsClientGetPlayerSegmentsGetResult](pfsegmentsclientgetplayersegmentsgetresult.md) to get the result.
   
 ## Requirements  
   

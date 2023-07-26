@@ -5,7 +5,7 @@ description: "Retrieves the publisher-specific custom data for the user which ca
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 05/24/2023
+ms.date: 06/20/2023
 ---
 
 # PFPlayerDataManagementClientGetUserPublisherReadOnlyDataAsync  
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-Data is stored as JSON key-value pairs. If the Keys parameter is provided, the data object returned will only contain the data specific to the indicated Keys. Otherwise, the full set of custom user data will be returned. See also ClientGetUserPublisherDataAsync, ClientUpdateUserPublisherDataAsync. When the asynchronous task is complete, call [PFPlayerDataManagementClientGetUserPublisherReadOnlyDataGetResultSize](pfplayerdatamanagementclientgetuserpublisherreadonlydatagetresultsize.md) and [PFPlayerDataManagementClientGetUserPublisherReadOnlyDataGetResult](pfplayerdatamanagementclientgetuserpublisherreadonlydatagetresult.md) to get the result.
+This API is available on all platforms. Data is stored as JSON key-value pairs. If the Keys parameter is provided, the data object returned will only contain the data specific to the indicated Keys. Otherwise, the full set of custom user data will be returned. See also ClientGetUserPublisherDataAsync, ClientUpdateUserPublisherDataAsync. When the asynchronous task is complete, call [PFPlayerDataManagementClientGetUserPublisherReadOnlyDataGetResultSize](pfplayerdatamanagementclientgetuserpublisherreadonlydatagetresultsize.md) and [PFPlayerDataManagementClientGetUserPublisherReadOnlyDataGetResult](pfplayerdatamanagementclientgetuserpublisherreadonlydatagetresult.md) to get the result.
   
 ## Requirements  
   

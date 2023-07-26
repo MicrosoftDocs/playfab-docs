@@ -5,7 +5,7 @@ description: "Search for a given item and return a set of bundles and stores con
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 05/24/2023
+ms.date: 06/20/2023
 ---
 
 # PFCatalogGetItemContainersAsync  
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-Given an item, return a set of bundles and stores containing the item. When the asynchronous task is complete, call [PFCatalogGetItemContainersGetResultSize](pfcataloggetitemcontainersgetresultsize.md) and [PFCatalogGetItemContainersGetResult](pfcataloggetitemcontainersgetresult.md) to get the result.
+This API is available on all platforms. Given an item, return a set of bundles and stores containing the item. When the asynchronous task is complete, call [PFCatalogGetItemContainersGetResultSize](pfcataloggetitemcontainersgetresultsize.md) and [PFCatalogGetItemContainersGetResult](pfcataloggetitemcontainersgetresult.md) to get the result.
   
 ## Requirements  
   

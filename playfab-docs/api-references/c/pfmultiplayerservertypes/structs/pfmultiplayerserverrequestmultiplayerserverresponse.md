@@ -5,7 +5,7 @@ description: "PFMultiplayerServerRequestMultiplayerServerResponse data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 05/24/2023
+ms.date: 06/20/2023
 ---
 
 # PFMultiplayerServerRequestMultiplayerServerResponse  
@@ -24,6 +24,8 @@ typedef struct PFMultiplayerServerRequestMultiplayerServerResponse {
     time_t const* lastStateTransitionTime;  
     PFMultiplayerServerPort const* ports;  
     uint32_t portsCount;  
+    PFMultiplayerServerPublicIpAddress const* publicIPV4Addresses;  
+    uint32_t publicIPV4AddressesCount;  
     const char* region;  
     const char* serverId;  
     const char* sessionId;  
@@ -56,7 +58,7 @@ Count of connectedPlayers
 **`iPV4Address`** &nbsp; const char*  
 *is null-terminated*  
   
-(Optional) The IPv4 address of the virtual machine that is hosting this multiplayer server.
+(Optional) The public IPv4 address of the virtual machine that is hosting this multiplayer server.
   
 **`lastStateTransitionTime`** &nbsp; time_t const*  
 *may be nullptr*  
@@ -71,6 +73,15 @@ Count of connectedPlayers
 **`portsCount`** &nbsp; uint32_t  
   
 Count of ports
+  
+**`publicIPV4Addresses`** &nbsp; [PFMultiplayerServerPublicIpAddress](pfmultiplayerserverpublicipaddress.md) const*  
+*may be nullptr*  
+  
+(Optional) The list of public Ipv4 addresses associated with the server.
+  
+**`publicIPV4AddressesCount`** &nbsp; uint32_t  
+  
+Count of publicIPV4Addresses
   
 **`region`** &nbsp; const char*  
 *is null-terminated*  

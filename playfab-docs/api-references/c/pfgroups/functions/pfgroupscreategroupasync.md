@@ -5,7 +5,7 @@ description: "Creates a new group."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 05/24/2023
+ms.date: 06/20/2023
 ---
 
 # PFGroupsCreateGroupAsync  
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-Creates a new group, as well as administration and member roles, based off of a title's group template. Returns information about the group that was created. See also GroupAddMembersAsync, GroupApplyToGroupAsync, GroupDeleteGroupAsync, GroupInviteToGroupAsync, GroupListGroupMembersAsync, GroupRemoveMembersAsync. When the asynchronous task is complete, call [PFGroupsCreateGroupGetResultSize](pfgroupscreategroupgetresultsize.md) and [PFGroupsCreateGroupGetResult](pfgroupscreategroupgetresult.md) to get the result.
+This API is available on all platforms. Creates a new group, as well as administration and member roles, based off of a title's group template. Returns information about the group that was created. See also GroupAddMembersAsync, GroupApplyToGroupAsync, GroupDeleteGroupAsync, GroupInviteToGroupAsync, GroupListGroupMembersAsync, GroupRemoveMembersAsync. When the asynchronous task is complete, call [PFGroupsCreateGroupGetResultSize](pfgroupscreategroupgetresultsize.md) and [PFGroupsCreateGroupGetResult](pfgroupscreategroupgetresult.md) to get the result.
   
 ## Requirements  
   
