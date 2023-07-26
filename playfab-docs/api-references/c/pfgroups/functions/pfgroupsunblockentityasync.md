@@ -5,7 +5,7 @@ description: "Unblocks a list of entities from joining a group"
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 05/24/2023
+ms.date: 06/20/2023
 ---
 
 # PFGroupsUnblockEntityAsync  
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-Unblocks a list of entities from joining a group. No data is returned in the case of success. Call XAsyncGetStatus to get the status of the operation. If the service call is unsuccessful, the async result will be one of global PlayFab Service errors. See doc page "Handling PlayFab Errors" for more details on error handling.
+This API is available on all platforms. Unblocks a list of entities from joining a group. No data is returned in the case of success. See also GroupBlockEntityAsync, GroupListGroupBlocksAsync. Call XAsyncGetStatus to get the status of the operation. If the service call is unsuccessful, the async result will be one of global PlayFab Service errors. See doc page "Handling PlayFab Errors" for more details on error handling.
   
 ## Requirements  
   

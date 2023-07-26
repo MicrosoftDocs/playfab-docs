@@ -5,7 +5,7 @@ description: "Invites a player to join a group"
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 05/24/2023
+ms.date: 06/20/2023
 ---
 
 # PFGroupsInviteToGroupAsync  
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-Invites a player to join a group, if they are not blocked by the group. An optional role can be provided to automatically assign the player to the role if they accept the invitation. By default, if the entity has an application to the group outstanding, this will accept the application instead and return an error indicating such, rather than creating a duplicate invitation to join that will need to be cleaned up later. Returns information about the new invitation or an error indicating an existing application to join was accepted. When the asynchronous task is complete, call [PFGroupsInviteToGroupGetResultSize](pfgroupsinvitetogroupgetresultsize.md) and [PFGroupsInviteToGroupGetResult](pfgroupsinvitetogroupgetresult.md) to get the result.
+This API is available on all platforms. Invites a player to join a group, if they are not blocked by the group. An optional role can be provided to automatically assign the player to the role if they accept the invitation. By default, if the entity has an application to the group outstanding, this will accept the application instead and return an error indicating such, rather than creating a duplicate invitation to join that will need to be cleaned up later. Returns information about the new invitation or an error indicating an existing application to join was accepted. See also GroupAcceptGroupInvitationAsync, GroupListGroupInvitationsAsync, GroupListMembershipOpportunitiesAsync, GroupRemoveGroupInvitationAsync. When the asynchronous task is complete, call [PFGroupsInviteToGroupGetResultSize](pfgroupsinvitetogroupgetresultsize.md) and [PFGroupsInviteToGroupGetResult](pfgroupsinvitetogroupgetresult.md) to get the result.
   
 ## Requirements  
   

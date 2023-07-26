@@ -5,7 +5,7 @@ description: "Transfer inventory items. When transferring across collections, a 
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 05/24/2023
+ms.date: 06/20/2023
 ---
 
 # PFInventoryTransferInventoryItemsAsync  
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-Transfer the specified inventory items of an entity's container Id to another entity's container Id. When the asynchronous task is complete, call [PFInventoryTransferInventoryItemsGetResultSize](pfinventorytransferinventoryitemsgetresultsize.md) and [PFInventoryTransferInventoryItemsGetResult](pfinventorytransferinventoryitemsgetresult.md) to get the result.
+This API is available on all platforms. Transfer the specified inventory items of an entity's container Id to another entity's container Id. When the asynchronous task is complete, call [PFInventoryTransferInventoryItemsGetResultSize](pfinventorytransferinventoryitemsgetresultsize.md) and [PFInventoryTransferInventoryItemsGetResult](pfinventorytransferinventoryitemsgetresult.md) to get the result.
   
 ## Requirements  
   

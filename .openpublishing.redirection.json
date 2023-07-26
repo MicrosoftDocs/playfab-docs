@@ -254,6 +254,76 @@
             "source_path": "playfab-docs/features/multiplayer/networking/ios-specific-requirements.md",
             "redirect_url": "/gaming/playfab/features/multiplayer/networking/apple-specific-requirements",
             "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/sdks/actionscript/index.md",
+            "redirect_url": "/gaming/playfab/sdks/playfab-sdk-intro",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/sdks/actionscript/quickstart.md",
+            "redirect_url": "/gaming/playfab/sdks/playfab-sdk-intro",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/sdks/androidstudio/index.md",
+            "redirect_url": "/gaming/playfab/sdks/playfab-sdk-intro",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/sdks/frameworks/index.yml",
+            "redirect_url": "/gaming/playfab/sdks/playfab-sdk-intro",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/sdks/gdk/async.md",
+            "redirect_url": "/gaming/playfab/sdks/c/async",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/sdks/gdk/errors.md",
+            "redirect_url": "/gaming/playfab/sdks/c/errors",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/sdks/gdk/index.md",
+            "redirect_url": "/gaming/playfab/sdks/c",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/sdks/gdk/memory.md",
+            "redirect_url": "/gaming/playfab/sdks/c/memory",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/sdks/gdk/quickstart.md",
+            "redirect_url": "/gaming/playfab/sdks/c/quickstart-gdk",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/sdks/gdk/relogin.md",
+            "redirect_url": "/gaming/playfab/sdks/c/relogin",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/sdks/gdk/tracing.md",
+            "redirect_url": "/gaming/playfab/sdks/c/tracing",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/event-pipeline/eventpipeline.md",
+            "redirect_url": "/gaming/playfab/sdks/c/event-pipeline/eventpipeline",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/event-pipeline/eventpipeline-tutorial.md",
+            "redirect_url": "/gaming/playfab/sdks/c/event-pipeline/eventpipeline-tutorial",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/sdks/scripting/index.yml",
+            "redirect_url": "/gaming/playfab/sdks/playfab-sdk-intro",
+            "redirect_document_id": false
         }
     ]
 }

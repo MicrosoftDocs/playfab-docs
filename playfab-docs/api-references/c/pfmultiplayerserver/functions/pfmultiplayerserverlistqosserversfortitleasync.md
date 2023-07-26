@@ -5,7 +5,7 @@ description: "Lists quality of service servers for the title. By default, server
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 05/24/2023
+ms.date: 06/20/2023
 ---
 
 # PFMultiplayerServerListQosServersForTitleAsync  
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-Returns a list of quality of service servers for a title. When the asynchronous task is complete, call [PFMultiplayerServerListQosServersForTitleGetResultSize](pfmultiplayerserverlistqosserversfortitlegetresultsize.md) and [PFMultiplayerServerListQosServersForTitleGetResult](pfmultiplayerserverlistqosserversfortitlegetresult.md) to get the result.
+This API is available on all platforms. Returns a list of quality of service servers for a title. When the asynchronous task is complete, call [PFMultiplayerServerListQosServersForTitleGetResultSize](pfmultiplayerserverlistqosserversfortitlegetresultsize.md) and [PFMultiplayerServerListQosServersForTitleGetResult](pfmultiplayerserverlistqosserversfortitlegetresult.md) to get the result.
   
 ## Requirements  
   

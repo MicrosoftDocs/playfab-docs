@@ -5,7 +5,7 @@ description: "Updates non-membership data about a group."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 05/24/2023
+ms.date: 06/20/2023
 ---
 
 # PFGroupsUpdateGroupAsync  
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-Updates data about a group, such as the name or default member role. Returns information about whether the update was successful. Only title claimants may modify the administration role for a group. See also GroupCreateGroupAsync, GroupDeleteGroupAsync, GroupGetGroupAsync. When the asynchronous task is complete, call [PFGroupsUpdateGroupGetResultSize](pfgroupsupdategroupgetresultsize.md) and [PFGroupsUpdateGroupGetResult](pfgroupsupdategroupgetresult.md) to get the result.
+This API is available on all platforms. Updates data about a group, such as the name or default member role. Returns information about whether the update was successful. Only title claimants may modify the administration role for a group. See also GroupCreateGroupAsync, GroupDeleteGroupAsync, GroupGetGroupAsync. When the asynchronous task is complete, call [PFGroupsUpdateGroupGetResultSize](pfgroupsupdategroupgetresultsize.md) and [PFGroupsUpdateGroupGetResult](pfgroupsupdategroupgetresult.md) to get the result.
   
 ## Requirements  
   

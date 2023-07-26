@@ -95,15 +95,12 @@ tools:
       # imageSrc should be square in ratio with no whitespace
       imageSrc: ./media/index/code-languages.svg
       url: sdks/languages/index.yml
-    - title: Frameworks
+    - title: Platforms
       imageSrc: ./media/index/frameworks.svg
-      url: sdks/frameworks/index.yml
+      url: sdks/platforms/index.yml
     - title: Game engines
       imageSrc: ./media/index/game-engines.svg
       url: sdks/game-engines/index.yml
-    - title: Scripting
-      imageSrc: ./media/index/scripting.svg
-      url: sdks/scripting/index.yml
     - title: Tools and utilities
       imageSrc: ./media/index/tools-utilities.svg
       url: sdks/tools/index.yml      

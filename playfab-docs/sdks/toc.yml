@@ -3,8 +3,35 @@
 - name: Languages
   href: languages/index.yml
   items:
-  - name: Android Studio Project (Java)
-    href: androidstudio/index.md
+  - name:  C/C++
+    href: c/index.md
+    items:
+      - name: Quickstart - Win32
+        href: c/quickstart-win32.md
+      - name: Quickstart - GDK
+        href: c/quickstart-gdk.md
+      - name: Making Async Calls
+        href: c/async.md
+      - name: Managing Memory
+        href: c/memory.md
+      - name: Handling Token Expiration
+        href: c/relogin.md
+      - name: Debug Tracing
+        href: c/tracing.md
+      - name: Event Pipeline
+        href: c/event-pipeline/eventpipeline.md
+        items:
+        - name: Event Pipeline Tutorial
+          href: c/event-pipeline/eventpipeline-tutorial.md
+  - name: Legacy C++
+    href: playfab-cpp/index.md
+    items:
+    - name: Quickstart - GDK
+      href: playfab-cpp/quickstart-gdk.md
+    - name: Quickstart - Linux
+      href: playfab-cpp/quickstart-linux.md
+    - name: Quickstart - Windows
+      href: playfab-cpp/quickstart-windows.md
   - name:  C#
     href: c-sharp/index.md
     items:
@@ -15,56 +42,60 @@
     items:
     - name: Quickstart
       href: java/quickstart.md
+  - name: JavaScript
+    href: javascript/index.md
+    items:
+    - name: Quickstart
+      href: javascript/quickstart.md
+  - name:  Lua
+    href: lua/index.md
+    items:
+    - name: Quickstart - Corona
+      href: lua/quickstart-corona.md
+    - name: Quickstart - Defold
+      href: lua/quickstart-defold.md
+  - name: NodeJS
+    href: nodejs/index.md
+    items:
+    - name: Quickstart
+      href: nodejs/quickstart.md
   - name:  Objective-C
     href: objective-c/index.md
     items:
     - name: Quickstart
       href: objective-c/quickstart.md
-  - name: C++
-    href: playfab-cpp/index.md
+  - name: Python
+    href: python/index.md
     items:
-    - name: Quickstart - GDK
-      href: playfab-cpp/quickstart-gdk.md
-    - name: Quickstart - Linux
-      href: playfab-cpp/quickstart-linux.md
-    - name: Quickstart - Windows
-      href: playfab-cpp/quickstart-windows.md
-- name: Frameworks
-  href: frameworks/index.yml
+    - name: Quickstart
+      href: python/quickstart.md
+- name: Platforms
+  href: platforms/index.yml
+  items:
+  - name: Android
+    href: platforms/android.md
+  - name: iOS
+    href: platforms/ios.md
+  - name: Linux
+    href: platforms/linux.md
+  - name: Microsoft GDK
+    href: platforms/gdk.md
+  - name: Nintendo Switch
+    href: platforms/switch.md
+  - name: Sony PlayStation
+    href: platforms/playstation.md
+  - name: Windows
+    href: platforms/windows.md
+  - name: Services and Tools
+    href: platforms/services.md
+- name: Game engines
+  href: game-engines/index.yml
   items:
     - name: Cocos2d-x
       href: cocos2d-x/index.md
       items:
       - name: Quickstart
         href: cocos2d-x/quickstart.md
-    - name: GDK
-      href: gdk/index.md
-      items:
-      - name: Quickstart
-        href: gdk/quickstart.md
-      - name: Making Async Calls
-        href: gdk/async.md
-      - name: Managing Memory
-        href: gdk/memory.md
-      - name: Handling Token Expiration
-        href: gdk/relogin.md
-      - name: Debug Tracing
-        href: gdk/tracing.md
-      - name: Event Pipeline
-        href: ../event-pipeline/eventpipeline.md
-        items:
-        - name: Event Pipeline Tutorial
-          href: ../event-pipeline/eventpipeline-tutorial.md
-    - name: Phaser.io
-      href: phaser/index.md
-    - name: Photon
-      href: photon/index.md
-      items:
-      - name: Quickstart
-        href: photon/quickstart.md
-- name: Game engines
-  href: game-engines/index.yml
-  items:
     - name:  Unity3D
       href: unity3d/index.md
       items:
@@ -77,33 +108,3 @@
       items:
       - name: Quickstart
         href: unreal/quickstart.md
-- name: scripting
-  href: scripting/index.yml
-  items:
-    - name: ActionScript
-      href: actionscript/index.md
-      items:
-      - name: Quickstart
-        href: actionscript/quickstart.md
-    - name: JavaScript
-      href: javascript/index.md
-      items:
-      - name: Quickstart
-        href: javascript/quickstart.md
-    - name:  Lua
-      href: lua/index.md
-      items:
-      - name: Quickstart - Corona
-        href: lua/quickstart-corona.md
-      - name: Quickstart - Defold
-        href: lua/quickstart-defold.md
-    - name: NodeJS
-      href: nodejs/index.md
-      items:
-      - name: Quickstart
-        href: nodejs/quickstart.md
-    - name: Python
-      href: python/index.md
-      items:
-      - name: Quickstart
-        href: python/quickstart.md

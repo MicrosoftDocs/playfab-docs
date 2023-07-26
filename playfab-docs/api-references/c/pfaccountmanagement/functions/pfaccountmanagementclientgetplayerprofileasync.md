@@ -5,7 +5,7 @@ description: "Retrieves the player's profile"
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 05/24/2023
+ms.date: 06/20/2023
 ---
 
 # PFAccountManagementClientGetPlayerProfileAsync  
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-This API allows for access to details regarding a user in the PlayFab service, usually for purposes of customer support. Note that data returned may be Personally Identifying Information (PII), such as email address, and so care should be taken in how this data is stored and managed. Since this call will always return the relevant information for users who have accessed the title, the recommendation is to not store this data locally. When the asynchronous task is complete, call [PFAccountManagementClientGetPlayerProfileGetResultSize](pfaccountmanagementclientgetplayerprofilegetresultsize.md) and [PFAccountManagementClientGetPlayerProfileGetResult](pfaccountmanagementclientgetplayerprofilegetresult.md) to get the result.
+This API is available on all platforms. This API allows for access to details regarding a user in the PlayFab service, usually for purposes of customer support. Note that data returned may be Personally Identifying Information (PII), such as email address, and so care should be taken in how this data is stored and managed. Since this call will always return the relevant information for users who have accessed the title, the recommendation is to not store this data locally. When the asynchronous task is complete, call [PFAccountManagementClientGetPlayerProfileGetResultSize](pfaccountmanagementclientgetplayerprofilegetresultsize.md) and [PFAccountManagementClientGetPlayerProfileGetResult](pfaccountmanagementclientgetplayerprofilegetresult.md) to get the result.
   
 ## Requirements  
   

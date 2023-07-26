@@ -5,7 +5,7 @@ description: "Creates a new item in the working catalog using provided metadata.
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 05/24/2023
+ms.date: 06/20/2023
 ---
 
 # PFCatalogCreateDraftItemAsync  
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-The item will not be published to the public catalog until the PublishItem API is called for the item. When the asynchronous task is complete, call [PFCatalogCreateDraftItemGetResultSize](pfcatalogcreatedraftitemgetresultsize.md) and [PFCatalogCreateDraftItemGetResult](pfcatalogcreatedraftitemgetresult.md) to get the result.
+This API is available on all platforms. The item will not be published to the public catalog until the PublishItem API is called for the item. When the asynchronous task is complete, call [PFCatalogCreateDraftItemGetResultSize](pfcatalogcreatedraftitemgetresultsize.md) and [PFCatalogCreateDraftItemGetResult](pfcatalogcreatedraftitemgetresult.md) to get the result.
   
 ## Requirements  
   

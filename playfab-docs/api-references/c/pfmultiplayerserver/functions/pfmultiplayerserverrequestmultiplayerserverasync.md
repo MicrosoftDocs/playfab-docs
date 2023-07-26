@@ -5,7 +5,7 @@ description: "Request a multiplayer server session. Accepts tokens for title and
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 05/24/2023
+ms.date: 06/20/2023
 ---
 
 # PFMultiplayerServerRequestMultiplayerServerAsync  
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-Requests a multiplayer server session from a particular build in any of the given preferred regions. See also MultiplayerServerGetMultiplayerServerDetailsAsync. When the asynchronous task is complete, call [PFMultiplayerServerRequestMultiplayerServerGetResultSize](pfmultiplayerserverrequestmultiplayerservergetresultsize.md) and [PFMultiplayerServerRequestMultiplayerServerGetResult](pfmultiplayerserverrequestmultiplayerservergetresult.md) to get the result.
+This API is available on all platforms. Requests a multiplayer server session from a particular build in any of the given preferred regions. See also MultiplayerServerGetMultiplayerServerDetailsAsync. When the asynchronous task is complete, call [PFMultiplayerServerRequestMultiplayerServerGetResultSize](pfmultiplayerserverrequestmultiplayerservergetresultsize.md) and [PFMultiplayerServerRequestMultiplayerServerGetResult](pfmultiplayerserverrequestmultiplayerservergetresult.md) to get the result.
   
 ## Requirements  
   

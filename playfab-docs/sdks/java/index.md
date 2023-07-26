@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 ![Java](media/java1.png)
 
-Our Java SDK provides everything you need to access the PlayFab API. This includes models, methods, an HTTP wrapper for sending and receiving web requests, and JSON serialization. This is the same SDK used in the [Android Project](../androidstudio/index.md).
+Our Java SDK provides everything you need to access the PlayFab API. This includes models, methods, an HTTP wrapper for sending and receiving web requests, and JSON serialization.
 
 This SDK is auto-generated using our open-sourced tool&mdash;[SDKGenerator](../sdkgenerator/index.md). We generally build SDKs every other week to stay current with the latest API changes.
 

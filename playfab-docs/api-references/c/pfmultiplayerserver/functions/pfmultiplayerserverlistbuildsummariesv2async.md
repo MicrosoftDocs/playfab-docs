@@ -5,7 +5,7 @@ description: "Lists summarized details of all multiplayer server builds for a ti
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 05/24/2023
+ms.date: 06/20/2023
 ---
 
 # PFMultiplayerServerListBuildSummariesV2Async  
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-Returns a list of summarized details of all multiplayer server builds for a title. See also MultiplayerServerCreateBuildWithManagedContainerAsync, MultiplayerServerDeleteBuildAsync, MultiplayerServerGetBuildAsync. When the asynchronous task is complete, call [PFMultiplayerServerListBuildSummariesV2GetResultSize](pfmultiplayerserverlistbuildsummariesv2getresultsize.md) and [PFMultiplayerServerListBuildSummariesV2GetResult](pfmultiplayerserverlistbuildsummariesv2getresult.md) to get the result.
+This API is available on all platforms. Returns a list of summarized details of all multiplayer server builds for a title. See also MultiplayerServerCreateBuildWithManagedContainerAsync, MultiplayerServerDeleteBuildAsync, MultiplayerServerGetBuildAsync. When the asynchronous task is complete, call [PFMultiplayerServerListBuildSummariesV2GetResultSize](pfmultiplayerserverlistbuildsummariesv2getresultsize.md) and [PFMultiplayerServerListBuildSummariesV2GetResult](pfmultiplayerserverlistbuildsummariesv2getresult.md) to get the result.
   
 ## Requirements  
   

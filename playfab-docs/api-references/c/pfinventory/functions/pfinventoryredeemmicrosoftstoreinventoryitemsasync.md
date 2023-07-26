@@ -5,7 +5,7 @@ description: "Redeem items."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 05/24/2023
+ms.date: 07/25/2023
 ---
 
 # PFInventoryRedeemMicrosoftStoreInventoryItemsAsync  
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-Redeem items from the Microsoft Store. When the asynchronous task is complete, call [PFInventoryRedeemMicrosoftStoreInventoryItemsGetResultSize](pfinventoryredeemmicrosoftstoreinventoryitemsgetresultsize.md) and [PFInventoryRedeemMicrosoftStoreInventoryItemsGetResult](pfinventoryredeemmicrosoftstoreinventoryitemsgetresult.md) to get the result.
+This API is available on Win32 and GDK. Redeem items from the Microsoft Store. When the asynchronous task is complete, call [PFInventoryRedeemMicrosoftStoreInventoryItemsGetResultSize](pfinventoryredeemmicrosoftstoreinventoryitemsgetresultsize.md) and [PFInventoryRedeemMicrosoftStoreInventoryItemsGetResult](pfinventoryredeemmicrosoftstoreinventoryitemsgetresult.md) to get the result.
   
 ## Requirements  
   

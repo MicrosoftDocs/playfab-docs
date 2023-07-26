@@ -5,7 +5,7 @@ description: "Get all tags with a given Namespace (optional) from a player profi
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 05/24/2023
+ms.date: 06/20/2023
 ---
 
 # PFSegmentsClientGetPlayerTagsAsync  
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-This API will return a list of canonical tags which includes both namespace and tag's name. If namespace is not provided, the result is a list of all canonical tags. TagName can be used for segmentation and Namespace is limited to 128 characters. When the asynchronous task is complete, call [PFSegmentsClientGetPlayerTagsGetResultSize](pfsegmentsclientgetplayertagsgetresultsize.md) and [PFSegmentsClientGetPlayerTagsGetResult](pfsegmentsclientgetplayertagsgetresult.md) to get the result.
+This API is available on all platforms. This API will return a list of canonical tags which includes both namespace and tag's name. If namespace is not provided, the result is a list of all canonical tags. TagName can be used for segmentation and Namespace is limited to 128 characters. When the asynchronous task is complete, call [PFSegmentsClientGetPlayerTagsGetResultSize](pfsegmentsclientgetplayertagsgetresultsize.md) and [PFSegmentsClientGetPlayerTagsGetResult](pfsegmentsclientgetplayertagsgetresult.md) to get the result.
   
 ## Requirements  
   

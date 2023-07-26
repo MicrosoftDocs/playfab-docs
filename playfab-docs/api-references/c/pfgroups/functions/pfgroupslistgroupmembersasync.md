@@ -5,7 +5,7 @@ description: "Lists all members for a group"
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 05/24/2023
+ms.date: 06/20/2023
 ---
 
 # PFGroupsListGroupMembersAsync  
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-Gets a list of members and the roles they belong to within the group. If the caller does not have permission to view the role, and the member is in no other role, the member is not displayed. Returns a list of entities that are members of the group. When the asynchronous task is complete, call [PFGroupsListGroupMembersGetResultSize](pfgroupslistgroupmembersgetresultsize.md) and [PFGroupsListGroupMembersGetResult](pfgroupslistgroupmembersgetresult.md) to get the result.
+This API is available on all platforms. Gets a list of members and the roles they belong to within the group. If the caller does not have permission to view the role, and the member is in no other role, the member is not displayed. Returns a list of entities that are members of the group. See also GroupListMembershipAsync. When the asynchronous task is complete, call [PFGroupsListGroupMembersGetResultSize](pfgroupslistgroupmembersgetresultsize.md) and [PFGroupsListGroupMembersGetResult](pfgroupslistgroupmembersgetresult.md) to get the result.
   
 ## Requirements  
   

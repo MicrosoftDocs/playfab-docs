@@ -41,3 +41,15 @@ landingContent:
         links:
           - text: Unreal Engine Quickstart
             url: ../unreal/quickstart.md                        
+
+  # Card
+  - title: Cocos2D-x
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Cocos2D-x
+            url: ../cocos2d-x/index.md
+      - linkListType: quickstart
+        links:
+          - text: Cocos2D-x Quickstart
+            url: ../cocos2d-x/quickstart.md                        

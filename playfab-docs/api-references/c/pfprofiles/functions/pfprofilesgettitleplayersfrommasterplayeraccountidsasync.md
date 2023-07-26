@@ -5,7 +5,7 @@ description: "Retrieves the title player accounts associated with the given mast
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 05/24/2023
+ms.date: 06/20/2023
 ---
 
 # PFProfilesGetTitlePlayersFromMasterPlayerAccountIdsAsync  
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-Given a master player account id (PlayFab ID), returns all title player accounts associated with it. When the asynchronous task is complete, call [PFProfilesGetTitlePlayersFromMasterPlayerAccountIdsGetResultSize](pfprofilesgettitleplayersfrommasterplayeraccountidsgetresultsize.md) and [PFProfilesGetTitlePlayersFromMasterPlayerAccountIdsGetResult](pfprofilesgettitleplayersfrommasterplayeraccountidsgetresult.md) to get the result.
+This API is available on all platforms. Given a master player account id (PlayFab ID), returns all title player accounts associated with it. When the asynchronous task is complete, call [PFProfilesGetTitlePlayersFromMasterPlayerAccountIdsGetResultSize](pfprofilesgettitleplayersfrommasterplayeraccountidsgetresultsize.md) and [PFProfilesGetTitlePlayersFromMasterPlayerAccountIdsGetResult](pfprofilesgettitleplayersfrommasterplayeraccountidsgetresult.md) to get the result.
   
 ## Requirements  
   

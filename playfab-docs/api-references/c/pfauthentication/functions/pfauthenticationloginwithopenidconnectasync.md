@@ -5,7 +5,7 @@ description: "Logs in a user with an Open ID Connect JWT created by an existing 
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 05/24/2023
+ms.date: 06/20/2023
 ---
 
 # PFAuthenticationLoginWithOpenIdConnectAsync  
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-See also ClientLinkOpenIdConnectAsync, ClientUnlinkOpenIdConnectAsync. When the asynchronous task is complete, call [PFAuthenticationLoginWithOpenIdConnectGetResult](pfauthenticationloginwithopenidconnectgetresult.md) to get the result.
+This API is available on all platforms. See also ClientLinkOpenIdConnectAsync, ClientUnlinkOpenIdConnectAsync. When the asynchronous task is complete, call [PFAuthenticationLoginWithOpenIdConnectGetResult](pfauthenticationloginwithopenidconnectgetresult.md) to get the result.
   
 ## Requirements  
   

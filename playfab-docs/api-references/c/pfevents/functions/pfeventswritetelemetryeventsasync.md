@@ -5,7 +5,7 @@ description: "Write batches of entity based events to as Telemetry events (bypas
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 05/24/2023
+ms.date: 07/25/2023
 ---
 
 # PFEventsWriteTelemetryEventsAsync  
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-When the asynchronous task is complete, call [PFEventsWriteTelemetryEventsGetResultSize](pfeventswritetelemetryeventsgetresultsize.md) and [PFEventsWriteTelemetryEventsGetResult](pfeventswritetelemetryeventsgetresult.md) to get the result.
+This API is available on all platforms. This API must be called with either X-EntityToken or X-TelemetryKey headers. If sending X-EntityToken the value must be a valid EntityToken for your title. If using X-TelemetryKey the value must be a Telemetry Key configured for your title set to 'Active'. If both are provided, X-TelemetryKey will be ignored. When the asynchronous task is complete, call [PFEventsWriteTelemetryEventsGetResultSize](pfeventswritetelemetryeventsgetresultsize.md) and [PFEventsWriteTelemetryEventsGetResult](pfeventswritetelemetryeventsgetresult.md) to get the result.
   
 ## Requirements  
   

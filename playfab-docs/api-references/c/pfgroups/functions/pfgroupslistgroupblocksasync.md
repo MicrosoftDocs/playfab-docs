@@ -5,7 +5,7 @@ description: "Lists all entities blocked from joining a group"
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 05/24/2023
+ms.date: 06/20/2023
 ---
 
 # PFGroupsListGroupBlocksAsync  
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-Lists all entities blocked from joining a group. A list of blocked entities is returned. When the asynchronous task is complete, call [PFGroupsListGroupBlocksGetResultSize](pfgroupslistgroupblocksgetresultsize.md) and [PFGroupsListGroupBlocksGetResult](pfgroupslistgroupblocksgetresult.md) to get the result.
+This API is available on all platforms. Lists all entities blocked from joining a group. A list of blocked entities is returned See also GroupBlockEntityAsync, GroupUnblockEntityAsync. When the asynchronous task is complete, call [PFGroupsListGroupBlocksGetResultSize](pfgroupslistgroupblocksgetresultsize.md) and [PFGroupsListGroupBlocksGetResult](pfgroupslistgroupblocksgetresult.md) to get the result.
   
 ## Requirements  
   

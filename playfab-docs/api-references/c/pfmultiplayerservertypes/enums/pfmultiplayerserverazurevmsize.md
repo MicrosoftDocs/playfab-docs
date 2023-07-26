@@ -5,7 +5,7 @@ description: "AzureVmSize enum."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 06/20/2023
 ---
 
 # PFMultiplayerServerAzureVmSize  
@@ -51,6 +51,10 @@ enum class PFMultiplayerServerAzureVmSize  : uint32_t
     Standard_D4a_v4,  
     Standard_D8a_v4,  
     Standard_D16a_v4,  
+    Standard_D2ads_v5,  
+    Standard_D4ads_v5,  
+    Standard_D8ads_v5,  
+    Standard_D16ads_v5,  
     Standard_E2a_v4,  
     Standard_E4a_v4,  
     Standard_E8a_v4,  
@@ -123,6 +127,10 @@ enum class PFMultiplayerServerAzureVmSize  : uint32_t
 | Standard_D4a_v4 | TBD   |  
 | Standard_D8a_v4 | TBD   |  
 | Standard_D16a_v4 | TBD   |  
+| Standard_D2ads_v5 | TBD   |  
+| Standard_D4ads_v5 | TBD   |  
+| Standard_D8ads_v5 | TBD   |  
+| Standard_D16ads_v5 | TBD   |  
 | Standard_E2a_v4 | TBD   |  
 | Standard_E4a_v4 | TBD   |  
 | Standard_E8a_v4 | TBD   |  

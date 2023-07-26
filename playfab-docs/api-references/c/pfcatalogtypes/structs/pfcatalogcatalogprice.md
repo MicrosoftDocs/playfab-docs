@@ -5,7 +5,7 @@ description: "PFCatalogCatalogPrice data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 05/24/2023
+ms.date: 06/26/2023
 ---
 
 # PFCatalogCatalogPrice  
@@ -18,6 +18,7 @@ PFCatalogCatalogPrice data model.
 typedef struct PFCatalogCatalogPrice {  
     PFCatalogCatalogPriceAmount const* amounts;  
     uint32_t amountsCount;  
+    int32_t const* unitAmount;  
     double const* unitDurationInSeconds;  
 } PFCatalogCatalogPrice;  
 ```
@@ -32,6 +33,11 @@ typedef struct PFCatalogCatalogPrice {
 **`amountsCount`** &nbsp; uint32_t  
   
 Count of amounts
+  
+**`unitAmount`** &nbsp; int32_t const*  
+*may be nullptr*  
+  
+(Optional) The per-unit amount this price can be used to purchase.
   
 **`unitDurationInSeconds`** &nbsp; double const*  
 *may be nullptr*  
