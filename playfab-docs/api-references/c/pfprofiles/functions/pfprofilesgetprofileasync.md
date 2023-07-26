@@ -5,7 +5,7 @@ description: "Retrieves the entity's profile."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 05/24/2023
+ms.date: 06/20/2023
 ---
 
 # PFProfilesGetProfileAsync  
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-Given an entity type and entity identifier will retrieve the profile from the entity store. If the profile being retrieved is the caller's, then the read operation is consistent, if not it is an inconsistent read. An inconsistent read means that we do not guarantee all committed writes have occurred before reading the profile, allowing for a stale read. If consistency is important the Version Number on the result can be used to compare which version of the profile any reader has. When the asynchronous task is complete, call [PFProfilesGetProfileGetResultSize](pfprofilesgetprofilegetresultsize.md) and [PFProfilesGetProfileGetResult](pfprofilesgetprofilegetresult.md) to get the result.
+This API is available on all platforms. Given an entity type and entity identifier will retrieve the profile from the entity store. If the profile being retrieved is the caller's, then the read operation is consistent, if not it is an inconsistent read. An inconsistent read means that we do not guarantee all committed writes have occurred before reading the profile, allowing for a stale read. If consistency is important the Version Number on the result can be used to compare which version of the profile any reader has. When the asynchronous task is complete, call [PFProfilesGetProfileGetResultSize](pfprofilesgetprofilegetresultsize.md) and [PFProfilesGetProfileGetResult](pfprofilesgetprofilegetresult.md) to get the result.
   
 ## Requirements  
   

@@ -5,7 +5,7 @@ description: "Retrieves the key-value store of custom publisher settings"
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 05/24/2023
+ms.date: 06/20/2023
 ---
 
 # PFTitleDataManagementClientGetPublisherDataAsync  
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-This API is designed to return publisher-specific values which can be read, but not written to, by the client. This data is shared across all titles assigned to a particular publisher, and can be used for cross-game coordination. Only titles assigned to a publisher can use this API. For more information email helloplayfab@microsoft.com. Note that there may up to a minute delay in between updating title data and this API call returning the newest value. When the asynchronous task is complete, call [PFTitleDataManagementClientGetPublisherDataGetResultSize](pftitledatamanagementclientgetpublisherdatagetresultsize.md) and [PFTitleDataManagementClientGetPublisherDataGetResult](pftitledatamanagementclientgetpublisherdatagetresult.md) to get the result.
+This API is available on all platforms. This API is designed to return publisher-specific values which can be read, but not written to, by the client. This data is shared across all titles assigned to a particular publisher, and can be used for cross-game coordination. Only titles assigned to a publisher can use this API. For more information email helloplayfab@microsoft.com. Note that there may up to a minute delay in between updating title data and this API call returning the newest value. When the asynchronous task is complete, call [PFTitleDataManagementClientGetPublisherDataGetResultSize](pftitledatamanagementclientgetpublisherdatagetresultsize.md) and [PFTitleDataManagementClientGetPublisherDataGetResult](pftitledatamanagementclientgetpublisherdatagetresult.md) to get the result.
   
 ## Requirements  
   

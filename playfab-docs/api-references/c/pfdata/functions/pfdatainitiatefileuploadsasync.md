@@ -5,7 +5,7 @@ description: "Initiates file uploads to an entity's profile."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 05/24/2023
+ms.date: 06/20/2023
 ---
 
 # PFDataInitiateFileUploadsAsync  
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-Returns URLs that may be used to upload the files for a profile 5 minutes. After using the upload calls FinalizeFileUploads must be called to move the file status from pending to live. See also FileAbortFileUploadsAsync, FileDeleteFilesAsync, FileFinalizeFileUploadsAsync, FileGetFilesAsync. When the asynchronous task is complete, call [PFDataInitiateFileUploadsGetResultSize](pfdatainitiatefileuploadsgetresultsize.md) and [PFDataInitiateFileUploadsGetResult](pfdatainitiatefileuploadsgetresult.md) to get the result.
+This API is available on all platforms. Returns URLs that may be used to upload the files for a profile 5 minutes. After using the upload calls FinalizeFileUploads must be called to move the file status from pending to live. See also FileAbortFileUploadsAsync, FileDeleteFilesAsync, FileFinalizeFileUploadsAsync, FileGetFilesAsync. When the asynchronous task is complete, call [PFDataInitiateFileUploadsGetResultSize](pfdatainitiatefileuploadsgetresultsize.md) and [PFDataInitiateFileUploadsGetResult](pfdatainitiatefileuploadsgetresult.md) to get the result.
   
 ## Requirements  
   

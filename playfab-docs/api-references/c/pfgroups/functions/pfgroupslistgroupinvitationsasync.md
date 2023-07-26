@@ -5,7 +5,7 @@ description: "Lists all outstanding invitations for a group"
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 05/24/2023
+ms.date: 06/20/2023
 ---
 
 # PFGroupsListGroupInvitationsAsync  
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-Lists all outstanding invitations for a group. Returns a list of entities that have been invited, as well as when the invitation will expire. To get the group invitations for a specific entity, use ListMembershipOpportunities. When the asynchronous task is complete, call [PFGroupsListGroupInvitationsGetResultSize](pfgroupslistgroupinvitationsgetresultsize.md) and [PFGroupsListGroupInvitationsGetResult](pfgroupslistgroupinvitationsgetresult.md) to get the result.
+This API is available on all platforms. Lists all outstanding invitations for a group. Returns a list of entities that have been invited, as well as when the invitation will expire. To get the group invitations for a specific entity, use ListMembershipOpportunities. See also GroupAcceptGroupInvitationAsync, GroupInviteToGroupAsync, GroupListMembershipOpportunitiesAsync, GroupRemoveGroupInvitationAsync. When the asynchronous task is complete, call [PFGroupsListGroupInvitationsGetResultSize](pfgroupslistgroupinvitationsgetresultsize.md) and [PFGroupsListGroupInvitationsGetResult](pfgroupslistgroupinvitationsgetresult.md) to get the result.
   
 ## Requirements  
   

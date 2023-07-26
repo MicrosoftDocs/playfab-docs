@@ -5,7 +5,7 @@ description: "Creates and updates the publisher-specific custom data for the use
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 05/24/2023
+ms.date: 06/20/2023
 ---
 
 # PFPlayerDataManagementClientUpdateUserPublisherDataAsync  
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-This function performs an additive update of the arbitrary strings containing the custom data for the user. In updating the custom data object, keys which already exist in the object will have their values overwritten, while keys with null values will be removed. New keys will be added, with the given values. No other key-value pairs will be changed apart from those specified in the call. See also ClientGetUserPublisherDataAsync, ClientGetUserPublisherReadOnlyDataAsync. When the asynchronous task is complete, call [PFPlayerDataManagementClientUpdateUserPublisherDataGetResult](pfplayerdatamanagementclientupdateuserpublisherdatagetresult.md) to get the result.
+This API is available on all platforms. This function performs an additive update of the arbitrary strings containing the custom data for the user. In updating the custom data object, keys which already exist in the object will have their values overwritten, while keys with null values will be removed. New keys will be added, with the given values. No other key-value pairs will be changed apart from those specified in the call. See also ClientGetUserPublisherDataAsync, ClientGetUserPublisherReadOnlyDataAsync. When the asynchronous task is complete, call [PFPlayerDataManagementClientUpdateUserPublisherDataGetResult](pfplayerdatamanagementclientupdateuserpublisherdatagetresult.md) to get the result.
   
 ## Requirements  
   

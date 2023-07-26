@@ -5,7 +5,7 @@ description: "PFCatalogCatalogItem data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 05/24/2023
+ms.date: 07/25/2023
 ---
 
 # PFCatalogCatalogItem  
@@ -230,7 +230,7 @@ Count of title
 **`type`** &nbsp; const char*  
 *is null-terminated*  
   
-(Optional) The high-level type of the item. The following item types are supported: bundle, catalogItem, currency, store, ugc.
+(Optional) The high-level type of the item. The following item types are supported: bundle, catalogItem, currency, store, ugc, subscription.
   
   
 ## Requirements  

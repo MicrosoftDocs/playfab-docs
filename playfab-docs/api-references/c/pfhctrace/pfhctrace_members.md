@@ -5,7 +5,7 @@ description: "Services C API overview - PFHCTrace.h"
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 05/24/2023
+ms.date: 06/20/2023
 ---
 
 # Services C API overview - PFHCTrace.h
@@ -20,7 +20,9 @@ ms.date: 05/24/2023
 | [PFHCTraceImplGetAreaVerbosity](functions/pfhctraceimplgetareaverbosity.md) | Get the trace verbosity level of an trace area. |  
 | [PFHCTraceImplMessage](functions/pfhctraceimplmessage.md) | Send a trace message. |  
 | [PFHCTraceImplSetAreaVerbosity](functions/pfhctraceimplsetareaverbosity.md) | Set the verbosity level of an trace area. |  
+| [PFHCTraceSetClientCallback](functions/pfhctracesetclientcallback.md) | Set client callback for tracing. |  
 | [PFHCTraceSetPlatformCallbacks](functions/pfhctracesetplatformcallbacks.md) | Sets the Platform Callbacks. |  
+| [PFHCTraceSetTraceToDebugger](functions/pfhctracesettracetodebugger.md) | Sets or unsets if the trace is sent to the debugger. |  
   
 ## State changes  
   

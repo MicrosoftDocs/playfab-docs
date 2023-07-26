@@ -5,7 +5,7 @@ description: "PFCatalogSearchItemsRequest data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 05/24/2023
+ms.date: 07/25/2023
 ---
 
 # PFCatalogSearchItemsRequest  
@@ -22,6 +22,7 @@ typedef struct PFCatalogSearchItemsRequest {
     uint32_t customTagsCount;  
     PFEntityKey const* entity;  
     const char* filter;  
+    const char* language;  
     const char* orderBy;  
     const char* search;  
     const char* select;  
@@ -58,6 +59,11 @@ Count of customTags
 *is null-terminated*  
   
 (Optional) An OData filter used to refine the search query (For example: "type eq 'ugc'"). More info about Filter Complexity limits can be found here: https://learn.microsoft.com/gaming/playfab/features/economy-v2/catalog/search#limits.
+  
+**`language`** &nbsp; const char*  
+*is null-terminated*  
+  
+(Optional) The locale to be returned in the result.
   
 **`orderBy`** &nbsp; const char*  
 *is null-terminated*  

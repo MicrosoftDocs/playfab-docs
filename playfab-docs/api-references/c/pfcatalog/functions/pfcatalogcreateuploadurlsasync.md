@@ -5,7 +5,7 @@ description: "Creates one or more upload URLs which can be used by the client to
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 05/24/2023
+ms.date: 06/20/2023
 ---
 
 # PFCatalogCreateUploadUrlsAsync  
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-Upload URLs point to Azure Blobs; clients must follow the Microsoft Azure Storage Blob Service REST API pattern for uploading content. The response contains upload URLs and IDs for each file. The IDs and URLs returned must be added to the item metadata and committed using the CreateDraftItem or UpdateDraftItem Item APIs. When the asynchronous task is complete, call [PFCatalogCreateUploadUrlsGetResultSize](pfcatalogcreateuploadurlsgetresultsize.md) and [PFCatalogCreateUploadUrlsGetResult](pfcatalogcreateuploadurlsgetresult.md) to get the result.
+This API is available on all platforms. Upload URLs point to Azure Blobs; clients must follow the Microsoft Azure Storage Blob Service REST API pattern for uploading content. The response contains upload URLs and IDs for each file. The IDs and URLs returned must be added to the item metadata and committed using the CreateDraftItem or UpdateDraftItem Item APIs. When the asynchronous task is complete, call [PFCatalogCreateUploadUrlsGetResultSize](pfcatalogcreateuploadurlsgetresultsize.md) and [PFCatalogCreateUploadUrlsGetResult](pfcatalogcreateuploadurlsgetresult.md) to get the result.
   
 ## Requirements  
   

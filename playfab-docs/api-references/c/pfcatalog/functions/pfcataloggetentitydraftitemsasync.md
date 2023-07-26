@@ -5,7 +5,7 @@ description: "Retrieves a paginated list of the items from the draft catalog cre
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 05/24/2023
+ms.date: 06/20/2023
 ---
 
 # PFCatalogGetEntityDraftItemsAsync  
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-When the asynchronous task is complete, call [PFCatalogGetEntityDraftItemsGetResultSize](pfcataloggetentitydraftitemsgetresultsize.md) and [PFCatalogGetEntityDraftItemsGetResult](pfcataloggetentitydraftitemsgetresult.md) to get the result.
+This API is available on all platforms. When the asynchronous task is complete, call [PFCatalogGetEntityDraftItemsGetResultSize](pfcataloggetentitydraftitemsgetresultsize.md) and [PFCatalogGetEntityDraftItemsGetResult](pfcataloggetentitydraftitemsgetresult.md) to get the result.
   
 ## Requirements  
   

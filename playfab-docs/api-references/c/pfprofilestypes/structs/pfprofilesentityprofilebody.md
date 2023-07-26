@@ -5,7 +5,7 @@ description: "PFProfilesEntityProfileBody data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 05/24/2023
+ms.date: 07/25/2023
 ---
 
 # PFProfilesEntityProfileBody  
@@ -26,7 +26,6 @@ typedef struct PFProfilesEntityProfileBody {
     PFProfilesEntityProfileFileMetadataDictionaryEntry const* files;  
     uint32_t filesCount;  
     const char* language;  
-    const char* leaderboardMetadata;  
     PFEntityLineage const* lineage;  
     PFProfilesEntityDataObjectDictionaryEntry const* objects;  
     uint32_t objectsCount;  
@@ -86,11 +85,6 @@ Count of files
 *is null-terminated*  
   
 (Optional) The language on this profile.
-  
-**`leaderboardMetadata`** &nbsp; const char*  
-*is null-terminated*  
-  
-(Optional) Leaderboard metadata for the entity.
   
 **`lineage`** &nbsp; [PFEntityLineage](../../pftypes/structs/pfentitylineage.md) const*  
 *may be nullptr*  

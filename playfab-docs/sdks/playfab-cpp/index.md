@@ -1,5 +1,5 @@
 ---
-title: C++ PlayFab SDK
+title: Legacy C++ PlayFab SDK
 author: joannaleecy
 description: Cross-platform (CPP) PlayFab SDK
 ms.author: joanlee
@@ -10,9 +10,12 @@ keywords: playfab, c++, linux, cocos2d-x, unreal, lua sdk, windows, cross-platfo
 ms.localizationpriority: medium
 ---
 
-# C++
+# Legacy PlayFab Services SDK for C++
 
 ![PlayFab CPP SDK](./media/cpp1.png)
+
+> [!NOTE]  
+> This SDK is being replaced by the new [PlayFab C/C++ SDK](../c/index.md). We are expanding the set of supported platforms for the new SDK over time.
 
 The cross-platform C++ PlayFab SDK provides everything you need to access the PlayFab API. It includes models, methods, an HTTP wrapper for sending and receiving web requests, and JSON serialization.
 
@@ -45,7 +48,7 @@ For a full list of the different PlayFab SDKs, see [PlayFab Services SDKs](../pl
 
 ## Development for Xbox and Windows GDK
 
-This SDK is __not__ intended for use with modern Xbox and GamePass games and the [Microsoft Game Development Kit](/gaming/gdk/). To learn more about using the PlayFab Services SDK included in the GDK, see our [GDK overview](../gdk/index.md).
+This SDK is __not__ intended for use with modern Xbox and GamePass games and the [Microsoft Game Development Kit](/gaming/gdk/). To learn more about using the PlayFab Services SDK included in the GDK, see our [GDK overview](../c/index.md).
 
 ## Using the SDK
 

@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 # Quickstart: C++ for Windows
 
 > [!NOTE]  
-> This guide is intended for Win32-x64 games running outside the Microsoft GDK. If you are building a game utilizing the GDK, please see [GDK - overview](../gdk/index.md).
+> This SDK is being replaced by the new [PlayFab C SDK](../c/index.md). The new SDK supports Windows (Win32). We are expanding the set of supported platforms for the new SDK over time.
 
 Get started with the PlayFab Client library for C++. Follow steps to install the package and try out example code for a basic task.
 

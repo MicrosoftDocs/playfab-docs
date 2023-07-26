@@ -5,7 +5,7 @@ description: "Send a trace message."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 06/20/2023
 ---
 
 # PFHCTraceImplMessage  
@@ -16,10 +16,15 @@ Send a trace message.
   
 ```cpp
 void PFHCTraceImplMessage(  
+    uint64_t PFHCTraceImplScopeId  
 )  
 ```  
   
 ### Parameters  
+  
+**`PFHCTraceImplScopeId`** &nbsp; uint64_t  
+  
+TBD    
   
   
 ### Return value

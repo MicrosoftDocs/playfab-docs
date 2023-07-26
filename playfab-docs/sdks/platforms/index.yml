@@ -1,0 +1,88 @@
+### YamlMime:Landing
+
+title: PlayFab supported platforms # < 60 chars
+summary: PlayFab support for popular game platforms. # < 160 chars
+
+metadata:
+  title: PlayFab supported platforms # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: description # Required; article description that is displayed in search results. < 160 chars.
+  ms.service: service #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.subservice: playfab # Optional; Remove if no subservice is used.
+  ms.topic: landing-page # Required
+  author: amccalib #Required; your GitHub user alias, with correct capitalization.
+  ms.author: andmcc #Required; microsoft alias of author; optional team alias.
+  ms.date: 06/26/2023 #Required; mm/dd/yyyy format.
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card
+  - title: Microsoft GDK
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: GDK
+            url: ../platforms/gdk.md
+      - linkListType: quickstart
+        links:
+          - text: Quickstart - C/C++
+            url: ../c/quickstart-gdk.md
+  # Card
+  - title: Sony PlayStation
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: PlayStation
+            url: ../platforms/playstation.md
+  # Card
+  - title: Nintendo Switch
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Switch
+            url: ../platforms/switch.md
+  # Card
+  - title: Windows
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Windows
+            url: ../platforms/windows.md
+      - linkListType: quickstart
+        links:
+          - text: Quickstart - C/C++
+            url: ../c/quickstart-win32.md
+  # Card
+  - title: Android
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Android
+            url: ../platforms/android.md
+  # Card
+  - title: iOS
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: iOS
+            url: ../platforms/ios.md
+  # Card
+  - title: Linux
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Linux
+            url: ../platforms/linux.md
+      - linkListType: quickstart
+        links:
+          - text: Quickstart - Legacy C++
+            url: ../playfab-cpp/quickstart-linux.md
+  # Card
+  - title: Services and Tools
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Services and Tools
+            url: ../platforms/services.md

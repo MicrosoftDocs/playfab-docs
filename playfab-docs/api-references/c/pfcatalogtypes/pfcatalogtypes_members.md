@@ -5,7 +5,7 @@ description: "Services C API overview - PFCatalogTypes.h"
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 06/26/2023
 ---
 
 # Services C API overview - PFCatalogTypes.h
@@ -16,6 +16,7 @@ ms.date: 03/09/2023
 | Structure | Description |  
 | --- | --- |  
 | [PFCatalogCatalogAlternateId](structs/pfcatalogcatalogalternateid.md) | PFCatalogCatalogAlternateId data model. |  
+| [PFCatalogCatalogConfig](structs/pfcatalogcatalogconfig.md) | PFCatalogCatalogConfig data model. |  
 | [PFCatalogCatalogItem](structs/pfcatalogcatalogitem.md) | PFCatalogCatalogItem data model. |  
 | [PFCatalogCatalogItemReference](structs/pfcatalogcatalogitemreference.md) | PFCatalogCatalogItemReference data model. |  
 | [PFCatalogCatalogPrice](structs/pfcatalogcatalogprice.md) | PFCatalogCatalogPrice data model. |  
@@ -67,6 +68,7 @@ ms.date: 03/09/2023
 | [PFCatalogReportItemReviewRequest](structs/pfcatalogreportitemreviewrequest.md) | PFCatalogReportItemReviewRequest data model. Submit a report for an inappropriate review, allowing the submitting user to specify their concern. |  
 | [PFCatalogReview](structs/pfcatalogreview.md) | PFCatalogReview data model. |  
 | [PFCatalogReviewItemRequest](structs/pfcatalogreviewitemrequest.md) | PFCatalogReviewItemRequest data model. |  
+| [PFCatalogReviewTakedown](structs/pfcatalogreviewtakedown.md) | PFCatalogReviewTakedown data model. |  
 | [PFCatalogSearchItemsRequest](structs/pfcatalogsearchitemsrequest.md) | PFCatalogSearchItemsRequest data model. |  
 | [PFCatalogSearchItemsResponse](structs/pfcatalogsearchitemsresponse.md) | PFCatalogSearchItemsResponse data model. |  
 | [PFCatalogStoreDetails](structs/pfcatalogstoredetails.md) | PFCatalogStoreDetails data model. |  

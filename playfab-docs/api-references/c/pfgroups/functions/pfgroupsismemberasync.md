@@ -5,7 +5,7 @@ description: "Checks to see if an entity is a member of a group or role within t
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 05/24/2023
+ms.date: 06/20/2023
 ---
 
 # PFGroupsIsMemberAsync  
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-Checks to see if an entity is a member of a group or role within the group. A result indicating if the entity is a member of the group is returned, or a permission error if the caller does not have permission to read the group's member list. When the asynchronous task is complete, call [PFGroupsIsMemberGetResult](pfgroupsismembergetresult.md) to get the result.
+This API is available on all platforms. Checks to see if an entity is a member of a group or role within the group. A result indicating if the entity is a member of the group is returned, or a permission error if the caller does not have permission to read the group's member list. See also GroupGetGroupAsync. When the asynchronous task is complete, call [PFGroupsIsMemberGetResult](pfgroupsismembergetresult.md) to get the result.
   
 ## Requirements  
   

@@ -5,7 +5,7 @@ description: "Services C API overview - PFHttpClient.h"
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 06/20/2023
 ---
 
 # Services C API overview - PFHttpClient.h
@@ -45,6 +45,7 @@ ms.date: 03/09/2023
 | [PFHCHttpCallResponseSetResponseBodyWriteFunction](functions/pfhchttpcallresponsesetresponsebodywritefunction.md) | Sets a custom callback function that will be used to write the response body when the HTTP call is performed. Using a custom write callback will cause subsequent calls to PFHCHttpCallResponseGetResponseBodyBytesSize, PFHCHttpCallResponseGetResponseBodyBytes, and PFHCHttpCallGetResponseBodyString to fail as these are mutually exclusive. |  
 | [PFHCHttpCallSetTracing](functions/pfhchttpcallsettracing.md) | Enables or disables tracing for this specific HTTP call. |  
 | [PFHCHttpDisableAssertsForSSLValidationInDevSandboxes](functions/pfhchttpdisableassertsforsslvalidationindevsandboxes.md) | Disables asserts for SSL validation in console dev sandboxes. |  
+| [PFHCIsInitialized](functions/pfhcisinitialized.md) | Returns true if library has been initialized by PFHCInitialize |  
 | [PFHCMemGetFunctions](functions/pfhcmemgetfunctions.md) | Gets the memory hook functions to allow callers to control route memory allocations to their own memory manager. |  
 | [PFHCMemSetFunctions](functions/pfhcmemsetfunctions.md) | Optionally sets the memory hook functions to allow callers to control route memory allocations to their own memory manager. |  
 | [PFHCRemoveCallRoutedHandler](functions/pfhcremovecallroutedhandler.md) | Removes a previously added PFHCCallRoutedHandler. |  

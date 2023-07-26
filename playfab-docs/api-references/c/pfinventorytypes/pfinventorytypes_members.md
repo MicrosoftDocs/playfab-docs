@@ -5,7 +5,7 @@ description: "Services C API overview - PFInventoryTypes.h"
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 07/25/2023
 ---
 
 # Services C API overview - PFInventoryTypes.h
@@ -31,6 +31,7 @@ ms.date: 03/09/2023
 | [PFInventoryGetInventoryItemsResponse](structs/pfinventorygetinventoryitemsresponse.md) | PFInventoryGetInventoryItemsResponse data model. |  
 | [PFInventoryGetMicrosoftStoreAccessTokensRequest](structs/pfinventorygetmicrosoftstoreaccesstokensrequest.md) | PFInventoryGetMicrosoftStoreAccessTokensRequest data model. Gets the access tokens for Microsoft Store authentication. |  
 | [PFInventoryGetMicrosoftStoreAccessTokensResponse](structs/pfinventorygetmicrosoftstoreaccesstokensresponse.md) | PFInventoryGetMicrosoftStoreAccessTokensResponse data model. |  
+| [PFInventoryGooglePlayProductPurchase](structs/pfinventorygoogleplayproductpurchase.md) | PFInventoryGooglePlayProductPurchase data model. |  
 | [PFInventoryInitialValues](structs/pfinventoryinitialvalues.md) | PFInventoryInitialValues data model. |  
 | [PFInventoryInventoryItem](structs/pfinventoryinventoryitem.md) | PFInventoryInventoryItem data model. |  
 | [PFInventoryInventoryItemReference](structs/pfinventoryinventoryitemreference.md) | PFInventoryInventoryItemReference data model. |  
@@ -41,11 +42,18 @@ ms.date: 03/09/2023
 | [PFInventoryPurchasePriceAmount](structs/pfinventorypurchasepriceamount.md) | PFInventoryPurchasePriceAmount data model. |  
 | [PFInventoryRedeemMicrosoftStoreInventoryItemsRequest](structs/pfinventoryredeemmicrosoftstoreinventoryitemsrequest.md) | PFInventoryRedeemMicrosoftStoreInventoryItemsRequest data model. Redeem items from the Microsoft Store. |  
 | [PFInventoryRedeemMicrosoftStoreInventoryItemsResponse](structs/pfinventoryredeemmicrosoftstoreinventoryitemsresponse.md) | PFInventoryRedeemMicrosoftStoreInventoryItemsResponse data model. |  
+| [PFInventoryRedeemNintendoEShopInventoryItemsRequest](structs/pfinventoryredeemnintendoeshopinventoryitemsrequest.md) | PFInventoryRedeemNintendoEShopInventoryItemsRequest data model. Redeem items from the Nintendo EShop. |  
+| [PFInventoryRedeemNintendoEShopInventoryItemsResponse](structs/pfinventoryredeemnintendoeshopinventoryitemsresponse.md) | PFInventoryRedeemNintendoEShopInventoryItemsResponse data model. |  
+| [PFInventoryRedeemPlayStationStoreInventoryItemsRequest](structs/pfinventoryredeemplaystationstoreinventoryitemsrequest.md) | PFInventoryRedeemPlayStationStoreInventoryItemsRequest data model. Redeem items from the PlayStation Store. |  
+| [PFInventoryRedeemPlayStationStoreInventoryItemsResponse](structs/pfinventoryredeemplaystationstoreinventoryitemsresponse.md) | PFInventoryRedeemPlayStationStoreInventoryItemsResponse data model. |  
+| [PFInventoryRedeemSteamInventoryItemsRequest](structs/pfinventoryredeemsteaminventoryitemsrequest.md) | PFInventoryRedeemSteamInventoryItemsRequest data model. Redeem inventory items from Steam. |  
+| [PFInventoryRedeemSteamInventoryItemsResponse](structs/pfinventoryredeemsteaminventoryitemsresponse.md) | PFInventoryRedeemSteamInventoryItemsResponse data model. |  
 | [PFInventoryRedemptionFailure](structs/pfinventoryredemptionfailure.md) | PFInventoryRedemptionFailure data model. |  
 | [PFInventoryRedemptionSuccess](structs/pfinventoryredemptionsuccess.md) | PFInventoryRedemptionSuccess data model. |  
 | [PFInventorySubtractInventoryItemsOperation](structs/pfinventorysubtractinventoryitemsoperation.md) | PFInventorySubtractInventoryItemsOperation data model. |  
 | [PFInventorySubtractInventoryItemsRequest](structs/pfinventorysubtractinventoryitemsrequest.md) | PFInventorySubtractInventoryItemsRequest data model. Given an entity type, entity identifier and container details, will subtract the specified inventory items. . |  
 | [PFInventorySubtractInventoryItemsResponse](structs/pfinventorysubtractinventoryitemsresponse.md) | PFInventorySubtractInventoryItemsResponse data model. |  
+| [PFInventoryTransaction](structs/pfinventorytransaction.md) | PFInventoryTransaction data model. |  
 | [PFInventoryTransactionOperation](structs/pfinventorytransactionoperation.md) | PFInventoryTransactionOperation data model. |  
 | [PFInventoryTransactionPurchaseDetails](structs/pfinventorytransactionpurchasedetails.md) | PFInventoryTransactionPurchaseDetails data model. |  
 | [PFInventoryTransactionRedeemDetails](structs/pfinventorytransactionredeemdetails.md) | PFInventoryTransactionRedeemDetails data model. |  

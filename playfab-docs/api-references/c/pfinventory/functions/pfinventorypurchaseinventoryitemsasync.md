@@ -5,7 +5,7 @@ description: "Purchase an item or bundle. Up to 3500 stacks of items can be adde
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 05/24/2023
+ms.date: 06/20/2023
 ---
 
 # PFInventoryPurchaseInventoryItemsAsync  
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-Purchase a single item or bundle, paying the associated price. When the asynchronous task is complete, call [PFInventoryPurchaseInventoryItemsGetResultSize](pfinventorypurchaseinventoryitemsgetresultsize.md) and [PFInventoryPurchaseInventoryItemsGetResult](pfinventorypurchaseinventoryitemsgetresult.md) to get the result.
+This API is available on all platforms. Purchase a single item or bundle, paying the associated price. When the asynchronous task is complete, call [PFInventoryPurchaseInventoryItemsGetResultSize](pfinventorypurchaseinventoryitemsgetresultsize.md) and [PFInventoryPurchaseInventoryItemsGetResult](pfinventorypurchaseinventoryitemsgetresult.md) to get the result.
   
 ## Requirements  
   

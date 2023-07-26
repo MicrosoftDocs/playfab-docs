@@ -1,5 +1,10 @@
-- name: Android Studio Project (Java)
-  href: ../androidstudio/index.md
+- name:  C/C++
+  href: ../c/index.md  
+  items:
+  - name: Quickstart - Win32
+    href: ../c/quickstart-win32.md
+  - name: Quickstart - GDK
+    href: ../c/quickstart-gdk.md
 - name:  C#
   href: ../c-sharp/index.md  
   items:
@@ -17,10 +22,32 @@
   items:
   - name: Quickstart
     href: ../objective-c/quickstart.md
-- name: PlayFab CPP
+- name: Legacy C++
   href: ../playfab-cpp/index.md
   items:
   - name: Quickstart - Linux
     href: ../playfab-cpp/quickstart-linux.md
   - name: Quickstart - Windows
     href: ../playfab-cpp/quickstart-windows.md
+- name: JavaScript
+  href: ../javascript/index.md
+  items:
+  - name: Quickstart
+    href: ../javascript/quickstart.md
+- name:  Lua
+  href: ../lua/index.md
+  items:
+  - name: Quickstart - Corona
+    href: ../lua/quickstart-corona.md
+  - name: Quickstart - Defold
+    href: ../lua/quickstart-defold.md
+- name: NodeJS
+  href: ../nodejs/index.md
+  items:
+  - name: Quickstart
+    href: ../nodejs/quickstart.md
+- name: Python
+  href: ../python/index.md
+  items:
+  - name: Quickstart
+    href: ../python/quickstart.md

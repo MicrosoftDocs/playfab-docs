@@ -10,3 +10,8 @@
   items:
   - name: Quickstart
     href: ../unreal/quickstart.md
+- name: Cocos2d-x
+  href: ../cocos2d-x/index.md
+  items:
+  - name: Quickstart
+    href: ../cocos2d-x/quickstart.md

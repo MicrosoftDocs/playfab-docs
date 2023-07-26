@@ -5,7 +5,7 @@ description: "Abort pending file uploads to an entity's profile."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 05/24/2023
+ms.date: 06/20/2023
 ---
 
 # PFDataAbortFileUploadsAsync  
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-Aborts the pending upload of the requested files. See also FileDeleteFilesAsync, FileFinalizeFileUploadsAsync, FileGetFilesAsync, FileInitiateFileUploadsAsync. When the asynchronous task is complete, call [PFDataAbortFileUploadsGetResultSize](pfdataabortfileuploadsgetresultsize.md) and [PFDataAbortFileUploadsGetResult](pfdataabortfileuploadsgetresult.md) to get the result.
+This API is available on all platforms. Aborts the pending upload of the requested files. See also FileDeleteFilesAsync, FileFinalizeFileUploadsAsync, FileGetFilesAsync, FileInitiateFileUploadsAsync. When the asynchronous task is complete, call [PFDataAbortFileUploadsGetResultSize](pfdataabortfileuploadsgetresultsize.md) and [PFDataAbortFileUploadsGetResult](pfdataabortfileuploadsgetresult.md) to get the result.
   
 ## Requirements  
   
