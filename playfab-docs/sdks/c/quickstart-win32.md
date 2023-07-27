@@ -19,11 +19,11 @@ This quickstart helps you make your first PlayFab API call using the Win32 SDK. 
 ## Requirements
 
 - A [PlayFab developer account](https://developer.playfab.com).  
-- [Visual Studio 2019 or 2022](https://visualstudio.microsoft.com/) installed.
+- [Visual Studio 2022](https://visualstudio.microsoft.com/) installed.
 
 ## Project setup
 
-Download the PlayFab SDK to your project from the [PlayFab SDK Release Page](https://github.com/PlayFab/PlayFabCSdk/releases).
+Download the PlayFab SDK to your project from the [PlayFab SDK Release Page](https://github.com/PlayFab/PlayFabCSdk/releases/latest).
 
 Import PlayFabServicesSDK.Win32.props to your project. You can do this manually in the project file or by opening the Property Manager window in Visual Studio, right clicking on the project, and choosing __Add Existing Property Sheet__.
 
