@@ -1,7 +1,7 @@
 ---
-title: Getting started with PlayFab, Unity IAP, and Android
+title: Getting started with PlayFab Economy (Legacy), Unity IAP, and Android
 author: joannaleecy
-description: How to set up (In-App Purchasing) IAP using PlayFab, the Unity + IAP Service, and the Android Billing API.
+description: How to set up (In-App Purchasing) IAP using PlayFab Economy (Legacy), the Unity + IAP Service, and the Android Billing API.
 ms.author: joanlee
 ms.date: 06/11/2018
 ms.topic: article
@@ -10,7 +10,7 @@ keywords: playfab, commerce, economy, iap, unity, android billing api
 ms.localizationpriority: medium
 ---
 
-# Getting started with PlayFab, Unity IAP, and Android
+# Getting started with PlayFab (Legacy Economy), Unity IAP, and Android
 
 [!INCLUDE [notice](../../../includes/_economy-deprecation.md)]
 
@@ -18,17 +18,17 @@ This tutorial shows you how to set up In-App Purchasing (IAP) using PlayFab, the
 
 ## Before we start
 
-Setting up IAP may be tedious, especially if you are not quite sure how different services are supposed to integrate and cooperate.
+Setting up IAP may be tedious, especially if you are not sure how different services are supposed to integrate and cooperate.
 
 The following image illustrates how the Android Billing API and PlayFab work together to provide a solid IAP experience for your client.
 
 ![Android Billing - PlayFab - integration timeline](../media/tutorials/android-billing-playfab-integration-timeline.png)  
 
-Start by setting up your **Product IDs** and **Prices** via PlayMarket. Initially, all the products are *faceless* - they are just digital entities your player is able to purchase - but they have no meaning to PlayFab players.
+Start by setting up your **Product IDs** and **Prices** via PlayMarket. Initially, all the products are *faceless* - they are digital entities your player is able to purchase - but they have no meaning to PlayFab players.
 
-To make those entities useful, we need to mirror them in the PlayFab item catalogs. This will turn faceless entities into bundles, containers, and individual items.
+To make those entities useful, we need to mirror them in the PlayFab item catalogs. This turn's faceless entities into bundles, containers, and individual items.
 
-Each will have their own unique face, with:
+Each has their own unique face, with:
 
 - **Titles**
 - **Descriptions**

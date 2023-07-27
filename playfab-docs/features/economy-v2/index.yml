@@ -28,8 +28,6 @@ landingContent:
             url: faq.md
       - linkListType: quickstart
         links:
-          - text: PlayFab quickstart
-            url: ../../gamemanager/quickstart.md
           - text: Catalog v2 quickstart
             url: quickstart.md
           - text: Inventory v2 quickstart
@@ -39,7 +37,9 @@ landingContent:
           - text: Field and API limits
             url: catalog/limits.md
           - text: PlayFab SDKs
-            url: /sdks/playfab-sdk-intro
+            url: ../../sdks/playfab-sdk-intro.md
+          - text: PlayFab quickstart
+            url: ../../gamemanager/quickstart.md
           - text: Catalog REST API reference
             url: /rest/api/playfab/economy/catalog
           - text: Player REST Inventory API reference
