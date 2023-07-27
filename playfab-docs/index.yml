@@ -58,7 +58,7 @@ productDirectory:
     - title: Engage
       imageSrc: ./media/index/engage.svg
       links:
-        - url: features/economy/index.yml
+        - url: features/economy-v2/index.yml
           text: Economy
         - url: features/engagement/index.yml
           text: Engagement  
