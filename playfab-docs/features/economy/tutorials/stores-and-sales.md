@@ -1,7 +1,7 @@
 ---
-title: Stores and sales
+title: Stores and sales in Economy (Legacy)
 author: cybtachyon
-description: Describes how to configure a Store with a selection of items available in real money or virtual currency.
+description: Describes how to configure a Store in Economy (Legacy)with a selection of items available in real money or virtual currency.
 ms.author: derekreese
 ms.date: 10/26/2018
 ms.topic: article
@@ -10,7 +10,7 @@ keywords: playfab, commerce, economy, stores, catalogs, currencies
 ms.localizationpriority: medium
 ---
 
-# Stores and sales
+# Stores and sales (Legacy Economy)
 
 [!INCLUDE [notice](../../../includes/_economy-deprecation.md)]
 

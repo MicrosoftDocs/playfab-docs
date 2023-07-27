@@ -1,7 +1,7 @@
 ---
-title: Drop Tables
+title: Drop Tables in Economy (Legacy)
 author: cybtachyon
-description: Describes how to create Drop Tables using the PlayFab Game Manager.
+description: Describes how to create Drop Tables using Economy (Legacy) the PlayFab Game Manager.
 ms.author: derekreese
 ms.date: 10/26/2018
 ms.topic: article
@@ -10,7 +10,7 @@ keywords: playfab, commerce, economy, items, catalogs, drop tables
 ms.localizationpriority: medium
 ---
 
-# Drop tables
+# Drop tables (Legacy Economy)
 
 [!INCLUDE [notice](../../../includes/_economy-deprecation.md)]
 

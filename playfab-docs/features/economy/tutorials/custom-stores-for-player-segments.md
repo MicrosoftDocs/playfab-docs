@@ -1,7 +1,7 @@
 ---
-title: Custom Stores for Player Segments
+title: Custom Stores for Player Segments in Economy (Legacy)
 author: cybtachyon
-description: Tutorial that describes how to create alternate stores that are available only to players from defined Player Segments.
+description: Tutorial for Economy (Legacy) that describes how to create alternate stores that are available only to players from defined Player Segments.
 ms.author: derekreese
 ms.date: 10/26/2018
 ms.topic: article
@@ -10,7 +10,7 @@ keywords: playfab, commerce, economy, stores, segmentation
 ms.localizationpriority: medium
 ---
 
-# Custom stores for player segments
+# Custom stores for player segments (Legacy Economy)
 
 [!INCLUDE [notice](../../../includes/_economy-deprecation.md)]
 

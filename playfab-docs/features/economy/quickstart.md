@@ -1,7 +1,7 @@
 ---
-title: Economy quickstart
+title: Economy (Legacy) quickstart
 author: cybtachyon
-description: Quickstart for Economy.
+description: Quickstart for Legacy Economy.
 ms.author: derekreese
 ms.date: 05/02/2019
 ms.topic: article
@@ -10,7 +10,7 @@ keywords: playfab, commerce, economy, media, coupons, promotions, cloudscript
 ms.localizationpriority: medium
 ---
 
-# Economy Quickstart
+# Quickstart (Legacy Economy)
 
 [!INCLUDE [notice](../../includes/_economy-deprecation.md)]
 

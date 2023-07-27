@@ -1,7 +1,7 @@
 ---
-title: Items
+title: Items (Legacy Economy)
 author: cybtachyon
-description: Landing page for Items.
+description: Landing page for (Legacy) Items.
 ms.author: derekreese
 ms.date: 01/25/2019
 ms.topic: article
@@ -10,7 +10,7 @@ keywords: playfab, commerce, economy, items, catalogs
 ms.localizationpriority: medium
 ---
 
-# PlayFab items
+# PlayFab Items (Legacy Economy)
 
 [!INCLUDE [notice](../../../includes/_economy-deprecation.md)]
 

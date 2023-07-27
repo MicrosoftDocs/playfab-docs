@@ -1,7 +1,7 @@
 ---
-title: Catalogs
+title: Catalogs (Legacy Economy)
 author: cybtachyon
-description: Describes the Catalogs tab in the Economy section in Game Manager and the Catalog item type.
+description: Describes the Catalogs tab in the (Legacy) Economy section in Game Manager and the Catalog item type.
 ms.author: derekreese
 ms.date: 10/26/2018
 ms.topic: article
@@ -10,7 +10,7 @@ keywords: playfab, commerce, economy, items, catalogs
 ms.localizationpriority: medium
 ---
 
-# Catalogs
+# Catalogs (Legacy Economy)
 
 [!INCLUDE [notice](../../../includes/_economy-deprecation.md)]
 

@@ -1,7 +1,7 @@
 ---
-title: Best Practices for Store Segmentation
+title: Best Practices for Store Segmentation in Economy (Legacy)
 author: cybtachyon
-description: Lists the Best Practices for configuring and using Store Segmentation.
+description: Lists the Best Practices for configuring and using Store Segmentation with Economy (Legacy).
 ms.author: derekreese
 ms.date: 10/29/2018
 ms.topic: article
@@ -10,7 +10,7 @@ keywords: playfab, commerce, economy, stores
 ms.localizationpriority: medium
 ---
 
-# Best practices for store segmentation
+# Best practices for store segmentation (Legacy Economy)
 
 [!INCLUDE [notice](../../../includes/_economy-deprecation.md)]
 
