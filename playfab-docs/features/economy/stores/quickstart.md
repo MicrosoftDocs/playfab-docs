@@ -1,7 +1,7 @@
 ---
-title: Stores quickstart
+title: Stores (Economy Legacy) Quickstart
 author: cybtachyon
-description: Quickstart for Stores.
+description: Quickstart for (Economy Legacy) Stores.
 ms.author: derekreese
 ms.date: 05/02/2019
 ms.topic: article
@@ -10,7 +10,7 @@ keywords: playfab, commerce, economy, stores
 ms.localizationpriority: medium
 ---
 
-# Stores quickstart
+# Stores Quickstart (Legacy Economy)
 
 [!INCLUDE [notice](../../../includes/_economy-deprecation.md)]
 

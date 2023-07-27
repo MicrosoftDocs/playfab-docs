@@ -23,10 +23,10 @@ items:
   items:
   - name: What is Economy?
     href: features/economy-what-is.md
-  - name: Economy
-    href: features/economy/toc.yml
   - name: Economy v2
     href: features/economy-v2/toc.yml
+  - name: Legacy Economy
+    href: features/economy/toc.yml
   - name: Engagement (Player retention)
     href: features/engagement/toc.yml
 - name: Analyze

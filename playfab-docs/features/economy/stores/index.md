@@ -1,7 +1,7 @@
 ---
-title: Stores
+title: Stores (Legacy Economy)
 author: cybtachyon
-description: Landing page for Stores.
+description: Landing page for (Legacy Economy) Stores.
 ms.author: derekreese
 ms.date: 01/25/2019
 ms.topic: article
@@ -10,7 +10,7 @@ keywords: playfab, commerce, economy, stores
 ms.localizationpriority: medium
 ---
 
-# PlayFab Stores
+# Stores (Legacy Economy)
 
 [!INCLUDE [notice](../../../includes/_economy-deprecation.md)]
 

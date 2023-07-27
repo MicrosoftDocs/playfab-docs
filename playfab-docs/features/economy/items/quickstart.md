@@ -1,7 +1,7 @@
 ---
-title: Items quickstart
+title: Items (Legacy Economy) quickstart
 author: cybtachyon
-description: Quickstart for Items.
+description: Quickstart for (Legacy Economy) Items.
 ms.author: derekreese
 ms.date: 05/02/2019
 ms.topic: article
@@ -10,7 +10,7 @@ keywords: playfab, commerce, economy, items, catalogs
 ms.localizationpriority: medium
 ---
 
-# Items quickstart
+# Items Quickstart (Legacy Economy)
 
 [!INCLUDE [notice](../../../includes/_economy-deprecation.md)]
 
