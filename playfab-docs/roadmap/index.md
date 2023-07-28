@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Azure PlayFab roadmap
 
-_Last Update: 7 September 2022._
+_Last Update: 28 July 2023._
 
 Before we jump into our latest roadmap update, remember that we welcome your feedback. If you're using PlayFab for current or in-development titles, we love to hear from you. If you see anything on this roadmap that is critical to your success or want more information, let us know.
 
@@ -22,7 +22,7 @@ PlayFab Leadership also hosts a series of ‘Outside-In’ sessions where game s
 
 ### Economy v2
 
-Economy v2 Public Preview has released this September! Player inventories and wallets, receipt validation on the most popular marketplaces, bundles, stores, currencies, and more. These updates take advantage of an optimized Azure backend design and improved task-oriented documentation with a focus on virtual economies and monetization. These updated APIs all interop with [the new Catalog v2](/gaming/playfab/features/economy/v2-overview) that has been released along with [Azure Playfab User Generated Content](/gaming/playfab/features/economy/ugc)(UGC).
+Economy v2 Public Preview has released this September! Player inventories and wallets, receipt validation on the most popular marketplaces, bundles, stores, currencies, and more. These updates take advantage of an optimized Azure backend design and improved task-oriented documentation with a focus on virtual economies and monetization. These updated APIs all interop with [the new Catalog v2](/gaming/playfab/features/economy-v2/overview) that has been released along with [Azure PlayFab User Generated Content (UGC)](/gaming/playfab/features/economy-v2/ugc).
 
 ### Matchmaking
 
@@ -36,7 +36,7 @@ PlayFab Lobby was released in March as a public preview, adding a highly request
 
 [Data Connections transitioned to public preview](https://blog.playfab.com/blog/take-control-of-data-in-your-resources-using-data-connections) earlier this year. This month, we expanded the feature to allow export to your own Azure Data Explorer (ADX). You can read more about the feature from [Configuring your data connection to ADX](/gaming/playfab/features/data/dataconnections/data-connection-adx). With this release, you'll be able to gain precise control of your cluster performance and cost through Data Explorer connections. As a result, PlayFab Insights Management will be deprecated soon.  
 
-## Player Segments
+### Player Segments
 
 The **GetPlayersInSegment** API is on a path to be deprecated eventually. It is replaced by improved APIs: **ExportPlayersInSegment** and **GetSegmentExport**, and these new APIs are available now. You can use them to create snapshots of all player profiles that match the segment definition and retrieve the index URLs of the downloadable files containing the player profile of a given segment. This tutorial walks you through how to use these new APIs: [Tutorial to export players in a Segment](/gaming/playfab/features/analytics/segmentation/export-players-in-a-segment).
 
@@ -70,8 +70,11 @@ At XFest, we presented how you can use PlayFab to implement an end-to-end multip
 
 ## What's on-deck
 
-### Leaderboards v2
+### Upcoming Stats & Leaderboard Services (Leaderboards v2)
+Major changes to our documentation, noting a pause of adoption opportunity at this time: [The Future of Stats and Leaderboards](/gaming/playfab/features/social/tournaments-leaderboards).
 
-Leaderboards v2 remains in private preview for now.
+Those who have been with PlayFab for some time may be wondering why we've changed the terminology associated with these upcoming services. Through our preview program, we've sought the perspective of our partners, heard your feedback, and have adjusted the design as a result. To enable these changes and make the best set of services that we can, we have removed the samples and tutorials. We look forward to providing more details as they become available to share.
+
+## Thank you!
 
 Thank you for your continued support! The [Feature Requests](https://community.playfab.com/spaces/24/index.html?sort=votes) section of our forum allows you to post, comment, and vote on ideas from our community. Addressing issues also remains a high priority so continue to share your findings in the [Bugs](https://community.playfab.com/spaces/23/index.html) section of our forums.
