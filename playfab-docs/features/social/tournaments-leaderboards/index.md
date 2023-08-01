@@ -14,6 +14,14 @@ ms.localizationpriority: medium
 
 Using event or tournament leaderboards are great ways of increasing engagement within your game. Using PlayFab, you can easily set up a recurring tournament that awards prizes to the winners, reaches out to the participants, and gets your players coming back into your game to try and get the highest score.
 
+> [!IMPORTANT]
+> There is no opportunity for adoption of "Leaderboards v2" at this moment. Stay tuned for upcoming announcements: [PlayFab Roadmap](/gaming/playfab/roadmap).
+
+## The future of Stats and Leaderboards
+Statistics and their leaderboards have been critical components of many games across every genre throughout the history of the industry. Their integration into a title drives player engagement by acting as a reflection of their experience both in isolation and as it relates to a broader community. We at PlayFab have seen how you've utilized these services in unique and exciting ways. We want to better enable these experiences by providing a new set of Stats & Leaderboard APIs built with the [Entity Programming Model](/gaming/playfab/features/data/entities) in mind. 
+
+While we're eager to share details, we aim to do so in a process that delights. We're thrilled to be building this system and can't wait to see the experiences it enables. Thank you for joining us on this journey, and we look forward to [what's to come](/gaming/playfab/roadmap).
+
 ## What are Leaderboards? 
 
 Leaderboards are essentially rankings of entities such as players, groups, or items. A leaderboard ranks a list of entities based on their respective values. For example, “High Scores” is one of the most common implementations of leaderboards.

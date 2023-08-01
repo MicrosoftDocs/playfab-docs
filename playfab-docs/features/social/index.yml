@@ -1,7 +1,7 @@
 ### YamlMime:Landing
 
 title: Azure PlayFab Social documentation
-summary: Overviews, quickstarts, and tutorials that provide guidance on PlayFab’s social features. # < 160 chars
+summary: Overviews, quickstarts, and tutorials that provide guidance on PlayFab's social features. # < 160 chars
 
 metadata:
   title: PlayFab Social documentation
@@ -25,7 +25,7 @@ landingContent:
           - text: What is PlayFab Social?
             url: social/index.md
 
-  # Card (optional)
+  # Card
   - title: Friends
     linkLists:
       - linkListType: overview
@@ -38,25 +38,9 @@ landingContent:
             url: friends/quickstart.md
       - linkListType: tutorial
         links:
-          - text: Leaderboards
+          - text: Friend Leaderboards
             url: friends/friends-leaderboards.md
-
-  # Card
-  - title: Groups, guilds and clans
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Overview
-            url: groups/index.md
-      - linkListType: quickstart
-        links:
-          - text: Entity groups
-            url: groups/quickstart.md
-      - linkListType: tutorial
-        links:
-          - text: Using Shared Group Data
-            url: groups/using-shared-group-data.md
-
+  
   # Card
   - title: Tournaments and Leaderboards
     linkLists:
@@ -80,6 +64,22 @@ landingContent:
             url: tournaments-leaderboards/using-the-profile-for-advanced-leaderboards.md
 
   # Card
+  - title: Groups, Guilds, and Clans
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Overview
+            url: groups/index.md
+      - linkListType: quickstart
+        links:
+          - text: Entity groups
+            url: groups/quickstart.md
+      - linkListType: tutorial
+        links:
+          - text: Using Shared Group Data
+            url: groups/using-shared-group-data.md
+
+  # Card
   - title: Trading
     linkLists:
       - linkListType: overview
@@ -90,21 +90,3 @@ landingContent:
         links:
           - text: Trading
             url: trading/quickstart.md
-
-  # Card
-  - title: Leaderboards v2 [Beta]
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Overview
-            url: leaderboardsv2/index.md
-      - linkListType: quickstart
-        links:
-          - text: Leaderboards v2
-            url: leaderboardsv2/quickstart.md
-      - linkListType: tutorial
-        links:
-          - text: Getting Started
-            url: leaderboardsv2/getting-started.md
-          - text: Child Leaderboard
-            url: leaderboardsv2/child-leaderboards.md

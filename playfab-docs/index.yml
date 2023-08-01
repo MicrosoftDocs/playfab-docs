@@ -60,12 +60,12 @@ productDirectory:
       links:
         - url: features/economy-v2/index.yml
           text: Economy
+        - url: features/economy-v2/index.yml
+          text: Economy v2
         - url: features/engagement/index.yml
           text: Engagement  
         - url: features/social/tournaments-leaderboards/index.md
           text: Leaderboards
-        - url: features/social/leaderboardsv2/index.md
-          text: Leaderboard v2 [BETA]                     
 
     - title: Analyze
       imageSrc: ./media/index/analyze.svg
