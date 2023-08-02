@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 ## Creator Entity Type & ID
 
-Besides creating Catalog items at the Title level via Game Manager or the API, you can also create them on behalf of a player. You need the Title player account ID (not the Master player account ID, which is cross-title).
+Besides creating Catalog items at the Title level via Game Manager or the API, you can also create them on behalf of a player. You need the Title player account ID (not the `Master Player Account ID`, which is cross-title).
 
 ```json
 {
@@ -44,16 +44,59 @@ Besides creating Catalog items at the Title level via Game Manager or the API, y
 }
 ```
 
+## Keywords
+
+Keywords are lists of localized strings that are meant to be user-searchable. They're useful for users searching for relevant items in an in-game store.
+
+* Keywords are index by localization keys.
+* Keywords are optional for any item.
+* An item can contain any number of the listed keywords.
+* Example:
+
+```JSON
+{
+    "NEUTRAL": { "Values": ["fire", "weapon"] },
+    "de-DE": { "Values": ["feuer", "klingenwaffen"] },
+    "en-US": { "Values": ["fire", "weapon"] },
+    "fr-FR": { "Values":["enflammé","arme"] }
+}
+```
+
+## Description
+
+The description field is a list of localized strings meant for display on each item.
+
+* Localization keys are used as the indexes.
+* Descriptions are optional for any item.
+* Example:
+
+```JSON
+{
+    "NEUTRAL": "Fire Sword! (It's really cool)",
+    "de-DE": "Feuer Schwert! (Es ist wirklich cool)",
+    "en-US": "Fire Sword! (It's really cool)",
+    "fr-FR": "Épée de feu! (C'est vraiment cool)"
+}
+```
+
 ## Content Types
 
-A preset list of content types for can be set by providing a list of valid string types.
+Configure custom content types to organize your items in ⚙️ > Title settings > Economy (V2) > Catalog (V2).
 
-* Content types exist as a performant filter when searching and make it easier to group items
-* You can only have one Content Type per item
+* Content types exist as a performant filter when searching and make it easier to group items.
+* While Content Types can be any string, you can only have one per item.
+* Some examples of Content Types include:
+  * `weapon`
+  * `armor`
+  * `gem`
+  * `pet`
+  * `lootbox`
+  * `appstorebundle`
+  * `playerattribute`
 
 ## Alternate IDs
 
-Alternate IDs make it easier to work with Catalog v2 items in code or with third party APIs.
+Alternate IDs make it easier to work with Catalog v2 items in code or with third party APIs. Some alternate IDs include the Friendly ID or the Marketplace ID.
 
 ### Friendly ID
 
@@ -91,12 +134,12 @@ PlayFab comes with several marketplaces. In order to work with the correct Marke
 
 Here are some examples of how to configure the alternate IDs for each platform:
 
-* Apple App Store: "product_id", example "com.companyname.productname"
-* Google Play: "productId", example "com.companyname.productname"
-* Microsoft Store: "productId", example "9NBLGGH42CFD"
-* Nintendo E-Shop: "item_id", example "nintendo700100"
-* PlayStation Store: "id", example "PLAYFAB00000CUSA"
-* Steam: "itemdefid", example "100"
+* Apple App Store: `product_id`, example `com.companyname.productname`
+* Google Play: `productId`, example `com.companyname.productname`
+* Microsoft Store: `productId`, example `9NBLGGH42CFD`
+* Nintendo E-Shop: `item_id`, example `nintendo700100`
+* PlayStation Store: `id`, example `PLAYFAB00000CUSA`
+* Steam: `itemdefid`, example `100`
 
 ```json
 {
@@ -146,16 +189,25 @@ Here are some examples of how to configure the alternate IDs for each platform:
 
 ## Platforms
 
-You can also provide your own custom platforms. These platforms are added and configured in the v2 Catalog Settings under Platform. You can use platforms as configuration data for deep links or other custom properties.
+Custom platforms are added and configured in the v2 Catalog Settings under Platform. You can use platforms as configuration data for deep links or other custom properties.
 
 ## Tags
 
 A list of tags can be set by providing a list of valid strings. `Tags` are optional for any item and an item can contain any number of the listed tags.
 
 * Items can have Tags
-  * Use tags for text metadata that is consistent and applies to multiple items, such as damage types
-  * Tags exist as a search filter
-  * You can have multiple Tags per item
+  * Use tags for text metadata that is consistent and applies to multiple items, such as damage types.
+  * Tags exist as a search filter.
+  * You can have multiple Tags per item.
+  * Tags are independently organized between Catalog Items, UGC Items, Files, and Images.
+* Some examples of tags:
+  * `firedamage`
+  * `icedamage`
+  * `bluntdamage`
+  * `slashingdamage`
+  * `piercingdamage`
+  * `lightarmor`
+  * `heavyarmor`
 
 ## DisplayProperties
 
@@ -165,6 +217,14 @@ Display Properties are custom item properties that can be added to all items in 
   * Use Display properties for metadata that varies between items, such as lore text
   * Display properties are queryable (indexed, fast query) or searchable (slower text query)
   * You can configure up to five of each type of field to be indexed
+* Example:
+
+```JSON
+{
+  "game-model": "//models/weapon/fire_sword.fbx",
+  "durability-default": "9001"
+}
+```
 
 When you add a field to `DisplayProperties`, it creates a new index for you in the database. Only documents added or updated after index creation are included. If the Display Property should apply to all items, you need to republish the entire catalog.
 
@@ -176,3 +236,30 @@ Titles are limited to five display properties of each type. For more information
 
 > [!WARNING]
 > Display property mappings are stored as an indexed list of key-value pairs. Deleting existing display property mappings can shift indexes and break the behavior of all remaining properties. It's suggested to add an additional property rather than deleting or editing an existing one and you should avoid deleting property mappings unless absolutely necessary
+
+## Prices
+
+Prices allow you to assign in-game currency costs to items. They're optional, but allow players to use the [PurchaseItem](/rest/api/playfab/economy/inventory/purchase-inventory-items) API to purchase items with in-game currency.
+
+* Multiple prices can be set per item.
+* Prices can be set in any existing currency.
+* Example:
+
+```JSON
+"PriceOptions": {
+  "Prices": [
+    {
+      "Amounts": [
+        {
+          "Id": "{{CurrencyID}}",
+          "Amount": 15
+        }
+      ]
+    }
+  ]
+}
+```
+
+## Files and Images
+
+These fields use File Storage instead of Config Storage. File storage is meant for game assets that are frequently updated or modified such as icons or asset game engine metadata. For more information on what sorts of files PlayFab handles, see [Limits](limits.md).
