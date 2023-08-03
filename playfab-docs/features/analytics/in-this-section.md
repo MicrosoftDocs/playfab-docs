@@ -6,13 +6,11 @@ ms.author: joanlee
 ms.date: 06/05/2020
 ms.topic: article
 ms.service: playfab
-keywords: playfab, analytics, a/b testing
+keywords: playfab, analytics, a/b testing, experiments
 ms.localizationpriority: medium
 ---
 
 # Analytics topic areas
-
-A/B testing
 
 Experiments
 
