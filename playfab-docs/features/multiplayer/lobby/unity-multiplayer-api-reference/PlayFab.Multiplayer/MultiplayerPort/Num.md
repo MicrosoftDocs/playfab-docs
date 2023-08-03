@@ -13,7 +13,7 @@ ms.date: 08/18/2022
 The number for the port.
 
 ```csharp
-public uint Num { get; }
+public uint Num { get; set; }
 ```
 
 ## See Also

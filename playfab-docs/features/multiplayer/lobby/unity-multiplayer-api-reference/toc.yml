@@ -62,6 +62,33 @@
               href: PlayFab.Multiplayer/LobbyArrangedJoinConfiguration/MemberProperties.md
             - name: OwnerMigrationPolicy
               href: PlayFab.Multiplayer/LobbyArrangedJoinConfiguration/OwnerMigrationPolicy.md
+    - name: LobbyConstants
+      href: PlayFab.Multiplayer/LobbyConstants.md
+      items:
+        - name: Constructors
+          items:
+            - name: LobbyConstants
+              href: PlayFab.Multiplayer/LobbyConstants/LobbyConstants.md
+        - name: Properties
+          items:
+            - name: LobbyAmMemberSearchKey
+              href: PlayFab.Multiplayer/LobbyConstants/LobbyAmMemberSearchKey.md
+            - name: LobbyAmOwnerSearchKey
+              href: PlayFab.Multiplayer/LobbyConstants/LobbyAmOwnerSearchKey.md
+            - name: LobbyClientRequestedSearchResultCountUpperLimit
+              href: PlayFab.Multiplayer/LobbyConstants/LobbyClientRequestedSearchResultCountUpperLimit.md
+            - name: LobbyMaxLobbyPropertyCount
+              href: PlayFab.Multiplayer/LobbyConstants/LobbyMaxLobbyPropertyCount.md
+            - name: LobbyMaxMemberCountLowerLimit
+              href: PlayFab.Multiplayer/LobbyConstants/LobbyMaxMemberCountLowerLimit.md
+            - name: LobbyMaxMemberCountUpperLimit
+              href: PlayFab.Multiplayer/LobbyConstants/LobbyMaxMemberCountUpperLimit.md
+            - name: LobbyMaxMemberPropertyCount
+              href: PlayFab.Multiplayer/LobbyConstants/LobbyMaxMemberPropertyCount.md
+            - name: LobbyMaxSearchPropertyCount
+              href: PlayFab.Multiplayer/LobbyConstants/LobbyMaxSearchPropertyCount.md
+            - name: LobbyMemberCountSearchKey
+              href: PlayFab.Multiplayer/LobbyConstants/LobbyMemberCountSearchKey.md
     - name: LobbyCreateConfiguration
       href: PlayFab.Multiplayer/LobbyCreateConfiguration.md
       items:
@@ -186,6 +213,8 @@
               href: PlayFab.Multiplayer/LobbySearchResult/LobbyId.md
             - name: MaxMemberCount
               href: PlayFab.Multiplayer/LobbySearchResult/MaxMemberCount.md
+            - name: MembershipLock
+              href: PlayFab.Multiplayer/LobbySearchResult/MembershipLock.md
             - name: OwnerEntity
               href: PlayFab.Multiplayer/LobbySearchResult/OwnerEntity.md
             - name: SearchProperties
@@ -232,7 +261,7 @@
             - name: TeamId
               href: PlayFab.Multiplayer/MatchmakingTicketMatchMember/TeamId.md
     - name: MultiplayerPort
-      href: PlayFab.Multiplayer/MultiplayerPort.md
+      href: PlayFab.Multiplayer/MultiplayerPort/MultiplayerPort.md
       items:
         - name: Properties
           items:
@@ -401,6 +430,10 @@
               href: PlayFab.Multiplayer/PlayFabMultiplayer/StopListeningForLobbyInvites.md
             - name: Uninitialize
               href: PlayFab.Multiplayer/PlayFabMultiplayer/Uninitialize.md
+        - name: Subclasses
+          items:
+            - name: PlayFabMultiplayerServer
+              href: PlayFab.Multiplayer/PlayFabMultiplayerServer.md
     - name: PlayFabMultiplayerErrorArgs
       href: PlayFab.Multiplayer/PlayFabMultiplayerErrorArgs.md
       items:
@@ -431,6 +464,8 @@
             - name: LocalUser
               href: PlayFab.Multiplayer/MatchUser/LocalUser.md
             - name: LocalUserJsonAttributesJSON
+              href: PlayFab.Multiplayer/MatchUser/LocalUserJsonAttributesJSON.md
+            - name: TeamId
               href: PlayFab.Multiplayer/MatchUser/LocalUserJsonAttributesJSON.md
 - name: Enums
   items:

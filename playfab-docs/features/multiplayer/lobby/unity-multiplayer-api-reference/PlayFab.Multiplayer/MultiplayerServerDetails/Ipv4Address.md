@@ -13,7 +13,7 @@ ms.date: 08/18/2022
 The IPv4 address of the virtual machine that is hosting this multiplayer server.
 
 ```csharp
-public string Ipv4Address { get; }
+public string Ipv4Address { get; set; }
 ```
 
 ## See Also

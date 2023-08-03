@@ -13,7 +13,7 @@ ms.date: 08/18/2022
 The fully qualified domain name of the virtual machine that is hosting this multiplayer server.
 
 ```csharp
-public string Fqdn { get; }
+public string Fqdn { get; set; }
 ```
 
 ## See Also
