@@ -13,7 +13,7 @@ ms.date: 08/18/2022
 The server's region.
 
 ```csharp
-public string Region { get; }
+public string Region { get; set; }
 ```
 
 ## See Also

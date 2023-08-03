@@ -14,18 +14,13 @@ ms.date: 11/23/2021
 public struct MatchUser
 ```
 
-## Constructors
+## Public Members
 
 | name | description |
 | --- | --- |
-| [MatchUser](MatchUser/MatchUser.md) | Initializes a new instance of the [`MatchUser`](./MatchUser.md) struct. (2 constructors) |
-
-## Properties
-
-| name | description |
-| --- | --- |
-| [LocalUser](MatchUser/LocalUser.md) | The local user to join to the ticket. |
-| [LocalUserJsonAttributesJSON](MatchUser/LocalUserJsonAttributesJSON.md) | The local user attributes as JSON string. There should be one attribute string for each local user. Each attribute string should either be an empty string or a serialized JSON object. For example, `{"player_color":"blue","player_role":"tank"}`. |
+| [LocalUser](MatchUser/LocalUser.md) { get; set; } | The local user to join to the ticket. |
+| [LocalUserJsonAttributesJSON](MatchUser/LocalUserJsonAttributesJSON.md) { get; set; } | The local user attributes as JSON string. There should be one attribute string for each local user. Each attribute string should either be an empty string or a serialized JSON object. For example, `{"player_color":"blue","player_role":"tank"}`. |
+| [TeamId](MatchUser/TeamId.md) { get; set; } | The team ID assigned to this match member. May be empty if the matchmaking queue doesn't use team rules. |
 
 ## See Also
 

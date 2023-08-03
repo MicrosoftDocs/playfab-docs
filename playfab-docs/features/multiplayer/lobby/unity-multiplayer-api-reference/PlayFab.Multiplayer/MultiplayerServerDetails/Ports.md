@@ -13,11 +13,12 @@ ms.date: 08/18/2022
 The ports the multiplayer server uses.
 
 ```csharp
-public IList<MultiplayerPort> Ports { get; }
+public IList<MultiplayerPort> Ports { get; set; }
 ```
 
 ## See Also
 
+* class [MultiplayerPort](../MultiplayerPort.md)
 * class [MultiplayerServerDetails](../MultiplayerServerDetails.md)
 * namespace [PlayFab.Multiplayer](../../PlayFabMultiplayerSDK.md)
 

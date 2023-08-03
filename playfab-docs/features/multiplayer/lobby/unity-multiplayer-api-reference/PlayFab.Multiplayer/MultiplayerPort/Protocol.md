@@ -13,11 +13,12 @@ ms.date: 08/18/2022
 The protocol for the port.
 
 ```csharp
-public MultiplayerProtocolType Protocol { get; }
+public MultiplayerProtocolType Protocol { get; set; }
 ```
 
 ## See Also
 
+* enum [MultiplayerProtocolType](../MultiplayerProtocolType.md)
 * class [MultiplayerPort](../MultiplayerPort.md)
 * namespace [PlayFab.Multiplayer](../../PlayFabMultiplayerSDK.md)
 
