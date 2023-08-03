@@ -114,21 +114,3 @@ landingContent:
         links:
           - text: Learn more about configuring segments
             url: segmentation/segment-configuration.md
-
-  # Card
-  - title: A/B testing
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: What is A/B testing?
-            url: ab-testing/index.md
-      - linkListType: quickstart
-        links:
-          - text: Create an A/B test with player buckets
-            url: ab-testing/quickstart.md   
-      - linkListType: tutorial
-        links:
-          - text: A/B testing with Stores
-            url: ab-testing/ab-testing-with-stores-and-test-buckets.md
-          - text: A/B testing with TitleData and CloudScript
-            url: ab-testing/ab-testing-with-title-data.md

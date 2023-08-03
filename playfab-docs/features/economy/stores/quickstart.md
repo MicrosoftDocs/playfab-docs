@@ -121,7 +121,3 @@ For example, by using segments with stores, you can give special prices to certa
 
 * [Custom stores for player segments](../tutorials/custom-stores-for-player-segments.md)
 * [Best practices for store segmentation](../tutorials/best-practices-for-store-segmentation.md)
-
-Also, by combining stores and segments with A/B testing, you can produce several versions of a store available to different A/B testing groups (buckets).
-
-* [A/B testing with stores and test buckets](../../analytics/ab-testing/ab-testing-with-stores-and-test-buckets.md)
