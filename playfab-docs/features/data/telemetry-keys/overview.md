@@ -67,7 +67,7 @@ X-TelemetryKey: <Your Telemetry Key>
 {
   "Events": [
     {
-      "EventNamespace": "MyCustomEventNS",
+      "EventNamespace": "custom.MyCustomEventNS",
       "Name": "MyCustomEvent",
       "Entity": {
         "type": "external",
@@ -90,12 +90,12 @@ Once the event is ingested by PlayFab, it looks like this:
     "Id": "9bb3a96d0faa4e2d9f74b6c166a44676", 
     "Timestamp": "2022-09-27T19:42:21.7427679Z", 
     "FullName": { 
-        "Namespace": "MyCustomEventNS", 
+        "Namespace": "custom.MyCustomEventNS", 
         "Name": "MyCustomEvent" 
     }, 
     "Entity": { 
-        "Type": "external", 
-        "Id": "<CUSTOM_ID>" 
+        "Type": "external",
+        "Id": "<CUSTOM_ID>"
     }, 
     "EntityLineage": { 
         "namespace": "B85A7CFE2803D5A2",

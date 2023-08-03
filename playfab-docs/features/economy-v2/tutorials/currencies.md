@@ -3,7 +3,7 @@ title: Economy v2 Virtual Currency Quickstart
 author: cybtachyon
 description: In this quickstart, you set up your first virtual currencies via the APIs.
 ms.author: derekreese
-ms.date: 9/07/2022
+ms.date: 7/27/2023
 ms.topic: quickstart
 ms.service: playfab
 keywords: playfab, commerce, economy, currency, virtual currency
@@ -14,11 +14,11 @@ ms.localizationpriority: medium
 
 [!INCLUDE [notice](../../../includes/_economy-release.md)]
 
-Get started with PlayFab Economy by using the PlayFab Beta SDK to setup your first virtual currency. After getting an entity token to interact with your title via the APIs, you create and configure a virtual currency.
+Get started with PlayFab Economy by using the [PlayFab Services SDK](/gaming/playfab/sdks/playfab-sdk-intro) to set up your first virtual currency. After getting an entity token to interact with your title via the APIs, you create and configure a virtual currency.
 
 ## Prerequisites
 
-* A [PlayFab developer account](https://developer.playfab.com/sign-up)
+* A [PlayFab developer account](https://developer.playfab.com/en-us/sign-up)
 * The PlayFab Beta SDK (You can find more information on the [Postman Quickstart](../../../sdks/postman/postman-quickstart.md#adding-playfab-collections))
 
 ## Get a title entity token
@@ -27,9 +27,21 @@ To make changes to your title config data via the APIs, you first need to obtain
 
 ## Create a new virtual currency
 
-To create a new virtual currency, you will need to call `CreateDraftItem`. In the call, paste the following into the body:
+To create a new virtual currency, you need to create a Draft Item of type Currency.
 
-```json
+### [Game Manager](#tab/create-currency-gm)
+
+1. Navigate to the **Economy** tab in Game Manager and select **Catalog (V2)**.
+1. Choose **Currency** and select **New currency**.
+1. Edit the **Title** and add a **Description** - for example, `Diamonds`, `Our in-game currency of choice.`.
+1. Select **Save and publish** to complete your changes.
+1. Observe your currency in the **Currency** list.
+
+### [REST API](#tab/create-currency-api)
+
+Call [CreateDraftItem](/rest/api/playfab/economy/catalog/create-draft-item). Use the following body:
+
+```JSON
 {
   "Item": {
     "CreatorEntity": {
@@ -37,17 +49,19 @@ To create a new virtual currency, you will need to call `CreateDraftItem`. In th
       "Type": "title"
     },
     "Type": "currency",
-    "ContentType": "gameitem",
     "AlternateIds": [
       {
         "Type": "FriendlyId",
-        "Value": "AU"
+        "Value": "diamonds"
       }
     ],
     "Title": {
-      "NEUTRAL": "Gold"
+      "NEUTRAL": "Diamonds"
     },
-    "StartDate": "2022-09-07T00:00:00.000Z",
+    "Description": {
+      "NEUTRAL": "Our in-game currency of choice."
+    },
+    "StartDate": "2023-07-27T00:00:00.000Z",
   },
   "Publish": true,
   "CustomTags": {
@@ -56,18 +70,25 @@ To create a new virtual currency, you will need to call `CreateDraftItem`. In th
 }
 ```
 
+---
+
 * The `FriendlyId` is the currency code, which can contain between one and three alphanumeric values
-* The `Title` is the display name that will be shown to the players
-* `ContentType` is a categorization of Economy items - this must first be set in the title settings
-* `StartDate` is a datetime string representing when the currency will be visible to the players (default is the time of creation)
+* The `Title` is the display name that is shown to the players
+* `ContentType` is a categorization of Economy items. You must first set the Content Type in ⚙️ > Title Settings > Economy > Catalog (V2) Settings.
+* `StartDate` is a datetime string representing when the currency is visible to the players (default is the time of creation)
 
 ## Troubleshooting
 
 * Missing/expired entity token
-  * If you are attempting to call `CreateDraftItem` and receive a `401: Unauthorized` error, you may have forgotten to get a title entity token, or it might be expired
-* The content type '' is not supported
-  * If you are attempting to call `CreateDraftItem` and receive a `CatalogBadRequest` with the above message, you need to first create a content type in the catalog settings tab under your title's settings page in Game Manager
+  * If you're attempting to call `CreateDraftItem` and receive a `401: Unauthorized` error, you may have forgotten to get a title entity token, or it might be expired
+* The content type `''` isn't supported
+  * If you're attempting to call `CreateDraftItem` and receive a `CatalogBadRequest` with the above message, you need to first create a content type in the catalog settings tab under your title's settings page in Game Manager
 
 ## Next steps
 
-Now that you set up your first virtual currency, you can update the currency, you can reward the currency to your players, and catalog items can be assigned prices corresponding to the currency.
+Now that you set up your first virtual currency, you can:
+
+1. Add the currency to PlayFab Bundles you sell in app stores.
+1. Have the game server reward the currency to your players with [AddInventoryItems](/rest/api/playfab/economy/inventory/add-inventory-items).
+1. Assign prices to Catalog Items corresponding to the currency.
+1. Allow players to purchase Catalog Items with the currency using [PurchaseInventoryItems](/rest/api/playfab/economy/inventory/purchase-inventory-items).
