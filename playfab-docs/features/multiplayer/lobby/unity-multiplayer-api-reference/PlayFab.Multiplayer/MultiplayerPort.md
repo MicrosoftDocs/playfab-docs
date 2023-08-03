@@ -1,6 +1,6 @@
 ---
 author: nassosterz-ms
-title: MultiplayerPort
+title: MultiplayerPort struct
 description: MultiplayerPort members
 ms.author: aterzakis
 ms.topic: reference
@@ -16,7 +16,7 @@ A port used by a Playfab Multiplayer Server.
 public class MultiplayerPort
 ```
 
-## Properties
+## Public Members
 
 | name | description |
 | --- | --- |

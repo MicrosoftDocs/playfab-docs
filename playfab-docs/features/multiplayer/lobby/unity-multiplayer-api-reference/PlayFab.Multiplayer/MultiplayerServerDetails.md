@@ -1,6 +1,6 @@
 ---
 author: nassosterz-ms
-title: MultiplayerServerDetails
+title: MultiplayerServerDetails struct
 description: MultiplayerServerDetails members
 ms.author: aterzakis
 ms.topic: reference
@@ -16,7 +16,7 @@ Details about a Playfab Multiplayer Server.
 public class MultiplayerServerDetails
 ```
 
-## Properties
+## Public Members
 
 | name | description |
 | --- | --- |
