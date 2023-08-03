@@ -325,7 +325,7 @@
             "redirect_url": "/gaming/playfab/sdks/playfab-sdk-intro",
             "redirect_document_id": false
         },
-	{
+        {
             "source_path": "playfab-docs/features/social/leaderboardsv2/index.md",
             "redirect_url": "/gaming/playfab/features/social/tournaments-leaderboards",
             "redirect_document_id": false
@@ -349,6 +349,31 @@
             "source_path": "playfab-docs/features/social/leaderboardsv2/child-leaderboards.md",
             "redirect_url": "/gaming/playfab/features/social/tournaments-leaderboards",
             "redirect_document_id": false
-        }	
+        },
+        {
+            "source_path": "playfab-docs/features/analytics/ab-testing/ab-testing-with-stores-and-test-buckets.md",
+            "redirect_url": "/gaming/playfab/features/analytics/experiments",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/analytics/ab-testing/ab-testing-with-title-data.md",
+            "redirect_url": "/gaming/playfab/features/analytics/experiments",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/analytics/ab-testing/index.md",
+            "redirect_url": "/gaming/playfab/features/analytics/experiments",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/analytics/ab-testing/quickstart.md",
+            "redirect_url": "/gaming/playfab/features/analytics/experiments",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/analytics/ab-testing/tutorials.md",
+            "redirect_url": "/gaming/playfab/features/analytics/experiments",
+            "redirect_document_id": false
+        }
     ]
 }

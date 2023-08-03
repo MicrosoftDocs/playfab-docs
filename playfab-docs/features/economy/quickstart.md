@@ -98,5 +98,4 @@ Once you have a Catalog with Items supported by Virtual Currencies, you can ligh
 * **Using Item attributes**: To define multiple prices and specify stackable, tradable, and limited edition [Items](items/index.md).
 * **Setting up unique in-game vendors or Sales events**: Using [Stores and Sales](tutorials/stores-and-sales.md).
 * **Creating some player Segments and use Stores**: To drive different item and bundle offers to your players regardless of where they are in your game lifecycle. For an example, see our [Custom stores for player segments](tutorials/custom-stores-for-player-segments.md) tutorial.
-* **Verifying your assumptions**: Using [A/B testing](../analytics/ab-testing/index.md).
 * **Gathering economic data**: Enabling you to improve and iterate your game using PlayFab [Reports](../analytics/reports/index.md).

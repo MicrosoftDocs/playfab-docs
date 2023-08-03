@@ -59,4 +59,3 @@ PlayFab Economy also provides a suite of tools to support game economy best prac
 
 > [!NOTE]
 > If you are interested in the previous version of PlayFab Economy, otherwise known as V1 or Legacy, you can find that documentation here: [Legacy Economy](economy/index.yml)  
-
