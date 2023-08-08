@@ -14,6 +14,12 @@ ms.localizationpriority: medium
 > [!NOTE]
 > For release notes about service releases and product updates, see the [release notes](https://github.com/PlayFab/PlayFab/releases) section on [PlayFab's public GitHub repository](https://github.com/PlayFab/PlayFab)
 
+## 230804
+
+Date: August 4, 2023
+
+- Minor reference documentation updates across multiple APIs
+
 ## 230721
 
 Date: July 21, 2023
