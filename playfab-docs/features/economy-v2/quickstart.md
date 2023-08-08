@@ -3,7 +3,7 @@ title: Quickstart
 author: cybtachyon
 description: Get started with the new Economy v2 features.
 ms.author: derekreese
-ms.date: 09/07/2022
+ms.date: 07/27/2023
 ms.topic: quickstart
 ms.service: playfab
 keywords: playfab, commerce, economy
@@ -20,13 +20,15 @@ After working through [Getting started for developers](../../personas/developer.
 1. Set up Receipt Validation
 1. Walk through purchasing an item
 
+See the [Unity-specific Tutorial](tutorials/getting-started-with-unity-and-android.md) for a detailed walkthrough in Unity.
+
 ## Part 1: Catalog overview
 
 ### Step 1 – Get permissions
 
 The first step is to enable the catalog in the settings page in the Game Manager UI under ⚙️ **Title Settings** > **Economy (V2)**. You can use the `UpdateCatalogConfig` API and set the `IsCatalogEnabled` flag to true.
 
-To interact with the Catalog you either need to Log into GameManger and use the site tools, or get an Entity Token for using the APIs. The easiest way to get an entity token is with the [GetEntityToken](/rest/api/playfab/authentication/authentication/get-entity-token) API.
+To interact with the Catalog, you either need to Log into GameManger and use the site tools, or get an Entity Token for using the APIs. The easiest way to get an entity token is with the [GetEntityToken](/rest/api/playfab/authentication/authentication/get-entity-token) API.
 
 > [!NOTE]
 > To call the API as an admin or authoritative service, which you will need to do before you create your first Catalog item, you’ll need to include an X-SecretKey header with a title secret key. You can create title secret keys in the Game Manager UI under ⚙️ **Title Settings** > **Secret Keys**.
@@ -186,7 +188,7 @@ Fill in the required metadata – there are only four required properties (_Crea
 ```json
 {
   "NEUTRAL": "My Game Item",
-  "en-us": "My Game Item"
+  "en-US": "My Game Item"
 }
 ```
 
@@ -217,12 +219,12 @@ Data:
     "Type": "catalogItem",
     "ContentType": "gameitem",
     "Title": {
-      "NEUTRAL": "My Amazing Fire Item",
-      "en-us": "My Lit Lit Item"
+      "NEUTRAL": "My Amazing Fire Sword",
+      "en-US": "My Lit Lit Sword"
     },
-    "StartDate": "2022-09-07T00:00:00.000Z",
+    "StartDate": "2023-07-27T00:00:00.000Z",
     "Tags": [
-      "desert"
+      "weapon"
     ]
   },
   "Publish": true,
@@ -241,20 +243,20 @@ private static async Task PlayFabEconomyv2QuickStart()
     CreateDraftItemRequest gameFireItem = new()
     {
         AuthenticationContext = gameAuthContext,
-        Item = new CatalogItem
+        Item = new CatalogItem()
         {
             CreatorEntity = gameEntityKey,
             Type = "catalogItem",
             ContentType = "gameitem",
             Title = new Dictionary<string, string>
             {
-                { "NEUTRAL", "My Amazing Fire Item" },
-                { "en-us", "My Lit Lit Item" }
+                { "NEUTRAL", "My Amazing Fire Sword" },
+                { "en-US", "My Lit Lit Sword" }
             },
             StartDate = DateTime.Now,
             Tags = new List<string>
             {
-              "desert"
+              "weapon"
             }
         },
         Publish = true,
@@ -287,7 +289,7 @@ private static async Task PlayFabEconomyv2QuickStart()
 > [!NOTE]
 > Putting the item into a Draft state is not required – Draft is meant for when you expect to iterate on the metadata for some period of time. We support the parameter "publish”, that when set to "true" will publish the item immediately. This could save you some call volume depending on your pattern.
 
-Once an Item is in Draft, you can then push it to a ‘Published’ state using the [PublishDraftItem](/rest/api/playfab/economy/catalog/publish-draft-item) endpoint (this step is handled invisibly in GameManager). Once an item is "Published", it's searchable and available publicly. You need to use the ItemId returned from the CreateDraftItem response in order to publish.
+Once an Item is in Draft, you can then push it to a ‘Published’ state using the [PublishDraftItem](/rest/api/playfab/economy/catalog/publish-draft-item) endpoint (this step is handled invisibly in GameManager). Once an item is Published, it's searchable and available publicly. You need to use the ItemId returned from the CreateDraftItem response in order to publish.
 
 ### Step 4 - Do a search
 
@@ -385,9 +387,9 @@ Data:
     ],
     "Title": {
       "NEUTRAL": "My Amazing Test Currency",
-      "en-us": "My Test Coin"
+      "en-US": "My Test Coin"
     },
-    "StartDate": "2022-09-07T00:00:00.000Z"
+    "StartDate": "2023-07-27T00:00:00.000Z"
   },
   "Publish": true,
   "CustomTags": {
@@ -441,7 +443,7 @@ An item must have a currency value in order for it to be purchasable with virtua
 
 #### [API](#tab/create-catalog-item-api)
 
-Get the draft of your Catalog Item by calling the [GetDraftItem](/rest/api/playfab/economy/catalog/get-draft-item) endpoint. Then update the draft with the [UpdateDraftItem](/rest/api/playfab/economy/catalog/get-draft-item) endpoint using:
+Get the draft of your Catalog Item by calling the [GetDraftItem](/rest/api/playfab/economy/catalog/get-draft-item) endpoint. Then update the draft with the [UpdateDraftItem](/rest/api/playfab/economy/catalog/update-draft-item) endpoint using:
 
 * The EntityToken (from GetEntityToken or other PlayFab `login` call) in the X-EntityToken header
 * The Entity.Id from the previous call in the item’s EntityKey.Id
@@ -477,12 +479,26 @@ curl \
 {
   "Item": {
     "Id": "{{EntityID}}",
+    "CreatorEntity": {
+      "Id": "{{TitleID}}",
+      "Type": "title"
+    },
+    "Type": "catalogItem",
+    "ContentType": "gameitem",
+    "Title": {
+      "NEUTRAL": "My Amazing Fire Sword",
+      "en-US": "My Lit Lit Sword"
+    },
+    "StartDate": "2023-07-27T00:00:00.000Z",
+    "Tags": [
+      "weapon"
+    ]
     "PriceOptions": {
       "Prices": [
         {
           "Amounts": [
             {
-              "Id": "{{CurrencyID}}",
+              "ItemId": "{{CurrencyID}}",
               "Amount": 15
             }
           ]
