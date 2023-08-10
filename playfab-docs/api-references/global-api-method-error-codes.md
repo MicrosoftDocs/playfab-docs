@@ -16,11 +16,14 @@ This tutorial lists the global error codes that apply to every PlayFab API metho
 
 Each API error contains the following fields:
 
-- **Error** - A human-readable code for the error.
-- **ErrorCode** - A numerical code for the error.
+- **Code** - The HTTP error code returned by the server
+- **ErrorCode** - A numerical error code specific to PlayFab.
+- **Error** - A human-readable code specific to PlayFab.
+- **ErrorMessage** - A description of the error that provides additional context useful for debugging.
+- **ErrorDetails** - Not always present. Provides additional context for certain types of errors.
 
 > [!NOTE]
-> This page lists the common error codes that you might encounter. If the error code you are looking for is not available on this page, ask for additional information on the [PlayFab forum](https://community.playfab.com/spaces/24/index.html).
+> This page lists the common error codes that you might encounter. If the error code you are looking for is not available on this page, see our more general [http response status code guidance](http-response-status-codes.md).
 
 ## Safe to retry codes
 
@@ -41,14 +44,8 @@ Indicates too many *simultaneous calls*, or very rapid *sequential* calls.
 - `DownstreamServiceUnavailable (1127)`:
 Indicates that PlayFab or a third-party service might be having a temporary issue.
 
-- `InvalidAPIEndpoint (1131)`:
-Indicates that the URL for this request is not valid for this title.
-
-- `OverLimit (1214)`:
-Indicates that an attempt to perform an operation will cause the service usage to go over the limit as shown in the Game Manager limit pages. Evaluate the returned error details to determine which limit would be exceeded.
-
 - `ServiceUnavailable (1123)`:
-Indicates that PlayFab may be having a temporary issue or the client is making too many API calls too quickly.
+Indicates that PlayFab may be having a temporary issue or the client is making too many API calls too quickly. If you do retry this request, is is important to properly use an exponential backoff strategy.
 
 ## Never retry codes
 
@@ -101,6 +98,12 @@ This title has been deleted from PlayFab, and can no longer be used.
 - `UnknownError (1039)`:
 This typically occurs if bad information is sent to a third-party add-on, and our server experienced an unknown result or error while interacting with external systems. To resolve this, experiment with your inputs, and try to determine if your inputs are invalid in some way. Otherwise, report the error on the forums, with your titleId, the full request JSON (if possible), and the error output. Postman is a useful tool for debugging this situation.
 
+- `InvalidAPIEndpoint (1131)`:
+Indicates that the URL for this request is not valid for this title.
+
+- `OverLimit (1214)`:
+Indicates that an attempt to perform an operation will cause the service usage to go over the limit as shown in the Game Manager limit pages. Evaluate the returned error details to determine which limit would be exceeded.
+
 ## Other notable error codes
 
 These codes *only* occur on specific API methods (listed on the documentation page for those methods), but if you see them, there are important consequences of which you should be aware.
@@ -110,3 +113,6 @@ Your title is either hitting CloudScript too hard, or is trying to force segment
 
   1. How often your script calls utilize near-maximum time per call (or worse, time out).
   2. How frequently you're calling CloudScript per player. Calls to get the list of players in a segment would be the key thing to examine (a task targeting a segment also causes re-evaluation, but that should be infrequent).
+
+- `ConnectionTimeout (2)`:
+Depending on the specifics of the SDK you're using and the underlying networking stack, it is possible to see errors such as **ConnectionError**, **ConnectionTimeout**, or other errors related to difficulties contacting the PlayFab servers. These all are indicative of networking issues. The most common source is a disconnection on the client side. It is possible to also get these when internet routing between the client and PlayFab's servers are disrupted for some reason. There is very little a game can do to handle these errors. The best response is to let upstream callers or the player know that a connection cannot be established. They could then initiate the operation again later.
