@@ -1,12 +1,12 @@
 ---
 title: PlayFab Online Subsystem (OSS) Quickstart
-description: Guidance on how to use PlayFab Party in your Unreal Engine Project.
+description: Guidance on how to use PlayFab Party and Multiplayer SDKs in your Unreal Engine Project.
 author: PushpadantK
 ms.author: pkacha
 ms.date: 05/10/2022
 ms.topic: article
 ms.service: playfab
-keywords: playfab, multiplayer, networking, unreal, unreal engine, unreal engine 4, unreal engine 5, middleware
+keywords: playfab, multiplayer, networking, unreal, unreal engine, unreal engine 4, unreal engine 5, ue4, ue5, middleware
 ---
 
 # QuickStart: PlayFab Online Subsystem (OSS)
@@ -21,24 +21,25 @@ Go to [PlayFab Online SubSystem](https://github.com/PlayFab/PlayFabMultiplayerUn
 
 ## What you need
 
-* **PlayFab Title ID:** If you don't have a Title ID configured for PlayFab Party, see [Enabling PlayFab Party](enable-party.md).
+* **PlayFab Title ID:** If you don't have a Title ID configured for PlayFab Party and Multiplayer SDKs, see [Enabling PlayFab Party](enable-party.md).
 
 ### GDK, PC, Switch, PlayStation®5 and PlayStation®4
 
-* **Specific platform PlayFab Multiplayer and Party libraries:** These files are provided with the source in [Download and install PlayFab Online Subsystem](#download-and-install-playfab-online-subsystem). If you need updated Party library files, then see [Obtaining PlayFab Party libraries](party-unreal-engine-oss-obtaining-playfab-party-libraries.md).
+* **Specific platform PlayFab Party and Lobby and Matchmaking libraries:** See [Obtaining PlayFab Party and Multiplayer libraries](party-unreal-engine-oss-obtaining-playfab-party-libraries.md).
 
 ## Initial setup
 
 * Copy the **OnlineSubsystemPlayFab** folder and its contents from to your UE directory under **Engine\Plugins\Online**
 * Apply the following changes to the Plugins section of your ".uproject" file to add the OnlineSubsystemPlayFab to your plugin list.
   * You may remove any platforms that you're not shipping on
+  * Use XboxOneGDK instead of XB1 if you are using UE4, since UE5 deprecates XboxOneGDK
 
 ```json
 {
  "Name": "OnlineSubsystemPlayFab",
  "Enabled": true,
  "WhitelistPlatforms": [
-  "XboxOneGDK",
+  "XB1",
   "WinGDK",
   "XSX",
   "Win64",
@@ -47,7 +48,7 @@ Go to [PlayFab Online SubSystem](https://github.com/PlayFab/PlayFabMultiplayerUn
   "PS5"
  ],
  "SupportedTargetPlatforms": [
-  "XboxOneGDK",
+  "XB1",
   "WinGDK",
   "XSX",
   "Win64",
@@ -63,8 +64,8 @@ Go to [PlayFab Online SubSystem](https://github.com/PlayFab/PlayFabMultiplayerUn
 * No matter which platform you're targeting, your game needs to configure certain PlayFab specific values in your intended platform target's INI file (located at [yourGameDirectory]/Platforms/[yourPlatform]/Config).
   * **Xbox Series X GDK:** XSXEngine.ini
   * **PC GDK:** WinGDKEngine.ini
-  * **Xbox One GDK:** XboxOneGDKEngine.ini
-  * **PC Steam:** WindowsEngine.ini
+  * **Xbox One GDK:** XB1Engine.ini (or XboxOneGDKEngine.ini if you are using UE4)
+  * **PC Steam:** WindowsEngine.ini (or find it in [yourGameDirectory]/Config/Windows)
   * **Nintendo Switch** SwitchEngine.ini
   * **PS4™** PS4Engine.ini
   * **PS5™** PS5Engine.ini
@@ -83,10 +84,12 @@ MaxUsersPerDeviceCount=<REPLACE ME with your max player count per box (note: spl
 DirectPeerConnectivityOptions=<REPLACE ME with your connectivity options, in the form of an array of strings. The default case corresponds to the following:
 +DirectPeerConnectivityOptions=AnyPlatformType
 +DirectPeerConnectivityOptions=AnyEntityLoginProvider>
+bHasPlayFabVoiceEnabled=<REPLACE ME with true/false>
 
 [/Script/OnlineSubsystemPlayFab.PlayFabNetDriver]
 NetConnectionClassName="OnlineSubsystemPlayFab.PlayFabNetConnection"
-ReplicationDriverClassName="<REPLACE ME with your existing replication driver class name>"
+ReplicationDriverClassName="<REPLACE ME with your existing replication driver class name>" . Generally, it could be found in MyGame/Config/DefaultEngine.ini file,
+							the value should looks like: ReplicationDriverClassName="/Script/MyGame.MyReplicationGraph".
 ConnectionTimeout=15.0
 InitialConnectTimeout=30.0
 
@@ -124,11 +127,11 @@ NativePlatformService=Steam
 
 ### Switch
 
-For more information about Switch, see the [ReadMe.md](https://dev.azure.com/PlayFabPrivate/Switch/_git/PlayFabMultiplayerUnrealSwitch?path=/README.md) file that comes with the Switch PlayFab OSS.
+For more information about Switch, see the [ReadMe.md](https://dev.azure.com/PlayFabPrivate/Switch/_git/PlayFabMultiplayerUnrealSwitch?path=/README.md) file that comes with the Switch PlayFab OSS. If you do not have access, you can [request access](request-access-for-sdks-samples.md) to our private repositories.
 
 ### PS5™ and PS4™
 
-For more information about PS5™ and PS4™, see the [ReadMe.md](https://dev.azure.com/PlayFabPrivate/PS5/_git/PlayFabMultiplayerUnrealPlayStation?path=/README.md) file that comes with the PS5™ and PS4™ PlayFab OSS.
+For more information about PS5™ and PS4™, see the [ReadMe.md](https://dev.azure.com/PlayFabPrivate/PS5/_git/PlayFabMultiplayerUnrealPlayStation?path=/README.md) file that comes with the PS5™ and PS4™ PlayFab OSS. If you do not have access, you can [request access](request-access-for-sdks-samples.md) to our private repositories.
 
 ### Cross-platform
 
@@ -160,14 +163,14 @@ These steps complete the setup of OSS required to be used in your game.  Good lu
 
 Users may face issues when trying to create an Unreal Engine Installed Build with the OnlineSubsystemPlayFab on GDK build flavors. We provide the following guidance to successfully overcome this issue until there's a more complete solution.
 
+**If you are using UE4.27+,**
  * Locate the directory where Unreal Engine is installed on the machine.
  * Navigate to Engine\Platforms\GDK\Plugins\Online\PlayFabParty
  * Open PlayFabParty.uplugin
  * Replace the key **WhitelistPlatforms** with **BlacklistPlatforms**
-
-Repeat the process for XboxOneGDK (PlayFabParty_XboxOneGDK.uplugin) and XSX (PlayFabParty_XSX.uplugin) if these platforms are required for the Installed Build. If Win64 is also a required platform for the installed build, add Win64 in the array of **BlacklistPlatforms**.
-
-Example of how the part of interest of PlayFabParty.uplugin looks after following these instructions:
+ * Repeat the process for XboxOneGDK (PlayFabParty_XboxOneGDK.uplugin) and XSX (PlayFabParty_XSX.uplugin) if these platforms are required for the Installed Build. If Win64 is also a required platform for the installed build, add Win64 in the array of **BlacklistPlatforms**.
+    
+    Example Modules config in PlayFabParty.uplugin for UE4.27+::
 ```config
 	"Modules": [
 		{
@@ -178,6 +181,40 @@ Example of how the part of interest of PlayFabParty.uplugin looks after followin
 		}
 	],
 ```
+**If you are using UE5.0 - 5.2:**
+ * Locate the directory where Unreal Engine is installed on the machine.
+ * Navigate to Engine\Platforms\GDK\Plugins\Online\PlayFabParty
+ * Open PlayFabParty.uplugin, and update Modules config with **PlatformDenyList**:
+    ```
+    "Modules": [
+            {
+                "Name": "PlayFabParty",
+                "Type": "Runtime",
+                "LoadingPhase": "Default",
+                "HasExplicitPlatforms": true,
+                "PlatformDenyList": [ "WinGDK", "Win64" ]
+            }
+        ],
+    ```
+* Repeat the above process for XB1 (PlayFabParty_XB1.uplugin) and XSX (PlayFabParty_XSX.uplugin) if these platforms are required for the Installed Build. If Win64 is also a required platform for the installed build, add Win64 in the array of **PlatformDenyList**.
+
+## Workflow of PF OSS
+
+After adding below code (as the above instruction)
+```
+[OnlineSubsystem]
+DefaultPlatformService=PlayFab
+```
+UE OnlineSubsystemModule creates online subsystem instance for PlayFab, therefore start creating ⁠PlayFabSingleton. At this point, SDK is initialized in⁠ FOnlineSubsystemPlayFab::Init(), 
+where it initializes both Party and Multiplayer SDKs with PlayFab TitleID (this titleID is defined inside [Game Configuration](#game-configuration) file. During initialization,
+we'll ⁠CreatePlayFabSocketSubsystem() as main online subsystem. 
+
+Workflow of Multiplayer SDK: FOnlineSubsystemPlayFab::Init() initializes the InitializeMultiplayer() multiplayer SDK singleton for your title. In the PlayFabLobby.cpp, FPlayFabLobby::DoWork() processes the
+state changes triggered by Multiplayer APIs (view Platforms/GDK/Include/PFLobby.h for APIs).
+
+Workflow of Party SDK: FOnlineSubsystemPlayFab::Init() initializes the InitializeParty() multiplayer SDK singleton for your title. In the OnlineSubsystemPlayFab.cpp, FOnlineSubsystemPlayFab::DoWork() processes the
+state changes triggered by Party APIs (view Platforms/GDK/Include/Party.h for APIs).
+
 
 "PlayStation" is a registered trademark or trademark of Sony Interactive Entertainment Inc.
 "PS4" is a registered trademark or trademark of Sony Interactive Entertainment Inc.

@@ -8,13 +8,13 @@
     href: ../../networking/party-unreal-engine-oss-overview.md
   - name: OSS quickstart
     href: ../../networking/party-unreal-engine-oss-quickstart.md
-  - name: Get Party libraries
+  - name: Get Party and Multiplayer libraries
     href: ../../networking/party-unreal-engine-oss-obtaining-playfab-party-libraries.md
   - name: Cognitive Services interface
     href: ../../networking/party-unreal-engine-oss-cognitive-services-interface.md
   - name: Using older versions of Unreal Engine 4
     href: ../../networking/party-unreal-engine-using-older-versions.md
-  - name: Unreal Engine 4 Release notes
+  - name: Unreal Engine 4 and 5 Release notes
     href: ../../networking/unreal-release-notes.md
 - name: Unity
   items:
