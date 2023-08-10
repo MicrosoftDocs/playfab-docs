@@ -6,14 +6,19 @@ ms.author: pkacha
 ms.date: 11/29/2021
 ms.topic: article
 ms.service: playfab
-keywords: playfab, multiplayer, networking, unreal, unreal engine, unreal engine 4, unreal engine 5, middleware
+keywords: playfab, multiplayer, networking, unreal, unreal engine, unreal engine 4, unreal engine 5, ue4, ue5, middleware
 ---
 
 # Overview
 
-The PlayFab Online Subsystem (PF OSS) enables you to make use of Multiplayer features like Lobby, Matchmaking, Party and Azure Cognitive Services in your Unreal Engine 4 (UE4) or Unreal Engine 5 (UE5) game. These features include cross-talk, cross-play, and accessibility features like real-time text chat translation and voice transcription services. It is currently designed for use when developing PC, Xbox, Steam, Nintendo Switch, PlayStation®5 and PlayStation®4 games. This subsystem layer works seamlessly on top of the existing Epic provided base Online Subsystem (OSS) GDK. PlayFab OSS complements the base OSS by adding support for PlayFab Lobby, Matchmaking, Party networking and Voice over Internet Protocol (VOIP).
+The PlayFab Online Subsystem (PF OSS) enables you to make use of Multiplayer features like Lobby, Matchmaking, Party and Azure Cognitive Services in your Unreal Engine 4 (UE4) or Unreal Engine 5 (UE5) game. These features include cross-talk, cross-play, and accessibility features like real-time text chat translation and voice transcription services. It is currently designed for use when developing PC, Xbox, Steam, Nintendo Switch, PlayStation®5 and PlayStation®4 games. This subsystem layer works seamlessly on top of the existing Epic provided native Online Subsystem (OSS). PlayFab OSS complements the native OSS by adding support for PlayFab Lobby, Matchmaking, Party networking and Voice over Internet Protocol (VOIP).
 
-PlayFab OSS works alongside the PlayFab SDK marketplace plugin, which provides other PlayFab functionalities such as economy, leaderboards, and more. For more information, see [PlayFab SDK on the UE4 Marketplace (external site)](https://www.unrealengine.com/marketplace/product/playfab-sdk).
+PlayFab OSS works alongside the PlayFab SDK marketplace plugin, which provides other PlayFab functionalities such as economy, leaderboards, and more. For more information, see [PlayFab SDK on the UE Marketplace (external site)](https://www.unrealengine.com/marketplace/product/playfab-sdk).
+
+|    | PlayFab Online Subsystem | PlayFab SDK Marketplace Plugin    |
+|--------------|-------------|-------------|
+| Source  | [GitHub public repository](https://github.com/PlayFab/PlayFabMultiplayerUnreal) |  [PlayFab SDK on the UE Marketplace (external site)](https://www.unrealengine.com/marketplace/product/playfab-sdk)  |
+| Top Features | Lobby, Matchmaking, and Party | Economy, Leaderboards, Data & Analytics |
 
 ## What is included in the Online Subsystem?
 
@@ -38,17 +43,21 @@ PlayFab OSS works alongside the PlayFab SDK marketplace plugin, which provides o
 
 ## Which versions of Unreal Engine are supported?
 
-We officially support 5.1, 5.0, 4.27 and 4.26. For UE4, 4.27 is the recommended version since crossplay between different platforms does not work on 4.26, but it does on 4.27. If you are on an earlier version of Unreal Engine 4, the OSS can be backported with minimal work. Refer to the [Using older versions of Unreal Engine 4](party-unreal-engine-using-older-versions.md) page for more details.
-
-**NOTE:** If you are using a version of UE4 earlier than 4.25plus, you will have to rename all references to GDK to Anvil using find & replace all.
-
-Listed below are the versions of Unreal Engine and the corresponding platforms that the PF OSS currently supports.
-
 | UE version   | GDK PC      | GDK Xbox    | Steam       | PS4         | PS5         | Switch      |
 |--------------|-------------|-------------|-------------|-------------|-------------|-------------|
-| 4.27 Plus    | Supported   | Supported   | Supported   | Supported   | Supported   | Supported   |
-| 5.0          | Supported   | Supported   | Supported   | Supported   | Supported   | Supported   |
-| 5.1          | Supported   | Supported   | Supported   | Supported   | Supported   | Supported   |
+| 4.27 Plus    | Supported*   | Supported*   | Supported*   | Supported*   | Supported*   | Supported*   |
+| 5.0          | Supported*   | Supported*   | Supported*   | Supported*   | Supported*   | Supported*   |
+| 5.1          | Supported*   | Supported*   | Supported*   | Supported*   | Supported*   | Supported*   |
+| 5.2          | Supported   | Supported   | Supported   | Supported   | Supported   | Supported   |
+
+
+*For users on previous versions of Unreal Engine (UE4.27, 5.0, and 5.1) who wish to use PlayFab Online Subsystem, here are two options:
+- Upgrade your local Unreal Engine version to 5.2.
+- Pull the latest release and backport it to your game.
+For UE4, 4.27 is the recommended version since crossplay between different platforms does not work on 4.26, but it does on 4.27. If you are on an earlier version of Unreal Engine 4, the OSS can be backported with minimal work. Refer to the [Using older versions of Unreal Engine 4](party-unreal-engine-using-older-versions.md) page for more details.
+NOTE: If you are using a version of UE4 earlier than 4.25plus, you have to rename all references to GDK to Anvil using find & replace all.
+
+If you have any questions during backporting on UE4.27, 5.0, and 5.1, please feel free to open a [GitHub issue](https://github.com/PlayFab/PlayFabMultiplayerUnreal/issues/new) or open a [support ticket](https://playfab.com/contact/).
 
 ## Which versions of the Microsoft Game Development Kit (GDK) are supported?
 
@@ -63,6 +72,9 @@ Listed below are the versions of Unreal Engine and the corresponding platforms t
   - UE5.1
     - Recommended: June 2022 GDK, Update 2 (2022.06)
     - Minimum: March 2022 GDK, Update 1 (2022.03)
+  - UE5.2
+    - Recommended: October 2022 Update 1 (2022.10)
+    - Minimum: June 2022 Update 4 (2022.06)
 - **Xbox GDK:**
   - UE4
     - Recommended: June 2021 GDK (2021.06)
@@ -73,19 +85,26 @@ Listed below are the versions of Unreal Engine and the corresponding platforms t
   - UE5.1
     - Recommended: June 2022 GDK, Update 2 (2022.06)
     - Minimum: March 2022 GDK, Update 1 (2022.03)
+  - UE5.2
+    - Recommended: October 2022 Update 1 (2022.10)
+    - Minimum: June 2022 Update 4 (2022.06)
 
 XDK is supported on older version(1.07 and earlier) of the OSS, refer [Using older version](party-unreal-engine-using-older-versions.md) for further details.
 
 ## Which version of the Nintendo Switch SDKs are supported?
 
-- Recommended: Refer to the UEBuildSwitch.cs(UE4) or SwitchPlatformSDK.cs(UE5) file in the UnrealBuildTool folder for the Switch.
+- Recommended: Refer to the below suggested .cs file in the UnrealBuildTool folder for the Switch.
   - \Engine\Platforms\Switch\Source\Programs\UnrealBuildTool\
-
+    - UE4: UEBuildSwitch.cs
+    - UE5.0: SwitchPlatformSDK.cs
+    - UE5.1 and UE5.2: SwitchPlatformSDK.Versions.cs
 ## Which version of the PS5™ and PS4™ SDKs are supported?
 
-- Recommended: Refer to the UEBuild[PS4|PS5].cs(UE4) or [PS4|PS5]PlatformSDK.cs(UE5) file in the UnrealBuildTool folder for the PS5™ and PS4™.
+- Recommended: Refer to the below suggested .cs file in the UnrealBuildTool folder for the PS5™ and PS4™.
   - \Engine\Platforms\[PS4|PS5]\Source\Programs\UnrealBuildTool\
-
+    - UE4: UEBuild[PS4|PS5].cs
+    - UE5.0: [PS4|PS5]PlatformSDK.cs
+    - UE5.1 and UE5.2: [PS4|PS5]PlatformSDK.Versions.cs
 ## Pricing
 
 **VOIP and Game Networking functionality is free for users signed in with an Xbox Live account, regardless of platform.**
