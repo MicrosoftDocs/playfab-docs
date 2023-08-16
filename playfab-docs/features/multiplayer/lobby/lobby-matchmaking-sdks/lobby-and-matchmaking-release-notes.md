@@ -12,6 +12,14 @@ ms.localizationpriority: medium
 
 # PlayFab Multiplayer C++ SDK release notes
 
+## 1.6.4
+
+August 16, 2023
+
+### Bug fixes
+
+- Fixes a bug where the GDK DLL was not being codesigned. This is a GDK-only release.
+
 ## 1.6.3
 
 August 14, 2023
