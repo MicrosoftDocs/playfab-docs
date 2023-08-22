@@ -18,7 +18,7 @@ Catalog Items can be given different parameters and values that change whether t
 
 ## Unpublished Draft Items
 
-Draft items are created using the `CreateDraftItem` and haven't been published. These items are available to only the Item Creator, [Catalog Admins](/gaming/playfab/features/economy/ugc/settings/#catalog-admins), and [Title Entities](/gaming/playfab/features/data/entities/#title). Both `GetDraftItem` and `UpdateDraftItem` can be called on these items.
+Draft items are created using the `CreateDraftItem` and haven't been published. These items are available to only the Item Creator, [Catalog Admins](/gaming/playfab/features/economy-v2/settings/#catalog-admins), and [Title Entities](/gaming/playfab/features/data/entities/#title). Both `GetDraftItem` and `UpdateDraftItem` can be called on these items.
 
 ## Published Items
 
@@ -38,4 +38,4 @@ Expired Items are Published Items that have the `IsHidden` flag set to true. The
 
 ## Non-Approved Moderated Items
 
-Via the [Moderation APIs](/gaming/playfab/features/economy/ugc/moderation), Published Items can be set with a moderation status. Published Items that have any status that isn't `Approved` (that is, `AwaitingModeration`, `Rejected`, or `Unknown`) are only accessible by the Item Creator, Catalog Admins, and Title Entities. These items will **not** show up in the Published Catalog and can't be accessed using `GetItem` API for regular players.
+Via the [Moderation APIs](/gaming/playfab/features/economy-v2/ugc/moderation), Published Items can be set with a moderation status. Published Items that have any status that isn't `Approved` (that is, `AwaitingModeration`, `Rejected`, or `Unknown`) are only accessible by the Item Creator, Catalog Admins, and Title Entities. These items will **not** show up in the Published Catalog and can't be accessed using `GetItem` API for regular players.

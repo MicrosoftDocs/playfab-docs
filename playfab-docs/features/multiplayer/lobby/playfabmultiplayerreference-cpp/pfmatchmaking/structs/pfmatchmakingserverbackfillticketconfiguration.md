@@ -5,7 +5,7 @@ description: "Defines the configuration for a server backfill ticket."
 ms.author: scmunro
 ms.topic: reference
 ms.service: playfab
-ms.date: 02/25/2023
+ms.date: 08/14/2023
 ---
 
 # PFMatchmakingServerBackfillTicketConfiguration  
@@ -49,7 +49,7 @@ The members currently in the match.
   
 The details about the PlayFab Multiplayer Server that the ticket is for.
   
-The supplied server details will be provided in the [PFMatchmakingMatchDetails](pfmatchmakingmatchdetails.md) for any other clients that are matched with this ticket. Clients will be able to use this information to the connect to the game server. <br /><br /> The server details are optional. If not server details need to be provided to clients on match completion, this value can be nullptr. Similarly, any of the fields in the server details don't need to be provided to clients can be empty or nullptr.
+The supplied server details will be provided in the [PFMatchmakingMatchDetails](pfmatchmakingmatchdetails.md) for any other clients that are matched with this ticket. Clients will be able to use this information to the connect to the game server. <br /><br /> The server details are optional. If no server details need to be provided to clients on match completion, this value can be nullptr. Similarly, any of the fields in the server details don't need to be provided to clients can be empty or nullptr.
   
 ## Remarks  
   

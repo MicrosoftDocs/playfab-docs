@@ -12,6 +12,23 @@ ms.localizationpriority: medium
 
 # PlayFab Multiplayer C++ SDK release notes
 
+## 1.6.4
+
+August 16, 2023
+
+### Bug fixes
+
+- Fixes a bug where the GDK DLL was not being codesigned. This is a GDK-only release.
+
+## 1.6.3
+
+August 14, 2023
+
+### Bug fixes
+
+- Fixed an issue where the library may crash while handling a change notification.
+- Added new [PFLobbyMemberCountRemainingSearchKey](..\playfabmultiplayerreference-cpp\pflobby\constants\pflobbysearchkeys.md) constant to make it easier to search for and sort lobbies based on their remaining member counts.
+
 ## 1.6.2
 
 July 14, 2023
