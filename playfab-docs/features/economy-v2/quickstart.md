@@ -344,7 +344,7 @@ Items can have a cost in either a virtual currency or real money. Each title can
 
 1. Open Game Manager and go to **Economy** > **Catalog (V2)**.
 2. Select the **Currency** tab.
-3. Choose **New Currency**, setting the _Start date_, a human-readable _Title_ for the "neutral" key, and the unique _Friendly name_ as a currency code.
+3. Choose **New Currency**, setting the _Start date_, a human-readable _Title_ for the "neutral" key, and in the _Friendly ID_ field, enter a unique currency code for this currency.
 4. Select **Save as draft**. The Item ID is used as a draft currency code.
 5. View your new currency by clicking selecting the **Draft** filter in the currency list.
 6. Edit the currency again and select **Save and publish**. The Friendly ID is used as a published currency code.
