@@ -67,9 +67,8 @@ matching that identifier. Refer to the following table to see what kind of ident
 
 | **Platform** | **What to Use** |
 |:-------------|:----------------|
-| Windows 7    | [`IMMDevice`](/windows/win32/api/mmdeviceapi/nf-mmdeviceapi-immdevice-getid)
 | Windows 10   | [`IMMDevice`](/windows/win32/api/mmdeviceapi/nf-mmdeviceapi-immdevice-getid) or [`Windows.Media.Devices`](/uwp/api/windows.media.devices.mediadevice)
-| Xbox One     | Refer to the Xbox One XDK documentation
+| Xbox         | Refer to the Xbox GDK documentation
 
 > [!NOTE]
 > We strongly recommend using `PartyAudioDeviceSelectionType::PlatformUserDefault` on Xbox One and `PartyAudioDeviceSelectionType::SystemDefault` on Windows platforms.

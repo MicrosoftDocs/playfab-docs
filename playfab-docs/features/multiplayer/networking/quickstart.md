@@ -28,9 +28,7 @@ Before you start this quickstart, perform any necessary platform-specific setup 
 
 <!--3. [Nintendo Switch prerequisites](https://github.com/PlayFab/PlayFabPartySwitch/releases)-->
 
-3. [Xbox XDK prerequisites](xbox-prerequisites.md)
-
-4. [Linux prerequisites](linux-specific-requirements.md)
+3. [Linux prerequisites](linux-specific-requirements.md)
 
 When you finish the platform-specific steps, continue with the rest of the steps in this topic to set up PlayFab Party.
 
