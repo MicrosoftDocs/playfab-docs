@@ -256,6 +256,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "playfab-docs/features/multiplayer/networking/xbox-prerequisites.md",
+            "redirect_url": "/gaming/playfab/features/multiplayer/networking/",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "playfab-docs/sdks/actionscript/index.md",
             "redirect_url": "/gaming/playfab/sdks/playfab-sdk-intro",
             "redirect_document_id": false

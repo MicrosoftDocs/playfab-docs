@@ -31,8 +31,6 @@ The type of logs and the way logging should be configured/captured depends on a 
 | Switch | Plain text | See `Logging` section of `README.md` file included in a NuGet package for this SDK. |
 | PlayStation 4 | Plain text | See `Logging` section of `README.md` file included in a NuGet package for this SDK. |
 | PlayStation 5 | Plain text | See `Logging` section of `README.md` file included in a NuGet package for this SDK. |
-| Xbox (XDK) | ETW trace | See [this `README.md` file](https://github.com/PlayFab/PlayFabParty/blob/master/TraceScripts/README.md). |
 | PC (GDK) and Xbox (GDK) | ETW trace | See [this `README.md` file](https://github.com/PlayFab/PlayFabParty/blob/master/TraceScripts/README.md). |
 | Windows 10, Windows 8.1 | ETW trace | See [this `README.md` file](https://github.com/PlayFab/PlayFabParty/blob/master/TraceScripts/README.md). |
-| Windows 7 | ETW trace | See [this `README.md` file](https://github.com/PlayFab/PlayFabParty/blob/master/TraceScripts/README.md). |
 | Linux | Plain text | Coming soon. |

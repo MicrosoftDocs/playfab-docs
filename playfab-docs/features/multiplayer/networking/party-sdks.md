@@ -33,7 +33,7 @@ If you're looking for the core PlayFab SDK that helps you implement a majority o
 | Unity SDK  |[Android, iOS, Windows 10, Windows 8.1, PC (GDK), and Xbox (GDK)](https://github.com/PlayFab/PlayFabPartyUnity/releases), [PlayStation 4](https://dev.azure.com/PlayFabPrivate/PS4/_git/PlayFabPartyUnityPS4), [PlayStation 5](https://dev.azure.com/PlayFabPrivate/PS5/_git/PlayFabPartyUnityPS5), [Switch](https://dev.azure.com/PlayFabPrivate/Switch/_git/PlayFabPartyUnitySwitch)|
 | Unity Editor Extensions | [Unity game engine](https://github.com/PlayFab/UnityEditorExtensions/releases)|
 | Unreal SDK |[PC (GDK)](https://aka.ms/gdk), and [Xbox (GDK)](https://aka.ms/gdkdl) (under **Add-ins**), [Switch, PlayStation 4, and PlayStation 5](https://github.com/PlayFab/PlayFabMultiplayerUnreal)|
-| Xbox Live Helper Library|[Windows 10, Windows 8.1, Windows 7](https://www.nuget.org/packages/Microsoft.PlayFab.PlayFabPartyXboxLive.Cpp.Windows), [PC (GDK)](https://aka.ms/gdk), and [Xbox (GDK)](https://aka.ms/gdkdl) (Use the version that's included in the GDK.)|
+| Xbox Live Helper Library|[Windows 10, Windows 8.1](https://www.nuget.org/packages/Microsoft.PlayFab.PlayFabPartyXboxLive.Cpp.Windows), [PC (GDK)](https://aka.ms/gdk), and [Xbox (GDK)](https://aka.ms/gdkdl) (Use the version that's included in the GDK.)|
 
 ## By platform/operating system
 
@@ -44,11 +44,9 @@ If you're looking for the core PlayFab SDK that helps you implement a majority o
 | Switch | [C/C++](https://dev.azure.com/PlayFabPrivate/Switch/_git/PlayFabPartySwitch), [Unity](https://dev.azure.com/PlayFabPrivate/Switch/_git/PlayFabPartyUnitySwitch), [Unreal](https://github.com/PlayFab/PlayFabMultiplayerUnreal), [C/C++ and Unity NuGet packages](https://dev.azure.com/PlayFabPrivate/Switch/_packaging) |
 | PlayStation 4 | [C/C++](https://dev.azure.com/PlayFabPrivate/PS4/_git/PlayFabPartyPS4), [Unity](https://dev.azure.com/PlayFabPrivate/PS4/_git/PlayFabPartyUnityPS4), [Unreal](https://github.com/PlayFab/PlayFabMultiplayerUnreal), [C/C++ and Unity NuGet packages](https://dev.azure.com/PlayFabPrivate/PS4/_packaging) |
 | PlayStation 5 | [C/C++](https://dev.azure.com/PlayFabPrivate/PS5/_git/PlayFabPartyPS5), [Unity](https://dev.azure.com/PlayFabPrivate/PS5/_git/PlayFabPartyUnityPS5), [Unreal](https://github.com/PlayFab/PlayFabMultiplayerUnreal), [C/C++ and Unity NuGet packages](https://dev.azure.com/PlayFabPrivate/PS5/_packaging)|
-| Xbox (XDK) | [C/C++](https://www.nuget.org/packages/Microsoft.PlayFab.PlayFabParty.Cpp.XboxOneXDK), [Xbox Live Helper Library](https://www.nuget.org/packages/Microsoft.PlayFab.PlayFabPartyXboxLive.Cpp.XboxOneXDK)
 | Xbox (GDK) | [C/C++ SDK, Xbox Live Helper Library](https://aka.ms/gdkdl) (Use the version that's included in the GDK.), [Unity](https://github.com/PlayFab/PlayFabPartyUnity/releases), [Unreal](https://aka.ms/gdkdl) (under **Add-ins**)|
 | PC (GDK) | [C/C++ SDK, Xbox Live Helper Library](https://aka.ms/gdk), [Unity](https://github.com/PlayFab/PlayFabPartyUnity/releases), [Unreal](https://aka.ms/gdkdl) (under **Add-ins**) |
 | Windows 10, Windows 8.1 |[C/C++](https://www.nuget.org/packages/Microsoft.PlayFab.PlayFabParty.Cpp.Windows/), [Xbox Live Helper Library](https://www.nuget.org/packages/Microsoft.PlayFab.PlayFabPartyXboxLive.Cpp.Windows)|
-| Windows 7|[C/C++](https://www.nuget.org/packages/Microsoft.PlayFab.PlayFabParty.Cpp.Windows/), [Xbox Live Helper Library](https://www.nuget.org/packages/Microsoft.PlayFab.PlayFabPartyXboxLive.Cpp.Windows)|
 | Linux | [C/C++](https://github.com/PlayFab/PlayFabParty/releases)|
 | MacOS | [C/C++](https://github.com/PlayFab/PlayFabParty/releases)|
 
