@@ -14,6 +14,11 @@ ms.localizationpriority: medium
 
 The Xbox Live Helper library is available on [Nuget.org](https://www.nuget.org/profiles/PlayFab)!
 
+> [!NOTE]
+> Support for the XDK and Windows 7 platforms ended on August 1, 2023. No new Xbox Live Helper library updates will be released for those platforms. The Xbox Live Helper networking and voice services will continue to operate with no impact to any titles currently using Windows 7 or XDK versions of the Xbox Live Helper library.  
+> 
+>For more information, please see our [forum post](https://community.playfab.com/articles/141546/playfab-party-ending-support-for-the-xdk-and-windo.html).
+
 
 ## 1.2.12
 

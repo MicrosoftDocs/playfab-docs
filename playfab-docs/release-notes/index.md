@@ -14,6 +14,19 @@ ms.localizationpriority: medium
 > [!NOTE]
 > For release notes about service releases and product updates, see the [release notes](https://github.com/PlayFab/PlayFab/releases) section on [PlayFab's public GitHub repository](https://github.com/PlayFab/PlayFab)
 
+## 230818
+
+Date: August 18, 2023
+
+ - Added multiple error codes related to Managed Events:
+   - ManageEventNamespaceInvalid
+   - ManageEventNameInvalid
+   - ManagedEventNotFound
+   - ManageEventsInvalidRatio
+   - ManagedEventInvalid
+ - Added ServerCustomIdInfo to UserAccountInfo
+ - Added "Unknown" to ContinentCode and CountryCode
+
 ## 230804
 
 Date: August 4, 2023

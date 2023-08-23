@@ -16,28 +16,8 @@ The use of this subsystem requires PlayFab Party and Multiplayer headers, librar
 ## Using the GDK
 Headers, libraries, and DLLs for PlayFab Party and Multiplayer SDKs are located in https://github.com/PlayFab/PlayFabMultiplayerUnreal/tree/main/Platforms/GDK. They are built with OSS automatically.
 
-## Using the Windows
+## Using Windows
 Headers, library, and DLL for PlayFab Party and Multiplayer SDKs are located in https://github.com/PlayFab/PlayFabMultiplayerUnreal/tree/main/Platforms/Windows. They are built with OSS automatically.
-
-## Using the XDK
-PlayFab Party headers, libraries, and DLLs are not included in the XDK. You must perform the steps outlined below in the **XDK: Bringing your own PlayFab Party library** section to obtain the XDK version of PlayFab Party.
-
-This can be obtained by extracting the [PlayFab Party NuGet package](https://www.nuget.org/packages/Microsoft.PlayFab.PlayFabParty.Cpp.XboxOneXDK/) and [PlayFab Party Xbox Live NuGet package](https://www.nuget.org/packages/Microsoft.PlayFab.PlayFabPartyXboxLive.Cpp.XboxOneXDK/)
-
-## XDK: Bringing your own PlayFab Party library
- - Navigate to the OnlineSubsystemPlayFab directory (where OnlineSubsystemPlayFab.uplugin is located)
-- Create a new **Platforms** folder
-- Create a new **XDK** folder inside the above folder
-- Create these three new folders inside the XDK folder:
-    - **Include**
-    - **Lib**
-    - **Redist**
-- Copy the following files into the relevant folder:
-    - Include: All Party & PartyXboxLive header files
-    - Lib: Party.lib & PartyXboxLive.lib
-    - Redist: Party.dll, PartyXboxLive.dll, Party.pdb and PartyXboxLive.pdb
-
-XDK builds will now use this version of PlayFab Party.
 
 ## Using the Switch, PlayStation®5 and PlayStation®4
 * **Nuget.exe** Find the location of Nuget.exe on your machine and add it to the PATH environment variable.

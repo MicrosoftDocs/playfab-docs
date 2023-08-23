@@ -30,8 +30,6 @@
     href: ../unreal-release-notes.md
 - name: Xbox and Xbox Live
   items:
-  - name: Xbox XDK prerequisites
-    href: ../xbox-prerequisites.md
   - name: Xbox Requirements
     href: ../xbox-requirements.md
   - name: Use Party with MPSD
