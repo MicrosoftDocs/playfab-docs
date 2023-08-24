@@ -107,9 +107,7 @@ XDK is supported on older version(1.07 and earlier) of the OSS, refer [Using old
     - UE5.1 and UE5.2: [PS4|PS5]PlatformSDK.Versions.cs
 ## Pricing
 
-**VOIP and Game Networking functionality is free for users signed in with an Xbox Live account, regardless of platform.**
-
-Cognitive services and other services may have a cost associated with them. For details, see [Billing for PlayFab Party](pricing.md) or reach out to your Microsoft Representative.
+For pricing details, see [Billing for PlayFab Party](pricing.md).
 
 "PlayStation" is a registered trademark or trademark of Sony Interactive Entertainment Inc.
 "PS4" is a registered trademark or trademark of Sony Interactive Entertainment Inc.
