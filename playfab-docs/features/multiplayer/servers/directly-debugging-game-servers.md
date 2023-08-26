@@ -12,11 +12,16 @@ ms.localizationpriority: medium
 
 # Connect directly to debug game servers
 
-Many debugging tasks of PlayFab Multiplayer Servers can be done locally using [LocalMultiplayerAgent](https://github.com/PlayFab/LocalMultiplayerAgent). However, sometimes the behavior of the game server can differ between the local environment and the actual service so you would like to connect directly to debug a running server because it is marked as unhealthy or not performing as expected.
+For troubleshooting of PlayFab Multiplayer Servers, you should first start with [LocalMultiplayerAgent](https://github.com/PlayFab/LocalMultiplayerAgent), however there are situations where you may need to connect directly. For example:
 
-In order to connect to the VM hosting your game server (either Windows or Linux), you can get Remote Desktop (RDP)/SSH credentials using the "Connect" button on playfab.com web application. You can see this button on the "Virtual Machines" page on your Multiplayer Build) or using [CreateRemoteUser](/rest/api/playfab/multiplayer/multiplayer-server/create-remote-user) API call.
+* **Environment differences:** Sometimes, the behavior of the game server might differ between the local environment and the live service. 
+* **Server Health:** You might need to connect directly to investigate if the server is flagged as unhealthy.
+* **Directly attaching a profiler/debugger:** It can be simpler to profile the code via a direct connection.
+* **Realtime log analysis:** If you follow the instructions in [Archiving and retrieving multiplayer server logs](archiving-and-retrieving-multiplayer-server-logs.md) you will get logs when a server shuts down. To see realtime logs, you may want to connect directly.
 
-As soon as you connect to the VM, you can use the console of the operating system to monitor your game servers. MPS service uses Docker containers to spin up game server processes. To run Docker CLI commands, you'll need an admin powershell on Windows and __sudo su -__ on Linux.
+To connect to the VM hosting your game server (either Windows or Linux), you can get Remote Desktop (RDP)/SSH credentials using the "Connect" button on playfab.com web application. You can see this button on the "Virtual Machines" page on your Multiplayer Build. You can also get credentials from the [CreateRemoteUser](/rest/api/playfab/multiplayer/multiplayer-server/create-remote-user) API call.
+
+As soon as you connect to the VM, you can use the console of the operating system to monitor your game servers. The MPS service uses Docker containers to spin up game server processes. To run Docker CLI commands, you'll need an admin powershell on Windows and __sudo su -__ on Linux.
 
 > [!IMPORTANT]
 >
