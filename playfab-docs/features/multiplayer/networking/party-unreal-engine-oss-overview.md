@@ -100,7 +100,7 @@ XDK is supported on older version(1.07 and earlier) of the OSS, refer [Using old
     - UE5.1 and UE5.2: SwitchPlatformSDK.Versions.cs
 ## Which version of the PS5™ and PS4™ SDKs are supported?
 
-- Recommended: The suppored Sony PlayStation SDK verstions are listed in the corresponding .cs file of UnrealBuildTool.
+- Recommended: The supporetd Sony PlayStation SDK versions are listed in the corresponding .cs file of UnrealBuildTool.
   - \Engine\Platforms\[PS4|PS5]\Source\Programs\UnrealBuildTool\
     - UE4: UEBuild[PS4|PS5].cs
     - UE5.0: [PS4|PS5]PlatformSDK.cs
