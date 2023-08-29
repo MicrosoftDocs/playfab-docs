@@ -218,9 +218,9 @@ Make sure you read the first section above which details how to make sure you ha
 
 This API immediately returns a `JobReceiptId`, which you should store in your records for future reference. It may take some time before the export is available for download.
 
- Upon completion of the export, an email containing the URL to download the export dump will be sent to the notification email address configured for the title.
+Upon completion of the export, an email containing the URL to download the export dump will be sent to the notification email address configured for the title.
 
-The completion of the task will also trigger a PlayStream event. Using our Webhook feature, you can register to receive these events on an endpoint of your choosing and process as needed. The event will contain a JSON blob that has information such as the **JobReceiptId** and the download URL for the exported data.
+The completion of the task will also trigger a [`player_data_exported` PlayStream event](../../../api-references/events/player-data-exported.md). The event contains the `JobReceiptId` as a property, as well as the `ExportDownloadUrl` property which provides access to the exported data. Using either [Automation Rules with Azure Functions](../../automation/cloudscript-af/quickstart.md#azure-functions-in-automation-rules) or [Webhooks](../webhooks/index.md), you can register to receive these events on an endpoint of your choosing and process as needed. 
 
 The following example is how to use the Admin API with the [C# SDK](../../../sdks/c-sharp/index.md). If you would like to use a different SDK, select one from the list of [PlayFab SDKs](../../../sdks/playfab-sdk-intro.md).
 
@@ -247,6 +247,17 @@ public static async void ExportMasterPlayerExample(Action<PlayFabError> callback
 
 > [!NOTE]
 > The URL will be available for up to 30 days after the export has completed. After this time, the file will be deleted, and you will need to initiate a *new* export request.
+
+### Format of Exported Data
+
+The exported data is packaged in a ZIP archive whose name contains the `JobReceiptId` and the time of the export. The archive contains multiple files organized into a directory structure.
+
+| File Path | Description |
+|-----------|-------------|
+| /master_player_export.json | <p>A JSON file that contains the player's data recorded in PlayFab. This includes data for each of the titles that the player participates in.</p><p>The schema for the JSON document is provided as an OpenAPI specfication. See object `MasterPlayerDataExport` in `https://<your_title_id>.playfabapi.com/Swagger/MasterPlayerDataExport.swagger.json`</p> |
+| /CustomFiles/MasterPlayerFiles/* | Contains the custom [Entity Files](../entities/entity-files.md) associated with the player's `master_player_account` entity.|
+| /CustomFiles/TitlePlayerFiles/&lt;TitlePlayerAccountId&gt;/* | <p>Contains the custom [Entity Files](../entities/entity-files.md) associated with the player's `title_player_account` entities.</p><p>The files are organized into one subdirectory per title that the player participates in. The name of each subdirectory is the player's `title_player_account` entity ID in the title.</p> |
+| /TitlePlayerEvents/&lt;TitleId&gt;/event-history_1.jsonl <br/>...<br/> /TitlePlayerEvents/&lt;TitleId&gt;/event-history_&lt;N&gt;.jsonl | <p>The PlayStream and Telemetry events recorded about the player.</p><p>The files are organized into one subdirectory per title that the player participates in. The name of each subdirectory is the title ID.</p><p>Each subdirectory contains one or more `event-history` files, depending on how much data the player has in the given title. The files contain the events serialized into JSON objects, one event per line.</p> |
 
 ## Other considerations
 
