@@ -253,3 +253,4 @@ The following error codes are used by the PlayFab Party APIs:
 | 0x3022 | 12322 | It is invalid to pass PartyLocalUdpSocketBindAddressOptions::ExcludeGameCorePreferredUdpMultiplayerPort in all versions of PlayFab Party except for the Microsoft Game Core version. |
 | 0x3023 | 12323 | The user and/or device are not authorized to use the requested sandbox or are not authorized to use the requested title in the current sandbox. |
 | 0x3024 | 12324 | When using the Microsoft Game Core version of the library, it must be cleaned up when the title is suspended and re-initialized when the title is resumed. |
+| 0x3030 | 12336 | The noise suppression model failed to initialize. |
