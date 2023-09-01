@@ -61,50 +61,26 @@ If you have any questions during backporting on UE4.27, 5.0, and 5.1, please fee
 
 ## Which versions of the Microsoft Game Development Kit (GDK) are supported?
 
-- **PC**
-  - UE4
-    - Recommended: June 2021 GDK (2021.06)
-    - Minimum: November 2020 GDK (2020.11)
-      - When utilizing a GDK version earlier than 2020.11 on PC, reach out to your Microsoft Representative for further guidance.
-  - UE5
-    - Recommended: October 2021 GDK, Update 5 (2021.10.5)
-    - Minimum: October 2021 GDK, Update 1 (2021.10.1)
-  - UE5.1
-    - Recommended: June 2022 GDK, Update 2 (2022.06)
-    - Minimum: March 2022 GDK, Update 1 (2022.03)
-  - UE5.2
-    - Recommended: October 2022 Update 1 (2022.10)
-    - Minimum: June 2022 Update 4 (2022.06)
-- **Xbox GDK:**
-  - UE4
-    - Recommended: June 2021 GDK (2021.06)
-    - Minimum: June 2021 GDK (2021.06)
-  - UE5
-    - Recommended: October 2021 GDK, Update 5 (2021.10.5)
-    - Minimum: October 2021 GDK, Update 1 (2021.10.1)
-  - UE5.1
-    - Recommended: June 2022 GDK, Update 2 (2022.06)
-    - Minimum: March 2022 GDK, Update 1 (2022.03)
-  - UE5.2
-    - Recommended: October 2022 Update 1 (2022.10)
-    - Minimum: June 2022 Update 4 (2022.06)
+Refer to Unreal Engine’s Developer’s documentation [here](insert link here) for the most updated information.
 
-XDK is supported on older version(1.07 and earlier) of the OSS, refer [Using older version](party-unreal-engine-using-older-versions.md) for further details.
+If you are using XDK, please note that it is supported on an older version(1.07 and earlier) of the OSS. Refer instead to [Using older version](party-unreal-engine-using-older-versions.md) for further details.
 
 ## Which version of the Nintendo Switch SDKs are supported?
 
-- Recommended: The supported Nintendo Switch SDK versions are listed in the corresponding .cs file of UnrealBuildTool.
+The supported Nintendo Switch SDK versions can be found at [Switch SDK Updates Path](https://udn.unrealengine.com/s/article/Switch-SDK-Updates-Path) or in the corresponding .cs file of UnrealBuildTool.
   - \Engine\Platforms\Switch\Source\Programs\UnrealBuildTool\
     - UE4: UEBuildSwitch.cs
     - UE5.0: SwitchPlatformSDK.cs
     - UE5.1 and UE5.2: SwitchPlatformSDK.Versions.cs
+      
 ## Which version of the PS5™ and PS4™ SDKs are supported?
 
-- Recommended: The supported Sony PlayStation SDK versions are listed in the corresponding .cs file of UnrealBuildTool.
+The supported Sony PlayStation SDK versions can be found at [PS5 SDK Compatibility](https://udn.unrealengine.com/s/article/Switch-SDK-Updates-Path) or in the corresponding .cs file of UnrealBuildTool.
   - \Engine\Platforms\[PS4|PS5]\Source\Programs\UnrealBuildTool\
     - UE4: UEBuild[PS4|PS5].cs
     - UE5.0: [PS4|PS5]PlatformSDK.cs
     - UE5.1 and UE5.2: [PS4|PS5]PlatformSDK.Versions.cs
+      
 ## Pricing
 
 For pricing details, see [Billing for PlayFab Party](pricing.md).
