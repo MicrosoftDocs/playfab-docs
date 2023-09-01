@@ -81,6 +81,9 @@ The supported Sony PlayStation SDK versions can be found at [PS5 SDK Compatibili
     - UE5.0: [PS4|PS5]PlatformSDK.cs
     - UE5.1 and UE5.2: [PS4|PS5]PlatformSDK.Versions.cs
       
+>[!NOTE]
+> In order to access Unreal’s Doucmentation and UDN forum at the link above, you must be a registered Unreal Developer.
+
 ## Pricing
 
 For pricing details, see [Billing for PlayFab Party](pricing.md).
