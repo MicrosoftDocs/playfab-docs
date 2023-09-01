@@ -12,8 +12,6 @@ ms.date: 08/02/2023
 
 Creates a server backfill ticket.
 
-## PlayFabMultiplayer.PlayFabMultiplayerServer.CreateServerBackfillTicket (1 of 2)
-
 ```csharp
 public static Lobby CreateServerBackfillTicket(PFEntityKey server, 
     string queueName,
@@ -24,13 +22,16 @@ public static Lobby CreateServerBackfillTicket(PFEntityKey server,
 
 | parameter | description |
 | --- | --- |
-| server | The PlayFab Entity Key of the game server creating the lobby. It's entity type must be game_server. |
+| server | The PlayFab Entity Key of the game server creating the lobby. Its entity type must be game_server. |
 | queueName | The queue to which the ticket belongs. |
 | matchMembers | The members currently in the match. |
 | serverDetails | The details about the PlayFab Multiplayer Server that the ticket is for. |
 | timeoutInSeconds | How long to attempt matchmaking the ticket, in seconds.  Defaults to 300 seconds. |
 ---
 
+## Return Value
+
+The resulting ticket object.
 
 ## Remarks
 
@@ -42,7 +43,7 @@ This function requires that a previous call to [SetEntityToken](../PlayFabMultip
 
 The server details are optional. If no server details need to be provided to clients on match completion, this value can be null. Similarly, any of the fields in the server details don't need to be provided to clients can be empty or null.
 
-While this method is present in the unified, cross-platform header, it is only implemented for Windows and, Xbox. The method will return errors on other platforms.
+While this method is present in the unified, cross-platform header, it's only implemented for Windows and, Xbox. The method will return errors on other platforms.
 
 ## See Also
 
