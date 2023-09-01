@@ -36,9 +36,9 @@ public class PlayFabMultiplayerServer
 
 | name | description |
 | --- | --- |
-| static [CreateAndClaimServerLobby](PlayFabMultiplayer/CreateAndJoinLobby.md) | Create a new lobby as a game_server entity. (2 methods) |
-| static [ClaimServerLobby](PlayFabMultiplayer/CreateMatchmakingTicket.md) | Claim ownership of a pre-existing server lobby. (2 methods) |
-| static [CreateServerBackfillTicket](PlayFabMultiplayer/FindLobbies.md) |  Creates a server backfill ticket. |
+| static [CreateAndClaimServerLobby](PlayFabMultiplayerServer/CreateAndClaimServerLobby.md) | Create a new lobby as a game_server entity. (2 methods) |
+| static [ClaimServerLobby](PlayFabMultiplayerServer/ClaimServerLobby.md) | Claim ownership of a pre-existing server lobby. (2 methods) |
+| static [CreateServerBackfillTicket](PlayFabMultiplayerServer/CreateServerBackfillTicket.md) |  Creates a server backfill ticket. |
 
 ## See Also
 
