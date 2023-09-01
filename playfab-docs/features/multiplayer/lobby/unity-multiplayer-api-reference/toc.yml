@@ -43,6 +43,10 @@
               href: PlayFab.Multiplayer/Lobby/PostUpdate.md
             - name: SendInvite
               href: PlayFab.Multiplayer/Lobby/SendInvite.md
+            - name: ServerDeleteLobby
+              href: PlayFab.Multiplayer/Lobby/ServerDeleteLobby.md
+            - name: ServerPostUpdate
+              href: PlayFab.Multiplayer/Lobby/ServerPostUpdate.md
             - name: TryGetOwner
               href: PlayFab.Multiplayer/Lobby/TryGetOwner.md
     - name: LobbyArrangedJoinConfiguration
@@ -434,6 +438,35 @@
           items:
             - name: PlayFabMultiplayerServer
               href: PlayFab.Multiplayer/PlayFabMultiplayerServer.md
+              items:
+                - name: Events
+                  items:
+                    - name: OnServerLobbyCreateAndClaimCompleted 
+                      href: PlayFab.Multiplayer/PlayFabMultiplayerServer/OnServerLobbyCreateAndClaimCompleted.md
+                    - name: OnServerLobbyClaimCompleted 
+                      href: PlayFab.Multiplayer/PlayFabMultiplayerServer/OnServerLobbyClaimCompleted.md
+                    - name: OnServerLobbyPostUpdateCompleted 
+                      href: PlayFab.Multiplayer/PlayFabMultiplayerServer/OnServerLobbyPostUpdateCompleted.md
+                    - name: OnServerLobbyDeleteCompleted 
+                      href: PlayFab.Multiplayer/PlayFabMultiplayerServer/OnServerLobbyDeleteCompleted.md
+                - name: Delegates
+                  items:
+                    - name: OnServerLobbyCreateAndClaimCompletedHandler 
+                      href: PlayFab.Multiplayer/PlayFabMultiplayer.PlayFabMultiplayerServer.OnServerLobbyCreateAndClaimCompletedHandler.md
+                    - name: OnServerLobbyClaimCompletedHandler 
+                      href: PlayFab.Multiplayer/PlayFabMultiplayer.PlayFabMultiplayerServer.OnServerLobbyClaimCompletedHandler.md
+                    - name: OnServerLobbyPostUpdateCompletedHandler 
+                      href: PlayFab.Multiplayer/PlayFabMultiplayer.PlayFabMultiplayerServer.OnServerLobbyPostUpdateCompletedHandler.md
+                    - name: OnServerLobbyDeleteCompletedHandler 
+                      href: PlayFab.Multiplayer/PlayFabMultiplayer.PlayFabMultiplayerServer.OnServerLobbyDeleteCompletedHandler.md
+                - name: Methods
+                  items:
+                    - name: CreateAndClaimServerLobby
+                      href: PlayFab.Multiplayer/PlayFabMultiplayerServer/CreateAndClaimServerLobby.md
+                    - name: ClaimServerLobby
+                      href: PlayFab.Multiplayer/PlayFabMultiplayerServer/ClaimServerLobby.md
+                    - name: CreateServerBackfillTicket
+                      href: PlayFab.Multiplayer/PlayFabMultiplayerServer/CreateServerBackfillTicket.md
     - name: PlayFabMultiplayerErrorArgs
       href: PlayFab.Multiplayer/PlayFabMultiplayerErrorArgs.md
       items:
@@ -466,7 +499,7 @@
             - name: LocalUserJsonAttributesJSON
               href: PlayFab.Multiplayer/MatchUser/LocalUserJsonAttributesJSON.md
             - name: TeamId
-              href: PlayFab.Multiplayer/MatchUser/LocalUserJsonAttributesJSON.md
+              href: PlayFab.Multiplayer/MatchUser/TeamId.md
 - name: Enums
   items:
     - name: LobbyAccessPolicy
