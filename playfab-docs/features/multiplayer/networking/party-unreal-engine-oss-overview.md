@@ -61,7 +61,7 @@ If you have any questions during backporting on UE4.27, 5.0, and 5.1, please fee
 
 ## Which versions of the Microsoft Game Development Kit (GDK) are supported?
 
-Refer to Unreal Engine’s Developer’s documentation [here](insert link here) for the most updated information.
+Refer to Unreal Engine’s Developer’s documentation at [GDK SDK Update Paths](https://udn.unrealengine.com/s/article/GDK-SDK-Updates-Path) for the most updated information.
 
 If you are using XDK, please note that it is supported on an older version(1.07 and earlier) of the OSS. Refer instead to [Using older version](party-unreal-engine-using-older-versions.md) for further details.
 
@@ -75,14 +75,14 @@ The supported Nintendo Switch SDK versions can be found at [Switch SDK Updates P
       
 ## Which version of the PS5™ and PS4™ SDKs are supported?
 
-The supported Sony PlayStation SDK versions can be found at [PS5 SDK Compatibility](https://udn.unrealengine.com/s/article/Switch-SDK-Updates-Path) or in the corresponding .cs file of UnrealBuildTool.
+The supported Sony PlayStation SDK versions can be found at [PS4 SDK Compatibility](https://udn.unrealengine.com/s/article/PS4-SDK-Compatibility), [PS5 SDK Compatibility](https://udn.unrealengine.com/s/article/Switch-SDK-Updates-Path), or in the corresponding .cs file of UnrealBuildTool.
   - \Engine\Platforms\[PS4|PS5]\Source\Programs\UnrealBuildTool\
     - UE4: UEBuild[PS4|PS5].cs
     - UE5.0: [PS4|PS5]PlatformSDK.cs
     - UE5.1 and UE5.2: [PS4|PS5]PlatformSDK.Versions.cs
       
 >[!NOTE]
-> In order to access Unreal’s Doucmentation and UDN forum at the link above, you must be a registered Unreal Developer.
+> In order to access Unreal’s Documentation and UDN forum at the link above, you must be a registered Unreal Developer and tented for the specific platform.
 
 ## Pricing
 
