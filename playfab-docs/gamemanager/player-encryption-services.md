@@ -5,9 +5,9 @@ description: Describes the various types of encryption that are available.
 ms.author: joanlee
 ms.date: 01/11/2018
 ms.topic: article
-ms.prod: gaming
 keywords: playfab, game manager
 ms.localizationpriority: medium
+ms.service: playfab
 ---
 
 # Player encryption services
@@ -22,7 +22,7 @@ Player shared secrets should be baked into the respective clients, as there are 
 
 ## Title public key
 
-The player shared secret is then sent to [GetTitlePublicKey](xref:titleid.playfabapi.com.client.authentication.gettitlepublickey) which - if the key is valid - will return a Base 64 encoded RSA CSP blob byte array that can encrypt 237 bytes of data.
+The player shared secret is then sent to [GetTitlePublicKey](xref:titleid.playfabapi.com.client.authentication.gettitlepublickey). If the key is valid, the API returns a Base 64 encoded RSA CSP blob byte array that can encrypt 237 bytes of data.
 
 All APIs that allow accounts to be created, now accept posting a registration request as an encrypted payload to the `EncryptedRequest` field.
 
@@ -31,7 +31,7 @@ All APIs that allow accounts to be created, now accept posting a registration re
 
 ## Using title public key to register
 
-Here is example code to register a player using `LoginWithCustomID` and the title public key.
+Here's example code to register a player using `LoginWithCustomID` and the title public key.
 
 ```csharp
 var titleKeyResult = PlayFabClientAPI.GetTitlePublicKey(new GetTitlePublicKeyRequest{ TitleId = "TITLE", TitleSharedSecret = "player shared secret" });
@@ -67,14 +67,14 @@ var createAccountResult = PlayFabClientAPI.LoginWithCustomID(postModel);
 
 ## Player secret
 
-A part of the new registration system is a new field called `PlayerSecret`. If set, it allows you to sign request headers that will be validated by the server during API calls to all services, including Login Requests.
+A part of the new registration system is a new field called `PlayerSecret`. If set, it allows you to sign request headers that is validated by the server during API calls to all services, including Login Requests.
 
-The player secret can only be set *once* per user per title (a user with multiple titles in the same studio will need to set the player secret for each one).
+The player secret can only be set *once* per user per title. A user with multiple titles in the same studio needs to set the player secret for each one.
 
-If the player secret isn't set during registration, it is possible to set it (if it is not already set) by calling [SetPlayerSecret](xref:titleid.playfabapi.com.client.authentication.setplayersecret). There are admin and server APIs that allow setting the player secret to a *new* value even if it has previously been set.
+If the player secret isn't already set during registration, it's possible to set it by calling [SetPlayerSecret](xref:titleid.playfabapi.com.client.authentication.setplayersecret). There are admin and server APIs that allow setting the player secret to a *new* value even if it has previously been set.
 
 > [!NOTE]
-> Once set, the player secret should be stored securely on the device, as it is *not* recoverable if lost, and *no* APIs exist to recover it.
+> Once set, the player secret should be stored securely on the device, as it's *not* recoverable if lost, and *no* APIs exist to recover it.
 
 ## Using player secret to sign API requests
 
@@ -113,12 +113,12 @@ var loginResult = PLayFabClientAPI.LoginWithCustomID(postModel, customHeaders);
 
 ## Using a policy enforcement
 
-[API Policies](https://playfab.com/blog/permission-policies/) can now be used to enforce either:
+[API Policies](https://playfab.com/blog/permission-policies/) can now be used to enforce these scenarios.
 
-- That a client request is an encrypted payload.
-- That a client request contains signed headers.
+- A client request is an encrypted payload.
+- A client request contains signed headers.
 
-Even *without* using the policy enforcement, if an encrypted payload is sent (or the headers are sent), they will be validated and an error will occur if they are not properly formed.
+Even *without* using the policy enforcement, if an encrypted payload is sent (or the headers are sent), they'll be validated. If they aren't properly formed, an error occurs.
 
 To create a policy to require headers on a specific API, use a `Deny` statement. This creates a policy requiring headers on *all* calls you can place that aren't permitted by the `Allow` statement.
 
@@ -131,7 +131,7 @@ Policy statements have a property called `ApiConditions`. `ApiConditions` contai
 >[!NOTE]
 > The default (if it is *not* set by the policy), is **`Any`**.
 
-The following example policy will allow *all* API calls (except un-encrypted or missing header calls) to `LoginWithCustomID`.
+The following example policy allows *all* API calls (except unencrypted or missing header calls) to `LoginWithCustomID`.
 
 ```json
 {
@@ -158,6 +158,4 @@ The following example policy will allow *all* API calls (except un-encrypted or 
 }
 ```
 
-Because the `Deny` statement is `HasSignatureOrEncryption False`, those requests that *do not match* it will be rejected.
-
-However, requests that *have* signature headers or encryption will be allowed by the `Allow the rest policy`.
+The `Deny` statement above contains `HasSignatureOrEncryption: False`. This means that all requests that don't have signature or encryption are rejected. In other words, all requests that *have* signature headers or encryption are allowed based on the `Allow the rest policy`.
