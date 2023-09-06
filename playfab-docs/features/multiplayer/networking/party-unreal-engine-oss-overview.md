@@ -75,7 +75,7 @@ The supported Nintendo Switch SDK versions can be found at [Switch SDK Updates P
       
 ## Which version of the PS5™ and PS4™ SDKs are supported?
 
-The supported Sony PlayStation SDK versions can be found at [PS4 SDK Compatibility](https://udn.unrealengine.com/s/article/PS4-SDK-Compatibility), [PS5 SDK Compatibility](https://udn.unrealengine.com/s/article/Switch-SDK-Updates-Path), or in the corresponding .cs file of UnrealBuildTool.
+The supported Sony PlayStation SDK versions can be found at [PS4 SDK Compatibility](https://udn.unrealengine.com/s/article/PS4-SDK-Compatibility), [PS5 SDK Compatibility](https://udn.unrealengine.com/s/article/PS5-SDK-Compatibility), or in the corresponding .cs file of UnrealBuildTool.
   - \Engine\Platforms\[PS4|PS5]\Source\Programs\UnrealBuildTool\
     - UE4: UEBuild[PS4|PS5].cs
     - UE5.0: [PS4|PS5]PlatformSDK.cs
