@@ -3,7 +3,7 @@ title: Local debugging for Cloudscript using Azure Functions
 author: natashaorie
 description: Setting up local debugging for Cloudscript using Azure Functions
 ms.author: norie
-ms.date: 04/03/2020
+ms.date: 08/18/2023
 ms.topic: tutorial
 ms.service: playfab
 keywords: playfab, automation, cloudscript, azure functions, debugging
@@ -67,10 +67,10 @@ To tell the PlayFab SDK to redirect ExecuteFunction API calls to your local impl
 Set the content of the file as follows:
 
 ``` JSON
-{ "LocalApiServer": "http://localhost:7071/api/" }
+{ "LocalApiServer": "http://localhost:<portNumber>/api/<functionName>" }
 ```
 
-When you would like to stop local redirects and make ExecuteFunction call the PlayFab API server, simply delete the `playfab.local.settings.json` file.
+When you would like to stop local redirects and make ExecuteFunction call the PlayFab API server, delete the `playfab.local.settings.json` file.
 
 ## Additional resources
 
