@@ -57,7 +57,7 @@ PlayFab OSS works alongside the PlayFab SDK marketplace plugin, which provides o
 For UE4, 4.27 is the recommended version since crossplay between different platforms doesn't work on 4.26, but it does on 4.27. If you're on an earlier version of Unreal Engine 4, the OSS can be backported with minimal work. Refer to the [Using older versions of Unreal Engine 4](party-unreal-engine-using-older-versions.md) page for more details.
 NOTE: If you're using a version of UE4 earlier than 4.25plus, you have to rename all references to GDK to Anvil using find & replace all.
 
-If you have any questions during backporting on UE4.27, 5.0, and 5.1, please feel free to open a [GitHub issue](https://github.com/PlayFab/PlayFabMultiplayerUnreal/issues/new) or open a [support ticket](https://playfab.com/contact/).
+If you have any questions during backporting on UE4.27, 5.0, and 5.1, feel free to open a [GitHub issue](https://github.com/PlayFab/PlayFabMultiplayerUnreal/issues/new) or open a [support ticket](https://playfab.com/contact/).
 
 ## Which versions of the Microsoft Game Development Kit (GDK) are supported?
 
@@ -82,7 +82,7 @@ The supported Sony PlayStation SDK versions can be found at [PS4 SDK Compatibili
     - UE5.1 and UE5.2: [PS4|PS5]PlatformSDK.Versions.cs
       
 >[!NOTE]
-> In order to access Unreal’s Documentation and UDN forum at the link above, you must be a registered Unreal Developer and tented for the specific platform.
+> In order to access Unreal’s Documentation and UDN forum at the links above, you must be a registered Unreal Developer and tented for the specific platform.
 
 ## Pricing
 
