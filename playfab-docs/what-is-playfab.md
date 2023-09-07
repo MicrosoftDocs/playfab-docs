@@ -179,7 +179,6 @@ SDKs are available for most popular engines and platforms.
 * [ActionScript](sdks/actionscript/index.md)
 * [JavaScript](sdks/javascript/index.md)
 * [NodeJS](sdks/nodejs/index.md)
-* [PHP](sdks/php/index.md)
 * [Python](sdks/python/index.md)
 
 ## Support
