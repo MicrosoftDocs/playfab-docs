@@ -32,7 +32,7 @@ ms.date: 11/23/2021
 | [MultiplayerServerDetails](./PlayFab.Multiplayer/MultiplayerServerDetails.md) | Details about a Playfab Multiplayer Server. |
 | [PFEntityKey](./PlayFab.Multiplayer/PFEntityKey.md) | PFEntityKey data model. Combined entity type and ID structure which uniquely identifies a single entity. |
 | [PlayFabMultiplayer](./PlayFab.Multiplayer/PlayFabMultiplayer.md) |  |
-| [PlayFabMultiplayerServer](./PlayFab.Multiplayer/PlayFabMultiplayerServer.md) |  |
+| [PlayFabMultiplayerServer](./PlayFab.Multiplayer/PlayFabMultiplayer.PlayFabMultiplayerServer.md) |  |
 | [PlayFabMultiplayerErrorArgs](./PlayFab.Multiplayer/PlayFabMultiplayerErrorArgs.md) | An event argument class representing a PFMultiplayer error. |
 | [PlayfabMultiplayerEventProcessor](./PlayFab.Multiplayer/PlayfabMultiplayerEventProcessor.md) |  |
 

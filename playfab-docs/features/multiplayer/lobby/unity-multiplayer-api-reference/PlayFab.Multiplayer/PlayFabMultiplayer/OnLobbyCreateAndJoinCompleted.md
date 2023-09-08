@@ -10,7 +10,7 @@ ms.date: 11/23/2021
 
 # PlayFabMultiplayer.OnLobbyCreateAndJoinCompleted event
 
-Event triggered when a previous call to !:PlayFabMultiplayer.CreateAndJoinLobby() completed.
+Event triggered when a previous call to [`CreateAndJoinLobby`](./CreateAndJoinLobby.md) completed.
 
 ```csharp
 public static event OnLobbyCreateAndJoinCompletedHandler OnLobbyCreateAndJoinCompleted;

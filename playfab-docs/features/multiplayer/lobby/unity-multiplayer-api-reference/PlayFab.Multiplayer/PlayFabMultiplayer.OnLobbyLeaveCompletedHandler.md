@@ -10,7 +10,7 @@ ms.date: 11/23/2021
 
 # PlayFabMultiplayer.OnLobbyLeaveCompletedHandler delegate
 
-Handler for when the operation started by a previous call to !:Lobby.Leave() completed.
+Handler for when the operation started by a previous call to [`Leave`](./Lobby/Leave.md) completed.
 
 ```csharp
 public delegate void OnLobbyLeaveCompletedHandler(Lobby lobby, PFEntityKey localUser);

@@ -5,7 +5,7 @@ description: MatchUser.TeamId
 ms.author: victorku
 ms.topic: reference
 ms.service: playfab
-ms.date: 11/23/2021
+ms.date: 08/02/2023
 ---
 
 # MatchUser.TeamId property

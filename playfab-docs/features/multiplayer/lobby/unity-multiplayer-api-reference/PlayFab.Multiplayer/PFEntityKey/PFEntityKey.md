@@ -9,7 +9,8 @@ ms.date: 11/23/2021
 ---
 
 # PFEntityKey constructor
-## PFEntityKey (1 of 2)
+
+## Constructor (1 of 2)
 
 Initializes a new instance of the [`PFEntityKey`](../PFEntityKey.md) class. Pass in a PlayFabAuthenticationContext *authContext* returned by a PlayFab login method.
 
@@ -17,14 +18,9 @@ Initializes a new instance of the [`PFEntityKey`](../PFEntityKey.md) class. Pass
 public PFEntityKey(PlayFabAuthenticationContext authContext)
 ```
 
-## See Also 1
-
-* class [PFEntityKey](../PFEntityKey.md)
-* namespace [PlayFab.Multiplayer](../../PlayFabMultiplayerSDK.md)
-
 ---
 
-## PFEntityKey (2 of 2)
+## Constructor (2 of 2)
 
 Initializes a new instance of the [`PFEntityKey`](../PFEntityKey.md) class.
 
@@ -32,7 +28,7 @@ Initializes a new instance of the [`PFEntityKey`](../PFEntityKey.md) class.
 public PFEntityKey(string id, string type)
 ```
 
-## See Also 2
+## See Also
 
 * class [PFEntityKey](../PFEntityKey.md)
 * namespace [PlayFab.Multiplayer](../../PlayFabMultiplayerSDK.md)
