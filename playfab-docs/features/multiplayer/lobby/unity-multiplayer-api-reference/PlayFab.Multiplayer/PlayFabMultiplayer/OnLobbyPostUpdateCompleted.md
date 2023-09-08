@@ -10,7 +10,7 @@ ms.date: 11/23/2021
 
 # PlayFabMultiplayer.OnLobbyPostUpdateCompleted event
 
-Event triggered when the operation started by a previous call to !:Lobby.PostUpdate() completed.
+Event triggered when the operation started by a previous call to [`PostUpdate`](../Lobby/PostUpdate.md) completed.
 
 ```csharp
 public static event OnLobbyPostUpdateCompletedHandler OnLobbyPostUpdateCompleted;

@@ -10,7 +10,7 @@ ms.date: 11/23/2021
 
 # PFEntityKey.Type property
 
-Entity type. See [Available built-in entity types](/gaming/playfab/features/data/entities/available-built-in-entity-types).
+Entity type. See //docs.microsoft.com/gaming/playfab/features/data/entities/available-built-in-entity-types.
 
 ```csharp
 public string Type { get; set; }
@@ -18,7 +18,7 @@ public string Type { get; set; }
 
 ## Remarks
 
-Player entities are typically the `title_player_account` type. For more information, see See [Available built-in entity types](/gaming/playfab/features/data/entities/available-built-in-entity-types).
+Player entities are typically the `title_player_account` type. For more information, see See //docs.microsoft.com/gaming/playfab/features/data/entities/available-built-in-entity-types.
 
 ## See Also
 

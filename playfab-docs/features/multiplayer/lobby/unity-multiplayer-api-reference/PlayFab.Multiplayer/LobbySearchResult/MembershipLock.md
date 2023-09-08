@@ -18,7 +18,7 @@ public LobbyMembershipLock MembershipLock { get; }
 
 ## See Also
 
-* class [LobbySearchResult](../LobbySearchResult.md)
 * enum [LobbyMembershipLock](../LobbyMembershipLock.md)
+* class [LobbySearchResult](../LobbySearchResult.md)
 * namespace [PlayFab.Multiplayer](../../PlayFabMultiplayerSDK.md)
 

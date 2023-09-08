@@ -16,13 +16,13 @@ The filter structure used to limit lobby search results to only those lobbies ow
 public class LobbySearchFriendsFilter
 ```
 
-## Properties
+## Public Members
 
 | name | description |
 | --- | --- |
-| [IncludeFacebookFriends](LobbySearchFriendsFilter/IncludeFacebookFriends.md) | A flag which includes the player's Facebook friends list if their PlayFab account is linked to their Facebook account. |
-| [IncludeSteamFriends](LobbySearchFriendsFilter/IncludeSteamFriends.md) | A flag which includes the player's Steam friends list if their PlayFab account is linked to their Steam account. |
-| [IncludeXboxFriendsToken](LobbySearchFriendsFilter/IncludeXboxFriendsToken.md) | An Xbox Live token that, when provided, includes the player's Xbox Live friends list if their PlayFab account is linked to their Xbox Live account. |
+| [IncludeFacebookFriends](LobbySearchFriendsFilter/IncludeFacebookFriends.md) { get; set; } | A flag which includes the player's Facebook friends list if their PlayFab account is linked to their Facebook account. |
+| [IncludeSteamFriends](LobbySearchFriendsFilter/IncludeSteamFriends.md) { get; set; } | A flag which includes the player's Steam friends list if their PlayFab account is linked to their Steam account. |
+| [IncludeXboxFriendsToken](LobbySearchFriendsFilter/IncludeXboxFriendsToken.md) { get; set; } | An Xbox Live token that, when provided, includes the player's Xbox Live friends list if their PlayFab account is linked to their Xbox Live account. |
 
 ## Remarks
 

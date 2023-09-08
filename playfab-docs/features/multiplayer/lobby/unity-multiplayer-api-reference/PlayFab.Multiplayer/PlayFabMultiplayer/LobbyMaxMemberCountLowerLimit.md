@@ -10,7 +10,7 @@ ms.date: 11/23/2021
 
 # PlayFabMultiplayer.LobbyMaxMemberCountLowerLimit field
 
-The minimum allowed value for !:CreateAndJoinLobbyConfiguration.MaxMemberCount and [`MaxMemberCount`](../LobbyDataUpdate/MaxMemberCount.md).
+The minimum allowed value for [`MaxMemberCount`](../LobbyCreateConfiguration/MaxMemberCount.md) and [`MaxMemberCount`](../LobbyDataUpdate/MaxMemberCount.md).
 
 ```csharp
 public const uint LobbyMaxMemberCountLowerLimit;

@@ -1,9 +1,9 @@
 ---
 title: Using a Rule to Verify a Contact Email Address
-author: joannaleecy
+author: antnguyen
 description: Tutorial that describes how to create a rule that sends an verification email when a player changes their contact email address.
-ms.author: joanlee
-ms.date: 10/26/2018
+ms.author: antnguyen
+ms.date: 08/18/2023
 ms.topic: article
 ms.service: playfab
 keywords: playfab, engagement, email, rules
@@ -19,19 +19,19 @@ This tutorial walks you through the steps for creating a rule that sends a verif
 > [!IMPORTANT]
 > This is an *advanced* tutorial. Please make sure that all of the requirements have been met, or you will *not* be able to complete this tutorial.
 
-- To send custom emails with email templates, you will need to have your own SMTP server with a username and password. Please verify that you have your own SMTP server *before* following our tutorial [Setting up an SMTP server with add-ons](../../engagement/emails/setting-up-an-smtp-server-with-add-ons.md).
+- To send custom emails with email templates, you'll need to have your own SMTP server with a username and password. Verify that you have your own SMTP server *before* following our tutorial [Setting up an SMTP server with add-ons](../../engagement/emails/setting-up-an-smtp-server-with-add-ons.md).
 
 > [!NOTE]
 > You can use Gmail for testing - but with Gmail you are limited to 2,000 emails per day.
 
 - Basic knowledge of how to create a player will be necessary, since there will need to be players with a username and password before calling account recovery logic.
-- Read the [Game Manager quickstart](../../../gamemanager/quickstart.md) if you are unfamiliar with the Game Manager, as it is the place where email templates are created.
-- Knowledge of how to work with player profiles will be required, to confirm that emails will be necessary for checking that a contact email has been added to a player's profile. Please read up on how to get a player's profile in the [Getting Player Profiles](../../data/playerdata/getting-player-profiles.md) tutorial, and make sure that under the **Client Profile Options** on your **Title** you allow **Contact email addresses**.
-- Creating a rule will be necessary in this tutorial it is a good idea to read up on how [Rules](../../automation/actions-rules/quickstart.md) work.
+- Read the [Game Manager quickstart](../../../gamemanager/quickstart.md) if you're unfamiliar with the Game Manager, as it's the place where email templates are created.
+- Knowledge of how to work with player profiles will be required, to confirm that emails are necessary for checking that a contact email has been added to a player's profile. Read up on how to get a player's profile in the [Getting Player Profiles](../../data/playerdata/getting-player-profiles.md) tutorial, and make sure that under the **Client Profile Options** on your **Title** you allow **Contact email addresses**.
+- Creating a rule is necessary in this tutorial it's a good idea to read up on how [Rules](../../automation/actions-rules/quickstart.md) work.
 
 ## Step 1 - Create an email template
 
-The first thing we will do is create an account recovery email template.
+The first thing we'll do is create an account recovery email template.
 
 - Select **Content** from the menu on the left.
 - Go to the **Email Templates** tab.
@@ -62,18 +62,18 @@ Now add a **New Email Template**, filling in the fields as follows and leaving t
 
 ### A few things to remember
 
-- The `$ConfirmationUrl$` in the email body generates a customized URL that when selected, tracks that a user has selected the URL, and then issues a redirect to the **Callback URL**. In this case, it is injected into an **anchor tag**.
-- The **Callback URL** is the URL that PlayFab will redirect to after the player selects the **Confirmation URL** link. It can be a static page that tells the user they were successful in confirming their email. In this case, we will redirect to <https://www.example.com>.
+- The `$ConfirmationUrl$` in the email body generates a customized URL that when selected, tracks that a user has selected the URL, and then issues a redirect to the **Callback URL**. In this case, it's injected into an **anchor tag**.
+- The **Callback URL** is the URL that PlayFab will redirect to after the player selects the **Confirmation URL** link. It can be a static page that tells the user they were successful in confirming their email. In this case, we'll redirect to <https://www.example.com>.
 
 ![Game Manager - Content - Email Templates - New Email Template](media/tutorials/game-manager-content-new-email-template-email-verification.png)  
 
-After filling the form out, select the **SAVE EMAIL TEMPLATE** button, and you will be redirected back to the page containing the list of your email templates. Make a note of the ID of the email template as it will be used in Step 4.
+After filling the form out, select the **SAVE EMAIL TEMPLATE** button, and you'll be redirected back to the page containing the list of your email templates. Make a note of the ID of the email template as it will be used in Step 4.
 
 ![Game Manager - Content - Email Template ID](media/tutorials/game-manager-content-emailverification-template-id.png)  
 
 ## Step 2 - Create a rule to send an email when a contact email is updated
 
-Next, we will create a rule to send a verification email every time a player updates their contact email. In **Game Manager**:
+Next, we'll create a rule to send a verification email every time a player updates their contact email. In **Game Manager**:
 
 - Select **Automation** in the menu to the left.
 - Select the **Rules** tab.
@@ -87,13 +87,13 @@ Next, we will create a rule to send a verification email every time a player upd
 Choose **Send Email** from the **Type** drop-down.
 
 - The **Email template** drop-down should be populated by the template created in Step 1 **MyFirstEmailVerificationTemplate**.
-- If it is not, select **MyFirstEmailVerificationTemplate** from the drop-down.
+- If it isn't, select **MyFirstEmailVerificationTemplate** from the drop-down.
 
 ![Game Manager - Automation - New Rule - Save Action](media/tutorials/game-manager-automation-new-rule-save-action.png)  
 
 ## Step 3 - Add a contact email to a player
 
-For this next step, you will need an existing player account.
+For this next step, you'll need an existing player account.
 
 We add a contact email to the player using [AddOrUpdateContactEmail](xref:titleid.playfabapi.com.client.accountmanagement.addorupdatecontactemail).
 
@@ -102,7 +102,7 @@ We add a contact email to the player using [AddOrUpdateContactEmail](xref:titlei
 
 ### C# code example
 
-In the following example, we log in a player, then add a contact email using [AddOrUpdateContactEmail](xref:titleid.playfabapi.com.client.accountmanagement.addorupdatecontactemail). Make sure the email address associated with the player is one that you can access.
+In the following example, we sign-in a player, then add a contact email using [AddOrUpdateContactEmail](xref:titleid.playfabapi.com.client.accountmanagement.addorupdatecontactemail). Make sure the email address associated with the player is one that you can access.
 
 ```csharp
 void AddContactEmailToPlayer()
@@ -126,7 +126,6 @@ void AddOrUpdateContactEmail(string playFabId, string emailAddress)
 {
     var request = new AddOrUpdateContactEmailRequest
     {
-        PlayFabId = playFabId,
         EmailAddress = emailAddress
     };
     PlayFabClientAPI.AddOrUpdateContactEmail(request, result =>
@@ -195,7 +194,7 @@ To verify that you actually received the email, go to the email of the player yo
 
 ![Verify your email - email](media/tutorials/verify-your-email-email.png)  
 
-If you inspect the URL in that email, you will see that it looks something like this one.
+If you inspect the URL in that email, you'll see that it looks something like this one.
 
 ```html
 https://a5f3.playfabapi.com/EmailConfirmation/Confirm/?token=2346241B7C277796&titleId=A5F3&templateId=38017AAE7F494AB3
@@ -206,19 +205,19 @@ When the player selects that URL, three things happen:
 1. PlayFab generates a new PlayStream event, called **auth_token_validated**. This is how you know that the player selected that URL in the email.
    - You can use that event to trigger actions, like granting coins or items to the player.
 2. Because this email template was the special **Email Verification** template, PlayFab will then mark the player email as *Verified*.
-3. PlayFab will return a redirect URL sending the player to the callback URL website.
-    - On this website you can show a static **Thanks for verifying your email** message, or something more elaborate. The redirect URL will look something like this: <https://www.example.com/?token=2346241B7C277796>.
+3. PlayFab returns a redirect URL sending the player to the callback URL website.
+    - On this website you can show a static **Thanks for verifying your email** message, or something more elaborate. The redirect URL looks something like this: <https://www.example.com/?token=2346241B7C277796>.
 
     - Go ahead and select the URL found in the email.
-    - You will be taken to the **example.com** website.
+    - You'll be taken to the **example.com** website.
     - View your **Player Profile** using the **Game Manager**.
-    - You will see that the **Verification status** has changed.
+    - You'll see that the **Verification status** has changed.
 
 ![Game Manager - Player Profile - Contact email - Verification Confirmed](media/tutorials/game-manager-player-profile-contact-email-verification-confirmed.png)  
 
 ## Conclusion
 
-So that's it for this tutorial. You've seen how to setup your SMTP server, create an email template, and create a rule that sends an email to a player verifying their email address.
+So that's it for this tutorial. You've seen how to set up your SMTP server, create an email template, and create a rule that sends an email to a player verifying their email address.
 
 If you have any questions or feedback on this tutorial, please let us know in our [community forums](https://community.playfab.com/).
  

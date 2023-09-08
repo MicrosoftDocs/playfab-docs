@@ -14,6 +14,14 @@ ms.localizationpriority: medium
 > [!NOTE]
 > For release notes about service releases and product updates, see the [release notes](https://github.com/PlayFab/PlayFab/releases) section on [PlayFab's public GitHub repository](https://github.com/PlayFab/PlayFab)
 
+## 230901
+
+Date: September 1, 2023
+
+ - Added new Admin API call: DeleteMasterPlayerEventData
+ - Added new error code for LeaderboardColumnLengthMismatch
+ - Added OperationStatus to TransferInventoryItemsResponse in the Economy API
+
 ## 230818
 
 Date: August 18, 2023

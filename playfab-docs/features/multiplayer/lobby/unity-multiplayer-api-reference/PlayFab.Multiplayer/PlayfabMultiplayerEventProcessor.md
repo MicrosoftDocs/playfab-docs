@@ -14,11 +14,11 @@ ms.date: 11/23/2021
 public class PlayfabMultiplayerEventProcessor : MonoBehaviour
 ```
 
-## Constructors
+## Public Members
 
 | name | description |
 | --- | --- |
-| [PlayfabMultiplayerEventProcessor](PlayfabMultiplayerEventProcessor/PlayfabMultiplayerEventProcessor.md) | The default constructor. |
+| [PlayfabMultiplayerEventProcessor](PlayfabMultiplayerEventProcessor/PlayfabMultiplayerEventProcessor.md)() | The default constructor. |
 
 ## See Also
 

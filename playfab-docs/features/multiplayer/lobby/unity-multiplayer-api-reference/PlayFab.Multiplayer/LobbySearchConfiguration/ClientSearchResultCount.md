@@ -18,7 +18,7 @@ public uint? ClientSearchResultCount { get; set; }
 
 ## Remarks
 
-This value may only be specified when !:FindLobbies is called with a client-entity.
+This value may only be specified when [`FindLobbies`](../PlayFabMultiplayer/FindLobbies.md) is called with a client-entity.
 
 This value can be no higher than `PlayFabMultiplayer.LobbyClientRequestedSearchResultCountUpperLimit`.
 

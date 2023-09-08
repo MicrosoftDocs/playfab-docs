@@ -16,22 +16,17 @@ A request to make an update to the shared portion of the lobby on behalf of a me
 public class LobbyDataUpdate
 ```
 
-## Constructors
+## Public Members
 
 | name | description |
 | --- | --- |
-| [LobbyDataUpdate](LobbyDataUpdate/LobbyDataUpdate.md) | The default constructor. |
-
-## Properties
-
-| name | description |
-| --- | --- |
-| [AccessPolicy](LobbyDataUpdate/AccessPolicy.md) | An optional, updated access policy for this lobby. |
-| [LobbyProperties](LobbyDataUpdate/LobbyProperties.md) | The lobby properties to update. |
-| [MaxMemberCount](LobbyDataUpdate/MaxMemberCount.md) | An optional, updated capacity for the number of members in this lobby. |
-| [MembershipLock](LobbyDataUpdate/MembershipLock.md) | An optional update to the membership lock on this lobby. |
-| [NewOwner](LobbyDataUpdate/NewOwner.md) | An optional, new owner of the lobby. |
-| [SearchProperties](LobbyDataUpdate/SearchProperties.md) | The search properties to update. |
+| [LobbyDataUpdate](LobbyDataUpdate/LobbyDataUpdate.md)() | The default constructor. |
+| [AccessPolicy](LobbyDataUpdate/AccessPolicy.md) { get; set; } | An optional, updated access policy for this lobby. |
+| [LobbyProperties](LobbyDataUpdate/LobbyProperties.md) { get; set; } | The lobby properties to update. |
+| [MaxMemberCount](LobbyDataUpdate/MaxMemberCount.md) { get; set; } | An optional, updated capacity for the number of members in this lobby. |
+| [MembershipLock](LobbyDataUpdate/MembershipLock.md) { get; set; } | An optional update to the membership lock on this lobby. |
+| [NewOwner](LobbyDataUpdate/NewOwner.md) { get; set; } | An optional, new owner of the lobby. |
+| [SearchProperties](LobbyDataUpdate/SearchProperties.md) { get; set; } | The search properties to update. |
 
 ## See Also
 

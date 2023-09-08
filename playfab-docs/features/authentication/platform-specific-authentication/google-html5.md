@@ -1,9 +1,9 @@
 ---
 title: Setting up PlayFab authentication using Google and HTML5
-author: joannaleecy
+author: antnguyen
 description: Guides you through an example of PlayFab authentication using Google and HTML5.
-ms.author: joanlee
-ms.date: 06/11/2018
+ms.author: antnguyen
+ms.date: 08/18/2023
 ms.topic: article
 ms.service: playfab
 keywords: playfab, authentication, google, html5, javascript
@@ -33,10 +33,10 @@ Throughout this guide, we will assume your domain is `[http://playfab.example](h
 
 Start by navigating to the [Google API Console](https://console.developers.google.com/):
 
-1. Navigate to **Credentials** and select it.
-2. In the **Credentials** panel to the right, select the **Create** button.
+1. Navigate to **CREATE PROJECT** and select it. 
 
-![Google API Manager create new credentials](media/tutorials/google-html5/create-new-credentials.png)  
+
+![Google API Manager create new credentials](media/tutorials/google-html5/create-project.png)  
 
 1. Fill in the field under **Project Name**.
 2. Select the **Create** button.
@@ -46,16 +46,22 @@ Start by navigating to the [Google API Console](https://console.developers.googl
 > [!NOTE]
 > It is normal for **API Manager** to take 10-20 seconds to generate the project.
 
-![Google API Manager generating project](media/tutorials/google-html5/generating-project.png)  
+
 
 Once the Project is created:
 
 1. Navigate to the **OAuth consent screen**.
-2. Make sure the correct email is selected.
-3. Add a **Name** for your **Application**.
-4. Select the **Save** button.
+2. Select **External** under User Type
+3. Then select **Create**.
 
 ![Google API Manager OAuth consent screen](media/tutorials/google-html5/oauth-consent-screen.png)  
+
+1. Fill out an App Name
+2. Make sure there are emails for **user suport email** and **Developer Contact Email**
+3. Then select **SAVE AND CONTINUE**
+
+![Google API Manager OAuth Consent Screen configuration](media/tutorials/google-html5/create-oauth-consent-screen-1.png)
+![Google API Manager OAuth Consent Screen configuration 2](media/tutorials/google-html5/create-oauth-consent-screen-2.png)
 
 1. Next, navigate to **Credentials**.
 2. Select **Create credentials**.
@@ -65,7 +71,7 @@ Once the Project is created:
 
 1. Select **Web Application** as your **Application type**.
 2. Give your application a **Name**.
-3. Add your domain to **Authorized JavaScript origins**  - `[PlayFab](http://playfab.example)` in our case.
+3. Add your domain to **Authorized JavaScript origins**  - `[PlayFab](http://playfab.example.com)` in our case.
 4. Finally, select the **Create** button to commit your changes.
 
 ![Google API Manager create OAuth credentials](media/tutorials/google-html5/create-oauth-credentials.png)  
@@ -104,6 +110,16 @@ In this example, we show how to test the LoginWithGoogleAccount API using the cl
 
 > [!NOTE]
 > Please *make sure* to replace `YOUR_CLIENT_ID` and `YOUR_PLAYFAB_TITLE` with your own values.
+
+> [!Note]
+> the **AccessToken** param is missing in the **LoginWithGoogleAccountRequest** object in the TypeScript typings files. If you are using TypeScript with the Node SDK, you can create a custom type
+>```
+>interface LoginRequest extends PlayFabClientModels.LoginWithGoogleAccountRequest { AccessToken: string; }
+>```
+>and cast the type when using the API
+>```
+>PlayFabClient.LoginWithGoogleAccount( { AccessToken: accessToken, CreateAccount: true, } as LoginRequest, onPlayFabResponse);
+>```
 ```html
 <!DOCTYPE html>
 <html>

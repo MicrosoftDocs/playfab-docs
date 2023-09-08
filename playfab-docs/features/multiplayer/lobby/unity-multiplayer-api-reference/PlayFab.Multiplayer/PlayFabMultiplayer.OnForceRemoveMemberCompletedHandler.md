@@ -10,7 +10,7 @@ ms.date: 11/23/2021
 
 # PlayFabMultiplayer.OnForceRemoveMemberCompletedHandler delegate
 
-Handler for when the operation started by a previous call to !:PlayFabLobby.ForceRemoveMember() completed.
+Handler for when the operation started by a previous call to [`ForceRemoveMember`](./Lobby/ForceRemoveMember.md) completed.
 
 ```csharp
 public delegate void OnForceRemoveMemberCompletedHandler(Lobby lobby, PFEntityKey targetMember, 

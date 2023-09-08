@@ -20,7 +20,7 @@ public uint MaxMemberCount { get; set; }
 
 This value must be at least `PlayFabMultiplayer.LobbyMaxMemberCountLowerLimit` and no more than `PlayFabMultiplayer.LobbyMaxMemberCountUpperLimit`.
 
-If a client would violate this limit by calling !:JoinLobby() or !:Lobby.AddMember, the operation will fail asynchronously and !:LobbyJoinCompletedStateChange.result or !:LobbyAddMemberCompletedStateChange.result, respectively, will be set to !:LobbyStateChangeResult.LobbyNotJoinable.
+If a client would violate this limit by calling [`JoinLobby`](../PlayFabMultiplayer/JoinLobby.md) or [`AddMember`](../Lobby/AddMember.md), the operation will fail asynchronously.
 
 ## See Also
 

@@ -16,17 +16,12 @@ The initial configuration data for the member creating and joining the lobby.
 public class LobbyJoinConfiguration
 ```
 
-## Constructors
+## Public Members
 
 | name | description |
 | --- | --- |
-| [LobbyJoinConfiguration](LobbyJoinConfiguration/LobbyJoinConfiguration.md) | The default constructor. |
-
-## Properties
-
-| name | description |
-| --- | --- |
-| [MemberProperties](LobbyJoinConfiguration/MemberProperties.md) | The member properties for the lobby. |
+| [LobbyJoinConfiguration](LobbyJoinConfiguration/LobbyJoinConfiguration.md)() | The default constructor. |
+| [MemberProperties](LobbyJoinConfiguration/MemberProperties.md) { get; set; } | The member properties for the lobby. |
 
 ## See Also
 

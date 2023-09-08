@@ -10,6 +10,8 @@ ms.date: 11/23/2021
 
 # LobbyError.Success field
 
+Indicates that the operation succeeded.
+
 ```csharp
 public const int Success;
 ```
