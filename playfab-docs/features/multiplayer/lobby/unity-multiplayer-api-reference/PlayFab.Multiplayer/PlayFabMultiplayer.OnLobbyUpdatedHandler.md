@@ -12,7 +12,7 @@ ms.date: 11/23/2021
 
 Handler for when a lobby was updated.
 
-This state change signifies that the lobby has updated and provides hints as to which values have changed. Multiple updates may be provided by a single call to !:ProcessingLobbyStateChanges(). All state reflected by these updates will become available simultaneously when ProcessingLobbyStateChanges() is called, so the updates can be reconciled either individually or as a batch.
+This state change signifies that the lobby has updated and provides hints as to which values have changed. Multiple updates may be provided by a single call to [`ProcessLobbyStateChanges`](./PlayFabMultiplayer/ProcessLobbyStateChanges.md). All state reflected by these updates will become available simultaneously when ProcessLobbyStateChanges() is called, so the updates can be reconciled either individually or as a batch.
 
 ```csharp
 public delegate void OnLobbyUpdatedHandler(Lobby lobby, bool ownerUpdated, bool maxMembersUpdated, 

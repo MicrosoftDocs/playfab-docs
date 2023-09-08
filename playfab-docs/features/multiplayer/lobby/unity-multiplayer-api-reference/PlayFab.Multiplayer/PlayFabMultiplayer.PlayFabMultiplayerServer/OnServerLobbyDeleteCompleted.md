@@ -10,7 +10,7 @@ ms.date: 08/02/2023
 
 # PlayFabMultiplayer.PlayFabMultiplayerServer.OnServerLobbyDeleteCompleted event
 
-Event triggered when a previous call to [ServerDeleteLobby](../Lobby/ServerDeleteLobby.md) completed.
+Event triggered when a previous call to [`ServerDeleteLobby`](../Lobby/ServerDeleteLobby.md) completed.
 
 ```csharp
 public static event OnServerLobbyDeleteCompletedHandler OnServerLobbyDeleteCompleted;
@@ -18,7 +18,7 @@ public static event OnServerLobbyDeleteCompletedHandler OnServerLobbyDeleteCompl
 
 ## See Also
 
-* delegate [OnServerLobbyDeleteCompleted](../PlayFabMultiplayer.PlayFabMultiplayerServer.OnServerLobbyDeleteCompletedHandler.md)
-* class [PlayFabMultiplayer](../PlayFabMultiplayer.md)
+* delegate [OnServerLobbyDeleteCompletedHandler](../PlayFabMultiplayer.PlayFabMultiplayerServer.OnServerLobbyDeleteCompletedHandler.md)
+* class [PlayFabMultiplayerServer](../PlayFabMultiplayer.PlayFabMultiplayerServer.md)
 * namespace [PlayFab.Multiplayer](../../PlayFabMultiplayerSDK.md)
 

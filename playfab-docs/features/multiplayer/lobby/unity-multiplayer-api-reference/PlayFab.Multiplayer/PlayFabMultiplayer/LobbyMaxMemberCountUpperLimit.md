@@ -10,7 +10,7 @@ ms.date: 11/23/2021
 
 # PlayFabMultiplayer.LobbyMaxMemberCountUpperLimit field
 
-The maximum allowed value for !:CreateAndJoinLobbyConfiguration.MaxMemberCount and [`MaxMemberCount`](../LobbyDataUpdate/MaxMemberCount.md).
+The maximum allowed value for [`MaxMemberCount`](../LobbyCreateConfiguration/MaxMemberCount.md) and [`MaxMemberCount`](../LobbyDataUpdate/MaxMemberCount.md).
 
 ```csharp
 public const uint LobbyMaxMemberCountUpperLimit;
@@ -19,4 +19,5 @@ public const uint LobbyMaxMemberCountUpperLimit;
 ## See Also
 
 * class [PlayFabMultiplayer](../PlayFabMultiplayer.md)
+* namespace [PlayFab.Multiplayer](../../PlayFabMultiplayerSDK.md)
 

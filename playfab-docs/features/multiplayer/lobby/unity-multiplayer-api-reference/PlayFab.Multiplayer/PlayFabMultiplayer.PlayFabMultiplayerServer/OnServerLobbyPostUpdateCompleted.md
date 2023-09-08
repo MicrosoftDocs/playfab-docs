@@ -10,7 +10,7 @@ ms.date: 08/02/2023
 
 # PlayFabMultiplayer.PlayFabMultiplayerServer.OnServerLobbyPostUpdateCompleted event
 
-Event triggered when a previous call to [ServerPostUpdate](../Lobby/ServerPostUpdate.md) completed.
+Event triggered when a previous call to [`ServerPostUpdate`](../Lobby/ServerPostUpdate.md) completed.
 
 ```csharp
 public static event OnServerLobbyPostUpdateCompletedHandler OnServerLobbyPostUpdateCompleted;
@@ -18,7 +18,7 @@ public static event OnServerLobbyPostUpdateCompletedHandler OnServerLobbyPostUpd
 
 ## See Also
 
-* delegate [OnServerLobbyPostUpdateCompleted](../PlayFabMultiplayer.PlayFabMultiplayerServer.OnServerLobbyPostUpdateCompletedHandler.md)
-* class [PlayFabMultiplayer](../PlayFabMultiplayer.md)
+* delegate [OnServerLobbyPostUpdateCompletedHandler](../PlayFabMultiplayer.PlayFabMultiplayerServer.OnServerLobbyPostUpdateCompletedHandler.md)
+* class [PlayFabMultiplayerServer](../PlayFabMultiplayer.PlayFabMultiplayerServer.md)
 * namespace [PlayFab.Multiplayer](../../PlayFabMultiplayerSDK.md)
 

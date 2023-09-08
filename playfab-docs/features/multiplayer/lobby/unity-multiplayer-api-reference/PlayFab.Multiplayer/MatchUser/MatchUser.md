@@ -8,8 +8,9 @@ ms.service: playfab
 ms.date: 08/02/2023
 ---
 
-# MatchUser constructor
-## MatchUser constructor (1 of 2)
+# MatchUser
+
+## Constructor (1 of 2)
 
 Initializes a new instance of the [`MatchUser`](../MatchUser.md) struct.
 
@@ -23,15 +24,9 @@ public MatchUser(PFEntityKey localUser, string localUserJsonAttributesJSON, stri
 | localUserJsonAttributesJSON | The array of local user attribute strings. There should be one attribute string for each local user. Each attribute string should either be an empty string or a serialized JSON object. For example, `{"player_color":"blue","player_role":"tank"}`. |
 | teamId | The team ID assigned to this match member. May be empty if the matchmaking queue doesn't use team rules. |
 
-## See Also 1
-
-* class [PFEntityKey](../PFEntityKey.md)
-* struct [MatchUser](../MatchUser.md)
-* namespace [PlayFab.Multiplayer](../../PlayFabMultiplayerSDK.md)
-
 ---
 
-## MatchUser constructor (2 of 2)
+## Constructor (2 of 2)
 
 Initializes a new instance of the [`MatchUser`](../MatchUser.md) struct.
 
@@ -46,8 +41,9 @@ public MatchUser(PlayFabAuthenticationContext localUser, string localUserJsonAtt
 | localUserJsonAttributesJSON | The array of local user attribute strings. There should be one attribute string for each local user. Each attribute string should either be an empty string or a serialized JSON object. For example, `{"player_color":"blue","player_role":"tank"}`. |
 | teamId | The team ID assigned to this match member. May be empty if the matchmaking queue doesn't use team rules. |
 
-## See Also 2
+## See Also
 
+* class [PFEntityKey](../PFEntityKey.md)
 * struct [MatchUser](../MatchUser.md)
 * namespace [PlayFab.Multiplayer](../../PlayFabMultiplayerSDK.md)
 

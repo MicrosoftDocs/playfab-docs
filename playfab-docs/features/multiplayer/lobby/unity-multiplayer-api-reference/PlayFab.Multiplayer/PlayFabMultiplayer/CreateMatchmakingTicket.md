@@ -8,8 +8,9 @@ ms.service: playfab
 ms.date: 11/23/2021
 ---
 
-# PlayFabMultiplayer.CreateMatchmakingTicket method
-## PlayFabMultiplayer.CreateMatchmakingTicket (1 of 3)
+# PlayFabMultiplayer.CreateMatchmakingTicket
+
+## Method (1 of 3)
 
 Creates a matchmaking ticket for one or more local users.
 
@@ -24,11 +25,11 @@ public static MatchmakingTicket CreateMatchmakingTicket(IList<MatchUser> localUs
 | queueName | The queue to which the ticket belongs. |
 | timeoutInSeconds | How long to attempt matchmaking the ticket, in seconds. Defaults to 120 seconds |
 
-## Return Value 1
+## Return Value (1 of 3)
 
 The resulting ticket object.
 
-## Remarks 1
+## Remarks (1 of 3)
 
 The library automatically, and asynchronously, will submit all local users on a ticket to the matchmaking service. Each time the ticket status changes, a [`OnMatchmakingTicketStatusChanged`](./OnMatchmakingTicketStatusChanged.md) will be provided. The ticket status can be queried at any time via [`Status`](../MatchmakingTicket/Status.md). The ticket immediately starts in the `MatchmakingTicketStatus.Creating` state.
 
@@ -36,18 +37,11 @@ When the ticket has completed, a [`OnMatchmakingTicketStatusChanged`](./OnMatchm
 
 All existing tickets in which a local user is a member will be canceled as part of this operation.
 
-A match can't be found until all remote users specified in the `membersToMatchWith` field of the `configuration` parameter have joined the ticket via !:PlayFabMultiplayer.JoinMatchmakingTicketFromId().
-
-## See Also 1
-
-* class [MatchmakingTicket](../MatchmakingTicket.md)
-* struct [MatchUser](../MatchUser.md)
-* class [PlayFabMultiplayer](../PlayFabMultiplayer.md)
-* namespace [PlayFab.Multiplayer](../../PlayFabMultiplayerSDK.md)
+A match can't be found until all remote users specified in the `membersToMatchWith` field of the `configuration` parameter have joined the ticket via [`JoinMatchmakingTicketFromId`](./JoinMatchmakingTicketFromId.md).
 
 ---
 
-## PlayFabMultiplayer.CreateMatchmakingTicket (2 of 3)
+## Method (2 of 3)
 
 Creates a matchmaking ticket for one or more local users.
 
@@ -62,11 +56,11 @@ public static MatchmakingTicket CreateMatchmakingTicket(MatchUser localUser, str
 | queueName | The queue to which the ticket belongs. |
 | timeoutInSeconds | How long to attempt matchmaking the ticket, in seconds. Defaults to 120 seconds |
 
-## Return Value 2
+## Return Value (2 of 3)
 
 The resulting ticket object.
 
-## Remarks 2
+## Remarks (2 of 3)
 
 The library automatically, and asynchronously, will submit all local users on a ticket to the matchmaking service. Each time the ticket status changes, a [`OnMatchmakingTicketStatusChanged`](./OnMatchmakingTicketStatusChanged.md) will be provided. The ticket status can be queried at any time via [`Status`](../MatchmakingTicket/Status.md). The ticket immediately starts in the `MatchmakingTicketStatus.Creating` state.
 
@@ -74,18 +68,11 @@ When the ticket has completed, a [`OnMatchmakingTicketStatusChanged`](./OnMatchm
 
 All existing tickets in which a local user is a member will be canceled as part of this operation.
 
-A match can't be found until all remote users specified in the `membersToMatchWith` field of the `configuration` parameter have joined the ticket via !:PlayFabMultiplayer.JoinMatchmakingTicketFromId().
-
-## See Also 2
-
-* class [MatchmakingTicket](../MatchmakingTicket.md)
-* struct [MatchUser](../MatchUser.md)
-* class [PlayFabMultiplayer](../PlayFabMultiplayer.md)
-* namespace [PlayFab.Multiplayer](../../PlayFabMultiplayerSDK.md)
+A match can't be found until all remote users specified in the `membersToMatchWith` field of the `configuration` parameter have joined the ticket via [`JoinMatchmakingTicketFromId`](./JoinMatchmakingTicketFromId.md).
 
 ---
 
-## PlayFabMultiplayer.CreateMatchmakingTicket (3 of 3)
+## Method (3 of 3)
 
 Creates a matchmaking ticket for one or more local users.
 
@@ -101,11 +88,11 @@ public static MatchmakingTicket CreateMatchmakingTicket(IList<MatchUser> localUs
 | membersToMatchWith | The other specific users expected to join the ticket. |
 | timeoutInSeconds | How long to attempt matchmaking the ticket, in seconds. Defaults to 120 seconds |
 
-## Return Value 3
+## Return Value (3 of 3)
 
 The resulting ticket object.
 
-## Remarks 3
+## Remarks (3 of 3)
 
 The library automatically, and asynchronously, will submit all local users on a ticket to the matchmaking service. Each time the ticket status changes, a [`OnMatchmakingTicketStatusChanged`](./OnMatchmakingTicketStatusChanged.md) will be provided. The ticket status can be queried at any time via [`Status`](../MatchmakingTicket/Status.md). The ticket immediately starts in the `MatchmakingTicketStatus.Creating` state.
 
@@ -113,9 +100,9 @@ When the ticket has completed, a [`OnMatchmakingTicketStatusChanged`](./OnMatchm
 
 All existing tickets in which a local user is a member will be canceled as part of this operation.
 
-A match can't be found until all remote users specified in the `membersToMatchWith` field of the `configuration` parameter have joined the ticket via !:PlayFabMultiplayer.JoinMatchmakingTicketFromId().
+A match can't be found until all remote users specified in the `membersToMatchWith` field of the `configuration` parameter have joined the ticket via [`JoinMatchmakingTicketFromId`](./JoinMatchmakingTicketFromId.md).
 
-## See Also 3
+## See Also
 
 * class [MatchmakingTicket](../MatchmakingTicket.md)
 * struct [MatchUser](../MatchUser.md)

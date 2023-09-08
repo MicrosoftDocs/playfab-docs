@@ -10,7 +10,7 @@ ms.date: 08/02/2023
 
 # LobbyConstants.LobbyAmOwnerSearchKey field
 
-A special, predefined search key, which can be used in the [`LobbySearchConfiguration`](../LobbySearchConfiguration.md) filtering string to search for lobbies that you own.
+A special, predefined search key, which can be used in the [`FilterString`](../LobbySearchConfiguration/FilterString.md) filtering string to search for lobbies that you own.
 
 ```csharp
 public static readonly string LobbyAmOwnerSearchKey;
