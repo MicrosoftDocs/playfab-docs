@@ -22,7 +22,7 @@ This string is formatted in an OData-like filtering syntax.
 
 Only the following operators are supported: "and" (logical and), "eq" (equal), "ne" (not equals), "ge" (greater than or equal), "gt" (greater than), "le" (less than or equal), and "lt" (less than).
 
-The left-hand side of each OData logical expression should be either a search property key (e.g. string_key1, number_key3, etc) or one of the pre-defined search keys (!:LobbyMemberCountSearchKey or !:LobbyMemberSearchKey).
+The left-hand side of each OData logical expression should be either a search property key (e.g. string_key1, number_key3, etc) or one of the pre-defined search keys ([`LobbyMemberCountSearchKey`](../LobbyConstants/LobbyMemberCountSearchKey.md) or [`LobbyAmMemberSearchKey`](../LobbyConstants/LobbyAmMemberSearchKey.md)).
 
 The left-hand side of each OData logical expression should be a search property key.
 

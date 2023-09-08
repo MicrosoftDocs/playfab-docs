@@ -24,4 +24,5 @@ If omitted, the search operation will search all available lobbies.
 
 * class [LobbySearchFriendsFilter](../LobbySearchFriendsFilter.md)
 * class [LobbySearchConfiguration](../LobbySearchConfiguration.md)
+* namespace [PlayFab.Multiplayer](../../PlayFabMultiplayerSDK.md)
 

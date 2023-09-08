@@ -10,7 +10,7 @@ ms.date: 08/02/2023
 
 # LobbyConstants.LobbyMaxMemberCountLowerLimit field
 
-The minimum allowed value for [`LobbyCreateConfiguration.MaxMemberCount`](../LobbyCreateConfiguration.md) and [`LobbyDataUpdate.MaxMemberCount`](../LobbyDataUpdate.md).
+The minimum allowed value for [`MaxMemberCount`](../LobbyCreateConfiguration/MaxMemberCount.md) and [`MaxMemberCount`](../LobbyDataUpdate/MaxMemberCount.md).
 
 ```csharp
 public const uint LobbyMaxMemberCountLowerLimit;

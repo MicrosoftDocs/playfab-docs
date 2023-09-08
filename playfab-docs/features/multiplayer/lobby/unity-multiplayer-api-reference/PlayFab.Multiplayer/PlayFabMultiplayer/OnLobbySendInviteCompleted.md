@@ -10,7 +10,7 @@ ms.date: 11/23/2021
 
 # PlayFabMultiplayer.OnLobbySendInviteCompleted event
 
-Event triggered when the operation started by a previous call to !:PlayFabMultiplayer.SendInvite() completed.
+Event triggered when the operation started by a previous call to [`SendInvite`](../Lobby/SendInvite.md) completed.
 
 ```csharp
 public static event OnLobbySendInviteCompletedHandler OnLobbySendInviteCompleted;

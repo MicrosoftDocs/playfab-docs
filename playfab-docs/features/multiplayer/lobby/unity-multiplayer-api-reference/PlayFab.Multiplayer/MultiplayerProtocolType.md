@@ -10,7 +10,7 @@ ms.date: 08/18/2022
 
 # MultiplayerProtocolType
 
-The protocol type used for connecting to a PlayFab Multiplayer Server port.
+The access policy for the lobby
 
 ```csharp
 public enum MultiplayerProtocolType : uint
@@ -21,7 +21,7 @@ public enum MultiplayerProtocolType : uint
 | name | value | description |
 | --- | --- | --- |
 | Tcp | `0` | Transmission Control Protocol |
-| Udp | `1` | User Datagram Protocol. |
+| Udp | `1` | User Datagram Protocol |
 
 ## See Also
 

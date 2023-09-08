@@ -10,6 +10,8 @@ ms.date: 11/23/2021
 
 # LobbyError.InvalidArg field
 
+Indicates that the operation failed due to an invalid argument.
+
 ```csharp
 public const int InvalidArg;
 ```

@@ -10,7 +10,7 @@ ms.date: 08/02/2023
 
 # LobbyConstants.LobbyMemberCountSearchKey field
 
-A special, predefined search key, which can be used in the [`LobbySearchConfiguration`](../LobbySearchConfiguration.md) filtering and sorting strings to search for lobbies based on the current number of members in the lobby.
+A special, predefined search key, which can be used in the [`FilterString`](../LobbySearchConfiguration/FilterString.md) filtering and sorting strings to search for lobbies based on the current number of members in the lobby.
 
 ```csharp
 public static readonly string LobbyMemberCountSearchKey;

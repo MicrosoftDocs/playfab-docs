@@ -10,6 +10,8 @@ ms.date: 11/23/2021
 
 # LobbyMembershipLock
 
+Values representing the state of the lobby's membership lock.
+
 ```csharp
 public enum LobbyMembershipLock : uint
 ```
@@ -18,8 +20,8 @@ public enum LobbyMembershipLock : uint
 
 | name | value | description |
 | --- | --- | --- |
-| Unlocked | `0` |  |
-| Locked | `1` |  |
+| Unlocked | `0` | Lobby membership is unlocked. New members will not be prevented from joining. |
+| Locked | `1` | Lobby membership is locked. New members will be prevented from joining. |
 
 ## See Also
 

@@ -379,6 +379,46 @@
             "source_path": "playfab-docs/features/analytics/ab-testing/tutorials.md",
             "redirect_url": "/gaming/playfab/features/analytics/experiments",
             "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/PlayFabMultiplayerServer/ClaimServerLobby.md",
+            "redirect_url": "/gaming/playfab/features/multiplayer/lobby/unity-multiplayer-api-reference/playfab.multiplayer/playfabmultiplayer.playfabmultiplayerserver/claimserverlobby",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/PlayFabMultiplayerServer/CreateAndClaimServerLobby.md",
+            "redirect_url": "/gaming/playfab/features/multiplayer/lobby/unity-multiplayer-api-reference/playfab.multiplayer/playfabmultiplayer.playfabmultiplayerserver/createandclaimserverlobby",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/PlayFabMultiplayerServer/CreateServerBackfillTicket.md",
+            "redirect_url": "/gaming/playfab/features/multiplayer/lobby/unity-multiplayer-api-reference/playfab.multiplayer/playfabmultiplayer.playfabmultiplayerserver/createserverbackfillticket",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/PlayFabMultiplayerServer/OnServerLobbyClaimCompleted.md",
+            "redirect_url": "/gaming/playfab/features/multiplayer/lobby/unity-multiplayer-api-reference/playfab.multiplayer/playfabmultiplayer.playfabmultiplayerserver/onserverlobbyclaimcompleted",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/PlayFabMultiplayerServer/OnServerLobbyCreateAndClaimCompleted.md",
+            "redirect_url": "/gaming/playfab/features/multiplayer/lobby/unity-multiplayer-api-reference/playfab.multiplayer/playfabmultiplayer.playfabmultiplayerserver/onserverlobbycreateandclaimcompleted",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/PlayFabMultiplayerServer/OnServerLobbyDeleteCompleted.md",
+            "redirect_url": "/gaming/playfab/features/multiplayer/lobby/unity-multiplayer-api-reference/playfab.multiplayer/playfabmultiplayer.playfabmultiplayerserver/onserverlobbydeletecompleted",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/PlayFabMultiplayerServer/OnServerLobbyPostUpdateCompleted.md",
+            "redirect_url": "/gaming/playfab/features/multiplayer/lobby/unity-multiplayer-api-reference/playfab.multiplayer/playfabmultiplayer.playfabmultiplayerserver/onserverlobbypostupdatecompleted",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/PlayFabMultiplayerServer.md",
+            "redirect_url": "/gaming/playfab/features/multiplayer/lobby/unity-multiplayer-api-reference/playfab.multiplayer/playfabmultiplayer.playfabmultiplayerserver",
+            "redirect_document_id": false
         }
     ]
 }

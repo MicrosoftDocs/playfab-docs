@@ -10,7 +10,7 @@ ms.date: 11/23/2021
 
 # PlayFabMultiplayer.OnAddMemberCompletedHandler delegate
 
-Handler for when the operation started by a previous call to !:Lobby.AddMember completed
+Handler for when the operation started by a previous call to [`AddMember`](./Lobby/AddMember.md) completed
 
 ```csharp
 public delegate void OnAddMemberCompletedHandler(Lobby lobby, PFEntityKey localUser, int result);
@@ -24,7 +24,7 @@ public delegate void OnAddMemberCompletedHandler(Lobby lobby, PFEntityKey localU
 
 ## Remarks
 
-[`OnLobbyMemberAdded`](./PlayFabMultiplayer/OnLobbyMemberAdded.md) event fires anytime any member is added to the lobby (remote or local). [`OnAddMemberCompleted`](./PlayFabMultiplayer/OnAddMemberCompleted.md) event only fires when you invoke !:PlayFabMultiplayer.AddMember which allows you to add additional members to the lobby. The first local member was the one who created the lobby, it will fire the [`OnLobbyCreateAndJoinCompleted`](./PlayFabMultiplayer/OnLobbyCreateAndJoinCompleted.md) event. If the local member is using [`JoinLobby`](./PlayFabMultiplayer/JoinLobby.md), it will fire the [`OnLobbyJoinCompleted`](./PlayFabMultiplayer/OnLobbyJoinCompleted.md) event. If the local member is using [`JoinArrangedLobby`](./PlayFabMultiplayer/JoinArrangedLobby.md), it will fire the [`OnLobbyJoinArrangedLobbyCompleted`](./PlayFabMultiplayer/OnLobbyJoinArrangedLobbyCompleted.md) event.
+[`OnLobbyMemberAdded`](./PlayFabMultiplayer/OnLobbyMemberAdded.md) event fires anytime any member is added to the lobby (remote or local). [`OnAddMemberCompleted`](./PlayFabMultiplayer/OnAddMemberCompleted.md) event only fires when you invoke [`AddMember`](./Lobby/AddMember.md) which allows you to add additional members to the lobby. The first local member was the one who created the lobby, it will fire the [`OnLobbyCreateAndJoinCompleted`](./PlayFabMultiplayer/OnLobbyCreateAndJoinCompleted.md) event. If the local member is using [`JoinLobby`](./PlayFabMultiplayer/JoinLobby.md), it will fire the [`OnLobbyJoinCompleted`](./PlayFabMultiplayer/OnLobbyJoinCompleted.md) event. If the local member is using [`JoinArrangedLobby`](./PlayFabMultiplayer/JoinArrangedLobby.md), it will fire the [`OnLobbyJoinArrangedLobbyCompleted`](./PlayFabMultiplayer/OnLobbyJoinArrangedLobbyCompleted.md) event.
 
 ## See Also
 

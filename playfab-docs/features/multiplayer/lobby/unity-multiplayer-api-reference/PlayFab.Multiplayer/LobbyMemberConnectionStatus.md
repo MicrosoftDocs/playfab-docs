@@ -20,8 +20,8 @@ public enum LobbyMemberConnectionStatus : uint
 
 | name | value | description |
 | --- | --- | --- |
-| NotConnected  | `0` | The lobby member is not connected to the notification service.<br/><br/> Lobby members that are not connected to the notification service may miss updates or see delayed updates while in this state.  |
-| Connected | `1` | The lobby member is connected to the notification service.<br/><br/> Lobby members that are connected to the notification service will receive real-time updates indicating changes to the lobby. |
+| NotConnected | `0` | The lobby member is not connected to the notification service. |
+| Connected | `1` | The lobby member is connected to the notification service. |
 
 ## See Also
 

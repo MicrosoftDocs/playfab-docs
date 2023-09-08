@@ -437,18 +437,18 @@
         - name: Subclasses
           items:
             - name: PlayFabMultiplayerServer
-              href: PlayFab.Multiplayer/PlayFabMultiplayerServer.md
+              href: PlayFab.Multiplayer/PlayFabMultiplayer.PlayFabMultiplayerServer/PlayFabMultiplayerServer.md
               items:
                 - name: Events
                   items:
                     - name: OnServerLobbyCreateAndClaimCompleted 
-                      href: PlayFab.Multiplayer/PlayFabMultiplayerServer/OnServerLobbyCreateAndClaimCompleted.md
+                      href: PlayFab.Multiplayer/PlayFabMultiplayer.PlayFabMultiplayerServer/OnServerLobbyCreateAndClaimCompleted.md
                     - name: OnServerLobbyClaimCompleted 
-                      href: PlayFab.Multiplayer/PlayFabMultiplayerServer/OnServerLobbyClaimCompleted.md
+                      href: PlayFab.Multiplayer/PlayFabMultiplayer.PlayFabMultiplayerServer/OnServerLobbyClaimCompleted.md
                     - name: OnServerLobbyPostUpdateCompleted 
-                      href: PlayFab.Multiplayer/PlayFabMultiplayerServer/OnServerLobbyPostUpdateCompleted.md
+                      href: PlayFab.Multiplayer/PlayFabMultiplayer.PlayFabMultiplayerServer/OnServerLobbyPostUpdateCompleted.md
                     - name: OnServerLobbyDeleteCompleted 
-                      href: PlayFab.Multiplayer/PlayFabMultiplayerServer/OnServerLobbyDeleteCompleted.md
+                      href: PlayFab.Multiplayer/PlayFabMultiplayer.PlayFabMultiplayerServer/OnServerLobbyDeleteCompleted.md
                 - name: Delegates
                   items:
                     - name: OnServerLobbyCreateAndClaimCompletedHandler 
@@ -462,11 +462,11 @@
                 - name: Methods
                   items:
                     - name: CreateAndClaimServerLobby
-                      href: PlayFab.Multiplayer/PlayFabMultiplayerServer/CreateAndClaimServerLobby.md
+                      href: PlayFab.Multiplayer/PlayFabMultiplayer.PlayFabMultiplayerServer/CreateAndClaimServerLobby.md
                     - name: ClaimServerLobby
-                      href: PlayFab.Multiplayer/PlayFabMultiplayerServer/ClaimServerLobby.md
+                      href: PlayFab.Multiplayer/PlayFabMultiplayer.PlayFabMultiplayerServer/ClaimServerLobby.md
                     - name: CreateServerBackfillTicket
-                      href: PlayFab.Multiplayer/PlayFabMultiplayerServer/CreateServerBackfillTicket.md
+                      href: PlayFab.Multiplayer/PlayFabMultiplayer.PlayFabMultiplayerServer/CreateServerBackfillTicket.md
     - name: PlayFabMultiplayerErrorArgs
       href: PlayFab.Multiplayer/PlayFabMultiplayerErrorArgs.md
       items:

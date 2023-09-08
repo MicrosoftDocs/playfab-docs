@@ -8,8 +8,9 @@ ms.service: playfab
 ms.date: 11/23/2021
 ---
 
-# PlayFabMultiplayer.StartListeningForLobbyInvites method
-## PlayFabMultiplayer.StartListeningForLobbyInvites (1 of 2)
+# PlayFabMultiplayer.StartListeningForLobbyInvites
+
+## Method (1 of 2)
 
 Enables the Lobby invite listener for a given entity.
 
@@ -21,7 +22,7 @@ public static void StartListeningForLobbyInvites(PFEntityKey listeningEntity)
 | --- | --- |
 | listeningEntity | The entity which will listen for invites. |
 
-## Remarks 1
+## Remarks (1 of 2)
 
 This operation will synchronously start listening for invites on behalf of the provided entity. When invites are received, they will be provided via [`OnLobbyInviteReceived`](./OnLobbyInviteReceived.md) events. When the status of the invite listener changes, notifications will be provided via [`OnLobbyInviteListenerStatusChanged`](./OnLobbyInviteListenerStatusChanged.md) events.
 
@@ -33,15 +34,9 @@ Lobby invites and this invite listener are unrelated to and unaffected by platfo
 
 This method may only be called if the Lobby invite listener is not already enabled for the given entity.
 
-## See Also 1
-
-* class [PFEntityKey](../PFEntityKey.md)
-* class [PlayFabMultiplayer](../PlayFabMultiplayer.md)
-* namespace [PlayFab.Multiplayer](../../PlayFabMultiplayerSDK.md)
-
 ---
 
-## PlayFabMultiplayer.StartListeningForLobbyInvites (2 of 2)
+## Method (2 of 2)
 
 Enables the Lobby invite listener for a given entity.
 
@@ -53,7 +48,7 @@ public static void StartListeningForLobbyInvites(PlayFabAuthenticationContext li
 | --- | --- |
 | listeningEntity | The entity which will listen for invites. |
 
-## Remarks 2
+## Remarks (2 of 2)
 
 This operation will synchronously start listening for invites on behalf of the provided entity. When invites are received, they will be provided via [`OnLobbyInviteReceived`](./OnLobbyInviteReceived.md) events. When the status of the invite listener changes, notifications will be provided via [`OnLobbyInviteListenerStatusChanged`](./OnLobbyInviteListenerStatusChanged.md) events.
 
@@ -65,8 +60,9 @@ Lobby invites and this invite listener are unrelated to and unaffected by platfo
 
 This method may only be called if the Lobby invite listener is not already enabled for the given entity.
 
-## See Also 2
+## See Also
 
+* class [PFEntityKey](../PFEntityKey.md)
 * class [PlayFabMultiplayer](../PlayFabMultiplayer.md)
 * namespace [PlayFab.Multiplayer](../../PlayFabMultiplayerSDK.md)
 
