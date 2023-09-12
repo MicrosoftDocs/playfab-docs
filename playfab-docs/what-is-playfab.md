@@ -166,7 +166,6 @@ SDKs are available for most popular engines and platforms.
 ### Frameworks
 
 * [Cocos2D](sdks/cocos2d-x/index.md)
-* [Phaser.io (JavaScript)](sdks/phaser/index.md)
 
 ### Game Engines
 
