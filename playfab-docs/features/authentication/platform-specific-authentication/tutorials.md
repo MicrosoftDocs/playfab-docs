@@ -25,7 +25,6 @@ These tutorials show you how to set up PlayFab authentication on specific platfo
 - [Setting up PlayFab authentication using Google Play Games Sign-In in Unity](google-sign-in-unity.md)
 - [Setting up PlayFab authentication using Kongregate and HTML5](kongregate-html5.md)
 - [Setting up PlayFab authentication using Kongregate and Unity](kongregate-unity.md)
-- [Setting up PlayFab authentication in Phaser.io](phaser-io.md)
 - [Setting up PlayFab authentication using Steam and Unity](steam-unity.md)
 - [Setting up PlayFab authentication using Twitch and HTML5](twitch-html5.md)
 - [Setting up PlayFab authentication using Universal Windows Platform](uwp.md)
