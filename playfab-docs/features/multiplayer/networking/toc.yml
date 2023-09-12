@@ -10,7 +10,7 @@
     href: party-samples.md
   - name: Enable Party in Game Manager
     href: enable-party.md
-  - name: Party SDK quickstart
+  - name: Quickstart
     href: quickstart.md
   - name: Party objects and their relationships
     href: concepts-objects.md
