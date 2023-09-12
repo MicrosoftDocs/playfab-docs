@@ -18,6 +18,13 @@ In this quickstart, critical pieces of functionality are highlighted via explana
 
 For a deeper understanding, consult the linked reference and conceptual documentation, and per-platform sample applications.
 
+## Prerequisites
+
+You need a PlayFab account, and you *must enable* the Party feature to start using Party. 
+
+1. Create/sign in to your [PlayFab account](https://playfab.com). For instructions, see [Quickstart: Game Manager](../../../gamemanager/quickstart.md).
+1. [Enable Party feature via Game Manager](enable-party.md) from your PlayFab account.
+
 ## Platform Prerequisites
 
 Before you start this quickstart, perform any necessary platform-specific setup as specified in the following topics:
@@ -30,15 +37,27 @@ Before you start this quickstart, perform any necessary platform-specific setup 
 
 3. [Linux prerequisites](linux-specific-requirements.md)
 
+4. [Quickstart for Unity](party-unity-plugin-quickstart.md)
+
+5. [Quickstart for Unreal](party-unreal-engine-oss-quickstart.md)
+
 When you finish the platform-specific steps, continue with the rest of the steps in this topic to set up PlayFab Party.
 
 > [!IMPORTANT]
 > Follow these steps to [Enable PlayFab Party](enable-party.md).
 
+## Download and set up Party SDK
+
+Like the PlayFab SDKs, we have Party SDKs for different platforms and game engines. Select and download the one that you need. For download links, see [Party SDKs](party-sdks.md).
+
+After installing the SDK, you might want to run a sample to see how Party works before you start writing code. For more information, see the [Run a sample](#run-a-sample) section.
+
+If you're using Party in Xbox and PC titles, we recommend that you use the [Party Xbox Live Helper Library](party-xbox-live-guide.md) to ensure consistent functionality and behavior. This library helps your title meet Xbox Live requirements. To learn more, see [Xbox requirements](xbox-requirements.md).
+
 ## Log in to your PlayFab title and obtain an entity token and entity ID
 
 To initialize and use Party, you must log in to PlayFab. You can use [PlayFabClientAPI::LoginWithCustomID](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid)
- or a platform-specific login method to do this.
+ or a platform-specific login method to do this. If you're using Xbox Live, you can also get this token from the [Party Xbox Live Helper Library](party-xbox-live-guide.md).
 
 Once you execute login, PlayFab returns an entity ID and entity token as part of the [LoginResult](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid#loginresult). These two key pieces of information are used to initialize a Local user instance for PlayFab Party.
 
@@ -579,3 +598,19 @@ For more platform-specific guidance for application, see:
 - Xbox and Xbox Live
     - [Xbox Requirements](xbox-requirements.md)
     - [Using MPSD](using-mpsd.md)
+ 
+ ## See also
+
+* [Party overview](index.md)
+* [Party features](party-features.md)
+* [Party SDKs](party-sdks.md)
+* [Party samples](party-samples.md)
+* [Multiplayer servers](../servers/index.md)
+* [Multiplayer](../mpintro.md)
+* [Matchmaking](../matchmaking/index.md)
+* [Party objects and their relationships](concepts-objects.md)
+* [Party chat basics](concepts-chat.md)
+* [Party invitations and the security model](concepts-invitations-security-model.md)
+* [Party interacts with your discovery flows](concepts-discovery.md)
+* [Party API reference documentation](reference/party_members.md)
+* Party UX guidelines for [Text-to-speech](party-text-to-speech-ux-guidelines.md) and [Speech-to-text](party-speech-to-text-ux-guidelines.md)
