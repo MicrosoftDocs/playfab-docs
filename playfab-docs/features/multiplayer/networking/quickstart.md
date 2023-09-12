@@ -1,5 +1,5 @@
 ---
-title: Party SDK quickstart
+title: Party Quickstart
 author: debhaldarMS
 description: Guide to help you integrate PlayFab Party SDK in your Game.
 ms.author: debh
@@ -10,19 +10,21 @@ keywords: playfab, multiplayer, party, networking, communication
 ms.localizationpriority: medium
 ---
 
-# Party SDK quickstart
+# Party Quickstart
 
-This quickstart is intended to be a high-level overview of PlayFab Party's core features. PlayFab Party was designed to be cross-platform from the ground up. We've structured these quickstarts in the same way, where most of the information applies to all platforms, and platform-specific prerequisites and steps are described in the linked documents.
-
-In this quickstart, critical pieces of functionality are highlighted via explanatory text and code snippets. However, this isn't a step-by-step walk-through.
+This quickstart is intended to describe PlayFab Party's core functionality via explanatory text and code snippets. PlayFab Party was designed to be cross-platform from the ground up. We've structured these quickstarts in the same way, where most of the information applies to all platforms, and platform-specific prerequisites and steps are described in the linked documents.
 
 For a deeper understanding, consult the linked reference and conceptual documentation, and per-platform sample applications.
+
+> [!NOTE]
+> This quickstart guide is intended to cover C++ SDK implementations of Party. If you'd prefer to use the Unity Plugin for Party, refer to the [Quickstart for Unity](party-unity-plugin-quickstart.md). If you'd prefer to use the PlayFab Online Subsystem for Unreal Engine, refer to the  [Quickstart for Unreal](party-unreal-engine-oss-quickstart.md). 
+
 
 ## Prerequisites
 
 You need a PlayFab account, and you *must enable* the Party feature to start using Party. 
 
-1. Create/sign in to your [PlayFab account](https://playfab.com). For instructions, see [Quickstart: Game Manager](../../../gamemanager/quickstart.md).
+1. Create or sign in to your [PlayFab account](https://playfab.com). For instructions, see [Quickstart: Game Manager](../../../gamemanager/quickstart.md).
 1. [Enable Party feature via Game Manager](enable-party.md) from your PlayFab account.
 
 ## Platform Prerequisites
@@ -37,20 +39,14 @@ Before you start this quickstart, perform any necessary platform-specific setup 
 
 3. [Linux prerequisites](linux-specific-requirements.md)
 
-4. [Quickstart for Unity](party-unity-plugin-quickstart.md)
-
-5. [Quickstart for Unreal](party-unreal-engine-oss-quickstart.md)
 
 When you finish the platform-specific steps, continue with the rest of the steps in this topic to set up PlayFab Party.
-
-> [!IMPORTANT]
-> Follow these steps to [Enable PlayFab Party](enable-party.md).
 
 ## Download and set up Party SDK
 
 Like the PlayFab SDKs, we have Party SDKs for different platforms and game engines. Select and download the one that you need. For download links, see [Party SDKs](party-sdks.md).
 
-After installing the SDK, you might want to run a sample to see how Party works before you start writing code. For more information, see the [Run a sample](#run-a-sample) section.
+After installing the SDK, you might want to run a sample to see how Party works before you start writing code. To download a sample, go to [Party samples](party-samples.md).
 
 If you're using Party in Xbox and PC titles, we recommend that you use the [Party Xbox Live Helper Library](party-xbox-live-guide.md) to ensure consistent functionality and behavior. This library helps your title meet Xbox Live requirements. To learn more, see [Xbox requirements](xbox-requirements.md).
 
