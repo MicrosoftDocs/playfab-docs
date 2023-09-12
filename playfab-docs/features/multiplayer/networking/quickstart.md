@@ -44,7 +44,7 @@ When you finish the platform-specific steps, continue with the rest of the steps
 
 ## Download and set up Party SDK
 
-Like the PlayFab SDKs, we have Party SDKs for different platforms and game engines. Select and download the one that you need. For download links, see [Party SDKs](party-sdks.md).
+There are Party SDKs for different platforms and game engines. Select and download the one that you need. For download links, see [Party SDKs](party-sdks.md).
 
 After installing the SDK, you might want to run a sample to see how Party works before you start writing code. To download a sample, go to [Party samples](party-samples.md).
 
@@ -80,7 +80,7 @@ After successfully obtaining the entity ID and entity token from PlayFab, you ca
 
 ## Initialize PlayFab Party
 
-Before continuing with this section, it's recommended to read the [PlayFab Party objects and their relationships](concepts-objects.md) document and code comments in the public [Party.h](https://github.com/PlayFab/PlayFabParty/blob/docs/include/Party.h) header. This provides a deeper understanding of the following operations.
+Before continuing with this section, we recommend reading about [PlayFab Party objects and their relationships](concepts-objects.md) and viewing the code comments in the public [Party.h](https://github.com/PlayFab/PlayFabParty/blob/docs/include/Party.h) header. This provides a deeper understanding of the following operations.
 
 At a high level, initializing Party involves the following steps:
 
@@ -230,12 +230,11 @@ At this point, you have the PlayFab Party initialized in your application or gam
 
 Refer to the `NetworkManager::Initialize()` code in [NetworkManager.cpp](https://github.com/PlayFab/PlayFabParty/blob/docs/android/PartySampleNetworkCommon/lib/NetworkManager.cpp) in the demo app for a complete sample.
 
- The next step is to Create and Connect to a Party Network.
+The next step is to create a Party Network and connect to it.
 
 ## Create a Party Network
 
-A Party Network is a secured collection of one or more devices and their authorized users that the game creates for the purpose of exchanging chat or data communication. This typically aligns with a game's multiplayer session or chat "lobby" concept. You can
-only send messages to players inside your own network.
+A Party Network is a secured collection of one or more devices and their authorized users that the game creates for the purpose of exchanging chat or data communication. This typically aligns with a game's multiplayer session or chat "lobby" concept. You can only send messages to players inside your own network.
 
 The following code snippet shows how we can create a Party Network.
 
@@ -257,15 +256,15 @@ The following code snippet shows how we can create a Party Network.
 ```
 
 Once the function call to `CreateNewNetwork()` succeeds, a network descriptor [PartyNetworkDescriptor](concepts-objects.md#network
-) object will be returned/populated. The descriptor contains the data required by other players to connect to a network.
+) object will be returned/populated. The descriptor contains the data required for other players to connect to a network.
 
 Refer to the [API Reference Documentation](reference/party_members.md) for information about the other function parameters.
 
 ## Connect to a Party network
 
-Once a Party network has been created, Invitations are used to control which users can join the network. Invitation information therefore needs to be shared with other users. For this, PlayFab Matchmaking, another matchmaking service, in-game invite services, or platform invite services can be used.
+Once a Party network has been created, invitations are used to control which users can join the network. Invitation information therefore needs to be shared with other users. For this, PlayFab Matchmaking, PlayFab Lobby, or platform invite services can be used.
 
-The simplest Invitation type is an open invitation that consists of a network descriptor and is used here. For detailed information of all Invitation types and the security model, refer to [Invitations and the security model](concepts-invitations-security-model.md).
+The simplest invitation type is an open invitation that consists of a network descriptor. For detailed information of all invitation types and the security model, refer to [Invitations and the security model](concepts-invitations-security-model.md).
 
 We implemented simple matchmaking using [PlayFab CloudScripts](../../automation/cloudscript/quickstart.md) in the demo samples, which work as follows:
 
@@ -582,28 +581,13 @@ After the network is reactivated, call [Initialize()](#initialize-playfab-party)
 > [!IMPORTANT]
 > If the reconnection is successfully completed, the party will now be able to communicate to others peers, but if the previous network no longer exists, the reconnecting will be failed. In this case, you should handle the appropriate connection error.
 
-## Conclusion
 
-In this quickstart, we walked through the key pieces of PlayFab Party and saw how to interact with them.
-
-We encourage you to take a look at the complete Reference and Conceptual documentation as well as samples for a deeper understanding of the systems.
-
-## Next steps
-
-For more platform-specific guidance for application, see:
-- Xbox and Xbox Live
-    - [Xbox Requirements](xbox-requirements.md)
-    - [Using MPSD](using-mpsd.md)
- 
  ## See also
 
-* [Party overview](index.md)
 * [Party features](party-features.md)
 * [Party SDKs](party-sdks.md)
 * [Party samples](party-samples.md)
-* [Multiplayer servers](../servers/index.md)
 * [Multiplayer](../mpintro.md)
-* [Matchmaking](../matchmaking/index.md)
 * [Party objects and their relationships](concepts-objects.md)
 * [Party chat basics](concepts-chat.md)
 * [Party invitations and the security model](concepts-invitations-security-model.md)
