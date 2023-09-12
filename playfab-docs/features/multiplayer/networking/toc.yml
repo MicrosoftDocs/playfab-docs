@@ -4,14 +4,12 @@
   href: party-features.md
 - name: Get started
   items:
-  - name: Get started
-    href: party-getting-started.md
+  - name: Quickstart
+    href: quickstart.md
   - name: Samples
     href: party-samples.md
   - name: Enable Party in Game Manager
     href: enable-party.md
-  - name: Quickstart
-    href: quickstart.md
   - name: Party objects and their relationships
     href: concepts-objects.md
 - name: Chat
