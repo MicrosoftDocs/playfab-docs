@@ -13,8 +13,7 @@ keywords: playfab, multiplayer, networking, unity, middleware
 
 To get started with the PlayFab Party Unity plugin, follow these steps to install the package and try out example code for a basic task.
 
-This quickstart helps you make your first API calls using the Party SDK for Unity. Before continuing, make sure you have completed [Getting started for developers](../../../personas/developer.md) and  
-[Enable Party feature via Game Manager](enable-party.md) from your PlayFab account.
+This quickstart helps you make your first API calls using the Party SDK for Unity. Before continuing, make sure you have completed [Getting started for developers](../../../personas/developer.md) and [Enable Party feature via Game Manager](enable-party.md) from your PlayFab account.
 
 > [!NOTE]
 >
