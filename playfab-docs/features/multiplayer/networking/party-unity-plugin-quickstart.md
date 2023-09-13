@@ -25,7 +25,7 @@ This quickstart helps you make your first API calls using the Party SDK for Unit
 
 - A [PlayFab developer account](https://developer.playfab.com/en-us/sign-up).
 - An installed copy of the Unity Editor. To install Unity for personal use via Unity Hub, or Unity+ for professional use, see [Download Unity](https://unity3d.com/get-unity/download). Check on Unity support in documentation of your specific platform if needed. The minimum supported Unity version is Unity 2017 LTS.
-- A Unity Project which can be any of the following:
+- A Unity Project, which can be any of the following options:
 
   - A brand new project: For more information, see [Starting Unity for the first time](/gaming/playfab/sdks/unity3d/quickstart).
   - A guided tutorial project. For more information, see [Getting Started with Unity](https://learn.unity.com/).
@@ -284,7 +284,7 @@ When your title is suspended, the network stack becomes invalidated and PlayFab 
 Special consideration is required to handle suspending and resuming execution of your title when using PlayFab Party.
 
 ### iOS
-On iOS, you must leave and re-connect to the PlayFab Party network which can be achieved by calling [ResetParty()](unity-party-api-reference/classes/playfabmultiplayermanager/methods/playfabunityresetparty.md)
+On iOS, you must leave and re-connect to the PlayFab Party network, which can be achieved by calling [ResetParty()](unity-party-api-reference/classes/playfabmultiplayermanager/methods/playfabunityresetparty.md)
 
 ### Switch and GDK
 On Nintendo Switch and Microsoft GDK, you must clean up PlayFab Party and all resources associated with PlayFabMultiplayerManager then wait until the title execution resumes before re-initializing PlayFab Party and reconnecting to your network.
