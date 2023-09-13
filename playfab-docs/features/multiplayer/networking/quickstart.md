@@ -53,11 +53,11 @@ If you're using Party in Xbox and PC titles, we recommend that you use the [Part
 ## Log in to your PlayFab title and obtain an entity token and entity ID
 
 To initialize and use Party, you must log in to PlayFab. You can use [PlayFabClientAPI::LoginWithCustomID](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid)
- or a platform-specific login method to do this. If you're using Xbox Live, you can also get this token from the [Party Xbox Live Helper Library](party-xbox-live-guide.md).
+ or a platform-specific login method. If you're using Xbox Live, you can also get this token from the [Party Xbox Live Helper Library](party-xbox-live-guide.md).
 
 Once you execute login, PlayFab returns an entity ID and entity token as part of the [LoginResult](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid#loginresult). These two key pieces of information are used to initialize a Local user instance for PlayFab Party.
 
-An example code snippet for logging in with a custom ID as implemented in `PlayFabManager.cpp` is shown below:
+An example for logging in with a custom ID as implemented in `PlayFabManager.cpp` is shown in this code snippet:
 
 ```cpp
 PlayFabClientAPI::LoginWithCustomID(
@@ -80,7 +80,7 @@ After successfully obtaining the entity ID and entity token from PlayFab, you ca
 
 ## Initialize PlayFab Party
 
-Before continuing with this section, we recommend reading about [PlayFab Party objects and their relationships](concepts-objects.md) and viewing the code comments in the public [Party.h](https://github.com/PlayFab/PlayFabParty/blob/docs/include/Party.h) header. This provides a deeper understanding of the following operations.
+Before continuing with this section, we recommend reading about [PlayFab Party objects and their relationships](concepts-objects.md) and viewing the code comments in the public [Party.h](https://github.com/PlayFab/PlayFabParty/blob/docs/include/Party.h) header for a deeper understanding of the following operations.
 
 At a high level, initializing Party involves the following steps:
 
@@ -234,7 +234,7 @@ The next step is to create a Party Network and connect to it.
 
 ## Create a Party Network
 
-A Party Network is a secured collection of one or more devices and their authorized users that the game creates for the purpose of exchanging chat or data communication. This typically aligns with a game's multiplayer session or chat "lobby" concept. You can only send messages to players inside your own network.
+A Party Network is a secured collection of one or more devices and their authorized users that the game creates to exchange chat or data communication. A Party Network typically aligns with a game's multiplayer session or chat "lobby" concept. You can only send messages to players inside your own network.
 
 The following code snippet shows how we can create a Party Network.
 
@@ -256,13 +256,13 @@ The following code snippet shows how we can create a Party Network.
 ```
 
 Once the function call to `CreateNewNetwork()` succeeds, a network descriptor [PartyNetworkDescriptor](concepts-objects.md#network
-) object will be returned/populated. The descriptor contains the data required for other players to connect to a network.
+) object is returned/populated. The descriptor contains the data required for other players to connect to a network.
 
 Refer to the [API Reference Documentation](reference/party_members.md) for information about the other function parameters.
 
 ## Connect to a Party network
 
-Once a Party network has been created, invitations are used to control which users can join the network. Invitation information therefore needs to be shared with other users. For this, PlayFab Matchmaking, PlayFab Lobby, or platform invite services can be used.
+Once a Party network has been created, invitations are used to control which users can join the network. PlayFab Matchmaking, PlayFab Lobby, platform invites, or custom game services can be used to share connection details with other players.
 
 The simplest invitation type is an open invitation that consists of a network descriptor. For detailed information of all invitation types and the security model, refer to [Invitations and the security model](concepts-invitations-security-model.md).
 
@@ -485,7 +485,7 @@ Once you've connected to the Party Network, you can send a message using the loc
 The final step is receiving messages sent by remote Party members and rendering (playing) them on your device. 
 
 > [!IMPORTANT]
-> While creating the chat control in one of the previous steps, you've already set up the audio input and output devices which will be used by Party to send, receive and render audio data. To receive the audio messages, you'll also need to set the appropriate chat permission between each chat control if you want audio to flow. By default, the chat permissions are set to NONE. For more information, see the [Chat Permissions](concepts-chat-permissions-and-muting.md) article.
+> While creating the chat control in one of the previous steps, you've already set up the audio input and output devices which is used by Party to send, receive and render audio data. To receive the audio messages, you'll also need to set the appropriate chat permission between each chat control if you want audio to flow. By default, the chat permissions are set to NONE. For more information, see the [Chat Permissions](concepts-chat-permissions-and-muting.md) article.
 
 The processing of other messages from the Party layer is best accomplished in a dedicated update thread or a high-frequency game loop. The game loop should be set up to run every frame and receive messages from the Party Manager via the StartProcessingStateChanges() function.
 
@@ -494,7 +494,7 @@ For a complete description of all the state changes, refer to the [Party Referen
 
 ## Handling title suspension
 Some platforms support temporarily suspending execution of your title: iOS, Switch, and GDK.
-When your title is suspended, the network stack becomes invalidated and PlayFab Party will be unable to maintain a connection to the PlayFab Party network.
+When your title is suspended, the network stack becomes invalidated and PlayFab Party is unable to maintain a connection to the PlayFab Party network.
 Special consideration is required to handle suspending and resuming execution of your title when using PlayFab Party.
 
 ### iOS
@@ -503,7 +503,7 @@ On iOS, you must leave and reconnect to the PlayFab Party network
 To leave Party network, call [LeaveNetwork()](https://github.com/PlayFab/PlayFabParty/blob/docs/android/PartySampleNetworkCommon/lib/NetworkManager.cpp#L505). After the network is reactivated, call [ConnectToNetwork()](#connect-to-a-party-network) with previous Party network descriptor.
 
 ### Switch and GDK
-On Nintendo Switch and Microsoft GDK, you must cleanup PlayFab Party and wait until the title execution resumes before reinitializing PlayFab Party and reconnecting to your network.
+On Nintendo Switch and Microsoft GDK, you must clean up PlayFab Party and wait until the title execution resumes before reinitializing PlayFab Party and reconnecting to your network.
 
 To shut down the Party, call [Cleanup()](https://github.com/PlayFab/PlayFabParty/blob/docs/android/PartySampleNetworkCommon/lib/NetworkManager.cpp#L198). 
 > [!IMPORTANT]
