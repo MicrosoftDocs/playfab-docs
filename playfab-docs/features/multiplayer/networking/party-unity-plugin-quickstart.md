@@ -11,7 +11,7 @@ keywords: playfab, multiplayer, networking, unity, middleware
 
 # Quickstart: PlayFab Party Unity Plugin
 
-Get started with the PlayFab Party Unity plugin. Follow steps below to install the package and try out example code for a basic task.
+To get started with the PlayFab Party Unity plugin, follow these steps to install the package and try out example code for a basic task.
 
 This quickstart helps you make your first API calls using the Party SDK for Unity. Before continuing, make sure you have completed [Getting started for developers](../../../personas/developer.md) and  
 [Enable Party feature via Game Manager](enable-party.md) from your PlayFab account.
@@ -25,7 +25,7 @@ This quickstart helps you make your first API calls using the Party SDK for Unit
 
 - A [PlayFab developer account](https://developer.playfab.com/en-us/sign-up).
 - An installed copy of the Unity Editor. To install Unity for personal use via Unity Hub, or Unity+ for professional use, see [Download Unity](https://unity3d.com/get-unity/download). Check on Unity support in documentation of your specific platform if needed. The minimum supported Unity version is Unity 2017 LTS.
-- A Unity Project – this can be any of the following:
+- A Unity Project which can be any of the following:
 
   - A brand new project: For more information, see [Starting Unity for the first time](/gaming/playfab/sdks/unity3d/quickstart).
   - A guided tutorial project. For more information, see [Getting Started with Unity](https://learn.unity.com/).
@@ -38,7 +38,7 @@ This quickstart helps you make your first API calls using the Party SDK for Unit
 Following the steps to download and install the PlayFab Party Unity plugin.
 
 1. Download the PlayFab [Party Unity Plugin](https://github.com/playfab/PlayFabPartyUnity) Asset Package (use a distribution point depending on your platform).
-1. **Important!** Please see information in [README file](https://github.com/PlayFab/PlayFabPartyUnity/blob/master/README.md) published with plugin. It is tailored to each particular version and may include important instructions specific to your platform.
+1. **Important!** See information in [README file](https://github.com/PlayFab/PlayFabPartyUnity/blob/master/README.md) published with plugin. It is tailored to each particular version and may include important instructions specific to your platform.
 1. Open your Unity Project.
 1. Navigate to the location where you saved the .unitypackage and double-click it to open the import dialog.
 1. To import the PlayFab Party Unity Plugin into your project, select  **Import**.
@@ -49,7 +49,7 @@ This part of the guide shows you how to add the `PlayFabMultiplayerManager` to y
 Before you can create a network, you **must have a PlayFab player logged in**. For information about logging in a player, see [Making your first API call in Quickstart: PlayFab Client library for C# in Unity](../../../sdks/unity3d/quickstart.md#making-your-first-api-call).
 
 1. In the Unity editor, in the Project window, navigate to  **Assets > PlayFabPartySDK > Prefabs**.
-1. From the Prefabs folder, drag and drop the  **PlayFabMultiplayerManager**  into your scene in the **Hierachy** window.
+1. From the Prefabs folder, drag and drop the  **PlayFabMultiplayerManager**  into your scene in the **Hierarchy** window.
 1. Create an empty Game Object in your scene called "HelloPartyLogic".
 1. Select the HelloPartyLogic Game Object to open the **Inspector**.
 1. Select  **Add Component**.
@@ -145,7 +145,7 @@ This part of the guide shows you how to join an existing network that another cl
     PlayFabMultiplayerManager.Get().OnNetworkJoined += OnNetworkJoined;
     ```
 
-3. To define the OnNetworkJoined event handler, add the following code to the class:.
+3. To define the OnNetworkJoined event handler, add the following code to the class:
 
     ```csharp
         private void OnNetworkJoined(object sender, string networkId)
@@ -155,7 +155,7 @@ This part of the guide shows you how to join an existing network that another cl
         }
     ```
 
-    There are many ways to get the Network ID from the host to other players who want to join. Please refer to the sample in this Unity plugin for an example of how to do that.
+    There are many ways to get the Network ID from the host to other players who want to join. Refer to the sample in this Unity plugin for an example of how to do that.
 
 4. Save and select Play in the Unity Editor. The string "Network joined!" displays in the Console window.
 
@@ -223,7 +223,7 @@ This part of the guide shows you how to send and receive data messages. Before y
 
 Save HelloPartyLogic.cs and select Play in the Unity Editor.
 
-1. In a second client, use the code shown above in Connect to a network to create and join a network.
+1. In a second client, repeat the steps from [Connecting to a network](#connecting-to-a-network) to create and join a network.
 1. Copy the Network ID returned to your first client and connect to the network.
 1. Click on the scene to send a message. "Hello (data message)" displays in the Console window.
 
@@ -250,7 +250,7 @@ Before you can start sending and receiving chat messages, you must join a networ
 
 Save HelloPartyLogic.cs and press Play in the Unity Editor.
 
-1. In a second client, use the code shown above in Connect to a network to create and join a network.
+1. In a second client, repeat the steps from [Connecting to a network](#connecting-to-a-network) to create and join a network.
 1. Copy the Network ID returned to your first client and connect to the network.
 1. When you click on your scene, it sends a message and which displays in the Console window.
 1. If you want to give your players the option to mute other players, set the IsMuted property to true.
@@ -266,7 +266,7 @@ Save HelloPartyLogic.cs and press Play in the Unity Editor.
 ## Connecting to a network with custom peer connectivity configuration options
 
 This part of the guide shows you how to Create and Join a network with custom peer connectity configuration options. The default
-option is P2P, however, using any combination of the flags presented here: [DirectPeerConnectivityOptions](unity-party-api-reference/enums/partyunitydirectpeerconnectivityoptions.md), the user can modify this option. The example below shows how P2P is set.
+option is P2P, however, using any combination of the flags presented here: [DirectPeerConnectivityOptions](unity-party-api-reference/enums/partyunitydirectpeerconnectivityoptions.md), the user can modify this option. This example shows how P2P is set:
 
 1. Open the HelloPartyLogic.cs  script. In the `OnLoginSuccess` method, add the following code to create and join a network:
 
@@ -278,17 +278,17 @@ option is P2P, however, using any combination of the flags presented here: [Dire
     PlayFabMultiplayerManager.Get().OnNetworkJoined += OnNetworkJoined;
     ```
 
-## Handling title suspsension
+## Handling title suspension
 Some platforms support temporarily suspending execution of your title: iOS, Switch, and GDK.
-When your title is suspended, the network stack becomes invalidated and PlayFab Party will be unable to maintain a connection to the PlayFab Party network.
+When your title is suspended, the network stack becomes invalidated and PlayFab Party is unable to maintain a connection to the PlayFab Party network.
 Special consideration is required to handle suspending and resuming execution of your title when using PlayFab Party.
 
 ### iOS
-On iOS, you must leave and re-connect to the PlayFab Party network. That can be achieved by calling [ResetParty()](unity-party-api-reference/classes/playfabmultiplayermanager/methods/playfabunityresetparty.md)
+On iOS, you must leave and re-connect to the PlayFab Party network which can be achieved by calling [ResetParty()](unity-party-api-reference/classes/playfabmultiplayermanager/methods/playfabunityresetparty.md)
 
 ### Switch and GDK
-On Nintendo Switch and Microsoft GDK, you must cleanup PlayFab Party and all resources associated with PlayFabMultiplayerManager and wait until the title execution resumes before re-initializing PlayFab Party and reconnecting to your network.
+On Nintendo Switch and Microsoft GDK, you must clean up PlayFab Party and all resources associated with PlayFabMultiplayerManager then wait until the title execution resumes before re-initializing PlayFab Party and reconnecting to your network.
 
-"To cleanup PlayFab Party during a title suspension call [Suspend()](unity-party-api-reference/classes/playfabmultiplayermanager/methods/playfabunitysuspend.md). Once the title has resumed execution call [Resume()](unity-party-api-reference/classes/playfabmultiplayermanager/methods/playfabunityresume.md) to reinitialize PlayFab Party.
+"To clean up PlayFab Party during a title suspension call [Suspend()](unity-party-api-reference/classes/playfabmultiplayermanager/methods/playfabunitysuspend.md). Once the title has resumed execution call [Resume()](unity-party-api-reference/classes/playfabmultiplayermanager/methods/playfabunityresume.md) to reinitialize PlayFab Party.
 
-Once PlayFab Party and all resources associated with PlayFabMultiplayerManager are successfully initialized, follow the steps outlined above to join a previous PlayFab Party Network again.
+Once PlayFab Party and all resources associated with PlayFabMultiplayerManager are successfully initialized, repeat the steps to [Join an existing network](#joining-an-existing-network).
