@@ -32,4 +32,4 @@ Access to samples for Nintendo Switch, PlayStation&#174;4, PlayStation&#174;5, P
 
 * [Party SDKs](party-sdks.md)
 * [Party overview](index.md)
-* [Getting started with Party](party-getting-started.md)
+* [Party Quickstart](quickstart.md)
