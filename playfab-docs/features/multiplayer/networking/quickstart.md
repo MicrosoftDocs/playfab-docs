@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Party Quickstart
 
-This quickstart is intended to describe PlayFab Party's core functionality via explanatory text and code snippets. PlayFab Party was designed to be cross-platform from the ground up. We've structured these quickstarts in the same way, where most of the information applies to all platforms, and platform-specific prerequisites and steps are described in the linked documents.
+This quickstart describes PlayFab Party's core functionality alongside code snippets. PlayFab Party is designed to be cross-platform from the ground up. We've structured these quickstarts in the same way, where most of the information applies to all platforms, and platform-specific prerequisites and steps are described in the linked documents.
 
 For a deeper understanding, consult the linked reference and conceptual documentation, and per-platform sample applications.
 
