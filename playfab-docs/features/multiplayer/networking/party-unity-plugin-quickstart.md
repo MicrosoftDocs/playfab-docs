@@ -37,7 +37,7 @@ This quickstart helps you make your first API calls using the Party SDK for Unit
 Following the steps to download and install the PlayFab Party Unity plugin.
 
 1. Download the PlayFab [Party Unity Plugin](https://github.com/playfab/PlayFabPartyUnity) Asset Package (use a distribution point depending on your platform).
-1. **Important!** See information in [README file](https://github.com/PlayFab/PlayFabPartyUnity/blob/master/README.md) published with plugin. It is tailored to each particular version and may include important instructions specific to your platform.
+1. **Important!** See information in the [README file](https://github.com/PlayFab/PlayFabPartyUnity/blob/master/README.md) published with plugin. It is tailored to each particular version and may include important instructions specific to your platform.
 1. Open your Unity Project.
 1. Navigate to the location where you saved the .unitypackage and double-click it to open the import dialog.
 1. To import the PlayFab Party Unity Plugin into your project, select  **Import**.
