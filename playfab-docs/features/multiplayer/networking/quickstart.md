@@ -17,7 +17,9 @@ This quickstart describes PlayFab Party's core functionality alongside code snip
 For a deeper understanding, consult the linked reference and conceptual documentation, and per-platform sample applications.
 
 > [!NOTE]
-> This quickstart guide is intended to cover C++ SDK implementations of Party. If you'd prefer to use the Unity Plugin for Party, refer to the [Quickstart for Unity](party-unity-plugin-quickstart.md). If you'd prefer to use the PlayFab Online Subsystem for Unreal Engine, refer to the  [Quickstart for Unreal](party-unreal-engine-oss-quickstart.md). 
+> This quickstart guide covers use of the C++ Party SDK 
+> * For Unity users, refer to the [Quickstart for Unity](party-unity-plugin-quickstart.md)
+> * For Unreal Engine users who want to use the PlayFab Online Subsystem for Unreal Engine, refer to the [Quickstart for Unreal](party-unreal-engine-oss-quickstart.md). 
 
 
 ## Prerequisites
