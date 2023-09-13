@@ -41,7 +41,6 @@ Before you start this quickstart, perform any necessary platform-specific setup 
 
 3. [Linux prerequisites](linux-specific-requirements.md)
 
-
 When you finish the platform-specific steps, continue with the rest of the steps in this topic to set up PlayFab Party.
 
 ## Download and set up Party SDK
@@ -55,7 +54,7 @@ If you're using Party in Xbox and PC titles, we recommend that you use the [Part
 ## Log in to your PlayFab title and obtain an entity token and entity ID
 
 To initialize and use Party, you must log in to PlayFab. You can use [PlayFabClientAPI::LoginWithCustomID](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid)
- or a platform-specific login method. If you're using Xbox Live, you can also get this token from the [Party Xbox Live Helper Library](party-xbox-live-guide.md).
+ or a platform-specific login method.
 
 Once you execute login, PlayFab returns an entity ID and entity token as part of the [LoginResult](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid#loginresult). These two key pieces of information are used to initialize a Local user instance for PlayFab Party.
 
@@ -80,9 +79,10 @@ PlayFabClientAPI::LoginWithCustomID(
 
 After successfully obtaining the entity ID and entity token from PlayFab, you can proceed with enabling and then initializing Party.
 
-## Initialize PlayFab Party
+> [!NOTE]
+> If you're using Xbox Live, you can also get use the [Party Xbox Live Helper Library](party-xbox-live-guide.md) to login. 
 
-Before continuing with this section, we recommend reading about [PlayFab Party objects and their relationships](concepts-objects.md) and viewing the code comments in the public [Party.h](https://github.com/PlayFab/PlayFabParty/blob/docs/include/Party.h) header for a deeper understanding of the following operations.
+## Initialize PlayFab Party
 
 At a high level, initializing Party involves the following steps:
 
@@ -480,7 +480,7 @@ Once you've connected to the Party Network, you can send a message using the loc
     }
 ```
 
- The full code is available in [NetworkManager.cpp](https://github.com/PlayFab/PlayFabParty/blob/docs/android/PartySampleNetworkCommon/lib/NetworkManager.cpp).
+The full code is available in [NetworkManager.cpp](https://github.com/PlayFab/PlayFabParty/blob/docs/android/PartySampleNetworkCommon/lib/NetworkManager.cpp).
 
 ## Receive a message and render it on the local device
 
@@ -583,8 +583,13 @@ After the network is reactivated, call [Initialize()](#initialize-playfab-party)
 > [!IMPORTANT]
 > If the reconnection is successfully completed, the party will now be able to communicate to others peers, but if the previous network no longer exists, the reconnecting will be failed. In this case, you should handle the appropriate connection error.
 
+## Next Steps
 
- ## See also
+Read more about [PlayFab Party objects and their relationships](concepts-objects.md) and consult the [Party API reference documentation](reference/party_members.md) so that your game can get the most out of these capabilities. 
+
+For more Xbox-specific guidance, refer to the [Xbox Requirements](xbox-requirements.md) early and often. 
+
+## See also
 
 * [Party features](party-features.md)
 * [Party SDKs](party-sdks.md)
