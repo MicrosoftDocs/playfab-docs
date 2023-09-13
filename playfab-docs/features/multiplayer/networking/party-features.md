@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 This topic provides details about Azure PlayFab Party features and how you can use them in your game.
 
-For a high-level summary of Party features, see [Party overview](index.md). If you're ready to start developing, see the [Party Quickstart](quickstart.md).
+For a high-level summary of Party features, see the [Party overview](index.md). If you're ready to start developing, see the [Party Quickstart](quickstart.md).
 
 ## Interoperable multiplayer infrastructure
 
