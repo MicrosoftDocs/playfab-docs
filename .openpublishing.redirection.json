@@ -421,8 +421,13 @@
             "redirect_document_id": false
         },
         {
-            "source_path": "playfab-docs/features/multiplayer/networking/party-getting-started.md ",
-            "redirect_url": "playfab-docs/features/multiplayer/networking/quickstart.md ",
+            "source_path": "playfab-docs/features/multiplayer/networking/party-getting-started.md",
+            "redirect_url": "playfab-docs/features/multiplayer/networking/quickstart.md",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/multiplayer/networking/pricing.md",
+            "redirect_url": "playfab-docs/features/pricing/meters/meters.md ",
             "redirect_document_id": false
         }
     ]
