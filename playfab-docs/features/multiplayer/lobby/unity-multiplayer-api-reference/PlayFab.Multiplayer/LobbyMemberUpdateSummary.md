@@ -16,13 +16,13 @@ A collection of hints about an update which has been successfully applied to the
 public class LobbyMemberUpdateSummary
 ```
 
-## Properties
+## Public Members
 
 | name | description |
 | --- | --- |
-| [ConnectionStatusUpdated](LobbyMemberUpdateSummary/ConnectionStatusUpdated.md) | A flag indicating whether the member's connection status has updated. |
-| [Member](LobbyMemberUpdateSummary/Member.md) | The member which performed the update |
-| [UpdatedMemberPropertyKeys](LobbyMemberUpdateSummary/UpdatedMemberPropertyKeys.md) | The member properties which have been updated for `member`. |
+| [ConnectionStatusUpdated](LobbyMemberUpdateSummary/ConnectionStatusUpdated.md) { get; } | A flag indicating whether the member's connection status has updated. |
+| [Member](LobbyMemberUpdateSummary/Member.md) { get; } | The member which performed the update |
+| [UpdatedMemberPropertyKeys](LobbyMemberUpdateSummary/UpdatedMemberPropertyKeys.md) { get; } | The member properties which have been updated for `member`. |
 
 ## See Also
 

@@ -5,24 +5,24 @@ description: Describes how to set the default language for a title and for playe
 ms.author: joanlee
 ms.date: 02/28/2019
 ms.topic: article
-ms.prod: gaming
 keywords: playfab, title, players, language, localization
 ms.localizationpriority: medium
+ms.service: playfab
 ---
 
 # Setting default languages
 
-PlayFab is introducing support for storing localized strings on behalf of game developers. In addition, we are adding the necessary logic to provide your players with the correct strings for the language they prefer.
+PlayFab is introducing support for storing localized strings on behalf of game developers. In addition, we're adding the necessary logic to provide your players with the correct strings for the language they prefer.
 
-To accomplish this, we will be leveraging two new language settings: one is associated with your title, and the other is stored on each of your players' entity profiles:
+To accomplish this, we'll be leveraging two new language settings: one is associated with your title, and the other is stored on each of your players' entity profiles:
 
-1. **Title default language**: Indicates your title's primary supported language. Once set, we will require your title to support this language to be used at least for features using localized strings.
+1. **Title default language**: Indicates your title's primary supported language. Once set, we'll require your title to support this language to be used at least for features using localized strings.
 2. **Player language**: Indicates the player's preferred language. This can be set on a per-title basis.
 
-Using these two settings, PlayFab logic will match up localized strings with the players who prefer that language. Players without a language preference will receive strings in your title's specified default language.
+Using these two settings, PlayFab logic matches up localized strings with the players who prefer that language. Players without a language preference receive strings in your title's specified default language.
 
 > [!NOTE]
-> Players with a preference for a language that your title *doesn't* support will *also* receive strings, based on your title's default language.
+> Players with a preference for a language that your title *doesn't* support *also* receive strings, based on your title's default language.
 
 This tutorial walks you through how to set the default language of your title and the preferred language of your players.
 
@@ -32,9 +32,9 @@ This tutorial assumes you have the following working knowledge about using PlayF
 
 - A basic knowledge of how to create a player. This is necessary, because players must *already exist* with a username and password before calling preferred language logic. Refer to [Getting started for developers](../../../personas/developer.md) for information on creating a player for the title.
 
-- That you have read the [Game Manager quickstart](../../../gamemanager/quickstart.md) if you were unfamiliar with the Game Manager, as it is the place where language information is viewed.
+- That you have read the [Game Manager quickstart](../../../gamemanager/quickstart.md). If you're unfamiliar with the Game Manager, this is the place where language information is viewed.
 
-- That you have knowledge of how to work with player profiles, as it will be necessary to confirm that a preferred language has been added to a player's profile.
+- That you have knowledge of how to work with player profiles, as it's necessary to confirm that a preferred language has been added to a player's profile.
 
 - Please take a moment to review the information provided on how to get a player's profile in the [Getting player profiles](../../data/playerdata/getting-player-profiles.md) tutorial.
 
@@ -55,7 +55,7 @@ PlayFab allows you to choose from a specific list of languages to support. You c
 > [!NOTE]
 > When using the `SetProfileLanguage` API, the language string must be specified in the ISO 639-1 format (for example, "en", "es", or "ja"). At the current time, the code "zh" is not supported.
 
-First, we will update a player's profile to include the language in which they would prefer to get content from your title.
+First, we'll update a player's profile to include the language in which they would prefer to get content from your title.
 
 ### C# Code Example
 
@@ -83,17 +83,17 @@ void FailureCallback(PlayFabError error)
 
 ### Step 2 – See that the language was updated
 
-Go to the player's overview. In Game Manager, go to **Player** -> **Overview**, and see that their contact info section is updated with their preferred language.
+Go to the player's overview. In Game Manager, go to **Player** > **Overview**. Check that their contact info section is updated with their preferred language.
 
 The language can also be updated with the **Language** dropdown menu displayed in the following image.
 
 ![Game Manager - Player - Overview - Contact email - Language](../media/tutorials/game-manager-player-overview-contact-email-language.png)
 
-Next, you can navigate to the player's **PlayStream**, and it will show an **Entity language updated** event.
+Next, navigate to the player's **PlayStream**, and it'll show an **Entity language updated** event.
 
 ![Game Manager - Players - PlayStream - Entity Language Updated event](../media/tutorials/game-manager-players-playstream-entity-language-updated-event.png)
 
-Selecting the info icon on the event should show JSON similar the example shown below.
+Select the info icon on the event and see a JSON similar to the example one below.
 
 ```json
 {
@@ -123,7 +123,7 @@ Selecting the info icon on the event should show JSON similar the example shown 
 
 ## Section 2 – Set a title default language
 
-The next thing we will do is set a default language for your title. All localization features will now associate a language with every translated version of the content.
+Next, set a default language for your title. All localization features now associate a language with every translated version of the content.
 
 The title requires a default language. This ensures that if any player's preferred language isn't set or supported, the player can still receive the default version of the content.
 
@@ -131,15 +131,15 @@ To begin, select **Settings** in the menu to the left, as shown below.
 
 ![Game Manager - Settings - General - Default language](../media/tutorials/game-manager-settings-general-default-language.png)
 
-In the **General** tab under the new **TITLE DEFAULTS** header, you will see the **Default language** dropdown. You must set a default language before you can use any of the add localization features.
+In the **General** tab under the new **TITLE DEFAULTS** header, locate the **Default language** dropdown. You must set a default language before you can use any of the add localization features.
 
-When you are done, select the **SAVE** button, and message will appear stating that your update was successful.
+When you are done, select the **SAVE** button. A message notification appears if the update was successful.
 
-If you return to the dashboard, you will see a **Title API settings changed** event in your **PlayStream** event list, as shown below.
+When you return to the dashboard, you'll see a **Title API settings changed** event in your **PlayStream** event list, as shown below.
 
 ![PlayStream - Title API Setting Changed](../media/tutorials/playstream-title-api-settings-changed.png)
 
-Selecting the **info icon** on the event should display JSON similar to the example provided below.
+Select the info icon on the event and see a JSON similar to the example one below.
 
 ```json
 {
@@ -167,18 +167,18 @@ Selecting the **info icon** on the event should display JSON similar to the exam
 
 ## Section 3 – Updating a title default language
 
-It is important to remember that setting a default for your title tells PlayFab to use that language when you issue communications to players who *don't* have a preferred language set or who have chosen a language which doesn't match one you support.
+It's important to remember that setting a default for your title tells PlayFab to use that language when you issue communications to players who *don't* have a preferred language set or who have chosen a language which doesn't match one you support.
 
-Because the title's default is used as a *fallback* language, PlayFab will expect that all your communications support your default language.
+Because the title's default is used as a *fallback* language, PlayFab expects that all your communications to support your default language.
 
 > [!NOTE]
-> You can *always* change your title default, but PlayFab will require that your current communications templates support the language you're changing to.
+> You can *always* change your title default, but PlayFab requires that your current communications templates support the language you're changing to.
   
 If you update your title's default language, you'll see that the interface now shows an **Edit** link.
 
 ![Title Defaults - Default Language](../media/tutorials/title-defaults-default-language.png)
 
-Following this link, you will see the same drop-down as before. However, if you try to save a default language that isn't fully supported by your email templates, you will see one or more error messages like the one shown below.
+Following this link, you'll see the same drop-down as before. However, if you try to save a default language that isn't fully supported by your email templates, you'll see one or more error messages like the one shown below.
 
 ![Game manager - General - Edit Default Language](../media/tutorials/game-manager-general-edit-default-language.png)
 

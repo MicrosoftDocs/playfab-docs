@@ -10,7 +10,7 @@ ms.date: 08/02/2023
 
 # LobbyConstants.LobbyAmMemberSearchKey field
 
-A special, predefined search key, which can be used in the [`LobbySearchConfiguration`](../LobbySearchConfiguration.md) filtering string to search for lobbies that you're currently a member of.
+A special, predefined search key, which can be used in the [`FilterString`](../LobbySearchConfiguration/FilterString.md) filtering string to search for lobbies that you're currently a member of.
 
 ```csharp
 public static readonly string LobbyAmMemberSearchKey;

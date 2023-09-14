@@ -22,7 +22,7 @@ Initialize() cannot be called again without a subsequent [`Uninitialize`](./Unin
 
 Every call to Initialize() should have a corresponding Uninitialize() call.
 
-The playFabTitleId is read from PlayFab's static PlayFabSettings asset. It can be changed Using Unity menu, PlayFab &#x7C; MakePlayFabSharedSettings menu. It must be the same PlayFab Title ID used to acquire the PlayFab Entity Keys and Entity Tokens that will be passed to !:PlayFabMultiplayer.SetEntityToken().
+The playFabTitleId is read from PlayFab's static PlayFabSettings asset. It can be changed Using Unity menu, PlayFab &#x7C; MakePlayFabSharedSettings menu. It must be the same PlayFab Title ID used to acquire the PlayFab Entity Keys and Entity Tokens that will be passed to [`SetEntityToken`](./SetEntityToken.md).
 
 ## See Also
 

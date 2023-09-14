@@ -10,7 +10,7 @@ ms.date: 11/23/2021
 
 # PlayFabMultiplayer.OnLobbyCreateAndJoinCompletedHandler delegate
 
-Handler for when the operation started by a previous call to !:PlayFabMultiplayer.CreateAndJoinLobby() completed.
+Handler for when the operation started by a previous call to [`CreateAndJoinLobby`](./PlayFabMultiplayer/CreateAndJoinLobby.md) completed.
 
 ```csharp
 public delegate void OnLobbyCreateAndJoinCompletedHandler(Lobby lobby, int result);

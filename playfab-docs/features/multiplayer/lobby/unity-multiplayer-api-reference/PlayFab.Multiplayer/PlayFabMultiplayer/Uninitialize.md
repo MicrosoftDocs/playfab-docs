@@ -18,7 +18,7 @@ public static void Uninitialize()
 
 ## Remarks
 
-If local users were participating in a Lobby, they are removed (it appears to remote lobby clients as if network connectivity to these users has been lost), so best practice is to call !:Lobby.Leave() on all lobbies and wait for the corresponding [`OnLobbyLeaveCompleted`](./OnLobbyLeaveCompleted.md) event to have the local users exit any existing lobbies.
+If local users were participating in a Lobby, they are removed (it appears to remote lobby clients as if network connectivity to these users has been lost), so best practice is to call [`Leave`](../Lobby/Leave.md) on all lobbies and wait for the corresponding [`OnLobbyLeaveCompleted`](./OnLobbyLeaveCompleted.md) event to have the local users exit any existing lobbies.
 
 This method is not thread-safe and may not be called concurrently with other Multiplayer library methods. After calling this method, all Multiplayer library state is invalidated.
 

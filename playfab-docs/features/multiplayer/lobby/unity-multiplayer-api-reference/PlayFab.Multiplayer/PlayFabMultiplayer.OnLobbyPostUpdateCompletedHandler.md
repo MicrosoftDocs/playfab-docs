@@ -10,7 +10,7 @@ ms.date: 11/23/2021
 
 # PlayFabMultiplayer.OnLobbyPostUpdateCompletedHandler delegate
 
-Handler for when the operation started by a previous call to !:Lobby.PostUpdate() completed.
+Handler for when the operation started by a previous call to [`PostUpdate`](./Lobby/PostUpdate.md) completed.
 
 ```csharp
 public delegate void OnLobbyPostUpdateCompletedHandler(Lobby lobby, PFEntityKey localUser, 

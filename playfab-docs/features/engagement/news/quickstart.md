@@ -1,13 +1,13 @@
 ---
 title: Title News quickstart
-author: joannaleecy
+author: antnguyen
 description: What Title News is and how to create it.
-ms.author: joanlee
-ms.date: 11/01/2018
+ms.author: antnguyen
+ms.date: 09/05/2023
 ms.topic: article
-ms.prod: gaming
 keywords: playfab
 ms.localizationpriority: medium
+ms.service: playfab
 ---
 
 # Title News quickstart
@@ -95,12 +95,15 @@ The `GetTitleNews` method makes reading the title news very easy. The method ret
 - Calling [GetTitleNews](xref:titleid.playfabapi.com.server.title-widedatamanagement.gettitlenews) from the server API will return the news entries in the title default language.
 
 ```csharp
+// Using the Client API method
 void ReadTitleNews() {
     PlayFabClientAPI.GetTitleNews(new GetTitleNewsRequest(), result => {
         Debug.Log("Got latest news!");
         // Process news using result.News
     }, error => Debug.LogError(error.GenerateErrorReport()));
 }
+
+// Using the Server API method
 void ReadTitleNews() {
     PlayFabServerAPI.GetTitleNews(new GetTitleNewsRequest(), result => {
         Debug.Log("Got latest news!");

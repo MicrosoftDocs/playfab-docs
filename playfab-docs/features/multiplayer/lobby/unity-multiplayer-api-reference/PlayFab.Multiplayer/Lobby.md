@@ -1,11 +1,11 @@
 ---
-author: vicodex
+author: nassosterz-ms
 title: Lobby
 description: Lobby members
-ms.author: victorku
+ms.author: aterzakis
 ms.topic: reference
 ms.service: playfab
-ms.date: 11/23/2021
+ms.date: 08/23/2023
 ---
 
 # Class Lobby
@@ -14,33 +14,30 @@ ms.date: 11/23/2021
 public class Lobby
 ```
 
-## Properties
+## Public Members
 
 | name | description |
 | --- | --- |
-| [AccessPolicy](Lobby/AccessPolicy.md) |  |
-| [ConnectionString](Lobby/ConnectionString.md) |  |
-| [Id](Lobby/Id.md) |  |
-| [MaxMemberCount](Lobby/MaxMemberCount.md) |  |
-| [MembershipLock](Lobby/MembershipLock.md) |  |
-| [OwnerMigrationPolicy](Lobby/OwnerMigrationPolicy.md) |  |
-
-## Methods
-
-| name | description |
-| --- | --- |
-| [AddMember](Lobby/AddMember.md) | Add a local user as a member to the lobby. |
-| [ForceRemoveMember](Lobby/ForceRemoveMember.md) | Forcibly remove an entity from the lobby. |
-| [GetLobbyProperties](Lobby/GetLobbyProperties.md) |  |
-| [GetMemberConnectionStatus](Lobby/GetMemberConnectionStatus.md) | Determines a member's connection status to the notification service. |
-| [GetMemberProperties](Lobby/GetMemberProperties.md) |  |
-| [GetMembers](Lobby/GetMembers.md) |  |
-| [GetSearchProperties](Lobby/GetSearchProperties.md) |  |
-| [Leave](Lobby/Leave.md) |  (two methods) |
-| [LeaveAllLocalUsers](Lobby/LeaveAllLocalUsers.md) |  |
-| [PostUpdate](Lobby/PostUpdate.md) |  (six methods) |
-| [SendInvite](Lobby/SendInvite.md) | Send an invite to this lobby from the local user to the invited entity. (two methods) |
-| [TryGetOwner](Lobby/TryGetOwner.md) |  |
+| [AccessPolicy](Lobby/AccessPolicy.md) { get; } | Gets the access policy of the lobby. |
+| [ConnectionString](Lobby/ConnectionString.md) { get; } | Gets the default connection string associated with the lobby. |
+| [Id](Lobby/Id.md) { get; } | Gets the ID of the Lobby. |
+| [MaxMemberCount](Lobby/MaxMemberCount.md) { get; } | Gets the max member count of the lobby. |
+| [MembershipLock](Lobby/MembershipLock.md) { get; } | Gets whether the lobby's membership is locked. |
+| [OwnerMigrationPolicy](Lobby/OwnerMigrationPolicy.md) { get; } | Gets the owner migration policy of the lobby. |
+| [AddMember](Lobby/AddMember.md)(…) | Add a local user as a member to the lobby. (two methods) |
+| [ForceRemoveMember](Lobby/ForceRemoveMember.md)(…) | Forcibly remove an entity from the lobby. |
+| [GetLobbyProperties](Lobby/GetLobbyProperties.md)() | Get the dictionary of lobby property keys and values |
+| [GetMemberConnectionStatus](Lobby/GetMemberConnectionStatus.md)(…) | Determines a member's connection status to the notification service. |
+| [GetMemberProperties](Lobby/GetMemberProperties.md)(…) | Get the dictionary of member property keys and values for a specific member |
+| [GetMembers](Lobby/GetMembers.md)() | Gets the list of PlayFab entities currently joined to the lobby as members. |
+| [GetSearchProperties](Lobby/GetSearchProperties.md)() | Get the dictionary of search property keys and values |
+| [Leave](Lobby/Leave.md)(…) | Request one local user to leave the lobby. (two methods) |
+| [LeaveAllLocalUsers](Lobby/LeaveAllLocalUsers.md)() | Request all local users to leave the lobby. |
+| [PostUpdate](Lobby/PostUpdate.md)(…) | Post an update to the lobby. (six methods) |
+| [SendInvite](Lobby/SendInvite.md)(…) | Send an invite to this lobby from the local user to the invited entity. (two methods) |
+| [ServerDeleteLobby](Lobby/ServerDeleteLobby.md)() | Delete a lobby on behalf of the game_server entity that owns the lobby. |
+| [ServerPostUpdate](Lobby/ServerPostUpdate.md)(…) | Post an update to the lobby as the server-owner. |
+| [TryGetOwner](Lobby/TryGetOwner.md)(…) | Tries to get the current owner of the lobby. Returns false and sets owner to null if there is no owner on this Lobby |
 
 ## See Also
 

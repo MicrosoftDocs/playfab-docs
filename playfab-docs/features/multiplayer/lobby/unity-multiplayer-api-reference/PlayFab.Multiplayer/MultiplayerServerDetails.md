@@ -20,11 +20,11 @@ public class MultiplayerServerDetails
 
 | name | description |
 | --- | --- |
-| [Fqdn](MultiplayerServerDetails/Fqdn.md) | The fully qualified domain name of the virtual machine that is hosting this multiplayer server. |
-| [Ipv4Address](MultiplayerServerDetails/Ipv4Address.md) | The IPv4 address of the virtual machine that is hosting this multiplayer server. |
-| [Ports](MultiplayerServerDetails/Ports.md) | The ports the multiplayer server uses. |
-| [Region](MultiplayerServerDetails/Region.md) | The server's region. |
-
+| [MultiplayerServerDetails](MultiplayerServerDetails/MultiplayerServerDetails.md)(…) | Details about a Playfab Multiplayer Server. |
+| [Fqdn](MultiplayerServerDetails/Fqdn.md) { get; set; } | The fully qualified domain name of the virtual machine that is hosting this multiplayer server. |
+| [Ipv4Address](MultiplayerServerDetails/Ipv4Address.md) { get; set; } | The IPv4 address of the virtual machine that is hosting this multiplayer server. |
+| [Ports](MultiplayerServerDetails/Ports.md) { get; set; } | The ports the multiplayer server uses. |
+| [Region](MultiplayerServerDetails/Region.md) { get; set; } | The server's region. |
 
 ## See Also
 

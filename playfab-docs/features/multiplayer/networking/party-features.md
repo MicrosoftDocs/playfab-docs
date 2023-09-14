@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 This topic provides details about Azure PlayFab Party features and how you can use them in your game.
 
-For a high-level summary of Party features, see [Party overview](index.md). If you're ready to start developing, see [Getting started with Party](party-getting-started.md).
+For a high-level summary of Party features, see the [Party overview](index.md). If you're ready to start developing, see the [Party Quickstart](quickstart.md).
 
 ## Interoperable multiplayer infrastructure
 
@@ -112,7 +112,7 @@ We have a helper module for the Xbox Live social platform. It helps takes care o
 ## See also
 
 * [Party overview](index.md)
-* [Getting started with Party](party-getting-started.md)
+* [Party Quickstart](quickstart.md)
 * [Multiplayer servers](../servers/index.md)
 * [Multiplayer](../mpintro.md)
 * [Matchmaking](../matchmaking/index.md)

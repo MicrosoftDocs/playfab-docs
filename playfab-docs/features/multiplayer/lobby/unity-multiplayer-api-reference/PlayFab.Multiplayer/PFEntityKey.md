@@ -16,22 +16,17 @@ PFEntityKey data model. Combined entity type and ID structure which uniquely ide
 public class PFEntityKey
 ```
 
-## Constructors
+## Public Members
 
 | name | description |
 | --- | --- |
-| [PFEntityKey](PFEntityKey/PFEntityKey.md) | Initializes a new instance of the [`PFEntityKey`](./PFEntityKey.md) class. Pass in a PlayFabAuthenticationContext *authContext* returned by a PlayFab login method. (2 constructors) |
-
-## Properties
-
-| name | description |
-| --- | --- |
-| [Id](PFEntityKey/Id.md) | Unique ID of the entity. |
-| [Type](PFEntityKey/Type.md) | Entity type. See [Available built-in entity types](/gaming/playfab/features/data/entities/available-built-in-entity-types). |
+| [PFEntityKey](PFEntityKey/PFEntityKey.md)(…) | Initializes a new instance of the [`PFEntityKey`](./PFEntityKey.md) class. Pass in a PlayFabAuthenticationContext *authContext* returned by a PlayFab login method. (2 constructors) |
+| [Id](PFEntityKey/Id.md) { get; set; } | Unique ID of the entity. |
+| [Type](PFEntityKey/Type.md) { get; set; } | Entity type. See //docs.microsoft.com/gaming/playfab/features/data/entities/available-built-in-entity-types. |
 
 ## Remarks
 
-For more information about entities, see [Entity Programming Model](/gaming/playfab/features/data/entities/).
+For more information about entities, see //docs.microsoft.com/gaming/playfab/features/data/entities/.
 
 ## See Also
 

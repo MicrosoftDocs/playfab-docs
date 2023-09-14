@@ -20,9 +20,10 @@ public class MultiplayerPort
 
 | name | description |
 | --- | --- |
-| [Name](MultiplayerPort/Name.md) | The name of the port as specified in the PlayFab Game Manager server settings. |
-| [Num](MultiplayerPort/Num.md) | The number for the port |
-| [Protocol](MultiplayerPort/Protocol.md) | The protocol for the port. |
+| [MultiplayerPort](MultiplayerPort/MultiplayerPort.md)(…) | A port used by a Playfab Multiplayer Server. |
+| [Name](MultiplayerPort/Name.md) { get; set; } | The name of the port as specified in the PlayFab Game Manager server settings. |
+| [Num](MultiplayerPort/Num.md) { get; set; } | The number for the port. |
+| [Protocol](MultiplayerPort/Protocol.md) { get; set; } | The protocol for the port. |
 
 ## See Also
 

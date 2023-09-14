@@ -16,12 +16,12 @@ An event argument class representing a PFMultiplayer error.
 public class PlayFabMultiplayerErrorArgs : EventArgs
 ```
 
-## Properties
+## Public Members
 
 | name | description |
 | --- | --- |
-| [Code](PlayFabMultiplayerErrorArgs/Code.md) | Gets the error code indicating the result of the operation. |
-| [Message](PlayFabMultiplayerErrorArgs/Message.md) | Gets a call-specific error message with debug information. This message is not localized as it is meant to be used for debugging only. |
+| [Code](PlayFabMultiplayerErrorArgs/Code.md) { get; protected set; } | Gets the error code indicating the result of the operation. |
+| [Message](PlayFabMultiplayerErrorArgs/Message.md) { get; protected set; } | Gets a call-specific error message with debug information. This message is not localized as it is meant to be used for debugging only. |
 
 ## See Also
 

@@ -21,4 +21,4 @@ public static event OnLobbyDisconnectedHandler OnLobbyDisconnected;
 * delegate [OnLobbyDisconnectedHandler](../PlayFabMultiplayer.OnLobbyDisconnectedHandler.md)
 * class [PlayFabMultiplayer](../PlayFabMultiplayer.md)
 * namespace [PlayFab.Multiplayer](../../PlayFabMultiplayerSDK.md)
->
+

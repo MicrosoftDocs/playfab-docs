@@ -8,89 +8,148 @@ ms.service: playfab
 ms.date: 11/23/2021
 ---
 
-# Lobby.PostUpdate method
-## Lobby.PostUpdate (1 of 6)
+# Lobby.PostUpdate
+
+## Method (1 of 6)
+
+Post an update to the lobby.
 
 ```csharp
 public void PostUpdate(PFEntityKey localUser, IDictionary<string, string> memberProperties)
 ```
 
-## See Also 1
+| parameter | description |
+| --- | --- |
+| localUser | The local user posting the update. |
+| memberProperties | The member properties to update for the updating member. |
 
-* class [PFEntityKey](../PFEntityKey.md)
-* class [Lobby](../Lobby.md)
-* namespace [PlayFab.Multiplayer](../../PlayFabMultiplayerSDK.md)
+## Remarks (1 of 6)
+
+This is an asynchronous operation. Upon successful completion, the title is provided a [`OnLobbyPostUpdateCompleted`](../PlayFabMultiplayer/OnLobbyPostUpdateCompleted.md) with the `OnLobbyPostUpdateCompleted result` field set to [`Success`](../LobbyError/Success.md). Upon a failed completion, the title is provided a [`OnLobbyPostUpdateCompleted`](../PlayFabMultiplayer/OnLobbyPostUpdateCompleted.md) with the `OnLobbyPostUpdateCompleted result` field set to a failed error code. If applying the update would change the state of the lobby, the title is provided a [`OnLobbyUpdated`](../PlayFabMultiplayer/OnLobbyUpdated.md) sometime afterwards.
+
+This operation completing successfully only indicates that the Lobby service has accepted the update. The title's local view of the Lobby state won't reflect this update until a [`OnLobbyUpdated`](../PlayFabMultiplayer/OnLobbyUpdated.md) is provided to the title with the updated state.
 
 ---
 
-## Lobby.PostUpdate (2 of 6)
+## Method (2 of 6)
+
+Post an update to the lobby.
 
 ```csharp
 public void PostUpdate(PFEntityKey localUser, LobbyDataUpdate lobbyUpdate)
 ```
 
-## See Also 2
+| parameter | description |
+| --- | --- |
+| localUser | The local user posting the update. |
+| lobbyUpdate | An optional update to apply to the shared portion of the lobby on behalf of *localUser*. |
 
-* class [PFEntityKey](../PFEntityKey.md)
-* class [LobbyDataUpdate](../LobbyDataUpdate.md)
-* class [Lobby](../Lobby.md)
-* namespace [PlayFab.Multiplayer](../../PlayFabMultiplayerSDK.md)
+## Remarks (2 of 6)
+
+This is an asynchronous operation. Upon successful completion, the title is provided a [`OnLobbyPostUpdateCompleted`](../PlayFabMultiplayer/OnLobbyPostUpdateCompleted.md) with the `OnLobbyPostUpdateCompleted result` field set to [`Success`](../LobbyError/Success.md). Upon a failed completion, the title is provided a [`OnLobbyPostUpdateCompleted`](../PlayFabMultiplayer/OnLobbyPostUpdateCompleted.md) with the `OnLobbyPostUpdateCompleted result` field set to a failed error code. If applying the update would change the state of the lobby, the title is provided a [`OnLobbyUpdated`](../PlayFabMultiplayer/OnLobbyUpdated.md) sometime afterwards.
+
+This operation completing successfully only indicates that the Lobby service has accepted the update. The title's local view of the Lobby state won't reflect this update until a [`OnLobbyUpdated`](../PlayFabMultiplayer/OnLobbyUpdated.md) is provided to the title with the updated state.
+
+The *lobbyUpdate* contains fields that can only be modified by the owner of the lobby. This method fails and [`OnError`](../PlayFabMultiplayer/OnError.md) is called if one of those fields is specified and *localUser* is not the owner of the lobby.
 
 ---
 
-## Lobby.PostUpdate (3 of 6)
+## Method (3 of 6)
+
+Post an update to the lobby.
 
 ```csharp
 public void PostUpdate(PlayFabAuthenticationContext localUser, 
     IDictionary<string, string> memberProperties)
 ```
 
-## See Also 3
+| parameter | description |
+| --- | --- |
+| localUser | The local user posting the update. |
+| memberProperties | The member properties to update for the updating member. |
 
-* class [Lobby](../Lobby.md)
-* namespace [PlayFab.Multiplayer](../../PlayFabMultiplayerSDK.md)
+## Remarks (3 of 6)
+
+This is an asynchronous operation. Upon successful completion, the title is provided a [`OnLobbyPostUpdateCompleted`](../PlayFabMultiplayer/OnLobbyPostUpdateCompleted.md) with the `OnLobbyPostUpdateCompleted result` field set to [`Success`](../LobbyError/Success.md). Upon a failed completion, the title is provided a [`OnLobbyPostUpdateCompleted`](../PlayFabMultiplayer/OnLobbyPostUpdateCompleted.md) with the `OnLobbyPostUpdateCompleted result` field set to a failed error code. If applying the update would change the state of the lobby, the title is provided a [`OnLobbyUpdated`](../PlayFabMultiplayer/OnLobbyUpdated.md) sometime afterwards.
+
+This operation completing successfully only indicates that the Lobby service has accepted the update. The title's local view of the Lobby state won't reflect this update until a [`OnLobbyUpdated`](../PlayFabMultiplayer/OnLobbyUpdated.md) is provided to the title with the updated state.
 
 ---
 
-## Lobby.PostUpdate (4 of 6)
+## Method (4 of 6)
+
+Post an update to the lobby.
 
 ```csharp
 public void PostUpdate(PlayFabAuthenticationContext localUser, LobbyDataUpdate lobbyUpdate)
 ```
 
-## See Also 4
+| parameter | description |
+| --- | --- |
+| localUser | The local user posting the update. |
+| lobbyUpdate | An optional update to apply to the shared portion of the lobby on behalf of *localUser*. |
 
-* class [LobbyDataUpdate](../LobbyDataUpdate.md)
-* class [Lobby](../Lobby.md)
-* namespace [PlayFab.Multiplayer](../../PlayFabMultiplayerSDK.md)
+## Remarks (4 of 6)
+
+This is an asynchronous operation. Upon successful completion, the title is provided a [`OnLobbyPostUpdateCompleted`](../PlayFabMultiplayer/OnLobbyPostUpdateCompleted.md) with the `OnLobbyPostUpdateCompleted result` field set to [`Success`](../LobbyError/Success.md). Upon a failed completion, the title is provided a [`OnLobbyPostUpdateCompleted`](../PlayFabMultiplayer/OnLobbyPostUpdateCompleted.md) with the `OnLobbyPostUpdateCompleted result` field set to a failed error code. If applying the update would change the state of the lobby, the title is provided a [`OnLobbyUpdated`](../PlayFabMultiplayer/OnLobbyUpdated.md) sometime afterwards.
+
+This operation completing successfully only indicates that the Lobby service has accepted the update. The title's local view of the Lobby state won't reflect this update until a [`OnLobbyUpdated`](../PlayFabMultiplayer/OnLobbyUpdated.md) is provided to the title with the updated state.
+
+The *lobbyUpdate* contains fields that can only be modified by the owner of the lobby. This method fails and [`OnError`](../PlayFabMultiplayer/OnError.md) is called if one of those fields is specified and *localUser* is not the owner of the lobby.
 
 ---
 
-## Lobby.PostUpdate (5 of 6)
+## Method (5 of 6)
+
+Post an update to the lobby.
 
 ```csharp
 public void PostUpdate(PFEntityKey localUser, LobbyDataUpdate lobbyUpdate, 
     IDictionary<string, string> memberProperties)
 ```
 
-## See Also 5
+| parameter | description |
+| --- | --- |
+| localUser | The local user posting the update. |
+| lobbyUpdate | An update to apply to the shared portion of the lobby on behalf of *localUser*. |
+| memberProperties | The member properties to update for the updating member. |
 
-* class [PFEntityKey](../PFEntityKey.md)
-* class [LobbyDataUpdate](../LobbyDataUpdate.md)
-* class [Lobby](../Lobby.md)
-* namespace [PlayFab.Multiplayer](../../PlayFabMultiplayerSDK.md)
+## Remarks (5 of 6)
+
+This is an asynchronous operation. Upon successful completion, the title is provided a [`OnLobbyPostUpdateCompleted`](../PlayFabMultiplayer/OnLobbyPostUpdateCompleted.md) with the `OnLobbyPostUpdateCompleted result` field set to [`Success`](../LobbyError/Success.md). Upon a failed completion, the title is provided a [`OnLobbyPostUpdateCompleted`](../PlayFabMultiplayer/OnLobbyPostUpdateCompleted.md) with the `OnLobbyPostUpdateCompleted result` field set to a failed error code. If applying the update would change the state of the lobby, the title is provided a [`OnLobbyUpdated`](../PlayFabMultiplayer/OnLobbyUpdated.md) sometime afterwards.
+
+This operation completing successfully only indicates that the Lobby service has accepted the update. The title's local view of the Lobby state won't reflect this update until a [`OnLobbyUpdated`](../PlayFabMultiplayer/OnLobbyUpdated.md) is provided to the title with the updated state.
+
+The *lobbyUpdate* contains fields that can only be modified by the owner of the lobby. This method fails and [`OnError`](../PlayFabMultiplayer/OnError.md) is called if one of those fields is specified and *localUser* is not the owner of the lobby.
 
 ---
 
-## Lobby.PostUpdate (6 of 6)
+## Method (6 of 6)
+
+Post an update to the lobby.
 
 ```csharp
 public void PostUpdate(PlayFabAuthenticationContext localUser, LobbyDataUpdate lobbyUpdate, 
     IDictionary<string, string> memberProperties)
 ```
 
-## See Also 6
+| parameter | description |
+| --- | --- |
+| localUser | The local user posting the update. |
+| lobbyUpdate | An update to apply to the shared portion of the lobby on behalf of *localUser*. |
+| memberProperties | The member properties to update for the updating member. |
 
+## Remarks (6 of 6)
+
+This is an asynchronous operation. Upon successful completion, the title is provided a [`OnLobbyPostUpdateCompleted`](../PlayFabMultiplayer/OnLobbyPostUpdateCompleted.md) with the `OnLobbyPostUpdateCompleted result` field set to [`Success`](../LobbyError/Success.md). Upon a failed completion, the title is provided a [`OnLobbyPostUpdateCompleted`](../PlayFabMultiplayer/OnLobbyPostUpdateCompleted.md) with the `OnLobbyPostUpdateCompleted result` field set to a failed error code. If applying the update would change the state of the lobby, the title is provided a [`OnLobbyUpdated`](../PlayFabMultiplayer/OnLobbyUpdated.md) sometime afterwards.
+
+This operation completing successfully only indicates that the Lobby service has accepted the update. The title's local view of the Lobby state won't reflect this update until a [`OnLobbyUpdated`](../PlayFabMultiplayer/OnLobbyUpdated.md) is provided to the title with the updated state.
+
+The *lobbyUpdate* contains fields that can only be modified by the owner of the lobby. This method fails and [`OnError`](../PlayFabMultiplayer/OnError.md) is called if one of those fields is specified and *localUser* is not the owner of the lobby.
+
+## See Also
+
+* class [PFEntityKey](../PFEntityKey.md)
 * class [LobbyDataUpdate](../LobbyDataUpdate.md)
 * class [Lobby](../Lobby.md)
 * namespace [PlayFab.Multiplayer](../../PlayFabMultiplayerSDK.md)

@@ -20,7 +20,7 @@ public enum LobbyMemberRemovedReason : uint
 
 | name | value | description |
 | --- | --- | --- |
-| LocalUserLeftLobby | `0` | The local user is being removed because the title called !:Lobby.Leave(). |
+| LocalUserLeftLobby | `0` | The local user is being removed because the title called [`Leave`](./Lobby/Leave.md). |
 | LocalUserForciblyRemoved | `1` | The local user entity was forcibly removed by the owner. |
 | RemoteUserLeftLobby | `2` | The remote user has been removed from the lobby. It is unspecified why they are being removed. |
 

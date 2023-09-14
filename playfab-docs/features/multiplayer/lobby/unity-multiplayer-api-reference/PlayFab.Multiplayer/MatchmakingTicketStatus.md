@@ -22,7 +22,7 @@ public enum MatchmakingTicketStatus : uint
 | --- | --- | --- |
 | Creating | `0` | The matchmaking ticket is being created. |
 | Joining | `1` | The matchmaking ticket is being joined. |
-| WaitingForPlayers | `2` | The matchmaking ticket is waiting for all remote users specified in the `membersToMatchWith` field of its configuration to join the ticket via !:PlayFabMultiplayer.JoinMatchmakingTicket(). |
+| WaitingForPlayers | `2` | The matchmaking ticket is waiting for all remote users specified in the `membersToMatchWith` field of its configuration to join the ticket via [`JoinMatchmakingTicketFromId`](./PlayFabMultiplayer/JoinMatchmakingTicketFromId.md). |
 | WaitingForMatch | `3` | The matchmaking ticket is waiting for a match to be found. |
 | Matched | `4` | The matchmaking ticket has found a match. |
 | Canceled | `5` | The matchmaking ticket has been canceled. |

@@ -24,8 +24,6 @@
     href: kongregate-html5.md
   - name: Setting up PlayFab authentication using Kongregate and Unity
     href: kongregate-unity.md
-  - name: Setting up PlayFab authentication in Phaser.io
-    href: phaser-io.md
   - name: Setting up PlayFab authentication using Steam and Unity
     href: steam-unity.md
   - name: Setting up PlayFab authentication using Twitch and HTML5

@@ -10,7 +10,7 @@ ms.date: 08/02/2023
 
 # PlayFabMultiplayer.PlayFabMultiplayerServer.OnServerLobbyCreateAndClaimCompletedHandler delegate
 
-Handler for when the operation started by a previous call to [CreateAndClaimServerLobby](PlayFabMultiplayerServer/CreateAndClaimServerLobby.md) completed.
+Handler for when the operation started by a previous call to [`CreateAndClaimServerLobby`](./PlayFabMultiplayer.PlayFabMultiplayerServer/CreateAndClaimServerLobby.md) completed.
 
 ```csharp
 public delegate void OnServerLobbyCreateAndClaimCompletedHandler(Lobby lobby, int result);
@@ -24,6 +24,6 @@ public delegate void OnServerLobbyCreateAndClaimCompletedHandler(Lobby lobby, in
 ## See Also
 
 * class [Lobby](./Lobby.md)
-* class [PlayFabMultiplayer](./PlayFabMultiplayer.md)
+* class [PlayFabMultiplayerServer](./PlayFabMultiplayer.PlayFabMultiplayerServer.md)
 * namespace [PlayFab.Multiplayer](../PlayFabMultiplayerSDK.md)
 

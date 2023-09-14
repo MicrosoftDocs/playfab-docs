@@ -52,7 +52,7 @@ If you are interested, here is a video of our presentation at Microsoft Game Dev
 ## See also
 
 * [Party features](party-features.md)
-* [Getting started with Party](party-getting-started.md)
+* [Party Quickstart](quickstart.md)
 * [Multiplayer servers](../servers/index.md)
 * [Multiplayer](../mpintro.md)
 * [Matchmaking](../matchmaking/index.md)
