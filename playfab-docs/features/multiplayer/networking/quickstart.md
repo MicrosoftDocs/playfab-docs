@@ -1,5 +1,5 @@
 ---
-title: Party SDK quickstart
+title: Party Quickstart
 author: debhaldarMS
 description: Guide to help you integrate PlayFab Party SDK in your Game.
 ms.author: debh
@@ -10,13 +10,24 @@ keywords: playfab, multiplayer, party, networking, communication
 ms.localizationpriority: medium
 ---
 
-# Party SDK quickstart
+# Party Quickstart
 
-This quickstart is intended to be a high-level overview of PlayFab Party's core features. PlayFab Party was designed to be cross-platform from the ground up. We've structured these quickstarts in the same way, where most of the information applies to all platforms, and platform-specific prerequisites and steps are described in the linked documents.
-
-In this quickstart, critical pieces of functionality are highlighted via explanatory text and code snippets. However, this isn't a step-by-step walk-through.
+This quickstart describes PlayFab Party's core functionality alongside code snippets. PlayFab Party is designed to be cross-platform from the ground up. We've structured these quickstarts in the same way, where most of the information applies to all platforms, and platform-specific prerequisites and steps are described in the linked documents.
 
 For a deeper understanding, consult the linked reference and conceptual documentation, and per-platform sample applications.
+
+> [!NOTE]
+> This quickstart guide covers use of the C++ Party SDK 
+> * For Unity users, refer to the [Quickstart for Unity](party-unity-plugin-quickstart.md)
+> * For Unreal Engine users who want to use the PlayFab Online Subsystem for Unreal Engine, refer to the [Quickstart for Unreal](party-unreal-engine-oss-quickstart.md). 
+
+
+## Prerequisites
+
+You need a PlayFab account, and you *must enable* the Party feature to start using Party. 
+
+1. Create or sign in to your [PlayFab account](https://playfab.com). For instructions, see [Quickstart: Game Manager](../../../gamemanager/quickstart.md).
+1. [Enable Party feature via Game Manager](enable-party.md) from your PlayFab account.
 
 ## Platform Prerequisites
 
@@ -32,17 +43,22 @@ Before you start this quickstart, perform any necessary platform-specific setup 
 
 When you finish the platform-specific steps, continue with the rest of the steps in this topic to set up PlayFab Party.
 
-> [!IMPORTANT]
-> Follow these steps to [Enable PlayFab Party](enable-party.md).
+## Download and set up Party SDK
+
+There are Party SDKs for different platforms and game engines. Select and download the one that you need. For download links, see [Party SDKs](party-sdks.md).
+
+After installing the SDK, you might want to run a sample to see how Party works before you start writing code. To download a sample, go to [Party samples](party-samples.md).
+
+If you're using Party in Xbox and PC titles, we recommend that you use the [Party Xbox Live Helper Library](party-xbox-live-guide.md) to ensure consistent functionality and behavior. This library helps your title meet Xbox Live requirements. To learn more, see [Xbox requirements](xbox-requirements.md).
 
 ## Log in to your PlayFab title and obtain an entity token and entity ID
 
 To initialize and use Party, you must log in to PlayFab. You can use [PlayFabClientAPI::LoginWithCustomID](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid)
- or a platform-specific login method to do this.
+ or a platform-specific login method.
 
 Once you execute login, PlayFab returns an entity ID and entity token as part of the [LoginResult](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid#loginresult). These two key pieces of information are used to initialize a Local user instance for PlayFab Party.
 
-An example code snippet for logging in with a custom ID as implemented in `PlayFabManager.cpp` is shown below:
+An example for logging in with a custom ID as implemented in `PlayFabManager.cpp` is shown in this code snippet:
 
 ```cpp
 PlayFabClientAPI::LoginWithCustomID(
@@ -63,9 +79,10 @@ PlayFabClientAPI::LoginWithCustomID(
 
 After successfully obtaining the entity ID and entity token from PlayFab, you can proceed with enabling and then initializing Party.
 
-## Initialize PlayFab Party
+> [!NOTE]
+> If you're using Xbox Live, you can also get use the [Party Xbox Live Helper Library](party-xbox-live-guide.md) to login. 
 
-Before continuing with this section, it's recommended to read the [PlayFab Party objects and their relationships](concepts-objects.md) document and code comments in the public [Party.h](https://github.com/PlayFab/PlayFabParty/blob/docs/include/Party.h) header. This provides a deeper understanding of the following operations.
+## Initialize PlayFab Party
 
 At a high level, initializing Party involves the following steps:
 
@@ -215,12 +232,11 @@ At this point, you have the PlayFab Party initialized in your application or gam
 
 Refer to the `NetworkManager::Initialize()` code in [NetworkManager.cpp](https://github.com/PlayFab/PlayFabParty/blob/docs/android/PartySampleNetworkCommon/lib/NetworkManager.cpp) in the demo app for a complete sample.
 
- The next step is to Create and Connect to a Party Network.
+The next step is to create a Party Network and connect to it.
 
 ## Create a Party Network
 
-A Party Network is a secured collection of one or more devices and their authorized users that the game creates for the purpose of exchanging chat or data communication. This typically aligns with a game's multiplayer session or chat "lobby" concept. You can
-only send messages to players inside your own network.
+A Party Network is a secured collection of one or more devices and their authorized users that the game creates to exchange chat or data communication. A Party Network typically aligns with a game's multiplayer session or chat "lobby" concept. You can only send messages to players inside your own network.
 
 The following code snippet shows how we can create a Party Network.
 
@@ -242,15 +258,15 @@ The following code snippet shows how we can create a Party Network.
 ```
 
 Once the function call to `CreateNewNetwork()` succeeds, a network descriptor [PartyNetworkDescriptor](concepts-objects.md#network
-) object will be returned/populated. The descriptor contains the data required by other players to connect to a network.
+) object is returned/populated. The descriptor contains the data required for other players to connect to a network.
 
 Refer to the [API Reference Documentation](reference/party_members.md) for information about the other function parameters.
 
 ## Connect to a Party network
 
-Once a Party network has been created, Invitations are used to control which users can join the network. Invitation information therefore needs to be shared with other users. For this, PlayFab Matchmaking, another matchmaking service, in-game invite services, or platform invite services can be used.
+Once a Party network has been created, invitations are used to control which users can join the network. PlayFab Matchmaking, PlayFab Lobby, platform invites, or custom game services can be used to share connection details with other players.
 
-The simplest Invitation type is an open invitation that consists of a network descriptor and is used here. For detailed information of all Invitation types and the security model, refer to [Invitations and the security model](concepts-invitations-security-model.md).
+The simplest invitation type is an open invitation that consists of a network descriptor. For detailed information of all invitation types and the security model, refer to [Invitations and the security model](concepts-invitations-security-model.md).
 
 We implemented simple matchmaking using [PlayFab CloudScripts](../../automation/cloudscript/quickstart.md) in the demo samples, which work as follows:
 
@@ -464,14 +480,14 @@ Once you've connected to the Party Network, you can send a message using the loc
     }
 ```
 
- The full code is available in [NetworkManager.cpp](https://github.com/PlayFab/PlayFabParty/blob/docs/android/PartySampleNetworkCommon/lib/NetworkManager.cpp).
+The full code is available in [NetworkManager.cpp](https://github.com/PlayFab/PlayFabParty/blob/docs/android/PartySampleNetworkCommon/lib/NetworkManager.cpp).
 
 ## Receive a message and render it on the local device
 
 The final step is receiving messages sent by remote Party members and rendering (playing) them on your device. 
 
 > [!IMPORTANT]
-> While creating the chat control in one of the previous steps, you've already set up the audio input and output devices which will be used by Party to send, receive and render audio data. To receive the audio messages, you'll also need to set the appropriate chat permission between each chat control if you want audio to flow. By default, the chat permissions are set to NONE. For more information, see the [Chat Permissions](concepts-chat-permissions-and-muting.md) article.
+> While creating the chat control in one of the previous steps, you've already set up the audio input and output devices which is used by Party to send, receive and render audio data. To receive the audio messages, you'll also need to set the appropriate chat permission between each chat control if you want audio to flow. By default, the chat permissions are set to NONE. For more information, see the [Chat Permissions](concepts-chat-permissions-and-muting.md) article.
 
 The processing of other messages from the Party layer is best accomplished in a dedicated update thread or a high-frequency game loop. The game loop should be set up to run every frame and receive messages from the Party Manager via the StartProcessingStateChanges() function.
 
@@ -480,7 +496,7 @@ For a complete description of all the state changes, refer to the [Party Referen
 
 ## Handling title suspension
 Some platforms support temporarily suspending execution of your title: iOS, Switch, and GDK.
-When your title is suspended, the network stack becomes invalidated and PlayFab Party will be unable to maintain a connection to the PlayFab Party network.
+When your title is suspended, the network stack becomes invalidated and PlayFab Party is unable to maintain a connection to the PlayFab Party network.
 Special consideration is required to handle suspending and resuming execution of your title when using PlayFab Party.
 
 ### iOS
@@ -489,7 +505,7 @@ On iOS, you must leave and reconnect to the PlayFab Party network
 To leave Party network, call [LeaveNetwork()](https://github.com/PlayFab/PlayFabParty/blob/docs/android/PartySampleNetworkCommon/lib/NetworkManager.cpp#L505). After the network is reactivated, call [ConnectToNetwork()](#connect-to-a-party-network) with previous Party network descriptor.
 
 ### Switch and GDK
-On Nintendo Switch and Microsoft GDK, you must cleanup PlayFab Party and wait until the title execution resumes before reinitializing PlayFab Party and reconnecting to your network.
+On Nintendo Switch and Microsoft GDK, you must clean up PlayFab Party and wait until the title execution resumes before reinitializing PlayFab Party and reconnecting to your network.
 
 To shut down the Party, call [Cleanup()](https://github.com/PlayFab/PlayFabParty/blob/docs/android/PartySampleNetworkCommon/lib/NetworkManager.cpp#L198). 
 > [!IMPORTANT]
@@ -567,15 +583,21 @@ After the network is reactivated, call [Initialize()](#initialize-playfab-party)
 > [!IMPORTANT]
 > If the reconnection is successfully completed, the party will now be able to communicate to others peers, but if the previous network no longer exists, the reconnecting will be failed. In this case, you should handle the appropriate connection error.
 
-## Conclusion
+## Next Steps
 
-In this quickstart, we walked through the key pieces of PlayFab Party and saw how to interact with them.
+Read more about [PlayFab Party objects and their relationships](concepts-objects.md) and consult the [Party API reference documentation](reference/party_members.md) so that your game can get the most out of these capabilities. 
 
-We encourage you to take a look at the complete Reference and Conceptual documentation as well as samples for a deeper understanding of the systems.
+For more Xbox-specific guidance, refer to the [Xbox Requirements](xbox-requirements.md) early and often. 
 
-## Next steps
+## See also
 
-For more platform-specific guidance for application, see:
-- Xbox and Xbox Live
-    - [Xbox Requirements](xbox-requirements.md)
-    - [Using MPSD](using-mpsd.md)
+* [Party features](party-features.md)
+* [Party SDKs](party-sdks.md)
+* [Party samples](party-samples.md)
+* [Multiplayer Services](../mpintro.md)
+* [Party objects and their relationships](concepts-objects.md)
+* [Party chat basics](concepts-chat.md)
+* [Party invitations and the security model](concepts-invitations-security-model.md)
+* [Party interacts with your discovery flows](concepts-discovery.md)
+* [Party API reference documentation](reference/party_members.md)
+* Party UX guidelines for [Text-to-speech](party-text-to-speech-ux-guidelines.md) and [Speech-to-text](party-speech-to-text-ux-guidelines.md)

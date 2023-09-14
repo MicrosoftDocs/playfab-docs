@@ -419,6 +419,11 @@
             "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/PlayFabMultiplayerServer.md",
             "redirect_url": "/gaming/playfab/features/multiplayer/lobby/unity-multiplayer-api-reference/playfab.multiplayer/playfabmultiplayer.playfabmultiplayerserver",
             "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/multiplayer/networking/party-getting-started.md ",
+            "redirect_url": "playfab-docs/features/multiplayer/networking/quickstart.md ",
+            "redirect_document_id": false
         }
     ]
 }
