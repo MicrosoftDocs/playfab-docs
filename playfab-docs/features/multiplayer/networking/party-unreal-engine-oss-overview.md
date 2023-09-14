@@ -63,7 +63,7 @@ If you have any questions during backporting on UE4.27, 5.0, and 5.1, feel free 
 
 Refer to Unreal Engine’s Developer’s documentation at [GDK SDK Update Paths](https://udn.unrealengine.com/s/article/GDK-SDK-Updates-Path) for the most updated information.
 
-If you are using XDK, please note that it is supported on an older version(1.07 and earlier) of the OSS. Refer instead to [Using older version](party-unreal-engine-using-older-versions.md) for further details.
+If you are using XDK, please note that it is supported on an older version(1.07 and earlier) of the OSS. Refer instead to [Using older versions](party-unreal-engine-using-older-versions.md) for further details.
 
 ## Which version of the Nintendo Switch SDKs are supported?
 
