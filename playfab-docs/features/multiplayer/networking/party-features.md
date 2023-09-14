@@ -78,7 +78,7 @@ Party chat offers the following communication functionalities.
 
 - **Text moderation:** Text chat can be moderated in real-time to filter out offensive language. For more information, see [Using text moderation](concepts-text-moderation.md).
 
-Speech-to-text, text-to-speech, and real-time translation use Azure Cognitive Services to power these functionalities. We recommend associating the activation of these capabilities under the Ease of Access player settings. For information about rates and pricing, see [PlayFab pricing](https://playfab.com/pricing/) and [Party pricing](../../features/pricing/meters/meters.md#party).
+Speech-to-text, text-to-speech, and real-time translation use Azure Cognitive Services to power these functionalities. We recommend associating the activation of these capabilities under the Ease of Access player settings. For information about rates and pricing, see [PlayFab pricing](https://playfab.com/pricing/) and [Party pricing](../../pricing/meters/meters.md#party).
 
 To learn more, see [Understanding how Party chat works](concepts-chat.md). For more guidance on how to use the accessibility features that are provided by Party, see [Text-to-speech guidelines](party-text-to-speech-ux-guidelines.md) and [Speech-to-text guidelines](party-speech-to-text-ux-guidelines.md).
 
