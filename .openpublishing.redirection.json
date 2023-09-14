@@ -427,7 +427,7 @@
         },
         {
             "source_path": "playfab-docs/features/multiplayer/networking/pricing.md",
-            "redirect_url": "playfab-docs/features/pricing/meters/meters.md ",
+            "redirect_url": "playfab-docs/features/pricing/meters/meters.md#party ",
             "redirect_document_id": false
         }
     ]
