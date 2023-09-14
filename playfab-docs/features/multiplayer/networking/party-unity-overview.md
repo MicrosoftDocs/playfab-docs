@@ -111,4 +111,4 @@ We strive to support all recent versions of Unity starting with Unity 2017, howe
 
 **VoIP and Game Networking functionality is free for users signed in with an Xbox Live account (currently supported on GDK platform only).**
 
-Party Cognitive Services and other services may have a cost associated with them. For details, see [Billing for PlayFab Party](../../features/pricing/meters/meters.md#party) or reach out to your Microsoft Representative.
+Party Cognitive Services and other services may have a cost associated with them. For details, see [Billing for PlayFab Party](../../pricing/meters/meters.md#party) or reach out to your Microsoft Representative.
