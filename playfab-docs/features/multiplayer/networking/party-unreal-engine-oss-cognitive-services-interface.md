@@ -21,7 +21,7 @@ These features include:
 - Text-to-speech synthesis 
 
 ## Pricing
-Cognitive Services and other services beyond core VOIP and game networking functionality may have a cost associated with them. Please visit the [Billing for PlayFab Party](../../features/pricing/meters/meters.md#party) page for more details or reach out to your Microsoft Representative.
+Cognitive Services and other services beyond core VOIP and game networking functionality may have a cost associated with them. Please visit the [Billing for PlayFab Party](../../pricing/meters/meters.md#party) page for more details or reach out to your Microsoft Representative.
 
 
 ## Using the Cognitive Services Interface
