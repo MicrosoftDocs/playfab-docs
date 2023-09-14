@@ -36,7 +36,3 @@
     href: playfabmultiplayerreference-cpp\pflobby\pflobby_members.md
   - name: C++ SDK Error Codes
     href: playfabmultiplayerreference-cpp\pfmultiplayererrors.md
-- name: Release notes
-  items:
-  - name: C++ SDK Release notes
-    href: lobby-matchmaking-sdks/lobby-and-matchmaking-release-notes.md
