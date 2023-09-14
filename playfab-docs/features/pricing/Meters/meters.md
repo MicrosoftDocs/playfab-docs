@@ -85,10 +85,12 @@ PlayFab Multiplayer Servers deliver secure and reliable low-latency gameplay at 
 ### Party
 PlayFab Party is a low-latency chat and data communication solution for cross-platform and cross-device multiplayer games. The voice and text features in Party can be used as a standalone chat solution or in conjunction with other features in PlayFab's Multiplayer product. There are four key meters used to bill Party utilization:
 
-* **Connectivity**: Metered by number of player minutes connected to a network. Metering starts when a player creates a network or joins a network, and it stops when they have disconnected.
-* **Voice**: Metered by number of player minutes speaking. When a player is connected to a network and is actively speaking, that player voice activity is measured and metered.
-* **Cognitive Services**: Metered by number of player minutes using Speech to Text, Text to Speech, or Translation features.
-* **Network Egress** This is data sent from PlayFab's relay and voice servers. This is congruent to the aggregate amount of data that players receive from the network.
+* **Party Connectivity**: Metered by number of player minutes connected to a network. Metering starts when a player creates a network or joins a network, and it stops when they have disconnected.
+* **Party Voice**: Metered by number of player minutes speaking. When a player is connected to a network and is actively speaking, that player voice activity is measured and metered.
+* **Party Cognitive Services**: Metered by number of player minutes using Speech to Text, Text to Speech, or Translation features.
+* **Party Network Egress** This is data sent from PlayFab's relay and voice servers. This is congruent to the aggregate amount of data that players receive from the network. Data sent via peer-to-peer connections does not pass through PlayFab's relay networks and does not accrue to the Party Network Egress meter. 
+
+You can also use this [Party pricing calculator](https://playfab.com/party-calculator/) to estimate your monthly bill based on your projections.
 
 > [!NOTE]
 > Party Network Egress is metered and priced separately from Multiplayer Servers Network Egress.
