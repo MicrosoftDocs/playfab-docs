@@ -42,4 +42,4 @@ sections:
         answer: |
           The consumption meters used to bill Party are player-oriented: player network-minutes, player voice-minutes, network egress etc. Xbox Live players will not increment these meters and effectively be zero rated. PlayFab tracks this using the `LoginWithXbox` API so please use this API to enjoy the Xbox Live program.
           
-          Usage from other identity providers or custom IDs will be billed normally; check out [PlayFab pricing](https://playfab.com/pricing) and [PlayFab Party pricing](../../features/pricing/meters/meters.md#party) to see how standard Party activity is metered and zero-rating applied.
+          Usage from other identity providers or custom IDs will be billed normally; check out [PlayFab pricing](https://playfab.com/pricing) and [PlayFab Party pricing](../../pricing/meters/meters.md#party) to see how standard Party activity is metered and zero-rating applied.
