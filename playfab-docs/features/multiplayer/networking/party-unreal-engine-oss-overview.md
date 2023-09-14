@@ -86,7 +86,7 @@ The supported Sony PlayStation SDK versions can be found at [PS4 SDK Compatibili
 
 ## Pricing
 
-For pricing details, see [Billing for PlayFab Party](pricing.md).
+For pricing details, see [Billing for PlayFab Party](../../features/pricing/meters/meters.md#party).
 
 "PlayStation" is a registered trademark or trademark of Sony Interactive Entertainment Inc.
 "PS4" is a registered trademark or trademark of Sony Interactive Entertainment Inc.
