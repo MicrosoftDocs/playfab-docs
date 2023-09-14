@@ -20,7 +20,7 @@ This quickstart shows how to set up Photon Multiplayer to work with PlayFab. Cur
 In this quickstart, we illustrate how both features work using the latest [Photon Unity example project](https://assetstore.unity.com/packages/tools/network/photon-unity-networking-classic-free-1786).
 
 > [!NOTE]
-> For a fully supported PlayFab Multiplayer and Chat Experience on Unity, see the [PlayFab Party Unity Plugin](../../../features/multiplayer/networking/party-unity-overview)
+> For a fully supported PlayFab Multiplayer and Chat Experience on Unity, see the [PlayFab Party Unity Plugin](../../features/multiplayer/networking/party-unity-overview)
 > https://github.com/MicrosoftDocs/playfab-docs-pr/blob/kdearnley-fix-build-warning-photon/playfab-docs/features/multiplayer/networking/party-unity-overview.md
 > 
 >  for more information.
@@ -101,7 +101,7 @@ Navigate to your title's **Game Manager** page, then:
 
 ## Setting Photon webhooks
 
-As an optional integration, Photon may transmit certain events to your PlayFab CloudScript. This is done by means of webhooks:
+As an optional integration, Photon may transmit certain events to your PlayFab CloudScript. This is done with webhooks:
 
 - You specify a Base URL.
 - Then you specify path for each of the available Events.
@@ -166,7 +166,7 @@ If **AppId** was accepted, the **Photon Server Settings** object is selected and
 > [!NOTE]
 > As part of **PhotonServerSettings**, you have the option to assign the **Chat Application ID**.
 
-At this point the project is configured.
+At this point, the project is configured.
 
 ## Implementing PlayFab to Photon authentication
 
@@ -292,7 +292,7 @@ For example, start a demo called **Demo Boxes**.
 
 ![Load demo](media/tutorials/photon-load-demo.png)  
 
-Photon starts outputting debug messages. By simply monitoring your console, you can easily spot if you have any authentication issues.
+Photon starts outputting debug messages. By monitoring your console, you can easily spot if you have any authentication issues.
 
 ![Photon debug console](media/tutorials/photon-debug-console.png)  
 
@@ -309,7 +309,7 @@ PlayFab allows you to intercept various room events. The following room events r
 - `RoomLeft`
 - `RoomClosed`
 
-The following events require additional control over Unity code to be intercepted (details are given later in this document):
+The following events require extra control over Unity code to be intercepted (details are given later in this document):
 
 - `RoomPropertyUpdated`
 - `RoomEventRaised`
@@ -331,7 +331,7 @@ handlers.RoomCreated = function (args) {
 ```
 
 > [!NOTE]
-> You may acquire additional data about the event using the "args" argument. 
+> You may acquire more data about the event using the "args" argument. 
 
 ```json
 {
@@ -375,7 +375,7 @@ handlers.RoomJoined = function (args) {
 };
 ```
 
-This callback isn't invoked for the very first user entering the room. Use `RoomCreated` to intercept the first player that joins. You may acquire additional data about the event using the "args" argument.
+This callback isn't invoked for the first user entering the room. Use `RoomCreated` to intercept the first player that joins. You may acquire more data about the event using the "args" argument.
 
 ```json
 {
@@ -403,7 +403,7 @@ handlers.RoomLeft = function (args) {
 };
 ```
 
-You may acquire additional data about the event using "args" argument.
+You may acquire more data about the event using "args" argument.
 
 ```json
 {
@@ -434,7 +434,7 @@ handlers.RoomClosed = function (args) {
 };
 ```
 
-You may acquire additional data about the event using "args" argument.
+You may acquire more data about the event using "args" argument.
 
 ```json
   "ActorCount": 0,
@@ -468,7 +468,7 @@ handlers.RoomPropertyUpdated = function (args) {
 > [!NOTE]
 > The `currentPlayerId` is undefined in this handler. If the room property was changed from the client, you may use the "args" argument, and refer to the UserId to acquire the player in charge.
 
-You may acquire additional data about the event using "args" argument.
+You may acquire more data about the event using "args" argument.
 
 ```json
 {
@@ -569,7 +569,7 @@ handlers.RoomEventRaised= function (args) {
 };
 ```
 
-You may acquire additional data about the event using "args" argument.
+You may acquire more data about the event using "args" argument.
 
 ```json
 {
@@ -708,9 +708,9 @@ handlers.RoomEventRaised = function (args) {
 };
 ```
 
-The code does nothing more than posting a new title event whenever a Photon callback is invoked. Being of no use in production, this example will let us clearly see how the callbacks are invoked.
+The code does nothing more than posting a new title event whenever a Photon callback is invoked. Being of no use in production, this example lets us clearly see how the callbacks are invoked.
 
-Extend the `PlayFabAuthenticator` script by including new example code that will raise a custom event, and set custom room property. The extended version also utilizes an `Awake` method to not destroy object between scene loads.
+Extend the `PlayFabAuthenticator` script by including new example code that raises a custom event, and set custom room property. The extended version also utilizes an `Awake` method to not destroy object between scene loads.
 
 ```csharp
 using System.Collections.Generic;
