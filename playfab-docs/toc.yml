@@ -42,8 +42,6 @@ items:
   href: features/pricing/toc.yml
 - name: Roadmap
   href: roadmap/toc.yml
-- name: Release notes
-  href: release-notes/toc.yml
 - name: Reference
   href: api-references/toc.yml
 - name: SDKs

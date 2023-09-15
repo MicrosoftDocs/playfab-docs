@@ -46,13 +46,9 @@
     href: concepts-port-usage.md
   - name: Multiple network usage
     href: concepts-multiple-networks.md
-- name: Pricing
-  href: pricing.md
 - name: Regions and QoS
   items:
   - name: QoS
     href: concepts-regions.md
   - name: Supported Azure regions
     href: supported-azure-regions.md
-- name: Release notes
-  href: release-notes.md
