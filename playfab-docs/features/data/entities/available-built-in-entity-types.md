@@ -84,5 +84,5 @@ The `game_server` entity is a unique entity used by game servers primarily for u
 
 This entity gives game servers their own identity which is useful to uniquely identify them for subscribing to real-time updates for Matchmaking and Lobby, as well as supporting specific features like Lobby owner migration.
 
-To authenticate as a `game_server` entity, call the API [AuthenticateGamServerWithCustomId](xref:authenticate-game-server-with-custom-id) as a title entity and retrieve the `game_server` entity key and token pair. Use this entity key when using the PlayFab Multiplayer SDK with [PFMultiplayerSetEntityToken](xref:link). 
+To authenticate as a `game_server` entity, call the API [AuthenticateGamServerWithCustomId](xref:titleid.playfabapi.com.client.authentication..authentication.authenticate-game-server-with-custom-id) as a title entity and retrieve the `game_server` entity key and token pair. Use this entity key when using the PlayFab Multiplayer SDK with [PFMultiplayerSetEntityToken](xref:link). 
 
