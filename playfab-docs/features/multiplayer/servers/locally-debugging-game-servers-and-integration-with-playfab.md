@@ -165,6 +165,7 @@ If the game server is running in a container, there might be an additional level
 - Ensure firewalls (windows and other anti-virus) are configured to allow the traffic over the ports.
 - If you get an error similar to: `Docker API responded with status code=InternalServerError, response={"message":"failed to create endpoint <container_name> on network playfab: hnsCall failed in Win32: The specified port already exists". It is likely there is already a container running on the specified port.` This can happen if **LocalMultiplayerAgent** exits prematurely. Use the command `docker ps` to find the container that is running, and then kill it using `docker kill <container_name>`.
 - If you get an error that contains `Failed to find network 'playfab'`. Try rerunning *Setup.ps1*
+- If you get an `Unhandled Exception` error, you may be running PowerShell as an Administrator.
 
 ### Known Limitations
 
