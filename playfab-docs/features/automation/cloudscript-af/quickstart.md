@@ -25,7 +25,7 @@ There are a couple of steps needed to get started with PlayFab C# CloudScript.
     - To minimize latency of your CloudScript using Azure Functions place them in the *US-West*, *US-West 2*, or *US-West 3* Azure regions.
     - **Security Note:** From a security perspective, you should make sure to only use a given function secret with PlayFab and not use it for calling the same function from any other source.
     - **Security Note:** For queued functions, you should set up a distinct storage account for the queues used for the queue trigger.
-- A [PlayFab account](https://developer.playfab.com/signup)
+- A [PlayFab](https://playfab.com/) account.
 
 > [!NOTE]
 > PlayFab Azure Functions can use the Azure Functions V2 runtime or greater, and .NET Core 2 or greater. We recommend that you use the latest version (currently Azure Functions V4 and .NET 6).
