@@ -261,7 +261,7 @@ DefaultPlatformService=PlayFab
 ```
 UE OnlineSubsystemModule creates an online subsystem instance for PlayFab, therefore start creating ⁠the PlayFabSingleton. At this point, SDK is initialized in⁠ FOnlineSubsystemPlayFab::Init(),
 where it initializes both Party and Multiplayer SDKs with PlayFab TitleID (this titleID is defined inside [Game Configuration](#game-configuration) file. During initialization,
-we'll ⁠CreatePlayFabSocketSubsystem() as main online subsystem. 
+we'll ⁠CreatePlayFabSocketSubsystem() as the main online subsystem. 
 
 Workflow of Multiplayer SDK: FOnlineSubsystemPlayFab::Init() initializes the InitializeMultiplayer() multiplayer SDK singleton for your title. In the PlayFabLobby.cpp, FPlayFabLobby::DoWork() processes the
 state changes triggered by Multiplayer APIs (view Platforms/GDK/Include/PFLobby.h for APIs).
