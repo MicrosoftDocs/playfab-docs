@@ -165,7 +165,7 @@ All platforms allow VoIP by default. To disable VoIP for a specific platform, ad
 These steps complete the setup of OSS required to be used in your game.  Good luck!
 
 ## Use in Game Code
-Same as how to use other Online Subsystem plugins:
+Similar to using other Online Subsystem plugins:
 
 Add `PublicDependencyModuleNames.AddRange(new string[] { "OnlineSubsystem", "OnlineSubsystemUtils" });` in **Game.Build.cs**, then use it the same way as other game plugins.
 
@@ -252,15 +252,15 @@ Users may face issues when trying to create an Unreal Engine Installed Build wit
     ```
 * Repeat the above process for XB1 (PlayFabParty_XB1.uplugin) and XSX (PlayFabParty_XSX.uplugin) if these platforms are required for the Installed Build. If Win64 is also a required platform for the installed build, add Win64 in the array of **PlatformDenyList**.
 
-## Workflow of OnlineSubsystemPlayFab
+## Workflow for OnlineSubsystemPlayFab
 
-After adding below code (as the above instruction)
+The steps outlined in the [Platform Specific Considerations](#platform-specific-considerations) section ask you to include:
 ```
 [OnlineSubsystem]
 DefaultPlatformService=PlayFab
 ```
-UE OnlineSubsystemModule creates an online subsystem instance for PlayFab, therefore start creating ⁠the PlayFabSingleton. At this point, SDK is initialized in⁠ FOnlineSubsystemPlayFab::Init(),
-where it initializes both Party and Multiplayer SDKs with PlayFab TitleID (this titleID is defined inside [Game Configuration](#game-configuration) file. During initialization,
+UE OnlineSubsystemModule creates an online subsystem instance for PlayFab and starts creating ⁠the PlayFabSingleton. At this point, SDK is initialized in⁠ FOnlineSubsystemPlayFab::Init(),
+where it initializes both Party and Multiplayer SDKs with PlayFab TitleID (this titleID is defined inside the [Game Configuration](#game-configuration) file. During initialization,
 we'll ⁠CreatePlayFabSocketSubsystem() as the main online subsystem. 
 
 Workflow of Multiplayer SDK: FOnlineSubsystemPlayFab::Init() initializes the InitializeMultiplayer() multiplayer SDK singleton for your title. In the PlayFabLobby.cpp, FPlayFabLobby::DoWork() processes the
