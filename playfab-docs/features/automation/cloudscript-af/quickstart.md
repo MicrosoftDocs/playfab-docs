@@ -40,9 +40,9 @@ There are a couple of steps needed to get started with PlayFab C# CloudScript.
     > In a production environment, in most cases, you shouldn't use Anonymous authorization since it enables anyone to call your function endpoint. To properly secure your function in the PlayFab environment, we recommend that you use `Function` level authorization.
     >
 
-2. After you create and deploy your function, select the **Register Function** button in the top right hand corner of the **Functions (Preview)** page.
+2. After you create and deploy your function, go to  **Automation** > **Cloud Script** and select **Register Function** button in the top right hand corner of the page.
 
-   ![Register CloudScript Function](media/register_cs_function.jpg)
+   ![Register CloudScript Function](media/register_cs_function.png)
     
 3. For **Name**, enter a human-friendly name for your function. For **Function URL**, enter the HTTP Trigger URL of the function. The URL can be found in the context menu of the Azure function resource as shown in "Run the function in Azure" section of [Quickstart: Create a function in Azure using Visual Studio Code](/azure/azure-functions/create-first-function-vs-code-csharp?pivots=programming-language-csharp#run-the-function-in-azure). If your Azure Function uses `Function` level authorization, the URL contains  the Authorization key.
 
@@ -243,7 +243,7 @@ Azure Functions can also be called by creating rules and scheduled tasks.  This 
 
 A list of available Azure Functions that you've registered will be available in the drop-down list.
 
-![Configure Rule for Azure Functions](media/azure_function_rules.jpg)
+![Configure Rule for Azure Functions](media/azure_function_rules.png)
 
 ## Debugging your Azure Function
 
