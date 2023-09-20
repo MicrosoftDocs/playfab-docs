@@ -94,7 +94,7 @@ bHasPlayFabVoiceEnabled=<REPLACE ME with true/false>
 
 [/Script/OnlineSubsystemPlayFab.PlayFabNetDriver]
 NetConnectionClassName="OnlineSubsystemPlayFab.PlayFabNetConnection"
-ReplicationDriverClassName="<REPLACE ME with your existing replication driver class name>" . Skip if the game doesn't have a replication driver class.
+ReplicationDriverClassName="<REPLACE ME with your existing replication driver class name>" . Skip if the game doesn't have a replication driver class (https://docs.unrealengine.com/5.2/en-US/replication-graph-in-unreal-engine/).
 ConnectionTimeout=15.0
 InitialConnectTimeout=30.0
 
