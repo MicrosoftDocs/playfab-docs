@@ -25,7 +25,7 @@ There are a couple of steps needed to get started with PlayFab C# CloudScript.
     - To minimize latency of your CloudScript using Azure Functions place them in the *US-West*, *US-West 2*, or *US-West 3* Azure regions.
     - **Security Note:** From a security perspective, you should make sure to only use a given function secret with PlayFab and not use it for calling the same function from any other source.
     - **Security Note:** For queued functions, you should set up a distinct storage account for the queues used for the queue trigger.
-- A [PlayFab account](https://developer.playfab.com/signup)
+- A [PlayFab](https://playfab.com/) account.
 
 > [!NOTE]
 > PlayFab Azure Functions can use the Azure Functions V2 runtime or greater, and .NET Core 2 or greater. We recommend that you use the latest version (currently Azure Functions V4 and .NET 6).
@@ -40,9 +40,9 @@ There are a couple of steps needed to get started with PlayFab C# CloudScript.
     > In a production environment, in most cases, you shouldn't use Anonymous authorization since it enables anyone to call your function endpoint. To properly secure your function in the PlayFab environment, we recommend that you use `Function` level authorization.
     >
 
-2. After you create and deploy your function, select the **Register Function** button in the top right hand corner of the **Functions (Preview)** page.
+2. After you create and deploy your function, go to  **Automation** > **Cloud Script** and select **Register Function** button in the top right hand corner of the page.
 
-   ![Register CloudScript Function](media/register_cs_function.jpg)
+   ![Register CloudScript Function](media/register_cs_function.png)
     
 3. For **Name**, enter a human-friendly name for your function. For **Function URL**, enter the HTTP Trigger URL of the function. The URL can be found in the context menu of the Azure function resource as shown in "Run the function in Azure" section of [Quickstart: Create a function in Azure using Visual Studio Code](/azure/azure-functions/create-first-function-vs-code-csharp?pivots=programming-language-csharp#run-the-function-in-azure). If your Azure Function uses `Function` level authorization, the URL contains  the Authorization key.
 
@@ -243,7 +243,7 @@ Azure Functions can also be called by creating rules and scheduled tasks.  This 
 
 A list of available Azure Functions that you've registered will be available in the drop-down list.
 
-![Configure Rule for Azure Functions](media/azure_function_rules.jpg)
+![Configure Rule for Azure Functions](media/azure_function_rules.png)
 
 ## Debugging your Azure Function
 
