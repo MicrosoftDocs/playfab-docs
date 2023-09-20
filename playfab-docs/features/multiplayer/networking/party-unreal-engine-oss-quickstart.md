@@ -29,8 +29,13 @@ Go to [PlayFab Online SubSystem](https://github.com/PlayFab/PlayFabMultiplayerUn
 
 ## Initial setup
 
-* Copy the **OnlineSubsystemPlayFab** folder and its contents from to your UE directory under **Engine\Plugins\Online**
-* Apply the following changes to the Plugins section of your ".uproject" file to add the OnlineSubsystemPlayFab to your plugin list.
+### Unreal Engine code base
+* Copy the **OnlineSubsystemPlayFab** folder and its contents from to your UE directory under **Engine\Plugins\Online**.
+* Run **GenerateProjectFiles.bat** to create project files for the engine.
+* Load the project into Visual Studio by double-clicking the new **UE5.sln** file.
+* Set your solution configuration to **Development Editor** and your solution platform to **Win64**, then right click the **UE5** target and select **Build**.
+### Game code base
+* Apply the following changes to the Plugins section of your **.uproject** file to add the OnlineSubsystemPlayFab to your plugin list.
   * You may remove any platforms that you're not shipping on
   * Use XboxOneGDK instead of XB1 if you are using UE4, since UE5 deprecates XboxOneGDK
 
@@ -58,6 +63,7 @@ Go to [PlayFab Online SubSystem](https://github.com/PlayFab/PlayFabMultiplayerUn
  ]
 }
 ```
+* Generate the game solution file by right-clicking the **.uproject** file and selecting 'Switch Unreal Engine Version' to the above Unreal Engine code path.
 
 ## Game Configuration
 
@@ -88,8 +94,7 @@ bHasPlayFabVoiceEnabled=<REPLACE ME with true/false>
 
 [/Script/OnlineSubsystemPlayFab.PlayFabNetDriver]
 NetConnectionClassName="OnlineSubsystemPlayFab.PlayFabNetConnection"
-ReplicationDriverClassName="<REPLACE ME with your existing replication driver class name>" . Generally, it could be found in MyGame/Config/DefaultEngine.ini file,
-							the value should looks like: ReplicationDriverClassName="/Script/MyGame.MyReplicationGraph".
+ReplicationDriverClassName="<REPLACE ME with your existing replication driver class name>" . Skip if the game doesn't have a replication driver class (https://docs.unrealengine.com/5.2/en-US/replication-graph-in-unreal-engine/).
 ConnectionTimeout=15.0
 InitialConnectTimeout=30.0
 
@@ -159,6 +164,55 @@ All platforms allow VoIP by default. To disable VoIP for a specific platform, ad
 ```
 These steps complete the setup of OSS required to be used in your game.  Good luck!
 
+## Use in Game Code
+Similar to using other Online Subsystem plugins:
+
+Add `PublicDependencyModuleNames.AddRange(new string[] { "OnlineSubsystem", "OnlineSubsystemUtils" });` in **Game.Build.cs**, then use it the same way as other game plugins.
+
+Example code in GameSession.cpp:
+
+```
+#include "OnlineSubsystem.h"
+#include "OnlineSubsystemUtils.h"
+
+...
+
+bool Game::JoinSession(const FUniqueNetIdPtr UserId, FName SessionName, const FOnlineSessionSearchResult& SearchResult)
+{
+
+	IOnlineSubsystem* OnlineSub = Online::GetSubsystem(GetWorld()); // Using OnlineSubsystemPlayFab plugin
+	if (OnlineSub)
+	{
+		IOnlineSessionPtr Sessions = OnlineSub->GetSessionInterface(); // Using OnlineSessionInterfacePlayFab.h
+		if (Sessions.IsValid() && UserId.IsValid())
+		{
+			// ...
+		}
+	}
+	// ...
+}
+
+```
+
+Example code in GameFriends.cpp:
+```
+#include "OnlineSubsystem.h"
+#include "OnlineSubsystemUtils.h"
+
+...
+
+void Game::ViewFriendProfile()
+{
+	IOnlineSubsystem* OnlineSub = Online::GetSubsystem(GetWorld()); // Using OnlineSubsystemPlayFab plugin
+	if (OnlineSub)
+	{
+		IOnlineIdentityPtr Identity = OnlineSub->GetIdentityInterface(); // Using OnlineIdentityInterfacePlayFab.h
+		if (Identity.IsValid() && Friends.IsValidIndex(FriendIndex))
+		{
+			// ....
+		}
+}
+```
 ## Troubleshoot: Unreal Engine Installed Builds
 
 Users may face issues when trying to create an Unreal Engine Installed Build with the OnlineSubsystemPlayFab on GDK build flavors. We provide the following guidance to successfully overcome this issue until there's a more complete solution.
@@ -198,16 +252,16 @@ Users may face issues when trying to create an Unreal Engine Installed Build wit
     ```
 * Repeat the above process for XB1 (PlayFabParty_XB1.uplugin) and XSX (PlayFabParty_XSX.uplugin) if these platforms are required for the Installed Build. If Win64 is also a required platform for the installed build, add Win64 in the array of **PlatformDenyList**.
 
-## Workflow of PF OSS
+## Workflow for OnlineSubsystemPlayFab
 
-After adding below code (as the above instruction)
+The steps outlined in the [Platform Specific Considerations](#platform-specific-considerations) section ask you to include:
 ```
 [OnlineSubsystem]
 DefaultPlatformService=PlayFab
 ```
-UE OnlineSubsystemModule creates online subsystem instance for PlayFab, therefore start creating ⁠PlayFabSingleton. At this point, SDK is initialized in⁠ FOnlineSubsystemPlayFab::Init(), 
-where it initializes both Party and Multiplayer SDKs with PlayFab TitleID (this titleID is defined inside [Game Configuration](#game-configuration) file. During initialization,
-we'll ⁠CreatePlayFabSocketSubsystem() as main online subsystem. 
+UE OnlineSubsystemModule creates an online subsystem instance for PlayFab and starts creating ⁠the PlayFabSingleton. At this point, SDK is initialized in⁠ FOnlineSubsystemPlayFab::Init(),
+where it initializes both Party and Multiplayer SDKs with PlayFab TitleID (this titleID is defined inside the [Game Configuration](#game-configuration) file. During initialization,
+we'll ⁠CreatePlayFabSocketSubsystem() as the main online subsystem. 
 
 Workflow of Multiplayer SDK: FOnlineSubsystemPlayFab::Init() initializes the InitializeMultiplayer() multiplayer SDK singleton for your title. In the PlayFabLobby.cpp, FPlayFabLobby::DoWork() processes the
 state changes triggered by Multiplayer APIs (view Platforms/GDK/Include/PFLobby.h for APIs).
