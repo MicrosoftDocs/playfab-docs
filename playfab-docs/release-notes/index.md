@@ -1,7 +1,7 @@
 ---
-title: PlayFab Release Notes 2023
+title: PlayFab Services SDK Release Notes 2023
 author: amccalib
-description: PlayFab Release Notes for 2023.
+description: PlayFab Services SDK Release Notes for 2023.
 ms.author: andmcc
 ms.date: 07/10/2023
 ms.topic: article
@@ -9,10 +9,18 @@ ms.service: playfab
 keywords: playfab, development, release, apis, features
 ms.localizationpriority: medium
 ---
-# PlayFab Release Notes 2023
+# PlayFab Services SDK Release Notes 2023
 
 > [!NOTE]
 > For release notes about service releases and product updates, see the [release notes](https://github.com/PlayFab/PlayFab/releases) section on [PlayFab's public GitHub repository](https://github.com/PlayFab/PlayFab)
+
+## 230915
+
+Date: September 15, 2023
+
+ - Added PageSize and SkipToken to ListContainerImageTagsRequest and Response in the Multiplayer API
+ - Added AttributeStatistics and Scores properties to the Statistics field of Profile objects returned in the Profile API
+ - Added LinkNintendoServiceAccountSubject call to the Server API
 
 ## 230901
 

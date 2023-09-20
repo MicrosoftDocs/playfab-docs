@@ -52,4 +52,4 @@ Chat controls, on the other hand, more closely represent individual players. A s
 
 PlayFab Party's usage measurement is impacted by the number of networks a player is connected to. The *Party Connectivity* billing meter is calculated per-network, so using multiple networks simultaneously costs more than using a single network. Be sure to consider the cost-impact when planning your game architecture.
 
-You can view more information about PlayFab Party costs on the [PlayFab Party Pricing](pricing.md) page.
+You can view more information about PlayFab Party costs on the [PlayFab Party Pricing](../../pricing/meters/meters.md#party) page.
