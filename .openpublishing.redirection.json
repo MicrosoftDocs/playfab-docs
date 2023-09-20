@@ -422,12 +422,12 @@
         },
         {
             "source_path": "playfab-docs/features/multiplayer/networking/party-getting-started.md",
-            "redirect_url": "playfab-docs/features/multiplayer/networking/quickstart.md",
+            "redirect_url": "/gaming/playfab/features/multiplayer/networking/quickstart",
             "redirect_document_id": false
         },
         {
             "source_path": "playfab-docs/features/multiplayer/networking/pricing.md",
-            "redirect_url": "playfab-docs/features/pricing/meters/meters#party ",
+            "redirect_url": "/gaming/playfab/features/pricing/meters/meters#party",
             "redirect_document_id": false
         }
     ]
