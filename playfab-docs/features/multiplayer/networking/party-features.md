@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 This topic provides details about Azure PlayFab Party features and how you can use them in your game.
 
-For a high-level summary of Party features, see [Party overview](index.md). If you're ready to start developing, see [Getting started with Party](party-getting-started.md).
+For a high-level summary of Party features, see the [Party overview](index.md). If you're ready to start developing, see the [Party Quickstart](quickstart.md).
 
 ## Interoperable multiplayer infrastructure
 
@@ -78,7 +78,7 @@ Party chat offers the following communication functionalities.
 
 - **Text moderation:** Text chat can be moderated in real-time to filter out offensive language. For more information, see [Using text moderation](concepts-text-moderation.md).
 
-Speech-to-text, text-to-speech, and real-time translation use Azure Cognitive Services to power these functionalities. We recommend associating the activation of these capabilities under the Ease of Access player settings. For information about rates and pricing, see [PlayFab pricing](https://playfab.com/pricing/) and [Party pricing](pricing.md).
+Speech-to-text, text-to-speech, and real-time translation use Azure Cognitive Services to power these functionalities. We recommend associating the activation of these capabilities under the Ease of Access player settings. For information about rates and pricing, see [PlayFab pricing](https://playfab.com/pricing/) and [Party pricing](../../pricing/meters/meters.md#party).
 
 To learn more, see [Understanding how Party chat works](concepts-chat.md). For more guidance on how to use the accessibility features that are provided by Party, see [Text-to-speech guidelines](party-text-to-speech-ux-guidelines.md) and [Speech-to-text guidelines](party-speech-to-text-ux-guidelines.md).
 
@@ -112,7 +112,7 @@ We have a helper module for the Xbox Live social platform. It helps takes care o
 ## See also
 
 * [Party overview](index.md)
-* [Getting started with Party](party-getting-started.md)
+* [Party Quickstart](quickstart.md)
 * [Multiplayer servers](../servers/index.md)
 * [Multiplayer](../mpintro.md)
 * [Matchmaking](../matchmaking/index.md)

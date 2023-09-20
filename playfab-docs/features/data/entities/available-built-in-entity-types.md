@@ -77,3 +77,12 @@ Set the `ID` field to any `characterId` from `result.Characters[i].CharacterId`.
 The `group` entity is a container  for other entities. It is currently limited to players and characters.
 
 Set the `ID` field to the `result.Group.Id` if you are creating a group, or the `result.Groups[i].Group.Id` when [listing your memberships](xref:titleid.playfabapi.com.groups.groups.listmembership).
+
+## game_server 
+
+The `game_server` entity is a unique entity used by game servers primarily for use in the Matchmaking and Lobby features. Future scenarios may be added to support other PlayFab features. 
+
+This entity gives game servers their own identity which is useful to uniquely identify them for subscribing to real-time updates for Matchmaking and Lobby, as well as supporting specific features like Lobby owner migration.
+
+To authenticate as a `game_server` entity, call the API [AuthenticateGameServerWithCustomId](xref:titleid.playfabapi.com.authentication.authentication.authenticategameserverwithcustomid) as a title entity and retrieve the `game_server` entity key and token pair. Use this entity key when using the PlayFab Multiplayer SDK with [PFMultiplayerSetEntityToken](../../multiplayer/lobby/playfabmultiplayerreference-cpp/pfmultiplayer/functions/pfmultiplayersetentitytoken.md). 
+

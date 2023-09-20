@@ -47,4 +47,4 @@ If you have more questions, post them on [PlayFab forums](https://community.play
 
 * [Party SDKs](party-sdks.md)
 * [Party samples](party-samples.md)
-* [Getting started with Party](party-getting-started.md)
+* [Party Quickstart](quickstart.md)

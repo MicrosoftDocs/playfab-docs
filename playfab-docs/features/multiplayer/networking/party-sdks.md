@@ -60,7 +60,7 @@ If you're looking for the core PlayFab SDK that helps you implement a majority o
 * [Quickstart for Unity](party-unity-plugin-quickstart.md)
 * [Quickstart for Unreal](party-unreal-engine-oss-quickstart.md)
 * [Party overview](index.md)
-* [Getting started with Party](party-getting-started.md)
+* [Party Quickstart](quickstart.md)
 
 "PlayStation" is a registered trademark or trademark of Sony Interactive Entertainment Inc.
 "PS4" is a registered trademark or trademark of Sony Interactive Entertainment Inc.
