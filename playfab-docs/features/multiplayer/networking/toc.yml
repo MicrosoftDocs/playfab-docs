@@ -1,54 +1,72 @@
 - name: Overview
-  href: index.md
-- name: Features
-  href: party-features.md
-- name: Get started
+  items:
+  - name: Overview
+    href: index.md
+  - name: Features
+    href: party-features.md
+  - name: Party objects and their relationships
+    href: concepts-objects.md
+- name: Quickstart
   items:
   - name: Quickstart
     href: quickstart.md
-  - name: Samples
-    href: party-samples.md
   - name: Enable Party in Game Manager
     href: enable-party.md
-  - name: Party objects and their relationships
-    href: concepts-objects.md
-- name: Chat
+  - name: Android quickstart
+    href: android-specific-requirements.md
+  - name: iOS and macOS quickstart
+    href: apple-specific-requirements.md
+  - name: Party Unity Plugin quickstart
+    href: party-unity-plugin-quickstart.md
+- name: Networking
   items:
-  - name: Overview
+  - name: Tutorials
+    items:
+    - name: Invitations and the security model
+      href: concepts-invitations-security-model.md
+    - name: Integrate discovery with Party
+      href: concepts-discovery.md
+    - name: Configuring transport behavior
+      href: transport-options.md
+    - name: Direct peer-to-peer connections
+      href: concepts-direct-peer-connectivity.md
+    - name: Port Usage and Firewall Requirements
+      href: concepts-port-usage.md
+    - name: Multiple network usage
+      href: concepts-multiple-networks.md
+  - name: Regions and QoS
+    items:
+    - name: QoS
+      href: concepts-regions.md
+    - name: Supported Azure regions
+      href: supported-azure-regions.md
+- name: Voice and Text Chat
+  items:
+  - name: Chat Overview
     href: concepts-chat.md
-  - name: Accessibility
+  - name: Troubleshooting voice chat
+    href: concepts-audio-troubleshooting.md
+  - name: Accessibility Best Practices
     items:
     - name: Text-to-speech and text input UX guidelines
       href: party-text-to-speech-ux-guidelines.md
     - name: Speech-to-text and text display UX guidelines
       href: party-speech-to-text-ux-guidelines.md
-  - name: Chat permissions and muting
-    href: concepts-chat-permissions-and-muting.md
-  - name: Custom voice effects via real-time audio manipulation
-    href: concepts-realtime-audio-manipulation.md
-  - name: Troubleshooting voice chat
-    href: concepts-audio-troubleshooting.md
-  - name: Using text moderation
-    href: concepts-text-moderation.md
-  - name: Voice audio noise suppression
-    href: concepts-noise-suppression.md
-- name: Networking and security
+  - name: Tutorials
+    items:
+    - name: Chat permissions and muting
+      href: concepts-chat-permissions-and-muting.md
+    - name: Custom voice effects via real-time audio manipulation
+      href: concepts-realtime-audio-manipulation.md
+    - name: Using text moderation
+      href: concepts-text-moderation.md
+    - name: Voice audio noise suppression
+      href: concepts-noise-suppression.md
+- name: Reference
   items:
-  - name: Invitations and the security model
-    href: concepts-invitations-security-model.md
-  - name: Integrate discovery with Party
-    href: concepts-discovery.md
-  - name: Transport options
-    href: transport-options.md
-  - name: Direct peer-to-peer connections
-    href: concepts-direct-peer-connectivity.md
-  - name: Port Usage and Firewall Requirements
-    href: concepts-port-usage.md
-  - name: Multiple network usage
-    href: concepts-multiple-networks.md
-- name: Regions and QoS
-  items:
-  - name: QoS
-    href: concepts-regions.md
-  - name: Supported Azure regions
-    href: supported-azure-regions.md
+  - name: C++ SDK Reference
+    href: reference/party_members.md
+  - name: C++ SDK Error Codes
+    href: reference/partyerrors.md
+  - name: Samples
+    href: party-samples.md
