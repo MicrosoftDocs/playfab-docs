@@ -1,7 +1,7 @@
 ---
 title: Making Webhook calls from CloudScript
 author: joannaleecy
-description: Describes how to make Webhook calls from CloudScript, for both non-secure and secure scenarios.
+description: Describes how to make Webhook calls from CloudScript, for both nonsecure and secure scenarios.
 ms.author: joanlee
 ms.date: 02/11/2018
 ms.topic: article
@@ -20,7 +20,7 @@ One of the less well-known features of CloudScript is that you can make Webhook 
 
 This allows titles to make calls to basic informational services, but it *also* enables more complex scenarios (such as using OAuth), to secure a communication to an endpoint you own.
 
-This tutorial discusses making Webhook calls from CloudScript, for both *non-secure* and *secure* scenarios.
+This tutorial discusses making Webhook calls from CloudScript, for both *nonsecure* and *secure* scenarios.
 
 As a REST call, the structure of a Webhook call from CloudScript is simple. The elements to be specified are:
 
@@ -76,9 +76,9 @@ The response back to the client at the end of running the CloudScript might look
 }
 ```
 
-If, however, you have a *secure* service you need to communicate with, you will *first* need to exchange credentials with that service to establish identity.
+If, however, you have a *secure* service you need to communicate with, you'll *first* need to exchange credentials with that service to establish identity.
 
-For an OAuth solution, that means requesting a Bearer Access token, using your client ID and secret. This will vary based upon your specific OAuth implementation, but your call could look something like the following example.
+For an OAuth solution, that means requesting a Bearer Access token, using your client ID and secret. This varies based upon your specific OAuth implementation, but your call could look something like the following example.
 
 ```javascript
 //CloudScript
@@ -119,4 +119,4 @@ As you can see, these calls would all be made using SSL, in order to help preven
 
 Using HTTP calls from CloudScript, you can make calls into any other web API you need to for your title. This allows you to extend your title functionality beyond even what PlayFab offers directly, giving you the option to make and use your own custom services - or access others.
 
-Because this all takes place within CloudScript, it provides a server-authoritative context in which to make those calls. This means that they will have the necessary protections in your CloudScript to help prevent players from cheating, or accessing features and data they shouldn’t.
+Because this all takes place within CloudScript, it provides a server-authoritative context in which to make those calls. This means that they'll have the necessary protections in your CloudScript to help prevent players from cheating, or accessing features and data they shouldn’t.
