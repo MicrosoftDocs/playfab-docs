@@ -1,7 +1,7 @@
 ---
-title: ES6 features in CloudScript (Legacy)
+title: ES6 features in CloudScript
 author: joannaleecy
-description: Describes how to use ECMAScript 6 (ES6) features when writing CloudScript (Legacy).
+description: Describes how to use ECMAScript 6 (ES6) features when writing CloudScript.
 ms.author: joanlee
 ms.date: 06/11/2018
 ms.topic: article
@@ -10,9 +10,9 @@ keywords: playfab, automation, cloudscript, ecmascript6
 ms.localizationpriority: medium
 ---
 
-# ES6 features in CloudScript (Legacy)
+# ES6 features in CloudScript
 
-The CloudScript (Legacy) runtime environment supports most of the modern ECMAScript 6 features. While a majority of these features are syntactical tricks, you can use them to improve and clean your CloudScript (Legacy) code.
+The CloudScript runtime environment supports most of the modern ECMAScript 6 features. While a majority of these features are syntactical tricks, you can use them to improve and clean your CloudScript code.
 
 A complete overview of ES6 features is available in this [Cheat Sheet](https://devhints.io/es6).
 

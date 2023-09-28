@@ -5,14 +5,14 @@
 - name: Tutorials
   href: tutorials.md
   items:
-  - name: ES6 features in CloudScript (Legacy)
+  - name: ES6 features in CloudScript
     href: es6-features-in-cloudscript.md
-  - name: Handling errors in CloudScript (Legacy)
+  - name: Handling errors in CloudScript
     href: handling-errors-in-cloudscript.md
-  - name: Making Webhook calls from CloudScript (Legacy)
+  - name: Making Webhook calls from CloudScript
     href: making-webhook-calls-from-cloudscript.md
   - name: SDK error handling best practices
     href: sdk-error-handling-best-practices.md
-  - name: Writing custom CloudScript (Legacy)
+  - name: Writing custom CloudScript
     href: writing-custom-cloudscript.md
 
