@@ -29,7 +29,7 @@ For broad API categories in these SDKs, see [API REST operation groups](/rest/ap
 
 | Language                          | Platform/environments                     |
 |-----------------------------------|-------------------------------------------|
-| C/C++                             | [Windows (Win32)](c/index.md), [GDK (Xbox and Windows)](c/index.md) |
+| C/C++                             | [Windows (Win32)](c/index.md), [GDK (Xbox and Windows)](c/index.md), [Switch](https://dev.azure.com/PlayFabPrivate/Switch/_git/PlayFabCSdk.Switch) |
 | Legacy C++                        | [Android, iOS, Linux, Windows](playfab-cpp/index.md), [Switch](https://dev.azure.com/PlayFabPrivate/Switch/_git/XPlatCppSdk-Private-Switch), [PlayStation 4](https://dev.azure.com/PlayFabPrivate/PS4/_git/XPlatCppSdk-Private-Ps4), [PlayStation 5](https://dev.azure.com/PlayFabPrivate/PS5/_git/XPlatCppSdk-Private-PS5) |
 | C#                                | [Xamarin](c-sharp/index.md) and other C#/.NET environments besides Unity |
 | Java                              | [Android apps](java/index.md) |
@@ -49,7 +49,7 @@ For broad API categories in these SDKs, see [API REST operation groups](/rest/ap
 | GDK (Xbox and Windows)    | [C/C++](c/index.md), [Unity](unity3d/index.md), [Unreal Engine](unreal/index.md) |
 | PlayStation 4             | [Legacy C++](https://dev.azure.com/PlayFabPrivate/PS4/_git/XPlatCppSdk-Private-Ps4), [Unity](unity3d/index.md), [Unreal Engine](unreal/index.md) |
 | PlayStation 5             | [Legacy C++](https://dev.azure.com/PlayFabPrivate/PS5/_git/XPlatCppSdk-Private-PS5), [Unity](unity3d/index.md), [Unreal Engine](unreal/index.md) |
-| Switch                    | [Legacy C++](https://dev.azure.com/PlayFabPrivate/Switch/_git/XPlatCppSdk-Private-Switch), [Unity](unity3d/index.md), [Unreal Engine](unreal/index.md)               |
+| Switch                    | [C/C++](https://dev.azure.com/PlayFabPrivate/Switch/_git/PlayFabCSdk.Switch), [Legacy C++](https://dev.azure.com/PlayFabPrivate/Switch/_git/XPlatCppSdk-Private-Switch), [Unity](unity3d/index.md), [Unreal Engine](unreal/index.md)               |
 | Windows (Win32)           | [C/C++](c/index.md), [Legacy C++](playfab-cpp/index.md), [Lua](lua/index.md) (community supported), [Unity](unity3d/index.md), [Unreal Engine](unreal/index.md) |
 | Services and Tools        | [C#](c-sharp/index.md), [Java](java/index.md), [JavaScript](javascript/index.md), [Node.js](nodejs/index.md), [Python](python/index.md)
 
