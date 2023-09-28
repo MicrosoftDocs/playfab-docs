@@ -74,16 +74,20 @@ Let's update the pipeline configuration, in this example we want to send batches
 
 Also, since we're sending maxWaitTimeInSeconds and pollDelayInMs as null pointers they use the default value for the respective pipeline type.
 
+We're also specifying a "Medium" compression level, setting this property compresses the body payloads and helps to optimize network resources utilization. 
+
 Then we proceed to call **PFEventPipelineUpdateConfiguration** passing the **PFEventPipelineHandle** that we got from previous step and the **PFEventPipelineConfig** struct.
 
 ```cpp
 uint32_t maxEvents = 10;
+PFHCCompressionLevel compressionLevel = PFHCCompressionLevel::Medium;
 
 PFEventPipelineConfig eventPipelineConfig
 {
-    &maxEvents,     // maxEventsPerBatch
-    nullptr,        // maxWaitTimeInSeconds
-    nullptr         // pollDelayInMs
+    &maxEvents,         // maxEventsPerBatch
+    nullptr,            // maxWaitTimeInSeconds
+    nullptr,            // pollDelayInMs
+    &compressionLevel   // compressionLevel
 };
 
 HRESULT hr = PFEventPipelineUpdateConfiguration(
