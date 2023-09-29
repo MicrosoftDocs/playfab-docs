@@ -5,7 +5,7 @@ description: "PFAccountManagementGetPlayerCombinedInfoRequest data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 05/24/2023
+ms.date: 09/25/2023
 ---
 
 # PFAccountManagementGetPlayerCombinedInfoRequest  
@@ -41,7 +41,7 @@ Flags for which pieces of info to return for the user.
 **`playFabId`** &nbsp; const char*  
 *is null-terminated*  
   
-PlayFabId of the user whose data will be returned. If not specified, we return the data for the calling player.
+PlayFabId of the user whose data will be returned. If not filled included, we return the data for the calling player. .
   
   
 ## Requirements  

@@ -83,8 +83,25 @@ The configurable properties are:
 - **maxEventsPerBatch**: The maximum number events that are batched before writing them to PlayFab.
 - **maxWaitTimeInSeconds**: The maximum time the pipeline waits before sending out an incomplete batch.
 - **pollDelayInMs**: How long the pipeline will wait to read from the event buffer again after emptying it.
+- **compressionLevel**: Defines the compression level that is used on the compression algorithm. For more details about compression, see _[GZIP Compression](#gzip-compression)_.
 
 In the case where **PFEventPipelineConfig** has only some properties specified, the ones being empty are overwritten and use the default values.
+
+For an example of how any of these properties can be updated for the event pipeline see _[Update Pipeline Configuration](#update-pipeline-configuration)_.
+
+#### **GZIP Compression**
+
+The Event Pipeline provides an option of compressing body payloads using GZIP Compression standard.
+
+The desired compression level can be specified inside the **PFEventPipelineConfig** struct that is part of the **PFEventPipelineUpdateConfiguration** API parameters.
+
+A lower compression level achieves less compression but has the highest speed and a higher compression level achieves better compression rates but has the slowest compression speed. The difference in compression rates is all dependent on the type of data being sent. Depending on the size and randomness of the data, compression rates can be the same even on different levels.
+
+**Trade-Offs:**
+
+Using compression increases CPU Time due to the added complexity of running a compression algorithm but, on the other hand, network body payload is dramatically decreased. So, depending on the game needs and resources, it's up to the game developer if compression should be used.
+
+Based on internal validation, there's an average of 20% increase in CPU Time and an average of 91% decrease in Payload Body Size. These percentages could largely vary depending on the payload size and complexity of the data being compressed.
 
 ## Event handlers
 
@@ -355,7 +372,6 @@ After this call, the pipeline will start logging any subsequent events linked to
 Expanding on the previous scenario, if the developer wants to go back to Telemetry Auth and detach the event logging from the entity they can call **PFEventPipelineRemoveUploadingEntity** and pass the event pipeline handle like this:
 
 ```cpp
-
 void EventPipelineRemoveEntity(PFEventPipelineHandle handle)
 {
     HRESULT hr = PFEventPipelineRemoveUploadingEntity(
@@ -382,12 +398,14 @@ void EventPipelineUpdateConfiguration(PFEventPipelineHandle handle)
     uint32_t maxEvents = 10;
     uint32_t maxWaitTime = 5;
     uint32_t pollDelay = 50;
+    PFHCCompressionLevel compressionLevel = PFHCCompressionLevel::Medium;
 
     PFEventPipelineConfig eventPipelineConfig
     {
         &maxEvents,             // maxEventsPerBatch
         &maxWaitTime,           // maxWaitTimeInSeconds
-        &pollDelay              // pollDelayInMs
+        &pollDelay,             // pollDelayInMs
+        &compressionLevel       // compressionLevel
     };
 
     HRESULT hr = PFEventPipelineUpdateConfiguration(

@@ -5,7 +5,7 @@ description: "PFSegmentsPlayerLocation data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 05/24/2023
+ms.date: 09/25/2023
 ---
 
 # PFSegmentsPlayerLocation  
@@ -37,7 +37,7 @@ The two-character continent code for this location.
   
 **`countryCode`** &nbsp; [PFCountryCode](../../pftypes/enums/pfcountrycode.md)  
   
-The two-character ISO 3166-1 country/region code for the country/region associated with the location.
+The two-character ISO 3166-1 country code for the country associated with the location.
   
 **`latitude`** &nbsp; double const*  
 *may be nullptr*  

@@ -5,7 +5,7 @@ description: "ContinentCode enum."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 09/25/2023
 ---
 
 # PFContinentCode  
@@ -23,7 +23,8 @@ enum class PFContinentCode  : uint32_t
     EU,  
     NA,  
     OC,  
-    SA  
+    SA,  
+    Unknown  
 }  
 ```  
   
@@ -38,6 +39,7 @@ enum class PFContinentCode  : uint32_t
 | NA | TBD   |  
 | OC | TBD   |  
 | SA | TBD   |  
+| Unknown | TBD   |  
   
   
 ## Requirements  

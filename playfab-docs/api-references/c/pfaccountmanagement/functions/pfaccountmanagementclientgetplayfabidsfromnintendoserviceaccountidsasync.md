@@ -5,7 +5,7 @@ description: "Retrieves the unique PlayFab identifiers for the given set of Nint
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 07/25/2023
+ms.date: 09/25/2023
 ---
 
 # PFAccountManagementClientGetPlayFabIDsFromNintendoServiceAccountIdsAsync  
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-This API is available on Nintendo Switch. When the asynchronous task is complete, call [PFAccountManagementClientGetPlayFabIDsFromNintendoServiceAccountIdsGetResultSize](pfaccountmanagementclientgetplayfabidsfromnintendoserviceaccountidsgetresultsize.md) and [PFAccountManagementClientGetPlayFabIDsFromNintendoServiceAccountIdsGetResult](pfaccountmanagementclientgetplayfabidsfromnintendoserviceaccountidsgetresult.md) to get the result.
+This API is available on Win32 and Nintendo Switch. When the asynchronous task is complete, call [PFAccountManagementClientGetPlayFabIDsFromNintendoServiceAccountIdsGetResultSize](pfaccountmanagementclientgetplayfabidsfromnintendoserviceaccountidsgetresultsize.md) and [PFAccountManagementClientGetPlayFabIDsFromNintendoServiceAccountIdsGetResult](pfaccountmanagementclientgetplayfabidsfromnintendoserviceaccountidsgetresult.md) to get the result.
   
 ## Requirements  
   

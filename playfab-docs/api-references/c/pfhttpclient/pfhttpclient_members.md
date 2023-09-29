@@ -5,7 +5,7 @@ description: "Services C API overview - PFHttpClient.h"
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 06/20/2023
+ms.date: 09/25/2023
 ---
 
 # Services C API overview - PFHttpClient.h
@@ -22,6 +22,7 @@ ms.date: 06/20/2023
 | [PFHCHttpCallCreate](functions/pfhchttpcallcreate.md) | Creates an HTTP call handle. |  
 | [PFHCHttpCallGetRequestUrl](functions/pfhchttpcallgetrequesturl.md) | Gets the request url for the HTTP call. |  
 | [PFHCHttpCallPerformAsync](functions/pfhchttpcallperformasync.md) | Perform HTTP call using the PFHCCallHandle. |  
+| [PFHCHttpCallRequestEnableGzipCompression](functions/pfhchttpcallrequestenablegzipcompression.md) | Enable GZIP compression on the provided body payload. |  
 | [PFHCHttpCallRequestSetHeader](functions/pfhchttpcallrequestsetheader.md) | Set a request header for the HTTP call. |  
 | [PFHCHttpCallRequestSetRequestBodyBytes](functions/pfhchttpcallrequestsetrequestbodybytes.md) | Set the request body bytes of the HTTP call. This API operation is mutually exclusive with PFHCHttpCallRequestSetRequestBodyReadFunction and will result in any custom read callbacks that were previously set on this call handle to be ignored. |  
 | [PFHCHttpCallRequestSetRequestBodyReadFunction](functions/pfhchttpcallrequestsetrequestbodyreadfunction.md) | Sets a custom callback function that will be used to read the request body when the HTTP call is performed. If a custom read callback is used, any request body data previously set by PFHCHttpCallRequestSetRequestBodyBytes or PFHCHttpCallRequestSetRequestBodyString is ignored making these API operations mutually exclusive. |  
@@ -81,4 +82,5 @@ ms.date: 06/20/2023
 
 | Enumeration | Description |  
 | --- | --- |  
+| [PFHCCompressionLevel](enums/pfhccompressionlevel.md) | Defines the compression level that will be used on the compression algorithm. Lower levels perform less compression but have the highest speed in the compression and higher levels perform better compression but have the slowest speed in the compression.|  
 | [PFHCConfigSetting](enums/pfhcconfigsetting.md) | Defines the config settings value that is passed to the below API's.|  

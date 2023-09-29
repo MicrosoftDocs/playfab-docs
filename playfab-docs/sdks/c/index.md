@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # PlayFab Services SDK for C/C++
 
-The PlayFab Services SDK is currently available for two platforms: Win32 (x64 only) and the Microsoft GDK. Depending on the platform you're targeting, the way you acquire the SDK differs.
+The PlayFab Services SDK is currently available for three platforms: Win32 (x64 only), Nintendo Switch, and the Microsoft GDK. Depending on the platform you're targeting, the way you acquire the SDK differs.
 
 ## Win32
 
@@ -20,13 +20,19 @@ Download from GitHub: [PlayFabCSdk Releases](https://github.com/PlayFab/PlayFabC
 
 ## GDK
 
-Starting with the March 2023 release, the Microsoft Game Development Kit (GDK) includes the PlayFab Services SDK as an extension library. That means you can include PlayFab in your Xbox and Windows games without another SDK download.
+The Microsoft Game Development Kit (GDK) includes the PlayFab Services SDK as an extension library. That means you can include PlayFab in your Xbox and Windows games without another SDK download.
 
 To learn more about the GDK, see the public documentation: [GDK documentation homepage](/gaming/gdk/).
 
+## Switch
+
+Before you can access the PlayFab Services SDK for Switch, you'll need to confirm your registered developer status via the PlayFab page in Nintendo's middleware directory. Please see more information here: [Request access](../../features/multiplayer/networking/request-access-for-sdks-samples.md).
+
+Once you've been granted access to the Switch SDK, you can download it from the git repo here: [PlayFabCSdk.Switch](https://dev.azure.com/PlayFabPrivate/Switch/_git/PlayFabCSdk.Switch).
+
 ## What this SDK includes
 
-The PlayFab Services SDK for C/C++ is solely for use by game clients on Windows and Xbox. It includes only the subset of feature areas and service calls appropriate for that scenario. We will be adding support for more platforms and scenarios over time.
+The PlayFab Services SDK for C/C++ is solely for use by game clients on Windows, Xbox, and Switch. It includes only the subset of feature areas and service calls appropriate for that scenario. We will be adding support for more platforms and scenarios over time.
 
 Here are some notable differences when compared to other, more general use, PlayFab SDKs:
 - This SDK omits any service calls that require admin or developer-level authentication. Specifically, any call that requires a developer secret key or title entity token to authorize isn't available in this SDK.
@@ -35,6 +41,7 @@ Here are some notable differences when compared to other, more general use, Play
     - __PFAuthenticationLoginWithSteamAsync__ uses a Steam token to authenticate with PlayFab.
     - __PFAuthenticationLoginWithCustomIdAsync__ uses a custom string provided by the developer.
     - __PFAuthenticationLoginWithOpenIdConnectAsync__ allows for a custom, sever-authoritative auth flow that depends on an existing OpenId backend implementation.
+    - __PFAuthenticationLoginWithNintendoServiceAccountAsync__ authenticates with PlayFab using the player's Nintendo Service Account.
 - This SDK removes some older or underutilized feature areas to reduce overall complexity. These areas include economy v1, player stats and leaderboards, and characters.
 
 ## Benefits of this SDK
@@ -45,7 +52,8 @@ Here are some notable differences when compared to other, more general use, Play
 
 ## Platforms supported by this SDK
 
-This SDK is appropriate for any x64 Win32 game and games utilizing the GDK on these platforms:
+This SDK is appropriate for any x64 Win32 game, Switch games, and games utilizing the GDK on these platforms:
+- Nintendo Switch
 - Windows
 - Xbox One
 - Xbox Series X|S
@@ -55,7 +63,7 @@ This SDK is appropriate for any x64 Win32 game and games utilizing the GDK on th
 There are two scenarios where this SDK may not be appropriate for your GDK or Windows game:
 
 - If your game utilizes a game engine for which there's already an engine-specific PlayFab SDK, that SDK is a better fit: [Unreal Engine](../unreal/index.md), [Unity3D](../unity3d/index.md).
-- At this time, we don't have versions of this SDK available for platforms beyond Windows and the GDK. Expanded platform support is planned soon. If your game is also targeting other platforms and you prefer to use a single SDK, you can continue to use the [Legacy C++ SDK](../playfab-cpp/index.md).
+- At this time, we don't have versions of this SDK available for platforms beyond Windows, Switch, and GDK. Expanded platform support is planned soon. If your game is also targeting other platforms and you prefer to use a single SDK, you can continue to use the [Legacy C++ SDK](../playfab-cpp/index.md).
 
 ## Add this SDK to your project
 
