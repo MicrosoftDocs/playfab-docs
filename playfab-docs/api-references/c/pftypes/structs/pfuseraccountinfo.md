@@ -5,7 +5,7 @@ description: "PFUserAccountInfo data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 05/24/2023
+ms.date: 09/25/2023
 ---
 
 # PFUserAccountInfo  
@@ -34,6 +34,7 @@ typedef struct PFUserAccountInfo {
     const char* playFabId;  
     PFUserPrivateAccountInfo const* privateInfo;  
     PFUserPsnInfo const* psnInfo;  
+    PFUserServerCustomIdInfo const* serverCustomIdInfo;  
     PFUserSteamInfo const* steamInfo;  
     PFUserTitleInfo const* titleInfo;  
     PFUserTwitchInfo const* twitchInfo;  
@@ -131,6 +132,11 @@ Count of openIdInfo
 *may be nullptr*  
   
 (Optional) User PlayStation :tm: Network account information, if a PlayStation :tm: Network account has been linked.
+  
+**`serverCustomIdInfo`** &nbsp; [PFUserServerCustomIdInfo](pfuserservercustomidinfo.md) const*  
+*may be nullptr*  
+  
+(Optional) Server Custom ID information, if a server custom ID has been assigned.
   
 **`steamInfo`** &nbsp; [PFUserSteamInfo](pfusersteaminfo.md) const*  
 *may be nullptr*  

@@ -1,16 +1,16 @@
 ---
 author: jasonsandlin
 title: "PFInventoryTransferInventoryItemsAsync"
-description: "Transfer inventory items. When transferring across collections, a 202 response indicates that the transfer is in progress and will complete soon. More information about item transfer scenarios can be found here: https://learn.microsoft.com/gaming/playfab/features/economy-v2/inventory/?tabs=inventory-game-manager#transfer-inventory-items"
+description: "Transfer inventory items. When transferring across collections, a 202 response indicates that the transfer did not complete within the timeframe of the request. You can identify the pending operations by looking for OperationStatus = 'InProgress'. You can check on the operation status at anytime within 30 days of the request by passing the TransactionToken to the GetInventoryOperationStatus API. More information about item transfer scenarios can be found here: https://learn.microsoft.com/gaming/playfab/features/economy-v2/inventory/?tabs=inventory-game-manager#transfer-inventory-items"
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 06/20/2023
+ms.date: 09/25/2023
 ---
 
 # PFInventoryTransferInventoryItemsAsync  
 
-Transfer inventory items. When transferring across collections, a 202 response indicates that the transfer is in progress and will complete soon. More information about item transfer scenarios can be found here: https://learn.microsoft.com/gaming/playfab/features/economy-v2/inventory/?tabs=inventory-game-manager#transfer-inventory-items  
+Transfer inventory items. When transferring across collections, a 202 response indicates that the transfer did not complete within the timeframe of the request. You can identify the pending operations by looking for OperationStatus = 'InProgress'. You can check on the operation status at anytime within 30 days of the request by passing the TransactionToken to the GetInventoryOperationStatus API. More information about item transfer scenarios can be found here: https://learn.microsoft.com/gaming/playfab/features/economy-v2/inventory/?tabs=inventory-game-manager#transfer-inventory-items  
 
 ## Syntax  
   

@@ -5,7 +5,7 @@ description: "Services C API overview - PFInventoryTypes.h"
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 07/25/2023
+ms.date: 09/25/2023
 ---
 
 # Services C API overview - PFInventoryTypes.h
@@ -31,6 +31,8 @@ ms.date: 07/25/2023
 | [PFInventoryGetInventoryItemsResponse](structs/pfinventorygetinventoryitemsresponse.md) | PFInventoryGetInventoryItemsResponse data model. |  
 | [PFInventoryGetMicrosoftStoreAccessTokensRequest](structs/pfinventorygetmicrosoftstoreaccesstokensrequest.md) | PFInventoryGetMicrosoftStoreAccessTokensRequest data model. Gets the access tokens for Microsoft Store authentication. |  
 | [PFInventoryGetMicrosoftStoreAccessTokensResponse](structs/pfinventorygetmicrosoftstoreaccesstokensresponse.md) | PFInventoryGetMicrosoftStoreAccessTokensResponse data model. |  
+| [PFInventoryGetTransactionHistoryRequest](structs/pfinventorygettransactionhistoryrequest.md) | PFInventoryGetTransactionHistoryRequest data model. Get transaction history for specified entity and collection. |  
+| [PFInventoryGetTransactionHistoryResponse](structs/pfinventorygettransactionhistoryresponse.md) | PFInventoryGetTransactionHistoryResponse data model. |  
 | [PFInventoryGooglePlayProductPurchase](structs/pfinventorygoogleplayproductpurchase.md) | PFInventoryGooglePlayProductPurchase data model. |  
 | [PFInventoryInitialValues](structs/pfinventoryinitialvalues.md) | PFInventoryInitialValues data model. |  
 | [PFInventoryInventoryItem](structs/pfinventoryinventoryitem.md) | PFInventoryInventoryItem data model. |  

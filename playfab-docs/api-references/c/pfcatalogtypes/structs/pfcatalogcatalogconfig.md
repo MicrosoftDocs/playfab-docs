@@ -5,7 +5,7 @@ description: "PFCatalogCatalogConfig data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 06/26/2023
+ms.date: 09/25/2023
 ---
 
 # PFCatalogCatalogConfig  
@@ -94,7 +94,7 @@ Count of platforms
 **`reviewerEntities`** &nbsp; [PFEntityKey](../../pftypes/structs/pfentitykey-c.md) const*  
 *may be nullptr*  
   
-(Optional) A set of player entity keys that are allowed to review content. There is a maximum of 64 entities that can be added.
+(Optional) A set of player entity keys that are allowed to review content. There is a maximum of 128 entities that can be added.
   
 **`reviewerEntitiesCount`** &nbsp; uint32_t  
   

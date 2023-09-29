@@ -5,7 +5,7 @@ description: "Services C API overview - PFInventory.h"
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 07/25/2023
+ms.date: 09/25/2023
 ---
 
 # Services C API overview - PFInventory.h
@@ -34,6 +34,9 @@ ms.date: 07/25/2023
 | [PFInventoryGetMicrosoftStoreAccessTokensAsync](functions/pfinventorygetmicrosoftstoreaccesstokensasync.md) | Gets the access tokens. |  
 | [PFInventoryGetMicrosoftStoreAccessTokensGetResult](functions/pfinventorygetmicrosoftstoreaccesstokensgetresult.md) | Gets the result of a successful PFInventoryGetMicrosoftStoreAccessTokensAsync call. |  
 | [PFInventoryGetMicrosoftStoreAccessTokensGetResultSize](functions/pfinventorygetmicrosoftstoreaccesstokensgetresultsize.md) | Get the size in bytes needed to store the result of a GetMicrosoftStoreAccessTokens call. |  
+| [PFInventoryGetTransactionHistoryAsync](functions/pfinventorygettransactionhistoryasync.md) | Get transaction history for a player. Up to 50 Events can be returned at once. You can use continuation tokens to paginate through results that return greater than the limit. Getting transaction history has a lower RPS limit than getting a Player's inventory with Player Entities having a limit of 30 requests in 300 seconds and Title Entities having a limit of 100 requests in 10 seconds. |  
+| [PFInventoryGetTransactionHistoryGetResult](functions/pfinventorygettransactionhistorygetresult.md) | Gets the result of a successful PFInventoryGetTransactionHistoryAsync call. |  
+| [PFInventoryGetTransactionHistoryGetResultSize](functions/pfinventorygettransactionhistorygetresultsize.md) | Get the size in bytes needed to store the result of a GetTransactionHistory call. |  
 | [PFInventoryPurchaseInventoryItemsAsync](functions/pfinventorypurchaseinventoryitemsasync.md) | Purchase an item or bundle. Up to 3500 stacks of items can be added to a single inventory collection. Stack size is uncapped. |  
 | [PFInventoryPurchaseInventoryItemsGetResult](functions/pfinventorypurchaseinventoryitemsgetresult.md) | Gets the result of a successful PFInventoryPurchaseInventoryItemsAsync call. |  
 | [PFInventoryPurchaseInventoryItemsGetResultSize](functions/pfinventorypurchaseinventoryitemsgetresultsize.md) | Get the size in bytes needed to store the result of a PurchaseInventoryItems call. |  
@@ -52,7 +55,7 @@ ms.date: 07/25/2023
 | [PFInventorySubtractInventoryItemsAsync](functions/pfinventorysubtractinventoryitemsasync.md) | Subtract inventory items. |  
 | [PFInventorySubtractInventoryItemsGetResult](functions/pfinventorysubtractinventoryitemsgetresult.md) | Gets the result of a successful PFInventorySubtractInventoryItemsAsync call. |  
 | [PFInventorySubtractInventoryItemsGetResultSize](functions/pfinventorysubtractinventoryitemsgetresultsize.md) | Get the size in bytes needed to store the result of a SubtractInventoryItems call. |  
-| [PFInventoryTransferInventoryItemsAsync](functions/pfinventorytransferinventoryitemsasync.md) | Transfer inventory items. When transferring across collections, a 202 response indicates that the transfer is in progress and will complete soon. More information about item transfer scenarios can be found here: https://learn.microsoft.com/gaming/playfab/features/economy-v2/inventory/?tabs=inventory-game-manager#transfer-inventory-items |  
+| [PFInventoryTransferInventoryItemsAsync](functions/pfinventorytransferinventoryitemsasync.md) | Transfer inventory items. When transferring across collections, a 202 response indicates that the transfer did not complete within the timeframe of the request. You can identify the pending operations by looking for OperationStatus = 'InProgress'. You can check on the operation status at anytime within 30 days of the request by passing the TransactionToken to the GetInventoryOperationStatus API. More information about item transfer scenarios can be found here: https://learn.microsoft.com/gaming/playfab/features/economy-v2/inventory/?tabs=inventory-game-manager#transfer-inventory-items |  
 | [PFInventoryTransferInventoryItemsGetResult](functions/pfinventorytransferinventoryitemsgetresult.md) | Gets the result of a successful PFInventoryTransferInventoryItemsAsync call. |  
 | [PFInventoryTransferInventoryItemsGetResultSize](functions/pfinventorytransferinventoryitemsgetresultsize.md) | Get the size in bytes needed to store the result of a TransferInventoryItems call. |  
 | [PFInventoryUpdateInventoryItemsAsync](functions/pfinventoryupdateinventoryitemsasync.md) | Update inventory items |  
