@@ -41,6 +41,8 @@ landingContent:
             url: ../c/relogin.md
           - text: Debug Tracing
             url: ../c/tracing.md
+          - text: Initializing Servers
+            url: ../c/server.md
       - linkListType: concept
         links:
           - text: Event Pipeline Overview

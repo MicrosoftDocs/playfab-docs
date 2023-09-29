@@ -5,7 +5,7 @@ description: "CountryCode enum."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 09/25/2023
 ---
 
 # PFCountryCode  
@@ -265,7 +265,8 @@ enum class PFCountryCode  : uint32_t
     EH,  
     YE,  
     ZM,  
-    ZW  
+    ZW,  
+    Unknown  
 }  
 ```  
   
@@ -522,6 +523,7 @@ enum class PFCountryCode  : uint32_t
 | YE | TBD   |  
 | ZM | TBD   |  
 | ZW | TBD   |  
+| Unknown | TBD   |  
   
   
 ## Requirements  

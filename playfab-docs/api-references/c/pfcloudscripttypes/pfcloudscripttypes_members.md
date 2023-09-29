@@ -5,7 +5,7 @@ description: "Services C API overview - PFCloudScriptTypes.h"
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 09/25/2023
 ---
 
 # Services C API overview - PFCloudScriptTypes.h
@@ -15,6 +15,23 @@ ms.date: 03/09/2023
 
 | Structure | Description |  
 | --- | --- |  
+| [PFCloudScriptExecuteCloudScriptRequest](structs/pfcloudscriptexecutecloudscriptrequest.md) | PFCloudScriptExecuteCloudScriptRequest data model. |  
+| [PFCloudScriptExecuteCloudScriptResult](structs/pfcloudscriptexecutecloudscriptresult.md) | PFCloudScriptExecuteCloudScriptResult data model. |  
+| [PFCloudScriptExecuteCloudScriptServerRequest](structs/pfcloudscriptexecutecloudscriptserverrequest.md) | PFCloudScriptExecuteCloudScriptServerRequest data model. |  
+| [PFCloudScriptExecuteEntityCloudScriptRequest](structs/pfcloudscriptexecuteentitycloudscriptrequest.md) | PFCloudScriptExecuteEntityCloudScriptRequest data model. Executes CloudScript with the entity profile that is defined in the request. |  
 | [PFCloudScriptExecuteFunctionRequest](structs/pfcloudscriptexecutefunctionrequest.md) | PFCloudScriptExecuteFunctionRequest data model. Executes an Azure Function with the profile of the entity that is defined in the request. |  
 | [PFCloudScriptExecuteFunctionResult](structs/pfcloudscriptexecutefunctionresult.md) | PFCloudScriptExecuteFunctionResult data model. |  
 | [PFCloudScriptFunctionExecutionError](structs/pfcloudscriptfunctionexecutionerror.md) | PFCloudScriptFunctionExecutionError data model. |  
+| [PFCloudScriptLogStatement](structs/pfcloudscriptlogstatement.md) | PFCloudScriptLogStatement data model. |  
+| [PFCloudScriptScriptExecutionError](structs/pfcloudscriptscriptexecutionerror.md) | PFCloudScriptScriptExecutionError data model. |  
+  
+## State changes  
+  
+| State change | Description |  
+| --- | --- |  
+  
+## Enumerations  
+
+| Enumeration | Description |  
+| --- | --- |  
+| [PFCloudScriptCloudScriptRevisionOption](enums/pfcloudscriptcloudscriptrevisionoption.md) | CloudScriptRevisionOption enum.|  

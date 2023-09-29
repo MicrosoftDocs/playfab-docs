@@ -5,7 +5,7 @@ description: "Services C API overview - PFPlayerDataManagement.h"
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 09/25/2023
 ---
 
 # Services C API overview - PFPlayerDataManagement.h
@@ -31,3 +31,33 @@ ms.date: 03/09/2023
 | [PFPlayerDataManagementClientUpdateUserDataGetResult](functions/pfplayerdatamanagementclientupdateuserdatagetresult.md) | Gets the result of a successful PFPlayerDataManagementClientUpdateUserDataAsync call. |  
 | [PFPlayerDataManagementClientUpdateUserPublisherDataAsync](functions/pfplayerdatamanagementclientupdateuserpublisherdataasync.md) | Creates and updates the publisher-specific custom data for the user which is readable and writable by the client |  
 | [PFPlayerDataManagementClientUpdateUserPublisherDataGetResult](functions/pfplayerdatamanagementclientupdateuserpublisherdatagetresult.md) | Gets the result of a successful PFPlayerDataManagementClientUpdateUserPublisherDataAsync call. |  
+| [PFPlayerDataManagementServerGetUserDataAsync](functions/pfplayerdatamanagementservergetuserdataasync.md) | Retrieves the title-specific custom data for the user which is readable and writable by the client |  
+| [PFPlayerDataManagementServerGetUserDataGetResult](functions/pfplayerdatamanagementservergetuserdatagetresult.md) | Gets the result of a successful PFPlayerDataManagementServerGetUserDataAsync call. |  
+| [PFPlayerDataManagementServerGetUserDataGetResultSize](functions/pfplayerdatamanagementservergetuserdatagetresultsize.md) | Get the size in bytes needed to store the result of a ServerGetUserData call. |  
+| [PFPlayerDataManagementServerGetUserInternalDataAsync](functions/pfplayerdatamanagementservergetuserinternaldataasync.md) | Retrieves the title-specific custom data for the user which cannot be accessed by the client |  
+| [PFPlayerDataManagementServerGetUserInternalDataGetResult](functions/pfplayerdatamanagementservergetuserinternaldatagetresult.md) | Gets the result of a successful PFPlayerDataManagementServerGetUserInternalDataAsync call. |  
+| [PFPlayerDataManagementServerGetUserInternalDataGetResultSize](functions/pfplayerdatamanagementservergetuserinternaldatagetresultsize.md) | Get the size in bytes needed to store the result of a ServerGetUserInternalData call. |  
+| [PFPlayerDataManagementServerGetUserPublisherDataAsync](functions/pfplayerdatamanagementservergetuserpublisherdataasync.md) | Retrieves the publisher-specific custom data for the user which is readable and writable by the client |  
+| [PFPlayerDataManagementServerGetUserPublisherDataGetResult](functions/pfplayerdatamanagementservergetuserpublisherdatagetresult.md) | Gets the result of a successful PFPlayerDataManagementServerGetUserPublisherDataAsync call. |  
+| [PFPlayerDataManagementServerGetUserPublisherDataGetResultSize](functions/pfplayerdatamanagementservergetuserpublisherdatagetresultsize.md) | Get the size in bytes needed to store the result of a ServerGetUserPublisherData call. |  
+| [PFPlayerDataManagementServerGetUserPublisherInternalDataAsync](functions/pfplayerdatamanagementservergetuserpublisherinternaldataasync.md) | Retrieves the publisher-specific custom data for the user which cannot be accessed by the client |  
+| [PFPlayerDataManagementServerGetUserPublisherInternalDataGetResult](functions/pfplayerdatamanagementservergetuserpublisherinternaldatagetresult.md) | Gets the result of a successful PFPlayerDataManagementServerGetUserPublisherInternalDataAsync call. |  
+| [PFPlayerDataManagementServerGetUserPublisherInternalDataGetResultSize](functions/pfplayerdatamanagementservergetuserpublisherinternaldatagetresultsize.md) | Get the size in bytes needed to store the result of a ServerGetUserPublisherInternalData call. |  
+| [PFPlayerDataManagementServerGetUserPublisherReadOnlyDataAsync](functions/pfplayerdatamanagementservergetuserpublisherreadonlydataasync.md) | Retrieves the publisher-specific custom data for the user which can only be read by the client |  
+| [PFPlayerDataManagementServerGetUserPublisherReadOnlyDataGetResult](functions/pfplayerdatamanagementservergetuserpublisherreadonlydatagetresult.md) | Gets the result of a successful PFPlayerDataManagementServerGetUserPublisherReadOnlyDataAsync call. |  
+| [PFPlayerDataManagementServerGetUserPublisherReadOnlyDataGetResultSize](functions/pfplayerdatamanagementservergetuserpublisherreadonlydatagetresultsize.md) | Get the size in bytes needed to store the result of a ServerGetUserPublisherReadOnlyData call. |  
+| [PFPlayerDataManagementServerGetUserReadOnlyDataAsync](functions/pfplayerdatamanagementservergetuserreadonlydataasync.md) | Retrieves the title-specific custom data for the user which can only be read by the client |  
+| [PFPlayerDataManagementServerGetUserReadOnlyDataGetResult](functions/pfplayerdatamanagementservergetuserreadonlydatagetresult.md) | Gets the result of a successful PFPlayerDataManagementServerGetUserReadOnlyDataAsync call. |  
+| [PFPlayerDataManagementServerGetUserReadOnlyDataGetResultSize](functions/pfplayerdatamanagementservergetuserreadonlydatagetresultsize.md) | Get the size in bytes needed to store the result of a ServerGetUserReadOnlyData call. |  
+| [PFPlayerDataManagementServerUpdateUserDataAsync](functions/pfplayerdatamanagementserverupdateuserdataasync.md) | Updates the title-specific custom data for the user which is readable and writable by the client |  
+| [PFPlayerDataManagementServerUpdateUserDataGetResult](functions/pfplayerdatamanagementserverupdateuserdatagetresult.md) | Gets the result of a successful PFPlayerDataManagementServerUpdateUserDataAsync call. |  
+| [PFPlayerDataManagementServerUpdateUserInternalDataAsync](functions/pfplayerdatamanagementserverupdateuserinternaldataasync.md) | Updates the title-specific custom data for the user which cannot be accessed by the client |  
+| [PFPlayerDataManagementServerUpdateUserInternalDataGetResult](functions/pfplayerdatamanagementserverupdateuserinternaldatagetresult.md) | Gets the result of a successful PFPlayerDataManagementServerUpdateUserInternalDataAsync call. |  
+| [PFPlayerDataManagementServerUpdateUserPublisherDataAsync](functions/pfplayerdatamanagementserverupdateuserpublisherdataasync.md) | Updates the publisher-specific custom data for the user which is readable and writable by the client |  
+| [PFPlayerDataManagementServerUpdateUserPublisherDataGetResult](functions/pfplayerdatamanagementserverupdateuserpublisherdatagetresult.md) | Gets the result of a successful PFPlayerDataManagementServerUpdateUserPublisherDataAsync call. |  
+| [PFPlayerDataManagementServerUpdateUserPublisherInternalDataAsync](functions/pfplayerdatamanagementserverupdateuserpublisherinternaldataasync.md) | Updates the publisher-specific custom data for the user which cannot be accessed by the client |  
+| [PFPlayerDataManagementServerUpdateUserPublisherInternalDataGetResult](functions/pfplayerdatamanagementserverupdateuserpublisherinternaldatagetresult.md) | Gets the result of a successful PFPlayerDataManagementServerUpdateUserPublisherInternalDataAsync call. |  
+| [PFPlayerDataManagementServerUpdateUserPublisherReadOnlyDataAsync](functions/pfplayerdatamanagementserverupdateuserpublisherreadonlydataasync.md) | Updates the publisher-specific custom data for the user which can only be read by the client |  
+| [PFPlayerDataManagementServerUpdateUserPublisherReadOnlyDataGetResult](functions/pfplayerdatamanagementserverupdateuserpublisherreadonlydatagetresult.md) | Gets the result of a successful PFPlayerDataManagementServerUpdateUserPublisherReadOnlyDataAsync call. |  
+| [PFPlayerDataManagementServerUpdateUserReadOnlyDataAsync](functions/pfplayerdatamanagementserverupdateuserreadonlydataasync.md) | Updates the title-specific custom data for the user which can only be read by the client |  
+| [PFPlayerDataManagementServerUpdateUserReadOnlyDataGetResult](functions/pfplayerdatamanagementserverupdateuserreadonlydatagetresult.md) | Gets the result of a successful PFPlayerDataManagementServerUpdateUserReadOnlyDataAsync call. |  

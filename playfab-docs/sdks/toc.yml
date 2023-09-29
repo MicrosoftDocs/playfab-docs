@@ -25,6 +25,8 @@
         items:
         - name: Event Pipeline Tutorial
           href: c/event-pipeline/eventpipeline-tutorial.md
+      - name: Initializing Servers
+        href: c/server.md
   - name: Legacy C++
     href: playfab-cpp/index.md
     items:

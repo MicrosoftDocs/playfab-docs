@@ -5,7 +5,7 @@ description: "Services C API overview - PFTypes.h"
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 05/24/2023
+ms.date: 09/25/2023
 ---
 
 # Services C API overview - PFTypes.h
@@ -60,6 +60,7 @@ ms.date: 05/24/2023
 | [PFUserOpenIdInfo](structs/pfuseropenidinfo.md) | PFUserOpenIdInfo data model. |  
 | [PFUserPrivateAccountInfo](structs/pfuserprivateaccountinfo.md) | PFUserPrivateAccountInfo data model. |  
 | [PFUserPsnInfo](structs/pfuserpsninfo.md) | PFUserPsnInfo data model. |  
+| [PFUserServerCustomIdInfo](structs/pfuserservercustomidinfo.md) | PFUserServerCustomIdInfo data model. |  
 | [PFUserSteamInfo](structs/pfusersteaminfo.md) | PFUserSteamInfo data model. |  
 | [PFUserTitleInfo](structs/pfusertitleinfo.md) | PFUserTitleInfo data model. |  
 | [PFUserTwitchInfo](structs/pfusertwitchinfo.md) | PFUserTwitchInfo data model. |  
