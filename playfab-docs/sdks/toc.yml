@@ -1,7 +1,11 @@
 - name: Overview
   href: playfab-sdk-intro.md
 - name: Release notes
-  href: ../release-notes/toc.yml
+  items:
+  - name: C/C++ SDK release notes
+    href: ../release-notes/playfab-c/toc.yml
+  - name: Other SDK release notes
+    href: ../release-notes/toc.yml
 - name: Languages
   href: languages/index.yml
   items:
