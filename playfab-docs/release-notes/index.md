@@ -14,6 +14,22 @@ ms.localizationpriority: medium
 > [!NOTE]
 > For release notes about service releases and product updates, see the [release notes](https://github.com/PlayFab/PlayFab/releases) section on [PlayFab's public GitHub repository](https://github.com/PlayFab/PlayFab)
 
+## 230929
+
+Date: September 29, 2023
+
+ - Added Actions array to support getting and setting actions for scheduled tasks
+ - Added models for all scheduled task action types
+ - Added RequestPartyService call to the Multiplayer API
+ - Added new error code for InvalidStatisticScore
+ - Added new error codes for Lobby scenarios:
+   - LobbyAssociatedServerMismatch
+   - LobbyAssociatedServerNotFound
+   - LobbyAssociatedToDifferentServer
+   - LobbyServerAlreadyAssociated
+   - LobbyIsNotClientOwned
+   - LobbyDoesNotUseConnections
+
 ## 230915
 
 Date: September 15, 2023
