@@ -1,0 +1,9 @@
+items:
+  - name: Game context
+    href: game-context.md
+  - name: Part 1 - Environment setup
+    href: crafting-game-environment.md
+  - name: Part 2 - Using Game Manager
+    href: crafting-game-game-manager.md
+  - name: Part 3 - Coding and examples
+    href: crafting-game-coding.md
