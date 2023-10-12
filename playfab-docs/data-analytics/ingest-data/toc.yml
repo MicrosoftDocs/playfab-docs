@@ -1,0 +1,12 @@
+- name: PlayStream
+  items:
+  - name: Overview
+    items:
+    - name: PlayStream with Entity events
+      href: playstream-with-entity-events.md
+    - name: Custom tags with PlayStream events
+      href: playstream-custom-tags.md
+  - name: Event capabilities
+    href: playstream-overview.md
+- name: Telemetry Keys
+  href: telemetry-keys-overview.md

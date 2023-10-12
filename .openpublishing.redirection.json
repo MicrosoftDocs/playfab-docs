@@ -429,6 +429,371 @@
             "source_path": "playfab-docs/features/multiplayer/networking/pricing.md",
             "redirect_url": "/gaming/playfab/features/pricing/meters/meters#party",
             "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/analytics/segmentation/index.md",
+            "redirect_url": "/gaming/playfab/data-analytics/acting-data/segmentation-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/analytics/segmentation/quickstart.md",
+            "redirect_url": "/gaming/playfab/data-analytics/acting-data/segmentation-quickstart",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/analytics/segmentation/segment-configuration.md",
+            "redirect_url": "/gaming/playfab/data-analytics/acting-data/segmentation-configuration",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/data/webhooks/index.md",
+            "redirect_url": "/gaming/playfab/data-analytics/acting-data/webhooks-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/insights/index.yml",
+            "redirect_url": "/gaming/playfab/data-analytics/legacy/insights/overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/insights/schemas/index.md",
+            "redirect_url": "/gaming/playfab/data-analytics/acting-data/schemas-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/insights/schemas/events-all.md",
+            "redirect_url": "/gaming/playfab/data-analytics/acting-data/schemas-events-all",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/insights/schemas/tutorials.md",
+            "redirect_url": "/gaming/playfab/data-analytics/acting-data/schemas-events-all",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/insights/schemas/quickstart.md",
+            "redirect_url": "/gaming/playfab/data-analytics/acting-data/schemas-quickstart",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/automation/actions-rules/index.md",
+            "redirect_url": "/gaming/playfab/data-analytics/acting-data/action-rules-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/automation/actions-rules/quickstart.md",
+            "redirect_url": "/gaming/playfab/data-analytics/acting-data/action-rules-quickstart",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/automation/actions-rules/tutorials.md",
+            "redirect_url": "/gaming/playfab/data-analytics/acting-data/action-rules-bulk-actions-for-an-entire-player-segment",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/automation/actions-rules/bulk-actions-for-an-entire-player-segment.md",
+            "redirect_url": "/gaming/playfab/data-analytics/acting-data/action-rules-bulk-actions-for-an-entire-player-segment",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/automation/actions-rules/using-cloudscript-actions-with-playstream.md",
+            "redirect_url": "/gaming/playfab/data-analytics/acting-data/action-rules-using-cloudscript-actions-with-playstream",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/analytics/segmentation/export-players-in-a-segment.md",
+            "redirect_url": "/gaming/playfab/data-analytics/acting-data/segmentation-export-players-in-a-segment",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/analytics/segmentation/tutorials.md",
+            "redirect_url": "/gaming/playfab/data-analytics/acting-data/segmentation-export-players-in-a-segment",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/data/dataconnections/index.md",
+            "redirect_url": "/gaming/playfab/data-analytics/export-data/data-connection-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/data/dataconnections/quickstart.md",
+            "redirect_url": "/gaming/playfab/data-analytics/export-data/data-connection-quickstart",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/data/dataconnections/data-connection-adx.md",
+            "redirect_url": "/gaming/playfab/data-analytics/export-data/data-connection-adx",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/data/dataconnections/data-connection-azure-blob.md",
+            "redirect_url": "/gaming/playfab/data-analytics/export-data/data-connection-azure-blob",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/data/manage-events-with-sampling/index.md",
+            "redirect_url": "/gaming/playfab/data-analytics/export-data/event-sampling-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/data/manage-events-with-sampling/quickstart.md",
+            "redirect_url": "/gaming/playfab/data-analytics/export-data/event-sampling-quickstart",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/automation/playstream-events/playstream-with-entity-events.md",
+            "redirect_url": "/gaming/playfab/data-analytics/ingest-data/playstream-with-entity-events",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/automation/playstream-events/custom-tags.md",
+            "redirect_url": "/gaming/playfab/data-analytics/ingest-data/playstream-custom-tags",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/automation/playstream-events/index.md",
+            "redirect_url": "/gaming/playfab/data-analytics/ingest-data/playstream-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/data/telemetry-keys/overview.md",
+            "redirect_url": "/gaming/playfab/data-analytics/ingest-data/telemetry-keys-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/analytics/reports/index.md",
+            "redirect_url": "/gaming/playfab/data-analytics/learn-data/reports/overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/analytics/reports/quickstart.md",
+            "redirect_url": "/gaming/playfab/data-analytics/learn-data/reports/quickstart",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/analytics/reports/daily-ab-test-kpi-report.md",
+            "redirect_url": "/gaming/playfab/data-analytics/learn-data/reports/daily-ab-test-kpi-report",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/analytics/reports/daily-abuse-reports-history-report.md",
+            "redirect_url": "/gaming/playfab/data-analytics/learn-data/reports/daily-abuse-reports-history-report",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/analytics/reports/daily-and-monthly-cdn-usage-report.md",
+            "redirect_url": "/gaming/playfab/data-analytics/learn-data/reports/daily-and-monthly-cdn-usage-report",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/analytics/reports/daily-and-monthly-top-items-report.md",
+            "redirect_url": "/gaming/playfab/data-analytics/learn-data/reports/daily-and-monthly-top-items-report",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/analytics/reports/daily-and-monthly-top-spender-report.md",
+            "redirect_url": "/gaming/playfab/data-analytics/learn-data/reports/daily-and-monthly-top-spender-report",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/analytics/reports/daily-api-usage-details-report.md",
+            "redirect_url": "/gaming/playfab/data-analytics/learn-data/reports/daily-api-usage-details-report",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/analytics/reports/daily-monthly-and-rolling-30-day-overview-and-totals-reports.md",
+            "redirect_url": "/gaming/playfab/data-analytics/learn-data/reports/daily-monthly-and-rolling-30-day-overview-and-totals-reports",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/analytics/reports/thirty-day-new-user-conversion-report.md",
+            "redirect_url": "/gaming/playfab/data-analytics/learn-data/reports/thirty-day-new-user-conversion-report",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/analytics/reports/thirty-day-new-user-retention-report.md",
+            "redirect_url": "/gaming/playfab/data-analytics/learn-data/reports/thirty-day-new-user-retention-report",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/analytics/reports/thirty-day-retention-report.md",
+            "redirect_url": "/gaming/playfab/data-analytics/learn-data/reports/thirty-day-retention-report",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/analytics/reports/tutorials.md",
+            "redirect_url": "/gaming/playfab/data-analytics/learn-data/reports/overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/analytics/churn-prediction/overview.md",
+            "redirect_url": "/gaming/playfab/data-analytics/learn-data/churn-prediction/overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/analytics/churn-prediction/pricing.md",
+            "redirect_url": "/gaming/playfab/data-analytics/learn-data/churn-prediction/pricing",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/analytics/churn-prediction/churn-prediction-quickstart.md",
+            "redirect_url": "/gaming/playfab/data-analytics/learn-data/churn-prediction/churn-prediction-quickstart",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/analytics/experiments/index.md",
+            "redirect_url": "/gaming/playfab/data-analytics/learn-data/experiments/index",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/analytics/experiments/pricing.md",
+            "redirect_url": "/gaming/playfab/data-analytics/learn-data/experiments/pricing",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/analytics/experiments/experimentation-keys.md",
+            "redirect_url": "/gaming/playfab/data-analytics/learn-data/experiments/experimentation-keys",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/analytics/experiments/experimentation-key-terms.md",
+            "redirect_url": "/gaming/playfab/data-analytics/learn-data/experiments/experimentation-key-terms",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/analytics/experiments/quickstart.md",
+            "redirect_url": "/gaming/playfab/data-analytics/learn-data/experiments/quickstart",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/analytics/experiments/exclusion-groups.md",
+            "redirect_url": "/gaming/playfab/data-analytics/learn-data/experiments/exclusion-groups",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/insights/data-explorer/index.md",
+            "redirect_url": "/gaming/playfab/data-analytics/learn-data/data-explorer/index",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/insights/data-explorer/tutorials.md",
+            "redirect_url": "/gaming/playfab/data-analytics/learn-data/data-explorer/getting-started-with-data-explorer-basic",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/insights/data-explorer/quickstart.md",
+            "redirect_url": "/gaming/playfab/data-analytics/learn-data/data-explorer/quickstart",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/insights/data-explorer/getting-started-with-data-explorer-basic.md",
+            "redirect_url": "/gaming/playfab/data-analytics/learn-data/data-explorer/getting-started-with-data-explorer-basic",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/insights/data-explorer/getting-started-with-data-explorer-advanced.md",
+            "redirect_url": "/gaming/playfab/data-analytics/learn-data/data-explorer/getting-started-with-data-explorer-advanced",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/data/playerdata/playfab-gdpr-deleting-and-exporting-player-data.md",
+            "redirect_url": "/gaming/playfab/data-analytics/privacy-compliance/playfab-gdpr-deleting-and-exporting-player-data",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/insights/overview.md",
+            "redirect_url": "/gaming/playfab/data-analytics/legacy/insights/overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/insights/pricing.md",
+            "redirect_url": "/gaming/playfab/data-analytics/legacy/insights/pricing",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/insights/connectivity/index.md",
+            "redirect_url": "/gaming/playfab/data-analytics/legacy/connectivity/index",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/insights/performance-retention.md",
+            "redirect_url": "/gaming/playfab/data-analytics/legacy/insights/performance-retention",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/insights/management-commands.md",
+            "redirect_url": "/gaming/playfab/data-analytics/legacy/insights/management-commands",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/insights/scheduled-scaling.md",
+            "redirect_url": "/gaming/playfab/data-analytics/legacy/insights/scheduled-scaling",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/insights/export.md",
+            "redirect_url": "/gaming/playfab/data-analytics/legacy/insights/export",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/insights/best-practices.md",
+            "redirect_url": "/gaming/playfab/data-analytics/legacy/insights/best-practices",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/insights/connectivity/creating-AAD-app-for-insights.md",
+            "redirect_url": "/gaming/playfab/data-analytics/legacy/connectivity/creating-AAD-app-for-insights",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/insights/connectivity/connecting-power-bi-to-insights.md",
+            "redirect_url": "/gaming/playfab/data-analytics/legacy/connectivity/connecting-power-bi-to-insights",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/insights/connectivity/connecting-kusto-explorer-to-insights.md",
+            "redirect_url": "/gaming/playfab/data-analytics/legacy/connectivity/connecting-kusto-explorer-to-insights",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/insights/connectivity/connecting-azure-data-explorer-to-insights.md",
+            "redirect_url": "/gaming/playfab/data-analytics/legacy/connectivity/connecting-azure-data-explorer-to-insights",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/insights/connectivity/connecting-azure-data-factory-to-insights.md",
+            "redirect_url": "/gaming/playfab/data-analytics/legacy/connectivity/connecting-azure-data-factory-to-insights",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/insights/connectivity/connecting-grafana-to-insights.md",
+            "redirect_url": "/gaming/playfab/data-analytics/legacy/connectivity/connecting-grafana-to-insights",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/insights/connectivity/connecting-python-to-insights.md",
+            "redirect_url": "/gaming/playfab/data-analytics/legacy/connectivity/connecting-python-to-insights",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/insights/connectivity/connecting-kusto-csharp-to-insights.md",
+            "redirect_url": "/gaming/playfab/data-analytics/legacy/connectivity/connecting-kusto-csharp-to-insights",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/data/content-delivery-network/index.md",
+            "redirect_url": "/gaming/playfab/data-analytics/legacy/content-delivery-network/index",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/data/content-delivery-network/tutorials.md",
+            "redirect_url": "/gaming/playfab/data-analytics/legacy/content-delivery-network/index",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/data/content-delivery-network/quickstart.md",
+            "redirect_url": "/gaming/playfab/data-analytics/legacy/content-delivery-network/quickstart",
+            "redirect_document_id": false
         }
     ]
 }

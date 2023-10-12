@@ -1,0 +1,12 @@
+- name: Ingesting data
+  href: ingest-data/toc.yml
+- name: Exporting data
+  href: export-data/toc.yml
+- name: Learning with data
+  href: learn-data/toc.yml
+- name: Acting on data
+  href: acting-data/toc.yml
+- name: Privacy compliance
+  href: privacy-compliance/toc.yml 
+- name: Legacy
+  href: legacy/toc.yml

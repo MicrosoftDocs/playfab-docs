@@ -14,8 +14,6 @@ items:
     href: features/automation/toc.yml
   - name: Multiplayer
     href: features/multiplayer/toc.yml
-  - name: Insights
-    href: features/insights/toc.yml
   - name: Social
     href: features/social/toc.yml
 - name: Engage
@@ -29,13 +27,8 @@ items:
     href: features/economy/toc.yml
   - name: Engagement (Player retention)
     href: features/engagement/toc.yml
-- name: Analyze
-  expanded: true
-  items:
-  - name: Data
-    href: features/data/toc.yml
-  - name: Analytics
-    href: features/analytics/toc.yml
+- name: Data and analytics
+  href: data-analytics/toc.yml
 - name: Personas
   href: personas/toc.yml
 - name: Pricing

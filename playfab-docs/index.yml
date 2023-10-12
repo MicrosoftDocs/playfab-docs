@@ -67,7 +67,7 @@ productDirectory:
         - url: features/social/tournaments-leaderboards/index.md
           text: Leaderboards
 
-    - title: Analyze
+    - title: Data and Analytics
       imageSrc: ./media/index/analyze.svg
       links:
         - url: features/analytics/index.yml
