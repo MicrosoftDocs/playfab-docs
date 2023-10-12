@@ -52,8 +52,6 @@ landingContent:
             url: playerdata/player-segment-configuration.md
           - text: Run custom actions on player segments automatically 
             url: playerdata/player-segments.md
-          - text: Ensure GDPR compliance on Player data
-            url: playerdata/playfab-gdpr-deleting-and-exporting-player-data.md
           - text: Manage player account and run cloudscript for a player
             url: playerdata/player-details.md
           - text: Manage player publisher data
