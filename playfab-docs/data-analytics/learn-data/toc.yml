@@ -1,0 +1,77 @@
+- name: Reporting
+  expanded: true
+  items:
+  - name: Overview
+    href: reports/overview.md
+  - name: Quickstart
+    href: reports/quickstart.md
+  - name: How-to
+    expanded: true
+    items:
+    - name: Daily A/B Test KPI Report
+      href: reports/daily-ab-test-kpi-report.md
+    - name: Daily Abuse Reports History Report
+      href: reports/daily-abuse-reports-history-report.md
+    - name: Daily and Monthly CDN Usage Report
+      href: reports/daily-and-monthly-cdn-usage-report.md
+    - name: Daily and Monthly Top Items Report
+      href: reports/daily-and-monthly-top-items-report.md
+    - name: Daily and Monthly Top Spender Report
+      href: reports/daily-and-monthly-top-spender-report.md
+    - name: Daily and Monthly Top Details Report
+      href: reports/daily-api-usage-details-report.md
+    - name: Daily and Monthly Rolling 30-Day Overview and Totals Reports
+      href: reports/daily-monthly-and-rolling-30-day-overview-and-totals-reports.md
+    - name: Thirty-day New User Conversion Report
+      href: reports/thirty-day-new-user-conversion-report.md
+    - name: Thirty-day New User Retention Report
+      href: reports/thirty-day-new-user-retention-report.md
+    - name: Thirty-day Retention Report
+      href: reports/thirty-day-retention-report.md
+- name: Player Churn Prediction
+  expanded: false
+  items:
+  - name: Overviews
+    expanded: true
+    items:
+    - name: What is Player Churn Prediction?
+      href: churn-prediction/overview.md
+    - name: Pricing
+      href: churn-prediction/pricing.md
+  - name: Quickstart
+    href: churn-prediction/churn-prediction-quickstart.md
+- name: Experimentation
+  expanded: false
+  items:
+  - name: Overview
+    expanded: true
+    items:
+    - name: Experiments
+      href: experiments/index.md
+    - name: Pricing
+      href: experiments/pricing.md
+  - name: Concepts
+    expanded: true
+    items:
+    - name: Benefits and recommendations
+      href: experiments/experimentation-keys.md
+    - name: Key terms
+      href: experiments/experimentation-key-terms.md
+  - name: Quickstart
+    href: experiments/quickstart.md
+  - name: How to prevent interaction effects with exclusion groups
+    href: experiments/exclusion-groups.md
+- name: Quick insights
+  expanded: false
+  items:
+  - name: Data Explorer overview
+    href: data-explorer/index.md
+  - name: Quickstart
+    href: data-explorer/quickstart.md
+  - name: Tutorials
+    expanded: true
+    items:
+    - name: Get started with Data Explorer Basic mode
+      href: data-explorer/getting-started-with-data-explorer-basic.md
+    - name: Get started with Data Explorer Advanced mode
+      href: data-explorer/getting-started-with-data-explorer-advanced.md

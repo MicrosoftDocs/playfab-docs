@@ -34,7 +34,5 @@
     href: player-segments.md
   - name: Player Segment configuration
     href: player-segment-configuration.md
-  - name: PlayFab GDPR
-    href: playfab-gdpr-deleting-and-exporting-player-data.md
   - name: Using player statistics
     href: using-player-statistics.md

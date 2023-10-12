@@ -6,11 +6,5 @@
   href: cloudscript/toc.yml
 - name: CloudScript using Azure Functions
   href: cloudscript-af/toc.yml
-- name: Actions and rules
-  href: actions-rules/toc.yml
-- name: Scheduled tasks
-  href: scheduled-tasks/toc.yml
-- name: Playstream
-  href: playstream-events/toc.yml
 - name: Rewarded Ads
   href: rewarded-ads/toc.yml
