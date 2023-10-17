@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 First, you need an Azure subscription and a storage account. 
 
-For existing PlayFab and Azure customers, you can create a storage container on the [Azure portal](https://ms.portal.azure.com/#allservices) and get started with Data Connections on [Azure PlayFab](https://developer.playfab.com/en-US/sign-up). 
+For existing PlayFab and Azure customers, you can create a storage container on the [Azure portal](https://ms.portal.azure.com/#allservices) and get started with Data Connections on [Azure PlayFab](https://developer.playfab.com/en-US/sign-up).
 
 For existing PlayFab who are new to Azure, you can sign up for an [Azure subscription](https://ms.portal.azure.com/).
 
