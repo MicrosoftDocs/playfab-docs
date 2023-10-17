@@ -14,6 +14,13 @@ ms.localizationpriority: medium
 > [!NOTE]
 > For release notes about service releases and product updates, see the [release notes](https://github.com/PlayFab/PlayFab/releases) section on [PlayFab's public GitHub repository](https://github.com/PlayFab/PlayFab)
 
+## 231013
+
+Date: October 13, 2023
+
+- Added IgnoreNonce and IssuerOverride to Create and Update OpenIdConnection requests in the Admin API
+- Added SwedenCentral to AzureRegion in the Multiplayer API
+
 ## 230929
 
 Date: September 29, 2023
