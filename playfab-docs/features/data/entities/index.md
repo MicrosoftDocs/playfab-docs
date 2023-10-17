@@ -69,9 +69,9 @@ These values are meant to be used in the `EntityKey.Type` field.
 > [!NOTE]
 > These are *case sensitive*. Other/custom values *will not* currently work.
 
-#### Namespace
+#### namespace
 
-Namespace is the singular Entity that refers to *all* global information for every Title within a Studio. This information should be static. Changes to this Entity are *not* reflected in real time.
+The `namespace` is the singular Entity that refers to *all* global information for every Title within a Studio. This information should be static. Changes to this Entity are *not* reflected in real time.
 
 Set the `ID` field to your `GamePublisherId`. To retrieve your `GamePublisherId`:
 
@@ -82,9 +82,9 @@ Set the `ID` field to your `GamePublisherId`. To retrieve your `GamePublisherId`
 
 The **Publisher ID** on the **API Features** page is your `GamePublisherId`.
 
-#### Title
+#### title
 
-Title is the singular Entity that refers to all global information for that Title. This information should be static. Changes to this Entity are *not* reflected in real time.
+The `title`` is the singular Entity that refers to all global information for that Title. This information should be static. Changes to this Entity are *not* reflected in real time.
 
 Set the `ID` field to your game's `TitleId`. To retrieve your `TitleId`:
 
@@ -105,14 +105,22 @@ Set the ID field to `PlayFabId` from the Classic API, returned by any `LoginResu
 
 Set the `ID` field to `LoginResult.EntityToken.Id` in the Client API, or `GetEntityTokenResponse.Entity.Id` in the Authentication API.
 
-#### Character
+#### character
 
-Character is a sub-entity of `title_player_account` and is a direct mirror of [Characters in the Classic APIs](xref:titleid.playfabapi.com.client.characters.getalluserscharacters).
+The `character' is a sub-entity of `title_player_account` and is a direct mirror of [Characters in the Classic APIs](xref:titleid.playfabapi.com.client.characters.getalluserscharacters).
 
 Set the `ID` field to any `characterId` from `result.Characters[i].CharacterId`.
 
-#### Group
+#### group
 
-Group is an Entity that contains other Entities. It is currently limited to Players and Characters.
+The `group` is an Entity that contains other Entities. It is currently limited to Players and Characters.
 
 Set the `ID` field to the `result.Group.Id` if you are creating a group, or the `result.Groups[i].Group.Id` when [listing your memberships](xref:titleid.playfabapi.com.groups.groups.listmembership).
+
+#### game_server 
+
+The `game_server` entity is a unique entity used by game servers primarily for use in the Matchmaking and Lobby features. Future scenarios may be added to support other PlayFab features. 
+
+This entity gives game servers their own identity which is useful to uniquely identify them for subscribing to real-time updates for Matchmaking and Lobby, as well as supporting specific features like Lobby owner migration.
+
+To authenticate as a `game_server` entity, call the API [AuthenticateGameServerWithCustomId](xref:titleid.playfabapi.com.authentication.authentication.authenticategameserverwithcustomid) as a title entity and retrieve the `game_server` entity key and token pair. Use this entity key when using the PlayFab Multiplayer SDK with [PFMultiplayerSetEntityToken](../../multiplayer/lobby/playfabmultiplayerreference-cpp/pfmultiplayer/functions/pfmultiplayersetentitytoken.md). 
