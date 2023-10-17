@@ -105,10 +105,10 @@ There are a few different ways to [upload your content to these URLs](https://cl
       "Item": {
         "Type": "ugc",
         "Title": {
-          "neutral": "Hello World!"
+          "NEUTRAL": "Hello World!"
         },
         "Description": {
-          "neutral": "My first UGC item (with content!)"
+          "NEUTRAL": "My first UGC item (with content!)"
         },
         "ContentType": "Game Item",
         "IsHidden": false,
@@ -193,8 +193,8 @@ In this section, we will create a UGC item completely within the Game Manager ex
     | Entity ID     | [your player ID]                                      |
     | Content type  | Game Item                                             |
     | Start date    | [any date in the past]                                |
-    | Title         | `{ "neutral": "Hello World!" }`                       |
-    | Description   | `{ "neutral": "My first UGC item (with content!)" }`  |
+    | Title         | `{ "NEUTRAL": "Hello World!" }`                       |
+    | Description   | `{ "NEUTRAL": "My first UGC item (with content!)" }`  |
 
     ![New UGC Item](../media/tutorials/publish-ugc-new-ugc-item.png)
 
