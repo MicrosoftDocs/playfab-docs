@@ -107,7 +107,7 @@ Set the `ID` field to `LoginResult.EntityToken.Id` in the Client API, or `GetEnt
 
 #### character
 
-The `character' is a sub-entity of `title_player_account` and is a direct mirror of [Characters in the Classic APIs](xref:titleid.playfabapi.com.client.characters.getalluserscharacters).
+The `character` is a sub-entity of `title_player_account` and is a direct mirror of [Characters in the Classic APIs](xref:titleid.playfabapi.com.client.characters.getalluserscharacters).
 
 Set the `ID` field to any `characterId` from `result.Characters[i].CharacterId`.
 
