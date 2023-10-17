@@ -84,7 +84,7 @@ The **Publisher ID** on the **API Features** page is your `GamePublisherId`.
 
 #### title
 
-The `title`` is the singular Entity that refers to all global information for that Title. This information should be static. Changes to this Entity aren't* reflected in real time.
+The `title` is the singular Entity that refers to all global information for that Title. This information should be static. Changes to this Entity aren't* reflected in real time.
 
 Set the `ID` field to your game's `TitleId`. To retrieve your `TitleId`:
 
