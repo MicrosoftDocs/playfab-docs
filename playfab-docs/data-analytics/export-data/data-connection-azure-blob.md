@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 First, you need an Azure subscription and a storage account. 
 
-For existing PlayFab and Azure customers, you can create a storage container on the [Azure portal](https://ms.portal.azure.com/#allservices) and get started with Data Connections on [Azure PlayFab](https://developer.playfab.com/sign-up/). 
+For existing PlayFab and Azure customers, you can create a storage container on the [Azure portal](https://ms.portal.azure.com/#allservices) and get started with Data Connections on [Azure PlayFab](https://developer.playfab.com/en-US/sign-up). 
 
 For existing PlayFab who are new to Azure, you can sign up for an [Azure subscription](https://ms.portal.azure.com/).
 
@@ -60,7 +60,7 @@ For PlayFab to ingest data in your storage account, container details along with
 
 ![Screenshot of SAS token on the account level - Option 2](media/SAS-token-on-the-account-level.png "SAS token on the account level - Option 2") 
 
-## Create an Azure Data Explorer Data Connection in PlayFab
+## Create an Azure Blob Data Connection in PlayFab
 
 ### Step 1: Navigate to the data connections tab
 
@@ -73,7 +73,7 @@ For PlayFab to ingest data in your storage account, container details along with
 ### Step 2: Configure a new Data Connection
 
 - Click “New Connection” button.
-- Choose the “Destination Type” to be “Azure Data Explorer”
+- Choose the “Destination Type” to be “Azure Blob Storage”
 - Populate the fields using the following values  
 
 | Value | Details |
