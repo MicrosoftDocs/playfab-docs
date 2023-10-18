@@ -1,8 +1,8 @@
 ---
 title: Publish your first user generated content
-author: cybtachyon
+author: joannaleecy
 description: Tutorial outlining the steps to publish your first user generated content.
-ms.author: derekreese
+ms.author: joanlee
 ms.date: 06/13/2021
 ms.topic: article
 ms.service: playfab
