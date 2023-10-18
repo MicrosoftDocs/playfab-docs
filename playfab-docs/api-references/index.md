@@ -12,11 +12,11 @@ ms.localizationpriority: medium
 
 # REST API overview
 
-Welcome to the PlayFab REST API reference. Here you will find reference material and gain insight into how our APIs work. Each API reference is broken down into several different sections.
+Welcome to the PlayFab REST API reference. Here you'll find reference material and gain insight into how our APIs work. Each API reference is broken down into several different sections.
 
 ## Endpoint
 
-The endpoint is the HTTP URL that you can make API requests against. It is preceded with a REST method type (eg. GET, POST). In addition, the titleId must be replaced with your game titleId.
+The endpoint is the HTTP URL that you can make API requests against. It's preceded with a REST method type (for example, GET, POST). In addition, the titleId must be replaced with your game titleId.
 
 Example:
 
@@ -26,7 +26,7 @@ POST https://[titleId].playfabapi.com/Client/LoginWithCustomID
 
 ## Request Body
 
-The request body is the object model that is sent as (JSON) to our API service. These models will contain properties that need to be sent along with your API as the payload. Some properties will be flagged as **required**, while others are **optional**.
+The request body is the object model that is sent as (JSON) to our API service. These models contain properties that need to be sent along with your API as the payload. Some properties are flagged as **required**, while others are **optional**.
 
 ## Responses
 
@@ -34,15 +34,15 @@ The API service will either return a 200 OK with a JSON payload that can be dese
 
 ![Example 200 OK response with a LoginResult](images/responses.png)
 
-If the response fails for any reason, a 400 Bad Request is received. This could mean the API service is returning information about a bad request. Often, this could be missing parameters in your API call or a number of other reasons. The ApiErrorWrapper object contains valuable information about the error including error codes, error details and error messages from the server.
+If the response fails, a 4XX error response is received. A 400 Bad Request could often be due to missing parameters in your API call or other reasons such as exceeding rate limits and validation errors. If you encounter a 4XX error, it's best to check the request parameters and authentication token and ensure they're correct. The ApiErrorWrapper object contains valuable information about the error including error codes, error details and error messages from the server to help identify the issue.
 
 ## Security
 
-Each API has some form of security that needs to be passed in the header of each request. See this section to know what needs to be defined. Sometimes this is a session ticket from a login request or it could be your title secret key if you are making server api requests.
+Each API has some form of security that needs to be passed in the header of each request. See this section to know what needs to be defined. Sometimes this is a session ticket from a login request or it could be your title secret key if you're making server api requests.
 
 ## Concurrency
 
-The API service is designed to handle a very large number of concurrent calls from each title, but there are limits and restrictions on the number of concurrent calls that can access a single player or other single entity such as a character or group. If this concurrency limit is exceeded, the API returns an `APIConcurrentRequestLimitExceeded` or `ConcurrentEditError` error code. In general, it is safe to make more than one read request for a given player concurrently, but it is best to make a single update request at a time.
+The API service is designed to handle a very large number of concurrent calls from each title, but there are limits and restrictions on the number of concurrent calls that can access a single player or other single entity such as a character or group. If this concurrency limit is exceeded, the API returns an `APIConcurrentRequestLimitExceeded` or `ConcurrentEditError` error code. In general, it's safe to make more than one read request for a given player concurrently, but it's best to make a single update request at a time.
 
 ## Model Definitions
 
@@ -50,4 +50,4 @@ Each response from the API service can contain one or more Models in the respons
 
 ### Event Model Definitions
 
-The [PlayStream Event Model reference](events/index.md) contains the models of the automatically generated PlayStream event types. Each event type has a set of properties that are included as part of event's data wherever it is sent.
+The [PlayStream Event Model reference](events/index.md) contains the models of the automatically generated PlayStream event types. Each event type has a set of properties that are included as part of event's data wherever it's sent.
