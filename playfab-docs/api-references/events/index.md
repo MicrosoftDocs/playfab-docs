@@ -23,7 +23,7 @@ Each event type has a set of properties that are included as part of event's dat
 
 - [entity_executed_cloud_script](entity-executed-cloud-script.md)  
   This event is optionally triggered when an Entity CloudScript function is executed, either by calling the ExecuteCloudScript API with the GeneratePlayStreamEvent option or triggered by a PlayStream event action with the 'Publish results as a PlayStream Event' box checked.  
- 
+
 - [entity_files_set](entity-files-set.md)  
   This event is triggered when files are attached to an entity.
 
@@ -39,7 +39,7 @@ Each event type has a set of properties that are included as part of event's dat
 - [entity_virtual_currency_balances_changed](entity-virtual-currency-balances-changed.md)  
   This event is triggered when an entity's virtual currency balance changes.
 
-- [group_created](group-created.md) 
+- [group_created](group-created.md)
   This event is triggered when an entity group is created.
 
 - [group_deleted](group-deleted.md)  
@@ -67,7 +67,7 @@ Each event type has a set of properties that are included as part of event's dat
   This event is triggered when a role is updated within a group.
 
 - [group_updated](group-updated.md)  
-  This event is triggered when an entity group is updated. 
+  This event is triggered when an entity group is updated.
 
 - [matchmaking_match_found](matchmaking-match-found.md)  
   This event is triggered when a group of tickets are matched together.  
@@ -89,7 +89,7 @@ Each event type has a set of properties that are included as part of event's dat
 
 - [multiplayer_server_build_region_updated](multiplayer-server-build-region-updated.md)  
   This event is triggered when a multiplayer server build region is updated.
- 
+
 - [multiplayer_server_certificate_deleted](multiplayer-server-certificate-deleted.md)  
   This event is triggered when a multiplayer server certificate is deleted.
 
@@ -119,14 +119,14 @@ Each event type has a set of properties that are included as part of event's dat
 
 - [multiplayer_server_vm_unassignment_started](multiplayer-server-vm-unassignment-started.md)  
   This event is triggered when a virtual machine is unassigned from a multiplayer server build.  
- 
+
 - [multiplayer_server_vm_unhealthy](multiplayer-server-vm-unhealthy.md)  
   This event is triggered when a virtual machine is found to be unhealthy.
 
 - [studio_created](studio-created.md)  
   This event is triggered when a studio is created.
 
-- [studio_user_added](studio-user-added.md)    
+- [studio_user_added](studio-user-added.md)
   This event is triggered when a user accepts a studio invitation.  
 
 - [studio_user_invited](studio-user-invited.md)  
@@ -140,6 +140,32 @@ Each event type has a set of properties that are included as part of event's dat
 
 - [studio_tier_updated](studio-tier-updated.md)  
   This event is triggered when a studio tier is updated.
+
+## Catalog
+
+- [item_created](item-created.md)  
+  This event is triggered when an item is created.
+
+- [item_deleted](item-deleted.md)  
+  This event is triggered when an item is deleted.
+
+- [item_moderation_state_changed](item-moderation-state-changed.md)  
+  This event is triggered when an item moderation state is changed.
+
+- [item_publish_requested](item-publish-requested.md)  
+  This event is triggered when an publishing is started.
+
+- [item_reported](item-reported.md)  
+  This event is triggered when an item is reported.
+
+- [item_updated](item-updated.md)  
+  This event is triggered when an item is updated.
+
+- [review_reported](review-reported.md)  
+  This event is triggered when a review is reported.
+
+- [reviews_takedown_requested](reviews-takedown-requested.md)  
+  Event trigged when a takedown of reviews is requested.
 
 ## Character
 
@@ -164,16 +190,39 @@ Each event type has a set of properties that are included as part of event's dat
 - [character_virtual_currency_balance_changed](character-virtual-currency-balance-changed.md)  
   This event is triggered when a character's virtual currency balance changes.  
 
+## Inventory
+
+- [items_added](items-added.md)  
+  Event raised when items have been added to an inventory.
+
+- [items_deleted](items-deleted.md)  
+  Event raised when items have been deleted from an inventory.
+
+- [items_purchased](items-purchased.md)  
+  Event raised when items have been purchased from an inventory.
+
+- [items_redeemed](items-redeemed.md)  
+  Event raised when items have been redeemed to an inventory.
+
+- [items_subtracted](items-subtracted.md)  
+  Event raised when items have been subtracted from an inventory.
+
+- [items_transferred](items-transferred.md)  
+  Event raised when items have been transferred to or from an inventory.
+
+- [items_updated](items-updated.md)  
+  Event raised when items have been updated in an inventory.
+
 ## Partner
 
 - [display_name_filtered](display-name-filtered.md)  
   This event is triggered when a display name is filtered by community sift.  
 
 - [player_display_name_filtered](player-display-name-filtered.md)  
-  This event is triggered when a display name is filtered by community sift only if there is an associated player EntityId for the event.   
+  This event is triggered when a display name is filtered by community sift only if there is an associated player EntityId for the event.
 
 - [player_photon_session_authenticated](player-photon-session-authenticated.md)  
-  This event is triggered when a player connects to a Photon Cloud application and authenticates with PlayFab using Photon custom authentication. 
+  This event is triggered when a player connects to a Photon Cloud application and authenticates with PlayFab using Photon custom authentication.
 
 ## Player
 
@@ -187,13 +236,13 @@ Each event type has a set of properties that are included as part of event's dat
   This event is triggered when an action linked to a segmentation change or event rule executes on a player.
 
 - [player_ad_campaign_attribution](player-ad-campaign-attribution.md)  
-  This event is triggered by an attribution tracking Add-on when a player is matched to a paid acquisition campaign. 
+  This event is triggered by an attribution tracking Add-on when a player is matched to a paid acquisition campaign.
 
 - [player_ad_closed](player-ad-closed.md)  
   This event is triggered when a player closes an ad.
 
 - [player_added_title](player-added-title.md)  
-  This event is triggered when a player creates a new account for a title. Note: this event is triggered once per title rather than once per publisher. 
+  This event is triggered when a player creates a new account for a title. Note: this event is triggered once per title rather than once per publisher.
 
 - [player_ad_ended](player-ad-ended.md)  
   This event is triggered when a player finishes an ad.
@@ -214,191 +263,191 @@ Each event type has a set of properties that are included as part of event's dat
   This event is triggered when a player is banned.
 
 - [player_changed_avatar](player-changed-avatar.md)  
-  This event is triggered when a player's avatar URL is changed. 
+  This event is triggered when a player's avatar URL is changed.
 
 - [player_completed_password_reset](player-completed-password-reset.md)  
-  This event is triggered when a player completes the password reset process by visiting the link URL that was sent to them and choosing a new password. 
+  This event is triggered when a player completes the password reset process by visiting the link URL that was sent to them and choosing a new password.
 
 - [player_consumed_item](player-consumed-item.md)  
-  This event is triggered when a player consumes an item from their inventory. 
+  This event is triggered when a player consumes an item from their inventory.
 
 - [player_created](player-created.md)  
-  This event is triggered when a player account is created for the first time. Note: this event is only triggered once per publisher, not once per title. 
+  This event is triggered when a player account is created for the first time. Note: this event is only triggered once per publisher, not once per title.
 
 - [player_data_exported](player-data-exported.md)  
-  This event is triggered when a player's data is exported. 
+  This event is triggered when a player's data is exported.
 
 - [player_device_info](player-device-info.md)  
-  This event is triggered once after the player logs in based on the settings for your title. 
+  This event is triggered once after the player logs in based on the settings for your title.
 
 - [player_displayname_changed](player-displayname-changed.md)  
-  This event is triggered when a player's display name is changed. 
+  This event is triggered when a player's display name is changed.
 
 - [player_executed_cloudscript](player-executed-cloudscript.md)  
-  This event is optionally triggered when a CloudScript function is executed, either by calling the ExecuteCloudScript API with the GeneratePlayStreamEvent option or triggered by a PlayStream event action with the 'Publish results as a PlayStream Event' box checked. 
+  This event is optionally triggered when a CloudScript function is executed, either by calling the ExecuteCloudScript API with the GeneratePlayStreamEvent option or triggered by a PlayStream event action with the 'Publish results as a PlayStream Event' box checked.
 
 - [player_inventory_item_added](player-inventory-item-added.md)  
-  This event is triggered when an item is granted to a player. 
+  This event is triggered when an item is granted to a player.
 
 - [player_linked_account](player-linked-account.md)  
-  This event is triggered when a new authentication method is linked to a player's account. 
+  This event is triggered when a new authentication method is linked to a player's account.
 
 - [player_logged_in](player-logged-in.md)  
-  This event is triggered when a player logs in. 
+  This event is triggered when a player logs in.
 
 - [player_password_reset_link_sent](player-password-reset-link-sent.md)  
-  This event is triggered when a player is sent a link to reset their password. 
+  This event is triggered when a player is sent a link to reset their password.
 
 - [player_paid_for_purchase](player-paid-for-purchase.md)  
-  This event is triggered when the second step of the payment process completes, paying for the purchase. 
+  This event is triggered when the second step of the payment process completes, paying for the purchase.
 
 - [player_ranked_on_leaderboard_version](player-ranked-on-leaderboard-version.md)  
-  This event is triggered for the top-ranked players on a leaderboard when the leaderboard version changes (e.g. when a leaderboard statistic version is incremented). The maximum number of leaderboard entries for which the event is generated is controlled by the "Leaderboard version change top rank events sent" title limit. 
+  This event is triggered for the top-ranked players on a leaderboard when the leaderboard version changes (e.g. when a leaderboard statistic version is incremented). The maximum number of leaderboard entries for which the event is generated is controlled by the "Leaderboard version change top rank events sent" title limit.
 
 - [player_realmoney_purchase](player-realmoney-purchase.md)  
-  This event is triggered when a player makes a real money purchase, and generates revenue for the game. 
+  This event is triggered when a player makes a real money purchase, and generates revenue for the game.
 
 - [player_receipt_validation](player-receipt-validation.md)  
-  This event is triggered when a player attempts to make a real money purchase and the purchase receipt is being validated. 
+  This event is triggered when a player attempts to make a real money purchase and the purchase receipt is being validated.
 
 - [player_redeemed_coupon](player-redeemed-coupon.md)  
-  This event is triggered when a player redeems a coupon. 
+  This event is triggered when a player redeems a coupon.
 
 - [player_registered_push_notifications](player-registered-push-notifications.md)  
-  This event is triggered when a player registers for push notifications. 
+  This event is triggered when a player registers for push notifications.
 
 - [player_removed_title](player-removed-title.md)  
-  This event is triggered when a player account for a title is removed. Note: this event is triggered once per title rather than once per publisher. 
+  This event is triggered when a player account for a title is removed. Note: this event is triggered once per title rather than once per publisher.
 
 - [player_reported_as_abusive](player-reported-as-abusive.md)  
-  This event is triggered when a player is reported by another player as abusive. 
+  This event is triggered when a player is reported by another player as abusive.
 
 - [player_set_profile_property](player-set-profile-property.md)  
-  This event is triggered when PlayFab makes an internal adjustment to a player profile. 
+  This event is triggered when PlayFab makes an internal adjustment to a player profile.
 
 - [player_started_purchase](player-started-purchase.md)  
-  This event is triggered when a player starts a purchase. 
+  This event is triggered when a player starts a purchase.
 
 - [player_statistic_changed](player-statistic-changed.md)  
-  This event is triggered when a player statistic is changed. 
+  This event is triggered when a player statistic is changed.
 
 - [player_statistic_deleted](player-statistic-deleted.md)  
-  This event is triggered when a player statistic is deleted. 
+  This event is triggered when a player statistic is deleted.
 
 - [player_tag_added](player-tag-added.md)  
-  This event is triggered when a tag is added to a player profile. 
+  This event is triggered when a tag is added to a player profile.
 
 - [player_tag_removed](player-tag-removed.md)  
-  This event is triggered when a tag is removed from a player profile. 
+  This event is triggered when a tag is removed from a player profile.
 
 - [player_triggered_action_executed_cloudscript](player-triggered-action-executed-cloudscript.md)  
-  This event is triggered when a CloudScript function is run as the result of a PlayStream action, and the 'Publish results as a PlayStream Event' box was checked. 
+  This event is triggered when a CloudScript function is run as the result of a PlayStream action, and the 'Publish results as a PlayStream Event' box was checked.
 
 - [player_unlinked_account](player-unlinked-account.md)  
-  This event is triggered when an authentication method is unlinked from a player's account. 
+  This event is triggered when an authentication method is unlinked from a player's account.
 
 - [player_updated_contact_email](player-updated-contact-email.md)  
-  This event is triggered when a player updates a contact email on their profile. 
+  This event is triggered when a player updates a contact email on their profile.
 
 - [player_vc_item_purchased](player-vc-item-purchased.md)  
-  This event is triggered when the player makes a purchase using virtual currency. 
+  This event is triggered when the player makes a purchase using virtual currency.
 
 - [player_verified_contact_email](player-verified-contact-email.md)  
-  This event is triggered when a contact email is verified for a player. 
+  This event is triggered when a contact email is verified for a player.
 
 - [player_virtual_currency_balance_changed](player-virtual-currency-balance-changed.md)  
-  This event is triggered when a player's virtual currency balance changes. 
+  This event is triggered when a player's virtual currency balance changes.
 
 - [sent_push_notification](sent-push-notification.md)  
-  This event is triggered when a push notification is sent or fails to be sent to a player. 
+  This event is triggered when a push notification is sent or fails to be sent to a player.
 
 - [sent_email](sent-email.md)  
-  This event is triggered when an email is sent or fails to send to a player. 
+  This event is triggered when an email is sent or fails to send to a player.
 
 ## Session
 
 - [client_focus_change](client-focus-change.md)  
-  This event is triggered every time the application enters or exits focus on the player's device. 
+  This event is triggered every time the application enters or exits focus on the player's device.
 
 - [client_session_start](client-session-start.md)  
-  This event is triggered when a new client session starts. 
+  This event is triggered when a new client session starts.
 
 ## Title
 
 - [title_aborted_task](title-aborted-task.md)  
-  This event is triggered when a task instance is aborted. 
+  This event is triggered when a task instance is aborted.
 
 - [title_added_cloudscript](title-added-cloudscript.md)  
-  This event is triggered when new CloudScript is uploaded to PlayFab. 
+  This event is triggered when new CloudScript is uploaded to PlayFab.
 
 - [title_api_settings_changed](title-api-settings-changed.md)  
-  This event is triggered when an API Features setting is changed for the title. 
+  This event is triggered when an API Features setting is changed for the title.
 
 - [title_catalog_updated](title-catalog-updated.md)  
-  This event is triggered when a catalog is changed. 
+  This event is triggered when a catalog is changed.
 
 - [title_client_rate_limited_alert](title-client-rate-limited-alert.md)  
-  This event is triggered when a single IP address generates too many API calls to PlayFab and is throttled. 
+  This event is triggered when a single IP address generates too many API calls to PlayFab and is throttled.
 
 - [title_completed_task](title-completed-task.md)  
-  This event is triggered when a scheduled task has completed 
+  This event is triggered when a scheduled task has completed
 
 - [title_created_task](title-created-task.md)  
-  This event is triggered when a task is created. 
+  This event is triggered when a task is created.
 
 - [title_deleted](title-deleted.md)  
-  This event is triggered when a game title is deleted. 
+  This event is triggered when a game title is deleted.
 
 - [title_deleted_task](title-deleted-task.md)  
-  This event is triggered when a task is deleted. 
+  This event is triggered when a task is deleted.
 
 - [title_exceeded_limit](title-exceeded-limit.md)  
-  This event is triggererd when a title exceeds a service limit and receives an error. 
+  This event is triggererd when a title exceeds a service limit and receives an error.
 
 - [title_high_error_rate_alert](title-high-error-rate-alert.md)  
-  This event is triggered when a game title experiences a high rate of errors. 
+  This event is triggered when a game title experiences a high rate of errors.
 
 - [title_initiated_player_password_reset](title-initiated-player-password-reset.md)  
-  This event is triggered when a title initiates the account recovery process for a player. 
+  This event is triggered when a title initiates the account recovery process for a player.
 
 - [title_limit_changed](title-limit-changed.md)  
-  This event is triggered when a title changes a service limit. 
+  This event is triggered when a title changes a service limit.
 
 - [title_news_updated](title-news-updated.md)  
-  This event is triggered when a title news is created or updated. 
+  This event is triggered when a title news is created or updated.
 
 - [title_permission_policy_changed](title-permission-policy-changed.md)  
-  This event is triggered when an update occurs to a a title's permission policies. 
+  This event is triggered when an update occurs to a a title's permission policies.
 
 - [title_profile_view_constraints_changed](title-profile-view-constraints-changed.md)  
-  This event is triggered when a profile view constraint is changed for the title. 
+  This event is triggered when a profile view constraint is changed for the title.
 
 - [title_published_cloudscript](title-published-cloudscript.md)  
-  An inactive revision of CloudScript has been made into the active 'live' version. 
+  An inactive revision of CloudScript has been made into the active 'live' version.
 
 - [title_queue_config_updated](title-queue-config-updated.md)  
-  This event is triggered when a queue config is changed. 
+  This event is triggered when a queue config is changed.
 
 - [title_requested_limit_change](title-requested-limit-change.md)  
-  This event is triggered when a title requests a service limit change. 
+  This event is triggered when a title requests a service limit change.
 
 - [title_saved_survey](title-saved-survey.md)  
-  This event is triggered when a game's survey is saved. 
+  This event is triggered when a game's survey is saved.
 
 - [title_scheduled_cloudscript_executed](title-scheduled-cloudscript-executed.md)  
   This event is triggered when a CloudScript function is run by a scheduled task.  
 
 - [title_secret_key_changed](title-secret-key-changed.md)  
-  This event is triggered when a title adds or updates a Secret Key 
+  This event is triggered when a title adds or updates a Secret Key
 
 - [title_started_task](title-started-task.md)  
-  This event is triggered when a task is scheduled to run. 
+  This event is triggered when a task is scheduled to run.
 
 - [title_statistic_version_changed](title-statistic-version-changed.md)  
   This event is triggered when the version of a statistic changes, causing its leaderboard to reset.
 
 - [title_store_updated](title-store-updated.md)  
-  This event is triggered when a store is changed. 
+  This event is triggered when a store is changed.
 
 - [title_updated_task](title-updated-task.md)  
-  This event is triggered when a task is updated. 
+  This event is triggered when a task is updated.
