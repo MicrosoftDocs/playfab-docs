@@ -71,7 +71,7 @@ These values are meant to be used in the `EntityKey.Type` field.
 
 #### namespace
 
-The `namespace` is the singular Entity that refers to *all* global information for every Title within a Studio. This information should be static. Changes to this Entity aren't* reflected in real time.
+The `namespace` is the singular Entity that refers to *all* global information for every Title within a Studio. This information should be static. Changes to this Entity *aren't* reflected in real time.
 
 Set the `ID` field to your `GamePublisherId`. To retrieve your `GamePublisherId`:
 
