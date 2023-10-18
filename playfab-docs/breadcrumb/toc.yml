@@ -1,3 +1,7 @@
-- name: Azure PlayFab Docs
+- name: Azure
   tocHref: /gaming/playfab/
-  topicHref: /gaming/playfab/
+  topicHref: /azure/index
+  items:
+  - name: Azure PlayFab Docs
+    tocHref: /gaming/playfab/
+    topicHref: /gaming/playfab/index
