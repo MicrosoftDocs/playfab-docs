@@ -47,9 +47,9 @@ For Android platforms, we follow [the guidelines Google has published](https://d
 
     c. Compile SDK Version has been bumped from Android API 28 -> Android API 34.
 
-    d. **We've officially deprecated 32 bit builds. Arm7 and x86 binaries for PlayFab Party will no longer be available.** Please file a GitHub issue if you have any concerns.
+    d. **We've officially deprecated 32 bit builds. Arm7 and x86 binaries for PlayFab Party will no longer be available.** File a GitHub issue if you have any concerns.
 
-    e. With the move to Android API 34, we've begun targeting AndroidX libraries under the hood. This should not have a direct impact on your applications. Please file a GitHub issue if you have any questions or concerns.
+    e. With the move to Android API 34, we've begun targeting AndroidX libraries under the hood. This change shouldn't have a direct effect on your applications. File a GitHub issue if you have any questions or concerns.
 
 ## 1.8.5
 
