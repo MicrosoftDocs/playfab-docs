@@ -29,16 +29,16 @@ October 19, 2023
 This release updates the minimum SDK versioning and target SDK versioning for PlayFab Party Apple and Android platforms.
 
 For Apple platforms, we follow [the guidelines Apple has published](https://developer.apple.com/support/xcode/) with the release of Xcode 15.
-1. iOS
+- iOS
     - Minimum Deployment Target: iOS 10 -> iOS 12
     - Target Deployment Version: iOS 16 -> iOS 17
 
-2. macOS
+- macOS
     - Target Deployment Version: macOS 13.3 -> macOS 14.
     - Minimum Deployment Target was lowered from macOS 12.3 -> macOS 10.13 in release v.1.8.8.
 
 For Android platforms, we follow [the guidelines Google has published](https://developer.android.com/google/play/requirements/target-sdk).
-1. Android
+- Android
     - Minimum SDK Version: Android API 19 -> Android API 21.
     - Target SDK Version: Android API 28 -> Android API 34.
     - Compile SDK Version: Android API 28 -> Android API 34.
