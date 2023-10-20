@@ -28,28 +28,28 @@ This release updates the minimum SDK versioning and target SDK versioning for Pl
 For Apple platforms, we follow [the guidelines Apple has published](https://developer.apple.com/support/xcode/) with the release of Xcode 15.
 1. iOS Changes
 
-    a. Minimum Deployment Target bumped from iOS 10 -> iOS 12.
+    - Minimum Deployment Target bumped from iOS 10 -> iOS 12.
 
-    b. Target Deployment Version has been bumped from iOS 16 -> iOS 17.
+    - Target Deployment Version has been bumped from iOS 16 -> iOS 17.
 
 2. macOS Changes
 
-    a. Minimum Deployment Target was lowered from macOS 12.3 -> macOS 10.13 in release v.1.8.8.
+    - Minimum Deployment Target was lowered from macOS 12.3 -> macOS 10.13 in release v.1.8.8.
 
-    b. Target Deployment Version has been bumped from macOS 13.3 -> macOS 14.
+    - Target Deployment Version has been bumped from macOS 13.3 -> macOS 14.
 
 For Android platforms, we follow [the guidelines Google has published](https://developer.android.com/google/play/requirements/target-sdk).
 1. Android Changes
 
-    a. Minimum SDK Version has been bumped from Android API 19 -> Android API 21.
+    - Minimum SDK Version has been bumped from Android API 19 -> Android API 21.
 
-    b. Target SDK Version has been bumped from Android API 28 -> Android API 34.
+    - Target SDK Version has been bumped from Android API 28 -> Android API 34.
 
-    c. Compile SDK Version has been bumped from Android API 28 -> Android API 34.
+    - Compile SDK Version has been bumped from Android API 28 -> Android API 34.
 
-    d. **We've officially deprecated 32 bit builds. Arm7 and x86 binaries for PlayFab Party will no longer be available.** File a GitHub issue if you have any concerns.
+    - **We've officially deprecated 32 bit builds. Arm7 and x86 binaries for PlayFab Party will no longer be available.** File a GitHub issue if you have any concerns.
 
-    e. With the move to Android API 34, we've begun targeting AndroidX libraries under the hood. This change shouldn't have a direct effect on your applications. File a GitHub issue if you have any questions or concerns.
+    - With the move to Android API 34, we've begun targeting AndroidX libraries under the hood. This change shouldn't have a direct effect on your applications. File a GitHub issue if you have any questions or concerns.
 
 ## 1.8.5
 
