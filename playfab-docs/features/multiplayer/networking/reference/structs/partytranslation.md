@@ -5,7 +5,7 @@ description: "A translation."
 ms.author: jdewey
 ms.topic: reference
 ms.service: playfab
-ms.date: 04/21/2022
+ms.date: 10/20/2023
 ---
 
 # PartyTranslation  
@@ -30,7 +30,7 @@ struct PartyTranslation {
   
 Indicates whether the translation operation succeeded.
   
-On success, ```translation``` will be a string of non-zero length containing the translated text. On failure, the string will be empty.
+On success, ```translation``` is a string of nonzero length containing the translated text. On failure, the string is empty.
   
 **`errorDetail`** &nbsp; PartyError  
   
@@ -42,7 +42,7 @@ The human-readable form of this error detail can be retrieved via [PartyManager:
   
 The language code of the translation.
   
-The language code will be in BCP 47 format, such as en-US for English (United States). Supported language codes are enumerated in [Language and voice support for the Speech service](/azure/cognitive-services/speech-service/language-support).
+The language code is in BCP 47 format, such as en-US for English (United States). Supported language codes are enumerated in [Language support](/azure/cognitive-services/speech-service/language-support).
   
 **`options`** &nbsp; [PartyTranslationReceivedOptions](../enums/partytranslationreceivedoptions.md)  
   
@@ -52,7 +52,7 @@ Additional options describing the translation.
   
 The translation string.
   
-By default, profanity masking is enabled and replaces each character of a profane word with an asterisk. Profanity masking is applied after translating the unmasked source transcription. Depending on context, it's possible for the transcription to contain masked profanity but not the translation. Similarly, it's possible for the translation to contain masked profanity but not the original transcription. Profanity masking can be disabled via [PartyVoiceChatTranscriptionOptions::DisableProfanityMasking](../enums/partyvoicechattranscriptionoptions.md). <br /><br /> The translation string may be up to ```c_maxChatTextMessageLength``` characters long, not including the null terminator. Truncation occurs if the translated string length would exceed that limit, which can happen due to language differences even though the original string length is less than or equal to ```c_maxChatTextMessageLength```. In such a case, ```options``` will contain [PartyTranslationReceivedOptions::Truncated](../enums/partytranslationreceivedoptions.md). Truncation may occur at an arbitrary point in the UTF-8 byte sequence and may not result in a complete, valid character or word. Strings are always null terminated, even when truncated.
+By default, profanity masking is enabled and replaces each character of a profane word with an asterisk. Profanity masking is applied after translating the unmasked source transcription. Depending on context, it's possible for the transcription to contain masked profanity but not the translation. Similarly, it's possible for the translation to contain masked profanity but not the original transcription. Profanity masking can be disabled via [PartyVoiceChatTranscriptionOptions::DisableProfanityMasking](../enums/partyvoicechattranscriptionoptions.md). <br /><br /> The translation string may be up to ```c_maxChatTextMessageLength``` characters long, not including the null terminator. Truncation occurs if the translated string length would exceed that limit, which can happen due to language differences even though the original string length is less than or equal to ```c_maxChatTextMessageLength```. In such a case, ```options``` contains [PartyTranslationReceivedOptions::Truncated](../enums/partytranslationreceivedoptions.md). Truncation may occur at an arbitrary point in the UTF-8 byte sequence and may not result in a complete, valid character or word. Strings are always null terminated, even when truncated.
   
   
 ## Requirements  
