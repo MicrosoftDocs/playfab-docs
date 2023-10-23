@@ -10,14 +10,41 @@ keywords: playfab, party, release notes, multiplayer, networking
 ms.localizationpriority: medium
 ---
 
-# PlayFab Party release notes
+# PlayFab Party Release Notes
 
 PlayFab Party had a significant (up to 90%) price drop on October 13, 2020. You can view the updated Party rates on the [Pricing page](https://playfab.com/pricing). For more information about the price drop, see our [blog post](https://blog.playfab.com/blog/starting-today-save-up-to-90-using-playfab-party).
 
 > [!NOTE]
-> Support for the XDK and Windows 7 platforms ended on August 1, 2023. No new PlayFab Party library updates will be released for those platforms. The PlayFab Party networking and voice services will continue to operate with no impact to any titles currently using Windows 7 or XDK versions of the PlayFab Party library.  
+> Support for the XDK and Windows 7 platforms ended on August 1, 2023. No new PlayFab Party library updates will be released for those platforms. The PlayFab Party networking and voice services will continue to operate with no impact to any titles currently using Windows 7 or XDK versions of the PlayFab Party library.
 > 
 >For more information, please see our [forum post](https://community.playfab.com/articles/141546/playfab-party-ending-support-for-the-xdk-and-windo.html).
+
+> [!NOTE]
+> Support for 32-bit Android platforms (arm7 and x86) ended on October 19th, 2023. No new PlayFab Party library updates will be released for those platforms. The PlayFab Party networking and voice services will continue to operate with no impact to any titles currently using the PlayFab Party library on 32-bit Android platforms.
+
+## 1.8.10
+
+October 19, 2023
+
+This release updates the minimum SDK versioning and target SDK versioning for PlayFab Party Apple and Android platforms.
+
+For Apple platforms, we follow [Apple's Xcode guidelines](https://developer.apple.com/support/xcode/) with the release of Xcode 15.
+- iOS
+    - The Minimum Deployment Target has been increased from iOS 10 to iOS 12.
+    - The Target Deployment Version has been increased from iOS 16 to iOS 17.
+
+- macOS
+    - The Target Deployment Version has been increased from macOS 13.3 to macOS 14.
+    - The Minimum Deployment Target was lowered from macOS 12.3 to macOS 10.13 in release v.1.8.8.
+
+For Android platforms, we follow [Google's target API guidelines](https://developer.android.com/google/play/requirements/target-sdk).
+- Android
+    - The Minimum SDK Version has been increased from Android API 19 to Android API 21.
+    - The Target SDK Version has been increased from Android API 28 to Android API 34.
+    - The Compile SDK Version has been increased from Android API 28 to Android API 34.
+    - Support for 32-bit Android platforms (arm7 and x86) ended on October 19, 2023. No new PlayFab Party library updates will be released for those platforms. The PlayFab Party networking and voice services will continue to operate with no impact to any titles currently using the PlayFab Party library on 32-bit Android platforms.
+
+If you experience any issues with integrating these packages, [please file a PlayFab Support Ticket](../../pricing/PaidTechnicalSupport.md).
 
 ## 1.8.9
 
