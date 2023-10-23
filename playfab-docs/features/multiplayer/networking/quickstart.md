@@ -262,109 +262,44 @@ Once the function call to `CreateNewNetwork()` succeeds, a network descriptor [P
 
 Refer to the [API Reference Documentation](reference/party_members.md) for information about the other function parameters.
 
-## Connect to a Party network
-
 Once a Party network has been created, invitations are used to control which users can join the network. PlayFab Matchmaking, PlayFab Lobby, platform invites, or custom game services can be used to share connection details with other players.
 
 The simplest invitation type is an open invitation that consists of a network descriptor. For detailed information of all invitation types and the security model, refer to [Invitations and the security model](concepts-invitations-security-model.md).
 
-We implemented simple matchmaking using [PlayFab CloudScripts](../../automation/cloudscript/quickstart.md) in the demo samples, which work as follows:
+## Share Party network descriptor
 
-1. The user creating the network creates a json key value pair with a room number as key and the network descriptor as value.
+At this point, you have a party network descriptor and are ready to share it with other players. There are many synchronization mechanisms that you can use to share this information, but for quick testing purposes, you can copy and paste the Party network descriptor from the host Party session to the guest Party session manually. We recommend using PlayFab Lobby for sharing the network descriptor in your multiplayer game, but you can also use your own lobby service, invites, or other sharing mechanisms based on the needs of your game.
 
-2. They store this json object in playfab backend via a CloudScript function `save_network_descriptor`.
+### Manually share Party network descriptor
 
-3. Any player that wishes to join the same network (abstracted away through the concept of a chat room), queries for the network descriptor associated with the room they seek to join. This is accomplished via calling the CloudScript function `get_network_descriptor`.
+1. From host session, use [PartyManager::SerializeNetworkDescriptor()](reference/classes/PartyManager/methods/partymanager_serializenetworkdescriptor.md) to serialize the network descriptor to a string and print it out to the console.
 
-The full code of the CloudScript functions are given below for reference:
+2. Copy and paste the network descriptor string to another game locally or remotely.
 
-``` javascript
- 
-// Used to store a network descriptor on the server retrievable by the roomId
-// Inputs:
-//    roomId - The hash key used to store and retrieve the network descriptor.
-//    networkDescriptor - The network descriptor used to connect to a party network.
-//
-handlers.save_network_descriptor = function (args, context) 
-{
-  if (args && args.hasOwnProperty("roomId"))
-  {
-    var roomId = args.roomId;
-  }
-  else
-  {
-    return;
-  }
-  
-  if (args && args.hasOwnProperty("networkDescriptor"))
-  {
-    var networkDescriptor = args.networkDescriptor;
-  }
-  else
-  {
-    return;
-  }
-  
-  try {
-    server.CreateSharedGroup({ SharedGroupId: roomId });
-  } catch(err) {
-    log.info("Shared group " + roomId + " could not be created.");
-    log.error(err);
-  }
+3.  In the guest session, use [PartyManager::DeserializeNetworkDescriptor()](reference/classes/PartyManager/methods/partymanager_deserializenetworkdescriptor.md) to deserialize the network descriptor from the network descriptor string.
 
-  var updateRequest = {
-    SharedGroupId: roomId,
-    Data: {
-      "network": networkDescriptor
-    }
-  };
+4. Connect to the Party Network.
 
-  server.UpdateSharedGroupData(updateRequest);
-};
+### Use PlayFab Lobby to share the Party network descriptor
 
-//
-// Used to retrieve a previously stored network descriptor by roomId.
-// Inputs:
-//    roomId - The hash key used to store and retrieve the network descriptor.
-//
-handlers.get_network_descriptor = function (args, context) 
-{
-  if (args && args.hasOwnProperty("roomId"))
-  {
-    var roomId = args.roomId;
-  }
-  else
-  {
-    return;
-  }
-  
-  try 
-  {
-    var getRes = server.GetSharedGroupData({ SharedGroupId: roomId });
-    return getRes.Data;
-  } 
-  catch(err) 
-  {
-    return;
-  }
-};
-```
+PlayFab Lobby can be used to temporarily group players as they move into and out of matches and can be used to synchronize the network descriptor so that players can join the same network. 
+PlayFab Lobby is highly customizable to support a wide variety of gameplay needs on all supported platforms and across platforms. Refer to the [Multiplayer SDK Quickstart](../lobby/lobby-getting-started.md) for more detail about using PlayFab Lobby with real-time notifications.
 
-Once each player has a way to retrieve the network descriptors by selecting a room and calling the CloudScript functions, they can use the network descriptor thus retrieved to join the Party Network.
+For details about using PlayFab Lobby together with PlayFab Party, refer to [Create a lobby with PlayFab Multiplayer SDK](party-lobby-integration.md).
 
-The following steps are required to successfully join a PlayFab Party Network:
+## Connect to a Party network
 
-1. Retrieve the network descriptor as a string by executing the above-mentioned PlayFab CloudScript function.
+Follow the steps below to join the party network after obtaining the Party network descriptor:
 
-2. Deserialize the network descriptor from the network descriptor string.
+1. Use [PartyManager::DeserializeNetworkDescriptor()](reference/classes/PartyManager/methods/partymanager_deserializenetworkdescriptor.md) to deserialize the network descriptor from the network descriptor string.
 
-3. Connect to the Party Network.
+2. Connect to the Party Network.
 
-4. Authenticate the local user for the network.
+3. Authenticate the local user for the network.
 
-5. Connect the local chat control to the network so that we can use VOIP.
+4. Connect the local chat control to the network so that we can use VOIP.
 
-6. Establish a [Party Network endpoint](concepts-objects.md#endpoint) for game message traffic.
+5. Establish a [Party Network endpoint](concepts-objects.md#endpoint) for game message traffic.
 
 ```cpp
     PartyNetworkDescriptor networkDescriptor = {};
