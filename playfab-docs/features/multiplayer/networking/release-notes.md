@@ -28,21 +28,23 @@ October 19, 2023
 
 This release updates the minimum SDK versioning and target SDK versioning for PlayFab Party Apple and Android platforms.
 
-For Apple platforms, we follow [the guidelines Apple has published](https://developer.apple.com/support/xcode/) with the release of Xcode 15.
+For Apple platforms, we follow [Apple's Xcode guidelines](https://developer.apple.com/support/xcode/) with the release of Xcode 15.
 - iOS
-    - Minimum Deployment Target: iOS 10 -> iOS 12
-    - Target Deployment Version: iOS 16 -> iOS 17
+    - The Minimum Deployment Target has been increased from iOS 10 to iOS 12.
+    - The Target Deployment Version has been increased from iOS 16 to iOS 17.
 
 - macOS
-    - Target Deployment Version: macOS 13.3 -> macOS 14.
-    - Minimum Deployment Target was lowered from macOS 12.3 -> macOS 10.13 in release v.1.8.8.
+    - The Target Deployment Version has been increased from macOS 13.3 to macOS 14.
+    - The Minimum Deployment Target was lowered from macOS 12.3 to macOS 10.13 in release v.1.8.8.
 
-For Android platforms, we follow [the guidelines Google has published](https://developer.android.com/google/play/requirements/target-sdk).
+For Android platforms, we follow [Google's target API guidelines](https://developer.android.com/google/play/requirements/target-sdk).
 - Android
-    - Minimum SDK Version: Android API 19 -> Android API 21.
-    - Target SDK Version: Android API 28 -> Android API 34.
-    - Compile SDK Version: Android API 28 -> Android API 34.
-    - **We've officially deprecated 32 bit builds. Please see the note at the top of this page.** Please file a GitHub issue if you have any concerns.
+    - The Minimum SDK Version has been increased from Android API 19 to Android API 21.
+    - The Target SDK Version has been increased from Android API 28 to Android API 34.
+    - The Compile SDK Version has been increased from Android API 28 to Android API 34.
+    - Support for 32-bit Android platforms (arm7 and x86) ended on October 19th, 2023. No new PlayFab Party library updates will be released for those platforms. The PlayFab Party networking and voice services will continue to operate with no impact to any titles currently using the PlayFab Party library on 32-bit Android platforms.
+
+If you experience any issues with integrating these packages, [please file a PlayFab Support Ticket](https://learn.microsoft.com/en-us/gaming/playfab/features/pricing/paidtechnicalsupport).
 
 ## 1.8.5
 
