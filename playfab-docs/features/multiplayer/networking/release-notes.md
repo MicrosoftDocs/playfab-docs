@@ -46,6 +46,23 @@ For Android platforms, we follow [Google's target API guidelines](https://develo
 
 If you experience any issues with integrating these packages, [please file a PlayFab Support Ticket](https://learn.microsoft.com/en-us/gaming/playfab/features/pricing/paidtechnicalsupport).
 
+## 1.8.9
+
+October 20, 2023
+
+- Implemented shared properties for endpoints. Shared properties may be set when creating an endpoint via
+[`PartyNetwork::CreateEndpoint`](reference/classes/PartyNetwork/methods/partynetwork_createendpoint.md). A shared
+property may be retrieved using [`PartyEndpoint::GetSharedProperty`](reference/classes/PartyEndpoint/methods/partyendpoint_getsharedproperty.md).
+- Improved audio packet queueing to reduce perceived chat audio latency in some scenarios.
+- Upgraded internal version of the Opus codec.
+- Fixed a low frequency crash.
+- Improved internal diagnostics.
+- Removed support for Windows 7.
+
+This version of the NuGet package adds a dependency on PartyWin.dll at compile-time rather than dynamically loading a
+platform-specific version of the DLL at runtime. PartyWin7.dll is no longer included in the NuGet and should no longer
+be distributed as part of a title.
+
 ## 1.8.5
 
 June 28, 2023
@@ -77,7 +94,7 @@ May 8, 2023
 - iOS, Android: Added support for enabling noise suppression on audio captured from a local chat control. For more information, see [`PartyLocalChatControl::SetVoiceAudioOptions`](reference/classes/PartyLocalChatControl/methods/partylocalchatcontrol_setvoiceaudiooptions.md).
 
 ### Bug fixes
-- Fixed a bug where the library may leak memory due to internal diagnostic tracking when the user's entity token had expired.
+- Fixed a bug where the library may leak memory due to internal diagnostic tracking when the user's entity token expires.
 
 ## 1.7.23
 
@@ -91,7 +108,7 @@ March 30, 2023
 
 ### Bug fixes
 - Fixed a bug where Party could crash if it was not cleaned up before the host process started exiting.
-- Changed behavior for peer-to-peer connection to fallback to a relayed connection if the link is disconnected unexpectedly, previous behavior would disconnect both the devices from the network.
+- Changed behavior for peer-to-peer connection to fallback to a relayed connection if the link is disconnected unexpectedly. The previous behavior would disconnect both the devices from the network.
 
 ## 1.7.20
 
@@ -168,7 +185,7 @@ March 16, 2022
 February 8, 2022
 ### Performance improvements
 
-- Windows, XDK, Nintendo Switch, PlayStation 4, PlayStation 5: Removed two worker threads and perform relevant work on a preexisting, lower frequency work thread. The Microsoft Game Development Kit (GDK) version of the library already had this coalesced work behavior.
+- Windows, XDK, Nintendo Switch, PlayStation 4, PlayStation 5: Removed two worker threads and perform relevant work on a pre-existing, lower frequency work thread. The Microsoft Game Development Kit (GDK) version of the library already had this coalesced work behavior.
 
 ### Bug fixes
 
@@ -194,7 +211,7 @@ June 29, 2021
 ### Endpoint message behavior improvements
 
 - The ['PartySendMessageQueuingConfiguration'](reference/structs/partysendmessagequeuingconfiguration.md) `timeoutInMilliseconds` field is now also evaluated by the transparent cloud relay if forced to queue messages before forwarding because of differing network conditions or responsiveness of the remote targets.
-- When fully authenticated into a network, sending to a 0-entry array will correctly target the exact set of all remote endpoints the library currently reports in the network at that time. Endpoints being created while the message is in the process of transmitting are no longer potentially included.
+- When fully authenticated into a network, sending to a 0-entry array correctly targets the exact set of all remote endpoints the library currently reports in the network at that time. Endpoints being created while the message is in the process of transmitting are no longer potentially included.
 
 ## 1.6.1
 
@@ -230,7 +247,7 @@ March 26, 2021
 - Fixed a bug where the library may fail to initialize on some Windows devices due to a mismatch between the processor affinity of the process and the library's default thread affinity.
 - Fixed a bug where the library may not provide errors when an operation fails due to an internal web request failure.
 - Fixed a bug where a crash may occur when direct peer connectivity is enabled and the library attempts to establish direct peer connectivity to another device.
-- Fixed a bug that may result in crackly or distorted audio.
+- Fixed a bug that may result in crackling or distorted audio.
 
 ## 1.5.1
 September 05, 2020
@@ -265,14 +282,14 @@ April 30, 2020
 
 ### Bug fixes
 - Fixed a bug where the `languageCode` field in the `PartyCreateChatControlCompletedStateChange` struct was not being populated.
-- Fixed a bug which was artificially inflating the latency measurements reported by `PartyManager::GetRegions()`.
+- Fixed a bug that was artificially inflating the latency measurements reported by `PartyManager::GetRegions()`.
 - Fixed a bug that allowed `PartyManager::SetMemoryCallbacks()` to be called at unsafe times.
 - Fixed a bug where calling `PartyManager::DestroyLocalUser()` with a `PartyLocalUser` in a `PartyNetwork` would generate a `PartyLocalUserRemovedStateChange` with an incorrect value in the removedReason field, `PartyLocalUserRemovedReason::RemoveLocalUser`, instead of the correct value, `PartyLocalUserRemovedReason::DestroyLocalUser`.
 
 ### Misc changes
 - The bandwidth used by chat data has been reduced.
 - More descriptive error codes and error messages are now provided when sandbox issues are encountered on Xbox.
-- `PartyManager::Initialize()` will now fail if an empty PlayFab Title ID is provided.
+- `PartyManager::Initialize()` now fails if an empty PlayFab Title ID is provided.
 - Passing invalid PlayFab Entity Tokens to `PartyManager::CreateLocalUser()` will now result in more descriptive error messages in the state change results for operations that rely on a valid token.
 - Typos in the header documentation have been fixed.
 - A more descriptive error code and error message are now provided when an invalid region is passed to `PartyManager::CreateNewNetwork()`.
@@ -317,7 +334,7 @@ This release of Party adds fixes for `PartyManager::SetMemoryCallbacks()` and al
 
 #### Removal of PartyStateChangeResult::TitleCreateNetworkThrottled
 
-The `PartyStateChangeResult` value `TitleCreateNetworkThrottled` has been removed from the API, since the Party library will never generate it.
+The `PartyStateChangeResult` value `TitleCreateNetworkThrottled` has been removed from the API, since the Party library never generates it.
 
 ## 0.7.0-prerelease
 
@@ -341,7 +358,7 @@ The iOS flavor of Party now has the framework package included for dynamically l
 
 This release of Party makes a change related to the handling of PlayFab entity tokens. In the previous version, the game provided Party with a user's entity token in the `PartyManager::CreateLocalUser()` API. Thereafter, Party internally refreshed the entity token and kept it up to date.
 
-In this version, the internal token refreshing behavior has been removed and is replaced by a new API, `PartyLocalUser::UpdateEntityToken()`. The caller is now responsible for monitoring the expiration of the entity token provided to `PartyManager::CreateLocalUser()` and `PartyLocalUser::UpdateEntityToken()`. When the token is nearing or past the expiration time, a new token should be obtained by performing a PlayFab login operation and provided to the Party library by calling `PartyLocalUser::UpdateEntityToken()`. It is recommended to acquire a new token when the previously supplied token is halfway through its validity period. On platforms that may enter a low power state or pause application execution for a long time, the token may be prevented from being refreshed before it expires. The token should be checked for expiration once execution resumes.
+In this version, the internal token refreshing behavior has been removed and replaced by a new API, `PartyLocalUser::UpdateEntityToken()`. The caller is now responsible for monitoring the expiration of the entity token provided to `PartyManager::CreateLocalUser()` and `PartyLocalUser::UpdateEntityToken()`. When the token is nearing or past the expiration time, a new token should be obtained by performing a PlayFab login operation and provided to the Party library by calling `PartyLocalUser::UpdateEntityToken()`. It is recommended to acquire a new token when the previously supplied token is halfway through its validity period. On platforms that may enter a low power state or pause application execution for a long time, the token may be prevented from being refreshed before it expires. The token should be checked for expiration once execution resumes.
 
 The rough flow is as follows:
 

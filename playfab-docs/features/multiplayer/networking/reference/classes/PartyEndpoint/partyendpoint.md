@@ -5,7 +5,7 @@ description: Represents an endpoint in a network.
 ms.author: jdewey
 ms.topic: reference
 ms.service: playfab
-ms.date: 04/22/2022
+ms.date: 10/20/2023
 ---
 
 # PartyEndpoint  
@@ -27,6 +27,7 @@ class PartyEndpoint
 | [GetNetwork](methods/partyendpoint_getnetwork.md) | Gets the network associated with this endpoint. |  
 | [GetDevice](methods/partyendpoint_getdevice.md) | Gets the device associated with this endpoint. |  
 | [GetUniqueIdentifier](methods/partyendpoint_getuniqueidentifier.md) | Gets the network-unique identifier for this endpoint. |  
+| [GetSharedProperty](methods/partyendpoint_getsharedproperty.md) | Gets the value of a shared property. |  
 | [GetCustomContext](methods/partyendpoint_getcustomcontext.md) | Retrieves the app's private, custom pointer-sized context value previously associated with this endpoint object. |  
 | [SetCustomContext](methods/partyendpoint_setcustomcontext.md) | Configures an optional, custom pointer-sized context value with this endpoint object. |  
 

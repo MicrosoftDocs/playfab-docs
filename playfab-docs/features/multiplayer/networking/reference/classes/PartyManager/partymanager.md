@@ -5,7 +5,7 @@ description: The primary management class for interacting with the Party library
 ms.author: jdewey
 ms.topic: reference
 ms.service: playfab
-ms.date: 04/11/2023
+ms.date: 10/20/2023
 ---
 
 # PartyManager  
@@ -32,7 +32,7 @@ class PartyManager
 | [GetMemoryCallbacks](methods/partymanager_getmemorycallbacks.md) | Retrieves the memory allocation and freeing callbacks the Party library is using. |  
 | [SetProfilingCallbacksForMethodEntryExit](methods/partymanager_setprofilingcallbacksformethodentryexit.md) | Optionally configures the profiling event callbacks the Party library will make when entering or exiting instrumented methods. |  
 | [GetProfilingCallbacksForMethodEntryExit](methods/partymanager_getprofilingcallbacksformethodentryexit.md) | Retrieves the profiling event callbacks the Party library is configured to use when entering or exiting instrumented methods. |  
-| [SetThreadAffinityMask](methods/partymanager_setthreadaffinitymask.md) | Optionally configures the processor on which internal Party library threads will run. |  
+| [SetThreadAffinityMask](methods/partymanager_setthreadaffinitymask.md) | Optionally configures the processor on which internal Party library threads run. |  
 | [GetThreadAffinityMask](methods/partymanager_getthreadaffinitymask.md) | Retrieves the current set of processors on which internal Party library threads will run or are running as an affinity mask. |  
 | [SetWorkMode](methods/partymanager_setworkmode.md) | Configures the work mode of the Party library processing task associated with `threadId`. |  
 | [GetWorkMode](methods/partymanager_getworkmode.md) | Retrieves the current work mode of the Party library's internal processing task associated with `threadId`. |  
