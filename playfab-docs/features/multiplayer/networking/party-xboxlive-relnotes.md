@@ -20,6 +20,14 @@ The Xbox Live Helper library is available on [Nuget.org](https://www.nuget.org/p
 >For more information, please see our [forum post](https://community.playfab.com/articles/141546/playfab-party-ending-support-for-the-xdk-and-windo.html).
 
 
+## 1.2.14
+
+October 20, 2023
+
+This release of the Party Xbox Live Helper library includes the following changes:
+
+- Improved internal diagnostics.
+
 ## 1.2.12
 
 July 21, 2022
