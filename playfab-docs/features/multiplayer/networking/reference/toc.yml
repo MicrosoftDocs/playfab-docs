@@ -85,6 +85,8 @@
         href: classes/PartyEndpoint/methods/partyendpoint_getdevice.md
       - name: GetUniqueIdentifier
         href: classes/PartyEndpoint/methods/partyendpoint_getuniqueidentifier.md
+      - name: GetSharedProperty
+        href: classes/PartyEndpoint/methods/partyendpoint_getsharedproperty.md
       - name: GetCustomContext
         href: classes/PartyEndpoint/methods/partyendpoint_getcustomcontext.md
       - name: SetCustomContext

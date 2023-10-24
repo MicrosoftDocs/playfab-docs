@@ -5,7 +5,7 @@ description: "Information specific to the *ChatTextReceived* type of state chang
 ms.author: jdewey
 ms.topic: reference
 ms.service: playfab
-ms.date: 04/21/2022
+ms.date: 10/20/2023
 ---
 
 # PartyChatTextReceivedStateChange  
@@ -50,7 +50,7 @@ The local receiver chat controls to which the text message is addressed.
   
 The language of the chat text.
   
-The language will only be provided when translation to the local language is enabled. If translation isn't enabled, or failure is encountered during translation, the language code will be an empty string. <br /><br /> The language code will be in BCP 47 format, such as en-US for English (United States). Supported language codes are enumerated in [Language and voice support for the Speech service](/azure/cognitive-services/speech-service/language-support).
+The language is only provided when translation to the local language is enabled. If translation isn't enabled, or failure is encountered during translation, the language code is an empty string. <br /><br /> The language code is in BCP 47 format, such as en-US for English (United States). Supported language codes are enumerated in [Language support](/azure/cognitive-services/speech-service/language-support).
   
 **`chatText`** &nbsp; [PartyString](../typedefs.md)  
   
@@ -71,14 +71,14 @@ The data associated with this text message.
   
 The number of translations associated with the chat text.
   
-Translations will be provided if [PartyTextChatOptions::TranslateToLocalLanguage](../enums/partytextchatoptions.md) had previously been specified via [PartyLocalChatControl::SetTextChatOptions()](../classes/PartyLocalChatControl/methods/partylocalchatcontrol_settextchatoptions.md) on a chat control local to this device. There may be more than one translation if multiple local chat controls have enabled translation and the local chat controls have specified different languages via [PartyLocalDevice::CreateChatControl()](../classes/PartyLocalDevice/methods/partylocaldevice_createchatcontrol.md). In that case, the app can compare the ```languageCode``` field of each PartyTranslation in ```translations``` against the language code, obtained via [PartyLocalChatControl::GetLanguage()](../classes/PartyLocalChatControl/methods/partylocalchatcontrol_getlanguage.md), for each local chat control in ```receiverChatControls``` to determine the target local chat control for each translation.
+Translations are provided if [PartyTextChatOptions::TranslateToLocalLanguage](../enums/partytextchatoptions.md) has previously been specified via [PartyLocalChatControl::SetTextChatOptions()](../classes/PartyLocalChatControl/methods/partylocalchatcontrol_settextchatoptions.md) on a chat control local to this device. There may be more than one translation if multiple local chat controls have enabled translation and the local chat controls have specified different languages via [PartyLocalDevice::CreateChatControl()](../classes/PartyLocalDevice/methods/partylocaldevice_createchatcontrol.md). In that case, the app can compare the ```languageCode``` field of each PartyTranslation in ```translations``` against the language code, obtained via [PartyLocalChatControl::GetLanguage()](../classes/PartyLocalChatControl/methods/partylocalchatcontrol_getlanguage.md), for each local chat control in ```receiverChatControls``` to determine the target local chat control for each translation.
   
 **`translations`** &nbsp; [PartyTranslation](partytranslation.md)*  
 *array of size `translationCount`*  
   
 An array containing the translations of the chat text string.
   
-Translations will be provided if [PartyTextChatOptions::TranslateToLocalLanguage](../enums/partytextchatoptions.md) had previously been specified via [PartyLocalChatControl::SetTextChatOptions()](../classes/PartyLocalChatControl/methods/partylocalchatcontrol_settextchatoptions.md) on a chat control local to this device. There may be more than one translation if multiple local chat controls have enabled translation and the local chat controls have specified different languages via [PartyLocalDevice::CreateChatControl()](../classes/PartyLocalDevice/methods/partylocaldevice_createchatcontrol.md). In that case, the app can compare the ```languageCode``` field of each PartyTranslation in ```translations``` against the language code, obtained via [PartyLocalChatControl::GetLanguage()](../classes/PartyLocalChatControl/methods/partylocalchatcontrol_getlanguage.md), for each local chat control in ```receiverChatControls``` to determine the target local chat control for each translation.
+Translations are provided if [PartyTextChatOptions::TranslateToLocalLanguage](../enums/partytextchatoptions.md) has previously been specified via [PartyLocalChatControl::SetTextChatOptions()](../classes/PartyLocalChatControl/methods/partylocalchatcontrol_settextchatoptions.md) on a chat control local to this device. There may be more than one translation if multiple local chat controls have enabled translation and the local chat controls have specified different languages via [PartyLocalDevice::CreateChatControl()](../classes/PartyLocalDevice/methods/partylocaldevice_createchatcontrol.md). In that case, the app can compare the ```languageCode``` field of each PartyTranslation in ```translations``` against the language code, obtained via [PartyLocalChatControl::GetLanguage()](../classes/PartyLocalChatControl/methods/partylocalchatcontrol_getlanguage.md), for each local chat control in ```receiverChatControls``` to determine the target local chat control for each translation.
   
 **`options`** &nbsp; [PartyChatTextReceivedOptions](../enums/partychattextreceivedoptions.md)  
   
