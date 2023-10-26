@@ -132,6 +132,11 @@ void PrintConnectionTypeAndLatency(
         static_cast<int32_t>(connectionType));
 }
 ```
+### Implications of mid-session direct peer disconnect on guaranteed data
+Once a direct peer connection is established and during the normal gameplay/message flow, certain network conditions can distrupt the  connection and the link with remote peer may get disconnected.
+In such scenarios the Playfab Party SDK will make an effort to fallback the connection to the cloud relay in order for the game to continue sending data via the cloud relay.
+However, during the fallback of the connection the unacknowledged guaranteed message(s) i.e. using `GuaranteedDelivery` flag from the   [PartySendMessageOptions](reference/enums/partysendmessageoptions.md) sent on the direct peer connection will be lost.
+Hence take this behavior into consideration if your game sends guranteed data on a direct peer connection.
 
 ## Billing meters
 
